@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'course', language 'pt', version '3.8'.
  *
- * @package   course
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     course
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,11 +37,11 @@ $string['coursetoolong'] = 'A disciplina é muito longa';
 $string['customfield_islocked'] = 'Bloqueado';
 $string['customfield_islocked_help'] = 'Se o campo estiver bloqueado, apenas os utilizadores com a permissão de alterar campos personalizados bloqueados (por predefinição, apenas os utilizadores com a função predefinida de gestor) poderão alterá-lo nas configurações da disciplina.';
 $string['customfield_notvisible'] = 'Ninguém';
-$string['customfieldsettings'] = 'Configurações gerais dos campos personalizados da disciplina';
 $string['customfield_visibility'] = 'Visível para';
 $string['customfield_visibility_help'] = 'Esta configuração determina quem pode visualizar o nome e o valor do campo personalizado na lista de disciplinas ou no filtro de campo personalizado disponível do Painel do utilizador.';
 $string['customfield_visibletoall'] = 'Todos';
 $string['customfield_visibletoteachers'] = 'Professores';
+$string['customfieldsettings'] = 'Configurações gerais dos campos personalizados da disciplina';
 $string['errorendbeforestart'] = 'A data de fim ({$a}) é anterior à data de início da disciplina';
 $string['favourite'] = 'Disciplina com estrela';
 $string['gradetopassnotset'] = 'Esta disciplina não tem nota de aprovação definida. Pode ser definida no item Avaliação da disciplina (Configuração da pauta).';
@@ -68,13 +68,22 @@ $string['studentsatriskinfomessage'] = 'Olá {$a->userfirstname},
 
 </br><br/>Alguns alunos da disciplina \'{$a->coursename}\' foram identificados como estando em risco.';
 $string['target:coursecompetencies'] = 'Alunos em risco de não alcançar as competências associadas a uma disciplina';
-$string['target:coursecompetencies_help'] = 'Esta meta descreve se um aluno corre o risco de não atingir as competências associadas a uma disciplina. Esta meta considera que todas as competências associadas a uma disciplina devem ser atingidas até ao fim da disciplina.';
+$string['target:coursecompetencies_help'] = 'Esta meta indica se um aluno corre o risco de não atingir as competências associadas a uma disciplina. Esta meta considera que todas as competências associadas a uma disciplina devem ser atingidas até ao fim da disciplina.';
 $string['target:coursecompletion'] = 'Alunos em risco de não cumprir as condições de conclusão da disciplina';
-$string['target:coursecompletion_help'] = 'Esta meta descreve se o aluno é considerado em risco de não cumprir as condições de conclusão da disciplina.';
+$string['target:coursecompletion_help'] = 'Esta meta indica se o aluno é considerado em risco de não cumprir as condições de conclusão da disciplina.';
 $string['target:coursedropout'] = 'Alunos em risco de desistir';
-$string['target:coursedropout_help'] = 'Esta meta descreve se o aluno é considerado em risco de abandono.';
+$string['target:coursedropout_help'] = 'Esta meta indica se o aluno é considerado em risco de abandono.';
 $string['target:coursegradetopass'] = 'Alunos em risco de não obter a nota mínima para passar na disciplina';
-$string['target:coursegradetopass_help'] = 'Esta meta descreve se o aluno corre o risco de não obter a nota mínima para passar na disciplina.';
+$string['target:coursegradetopass_help'] = 'Esta meta indica se o aluno corre o risco de não obter a nota mínima para concluir a disciplina.';
+$string['target:noaccesssincecoursestart'] = 'Alunos que ainda não acederam à disciplina';
+$string['target:noaccesssincecoursestart_help'] = 'Esta meta descreve os alunos que nunca acederam a uma disciplina em que estão inscritos.';
+$string['target:noaccesssincecoursestartinfo'] = 'Os seguintes alunos estão inscritos numa disciplina que já iniciou, mas nunca acederam à disciplina.';
+$string['target:norecentaccesses'] = 'Alunos que não acederam à disciplina recentemente';
+$string['target:norecentaccesses_help'] = 'Esta meta identifica os alunos que não acederam a uma disciplina em que estão inscritos, no intervalo de análise definido (por predefinição, no mês passado).';
+$string['target:norecentaccessesinfo'] = 'Os seguintes alunos não acederam a uma disciplina em que estão inscritos, no intervalo de análise definido (por predefinição, no mês passado).';
+$string['target:noteachingactivity'] = 'Disciplinas em risco de não iniciar';
+$string['target:noteachingactivity_help'] = 'Esta meta indica se as disciplinas previstas para começar na próxima semana terão atividades de ensino.';
+$string['target:noteachingactivityinfo'] = 'As disciplinas a seguir, que iniciarão nos próximos dias, correm o risco de não começar porque não têm professores nem alunos inscritos.';
 $string['targetlabelstudentcompetenciesno'] = 'Aluno que provavelmente conseguirá alcançar as competências associadas a uma disciplina';
 $string['targetlabelstudentcompetenciesyes'] = 'Aluno em risco de não conseguir alcançar as competências associadas a uma disciplina';
 $string['targetlabelstudentcompletionno'] = 'Aluno que provavelmente cumprirá as condições de conclusão da disciplina';
@@ -85,12 +94,3 @@ $string['targetlabelstudentgradetopassno'] = 'Aluno que provavelmente alcançar�
 $string['targetlabelstudentgradetopassyes'] = 'Aluno em risco de não ter a nota mínima para passar na disciplina.';
 $string['targetlabelteachingno'] = 'Disciplinas em risco de não iniciar';
 $string['targetlabelteachingyes'] = 'Utilizadores com capacidades de ensino que têm acesso à disciplina';
-$string['target:noaccesssincecoursestart'] = 'Alunos que ainda não acederam à disciplina';
-$string['target:noaccesssincecoursestart_help'] = 'Esta meta descreve os alunos que nunca acederam a uma disciplina em que estão inscritos.';
-$string['target:noaccesssincecoursestartinfo'] = 'Os seguintes alunos estão inscritos numa disciplina que já iniciou, mas nunca acederam à disciplina.';
-$string['target:norecentaccesses'] = 'Alunos que não acederam à disciplina recentemente';
-$string['target:norecentaccesses_help'] = 'Esta meta identifica os alunos que não acederam a uma disciplina em que estão inscritos, no intervalo de análise definido (por predefinição, no mês passado).';
-$string['target:norecentaccessesinfo'] = 'Os seguintes alunos não acederam a uma disciplina em que estão inscritos, no intervalo de análise definido (por predefinição, no mês passado).';
-$string['target:noteachingactivity'] = 'Disciplinas em risco de não iniciar';
-$string['target:noteachingactivity_help'] = 'Esta meta descreve se as disciplinas que devem começar na próxima semana terão atividades de ensino.';
-$string['target:noteachingactivityinfo'] = 'As disciplinas a seguir, que iniciarão nos próximos dias, correm o risco de não começar porque não têm professores nem alunos inscritos.';

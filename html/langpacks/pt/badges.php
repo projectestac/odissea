@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'pt', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activatesuccess'] = 'O acesso às medalhas foi ativado com sucesso.';
 $string['addalignment'] = 'Adicionar proficiência externa ou predefinição';
 $string['addbackpack'] = 'Adicionar backpack';
 $string['addbadge'] = 'Adicionar medalhas';
-$string['addbadgecriteria'] = 'Adicionar critério da medalha';
 $string['addbadge_help'] = 'Selecione todas as medalhas que devem fazer parte dos requisitos desta medalha. Mantenha a tecla CTRL pressionada para selecionar vários itens.';
+$string['addbadgecriteria'] = 'Adicionar critério da medalha';
 $string['addcohort'] = 'Adicionar Grupo global';
 $string['addcohort_help'] = 'Selecione todos os Grupos globais que devem fazer parte dos requisitos desta medalha. Mantenha a tecla CTRL pressionada para selecionar vários itens.';
 $string['addcompetency'] = 'Adicionar competência';
@@ -100,9 +100,9 @@ $string['backpackbadgessettings'] = 'Alterar as configurações da backpack';
 $string['backpackbadgessummary'] = 'Tem {$a->totalbadges} medalhas mostradas de {$a->totalcollections} coleções.';
 $string['backpackcannotsendverification'] = 'Não é possível enviar e-mail de verificação';
 $string['backpackconnection'] = 'Ligação à backpack';
+$string['backpackconnection_help'] = 'Ligar-se a uma backpack permite que partilhe as suas medalhas recebidas no site e que possa exibir na sua página de perfil, as coleções de medalhas públicas da sua backpack.';
 $string['backpackconnectioncancelattempt'] = 'Autentique-se usando um endereço de e-mail diferente';
 $string['backpackconnectionconnect'] = 'Ligar à backpack';
-$string['backpackconnection_help'] = 'Ligar-se a uma backpack permite que partilhe as suas medalhas recebidas no site e que possa exibir na sua página de perfil, as coleções de medalhas públicas da sua backpack.';
 $string['backpackconnectionnottested'] = 'A ligação para esta backpack não pode ser testada porque apenas são suportadas as backpack Open Badges v2.0.';
 $string['backpackconnectionok'] = 'A ligação à backpack foi estabelecida com sucesso';
 $string['backpackconnectionresendemail'] = 'Reenviar e-mail de verificação';
@@ -209,9 +209,7 @@ $string['criteria_7_help'] = 'Permite que uma medalha seja atribuída aos utiliz
 $string['criteria_8'] = 'Membro de Grupo global';
 $string['criteria_8_help'] = 'Permite que uma medalha seja atribuída aos utilizadores consoante o Grupo Global a que pertencem';
 $string['criteria_9'] = 'Competências';
-$string['criteria_9_help'] = 'Permite que uma medalha seja atribuída aos utilizadores com base nas competências que foram concluídas.';
-$string['criteriacreated'] = 'Critérios da medalha criados com sucesso';
-$string['criteriadeleted'] = 'Critérios da medalha eliminados com sucesso';
+$string['criteria_9_help'] = 'Permite que uma medalha seja atribuída aos utilizadores com base nas competências que concluiram.';
 $string['criteria_descr'] = 'Os utilizadores recebem esta medalha quando cumprem os seguintes requisitos:';
 $string['criteria_descr_0'] = 'Os utilizadores recebem esta medalha quando cumprem <strong>{$a}</strong> dos requisitos listados.';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> das seguintes atividades estão concluídas:';
@@ -249,6 +247,8 @@ $string['criteria_descr_single_short6'] = 'Conclusão:&nbsp;';
 $string['criteria_descr_single_short7'] = 'Concluída:';
 $string['criteria_descr_single_short8'] = 'Ser membro de:';
 $string['criteria_descr_single_short9'] = 'Concluída:';
+$string['criteriacreated'] = 'Critérios da medalha criados com sucesso';
+$string['criteriadeleted'] = 'Critérios da medalha eliminados com sucesso';
 $string['criteriasummary'] = 'Resumo dos critérios';
 $string['criteriaupdated'] = 'Critérios da medalha atualizados com sucesso';
 $string['criterror'] = 'Erros de parâmetros atuais';
@@ -363,7 +363,7 @@ $string['imageauthorname_help'] = 'Se especificado, o nome do autor da imagem da
 $string['imageauthorurl'] = 'URL do autor da imagem';
 $string['imageauthorurl_help'] = 'Se especificado, será mostrada na página da medalha uma hiperligação para o site do autor da imagem da medalha. O URL deve ter um prefixo http:// ou https://.';
 $string['imagecaption'] = 'Legenda da imagem';
-$string['imagecaption_help'] = 'Se especificado, a legenda da imagem será mostrada na página da medalha.';
+$string['imagecaption_help'] = 'Se especificada, a legenda da imagem será mostrada na página da medalha.';
 $string['invalidurl'] = 'URL inválido';
 $string['issuancedetails'] = 'Data de validade da medalha';
 $string['issuedbadge'] = 'Informação da medalha emitida';

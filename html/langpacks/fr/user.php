@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'user', language 'fr', version '3.8'.
  *
- * @package   user
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     user
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -105,7 +105,7 @@ $string['privacy:metadata:suspended'] = 'Une valeur indiquant si l\'utilisateur 
 $string['privacy:metadata:theme'] = 'Un réglage indiquant le thème à afficher pour l\'utilisateur.';
 $string['privacy:metadata:timeaccess'] = 'La date et l\'heure de l\'accès à ce cours.';
 $string['privacy:metadata:timecreated'] = 'La date et l\'heure de la création de cet enregistrement.';
-$string['privacy:metadata:timemodified'] = 'La date et l\'heure de la modification de cet enregistrement.';
+$string['privacy:metadata:timemodified'] = 'La date et l\'heure de la modification de l\'enregistrement.';
 $string['privacy:metadata:timerequested'] = 'La date et l\'heure de la première demande de réinitialisation de ce mot de passe';
 $string['privacy:metadata:timererequested'] = 'La date et l\'heure de la nouvelle demande de réinitialisation de mot de passe.';
 $string['privacy:metadata:timezone'] = 'Le fuseau horaire de l\'utilisateur';
@@ -113,12 +113,12 @@ $string['privacy:metadata:token'] = 'Secret défini et envoyé par courriel à l
 $string['privacy:metadata:trackforums'] = 'Un réglage pour les forums et leur suivi.';
 $string['privacy:metadata:trustbitmask'] = 'Le masque de confiance (bitmask)';
 $string['privacy:metadata:url'] = 'Une URL en lien avec cet utilisateur.';
-$string['privacy:metadata:userid'] = 'L\'identifiant utilisateur lié à cette table.';
-$string['privacy:metadata:username'] = 'Le nom d\'utilisateur de cet utilisateur.';
 $string['privacy:metadata:user_preferences'] = 'Réglages associés à cet utilisateur';
 $string['privacy:metadata:user_preferences:name'] = 'Nom du réglage';
 $string['privacy:metadata:user_preferences:userid'] = 'L\'identifiant utilisateur';
 $string['privacy:metadata:user_preferences:value'] = 'Valeur du réglage';
+$string['privacy:metadata:userid'] = 'L\'identifiant utilisateur lié à cette table.';
+$string['privacy:metadata:username'] = 'Le nom d\'utilisateur de cet utilisateur.';
 $string['privacy:metadata:usertablesummary'] = 'Cette table enregistre les données personnelles principales de l\'utilisateur.';
 $string['privacy:metadata:uuid'] = 'L\'UUID de l\'appareil';
 $string['privacy:metadata:version'] = 'La version de l\'appareil, 6.1.2, 4.2.2, etc.';

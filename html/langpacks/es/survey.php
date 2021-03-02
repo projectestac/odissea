@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'es', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -251,13 +251,13 @@ $string['seemoredetail'] = 'Haga clic aquí para ver más detalles';
 $string['selectedquestions'] = 'Preguntas seleccionadas de una escala, todos los estudiantes';
 $string['summary'] = 'Resumen';
 $string['survey:addinstance'] = 'Añadir una nueva encuesta';
-$string['surveycompleted'] = 'Usted ha completado esta encuesta. La gráfica inferior le muestra sus resultados comparados con el promedio de la clase.';
-$string['surveycompletednograph'] = 'Has completado esta encuesta.';
 $string['survey:download'] = 'Descargar respuestas';
-$string['surveygraph'] = 'Gráfico de la encuesta';
-$string['surveyname'] = 'Nombre de la encuesta';
 $string['survey:participate'] = 'Responder a la encuesta';
 $string['survey:readresponses'] = 'Ver respuestas';
+$string['surveycompleted'] = 'Usted ha completado esta encuesta. La gráfica inferior le muestra sus resultados comparados con el promedio de la clase.';
+$string['surveycompletednograph'] = 'Has completado esta encuesta.';
+$string['surveygraph'] = 'Gráfico de la encuesta';
+$string['surveyname'] = 'Nombre de la encuesta';
 $string['surveysaved'] = 'Encuesta guardada';
 $string['surveytype'] = 'Tipo de Encuesta predefinida';
 $string['surveytype_help'] = 'Hay disponibles tres tipos de Encuesta predefinidas diferentes:

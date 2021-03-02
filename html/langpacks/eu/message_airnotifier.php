@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message_airnotifier', language 'eu', version '3.8'.
  *
- * @package   message_airnotifier
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message_airnotifier
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['airnotifier:managedevice'] = 'Kudeatu gailuak';
 $string['airnotifieraccesskey'] = 'Airnotifier-eko sarbide-gakoa';
 $string['airnotifierappname'] = 'Airnotifier-en aplikazioaren izena';
-$string['airnotifier:managedevice'] = 'Kudeatu gailuak';
 $string['airnotifiermobileappname'] = 'Aplikazio mugikorraren izena';
 $string['airnotifierport'] = 'Airnotifier-en ataka';
 $string['airnotifierurl'] = 'Airnotifier-en URLa';
@@ -35,7 +35,7 @@ $string['configairnotifieraccesskey'] = 'Airnotifier-en zerbitzariarekin konekta
 $string['configairnotifierappname'] = 'Aplikazio-izenaren identifikatzailea Airnotifier-en.';
 $string['configairnotifiermobileappname'] = 'Mobile aplikazioaren identifikatzaile bakarra (normalean com.moodle.moodlemobile moduko zerbait)';
 $string['configairnotifierport'] = 'Airnotifier-en zerbitzariarekin konektatzeko erabili behar den ataka.';
-$string['configairnotifierurl'] = 'Push jakinarazpenak bertara bidaltzeko zerbitzariaren URLa';
+$string['configairnotifierurl'] = 'Push jakinarazpenak bidaltzeko konektatu beharreko zerbitzariaren URLa.';
 $string['deletecheckdevicename'] = 'Ezabatu zure gailua: {$a->name}';
 $string['deletedevice'] = 'Ezabatu gailua. Kontuan izan app batek gailua berriz ere erregistratu dezakeela. Gailua berriz agertzen jarraituz gero, desgaitu ezazu.';
 $string['devicetoken'] = 'Gailuaren token-a';
@@ -60,7 +60,7 @@ $string['privacy:metadata:userdeviceid'] = 'Erabiltzailearen gailu mugikorrera l
 $string['privacy:metadata:userfromfullname'] = 'Mezua bidali zuen erabiltzailearen izen osoa.';
 $string['privacy:metadata:userfromid'] = 'Mezuaren egilearen erabiltzaile IDa.';
 $string['privacy:metadata:userid'] = 'Mezua bidali zuen erabiltzailearen IDa.';
-$string['privacy:metadata:username'] = 'Erabiltzailearentzako erabiltzaile-izena.';
+$string['privacy:metadata:username'] = 'Erabiltzailearen erabiltzaile-izena.';
 $string['privacy:metadata:usersubsystem'] = 'Plugin hau erabiltzaile-azpisistemara konektatuta dago.';
 $string['privacy:subcontext'] = 'Airnotifier Mezuak';
 $string['requestaccesskey'] = 'Eskatu sarbide-gakoa';

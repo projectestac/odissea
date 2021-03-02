@@ -65,7 +65,8 @@ $string['headerbg'] = 'Color de fondo de la cabecera';
 $string['colorsetdesc'] = 'Elije la combinación de colores para usar en el tema. Se pueden modificar los predefinidos.';
 
 $string['custom'] = 'Personalizado'; //Personalitzat
-$string['grana'] = 'Granate (predefinido)'; //'Grana (predefinit)'
+$string['PEDC'] = 'PEDC (predefinido)'; //'PEDC (predefinit)'
+$string['grana'] = 'Granate'; //'Grana'
 $string['coral'] = 'Arrecife de coral';//'Escull de coral'
 $string['kellygreen'] = 'Verde Kelly';//'Kelly Green'
 $string['colourful'] = 'Colorines';//'Coloraines'
@@ -116,3 +117,12 @@ $string['alert_end_desc'] = 'Dejar en blanco si se quiere mostrar para siempre. 
 $string['agora_alert_message_desc'] = 'Mostrar un mensaje para todos en la parte superior del area de bloques';
 $string['admin_alert_message_desc'] = 'Mostrar un mensaje a los administradores en la parte superior del area de bloquesMostra un missatge als administradors al capdamunt de l\'area de blocs';
 $string['show_admins'] = 'Este mensaje solo se muestra a los administradores del sitio';
+
+// XTEC service type
+$string['xtec_type_heading'] = 'Tipo de servicio XTEC';
+$string['xtec_type'] = 'Servicio XTEC';
+$string['xtec_type_desc'] = 'Seleccione el tipo de servicio XTEC';
+$string['xtectypedesc1'] = "Àgora/Eix";
+$string['xtectypedesc2'] = "Àgora/EOI";
+$string['xtectypedesc3'] = "Alexandria";
+$string['xtectypedesc4'] = "Odissea";

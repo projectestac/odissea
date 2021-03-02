@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswerwiris', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_shortanswerwiris', language 'ar', version '3.8'.
  *
- * @package   qtype_shortanswerwiris
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_shortanswerwiris
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['editingshortanswerwiris'] = 'تحرير سؤال إجابة قصيرة 
 $string['failedtogradetest'] = 'فشل تقييم  (testing-{$a})!';
 $string['filloutoneanswer'] = 'ينبغي عليك إعطاء إجابة واحدة على الأقل. سيتم استعمال أول إجابة مطابقة لتقرير الدرجة والإفادة. أنقر الأيقونة المجاورة لحقل الإجابة لتحرير الخصائص الرياضية للإجابة والسؤال.';
 $string['pluginname'] = 'إجابة قصيرة - العلوم';
+$string['pluginname_help'] = 'كما هو سؤال الإجابة القصيرة القياسي، ولكن يمكنك التحقق من الإجابة باستعمال المكافئ الرياضي الذي تختاره. قم إختيارياً بإدراج عوامل عشوائياً في كلمات سؤالك لتقدم محرر معادلة كامل المواصفات للإجابة.';
 $string['pluginnameadding'] = 'إضافة سؤال إجابة قصيرة - الرياضيات والعلوم من WIRIS';
 $string['pluginnameediting'] = 'تحرير سؤال إجابة قصيرة - الرياضيات والعلوم من WIRIS';
-$string['pluginname_help'] = 'كما هو سؤال الإجابة القصيرة القياسي، ولكن يمكنك التحقق من الإجابة باستعمال المكافئ الرياضي الذي تختاره. قم إختيارياً بإدراج عوامل عشوائياً في كلمات سؤالك لتقدم محرر معادلة كامل المواصفات للإجابة.';
 $string['pluginnamesummary'] = 'كما هو سؤال الإجابة القصيرة القياسي، ولكن يمكنك التحقق من الإجابة باستعمال المكافئ الرياضي الذي تختاره. قم إختيارياً بإدراج عوامل عشوائياً في كلمات سؤالك لتقدم محرر معادلة كامل المواصفات للإجابة.';
 $string['privacy:null_reason'] = 'إن ملحق نوع سؤال الإجابة القصيرة من Wiris لا يؤثر على أو يخزن اي بيانات بحد ذاته.';
 $string['shortanswerwiris'] = 'إجابة قصيرة - العلوم';

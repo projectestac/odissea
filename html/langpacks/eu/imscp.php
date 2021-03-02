@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'imscp', language 'eu', version '3.8'.
  *
- * @package   imscp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     imscp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,17 +28,17 @@ defined('MOODLE_INTERNAL') || die();
 $string['areabackup'] = 'Pakete-biltegia';
 $string['areacontent'] = 'Edukia';
 $string['contentheader'] = 'Edukia';
-$string['deploymenterror'] = 'Errorea eduki-paketea egitean!';
+$string['deploymenterror'] = 'Errorea eduki-paketean!';
 $string['imscp:addinstance'] = 'Gehitu IMS eduki-pakete berria';
 $string['imscp:view'] = 'Ikusi IMS edukia';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa IMS eduki-paketeetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak IMS motako eduki-paketea baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa IMS eduki-paketeetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek IMS eduki-paketea jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
-$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak IMS motako eduki-paketea baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala IMS eduki-paketeetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak IMS motako eduki-paketea baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala IMS eduki-paketeetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek IMS eduki-paketea jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
-$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak IMS motako eduki-paketea baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['keepold'] = 'Artxiboko paketeak';
 $string['keepoldexplain'] = 'Zenbat pakete gorde  behar dira?';
 $string['modulename'] = 'IMS eduki-paketea';

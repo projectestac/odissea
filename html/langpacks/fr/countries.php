@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'countries', language 'fr', version '3.8'.
  *
- * @package   countries
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     countries
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -53,7 +53,7 @@ $string['BJ'] = 'Bénin';
 $string['BL'] = 'Saint-Barthélemy';
 $string['BM'] = 'Bermudes';
 $string['BN'] = 'Brunéi Darussalam';
-$string['BO'] = 'Bolivie (État plurinational de)';
+$string['BO'] = 'État plurinational de Bolivie';
 $string['BQ'] = 'Bonaire, Saint-Eustache et Saba';
 $string['BR'] = 'Brésil';
 $string['BS'] = 'Bahamas';
@@ -235,7 +235,7 @@ $string['SR'] = 'Suriname';
 $string['SS'] = 'Soudan du Sud';
 $string['ST'] = 'Sao Tomé-et-Principe';
 $string['SV'] = 'El Salvador';
-$string['SX'] = 'Saint-Martin (partie néerlandaise)';
+$string['SX'] = 'Saint-Martin (Royaume des Pays-Bas)';
 $string['SY'] = 'République arabe syrienne';
 $string['SZ'] = 'Eswatini';
 $string['TC'] = 'Îles Turks-et-Caïcos';
@@ -262,7 +262,7 @@ $string['UY'] = 'Uruguay';
 $string['UZ'] = 'Ouzbékistan';
 $string['VA'] = 'Saint-Siège';
 $string['VC'] = 'Saint-Vincent-et-les Grenadines';
-$string['VE'] = 'Venezuela (République bolivarienne du)';
+$string['VE'] = 'République bolivarienne du Venezuela';
 $string['VG'] = 'Îles Vierges britanniques';
 $string['VI'] = 'Îles Vierges des États-Unis';
 $string['VN'] = 'Viet Nam';

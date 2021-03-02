@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'ru', version '3.8'.
  *
- * @package   enrol_imsenterprise
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_imsenterprise
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,9 @@ $string['categoryseparator'] = 'Обозначение разделителя к
 $string['categoryseparator_desc'] = 'Необходим при включенном параметре «ID-номер категории». Символ для разделения названия и ID-номера категории.';
 $string['coursesettings'] = 'Настройки данных курса';
 $string['createnewcategories'] = 'Создавать новые (скрытые) категории курсов, если они не найдены в Moodle';
-$string['createnewcategories_desc'] = 'Если элемент <org><orgunit>  присутствует в данных создаваемого курса, то эта информация будет использоваться для определения категории, если курс должен быть создан с нуля. Плагин НЕ будет изменять категории существующих курсов. Если нет категории с нужным названием, то будет создана скрытая категория.';
+$string['createnewcategories_desc'] = 'Если элемент <org><orgunit>  присутствует в данных создаваемого курса, то эта информация будет использоваться для определения категории, если курс должен быть создан с нуля. Плагин НЕ будет изменять категории существующих курсов.
+
+Если нет категории с нужным названием, то будет создана скрытая категория.';
 $string['createnewcourses'] = 'Создавать новые (скрытые) курсы, если они не найдены в Moodle';
 $string['createnewcourses_desc'] = 'При включенном параметре плагин IMS  может создать новые курсы для любого из найденных в данных IMS, но не в базе данных в Moodle. Любой вновь созданный курс изначально скрыт.';
 $string['createnewusers'] = 'Создать учетные записи для пользователей, еще не зарегистрированных в Moodle';

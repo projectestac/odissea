@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'fr', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,7 +42,7 @@ $string['deleteselectedusers'] = 'Supprimer les inscriptions sélectionnées';
 $string['editselectedusers'] = 'Modifier les inscriptions sélectionnées';
 $string['enrolledincourserole'] = 'Inscrit au cours « {$a->course} » avec le rôle « {$a->role} »';
 $string['enrolusers'] = 'Inscrire des utilisateurs';
-$string['enroluserscohorts'] = 'Inscrire les utilisateurs et cohortes sélectionnées';
+$string['enroluserscohorts'] = 'Inscrire les utilisateurs et cohortes sélectionnés';
 $string['expiredaction'] = 'Action à l\'échéance de l\'inscription';
 $string['expiredaction_help'] = 'Sélectionner une action à effectuer à l\'échéance de l\'inscription des utilisateurs. Veuillez noter que des données utilisateur et des réglages sont effacés du cours lors de la désinscription du cours.';
 $string['expirymessageenrolledbody'] = 'Cher-ère {$a->user},
@@ -60,9 +60,9 @@ $string['expirymessageenrollersubject'] = 'Notification d\'échéance d\'inscrip
 $string['manual:config'] = 'Configurer les instances d\'inscriptions manuelles';
 $string['manual:enrol'] = 'Inscrire des utilisateurs';
 $string['manual:manage'] = 'Gérer les inscriptions';
-$string['manualpluginnotinstalled'] = 'Le plugin « Inscriptions manuelles » n\'est pas installé';
 $string['manual:unenrol'] = 'Désinscrire des utilisateurs du cours';
 $string['manual:unenrolself'] = 'Se désinscrire du cours';
+$string['manualpluginnotinstalled'] = 'Le plugin « Inscriptions manuelles » n\'est pas installé';
 $string['messageprovider:expiry_notification'] = 'Notifications d\'échéance d\'inscriptions manuelles';
 $string['now'] = 'Maintenant';
 $string['pluginname'] = 'Inscriptions manuelles';
@@ -74,9 +74,9 @@ $string['selectusers'] = 'Sélectionner des utilisateurs';
 $string['sendexpirynotificationstask'] = 'Envoi des notifications d\'échéance des inscriptions manuelles';
 $string['status'] = 'Activer les inscriptions manuelles';
 $string['status_desc'] = 'Permettre l\'accès au cours des utilisateurs inscrits manuellement. Ce réglage devrait rester activé dans la plupart des cas.';
+$string['status_help'] = 'Ce réglage détermine si des utilisateurs peuvent être inscrits manuellement par un utilisateur disposant des permissions requises, par exemple un enseignant, via un lien dans l\'administration du cours.';
 $string['statusdisabled'] = 'Désactivé';
 $string['statusenabled'] = 'Activé';
-$string['status_help'] = 'Ce réglage détermine si des utilisateurs peuvent être inscrits manuellement par un utilisateur disposant des permissions requises, par exemple un enseignant, via un lien dans l\'administration du cours.';
 $string['syncenrolmentstask'] = 'Tâche de synchronisation des inscriptions manuelles';
 $string['unenrol'] = 'Désinscrire l\'utilisateur';
 $string['unenrolselectedusers'] = 'Désinscrire les utilisateurs sélectionnées';

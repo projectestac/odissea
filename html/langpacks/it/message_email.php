@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message_email', language 'it', version '3.8'.
  *
- * @package   message_email
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message_email
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,6 +38,8 @@ $string['privacy:metadata:externalpurpose'] = 'Queste informazioni vengono invia
 $string['privacy:metadata:fullmessage'] = 'Testo del messaggio in un dato formato.';
 $string['privacy:metadata:fullmessagehtml'] = 'Testo completo del messaggio.';
 $string['privacy:metadata:message_email_messages'] = 'Elenco degli utenti iscritti via provider LTI';
+$string['privacy:metadata:message_email_messages:messageid'] = 'ID del messaggio inviato';
+$string['privacy:metadata:message_email_messages:useridto'] = 'ID dell\'utente destinatario del messaggio';
 $string['privacy:metadata:recipient'] = 'Destinatario del messaggio.';
 $string['privacy:metadata:replyto'] = 'Indirizzo email a cui rispondere.';
 $string['privacy:metadata:replytoname'] = 'Nome del destinatario a cui rispondere.';

@@ -7,6 +7,7 @@ class com_wiris_util_xml_MathMLUtils {
 	static $contentTags;
 	static $presentationTagsString = "mrow@mn@mi@mo@mfrac@mfenced@mroot@maction@mphantom@msqrt@mstyle@msub@msup@msubsup@munder@mover@munderover@menclose@mspace@mtext@ms";
 	static $presentationTags;
+	static $MROWS = "@math@mrow@msqrt@mstyle@merror@mpadded@mphantom@mtd@menclose@mscarry@msrow@";
 	static $strokesAnnotationEncondings;
 	static function isPresentationMathML($mathml) {
 		if(com_wiris_util_xml_MathMLUtils::$presentationTags === null) {
@@ -129,6 +130,329 @@ class com_wiris_util_xml_MathMLUtils {
 		}
 		return $empty;
 	}
+	static function isTokensMathML($mathml) {
+		if($mathml === null) {
+			return false;
+		}
+		$mathml = com_wiris_util_xml_MathMLUtils::stripRootTag($mathml, "math");
+		$allowedTags = new _hx_array(array("mrow", "mn", "mi", "mo", "mtext"));
+		$start = 0;
+		while(($start = _hx_index_of($mathml, "<", $start)) !== -1) {
+			$sb = new StringBuf();
+			$c = _hx_char_code_at($mathml, ++$start);
+			if($c === 47) {
+				continue;
+			}
+			while($c !== 32 && $c !== 47 && $c !== 62) {
+				$sb->b .= chr($c);
+				$c = _hx_char_code_at($mathml, ++$start);
+			}
+			if($c === 32 || $c === 47) {
+				return false;
+			}
+			$tagName = $sb->b;
+			if(!com_wiris_util_type_Arrays::containsArray($allowedTags, $tagName)) {
+				return false;
+			}
+			$end = _hx_index_of($mathml, "<", ++$start);
+			$content = _hx_substr($mathml, $start, $end - $start);
+			$i = com_wiris_system_Utf8::getIterator($content);
+			while($i->hasNext()) {
+				$c = $i->next();
+				if(!(com_wiris_util_xml_WCharacterBase::isDigit($c) || com_wiris_util_xml_WCharacterBase::isLetter($c) || $c === 35 || $c === 160)) {
+					return false;
+				}
+			}
+			unset($tagName,$sb,$i,$end,$content,$c);
+		}
+		return true;
+	}
+	static function stripRootTag($xml, $tag) {
+		$s = com_wiris_util_xml_MathMLUtils::splitRootTag($xml, $tag);
+		return $s[1];
+	}
+	static function splitRootTag($xml, $tag) {
+		$xml = trim($xml);
+		$r = new _hx_array(array("", null, ""));
+		if(StringTools::startsWith($xml, "<" . $tag)) {
+			$depth = 1;
+			$lastOpen = _hx_last_index_of($xml, "<", null);
+			$lastClose = _hx_last_index_of($xml, ">", null);
+			$j1 = _hx_index_of($xml, "<" . $tag, 1);
+			$j2 = _hx_index_of($xml, "</" . $tag, 1);
+			$j3 = _hx_index_of($xml, "/>", null);
+			if(_hx_index_of($xml, ">", null) - $j3 !== 1) {
+				$j3 = -1;
+			}
+			while($depth > 0) {
+				if(($j1 === -1 || $j2 < $j1) && ($j3 === -1 || $j2 < $j3)) {
+					$depth--;
+					if($depth > 0) {
+						$j2 = _hx_index_of($xml, "</" . $tag, $j2 + 1);
+					}
+				} else {
+					if($j1 !== -1 && ($j3 === -1 || $j1 < $j3)) {
+						$depth++;
+						$j3 = _hx_index_of($xml, "/>", $j1);
+						if(_hx_index_of($xml, ">", $j1) - $j3 !== 1) {
+							$j3 = -1;
+						}
+						$j1 = _hx_index_of($xml, "<" . $tag, $j1 + 1);
+					} else {
+						$depth--;
+						$j3 = -1;
+					}
+				}
+			}
+			if($j2 === $lastOpen) {
+				$ini = _hx_index_of($xml, ">", null) + 1;
+				$r[0] = _hx_substr($xml, 0, $ini);
+				$r[1] = _hx_substr($xml, $ini, $lastOpen - $ini);
+				$r[2] = _hx_substr($xml, $lastOpen, null);
+			} else {
+				if($j3 + 1 === $lastClose) {
+					$r[0] = _hx_substr($xml, 0, strlen($xml) - 2) . ">";
+					$r[1] = "";
+					$r[2] = "</" . $tag . ">";
+				} else {
+					$r[1] = $xml;
+				}
+			}
+		} else {
+			$r[1] = $xml;
+		}
+		return $r;
+	}
+	static function mathMLToText($mathml) {
+		$root = com_wiris_util_xml_WXmlUtils::parseXML($mathml);
+		if($root->nodeType == Xml::$Document) {
+			$root = $root->firstElement();
+		}
+		com_wiris_util_xml_MathMLUtils::removeMrows($root);
+		return com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($root);
+	}
+	static function fullMathML2TextImpl($e) {
+		$sb = new StringBuf();
+		if($e->getNodeName() === "mo" || $e->getNodeName() === "mn" || $e->getNodeName() === "mi" || $e->getNodeName() === "mtext") {
+			$sb->add(com_wiris_util_xml_WXmlUtils::getNodeValue($e->firstChild()));
+		} else {
+			if($e->getNodeName() === "mfenced" || $e->getNodeName() === "mtr" || $e->getNodeName() === "mtable") {
+				$open = $e->get("open");
+				if($open === null) {
+					$open = "(";
+				}
+				$close = $e->get("close");
+				if($close === null) {
+					$close = ")";
+				}
+				$separators = $e->get("separators");
+				if($separators === null) {
+					$separators = ",";
+				}
+				if($open === "(" && $close === ")" && $e->firstElement()->getNodeName() === "mtable") {
+					$open = "";
+					$close = "";
+				}
+				$sb->add($open);
+				$it = $e->elements();
+				$i = 0;
+				$n = haxe_Utf8::length($separators);
+				while($it->hasNext()) {
+					if($i > 0 && $n > 0) {
+						$sb->add(com_wiris_util_xml_MathMLUtils_0($close, $e, $i, $it, $n, $open, $sb, $separators));
+					}
+					$sb->add(com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($it->next()));
+					$i++;
+				}
+				$sb->add($close);
+			} else {
+				if($e->getNodeName() === "mfrac") {
+					$it = $e->elements();
+					$num = com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($it->next());
+					if(strlen($num) > 1) {
+						$num = "(" . $num . ")";
+					}
+					$den = com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($it->next());
+					if(strlen($den) > 1) {
+						$den = "(" . $den . ")";
+					}
+					$sb->add($num);
+					$sb->add("/");
+					$sb->add($den);
+				} else {
+					if($e->getNodeName() === "msup") {
+						$it = $e->elements();
+						$bas = com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($it->next());
+						if(strlen($bas) > 1) {
+							$bas = "(" . $bas . ")";
+						}
+						$exp = com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($it->next());
+						if(strlen($exp) > 1) {
+							$exp = "(" . $exp . ")";
+						}
+						$sb->add($bas);
+						$sb->add("^");
+						$sb->add($exp);
+					} else {
+						if($e->getNodeName() === "msqrt") {
+							$sb->add("sqrt(");
+							$e->setNodeName("math");
+							$sb->add(com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($e));
+							$sb->add(")");
+						} else {
+							if($e->getNodeName() === "mroot") {
+								$it = $e->elements();
+								$rad = com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($it->next());
+								$ind = com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($it->next());
+								$sb->add("root(");
+								$sb->add($rad);
+								$sb->add(",");
+								$sb->add($ind);
+								$sb->add(")");
+							} else {
+								if($e->getNodeName() === "mspace" && "newline" === $e->get("linebreak")) {
+									$sb->add("\x0A");
+								} else {
+									if($e->getNodeName() === "semantics") {
+										$it = $e->elements();
+										if($it->hasNext()) {
+											$mml = $it->next();
+											if($it->hasNext()) {
+												$ann = $it->next();
+												if($ann->getNodeName() === "annotation" && "text/plain" === $ann->get("encoding")) {
+													return com_wiris_util_xml_WXmlUtils::getText($ann);
+												}
+											}
+											return com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($mml);
+										}
+									} else {
+										$it = $e->elements();
+										while($it->hasNext()) {
+											$x = $it->next();
+											$sb->add(com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($x));
+											if($x->getNodeName() === "mi" && com_wiris_util_xml_MathMLUtils::isFunctionName(com_wiris_util_xml_WXmlUtils::getNodeValue($x->firstChild())) && $it->hasNext()) {
+												$y = $it->next();
+												if($y->getNodeName() === "msqrt" || $y->getNodeName() === "mfrac" || $y->getNodeName() === "mroot") {
+													$sb->add("(");
+													$sb->add(com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($y));
+													$sb->add(")");
+												} else {
+													$parentheses = false;
+													$argument = new StringBuf();
+													while($y !== null && com_wiris_util_xml_MathMLUtils::isImplicitArgumentFactor($y)) {
+														if($y->getNodeName() === "msup") {
+															$parentheses = true;
+														}
+														$argument->add(com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($y));
+														$y = (($it->hasNext()) ? $it->next() : null);
+													}
+													if($parentheses) {
+														$sb->add("(");
+													}
+													$sb->add($argument->b);
+													if($parentheses) {
+														$sb->add(")");
+													}
+													if($y !== null) {
+														$sb->add(com_wiris_util_xml_MathMLUtils::fullMathML2TextImpl($y));
+													}
+													unset($parentheses,$argument);
+												}
+												unset($y);
+											}
+											unset($x);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		return $sb->b;
+	}
+	static function removeMrows($elem) {
+		if($elem->nodeType != Xml::$Element && $elem->nodeType != Xml::$Document) {
+			return;
+		}
+		$children = $elem->iterator();
+		while($children->hasNext()) {
+			com_wiris_util_xml_MathMLUtils::removeMrows($children->next());
+		}
+		$children = $elem->iterator();
+		$i = 0;
+		while($children->hasNext()) {
+			$c = $children->next();
+			if($c->nodeType == Xml::$Element) {
+				if($c->getNodeName() === "mrow") {
+					$mrowChildren = $c->elements();
+					$singlechild = false;
+					if($mrowChildren->hasNext()) {
+						$mrowChildren->next();
+						$singlechild = !$mrowChildren->hasNext();
+					}
+					if($singlechild || _hx_index_of(com_wiris_util_xml_MathMLUtils::$MROWS, $elem->getNodeName(), null) !== -1) {
+						$elem->removeChild($c);
+						$n = null;
+						$count = 0;
+						while(($n = $c->firstChild()) !== null) {
+							$c->removeChild($n);
+							$elem->insertChild($n, $i + $count);
+							$count++;
+						}
+						if($count !== 1) {
+							$i = -1;
+							$children = $elem->iterator();
+						}
+						unset($n,$count);
+					}
+					unset($singlechild,$mrowChildren);
+				} else {
+					if($c->getNodeName() === "mfenced") {
+						if("(" === $c->get("open")) {
+							$c->remove("open");
+						}
+						if(")" === $c->get("close")) {
+							$c->remove("close");
+						}
+					}
+				}
+			}
+			$i++;
+			unset($c);
+		}
+	}
+	static function isFunctionName($word) {
+		$functionNames = new _hx_array(array("exp", "ln", "log", "sin", "sen", "cos", "tan", "tg", "asin", "arcsin", "asen", "arcsen", "acos", "arccos", "atan", "arctan", "cosec", "csc", "sec", "cotan", "acosec", "acsc", "asec", "acotan", "sinh", "senh", "cosh", "tanh", "asinh", "arcsinh", "asenh", "arcsenh", "acosh", "arccosh", "atanh", "arctanh", "cosech", "csch", "sech", "cotanh", "acosech", "acsch", "asech", "acotanh", "sign"));
+		return com_wiris_util_type_Arrays::containsArray($functionNames, $word);
+	}
+	static function isImplicitArgumentFactor($x) {
+		if($x->getNodeName() === "mi" || $x->getNodeName() === "mn") {
+			return true;
+		}
+		if($x->getNodeName() === "msup") {
+			$c = $x->firstElement();
+			if($c !== null && $c->getNodeName() === "mi" || $c->getNodeName() === "mn") {
+				return true;
+			}
+		}
+		return false;
+	}
 	function __toString() { return 'com.wiris.util.xml.MathMLUtils'; }
 }
 com_wiris_util_xml_MathMLUtils::$strokesAnnotationEncondings = new _hx_array(array(com_wiris_util_net_MimeTypes::$JSON, com_wiris_util_net_MimeTypes::$HAND_STROKES));
+function com_wiris_util_xml_MathMLUtils_0(&$close, &$e, &$i, &$it, &$n, &$open, &$sb, &$separators) {
+	{
+		$s = new haxe_Utf8(null);
+		$s->addChar(haxe_Utf8::charCodeAt($separators, com_wiris_util_xml_MathMLUtils_1($close, $e, $i, $it, $n, $open, $s, $sb, $separators)));
+		return $s->toString();
+	}
+}
+function com_wiris_util_xml_MathMLUtils_1(&$close, &$e, &$i, &$it, &$n, &$open, &$s, &$sb, &$separators) {
+	if($i < $n) {
+		return $i;
+	} else {
+		return $n - 1;
+	}
+}

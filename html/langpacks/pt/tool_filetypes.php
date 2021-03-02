@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'pt', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['corestring'] = 'String de idioma alternativa';
 $string['corestring_help'] = 'Esta configuração pode ser usada para selecionar uma string de idioma diferente a partir do ficheiro de idioma mimetypes.php. Geralmente deve ser deixada em branco. Para os tipos personalizados, use o campo de descrição.';
 $string['defaulticon'] = 'Ícone predefinido para o tipo MIME';
 $string['defaulticon_help'] = 'Caso existam múltiplas extensões de ficheiros do tipo MIME, selecione esta opção para uma das extensões de forma a que este ícone possa vir a ser utilizado para ficheiros do tipo MIME.';
-$string['deletea'] = 'Eliminar {$a}';
 $string['delete_confirmation'] = 'Tem a certeza absoluta que pretende eliminar \'<strong>{$a}</strong>\'?';
+$string['deletea'] = 'Eliminar {$a}';
 $string['deletefiletypes'] = 'Eliminar um tipo de ficheiro';
 $string['description'] = 'Descrição personalizada';
 $string['description_help'] = 'Descrição de um tipo de ficheiro simples, por exemplo \'Kindle ebook\'. Se o seu site suporta vários idiomas e utiliza um filtro de multi-idioma, pode introduzir tags de multi-idioma neste campo para fornecer uma descrição em vários idiomas.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'ja', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,15 +70,15 @@ $string['evaluate'] = '評価';
 $string['evaluatemodel'] = 'モデルを評価する';
 $string['evaluationinbatches'] = 'サイトコンテンツはバッチ処理により計算および保存されます。評価処理はいつでも停止することができます。次回実行する場合、停止した箇所から継続されます。';
 $string['evaluationmode'] = '評価モード';
-$string['evaluationmodecolconfiguration'] = '設定';
-$string['evaluationmodecoltrainedmodel'] = '訓練済みモデル';
-$string['evaluationmodeconfiguration'] = 'モデル設定を評価する';
 $string['evaluationmode_help'] = '以下、2つの評価モデルがあります:
 
 * 訓練済みモデル - サイトデータは訓練済みモデルの正確性を評価するためのテストデータとして使用されます。
 * 設定 - サイトデータはモデル設定の正確性を訓練およびテストするため訓練用およびテスト用データに分割されます。
 
 訓練済みモデルは訓練済みモデルがサイトにインポートされてサイトデータを使用して再訓練されていない場合のみ使用できます。';
+$string['evaluationmodecolconfiguration'] = '設定';
+$string['evaluationmodecoltrainedmodel'] = '訓練済みモデル';
+$string['evaluationmodeconfiguration'] = 'モデル設定を評価する';
 $string['evaluationmodeinfo'] = 'このモデルはサイトにインポートされました。あなたはサイトデータを使用してモデルのパフォーマンスを評価するか、モデル設定のパフォーマンスを評価することができます。';
 $string['evaluationmodetrainedmodel'] = '訓練済みモデルを評価する';
 $string['executescheduledanalysis'] = 'スケジュール分析を実行する';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'course', language 'el', version '3.8'.
  *
- * @package   course
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     course
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,11 +37,11 @@ $string['coursetoolong'] = 'Το μάθημα είναι πολύ μεγάλο';
 $string['customfield_islocked'] = 'Κλειδωμένο';
 $string['customfield_islocked_help'] = 'Εάν το πεδίο είναι κλειδωμένο, μόνο οι χρήστες με δυνατότητα αλλαγής κλειδωμένων προσαρμοσμένων πεδίων (από προεπιλογή, μόνο οι χρήστες με τον προεπιλεγμένο ρόλο του διαχειριστή) θα μπορούν να το αλλάξουν στις ρυθμίσεις μαθήματος.';
 $string['customfield_notvisible'] = 'Κανείς';
-$string['customfieldsettings'] = 'Κοινές ρυθμίσεις προσαρμοσμένων πεδίων μαθήματος';
 $string['customfield_visibility'] = 'Ορατό σε';
 $string['customfield_visibility_help'] = 'Αυτή η ρύθμιση καθορίζει ποιος μπορεί να δει το όνομα και την τιμή προσαρμοσμένου πεδίου στη λίστα μαθημάτων ή στο διαθέσιμο φίλτρο προσαρμοσμένων πεδίων στο Ταμπλό';
 $string['customfield_visibletoall'] = 'Οποιοσδήποτε';
 $string['customfield_visibletoteachers'] = 'Διδάσκοντες';
+$string['customfieldsettings'] = 'Κοινές ρυθμίσεις προσαρμοσμένων πεδίων μαθήματος';
 $string['errorendbeforestart'] = 'Η ημερομηνία λήξης ({$a}) είναι πριν από την ημερομηνία έναρξης του μαθήματος.';
 $string['favourite'] = 'Μάθημα με αστερίσκο';
 $string['gradetopassnotset'] = 'Αυτό το μάθημα δεν έχει καθορισμένη βαθμολογία επιτυχίας. Μπορεί να οριστεί στο στοιχείο βαθμού του μαθήματος (Ρύθμιση βαθμολογίου).';
@@ -75,6 +75,15 @@ $string['target:coursedropout'] = 'Μαθητές που κινδυνεύουν 
 $string['target:coursedropout_help'] = 'Αυτός ο στόχος περιγράφει αν ο μαθητής θεωρείται ότι κινδυνεύει να εγκαταλείψει.';
 $string['target:coursegradetopass'] = 'Μαθητές που κινδυνεύουν να μην πετύχουν τον ελάχιστο βαθμό για να περάσουν το μάθημα';
 $string['target:coursegradetopass_help'] = 'Αυτός ο στόχος περιγράφει αν ο μαθητής κινδυνεύει να μην επιτύχει τον ελάχιστο βαθμό για να περάσει το μάθημα.';
+$string['target:noaccesssincecoursestart'] = 'Μαθητές που δεν πραγματοποίησαν πρόσβαση στο μάθημα ακόμη';
+$string['target:noaccesssincecoursestart_help'] = 'Αυτός ο στόχος περιγράφει μαθητές που ποτέ δεν πραγματοποίησαν πρόσβαση σε ένα μάθημα στο οποίο είναι εγγεγραμμένοι.';
+$string['target:noaccesssincecoursestartinfo'] = 'Οι ακόλουθοι μαθητές είναι εγγεγραμμένοι σε ένα μάθημα το οποίο ξεκίνησε, αλλά δεν πραγματοποίησαν ποτέ πρόσβαση στο μάθημα.';
+$string['target:norecentaccesses'] = 'Μαθητές που δεν έκαναν πρόσβαση στο μάθημα πρόσφατα';
+$string['target:norecentaccesses_help'] = 'Αυτός ο στόχος βρίσκει μαθητές που δεν πραγματοποίησαν πρόσβαση μέσα στο καθορισμένο διάστημα ανάλυσης (από προεπιλογή τον περασμένο μήνα) σε ένα μάθημα, στο οποίο είναι εγγεγραμμένοι.';
+$string['target:norecentaccessesinfo'] = 'Οι ακόλουθοι μαθητές δεν πραγματοποίησαν πρόσβαση στο καθορισμένο διάστημα ανάλυσης (από προεπιλογή ο περασμένος μήνας) σε ένα μάθημα στο οποίο είναι εγγεγραμμένοι.';
+$string['target:noteachingactivity'] = 'Μαθήματα που κινδυνεύουν να μην αρχίσουν';
+$string['target:noteachingactivity_help'] = 'Αυτός ο στόχος περιγράφει εάν τα μαθήματα που θα ξεκινήσουν την επόμενη εβδομάδα θα έχουν διδακτική δραστηριότητα.';
+$string['target:noteachingactivityinfo'] = 'Τα ακόλουθα μαθήματα που ήταν να ξεκινήσουν στις επόμενες ημέρες, κινδυνεύουν να μην ξεκινήσουν διότι δεν έχουν διδάσκοντες ή εγγεγραμμένους μαθητές.';
 $string['targetlabelstudentcompetenciesno'] = 'Μαθητής που είναι πιθανό να επιτύχει τα προσόντα που αποδίδονται σε ένα μάθημα';
 $string['targetlabelstudentcompetenciesyes'] = 'Μαθητής που κινδυνεύει να μην επιτύχει τα προσόντα που αποδίδονται σε ένα μάθημα';
 $string['targetlabelstudentcompletionno'] = 'Μαθητής που είναι πιθανό να πληροί τις προϋποθέσεις ολοκλήρωσης του μαθήματος';
@@ -85,12 +94,3 @@ $string['targetlabelstudentgradetopassno'] = 'Μαθητής που είναι �
 $string['targetlabelstudentgradetopassyes'] = 'Μαθητής που κινδυνεύει να μην πληροί τον ελάχιστο βαθμό για να περάσει το μάθημα.';
 $string['targetlabelteachingno'] = 'Μαθήματα που κινδυνεύουν να μην αρχίσουν';
 $string['targetlabelteachingyes'] = 'Χρήστες με δυνατότητες διδασκαλίας, οι οποίοι έχουν πρόσβαση στο μάθημα';
-$string['target:noaccesssincecoursestart'] = 'Μαθητές που δεν πραγματοποίησαν πρόσβαση στο μάθημα ακόμη';
-$string['target:noaccesssincecoursestart_help'] = 'Αυτός ο στόχος περιγράφει μαθητές που ποτέ δεν πραγματοποίησαν πρόσβαση σε ένα μάθημα στο οποίο είναι εγγεγραμμένοι.';
-$string['target:noaccesssincecoursestartinfo'] = 'Οι ακόλουθοι μαθητές είναι εγγεγραμμένοι σε ένα μάθημα το οποίο ξεκίνησε, αλλά δεν πραγματοποίησαν ποτέ πρόσβαση στο μάθημα.';
-$string['target:norecentaccesses'] = 'Μαθητές που δεν έκαναν πρόσβαση στο μάθημα πρόσφατα';
-$string['target:norecentaccesses_help'] = 'Αυτός ο στόχος βρίσκει μαθητές που δεν πραγματοποίησαν πρόσβαση μέσα στο καθορισμένο διάστημα ανάλυσης (από προεπιλογή τον περασμένο μήνα) σε ένα μάθημα, στο οποίο είναι εγγεγραμμένοι.';
-$string['target:norecentaccessesinfo'] = 'Οι ακόλουθοι μαθητές δεν πραγματοποίησαν πρόσβαση στο καθορισμένο διάστημα ανάλυσης (από προεπιλογή ο περασμένος μήνας) σε ένα μάθημα στο οποίο είναι εγγεγραμμένοι.';
-$string['target:noteachingactivity'] = 'Μαθήματα που κινδυνεύουν να μην αρχίσουν';
-$string['target:noteachingactivity_help'] = 'Αυτός ο στόχος περιγράφει εάν τα μαθήματα που θα ξεκινήσουν την επόμενη εβδομάδα θα έχουν διδακτική δραστηριότητα.';
-$string['target:noteachingactivityinfo'] = 'Τα ακόλουθα μαθήματα που ήταν να ξεκινήσουν στις επόμενες ημέρες, κινδυνεύουν να μην ξεκινήσουν διότι δεν έχουν διδάσκοντες ή εγγεγραμμένους μαθητές.';

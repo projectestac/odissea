@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_completion_progress', language 'en', version '3.8'.
  *
- * @package   block_completion_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_completion_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -74,18 +74,18 @@ $string['no_activities_config_message'] = 'There are no activities or resources 
 $string['no_activities_message'] = 'No activities or resources are being monitored. Use config to set up monitoring.';
 $string['no_blocks'] = 'No Completion Progress blocks are set up for your courses.';
 $string['no_courses'] = 'You are not enrolled in any courses. Only bars from enrolled courses will be shown.';
-$string['not_all_expected_set'] = 'Not all activities with completion have an "{$a}" date set.';
+$string['no_visible_activities_message'] = 'None of the monitored activities are currently visible.';
 $string['notCompleted_colour'] = '#C71C22';
 $string['notCompleted_colour_descr'] = 'HTML colour code for current elements that have not yet been completed';
 $string['notCompleted_colour_title'] = 'Not-completed colour';
-$string['no_visible_activities_message'] = 'None of the monitored activities are currently visible.';
+$string['not_all_expected_set'] = 'Not all activities with completion have an "{$a}" date set.';
 $string['now_indicator'] = 'NOW';
 $string['overview'] = 'Overview of students';
 $string['pluginname'] = 'Completion Progress';
 $string['privacy:metadata'] = 'The Completion Progress block only displays existing completion data.';
 $string['progress'] = 'Progress';
 $string['progressbar'] = 'Completion Progress';
-$string['selectitem'] = 'Select \'{$a}\\';
+$string['selectitem'] = 'Select \'{$a}\'';
 $string['shortname'] = 'Short course name';
 $string['showallinfo'] = 'Show all info';
 $string['showinactive'] = 'Show inactive students in Overview';

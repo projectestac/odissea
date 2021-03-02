@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'fr', version '3.8'.
  *
- * @package   qtype_calculatedsimple
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedsimple
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['findwildcards'] = 'Rechercher les jokers {x..} présents dans les formu
 $string['generatenewitemsset'] = 'Générer';
 $string['newsetwildcardvalues'] = 'nouveau(x) jeu(x) de valeur(s) pour le(s) joker(s)';
 $string['pluginname'] = 'Calculée simple';
+$string['pluginname_help'] = 'Les questions calculées simples permettent de créer des questions numériques en utilisant des variables qui sont remplacées par des valeurs quand le test est en cours. Les questions calculées simples offrent les fonctionnalités les plus utilisées des questions calculées, mais avec une interface de création plus simple.';
 $string['pluginnameadding'] = 'Ajout d\'une question calculée simple';
 $string['pluginnameediting'] = 'Modification d\'une question calculée simple';
-$string['pluginname_help'] = 'Les questions calculées simples permettent de créer des questions numériques en utilisant des variables qui sont remplacées par des valeurs quand le test est en cours. Les questions calculées simples offrent les fonctionnalités les plus utilisées des questions calculées, mais avec une interface de création plus simple.';
 $string['pluginnamesummary'] = 'Version simplifiée des questions calculées (questions numériques dont les nombres sont tirés aléatoirement d\'un jeu de données lorsque le test est effectué).';
 $string['privacy:metadata'] = 'Le plugin de type de question Calculée simple n\'enregistre aucune donnée personnelle.';
 $string['setno'] = 'Jeu {$a}';

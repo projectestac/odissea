@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_completion_progress', language 'ru', version '3.8'.
  *
- * @package   block_completion_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_completion_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -72,11 +72,11 @@ $string['no_activities_config_message'] = 'Нет элементов или ре
 $string['no_activities_message'] = 'Никакие элементы курса или ресурсы не отслеживаются. Используйте конфигурацию для настройки контроля.';
 $string['no_blocks'] = 'Блоки «Прогресс выполнения» не установлены для ваших курсов.';
 $string['no_courses'] = 'Вы не зачислены ни на один курс. Панели могут быть показаны только участникам курсов.';
-$string['not_all_expected_set'] = 'Не все элементы с завершением имеют установленную дату "{$a}".';
+$string['no_visible_activities_message'] = 'Ни один из отслеживаемых элементов курса в настоящее время недоступен.';
 $string['notCompleted_colour'] = '#C71C22';
 $string['notCompleted_colour_descr'] = 'HTML-код цвета для текущих элементов, которые еще не были завершены';
 $string['notCompleted_colour_title'] = 'Цвет для незавершенных элементов курса';
-$string['no_visible_activities_message'] = 'Ни один из отслеживаемых элементов курса в настоящее время недоступен.';
+$string['not_all_expected_set'] = 'Не все элементы с завершением имеют установленную дату "{$a}".';
 $string['now_indicator'] = 'Сейчас';
 $string['overview'] = 'Обзор студентов';
 $string['pluginname'] = 'Прогресс завершения элементов курса';

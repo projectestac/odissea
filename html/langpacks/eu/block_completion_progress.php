@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_completion_progress', language 'eu', version '3.8'.
  *
- * @package   block_completion_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_completion_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -86,11 +86,11 @@ $string['no_activities_config_message'] = 'Ez dago jarraipena zehaztuta duen jar
 $string['no_activities_message'] = 'Ez dago jarraituriko jarduera edo baliabiderik. Konfigura ezazu blokea jarraipena ezartzeko.';
 $string['no_blocks'] = 'Ez dago Osaketaren Aurrerapena blokerik ezarrita zure ikastarorako.';
 $string['no_courses'] = 'Ez zaude inongo ikastarotan matrikulatuta. Soilik matrikulatuta zauden ikastaroen barrak erakutsiko dira.';
-$string['not_all_expected_set'] = 'Jarraipena zehaztuta duten jarduera guztiek ez dute "{$a}" data zehaztuta.';
+$string['no_visible_activities_message'] = 'Une honetan ez dago ikusgai jarraituriko elementurik.';
 $string['notCompleted_colour'] = '#C71C22';
 $string['notCompleted_colour_descr'] = 'HTML kolore kodea oraindik osatu gabeko elementuentzat';
 $string['notCompleted_colour_title'] = 'Osatu-gabekoen kolorea';
-$string['no_visible_activities_message'] = 'Une honetan ez dago ikusgai jarraituriko elementurik.';
+$string['not_all_expected_set'] = 'Jarraipena zehaztuta duten jarduera guztiek ez dute "{$a}" data zehaztuta.';
 $string['now_indicator'] = 'ORAIN';
 $string['overview'] = 'Ikasleen ikuspegi orokorra';
 $string['pluginname'] = 'Osaketaren Jarraipena';

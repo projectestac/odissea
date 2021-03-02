@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'question', language 'de', version '3.8'.
  *
- * @package   question
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     question
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -122,7 +122,8 @@ $string['defaultmark'] = 'Erreichbare Punkte';
 $string['defaultmarkmustbepositive'] = 'Die Standardbewertung muss ein positiver Wert sein.';
 $string['deletecoursecategorywithquestions'] = 'In dieser Kurskategorie sind Fragen in der Testfragendatenbank hinterlegt. Wenn Sie nun fortfahren, werden diese gelöscht. Über die Testfragenverwaltung können diese  von Ihnen verschoben werden.';
 $string['deletequestioncheck'] = 'Sind Sie absolut sicher, die Sie \'{$a}\' löschen möchten?';
-$string['deletequestionscheck'] = 'Möchten Sie die folgenden Fragen wirklich löschen? <br /> <br />{$a}';
+$string['deletequestionscheck'] = '<p>Möchten Sie die folgenden Fragen wirklich löschen? </p>
+<p>{$a}</p>';
 $string['deletingbehaviour'] = 'Frageverhalten \'{$a}\' wird gelöscht';
 $string['deletingqtype'] = 'Fragetyp \'{$a}\' löschen';
 $string['didnotmatchanyanswer'] = '[Passt zu keiner Antwort]';
@@ -265,7 +266,7 @@ $string['invalidwizardpage'] = 'Falsche oder keine Seite festgelegt!';
 $string['lastmodifiedby'] = 'Zuletzt verändert von';
 $string['lasttry'] = 'Letzter Versuch';
 $string['linkedfiledoesntexist'] = 'Verbundene Datei {$a} existiert nicht';
-$string['makechildof'] = 'Unterkategorie  von \'{$a}\' erzeugen';
+$string['makechildof'] = 'Unterkategorie von \'{$a}\' erzeugen';
 $string['makecopy'] = 'Kopieren';
 $string['maketoplevelitem'] = 'Nach ganz oben bewegen';
 $string['manualgradeinvalidformat'] = 'Dies ist eine ungültige Zahl.';
@@ -277,7 +278,6 @@ $string['markedoutofmax'] = 'Erreichbare Punkte: {$a}';
 $string['markoutofmax'] = 'Erreichte Punkte {$a->mark} von {$a->max}';
 $string['marks'] = 'Punkte';
 $string['matchgrades'] = 'Bewertungen abgleichen';
-$string['matchgradeserror'] = 'Fehler wenn Bewertung nicht gelistet';
 $string['matchgrades_help'] = '<p>Importierte Bewertungen <b>müssen</b> zu einer der gültigen Bewertungen passen, die in der folgenden Liste aufgeführt sind.</p>
 
 <ul>
@@ -315,6 +315,7 @@ $string['matchgrades_help'] = '<p>Importierte Bewertungen <b>müssen</b> zu eine
 </ul>
 
 <p><i>Anmerkung: Einige Importfunktionen schreiben ihre Daten direkt in die Datenbank und können diese Prüfung umgehen.</i></p>';
+$string['matchgradeserror'] = 'Fehler wenn Bewertung nicht gelistet';
 $string['matchgradesnearest'] = 'Nächstliegende Bewertung verwenden';
 $string['missingcourseorcmid'] = 'courseid oder cmid muss für print_question  angegeben werden';
 $string['missingcourseorcmidtolink'] = 'courseid oder cmid erforderlich, um get_question_edit_link anzuzeigen.';
@@ -397,9 +398,13 @@ $string['permissionsaveasnew'] = 'Diese Frage  als neue Frage speichern';
 $string['permissionto'] = 'Sie haben Rechte für :';
 $string['previewquestion'] = 'Vorschau Frage {$a}';
 $string['privacy:metadata:database:question'] = 'Details zu einer bestimmten Frage';
-$string['privacy:metadata:database:question_attempts'] = 'Informationen über einen Beantwortungsversuch für eine bestimmte Frage';
-$string['privacy:metadata:database:question_attempts:flagged'] = 'Kennzeichen, dass der Nutzer beim Frageversuch Frage markiert hat';
-$string['privacy:metadata:database:question_attempts:responsesummary'] = 'Zusammenfassung der Antworten zu einer Frage';
+$string['privacy:metadata:database:question:createdby'] = 'Person, die Testfrage erstellt hat';
+$string['privacy:metadata:database:question:generalfeedback'] = 'Allgemeines Feedback für die Frage';
+$string['privacy:metadata:database:question:modifiedby'] = 'Person, die Frage zuletzt aktualisiert hat';
+$string['privacy:metadata:database:question:name'] = 'Name der Frage';
+$string['privacy:metadata:database:question:questiontext'] = 'Fragetext';
+$string['privacy:metadata:database:question:timecreated'] = 'Datum/Zeit an dem Frage erstellt wurde';
+$string['privacy:metadata:database:question:timemodified'] = 'Datum/Zeitpunkt, zu dem die Frage aktualisiert wurde';
 $string['privacy:metadata:database:question_attempt_step_data'] = 'Für den Schritt eines Fragenversuchs können  weitere Daten in der step_data-Tabelle abgelegt sein.';
 $string['privacy:metadata:database:question_attempt_step_data:name'] = 'Name des Datenwerts';
 $string['privacy:metadata:database:question_attempt_step_data:value'] = 'Wert';
@@ -408,14 +413,10 @@ $string['privacy:metadata:database:question_attempt_steps:fraction'] = 'Bewertun
 $string['privacy:metadata:database:question_attempt_steps:state'] = 'Status des Fragenversuchsschritts am Ende  der Verarbeitung des Schritts';
 $string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'Datum und Zeitpunkt, zu dem die Schrittverarbeitung dieser Frage begann';
 $string['privacy:metadata:database:question_attempt_steps:userid'] = 'Nutzer, der Schrittverarbeitung ausgeführt hat';
+$string['privacy:metadata:database:question_attempts'] = 'Informationen über einen Beantwortungsversuch für eine bestimmte Frage';
+$string['privacy:metadata:database:question_attempts:flagged'] = 'Kennzeichen, dass der Nutzer beim Frageversuch Frage markiert hat';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = 'Zusammenfassung der Antworten zu einer Frage';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'Zeitpunkt zu dem Fragenversuch aktualisiert wurde';
-$string['privacy:metadata:database:question:createdby'] = 'Person, die Testfrage erstellt hat';
-$string['privacy:metadata:database:question:generalfeedback'] = 'Allgemeines Feedback für die Frage';
-$string['privacy:metadata:database:question:modifiedby'] = 'Person, die Frage zuletzt aktualisiert hat';
-$string['privacy:metadata:database:question:name'] = 'Name der Frage';
-$string['privacy:metadata:database:question:questiontext'] = 'Fragetext';
-$string['privacy:metadata:database:question:timecreated'] = 'Datum/Zeit an dem Frage erstellt wurde';
-$string['privacy:metadata:database:question:timemodified'] = 'Datum/Zeitpunkt, zu dem die Frage aktualisiert wurde';
 $string['privacy:metadata:link:qbehaviour'] = 'Das Fragen-Subsystem nutzt den Plugintyp \'Frageverhalten\'.';
 $string['privacy:metadata:link:qformat'] = 'Das Fragen-Subsystem nutzt den Plugintyp \'Fragenformat\', um Fragen aus unterschiedlichen Formaten zu importieren oder zu exportieren.';
 $string['privacy:metadata:link:qtype'] = 'Das Fragen-Subsystem nutzt den Plugintyp \'Fragetyp\', der verschiedene Fragentypen umfasst.';
@@ -491,7 +492,7 @@ $string['submitted'] = 'Absenden: {$a}';
 $string['tagarea_question'] = 'Fragen';
 $string['technicalinfo'] = 'Technische Information';
 $string['technicalinfo_help'] = 'Diese technische Information wendet sich ausschließlich an Entwickler von neuen Fragetypen. Sie kann auch für die Diagnose von Problemen mit Fragen verwendet werden.';
-$string['technicalinfomaxfraction'] = 'Größter Anteil: {$a}';
+$string['technicalinfomaxfraction'] = 'Größter Teilwert: {$a}';
 $string['technicalinfominfraction'] = 'Kleinster Teilwert: {$a}';
 $string['technicalinfoquestionsummary'] = 'Fragetext: {$a}';
 $string['technicalinforesponsesummary'] = 'Antwortzusammenfassung: {$a}';

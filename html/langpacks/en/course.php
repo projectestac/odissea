@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'course', language 'en', version '3.8'.
  *
- * @package   course
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     course
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,11 +37,11 @@ $string['coursetoolong'] = 'The course is too long';
 $string['customfield_islocked'] = 'Locked';
 $string['customfield_islocked_help'] = 'If the field is locked, only users with the capability to change locked custom fields (by default users with the default role of manager only) will be able to change it in the course settings.';
 $string['customfield_notvisible'] = 'Nobody';
-$string['customfieldsettings'] = 'Common course custom fields settings';
 $string['customfield_visibility'] = 'Visible to';
 $string['customfield_visibility_help'] = 'This setting determines who can view the custom field name and value in the list of courses or in the available custom field filter of the Dashboard.';
 $string['customfield_visibletoall'] = 'Everyone';
 $string['customfield_visibletoteachers'] = 'Teachers';
+$string['customfieldsettings'] = 'Common course custom fields settings';
 $string['errorendbeforestart'] = 'The end date ({$a}) is before the course start date.';
 $string['favourite'] = 'Starred course';
 $string['gradetopassnotset'] = 'This course does not have a grade to pass set. It may be set in the grade item of the course (Gradebook setup).';
@@ -75,6 +75,15 @@ $string['target:coursedropout'] = 'Students at risk of dropping out';
 $string['target:coursedropout_help'] = 'This target describes whether the student is considered at risk of dropping out.';
 $string['target:coursegradetopass'] = 'Students at risk of not achieving the minimum grade to pass the course';
 $string['target:coursegradetopass_help'] = 'This target describes whether the student is at risk of not achieving the minimum grade to pass the course.';
+$string['target:noaccesssincecoursestart'] = 'Students who have not accessed the course yet';
+$string['target:noaccesssincecoursestart_help'] = 'This target describes students who never accessed a course they are enrolled in.';
+$string['target:noaccesssincecoursestartinfo'] = 'The following students are enrolled in a course which has started, but they have never accessed the course.';
+$string['target:norecentaccesses'] = 'Students who have not accessed the course recently';
+$string['target:norecentaccesses_help'] = 'This target identifies students who have not accessed a course they are enrolled in within the set analysis interval (by default the past month).';
+$string['target:norecentaccessesinfo'] = 'The following students have not accessed a course they are enrolled in within the set analysis interval (by default the past month).';
+$string['target:noteachingactivity'] = 'Courses at risk of not starting';
+$string['target:noteachingactivity_help'] = 'This target describes whether courses due to start in the coming week will have teaching activity.';
+$string['target:noteachingactivityinfo'] = 'The following courses due to start in the upcoming days are at risk of not starting because they don\'t have teachers or students enrolled.';
 $string['targetlabelstudentcompetenciesno'] = 'Student who is likely to achieve the competencies assigned to a course';
 $string['targetlabelstudentcompetenciesyes'] = 'Student at risk of not achieving the competencies assigned to a course';
 $string['targetlabelstudentcompletionno'] = 'Student who is likely to meet the course completion conditions';
@@ -85,12 +94,3 @@ $string['targetlabelstudentgradetopassno'] = 'Student who is likely to meet the 
 $string['targetlabelstudentgradetopassyes'] = 'Student at risk of not meeting the minimum grade to pass the course.';
 $string['targetlabelteachingno'] = 'Courses at risk of not starting';
 $string['targetlabelteachingyes'] = 'Users with teaching capabilities who have access to the course';
-$string['target:noaccesssincecoursestart'] = 'Students who have not accessed the course yet';
-$string['target:noaccesssincecoursestart_help'] = 'This target describes students who never accessed a course they are enrolled in.';
-$string['target:noaccesssincecoursestartinfo'] = 'The following students are enrolled in a course which has started, but they have never accessed the course.';
-$string['target:norecentaccesses'] = 'Students who have not accessed the course recently';
-$string['target:norecentaccesses_help'] = 'This target identifies students who have not accessed a course they are enrolled in within the set analysis interval (by default the past month).';
-$string['target:norecentaccessesinfo'] = 'The following students have not accessed a course they are enrolled in within the set analysis interval (by default the past month).';
-$string['target:noteachingactivity'] = 'Courses at risk of not starting';
-$string['target:noteachingactivity_help'] = 'This target describes whether courses due to start in the coming week will have teaching activity.';
-$string['target:noteachingactivityinfo'] = 'The following courses due to start in the upcoming days are at risk of not starting because they don\'t have teachers or students enrolled.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'geogebra', language 'nl', version '3.8'.
  *
- * @package   geogebra
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     geogebra
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,23 +54,23 @@ $string['extractedfromggb'] = 'bestanden uitgepakt uit ggb';
 $string['filename'] = 'Bestandsnaam';
 $string['filenotfound'] = 'Gespecificeerd bestand bestaat niet';
 $string['filetype'] = 'Type';
-$string['filetypeexternal'] = 'Externe URL';
 $string['filetype_help'] = 'Deze instelling bepaalt hoe de GeoGebra activiteit wordt getoond in de cursus. Er zijn 2 opties:
 
 * Geüploade GeoGebra - hiermee kan een geldig ".ggb" bestand worden gekozen in de bestandenkiezer.
 * Externe URL - hiermee kan een URL worden ingevoerd. Let op: De URL moet beginnen met http(s) of www en dient een geldig ".ggb" bestand te bevatten.';
+$string['filetypeexternal'] = 'Externe URL';
 $string['filetypelocal'] = 'Geüpload bestand';
 $string['firstattempt'] = 'Eerste poging';
 $string['for'] = 'voor';
 $string['functionalityoptionsgrp'] = 'Functionaliteit';
 $string['geogebra:addinstance'] = 'GeoGebra toevoegen';
-$string['geogebrafile'] = 'GeoGebra bestand';
-$string['geogebrafile_help'] = 'Het .ggb bestand';
 $string['geogebra:grade'] = 'GeoGebra beoordelen';
 $string['geogebra:submit'] = 'GeoGebra insturen';
+$string['geogebra:view'] = 'GeoGebra bekijken';
+$string['geogebrafile'] = 'GeoGebra bestand';
+$string['geogebrafile_help'] = 'Het .ggb bestand';
 $string['geogebraurl'] = 'URL';
 $string['geogebraurl_help'] = 'Met deze instelling ingeschakeld kan er een URL voor het GeoGebra bestand worden ingevoerd, in plaats van een bestand te kiezen via de bestandenkiezer.';
-$string['geogebra:view'] = 'GeoGebra bekijken';
 $string['grade'] = 'Cijfer';
 $string['gradeit'] = 'Cijfer';
 $string['grademethod'] = 'Beoordelingsmethode';
@@ -133,9 +133,9 @@ $string['settings'] = 'Instellingen';
 $string['showAlgebraInput'] = 'Invoerbalk tonen';
 $string['showMenuBar'] = 'Menubalk tonen';
 $string['showResetIcon'] = 'Icoon voor resetten constructie tonen';
-$string['showsubmit'] = 'Instuurknop tonen';
 $string['showToolBar'] = 'Toolbar tonen';
 $string['showToolBarHelp'] = 'Hulp voor toolbar tonen';
+$string['showsubmit'] = 'Instuurknop tonen';
 $string['status'] = 'Estat';
 $string['submitandfinish'] = 'Insturen en beëindigen';
 $string['timing'] = 'Tijd';

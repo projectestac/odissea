@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'ko', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -50,7 +50,7 @@ $string['attls15short'] = '그들의 입장에 서보기';
 $string['attls16'] = '나는 모든 증거에 대해 숙고하는 것에 유의하기 때문에 어떤이들은 시험삼아 그것들을 분석하는 것을 해볼 수 있다';
 $string['attls16short'] = '시험삼아 해보다';
 $string['attls17'] = '나는 논리의 사용과 문제들을 해결할 때의 관심들의 체내화에 대한 이유의 사용을 높이 평가한다';
-$string['attls17short'] = '최상의 논리 평가';
+$string['attls17short'] = '논리를 가장 중요하게 생각합니다';
 $string['attls18'] = '나는 감정이입에 의한 내 의견과 다른 의견에 의해서 통찰력을 획득한다';
 $string['attls18short'] = '감정이입에 의한 통찰력';
 $string['attls19'] = '내가 사람들의 의견이 외계인 같을 때 나는 나 자신을 다른 사람 안에서 확장할려고 사려깊은 노력은 하고 그들이 어떻게 그러한 의견들을 가지게 됐는지 알아볼려고 노력한다';
@@ -72,7 +72,7 @@ $string['attls7'] = '나는 나와 의견이 맞지 않는 사람들과 논쟁�
 $string['attls7short'] = '토론하며 주장하기';
 $string['attls8'] = '나는 왜 사람들이 그들이 하는 것처럼 말하고 믿는 것을 아는것에 항상 흥미를 느낀다';
 $string['attls8short'] = '사람들이 왜 하는지 알기';
-$string['attls9'] = '나는 내가 읽은 책의 저자들과 논의하면서 내 자신을 찾는다, 논리적으로 왜 그들이 틀렸는지 이해하려고 노력한다';
+$string['attls9'] = '나는 내가 읽는 책에서 저자들이 틀린 것을 논리적으로 찾으려 애쓰며 저자들과 논쟁하는 자신을 발견하게 됩니다.';
 $string['attls9short'] = '작가와 논쟁하기';
 $string['attlsintro'] = '이 설문의 목적은 우리가 생각과 배움에 관한 당신의 태도를 평가하는데  도움을 주기 위해서입니다.
 
@@ -126,11 +126,11 @@ $string['colles20'] = '다른 학생들은 배우기 위한 노력에 공감한�
 $string['colles20short'] = '학생들이 열정이 있습니다';
 $string['colles21'] = '나는 다른 학생들의 이야기들을 잘 이해한다.';
 $string['colles21short'] = '다른 학생들을 이해합니다';
-$string['colles22'] = '다른 학생들은 자신들의 이야기를 잘 이해한다.';
+$string['colles22'] = '다른 학생들은 내 이야기를 잘 이해한다.';
 $string['colles22short'] = '다른 학생들아 나를 이해합니다';
-$string['colles23'] = '나는 선생님의 이야기를 잘 이해한다.';
+$string['colles23'] = '나는 튜터의 이야기를 잘 이해한다.';
 $string['colles23short'] = '나는 선생님을 이해한다.';
-$string['colles24'] = '선생님은 자신들의 이야기를 잘 이해한다.';
+$string['colles24'] = '튜터는 내 이야기를 잘 이해한다.';
 $string['colles24short'] = '선생님은 나를 이해한다.';
 $string['colles2short'] = '중요한 나의 실행';
 $string['colles3'] = '나는 나의 전문적인 실행을 향상하는 법을 배운다.';
@@ -190,7 +190,7 @@ $string['collespintro'] = '이 조사의 목적은 당신이 온라인 학습 �
 
 감사합니다.';
 $string['collespname'] = 'COLLES (우선의)';
-$string['customintro'] = '안내';
+$string['customintro'] = '설명';
 $string['deleteallanswers'] = '모든 조사 응답 삭제';
 $string['deleteanalysis'] = '응답 분석 삭제';
 $string['done'] = '완료';
@@ -203,7 +203,7 @@ $string['editingasurvey'] = '조사 편집';
 $string['eventreportdownloaded'] = '조사보고서가 다운로드되었습니다.';
 $string['eventreportviewed'] = '조사 보고서가 열람되었습니다.';
 $string['eventresponsesubmitted'] = '조사 응답이 제출되었습니다.';
-$string['guestsnotallowed'] = '손님은 survey 제출이 허락되지 않았습니다.';
+$string['guestsnotallowed'] = '등록된 사용자들만 조사 응답을 제출할 수 있습니다.';
 $string['howlong'] = '이 조사를 마치는데 시간이 얼마나 걸렸습니까?';
 $string['howlongoptions'] = '1분 미만, 1-2분, 2-3분, 3-4분, 4-5분, 5-10분, 10분 초과';
 $string['ifoundthat'] = '을 발견하다.';
@@ -242,12 +242,12 @@ $string['seemoredetail'] = '더 많은 정보를 보기 원하시면 이곳을 �
 $string['selectedquestions'] = '모든 학생들은 등급에 따라 질문을 선택하십시오.';
 $string['summary'] = '요약';
 $string['survey:addinstance'] = '새로운 조사 추가';
-$string['surveycompleted'] = '당신은 이미 이것을 끝마쳤습니다. 밑에 보이는 그래프는 평균 점수에 관한 당신의 결과를 요약적으로 보여주는 것 입니다.';
 $string['survey:download'] = '설문응답을 내려받음';
-$string['surveygraph'] = '조사 도표';
-$string['surveyname'] = '조사 이름';
 $string['survey:participate'] = '설문에 응답';
 $string['survey:readresponses'] = '응답을 봄';
+$string['surveycompleted'] = '당신은 이미 이것을 끝마쳤습니다. 밑에 보이는 그래프는 평균 점수에 관한 당신의 결과를 요약적으로 보여주는 것 입니다.';
+$string['surveygraph'] = '조사 도표';
+$string['surveyname'] = '조사 이름';
 $string['surveysaved'] = '조사가 저장되었음';
 $string['surveytype'] = '조사 유형';
 $string['surveytype_help'] = '3가지 조사 유형이 있습니다.

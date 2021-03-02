@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multichoice', language 'ru', version '3.8'.
  *
- * @package   qtype_multichoice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multichoice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,11 +29,11 @@ $string['answerhowmany'] = 'Один или несколько ответов?';
 $string['answerhowmany_desc'] = 'Должен ли по умолчанию быть один ответ (Переключатели) или несколько ответов (Флажки).';
 $string['answernumbering'] = 'Нумеровать варианты ответов?';
 $string['answernumbering123'] = '1., 2., 3., ...';
-$string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
-$string['answernumbering_desc'] = 'Стиль нумерации по умолчанию';
-$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
+$string['answernumbering_desc'] = 'Стиль нумерации по умолчанию';
+$string['answernumberingabc'] = 'a., b., c., ...';
+$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = 'Не нумеровать';
 $string['answersingleno'] = 'Допускается несколько ответов';
 $string['answersingleyes'] = 'Только один ответ';
@@ -62,9 +62,9 @@ $string['partiallycorrectfeedback'] = 'Для любого частично пр
 $string['pleaseselectananswer'] = 'Пожалуйста, выберите ответ.';
 $string['pleaseselectatleastoneanswer'] = 'Выберите хотя бы один ответ.';
 $string['pluginname'] = 'Множественный выбор';
+$string['pluginname_help'] = 'Ответ на вопрос (который может содержать изображение) отвечающий выбирает из нескольких вариантов. Множественный выбор бывает двух типов: с одним правильным ответом или с несколькими правильными ответами.';
 $string['pluginnameadding'] = 'Добавление вопроса «В закрытой форме (множественный выбор)»';
 $string['pluginnameediting'] = 'Редактирование вопроса «В закрытой форме (множественный выбор)»';
-$string['pluginname_help'] = 'Ответ на вопрос (который может содержать изображение) отвечающий выбирает из нескольких вариантов. Множественный выбор бывает двух типов: с одним правильным ответом или с несколькими правильными ответами.';
 $string['pluginnamesummary'] = 'Позволяет выбирать один или несколько правильных ответов из заданного списка.';
 $string['privacy:metadata'] = 'Плагин «Тип вопроса Множественный выбор» не хранит никаких персональных данных';
 $string['selectmulti'] = 'Выберите один или несколько ответов:';

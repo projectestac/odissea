@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_configurable_reports', language 'en', version '3.8'.
  *
- * @package   block_configurable_reports
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_configurable_reports
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -87,7 +87,6 @@ $string['comp_filters_help'] = '<p>Here you can choose which filters will be dis
 <p>For using filters if your report type is SQL see: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">Creating a SQL Report Tutorial</a></p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['componenthelp'] = 'Component help';
 $string['comp_ordering'] = 'Ordering';
 $string['comp_ordering_help'] = '<p>Here you can choose how to order the report using fields and directions</p>
 
@@ -108,16 +107,17 @@ $string['comp_template_help'] = '<p>You can modify the report\'s layout by creat
 <p>For creating a template see the replacemnet marks you can use in header, footer and for each report record using the help buttons or the information displayed in the same page.</p>
 
 <p>More help: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
+$string['componenthelp'] = 'Component help';
 $string['conditionexpr'] = 'Condition';
 $string['conditionexpr_conditions'] = 'Condition';
 $string['conditionexpr_conditions_help'] = '<p>You can combine conditions using a logic expression</p>
 
 <p>Enter a valid logic expression with these operators: and, or.</p>';
-$string['conditionexprhelp'] = 'Enter a valid condition i.e: (c1 and c2) or (c4 and c3)';
 $string['conditionexpr_permissions'] = 'Condition';
 $string['conditionexpr_permissions_help'] = '<p>You can combine conditions using a logic expression</p>
 
 <p>Enter a valid logic expression with these operators: and, or.</p>';
+$string['conditionexprhelp'] = 'Enter a valid condition i.e: (c1 and c2) or (c4 and c3)';
 $string['conditions'] = 'Conditions';
 $string['configurable_reports:addinstance'] = 'Add a new configurable reports block';
 $string['configurable_reports:manageownreports'] = 'Manage own reports';
@@ -137,18 +137,18 @@ $string['courseparent'] = 'Courses whose parent is';
 $string['courses'] = 'Courses';
 $string['coursestats'] = 'Course stats';
 $string['cron'] = 'Auto run daily';
-$string['crondescription'] = 'Schedule this query to run each day (At night)';
 $string['cron_help'] = 'Schedule this query to run each day (At night)';
+$string['crondescription'] = 'Schedule this query to run each day (At night)';
 $string['crrepository'] = 'Reports repository';
 $string['crrepositoryinfo'] = 'Remote shared repository with sample reports fully functional (Name of GitHub account owner + slash + repository name)';
 $string['currentreportcourse'] = 'Current report course';
 $string['currentreportcourse_summary'] = 'The course where the report has been created';
 $string['currentuser'] = 'Current user';
+$string['currentuser_summary'] = 'The user that is viewing the report';
 $string['currentusercourses'] = 'Current user enrolled courses';
 $string['currentusercourses_summary'] = 'A list of the current users courses (only visible courses)';
 $string['currentuserfinalgrade'] = 'Current user final grade in course';
 $string['currentuserfinalgrade_summary'] = 'This column shows the final grade of the current user in the row-course';
-$string['currentuser_summary'] = 'The user that is viewing the report';
 $string['cuserfield'] = 'User field condition';
 $string['custom'] = 'Custom';
 $string['customdateformat'] = 'Custom date format';
@@ -156,7 +156,6 @@ $string['customsql'] = 'Custom SQL';
 $string['datatables'] = 'Enable DataTables JS library';
 $string['datatables_emptytable'] = 'No data available in table';
 $string['datatables_first'] = 'First';
-$string['datatablesinfo'] = 'DataTables JS library (Column sort, fixed header, search, paging...)';
 $string['datatables_info'] = 'Showing _START_ to _END_ of _TOTAL_ entries';
 $string['datatables_infoempty'] = 'Showing 0 to 0 of 0 entries';
 $string['datatables_infofiltered'] = '(filtered from _MAX_ total entries)';
@@ -170,6 +169,7 @@ $string['datatables_search'] = 'Search:';
 $string['datatables_sortascending'] = ': activate to sort column ascending';
 $string['datatables_sortdescending'] = ': activate to sort column descending';
 $string['datatables_zerorecords'] = 'No matching records found';
+$string['datatablesinfo'] = 'DataTables JS library (Column sort, fixed header, search, paging...)';
 $string['date'] = 'Date';
 $string['dateformat'] = 'Date format';
 $string['dbhost'] = 'DB Host';
@@ -206,14 +206,16 @@ $string['executeatinfo'] = 'Moodle CRON will run scheduled SQL queries after sel
 $string['export_csv'] = 'Export in CSV format';
 $string['export_json'] = 'Export in JSON format';
 $string['export_ods'] = 'Export in ODS format';
+$string['export_xls'] = 'Export in XLS format';
 $string['exportoptions'] = 'Export options';
 $string['exportreport'] = 'Export report';
-$string['export_xls'] = 'Export in XLS format';
 $string['fcoursefield'] = 'Course field filter';
 $string['field'] = 'Field';
 $string['filter'] = 'Filter';
 $string['filter_all'] = 'All';
 $string['filter_apply'] = 'Apply';
+$string['filter_searchtext'] = 'Search text';
+$string['filter_searchtext_summary'] = 'Free text filter';
 $string['filtercategories'] = 'Filter categories';
 $string['filtercategories_summary'] = 'To filter by category';
 $string['filtercoursecategories'] = 'Category course filter';
@@ -227,8 +229,6 @@ $string['filterenrolledstudents_summary'] = 'Filter a user (by id) from enrolled
 $string['filterrole'] = 'role';
 $string['filterrole_summary'] = 'Filter system Roles (Teacher, Student, ...)';
 $string['filters'] = 'Filters';
-$string['filter_searchtext'] = 'Search text';
-$string['filter_searchtext_summary'] = 'Free text filter';
 $string['filtersemester'] = 'Semester (Hebrew)';
 $string['filtersemester_list'] = 'סמסטר א,סמסטר ב,סמסטר ג,סמינריון';
 $string['filtersemester_summary'] = 'מאפשר סינון לפני סמסטרים (בעברית, למשל: סמסטר א,סמסטר ב)';
@@ -236,9 +236,9 @@ $string['filterstartendtime_summary'] = 'Start / End date filter';
 $string['filtersubcategories'] = 'Category (Include sub categories)';
 $string['filtersubcategories_summary'] = 'Use: %%FILTER_SUBCATEGORIES:mdl_course_category.path%%';
 $string['filteruser'] = 'Current course user';
+$string['filteruser_summary'] = 'Filter a user (id) from current course users';
 $string['filterusers'] = 'System user';
 $string['filterusers_summary'] = 'Filter a user (by id) from system user list';
-$string['filteruser_summary'] = 'Filter a user (id) from current course users';
 $string['filteryearhebrew'] = 'Year (Hebrew)';
 $string['filteryearhebrew_list'] = 'תשע,תשעא,תשעב,תשעג,תשעד,תשעה';
 $string['filteryearhebrew_summary'] = 'Filter is using Hebrew years (תשעג,...)';
@@ -260,8 +260,8 @@ $string['groupseries'] = 'Group series';
 $string['groupvalues'] = 'Group same values (sum)';
 $string['head_color'] = 'Graph background color';
 $string['head_data'] = 'Graph data';
-$string['header'] = 'Header';
 $string['head_size'] = 'Graph size';
+$string['header'] = 'Header';
 $string['height'] = 'Height';
 $string['importfromrepository'] = 'Import report from repository';
 $string['importreport'] = 'Import report';
@@ -332,14 +332,17 @@ $string['puserfield_summary'] = 'User with the selected value in the selected fi
 $string['queryfailed'] = 'Query failed <code><pre>{$a}</pre></code>';
 $string['querysql'] = 'SQL Query';
 $string['remote'] = 'Run on remote db';
-$string['remotedescription'] = 'Do you want to run this query on the remote db';
 $string['remote_help'] = 'Do you want to run this query on the remote db';
+$string['remotedescription'] = 'Do you want to run this query on the remote db';
 $string['remotequerysql'] = 'SQL query';
 $string['report'] = 'Report';
-$string['reportcategories'] = '1) Choose a remote report categories';
 $string['report_categories'] = 'Categories report';
-$string['reportcolumn'] = 'Other report column';
 $string['report_courses'] = 'Courses report';
+$string['report_sql'] = 'SQL Report';
+$string['report_timeline'] = 'Timeline report';
+$string['report_users'] = 'Users report';
+$string['reportcategories'] = '1) Choose a remote report categories';
+$string['reportcolumn'] = 'Other report column';
 $string['reportcreated'] = 'Report successfully created';
 $string['reportlimit'] = 'Report row limit';
 $string['reportlimitinfo'] = 'Limit the number of rows that are displayed in the report table (Default is 5000 rows. Better to have some limit, so users will not over load the DB engine)';
@@ -347,15 +350,12 @@ $string['reports'] = 'Reports';
 $string['reportscapabilities'] = 'Report Capabilities';
 $string['reportscapabilities_summary'] = 'Users with the capability moodle/site:viewreports enabled';
 $string['reportsincategory'] = '2) Choose a report form the list';
-$string['report_sql'] = 'SQL Report';
 $string['reporttable'] = 'Report table';
 $string['reporttable_help'] = '<p>This is the width of the table that will display the report records.</p>
 
 <p>If you use a Template this option has no effect</p>';
 $string['reporttableui'] = 'Report table UI';
 $string['reporttableuiinfo'] = 'Display the report table as: Simple scrollable HTML table, jQuery with column sorting Or DataTables JS library (Column sort, fixed header, search, paging...)';
-$string['report_timeline'] = 'Timeline report';
-$string['report_users'] = 'Users report';
 $string['repository'] = 'Reports repository';
 $string['repository_help'] = 'You can import sample reports from a public shared repository.
 

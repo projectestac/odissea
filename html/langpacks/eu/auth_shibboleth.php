@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_shibboleth', language 'eu', version '3.8'.
  *
- * @package   auth_shibboleth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_shibboleth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,17 +29,11 @@ $string['auth_shib_auth_logo'] = 'Autentifikazio-metodoaren logoa';
 $string['auth_shib_auth_logo_description'] = 'Eman zure erabiltzaileei ezaguna egingo zaien logo bat Shibboleth autentifikazio-metodoarentzat. Hau Shibboleth federeazioaren logoa izan daiteke, esaterako <tt>SWITCHaai Login</tt>, <tt>InCommon Login</tt> edo antzeko bat.';
 $string['auth_shib_auth_method'] = 'Autentifikazio-metodoaren izena';
 $string['auth_shib_auth_method_description'] = 'Eman Shibboleth autentifikazio-metodoarentzako zure erabiltzaileei ezaguna egingo zaien izen bat. Hau zure Shibboleth federazioaren izena izan daiteke, ad. <tt>SWITCHaai Login</tt>,  <tt>InCommon Login</tt> edo antzeko bat.';
-$string['auth_shibbolethdescription'] = 'Metodo honen bitartez erabiltzaileak Shibboleth erabilita sortu eta autentifikatzen dira. Konfigurazioaren xehetasunetarako ikusi ezazu <a href="{$a}">Shibboleth IRAKUR NAZAZU</a> dokumentua.';
-$string['auth_shibboleth_errormsg'] = 'Mesedez, aukera ezazu zein erakundetakoa zaren!';
-$string['auth_shibboleth_login'] = 'Shibboleth sarbidea';
-$string['auth_shibboleth_login_long'] = 'Saioa hasi Moodlen Shibboleth-en bidez';
-$string['auth_shibboleth_manual_login'] = 'Eskuzko sarbidea';
-$string['auth_shibboleth_select_member'] = 'Ni hemengo kidea naiz:';
-$string['auth_shibboleth_select_organization'] = 'Shibboleth bidezko autentifikaziorako, mesedez aukeratu zure erakundea menuan:';
 $string['auth_shib_changepasswordurl'] = 'Pasahitza aldatzeko URLa';
 $string['auth_shib_contact_administrator'] = 'Zerrendako erakundeekin inolako loturarik ez baduzu eta zerbitzari honetako ikastaro baterako sarbide behar baduzu, mesedez jarri harremanetan guneko <a href="mailto:{$a}">Moodle kudeatzailearekin</a>.';
 $string['auth_shib_convert_data'] = 'Datuen aldaketarako APIa';
 $string['auth_shib_convert_data_description'] = 'API hau aurrerago Shibboleth-ek emandako datuak aldatzeko erabil dezakezu. <a href="{$a}">IRAKUR NAZAZU</a> dokumentua irakurri ezazu argibide gehigarriak ikusteko.';
+$string['auth_shib_convert_data_filepath_warning'] = 'Ezin duzu guneko oraingo datu-direktorioan ($CFG->dataroot) dagoen fitxategi bat datuen aldaketarako API gisa erabili.';
 $string['auth_shib_convert_data_warning'] = 'Fitxategirik ez dago, edo zerbitzariaren prozesuak ezin du irakurri.';
 $string['auth_shib_idp_list'] = 'Nortasun-hornitzaileak';
 $string['auth_shib_idp_list_description'] = 'Sartu erabiltzaileari sarbide-orrian aukeran emateko Identitate-Hornitzaileen entityID-ak.<br />Errenkada bakoitzean komaz banatuta IdP-aren entityID-a (ikusi Shibboleth metadatuen fitxategia) eta IdP-aren izena agertu behar dira menuaren zerrendan erakutsiko diren moduan.<br />Aukerazko hirugarren parametro gisa erabiliko den Shibboleth saioaren abiarazlearen kokapena gehitu dezakezu zure Moodle instalazioa multi-federazio konfigurazio baten parte bada.';
@@ -56,6 +50,13 @@ $string['auth_shib_no_organizations_warning'] = 'Lehenetsitako WAYF zerbitzua er
 $string['auth_shib_only'] = 'Shibboleth soilik';
 $string['auth_shib_only_description'] = 'Markatu aukera hau soilik Shibboleth autentifikazioa behartu nahi baduzu.';
 $string['auth_shib_username_description'] = 'Moodlen erabiltzaile izen gisa erabiliko den Shibboleth zerbitzariaren testuinguru aldagaiaren izena';
+$string['auth_shibboleth_errormsg'] = 'Mesedez, aukera ezazu zein erakundetakoa zaren!';
+$string['auth_shibboleth_login'] = 'Shibboleth sarbidea';
+$string['auth_shibboleth_login_long'] = 'Saioa hasi Moodlen Shibboleth-en bidez';
+$string['auth_shibboleth_manual_login'] = 'Eskuzko sarbidea';
+$string['auth_shibboleth_select_member'] = 'Ni hemengo kidea naiz:';
+$string['auth_shibboleth_select_organization'] = 'Shibboleth bidezko autentifikaziorako, mesedez aukeratu menuan zure erakundea:';
+$string['auth_shibbolethdescription'] = 'Metodo honen bitartez erabiltzaileak Shibboleth erabilita sortu eta autentifikatzen dira. Konfigurazioaren xehetasunetarako ikusi ezazu <a href="{$a}">Shibboleth IRAKUR NAZAZU</a> dokumentua.';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'Shibboleth autentifikazio-pluginak ez du datu pertsonalik biltzen.';
 $string['shib_invalid_account_error'] = 'Shibboleth bidez autentikatu behar zarela ematen du baina Moodlek ez du zure erabiltzaile-izenarentzako kontu baliagarririk. Baliteke zure kontua ez existitzea edo etenda egotea.';

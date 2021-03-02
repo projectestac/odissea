@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'en', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -196,9 +196,6 @@ $string['noupcomingevents'] = 'There are no upcoming events';
 $string['oneevent'] = '1 event';
 $string['pollinterval'] = 'Update interval';
 $string['pollinterval_help'] = 'How often you would like the calendar to update with new events.';
-$string['preferences'] = 'Preferences';
-$string['preferences_available'] = 'Your personal preferences';
-$string['preferredcalendar'] = 'Preferred calendar';
 $string['pref_lookahead'] = 'Upcoming events look-ahead';
 $string['pref_lookahead_help'] = 'This sets the (maximum) number of days in the future that an event has to start in in order to be displayed as an upcoming event. Events that start beyond this will never be displayed as upcoming. Please note that <strong>there is no guarantee</strong> that all events starting in this time frame will be displayed; if there are too many (more than the "Maximum upcoming events" preference) then the most distant events will not be shown.';
 $string['pref_maxevents'] = 'Maximum upcoming events';
@@ -209,16 +206,19 @@ $string['pref_startwday'] = 'First day of week';
 $string['pref_startwday_help'] = 'Calendar weeks will be shown as starting on the day that you select here.';
 $string['pref_timeformat'] = 'Time display format';
 $string['pref_timeformat_help'] = 'You can choose to see times in either 12 or 24 hour format. If you choose "default", then the format will be automatically chosen according to the language you use in the site.';
+$string['preferences'] = 'Preferences';
+$string['preferences_available'] = 'Your personal preferences';
+$string['preferredcalendar'] = 'Preferred calendar';
 $string['privacy:metadata:calendar:event'] = 'The Calendar component can store user calendar event details within the core subsystem.';
 $string['privacy:metadata:calendar:event:description'] = 'The description of the calendar event.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'The event type of the calendar event.';
 $string['privacy:metadata:calendar:event:name'] = 'The name of the calendar event.';
+$string['privacy:metadata:calendar:event:timeduration'] = 'The duration of the calendar event.';
+$string['privacy:metadata:calendar:event:timestart'] = 'The start time of the calendar event.';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'The Calendar component can stores user calendar subscriptions details within the core subsystem.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'The event type of the calendar subscription.';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'The name of the calendar subscription.';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'The url of the calendar subscription.';
-$string['privacy:metadata:calendar:event:timeduration'] = 'The duration of the calendar event.';
-$string['privacy:metadata:calendar:event:timestart'] = 'The start time of the calendar event.';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'The configured calendar event type display user preference.';
 $string['recentupcoming'] = 'Recent and next 60 days';
 $string['repeatedevents'] = 'Repeated events';

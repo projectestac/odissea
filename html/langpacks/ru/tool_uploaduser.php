@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ru', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,12 +54,13 @@ $string['uploadpicture_cannotsave'] = 'Невозможно сохранить �
 $string['uploadpicture_cannotunzip'] = 'Невозможно разархивировать файл изображений.';
 $string['uploadpicture_invalidfilename'] = 'Файл изображения «{$a}» содержит в названии недопустимые символы. Пропущен.';
 $string['uploadpicture_overwrite'] = 'Перезаписывать существующие изображения пользователей?';
-$string['uploadpictures'] = 'Загрузить изображения пользователей';
-$string['uploadpictures_help'] = 'Изображения пользователей могут быть загружены как zip-архив с файлами изображений. Файлы изображений в архиве нужно назвать «атрибут.расширение». Например, если выбранный ключевой атрибут пользователя - логин, а логин пользователя - «user1234», то название файла должно быть «user1234.jpg».';
 $string['uploadpicture_userfield'] = 'Ключевой атрибут пользователя для выбора соответствующих изображений:';
 $string['uploadpicture_usernotfound'] = 'Пользователь со значением «{$a->uservalue}» для поля «{$a->userfield}» не существует. Пропущено.';
 $string['uploadpicture_userskipped'] = 'Пропущен пользователь «{$a}» (изображение уже есть).';
 $string['uploadpicture_userupdated'] = 'Обновлено изображение для пользователя «{$a}».';
+$string['uploadpictures'] = 'Загрузить изображения пользователей';
+$string['uploadpictures_help'] = 'Изображения пользователей могут быть загружены как zip-архив с файлами изображений. Файлы изображений в архиве нужно назвать «атрибут.расширение». Например, если выбранный ключевой атрибут пользователя - логин, а логин пользователя - «user1234», то название файла должно быть «user1234.jpg».';
+$string['uploaduser:uploaduserpictures'] = 'Загружать изображения пользователей';
 $string['uploadusers'] = 'Загрузить пользователей';
 $string['uploadusers_help'] = 'Пользователи могут быть загружены (и, при необходимости, записаны на курсы) с помощью текстового файла. Используется следующий формат:
 
@@ -69,7 +70,6 @@ $string['uploadusers_help'] = 'Пользователи могут быть за
 * Обязательными именами полей являются: username, password, firstname, lastname, email (логин, пароль, имя, фамилия, адрес электронной почты)';
 $string['uploaduserspreview'] = 'Предварительный просмотр загружаемых пользователей';
 $string['uploadusersresult'] = 'Результаты загрузки пользователей';
-$string['uploaduser:uploaduserpictures'] = 'Загружать изображения пользователей';
 $string['useraccountupdated'] = 'Пользователь обновлен';
 $string['useraccountuptodate'] = 'Пользователь актуален';
 $string['userdeleted'] = 'Пользователь удален';

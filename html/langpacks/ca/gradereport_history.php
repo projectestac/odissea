@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradereport_history', language 'ca', version '3.8'.
  *
- * @package   gradereport_history
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradereport_history
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,9 +42,9 @@ $string['foundoneuser'] = '1 usuari trobat';
 $string['gradenew'] = 'Qualificació revisada';
 $string['gradeold'] = 'Qualificació original';
 $string['grader'] = 'Qualificador';
+$string['history:view'] = 'Mostra l\'historial de qualificacions.';
 $string['historyperpage'] = 'Entrades de l\'historial per pàgina';
 $string['historyperpage_help'] = 'Aquest paràmetre estableix el nombre d\'entrades de l\'historial que es mostraran a cada pàgina de l\'informe.';
-$string['history:view'] = 'Mostra l\'historial de qualificacions.';
 $string['loadmoreusers'] = 'Carrega més usuaris...';
 $string['pluginname'] = 'Historial de qualificacions';
 $string['preferences'] = 'Preferències de l\'historial de qualificacions';
@@ -53,7 +53,7 @@ $string['revisedonly_help'] = 'Mostra només les qualificacions que s\'han revis
 
 Això significa que només es llistaran aquelles entrades amb la qualificació alterada.';
 $string['selectedusers'] = 'Usuaris seleccionats';
-$string['selectuser'] = 'Selecciona usuari';
+$string['selectuser'] = 'Selecciona un usuari';
 $string['selectusers'] = 'Selecciona usuaris';
 $string['source'] = 'Origen';
 $string['useractivityfeedback'] = '{$a} retroacció';

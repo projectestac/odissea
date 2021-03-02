@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'ko', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -119,7 +119,7 @@ $string['nocapabilitytouseparameter'] = '사용자는 매개 변수{$a}를 사�
 $string['nofunctions'] = '이 서비스는 함수가 없습니다.';
 $string['norequiredcapability'] = '필요한 능력이 없습니다.';
 $string['notoken'] = '토큰 목록이 비어 있습니다.';
-$string['onesystemcontrolling'] = '토큰으로 무들을 통제하는 한 시스템';
+$string['onesystemcontrolling'] = '외부 시스템 무들 제어 허용';
 $string['onesystemcontrollingdescription'] = '다음 단계들은 무들을 통제하는 한 시스템에 대한 무들 웹서비스를 설정하는 것을 도와줍니다. 이들 단계들은 추천된 토큰(보안 키) 인증 방법을 설정하는 것을 도와줍니다.';
 $string['operation'] = '동작';
 $string['optional'] = '옵션';

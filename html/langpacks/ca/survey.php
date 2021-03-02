@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'ca', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -236,13 +236,13 @@ $string['seemoredetail'] = 'Feu clic aquí per veure més detalls';
 $string['selectedquestions'] = 'Preguntes seleccionades d’una escala, tots els estudiants';
 $string['summary'] = 'Resum';
 $string['survey:addinstance'] = 'Afegeix una enquesta nova';
-$string['surveycompleted'] = 'Heu completat l’enquesta. La gràfica següent resumeix els teus resultats comparats amb la mitjana de la classe.';
-$string['surveycompletednograph'] = 'Heu completat aquesta enquesta.';
 $string['survey:download'] = 'Baixar respostes';
-$string['surveygraph'] = 'Gràfica de l\'enquesta';
-$string['surveyname'] = 'Nom de l’enquesta';
 $string['survey:participate'] = 'Respondre una enquesta';
 $string['survey:readresponses'] = 'Veure respostes';
+$string['surveycompleted'] = 'Heu completat l’enquesta. La gràfica següent resumeix els teus resultats comparats amb la mitjana de la classe.';
+$string['surveycompletednograph'] = 'Heu completat aquesta enquesta.';
+$string['surveygraph'] = 'Gràfica de l\'enquesta';
+$string['surveyname'] = 'Nom de l’enquesta';
 $string['surveysaved'] = 'S\'ha desat l\'enquesta';
 $string['surveytype'] = 'Tipus d’enquesta';
 $string['surveytype_help'] = 'Hi ha tres tipus d\'exàmens disponibles:

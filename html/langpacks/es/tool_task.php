@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_task', language 'es', version '3.8'.
  *
- * @package   tool_task
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_task
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['asap'] = 'Tan pronto como sea posible';
 $string['backtoscheduledtasks'] = 'Regresar a trabajos agendados';
 $string['blocking'] = 'Bloqueando';
+$string['cannotfindthepathtothecli'] = 'No se puede encontrar la ruta hacia el ejecutable de PHP CLI, por lo que se abortó la ejecución del trabajo. Configure la "Ruta hacia PHP CLI" en "Administración del sitio / Servidor / Rutas del sistema"';
 $string['clearfaildelay_confirm'] = '¿Está seguro de querer borrar el retraso por fallo para el quehacer \'{$a}\'? Después de borrar el retraso, el quehacer correrá de acuerdo a su propia agenda.';
 $string['component'] = 'Componente';
 $string['corecomponent'] = 'Núcleo';
@@ -36,6 +37,7 @@ $string['disabled'] = 'Deshabilitado';
 $string['disabled_help'] = 'Los trabajos agendados deshabilitados no son ejecutados desde cron; sin embargo, todavía podrían ejecutarse manualmente mediante la herramienta CLI de Interfaz por Línea de Comando.';
 $string['edittaskschedule'] = 'Editar tarea programada: {$a}';
 $string['enablerunnow'] = 'Permitir \'Ejecutar ahora\' (Run now) para tareas programadas';
+$string['enablerunnow_desc'] = 'Permitirle a administradores el correr un solo trabajo agendado inmediatamente, en lugar de esperar para que corra como está agendado. El trabajo corre en el servidor web, por lo que algunos sitios podrían desear deshabilitar esta característica para evitar problemas potenciales de desempeño.';
 $string['faildelay'] = 'Retardo del fallo';
 $string['lastruntime'] = 'Último arranque';
 $string['nextruntime'] = 'Siguiente arranque';

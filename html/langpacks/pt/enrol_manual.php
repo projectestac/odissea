@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'pt', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -60,23 +60,23 @@ $string['expirymessageenrollersubject'] = 'Notificação de expiração da inscr
 $string['manual:config'] = 'Configurar instâncias de inscrição manuais';
 $string['manual:enrol'] = 'Inscrever utilizadores';
 $string['manual:manage'] = 'Gerir inscrições de utilizadores';
-$string['manualpluginnotinstalled'] = 'O módulo "Manual" ainda não foi instalado';
 $string['manual:unenrol'] = 'Remover inscrições de utilizadores da disciplina';
 $string['manual:unenrolself'] = 'Remover a sua inscrição desta disciplina';
+$string['manualpluginnotinstalled'] = 'O módulo "Manual" ainda não foi instalado';
 $string['messageprovider:expiry_notification'] = 'Notificações de expiração de inscrições manuais';
 $string['now'] = 'Agora';
 $string['pluginname'] = 'Inscrições manuais';
 $string['pluginname_desc'] = 'O módulo de inscrições manuais permite que os utilizadores sejam inscritos através de uma hiperligação no bloco de configurações > Administração da disciplina, por um utilizador com as permissões necessárias (ex: professor). Normalmente este módulo deve estar ativo, uma vez que alguns módulos de inscrição, como o de autoinscrição, dependem deste módulo.';
 $string['privacy:metadata'] = 'O módulo Inscrições manuais não armazena dados pessoais.';
 $string['selectcohorts'] = 'Selecionar grupos globais';
-$string['selection'] = 'Selecão';
+$string['selection'] = 'Seleção';
 $string['selectusers'] = 'Selecionar utilizadores';
 $string['sendexpirynotificationstask'] = 'Tarefa de envio de notificações de expiração de inscrições manuais';
 $string['status'] = 'Ativar inscrições manuais';
 $string['status_desc'] = 'Permitir que os utilizadores inscritos internamente possam aceder à disciplina. Isto deve ser permitido na maior parte das situações.';
+$string['status_help'] = 'Este parâmetro define se os utilizadores podem ser inscritos manualmente, através de uma hiperligação no bloco de administração da disciplina e por um utilizador com as permissões necessárias (ex: professor).';
 $string['statusdisabled'] = 'Desativado';
 $string['statusenabled'] = 'Ativo';
-$string['status_help'] = 'Este parâmetro define se os utilizadores podem ser inscritos manualmente, através de uma hiperligação no bloco de administração da disciplina e por um utilizador com as permissões necessárias (ex: professor).';
 $string['syncenrolmentstask'] = 'Tarefa de sincronização de inscrições manuais';
 $string['unenrol'] = 'Cancelar inscrição do utilizador';
 $string['unenrolselectedusers'] = 'Cancelar inscrição dos utilizadores selecionados';
@@ -85,4 +85,4 @@ $string['unenroluser'] = 'Tem a certeza de que pretende remover a inscrição de
 $string['unenrolusers'] = 'Cancelar inscrição dos utilizadores';
 $string['wscannotenrol'] = 'O módulo não permite inscrever manualmente um utilizador na disciplina id = {$a->courseid}';
 $string['wsnoinstance'] = 'O módulo de inscrição manual não existe ou está desativado para a disciplina (id = {$a->courseid})';
-$string['wsusercannotassign'] = 'Não tem permissão para atribuir o papel ({$a->roleid}) ao utilizador ({$a->userid}) na disciplina ({$a->courseid}).';
+$string['wsusercannotassign'] = 'Não tem permissão para atribuir o papel ({$a->roleid}) ao utilizador ({$a->userid}) nesta disciplina ({$a->courseid}).';

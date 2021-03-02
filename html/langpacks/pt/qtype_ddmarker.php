@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'pt', version '3.8'.
  *
- * @package   qtype_ddmarker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddmarker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['answer'] = 'Resposta';
 $string['bgimage'] = 'Imagem de fundo';
 $string['clearwrongparts'] = 'Mover os marcadores arrastados incorretamente para a sua posição inicial na imagem abaixo';
 $string['coords'] = 'Coordenadas';
-$string['correctansweris'] = 'Resposta correta: {$a}';
+$string['correctansweris'] = 'A resposta correta é: {$a}';
 $string['draggableimage'] = 'Imagem arrastável';
 $string['draggableitem'] = 'Item arrastável';
 $string['draggableitemheader'] = 'Item arrastável {$a}';
@@ -76,9 +76,9 @@ $string['nolabel'] = 'Sem quadro de texto';
 $string['noofdrags'] = 'Número';
 $string['pleasedragatleastonemarker'] = 'A sua resposta não está completa; deverá arrastar pelo menos um marcador para a imagem.';
 $string['pluginname'] = 'Arrastar e largar numa área';
+$string['pluginname_help'] = 'As perguntas do tipo arrastar e largar numa área necessitam que os alunos arrastem quadros de texto, e os larguem numa área para largar predefinida numa imagem de fundo.';
 $string['pluginnameadding'] = 'Adicionar pergunta do tipo arrastar e largar numa área';
 $string['pluginnameediting'] = 'Editar pergunta do tipo arrastar e largar numa área';
-$string['pluginname_help'] = 'As perguntas do tipo arrastar e largar numa área necessitam que os alunos arrastem quadros de texto, e os larguem numa área para largar predefinida numa imagem de fundo.';
 $string['pluginnamesummary'] = 'Os marcadores podem ser arrastados e largados em zonas predefinidas para largar, numa imagem de fundo.
 
 Nota: este tipo de pergunta não é acessível a utilizadores com deficiência visual.';

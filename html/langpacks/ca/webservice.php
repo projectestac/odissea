@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'ca', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -183,9 +183,9 @@ $string['shortnametaken'] = 'Aquest nom curt s\'està utilitzant en un altre ser
 $string['simpleauthlog'] = 'Inici de sessió amb autenticació simple';
 $string['step'] = 'Pas';
 $string['supplyinfo'] = 'Més detalls';
-$string['testauserwithtestclientdescription'] = 'Simula l\'accés extern al servei mitjançant el client de prova del servei web. Abans de fer-ho, inicieu sessió com un usuari amb la capacitat moodle/webservice:createtoken i obtingueu la clau de seguretat (testimoni) a través de la Configuració del meu perfil. Podeu utilitzar aquest testimoni en el client de prova. En el client de prova, també trieu un protocol activat amb la autenticació de testimoni. <strong>AVÍS: Les funcions que proveu S\'EXECUTARAN, així que aneu amb compte amb el que trieu per a provar!</strong>';
+$string['testauserwithtestclientdescription'] = 'Simula l\'accés extern al servei mitjançant el client de prova del servei web. Abans de fer-ho, inicieu sessió com un usuari amb la capacitat moodle/webservice:createtoken i obtingueu la clau de seguretat (testimoni) a través de la Configuració del meu perfil. Podeu utilitzar aquest testimoni en el client de prova. En el client de prova, també trieu un protocol activat amb l\'autenticació de testimoni. <strong>AVÍS: Les funcions que proveu S\'EXECUTARAN, així que aneu amb compte amb el que trieu per a provar!</strong>';
 $string['testclient'] = 'Servei web client de prova';
-$string['testclientdescription'] = 'El servei web client de prova <strong>executa</strong> funcions de forma <strong>REAL</strong>. No executeu funcions que no coneixeu. <br/>* Totes les funcions servei web no estan implementades encara al client de prova. <br/>* Per provar que un usuari no pot accedir a algunes funcions, podeu provar algunes funcions de les quals no teniu permís.<br/>* Per veure millor els missatges d\'error  configureu la depuració a  <strong>{$a->mode}</strong> dins {$a->atag}<br/>* Accediu a {$a->amfatag}.';
+$string['testclientdescription'] = '* El servei web client de prova <strong>executa</strong> funcions de forma <strong>REAL</strong>. No executeu funcions que no conegueu.<br/>* No totes les funcions de servei web estan implementades encara al client de prova. <br/>* Per provar que un usuari no pot accedir a algunes funcions, podeu provar algunes funcions a les quals no concediu permís.<br/>* Per veure missatges d\'error més clars establiu la depuració a <strong>{$a->mode}</strong> dins {$a->atag}<br/>';
 $string['testwithtestclient'] = 'Proveu el servei';
 $string['testwithtestclientdescription'] = 'Simula l\'accés extern al servei mitjançant el client de prova del servei web. Utilitza un protocol habilitat amb autenticació de testimoni. <strong>AVÍS: Les funcions que proveu S\'EXECUTARAN, així que aneu amb compte amb el que trieu per a provar!</strong>';
 $string['token'] = 'Testimoni';

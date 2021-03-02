@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'url', language 'ca', version '3.8'.
  *
- * @package   url
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     url
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,6 @@ $string['contentheader'] = 'Contingut';
 $string['createurl'] = 'Crea un URL';
 $string['displayoptions'] = 'Opcions de visualització disponibles';
 $string['displayselect'] = 'Visualització';
-$string['displayselectexplain'] = 'Trieu el tipus de visualització. No tots els tipus són compatibles amb tots els URL.';
 $string['displayselect_help'] = 'Aquest paràmetre, juntament amb el tipus de fitxer de l\'URL i depenent de si el navegador permet incrustació o no, determina com es visualitzarà l\'URL. Les possibilitats inclouen:
 
 * Automàtica: se selecciona automàticament la millor opció de visualització.
@@ -44,6 +43,7 @@ $string['displayselect_help'] = 'Aquest paràmetre, juntament amb el tipus de fi
 * Finestra emergent: l\'URL es visualitza en una finestra nova del navegador sense menú ni barra d\'adreces.
 * Marc: l\'URL es visualitza dins d\'un marc, sota la barra de navegació i la descripció de l\'URL.
 * Finestra nova: l\'URL es visualitza en una finestra nova del navegador amb menú i barra d\'adreces.';
+$string['displayselectexplain'] = 'Trieu el tipus de visualització. No tots els tipus són compatibles amb tots els URL.';
 $string['externalurl'] = 'URL extern';
 $string['framesize'] = 'Alçada del marc';
 $string['invalidstoredurl'] = 'No es pot visualitzar aquest recurs: l\'URL és invàlid.';

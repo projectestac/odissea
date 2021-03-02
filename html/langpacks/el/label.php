@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'label', language 'el', version '3.8'.
  *
- * @package   label
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     label
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,18 +34,18 @@ $string['dndresizewidth'] = 'Αλλαγή πλάτους μεταφοράς & α
 $string['dnduploadlabel'] = 'Προσθήκη πολυμέσου στη σελίδα μαθήματος';
 $string['dnduploadlabeltext'] = 'Προσθήκη ταμπέλας στη σελίδα μαθήματος';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Ταμπέλας';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Ταμπέλας.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Ταμπέλας';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Ταμπέλας κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Ταμπέλας.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Ταμπέλας';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Ταμπέλας.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Ταμπέλας';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Ταμπέλας κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Ταμπέλας.';
 $string['label:addinstance'] = 'Προσθήκη νέας ταμπέλας';
-$string['labeltext'] = 'Κείμενο ταμπέλας';
 $string['label:view'] = 'Εμφάνιση ταμπέλας';
+$string['labeltext'] = 'Κείμενο ταμπέλας';
 $string['modulename'] = 'Ταμπέλα';
 $string['modulename_help'] = 'Το άρθρωμα ταμπέλα επιτρέπει την εισαγωγή κειμένου και πολυμέσων στην σελίδα του μαθήματος μεταξύ συνδέσμων προς άλλους πόρους και δραστηριότητες. Οι ταμπέλες είναι πολύ ευπροσάρμοστες και μπορεί να βοηθήσουν στη βελτίωση της εμφάνισης ενός μαθήματος αν χρησιμοποιηθούν προσεκτικά. Οι ταμπέλες μπορούν να χρησιμοποιηθούν:
 

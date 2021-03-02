@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'es', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -72,7 +72,7 @@ $string['deleteblogassociations'] = 'Eliminar asociaciones de blog';
 $string['deleteblogassociations_help'] = 'Si se selecciona esta opción, las entradas de blog quedarán desvinculadas de este curso o de las actividades o recursos del curso. Las entradas de blog no serán eliminadas.';
 $string['deleteentry'] = 'Eliminar entrada';
 $string['deleteexternalblog'] = 'Dar de baja este blog externo';
-$string['deleteotagswarn'] = '¿Está seguro de que quiere eliminar estas marcas de todos los mensajes de blog y quitarlo del sistema?';
+$string['deleteotagswarn'] = '¿Está seguro que quiere eliminar estas marcas de todos los mensajes de blog y quitarlo del sistema?';
 $string['description'] = 'Descripción';
 $string['description_help'] = 'Escriba una frase o dos resumiendo el contenido de su blog externo. (Si no se suministra ninguna descripción, se utilizará la descripción registrada en su blog externo).';
 $string['donothaveblog'] = 'Lo sentimos, usted no tiene su propio blog.';
@@ -158,12 +158,6 @@ $string['privacy:metadata:post:usermodified'] = 'El usuario que modificó la ent
 $string['privacy:path:blogassociations'] = 'Publicaciones asociadas al blog';
 $string['privacy:unknown'] = 'Desconocido';
 $string['publishto'] = 'Publicar a';
-$string['publishtocourse'] = 'Usuarios que comparten curso con usted';
-$string['publishtocourseassoc'] = 'Miembros del curso asociado';
-$string['publishtocourseassocparam'] = 'Miembros de {$a}';
-$string['publishtogroup'] = 'Usuarios que comparten grupo con usted';
-$string['publishtogroupassoc'] = 'Sus miembros de grupo en el curso asociado';
-$string['publishtogroupassocparam'] = 'Miembros de su grupo en {$a}';
 $string['publishto_help'] = '<p>Hay tres posibilidades</p>
 
 <p><b>Usted (borrador)</b> - Solo usted y los administradores pueden ver esta entrada.</p>
@@ -171,6 +165,12 @@ $string['publishto_help'] = '<p>Hay tres posibilidades</p>
 <p><b>Todos en este sitio</b> - Cualquiera registrado en el sitio puede leer esta entrada.</p>
 
 <p><b>Todo el mundo</b> - Cualquiera (incluídos los invitados) puede leer esta entrada.</p>';
+$string['publishtocourse'] = 'Usuarios que comparten curso con usted';
+$string['publishtocourseassoc'] = 'Miembros del curso asociado';
+$string['publishtocourseassocparam'] = 'Miembros de {$a}';
+$string['publishtogroup'] = 'Usuarios que comparten grupo con usted';
+$string['publishtogroupassoc'] = 'Sus miembros de grupo en el curso asociado';
+$string['publishtogroupassocparam'] = 'Miembros de su grupo en {$a}';
 $string['publishtonoone'] = 'Usted (borrador)';
 $string['publishtosite'] = 'Todos en este sitio';
 $string['publishtoworld'] = 'Todo el mundo';

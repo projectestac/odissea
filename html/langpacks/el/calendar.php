@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'el', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -55,6 +55,9 @@ $string['courses'] = 'Μαθήματα';
 $string['customexport'] = 'Προσαρμοσμένο εύρος ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Καθημερινά';
 $string['day'] = 'Ημέρα';
+$string['dayeventsmany'] = '{$a->num} γεγονότα, {$a->day}';
+$string['dayeventsnone'] = 'Κανένα γεγονός, {$a}';
+$string['dayeventsone'] = '1 γεγονός, {$a}';
 $string['daynext'] = 'Επόμενη ημέρα';
 $string['dayprev'] = 'Προηγούμενη ημέρα';
 $string['dayviewfor'] = 'Ημερήσια προβολή για:';
@@ -193,29 +196,29 @@ $string['noupcomingevents'] = 'Κανένα επικείμενο γεγονός'
 $string['oneevent'] = '1 γεγονός';
 $string['pollinterval'] = 'Διάστημα ενημέρωσης';
 $string['pollinterval_help'] = 'Πόσο συχνά θα θέλατε το ημερολόγιο να ενημερώνεται με νέα γεγονότα.';
-$string['preferences'] = 'Προτιμήσεις';
-$string['preferences_available'] = 'Οι προσωπικές σας προτιμήσεις';
-$string['preferredcalendar'] = 'Προτεινόμενο ημερολόγιο';
 $string['pref_lookahead'] = 'Πριν από πόσες ημέρες θεωρείται επικείμενο ένα γεγονός;';
-$string['pref_lookahead_help'] = 'Καθορίζει τον (μέγιστο) αριθμό ημερών (από σήμερα) στο μέλλον μέσα στις οποίες ξεκινά ένα γεγονός προκειμένου να θεωρηθεί επικείμενο. Γεγονότα που ξεκινούν πέρα από αυτό δεν θα εμφανίζονται ως επικείμενα. Παρακαλούμε σημειώστε ότι <strong>δεν υπάρχει καμία εγγύηση</strong> ότι όλα τα γεγονότα που ξεκινούν σε αυτό το χρονικό πλαίσιο θα εμφανιστούν. Αν υπάρχουν πάρα πολλά (πάνω από την προτίμηση «Μέγιστος αριθμός επικείμενων γεγονότων»), τότε τα πιο μακρινά γεγονότα δεν θα εμφανίζονται.';
+$string['pref_lookahead_help'] = 'Καθορίζει τον (μέγιστο) αριθμό ημερών (από σήμερα) στο μέλλον μέσα στις οποίες ξεκινά ένα γεγονός προκειμένου να θεωρηθεί επικείμενο. Γεγονότα που ξεκινούν πέρα από αυτό δεν θα εμφανίζονται ως επικείμενα. Παρακαλούμε σημειώστε ότι <strong>δεν υπάρχει καμία εγγύηση</strong> ότι όλα τα γεγονότα που ξεκινούν σε αυτό το το χρονικό πλαίσιο θα εμφανιστούν. Αν υπάρχουν πάρα πολλά (πάνω από την προτίμηση «Μέγιστος αριθμός επικείμενων γεγονότων»), τότε τα πιο μακρινά γεγονότα δεν θα εμφανίζονται.';
 $string['pref_maxevents'] = 'Μέγιστος αριθμός επικείμενων γεγονότων';
 $string['pref_maxevents_help'] = 'Ορίζεται ο μέγιστος αριθμός επικείμενων γεγονότων που μπορούν να εμφανιστούν. Αν επιλέξετε μεγάλο αριθμό γεγονότων, τότε υπάρχει περίπτωση να χρησιμοποιηθεί μεγάλο μέρος της οθόνης σας για την εμφάνισή τους.';
 $string['pref_persistflt'] = 'Απομνημόνευση ρυθμίσεων φίλτρου';
 $string['pref_persistflt_help'] = 'Εάν ενεργοποιηθεί, τότε το Moodle θα θυμάται τις τελευταίες ρυθμίσεις φίλτρου γεγονότων σας και θα τις επαναφέρει αυτόματα κάθε φορά που θα συνδέεστε.';
 $string['pref_startwday'] = 'Πρώτη μέρα εβδομάδας';
-$string['pref_startwday_help'] = 'Οι εβδομάδες στο ημερολόγιο θα εμφανίζονται αρχής γενομένης από την ημέρα που θα επιλέξετε εδώ.';
+$string['pref_startwday_help'] = 'Οι εβδομάδες στο ημερολόγιο θα εμφανίζονται ως αρχής γενομένης από την ημέρα που θα επιλέξετε εδώ.';
 $string['pref_timeformat'] = 'Μορφή εμφάνισης ώρας';
-$string['pref_timeformat_help'] = 'Μπορείτε να επιλέξετε να βλέπετε την ώρα σε 12ωρη ή 24ωρη μορφή. Αν επιλέξετε «προεπιλογή», τότε η μορφή θα επιλεγεί αυτόματα ανάλογα με τη γλώσσα που χρησιμοποιείτε στον ιστότοπο.';
+$string['pref_timeformat_help'] = 'Μπορείτε να επιλέξετε να δείτε την ώρα σε 12ωρη ή 24ωρη μορφή. Αν επιλέξετε «προεπιλογή», τότε η μορφή θα επιλεγεί αυτόματα ανάλογα με τη γλώσσα που χρησιμοποιείτε στον ιστότοπο.';
+$string['preferences'] = 'Προτιμήσεις';
+$string['preferences_available'] = 'Οι προσωπικές σας προτιμήσεις';
+$string['preferredcalendar'] = 'Προτεινόμενο ημερολόγιο';
 $string['privacy:metadata:calendar:event'] = 'Το στοιχείο λογισμικού ημερολογίου μπορεί να αποθηκεύσει λεπτομέρειες γεγονότος ημερολογίου χρήστη στο βασικό υποσύστημα (πυρήνα).';
 $string['privacy:metadata:calendar:event:description'] = 'Περιγραφή του γεγονότος ημερολογίου.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'Ο τύπος γεγονότος του γεγονότος ημερολογίου.';
 $string['privacy:metadata:calendar:event:name'] = 'Το όνομα του γεγονότος ημερολογίου.';
+$string['privacy:metadata:calendar:event:timeduration'] = 'Η διάρκεια του γεγονότος ημερολογίου.';
+$string['privacy:metadata:calendar:event:timestart'] = 'Η ώρα έναρξης του γεγονότος ημερολογίου.';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'Το στοιχείο λογισμικού Ημερολόγιο μπορεί να αποθηκεύσει τις λεπτομέρειες των συνδρομών χρήστη ημερολογίου μέσα στο υποσύστημα πυρήνα.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'Ο τύπος γεγονότος της συνδρομής ημερολογίου.';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'Το όνομα της συνδρομής του ημερολογίου.';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'Η διεύθυνση URL της συνδρομής του ημερολογίου.';
-$string['privacy:metadata:calendar:event:timeduration'] = 'Η διάρκεια του γεγονότος ημερολογίου.';
-$string['privacy:metadata:calendar:event:timestart'] = 'Η ώρα έναρξης του γεγονότος ημερολογίου.';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'Η προτίμηση του χρήστη στις ρυθμίσεις του τύπου εμφάνισης γεγονότος ημερολογίου.';
 $string['recentupcoming'] = 'Πρόσφατα και επόμενες 60 ημέρες';
 $string['repeatedevents'] = 'Επαναλαμβανόμενα γεγονότα';

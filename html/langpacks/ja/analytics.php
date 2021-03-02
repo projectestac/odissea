@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'analytics', language 'ja', version '3.8'.
  *
- * @package   analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -91,7 +91,7 @@ $string['levelinstitutionisced5'] = '短期高等教育 (企業またはコミ�
 $string['levelinstitutionisced6'] = '学士または同等レベル';
 $string['levelinstitutionisced7'] = '修士または同等レベル';
 $string['levelinstitutionisced8'] = '博士または同等レベル';
-$string['modeinstruction'] = 'インスティテューションモード';
+$string['modeinstruction'] = 'インストラクションモード';
 $string['modeinstructionblendedhybrid'] = 'ブレンド型またはハイブリッド型';
 $string['modeinstructionfacetoface'] = '対面';
 $string['modeinstructionfullyonline'] = 'フルオンライン';
@@ -116,7 +116,7 @@ $string['notuseful'] = '有益ではない';
 $string['novaliddata'] = '利用可能な有効なデータはありません。';
 $string['novalidsamples'] = '利用可能な有効なサンプルはありません。';
 $string['onlycli'] = 'アナリティクス処理をコマンドラインのみで実行する';
-$string['onlycliinfo'] = '評価モデル、機械学習アルゴリズムまたは予測の取得等のアナリティクス処理には時間を要します。cronタスクとして実行できます。またはコマンドラインにより強制的に実行できます。この設定を無効にした場合、ウェブインターフェース経由でアナリティクス処理を手動実効できます。';
+$string['onlycliinfo'] = '評価モデル、機械学習アルゴリズムまたは予測の取得等のアナリティクス処理には時間を要します。cronタスクとして実行できます。またはコマンドラインにより強制的に実行できます。この設定を無効にした場合、ウェブインターフェース経由でアナリティクス処理を手動実行できます。';
 $string['percentonline'] = 'オンラインの割合';
 $string['percentonline_help'] = 'あなたの組織がブレンド型またはハイブリッド型のコースを提供する場合、学生の作業がMoodle上でオンラインで実施される割合を指定してください。0から100までの数値を使用してください。';
 $string['predictionsprocessor'] = '予測プロセッサ';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'ca', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addinganewrole'] = 'S\'està afegint un rol nou';
+$string['addinganewrole'] = 'S\'està afegint un nou rol';
 $string['addrole'] = 'Afegeix un rol nou';
 $string['advancedoverride'] = 'Redefinició avançada de rols';
 $string['allow'] = 'Permet';
@@ -39,11 +39,11 @@ $string['allowswitch'] = 'Permís per commutar rols';
 $string['allsiteusers'] = 'Tots els usuaris del lloc';
 $string['analytics:listinsights'] = 'Enumera les prediccions';
 $string['archetype'] = 'Arquetipus del rol';
+$string['archetype_help'] = 'L\'arquetipus de rol determina els permisos quan un rol es reinicia als valors per defecte. També determina qualsevol permís nou per al rol quan s\'actualitza el lloc.';
 $string['archetypecoursecreator'] = 'ARQUETIPUS: Creador de cursos';
 $string['archetypeeditingteacher'] = 'ARQUETIPUS: Professor (editor)';
 $string['archetypefrontpage'] = 'ARQUETIPUS: Usuari autenticat a la primera pàgina';
 $string['archetypeguest'] = 'ARQUETIPUS: Convidat';
-$string['archetype_help'] = 'L\'arquetipus de rol determina els permisos quan un rol es reinicia als valors per defecte. També determina qualsevol permís nou per al rol quan s\'actualitza el lloc.';
 $string['archetypemanager'] = 'ARQUETIPUS: Gestor';
 $string['archetypestudent'] = 'ARQUETIPUS: Estudiant';
 $string['archetypeteacher'] = 'ARQUETIPUS: Professor (no-editor)';
@@ -264,12 +264,12 @@ $string['inherit'] = 'Hereta';
 $string['invalidpresetfile'] = 'Fitxer de definició de rol invàlid';
 $string['legacy:admin'] = 'ROL HERETAT: Administrador';
 $string['legacy:coursecreator'] = 'ROL HERETAT: Creador de cursos';
-$string['legacy:editingteacher'] = 'ROL HERETAT: Professor/a (edició)';
+$string['legacy:editingteacher'] = 'ROL HERETAT: Professor/a (editor)';
 $string['legacy:guest'] = 'ROL HERETAT: Visitant';
 $string['legacy:student'] = 'ROL HERETAT: Estudiant';
-$string['legacy:teacher'] = 'ROL HERETAT: Professor/a (sense edició)';
-$string['legacytype'] = 'Tipus de rol heretat';
+$string['legacy:teacher'] = 'ROL HERETAT: Professor/a (no editor)';
 $string['legacy:user'] = 'ROL HERETAT: Usuari autenticat';
+$string['legacytype'] = 'Tipus de rol heretat';
 $string['listallroles'] = 'Llista tots els rols';
 $string['localroles'] = 'Rols assignats localment';
 $string['mainadmin'] = 'Administrador principal';
@@ -298,8 +298,8 @@ $string['notset'] = 'No definit';
 $string['overrideanotherrole'] = 'Redefineix un altre rol';
 $string['overridecontext'] = 'Redefineix el context';
 $string['overridepermissions'] = 'Redefineix els permisos';
-$string['overridepermissionsforrole'] = 'Redefineix els permisos del rol «{$a->role}» a {$a->context}';
 $string['overridepermissions_help'] = 'La redefinició de permisos possibilita habilitar o inhabilitar capacitats concretes en contextos específics.';
+$string['overridepermissionsforrole'] = 'Redefineix els permisos del rol «{$a->role}» a {$a->context}';
 $string['overridepermissionsin'] = 'Defineix excepcions als permisos en {$a}';
 $string['overrideroles'] = 'Redefineix els rols';
 $string['overriderolesin'] = 'Defineix excepcions als rols en {$a}';
@@ -351,30 +351,30 @@ $string['restore:uploadfile'] = 'Pujar fitxers a les àrees de còpies de segure
 $string['restore:userinfo'] = 'Restaurar les dades d\'usuari';
 $string['restore:viewautomatedfilearea'] = 'Restaurar cursos des de les còpies de seguretat automàtiques';
 $string['risks'] = 'Riscos';
+$string['role:assign'] = 'Assignar rols a usuaris';
+$string['role:manage'] = 'Crear i gestionar rols';
+$string['role:override'] = 'Redefinir els permisos d\'altri';
+$string['role:review'] = 'Revisar els permisos d\'altri';
+$string['role:safeoverride'] = 'Redefinir els permisos segurs d\'altri';
+$string['role:switchroles'] = 'Canviar de rol';
 $string['roleallowheader'] = 'Permet el rol:';
 $string['roleallowinfo'] = 'Escolliu un rol per tal d\'afegir-lo a la llista de rols permesoss en el context {$a->context}, capacitat {$a->cap}:';
-$string['role:assign'] = 'Assignar rols a usuaris';
 $string['roleassignments'] = 'Assignacions de rol';
 $string['roledefinitions'] = 'Definicions de rols';
 $string['rolefullname'] = 'Nom del rol';
 $string['roleincontext'] = '{$a->role} a {$a->context}';
-$string['role:manage'] = 'Crear i gestionar rols';
-$string['role:override'] = 'Redefinir els permisos d\'altri';
 $string['roleprohibitheader'] = 'Prohibeix el rol';
 $string['roleprohibitinfo'] = 'Escolliu un rol per tal d\'afegir-lo a la llista de rols prohibits en el context {$a->context}, capacitat {$a->cap}:';
 $string['rolerepreset'] = 'Utilitza el rol preconfigurat';
 $string['roleresetdefaults'] = 'Per defecte';
 $string['roleresetrole'] = 'Utilitza el rol o l\'arquetipus';
-$string['role:review'] = 'Revisar els permisos d\'altri';
 $string['rolerisks'] = 'Riscs del rol';
 $string['roles'] = 'Rols';
-$string['role:safeoverride'] = 'Redefinir els permisos segurs d\'altri';
+$string['roles_help'] = 'Un rol és una col·leció de permisos, definits per a tot el lloc, que podeu assignar a usuaris específics en contextos específics.';
 $string['roleselect'] = 'Escull un rol';
 $string['rolesforuser'] = 'Rols per a l\'usuari {$a}';
-$string['roles_help'] = 'Un rol és una col·leció de permisos, definits per a tot el lloc, que podeu assignar a usuaris específics en contextos específics.';
 $string['roleshortname'] = 'Nom curt';
 $string['roleshortname_help'] = 'El nom curt del rol és un identificador de rol de nivell baix en el qual només s\'admeten caràcters alfanumèrics ASCII. No canvieu els noms curts dels rols estàndard.';
-$string['role:switchroles'] = 'Canviar de rol';
 $string['roletoassign'] = 'Rol per assignar';
 $string['roletooverride'] = 'Excepcions pel que fa al rol';
 $string['safeoverridenotice'] = 'Nota: Les capacitats amb risc més elevat estan bloquejades perquè només teniu permís per redefinir les capacitats segures.';
@@ -384,7 +384,6 @@ $string['selectrole'] = 'Seleccioneu un rol';
 $string['showallroles'] = 'Mostra tots els rols';
 $string['showthisuserspermissions'] = 'Mostra els permisos d\'aquest usuari';
 $string['site:accessallgroups'] = 'Accedir a tots els grups';
-$string['siteadministrators'] = 'Administradors del lloc';
 $string['site:approvecourse'] = 'Aprovar la creació de cursos';
 $string['site:backup'] = 'Fer còpies de seguretat de cursos';
 $string['site:config'] = 'Canviar la configuració del lloc';
@@ -407,6 +406,7 @@ $string['site:viewfullnames'] = 'Veure sempre els noms complets dels usuaris';
 $string['site:viewparticipants'] = 'Veure els participants';
 $string['site:viewreports'] = 'Veure informes';
 $string['site:viewuseridentity'] = 'Veure la identitat completa de l\'usuari en les llistes';
+$string['siteadministrators'] = 'Administradors del lloc';
 $string['tag:edit'] = 'Editar etiquetes existents';
 $string['tag:editblocks'] = 'Editar blocs en pàgines d\'etiquetes';
 $string['tag:flag'] = 'Marcar etiquetes com a inadequades';
@@ -431,12 +431,6 @@ $string['user:manageownfiles'] = 'Gestionar els fitxers de les àrees privades p
 $string['user:managesyspages'] = 'Configura la disposició per defecte de la pàgina per als perfils públics d\'usuari';
 $string['user:readuserblogs'] = 'Veure els blogs dels usuaris';
 $string['user:readuserposts'] = 'Veure tots els missatges als fòrums dels usuaris';
-$string['usersfrom'] = 'Usuaris de {$a}';
-$string['usersfrommatching'] = 'Usuaris de {$a->contextname} que concorden amb «{$a->search}»';
-$string['usersinthisx'] = 'Usuaris en aquest {$a}';
-$string['usersinthisxmatching'] = 'Usuaris en aquest {$a->contexttype} que concorden amb «{$a->search}»';
-$string['userswithrole'] = 'Tots els usuaris amb rol';
-$string['userswiththisrole'] = 'Usuaris amb el rol';
 $string['user:update'] = 'Actualitzar els perfils d\'usuari';
 $string['user:viewalldetails'] = 'Mostrar la informació completa de l\'usuari';
 $string['user:viewdetails'] = 'Veure els perfils d\'usuari';
@@ -444,6 +438,12 @@ $string['user:viewhiddendetails'] = 'Veure els detalls ocults dels usuaris';
 $string['user:viewlastip'] = 'Veure la darrera adreça IP de l\'usuari';
 $string['user:viewuseractivitiesreport'] = 'Veure els informes d\'activitat dels usuaris';
 $string['user:viewusergrades'] = 'Veure qualificacions dels usuaris';
+$string['usersfrom'] = 'Usuaris de {$a}';
+$string['usersfrommatching'] = 'Usuaris de {$a->contextname} que concorden amb «{$a->search}»';
+$string['usersinthisx'] = 'Usuaris en aquest {$a}';
+$string['usersinthisxmatching'] = 'Usuaris en aquest {$a->contexttype} que concorden amb «{$a->search}»';
+$string['userswithrole'] = 'Tots els usuaris amb rol';
+$string['userswiththisrole'] = 'Usuaris amb el rol';
 $string['useshowadvancedtochange'] = 'Utilitza «Mostra avançats» per canviar';
 $string['viewingdefinitionofrolex'] = 'S\'està mostrant la definició del rol «{$a}»';
 $string['viewrole'] = 'Veure detalls dels rols';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_paypal', language 'ru', version '3.8'.
  *
- * @package   enrol_paypal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_paypal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,11 +49,11 @@ $string['mailstudents'] = 'Уведомить студентов';
 $string['mailteachers'] = 'Сообщение преподавателям';
 $string['messageprovider:paypal_enrolment'] = 'Сообщения о зачислении PayPal';
 $string['nocost'] = 'Зачисление на этот курс бесплатно!';
-$string['paypalaccepted'] = 'Принятые платежи PayPal';
 $string['paypal:config'] = 'Настраивать экземпляры способа записи на курс «PayPal»';
 $string['paypal:manage'] = 'Управлять записанными на курс пользователями';
 $string['paypal:unenrol'] = 'Исключать пользователей из курса';
 $string['paypal:unenrolself'] = 'Отчислять себя из курса';
+$string['paypalaccepted'] = 'Принятые платежи PayPal';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'Модуль PayPal позволяет создавать платные курсы. Если стоимость курса равна нулю, то студента не попросят заплатить за вход. Вы можете задать стоимость по умолчанию для любого курса всего сайта. В настройках отдельного курса можно установить его стоимость. Стоимость конкретного курса перекрывает стоимость курса всего сайта по умолчанию.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = 'ID курса, который продан.';

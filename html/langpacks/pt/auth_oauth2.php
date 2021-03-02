@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_oauth2', language 'pt', version '3.8'.
  *
- * @package   auth_oauth2
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_oauth2
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['auth_oauth2description'] = 'Autenticação baseada nos padrões OAuth 2
 $string['auth_oauth2settings'] = 'Configurações da autenticação OAuth 2';
 $string['confirmaccountemail'] = 'Caro(a) {$a->fullname},
 
-Foi solicitada uma nova conta em \'{$a->sitename}\' usando o seu endereço de e-mail.
+Foi solicitada uma nova conta na plataforma de e-learning \'{$a->sitename}\' usando o seu endereço de e-mail.
 
 Para confirmar a sua nova conta, aceda a este endereço:
 
@@ -43,7 +43,7 @@ Se precisar de ajuda, entre em contacto com o administrador do site,
 {$a->admin}
 
 Se não fez este pedido, outra pessoa pode estar a tentar aceder à sua conta.
-Entre em contacto com o administrador do site imediatamente.';
+Entre em contacto com o(a) administrador(a) da plataforma imediatamente.';
 $string['confirmaccountemailsubject'] = '{$a}: confirmação da conta';
 $string['confirmationinvalid'] = 'A hiperligação de confirmação é inválida ou expirou. Inicie novamente o processo de autenticação para gerar um novo e-mail de confirmação.';
 $string['confirmationpending'] = 'Esta conta está pendente da confirmação do e-mail.';
@@ -61,7 +61,7 @@ Se precisar de ajuda, entre em contacto com o administrador do site:
 {$a->admin}
 
 Se não fez este pedido, outra pessoa pode estar a tentar aceder à sua conta.
-Entre em contacto com o administrador do site imediatamente.';
+Entre em contacto com o(a) administrador(a) da plataforma imediatamente.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: confirmação da vinculação de autenticação';
 $string['createaccountswarning'] = 'Este módulo de autenticação permite aos utilizadores criarem contas no seu site. É importante ativar a configuração "authpreventaccountcreation" se pretende usar esta funcionalidade.';
 $string['createnewlinkedlogin'] = 'Vincular uma nova conta ({$a})';

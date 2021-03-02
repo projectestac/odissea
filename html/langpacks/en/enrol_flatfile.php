@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_flatfile', language 'en', version '3.8'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,10 +30,10 @@ $string['expiredaction'] = 'Enrolment expiry action';
 $string['expiredaction_help'] = 'Select action to carry out when user enrolment expires. Please note that some user data and settings are purged from course during course unenrolment.';
 $string['filelockedmail'] = 'The text file you are using for file-based enrolments ({$a}) can not be deleted by the cron process.  This usually means the permissions are wrong on it.  Please fix the permissions so that Moodle can delete the file, otherwise it might be processed repeatedly.';
 $string['filelockedmailsubject'] = 'Important error: Enrolment file';
-$string['flatfileenrolments'] = 'Flat file (CSV) enrolments';
 $string['flatfile:manage'] = 'Manage user enrolments manually';
-$string['flatfilesync'] = 'Flat file enrolment sync';
 $string['flatfile:unenrol'] = 'Unenrol users from the course manually';
+$string['flatfileenrolments'] = 'Flat file (CSV) enrolments';
+$string['flatfilesync'] = 'Flat file enrolment sync';
 $string['location'] = 'File location';
 $string['location_desc'] = 'Specify full path to the enrolment file. The file is automatically deleted after processing.';
 $string['mapping'] = 'Flat file role mapping';

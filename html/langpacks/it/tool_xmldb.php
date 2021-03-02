@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'it', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,19 +31,19 @@ $string['back'] = 'Indietro';
 $string['backtomainview'] = 'Torna alla vista principale';
 $string['cannotuseidfield'] = 'Non è possibile inserire il campo "id,  è una colonna autonumeric';
 $string['change'] = 'Modifica';
-$string['charincorrectlength'] = 'Lunghezza errata per un campo carattere';
-$string['checkbigints'] = 'Controlla integer';
+$string['charincorrectlength'] = 'Lunghezza errata di un campo carattere';
 $string['check_bigints'] = 'Cerca DB Integer errati';
-$string['checkdefaults'] = 'Controlla default';
 $string['check_defaults'] = 'Cerca valori di default inconsistenti';
-$string['checkforeignkeys'] = 'Controlla foreign key';
 $string['check_foreign_keys'] = 'Cerca violazioni di foreign key';
-$string['checkindexes'] = 'Controlla indici';
 $string['check_indexes'] = 'Cerca indici mancanti nel DB';
-$string['checkoraclesemantics'] = 'Controlla semantiche';
 $string['check_oracle_semantics'] = 'Cerca semantiche di lunghezza errata';
+$string['checkbigints'] = 'Controlla integer';
+$string['checkdefaults'] = 'Controlla default';
+$string['checkforeignkeys'] = 'Controlla foreign key';
+$string['checkindexes'] = 'Controlla indici';
+$string['checkoraclesemantics'] = 'Controlla semantiche';
 $string['completelogbelow'] = '(visualizza il log completo della ricerca)';
-$string['confirmcheckbigints'] = 'La funzione individua la presenza di  <a href="http://tracker.moodle.org/browse/MDL-11038">Integer potenzialmente errati</a> nel tuo server Moodle, generando automaticamente il codice SQL necessario per sistemare gli Integer errati individuati. Il codice SQL viene generato ma non eseguito.
+$string['confirmcheckbigints'] = 'La funzione individua la presenza di  <a href="http://tracker.moodle.org/browse/MDL-11038">Integer potenzialmente errati</a> nel server Moodle, generando automaticamente il codice SQL necessario per sistemare gli Integer errati individuati. Il codice SQL viene generato ma non eseguito.
 
 Una volta completata l\'individuazione, è possibile copiare il codice SQL generato ed eseguirlo tramite l\'interfaccia SQL preferita (effettuare sempre un backup del database prima di eseguire il codice SQL).
 
@@ -76,12 +76,12 @@ Una volta completata la ricerca è possibile copiare il codice SQL generato ed e
 Si raccomanda di utilizzare la versione di Moodle più recente (versione +) disponibile per la release in uso prima di cercare colonne con semantica BYTE.
 
 la ricerca non effettua modifiche sul database, legge solamente i dati e pertanto può essere eseguita con sicurezza in qualsiasi momento.';
-$string['confirmdeletefield'] = 'Sei sicuro di voler rimuovere il campo:';
-$string['confirmdeleteindex'] = 'Sei sicuro di voler rimuovere l\'indice:';
-$string['confirmdeletekey'] = 'Sei sicuro di voler rimuovere la chiave:';
-$string['confirmdeletetable'] = 'Sei sicuro di voler rimuovere la tabella:';
-$string['confirmdeletexmlfile'] = 'Sei sicuro di voler rimuovere il file:';
-$string['confirmrevertchanges'] = 'Sei sicuro di voler ripristinare le modifiche effettuate:';
+$string['confirmdeletefield'] = 'Sei sicuro di rimuovere il campo:';
+$string['confirmdeleteindex'] = 'Sei sicuro di rimuovere l\'indice:';
+$string['confirmdeletekey'] = 'Sei sicuro di rimuovere la chiave:';
+$string['confirmdeletetable'] = 'Sei sicuro di rimuovere la tabella:';
+$string['confirmdeletexmlfile'] = 'Sei sicuro di rimuovere il file:';
+$string['confirmrevertchanges'] = 'Sei sicuro di ripristinare le modifiche effettuate:';
 $string['create'] = 'Crea';
 $string['createtable'] = 'Crea tabella:';
 $string['defaultincorrect'] = 'Default errato';
@@ -119,7 +119,7 @@ $string['fieldnameempty'] = 'Il nome campo è vuoto';
 $string['fields'] = 'Campi';
 $string['fieldsnotintable'] = 'Il campo non è presente nella tabella';
 $string['fieldsusedinindex'] = 'Il campo è usato come indice';
-$string['fieldsusedinkey'] = 'Questo campo è una chiave';
+$string['fieldsusedinkey'] = 'Questo campo è usato come chiave.';
 $string['filemodifiedoutfromeditor'] = 'Attenzione: il file è stato modificato localmente tramite l\'editor XMLDB. Il salvataggio annullerà le modifiche locali.';
 $string['filenotwriteable'] = 'File non scrivibile';
 $string['fkunknownfield'] = 'La foreign key {$a->keyname} nella tabella {$a->tablename} punta ad un campo inesistente {$a->reffield} nella tabella {$a->reftable}.';
@@ -138,27 +138,27 @@ $string['incorrecttablename'] = 'Il nome della tabella non è corretto';
 $string['index'] = 'Indice';
 $string['indexes'] = 'Indici';
 $string['indexnameempty'] = 'Il nome dell\'indice è vuoto';
-$string['integerincorrectlength'] = 'Lunghezza errata per un campo Integer';
+$string['integerincorrectlength'] = 'Lunghezza errata di un campo Integer';
 $string['key'] = 'Chiave';
 $string['keynameempty'] = 'Il nome';
 $string['keys'] = 'Chiavi';
 $string['listreservedwords'] = 'Elenco delle Parole Riservate<br/>(utilizzato per mantenere aggiornato <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a>)';
 $string['load'] = 'Carica';
 $string['main_view'] = 'Vista principale';
-$string['masterprimaryuniqueordernomatch'] = 'I campi nella tua foreign key devono essere elencati nello stesso ordine con cui compaiono nella UNIQUE KEY della tabella referenziata.';
+$string['masterprimaryuniqueordernomatch'] = 'I campi nella foreign key devono essere elencati nello stesso ordine con cui compaiono nella UNIQUE KEY della tabella referenziata.';
 $string['missing'] = 'Mancanti';
 $string['missingindexes'] = 'Indici mancanti individuati';
 $string['mustselectonefield'] = 'Devi selezionare un campo per vedere le azioni possibili!';
 $string['mustselectoneindex'] = 'Devi selezionare un indice per vedere le azioni possibili!';
 $string['mustselectonekey'] = 'Devi selezionare  una chiave per vedere le azioni possibili!';
+$string['new_table_from_mysql'] = 'Nuova tabella da MySQL';
 $string['newfield'] = 'Nuovo campo';
 $string['newindex'] = 'Nuovo indice';
 $string['newkey'] = 'Nuova chiave';
 $string['newtable'] = 'Nuova tabella';
 $string['newtablefrommysql'] = 'Nuova tabella da MySQL';
-$string['new_table_from_mysql'] = 'Nuova tabella da MySQL';
 $string['nofieldsspecified'] = 'Non sono stati specificati campi';
-$string['nomasterprimaryuniquefound'] = 'La(e) colonna(e) referenziata dalla tua foreign key deve essere inclusa in una primary o unique KEY della tabella referenziata. Da notare che la colonna in UNIQUE INDEX non è sufficiente.';
+$string['nomasterprimaryuniquefound'] = 'Le colonnae referenziata dalla foreign key devonoe essere incluse in una primary o unique KEY della tabella referenziata. Da notare che la colonna in UNIQUE INDEX non è sufficiente.';
 $string['nomissingindexesfound'] = 'Non sono stati individuati indici mancanti. Il tuo DB non ha bisogno di altre azioni.';
 $string['noreffieldsspecified'] = 'Non sono stati specificati campi di riferimento';
 $string['noreftablespecified'] = 'La tabella di riferimento specificata non è stata trovata';
@@ -171,6 +171,8 @@ $string['numberincorrectlength'] = 'Lunghezza errata per un campo number';
 $string['pendingchanges'] = 'Nota: hai effettuato modiche al file. Puoi salvarle in qualsiasi momento.';
 $string['pendingchangescannotbesaved'] = 'Il file è stato modificato ma non è possibile salvare le modifiche. Per favore verifice che il processo del web server abbia i permessi di scrittura per la cartella e per il file "install.xml".';
 $string['pendingchangescannotbesavedreload'] = 'Il file è stato modificato ma non è possibile salvare le modifiche. Per favore verifica che il processo del web server abbia i permessi di scrittura per la cartella e per il file "install.xml". Dopo la verifica ricarica la pagina per controllare se è possibile salvare le modifiche.';
+$string['persistentfieldscomplete'] = 'Sono stati aggiunti i seguenti campi:';
+$string['persistentfieldsexist'] = 'I seguenti campi sono già esistenti:';
 $string['pluginname'] = 'Editor XMLDB';
 $string['primarykeyonlyallownotnullfields'] = 'La chiave primaria non può essere null';
 $string['privacy:metadata'] = 'Il plugin "Editor XMLDB" non memorizza dati personali.';
@@ -194,15 +196,15 @@ $string['unknowntable'] = 'Riferimento ad una tabella sconosciuta.';
 $string['unload'] = 'Scarica';
 $string['up'] = 'Su';
 $string['view'] = 'Visualizza';
-$string['viewedited'] = 'Visualizza con le modifiche';
-$string['vieworiginal'] = 'Visualizza originale';
-$string['viewphpcode'] = 'Visualizza codice PHP';
 $string['view_reserved_words'] = 'Visualizza parole riservate';
-$string['viewsqlcode'] = 'Visualizza codice SQL';
 $string['view_structure_php'] = 'Visualizza struttura PHP';
 $string['view_structure_sql'] = 'Visualizza struttura SQL';
 $string['view_table_php'] = 'Visualizza tabella PHP';
 $string['view_table_sql'] = 'Visualizza tabella SQL';
+$string['viewedited'] = 'Visualizza con le modifiche';
+$string['vieworiginal'] = 'Visualizza originale';
+$string['viewphpcode'] = 'Visualizza codice PHP';
+$string['viewsqlcode'] = 'Visualizza codice SQL';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Violazioni di foreign key';
 $string['violatedforeignkeysfound'] = 'Sono stati individuate violazioni di Foreign key';
@@ -210,15 +212,15 @@ $string['violations'] = 'Violazioni';
 $string['wrong'] = 'Errati';
 $string['wrongdefaults'] = 'Sono stati trovati valori di default errati';
 $string['wrongints'] = 'Sono stati trovati integer errati';
-$string['wronglengthforenum'] = 'Lunghezza errata per un campo enum';
+$string['wronglengthforenum'] = 'Lunghezza errata di un campo enum';
 $string['wrongnumberofreffields'] = 'Numero errato di campi di riferimento';
 $string['wrongoraclesemantics'] = 'Sono state trovate semantiche Oracle  BYTE non valide.';
-$string['wrongreservedwords'] = 'Parole riservate in uso<br/>(notare che il nomi delle tabelle non sono importanti se si utilizza $CFG->prefix)';
+$string['wrongreservedwords'] = 'Parole riservate in uso<br/>(da notare che il nomi delle tabelle non sono importanti se si utilizza $CFG->prefix)';
 $string['yesmissingindexesfound'] = '<p>Nel tuo DB sono stati individuati alcuni indici mancanti. Di seguito vengono riportati i dettagli e il codice SQL necessario per crearli (non dimenticare di effettuare un backup del database prima di eseguire il codice SQL.</p>
 <p>Dopo aver eseguito il codice SQL utilizza di nuovo questa funzione per verificare che non manchino altri indici.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Nel tuo DB sono stati individuati valori di default inconsistenti. Di seguito vengono riportati i dettagli e il codice SQL necessario per sistemarli (non dimenticare di effettuare un backup del database prima di eseguire il codice SQL.</p>
 <p>Dopo aver eseguito il codice SQL utilizza di nuovo questa funzione per verificare che non siano presenti altri valori di default inconsistenti.</p>';
-$string['yeswrongintsfound'] = '<p>Nel tuo DB sono stati individuati Integer errati. Di seguito vengono riportati i dettagli e il codice SQL necessario per sistemarli (non dimenticare di effettuare un backup del database prima di eseguire il codice SQL.</p>
-<p>Dopo aver eseguito il codice SQL utilizza di nuovo questa funzione per verificare che non siano presenti altri Integer errati.</p>';
-$string['yeswrongoraclesemanticsfound'] = '<p>Nel tuo database sono state trovate alcune colonne che utilizzano le semantiche Oracle BYTE. Di seguito trovi i dettagli e le istruzioni SQL necessarie da eseguire con l\'interfaccia SQL preferita (nnon dimenticare di effettuare un backup del database prima di eseguire il codice SQL).</p>
-<p>Dopo aver eseguito le istruzioni, verifica nuovamente la presenza di semantiche errate con questa utility.</p>';
+$string['yeswrongintsfound'] = '<p>Nel DB sono stati individuati Integer errati. Di seguito vengono riportati i dettagli e il codice SQL necessario per sistemarli (non dimenticare di effettuare un backup del database prima di eseguire il codice SQL.</p>
+<p>Dopo aver eseguito il codice SQL utilizzare di nuovo questa funzione per verificare che non siano presenti altri Integer errati.</p>';
+$string['yeswrongoraclesemanticsfound'] = '<p>Nel database sono state trovate alcune colonne che utilizzano le semantiche Oracle BYTE. Di seguito vengono riportati i dettagli e il codice SQL necessario per sistemarli con l\'interfaccia SQL preferita (non dimenticare di effettuare un backup del database prima di eseguire il codice SQL).</p>
+<p>Dopo aver eseguito le istruzioni, verificare nuovamente la presenza di semantiche errate con questo strumento.</p>';

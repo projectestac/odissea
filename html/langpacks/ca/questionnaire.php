@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'questionnaire', language 'ca', version '3.8'.
  *
- * @package   questionnaire
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     questionnaire
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -76,7 +76,6 @@ $string['checkstarted'] = 'Selecciona els que s\'han iniciat';
 $string['clicktoswitch'] = '(cliqueu per canviar)';
 $string['closed'] = 'L\'enquesta es va tancar el dia {$a}. Gràcies.';
 $string['closedate'] = 'Estableix una data de tancament';
-$string['closedate_help'] = 'Podeu indicar una data de tancament de l\'enquesta. Marqueu el selector i escolliu la data i l\'hora que vulgueu. Després d\'aquella data no es podrà respondre. Si no se selecciona, mai quedarà tancada.';
 $string['closeson'] = 'Aquest qüestionari es tancarà el dia {$a}';
 $string['completionsubmit'] = 'L\'estudiant ha d\'enviar el qüestionari per tal que consti com a completat';
 $string['confalts'] = '- O - <br />Pàgina de confirmació';
@@ -90,8 +89,8 @@ $string['confirmdelquestion'] = 'Confirmeu que voleu esborrar la pregunta en la 
 $string['confirmdelquestionresps'] = 'Això també eliminarà el nombre de respostes que ja s\'han donat a aquesta pregunta: {$a}.';
 $string['confirmdelresp'] = 'Confirmeu que voleu esborrar la resposta de  {$a}?';
 $string['confpage'] = 'Text de capçalera';
-$string['confpagedesc'] = 'La capçalera (en negreta) i el cos de text de la pàgina de «Confirmació» que es mostra quan un usuari ha acabat l\'enquesta. (Si s\'ha indicat un URL, passarà per davant del text de confirmació.)';
 $string['confpage_help'] = 'Capçalera (en negreta) i cos de text per a la pàgina de «Confirmació» que es mostra quan un usuari ha acabat l\'enquesta. (Si s\'ha indicat un URL, passarà per davant del text de confirmació.) Si deixeu aquest camp buit, es presenta un missatge predefinit en haver acabat. (Gràcies per haver completat aquesta enquesta.)';
+$string['confpagedesc'] = 'La capçalera (en negreta) i el cos de text de la pàgina de «Confirmació» que es mostra quan un usuari ha acabat l\'enquesta. (Si s\'ha indicat un URL, passarà per davant del text de confirmació.)';
 $string['contentoptions'] = 'Opcions de contingut';
 $string['couldnotcreatenewsurvey'] = 'No es pot crear una altra enquesta';
 $string['couldnotdelresp'] = 'No es pot esborrar la resposta';
@@ -100,8 +99,8 @@ $string['createcontent_help'] = 'Trieu un botó d\'opció. «Crea» és el valor
 $string['createnew'] = 'Crea';
 $string['crontask'] = 'Tasques de neteja del qüestionari';
 $string['date'] = 'Data';
-$string['dateformatting'] = 'Utilitzeu el format dia/mes/any; per exemple, per a l\'11 de setembre de 1714, <strong>11/9/1714</strong>';
 $string['date_help'] = 'Utilitzeu aquest tipus de pregunta si espereu que la resposta sigui una data amb el format correcte.';
+$string['dateformatting'] = 'Utilitzeu el format dia/mes/any; per exemple, per a l\'11 de setembre de 1714, <strong>11/9/1714</strong>';
 $string['deleteallresponses'] = 'Esborra TOTES les respostes';
 $string['deletecurrentquestion'] = 'Esborra la pregunta {$a}';
 $string['deletedallgroupresp'] = 'S\'han esborrat totes les respostes del grup {$a}';
@@ -143,6 +142,7 @@ $string['event_resumed'] = 'S\'ha reprès l\'intent';
 $string['event_saved'] = 'S\'han desat les respostes';
 $string['event_submitted'] = 'S\'han tramès les respostes';
 $string['feedback'] = 'Retroacció';
+$string['feedback_help'] = 'Ajuda de la retroacció';
 $string['feedbackaddmorefeedbacks'] = '{No} afegeixis més camps de retroacció';
 $string['feedbackbysection'] = 'Retroacció per seccions';
 $string['feedbackeditingglobal'] = 'S\'està editant la retroacció global de l\'enquesta';
@@ -161,7 +161,6 @@ $string['feedbackglobalmessages'] = 'Missatges de la retroacció global';
 $string['feedbackhdr'] = 'Retroaccions';
 $string['feedbackheading'] = 'Encapçalament de la retroacció';
 $string['feedbackheading_help'] = 'Al camp de l\'encapçalament de la retroacció podeu utilitzar 2 variables: $scorepercent i $oppositescorepercent.';
-$string['feedback_help'] = 'Ajuda de la retroacció';
 $string['feedbackmessages'] = 'Missatges de retroacció per a la secció {$a}';
 $string['feedbacknextsection'] = 'Secció següent {$a}';
 $string['feedbacknone'] = 'No hi ha missatges de retroacció';
@@ -252,12 +251,13 @@ $string['noattempts'] = 'No s\'han fet intents en aquesta enquesta';
 $string['nodata'] = 'No s\'ha enviat informació';
 $string['noduplicates'] = 'No hi ha opcions duplicades';
 $string['noduplicateschoiceserror'] = 'Heu d\'introduir almenys 2 respostes possibles per a l\'opció «No hi ha opcions duplicades»';
-$string['noneinuse'] = 'Aquesta enquesta no conté cap pregunta.';
 $string['non_respondents'] = 'Usuaris que encara no han tramès les seves respostes a aquest qüestionari';
+$string['noneinuse'] = 'Aquesta enquesta no conté cap pregunta.';
 $string['nopublicsurveys'] = 'No hi ha enquestes públiques';
 $string['noresponsedata'] = 'No hi ha cap resposta per a aquesta pregunta';
 $string['noresponses'] = 'No hi ha cap resposta';
 $string['normal'] = 'Normal';
+$string['not_started'] = 'no s\'ha iniciat';
 $string['notanumber'] = '<strong>{$a}</strong> no s\'accepta com a  format de número.';
 $string['notapplicable'] = 'N/D';
 $string['notapplicablecolumn'] = 'Columna N/D';
@@ -269,7 +269,6 @@ $string['notifications'] = 'Envia notificacions de la tramesa';
 $string['notifications_help'] = 'Envia una notificació als rols amb la capacitat «mod/questionnaire:submissionnotification» quan es fa una tramesa.';
 $string['notopen'] = 'Aquesta enquesta s\'obrirà el dia {$a}.';
 $string['notrequired'] = 'Resposta no requerida';
-$string['not_started'] = 'no s\'ha iniciat';
 $string['nousersselected'] = 'No s\'ha seleccionat cap usuari';
 $string['num'] = '#';
 $string['numattemptsmade'] = 'Nombre d\'intents que s\'han fet en aquesta enquesta: {$a}';
@@ -282,7 +281,6 @@ $string['numeric'] = 'Numèric';
 $string['numeric_help'] = 'Utilitzeu aquest tipus de pregunta si espereu un número amb un format determinat com a resposta.';
 $string['of'] = 'de';
 $string['opendate'] = 'Data d\'obertura';
-$string['opendate_help'] = 'Podeu indicar una data per obrir l\'enquesta. Marqueu la casella de selecció, i trieu la data i l\'hora. Els usuaris no podran emplenar l\'enquesta abans de la data. Si aquesta opció no està marcada, de seguida quedarà oberta per respondre-la.';
 $string['option'] = 'opció {$a}';
 $string['optionalname'] = 'Nom de la pregunta';
 $string['optionalname_help'] = 'El nom de la pregunta només s\'utilitza en exportar els resultats a format CSV o full de càlcul. Si sabeu que no fareu mai aquesta exportació, no cal que l\'escriviu.
@@ -317,9 +315,9 @@ $string['pluginname'] = 'Enquesta';
 $string['position'] = 'posició';
 $string['possibleanswers'] = 'Respostes possibles';
 $string['posteddata'] = 'S\'ha obtingut una pàgina amb dades:';
-$string['previewing'] = 'S\'està previsualitzant l\'enquesta';
 $string['preview_label'] = 'Vista prèvia';
 $string['preview_questionnaire'] = 'Vista prèvia de l\'enquesta';
+$string['previewing'] = 'S\'està previsualitzant l\'enquesta';
 $string['previous'] = 'Prèvia';
 $string['previouspage'] = 'Pàgina anterior';
 $string['print'] = 'Imprimeix aquesta resposta';
@@ -331,15 +329,13 @@ $string['public'] = 'Públic';
 $string['publiccopy'] = 'Còpia:';
 $string['publicoriginal'] = 'Original:';
 $string['qtype'] = 'Tipus';
-$string['qtypedaily'] = 'una resposta diària';
 $string['qtype_help'] = 'Permet triar si els usuaris poden contestar una sola vegada, una vegada al dia, una vegada a la setmana, una vegada al mes o un nombre il·limitat de vegades (moltes).';
+$string['qtypedaily'] = 'una resposta diària';
 $string['qtypemonthly'] = 'una resposta al mes';
 $string['qtypeonce'] = 'una sola resposta';
 $string['qtypeunlimited'] = 'respostes il·limitades';
 $string['qtypeweekly'] = 'una resposta a la setmana';
 $string['questionnaire:addinstance'] = 'Afegeix una enquesta nova';
-$string['questionnaireadministration'] = 'Administració de l\'enquesta';
-$string['questionnairecloses'] = 'Tancament de l\'enquesta';
 $string['questionnaire:copysurveys'] = 'Copia les plantilles i les enquestes privades';
 $string['questionnaire:createpublic'] = 'Crea enquestes públiques';
 $string['questionnaire:createtemplates'] = 'Crea plantilles d\'enquestes';
@@ -348,16 +344,18 @@ $string['questionnaire:downloadresponses'] = 'Descarrega les respostes en un fit
 $string['questionnaire:editquestions'] = 'Crea i edita preguntes de l\'enquesta';
 $string['questionnaire:manage'] = 'Crea i edita enquestes';
 $string['questionnaire:message'] = 'Envia un missatge als que no han respost';
-$string['questionnaireopens'] = 'Obertura de l\'enquesta';
 $string['questionnaire:preview'] = 'Previsualitza les enquestes';
 $string['questionnaire:printblank'] = 'Imprimeix una enquesta en blanc';
 $string['questionnaire:readallresponseanytime'] = 'Llegeix les respostes en qualsevol moment';
 $string['questionnaire:readallresponses'] = 'Llegeix un resum de respostes, subjecte al període en què l\'enquesta estigui oberta';
 $string['questionnaire:readownresponses'] = 'Llegeix les respostes pròpies';
-$string['questionnairereport'] = 'Informe de l\'enquesta';
 $string['questionnaire:submit'] = 'Completa i tramet l\'enquesta';
 $string['questionnaire:view'] = 'Mostra una enquesta';
 $string['questionnaire:viewsingleresponse'] = 'Visualitza les respostes individuals completes';
+$string['questionnaireadministration'] = 'Administració de l\'enquesta';
+$string['questionnairecloses'] = 'Tancament de l\'enquesta';
+$string['questionnaireopens'] = 'Obertura de l\'enquesta';
+$string['questionnairereport'] = 'Informe de l\'enquesta';
 $string['questionnum'] = 'Pregunta #';
 $string['questions'] = 'Preguntes';
 $string['questionsinsection'] = 'Preguntes en aquesta secció:';
@@ -389,10 +387,10 @@ $string['respondenteligiblestudents'] = 'només estudiants';
 $string['respondenteligibleteachers'] = 'només professors';
 $string['respondents'] = 'Persones enquestades';
 $string['respondenttype'] = 'Tipus de persona enquestada';
-$string['respondenttypeanonymous'] = 'anònim';
-$string['respondenttypefullname'] = 'nom complet';
 $string['respondenttype_help'] = 'Podeu visualitzar els noms complets dels usuaris amb cada resposta si marqueu l\'opció «nom complet».
 Podeu mantenir l\'anonimat de les respostes marcant l\'opció «anònim».';
+$string['respondenttypeanonymous'] = 'anònim';
+$string['respondenttypefullname'] = 'nom complet';
 $string['response'] = 'Resposta';
 $string['responsefieldlines'] = 'Mida del quadre d\'edició';
 $string['responseformat'] = 'Format de resposta';
@@ -425,12 +423,12 @@ $string['sectiontext'] = 'Etiqueta';
 $string['sectiontext_help'] = 'Això no és una pregunta sinó un text (curt) que es mostrarà per introduir una sèrie de preguntes.';
 $string['selecttheme'] = 'Seleccioneu un tema (CSS) per usar-lo amb aquesta enquesta.';
 $string['send'] = 'Envia';
+$string['send_message'] = 'Envia el missatge als usuaris seleccionats';
+$string['send_message_to'] = 'Envia un missatge a:';
 $string['sendemail'] = 'Envia un missatge de correu electrònic';
 $string['sendemail_help'] = 'Envia una còpia de cada tramesa a les adreces de correu electrònic especificades.
 Podeu escriure més d\'una adreça separant-les amb comes.
 Deixeu el camp en blanc si no voleu enviar còpies per correu electrònic.';
-$string['send_message'] = 'Envia el missatge als usuaris seleccionats';
-$string['send_message_to'] = 'Envia un missatge a:';
 $string['settings'] = 'Paràmetres';
 $string['settingssaved'] = 'S\'han desat els paràmetres';
 $string['show_nonrespondents'] = 'Els que no han respost';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'ar', branch 'MOODLE_36_STABLE'
+ * Strings for component 'block_community', language 'ar', version '3.8'.
  *
- * @package   block_community
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_community
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,14 +32,14 @@ $string['addcourse'] = 'بحث';
 $string['addedtoblock'] = 'تم أضافة رابط لهذا المقرر الدراسي في كتلة مجتمعك';
 $string['addtocommunityblock'] = 'احفط الربط لهذا المقرر الدراسي';
 $string['audience'] = 'صمم لـ';
-$string['audience_help'] = 'ما هو نوع المقرر الدراسي الذي تبحث عنه؟ مع العم أن جميع المقررات الدراسية التقليدية معدة للطلابة، من الممكن البحث في مجتمعات المعلمين أو مدراء مودل';
+$string['audience_help'] = 'ما هو نوع المقرر الدراسي الذي تبحث عنه؟ مع العم أن جميع المقررات الدراسية التقليدية معدة للطلاب، من الممكن البحث في مجتمعات المعلمين أو مدراء مودل';
 $string['blocks'] = 'كتل';
 $string['cannotselecttopsubject'] = 'لا يمكن اختيار مستوى أعلى للموضوع';
 $string['comments'] = 'تعليقات ({$a})';
 $string['contentinfo'] = 'الموضوع: {$a->subject} - المستفدون: {$a->audience} - المستوى التعليمي: {$a->educationallevel}';
 $string['continue'] = 'استمر';
 $string['contributors'] = '- المساهمون: {$a}';
-$string['coursedesc'] = 'وصف';
+$string['coursedesc'] = 'الوصف';
 $string['courselang'] = 'لغة';
 $string['coursename'] = 'اسم';
 $string['courses'] = 'مقررات دراسية';
@@ -77,6 +77,7 @@ $string['orderbynewest'] = 'الأحدث';
 $string['orderbypublisher'] = 'ناشر';
 $string['outcomes'] = 'مخرجات: {$a}';
 $string['pluginname'] = 'مستكشف المجتمعات';
+$string['privacy:metadata:block_community:coursedescription'] = 'وصف المساق المجتمعي المرتبط.';
 $string['removecommunitycourse'] = 'استبعد مقرر دراسي لمجتمع';
 $string['restorecourse'] = 'استرجع مقرر دراسي';
 $string['restorecourseinfo'] = 'استرج المقرر الدراسي';

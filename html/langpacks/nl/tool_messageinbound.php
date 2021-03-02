@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'nl', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,15 +43,15 @@ $string['handlerdisabled'] = 'De e-mailafhandelaar die je probeerde te bereiken 
 $string['incomingmailconfiguration'] = 'Configuratie voor inkomende e-mail';
 $string['incomingmailserversettings'] = 'Inkomend e-mail serverinstellingen';
 $string['incomingmailserversettings_desc'] = 'Moodle kan verbinden met juist geconfigureerde IMAP-servers. Je kunt de instellingen die je gebruikt om met je IMAP-server verbinding te maken hier instellen.';
-$string['invalidrecipientdescription'] = 'Het bericht  "{$a->subject}" kon niet geauthenticeerd worden omdat het verzonden is van een ander e-mailadres dat wat in je gebruikersprofiel staat. Om dit bericht te authenticeren, moet je het beantwoorden.';
-$string['invalidrecipientdescriptionhtml'] = 'Het bericht  "{$a->subject}" kon niet geauthenticeerd worden omdat het verzonden is van een ander e-mailadres dat wat in je gebruikersprofiel staat. Om dit bericht te authenticeren, moet je het beantwoorden.';
-$string['invalidrecipientfinal'] = 'Het bericht  "{$a->subject}" kon niet geauthenticeerd worden. Controleer of je het verstuurt van hetzelfde e-mailadres als wat in je gebruikersprofiel staat.';
 $string['invalid_recipient_handler'] = 'Als een geldig bericht werd ontvangen, maar de afzender kon niet geauthenticeerd worden, dan wordt het bericht op de e-mailserver bewaard en wordt de gebruiker gecontacteerd via het e-mailadres in het gebruikersprofiel. De gebruiker krijgt dan de kans om te antwoorden op het bericht om zo de authenticiteit van het originele bericht te bevestigen.
 
 Deze afhandelaar verwerkt zo\'n antwoorden.
 
 Het is niet mogelijk om de afzenderverificatie van de ze afhandelaar uit te schakelen omdat de gebruiker kan antwoorden van een fout e-mailadres als de configuratie van hun e-mailclient fout is.';
 $string['invalid_recipient_handler_name'] = 'Afhandelaar ongeldige ontvangers';
+$string['invalidrecipientdescription'] = 'Het bericht  "{$a->subject}" kon niet geauthenticeerd worden omdat het verzonden is van een ander e-mailadres dat wat in je gebruikersprofiel staat. Om dit bericht te authenticeren, moet je het beantwoorden.';
+$string['invalidrecipientdescriptionhtml'] = 'Het bericht  "{$a->subject}" kon niet geauthenticeerd worden omdat het verzonden is van een ander e-mailadres dat wat in je gebruikersprofiel staat. Om dit bericht te authenticeren, moet je het beantwoorden.';
+$string['invalidrecipientfinal'] = 'Het bericht  "{$a->subject}" kon niet geauthenticeerd worden. Controleer of je het verstuurt van hetzelfde e-mailadres als wat in je gebruikersprofiel staat.';
 $string['mailbox'] = 'Mailbox naam';
 $string['mailboxconfiguration'] = 'Mailbox configuratie';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';

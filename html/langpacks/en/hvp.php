@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hvp', language 'en', version '3.8'.
  *
- * @package   hvp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hvp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,8 +64,8 @@ $string['changelog'] = 'Changelog';
 $string['changeplaceholder'] = 'Photo cropped, text changed, etc.';
 $string['close'] = 'Close';
 $string['completionpass'] = 'Require passing grade';
-$string['completionpassdesc'] = 'Student must achieve a passing grade to complete this activity';
 $string['completionpass_help'] = 'If enabled, this activity is considered complete when the student receives a pass grade (as specified in the Grade section of the H5P activity settings) or higher.';
+$string['completionpassdesc'] = 'Student must achieve a passing grade to complete this activity';
 $string['confirmdialogbody'] = 'Please confirm that you wish to proceed. This action is not reversible.';
 $string['confirmdialogheader'] = 'Confirm action';
 $string['confirmlabel'] = 'Confirm';
@@ -230,12 +230,12 @@ $string['licenseCC20'] = '2.0 Generic';
 $string['licenseCC25'] = '2.5 Generic';
 $string['licenseCC30'] = '3.0 Unported';
 $string['licenseCC40'] = '4.0 International';
-$string['licensee'] = 'Licensee';
-$string['licenseextras'] = 'License Extras';
 $string['licenseGPL'] = 'General Public License';
 $string['licenseV1'] = 'Version 1';
 $string['licenseV2'] = 'Version 2';
 $string['licenseV3'] = 'Version 3';
+$string['licensee'] = 'Licensee';
+$string['licenseextras'] = 'License Extras';
 $string['licenseversion'] = 'License Version';
 $string['loadingdata'] = 'Loading data.';
 $string['lookforupdates'] = 'Look for H5P updates';

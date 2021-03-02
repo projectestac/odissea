@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'gl', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,11 +49,11 @@ $string['downloadablefilename'] = 'comentarios.pdf';
 $string['downloadfeedback'] = 'Descargar PDF de comentarios';
 $string['draftchangessaved'] = 'Gardadas as versións preliminares de comentarios';
 $string['drag'] = 'Arrastre';
-$string['editpdf'] = 'Anotar PDF';
+$string['editpdf'] = 'Facer anotacións en PDF';
 $string['editpdf_help'] = 'Anote as entregas dos alumnos directamente no navegador e produza un PDF descargábel editado.';
-$string['enabled'] = 'Anotar PDF';
+$string['enabled'] = 'Facer anotacións en PDF';
 $string['enabled_help'] = 'Se está activado, o profesor poderá crear ficheiros PDF con anotacións ao cualificar as tarefas. Isto permite que o profesor engada comentarios, debuxos e selos directamente sobre o traballo dos alumnos. A anotación faise no navegador e non se require ningún software adicional.';
-$string['errorgenerateimage'] = 'Produciuse un erro ao xerar a imaxe con ghostscript, información para depuración: {$a}';
+$string['errorgenerateimage'] = 'Produciuse un erro ao xerar a imaxe con «ghostscript», información para depuración: {$a}';
 $string['errorpdfpage'] = 'Produciuse un erro ao xerar esta páxina.';
 $string['expcolcomments'] = 'Expandir/contraer todos os comentarios';
 $string['filter'] = 'Filtrar comentarios...';
@@ -61,7 +61,7 @@ $string['generatefeedback'] = 'Xerar PDF de comentarios';
 $string['generatingpdf'] = 'Xerando o PDF...';
 $string['gotopage'] = 'Ir á páxina';
 $string['green'] = 'Verde';
-$string['gsimage'] = 'Imaxe para proba de ghostscript';
+$string['gsimage'] = 'Imaxe para proba de «ghostscript»';
 $string['highlight'] = 'Resalte';
 $string['jsrequired'] = 'Requírese JavaScript para facer anotacións nun PDF. Active JavaScript no seu navegador para usar esta función.';
 $string['launcheditor'] = 'Iniciar o editor de PDF...';
@@ -96,13 +96,13 @@ $string['stamp'] = 'Selo';
 $string['stamppicker'] = 'Selector de selos';
 $string['stamps'] = 'Selos';
 $string['stampsdesc'] = 'Os selos deben ser ficheiros de imaxe (tamaño recomendado: 40x40). Estas imaxes poden usarse coa ferramenta de selo para anotacións no PDF.';
-$string['test_doesnotexist'] = 'A ruta a ghostscript apunta a un ficheiro inexistente';
-$string['test_empty'] = 'A ruta a ghostscript está baleira. Introduza a ruta correcta';
-$string['testgs'] = 'Probar a ruta a ghostscript';
-$string['test_isdir'] = 'A ruta a ghostscript apunta a un cartafol, inclúa o programa ghostscript na ruta que especifique';
+$string['test_doesnotexist'] = 'A ruta a «ghostscript» apunta a un ficheiro inexistente';
+$string['test_empty'] = 'A ruta a «ghostscript» está baleira. Introduza a ruta correcta';
+$string['test_isdir'] = 'A ruta a «ghostscript» apunta a un cartafol, inclúa o programa «ghostscript» na ruta que especifique';
 $string['test_notestfile'] = 'Falta o PDF de proba';
-$string['test_notexecutable'] = 'O ghostscript apunta a un ficheiro que non é executable';
-$string['test_ok'] = 'A ruta a ghostscript semella ser correcta. Comprobe que pode ver a mensaxe na seguinte imaxe';
+$string['test_notexecutable'] = 'O «ghostscript» apunta a un ficheiro que non é executábel';
+$string['test_ok'] = 'A ruta a «ghostscript» semella ser correcta. Comprobe que pode ver a mensaxe na seguinte imaxe';
+$string['testgs'] = 'Probar a ruta a «ghostscript»';
 $string['tool'] = 'Ferramenta';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Ver PDF con anotacións...';

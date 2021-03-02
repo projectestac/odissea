@@ -37,6 +37,13 @@ defined('MOODLE_INTERNAL') || die;
 
 class core_renderer extends \core_renderer {
 
+    public function favicon() {
+        global $CFG;
+        $type = get_xtec_type('_');
+        // TODO: Use theme/image.php instead of a direct path!
+        return $CFG->wwwroot.'/theme/'.$this->page->theme->name.'/pix/favicon'.$type.'.ico';        
+    }
+
     public function social_icons() {
         $cache = cache::make('core', 'htmlpurifier');
         if ($text = $cache->get('social_icons')) {
@@ -107,11 +114,11 @@ class core_renderer extends \core_renderer {
         $currlang = current_language();
         $langs    = get_string_manager()->get_list_of_translations();
 
-        if (sizeof($langs) > 5) {
-            if (count($langs) < 2) {
-                return '';
-            }
+        if (count($langs) < 2) {
+            return '';
+        }
 
+        if (sizeof($langs) > 5) {
             $s        = new single_select($this->page->url, 'lang', $langs, $currlang, null);
             $s->label = get_accesshide($strlang);
             $s->class = 'langmenu';
@@ -143,11 +150,24 @@ class core_renderer extends \core_renderer {
 
     public function footer_logos() {
         global $CFG;
+        $xtec_type = get_xtec_type();
         $logos = '<a href="http://ensenyament.gencat.cat/ca/inici/" class="brand ensenyament"><img src="'.$this->image_url('departament', 'theme').'" alt="Departament d\'Educació" title="" /></a>';
         $logos .= '<a href="http://xtec.gencat.cat" class="brand xtec"><img src="'.$this->image_url('xtec', 'theme').'" alt="Xarxa Telemàtica Educativa de Catalunya" title="" /></a>';
-        if (isset($CFG->isagora) && $CFG->isagora) {
-            $href = (isset($CFG->iseoi) && $CFG->iseoi) ? 'https://agora-eoi.xtec.cat/' : 'https://educaciodigital.cat/';
-            $logos .= '<a href="'.$href.'" target="_blank" class="agora_footer"><img src="'.$this->image_url('logo_main', 'theme').'" alt="Eix" title="" /></a>';
+        if ($xtec_type == 'alexandria') {
+            $href = 'https://alexandria.xtec.cat/';
+            $logos .= '<a href="'.$href.'" target="_blank" class="agora_footer"><img src="'.$this->image_url('logo_main_alexandria', 'theme').'" alt="Alexandria" title="" /></a>';
+        }
+        elseif ($xtec_type == 'odissea') {
+            $href = 'https://odissea.xtec.cat/';
+            $logos .= '<a href="'.$href.'" target="_blank" class="agora_footer"><img src="'.$this->image_url('logo_main_odissea', 'theme').'" alt="Odissea" title="" /></a>';
+        }
+        elseif ($xtec_type == 'eoi') {
+            $href = 'https://agora-eoi.xtec.cat/';
+            $logos .= '<a href="'.$href.'" target="_blank" class="agora_footer"><img src="'.$this->image_url('logo_main_eoi', 'theme').'" alt="Àgora-EOI" title="" /></a>';
+        }
+        elseif ($xtec_type == 'eix') {
+            $href = 'https://educaciodigital.cat/';
+            $logos .= '<a href="'.$href.'" target="_blank" class="agora_footer"><img src="'.$this->image_url('logo_main_eix', 'theme').'" alt="Eix" title="" /></a>';
         }
         $logos .= '<a href="https://moodle.org" target="_blank" class="moodle_footer" title="Moodle"><img src="'.$this->image_url('moodlelogo').'" alt="'.get_string('moodlelogo').'"/></a>';
 
@@ -206,6 +226,7 @@ class core_renderer extends \core_renderer {
         $header->headeractions = $PAGE->get_header_actions();
         $header->isloggedin = isloggedin();
         $header->gradesbutton = $this->course_grade_button();
+        $header->xtectype = get_xtec_type('');
 
         $blockshtml = $this->blocks('side-pre');
         $header->hasblocks = strpos($blockshtml, 'data-block=') !== false;
@@ -250,8 +271,6 @@ class core_renderer extends \core_renderer {
      * @return string
      */
     protected function render_custom_menu(custom_menu $menu) {
-        global $CFG;
-
         if (!$menu->has_children()) {
             return '';
         }

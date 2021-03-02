@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_aiken', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qformat_aiken', language 'ru', version '3.8'.
  *
- * @package   qformat_aiken
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qformat_aiken
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,3 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Формат Aiken';
 $string['pluginname_help'] = 'Это - простой формат для импортирования вопросов множественного выбора из текстового файла.';
 $string['privacy:metadata'] = 'Плагин «Формат Aiken» не хранит никаких персональных данных.';
+$string['questionmissinganswers'] = 'Вопрос должен иметь не менее 2 ответов в строке {$a}';
+$string['questionnotcomplete'] = 'Не заполнен вопрос  в строке {$a} до начала следующего вопроса';
+$string['questionnotstarted'] = 'Не начат вопрос в строке {$a}';

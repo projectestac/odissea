@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'el', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,23 +57,22 @@ $string['uploadpicture_cannotsave'] = 'Αδυναμία αποθήκευσης �
 $string['uploadpicture_cannotunzip'] = 'Αδυναμία αποσυμπίεσης αρχείου εικόνας.';
 $string['uploadpicture_invalidfilename'] = 'Το αρχείο εικόνας {$a} περιέχει μη έγκυρους χαρακτήρες στο όνομά του. Παράλειψη αρχείου.';
 $string['uploadpicture_overwrite'] = 'Αντικατάσταση υπαρχουσών εικόνων χρηστών;';
-$string['uploadpictures'] = 'Ανέβασμα εικόνων χρηστών';
-$string['uploadpictures_help'] = 'Εικόνες χρηστών μπορούν να ανεβούν ως ένα zip συμπιεσμένο αρχείο με εικόνες. Τα αρχεία εικόνων πρέπει να ονομάζονται επιλεγμένος-χρήστης-ιδιότητα.επέκταση, για παράδειγμα χρήστης1234.jpg για ένα χρήστη με όνομα χρήστη χρήστης1234.';
 $string['uploadpicture_userfield'] = 'Ιδιότητα χρήστη για ταίριασμα εικόνων:';
 $string['uploadpicture_usernotfound'] = 'Ο χρήστης με «{$a->userfield}» τιμή του «{$a->uservalue}» δεν υπάρχει. Παράλειψη χρήστη.';
 $string['uploadpicture_userskipped'] = 'Παράλειψη χρήστη {$a} (ο χρήστης έχει εικόνα ήδη).';
 $string['uploadpicture_userupdated'] = 'Ανανέωση εικόνας για το χρήστη {$a}.';
+$string['uploadpictures'] = 'Ανέβασμα εικόνων χρηστών';
+$string['uploadpictures_help'] = 'Εικόνες χρηστών μπορούν να ανεβούν ως ένα zip συμπιεσμένο αρχείο με εικόνες. Τα αρχεία εικόνων πρέπει να ονομάζονται επιλεγμένος-χρήστης-ιδιότητα.επέκταση, για παράδειγμα χρήστης1234.jpg για ένα χρήστη με όνομα χρήστη χρήστης1234.';
+$string['uploaduser:uploaduserpictures'] = 'Ανέβασμα εικόνων χρηστών';
 $string['uploadusers'] = 'Εισαγωγή χρηστών';
-$string['uploadusers_help'] = 'Οι χρήστες μπορεί να ανεβάζονται (και προαιρετικά να εγγράφονται σε μαθήματα) μέσω αρχείου κειμένου. Ο μορφότυπος του αρχείου πρέπει να είναι ως εξής:
-
-* Κάθε γραμμή του αρχείου περιέχει μία εγγραφή
-* Κάθε εγγραφή είναι μια σειρά από δεδομένα χωρισμένα με κόμμα (ή άλλο διαχωριστικό)
-* Η πρώτη εγγραφή περιέχει μια λίστα με ονόματα πεδίων που ορίζουν τον μορφότυπο του υπόλοιπου αρχείου
-* Απαιτούμενα πεδία είναι τα username, password, firstname, lastname, email (για όνομα χρήστη, κωδικό πρόσβασης, όνομα, επώνυμο, διεύθυνση ηλε.ταχυδρομείου, αντίστοιχα)';
+$string['uploadusers_help'] = 'Οι χρήστες μπορεί να ανεβαίνουν (uploaded) (και προαιρετικά να εγγράφονται σε μαθήματα) μέσω αρχείου κειμένου. Ο μορφότυπος του αρχείου πρέπει να είναι ως εξής:<br />
+* Κάθε γραμμή του αρχείου περιέχει μία εγγραφή<br />
+* Κάθε εγγραφή είναι μια σειρά από δεδομένα χωρισμένα με κόμμα (ή άλλο διαχωριστικό)<br />
+* Η πρώτη εγγραφή περιέχει μια λίστα με ονόματα πεδίων που ορίζουν τον μορφότυπο του υπόλοιπου αρχείου<br />
+* Απαιτούμενα πεδία είναι τα username, password, firstname, lastname, email (για όνομα χρήστη, κωδικό πρόσβασης, όνομα, επώνυμο, ηλ. διεύθυνση, αντίστοιχα),,';
 $string['uploadusers_link'] = 'διαχειριστής/εργαλείο/ανέβασμαχρήστη/δείκτης';
 $string['uploaduserspreview'] = 'Προεπισκόπηση ανεβάσματος χρηστών';
 $string['uploadusersresult'] = 'Ανέβασμα αποτελεσμάτων χρηστών';
-$string['uploaduser:uploaduserpictures'] = 'Ανέβασμα εικόνων χρηστών';
 $string['useraccountupdated'] = 'Ο χρήστης ανανεώθηκε';
 $string['useraccountuptodate'] = 'Χρήστης ενημερωμένος';
 $string['userdeleted'] = 'Ο χρήστης διαγράφηκε';

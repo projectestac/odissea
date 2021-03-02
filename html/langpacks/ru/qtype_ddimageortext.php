@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'ru', version '3.8'.
  *
- * @package   qtype_ddimageortext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddimageortext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmoredropzones'] = 'Добавить зоны - {no}';
 $string['addmoreimages'] = 'Добавить перетаскиваемые элементы -  {no}';
 $string['answer'] = 'Ответ';
-$string['bgimage'] = 'Фоновое изображения';
+$string['bgimage'] = 'Фоновое изображение';
 $string['blank'] = 'пусто';
 $string['correctansweris'] = 'Правильный ответ: {$a}';
 $string['deletedchoice'] = '[Удаленный вариант]';
@@ -58,10 +58,10 @@ $string['label'] = 'Текст';
 $string['nolabel'] = 'Нет метки текста';
 $string['pleasedraganimagetoeachdropregion'] = 'Ваш ответ не полный. Пожалуйста, перетащите каждый элемент в соответствующую зону.';
 $string['pluginname'] = 'Перетащить на изображение';
-$string['pluginnameadding'] = 'Добавить вопрос типа «Перетащить на изображение»';
-$string['pluginnameediting'] = 'Редактировать вопрос типа «Перетащить на изображение»';
 $string['pluginname_help'] = 'Выберите файл с фоновым изображением, выберите перетаскиваемое изображение или текст и задайте зоны, в которые необходимо переместить элементы.';
 $string['pluginname_link'] = 'question/type/ddimageortext';
+$string['pluginnameadding'] = 'Добавить вопрос типа «Перетащить на изображение»';
+$string['pluginnameediting'] = 'Редактировать вопрос типа «Перетащить на изображение»';
 $string['pluginnamesummary'] = 'Изображение или текст необходимо перетащить в зону на фоновом изображении.';
 $string['previewareaheader'] = 'Предварительный просмотр';
 $string['previewareamessage'] = 'Выберите файл с фоновым изображением, выберите  перетаскиваемое изображение или введите текст, который нужно будет перетаскивать.

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grades', language 'zh_cn', version '3.8'.
  *
- * @package   grades
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grades
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,18 +57,6 @@ $string['aggregatesum'] = '加权总分';
 $string['aggregateweightedmean'] = '加权平均分';
 $string['aggregateweightedmean2'] = '简单加权平均分';
 $string['aggregation'] = '汇总';
-$string['aggregationcoef'] = '汇总系数';
-$string['aggregationcoefextra'] = '加分';
-$string['aggregationcoefextra_help'] = '当使用“加权总分”或“简单加权平均分”为汇总算法且“加分”复选框被勾选时，成绩项的最高分不会添加到类别的最高分。这将导致有可能在类别中获得最高分而在所有成绩项中均未达到最高分。如果站点管理员允许成绩超过最高分，则可能存在成绩超过最高分。
-
-当使用“平均分（含加分）”汇总算法且加分值设为大于0时，此加分值会被当作一个因数与成绩相乘，然后再被加入总分，以计算平均分。';
-$string['aggregationcoefextrasum'] = '加分';
-$string['aggregationcoefextrasumabbr'] = '+';
-$string['aggregationcoefextrasum_help'] = '如果“加分”复选框被勾选，此成绩项的最高分不会添加到类别的最高分，这将导致有可能在类别中获得最高分（或者超过最高分，如果站点管理员允许）而在所有成绩项中均未达到最高分。';
-$string['aggregationcoefextraweight'] = '加分权重';
-$string['aggregationcoefextraweight_help'] = '如果加分权重被设为一个大于0的数值，那么该成绩在汇总时会被当作加分。此数值会被当作一个因数与成绩相乘，然后再被加入总分，以计算平均分。';
-$string['aggregationcoefweight'] = '成绩项权重';
-$string['aggregationcoefweight_help'] = '在类别汇总中使用成绩项权重，以影响该成绩项相对于同一类别中其他成绩项的重要性。';
 $string['aggregation_help'] = '汇总算法确定一个类别中的成绩如何合并计算。例如：
 
 * 平均分 - 所有分数的总和除以分数个数
@@ -77,6 +65,18 @@ $string['aggregation_help'] = '汇总算法确定一个类别中的成绩如何�
 * 最高分
 * 众数 - 出现频率最高的分数
 * 加权总分 - 所有按权重调整的分数的总和';
+$string['aggregationcoef'] = '汇总系数';
+$string['aggregationcoefextra'] = '加分';
+$string['aggregationcoefextra_help'] = '当使用“加权总分”或“简单加权平均分”为汇总算法且“加分”复选框被勾选时，成绩项的最高分不会添加到类别的最高分。这将导致有可能在类别中获得最高分而在所有成绩项中均未达到最高分。如果站点管理员允许成绩超过最高分，则可能存在成绩超过最高分。
+
+当使用“平均分（含加分）”汇总算法且加分值设为大于0时，此加分值会被当作一个因数与成绩相乘，然后再被加入总分，以计算平均分。';
+$string['aggregationcoefextrasum'] = '加分';
+$string['aggregationcoefextrasum_help'] = '如果“加分”复选框被勾选，此成绩项的最高分不会添加到类别的最高分，这将导致有可能在类别中获得最高分（或者超过最高分，如果站点管理员允许）而在所有成绩项中均未达到最高分。';
+$string['aggregationcoefextrasumabbr'] = '+';
+$string['aggregationcoefextraweight'] = '加分权重';
+$string['aggregationcoefextraweight_help'] = '如果加分权重被设为一个大于0的数值，那么该成绩在汇总时会被当作加分。此数值会被当作一个因数与成绩相乘，然后再被加入总分，以计算平均分。';
+$string['aggregationcoefweight'] = '成绩项权重';
+$string['aggregationcoefweight_help'] = '在类别汇总中使用成绩项权重，以影响该成绩项相对于同一类别中其他成绩项的重要性。';
 $string['aggregationhintdropped'] = '（去掉）';
 $string['aggregationhintexcluded'] = '（排除）';
 $string['aggregationhintextra'] = '（加分）';
@@ -104,9 +104,9 @@ $string['bonuspoints'] = '奖励分';
 $string['bulkcheckboxes'] = '批量复选框';
 $string['calculatedgrade'] = '计算成绩';
 $string['calculation'] = '计算方法';
+$string['calculation_help'] = '成绩计算器是一个用来确定成绩的公式。该公式应该以等号（=）开始，可以使用常见的数学运算，比如max、min和sum。如果需要，也可以包含其它成绩项。只需在公式中输入它们的ID号，并用两个方括号括起来。';
 $string['calculationadd'] = '添加计算方法';
 $string['calculationedit'] = '编辑计算方法';
-$string['calculation_help'] = '成绩计算器是一个用来确定成绩的公式。该公式应该以等号（=）开始，可以使用常见的数学运算，比如max、min和sum。如果需要，也可以包含其它成绩项。只需在公式中输入它们的ID号，并用两个方括号括起来。';
 $string['calculationsaved'] = '计算方法已保存';
 $string['calculationview'] = '查看计算方法';
 $string['cannotaccessgroup'] = '无法访问选定小组的成绩，抱歉。';
@@ -159,9 +159,9 @@ $string['displaypoints'] = '显示分数';
 $string['displayweighted'] = '显示加权成绩';
 $string['dropdown'] = '下拉菜单';
 $string['droplow'] = '去掉最低分';
+$string['droplow_help'] = '此设置允许从汇总中排除指定数量的最低分。';
 $string['droplowestvalue'] = '设置去掉最低分值';
 $string['droplowestvalues'] = '去掉{$a}个最低分值';
-$string['droplow_help'] = '此设置允许从汇总中排除指定数量的最低分。';
 $string['dropped'] = '去掉';
 $string['dropxlowest'] = '去掉X个最低分';
 $string['dropxlowestwarning'] = '注意：如果您使用“去掉X个最低分”，则评分将假定类别中的所有成绩项都具有相同的分值。 如果分值不同，结果将不可预测';
@@ -227,11 +227,11 @@ $string['externalurl_desc'] = '如使用外部成绩册，必须在此处指定�
 $string['extracreditvalue'] = '{$a}的加分值';
 $string['extracreditwarning'] = '注意：将一个类别的所有成绩项设置为加分将有效地从成绩计算中移除它们。因为将没有总分';
 $string['feedback'] = '反馈';
+$string['feedback_help'] = '此框允许添加有关成绩的任何评论。';
 $string['feedbackadd'] = '添加反馈';
 $string['feedbackedit'] = '编辑反馈';
 $string['feedbackfiles'] = '反馈文件';
 $string['feedbackforgradeitems'] = '给{$a}反馈';
-$string['feedback_help'] = '此框允许添加有关成绩的任何评论。';
 $string['feedbackhistoryfiles'] = '反馈历史记录文件';
 $string['feedbacks'] = '反馈';
 $string['feedbacksaved'] = '反馈已保存';
@@ -250,6 +250,7 @@ $string['full'] = '完整';
 $string['fullmode'] = '切换至完整视图';
 $string['generalsettings'] = '常规设置';
 $string['grade'] = '成绩';
+$string['grade_help'] = '对学生的学习给予的成绩。';
 $string['gradeadministration'] = '成绩管理';
 $string['gradealreadyupdated'] = '{$a}成绩未被导入，因为导入文件中的成绩比评分人报表中的更旧。如仍要继续导入成绩，请使用强制导入选项。';
 $string['gradeanalysis'] = '成绩分析';
@@ -291,7 +292,6 @@ $string['gradeexportuserprofilefields_desc'] = '在成绩导出中包含这些�
 $string['gradeforstudent'] = '{$a->student}<br />{$a->item}{$a->feedback}';
 $string['gradegrademinmax'] = '初始的最低和最高分';
 $string['gradehelp'] = '成绩帮助';
-$string['grade_help'] = '对学生的学习给予的成绩。';
 $string['gradehistorylifetime'] = '成绩历史记录生存期';
 $string['gradehistorylifetime_help'] = '这指定您要保留与成绩相关的表的更改历史记录的时间长度。 建议保持尽可能长的时间。 如果遇到性能问题或数据库空间有限，请尝试设置较低的值。';
 $string['gradeimport'] = '成绩导入';
@@ -326,8 +326,8 @@ $string['gradeoutcomeitem'] = '成绩成果项';
 $string['gradeoutcomes'] = '成果';
 $string['gradeoutcomescourses'] = '课程成果';
 $string['gradepass'] = '及格成绩';
-$string['gradepassgreaterthangrade'] = '及格成绩不能超过可能的最高成绩{$a}';
 $string['gradepass_help'] = '此设置确定及格成绩的最低分。 该值用于计算活动和课程的完成情况。在成绩册中，及格成绩以绿色突出显示，不及格成绩以红色突出显示。';
+$string['gradepassgreaterthangrade'] = '及格成绩不能超过可能的最高成绩{$a}';
 $string['gradepointdefault'] = '默认分数';
 $string['gradepointdefault_help'] = '此设置确定成绩项中可用分数的默认值。';
 $string['gradepointdefault_validateerror'] = '此设置必须是1到最高分之间的整数。';
@@ -363,9 +363,9 @@ $string['gradeweighthelp'] = '成绩权重帮助';
 $string['gradingmodulename'] = '评分 ({$a})';
 $string['groupavg'] = '小组平均分';
 $string['hidden'] = '隐藏';
+$string['hidden_help'] = '如果勾选，则对学生隐藏成绩。 如果需要，可以设置一个隐藏的截止日期，以便在评分完成后公布成绩。';
 $string['hiddenasdate'] = '显示隐藏成绩的提交日期';
 $string['hiddenasdate_help'] = '如果用户不能看到隐藏的成绩，那么显示提交时间，而不是“-”。';
-$string['hidden_help'] = '如果勾选，则对学生隐藏成绩。 如果需要，可以设置一个隐藏的截止日期，以便在评分完成后公布成绩。';
 $string['hiddenuntil'] = '隐藏到';
 $string['hiddenuntildate'] = '隐藏到: {$a}';
 $string['hideadvanced'] = '隐藏高级功能';
@@ -439,8 +439,8 @@ $string['itemnamehelp'] = '此成绩项的名称，由模块推入。';
 $string['items'] = '成绩项';
 $string['itemsedit'] = '编辑成绩项';
 $string['keephigh'] = '保留最高分';
-$string['keephighestvalues'] = '保留 {$a} 个最高分';
 $string['keephigh_help'] = '如果设置，此选项将只保留X个最高分，X是该选项的选定值。';
+$string['keephighestvalues'] = '保留 {$a} 个最高分';
 $string['keymanager'] = '密钥管理器';
 $string['lessthanmin'] = '为 {$a->username} 的 {$a->itemname} 输入的分数小于允许的最低分';
 $string['letter'] = '分数段';
@@ -487,6 +487,7 @@ $string['missingitemtypeoreid'] = '数组键(itemtype或eid)在grade_edit_tree_c
 $string['missingscale'] = '必须选择量表';
 $string['mode'] = '模式';
 $string['modgrade'] = '成绩';
+$string['modgrade_help'] = '选择该活动使用的评分类型。如果选择“量表”，那么您可以从“量表”下拉菜单中选择量表。如果使用“分数”评分，您可以输入这个活动可用的最高分。';
 $string['modgradecantchangegradetype'] = '您不能更改类型，因为此项的分数已经存在。';
 $string['modgradecantchangegradetypemsg'] = '某些分数已经授予，所以不能更改成绩类型。如果您想更改最高分，您必须首先选择是否重新调整现有分数。';
 $string['modgradecantchangegradetyporscalemsg'] = '某些分数已经授予，所以该成绩类型和量表不能更改。';
@@ -503,7 +504,6 @@ $string['modgradecategoryrescalegrades_help'] = '更改成绩册项目的最高�
 $string['modgradedonotmodify'] = '不修改现有分数';
 $string['modgradeerrorbadpoint'] = '无效的分数值。它必须是1和{$a}之间的整数';
 $string['modgradeerrorbadscale'] = '选择的量表无效。请确保您从下面的选项中选择一个量表。';
-$string['modgrade_help'] = '选择该活动使用的评分类型。如果选择“量表”，那么您可以从“量表”下拉菜单中选择量表。如果使用“分数”评分，您可以输入这个活动可用的最高分。';
 $string['modgrademaxgrade'] = '最高分';
 $string['modgraderescalegrades'] = '重新调整已有的分数';
 $string['modgraderescalegrades_help'] = '更改成绩册项目的最高分时，您需要指定是否会导致现有百分比成绩也发生变化。
@@ -564,6 +564,7 @@ $string['operations'] = '操作';
 $string['options'] = '选项';
 $string['others'] = '其它';
 $string['outcome'] = '成果';
+$string['outcome_help'] = '此设置确定此成绩项在成绩册中将用哪个成果表示。';
 $string['outcomeassigntocourse'] = '向此课程分配另一个成果';
 $string['outcomecategory'] = '在类别中创建成果';
 $string['outcomecategorynew'] = '新类别';
@@ -571,7 +572,6 @@ $string['outcomeconfirmdelete'] = '您确定要删除成果"{$a}"吗?';
 $string['outcomecreate'] = '添加新成果';
 $string['outcomedelete'] = '删除成果';
 $string['outcomefullname'] = '全名';
-$string['outcome_help'] = '此设置确定此成绩项在成绩册中将用哪个成果表示。';
 $string['outcomeitem'] = '成果项';
 $string['outcomeitemsedit'] = '编辑成果项';
 $string['outcomereport'] = '成果报表';
@@ -638,22 +638,22 @@ $string['privacy:metadata:grades:aggregationstatus'] = '汇总状态';
 $string['privacy:metadata:grades:aggregationweight'] = '汇总权重';
 $string['privacy:metadata:grades:feedback'] = '反馈';
 $string['privacy:metadata:grades:finalgrade'] = '成绩';
-$string['privacy:metadata:gradeshistory'] = '以前成绩的记录';
 $string['privacy:metadata:grades:information'] = '关于成绩的附加信息';
 $string['privacy:metadata:grades:timemodified'] = '最后修改成绩的时间';
 $string['privacy:metadata:grades:userid'] = '该成绩的用户的 ID';
 $string['privacy:metadata:grades:usermodified'] = '最后修改记录的用户的ID';
+$string['privacy:metadata:gradeshistory'] = '以前成绩的记录';
 $string['privacy:metadata:history:loggeduser'] = '版本控制发生时登录的用户的ID';
 $string['privacy:metadata:history:timemodified'] = '发生成绩版本控制的时间';
 $string['privacy:metadata:itemshistory'] = '成绩项以前版本的记录';
 $string['privacy:metadata:outcomes'] = '成果记录';
-$string['privacy:metadata:outcomeshistory'] = '以前版本成果的记录';
 $string['privacy:metadata:outcomes:timemodified'] = '记录被修改的时间';
 $string['privacy:metadata:outcomes:usermodified'] = '最后修改记录的用户';
+$string['privacy:metadata:outcomeshistory'] = '以前版本成果的记录';
 $string['privacy:metadata:scale'] = '量表的记录';
-$string['privacy:metadata:scalehistory'] = '以前版本量表的记录';
 $string['privacy:metadata:scale:timemodified'] = '记录最后一次修改的时间';
 $string['privacy:metadata:scale:userid'] = '最后修改记录的用户';
+$string['privacy:metadata:scalehistory'] = '以前版本量表的记录';
 $string['privacy:path:relatedtome'] = '与我有关';
 $string['privacy:request:historyactiondelete'] = '删除';
 $string['privacy:request:historyactioninsert'] = '插入';
@@ -849,12 +849,12 @@ $string['verbosescales_help'] = '详细量表使用词语而不是数字。 如�
 $string['viewbygroup'] = '小组';
 $string['viewgrades'] = '查看成绩';
 $string['weight'] = '权重';
+$string['weight_help'] = '用于确定类别或课程中多个成绩项的相对值的值。';
 $string['weightcourse'] = '对课程使用加权成绩';
 $string['weightedascending'] = '按加权百分比升序排序';
 $string['weighteddescending'] = '按加权百分比降序排序';
 $string['weightedpct'] = '加权 %';
 $string['weightedpctcontribution'] = '加权 % 贡献';
-$string['weight_help'] = '用于确定类别或课程中多个成绩项的相对值的值。';
 $string['weightofa'] = '{$a}权重';
 $string['weightorextracredit'] = '权重或加分';
 $string['weightoverride'] = '权重调整';

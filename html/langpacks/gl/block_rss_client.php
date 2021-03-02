@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_rss_client', language 'gl', version '3.8'.
  *
- * @package   block_rss_client
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_rss_client
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,20 +28,20 @@ defined('MOODLE_INTERNAL') || die();
 $string['addfeed'] = 'Engadir un URL de fontes de noticias:';
 $string['addheadlineblock'] = 'Engadir un bloque de cabeceira RSS';
 $string['addnew'] = 'Engadir novo';
-$string['addnewfeed'] = 'Engadir nha nova fonte de novas';
+$string['addnewfeed'] = 'Engadir unha nova fonte de novas';
 $string['cannotmakemodification'] = 'Non se lle permite facer modificación a está fonte RSS neste momento.';
-$string['choosefeedlabel'] = 'Escolla as fontes que desexa que estean dispoñibles neste bloque:';
+$string['choosefeedlabel'] = 'Escolla as fontes que desexa que estean dispoñíbeis neste bloque:';
 $string['clientchannellink'] = 'Sitio de orixe...';
-$string['clientnumentries'] = 'Número de entradas por defecto para mostrar por fonte.';
-$string['clientshowchannellinklabel'] = 'Deberá mostrarse unha ligazón para o sitio orixinal (ligazón do canal)? (Lembre que se non é fornecida unha ligazón de fonte de noticias non se mostrará ningunha ligazón):';
-$string['clientshowimagelabel'] = 'Mostrar a imaxe do canal se está dispoñible:';
+$string['clientnumentries'] = 'Número de entradas predeterminadas para amosar por fonte.';
+$string['clientshowchannellinklabel'] = 'Deberá amosarse unha ligazón para o sitio orixinal (ligazón da canle)? (Lembre que se non é fornecida unha ligazón de fonte de noticias non se amosará ningunha ligazón):';
+$string['clientshowimagelabel'] = 'Amosar a imaxe da canle se está dispoñíbel:';
 $string['configblock'] = 'Configurar este bloque';
-$string['couldnotfindfeed'] = 'Non se pode encontrar unha fonte con id';
+$string['couldnotfindfeed'] = 'Non é posíbel atopar unha fonte con id';
 $string['couldnotfindloadrssfeed'] = 'Non é posíbel atopar ou cargar a fonte RSS.';
 $string['customtitlelabel'] = 'Título personalizado (Deixe en branco se desexa utilizar un título fornecido pola fonte):';
 $string['deletefeedconfirm'] = 'Está certo/a de que desexa eliminar esta fonte?';
 $string['disabledrssfeeds'] = 'As fontes RSS están desactivadas';
-$string['displaydescriptionlabel'] = 'Mostrar a descrición de cada ligazón?';
+$string['displaydescriptionlabel'] = 'Amosar a descrición de cada ligazón?';
 $string['editafeed'] = 'Editar unha fonte';
 $string['editfeeds'] = 'Editar, subscribir ou darse de baixa das fontes de noticias RSS/Atom';
 $string['editnewsfeeds'] = 'Editar fontes de noticias';
@@ -54,12 +54,12 @@ $string['feed'] = 'Fontes';
 $string['feedadded'] = 'Novas fontes engadidas';
 $string['feeddeleted'] = 'Novas fontes eliminadas';
 $string['feeds'] = 'Novas fontes';
-$string['feedsaddedit'] = 'Engadir/Editar Fontes';
-$string['feedsconfigurenewinstance'] = 'Prema aquí para configurar este bloque para mostrar fontes RSS.';
+$string['feedsaddedit'] = 'Engadir/Editar fontes';
+$string['feedsconfigurenewinstance'] = 'Prema aquí para configurar este bloque para amosar fontes RSS.';
 $string['feedsconfigurenewinstance2'] = 'Prema a icona de edición de arriba para configurar este bloque que presenta fontes RSS.';
 $string['feedupdated'] = 'Fonte de noticias actualizada';
 $string['feedurl'] = 'URL da fonte';
-$string['findmorefeeds'] = 'Encontrar máis fontes RSS';
+$string['findmorefeeds'] = 'Atopar máis fontes RSS';
 $string['managefeeds'] = 'Xestionar todas as miñas fontes';
 $string['nofeeds'] = 'Non hai fontes RSS definidas para este sitio.';
 $string['numentries'] = 'Entradas por fonte';
@@ -81,10 +81,10 @@ $string['rss_client:createprivatefeeds'] = 'Crear fontes RSS privadas';
 $string['rss_client:createsharedfeeds'] = 'Crear fontes RSS compartidas';
 $string['rss_client:manageanyfeeds'] = 'Xestionar algunhas fontes RSS';
 $string['rss_client:manageownfeeds'] = 'Xestionar as propias fontes RSS';
-$string['rss_client:myaddinstance'] = 'Engadir un novo bloque de fontes RSS remotas ao meu cartafol persoal';
+$string['rss_client:myaddinstance'] = 'Engadir un novo bloque de fontes RSS remotas ao Taboleiro';
 $string['seeallfeeds'] = 'Ver todas as fontes';
 $string['sharedfeed'] = 'Fontes compartidas';
-$string['shownumentrieslabel'] = 'Número máximo de entradas para mostrar por bloque.';
+$string['shownumentrieslabel'] = 'Número máximo de entradas para amosar por bloque.';
 $string['submitters'] = 'A quen se lle permitirá definir novas fontes RSS? As fontes definidas están dispoñíbeis para calquera páxina do seu sitio.';
 $string['submitters2'] = 'Remisores';
 $string['timeout'] = 'Tempo en minutos antes de que unha fonte RSS expire na caché. Vexa que este tempo define o mínimo antes da expiración; a fonte actualizarase na caché na vindeira execución do cron despois de expirar. Os valores recomendados son de 30 minutos ou máis.';

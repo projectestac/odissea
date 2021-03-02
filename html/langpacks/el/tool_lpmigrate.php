@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_lpmigrate', language 'el', version '3.8'.
  *
- * @package   tool_lpmigrate
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_lpmigrate
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,7 +42,7 @@ $string['errors'] = 'Σφάλματα';
 $string['errorwhilemigratingcoursecompetencywithexception'] = 'Σφάλμα κατά τη μετεγκατάσταση (μεταφορά/μετατροπή) ενός προσόντος μαθήματος: {$a}';
 $string['errorwhilemigratingmodulecompetencywithexception'] = 'Σφάλμα κατά τη μετεγκατάσταση (μεταφορά/μετατροπή) ενός προσόντος δραστηριότητας ή πόρου: {$a}';
 $string['excludethese'] = 'Αποκλεισμός των';
-$string['explanation'] = 'Το εργαλείο αυτό μπορεί να χρησιμοποιηθεί για ενημέρωση ενός πλαισίου προσόντων σε μια νέα έκδοση. Αναζητά προσόντα σε μαθήματα και δραστηριότητες χρησιμοποιώντας το παλαιότερο πλαίσιο, και ενημερώνει τους συνδέσμους να δείχνουν προς το νέο πλαίσιο. Δεν συνιστάται η επεξεργασία του παλαιού συνόλου προσόντων απευθείας, καθώς αυτό θα τροποποιούσε όλα τα προσόντα που έχουν ήδη προστεθεί στα σχέδια μάθησης των χρηστών. Τυπικά θα κάνατε εισαγωγή της νέας έκδοσης ενός πλαισίου, θα κρύβατε το παλαιό πλαίσιο και μετά θα χρησιμοποιούσατε αυτό το εργαλείο για τη μετεγκατάσταση (μεταφορά/μετατροπή) νέων μαθημάτων στο νέο πλαίσιο.';
+$string['explanation'] = 'Το εργαλείο αυτό μπορεί να χρησιμοποιηθεί για ενημέρωση ενός πλαισίου προσόντων σε μια νέα έκδοση. Αναζητά προσόντα σε μαθήματα και δραστηριότητες χρησιμοποιώντας το παλαιότερο πλαίσιο, και ενημερώνει τους συνδέσμους να δείχνουν προς το νέο πλαίσιο. Δεν συνιστάται η επεξεργασία του παλαιού συνόλου προσόντων απευθείας, καθώς αυτό θα τροποποιούσε όλα τα προσόντα που έχουν ήδη προστεθεί στα σχέδια μάθησης των μαθητών. Τυπικά θα κάνατε εισαγωγή της νέας έκδοσης ενός πλαισίου, θα κρύβατε το παλαιό πλαίσιο και μετά θα χρησιμοποιούσατε αυτό το εργαλείο για τη μετεγκατάσταση (μεταφορά/μετατροπή) νέων μαθημάτων στο νέο πλαίσιο.';
 $string['findingcoursecompetencies'] = 'Εύρεση προσόντων μαθήματος';
 $string['findingmodulecompetencies'] = 'Εύρεση προσόντων δραστηριοτήτων και πόρων';
 $string['frameworks'] = 'Πλαίσια';

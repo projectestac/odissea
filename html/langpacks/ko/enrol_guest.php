@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_guest', language 'ko', version '3.8'.
  *
- * @package   enrol_guest
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_guest
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowguests'] = '이 강좌는 손님 계정을 허용함';
+$string['guest:config'] = '손님 접속 인스턴스 구성';
 $string['guestaccess_withoutpassword'] = '손님 접속';
 $string['guestaccess_withpassword'] = '손님 접속';
-$string['guest:config'] = '손님 접속 인스턴스 구성';
 $string['password'] = '암호';
 $string['password_help'] = '암호는 손님들이 암호를 아는 사람들만 강좌에 접속할 수 있게 합니다. 손님들은 강좌에 접속할 때마다 암호를 입력해야 합니다.';
 $string['passwordinvalid'] = '잘못된 접속 암호입니다. 다시 하십시요.';

@@ -60,11 +60,9 @@ class script_health extends agora_script_base{
             echo $OUTPUT->notification(get_string('phpvaron', 'debug', (object)array('name'=>'file_uploads', 'link'=>$documentationlink)));
         }
 
-        if (function_exists('is_float_problem')) {
-            if (is_float_problem()) {
-                $health = false;
-                echo $OUTPUT->notification(get_string('phpfloatproblem', 'admin', $documentationlink));
-            }
+        if (function_exists('is_float_problem') && is_float_problem()) {
+            $health = false;
+            echo $OUTPUT->notification(get_string('phpfloatproblem', 'admin', $documentationlink));
         }
 
         if (!is_dir($CFG->dataroot) || !is_writable($CFG->dataroot)) {

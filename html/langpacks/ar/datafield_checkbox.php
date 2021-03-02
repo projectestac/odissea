@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,19 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_checkbox', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'datafield_checkbox', language 'ar', version '3.8'.
  *
- * @package   datafield_checkbox
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     datafield_checkbox
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'حقل صندوق اختيار';
+$string['fieldtypelabel'] = 'حقل مربع اختيار';
 $string['pluginname'] = 'مربع الاختيار';
-$string['privacy:metadata'] = 'إن مكون حقل خانة التأشير لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل جداول معرفة في mod_data.';
+$string['privacy:metadata'] = 'لا يخزن  Checkbox أي بيانات شخصية بحد ذاته ، بل يستخدم جداول معرفة في mod_data.';

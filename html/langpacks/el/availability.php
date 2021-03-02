@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability', language 'el', version '3.8'.
  *
- * @package   availability
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,12 +38,18 @@ $string['hidden_individual'] = 'Πλήρης απόκρυψη αν ο χρήστ
 $string['hidden_marker'] = '(διαφορετικά κρυμμένο)';
 $string['hide_verb'] = 'Κλικ για απόκρυψη';
 $string['invalid'] = 'Παρακαλούμε να ορίσετε';
-$string['itemheading'] = 'περιορισμός {$a->number} {$a->type}';
 $string['item_unknowntype'] = 'Αυτοί οι περιορισμοί χρησιμοποιούν ένα πρόσθετο που δεν είναι πλέον διαθέσιμο (αν είναι εντάξει να αφαιρεθεί αυτός ο περιορισμός, διαγράψτε τον παρακάτω)';
+$string['itemheading'] = 'περιορισμός {$a->number} {$a->type}';
 $string['label_multi'] = 'Απαιτούμενοι περιορισμοί';
 $string['label_sign'] = 'Τύπος περιορισμού';
 $string['list_and'] = 'Όλα από:';
 $string['list_and_hidden'] = 'Όλα από (κρυμμένα αλλιώς):';
+$string['list_or'] = 'Οποιαδήποτε από:';
+$string['list_or_hidden'] = 'Οποιαδήποτε (κρυμμένα αλλιώς):';
+$string['list_root_and'] = 'Μη διαθέσιμο εκτός:';
+$string['list_root_and_hidden'] = 'Μη διαθέσιμο (κρυφό) εκτός:';
+$string['list_root_or'] = 'Μη διαθέσιμο εκτός οποιοδήποτε από:';
+$string['list_root_or_hidden'] = 'Μη διαθέσιμο (κρυφό) εκτός και ισχύει ένα από τα:';
 $string['listheader_multi_after'] = 'από τα ακόλουθα';
 $string['listheader_multi_and'] = 'όλα';
 $string['listheader_multi_before'] = 'ταίριαξε';
@@ -52,20 +58,14 @@ $string['listheader_sign_before'] = 'Μαθητής';
 $string['listheader_sign_neg'] = 'δεν πρέπει να';
 $string['listheader_sign_pos'] = 'πρέπει';
 $string['listheader_single'] = 'ταιριάζει με το ακόλουθο';
-$string['list_or'] = 'Οποιαδήποτε από:';
-$string['list_or_hidden'] = 'Οποιαδήποτε (κρυμμένα αλλιώς):';
-$string['list_root_and'] = 'Μη διαθέσιμο εκτός:';
-$string['list_root_and_hidden'] = 'Μη διαθέσιμο (κρυφό) εκτός:';
-$string['list_root_or'] = 'Μη διαθέσιμο εκτός οποιοδήποτε από:';
-$string['list_root_or_hidden'] = 'Μη διαθέσιμο (κρυφό) εκτός και ισχύει ένα από τα:';
 $string['manageplugins'] = 'Διαχειριστείτε τους περιορισμούς';
 $string['missingplugin'] = 'Το πρόσθετο περιορισμού δεν βρέθηκε';
 $string['or'] = 'ή';
 $string['privacy:metadata'] = 'Το υποσύστημα «Περιορισμός πρόσβασης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['restrictaccess'] = 'Περιορισμός διαθεσιμότητας';
 $string['restrictbygroup'] = 'Προσθέστε περιορισμό πρόσβασης ομάδας/ομαδοποίησης';
-$string['setheading'] = '{$a->number} Σετ από {$a->count} περιορισμό/-ούς';
+$string['setheading'] = '{$a->number} Σετ από {$a->count} περιορισμό(ούς)';
+$string['show_verb'] = 'Πατήστε για εμφάνιση σκιασμένων';
 $string['shown_all'] = 'Εμφανίζεται σκιασμένο εάν ο χρήστης δεν ικανοποιεί τις συνθήκες';
 $string['shown_individual'] = 'Εμφανίζεται σκιασμένο εάν ο χρήστης δεν ικανοποιεί αυτή την συνθήκη';
-$string['show_verb'] = 'Πατήστε για εμφάνιση σκιασμένων';
 $string['unknowncondition'] = 'Άγνωστη συνθήκη (το πρόσθετο συνθήκης έχει διαγραφεί)';

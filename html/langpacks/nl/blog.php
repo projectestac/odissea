@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'nl', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -141,10 +141,10 @@ $string['privacy:metadata:external'] = 'Een link naar een externe RSS-feed';
 $string['privacy:metadata:external:description'] = 'De beschrijving van de feed';
 $string['privacy:metadata:external:filtertags'] = 'De lijst met tags om de blogberichten mee te filteren';
 $string['privacy:metadata:external:name'] = 'De naam van de feed';
-$string['privacy:metadata:external:timefetched'] = 'Datum waarop de feed laatst was opgehaald';
+$string['privacy:metadata:external:timefetched'] = 'Datum waarop de feed laatst werd opgehaald';
 $string['privacy:metadata:external:timemodified'] = 'Datum wanneer de associatie laatst was aangepast';
 $string['privacy:metadata:external:url'] = 'De URL van de feed';
-$string['privacy:metadata:external:userid'] = 'De ID van de gebruikers die het externe blogbericht toegevoegd heeft.';
+$string['privacy:metadata:external:userid'] = 'De ID van de gebruikers die het externe blog-bericht toegevoegd heeft';
 $string['privacy:metadata:post'] = 'De informatie, gerelateerd aan blogberichten';
 $string['privacy:metadata:post:content'] = 'De inhoud van het externe blogbericht';
 $string['privacy:metadata:post:created'] = 'Datum waarop het blogbericht was gemaakt';
@@ -158,17 +158,17 @@ $string['privacy:metadata:post:usermodified'] = 'De gebruiker die het blogberich
 $string['privacy:path:blogassociations'] = 'Geassocieerde blogberichten';
 $string['privacy:unknown'] = 'Onbekend';
 $string['publishto'] = 'Publiceer naar';
+$string['publishto_help'] = 'Er zijn 3 opties
+
+* Jezelf (klad) - Enkel jij en de beheerders kunnen dit item zien
+* Iedereen op deze site - Iedreen die geregistreerd si op deze site kan dit blogbericht lezen
+* Iedereen ter wereld - Iedereen, gasten ook, kunnen dit blogbericht lezen';
 $string['publishtocourse'] = 'Gebruikers die een cursus met je delen';
 $string['publishtocourseassoc'] = 'Leden van de geassocieerde cursus';
 $string['publishtocourseassocparam'] = 'Leden van {$a}';
 $string['publishtogroup'] = 'Gebruikers die een groep met jou delen';
 $string['publishtogroupassoc'] = 'Jouw groepsleden in de geassocieerde cursus';
 $string['publishtogroupassocparam'] = 'Jouw groepsleden in {$a}';
-$string['publishto_help'] = 'Er zijn 3 opties
-
-* Jezelf (klad) - Enkel jij en de beheerders kunnen dit item zien
-* Iedereen op deze site - Iedreen die geregistreerd si op deze site kan dit blogbericht lezen
-* Iedereen ter wereld - Iedereen, gasten ook, kunnen dit blogbericht lezen';
 $string['publishtonoone'] = 'jezelf (klad)';
 $string['publishtosite'] = 'iedereen op deze site';
 $string['publishtoworld'] = 'de hele wereld';

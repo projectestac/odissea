@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assign', language 'ko', version '3.8'.
  *
- * @package   assign
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assign
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = '관심이 필요한 과제가 있습니다.';
 $string['addattempt'] = '또 다른 시도 추가';
 $string['addnewattempt'] = '새 시도 추가';
+$string['addnewattempt_help'] = '작업할 수 있는 새 빈 제출을 생성합니다.';
 $string['addnewattemptfromprevious'] = '이전 제출에 기반한 새 시도 추가';
 $string['addnewattemptfromprevious_help'] = '작업을 계속할 수 있도록 이전 제출의 내용을 새로운 제출에 복사합니다.';
-$string['addnewattempt_help'] = '작업할 수 있는 새 빈 제출을 생성합니다.';
 $string['addsubmission'] = '제출 추가';
 $string['allowsubmissions'] = '사용자들에게 이 과제에 대해 제출을 계속하도록 허용합니다.';
 $string['allowsubmissionsanddescriptionfromdatesummary'] = '과제 세부사항과 제출 양식이 <strong>{$a}</strong> 부터 사용가능합니다.';
@@ -42,20 +42,20 @@ $string['alwaysshowdescription_help'] = '비활성화되면  과제 제출 허�
 $string['applytoteam'] = '모둠 전체에 성적과 피드백 적용';
 $string['assign:addinstance'] = '새 과제 추가';
 $string['assign:exportownsubmission'] = '내 제출 내보내기';
-$string['assignfeedback'] = '피드백 플러그인';
-$string['assignfeedbackpluginname'] = '피드백 플러그인';
 $string['assign:grade'] = '과제 채점';
 $string['assign:grantextension'] = '연장 허가';
-$string['assignmentisdue'] = '과제 제출 마감 시한';
-$string['assignmentname'] = '과제명';
-$string['assignmentplugins'] = '과제 플러그인';
-$string['assignmentsperpage'] = '페이지당 과제 수';
 $string['assign:revealidentities'] = '학생의 아이덴티티 노출';
-$string['assignsubmission'] = '제출 플러그인';
-$string['assignsubmissionpluginname'] = '제출 플러그인';
 $string['assign:submit'] = '과제 제출';
 $string['assign:view'] = '과제 보기';
 $string['assign:viewgrades'] = '성적 보기';
+$string['assignfeedback'] = '피드백 플러그인';
+$string['assignfeedbackpluginname'] = '피드백 플러그인';
+$string['assignmentisdue'] = '과제 제출 마감 시한';
+$string['assignmentname'] = '과제 이름';
+$string['assignmentplugins'] = '과제 플러그인';
+$string['assignmentsperpage'] = '페이지당 과제 수';
+$string['assignsubmission'] = '제출 플러그인';
+$string['assignsubmissionpluginname'] = '제출 플러그인';
 $string['attemptheading'] = '시도 {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = '이전 시도';
 $string['attemptnumber'] = '시도 수';
@@ -93,8 +93,8 @@ $string['currentattempt'] = '시도 {$a}입니다.';
 $string['currentattemptof'] = '시도 {$a->attemptnumber} ({$a->maxattempts} 시도가 허용됩니다.)';
 $string['currentgrade'] = '성적부에서 현재 성적';
 $string['cutoffdate'] = '최종 마감일';
-$string['cutoffdatefromdatevalidation'] = '최종 마감일은 마감일 이후이어야 합니다.';
 $string['cutoffdate_help'] = '설정되면, 과제는 연장없이 이 날짜 이후에 제출을 허용하지 않습니다.';
+$string['cutoffdatefromdatevalidation'] = '최종 마감일은 마감일 이후이어야 합니다.';
 $string['cutoffdatevalidation'] = '최종 마감일은 마감일 보다 먼저일 수 없습니다.';
 $string['defaultsettings'] = '기본 과제 설정';
 $string['defaultsettings_help'] = '이 설정은 모든 새로운 과제에 대한 기본 설정을 정의합니다.';
@@ -189,7 +189,7 @@ $string['maxattempts'] = '최대 시도';
 $string['maxgrade'] = '최대 성적';
 $string['messageprovider:assign_notification'] = '과제 통지';
 $string['modulename'] = '과제';
-$string['modulenameplural'] = '과제제출';
+$string['modulenameplural'] = '과제';
 $string['multipleteams'] = '한 그룹 이상의 회원';
 $string['multipleteams_desc'] = '본 과제는 그룹 제출 과제입니다. 당신은 두 그룹 이상의 회원입니다. 과제 제출을 위해서는 반드시 한 곳에만 속해 있어야 합니다.  가입된 그룹을 변경 하려면 담당 선생님께 문의하시기 바랍니다.';
 $string['mysubmission'] = '내 제출';
@@ -277,17 +277,17 @@ $string['submissionslocked'] = '이 과제는 제출을 받지 않습니다.';
 $string['submissionslockedshort'] = '제출변경이 허용되지 않습니다.';
 $string['submissionsnotgraded'] = '제출이 채점되지 않았습니다. {$a}';
 $string['submissionstatement'] = '제출문';
+$string['submissionstatement_help'] = '과제 제출 확인글';
 $string['submissionstatementacceptedlog'] = '사용자 {$a}가 제출문에 동의하였습니다.';
 $string['submissionstatementdefault'] = '이 과제는 혼자의 힘으로 한 것입니다. 다른 사람이 한 일을 이용한 경우에는 이 사실을 표시하였습니다.';
-$string['submissionstatement_help'] = '과제 제출 확인글';
 $string['submissionstatus'] = '제출 상태';
 $string['submissionstatus_'] = '제출이 없습니다.';
 $string['submissionstatus_draft'] = '초안(제출 되지 않았음)';
-$string['submissionstatusheading'] = '제출 상태';
 $string['submissionstatus_marked'] = '채점됨';
 $string['submissionstatus_new'] = '새 제출';
 $string['submissionstatus_reopened'] = '다시 오픈됨';
 $string['submissionstatus_submitted'] = '채점을 위해 제출되었습니다.';
+$string['submissionstatusheading'] = '제출 상태';
 $string['submissionsummary'] = '{$a->status}. {$a->timemodified}에  마지막 수정';
 $string['submissionteam'] = '모둠';
 $string['submissiontypes'] = '제출 유형';

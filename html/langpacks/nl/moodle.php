@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'moodle', language 'nl', version '3.8'.
  *
- * @package   moodle
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     moodle
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,9 +58,9 @@ $string['adddots'] = 'Voeg toe...';
 $string['added'] = '{$a} toegevoegd';
 $string['addedrecip'] = '{$a} nieuwe ontvanger toegevoegd';
 $string['addedrecips'] = '{$a} nieuwe ontvangers toegevoegd';
-$string['addedtogroup'] = 'Toegevoegd aan groep {$a}';
-$string['addedtogroupnot'] = 'Niet toegevoegd aan groep {$a}';
-$string['addedtogroupnotenrolled'] = 'Niet toegevoegd aan groep {$a}, omdat die niet aangemeld is in deze cursus';
+$string['addedtogroup'] = 'Toegevoegd aan groep "{$a}"';
+$string['addedtogroupnot'] = 'Niet toegevoegd aan groep "{$a}"';
+$string['addedtogroupnotenrolled'] = 'Niet toegevoegd aan groep "{$a}", omdat die niet aangemeld is in deze cursus';
 $string['addfilehere'] = 'Bestand(en) hier toevoegen';
 $string['addinganew'] = 'Een nieuwe {$a} toevoegen';
 $string['addinganewto'] = 'Een nieuwe {$a->what} aan {$a->to} toevoegen';
@@ -102,7 +102,7 @@ $string['adminhelpmanagedatabase'] = 'Gebruik/beheer de database op directe wijz
 $string['adminhelpmanagefilters'] = 'Kies tekstfilters en daarmee samenhangende instellingen';
 $string['adminhelpmanagemodules'] = 'Beheer de geïnstalleerde modules en hun instellingen';
 $string['adminhelpmanageroles'] = 'Definieer rollen die toegepast kunnen worden op gebruikers';
-$string['adminhelpmymoodle'] = 'Configureer het blok Mijn Moodle voor de gebruikers';
+$string['adminhelpmymoodle'] = 'Configureer de Mijn Startpagina-blokken voor de gebruikers';
 $string['adminhelpreports'] = 'Rapporten op site-niveau';
 $string['adminhelpsitefiles'] = 'Voor het publiceren van algemene bestanden of het uploaden van externe back-ups';
 $string['adminhelpsitesettings'] = 'Definieer hoe de voorpagina van de site eruit ziet';
@@ -170,7 +170,7 @@ $string['authentication'] = 'Authenticatie';
 $string['authenticationplugins'] = 'Authenticatie-plugins';
 $string['autosubscribe'] = 'Automatisch inschrijven op het forum';
 $string['autosubscribeno'] = 'Nee: schrijf me niet automatisch in op forumdiscussies';
-$string['autosubscribeyes'] = 'Ja: schrijf me automatisch in op forums wanneer ik er een bericht in post';
+$string['autosubscribeyes'] = 'Ja: schrijf me automatisch in op discussies wanneer ik er een bericht in post';
 $string['availability'] = 'Beschikbaarheid';
 $string['availablecourses'] = 'Beschikbare cursussen';
 $string['back'] = 'Terug';
@@ -181,7 +181,6 @@ $string['backtopageyouwereon'] = 'Terug naar vorige pagina';
 $string['backtoparticipants'] = 'Terug naar deelnemerslijst';
 $string['backup'] = 'Back-up';
 $string['backupactivehelp'] = 'Automatische back-ups gebruiken?';
-$string['backupadhocpending'] = 'Cursus backup adhoc-taak in behandeling';
 $string['backupcancelled'] = 'Back-up geannuleerd';
 $string['backupcoursefileshelp'] = 'Selecteer als je de bestanden van de cursus in de back-up wil';
 $string['backupdate'] = 'Datum back-up';
@@ -229,7 +228,7 @@ $string['bulkmovecoursessuccess'] = '{$a->courses} cursussen verplaatst naar {$a
 $string['bycourseorder'] = 'In volgorde van de cursus';
 $string['byname'] = 'volgens {$a}';
 $string['bypassed'] = 'Omzeild';
-$string['cachecontrols'] = 'Cache controles';
+$string['cachecontrols'] = 'Cache controle';
 $string['cancel'] = 'Annuleer';
 $string['cancelled'] = 'Geannuleerd';
 $string['categories'] = 'Cursuscategorieën';
@@ -334,8 +333,8 @@ $string['coursebackup'] = 'Back-up  van cursussen';
 $string['coursebulkaction'] = 'Bulkacties voor geselecteerde cursussen';
 $string['coursecategories'] = 'Cursuscategorieën';
 $string['coursecategory'] = 'Cursuscategorie';
-$string['coursecategorydeleted'] = 'Verwijder cursuscategorie {$a}';
 $string['coursecategory_help'] = 'Deze instelling bepaalt de categorie waarin je cursus verschijnt in de cursussenlijst.';
+$string['coursecategorydeleted'] = 'Verwijder cursuscategorie {$a}';
 $string['coursecatmanagement'] = 'Cursus- en categoriebeheer';
 $string['coursecompletion'] = 'Cursus voltooien';
 $string['coursecompletions'] = 'Cursus voltooien';
@@ -380,8 +379,8 @@ $string['coursemessage'] = 'Bericht voor de gebruikers van de cursus';
 $string['coursenotaccessible'] = 'Deze cursus is niet publiek toegankelijk';
 $string['courseoverview'] = 'Cursusoverzicht';
 $string['courseoverviewfiles'] = 'Cursusafbeelding';
-$string['courseoverviewfilesext'] = 'Cursusafbeelding bestandsextenties';
 $string['courseoverviewfiles_help'] = 'De cursusafbeelding wordt getoond in het cursusoverzicht op de startpagina. Bijkomende aanvaarde bestandstypes en meer dan één bestand kan ingeschakeld worden door de site-beheerder. Als dit zo is, dan zullen deze bestanden naast de cursussamenvatting getoond worden op de pagina met de lijst van cursussen.';
+$string['courseoverviewfilesext'] = 'Cursusafbeelding bestandsextenties';
 $string['courseoverviewfileslimit'] = 'Limiet cursusafbeeldingen';
 $string['courseoverviewgraph'] = 'Grafiek cursusoverzicht';
 $string['coursepreferences'] = 'Cursusvoorkeuren';
@@ -469,7 +468,7 @@ $string['currentlyselectedusers'] = 'Geselecteerde gebruikers';
 $string['currentpicture'] = 'Huidige foto';
 $string['currentrelease'] = 'Informatie over de huidige release';
 $string['currentversion'] = 'Huidige versie';
-$string['databasechecking'] = 'De Moodledatabase van versie {$a->oldversion} naar versie {$a->newversion} aan het opwaarderen...';
+$string['databasechecking'] = 'De Moodledatabase van versie {$a->oldversion} naar versie {$a->newversion} aan het upgraden...';
 $string['databaseperformance'] = 'Performantie van de databank';
 $string['databasesetup'] = 'Klaarmaken van de database';
 $string['databasesuccess'] = 'De database werd met succes opgewaardeerd';
@@ -650,7 +649,6 @@ $string['emailconfirmsent'] = '<p>Als het goed is, is er een e-mail verzonden na
 $string['emailconfirmsentfailure'] = 'Bevestigingsmail versturen is mislukt';
 $string['emailconfirmsentsuccess'] = 'Bevestigingsmail is verstuurd';
 $string['emaildigest'] = 'Type e-mail berichtenoverzicht';
-$string['emaildigestcomplete'] = 'Volledige samenvatting  (dagelijkse e-mail met alle berichten)';
 $string['emaildigest_help'] = 'Dit zijn de instellingen voor het versturen van e-mail met een berichtenoverzicht die forums zullen gebruiken:
 
 * Geen samenvattende mail - je zult één e-mail krijgen per forumbericht;
@@ -658,13 +656,14 @@ $string['emaildigest_help'] = 'Dit zijn de instellingen voor het versturen van e
 * Samenvattende mail - enkel onderwerpen - je krijgt één samenvattende mail per dag met daarin enkel het onderwerp van elk forumbericht.
 
 Als je wilt, kun je kunt andere instellingen voor elk forum gebruiken.';
+$string['emaildigestcomplete'] = 'Volledige samenvatting  (dagelijkse e-mail met alle berichten)';
 $string['emaildigestoff'] = 'Geen berichtenoverzicht (voor elk forumbericht een e-mail)';
 $string['emaildigestsubjects'] = 'Onderwerpen (dagelijkse e-mail met alleen de onderwerpen van de berichten)';
 $string['emaildisable'] = 'Dit e-mailadres is uitgeschakeld';
 $string['emaildisableclick'] = 'Klik hier om ervoor te zorgen dat Moodle geen e-mail naar dit adres stuurt';
 $string['emaildisplay'] = 'E-mailweergave';
-$string['emaildisplaycourse'] = 'Laat mijn e-mailadres alleen maar zien aan andere leden van deze cursus';
 $string['emaildisplay_help'] = 'Bevoorrechte gebruikers (zoals docenten en managers) kunnen uw e-mailadres altijd zien.';
+$string['emaildisplaycourse'] = 'Laat mijn e-mailadres alleen maar zien aan andere leden van deze cursus';
 $string['emaildisplayhidden'] = 'E-mail verborgen';
 $string['emaildisplayno'] = 'Verberg mijn e-mailadres voor alle gewone gebruikers';
 $string['emaildisplayyes'] = 'Toon mijn e-mailadres aan iedereen';
@@ -699,7 +698,7 @@ $string['emailpasswordchangeinfofail'] = 'Beste {$a->firstname},
 
 Iemand (waarschijnlijk jijzelf) heeft een nieuw wachtwoord gevraagd voor je account op \'{$a->sitename}\'.
 
-Jammer genoeg kunnen wachtwoorden op deze site niet gewijzigd worden. Neem contact op met de sitebeheerder, {$a->admin}';
+Jammer genoeg kunnen wachtwoorden op deze site niet gewijzigd worden. Neem contact op met de sitebeheerder {$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: Informatie over wachtwoordwijziging';
 $string['emailpasswordconfirmation'] = 'Beste {$a->firstname},
 
@@ -872,8 +871,8 @@ $string['force'] = 'Verplicht';
 $string['forcelanguage'] = 'Verplicht taal';
 $string['forceno'] = 'Verplicht niet';
 $string['forcepasswordchange'] = 'Verplicht het wijzigen van het wachtwoord';
-$string['forcepasswordchangecheckfull'] = 'Ben je zeker dat je de wachtwoordswijziging wil afdwingen voor {$a} ?';
 $string['forcepasswordchange_help'] = 'Vraag de gebruiker het wachtwoord te wijzigen bij de volgend login.';
+$string['forcepasswordchangecheckfull'] = 'Ben je zeker dat je de wachtwoordswijziging wil afdwingen voor {$a} ?';
 $string['forcepasswordchangenot'] = 'Kon geen wachtwoordswijziging afdwingen voor {$a}';
 $string['forcepasswordchangenotice'] = 'Je moet je wachtwoord wijzigen om verder te kunnen gaan';
 $string['forcetheme'] = 'Leg dit thema op';
@@ -977,12 +976,12 @@ $string['hiddenassign'] = 'Verborgen rol';
 $string['hiddenfromstudents'] = 'Verborgen voor leerlingen';
 $string['hiddenoncoursepage'] = 'Beschikbaar, maar niet getoond op de cursuspagina';
 $string['hiddensections'] = 'Verborgen onderwerpen';
-$string['hiddensectionscollapsed'] = 'Verborgen secties worden samengeklapt getoond';
 $string['hiddensections_help'] = '<p>Met deze optie kun je kiezen hoe je de verborgen secties in je cursus toont aan je leerlingen.</p>
 
 <p>Standaard wordt er een kleine zone getoond (in samengeklapte vorm, meestal grijs) om aan te geven waar de verborgen sectie zich bevindt, hoewel de verborgen activiteiten en teksten zelf niet zichtbaar zijn. Dit is vooral nuttig in cursussen met weken, zodat het duidelijk is welke weken er geen les is.</p>
 
 <p>Als je ervoor kiest kun je die secties helemaal verbergen, zodat de leerlingen zelfs niet weten dat er delen van de cursus verborgen zijn.</p>';
+$string['hiddensectionscollapsed'] = 'Verborgen secties worden samengeklapt getoond';
 $string['hiddensectionsinvisible'] = 'Verborgen secties worden helemaal niet getoond';
 $string['hiddenwithbrackets'] = '(verborgen)';
 $string['hide'] = 'Verberg';
@@ -1015,9 +1014,9 @@ $string['icon'] = 'Icoon';
 $string['icqnumber'] = 'ICQ-nummer';
 $string['idnumber'] = 'Nummer (ID)';
 $string['idnumbercourse'] = 'Nummer (ID) van de cursus';
+$string['idnumbercourse_help'] = '<p>Het ID-nummer van een cursus wordt alleen gebruikt wanneer deze cursus moet gekoppeld worden aan externe systemen - het wordt nooit getoond binnen Moodle. Als je een officiële codenaam hebt voor deze cursus, gebruik die dan hier ... anders kun je dit veld gewoon leeg laten.</p>';
 $string['idnumbercoursecategory'] = 'Categorie ID nummer';
 $string['idnumbercoursecategory_help'] = 'Het ID-nummer van een cursuscategorie wordt alleen gebruikt als de categorie moet gekoppeld worden met externe systemen en wordt nergens anders op de site getoond. Als de categorie een officiële code heeft, kan die hier ingegeven worden, anders mag je dit veld leeglaten.';
-$string['idnumbercourse_help'] = '<p>Het ID-nummer van een cursus wordt alleen gebruikt wanneer deze cursus moet gekoppeld worden aan externe systemen - het wordt nooit getoond binnen Moodle. Als je een officiële codenaam hebt voor deze cursus, gebruik die dan hier ... anders kun je dit veld gewoon leeg laten.</p>';
 $string['idnumbergroup'] = 'Groep ID nummer';
 $string['idnumbergroup_help'] = 'Het ID nummer van een groep wordt alleen gebruikt wanneer de groep moet gekoppeld worden aan een extern systeem en wordt nergens getoond op de site. Als de groep een officiële codenama heeft, kan die hier gebruikt worden, anders mag het veld leeg gelaten worden.';
 $string['idnumbergrouping'] = 'Groepering ID nummer';
@@ -1061,9 +1060,9 @@ $string['indicator:anywrite_help'] = 'Deze indicator geeft aan dat er schrijfact
 $string['indicator:anywriteincourse'] = 'Een schrijfactie in de cursus';
 $string['indicator:anywriteincourse_help'] = 'Deze indicator geeft aan dat er schrijfactie (insturen) gebeurd is door de leerling in een cursusactiviteit.';
 $string['indicator:completeduserprofile'] = 'Gebruikersprofiel aangevuld';
+$string['indicator:completeduserprofile_help'] = 'Deze indicator geeft aan dat een leerling zijn gebruikersprofiel heeft aangevuld';
 $string['indicator:completeduserprofiledef'] = 'Gebruikersprofiel is voltooid';
 $string['indicator:completeduserprofiledef_help'] = 'Het sitebeleid is overeengekomen en de gebruiker heeft de volgende velden ingevuld: Instelling, Afdeling, Adres, Plaats, Land, URL.';
-$string['indicator:completeduserprofile_help'] = 'Deze indicator geeft aan dat een leerling zijn gebruikersprofiel heeft aangevuld';
 $string['indicator:completionenabled'] = 'Voltooien bijhouden ingeschakeld';
 $string['indicator:completionenabled_help'] = 'Deze indicator geeft aan dat het bijhouden van het voltooien van activiteiten is ingeschakeld voor deze cursus.';
 $string['indicator:nostudent'] = 'Aanmeldingen van leerlingen';
@@ -1071,13 +1070,13 @@ $string['indicator:nostudent_help'] = 'Deze indicator geeft aan of er leerlingen
 $string['indicator:noteacher'] = 'Leraren';
 $string['indicator:noteacher_help'] = 'Deze indicator geeft aan of er leraren in deze cursus zijn.';
 $string['indicator:potentialcognitive'] = 'Potentiële cognitieve diepte van de cursus';
+$string['indicator:potentialcognitive_help'] = 'Deze indicator is gebaseerd op de potentiële cognitieve diepte die bereikt kan worden door een leerling die deelneemt aan cursusactiviteiten.';
 $string['indicator:potentialcognitivedef'] = 'Cursus potentiële cognitieve diepte';
 $string['indicator:potentialcognitivedef_help'] = 'De mate waarin de cursus "diepe" cognitieve betrokkenheid biedt, b.v. indienen van werk voor feedback, de mogelijkheid om werk van anderen te beoordelen en de mogelijkheid om werk te herzien en opnieuw in te dienen.';
-$string['indicator:potentialcognitive_help'] = 'Deze indicator is gebaseerd op de potentiële cognitieve diepte die bereikt kan worden door een leerling die deelneemt aan cursusactiviteiten.';
 $string['indicator:potentialsocial'] = 'Mogelijke sociale breedte van de cursus';
+$string['indicator:potentialsocial_help'] = 'Deze indicator is gebaseerd op de mogelijke sociale breedte die bereikt kan worden door een leerling die deelneemt aan cursusactiviteiten.';
 $string['indicator:potentialsocialdef'] = 'Cursus potentieel sociale breedte';
 $string['indicator:potentialsocialdef_help'] = 'De mate waarin de cursus "brede" sociale betrokkenheid biedt, interactie met andere deelnemers en met de praktijkgemeenschap buiten de klas.';
-$string['indicator:potentialsocial_help'] = 'Deze indicator is gebaseerd op de mogelijke sociale breedte die bereikt kan worden door een leerling die deelneemt aan cursusactiviteiten.';
 $string['indicator:readactions'] = 'Lees aantal acties';
 $string['indicator:readactions_help'] = 'Deze indicator geeft het aantal lees- (of bekijk) acties van de leerling';
 $string['indicator:userforumstracking'] = 'Gebruiker volgt forums';
@@ -1137,11 +1136,11 @@ $string['loggedinas'] = 'Je bent ingelogd als {$a}';
 $string['loggedinasguest'] = 'Je gebruikt nu de gast-account';
 $string['loggedinnot'] = 'Je bent niet ingelogd';
 $string['login'] = 'Login';
+$string['login_failure_logs'] = 'Logs mislukte aanmelding';
 $string['loginactivity'] = 'Login-activiteit';
 $string['loginalready'] = 'Je bent al aangemeld';
 $string['loginas'] = 'Login als';
 $string['loginaspasswordexplain'] = '<p>Je moet het speciale "loginas" wachtwoord ingeven om deze functie te kunnen gebruiken.<br />Als je dit niet kent, vraag het dan aan je serverbeheerder.</p>';
-$string['login_failure_logs'] = 'Logs mislukte aanmelding';
 $string['loginguest'] = 'Inloggen als gast';
 $string['loginsite'] = 'Op de site inloggen';
 $string['loginsteps'] = 'Om volledige toegang tot deze site te krijgen, moet je een account maken.';
@@ -1319,7 +1318,7 @@ $string['mycourses'] = 'Mijn cursussen';
 $string['myfiles'] = 'Mijn privébestanden';
 $string['myfilesmanage'] = 'Beheer mijn privébestanden';
 $string['myhome'] = 'Mijn startpagina';
-$string['mymoodledashboard'] = 'Mijn Moodle dashboard';
+$string['mymoodledashboard'] = 'Mijn Moodle startpagina';
 $string['myprofile'] = 'Mijn profiel';
 $string['name'] = 'Naam';
 $string['namedfiletoolarge'] = 'Het bestand \'{$a->filename}\' is te groot en kan niet geüpload worden';
@@ -1335,8 +1334,8 @@ $string['newaccount'] = 'Nieuwe account';
 $string['newactivityname'] = 'Nieuwe naam voor de activiteit {$a}';
 $string['newcourse'] = 'Nieuwe cursus';
 $string['newpassword'] = 'Nieuw wachtwoord';
-$string['newpasswordfromlost'] = '<strong>OPMERKING:</strong> Je <strong>huidige wachtwoord</strong> zal je toegestuurd worden in de <strong>tweede</strong> van de twee e-mails die je toegestuurd worden voor het terugkrijgen van je wachtwoord. Zorg er voor dat je je nieuwe wachtwoord gekregen hebt voor je verder gaat met dit scherm.';
 $string['newpassword_help'] = 'Laat dit veld leeg om het huidige wachtwoord te behouden.';
+$string['newpasswordfromlost'] = '<strong>OPMERKING:</strong> Je <strong>huidige wachtwoord</strong> zal je toegestuurd worden in de <strong>tweede</strong> van de twee e-mails die je toegestuurd worden voor het terugkrijgen van je wachtwoord. Zorg er voor dat je je nieuwe wachtwoord gekregen hebt voor je verder gaat met dit scherm.';
 $string['newpasswordtext'] = 'Beste {$a->firstname},
 
 Het wachtwoord voor je account op \'{$a->sitename}\' is gereset en je hebt een nieuw tijdelijk wachtwoord gekregen.
@@ -1613,9 +1612,9 @@ $string['privacy:metadata:upgrade_log:timemodified'] = 'Het tijdstip waarop de u
 $string['privacy:metadata:upgrade_log:type'] = 'Het type logboekinvoer.';
 $string['privacy:metadata:upgrade_log:userid'] = 'De gebruiker die de upgrade uitvoerde.';
 $string['privacy:metadata:upgrade_log:version'] = 'De oude versie van de plug-in.';
-$string['privatefiles'] = 'Privébestanden';
 $string['private_files_handler'] = 'Bewaar bijlages van een e-mail bij de privébestanden van de gebruiker';
 $string['private_files_handler_name'] = 'E-mail naar privébestanden';
+$string['privatefiles'] = 'Privébestanden';
 $string['privatefilesmanage'] = 'Beheer privébestanden';
 $string['proceed'] = 'Doorgaan';
 $string['profile'] = 'Profiel';
@@ -1626,7 +1625,6 @@ $string['publicsitefileswarning2'] = 'Opmerking: Bestanden die hier staan kunnen
 $string['publicsitefileswarning3'] = 'Opmerking: Bestanden die hier staan kunnen door iedereen die de URL weet (of kan raden) gelezen worden.<br /> Om veiligheidsredenen wordt aangeraden om back-upbestanden alleen te bewaren in een de veilige back-upmap.';
 $string['question'] = 'Vraag';
 $string['questionsinthequestionbank'] = 'Vragen in de vragenpool';
-$string['queued'] = 'In de wachtrij';
 $string['quotausage'] = 'Je hebt {$a->used} gebruikt van je totale limiet van {$a->total}.';
 $string['readinginfofrombackup'] = 'Info van de back-up lezen';
 $string['readme'] = 'LEESME';
@@ -1680,7 +1678,7 @@ $string['requirespayment'] = 'Voor toegang tot deze cursus is betaling vereist';
 $string['resendemail'] = 'E-mail opnieuw versturen';
 $string['reset'] = 'Standaardinstellingen';
 $string['resetcomponent'] = 'Component';
-$string['resetcourse'] = 'Cursus terug op standaardinstellingen';
+$string['resetcourse'] = 'Cursus opschonen';
 $string['resetinfo'] = 'Met deze pagina kun je de gebruikersgegevens uit een cursus halen, terwijl je de activiteiten en andere instellingen behoudt. Let op: het kiezen van de onderstaande instellingen en het insturen van deze pagina zal de gekozen gebruikersgegevens voor altijd verwijderen!';
 $string['resetnotimplemented'] = 'Reset niet geïmplementeerd';
 $string['resetrecordexpired'] = 'De link om je wachtwoord te resetten is meer dan {$a} minuten oud en is verlopen.
@@ -1782,14 +1780,14 @@ $string['scalestip2'] = 'Om aangepaste beoordelingsschalen te maken klik je op C
 $string['schedule'] = 'Planning';
 $string['screenshot'] = 'Schermafdruk';
 $string['search'] = 'Zoek';
+$string['search_help'] = 'Voor het standaard zoeken met één of meer worden in de tekst, geef je je zoektermen in gescheiden door spaties. Alle woorden, langer dan twee tekens worden gebruikt.
+
+Voor geavanceerd zoeken, klik je op op de zoekknop zonder iets in het zoekvenster te typen om zo in het formulier voor geavanceerd zoeken terecht te komen.';
 $string['searchagain'] = 'Zoek nog een keer';
 $string['searchbyemail'] = 'Zoek op e-mailadres';
 $string['searchbyusername'] = 'Zoek op gebruikersnaam';
 $string['searchcoursecategories'] = 'Zoek-categorieën';
 $string['searchcourses'] = 'Zoek cursussen';
-$string['search_help'] = 'Voor het standaard zoeken met één of meer worden in de tekst, geef je je zoektermen in gescheiden door spaties. Alle woorden, langer dan twee tekens worden gebruikt.
-
-Voor geavanceerd zoeken, klik je op op de zoekknop zonder iets in het zoekvenster te typen om zo in het formulier voor geavanceerd zoeken terecht te komen.';
 $string['searchoptions'] = 'Zoekopties';
 $string['searchresults'] = 'Zoekresultaten';
 $string['sec'] = 'seconde';
@@ -2043,9 +2041,9 @@ $string['thiscategorycontains'] = 'Deze categorie bevat';
 $string['time'] = 'Tijd';
 $string['timecreatedcourse'] = 'Cursus aanmaaktijd';
 $string['timesplitting:deciles'] = 'Laatste tienden';
+$string['timesplitting:deciles_help'] = 'Dit analyse-interval verdeelt de cursus in tienden (10 gelijke delen); met elk een voorspelling, gebaseerd op de gegevens van uitsluitend het vorige tiende.';
 $string['timesplitting:decilesaccum'] = 'Alle vorige tienden';
 $string['timesplitting:decilesaccum_help'] = 'Dit analyse-interval verdeelt de cursus in tienden (10 gelijke delen); met elk een voorspelling, gebaseerd op de gegevens in alle vorige tienden.';
-$string['timesplitting:deciles_help'] = 'Dit analyse-interval verdeelt de cursus in tienden (10 gelijke delen); met elk een voorspelling, gebaseerd op de gegevens van uitsluitend het vorige tiende.';
 $string['timesplitting:nosplitting'] = 'Geen tijdslimieten';
 $string['timesplitting:nosplitting_help'] = 'Er is geen analyse-interval gedefinieerd voor dit model.';
 $string['timesplitting:onemonthafterstart'] = 'Een maand na start';
@@ -2059,9 +2057,9 @@ $string['timesplitting:pastmonth_help'] = 'Dit analyse-interval genereert elke m
 $string['timesplitting:pastweek'] = 'Vorige week';
 $string['timesplitting:pastweek_help'] = 'Dit analyse-interval genereert elke week voorspellingen. De indicatorenberekeningen zijn gebaseerd op de afgelopen week.';
 $string['timesplitting:quarters'] = 'Vorig kwartaal';
+$string['timesplitting:quarters_help'] = 'Dit analyse-interval verdeelt de koers in kwartalen (4 gelijke delen), waarbij elke voorspelling is gebaseerd op de gegevens van alleen het meest recente voorgaande kwartaal.';
 $string['timesplitting:quartersaccum'] = 'Alle voorgaande kwartalen';
 $string['timesplitting:quartersaccum_help'] = 'Dit analyse-interval verdeelt de koers in kwartalen (4 gelijke delen), waarbij elke voorspelling gebaseerd is op de verzamelde gegevens van alle voorgaande kwartalen.';
-$string['timesplitting:quarters_help'] = 'Dit analyse-interval verdeelt de koers in kwartalen (4 gelijke delen), waarbij elke voorspelling is gebaseerd op de gegevens van alleen het meest recente voorgaande kwartaal.';
 $string['timesplitting:singlerange'] = 'Van begin tot einde';
 $string['timesplitting:singlerange_help'] = 'Dit analyse-interval beschouwt de hele cursus als één enkele reeks.';
 $string['timesplitting:tenpercentafterstart'] = '10% na start';

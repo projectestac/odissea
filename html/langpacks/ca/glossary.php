@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'ca', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -128,14 +128,6 @@ $string['destination'] = 'Destinació de les entrades importades';
 $string['destination_help'] = 'Les entrades es poden importar i afegir o al glossari actual o a un de nou; en aquest darrer cas, es crearà un glossari nou basat en la informació que hi ha al fitxer XML.';
 $string['disapprove'] = 'Desfés l\'aprovació';
 $string['displayformat'] = 'Format de visualització';
-$string['displayformatcontinuous'] = 'Continu sense autor';
-$string['displayformatdefault'] = 'Per defecte el mateix que el format de visualització';
-$string['displayformatdictionary'] = 'Simple, tipus diccionari';
-$string['displayformatencyclopedia'] = 'Enciclopèdia';
-$string['displayformatentrylist'] = 'Llista d\'entrades';
-$string['displayformatfaq'] = 'PMF (FAQ)';
-$string['displayformatfullwithauthor'] = 'Complet amb autor';
-$string['displayformatfullwithoutauthor'] = 'Complet sense autor';
 $string['displayformat_help'] = '<p>Hi ha 7 formats que són:</p>
 
 <blockquote>
@@ -163,6 +155,14 @@ $string['displayformat_help'] = '<p>Hi ha 7 formats que són:</p>
 
 </dl>
 </blockquote>';
+$string['displayformatcontinuous'] = 'Continu sense autor';
+$string['displayformatdefault'] = 'Per defecte el mateix que el format de visualització';
+$string['displayformatdictionary'] = 'Simple, tipus diccionari';
+$string['displayformatencyclopedia'] = 'Enciclopèdia';
+$string['displayformatentrylist'] = 'Llista d\'entrades';
+$string['displayformatfaq'] = 'PMF (FAQ)';
+$string['displayformatfullwithauthor'] = 'Complet amb autor';
+$string['displayformatfullwithoutauthor'] = 'Complet sense autor';
 $string['displayformats'] = 'Formats de visualització';
 $string['displayformatssetup'] = 'Configuració dels formats de visualització';
 $string['duplicatecategory'] = 'Categoria duplicada';
@@ -228,9 +228,7 @@ $string['filetoimport_help'] = '<p>Seleccioneu el fitxer XML del vostre ordinado
 $string['fillfields'] = 'El concepte i la definició són camps obligatoris.';
 $string['filtername'] = 'Enllaços automàtics a glossaris';
 $string['fullmatch'] = 'Enllaça només paraules completes';
-$string['fullmatch_help'] = '<p>Si s\'han habilitat els enllaços automàtics, activant aquest paràmetre imposareu que només s\'enllacin paraules completes.</p>
-
-<p>Per exemple, una entrada del glossari anomenada "pedagog" no crearà un enllaç des de "pedagogia".</p>';
+$string['fullmatch_help'] = 'Aquest paràmetre determina si només s\'enllacen les paraules completes; per exemple, una entrada de glossari anomenada «construcció» no crearà un enllaç dins la paraula «constructivisme».';
 $string['glossary:addinstance'] = 'Afegeix un glossari nou';
 $string['glossary:approve'] = 'Aprovar entrades i desfer-ne l\'aprovació';
 $string['glossary:comment'] = 'Crear comentaris';
@@ -238,18 +236,18 @@ $string['glossary:export'] = 'Exporta les entrades';
 $string['glossary:exportentry'] = 'Exporta una única entrada';
 $string['glossary:exportownentry'] = 'Exporta una única entrada pròpia';
 $string['glossary:import'] = 'Importar entrades';
-$string['glossaryleveldefaultsettings'] = 'Paràmetres per defecte nivell glossari';
 $string['glossary:managecategories'] = 'Gestionar categories';
 $string['glossary:managecomments'] = 'Gestionar comentaris';
 $string['glossary:manageentries'] = 'Gestionar entrades';
 $string['glossary:rate'] = 'Valorar entrades';
-$string['glossarytype'] = 'Tipus de glossari';
-$string['glossarytype_help'] = 'Un glossari principal és aquell en què es poden importar dades des dels glossaris secundaris. Només pot haver-hi un glossari principal per curs. Si la importació d\'entrades de glossari no és necessària, tots els glossaris del curs poden ser secundaris.';
 $string['glossary:view'] = 'Veure glossari';
 $string['glossary:viewallratings'] = 'Visualitzar totes les valoracions fetes individualment';
 $string['glossary:viewanyrating'] = 'Visualitzar les valoracions totals que tothom ha rebut';
 $string['glossary:viewrating'] = 'Visualitzar les valoracions totals que he rebut';
 $string['glossary:write'] = 'Crear entrades noves';
+$string['glossaryleveldefaultsettings'] = 'Paràmetres per defecte nivell glossari';
+$string['glossarytype'] = 'Tipus de glossari';
+$string['glossarytype_help'] = 'Un glossari principal és aquell en què es poden importar dades des dels glossaris secundaris. Només pot haver-hi un glossari principal per curs. Si la importació d\'entrades de glossari no és necessària, tots els glossaris del curs poden ser secundaris.';
 $string['guestnoedit'] = 'Els convidats no tenen permís per editar glossaris';
 $string['importcategories'] = 'Importa categories';
 $string['importedcategories'] = 'Categories importades';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_ldap', language 'it', version '3.8'.
  *
- * @package   auth_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,15 +41,12 @@ $string['auth_ldap_create_context'] = 'Abilitando la creazione degli utenti con 
 .<br /><b>Nota</b> Affinché la creazione utenti possa funzionare, è necessario modificare la funzione auth_user_create() nel file auth/ldap/lib.php.';
 $string['auth_ldap_create_context_key'] = 'Contesto per i nuovi utenti';
 $string['auth_ldap_create_error'] = 'Si è verificato un errore durante la creazione dell\'utente in LDAP.';
-$string['auth_ldapdescription'] = 'Il plugin consente la confiugrazione dell\'autenticazione tramite un server LDAP esterno.
-Autenticandosi in Moodle con credenziali LDAP valide, verrà creato un utente nel database. Il plugin può leggere gli attributi dell\'utente da LDAP e mappare i campi in Moodle.';
 $string['auth_ldap_expiration_desc'] = 'Selezionare \'{$a->no}\' per disabilitare il controllo delle password scadute oppure  \'{$a->ldapserver}\' per ottenere la data di scadenza delle password dal server LDAP';
 $string['auth_ldap_expiration_key'] = 'Scadenza';
-$string['auth_ldap_expiration_warning_desc'] = 'Numero di giorni che precedono l\'invio dell\'avviso di password scaduta.';
+$string['auth_ldap_expiration_warning_desc'] = 'Numero di giorni che precedono l\'invio dell\'avviso di password in scadenza.';
 $string['auth_ldap_expiration_warning_key'] = 'Avviso di scadenza';
 $string['auth_ldap_expireattr_desc'] = 'Opzionale: modifica l\'attributo ldap che definisce la data di scadenza delle password.';
 $string['auth_ldap_expireattr_key'] = 'Attributo per la scadenza';
-$string['auth_ldapextrafields'] = 'i campi seguenti sono opzionali. E\'  possibile scegliere di mapapre alcuni campi del profilo utente in Moodle utilizzando i dati provenienti dai <b>campi LDAP</b>. <p>Lasciando i campi vuoti, non verranno mapapti dati da LDAP e verranno utilizzati i dati di default di Moodle.</p><p>In entrambi i casi,gli utenti potranno modificare questi campi dopo essersi autenticati.</p>';
 $string['auth_ldap_graceattr_desc'] = 'Opzionale: esclude l\'attributo gracelogin';
 $string['auth_ldap_gracelogin_key'] = 'Attributo Grace login';
 $string['auth_ldap_gracelogins_desc'] = 'Abilita il supporto del gracelogin di LDAP. Alla scadenza della password, l\'utente potrà autenticarsi finché il contatore gracelogin non sarà a 0. Abilitando questa impostazione, se la password è scaduta, verrà visualizzato il messaggio di grace login.';
@@ -62,14 +59,13 @@ $string['auth_ldap_ldap_encoding'] = 'La codifica usata dal server LDAP, di soli
 $string['auth_ldap_ldap_encoding_key'] = 'Codifica LDAP';
 $string['auth_ldap_login_settings'] = 'Impostazioni login';
 $string['auth_ldap_memberattribute'] = 'Opzionale: modifica l\'attributo user member nel caso gli utenti appartengano ad un gruppo. Di solito \'member\'';
-$string['auth_ldap_memberattribute_isdn'] = 'Opzionale: modifica la gestione dei valori dell\'attributo member, 0 o 1';
+$string['auth_ldap_memberattribute_isdn'] = 'Modifica la gestione dei valori dell\'attributo member';
 $string['auth_ldap_memberattribute_isdn_key'] = 'L\'attributo member usa "dn"';
 $string['auth_ldap_memberattribute_key'] = 'Attributo member';
+$string['auth_ldap_no_mbstring'] = 'Per creare utenti in Active Directory  è necessaria l\'estensione mbstring';
 $string['auth_ldap_noconnect'] = 'Il modulo LDAP non può collegarsi al server: {$a}';
 $string['auth_ldap_noconnect_all'] = 'Il modulo LDAP non può collegarsi a nessun server: {$a}';
 $string['auth_ldap_noextension'] = '<em>Il modulo PHP LDAP non sembra essere disponibile. Per usare l\'autenticazione LDAP assicurarti che sia installato ed abilitato.</em>';
-$string['auth_ldap_no_mbstring'] = 'Per creare utenti in Active Directory  è necessaria l\'estensione mbstring';
-$string['auth_ldapnotinstalled'] = 'Non è possibile usare l\'autenticazione LDAP. Il modulo PHP LDAP non è installato.';
 $string['auth_ldap_objectclass'] = 'Opzionale: l\'objectClass da utilizzare per la ricerca degli utenti. Di solito non è necessario modificare questa impostazione.';
 $string['auth_ldap_objectclass_key'] = 'Object class';
 $string['auth_ldap_opt_deref'] = 'Imposta il modo con cui vengono trattati gli alias durante una ricerca. Selezionare uno dei seguenti valori:<br/>
@@ -100,8 +96,11 @@ $string['auth_ldap_usertypeundefined'] = 'config.user_type non definito o la fun
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type non definito o la funzione ldap_unix2expirationtime non supporta il tipo selezionato.';
 $string['auth_ldap_version'] = 'La versione del protocollo utilizzata dal server LDAP.';
 $string['auth_ldap_version_key'] = 'Versione';
+$string['auth_ldapdescription'] = 'Il plugin consente la confiugrazione dell\'autenticazione tramite un server LDAP esterno. Autenticandosi la prima volta in Moodle con credenziali LDAP valide, verrà anche creato un utente nel database. Il plugin può leggere gli attributi dell\'utente da LDAP e mappare i campi in Moodle. Durante le successive autenticazioni verranno solamente verificati username e password.';
+$string['auth_ldapextrafields'] = 'i campi seguenti sono opzionali. E\'  possibile scegliere di mapapre alcuni campi del profilo utente in Moodle utilizzando i dati provenienti dai <b>campi LDAP</b>. <p>Lasciando i campi vuoti, non verranno mapapti dati da LDAP e verranno utilizzati i dati di default di Moodle.</p><p>In entrambi i casi,gli utenti potranno modificare questi campi dopo essersi autenticati.</p>';
+$string['auth_ldapnotinstalled'] = 'Non è possibile usare l\'autenticazione LDAP. Il modulo PHP LDAP non è installato.';
 $string['auth_ntlmsso'] = 'NTLM SSO';
-$string['auth_ntlmsso_enabled'] = 'Impostare a SI per provare il Single Sign On con il dominio NTLM. <strong>Nota:</strong> per funzionare, questo richiede impostazioni aggiuntive sul webserver, vedere <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
+$string['auth_ntlmsso_enabled'] = 'Impostare a SI per provare il Single Sign On con il dominio NTLM. Nota:  sono necessarie impostazioni aggiuntive sul webserver, per maggiori informazioni: <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
 $string['auth_ntlmsso_enabled_key'] = 'Abilita';
 $string['auth_ntlmsso_ie_fastpath'] = 'Imposta a Si per abilitare NTLM SSO fast path. (Evita alcuni passaggi se il browser client è Internet Explorer)';
 $string['auth_ntlmsso_ie_fastpath_attempt'] = 'Prova NTLM con qualsiasi browser';
@@ -124,6 +123,8 @@ $string['creatingtemptable'] = 'Creazione tabella temporanea {$a}';
 $string['diag_contextnotfound'] = 'Il contesto {$a} non esiste oppure il bind DN non può leggerlo';
 $string['diag_emptycontext'] = 'E\' stato trovato un contesto vuoto.';
 $string['diag_genericerror'] = 'Si è verificato l\'errore LDAP {$a->code} durante la lettura di {$a->subject}: {$a->message}.';
+$string['diag_rolegroupnotfound'] = 'Il bind DN non riesce a leggere Il gruppo {$a->group} relativo al ruolo {$a->localname}.';
+$string['diag_toooldversion'] = 'E\' improbabile che un server LDAP moderno possa usare il protocollo LDAPv2. Impostazioni non corrette possono corrompere i valori dei campi. Per favore verificare con l\'amministratore LDAP.';
 $string['didntfindexpiretime'] = 'password_expire() non ha trovato la data di scadenza.';
 $string['didntgetusersfromldap'] = 'LDAP non ha restituito nessun acccount -- un errore ? --';
 $string['gotcountrecordsfromldap'] = 'LDAP ha restituito {$a} record';
@@ -160,10 +161,11 @@ $string['updatepasserrorexpire'] = 'Si è verificato un errore in user_update_pa
 $string['updatepasserrorexpiregrace'] = 'Errore in user_update_password() durante la modifica della data di scadenza e/o gracelogin. Error code: {$a->errno}; Error string: {$a->errstring}';
 $string['updateremfail'] = 'Errore durante l\'aggiornamento del record LDAP. Error code: {$a->errno}; Error string: {$a->errstring}<br/>Key ({$a->key}) - valore moodle precedente: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Errore durante l\'aggiornamento LDAP con il campo ambiguo {$a->key}; valore moodle precedente: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';
+$string['updateremfailfield'] = 'Si è verificato un errore durante l\'aggiornamento di LDAP con il campo inesistente (\'{$a->ldapkey}\'). Chiave ({$a->key}) - valore precedente di Moodle: \'{$a->ouvalue}\' nuovo valore: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'L\'utente non è stato trovato durante l\'aggiornamento dei dati esterni. Dettagli: search base: \'{$a->userdn}\'; search filter: \'(objectClass=*)\'; search attributes: {$a->attribs}';
-$string['useracctctrlerror'] = 'Errore durante la ricezione di userAccountControl per{$a}';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() non supporta il tipo di utente scelto: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() non supporta il tipo di utente scelto: {$a}';
+$string['useracctctrlerror'] = 'Errore durante la ricezione di userAccountControl per{$a}';
 $string['userentriestoadd'] = 'Account da aggiungere: {$a}';
 $string['userentriestoremove'] = 'Account da rimuovere: {$a}';
 $string['userentriestorevive'] = 'Account da riattivare: {$a}';

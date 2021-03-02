@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'de', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -145,7 +145,7 @@ $string['eventtypegroup'] = 'Gruppe';
 $string['eventtypemodule'] = 'Aktivitäten';
 $string['eventtypesite'] = 'Website';
 $string['eventtypeuser'] = 'Nutzer';
-$string['eventview'] = 'Details zu den Terminen';
+$string['eventview'] = 'Termindetails';
 $string['expired'] = 'Abgelaufen';
 $string['explain_site_timeformat'] = 'Wählen Sie, ob Zeitangaben im Format mit 12 oder 24 Stunden angezeigt werden sollen. Andernfalls wird das Format aus der gewählten Spracheinstellung verwendet. Die Einstellung gilt für die gesamte Website, kann aber im Nutzerprofil überschrieben werden.';
 $string['export'] = 'Export';
@@ -196,9 +196,6 @@ $string['noupcomingevents'] = 'Keine weiteren Termine';
 $string['oneevent'] = '1 Termin';
 $string['pollinterval'] = 'Aktualisierungsintervall';
 $string['pollinterval_help'] = 'Wie oft möchten Sie den Kalender für neue Termine aktualisieren?';
-$string['preferences'] = 'Einstellungen';
-$string['preferences_available'] = 'Persönliche Einstellungen';
-$string['preferredcalendar'] = 'Bevorzugter Kalender';
 $string['pref_lookahead'] = 'Terminvorschau';
 $string['pref_lookahead_help'] = 'Diese Einstellung legt die (maximale) Anzahl von Tagen fest, die ein Termin im voraus in der Vorschau angezeigt wird. Spätere Termine werden noch nicht angezeigt.
 
@@ -212,16 +209,19 @@ $string['pref_startwday'] = 'Wochenbeginn';
 $string['pref_startwday_help'] = 'Kalenderwochen werden mit dem hier ausgewählten Wochenbeginn angezeigt';
 $string['pref_timeformat'] = 'Zeitanzeigeformat';
 $string['pref_timeformat_help'] = 'Sie können auswählen, ob die Zeiten im Format mit 12 oder 24 Stunden angezeigt werden. Wenn Sie das \'Standardformat\' wählen, wird das Format automatisch aus den gewählten Spracheinstellungen verwendet.';
+$string['preferences'] = 'Einstellungen';
+$string['preferences_available'] = 'Persönliche Einstellungen';
+$string['preferredcalendar'] = 'Bevorzugter Kalender';
 $string['privacy:metadata:calendar:event'] = 'Der Kalender kann Nutzertermine im Core-System speichern.';
 $string['privacy:metadata:calendar:event:description'] = 'Beschreibung des Kalendereintrags';
 $string['privacy:metadata:calendar:event:eventtype'] = 'Terminart des Kalendereintrags';
 $string['privacy:metadata:calendar:event:name'] = 'Name des Kalendereintrags';
+$string['privacy:metadata:calendar:event:timeduration'] = 'Dauer des Kalendereintrags';
+$string['privacy:metadata:calendar:event:timestart'] = 'Startzeitpunkt des Kalendereintrags';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'Der Kalender speichert im Core-System die Registrierungen für Kalendereinträge von Nutzern';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'Eventtyp der Kalenderregistrierung';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'Name der Kalenderregistrierung';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'URL der Kalenderregistrierung';
-$string['privacy:metadata:calendar:event:timeduration'] = 'Dauer des Kalendereintrags';
-$string['privacy:metadata:calendar:event:timestart'] = 'Startzeitpunkt des Kalendereintrags';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'Konfiguration zur Anzeige des Kalendertyps durch Nutzer';
 $string['recentupcoming'] = 'Vergangene und nachfolgende 60 Tage';
 $string['repeatedevents'] = 'Sich wiederholende Termine';

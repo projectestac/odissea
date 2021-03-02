@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'el', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = 'Αντιστοίχιση του ρόλου «{$a->role_shortname}» στο χρήστη «{$a->user_username}» στο μάθημα «{$a->course_shortname}» (id {$a->course_id})';
 $string['assignrolefailed'] = 'Δεν ήταν δυνατή η ανάθεση του ρόλου «{$a->role_shortname}» στον χρήστη «{$a->user_username}» στο μάθημα «{$a->course_shortname}» (αναγνωριστικό {$a->course_id})';
-$string['autocreate'] = '<p>Μαθήματα μπορούν να δημιουργούνται αυτόματα εάν υπάρχουν εγγραφές σε ένα μάθημα το οποίο δεν υπάρχει ακόμα στο Moodle</p><p>Αν χρησιμοποιείτε αυτόματη δημιουργία μαθήματος, συνιστάται να αφαιρέσετε τις ακόλουθες δυνατότητες: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname και moodle/course:changesummary, από τους σχετικούς ρόλους ώστε να αποτρέψετε τροποποιήσεις των τεσσάρων πεδίων μαθήματος που αναφέρθηκαν παραπάνω (ID number, shortname, fullname και summary δηλ. αναγνωριστικός αριθμός, σύντομο όνομα, πλήρες όνομα και περίληψη).</p>';
+$string['autocreate'] = '<p>Μαθήματα μπορούν να δημιουργούνται αυτόματα εάν υπάρχουν εγγραφές σε ένα μάθημα το οποίο δεν υπάρχει ακόμα στο Moodle</p> <p>Αν χρησιμοποιείτε αυτόματη δημιουργία μαθήματος, συστήνεται να αφαιρέσετε τις ακόλουθες δυνατότητες: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname και moodle/course:changesummary, από τους σχετικούς ρόλους ώστε να αποτρέψετε τροποποιήσεις των τεσσάρων πεδίων μαθήματος που αναφέρθηκαν παραπάνω (ID number, shortname, fullname και summary δηλ. αναγνωριστικός αριθμός, σύντομο όνομα, πλήρες όνομα και περίληψη).</p>';
 $string['autocreate_key'] = 'Αυτόματη δημιουργία';
 $string['autocreation_settings'] = 'Ρυθμίσεις αυτόματης δημιουργίας μαθημάτων';
 $string['autoupdate_settings'] = 'Αυτόματες ρυθμίσεις ενημέρωσης μαθημάτων';
@@ -50,7 +50,6 @@ $string['course_fullname_updateonsync'] = 'Ενημέρωση πλήρους ο�
 $string['course_fullname_updateonsync_key'] = 'Ενημέρωση πλήρους ονόματος';
 $string['course_idnumber'] = 'Χαρακτηριστικό LDAP από το οποίο θα πάρετε τον αναγνωριστικό αριθμό μαθήματος. Συνήθως «cn» ή «uid».';
 $string['course_idnumber_key'] = 'Αναγνωριστικός αριθμός';
-$string['coursenotexistskip'] = 'Το μάθημα «{$a}» δεν υπάρχει και η αυτόματη δημιουργία είναι απενεργοποιημένη. Γίνεται παράλειψη...';
 $string['course_search_sub'] = 'Αναζήτηση μελών της ομάδας από υπο-πλαίσια';
 $string['course_search_sub_key'] = 'Αναζήτηση σε υπο-πλαίσια';
 $string['course_settings'] = 'Ρυθμίσεις εγγραφής σε μάθημα';
@@ -62,6 +61,7 @@ $string['course_summary'] = 'Προαιρετικό: Το πεδίο LDAP για
 $string['course_summary_key'] = 'Περίληψη';
 $string['course_summary_updateonsync'] = 'Ενημέρωση περίληψης κατά τη διάρκεια της δέσμης συγχρονισμού';
 $string['course_summary_updateonsync_key'] = 'Ενημέρωση περίληψης';
+$string['coursenotexistskip'] = 'Το μάθημα «{$a}» δεν υπάρχει και η αυτόματη δημιουργία είναι απενεργοποιημένη. Γίνεται παράλειψη...';
 $string['courseupdated'] = 'Το μάθημα με αναγνωριστικό αριθμό «{$a->idnumber}» ενημερώθηκε με επιτυχία.';
 $string['courseupdateskipped'] = 'Το μάθημα με αναγνωριστικό αριθμό «{$a->idnumber}» δεν απαιτεί ενημέρωση. Παράλειψη...';
 $string['createcourseextid'] = 'ΔΗΜΙΟΥΡΓΙΑ Χρήστη που έχει εγγραφεί σε μη υπάρχον μάθημα «{$a->courseextid}»';
@@ -87,9 +87,9 @@ $string['host_url'] = 'Ορίστε τον κεντρικό υπολογιστή
 $string['host_url_key'] = 'Διεύθυνση ιστού του Η/Υ (host)';
 $string['idnumber_attribute'] = 'Εάν η ιδιότητα μέλους της ομάδας περιέχει διακεκριμένα ονόματα, καθορίστε το ίδιο χαρακτηριστικό που χρησιμοποιήσατε για τη αντιστοίχιση του αναγνωριστικού αριθμού του χρήστη στις ρυθμίσεις αυθεντικοποίησης LDAP.';
 $string['idnumber_attribute_key'] = 'Χαρακτηριστικό αναγνωριστικού αριθμού';
+$string['ldap:manage'] = 'Διαχείριση περιπτώσεων LDAP εγγραφής';
 $string['ldap_encoding'] = 'Καθορίστε την κωδικοποίηση που χρησιμοποιείται από τον εξυπηρετητή LDAP. Πιθανότατα το utf-8, το MS AD v2 χρησιμοποιεί προεπιλεγμένη κωδικοποίηση πλατφόρμας όπως cp1252, cp1250, κλπ.';
 $string['ldap_encoding_key'] = 'Κωδικοποίηση LDAP';
-$string['ldap:manage'] = 'Διαχείριση περιπτώσεων LDAP εγγραφής';
 $string['memberattribute'] = 'Χαρακτηριστικό μέλους LDAP';
 $string['memberattribute_isdn'] = 'Εάν η ιδιότητα μέλους της ομάδας περιέχει διακεκριμένα ονόματα, πρέπει να τα ορίσετε εδώ. Αν ναι, πρέπει επίσης να διαμορφώσετε τις υπόλοιπες ρυθμίσεις σε αυτό το τμήμα.';
 $string['memberattribute_isdn_key'] = 'Το χαρακτηριστικό member ((μέλος)) χρησιμοποιεί το dn ((distinguished name, διακεκριμένο όνομα))';

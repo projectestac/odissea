@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'eu', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,13 +41,13 @@ $string['cachedef_capabilities'] = 'Sistemako gaitasunen zerrenda';
 $string['cachedef_completion'] = 'Jarduera-osaketaren egoera';
 $string['cachedef_config'] = 'Konfigurazioaren ezarpenak';
 $string['cachedef_contextwithinsights'] = 'Pertzepzioen testuingurua';
+$string['cachedef_course_user_dates'] = 'Ikastaroetako erabiltzaileen datuak erlatiboak izango dira';
 $string['cachedef_coursecat'] = 'Ikastaro-kategorien zerrenda erabiltzaile jakin batentzat';
 $string['cachedef_coursecatrecords'] = 'Ikastaro-kategorien erregistroak';
 $string['cachedef_coursecattree'] = 'Ikastaro-kategorien zuhaitza';
 $string['cachedef_coursecompletion'] = 'Ikastaro-osaketaren egoera';
 $string['cachedef_coursecontacts'] = 'Ikastaroko kontaktu-zerrenda';
 $string['cachedef_coursemodinfo'] = 'Ikastaro bakoitzeko modulu eta gaien inguruan pilatutako informazioa';
-$string['cachedef_course_user_dates'] = 'Ikastaroetako erabiltzaileen datuak erlatiboak izango dira';
 $string['cachedef_databasemeta'] = 'Datu-basearen metainformazioa';
 $string['cachedef_eventinvalidation'] = 'Ekitaldi-baliogabetzea';
 $string['cachedef_externalbadges'] = 'Erabiltzaile jakin batentzako kanpoko dominak';
@@ -87,10 +87,10 @@ $string['component'] = 'Osagaia';
 $string['confirmlockdeletion'] = 'Konfirmatu blokeoaren ezabaketa';
 $string['confirmstoredeletion'] = 'Baieztatu biltegiaren ezabaketa';
 $string['default_application'] = 'Aplikazioen biltegi lehenetsia';
-$string['defaultmappings'] = 'Loturarik ez dagoenean erabiliko diren biltegiak';
-$string['defaultmappings_help'] = 'Hauek dira erabiliko diren biltegiak, biltegiren bat cachearen definizioarekin lotzen ez baduzu.';
 $string['default_request'] = 'Eskaeren biltegi lehenetsia';
 $string['default_session'] = 'Saioen biltegi lehenetsia';
+$string['defaultmappings'] = 'Loturarik ez dagoenean erabiliko diren biltegiak';
+$string['defaultmappings_help'] = 'Hauek dira erabiliko diren biltegiak, biltegiren bat cachearen definizioarekin lotzen ez baduzu.';
 $string['defaultstoreactions'] = 'Biltegi lehenetsiak ezin dira aldatu';
 $string['definition'] = 'Definizioa';
 $string['definitionsummaries'] = 'Cache definizio ezagunak';
@@ -158,20 +158,20 @@ $string['sharing'] = 'Partekatu';
 $string['sharing_all'] = 'Guztiak.';
 $string['sharing_help'] = 'Ezarpen honek cacheatutako datuak nola partekatuko diren zehazteko aukera ematen dizu, cluster-konfigurazioa baduzu edo biltegi bera konfiguratuta duten eta datuak partekatzea nahi duzun gune anitz baduzu. Ezarpen aurreratua da hau, aldatu baino lehen mesedez ziurtatu ezazu bere asmoa zein den ulertzen duzula.';
 $string['sharing_input'] = 'Gako pertsonalizatua (behen sartutakoa)';
+$string['sharing_siteid'] = 'ID bera duten guneak';
+$string['sharing_version'] = 'Bertsio bera duten guneak';
 $string['sharingrequired'] = 'Gutxienez partekatzeko aukera bat aukeratu behar duzu.';
 $string['sharingselected_all'] = 'Guztiak';
 $string['sharingselected_input'] = 'Gako pertsonalizatua';
 $string['sharingselected_siteid'] = 'Gunearen identifikatzailea';
 $string['sharingselected_version'] = 'Bertsioa';
-$string['sharing_siteid'] = 'ID bera duten guneak';
-$string['sharing_version'] = 'Bertsio bera duten guneak';
-$string['storeconfiguration'] = 'Biltegiaren ezarpenak';
 $string['store_default_application'] = 'Aplikazioen cacheetarako fitxategi-biltegi lehenetsia';
 $string['store_default_request'] = 'Eskaeren cache-biltegi estatiko lehenetsia';
 $string['store_default_session'] = 'Saioen saioen cache-biltegi lehenetsia';
+$string['storeconfiguration'] = 'Biltegiaren ezarpenak';
 $string['storename'] = 'Biltegiaren izena';
-$string['storenamealreadyused'] = 'Izen bakar bat aukeratru behar duzu biltegi honetarako.';
 $string['storename_help'] = 'Honek biltegiaren izena zehazten du. Sisteman zehar biltegia identifikatzeko erabiliko da eta a-z A-Z 0-9 -_ eta zuriuneak baino ezin ditu izan. Dagoeneko erabiltzen ari den izen bat zehazten saiatzen bazara errore bat jasoko duzu.';
+$string['storenamealreadyused'] = 'Izen bakar bat aukeratru behar duzu biltegi honetarako.';
 $string['storenameinvalid'] = 'Biltegiaren izena ez da baliozkoa. Soilik a-z A-Z 0-9 -_ eta zuriuneak erabili ditzakezu.';
 $string['storenotready'] = 'Biltegia ez dago prest';
 $string['storeperformance'] = 'Cache-biltegien errendimenduaren txostena - {$a} eskaera-bakar eragiketa bakoitzeko.';

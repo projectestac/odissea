@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'search', language 'es', version '3.8'.
  *
- * @package   search
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     search
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -86,15 +86,15 @@ $string['runindexertest'] = 'Ejecutar prueba de indexador';
 $string['schemaversionunknown'] = 'El motor de búsqueda no conoce la versión actual del esquema (schema).';
 $string['score'] = 'Puntuación';
 $string['search'] = 'Búsqueda';
-$string['searcharea'] = 'Área de búsqueda';
 $string['search:customfield'] = 'Campos personalizados del curso';
-$string['searching'] = 'Buscando en...';
 $string['search:message_received'] = 'Mensajes - recibidos';
 $string['search:message_sent'] = 'Mensajes - enviados';
 $string['search:mycourse'] = 'Mis cursos';
+$string['search:user'] = 'Usuarios';
+$string['searcharea'] = 'Área de búsqueda';
+$string['searching'] = 'Buscando en...';
 $string['searchnotpermitted'] = 'A Usted no se le permite hacer una búsqueda';
 $string['searchsetupdescription'] = 'Los siguientes pasos son necesarios para configurar la búsqueda global de Moodle.';
-$string['search:user'] = 'Usuarios';
 $string['searchwithin'] = 'Buscar dentro de';
 $string['seconds'] = 'segundos';
 $string['solutions'] = 'Soluciones';

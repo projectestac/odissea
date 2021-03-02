@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'chat', language 'ja', version '3.8'.
  *
- * @package   chat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     chat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,13 +36,13 @@ $string['chat:chat'] = 'チャットルームにアクセスする';
 $string['chat:deletelog'] = 'チャットログを削除する';
 $string['chat:exportparticipatedsession'] = 'あなたが参加したチャットセッションをエクスポートする';
 $string['chat:exportsession'] = 'すべてのチャットセッションをエクスポートする';
+$string['chat:readlog'] = 'チャットログを表示する';
+$string['chat:talk'] = 'チャットで会話する';
+$string['chat:view'] = 'チャット活動を表示する';
 $string['chatintro'] = '説明';
 $string['chatname'] = 'チャットルーム名';
-$string['chat:readlog'] = 'チャットログを表示する';
 $string['chatreport'] = 'チャットセッション';
-$string['chat:talk'] = 'チャットで会話する';
 $string['chattime'] = '次回のチャット時間';
-$string['chat:view'] = 'チャット活動を表示する';
 $string['compact'] = 'コンパクト';
 $string['composemessage'] = 'メッセージを作成する';
 $string['configmethod'] = 'AJAXチャットメソッドでは更新のため定期的にサーバにアクセスするためAJAXベースのチャットインターフェースを提供します。ノーマルチャットメソッドではクライアントが定期的にサーバにアクセスして内容を更新します。このメソッドは設定を必要とせず、どこでも動作しまが、チャット参加者が多くなった場合、サーバに大きな負荷がかかります。Chatサーバデーモンを使用する場合、Unixのシェルアクセスが必要ですが、結果として速い拡張可能なチャット環境となります。';
@@ -72,13 +72,13 @@ $string['explainmethodnormal'] = 'これらの設定はチャットメソッド�
 $string['generalconfig'] = '一般設定';
 $string['idle'] = 'アイドル';
 $string['indicator:cognitivedepth'] = 'チャット認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はチャット活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'チャット認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がチャット活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信, フィードバックの閲覧, フィードバックへのコメント)。';
-$string['indicator:cognitivedepth_help'] = 'この指標はチャット活動で学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = 'チャット社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はチャット活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'チャット社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がチャット活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標はチャット活動で学生が到達した社会的広がりに基づきます。';
 $string['inputarea'] = '入力エリア';
 $string['invalidid'] = 'チャットルームが見つかりませんでした!';
 $string['list_all_sessions'] = 'すべてのセッションを一覧表示する';
@@ -110,8 +110,8 @@ $string['modulename_help'] = 'チャット活動において参加者はテキ�
 $string['modulenameplural'] = 'チャット';
 $string['neverdeletemessages'] = 'メッセージを削除しない';
 $string['nextsession'] = '次のスケジュールセッション';
-$string['nochat'] = 'チャットが見つかりませんでした。';
 $string['no_complete_sessions_found'] = '完了したセッションは見つかりませんでした。';
+$string['nochat'] = 'チャットが見つかりませんでした。';
 $string['noguests'] = 'ゲストはこのチャットを利用できません。';
 $string['nomessages'] = 'メッセージがありません。';
 $string['nopermissiontoseethechatlog'] = 'あなたにはチャットログを閲覧するためのパーミッションがありません。';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'en', version '3.8'.
  *
- * @package   qbehaviour_deferredcbm
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qbehaviour_deferredcbm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,8 +40,8 @@ $string['cbmgrades_help'] = 'With Certainty Based Marking (CBM) getting every qu
 $string['cbmgrades_link'] = 'qbehaviour/deferredcbm/certaintygrade';
 $string['cbmmark'] = 'CBM mark {$a}';
 $string['certainty'] = 'Certainty';
-$string['certainty1'] = 'C=1 (Unsure: <67%)';
 $string['certainty-1'] = 'No Idea';
+$string['certainty1'] = 'C=1 (Unsure: <67%)';
 $string['certainty2'] = 'C=2 (Mid: >67%)';
 $string['certainty3'] = 'C=3 (Quite sure: >80%)';
 $string['certainty_help'] = 'Certainty-based marking requires you to indicate how reliable you think your answer is. The available levels are:
@@ -54,8 +54,8 @@ Probability correct |  <67%        | 67-80%    |    >80%
 
 Best marks are gained by acknowledging uncertainty. For example, if you think there is more than a 1 in 3 chance of being wrong, you should enter C=1 and avoid the risk of a negative mark.';
 $string['certainty_link'] = 'qbehaviour/deferredcbm/certainty';
-$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort-1'] = 'No Idea';
+$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';
 $string['certaintyshort3'] = 'C=3';
 $string['dontknow'] = 'No idea';

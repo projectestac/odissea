@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'question', language 'ko', version '3.8'.
  *
- * @package   question
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     question
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,8 +38,8 @@ $string['attemptfinishedsubmitting'] = '시도가 완료되어 제출합니다.'
 $string['attemptoptions'] = '시도 옵션';
 $string['availableq'] = '이용가능?';
 $string['badbase'] = '**: {$a}** 이전의 잘못된 베이스';
-$string['behaviour'] = '작동';
-$string['behaviourbeingused'] = '사용되는 질문진행방식: {$a}';
+$string['behaviour'] = '질문 진행방식';
+$string['behaviourbeingused'] = '사용된 질문진행방식: {$a}';
 $string['broken'] = '없는 파일로 연결된 "깨진 링크"임';
 $string['byandon'] = '<em>{$a->user}</em>가 <em>{$a->time}</em>에';
 $string['cannotcopybackup'] = '백업파일 복사 실패';
@@ -84,8 +84,8 @@ $string['check'] = '체크';
 $string['chooseqtypetoadd'] = '추가할 문형 선택';
 $string['clearwrongparts'] = '잘못된 응답 지움';
 $string['clickflag'] = '질문에 표시';
-$string['clicktoflag'] = '본 질문을 표시하려면 클릭';
-$string['clicktounflag'] = '본 질문 표지를 해제하려면 클릭';
+$string['clicktoflag'] = '나중에 참고하기 위해 질문에 표식';
+$string['clicktounflag'] = '표식 제거';
 $string['clickunflag'] = '표시 제거';
 $string['closepreview'] = '미리보기 닫기';
 $string['combinedfeedback'] = '결합된 피드백';
@@ -116,7 +116,7 @@ $string['defaultmarkmustbepositive'] = '기본 점수는 양수이어야 합니�
 $string['deletecoursecategorywithquestions'] = ' 본 강좌의 범주와 연계된 질문 은향에 질문들이 있습니다. 계속 진행하게 되면 이들이 삭제될 것입니다. 이들을 이동시키고 싶으면 질문은행 인터페이스를 사용하기 바랍니다.';
 $string['deletequestioncheck'] = '\'{$a}\'를 삭제하는 것이 확실합니까?';
 $string['deletequestionscheck'] = '다음 질문을 삭제하는 것이 확실합닊? <br /><br />{$a}';
-$string['deletingbehaviour'] = '질문 진행 \'{$a}\' 방식 삭제';
+$string['deletingbehaviour'] = '질문 진행방식 \'{$a}\' 삭제';
 $string['deletingqtype'] = '\'{$a}\' 질문 유형 삭제';
 $string['didnotmatchanyanswer'] = '[어떤 대답과도 일치하지 않습니다]';
 $string['disabled'] = '불가능';
@@ -124,14 +124,14 @@ $string['displayoptions'] = '표시 옵션';
 $string['disterror'] = '{$a} 배포판은 문제가 있음';
 $string['donothing'] = '파일을 복사/이동시키거나 링크를 변경시키지 마십시오.';
 $string['editcategories'] = '범주 변경';
-$string['editcategories_help'] = '모든 질문을 하나의 큰 목록에 넣어 두기 보다는 범주와 하위범주에 정리해 놓을 수도 있습니다.
+$string['editcategories_help'] = '모든 질문을 하나의 큰 목록에 넣어 두기 보다는 범주와 하위범주에 정리해 놓을 수 있습니다.
 
-각 범주는 범주안의 질문이 사용될 곳을 결정하는 문맥을 가지고 있습니다.
+각 범주는 범주안의 질문이 사용될 곳을 결정하는 문맥(영역)을 가지고 있습니다.
 
-* 활동 문맥 - 질문이 활동 모듈에서만 사용가능합니다.
-* 강좌 문맥 - 질문이 강좌내의 모든 활동 모듈에서 사용가능합니다.
-* 강좌 범주 문맥 - 질문이 범주내의 모든 활동 모듈과 강좌에서 사용가능합니다.
-* 시스템 문맥 - 질문이 사이트의 모든 강좌와 활동 모듈에서 사용가능합니다.
+* 활동 문맥(영역) - 질문이 활동 모듈에서만 사용가능합니다.
+* 강좌 문맥(영역) - 질문이 강좌내의 모든 활동 모듈에서 사용가능합니다.
+* 강좌 범주 문맥(영역) - 질문이 강좌 범주내의 모든 활동 모듈과 강좌에서 사용가능합니다.
+* 시스템 문맥(영역) - 질문이 사이트의 모든 강좌와 활동 모듈에서 사용가능합니다.
 
 범주는 질문이 특정 범주에서 추출되는 무작위형 질문에서도 사용됩니다.
 
@@ -159,7 +159,7 @@ $string['errormovingquestions'] = 'id {$a} 의 질문을 옮기는 중에 오류
 $string['errorpostprocess'] = '후 처리과정 중 오류 발생';
 $string['errorpreprocess'] = '전 처리과정 중 오류 발생';
 $string['errorprocess'] = '처리과정 중 오류 발생';
-$string['errorprocessingresponses'] = '응답 처리 중 오류 발생';
+$string['errorprocessingresponses'] = '응답 ({$a})을  처리하는 도중에 오류가 발생했습니다. 계속을 클릭하여 이전 페이지로 돌아간 다음 다시 시도해 보십시요.';
 $string['errorsavingcomment'] = ' 질문 {$a->name} 의 덧글을 데이터베이스에 저장하던 중 오류발생';
 $string['errorsavingflags'] = '표식 상태를 저장하는데 오류';
 $string['errorupdatingattempt'] = '시도 {$a->id} 를 데이터베이스에 업데이트하던 중 오류발생';
@@ -237,16 +237,16 @@ $string['makecopy'] = '복사본 만들기';
 $string['maketoplevelitem'] = '최 상위 단계로 이동';
 $string['manualgradeoutofrange'] = '성적이 유효한 범위를 벗어났습니다.';
 $string['manuallygraded'] = '수동채점 {$a->mark} 코멘트: {$a->comment}';
-$string['mark'] = '표식';
+$string['mark'] = '표기(점수)';
 $string['markedoutof'] = '다음 점수 중에서 점수 받음';
 $string['markedoutofmax'] = '{$a} 중 받은 점수';
 $string['markoutofmax'] = '{$a->max} 중 점수 {$a->mark}';
 $string['marks'] = '점수';
 $string['matchgrades'] = '성적 대응';
-$string['matchgradeserror'] = '성적이 목록에 없으면 오류';
 $string['matchgrades_help'] = '외부에서 가져오는 성적은 유효한 성적 목록중의 한 값고 일치해야만 합니다 - 100, 90, 80, 75, 70, 66.666, 60, 50, 40, 33.333, 30, 25, 20, 16.666, 14.2857, 12.5, 11.111, 10, 5, 0 (음수값도 역시 허용됩니다) 그렇지 않은 경우 여기에는 두 가지 옵션이 있습니다.
 * 성적이 목록에 없을 때 오류 - 만일 가져오려는 질문에 목록에 없는 점수가 있을 때는 오류메시지를 내고 그 질문을 가져오지 않을 것입니다.
 * 목록에 없을 때 가장 근접한 성적 - 만일 목록에 일치하는 값이 없을 때는 목록에서 가장 근접한 값으로 점수가 변경됩니다.';
+$string['matchgradeserror'] = '성적이 목록에 없으면 오류';
 $string['matchgradesnearest'] = '목록에 없으면 가장 가까운 점수';
 $string['missingcourseorcmid'] = '질문을 인쇄하기 위해서는 courseid나 cmid가 필요함';
 $string['missingcourseorcmidtolink'] = '질문 편집 링크를 걸기 위해서는 courseid나 cmid가 필요함';
@@ -284,7 +284,7 @@ $string['notyetanswered'] = '아직 답하지 않음';
 $string['notyourpreview'] = '이 미리보기는 ';
 $string['novirtualquestiontype'] = '질문 유형 {$}에 대한 가상 질문 유형이 없습니다.';
 $string['numqas'] = '시도 횟수';
-$string['numquestions'] = '질문 번호';
+$string['numquestions'] = '질문 수';
 $string['numquestionsandhidden'] = '{$a->numquestions} (+{$a->numhidden} 비공개)';
 $string['options'] = '옵션';
 $string['page-question-category'] = '질문 범주 페이지';
@@ -313,10 +313,10 @@ $string['published'] = '공유함';
 $string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = '본 질문 범주에는 <a href="{$a->qurl}">질문 "{$a->name}" ({$a->qtype})</a>이 있는데, 다른 강좌인 "{$a->coursename}"의 <a href="{$a->qurl}">퀴즈 "{$a->quizname}"</a>에서 사용되고 있습니다.';
 $string['questionbank'] = '질문 은행';
-$string['questionbehaviouradminsetting'] = '질문 작동 설정';
-$string['questionbehavioursdisabled'] = '비활성화할 질문 작동';
+$string['questionbehaviouradminsetting'] = '질문 진행방식 설정';
+$string['questionbehavioursdisabled'] = '비활성화할 질문 진행방식';
 $string['questionbehavioursdisabledexplained'] = '드롭다운 메뉴에 나타나지 않기를 원하는 질문진행방식의 목록을 콤마로 분리하여 입력하십시요.';
-$string['questionbehavioursorder'] = '질문 작동 순서';
+$string['questionbehavioursorder'] = '질문 진행방식 순서';
 $string['questionbehavioursorderexplained'] = '드롭다운 메뉴에 나타나기를 원하는 순서대로 질문진행방식의 목록을 콤마로 분리하여 입력하십시요.';
 $string['questioncategory'] = '질문 범주';
 $string['questioncatsfor'] = '\'{$a}\'의 질문 범주';
@@ -355,7 +355,7 @@ $string['settingsformultipletries'] = '여러번 시도';
 $string['shareincontext'] = ' {$a}에 대한 문맥에서 공유';
 $string['showhidden'] = '오래된 질문도 보여주기';
 $string['showmarkandmax'] = '점수와 최대점수 보여주기';
-$string['showmaxmarkonly'] = '최대 표식만 표시';
+$string['showmaxmarkonly'] = '최대 점수만 표시';
 $string['shown'] = '보여짐';
 $string['shownumpartscorrect'] = '올바른 응답의 갯수 보이기';
 $string['shownumpartscorrectwhenfinished'] = '질문이 완료되면 올바른 응답의 수를 보여주기';
@@ -378,10 +378,10 @@ $string['technicalinforightsummary'] = '정답 요약:{$a}';
 $string['technicalinfostate'] = '질문 상태: {$a}';
 $string['tofilecategory'] = '파일에 범주 기입';
 $string['tofilecontext'] = '파일에 문맥 기입';
-$string['uninstallbehaviour'] = '이 질문 작동 제거';
+$string['uninstallbehaviour'] = '이 질문 진행방식 제거';
 $string['uninstallqtype'] = '이 질문 유형 제거';
 $string['unknown'] = '알수없음';
-$string['unknownbehaviour'] = '알 수 없는 작동: {$a}';
+$string['unknownbehaviour'] = '알 수 없는 질문 진행방식: {$a}';
 $string['unknownorunhandledtype'] = '알수없는 혹은 처리되지 않은 질문 유형: {$a}';
 $string['unknownquestion'] = '알수 없는 질문: {$a}';
 $string['unknownquestioncatregory'] = '알수 없는 질문 범주: {$a}';

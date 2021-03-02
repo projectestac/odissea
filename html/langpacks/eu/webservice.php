@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'eu', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -46,7 +46,7 @@ $string['callablefromajax'] = 'AJAX-etik deitu dakioke';
 $string['cannotcreatetoken'] = 'Ez duzu baimenik {$a} zerbitzuarentzako web-zerbitzu tokena sortzeko.';
 $string['cannotgetcoursecontents'] = 'Ezin dira ikastaroaren edukiak lortu';
 $string['checkusercapability'] = 'Egiaztatu erabiltzailearen gaitasunak';
-$string['checkusercapabilitydescription'] = 'Erabiltzaileak erabiiltako protokoloekin lotutakoa gaitasunak izan beharko lituzke, adibidez webservice/rest:use edo webservice/soap:use. Hau lortzeko, sor ezazu web-zerbitzuetan beharrezko gaitasunak baimenduta dituen rol bat eta eslei iezaiozu web-zerbitzuaren erabiltzaileari sistemako rol moduan';
+$string['checkusercapabilitydescription'] = 'Erabiltzaileak erabililtako protokoloekin lotutakoa gaitasunak izan beharko lituzke, adibidez webservice/rest:use edo webservice/soap:use. Hau lortzeko, sor ezazu web-zerbitzuetan beharrezko gaitasunak baimenduta dituen rol bat eta esleitu iezaiozu web-zerbitzuaren erabiltzaileari sistemako rol moduan.';
 $string['configwebserviceplugins'] = 'Segurtasun-arrazoiak direla-eta, erabiliko diren protokoloak baino ez lirateke gaitu beharko.';
 $string['context'] = 'Testuingurua';
 $string['createservicedescription'] = 'Zerbitzu bat web-zerbitzu bateko funtzioen multzo bat da. Funtzioen multzo horrekin erabiltzaileei zerbitzu berri baterako sarbidea emango diezu. <strong>Gehitu zerbitzua</strong> orrian markatu \'Gaituta\' eta \'Baimendutako erabiltzaileak\' aukerak. Aukeratu \'Ez da gaitasunik behar\'.';
@@ -121,7 +121,7 @@ $string['keyshelp'] = 'Gakoak zure Moodle kontuan kanpoko aplikazioetatik sartze
 $string['loginrequired'] = 'Saioa hasi duten erabiltzaileei murriztua';
 $string['manageprotocols'] = 'Kudeatu protokoloak';
 $string['managetokens'] = 'Kudeatu token-ak';
-$string['missingcaps'] = 'Gaitasunak falta dira.';
+$string['missingcaps'] = 'Gaitasunak falta dira';
 $string['missingcaps_help'] = 'Hau da beharrezko gaitasunetatik aukeratutako erabiltzaileak ez dituen gaitasunen zerrenda. Gaitasun hauek erabiltzailearen rolari esleitu behar zaizkio zerbitzua erabiltzeko.';
 $string['missingpassword'] = 'Pasahitza falta da';
 $string['missingrequiredcapability'] = '{$a} gaitasuna beharrezkoa da.';
@@ -143,7 +143,7 @@ $string['phpresponse'] = 'XML-RPC (PHP egitura)';
 $string['postrestparam'] = 'PHP kodea REST-erako (POST request)';
 $string['potusers'] = 'Baimenik gabeko erabiltzaileak';
 $string['potusersmatching'] = 'Bat datozen baimenik gabeko erabiltzaileak';
-$string['print'] = 'Inprimatu dena';
+$string['print'] = 'Inprimatu guztia';
 $string['privacy:metadata:serviceusers'] = 'Kanpoko zerbitzu zehatz bat erabili dezaketen erabiltzaileen zerrenda';
 $string['privacy:metadata:serviceusers:iprestriction'] = 'Zerbitzua erabiltzeko mugatutako IP helbidea';
 $string['privacy:metadata:serviceusers:timecreated'] = 'Erregistroa sortu zeneko data';
@@ -156,7 +156,7 @@ $string['privacy:metadata:tokens:lastaccess'] = 'Tokena azkenengoz erabili zenek
 $string['privacy:metadata:tokens:privatetoken'] = 'Noizean behin eragiketa zehatz batzuk balidatzeko erabilitako token pribatuagoa, hala nola SSO';
 $string['privacy:metadata:tokens:timecreated'] = 'Tokena sortu zeneko unea';
 $string['privacy:metadata:tokens:token'] = 'Erabiltzailearen tokena';
-$string['privacy:metadata:tokens:tokentype'] = 'Token-mota';
+$string['privacy:metadata:tokens:tokentype'] = 'Token mota';
 $string['privacy:metadata:tokens:userid'] = 'Tokenaren jabea den erabiltzailearen IDa';
 $string['privacy:metadata:tokens:validuntil'] = 'Tokena iraungiko deneko unea';
 $string['privacy:request:notexportedsecurity'] = 'Ez da esportatzen segurtasun-arrazoiak direla eta';
@@ -188,8 +188,8 @@ $string['selectspecificuserdescription'] = 'Gehitu web-zerbitzuetako erabiltzail
 $string['service'] = 'Zerbitzua';
 $string['servicehelpexplanation'] = 'Zerbitzu bat funtzioen multzo bat da. Zerbitzu batera erabiltzaile guztiek izan dezakete sarbidea edo zehaztutako erabiltzaileak soilik.';
 $string['servicename'] = 'Zerbitzuaren izena';
-$string['servicenotavailable'] = 'Web-zerbitzua ez dago eskuragarri (ez da existitzen edo desgaituta egon daiteke)';
-$string['servicerequireslogin'] = 'Web-zerbitzua ez dago eskuragarri (saioa itxi egin da edo iraungi da)';
+$string['servicenotavailable'] = 'Web-zerbitzua ez dago eskuragarri (ez da existitzen edo baliteke desgaituta egotea).';
+$string['servicerequireslogin'] = 'Web-zerbitzua ez dago eskuragarri (saioa itxi egin da edo iraungi da).';
 $string['servicesbuiltin'] = 'Barne dauden zerbitzuak';
 $string['servicescustom'] = 'Pertsonalizatu zerbitzuak';
 $string['serviceusers'] = 'Baimendutako erabiltzaileak';
@@ -205,7 +205,7 @@ $string['testclient'] = 'Web-zerbitzuaren proba-bezeroa';
 $string['testclientdescription'] = '* Web-zerbitzuaren proba-bezeroak funtzioak <strong>BENETAN exekutatzen ditu</strong>. Ez probatu ezagutzen ez dituzun funtzioak. <br/>
 * Existitzen diren web-zerbitzuko funtzio guztiak oraindik ez dira proba-bezeroan implementatu.<br/>
 * Erabiltzaile batek funtzio batzuk erabili ezin dituela egiaztatzeko, baimentzen ez dituzun funtzio batzuk probatu ditzakezu.<br/>
-* Errore-mezu argiagoak ikusteko <strong>{$a->mode}</strong> arazketa-modua {$a->atag}-(e)ra ezarri.';
+* Errore-mezu argiagoak ikusteko <strong>{$a->mode}</strong> arazketa-modua {$a->atag}(e)ra ezarri.';
 $string['testwithtestclient'] = 'Probatu zerbitzua';
 $string['testwithtestclientdescription'] = 'Simulatu kanpotiko zerbitzurako sarbidea web-zerbitzuaren proba-bezeroa erabilita. Erabil ezazu token bidezko autentifikazioa gaituta duen gaitutako protokolo bat. <strong>KONTUZ: Probatuko dituzun funtziok erabiltzaile honentzako EXEKUTATUKO DIRA, beraz probatuko duzuna kontuz aukeratu!</strong>';
 $string['token'] = 'Token-a';
@@ -224,7 +224,7 @@ $string['usernameorid'] = 'Erabiltzaile-izena / Erabiltzailearen IDa';
 $string['usernameorid_help'] = 'Idatzi erabiltzaile-izena edo erabiltzailearen IDa.';
 $string['usernameoridnousererror'] = 'Ez da aurkitu erabiltzaile-izen/ erabiltzailearen ID hori duen erabiltzailerik.';
 $string['usernameoridoccurenceerror'] = 'Erabiltzaile-izen hori duen erabiltzaile bat baino gehiago aurkitu da. Mesedez, idatzi erabiltzaile IDa.';
-$string['usernotallowed'] = 'Erabiltzaileak ez du zerbitzu hau erabiltzeko baimenik. Aurretik erabiltzaile honi sarbidea eman behar diozu {$a}-(e)ko baimendutako erabiltzaileen kudeaketa-orrian.';
+$string['usernotallowed'] = 'Erabiltzaileak ez du zerbitzu hau erabiltzeko baimenik. Aurretik erabiltzaile honi sarbidea eman behar diozu {$a}(e)ko baimendutako erabiltzaileen kudeaketa-orrian.';
 $string['userservices'] = 'Erabiltzailearen zerbitzuak: {$a}';
 $string['usersettingssaved'] = 'Erabiltzailearen ezarpenak gorde dira';
 $string['validuntil'] = 'Noiz arte indarrean';

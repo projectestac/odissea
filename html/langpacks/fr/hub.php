@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hub', language 'fr', version '3.8'.
  *
- * @package   hub
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hub
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,9 +35,9 @@ $string['analyticsactionsnotuseful'] = 'Nombre d\'actions signalant une prédict
 $string['analyticsenabledmodels'] = 'Nombre de modèles de prédiction activés ({$a})';
 $string['analyticspredictions'] = 'Nombre de prédictions générées ({$a})';
 $string['audience'] = 'Public cible';
+$string['audience_help'] = 'Veuillez sélectionner le public cible de ce cours.';
 $string['audienceadmins'] = 'Administrateurs Moodle';
 $string['audienceeducators'] = 'Formateurs';
-$string['audience_help'] = 'Veuillez sélectionner le public cible de ce cours.';
 $string['audiencestudents'] = 'Étudiants';
 $string['badgesnumber'] = 'Nombre de badges ({$a})';
 $string['communityremoved'] = 'Ce lien de cours a été retiré de votre liste';
@@ -60,7 +60,7 @@ $string['creatornotes_help'] = 'Les notes du créateur fournissent une aide pour
 $string['deletescreenshots'] = 'Supprimer ces copies d\'écran';
 $string['deletescreenshots_help'] = 'Supprimer toutes les copies d\'écrans déposées.';
 $string['demourl'] = 'URL démo';
-$string['demourl_help'] = 'Tapez une URL de démo de votre cours. C\'est par défaut l\'URL de votre cours. Cette URL de démo est affichée comme un lien dans les résultats de recherche.';
+$string['demourl_help'] = 'Tapez l\'URL de démo de votre cours. C\'est par défaut l\'URL de votre cours. Cette URL de démo est affichée comme un lien dans les résultats de recherche.';
 $string['description'] = 'Description';
 $string['description_help'] = 'Ce texte descriptif sera affiché dans la liste des cours sur Moodle.net.';
 $string['detectednotexistingpublication'] = '{$a->hubname} mentionne un cours qui n\'existe plus. Veuillez informer l\'administrateur de ce serveur d\'échanges que la publication numéro {$a->id} doit être retirée.';

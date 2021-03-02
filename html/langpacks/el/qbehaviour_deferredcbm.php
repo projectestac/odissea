@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'el', version '3.8'.
  *
- * @package   qbehaviour_deferredcbm
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qbehaviour_deferredcbm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,11 +41,11 @@ $string['cbmgrades_help'] = 'Με την βαθμολόγηση με βάση τ
 $string['cbmgrades_link'] = 'συμπεριφοράερ/καθυστερημένηCBM/βαθμόςβεβαιότητας';
 $string['cbmmark'] = 'Βαθμοί CBM {$a}';
 $string['certainty'] = 'Βεβαιότητα';
-$string['certainty1'] = 'C=1 (Αβέβαιος: <67%)';
 $string['certainty-1'] = 'Δεν έχω ιδέα';
+$string['certainty1'] = 'C=1 (Αβέβαιος: <67%)';
 $string['certainty2'] = 'C=2 (Μέση βεβαιότητα: >67%)';
 $string['certainty3'] = 'C=3 (Αρκετή βεβαιότητα: >80%)';
-$string['certainty_help'] = 'Η βαθμολόγηση βάσει βεβαιότητας (Certainty Based Marking, για την αποφυγή τυχερών απαντήσεων) απαιτεί να δηλώσετε πόσο αξιόπιστη νομίζετε εσείς ότι είναι η απάντησή σας. Τα διαθέσιμα επίπεδα είναι:
+$string['certainty_help'] = 'Η βαθμολόγηση βάσει βεβαιότητας (Certainty Based Marking, για την αποφυγή τυχερών απαντήσεων) απαιτεί να υποδείξετε πόσο αξιόπιστη νομίζετε ότι είναι η απάντησή σας. Τα διαθέσιμα επίπεδα είναι:
 
 Επίπεδο βεβαιότητας         | Β = 1 (Αβέβαιη) | Β = 2 (Mid) | Β = 3 (αρκετά σίγουρο)
 --------------------------- | --------------- | ----------- | ----------------------
@@ -55,8 +55,8 @@ $string['certainty_help'] = 'Η βαθμολόγηση βάσει βεβαιότ
 
 Οι καλύτεροι βαθμοί κερδίζονται αναγνωρίζοντας την αβεβαιότητα. Για παράδειγμα, αν νομίζετε ότι υπάρχει μεγαλύτερη πιθανότητα από 1 στις 3 να κάνετε λάθος, πρέπει να εισάγετε Β = 1 και να αποφύγετε τον κίνδυνο αρνητικού σημείου.';
 $string['certainty_link'] = 'συμπεριφοράερ/καθυστερημένηCBM/βεβαιότητα';
-$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort-1'] = 'Δεν έχω ιδέα';
+$string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';
 $string['certaintyshort3'] = 'C=3';
 $string['dontknow'] = 'Δεν έχω ιδέα';

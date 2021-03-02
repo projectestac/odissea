@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository', language 'ko', version '3.8'.
  *
- * @package   repository
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,21 +43,21 @@ $string['areauserdraft'] = '초안';
 $string['areauserpersonal'] = '개인 파일';
 $string['areauserprofile'] = '개인정보';
 $string['attachedfiles'] = '첨부 파일';
-$string['attachment'] = '첨부';
+$string['attachment'] = '첨부물';
 $string['author'] = '저자';
 $string['automatedbackup'] = '자동화된 백업';
 $string['back'] = '<<뒤로';
 $string['backtodraftfiles'] = '<<초안 파일 관리자로 돌아가기';
-$string['cachecleared'] = '임시파일 제거됨';
-$string['cacheexpire'] = '캐쉬 기한만료';
+$string['cachecleared'] = '캐시된 파일 제거됨';
+$string['cacheexpire'] = '캐쉬가 만료되었습니다';
 $string['cannotaccessparentwin'] = '만일 부모 창이 HTTPS에 있다면 window.opener 객체에 접근하도록 허용되지 않아서 저장소를 자동으로 새로고침 할 수 없습니다. 하지만 세션이 있어서 파일 선택기로 돌아가서 저장소를 선택하면 작동할 것입니다.';
 $string['cannotdelete'] = '이 파일은 지울 수 없음';
 $string['cannotdownload'] = '이 파일을 내려받을 수 없음';
 $string['cannotdownloaddir'] = '이 폴더는 내려받을 수 없음';
 $string['cannotinitplugin'] = 'plugin_init 호출 실패';
 $string['choosealink'] = '연결고리 선택...';
-$string['chooselicense'] = '사용허가 선택';
-$string['cleancache'] = '내 임시파일 정리';
+$string['chooselicense'] = '라이선스 선택';
+$string['cleancache'] = '내 캐시 파일 청소';
 $string['close'] = '닫기';
 $string['commonrepositorysettings'] = '공통 저장소 설정';
 $string['configallowexternallinks'] = '이 옵션은 모든 사용자에게 외부 미디어가 무들에 복사되게 할지를 선택하게 해 줍니다. 만일 이것이 꺼져 있으면 미디어가 무들에 항상 복사됩니다(이는 전체적인 데이터 통합성과 보안을 위해 일반적으로 가장 좋습니다.) 만이 이것이 켜져 있으면 사용자는 미디어를 텍스트에 추가할 때마다 선택해야 합니다.';
@@ -100,7 +100,7 @@ $string['entername'] = '경로명을 입력하세요.';
 $string['enternewname'] = '새로운 파일명을 입력하세요.';
 $string['error'] = '알수 없는 오류 발생!';
 $string['errornotyourfile'] = '당신이 추가하지 않은 파일을 선택할 수 없습니다.';
-$string['errorpostmaxsize'] = '업로드한 파일이 php.ini 에 정의한 max_post_size를 초과합니다.';
+$string['errorpostmaxsize'] = '업로드한 파일이 php.ini 에 정의한 max_post_size를 초과하는 것 같습니다.';
 $string['erroruniquename'] = '저장소 인스턴스 이름은 유일해야 합니다.';
 $string['existingrepository'] = '이미 있는 저장소';
 $string['federatedsearch'] = '통합 검색';
@@ -139,7 +139,7 @@ $string['license'] = '라이선스';
 $string['linkexternal'] = '외부 연결고리';
 $string['listview'] = '목록으로 보기';
 $string['loading'] = '불러오는 중...';
-$string['login'] = '로그인';
+$string['login'] = '당신의 계정으로 로그인 하십시요.';
 $string['logout'] = '나가기';
 $string['lostsource'] = '오류: 소스가 없습니다. {$a}';
 $string['makefileinternal'] = '파일 사본을 만듭니다.';
@@ -151,13 +151,13 @@ $string['manageuserrepository'] = '개별 저장소 관리';
 $string['moving'] = '이동';
 $string['name'] = '이름';
 $string['newfolder'] = '새 폴더';
-$string['newfoldername'] = '새 폴더이름';
+$string['newfoldername'] = '새 폴더 이름';
 $string['noenter'] = '입력내용 없음';
 $string['nofilesattached'] = '첨부물 없음';
 $string['nofilesavailable'] = '쓸 수 있는 파일이 없음';
 $string['nomorefiles'] = '더 이상의 첨부물은 허용되지 않음';
 $string['nopathselected'] = '목적 경로가 아직 선택되지 않았습니다.( 선택하기 위해 트리노드를 더블 클릭하십시요)';
-$string['nopermissiontoaccess'] = '저장소 접근 권한 없음';
+$string['nopermissiontoaccess'] = '이 저장소에 대한 접근 권한 없음';
 $string['norepositoriesavailable'] = '죄송합니다. 현재 저장소중에서 필요한 포맷으로 파일을 보내주는 저장소가 없습니다.';
 $string['norepositoriesexternalavailable'] = '죄송합니다. 현재 저장소중에서 필요한 외부 파일을 보내주는 저장소가 없습니다.';
 $string['noresult'] = '검색결과 없음';
@@ -198,7 +198,7 @@ $string['saving'] = '저장 중';
 $string['search'] = '검색';
 $string['searching'] = '다음에서 검색';
 $string['searchrepo'] = '레포지토리 검색';
-$string['sectionbackup'] = '영역 백업';
+$string['sectionbackup'] = '섹션 백업';
 $string['select'] = '선택';
 $string['setmainfile'] = '주 파일 설정';
 $string['settings'] = '설정';

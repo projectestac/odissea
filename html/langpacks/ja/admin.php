@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'admin', language 'ja', version '3.8'.
  *
- * @package   admin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     admin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,11 +30,11 @@ $string['accounts'] = 'アカウント';
 $string['addcategory'] = 'カテゴリを追加する';
 $string['additionalhtml'] = '追加HTML';
 $string['additionalhtml_desc'] = 'これらの設定ではあなたがすべてのページに追加したいHTMLを指定することができます。あなたはページのHEADタグ内、BODYタグが開かれた直後、またはBODYタグが閉じられる直前にHTMLを設定することができます。<br />この設定により、すべてのページにカスタムヘッダおよびフッタを追加またはGoogle Analyticsのようなサービスのサポートをあなたが選択したテーマから独立して簡単に追加することができます。';
+$string['additionalhtml_heading'] = 'すべてのページに追加される追加HTMLです。';
 $string['additionalhtmlfooter'] = 'BODYタグが閉じられる前';
 $string['additionalhtmlfooter_desc'] = 'このコンテンツはすべてのページのBODYタグが閉じられる直前に追加されます。';
 $string['additionalhtmlhead'] = 'HEADタグ内';
 $string['additionalhtmlhead_desc'] = 'このコンテンツはすべてのページのHEADタグの最後に追加されます。';
-$string['additionalhtml_heading'] = 'すべてのページに追加される追加HTMLです。';
 $string['additionalhtmltopofbody'] = 'BODYタグが開かれた時';
 $string['additionalhtmltopofbody_desc'] = 'このコンテンツはすべてのページのBODYタグが開かれた直後に追加されます。';
 $string['admincategory'] = 'カテゴリ: {$a}';
@@ -86,9 +86,9 @@ $string['autologinguests'] = 'ゲストの自動ログイン';
 $string['availablelicenses'] = '利用可能なライセンス';
 $string['availableto'] = '利用可能';
 $string['backgroundcolour'] = '透過色';
-$string['backups'] = 'バックアップ';
 $string['backup_shortname'] = 'バックアップファイル名にコース名を使用する';
 $string['backup_shortnamehelp'] = 'コース名をバックアップファイル名の一部として使用します。';
+$string['backups'] = 'バックアップ';
 $string['badwordsconfig'] = 'あなたの使用禁止用語をカンマで区切って入力してください。';
 $string['badwordsdefault'] = 'カスタムリストが空白の場合、言語パックからデフォルトリストが使用されます。';
 $string['badwordslist'] = 'カスタム使用禁止用語リスト';
@@ -118,11 +118,11 @@ $string['cachesettings'] = 'キャッシュ設定';
 $string['cachetemplates'] = 'キャッシュテンプレート';
 $string['cachetemplates_help'] = 'テンプレートキャッシングはページ読み込みのパフォーマンスを改善するため、実運用サイトへの適用を強くお勧めします。恐らく、開発者はこの機能を無効にしても良いでしょう。';
 $string['caching'] = 'キャッシング';
+$string['calendar_weekend'] = '週末日';
 $string['calendarexportsalt'] = 'カレンダーエクスポートsalt';
 $string['calendarsettings'] = 'カレンダー';
 $string['calendartype'] = 'カレンダータイプ';
 $string['calendartype_desc'] = 'サイト全体のカレンダータイプを選択してください。この設定はコース設定またはユーザ個人のプロファイルでオーバーライドすることができます。';
-$string['calendar_weekend'] = '週末日';
 $string['cannotdeletemodfilter'] = '「 {$a->module} 」モジュールの一部のため、あなたは「 {$a->filter} 」をアンインストールできません。';
 $string['cannotuninstall'] = '{$a} をアンインストールすることはできません。';
 $string['categoryemail'] = 'メール';
@@ -282,7 +282,7 @@ $string['configfullnamedisplay'] = 'ここでは氏名がどのように表示�
 
 単一言語を使用したほとんどのサイトでは「名 + 姓」を使用した方が良いでしょう。しかし、あなたは姓を完全に隠すこともできます。使用できるプレースホルダは次のとおりです:
 firstname, lastname, firstnamephonetic, lastnamephonetic, middlename, alternatename';
-$string['configgeoipfile'] = 'GeoLite2 Cityバイナリデータファイルのロケーションです。このファイルはMoodleディストリビューションの一部ではなく、<a href="https://www.maxmind.com/">MaxMind</a>から個別に取得する必要があります。あなたは商用バージョンを購入または無料バージョンを使用できます。<a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>からダウンロードできるCityデータベースファイルをダウンロードする場合、あなたは登録する必要があります。あなたが登録してファイルをダウンロードした後、あなたのサーバの「 {$a} 」ディレクトリで展開してください。';
+$string['configgeoipfile'] = 'GeoLite2 City バイナリデータファイルのロケーションです。このファイルはMoodleディストリビューションの一部ではなく、<a href="https://www.maxmind.com/">MaxMind</a>から個別に取得する必要があります。あなたは商用バージョンを購入、または無料バージョンを使用することができます。無料バージョンの場合、<a href="https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a>からダウンロードした後、あなたのサーバの「 {$a} 」ディレクトリに展開してください。';
 $string['configgetremoteaddrconf'] = 'リバースプロキシの背後にサーバを設置している場合、あなたはリモートIPアドレスを含んだ信頼できるHTTPヘッダを指定することができます。ヘッダは順番に読まれ最初の有効なヘッダが使用されます。';
 $string['configgradebookroles'] = 'ここでは誰が評定表に表示されるか設定することができます。ユーザがコース評定表で表示されるためにはこれらの中から少なくとも１つのロールを割り当ててください。';
 $string['configgradeexport'] = 'どの評定表エクスポートフォーマットをあなたの主要な評定表エクスポート方法にするか選択してください。選択されたフォーマットのプラグインが設定され、すべての評定の「最新エクスポート」フィールドに使用されます。例えばエクスポートされたレコードは「新規」または「更新」レコードとして認識されます。この設定に関して自信を持てない場合、すべてをチェックしないままにしてください。';
@@ -423,6 +423,7 @@ $string['contextlocking_desc'] = 'この設定により選択されたカテゴ�
 $string['cookiehttponly'] = 'HTTPクッキーのみ';
 $string['cookiesecure'] = 'セキュアクッキーのみ';
 $string['country'] = 'デフォルトの国';
+$string['course_customfield'] = 'コースカスタムフィールド';
 $string['coursecolor'] = '色 {$a}';
 $string['coursecolorheading_desc'] = 'コース設定でコース画像が設定されていないコースはダッシュボードで模様入りのコースカードとともに表示されます。模様に使用される色は以下で指定できます。';
 $string['coursecolorsettings'] = 'コースカード色';
@@ -430,7 +431,6 @@ $string['coursecontact'] = 'コース連絡先';
 $string['coursecontact_desc'] = 'ここでは誰がコース説明に表示されるか設定することができます。ユーザがコース説明に表示されるためにはこれらの中から少なくとも１つのコースロールを割り当てる必要があります。';
 $string['coursecontactduplicates'] = 'すべてのコース連絡先ロールを表示する';
 $string['coursecontactduplicates_desc'] = 'この設定を有効にした場合、選択された複数のコース連絡先ロールのユーザがロールと共にコース説明に表示されます。そうでない場合、 (どれがサイト管理の「ロールを定義する」で上位に表示されていたとしても) 1つのロールのみが表示されます。';
-$string['course_customfield'] = 'コースカスタムフィールド';
 $string['coursegraceperiodafter'] = '過去のコースの猶予期間';
 $string['coursegraceperiodbefore'] = '未来のコースの猶予期間';
 $string['courselistshortnames'] = '拡張コース名を表示する';
@@ -447,10 +447,10 @@ $string['courseswithsummarieslimit'] = 'コース概要を含むコースの制�
 $string['creatornewroleid'] = '新しいコース内でのコース作成者ロール';
 $string['creatornewroleid_help'] = 'ユーザに新しいコースを管理するパーミッションがない場合、このロールを使用して自動的に登録されます。';
 $string['cron'] = 'Cron';
+$string['cron_help'] = 'cron.phpメンテナンススクリプトは新しいフォーラム投稿のコピーをメール送信する等、スケジュールベースでMoodleモジュールによるタスク実行をサポートします。スクリプトは定期的 (理想的には毎分) に実行してください。';
 $string['cronclionly'] = 'コマンドラインでのみcronを実行する';
 $string['cronerrorclionly'] = '申し訳ございません、このページへのインターネットアクセスは管理者より無効にされています。';
 $string['cronerrorpassword'] = '申し訳ございません、あなたはこのページにアクセスするための有効なパスワードを提供していません。';
-$string['cron_help'] = 'cron.phpメンテナンススクリプトは新しいフォーラム投稿のコピーをメール送信する等、スケジュールベースでMoodleモジュールによるタスク実行をサポートします。スクリプトは定期的 (理想的には毎分) に実行してください。';
 $string['croninfrequent'] = '最後の2件のcronメンテナンススクリプトの実行間隔は {$a} 秒以上です。私たちはさらに頻繁に実行されるよう設定することをお勧めします。';
 $string['cronremotepassword'] = 'リモートアクセスのcronパスワード';
 $string['cronwarning'] = '<a href="{$a}">cron.phpメンテナンススクリプト</a>が少なくとも24時間稼動していません。';
@@ -593,7 +593,7 @@ $string['errorwithsettings'] = 'エラーが発生したため、いくつかの
 $string['eventshandlersinuse'] = 'あなたのシステムの次のプラグインは廃止予定のハンドラ「 {$a} 」のイベント1APIを使用しています。イベント2APIを使用するよう更新してください。詳細は次をご覧ください: https://docs.moodle.org/dev/Event_2#Event_dispatching_and_observers';
 $string['everyonewhocan'] = '「 {$a} 」ことができるユーザすべて';
 $string['exceptions'] = '例外';
-$string['execpathnotallowed'] = 'config.php内で実行およびローカルパスを無効に設定することができます。';
+$string['execpathnotallowed'] = 'config.php内で実行パスおよびローカルパスを無効に設定することができます。';
 $string['experimental'] = '実験用';
 $string['experimentalsettings'] = '実験用設定';
 $string['extendedusernamechars'] = 'ユーザ名に拡張文字を許可する';
@@ -686,7 +686,6 @@ $string['intlrequired'] = 'intl拡張モジュールはロケールのソート�
 $string['invalidagedigitalconsent'] = 'デジタル許可年齢が有効ではありません: {$a}';
 $string['invalidforgottenpasswordurl'] = 'パスワード喪失URLが有効なURLではありません。';
 $string['invalidsection'] = 'セクションが正しくありません。';
-$string['invalidthemepreset'] = '選択されたプリセットファイルはこのテーマに互換性がありません。SCSSコンパイルエラーは次のとおりです: {$a}';
 $string['invaliduserchangeme'] = 'ユーザ名「changeme」は予約されています -- あなたはこのユーザ名のアカウントを作成することができません。';
 $string['ipblocked'] = '現在、このサイトは利用できません。';
 $string['ipblocker'] = 'IPブロッカー';
@@ -748,9 +747,9 @@ $string['loginpageautofocus'] = 'ログインページフォームのオート�
 $string['loginpageautofocus_help'] = 'この設定を有効にした場合、ログインページのユーザビリティを改善します。しかし、フィールドにオートフォーカスさせる場合、アクセシビリティ問題に関して考慮した方が良いでしょう。';
 $string['loglifetime'] = 'ログの保存期間';
 $string['logo'] = 'ロゴ';
+$string['logo_desc'] = '完全なロゴはいくつかのテーマ (例 コアテーマ) で装飾のために使用されます。使用時に縮小されるため  (およびパフォーマンスのためにキャッシュされるため)、このイメージは極めて高い解像度にすることができます。ロゴは高さより幅が広い方が良い結果となります。許可されるイメージは次のとおりです: PNGまたJPEG';
 $string['logocompact'] = 'コンパクトロゴ';
 $string['logocompact_desc'] = '上と同じエンブレム、シールドまたはアイコンのようなロゴのコンパクトバージョンです。イメージは小さなサイズでも鮮明なるようにしてください。許可されるイメージは次のとおりです: PNGまたJPEG';
-$string['logo_desc'] = '完全なロゴはいくつかのテーマ (例 コアテーマ) で装飾のために使用されます。使用時に縮小されるため  (およびパフォーマンスのためにキャッシュされるため)、このイメージは極めて高い解像度にすることができます。ロゴは高さより幅が広い方が良い結果となります。許可されるイメージは次のとおりです: PNGまたJPEG';
 $string['logossettings'] = 'ロゴ';
 $string['logstorenotrequired'] = 'ログストア不要';
 $string['logstoressupported'] = 'このレポートをサポートするログストア';
@@ -944,8 +943,8 @@ $string['pluginschecktodo'] = 'このMoodleバージョンをインストール�
 $string['pluginsoverview'] = 'プラグイン概要';
 $string['pluginsoverviewsee'] = '詳細は<a href="{$a->url}">プラグイン概要</a>ページをご覧ください。';
 $string['policysettings'] = 'ポリシー設定';
-$string['privacyandpolicies'] = 'プライバシーおよびポリシー';
 $string['privacy:metadata'] = '管理プラグインはいかなる個人データも保存しません。';
+$string['privacyandpolicies'] = 'プライバシーおよびポリシー';
 $string['privacysettings'] = 'プライバシー設定';
 $string['profilecategory'] = 'カテゴリ';
 $string['profilecategoryname'] = 'カテゴリ名 (ユニークにしてください)';
@@ -995,10 +994,10 @@ $string['profileshortnamenotunique'] = 'この省略名はすでに使用され�
 $string['profilesignup'] = 'サインアップページに表示しますか?';
 $string['profilespecificsettings'] = '詳細設定';
 $string['profilevisible'] = 'このフィールドを誰に表示しますか?';
-$string['profilevisibleall'] = 'すべての人に表示する';
 $string['profilevisible_help'] = '* 非表示 - 管理者のみ閲覧できる個人情報です。
 * ユーザに表示する - ユーザおよび管理者のみ閲覧できる個人情報です。
 * すべての人に表示する';
+$string['profilevisibleall'] = 'すべての人に表示する';
 $string['profilevisiblenone'] = '非表示';
 $string['profilevisibleprivate'] = 'ユーザに表示する';
 $string['profiling'] = 'プロファイリング';
@@ -1108,10 +1107,10 @@ $string['scssinvalid'] = 'SCSSコードが有効ではありません。エラ�
 $string['search'] = '検索';
 $string['searchablecourses'] = '検索可能コース';
 $string['searchallavailablecourses'] = '検索可能コース';
-$string['searchallavailablecoursesdesc'] = '登録済みコースのみを検索するよう設定した場合、コース情報 (名称および概要) およびコースコンテンツのみユーザが登録しているコースで検索されます。そうでない場合、例えばゲストアクセスが有効にされているコースのようにユーザがアクセスできるコースすべてのコース情報およびコースコンテンツが検索されます。';
 $string['searchallavailablecourses_desc'] = '大量のコースを検索する場合、検索エンジンが動作しないことも考えられます。あなたがコース検索数を制限したい場合、登録済みコースのみ検索するよう設定してください。';
 $string['searchallavailablecourses_off'] = '登録済みコース内のみ検索する';
 $string['searchallavailablecourses_on'] = 'ユーザがアクセス可能なコースすべてを検索する';
+$string['searchallavailablecoursesdesc'] = '登録済みコースのみを検索するよう設定した場合、コース情報 (名称および概要) およびコースコンテンツのみユーザが登録しているコースで検索されます。そうでない場合、例えばゲストアクセスが有効にされているコースのようにユーザがアクセスできるコースすべてのコース情報およびコースコンテンツが検索されます。';
 $string['searchalldeleted'] = 'すべてのインデックスコンテンツが削除されました。';
 $string['searchareadisabled'] = '検索エリア無効';
 $string['searchareaenabled'] = '検索エリア有効';
@@ -1180,13 +1179,13 @@ $string['sitemaintenancewarning2'] = 'あなたのサイトは現在メンテナ
 $string['sitemenubar'] = 'サイトナビゲーション';
 $string['sitepolicies'] = 'サイトセキュリティ設定';
 $string['sitepolicy'] = 'サイトポリシーURL';
+$string['sitepolicy_help'] = 'すべての登録済みユーザがサイトにアクセスする前に閲覧および同意する必要のあるサイトポリシーのURLです。この設定はサイトポリシーハンドラがデフォルト (コア) に設定されている場合のみ影響する点に留意してください。';
 $string['sitepolicyguest'] = 'ゲストのサイトポリシーURL';
 $string['sitepolicyguest_help'] = 'すべてのゲストがサイトにアクセスする前に閲覧および同意する必要のあるサイトポリシーのURLです。この設定はサイトポリシーハンドラがデフォルト (コア) に設定されている場合のみ影響する点に留意してください。';
 $string['sitepolicyhandler'] = 'サイトポリシーハンドラ';
-$string['sitepolicyhandlercore'] = 'デフォルト (コア)';
 $string['sitepolicyhandler_desc'] = 'ここではポリシーおよびユーザ同意がどのように管理されるか決定します。デフォルト (コア) ハンドラはサイトポリシーURLを有効にしてゲストのサイトポリシーURLを指定します。ポリシーハンドラはサイト、プライバシーおよび他のポリシーを有効にして設定します。ユーザ同意を閲覧できるようにもします。必要であれば未成年の代わりに同意することもできます。';
+$string['sitepolicyhandlercore'] = 'デフォルト (コア)';
 $string['sitepolicyhandlerplugin'] = '{$a->name} ({$a->component})';
-$string['sitepolicy_help'] = 'すべての登録済みユーザがサイトにアクセスする前に閲覧および同意する必要のあるサイトポリシーのURLです。この設定はサイトポリシーハンドラがデフォルト (コア) に設定されている場合のみ影響する点に留意してください。';
 $string['sitesectionhelp'] = '選択した場合、トピックセクションがサイトフロントページに表示されます。';
 $string['sixtyfourbitswarning'] = 'あなたのサイトは64ビットのPHPバージョンを使用していないことが検出されました。将来的な互換性を保証するため、あなたのサイトをアップグレードすることをお勧めします。';
 $string['slasharguments'] = 'スラッシュ引数を使用する';
@@ -1237,6 +1236,30 @@ $string['task_adhoc_concurrency_limit'] = 'アドホックタスク同時実行�
 $string['task_adhoc_concurrency_limit_desc'] = '同時に実行できるアドホックタスクランナー数です。制限が高い場合、そして多くのアドホックがある場合、スケジュールタスクを定期的に実行できなくなります。ゼロに設定した場合、アドホックタスク処理は完全に無効にされます。';
 $string['task_adhoc_max_runtime'] = 'アドホックタスクランナー生存期間';
 $string['task_adhoc_max_runtime_desc'] = 'アドホックランナーが取り除かれるまでの時間です。キューに入れられるアドホックタスク数の制限がなくなるため低い継続期間を推奨します。この数が高すぎる場合、そして多くのアドホックタスクがキューに入れられている場合、スケジュールタスクを定期的に実行できなくなります。';
+$string['task_dbstats'] = 'データベース';
+$string['task_duration'] = '期間';
+$string['task_logmode'] = 'ログの記録タイミング';
+$string['task_logmode_all'] = 'すべてのジョブのログアウトプットを保存する';
+$string['task_logmode_desc'] = 'あなたはタスクがログに記録されるタイミングを選択することができます。デフォルトではログは常に取得されます。あなたはログの記録を完全に無効にすること、またはタスクが失敗した場合のみログに記録することができます。';
+$string['task_logmode_failonly'] = '失敗したジョブのログのみ保存する';
+$string['task_logmode_none'] = '何もログに記録しない';
+$string['task_logretainruns'] = '実行保持';
+$string['task_logretainruns_desc'] = '保持するタスクの実行数です。この設定は「保持期間」設定に関連します。どちらか最初に達した方が適用されます。';
+$string['task_logretention'] = '保持期間';
+$string['task_logretention_desc'] = 'ログが存続する最大期間です。この設定は「実行保持」設定と関連します。どちらか最初に達した方が適用されます。';
+$string['task_logtostdout'] = 'ログアウトプットを表示する';
+$string['task_logtostdout_desc'] = 'ログが実行中でアウトプットが取得された場合、取得されたアウトプットもタスク実行として表示するかどうか指定します。';
+$string['task_result'] = '結果';
+$string['task_result:failed'] = '失敗';
+$string['task_scheduled_concurrency_limit'] = 'スケジュールタスク同時実行制限';
+$string['task_scheduled_concurrency_limit_desc'] = '同時に実行できるスケジュールタスクランナー数です。制限が高い場合、サーバにはパフォーマンスに影響する高い負荷がかかってしまう可能性があります。ゼロに設定した場合、スケジュールタスク処理が完全に無効にされます。';
+$string['task_scheduled_max_runtime'] = 'スケジュールタスクランナー生存期間';
+$string['task_scheduled_max_runtime_desc'] = 'スケジュールタスクが取り除かれるまでの時間です。';
+$string['task_starttime'] = '開始日時';
+$string['task_stats:dbreads'] = '{$a} 読み込み';
+$string['task_stats:dbwrites'] = '{$a} 書き込み';
+$string['task_type:adhoc'] = 'アドホック';
+$string['task_type:scheduled'] = 'スケジュール';
 $string['taskadmintitle'] = 'タスク';
 $string['taskanalyticscleanup'] = 'アナリティクスクリーンアップ';
 $string['taskautomatedbackup'] = '自動バックアップ';
@@ -1252,11 +1275,9 @@ $string['taskcompletiondaily'] = '完了マーク開始';
 $string['taskcompletionregular'] = '標準完了データを計算する';
 $string['taskcontextcleanup'] = 'コンテクストをクリーンアップする';
 $string['taskcreatecontexts'] = '不足しているコンテクストを作成する';
-$string['task_dbstats'] = 'データベース';
 $string['taskdeletecachetext'] = '古いテキストキャッシュレコードを削除する';
 $string['taskdeleteincompleteusers'] = '不完全なユーザを削除する';
 $string['taskdeleteunconfirmedusers'] = '確認未了のユーザを削除する';
-$string['task_duration'] = '期間';
 $string['taskeventscron'] = 'イベントのバックグラウンド処理';
 $string['taskfiletrashcleanup'] = 'ゴミ箱のファイルを削除する';
 $string['taskglobalsearchindex'] = 'グローバル検索インデックス化';
@@ -1266,18 +1287,7 @@ $string['taskgradehistorycleanup'] = '評定履歴テーブル削除のバック
 $string['tasklegacycron'] = 'プラグインのレガシーcron処理';
 $string['tasklogcleanup'] = 'タスクログのクリーンアップ';
 $string['tasklogging'] = 'タスクログ設定';
-$string['task_logmode'] = 'ログの記録タイミング';
-$string['task_logmode_all'] = 'すべてのジョブのログアウトプットを保存する';
-$string['task_logmode_desc'] = 'あなたはタスクがログに記録されるタイミングを選択することができます。デフォルトではログは常に取得されます。あなたはログの記録を完全に無効にすること、またはタスクが失敗した場合のみログに記録することができます。';
-$string['task_logmode_failonly'] = '失敗したジョブのログのみ保存する';
-$string['task_logmode_none'] = '何もログに記録しない';
-$string['task_logretainruns'] = '実行保持';
-$string['task_logretainruns_desc'] = '保持するタスクの実行数です。この設定は「保持期間」設定に関連します。どちらか最初に達した方が適用されます。';
-$string['task_logretention'] = '保持期間';
-$string['task_logretention_desc'] = 'ログが存続する最大期間です。この設定は「実行保持」設定と関連します。どちらか最初に達した方が適用されます。';
 $string['tasklogs'] = 'タスクログ';
-$string['task_logtostdout'] = 'ログアウトプットを表示する';
-$string['task_logtostdout_desc'] = 'ログが実行中でアウトプットが取得された場合、取得されたアウトプットもタスク実行として表示するかどうか指定します。';
 $string['taskmessagingcleanup'] = 'メッセージングのバックグラウンド処理';
 $string['taskpasswordresetcleanup'] = 'パスワードリセットの試みを削除する';
 $string['taskplagiarismcron'] = '盗作プラグインのレガシーcronによるバックグラウンド処理';
@@ -1287,24 +1297,13 @@ $string['taskquestioncron'] = '古い問題プレビューを削除するため�
 $string['taskquestionstatscleanupcron'] = '古い問題統計キャッシュを削除するためのバックグラウンド処理';
 $string['taskrefreshsystemtokens'] = 'サービスアカウントのリフレッシュOAuthトークン';
 $string['taskregistrationcron'] = 'サイト登録';
-$string['task_result'] = '結果';
-$string['task_result:failed'] = '失敗';
-$string['task_scheduled_concurrency_limit'] = 'スケジュールタスク同時実行制限';
-$string['task_scheduled_concurrency_limit_desc'] = '同時に実行できるスケジュールタスクランナー数です。制限が高い場合、サーバにはパフォーマンスに影響する高い負荷がかかってしまう可能性があります。ゼロに設定した場合、スケジュールタスク処理が完全に無効にされます。';
-$string['task_scheduled_max_runtime'] = 'スケジュールタスクランナー生存期間';
-$string['task_scheduled_max_runtime_desc'] = 'スケジュールタスクが取り除かれるまでの時間です。';
 $string['tasksendfailedloginnotifications'] = 'ログイン失敗通知を送信する';
 $string['tasksendnewuserpasswords'] = '新しいユーザパスワードを送信する';
 $string['tasksessioncleanup'] = '古いセッションを削除する';
-$string['task_starttime'] = '開始日時';
 $string['taskstatscron'] = '統計のバックグラウンド処理';
-$string['task_stats:dbreads'] = '{$a} 読み込み';
-$string['task_stats:dbwrites'] = '{$a} 書き込み';
 $string['tasktagcron'] = 'タグのバックグラウンド処理';
 $string['tasktempfilecleanup'] = '古い一時ファイルを削除する';
 $string['tasktype'] = 'タイプ';
-$string['task_type:adhoc'] = 'アドホック';
-$string['task_type:scheduled'] = 'スケジュール';
 $string['tempdatafoldercleanup'] = '次より古い一時データファイルを削除する';
 $string['templates'] = 'テンプレート';
 $string['testoutgoingmailconf'] = 'テスト送信メール設定';
@@ -1364,16 +1363,16 @@ $string['updateaccounts'] = '既存のアカウントを更新する';
 $string['updateautocheck'] = '利用可能な更新を自動チェックする';
 $string['updateautocheck_desc'] = 'この設定を有効にした場合、あなたのサイトはMoodleコードおよびすべての追加プラグインの更新を自動的にチェックします。新しい更新が利用可能な場合、サイト管理者に通知が送信されます。';
 $string['updateavailable'] = '利用可能な新しいバージョンのMoodleがあります!';
+$string['updateavailable_moreinfo'] = '詳細情報 ...';
+$string['updateavailable_release'] = 'Moodle {$a}';
+$string['updateavailable_version'] = 'バージョン {$a}';
 $string['updateavailabledetailslink'] = '詳細は {$a->url} をご覧ください。';
 $string['updateavailableforplugin'] = 'あなたのプラグインに利用可能な新しいバージョンがあります!';
 $string['updateavailableinstall'] = 'この更新をインストールする';
 $string['updateavailableinstallall'] = '利用可能な更新をインストールする ({$a})';
 $string['updateavailableinstallallhead'] = '利用可能な更新のインストール';
-$string['updateavailable_moreinfo'] = '詳細情報 ...';
 $string['updateavailablenot'] = 'あなたのMoodleコードは最新版です!';
 $string['updateavailablerecommendation'] = '最新のセキュリティおよびバグフィックスを適用するため、あなたのサイトを最新バージョンにアップデートすることを強くお勧めします。';
-$string['updateavailable_release'] = 'Moodle {$a}';
-$string['updateavailable_version'] = 'バージョン {$a}';
 $string['updatecomponent'] = 'コンポーネントを更新する';
 $string['updateminmaturity'] = '要求されるコード完成度';
 $string['updateminmaturity_desc'] = '少なくとも選択された完成度に達したコードがある場合、利用可能な更新に関して通知します。プラグインがコードの完成度を宣言していない場合、この設定にかかわらず常に報告されます。';

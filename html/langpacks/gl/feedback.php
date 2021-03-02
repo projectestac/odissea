@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'gl', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,7 +33,7 @@ $string['allowfullanonymous'] = 'Permitir anonimato completo';
 $string['analysis'] = 'Análise';
 $string['anonymous'] = 'Anónimo';
 $string['anonymous_edit'] = 'Rexistrar nomes de usuario';
-$string['anonymous_entries'] = 'Entradas anónimas';
+$string['anonymous_entries'] = 'Entradas anónimas ({$a})';
 $string['anonymous_user'] = 'Usuario anónimo';
 $string['answerquestions'] = 'Responder as preguntas';
 $string['append_new_items'] = 'Anexar elementos novos';
@@ -43,20 +43,20 @@ $string['average'] = 'Media';
 $string['bold'] = 'Negra';
 $string['calendarend'] = 'Péchanse os comentarios {$a}';
 $string['calendarstart'] = 'Ábrense os comentarios {$a}';
-$string['cannotaccess'] = 'Só pode acceder a este comentarios desde un curso';
-$string['cannotsavetempl'] = 'non se permite gardar modelos';
+$string['cannotaccess'] = 'Só pode acceder a este comentarios dende un curso';
+$string['cannotsavetempl'] = 'Non se permite gardar modelos';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Non se estabeleceu o captcha.';
-$string['check'] = 'Elección múltiple - respostas múltiples';
-$string['checkbox'] = 'Elección múltiple - permítense respostas múltiples (caixas de selección)';
+$string['check'] = 'Escolla múltiple - respostas múltiples';
 $string['check_values'] = 'Posíbeis respostas';
+$string['checkbox'] = 'Escolla múltiple - permítense respostas múltiples (caixas de selección)';
 $string['choosefile'] = 'Escolla un ficheiro';
-$string['chosen_feedback_response'] = 'escolleuse o comentario de resposta';
+$string['chosen_feedback_response'] = 'Escolleuse o comentario de resposta';
 $string['closebeforeopen'] = 'Especificou unha data de remate anterior á do inicio.';
-$string['completed'] = 'completado';
+$string['complete_the_form'] = 'Responder as preguntas';
+$string['completed'] = 'Completado';
 $string['completed_feedbacks'] = 'Respostas entregadas';
 $string['completedon'] = 'Completado o {$a}';
-$string['complete_the_form'] = 'Responder as preguntas';
 $string['completionsubmit'] = 'Ver como completado ao enviar o comentario';
 $string['configallowfullanonymous'] = 'De estar estabelecida afirmativamente, o comentario pode completarse sen ningún inicio de sesión precedente. Soamente afecta aos comentarios da páxina principal.';
 $string['confirmdeleteentry'] = 'Confirma que quere eliminar esta entrada?';
@@ -71,7 +71,7 @@ $string['delete_entry'] = 'Eliminar entrada';
 $string['delete_item'] = 'Eliminar pregunta';
 $string['delete_old_items'] = 'Eliminar os elementos antigos';
 $string['delete_pagebreak'] = 'Eliminar salto de páxina';
-$string['delete_template'] = 'Eliminar modelo';
+$string['delete_template'] = 'Eliminar o modelo';
 $string['delete_templates'] = 'Eliminar modelo...';
 $string['depending'] = 'Dependencias';
 $string['depending_help'] = 'É posíbel amosar un elemento en función do valor doutro elemento.<br />
@@ -95,22 +95,22 @@ $string['dependitem'] = 'Elemento de dependencia';
 $string['dependvalue'] = 'Valor de dependencia';
 $string['description'] = 'Descrición';
 $string['do_not_analyse_empty_submits'] = 'Non analizar as entregas baleiras';
-$string['downloadresponseas'] = 'Descargar todas las respostas como:';
-$string['dropdown'] = 'Elección múltiple - permítese a resposta única (lista despregábel)';
-$string['dropdownlist'] = 'Elección múltiple - resposta única (despregábel)';
-$string['dropdownrated'] = 'Lista despregábel (puntuada)';
-$string['dropdown_values'] = 'Respostas';
+$string['downloadresponseas'] = 'Descargar tódalas respostas como:';
 $string['drop_feedback'] = 'Retirar deste curso';
+$string['dropdown'] = 'Escolla múltiple - permítese a resposta única (menú despregábel)';
+$string['dropdown_values'] = 'Respostas';
+$string['dropdownlist'] = 'Escolla múltiple - resposta única (menú despregábel)';
+$string['dropdownrated'] = 'Menú despregábel (puntuado)';
 $string['edit_item'] = 'Editar a pregunta';
 $string['edit_items'] = 'Editar as preguntas';
 $string['email_notification'] = 'Activar a notificación de entregas';
 $string['email_notification_help'] = 'De estar activado, os administradores recibirán a notificación por correo dos comentarios de entrega.';
-$string['emailteachermail'] = '{$a->username} completou a actividade de comentario : \'{$a->feedback}\'
+$string['emailteachermail'] = '{$a->username} completou a actividade de comentario : «{$a->feedback}»
 
 Pode vela aquí:
 
 {$a->url}';
-$string['emailteachermailhtml'] = '{$a->username} completou a actividade de comentario:  <i>«{$a->feedback}»</i><br /><br />
+$string['emailteachermailhtml'] = '{$a->username} completou a actividade de comentario: <i>«{$a->feedback}»</i><br /><br />
 Pode vela <a href="{$a->url}">aquí</a>.';
 $string['entries_saved'] = 'Gardouse a súa resposta. Grazas.';
 $string['eventresponsedeleted'] = 'Resposta eliminada';
@@ -118,48 +118,46 @@ $string['eventresponsesubmitted'] = 'Resposta enviada';
 $string['export_questions'] = 'Exportar preguntas';
 $string['export_to_excel'] = 'Exportar a Excel';
 $string['feedback:addinstance'] = 'Engadir un novo comentario';
-$string['feedbackclose'] = 'Permitir responder a';
 $string['feedback:complete'] = 'Completar un comentario';
-$string['feedbackcompleted'] = '{$a->username} completou {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Crear un modelo privado';
 $string['feedback:createpublictemplate'] = 'Crear un modelo público';
 $string['feedback:deletesubmissions'] = 'Eliminar as entregas completadas';
 $string['feedback:deletetemplate'] = 'Eliminar o modelo';
 $string['feedback:edititems'] = 'Editar elementos';
-$string['feedback_is_not_for_anonymous'] = 'non é posíbel comentar como anónimo';
-$string['feedback_is_not_open'] = 'Os comentarios non están abertos';
 $string['feedback:mapcourse'] = 'Asignar cursos para comentarios globais';
-$string['feedbackopen'] = 'Permitir respostas de';
 $string['feedback:receivemail'] = 'Recibir notificación por correo';
 $string['feedback:view'] = 'Ver un comentario';
 $string['feedback:viewanalysepage'] = 'Ver a páxina de análise despois da entrega';
 $string['feedback:viewreports'] = 'Ver informes';
+$string['feedback_is_not_for_anonymous'] = 'Non é posíbel comentar como anónimo';
+$string['feedback_is_not_open'] = 'Os comentarios non están abertos';
+$string['feedbackclose'] = 'Permitir responder a';
+$string['feedbackcompleted'] = '{$a->username} completou {$a->feedbackname}';
+$string['feedbackopen'] = 'Permitir respostas de';
 $string['file'] = 'Ficheiro';
 $string['filter_by_course'] = 'Filtrar por curso';
 $string['handling_error'] = 'Produciuse un erro no módulo de manexo da acción de comentario';
 $string['hide_no_select_option'] = 'Agochar a opción «Non seleccionado»';
-$string['horizontal'] = 'horizontal';
-$string['importfromthisfile'] = 'Importar deste ficheiro';
+$string['horizontal'] = 'Horizontal';
 $string['import_questions'] = 'Importar preguntas';
 $string['import_successfully'] = 'Importado satisfactoriamente';
+$string['importfromthisfile'] = 'Importar deste ficheiro';
 $string['includeuserinrecipientslist'] = 'Incluír {$a} na lista de destinatarios';
 $string['indicator:cognitivedepth'] = 'Comentario cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de comentarios.';
 $string['indicator:cognitivedepthdef'] = 'Comentario cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen as actividades de Comentarios durante este intervalo de análise (Niveis = Sen vista, Ver)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de comentarios.';
 $string['indicator:socialbreadth'] = 'Comentario social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nunha actividade de comentarios.';
 $string['indicator:socialbreadthdef'] = 'Comentario social';
 $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen as actividades de Comentarios durante este intervalo de análise (Niveis = Sen participación, Participante en solitario, Participante con outros)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nunha actividade de comentarios.';
 $string['info'] = 'Información';
 $string['infotype'] = 'Tipo de información';
 $string['insufficient_responses'] = 'respostas insuficientes';
 $string['insufficient_responses_for_this_group'] = 'Non hai respostas suficientes para este grupo';
-$string['insufficient_responses_help'] = 'Non hai respostas suficientes para este grupo.
-
-Para gardar o comentarios anónimos debe haber un mínimo de 2 respostas.';
+$string['insufficient_responses_help'] = 'Para que os comentarios sexan anónimos, debe haber polo menos 2 respostas.';
 $string['item_label'] = 'Etiqueta';
 $string['item_name'] = 'Pregunta';
 $string['label'] = 'Etiqueta';
@@ -172,13 +170,13 @@ $string['mapcoursenone'] = 'Non hai cursos asignados. Os comentarios están disp
 $string['mapcourses'] = 'Asignar comentarios a cursos';
 $string['mappedcourses'] = 'Cursos asignados';
 $string['mappingchanged'] = 'A asignación do curso cambiou';
-$string['maximal'] = 'máximo';
+$string['maximal'] = 'Máximo';
 $string['messageprovider:message'] = 'Recordatorio de comentario';
 $string['messageprovider:submission'] = 'Notificacións de comentarios';
-$string['minimal'] = 'mínimo';
+$string['minimal'] = 'Mínimo';
 $string['mode'] = 'Modo';
 $string['modulename'] = 'Comentarios';
-$string['modulename_help'] = 'O módulo de actividade de comentario permítelle a un profesor crear unha busca personalizada para a recollida de comentarios dos participantes, utilizando unha variedade de tipos de preguntas, que inclúen a as de opción múltiple, si/non, ou escritura de texto.
+$string['modulename_help'] = 'O módulo de actividade de comentario permítelle a un profesor crear unha busca personalizada para a recollida de comentarios dos participantes, utilizando unha variedade de tipos de preguntas, que inclúen a as de escolla múltiple, si/non, ou escritura de texto.
 
 As suxestións poden ser anónimas, se o desexa, e os resultados poden ser amosados a todos os participantes ou restrinxidos a só os profesores. Calquera das actividades de comentario na páxina de inicio do sitio web tamén poden ser completadas por usuarios que non inician sesión.
 
@@ -192,12 +190,12 @@ $string['modulename_link'] = 'mod/feedback/ver';
 $string['modulenameplural'] = 'Comentarios';
 $string['move_item'] = 'Mover esta pregunta';
 $string['multichoice'] = 'Escolla múltiple';
+$string['multichoice_values'] = 'Valores de escolla múltiple';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->name}';
 $string['multichoicerated'] = 'Escolla múltiple (puntuada)';
 $string['multichoicetype'] = 'Tipo de escolla múltiple';
-$string['multichoice_values'] = 'Valores de escolla múltiple';
 $string['multiplesubmit'] = 'Permitir entregas múltiples';
-$string['multiplesubmit_help'] = 'De esta activada para enquisas anónimas, os usuarios poden enviar comentarios sen límite de número.';
+$string['multiplesubmit_help'] = 'De estar activado para enquisas anónimas, os usuarios poden enviar comentarios sen límite de número.';
 $string['name'] = 'Nome';
 $string['name_required'] = 'Nome requirido';
 $string['next_page'] = 'Páxina seguinte';
@@ -205,27 +203,27 @@ $string['no_handler'] = 'Non existe manexador de acción para';
 $string['no_itemlabel'] = 'Sen etiqueta';
 $string['no_itemname'] = 'Sen nome de elemento';
 $string['no_items_available_yet'] = 'Aínda non se engadiron preguntas';
-$string['non_anonymous'] = 'Rexistrarase o nome de usuario e amosarase xunto coas respostas';
-$string['non_anonymous_entries'] = 'sen entradas anónimas';
-$string['non_respondents_students'] = 'non respondeu ningún alumno';
-$string['not_completed_yet'] = 'Aínda sen completar';
 $string['no_templates_available_yet'] = 'Aínda non hai modelos dispoñíbeis';
+$string['non_anonymous'] = 'Rexistrarase o nome de usuario e amosarase xunto coas respostas';
+$string['non_anonymous_entries'] = 'Sen entradas anónimas ({$a})';
+$string['non_respondents_students'] = 'Non respondeu ningún alumno ({$a})';
+$string['not_completed_yet'] = 'Aínda sen completar';
 $string['not_selected'] = 'Non seleccionado';
-$string['not_started'] = 'non iniciado';
+$string['not_started'] = 'Sen iniciar';
 $string['numberoutofrange'] = 'Número fora do intervalo';
 $string['numeric'] = 'Resposta numérica';
 $string['numeric_range_from'] = 'Intervalo de';
 $string['numeric_range_to'] = 'Intervalo ata';
 $string['of'] = 'de';
 $string['oldvaluespreserved'] = 'Preservaranse todas as preguntas antigas e os valores asignados';
-$string['oldvalueswillbedeleted'] = 'Eliminaranse as preguntas actuais e todas as respostas dos teus usuarios';
+$string['oldvalueswillbedeleted'] = 'Eliminaranse as preguntas actuais e todas as respostas';
 $string['only_one_captcha_allowed'] = 'Soamente se permite un captcha nun comentario';
 $string['openafterclose'] = 'Especificou unha data aberta após a data de remate';
 $string['overview'] = 'Vista xeral';
 $string['page'] = 'Páxina';
+$string['page-mod-feedback-x'] = 'Calquera páxina do módulo de comentarios';
 $string['page_after_submit'] = 'Mensaxe de completado';
 $string['pagebreak'] = 'Quebra de páxina';
-$string['page-mod-feedback-x'] = 'Calquera páxina do módulo de comentarios';
 $string['pluginadministration'] = 'Administración dos comentarios';
 $string['pluginname'] = 'Comentarios';
 $string['position'] = 'Posición';
@@ -233,17 +231,17 @@ $string['previous_page'] = 'Páxina anterior';
 $string['privacy:metadata:completed'] = 'Un rexistro das entregas aos comentarios';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Indica se a entrega se fai de xeito anónimo.';
 $string['privacy:metadata:completed:timemodified'] = 'O momento no que se modificou a entrega por última vez';
-$string['privacy:metadata:completedtmp'] = 'Un rexistro das entregas que aínda están en curso.';
 $string['privacy:metadata:completed:userid'] = 'O ID do usuario que completou a actividade de comentarios.';
+$string['privacy:metadata:completedtmp'] = 'Un rexistro das entregas que aínda están en proceso.';
 $string['privacy:metadata:value'] = 'Un rexistro da resposta a unha pregunta.';
-$string['privacy:metadata:valuetmp'] = 'Un rexistro da resposta a unha pregunta nunha entrega en curso.';
 $string['privacy:metadata:value:value'] = 'A resposta escollida.';
+$string['privacy:metadata:valuetmp'] = 'Un rexistro da resposta a unha pregunta nunha entrega en proceso.';
 $string['public'] = 'Público';
 $string['question'] = 'Pregunta';
-$string['questionandsubmission'] = 'Configuración da pregunta e da entrega';
+$string['questionandsubmission'] = 'Axustes da pregunta e da entrega';
 $string['questions'] = 'Preguntas';
 $string['questionslimited'] = 'Amosando só as primeiras preguntas de {$a}, ver as respostas individuais ou descargar datos de táboas para ver todo.';
-$string['radio'] = 'Elección múltiple - resposta única';
+$string['radio'] = 'Escolla múltiple - resposta única';
 $string['radio_values'] = 'Respostas';
 $string['ready_feedbacks'] = 'Comentarios listos';
 $string['required'] = 'Requirido';
@@ -262,8 +260,8 @@ $string['search_course'] = 'Buscar curso';
 $string['searchcourses'] = 'Buscar cursos';
 $string['searchcourses_help'] = 'Buscar o código ou o nome do(s) curso(s) que quere asociar con este comentario.';
 $string['selected_dump'] = 'Os índices seleccionados da variábel $SESSION son envorcados a seguir:';
-$string['send'] = 'enviar';
-$string['send_message'] = 'enviar mensaxe';
+$string['send'] = 'Enviar';
+$string['send_message'] = 'Enviar mensaxe';
 $string['show_all'] = 'Amosar todo';
 $string['show_analysepage_after_submit'] = 'Amosar a páxina de análise';
 $string['show_entries'] = 'Amosar as respostas';
@@ -271,28 +269,28 @@ $string['show_entry'] = 'Amosar a resposta';
 $string['show_nonrespondents'] = 'Amosar os que non responden';
 $string['site_after_submit'] = 'Sitio tras entregar';
 $string['sort_by_course'] = 'Ordenar por curso';
-$string['started'] = 'iniciado';
+$string['started'] = 'Iniciado';
 $string['startedon'] = 'Comenzado o {$a}';
 $string['subject'] = 'Asunto';
-$string['switch_item_to_not_required'] = 'cambiar a: resposta non requirida';
-$string['switch_item_to_required'] = 'cambiar a: resposta requirida';
+$string['switch_item_to_not_required'] = 'Estabelecer como non requirida';
+$string['switch_item_to_required'] = 'Estabelecer como requirida';
 $string['template'] = 'Modelo';
 $string['template_deleted'] = 'Modelo eliminado';
-$string['templates'] = 'Modelos';
 $string['template_saved'] = 'Modelo gardado';
+$string['templates'] = 'Modelos';
 $string['textarea'] = 'Resposta de texto máis longa';
 $string['textarea_height'] = 'Número de liñas';
-$string['textarea_width'] = 'Largura';
+$string['textarea_width'] = 'Largo';
 $string['textfield'] = 'Resposta de texto curta';
 $string['textfield_maxlength'] = 'Caracteres aceptados como máximo';
 $string['textfield_size'] = 'Largura do campo de texto';
-$string['there_are_no_settings_for_recaptcha'] = 'Non hai configuración do captcha';
+$string['there_are_no_settings_for_recaptcha'] = 'Non hai axustes do captcha';
 $string['this_feedback_is_already_submitted'] = 'Xa completou esta actividade.';
-$string['typemissing'] = 'falta o valor «type»';
+$string['typemissing'] = 'Falta o valor «type»';
 $string['update_item'] = 'Gardar os cambios na pregunta';
 $string['url_for_continue'] = 'Ligazón á seguinte actividade';
 $string['url_for_continue_help'] = 'Tras enviar o comentario, preséntase un botón de continuar, que liga coa páxina do curso. Alternativamente, pode ligar coa seguinte actividade de se introducir aquí o URL da actividade.';
-$string['use_one_line_for_each_value'] = '<br />Utilice unha liña para cada resposta!';
+$string['use_one_line_for_each_value'] = 'Utilice unha liña para cada resposta!';
 $string['use_this_template'] = 'Utilice este modelo';
 $string['using_templates'] = 'Utilice un modelo';
-$string['vertical'] = 'vertical';
+$string['vertical'] = 'Vertical';

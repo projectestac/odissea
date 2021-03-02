@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hvp', language 'eu', version '3.8'.
  *
- * @package   hvp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hvp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,8 +64,8 @@ $string['changelog'] = 'Aldaketen erregistroa';
 $string['changeplaceholder'] = 'Ebakitako argazkia, aldatutako testua, etab.';
 $string['close'] = 'Itxi';
 $string['completionpass'] = 'Gainditzeko kalifikazioa behar du';
-$string['completionpassdesc'] = 'Ikasleak gainditzeko kalifikazioa behar du jarduera hau osatutzat emateko';
 $string['completionpass_help'] = 'Gaituz gero, jarduera hau osatutzat hartuko da ikasleak gainditzeko kalifikazioa edo altuagoa jasotzen duenean (H5P jardueraren ezarpenetako Kalifikazioa atalean ezarritakoaren araberakoa).';
+$string['completionpassdesc'] = 'Ikasleak gainditzeko kalifikazioa behar du jarduera hau osatutzat emateko';
 $string['confirmdialogbody'] = 'Mesedez bBaieztatu aurrera jarraitu nahi duzula. Ekintza hau ezin da desegin.';
 $string['confirmdialogheader'] = 'Baieztatu ekintza';
 $string['confirmlabel'] = 'Baieztatu';
@@ -74,7 +74,7 @@ $string['connectionreestablished'] = 'Konexioa berreskuratu da.';
 $string['contentchanged'] = 'Eduki hau erabili zenuen azken alditik aldatu da.';
 $string['contentcopied'] = 'Edukia arbelera kopiatzen da';
 $string['contentstatefrequency'] = 'Edukiaren egoeraren gordetze-maiztasuna';
-$string['contentstatefrequency_help'] = 'Segundutan, zenbatero nahi duzun erabiltzailearen aurrerapena automatikoki gordetzea. Zenbakia handitu ezazu AJAX eskaera gehiegi egoteagatik arazoak badituzu.';
+$string['contentstatefrequency_help'] = 'Segundotan, zenbatean behin nahi duzun erabiltzailearen aurrerapena automatikoki gordetzea. Zenbakia handitu ezazu AJAX eskaera gehiegi egoteagatik arazoak badituzu.';
 $string['contenttype'] = 'Eduki mota';
 $string['contenttypecacheheader'] = 'Eduki motaren cache-a';
 $string['copyright'] = 'Erabilera-eskubideak';
@@ -230,12 +230,12 @@ $string['licenseCC20'] = '2.0 Generikoa';
 $string['licenseCC25'] = '2.5 Generikoa';
 $string['licenseCC30'] = '3.0 Generikoa';
 $string['licenseCC40'] = '4.0 Nazioartekoa';
-$string['licensee'] = 'Lizentzia';
-$string['licenseextras'] = 'Lizentzia gehigarriak';
 $string['licenseGPL'] = 'Lizentzia Publiko Orokorra';
 $string['licenseV1'] = '1. bertsioa';
 $string['licenseV2'] = '2. bertsioa';
 $string['licenseV3'] = '3. bertsioa';
+$string['licensee'] = 'Lizentzia';
+$string['licenseextras'] = 'Lizentzia gehigarriak';
 $string['licenseversion'] = 'Lizentziaren bertsioa';
 $string['loadingdata'] = 'Datuak kargatzen.';
 $string['lookforupdates'] = 'Bilatu H5P eguneraketak';

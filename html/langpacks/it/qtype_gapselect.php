@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_gapselect', language 'it', version '3.8'.
  *
- * @package   qtype_gapselect
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_gapselect
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,9 +39,9 @@ $string['errorquestiontextblank'] = 'Devi inserire il testo della domanda.';
 $string['group'] = 'Gruppo';
 $string['pleaseputananswerineachbox'] = 'Per favore inserisci una risposta in ciascuno spazio';
 $string['pluginname'] = 'Scelta delle parole mancanti';
+$string['pluginname_help'] = 'Inserisci del testo del tipo "Il [[1]] saltò sopra il [[2]]", quindi inserisci sotto le parole mancanti in 1 e 2,';
 $string['pluginnameadding'] = 'Inserimento domanda Scelta delle parole mancanti';
 $string['pluginnameediting'] = 'Modifica domanda Scelta delle parole mancanti';
-$string['pluginname_help'] = 'Inserisci del testo del tipo "Il [[1]] saltò sopra il [[2]]", quindi inserisci sotto le parole mancanti in 1 e 2,';
 $string['pluginnamesummary'] = 'Nel testo della domanda le parole mancanti vengono inserite tramite menu a discesa.';
 $string['privacy:metadata'] = 'Il plugin \'Scelta delle parole mancanti\' non memorizza dati personali.';
 $string['shuffle'] = 'Rimescola';

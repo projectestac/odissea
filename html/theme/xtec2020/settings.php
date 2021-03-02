@@ -28,10 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 if ($ADMIN->fulltree) {
 
     require_once($CFG->dirroot.'/theme/xtec2020/lib.php');
+    include_once($CFG->dirroot.'/theme/xtec2020/constants.php');
 
     global $PAGE;
     $PAGE->requires->js('/theme/xtec2020/javascript/config.js');
-    $PAGE->requires->js_init_code('xtec2020_theme_onload();');
+    $PAGE->requires->js_init_code('xtec2020_theme_onload({HEADERBG: "'.DEFAULT_HEADERBG.'", MAINCOLOR: "'.DEFAULT_MAINCOLOR.'", FONTCOLOR: "'.DEFAULT_FONTCOLOR.'", LINKSCOLOR: "'.DEFAULT_LINKSCOLOR.'"});');
 
     // Header settings
     $setting = new admin_setting_heading('theme_xtec2020/header_settings', get_string('header_settings', 'theme_xtec2020'), "");
@@ -46,7 +47,7 @@ if ($ADMIN->fulltree) {
 
     $name = 'theme_xtec2020/headerbg';
     $title = get_string('headerbg', 'theme_xtec2020');
-    $default = '#f4f4f4';
+    $default = DEFAULT_HEADERBG;
     $setting = new admin_setting_configcolourpicker($name, $title, "", $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
@@ -154,8 +155,9 @@ if ($ADMIN->fulltree) {
 
     $name = 'theme_xtec2020/colorset';
     $title = get_string('colorset', 'theme_xtec2020');
-    $default = 'grana';
+    $default = 'PEDC';
     $choices = array('personalitzat' => get_string('custom', 'theme_xtec2020'),
+                    'PEDC' => get_string('PEDC', 'theme_xtec2020'),
                     'grana' => get_string('grana', 'theme_xtec2020'),
                     'coral' => get_string('coral', 'theme_xtec2020'),
                     'kellygreen' => get_string('kellygreen', 'theme_xtec2020'),
@@ -175,14 +177,14 @@ if ($ADMIN->fulltree) {
 
     $name = 'theme_xtec2020/maincolor';
     $title = get_string('maincolor', 'theme_xtec2020');
-    $default = '#AC2013';
+    $default = DEFAULT_MAINCOLOR;
     $setting = new admin_setting_configcolourpicker($name, $title, '', $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
     $name = 'theme_xtec2020/fontcolor';
     $title = get_string('fontcolor', 'theme_xtec2020');
-    $default = '#303030';
+    $default = DEFAULT_FONTCOLOR;
     $colorwarning = get_string('color_warning', 'theme_xtec2020', theme_xtec2020_get_YIQ(get_config('theme_xtec2020', 'fontcolor')));
     $setting = new admin_setting_configcolourpicker($name, $title, $colorwarning, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -190,7 +192,7 @@ if ($ADMIN->fulltree) {
 
     $name = 'theme_xtec2020/linkscolor';
     $title = get_string('linkscolor', 'theme_xtec2020');
-    $default = '#AC2013';
+    $default = DEFAULT_LINKSCOLOR;
     $colorwarning = get_string('color_warning', 'theme_xtec2020', theme_xtec2020_get_YIQ(get_config('theme_xtec2020', 'linkscolor')));
     $setting = new admin_setting_configcolourpicker($name, $title, $colorwarning, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
@@ -277,7 +279,7 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
-    if (!function_exists('is_xtecadmin') || is_xtecadmin()) {
+    if (function_exists('get_protected_agora') && get_protected_agora()) {
         $setting = new admin_setting_heading('theme_xtec2020/advices_user', get_string('advices_user', 'theme_xtec2020'), "");
         $settings->add($setting);
 
@@ -331,6 +333,22 @@ if ($ADMIN->fulltree) {
         $setting = new admin_setting_configtext($name, $title, $description, $default);
         $settings->add($setting);
         $setting->set_updatedcallback('theme_reset_all_caches');
+
+        // XTEC service type
+        $setting = new admin_setting_heading('theme_xtec2020/xtec_type_heading', get_string('xtec_type_heading', 'theme_xtec2020'), "");
+        $settings->add($setting);
+
+        $name = 'theme_xtec2020/xtec_type';
+        $title = get_string('xtec_type', 'theme_xtec2020');
+        $description = get_string('xtec_type_desc', 'theme_xtec2020');
+        $default = 'eix';
+        $choices = array('eix' => get_string('xtectypedesc1', 'theme_xtec2020'),
+                         'eoi' => get_string('xtectypedesc2', 'theme_xtec2020'),
+                         'alexandria' => get_string('xtectypedesc3', 'theme_xtec2020'),
+                         'odissea' => get_string('xtectypedesc4', 'theme_xtec2020'));
+        $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+        $setting->set_updatedcallback('theme_reset_all_caches');
+        $settings->add($setting);
     }
 
 }

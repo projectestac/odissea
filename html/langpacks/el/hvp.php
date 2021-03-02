@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,26 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hvp', language 'el', version '3.8'.
  *
- * @package   hvp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hvp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = 'Ενέργεια';
+$string['addedandupdatedpp'] = 'Προστέθηκαν {$a->%new} νέες βιβλιοθήκες H5P και ενημερώθηκαν {$a->%old} υπάρχουσες.';
+$string['addedandupdatedps'] = 'Προστέθηκαν {$a->%new} νέες βιβλιοθήκες H5P και ενημερώθηκε {$a->%old} υπάρχουσα.';
+$string['addedandupdatedsp'] = 'Προστέθηκε {$a->%new} νέα βιβλιοθήκη H5P και ενημερώθηκαν {$a->%old} υπάρχουσες.';
+$string['addedandupdatedss'] = 'Προστέθηκε {$a->%new} νέα βιβλιοθήκη H5P και ενημερώθηκε {$a->%old} υπάρχουσα.';
+$string['addednewlibraries'] = 'Προστέθηκαν {$a->%new} νέες βιβλιοθήκες H5P.';
+$string['addednewlibrary'] = 'Προστέθηκε {$a->%new} νέα βιβλιοθήκη H5P.';
 $string['additionalinfo'] = 'Επιπρόσθετες πληροφορίες';
 $string['additionallicenseinfo'] = 'Οποιεσδήποτε επιπρόσθετες πληροφορίες για την άδεια';
 $string['addlibraries'] = 'Προσθήκη βιβλιοθηκών';
@@ -39,9 +45,10 @@ $string['attributionnd'] = 'Αναφορά Δημιουργού - Όχι Παρ�
 $string['attributionsa'] = 'Αναφορά Δημιουργού - Παρόμοια Διανομή 4.0';
 $string['author'] = 'Συγγραφέας';
 $string['authorcomments'] = 'Σχόλια συγγραφέα';
+$string['authorcommentsdescription'] = 'Σχόλια για τον συντάκτη του περιεχομένου (Αυτό το κείμενο δεν θα δημοσιευτεί ως μέρος των πληροφοριών πνευματικών δικαιωμάτων)';
 $string['authorname'] = 'Όνομα συγγραφέα';
 $string['authorrole'] = 'Ρόλος συγγραφέα';
-$string['by'] = 'by';
+$string['by'] = 'από';
 $string['cancellabel'] = 'Άκυρο';
 $string['ccattribution'] = 'Αναφορά Δημιουργού (CC BY)';
 $string['ccattributionnc'] = 'Αναφορά Δημιουργού - Μη Εμπορική Χρήση (CC BY-NC)';
@@ -56,30 +63,53 @@ $string['changedescription'] = 'Περιγραφή αλλαγής';
 $string['changelog'] = 'Καταγραφές αλλαγών';
 $string['changeplaceholder'] = 'Περικοπή φωτογραφίας, αλλαγή κειμένου, κλπ.';
 $string['close'] = 'Κλείσιμο';
+$string['completionpass'] = 'Απαιτείται βαθμός επιτυχίας';
+$string['completionpass_help'] = 'Εάν ενεργοποιηθεί, αυτή η δραστηριότητα θεωρείται ολοκληρωμένη όταν ο μαθητής λαμβάνει βαθμολογία επιτυχίας (όπως καθορίζεται στην ενότητα βαθμών στις ρυθμίσεις δραστηριότητας H5P) ή υψηλότερη.';
+$string['completionpassdesc'] = 'Ο μαθητής πρέπει να επιτύχει ένα βαθμό επιτυχίας για να ολοκληρώσει αυτή τη δραστηριότητα';
 $string['confirmdialogbody'] = 'Παρακαλούμε, επιβεβαιώστε ότι επιθυμείτε τη συνέχεια. Αυτή η ενέργεια δεν μπορεί να αναστραφεί.';
 $string['confirmdialogheader'] = 'Επιβεβαίωση ενέργειας';
 $string['confirmlabel'] = 'Επιβεβαίωση';
+$string['connectionlost'] = 'Η σύνδεση χάθηκε. Τα αποτελέσματα θα αποθηκευτούν και θα αποσταλούν όταν ανακτήσετε τη σύνδεση.';
+$string['connectionreestablished'] = 'Η σύνδεση αποκαταστάθηκε.';
 $string['contentchanged'] = 'Το περιεχόμενο αυτό έχει αλλάξει από την τελευταία φορά που το χρησιμοποιήσατε.';
+$string['contentcopied'] = 'Το περιεχόμενο αντιγράφηκε στο Πρόχειρο';
+$string['contentstatefrequency'] = 'Συχνότητα αποθήκευσης κατάστασης περιεχομένου';
 $string['contentstatefrequency_help'] = 'Σε δευτερόλεπτα, πόσο συχνά θέλετε να αποθηκεύεται αυτόματα η πρόοδος για τον χρήστη. Αυξήστε τον αριθμό αυτό αν έχετε προβλήματα σχετικά με πολλά αιτήματα ajax';
 $string['contenttype'] = 'Τύπος περιεχομένου';
+$string['contenttypecacheheader'] = 'Κρυφή μνήμη τύπου περιεχομένου';
 $string['copyright'] = 'Δικαιώματα χρήσης';
 $string['copyrightinfo'] = 'Πληροφορίες Πνευματικών Δικαιωμάτων';
 $string['copyrightstring'] = 'Δικαιώματα πνευματικής ιδιοκτησίας (Copyright)';
 $string['copyrighttitle'] = 'Εμφάνιση πληροφοριών δικαιωμάτων πνευματικής ιδιοκτησίας για αυτό το περιεχόμενο.';
 $string['couldnotcopy'] = 'Αδυναμία αντιγραφής αρχείου.';
+$string['couldnotparsejsonfromzip'] = 'Αδυναμία συντακτικής ανάλυσης του JSON από το πακέτο: %fileName';
+$string['couldnotparsepostdata'] = 'Αδυναμία συντακτικής ανάλυσης των δεδομένων που στάλθηκαν.';
+$string['couldnotreadfilefromzip'] = 'Αδυναμία ανάγνωσης του αρχείου από το πακέτο: %fileName';
 $string['couldnotsave'] = 'Αδυναμία αποθήκευσης αρχείου.';
 $string['create'] = 'Δημιουργία';
 $string['creativecommons'] = 'Creative Commons';
+$string['ctcachebuttonlabel'] = 'Ενημέρωση κρυφής μνήμης τύπου περιεχομένου';
+$string['ctcacheconnectionfailed'] = 'Αδυναμία επικοινωνίας με το H5P Hub. Παρακαλούμε, προσπαθήστε ξανά αργότερα.';
+$string['ctcachedescription'] = 'Βεβαιωθείτε ότι η κρυφή μνήμη τύπου περιεχομένου είναι ενημερωμένη, για να διασφαλίσετε ότι μπορείτε να προβάλετε, να κάνετε λήψη και να χρησιμοποιήσετε τις πιο πρόσφατες βιβλιοθήκες. Αυτό διαφέρει από την ενημέρωση των ίδιων των βιβλιοθηκών.';
 $string['ctcachelastupdatelabel'] = 'Τελευταία ενημέρωση';
 $string['ctcacheneverupdated'] = 'Ποτέ';
+$string['ctcachenolibraries'] = 'Δεν ελήφθησαν τύποι περιεχομένου από τον διανομέα (Hub) H5P. Παρακαλώ, προσπαθήστε ξανά αργότερα.';
+$string['ctcachesuccess'] = 'Η κρυφή μνήμη της βιβλιοθήκης ενημερώθηκε με επιτυχία!';
+$string['ctcachetaskname'] = 'Ενημέρωση κρυφής μνήμης τύπου περιεχομένου';
+$string['currentpage'] = 'Σελίδα $current από $total';
 $string['dataviewreportlabel'] = 'Εμφάνιση απαντήσεων';
 $string['date'] = 'Ημερομηνία';
 $string['disablefileextensioncheck'] = 'Απενεργοποίηση ελέγχου επεκτάσεων αρχείου';
+$string['disablefileextensioncheckwarning'] = 'Προειδοποίηση! Η απενεργοποίηση του ελέγχου επέκτασης αρχείων ενδέχεται να έχει επιπτώσεις στην ασφάλεια καθώς επιτρέπει το ανέβασμα αρχείων php. Αυτό με τη σειρά του θα μπορούσε να επιτρέψει στους εισβολείς να εκτελέσουν κακόβουλο κώδικα στον ιστότοπό σας. Παρακαλούμε, βεβαιωθείτε ότι γνωρίζετε ακριβώς τι ανεβάζετε.';
 $string['disablefullscreen'] = 'Απενεργοποίηση πλήρους οθόνης';
 $string['disablehubconfirmationmsg'] = 'Θέλετε ακόμα να ενεργοποιήσετε τον κεντρικό κόμβο;';
+$string['disablehubdescription'] = 'Συνιστάται ανεπιφύλακτα να διατηρήσετε αυτήν την επιλογή ενεργοποιημένη. Ο διανομέας (Hub) H5P παρέχει μια εύκολη διεπαφή για τη λήψη νέων τύπων περιεχομένου και για την ενημέρωση των υπαρχόντων τύπων περιεχομένου. Στο μέλλον, θα διευκολύνει επίσης την κοινή χρήση και την επαναχρησιμοποίηση περιεχομένου. Εάν αυτή η επιλογή είναι απενεργοποιημένη, θα πρέπει να εγκαταστήσετε και να ενημερώσετε τύπους περιεχομένου μέσω φορμών ανεβάσματος αρχείων.';
 $string['displayoptionalwaysshow'] = 'Εμφάνιση πάντα';
+$string['displayoptionauthoroff'] = 'Ελέγχεται από το συντάκτη, απενεργοποιημένη από προεπιλογή';
+$string['displayoptionauthoron'] = 'Ελέγχεται από το συντάκτη, ενεργοποιημένη από προεπιλογή';
 $string['displayoptiondownloadalways'] = 'Πάντα';
 $string['displayoptiondownloadnever'] = 'Ποτέ';
+$string['displayoptiondownloadpermission'] = 'Μόνο εάν ο χρήστης έχει δικαιώματα να εξάγει H5P';
 $string['displayoptionnevershow'] = 'Να μην εμφανίζεται ποτέ';
 $string['displayoptionpermissions'] = 'Εμφάνιση μόνο αν ο χρήστης έχει άδεια να εξάγει H5P';
 $string['displayoptionpermissionsembed'] = 'Εμφάνιση μόνο αν ο χρήστης έχει άδεια να ενσωματώσει H5P';
@@ -88,6 +118,22 @@ $string['download'] = 'Λήψη';
 $string['downloadfailed'] = 'Η λήψη της βιβλιοθήκης που ζητήθηκε, απέτυχε.';
 $string['downloadtitle'] = 'Λήψη αυτού του περιεχομένου ως ένα αρχείο H5P.';
 $string['editor'] = 'Επεξεργαστής';
+$string['emailconfirmbody'] = 'Γεια σας {$a->username},
+
+Σας ευχαριστούμε για την υποβολή των απαντήσεών σας στο «{$a->hvpname}» στο μάθημα «{$a->coursename}».
+
+Αυτό το μήνυμα επιβεβαιώνει ότι οι απαντήσεις σας έχουν αποθηκευτεί.
+
+Μπορείτε να αποκτήσετε πρόσβαση σε αυτό το H5P στο {$a->hvpurl}.';
+$string['emailconfirmsmall'] = 'Σας ευχαριστούμε για την υποβολή των απαντήσεών σας στο «{$a->hvpname}»';
+$string['emailconfirmsubject'] = 'Επιβεβαίωση υποβολής: {$a->hvpname}';
+$string['emailnotifybody'] = 'Γεια σας {$a->username},
+
+Ο/Η {$a->studentname} ολοκλήρωσε το «{$a->hvpname}» ({$a->hvpurl}) στο μάθημα «{$a->coursename}».
+
+Μπορείτε να εξετάσετε αυτήν την προσπάθεια στη διεύθυνση {$a->hvpreporturl}.';
+$string['emailnotifysmall'] = 'Ο/Η {$a->studentname} ολοκλήρωσε το «{$a->hvpname}». Δείτε {$a->hvpreporturl}';
+$string['emailnotifysubject'] = 'Ο/Η {$a->studentname} ολοκλήρωσε το «{$a->hvpname}»';
 $string['embed'] = 'Ενσωμάτωση';
 $string['embedloginfailed'] = 'Δεν έχετε πρόσβαση σε αυτό το περιεχόμενο. Προσπαθήστε να συνδεθείτε.';
 $string['embedtitle'] = 'Εμφάνιση του κώδικα ενσωμάτωσης για αυτό το περιεχόμενο.';
@@ -95,11 +141,14 @@ $string['empty'] = 'Κανένα διαθέσιμο αποτέλεσμα';
 $string['enableabout'] = 'Πλήκτρο Περί H5P';
 $string['enablecopyright'] = 'Πλήκτρο δικαιωμάτων πνευματικής ιδιοκτησίας (Copyright)';
 $string['enabledlrscontenttypes'] = 'Ενεργοποίηση LRS εξαρτώμενων τύπων περιεχομένου';
+$string['enabledlrscontenttypes_help'] = 'Επιτρέπει τη χρήση τύπων περιεχομένου που βασίζονται σε ένα «Learning Record Store» (αποθήκευση εγγραφών εκμάθησης) για να λειτουργούν σωστά, όπως ο τύπος περιεχομένου του Ερωτηματολογίου.';
 $string['enabledownload'] = 'Επιτρέπεται λήψη';
 $string['enableembed'] = 'Ενσωμάτωση πλήκτρου';
+$string['enableframe'] = 'Εμφάνιση μπάρας ενεργειών και πλαισίου';
 $string['enablehublabel'] = 'Χρήση κεντρικού κόμβου H5P';
 $string['enablejavascript'] = 'Παρακαλούμε, ενεργοποιήστε την JavaScript.';
 $string['enablesavecontentstate'] = 'Αποθήκευση κατάστασης περιεχομένου';
+$string['enablesavecontentstate_help'] = 'Αυτόματη αποθήκευση της τρέχουσας κατάστασης διαδραστικού περιεχομένου για κάθε χρήστη. Αυτό σημαίνει ότι ο χρήστης θα μπορεί να συνεχίσει από εκεί που σταμάτησε.';
 $string['failedtodownloadh5p'] = 'Αποτυχία λήψης του H5P που ζητήθηκε.';
 $string['fileexceedsmaxsize'] = 'Ένα από τα αρχεία μέσα στο πακέτο υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος. (%file %used > %max)';
 $string['filenotfoundonserver'] = 'Αδυναμία εύρεσης αρχείου στο διακομιστή. Ελέγξτε τις ρυθμίσεις ανεβάσματος αρχείου.';
@@ -108,21 +157,44 @@ $string['filetypenotallowed'] = 'Ο τύπος αρχείου δεν επιτρ�
 $string['finished'] = 'Ολοκληρώθηκε';
 $string['fullscreen'] = 'Πλήρης οθόνη';
 $string['gpl'] = 'Γενική Δημόσια Άδεια v3';
+$string['gradetopassmustbeset'] = 'Ο βαθμός επιτυχίας που απατείται για να περάσει κανείς δεν μπορεί να είναι μηδενικός, καθώς για αυτή τη δραστηριότητα H5P έχει οριστεί η μέθοδος ολοκλήρωσης που απαιτεί βαθμό επιτυχίας. Παρακαλούμε, δώστε μια μη μηδενική τιμή.';
+$string['gradetopassnotset'] = 'Για αυτή τη δραστηριότητα H5P δεν έχει ακόμη οριστεί βαθμολογία επιτυχίας. Μπορεί να οριστεί στην ενότητα Βαθμών των ρυθμίσεων δραστηριότητας H5P.';
 $string['h5pfile'] = 'Αρχείο H5P';
 $string['h5ptitle'] = 'Επισκεφτείτε τη διεύθυνση H5P.org για να δείτε κι άλλο καλό περιεχόμενο.';
 $string['hide'] = 'Απόκρυψη';
 $string['hideadvanced'] = 'Απόκρυψη προχωρημένων';
+$string['hubcommunicationdisabled'] = 'Η επικοινωνία του διανομέα H5P έχει απενεργοποιηθεί επειδή μία ή περισσότερες απαιτήσεις H5P απέτυχαν.';
+$string['hubisdisabled'] = 'Ο διανομέας είναι απενεργοποιημένος. Μπορείτε να την ενεργοποιήσετε ξανά στις ρυθμίσεις H5P.';
+$string['hubisdisableduploadlibraries'] = 'Ο διανομέας H5P έχει απενεργοποιηθεί μέχρι να επιλυθεί αυτό το ζήτημα. Μπορείτε ακόμα να αποστείλετε βιβλιοθήκες μέσω της σελίδας «Βιβλιοθήκες H5P».';
 $string['hubsettingsheader'] = 'Τύποι περιεχομένου';
 $string['hvp:addinstance'] = 'Δημιουργία νέων δραστηριοτήτων H5P';
+$string['hvp:emailconfirmsubmission'] = 'Λάβετε ένα μήνυμα επιβεβαίωσης κατά την υποβολή';
+$string['hvp:emailnotifysubmission'] = 'Λάβετε ένα μήνυμα ειδοποίησης κατά την υποβολή μιας προσπάθειας';
 $string['hvp:getcachedassets'] = 'Απαιτείται για εμφάνιση δραστηριοτήτων H5P';
+$string['hvp:getembedcode'] = 'Προβολή του κώδικα ενσωμάτωσης H5P όταν έχει ρυθμιστεί η επιλογή «ελέγχεται από δικαιώματα»';
+$string['hvp:getexport'] = 'Λήψη του αρχείου .h5p όταν έχει οριστεί η επιλογή «ελέγχεται από δικαιώματα»';
+$string['hvp:installrecommendedh5plibraries'] = 'Εγκατάσταση νέων ασφαλών τύπων περιεχομένου H5P που προτείνονται από το H5P.org';
+$string['hvp:manage'] = 'Επεξεργασία υπαρχουσών δραστηριοτήτων H5P';
+$string['hvp:restrictlibraries'] = 'Περιορισμός πρόσβασης σε ορισμένους τύπους περιεχομένου H5P';
+$string['hvp:savecontentuserdata'] = 'Αποθήκευση της προόδου των χρηστών για δραστηριότητες H5P';
+$string['hvp:saveresults'] = 'Αποθήκευση των αποτελεσμάτων από ολοκληρωμένες δραστηριότητες H5P';
+$string['hvp:updatelibraries'] = 'Εγκατάσταση νέων τύπων περιεχομένου H5P ή ενημέρωση υπαρχόντων';
+$string['hvp:userestrictedlibraries'] = 'Χρήση περιορισμένων τύπων περιεχομένου H5P';
+$string['hvp:view'] = 'Δείτε και αλληλεπιδράστε με δραστηριότητες H5P';
+$string['hvp:viewallresults'] = 'Εμφάνιση όλων των αποτελεσμάτων για ολοκληρωμένες δραστηριότητες H5P';
+$string['hvp:viewresults'] = 'Εμφάνιση των δικών σας αποτελεσμάτων για ολοκληρωμένες δραστηριότητες H5P';
+$string['installdenied'] = 'Δεν έχετε δικαίωμα εγκατάστασης τύπων περιεχομένου. Επικοινωνήστε με το διαχειριστή του ιστοτόπου σας.';
 $string['installedlibraries'] = 'Εγκατεστημένες βιβλιοθήκες';
 $string['intro'] = 'Εισαγωγή';
 $string['invalidaudioformat'] = 'Μη έγκυρος μορφότυπος αρχείου ήχου. Χρησιμοποιήστε mp3 ή wav.';
 $string['invalidcontentfolder'] = 'Μη έγκυρος φάκελος περιεχομένου';
 $string['invalidcontenttype'] = 'Ο επιλεγμένος τύπος περιεχομένου είναι μη έγκυρος.';
 $string['invalidfieldtype'] = 'Μη έγκυρος τύπος πεδίου.';
+$string['invalidfile'] = 'Το αρχείο «{$a->%όνομα αρχείου}» δεν επιτρέπεται. Επιτρέπονται μόνο αρχεία με τις ακόλουθες επεκτάσεις: {$a->%files-allowed}.';
+$string['invalidh5ppost'] = 'Αδυναμία λήψης σταλθέντος H5P.';
 $string['invalidimageformat'] = 'Μη έγκυρος μορφότυπος αρχείου εικόνας. Χρησιμοποιήστε jpg, png ή gif.';
 $string['invalidlanguagefile'] = 'Μη έγκυρο αρχείο γλώσσας {$a->%file} στη βιβλιοθήκη {$a->%library}';
+$string['invalidlanguagefile2'] = 'Το μη έγκυρο αρχείο γλώσσας {$a->%languageFile} έχει συμπεριληφθεί στη βιβλιοθήκη {$a->%name}';
 $string['invalidlibrary'] = 'Μη έγκυρη βιβλιοθήκη';
 $string['invalidlibrarydata'] = 'Δόθηκαν μη έγκυρα δεδομένα για {$a->%property} στην {$a->%library}';
 $string['invalidlibrarydataboolean'] = 'Δόθηκαν μη έγκυρα δεδομένα για {$a->%property} στην {$a->%library}. Αναμενόταν τύπος αληθείας (boolean).';
@@ -135,14 +207,19 @@ $string['invalidmultiselectoption'] = 'Επιλέχθηκε μη έγκυρη ε
 $string['invalidparameters'] = 'Μη έγκυρες παράμετροι';
 $string['invalidselectoption'] = 'Επιλέχθηκε μη έγκυρη επιλογή (στην επιλογή).';
 $string['invalidsemanticsjson'] = 'Συμπεριλήφθηκε μη έγκυρο αρχείο semantics.json στην βιβλιοθήκη {$a->%name}';
+$string['invalidsemanticstype'] = 'Εσωτερικό σφάλμα H5P: άγνωστος στη σημασιολογία τύπος περιεχομένου «{$a->@type}». Αφαίρεση περιεχομένου!';
+$string['invalidstring'] = 'Η παρεχόμενη συμβολοσειρά δεν είναι έγκυρη σύμφωνα με τις κανονικές εκφράσεις στη σημασιολογία. (τιμή: «{$a->%value}», κανονική έκφραση: «{$a->%regexp}»)';
 $string['invalidtoken'] = 'Μη έγκυρο κουπόνι ασφαλείας.';
 $string['invalidvideoformat'] = 'Μη έγκυρος μορφότυπος αρχείου βίντεο. Χρησιμοποιήστε mp4 ή webm.';
+$string['invalidxapiresult'] = 'Δεν βρέθηκαν αποτελέσματα xAPI για αυτόν τον συνδυασμό περιεχομένου και αναγνωριστικού χρήστη που δόθηκε.';
 $string['javascriptloading'] = 'Αναμονή για JavaScript...';
 $string['libraries'] = 'Βιβλιοθήκες H5P';
+$string['librarydirectoryerror'] = 'Το όνομα καταλόγου βιβλιοθήκης πρέπει να ταιριάζει με το όνομα υπολογιστή ή το όνομα_υπολογιστή-κύριαΈκδοση.υποΈκδοση (από το library.json). (Κατάλογος: {$a->%directoryName} , όνομα υπολογιστή: {$a->%machineName}, κύριαΈκδοση: {$a->%majorVersion}, υποΈκδοση: {$a->%minorVersion})';
 $string['librarylistactions'] = 'Ενέργειες';
-$string['librarylistinstancedependencies'] = 'Εξαρτήσεις στιγμιότυπου';
+$string['librarylistinstancedependencies'] = 'Εξαρτήσεις στιγμιοτύπου';
 $string['librarylistinstances'] = 'Στιγμιότυπα';
 $string['librarylistlibrarydependencies'] = 'Εξαρτήσεις βιβλιοθήκης';
+$string['librarylistrestricted'] = 'Περιορισμένο';
 $string['librarylisttitle'] = 'Τίτλος';
 $string['librarynotselected'] = 'Πρέπει να επιλεγεί ένας τύπος περιεχομένου.';
 $string['license'] = 'Άδεια';
@@ -153,52 +230,189 @@ $string['licenseCC20'] = '2.0 Γενική';
 $string['licenseCC25'] = '2.5 Γενική';
 $string['licenseCC30'] = '3.0 Unported (χωρίς προσαρμογή στην τοπική νομοθεσία)';
 $string['licenseCC40'] = '4.0 Διεθνής';
-$string['licensee'] = 'Αδειούχος';
-$string['licenseextras'] = 'Επιπρόσθετα άδειας';
 $string['licenseGPL'] = 'Γενική Δημόσια Άδεια';
 $string['licenseV1'] = 'Έκδοση 1';
 $string['licenseV2'] = 'Έκδοση 2';
 $string['licenseV3'] = 'Έκδοση 3';
+$string['licensee'] = 'Αδειούχος';
+$string['licenseextras'] = 'Επιπρόσθετα άδειας';
 $string['licenseversion'] = 'Έκδοση άδειας';
 $string['loadingdata'] = 'Φόρτωση δεδομένων.';
+$string['lookforupdates'] = 'Αναζητήστε ενημερώσεις H5P';
 $string['maximumgrade'] = 'Μέγιστος βαθμός';
 $string['maximumgradeerror'] = 'Παρακαλούμε δώστε έναν έγκυρο θετικό ακέραιο ως τον μέγιστο αριθμό διαθέσιμων πόντων για αυτή την δραστηριότητα';
+$string['maxpostsizetoosmall'] = 'Το μέγιστο μέγεθος αποστολής PHP είναι αρκετά μικρό. Με την τρέχουσα ρύθμισή σας, δεν επιτρέπεται αποστολή αρχείων μεγαλύτερων από {$a->%number} MB. Αυτό μπορεί να είναι πρόβλημα κατά την προσπάθεια να ανεβάσετε H5Ps, εικόνες και βίντεο. Παρακαλούμε, εξετάστε το ενδεχόμενο να το αυξήσετε σε περισσότερα από 5MB.';
 $string['maxscore'] = 'Μέγιστο σκορ';
+$string['maxuploadsizetoosmall'] = 'Το μέγιστο μέγεθος ανεβάσματος PHP είναι αρκετά μικρό. Με την τρέχουσα ρύθμισή σας, δεν επιτρέπεται αποστολή αρχείων μεγαλύτερων από {$a->%number} MB. Αυτό μπορεί να είναι πρόβλημα κατά την προσπάθεια να ανεβάσετε H5Ps, εικόνες και βίντεο. Παρακαλούμε, εξετάστε το ενδεχόμενο να το αυξήσετε σε περισσότερα από 5MB.';
+$string['messageprovider:confirmation'] = 'Επιβεβαίωση των δικών σας υποβολών H5P';
+$string['messageprovider:submission'] = 'Ειδοποίηση για υποβολές H5P';
 $string['missingcontentfolder'] = 'Λείπει ένας έγκυρος φάκελος περιεχομένου';
+$string['missingcontentuserdata'] = 'Σφάλμα: Αδυναμία εύρεσης δεδομένων χρήστη περιεχομένου';
+$string['missingcoreversion'] = 'Το σύστημα δεν ήταν δυνατό να εγκαταστήσει το στοιχείο <em>{$a->%component}}</em> από το πακέτο! Απαιτείται μια νεότερη έκδοση του πρόσθετου H5P. Αυτός ο ιστότοπος εκτελεί αυτήν τη στιγμή την έκδοση {$a->%current}, ενώ η απαιτούμενη έκδοση είναι {$a->%required} ή υψηλότερη. Θα πρέπει να εξετάσετε το ενδεχόμενο αναβάθμισης και, στη συνέχεια, να προσπαθήσετε ξανά.';
+$string['missingdependency'] = 'Λείπει εξάρτηση {$a->@dep} που απαιτείται από το {$a->@lib}.';
+$string['missinglibrary'] = 'Λείπει η απαιτούμενη βιβλιοθήκη {$a->@library}';
 $string['missinglibraryfile'] = 'Το αρχείο «{$a->%file}» λείπει από την βιβλιοθήκη: «{$a->%name}»';
 $string['missinglibraryjson'] = 'Αδυναμία εύρεσης αρχείου library.json με έγκυρο μορφότυπο json για την βιβλιοθήκη {$a->%name}';
 $string['missinglibraryproperty'] = 'Η απαιτούμενη ιδιότητα {$a->%property} λείπει από την {$a->%library}';
+$string['missingmbstring'] = 'Η επέκταση mbstring PHP δεν έχει φορτωθεί. Το H5P την χρειάζεται για να λειτουργεί σωστά.';
+$string['missingparameters'] = 'Λείπουν παράμετροι';
+$string['missinguploadpermissions'] = 'Σημειώστε, ότι οι βιβλιοθήκες μπορεί να υπάρχουν στο αρχείο που αποστείλατε, αλλά δεν σας επιτρέπεται να ανεβάζετε νέες βιβλιοθήκες. Επικοινωνήστε με το διαχειριστή του ιστοτόπου σχετικά με αυτό.';
+$string['modulename'] = 'Διαδραστικό περιεχόμενο';
+$string['modulename_help'] = 'Το άρθρωμα δραστηριότητας H5P σας επιτρέπει να δημιουργείτε διαδραστικό περιεχόμενο, όπως διαδραστικά βίντεο, σύνολα ερωτήσεων, ερωτήσεις μεταφοράς και απόθεσης, ερωτήσεις πολλαπλών επιλογών, παρουσιάσεις και πολλά άλλα.
+
+Εκτός από το ότι είναι ένα εργαλείο συγγραφής για πλούσιο περιεχόμενο, το H5P σας δίνει τη δυνατότητα να εισαγάγετε και να εξαγάγετε αρχεία H5P για αποτελεσματική επαναχρησιμοποίηση και κοινή χρήση περιεχομένου.
+
+Οι αλληλεπιδράσεις και οι βαθμολογίες των χρηστών παρακολουθούνται χρησιμοποιώντας το xAPI και είναι διαθέσιμες μέσω του βαθμολογίου του Moodle. Σημειώστε ότι προς το παρόν είναι δυνατό για άτομα με δεξιότητες προγραμματισμού να εξαπατήσουν τις αλληλεπιδράσεις H5P και να αποκτήσουν την πλήρη βαθμολογία χωρίς να γνωρίζουν τις σωστές απαντήσεις. Τα H5P δεν πρέπει να χρησιμοποιούνται για εξετάσεις ή παρόμοια χρήση.
+
+Για να προσθέσετε διαδραστικό περιεχόμενο H5P, δημιουργήστε περιεχόμενο χρησιμοποιώντας το ενσωματωμένο εργαλείο συγγραφής ή ανεβάστε αρχεία H5P που βρίσκονται σε άλλους ιστοτόπους με ενεργοποιημένα H5P.';
 $string['modulename_link'] = 'https://h5p.org/moodle-more-help';
+$string['modulenameplural'] = 'Διαδραστικό περιεχόμενο';
 $string['nextpage'] = 'Επόμενη σελίδα';
+$string['noanswersubmitted'] = 'Αυτός ο χρήστης δεν έχει υποβάλει απάντηση στο H5P ακόμα';
+$string['nocontent'] = 'Αδυναμία εύρεσης ή η συντακτικής ανάλυσης του αρχείου content.json';
+$string['nocontenttype'] = 'Δεν καθορίστηκε τύπος περιεχομένου.';
+$string['nocopyright'] = 'Δεν υπάρχουν διαθέσιμες πληροφορίες πνευματικών δικαιωμάτων για αυτό το περιεχόμενο.';
+$string['nodata'] = 'Δεν υπάρχουν διαθέσιμα δεδομένα που να ταιριάζουν με τα κριτήριά σας.';
 $string['noextension'] = 'Το αρχείο που ανεβάσατε δεν είναι ένα έγκυρο πακέτο HTML5. (Δεν έχει την επέκταση αρχείου .h5p)';
+$string['noh5ps'] = 'Δεν υπάρχει διαθέσιμο διαδραστικό περιεχόμενο για αυτό το μάθημα.';
+$string['nojson'] = 'Το κύριο αρχείο h5p.json δεν είναι έγκυρο';
+$string['nombstringexteension'] = 'Η επέκταση mbstring PHP δεν έχει φορτωθεί. Το H5P την χρειάζεται για να λειτουργεί σωστά.';
+$string['noparameters'] = 'Δεν υπάρχουν παράμετροι';
+$string['noparse'] = 'Αδυναμία συντακτικής ανάλυσης του κύριου αρχείου h5p.json';
+$string['nopermissiontogettranslations'] = 'Δεν έχετε δικαιώματα ανάκτησης μεταφράσεων';
+$string['nopermissiontorestrict'] = 'Δεν έχετε δικαίωμα περιορισμού βιβλιοθηκών.';
+$string['nopermissiontosavecontentuserdata'] = 'Δεν έχετε δικαίωμα αποθήκευσης δεδομένων χρήστη περιεχομένου.';
+$string['nopermissiontosaveresult'] = 'Δεν έχετε δικαίωμα αποθήκευσης αποτελέσματος για αυτό το περιεχόμενο.';
+$string['nopermissiontoupgrade'] = 'Δεν έχετε δικαίωμα αναβάθμισης βιβλιοθηκών.';
+$string['nopermissiontouploadcontent'] = 'Δεν έχετε δικαίωμα να ανεβάσετε περιεχόμενο εδώ.';
+$string['nopermissiontouploadfiles'] = 'Δεν έχετε δικαίωμα να ανεβάσετε αρχεία εδώ.';
+$string['nopermissiontoviewcontenttypes'] = 'Δεν έχετε δικαίωμα προβολής των τύπων περιεχομένου.';
+$string['nopermissiontoviewresult'] = 'Δεν έχετε δικαίωμα προβολής αποτελεσμάτων για αυτό το περιεχόμενο.';
+$string['nosuchlibrary'] = 'Δεν υπάρχει τέτοια βιβλιοθήκη';
 $string['notapplicable'] = 'Δ/Υ';
+$string['nounzip'] = 'Το αρχείο που ανεβάσατε δεν είναι ένα έγκυρο πακέτο HTML5 (Δεν είμαστε σε θέση να το αποσυμπιέσουμε)';
+$string['noversionattribution'] = 'Αναφορά Δημιουργού';
+$string['noversionattributionnc'] = 'Αναφορά Δημιουργού-Μη Εμπορική Χρήση';
+$string['noversionattributionncnd'] = 'Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Όχι Παράγωγα Έργα';
+$string['noversionattributionncsa'] = 'Αναφορά Δημιουργού-Μη Εμπορική Χρήση-Παρόμοια Διανομή';
+$string['noversionattributionnd'] = 'Αναφορά Δημιουργού-Όχι Παράγωγα Έργα';
+$string['noversionattributionsa'] = 'Αναφορά Δημιουργού-Παρόμοια Διανομή';
+$string['nowriteaccess'] = 'Ανιχνεύτηκε πρόβλημα με την πρόσβαση εγγραφής στον εξυπηρετητή. Βεβαιωθείτε ότι ο εξυπηρετητής σας μπορεί να γράψει στο φάκελο δεδομένων σας.';
+$string['noziparchive'] = 'Η έκδοση σας της PHP δεν υποστηρίζει το ZipArchive.';
+$string['offlinedialogbody'] = 'Αδυναμία αποστολής πληροφοριών σχετικά με την ολοκλήρωση σας αυτής της εργασίας. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο.';
+$string['offlinedialogheader'] = 'Η σύνδεσή σας με τον εξυπηρετητή χάθηκε';
+$string['offlinedialogretrybuttonlabel'] = 'Προσπάθεια ξανά τώρα';
+$string['offlinedialogretrymessage'] = 'Προσπάθεια ξανά σε :num....';
+$string['offlinesuccessfulsubmit'] = 'Τα αποτελέσματα υποβλήθηκαν με επιτυχία.';
+$string['oldphpversion'] = 'Η έκδοση σας της PHP είναι ξεπερασμένη. Το H5P απαιτεί την έκδοση 5.2 για να λειτουργεί σωστά. Συνιστάται η έκδοση 5.6 ή υψηλότερη.';
+$string['olduploadoldcontent'] = 'Προσπαθείτε να ανεβάσετε περιεχόμενο παλαιότερης έκδοσης του H5P. Αναβαθμίστε το περιεχόμενο στον εξυπηρετητή από τον οποίο προήλθε και προσπαθήστε να το ανεβάσετε ξανά ή ενεργοποιήστε τον διανομέα H5P για να κάνει αυτός την αναβάθμιση αυτόματα για σας.';
+$string['onlyupdate'] = 'Ενημέρωση μόνο υπαρχουσών βιβλιοθηκών';
 $string['options'] = 'Επιλογές';
+$string['originator'] = 'Δημιουργός (αρχ.)';
 $string['pd'] = 'Κοινό Κτήμα';
 $string['pddl'] = 'Εκχώρηση και Άδεια ως Κοινό Κτήμα';
 $string['pdm'] = 'Επισήμανση Κοινού Κτήματος';
 $string['pluginadministration'] = 'H5P';
 $string['pluginname'] = 'H5P';
+$string['postmessagerequired'] = 'Απαιτείται ένα μήνυμα post για πρόσβαση στο δεδομένο τελικό σημείο';
 $string['previouspage'] = 'Προηγούμενη σελίδα';
+$string['privacy:metadata:core_files'] = 'Η δραστηριότητα H5P αποθηκεύει αρχεία που έχουν ανεβεί ως μέρος του περιεχομένου H5P.';
+$string['privacy:metadata:core_grades'] = 'Η δραστηριότητα H5P αποθηκεύει βαθμούς χρηστών που έχουν απαντήσει σε περιεχόμενο H5P.';
+$string['privacy:metadata:hvp_content_user_data'] = 'Περιγράφει την τρέχουσα κατάσταση στην οποία βρίσκεται το περιεχόμενο για ένα χρήστη. Χρησιμοποιείται για την επαναφορά περιεχομένου σε προηγούμενη κατάσταση.';
 $string['privacy:metadata:hvp_content_user_data:data'] = 'Δεδομένα χρήστη που αποθηκεύτηκαν.';
 $string['privacy:metadata:hvp_content_user_data:data_id'] = 'Αναγνωριστικό τύπου δεδομένων.';
+$string['privacy:metadata:hvp_content_user_data:delete_on_content_change'] = 'Επισήμανση που καθορίζει εάν τα δεδομένα πρέπει να διαγραφούν όταν αλλάζει το περιεχόμενο.';
+$string['privacy:metadata:hvp_content_user_data:hvp_id'] = 'Το αναγνωριστικό του περιεχομένου H5P στο οποίο ανήκουν τα δεδομένα.';
+$string['privacy:metadata:hvp_content_user_data:id'] = 'Το αναγνωριστικό της σχέσης δεδομένων χρήστη περιεχομένου.';
+$string['privacy:metadata:hvp_content_user_data:preloaded'] = 'Επισήμανση που καθορίζει εάν τα δεδομένα πρέπει να είναι προ-φορτωμένα στο περιεχόμενο.';
+$string['privacy:metadata:hvp_content_user_data:sub_content_id'] = 'Υπο-περιεχόμενο του H5P, 0 εάν αυτό δεν είναι υπο-περιεχόμενο.';
+$string['privacy:metadata:hvp_content_user_data:user_id'] = 'Το αναγνωριστικό του χρήστη στον οποίο ανήκουν τα δεδομένα.';
+$string['privacy:metadata:hvp_events'] = 'Παρακολουθεί τα καταγεγραμμένα συμβάντα H5P.';
+$string['privacy:metadata:hvp_events:content_id'] = 'Το αναγνωριστικό περιεχομένου στο οποίο πραγματοποιήθηκε η ενέργεια, 0 εάν υπάρχει νέο ή καθόλου περιεχόμενο.';
 $string['privacy:metadata:hvp_events:content_title'] = 'Τίτλος του περιεχομένου.';
+$string['privacy:metadata:hvp_events:created_at'] = 'Ο χρόνος δημιουργίας του συμβάντος.';
+$string['privacy:metadata:hvp_events:id'] = 'Το μοναδικό αναγνωριστικό της εκδήλωσης.';
+$string['privacy:metadata:hvp_events:library_name'] = 'Η βιβλιοθήκη που επηρεάστηκε από το συμβάν.';
+$string['privacy:metadata:hvp_events:library_version'] = 'Η έκδοση βιβλιοθήκης που επηρεάστηκε από το συμβάν.';
+$string['privacy:metadata:hvp_events:sub_type'] = 'Ο υπο-τύπος συμβάντος ή η ενέργεια συμβάντος.';
+$string['privacy:metadata:hvp_events:type'] = 'Ο τύπος του συμβάντος.';
+$string['privacy:metadata:hvp_events:user_id'] = 'Το αναγνωριστικό του χρήστη που πραγματοποίησε την ενέργεια.';
+$string['privacy:metadata:hvp_xapi_results'] = 'Αποθηκεύει συμβάντα xAPI σε περιεχόμενο H5P.';
+$string['privacy:metadata:hvp_xapi_results:additionals'] = 'Επιπρόσθετες πληροφορίες που μπορεί να στείλει το H5P.';
+$string['privacy:metadata:hvp_xapi_results:content_id'] = 'Το αναγνωριστικό του περιεχομένου στο οποίο εκτελέστηκε το συμβάν.';
+$string['privacy:metadata:hvp_xapi_results:correct_responses_pattern'] = 'Το σωστό μοτίβο απάντησης.';
+$string['privacy:metadata:hvp_xapi_results:description'] = 'Η περιγραφή, η εργασία ή η ερώτηση του περιεχομένου στο οποίο πραγματοποιήθηκε η ενέργεια.';
+$string['privacy:metadata:hvp_xapi_results:id'] = 'Το μοναδικό αναγνωριστικό του γενονότος xAPI.';
+$string['privacy:metadata:hvp_xapi_results:interaction_type'] = 'Ο τύπος της αλληλεπίδρασης.';
+$string['privacy:metadata:hvp_xapi_results:max_score'] = 'Μέγιστο εφικτό σκορ για το γεγονός.';
+$string['privacy:metadata:hvp_xapi_results:parent_id'] = 'Το αναγνωριστικό του γονέα του περιεχομένου στο οποίο πραγματοποιήθηκε αυτό το συμβάν. Κενό εάν δεν έχει γονέα.';
+$string['privacy:metadata:hvp_xapi_results:raw_score'] = 'Βαθμολογία που επιτεύχθηκε για το συμβάν.';
+$string['privacy:metadata:hvp_xapi_results:response'] = 'Η απόκριση που έστειλε ο χρήστης.';
+$string['privacy:metadata:hvp_xapi_results:user_id'] = 'Το αναγνωριστικό του χρήστη που πραγματοποίησε την ενέργεια.';
 $string['question'] = 'Ερώτηση';
+$string['removeoldlogentries'] = 'Κατάργηση παλαιών καταχωρήσεων αρχείου καταγραφών H5P';
+$string['removeoldmobileauthentries'] = 'Κατάργηση παλαιών καταχωρήσεων αυθεντικοποίησης h5p για κινητές συσκευές';
+$string['removetmpfiles'] = 'Κατάργηση παλαιών προσωρινών αρχείων H5P';
+$string['reportingquestionsremaininglabel'] = 'ερωτήσεις που απομένουν προς βαθμολόγηση';
 $string['reportingscaledscoredelimiter'] = ',';
+$string['reportingscaledscorelabel'] = 'Σκορ βαθμολογίου:';
+$string['reportingscoredelimiter'] = 'στα (με μέγιστο το)';
+$string['reportingscorelabel'] = 'Σκορ:';
+$string['reportnotsupported'] = 'Δεν υποστηρίζεται';
+$string['reportsubmitgradelabel'] = 'Υποβολή βαθμού';
+$string['resizescript'] = 'Συμπερίληψη αυτού του σεναρίου στον ιστότοπό σας εάν θέλετε δυναμική αλλαγή μεγέθους του ενσωματωμένου περιεχομένου:';
+$string['resubmitscores'] = 'Προσπάθεια υποβολής αποθηκευμένων αποτελεσμάτων.';
+$string['reuse'] = 'Επαναχρησιμοποίηση';
+$string['reusecontent'] = 'Επαναχρησιμοποίηση περιεχομένου';
+$string['reusedescription'] = 'Επαναχρησιμοποίηση αυτού του περιεχομένου.';
+$string['reveal'] = 'Αποκάλυψη';
+$string['reviseserversetupandretry'] = 'Όταν έχετε αναθεωρήσει την εγκατάσταση του εξυπηρετητή σας, μπορείτε να ενεργοποιήσετε ξανά την επικοινωνία του διανομέα H5P στις ρυθμίσεις H5P.';
 $string['score'] = 'Σκορ';
 $string['search'] = 'Αναζήτηση';
+$string['sendusagestatistics'] = 'Συνεισφέρετε στατιστικά χρήσης';
+$string['sendusagestatistics_help'] = 'Οι αριθμοί στατιστικών χρήσης θα αναφερθούν αυτόματα για να βοηθήσουν τους προγραμματιστές να κατανοήσουν καλύτερα πώς χρησιμοποιείται το H5P και να προσδιορίσουν πιθανούς τομείς βελτίωσης. Διαβάστε περισσότερα σχετικά με το ποια <a {$a}>δεδομένα συλλέγονται στο h5p.org</a>.';
+$string['settings'] = 'Ρυθμίσεις H5P';
+$string['showadvanced'] = 'Εμφάνιση για προχωρημένους';
 $string['showless'] = 'Εμφάνιση λιγότερων';
 $string['showmore'] = 'Εμφάνιση περισσότερων';
+$string['sitecouldnotberegistered'] = 'Δεν ήταν δυνατή η καταχώρηση του ιστοτόπου στο διανομέα. Παρακαλούμε, επικοινωνήστε με τον διαχειριστή του ιστοτόπου σας.';
+$string['sitekey'] = 'Κλειδί ιστοτόπου';
+$string['sitekeydescription'] = 'Το κλειδί του ιστοτόπου είναι ένα μυστικό που προσδιορίζει με μοναδικό τρόπο αυτόν τον ιστότοπο στον διανομέα.';
+$string['sitekeyregistered'] = 'Σας έχει δοθεί ένα μοναδικό κλειδί που σας προσδιορίζει με μοναδικό τρόπο στον διανομέα κατά τη λήψη νέων ενημερώσεων. Το κλειδί είναι διαθέσιμο για προβολή στη σελίδα «Ρυθμίσεις H5P».';
 $string['size'] = 'Μέγεθος';
+$string['source'] = 'Πηγή';
+$string['sslnotenabled'] = 'Ο εξυπηρετητής σας δεν έχει ενεργοποιημένο το SSL. Το SSL πρέπει να είναι ενεργοποιημένο για να διασφαλίζει μια ασφαλή σύνδεση με τον διανομέα H5P.';
+$string['startingover'] = 'Θα ξεκινήσετε από την αρχή.';
+$string['sublevel'] = 'Υποεπίπεδο';
+$string['successfullyregisteredwithhub'] = 'Ο ιστότοπός σας καταχωρήθηκε με επιτυχία στο H5P Hub.';
 $string['thumbnail'] = 'Μικρογραφία';
 $string['title'] = 'Τίτλος';
+$string['unabletocreatedir'] = 'Δεν είναι δυνατή η δημιουργία καταλόγου.';
+$string['unabletogetfieldtype'] = 'Δεν είναι δυνατή η λήψη του τύπου πεδίου.';
 $string['undisclosed'] = 'Μυστικός';
 $string['unpackedfilesexceedsmaxsize'] = 'Το συνολικό μέγεθος των ασυμπίεστων αρχείων υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος. (%used > %max)';
+$string['updatedlibraries'] = 'Ενημερώθηκαν {$a->%old} βιβλιοθήκες H5P.';
+$string['updatedlibrary'] = 'Ενημερώθηκε {$a->%old} βιβλιοθήκη H5P.';
+$string['updatelibraries'] = 'Ενημέρωση όλων των βιβλιοθηκών';
+$string['upgrade'] = 'Αναβάθμιση H5P';
+$string['upgradebuttonlabel'] = 'Αναβάθμιση';
+$string['upgradedone'] = 'Έχετε αναβαθμίσει επιτυχώς {$a} στιγμιότυπα περιεχομένου.';
+$string['upgradeerror'] = 'Παρουσιάστηκε σφάλμα κατά την επεξεργασία παραμέτρων:';
+$string['upgradeerrorcontent'] = 'Δεν ήταν δυνατή η αναβάθμιση του περιεχομένου %id:';
+$string['upgradeerrordata'] = 'Δεν ήταν δυνατή η φόρτωση δεδομένων για τη βιβλιοθήκη %lib.';
+$string['upgradeerrormissinglibrary'] = 'Λείπει η απαιτούμενη βιβλιοθήκη %lib.';
+$string['upgradeerrornotsupported'] = 'Οι παράμετροι περιέχουν %used το οποίο δεν υποστηρίζεται.';
+$string['upgradeerrorparamsbroken'] = 'Οι παράμετροι είναι κατεστραμμένες.';
+$string['upgradeerrorscript'] = 'Δεν ήταν δυνατή η φόρτωση του σεναρίου αναβαθμίσεων για την %lib.';
+$string['upgradeerrortoohighversion'] = 'Οι παράμετροι περιέχουν %used ενώ υποστηρίζονται μόνο %supported ή παλαιότερες εκδόσεις.';
+$string['upgradeheading'] = 'Αναβάθμιση περιεχομένου {$a}';
+$string['upgradeinprogress'] = 'Αναβάθμιση σε %ver...';
 $string['upgradeinvalidtoken'] = 'Σφάλμα: Μη έγκυρο κουπόνι ασφαλείας!';
 $string['upgradelibrarycontent'] = 'Αναβάθμιση περιεχομένου βιβλιοθήκης';
 $string['upgradelibrarymissing'] = 'Σφάλμα: Η βιβλιοθήκη σας λείπει!';
 $string['upgrademessage'] = 'Πρόκειται να αναβαθμίσετε {$a} στιγμιότυπα/-ο περιεχομένου. Παρακαλούμε, επιλέξτε έκδοση αναβάθμισης.';
 $string['upgradenoavailableupgrades'] = 'Δεν υπάρχουν διαθέσιμες αναβαθμίσεις για αυτή τη βιβλιοθήκη.';
-$string['upgradenothingtodo'] = 'Δεν υπάρχει κανένα περιεχόμενο στιγμιότυπου προς αναβάθμιση.';
+$string['upgradenothingtodo'] = 'Δεν υπάρχει κανένα περιεχόμενο στιγμιοτύπου προς αναβάθμιση.';
 $string['upgradereturn'] = 'Επιστροφή';
 $string['upload'] = 'Ανέβασμα';
 $string['uploadlibraries'] = 'Ανέβασμα βιβλιοθηκών';
@@ -209,7 +423,9 @@ $string['validationfailed'] = 'Το H5P που ζητήθηκε δεν ήταν 
 $string['viewreportlabel'] = 'Αναφορά';
 $string['welcomecommunity'] = 'Ελπίζουμε να απολαύσετε το H5P και να ξεκινήσετε να ασχολείστε κι εσείς με την όλο και αναπτυσσόμενη κοινότητά μας μέσω των <a {$a->forums}>φόρουμ</a> μας.';
 $string['welcomecontactus'] = 'Αν έχετε κάποια ανατροφοδότηση, μην διστάσετε να <a {$a}>επικοινωνήσετε μαζί μας</a>. Εξετάζουμε τα σχόλιά σας πολύ σοβαρα και είμαστε αφοσιωμένοι στο να κάνουμε το H5P κάθε μέρα και καλύτερο!';
+$string['welcomegettingstarted'] = 'Για να ξεκινήσετε με το H5P στο Moodle ρίξτε μια ματιά στο <a {$a->moodle_tutorial}>βίντεο εκμάθησης</a> και δείτε το <a {$a->example_content}>παράδειγμα περιεχομένου</a> στο H5P.org για να πάρετε έμπνευση.';
 $string['welcomeheader'] = 'Καλώς ορίσατε στον κόσμο του H5P!';
+$string['wrongversion'] = 'Η έκδοση της βιβλιοθήκης H5P {$a->%machineName} που χρησιμοποιείται σε αυτό το περιεχόμενο δεν είναι έγκυρη. Το περιεχόμενο περιέχει {$a->%contentLibrary}, αλλά έπρεπε να είναι {$a->%semanticsLibrary}.';
 $string['year'] = 'Έτος';
 $string['years'] = 'Έτη(-ος)';
 $string['yearsfrom'] = 'Έτη (από)';

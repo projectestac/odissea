@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lti', language 'ko', version '3.8'.
  *
- * @package   lti
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lti
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,14 +40,14 @@ $string['always'] = '항상';
 $string['automatic'] = '기동 URL 기반 자동으로';
 $string['baseurl'] = '기본 URL';
 $string['basiclti'] = 'LTI';
-$string['basicltiactivities'] = 'LTI 활동';
 $string['basiclti_base_string'] = 'LTI OAuth 기본 문자열';
 $string['basiclti_endpoint'] = 'LTI 기동 엔드포인트';
-$string['basicltifieldset'] = '맞춤 예제 필드셋';
 $string['basiclti_in_new_window'] = '활동이 새로운 창에서 열렸습니다.';
+$string['basiclti_parameters'] = 'LTI 기동 파라메터';
+$string['basicltiactivities'] = 'LTI 활동';
+$string['basicltifieldset'] = '맞춤 예제 필드셋';
 $string['basicltiintro'] = '활동 설명';
 $string['basicltiname'] = '활동 이름';
-$string['basiclti_parameters'] = 'LTI 기동 파라메터';
 $string['basicltisettings'] = '기본 학습도구 상호연동 설정';
 $string['cannot_delete'] = '이 도구 설정을 삭제하지 않는 것이 좋습니다.';
 $string['cannot_edit'] = '이 도구 설정을 편집하지 않는 것이 좋습니다.';
@@ -59,9 +59,9 @@ $string['configpreferwidth'] = '선호하는 기본 폭';
 $string['configresourceurl'] = '기본 자원 URL';
 $string['configtoolurl'] = '기본 원격 도구 URL';
 $string['configtypes'] = 'LTI 어플리케이션 활성화';
+$string['course_tool_types'] = '강좌 도구 유형';
 $string['courseid'] = '강좌 id 번호';
 $string['coursemisconf'] = '강좌가 잘못 설정되었습니다.';
-$string['course_tool_types'] = '강좌 도구 유형';
 $string['createdon'] = '생성일:';
 $string['curllibrarymissing'] = 'LTI를 사용하기 위해서는 PHP Curl 라이브러리가 설치되어 있어야 합니다.';
 $string['custom'] = '맞춤 파라메터';
@@ -99,29 +99,29 @@ $string['fixexistingconf'] = '잘못 구성된 인스턴스에 기존 구성 사
 $string['fixnew'] = '새 구성';
 $string['fixnewconf'] = '잘못 구성된 인스턴스에 새 구성 정의';
 $string['fixold'] = '기존의 것 사용';
-$string['forced_help'] = '이 설정은 강좌 혹은 사이트 수준 도구 구성에서 이루어졌습니다. 이 인터페이스를 사용해서 변경할 수 없습니다.';
 $string['force_ssl'] = 'SSL 강제';
+$string['forced_help'] = '이 설정은 강좌 혹은 사이트 수준 도구 구성에서 이루어졌습니다. 이 인터페이스를 사용해서 변경할 수 없습니다.';
 $string['global_tool_types'] = '전역 도구 유형';
 $string['grading'] = '성적 라우팅';
 $string['icon_url'] = '아이콘 URL';
 $string['id'] = '아이디';
 $string['invalidid'] = 'LTI 아이디가 틀립니다.';
 $string['launch_in_moodle'] = '무들에서 도구 기동';
-$string['launchinpopup'] = '기동 컨테이너';
 $string['launch_in_popup'] = '팝업에서 도구 기동';
-$string['launchoptions'] = '기동 옵션';
 $string['launch_url'] = '기동 URL';
+$string['launchinpopup'] = '기동 컨테이너';
+$string['launchoptions'] = '기동 옵션';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'LTI 활동 채점';
 $string['lti:addinstance'] = 'LTI 활동 추기';
-$string['lti_administration'] = 'LTI 관리';
-$string['lti_errormsg'] = '도구가 다음 오류 메세지를 반환하였습니다: "{$a}"';
 $string['lti:grade'] = 'LTI 활동 채점';
-$string['lti_launch_error'] = '외부 도구를 기동하는 동안 오류가 발생하였습니다.';
 $string['lti:manage'] = 'LTI 활동 편집';
 $string['lti:requesttooladd'] = '구성을 위해 관리자에게 도구 제출';
+$string['lti:view'] = '외부 도구 활동 시작하기';
+$string['lti_administration'] = 'LTI 관리';
+$string['lti_errormsg'] = '도구가 다음 오류 메세지를 반환하였습니다: "{$a}"';
+$string['lti_launch_error'] = '외부 도구를 기동하는 동안 오류가 발생하였습니다.';
 $string['lti_tool_request_existing'] = '도구 도메인을 위한 도구 구성이  이미 제출되었습니다.';
-$string['lti:view'] = 'LTI 활동 보기';
 $string['main_admin'] = '일반적인 도움말';
 $string['main_admin_help'] = '';
 $string['miscellaneous'] = '기타';
@@ -129,14 +129,14 @@ $string['misconfiguredtools'] = '잘못 구성된 도구 인스턴스가 발견�
 $string['missingparameterserror'] = '페이지가 잘 못 구성되었습니다. "{$a}"';
 $string['module_class_type'] = '무들 모듈 유형';
 $string['modulename'] = '외부 도구';
-$string['modulenameplural'] = '기본 LTI';
+$string['modulenameplural'] = '외부 도구';
 $string['modulenamepluralformatted'] = 'LTI 인스턴스';
 $string['never'] = '전혀 없음';
 $string['new_window'] = '새 창';
-$string['noattempts'] = '이 도구 인스턴스에 대한 시도가 없습니다.';
 $string['no_lti_configured'] = '활성화 외부 도구가 없습니다.';
 $string['no_lti_pending'] = '보류중인 외부 도구가 없습니다.';
 $string['no_lti_rejected'] = '거절된 외부 도구가 없습니다.';
+$string['noattempts'] = '이 도구 인스턴스에 대한 시도가 없습니다.';
 $string['noltis'] = 'LTI 인스턴스가 없습니다.';
 $string['noservers'] = '서버가 발견되지 않았습니다.';
 $string['notypes'] = '무들에 현재 LTI 도구 설정이 없습니다. 추가하기 위해 위에 있는 설치 링크를 클릭하세요.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculated', language 'fr', version '3.8'.
  *
- * @package   qtype_calculated
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculated
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -111,9 +111,9 @@ $string['oneanswertrueansweroutsidelimits'] = 'Au moins une réponse correct est
 $string['param'] = 'Paramètre {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Pour toute réponse partiellement correcte';
 $string['pluginname'] = 'Calculée';
+$string['pluginname_help'] = 'Les questions calculées permettent de créer des questions numériques en utilisant des variables, placées entre deux accolades, qui sont remplacées pas des valeurs lorsque le test est lancé. Par exemple, la question « Quelle est l\'aire d\'un rectangle de longueur {a} et de largeur {b} ?» aura comme réponse correcte la formule « {a}*{b} » (où le symbole * représente la multiplication).';
 $string['pluginnameadding'] = 'Ajout d\'une question calculée';
 $string['pluginnameediting'] = 'Modification d\'une question calculée';
-$string['pluginname_help'] = 'Les questions calculées permettent de créer des questions numériques en utilisant des variables, placées entre deux accolades, qui sont remplacées pas des valeurs lorsque le test est lancé. Par exemple, la question « Quelle est l\'aire d\'un rectangle de longueur {a} et de largeur {b} ?» aura comme réponse correcte la formule « {a}*{b} » (où le symbole * représente la multiplication).';
 $string['pluginnamesummary'] = 'Les questions calculées sont des questions numériques dont les nombres sont tirés aléatoirement d\'un jeu de données lorsque le test est effectué.';
 $string['possiblehdr'] = 'Des caractères joker sont peut-être présents seulement dans le texte de la question';
 $string['privacy:metadata'] = 'Le plugin de type de question Calculée n\'enregistre aucune donnée personnelle.';

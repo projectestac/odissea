@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'question', language 'zh_cn', version '3.8'.
  *
- * @package   question
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     question
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -264,11 +264,11 @@ $string['markedoutofmax'] = '满分{$a}';
 $string['markoutofmax'] = '得分 {$a->mark}/{$a->max} 分';
 $string['marks'] = '得分';
 $string['matchgrades'] = '匹配分数';
-$string['matchgradeserror'] = '错误 ，如果分数未列出';
 $string['matchgrades_help'] = '导入的分数必须与有效分数的固定列表之一匹配—100、90、80、75、70、66.666、60、50、40、33.333、30、25、20、16.666、14.2857、12.5、11.111、10、5、0（也包括负值）。如果不是，那么有两个选择：
 
 * 错误 ，如果分数未列出 - 如果一个试题包含列表中没有的分数，那么将显示错误，并且该试题不会导入
 * 最接近的分数，如果未列出 - 如果某个分数不匹配列表中的值，那么这个分数就会被更改为列表中最接近的匹配值。';
+$string['matchgradeserror'] = '错误 ，如果分数未列出';
 $string['matchgradesnearest'] = '最接近的分数，如果未列出';
 $string['missingcourseorcmid'] = 'print_question 需要提供 courseid 或 cmid 。';
 $string['missingcourseorcmidtolink'] = 'get_question_edit_link 需要提供 courseid 或 cmid 。';
@@ -342,9 +342,13 @@ $string['permissionsaveasnew'] = '另存为新试题';
 $string['permissionto'] = '您有权限：';
 $string['previewquestion'] = '预览试题：{$a}';
 $string['privacy:metadata:database:question'] = '有关特定试题的详情。';
-$string['privacy:metadata:database:question_attempts'] = '有关试答特定试题的信息。';
-$string['privacy:metadata:database:question_attempts:flagged'] = '表示用户已在试答中标记了此试题。';
-$string['privacy:metadata:database:question_attempts:responsesummary'] = '试题回答的概要。';
+$string['privacy:metadata:database:question:createdby'] = '建立试题的人。';
+$string['privacy:metadata:database:question:generalfeedback'] = '此试题的通用反馈。';
+$string['privacy:metadata:database:question:modifiedby'] = '最后更新试题的人。';
+$string['privacy:metadata:database:question:name'] = '试题的名称。';
+$string['privacy:metadata:database:question:questiontext'] = '试题正文。';
+$string['privacy:metadata:database:question:timecreated'] = '建立此试题的日期和时间。';
+$string['privacy:metadata:database:question:timemodified'] = '这个试题更新的日期和时间。';
 $string['privacy:metadata:database:question_attempt_step_data'] = '试题试答步骤可能有特定于该步骤的额外数据。此数据存储在 step_data 表中。';
 $string['privacy:metadata:database:question_attempt_step_data:name'] = '数据项目的名称。';
 $string['privacy:metadata:database:question_attempt_step_data:value'] = '数据项目的值。';
@@ -353,14 +357,10 @@ $string['privacy:metadata:database:question_attempt_steps:fraction'] = '试答�
 $string['privacy:metadata:database:question_attempt_steps:state'] = '在步骤转换结束时，此试题试答步骤的状态。';
 $string['privacy:metadata:database:question_attempt_steps:timecreated'] = '此步骤转换开始的日期和时间。';
 $string['privacy:metadata:database:question_attempt_steps:userid'] = '执行步骤转换的用户。';
+$string['privacy:metadata:database:question_attempts'] = '有关试答特定试题的信息。';
+$string['privacy:metadata:database:question_attempts:flagged'] = '表示用户已在试答中标记了此试题。';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = '试题回答的概要。';
 $string['privacy:metadata:database:question_attempts:timemodified'] = '试题试答更新的时间。';
-$string['privacy:metadata:database:question:createdby'] = '建立试题的人。';
-$string['privacy:metadata:database:question:generalfeedback'] = '此试题的通用反馈。';
-$string['privacy:metadata:database:question:modifiedby'] = '最后更新试题的人。';
-$string['privacy:metadata:database:question:name'] = '试题的名称。';
-$string['privacy:metadata:database:question:questiontext'] = '试题正文。';
-$string['privacy:metadata:database:question:timecreated'] = '建立此试题的日期和时间。';
-$string['privacy:metadata:database:question:timemodified'] = '这个试题更新的日期和时间。';
 $string['privacy:metadata:link:qbehaviour'] = '试题子系统利用试题行为插件类型。';
 $string['privacy:metadata:link:qformat'] = '试题子系统利用试题格式插件类型来导入和导出不同格式的试题。';
 $string['privacy:metadata:link:qtype'] = '‎试题子系统与包含不同类型的试题的试题类型插件进行交互。 ‎';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'ko', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,8 +40,8 @@ $string['automatedstoragehelp'] = '백업이 자동으로 생성되는 경우 �
 $string['backupactivity'] = '활동 백업: {$a}';
 $string['backupcourse'] = '강좌 백업: {$a}';
 $string['backupcoursedetails'] = '강좌 개요';
-$string['backupcoursesection'] = '영역: {$a}';
-$string['backupcoursesections'] = '강좌 영역';
+$string['backupcoursesection'] = '섹션: {$a}';
+$string['backupcoursesections'] = '강좌 섹션';
 $string['backupdate'] = '백업날짜';
 $string['backupdetails'] = '백업 개요';
 $string['backupdetailsnonstandardinfo'] = '선택된 파일은 표준 무들 백업 파일이 아닙니다. 복구과정은 백업파일을 표준파일형식으로 변환한 다음 복구하는 것을 시도할 것입니다.';
@@ -58,7 +58,7 @@ $string['backupmode30'] = '허브';
 $string['backupmode40'] = '같은 사이트';
 $string['backupmode50'] = '자동화됨';
 $string['backupmode60'] = '변환됨';
-$string['backupsection'] = '백업 강좌 영역: {$a}';
+$string['backupsection'] = '백업 강좌 섹션: {$a}';
 $string['backupsettings'] = '백업 설정';
 $string['backupsitedetails'] = '사이트 개요';
 $string['backupstage16action'] = '계속';
@@ -153,7 +153,7 @@ $string['importsuccess'] = '가져오기 완료. 강좌로 돌아가기 위해�
 $string['includeactivities'] = '포함:';
 $string['includeditems'] = '포함된 항목들:';
 $string['includefilereferences'] = '외부 콘텐츠에 대한 파일 참조';
-$string['includesection'] = '영역 {$a} ';
+$string['includesection'] = '섹션 {$a}';
 $string['includeuserinfo'] = '사용자 자료';
 $string['locked'] = '잠김';
 $string['lockedbyconfig'] = '이 설정은 기본 백업 설정의 의해 잠겨있음';
@@ -182,7 +182,7 @@ $string['restorenewcourseshortname'] = '새강좌의 단축명';
 $string['restorenewcoursestartdate'] = '새로운 개시일';
 $string['restorerolemappings'] = '역할 배치 복구';
 $string['restorerootsettings'] = '복구 설정';
-$string['restoresection'] = '복구할 영역';
+$string['restoresection'] = '섹션 복구';
 $string['restorestage1'] = '확인';
 $string['restorestage16'] = '검토';
 $string['restorestage16action'] = '복구 실행';
@@ -232,7 +232,7 @@ $string['selectacategory'] = '범주 선택';
 $string['selectacourse'] = '강좌 선택';
 $string['setting_course_fullname'] = '강좌명';
 $string['setting_course_shortname'] = '강좌 단축명';
-$string['setting_course_startdate'] = '강좌 개설 날짜';
+$string['setting_course_startdate'] = '강좌 시작 날짜';
 $string['setting_keep_groups_and_groupings'] = '현재 모둠과 모둠 무리 보관';
 $string['setting_keep_roles_and_enrolments'] = '현재 역할과 등록 보관';
 $string['showtypes'] = '유형 옵션 보기';

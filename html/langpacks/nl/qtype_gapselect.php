@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_gapselect', language 'nl', version '3.8'.
  *
- * @package   qtype_gapselect
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_gapselect
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,9 +40,9 @@ $string['errorquestiontextblank'] = 'Je moet een vraagtekst ingeven.';
 $string['group'] = 'Groep';
 $string['pleaseputananswerineachbox'] = 'Zet een antwoord in elke box.';
 $string['pluginname'] = 'Ontbrekende woorden selecteren';
+$string['pluginname_help'] = 'Een "ontbrekende woorden selecteren"-vraag verwacht van de respondent om juiste antwoorden te selecteren uit  rolmenu\'s. Als plaatshouders wordt in de vraagtekst [[1]], [[2]], [[3]], ... gebruikt, met de overeenkomende antwoorden als 1, 2, 3, ... .Extra keuzes kunnen toegevoegd worden om de vraag moeilijker te maken. De keuzes kunnen gegroepeerd worden om de beschikbare antwoorden per rolmenu te beperken.';
 $string['pluginnameadding'] = 'Een "ontbrekende woorden selecteren"-vraag toevoegen';
 $string['pluginnameediting'] = 'Een "ontbrekende woorden selecteren"-vraag bewerken';
-$string['pluginname_help'] = 'Een "ontbrekende woorden selecteren"-vraag verwacht van de respondent om juiste antwoorden te selecteren uit  rolmenu\'s. Als plaatshouders wordt in de vraagtekst [[1]], [[2]], [[3]], ... gebruikt, met de overeenkomende antwoorden als 1, 2, 3, ... .Extra keuzes kunnen toegevoegd worden om de vraag moeilijker te maken. De keuzes kunnen gegroepeerd worden om de beschikbare antwoorden per rolmenu te beperken.';
 $string['pluginnamesummary'] = 'De ontbrekende woorden in de tekst worden ingevuld met woorden uit de rolmenu\'s.';
 $string['privacy:metadata'] = 'De selecteer ontbrekende woorden-plugin bewaart geen persoonlijke gegevens.';
 $string['shuffle'] = 'Door elkaar halen';

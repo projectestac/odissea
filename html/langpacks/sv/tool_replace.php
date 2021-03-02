@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,31 +12,32 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_replace', language 'sv', version '3.8'.
  *
- * @package   tool_replace
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_replace
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['cannotfit'] = 'Ersättningen är längre än originalet och förkortning är inte tillåtet; kan inte fortsätta.';
-$string['disclaimer'] = 'Jag förstår riskerna med denna åtgärd:';
+$string['disclaimer'] = 'Jag förstår riskerna med denna åtgärd';
 $string['doit'] = 'Ja, gör det!';
 $string['excludedtables'] = 'Flera tabeller uppdateras inte som en del av textersättningen. Dessa inkluderar konfiguration, logg, händelser och sessionstabeller.';
 $string['invalidcharacter'] = 'Ogiltiga tecken hittades i sök- eller ersättningstexten.';
 $string['notifyfinished'] = '...slutförd';
-$string['notifyrebuilding'] = 'Återskapar kurs cache';
-$string['notimplemented'] = 'Tyvärr, denna funktion är implementerad endast för databaser av typ MySQL och PostgreSQL';
-$string['notsupported'] = 'Detta script stöds inte, gör alltid en komplett säkerhetskopia innan du fortsätter!<br />Denna åtgärd kan inte återställas!';
+$string['notifyrebuilding'] = 'Återskapar kurscache...';
+$string['notimplemented'] = 'Denna funktion stöds inte av databasdrivrutinen för din databas.';
+$string['notsupported'] = 'Detta skript bör betraktas som experimentellt. Ändringar som görs kan inte rullas tillbaka. Därför bör en komplett backup göras innan du kör skriptet!';
 $string['pageheader'] = 'Sök och ersätt text i hela databasen';
 $string['pluginname'] = 'DB sök och ersätt';
 $string['privacy:metadata'] = 'DB sök och ersätt-pluginen lagrar inte några personuppgifter.';
-$string['replacewith'] = 'Ersätt med denna sträng:';
+$string['replacewith'] = 'Ersätt med denna sträng';
 $string['replacewithhelp'] = 'vanligtvis ny server-URL';
 $string['searchwholedb'] = 'Sök i hela databasen efter';
 $string['searchwholedbhelp'] = 'vanligtvis föregående server-URL';

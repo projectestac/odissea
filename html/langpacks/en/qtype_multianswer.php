@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multianswer', language 'en', version '3.8'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,10 +42,10 @@ $string['nooptionsforsubquestion'] = 'Unable to get options for question part # 
 $string['noquestions'] = 'The Cloze(multianswer) question "<strong>{$a}</strong>" does not contain any question';
 $string['pleaseananswerallparts'] = 'Please answer all parts of the question.';
 $string['pluginname'] = 'Embedded answers (Cloze)';
-$string['pluginnameadding'] = 'Adding an Embedded answers (Cloze) question';
-$string['pluginnameediting'] = 'Editing an Embedded answers (Cloze) question';
 $string['pluginname_help'] = 'Embedded answers (Cloze) questions consist of a passage of text with questions such as multiple-choice and short answer embedded within it.';
 $string['pluginname_link'] = 'question/type/multianswer';
+$string['pluginnameadding'] = 'Adding an Embedded answers (Cloze) question';
+$string['pluginnameediting'] = 'Editing an Embedded answers (Cloze) question';
 $string['pluginnamesummary'] = 'Questions of this type are very flexible, but can only be created by entering text containing special codes that create embedded multiple-choice, short answers and numerical questions.';
 $string['privacy:metadata'] = 'The Embedded answers (Cloze) question type plugin does not store any personal data.';
 $string['qtypenotrecognized'] = 'questiontype {$a} not recognized';

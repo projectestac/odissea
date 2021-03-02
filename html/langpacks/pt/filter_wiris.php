@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_wiris', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filter_wiris', language 'pt', version '3.8'.
  *
- * @package   filter_wiris
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filter_wiris
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,10 +52,10 @@ $string['enabled'] = 'Ativado';
 $string['error'] = 'ERRO';
 $string['errordeletingcache'] = 'Erro ao apagar a cache na área {$a}';
 $string['errorsavingcache'] = 'Erro ao guardar a cache na área {$a}';
-$string['filtermustbeinstalled'] = 'O filtro tem de estar instalado na pasta de filtros do Moodle.';
-$string['filtername'] = 'Matemática & Ciência por WIRIS';
 $string['filter_standalone'] = 'Apenas o filtro Matemática & Ciência por WIRIS';
 $string['filter_standalonedesc'] = 'Poderá mostrar as fórmulas já existentes, mas a criação de novas fórmulas não estará disponível. Também remove a mensagem de aviso.';
+$string['filtermustbeinstalled'] = 'O filtro tem de estar instalado na pasta de filtros do Moodle.';
+$string['filtername'] = 'Matemática & Ciência por WIRIS';
 $string['furtherinformation'] = 'Para mais informações, consulte a página de documentação ';
 $string['havesameversion'] = '&nbsp;tem a mesma versão';
 $string['imageformat'] = 'Formato da imagem';

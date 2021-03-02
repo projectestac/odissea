@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'zh_cn', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,13 +34,15 @@ $string['calendarend'] = '{$a} 结束';
 $string['calendarstart'] = '{$a} 开始';
 $string['cannotsubmit'] = '对不起，在提交您的投票时出现了问题。请再试试。';
 $string['choice'] = '投票';
-$string['choiceactivityname'] = '投票：{$a}';
 $string['choice:addinstance'] = '添加新投票';
 $string['choice:choose'] = '记录投票';
-$string['choiceclose'] = '结束投票';
-$string['choicecloseson'] = '投票结束于{$a}';
 $string['choice:deleteresponses'] = '修改和删除投票';
 $string['choice:downloadresponses'] = '下载投票';
+$string['choice:readresponses'] = '查看投票';
+$string['choice:view'] = '查看投票活动';
+$string['choiceactivityname'] = '投票：{$a}';
+$string['choiceclose'] = '结束投票';
+$string['choicecloseson'] = '投票结束于{$a}';
 $string['choicefull'] = '该选项已满，不能再选择。';
 $string['choicename'] = '投票名称';
 $string['choiceopen'] = '开始投票';
@@ -48,10 +50,8 @@ $string['choiceoptions'] = '投票选项';
 $string['choiceoptions_help'] = '在这里您可以指定参与人可以选择的选项。
 
 您可以输入任意数目的选项，空选项会被忽略。如果您需要超过8个选项，请点击“增加3个选项”按钮。';
-$string['choice:readresponses'] = '查看投票';
 $string['choicesaved'] = '您的投票已保存';
 $string['choicetext'] = '投票文本';
-$string['choice:view'] = '查看投票活动';
 $string['chooseaction'] = '选择一个操作...';
 $string['chooseoption'] = '选择: {$a}';
 $string['closebeforeopen'] = '您指定的结束日期早于开始日期。';
@@ -72,13 +72,13 @@ $string['full'] = '(已满)';
 $string['havetologin'] = '只有登录后您才能提交投票';
 $string['includeinactive'] = '包含来自非活跃或暂停的用户的投票';
 $string['indicator:cognitivedepth'] = '投票活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在投票活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '投票活动认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在这个分析间隔内，参与人已经达到了投票活动所提供的认知参与度(水平=未查看、查看、提交、查看反馈)。';
-$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在投票活动中所达到的认知深度。';
 $string['indicator:socialbreadth'] = '投票活动社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在投票活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '投票活动社会广度';
 $string['indicator:socialbreadthdef_help'] = '在这个分析间隔内，参与人已经达到了投票活动所提供的社会参与度(级别=没有参与，单独参与，和他人一起参与)';
-$string['indicator:socialbreadth_help'] = '这个指标是基于学生在投票活动中所达到的社会广度。';
 $string['limit'] = '限制';
 $string['limitanswers'] = '限制可投的票数';
 $string['limitanswers_help'] = '此选项允许您限制某个选项的可投票数。当达到限制时，投票人无法再投该选项。

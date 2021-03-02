@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'admin', language 'ko', version '3.8'.
  *
- * @package   admin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     admin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,12 +29,12 @@ $string['accessdenied'] = '접속 거부됨';
 $string['accounts'] = '계정';
 $string['addcategory'] = '범주 추가';
 $string['additionalhtml'] = '추가적인 HTML';
-$string['additionalhtml_desc'] = '이 설정은 모든 페이지에 추가하고자 하는 HTML을 명시할 수 있도록 합니다. 페이지의 HEAD 태그안에, BODY 태그가 열린 바로 다음에, 혹은 BODY 태그가 닫히기 직전에 추가될 HTML을 설정할 수 있습니다. <br/> 이렇게 함으로써 모든 페이지에 사용자 맞춤 헤더와 푸터를 추가하거나 Google Analytics 와 같은 서비스에 대한 지원을 매우 쉽게 선택한 테마에 상관없이 추가할 수 있습니다.';
+$string['additionalhtml_desc'] = '이 설정은 모든 페이지에 추가하고자 하는 HTML을 입력할 수 있도록 합니다. 페이지의 HEAD 태그안에, BODY 태그가 열린 바로 다음에, 혹은 BODY 태그가 닫히기 직전에 추가될 HTML을 설정할 수 있습니다. <br/> 이렇게 함으로써 모든 페이지에 사용자 맞춤 헤더와 푸터를 추가하거나 Google Analytics 와 같은 서비스에 대한 지원을  선택한 테마에 상관없이 매우 쉽게 추가할 수 있습니다.';
+$string['additionalhtml_heading'] = '모든 페이지에 추가될 추가 HTML';
 $string['additionalhtmlfooter'] = 'Body 가 닫히기 전에';
 $string['additionalhtmlfooter_desc'] = '여기에 있는 콘텐츠는 모든 페이지에서 body 태그가 닫히기 직전에  추가될 것입니다.';
 $string['additionalhtmlhead'] = '헤드안에';
 $string['additionalhtmlhead_desc'] = '여기에 있는 콘텐츠는 모든 페이지에서 HEAD태그의 아래에  추가될 것입니다.';
-$string['additionalhtml_heading'] = '모든 페이지에 추가될 추가 HTML';
 $string['additionalhtmltopofbody'] = 'BODY 가 열릴때';
 $string['additionalhtmltopofbody_desc'] = '여기에 있는 콘텐츠는 모든 페이지에서 시작 body 태그 다음에  추가될 것입니다.';
 $string['admincategory'] = '범주: {$a}';
@@ -54,7 +54,7 @@ $string['allowediplist'] = '허용된 IP 목록';
 $string['allowemailaddresses'] = '허용된 이메일 도메인';
 $string['allowframembedding'] = '프레임 임베딩 허용';
 $string['allowframembedding_help'] = '이 사이트를 외부 사이트 프레임 안으로 탑재 가능하게 허용. 이 기능을 활성화시키는 것은 보안상 권장하지 않습니다.';
-$string['allowguestmymoodle'] = '내 공부방에 손님 접근 허용';
+$string['allowguestmymoodle'] = '내 대시보드에 손님 접근 허용';
 $string['allowobjectembed'] = 'Embed 와 Object 태그 허용';
 $string['allowthemechangeonurl'] = '주소지에 있는 테마로 변경 허용';
 $string['allowuserblockhiding'] = '블록 감추기 허용';
@@ -74,9 +74,9 @@ $string['autologinguests'] = '자동 로그인 손님';
 $string['availablelicenses'] = '가능 사용허가 수준';
 $string['availableto'] = '사용 대상';
 $string['backgroundcolour'] = '투명 색상';
-$string['backups'] = '백업';
 $string['backup_shortname'] = '백업 파일이름으로 강좌이름 사용';
-$string['backup_shortnamehelp'] = '백업 파일명의 일부로서 강좌 식벌번호 대신 강좌명을 사용';
+$string['backup_shortnamehelp'] = '백업 파일명의 일부로서 강좌명을 사용';
+$string['backups'] = '백업';
 $string['badwordsconfig'] = '금칙어(욕설 등)를 콤마로 구분해 입력하시오';
 $string['badwordsdefault'] = '따로 지정한 목록이 없다면, 언어팩에 들어있는 기본 목록을 사용';
 $string['badwordslist'] = '금칙어 목록';
@@ -84,16 +84,17 @@ $string['blockediplist'] = '차단된 IP 목록';
 $string['blockinstances'] = '보기';
 $string['blockmultiple'] = '다중';
 $string['blockprotect'] = '인스턴스 보호';
+$string['blockprotect_help'] = '선택된 블록 인스턴스들은 사이트 전역 문맥에서 삭제되는 것으로부터 보호될 수 있습니다. 실수로 삭제되는 경우 복원하기가 어려운 찾아가기 블록과 설정 블록을 보호하기 위해 주로 사용될 수 있습니다.';
 $string['blocksettings'] = '블록 관리';
 $string['blockunprotect'] = '보호해제';
 $string['bloglevel'] = '블로그 가시성';
-$string['bookmarkadded'] = '갈무리주소 추가됨';
-$string['bookmarkalreadyexists'] = '이 페이지는 이미 갈무리되어 있습니다.';
-$string['bookmarkdeleted'] = '갈무리주소 삭제됨';
-$string['bookmarkthispage'] = '이 페이지를 갈무리함';
+$string['bookmarkadded'] = '즐겨찾기에 추가됨';
+$string['bookmarkalreadyexists'] = '이 페이지는 이미 즐겨찾기에 포함되어 있습니다.';
+$string['bookmarkdeleted'] = '즐겨찾기가 삭제됨';
+$string['bookmarkthispage'] = '이 페이지를 즐겨 찾기에 추가';
 $string['cacheapplication'] = '어플리케이션 캐시';
 $string['cacheapplicationhelp'] = '캐시 된 항목은 모든 사용자를 사이에 공유되며 정해진 TTL에 의해 만료됩니다.';
-$string['cachejs'] = '자바스크립트 캐쉬';
+$string['cachejs'] = '자바스크립트를 캐쉬';
 $string['cachejs_help'] = '자바스크립트 캐쉬 및 압축은 페이지 적재 효율을 향상시킵니다. 상용 사이트에서는 꼭 사용하기 바랍니다. 프로그램 개발자들은 이 기능을 비활성화 하기를 원할 수도 있습니다.';
 $string['cacherequest'] = '요청 캐시';
 $string['cacherequesthelp'] = '요청이 완료되면 만료되는 사용자 특정 캐시. 정적 스토어를 사용하는 영역을 대치하기 설계되었습니다.';
@@ -101,10 +102,10 @@ $string['cachesession'] = '세션 캐시';
 $string['cachesessionhelp'] = '사용자 세션이 종료되면 만료되는 사용자 특정 캐시. 세션 블로트/스트레인을 줄이기 위해 설계되었습니다.';
 $string['cachesettings'] = '캐시 설정';
 $string['caching'] = '캐싱';
-$string['calendarexportsalt'] = '일정표 내보내기 암호';
-$string['calendarsettings'] = '일정표';
-$string['calendartype'] = '달력 유형';
 $string['calendar_weekend'] = '주말';
+$string['calendarexportsalt'] = '달력 내보내기 소금문자열';
+$string['calendarsettings'] = '달력';
+$string['calendartype'] = '달력 유형';
 $string['cannotdeletemodfilter'] = '\'{$a->filter}\' 는 \'{$a->module}\' 모듈의 일부분이므로 제거할 수 없습니다.';
 $string['cannotuninstall'] = '{$a}는 제거 할 수 없습니다.';
 $string['categoryemail'] = '이메일';
@@ -148,7 +149,7 @@ $string['configallowoverride'] = '왼쪽 난의 역할을 가진 사람에게 �
 $string['configallowoverride2'] = '왼쪽 열에 있는 역할에 의해 덮어쓰기 될 수 있는 역할들을 선택하십시요.<br />이 설정은 moodle/role:override의 능력을 갖거나 moodle/role:safeoverride의 능력을 갖는 사용자에게만 적용됨을 주목하십시요.';
 $string['configallowswitch'] = '이미 지니고 있는 어떤 역활을 교환하려는지 선택하시오. 표에 있는 항목의 경우, 사용자가 역할 교환을 위한 moodle/role:switchroles 능력이 있어야만 합니다.<br />
 moodle/course:view 능력만 지닌 역할을 교환할 수 있고, moodle/site:doanything 능력으로는 교환할 수 없기 때문에 표의 일부 영역은 비활성 됨을 주목하기 바랍니다.';
-$string['configallowthemechangeonurl'] = '활성화되면, 무들의 주소가 어디라도  theme={themename} 를 이용해서 테마를 바꿀 수 있다.';
+$string['configallowthemechangeonurl'] = '활성화되면  무들 URL에 <br />?theme=themename 를 추가(예: mymoodlesite.com/?theme=afterburner )하거나  <br />&theme=themename  (예: mymoodlesite.com/course/view.php?id=2&theme=afterburner ) 를 추가하여 테마를 변경할 수 있습니다.';
 $string['configallowuserblockhiding'] = '사용자들이 사이트의 블록을 숨기거나 볼 수 있도록 허용하겠습니까? 이 기능은 접을 수 있는 블록의 상태을 기억하기 위해 자바 스크립트와 쿠키를 사용하며, 사용자 보기에만 영향을 미칩니다.';
 $string['configallowusermailcharset'] = '이 기능을 활성화시키면, 모든 사용자는 이메일에 자신만의 문자 세트를 이용할 수 있습니다.';
 $string['configallowuserswitchrolestheycantassign'] = '기본적으로 moodle/role:assign은 사용자들의 역활 교환에 필요하다. 이 설정을 활성화함으로서 이를 충족시키며 또한 결과적으로 "역할 부여 허용"표에서 펼침메뉴로 설정된 "교환할 역할"만을 이용할 수 있게 된다. "역할 부여 허용"표에서는 기존 역할을 능가하는 역활로 빠꾸는 것을 허용하지 않으므로 역할부여 허용 설정을 권장하는 것이다.';
@@ -171,7 +172,7 @@ $string['configcoursesperpage'] = '강좌 목록에서 페이지당 표시될 �
 $string['configcronclionly'] = '이것이 설정되면 크론 스크립트는 웹 대신 명령어 줄에서만 실행될 수 있다. 이것은 아래의 크론 암호설정을 덮어쓰기 합니다.';
 $string['configcronremotepassword'] = '이것은 cron.php가 아래와 같이 URL에서 제공하는 양식을 이용하여 암호가 제공되지 않으면 웹에서 구동될 수 없다는 것을 의미한다.<pre> http://site.example.com/admin/cron.php?password=opensesame
  </pre> 여기를 비워놓으면 암호를 요구하지 않는다.';
-$string['configcurlcache'] = 'cURL 잔존 시간, 초단위';
+$string['configcurlcache'] = 'cURL 캐시 잔존 시간, 초단위';
 $string['configcustommenuitems'] = '여기에서 테마에 의해 보여질 사용자 메뉴를 구성할 수 있습니다.
 각 줄은 파이프 문자로 구분된 메뉴 문장과 링크 URL(선택사항) 그리고 도구팁(선택사항)으로 구성됩니다. 하이픈을 사용하여 구조를 명시할 수 있습니다.
 예::
@@ -194,7 +195,7 @@ $string['configdebugvalidators'] = '페이지의 각주에 외부 검사기 서�
 $string['configdefaulthomepage'] = '로그인된 사용자를 위한 홈 페이지를 설정합니다';
 $string['configdefaultrequestcategory'] = '사용자가 요청한 강좌는 자동적으로 이 범주에 속하게 됩니다.';
 $string['configdefaultrequestedcategory'] = '승인된 강좌가 수용될 기본 범주';
-$string['configdefaultuserroleid'] = '이곳에서 지정한 역할로 모든 사용자에게 사이트 수준의 역할이 부여됩니다. 또한 다른 역할도 부여할 수 있습니다. 기본 역할은 인증된 사용자(구판에서는 손님)입니다. 자신들이 소유한 다른 역할과 상충되지 않게 하고, 모든 사용자가 강좌 수준의 권한(포럼의 게시 및 일정 관리 등)을 넘어서는 권한을 갖지 않게 주의하십시요.';
+$string['configdefaultuserroleid'] = '모든 로그인한 사용자는 이미 부여된 역할에 추가하여  이곳에서 지정한 사이트 수준에서의  역할의 능력을 부여받게 됩니다.  기본 역할은 인증된 사용자입니다.  능력을 금지하지 않으면 사용자들이 부여받은 다른 역할과 상충되지 않을 것입니다. 사이트 역할은 모든 사용자가 강좌 수준에서 부여하지 못하는 능력을 갖도록 해줍니다.';
 $string['configdeleteincompleteusers'] = '제시된 날 이후까지 계정 설정을 완료하지 않은 사용자는 자동 삭제됨';
 $string['configdeleteunconfirmed'] = '만약 이메일 인증제를 사용한다면, 여기에 설정된 기간내에 사용자들이 확인 응답을 해야합니다. 이 기간이 경과한 후에는 확인 응답을 하지 않은 계정은 삭제됩니다.';
 $string['configdenyemailaddresses'] = '같은 방법으로 여기에 있는 특정 도메인 목록의 이메일 주소를 허용하지 않는다. 그 외 모든 다른 도메인들은 허용된다. 예: <strong>hanmail.net yahoo.co.uk<strong/>';
@@ -202,13 +203,13 @@ $string['configdisableuserimages'] = '사용자가 개인정보 사진을 임의
 $string['configdisplayloginfailures'] = '이것은 이전에 로그인에 실패했던 사용자의 정보를 표시할 것이다.';
 $string['configdndallowtextandlinks'] = '파일처럼 강좌 페이지 안으로 텍스트나 링크를 끌고올 수 있도록 하는 기능입니다. 단, Firefox 에서 사용하거나, 혹은 서로 다른 브라우져 간의 텍스트 이동은 불안정하며, 빈 문자열이나 잘못된 문자열이 올라갈 수 있습니다.';
 $string['configdoclang'] = '이 언어는 문서페이지 링크에 사용됩니다.';
-$string['configdocroot'] = '무들 문서 창고의 경로를 정의합니다. 만일 나름대로의 사용자 온라인 문서를 갖고자 할 경우에는 이를 바꿀 수 있습니다. 그러나 문서 경로가 http://docs.moodle.org 과 같은 형식을 사용하도록 하십시요.';
+$string['configdocroot'] = '무들 문서 경로를 정의합니다. 만일 나름대로의 사용자 온라인 문서를 갖고자 할 경우에는 이를 바꿀 수 있습니다. 그러나 문서 경로가 http://docs.moodle.org 과 같은 형식을 사용하도록 하십시요.';
 $string['configdoctonewwindow'] = '만일 이 기능을 활성화 하면, 무들 문서로의 링크가 새 창에서 보여집니다.';
 $string['configeditordictionary'] = '이것은 만약 aspell에 사용자가 쓰는 언어의 사전이 없을 때 사용할 값입니다.';
 $string['configeditorfontlist'] = '편집기의 펼침 목록에 나타날 글꼴 선택';
 $string['configemailchangeconfirmation'] = '사용자가 개인 정보에서 메일 주소를 변경하면 이메일 주소 확인 절차를 요구';
 $string['configenableblogs'] = '이 스위치는 모든 사이트 사용자에게 자신만의 블로그를 제공합니다.';
-$string['configenablecalendarexport'] = '일정표로 내보냄/작성 활성화';
+$string['configenablecalendarexport'] = '달력 내보내기 혹은 구독 활성화';
 $string['configenablecomments'] = '덧글 활성화';
 $string['configenablecourserequests'] = '이 기능을 켜 놓으면 어느 누구던 강좌를 요청하여 만들 수 있다.';
 $string['configenabledevicedetection'] = '테마 및 다른 기능 적용을 위한 모바일, 스마트폰, 타블릿 혹은 기본 기기(데스크탑 pc, 랩탑등) 감지 활성화';
@@ -236,8 +237,8 @@ $string['configfrontpage'] = '위에서 선택된 항목은 사이트 시작 페
 $string['configfrontpagecourselimit'] = '최대 강좌 수';
 $string['configfrontpagecourselimithelp'] = '사이트 시작 화면의 강좌목록에서 보여질 최대 강좌 수';
 $string['configfrontpageloggedin'] = '위에서 선택된 항목은 사용자가 로그인한 후 사이트 시작 페이지에 표시될 것입니다.';
-$string['configfullnamedisplay'] = '이것은 전체 이름을 표시하는 방법을 정의하는 것이다. 대부분의 한 언어만 쓰는 사이트에서는 기본값인 "성+이름"으로도 충분하지만, 다양한 언어팩을 쓰는 경우 특히 성이나 이름이 매우 긴 경우에는 이름을 보이지 않게 하거나 성을 보이지 않게 설정할 수도 있다.';
-$string['configgeoipfile'] = 'GeoIP City의 이진 데이터가 있는 위치. 이 파일은 무들 배포본에 포함된 것이 아니며 <a href="http://www.maxmind.com/">MaxMind</a>에서 개별적으로 얻어야만 하는 것입니다. 상용 정식판을 구매할 수도 있고 공개판을 이용할 수도 있습니다.  <a href="http://www.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz">http://www.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz</a>을 내려받아 서버의 "{$a}" 경로에 풀어 넣으면 됩니다.';
+$string['configfullnamedisplay'] = '이것은 전체 이름을 표시될때 어떻게 이름이 보여질 것인가를 결정합니다. 대부분의 한 언어만 쓰는 사이트에서는 기본값인 "이름+성"으로되어 있지만, 성을 감추거나 언어팩 설정에 맡겨둘 수 있습니다.';
+$string['configgeoipfile'] = 'GeoIP City의 이진 데이터 파일 위치. 이 파일은 무들 배포본에 포함된 것이 아니며 <a href="http://www.maxmind.com/">MaxMind</a>에서 개별적으로 얻어야만 하는 것입니다. 상용 정식판을 구매할 수도 있고 공개판을 이용할 수도 있습니다.  <a href="http://www.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz">http://www.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz</a>을 내려받아 서버의 "{$a}" 경로에 풀어 넣으면 됩니다.';
 $string['configgetremoteaddrconf'] = '리버스 프록시 뒤에 서버가 있으면, 어떤 HTTP 헤더가 원격 IP 주소를 신임해야 할 것인지 지정하기 위해 이 설정을 사용할 수 있다. 헤더는 순서대로 읽혀지며, 우선적으로 사용 가능한 것을 이용한다.';
 $string['configgradebookroles'] = '이 설정은 성적부에 표시될 사람을 조정할 수 있게 합니다. 사용자는 최소한 이들 중 하나의 역할이 되어야만 그 강좌의 성적부에 등재될 수 있습니다.';
 $string['configgradeexport'] = '성적을 내보낼 때 우선적으로 사용할 성적부 형식을 선택하십시요. 선택된 플러그인이 설정된 후에는 추후 모든 성적의 "최근 내보냄" 항목으로 이용될 것입니다. 예를 들면 내보내기 한 레코드들은 "새로운" 혹은 "새로고침"된 것으로 간주될 것이다. 확신이 들지 않으면 모든 것을 비워 두십시요.';
@@ -276,7 +277,7 @@ $string['configmycoursesperpage'] = '개인 강좌 목록에 표시할 최대 �
 $string['configmymoodleredirect'] = '이 설정은 관리자가 아닌 사람이 로그인 할 때 강제적으로 /my 경로로 가게하고 최고 수준 사이트 찾아가기를 /my로 대체합니다.';
 $string['configmypagelocked'] = '이 설정은 관리자가 아닌 사람이 기본  페이지를 편집할 수 없게 합니다.';
 $string['confignavcourselimit'] = '로그인을 하지 않거나, 등록 강좌가 없는 사용자들에게 제시되는 강좌의 수를 제한';
-$string['confignavshowallcourses'] = '이것을 설정하면 사이트에 있는 모든 강좌들이 항상 찾아가기에 나타나도록 합니다.';
+$string['confignavshowallcourses'] = '이 설정은 강좌에 등록한 사용자가  찾아가기에서 자신이 등록한 강좌외에  모든 강좌를 볼 수 있게 하는 것을 설정합니다.';
 $string['confignavshowcategories'] = '찾아가기 막대와 찾아가기 블록에 강좌 범주 표시. 사용자가 등록한 강좌에는 나타나지 않지만 내 강좌들에는 범주없이 나열됩니다.';
 $string['confignoreplyaddress'] = '이메일은 종종 게시자 자신에게도 보내진다. 여기에 적은 이메일 주소는 발신자가 일일이 수신자의 답신을 받을 필요가 없는 경우에 사용되는, 관리용 발신 전용 주소입니다. (예를 들어 사용자가 자신의 이메일을 공개하지 않은 경우)';
 $string['confignotifyloginfailures'] = '로그인 실패 기록은 이메일을 통해 통보될 것이다. 누가 이런 통지를 받아야 하는가?';
@@ -296,8 +297,8 @@ $string['configproxypassword'] = '어떤 경우에는 프록시를 통해 인터
 $string['configproxyport'] = '프록시 서버가 필요하다면, 여기에 프록시 포트를 적어 넣어라.';
 $string['configproxytype'] = '웹 프록시의 종류(SOCKS5지원을 위해서는 PHP5와 cURL 익스텐션이 필요)';
 $string['configproxyuser'] = '어떤 경우 프록시를 통해 인터넷에 접속할 때 사용자 ID가 필요합니다. 필요없을 경우에는 비워 두십시오(PHP cURL 익스텐션이 필요)';
-$string['configrecaptchaprivatekey'] = '무들 서버와 recaptcha.net 서버 사이에 통신용으로 쓰이는 문자열. http://recaptcha.net에 접속하여 이 사이트에 쓸 문자열을 얻어 오라.';
-$string['configrecaptchapublickey'] = '등록 양식에 reCAPTCHA 요소를 표시하기 위해 쓸 문자열. http://recaptcha.net에서 생성';
+$string['configrecaptchaprivatekey'] = '무들 서버와 recaptcha 서버 사이에 통신하기 위해 사용하는 문자열. http://www.google.com/recaptcha에 접속하여 이 사이트를 위한 문자열을 받아 오세요.';
+$string['configrecaptchapublickey'] = '가입 양식에 reCAPTCHA 요소를 표시하기 위해 사용되는 문자열. http://www.google.com/recaptcha 에서 생성.';
 $string['configrequestcategoryselection'] = '강좌를 요청할 때 범주를 선택할 수 있습니다.';
 $string['configrequestedstudentname'] = '강좌에서 학생을 지칭하는 용어';
 $string['configrequestedstudentsname'] = '강좌에서 학생들을 지칭하는 용어';
@@ -309,7 +310,7 @@ $string['configsectionmaintenance'] = '유지보수';
 $string['configsectionmisc'] = '기타';
 $string['configsectionoperatingsystem'] = '운영체제';
 $string['configsectionpermissions'] = '사용권한';
-$string['configsectionrequestedcourse'] = '강좌 개설 요청';
+$string['configsectionrequestedcourse'] = '수강 신청';
 $string['configsectionsecurity'] = '보안';
 $string['configsectionstats'] = '통계';
 $string['configsectionuser'] = '사용자';
@@ -341,9 +342,9 @@ $string['configstartwday'] = '한 주의 첫 요일';
 $string['configstatsfirstrun'] = '여기에서 cron이 통계를 처리한 후 얼마나 오랫동안 기록을 보유하고 있어야 할지를 지정한다. 만일 매우 접속이 많거나 서버를 임대해 쓰는 경우는, 통계처리에 걸리는 시간도 길고 부하도 많이 걸리기 때문에 기록을 오래 유지시키는 일은 바람직하지 않다.(여기에서는 1 month = 28 days로 설정했고, 그래프와 보고에서는 1 month = 1 calendar month로 했음에 유의하라)';
 $string['configstatsmaxruntime'] = '통계 처리과정은 부하가 매우 많이 걸리기 때문에 언제 시작하고 얼마나 유지할지를 이 항목과 다음 항목에서 지정해 주어야 한다.';
 $string['configstatsmaxruntime2'] = '통계 처리는 매우 집중적일 수 있기 때문에, 하루의 통계를 처리하는데 있어 허용할 수 있는 최대 시간을 지정합니다. 한번의 cron 실행으로 처리할 수 있는 최대 날 수는 31일입니다.';
-$string['configstatsmaxruntime3'] = '통계처리시 서버에 상당한 부하가 걸린다는 점을 염두에 두고, 통계 처리에 허용할 최대 시간을 지정한다. cron을 통해 처리할 최대 날 수는 아래에서 지정할 수 있다.';
+$string['configstatsmaxruntime3'] = '통계처리시 서버에 상당한 부하가 걸린다는 점을 염두에 두세요. 여기서 하루에 대한 통계 처리에 허용할 최대 시간을 지정합니다. cron을 통해 처리할 최대 날 수는 아래에서 지정할 수 있습니다.';
 $string['configstatsruntimedays'] = '매 통계 처리 수행시 수행할 최대 날 수를 지정합니다. 통계가 최신일 때는 하루만  처리될 것입니다. 크론의 실행 시간을 단축시키고 싶다면, 서버의 부하를 감안하여 이 값을 조절하십시요.';
-$string['configstatsruntimestart'] = '언제 통계 처리를 하는 cronjob을 <b>시작</b>시켜야 하는가? 같은 서버에 여러개의 무들이 설치된 경우 다른 시간을 명시하십시요.';
+$string['configstatsruntimestart'] = '언제 통계 처리를 하는 cronjob을 시작시켜야 하는가? 같은 서버에 여러 개의 무들이 설치된 경우 다른 시간을 명시하십시요.';
 $string['configstatsuserthreshold'] = '이 설정은 강좌가 통계 계산에 포함되기 위한 등록된 사용자의 최소 수를 명시합니다.';
 $string['configstrictformsrequired'] = '활성화되면 사용자가 양식의 필수 항목에 공백이나 줄바꿈 만을 입력하는 것을 방지할 수 있습니다.';
 $string['configstripalltitletags'] = '활동이나 자원 이름에 HTML 태그를 사용하는 것을 허용하려면 체크표시를 해제하십시오.';
@@ -354,7 +355,7 @@ $string['configthemedesignermode'] = '보통 모든 테마의 이미지와 스�
 $string['configthemelist'] = '다양한 테마를 사용하게 하려면 이 부분을 빈칸을 남겨두십시요. 만약 테마 메뉴를 짧게하길 원한다면, 여기에 콤마로 분리된 목록 이름을 명시할 수 있습니다. (공백을 사용하지 마십시요) 예: standard,orangewhite';
 $string['configtimezone'] = '여기에서 표준시간대를 선택합니다. 이것은 단지 기본값으로 쓸 표준시간대이며, 각 사용자는 개인정보 난에서 그들 자신에 맞는 설정을 따로 할 수가 있습니다. 이곳의 "서버 지역시간대"는 서버 전반에 적용되는 기준 시간으로 무들의 기본값인데, 사용자 개인정보에 있는 시간대와는 별도입니다. Cronjob은 이 시간을 기준으로 작동합니다.';
 $string['configuseblogassociations'] = '사용자들이 강좌 및 강좌 모듈의 항목을 연합해서 자신들의 블로그를 쓸 수 있게 할까요? ';
-$string['configuseexternalyui'] = '로컬 파일을 사용하는 대신 Yahoo 서버에서 온라인으로 제공하는 파일을 사용하세요. 주의: 인터넷 연결이 필요합니다. 그렇지 않으면 AJAX가 동작하지 않을 것입니다.';
+$string['configuseexternalyui'] = '로컬 파일을 사용하는 대신 Yahoo 서버에서 온라인으로 제공하는 파일을 사용하세요. 주의: 인터넷 연결이 필요합니다. 그렇지 않으면 AJAX가 동작하지 않을 것입니다. 이설정은 https를 사용하는 사이트에는 맞지 않습니다.';
 $string['configuserquota'] = '사용자가 자신의 영역에 저장할 수 있는 파일의 최대 용량. {$a->bytes} bytes == {$a->displaysize}';
 $string['configusetags'] = '사이트 전반에 걸쳐 태그 기능을 활성화할 필요가 있을까요?';
 $string['configvariables'] = '변수';
@@ -373,7 +374,7 @@ $string['coursecontact'] = '강좌 관리자';
 $string['coursecontact_desc'] = '여기에서는 강좌 소개에 표시하고 싶은 사람을 설정할 수 있게 한다. 기표된 역할이 주어진 사용자는 강좌 설명에 이름이 제시됩니다.';
 $string['courselistshortnames'] = '확장된 강좌 이름 표시';
 $string['courselistshortnames_desc'] = '이 기능이 활성화 되면, 강좌의 짧은 이름이 강좌 목록의 전체이름과 함께 표시됩니다. 필요하다면, 맞춤 언어(language customisation)기능을 통해 \'courseextendednamedisplay\' 값을 수정함으로써 확장된 강좌명을 수정할 수도 있습니다.';
-$string['coursemgmt'] = '추가/편집';
+$string['coursemgmt'] = '코스 및 카테고리 관리';
 $string['courseoverview'] = '강좌 개요';
 $string['courserequestnotify'] = '개설 요청 알림';
 $string['courserequestnotifyemail'] = '{$a->link} 에서 {$a->user} 가 새 강좌 개설 요청';
@@ -385,12 +386,12 @@ $string['courseswithsummarieslimit'] = '요약 제한이 있는 강좌';
 $string['creatornewroleid'] = '새 강좌 생성자의 역할';
 $string['creatornewroleid_help'] = '사용자가 새 강좌를 관리할 권한을 가지지 않았다면 사용자는 이 역활을 사용하여 자동으로 등록될 수 있습니다.';
 $string['cron'] = '크론';
+$string['cron_help'] = 'cron.php 유지 스크립트는 새롭게 작성된 포럼 게시글을 이메일로 보내는 것처럼 무들 모듈이 정해진 시간마다 작업을 수행하는 것을 도와줍니다. 스크립트를 예를 들어 5분마다 실행시키는 메카니즘이 필요합니다.';
 $string['cronclionly'] = '명령어 줄에서만 크론 실행';
 $string['cronerrorclionly'] = '죄송합니다. 이  페이지는 관리자에 의하여 인터넷 접속을 금하도록 설정되었습니다.';
 $string['cronerrorpassword'] = '죄송합니다. 이  페이지에 접속하려면 적절한 암호가 있어야 합니다.';
-$string['cron_help'] = 'cron.php 유지 스크립트는 새롭게 작성된 포럼 게시글을 이메일로 보내는 것처럼 무들 모듈이 정해진 시간마다 작업을 수행하는 것을 도와줍니다. 스크립트를 예를 들어 5분마다 실행시키는 메카니즘이 필요합니다.';
 $string['cronremotepassword'] = '크론 비밀번호';
-$string['cronwarning'] = '<a href="cron.php">cron.php 관리 스크립트</a>가 최소 24시간 동안 작동되지 않았습니다.';
+$string['cronwarning'] = '<a href="{$a}">cron.php 관리 스크립트</a>가 최소 24시간 동안 작동되지 않았습니다.';
 $string['cronwarningcli'] = 'cli/cron.php 유지 관리 스크립트가 최소 24 시간 동안 실행되지 않았습니다.';
 $string['ctyperequired'] = '다국어 호환 기능 및 사이트의 성능 향상을 위해 이제부터 무들은 ctype의 PHP 확장자를 요구합니다.';
 $string['curlcache'] = 'cURL cache TTL';
@@ -439,10 +440,10 @@ $string['devicedetectregexvalue'] = '반환 값';
 $string['devicetype'] = '기기 유형';
 $string['disableuserimages'] = '사용자 개인 사진 비활성화';
 $string['displayerrorswarning'] = '상용 사이트에서는 오류 메세지를 통하여 서버의 민감한 정보가 누출될 우려가 있기 때문에 PHP의 <em>display_errors</em> 설정을 추천하지 않습니다.';
-$string['displayloginfailures'] = '로그인 실패 보여주기';
+$string['displayloginfailures'] = '로그인 실패 표시';
 $string['dndallowtextandlinks'] = '택스트와 링크들을 드래그 드롭으로 업로드';
 $string['doclang'] = '문서 언어';
-$string['docroot'] = '무들 문서창고 경로';
+$string['docroot'] = '무들 문서 경로';
 $string['doctonewwindow'] = '새 창에서 열기';
 $string['download'] = '내려받기';
 $string['edithelpdocs'] = '도움 문서 편집';
@@ -472,13 +473,14 @@ $string['emoticonsreset'] = '이모티콘 설정을 기본 값으로 리셋';
 $string['emoticontext'] = '텍스트';
 $string['emptysettingvalue'] = '비어있음';
 $string['enableblogs'] = '블로그 활성화';
-$string['enablecalendarexport'] = '일정표로 내보내기 활성화';
+$string['enablecalendarexport'] = '달력 내보내기 활성화';
 $string['enablecomments'] = '덧글 활성화';
 $string['enablecourserequests'] = '강좌 개설 가능';
 $string['enabled'] = '활성화 됨';
 $string['enabledevicedetection'] = '기기 감지 활성화';
+$string['enableglobalsearch'] = '전역 검색 활성화';
 $string['enablegravatar'] = '그라바타 활성화';
-$string['enablemobilewebservice'] = '모바일 웹서비스 활성화';
+$string['enablemobilewebservice'] = '모바일기기를 위한 웹서비스 활성화';
 $string['enablerecordcache'] = '레코드 캐시 활성화';
 $string['enablerssfeeds'] = 'RSS 피드 활성화';
 $string['enablesafebrowserintegration'] = '안전 시험 브라우저 통합 활성화';
@@ -539,7 +541,7 @@ $string['frontpagequestions'] = '시작 페이지 퀴즈';
 $string['frontpagerestore'] = '시작 페이지 복원';
 $string['frontpageroles'] = '시작 페이지 역할';
 $string['frontpagesettings'] = '시작 페이지 설정';
-$string['fullnamedisplay'] = '전체 이름 형식';
+$string['fullnamedisplay'] = '이름 표시 형식';
 $string['gdrequired'] = 'GD 익스텐션은 무들에서 이미지 변환에 필요합니다.';
 $string['generalsettings'] = '일반 설정';
 $string['geoipfile'] = 'GeoIP City 자료 파일';
@@ -577,7 +579,7 @@ $string['incompatibleblocks'] = '호환되지 않는 블록';
 $string['installhijacked'] = '설치과정은 원래의 IP 주소에서 마칠 수 있어야만 합니다.';
 $string['installsessionerror'] = 'PHP 세션을 시작할 수 없습니다. 브라우저가 쿠키를 허용하는지 확인하기 바랍니다.';
 $string['intlrecommended'] = 'Intl 익스텐션은 지역화에 따른 정렬등 국제화 지원을 향상시키는데 사용합니다.';
-$string['invalidsection'] = '잘못된 영역';
+$string['invalidsection'] = '잘못된 섹션';
 $string['invaliduserchangeme'] = '"changeme"는 예약된 사용자 아이디입니다. 이 이름으로는 계정을 만들 수 없습니다.';
 $string['ipblocked'] = '현재 이 사이트는 사용할 수 없습니다.';
 $string['ipblocker'] = 'IP 제한';
@@ -587,12 +589,12 @@ $string['iplookupinfo'] = '기본적으로 무들은 IP 주소의 위치를 찾�
 $string['iplookupmaxmindnote'] = '이 제품은 MaxMind(<a href="http://www.maxmind.com/">http://www.maxmind.com/</a>)의 의해 제작된 GeoLite의 자료를 포함하고 있습니다.';
 $string['keeptagnamecase'] = '태그 명칭 유지';
 $string['lang'] = '초기 설정 언어';
-$string['langcache'] = '언어팩의 캐쉬';
+$string['langcache'] = '언어 메뉴 캐쉬';
 $string['langcache_desc'] = '언어메뉴 캐시. 활성화되면 사용가능한 번역 목록이 캐시됩니다. 캐시는 내장된 언어 팩 관리 도구를 통하여 언어팩을 설치하거나 삭제할때 자동으로 새로고침됩니다. 만일 수동으로 언어팩을 설치하는 경우 캐시된 목록을 새로고침하기 위해 모든 캐시 기능을 청소해야 합니다.';
 $string['langlist'] = '선택목록의 언어';
 $string['langmenu'] = '언어 선택 메뉴';
 $string['langpackwillbeupdated'] = '노트: 판올림 중에 무들은 선택된 언어팩을 판올림할 것입니다.';
-$string['langstringcache'] = '모든 언어 문자열 캐쉬';
+$string['langstringcache'] = '모든 언어 문자열 캐시';
 $string['languagesettings'] = '언어 설정';
 $string['latinexcelexport'] = '엑셀 인코딩';
 $string['legacyfilesinnewcourses'] = '새 강좌에서 예전 강좌 파일들';
@@ -603,7 +605,7 @@ $string['loading'] = '탑재 중';
 $string['localetext'] = '전역 로케일';
 $string['localstringcustomization'] = '맞춤 문자열';
 $string['location'] = '지역';
-$string['locationsettings'] = '표준시 설정';
+$string['locationsettings'] = '지역 설정';
 $string['locked'] = '잠김';
 $string['lockoutduration'] = '계정 잠금 기간';
 $string['lockoutduration_desc'] = '잠겨진 계정은 자동으로 이 기간 이후에 잠금 해제됩니다.';
@@ -624,14 +626,14 @@ $string['logstoressupported'] = '이 보고서를 지원하는 로그 저장소'
 $string['longtimewarning'] = '<b>이 과정은 꽤 시간이 소요됨을 염두에 두시기 바랍니다.</b>';
 $string['mailnewline'] = '메일의 라인 개행문자';
 $string['maintenancemode'] = '유지관리 모드';
-$string['maintenancemodeisscheduled'] = '사이트가 {$a}분 후에 유지모드로 변경됩니다.';
+$string['maintenancemodeisscheduled'] = '사이트가 {$a->min} 분 {$a->sec}초 후에 유지보수모드로 변경됩니다.';
 $string['maintfileopenerror'] = '유지 관리 파일 열기 오류';
 $string['maintinprogress'] = '유지 관리 진행 중...';
 $string['manageformats'] = '강좌 포맷 관리';
 $string['manageformatsgotosettings'] = '{$a}에서 기본 포맷이 변경될 수 있습니다.';
 $string['managelang'] = '언어팩 관리';
 $string['managelicenses'] = '사용허가 관리';
-$string['manageqbehaviours'] = '질문 작동 관리';
+$string['manageqbehaviours'] = '질문 진행방식 관리';
 $string['manageqtypes'] = '질문 유형 관리';
 $string['maturity100'] = '베타';
 $string['maturity150'] = '배포 후보';
@@ -686,9 +688,9 @@ $string['multilangforceold'] = '강제로 예전의 다중언어 문법 사용: 
 $string['mustenablestats'] = '아직 통계수집을 하도록 설정하지 않았습니다.';
 $string['mycoursesperpage'] = '강좌의 수';
 $string['mydashboard'] = '시스템 기본 상황페이지';
-$string['mymoodle'] = '내 공부방';
+$string['mymoodle'] = '내 홈페이지';
 $string['mymoodleredirect'] = '내 공부방 강제 개설';
-$string['mypage'] = '내 공부방 페이지';
+$string['mypage'] = '기본 내 공부방 페이지';
 $string['mypagelocked'] = '기본 페이지 잠김';
 $string['myprofile'] = '기본 개인정보 페이지';
 $string['navadduserpostslinks'] = '사용자의 게시글을 보기 위한 링크 추가';
@@ -703,13 +705,13 @@ $string['navshowfullcoursenames_help'] = '활성화되면 찾아가기에 있는
 $string['navshowmycoursecategories'] = '내 강좌 범주 보여주기';
 $string['navsortmycoursessort'] = '내 강좌 정렬';
 $string['neverdeleteruns'] = '실행을 삭제하지 마십시요.';
-$string['nobookmarksforuser'] = '갈무리된 주소가 없음';
+$string['nobookmarksforuser'] = '즐겨찾기가 없음';
 $string['nodatabase'] = '데이터베이스 없음';
 $string['nohttpsformobilewarning'] = '유효한 인증서와 HTTPS를 활성화하는 것을 추천합니다. 무들 어플리케이션은 항상 보안 접속을 우선 사용하도록 시도할 것 입니다.';
 $string['nomissingstrings'] = '빠진 문자열 없음';
 $string['none'] = '없음';
 $string['nonewsettings'] = '이번 판올림과정에서 새로운 설정이 추가되지 않았습니다.';
-$string['nonexistentbookmark'] = '요청한 곳을 찾을 수 없습니다.';
+$string['nonexistentbookmark'] = '요청한 즐겨찾기가 없습니다.';
 $string['noreplyaddress'] = '발신전용 이메일 주소';
 $string['noresults'] = '검색 결과 없음.';
 $string['noroles'] = '역할 없음';
@@ -760,12 +762,12 @@ $string['profileconfirmfielddeletion'] = '삭제 될 {$a} 개의 사용자 기�
 $string['profilecreatecategory'] = '개인정보 범주 생성';
 $string['profilecreatefield'] = '개인정보 항목 생성:';
 $string['profilecreatenewcategory'] = '개인정보 범주 만들기';
-$string['profilecreatenewfield'] = '새로운 "{$a}" 개인정보 항목 만들기';
+$string['profilecreatenewfield'] = '새로운 \'{$a}\' 개인정보 항목 만들기';
 $string['profiledefaultcategory'] = '기타 항목';
 $string['profiledefaultchecked'] = '기본사항 점검 완료';
 $string['profiledefaultdata'] = '기본값';
 $string['profiledeletecategory'] = '범주 삭제';
-$string['profiledeletefield'] = '항목 삭제';
+$string['profiledeletefield'] = '필드 \'{$a}\' 삭제';
 $string['profiledescription'] = '항목의 설명';
 $string['profiledscript'] = '이 스크립트는 프로파일되었습니다.';
 $string['profiledscriptview'] = '이 스크립트에 대한 프로파일 정보를 보기';
@@ -779,7 +781,7 @@ $string['profilefieldlink_help'] = '문서를 연결고리로 전환하려면, $
 $string['profilefieldlinktarget'] = '목적지';
 $string['profilefieldmaxlength'] = '최대 길이';
 $string['profilefieldrows'] = '행';
-$string['profilefields'] = '추가 개인정보 항목 설정';
+$string['profilefields'] = '추가 항목 설정';
 $string['profilefieldsize'] = '표시 크기';
 $string['profileforceunique'] = '자료가 중복되지 않아야 합니까?';
 $string['profileinvaliddata'] = '옳지 않은 값';
@@ -798,8 +800,8 @@ $string['profileshortnamenotunique'] = '이미 사용된 이름입니다.';
 $string['profilesignup'] = '로그인 페이지를 표시할까요?';
 $string['profilespecificsettings'] = '세부 설정';
 $string['profilevisible'] = '누구에게 이 항목을 공개 할까요?';
-$string['profilevisibleall'] = '모든 이에게 공개';
 $string['profilevisible_help'] = '<p>개개의 항목은 감춤, 모두 공개, 사용자 공개 중 하나를 선택할 수 있습니다. 감춤 설정은 관리자가 사용자의 사적인 자료를 보호하고 싶을 때 주로 사용합니다. \'사용자 공개\'는 \'모두 공개\'가 정보의 어떤 유형이든 공개하여 활용할 수 있는 데 비해 대체로 민감한 정보를 감추고 싶을 경우에 선택합니다.</p>';
+$string['profilevisibleall'] = '모든 이에게 공개';
 $string['profilevisiblenone'] = '비공개';
 $string['profilevisibleprivate'] = '사용자에게 공개';
 $string['profiling'] = '프로파일링';
@@ -824,14 +826,14 @@ $string['proxypassword'] = '프록시 암호';
 $string['proxyport'] = '프록시 포트';
 $string['proxytype'] = '프록시 타입';
 $string['proxyuser'] = '프록시 사용자 이름';
-$string['purgecaches'] = '모든 저장내용 삭제';
+$string['purgecaches'] = '모든 캐시 삭제';
 $string['purgecachesconfirm'] = '무들은 테마, 자바스크립트, 언어 문자열, 필터된 문장, rss 피드 및 여러 계산된 자료 조각들을 캐시에 저장할 수 있습니다. 캐시를 청소하면 서버에서 데이터들이 지워져서 브라우저가 데이터를 다시 가져오도록 하며, 현재 코드에 의해 만들어진 최신의 값들을 볼 수 있습니다. 캐시를 청소하는 것은 아무런 위험이 없지만 서버와 클라이언트가 새로운 정보를 계산하고 저장할 때까지 사이트가 잠시동안 느려질 수 있습니다.';
-$string['purgecachesfinished'] = '모든 저장내용이 삭제됨';
+$string['purgecachesfinished'] = '모든 캐시가 삭제됨';
 $string['purgejscache'] = '자바스크립트';
 $string['query'] = '질문';
 $string['question'] = '질문';
-$string['questionbehaviours'] = '질문 작동';
-$string['questioncwqpfscheck'] = '퀴즈에  \'무작위\' 질문이 비공개 혹은 공개 질문 은행 중에서 선택하도록 설정되어 있습니다. 좀 더 자세한 보고서는 <a href="{$a->reporturl}">이 곳</a> 과 무들 문서 창고의 <a href="{$a->docsurl}">이 곳</a>을 참고하기 바랍니다.';
+$string['questionbehaviours'] = '질문 진행방식';
+$string['questioncwqpfscheck'] = '퀴즈에  \'무작위\' 질문이 비공개 혹은 공개 질문 은행 중에서 선택하도록 설정되어 있습니다. 좀 더 자세한 보고서는 <a href="{$a->reporturl}">이 곳</a> 과 무들 문서 의 <a href="{$a->docsurl}">이 곳</a>을 참고하기 바랍니다.';
 $string['questioncwqpfsok'] = '통과. 여러분의 퀴즈에는 처리되어야 할 \'무작위\' 질문이 없습니다.';
 $string['questiontype'] = '질문 유형';
 $string['questiontypes'] = '질문 유형';
@@ -848,7 +850,7 @@ $string['rememberusername'] = '사용자이름 기억';
 $string['rememberusername_desc'] = '사용자가 로그인 되어 있을 동안, 쿠키와 사용자명을 저장할 수 있습니다. 이렇게 저장된 쿠키는 동의 없이 사용될 경우 보안 문제를 일으킬 수 있습니다.';
 $string['reportsmanage'] = '보고서 관리';
 $string['requestcategoryselection'] = '범주 선택 활성화';
-$string['requiredentrieschanged'] = '<strong>중요 - 필히 읽어볼 것<br/>(본 경고 메세지는 판올림 과정에서만 보이게 될 것입니다.)</strong><br/>버그 수정 때문에, \'필수 항목\' 및 \'설정을 보기전 필수 항목\'설정을 이용하는 데이터베이스 활동에 대한 동작이 변경될 것입니다. 좀 더 자세한 변경 내용은 <a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">데이터베이스 모듈 포럼</a>을 참고하면 됩니다. 이러한 설정이 어떻게 작동할 것인가는 <a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">무들 문서 창고</a>에서 역시 찾아볼 수 있습니다.
+$string['requiredentrieschanged'] = '<strong>중요 - 필히 읽어볼 것<br/>(본 경고 메세지는 판올림 과정에서만 보이게 될 것입니다.)</strong><br/>버그 수정 때문에, \'필수 항목\' 및 \'설정을 보기전 필수 항목\'설정을 이용하는 데이터베이스 활동에 대한 동작이 변경될 것입니다. 좀 더 자세한 변경 내용은 <a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">데이터베이스 모듈 포럼</a>을 참고하면 됩니다. 이러한 설정이 어떻게 작동할 것인가는 <a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">무들 문서 </a>에서 역시 찾아볼 수 있습니다.
 <br/><br/>본 변경은 여러분의 시스템의 다음과 같은 데이터베이스에 영향을 줄 것입니다.(지금 즉시 이 목록을 저장하여 두고, 판올림 이후에 활동들이 선생님들의 의도한 대로 온전히 구동되는지를 점검해 보기 바랍니다.)<br/><strong>{$a->text}</strong><br/>';
 $string['requiremodintro'] = '활동 개요 필요';
 $string['requires'] = '필수';
@@ -914,10 +916,10 @@ $string['sitemaintenancewarning'] = '현재 유지 점검 상태에 있습니다
 $string['sitemaintenancewarning2'] = '현재 점검모드(관리자만 로그인 됨)임. 정상적으로 작동하게 하려면 <a href="{$a}">점검모드 끔</a>을 선택';
 $string['sitepolicies'] = '사이트 정책';
 $string['sitepolicy'] = '사이트 정책 URL';
+$string['sitepolicy_help'] = '만일 이 사이트를 사용하기 전에 모든 등록된 사용자들이 보아야 하고 동의해야 하는 사이트 정책이 있다면 여기에 그 URL을 명시하십시요. 그렇지 않은 경우 빈칸으로 남겨 주십시요. 이 설정은 어떤 공개된 URL도 포함할 수 있습니다.';
 $string['sitepolicyguest'] = '손님들에 대한 사이트 정책 URL';
 $string['sitepolicyguest_help'] = '만일 이 사이트를 사용하기 전에 모든 등록된 사용자들이 보아야 하고 동의해야 하는 사이트 정책이 있다면 여기에 그 URL을 명시하십시요. 그렇지 않은 경우 빈칸으로 남겨 주십시요. 이 설정은 어떤 공개된 URL도 포함할 수 있습니다. 노트: 로그인되지 않은 사용자에 대한 접근은 강제 로그인 설정으로 방지될 수 있습니다.';
-$string['sitepolicy_help'] = '만일 이 사이트를 사용하기 전에 모든 등록된 사용자들이 보아야 하고 동의해야 하는 사이트 정책이 있다면 여기에 그 URL을 명시하십시요. 그렇지 않은 경우 빈칸으로 남겨 주십시요. 이 설정은 어떤 공개된 URL도 포함할 수 있습니다.';
-$string['sitesectionhelp'] = '선택되면, 토픽 영역이 사이트 시작 페이지에 보일 것입니다.';
+$string['sitesectionhelp'] = '선택되면, 토픽 섹션이 사이트 시작 페이지에 보일 것입니다.';
 $string['slasharguments'] = '슬래쉬 인수 사용';
 $string['smartpix'] = '자동 아이콘 검색';
 $string['smtp'] = 'SMTP';
@@ -926,7 +928,7 @@ $string['smtpmaxbulk'] = 'STMP 세션 한계';
 $string['smtppass'] = 'SMTP 암호';
 $string['smtpsecure'] = 'SMTP 보안';
 $string['smtpuser'] = 'SMTP 사용자명';
-$string['soaprecommended'] = '웹서비스나 몇개의 기여 모듈을 위해 선택적인 soap 익스텐션을 설치하는 것이 유용합니다.';
+$string['soaprecommended'] = '웹서비스나 특정 기여 모듈을 위해서 선택적인 soap 익스텐션을 설치하는 것이 유용합니다.';
 $string['sort_fullname'] = '강좌 전체 이름';
 $string['sort_idnumber'] = '강좌 ID 번호';
 $string['sort_shortname'] = '강좌 짧은 이름';
@@ -969,8 +971,8 @@ $string['task_stats:dbwrites'] = '{$a} 쓰기';
 $string['themedesignermode'] = '테마 디자이너 모드';
 $string['themelist'] = '테마 목록';
 $string['themenoselected'] = '테마가 선택되지 않았습니다.';
-$string['themeresetcaches'] = '데마 저장소 초기화';
-$string['themeselect'] = '테마 선택';
+$string['themeresetcaches'] = '테마 캐시 지움';
+$string['themeselect'] = '테마 변경';
 $string['themeselector'] = '테마 선택';
 $string['themesettings'] = '테마 설정';
 $string['therewereerrors'] = '데이터 오류';
@@ -983,7 +985,7 @@ $string['tokenizerrecommended'] = '추가적인 PHP Tokenizer 확장 설치가 �
 $string['tools'] = '관리도구';
 $string['toolsmanage'] = '관리도구 관리';
 $string['unattendedoperation'] = '부재 작동';
-$string['unbookmarkthispage'] = '갈무리 해제';
+$string['unbookmarkthispage'] = '이 페이지를 즐겨찾기에서 해제';
 $string['unicoderequired'] = '모든 자료가 유니코드(UTF-8)로 저장되야 합니다. 새로운 설치 과정에서는 기본 문자코드가 유니코드로 저장되어 있다고 가정하고 작동이 됩니다. 만일 업그레이드 중이라면 반드시 UTF-8 변환과정을 수행하여야만 합니다.(관리 페이지 참조)';
 $string['uninstallplugin'] = '플러그인 제거';
 $string['unlockaccount'] = '계정 잠금 해제';
@@ -993,13 +995,13 @@ $string['unsuspenduser'] = '사용자 계정 활성화';
 $string['updateaccounts'] = '기존 계정 업데이트';
 $string['updateautocheck'] = '사용가능한 업데이트가 있는지 자동으로 확인';
 $string['updateavailable'] = '새로운 무들 버전이 있습니다.';
+$string['updateavailable_moreinfo'] = '추가정보 ...';
+$string['updateavailable_release'] = '무들 {$a}';
+$string['updateavailable_version'] = '버전{$a}';
 $string['updateavailabledetailslink'] = '자세한 정보는  {$a->url}를 참고하세요.';
 $string['updateavailableforplugin'] = '사용가능한 플러그인에 대해 새로운 버전이 있습니다.';
 $string['updateavailableinstall'] = '이 업데이트 설치';
-$string['updateavailable_moreinfo'] = '추가정보 ...';
 $string['updateavailablenot'] = '무들 코드는 최신입니다.';
-$string['updateavailable_release'] = '무들 {$a}';
-$string['updateavailable_version'] = '버전{$a}';
 $string['updatecomponent'] = '구성요소 업데이트';
 $string['updateminmaturity'] = '필요한 코드 성숙도';
 $string['updatenotifications'] = '업데이트 통지';
@@ -1033,7 +1035,7 @@ Moodle 디렉토리가 정리되었다면, 이 페이지를 새로고침 하여 
 또한 이 경고는 Git 저장소 에서 불완전한 checkout 이나 fetch 과정으로 인해 일어날 수도 있습니다. 이런 경우, 아직 git 의 fetch 나 checkout 이 완료될 때까지 기다렸다가 다시 시도해 주십시요. 혹은 적절한 청소 명령등이 필요할 수도 있습니다.
 
 <a href="{$a}">{$a}</a> 의 업그레이드 문서에서 더 자세한 정보를 확인하실 수 있습니다.';
-$string['upgradestart'] = '판올림';
+$string['upgradestart'] = '무들 데이터베이스를 지금 업그레이드 합니다.';
 $string['upgradesure'] = '무들 파일들이 변경완료되었고  서버를<br /><br />
  <strong>{$a}</strong> <br /><br />
 버전으로 자동 판올림할 준비가 되었습니다. 일단 이 과정을 시작하면 되돌이킬 수 없습니다.<br /><br />확실히 이 서버를 새 버전으로 판올림 하시겠습니까?';
@@ -1047,7 +1049,7 @@ $string['useexternalyui'] = '야후 UI 라이브러리 사용';
 $string['user'] = '사용자';
 $string['userbulk'] = '일괄 사용자 처리';
 $string['userdefaultpreferences'] = '사용자 기본 환경설정';
-$string['userlist'] = '사용자 목록 살펴보기';
+$string['userlist'] = '사용자 목록 보기';
 $string['userpolicies'] = '사용자 정책';
 $string['userpreference'] = '개인 맞춤설정';
 $string['userquota'] = '사용자 쿼터';

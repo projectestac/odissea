@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'rating', language 'el', version '3.8'.
  *
- * @package   rating
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     rating
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['aggregatetype'] = 'Τύπος συνάθροισης';
 $string['aggregatetype_help'] = 'Ο τύπος συγκεντρωτικών ορίζει το πως οι βαθμολογίες θα συνδυάζονται για να σχηματίσουν τον τελικό βαθμό στο βαθμολόγιο.
 
 * Μέσος όρος βαθμολογίας - η μέση τιμή όλων των βαθμολογιών
-* Άθροισμα βαθμολογιών - Ο αριθμός των βαθμολογημένων αντικειμένων γίνεται ο τελικός βαθμός. Σημειώστε ότι το συνολικό άθροισμα δεν μπορεί να υπερβαίνει το μεγαλύτερο βαθμό για τη δραστηριότητα.
+* Άθροισμα βαθμολογιών - Ο αριθμός των βαθμολογημένων αντιμένων γίνεται ο τελικός βαθμός. Σημειώστε ότι το συνολικό άθροισμα δεν μπορεί να υπερβαίνει το μεγαλύτερο βαθμό για τη δραστηριότητα.
 * Μεγαλύτερος - Ο υψηλότερος βαθμός γίνεται ο τελικός βαθμός.
 * Μικρότερος - Ο χαμηλότερος βαθμός γίνεται ο τελικός βαθμός
 * Σύνολο - Όλοι οι βαθμοί προστίθενται μαζί. Σημειώστε ότι το συνολικό άθροισμα δεν μπορεί να υπερβαίνει το μεγαλύτερο βαθμό για τη δραστηριότητα.
@@ -45,7 +45,6 @@ $string['allowratings'] = 'Να επιτρέπονται αξιολογήσει�
 $string['allratingsforitem'] = 'Όλες οι βαθμολογίες που υποβλήθηκαν';
 $string['capabilitychecknotavailable'] = 'Η δυνατότητα ελέγχου δεν είναι διαθέσιμη μέχρι να αποθηκευτεί η δραστηριότητα';
 $string['couldnotdeleteratings'] = 'Λυπούμαστε, αυτό δεν μπορεί να διαγραφεί καθώς κάποιοι το έχουν ήδη αξιολογήσει';
-$string['grade_rating_name'] = 'Αξιολόγηση';
 $string['norate'] = 'Δεν επιτρέπεται αξιολόγηση στοιχείων!';
 $string['noratings'] = 'Δεν υποβλήθηκαν βαθμολογίες';
 $string['noviewanyrate'] = 'Μπορείτε να δείτε αποτελέσματα μόνο για στοιχεία που εσείς δημιουργήσατε';
@@ -61,6 +60,6 @@ $string['rating'] = 'Αξιολόγηση';
 $string['ratinginvalid'] = 'Η αξιολόγηση είναι μη έγκυρη';
 $string['ratings'] = 'Βαθμοί';
 $string['ratingtime'] = 'Περιορισμός των βαθμών σε στοιχεία με ημερομηνίες σε αυτό το διάστημα:';
-$string['rolewarning'] = 'Ρόλοι με δικαίωμα να βαθμολογούν';
+$string['rolewarning'] = 'Ρόλοι αδειοδοτημένοι να βαθμολογούν';
 $string['rolewarning_help'] = 'Για την υποβολή βαθμολογιών οι χρήστες απαιτείται να έχουν την δυνατότητα moodle/rating:rate και όποιες άλλες δυνατότητες απαιτούνται ειδικά για το συγκεκριμένο άρθρωμα. Οι χρήστες που τους ανατίθενται οι ακόλουθοι ρόλοι θα είναι σε θέση να βαθμολογούν. Η λίστα των ρόλων μπορεί να τροποποιηθεί μέσω του συνδέσμου δικαιωμάτων στο μενού ενεργειών ή στο μπλοκ διαχείρισης, ανάλογα με το αισθητικό θέμα.';
 $string['scaleselectionrequired'] = 'Κατά την επιλογή ενός τύπου συνάθροισης βαθμολογιών πρέπει επίσης να επιλέξετε είτε μια κλίμακα είτε ένα μέγιστο αριθμό πόντων.';

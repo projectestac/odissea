@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio_boxnet', language 'de', version '3.8'.
  *
- * @package   portfolio_boxnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_boxnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,7 +36,7 @@ $string['missinghttps_help'] = 'box.net kann nur auf Sites mit HTTPS-Verschlüss
 $string['missingoauthkeys'] = 'Client-ID und Schlüssel fehlen.';
 $string['missingoauthkeys_help'] = 'Für das Plugin wurden kein Client-ID und Schlüssel eingetragen. Sie erhalten diese auf der box.net Entwicklerseite.';
 $string['newfolder'] = 'Neues Dateiverzeichnis';
-$string['noauthtoken'] = 'Kein Authentifizierungstoken für diese Session empfangen';
+$string['noauthtoken'] = 'Für diese Session wurde kein Authentifizierungstoken  empfangen';
 $string['notarget'] = 'Sie müssen zum Hochladen ein vorhandenes Verzeichnis wählen oder ein neues Verzeichnis anlegen';
 $string['noticket'] = 'Kein Ticket von box.net empfangen, um die Authentifizierung zu beginnen';
 $string['password'] = 'Ihr Kennwort für box.net (wird nicht gespeichert)';
@@ -53,4 +53,4 @@ $string['sharefolder'] = 'Dieses Verzeichnis freigeben?';
 $string['targetfolder'] = 'Zielverzeichnis';
 $string['tobecreated'] = 'Erstellen';
 $string['username'] = 'Ihr Anmeldename für box.net (wird nicht gespeichert)';
-$string['warninghttps'] = 'box.net erfordert, dass Ihre Seite unter HTTPS betrieben wird, um das Portfolio zu verwenden.';
+$string['warninghttps'] = 'Box erfordert HTTPS für Ihre Website, um das Portfolio verwenden zu können.';

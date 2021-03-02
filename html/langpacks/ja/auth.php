@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth', language 'ja', version '3.8'.
  *
- * @package   auth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,17 +37,13 @@ $string['auth_changepasswordurl_expl'] = '{$a} パスワードを忘れたユー
 $string['auth_changingemailaddress'] = 'あなたは {$a->oldemail} から {$a->newemail} へのメールアドレス変更をリクエストしました。セキュリティ上の理由から、新しいメールアドレスがあなたのメールアドレスであるか確認するため、私たちはあなたの宛にメッセージを送信しています。このメッセージ内のURLにアクセスすることで、あなたのメールアドレスが更新されます。';
 $string['auth_common_settings'] = '共通設定';
 $string['auth_data_mapping'] = 'データマッピング';
-$string['authenticationoptions'] = '認証オプション';
 $string['auth_fieldlock'] = '設定値のロック';
 $string['auth_fieldlock_expl'] = '<p><b>設定値のロック:</b> この設定を有効にした場合、Moodleユーザおよび管理者によるフィールドの直接編集を防ぎます。外部認証システムにデータを保持している場合、このオプションを使用してください。</p>';
 $string['auth_fieldlockfield'] = 'ロック値 ({$a})';
 $string['auth_fieldlocks'] = 'ユーザフィールドのロック';
 $string['auth_fieldlocks_help'] = '<p>あなたはユーザデータフィールドをロックすることができます。ユーザレコードを管理者が手動で管理する方法、または「ユーザをアップロードする」機能を使用してユーザレコードをアップロードする方法をとっているサイトに有用です。Moodleが必要とするフィールドをロックする場合、ユーザアカウント作成時にそのデータを必ず提供してください。そうでない場合、アカウントを使用できなくなります。</p><p>この問題を避けるため、「空の場合はロックしない」に設定することをお勧めします。</p>';
 $string['auth_fieldmapping'] = 'データマッピング ({$a})';
-$string['authinstructions'] = 'ログインページにデフォルトのログインインストラクションを表示したい場合、空白のままにしてください。あなたが特別なログインインストラクションを表示したい場合、ここに入力してください。';
 $string['auth_invalidnewemailkey'] = 'エラー: あなたがメールアドレスの変更確認を試みているのでしたら、あなたに送信されたメール内URLのコピーに失敗しているようです。URLをコピーして、再度お試しください。';
-$string['authloginviaemail'] = 'メールによるログインを許可する';
-$string['authloginviaemail_desc'] = 'ユーザのサイトログインにユーザ名およびメールアドレス (ユニークな場合) の両方を使用できるようにします。';
 $string['auth_multiplehosts'] = '複数のホストまたはアドレスを設定できます (例 host1.com;host2.com;host3.com) または (例 xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = '認証方法 {$a} が設定されていません。';
 $string['auth_outofnewemailupdateattempts'] = 'あなたはメールアドレスの変更許容回数を超えました。あなたの変更リクエストはキャンセルされました。';
@@ -66,12 +62,16 @@ $string['auth_updatelocal_expl'] = '<p><b>ローカルデータの更新:</b> �
 $string['auth_updatelocalfield'] = 'ローカルを更新する ({$a})';
 $string['auth_updateremote'] = '外部データの更新';
 $string['auth_updateremote_expl'] = '<p><b>外部データの更新:</b> この設定を有効にした場合、ユーザレコードが更新される時に外部認証が更新されます。編集を許可するにはフィールドのロックを解除する必要があります。</p>';
-$string['auth_updateremotefield'] = '外部を更新する ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>注意:</b> 外部LDAPデータを更新するにはすべてのユーザレコードに書き込み権を持ったバインドユーザに対してbinddnおよびbindpwを設定する必要があります。現在、多値属性を保持することはできません。超過した値は更新時に取り除かれます。</p>';
+$string['auth_updateremotefield'] = '外部を更新する ({$a})';
 $string['auth_user_create'] = 'ユーザ作成を有効にする';
 $string['auth_user_creation'] = '新しい (匿名) ユーザは外部認証元にユーザアカウントを作成できます。また、メールによりアカウント登録が確認されます。このオプションを有効にした場合、ユーザ作成に関してモジュール固有のオプションを同時に設定する必要があります。';
 $string['auth_usernameexists'] = 'このユーザ名はすでに登録されています。新しいユーザ名を選んでください。';
 $string['auth_usernotexist'] = '登録されていないユーザを更新できません: {$a}';
+$string['authenticationoptions'] = '認証オプション';
+$string['authinstructions'] = 'ログインページにデフォルトのログインインストラクションを表示したい場合、空白のままにしてください。あなたが特別なログインインストラクションを表示したい場合、ここに入力してください。';
+$string['authloginviaemail'] = 'メールによるログインを許可する';
+$string['authloginviaemail_desc'] = 'ユーザのサイトログインにユーザ名およびメールアドレス (ユニークな場合) の両方を使用できるようにします。';
 $string['auto_add_remote_users'] = 'リモートユーザを自動的に追加する';
 $string['cannotmapfield'] = '省略名「 {$a->shortname} 」が長過ぎるためフィールド「 {$a->fieldname} 」をマップできません。マッピングするにはプロファイルフィールド省略名を {$a->charlimit} 文字以下にしてください。<a href="{$a->link}">プロファイルフィールドを編集する</a>';
 $string['changepassword'] = 'パスワードURLの変更';
@@ -105,8 +105,8 @@ $string['eventuserloggedin'] = 'ユーザがログインしました。';
 $string['eventuserloggedinas'] = 'ユーザが別のユーザとしてログインしました。';
 $string['eventuserloginfailed'] = 'ユーザがログインに失敗しました。';
 $string['forcechangepassword'] = 'パスワード変更を強制する';
-$string['forcechangepasswordfirst_help'] = 'ユーザの初回Moodleログイン時にパスワードの変更を強制します。';
 $string['forcechangepassword_help'] = 'ユーザの次回Moodleログイン時にパスワードの変更を強制します。';
+$string['forcechangepasswordfirst_help'] = 'ユーザの初回Moodleログイン時にパスワードの変更を強制します。';
 $string['forgottenpassword'] = 'あなたがここにURLを入力した場合、このサイトの喪失パスワード回復ページに使用されます。これは完全にMoodleの外でパスワードが処理されるサイトを対象としています。デフォルトのパスワード回復を使用する場合、空白のままにしてください。';
 $string['forgottenpasswordurl'] = 'パスワード喪失URL';
 $string['getrecaptchaapi'] = 'reCAPTCHAを使用するにはあなたは<a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>でAPIキーを取得する必要があります。';

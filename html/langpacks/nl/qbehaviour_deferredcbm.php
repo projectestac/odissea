@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qbehaviour_deferredcbm', language 'nl', version '3.8'.
  *
- * @package   qbehaviour_deferredcbm
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qbehaviour_deferredcbm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,8 +39,8 @@ $string['cbmgrades_help'] = 'Met Certainty-Based Marking (CBM) krijgt elke vraag
 **Accuraatheid** is het percentage juiste antwoorden waarbij de zekerheid genegeerd wordt, maar gewogen voor het maximum cijfer van elke vraag. Het juist kunnen onderscheiden van meer of minder betrouwbare antwoorden levert een hoger cijfer op. dan dezelfde zekerheid selecteren voor elke vraag. Dit wordt weergegeven met de **CBM Bonus**. **Accuraatheid** + **CBM-Bonus** is een betere maat voor kennis dan enkel de **Accuraatheid**.  Slecht begrip kan leiden tot een negatieve bonus - een waarschuwing om goed na te denken over wat je zeker weet en wat je denkt te weten.';
 $string['cbmmark'] = 'CBM score {$a}';
 $string['certainty'] = 'Zekerheid';
-$string['certainty1'] = 'Z=1 (Niet zeker: <67%)';
 $string['certainty-1'] = 'Geen idee';
+$string['certainty1'] = 'Z=1 (Niet zeker: <67%)';
 $string['certainty2'] = 'Z=2 (Gemiddeld: >67%)';
 $string['certainty3'] = 'Z=3  (Heel zeker: >80%)';
 $string['certainty_help'] = 'Bij toetsen met zekerheidsaanduiding of ook wel Certainty Based Marking (CBM) genoemd, moet je aangeven hoe betrouwbaar je antwoord is. De mogelijke niveau\'s zijn:
@@ -52,8 +52,8 @@ Geef indien fout      |        0        |        -2   |         -6
 Waarschijnlijk just  |    <67%   | 67-80% |    >80%
 
 De beste scores worden verkregen door je onzekerheid toe te geven. Bijvoorbeeld als je denkt dat er meer dan 1 kans op 3 is dat je fout bent, geef dan Z=1 en vermijdt het risico van een negatief cijfer.';
-$string['certaintyshort1'] = 'Z=1';
 $string['certaintyshort-1'] = 'Geen idee';
+$string['certaintyshort1'] = 'Z=1';
 $string['certaintyshort2'] = 'Z=2';
 $string['certaintyshort3'] = 'Z=3';
 $string['dontknow'] = 'Geen idee';

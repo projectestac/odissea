@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'eu', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,8 +35,8 @@ $string['browsecohorts'] = 'Arakatu kohorteak';
 $string['browseusers'] = 'Arakatu erabiltzaileak';
 $string['confirmbulkdeleteenrolment'] = 'Ziur zaude erabiltzaile-matrikula hauek ezabatu nahi dituzula?';
 $string['defaultperiod'] = 'Matrikulazioaren iraupena';
-$string['defaultperiod_desc'] = 'Matrikulazioaren lehenetsitako iraupena. Zero ezarriz gero, matrikulazioa modu lehenetsian mugarik gabekoa izango da.';
-$string['defaultperiod_help'] = 'Matrikulazioaren lehenetsitako iraupena, erabiltzailea matrikulatu deneko unetik hasita. Desgaituz gero, matrikulazioa modu lehenetsian mugarik gabekoa izango da.';
+$string['defaultperiod_desc'] = 'Matrikulazioaren iraupen lehenetsia. Zero ezarriz gero, matrikulazioa modu lehenetsian mugarik gabekoa izango da.';
+$string['defaultperiod_help'] = 'Matrikulazioaren iraupen lehenetsia, erabiltzailea matrikulatu deneko unetik hasita. Desgaituz gero, matrikulazioa modu lehenetsian mugarik gabekoa izango da.';
 $string['defaultstart'] = 'Matrikulazioaren lehenetsitako hasiera';
 $string['deleteselectedusers'] = 'Ezabatu aukeratutako erabiltzaileen matrikulak';
 $string['editselectedusers'] = 'Editatu aukeratutako erabiltzaileen matrikulak';
@@ -60,9 +60,9 @@ $string['expirymessageenrollersubject'] = 'Matrikulazio-amaieraren jakinarazpena
 $string['manual:config'] = 'Konfiguratu eskuzko matrikulaziorako instantziak';
 $string['manual:enrol'] = 'Matrikulatu erabiltzaileak';
 $string['manual:manage'] = 'Kudeatu erabiltzaileen matrikulak';
-$string['manualpluginnotinstalled'] = '"Manual" plugina ez da oraindik instalatu';
 $string['manual:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
 $string['manual:unenrolself'] = 'Desmatrikulatu norbera ikastararotik';
+$string['manualpluginnotinstalled'] = '"Manual" plugina ez da oraindik instalatu';
 $string['messageprovider:expiry_notification'] = 'Eskuzko matrikulazio-amaieraren jakinarazpenak';
 $string['now'] = 'Orain';
 $string['pluginname'] = 'Eskuzko matrikulazioa';
@@ -74,10 +74,10 @@ $string['selectusers'] = 'Aukeratu erabiltzaileak';
 $string['sendexpirynotificationstask'] = 'Eskuzko matrikulazioen iraungitze-jakinarazpenen bidalketa ataza';
 $string['status'] = 'Gaitu eskuzko matrikulazioa';
 $string['status_desc'] = 'Baimendu ikastarorako sarbidea barruan matrikulatutako erabiltzaileei. Hau gaituta mantendu beharko litzateke kasu gehienetan.';
+$string['status_help'] = 'Ezarpen honek erabiltzaileak eskuz matrikulatu ahalko diren zehazten du, baimenak dituen erabiltzaile batek ikastaroaren kudeaketa-ezarpenetan duen esteka baten bitartez.';
 $string['statusdisabled'] = 'Desgaituta';
 $string['statusenabled'] = 'Gaituta';
-$string['status_help'] = 'Ezarpen honek erabiltzaileak eskuz matrikulatu ahalko diren zehazten du, baimenak dituen erabiltzaile batek ikastaroaren kudeaketa-ezarpenetan duen esteka baten bitartez.';
-$string['syncenrolmentstask'] = 'Eskuzko matrikulazioen sinkronizazio ataza';
+$string['syncenrolmentstask'] = 'Eskuzko matrikulazioen sinkronizazio-zeregina';
 $string['unenrol'] = 'Desmatrikulatu erabiltzailea';
 $string['unenrolselectedusers'] = 'Desmatrikulatu aukeratutako erabiltzaileak';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';
@@ -85,4 +85,4 @@ $string['unenroluser'] = 'Ziur al zaude  "{$a->user}" desmatrikulatu nahi duzula
 $string['unenrolusers'] = 'Desmatrikulatu erabiltzaileak';
 $string['wscannotenrol'] = 'Pluginaren instantziak ezin du erabiltzailea id = {$a->courseid} duen ikastaroan eskuz matrikulatu.';
 $string['wsnoinstance'] = 'Eskuzko matrikulazio-pluginaren instantzia ez da existitzen edo ikastaro honentzako (id = {$a->courseid}) desgaituta dago';
-$string['wsusercannotassign'] = 'Ez duzu baimenik ({$a->roleid}) rola ({$a->userid}) erabiltzaileari ({$a->courseid}) ikastaroan esleitzeko.';
+$string['wsusercannotassign'] = 'Ez duzu baimenik ikastaro honetan ({$a->courseid}) rol hau ({$a->roleid}) erabiltzaile honi ({$a->userid}) esleitzeko.';

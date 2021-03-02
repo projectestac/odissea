@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multianswer', language 'es', version '3.8'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,9 +39,9 @@ $string['nooptionsforsubquestion'] = 'Imposible conseguir opciones para la parte
 $string['noquestions'] = 'La pregunta \'cloze\' (multi-respuesta) "<strong>{$a}</strong>" no contiene ninguna pregunta';
 $string['pleaseananswerallparts'] = 'Por favor, responda a todas las partes de la pregunta.';
 $string['pluginname'] = 'Respuestas anidadas (Cloze)';
+$string['pluginname_help'] = 'Respuestas incrustadas (Cloze) consisten en  un  texto con preguntas tipo respuestas de opción múltiple o respuesta corta incrustadas en su interior.';
 $string['pluginnameadding'] = 'Agregando una pregunta con respuestas anidadas (Cloze)';
 $string['pluginnameediting'] = 'Editando una pregunta con respuestas anidadas (Cloze)';
-$string['pluginname_help'] = 'Respuestas incrustadas (Cloze) consisten en  un  texto con preguntas tipo respuestas de opción múltiple o respuesta corta incrustadas en su interior.';
 $string['pluginnamesummary'] = 'Las preguntas de este tipo son muy flexibles, pero sólo pueden crearse introduciendo texto que contiene códigos especiales que crean preguntas anidadas de opción múltiple, cortas y numéricas.';
 $string['qtypenotrecognized'] = 'tipo de pregunta {$a} no reconocido';
 $string['questiondefinition'] = 'Definición de la pregunta';

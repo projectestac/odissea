@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_myprofile', language 'gl', version '3.8'.
  *
- * @package   block_myprofile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_myprofile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['contentsettings'] = 'Amosar a configuración para contido rexional';
+$string['contentsettings'] = 'Amosar os axustes para o contido rexional';
 $string['display_address'] = 'Amosar enderezo';
 $string['display_aim'] = 'Amosar AIM';
 $string['display_city'] = 'Amosar cidade';
@@ -44,7 +44,7 @@ $string['display_picture'] = 'Amosar imaxe';
 $string['display_skype'] = 'Amosar Skype';
 $string['display_yahoo'] = 'Amosar Yahoo';
 $string['myprofile:addinstance'] = 'Engadir un novo identificador no bloque de usuario';
-$string['myprofile:myaddinstance'] = 'Engadir un novo identificador no bloque Páxina de inicio';
+$string['myprofile:myaddinstance'] = 'Engade un novo bloque de usuario rexistrado no Taboleiro';
 $string['myprofile_settings'] = 'Información visíbel do usuario';
 $string['pluginname'] = 'Usuario con sesión activa';
 $string['privacy:metadata'] = 'O bloque de usuarios rexistrado só amosa información sobre o usuario rexistrado e non almacena os datos en si.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'ko', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -151,6 +151,7 @@ $string['externalbadges_help'] = '이 영역에서 외부 backpack에 있는 뱃
 $string['externalbadgesp'] = '다른 웹 사이트에서 받은 뱃지';
 $string['externalconnectto'] = '외부 뱃지를 표시하려면  <a href="{$a}">backpack에 연결</a>해야 합니다.';
 $string['fixed'] = '고정된 날짜';
+$string['hidden'] = '감춰짐';
 $string['hiddenbadge'] = '아쉬웁게도 뱃지 소유자가 이 정보를 공개하지 않았습니다.';
 $string['issuancedetails'] = '뱃지 만료기한';
 $string['issuedbadge'] = '발행된 뱃지 정보';
@@ -194,7 +195,7 @@ $string['recipientdetails'] = '수신자 세부사항';
 $string['recipients'] = '뱃지 수상자';
 $string['relative'] = '상대 날짜';
 $string['requiredcourse'] = '적어도 하나의 강좌가 강좌세트 기준에 추가되어야 합니다.';
-$string['reviewbadge'] = '뱃지 기준 검토';
+$string['reviewbadge'] = '뱃지 접근에서의 변경';
 $string['save'] = '저장';
 $string['searchname'] = '이름으로 찾기';
 $string['selectaward'] = '이 배지를 수여하는 데 사용하고 싶은 역할을 선택하십시오 :';

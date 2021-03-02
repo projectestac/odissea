@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_coursefiles', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_coursefiles', language 'ar', version '3.8'.
  *
- * @package   repository_coursefiles
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_coursefiles
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'تهيئة مستودع ملفات المساق الموروثة';
-$string['coursefiles:view'] = 'استعمال ملحق مستودع ملفات المساق';
+$string['configplugin'] = 'تهيئة مستودع ملفات المقرر الموروثة';
+$string['coursefiles:view'] = 'استعمال ملحق مستودع ملفات المقرر الدراسي';
 $string['emptyfilelist'] = 'لا ملفات لمعاينتها';
 $string['notitle'] = 'بلا عنوان';
-$string['pluginname'] = 'ملفات المساق الموروثة';
-$string['pluginname_help'] = 'ملفات المساق الموروثة';
-$string['privacy:metadata'] = 'إن ملحق مستودع ملفات المساق الموروثة لا يخزن أي بيانات شخصية.';
+$string['pluginname'] = 'ملفات المقرر الموروثة';
+$string['pluginname_help'] = 'ملفات المقرر الموروثة';
+$string['privacy:metadata'] = 'إن ملحق مستودع ملفات المقرر الموروثة لا يخزن أي بيانات شخصية.';
 $string['remember'] = 'تذكرني';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_performance', language 'de', version '3.8'.
  *
- * @package   report_performance
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_performance
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['check_backup_details'] = 'Wenn automatische Sicherungen aktiviert sind,
 $string['check_cachejs_comment_disable'] = 'Wenn aktiviert, wird die Leistung zum Laden der Seite verbessert.';
 $string['check_cachejs_comment_enable'] = 'Wenn deaktiviert, kann die Seite langsam laden.';
 $string['check_cachejs_details'] = 'Javascript Caching und Kompression kann die Leistung beim Laden der Seite positiv beeinflussen. Für produktive Seiten wird dies empfohlen.';
-$string['check_debugmsg_comment_developer'] = 'Wenn diese Option nicht auf DEVELOPER gesetzt ist, kann die Leistung geringfügig verbessert werden.';
+$string['check_debugmsg_comment_developer'] = 'Bei einem anderen Wert als DEVELOPER kann die Leistung geringfügig verbessert werden.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Wenn diese Option auf DEVELOPER gesetzt ist, kann die Leistung geringfügig beeinträchtigt sein.';
 $string['check_debugmsg_details'] = 'Wenn Sie kein Entwickler sind, gibt es eigentlich keinen Grund, den Developer-Level zu aktivieren. Für Entwickler ist es jedoch durchaus emphehlenswert.<p>Nachdem Sie eine Fehlermeldung gesehen haben, sollten Sie diese kopieren und abspeichern. Stellen Sie dann den Entwickler-Debug-Modus auf KEIN zurück. Debug-Fehlermeldungen werden auch von anderen Nutzern gesehen. Hacker können daraus Schlüsse über die Konfiguration Ihrer Seite und Schwachstellen ziehen. Der Debug-Modus kann sich auch auf die Performance auswirken.</p>';
 $string['check_enablestats_comment_disable'] = 'Statistische Berechnungen können die Leistung beeinflussen. Die Einstellungen sollten daher mit Vorsicht vorgenommen werden.';
@@ -47,8 +47,8 @@ $string['edit'] = 'Bearbeiten';
 $string['enabled'] = 'Aktiviert';
 $string['issue'] = 'Ausgabe';
 $string['morehelp'] = 'weitere Hilfe';
-$string['performancereportdesc'] = 'Diese Übersicht zeigt Faktoren auf, die sich auf die Performance der Website {$a} auswirken könnten.';
 $string['performance:view'] = 'Performanceübersicht anzeigen';
+$string['performancereportdesc'] = 'Diese Übersicht zeigt Faktoren auf, die sich auf die Performance der Website {$a} auswirken könnten.';
 $string['pluginname'] = 'Performanceübersicht';
 $string['privacy:metadata'] = 'Das Performance-Übersichts-Plugink speichert keine personenbezogenen Daten.';
 $string['value'] = 'Wert';

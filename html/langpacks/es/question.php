@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'question', language 'es', version '3.8'.
  *
- * @package   question
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     question
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,7 +70,7 @@ $string['cannotread'] = 'No se puede leer el archivo importado (o está vacío)'
 $string['cannotretrieveqcat'] = 'No se ha podido recuperar la categoría de preguntas';
 $string['cannotunhidequestion'] = 'Error al descubrir la pregunta.';
 $string['cannotunzip'] = 'No se ha podido descomprimir el archivo.';
-$string['cannotwriteto'] = '{$a}';
+$string['cannotwriteto'] = 'No se puede escribir las preguntas exportadas a {$a}';
 $string['categories'] = 'Categorías';
 $string['category'] = 'Categoría';
 $string['categorycurrent'] = 'Categoría actual';
@@ -116,7 +116,7 @@ $string['defaultmark'] = 'Puntuación por defecto';
 $string['defaultmarkmustbepositive'] = 'La puntuación por defecto debe ser positiva';
 $string['deletecoursecategorywithquestions'] = 'Hay preguntas en el banco de preguntas asociadas con esta categoría de curso. Si continúa, serán eliminadas. Quizás quiera trasladarlas primero, usando la interfaz del banco de preguntas.';
 $string['deletequestioncheck'] = '¿Está totalmente seguro que quiere borrar \'{$a}\'?';
-$string['deletequestionscheck'] = '¿Está totalmente seguro que quiere borrar las siguientes preguntas?<br /><br />{$a}';
+$string['deletequestionscheck'] = '¿Está totalmente seguro de que quiere borrar las siguientes preguntas?<br /><br />{$a}';
 $string['deletingbehaviour'] = 'Borrando el comportamiento de pregunta \'{$a}';
 $string['deletingqtype'] = 'Eliminando el tipo de pregunta \'{$a} "';
 $string['didnotmatchanyanswer'] = '[No concordó con ninguna respuesta]';
@@ -242,7 +242,6 @@ $string['markedoutofmax'] = 'Puntúa como {$a}';
 $string['markoutofmax'] = 'Puntúa {$a->mark} sobre {$a->max}';
 $string['marks'] = 'Puntos';
 $string['matchgrades'] = 'Coincidir calificaciones';
-$string['matchgradeserror'] = 'Error si la calificación no está en la lista';
 $string['matchgrades_help'] = '<p>Las calificaciones importadas <b>deben</b> corresponderse con alguna de las que figuran en la lista fija de calificaciones válidas, de este modo:</p>
 
 <ul>
@@ -280,6 +279,7 @@ $string['matchgrades_help'] = '<p>Las calificaciones importadas <b>deben</b> cor
 </ul>
 
 <p><i>Nota: algunos formatos de importación personalizados pueden escribir directamente en la base de datos y no quedar afectados por esta comprobación</i></p>';
+$string['matchgradeserror'] = 'Error si la calificación no está en la lista';
 $string['matchgradesnearest'] = 'Calificación más próxima si no está en lista';
 $string['missingcourseorcmid'] = 'Es necesario proporcionar courseid o cmid a print_question';
 $string['missingcourseorcmidtolink'] = 'Es necesario proporcionar courseid o cmid a get_question_edit_link';
@@ -342,9 +342,9 @@ $string['penaltyfactor_help'] = '<p>Puede especificar qué fracción de la puntu
 
 El factor de penalización debería ser un número entre 0 y 1. Un factor de penalización de 1 significa que el estudiante ha de dar la respuesta correcta al primer intento para conseguir la calificación máxima. Un factor de penalización de 0 significa que el estudiante puede intentar responder cuantas veces quiera y aun así puede conseguir la calificación máxima.</p>';
 $string['penaltyforeachincorrecttry'] = 'Penalización por cada intento incorrecto';
-$string['penaltyforeachincorrecttry_help'] = 'Cuando se responden preguntas configuradas con "Intentos múltiples" o en "Modo adaptativo", de manera que el alumno puede realizar varios intentos para responder a la pregunta de forma correcta, esta opción define el valor de la penalización que se aplica por cada intento incorrecto.
+$string['penaltyforeachincorrecttry_help'] = 'Cuando se responden preguntas configuradas con "Interactivo con intentos múltiples" o en "Modo adaptativo", de manera que el alumno puede realizar varios intentos para responder a la pregunta de forma correcta, esta opción define el valor de la penalización que se aplica por cada intento incorrecto.
 
-La penalización es proporcional a la calificación total de la pregunta; así, si la pregunta vale tres puntos, y la penalización es de 0.3333333 (33,33%), el estudiante obtiene los 3 puntos si responde correctamente al primer intento, 2 si lo hacen en un segundo intento, y 1 si lo hace en el tercero.';
+La penalización es proporcional a la calificación total de la pregunta; así, si la pregunta vale tres puntos, y la penalización es de 0.3333333, el estudiante obtiene los 3 puntos si responde correctamente al primer intento, 2 si lo hacen en un segundo intento, y 1 si lo hace en el tercero.';
 $string['permissionedit'] = 'Editar esta pregunta';
 $string['permissionmove'] = 'Mover esta pregunta';
 $string['permissionsaveasnew'] = 'Guardarla como pregunta nueva';
@@ -399,7 +399,7 @@ $string['shareincontext'] = 'Compartir en contexto para {$a}';
 $string['showhidden'] = 'Mostrar también preguntas antiguas';
 $string['showmarkandmax'] = 'Mostrar puntuacion y máximo';
 $string['showmaxmarkonly'] = 'Mostrar solo puntuación máxima';
-$string['shown'] = 'Se muestra';
+$string['shown'] = 'Mostrada/o';
 $string['shownumpartscorrect'] = 'Mostrar el número de respuestas correctas';
 $string['shownumpartscorrectwhenfinished'] = 'Mostrar el número de respuestas correctas en cuanto se termine la pregunta';
 $string['showquestiontext'] = 'Mostrar el enunciado de la pregunta en la lista de preguntas';
@@ -409,11 +409,11 @@ $string['started'] = 'Iniciado/a';
 $string['state'] = 'Estado';
 $string['step'] = 'Paso';
 $string['stoponerror'] = 'Detenerse si se produce un error';
-$string['stoponerror_help'] = 'Esta opción determina si el proceso de importación se detiene cuando se detecta un error (lo que resulta en que no se importan preguntas), o si cualesquiera preguntas que contengan errores se pasen por alto y se importen sólo preguntas válidas.';
+$string['stoponerror_help'] = 'Esta opción determina si el proceso de importación se detiene cuando se detecta un error (con lo que no se importan preguntas), o si se ignoran las preguntas que contengan errores y se importan las preguntas válidas.';
 $string['submissionoutofsequence'] = 'Acceso fuera de secuencia. Por favor no haga clic en el botón de regresar del navegador web cuando esté trabajando con las preguntas del examen';
 $string['submissionoutofsequencefriendlymessage'] = 'Ha introducido datos fuera de la secuencia normal. Esto puede ocurrir si utiliza los botones Atrás o Adelante de su navegador; por favor no los utilice durante la prueba. También puede ocurrir si hace clic sobre algo mientras se carga una página. Haga clic en <strong>Continuar</strong> para <strong>seguir.</strong>';
 $string['submit'] = 'Enviar';
-$string['submitandfinish'] = 'Enviar y terminar';
+$string['submitandfinish'] = 'Entregar y terminar';
 $string['submitted'] = 'Enviar: {$a}';
 $string['tagarea_question'] = 'Preguntas';
 $string['technicalinfo'] = 'Información técnica';

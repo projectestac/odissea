@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'nl', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,6 +117,12 @@ $string['choosefilefromcoursebackup'] = 'Cursus back-upzone';
 $string['choosefilefromcoursebackup_help'] = 'Cursusback-ups, gemaakt met standaardinstellingen worden hier bewaard.';
 $string['choosefilefromuserbackup'] = 'Private back-upzone';
 $string['choosefilefromuserbackup_help'] = 'Back-upbestanden met geanonimiseerde informatie worden hier bewaard.';
+$string['config_keep_groups_and_groupings'] = 'Standaard de huidige groepen en groeperingen behouden';
+$string['config_keep_roles_and_enrolments'] = 'Standaard de huidige rollen en aanmeldingen behouden';
+$string['config_overwrite_conf'] = 'Gebruikers toestaan de huidige cursusconfiguratie te overschrijven';
+$string['config_overwrite_course_fullname'] = 'Overschrijf standaard de cursusnaam met degene uit het back-upbestand. Dit vereist dat "Overschrijf cursusconfiguratie" geselecteerd is en dat de huidige gebruiker de mogelijkheid heeft om de cursusnaam te wijzigen (moodle/course:changefullname)';
+$string['config_overwrite_course_shortname'] = 'Overschrijf standaard de korte cursusnaam met degene uit het back-upbestand. Dit vereist dat "Overschrijf cursusconfiguratie" geselecteerd is en dat de huidige gebruiker de mogelijkheid heeft om de korte cursusnaam te wijzigen (moodle/course:changeshortname)';
+$string['config_overwrite_course_startdate'] = 'Overschrijf standaard de cursus startdatum met degene uit het back-upbestand. Dit vereist dat "Overschrijf cursusconfiguratie" geselecteerd is en dat de huidige gebruiker de mogelijkheid heeft om de cursusdata te wijzigen tijdens het terugzetten (moodle/restore:rolldates)';
 $string['configgeneralactivities'] = 'Stelt de standaardinstelling  in voor het opnemen van activiteiten in een back-up';
 $string['configgeneralanonymize'] = 'Indien ingeschakeld zal als standaardinstelling alle informatie die verwijst naar gebruikers anoniem gemaakt worden.';
 $string['configgeneralbadges'] = 'Stelt de standaard in om badges op te nemen in een backup.';
@@ -134,13 +140,7 @@ MERK OP: Dit uitschakelen zal het backuppen van activiteiten die de vragenpool g
 $string['configgeneralroleassignments'] = 'Indien ingeschakeld zullen standaard alle roltoewijzigen opgenomen worden in back-ups';
 $string['configgeneralusers'] = 'Stelt de standaardinstelling  in voor het opnemen van gebruikers in back-ups';
 $string['configgeneraluserscompletion'] = 'Indien ingeschakeld zal de informatie over het voltooien van cursusonderdelen standaard in back-ups worden opgenomen.';
-$string['config_keep_groups_and_groupings'] = 'Standaard de huidige groepen en groeperingen behouden';
-$string['config_keep_roles_and_enrolments'] = 'Standaard de huidige rollen en aanmeldingen behouden';
 $string['configloglifetime'] = 'Dit specifiëert hoelang je de back-up logs wil bijhouden. Oudere logs dan de hier opgegeven tijd worden automatisch verwijderd. Het wordt aangeraden deze waarde klein te houden, want back-uplogs kunnen zeer groot worden.';
-$string['config_overwrite_conf'] = 'Gebruikers toestaan de huidige cursusconfiguratie te overschrijven';
-$string['config_overwrite_course_fullname'] = 'Overschrijf standaard de cursusnaam met degene uit het back-upbestand. Dit vereist dat "Overschrijf cursusconfiguratie" geselecteerd is en dat de huidige gebruiker de mogelijkheid heeft om de cursusnaam te wijzigen (moodle/course:changefullname)';
-$string['config_overwrite_course_shortname'] = 'Overschrijf standaard de korte cursusnaam met degene uit het back-upbestand. Dit vereist dat "Overschrijf cursusconfiguratie" geselecteerd is en dat de huidige gebruiker de mogelijkheid heeft om de korte cursusnaam te wijzigen (moodle/course:changeshortname)';
-$string['config_overwrite_course_startdate'] = 'Overschrijf standaard de cursus startdatum met degene uit het back-upbestand. Dit vereist dat "Overschrijf cursusconfiguratie" geselecteerd is en dat de huidige gebruiker de mogelijkheid heeft om de cursusdata te wijzigen tijdens het terugzetten (moodle/restore:rolldates)';
 $string['configrestoreactivities'] = 'Zet de standaard voor het terugzetten van activiteiten.';
 $string['configrestorebadges'] = 'Zet de standaard voor het terugzetten van badges';
 $string['configrestoreblocks'] = 'Zet de standaard voor het terugzetten van blokken.';
@@ -176,8 +176,8 @@ $string['enableasyncbackup'] = 'Schakel asynchrone back-ups in';
 $string['enableasyncbackup_help'] = 'Indien ingeschakeld, worden alle back-up- en herstelbewerkingen asynchroon uitgevoerd. Dit heeft geen invloed op import en export. Met asynchrone back-ups en herstelbewerkingen kunnen gebruikers andere bewerkingen uitvoeren terwijl een back-up of herstel bezig is.';
 $string['enterasearch'] = 'Start een zoekopdracht';
 $string['error_block_for_module_not_found'] = 'Verweesde blok instantie (id: {$a->bid}) voor cursus module (id: {$a->mid}) gevonden. Dit blok zal niet geback-uped worden.';
-$string['errorcopyingbackupfile'] = 'Het kopiëren van het back-upbestand naar de tijdelijke map voor het terugzetten is mislukt.';
 $string['error_course_module_not_found'] = 'Verweesde cursus module  (id: {$a}) gevonden. Deze module zal niet geback-upt worden.';
+$string['errorcopyingbackupfile'] = 'Het kopiëren van het back-upbestand naar de tijdelijke map voor het terugzetten is mislukt.';
 $string['errorfilenamemustbezip'] = 'De bestandsnaam die je opgeeft moet een ZIP-bestand zijn en de .mbz-extentie hebben';
 $string['errorfilenamerequired'] = 'Je moet een geldige bestandsnaam opgeven voor deze back-up';
 $string['errorfilenametoolong'] = 'De bestandsnaam moet korter zijn dan 255 tekens';
@@ -194,8 +194,8 @@ Meer details en de werkelijke reden van het falen kan gevonden kunnen gevonden i
 $string['filealiasesrestorefailuresinfo'] = 'Sommige aliases in het back-upbestand konden niet teruggezet worden. Volgende lijst bevat hun verwachte locatie en het bronbestand waarnaar ze verwijzen op de oorspronkelijke site.';
 $string['filename'] = 'Bestandsnaam';
 $string['filereferencesincluded'] = 'Er zijn bestandsreferenties naar externe inhoud opgenomen in het back-upbestand. Die zullen niet werken als de back-up wordt teruggezet op een andere site.';
-$string['filereferencesnotsamesite'] = 'De back-up is afkomstig van een andere site. Bestandsverwijzingen kunnen niet teruggezet worden';
-$string['filereferencessamesite'] = 'Back-up is van deze site, bestandsverwijzingen kunnen teruggezet worden';
+$string['filereferencesnotsamesite'] = 'De back-up is afkomstig van een andere site. Bestandsverwijzingen kunnen niet teruggezet worden.';
+$string['filereferencessamesite'] = 'Back-up is van deze site, bestandsverwijzingen kunnen teruggezet worden.';
 $string['generalactivities'] = 'Activiteiten en bronnen mee opnemen';
 $string['generalanonymize'] = 'Informatie anoniem maken';
 $string['generalbackdefaults'] = 'Algemene standaardinstellingen voor back-up';
@@ -270,14 +270,14 @@ $string['pendingasyncerror'] = 'Back-up in behandeling voor deze bron';
 $string['preparingdata'] = 'Data voorbereiden';
 $string['preparingui'] = 'Tonen van de pagina voorbereiden';
 $string['previousstage'] = 'Vorige';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Dit archief kan gebruikersgegevens bevatten die gerelateerd zijn aan een cursus, zoals cijfers, gebruikersaanmeldingen en activiteitsgegevens.';
+$string['privacy:metadata:backup:externalpurpose'] = 'Het doel van dit archief is om informatie te bewaren die gerelateerd is aan een cursus en die later kan teruggezet worden.';
 $string['privacy:metadata:backup_controllers'] = 'De lijst van backup-operaties';
 $string['privacy:metadata:backup_controllers:itemid'] = 'De ID van de cursus';
 $string['privacy:metadata:backup_controllers:operation'] = 'De operatie die uitgevoerd werd, bijvoorbeeld terugzetten.';
 $string['privacy:metadata:backup_controllers:timecreated'] = 'De datum waarop de actie gemaakt werd';
 $string['privacy:metadata:backup_controllers:timemodified'] = 'De datum waarop de actie werd gewijzigd';
 $string['privacy:metadata:backup_controllers:type'] = 'Het type van het item waaraan gewerkt werd, bijvoorbeeld activiteit';
-$string['privacy:metadata:backup:detailsofarchive'] = 'Dit archief kan gebruikersgegevens bevatten die gerelateerd zijn aan een cursus, zoals cijfers, gebruikersaanmeldingen en activiteitsgegevens.';
-$string['privacy:metadata:backup:externalpurpose'] = 'Het doel van dit archief is om informatie te bewaren die gerelateerd is aan een cursus en die later kan teruggezet worden.';
 $string['qcategory2coursefallback'] = 'De vragencategorie "{$a->name}" die oorspronkelijk op systeem/cursus categorie context in het back-up bestand zat, zal in de cursus context gemaakt worden bij het terugzetten.';
 $string['qcategorycannotberestored'] = 'De vragencategorie "{$a->name}" kan tijdens het terugzetten niet gemaakt worden';
 $string['question2coursefallback'] = 'De vragencategorie "{$a->name}" die oorspronkelijk op systeem/cursus categorie context in het back-up bestand zat, zal in de cursus context gemaakt worden bij het terugzetten;';

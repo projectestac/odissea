@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio', language 'it', version '3.8'.
  *
- * @package   portfolio
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -85,7 +85,7 @@ $string['format_plainhtml'] = 'HTML';
 $string['format_presentation'] = 'Presentazione';
 $string['format_richhtml'] = 'HTML con allegati';
 $string['format_spreadsheet'] = 'Foglio elettronico';
-$string['format_text'] = 'Testo';
+$string['format_text'] = 'Testo semplice';
 $string['format_video'] = 'Video';
 $string['highdbsizethreshold'] = 'Trasferimento db lungo';
 $string['highdbsizethresholddesc'] = 'Numero di record di database sopra il quale il trasferimento sarà considerato lungo';
@@ -198,7 +198,7 @@ $string['selectplugin'] = 'Scegli dove esportare';
 $string['showhide'] = 'Visualizza / Nascondi';
 $string['singleinstancenomultiallowed'] = 'E\' disponibile solo una singola istanza di portfolio plugin, non supporta esportazioni multiple nella stessa sessione ed è già attiva una esportazione che fa uso di questo plugin!';
 $string['somepluginsdisabled'] = 'Alcuni portfolio plugin sono stati disabilitati in quanto non configurati correttamente oppure perché dipendono dal altri elementi, in particolare:';
-$string['sure'] = 'Sei sicuro di voler eliminare \'{$a}\'? Non puoi tornare indietro.';
+$string['sure'] = 'Sei sicuro di eliminare \'{$a}\'? Non puoi tornare indietro.';
 $string['thirdpartyexception'] = 'E\' stato lanciato un "third party exception" durante l\'esportazione del portfolio ({$a}). L\'eccezione è stata raccolto e rilanciata ma sarà necessario un intervento correttivo. con una sessione attiva ma senza exporter object';
 $string['transfertime'] = 'Ora di trasferimento';
 $string['unknownplugin'] = 'Sconosciuto (probabilmente disinstallata da un amministratore)';

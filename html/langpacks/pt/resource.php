@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'pt', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['clicktodownload'] = 'Clique na hiperligação {$a} para descarregar o ficheiro.';
 $string['clicktoopen2'] = 'Clique na hiperligação {$a} para ver o ficheiro.';
-$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Pressione a tecla CTRL para selecionar múltiplas opções.';
+$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Prima a tecla CTRL para selecionar múltiplas opções.';
 $string['configframesize'] = 'Quando uma página Web ou um ficheiro são visualizados numa frame, este valor corresponde à altura (em pixeis) da frame superior (que contém a navegação).';
 $string['configparametersettings'] = 'Esta opção define o valor predefinido que é introduzido no painel de configuração de parâmetros quando adiciona um novo recurso. Depois da primeira vez, este valor é substituído pelas preferências individuais do utilizador.';
 $string['configpopup'] = 'Quando se adiciona um recurso que pode ser apresentado numa nova janela, deve ser essa a opção predefinida?';
@@ -42,8 +42,7 @@ $string['configpopuptoolbar'] = 'Devem as janelas de pop-up apresentar, por pred
 $string['configpopupwidth'] = 'Qual deve ser a largura predefinida para as janelas de pop-up?';
 $string['contentheader'] = 'Conteúdo';
 $string['displayoptions'] = 'Opções de visualização disponíveis';
-$string['displayselect'] = 'Modo de exibição';
-$string['displayselectexplain'] = 'Escolha a forma de exibição do recurso (nem todos os tipos de exibição são adequados para todos os ficheiros).';
+$string['displayselect'] = 'Exibir em';
 $string['displayselect_help'] = 'Esta configuração, em conjunto com o tipo de ficheiro e possibilidades do navegador, determina a forma como é exibido o ficheiro. As opções podem ser:
 
 * Automático: é selecionada automaticamente a melhor opção para exibir o ficheiro;
@@ -60,6 +59,7 @@ $string['displayselect_help'] = 'Esta configuração, em conjunto com o tipo de 
 
 * Nova janela: o ficheiro é exibido numa nova janela do navegador, com menus e barra de endereço.';
 $string['displayselect_link'] = 'mod/file/mod';
+$string['displayselectexplain'] = 'Escolha a forma de exibição do recurso (nem todos os tipos de exibição são adequados para todos os ficheiros).';
 $string['dnduploadresource'] = 'Criar novo ficheiro';
 $string['encryptedcode'] = 'Código encriptado';
 $string['filenotfound'] = 'Ficheiro não encontrado';
@@ -69,13 +69,13 @@ $string['filtername'] = 'Hiperligações automáticas para nomes dos recursos';
 $string['forcedownload'] = 'Forçar descarga';
 $string['framesize'] = 'Largura da frame';
 $string['indicator:cognitivedepth'] = 'Compreensão do Ficheiro';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Ficheiro.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Ficheiro';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelos recursos Ficheiro durante esse intervalo de análise (Níveis = Não visualizado, Visualizado)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Ficheiro.';
 $string['indicator:socialbreadth'] = 'Socialização do Ficheiro';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Ficheiro.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Ficheiro';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelos recursos Ficheiro durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
-$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Ficheiro.';
 $string['legacyfiles'] = 'Migração de ficheiro antigo de disciplina';
 $string['legacyfilesactive'] = 'Ativo';
 $string['legacyfilesdone'] = 'Terminado';
@@ -107,13 +107,13 @@ $string['printintro'] = 'Mostrar descrição do recurso';
 $string['printintroexplain'] = 'Mostrar a descrição do recurso abaixo do conteúdo? Alguns modos de exibição não apresentam o nome do recurso, mesmo com esta configuração ativa.';
 $string['privacy:metadata'] = 'O módulo do recurso Ficheiro não armazena quaisquer dados pessoais.';
 $string['resource:addinstance'] = 'Adicionar um novo recurso';
+$string['resource:exportresource'] = 'Exportar recurso';
+$string['resource:view'] = 'Ver recurso';
 $string['resourcecontent'] = 'Ficheiros e subpastas';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Exportar recurso';
-$string['resource:view'] = 'Ver recurso';
 $string['search:activity'] = 'Ficheiro';
 $string['selectmainfile'] = 'Selecione o ficheiro principal clicando no ícone ao lado do nome do ficheiro.';
 $string['showdate'] = 'Exibir data de carregamento/data de modificação';

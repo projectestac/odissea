@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'label', language 'de', version '3.8'.
  *
- * @package   label
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     label
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,23 +31,23 @@ $string['configdndresizewidth'] = 'Wenn ein Titel für eine Bilddatei angelegt w
 $string['dndmedia'] = 'Drag-and-drop für Medien';
 $string['dndresizeheight'] = 'Drag-and-drop Höhe anpassen';
 $string['dndresizewidth'] = 'Drag-and-drop Beite anpassen';
-$string['dnduploadlabel'] = 'In Textfeld einbinden';
+$string['dnduploadlabel'] = 'Mediendatei zur Kursseite hinzufügen';
 $string['dnduploadlabeltext'] = 'Textfeld zur Kursseite hinzufügen';
 $string['indicator:cognitivedepth'] = 'Textfeld kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einem Textfeld erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Textfeld kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Textfelder während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einem Textfeld erreicht hat.';
 $string['indicator:socialbreadth'] = 'Textfeld sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einem Textfeld erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Textfeld sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Textfeld-Ressourcen während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person bei einem Textfeld erreicht hat.';
 $string['label:addinstance'] = 'Neues Textfeld hinzufügen';
-$string['labeltext'] = 'Textfeld';
 $string['label:view'] = 'Textfeld anzeigen';
+$string['labeltext'] = 'Textfeld';
 $string['modulename'] = 'Textfeld';
 $string['modulename_help'] = 'Ein Textfeld wird auf der Kursseite angezeigt, z.B. als Überschrift, als Hinweis, als kurzer Lerninhalt oder zur Orientierung. Ein Textfeld kann auch multimediale Elemente beinhalten, z.B. Video oder Audio.';
 $string['modulenameplural'] = 'Textfelder';
 $string['pluginadministration'] = 'Textfeld-Administration';
 $string['pluginname'] = 'Textfeld';
-$string['privacy:metadata'] = 'Das Plugin Textfeld speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin \'Textfeld\' speichert keine personenbezogenen Daten.';
 $string['search:activity'] = 'Textfeld';

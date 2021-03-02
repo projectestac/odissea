@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'course', language 'zh_cn', version '3.8'.
  *
- * @package   course
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     course
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,11 +37,11 @@ $string['coursetoolong'] = '课程太长了';
 $string['customfield_islocked'] = '锁定的';
 $string['customfield_islocked_help'] = '如果字段被锁定，则只有具有更改锁定的自定义字段权限的用户(默认情况下，只有具有管理员角色的用户)才能在课程设置中更改该字段。';
 $string['customfield_notvisible'] = '没有人';
-$string['customfieldsettings'] = '普通课程自定义字段设置';
 $string['customfield_visibility'] = '可见到';
 $string['customfield_visibility_help'] = '此设置确定谁可以在课程列表或个人主页的可用自定义字段过滤器中查看自定义字段名称和值。';
 $string['customfield_visibletoall'] = '每个人';
 $string['customfield_visibletoteachers'] = '教师';
+$string['customfieldsettings'] = '普通课程自定义字段设置';
 $string['errorendbeforestart'] = '结束日期({$a})在课程开始日期之前。';
 $string['favourite'] = '标星的课程';
 $string['gradetopassnotset'] = '本课程没有设置及格成绩，可以在课程的成绩项目中设置(成绩册设置)。';
@@ -63,6 +63,15 @@ $string['target:coursedropout'] = '学生有辍学的风险';
 $string['target:coursedropout_help'] = '这个目标描述了学生是否被认为有辍学的风险。';
 $string['target:coursegradetopass'] = '学生有可能不能获得通过该课程的最低成绩';
 $string['target:coursegradetopass_help'] = '这个目标描述了学生是否有不能获得通过课程的最低成绩的风险。';
+$string['target:noaccesssincecoursestart'] = '还没有访问过此课程的学生';
+$string['target:noaccesssincecoursestart_help'] = '这个目标描述了从未访问过他们所加入的课程的学生。';
+$string['target:noaccesssincecoursestartinfo'] = '以下学生加入了一门已经开始的课程，但是他们从来没有访问过此课程。';
+$string['target:norecentaccesses'] = '最近没有访问过此课程的学生';
+$string['target:norecentaccesses_help'] = '此目标标识在设置的分析间隔内(默认为过去一个月)没有访问过所加入课程的学生。';
+$string['target:norecentaccessesinfo'] = '以下学生未在设定的分析间隔内(默认为过去一个月)访问过他们所加入的课程。';
+$string['target:noteachingactivity'] = '‎课程有无法开始的风险‎';
+$string['target:noteachingactivity_help'] = '该目标描述了将在下周开始的课程是否将进行教学活动。';
+$string['target:noteachingactivityinfo'] = '‎即将在未来几天开始的以下课程有无法开始的风险，因为它们没有教师或学生加入。';
 $string['targetlabelstudentcompetenciesno'] = '有可能完成分配给课程的能力的学生';
 $string['targetlabelstudentcompetenciesyes'] = '‎学生有无法完成分配给课程的能力的风险 ‎';
 $string['targetlabelstudentcompletionno'] = '‎有可能满足课程完成条件的学生‎';
@@ -73,12 +82,3 @@ $string['targetlabelstudentgradetopassno'] = '有可能获得通过此课程的�
 $string['targetlabelstudentgradetopassyes'] = '学生有不能获得通过该课程的最低成绩的风险。';
 $string['targetlabelteachingno'] = '‎课程有无法开始的风险‎';
 $string['targetlabelteachingyes'] = '具有教学权限的用户可以访问该课程';
-$string['target:noaccesssincecoursestart'] = '还没有访问过此课程的学生';
-$string['target:noaccesssincecoursestart_help'] = '这个目标描述了从未访问过他们所加入的课程的学生。';
-$string['target:noaccesssincecoursestartinfo'] = '以下学生加入了一门已经开始的课程，但是他们从来没有访问过此课程。';
-$string['target:norecentaccesses'] = '最近没有访问过此课程的学生';
-$string['target:norecentaccesses_help'] = '此目标标识在设置的分析间隔内(默认为过去一个月)没有访问过所加入课程的学生。';
-$string['target:norecentaccessesinfo'] = '以下学生未在设定的分析间隔内(默认为过去一个月)访问过他们所加入的课程。';
-$string['target:noteachingactivity'] = '‎课程有无法开始的风险‎';
-$string['target:noteachingactivity_help'] = '该目标描述了将在下周开始的课程是否将进行教学活动。';
-$string['target:noteachingactivityinfo'] = '‎即将在未来几天开始的以下课程有无法开始的风险，因为它们没有教师或学生加入。';

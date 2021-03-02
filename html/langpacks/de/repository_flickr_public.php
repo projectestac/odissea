@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_flickr_public', language 'de', version '3.8'.
  *
- * @package   repository_flickr_public
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_flickr_public
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Alle';
-$string['apikey'] = 'API-Schlüssel';
+$string['apikey'] = 'API-Key';
 $string['backtosearch'] = 'Zurück zur Suche';
 $string['by'] = 'Namensnennung';
 $string['by-nc'] = 'Namensnennung-Nichtkommerziell';
@@ -41,21 +41,21 @@ $string['creativecommonscommercial'] = 'Nur Creative Commons Kommerziell';
 $string['emailaddress'] = 'E-Mail-Adresse';
 $string['flickr_public:view'] = 'Bilder von Flickr public in der Dateiauswahl nutzen';
 $string['fulltext'] = 'Ausführlicher Text';
-$string['information'] = '<div><a href="http://www.flickr.com/services/api/keys/">API-Schlüssel für Flickr</a> holen</div>';
+$string['information'] = '<div>Holen Sie einen <a href="http://www.flickr.com/services/api/keys/">Flickr API-Key</a> für Ihr Moodle.</div>';
 $string['invalidemail'] = 'Ungültige E-Mail-Adresse für Flickr';
 $string['license'] = 'Lizenz';
 $string['modification'] = 'Es soll möglich sein, die Bilder zu verändern';
 $string['notitle'] = 'unbenannt';
 $string['nullphotolist'] = 'Zu diesem Nutzerkonto gehören keine Fotos';
 $string['pluginname'] = 'Flickr Public';
-$string['pluginname_help'] = 'Repository bei Flickr.com';
+$string['pluginname_help'] = 'Bilder bei Flickr.com';
 $string['privacy:metadata:repository_flickr_public'] = 'Das Flickr-Repository-Plugin speichert keine personenbezogenen Daten. Es überträgt aber Nutzerdaten von Moodle an das entfernte System';
 $string['privacy:metadata:repository_flickr_public:author'] = 'Der Flickr-Public-Repository Autor';
 $string['privacy:metadata:repository_flickr_public:email_address'] = 'Die Flickr-Public-Repository Nutzer E-Mail-Adresse';
 $string['privacy:metadata:repository_flickr_public:text'] = 'Die Flickr-Public-Repository Suchanfrage';
 $string['privacy:metadata:repository_flickr_public:user_id'] = 'Die Flickr-Public-Repository-Nutzer-ID.';
 $string['remember'] = 'Eingeloggt bleiben';
-$string['secret'] = 'Code';
+$string['secret'] = 'Secret';
 $string['sharealike'] = 'Ja, solange wie andere unter gleichen Bedingungen weitergeben';
 $string['tag'] = 'Tag';
 $string['username'] = 'Anmeldename für Flickr (E-Mail-Adresse)';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'eu', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -72,8 +72,8 @@ $string['navigateprevious'] = 'Aurreko orria (Alt/Shift-Alt/Ctrl-Option + {$a})'
 $string['output'] = 'Irteera:';
 $string['oval'] = 'Obaloa';
 $string['pagenumber'] = '{$a}. orria';
-$string['pagexofy'] = '{$a->page} orri {$a->total}-(e)tik';
-$string['partialwarning'] = 'Bidalketa honetako fitxategi batzuk ez dira erakusten eta soilik deskarga bidez daude eskuragarri.';
+$string['pagexofy'] = '{$a->page} orri {$a->total}(e)tik';
+$string['partialwarning'] = 'Bidalketa honetako fitxategi batzuk soilik deskarga bidez daude eskuragarri.';
 $string['pathtogspathdesc'] = 'Mesedez kontuan izan PDF gaineko oharrak egiteko ghostscript-erako bidea {$a}-n zehazturik egotea behar duela.';
 $string['pen'] = 'Arkatza';
 $string['pluginname'] = 'PDF gaineko oharrak';
@@ -98,11 +98,11 @@ $string['stamps'] = 'Zigiluak';
 $string['stampsdesc'] = 'Zigiluak irudi-fitxategia izan behar du (gomendatutako tamaina: 40x40). Irudi hauek PDF gaineko oharretan zigilua tresnarekin erabil daitezke.';
 $string['test_doesnotexist'] = 'Ghostscript-en bideak existitzen ez den fitxategi batera eramaten du';
 $string['test_empty'] = 'Ghostscript-en bidea hutsik dago - mesedez, idatzi helbide egokia';
-$string['testgs'] = 'Probatu ghostscript-en bidea';
 $string['test_isdir'] = 'Ghostscript-en bidea karpetara batera doa, mesedez, sartu ghostscript programa zuk zehaztutako bidean';
 $string['test_notestfile'] = 'Probetarako PDFa falta da';
 $string['test_notexecutable'] = 'Ghostscript helbidea exekuta ezin daitekeen fitxategi batera doa';
 $string['test_ok'] = 'Ghostscript-en bidea ondo dagoela dirudi - mesedez, aztertu beheko irudiko mezua ikus dezakezun';
+$string['testgs'] = 'Probatu ghostscript-en bidea';
 $string['tool'] = 'Tresna';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Ikusi PDF gaineko oharrak...';

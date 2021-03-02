@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grades', language 'ko', version '3.8'.
  *
- * @package   grades
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grades
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -53,6 +53,14 @@ $string['aggregatesum'] = '성적 합계';
 $string['aggregateweightedmean'] = '성적 가중 평균';
 $string['aggregateweightedmean2'] = '성적 단순 가중 평균';
 $string['aggregation'] = '집계 전략';
+$string['aggregation_help'] = '집계는 범주안에 있는 성적들이 조합될 것인지를 결정합니다.
+
+* 평균 성적 - 모든 성적의 합계를 성적의 수로 나눔
+* 중간 성적 - 성적을 크기 순서로 정렬했을 때 중앙 값
+* 최저 성적
+* 최고 성적
+* 최빈 성적 - 가장 자주 발생한 성적
+* 성적 합계 - 척도 성적을 무시하고 모든 성적 값의 합';
 $string['aggregationcoef'] = '집계 상수';
 $string['aggregationcoefextra'] = '가산 점수';
 $string['aggregationcoefextra_help'] = '집계가 성적의 합 혹은 단순 가중 평균이고, 추가 점수 체크박스가 체크되어 있으면 성적항목의 최대 점수는 범주의 최대 성적에 추가되지 않습니다. 결과적으로 모든 성적 항목에 최대 성적이 없는 범주에서 최대 성적(혹은 사이트 관리자가 활성화 하였다면 최대 아상의 성적)을 받을 가능성이 있습니다.
@@ -64,14 +72,6 @@ $string['aggregationcoefextraweight'] = '가산점 가중치';
 $string['aggregationcoefextraweight_help'] = '추가 점수 가중치가 0보다 크게 설정되면  집계시 성적이 추가 점수로 반영됩니다. 이 수는 평균을 계산하기 위해 합계에 추가되기 전에 성적이 곱해지는 값입니다.';
 $string['aggregationcoefweight'] = '항목 가중치';
 $string['aggregationcoefweight_help'] = '항목 가중치는 같은 범주내의 다른 성적항목과 비교하여 항목의 중요도를 반영하기 위해 범주 집계 안에서 사용됩니다.';
-$string['aggregation_help'] = '집계는 범주안에 있는 성적들이 조합될 것인지를 결정합니다.
-
-* 평균 성적 - 모든 성적의 합계를 성적의 수로 나눔
-* 중간 성적 - 성적을 크기 순서로 정렬했을 때 중앙 값
-* 최저 성적
-* 최고 성적
-* 최빈 성적 - 가장 자주 발생한 성적
-* 성적 합계 - 척도 성적을 무시하고 모든 성적 값의 합';
 $string['aggregationposition'] = '총계의 위치';
 $string['aggregationposition_help'] = '이 설정은 범주와 강좌 전체 열이 성적부 보고서에서 처음 혹은 나중에 표시될지를 결정합니다.';
 $string['aggregationsvisible'] = '이용가능한 집계 유형';
@@ -94,9 +94,9 @@ $string['bonuspoints'] = '보너스 점수';
 $string['bulkcheckboxes'] = '일괄처리 체크박스';
 $string['calculatedgrade'] = '산출된 성적';
 $string['calculation'] = '계산';
+$string['calculation_help'] = '성적 계산은 성적을 계산하기 위해 사용되는 공식입니다. 공식은 등호(=)로 시작하여야 하며 max, min, sum  과 같은 보통의 수학적 연산자를 사용해야 합니다. 필요하면 대괄호 사이에 다른 성적의  ID 번호를 입력해서 다른 성적 항목을 계산에 포함할 수 있습니다.';
 $string['calculationadd'] = '계산 추가';
 $string['calculationedit'] = '계산 수정';
-$string['calculation_help'] = '성적 계산은 성적을 계산하기 위해 사용되는 공식입니다. 공식은 등호(=)로 시작하여야 하며 max, min, sum  과 같은 보통의 수학적 연산자를 사용해야 합니다. 필요하면 대괄호 사이에 다른 성적의  ID 번호를 입력해서 다른 성적 항목을 계산에 포함할 수 있습니다.';
 $string['calculationsaved'] = '계산결과 저장됨';
 $string['calculationview'] = '계산 보기';
 $string['cannotaccessgroup'] = '선택한 모둠의 성적에 접근할 수 없습니다.';
@@ -145,8 +145,8 @@ $string['displaypoints'] = '점수 표시';
 $string['displayweighted'] = '가중치 적용된 성적 표시';
 $string['dropdown'] = '펼침메뉴';
 $string['droplow'] = '최하위 낙제';
-$string['droplowestvalue'] = '낙제 최하위 성적 값 설정';
 $string['droplow_help'] = '이 설정은 명시된 수만큼의  최저 성적들이 집계에서 제외되도록 합니다.';
+$string['droplowestvalue'] = '낙제 최하위 성적 값 설정';
 $string['dropped'] = '낙제';
 $string['dropxlowest'] = '최하위 X 탈락';
 $string['dropxlowestwarning'] = '알림 : 만약 최하 X 털어냄을 사용한다면 모든 범주안에 있는 성적 항목들은 같은 점수를 받을 것이다. 만일 점수가 다르게 나온다면 예측할수 없는 결과가 나올 수 있다.';
@@ -195,10 +195,10 @@ $string['exportto'] = '내보낼 곳';
 $string['extracreditvalue'] = '{$a}에 대한 추가 점수';
 $string['extracreditwarning'] = '노트: 범주에 대한 모든 항목들을 추가 점수로 설정하면 성적 계산에서 항목들이 제거됩니다. ';
 $string['feedback'] = '피드백';
+$string['feedback_help'] = '이 상자에 성적에 대한 어떤 코멘트도 추가할 수 있습니다.';
 $string['feedbackadd'] = '피드백 추가';
 $string['feedbackedit'] = '피드백 수정';
 $string['feedbackforgradeitems'] = '{$a}에 대한 피드백';
-$string['feedback_help'] = '이 상자에 성적에 대한 어떤 코멘트도 추가할 수 있습니다.';
 $string['feedbacks'] = '피드백';
 $string['feedbacksaved'] = '피드백 저장됨';
 $string['feedbackview'] = '피드백 보기';
@@ -279,7 +279,7 @@ $string['gradepointmax'] = '최대 성적 점수';
 $string['gradepreferences'] = '성적 환경 설정';
 $string['gradepreferenceshelp'] = '성적 환경 설정 도움말';
 $string['gradepublishing'] = '성적 공개 가능';
-$string['gradepublishing_help'] = '내보내기와 가져오기에서 공개 활성화: 내보낸 성적은 무들 사이트에 접속하지 않고도 그 URL을 접속하여 접근할 수 있습니다. 성적은 그러한 URL에 접속하여 다시 가져올 수 있습니다.(다른 사이트에서 공개된 성적을 무들사이트로 되가져올 수 있음을 의미 합니다) 기본적으로 관리자만 이 기능을 사용할 수 있지만, 다른 사람에게 이 권한을 부여할 때는, 부여하기 전에 사용자에게 충분히 개인정보 유출에 따른 위험성을 교육시켜야 합니다.(북마크 공유, 가속기 다운로드, IP제한 등의 위험)';
+$string['gradepublishing_help'] = '내보내기와 가져오기에서 공개 활성화: 내보낸 성적은 무들 사이트에 접속하지 않고도 그 URL을 접속하여 접근할 수 있습니다. 성적은 그러한 URL에 접속하여 다시 가져올 수 있습니다.(다른 사이트에서 공개된 성적을 무들사이트로 되가져올 수 있음을 의미 합니다) 기본적으로 관리자만 이 기능을 사용할 수 있지만, 다른 사람에게 이 권한을 부여할 때는, 부여하기 전에 사용자에게 충분히 개인정보 유출에 따른 위험성을 교육시켜야 합니다.(즐겨찾기 공유, 가속기 다운로드, IP제한 등의 위험)';
 $string['gradereport'] = '성적 보고서';
 $string['graderreport'] = '채점자 보고서';
 $string['grades'] = '성적들';
@@ -299,9 +299,9 @@ $string['gradeview'] = '성적 보기';
 $string['gradeweighthelp'] = '성적 가중치 도움말';
 $string['groupavg'] = '모둠의 평균';
 $string['hidden'] = '비공개';
+$string['hidden_help'] = '체크가 되면, 학생들에게 성적이 감추어집니다. 채점이 완료된 이후 성적을 공개하려면, 특정일까지 성적 감추어짐으로 설정하면 됩니다.';
 $string['hiddenasdate'] = '숨긴 성적에 대한 제출일 보기';
 $string['hiddenasdate_help'] = '사용자에게 성적이 공개되지 않을 때 \'대신 제출일을 보여줍니다.';
-$string['hidden_help'] = '체크가 되면, 학생들에게 성적이 감추어집니다. 채점이 완료된 이후 성적을 공개하려면, 특정일까지 성적 감추어짐으로 설정하면 됩니다.';
 $string['hiddenuntil'] = '비공개 시한';
 $string['hiddenuntildate'] = '{$a} 까지 비공개';
 $string['hideadvanced'] = '고급 기능 숨김';
@@ -334,7 +334,7 @@ $string['import'] = '가져오기';
 $string['importcsv'] = 'CSV 가져오기';
 $string['importcustom'] = '(이강좌로) 맞춤 학습성과 가져오기';
 $string['importerror'] = '오류 발생, 바른 파라메터로 스크립트가 호출되지 않았습니다.';
-$string['importfailed'] = '가져오기 실패';
+$string['importfailed'] = '가져오기 실패. 아무런 데이터도 가져오지 못하였습니다.';
 $string['importfeedback'] = '피드백 가져오기';
 $string['importfile'] = '파일 가져오기';
 $string['importfilemissing'] = '파일 받기 실패, 다시 가서 제대로 된 파일을 올리세요.';
@@ -449,6 +449,7 @@ $string['operations'] = '동작';
 $string['options'] = '선택사항';
 $string['others'] = '기타';
 $string['outcome'] = '학습성과';
+$string['outcome_help'] = '성적 항목을 나타내는 학습성과';
 $string['outcomeassigntocourse'] = '본 강좌에 또 다른 학습성과 부여';
 $string['outcomecategory'] = '범주내 학습성과 생성';
 $string['outcomecategorynew'] = '새 범주';
@@ -456,7 +457,6 @@ $string['outcomeconfirmdelete'] = '정말 "{$a}" 학습성과를 삭제하겠습
 $string['outcomecreate'] = '새 학습성과 추가';
 $string['outcomedelete'] = '학습성과 삭제';
 $string['outcomefullname'] = '전체 이름';
-$string['outcome_help'] = '성적 항목을 나타내는 학습성과';
 $string['outcomeitem'] = '학습성과 항목';
 $string['outcomeitemsedit'] = '학습성과 항목 수정';
 $string['outcomereport'] = '학습성과 보고서';
@@ -507,7 +507,7 @@ $string['profilereport_help'] = '사용자 개인정보 페이지에 성적 보�
 $string['publishing'] = '공개';
 $string['quickfeedback'] = '빠른 피드백';
 $string['quickgrading'] = '일괄 채점';
-$string['quickgrading_help'] = '활성화되어 있고 편집모드가 켜져 있으면 각 성적에 텍스트 입력 상자가 나타나서 많은 성적들을 동시에 편집할 수 있습니다. 새로고침 버튼이 클릭되면 변경사항이 저장되고 구별되어 표시됩니다.
+$string['quickgrading_help'] = '활성화되어 있고 편집모드이면 각 성적에 텍스트 입력 상자가 나타나서 많은 성적들을 동시에 편집할 수 있습니다. 새로고침 버튼이 클릭되면 변경사항이 저장되고 구별되어 표시됩니다.
 
 성적이 채점자 보고서에서 편집될 때는 성적이 관련된 활동안에서 더 이상 변경될 수 없다는 것을 의미하는 덮어쓰기 표식이 설정됨을 주목하십시요.';
 $string['range'] = '범위';
@@ -593,7 +593,7 @@ $string['showonlyactiveenrol'] = '활성화된 등록 만 보여주기';
 $string['showpercentage'] = '백분율 보이기';
 $string['showpercentage_help'] = '각 채점 항목의 백분율을 보여줄까요?';
 $string['showquickfeedback'] = '빠른 피드백 보이기';
-$string['showquickfeedback_help'] = '일괄 피드백은 한꺼번에 많은 피드백을 편집할 수 있도록 채점자 보고서의 각 셀에 문서 입력난을 추가합니다. 한번에 하나씩 저장하는 대신, 변경사항을 한꺼번에 저장하기 위해 업데이트 버튼을 클릭할 수 있습니다';
+$string['showquickfeedback_help'] = '일괄 피드백은 한꺼번에 많은 피드백을 편집할 수 있도록 채점자 보고서의 각 셀에 텍스트 입력난을 추가합니다. 한번에 하나씩 저장하는 대신, 변경사항을 한꺼번에 저장하기 위해 업데이트 버튼을 클릭할 수 있습니다';
 $string['showrange'] = '범위 보여주기';
 $string['showrange_help'] = '범위난 보여주기';
 $string['showranges'] = '범위 보이기';
@@ -609,7 +609,7 @@ $string['simpleview'] = '간단히 보기';
 $string['sitewide'] = '전 사이트';
 $string['sort'] = '정렬';
 $string['sortasc'] = '오름차순으로 정렬';
-$string['sortbyfirstname'] = '성으로 정렬';
+$string['sortbyfirstname'] = '이름으로 정렬';
 $string['sortbylastname'] = '이름으로 정렬';
 $string['sortdesc'] = '내림차순으로 정렬';
 $string['standarddeviation'] = '표준 편차';

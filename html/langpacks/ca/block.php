@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block', language 'ca', version '3.8'.
  *
- * @package   block
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['bracketfirst'] = '{$a} (primera)';
 $string['bracketlast'] = '{$a} (darrera)';
 $string['configureblock'] = 'Configura el bloc {$a}';
 $string['contexts'] = 'Contexts de pàgina';
-$string['contexts_help'] = 'Els contextos són tipus de pàgines més específics on es pot visualitzar aquest bloc dins de la ubicació original del bloc. Tindreu diferents opcions segons la ubicació original del bloc i la vostra ubicació actual. Per exemple, per a imposar que el bloc aparegui només en pàgines de fòrum d\'un curs, afegiu el bloc al curs (fent que aparegui a totes les subpàgines) i després aneu a un fòrum i editeu de nou els paràmetres del bloc per restringir la visualització només en pàgines de fòrum.';
+$string['contexts_help'] = 'Els contextos són tipus de pàgines més específics on es pot visualitzar aquest bloc dins de la ubicació original del bloc. Tindreu diferents opcions segons la ubicació original del bloc i la vostra ubicació actual. Per exemple, per a imposar que el bloc aparegui només en pàgines de fòrum d\'un curs, afegiu el bloc al curs (fent que aparegui a totes les subpàgines), i després aneu a un fòrum i editeu de nou els paràmetres del bloc per restringir la visualització només en pàgines de fòrum.';
 $string['createdat'] = 'Ubicació original del bloc';
 $string['createdat_help'] = 'La ubicació original on es va crear el bloc. Els paràmetres del bloc poden fer que aparegui en altres ubicacions (contextos) dins de la ubicació original. Per exemple, un bloc creat en una pàgina de curs es pot visualitzar en activitats dins d\'aquest curs. Un bloc creat a la pàgina principal es pot visualitzar a tot el lloc.';
 $string['defaultregion'] = 'Regió per defecte';
@@ -44,7 +44,7 @@ $string['defaultweight'] = 'Pes per defecte';
 $string['defaultweight_help'] = 'El pes per defecte permet triar aproximadament on voleu que aparegui el bloc dins de la regió, més amunt o més avall. La ubicació definitiva es calcula prenent en consideració tots els blocs que apareguin a la regió. Aquest valor es pot canviar si cal en pàgines específiques.';
 $string['deleteblock'] = 'Suprimeix el bloc {$a}';
 $string['deleteblockcheck'] = 'Confirmeu que voleu suprimir aquest bloc anomenat {$a}?';
-$string['deleteblockwarning'] = '<p> Esteu a punt d\'eliminar un bloc que apareix en un altre lloc. </p><p> Ubicació del bloc original: {$a->location} <br /> Visualització en tipus de pàgines: {$a->pagetype} </p><p> Esteu segur que voleu continuar? </p>';
+$string['deleteblockwarning'] = '<p> Ara eliminareu un bloc que apareix en un altre lloc. </p><p> Ubicació del bloc original: {$a->location} <br /> Visualització en tipus de pàgines: {$a->pagetype} </p><p> Esteu segur que voleu continuar? </p>';
 $string['deletecheck'] = 'Suprimiu el bloc {$a}?';
 $string['dockblock'] = 'Acobla el bloc {$a}';
 $string['hideblock'] = 'Amaga el bloc {$a}';

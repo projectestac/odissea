@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'ca', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['added'] = 'S\'ha afegit l\'etiqueta/es estàndard';
-$string['addotags'] = 'Afegeix etiquetes oficials';
+$string['addotags'] = 'Afegeix etiquetes estàndard';
 $string['addtagcoll'] = 'Afegeix una col·lecció d\'etiquetes';
 $string['addtagtomyinterests'] = 'Afegeix "{$a}" als meus interessos';
-$string['alltagpages'] = 'Totes les pàgines d\'tiquetes';
+$string['alltagpages'] = 'Totes les pàgines d\'etiquetes';
 $string['backtoallitems'] = 'Torna a tots els elements etiquetats amb «{$a}»';
 $string['changename'] = 'Canvia el nom de l\'etiqueta';
 $string['changeshowstandard'] = 'Canvia la visualització d\'etiquetes estàndard a l\'àrea de {$a}';
@@ -40,14 +40,14 @@ $string['collnameexplained'] = 'Deixeu el camp buit per fer servir el valor per 
 $string['combined'] = 'S\'han combinat les etiquetes';
 $string['combineselected'] = 'Combina les seleccionades';
 $string['component'] = 'Component';
-$string['confirmdeletetag'] = 'Segur que voleu suprimir aquesta etiqueta?';
-$string['confirmdeletetags'] = 'Segur que voleu suprimir les etiquetes seleccionades?';
+$string['confirmdeletetag'] = 'Segur que voleu esborrar aquesta etiqueta?';
+$string['confirmdeletetags'] = 'Segur que voleu esborrar les etiquetes seleccionades?';
 $string['count'] = 'Compte';
 $string['coursetags'] = 'Etiquetes del curs';
 $string['defautltagcoll'] = 'Col·lecció per defecte';
-$string['delete'] = 'Suprimeix';
+$string['delete'] = 'Esborra';
 $string['deleted'] = 'Suprimides les etiquetes';
-$string['deletedcoursetags'] = 'Suprimides - etiquetes del curs';
+$string['deletedcoursetags'] = 'Eliminades - Etiquetes del curs';
 $string['deleteselected'] = 'Suprimeix les seleccionades';
 $string['description'] = 'Descripció';
 $string['editcollname'] = 'Edita el nom de la col·lecció d\'etiquetes';
@@ -57,22 +57,22 @@ $string['editsearchable'] = 'Canvia si és cercable';
 $string['edittag'] = 'Edita aquesta etiqueta';
 $string['edittagcoll'] = 'Edita la col·lecció d\'etiquetes {$a}';
 $string['edittagcollection'] = 'Canvia la col·lecció d\'etiquetes';
-$string['entertags'] = 'Introduïu les etiquetes separades per comes';
-$string['errortagfrontpage'] = 'Les etiquetes a la pàgina principal del lloc no estan permeses.';
-$string['errorupdatingrecord'] = 'Error actualitzant la dada de l\'etiqueta.';
-$string['eventtagadded'] = 'Etiquetes afegides a un element';
+$string['entertags'] = 'Introduïu les etiquetes...';
+$string['errortagfrontpage'] = 'No està permès etiquetar la pàgina principal de lloc';
+$string['errorupdatingrecord'] = 'S\'ha produït un error actualitzant el registre de l\'etiqueta';
+$string['eventtagadded'] = 'Etiqueta afegida a un element';
 $string['eventtagcollcreated'] = 'S\'ha creat la col·lecció d\'etiquetes';
 $string['eventtagcolldeleted'] = 'S\'ha esborrat la col·lecció d\'etiquetes';
 $string['eventtagcollupdated'] = 'S\'ha actualitzat la col·lecció d\'etiquetes';
-$string['eventtagcreated'] = 'Etiqueta creada';
-$string['eventtagdeleted'] = 'Etiqueta suprimida';
-$string['eventtagflagged'] = 'Etiqueta marcada';
-$string['eventtagremoved'] = 'Etiqueta suprimida d\'un element';
-$string['eventtagunflagged'] = 'Etiqueta desmarcada';
-$string['eventtagupdated'] = 'Etiqueta actualitzada';
+$string['eventtagcreated'] = 'S\'ha creat l\'etiqueta';
+$string['eventtagdeleted'] = 'S\'ha suprimit l\'etiqueta';
+$string['eventtagflagged'] = 'S\'ha marcat l\'etiqueta';
+$string['eventtagremoved'] = 'S\'ha suprimit l\'etiqueta d\'un element';
+$string['eventtagunflagged'] = 'S\'ha desmarcat l\'etiqueta';
+$string['eventtagupdated'] = 'S\'ha actualitzat l\'etiqueta';
 $string['exclusivemode'] = 'Mostra només les etiquetades {$a->tagarea}';
-$string['flag'] = 'Senyalador';
-$string['flagasinappropriate'] = 'Senyala com a inapropiat';
+$string['flag'] = 'Marca';
+$string['flagasinappropriate'] = 'Marca com a inapropiat';
 $string['flagged'] = 'Etiqueta senyalada';
 $string['helprelatedtags'] = 'Etiquetes relacionades separades per comes';
 $string['id'] = 'id';
@@ -85,36 +85,36 @@ $string['managetagcolls'] = 'Gestiona les col·leccions d\'etiquetes';
 $string['managetags'] = 'Gestiona les etiquetes';
 $string['moretags'] = 'més...';
 $string['name'] = 'Nom de l\'etiqueta';
-$string['namesalreadybeeingused'] = 'Noms d\'etiquetes ja utilitzats';
+$string['namesalreadybeeingused'] = 'Noms d\'etiquetes que ja s\'estan fent servir';
 $string['nameuseddocombine'] = 'Aquest nom d\'etiqueta ja s\'està fent servir. Voleu combinar aquestes etiquetes?';
 $string['newcollnamefor'] = 'Nou nom per a la col·lecció d\'etiquetes {$a}';
-$string['newnamefor'] = 'Nom nou per a l\'etiqueta {$a}';
+$string['newnamefor'] = 'Nou nom per a l\'etiqueta {$a}';
 $string['nextpage'] = 'Més';
 $string['noresultsfor'] = 'Cap resultat per a "{$a}"';
 $string['notagsfound'] = 'No s\'han trobat etiquetes coincidents amb «{$a}»';
 $string['nothingtoupdate'] = 'Res per actualitzar';
 $string['owner'] = 'Propietari';
-$string['page-tag-index'] = 'Pàgina amb una sola etiqueta.';
+$string['page-tag-index'] = 'Pàgina d\'una sola etiqueta';
 $string['page-tag-manage'] = 'Gestiona la pàgina d\'etiquetes';
 $string['page-tag-search'] = 'Pàgina de cerca d\'etiquetes';
 $string['page-tag-x'] = 'Totes les pàgines d\'etiquetes';
 $string['prevpage'] = 'Torna';
 $string['ptags'] = 'Etiquetes definides per l\'usuari (separades per comes)';
-$string['relatedblogs'] = 'Entrades recents del blog amb aquesta etiqueta';
+$string['relatedblogs'] = 'Entrades més recents del blog';
 $string['relatedtags'] = 'Etiquetes relacionades';
 $string['removetagfrommyinterests'] = 'Treu "{$a}" dels meus interessos';
 $string['reset'] = 'Reinicia el senyalador per l\'etiqueta';
 $string['resetfilter'] = 'Reinicia el filtre';
-$string['resetflag'] = 'Reinicia senyalador';
-$string['responsiblewillbenotified'] = 'La persona responsable rebrà una notificació';
+$string['resetflag'] = 'Reinicia la marca';
+$string['responsiblewillbenotified'] = 'La persona responsable serà notificada';
 $string['rssdesc'] = 'Aquest canal RSS ha estat generat automàticament per Moodle i conté etiquetes generades pels usuaris per als cursos.';
-$string['rsstitle'] = 'Canal RSS de l\'etiquetes de cursos de l\'usuari {$a}';
+$string['rsstitle'] = 'Canal RSS de les etiquetes de cursos de l\'usuari: {$a}';
 $string['search'] = 'Cerca';
 $string['searchable'] = 'Cercable';
 $string['searchable_help'] = 'Si està marcada, les etiquetes d\'aquesta col·lecció de cerca es poden trobar a través de la pàgina «Cerca etiquetes». Si no està marcada, les etiquetes encara es poden trobar a través d\'altres pàgines de cerca.';
-$string['searchresultsfor'] = 'Resultats de la cerca: "{$a}"';
+$string['searchresultsfor'] = 'Resultats de la cerca per «{$a}»';
 $string['searchtags'] = 'Cerca etiquetes';
-$string['seeallblogs'] = 'Mostra totes les entrades del blog amb l\'etiqueta "{$a}"...';
+$string['seeallblogs'] = 'Mostra totes les entrades de blogs etiquetades amb «{$a}»';
 $string['select'] = 'Selecciona';
 $string['selectcoll'] = 'Seleccioneu la col·lecció d\'etiquetes';
 $string['selectmaintag'] = 'Seleccioneu l\'etiqueta que es farà servir després de combinar';
@@ -134,18 +134,18 @@ $string['tag'] = 'Etiqueta';
 $string['tagarea_blog_external'] = 'Entrades de blogs externs';
 $string['tagarea_course'] = 'Cursos';
 $string['tagarea_course_modules'] = 'Activitats i recursos';
+$string['tagarea_post'] = 'Entrades del blog';
+$string['tagarea_user'] = 'Interessos de l\'usuari';
 $string['tagareaenabled'] = 'Habilitat';
 $string['tagareaname'] = 'Nom';
-$string['tagarea_post'] = 'Entrades del blog';
 $string['tagareas'] = 'Àrees d\'etiquetes';
-$string['tagarea_user'] = 'Interessos de l\'usuari';
 $string['tagcollection'] = 'Col·lecció d\'etiquetes';
 $string['tagcollection_help'] = 'Les col·leccions d\'etiquetes són un conjunt d\'etiquetes per a diferents àrees. Per exemple, una col·lecció d\'etiquetes estàndard es pot utilitzar per etiquetar cursos amb els interessos de l\'usuari, i les etiquetes d\'entrades de blogs es poden mantenir en una col·lecció separada.  Quan un usuari fa clic a una etiqueta, la pàgina d\'etiquetes mostra només els elements amb aquesta etiqueta en la mateixa col·lecció. Les etiquetes es poden afegir automàticament a una col·lecció, d\'acord amb l\'àrea d\'etiquetatge, o es poden afegir manualment com a etiquetes estàndard.';
 $string['tagcollections'] = 'Col·leccions d\'etiquetes';
 $string['tagdescription'] = 'Descripció de l\'etiqueta';
 $string['tags'] = 'Etiquetes';
-$string['tagsaredisabled'] = 'Les etiquetes estan inhabilitades';
-$string['thingstaggedwith'] = '{$a->count} elements amb l\'etiqueta "{$a->name}"';
+$string['tagsaredisabled'] = 'Les etiquetes estan deshabilitades';
+$string['thingstaggedwith'] = '«{$a->name}» s\'utilitza {$a->count} vegades';
 $string['thingtaggedwith'] = '"{$a->name}" s\'ha utilitzat una vegada';
 $string['timemodified'] = 'Modificat';
 $string['typechanged'] = 'S\'ha canviat el tipus d\'etiqueta';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'es', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,15 +43,15 @@ $string['handlerdisabled'] = 'El controlador del correo electrónico con el que 
 $string['incomingmailconfiguration'] = 'Configuración del correo entrante';
 $string['incomingmailserversettings'] = 'Ajustes del servidor de correo entrante';
 $string['incomingmailserversettings_desc'] = 'Moodle puede conectarse a servidores IMAP que estén configurados correctamente. Puede especificar los ajustes utilizados para conectarse a su servidor IMAP aquí.';
-$string['invalidrecipientdescription'] = 'No se ha podido autenticar el mensaje "{$a->subject}" debido a que se envió desde una dirección de correo electrónico distinta a la que aparece en su perfil de usuario. Deberá responder a este mensaje para que se pueda autenticar el mensaje.';
-$string['invalidrecipientdescriptionhtml'] = 'No se ha podido autenticar el mensaje "{$a->subject}" debido a que se envió desde una dirección de correo electrónico distinta a la que aparece en su perfil de usuario. Deberá responder a este mensaje para que se pueda autenticar el mensaje.';
-$string['invalidrecipientfinal'] = 'No se ha podido autenticar el mensaje "{$a->subject}". Compruebe que haya enviado el mensaje desde la misma dirección de correo electrónico que figura en su perfil.';
 $string['invalid_recipient_handler'] = 'Si se recibe un mensaje válido pero no se puede autenticar el remitente, el mensaje se guarda en el servidor de correo electrónico y se contacta con el usuario utilizando para ello la dirección de correo electrónico de su perfil de usuario. El usuario puede responder para confirmar la autenticidad del mensaje original.
 
 Este controlador procesa dichas respuestas.
 
 No es posible deshabilitar la verificación del remitente de este controlador debido a que el usuario puede responder desde una dirección de correo electrónico incorrecta si posee una configuración incorrecta del cliente de correo electrónico.';
 $string['invalid_recipient_handler_name'] = 'Controlador del destinatario no válido';
+$string['invalidrecipientdescription'] = 'No se ha podido autenticar el mensaje "{$a->subject}" debido a que se envió desde una dirección de correo electrónico distinta a la que aparece en su perfil de usuario. Deberá responder a este mensaje para que se pueda autenticar el mensaje.';
+$string['invalidrecipientdescriptionhtml'] = 'No se ha podido autenticar el mensaje "{$a->subject}" debido a que se envió desde una dirección de correo electrónico distinta a la que aparece en su perfil de usuario. Deberá responder a este mensaje para que se pueda autenticar el mensaje.';
+$string['invalidrecipientfinal'] = 'No se ha podido autenticar el mensaje "{$a->subject}". Compruebe que haya enviado el mensaje desde la misma dirección de correo electrónico que figura en su perfil.';
 $string['mailbox'] = 'Nombre de buzón';
 $string['mailboxconfiguration'] = 'Configuración del buzón';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';

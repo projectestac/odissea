@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_myoverview', language 'gl', version '3.8'.
  *
- * @package   block_myoverview
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_myoverview
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -71,13 +71,13 @@ $string['future'] = 'Futuros';
 $string['hidden'] = 'Cursos retirados da vista';
 $string['hiddencourses'] = 'Retirado da vista';
 $string['hidecourse'] = 'Retirar da vista';
-$string['inprogress'] = 'Cursándose';
+$string['inprogress'] = 'Avanzando';
 $string['lastaccessed'] = 'Último acceso';
 $string['layouts'] = 'Deseños dispoñíbeis';
 $string['layouts_help'] = 'Deseños xerais do curso que están dispoñíbeis para a selección polos usuarios. Se non se selecciona ningún, empregarase o deseño da tarxeta.';
 $string['list'] = 'Lista';
 $string['morecourses'] = 'Máis cursos';
-$string['myoverview:myaddinstance'] = 'Engade un novo bloque de vista xeral de curso no panel persoal';
+$string['myoverview:myaddinstance'] = 'Engade un novo bloque de vista xeral de curso no Taboleiro';
 $string['next30days'] = 'Próximos 30 días';
 $string['next7days'] = 'Próximos 7 días';
 $string['nocourses'] = 'Non hai cursos';
@@ -100,7 +100,7 @@ $string['show'] = 'Restaurar para ver';
 $string['sortbycourses'] = 'Ordenar por cursos';
 $string['sortbydates'] = 'Ordenar por datas';
 $string['summary'] = 'Resumo';
-$string['timeline'] = 'Cronograma';
+$string['timeline'] = 'Liña temporal';
 $string['title'] = 'Nome do curso';
 $string['viewcourse'] = 'Ver o curso';
 $string['viewcoursename'] = 'Ver o curso {$a}';

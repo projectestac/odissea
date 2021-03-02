@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_shibboleth', language 'ja', version '3.8'.
  *
- * @package   auth_shibboleth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_shibboleth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,17 +29,11 @@ $string['auth_shib_auth_logo'] = '認証方法ロゴ';
 $string['auth_shib_auth_logo_description'] = 'あなたのユーザになじみのあるShibboleth認証方法のロゴを提供してください。これはあなたのShibboleth認証連携のロゴにすることができます。例) 「SWITCHaaiログイン」または「InCommonログイン」または類似のもの。';
 $string['auth_shib_auth_method'] = '認証方法名';
 $string['auth_shib_auth_method_description'] = 'あなたのユーザになじみのあるShibboleth認証方法の名称を提供してください。あなたのシボレスフェデレーションの名称を使用することもできます 例) <tt>SWITCHaai Login</tt>または<tt>InCommon Login</tt>または同様の名称。';
-$string['auth_shibbolethdescription'] = 'この方法を使用することにより、Shibbolethを使用してユーザが作成および認証されます。詳細は<a href="{$a}">Shibboleth README</a>をご覧ください。';
-$string['auth_shibboleth_errormsg'] = 'あなたがメンバーになっている組織を選択してください!';
-$string['auth_shibboleth_login'] = 'Shibbolethログイン';
-$string['auth_shibboleth_login_long'] = 'Shibboleth経由でMoodleにログインする';
-$string['auth_shibboleth_manual_login'] = '手動ログイン';
-$string['auth_shibboleth_select_member'] = '私は ...';
-$string['auth_shibboleth_select_organization'] = 'Shibboleth経由の認証のため、あなたの組織をドロップダウンメニューから選択してください。';
 $string['auth_shib_changepasswordurl'] = 'パスワード変更URL';
 $string['auth_shib_contact_administrator'] = 'あなたが組織との関係がなく、このサーバのコースにアクセスする必要がある場合、<a href="mailto:{$a}">Moodle管理者</a>にご連絡ください。';
 $string['auth_shib_convert_data'] = 'データ修正API';
 $string['auth_shib_convert_data_description'] = 'あなたがShibbolethから提供されるデータを修正したい場合、このAPIを使用できます。詳細は<a href="{$a}">README</a>をご覧ください。';
+$string['auth_shib_convert_data_filepath_warning'] = 'あなたは現在のサイトデータディレクトリ ($CFG->dataroot) にあるファイルをデータ修正APIとして使用できません。';
 $string['auth_shib_convert_data_warning'] = 'ファイルが存在しないかウェブサーバプロセスで読み取れません!';
 $string['auth_shib_idp_list'] = 'アイデンティティプロバイダ';
 $string['auth_shib_idp_list_description'] = 'ログインページでユーザが選択できるようアイデンティティプロバイダのエンティティIDリストを入力してください。<br />それぞれの行ではアイデンティティプロバイダのエンティティIDにカンマ区切りのタプル (tuple) を追加してください (詳細はShibbolethメタデータファイルをご覧ください)。アイデンティティプロバイダ名がドロップダウンリストに表示されます。<br />あなたのMoodleが複数フェデレーション設定の一部にある場合、任意の第3パラメータとしてShibbolethセッションイニシエータのロケーションを追加することができます。';
@@ -56,6 +50,13 @@ $string['auth_shib_no_organizations_warning'] = 'あなたが統合WAYFサービ
 $string['auth_shib_only'] = 'Shibbolethのみ';
 $string['auth_shib_only_description'] = 'Shibboleth認証を強制する場合、このオプションをチェックしてください。';
 $string['auth_shib_username_description'] = 'Moodleユーザ名として使用されるShibbolethウェブサーバ環境のユーザ名';
+$string['auth_shibboleth_errormsg'] = 'あなたがメンバーになっている組織を選択してください!';
+$string['auth_shibboleth_login'] = 'Shibbolethログイン';
+$string['auth_shibboleth_login_long'] = 'Shibboleth経由でMoodleにログインする';
+$string['auth_shibboleth_manual_login'] = '手動ログイン';
+$string['auth_shibboleth_select_member'] = '私は ...';
+$string['auth_shibboleth_select_organization'] = 'Shibboleth経由の認証のため、あなたの組織をドロップダウンメニューから選択してください。';
+$string['auth_shibbolethdescription'] = 'この方法を使用することにより、Shibbolethを使用してユーザが作成および認証されます。詳細は<a href="{$a}">Shibboleth README</a>をご覧ください。';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'Shibboleth認証プラグインはいかなる個人データも保存しません。';
 $string['shib_invalid_account_error'] = 'あなたは正常にShibboleth認証できたようですがあなたの有効なユーザ名がMoodleにはありません。あなたのアカウントは存在しないか利用停止にされている可能性があります。';

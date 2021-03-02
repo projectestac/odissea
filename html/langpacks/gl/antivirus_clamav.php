@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'antivirus_clamav', language 'gl', version '3.8'.
  *
- * @package   antivirus_clamav
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     antivirus_clamav
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,8 +33,8 @@ $string['configclamfailureonupload'] = 'Se configurou o clam para comprobar fich
 $string['errorcantopensocket'] = 'A conexión ao «socket» de dominio Unix deu como resultado un erro {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV non responde; verifique o estado de execución do servizo.';
 $string['errornounixsocketssupported'] = 'Non se admite o transporte de socket de dominio Unix neste sistema. Use a opción da liña de ordes.';
-$string['invalidpathtoclam'] = 'Moodle está configurado para executar Clam ao recibir un ficheiro, mais a ruta para Clam AV, {$a}, non é correcta.';
-$string['pathtoclam'] = 'Ruta a ClamAV';
+$string['invalidpathtoclam'] = 'A ruta a ClamAV, {$a}, é incorrecta.';
+$string['pathtoclam'] = 'Liña de ordes';
 $string['pathtoclamdesc'] = 'Se o método de execución está configurado como «liña de ordes», introduza a ruta a ClamAV aquí. En Linux isto será /usr/bin/clamscan ou /usr/bin/clamdscan.';
 $string['pathtounixsocket'] = '«Socket» do dominio Unix';
 $string['pathtounixsocketdesc'] = 'Se o método de execución está configurado en "«Socket» do dominio Unix", introduza a ruta ao «socket» ClamAV Unix aquí. En Debian Linux este será /var/run/clamav/clamd.ctl. Asegúrese de que o servizo clamav teña acceso de lectura aos ficheiros cargados, o xeito máis sinxelo é engadir o usuario «clamav» ao grupo do seu servidor web («www-data» en Debian Linux).';
@@ -45,4 +45,4 @@ $string['runningmethod'] = 'Método de execución';
 $string['runningmethodcommandline'] = 'Liña de ordes';
 $string['runningmethoddesc'] = 'Método de execución do ClamAV. A liña de ordes úsase de xeito predeterminado, mais en sistemas Unix pódese obter un mellor desenvolvemento mediante o uso de «sockets» do sistema.';
 $string['runningmethodunixsocket'] = '«Socket» do dominio Unix';
-$string['unknownerror'] = 'Produciuse un erro descoñecido con Clam.';
+$string['unknownerror'] = 'Produciuse un erro descoñecido con ClamAV.';

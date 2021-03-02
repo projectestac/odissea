@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio', language 'ar', version '3.8'.
  *
- * @package   portfolio
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,12 +34,12 @@ $string['alreadyalt'] = 'قيد التصدير حالياً - لطفاً، أن�
 $string['alreadyexporting'] = 'لديك سلفاً محفظة تصدير نشطة في هذه الجلسة. قبل المتابعة، إما أن تُكمل هذا التصدير، أو تلغيه. هل ترغب في متابعته؟ (لا معناها إلغاؤه)';
 $string['availableformats'] = 'تنسيقات التصدير المتوفرة';
 $string['callbackclassinvalid'] = 'طبقة رد النداء المحددة غير صالحة أو ليست جزءا من التسلسل الهرمي portfolio_caller';
-$string['callercouldnotpackage'] = 'فشل في رزم بياناتك للتصدير: كان الخطأ الأصلي {$a}';
-$string['cannotsetvisible'] = 'لا يمكن تغيير هذا الخيار إلى مرئي - الملحق تم تعطيله تماماً بسبب الإعدادت الخاطئة.';
+$string['callercouldnotpackage'] = 'فشل لحزم البيانات احتياطيا للتصدير: كان الخطأ الأصلي {$a}';
+$string['cannotsetvisible'] = 'لا يمكن  تغيير هذا الخيار إلى مرئي - البرنامج المساعد تم تعطيله تماماً بسبب الإعدادت الخاطئة';
 $string['commonportfoliosettings'] = 'الإعدادات العامة للمحفظة';
-$string['commonsettingsdesc'] = '<p> تعتمد مدة  نقل إذا ما كانت "متوسطة" أو "عالية" على ما إذا كان المستخدم قادر على الانتظار لاستكمال النقل أم لا. </ P> <P> إذا كانت مدة النقل \'معتدل "فستحدث على الفور دون إذن المستخدم ، أما إذا كانت المدة " معتدل "و" عالي "يعني أن المستخدم يُمنح الخيار لكن يتم التحذير من أن الأمر قد يستغرق بعض الوقت. </ P> <P> وبالإضافة إلى ذلك، بعض الإضافات  قد تتجاهل هذا الخيار تماماً، وإجبار جميع عمليات النقل هذه في قائمة الانتظار. </ P>';
+$string['commonsettingsdesc'] = '<p>تغير مدة النقل فيما إذا كانت \'معتدلة\' أو \'عالية\' على مدى قدرة المستخدم على الانتظار لاستكمالها أم لا. </P> <P> الأحجام حتى عتبة مدة النقل \'معتدلة\' ستحدث على الفور دون السؤال من المستخدم، أما إذا كانت المدة \'عالية\' فمعناها أن المستخدم سيُمنح الخيار لكن مع تنبيهه بأن الأمر قد يستغرق بعض الوقت. </P><P> فضلاً عن ذلك، بعض ملاحق المحافظ قد تتجاهل هذا الخيار تماماً، وتفرض وضع كل عمليات النقل في طابور الانتظار. </P>';
 $string['configexport'] = 'تهيئة البيانات التي تم تصديرها';
-$string['configplugin'] = 'تهيئة ملحق الحافظة';
+$string['configplugin'] = 'تهيئة البرنامج المساعد الحافظة';
 $string['configure'] = 'تهيئة';
 $string['confirmcancel'] = 'هل أنت متأكد من رغبتك بإلغاء هذا التصدير؟';
 $string['confirmexport'] = 'الرجاء تأكيد هذا التصدير';
@@ -79,7 +79,7 @@ $string['format_image'] = 'صورة';
 $string['format_leap2a'] = 'تصميم المحفظة هو  Leap2A';
 $string['format_mbkp'] = 'تنسيق الحفظ الاحتياطي لمودل';
 $string['format_pdf'] = 'PDF';
-$string['format_plainhtml'] = 'HTML';
+$string['format_plainhtml'] = 'أتش تي إم إل HTML';
 $string['format_presentation'] = 'عرض';
 $string['format_richhtml'] = 'HTML مع المرفقات';
 $string['format_spreadsheet'] = 'جداول';

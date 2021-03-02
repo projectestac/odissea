@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mimetypes', language 'zh_cn', version '3.8'.
  *
- * @package   mimetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mimetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,13 +42,13 @@ $string['application/vnd.openxmlformats-officedocument.presentationml.slideshow'
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] = 'Excel 2007 电子表格';
 $string['application/vnd.openxmlformats-officedocument.spreadsheetml.template'] = 'Excel 2007 模板';
 $string['application/vnd.openxmlformats-officedocument.wordprocessingml.document'] = 'Word 2007 文档';
-$string['application/xhtml_xml'] = 'XHTML 文档';
 $string['application/x-iwork-keynote-sffkey'] = 'iWork 主旨演讲';
 $string['application/x-iwork-numbers-sffnumbers'] = 'iWork 数字电子表格';
 $string['application/x-iwork-pages-sffpages'] = 'iWork Pages 文字处理文档';
 $string['application/x-javascript'] = 'JavaScript 源';
 $string['application/x-mspublisher'] = '公开发布文档';
 $string['application/x-shockwave-flash'] = 'flash 动画';
+$string['application/xhtml_xml'] = 'XHTML 文档';
 $string['archive'] = '存档（{$a->EXT}）';
 $string['audio'] = '音频文件（{$a->EXT}）';
 $string['default'] = '{$a->mimetype}';

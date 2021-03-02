@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'timezones', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'timezones', language 'fr', version '3.8'.
  *
- * @package   timezones
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     timezones
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -130,8 +130,8 @@ $string['america/dominica'] = 'Amérique/Dominique';
 $string['america/edmonton'] = 'Amérique/Edmonton';
 $string['america/eirunepe'] = 'Amérique/Eirunepé';
 $string['america/el_salvador'] = 'Amérique/El Salvador';
-$string['america/fortaleza'] = 'Amérique/Fortaleza';
 $string['america/fort_nelson'] = 'Amérique/Fort Nelson';
+$string['america/fortaleza'] = 'Amérique/Fortaleza';
 $string['america/glace_bay'] = 'Amérique/Glace Bay';
 $string['america/godthab'] = 'Amérique/Godthåb';
 $string['america/goose_bay'] = 'Amérique/Goose Bay';
@@ -148,11 +148,11 @@ $string['america/indiana/indianapolis'] = 'Amérique/Indiana/Indianapolis';
 $string['america/indiana/knox'] = 'Amérique/Indiana/Knox';
 $string['america/indiana/marengo'] = 'Amérique/Indiana/Marengo';
 $string['america/indiana/petersburg'] = 'Amérique/Indiana/Petersburg';
-$string['america/indianapolis'] = 'Amérique/Indianapolis';
 $string['america/indiana/tell_city'] = 'Amérique/Indiana/Tell City';
 $string['america/indiana/vevay'] = 'Amérique/Indiana/Vevay';
 $string['america/indiana/vincennes'] = 'Amérique/Indiana/Vincennes';
 $string['america/indiana/winamac'] = 'Amérique/Indiana/Winamac';
+$string['america/indianapolis'] = 'Amérique/Indianapolis';
 $string['america/inuvik'] = 'Amérique/Inuvik';
 $string['america/iqaluit'] = 'Amérique/Iqaluit';
 $string['america/jamaica'] = 'Amérique/Jamaica';
@@ -342,8 +342,8 @@ $string['atlantic/faroe'] = 'Atlantique/Féroé';
 $string['atlantic/madeira'] = 'Atlantique/Madère';
 $string['atlantic/reykjavik'] = 'Atlantique/Reykjavík';
 $string['atlantic/south_georgia'] = 'Atlantique/Géorgie du Sud';
-$string['atlantic/stanley'] = 'Atlantique/Stanley';
 $string['atlantic/st_helena'] = 'Atlantique/Sainte-Hélène';
+$string['atlantic/stanley'] = 'Atlantique/Stanley';
 $string['australia/adelaide'] = 'Australie/Adélaïde';
 $string['australia/brisbane'] = 'Australie/Brisbane';
 $string['australia/broken_hill'] = 'Australie/Broken Hill';

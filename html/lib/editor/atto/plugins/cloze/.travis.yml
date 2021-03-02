@@ -33,6 +33,16 @@ matrix:
       - MOODLE_BRANCH=master
       - DB=pgsql
 
+    - php: 7.4
+      env:
+      - MOODLE_BRANCH=MOODLE_310_STABLE
+      - DB=pgsql
+
+    - php: 7.4
+      env:
+      - MOODLE_BRANCH=MOODLE_39_STABLE
+      - DB=pgsql
+
     - php: 7.3
       env:
       - MOODLE_BRANCH=MOODLE_38_STABLE
@@ -52,8 +62,9 @@ before_install:
   - phpenv config-rm xdebug.ini
   - nvm install 14.1
   - nvm use 14.1
+  - npm install -g grunt-cli
   - cd ../..
-  - composer create-project -n --no-dev --prefer-dist moodlerooms/moodle-plugin-ci ci
+  - composer create-project -n --no-dev --prefer-dist moodlehq/moodle-plugin-ci ci
   - export PATH="$(cd ci/bin; pwd):$(cd ci/vendor/bin; pwd):$PATH"
 
 install:

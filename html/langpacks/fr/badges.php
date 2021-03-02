@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'fr', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activatesuccess'] = 'L\'accès aux badges a été activé.';
 $string['addalignment'] = 'Ajouter une aptitude externe ou un standard';
 $string['addbackpack'] = 'Ajouter sac à badges';
 $string['addbadge'] = 'Ajouter des badges';
-$string['addbadgecriteria'] = 'Ajouter un critère de badge';
 $string['addbadge_help'] = 'Sélectionner tous les badges devant être ajoutés comme requis pour obtenir ce badge. Utilisez la touche CTRL ou CMD pour sélectionner plusieurs éléments.';
+$string['addbadgecriteria'] = 'Ajouter un critère de badge';
 $string['addcohort'] = 'Ajouter une cohorte';
 $string['addcohort_help'] = 'Sélectionner toutes les cohortes à ajouter à ce critère de badge. Les sélections multiples sont possibles.';
 $string['addcompetency'] = 'Ajouter une compétence';
@@ -101,9 +101,9 @@ $string['backpackbadgessettings'] = 'Modifier les réglages du sac à badges';
 $string['backpackbadgessummary'] = 'Vous avez {$a->totalbadges} badge(s) affichés, tirés de {$a->totalcollections} collection(s).';
 $string['backpackcannotsendverification'] = 'Impossible d\'envoyer le courriel de vérification';
 $string['backpackconnection'] = 'Connexion sac à badges';
+$string['backpackconnection_help'] = 'La connexion à un sac à badge vous permet de partager vos badges obtenus sur ce site et d\'afficher des badges externes sur votre page de profil de ce site.';
 $string['backpackconnectioncancelattempt'] = 'Se connecter avec une adresse de courriel différente';
 $string['backpackconnectionconnect'] = 'Se connecter au sac à badges';
-$string['backpackconnection_help'] = 'La connexion à un sac à badge vous permet de partager vos badges obtenus sur ce site et d\'afficher des badges externes sur votre page de profil de ce site.';
 $string['backpackconnectionnottested'] = 'La connexion à ce sac à badges ne peut pas être testée : seuls les sacs à badges Open Badges v2.0 le permettent.';
 $string['backpackconnectionok'] = 'Connexion au sac à badges établie avec succès';
 $string['backpackconnectionresendemail'] = 'Envoyer à nouveau le courriel de vérification';
@@ -211,8 +211,6 @@ $string['criteria_8'] = 'Appartenance à une cohorte';
 $string['criteria_8_help'] = 'Permet de décerner un badge à des utilisateurs sur la base de leur appartenance à une cohorte.';
 $string['criteria_9'] = 'Compétences';
 $string['criteria_9_help'] = 'Permet de décerner un badge à des utilisateurs sur la base de compétences qu\'ils ont acquises.';
-$string['criteriacreated'] = 'Critère de badge créé';
-$string['criteriadeleted'] = 'Critère de badge supprimé';
 $string['criteria_descr'] = 'Les participants se voient décerner ce badge lorsqu\'ils satisfont les critères suivants :';
 $string['criteria_descr_0'] = 'Les participants se voient décerner ce badge lorsqu\'ils satisfont <strong>{$a}</strong> des critères listés.';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> des activités suivantes sont achevées :';
@@ -250,6 +248,8 @@ $string['criteria_descr_single_short6'] = 'Renseigné :';
 $string['criteria_descr_single_short7'] = 'Achevé :';
 $string['criteria_descr_single_short8'] = 'Membre de :';
 $string['criteria_descr_single_short9'] = 'Acquises :';
+$string['criteriacreated'] = 'Critère de badge créé';
+$string['criteriadeleted'] = 'Critère de badge supprimé';
 $string['criteriasummary'] = 'Résumé des critères';
 $string['criteriaupdated'] = 'Critère de badge modifié';
 $string['criterror'] = 'Problèmes des paramètres actuels';
@@ -282,7 +282,7 @@ $string['enablebadges'] = 'Activer les badges';
 $string['endorsement'] = 'Approbation';
 $string['error:backpackdatainvalid'] = 'Les données retournées par le sac à badges ne sont pas valides.';
 $string['error:backpackemailnotfound'] = 'L\'adresse de courriel « {$a} » n\'est pas associée à un sac à badges. Vous devez <a href="http://backpack.openbadges.org">créer un sac à badges</a> pour ce compte ou vous connecter avec une autre adresse de courriel.';
-$string['error:backpacknotavailable'] = 'Votre site ne peut pas être atteint via l\'internet. Tous les badges décernés sur ce site ne pourront pas être vérifiés par des services de sacs à badges externes.';
+$string['error:backpacknotavailable'] = 'Votre site ne peut pas être atteint via Internet. Tous les badges décernés sur ce site ne pourront pas être vérifiés par des services de sacs à badges externes.';
 $string['error:backpackproblem'] = 'Un problème est survenu lors de la connexion avec votre fournisseur de sac à badges. Veuillez ré-essayer plus tard.';
 $string['error:badgeawardnotfound'] = 'Impossible de vérifier le badge décerné. Ce badge a peut-être été révoqué.';
 $string['error:badgenotfound'] = 'Badge non trouvé';

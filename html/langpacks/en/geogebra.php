@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'geogebra', language 'en', version '3.8'.
  *
- * @package   geogebra
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     geogebra
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,32 +54,36 @@ $string['extractedfromggb'] = 'extracted files from ggb';
 $string['filename'] = 'Filename';
 $string['filenotfound'] = 'Specified file doesn\'t exist';
 $string['filetype'] = 'Type';
-$string['filetypeexternal'] = 'External URL';
 $string['filetype_help'] = 'This setting determines how the GeoGebra activity is included in the course. There are up to 2 options:
 
 * Uploaded GeoGebra - Enables a valid ".ggb" package to be chosen by the file picker.
 * External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid ".ggb" file.';
+$string['filetypeexternal'] = 'External URL';
 $string['filetypelocal'] = 'Uploaded file';
 $string['firstattempt'] = 'First attempt';
 $string['for'] = 'for';
 $string['functionalityoptionsgrp'] = 'Functionality';
 $string['geogebra:addinstance'] = 'Add GeoGebra';
-$string['geogebrafile'] = 'GeoGebra file';
-$string['geogebrafile_help'] = 'The .ggb file.';
 $string['geogebra:grade'] = 'Grade GeoGebra';
 $string['geogebra:submit'] = 'Submit GeoGebra';
+$string['geogebra:view'] = 'View GeoGebra';
+$string['geogebrafile'] = 'GeoGebra file';
+$string['geogebrafile_help'] = 'The .ggb file.';
 $string['geogebraurl'] = 'URL';
 $string['geogebraurl_help'] = 'Find the construction on <a href="https://www.geogebra.org/" target="_blank">geogebra.org</a>, go to <strong>Details</strong>, right click on <strong>Download</strong> and select <strong>Copy link address</strong>. Finally, go to the URL field and paste the link with <strong>Ctrl+V</strong>.<br/>See a step-by-step example in: <a href="https://youtu.be/qbp-RuM4NpU" target="_blank">https://youtu.be/qbp-RuM4NpU</a>.';
-$string['geogebra:view'] = 'View GeoGebra';
 $string['grade'] = 'Grade';
 $string['gradeit'] = 'Grade';
 $string['grademethod'] = 'Grading Method';
+$string['header_geogebra'] = 'GeoGebra Settings';
+$string['header_score'] = 'Avaluation Settings';
 $string['height'] = 'Height';
 $string['highestattempt'] = 'Highest attempt';
 $string['httpnotallowed'] = 'At the moment is not allowed to use external files';
 $string['interfaceoptionsgrp'] = 'User interface';
 $string['invalidgeogebrafile'] = 'Invalid GeoGebra specified. It must have the ".ggb" extension.';
 $string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".ggb" file.';
+$string['javacodebase'] = 'GeoGebra codebase';
+$string['javacodebase_help'] = 'GeoGebra jar files URL';
 $string['language'] = 'Language';
 $string['lastattempt'] = 'Last attempt';
 $string['lastattemptremaining'] = 'This is your last attempt for this activity';
@@ -132,9 +136,9 @@ $string['settings'] = 'Settings';
 $string['showAlgebraInput'] = 'Show inputbar';
 $string['showMenuBar'] = 'Show menubar';
 $string['showResetIcon'] = 'Show icon to reset construction';
-$string['showsubmit'] = 'Show submit button';
 $string['showToolBar'] = 'Show toolbar';
 $string['showToolBarHelp'] = 'Show toolbar help';
+$string['showsubmit'] = 'Show submit button';
 $string['status'] = 'Estat';
 $string['submitandfinish'] = 'Submit and finish';
 $string['timing'] = 'Timing';
@@ -152,5 +156,6 @@ $string['viewattempt'] = 'View';
 $string['viewattempts'] = 'View attemtps';
 $string['viewattempttab'] = 'View attempt';
 $string['viewtab'] = 'View';
+$string['warningnojava'] = 'This is a Java Applet created using GeoGebra from www.geogebra.org - it looks like you don\'t have Java installed, please go to www.java.com';
 $string['weight'] = 'Weight';
 $string['width'] = 'Width';

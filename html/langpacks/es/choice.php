@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'es', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,24 +34,24 @@ $string['calendarend'] = '{$a} cierran';
 $string['calendarstart'] = '{$a} abren';
 $string['cannotsubmit'] = 'Lo lamentamos, se ha producido un error con el envío de su respuesta. Por favor inténtelo de nuevo.';
 $string['choice'] = 'Opción';
-$string['choiceactivityname'] = 'Consulta: {$a}';
 $string['choice:addinstance'] = 'Añadir una nueva opción';
 $string['choice:choose'] = 'Registrar una elección';
-$string['choiceclose'] = 'Permite respuestas hasta';
-$string['choicecloseson'] = 'La consulta se cierra el {$a}';
 $string['choice:deleteresponses'] = 'Modificar y eliminar respuestas';
 $string['choice:downloadresponses'] = 'Descargar respuestas';
+$string['choice:readresponses'] = 'Ver respuestas';
+$string['choice:view'] = 'Ver actividad de consulta';
+$string['choiceactivityname'] = 'Consulta: {$a}';
+$string['choiceclose'] = 'Permite respuestas hasta';
+$string['choicecloseson'] = 'La consulta se cierra el {$a}';
 $string['choicefull'] = 'Esta opción está completa y no hay espacios disponibles.';
 $string['choicename'] = 'Título de la consulta';
 $string['choiceopen'] = 'Permitir respuestas a partir de';
 $string['choiceoptions'] = 'Opciones de la Consulta';
-$string['choiceoptions_help'] = '<P>Aquí es donde usted especifica las opciones que los participantes tienen para escoger.
-<P>Puede rellenar cualquier número de éstas, es decir, puede dejar alguna en blanco si
-no necesita las 6 opciones. Las opciones no rellenadas no aparecerán en el cuestionario.';
-$string['choice:readresponses'] = 'Ver respuestas';
+$string['choiceoptions_help'] = 'Aquí es donde usted especifica las opciones que los participantes tienen para escoger.
+
+Puede rellenar cualquier número de éstas. Si deja alguna en blanco, no aparecerá en el cuestionario. Si necesita más de 8 opciones, haga clic en el botón "Espacios en blanco para 3 opciones más".';
 $string['choicesaved'] = 'Su elección ha sido guardada';
-$string['choicetext'] = 'Pregunta a responder';
-$string['choice:view'] = 'Ver actividad de consulta';
+$string['choicetext'] = 'Texto de la opción';
 $string['chooseaction'] = 'Elija una acción ...';
 $string['chooseoption'] = 'Cambiar a: {$a}';
 $string['closebeforeopen'] = 'Has especificado una fecha de cierre previa a la de la fecha de apertura.';
@@ -72,13 +72,13 @@ $string['full'] = '(Lleno)';
 $string['havetologin'] = 'Debe entrar antes de remitir su elección';
 $string['includeinactive'] = 'Incluir respuestas de usuarios inactivos/suspendidos';
 $string['indicator:cognitivedepth'] = 'Elección cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Elección.';
 $string['indicator:cognitivedepthdef'] = 'Elección cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje de compromiso cognitivo ofrecido por las actividades de Elección durante este intervalo de análisis (Niveles = Sin ver, Ver, Enviar, Ver retroalimentación)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Elección.';
 $string['indicator:socialbreadth'] = 'Consulta social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Consulta.';
 $string['indicator:socialbreadthdef'] = 'Consulta social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por las actividades de Consulta durante este intervalo de análisis (Niveles = Sin participación, Participante solo, Participante con otros)';
-$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Consulta.';
 $string['limit'] = 'Límite';
 $string['limitanswers'] = 'Limitar el número de respuestas permitidas';
 $string['limitanswers_help'] = '<p>Esta opción le permite limitar el número de participantes que

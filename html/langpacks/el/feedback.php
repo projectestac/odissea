@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'el', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,15 +48,15 @@ $string['cannotsavetempl'] = 'Η αποθήκευση υποδειγμάτων �
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Το Captcha δεν έχει ρυθμιστεί.';
 $string['check'] = 'Πολλαπλών επιλογών - πολλαπλών απαντήσεων';
-$string['checkbox'] = 'Πολλαπλών επιλογών - επιτρέπονται οι πολλαπλές απαντήσεις (επιλέξτε κουτάκια)';
 $string['check_values'] = 'Πιθανές αποκρίσεις';
+$string['checkbox'] = 'Πολλαπλών επιλογών - επιτρέπονται οι πολλαπλές απαντήσεις (επιλέξτε κουτάκια)';
 $string['choosefile'] = 'Επιλέξτε ένα αρχείο';
 $string['chosen_feedback_response'] = 'Επιλεγμένη απόκριση ανατροφοδότησης';
 $string['closebeforeopen'] = 'Έχετε ορίσει ημερομηνία λήξης πριν από την ημερομηνία έναρξης.';
+$string['complete_the_form'] = 'Απαντήστε στις ερωτήσεις';
 $string['completed'] = 'Ολοκληρώθηκε';
 $string['completed_feedbacks'] = 'Απαντήσεις που έχουν υποβληθεί';
 $string['completedon'] = 'Ολοκληρώθηκε στις {$a}';
-$string['complete_the_form'] = 'Απαντήστε στις ερωτήσεις';
 $string['completionsubmit'] = 'Εμφάνιση ως ολοκληρωμένου αν η ανατροφοδότηση υποβληθεί';
 $string['configallowfullanonymous'] = 'Αν οριστεί σε «ναι», οι χρήστες μπορούν να ολοκληρώσουν μια δραστηριότητα ανατροφοδότησης στην αρχική σελίδα χωρίς να απαιτείται να συνδεθούν.';
 $string['confirmdeleteentry'] = 'Σίγουρα θέλετε να διαγράψετε αυτή την καταχώρηση;';
@@ -96,11 +96,11 @@ $string['dependvalue'] = 'Τιμή εξάρτησης';
 $string['description'] = 'Περιγραφή';
 $string['do_not_analyse_empty_submits'] = 'Να μην αναλύονται κενές υποβολές εργασιών';
 $string['downloadresponseas'] = 'Κάντε λήψη όλων των αποκρίσεων ως:';
+$string['drop_feedback'] = 'Διαγραφή από αυτό το μάθημα';
 $string['dropdown'] = 'Πολλαπλών επιλογών - επιτρέπεται μια απάντηση (πτυσσόμενο μενού)';
+$string['dropdown_values'] = 'Απαντήσεις';
 $string['dropdownlist'] = 'Πολλαπλών επιλογών - μια απάντηση (πτυσσόμενο μενού)';
 $string['dropdownrated'] = 'Πτυσσόμενο μενού (βαθμολογημένο)';
-$string['dropdown_values'] = 'Απαντήσεις';
-$string['drop_feedback'] = 'Διαγραφή από αυτό το μάθημα';
 $string['edit_item'] = 'Επεξεργασία ερώτησης';
 $string['edit_items'] = 'Επεξεργασία ερωτήσεων';
 $string['email_notification'] = 'Ενεργοποίηση αποστολής ειδοποιήσεων (μέσω ηλε.ταχυδρομείου) για υποβολές εργασιών';
@@ -113,41 +113,41 @@ $string['eventresponsesubmitted'] = 'Η απόκριση υποβλήθηκε';
 $string['export_questions'] = 'Εξαγωγή ερωτήσεων';
 $string['export_to_excel'] = 'Εξαγωγή σε Excel';
 $string['feedback:addinstance'] = 'Προσθήκη νέας ανατροφοδότησης';
-$string['feedbackclose'] = 'Επιτρέπονται απαντήσεις μέχρι';
 $string['feedback:complete'] = 'Ολοκληρώστε μια ανατροφοδότηση';
-$string['feedbackcompleted'] = 'Ο/Η χρήστης {$a->username} ολοκλήρωσε την ανατροφοδότηση {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Δημιουργία ιδιωτικού υποδείγματος';
 $string['feedback:createpublictemplate'] = 'Δημιουργία δημόσιου υποδείγματος';
 $string['feedback:deletesubmissions'] = 'Διαγραφή ολοκληρωμένων υποβολών';
 $string['feedback:deletetemplate'] = 'Διαγραφή υποδείγματος';
 $string['feedback:edititems'] = 'Επεξεργασία στοιχείων';
-$string['feedback_is_not_for_anonymous'] = 'Η ανατροφοδότηση δεν επιτρέπεται σε ανώνυμους χρήστες';
-$string['feedback_is_not_open'] = 'Η ανατροφοδότηση δεν είναι ανοιχτή';
-$string['feedback:mapcourse'] = 'Αντιστοίχιση μαθημάτων σε καθολικές ανατροφοδοτήσεις (ιστοτόπου)';
-$string['feedbackopen'] = 'Επιτρέπονται απαντήσεις από';
+$string['feedback:mapcourse'] = 'Αντιστοίχιση μαθημάτων σε καθολική ανατροφοδότηση (ιστοτόπου)';
 $string['feedback:receivemail'] = 'Λήψη ειδοποιήσεων ηλε.ταχυδρομείου';
 $string['feedback:view'] = 'Εμφάνιση μιας ανατροφοδότησης';
 $string['feedback:viewanalysepage'] = 'Εμφάνιση της σελίδας ανάλυσης μετά την υποβολή';
 $string['feedback:viewreports'] = 'Εμφάνιση αναφορών';
+$string['feedback_is_not_for_anonymous'] = 'Η ανατροφοδότηση δεν επιτρέπεται σε ανώνυμους χρήστες';
+$string['feedback_is_not_open'] = 'Η ανατροφοδότηση δεν είναι ανοιχτή';
+$string['feedbackclose'] = 'Επιτρέπονται απαντήσεις μέχρι';
+$string['feedbackcompleted'] = 'Ο/Η χρήστης {$a->username} ολοκλήρωσε την ανατροφοδότηση {$a->feedbackname}';
+$string['feedbackopen'] = 'Επιτρέπονται απαντήσεις από';
 $string['file'] = 'Αρχείο';
 $string['filter_by_course'] = 'Φιλτράρισμα βάσει μαθήματος';
 $string['handling_error'] = 'Ένα σφάλμα συνέβη στο χειρισμό ενεργειών του αρθρώματος ανατροφοδότησης';
 $string['hide_no_select_option'] = 'Απόκρυψη της επιλογής «Δεν έχει επιλεγεί»';
 $string['horizontal'] = 'Οριζόντια';
-$string['importfromthisfile'] = 'Εισαγωγή από αυτό το αρχείο';
 $string['import_questions'] = 'Εισαγωγή ερωτήσεων';
 $string['import_successfully'] = 'Εισαγωγή επιτυχημένη';
+$string['importfromthisfile'] = 'Εισαγωγή από αυτό το αρχείο';
 $string['includeuserinrecipientslist'] = 'Συμπερίληψη {$a} στη λίστα των παραληπτών';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Ανατροφοδότησης';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Ανατροφοδότησης.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Ανατροφοδότησης';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες ανατροφοδότησης κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση, Υποβολή)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Ανατροφοδότησης.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Ανατροφοδότησης';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Ανατροφοδότησης.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Ανατροφοδότησης';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες ανατροφοδότησης κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος, Συμμετέχων με άλλους)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Ανατροφοδότησης.';
 $string['info'] = 'Πληροφορίες';
 $string['infotype'] = 'Τύπος πληροφοριών';
 $string['insufficient_responses'] = 'ανεπαρκείς αποκρίσεις';
@@ -184,24 +184,25 @@ $string['modulename_link'] = 'άρθρωμα/ανατροφοδότηση/εμφ
 $string['modulenameplural'] = 'Ανατροφοδοτήσεις';
 $string['move_item'] = 'Μετακίνηση αυτής της ερώτησης';
 $string['multichoice'] = 'Πολλαπλών επιλογών';
+$string['multichoice_values'] = 'Τιμές πολλαπλής επιλογής';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->name}';
 $string['multichoicerated'] = 'Πολλαπλών επιλογών (βαθμολογημένη)';
 $string['multichoicetype'] = 'Τύπος πολλαπλής επιλογής';
-$string['multichoice_values'] = 'Τιμές πολλαπλής επιλογής';
 $string['multiplesubmit'] = 'Επιτρέπονται πολλαπλές υποβολές';
 $string['multiplesubmit_help'] = 'Αν ενεργοποιηθεί για ανώνυμες έρευνες, οι χρήστες μπορούν να υποβάλουν ανατροφοδότηση απεριόριστες φορές.';
 $string['name'] = 'Όνομα';
 $string['name_required'] = 'Απαιτείται όνομα';
+$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['next_page'] = 'Επόμενη σελίδα';
 $string['no_handler'] = 'Δεν υπάρχει χειριστής ενέργειας για';
 $string['no_itemlabel'] = 'Καμία ταμπέλα';
 $string['no_itemname'] = 'Χωρίς itemname';
 $string['no_items_available_yet'] = 'Δεν έχουν ρυθμιστεί ερωτήσεις ακόμα';
+$string['no_templates_available_yet'] = 'Δεν υπάρχουν διαθέσιμα υποδείγματα ακόμα';
 $string['non_anonymous'] = 'Το όνομα του χρήστη θα καταγραφεί και θα εμφανίζεται με τις απαντήσεις';
 $string['non_anonymous_entries'] = 'Χωρίς ανώνυμες καταχωρήσεις ({$a})';
 $string['non_respondents_students'] = 'Μαθητές που δεν απάντησαν ({$a})';
 $string['not_completed_yet'] = 'Δεν έχουν ολοκληρωθεί ακόμα';
-$string['no_templates_available_yet'] = 'Δεν υπάρχουν διαθέσιμα υποδείγματα ακόμα';
 $string['not_selected'] = 'Δεν έχουν επιλεχθεί';
 $string['not_started'] = 'Δεν ξεκίνησαν';
 $string['numberoutofrange'] = 'Αριθμός εκτός εύρους';
@@ -215,9 +216,9 @@ $string['only_one_captcha_allowed'] = 'Μόνο ένα captcha επιτρέπε�
 $string['openafterclose'] = 'Έχετε ορίσει ημερομηνία έναρξης μετά την ημερομηνία λήξης';
 $string['overview'] = 'Επισκόπηση';
 $string['page'] = 'Σελίδα';
+$string['page-mod-feedback-x'] = 'Σελίδα οποιουδήποτε αρθρώματος ανατροφοδότησης';
 $string['page_after_submit'] = 'Μήνυμα ολοκλήρωσης';
 $string['pagebreak'] = 'Διαχωριστής σελίδας';
-$string['page-mod-feedback-x'] = 'Σελίδα οποιουδήποτε αρθρώματος ανατροφοδότησης';
 $string['pluginadministration'] = 'Διαχείριση ανατροφοδότησης';
 $string['pluginname'] = 'Ανατροφοδότηση';
 $string['position'] = 'Θέση';
@@ -225,11 +226,11 @@ $string['previous_page'] = 'Προηγούμενη σελίδα';
 $string['privacy:metadata:completed'] = 'Ένα ιστορικό των υποβολών στην ανατροφοδότηση';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Εάν η υποβολή πρόκειται να χρησιμοποιηθεί ανώνυμα.';
 $string['privacy:metadata:completed:timemodified'] = 'Πότε τροποποιήθηκε τελευταία η υποβολή.';
-$string['privacy:metadata:completedtmp'] = 'Ένα ιστορικό των υποβολών που βρίσκονται ακόμη σε εξέλιξη.';
 $string['privacy:metadata:completed:userid'] = 'Το αναγνωριστικό του χρήστη που ολοκλήρωσε τη δραστηριότητα ανατροφοδότησης.';
+$string['privacy:metadata:completedtmp'] = 'Ένα ιστορικό των υποβολών που βρίσκονται ακόμη σε εξέλιξη.';
 $string['privacy:metadata:value'] = 'Ένα ιστορικό απαντήσεων σε μια ερώτηση.';
-$string['privacy:metadata:valuetmp'] = 'Ένα ιστορικό της απάντησης σε μια ερώτηση σε μια υποβολή που βρίσκεται σε εξέλιξη.';
 $string['privacy:metadata:value:value'] = 'Η επιλεγμένη απάντηση.';
+$string['privacy:metadata:valuetmp'] = 'Ένα ιστορικό της απάντησης σε μια ερώτηση σε μια υποβολή που βρίσκεται σε εξέλιξη.';
 $string['public'] = 'Δημόσιο';
 $string['question'] = 'Ερώτηση';
 $string['questionandsubmission'] = 'Ρυθμίσεις ερώτησης και υποβολής';
@@ -270,8 +271,8 @@ $string['switch_item_to_not_required'] = 'Εναλλαγή σε: δεν απαι
 $string['switch_item_to_required'] = 'Εναλλαγή σε: απαιτείται απάντηση';
 $string['template'] = 'Υπόδειγμα';
 $string['template_deleted'] = 'Το υπόδειγμα διαγράφηκε';
-$string['templates'] = 'Υποδείγματα';
 $string['template_saved'] = 'Το υπόδειγμα αποθηκεύτηκε';
+$string['templates'] = 'Υποδείγματα';
 $string['textarea'] = 'Μακρύτερες απαντήσεις κειμένου';
 $string['textarea_height'] = 'Αριθμός γραμμών';
 $string['textarea_width'] = 'Πλάτος';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_paypal', language 'pt', version '3.8'.
  *
- * @package   enrol_paypal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_paypal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['cost'] = 'Preço da inscrição';
 $string['costerror'] = 'O preço da inscrição tem que ser um valor numérico';
 $string['costorkey'] = 'Selecione um dos seguintes métodos de inscrição.';
 $string['currency'] = 'Moeda';
-$string['defaultrole'] = 'Atribuição de papel predefinido';
+$string['defaultrole'] = 'Atribuição de papel predefinida';
 $string['defaultrole_desc'] = 'Selecione o papel que deve ser atribuído aos utilizadores nas inscrições PayPal';
 $string['enrolenddate'] = 'Data de fim';
 $string['enrolenddate_help'] = 'Se ativo, os utilizadores apenas podem ser inscritos até esta data.';
@@ -52,11 +52,11 @@ $string['mailstudents'] = 'Notificar alunos por e-mail';
 $string['mailteachers'] = 'Notificar professores por e-mail';
 $string['messageprovider:paypal_enrolment'] = 'Mensagens de inscrição PayPal';
 $string['nocost'] = 'A inscrição nesta disciplina é gratuita!';
-$string['paypalaccepted'] = 'Tipos de pagamentos aceites';
 $string['paypal:config'] = 'Configurar instâncias de inscrição Paypal';
 $string['paypal:manage'] = 'Gerir utilizadores inscritos';
 $string['paypal:unenrol'] = 'Remover inscrições de alunos na disciplina';
 $string['paypal:unenrolself'] = 'Remover a sua inscrição desta disciplina';
+$string['paypalaccepted'] = 'Tipos de pagamentos aceites';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'Este módulo de inscrição permite utilizar o serviço PayPal para configurar disciplinas com acesso pago. Se o preço da disciplina for definido como zero não haverá lugar à cobrança de qualquer valor. Pode ser definido neste módulo um valor genérico a aplicar em todas as disciplinas que usem este módulo. Pode ainda indicar, para cada disciplina individualmente, um valor diferente.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'Informação sobre transações PayPal sobre inscrições PayPal.';

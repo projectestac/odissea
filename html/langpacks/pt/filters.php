@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filters', language 'pt', version '3.8'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,7 +40,7 @@ $string['content'] = 'Conteúdo';
 $string['contentandheadings'] = 'Conteúdo e cabeçalhos';
 $string['coursecategory'] = 'Categoria da disciplina';
 $string['courserole'] = 'Papel na disciplina';
-$string['courserolelabel'] = '{$a->label} é {$a->rolename} em {$a->coursename} de {$a->categoryname}';
+$string['courserolelabel'] = '{$a->label} é {$a->rolename} na {$a->coursename} desde {$a->categoryname}';
 $string['courserolelabelerror'] = '{$a->label} erro: a disciplina {$a->coursename} não existe';
 $string['coursevalue'] = 'Designação da disciplina';
 $string['datelabelisafter'] = '{$a->label} é posterior a {$a->after}';
@@ -52,8 +52,8 @@ $string['doesnotcontain'] = 'não contém';
 $string['endswith'] = 'termina em';
 $string['filterallwarning'] = 'Aplicar filtros aos cabeçalhos e ao conteúdo pode aumentar significativamente a carga no servidor. Pondere a necessidade da sua utilização. A maior ocupação é do filtro multilingue.';
 $string['filtersettings'] = 'Configuração do filtro';
-$string['filtersettingsforin'] = 'Definições do filtro {$a->filter} em {$a->context}';
-$string['filtersettings_help'] = 'Nesta página pode ativar ou desativar os filtros numa área específica do site. Alguns filtros permitem configurações locais, e nesses casos, existirá uma hiperligação ao lado do nome do filtro.';
+$string['filtersettings_help'] = 'Nesta página pode ativar ou desativar os filtros numa área específica do site. Alguns filtros permitem definições locais, nesses casos, existirá uma hiperligação ao lado do nome do filtro.';
+$string['filtersettingsforin'] = 'Definições do filtro  {$a->filter} em {$a->context}';
 $string['filtersettingsin'] = 'Definições de filtros no contexto: {$a}';
 $string['firstaccess'] = 'Primeiro acesso';
 $string['globalrolelabel'] = '{$a->label} é {$a->value}';
@@ -71,9 +71,9 @@ $string['neveraccessed'] = 'Nunca acedido';
 $string['nevermodified'] = 'Nunca alterado';
 $string['newfilter'] = 'Novo filtro';
 $string['nofiltersenabled'] = 'Nenhum módulo de filtro está ativo neste site.';
-$string['off'] = 'Inativo';
-$string['offbutavailable'] = 'Inativo, mas disponível';
-$string['on'] = 'Ativo';
+$string['off'] = 'Desligado';
+$string['offbutavailable'] = 'Desligado, mas disponível';
+$string['on'] = 'Ligado';
 $string['privacy:reason'] = 'O subsistema Filtros não armazena quaisquer dados pessoais.';
 $string['profilefilterfield'] = 'Nome do campo de perfil';
 $string['profilefilterlimiter'] = 'Condição do campo de perfil';

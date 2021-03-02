@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'ja', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,11 +43,11 @@ $string['analytics:listinsights'] = '洞察を一覧表示する';
 $string['analytics:listowninsights'] = '自分の洞察を一覧表示する';
 $string['analytics:managemodels'] = 'モデルを管理する';
 $string['archetype'] = 'ロールアーキタイプ';
+$string['archetype_help'] = 'ロールアーキタイプではロールがデフォルトにリセットされる場合のパーミッションを決定します。同時にサイトがアップグレードされる場合のロールに対する新しいパーミッションすべてを決定します。';
 $string['archetypecoursecreator'] = 'アーキタイプ: コース作成者';
 $string['archetypeeditingteacher'] = 'アーキタイプ: 教師 (編集権限あり)';
 $string['archetypefrontpage'] = 'アーキタイプ: フロントページの認証済みユーザ';
 $string['archetypeguest'] = 'アーキタイプ: ゲスト';
-$string['archetype_help'] = 'ロールアーキタイプではロールがデフォルトにリセットされる場合のパーミッションを決定します。同時にサイトがアップグレードされる場合のロールに対する新しいパーミッションすべてを決定します。';
 $string['archetypemanager'] = 'アーキタイプ: マネージャ';
 $string['archetypestudent'] = 'アーキタイプ: 学生';
 $string['archetypeteacher'] = 'アーキタイプ: 教師 (編集権限なし)';
@@ -285,15 +285,15 @@ $string['legacy:editingteacher'] = 'レガシーロール: 教師 (編集権限�
 $string['legacy:guest'] = 'レガシーロール: ゲスト';
 $string['legacy:student'] = 'レガシーロール: 学生';
 $string['legacy:teacher'] = 'レガシーロール: 教師 (編集権限なし)';
-$string['legacytype'] = 'レガシーロールタイプ';
 $string['legacy:user'] = 'レガシーロール: 認証済みユーザ';
+$string['legacytype'] = 'レガシーロールタイプ';
 $string['listallroles'] = 'すべてのロールを一覧表示する';
 $string['localroles'] = 'ローカルに割り当てられるロール';
 $string['mainadmin'] = '主管理者';
 $string['mainadminset'] = '主管理者に設定する';
 $string['manageadmins'] = 'サイト管理者を管理する';
 $string['manager'] = 'マネージャ';
-$string['managerdescription'] = 'マネージャはコースにアクセスおよび編集することができます。通常、コースに参加することはありません。';
+$string['managerdescription'] = 'マネージャはコースにアクセスおよび編集できますが、通常、コースに参加しません。';
 $string['manageroles'] = 'ロールを管理する';
 $string['maybeassignedin'] = 'このロールが割り当てられるコンテクストタイプ';
 $string['morethan'] = '{$a} 以上';
@@ -316,8 +316,8 @@ $string['novisibleroles'] = 'ロールなし';
 $string['overrideanotherrole'] = '別のロールをオーバーライドする';
 $string['overridecontext'] = 'コンテクストをオーバーライドする';
 $string['overridepermissions'] = 'パーミッションをオーバーライドする';
-$string['overridepermissionsforrole'] = '{$a->context} のロール「 {$a->role} 」のパーミッションをオーバーライドする';
 $string['overridepermissions_help'] = 'パーミッションのオーバーライドは特定のコンテクスト内で選択されたケイパビリティを許可または禁止できるようにします。';
+$string['overridepermissionsforrole'] = '{$a->context} のロール「 {$a->role} 」のパーミッションをオーバーライドする';
 $string['overridepermissionsin'] = '{$a} のパーミッションをオーバーライドする';
 $string['overrideroles'] = 'ロールをオーバーライドする';
 $string['overriderolesin'] = '{$a} のロールをオーバーライドする';
@@ -388,30 +388,30 @@ $string['restore:uploadfile'] = 'バックアップエリアにファイルを�
 $string['restore:userinfo'] = 'ユーザデータをリストアする';
 $string['restore:viewautomatedfilearea'] = '自動バックアップからコースをリストアする';
 $string['risks'] = 'リスク';
+$string['role:assign'] = 'ユーザにロールを割り当てる';
+$string['role:manage'] = 'ロールを作成および管理する';
+$string['role:override'] = '他の人のパーミッションをオーバーライドする';
+$string['role:review'] = '他のユーザのパーミッションをレビューする';
+$string['role:safeoverride'] = '他のユーザのセーフパーミッションをオーバーライドする';
+$string['role:switchroles'] = '別のロールに切り替える';
 $string['roleallowheader'] = 'ロールを許可する:';
 $string['roleallowinfo'] = 'コンテクスト「 {$a->context} 」およびケイパビリティ「 {$a->cap} 」において、許可されるロールのリストに追加されるロールを選択してください:';
-$string['role:assign'] = 'ユーザにロールを割り当てる';
 $string['roleassignments'] = 'ロール割り当て';
 $string['roledefinitions'] = 'ロール定義';
 $string['rolefullname'] = 'ロール名';
 $string['roleincontext'] = '{$a->role} - {$a->context}';
-$string['role:manage'] = 'ロールを作成および管理する';
-$string['role:override'] = '他の人のパーミッションをオーバーライドする';
 $string['roleprohibitheader'] = 'ロールを禁止する';
 $string['roleprohibitinfo'] = 'コンテクスト「 {$a->context} 」およびケイパビリティ「 {$a->cap} 」において、拒否されるロールのリストに追加されるロールを選択してください:';
 $string['rolerepreset'] = 'ロールプリセットを使用する';
 $string['roleresetdefaults'] = 'デフォルト';
 $string['roleresetrole'] = 'ロールまたはアーキタイプを使用する';
-$string['role:review'] = '他のユーザのパーミッションをレビューする';
 $string['rolerisks'] = 'ロールリスク';
 $string['roles'] = 'ロール';
-$string['role:safeoverride'] = '他のユーザのセーフパーミッションをオーバーライドする';
+$string['roles_help'] = 'ロールはシステム全体に定義されたパーミッション群です。あなたは特定のコンテクスト内で特定のユーザにロールを割り当てることができます。';
 $string['roleselect'] = 'ロールを選択する';
 $string['rolesforuser'] = 'ユーザ {$a} のロール';
-$string['roles_help'] = 'ロールはシステム全体に定義されたパーミッション群です。あなたは特定のコンテクスト内で特定のユーザにロールを割り当てることができます。';
 $string['roleshortname'] = '省略名';
 $string['roleshortname_help'] = 'ロール省略名は半角英数字のみ許可される低いレベルのロールIDです。標準ロールの省略名を変更しないでください。';
-$string['role:switchroles'] = '別のロールに切り替える';
 $string['roletoassign'] = '割り当てるロール';
 $string['roletooverride'] = 'オーバーライドするロール';
 $string['safeoverridenotice'] = '注意: あなたはセーフケイパビリティのオーバーライドのみ許可されているため、高いリスクのケイパビリティはロックされています。';
@@ -422,7 +422,6 @@ $string['selectrole'] = 'ロールを選択する';
 $string['showallroles'] = 'すべてのロールを表示する';
 $string['showthisuserspermissions'] = 'このユーザのパーミッションを表示する';
 $string['site:accessallgroups'] = 'すべてのグループにアクセスする';
-$string['siteadministrators'] = 'サイト管理者';
 $string['site:approvecourse'] = 'コース作成を承認する';
 $string['site:backup'] = 'コースをバックアップする';
 $string['site:config'] = 'サイト設定を変更する';
@@ -449,6 +448,7 @@ $string['site:viewfullnames'] = 'ユーザのフルネームを常に表示す�
 $string['site:viewparticipants'] = '参加者を表示する';
 $string['site:viewreports'] = 'レポートを表示する';
 $string['site:viewuseridentity'] = 'リスト内にユーザ固有情報すべてを表示する';
+$string['siteadministrators'] = 'サイト管理者';
 $string['tag:edit'] = '既存のタグを編集する';
 $string['tag:editblocks'] = 'タグページのブロックを編集する';
 $string['tag:flag'] = '不適切な内容としてタグ付けする';
@@ -473,12 +473,6 @@ $string['user:manageownfiles'] = '自分のプライベートファイルエリ�
 $string['user:managesyspages'] = 'パブリックユーザプロファイルのデフォルトページレイアウトを設定する';
 $string['user:readuserblogs'] = 'すべてのユーザブログを表示する';
 $string['user:readuserposts'] = 'すべてのユーザフォーラム投稿を表示する';
-$string['usersfrom'] = '{$a} からのユーザ';
-$string['usersfrommatching'] = '「 {$a->search} 」に合致する {$a->contextname} からのユーザ';
-$string['usersinthisx'] = 'この {$a} 内のユーザ';
-$string['usersinthisxmatching'] = '「 {$a->search} 」に合致するこの {$a->contexttype} 内のユーザ';
-$string['userswithrole'] = 'ロールのすべてのユーザ';
-$string['userswiththisrole'] = 'ロールのユーザ';
 $string['user:update'] = 'ユーザプロファイルを更新する';
 $string['user:viewalldetails'] = 'ユーザ情報すべてを表示する';
 $string['user:viewdetails'] = 'ユーザプロファイルを表示する';
@@ -486,6 +480,12 @@ $string['user:viewhiddendetails'] = '非表示のユーザ詳細を表示する'
 $string['user:viewlastip'] = 'ユーザの最新IPアドレスを表示する';
 $string['user:viewuseractivitiesreport'] = 'ユーザの活動レポートを表示する';
 $string['user:viewusergrades'] = 'ユーザの評定を表示する';
+$string['usersfrom'] = '{$a} からのユーザ';
+$string['usersfrommatching'] = '「 {$a->search} 」に合致する {$a->contextname} からのユーザ';
+$string['usersinthisx'] = 'この {$a} 内のユーザ';
+$string['usersinthisxmatching'] = '「 {$a->search} 」に合致するこの {$a->contexttype} 内のユーザ';
+$string['userswithrole'] = 'ロールのすべてのユーザ';
+$string['userswiththisrole'] = 'ロールのユーザ';
 $string['useshowadvancedtochange'] = '変更するには「拡張要素を表示する」を使用してください。';
 $string['viewingdefinitionofrolex'] = 'ロール「 {$a} 」定義の表示';
 $string['viewrole'] = 'ロール詳細を表示する';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'ja', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,6 +117,12 @@ $string['choosefilefromcoursebackup'] = 'コースバックアップエリア';
 $string['choosefilefromcoursebackup_help'] = 'デフォルト設定を使用したコースバックアップがここに保存されます。';
 $string['choosefilefromuserbackup'] = 'ユーザプライベートバックアップエリア';
 $string['choosefilefromuserbackup_help'] = 'ユーザ情報を匿名化したバックアップファイルがここに保存されます。';
+$string['config_keep_groups_and_groupings'] = 'デフォルトで現在のグループおよびグルーピングを保持します。';
+$string['config_keep_roles_and_enrolments'] = 'デフォルトで現在のロールおよび登録を保持します。';
+$string['config_overwrite_conf'] = 'ユーザが現在のコース設定を上書きできるようにします。';
+$string['config_overwrite_course_fullname'] = 'デフォルトではバックアップファイルからコースフルネームを上書きします。これには「コース設定を上書きする」をチェックして現在のユーザにコースフルネームを変更するケイパビリティ(moodle/course:changefullname) が割り当てられている必要があります。';
+$string['config_overwrite_course_shortname'] = 'デフォルトではバックアップファイルからコース省略名を上書きします。これには「コース設定を上書きする」をチェックして現在のユーザにコース省略名を変更するケイパビリティ(moodle/course:changeshortname) が割り当てられている必要があります。';
+$string['config_overwrite_course_startdate'] = 'デフォルトではバックアップファイルからコース開始日を上書きします。これには「コース設定を上書きする」をチェックして現在のユーザにコース開始日を変更するケイパビリティ(moodle/restore:rolldates) が割り当てられている必要があります。';
 $string['configgeneralactivities'] = '活動をバックアップに含むかどうかデフォルトを設定します。';
 $string['configgeneralanonymize'] = 'この設定を有効にした場合、ユーザに関する情報がデフォルトで匿名化されます。';
 $string['configgeneralbadges'] = 'バッジをバックアップに含むかどうかデフォルトを設定します。';
@@ -133,13 +139,7 @@ $string['configgeneralquestionbank'] = 'この設定を有効にした場合、�
 $string['configgeneralroleassignments'] = 'この設定を有効にした場合、デフォルトのロール割り当てもバックアップに含まれます。';
 $string['configgeneralusers'] = 'バックアップにユーザを含むかどうかデフォルトを設定します。';
 $string['configgeneraluserscompletion'] = 'ユーザ完了情報をバックアップに含むかどうかデフォルトを設定します。';
-$string['config_keep_groups_and_groupings'] = 'デフォルトで現在のグループおよびグルーピングを保持します。';
-$string['config_keep_roles_and_enrolments'] = 'デフォルトで現在のロールおよび登録を保持します。';
 $string['configloglifetime'] = 'ここではあなたが希望するバックアップログ情報の保持期間を指定します。設定値より古いログは自動的に削除されます。バックアップログ情報は肥大化する可能性があるため、この値を小さく設定することをお勧めします。';
-$string['config_overwrite_conf'] = 'ユーザが現在のコース設定を上書きできるようにします。';
-$string['config_overwrite_course_fullname'] = 'デフォルトではバックアップファイルからコースフルネームを上書きします。これには「コース設定を上書きする」をチェックして現在のユーザにコースフルネームを変更するケイパビリティ(moodle/course:changefullname) が割り当てられている必要があります。';
-$string['config_overwrite_course_shortname'] = 'デフォルトではバックアップファイルからコース省略名を上書きします。これには「コース設定を上書きする」をチェックして現在のユーザにコース省略名を変更するケイパビリティ(moodle/course:changeshortname) が割り当てられている必要があります。';
-$string['config_overwrite_course_startdate'] = 'デフォルトではバックアップファイルからコース開始日を上書きします。これには「コース設定を上書きする」をチェックして現在のユーザにコース開始日を変更するケイパビリティ(moodle/restore:rolldates) が割り当てられている必要があります。';
 $string['configrestoreactivities'] = '活動のリストアのデフォルトを設定します。';
 $string['configrestorebadges'] = 'バッジのリストアのデフォルトを設定します。';
 $string['configrestoreblocks'] = 'ブロックのリストアのデフォルトを設定します。';
@@ -175,8 +175,8 @@ $string['enableasyncbackup'] = '非同期バックアップを有効にする';
 $string['enableasyncbackup_help'] = 'この設定を有効にした場合、すべてのバックアップおよびリストア処理は非同期で実行されます。これはインポートおよびエクスポートには影響しません。非同期バックアップおよびリストアによりユーザはバックアップまたはリストア処理中に他の操作を実行できます。';
 $string['enterasearch'] = 'キーワードを入力する';
 $string['error_block_for_module_not_found'] = 'コースモジュール (id: {$a->mid}) において、迷子のブロックインスタンス (id: {$a->bid}) が見つかりました。このブロックはバックアップされません。';
-$string['errorcopyingbackupfile'] = 'リストア前の一時フォルダへのバックアップファイルのコピーに失敗しました。';
 $string['error_course_module_not_found'] = '迷子のコースモジュール (id: {$a}) が見つかりました。このモジュールはバックアップされません。';
+$string['errorcopyingbackupfile'] = 'リストア前の一時フォルダへのバックアップファイルのコピーに失敗しました。';
 $string['errorfilenamemustbezip'] = 'あなたが入力するファイル名は.mbz拡張子を持つZIPファイルである必要があります。';
 $string['errorfilenamerequired'] = 'あなたはこのバックアップに関して、有効なファイル名を入力する必要があります。';
 $string['errorfilenametoolong'] = 'ファイル名は半角255文字以下の長さにしてください。';
@@ -269,14 +269,14 @@ $string['pendingasyncerror'] = 'このリソースのバックアップ保留';
 $string['preparingdata'] = 'データ準備中';
 $string['preparingui'] = '表示ページ準備中';
 $string['previousstage'] = '前へ';
+$string['privacy:metadata:backup:detailsofarchive'] = 'このアーカイブには評定、ユーザ登録および活動データのようなコースに関連する様々なデータを含むことができます。';
+$string['privacy:metadata:backup:externalpurpose'] = 'このアーカイブの目的は将来的にリストアされるコースに関する情報を保存することにあります。';
 $string['privacy:metadata:backup_controllers'] = 'バックアップ処理一覧です。';
 $string['privacy:metadata:backup_controllers:itemid'] = 'コースIDです。';
 $string['privacy:metadata:backup_controllers:operation'] = '実行された処理です。例) リストア';
 $string['privacy:metadata:backup_controllers:timecreated'] = 'アクションの作成日時です。';
 $string['privacy:metadata:backup_controllers:timemodified'] = 'アクションの修正日時です。';
 $string['privacy:metadata:backup_controllers:type'] = '実行されたアイテムのタイプです。例) 活動';
-$string['privacy:metadata:backup:detailsofarchive'] = 'このアーカイブには評定、ユーザ登録および活動データのようなコースに関連する様々なデータを含むことができます。';
-$string['privacy:metadata:backup:externalpurpose'] = 'このアーカイブの目的は将来的にリストアされるコースに関する情報を保存することにあります。';
 $string['qcategory2coursefallback'] = '本来はバックアップファイルのシステム/コースカテゴリコンテクストにある問題カテゴリ「 {$a->name} 」はリストアによりコースコンテクストに作成されます。';
 $string['qcategorycannotberestored'] = '問題カテゴリ「 {$a->name} 」をリストアで作成できません。';
 $string['question2coursefallback'] = '本来バックアップファイルのシステム/コースカテゴリコンテクストにある問題カテゴリ「 {$a->name} 」はリストアによりコースコンテクストに作成されます。';

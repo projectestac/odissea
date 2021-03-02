@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_upload', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_upload', language 'it', version '3.8'.
  *
- * @package   repository_upload
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_upload
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,6 +29,7 @@ $string['configplugin'] = 'Configurazione plugin File upload';
 $string['pluginname'] = 'File upload';
 $string['pluginname_help'] = 'Carica un file su Moodle';
 $string['privacy:metadata'] = 'Il plugin repository "File upload" non memorizza né trasmette dati personali.';
+$string['upload:view'] = 'Usare File upload nel file picker';
 $string['upload_error_cant_write'] = 'Non è stato possibile scrivere il file sul disco.';
 $string['upload_error_extension'] = 'Una estensione PHP ha bloccato il caricamento del file.';
 $string['upload_error_form_size'] = 'Il file caricato è più grande di quanto consentito dalla direttiva max_file_size presente nel file php.ini';
@@ -37,4 +38,3 @@ $string['upload_error_invalid_file'] = 'Il file \'{$a}\' è vuoto oppure è una 
 $string['upload_error_no_file'] = 'Nessun file è stato caricato.';
 $string['upload_error_no_tmp_dir'] = 'Manca una cartella temporanea per il PHP';
 $string['upload_error_partial'] = 'Il file è stato caricato solo in parte.';
-$string['upload:view'] = 'Usare File upload nel file picker';

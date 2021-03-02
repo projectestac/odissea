@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'zh_cn', version '3.8'.
  *
- * @package   assignfeedback_comments
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_comments
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = '内嵌引用';
+$string['commentinline_help'] = '启用此项后，评分时学生提交作业中的文本内容会被复制到评分反馈中。这将使内嵌引用（使用别的字体颜色）或者是编辑原始文本变得更为容易。';
 $string['commentinlinedefault'] = '默认内嵌引用';
 $string['commentinlinedefault_help'] = '设置此项，所有新建的作业内嵌引用功能会被默认启用。';
-$string['commentinline_help'] = '启用此项后，评分时学生提交作业中的文本内容会被复制到评分反馈中。这将使内嵌引用（使用别的字体颜色）或者是编辑原始文本变得更为容易。';
 $string['default'] = '默认开启';
 $string['default_help'] = '如果设置此项，将会为所有新作业默认开启此反馈方法。';
 $string['enabled'] = '评语反馈';

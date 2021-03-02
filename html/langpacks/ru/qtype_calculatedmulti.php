@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculatedmulti', language 'ru', version '3.8'.
  *
- * @package   qtype_calculatedmulti
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedmulti
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['answeroptions'] = 'Параметры выбора';
 $string['answeroptions_help'] = 'Предлагаемый выбор формула ...<strong>{={x}+..}</strong>...';
 $string['pluginname'] = 'Множественный Вычисляемый';
+$string['pluginname_help'] = 'Множественные Вычисляемые вопросы устроены так же, как вопросы типа «Множественный выбор», с тем отличием, что ответами в них служат числовые результаты формул. Эти формулы составляются с использованием подстановочных знаков в фигурных скобках, которые заменяются конкретными значениями при прохождении теста. Например, ответом на вопрос «Какова площадь прямоугольника с длиной {L} и шириной {W}?» будет служить формула {= {L} * {W}}, где * означает умножение.';
 $string['pluginnameadding'] = 'Добавление множественного Вычисляемого вопроса';
 $string['pluginnameediting'] = 'Редактирование множественного Вычисляемого вопроса';
-$string['pluginname_help'] = 'Множественные Вычисляемые вопросы устроены так же, как вопросы типа «Множественный выбор», с тем отличием, что ответами в них служат числовые результаты формул. Эти формулы составляются с использованием подстановочных знаков в фигурных скобках, которые заменяются конкретными значениями при прохождении теста. Например, ответом на вопрос «Какова площадь прямоугольника с длиной {L} и шириной {W}?» будет служить формула {= {L} * {W}}, где * означает умножение.';
 $string['pluginnamesummary'] = 'Множественные Вычисляемые вопросы устроены так же, как вопросы типа «Множественный выбор», с тем отличием, что ответами в них служат числовые результаты формул. Значения в формулах выбираются из заранее определенного набора значений случайным образом при прохождении теста.';
 $string['privacy:metadata'] = 'Плагин «Тип вопроса Множественный Вычисляемый» не хранит никаких персональных данных.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository', language 'de', version '3.8'.
  *
- * @package   repository
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,7 +57,8 @@ $string['cannotdownload'] = 'Datei kann nicht herunter geladen werden';
 $string['cannotdownloaddir'] = 'Verzeichnis kann nicht herunter geladen werden';
 $string['cannotinitplugin'] = 'Aufruf plugin_init fehlgeschlagen';
 $string['cannotunzipcontentunreadable'] = 'Diese Datei kann nicht entpackt werden, weil der Dateiinhalt nicht gelesen werden kann.';
-$string['cannotunzipquotaexceeded'] = 'Diese Datei kann nicht entpackt werden, weil die maximal erlaubte Größe in diesem entwurfsbereich überschritten würde.';
+$string['cannotunzipextractfileerror'] = 'Diese Datei kann nicht entpackt werden, weil eine oder mehrere seiner Dateien nicht gelesen werden können.';
+$string['cannotunzipquotaexceeded'] = 'Diese Datei kann nicht entpackt werden, weil die maximal erlaubte Größe in diesem Entwurfsbereich überschritten würde.';
 $string['choosealink'] = 'Link wählen...';
 $string['chooselicense'] = 'Lizenz';
 $string['cleancache'] = 'Cache-Dateien löschen';
@@ -103,7 +104,8 @@ $string['displaytree'] = 'Verzeichnis hierarchisch anzeigen';
 $string['download'] = 'Download';
 $string['downloadallfiles'] = 'Alle Dateien herunterladen';
 $string['downloadfolder'] = 'Alles herunterladen';
-$string['downloadsucc'] = 'Download erfolgreich!';
+$string['downloadsucc'] = 'Download erfolgreich
+';
 $string['draftareanofiles'] = 'Kein Download möglich, da keine Dateien verbunden sind';
 $string['editrepositoryinstance'] = 'Repository-Instanz ändern';
 $string['emptylist'] = 'Leere Liste';
@@ -115,11 +117,11 @@ $string['entername'] = 'Verzeichnisnamen angeben';
 $string['enternewname'] = 'Neuen Dateinamen angeben';
 $string['error'] = 'Fehler aufgetreten!';
 $string['errordoublereference'] = 'Das Überschreiben des Dateinamens durch einen Shortcut/Alias ist nicht möglich, da für die Datei bereits Shortcuts existieren.';
-$string['errornotyourfile'] = 'Sie dürfen keine Datei auswählen, die nicht von Ihnen hinzugefügt wurde';
+$string['errornotyourfile'] = 'Sie dürfen nur Dateien auswählen, die von Ihnen hinzugefügt wurden.';
 $string['errorpostmaxsize'] = 'Die ausgewählte Datei könnte größer sein als der Server zulässt.';
 $string['erroruniquename'] = 'Der Name des Repository muss eindeutig sein';
 $string['errorwhilecommunicatingwith'] = 'Fehler bei der Kommunikation mit dem Repository \'{$a}\'';
-$string['errorwhiledownload'] = 'Beim Download der Datei {$a} trat ein Fehler auf';
+$string['errorwhiledownload'] = 'Beim Herunterladen der Datei {$a} trat ein Fehler auf';
 $string['existingrepository'] = 'Dieses Repository existiert bereits';
 $string['federatedsearch'] = 'Zusammenhängende Suche';
 $string['fileexists'] = 'Der Dateiname ist bereits vorhanden. Verwenden Sie bitte einen anderen Namen';
@@ -158,7 +160,7 @@ $string['linkexternal'] = 'Extern verlinken';
 $string['listview'] = 'Listenansicht';
 $string['loading'] = 'Wird geladen...';
 $string['login'] = 'Mit Ihrem Nutzerkonto anmelden';
-$string['logintoaccount'] = 'Anmeldung zu Ihrem Nutzerkonto {$a}';
+$string['logintoaccount'] = 'Anmeldung zum Nutzerkonto {$a}';
 $string['logout'] = 'Abmelden';
 $string['lostsource'] = 'Fehler. Quelle nicht gefunden. {$a}';
 $string['makefilecontrolledlink'] = 'Zugriffsgesteuerten Link anlegen';

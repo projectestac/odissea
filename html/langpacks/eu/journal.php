@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'journal', language 'eu', version '3.8'.
  *
- * @package   journal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     journal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,7 +44,8 @@ $string['eventjournalviewed'] = 'Egunkaria ikusi da';
 $string['feedbackupdated'] = 'Feedbacka eguneratu da {$a} sarreratan';
 $string['gradeingradebook'] = 'Oraingo kalifikazioa kalifikazio-liburuan';
 $string['journal:addentries'] = 'Gehitu egunkari-sarrerak';
-$string['journal:addinstance'] = 'Gehitu egunkari-instantziak';
+$string['journal:addinstance'] = 'Gehitu egunkari berri bat';
+$string['journal:manageentries'] = 'Kudeatu egunkari-sarrerak';
 $string['journalmail'] = '{$a->teacher}-(e)k  \'{$a->journal}\' egunkariko zure sarrera bati buruzko feedbacka eman dizu.
 
  Egunkariaren sarreraren ondoan ikus dezakezu:
@@ -52,7 +53,6 @@ $string['journalmail'] = '{$a->teacher}-(e)k  \'{$a->journal}\' egunkariko zure 
    {$a->url}';
 $string['journalmailhtml'] = '{$a->teacher}-(e)k zure sarrera bati buruzko feedbacka eman dizu \'<i>{$a->journal}</i>\' egunkarian.<br /><br />
 Zure <a href="{$a->url}">egunkari-sarreran</a> ikus dezakezu.';
-$string['journal:manageentries'] = 'Kudeatu egunkari-sarrerak';
 $string['journalname'] = 'Egunkariaren izena';
 $string['journalquestion'] = 'Egunkariaren galdera';
 $string['mailsubject'] = 'Egunkariaren feedbacka';

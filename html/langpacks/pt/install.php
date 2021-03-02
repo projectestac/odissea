@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'install', language 'pt', version '3.8'.
  *
- * @package   install
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     install
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -104,7 +104,7 @@ $string['inputwebadress'] = 'Endereço web:';
 $string['inputwebdirectory'] = 'Pasta do Moodle:';
 $string['installation'] = 'Instalação';
 $string['invaliddbprefix'] = 'Prefixo inválido. O prefixo pode ser apenas letras minúsculas e underscore.';
-$string['langdownloaderror'] = 'Não foi possível descarregar o idioma \'<b>{$a}</b>\' . O processo de instalação continuará em Inglês.';
+$string['langdownloaderror'] = 'Não foi possível descarregar o idioma <b>{$a}</b> . O processo de instalação continuará em Inglês.';
 $string['langdownloadok'] = 'O idioma <b>{$a}</b> foi instalado com sucesso. O processo de instalação continuará neste idioma.';
 $string['memorylimit'] = 'Limite de memória';
 $string['memorylimiterror'] = 'O limite de memória definido na configuração do PHP é muito baixo... poderá originar problemas mais tarde.';
@@ -139,7 +139,7 @@ $string['pathshead'] = 'Confirmar caminhos';
 $string['pathsrodataroot'] = 'A pasta de dados não tem permissões de escrita.';
 $string['pathsroparentdataroot'] = 'A pasta ascendente <b>{$a->parent}</b> não tem permissões de escrita. O programa de instalação não conseguiu criar a pasta <b>{$a->dataroot}</b>.';
 $string['pathssubadmindir'] = 'Alguns servidores Web utilizam a pasta <strong>admin</strong> em URLs especiais de acesso a funcionalidades especiais, como é o caso de painéis de controlo. Algumas situações podem criar conflitos com a localização normal das páginas de administração do Moodle. Estes problemas podem ser resolvidos renomeando a pasta <strong>admin</strong> na instalação do Moodle e indicando aqui o novo nome a utilizar. Por exemplo:<br /><br /><b>moodleadmin</b><br /><br />Esta ação resolverá os problemas de acesso das hiperligações para as funcionalidades de administração do Moodle.';
-$string['pathssubdataroot'] = '<p>Uma diretoria em que o Moodle irá armazenar todo o conteúdo de ficheiros enviados pelos utilizadores.</p>
+$string['pathssubdataroot'] = '<p>Diretoria onde o Moodle irá armazenar todo o conteúdo de ficheiros enviados pelos utilizadores.</p>
 <p>Esta diretoria deve ser legível e gravável pelo utilizador do servidor web (geralmente \'www-data\', \'nobody\', ou \'apache\').</p>
 <p>Não deve ser acessível diretamente através da web.</p>
 <p>Se a diretoria não existir, o processo de instalação tentará criá-la.</p>';
@@ -165,9 +165,9 @@ $string['upgradingqtypeplugin'] = 'A atualizar o módulo <b>question/type</b>';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'A apresentação desta página confirma a correta instalação e ativação do pacote <strong>{$a->packname} {$a->packversion}</strong> no servidor.';
 $string['welcomep30'] = 'Esta versão do pacote <strong>{$a->installername}</strong> inclui as aplicações necessárias para o correto funcionamento do  <strong>Moodle</strong>, nomeadamente:';
-$string['welcomep40'] = 'Este pacote inclui o lançamento <strong>{$a->moodlerelease} do Moodle ({$a->moodleversion})</strong>.';
+$string['welcomep40'] = 'Este pacote inclui o lançamento <strong>{$a->moodlerelease} ({$a->moodleversion})</strong> do Moodle .';
 $string['welcomep50'] = 'A utilização de todas as aplicações incluídas neste pacote é limitada pelas respetivas licenças. O pacote completo <strong>{$a->installername}</strong> é <ahref="https://www.opensource.org/docs/definition_plain.html">código aberto</a> e é distribuído nos termos da licença <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
-$string['welcomep60'] = 'As páginas seguintes irão acompanhá-lo através de algumas etapas simples para configurar e definir o <strong>Moodle</strong> no seu computador. Pode aceitar as configurações predefinidas ou, opcionalmente, alterá-las para adaptar às suas próprias necessidades.';
+$string['welcomep60'] = 'As páginas seguintes irão ajudá-lo a configurar e a preparar o <strong>Moodle</strong> para ser executado no seu computador. Pode aceitar as configurações predefinidas ou, opcionalmente, alterá-las para ir de encontro às suas necessidades.';
 $string['welcomep70'] = 'Clique no botão "Seguinte" para continuar a configuração do <strong>Moodle</strong>.';
 $string['wwwroot'] = 'Endereço web';
 $string['wwwrooterror'] = 'O valor do campo <b>Endereço web</b> não parece ser válido porque não foram encontrados os ficheiros de instalação do Moodle. Foi reposto o valor original indicado em baixo.';

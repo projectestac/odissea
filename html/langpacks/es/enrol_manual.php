@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'es', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,7 +34,7 @@ $string['browseusers'] = 'Buscar usuarios';
 $string['confirmbulkdeleteenrolment'] = '¿Está seguro que desea eliminar estas matrículas de usuarios?';
 $string['defaultperiod'] = 'Duración del periodo de matriculación por defecto';
 $string['defaultperiod_desc'] = 'Periodo de tiempo por defecto en el que la matricula es válida. Si se establece a cero, la matricula durará de forma ilimitada por defecto';
-$string['defaultperiod_help'] = 'Periodo de tiempo predeterminado durante el que el la matrícula es válida, a partir del momento en que se inscribe el usuario. Si está desactivado, la duración de la inscripción será, por defecto, ilimitada.';
+$string['defaultperiod_help'] = 'Periodo de tiempo predeterminado durante el que el la matrícula es válida, a partir del momento en que se matricula el usuario. Si está desactivado, la duración de la matrícula será ilimitada por defecto.';
 $string['defaultstart'] = 'Comienzo del periodo de matriculación';
 $string['deleteselectedusers'] = 'Eliminar las matrículas de usuario seleccionadas';
 $string['editselectedusers'] = 'Editar las matrículas de usuario seleccionadas';
@@ -56,19 +56,19 @@ $string['expirymessageenrollersubject'] = 'Notificación de la caducidad de la m
 $string['manual:config'] = 'Configurar instancias de la matriculaciñon manual';
 $string['manual:enrol'] = 'Matricular usuarios';
 $string['manual:manage'] = 'Gestión de matriculas de usuario';
-$string['manualpluginnotinstalled'] = 'El complemento "Manual" no ha sido instalado aún';
 $string['manual:unenrol'] = 'Dar de baja usuarios del curso';
 $string['manual:unenrolself'] = 'Darse de baja del curso';
+$string['manualpluginnotinstalled'] = 'El complemento "Manual" no ha sido instalado aún';
 $string['messageprovider:expiry_notification'] = 'Notificaciones de expiración de matriculaciones manuales';
 $string['now'] = 'Ahora';
-$string['pluginname'] = 'Matriculacion manual';
-$string['pluginname_desc'] = 'La extensión para la matriculación manual permite que los usuarios sean  matriculados de forma manual por un usuario con los permisos adecuados, como un profesor, mediante un enlace situado en la configuración de la administración del curso. La extensión debe normalmente estar activada, ya que algunas extensions de inscripción, tales como la matrícula libre, así lo requieran.';
+$string['pluginname'] = 'Matriculación manual';
+$string['pluginname_desc'] = 'La extensión para la matriculación manual permite que los usuarios sean  matriculados de forma manual por un usuario con los permisos adecuados, como un profesor, mediante un enlace situado en la configuración de la administración del curso. La extensión debe normalmente estar activada, ya que algunas extensiones de matriculación, como la auto-matriculación, así lo requieran.';
 $string['selectusers'] = 'Seleccionar usuarios';
 $string['status'] = 'Habilita matriculación manual';
-$string['status_desc'] = 'Permitir el acceso de los usuarios matriculados internamente. Esta opción debe estar hailitada en la mayoría de los casos.';
+$string['status_desc'] = 'Permitir la matriculación manual de usuarios. Esta opción normalmente debería estar habilitada.';
+$string['status_help'] = 'Esta configuración determina si los usuarios pueden ser matriculados de forma manual por un usuario con los permisos adecuados, como un profesor, mediante un enlace situado en la configuración de la administración del curso.';
 $string['statusdisabled'] = 'Deshabilitado';
 $string['statusenabled'] = 'Habilitado';
-$string['status_help'] = 'Esta configuración determina si los usuarios pueden ser matriculados de forma manual por un usuario con los permisos adecuados, como un profesor, mediante un enlace situado en la configuración de la administración del curso.';
 $string['unenrol'] = 'Dar de baja usuario';
 $string['unenrolselectedusers'] = 'Dar de baja la matrícula de los usuarios seleccionados';
 $string['unenrolselfconfirm'] = '¿Desea realmente darse de baja del curso "{$a}" ?';

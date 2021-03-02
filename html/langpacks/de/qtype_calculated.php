@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculated', language 'de', version '3.8'.
  *
- * @package   qtype_calculated
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculated
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['additem'] = 'Eintrag hinzufügen';
+$string['additem'] = 'Objekt hinzufügen';
 $string['addmoreanswerblanks'] = 'Weiteres Antwortfeld hinzufügen';
-$string['addsets'] = 'Datensatz/-sätze hinzufügen';
+$string['addsets'] = 'Datensätze hinzufügen';
 $string['answerdisplay'] = 'Antwort anzeigen';
 $string['answerformula'] = 'Antwortformel {$a}';
 $string['answerhdr'] = 'Antwort';
@@ -50,8 +50,8 @@ $string['correctfeedback'] = 'Für jede richtige Antwort';
 $string['dataitemdefined'] = 'mit {$a} numerischen Wert(en) steht/en bereits zur Verfügung';
 $string['datasetrole'] = 'Die Ersatzzeichen <strong>{x..}</strong> werden durch numerische Werte aus ihrem Datensatz ersetzt';
 $string['decimals'] = 'mit {$a}';
-$string['deleteitem'] = 'Gelöschter Eintrag';
-$string['deletelastitem'] = 'Zuletzt gelöschter Eintrag';
+$string['deleteitem'] = 'Objekt löschen';
+$string['deletelastitem'] = 'Letztes Objekt löschen';
 $string['distributionoption'] = 'Distributions-Option auswählen';
 $string['editdatasets'] = 'Datensatz für Ersatzzeichen bearbeiten';
 $string['editdatasets_help'] = 'Ein Datensatz für die Ersatzzeichen kann erstellt werden, indem jeweils eine Zahl in die Ersatzzeichenfelder eingetragen und anschließend die Taste \'Hinzufügen\' gedrückt wird. Um automatisch 10 oder mehr Datensätze zu erstellen, wählen Sie die Anzahl der Datensätze aus, bevor Sie die Taste drücken. Eine einfache Verteilung erzeugt die Werte gleichmäßig verteilt zwischen den vorgegebenen Grenzen, eine logarithmische Verteilung bevorzugt Werte in der Nähe der unteren Grenze.';
@@ -67,13 +67,13 @@ $string['functiontakesonearg'] = 'Die Funktion {$a} muss genau ein Argument habe
 $string['functiontakesoneortwoargs'] = 'Die Funktion {$a} muss entweder ein oder zwei Argumente haben';
 $string['functiontakestwoargs'] = 'Die Funktion {$a} muss genau zwei Argumente haben';
 $string['generatevalue'] = 'Wählen Sie einen neuen Wert zwischen';
-$string['getnextnow'] = 'Jetzt neuen \'Wert zum Hinzufügen\' erzeugen';
+$string['getnextnow'] = 'Neues \'Objekt zum Hinzufügen\' erzeugen';
 $string['hexanotallowed'] = 'Der Datensatz <strong>{$a->name}</strong> enthält einen nicht erlaubten Hexadezimal-Wert: {$a->value}';
-$string['illegalformulasyntax'] = 'Ungültige Formelsyntax beginnend mit \'{$a}';
+$string['illegalformulasyntax'] = 'Ungültige Formelsyntax beginnend mit \'{$a}\'';
 $string['incorrectfeedback'] = 'Für jede falsche Antwort';
 $string['itemno'] = 'Eintrag {$a}';
 $string['itemscount'] = 'Werte <br />Zahl';
-$string['itemtoadd'] = 'Hinzuzufügender Wert';
+$string['itemtoadd'] = 'Objekt zum Hinzufügen';
 $string['keptcategory1'] = 'wird denselben existierenden Datensatz wie zuvor verwenden';
 $string['keptcategory2'] = 'eine Datei aus der selben Kategorie wiederverwendbarer Datei wie zuvor';
 $string['keptcategory3'] = 'ein Link aus der selben Kategorie wiederverwendbarer Dateien wie zuvor';
@@ -95,7 +95,7 @@ $string['mustenteraformulaorstar'] = 'Sie müssen eine Formel oder \'*\' eingebe
 $string['newcategory1'] = 'wird einen neuen gemeinsamen Datensatz verwenden';
 $string['newcategory2'] = 'eine Datei aus einen neuen Set von Dateien, die auch von anderen Fragen in dieser Kategorie verwendet werden kann. ';
 $string['newcategory3'] = 'ein Link aus einen neuen Set von Links, der auch von anderen Fragen in dieser Kategorie verwendet werden kann. ';
-$string['newlocal1'] = 'Einen neuen privaten Datensatz verwenden';
+$string['newlocal1'] = 'Neuen privaten Datensatz verwenden';
 $string['newlocal2'] = 'eine Datei aus einen neuen Set von Dateien, die nur für diese Frage genutzt werden kann. ';
 $string['newlocal3'] = 'eine Link aus einen neuen Set von Links, der nur für diese Frage genutzt werden kann. ';
 $string['newsetwildcardvalues'] = 'Neue Datensätze von Ersatzzeichenwerten';
@@ -110,9 +110,9 @@ $string['oneanswertrueansweroutsidelimits'] = 'Wenigstens eine richtige Antwort 
 $string['param'] = 'Parameter {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = 'Für jede teilweise richtige Antwort';
 $string['pluginname'] = 'Berechnet';
+$string['pluginname_help'] = 'Berechnete Multiple-Choice-Fragen entsprechen normalen Multiple-Choice-Fragen, können aber im Gegensatz zu diesen Ersatzzeichen (Wildcards) in geschweiften Klammern enthalten, welche dann bei der Durchführung des Tests durch vordefinierte Werte ersetzt werden. Beispiel: Auf die Frage "Welche Fläche hat ein Rechteck mit der Länge {l} und der Breite {b}?" wäre "{={l}*{b}}" eine Antwortmöglichkeit (das Sternchen (*) steht für die Multiplikation).';
 $string['pluginnameadding'] = 'Eine berechnete Frage hinzufügen';
 $string['pluginnameediting'] = 'Berechnete Frage ändern';
-$string['pluginname_help'] = 'Berechnete Multiple-Choice-Fragen entsprechen normalen Multiple-Choice-Fragen, können aber im Gegensatz zu diesen Ersatzzeichen (Wildcards) in geschweiften Klammern enthalten, welche dann bei der Durchführung des Tests durch vordefinierte Werte ersetzt werden. Beispiel: Auf die Frage "Welche Fläche hat ein Rechteck mit der Länger {l} und der Breite {b}?" wäre "{={l}*{b}}" eine Antwortmöglichkeit (das Sternchen (*) steht für die Multiplikation).';
 $string['pluginnamesummary'] = 'Berechnete Fragen ähneln numerischen Fragen. Die Zahlen werden jedoch zufällig beim Start des Tests gewählt.';
 $string['possiblehdr'] = 'Mögliche Ersatzzeichen nur im Fragetext vorhanden';
 $string['privacy:metadata'] = 'Das Berechnete Fragen Frageformat Plugin speichert keine personenbezogenen Daten.';

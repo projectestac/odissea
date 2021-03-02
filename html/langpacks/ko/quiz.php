@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz', language 'ko', version '3.8'.
  *
- * @package   quiz
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -173,7 +173,7 @@ $string['configshufflewithin'] = '이 기능을 활성화하고, 질문 설정�
 $string['configtimelimit'] = '분 단위의 기본 응시 시간. 0은 무제한';
 $string['configtimelimitsec'] = '초 단위의 기본 응시 시간. 0은 무제한';
 $string['configurerandomquestion'] = '질문 구성';
-$string['confirmclose'] = '당신은 이 시도를 끝내려고 합니다. 일단 시도를 종료하면 더 이상 답을 고칠 수 없습니다.';
+$string['confirmclose'] = '일단 제출하면, 이 시도에 대한 답들을 더 이상 수정할 수 없습니다.';
 $string['confirmserverdelete'] = '당신은 정말 서버 <b>{$a}</b>를 목록에서 삭제하겠습니까?';
 $string['containercategorycreated'] = '처음 만들어진 범주 안에 생성된 모든 것들은 그 범주가 사라지더라도 그 상위 범주에 모두 저장됩니다.';
 $string['continueattemptquiz'] = '지난번 시도 계속';
@@ -204,7 +204,7 @@ $string['datasetnumber'] = '수';
 $string['daysavailable'] = '가능한 날';
 $string['decimaldigits'] = '소숫점 처리';
 $string['decimalplaces'] = '성적의 소숫점 자리 수';
-$string['decimalplaces_help'] = '이 설정들 통해서 학생들의 점수나 성적을 표시할 때 소수 몇째 자리까지 표시해야 할 것인지를 정할 수 있습니다. 이 설정은 점수를 표시할 때만 영향을 미치며, 데이터베이스에 저장된 성적이나 최대 정밀도로 수행되는 내부 계산에는 영향을 주지 않습니다.';
+$string['decimalplaces_help'] = '이 설정으로 학생들의 점수나 성적을 표시할 때 소수 몇째 자리까지 표시해야 할 것인지를 정할 수 있습니다. 이 설정은 점수를 표시할 때만 영향을 미치며, 데이터베이스에 저장된 성적이나 최대 정밀도로 수행되는 내부 계산에는 영향을 주지 않습니다.';
 $string['decimalplacesquestion'] = '퀴즈 성적의 소숫점 자리 수';
 $string['decimalplacesquestion_help'] = '이 설정은 개별 질문에 대한 성적을 표시할때 소숫점 몇 자리까지 표시할 것인가를 명시합니다.';
 $string['decimalpoints'] = '소수점';
@@ -250,24 +250,23 @@ $string['editquiz'] = '퀴즈 편집';
 $string['editquizquestions'] = '퀴즈 질문 편집';
 $string['emailconfirmbody'] = '{$a->username} 님,
 
-{$a->submissiontime} 에 \'{$a->coursename}\'의 퀴즈 \'{$a->quizname}\'에 대한 답안을 제출해 주셔서 감사합니다.
+{$a->submissiontime} 에 강좌 \'{$a->coursename}\'의 퀴즈 \'{$a->quizname}\'에 대한 답을 제출해 주셔서 감사합니다.
 
-본 이메일은 답안이 정상적으로 접수되었음을 확인하는 것입니다.
-
-본 퀴즈는 {$a->quizurl} 에서 접속할 수 있습니다.';
+이 메세지는 답이 정상적으로 접수되었음을 확인하는 것입니다.
+이 퀴즈는 {$a->quizurl} 에서 접근할 수 있습니다.';
 $string['emailconfirmsmall'] = '\'{$a->quizname}\'에 답을 제출해 주셔사 감사합니다.';
-$string['emailconfirmsubject'] = '{$a->quizname} 의 답안 접수 확인';
+$string['emailconfirmsubject'] = '제출 확인: {$a->quizname}';
 $string['emailnotifybody'] = '{$a->username} 님,
 
-{$a->studentname} 학생이  강좌 \'{$a->coursename}\' 에서 \'{$a->quizname}\' ({$a->quizurl}) 을 완결하였습니다.
+{$a->studentname}이  강좌 \'{$a->coursename}\' 에서 \'{$a->quizname}\' ({$a->quizurl}) 을 완료하였습니다.
 
-이 시도는 {$a->quizreviewurl} 에서 검토 할 수 있습니다.';
-$string['emailnotifysmall'] = '{$a->studentname}가  {$a->quizname}를 완료하였습니다.';
-$string['emailnotifysubject'] = '{$a->studentname} 은  {$a->quizname} 퀴즈를 완결하였습니다.';
+이 시도를 {$a->quizreviewurl} 에서 검토 할 수 있습니다.';
+$string['emailnotifysmall'] = '{$a->studentname}은  {$a->quizname}를 완료하였습니다. {$a->quizreviewurl}를 보세요.';
+$string['emailnotifysubject'] = '{$a->studentname}은  {$a->quizname} 퀴즈를 완료하였습니다.';
 $string['emailoverduesubject'] = '시도기간 초과: {$a->quizname}';
 $string['empty'] = '비었음';
 $string['enabled'] = '가능';
-$string['endtest'] = '시험 종료 ...';
+$string['endtest'] = '시도 종료 ...';
 $string['erroraccessingreport'] = '이 보고서에는 접근할 수 없음';
 $string['errorinquestion'] = '질문 오류';
 $string['errormissingquestion'] = '오류 : 아이디 {$a} 의 질문이 사라짐';
@@ -309,8 +308,8 @@ $string['feedbackerrororder'] = '피드백 성적 경계값은 높은 값이 먼
 $string['file'] = '파일';
 $string['fileformat'] = '파일 형식';
 $string['fillcorrect'] = '옳은 답을 채우시오';
-$string['filloutnumericalanswer'] = '적어도 하나의 가능한 답과 유효숫자를 제공해야 합니다. 첫번째 일치하는 답은 점수를 매기고 피드백을 하는데 쓰입니다. 만일 끝까지 정답을 입력하지 않은 채로 피드백만 한다면, 결국은 학생은 오답처리가 될 것입니다.';
-$string['filloutoneanswer'] = '적어도 하나의 답을 작성해야 합니다. 빈칸으로 남겨진 답안은 사용되지 않습니다. \'*\'표는 와이드카드 문자로 쓰일 수 있습니다. 첫번째로 일치하는 답은 점수를 매기고 피드백을 하는데 쓰일 것입니다.';
+$string['filloutnumericalanswer'] = '적어도 하나의 가능한 답과 유효숫자를 제공해야 합니다. 첫번째 일치하는 답은 성적과 피드백을 결정하는데 쓰입니다. 만일 끝에 정답을 입력하지 않은 채로 피드백만 한다면, 일치하지 않은 답을 한 학생들에게 보여질 것입니다.';
+$string['filloutoneanswer'] = '적어도 하나의 답을 작성해야 합니다. 빈칸으로 남겨진 답안은 사용되지 않습니다. \'*\'표는 와이드카드 문자로 쓰일 수 있습니다. 첫번째로 일치하는 답은 점수를 매기고 피드백을 하는데 사용될 것입니다.';
 $string['filloutthreequestions'] = '적절한 답안과 함께 적어도 3개의 질문을 작성해야 합니다. 질문 없이 답만 제시함으로써 특정 오답을 제공할 수도 있습니다. 질문과 답안이 없이 공백인 곳은 무시됩니다.';
 $string['fillouttwochoices'] = '적어도 2개의 답안을 작성해야 합니다. 빈칸으로 남겨진 답안은 사용되지 않습니다.';
 $string['finishattemptdots'] = '시도 종료';
@@ -321,7 +320,7 @@ $string['formulaerror'] = '수식 오류!';
 $string['fractionsaddwrong'] = '당신이 선택한 점수 총계는 100% 가 아닙니다.<br /> 현재 합계가 {$a} % 입니다. <br />질문를 수정하기 위해 되돌아가겠습니까?';
 $string['fractionsnomax'] = '정답은 100%가 되어야 합니다.<br /> 그래야 이 질문에 대한 등급 처리가 가능합니다.<br /> 이 문제를 수정하기 위해 되돌아 가겠습니까?';
 $string['fromfile'] = '파일에서 :';
-$string['functiondisabledbysecuremode'] = '지금 그 기능은 사용할 수 없음';
+$string['functiondisabledbysecuremode'] = '지금 그 기능은 비활성화 되어 있음';
 $string['generalfeedback'] = '일반적 피드백';
 $string['generalfeedback_help'] = '일반 피드백은 질문이 시도된 후 보여지는 문장입니다. 응답에 따라 달라지는 특정 질문에 대한 피드백과는 달리 같은 일반적인 피드백이 항상 보여집니다.';
 $string['graceperiod'] = '제출 유예 기간';
@@ -343,7 +342,7 @@ $string['grademethod_help'] = '학생들에게 여러번 시도를 허용하면,
 ';
 $string['gradesdeleted'] = '퀴즈 성적이 삭제됨';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
-$string['gradingdetails'] = '득점 : {$a->raw}/{$a->max}.';
+$string['gradingdetails'] = '이 제출에 대한 점수 : {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = '감점 적용 후 : <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = '이번 제출은 {$a} 의 감점이 있습니다.';
 $string['gradingdetailszeropenalty'] = '이 제출에 대해 감점을 당하지 않습니다.';
@@ -356,16 +355,16 @@ $string['hidereordertool'] = '재정렬 도구 감춤';
 $string['history'] = '응답 이력:';
 $string['howquestionsbehave_desc'] = '퀴즈에서 질문들이 동작할지에 대한 기본 설정';
 $string['imagedisplay'] = '보일 그림';
-$string['importcategory'] = '범주 가져오기';
-$string['importerror'] = '가져오기 과정에서 오류 발생';
-$string['importfilearea'] = '강좌에 있는 기존 파일에서 가져오기';
-$string['importfileupload'] = '내려받은 파일에서 가져오기';
-$string['importfromthisfile'] = '이 파일에서 가져오기';
 $string['import_help'] = '이 기능은 외부 텍스트 파일에서 질문을 가져오는 것을 허용합니다.
 
 만일 파일에 ascii 코드가 아닌 문자를 가지고 있으면  UTF-8 엔코딩을 사용해야 합니다. 마이크로소프트 오피스에 의해 만들어진 파일은 평상적으로 올바르게 처리되지 않는 특수 엔코딩을 사용할 수 있으므로 특히 주의를 기울여야 합니다.
 
 내보내기 및 가져오기 포맷은 끼워 넣을 수 있는 자원입니다. 선택할 수 있는 포맷이 모듈 및 플러그인 데이터베이스에 있을 수도 있습니다.';
+$string['importcategory'] = '범주 가져오기';
+$string['importerror'] = '가져오기 과정에서 오류 발생';
+$string['importfilearea'] = '강좌에 있는 기존 파일에서 가져오기';
+$string['importfileupload'] = '내려받은 파일에서 가져오기';
+$string['importfromthisfile'] = '이 파일에서 가져오기';
 $string['importingquestions'] = '파일에서 {$a} 질문 가져오기';
 $string['importmax10error'] = '질문 오류. 열 개 이상의 답안을 쓸 수 없음';
 $string['importmaxerror'] = '질문에 오류가 있습니다.  너무 많은 답이 있음';
@@ -376,7 +375,7 @@ $string['indivresp'] = '각 항목에 대한 개인들의 응답';
 $string['info'] = '정보';
 $string['infoshort'] = 'i';
 $string['inprogress'] = '진행 중';
-$string['introduction'] = '소개';
+$string['introduction'] = '설명';
 $string['invalidattemptid'] = '그런 시도 ID가 존재하지 않음';
 $string['invalidcategory'] = '범주 ID가 올바르지 않음';
 $string['invalidoverrideid'] = '잘못된 덮어쓰기 id';
@@ -429,9 +428,9 @@ $string['navnojswarning'] = '경고: 이 링크들은 답안을 저장하지 않
 $string['neverallononepage'] = '한꺼번에 배치하지 않음';
 $string['newattemptfail'] = '오류 : 새로운 시도를 할 수 없음';
 $string['newpage'] = '새 페이지';
-$string['newpageevery'] = '새 페이지 자동 시작';
 $string['newpage_help'] = '<p>다소 긴 퀴즈의 경우 한 페이지에 보이는 질문수를 제한함으로서 퀴즈를 여러 페이지로 분할해 나타나게 할 수 있습니다. 여기에서 지정한 수에 근거해서 질문이 추가될 때 자동적으로 페이지 나눔 표시가 삽입됩니다. 하지만 후에 편집 페이지에서 페이지 나눔은 수동으로 이동시킬 수도 있습니다.
 </p>';
+$string['newpageevery'] = '새 페이지 자동 시작';
 $string['noanswers'] = '아무 답도 고르지 않았음!';
 $string['noattempts'] = '한번도 퀴즈를 시도하지 않았음';
 $string['noattemptsfound'] = '시도하지 않았습니다.';
@@ -440,7 +439,7 @@ $string['nocategory'] = '옳지 않거나 없는 범주가 지정됨';
 $string['noclose'] = '무제한';
 $string['nocommentsyet'] = '아직 의견이 없음';
 $string['noconnection'] = '현재 이 질문을 계속 진행 할 수 있는 웹 서비스에 접속되지 않았습니다. 관리자에게 연락하십시오.';
-$string['nodataset'] = '와일드카드가 아님';
+$string['nodataset'] = '와일드카드 파라메터가 아님';
 $string['nodatasubmitted'] = '아무런 자료도 제출하지 않았음';
 $string['noessayquestionsfound'] = '수동으로 채점할 질문이 없음';
 $string['nogradewarning'] = '이 퀴즈는 채점되지 않음. 따라서 성적에 따른 피드백을 설정할 수 없음';
@@ -478,7 +477,7 @@ $string['numquestionsx'] = '질문: {$a}';
 $string['oneminute'] = '1분';
 $string['onlyteachersexport'] = '선생님만이 질문을 내보내기 할 수 있음';
 $string['onlyteachersimport'] = '편집 권한이 있는 사람만 질문 가져오기를 할 수 있음';
-$string['onthispage'] = '이 페이지에서';
+$string['onthispage'] = '이 페이지';
 $string['open'] = '응답하지 않음';
 $string['openclosedatesupdated'] = '퀴즈 시작 및 종료일이 변경되었음';
 $string['optional'] = '선택사항';
@@ -491,8 +490,8 @@ $string['orderandpaging_help'] = '각 질문의 반대편에 있는 10,20,30... 
 $string['orderingquiz'] = '퀴즈 정렬 및 페이지 나누기';
 $string['orderingquizx'] = '정렬 및 페이지 나누기 {$a}';
 $string['outcomesadvanced'] = '학습성과는 고급 설정입니다';
-$string['outof'] = '최대 {$a->maxgrade} 중 {$a->grade}';
-$string['outofpercent'] = '최대 {$a->maxgrade} 중 {$a->grade} ({$a->percent}%)';
+$string['outof'] = '{$a->maxgrade} 중 {$a->grade}';
+$string['outofpercent'] = '{$a->maxgrade} 중 {$a->grade} ({$a->percent}%)';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
 $string['overallfeedback'] = '전반적인 피드백';
 $string['overallfeedback_help'] = '전반적인 회신의견은 학생들이 퀴즈를 다 끝마쳤을 때 학생들에게 보여지는 문장입니다. 추가적으로 성적 경계를  (백분율 혹은 수로서) 명시하면 보여지는 문장은 학생들이 얻은 점수에 의해서 달라집니다.
@@ -516,7 +515,7 @@ $string['page-mod-quiz-review'] = '퀴즈 시도 페이지 검토';
 $string['page-mod-quiz-summary'] = '퀴즈 시도 요약 페이지';
 $string['page-mod-quiz-view'] = '퀴즈 정보 페이지';
 $string['page-mod-quiz-x'] = '모든 퀴즈 모듈 페이지';
-$string['pagesize'] = '한페이지당 보여질 시도들:';
+$string['pagesize'] = '페이지 크기';
 $string['parent'] = '상위';
 $string['parentcategory'] = '상위 범주';
 $string['parsingquestions'] = '가져온 파일에서 질문 파싱';
@@ -547,7 +546,7 @@ $string['qti'] = 'IMS QTI 형식';
 $string['qtypename'] = '형식, 퀴즈명';
 $string['question'] = '질문';
 $string['questionbankmanagement'] = '질문은행 관리';
-$string['questionbehaviour'] = '질문 작동';
+$string['questionbehaviour'] = '질문 진행방식';
 $string['questioncats'] = '질문 범주';
 $string['questiondeleted'] = '이 질문은 삭제되었습니다. 선생님에게 연락하십시오.';
 $string['questioninuse'] = '\'{$a->questionname}\' 질문은 현재 {$a->quiznames} 에서 사용되고 있습니다.<br />이 질문은 이 퀴즈나 항목에서 삭제되지 않을 것입니다.';
@@ -570,23 +569,28 @@ $string['questiontype'] = '{$a} 유형의 질문';
 $string['questiontypesetupoptions'] = '질문 유형을 위한 옵션 설정:';
 $string['quiz:addinstance'] = '새 퀴즈 추가';
 $string['quiz:attempt'] = '퀴즈 시도';
+$string['quiz:deleteattempts'] = '퀴즈 시도 삭제';
+$string['quiz:emailconfirmsubmission'] = '제출할 때 확인 메세지 받음';
+$string['quiz:emailnotifysubmission'] = '시도가 제출될 때 통지 메세지 받음';
+$string['quiz:emailwarnoverdue'] = '시도가 시간이 지나서 제출되어야 할 필요가 있을때 알림 메세지 받기';
+$string['quiz:grade'] = '퀴즈 수동 채점';
+$string['quiz:ignoretimelimits'] = '퀴즈에서 시간 제한 무시';
+$string['quiz:manage'] = '퀴즈 관리';
+$string['quiz:manageoverrides'] = '퀴즈 덮어쓰기 관리';
+$string['quiz:preview'] = '퀴즈 미리보기';
+$string['quiz:regrade'] = '시도한 퀴즈 재채점';
+$string['quiz:reviewmyattempts'] = '시도 검토';
+$string['quiz:view'] = '퀴즈 정보 보기';
+$string['quiz:viewreports'] = '퀴즈 보고서 보기';
 $string['quizavailable'] = '{$a}까지 퀴즈를 이용할 수 있음';
 $string['quizclose'] = '퀴즈 종료';
 $string['quizclosed'] = '{$a} 에 퀴즈 끝남';
 $string['quizcloses'] = '퀴즈그만하기';
 $string['quizcloseson'] = '{$a} 에 퀴즈가 종료될 예정임';
-$string['quiz:deleteattempts'] = '퀴즈 시도 삭제';
-$string['quiz:emailconfirmsubmission'] = '제출할 때 이메일 확인받음';
-$string['quiz:emailnotifysubmission'] = '제출에 대한 안내를 이메일로 받음';
-$string['quiz:emailwarnoverdue'] = '시도가 시간이 지나서 제출되어야 할 필요가 있을때 알림 메세지 받기';
-$string['quiz:grade'] = '퀴즈 수동 채점';
-$string['quiz:ignoretimelimits'] = '퀴즈에서 시간 제한 무시';
 $string['quizisclosed'] = '이 퀴즈는 닫힘';
 $string['quizisclosedwillopen'] = '퀴즈가 종료됨 (열림 {$a})';
 $string['quizisopen'] = '이 퀴즈는 열려 있음';
 $string['quizisopenwillclose'] = '퀴즈시작({$a} 에 종료)';
-$string['quiz:manage'] = '퀴즈 관리';
-$string['quiz:manageoverrides'] = '퀴즈 덮어쓰기 관리';
 $string['quiznavigation'] = '퀴즈 찾아가기';
 $string['quizopen'] = '퀴즈시작';
 $string['quizopenclose'] = '시작 및 종료 일자';
@@ -597,13 +601,8 @@ $string['quizopens'] = '퀴즈열기';
 $string['quizopenwillclose'] = '퀴즈가 시작되었으며, {$a} 에 종료될 것임';
 $string['quizordernotrandom'] = '퀴즈의 순서는 뒤섞이지 않음';
 $string['quizorderrandom'] = '* 퀴즈의 순서가 뒤섞임';
-$string['quiz:preview'] = '퀴즈 미리보기';
-$string['quiz:regrade'] = '시도한 퀴즈 재채점';
-$string['quiz:reviewmyattempts'] = '시도 검토';
 $string['quizsettings'] = '퀴즈 설정';
 $string['quiztimer'] = '퀴즈 타이머';
-$string['quiz:view'] = '퀴즈 정보 보기';
-$string['quiz:viewreports'] = '퀴즈 보고서 보기';
 $string['quizwillopen'] = '퀴즈는 {$a} 에 시작될 것임';
 $string['random'] = '무작위 질문';
 $string['randomcreate'] = '무작위 질문 만들기';
@@ -783,7 +782,7 @@ $string['specificquestionnotonquiz'] = '지정한 질문이 퀴즈에 없음';
 $string['startagain'] = '다시 시작';
 $string['startattempt'] = '시도 시작';
 $string['startedon'] = '시작';
-$string['startnewpreview'] = '새 미리보기 시작';
+$string['startnewpreview'] = '미리보기';
 $string['stateabandoned'] = '제출되지 않았습니다.';
 $string['statefinished'] = '종료됨';
 $string['statefinisheddetails'] = '{$a}를 제출함';
@@ -797,9 +796,9 @@ $string['submitallandfinish'] = '모두 제출하고 끝냄';
 $string['subneterror'] = '미안합니다. 이 퀴즈는 잠겨있으므로 특정한 위치에서만 이용가능합니다. 현재 당신의 컴퓨터는 이 퀴즈를 이용할 수 없습니다.';
 $string['subnetnotice'] = '이 퀴즈는 특정한 지역에서만 접근 가능하도록 하기위해서 잠겨져 있습니다. 당신의 컴퓨터는 허용된 지역이 아닙니다. 어쨋든 선생님이라면 미리보기가 허용됩니다.';
 $string['subplugintype_quiz'] = '보고서';
+$string['subplugintype_quiz_plural'] = '보고서';
 $string['subplugintype_quizaccess'] = '접근 규칙';
 $string['subplugintype_quizaccess_plural'] = '접근 규칙';
-$string['subplugintype_quiz_plural'] = '보고서';
 $string['substitutedby'] = '다음으로 대체';
 $string['summaryofattempt'] = '시도 개요';
 $string['summaryofattempts'] = '이전 시도들에 대한 요약';
@@ -811,17 +810,8 @@ $string['timecompleted'] = '종료';
 $string['timedelay'] = '재시도 경과시간이 지나지 않았기 때문에 퀴즈를 하도록 허용되지 않습니다.';
 $string['timeleft'] = '남은 시간';
 $string['timelimit'] = '시간제한';
+$string['timelimit_help'] = '활성화되면, 시간 제한은 초기 퀴즈 페이지에 표시되며 카운트 다운 타이머는 퀴즈 네비게이션 블록에 표시된다.';
 $string['timelimitexeeded'] = '미안합니다!  시간이 초과됐습니다.';
-$string['timelimit_help'] = '<p>기본적으로는 퀴즈를 푸는데 시간 제한이 없어서 학생들이 퀴즈를 완전히 풀 수 있도록 필요한 만큼 시간을 쓸 수 있다.</p>
-
-<p>만약 시간 제한을 둘 경우, 시간 내에 퀴즈를 풀어낼 수 있도록 여러가지를 점검하고 확인해야 한다.</p>
-
-<ul>
-  <li>브라우저에서 Javascript가 구동될 수 있도록 확인 - 이는 타이머가 제대로 작동할 수 있도록 한다.</li>
-  <li>시간 흐름을 알 수 있게 타이머 창이 뜨게한다.</li>
-  <li>시간이 다 경과되면 자동으로 퀴즈가 닫히며 그간 답해 놓은 것들을 갈무리하게 한다.</li>
-  <li>만일 학생들이 제한 시간을 다 쓰고도 60초 이내에 정리하지 않으면 퀴즈를 종료하고 자동으로 0점 처리하게 한다.</li>
-</ul>';
 $string['timestr'] = '%y/%m/%d %H:%M:%S';
 $string['timesup'] = '시간이 다 되었습니다!';
 $string['timetaken'] = '걸린 시간';
@@ -856,10 +846,10 @@ $string['viewallreports'] = '{$a}시도에 대한 결과 보기';
 $string['viewed'] = '봄';
 $string['warningmissingtype'] = '<b>이 문형은 아직 시스템에 설치되지 않은 형식입니다.<br /> 무들 관리자에게 지적하여 주십시요.</b>';
 $string['wheregrade'] = '내 성적이 어디 있습니까?';
-$string['wildcard'] = '와일드카드';
+$string['wildcard'] = '와일드카드 파라메터';
 $string['windowclosing'] = '조금 뒤 창이 닫힐 것입니다.';
 $string['withsummary'] = '요약된 통계와 함께';
 $string['wronguse'] = '이 페이지를 사용할 수 없음';
-$string['xhtml'] = 'XHTML 형식';
+$string['xhtml'] = 'XHTML';
 $string['youneedtoenrol'] = '강좌에 등록을 마쳐야 이 퀴즈에 도전할 수 있음';
 $string['yourfinalgradeis'] = '이번 퀴즈의 최종 점수는 {$a} 입니다.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradeimport_xml', language 'el', version '3.8'.
  *
- * @package   gradeimport_xml
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradeimport_xml
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,8 +32,8 @@ $string['errincorrectgradeidnumber'] = 'Σφάλμα - ο αναγνωριστι
 $string['errincorrectidnumber'] = 'Σφάλμα - λανθασμένος αναγνωριστικός αριθμός';
 $string['errincorrectuseridnumber'] = 'Σφάλμα - ο αναγνωριστικός αριθμός «{$a}» από το αρχείο εισαγωγής δεν αντιστοιχεί σε κάποιον χρήστη.';
 $string['error'] = 'Συνέβησαν σφάλματα';
-$string['errorduringimport'] = 'Παρουσιάστηκε σφάλμα κατά την εισαγωγή: {$a}';
-$string['fileurl'] = 'Διεύθυνση URL απομακρυσμένου αρχείου';
+$string['errorduringimport'] = 'Προέκυψε σφάλμα κατα την εισαγωγή: {$a}';
+$string['fileurl'] = 'URL απομακρυσμένου αρχείου';
 $string['fileurl_help'] = 'Το πεδίο διεύθυνσης URL απομακρυσμένου αρχείου είναι για την εύρεση και ανάκτηση δεδομένων από έναν απομακρυσμένο εξυπηρετητή, π.χ. ένα πληροφοριακό σύστημα μαθητών.';
 $string['importxml'] = 'Εισαγωγή XML';
 $string['importxml_help'] = 'Οι βαθμοί μπορούν να εισαχθούν μέσω ενός αρχείου XML που περιέχει αναγνωριστικούς αριθμούς χρήστη και αναγνωριστικούς αριθμούς δραστηριότητας. Για να αποκτήσετε το σωστό μορφότυπο, πρώτα εξαγάγετε μερικούς βαθμούς σε αρχείο XML και κατόπιν δείτε το αρχείο.';

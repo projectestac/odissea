@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'questionnaire', language 'es', version '3.8'.
  *
- * @package   questionnaire
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     questionnaire
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -86,8 +86,6 @@ $string['clicktoswitch'] = '(Haga click para activar)';
 $string['closebeforeopen'] = 'Usted ha especificado una fecha de cierre anterior a la fecha de apertura.';
 $string['closed'] = 'La encuesta se cerró el {$a}. Gracias.';
 $string['closedate'] = 'Fecha de cierre';
-$string['closedate_help'] = 'Aquí puede especificar una fecha para cerrar la encuesta. Marque la casilla y seleccione la fecha y la hora que desee.
-Los usuarios no podrán cumplimentar la encuesta después de esta fecha. Si no se selecciona esta opción, la encuesta no se cerrará nunca.';
 $string['closeson'] = 'El Cuestionario se cierra el {$a}';
 $string['completionsubmit'] = 'El participante tiene que enviar la encuesta para completarla';
 $string['condition'] = 'Condición';
@@ -106,8 +104,8 @@ $string['confirmdelquestionresps'] = 'Esto también borrará la/s {$a} respuesta
 $string['confirmdelresp'] = '¿Está seguro que desea eliminar la respuesta de {$a}?';
 $string['confirmremovequestion'] = '¿Está seguro de querer eliminar la pregunta"{$a->qname}" de la sección "{$a->sname}"?';
 $string['confpage'] = 'Texto de título';
-$string['confpagedesc'] = 'Título (en negrita) y cuerpo del texto para la página de "confirmación" mostrada después de que el usuario haya finalizado la encuesta. (La URL, si existe, tiene prioridad sobre el texto de confirmación.)';
 $string['confpage_help'] = 'Título (en negrita) y cuerpo del texto para la página de "confirmación" mostrada después de que el usuario haya finalizado la encuesta. (La URL, si existe, tiene prioridad sobre el texto de confirmación.). Si deja este campo vacío, se mostrará un mensaje sobre la finalización de la encuesta (Gracias por realizar esta encuesta)';
+$string['confpagedesc'] = 'Título (en negrita) y cuerpo del texto para la página de "confirmación" mostrada después de que el usuario haya finalizado la encuesta. (La URL, si existe, tiene prioridad sobre el texto de confirmación.)';
 $string['contentoptions'] = 'Tipo de Cuestionario';
 $string['couldnotcreatenewsurvey'] = 'No se pudo crear una nueva encuesta!';
 $string['couldnotdelresp'] = 'No ha sido posible borrar las respuestas';
@@ -116,8 +114,8 @@ $string['createcontent_help'] = 'Seleccione una de las opciones del botón de ra
 $string['createnew'] = 'Crear un nuevo cuestionario';
 $string['crontask'] = 'Limpieza de cuestionario';
 $string['date'] = 'Fecha';
-$string['dateformatting'] = 'dateformatting';
 $string['date_help'] = 'Utilice este tipo de pregunta si espera que la respuesta sea una fecha con el formato correcto.';
+$string['dateformatting'] = 'dateformatting';
 $string['deleteallresponses'] = 'Borrar TODAS las respuestas';
 $string['deletecurrentquestion'] = 'Borrar la pregunta {$a}';
 $string['deletedallgroupresp'] = 'Todas las respuestas del grupo {$a} han sido borradas';
@@ -174,6 +172,7 @@ $string['event_resumed'] = 'Intento recuperado';
 $string['event_saved'] = 'Respuestas guardadas';
 $string['event_submitted'] = 'Respuestas enviadas';
 $string['feedback'] = 'Retroalimentación';
+$string['feedback_help'] = 'Ayuda de retroalimentación';
 $string['feedbackaddmorefeedbacks'] = 'Agregar {no} campos más de retroalimentación';
 $string['feedbackbysection'] = 'Sección de retroalimentación';
 $string['feedbackdefaultlabel'] = '[Nueva sección]';
@@ -193,7 +192,6 @@ $string['feedbackglobalmessages'] = 'Mensajes de Retroalimentación Global';
 $string['feedbackhdr'] = 'Retroalimentaciones';
 $string['feedbackheading'] = 'Encabezado de retroalimentación';
 $string['feedbackheading_help'] = 'En el campo de encabezado de la retroalimentación Usted puede usar 2 variables: $scorepercent y $oppositescorepercent.';
-$string['feedback_help'] = 'Ayuda de retroalimentación';
 $string['feedbackmessages'] = 'Mensajes de sección {$a}';
 $string['feedbacknextsection'] = 'Próxima sección {$a}';
 $string['feedbacknone'] = 'Sin mensajes de retroalimentación';
@@ -274,12 +272,13 @@ $string['noanswer'] = 'No respuesta';
 $string['noattempts'] = 'No se han realizado intentos en este cuestionario';
 $string['nodata'] = 'No se ha enviado ningún dato.';
 $string['noduplicates'] = 'Elección única';
-$string['noneinuse'] = 'Este cuestionario no contiene ninguna pregunta';
 $string['non_respondents'] = 'Usuarios que aún no han respondido el cuestionario';
+$string['noneinuse'] = 'Este cuestionario no contiene ninguna pregunta';
 $string['nopublicsurveys'] = 'No hay encuestas públicas';
 $string['noresponsedata'] = 'No hay respuestas para esta pregunta.';
 $string['noresponses'] = 'Sin respuestas';
 $string['normal'] = 'Normal';
+$string['not_started'] = 'No empezado';
 $string['notanumber'] = '<strong>{$a}</strong> no es un formato de número válido.';
 $string['notapplicable'] = 'NS/NC';
 $string['notapplicablecolumn'] = 'Columna NS/NC';
@@ -290,7 +289,6 @@ $string['notifications'] = 'Enviar notificaciones de entrega';
 $string['notifications_help'] = 'Avisa a los roles con el permiso "mod/questionnaire:submissionnotification" cuando se realiza una entrega.';
 $string['notopen'] = 'Esta encuesta no se abrirá hasta {$a}.';
 $string['notrequired'] = 'Respuesta no obligatoria';
-$string['not_started'] = 'No empezado';
 $string['nousersselected'] = 'Ningún usuario seleccionado';
 $string['num'] = 'nº';
 $string['numattemptsmade'] = '{$a} intentos realizados en este cuestionario';
@@ -300,8 +298,6 @@ $string['numberscaleitems'] = 'Número de ítem en la escala';
 $string['numeric'] = 'Numérico';
 $string['of'] = 'de';
 $string['opendate'] = 'Fecha de apertura';
-$string['opendate_help'] = 'Aquí puede especificar una fecha para abrir la encuesta. Marque la casilla y seleccione la fecha y la hora que desee.
-Los usuarios no podrán cumplimentar la encuesta antes de esta fecha. Si no se selecciona esta opción, la encuesta se abrirá inmediatamente.';
 $string['option'] = 'opción {$a}';
 $string['optionalname'] = 'Nombre de la pregunta';
 $string['optionalname_help'] = 'El nombre de pregunta sólo se utiliza al exportar las respuestas al formato CSV/Excel.
@@ -337,9 +333,9 @@ $string['pluginname'] = 'Encuesta';
 $string['position'] = 'posición';
 $string['possibleanswers'] = 'Introduzca las respuestas posibles (si es necesario).';
 $string['posteddata'] = '<br />Esta página ha sido lograda con los siguientes datos enviados:<br />';
-$string['previewing'] = 'Previsualizando encuesta';
 $string['preview_label'] = 'Previsualización';
 $string['preview_questionnaire'] = 'Previsualización del Cuestionario';
+$string['previewing'] = 'Previsualizando encuesta';
 $string['previous'] = 'Previa';
 $string['previouspage'] = 'Página anterior';
 $string['print'] = 'Imprimir';
@@ -351,15 +347,13 @@ $string['public'] = 'Público';
 $string['publiccopy'] = 'Copia:';
 $string['publicoriginal'] = 'Original:';
 $string['qtype'] = 'Frecuencia de participación';
-$string['qtypedaily'] = 'responder diariamente';
 $string['qtype_help'] = 'Selecciones si los usuarios podrán responder una vez, diariamente, semanalmente, mensualmente o un número ilimitado de veces.';
+$string['qtypedaily'] = 'responder diariamente';
 $string['qtypemonthly'] = 'responder mensualmente';
 $string['qtypeonce'] = 'responder una sola vez';
 $string['qtypeunlimited'] = 'responder sin límite de intentos';
 $string['qtypeweekly'] = 'responder semanalmente';
 $string['questionnaire:addinstance'] = 'Añadir una nueva encuesta';
-$string['questionnaireadministration'] = 'Administración de encuestas';
-$string['questionnairecloses'] = 'Encuestas cerradas';
 $string['questionnaire:copysurveys'] = 'Copiar plantillas y encuestas privadas';
 $string['questionnaire:createpublic'] = 'Crear encuestas públicas';
 $string['questionnaire:createtemplates'] = 'Crear plantillas de encuestas';
@@ -368,17 +362,19 @@ $string['questionnaire:downloadresponses'] = 'Exportar las respuestas en formato
 $string['questionnaire:editquestions'] = 'Crear y editar preguntas de la encuesta';
 $string['questionnaire:manage'] = 'Crear y editar encuestas';
 $string['questionnaire:message'] = 'Enviar mensaje a los que no han respondido';
-$string['questionnaireopens'] = 'Encuestas abiertas';
 $string['questionnaire:preview'] = 'Vista previa de los cuestionarios';
 $string['questionnaire:printblank'] = 'Imprimir encuesta en blanco';
 $string['questionnaire:readallresponseanytime'] = 'Ver todas las respuestas en cualquier momento';
 $string['questionnaire:readallresponses'] = 'Ver los resúmenes de las respuestas en función de la fecha de apertura del cuestionario';
 $string['questionnaire:readownresponses'] = 'Ver las respuestas propias';
-$string['questionnairereport'] = 'Informe de la encuesta';
 $string['questionnaire:submissionnotification'] = 'Recibir notificación por cada encuesta evaluada';
 $string['questionnaire:submit'] = 'Cumplimentar y enviar una encuesta';
 $string['questionnaire:view'] = 'Ver una encuesta';
 $string['questionnaire:viewsingleresponse'] = 'Ver las respuestas individuales';
+$string['questionnaireadministration'] = 'Administración de encuestas';
+$string['questionnairecloses'] = 'Encuestas cerradas';
+$string['questionnaireopens'] = 'Encuestas abiertas';
+$string['questionnairereport'] = 'Informe de la encuesta';
 $string['questionnum'] = 'Pregunta #';
 $string['questions'] = 'Preguntas';
 $string['questionsinsection'] = 'Preguntas en esta sección:';
@@ -442,10 +438,10 @@ $string['sectionsnotset'] = '¡Debe seleccionar al menos UNA pregunta por secci�
 $string['sectiontext'] = 'Descripción';
 $string['selecttheme'] = 'Seleccione un tema gráfico (css) para utilizar en esta encuesta';
 $string['send'] = 'Enviar';
-$string['sendemail'] = 'Envía una copia de cada cuestionario a esta dirección (o déjelo en blanco si no quiere recibir nada).';
-$string['sendemail_help'] = 'Envía una copia de cada respuesta a la dirección o direcciones especificadas. Se puede indicar más de una dirección separándolas con comas. Dejar en blanco si no se quiere copia en el correo electrónico.';
 $string['send_message'] = 'Enviar un mensaje a los usuarios seleccionados';
 $string['send_message_to'] = 'Enviar mensaje a:';
+$string['sendemail'] = 'Envía una copia de cada cuestionario a esta dirección (o déjelo en blanco si no quiere recibir nada).';
+$string['sendemail_help'] = 'Envía una copia de cada respuesta a la dirección o direcciones especificadas. Se puede indicar más de una dirección separándolas con comas. Dejar en blanco si no se quiere copia en el correo electrónico.';
 $string['settings'] = 'Configuración';
 $string['settingssaved'] = 'Configuración guardada';
 $string['show_nonrespondents'] = 'No respondieron';

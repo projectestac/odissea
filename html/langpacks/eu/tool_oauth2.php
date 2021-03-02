@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_oauth2', language 'eu', version '3.8'.
  *
- * @package   tool_oauth2
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_oauth2
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['configured'] = 'Konfiguratuta';
 $string['configuredstatus'] = 'Konfiguratuta';
 $string['connectsystemaccount'] = 'Konektatu sistemako kontura';
 $string['createfromtemplate'] = 'Sortu OAuth 2 zerbitzu bat txantiloitik';
-$string['createfromtemplatedesc'] = 'Aukeratu beheko Oauth2 zerbitzuko txantiloietako bat zerbitzu-mota ezagunetarako konfigurazio egoki bat duen OAuth zerbitzu bat sortzeko. Honek OAuth2 zerbitzu bat sortuko du, autentifikaziorako beharrezkoak diren amaiera-puntu eta parametro guztiekin, baina zerbitzua erabili ahal izateko aurretik zure bezero IDa eta sekretua sartu beharko dituzu.';
+$string['createfromtemplatedesc'] = 'Aukeratu beheko Oauth2 zerbitzuko txantiloietako bat zerbitzu mota ezagunetarako konfigurazio egoki bat duen OAuth zerbitzu bat sortzeko. Honek OAuth2 zerbitzu bat sortuko du, autentifikaziorako beharrezkoak diren amaiera-puntu eta parametro guztiekin, baina zerbitzua erabili ahal izateko aurretik zure bezero IDa eta sekretua sartu beharko dituzu.';
 $string['createnewendpoint'] = 'Sortu amaiera-puntu berria "{$a}" emailearentzat';
 $string['createnewfacebookissuer'] = 'Sortu Facebook zerbitzu berria';
 $string['createnewgoogleissuer'] = 'Sortu Google zerbitzu berria';
@@ -46,9 +46,9 @@ $string['deleteuserfieldmappingconfirm'] = 'Ziur zaude "{$a}" jaulkitzailearen e
 $string['discovered'] = 'Zerbitzu aurkikuntza arrakastatsua izan da';
 $string['discovered_help'] = 'Aurkikuntzak esan nahi du OAuth 2 amaiera-puntuak OAuth zerbitzuaren oinarrizko URLtik abiatuta automatikoki zehaz daitezkeela. Zerbitzu guztiak ez dira "aurkituak" izan behar, baina horrela ez bada, amaiera-puntuak eta erabiltzaile-loturen informazioa eskuz sartu beharko da.';
 $string['discoverystatus'] = 'Aurkikuntza';
-$string['editendpoint'] = 'Editatu amaiera-puntua: {$a->issuer} jaulkitzailearen {$a->endpoint}';
+$string['editendpoint'] = 'Editatu amaiera-puntua: {$a->issuer} emailearen {$a->endpoint}';
 $string['editendpoints'] = 'Konfiguratu amaiera-puntuak';
-$string['editissuer'] = 'Editatu nortasun-emailea: {$a}';
+$string['editissuer'] = 'Editatu identitate-jaulkitzailea: {$a}';
 $string['edituserfieldmapping'] = 'Editatu {$a->issuer} jaulkitzailearen erabiltzaile-eremu lotura';
 $string['edituserfieldmappings'] = 'Konfiguratu erabiltzaile-eremuen loturak';
 $string['endpointdeleted'] = 'Amaiera-puntua ezabatu da';
@@ -65,9 +65,9 @@ $string['issuerclientid'] = 'Bezeroaren IDa';
 $string['issuerclientid_help'] = 'Emaile honentzako OAuth bezeroaren IDa';
 $string['issuerclientsecret'] = 'Bezeroaren sekretua';
 $string['issuerclientsecret_help'] = 'Emaile honentzako OAuth bezeroaren sekretua';
-$string['issuerdeleted'] = 'Nortasun-emailea ezabatu da';
-$string['issuerdisabled'] = 'Nortasun-emailea desgaitu da';
-$string['issuerenabled'] = 'Nortasun-emailea gaitu da';
+$string['issuerdeleted'] = 'Identitate-jaulkitzailea ezabatu da';
+$string['issuerdisabled'] = 'Identitate-jaulkitzailea desgaitu da';
+$string['issuerenabled'] = 'Identitate-jaulkitzailea gaitu da';
 $string['issuerimage'] = 'Logoaren URLa';
 $string['issuerimage_help'] = 'Emailearen logoa erakusteko erabiltzen den irudiaren URLa. Sarbide-orrian erakutsi daiteke.';
 $string['issuerloginparams'] = 'Saio-hasiera eskaeran sartutako parametro gehigarriak.';
@@ -82,7 +82,7 @@ $string['issuername'] = 'izena';
 $string['issuername_help'] = 'Identitate-emailearen izena. Sarbide-orrian erakutsi daiteke.';
 $string['issuerrequireconfirmation'] = 'Behartu helbide elektronikoaren egiaztapena';
 $string['issuerrequireconfirmation_help'] = 'Behartu erabiltzaile guztiek euren helbide elektronikoa egiaztatzea OAuth bidez saioa hasi aurretik. Honek eragina du saio-hastearekin batera sortutako kontuetan, baita existitzen zen Moodle kontu bat helbide elektronikoa lotuz OAuth bidezko saio-hasiera egiteko konektatzen denean ere.';
-$string['issuers'] = 'Jaulkitzaileak';
+$string['issuers'] = 'Emaileak';
 $string['issuersetup'] = 'OAuth 2 zerbitzu arruntak konfiguratzeko argibide xeheak.';
 $string['issuersetuptype'] = '{$a} OAuth 2 hornitzailea konfiguratzeko argibide xeheak.';
 $string['issuershowonloginpage'] = 'Erakutsi sarbide-orrian.';

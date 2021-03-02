@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'eu', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['changename'] = 'Aldatu etiketa-izena';
 $string['changeshowstandard'] = 'Aldatu {$a} eremuan erakutsitako lehenetsitako etiketak';
 $string['changessaved'] = 'Aldaketak gorde dira';
 $string['changetagcoll'] = 'Aldatu {$a} eremuko etiketa-bilduma';
-$string['changetype'] = 'Aldatu etiketa-mota';
+$string['changetype'] = 'Aldatu etiketa mota';
 $string['collnameexplained'] = 'Utzi eremua hutsik lehenetsitako balioa erabiltzeko: {$a}';
 $string['combined'] = 'Etiketak konbinatu dira';
 $string['combineselected'] = 'Konbinazioa aukeratu da';
@@ -90,7 +90,7 @@ $string['nameuseddocombine'] = 'Etiketa-izena dagoeneko erabilia izaten ari da. 
 $string['newcollnamefor'] = 'izen berria {$a} etiketa-bildumarako';
 $string['newnamefor'] = '{$a} etiketarako izen berria';
 $string['nextpage'] = 'Gehiago';
-$string['noresultsfor'] = 'Ez dago emaitzarik "{$a}"-(e)rako';
+$string['noresultsfor'] = 'Ez dago emaitzarik "{$a}"(e)rako';
 $string['notagsfound'] = 'Ez da aurkitu "{$a}"-(r)ekin bat datorren etiketarik';
 $string['nothingtoupdate'] = 'Ez dago eguneratzeko ezer';
 $string['owner'] = 'Jabea';
@@ -102,16 +102,16 @@ $string['prevpage'] = 'Atzera';
 $string['privacy:metadata:tag'] = 'Etiketa bakoitzaren xehetasunak euren deskribapenarekin eta erlazionatutako beste informazioarekin batera gordetzen dira.';
 $string['privacy:metadata:tag:description'] = 'Etiketaren deskribapena';
 $string['privacy:metadata:tag:flag'] = 'Etiketa bat ezegoki gisa markatua izan den edo ez';
+$string['privacy:metadata:tag:name'] = 'Etiketaren izena - hau izenaren normalizatutako bertsioa da.';
+$string['privacy:metadata:tag:rawname'] = 'Etiketaren izena - hau da erakutsiko den izena.';
+$string['privacy:metadata:tag:timemodified'] = 'Etiketa azkenengoz aldatua izan zeneko unea.';
+$string['privacy:metadata:tag:userid'] = 'Etiketa sortu zuen erabiltzailearen IDa.';
 $string['privacy:metadata:taginstance'] = 'Etiketa bakoitza eta erabilia izan den leku bakoitzaren arteko esteka.';
 $string['privacy:metadata:taginstance:ordering'] = 'Etiketa honen ordena erlatiboa.';
 $string['privacy:metadata:taginstance:tagid'] = 'Etiketarako esteka';
 $string['privacy:metadata:taginstance:timecreated'] = 'Etiketa hau helbururako estekatua izan zeneko unea.';
 $string['privacy:metadata:taginstance:timemodified'] = 'Etiketa hau helbururako aldatua izan zeneko unea.';
 $string['privacy:metadata:taginstance:tiuserid'] = 'Erabiltzaileek partekatutako edukia banaka etiketatu dezaketenean, etiketa-instantziaren jabea gordetzen da.';
-$string['privacy:metadata:tag:name'] = 'Etiketaren izena - hau izenaren normalizatutako bertsioa da.';
-$string['privacy:metadata:tag:rawname'] = 'Etiketaren izena - hau da erakutsiko den izena.';
-$string['privacy:metadata:tag:timemodified'] = 'Etiketa azkenengoz aldatua izan zeneko unea.';
-$string['privacy:metadata:tag:userid'] = 'Etiketa sortu zuen erabiltzailearen IDa.';
 $string['ptags'] = 'Erabiltzaileek definitutako etiketak (komaz banatuta)';
 $string['relatedblogs'] = 'Azken aldiko blog-sarrerak';
 $string['relatedtags'] = 'Harremana duten etiketak';
@@ -121,7 +121,7 @@ $string['resetfilter'] = 'Berrabiarazi iragazkia';
 $string['resetflag'] = 'Berrabiarazi marka';
 $string['responsiblewillbenotified'] = 'Arduradunari jakinaraziko zaio';
 $string['rssdesc'] = 'RSS jario hau Moodlek automatikoki sortutakoa da, eta ikastaroetarako erabiltzaileak sortu dituen etiketak ditu.';
-$string['rsstitle'] = 'Ikastaro-etiketen RSS jarioa {$a} erabiltzailearentzat';
+$string['rsstitle'] = 'Ikastaro-etiketen RSS jarioa erabiltzailearentzat: {$a} ';
 $string['search'] = 'Bilatu';
 $string['searchable'] = 'Bila daiteke';
 $string['searchable_help'] = 'Markatuz gero, bilaketa-bilduma honetako etiketak "Bilatu etiketak" bidez aurkitu ahal izango dira. Markatu gabe utziz gero, etiketak oraindik bestelako bilaketa-orrien bidez aurkitu ahal izango dira.';
@@ -147,11 +147,11 @@ $string['tag'] = 'Etiketa';
 $string['tagarea_blog_external'] = 'Kanpoko blog-sarrerak';
 $string['tagarea_course'] = 'Ikastaroak';
 $string['tagarea_course_modules'] = 'Jarduerak eta baliabideak';
+$string['tagarea_post'] = 'Blogetako mezuak';
+$string['tagarea_user'] = 'Erabiltzailearen interesak';
 $string['tagareaenabled'] = 'Gaituta';
 $string['tagareaname'] = 'Izena';
-$string['tagarea_post'] = 'Blogetako mezuak';
 $string['tagareas'] = 'Etiketa-eremuak';
-$string['tagarea_user'] = 'Erabiltzailearen interesak';
 $string['tagcollection'] = 'Etiketa-bilduma';
 $string['tagcollection_help'] = 'Etiketa-bildumak arlo ezberdinetako etiketa multzoak dira. Esaterako, etiketa estandarren bilduma bat erabili daiteke ikastaroak etiketatzeko, eta beste bilduma bana erabiltzaileen interesak eta blogetako mezuak etiketatzeko. Erabiltzaile batek etiketa batean klik egiten duenean, etiketa-orriak etiketa hori duten bilduma bereko elementuak erakusten ditu. Etiketak bilduma batera automatikoki gehitu daitezke zehaztutako eremuaren arabera edo eskuz etiketa estandar gisa gordeta.';
 $string['tagcollections'] = 'Etiketa-bildumak';
@@ -161,5 +161,5 @@ $string['tagsaredisabled'] = 'Etiketak desgaituta daude';
 $string['thingstaggedwith'] = '"{$a->name}" {$a->count} aldiz erabili da';
 $string['thingtaggedwith'] = '"{$a->name}" behin erabili da';
 $string['timemodified'] = 'Aldatuta';
-$string['typechanged'] = 'Etiketa-mota aldatuta';
+$string['typechanged'] = 'Etiketa mota aldatuta';
 $string['updatetag'] = 'Eguneratu';

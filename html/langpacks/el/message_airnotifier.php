@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,25 +12,26 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message_airnotifier', language 'el', version '3.8'.
  *
- * @package   message_airnotifier
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message_airnotifier
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['airnotifier:managedevice'] = 'Διαχείριση συσκευών';
 $string['airnotifieraccesskey'] = 'Κλειδί πρόσβασης airnotifier';
 $string['airnotifierappname'] = 'Όνομα εφαρμογής airnotifier';
-$string['airnotifier:managedevice'] = 'Διαχείριση συσκευών';
 $string['airnotifiermobileappname'] = 'Όνομα εφαρμογής κινητού';
 $string['airnotifierport'] = 'Θύρα airnotifier';
 $string['airnotifierurl'] = 'Διεύθυνση URL του airnotifier';
-$string['configairnotifieraccesskey'] = 'Το κλειδί πρόσβασης για τη σύνδεση στον εξυπηρετητή Airnotifier. Μπορείτε να αποκτήσετε ένα κλειδί πρόσβασης κάνοντας κλικ στον παρακάτω σύνδεσμο «Αίτημα κλειδιού πρόσβασης» (μόνο σε εγγεγραμμένους ιστότοπους) ή δημιουργώντας έναν λογαριασμό στην <a href="https://apps.moodle.com">Πύλη εφαρμογών Moodle</a>.';
+$string['configairnotifieraccesskey'] = 'Το κλειδί πρόσβασης για τη σύνδεση στον εξυπηρετητή Airnotifier. Μπορείτε να αποκτήσετε ένα κλειδί πρόσβασης κάνοντας κλικ στον παρακάτω σύνδεσμο «Αίτημα κλειδιού πρόσβασης» (μόνο καταχωρημένοι ιστότοποι) ή δημιουργώντας έναν λογαριασμό στην <a href="https://apps.moodle.com">Πύλη εφαρμογών Moodle</a>.';
 $string['configairnotifierappname'] = 'Το αναγνωριστικό όνομα της εφαρμογής κινητού στο Airnotifier.';
 $string['configairnotifiermobileappname'] = 'Το μοναδικό αναγνωριστικό της εφαρμογής κινητού (συνήθως κάτι σαν com.moodle.moodlemobile).';
 $string['configairnotifierport'] = 'Η θύρα για την σύνδεση του εξυπηρετητή airnotifier.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'el', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,6 +45,7 @@ $string['creategrouping'] = 'Δημιουργία ομαδοποίησης';
 $string['creategroupinselectedgrouping'] = 'Δημιουργία ομάδας στην ομαδοποίηση';
 $string['createingrouping'] = 'Ομαδοποίηση αυτόματα δημιουργημένων ομάδων';
 $string['createorphangroup'] = 'Δημιουργία ορφανής ομάδας';
+$string['csvdelimiter'] = 'Διαχωριστικό CSV';
 $string['databaseupgradegroups'] = 'Η έκδοση του Ομάδες είναι τώρα {$a}';
 $string['defaultgrouping'] = 'Προεπιλεγμένη ομαδοποίηση';
 $string['defaultgroupingname'] = 'Ομαδοποίηση';
@@ -61,11 +62,12 @@ $string['editgroupsettings'] = 'Επεξεργασία ρυθμίσεων ομά
 $string['editusersgroupsa'] = 'Επεξεργασία ομάδων για «{$a}»';
 $string['enablemessaging'] = 'Ομαδικά μηνύματα';
 $string['enablemessaging_help'] = 'Εάν ενεργοποιηθεί, τα μέλη μιας ομάδας μπορούν να στείλουν μηνύματα στους άλλους στην ομάδα μέσω του συρταριού μηνυμάτων.';
+$string['encoding'] = 'Κωδικοποίηση';
 $string['enrolmentkey'] = 'Κλειδί εγγραφής';
-$string['enrolmentkeyalreadyinuse'] = 'Αυτό το κλειδί εγγραφής χρησιμοποιείται ήδη για μια άλλη ομάδα.';
 $string['enrolmentkey_help'] = 'Ένα κλειδί εγγραφής επιτρέπει στην πρόσβαση στο μάθημα να περιορίζεται μόνο σε όσους γνωρίζουν το κλειδί. Εάν έχει οριστεί ένα κλειδί εγγραφής ομάδας, τότε η εισαγωγή αυτού του κλειδιού όχι μόνο θα επιτρέψει στο χρήστη την είσοδο στο μάθημα, αλλά θα τον κάνει αυτόματα και μέλος αυτής της ομάδας.
 
 Σημείωση: (Πριν τη χρήση) τα κλειδιά εγγραφής ομάδας πρέπει να είναι ενεργοποιημένα στις ρυθμίσεις αυτο-εγγραφής και πρέπει επίσης να καθοριστεί ένα κλειδί εγγραφής για το μάθημα.';
+$string['enrolmentkeyalreadyinuse'] = 'Αυτό το κλειδί εγγραφής χρησιμοποιείται ήδη για μια άλλη ομάδα.';
 $string['erroraddremoveuser'] = 'Σφάλμα κατά την προσθήκη/διαγραφή του χρήστη {$a} στην ομάδα';
 $string['erroreditgroup'] = 'Σφάλμα δημιουργίας/ανανέωσης της ομάδας {$a}';
 $string['erroreditgrouping'] = 'Σφάλμα δημιουργίας/ανανέωσης της ομαδοποίησης {$a}';
@@ -95,10 +97,10 @@ $string['groupinfo'] = 'Πληροφορίες σχετικά με την επι
 $string['groupinfomembers'] = 'Πληροφορίες σχετικά με τα επιλεγμένα μέλη';
 $string['groupinfopeople'] = 'Πληροφορίες σχετικά με τα επιλεγμένα άτομα';
 $string['grouping'] = 'Ομαδοποίηση';
-$string['groupingaddedsuccesfully'] = 'Η ομαδοποίηση {$a} προστέθηκε με επιτυχία';
-$string['groupingdescription'] = 'Περιγραφή ομαδοποίησης';
 $string['grouping_help'] = 'Μια ομαδοποίηση είναι μια συλλογή ομάδων μέσα σε ένα μάθημα. Εάν επιλεγεί μια ομαδοποίηση, οι μαθητές που έχουν ανατεθεί σε ομάδες εντός της ομαδοποίησης θα μπορούν να συνεργαστούν.
 ((Η λειτουργία ομάδων πρέπει να έχει οριστεί σε ξεχωριστές ή ορατές ομάδες.))';
+$string['groupingaddedsuccesfully'] = 'Η ομαδοποίηση {$a} προστέθηκε με επιτυχία';
+$string['groupingdescription'] = 'Περιγραφή ομαδοποίησης';
 $string['groupingname'] = 'Όνομα ομαδοποίησης';
 $string['groupingnameexists'] = 'Το όνομα ομαδοποίησης «{$a}» υπάρχει ήδη σε αυτό το μάθημα, παρακαλούμε επιλέξτε ένα άλλο.';
 $string['groupings'] = 'Ομαδοποιήσεις';
@@ -111,8 +113,6 @@ $string['groupmembers'] = 'Μέλη ομάδας';
 $string['groupmemberssee'] = 'Εμφάνιση μελών ομάδας';
 $string['groupmembersselected'] = 'Μέλη της επιλεγμένης ομάδας';
 $string['groupmode'] = 'Λειτουργία ομάδας';
-$string['groupmodeforce'] = 'Επιβολή τρόπου λειτουργίας ομάδων';
-$string['groupmodeforce_help'] = 'Αν ο τρόπος λειτουργίας ομάδων είναι υποχρεωτικός, τότε ο τρόπος λειτουργίας ομάδων του μαθήματος εφαρμόζεται σε κάθε δραστηριότητα του μαθήματος. Οι ρυθμίσεις τρόπου λειτουργίας ομάδων κάθε δραστηριότητας θα αγνοηθούν.';
 $string['groupmode_help'] = 'Αυτή η ρύθμιση έχει 3 επιλογές:
 
 * Καμία ομάδα
@@ -120,6 +120,8 @@ $string['groupmode_help'] = 'Αυτή η ρύθμιση έχει 3 επιλογ�
 * Ορατές ομάδες - Κάθε μέλος της ομάδας εργάζεται στη δική του ομάδα αλλά μπορεί επίσης να δει τις άλλες ομάδες
 
 Ο τρόπος λειτουργίας των ομάδων που ορίζεται σε επίπεδο μαθήματος είναι ο προεπιλεγμένος τρόπος λειτουργίας για όλες τις δραστηριότητες στο μάθημα. Κάθε δραστηριότητα που υποστηρίζει ομάδες μπορεί επίσης να ορίσει το δικό της τρόπο λειτουργίας, ωστόσο αν ο τρόπος λειτουργίας σε επίπεδο μαθήματος είναι υποχρεωτικός, η ρύθμιση τρόπου λειτουργίας ομάδων κάθε δραστηριότητας θα αγνοηθεί.';
+$string['groupmodeforce'] = 'Επιβολή τρόπου λειτουργίας ομάδων';
+$string['groupmodeforce_help'] = 'Αν ο τρόπος λειτουργίας ομάδων είναι υποχρεωτικός, τότε ο τρόπος λειτουργίας ομάδων του μαθήματος εφαρμόζεται σε κάθε δραστηριότητα του μαθήματος. Οι ρυθμίσεις τρόπου λειτουργίας ομάδων κάθε δραστηριότητας θα αγνοηθούν.';
 $string['groupmy'] = 'Η ομάδα μου';
 $string['groupname'] = 'Όνομα ομάδας';
 $string['groupnameexists'] = 'Το όνομα ομάδας «{$a}» υπάρχει ήδη σε αυτό το μάθημα, παρακαλούμε επιλέξτε ένα άλλο.';
@@ -165,8 +167,8 @@ $string['nogroupsassigned'] = 'Χωρίς ανάθεση ομάδων';
 $string['nopermissionforcreation'] = 'Αδυναμία δημιουργίας της ομάδας «{$a}» καθώς δεν έχετε τα απαιτούμενα δικαιώματα';
 $string['nosmallgroups'] = 'Αποτροπή τελευταίας μικρής ομάδας';
 $string['notingroup'] = 'Αγνόηση χρηστών σε ομάδες';
-$string['notingrouping'] = '[Όχι σε ομαδοποίηση]';
-$string['notingrouplist'] = '[Όχι σε ομάδα]';
+$string['notingrouping'] = 'Όχι σε ομαδοποίηση';
+$string['notingrouplist'] = 'Όχι σε ομάδα';
 $string['nousersinrole'] = 'Δεν υπάρχουν κατάλληλοι χρήστες στον επιλεγμένο ρόλο';
 $string['number'] = 'Καταμέτρηση ομάδας/μελών';
 $string['numgroups'] = 'Αριθμός ομάδων';

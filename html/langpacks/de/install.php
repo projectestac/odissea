@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'install', language 'de', version '3.8'.
  *
- * @package   install
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     install
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -96,7 +96,7 @@ Geben Sie den absoluten Pfad für Ihre Moodle-Installation an. Stellen Sie siche
 <b>Datenverzeichnis:</b>
 Moodle benötigt ein Verzeichnis, in dem hochgeladene Dateien abgelegt werden. Dieses Verzeichnis muss Lese- und Schreibrechte für das Nutzerkonto besitzen, mit dem Ihr Webservers arbeitet (üblicherweise \'nobody\' oder \'apache\'). Außerdem darf das Verzeichnis nicht direkt aus dem Internet erreichbar sein. Das Intallationsskript wird versuchen, ein solches Verzeichnis zu erstellen, falls es nicht schon existiert.';
 $string['dirroot'] = 'Moodle-Verzeichnis';
-$string['dirrooterror'] = 'Die Einstellungen für das Moodle-Verzeichnis sind nicht korrekt.  Es wurde an dieser Stelle keine Moodle-Installation gefunden. Der nachfolgende Wert wurden zurückgesetzt.';
+$string['dirrooterror'] = 'Die Einstellungen für das Moodle-Verzeichnis nicht richtig zu sein.  An dieser Stelle wurde keine Moodle-Installation gefunden. Der nachfolgende Wert wurde zurückgesetzt.';
 $string['download'] = 'Herunterladen';
 $string['downloadlanguagebutton'] = 'Sprachpaket \'{$a}\' herunterladen';
 $string['downloadlanguagehead'] = 'Sprachpaket herunterladen';
@@ -105,7 +105,7 @@ $string['downloadlanguagesub'] = 'Sie können ein Sprachpaket herunterladen und 
 $string['doyouagree'] = 'Stimmen Sie zu? (ja/nein)';
 $string['environmenthead'] = 'Installationsvoraussetzungen werden geprüft ...';
 $string['environmentsub'] = 'Es wird geprüft, ob die alle Systemkomponenten die Installationsanforderungen erfüllen.';
-$string['environmentsub2'] = 'Jede Version hat Mindestvoraussetzungen für der PHP-Version und für verbindliche PHP-Extensions. Vor einer Installation oder einer Aktualisierung wird eine vollständige Prüfung durchgeführt. Bitte fragen Sie die Administrator/innen des Servers, wenn Sie mit der Installation einer neuen Version oder mit der Aktivierung von PHP-Extensions nicht weiterkommen.';
+$string['environmentsub2'] = 'Jede Version hat Mindestvoraussetzungen für der PHP-Version und für verbindliche PHP-Extensions. Vor einer Installation oder einer Aktualisierung wird eine vollständige Prüfung durchgeführt. Bitte fragen Sie den Administrator des Servers, wenn Sie mit der Installation einer neuen Version oder mit der Aktivierung von PHP-Extensions nicht weiterkommen.';
 $string['errorsinenvironment'] = 'Fehler bei der Prüfung der Systemvoraussetzungen!';
 $string['fail'] = 'Fehlgeschlagen';
 $string['fileuploads'] = 'Hochladene Dateien';
@@ -167,7 +167,7 @@ $string['pgsqlextensionisnotpresentinphp'] = 'PHP ist nicht richtig konfiguriert
 $string['phpextension'] = 'PHP-Extension {$a}';
 $string['phpversion'] = 'PHP-Version';
 $string['phpversionhelp'] = '<p>Moodle benötigt mindestens die PHP-Version 5.6.5. oder 7.1 (7.0.x weist einige Einschränkungen auf).</p>
-<p>Sie nutzen im Moment die Version {$a}.</p>
+<p>Sie verwenden im Moment die Version {$a}.</p>
 <p>Sie müssen Ihre PHP-Version aktualisieren oder auf einen Server mit einer neueren PHP-Version wechseln.<br />';
 $string['releasenoteslink'] = 'Um Informationen über diese Moodle-Version zu erhalten, lesen Sie bitte in die Versionshinweise auf {$a}';
 $string['safemode'] = 'Safe Mode';

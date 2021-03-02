@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'sv', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['cannotreset'] = 'Det gick inte att återställa denna begäran. Endast 
 $string['categories'] = 'Kategorier';
 $string['categorieslist'] = '';
 $string['category'] = 'Kategori';
+$string['category_help'] = 'En kategori i dataregistret beskriver en typ av data. En ny kategori kan läggas till, eller om "Ärv" är markerat tillämpas datakategorin från en högre kontext. Kontexter är (från lågt till högt): Block > Aktivitetsmoduler > Kurser > Kurskategorier > Webbplats.';
 $string['categorycreated'] = 'Kategori skapad';
 $string['categorydefault'] = 'Standardkategori';
 $string['categorydefault_help'] = 'Standardkategorin är den datakategori som tillämpas på eventuella nya instanser. Om Ärv är markerat tillämpas datakategorin från en högre kontext. Kontexter är (från låg till hög): Block > Aktivitetsmoduler > Kurser > Kurskategorier > Användare > Webbplats.';
-$string['category_help'] = 'En kategori i dataregistret beskriver en typ av data. En ny kategori kan läggas till, eller om "Ärv" är markerat tillämpas datakategorin från en högre kontext. Kontexter är (från lågt till högt): Block > Aktivitetsmoduler > Kurser > Kurskategorier > Webbplats.';
 $string['categoryupdated'] = 'Kategori uppdaterad';
 $string['close'] = 'Stäng';
 $string['compliant'] = 'Förenlig';
@@ -59,9 +59,9 @@ $string['confirmcompletion'] = 'Vill du verkligen markera denna användares för
 $string['confirmcontextdeletion'] = 'Vill du verkligen bekräfta borttagningen av de valda kontextgen? Detta kommer också att radera alla användardata för respektive delkontexter.';
 $string['confirmdenial'] = 'Vill du verkligen avslå denna begäran.';
 $string['confirmrequestresubmit'] = 'Är du säker på att du vill avbryta den aktuella {$a->type}-begäran för {$a->username} och skicka den igen?';
-$string['contactdataprotectionofficer'] = 'Kontakta Dataskyddsombud';
+$string['contactdataprotectionofficer'] = 'Kontakta personuppgiftsansvarig';
 $string['contactdataprotectionofficer_desc'] = 'Om aktiverat kommer användarna att kunna kontakta Dataskyddsombudet och göra en databegäran via en länk på deras profilsida.';
-$string['contactdpoviaprivacypolicy'] = 'Kontakta Dataskyddsombudet enligt beskrivningen i integritetspolicyn.';
+$string['contactdpoviaprivacypolicy'] = 'Kontakta personuppgiftsansvarig som beskrivs i integritetspolicyn.';
 $string['contextlevelname10'] = 'Webbplats';
 $string['contextlevelname30'] = 'Användare';
 $string['contextlevelname40'] = 'Kurskategorier';
@@ -69,7 +69,7 @@ $string['contextlevelname50'] = 'Kurser';
 $string['contextlevelname70'] = 'Aktivitetsmoduler';
 $string['contextlevelname80'] = 'Block';
 $string['contextpurposecategorysaved'] = 'Syfte och kategori sparad.';
-$string['createcategory'] = '';
+$string['createcategory'] = 'Skapa datakategori';
 $string['createdeletedatarequest'] = 'Skapa begäran om borttagning av data';
 $string['createnewdatarequest'] = 'Skapa en ny databegäran';
 $string['createpurpose'] = 'Skapa syfte';
@@ -121,6 +121,7 @@ $string['deprecated'] = 'Föråldrad sekretessplugin';
 $string['deprecatedexplanation'] = 'Denna plugin använder en gammal version av ett av integritetsgränssnitten och bör uppdateras.';
 $string['download'] = 'Ladda ned';
 $string['downloadexpireduser'] = 'Giltighetstiden för nedladdningen har löpt ut. Skicka in en ny förfrågan om du vill exportera dina personuppgifter.';
+$string['dporolemapping'] = 'Rollmappning personuppgiftsansvarig';
 $string['dporolemapping_desc'] = 'Dataskyddsombudet kan hantera dataförfrågningar. Förmågan tool/dataprivacy:managedatarequests måste tillåtas för en roll för att den ska kunna visas som en roll av typen Dataskyddsombud.';
 $string['duplicaterole'] = 'Rollen är redan angiven';
 $string['editcategories'] = 'Redigera kategorier';
@@ -240,13 +241,13 @@ $string['privacyrequestexpiry'] = 'Personuppgiftsförfrågan upphör';
 $string['privacyrequestexpiry_desc'] = 'Den tid som godkända personuppgiftsförfråganingar kommer att vara tillgängliga för nedladdning innan den löper ut. Om den är satt till noll, finns det ingen tidsgräns.';
 $string['protected'] = 'Skyddad';
 $string['protectedlabel'] = 'Den rättsliga grunden för kvarhållning av dessa uppgifter har företrädesrätt framför en användares begäran att bli bortglömd. Dessa data kommer endast att tas bort när kvarhållningsperioden löpt ut.';
-$string['purpose'] = '';
-$string['purposecreated'] = '';
+$string['purpose'] = 'Syfte';
+$string['purpose_help'] = 'Syftet beskriver orsaken till behandlingen av personuppgifterna. Ett nytt syfte kan läggas till, eller om "Ärv" är valt, tillämpas syftet från en högre kontext. Kontexter är (från låg till hög): Block > Aktivitetsmoduler > Kurser > Kurskategorier > Användare > Webbplats.';
+$string['purposecreated'] = 'Syfte skapat';
 $string['purposedefault'] = 'Standardsyfte';
 $string['purposedefault_help'] = 'Standardsyftet är syftet som tillämpas på eventuella nya instanser. Om "Ärv" är valt tillämpas syftet från en högre kontext. Kontexter är (från låg till hög): Block > Aktivitetsmoduler > Kurser > Kurskategorier > Användare > Webbplats.';
-$string['purpose_help'] = 'Syftet beskriver orsaken till behandlingen av personuppgifterna. Ett nytt syfte kan läggas till, eller om "Ärv" är valt, tillämpas syftet från en högre kontext. Kontexter är (från låg till hög): Block > Aktivitetsmoduler > Kurser > Kurskategorier > Användare > Webbplats.';
 $string['purposeoverview'] = 'Ett syfte beskriver det avsedda användandet och kvarhållningsprincipen för den data som lagras. Dessutom anges bakgrunden till användandet och kvarhållningen i beskrivningen av syftet.';
-$string['purposes'] = '';
+$string['purposes'] = 'Syften';
 $string['purposeslist'] = 'Syften för personuppgifter';
 $string['purposeupdated'] = 'Syfte uppdaterat';
 $string['replyto'] = 'Svara';
@@ -267,11 +268,11 @@ $string['requestsdenied'] = 'Förfrågningarna har avslagits';
 $string['requeststatus'] = 'Status';
 $string['requestsubmitted'] = 'Din begäran har skickats till sajtens personuppgiftsansvarige';
 $string['requesttype'] = 'Typ';
+$string['requesttype_help'] = 'Välj en anledning till att du vill kontakta sajtens personuppgiftsansvarige';
 $string['requesttypedelete'] = 'Radering av alla mina personuppgifter';
 $string['requesttypedeleteshort'] = 'Radera';
 $string['requesttypeexport'] = 'Export av alla mina personuppgifter';
 $string['requesttypeexportshort'] = 'Exportera';
-$string['requesttype_help'] = 'Välj en anledning till att du vill kontakta sajtens personuppgiftsansvarige';
 $string['requesttypeothers'] = 'Allmän förfrågan';
 $string['requesttypeothersshort'] = 'Övrigt';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';
@@ -322,6 +323,8 @@ $string['statuspreprocessing'] = 'Förbehandlar';
 $string['statusprocessing'] = 'Behandlar';
 $string['statusready'] = 'Nedladdning klar';
 $string['statusrejected'] = 'Avvisad';
+$string['subjectscope'] = 'Rollomfång';
+$string['subjectscope_help'] = 'Rollomfånget listar de roller som kan tilldelas i denna kontext.';
 $string['summary'] = 'Översikt över registerkonfiguration';
 $string['systemconfignotsetwarning'] = 'Syfte och kategori för webbplatsen har inte angivits. Om dessa inte är angivna kommer all data tas bort i samband med begäranden om borttagning.';
 $string['tobedeleted'] = 'Data som kommer tas bort';

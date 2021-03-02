@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_configurable_reports', language 'pt', version '3.8'.
  *
- * @package   block_configurable_reports
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_configurable_reports
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,7 +70,7 @@ $string['comp_customsql'] = 'SQL personalizado';
 $string['comp_customsql_help'] = '<p>Adicione uma consulta SQL funcional. Não use o prefixo da base de dados Moodle $CFG->prefix. Use "prefix_" sem aspas </p>
 <p>Exemplo: SELECT * FROM prefix_disciplina </p>
 
-<p>Pode encontrar muitos relatórios SQL aqui: <a href="http://docs.moodle.org/pt/ad-hoc_contributed_reports" target="_blank">relatórios ad-hoc de terceiros</a> < / p>
+<p>Pode encontrar muitos relatórios SQL aqui: <a href="http://docs.moodle.org/pt/ad-hoc_contributed_reports" target="_blank">relatórios ad hoc de terceiros</a> < / p>
 
 <p>Uma estrutura atualizada das tabelas do Moodle e as suas relações interligadas: <a href="https://docs.moodle.org/dev/Database_Schema" target="_blank">esquema da base de dados</a></p>
 
@@ -87,7 +87,6 @@ $string['comp_filters_help'] = '<p>Pode escolher aqui os filtros a serem exibido
 <p>Para usar filtros, se o tipo é relatório SQL, consulte: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">tutorial sobre criar um relatório SQL</a></p>
 
 <p>Mais informações: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">documentação do módulo</a></p>';
-$string['componenthelp'] = 'Ajuda do componente';
 $string['comp_ordering'] = 'Ordenação';
 $string['comp_ordering_help'] = '<p>Pode escolher aqui o modo de ordenação utilizando campos.</p>
 
@@ -106,14 +105,15 @@ $string['comp_template_help'] = '<p>Pode modificar a estrutura do relatório cri
 <p>Para criar um modelo, veja os marcadores de substituição que pode usar no cabeçalho, rodapé e para cada registo do relatório usando os botões de ajuda ou a informação disponível na página.</p>
 
 <p>Mais informações: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">documentação do módulo</a></p>';
+$string['componenthelp'] = 'Ajuda do componente';
 $string['conditionexpr'] = 'Condição';
 $string['conditionexpr_conditions'] = 'Condição';
 $string['conditionexpr_conditions_help'] = '<p>Pode combinar condições usando expressões lógicas</p>
 <p>Insira uma expressão lógica válida com estes operadores: and e or.</p>';
-$string['conditionexprhelp'] = 'Insira uma condição válida, por exemplo: (c1 and c2) or (c4 and c3)';
 $string['conditionexpr_permissions'] = 'Condição';
 $string['conditionexpr_permissions_help'] = '<p>Pode combinar condições usando expressões lógicas</p>
 <p>Insira uma expressão lógica válida com estes operadores: and e or.</p>';
+$string['conditionexprhelp'] = 'Insira uma condição válida, por exemplo: (c1 and c2) or (c4 and c3)';
 $string['conditions'] = 'Condições';
 $string['configurable_reports:addinstance'] = 'Adicionar novo bloco de Relatórios personalizados';
 $string['configurable_reports:manageownreports'] = 'Gerir os relatórios do próprio';
@@ -133,18 +133,18 @@ $string['courseparent'] = 'Disciplinas cuja ascendente é';
 $string['courses'] = 'Disciplinas';
 $string['coursestats'] = 'Estatísticas da disciplina';
 $string['cron'] = 'Execução diária automática';
-$string['crondescription'] = 'Agendar esta consulta para ser executar todos os dias (à noite)';
 $string['cron_help'] = 'Agendar esta consulta para ser executar todos os dias (à noite)';
+$string['crondescription'] = 'Agendar esta consulta para ser executar todos os dias (à noite)';
 $string['crrepository'] = 'Repositório dos relatórios';
 $string['crrepositoryinfo'] = 'Repositório remoto partilhado com relatórios de amostra totalmente funcionais (nome do proprietário da conta do GitHub + barra + nome do repositório)';
 $string['currentreportcourse'] = 'Disciplina do relatório atual';
 $string['currentreportcourse_summary'] = 'A disciplina na qual o relatório foi criado';
 $string['currentuser'] = 'Utilizador atual';
+$string['currentuser_summary'] = 'O utilizador que está a visualizar o relatório';
 $string['currentusercourses'] = 'Disciplinas em que utilizador atual está inscrito';
 $string['currentusercourses_summary'] = 'Lista das disciplinas dos utilizadores atuais (apenas disciplinas visíveis)';
 $string['currentuserfinalgrade'] = 'Nota final do utilizador atual na disciplina';
 $string['currentuserfinalgrade_summary'] = 'Esta coluna mostra a nota final do utilizador atual na linha da disciplina';
-$string['currentuser_summary'] = 'O utilizador que está a visualizar o relatório';
 $string['cuserfield'] = 'Condição do campo do utilizador';
 $string['custom'] = 'Personalizado';
 $string['customdateformat'] = 'Formato de data personalizado';
@@ -152,7 +152,6 @@ $string['customsql'] = 'SQL personalizado';
 $string['datatables'] = 'Ativar biblioteca DataTables do JS';
 $string['datatables_emptytable'] = 'Sem dados disponíveis na tabela';
 $string['datatables_first'] = 'Primeiro';
-$string['datatablesinfo'] = 'Biblioteca DataTables do JS (ordenação de colunas, cabeçalho fixo, pesquisa, paginação ...)';
 $string['datatables_info'] = 'A mostrar _START_ até _END_ de_TOTAL_ registos';
 $string['datatables_infoempty'] = 'A mostrar de 0 até 0 de 0 registos';
 $string['datatables_infofiltered'] = '(filtrado de _MAX_total registos)';
@@ -166,6 +165,7 @@ $string['datatables_search'] = 'Procurar:';
 $string['datatables_sortascending'] = ': ative para ordenar as colunas por ordem crescente';
 $string['datatables_sortdescending'] = ': ative para ordenar as colunas por ordem crescente';
 $string['datatables_zerorecords'] = 'Nenhum registo coincidente foi encontrado';
+$string['datatablesinfo'] = 'Biblioteca DataTables do JS (ordenação de colunas, cabeçalho fixo, pesquisa, paginação ...)';
 $string['date'] = 'Data';
 $string['dateformat'] = 'Formato da data';
 $string['dbhost'] = 'Servidor da base de dados';
@@ -202,14 +202,16 @@ $string['executeatinfo'] = 'O cron do Moodle executará consultas SQL agendadas 
 $string['export_csv'] = 'Exportar no formato CSV';
 $string['export_json'] = 'Exportar no formato JSON';
 $string['export_ods'] = 'Exportar no formato ODS';
+$string['export_xls'] = 'Exportar no formato XLS';
 $string['exportoptions'] = 'Opções da exportação';
 $string['exportreport'] = 'Exportar relatório';
-$string['export_xls'] = 'Exportar no formato XLS';
 $string['fcoursefield'] = 'Filtro do campo da disciplina';
 $string['field'] = 'Campo';
 $string['filter'] = 'Filtro';
 $string['filter_all'] = 'Tudo';
 $string['filter_apply'] = 'Aplicar';
+$string['filter_searchtext'] = 'Procurar texto';
+$string['filter_searchtext_summary'] = 'Filtro do texto livre';
 $string['filtercategories'] = 'Filtrar categorias';
 $string['filtercategories_summary'] = 'Filtrar por categoria';
 $string['filtercoursecategories'] = 'Filtro da categoria da disciplina';
@@ -223,16 +225,14 @@ $string['filterenrolledstudents_summary'] = 'Filtrar um utilizador (por ID) dos 
 $string['filterrole'] = 'papel';
 $string['filterrole_summary'] = 'Filtrar por papeis do sistema (professor, aluno, ...)';
 $string['filters'] = 'Filtros';
-$string['filter_searchtext'] = 'Procurar texto';
-$string['filter_searchtext_summary'] = 'Filtro do texto livre';
 $string['filtersemester'] = 'Semestre (Hebraico)';
 $string['filterstartendtime_summary'] = 'Filtro data inicial/final';
 $string['filtersubcategories'] = 'Categoria (incluir subcategorias)';
 $string['filtersubcategories_summary'] = 'Usar: %%FILTER_CATEGORIES:mdl_course_category.path%%';
 $string['filteruser'] = 'Utilizador da disciplina atual';
+$string['filteruser_summary'] = 'Filtrar um utilizador (por ID) dos utilizadores atuais da disciplina atual';
 $string['filterusers'] = 'Utilizador do sistema';
 $string['filterusers_summary'] = 'Filtrar um utilizador (por ID) da lista de utilizadores do sistema';
-$string['filteruser_summary'] = 'Filtrar um utilizador (por ID) dos utilizadores atuais da disciplina atual';
 $string['filteryearhebrew'] = 'Semestre (Hebraico)';
 $string['filteryearhebrew_summary'] = 'O filtro está a usar anos hebraicos (תשעג,...)';
 $string['filteryearnumeric'] = 'Ano (Numérico)';
@@ -253,8 +253,8 @@ $string['groupseries'] = 'Agrupar séries';
 $string['groupvalues'] = 'Agrupar valores iguais (soma)';
 $string['head_color'] = 'Cor do fundo do gráfico';
 $string['head_data'] = 'Dados do gráfico';
-$string['header'] = 'Cabeçalho';
 $string['head_size'] = 'Tamanho do gráfico';
+$string['header'] = 'Cabeçalho';
 $string['height'] = 'Altura';
 $string['importfromrepository'] = 'Importar relatório de repositório';
 $string['importreport'] = 'Importar relatório';
@@ -324,14 +324,17 @@ $string['puserfield_summary'] = 'Utilizador com o valor selecionado no campo sel
 $string['queryfailed'] = 'Ocorreu um erro na consulta <code><pre>{$a}</pre></code>';
 $string['querysql'] = 'Consulta SQL';
 $string['remote'] = 'Executar na base de dados remota';
-$string['remotedescription'] = 'Executar esta consulta na base de dados remota';
 $string['remote_help'] = 'Pretende executar esta consulta na base de dados remota?';
+$string['remotedescription'] = 'Executar esta consulta na base de dados remota';
 $string['remotequerysql'] = 'Consulta SQL';
 $string['report'] = 'Relatório';
-$string['reportcategories'] = '1) Escolha uma categoria de relatório remoto';
 $string['report_categories'] = 'Relatório das categorias';
-$string['reportcolumn'] = 'Outra coluna do relatório';
 $string['report_courses'] = 'Relatório das disciplinas';
+$string['report_sql'] = 'Relatório SQL';
+$string['report_timeline'] = 'Relatório por datas';
+$string['report_users'] = 'Relatório de utilizadores';
+$string['reportcategories'] = '1) Escolha uma categoria de relatório remoto';
+$string['reportcolumn'] = 'Outra coluna do relatório';
 $string['reportcreated'] = 'Relatório criado com sucesso';
 $string['reportlimit'] = 'Máximo de linhas no relatório';
 $string['reportlimitinfo'] = 'Limite o número de linhas que são exibidas na tabela do relatório (5000 linhas é o valor predefinido. É recomendável ter algum limite, para que os utilizadores não sobrecarreguem a base de dados)';
@@ -339,15 +342,12 @@ $string['reports'] = 'Relatórios';
 $string['reportscapabilities'] = 'Relatório de permissões';
 $string['reportscapabilities_summary'] = 'Utilizadores com a permissão moodle/site: viewreports ativada';
 $string['reportsincategory'] = '2) Escolha um relatório da lista';
-$string['report_sql'] = 'Relatório SQL';
 $string['reporttable'] = 'Tabela do relatório';
 $string['reporttable_help'] = '<p>Largura da tabela que exibirá os registos do relatório.</p>
 
 <p>Se usar um modelo, esta opção não terá qualquer efeito </p>';
 $string['reporttableui'] = 'Tipo de tabela do relatório';
 $string['reporttableuiinfo'] = 'Mostrar a tabela do relatório como: Tabela HTML simples com barra de rolamento, jQuery com ordenação de colunas ou biblioteca DataTables do JS (ordenação de colunas, cabeçalho fixo, pesquisa, paginação, ...)';
-$string['report_timeline'] = 'Relatório por datas';
-$string['report_users'] = 'Relatório de utilizadores';
 $string['repository'] = 'Repositório dos relatórios';
 $string['repository_help'] = 'Pode importar exemplos de relatórios de um repositório público partilhado.
 

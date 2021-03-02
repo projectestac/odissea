@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ordering', language 'fr', version '3.8'.
  *
- * @package   qtype_ordering
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ordering
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -76,17 +76,17 @@ $string['noscore'] = 'Pas de score';
 $string['notenoughanswers'] = 'Les questions ordonnancement doivent avoir plus de {$a} réponses.';
 $string['numberingstyle'] = 'Numéroter les choix ?';
 $string['numberingstyle123'] = '1., 2., 3., etc.';
-$string['numberingstyleabc'] = 'a., b., c., etc.';
 $string['numberingstyleABCD'] = 'A., B., C., etc.';
+$string['numberingstyleIIII'] = 'I., II., III., etc.';
 $string['numberingstyle_desc'] = 'Le style de numérotation par défaut.';
 $string['numberingstyle_help'] = 'Choisissez le style de numérotation des éléments glissables dans cette question.';
+$string['numberingstyleabc'] = 'a., b., c., etc.';
 $string['numberingstyleiii'] = 'i., ii., iii., etc.';
-$string['numberingstyleIIII'] = 'I., II., III., etc.';
 $string['numberingstylenone'] = 'Pas de numérotation';
 $string['pluginname'] = 'Ordonnancement';
+$string['pluginname_help'] = 'Plusieurs éléments sont affichés de façon désordonnée. Les éléments peuvent être glissés / déposés dans un ordre cohérent.';
 $string['pluginnameadding'] = 'Ajout d\'une question ordonnancement';
 $string['pluginnameediting'] = 'Modification d\'une question ordonnancement';
-$string['pluginname_help'] = 'Plusieurs éléments sont affichés de façon désordonnée. Les éléments peuvent être glissés / déposés dans un ordre cohérent.';
 $string['pluginnamesummary'] = 'Classer les éléments mélangés dans un ordre cohérent.';
 $string['positionx'] = 'Position {$a}';
 $string['privacy:metadata'] = 'Le plugin type de question ordonnancement n\'enregistre aucune donnée personnelle.';

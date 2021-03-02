@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'url', language 'eu', version '3.8'.
  *
- * @package   url
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     url
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,6 @@ $string['contentheader'] = 'Edukia';
 $string['createurl'] = 'Sortu URL bat';
 $string['displayoptions'] = 'Eskura dauden erakusteko aukerak';
 $string['displayselect'] = 'Erakutsi';
-$string['displayselectexplain'] = 'Aukeratu erakusteko modua; tamalez mota guztiak ezin dira URL-etarako erabili.';
 $string['displayselect_help'] = 'Ezarpen honek, URL fitxategi-mota kontuan hartuta eta web-nabigatzaileak edukiak txertatzea baimentzen badu, URLa nola erakutsiko den zehazten du. Aukerak hurrengoak dira:
 
 * Automatikoa - URLa erakusteko modurik onena automatikoki aukeratzea da
@@ -44,16 +43,17 @@ $string['displayselect_help'] = 'Ezarpen honek, URL fitxategi-mota kontuan hartu
 * Pop-up-ean - URLa web-nabigatzailearen leiho berri batean erakusten da, menu eta helbide-barrarik gabe
 * Markoan - URLa marko baten barruan erakusten da, nabigazio-barraren eta URLaren deskribapenaren azpian
 * Leiho berria - URLa menuak eta helbide-barra dituen web-nabigatzailearen leiho berri batean erakusten da.';
+$string['displayselectexplain'] = 'Aukeratu erakusteko modua; tamalez mota guztiak ezin dira URLetarako erabili.';
 $string['externalurl'] = 'Kanpoko URLa';
 $string['framesize'] = 'Markoaren altuera';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa URLetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak URLa motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa URLetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek URL baliabideak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da)';
-$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak URLa motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala URLetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak URLa motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala URLetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek URL baliabideak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan';
-$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak URLa motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['invalidstoredurl'] = 'Ezin da baliabide hau erakutsi. URLak ez du balio.';
 $string['invalidurl'] = 'Gehitutako URLak ez du balio';
 $string['modulename'] = 'URLa';
@@ -64,10 +64,10 @@ URLa erakusteko modu ezberdinak daude, hala nola enbotaturik edo leiho berri bat
 Badago, bestalde, beste edozein baliabide edo aktibitateetan testu-editorea erabilita URLak gehitzeko aukera ere.';
 $string['modulenameplural'] = 'URLak';
 $string['page-mod-url-x'] = 'URL moduluaren edozein orria';
-$string['parameterinfo'] = 'parametroa=aldagaia';
+$string['parameterinfo'] = '&amp;parametroa=aldagaia';
 $string['parametersheader'] = 'URL aldagaiak';
-$string['parametersheader_help'] = 'Moodle barruko aldagai batzuk URL-era automatikoki gehitu daitezke. Idatzi zure aldagaiaren izena testu-kutxa bakoitzean eta ondoren aukeratu zein aldagairekin lotu behar den.';
-$string['pluginadministration'] = 'URL-en kudeaketa';
+$string['parametersheader_help'] = 'Moodle barruko aldagai batzuk URLera automatikoki gehitu daitezke. Idatzi zure aldagaiaren izena testu-kutxa bakoitzean eta ondoren aukeratu zein aldagairekin lotu behar den.';
+$string['pluginadministration'] = 'URLen kudeaketa';
 $string['pluginname'] = 'URLa';
 $string['popupheight'] = 'Pop-up-aren altuera (pixeletan)';
 $string['popupheightexplain'] = 'Zehaztu zabaltzen den leihoaren altuera lehenetsia.';

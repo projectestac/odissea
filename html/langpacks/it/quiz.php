@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz', language 'it', version '3.8'.
  *
- * @package   quiz
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -87,7 +87,7 @@ $string['aon'] = 'Formato AON';
 $string['areyousureremoveselected'] = 'Confermi la rimozione delle domande selezionate?';
 $string['asshownoneditscreen'] = 'Come visualizzato sulla pagina di modifica';
 $string['attempt'] = 'Tentativo {$a}';
-$string['attemptalreadyclosed'] = 'Questo tentativo è già stato completato.';
+$string['attemptalreadyclosed'] = 'Questo tentativo è già stato svolto.';
 $string['attemptclosed'] = 'Il tentativo non è stato ancora chiuso';
 $string['attemptduration'] = 'Tempo impiegato';
 $string['attemptedon'] = 'Tentativo del';
@@ -102,11 +102,11 @@ $string['attemptquiznow'] = 'Tenta il quiz adesso';
 $string['attemptreviewtitle'] = '{$a}: Revisione tentativo';
 $string['attemptreviewtitlepaged'] = '{$a->name}: Revisione tentativo (pagina {$a->currentpage} di {$a->totalpages})';
 $string['attempts'] = 'Tentativi';
+$string['attempts_help'] = 'Il numero massimo consentito di tentativi (non è il numero di tentativi aggiuntivi).';
 $string['attemptsallowed'] = 'Tentativi permessi';
 $string['attemptsdeleted'] = 'Tentativi eliminati';
 $string['attemptselection'] = 'Scegli quali tentativi analizzare:';
 $string['attemptsexist'] = 'Non puoi più aggiungere o eliminare domande.';
-$string['attempts_help'] = 'Il numero massimo consentito di tentativi (non è il numero di tentativi aggiuntivi).';
 $string['attemptsnum'] = 'Tentativi: {$a}';
 $string['attemptsnumthisgroup'] = 'Tentativi: {$a->total} ({$a->group} da questo gruppo)';
 $string['attemptsnumyourgroups'] = 'Tentativi: {$a->total} ({$a->group} dai tuoi gruppi)';
@@ -180,11 +180,11 @@ $string['commentorgrade'] = 'Commenta o modifica valutazione';
 $string['comments'] = 'Commenti';
 $string['completedon'] = 'Terminato';
 $string['completionattemptsexhausted'] = 'oppure all\'esaurimento dei tentativi consentiti';
-$string['completionattemptsexhausteddesc'] = 'Esaurimento dei tentativi';
 $string['completionattemptsexhausted_help'] = 'L\'attività sarà considerata completata quando lo studente avrà esaurito il massimo numero di tentativi consentiti';
+$string['completionattemptsexhausteddesc'] = 'Esaurimento dei tentativi';
 $string['completionpass'] = 'Valutazione sufficiente';
-$string['completionpassdesc'] = 'Lo studente deve raggiungere la sufficienza per completare l\'attività';
 $string['completionpass_help'] = 'L\'attività sarà considerata completata quando lo studente avrà ottenuto un punteggio pari o superiore alla sufficienza impostata nella registro valutatore.';
+$string['completionpassdesc'] = 'Lo studente deve raggiungere la sufficienza per completare l\'attività';
 $string['configadaptive'] = 'Impostando a Si, lo studente avrà la possibilità di rispondere più volte a una domanda anche all\'interno dello stesso tentativo di risposta al quiz.';
 $string['configattemptsallowed'] = 'Limitazione del numero dei tentativi consentiti di risposta al quiz .';
 $string['configdecimaldigits'] = 'Numero di cifre decimali da visualizzare nelle valutazioni o nei punteggi degli studenti.';
@@ -418,30 +418,30 @@ $string['hidereordertool'] = 'Nascondi numeri per ordinamento';
 $string['history'] = 'Storico delle risposte date:';
 $string['howquestionsbehave_desc'] = 'Impostazioni di default per il comportamento delle domande nei quiz';
 $string['imagedisplay'] = 'Immagine da visualizzare';
-$string['importcategory'] = 'importa categoria';
-$string['importerror'] = 'Errore durante il processo di importazione';
-$string['importfilearea'] = 'Importazione da file già nei files del corso...';
-$string['importfileupload'] = 'Caricamento del file da importare';
-$string['importfromthisfile'] = 'Importazione da questo file';
 $string['import_help'] = 'L\' opzione consente di importare domande da file.
 
 Se il file di importazione contiene anche caratteri non-ASCII, sarà necessario utilizzare la codifica UTF-8. Quando generi i file di importazione delle domande, devi fare attenzione se usi applicativi MS Office in quanto tali applicativi usano delle codifiche particolari che non possono essere gestite correttamente.
 
 I formati di importazione ed esportazione delle domande sono acquisiti da Moodle attraverso plugin, pertanto nel database di Moduli e Plugin potrebbero essere disponibili ulteriori formati.';
+$string['importcategory'] = 'importa categoria';
+$string['importerror'] = 'Errore durante il processo di importazione';
+$string['importfilearea'] = 'Importazione da file già nei files del corso...';
+$string['importfileupload'] = 'Caricamento del file da importare';
+$string['importfromthisfile'] = 'Importazione da questo file';
 $string['importingquestions'] = 'Importazione di {$a} domande da file';
 $string['importmax10error'] = 'C\'è un errore nella domanda. Non puoi avere più di dieci risposte';
 $string['importmaxerror'] = 'C\'è un errore nella domanda. Ci sono troppe risposte.';
 $string['importquestions'] = 'Importa domande da file';
-$string['inactiveoverridehelp'] = '* Gli studenti non appartengono al gruppo corretto oppure non hanno il ruolo giusto per partecipare al quiz';
+$string['inactiveoverridehelp'] = '* Questa personalizzazione non ha attualmente effetto perché lo studente non può accedere all\'attività. Questo può essere causato dalla mancata appartenenza al gruppo corretto, a una errata assegnazione di ruolo, ad altre restrizioni di accesso o perché l\'attività è nascosta.';
 $string['incorrect'] = 'Sbagliato';
 $string['indicator:cognitivedepth'] = 'Quiz cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Quiz.';
 $string['indicator:cognitivedepthdef'] = 'Quiz cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Quiz (Livelli: Nessuna visualizzazione, Visualizzazione, Invio, Visualizzazione feedback, Commento al feedback, Nuovo invio dopo il feedback)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Quiz.';
 $string['indicator:socialbreadth'] = 'Quiz sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Quiz.';
 $string['indicator:socialbreadthdef'] = 'Quiz sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Quiz (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Quiz.';
 $string['indivresp'] = 'Risposte di ciascuno ai vari  elementi';
 $string['info'] = 'Info';
 $string['infoshort'] = 'i';
@@ -523,8 +523,8 @@ $string['neverallononepage'] = 'Tutte le domande su una sola pagina';
 $string['newattemptfail'] = 'Errore: Non è stato possibile avviare un nuovo tentativo del quiz';
 $string['newcategory'] = 'Nuova categoria';
 $string['newpage'] = 'Salto pagina';
-$string['newpageevery'] = 'Inizia automaticamente una nuova pagina';
 $string['newpage_help'] = 'Per i quiz molto lunghi è utile distribuire le domande su più pagine, limitando il numero delle stesse per ogni pagina. Aggiungendo domande a un quiz, verranno automaticamente aggiunti dei salti-pagina secondo l\'impostazione scelta. In ogni caso i salti-pagina potranno essere liberamente spostati a mano in seguito nella pagina di modifica del quiz.';
+$string['newpageevery'] = 'Inizia automaticamente una nuova pagina';
 $string['newsectionheading'] = 'Nuova intestazione';
 $string['noanswers'] = 'Non è stata selezionata nessuna risposta!';
 $string['noattempts'] = 'Non è presente nessun tentativo di questo quiz';
@@ -593,11 +593,11 @@ $string['overallfeedback'] = 'Feedback complessivo';
 $string['overallfeedback_help'] = 'Il feedback complessivo al quiz è un testo che viene visualizzato allo studente dopo che ha risposto al quiz stesso. Il testo visualizzato può dipendere dalla valutazione finale ottenuta in funzione dei limiti configurati (espressi come percentuale o come numero).';
 $string['overdue'] = 'In ritardo';
 $string['overduehandling'] = 'Allo scadere del tempo massimo';
+$string['overduehandling_desc'] = 'Le modalità di gestione del tentativo nel caso in cui lo studente non invii il quiz prima dello scadere del tempo massimo.';
+$string['overduehandling_help'] = 'L\'impostazione controlla cosa succede quando lo studente non invia il proprio tentativo prima dello scadere del tempo. Nel caso in cui gli studenti stiano ancora lavorando sul quiz, il timer invierà automaticamente il tentativo, tuttavia se gli studenti non fossero più in linea per qualche motivo, l\'impostazione consente di decidere l\'azione da eseguire.';
 $string['overduehandlingautoabandon'] = 'I tentativi devono essere inviati prima dello scadere del tempo, altrimenti non saranno validi.';
 $string['overduehandlingautosubmit'] = 'I tentativi aperti saranno inviati automaticamente';
-$string['overduehandling_desc'] = 'Le modalità di gestione del tentativo nel caso in cui lo studente non invii il quiz prima dello scadere del tempo massimo.';
 $string['overduehandlinggraceperiod'] = 'Consenti di inviare i tentativi entro un limite di tempo stabilito, senza consentire di rispondere ad altre domande';
-$string['overduehandling_help'] = 'L\'impostazione controlla cosa succede quando lo studente non invia il proprio tentativo prima dello scadere del tempo. Nel caso in cui gli studenti stiano ancora lavorando sul quiz, il timer invierà automaticamente il tentativo, tuttavia se gli studenti non fossero più in linea per qualche motivo, l\'impostazione consente di decidere l\'azione da eseguire.';
 $string['overduemustbesubmittedby'] = 'Il tentativo è fuori tempo massimo e dovrebbe essere già stato inviato. Se desideri che il quiz sia valutato, devi inviarlo entro {$a}. In mancanza, il tentativo non riceverà nessun punteggio.';
 $string['override'] = 'Personalizzazione';
 $string['overridedeletegroupsure'] = 'Sei sicuro di eliminare la personalizzazione per il gruppo {$a}?';
@@ -638,7 +638,6 @@ $string['previewquiznow'] = 'Anteprima quiz';
 $string['previous'] = 'Stato precedente';
 $string['privacy:metadata:core_question'] = 'L\'attività Quiz memorizza informazioni sull\'utilizzo delle domande nel sottosistema core_question.';
 $string['privacy:metadata:quiz'] = 'L\'attività Quiz utilizza i Report del quiz.';
-$string['privacy:metadata:quizaccess'] = 'L\'attività Quiz utilizza le Regole di accesso al quiz.';
 $string['privacy:metadata:quiz_attempts'] = 'Dettagli su ogni tentativo del quiz.';
 $string['privacy:metadata:quiz_attempts:attempt'] = 'Numero del tentativo.';
 $string['privacy:metadata:quiz_attempts:currentpage'] = 'Pagina corrente su cui si trova l\'utente.';
@@ -661,6 +660,7 @@ $string['privacy:metadata:quiz_overrides:timeclose'] = 'Nuovo orario di chiusura
 $string['privacy:metadata:quiz_overrides:timelimit'] = 'Nuovo tempo massimo del quiz.';
 $string['privacy:metadata:quiz_overrides:timeopen'] = 'Nuovo orario di apertura del quiz.';
 $string['privacy:metadata:quiz_overrides:userid'] = 'L\'utente personalizzato.';
+$string['privacy:metadata:quizaccess'] = 'L\'attività Quiz utilizza le Regole di accesso al quiz.';
 $string['publish'] = 'Rendere pubblico';
 $string['publishedit'] = 'Devi avere il permesso nel corso da pubblicare per aggiungere o modificare le domande in questa categoria';
 $string['qbrief'] = 'D. {$a}';
@@ -697,25 +697,30 @@ $string['questiontype'] = 'Tipo domanda {$a}';
 $string['questiontypesetupoptions'] = 'Opzioni di impostazione per i tipi domanda:';
 $string['quiz:addinstance'] = 'Aggiungere quiz';
 $string['quiz:attempt'] = 'Svolgere quiz';
+$string['quiz:deleteattempts'] = 'Eliminare tentativi dei quiz';
+$string['quiz:emailconfirmsubmission'] = 'Ricevere messaggio di conferma all\'invio';
+$string['quiz:emailnotifysubmission'] = 'Ricevere notifica via email all\'invio di tentativi';
+$string['quiz:emailwarnoverdue'] = 'Ricevere una notifica quando è scaduto il tempo massimo per svolgere il tentativo del quiz';
+$string['quiz:grade'] = 'Valutare i quiz manualmente';
+$string['quiz:ignoretimelimits'] = 'Ignorare tempo massimo del quiz';
+$string['quiz:manage'] = 'Gestire quiz';
+$string['quiz:manageoverrides'] = 'Gestire personalizzazioni quiz';
+$string['quiz:preview'] = 'Visualizzare anteprima quiz';
+$string['quiz:regrade'] = 'Rivalutare i tentativi dei quiz';
+$string['quiz:reviewmyattempts'] = 'Rivedere i propri tentativi';
+$string['quiz:view'] = 'Visualizzare informazioni sui quiz';
+$string['quiz:viewreports'] = 'Visualizzare report sui quiz';
 $string['quizavailable'] = 'Il quiz è disponibile fino a: {$a}';
 $string['quizclose'] = 'Chiusura';
 $string['quizclosed'] = 'Il quiz è stato chiuso il {$a}';
 $string['quizcloses'] = 'Chiusura';
 $string['quizcloseson'] = 'Il quiz chiuderà il {$a}';
-$string['quiz:deleteattempts'] = 'Eliminare tentativi dei quiz';
-$string['quiz:emailconfirmsubmission'] = 'Ricevere conferma via email all\'invio';
-$string['quiz:emailnotifysubmission'] = 'Ricevere notifica via email all\'invio di tentativi';
-$string['quiz:emailwarnoverdue'] = 'Ricevere una notifica quando è scaduto il tempo massimo per svolgere il tentativo del quiz';
 $string['quizeventcloses'] = '{$a} chiude';
 $string['quizeventopens'] = '{$a} apre';
-$string['quiz:grade'] = 'Valutare i quiz manualmente';
-$string['quiz:ignoretimelimits'] = 'Ignorare tempo massimo del quiz';
 $string['quizisclosed'] = 'Questo quiz è chiuso';
 $string['quizisclosedwillopen'] = 'Il quiz è chiuso (apre il {$a})';
 $string['quizisopen'] = 'Questo quiz è aperto';
 $string['quizisopenwillclose'] = 'Quiz aperto (chiude il {$a})';
-$string['quiz:manage'] = 'Gestire quiz';
-$string['quiz:manageoverrides'] = 'Gestire personalizzazioni quiz';
 $string['quiznavigation'] = 'Navigazione quiz';
 $string['quizopen'] = 'Apertura';
 $string['quizopenclose'] = 'Date di apertura e chiusura';
@@ -726,13 +731,8 @@ $string['quizopens'] = 'Quiz disponibile';
 $string['quizopenwillclose'] = 'Questo quiz è aperto, sarà chiuso il {$a} alle';
 $string['quizordernotrandom'] = 'Ordinamento del quiz non casuale';
 $string['quizorderrandom'] = '* Ordinamento del quiz casuale';
-$string['quiz:preview'] = 'Visualizzare anteprima quiz';
-$string['quiz:regrade'] = 'Rivalutare i tentativi dei quiz';
-$string['quiz:reviewmyattempts'] = 'Rivedere i propri tentativi';
 $string['quizsettings'] = 'Impostazioni quiz';
 $string['quiztimer'] = 'Quiz Timer';
-$string['quiz:view'] = 'Visualizzare informazioni sui quiz';
-$string['quiz:viewreports'] = 'Visualizzare report sui quiz';
 $string['quizwillopen'] = 'Questo quiz sarà aperto il {$a}';
 $string['random'] = 'Domanda casuale';
 $string['randomcreate'] = 'Crea Domande casuali';
@@ -792,7 +792,7 @@ $string['reportregrade'] = 'Rivaluta tentativi';
 $string['reportresponses'] = 'Dettaglio risposte date';
 $string['reports'] = 'Report';
 $string['reportshowonly'] = 'Visualizza solo tentativi';
-$string['reportshowonlyfinished'] = 'Visualizza almeno un tentativo completato per utente ({$a})';
+$string['reportshowonlyfinished'] = 'Visualizza al più un tentativo completato per utente ({$a})';
 $string['reportsimplestat'] = 'Statistiche semplici';
 $string['reportusersall'] = 'tutti gli utenti che hanno tentato il quiz';
 $string['reportuserswith'] = 'utenti iscritti che hanno tentato il quiz';
@@ -929,9 +929,9 @@ $string['submitallandfinish'] = 'Invia tutto e termina';
 $string['subneterror'] = 'Spiacente, questo quiz è impostato in modo da essere accessibile solo da certi indirizzi di rete. Attualmente i tuo computer non è abilitato all\'utilizzo di questo quiz.';
 $string['subnetnotice'] = 'Questo quiz è impostato in modo da essere accessibile solo da certi indirizzi di rete. Il tuo computer non è su una sotto-rete abilitata. Comunque come insegnante puoi vedere l\'anteprima.';
 $string['subplugintype_quiz'] = 'Report';
+$string['subplugintype_quiz_plural'] = 'Report';
 $string['subplugintype_quizaccess'] = 'Regola di accesso';
 $string['subplugintype_quizaccess_plural'] = 'Regole di accesso';
-$string['subplugintype_quiz_plural'] = 'Report';
 $string['substitutedby'] = 'sarà  sostituito da';
 $string['summaryofattempt'] = 'Riepilogo del tentativo';
 $string['summaryofattempts'] = 'Riepilogo dei tuoi tentativi precedenti ';
@@ -943,8 +943,8 @@ $string['timecompleted'] = 'Completato';
 $string['timedelay'] = 'Non è permesso accedere al quiz finché non sarà passato il tempo per poter accedere a un altro quiz';
 $string['timeleft'] = 'Tempo rimasto';
 $string['timelimit'] = 'Tempo massimo';
-$string['timelimitexeeded'] = 'Spiacente! Il tempo per il quiz è scaduto!';
 $string['timelimit_help'] = 'L\'impostazione consente la visualizzazione de limite di tempo nella pagina iniziale del quiz e un timer nel blocco navigazione quiz che presenta il conto alla rovescia del tempo rimasto.';
+$string['timelimitexeeded'] = 'Spiacente! Il tempo per il quiz è scaduto!';
 $string['timestr'] = '%H:%M:%S del %d/%m/%y';
 $string['timesup'] = 'Tempo scaduto!';
 $string['timetaken'] = 'Tempo impiegato';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'pt', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -98,11 +98,11 @@ $string['stamps'] = 'Carimbos';
 $string['stampsdesc'] = 'Os  carimbos têm de ser ficheiros de imagem (tamanho recomendado: 40x40). Estas imagens podem ser usadas com a ferramenta carimbo para fazer anotações no PDF.';
 $string['test_doesnotexist'] = 'O caminho para o Ghostscript aponta para um ficheiro que não existe';
 $string['test_empty'] = 'O caminho para o Ghostscript está vazio. Por favor, introduza o caminho correto.';
-$string['testgs'] = 'Testar caminho para o Ghostscript';
 $string['test_isdir'] = 'O caminho para o Ghostscript aponta para uma pasta. Por favor, inclua o programa Ghostscript no caminho que especificar.';
 $string['test_notestfile'] = 'O PDF de teste está em falta';
 $string['test_notexecutable'] = 'O caminho para o Ghostscript aponta para um ficheiro que não é executável';
 $string['test_ok'] = 'O caminho para o Ghostscript parece estar correto. Por favor, verifique que consegue ver a mensagem na imagem abaixo';
+$string['testgs'] = 'Testar caminho para o Ghostscript';
 $string['tool'] = 'Ferramenta';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Ver o PDF anotado';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_openclosedate', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quizaccess_openclosedate', language 'pt', version '3.8'.
  *
- * @package   quizaccess_openclosedate
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quizaccess_openclosedate
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notavailable'] = 'Lamentamos mas este teste não está disponível';
-$string['pluginname'] = 'Regra de acesso baseado nas datas de abertura e fecho';
+$string['notavailable'] = 'O teste não se encontra disponível de momento';
+$string['pluginname'] = 'Regra de abertura e fecho do teste';
 $string['privacy:metadata'] = 'O módulo Regra de acesso baseado nas datas de abertura e fecho não armazena quaisquer dados pessoais.';
-$string['quiznotavailable'] = 'O teste só ficará disponível {$a}';
+$string['quiznotavailable'] = 'O teste não estará disponível até {$a}';

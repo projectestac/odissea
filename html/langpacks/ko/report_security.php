@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'ko', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -93,10 +93,10 @@ $string['check_riskadmin_name'] = '관리자';
 $string['check_riskadmin_ok'] = '{$a} 서버 관리자 발견';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) 직능 검토</a>';
 $string['check_riskadmin_warning'] = '{$a->admincount} 서버 관리자 및  {$a->unsupcount} 의 지원되지 않는 관리자 역할 부여 발견';
-$string['check_riskbackup_detailsok'] = '사용자 자료를 백업할 수 있는 명시적 역할이 존재하지 않음. 하지만 "doanything"능력을 지닌 관리자는 이러한 능력을 발휘할 수도 있음을 유의할 것.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>이러한 활동의 덧쓰기는 사용자로 하여금 백업시 사용자 자료를 포함할 수 있게 합니다. 반드시 다음 허가권이 필요한지를 확인하기 바랍니다.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>다음의 시스템 역할은 일반적으로 백업시 사용자 자료를 포함할 수 있게 합니다. 반드시 다음 허가권이 필요한지를 확인하기 바랍니다.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>상기 역할 혹은 지역적인 덮어쓰기 때문에, 다음의 사용자 계정은 강좌내 모든 사용자들에 대한 개인 자료를 포함한 백업을 할 수 있는 권한을 갖게됩니다. 이들이 (1)신임할 수 있는가 (2)보안이 잘된 암호로 보호되고 있는가 를 반드시 확인하기 바랍니다. </p> {$a}';
+$string['check_riskbackup_detailsok'] = '사용자 자료를 백업할 수 있는 명시적 역할이 존재하지 않음. 하지만 "doanything"능력을 지닌 관리자는 이러한 능력을 발휘할 수도 있음을 유의할 것.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->contextname}의 {$a->name}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = '사용자 자료의 백업';

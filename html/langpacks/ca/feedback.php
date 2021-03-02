@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'ca', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['add_item'] = 'Afegeix una pregunta a l\'activitat';
+$string['add_item'] = 'Afegeix una pregunta';
 $string['add_pagebreak'] = 'Afegeix un salt de pàgina';
 $string['adjustment'] = 'Paràmetre';
 $string['after_submit'] = 'Després de la tramesa';
@@ -48,15 +48,15 @@ $string['cannotsavetempl'] = 'no és permès desar les plantilles';
 $string['captcha'] = 'Test de Turing (Captcha)';
 $string['captchanotset'] = 'El test de Turing no s\'ha configurat.';
 $string['check'] = 'Opcions múltiples - respostes excloents';
-$string['checkbox'] = 'Opcions múltiples - es permeten respostes múltiples (caselles de selecció)';
 $string['check_values'] = 'Respostes possibles';
+$string['checkbox'] = 'Opcions múltiples - es permeten respostes múltiples (caselles de selecció)';
 $string['choosefile'] = 'Tria un fitxer';
 $string['chosen_feedback_response'] = 'Resposta de retroalimentació escollida';
 $string['closebeforeopen'] = 'Heu especificat una data d\'acabament anterior a la data d\'inici.';
+$string['complete_the_form'] = 'Responeu les preguntes';
 $string['completed'] = 'Completat';
 $string['completed_feedbacks'] = 'Respostes enviades';
 $string['completedon'] = 'S\'ha completat el {$a}';
-$string['complete_the_form'] = 'Responeu les preguntes';
 $string['completionsubmit'] = 'Mostra com a completada si s\'ha tramès la retroalimentació';
 $string['configallowfullanonymous'] = 'Si habiliteu aquesta opció, els usuaris podran completar una activitat de retroalimentació a la pàgina principal sense necessitat d\'iniciar sessió.';
 $string['confirmdeleteentry'] = 'Esteu segur de voler suprimir aquesta entrada?';
@@ -79,7 +79,7 @@ $string['depending_help'] = 'És possible mostrar un element en funció del valo
 <li>Primer creeu un element (variable independent) del qual dependrà un altre element.</li>
 <li>A continuació afegiu un salt de pàgina.</li>
 <li>Després afegiu els elements (variables dependents) que depenen del valor de l\'element creat anteriorment.<br />
-Trieu l\'element de la llista anomenat "Element de dependència" i indiqueu el valor requerit al quadre de text "Valor de dependència"</li> </ul>
+Trieu l\'element de la llista anomenat «Element de dependència» i indiqueu el valor requerit al quadre de text «Valor de dependència»</li> </ul>
 <strong>L\'estructura hauria de ser com aquesta:</strong>
  <ol>
 <li>Element 1 P: Teniu cotxe? R: Sí/No</li>
@@ -93,11 +93,11 @@ $string['dependvalue'] = 'Valor de dependència';
 $string['description'] = 'Descripció';
 $string['do_not_analyse_empty_submits'] = 'No analitzeu els enviaments buits';
 $string['downloadresponseas'] = 'Descarrega totes les respostes com a:';
+$string['drop_feedback'] = 'Suprimeix d\'aquest curs';
 $string['dropdown'] = 'Opcions múltiples - resposta única permesa (menú desplegable)';
+$string['dropdown_values'] = 'Respostes';
 $string['dropdownlist'] = 'Opcions múltiples - resposta única (menú desplegable)';
 $string['dropdownrated'] = 'Menú desplegable (puntuat)';
-$string['dropdown_values'] = 'Respostes';
-$string['drop_feedback'] = 'Suprimeix d\'aquest curs';
 $string['edit_item'] = 'Edita la pregunta';
 $string['edit_items'] = 'Edita les preguntes';
 $string['email_notification'] = 'Habilita la notificació de les trameses';
@@ -115,30 +115,30 @@ $string['eventresponsesubmitted'] = 'S\'ha enviat la resposta';
 $string['export_questions'] = 'Exporta les preguntes';
 $string['export_to_excel'] = 'Exporta a Excel';
 $string['feedback:addinstance'] = 'Afegeix una nova retroalimentació';
-$string['feedbackclose'] = 'Permet les respostes a';
 $string['feedback:complete'] = 'Completa una retroalimentació';
-$string['feedbackcompleted'] = '{$a->username} ha completat {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Crea una plantilla privada';
 $string['feedback:createpublictemplate'] = 'Crea una plantilla pública';
 $string['feedback:deletesubmissions'] = 'Suprimeix els enviaments completats';
 $string['feedback:deletetemplate'] = 'Suprimeix la plantilla';
 $string['feedback:edititems'] = 'Edita els elements';
-$string['feedback_is_not_for_anonymous'] = 'La retroalimentació no és per a usuaris anònims';
-$string['feedback_is_not_open'] = 'La retroalimentació no està oberta';
 $string['feedback:mapcourse'] = 'Associa cursos a retroalimentació globals';
-$string['feedbackopen'] = 'Permet les respostes de';
 $string['feedback:receivemail'] = 'Rep notificacions per correu electrònic';
 $string['feedback:view'] = 'Visualitza una retroalimentació';
 $string['feedback:viewanalysepage'] = 'Mostra la pàgina d\'anàlisi després de l\'enviament';
 $string['feedback:viewreports'] = 'Mostra els informes';
+$string['feedback_is_not_for_anonymous'] = 'La retroalimentació no és per a usuaris anònims';
+$string['feedback_is_not_open'] = 'La retroalimentació no està oberta';
+$string['feedbackclose'] = 'Permet les respostes a';
+$string['feedbackcompleted'] = '{$a->username} ha completat {$a->feedbackname}';
+$string['feedbackopen'] = 'Permet les respostes de';
 $string['file'] = 'Fitxer';
 $string['filter_by_course'] = 'Filtra per curs';
 $string['handling_error'] = 'S\'ha produït un error en la gestió d\'accions del mòdul de retroalimentació';
 $string['hide_no_select_option'] = 'Amaga l\'opció "No seleccionat"';
 $string['horizontal'] = 'horitzontal';
-$string['importfromthisfile'] = 'importa des d\'aquest fitxer';
 $string['import_questions'] = 'importa preguntes';
 $string['import_successfully'] = 'Importació realitzada amb èxit';
+$string['importfromthisfile'] = 'importa des d\'aquest fitxer';
 $string['info'] = 'Informació';
 $string['infotype'] = 'Tipus d\'informació';
 $string['insufficient_responses'] = 'respostes insuficients';
@@ -174,9 +174,9 @@ Les activitats de retroalimentació es poden utilitzar:
 $string['modulenameplural'] = 'Retroalimentació';
 $string['move_item'] = 'Mou aquesta pregunta';
 $string['multichoice'] = 'Opcions múltiples';
+$string['multichoice_values'] = 'Valors de les opcions múltiples';
 $string['multichoicerated'] = 'Opcions múltiples (puntuades)';
 $string['multichoicetype'] = 'Tipus d\'opcions múltiples';
-$string['multichoice_values'] = 'Valors de les opcions múltiples';
 $string['multiplesubmit'] = 'Permet trameses múltiples';
 $string['multiplesubmit_help'] = 'Si s\'habiliten les enquestes anònimes, els usuaris podran trametre la retroalimentació una quantitat de vegades il·limitada.';
 $string['name'] = 'Nom';
@@ -186,14 +186,14 @@ $string['no_handler'] = 'No existeix un gestor d\'acció per a';
 $string['no_itemlabel'] = 'Sense etiqueta';
 $string['no_itemname'] = 'Element sense nom';
 $string['no_items_available_yet'] = 'Encara no s\'han definit preguntes';
+$string['no_templates_available_yet'] = 'Encara no hi ha plantilles';
 $string['non_anonymous'] = 'El nom de l\'usuari es registrarà i es mostrarà amb les respostes';
 $string['non_anonymous_entries'] = 'Entrades no anònimes ({$a})';
 $string['non_respondents_students'] = 'Estudiants que no han respost ({$a})';
 $string['not_completed_yet'] = 'Encara no s\'ha completat';
-$string['no_templates_available_yet'] = 'Encara no hi ha plantilles';
 $string['not_selected'] = 'No s\'ha seleccionat';
 $string['not_started'] = 'No s\'ha iniciat';
-$string['numberoutofrange'] = 'Número fora de l\'interval';
+$string['numberoutofrange'] = 'Número fora de límits';
 $string['numeric'] = 'Resposta numèrica';
 $string['numeric_range_from'] = 'Interval des de';
 $string['numeric_range_to'] = 'Interval fins';
@@ -203,9 +203,9 @@ $string['oldvalueswillbedeleted'] = 'Les preguntes actuals i totes les respostes
 $string['only_one_captcha_allowed'] = 'En una retroalimentació només es pot posar un sol Test de Turing';
 $string['overview'] = 'Descripció';
 $string['page'] = 'Pàgina';
+$string['page-mod-feedback-x'] = 'Qualsevol pàgina de mòduls de retroalimentació';
 $string['page_after_submit'] = 'Missatge de compleció';
 $string['pagebreak'] = 'Salt de pàgina';
-$string['page-mod-feedback-x'] = 'Qualsevol pàgina de mòduls de retroalimentació';
 $string['pluginadministration'] = 'Administració de la retroalimentació';
 $string['pluginname'] = 'Retroalimentació';
 $string['position'] = 'Posició';
@@ -250,8 +250,8 @@ $string['switch_item_to_not_required'] = 'Estableix com a no obligatòria';
 $string['switch_item_to_required'] = 'Estableix com a obligatòria';
 $string['template'] = 'Plantilla';
 $string['template_deleted'] = 'S\'ha suprimit la plantilla';
-$string['templates'] = 'Plantilles';
 $string['template_saved'] = 'Plantilla desada';
+$string['templates'] = 'Plantilles';
 $string['textarea'] = 'Resposta de text llarga';
 $string['textarea_height'] = 'Nombre de línies';
 $string['textarea_width'] = 'Amplària';

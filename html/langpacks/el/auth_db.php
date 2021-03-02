@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_db', language 'el', version '3.8'.
  *
- * @package   auth_db
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_db
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,10 +34,10 @@ $string['auth_dbdebugauthdb'] = 'Αποσφαλμάτωση ADOdb';
 $string['auth_dbdebugauthdbhelp'] = 'Αποσφαλμάτωση σύνδεσης ADOdb με την εξωτερική βάση δεδομένων - χρησιμοποιείται όταν ληφθεί κενή σελίδα κατά τη σύνδεσης. Δεν είναι κατάλληλο για ιστοτόπους παραγωγής.';
 $string['auth_dbdeleteuser'] = 'Ο χρήστης «{$a->name}» με αναγνωριστικό «{$a->id}» διεγράφη';
 $string['auth_dbdeleteusererror'] = 'Σφάλμα κατά τη διαγραφή του χρήστη «{$a}»';
-$string['auth_dbdescription'] = 'Αυτή η μέθοδος χρησιμοποιεί έναν εξωτερικό πίνακα βάσης δεδομένων για να ελέγξει εάν το όνομα χρήστη και ο κωδικός πρόσβασης που δίνονται ισχύουν. Εάν ο λογαριασμός είναι καινούργιος, τότε πληροφορίες από άλλα πεδία μπορούν επίσης να αντιγραφούν στο Moodle.';
+$string['auth_dbdescription'] = 'Αυτή η μέθοδος χρησιμοποιεί έναν εξωτερικό πίνακα βάσης δεδομένων για να ελέγξει εάν το όνομα χρήστη και ο κωδικός πρόσβασης που δίνονται ισχύουν. Εάν ο λογαριασμός είναι καινούργιος, τότε πληροφορίες από άλλα πεδία μπορούν επίσης να αποσταλούν στο Moodle.';
 $string['auth_dbextencoding'] = 'Εξωτερική κωδικοποίηση βάσης δεδομένων';
 $string['auth_dbextencodinghelp'] = 'Κωδικοποίηση που χρησιμοποιείται στην εξωτερική βάση δεδομένων';
-$string['auth_dbextrafields'] = 'Αυτά τα πεδία είναι προαιρετικά. Υπάρχει η επιλογή να προ-συμπληρώσετε μερικά πεδία χρηστών του Moodle χρησιμοποιώντας πληροφορίες από την <b>εξωτερική βάση δεδομένων</b> που θα ορίσετε εδώ. <p>Εάν τα αφήσετε κενά, τότε θα χρησιμοποιηθούν τα προεπιλεγμένα στοιχεία.</p><p>Σε κάθε περίπτωση, ο χρήστης θα μπορεί να παρέμβει σε όλα αυτά τα πεδία μετά την σύνδεση.</p>';
+$string['auth_dbextrafields'] = 'Αυτά τα πεδία είναι προαιρετικά. Υπάρχει η επιλογή να προ-συμπληρώσετε μερικά πεδία χρηστών του Moodle χρησιμοποιώντας πληροφορίες από την <b>εξωτερική βάση δεδομένων</b> που θα ορίσετε εδώ. <p>Εάν τα αφήσετε κενά, τότε θα χρησιμοποιηθούν τα προεπιλεγμένα στοιχεία.</p> <p>Σε κάθε περίπτωση, ο χρήστης θα μπορεί να παρέμβει σε όλα αυτά τα πεδία μετά την σύνδεση.</p>';
 $string['auth_dbfieldpass'] = 'Όνομα πεδίου που περιέχει τους κωδικούς πρόσβασης';
 $string['auth_dbfieldpass_key'] = 'Πεδίο κωδικού πρόσβασης';
 $string['auth_dbfielduser'] = 'Όνομα πεδίου που περιέχει τα ονόματα χρηστών. Το πεδίο αυτό πρέπει να είναι τύπου δεδομένων varchar.';
@@ -70,10 +70,11 @@ $string['auth_dbsybasequoting'] = 'Χρήση sybase εισαγωγικών';
 $string['auth_dbsybasequotinghelp'] = 'Η μορφή sybase μονών εισαγωγικών απαιτείται για την Oracle, την MS SQL και ορισμένες άλλες βάσεις δεδομένων. Μην τα χρησιμοποιείται για την MySQL!';
 $string['auth_dbsyncuserstask'] = 'Εργασία συγχρονισμού χρηστών';
 $string['auth_dbtable'] = 'Όνομα του πίνακα στη βάση δεδομένων';
-$string['auth_dbtableempty'] = 'Ο εξωτερικός πίνακας είναι κενός.';
 $string['auth_dbtable_key'] = 'Πίνακας';
+$string['auth_dbtableempty'] = 'Ο εξωτερικός πίνακας είναι κενός.';
 $string['auth_dbtype'] = 'Ο τύπος της βάσης δεδομένων (δείτε το <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - Database Abstraction Layer (αφηρημένο επίπεδο βάσης δεδομένων) για PHP</a> για λεπτομέρειες).';
 $string['auth_dbtype_key'] = 'Βάση δεδομένων';
+$string['auth_dbupdateerror'] = 'Σφάλμα ενημέρωσης εξωτερικής βάσης δεδομένων.';
 $string['auth_dbupdateusers'] = 'Ενημέρωση χρηστών';
 $string['auth_dbupdateusers_description'] = 'Εκτός από την εισαγωγή νέων χρηστών, ενημερώστε τους υπάρχοντες χρήστες.';
 $string['auth_dbupdatinguser'] = 'Ενημέρωση του χρήστη με όνομα «{$a->name}» και αναγνωριστικό «{$a->id}»';

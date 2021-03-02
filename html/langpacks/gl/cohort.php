@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cohort', language 'gl', version '3.8'.
  *
- * @package   cohort
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cohort
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,7 +49,7 @@ $string['defaultcontext'] = 'Contexto predeterminado';
 $string['delcohort'] = 'Eliminar o círculo';
 $string['delconfirm'] = 'Confirma que quere eliminar o círculo «{$a}»?';
 $string['description'] = 'Descrición';
-$string['displayedrows'] = '{$a->displayed} filas amosadas dun total de  {$a->total}.';
+$string['displayedrows'] = '{$a->displayed} filas amosadas dun total de {$a->total}.';
 $string['duplicateidnumber'] = 'Xa existe un círculo co mesmo número ID';
 $string['editcohort'] = 'Editar o círculo';
 $string['editcohortidnumber'] = 'Editar o ID do círculo';
@@ -76,7 +76,7 @@ $string['privacy:metadata:cohort_members'] = 'Información sobre o círculo do u
 $string['privacy:metadata:cohort_members:cohortid'] = 'O ID do círculo';
 $string['privacy:metadata:cohort_members:timeadded'] = 'A marca de tempo que indica cando foi engadido o usuario ao círculo';
 $string['privacy:metadata:cohort_members:userid'] = 'O ID do usuario que está asociado ao círculo';
-$string['removeuserwarning'] = 'A retirada dos usuarios dun círculo pode resultar nunha desmatriculación de usuarios de múltiples cursos, o que inclúe a eliminación da configuración do usuario, as cualificacións, a pertenza a grupos e outra información dos usuarios dos cursos afectados.';
+$string['removeuserwarning'] = 'A retirada dos usuarios dun círculo pode resultar nunha desmatriculación de usuarios de múltiples cursos, o que inclúe a eliminación dos axustes do usuario, as cualificacións, a pertenza a grupos e outra información dos usuarios dos cursos afectados.';
 $string['search'] = 'Buscar';
 $string['searchcohort'] = 'Buscar un círculo';
 $string['selectfromcohort'] = 'Seleccionar os membros do círculo';

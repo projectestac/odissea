@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'fr', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,9 +44,9 @@ $string['mustrequirefewer'] = 'Vous ne pouvez pas exiger plus d\'annexes que le 
 $string['nlines'] = '{$a} lignes';
 $string['nonexistentfiletypes'] = 'Les types de fichier suivants n\'ont pas été reconnus : {$a}';
 $string['pluginname'] = 'Composition';
+$string['pluginname_help'] = 'Pour répondre à la question, les participants peut déposer un ou plusieurs fichiers ou écrire un texte en ligne. Un modèle de réponse peut être fourni. Les réponses doivent être évaluées manuellement.';
 $string['pluginnameadding'] = 'Ajout d\'une question de composition';
 $string['pluginnameediting'] = 'Modification d\'une question de composition';
-$string['pluginname_help'] = 'Pour répondre à la question, les participants peut déposer un ou plusieurs fichiers ou écrire un texte en ligne. Un modèle de réponse peut être fourni. Les réponses doivent être évaluées manuellement.';
 $string['pluginnamesummary'] = 'Permet une réponse sous forme d\'un fichier ou d\'un texte en ligne. Cette question doit être évaluée manuellement.';
 $string['privacy:metadata'] = 'Le plugin de type de question Composition n\'enregistre aucune donnée personnelle.';
 $string['responsefieldlines'] = 'Taille du champ de saisie';
@@ -56,5 +56,5 @@ $string['responsenotrequired'] = 'Saisie de texte optionnelle';
 $string['responseoptions'] = 'Options de réponse';
 $string['responserequired'] = 'Requiert texte';
 $string['responsetemplate'] = 'Modèle de réponse';
-$string['responsetemplateheader'] = 'Modèle de réponse';
 $string['responsetemplate_help'] = 'Le texte saisi ici sera affiché dans le champ de réponse au début d\'une tentative de cette question.';
+$string['responsetemplateheader'] = 'Modèle de réponse';

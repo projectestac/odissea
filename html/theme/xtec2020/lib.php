@@ -58,7 +58,7 @@ function theme_xtec2020_get_extra_scss($theme) {
 
     // Sets the background image, and its settings.
     if (!empty($imageurl)) {
-        $content .= "#page-header { background-image: url('$imageurl'); }";
+        $content .= "#page-header { background-image: url('$imageurl') !important; }";
     }
 
     // Always return the background image with the scss when we have it.
@@ -96,10 +96,10 @@ function theme_xtec2020_get_pre_scss($theme) {
         'colorcontrast' => ['colorcontrast'],
     ];
 
-    $theme->settings->maincolor = !empty($theme->settings->maincolor) ? $theme->settings->maincolor : '#AC2013';
-    $theme->settings->fontcolor = !empty($theme->settings->fontcolor) ? $theme->settings->fontcolor : '#303030';
-    $theme->settings->linkscolor = !empty($theme->settings->linkscolor) ? $theme->settings->linkscolor : '#AC2013';
-    $theme->settings->headerbg = !empty($theme->settings->headerbg) ? $theme->settings->headerbg : '#f4f4f4';
+    $theme->settings->maincolor = !empty($theme->settings->maincolor) ? $theme->settings->maincolor : '#FF494E';
+    $theme->settings->fontcolor = !empty($theme->settings->fontcolor) ? $theme->settings->fontcolor : '#007377';
+    $theme->settings->linkscolor = !empty($theme->settings->linkscolor) ? $theme->settings->linkscolor : '#910048';
+    $theme->settings->headerbg = !empty($theme->settings->headerbg) ? $theme->settings->headerbg : '#F8F8F8';
     if (!empty($theme->settings->colorset) && $theme->settings->colorset == 'nodes' &&
         theme_xtec2020_is_service_enabled('nodes')) {
         $colors = get_colors_from_nodes(true);
@@ -226,3 +226,34 @@ function theme_xtec2020_show_course_grades($showgrades, $courseid) {
 
     return false;
 }
+
+/**
+ * Returns the name of the XTEC service currently running, with an optional prefix.
+ * Current valid options are "eix", "alexandria" and "odissea" 
+ *
+ * @param string $prefix
+ * @return string
+ */
+function get_xtec_type($prefix = '') {
+    global $CFG;
+
+    $type = '';
+
+    if ($setting = get_config('theme_xtec2020', 'xtec_type')) {
+        $type = $prefix.$setting;
+    }
+    elseif (isset($CFG->isalexandria) && $CFG->isalexandria) {
+        $type = $prefix.'alexandria';
+    }
+    elseif (isset($CFG->isodissea) && $CFG->isodissea) {
+        $type = $prefix.'odissea';
+    }
+    elseif (isset($CFG->iseoi) && $CFG->iseoi) {
+        $type = $prefix.'eoi';
+    }
+    elseif (isset($CFG->isagora) && $CFG->isagora) {
+        $type = $prefix.'eix';
+    }
+
+    return $type;
+} 

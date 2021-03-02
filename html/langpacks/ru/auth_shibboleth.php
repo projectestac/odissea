@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_shibboleth', language 'ru', version '3.8'.
  *
- * @package   auth_shibboleth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_shibboleth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,13 +29,6 @@ $string['auth_shib_auth_logo'] = 'Логотип метода аутентифи
 $string['auth_shib_auth_logo_description'] = 'Предоставьте знакомый  вашим пользователям логотип для метода аутентификации Shibboleth. Это может быть логотип вашей федерации Shibboleth, например <tt> SWITCHaai Login </ tt> или <tt> InCommon Login </ tt> или аналогичные.';
 $string['auth_shib_auth_method'] = 'Название метода аутентификации';
 $string['auth_shib_auth_method_description'] = 'Укажите название для метода аутентификации Shibboleth, которое знакомо вашим пользователям. Это может быть название вашего объединения Shibboleth, например <tt>SWITCHaai Login</tt> или <tt>InCommon Login</tt> или что-то подобное.';
-$string['auth_shibbolethdescription'] = 'При использовании этого метода пользователи создаются и аутентифицируются с использованием <a href="http://shibboleth.internet2.edu/">Shibboleth</a>.<br />Обязательно прочтите в файле <a href="../auth/shibboleth/README.txt">README (на английском языке)</a> о том, как настроить Moodle с Shibboleth.';
-$string['auth_shibboleth_errormsg'] = 'Пожалуйста, выберите свою организацию!';
-$string['auth_shibboleth_login'] = 'Вход через Shibboleth';
-$string['auth_shibboleth_login_long'] = 'Войти в Moodle через Shibboleth';
-$string['auth_shibboleth_manual_login'] = 'Ручной вход';
-$string['auth_shibboleth_select_member'] = 'Я являюсь членом ...';
-$string['auth_shibboleth_select_organization'] = 'Для аутентификации через Shibboleth, выберите организацию из выпадающего списка:';
 $string['auth_shib_changepasswordurl'] = 'Адрес страницы смены пароля';
 $string['auth_shib_contact_administrator'] = 'В случае, если Вы не связаны с указанными организациями, а Вам нужен доступ к курсу на этом сервере, свяжитесь с <a href="mailto:{$a}">администратором сайта Moodle</a>.';
 $string['auth_shib_convert_data'] = 'API модификации данных';
@@ -56,6 +49,13 @@ $string['auth_shib_no_organizations_warning'] = 'Если Вы хотите ис
 $string['auth_shib_only'] = 'Только Shibboleth';
 $string['auth_shib_only_description'] = 'Выберите этот параметр для принудительного использования аутентификации Shibboleth';
 $string['auth_shib_username_description'] = 'Имя переменной среды Shibboleth веб-сервера, которая должна использоваться в качестве логина Moodle';
+$string['auth_shibboleth_errormsg'] = 'Пожалуйста, выберите свою организацию!';
+$string['auth_shibboleth_login'] = 'Вход через Shibboleth';
+$string['auth_shibboleth_login_long'] = 'Войти в Moodle через Shibboleth';
+$string['auth_shibboleth_manual_login'] = 'Ручной вход';
+$string['auth_shibboleth_select_member'] = 'Я являюсь членом ...';
+$string['auth_shibboleth_select_organization'] = 'Для аутентификации через Shibboleth, выберите организацию из выпадающего списка:';
+$string['auth_shibbolethdescription'] = 'При использовании этого метода пользователи создаются и аутентифицируются с использованием <a href="http://shibboleth.internet2.edu/">Shibboleth</a>.<br />Обязательно прочтите в файле <a href="../auth/shibboleth/README.txt">README (на английском языке)</a> о том, как настроить Moodle с Shibboleth.';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'Плагин аутентификации «Shibboleth» не хранит никаких персональных данных.';
 $string['shib_invalid_account_error'] = 'Вы представляетесь как пользователь Shibboleth, но в Moodle нет действующей учетной записи с этим логином. Ваша учетная запись не существует или, возможно, была приостановлена.';

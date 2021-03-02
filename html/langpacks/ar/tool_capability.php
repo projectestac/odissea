@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,28 +12,29 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_capability', language 'ar', version '3.8'.
  *
- * @package   tool_capability
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_capability
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['capabilitylabel'] = 'الإمكانية:';
-$string['capabilityreport'] = 'استعراض الإمكانية';
+$string['capabilitylabel'] = 'القدرة :';
+$string['capabilityreport'] = 'نظرة عامة على القدرة';
 $string['changeoverrides'] = 'تغيير التجاوزات في هذا السياق';
 $string['changeroles'] = 'تغيير تعريفات الدور';
-$string['eventreportviewed'] = 'تمت معاينة التقرير';
-$string['forroles'] = 'للأدوار {$a}';
+$string['eventreportviewed'] = 'النظر إلى التقرير';
+$string['forroles'] = 'للقيام بأدوار {$a}';
 $string['getreport'] = 'الحصول على النظرة العامة';
-$string['intro'] = 'يبين هذا التقرير بالنسبة إلى إمكانية معينة، الصلاحيات التي لديها بالنسبة إلى تعريف كل دور (أو مجموعة مختارة من الأدوار)، والأماكن التي تم تجاوزها فيها على امتداد الموقع.';
-$string['pluginname'] = 'استعراض الإمكانية';
-$string['privacy:metadata'] = 'إن ملحق استعراض الإمكانية لا يخزن أي بيانات شخصية.';
-$string['reportforcapability'] = 'تقرير الإمكانية \'{$a}';
+$string['intro'] = 'يبين هذا التقرير القدرة على وجه الخصوص ، ما إذا كان صاحب القدرة لديه في تعريف كل دور (أو مجموعة مختارة من الأدوار) ، و في كل مكان في الموقع حيث أن هذه القدرة ممكن تجاوزها .';
+$string['pluginname'] = 'نظرة عامة على القدرة';
+$string['privacy:metadata'] = 'لا يخزن المكون الإضافي Capability overview لأي بيانات شخصية.';
+$string['reportforcapability'] = 'تقرير عن القدرة \'{$a}\\';
 $string['reportsettings'] = 'إعدادات التقرير';
-$string['roleslabel'] = 'الأدوار:';
+$string['roleslabel'] = 'الأدوار :';

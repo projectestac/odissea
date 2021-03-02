@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plagiarism', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'plagiarism', language 'sv', version '3.8'.
  *
- * @package   plagiarism
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plagiarism
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['availableplugins'] = 'Tillgängliga plugin-program';
+$string['availableplugins'] = 'Tillgängliga pluginmoduler';
 $string['configenableplagiarism'] = 'Det här kommer att tillåta administratörer att konfigurera plugin-program mot fusk (om de är installerade)';
 $string['configplagiarismplugins'] = 'Var snäll och välj det plugin-program mot fusk som Du vill konfigurera';
 $string['enableplagiarism'] = 'Aktivera plugin-program mot fusk';
 $string['manageplagiarism'] = 'Administrera plugins för plagiatkontroll';
-$string['nopluginsinstalled'] = 'Det finns inga installerade plugin-program mot fusk.';
-$string['plagiarism'] = 'Åtgärder för att förhindra fusk';
+$string['nopluginsinstalled'] = 'Det finns inga installerade pluginmoduler mot fusk.';
+$string['plagiarism'] = 'Plagierings-skydd';
+$string['privacy:metadata:plagiarism'] = 'Plagieringsundersystemet fungerar som en kanal och skickar förfrågningar från pluginmoduler till de olika plagieringstjänsterna.';

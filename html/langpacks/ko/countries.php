@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'countries', language 'ko', version '3.8'.
  *
- * @package   countries
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     countries
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -53,7 +53,7 @@ $string['BJ'] = '베닌';
 $string['BL'] = '세인트 바르텔미';
 $string['BM'] = '버뮤다';
 $string['BN'] = '브루나이 다루살램';
-$string['BO'] = '볼리비아';
+$string['BO'] = '볼리비아의 Plurinational 주';
 $string['BQ'] = '보네르, 신트 유스타티우스 및 사바';
 $string['BR'] = '브라질';
 $string['BS'] = '바하마';
@@ -76,7 +76,7 @@ $string['CN'] = '중국';
 $string['CO'] = '콜롬비아';
 $string['CR'] = '코스타리카';
 $string['CU'] = '쿠바';
-$string['CV'] = '카보베르데';
+$string['CV'] = '카보 베르데';
 $string['CW'] = '큐라';
 $string['CX'] = '크리스마스 섬';
 $string['CY'] = '키프로스';
@@ -160,12 +160,12 @@ $string['LS'] = '레소토';
 $string['LT'] = '리투아니아';
 $string['LU'] = '룩셈부르크';
 $string['LV'] = '라트비아';
-$string['LY'] = '리비아 아랍 자매히리아';
+$string['LY'] = '리비아';
 $string['MA'] = '모로코';
 $string['MC'] = '모나코';
 $string['MD'] = '몰도바';
 $string['ME'] = '몬테네그로';
-$string['MF'] = '생마르탱';
+$string['MF'] = '생마르탱(프랑스령)';
 $string['MG'] = '마다가스카르';
 $string['MH'] = '마샬 군도';
 $string['MK'] = '마케도니아';
@@ -262,7 +262,7 @@ $string['UY'] = '우루과이';
 $string['UZ'] = '우즈베키스탄';
 $string['VA'] = '바티칸 국가도시';
 $string['VC'] = '세인트빈센트 그레나딘';
-$string['VE'] = '베네수엘라';
+$string['VE'] = '베네수엘라, 볼리바르 공화국';
 $string['VG'] = '버진 제도(영국)';
 $string['VI'] = '버진 제도(미국)';
 $string['VN'] = '베트남';

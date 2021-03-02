@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'nl', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -196,9 +196,6 @@ $string['noupcomingevents'] = 'Er zijn geen activiteiten op komst';
 $string['oneevent'] = '1 activiteit';
 $string['pollinterval'] = 'Update-interval';
 $string['pollinterval_help'] = 'Hoe dikwijls wil je de kalender updaten met nieuwe gebeurtenissen';
-$string['preferences'] = 'Voorkeuren';
-$string['preferences_available'] = 'Persoonlijke voorkeuren';
-$string['preferredcalendar'] = 'Voorkeurskalender';
 $string['pref_lookahead'] = 'Aantal dagen vooruit kijken naar komende activiteiten om in het blok "Binnenkort" te tonen';
 $string['pref_lookahead_help'] = 'Dit stelt het (maximale) aantal dagen in de toekomst in dat een gebeurtenis moet beginnen om opgenomen te worden als een aankomende gebeurtenis. Gebeurtenissen die na deze tijdsspanne starten zullen niet als aankomende gebeurtenis getoond worden. Merk op dat <strong>er geen garantie is</strong> dat alle gebeurtenissen die in dit tijdsframe starten getoond worden: als er teveel zijn (meer dan de instelling Maximale aantal aankomende gebeurtenissen) dan zullen de gebeurtenissen het verst in de toekomst niet getoond worden.';
 $string['pref_maxevents'] = 'Maximale aantal getoonde activiteiten';
@@ -209,16 +206,19 @@ $string['pref_startwday'] = 'Eerste dag van de week';
 $string['pref_startwday_help'] = 'De kalenderweken zullen beginnen met de dag die je hier selecteert.';
 $string['pref_timeformat'] = 'Tijdsweergave';
 $string['pref_timeformat_help'] = 'Je kunt kiezen of je de tijd in 12- of 24-uurformaat wil zien. Als je kiest voor standaard, dan zal het formaat automatisch gekozen worden volgens de taal die je gebruikt op je site.';
+$string['preferences'] = 'Voorkeuren';
+$string['preferences_available'] = 'Persoonlijke voorkeuren';
+$string['preferredcalendar'] = 'Voorkeurskalender';
 $string['privacy:metadata:calendar:event'] = 'De kalendercomponent kan kalenderdetails voor de gebruiker bewaren in het core subsysteem.';
 $string['privacy:metadata:calendar:event:description'] = 'De beschrijving van het kalenderitem.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'Het gebeurtenistype van het kalenderitem.';
 $string['privacy:metadata:calendar:event:name'] = 'De naam van het kalenderitem.';
+$string['privacy:metadata:calendar:event:timeduration'] = 'De duur van het kalenderitem.';
+$string['privacy:metadata:calendar:event:timestart'] = 'Starttijd van de kalendergebeurtenis';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'De kalendercomponent kan details bewaren van de inschrijvingen van een gebruiker in kalenders binnen het core subsysteem.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'Het gebeurtenistype van de kalenderinschrijving.';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'De naam van de kalenderinschrijving.';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'De url van de kalenderinschrijving.';
-$string['privacy:metadata:calendar:event:timeduration'] = 'De duur van het kalenderitem.';
-$string['privacy:metadata:calendar:event:timestart'] = 'Starttijd van de kalendergebeurtenis';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'De gebruikersvoorkeuren voor het tonen van een kalenderitemtype.';
 $string['recentupcoming'] = 'Recent en volgende 60 dagen';
 $string['repeatedevents'] = 'Herhaalde gebeurtenissen';

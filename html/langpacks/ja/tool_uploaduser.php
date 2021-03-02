@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ja', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,12 +57,13 @@ $string['uploadpicture_cannotsave'] = 'ユーザ {$a} の画像を保存でき�
 $string['uploadpicture_cannotunzip'] = '画像ファイルを展開できません。';
 $string['uploadpicture_invalidfilename'] = '画像ファイル {$a} のファイル名に無効な文字が含まれます。スキップします。';
 $string['uploadpicture_overwrite'] = '既存のユーザ画像を上書きしてもよろしいですか?';
-$string['uploadpictures'] = 'ユーザ画像をアップロードする';
-$string['uploadpictures_help'] = 'ZIP圧縮したイメージファイルをユーザ画像としてアップロードできます。イメージファイルは「選択されたユーザ属性.拡張子」という形で名前付けをする必要があります。例えば「user1234.jpg」はusernameが「user1234」のユーザ用となります。';
 $string['uploadpicture_userfield'] = '画像とのマッチに使用するユーザ属性:';
 $string['uploadpicture_usernotfound'] = '「 {$a->userfield} 」の値が「 {$a->uservalue} 」のユーザは存在しません。スキップします。';
 $string['uploadpicture_userskipped'] = 'ユーザ {$a} をスキップします (画像登録済みです)。';
 $string['uploadpicture_userupdated'] = 'ユーザ {$a} の画像が更新されました。';
+$string['uploadpictures'] = 'ユーザ画像をアップロードする';
+$string['uploadpictures_help'] = 'ZIP圧縮したイメージファイルをユーザ画像としてアップロードできます。イメージファイルは「選択されたユーザ属性.拡張子」という形で名前付けをする必要があります。例えば「user1234.jpg」はusernameが「user1234」のユーザ用となります。';
+$string['uploaduser:uploaduserpictures'] = 'ユーザ画像をアップロードする';
 $string['uploadusers'] = 'ユーザをアップロードする';
 $string['uploadusers_help'] = 'テキストファイルでユーザをアップロード (および任意でコース登録) できます。ファイルのフォーマットは以下のとおりです:
 
@@ -72,7 +73,6 @@ $string['uploadusers_help'] = 'テキストファイルでユーザをアップ�
 * 必須フィールド名は次のとおりです: username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'アップロードユーザプレビュー';
 $string['uploadusersresult'] = 'アップロードユーザ結果';
-$string['uploaduser:uploaduserpictures'] = 'ユーザ画像をアップロードする';
 $string['useraccountupdated'] = 'ユーザが更新されました。';
 $string['useraccountuptodate'] = '最新ユーザ';
 $string['userdeleted'] = 'ユーザが削除されました。';

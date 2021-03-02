@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshop', language 'zh_cn', version '3.8'.
  *
- * @package   workshop
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshop
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,7 +48,7 @@ $string['areasubmissionattachment'] = '提交附件';
 $string['areasubmissioncontent'] = '提交文本';
 $string['assess'] = '评价';
 $string['assessedexample'] = '已评价的示例提交';
-$string['assessedsubmission'] = '已评价的提交';
+$string['assessedsubmission'] = '评价提交';
 $string['assessingexample'] = '评价示例提交';
 $string['assessingsubmission'] = '评价提交';
 $string['assessment'] = '评价';
@@ -82,11 +82,11 @@ $string['calculatesubmissiongrades'] = '计算提交成绩';
 $string['calculatesubmissiongradesdetails'] = '预计：{$a->expected}<br />已计算：{$a->calculated}';
 $string['chooseuser'] = '选择用户…';
 $string['clearaggregatedgrades'] = '清除所有汇总成绩';
-$string['clearaggregatedgradesconfirm'] = '您确定要清除已计算的提交成绩和评价成绩？';
 $string['clearaggregatedgrades_help'] = '提交的汇总成绩及评价成绩将会被重置。您可以在成绩核定阶段再次从头开始重新计算这些成绩。';
+$string['clearaggregatedgradesconfirm'] = '您确定要清除已计算的提交成绩和评价成绩？';
 $string['clearassessments'] = '清除评价';
-$string['clearassessmentsconfirm'] = '您确定要清除所有评价成绩？清除后，您将不能独立恢复这些信息，评价人必须重新评价分配的提交。';
 $string['clearassessments_help'] = '已计算的提交成绩和评价成绩将被重置。评价表单已填写的信息仍然保留，但是所有评价人必须再次打开评价表单并重新保存，以再次计算给定的成绩。';
+$string['clearassessmentsconfirm'] = '您确定要清除所有评价成绩？清除后，您将不能独立恢复这些信息，评价人必须重新评价分配的提交。';
 $string['conclusion'] = '总结';
 $string['conclusion_help'] = '总结文本将在活动结束时显示给参与者。';
 $string['configexamplesmode'] = '互动评价中范例评价的默认模式';
@@ -159,43 +159,43 @@ $string['formatpeergradeover'] = '<span class="grade">{$a->grade}</span> <span c
 $string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span> @ <span class="weight">{$a->weight}</span>';
 $string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
 $string['givengrades'] = '给出的分数';
-$string['gradecalculated'] = '计算提交分数';
+$string['grade_grading_name'] = '评价';
+$string['grade_submission_name'] = '提交';
+$string['gradecalculated'] = '计算提交成绩';
 $string['gradedecimals'] = '成绩的小数位数';
 $string['gradegivento'] = '&gt;';
-$string['grade_grading_name'] = '评价';
 $string['gradeinfo'] = '成绩：{$a->received}/{$a->max}';
 $string['gradeitemassessment'] = '{$a->workshopname} (评价)';
 $string['gradeitemsubmission'] = '{$a->workshopname} (提交)';
 $string['gradeover'] = '覆盖提交成绩';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = '互动评价成绩报表';
-$string['grade_submission_name'] = '提交';
 $string['gradetopassgrading'] = '通过所需的评价成绩';
 $string['gradetopasssubmission'] = '通过所需的提交成绩';
 $string['gradinggrade'] = '评价成绩';
-$string['gradinggradecalculated'] = '计算评价成绩';
 $string['gradinggrade_help'] = '此设置指定提交评价可获得的最高分。';
+$string['gradinggradecalculated'] = '计算评价成绩';
 $string['gradinggradeof'] = '评价({$a})的成绩';
 $string['gradinggradeover'] = '覆盖评价成绩';
 $string['gradingsettings'] = '评分设置';
 $string['groupnoallowed'] = '您未被允许访问该互动评价中的任何组';
 $string['iamsure'] = '是的，我确定';
 $string['indicator:cognitivedepth'] = '互动评价活动认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 互动评价活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '互动评价活动认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与者已达到互动评价活动提供的认知参与百分比(级别=未查看、查看、提交、查看反馈、评论反馈、查看反馈后重新提交)';
-$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在 互动评价活动中所达到的认知深度。';
 $string['indicator:socialbreadth'] = '互动评价活动认社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标是基于学生在 互动评价活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '互动评价活动认社会广度';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔内，参与者达到了互动评价活动所提供的社会参与百分比(级别=没有参与，单独参与，和其他人一起参与)';
-$string['indicator:socialbreadth_help'] = '这个指标是基于学生在 互动评价活动中所达到的社会广度。';
 $string['info'] = '信息';
 $string['instructauthors'] = '提交说明';
 $string['instructreviewers'] = '评价说明';
 $string['introduction'] = '描述';
 $string['latesubmissions'] = '迟的提交';
-$string['latesubmissionsallowed'] = '允许迟交';
 $string['latesubmissions_desc'] = '允许在截止日期后提交';
 $string['latesubmissions_help'] = '如果启用，作者可以在提交截止日期之后或在评价阶段提交他们的作品。但迟交的作品不能编辑。';
+$string['latesubmissionsallowed'] = '允许迟交';
 $string['legacyallocationplugincron'] = '遗留的cron互动评价分配';
 $string['maxbytes'] = '最大提交附件大小';
 $string['modulename'] = '互动评价';
@@ -304,8 +304,8 @@ $string['someuserswosubmission'] = '至少还有一个作者没有提交他们�
 $string['sortasc'] = '升序排序';
 $string['sortdesc'] = '降序排序';
 $string['strategy'] = '评分策略';
-$string['strategyhaschanged'] = '自表单打开以进行编辑以来，互动评价评分策略已经发生了变化。';
 $string['strategy_help'] = '评分策略确定使用的评价表单和评价提交的方法。有4个选项:*累计评分-对于指定的方面给出评论和评分*评论-就特定方面提供意见，但不提供评分*错误数量-对指定的断言给出评论和对/错评价*红批-就指定的标准作出级别评估';
+$string['strategyhaschanged'] = '自表单打开以进行编辑以来，互动评价评分策略已经发生了变化。';
 $string['submission'] = '提交';
 $string['submissionattachment'] = '附件';
 $string['submissionby'] = '{$a}的提交';
@@ -381,10 +381,10 @@ $string['usepeerassessment_help'] = '如果启用，可以分配其他用户的�
 $string['userdatecreated'] = '提交于<span>{$a}</span>';
 $string['userdatemodified'] = '修改于<span>{$a}</span>';
 $string['userplan'] = '互动评价计划表';
+$string['userplan_help'] = '互动评价计划表显示活动的所有阶段，并列出每个阶段的任务。当前阶段被突出显示，任务进度被标记出来。';
 $string['userplanaccessibilityskip'] = '跳转到当前任务';
 $string['userplanaccessibilitytitle'] = '互动评价{$a}阶段时间轴';
 $string['userplancurrentphase'] = '当前阶段';
-$string['userplan_help'] = '互动评价计划表显示活动的所有阶段，并列出每个阶段的任务。当前阶段被突出显示，任务进度被标记出来。';
 $string['useselfassessment'] = '使用自我评价';
 $string['useselfassessment_desc'] = '学生可以评价他们自己的作品';
 $string['useselfassessment_help'] = '如果启用，用户自己的提交可能会被分配给自己评价。并且，用户除了自己的提交成绩外，还会获得一个评价成绩。';
@@ -398,7 +398,6 @@ $string['workshop:editdimensions'] = '编辑评价表单';
 $string['workshop:exportsubmissions'] = '导出提交';
 $string['workshop:ignoredeadlines'] = '忽略时间限制';
 $string['workshop:manageexamples'] = '管理范例提交';
-$string['workshopname'] = '互动评价名称';
 $string['workshop:overridegrades'] = '覆盖已计算的成绩';
 $string['workshop:peerassess'] = '同学间互评';
 $string['workshop:publishsubmissions'] = '发布提交';
@@ -411,6 +410,7 @@ $string['workshop:viewauthornames'] = '查看作者姓名';
 $string['workshop:viewauthorpublished'] = '查看已发布提交的作者';
 $string['workshop:viewpublishedsubmissions'] = '查看已发布提交';
 $string['workshop:viewreviewernames'] = '查看评价人姓名';
+$string['workshopname'] = '互动评价名称';
 $string['yourassessmentfor'] = '您对{$a}的评价';
 $string['yourgrades'] = '您的成绩';
 $string['yoursubmission'] = '您的提交';

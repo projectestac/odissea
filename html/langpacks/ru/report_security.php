@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'ru', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -101,10 +101,10 @@ $string['check_riskadmin_name'] = 'Администраторы';
 $string['check_riskadmin_ok'] = 'Найдено администраторов сервера — {$a}';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) просмотр назначения роли</a>';
 $string['check_riskadmin_warning'] = 'Найдено администраторов сервера — {$a->admincount} и некорректных назначений роли администратора — {$a->unsupcount}.';
-$string['check_riskbackup_detailsok'] = 'Нет ролей с явным разрешением на резервное копирование пользовательских данных. Однако, отметьте, что администраторы с правом «moodle/site:doanything», вероятно, будут в состоянии сделать это.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Эти активные переопределения дают пользователям возможность включать пользовательские данные в резервные копии. Удостоверьтесь, что это право необходимо.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Следующие роли системы в настоящее время позволяют пользователям включать пользовательские данные в резервные копии. Удостоверьтесь, что это право необходимо.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>Следующие пользователи (из-за перечисленных выше назначений или переопределений ролей) в настоящее время имеют право в своих курсах делать резервные копии, содержащие персональные данные всех записанных на эти курсы пользователей. Удостоверьтесь, что: а) Вы им доверяете и б) их учетные записи защищены надежными паролями:</p> {$a}';
+$string['check_riskbackup_detailsok'] = 'Нет ролей с явным разрешением на резервное копирование пользовательских данных. Однако, отметьте, что администраторы с правом «moodle/site:doanything», вероятно, будут в состоянии сделать это.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} в контексте «{$a->contextname}»</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Резервное копирование пользовательских данных';

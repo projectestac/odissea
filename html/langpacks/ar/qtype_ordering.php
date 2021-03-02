@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ordering', language 'ar', version '3.8'.
  *
- * @package   qtype_ordering
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ordering
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -76,17 +76,17 @@ $string['noscore'] = 'لا نقاط';
 $string['notenoughanswers'] = 'يجب أن تحتوي أسئلة الترتيب على أكثر من {$a} من الإجابات.';
 $string['numberingstyle'] = 'أتريد ترقيم الخيارات؟';
 $string['numberingstyle123'] = '1., 2., 3., ...';
-$string['numberingstyleabc'] = '';
 $string['numberingstyleABCD'] = '';
+$string['numberingstyleIIII'] = 'I., II., III., ...';
 $string['numberingstyle_desc'] = 'نمط الترقيم الافتراضي.';
 $string['numberingstyle_help'] = 'إختر نمط الترقيم للعناصر القابلة للسحب في هذا السؤال.';
+$string['numberingstyleabc'] = '';
 $string['numberingstyleiii'] = 'i., ii., iii., ...';
-$string['numberingstyleIIII'] = 'I., II., III., ...';
 $string['numberingstylenone'] = 'بلا ترقيم';
 $string['pluginname'] = 'الترتيب';
+$string['pluginname_help'] = 'يتم عرض العديد من العناصر بترتيب مختلط. يمكن سحب العناصر إلى ترتيب ذو معنى.';
 $string['pluginnameadding'] = 'إضافة سؤال ترتيب';
 $string['pluginnameediting'] = 'تحرير سؤال ترتيب';
-$string['pluginname_help'] = 'يتم عرض العديد من العناصر بترتيب مختلط. يمكن سحب العناصر إلى ترتيب ذو معنى.';
 $string['pluginnamesummary'] = 'ضع العناصر المختلطة بترتيب ذي معنى.';
 $string['positionx'] = 'الموضع {$a}';
 $string['privacy:metadata'] = 'إن ملحق السؤال من نوع الترتيب لا يخزن أي بيانات شخصية.';

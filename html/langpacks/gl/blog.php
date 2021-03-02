@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'gl', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -89,7 +89,7 @@ $string['entrysaved'] = 'Gardouse o seu artigo';
 $string['entrytitle'] = 'Título do artigo';
 $string['eventblogassociationadded'] = 'Creada a asociación do blog';
 $string['eventblogassociationdeleted'] = 'Eliminada a asociación do blog';
-$string['eventblogentriesviewed'] = 'Vistas as entradas do blog';
+$string['eventblogentriesviewed'] = 'Vistas os artigos do blog';
 $string['eventblogexternaladded'] = 'Rexistrado o blog externo';
 $string['eventblogexternalremoved'] = 'Blog externo dado de baixa';
 $string['eventblogexternalupdated'] = 'Actualizado o blog externo';
@@ -134,41 +134,41 @@ $string['pagesize'] = 'Número de artigos de blog por páxina';
 $string['permalink'] = 'Ligazón permanente';
 $string['personalblogs'] = 'Os usuarios só poden ver o seu propio blog';
 $string['preferences'] = 'Preferencias do blog';
-$string['privacy:metadata:core_comments'] = 'Comentarios asociados con entradas do blog';
-$string['privacy:metadata:core_files'] = 'Ficheiros anexos a entradas do blog';
-$string['privacy:metadata:core_tag'] = 'Etiquetas asociadas con entradas do blog';
-$string['privacy:metadata:external'] = 'Unha ligazón cara unha canle RSS externa';
+$string['privacy:metadata:core_comments'] = 'Comentarios asociados con artigos do blog';
+$string['privacy:metadata:core_files'] = 'Ficheiros anexos a artigos do blog';
+$string['privacy:metadata:core_tag'] = 'Etiquetas asociadas con artigos do blog';
+$string['privacy:metadata:external'] = 'Unha ligazón cara a unha canle RSS externa';
 $string['privacy:metadata:external:description'] = 'A descrición da fonte';
-$string['privacy:metadata:external:filtertags'] = 'A lista de etiquetas coas que filtrar as entradas';
+$string['privacy:metadata:external:filtertags'] = 'A lista de etiquetas coas que filtrar os artigos';
 $string['privacy:metadata:external:name'] = 'O nome da fonte';
 $string['privacy:metadata:external:timefetched'] = 'A data na que a fonte foi buscada por última vez';
 $string['privacy:metadata:external:timemodified'] = 'A data na que a asociación foi modificada por última vez';
 $string['privacy:metadata:external:url'] = 'O URL da fonte';
 $string['privacy:metadata:external:userid'] = 'O ID do usuario que engadiu a entrada de blog externa.';
-$string['privacy:metadata:post'] = 'A información relacionada con entradas do blog';
+$string['privacy:metadata:post'] = 'A información relacionada con artigos do blog';
 $string['privacy:metadata:post:content'] = 'O contido da entrada de blog externa.';
 $string['privacy:metadata:post:created'] = 'A data na que foi creada a entrada.';
 $string['privacy:metadata:post:lastmodified'] = 'A data na que foi modificada por última vez a entrada.';
-$string['privacy:metadata:post:publishstate'] = 'Si a entrada é visíbel ou non para outros';
+$string['privacy:metadata:post:publishstate'] = 'Se o artigo é visíbel ou non para outros';
 $string['privacy:metadata:post:subject'] = 'Título da entrada do blog';
 $string['privacy:metadata:post:summary'] = 'Entrada do blog';
 $string['privacy:metadata:post:uniquehash'] = 'Un identificador único para un artigo externo, xeralmente un URL';
 $string['privacy:metadata:post:userid'] = 'O ID do usuario que engadiu a entrada de blog.';
-$string['privacy:metadata:post:usermodified'] = 'O usuario que modificou a entrada por última vez';
+$string['privacy:metadata:post:usermodified'] = 'O usuario que modificou o artigo por última vez';
 $string['privacy:path:blogassociations'] = 'Publicacións asociadas ao blog';
 $string['privacy:unknown'] = 'Descoñecido';
 $string['publishto'] = 'Publicar en';
+$string['publishto_help'] = 'Hai tres posibilidades:
+
+* Vostede (versión preliminar) - Só vostede e os administradores poden ver este artigo.
+* Todos neste sitio - Calquera rexistrado no sitio pode ler este artigo.
+* Todo o mundo - Calquera (incluídos os convidados) pode ler este artigo.';
 $string['publishtocourse'] = 'Usuarios que comparten curso con vostede';
 $string['publishtocourseassoc'] = 'Membros do curso asociado';
 $string['publishtocourseassocparam'] = 'Membros de {$a}';
 $string['publishtogroup'] = 'Usuarios que comparten grupo con vostede';
 $string['publishtogroupassoc'] = 'Membros do seu grupo no curso asociado';
 $string['publishtogroupassocparam'] = 'Membros do seu grupo en {$a}';
-$string['publishto_help'] = 'Hai tres posibilidades:
-
-* Vostede (versión preliminar) - Só vostede e os administradores poden ver este artigo.
-* Todos neste sitio - Calquera rexistrado no sitio pode ler este artigo.
-* Todo o mundo - Calquera (incluídos os convidados) pode ler este artigo.';
 $string['publishtonoone'] = 'Vostede (borrador)';
 $string['publishtosite'] = 'Todos neste sitio';
 $string['publishtoworld'] = 'Todo o mundo';
@@ -212,6 +212,6 @@ $string['viewmyentriesaboutcourse'] = 'Ver todos os meus artigos sobre este curs
 $string['viewmyentriesaboutmodule'] = 'Ver todos os meus artigos sobre este {$a}';
 $string['viewsiteentries'] = 'Ver todos os artigos';
 $string['viewuserentries'] = 'Ver todos os artigos por {$a}';
-$string['worldblogs'] = 'Calquera pode ver os artigos entradas definidos como accesíbeis a todo o mundo';
+$string['worldblogs'] = 'Calquera pode ver os artigos definidos como accesíbeis a todo o mundo';
 $string['wrongexternalid'] = 'ID de blog externo incorrecto';
 $string['wrongpostid'] = 'ID de mensaxe de blog erróneo';

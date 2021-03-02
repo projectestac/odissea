@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,27 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cachestore_file', language 'ar', version '3.8'.
  *
- * @package   cachestore_file
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_file
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['autocreate'] = 'إنشاء دليل تلقائي';
 $string['autocreate_help'] = 'إذا مكّن فالدليل المحدد في المسار يتم إنشاؤه تلقائيا إذا كان غير موجود بالفعل.';
-$string['path'] = 'مسار الخبء';
-$string['path_help'] = 'المجلد الذي ينبغي استعماله لتخزين الملفات لمخزن الخبء هذا. إذا تُرك فارغاً (افتراضي) سيتم إنشاء المجلد تلقائياً في المجلد moodledata. يمكن استعمال ذلك للإشارة إلى مخزن الملفات نسبة إلى مجلد في محرك أقراص ذي أداء أفضل (مثلما موجود في الذاكرة).';
-$string['pluginname'] = 'خبء الملفات';
+$string['path'] = 'مسار ذاكرة التخزين المؤقت';
+$string['path_help'] = 'الدليل الذي ينبغي أن يستخدم لتخزين الملفات من هذا المخزن المؤقت. إذا بقي فارغاً (افتراضي) سيكون الدليل الذي يتم إنشاؤه تلقائيا في الدليل moodledata. و يمكن استخدام هذا للإشارة إلى مخزن الملفات باتجاه دليل على محرك الأقراص بأداء أفضل ( مثل الواحد في الذاكرة).';
+$string['pluginname'] = 'ملف ذاكرة التخزين المؤقت';
 $string['prescan'] = 'المسح القبلي للدليل';
-$string['prescan_help'] = 'إذا مكّن يتم تفحص الدليل عندما يتم استخدام ذاكرة التخزين المؤقت أولا و يتم فحص طلبات الحصول على الملفات أولاً ضد بيانات المسح الضوئي.
-هذا يمكن أن يساعد إذا كان لديك نظام الملفات بطيء و  أن عمليات الملفات تسبب لك عنق الزجاجة.';
-$string['privacy:metadata'] = 'يخزن ملحق مخزن خبء الملفات؛ البيانات لفترة وجيزة كجزء من وظائف التخزين المؤقت ولكن يتم مسح هذه البيانات بانتظام.';
+$string['prescan_help'] = 'إذا مكّن يتم تفحص المجلد عند استعمال الخبء لأول مرة ويتم فحص طلبات الحصول على الملفات لأول مرة إزاء البيانات المفحوصة. هذا يمكن أن يساعد إذا كان لديك نظام ملفات بطيء وعندما تكتشف بأن عمليات الملفات هي سبب الاختناق في الأداء.';
+$string['privacy:metadata'] = 'يخزن البرنامج المساعد File cache cachestore البيانات لفترة وجيزة كجزء من وظائف التخزين المؤقت و لكن يتم مسح هذه البيانات بانتظام.';
 $string['singledirectory'] = 'مخزن الدليل المفرد';
 $string['singledirectory_help'] = 'إذا مكّن تخزين الملفات (البنود المؤقتة) فسيتم في دليل واحد بدلا من تقسيمها إلى أدلة متعددة. <br /> سوف تمكن هذه التفاعلات من تسريع الملفات و لكن يأتي على حساب زيادة خطر ضرب قيود نظام الملفات.
 <BR /> فمن المستحسن تشغيل هذا إذا كانت أحد النقاط التالية صحيحة:

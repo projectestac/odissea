@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_paypal', language 'gl', version '3.8'.
  *
- * @package   enrol_paypal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_paypal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,7 +41,7 @@ $string['enrolperiod'] = 'Duración da matriculación';
 $string['enrolperiod_desc'] = 'Período de tempo durante o que é válida a matriculación. De configurarse a cero, a duración da matriculación será ilimitada de modo predeterminado.';
 $string['enrolperiod_help'] = 'Tempo durante o que a matriculación é válida, comezando desde o momento en que o usuario se matricula. De estar desactivado, a duración da matriculación será ilimitada.';
 $string['enrolstartdate'] = 'Data de inicio';
-$string['enrolstartdate_help'] = 'De estar conectada, os usuarios soamente se poden matricular desde esta data en diante.';
+$string['enrolstartdate_help'] = 'De estar conectada, os usuarios soamente se poden matricular dende esta data en diante.';
 $string['errdisabled'] = 'O engadido de matriculación con PayPal está desactivado e non manexa as notificacións de pagamentos.';
 $string['erripninvalid'] = 'A notificación de pagamento instantáneo non foi verificada por PayPal.';
 $string['errpaypalconnect'] = 'Non foi posíbel conectar a {$a->url} para verificar a notificación de pagamento instantáneo: {$a->result}';
@@ -52,14 +52,13 @@ $string['mailstudents'] = 'Notificarlle aos alumnos';
 $string['mailteachers'] = 'Notificarlle aos profesores';
 $string['messageprovider:paypal_enrolment'] = 'Mensaxes de matriculación por PayPal';
 $string['nocost'] = 'Non hai custo asociado coa matriculación deste curso!';
-$string['paypalaccepted'] = 'Pagamentos PayPal aceptados';
 $string['paypal:config'] = 'Configurar instancias de matrícula vía PayPal';
 $string['paypal:manage'] = 'Xestionar os usuarios matriculados';
 $string['paypal:unenrol'] = 'Desmatricular usuarios do curso';
 $string['paypal:unenrolself'] = 'Desmatricularse por si mesmo do curso';
+$string['paypalaccepted'] = 'Pagamentos PayPal aceptados';
 $string['pluginname'] = 'PayPal';
-$string['pluginname_desc'] = 'O módulo Paypal permítelle configurar cursos de pago. No caso de calquera curso ser cero, non se lles pedirá aos alumnos ningún pagamento para a entrada.
-Hai un custo xeral que vostede configura como predeterminado para o sitio enteiro e despois unha configuración para cada curso individualmente. O custo do curso sobrescribe o custo do sitio.';
+$string['pluginname_desc'] = 'O módulo Paypal permítelle configurar cursos de pago. No caso de calquera curso ser cero, non se lles pedirá aos alumnos ningún pagamento para a entrada. Hai un custo xeral que vostede configura como predeterminado para o sitio enteiro e despois unha configuración para cada curso individualmente. O custo do curso sobrescribe o custo do sitio.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'Información sobre as transaccións de PayPal para matriculacións con PayPal.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = 'Enderezo de correo ou identificación da conta de PayPal do destinatario do pagamento (é dicir, o comerciante).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = 'O ID do curso que se vende.';

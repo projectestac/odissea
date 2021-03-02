@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'en', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,19 +49,19 @@ $string['graded'] = '(graded)';
 $string['gradenextungraded'] = 'Grade next {$a} ungraded attempts';
 $string['gradeungraded'] = 'Grade all {$a} ungraded attempts';
 $string['grading'] = 'Manual grading';
+$string['grading:componentname'] = 'Manual grading report';
+$string['grading:viewidnumber'] = 'See student ID numbers while grading';
+$string['grading:viewstudentnames'] = 'See student names while grading';
 $string['gradingall'] = 'All {$a} attempts on this question.';
 $string['gradingattempt'] = 'Attempt number {$a->attempt} for {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Grading attempts {$a->from} to {$a->to} of {$a->of}';
 $string['gradingattemptwithidnumber'] = 'Attempt number {$a->attempt} for {$a->fullname} ({$a->idnumber})';
-$string['grading:componentname'] = 'Manual grading report';
 $string['gradingnextungraded'] = 'Next {$a} ungraded attempts';
 $string['gradingnotallowed'] = 'You do not have permission to manually grade responses in this quiz';
 $string['gradingquestionx'] = 'Grading question {$a->number}: {$a->questionname}';
 $string['gradingreport'] = 'Manual grading report';
 $string['gradingungraded'] = '{$a} ungraded attempts';
 $string['gradinguser'] = 'Attempts for {$a}';
-$string['grading:viewidnumber'] = 'See student ID numbers while grading';
-$string['grading:viewstudentnames'] = 'See student names while grading';
 $string['hideautomaticallygraded'] = 'Hide questions that have been graded automatically';
 $string['inprogress'] = 'In progress';
 $string['invalidattemptid'] = 'No such attempt ID exists';

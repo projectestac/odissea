@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,28 +12,29 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_statistics', language 'gl', version '3.8'.
  *
- * @package   quiz_statistics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_statistics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actualresponse'] = 'Resposta actual';
+$string['actualresponse'] = 'Resposta real';
 $string['allattempts'] = 'todos os intentos';
 $string['allattemptsavg'] = 'Cualificación media de todos os intentos';
 $string['allattemptscount'] = 'Número total de intentos completos cualificados';
-$string['analysisnameonly'] = '"{$a->name}"';
-$string['analysisno'] = '({$a->number}) "{$a->name}"';
-$string['analysisnovariant'] = '({$a->number}) "{$a->name}" variante {$a->variant}';
+$string['analysisnameonly'] = '«{$a->name}»';
+$string['analysisno'] = '({$a->number}) «{$a->name}»';
+$string['analysisnovariant'] = '({$a->number}) «{$a->name}» variante {$a->variant}';
 $string['analysisofresponses'] = 'Análise das respostas';
-$string['analysisofresponsesfor'] = 'Análise das respostas para {$a}.';
-$string['analysisvariant'] = '"{$a->name}" variante {$a->variant}';
+$string['analysisofresponsesfor'] = 'Análise das respostas para {$a}';
+$string['analysisvariant'] = '«{$a->name}» variante {$a->variant}';
 $string['attempts'] = 'Intento';
 $string['attemptsall'] = 'todos os intentos';
 $string['attemptsfirst'] = 'primeiro intento';
@@ -43,7 +43,7 @@ $string['calculatefrom'] = 'Calcular as estatísticas de';
 $string['calculatingallstats'] = 'Calculando as estatísticas para as probas, preguntas e análise de datos de respostas';
 $string['cic'] = 'Coeficiente de consistencia interna (para {$a})';
 $string['completestatsfilename'] = 'completestats';
-$string['count'] = 'Cantidade';
+$string['count'] = 'Número';
 $string['counttryno'] = 'Número de intentos {$a}';
 $string['coursename'] = 'Nome do curso';
 $string['detailedanalysis'] = 'Análise máis detallada das respostas a esta pregunta';
@@ -71,7 +71,7 @@ $string['intended_weight'] = 'Ponderación desexada';
 $string['kurtosis'] = 'Curtose da distribución de puntuacións (para {$a})';
 $string['lastattempts'] = 'último intento';
 $string['lastattemptsavg'] = 'Cualificación media dos últimos intentos';
-$string['lastcalculated'] = 'O último cálculo foi vai  {$a->lastcalculated} e desde aquela fixeronse {$a->count} intentos.';
+$string['lastcalculated'] = 'O último cálculo foi vai {$a->lastcalculated} e dende aquela fixeronse {$a->count} intentos.';
 $string['maximumfacility'] = 'Facilidade máxima';
 $string['median'] = 'Mediana de cualificación (de {$a})';
 $string['medianfacility'] = 'Facilidade media';
@@ -83,7 +83,7 @@ $string['negcovar_help'] = 'A cualificación da pregunta para este conxunto de i
 
 A nosa ecuación para a ponderación efectiva da pregunta non pode calcularse neste caso. Os cálculos para a ponderación efectiva da pregunta para as outras preguntas desta proba son a ponderación efectiva da pregunta se as preguntas resaltadas cunha covarianza negativa teñen unha cualificación máxima de cero.
 
-Se edita unha proba e ponlle a esta(s) pregunta(s) con covarianza negativa unha cualificación máxima de cero, entón  a ponderación efectiva destas preguntas será cero e a ponderación efectiva real da pregunta será como se calcule agora.';
+Se edita unha proba e ponlle a esta(s) pregunta(s) con covarianza negativa unha cualificación máxima de cero, entón a ponderación efectiva destas preguntas será cero e a ponderación efectiva real da pregunta será como se calcule agora.';
 $string['nogradedattempts'] = 'Non se realizaron intentos nesta proba, ou todos os intentos teñen preguntas que precisan a cualificación manual.';
 $string['nostudentsingroup'] = 'Aínda non hai alumnos neste grupo';
 $string['optiongrade'] = 'Crédito parcial';
@@ -94,7 +94,7 @@ $string['positions'] = 'Posición(s)';
 $string['privacy:metadata'] = 'Aínda que o engadido de estatísticas de proba ten táboas de base de datos, os datos son datos engadidos e non describen un único individuo.';
 $string['questioninformation'] = 'Información da pregunta';
 $string['questionname'] = 'Nome da pregunta';
-$string['questionnumber'] = 'Q#';
+$string['questionnumber'] = 'P núm.';
 $string['questionstatistics'] = 'Estatísticas da pregunta';
 $string['questionstatsfilename'] = 'questionstats';
 $string['questiontype'] = 'Tipo de pregunta';
@@ -107,18 +107,18 @@ $string['random_guess_score'] = 'Cualificación estimada ao chou';
 $string['rangebetween'] = '{$a->min} − {$a->max}';
 $string['rangeofvalues'] = 'Intervalo de estatísticas para estas preguntas';
 $string['recalculatenow'] = 'Recalcular agora';
-$string['reportsettings'] = 'Configuracións de cálculos estatdísticos';
+$string['reportsettings'] = 'Axustes de cálculos estatísticos';
 $string['response'] = 'Resposta';
 $string['skewness'] = 'Asimetría da distribución de puntuacións (para {$a})';
 $string['slotstructureanalysis'] = 'Análise estrutural para a pregunta número {$a}';
 $string['standarddeviation'] = 'Desviación tipo (para {$a})';
 $string['standarddeviationq'] = 'Desviación tipo';
-$string['standarderror'] = 'Erro estándar (para {$a})';
+$string['standarderror'] = 'Erro tipo (para {$a})';
 $string['statistics'] = 'Estatísticas';
 $string['statistics:componentname'] = 'Informe estatístico da proba';
+$string['statistics:view'] = 'Ver informe estatístico';
 $string['statisticsreport'] = 'Informe estatístico';
 $string['statisticsreportgraph'] = 'Estatísticas para posicións de pregunta';
-$string['statistics:view'] = 'Ver informe estatístico';
 $string['statsfor'] = 'Estatísticas da proba (para {$a})';
 $string['variant'] = 'Variante';
 $string['viewanalysis'] = 'Ver os detalles';

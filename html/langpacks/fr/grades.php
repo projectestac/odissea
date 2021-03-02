@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grades', language 'fr', version '3.8'.
  *
- * @package   grades
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grades
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -46,29 +46,17 @@ $string['aggregatemin'] = 'Note la plus basse';
 $string['aggregatemode'] = 'Mode des notes';
 $string['aggregatenotonlygraded'] = 'Inclure les notes vides';
 $string['aggregateonlygraded'] = 'Exclure les notes vides';
-$string['aggregateonlygraded_help'] = 'Les notes vides sont celles qui manquent dans le carnet de notes, par exemple parce que l\'activité n\'a pas encore été évaluée ou qu\'elle n\'a pas encore été effectuée, etc.
+$string['aggregateonlygraded_help'] = 'Une note vide est une note manquante dans le carnet de notes. Elle peut provenir d\'un travail qui n\'a pas encore été évalué, d\'un test qui n\'a pas encore été tenté, etc.
 
-Ce réglage détermine comment traiter les notes vides dans le calcul des tendances centrales : ne pas les inclure dans le calcul, ou les inclure une note minimale, par exemple 0 si l\'activité est notée entre 0 et 100.';
+Ce réglage détermine si les notes vides sont exclues du calcul des tendances centrales ou si elles sont traitées comme notes minimales (par exemple 0 dans un travail noté de 0 à 20).';
 $string['aggregateoutcomes'] = 'Inclure les objectifs dans les tendances centrales';
-$string['aggregateoutcomes_help'] = 'Si ce réglage est activé, les objectifs sont inclus dans le calcul des tendances centrales. Ceci peut avoir comme conséquence une note globale inattendue.';
+$string['aggregateoutcomes_help'] = 'Si ce réglage est activé, les objectifs sont inclus dans le calcul des tendances centrales. Dans ce cas, le total de la catégorie peut être inattendu.';
 $string['aggregatesonly'] = 'Passer aux tendances centrales seulement';
 $string['aggregatesubcatsupgradedgrades'] = 'Remarque : le réglage « Inclure les sous-catégories dans les tendances centrales » a été supprimé au cours de la mise à jour du site. Puisque ce réglage était utilisé antérieurement dans ce cours, il vous est conseillé de vérifier le résultat de cette modification dans le carnet de notes.';
 $string['aggregatesum'] = 'Naturelle';
 $string['aggregateweightedmean'] = 'Moyenne pondérée des notes';
 $string['aggregateweightedmean2'] = 'Simple moyenne pondérée des notes';
 $string['aggregation'] = 'Tendance centrale';
-$string['aggregationcoef'] = 'Coefficient';
-$string['aggregationcoefextra'] = 'Bonus';
-$string['aggregationcoefextra_help'] = 'Lorsque la tendance centrale choisie est la « Naturelle » ou « Moyenne simple pondérée » et que la case « Bonus » est cochée, la note maximale de l\'élément d\'évaluation n\'est pas comptée dans le maximum du total des notes. Cela a pour conséquence qu\'il est possible d\'obtenir la note maximale (ou une note dépassant la note maximale, si l\'administrateur du site a activé cette possibilité) dans la catégorie sans obtenir la note maximale dans tous les éléments d\'évaluation.
-
-Si la tendance centrale choisie est « Moyenne des notes (avec points supplémentaires) » et que les points supplémentaires indiqués sont plus grands que 0, les points supplémentaires constituent le facteur qui multiplie la note avant de l\'ajouter au total, après le calcul de la moyenne.';
-$string['aggregationcoefextrasum'] = 'Bonus';
-$string['aggregationcoefextrasumabbr'] = '+';
-$string['aggregationcoefextrasum_help'] = 'Si la case « Bonus » est cochée, la note maximale de l\'élément d\'évaluation ne sera pas ajoutée à la note maximale de la catégorie, offrant la possibilité d\'obtenir la note maximale (ou une note dépassant la note maximale, si l\'administrateur du site a activé cette possibilité) dans la catégorie sans obtenir la note maximale dans tous les éléments d\'évaluation.';
-$string['aggregationcoefextraweight'] = 'Coefficient de bonus';
-$string['aggregationcoefextraweight_help'] = 'Si la pondération pour le bonus est plus grande que 0, la note est traitée comme bonus lors du calcul de la tendance centrale. Ce nombre est le facteur par lequel la note est multipliée avant d\'être ajoutée au total des notes pour le calcul de la moyenne.';
-$string['aggregationcoefweight'] = 'Coefficient de l\'élément';
-$string['aggregationcoefweight_help'] = 'La pondération de l\'élément est utilisée dans le calcul de la tendance centrale pour influencer l\'importance d\'un élément en comparaison avec les autres éléments d\'évaluation de la même catégorie.';
 $string['aggregation_help'] = 'La tendance centrale détermine comment les notes d\'une catégorie sont combinées.
 
 * Moyenne des notes : la somme de toutes les notes divisée par le nombre total de notes.
@@ -77,6 +65,18 @@ $string['aggregation_help'] = 'La tendance centrale détermine comment les notes
 * Note la plus haute.
 * Mode des notes : la note qui revient le plus souvent dans la liste.
 * Naturelle : la somme de toutes les notes pondérées.';
+$string['aggregationcoef'] = 'Coefficient';
+$string['aggregationcoefextra'] = 'Bonus';
+$string['aggregationcoefextra_help'] = 'Lorsque la tendance centrale choisie est la « Naturelle » ou « Moyenne simple pondérée » et que la case « Bonus » est cochée, la note maximale de l\'élément d\'évaluation n\'est pas comptée dans le maximum du total des notes. Cela a pour conséquence qu\'il est possible d\'obtenir la note maximale (ou une note dépassant la note maximale, si l\'administrateur du site a activé cette possibilité) dans la catégorie sans obtenir la note maximale dans tous les éléments d\'évaluation.
+
+Si la tendance centrale choisie est « Moyenne des notes (avec points supplémentaires) » et que les points supplémentaires indiqués sont plus grands que 0, les points supplémentaires constituent le facteur qui multiplie la note avant de l\'ajouter au total, après le calcul de la moyenne.';
+$string['aggregationcoefextrasum'] = 'Bonus';
+$string['aggregationcoefextrasum_help'] = 'Si la case « Bonus » est cochée, la note maximale de l\'élément d\'évaluation ne sera pas ajoutée à la note maximale de la catégorie, offrant la possibilité d\'obtenir la note maximale (ou une note dépassant la note maximale, si l\'administrateur du site a activé cette possibilité) dans la catégorie sans obtenir la note maximale dans tous les éléments d\'évaluation.';
+$string['aggregationcoefextrasumabbr'] = '+';
+$string['aggregationcoefextraweight'] = 'Coefficient de bonus';
+$string['aggregationcoefextraweight_help'] = 'Si la pondération pour le bonus est plus grande que 0, la note est traitée comme bonus lors du calcul de la tendance centrale. Ce nombre est le facteur par lequel la note est multipliée avant d\'être ajoutée au total des notes pour le calcul de la moyenne.';
+$string['aggregationcoefweight'] = 'Coefficient de l\'élément';
+$string['aggregationcoefweight_help'] = 'La pondération d\'un élément est utilisée lors du calcul de la tendance centrale d\'une catégorie, afin d\'influencer l\'importance de l\'élément, en comparaison avec les autres éléments d\'évaluation de la même catégorie.';
 $string['aggregationhintdropped'] = '(écarté)';
 $string['aggregationhintexcluded'] = '(exclu)';
 $string['aggregationhintextra'] = '(bonus)';
@@ -104,9 +104,9 @@ $string['bonuspoints'] = 'Bonus';
 $string['bulkcheckboxes'] = 'Cases à cocher en vrac';
 $string['calculatedgrade'] = 'Note calculée';
 $string['calculation'] = 'Calcul';
+$string['calculation_help'] = 'Les calculs de notes utilisent une syntaxe similaire à celle des fonctions de tableurs. Une formule commence par un signe d\'égalité (=) et emploie des opérateurs et fonctions mathématiques usuels, comme min, max ou sum. On peut au besoin inclure dans les formules les valeurs d\'autres éléments d\'évaluations en indiquant leur identifiant entouré de deux paires de crochets [[…]].';
 $string['calculationadd'] = 'Ajouter calcul';
 $string['calculationedit'] = 'Modifier calcul';
-$string['calculation_help'] = 'Les calculs de notes utilisent une syntaxe similaire à celle des fonctions de tableurs. Une formule commence par un signe d\'égalité (=) et emploie des opérateurs et fonctions mathématiques usuels, comme min, max ou sum. On peut au besoin inclure dans les formules les valeurs d\'autres éléments d\'évaluations en indiquant leur identifiant entouré de deux paires de crochets [[…]].';
 $string['calculationsaved'] = 'Calcul enregistré';
 $string['calculationview'] = 'Afficher calcul';
 $string['cannotaccessgroup'] = 'Impossible d\'accéder aux notes du groupe sélectionné.';
@@ -159,9 +159,9 @@ $string['displaypoints'] = 'Afficher les points';
 $string['displayweighted'] = 'Afficher les notes pondérées';
 $string['dropdown'] = 'Menu déroulant';
 $string['droplow'] = 'Ignorer les plus basses';
+$string['droplow_help'] = 'Ce réglage permet d\'indiquer le nombre de notes les plus basses à ignorer lors du calcul de la tendance centrale.';
 $string['droplowestvalue'] = 'Spécifier la valeur de rejet de la plus petite note';
 $string['droplowestvalues'] = 'Écarter les {$a} valeurs les plus basses';
-$string['droplow_help'] = 'Ce réglage permet d\'ignorer les <i>n</i> notes les plus basses dans le calcul de la tendance centrale.';
 $string['dropped'] = 'Ignoré';
 $string['dropxlowest'] = 'Ignorer les <i>n</i> notes les plus basses';
 $string['dropxlowestwarning'] = 'Remarque : si vous utilisez l\'option « ignorer les n notes les plus basses »,<br />tous les éléments de la catégorie seront considérés comme valant<br />le même nombre de points. Si ces valeurs varient, les résultats seront imprévisibles !';
@@ -227,11 +227,11 @@ $string['externalurl_desc'] = 'Si un carnet de notes externe est utilisé, veuil
 $string['extracreditvalue'] = 'Bonus pour {$a}';
 $string['extracreditwarning'] = 'Remarque : si tous les éléments d\'une catégorie sont cochés comme bonus, cela aura pour effet de les retirer complètement du calcul des notes, puisqu\'il n\'y aura pas de point au total.';
 $string['feedback'] = 'Feedback';
+$string['feedback_help'] = 'Ce champ permet à l\'enseignant d\'ajouter des remarques sur la note donnée.';
 $string['feedbackadd'] = 'Ajouter feedback';
 $string['feedbackedit'] = 'Modifier feedback';
 $string['feedbackfiles'] = 'Fichiers de feedback';
 $string['feedbackforgradeitems'] = 'Feedback pour {$a}';
-$string['feedback_help'] = 'Ce champ permet à l\'enseignant d\'ajouter des remarques sur la note donnée.';
 $string['feedbackhistoryfiles'] = 'Fichiers d\'historique de feedback';
 $string['feedbacks'] = 'Feedbacks';
 $string['feedbacksaved'] = 'Feedback enregistré';
@@ -250,6 +250,7 @@ $string['full'] = 'Complet';
 $string['fullmode'] = 'Passer à l\'affichage complet';
 $string['generalsettings'] = 'Réglages généraux';
 $string['grade'] = 'Note';
+$string['grade_help'] = 'La note à donner à l\'étudiant pour son travail.';
 $string['gradeadministration'] = 'Administration des notes';
 $string['gradealreadyupdated'] = '{$a} notes n\'ont pas été importées, car les notes du fichier à importer sont plus anciennes que celles du rapport de l\'évaluateur. Pour poursuivre malgré tout l\'importation, utiliser l\'option « Forcer l\'importation ».';
 $string['gradeanalysis'] = 'Analyse de l\'évaluation';
@@ -291,7 +292,6 @@ $string['gradeexportuserprofilefields_desc'] = 'Inclure ces champs de profil dan
 $string['gradeforstudent'] = '{$a->student}<br />{$a->item}{$a->feedback}';
 $string['gradegrademinmax'] = 'Notes initiales minimale et maximale';
 $string['gradehelp'] = 'Aide sur les notes';
-$string['grade_help'] = 'La note à donner à l\'étudiant pour son travail.';
 $string['gradehistorylifetime'] = 'Durée de l\'historique des notes';
 $string['gradehistorylifetime_help'] = 'Ce réglage permet d\'indiquer la durée pendant laquelle vous voulez conserver le suivi des modifications des tables concernant les notes. Il est recommandé de les conserver le plus longtemps possible. Si vous avez des problèmes de performance ou un espace disque limité pour votre base de données, essayez d\'indiquer une durée plus basse.';
 $string['gradeimport'] = 'Importation de notes';
@@ -326,8 +326,8 @@ $string['gradeoutcomeitem'] = 'Évaluer élément d\'objectif';
 $string['gradeoutcomes'] = 'Objectifs';
 $string['gradeoutcomescourses'] = 'Objectifs du cours';
 $string['gradepass'] = 'Note pour passer';
-$string['gradepassgreaterthangrade'] = 'La note pour réussir ne peut pas être plus grande que la note maximale possible {$a}';
 $string['gradepass_help'] = 'Ce réglage détermine la note minimale pour passer. La valeur est utilisée dans l\'achèvement d\'activités et de cours, ainsi que dans le carnet de notes, où les notes supérieures sont en vert et les notes inférieures en rouge.';
+$string['gradepassgreaterthangrade'] = 'La note pour réussir ne peut pas être plus grande que la note maximale possible {$a}';
 $string['gradepointdefault'] = 'Nombre de points par défaut';
 $string['gradepointdefault_help'] = 'Ce réglage détermine le nombre de points par défaut pour la note d\'un élément d\'évaluation.';
 $string['gradepointdefault_validateerror'] = 'Ce paramètre doit être un nombre entier entre 1 et le nombre de points maximum pour la note.';
@@ -363,9 +363,9 @@ $string['gradeweighthelp'] = 'Aide sur les coefficients des notes';
 $string['gradingmodulename'] = 'Évaluation ({$a})';
 $string['groupavg'] = 'Moyenne du groupe';
 $string['hidden'] = 'Caché';
+$string['hidden_help'] = 'Si cette case est cochée, les notes sont cachées aux étudiants. Un délai peut être fixé au besoin, afin d\'afficher les notes après que l\'évaluation soit terminée.';
 $string['hiddenasdate'] = 'Afficher la date de remise pour les notes cachées';
 $string['hiddenasdate_help'] = 'Si le participant n\'a pas les permissions requises pour voir les notes cachées, afficher la date de remise au lieu d\'un tiret.';
-$string['hidden_help'] = 'Si cette case est cochée, les notes sont cachées aux étudiants. Un délai peut être fixé au besoin, afin d\'afficher les notes après que l\'évaluation soit terminée.';
 $string['hiddenuntil'] = 'Caché jusqu\'au';
 $string['hiddenuntildate'] = 'Caché jusqu\'au {$a}';
 $string['hideadvanced'] = 'Cacher les fonctions avancées';
@@ -439,8 +439,8 @@ $string['itemnamehelp'] = 'Le nom de cet élément, fourni par le module.';
 $string['items'] = 'Éléments';
 $string['itemsedit'] = 'Modifier un élément d\'évaluation';
 $string['keephigh'] = 'Garder les plus hautes';
-$string['keephighestvalues'] = 'Conserver les {$a} notes les plus élevées';
 $string['keephigh_help'] = 'Cette option permet de ne considérer que les <i>n</i> notes les plus élevées, le nombre <i>n</i> étant sélectionné dans le menu déroulant.';
+$string['keephighestvalues'] = 'Conserver les {$a} notes les plus élevées';
 $string['keymanager'] = 'Gestionnaire de clefs';
 $string['lessthanmin'] = 'La note saisie dans {$a->itemname} pour {$a->username} est inférieure au minimum permis';
 $string['letter'] = 'Lettre';
@@ -487,6 +487,7 @@ $string['missingitemtypeoreid'] = 'Clef de tableau (itemtype ou eid) manquante d
 $string['missingscale'] = 'Un barème doit être sélectionné';
 $string['mode'] = 'Mode';
 $string['modgrade'] = 'Note';
+$string['modgrade_help'] = 'Sélectionnez le type de note utilisée dans cette activité. Si « Barème » est choisi, vous pourrez sélectionner un barème dans le menu déroulant. Si « Point » est choisi, vous pourrez spécifier la note maximale pour cette activité.';
 $string['modgradecantchangegradetype'] = 'Il n\'est pas possible de modifier le type, car des notes existent déjà pour cet élément.';
 $string['modgradecantchangegradetypemsg'] = 'Des notes ont déjà été données, donc le type de note ne peut plus être modifié. Si vous voulez changer la note maximale, vous devez d\'abord décider si vous voulez ou non adapter en conséquence les notes existantes.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Des notes ont déjà été données, donc le type de note et le barème ne peuvent plus être modifiés.';
@@ -503,7 +504,6 @@ Par exemple, si la note maximale d\'un élément est changée de 10 à 20, une n
 $string['modgradedonotmodify'] = 'Ne pas modifier les notes existantes';
 $string['modgradeerrorbadpoint'] = 'Note non valide. Ce doit être un nombre entier entre 1 et {$a}';
 $string['modgradeerrorbadscale'] = 'Barème non valide sélectionné. Veuillez vous assurer de choisir un barème dans la liste ci-dessous.';
-$string['modgrade_help'] = 'Sélectionnez le type de note utilisée dans cette activité. Si « Barème » est choisi, vous pourrez sélectionner un barème dans le menu déroulant. Si « Point » est choisi, vous pourrez spécifier la note maximale pour cette activité.';
 $string['modgrademaxgrade'] = 'Note maximale';
 $string['modgraderescalegrades'] = 'Adapter les notes existantes';
 $string['modgraderescalegrades_help'] = 'Lors du changement de la note maximale d\'un élément du carnet de notes, il est nécessaire d\'indiquer si la modification devra également adapter en conséquence les notes déjà existantes.
@@ -564,6 +564,7 @@ $string['operations'] = 'Opérations';
 $string['options'] = 'Options';
 $string['others'] = 'Autres';
 $string['outcome'] = 'Objectif';
+$string['outcome_help'] = 'Spécifie l\'objectif représenté par cet élément d\'évaluation dans le carnet de notes. Seuls les objectifs associés à ce cours et les objectifs globaux du site sont disponibles';
 $string['outcomeassigntocourse'] = 'Attribuer un autre objectif à ce cours';
 $string['outcomecategory'] = 'Créer des objectifs dans la catégorie';
 $string['outcomecategorynew'] = 'Nouvelle catégorie';
@@ -571,7 +572,6 @@ $string['outcomeconfirmdelete'] = 'Voulez-vous vraiment supprimer l\'objectif «
 $string['outcomecreate'] = 'Ajouter un objectif';
 $string['outcomedelete'] = 'Supprimer objectif';
 $string['outcomefullname'] = 'Nom complet';
-$string['outcome_help'] = 'Spécifie l\'objectif représenté par cet élément d\'évaluation dans le carnet de notes. Seuls les objectifs associés à ce cours et les objectifs globaux du site sont disponibles';
 $string['outcomeitem'] = 'Élément d\'objectif';
 $string['outcomeitemsedit'] = 'Modifier élément d\'objectif';
 $string['outcomereport'] = 'Rapport des objectifs';
@@ -638,22 +638,22 @@ $string['privacy:metadata:grades:aggregationstatus'] = 'Le statut d\'agrégation
 $string['privacy:metadata:grades:aggregationweight'] = 'La pondération dans l\'agrégation';
 $string['privacy:metadata:grades:feedback'] = 'Le feedback';
 $string['privacy:metadata:grades:finalgrade'] = 'La note';
-$string['privacy:metadata:gradeshistory'] = 'Un enregistrement des notes antérieures';
 $string['privacy:metadata:grades:information'] = 'Informations complémentaires sur la note';
 $string['privacy:metadata:grades:timemodified'] = 'La date et l\'heure de la dernière modification de la note';
 $string['privacy:metadata:grades:userid'] = 'L\'identifiant de l\'utilisateur dont c\'est la note';
 $string['privacy:metadata:grades:usermodified'] = 'L\'identifiant de l\'utilisateur qui a modifié l\'enregistrement pour la dernière fois';
+$string['privacy:metadata:gradeshistory'] = 'Un enregistrement des notes antérieures';
 $string['privacy:metadata:history:loggeduser'] = 'L\'identifiant de l\'utilisateur qui était connecté lorsque le changement de version a eu lieu';
 $string['privacy:metadata:history:timemodified'] = 'La date et l\'heure du changement de version de la note';
 $string['privacy:metadata:itemshistory'] = 'Un enregistrement des versions antérieures des éléments d\'évaluation';
 $string['privacy:metadata:outcomes'] = 'Un enregistrement des objectifs';
-$string['privacy:metadata:outcomeshistory'] = 'Un enregistrement des versions antérieures des objectifs';
 $string['privacy:metadata:outcomes:timemodified'] = 'La date et l\'heure de la modification de l\'enregistrement';
 $string['privacy:metadata:outcomes:usermodified'] = 'L\'utilisateur qui a modifié l\'enregistrement pour la dernière fois';
+$string['privacy:metadata:outcomeshistory'] = 'Un enregistrement des versions antérieures des objectifs';
 $string['privacy:metadata:scale'] = 'Un enregistrement des barèmes';
-$string['privacy:metadata:scalehistory'] = 'Un enregistrement des versions antérieures des barèmes';
 $string['privacy:metadata:scale:timemodified'] = 'La date et l\'heure de la dernière modification de l\'enregistrement';
 $string['privacy:metadata:scale:userid'] = 'L\'utilisateur qui a modifié l\'enregistrement pour la dernière fois';
+$string['privacy:metadata:scalehistory'] = 'Un enregistrement des versions antérieures des barèmes';
 $string['privacy:path:relatedtome'] = 'En lien avec moi';
 $string['privacy:request:historyactiondelete'] = 'Suppression';
 $string['privacy:request:historyactioninsert'] = 'Insertion';
@@ -847,12 +847,12 @@ $string['verbosescales_help'] = 'Un barème textuel utilise des mots plutôt que
 $string['viewbygroup'] = 'Groupe';
 $string['viewgrades'] = 'Affichage des notes';
 $string['weight'] = 'Pondération';
+$string['weight_help'] = 'Valeur utilisée pour déterminer l\'importance relative des éléments d\'évaluation dans une catégorie ou un cours.';
 $string['weightcourse'] = 'Utiliser les coefficients pour le cours';
 $string['weightedascending'] = 'Tri croissant par pourcent pondéré';
 $string['weighteddescending'] = 'Tri décroissant par pourcent pondéré';
 $string['weightedpct'] = '% pondéré';
 $string['weightedpctcontribution'] = 'contribution en % pondérée';
-$string['weight_help'] = 'Valeur utilisée pour déterminer l\'importance relative des éléments d\'évaluation dans une catégorie ou un cours.';
 $string['weightofa'] = 'Pondération de {$a}';
 $string['weightorextracredit'] = 'Pondération ou bonus';
 $string['weightoverride'] = 'Ajustement de la pondération';

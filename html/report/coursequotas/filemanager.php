@@ -1,4 +1,19 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle. If not, see <http://www.gnu.org/licenses/>.
+
 /**
  * Coursequotas report
  *
@@ -8,15 +23,21 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once('../../config.php');
-require_once($CFG->libdir . '/adminlib.php');
-require_once($CFG->dirroot.'/report/coursequotas/locallib.php');
+require_once '../../config.php';
+require_once $CFG->libdir . '/adminlib.php';
+require_once $CFG->dirroot . '/report/coursequotas/lib/local.lib.php';
+require_once $CFG->dirroot . '/report/coursequotas/lib/calculate.lib.php';
+require_once $CFG->dirroot . '/report/coursequotas/lib/filemanager.lib.php';
+require_once $CFG->dirroot . '/report/coursequotas/lib/util.lib.php';
+require_once $CFG->dirroot . '/report/coursequotas/constants.php';
 
-admin_externalpage_setup('filemanager', '', null, '', array('pagelayout' => 'report'));
+admin_externalpage_setup('filemanager', '', null, '', ['pagelayout' => 'report']);
+
 $PAGE->requires->jquery();
 $PAGE->requires->jquery_plugin('ui');
+
 echo $OUTPUT->header();
-echo $OUTPUT->heading(get_string('filemanager', 'report_coursequotas'), 3);
+echo $OUTPUT->heading(get_string('filemanager', REPORT_COMPONENTNAME), 3);
 
 $filename = optional_param('filename', null, PARAM_TEXT);
 $userid = optional_param('userid', null, PARAM_INT);
@@ -62,52 +83,54 @@ if ($hash) {
 $filteroptions = get_all_filter_options($context);
 
 // Filtering.
-$filters = '<form>'.html_writer::label(get_string('filename', 'backup'), 'filename', false, array('class' => 'inline')).' ';
-$filters .= '<input type="text" id="filename" name="filename" value="'.$filename.'"><br>';
+$filters = '<form>' . html_writer::label(get_string('filename', 'backup'), 'filename', false, ['class' => 'inline']) . ' ';
+$filters .= '<input type="text" id="filename" name="filename" value="' . $filename . '"><br>';
 
-$filters .= html_writer::label(get_string('owner', 'report_coursequotas'), 'userid', false, array('class' => 'inline')).' ';
-$filters .= html_writer::select($filteroptions->users, "userid", $userid, get_string("allusers", 'report_coursequotas')).'<br>';
+$filters .= html_writer::label(get_string('owner', REPORT_COMPONENTNAME), 'userid', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::select($filteroptions->users, "userid", $userid, get_string("allusers", REPORT_COMPONENTNAME)) . '<br>';
 
-$filters .= html_writer::label(get_string('course'), 'context', false, array('class' => 'inline')).' ';
-$filters .= html_writer::select($filteroptions->contexts, "context", $context, get_string("allcourses", "search")).' ';
-$filters .= html_writer::checkbox("children", 1, $addchildren, get_string("addchildren", 'report_coursequotas')).'<br>';
+$filters .= html_writer::label(get_string('course'), 'context', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::select($filteroptions->contexts, "context", $context, get_string("allcourses", "search")) . ' ';
+$filters .= html_writer::checkbox("children", 1, $addchildren, get_string("addchildren", REPORT_COMPONENTNAME)) . '<br>';
 
-$filters .= html_writer::label(get_string('filearea', 'report_coursequotas'), 'filearea', false, array('class' => 'inline')).' ';
-$filters .= html_writer::select($filteroptions->fileareas, "filearea", $filearea, get_string("allfileareas", 'report_coursequotas')).' ';
+$filters .= html_writer::label(get_string('filearea', REPORT_COMPONENTNAME), 'filearea', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::select($filteroptions->fileareas, "filearea", $filearea, get_string("allfileareas", REPORT_COMPONENTNAME)) . ' ';
 
-$filters .= html_writer::label(get_string('component', 'report_coursequotas'), 'component', false, array('class' => 'inline')).' ';
-$filters .= html_writer::select($filteroptions->components, "component", $component, get_string("allcomponents", 'report_coursequotas')).' ';
-$filters .= html_writer::checkbox("backups", 1, $showonlybackups, get_string("showonlybackups", 'report_coursequotas')).'<br>';
-if ( !function_exists('is_xtecadmin') || is_xtecadmin()) {
-    $filters .= html_writer::checkbox("hidesamehash", 1, $hidesamehash, get_string("hidesamehash", 'report_coursequotas')).'<br>';
+$filters .= html_writer::label(get_string('component', REPORT_COMPONENTNAME), 'component', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::select($filteroptions->components, "component", $component, get_string("allcomponents", REPORT_COMPONENTNAME)) . ' ';
+$filters .= html_writer::checkbox("backups", 1, $showonlybackups, get_string("showonlybackups", REPORT_COMPONENTNAME)) . '<br>';
+
+if (!function_exists('is_xtecadmin') || is_xtecadmin()) {
+    $filters .= html_writer::checkbox("hidesamehash", 1, $hidesamehash, get_string("hidesamehash", REPORT_COMPONENTNAME)) . '<br>';
 }
 
-$sizeselect = array(
-    get_string('more_than', 'report_coursequotas'),
-    get_string('less_than', 'report_coursequotas')
-);
-$filters .= html_writer::label(get_string('size'), 'size', false, array('class' => 'inline')).' ';
-$filters .= html_writer::select($sizeselect, "sizeselect", $sizeselected, false);
-$filters .= ' <input type="number" id="size" name="size" value="'.$size.'"> MB<br>';
-$filters .= '<button type="submit" class="btn btn-success edit-btn"><i class="smallicon fa fa-search"></i>'.get_string('search').'</button> <a href="'.$CFG->wwwroot.'/report/coursequotas/filemanager.php" class="btn btn-warning edit-btn"><i class="smallicon fa fa-undo"></i>'.get_string('reset').'</a></form>';
+$sizeselect = [
+    get_string('more_than', REPORT_COMPONENTNAME),
+    get_string('less_than', REPORT_COMPONENTNAME),
+];
 
-$caption = '<i class="smallicon fa fa-filter"></i>'.get_string('filter');
-print_collapsible_region($filters, 'well well-small', 'filter', $caption, '', true) ;
+$filters .= html_writer::label(get_string('size'), 'size', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::select($sizeselect, "sizeselect", $sizeselected, false);
+$filters .= ' <input type="number" id="size" name="size" value="' . $size . '"> MB<br />';
+$filters .= '<button type="submit" class="btn btn-success edit-btn"><i class="smallicon fa fa-search"></i>' . get_string('search') . '</button> <a href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php" class="btn btn-warning edit-btn"><i class="smallicon fa fa-undo"></i>' . get_string('reset') . '</a></form>';
+
+$caption = '<i class="smallicon fa fa-filter"></i>' . get_string('filter');
+print_collapsible_region($filters, 'well well-small', 'filter', $caption, '', true);
 
 echo $OUTPUT->box_start('', 'results');
 if ($files->count) {
 
     echo $OUTPUT->box_start('well');
     $sizetotal = report_coursequotas_format_size_text($files->total);
-    echo $OUTPUT->box(get_string('totalfilesize', 'report_coursequotas', $sizetotal));
+    echo $OUTPUT->box(get_string('totalfilesize', REPORT_COMPONENTNAME, $sizetotal));
     $filesize = report_coursequotas_format_size_text($files->filesize);
-    echo $OUTPUT->box(get_string('realfilesize', 'report_coursequotas', $filesize));
+    echo $OUTPUT->box(get_string('realfilesize', REPORT_COMPONENTNAME, $filesize));
     echo $OUTPUT->box_end();
 
-    $contextcache = array();
-    $ownercache = array();
+    $contextcache = [];
+    $ownercache = [];
 
-    $pageparams = array(
+    $pageparams = [
         'filename' => $filename,
         'userid' => $userid,
         'context' => $context,
@@ -120,65 +143,67 @@ if ($files->count) {
         'hidesamehash' => $hidesamehash,
         'sort' => $sort,
         'dir' => $dir,
-        'perpage' => $perpage);
+        'perpage' => $perpage,
+        ];
+
     $baseurl = new moodle_url('/report/coursequotas/filemanager.php', $pageparams);
     $pagingbar = $OUTPUT->paging_bar($files->count, $page, $perpage, $baseurl);
 
     $table = new html_table();
     $table->class = 'generaltable';
-    $columns = array(
+    $columns = [
         'filename' => get_string('filename', 'backup'),
-        'owner' => get_string('owner', 'report_coursequotas'),
-        'context' => get_string('context', 'report_coursequotas'),
-        'filearea' => get_string('filearea', 'report_coursequotas'),
-        'component' => get_string('component', 'report_coursequotas'),
-        'filesize' => get_string('size')
-    );
+        'owner' => get_string('owner', REPORT_COMPONENTNAME),
+        'context' => get_string('context', REPORT_COMPONENTNAME),
+        'filearea' => get_string('filearea', REPORT_COMPONENTNAME),
+        'component' => get_string('component', REPORT_COMPONENTNAME),
+        'filesize' => get_string('size'),
+    ];
 
     foreach ($columns as $column => $columnname) {
-        if ($column  == 'owner' || $column  == 'context') {
+        if ($column == 'owner' || $column == 'context') {
             $table->head[] = $columnname;
         } else {
             if ($sort != $column) {
-                $columnicon = "";
-                if ($column == "filesize") {
-                    $columndir = "DESC";
+                $columnicon = '';
+                if ($column == 'filesize') {
+                    $columndir = 'DESC';
                 } else {
-                    $columndir = "ASC";
+                    $columndir = 'ASC';
                 }
             } else {
-                $columndir = $dir == "ASC" ? "DESC" : "ASC";
-                $columnicon = ($dir == "ASC") ? "sort_asc" : "sort_desc";
+                $columndir = $dir == 'ASC' ? 'DESC' : 'ASC';
+                $columnicon = ($dir == 'ASC') ? 'sort_asc' : 'sort_desc';
                 $columnicon = "<img class='iconsort' src=\"" . $OUTPUT->image_url('t/' . $columnicon) . "\" alt=\"\" />";
             }
             $baseurl->param('sort', $column);
             $baseurl->param('dir', $columndir);
             $baseurl->param('page', 0);
             $url = $baseurl->out();
-            $table->head[] = "<a href=\"$url\">".$columnname."</a>$columnicon";
+            $table->head[] = "<a href=\"$url\">" . $columnname . "</a>$columnicon";
         }
     }
 
-    $table->align = array('left', 'center', 'center', 'center', 'center', 'center');
+    $table->align = ['left', 'center', 'center', 'center', 'center', 'center'];
     foreach ($files->files as $file) {
 
         if ($file->userid && !isset($ownernamecache[$file->userid])) {
-            $ownercache[$file->userid] = '<a href="'.$CFG->wwwroot.'/user/profile.php?id=' . $file->userid . '" target="_blank">' . $filteroptions->users[$file->userid] . '</a>';
+            $ownercache[$file->userid] = '<a href="' . $CFG->wwwroot . '/user/profile.php?id=' . $file->userid . '" target="_blank">' . $filteroptions->users[$file->userid] . '</a>';
         }
         if ($file->contextid && !isset($contextcache[$file->contextid])) {
             $filecontext = context::instance_by_id($file->contextid);
             if (!isset($filteroptions->contexts[$file->contextid])) {
                 $filteroptions->contexts[$file->contextid] = $filecontext->get_context_name();
             }
-            $contextcache[$file->contextid] = '<a href="'. $filecontext->get_url() . '" target="_blank">' . $filteroptions->contexts[$file->contextid] . '</a>';
+            $contextcache[$file->contextid] = '<a href="' . $filecontext->get_url() . '" target="_blank">' . $filteroptions->contexts[$file->contextid] . '</a>';
         }
         $filesize = report_coursequotas_format_size_text($file->filesize);
 
-        $deleteparams = array();
+        $deleteparams = [];
         $deleteparams[] = $file->id;
         $deleteparams[] = rawurlencode($file->filename);
 
-        $params = array();
+        $params = [];
         $params[] = $file->id;
         $params[] = rawurlencode($file->filename);
         $params[] = $file->userid ? rawurlencode($filteroptions->users[$file->userid]) : $file->userid;
@@ -192,8 +217,8 @@ if ($files->count) {
         $params[] = $file->mimetype;
         $params[] = userdate($file->timemodified);
 
-        $row = array();
-        $row[] = '<a href="#fileModal" data-toggle="modal" title="'.get_string('showmore', 'form').'" onclick="filemanager_openFileInfo(\''.implode("','", $params).'\')">'.$file->filename.' <i class="fa fa-search" aria-hidden="true"></i></a> <a href="#deleteModal" data-toggle="modal" onclick="filemanager_deleteFileDirect(\''.implode("','", $deleteparams).'\')" title="'.get_string('delete').'"><i class="fa fa-trash" aria-hidden="true"></i></a>';
+        $row = [];
+        $row[] = '<a href="#fileModal" title="' . get_string('showmore', 'form') . '" onclick="filemanager_openFileInfo(\'' . implode("','", $params) . '\')"  data-toggle="modal" data-target="#fileModal">' . $file->filename . ' <i class="fa fa-search" aria-hidden="true"></i></a> <a href="#deleteModal" data-toggle="modal" onclick="filemanager_deleteFileDirect(\'' . implode("','", $deleteparams) . '\')" title="' . get_string('delete') . '"><i class="fa fa-trash" aria-hidden="true"></i></a>';
         $row[] = $file->userid ? $ownercache[$file->userid] : $file->userid;
         $row[] = $file->contextid ? $contextcache[$file->contextid] : $file->contextid;
         $row[] = $file->filearea;
@@ -202,52 +227,61 @@ if ($files->count) {
         $table->data[] = $row;
     }
 
-    echo $OUTPUT->box(get_string('showingfiles', 'report_coursequotas', ['files' => count($files->files), 'total' => $files->count]), 'text-right');
+    echo $OUTPUT->box(get_string('showingfiles', REPORT_COMPONENTNAME, ['files' => count($files->files), 'total' => $files->count]), 'text-right');
     echo $OUTPUT->box($pagingbar, 'text-right');
     echo html_writer::table($table);
     echo $OUTPUT->box($pagingbar, 'text-right');
 
-    echo '  <div id="fileModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="fileModalLabel" aria-hidden="true">
+    echo '  
+    <div id="fileModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="fileModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h3 id="fileModal_filename"></h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               </div>
               <div class="modal-body">
                 <span id="fileModal_fileid" class="hidden"></span>
-                <span id="fileModal_urlroot" class="hidden">'.$CFG->wwwroot.'</span>
-                <p><strong>'.get_string('owner', 'report_coursequotas').'</strong>: <span id="fileModal_owner"></span></p>
-                <p><strong>'.get_string('context', 'report_coursequotas').'</strong>: <span id="fileModal_context"></span></p>
-                <p><strong>'.get_string('filearea', 'report_coursequotas').'</strong>: <span id="fileModal_filearea"></span></p>
-                <p><strong>'.get_string('component', 'report_coursequotas').'</strong>: <span id="fileModal_component"></span></p>
-                <p><strong>'.get_string('size').'</strong>: <span id="fileModal_filesize"></span></p>
-                <p><strong>'.get_String('path', 'repository').'</strong>: <span id="fileModal_filepath"></span></p>
-                <p><strong>'.get_String('type', 'repository').'</strong>: <span id="fileModal_mimetype"></span></p>
-                <p><strong>'.get_string('lastmodified').'</strong>: <span id="fileModal_timemodified"></span></p>
+                <span id="fileModal_urlroot" class="hidden">' . $CFG->wwwroot . '</span>
+                <p><strong>' . get_string('owner', REPORT_COMPONENTNAME) . '</strong>: <span id="fileModal_owner"></span></p>
+                <p><strong>' . get_string('context', REPORT_COMPONENTNAME) . '</strong>: <span id="fileModal_context"></span></p>
+                <p><strong>' . get_string('filearea', REPORT_COMPONENTNAME) . '</strong>: <span id="fileModal_filearea"></span></p>
+                <p><strong>' . get_string('component', REPORT_COMPONENTNAME) . '</strong>: <span id="fileModal_component"></span></p>
+                <p><strong>' . get_string('size') . '</strong>: <span id="fileModal_filesize"></span></p>
+                <p><strong>' . get_string('path', 'repository') . '</strong>: <span id="fileModal_filepath"></span></p>
+                <p><strong>' . get_string('type', 'repository') . '</strong>: <span id="fileModal_mimetype"></span></p>
+                <p><strong>' . get_string('lastmodified') . '</strong>: <span id="fileModal_timemodified"></span></p>
                 <p><strong>Content hash</strong>: <span id="fileModal_contenthash"></span></p>
                 <p><strong>Path hash</strong>: <span id="fileModal_pathnamehash"></span></p>
               </div>
               <div class="modal-footer">
-                <a id="fileModal_similar" class="btn btn-info edit-btn" aria-hidden="true" href="#" target="_blank" original-href="'.$CFG->wwwroot.'/report/coursequotas/filemanager.php?hash="><i class="fa fa-eye" aria-hidden="true"></i>'.get_string('viewsimilarfiles', 'report_coursequotas').'</a>
-                <button class="btn btn-primary edit-btn" aria-hidden="true" onclick="filemanager_downloadFile()"><i class="fa fa-download" aria-hidden="true"></i>'.get_string('download').'</button>
-                <a href="#deleteModal" data-toggle="modal" class="btn btn-danger edit-btn" onclick="filemanager_deleteFile()"><i class="fa fa-trash" aria-hidden="true"></i>'.get_string('delete').'</a>
+                <a id="fileModal_similar" class="btn btn-info edit-btn" aria-hidden="true" href="#" target="_blank" original-href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?hash="><i class="fa fa-eye" aria-hidden="true"></i>' . get_string('viewsimilarfiles', REPORT_COMPONENTNAME) . '</a>
+                <button class="btn btn-primary edit-btn" aria-hidden="true" onclick="filemanager_downloadFile()"><i class="fa fa-download" aria-hidden="true"></i>' . get_string('download') . '</button>
+                <a href="#deleteModal" data-toggle="modal" class="btn btn-danger edit-btn" onclick="filemanager_deleteFile()"><i class="fa fa-trash" aria-hidden="true"></i>' . get_string('delete') . '</a>
               </div>
             </div>
-            <div id="deleteModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        </div>
+    </div>
+    <div id="deleteModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h3 id="deleteModal_filename"></h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               </div>
               <div class="modal-body">
-                <p>'.get_string('confirmdeletefile', 'repository').'</p>
+                <p>' . get_string('confirmdeletefile', 'repository') . '</p>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-success edit-btn" data-dismiss="modal" aria-hidden="true" onclick="filemanager_deleteFile_confirm()"><i class="fa fa-check" aria-hidden="true"></i>'.get_string('confirm').'</button>
-                <button class="btn btn-danger edit-btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>'.get_string('cancel').'</button>
+                <button class="btn btn-success edit-btn" data-dismiss="modal" aria-hidden="true" onclick="filemanager_deleteFile_confirm()"><i class="fa fa-check" aria-hidden="true"></i>' . get_string('confirm') . '</button>
+                <button class="btn btn-danger edit-btn" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>' . get_string('cancel') . '</button>
               </div>
             </div>
-        <script src="'.$CFG->wwwroot.'/report/coursequotas/filemanager.js"></script>';
+        </div>
+    </div>
+        <script src="' . $CFG->wwwroot . '/report/coursequotas/filemanager.js"></script>';
 } else {
-    echo $OUTPUT->notification(get_string('nofilesfound', 'report_coursequotas'));
+    echo $OUTPUT->notification(get_string('nofilesfound', REPORT_COMPONENTNAME));
 }
 echo $OUTPUT->box_end();
 

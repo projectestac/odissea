@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'scorm', language 'ca', version '3.8'.
  *
- * @package   scorm
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     scorm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -60,15 +60,15 @@ $string['attemptstatusmy'] = 'Només la meva carpeta personal';
 $string['attemptsx'] = '{$a} intents';
 $string['attr_error'] = 'Valor incorrecte de l\'atribut ({$a->attr}) en l\'etiqueta {$a->tag}';
 $string['autocommit'] = 'Penjada automàtica';
-$string['autocommitdesc'] = 'Desa les dades SCORM de forma automàtica si el paquet SCORM no es desa.';
 $string['autocommit_help'] = 'Si s\'habilita, les dades SCORM es desen de forma automàtica a la base de dades. Açò és útil per a objectes SCORM que no desen les seves dades regularment.';
+$string['autocommitdesc'] = 'Desa les dades SCORM de forma automàtica si el paquet SCORM no es desa.';
 $string['autocontinue'] = 'Continuació automàtica';
-$string['autocontinuedesc'] = 'Si ho habiliteu els objectes educatius es llançaran de forma automàtica, en cas contrari caldrà prémer el botó «Continua» cada vegada.';
 $string['autocontinue_help'] = '<p><b>Continuació automàtica</b></p>
 
 <p>Si trieu l\'opció de continuació automàtica, quan el SCO cridi el mètode de "comunicació pròxima", automàticament es llançarà el següent SCO disponible.</p>
 
 <p>Si no utilitzeu aquesta opció, els usuaris hauran de fer servir el botó "Continua" per seguir.</p>';
+$string['autocontinuedesc'] = 'Si ho habiliteu els objectes educatius es llançaran de forma automàtica, en cas contrari caldrà prémer el botó «Continua» cada vegada.';
 $string['averageattempt'] = 'Mitjana d\'intents';
 $string['badarchive'] = 'Cal que proporcioneu un fitxer zip vàlid';
 $string['badimsmanifestlocation'] = 'S\'ha trobat un fitxer imsmanifest.xml, però no està a l\'arrel del vostre fitxer zip; torneu a empaquetar el vostre SCORM';
@@ -112,11 +112,11 @@ $string['display'] = 'Visualitza';
 $string['displayactivityname'] = 'Mostra el nom de l\'activitat';
 $string['displayactivityname_help'] = 'Si cal mostrar o no el nom de l\'activitat al damunt del reproductor SCORM';
 $string['displayattemptstatus'] = 'Mostrar estat dels intents';
-$string['displayattemptstatusdesc'] = 'Determina si voleu mostrar o no un resum dels intents de l\'usuari al bloc de resum del curs ubicat al Tauler i/o a la pàgina d\'entrada de l\'SCORM';
 $string['displayattemptstatus_help'] = 'Aquest paràmetre permet mostrar un resum dels intents de l\'usuari al bloc de resum del curs al Tauler i/o a la pàgina d\'entrada de l\'SCORM.';
+$string['displayattemptstatusdesc'] = 'Determina si voleu mostrar o no un resum dels intents de l\'usuari al bloc de resum del curs ubicat al Tauler i/o a la pàgina d\'entrada de l\'SCORM';
 $string['displaycoursestructure'] = 'Mostra l\'estructura del curs a la plana d\'entrada';
-$string['displaycoursestructuredesc'] = 'Aquesta preferència estableix el valor per defecte per mostrar el paràmetre mostra estructura a la plana d\'entrada';
 $string['displaycoursestructure_help'] = 'Si esta activat, la taula de continguts es mostrarà a la plana resum SCORM';
+$string['displaycoursestructuredesc'] = 'Aquesta preferència estableix el valor per defecte per mostrar el paràmetre mostra estructura a la plana d\'entrada';
 $string['displaydesc'] = 'Aquesta preferència estableix el valor per defecte per mostrar o no el paquet d\'una activitat';
 $string['displaysettings'] = 'Configuració de pantalla';
 $string['dnduploadscorm'] = 'Afegeix un paquet SCORM nou';
@@ -146,8 +146,8 @@ $string['firstaccess'] = 'Primer accés';
 $string['firstattempt'] = 'Primer intent';
 $string['floating'] = 'Flotant';
 $string['forcecompleted'] = 'Forçar completats';
-$string['forcecompleteddesc'] = 'Aquesta preferència estableix el valor per defecte per mostrar el paràmetre forçar completats';
 $string['forcecompleted_help'] = 'Si s\'habilita, l\'estat de l\'intent actual es canvia a «completat». (Aquest paràmetre només s\'aplica als paquets SCORM 1.2.)';
+$string['forcecompleteddesc'] = 'Aquesta preferència estableix el valor per defecte per mostrar el paràmetre forçar completats';
 $string['forcejavascript'] = 'Forçar als usuaris a habilitar JavaScript';
 $string['forcejavascript_desc'] = 'Si està activat (recomanat), impedeix l\'accés als objectes SCORM quan JavaScript no és compatible amb el navegador de l\'usuari o no hi està activat. Si està desactivat, l\'usuari pot veure l\'SCORM, però la comunicació API fallarà i no es desarà la qualificació.';
 $string['forcejavascriptmessage'] = 'Es requereix JavaScript per veure aquest objecte; activeu JavaScript al vostre navegador i torneu a provar-ho.';
@@ -163,7 +163,6 @@ $string['gradeaverage'] = 'Qualificació mitjana';
 $string['gradeforattempt'] = 'Qualificació de l\'intent';
 $string['gradehighest'] = 'Qualificació més alta';
 $string['grademethod'] = 'Mètode de qualificació';
-$string['grademethoddesc'] = 'Aquesta preferència estableix el valor per defecte del mètode de qualificació d\'una activitat';
 $string['grademethod_help'] = 'El mètode de qualificació defineix com es determina la qualificació d\'un intent en l\'activitat.
 
 Hi ha quatre mètodes d\'avaluació:
@@ -175,6 +174,7 @@ Hi ha quatre mètodes d\'avaluació:
 * Qualificació mitjana - La mitjana de totes les puntuacions
 
 * Suma de qualificacions - La suma de totes les puntuacions';
+$string['grademethoddesc'] = 'Aquesta preferència estableix el valor per defecte del mètode de qualificació d\'una activitat';
 $string['gradereported'] = 'Qualificació enviada';
 $string['gradescoes'] = 'Nombre de Sco';
 $string['gradesettings'] = 'Paràmetres de qualificació';
@@ -182,13 +182,13 @@ $string['gradesum'] = 'Suma de qualificacions';
 $string['height'] = 'Alçada';
 $string['hidden'] = 'Ocult';
 $string['hidebrowse'] = 'Inhabilita el mode de previsualització';
-$string['hidebrowsedesc'] = 'El mode previsualització permet a l\'estudiant navegar per una activitat abans de intentar fer-la.';
 $string['hidebrowse_help'] = 'El mode de previsualització permet a l\'alumne navegar per una activitat abans de fer-hi un intent. Si el mode de previsualització està desactivat, el botó de previsualització està amagat.';
+$string['hidebrowsedesc'] = 'El mode previsualització permet a l\'estudiant navegar per una activitat abans de intentar fer-la.';
 $string['hideexit'] = 'Oculta l\'enllaç de sortida';
 $string['hidereview'] = 'Oculta el botó Revisa';
 $string['hidetoc'] = 'Mostra l\'estructura del curs en el reproductor';
-$string['hidetocdesc'] = 'Aquesta preferència especifica com es mostra l\'índex del curs al reproductor SCORM.';
 $string['hidetoc_help'] = 'Aquest paràmetre especifica com es mostra la taula de continguts al reproductor SCORM.';
+$string['hidetocdesc'] = 'Aquesta preferència especifica com es mostra l\'índex del curs al reproductor SCORM.';
 $string['highestattempt'] = 'Intent més alt';
 $string['identifier'] = 'Identificador de pregunta';
 $string['incomplete'] = 'Incomplet';
@@ -204,19 +204,19 @@ $string['last'] = 'Darrer accés';
 $string['lastaccess'] = 'Darrer accés';
 $string['lastattempt'] = 'Darrer intent completat';
 $string['lastattemptlock'] = 'Bloquejar després del darrer intent';
-$string['lastattemptlockdesc'] = 'Si ho habiliteu, impedireu als estudiants llançar el reproductor SCORM després d\'usar tots els seus intents assignats.';
 $string['lastattemptlock_help'] = 'Si està activat, a l\'estudiant se l\'impedeix executar el reproductor SCORM després d\'haver fet servir tots els intents disponibles.';
+$string['lastattemptlockdesc'] = 'Si ho habiliteu, impedireu als estudiants llançar el reproductor SCORM després d\'usar tots els seus intents assignats.';
 $string['location'] = 'Mostra la barra d\'ubicació';
 $string['max'] = 'Puntuació màxima';
 $string['maximumattempts'] = 'Nombre d\'intents';
-$string['maximumattemptsdesc'] = 'Aquesta preferència estableix el valor per defecte sobre el nombre màxim d\'intents per una activitat';
 $string['maximumattempts_help'] = 'Aquest paràmetre defineix el nombre d\'intents permesos als usuaris. Només funciona amb paquets SCORM 1.2 i AICC';
+$string['maximumattemptsdesc'] = 'Aquesta preferència estableix el valor per defecte sobre el nombre màxim d\'intents per una activitat';
 $string['maximumgradedesc'] = 'Aquesta preferència estableix el valor per defecte sobre la qualificació màxima d\'una activitat';
 $string['menubar'] = 'Mostra la barra de menús';
 $string['min'] = 'Puntuació mínima';
 $string['missing_attribute'] = 'Falta l\'atribut {$a->attr} en l\'etiqueta {$a->tag}';
-$string['missingparam'] = 'Falta un paràmetre necessari o el valor és incorrecte';
 $string['missing_tag'] = 'Falta l\'etiqueta {$a->tag}';
+$string['missingparam'] = 'Falta un paràmetre necessari o el valor és incorrecte';
 $string['mode'] = 'Mode';
 $string['modulename'] = 'Paquet SCORM';
 $string['modulename_help'] = 'Un paquet SCORM és un conjunt de fitxers empaquetats segons un estàndard consensuat d\'objectes d\'aprenentatge. El mòdul d\'activitat SCORM permet pujar i afegir al curs fitxers zip que continguin paquets en format SCORM o AICC.
@@ -229,7 +229,6 @@ Les activitat SCORM es poden emprar per:
 * Com una eina per avaluar';
 $string['modulenameplural'] = 'Paquets SCORM';
 $string['nav'] = 'Mostra la navegació';
-$string['navdesc'] = 'Aquest paràmetre especifica si es mostren o s\'amaguen els botons de navegació i llurs posicions.';
 $string['nav_help'] = 'Aquest paràmetre especifica si s\'han de mostrar o ocultar els botons de navegació i la seva posició.
 
 Hi ha 3 opcions:
@@ -237,6 +236,7 @@ Hi ha 3 opcions:
 * No - No es mostren els botons de navegació.
 * Sota el contingut - El botons de navegació es mostren sota el contingut del paquet SCORM
 * Flotant - Els botons de navegació es mostren surant, a la posició superior esquerra determinada pel paquet.';
+$string['navdesc'] = 'Aquest paràmetre especifica si es mostren o s\'amaguen els botons de navegació i llurs posicions.';
 $string['navigation'] = 'Navegació';
 $string['navpositionleft'] = 'Posició dels botons de navegació des de l\'esquerra en píxels.';
 $string['navpositiontop'] = 'Posició dels botons de navegació des dalt en píxels.';
@@ -244,19 +244,19 @@ $string['networkdropped'] = 'El reproductor SCORM ha determinat que la vostra co
 Hauríeu de sortir de l\'activitat ara, i tornar quan tingueu una connexió a Internet fiable.';
 $string['newattempt'] = 'Comença un nou intent';
 $string['next'] = 'Continua';
+$string['no_attributes'] = 'L\'etiqueta {$a->tag} ha de tenir atributs';
+$string['no_children'] = 'L\'etiqueta {$a->tag} ha de tenir fills';
 $string['noactivity'] = 'Res per informar';
 $string['noattemptsallowed'] = 'Nombre d\'intents permesos';
 $string['noattemptsmade'] = 'Nombre d\'intents realitzats';
-$string['no_attributes'] = 'L\'etiqueta {$a->tag} ha de tenir atributs';
-$string['no_children'] = 'L\'etiqueta {$a->tag} ha de tenir fills';
 $string['nolimit'] = 'Intents il·limitats';
 $string['nomanifest'] = 'Fitxer paquet incorrecte - falta el fitxer imsmanifest.xml o l\'estructura AICC';
 $string['noprerequisites'] = 'No compliu prou prerequisits per accedir a aquest objecte d\'aprenentatge';
 $string['noreports'] = 'No hi ha cap informe per visualitzar';
 $string['normal'] = 'Normal';
 $string['noscriptnoscorm'] = 'El vostre navegador no pot executar JavaScript o el teniu inhabilitat. El paquet SCORM no es podrà reproduir o no desarà les dades correctament.';
-$string['notattempted'] = 'No intentat';
 $string['not_corr_type'] = 'El tipus de l\'etiqueta {$a->tag} no coincideix';
+$string['notattempted'] = 'No intentat';
 $string['notopenyet'] = 'Aquesta activitat no estarà disponible fins al dia {$a}';
 $string['objectives'] = 'Objectius';
 $string['optallstudents'] = 'tots els usuaris';
@@ -269,10 +269,10 @@ $string['organization'] = 'Organització';
 $string['organizations'] = 'Organitzacions';
 $string['othersettings'] = 'Paràmetres addicionals';
 $string['package'] = 'Fitxer del paquet';
+$string['package_help'] = 'El fitxer de paquet és un fitxer zip (o pif) que conté fitxers de definició de curs SCORM/AICC.';
 $string['packagedir'] = 'S\'ha produït un error del sistema de fitxers: no es pot crear el directori del paquet';
 $string['packagefile'] = 'No s\'ha especificat cap fitxer del paquet';
 $string['packagehdr'] = 'Paquet';
-$string['package_help'] = 'El fitxer de paquet és un fitxer zip (o pif) que conté fitxers de definició de curs SCORM/AICC.';
 $string['packageurl'] = 'URL';
 $string['packageurl_help'] = 'Aquest paràmetre habilita un URL per especificar un paquet SCORM en comptes de seleccionar un fitxer mitjançant el selector de fitxers.';
 $string['page-mod-scorm-x'] = 'Qualsevol plana del mòdul SCORM';
@@ -308,16 +308,18 @@ $string['rightanswer'] = 'Resposta correcta';
 $string['scoes'] = 'Objectes d\'aprenentatge';
 $string['score'] = 'Puntuació';
 $string['scorm:addinstance'] = 'Afegeix un paquet SCORM nou';
-$string['scormclose'] = 'Disponible fins';
-$string['scormcourse'] = 'Curs d\'aprenentatge';
 $string['scorm:deleteownresponses'] = 'Esborrar els intents propis';
 $string['scorm:deleteresponses'] = 'Esborrar els intents SCORM';
+$string['scorm:savetrack'] = 'Deixar rastres';
+$string['scorm:skipview'] = 'Ometre resum';
+$string['scorm:viewreport'] = 'Veure informes';
+$string['scorm:viewscores'] = 'Veure puntuacions';
+$string['scormclose'] = 'Disponible fins';
+$string['scormcourse'] = 'Curs d\'aprenentatge';
 $string['scormloggingoff'] = 'Entrada API desactivada';
 $string['scormloggingon'] = 'Entrada API activada';
 $string['scormopen'] = 'Disponible des de';
 $string['scormresponsedeleted'] = 'Eliminar els intents de l\'usuari';
-$string['scorm:savetrack'] = 'Deixar rastres';
-$string['scorm:skipview'] = 'Ometre resum';
 $string['scormtype'] = 'Tipus';
 $string['scormtype_help'] = 'Aquest paràmetre determina com s\'insereix el paquet en el curs. Teniu fins a 4 opcions:
 
@@ -325,16 +327,14 @@ $string['scormtype_help'] = 'Aquest paràmetre determina com s\'insereix el paqu
 * Manifest extern SCORM - Permet especificar un URL imsmanifest.xml. Nota: Si l\'URL té un domini diferent al del vostre lloc, llavors «Paquet descarregat» és una millor opció, atès que, si no, les qualificacions no es desen.
 * Paquet descarregat - Permet especificar l\'URL d\'un paquet. El paquet es descomprimirà i es desarà localment, i s\'actualitzarà quan s\'actualitzi el paquet SCORM extern.
 * URL AICC externa - aquest és l\'URL de llançament d\'una activitat AICC. Es construirà un pseudopaquet al seu voltant.';
-$string['scorm:viewreport'] = 'Veure informes';
-$string['scorm:viewscores'] = 'Veure puntuacions';
 $string['scrollbars'] = 'Permet el desplaçament de la finestra';
 $string['selectall'] = 'Selecciona-ho tot';
 $string['selectnone'] = 'Desselecciona-ho tot';
 $string['show'] = 'Mostrar';
 $string['sided'] = 'A un costat';
 $string['skipview'] = 'L\'estudiant omet la pàgina d\'estructura';
-$string['skipviewdesc'] = 'Aquesta preferència estableix el valor per defecte sobre quan passar de la estructura del contingut d\'una plana';
 $string['skipview_help'] = 'Aquest paràmetre especifica si la pàgina d\'estructura dels continguts ha de ser omesa (no es mostra). Si el paquet conté només un objecte d\'aprenentatge, la pàgina de l\'estructura del contingut sempre es pot ometre.';
+$string['skipviewdesc'] = 'Aquesta preferència estableix el valor per defecte sobre quan passar de la estructura del contingut d\'una plana';
 $string['slashargs'] = 'AVÍS: els arguments en barra estan inhabilitats en aquest lloc, i és possible que els objectes no tinguin el funcionament esperat.';
 $string['stagesize'] = 'Mida del marc o finestra';
 $string['stagesize_help'] = 'Aquests dos paràmetres defineixen l\'amplada i l\'alçada del marc o finestra del objectes d\'aprenentatge.';
@@ -350,9 +350,9 @@ $string['tag_error'] = 'Etiqueta desconeguda ({$a->tag}) amb aquest contingut: {
 $string['time'] = 'Temps';
 $string['title'] = 'Títol';
 $string['toc'] = 'Taula de continguts';
-$string['toolbar'] = 'Mostra la barra d\'eines';
 $string['too_many_attributes'] = 'L\'etiqueta {$a->tag} té massa atributs';
 $string['too_many_children'] = 'L\'etiqueta {$a->tag} té massa fills';
+$string['toolbar'] = 'Mostra la barra d\'eines';
 $string['totaltime'] = 'Temps';
 $string['trackcorrectcount'] = 'Recompte correcte';
 $string['trackcorrectcount_help'] = 'Nombre de resultats correcte per a la pregunta';
@@ -389,9 +389,9 @@ $string['typelocalsync'] = 'Paquet descarregat';
 $string['undercontent'] = 'Sota el contingut';
 $string['unziperror'] = 'S\'ha produït un error durant la descompressió del paquet';
 $string['updatefreq'] = 'Freqüència d\'actualització automàtica';
-$string['updatefreqdesc'] = 'Aquesta preferència estableix el valor per defecte sobre la freqüència d\'actualització automàtica d\'una activitat';
 $string['updatefreq_error'] = 'Auto actualitza la freqüència sols pot establir-se quan el paquet és allotjat externament';
 $string['updatefreq_help'] = 'Això permet al paquet extern ser descarregat i actualitzat de forma automàtica';
+$string['updatefreqdesc'] = 'Aquesta preferència estableix el valor per defecte sobre la freqüència d\'actualització automàtica d\'una activitat';
 $string['validateascorm'] = 'Valida un paquet';
 $string['validation'] = 'Resultat de la validació';
 $string['validationtype'] = 'Aquesta preferència defineix la biblioteca DOMXML utilitzada per validar el manifest SCORM. Si no sabeu, deixeu l\'opció seleccionada per defecte.';
@@ -400,7 +400,6 @@ $string['versionwarning'] = 'La versió del manifest és anterior a la 1.3, aví
 $string['viewallreports'] = 'Visualitza informes de {$a} intents';
 $string['viewalluserreports'] = 'Veure els informes de {$a} usuaris';
 $string['whatgrade'] = 'Qualificació dels intents';
-$string['whatgradedesc'] = 'Si s\'enregistra en el butlletí de qualificacions la qualificació més alta, la mitjana, la del primer o la del darrer intent completat, si es permeten diversos intents.';
 $string['whatgrade_help'] = 'Si es permeten intents múltiples, aquest paràmetre especifica si s\'emmagatzema al llibre de qualificacions el valor més alt, el valor mitjà (la mitjana), el primer intent completat o el darrer. L\'opció del darrer intent completat no inclou intents amb un estat «fallat».
 
 Notes sobre el maneig d\'intents múltiples:
@@ -410,5 +409,6 @@ Notes sobre el maneig d\'intents múltiples:
 *Alguns paquets SCORM són intel·ligents pel que fa als nous intents, però molts d\'altres, no. Això vol dir que si l\'estudiant torna a introduir un intent que ja existeix, si el contingut SCORM no té una lògica interna per evitar sobreescriure intents anteriors aquests es poden sobreescriure, encara que l\'intent estigui «completat» o «passat».
 
 *Els paràmetres «Forçar completats», «Forçar nou intent» i «Bloquejar després del darrer intent» també proporcionen una gestió addicional dels intents múltiples.';
+$string['whatgradedesc'] = 'Si s\'enregistra en el butlletí de qualificacions la qualificació més alta, la mitjana, la del primer o la del darrer intent completat, si es permeten diversos intents.';
 $string['width'] = 'Amplada';
 $string['window'] = 'Finestra';

@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'theme_xtec2020';
-$plugin->release = '0.1.1';
-$plugin->version = 2020080703;
+$plugin->release = '0.1.3';
+$plugin->version = 2021011201;
 $plugin->requires = 2019052000;
 $plugin->maturity = MATURITY_BETA;

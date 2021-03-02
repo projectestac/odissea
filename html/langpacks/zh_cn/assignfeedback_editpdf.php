@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'zh_cn', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -96,11 +96,11 @@ $string['stamps'] = '印章';
 $string['stampsdesc'] = '印章必须是图像文件（建议大小：40*40）。这些图像可以配合印章工具使用，作为批注PDF文件之用。';
 $string['test_doesnotexist'] = 'ghostscript路径指向一个不存在的文件';
 $string['test_empty'] = 'ghostscript路径是空的，请输入正确的路径';
-$string['testgs'] = '测试ghostscript路径';
 $string['test_isdir'] = '这个ghostscript路径指向一个文件夹，请在你指定的路径上包含这个ghostscript程序。';
 $string['test_notestfile'] = '缺少测试的PDF文件';
 $string['test_notexecutable'] = 'ghostscript指向一个不能执行的文件';
 $string['test_ok'] = 'ghostscript路径似乎没有问题，请查看一下这图下方的信息。';
+$string['testgs'] = '测试ghostscript路径';
 $string['tool'] = '工具';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = '浏览有批注的PDF文件';

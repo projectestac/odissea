@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'el', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,16 +33,16 @@ $string['backtomainview'] = 'Επιστροφή στην κεντρική';
 $string['cannotuseidfield'] = 'Το πεδίο «id» δεν μπορεί να εισαχθεί. Συμπληρώνεται αυτόματα με τον επόμενο αριθμό';
 $string['change'] = 'Αλλαγή';
 $string['charincorrectlength'] = 'Λάθος μήκος πεδίου χαρακτήρων';
-$string['checkbigints'] = 'Έλεγχος ακεραίων αριθμών';
 $string['check_bigints'] = 'Έλεγχος για εσφαλμένους ακέραιους αριθμούς βάσης δεδομένων';
-$string['checkdefaults'] = 'Έλεγχος προεπιλογών';
 $string['check_defaults'] = 'Έλεγχος για ασυνεπείς προεπιλεγμένες τιμές';
-$string['checkforeignkeys'] = 'Έλεγχος ξένων κλειδιών';
 $string['check_foreign_keys'] = 'Έλεγχος για παραβιάσεις ξένων κλειδιών';
-$string['checkindexes'] = 'Έλεγχος ευρετηρίων';
 $string['check_indexes'] = 'Έλεγχος για ελλείποντα ευρετήρια ΒΔ';
-$string['checkoraclesemantics'] = 'Σημασιολογικός έλεγχος';
 $string['check_oracle_semantics'] = 'Αναζητήστε σημασιολογία λανθασμένου μήκους';
+$string['checkbigints'] = 'Έλεγχος ακεραίων αριθμών';
+$string['checkdefaults'] = 'Έλεγχος προεπιλογών';
+$string['checkforeignkeys'] = 'Έλεγχος ξένων κλειδιών';
+$string['checkindexes'] = 'Έλεγχος ευρετηρίων';
+$string['checkoraclesemantics'] = 'Σημασιολογικός έλεγχος';
 $string['completelogbelow'] = '(δείτε την πλήρη καταγραφή της αναζήτησης παρακάτω)';
 $string['confirmcheckbigints'] = 'Αυτή η λειτουργία θα αναζητήσει <a href="https://tracker.moodle.org/browse/MDL-11038"> πιθανά λανθασμένα πεδία ακέραιων αριθμών</a> στον εξυπηρετητή σας Moodle, δημιουργώντας (αλλά όχι εκτελώντας!) αυτόματα τις απαραίτητες SQL δηλώσεις για να είναι όλοι οι ακέραιοι στη ΒΔ σας κατάλληλα ορισμένοι.
 
@@ -148,12 +148,12 @@ $string['missingindexes'] = 'Βρέθηκαν ευρετήρια να λείπο
 $string['mustselectonefield'] = 'Πρέπει να επιλέξετε ένα πεδίο για να δείτε τις σχετικές ενέργειες!';
 $string['mustselectoneindex'] = 'Πρέπει να επιλέξετε ένα ευρετήριο για να δείτε τις σχετικές ενέργειες!';
 $string['mustselectonekey'] = 'Πρέπει να επιλέξετε ένα κλειδί για να δείτε τις σχετικές ενέργειες!';
+$string['new_table_from_mysql'] = 'Νέος πίνακας από MySQL';
 $string['newfield'] = 'Νέο πεδίο';
 $string['newindex'] = 'Νέο ευρετήριο';
 $string['newkey'] = 'Νέο κλειδί';
 $string['newtable'] = 'Νέος πίνακας';
 $string['newtablefrommysql'] = 'Νέος πίνακας από MySQL';
-$string['new_table_from_mysql'] = 'Νέος πίνακας από MySQL';
 $string['nofieldsspecified'] = 'Δεν έχουν καθοριστεί πεδία';
 $string['nomasterprimaryuniquefound'] = 'Η στήλη (ή οι στήλες) στην οποία το ξένο κλειδί (foreign key) σας παραπέμπει πρέπει να περιλαμβάνεται σε ένα πρωτεύον ή μοναδικό κλειδί (primary or unique KEY) στον αναφερόμενο πίνακα. Σημειώστε ότι το να βρίσκεται η στήλη σε UNIQUE INDEX (μοναδικό ευρετήριο) δεν είναι αρκετό.';
 $string['nomissingindexesfound'] = 'Δεν βρέθηκε να λείπουν δείκτες. Η βάση δεδομένων σας δεν χρειάζεται περαιτέρω ενέργειες.';
@@ -195,15 +195,15 @@ $string['unknowntable'] = 'Αναφορά σε έναν άγνωστο πίνα�
 $string['unload'] = 'Αποφόρτωση';
 $string['up'] = 'Πάνω';
 $string['view'] = 'Προβολή';
-$string['viewedited'] = 'Προβολή επεξεργασμένου';
-$string['vieworiginal'] = 'Προβολή πρωτοτύπου';
-$string['viewphpcode'] = 'Δείτε τον κώδικα PHP';
 $string['view_reserved_words'] = 'Δείτε κλειδωμένες λέξεις';
-$string['viewsqlcode'] = 'Δείτε τον κώδικα SQL';
 $string['view_structure_php'] = 'Δείτε τη δομή PHP';
 $string['view_structure_sql'] = 'Δείτε τη δομή SQL';
 $string['view_table_php'] = 'Δείτε πίνακα PHP';
 $string['view_table_sql'] = 'Δείτε πίνακα SQL';
+$string['viewedited'] = 'Προβολή επεξεργασμένου';
+$string['vieworiginal'] = 'Προβολή πρωτοτύπου';
+$string['viewphpcode'] = 'Δείτε τον κώδικα PHP';
+$string['viewsqlcode'] = 'Δείτε τον κώδικα SQL';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Παραβιασμένα ξένα κλειδιά';
 $string['violatedforeignkeysfound'] = 'Βρέθηκαν παραβιασμένα ξένα κλειδιά';

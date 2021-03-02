@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'jclic', language 'en', branch 'MOODLE_37_STABLE'
+ * Strings for component 'jclic', language 'en', version '3.8'.
  *
- * @package   jclic
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     jclic
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -47,28 +47,28 @@ $string['exiturl_help'] = 'This is the URL that appears when students finish the
 To make work this redirection it\'s necessary to associate to the last activity in the Sequences tab the action "Exit JClic" in the Forward arrow section.';
 $string['expired'] = 'Sorry, this activity closed on {$a} and is no longer available';
 $string['filetype'] = 'Type';
-$string['filetypeexternal'] = 'External URL';
 $string['filetype_help'] = 'This setting determines how the JClic activity is included in the course. There are up to 2 options:
 
 * Uploaded JClic - Enables a valid JClic package to be chosen by the file picker.
 * External URL - Enables a URL to be specified. Note: The URL must start with http(s) or www and contain a valid JClic file.';
+$string['filetypeexternal'] = 'External URL';
 $string['filetypelocal'] = 'Uploaded JClic';
 $string['height'] = 'Height';
 $string['invalidjclicfile'] = 'Invalid JClic specified. It must have the ".jclic" extension.';
 $string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid JClic file.';
 $string['jclic'] = 'JClic';
 $string['jclic:addinstance'] = 'Add JClic';
+$string['jclic:grade'] = 'Grade JClic';
+$string['jclic:submit'] = 'Submit JClic';
+$string['jclic:view'] = 'View JClic';
 $string['jclicfile'] = 'JClic file';
 $string['jclicfile_help'] = 'The .jclic file containing the JClic files.';
-$string['jclic:grade'] = 'Grade JClic';
 $string['jclicjarbase'] = 'Jar base';
 $string['jclicjarbase_help'] = 'Web address where to locate all the JClic jar files';
 $string['jclicjs'] = 'jclic.js file URL';
 $string['jclicjs_help'] = 'URL where to find jclic.js needed for the non-Java player..';
-$string['jclic:submit'] = 'Submit JClic';
 $string['jclicurl'] = 'URL';
 $string['jclicurl_help'] = 'This setting enables a URL for the JClic package to be specified, rather than choosing a file via the file picker.';
-$string['jclic:view'] = 'View JClic';
 $string['lang'] = 'Language';
 $string['lap'] = 'Lap';
 $string['lap_help'] = 'Time between client-server transactions (in seconds)';

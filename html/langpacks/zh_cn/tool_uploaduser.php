@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'zh_cn', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,12 +48,13 @@ $string['uploadpicture_cannotsave'] = '不能保存用户{$a}的图片，片，�
 $string['uploadpicture_cannotunzip'] = '不能解压图片文件。';
 $string['uploadpicture_invalidfilename'] = '图片文件名含有非法字符，跳过。';
 $string['uploadpicture_overwrite'] = '覆盖已有的用户头像？';
-$string['uploadpictures'] = '上传头像';
-$string['uploadpictures_help'] = '用户头像可以通过zip文件或图片文件上传。图像文件应按chosen-user-attribute.extension的形式命名。例如，用户user1234的头像文件名应为user1234.jpg。';
 $string['uploadpicture_userfield'] = '用来匹配图片的用户属性：';
 $string['uploadpicture_usernotfound'] = '用户字段\'{$a->userfield}\'，值 \'{$a->uservalue}\' 不存在，跳过。';
 $string['uploadpicture_userskipped'] = '跳过用户{$a}(已经有一张图片)';
 $string['uploadpicture_userupdated'] = '{$a}的图片已更新。';
+$string['uploadpictures'] = '上传头像';
+$string['uploadpictures_help'] = '用户头像可以通过zip文件或图片文件上传。图像文件应按chosen-user-attribute.extension的形式命名。例如，用户user1234的头像文件名应为user1234.jpg。';
+$string['uploaduser:uploaduserpictures'] = '上传头像';
 $string['uploadusers'] = '上传用户';
 $string['uploadusers_help'] = '可以通过文本文件上传（并能直接选课）用户。文件的格式如下：
 
@@ -63,7 +64,6 @@ $string['uploadusers_help'] = '可以通过文本文件上传（并能直接选�
 * username、password、firstname、lastname和email字段名是必须的';
 $string['uploaduserspreview'] = '预览';
 $string['uploadusersresult'] = '上传用户结果';
-$string['uploaduser:uploaduserpictures'] = '上传头像';
 $string['useraccountupdated'] = '已更新用户数据';
 $string['useraccountuptodate'] = '用户更新';
 $string['userdeleted'] = '用户已删除';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'de', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,8 +64,8 @@ $string['enablemessaging'] = 'Gruppenmitteilungen';
 $string['enablemessaging_help'] = 'Wenn aktiv, können Gruppenmitglieder an andere Mitglieder der Gruppe Mitteilungen senden.';
 $string['encoding'] = 'Codierung';
 $string['enrolmentkey'] = 'Einschreibeschlüssel';
-$string['enrolmentkeyalreadyinuse'] = 'Dieser Einschreibeschlüssel wird bereits für eine andere Gruppe benutzt.';
 $string['enrolmentkey_help'] = 'Ein Einschreibeschlüssel erlaubt die Einschränkung von Kurszugängen auf diejenigen, die den Einschreibeschlüssel kennen. Falls zusätzlich ein Einschreibeschlüssel für eine Gruppe angegeben ist, dann dient dieser Schlüssel dem Kurszugang, aber auch der automatischen Zuweisung der Nutzer zur richtigen Gruppe.';
+$string['enrolmentkeyalreadyinuse'] = 'Dieser Einschreibeschlüssel wird bereits für eine andere Gruppe benutzt.';
 $string['erroraddremoveuser'] = 'Fehler beim Hinzufügen/Entfernen von {$a} in der Gruppe';
 $string['erroreditgroup'] = 'Fehler beim Bearbeiten der Gruppe {$a}';
 $string['erroreditgrouping'] = 'Fehler beim Bearbeiten der Gruppierung {$a}';
@@ -90,14 +90,14 @@ $string['group'] = 'Gruppe';
 $string['groupaddedsuccesfully'] = 'Gruppe {$a} erfolgreich hinzugefügt';
 $string['groupaddedtogroupingsuccesfully'] = 'Gruppe {$a->groupname} wurde erfolgreich zur Gruppierung {$a->groupingname} hinzugefügt';
 $string['groupby'] = 'Kriterien für automatisches Erstellen';
-$string['groupdescription'] = 'Gruppenbeschreibung';
+$string['groupdescription'] = 'Beschreibung der Gruppe';
 $string['groupinfo'] = 'Info zu ausgewählten Gruppen';
 $string['groupinfomembers'] = 'Info zu ausgewählten Mitglieder';
 $string['groupinfopeople'] = 'Info zu ausgewählten Personen';
 $string['grouping'] = 'Gruppierung';
+$string['grouping_help'] = 'Eine Gruppierung ist eine Sammlung von Gruppen innerhalb eines Kurses. Wenn eine Gruppierung ausgewählt ist, dann können Teilnehmer/innen aus unterschiedlichen Gruppen innerhalb der Gruppierung zusammenarbeiten.';
 $string['groupingaddedsuccesfully'] = 'Gruppierung \'{$a}\' wurde erfolgreich hinzugefügt';
 $string['groupingdescription'] = 'Beschreibung der Gruppierung';
-$string['grouping_help'] = 'Eine Gruppierung ist eine Sammlung von Gruppen innerhalb eines Kurses. Wenn eine Gruppierung ausgewählt ist, dann können Teilnehmer/innen aus unterschiedlichen Gruppen innerhalb der Gruppierung zusammenarbeiten.';
 $string['groupingname'] = 'Name der Gruppierung';
 $string['groupingnameexists'] = 'Der Name der Gruppierung \'{$a}\' existiert bereits in diesem Kurs. Bitte wählen Sie einen anderen Namen.';
 $string['groupings'] = 'Gruppierungen';
@@ -110,8 +110,6 @@ $string['groupmembers'] = 'Gruppenmitglieder';
 $string['groupmemberssee'] = 'Gruppenmitglieder anzeigen';
 $string['groupmembersselected'] = 'Mitglieder der markierten Gruppe';
 $string['groupmode'] = 'Gruppenmodus';
-$string['groupmodeforce'] = 'Gruppenmodus erzwingen';
-$string['groupmodeforce_help'] = 'Wenn der Gruppenmodus erzwungen wird, dann wird der Gruppenmodus des Kurses auch auf jede Aktivität im Kurs angewendet. Die Gruppeneinstellungen in jeder Aktivität werden ignoriert.';
 $string['groupmode_help'] = 'Für den Gruppenmodus stehen drei Optionen zur Verfügung:
 
 * Keine Gruppen - Im Kurs gibt es keine Gruppen und alle nutzen alles zusammen.
@@ -119,6 +117,8 @@ $string['groupmode_help'] = 'Für den Gruppenmodus stehen drei Optionen zur Verf
 * Sichtbare Gruppen - Im Kurs gibt es sichtbare Gruppen, d.h. jedes Gruppenmitglied arbeitet in der eigenen Gruppe, kann aber die anderen Gruppen sehen.
 
 Der Gruppenmodus auf Kursebene ist der Standardmodus für alle Aktivitäten im Kurs. Jede Aktivität, die Gruppen unterstützt, kann aber auch ihren eigenen Gruppenmodus haben. Falls allerdings der Gruppenmodus auf Kursebene erzwungen wird, werden die Einstellungen zum Gruppenmodus für alle Aktivitäten ignoriert.';
+$string['groupmodeforce'] = 'Gruppenmodus erzwingen';
+$string['groupmodeforce_help'] = 'Wenn der Gruppenmodus erzwungen wird, dann wird der Gruppenmodus des Kurses auch auf jede Aktivität im Kurs angewendet. Die Gruppeneinstellungen in jeder Aktivität werden ignoriert.';
 $string['groupmy'] = 'Meine Gruppe';
 $string['groupname'] = 'Gruppenname';
 $string['groupnameexists'] = 'Der Gruppenname \'{$a}\' existiert in diesem Kurs bereits.';
@@ -167,7 +167,7 @@ $string['nopermissionforcreation'] = 'Die Gruppe "{$a}" konnte nicht erstellt we
 $string['nosmallgroups'] = 'Letzte kleine Gruppe vermeiden';
 $string['notingroup'] = 'Nutzer/innen in Gruppen ignorieren';
 $string['notingrouping'] = 'Nicht in einer Gruppierung';
-$string['notingrouplist'] = 'In keiner Gruppe';
+$string['notingrouplist'] = 'Nicht in einer Gruppe';
 $string['nousersinrole'] = 'In der ausgewählten Rolle gibt es keine passenden Nutzer/innen';
 $string['number'] = 'Anzahl von Gruppen oder Mitgliedern pro Gruppe';
 $string['numgroups'] = 'Anzahl von Gruppen';
@@ -191,7 +191,7 @@ $string['removegroupsmembers'] = 'Alle Gruppenmitglieder entfernen';
 $string['removeselectedusers'] = 'Ausgewählte Nutzer/innen entfernen';
 $string['selectfromgroup'] = 'Mitglieder aus der Gruppe wählen';
 $string['selectfromgrouping'] = 'Mitglieder aus der Gruppierung wählen';
-$string['selectfromrole'] = 'Nutzer in der Rolle auswählen';
+$string['selectfromrole'] = 'Nutzer/innen in der Rolle auswählen';
 $string['showgroupsingrouping'] = 'Gruppen in Gruppierungen anzeigen';
 $string['showmembersforgroup'] = 'Mitglieder der Gruppe anzeigen';
 $string['toomanygroups'] = 'Nur {$a} Nutzer/innen haben die gewählte Rolle. Dies sind zu wenig für die Anzahl der Gruppen.';

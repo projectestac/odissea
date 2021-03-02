@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'my', language 'el', version '3.8'.
  *
- * @package   my
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     my
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,7 +36,7 @@ $string['mymoodle'] = 'Ταμπλό';
 $string['nocourses'] = 'Δεν υπάρχει πληροφορία του μαθήματος για προβολή.';
 $string['noguest'] = 'Η σελίδα του Ταμπλό δεν είναι διαθέσιμη στους επισκέπτες';
 $string['pinblocks'] = 'Διαμόρφωση καρφιτσωμένων μπλοκ για «Το Moodle μου»';
-$string['pinblocksexplan'] = 'Οι ρυθμίσεις των μπλοκ που θα κάνετε εδώ θα είναι εμφανείς (και μη τροποποιήσιμες) για κάθε χρήστη του Moodle στην επισκόπηση της σελίδας «Το Moodle μου».';
+$string['pinblocksexplan'] = 'Οι ρυθμίσεις των μπλοκ που θα κάνετε εδώ θα είναι εμφανείς (και μη επεξεργάσιμες) σε κάθε χρήστη του Moodle στην επισκόπηση της σελίδας «Το Moodle μου».';
 $string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'Η προτίμηση χρήστη για αρχική σελίδα.';
 $string['reseterror'] = 'Προέκυψε σφάλμα κατά την επαναφορά της σελίδας';
 $string['reseteveryonesdashboard'] = 'Επαναρχικοποίηση Ταμπλό για όλους τους χρήστες';

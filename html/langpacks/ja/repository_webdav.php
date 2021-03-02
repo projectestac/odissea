@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_webdav', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_webdav', language 'ja', version '3.8'.
  *
- * @package   repository_webdav
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_webdav
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,12 +31,12 @@ $string['https'] = 'HTTPS';
 $string['pluginname'] = 'WebDAVリポジトリ';
 $string['privacy:metadata'] = 'WebDAVリポジトリプラグインはいかなる個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
 $string['webdav'] = 'WebDAV';
-$string['webdavbasicauth'] = 'WebDAV基本認証';
-$string['webdavdigestauth'] = 'WebDAVダイジェスト認証';
+$string['webdav:view'] = 'WebDAVリポジトリを表示する';
 $string['webdav_password'] = 'WebDAVサーバパスワード';
 $string['webdav_path'] = 'WebDAVパス';
 $string['webdav_port'] = 'WebDAVサーバポート';
 $string['webdav_server'] = 'WebDAVサーバ';
 $string['webdav_type'] = 'WebDavタイプ';
 $string['webdav_user'] = 'WebDAVサーバユーザ';
-$string['webdav:view'] = 'WebDAVリポジトリを表示する';
+$string['webdavbasicauth'] = 'WebDAV基本認証';
+$string['webdavdigestauth'] = 'WebDAVダイジェスト認証';

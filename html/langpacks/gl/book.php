@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'book', language 'gl', version '3.8'.
  *
- * @package   book
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     book
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['chapterandsubchaptersdeleted'] = 'O capítulo «{$a->title}» e os seus
 $string['chapterdeleted'] = 'O capítulo «{$a->title}» foi eliminado';
 $string['chapters'] = 'Capítulos';
 $string['chaptertitle'] = 'Título do capítulo';
-$string['confchapterdelete'] = 'Confirma que quere eliminar este capítulo «{$a}»?';
+$string['confchapterdelete'] = 'Confirma que quere eliminar este capítulo?';
 $string['confchapterdeleteall'] = 'Confirma que quere eliminar este capítulo e todos os seus subcapítulos?';
 $string['content'] = 'Contido';
 $string['customtitles'] = 'Títulos personalizados';
@@ -52,15 +52,15 @@ $string['eventchapterupdated'] = 'Capítulo actualizado';
 $string['eventchapterviewed'] = 'Capítulo visto';
 $string['hidechapter'] = 'Agochar o capítulo «{$a}»';
 $string['indicator:cognitivedepth'] = 'Libro cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso libro.';
 $string['indicator:cognitivedepthdef'] = 'Libro cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen as actividades do Libro durante este intervalo de análise (Niveis = Sen vista, Ver)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso libro.';
 $string['indicator:socialbreadth'] = 'Libro social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso libro.';
 $string['indicator:socialbreadthdef'] = 'Libro social';
 $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen as actividades do Libro durante este intervalo de análise (Niveis = Sen participación, Participante en solitario)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso libro.';
 $string['modulename'] = 'Libro';
 $string['modulename_help'] = 'O módulo de libro permítelle a un profesor crear un recurso multipáxina en formato semellante a un libro, con capítulos e subcapítulos. Os libros poden conter ficheiros multimedia así como texto e son prácticos para presentar longos anacos de información que poden subdividirse en seccións.
 
@@ -82,7 +82,7 @@ $string['navoptions_desc'] = 'Opcións para amosar a navegación nas páxinas do
 $string['navprev'] = 'Anterior';
 $string['navprevtitle'] = 'Anterior: {$a}';
 $string['navstyle'] = 'Estilo de navegación';
-$string['navstyle_help'] = '* Imaxes  - Úsanse iconas para a navegación
+$string['navstyle_help'] = '* Imaxes - Úsanse iconas para a navegación
 * Texto - Úsanse os títulos dos capítulos para a navegación';
 $string['navtext'] = 'Texto';
 $string['navtoc'] = 'Só a TOC';
@@ -108,7 +108,7 @@ $string['search:activity'] = 'Libro - información do recurso';
 $string['search:chapter'] = 'Libro - capítulos';
 $string['showchapter'] = 'Amosar o capítulo «{$a}»';
 $string['subchapter'] = 'Subcapítulo';
-$string['subchapternotice'] = '(Só está dipoñíbel desde que se cree o primeiro capítulo)';
+$string['subchapternotice'] = '(Só está dipoñíbel dende que se cree o primeiro capítulo)';
 $string['subplugintype_booktool'] = 'Ferramenta libro';
 $string['subplugintype_booktool_plural'] = 'Ferramentas libro';
 $string['tagarea_book_chapters'] = 'Capítulos de libro';

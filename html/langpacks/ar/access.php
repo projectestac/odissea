@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,34 +12,35 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'access', language 'ar', version '3.8'.
  *
- * @package   access
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     access
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['access'] = 'إمكانية الوصول';
 $string['accesshelp'] = 'مساعدة حول إمكانية الوصول';
-$string['accesskey'] = 'مفتاح الوصول، {$a}';
-$string['accessstatement'] = 'وثيقة امكانية الوصول';
+$string['accesskey'] = 'زر التمكين، {$a}';
+$string['accessstatement'] = 'بيان إمكانية الوصول';
 $string['activitynext'] = 'النشاط التالي';
 $string['activityprev'] = 'النشاط السابق';
-$string['breadcrumb'] = 'شريط التنقل';
-$string['eventcontextlocked'] = 'تم تجميد السياق';
-$string['eventcontextunlocked'] = 'تم إلغاء تجميد السياق';
+$string['breadcrumb'] = 'مسار التنقل';
+$string['eventcontextlocked'] = 'سياق تم تجميده';
+$string['eventcontextunlocked'] = 'سياق ألغي تجميده';
 $string['hideblocka'] = 'إخفاء كتلة {$a}';
-$string['showblocka'] = 'إظهار كتلة {$a}';
+$string['showblocka'] = 'اظهر الكتلة {$a}';
 $string['sitemap'] = 'خارطة الموقع';
-$string['skipa'] = 'تخطي {$a}';
-$string['skipblock'] = 'تجاوز كتلة';
-$string['skipnavigation'] = 'تجاوز قائمة التصفح';
-$string['skipto'] = 'التخطي إلى {$a}';
-$string['tocontent'] = 'تخطى إلى المحتوى الرئيسي';
-$string['tonavigation'] = 'الذهاب إلى قائمة التصفح';
-$string['youarehere'] = 'أنت هنا';
+$string['skipa'] = 'تجاوز {$a}';
+$string['skipblock'] = 'تجاوز الكتلة';
+$string['skipnavigation'] = 'تجاوز التنقل';
+$string['skipto'] = 'تجاوز إلى {$a}';
+$string['tocontent'] = 'تجاوز إلى المحتوى الرئيسي';
+$string['tonavigation'] = 'اذهب إلى التصفح';
+$string['youarehere'] = 'أنت هنا !!';

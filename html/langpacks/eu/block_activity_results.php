@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_activity_results', language 'eu', version '3.8'.
  *
- * @package   block_activity_results
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_activity_results
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,10 +43,10 @@ $string['config_no_activities_in_course'] = 'Dagoeneko ez dago jarduerarik ikast
 $string['config_select_activity'] = 'Zein jardueraren emaitzak erakutsi behar ditu bloke honek?';
 $string['config_show_best'] = 'Kalifikazio altuenetatik zenbat erakutsi behar dira (0 desgaitzeko)?';
 $string['config_show_worst'] = 'Kalifikazio baxuenetatik zenbat erakutsi behar dira (0 desgaitzeko)?';
-$string['configuredtoshownothing'] = 'Bloke honen ezarpenek ez dute une honetan emaitzak erakustea baimentzen.';
 $string['config_use_groups'] = 'Erakutsi taldeak ikasleen ordez (soilik jarduerak taldeak baimentzen baditu)?';
-$string['defaultdecimalplaces'] = 'Hamartar kopurua';
-$string['defaultdecimalplaces_desc'] = 'Modu lehenetsian erakutsiko den hamartar kopurua';
+$string['configuredtoshownothing'] = 'Bloke honen ezarpenek ez dute une honetan emaitzak erakustea baimentzen.';
+$string['defaultdecimalplaces'] = 'Hamartar-kopurua';
+$string['defaultdecimalplaces_desc'] = 'Modu lehenetsian erakutsiko den hamartar-kopurua';
 $string['defaultgradedisplay'] = 'Erakutsi kalifikazioak honela';
 $string['defaultgradedisplay_desc'] = 'Nola erakutsi behar dira kalifikazioak modu lehenetsian?';
 $string['defaulthighestgrades'] = 'Modu lehenetsian erakutsitako kalifikazio altuenen kopurua';

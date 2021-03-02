@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multianswer', language 'it', version '3.8'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,9 +41,9 @@ $string['nooptionsforsubquestion'] = 'Non è possibile ricavare le opzioni per l
 $string['noquestions'] = 'La domanda Cloze <strong>{$a}</strong>" non contiene nessuna domanda';
 $string['pleaseananswerallparts'] = 'Per favore rispondi a tutte le parti della domanda';
 $string['pluginname'] = 'Risposte inglobate (Cloze)';
+$string['pluginname_help'] = 'Le domande inglobate (Cloze) consistono in un passaggio di testo con uno o più box contenenti domande di tipo a risposta multipla, a risposta breve o altro.';
 $string['pluginnameadding'] = 'Creazione domanda a Risposte inglobate (Cloze)';
 $string['pluginnameediting'] = 'Modifica domanda a Risposte inglobate (Cloze)';
-$string['pluginname_help'] = 'Le domande inglobate (Cloze) consistono in un passaggio di testo con uno o più box contenenti domande di tipo a risposta multipla, a risposta breve o altro.';
 $string['pluginnamesummary'] = 'Le domande di questo tipo sono molto flessibili ma possono essere create solamente inserendo testo con caratteri di controllo speciali per usare domande inglobate di tipo risposta multipla, risposta breve e numerica.';
 $string['privacy:metadata'] = 'Il plugin Tipi di domande \'Risposte inglobate (Cloze)\' non memorizza dati personali.';
 $string['qtypenotrecognized'] = 'Il tipo di domanda {$a} non è stato riconosciuto';

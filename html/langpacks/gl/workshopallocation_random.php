@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshopallocation_random', language 'gl', version '3.8'.
  *
- * @package   workshopallocation_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshopallocation_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['numofselfallocatedsubmissions'] = 'Autoasignada(s) {$a} entrega(s)';
 $string['numperauthor'] = 'por entrega';
 $string['numperreviewer'] = 'por revisor';
 $string['pluginname'] = 'Asignación ao chou';
-$string['privacy:metadata'] = 'O engadido de Asignación ao chou non almacena datos persoais. Os datos persoais reais sobre quen vai avaliar a quen están almacenados polo propio módulo de Obradoiro e son a base para exportar os detalles das avaliacións.';
+$string['privacy:metadata'] = 'O engadido de Asignación ao chou non almacena datos persoais. Os datos persoais reais sobre quen vai avaliar a quen están almacenados polo propio módulo de Taller e son a base para exportar os detalles das avaliacións.';
 $string['randomallocationdone'] = 'Feita a asignación ao chou';
 $string['removecurrentallocations'] = 'Retirar as asignacións actuais';
 $string['resultnomorepeers'] = 'Non hai máis pares dispoñíbeis';

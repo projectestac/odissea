@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_paypal', language 'ko', version '3.8'.
  *
- * @package   enrol_paypal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_paypal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,8 +37,8 @@ $string['defaultrole_desc'] = 'PayPal을 통해 등록할 때 부여할 기본 �
 $string['enrolenddate'] = '등록 종료일';
 $string['enrolenddate_help'] = '활성화되면 사용자들은 이 날까지만 등록할 수 있습니다.';
 $string['enrolenddaterror'] = '등록 종료일은 등록 시작일보다 이를 수 없음';
-$string['enrolperiod'] = '재적 기간';
-$string['enrolperiod_desc'] = '(초로 표시한) 기본 재적 기간';
+$string['enrolperiod'] = '등록 기간';
+$string['enrolperiod_desc'] = '등록이 유효한 기본 기간. 0으로 설정되면 등록기간은 기본으로 제한이 없습니다.';
 $string['enrolperiod_help'] = '사용자가 등록한 후 등록이 유효한 기간. 비 활성화되면 등록 유효 기간은 제한이 없습니다.';
 $string['enrolstartdate'] = '등록 시작일';
 $string['enrolstartdate_help'] = '활성화되면 사용자들은 이 날짜부터 등록할 수 있습니다.';
@@ -49,11 +49,11 @@ $string['mailstudents'] = '학생에게 공지됨';
 $string['mailteachers'] = '선생님에게 공지';
 $string['messageprovider:paypal_enrolment'] = 'PayPal 등록 메세지';
 $string['nocost'] = '이 강좌는 무료 강좌임!';
-$string['paypalaccepted'] = 'PayPal 지불 접수됨';
 $string['paypal:config'] = 'PayPal 등록 과정 설정';
 $string['paypal:manage'] = '등록 사용자 관리';
 $string['paypal:unenrol'] = '제적';
 $string['paypal:unenrolself'] = '탈퇴';
+$string['paypalaccepted'] = 'PayPal 지불 접수됨';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = '페이팔 모듈은 유료 강좌를 설정하는 것을 허용합니다. 어떤 강좌의 수강료가 0인 경우 학생들은 등록비를 내라는 요청을 받지 않습니다. 전체 사이트에 대한 기본 수강료를 여기에 설정할 수 있고, 강좌별로 설정할 수도 있습니다. 강좌에서 설정한 수강료는 사이트 전체에 적용되는 수강료를 덮어쓰게 됩니다.';
 $string['sendpaymentbutton'] = '페이팔을 통해 송금하기';

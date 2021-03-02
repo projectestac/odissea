@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'eu', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,12 +49,12 @@ $string['check_displayerrors_details'] = '<p>Ez da gomendatzen <code>display_err
 $string['check_displayerrors_error'] = 'Erroreak erakusteko PHP ezarpena gaituta dago. Desgaituta egotea gomendatzen da.';
 $string['check_displayerrors_name'] = 'PHP erroreak erakustea';
 $string['check_displayerrors_ok'] = 'PHP erroreak erakustea desgaituta.';
-$string['check_emailchangeconfirmation_details'] = '<p>Erabiltzaile batek bere profileko helbide elektronikoa aldatzen duenean helbide elektronikoa baieztatzeko urratsa behartzea gomendatzen da. Desgaituz gero, spam-igorleek aukera hori baliatu dezakete zerbitzaria SPAMa bidaltzen saiatzeko.</p>
+$string['check_emailchangeconfirmation_details'] = '<p>Erabiltzaile batek bere profileko helbide elektronikoa aldatzen duenean helbide elektronikoa berresteko urratsa behartzea gomendatzen da. Desgaituz gero, spam-igorleek aukera hori baliatu dezakete zerbitzaria SPAMa bidaltzen saiatzeko.</p>
 <p>Beste aukera bat helbide elektronikoaren eremua autentifikazio-pluginetan blokeatzea da, baina aukera hori hemen ez da kontuan hartzen.</p>';
 $string['check_emailchangeconfirmation_error'] = 'Erabiltzaileek edozein helbide elektroniko sar dezakete.';
 $string['check_emailchangeconfirmation_info'] = 'Erabiltzaileek baimendutako domeinuetako helbide elektronikoak sar ditzakete.';
-$string['check_emailchangeconfirmation_name'] = 'Helbide elektronikoaren aldaketaren baieztatzea';
-$string['check_emailchangeconfirmation_ok'] = 'Helbide elektronikoaren aldaketaren baieztatzea erabiltzaile-profilean';
+$string['check_emailchangeconfirmation_name'] = 'Helbide elektronikoaren aldaketaren berrespena';
+$string['check_emailchangeconfirmation_ok'] = 'Helbide elektronikoaren aldaketaren berrespena erabiltzaile-profilean';
 $string['check_embed_details'] = '<p>Objektuak mugarik gabe enbotatzeko aukera oso arriskutsua da - erregistratutako edozein erabiltzailek XSS eraso bat burutu dezake. Ezarpen hau desgaitu beharko litzateke lanean dauden guneetan.</p>';
 $string['check_embed_error'] = 'Objektuak mugarik gabe enbotatzeko aukera gaituta dago - hau oso arriskutsua izan daiteke zerbitzari gehienetan.';
 $string['check_embed_name'] = 'Baimendu EMBED eta OBJECT';
@@ -103,15 +103,15 @@ $string['check_riskadmin_name'] = 'Kudeatzaileak';
 $string['check_riskadmin_ok'] = 'Guneko {$a} kudeatzaile aurkitu dira.';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) berrikusi rol-esleipena</a>';
 $string['check_riskadmin_warning'] = 'Guneko {$a->admincount} kudeatzaile eta onartzen ez diren {$a->unsupcount} kudeatzaile-rol esleipen aurkitu dira.';
-$string['check_riskbackup_detailsok'] = 'Ezein rolek ez du esplizituki erabiltzaile-datuen segurtasun-kopia baimentzen. Halere, kontuan izan "doanything" gaitasuna duten kudeatzaileek hori egiteko aukera izango dutela.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Aktibo dauden baliogabetze hauek erabiltzaileei segurtasun-kopietan erabiltzaile-datuak gehitzeko aukera ematen diete. Mesedez ziurtatu ezazu baimen hau beharrezkoa dela.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Sistemako hurrengo rol hauek erabiltzaileei segurtasun-kopietan erabiltzaile-datuak gehitzeko aukera ematen diete. Mesedez ziurtatu ezazu baimen hau beharrezkoa dela.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>Goiko roletako edo baliogabetze-lokalak direla eta, une honetan hurrengo erabiltzaileek segurtasun-kopietan euren ikastaroetan matrikulatutako edozein erabiltzaileren erabiltzaile-datuak gehitzeko baimena dute. Ziurtatu ezazu (a) konfiantzazkoak direla eta (b) pasahitz sendoekin babestuta daudela:</p> {$a}';
-$string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} {$a->contextname}-(e)an</a>';
+$string['check_riskbackup_detailsok'] = 'Ezein rolek ez du esplizituki erabiltzaile-datuen segurtasun-kopia baimentzen. Halere, kontuan izan "doanything" gaitasuna duten kudeatzaileek hori egiteko aukera izango dutela.';
+$string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} {$a->contextname}(e)an</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Erabiltzaile-datuen segurtasun-kopia';
 $string['check_riskbackup_ok'] = 'Ezein rolek ez du esplizituki erabiltzaile-datuen segurtasun-kopia baimentzen';
-$string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) {$a->contextname}-(e)an</a>';
+$string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) {$a->contextname}(e)an</a>';
 $string['check_riskbackup_warning'] = '{$a->rolecount} rol, {$a->overridecount} baliogabetze eta erabiltzaile-datuen segurtasun-kopiak egiteko baimena duen {$a->usercount} erabiltzaile aurkitu dira.';
 $string['check_riskxss_details'] = '<p>RISK_XSS soilik konfiantzazko erabiltzaileek izan beharko luketen gaitasun arriskutsuak biltzen ditu.</p>
 <p>Egiaztatu hurrengo erabiltzaile-zerrenda eta ziurtatu zerbitzari honetan erabiltzaileok konfiantzazkoak direla:</p>

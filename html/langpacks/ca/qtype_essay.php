@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'ca', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,9 +43,9 @@ $string['mustrequire'] = 'Quan se selecciona "sense text adjunt", o les resposte
 $string['mustrequirefewer'] = 'No podeu demanar més adjunts dels que permeteu.';
 $string['nlines'] = '{$a} línies';
 $string['pluginname'] = 'Resposta oberta';
+$string['pluginname_help'] = 'Com a resposta a la pregunta (que pot incloure una imatge), l\'estudiant escriu una resposta d\'un o dos paràgrafs. La pregunta de resposta oberta no es puntuarà fins que no l\'hagi revisada un professor i li hagi assignat manualment una qualificació.';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta de resposta oberta';
 $string['pluginnameediting'] = 'S\'està editant una pregunta de resposta oberta';
-$string['pluginname_help'] = 'Com a resposta a la pregunta (que pot incloure una imatge), l\'estudiant escriu una resposta d\'un o dos paràgrafs. La pregunta de resposta oberta no es puntuarà fins que no l\'hagi revisada un professor i li hagi assignat manualment una qualificació.';
 $string['pluginnamesummary'] = 'Permet una resposta consistent en poques frases o paràgrafs. Cal qualificar-la manualment.';
 $string['responsefieldlines'] = 'Dimensions del quadre d\'entrada';
 $string['responseformat'] = 'Format de la resposta';
@@ -54,5 +54,5 @@ $string['responsenotrequired'] = 'La introducció de text és opcional';
 $string['responseoptions'] = 'Opcions de resposta';
 $string['responserequired'] = 'Text requerit';
 $string['responsetemplate'] = 'Plantilla de resposta';
-$string['responsetemplateheader'] = 'Plantilla de resposta';
 $string['responsetemplate_help'] = 'Qualsevol text introduït aquí es mostrarà en el quadre d\'entrada de la resposta quan s\'iniciï un nou intent de la pregunta.';
+$string['responsetemplateheader'] = 'Plantilla de resposta';

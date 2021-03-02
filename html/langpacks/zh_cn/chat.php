@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'chat', language 'zh_cn', version '3.8'.
  *
- * @package   chat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     chat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,13 +36,13 @@ $string['chat:chat'] = '进入聊天室';
 $string['chat:deletelog'] = '删除聊天日志';
 $string['chat:exportparticipatedsession'] = '导出您参与过的聊天会话';
 $string['chat:exportsession'] = '导出所有聊天会话';
+$string['chat:readlog'] = '查看聊天日志';
+$string['chat:talk'] = '发言';
+$string['chat:view'] = '查看聊天活动';
 $string['chatintro'] = '描述';
 $string['chatname'] = '聊天室名称';
-$string['chat:readlog'] = '查看聊天日志';
 $string['chatreport'] = '聊天会话';
-$string['chat:talk'] = '发言';
 $string['chattime'] = '下一次聊天时间';
-$string['chat:view'] = '查看聊天活动';
 $string['compact'] = '紧凑';
 $string['composemessage'] = '编辑一条消息';
 $string['configmethod'] = 'Ajax 聊天模式提供一个基于 ajax 的聊天界面，它与服务器持续通讯，保持更新。普通聊天模式让客户端周期地连接服务器以获取更新。这种方式无需任何配置便可在所有环境下工作，但当很多人一起聊天时会给服务器带来极大负荷。使用服务器进程需要访问 Unix 的 Shell，但却可以得到一个快速而稳定的聊天环境。';
@@ -72,13 +72,13 @@ $string['explainmethodnormal'] = '只有在选择“普通”作为聊天模式�
 $string['generalconfig'] = '常规设置';
 $string['idle'] = '空闲';
 $string['indicator:cognitivedepth'] = '聊天认知深度';
+$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在聊天活动中所达到的认知深度。';
 $string['indicator:cognitivedepthdef'] = '聊天认知深度';
 $string['indicator:cognitivedepthdef_help'] = '在此分析间隔内，参与人已经达到了聊天活动所提供的认知参与度(级别=没有查看、查看、提交、查看反馈、评论反馈)';
-$string['indicator:cognitivedepth_help'] = '这个指标是基于学生在聊天活动中所达到的认知深度。';
 $string['indicator:socialbreadth'] = '聊天社会广度';
+$string['indicator:socialbreadth_help'] = '这个指标基于学生在聊天活动中所达到的社会广度。';
 $string['indicator:socialbreadthdef'] = '聊天社会广度';
 $string['indicator:socialbreadthdef_help'] = '在此分析间隔内，参与人已经达到了聊天活动所提供的社会参与度(级别=没有参与，单独参与，和他人一起参与)';
-$string['indicator:socialbreadth_help'] = '这个指标基于学生在聊天活动中所达到的社会广度。';
 $string['inputarea'] = '输入区';
 $string['invalidid'] = '找不到那个聊天室!';
 $string['list_all_sessions'] = '列出所有会话。';
@@ -110,8 +110,8 @@ $string['modulename_help'] = '聊天活动模块使参与人能够进行基于�
 $string['modulenameplural'] = '聊天';
 $string['neverdeletemessages'] = '不删除聊天消息';
 $string['nextsession'] = '下一个预定的会话';
-$string['nochat'] = '没有找到聊天';
 $string['no_complete_sessions_found'] = '没有找到已结束的会话。';
+$string['nochat'] = '没有找到聊天';
 $string['noguests'] = '此聊天室不对访客开放';
 $string['nomessages'] = '还没有消息';
 $string['nopermissiontoseethechatlog'] = '您没有查看聊天日志的权限。';

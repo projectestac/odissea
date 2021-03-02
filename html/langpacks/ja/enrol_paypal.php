@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_paypal', language 'ja', version '3.8'.
  *
- * @package   enrol_paypal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_paypal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,11 +52,11 @@ $string['mailstudents'] = '学生に通知する';
 $string['mailteachers'] = '教師に通知する';
 $string['messageprovider:paypal_enrolment'] = 'PayPal登録メッセージ';
 $string['nocost'] = 'このコースの登録に費用が設定されていません!';
-$string['paypalaccepted'] = 'PayPal支払済み';
 $string['paypal:config'] = 'PayPal登録インスタンスを設定する';
 $string['paypal:manage'] = '登録済みユーザを管理する';
 $string['paypal:unenrol'] = 'ユーザをコースから登録解除する';
 $string['paypal:unenrolself'] = '自分自身をコースから登録解除する';
+$string['paypalaccepted'] = 'PayPal支払済み';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'あなたはPayPalモジュールで有料のコースを設定することができます。コースの費用がゼロの場合、学生は登録時に支払いを求められません。サイト全体に適用されるデフォルトの費用をここで設定します。また、コース設定でコース個別の費用を設定することができます。コース費用はサイト全体の費用に優先されます。';
 $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'PayPal登録のPayPalトランザクションに関する情報です。';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_random', language 'eu', version '3.8'.
  *
- * @package   qtype_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['configselectmanualquestions'] = 'Ausazko galdera motak aukera al dezake eskuz kalifikatutako galdera bat, kategoriatik galdera ausaz aukeratu behar duela ezarrita dagoenean?';
 $string['includingsubcategories'] = 'azpikategoriak barne ditu';
 $string['pluginname'] = 'Ausazkoa';
-$string['pluginnameediting'] = 'Ausazko galdera editatzen';
 $string['pluginname_help'] = 'Ausazko galdera bat ez da galdera mota bat berez, kategoria zehatz batetik ausaz aukeratutako galderak jarduera batean sartzeko modua baizik.';
-$string['privacy:metadata'] = 'Ausazkoa galdera-mota pluginak ez du datu pertsonalik biltzen.';
+$string['pluginnameediting'] = 'Ausazko galdera editatzen';
+$string['privacy:metadata'] = 'Ausazkoa galdera mota pluginak ez du datu pertsonalik biltzen.';
 $string['randomqname'] = 'Ausazkoa ({$a})';
 $string['randomqnamefromtop'] = 'Ausazko galdera baliogabea! Mesedez ezabatu galdera hau.';
 $string['randomqnamefromtoptags'] = 'Ausazko galdera baliogabea! Mesedez ezabatu galdera hau.';
@@ -45,6 +45,6 @@ $string['randomqplusnamemoduletags'] = 'Ausazkoa (galdetegi honen edozein katego
 $string['randomqplusnamesystem'] = 'Ausaz (sistema mailako edozein kategoria)';
 $string['randomqplusnamesystemtags'] = 'Ausaz (sistema mailako edozein kategoria, etiketak: {$a->tags})';
 $string['randomqplusnametags'] = 'Ausazkoa ({$a->category} eta azpikategoriak, etiketak: {$a->tags})';
-$string['selectedby'] = '{$a->randomname}-(e)k {$a->questionname} aukeratu du';
+$string['selectedby'] = '{$a->randomname}(e)k {$a->questionname} aukeratu du';
 $string['selectmanualquestions'] = 'Ausazko galderak eskuz kalifikatutako galderak erabil ditzake';
 $string['taskunusedrandomscleanup'] = 'Ezabatu erabili gabeko ausazko galderak';

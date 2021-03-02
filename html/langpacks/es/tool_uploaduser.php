@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'es', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,13 +48,14 @@ $string['uploadpicture_cannotsave'] = 'No se puede guardar la imagen del usuario
 $string['uploadpicture_cannotunzip'] = 'No se puede descomprimir el archivo de imágenes.';
 $string['uploadpicture_invalidfilename'] = 'El nombre del archivo de imagen {$a} tiene caracteres no válidos. Se ha omitido.';
 $string['uploadpicture_overwrite'] = '¿Sobrescribir las imágenes del usuario?';
-$string['uploadpictures'] = 'Subir imágenes de los usuarios';
-$string['uploadpictures_help'] = 'Las imágenes de los usuarios se pueden cargar masivamente mediante un archivo zip. Estos archivos debe ser nombrados en atención al "atributo del usuario" elegido (username, idnumber, id) por ejemplo user1234.jpg para un usuario con nombre de usuario (username) user1234.
-Tenga en cuenta que el tamaño del archivo zip no puede superar el límite establecido en la configuración "políticas de sitio" de su sitio Moodle. En cualquier caso, siempre podrá preparar varios paquetes de imágenes comprimidas y subirlas por partes.';
 $string['uploadpicture_userfield'] = 'Atributo del usuario a utilizar para emparejar imágenes:';
 $string['uploadpicture_usernotfound'] = 'El usuario con \'{$a->userfield}\' valor de \'{$a->uservalue}\' no existe. Se pasa por alto.';
 $string['uploadpicture_userskipped'] = 'Se ha pasado por alto el usuario {$a} (ya tiene imagen)';
 $string['uploadpicture_userupdated'] = 'Imagen actualizada para el usuario {$a}.';
+$string['uploadpictures'] = 'Subir imágenes de los usuarios';
+$string['uploadpictures_help'] = 'Las imágenes de los usuarios se pueden cargar masivamente mediante un archivo zip. Estos archivos debe ser nombrados en atención al "atributo del usuario" elegido (username, idnumber, id) por ejemplo user1234.jpg para un usuario con nombre de usuario (username) user1234.
+Tenga en cuenta que el tamaño del archivo zip no puede superar el límite establecido en la configuración "políticas de sitio" de su sitio Moodle. En cualquier caso, siempre podrá preparar varios paquetes de imágenes comprimidas y subirlas por partes.';
+$string['uploaduser:uploaduserpictures'] = 'Subir foto del usuario';
 $string['uploadusers'] = 'Subir usuarios';
 $string['uploadusers_help'] = 'Los usuarios pueden subirse (y, opcionalmente, matricularse en cursos) por medio de un archivo de texto. El formato debe ser el siguiente:
 
@@ -64,9 +65,8 @@ $string['uploadusers_help'] = 'Los usuarios pueden subirse (y, opcionalmente, ma
 * Los nombres de campo necesarios son username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'Previsualizar subida de usuarios';
 $string['uploadusersresult'] = 'Resultados de subida de usuarios';
-$string['uploaduser:uploaduserpictures'] = 'Subir foto del usuario';
 $string['useraccountupdated'] = 'Usuario actualizado';
-$string['useraccountuptodate'] = 'Usuario hasta hoy';
+$string['useraccountuptodate'] = 'Usuario actualizado';
 $string['userdeleted'] = 'Usuario eliminado';
 $string['userrenamed'] = 'Usuario renombrado';
 $string['userscreated'] = 'Usuarios creados';

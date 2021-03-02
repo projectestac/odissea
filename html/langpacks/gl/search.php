@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'search', language 'gl', version '3.8'.
  *
- * @package   search
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     search
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -69,8 +69,8 @@ $string['enginenotinstalled'] = 'O motor {$a} non está instalado.';
 $string['enginenotselected'] = 'Non ten seleccionando ningún motor de busca.';
 $string['engineserverstatus'] = 'Non está dispoñíbel o motor de buscas. Póñase en contacto co administrador.';
 $string['enteryoursearchquery'] = 'Escriba a súa consulta de busca';
-$string['errorareanotavailable'] = 'A área de buscas {$a} non está dispoñíbel.';
 $string['error_indexing'] = 'Produciuse un erro ao indexar';
+$string['errorareanotavailable'] = 'A área de buscas {$a} non está dispoñíbel.';
 $string['errors'] = 'Erros';
 $string['everywhere'] = 'En calquera lugar ao que vostede poida acceder';
 $string['filesinindexdirectory'] = 'Ficheiros no directorio do índice';
@@ -84,11 +84,11 @@ $string['gradualreindex_queued'] = 'Solicitouse o reindexado para {$a->name} en 
 $string['incourse'] = 'en curso {$a}';
 $string['index'] = 'Índice';
 $string['indexwhendisabledfullnotice'] = 'Actualmente non se permite a indexación cando a busca estea desactivada. Para activar isto, consulte o axuste <a href="{$a->url}">searchindexwhendisabled</a>.';
-$string['indexwhendisabledshortnotice'] = 'A indexación non está dispoñible.';
+$string['indexwhendisabledshortnotice'] = 'A indexación non está dispoñíbel.';
 $string['invalidindexerror'] = 'O índice do directorio, ou contén un índice incorrecto, ou non contén nada.';
 $string['ittook'] = 'Levoulle';
-$string['matchingfile'] = 'Emparellando desde o ficheiro <span class="filename">{$a}</span>';
-$string['matchingfiles'] = 'Emparellando desde os ficheiros:';
+$string['matchingfile'] = 'Emparellando dende o ficheiro <span class="filename">{$a}</span>';
+$string['matchingfiles'] = 'Emparellando dende os ficheiros:';
 $string['mycoursesonly'] = 'Só os meus cursos';
 $string['next'] = 'Seguinte';
 $string['noindexmessage'] = 'Admin: Semella que non hai ningún índice de busca.';
@@ -114,18 +114,18 @@ $string['schemanotupdated'] = 'O esquema de busca está desactualizado.';
 $string['schemaversionunknown'] = 'O motor de busca non sabe sobre a versión actual do esquema.';
 $string['score'] = 'Puntuación';
 $string['search'] = 'Buscar';
-$string['searcharea'] = 'Área de buscas';
-$string['searchareacategories'] = 'Categorías de área de buscas';
 $string['search:course'] = 'Cursos';
 $string['search:customfield'] = 'Campos personalizados do curso';
-$string['searching'] = 'Buscando en ...';
 $string['search:message_received'] = 'Mensaxes - recibidas';
 $string['search:message_sent'] = 'Mensaxes - enviadas';
 $string['search:mycourse'] = 'Os meus cursos';
-$string['searchnotpermitted'] = 'Non está autorizado para facer unha busca';
 $string['search:section'] = 'Seccións do curso';
-$string['searchsetupdescription'] = 'Os pasos seguintes axudaranlle a configurar a busca global en Moodle.';
 $string['search:user'] = 'Usuarios';
+$string['searcharea'] = 'Área de buscas';
+$string['searchareacategories'] = 'Categorías de área de buscas';
+$string['searching'] = 'Buscando en ...';
+$string['searchnotpermitted'] = 'Non está autorizado para facer unha busca';
+$string['searchsetupdescription'] = 'Os pasos seguintes axudaranlle a configurar a busca global en Moodle.';
 $string['searchwithin'] = 'Buscar en';
 $string['seconds'] = 'segundos';
 $string['solutions'] = 'Solucións';

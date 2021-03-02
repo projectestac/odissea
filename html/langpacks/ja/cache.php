@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'ja', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,13 +41,13 @@ $string['cachedef_capabilities'] = 'システムケイパビリティリスト';
 $string['cachedef_completion'] = '活動完了ステータス';
 $string['cachedef_config'] = 'Config設定';
 $string['cachedef_contextwithinsights'] = '洞察のコンテクスト';
+$string['cachedef_course_user_dates'] = '相対日付モードで設定するコースのユーザ日付';
 $string['cachedef_coursecat'] = '特定ユーザのコースカテゴリ一覧';
 $string['cachedef_coursecatrecords'] = 'コースカテゴリレコード';
 $string['cachedef_coursecattree'] = 'コースカテゴリツリー';
 $string['cachedef_coursecompletion'] = 'コース完了ステータス';
 $string['cachedef_coursecontacts'] = 'コース連絡先一覧';
 $string['cachedef_coursemodinfo'] = 'それぞれのコースのモジュールおよびセクションに関する累積情報';
-$string['cachedef_course_user_dates'] = '相対日付モードで設定するコースのユーザ日付';
 $string['cachedef_databasemeta'] = 'データベースメタ情報';
 $string['cachedef_eventinvalidation'] = 'イベント無効化';
 $string['cachedef_externalbadges'] = '特定ユーザの外部バッジ';
@@ -87,10 +87,10 @@ $string['component'] = 'コンポーネント';
 $string['confirmlockdeletion'] = 'ロック削除確認';
 $string['confirmstoredeletion'] = 'ストア削除確認';
 $string['default_application'] = 'デフォルトアプリケーションストア';
-$string['defaultmappings'] = 'マッピングが存在しない場合に使用されるストア';
-$string['defaultmappings_help'] = 'あなたが1つまたはそれ以上のストアをキャッシュ定義にマップしない場合、デフォルトストアが使用されます。';
 $string['default_request'] = 'デフォルトリクエストストア';
 $string['default_session'] = 'デフォルトセッションストア';
+$string['defaultmappings'] = 'マッピングが存在しない場合に使用されるストア';
+$string['defaultmappings_help'] = 'あなたが1つまたはそれ以上のストアをキャッシュ定義にマップしない場合、デフォルトストアが使用されます。';
 $string['defaultstoreactions'] = 'デフォルトストアを編集することはできません。';
 $string['definition'] = '定義';
 $string['definitionsummaries'] = '既知のキャッシュ定義';
@@ -158,20 +158,20 @@ $string['sharing'] = '共有';
 $string['sharing_all'] = 'すべて';
 $string['sharing_help'] = 'あなたがクラスタをセットアップをしている場合、またはすべて同じストアを使用する複数サイトをセットアップしている場合、そしてデータを共有したい場合にどのようにキャッシュデータを共有するか決定することができます。これは高度な設定であるため、変更する前にその目的を確認してください。';
 $string['sharing_input'] = 'カスタムキー (以下で入力)';
+$string['sharing_siteid'] = '同じサイトIDのサイト';
+$string['sharing_version'] = '同じバージョンで動作しているサイト';
 $string['sharingrequired'] = 'あなたは少なくとも1つの共有オプションを選択する必要があります。';
 $string['sharingselected_all'] = 'すべて';
 $string['sharingselected_input'] = 'カスタムキー';
 $string['sharingselected_siteid'] = 'サイトID';
 $string['sharingselected_version'] = 'バージョン';
-$string['sharing_siteid'] = '同じサイトIDのサイト';
-$string['sharing_version'] = '同じバージョンで動作しているサイト';
-$string['storeconfiguration'] = 'ストア設定';
 $string['store_default_application'] = 'アプリケーションキャッシュのデフォルトファイルストア';
 $string['store_default_request'] = 'リクエストキャッシュのデフォルトスタティックストア';
 $string['store_default_session'] = 'セッションキャッシュのデフォルトセッションストア';
+$string['storeconfiguration'] = 'ストア設定';
 $string['storename'] = 'ストア名';
-$string['storenamealreadyused'] = 'あなたはこのストアに関してユニークな名称を選択する必要があります。';
 $string['storename_help'] = 'ここではストア名を設定します。ストア名はシステム内のストアを識別します。「a-z A-Z 0-9 -_ 」およびスペースのみ使用することができます。また、ストア名はユニークである必要があります。すでに使用されている名称の使用を試みた場合、あなたはエラーメッセージを受信します。';
+$string['storenamealreadyused'] = 'あなたはこのストアに関してユニークな名称を選択する必要があります。';
 $string['storenameinvalid'] = '無効なストア名です。あなたは「a-z A-Z 0-9 -_ 」およびスペースのみ使用することができます。';
 $string['storenotready'] = 'ストア準備未了';
 $string['storeperformance'] = 'キャッシュストアパフォーマンスレポート - {$a} ユニークリクエスト/処理';

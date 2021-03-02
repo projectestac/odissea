@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_numerical', language 'de', version '3.8'.
  *
- * @package   qtype_numerical
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_numerical
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,9 +64,9 @@ $string['onlynumerical'] = 'Die Maßeinheiten werden nicht benutzt. Nur der Zahl
 $string['pleaseenterananswer'] = 'Bitte geben Sie eine Antwort ein';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Bitte geben Sie Ihre Antwort ohne eine Trennung zwischen den Tausendern ein ({$a}).';
 $string['pluginname'] = 'Numerisch';
+$string['pluginname_help'] = 'Aus Nutzersicht sehen numerische Fragen wie gewöhnliche Kurztextfragen aus. Der Unterschied liegt darin, dass numerische Fragen mit einer Fehlertoleranz versehen werden können. Beispiel: Ist die Antwort 10 und die Fehlertoleranz liegt bei 2, so sind alle Antworten von 8 bis 12 richtig.';
 $string['pluginnameadding'] = 'Numerische Frage hinzufügen';
 $string['pluginnameediting'] = 'Numerische Frage ändern';
-$string['pluginname_help'] = 'Aus Nutzersicht sehen numerische Fragen wie gewöhnliche Kurztextfragen aus. Der Unterschied liegt darin, dass numerische Fragen mit einer Fehlertoleranz versehen werden können. Beispiel: Ist die Antwort 10 und die Fehlertoleranz liegt bei 2, so sind alle Antworten von 8 bis 12 richtig.';
 $string['pluginnamesummary'] = 'Erlaubt eine numerische Antwort (auch mit Maßeinheiten), die gegen einige Modellantworten, ggf. mit Toleranzen, bewertet wird.';
 $string['privacy:metadata'] = 'Der Numerische Fragentyp speichert keine personenbezogenen Daten';
 $string['relative'] = 'Relative';
@@ -83,9 +83,9 @@ $string['unitgraded'] = 'Die Maßeinheit muss angegeben sein und wird bewertet';
 $string['unithandling'] = 'Verwendung der Maßeinheit';
 $string['unitincorrect'] = 'Sie haben nicht die richtige Einheit angegeben';
 $string['unitmandatory'] = 'Obligatorisch';
-$string['unitmandatory_help'] = '* Die Antwort wird zusammen mit der eingegebenen Einheit bewertet.
+$string['unitmandatory_help'] = '* Die Antwort wird zusammen mit der angegebenen Einheit bewertet.
 
-* Der Abzug wird berechnet, wenn das Einheitenfeld leer ist';
+* Der Abzug wird angewandt, wenn das Einheitenfeld leer ist';
 $string['unitnotselected'] = 'Sie müssen eine Einheit auswählen';
 $string['unitonerequired'] = 'Sie müssen mindestens eine Einheit angeben';
 $string['unitoptional'] = 'Optionale Einheit';
@@ -103,9 +103,9 @@ $string['units'] = 'Maßeinheiten';
 $string['unitselect'] = 'ein Drop-Down-menu';
 $string['unitx'] = 'Maßeinheit {no}';
 $string['validnumberformats'] = 'Gültige Zahlenformate';
-$string['validnumberformats_help'] = '* Zahlenschreibweise 13500,67 : 13 500,67 : 13500,67 : 13 500,67
-* Bei Verwendung des Tausendertrennzeichens muss IMMER das Dezimalkomma gesetzt sein  13,500.67 : 13.500
-* Exponentschreibweise 1,350067 * 10<sup>4</ sup> wird so notiert 1,350067 E4 : 1,350067 E04';
+$string['validnumberformats_help'] = '* Normale Zahlenschreibweise 13500,67 ; 13 500,67 : 13500,67 ; 13 500,67
+* Bei Verwendung des Tausendertrennzeichens muss IMMER das Dezimalkomma gesetzt sein  13,500.67. 13.500
+* Die Exponentschreibweise 1,350067 * 10 <sup> 4 </ sup> wird so notiert 1,350067 E4 : 1,350067 E04';
 $string['validnumbers'] = '13500.67 : 13 500.67 : 13500,67: 13 500,67 : 1.350067 E4 : 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} muss eine Zahl sein';
 $string['xmustnotbenumeric'] = '{$a} kann keine Zahl sein';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'es', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,16 +32,16 @@ $string['backtomainview'] = 'Volver al principal';
 $string['cannotuseidfield'] = 'No se puede insertar el campo "id". Es una columna autonumerada';
 $string['change'] = 'Cambiar';
 $string['charincorrectlength'] = 'Longitud incorrecta del campo char';
-$string['checkbigints'] = 'Comprobar Bigints';
 $string['check_bigints'] = 'Buscar enteros DB incorrectos';
-$string['checkdefaults'] = 'Comprobar valores por defecto';
 $string['check_defaults'] = 'Buscar valores por defecto inconsistentes';
-$string['checkforeignkeys'] = 'Comprobar las claves externas';
 $string['check_foreign_keys'] = 'Buscar violaciones de la clave externa';
-$string['checkindexes'] = 'Comprobar índices';
 $string['check_indexes'] = 'Buscar índices BD ausentes';
-$string['checkoraclesemantics'] = 'Comprobar la semántica';
 $string['check_oracle_semantics'] = 'Buscar longitud de semántica incorrecta';
+$string['checkbigints'] = 'Comprobar Bigints';
+$string['checkdefaults'] = 'Comprobar valores por defecto';
+$string['checkforeignkeys'] = 'Comprobar las claves externas';
+$string['checkindexes'] = 'Comprobar índices';
+$string['checkoraclesemantics'] = 'Comprobar la semántica';
 $string['completelogbelow'] = '(ver abajo el registro completo de la búsqueda)';
 $string['confirmcheckbigints'] = 'Esta funcionalidad buscará <a href="http://tracker.moodle.org/browse/MDL-11038">potential wrong integer fields</a> en su servidor Moodle, generando (¡pero no ejecutando!) automáticamente las acciones SQL necesarias para tener todos los enteros de su base de datos adecuadamente definidos.<br /><br />
 Una vez generados, puede copiarlas y ejecutarlas con seguridad en su interfaz SQL preferida (no olvide hacer una copia de seguridad de sus datos antes de hacerlo).<br /><br />Se recomienda ejecutar la última (+) versión de Moodle disponible (1.8, 1.9, 2.x ...) antes de llevar a cabo la búsqueda de enteros erróneos.<br /><br />Esta funcionalidad no ejecuta ninguna acción contra la BD (únicamente la lee), de modo que puede ser realizada con seguridad en cualquier momento.';
@@ -72,10 +72,10 @@ $string['documentationintro'] = 'Esta documentación es generada automáticament
 $string['down'] = 'Abajo';
 $string['duplicate'] = 'Duplicar';
 $string['duplicatefieldname'] = 'Ya existe otro campo con ese nombre';
-$string['duplicatefieldsused'] = 'Duplicar campos usados';
+$string['duplicatefieldsused'] = 'Campos duplicados usados';
 $string['duplicateindexname'] = 'Duplicar nombre del índice';
 $string['duplicatekeyname'] = 'Ya existe otra clave con ese nombre';
-$string['duplicatetablename'] = 'Existe otra tabla con ese nombre';
+$string['duplicatetablename'] = 'Ya existe otra tabla con ese nombre';
 $string['edit'] = 'Edición';
 $string['edit_field'] = 'Editar campo';
 $string['edit_field_save'] = 'Guardar campo';
@@ -93,7 +93,7 @@ $string['field'] = 'Campo';
 $string['fieldnameempty'] = 'Nombre del campo vacío';
 $string['fields'] = 'Campos';
 $string['fieldsnotintable'] = 'El campo no existe en la tabla';
-$string['fieldsusedinindex'] = 'Este campo es usado como índice';
+$string['fieldsusedinindex'] = 'Este campo se usa como índice.';
 $string['fieldsusedinkey'] = 'Este campo se usa como clave.';
 $string['filemodifiedoutfromeditor'] = 'Atención: El archivo se ha modificado localmente usando el editor de XMLDB. Guardar sobrescribirá los cambios locales.';
 $string['filenotwriteable'] = 'Archivo no escribible';
@@ -105,15 +105,15 @@ $string['generate_all_documentation'] = 'Toda la documentación';
 $string['generate_documentation'] = 'Documentación';
 $string['gotolastused'] = 'Ir al último archivo usado';
 $string['incorrectfieldname'] = 'Nombre incorrecto';
-$string['incorrectindexname'] = 'Nombre de índice incorrecto';
-$string['incorrectkeyname'] = 'Nombre incorrecto de clave';
-$string['incorrecttablename'] = 'Nombre incorrecto de tabla';
+$string['incorrectindexname'] = 'Nombre del índice incorrecto';
+$string['incorrectkeyname'] = 'Nombre de la clave incorrecto';
+$string['incorrecttablename'] = 'Nombre de la tabla incorrecto';
 $string['index'] = 'Índice';
 $string['indexes'] = 'Índices';
-$string['indexnameempty'] = 'El nombre del índice está vacío';
+$string['indexnameempty'] = 'Nombre del índice vacío.';
 $string['integerincorrectlength'] = 'Longitud incorrecta del campo integer';
 $string['key'] = 'Clave';
-$string['keynameempty'] = 'El nombre de la clave no puede estar vacío';
+$string['keynameempty'] = 'El nombre clave no puede estar vacío.';
 $string['keys'] = 'Claves';
 $string['listreservedwords'] = 'Lista de palabras reservadas<br/>(se utiliza para mantener <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a> actualizado)';
 $string['load'] = 'Cargar';
@@ -124,12 +124,12 @@ $string['missingindexes'] = 'Se han encontrado índices ausentes';
 $string['mustselectonefield'] = '¡Debe seleccionar un campo para ver las acciones relacionadas con el campo!';
 $string['mustselectoneindex'] = '¡Debe seleccionar un índice para ver las acciones relacionadas con el índice!';
 $string['mustselectonekey'] = '¡Debe seleccionar una clave para ver las acciones relacionadas con la clave!';
+$string['new_table_from_mysql'] = 'Nueva tabla desde MySQL';
 $string['newfield'] = 'Nuevo campo';
 $string['newindex'] = 'Nuevo índice';
 $string['newkey'] = 'Nueva clave';
 $string['newtable'] = 'Nueva tabla';
 $string['newtablefrommysql'] = 'Nueva tabla desde MySQL';
-$string['new_table_from_mysql'] = 'Nueva tabla desde MySQL';
 $string['nofieldsspecified'] = 'No se ha especificado ningún campo';
 $string['nomasterprimaryuniquefound'] = 'La(s) columna(s) a las que hace referencia su clave externa deben ser incluidas en una clave principal o única en la tabla de referencia. Tenga en cuenta que la columna que está en un índice único no es suficientemente buena.';
 $string['nomissingindexesfound'] = 'No se han encontrado índices ausentes: su BD no requiere acciones adicionales.';
@@ -166,15 +166,15 @@ $string['unknowntable'] = 'Hace referencia a una tabla desconocida';
 $string['unload'] = 'Descargar';
 $string['up'] = 'Arriba';
 $string['view'] = 'Ver';
-$string['viewedited'] = 'Ver editados';
-$string['vieworiginal'] = 'Ver original';
-$string['viewphpcode'] = 'Ver código PHP';
 $string['view_reserved_words'] = 'Ver palabras reservadas';
-$string['viewsqlcode'] = 'Ver código SQL';
 $string['view_structure_php'] = 'Mostrar estructura PHP';
 $string['view_structure_sql'] = 'Mostrar estructura SQL';
 $string['view_table_php'] = 'Ver tabla PHP';
 $string['view_table_sql'] = 'Ver tabla SQL';
+$string['viewedited'] = 'Ver editados';
+$string['vieworiginal'] = 'Ver original';
+$string['viewphpcode'] = 'Ver código PHP';
+$string['viewsqlcode'] = 'Ver código SQL';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Claves externas violadas';
 $string['violatedforeignkeysfound'] = 'Se han encontrado claves externas violadas';

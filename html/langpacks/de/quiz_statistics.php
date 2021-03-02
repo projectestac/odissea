@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_statistics', language 'de', version '3.8'.
  *
- * @package   quiz_statistics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_statistics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -113,10 +113,11 @@ $string['standarddeviation'] = 'Standardabweichung (für {$a})';
 $string['standarddeviationq'] = 'Standardabweichung';
 $string['standarderror'] = 'Standardfehler (für {$a})';
 $string['statistics'] = 'Statistik';
+$string['statistics:componentname'] = 'Teststatistik-Report';
+$string['statistics:view'] = 'Ansehen des Statistik-Reports';
 $string['statisticsreport'] = 'Statistik-Report';
 $string['statisticsreportgraph'] = 'Statistik für Fragepositionen';
-$string['statistics:view'] = 'Ansehen des Statistik-Reports';
-$string['statsfor'] = 'Statistik (für {$a})';
+$string['statsfor'] = 'Teststatistik (für {$a})';
 $string['variant'] = 'Variante';
 $string['viewanalysis'] = 'Details anzeigen';
 $string['whichtries'] = 'Antworten analysieren für';

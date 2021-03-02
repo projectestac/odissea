@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'de', version '3.8'.
  *
- * @package   tool_uploadcourse
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploadcourse
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -119,8 +119,8 @@ $string['templatefile_help'] = 'Wählen Sie eine Datei als Vorlage zum Wiederher
 $string['unknownimportmode'] = 'Unbekannter Importmodus';
 $string['updatemissing'] = 'Fehlende Angaben aus CSV-Daten und Standardwerten ergänzen';
 $string['updatemode'] = 'Aktualisierungsmodus';
-$string['updatemodedoessettonothing'] = 'Der Aktualisierungsmodus erlaubt nicht, dass etwas geändert wird';
 $string['updatemode_help'] = 'Wenn Sie zulassen, dass Kurse aktualisiert/upgedatet werden, müssen Sie festlegen, womit diese aktualisiert werden sollen.';
+$string['updatemodedoessettonothing'] = 'Der Aktualisierungsmodus erlaubt nicht, dass etwas geändert wird';
 $string['updateonly'] = 'Nur vorhandene Kurse aktualisieren';
 $string['updatewithdataonly'] = 'Nur mit CSV-Daten aktualisieren';
 $string['updatewithdataordefaults'] = 'Mit CSV-Daten und Standardwerten aktualisieren';

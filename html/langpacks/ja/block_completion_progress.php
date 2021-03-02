@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_completion_progress', language 'ja', version '3.8'.
  *
- * @package   block_completion_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_completion_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -87,11 +87,11 @@ $string['no_activities_config_message'] = '活動完了が設定された活動�
 $string['no_activities_message'] = '監視されている活動またはリソースはありません。監視をセットアップするには設定を使用してください。';
 $string['no_blocks'] = 'あなたのコースでは完了プログレスブロックは設定されていません。';
 $string['no_courses'] = 'あなたはどのコースにも登録されていません。登録済みコースからのバーのみ表示されます。';
-$string['not_all_expected_set'] = 'すべての活動の完了に「 {$a} 」日付セットが設定されているわけではありません。';
+$string['no_visible_activities_message'] = '現在表示できる監視中の活動はありません。';
 $string['notCompleted_colour'] = '#C71C22';
 $string['notCompleted_colour_descr'] = 'まだ完了していない現在のエレメントのHTMLカラーコードです。';
 $string['notCompleted_colour_title'] = '未完了色';
-$string['no_visible_activities_message'] = '現在表示できる監視中の活動はありません。';
+$string['not_all_expected_set'] = 'すべての活動の完了に「 {$a} 」日付セットが設定されているわけではありません。';
 $string['now_indicator'] = '現在';
 $string['overview'] = '学生概要';
 $string['pluginname'] = '完了プログレス';

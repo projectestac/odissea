@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'de', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,16 +33,16 @@ $string['backtomainview'] = 'Zurück zur Hauptübersicht';
 $string['cannotuseidfield'] = 'Feld \'id\' kann nicht eingefügt werden. Es handelt sich um eine Spalte, die automatisch nummeriert wird.';
 $string['change'] = 'Ändern';
 $string['charincorrectlength'] = 'Falsche Feldlänge (char)';
-$string['checkbigints'] = 'Zahlen prüfen';
 $string['check_bigints'] = 'Ungültige DB-Werte (integers) suchen';
-$string['checkdefaults'] = 'Defaults prüfen';
 $string['check_defaults'] = 'Inkonsistente Defaultwerte suchen';
-$string['checkforeignkeys'] = 'Fremdschlüssel prüfen';
 $string['check_foreign_keys'] = 'Suche nach Beschädigungen an Fremdschlüsseln';
-$string['checkindexes'] = 'Indizes prüfen';
 $string['check_indexes'] = 'Fehlende Datenbank-Indizes suchen';
-$string['checkoraclesemantics'] = 'Semantische Prüfung';
 $string['check_oracle_semantics'] = 'Suche nach fehlerhaften semantischen Längen';
+$string['checkbigints'] = 'Zahlen prüfen';
+$string['checkdefaults'] = 'Defaults prüfen';
+$string['checkforeignkeys'] = 'Fremdschlüssel prüfen';
+$string['checkindexes'] = 'Indizes prüfen';
+$string['checkoraclesemantics'] = 'Semantische Prüfung';
 $string['completelogbelow'] = '(das vollständige Suchprotokoll folgt)';
 $string['confirmcheckbigints'] = 'Diese Funktion sucht nach <a href="https://tracker.moodle.org/browse/MDL-11038"> möglicherweise ungültigen Zahlenwerten</a> in Ihrem Moodle-Server und erzeugt automatisch die notwendigen SQL-Anweisungen, um die Integer Werte in der Datenbank zu korrigieren (die SQL-Anweisungen werden erzeugt, aber nicht ausgeführt!).
 
@@ -143,15 +143,15 @@ $string['main_view'] = 'Hauptübersicht';
 $string['masterprimaryuniqueordernomatch'] = 'Die Felder des externen (foreign) Schlüssels müssen in der gleichen Reihenfolge wie sie als UNIQUE KEY or in der Referenztabelle eingetragen sind.';
 $string['missing'] = 'Fehlend';
 $string['missingindexes'] = 'Fehlende Indizes gefunden';
-$string['mustselectonefield'] = 'Sie müssen ein Feld auswählen, um die damit verbundenen Aktionen zu sehen!';
-$string['mustselectoneindex'] = 'Sie müssen einen Index auswählen, um die damit verbundenen Aktionen zu sehen!';
-$string['mustselectonekey'] = 'Sie müssen einen Schlüssel auswählen, um die damit verbundenen Aktionen zu sehen!';
+$string['mustselectonefield'] = 'Sie müssen ein Feld auswählen, um die möglichen Aktionen zu sehen!';
+$string['mustselectoneindex'] = 'Sie müssen einen Index auswählen, um die möglichen Aktionen zu sehen!';
+$string['mustselectonekey'] = 'Sie müssen einen Schlüssel auswählen, um die möglichen Aktionen zu sehen!';
+$string['new_table_from_mysql'] = 'Neue Tabelle aus MySQL';
 $string['newfield'] = 'Neues Feld';
 $string['newindex'] = 'Neuer Index';
 $string['newkey'] = 'Neuer Schlüssel';
 $string['newtable'] = 'Neue Tabelle';
 $string['newtablefrommysql'] = 'Neue Tabelle aus MySQL';
-$string['new_table_from_mysql'] = 'Neue Tabelle aus MySQL';
 $string['nofieldsspecified'] = 'Keine Felder festgelegt';
 $string['nomasterprimaryuniquefound'] = 'Die Spalte(n) mit Ihren externen Schlüsselverweisen müssen in einem primary oder unique KEY in der verknüpften Tabelle enthalten sein. Beachten Sie, dass eine Spalte in einem UNIQUE INDEX nicht ausreicht.';
 $string['nomissingindexesfound'] = 'Es wurden keine fehlenden Indizes gefunden. Die Datenbank benötigt keine weitere Bearbeitung.';
@@ -193,18 +193,18 @@ $string['unknowntable'] = 'Verweis auf nicht bekannte Tabelle';
 $string['unload'] = 'Löschen';
 $string['up'] = 'Aufwärts';
 $string['view'] = 'Ansicht';
-$string['viewedited'] = 'Bearbeitete anzeigen';
-$string['vieworiginal'] = 'Original anzeigen';
-$string['viewphpcode'] = 'PHP-Code anzeigen';
 $string['view_reserved_words'] = 'Reservierte Wörter anzeigen';
-$string['viewsqlcode'] = 'SQL-Code anzeigen';
 $string['view_structure_php'] = 'PHP-Struktur anzeigen';
 $string['view_structure_sql'] = 'SQL-Struktur anzeigen';
 $string['view_table_php'] = 'PHP-Tabelle anzeigen';
 $string['view_table_sql'] = 'SQL-Tabelle anzeigen';
+$string['viewedited'] = 'Bearbeitete anzeigen';
+$string['vieworiginal'] = 'Original anzeigen';
+$string['viewphpcode'] = 'PHP-Code anzeigen';
+$string['viewsqlcode'] = 'SQL-Code anzeigen';
 $string['viewxml'] = 'XML';
-$string['violatedforeignkeys'] = 'Zerstörte Fremdschlüssel';
-$string['violatedforeignkeysfound'] = 'Zerstörte Fremdschlüssel gefunden';
+$string['violatedforeignkeys'] = 'Beschädigte Fremdschlüssel';
+$string['violatedforeignkeysfound'] = 'Beschädigte Fremdschlüssel gefunden';
 $string['violations'] = 'Beschädigungen';
 $string['wrong'] = 'Falsch';
 $string['wrongdefaults'] = 'Falsche Standardwerte gefunden';

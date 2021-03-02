@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'el', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -67,7 +67,6 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'Πότε δημι
 $string['privacy:metadata:grading_definitions:timemodified'] = 'Πότε τροποποιήθηκε τελευταία ο ορισμός βαθμολόγησης.';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'Το αναγνωριστικό του χρήστη που δημιούργησε τον ορισμό βαθμολόγησης.';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'Το αναγνωριστικό του χρήστη που τροποποίησε τελευταία τον ορισμό βαθμολόγησης.';
-$string['privacy:metadata:gradingformpluginsummary'] = 'Δεδομένα για τη μέθοδο βαθμολόγησης.';
 $string['privacy:metadata:grading_instances'] = 'Ιστορικό αξιολόγησης για ένα βαθμολογήσιμο στοιχείο που αξιολογήθηκε από έναν βαθμολογητή.';
 $string['privacy:metadata:grading_instances:feedback'] = 'Η ανατροφοδότηση που δόθηκε από το χρήστη.';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'Ο μορφότυπος κειμένου της ανατροφοδότησης που δόθηκε από το χρήστη.';
@@ -75,6 +74,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'Το αναγνωρισ
 $string['privacy:metadata:grading_instances:rawgrade'] = 'Ο βαθμός για το στιγμιότυπο βαθμολόγησης.';
 $string['privacy:metadata:grading_instances:status'] = 'Η κατάσταση του στιγμιότυπου βαθμολόγησης.';
 $string['privacy:metadata:grading_instances:timemodified'] = 'Πότε τροποποιήθηκε τελευταία το στιγμιότυπο βαθμολόγησης.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Δεδομένα για τη μέθοδο βαθμολόγησης.';
 $string['searchownforms'] = 'Να περιλαμβάνονται και οι δικές μου φόρμες';
 $string['searchtemplate'] = 'Αναζήτηση φόρμας βαθμολόγησης';
 $string['searchtemplate_help'] = 'Μπορείτε να αναζητήσετε μια φόρμα βαθμολόγησης και να την χρησιμοποιήσετε ως υπόδειγμα για την νέα φόρμα εδώ. Απλά πληκτρολογήστε λέξεις που πρέπει να βρίσκονται κάπου στο όνομα της φόρμας, στην περιγραφή της ή στο ίδια την φόρμα. Για να αναζητήσετε μια φράση, κλείστε την φράση σε διπλά εισαγωγικά (").

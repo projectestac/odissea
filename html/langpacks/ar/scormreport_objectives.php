@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_objectives', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'scormreport_objectives', language 'ar', version '3.8'.
  *
- * @package   scormreport_objectives
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     scormreport_objectives
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['objectivescore'] = 'إظهار الدرجة الموضوعية';
+$string['objectivescore'] = 'إظهار النتيجة الموضوعية';
 $string['objectivex'] = 'الهدف {$a}';
 $string['pluginname'] = 'تقرير الأهداف';
 $string['privacy:metadata:preference:scorm_report_objectives_score'] = 'ما إذا كان سيتم عرض النتيجة الموضوعية في تقرير سكورم';
 $string['privacy:metadata:preference:scorm_report_pagesize'] = 'عدد المستخدمين المراد عرضها في تقارير سكورم';
-$string['score'] = 'الدرجة';
+$string['score'] = 'النتيجة';
 $string['status'] = 'الحالة';

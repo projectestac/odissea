@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,32 +12,33 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'my', language 'ar', version '3.8'.
  *
- * @package   my
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     my
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'إضافة صفحة';
-$string['alldashboardswerereset'] = 'تم إعادة تعيين كل صفحات دفات القيادة إلى الإعدادات الافتراضية.';
+$string['alldashboardswerereset'] = 'تم إعادة تعيين كل الصفحات الشخصية إلى الإعدادات الافتراضية.';
 $string['allprofileswerereset'] = 'تم إعادة تعيين كل الملفات الشخصية إلى الإعدادات الافتراضية.';
 $string['defaultpage'] = 'صفحة مودل الافتراضية الخاصة بي';
 $string['defaultprofilepage'] = 'صفحة اللمحة الشخصية الافتراضية';
 $string['delpage'] = 'حذف الصفحة';
 $string['managepages'] = 'إدارة الصفحات';
 $string['mymoodle'] = 'لوحة عدادات';
-$string['nocourses'] = 'لا توجد معلومات عن المساق لإظهارها.';
-$string['noguest'] = 'صفحة دفة القيادة غير متاحة للضيوف';
-$string['pinblocks'] = 'إعاداد الكتل الخاصة بمودل الخاص بي';
-$string['pinblocksexplan'] = 'أى إعدادات خاصة بالكتل تقوم بتعريفها هنا ستكون ظاهره (وغير مسموح بتحريرها) لكل المستخدمين لمودل في مودل الخاص بهم.';
+$string['nocourses'] = 'لا توجد معلومات عن المقرر الدراسي لإظهارها.';
+$string['noguest'] = 'الصفحة الشخصية للمستخدمين غير متاحة للزوار';
+$string['pinblocks'] = 'إعدادات الكتل الخاصة بمودل الخاص بي';
+$string['pinblocksexplan'] = 'أي إعدادات خاصة بالكتل تقوم بتعريفها هنا ستكون ظاهرة (وغير قابلة للتحرير) لكل مستخدمي مودل في صفحة استعراض \'مودل الخاص بي\'.';
 $string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'تفضيل الصفحة الرئيسية للمستخدم';
 $string['reseterror'] = 'كان هناك خطأ في إعادة تعيين صفحتك';
-$string['reseteveryonesdashboard'] = 'إعادة تعيين دفة القيادة لجميع المستخدمين';
+$string['reseteveryonesdashboard'] = 'إعادة تعيين الصفحة الشخصية لجميع المستخدمين';
 $string['reseteveryonesprofile'] = 'إعادة تعيين الملف الشخصي لجميع المستخدمين';
-$string['resetpage'] = 'إعادة تعيين الصفحة إلى الوضع الافتراضي';
+$string['resetpage'] = 'إعادة تعيين الصفحة للوضع الافتراضي';

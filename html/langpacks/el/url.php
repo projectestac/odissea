@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'url', language 'el', version '3.8'.
  *
- * @package   url
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     url
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,12 +30,11 @@ $string['clicktoopen'] = 'Κάντε κλικ στον σύνδεσμο {$a} γ�
 $string['configdisplayoptions'] = 'Επιλέξτε όλες τις επιλογές που θα πρέπει να είναι διαθέσιμες, οι υπάρχουσες ρυθμίσεις δεν τροποποιούνται. Κρατήστε πατημένο το πλήκτρο CTRL για να επιλέξετε πολλαπλά πεδία.';
 $string['configframesize'] = 'Όταν μια ιστοσελίδα ή ένα ανεβασμένο αρχείο εμφανίζεται μέσα σε πλαίσιο, τότε αυτή η τιμή είναι το ύψος (σε εικονοστοιχεία) του εξωτερικού πλαισίου (που περιέχει και τα στοιχεία πλοήγησης).';
 $string['configrolesinparams'] = 'Ενεργοποιήστε αν επιθυμείτε να συμπεριλάβετε τοπικά ονόματα ρόλων στην λίστα με τις διαθέσιμες μεταβλητές παραμέτρων.';
-$string['configsecretphrase'] = 'Αυτή η μυστική φράση χρησιμοποιείται για την παραγωγή κρυπτογραφημένης τιμής κωδικού που μπορεί να σταλεί σε ορισμένους εξυπηρετητές σαν παράμετρος. Ο κρυπτογραφημένος κωδικός παράγεται από μία τιμή md5 της τρέχουσας διεύθυνσης IP του χρήστη συνενωμένη με την μυστική σας φράση, δηλαδή κωδικός = md5(IP.μυστική φράση). Παρακαλούμε σημειώστε ότι αυτό δεν είναι αξιόπιστο διότι η διεύθυνση IP μπορεί να αλλάζει και είναι συχνά κοινή για διαφορετικούς υπολογιστές.';
+$string['configsecretphrase'] = 'Αυτή η μυστική φράση χρησιμοποιείται για την παραγωγή κρυπτογραφημένης κωδικής τιμής που μπορεί να σταλεί σε ορισμένους εξυπηρετητές σαν παράμετρος. Ο κρυπτογραφημένος κωδικός παράγεται από μία τιμή md5 από την τρέχουσα διεύθυνση IP του χρήστη συνενωμένη με την μυστική σας φράση, δηλαδή κωδικός = md5(IP.μυστική φράση). Παρακαλούμε σημειώστε ότι αυτό δεν είναι αξιόπιστο διότι η διεύθυνση IP μπορεί να αλλάζει και είναι συχνά κοινή για διαφορετικούς υπολογιστές.';
 $string['contentheader'] = 'Περιεχόμενο';
 $string['createurl'] = 'Δημιουργία μιας διεύθυνσης URL';
 $string['displayoptions'] = 'Διαθέσιμες επιλογές εμφάνισης';
 $string['displayselect'] = 'Εμφάνιση';
-$string['displayselectexplain'] = 'Επιλογή τύπου εμφάνισης. Δυστυχώς δεν είναι όλοι οι τύποι κατάλληλοι για όλες τις διευθύνσεις URL.';
 $string['displayselect_help'] = 'Αυτή η ρύθμιση, μαζί με τον τύπο αρχείου URL και αν ο περιηγητής επιτρέπει την ενσωμάτωση, καθορίζει τον τρόπο εμφάνισης της διεύθυνσης URL. Οι επιλογές μπορεί να περιλαμβάνουν:
 
 * Αυτόματη - Η επιλογή καλύτερης εμφάνισης για τη διεύθυνση URL επιλέγεται αυτόματα
@@ -44,18 +43,19 @@ $string['displayselect_help'] = 'Αυτή η ρύθμιση, μαζί με το�
 * Σε αναδυόμενο παράθυρο - Η διεύθυνση URL εμφανίζεται σε νέο παράθυρο περιηγητή χωρίς μενού ή γραμμή διεύθυνσης
 * Στο πλαίσιο - Η διεύθυνση URL εμφανίζεται σε ένα πλαίσιο κάτω από τη γραμμή πλοήγησης και περιγραφή της διεύθυνσης URL
 * Νέο παράθυρο - Η διεύθυνση URL εμφανίζεται σε ένα νέο παράθυρο περιηγητή με μενού και μια γραμμή διευθύνσεων';
+$string['displayselectexplain'] = 'Επιλογή τύπου εμφάνισης. Δυστυχώς δεν είναι όλοι οι τύποι κατάλληλοι για όλες τις διευθύνσεις URL.';
 $string['externalurl'] = 'Εξωτερική διεύθυνση URL';
 $string['framesize'] = 'Ύψος πλαισίου';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης διεύθυνσης URL';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο URL.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης διεύθυνσης URL';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τους πόρους Διεύθυνσης URL κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο URL.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος διεύθυνσης URL';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο URL.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος διεύθυνσης URL';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τους πόρους Διεύθυνσης URL κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο URL.';
 $string['invalidstoredurl'] = 'Αδυναμία προβολής αυτού του πόρου. Η διεύθυνση URL είναι μη έγκυρη.';
 $string['invalidurl'] = 'Η διεύθυνση URL που δόθηκε είναι μη έγκυρη.';
 $string['modulename'] = 'Διεύθυνση URL';

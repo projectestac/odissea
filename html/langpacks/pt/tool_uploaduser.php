@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'pt', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,12 +57,13 @@ $string['uploadpicture_cannotsave'] = 'Não é possível guardar imagens para o 
 $string['uploadpicture_cannotunzip'] = 'Não pode descompactar ficheiros de imagens.';
 $string['uploadpicture_invalidfilename'] = 'O ficheiro da imagem {$a} tem caracteres inválidos no seu nome. Ignorar.';
 $string['uploadpicture_overwrite'] = 'Substituir as imagens existentes dos utilizadores?';
-$string['uploadpictures'] = 'Carregar imagens de utilizadores';
-$string['uploadpictures_help'] = 'As imagens dos utilizadores podem ser carregadas como um ficheiro zip ou um ficheiro de imagem.Os ficheiros de imagem devem ser nomeados com extensão, por exemplo, user1234.jpg para um utilizador com o nome de utilizador user1234.';
 $string['uploadpicture_userfield'] = 'Informação do utilizador que identifica a imagem:';
 $string['uploadpicture_usernotfound'] = 'Não existe o utilizador com o valor \'{$a->uservalue}\' no campo \'{$a->userfield}\'. A saltar.';
 $string['uploadpicture_userskipped'] = 'Passar utilizador {$a} (já tem imagem).';
 $string['uploadpicture_userupdated'] = 'Imagem atualizada para o utilizador {$a}.';
+$string['uploadpictures'] = 'Carregar imagens de utilizadores';
+$string['uploadpictures_help'] = 'As imagens dos utilizadores podem ser carregadas como um ficheiro zip ou um ficheiro de imagem.Os ficheiros de imagem devem ser nomeados com extensão, por exemplo, user1234.jpg para um utilizador com o nome de utilizador user1234.';
+$string['uploaduser:uploaduserpictures'] = 'Carregar imagens de utilizador';
 $string['uploadusers'] = 'Carregar utilizadores';
 $string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalmente inscritos nas disciplinas) através de ficheiro de texto. O ficheiro deve ter o seguinte formato:
 
@@ -72,7 +73,6 @@ $string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalm
 * Os nomes dos campos obrigatórios são: username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'Pré-visualizar os utilizadores carregados';
 $string['uploadusersresult'] = 'Resultados dos utilizadores carregados';
-$string['uploaduser:uploaduserpictures'] = 'Carregar imagens de utilizador';
 $string['useraccountupdated'] = 'Utilizador atualizado';
 $string['useraccountuptodate'] = 'Sem alterações';
 $string['userdeleted'] = 'Utilizador apagados';

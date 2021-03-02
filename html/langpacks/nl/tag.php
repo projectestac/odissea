@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'nl', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -84,7 +84,7 @@ $string['managestandardtags'] = 'Beheer standaard tags';
 $string['managetagcolls'] = 'Beheer tag-collectie';
 $string['managetags'] = 'Beheer tags';
 $string['moretags'] = 'meer...';
-$string['name'] = 'Tag naam';
+$string['name'] = 'Tag-naam';
 $string['namesalreadybeeingused'] = 'Tag-naam is al in gebruik';
 $string['nameuseddocombine'] = 'De tag-naam is al in gebruik. Wil je deze tags combineren?';
 $string['newcollnamefor'] = 'Nieuwe naam voor tag-collectie {$a}';
@@ -102,16 +102,16 @@ $string['prevpage'] = 'Terug';
 $string['privacy:metadata:tag'] = 'De details van iedere, unieke tag worden samen met hun beschrijving en andere gerelateerde informatie bewaard';
 $string['privacy:metadata:tag:description'] = 'De beschrijving van de tag.';
 $string['privacy:metadata:tag:flag'] = 'Of een tag is gemarkeerd als niet geschikt.';
+$string['privacy:metadata:tag:name'] = 'De naam van de tag - dit is de genormaliseerde versie van de naam.';
+$string['privacy:metadata:tag:rawname'] = 'De naam van de tag - dit is de getoonde naam.';
+$string['privacy:metadata:tag:timemodified'] = 'De tijd dat de tag voor het laatst werd gewijzigd.';
+$string['privacy:metadata:tag:userid'] = 'Het ID van de gebruiker die de tag aanmaakte.';
 $string['privacy:metadata:taginstance'] = 'De link tussen iedere tag en waar deze wordt gebruikt.';
 $string['privacy:metadata:taginstance:ordering'] = 'De relatieve volgorde van deze tag.';
 $string['privacy:metadata:taginstance:tagid'] = 'De link naar de tag.';
 $string['privacy:metadata:taginstance:timecreated'] = 'De tijd dat deze tag gekoppeld werd met het doel.';
 $string['privacy:metadata:taginstance:timemodified'] = 'De tijd dat deze tag gewijzigd werd voor het doel.';
 $string['privacy:metadata:taginstance:tiuserid'] = 'Waar gedeelde inhoud individueel door gebruikers getagd kan worden, wordt de eigenaar van de tag-instantie bewaard.';
-$string['privacy:metadata:tag:name'] = 'De naam van de tag - dit is de genormaliseerde versie van de naam.';
-$string['privacy:metadata:tag:rawname'] = 'De naam van de tag - dit is de getoonde naam.';
-$string['privacy:metadata:tag:timemodified'] = 'De tijd dat de tag voor het laatst werd gewijzigd.';
-$string['privacy:metadata:tag:userid'] = 'Het ID van de gebruiker die de tag aanmaakte.';
 $string['ptags'] = 'Doot gebruiker gedefiniëerde tags (door komma\'s gescheiden lijst)';
 $string['relatedblogs'] = 'Meest recente blogs';
 $string['relatedtags'] = 'Gerelateerde tags';
@@ -127,7 +127,7 @@ $string['searchable'] = 'Doorzoekbaar';
 $string['searchable_help'] = 'Indien aangevinkt kunnen tags in deze collectie gevonden worden via de "Zoek tags"-pagina. Indien niet aangevinkt kunnen tags nog steeds gevonden worden via andere zoekpagina\'s';
 $string['searchresultsfor'] = 'Zoekresultaten voor "{$a}"';
 $string['searchtags'] = 'Zoek tags';
-$string['seeallblogs'] = 'Bekijk alle blogs met tag "{$a}"...';
+$string['seeallblogs'] = 'Bekijk alle blogs met tag "{$a}"';
 $string['select'] = 'Selecteer';
 $string['selectcoll'] = 'Selecteer tag-collectie';
 $string['selectmaintag'] = 'Selecteer de tag die gebruikt zal worden na het combineren';
@@ -147,15 +147,15 @@ $string['tag'] = 'Tag';
 $string['tagarea_blog_external'] = 'Externe blogberichten';
 $string['tagarea_course'] = 'Cursussen';
 $string['tagarea_course_modules'] = 'Activiteiten en bronnen';
+$string['tagarea_post'] = 'Blogberichten';
+$string['tagarea_user'] = 'Gebruikersinteresses';
 $string['tagareaenabled'] = 'Ingeschakeld';
 $string['tagareaname'] = 'Naam';
-$string['tagarea_post'] = 'Blogberichten';
 $string['tagareas'] = 'Tag-zones';
-$string['tagarea_user'] = 'Gebruikersinteresses';
 $string['tagcollection'] = 'Tag-collectie';
 $string['tagcollection_help'] = 'Tag-collecties zijn sets met tags voor verschillende zones. Zo kan bijvoorbeeld een collectie met standaard tags gebruikt worden om cursussen te taggen, met interesses van de gebruikers en tags voor blogberichten in een aparte collectie. Wanneer een gebruiker klikt op een tag, dan zal de pagina enkel items tonen met die tag in dezelfde collectie. Tags kunnen automatisch aan een collectie toegevoegd worden die overeen komen met de getagde zone of kunnen manueel als standaard-tags toegevoegd worden.';
 $string['tagcollections'] = 'Tag-collectie';
-$string['tagdescription'] = 'Tag beschrijving';
+$string['tagdescription'] = 'Tag-beschrijving';
 $string['tags'] = 'Tags';
 $string['tagsaredisabled'] = 'Tags zijn uitgeschakeld';
 $string['thingstaggedwith'] = ' "{$a->name}" is {$a->count}  keer gebruikt';

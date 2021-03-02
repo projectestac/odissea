@@ -56,7 +56,7 @@ function local_alexandriaimporter_extend_navigation_course(navigation_node $pare
         $icon = new pix_icon('i/import', "");
         $node = navigation_node::create(get_string('importfromalexandria', 'local_alexandriaimporter'), $url,
             navigation_node::TYPE_SETTING, null, get_string('importfromalexandria', 'local_alexandriaimporter'), $icon);
-        $parentnode->add_node($node, 'publish');
+        $parentnode->add_node($node);
     }
 
 }

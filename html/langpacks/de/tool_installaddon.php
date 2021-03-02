@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_installaddon', language 'de', version '3.8'.
  *
- * @package   tool_installaddon
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_installaddon
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,10 +33,10 @@ $string['installaddons'] = 'Plugin installieren';
 $string['installfromrepo'] = 'Plugin aus der Plugin-Datenbank installieren';
 $string['installfromrepo_help'] = 'Sie werden mit der Plugin-Datenbank von Moodle verbunden, um ein Plugin zu suchen und zu installieren. Beachten Sie, dass der vollständige Name der Website, die URL und die Version Ihrer Moodle-Instanz übertragen wird.';
 $string['installfromzip'] = 'Plugin aus einer ZIP-Datei installieren';
+$string['installfromzip_help'] = 'Alternativ zum Download aus der Plugin-Datenbank von Moodle kann auch ein ZIP-Paket hochgeladen werden. Das ZIP-Paket muss die gleiche Struktur aufweisen wie ein Paket aus der Plugin-Datenbank.';
 $string['installfromzipfile'] = 'ZIP-Datei';
 $string['installfromzipfile_help'] = 'Das Plugin-Installationspaket muss genau ein Verzeichnis enthalten, das zum Plugin-Namen passt. Das Paket wird an einem dem Plugin-Typ entsprechenden Ort entpackt. Falls das Paket aus der Plugin-Datenbank von Moodle heruntergeladen wurde, ist die Struktur in Ordnung.';
-$string['installfromzip_help'] = 'Alternativ zum Download aus der Plugin-Datenbank von Moodle kann auch ein ZIP-Paket hochgeladen werden. Das ZIP-Paket muss die gleiche Struktur aufweisen wie ein Paket aus der Plugin-Datenbank.';
-$string['installfromzipinvalid'] = 'Das Plugin-Installationspaket muss genau ein Verzeichnis enthalten, das zum Plugin-Namen passt. Die Datei ist kein Plugin-Installationspaket.';
+$string['installfromzipinvalid'] = 'Das Installationspaket muss genau ein Verzeichnis enthalten, das zum Plugin-Namen passt. Diese Datei ist kein gültiges Installationspaket für ein Plugin.';
 $string['installfromziprootdir'] = 'Hauptverzeichnis umbenennen';
 $string['installfromziprootdir_help'] = 'Einige ZIP-Pakete, z.B. wenn sie aus Github erzeugt wurden, können einen falschen Namen für das Hauptverzeichnis enthalten. Wenn dies der Fall ist, geben Sie hier den richtigen Namen ein.';
 $string['installfromzipsubmit'] = 'Plugin installieren';

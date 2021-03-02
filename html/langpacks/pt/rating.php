@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'rating', language 'pt', version '3.8'.
  *
- * @package   rating
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     rating
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,9 +43,8 @@ $string['aggregatetype_help'] = 'O tipo de avaliação define a forma como as no
 Se selecionar \'Sem avaliação\', a atividade não aparece na pauta.';
 $string['allowratings'] = 'Permitir avaliação?';
 $string['allratingsforitem'] = 'Todas as avaliações submetidas';
-$string['capabilitychecknotavailable'] = 'Não é possível verificar as permissões enquanto a atividade não for guardada';
+$string['capabilitychecknotavailable'] = 'Não pode verificar as permissões enquanto a atividade não for gravada';
 $string['couldnotdeleteratings'] = 'Não é possível ser apagado pois já existem avaliações';
-$string['grade_rating_name'] = 'Avaliação';
 $string['norate'] = 'Não é permitido avaliar!';
 $string['noratings'] = 'Não foram submetidas avaliações';
 $string['noviewanyrate'] = 'Apenas pode consultar os resultados dos items que criou';

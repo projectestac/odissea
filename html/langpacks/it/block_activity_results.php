@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_activity_results', language 'it', version '3.8'.
  *
- * @package   block_activity_results
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_activity_results
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,8 +43,8 @@ $string['config_no_activities_in_course'] = 'In questo corso al momento non sono
 $string['config_select_activity'] = 'Attività dalla quale trarre i risultati da visualizzare';
 $string['config_show_best'] = 'Numero di valutazioni più alte (0 per disabilitare)';
 $string['config_show_worst'] = 'Numero di valutazioni più basse (0 per disabilitare)';
-$string['configuredtoshownothing'] = 'La configurazione impostata non consente la visualizzazione di nessuna valutazione.';
 $string['config_use_groups'] = 'Visualizza i gruppi al posto degli studenti (solo se l\'attività supporta i gruppi)';
+$string['configuredtoshownothing'] = 'La configurazione impostata non consente la visualizzazione di nessuna valutazione.';
 $string['defaultdecimalplaces'] = 'Cifre decimali';
 $string['defaultdecimalplaces_desc'] = 'Numero di cifre decimale visualizzati di default';
 $string['defaultgradedisplay'] = 'Visualizza valutazioni come';

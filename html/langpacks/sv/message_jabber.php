@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,27 +12,28 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_jabber', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message_jabber', language 'sv', version '3.8'.
  *
- * @package   message_jabber
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message_jabber
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configjabberhost'] = 'Den server som ska kontaktas för att sända meddelanden till jabber.';
-$string['configjabberpassword'] = 'Det lösenord som ska användas vid kontakt med jabber-servern.';
+$string['configjabberhost'] = 'Den server som ansluts till för att skicka Jabber-meddelanden.';
+$string['configjabberpassword'] = 'Lösenord för att ansluta till Jabber-servern.';
 $string['configjabberport'] = ' Den port som ska användas vid kontakt med jabber-servern.';
 $string['configjabberserver'] = 'Värd ID för MPP (detta kan lämnas tomt om det är det samma som jabber-värden)';
 $string['jabberhost'] = 'Jabber värd';
 $string['jabberid'] = 'Jabber-ID';
-$string['jabberpassword'] = 'Jabber lösenord';
+$string['jabberpassword'] = 'Jabber-lösenord';
 $string['jabberport'] = 'Jabber port';
 $string['jabberserver'] = 'Jabber server';
-$string['jabberusername'] = 'Jabber användarnamn';
+$string['jabberusername'] = 'Jabber-användarnamn';
 $string['notconfigured'] = 'Jabber-servern har inte konfigurerats så Jabber-meddelanden kan inte skickas. (Denna används för närvarande inte.)';
-$string['pluginname'] = 'Jabber-meddelande';
+$string['pluginname'] = 'Jabber';

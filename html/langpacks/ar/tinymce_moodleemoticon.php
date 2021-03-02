@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_moodleemoticon', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tinymce_moodleemoticon', language 'ar', version '3.8'.
  *
- * @package   tinymce_moodleemoticon
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tinymce_moodleemoticon
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['moodleemoticon:desc'] = 'أدرج التعبيرات';
-$string['pluginname'] = 'إدراج التعبيرات';
-$string['privacy:metadata'] = 'إن ملحق الرموز التعبيرية لمودل في TinyMCE لا يخزن أي بيانات شخصية.';
-$string['requireemoticon'] = 'يتطلب منقح التعابير الرمزية';
-$string['requireemoticon_desc'] = 'إذا مكّن، سيكون زر التعبيرات مرئيا فقط عندما يتم تمكين تصفية التعبيرات في سياق المحرر.';
+$string['pluginname'] = 'أدرج التعبيرات';
+$string['privacy:metadata'] = 'البرنامج المساعد Moodle Emoticon TinyMCE لا يخزن أي بيانات شخصية.';
+$string['requireemoticon'] = 'يتطلب تصفية التعبيرات';
+$string['requireemoticon_desc'] = 'إذا مكّن، سيكون زر التعبيرات مرئيًا فقط عند تمكين منقح التعبيرات في سياق المحرر.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_completion_progress', language 'de', version '3.8'.
  *
- * @package   block_completion_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_completion_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -79,11 +79,11 @@ $string['no_activities_config_message'] = 'Es gibt keine Aktivitäten oder Resso
 $string['no_activities_message'] = 'Es werden keine Aktivitäten oder Ressourcen beobachtet. Stellen Sie dies in den Einstellungen ein.';
 $string['no_blocks'] = 'Es ist kein Block \'Fortschrittsbalken\' für Ihre Kurse aktiviert.';
 $string['no_courses'] = 'Sie sind in keine Kurse eingeschrieben. Es wird nur der Bearbeitungsfortschritt von Kursen angezeigt, in die Sie eingeschrieben sind.';
-$string['not_all_expected_set'] = 'Nicht alle Aktivitäten mit aktivierter Abschlussverfolgung haben ein \'{$a}\'-Datum gesetzt.';
+$string['no_visible_activities_message'] = 'Keine der überwachten Aktivitäten ist derzeit sichtbar.';
 $string['notCompleted_colour'] = '#C71C22';
 $string['notCompleted_colour_descr'] = 'HTML-Farbcode für die aktuelle Elemente, die noch nicht abgeschlossen sind.';
 $string['notCompleted_colour_title'] = 'Farbe für nicht-abgeschlossen';
-$string['no_visible_activities_message'] = 'Keine der überwachten Aktivitäten ist derzeit sichtbar.';
+$string['not_all_expected_set'] = 'Nicht alle Aktivitäten mit aktivierter Abschlussverfolgung haben ein \'{$a}\'-Datum gesetzt.';
 $string['now_indicator'] = 'JETZT';
 $string['overview'] = 'Überblick Teilnehmer/innen';
 $string['pluginname'] = 'Fortschrittsbalken';

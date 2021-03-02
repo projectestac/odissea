@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'en', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -70,15 +70,15 @@ $string['evaluate'] = 'Evaluate';
 $string['evaluatemodel'] = 'Evaluate model';
 $string['evaluationinbatches'] = 'The site contents are calculated and stored in batches. The evaluation process may be stopped at any time. The next time it is run, it will continue from the point when it was stopped.';
 $string['evaluationmode'] = 'Evaluation mode';
-$string['evaluationmodecolconfiguration'] = 'Configuration';
-$string['evaluationmodecoltrainedmodel'] = 'Trained model';
-$string['evaluationmodeconfiguration'] = 'Evaluate the model configuration';
 $string['evaluationmode_help'] = 'There are two evaluation modes:
 
 * Trained model -  Site data is used as testing data to evaluate the accuracy of the trained model.
 * Configuration - Site data is split into training and testing data, to both train and test the accuracy of the model configuration.
 
 Trained model is only available if a trained model has been imported into the site, and has not yet been re-trained using site data.';
+$string['evaluationmodecolconfiguration'] = 'Configuration';
+$string['evaluationmodecoltrainedmodel'] = 'Trained model';
+$string['evaluationmodeconfiguration'] = 'Evaluate the model configuration';
 $string['evaluationmodeinfo'] = 'This model has been imported into the site. You can either evaluate the performance of the model, or you can evaluate the performance of the model configuration using site data.';
 $string['evaluationmodetrainedmodel'] = 'Evaluate the trained model';
 $string['executescheduledanalysis'] = 'Execute scheduled analysis';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'nl', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -71,14 +71,14 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'Het tijdstip waar
 $string['privacy:metadata:grading_definitions:timemodified'] = 'Het tijdstip waarop de beoordelingsdefinitie laatst werd gewijzigd.';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'De ID van de gebruiker die deze beoordelingsdefinitie gemaakt heeft.';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'De ID van de gebruiker die deze beoordelingsdefinitie laatst gewijzigd heeft.';
-$string['privacy:metadata:gradingformpluginsummary'] = 'Gegevens voor de beoordelingsmethode.';
-$string['privacy:metadata:grading_instances'] = 'Beoordelingsrecord voor een degradeerbaar artikel beoordeeld door één beoordelaar';
+$string['privacy:metadata:grading_instances'] = 'Beoordelingsrecord voor een degradeerbaar artikel beoordeeld door één beoordelaar.';
 $string['privacy:metadata:grading_instances:feedback'] = 'De feedback gegeven door de gebruiker.';
-$string['privacy:metadata:grading_instances:feedbackformat'] = 'Het tekstformaat van de feedback gegeven door de gebruiker';
+$string['privacy:metadata:grading_instances:feedbackformat'] = 'Het tekstformaat van de feedback gegeven door de gebruiker.';
 $string['privacy:metadata:grading_instances:raterid'] = 'De ID van de gebruiker die de beoordeling instantie heeft beoordeeld.';
 $string['privacy:metadata:grading_instances:rawgrade'] = 'Het cijfer voor de beoordeling instantie';
 $string['privacy:metadata:grading_instances:status'] = 'De status van deze beoordeling instantie';
 $string['privacy:metadata:grading_instances:timemodified'] = 'Het tijdstip waarop de  beoordeling instantie voor het laatst is gewijzigd.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Gegevens voor de beoordelingsmethode.';
 $string['searchownforms'] = 'voeg mijn eigen formulieren toe';
 $string['searchtemplate'] = 'Beoordelingsformulieren zoeken';
 $string['searchtemplate_help'] = 'Je kunt zoeken naar een beoordelingsformulier en het hier als sjabloon gebruiken voor een nieuw beoordelingsformulier. Typ woorden die in de formuliernaam, de beschrijving of in het formulier zelf zouden moeten voorkomen. Om een zin te zoeken, plaats je de woorden tussen dubbele aanhalingstekens.

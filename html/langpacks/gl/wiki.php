@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'gl', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -77,7 +77,7 @@ $string['editblocks'] = 'Activar a edición de bloques';
 $string['editcomment'] = 'Editar comentario';
 $string['editfiles'] = 'Editar ficheiros do wiki';
 $string['editing'] = 'Editando unha páxina wiki';
-$string['editingcomment'] = 'Editar comentario';
+$string['editingcomment'] = 'Editando comentario';
 $string['editingpage'] = 'Editando esta páxina «{$a}»';
 $string['editsection'] = 'editar';
 $string['eventdiffviewed'] = 'Diferenza do wiki visto';
@@ -99,14 +99,14 @@ $string['firstpagetitle_help'] = 'Título da primeira páxina do wiki.';
 $string['forceformat'] = 'Forzar o formato';
 $string['forceformat_help'] = 'Se forza o formato (caixiña marcada), non haberá opción para escoller un formato cando se edite a páxina wiki.';
 $string['format'] = 'Formato';
+$string['format_help'] = '* HTML - O editor HTML está dispoñíbel
+* Creole - Linguaxe común de marcas wiki que ten dispoñíbel unha pequena barra de ferramentas de edición
+* Nwiki - Linguaxe de marcas semellante ao Mediawiki usado no módulo Nwiki';
 $string['formatcreole'] = 'Formato Creoulo';
 $string['formatcreole_help'] = 'Creole é unha linguaxe común para editar wiki cunha barra de ferramentas de edición para a inserción das marcas apropiadas.
 
 Para crear unha páxina nova, escriba o nome da nova páxina encerrada entre  dobres corchetes, por exemplo [[Páxina 2]].';
 $string['formatcreole_link'] = 'mod/wiki/creole';
-$string['format_help'] = '* HTML - O editor HTML está dispoñíbel
-* Creole - Linguaxe común de marcas wiki que ten dispoñíbel unha pequena barra de ferramentas de edición
-* Nwiki - Linguaxe de marcas semellante ao Mediawiki usado no módulo Nwiki';
 $string['formathtml'] = 'Formato HTML';
 $string['formathtml_help'] = 'Pode utilizar o editor de HTML para darlle formato ao contido.
 
@@ -124,15 +124,15 @@ $string['incorrectpageid'] = 'O ID da páxina non é correcto.';
 $string['incorrectsubwikiid'] = 'O ID do subwiki non é correcto.';
 $string['incorrectwikiid'] = 'O ID do wiki non é correcto.';
 $string['indicator:cognitivedepth'] = 'Wiki cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de wiki.';
 $string['indicator:cognitivedepthdef'] = 'Wiki cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen as actividades de Wiki durante este intervalo de análise (Niveis = Sen vista, Ver)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nunha actividade de wiki.';
 $string['indicator:socialbreadth'] = 'Wiki social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nunha actividade de wiki.';
 $string['indicator:socialbreadthdef'] = 'Wiki social';
 $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen as actividades de Wiki durante este intervalo de análise (Niveis = Sen participación, Participante en solitario, Participante con outros)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nunha actividade de wiki.';
 $string['individualpagedoesnotexist'] = 'A páxina individual do wiki non existe';
 $string['insertcomment'] = 'Inserir un comentario';
 $string['insertimage'] = 'Inserir unha imaxe...';
@@ -204,17 +204,17 @@ $string['orphaned'] = 'Páxinas orfas';
 $string['orphaned_help'] = 'Lista de páxinas que non están ligadas desde outras páxinas';
 $string['overridelocks'] = 'Anular bloqueos';
 $string['overridinglocks'] = 'Anulando bloqueos...';
+$string['page-mod-wiki-comments'] = 'Páxina de comentarios do módulo wiki';
+$string['page-mod-wiki-history'] = 'Páxina do historial do wiki';
+$string['page-mod-wiki-map'] = 'Páxina do mapa do wiki';
+$string['page-mod-wiki-view'] = 'Páxina principal do módulo wiki';
+$string['page-mod-wiki-x'] = 'Calquera páxina do módulo wiki';
 $string['pageexists'] = 'Esta páxina xa existe. Está sendo redireccionando.';
 $string['pageindex'] = 'Índice da páxina';
 $string['pageindex_help'] = 'Árbore desta páxina wiki';
 $string['pageislocked'] = 'Alguén está editando esta páxina neste momento. Tente editala de aquí a uns minutos.';
 $string['pagelist'] = 'Lista de páxinas';
 $string['pagelist_help'] = 'Lista de páxinas categorizadas por orde alfabética';
-$string['page-mod-wiki-comments'] = 'Páxina de comentarios do módulo wiki';
-$string['page-mod-wiki-history'] = 'Páxina do historial do wiki';
-$string['page-mod-wiki-map'] = 'Páxina do mapa do wiki';
-$string['page-mod-wiki-view'] = 'Páxina principal do módulo wiki';
-$string['page-mod-wiki-x'] = 'Calquera páxina do módulo wiki';
 $string['pagename'] = 'Nome da páxina';
 $string['peerreview'] = 'Revisión por pares';
 $string['pluginadministration'] = 'Administración do wiki';
@@ -250,8 +250,8 @@ $string['privacy:metadata:wiki_versions:version'] = 'Número de versión';
 $string['rated'] = 'Vostede puntuou esta páxina como {$a}';
 $string['rating'] = 'Puntuación';
 $string['ratingmode'] = 'Modo de puntuación';
-$string['removeallwikitags'] = 'Eliminar todas as etiquetas wiki';
-$string['removepages'] = 'Eliminar páxinas';
+$string['removeallwikitags'] = 'Retirar todas as etiquetas wiki';
+$string['removepages'] = 'Retirar páxinas';
 $string['reparsetimeout'] = 'Analizando de novo o tempo límite predeterminado';
 $string['repeatedsection'] = 'Erro no wiki: Non pode repetir o nome da sección «{$a}»';
 $string['restore'] = 'Restaurar';
@@ -294,11 +294,17 @@ $string['viewperpage'] = 'Amosar {$a} versións por páxina';
 $string['viewversion'] = 'Vendo a versión nº {$a} da páxina';
 $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Engadir un novo wiki';
-$string['wikiattachments'] = 'Anexos wiki';
-$string['wikiboldtext'] = 'Texto en negra';
 $string['wiki:createpage'] = 'Crear novas páxinas wiki';
 $string['wiki:editcomment'] = 'Engadir comentarios nas páxinas';
 $string['wiki:editpage'] = 'Gardar as páxinas wiki';
+$string['wiki:managecomment'] = 'Administrar os comentarios da wiki';
+$string['wiki:managefiles'] = 'Administrar os ficheiros da wiki';
+$string['wiki:managewiki'] = 'Administrar os axustes da wiki';
+$string['wiki:overridelock'] = 'Ignorar páxinas bloqueadas';
+$string['wiki:viewcomment'] = 'Ver os comentarios da páxina';
+$string['wiki:viewpage'] = 'Ver as páxinas wiki';
+$string['wikiattachments'] = 'Anexos wiki';
+$string['wikiboldtext'] = 'Texto en negra';
 $string['wikiexternalurl'] = 'URL externo';
 $string['wikifiles'] = 'Ficheiros do wiki';
 $string['wikifiletable'] = 'Lista de ficheiros enviados';
@@ -309,21 +315,15 @@ $string['wikiinternalurl'] = 'Ligazón interna';
 $string['wikiintro'] = 'Descrición';
 $string['wikiitalictext'] = 'Texto en cursiva';
 $string['wikilockingsettings'] = 'Bloqueando e analizando de novo o tempo límite';
-$string['wiki:managecomment'] = 'Administrar os comentarios da wiki';
-$string['wiki:managefiles'] = 'Administrar os ficheiros da wiki';
-$string['wiki:managewiki'] = 'Administrar os axustes da wiki';
 $string['wikimode'] = 'Modo wiki';
-$string['wikimodecollaborative'] = 'Wiki colaborativa';
 $string['wikimode_help'] = 'O modo wiki determina se calquera pode editar a wiki (wiki colaborativa) ou se cada quen ten a súa propia wiki, que só esa persoa pode editar (wiki individual).';
+$string['wikimodecollaborative'] = 'Wiki colaborativa';
 $string['wikimodeindividual'] = 'Wiki individual';
-$string['wikiname'] = 'Nome da páxina';
+$string['wikiname'] = 'Nome do wiki';
 $string['wikinowikitext'] = 'Non hai texto no wiki';
 $string['wikiorderedlist'] = 'Lista ordenada';
-$string['wiki:overridelock'] = 'Ignorar páxinas bloqueadas';
 $string['wikipages'] = 'Páxinas do wiki';
 $string['wikisettings'] = 'Axustes do wiki';
 $string['wikiunorderedlist'] = 'Lista sen ordenadar';
-$string['wiki:viewcomment'] = 'Ver os comentarios da páxina';
-$string['wiki:viewpage'] = 'Ver as páxinas wiki';
 $string['wrongversionlock'] = 'Outro usuario editou esta páxina mentres vostede estaba editando, o seu contido é obsoleto.';
 $string['wrongversionsave'] = 'Outro usuario creou unha versión mentres vostede estaba editando e vostede sobrescribiu os seus cambios. Comprobe o historial da páxina.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_wiris', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filter_wiris', language 'en', version '3.8'.
  *
- * @package   filter_wiris
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filter_wiris
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,9 @@ $string['connectionsettings_text'] = '';
 $string['contact'] = 'For more information or if you have any doubt contact WIRIS Support:';
 $string['disabled'] = 'Disabled';
 $string['editormodalwindow'] = 'Modal window enabled';
+$string['editormodalwindow_help'] = '';
 $string['editormodalwindowfullscreen'] = 'Modal window in full-screen mode';
 $string['editormodalwindowfullscreen_help'] = 'Specifies if the modal window should be opened in full-screen mode.';
-$string['editormodalwindow_help'] = '';
 $string['editornameexpected'] = 'Editor name is expected';
 $string['editorsettings'] = 'Editor settings';
 $string['editorsettings_text'] = '';
@@ -55,10 +55,10 @@ $string['enabled'] = 'Enabled';
 $string['error'] = 'ERROR';
 $string['errordeletingcache'] = 'Error deleting cache on {$a} area';
 $string['errorsavingcache'] = 'Error saving cache on {$a} area';
-$string['filtermustbeinstalled'] = 'Filter must be installed in Moodle filter folder.';
-$string['filtername'] = 'MathType by WIRIS';
 $string['filter_standalone'] = 'MathType filter only';
 $string['filter_standalonedesc'] = 'You will be able to display existing formulas but creation of new formulas is not available. It also removes the warning message.';
+$string['filtermustbeinstalled'] = 'Filter must be installed in Moodle filter folder.';
+$string['filtername'] = 'MathType by WIRIS';
 $string['furtherinformation'] = 'For further information see our documentation page';
 $string['havesameversion'] = 'have the same version';
 $string['imageformat'] = 'Image format';

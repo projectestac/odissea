@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_email', language 'el', version '3.8'.
  *
- * @package   auth_email
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_email
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,5 +30,5 @@ $string['auth_emailnoemail'] = 'Έγινε προσπάθεια να σας στ
 $string['auth_emailrecaptcha'] = 'Προσθέτει ένα στοιχείο φόρμας οπτικής/ηχητικής επιβεβαίωσης στη σελίδα εγγραφής για αυτο-καταχώρηση χρηστών με χρήση ηλε.ταχυδρομείου. Αυτό προστατεύει τον ιστότοπό σας από τους ανεπιθύμητους χρήστες. Για περισσότερες λεπτομέρειες, δείτε στο http://www.google.com/recaptcha.';
 $string['auth_emailrecaptcha_key'] = 'Ενεργοποίηση του στοιχείου reCAPTCHA';
 $string['auth_emailsettings'] = 'Ρυθμίσεις';
-$string['pluginname'] = 'Αυτο-καταχώρηση βασισμένη στο ηλε.ταχυδρομείο';
+$string['pluginname'] = 'Αυτο-καταχώρηση βασισμένη στο ηλε.ταχυδρομείο.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Αυθεντικοποίηση με βάση την διεύθυνση ηλε.ταχυδρομείου για αυτο-καταχώρηση» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

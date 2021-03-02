@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'ko', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,9 +58,9 @@ $string['component'] = '구성요소';
 $string['confirmlockdeletion'] = '잠금 삭제 확인';
 $string['confirmstoredeletion'] = '스토어 삭제 확인';
 $string['default_application'] = '기본 어플리케이션 스토어';
-$string['defaultmappings'] = '매핑이 존재하지 않으면 스토어가 사용됩니다.';
 $string['default_request'] = '기본 요청 스토어';
 $string['default_session'] = '기본 세션 스토어';
+$string['defaultmappings'] = '매핑이 존재하지 않으면 스토어가 사용됩니다.';
 $string['defaultstoreactions'] = '기본 스토어는 수정될 수 없습니다.';
 $string['definition'] = '정의';
 $string['definitionsummaries'] = '알려진 캐시 정의';
@@ -116,17 +116,17 @@ $string['set'] = '세트';
 $string['sharing'] = '공유';
 $string['sharing_all'] = '모두';
 $string['sharing_input'] = '맞춤 키(아래 입력됨)';
+$string['sharing_siteid'] = '같은 사이트 아이디를 가지고 있는 사이트';
+$string['sharing_version'] = '같은 버전을 사용하고 있는 사이트';
 $string['sharingrequired'] = '최소 한개의 공유 옵션을 선택해야 합니다.';
 $string['sharingselected_all'] = '모두';
 $string['sharingselected_input'] = '맞춤 키';
 $string['sharingselected_siteid'] = '사이트 식별자';
 $string['sharingselected_version'] = '버전';
-$string['sharing_siteid'] = '같은 사이트 아이디를 가지고 있는 사이트';
-$string['sharing_version'] = '같은 버전을 사용하고 있는 사이트';
-$string['storeconfiguration'] = '스토어 구성';
 $string['store_default_application'] = '어플리케이션 캐시를 위한 기본 파일 스토어';
 $string['store_default_request'] = '요청 캐시를 위한 기본 정적 스토어';
 $string['store_default_session'] = '세션 캐시를 위한 기본 세션 스토어';
+$string['storeconfiguration'] = '스토어 구성';
 $string['storename'] = '스토어 이름';
 $string['storenamealreadyused'] = '이 스토어에 대한 유일한 이름을 선택해야 합니다.';
 $string['storenameinvalid'] = '잘못된 스토어 이름. a-z A-Z 0-9 - _ 및 공백을 사용할 수 있습니다.';

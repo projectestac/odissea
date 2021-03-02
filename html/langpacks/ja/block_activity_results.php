@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_activity_results', language 'ja', version '3.8'.
  *
- * @package   block_activity_results
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_activity_results
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,8 +43,8 @@ $string['config_no_activities_in_course'] = 'このコースにはまだ活動�
 $string['config_select_activity'] = 'どの活動の結果をこのブロックで表示しますか?';
 $string['config_show_best'] = '何件の最高評点を表示しますか (0 = 無効) ?';
 $string['config_show_worst'] = '何件の最低評点を表示しますか (0 = 無効) ?';
-$string['configuredtoshownothing'] = '現在、このブロックの設定では結果の表示は許可されていません。';
 $string['config_use_groups'] = '学生の代わりにグループを表示しますか (活動がグループをサポートしている場合のみ)?';
+$string['configuredtoshownothing'] = '現在、このブロックの設定では結果の表示は許可されていません。';
 $string['defaultdecimalplaces'] = '小数位';
 $string['defaultdecimalplaces_desc'] = 'デフォルトで表示する小数位桁数です。';
 $string['defaultgradedisplay'] = '評点表示方法';

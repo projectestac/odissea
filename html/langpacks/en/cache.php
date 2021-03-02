@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'en', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,13 +41,13 @@ $string['cachedef_capabilities'] = 'System capabilities list';
 $string['cachedef_completion'] = 'Activity completion status';
 $string['cachedef_config'] = 'Config settings';
 $string['cachedef_contextwithinsights'] = 'Context with insights';
+$string['cachedef_course_user_dates'] = 'The user dates for courses set to relative dates mode';
 $string['cachedef_coursecat'] = 'Course categories lists for particular user';
 $string['cachedef_coursecatrecords'] = 'Course categories records';
 $string['cachedef_coursecattree'] = 'Course categories tree';
 $string['cachedef_coursecompletion'] = 'Course completion status';
 $string['cachedef_coursecontacts'] = 'List of course contacts';
 $string['cachedef_coursemodinfo'] = 'Accumulated information about modules and sections for each course';
-$string['cachedef_course_user_dates'] = 'The user dates for courses set to relative dates mode';
 $string['cachedef_databasemeta'] = 'Database meta information';
 $string['cachedef_eventinvalidation'] = 'Event invalidation';
 $string['cachedef_externalbadges'] = 'External badges for particular user';
@@ -87,10 +87,10 @@ $string['component'] = 'Component';
 $string['confirmlockdeletion'] = 'Confirm lock deletion';
 $string['confirmstoredeletion'] = 'Confirm store deletion';
 $string['default_application'] = 'Default application store';
-$string['defaultmappings'] = 'Stores used when no mapping is present';
-$string['defaultmappings_help'] = 'These are the default stores that will be used if you don\'t map one or more stores to the cache definition.';
 $string['default_request'] = 'Default request store';
 $string['default_session'] = 'Default session store';
+$string['defaultmappings'] = 'Stores used when no mapping is present';
+$string['defaultmappings_help'] = 'These are the default stores that will be used if you don\'t map one or more stores to the cache definition.';
 $string['defaultstoreactions'] = 'Default stores cannot be modified';
 $string['definition'] = 'Definition';
 $string['definitionsummaries'] = 'Known cache definitions';
@@ -158,20 +158,20 @@ $string['sharing'] = 'Sharing';
 $string['sharing_all'] = 'Everyone.';
 $string['sharing_help'] = 'This allows you to determine how the cache data can be shared if you have a clustered setup, or if you have multiple sites all set up with the same store and wish to share the data. This is an advanced setting please make sure you understand its purpose before changing it.';
 $string['sharing_input'] = 'Custom key (entered below)';
+$string['sharing_siteid'] = 'Sites with the same site id.';
+$string['sharing_version'] = 'Sites running the same version.';
 $string['sharingrequired'] = 'You must select at least one sharing option.';
 $string['sharingselected_all'] = 'Everyone';
 $string['sharingselected_input'] = 'Custom key';
 $string['sharingselected_siteid'] = 'Site identifier';
 $string['sharingselected_version'] = 'Version';
-$string['sharing_siteid'] = 'Sites with the same site id.';
-$string['sharing_version'] = 'Sites running the same version.';
-$string['storeconfiguration'] = 'Store configuration';
 $string['store_default_application'] = 'Default file store for application caches';
 $string['store_default_request'] = 'Default static store for request caches';
 $string['store_default_session'] = 'Default session store for session caches';
+$string['storeconfiguration'] = 'Store configuration';
 $string['storename'] = 'Store name';
-$string['storenamealreadyused'] = 'You must choose a unique name for this store.';
 $string['storename_help'] = 'This sets the store name. It is used to identify the store within the system and can only consist of a-z A-Z 0-9 -_ and spaces. It also must be unique. If you attempt to use a name that has already been used you will receive an error.';
+$string['storenamealreadyused'] = 'You must choose a unique name for this store.';
 $string['storenameinvalid'] = 'Invalid store name. You can only use a-z A-Z 0-9 -_ and spaces.';
 $string['storenotready'] = 'Store not ready';
 $string['storeperformance'] = 'Cache store performance reporting - {$a} unique requests per operation.';

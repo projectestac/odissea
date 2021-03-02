@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hotpot', language 'eu', version '3.8'.
  *
- * @package   hotpot
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hotpot
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -91,6 +91,7 @@ $string['confirmdeleteattempts'] = 'Ziur al zaude saiakera hauek ezabatu nahi di
 $string['confirmstop'] = 'Ziur zaude orri honetatik irten nahi duzula?';
 $string['correct'] = 'Zuzena';
 $string['couldnotinsertsubmissionform'] = 'Ezin izan da bidalketa formularioa txertatu';
+$string['d_index'] = 'Diskriminazio-indizea';
 $string['delay1'] = '1. atzerapena';
 $string['delay1_help'] = 'Lehen eta bigarren saiakeren arteko gutxieneko atzerapena';
 $string['delay1summary'] = 'Lehen eta bigarren saiakeren arteko atzerapen denbora';
@@ -100,13 +101,12 @@ $string['delay2summary'] = 'Bigarren saiakeraren osteko saiakeren arteko atzerap
 $string['delay3'] = '3. atzerapena';
 $string['delay3afterok'] = 'Itxaron ikasleek OK sakatu arte';
 $string['delay3disable'] = 'Ez jarraitu automatikoki';
-$string['delay3specific'] = 'Erabili denbora jakin bat (segundutan)';
+$string['delay3specific'] = 'Erabili denbora jakin bat';
 $string['delay3summary'] = 'Galdetegiaren bukaerako atzerapen denbora';
 $string['delay3template'] = 'Jatorri/Txantiloi fitxategiko ezarpenak erabili';
 $string['deleteallattempts'] = 'Ezabatu saiakera guztiak';
 $string['deleteattempts'] = 'Ezabatu saiakerak';
 $string['detailsrecords'] = 'HotPot erregistroen xehetasunak';
-$string['d_index'] = 'Diskriminazio-indizea';
 $string['duration'] = 'Iraupena';
 $string['enablecache'] = 'Gaitu HotPot-en cache-a';
 $string['enablecron'] = 'Gaitu HotPot-en cron-a';
@@ -114,59 +114,59 @@ $string['enablemymoodle'] = 'Erakutsi HotPot-ak Nire Moodlen';
 $string['enableobfuscate'] = 'Media Player koderako kapsulazioa gaitu';
 $string['enableswf'] = 'HotPot jardueretan SWF fitxategiak txertatzea baimendu';
 $string['entry_attempts'] = 'Saiakerak';
+$string['entry_dates'] = 'Datak';
+$string['entry_grading'] = 'Kalifikazioa';
+$string['entry_title'] = 'Unitatearen izena titulu gisa';
 $string['entrycm'] = 'Aurreko jarduera';
 $string['entrycmcourse'] = 'Aurreko jarduera ikastaro honetan';
 $string['entrycmsection'] = 'Aurreko jarduera ikastaro-atal honetan';
 $string['entrycompletionwarning'] = 'Jarduera hau has aurretik, {$a} begiratu behar duzu.';
-$string['entry_dates'] = 'Datak';
 $string['entrygrade'] = 'Aurreko jardueraren kalifikazioa';
-$string['entry_grading'] = 'Kalifikazioa';
 $string['entryhotpotcourse'] = 'Aurreko HotPot-a ikastaro honetan';
 $string['entryhotpotsection'] = 'Aurreko HotPot-a ikastaro-atal honetan';
 $string['entryoptions'] = 'Sarrera-orriaren aukerak';
 $string['entrypage'] = 'Erakutsi sarrera-orria';
 $string['entrypagehdr'] = 'Sarrera-orria';
 $string['entrytext'] = 'Sarrera-orriaren testua';
-$string['entry_title'] = 'Unitatearen izena titulu gisa';
 $string['event_report_viewed'] = 'HotPot txostena ikusi da';
 $string['exit_areyouok'] = 'Kaixo. Hor al zaude?';
 $string['exit_attemptscore'] = 'Saiakera honetarako kalifikazioa {$a}';
-$string['exitcm'] = 'Hurrengo jarduera';
-$string['exitcmcourse'] = 'Hurrengo jarduera ikastaro honetan';
-$string['exitcmsection'] = 'Hurrengo jarduera ikastaro-atal  honetan';
 $string['exit_course'] = 'Ikastaroa';
 $string['exit_course_text'] = 'Itzuli ikastaroaren hasiera-orrira';
 $string['exit_encouragement'] = 'Estimulua';
 $string['exit_excellent'] = 'Bikain!';
 $string['exit_feedback'] = 'Irteera-orriaren feedbacka';
 $string['exit_goodtry'] = 'Saiakera ona!';
-$string['exitgrade'] = 'Hurrengo jardueraren kalifikazioa';
 $string['exit_grades'] = 'Kalifikazioak';
 $string['exit_grades_text'] = 'Begiratu ikastaro honetako kalifikazioei';
-$string['exithotpotcourse'] = 'Hurrenho HotPot-a ikastaro honetan';
 $string['exit_hotpotgrade'] = 'Jarduera honetarako kalifikazioa {$a}';
 $string['exit_hotpotgrade_average'] = 'Zure jarduera honetako orain arteko batez besteko puntuazioa {$a} da';
 $string['exit_hotpotgrade_highest'] = 'Zure jarduera honetako orain arteko gehienezko puntuazioa {$a} da';
 $string['exit_hotpotgrade_highest_equal'] = 'Jarduera honetan aurretik lortutako zure puntuaziorik onena berdindu duzu!';
 $string['exit_hotpotgrade_highest_previous'] = 'Jarduera honetan aurretik lortutako puntuazioarik onena {$a} zen';
 $string['exit_hotpotgrade_highest_zero'] = 'Jarduera honetan oraindikk ez duzu {$a} baino puntuazio hoberik lortu';
-$string['exithotpotsection'] = 'Hurrengo HotPot-a ikastaro-atal  honetan';
 $string['exit_index'] = 'Aurkibidea';
 $string['exit_index_text'] = 'Joan jardueren aurkibidera';
 $string['exit_links'] = 'Irteera-orriaren estekak';
 $string['exit_next'] = 'Hurrengoa';
 $string['exit_next_text'] = 'Saiatu hurrengo jardueran';
 $string['exit_noscore'] = 'Ondo osatu duzu jarduera hau!';
-$string['exitoptions'] = 'Irteera-orriaren aukerak';
-$string['exitpage'] = 'Erakutsi irteera-orria';
-$string['exitpagehdr'] = 'Irteera-orria';
 $string['exit_retry'] = 'Saiatu berriz';
 $string['exit_retry_text'] = 'Egin berriz jarduera hau';
-$string['exittext'] = 'irteera-orriaren testua';
 $string['exit_welldone'] = 'Ondo eginda!';
 $string['exit_whatnext_0'] = 'Zer egin nahi duzu jarraian?';
 $string['exit_whatnext_1'] = 'Aukeratu zure helburua ...';
 $string['exit_whatnext_default'] = 'Aukeratu mesedez hurrengo aukeretako bat:';
+$string['exitcm'] = 'Hurrengo jarduera';
+$string['exitcmcourse'] = 'Hurrengo jarduera ikastaro honetan';
+$string['exitcmsection'] = 'Hurrengo jarduera ikastaro-atal  honetan';
+$string['exitgrade'] = 'Hurrengo jardueraren kalifikazioa';
+$string['exithotpotcourse'] = 'Hurrenho HotPot-a ikastaro honetan';
+$string['exithotpotsection'] = 'Hurrengo HotPot-a ikastaro-atal  honetan';
+$string['exitoptions'] = 'Irteera-orriaren aukerak';
+$string['exitpage'] = 'Erakutsi irteera-orria';
+$string['exitpagehdr'] = 'Irteera-orria';
+$string['exittext'] = 'irteera-orriaren testua';
 $string['feedbackdiscuss'] = 'Galdetegi honen inguruan foroan eztabaidatu';
 $string['feedbackformmail'] = 'Feedback-erako formularioa';
 $string['feedbackmoodleforum'] = 'Moodleren foroa';
@@ -179,7 +179,7 @@ $string['forceplugins'] = 'Multimedia pluginak behartu';
 $string['frameheight'] = 'Markoaren altuera';
 $string['giveup'] = 'Utzi';
 $string['grademethod'] = 'Kalifikazio-metodoa';
-$string['gradeweighting'] = 'Kalifikazio egokitua';
+$string['gradeweighting'] = 'Kalifikazioaren ponderazioa';
 $string['highestscore'] = 'Puntuazio altuena';
 $string['hints'] = 'Laguntzak';
 $string['hotpot:addinstance'] = 'Gehitu beste HotPot jarduera bat';
@@ -188,11 +188,11 @@ $string['hotpot:deleteallattempts'] = 'HotPot jardueran erabiltzaileek egindako 
 $string['hotpot:deletemyattempts'] = 'Ezabatu zeure saiakerak HotPot jardueratik';
 $string['hotpot:ignoretimelimits'] = 'HotPot jardueraren denbora mugei ez ikusia egin';
 $string['hotpot:manage'] = 'Aldatu HotPot jardueraren ezarpenak';
-$string['hotpotname'] = 'HotPot jardueraren izena';
 $string['hotpot:preview'] = 'Aurreikusi HotPot jarduera';
 $string['hotpot:reviewallattempts'] = 'Ikusi erabiltzaileen saiakerak HotPoT jarduera batean';
 $string['hotpot:reviewmyattempts'] = 'Ikusi norberaren saiakerak HotPoT jarduera batean';
 $string['hotpot:view'] = 'Galdetegia erabili';
+$string['hotpotname'] = 'HotPot jardueraren izena';
 $string['ignored'] = 'Baztertuta';
 $string['inprogress'] = 'Ari da';
 $string['isgreaterthan'] = 'handiagoa da';
@@ -300,7 +300,7 @@ $string['usefilters'] = 'Erabili iragazkiak';
 $string['useglossary'] = 'Erabili glosategia';
 $string['usemediafilter'] = 'Erabili multimedia-iragazkia';
 $string['views'] = 'Ikustaldiak';
-$string['weighting'] = 'Haztapena';
+$string['weighting'] = 'Ponderazioa';
 $string['wrong'] = 'Ez da zuzena';
 $string['zeroduration'] = 'Iraupenik ez';
 $string['zeroscore'] = 'Zero puntuazioa';

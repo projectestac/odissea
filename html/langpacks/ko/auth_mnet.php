@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_mnet', language 'ko', version '3.8'.
  *
- * @package   auth_mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_mnet_auto_add_remote_users'] = '예로 설정하면, 외부에서 처음 로그인할 때 사용자 기록이 자동으로 작성됩니다.';
-$string['auth_mnetdescription'] = '무들네트웍 설정에 의거하여 사용자 인증';
 $string['auth_mnet_roamin'] = '이 호스트의 사용자들은 사이트에 자유롭게 들락거릴 수 있음';
 $string['auth_mnet_roamout'] = '사용자들이 다음의 호스트들은 자유자재로 들락거릴 수 있음';
 $string['auth_mnet_rpc_negotiation_timeout'] = 'XMLRPC 계층을 통하여 인증받을 수 있는 시간 제한';
+$string['auth_mnetdescription'] = '무들네트웍 설정에 의거하여 사용자 인증';
 $string['auto_add_remote_users'] = '원격 사용자 자동 추가';
 $string['pluginname'] = 'MNet 인증';
 $string['rpc_negotiation_timeout'] = 'RPC 교섭 시한';

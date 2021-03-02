@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'ar', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,32 +43,39 @@ $string['completionsubmit'] = 'اعرض على أنه منته عندما يحد
 $string['displayhorizontal'] = 'اعرض أفقياً';
 $string['displaymode'] = 'طريقة العرض';
 $string['displayvertical'] = 'أعرض عموديا';
+$string['event:answered'] = 'إختيار تم اتخاذه';
+$string['event:answered_desc'] = 'المستخدم ذو المُعرَّف \'{$a->userid}\' إختار مجموعة في خيار المجموعات مع وحدة المساق ذات المُعرَّف \'{$a->contextinstanceid}\'.';
+$string['event:removed'] = 'إختيار تمت إزالته';
+$string['event:removed_desc'] = 'المستخدم ذو المُعرَّف \'{$a->userid}\' أزال اختياره في خيار المجموعات مع وحدة المساق ذات المُعرَّف \'{$a->contextinstanceid}\'.';
+$string['event:reportviewed'] = 'تقرير تمت معاينته';
+$string['event:reportviewed_desc'] = 'المستخدم ذو المُعرَّف \'{$a->userid}\' شاهد تقرير نشاط الاختيار ضمن وحدة المساق ذات المُعرَّف \'{$a->contextinstanceid}\'.';
 $string['expired'] = 'عذراً، تم إغلاق هذا النشاط في {$a} وهو غير متوفر الآن.';
 $string['fillinatleastoneoption'] = 'ينبغي عليك إعطاء إجابة محتملة واحدة على الأقل.';
 $string['fillinatleasttwooptions'] = 'ينبغي عليك إعطاء إجابتين محتملتين على الأقل.';
 $string['full'] = '(كامل)';
 $string['groupmembers'] = 'أعضاء المجموعة';
 $string['havetologin'] = 'يجب عليك الدخول قبل أن تتمكن من تسليم خياراتك';
-$string['hidedescription'] = 'إخفاء';
+$string['hidedescription'] = 'إخفاء الأوصاف';
 $string['limit'] = 'محدد';
-$string['limitanswers'] = 'حدد عدد الاستجابات المسموح بها';
+$string['limitanswers'] = 'حدد عدد الأجابات المسموح بها';
 $string['members/max'] = 'الأعضاء/السعة';
 $string['modulename'] = 'اختيار مجموعة';
 $string['modulename_help'] = 'يسمح هذا النشاط للطلاب باختيار مجموعة للانضمام لها.';
 $string['modulenameplural'] = 'الاختيارات';
 $string['moveselectedusersto'] = 'أنقل المستخدمين الذين تم اختيارهم إلى';
-$string['mustchooseone'] = 'ينبغي عليك اختيار الإجابة قبل الحفظ. لم يُحفظ شيء.';
+$string['mustchooseone'] = 'يجب عليك اختيار إجابة قبل أن تحفظ. لم حفظ أي شيئ';
 $string['noguestchoose'] = 'عذراً، لا يحق للضيوف القيام بإختيارات';
 $string['noresultsviewable'] = 'حالياً لا يمكن معاينة النتائج';
-$string['notanswered'] = 'غير مجاب بعد';
+$string['notanswered'] = 'لم تتم الأجابة بعد';
 $string['notenrolledchoose'] = 'عذراً، فقط المستخدمون المسجلون بإمكانهم الاختيار.';
 $string['notopenyet'] = 'عذرا، هذا النشاط سيكون متوفر في {$a}';
+$string['numberofuser'] = 'عدد المستخدمين';
 $string['option'] = 'خيار';
 $string['pluginadministration'] = 'إدارة الخيارات';
 $string['pluginname'] = 'اختيار مجموعة';
 $string['privacy'] = 'نتائج الخصوصية';
 $string['publish'] = 'أنشر النتائج';
-$string['publishafteranswer'] = 'إظهار النتائج للطلاب بعد إجابتهم';
+$string['publishafteranswer'] = 'اظهر النتائج للطالب بعد اللاجابة';
 $string['publishafterclose'] = 'اظهر النتائج للطلاب بعد إغلاق الاختيار';
 $string['publishalways'] = 'دائما اظهر النتائج للطلاب';
 $string['publishanonymous'] = 'أنشر النتائج مبهمه ولا تعرض اسماء الطلاب';
@@ -80,13 +87,13 @@ $string['responses'] = 'إجابات';
 $string['responsesto'] = 'إجابات لـ  {$a}';
 $string['samegroupused'] = 'لا يمكن استعمال نفس المجموعة عدة مرات.';
 $string['savemychoicegroup'] = 'احفظ خياري';
-$string['showdescription'] = 'إظهار الوصف';
-$string['showunanswered'] = 'إظهار عمود لغير المجاب عليه';
+$string['showdescription'] = 'إظهار الأوصاف';
+$string['showunanswered'] = 'إظهار عمود لغير المجيبين';
 $string['skipresultgraph'] = 'تخطي رسم النتائج';
 $string['spaceleft'] = 'المساحة المتاحة';
 $string['spacesleft'] = 'المساحات المتاحة';
 $string['taken'] = 'استخدم';
-$string['timerestrict'] = 'تقييد الإجابة بهذه الفترة الزمنية';
+$string['timerestrict'] = 'حدد الاجابة حسب هذه الفترة الزمنية';
 $string['viewallresponses'] = 'معاينة {$a}  إجابة';
 $string['withselected'] = 'مع ما تم اختياره';
 $string['yourselection'] = 'اختيارك';

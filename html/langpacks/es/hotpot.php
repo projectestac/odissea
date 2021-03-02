@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hotpot', language 'es', version '3.8'.
  *
- * @package   hotpot
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hotpot
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -96,6 +96,7 @@ $string['confirmdeleteattempts'] = '¿Realmente quiere eliminar estos intentos?'
 $string['confirmstop'] = '¿Esta seguro que quiere salir de esta página?';
 $string['correct'] = 'Correcto';
 $string['couldnotinsertsubmissionform'] = 'No se pudo insertar el formulario de inscripción';
+$string['d_index'] = 'Índice de discriminación';
 $string['delay1'] = 'Tiempo de espera 1';
 $string['delay1_help'] = 'El tiempo mínimo de espera entre el primer y segundo intentos.';
 $string['delay1summary'] = 'Tiempo de espera entre el primer y el segundo intento';
@@ -103,8 +104,6 @@ $string['delay2'] = 'Tiempo de espera 2';
 $string['delay2_help'] = 'El tiempo de espera mínimo entre intentos después del segundo intento';
 $string['delay2summary'] = 'Tiempo de espera entre intentos posteriores';
 $string['delay3'] = 'Tiempo de espera 3';
-$string['delay3afterok'] = 'Esperar hasta que el estudiante haga clic en Aceptar';
-$string['delay3disable'] = 'No continuar automáticamente';
 $string['delay3_help'] = 'El ajuste especifica el retardo entre la finalización de la prueba y la vuelta del control a la pantalla de Moodle.
 
 **Usar tiempo especificado (en segundos)**
@@ -120,13 +119,14 @@ $string['delay3_help'] = 'El ajuste especifica el retardo entre la finalización
 : el control no será devuelto a Moodle después de que la prueba haya terminado. El estudiante tendrá la libertad de navegar fuera de la página del cuestionario.
 
 Tenga en cuenta que los resultados del cuestionario siempre se devuelven a Moodle inmediatamente después de que la prueba se haya completado o abandonado, independientemente de este ajuste.';
+$string['delay3afterok'] = 'Esperar hasta que el estudiante haga clic en Aceptar';
+$string['delay3disable'] = 'No continuar automáticamente';
 $string['delay3specific'] = 'Usar tiempo especificado (en segundos)';
 $string['delay3summary'] = 'Tiempo de espera al final del cuestionario';
 $string['delay3template'] = 'Usar la configuración del archivo de origen/plantilla';
 $string['deleteallattempts'] = 'Eliminar todos los intentos';
 $string['deleteattempts'] = 'Eliminar intentos';
 $string['detailsrecords'] = 'Registros de detalle de HotPot';
-$string['d_index'] = 'Índice de discriminación';
 $string['duration'] = 'Duración';
 $string['enablecache'] = 'Activar caché HotPot';
 $string['enablecron'] = 'Activar cron HotPot';
@@ -134,8 +134,10 @@ $string['enablemymoodle'] = 'Mostrar HotPots en Mi Moodle';
 $string['enableobfuscate'] = 'Habilitar ofuscación del código del repropuctor de medios';
 $string['enableswf'] = 'Permitir incrustar archivos SWF en actividades HotPot';
 $string['entry_attempts'] = 'Intentos';
+$string['entry_dates'] = 'Fechas';
+$string['entry_grading'] = 'Calificando';
+$string['entry_title'] = 'Nombre de la unidad como título';
 $string['entrycm'] = 'Actividad previa';
-$string['entrycmcourse'] = 'Actividad previa en este curso';
 $string['entrycm_help'] = 'Este parámetro especifica una actividad de Moodle y una calificación mínima que se debe alcanzar antes de que este Quizport se pueda intentar.
 
 El profesor puede seleccionar una actividad específica, o uno de los parámetros de propósito general siguientes:
@@ -144,12 +146,11 @@ El profesor puede seleccionar una actividad específica, o uno de los parámetro
 * Actividad previa en esta sección
 * HotPot previo en este curso
 * HotPot previo en esta sección';
+$string['entrycmcourse'] = 'Actividad previa en este curso';
 $string['entrycmsection'] = 'Actividad previa en esta sección del curso';
 $string['entrycompletionwarning'] = 'Antes de iniciar esta actividad, debe mirar {$a}';
-$string['entry_dates'] = 'Fechas';
 $string['entrygrade'] = 'Calificación previa de la actividad';
 $string['entrygradewarning'] = 'No puede iniciar esta actividad hasta que haya obtenido un puntuación de {$a->entrygrade}% en {$a->entryactivity}. En este momento su puntuación en esta actividad es {$a->usergrade}%';
-$string['entry_grading'] = 'Calificando';
 $string['entryhotpotcourse'] = 'HotPot previo en este curso';
 $string['entryhotpotsection'] = 'HotPot previo en esta sección del curso';
 $string['entryoptions'] = 'Opciones de la página de entrada';
@@ -167,7 +168,6 @@ $string['entryoptions_help'] = 'Estas casillas de verificación activan y desact
 **Intentos**
 : si se activa, se mostrará una tabla con los detalles de los intentos anteriores de usuario en este HotPot en la página de entrada. Los intentos que puedan reiniciarse mostrarán un botón para reiniciar en la columna de la derecha.';
 $string['entrypage'] = 'Mostrar página de entrada';
-$string['entrypagehdr'] = 'Página de entrada';
 $string['entrypage_help'] = '¿Se mostrará a los estudiantes una página inicial antes de comenzar la actividad HotPot?
 **Sí**
 :los estudiantes verán una página de entrada antes de iniciar el HotPot. El contenido de la página de entrada se determina en las opciones de la página de entrada de HotPot.
@@ -176,23 +176,10 @@ $string['entrypage_help'] = '¿Se mostrará a los estudiantes una página inicia
 :los estudiantes no verán una página de entrada, y se iniciará el HotPot  de inmediato.
 
 Una página de entrada se mostrará siempre al profesor con el fin de facilitar el acceso a los informes y editar las páginas de preguntas.';
+$string['entrypagehdr'] = 'Página de entrada';
 $string['entrytext'] = 'Texto de la página de entrada';
-$string['entry_title'] = 'Nombre de la unidad como título';
 $string['exit_areyouok'] = '¡Hola!, ¿aún está ahí?';
 $string['exit_attemptscore'] = 'Su puntuación de este intento fue {$a}';
-$string['exitcm'] = 'Actividad siguiente';
-$string['exitcmcourse'] = 'Actividad siguiente en este curso';
-$string['exitcm_help'] = 'Este parámetro especifica una actividad Moodle para realizar después de finalizar este Cuestionario.
-
-El profesor puede seleccionar una actividad específica, o una de las siguientes acciones de propósito general:
-
-* Siguiente actividad en este cursos
-* Siguiente actividad en esta sección
-* Siguiente HotPot en  este curso
-* Siguiente HotPot en esta sección
-
-Si las demás opciones de la página de salida están deshabilitadas, el alumno irá directamente a la siguiente actividad. De lo contrario, el alumno verá un enlace que lo llevara a la siguiente actividad cuando esté listo.';
-$string['exitcmsection'] = 'Actividad siguiente en esta sección del curso';
 $string['exit_course'] = 'Curso';
 $string['exit_course_text'] = 'Volver a la página principal del curso';
 $string['exit_encouragement'] = 'Valoración';
@@ -218,17 +205,14 @@ $string['exit_feedback_help'] = 'Esta opción habilita y deshabilita la visualiz
 
 Además, si el método de calificación es \'la más alta\', se mostrará un mensaje indicando al usuario si el intento más reciente ha sido igual o mejor que el anterior.';
 $string['exit_goodtry'] = '¡Buen intento!';
-$string['exitgrade'] = 'Calificación de la siguiente actividad';
 $string['exit_grades'] = 'Calificaciones';
 $string['exit_grades_text'] = 'Mire sus calificaciones hasta el momento en este curso';
-$string['exithotpotcourse'] = 'Siguiente HotPot en este curso';
 $string['exit_hotpotgrade'] = 'Su calificación en esta actividad es {$a}';
 $string['exit_hotpotgrade_average'] = 'Su calificación media hasta el momento en esta actividad es {$a}';
 $string['exit_hotpotgrade_highest'] = 'Su calificación más alta hasta el momento en esta actividad es {$a}';
 $string['exit_hotpotgrade_highest_equal'] = '¡Ha igualado su mejor puntuación anterior en esta actividad!';
 $string['exit_hotpotgrade_highest_previous'] = 'Su puntuación previa más alta en esta actividad era {$a}';
 $string['exit_hotpotgrade_highest_zero'] = 'No ha puntuado aún en esta actividad por encima de {$a}';
-$string['exithotpotsection'] = 'Siguiente HotPot en esta sección del curso';
 $string['exit_index'] = 'Ïndice';
 $string['exit_index_text'] = 'Ir al índice de actividades';
 $string['exit_links'] = 'Salir de la página de enlaces';
@@ -248,9 +232,30 @@ $string['exit_links_help'] = 'Esta opción habilita y deshabilita que se muestre
 $string['exit_next'] = 'Siguiente';
 $string['exit_next_text'] = 'Inténtelo con la siguiente actividad';
 $string['exit_noscore'] = '¡Ha finalizado con éxito esta actividad!';
+$string['exit_retry'] = 'Reintentar';
+$string['exit_retry_text'] = 'Reintentar esta actividad';
+$string['exit_welldone'] = '!Muy bien!';
+$string['exit_whatnext_0'] = '¿Qué quiere hacer ahora?';
+$string['exit_whatnext_1'] = 'Elija su destino...';
+$string['exit_whatnext_default'] = 'Por favor elija uno de los siguientes:';
+$string['exitcm'] = 'Actividad siguiente';
+$string['exitcm_help'] = 'Este parámetro especifica una actividad Moodle para realizar después de finalizar este Cuestionario.
+
+El profesor puede seleccionar una actividad específica, o una de las siguientes acciones de propósito general:
+
+* Siguiente actividad en este cursos
+* Siguiente actividad en esta sección
+* Siguiente HotPot en  este curso
+* Siguiente HotPot en esta sección
+
+Si las demás opciones de la página de salida están deshabilitadas, el alumno irá directamente a la siguiente actividad. De lo contrario, el alumno verá un enlace que lo llevara a la siguiente actividad cuando esté listo.';
+$string['exitcmcourse'] = 'Actividad siguiente en este curso';
+$string['exitcmsection'] = 'Actividad siguiente en esta sección del curso';
+$string['exitgrade'] = 'Calificación de la siguiente actividad';
+$string['exithotpotcourse'] = 'Siguiente HotPot en este curso';
+$string['exithotpotsection'] = 'Siguiente HotPot en esta sección del curso';
 $string['exitoptions'] = 'Opciones de la página de salida';
 $string['exitpage'] = 'Mostrar página de salida';
-$string['exitpagehdr'] = 'Página de salida';
 $string['exitpage_help'] = '¿Se mostrará una página de salida después de que se haya completado el ejercicio HotPot?
 
 **Sí**:
@@ -258,13 +263,8 @@ se mostrará a los alumnos una página de salida cuando el Hotpot se haya comple
 
 **No**:
 no se mostrara a los estudiantes página de salida. En su lugar, podrán ir a la siguiente actividad o volver a la página del curso de Moodle.';
-$string['exit_retry'] = 'Reintentar';
-$string['exit_retry_text'] = 'Reintentar esta actividad';
+$string['exitpagehdr'] = 'Página de salida';
 $string['exittext'] = 'Texto d ela página de salida';
-$string['exit_welldone'] = '!Muy bien!';
-$string['exit_whatnext_0'] = '¿Qué quiere hacer ahora?';
-$string['exit_whatnext_1'] = 'Elija su destino...';
-$string['exit_whatnext_default'] = 'Por favor elija uno de los siguientes:';
 $string['feedbackdiscuss'] = 'Debatir sobre esta pregunta en un foro';
 $string['feedbackformmail'] = 'Formulario de retroalimentación';
 $string['feedbackmoodleforum'] = 'Foro de Moodle';
@@ -301,11 +301,11 @@ $string['hotpot:deleteallattempts'] = 'Eliminar los intentos de usuario de las a
 $string['hotpot:deletemyattempts'] = 'Eliminar sus propios intentos en una actividad HotPot';
 $string['hotpot:ignoretimelimits'] = 'Ignorar tiempos límites en una actividad HotPot';
 $string['hotpot:manage'] = 'Cambiar los parámetros de una actividad HotPot';
-$string['hotpotname'] = 'Nombre de la actividad HotPot';
 $string['hotpot:preview'] = 'Previsualizar una actividad HotPot';
 $string['hotpot:reviewallattempts'] = 'Ver los intentos de usuario de una actividad';
 $string['hotpot:reviewmyattempts'] = 'Ver sus propios intentos en una actividad HotPot';
 $string['hotpot:view'] = 'Usar cuestionario';
+$string['hotpotname'] = 'Nombre de la actividad HotPot';
 $string['ignored'] = 'Ignorado';
 $string['inprogress'] = 'En curso';
 $string['isgreaterthan'] = 'is mayor que';
@@ -459,7 +459,6 @@ $string['textsourcespecific'] = 'Texto específico';
 $string['timeclose'] = 'Disponible hasta';
 $string['timedout'] = 'Se acabó el tiempo';
 $string['timelimit'] = 'Tiempo límite';
-$string['timelimitexpired'] = 'El tiempo límite para este intento ha finalizado';
 $string['timelimit_help'] = 'Esta configuración especifica la duración máxima de un intento.
 
 **Usar la configuración en el archivo fuente/ plantilla**
@@ -472,6 +471,7 @@ $string['timelimit_help'] = 'Esta configuración especifica la duración máxima
 : no se establece sin límite de tiempo en esta pregunta
 
 Tenga en cuenta que si el intento se reinicia, el temporizador continuará desde donde se detuvo previamente el intento.';
+$string['timelimitexpired'] = 'El tiempo límite para este intento ha finalizado';
 $string['timelimitspecific'] = 'Usar tiempo específicado';
 $string['timelimitsummary'] = 'Tiempo límite para un intento';
 $string['timelimittemplate'] = 'Usar la configuración en el archivo fuente/ plantilla';

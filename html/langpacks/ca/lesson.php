@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'ca', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -279,16 +279,18 @@ $string['leftduringtimed'] = 'Heu abandonat una lliçó cronometrada.<br />Feu c
 $string['leftduringtimednoretake'] = 'Heu abandonat una lliçó cronometrada i no està permès continuar-la o torna-la a fer.';
 $string['leftduringtimedsession'] = 'Heu sortit durant una lliçó programada.';
 $string['lesson:addinstance'] = 'Afegeix una lliçó nova';
-$string['lessonclosed'] = 'La lliçó es va tancar el {$a}.';
-$string['lessoncloses'] = 'Es tanca la lliçó';
-$string['lessoncloseson'] = 'La lliçó es tanca el {$a}';
 $string['lesson:edit'] = 'Edició d\'activitats de tipus lliçó';
-$string['lessoneventcloses'] = '{$a} es tanca el';
-$string['lessoneventopens'] = '{$a} s\'obre el';
-$string['lessonformating'] = 'Formatatge de la lliçó.';
 $string['lesson:grade'] = 'Qualifica les preguntes de resposta oberta de la lliçó';
 $string['lesson:manage'] = 'Gestió d\'activitats de tipus lliçó';
 $string['lesson:manageoverrides'] = 'Gestiona les excepcions de la lliçó';
+$string['lesson:view'] = 'Mostra l\'activitat de la lliçó';
+$string['lesson:viewreports'] = 'Mostra els informes de la lliçó';
+$string['lessonclosed'] = 'La lliçó es va tancar el {$a}.';
+$string['lessoncloses'] = 'Es tanca la lliçó';
+$string['lessoncloseson'] = 'La lliçó es tanca el {$a}';
+$string['lessoneventcloses'] = '{$a} es tanca el';
+$string['lessoneventopens'] = '{$a} s\'obre el';
+$string['lessonformating'] = 'Formatatge de la lliçó.';
 $string['lessonmenu'] = 'Menú de la lliçó';
 $string['lessonname'] = 'Lliçó: {$a}';
 $string['lessonnotready'] = 'Encara no es pot entrar en aquesta lliçó. Contacteu amb el vostre {$a}.';
@@ -297,8 +299,6 @@ $string['lessonopen'] = 'La lliçó s\'obrirà el {$a}.';
 $string['lessonopens'] = 'La lliçó s\'obre';
 $string['lessonpagelinkingbroken'] = 'No s\'ha trobat la primera pàgina. Deu haver-hi algun error en els enllaços. Contacteu amb l\'administrador.';
 $string['lessonstats'] = 'Estadístiques de la lliçó';
-$string['lesson:view'] = 'Mostra l\'activitat de la lliçó';
-$string['lesson:viewreports'] = 'Mostra els informes de la lliçó';
 $string['linkedmedia'] = 'Fitxer enllaçat';
 $string['loginfail'] = 'Ha fallat l\'inici de sessió, torneu a provar-ho...';
 $string['lowscore'] = 'Puntuació més baixa';
@@ -393,8 +393,8 @@ $string['numberofpagesviewednotice'] = 'Nombre de preguntes contestades: {$a->nq
 $string['numerical'] = 'Numèrica';
 $string['offlinedatamessage'] = 'Heu treballat en aquest intent des d\'un dispositiu mòbil. Les dades s\'han desat al servidor fa {$a}. Comproveu que no tingueu feina sense desar.';
 $string['ongoing'] = 'Mostra la puntuació acumulada';
-$string['ongoingcustom'] = 'Fins ara heu aconseguit {$a->score} punts de {$a->currenthigh}.';
 $string['ongoing_help'] = 'Si està activat, cada pàgina mostrarà els punts que l\'estudiant ha obtingut del total possible fins ara.';
+$string['ongoingcustom'] = 'Fins ara heu aconseguit {$a->score} punts de {$a->currenthigh}.';
 $string['ongoingnormal'] = 'Heu contestat correctament {$a->correct} preguntes d\'un total de {$a->viewed} intents.';
 $string['onpostperpage'] = 'Només un enviament per qualificació';
 $string['options'] = 'Opcions';
@@ -411,13 +411,13 @@ $string['overrides'] = 'Excepcions';
 $string['overrideuser'] = 'Estableix una excepció per a l\'usuari';
 $string['overrideusereventname'] = '{$a->lesson} - Excepció';
 $string['overview'] = 'Revisió';
-$string['overview_help'] = 'Una lliçó es compon d\'un cert nombre de pàgines i, opcionalment, de pàgines amb contingut. Una pàgina inclou alguns continguts i, en general, acaba amb una pregunta. Hi ha un salt associat a cada resposta a la pregunta. El salt pot ser relatiu, com a aquesta pàgina o a la pàgina següent, o absolut, especificant una de les pàgines de la lliçó. Una pàgina de continguts és una pàgina que conté un conjunt d\'enllaços a altres pàgines de la lliçó, per exemple, una taula de contingut.';
+$string['overview_help'] = 'Una lliçó es compon d\'un cert nombre de pàgines i, opcionalment, de pàgines amb contingut. Una pàgina inclou alguns continguts i, en general, acaba amb una pregunta. Hi ha un salt associat a cada resposta a la pregunta. El salt pot ser relatiu, com a aquesta pàgina o a la pàgina següent, o absolut, que especifiqui una de les pàgines de la lliçó. Una pàgina de continguts és una pàgina que conté un conjunt d\'enllaços a altres pàgines de la lliçó, per exemple, una taula de contingut.';
 $string['page'] = 'Pàgina: {$a}';
-$string['pageanswers'] = 'Preguntes de la pàgina';
-$string['pagecontents'] = 'Continguts de la pàgina';
 $string['page-mod-lesson-edit'] = 'Edita la pàgina de la lliçó';
 $string['page-mod-lesson-view'] = 'Mostra o previsualitza la pàgina de la lliçó';
 $string['page-mod-lesson-x'] = 'Qualsevol pàgina de la lliçó';
+$string['pageanswers'] = 'Preguntes de la pàgina';
+$string['pagecontents'] = 'Continguts de la pàgina';
 $string['pageresponses'] = 'Respostes de la pàgina';
 $string['pages'] = 'Pàgines';
 $string['pagetitle'] = 'Títol de la pàgina';
@@ -490,9 +490,9 @@ $string['showanunseenpage'] = 'Mostra una pàgina no vista';
 $string['singleanswer'] = 'Resposta única';
 $string['skip'] = 'Omet la navegació';
 $string['slideshow'] = 'Diapositives';
+$string['slideshow_help'] = 'Si està activat, la lliçó es veurà com una presentació de diapositives, amb una amplària i una alçària fixes.';
 $string['slideshowbgcolor'] = 'Color de fons de les diapositives.';
 $string['slideshowheight'] = 'Alçada de la diapositiva.';
-$string['slideshow_help'] = 'Si està activat, la lliçó es veurà com una presentació de diapositives, amb una amplària i una alçària fixes.';
 $string['slideshowwidth'] = 'Amplada de la diapositiva.';
 $string['startlesson'] = 'Comença la lliçó';
 $string['studentattemptlesson'] = 'Intent número {$a->attempt} de {$a->firstname} {$a->lastname},';

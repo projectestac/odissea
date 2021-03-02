@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_db', language 'ko', version '3.8'.
  *
- * @package   auth_db
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_db
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['auth_dbhost'] = '데이타베이스 서버를 구동하는 컴퓨터';
 $string['auth_dbhost_key'] = '호스트';
 $string['auth_dbinsertuser'] = '삽입된 사용자 {$a->name} id {$a->id}';
 $string['auth_dbinsertusererror'] = '사용자 {$a} 입력 오류';
-$string['auth_dbname'] = '데이터베이스 자체의 이름';
+$string['auth_dbname'] = '데이터베이스 자체 이름.  ODBC DSN을 사용하는 경우 빈칸으로 두세요.';
 $string['auth_dbname_key'] = 'DB 이름';
 $string['auth_dbpass'] = '사용자 아이디와 연결되는 비밀번호';
 $string['auth_dbpass_key'] = '비밀번호';
@@ -59,7 +59,7 @@ $string['auth_dbsybasequoting'] = 'sybase quotes 사용';
 $string['auth_dbsybasequotinghelp'] = 'Sybase style single quote escaping - Oracle, MS SQL 및 몇 개의 데이터베이스에서 필요하다. MySQL에서는 사용하지 말 것!';
 $string['auth_dbtable'] = '데이타베이스의 테이블명';
 $string['auth_dbtable_key'] = '테이블';
-$string['auth_dbtype'] = '데이타베이스 유형(자세히 알고 싶으면 <a href="../lib/adodb/readme.htm#drivers">ADOdb 문서</a>)를 참조하라)';
+$string['auth_dbtype'] = '데이타베이스 유형(자세히 알고 싶으면 <a href=""http://phplens.com/adodb/supported.databases.html" target="_blank">ADOdb 문서</a>)를 참조하십시요)';
 $string['auth_dbtype_key'] = '데이터베이스';
 $string['auth_dbupdatinguser'] = '사용자 {$a->name} id {$a->id} 업데이트';
 $string['auth_dbuser'] = '데이타베이스의 읽기 권한을 가진 사용자명';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol', language 'de', version '3.8'.
  *
- * @package   enrol
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,7 +38,7 @@ $string['configenrolplugins'] = 'Aktivieren Sie bitte alle notwendigen Plugins u
 $string['custominstancename'] = 'Eigene Bezeichnung vergeben';
 $string['defaultenrol'] = 'Plugin zu neuen Kursen hinzufügen';
 $string['defaultenrol_desc'] = 'Es ist möglich, dieses Plugin zu allen neuen Kursen hinzuzufügen.';
-$string['deleteinstanceconfirm'] = 'Möchten Sie die Einschreibemethode \'{$a->name}\' und alle verbundenen Daten wirklich aus der Datenbank löschen? Alle {$a->users} Eingeschreibungen werden ausgetragen und deren Bewertungen, Mitgliedschaft in Gruppen, Forumsabonnements sowie kursbezogene Daten gelöscht.';
+$string['deleteinstanceconfirm'] = 'Möchten Sie die Nutzereinschreibung \'{$a->name}\' und alle verbundenen Daten wirklich löschen? Alle {$a->users} Nutzer/innen, die über diese Methode eingeschrieben sind, werden abgemeldet und deren Bewertungen, Gruppenmtgliedschaft, Forenabonnements sowie kursbezogene Daten werden gelöscht.';
 $string['deleteinstanceconfirmself'] = 'Möchten Sie wirklich die Instanz \'{$a->name}\' löschen, mit der Sie Zugriff auf den Kurs haben? Es könnte sein, dass Sie danach keinen Zugriff mehr haben.';
 $string['deleteinstancenousersconfirm'] = 'Möchten Sie die Einschreibemethode \'{$a->name}\' wirklich löschen?';
 $string['disableinstanceconfirmself'] = 'Möchten Sie wirklich die Instanz \'{$a->name}\' deaktivieren, mit der Sie Zugriff auf den Kurs haben? Es könnte sein, dass Sie danach keinen Zugriff mehr haben.';
@@ -81,21 +81,21 @@ $string['eventenrolinstancecreated'] = 'Instanz für Einschreibeverfahren wurde 
 $string['eventenrolinstancedeleted'] = 'Instanz für Einschreibeverfahren wurde gelöscht';
 $string['eventenrolinstanceupdated'] = 'Instanz für Einschreibeverfahren wurde aktualisiert';
 $string['eventuserenrolmentcreated'] = 'Nutzer/in in Kurs eingeschrieben';
-$string['eventuserenrolmentdeleted'] = 'Nutzer/in aus Kurs ausgeschrieben';
+$string['eventuserenrolmentdeleted'] = 'Nutzer/in vom Kurs abgemeldet';
 $string['eventuserenrolmentupdated'] = 'Nutzereinschreibung aktualisiert';
 $string['expirynotify'] = 'Benachrichtigung bevor Teilnahme endet';
+$string['expirynotify_help'] = 'Die Einstellung legt fest, ob vor Ablauf der Teilnahmedauer eine Systemnachricht erfolgen soll.';
 $string['expirynotifyall'] = 'Einschreibender und eingeschriebene Nutzer/innen';
 $string['expirynotifyenroller'] = 'Nur Einschreibender';
-$string['expirynotify_help'] = 'Die Einstellung legt fest, ob vor Ablauf der Teilnahmedauer eine Systemnachricht erfolgen soll.';
 $string['expirynotifyhour'] = 'Stunde zum Versand der Ablaufnachricht';
-$string['expirythreshold'] = 'Benachrichtigungsgrenze';
+$string['expirythreshold'] = 'Zeitpunkt für Benachrichtigung';
 $string['expirythreshold_help'] = 'Wie lange vor dem Ablauf sollen Nutzer/innen benachrichtigt werden?';
 $string['extremovedaction'] = 'Externer Abmeldevorgang';
-$string['extremovedaction_help'] = 'Wählen Sie eine auszuführende Aktion, wenn eine Nutzereinschreibung von einer externen Einschreibequelle erlischt. Bitte beachten Sie, dass einige Nutzerdaten und -einstellungen bei der Kursausschreibung aus dem Kurs gelöscht werden.';
+$string['extremovedaction_help'] = 'Wählen Sie, welche Aktion ausgeführt werden soll, wenn die Nutzereinschreibung aus der externen Einschreibequelle verschwindet. Bitte beachten Sie bitte, dass bei der Kursabmeldung Nutzerdaten und -einstellungen gelöscht werden.';
 $string['extremovedkeep'] = 'Nutzer/in eingeschrieben lassen';
 $string['extremovedsuspend'] = 'Kurseinschreibung deaktivieren';
 $string['extremovedsuspendnoroles'] = 'Kurseinschreibung deaktivieren und Rollen entfernen';
-$string['extremovedunenrol'] = 'Nutzer/in aus dem Kurs ausschreiben';
+$string['extremovedunenrol'] = 'Nutzer/in vom Kurs abmelden';
 $string['finishenrollingusers'] = 'Nutzereinschreibung beenden';
 $string['foundxcohorts'] = 'Globale Gruppen gefunden {$a}';
 $string['instanceadded'] = 'Methode hinzugefügt';
@@ -126,14 +126,14 @@ $string['periodstart'] = 'ab {$a}';
 $string['periodstartend'] = 'von {$a->start} bis {$a->end}';
 $string['privacy:metadata:user_enrolments'] = 'Einschreibungen';
 $string['privacy:metadata:user_enrolments:enrolid'] = 'Instanz des Einschreibeplugins';
-$string['privacy:metadata:user_enrolments:modifierid'] = 'ID des Nutzers, der zuletzt die Einschreibung des Nutzers geändert hat';
+$string['privacy:metadata:user_enrolments:modifierid'] = 'ID der Person, der zuletzt die Nutzereinschreibung geändert hat';
 $string['privacy:metadata:user_enrolments:status'] = 'Status der Nutzereinschreibung im Kurs';
 $string['privacy:metadata:user_enrolments:tableexplanation'] = 'Die Einschreibeverwaltung speichert die eingeschriebenen Nutzer';
 $string['privacy:metadata:user_enrolments:timecreated'] = 'Zeitpunkt, zu dem die Nutzereinschreibung erstellt wurde';
 $string['privacy:metadata:user_enrolments:timeend'] = 'Zeitpunkt, zu dem die Nutzereinschreibung abläuft';
 $string['privacy:metadata:user_enrolments:timemodified'] = 'Zeitpunkt, zu dem die Nutzereinschreibung bearbeitet wurde';
 $string['privacy:metadata:user_enrolments:timestart'] = 'Zeitpunkt, zu dem die Nutzereinschreibung beginnt';
-$string['privacy:metadata:user_enrolments:userid'] = 'ID des Nutzers';
+$string['privacy:metadata:user_enrolments:userid'] = 'Nutzer-ID';
 $string['proceedtocourse'] = 'Weiter zum Kurs';
 $string['recovergrades'] = 'Alte Nutzerbewertungen falls möglich wiederherstellen';
 $string['rolefromcategory'] = '{$a->role} (vererbt vom Kursbereich)';
@@ -149,13 +149,13 @@ $string['testsettings'] = 'Einstellungen prüfen';
 $string['testsettingsheading'] = 'Einschreibeeinstellungen prüfen - {$a}';
 $string['totalenrolledusers'] = '{$a} eingeschriebene Nutzer/innen';
 $string['totalotherusers'] = '{$a} weitere Nutzer/innen';
-$string['totalunenrolledusers'] = '{$a} ausgeschriebene Nutzer/innen';
+$string['totalunenrolledusers'] = '{$a} abgemeldete Nutzer/innen';
 $string['unassignnotpermitted'] = 'Sie haben nicht das Recht, in diesem Kurs Rollenzuweisungen zu ändern.';
-$string['unenrol'] = 'Ausschreiben';
-$string['unenrolconfirm'] = 'Möchten Sie wirklich "{$a->user}" (eingeschrieben über "{$a->enrolinstancename}") aus dem Kurs "{$a->course}" ausschreiben?';
-$string['unenrolme'] = 'Ausschreiben aus \'{$a}\'';
-$string['unenrolnotpermitted'] = 'Sie haben nicht das Recht, diese/n Nutzer/in aus dem Kurs auszuschreiben';
-$string['unenrolroleusers'] = 'Nutzer/innen ausschreiben';
+$string['unenrol'] = 'Abmelden';
+$string['unenrolconfirm'] = 'Möchten Sie wirklich \'{$a->user}\' (eingeschrieben über \'{$a->enrolinstancename}\') vom Kurs \'{$a->course}\' abmelden?';
+$string['unenrolme'] = 'Selbst vom Kurs \'{$a}\' abmelden';
+$string['unenrolnotpermitted'] = 'Sie haben nicht das Recht, diese Person vom Kurs abzumelden.';
+$string['unenrolroleusers'] = 'Nutzer/innen abmelden';
 $string['uninstallmigrating'] = '"{$a}" Einschreibungen werden übertragen';
 $string['unknowajaxaction'] = 'Unbekannter Funktionsaufruf';
 $string['unlimitedduration'] = 'Unbegrenzt';
@@ -163,4 +163,4 @@ $string['userremovedfromselectiona'] = 'Nutzer/in \'{$a}\' wurde aus der Auswahl
 $string['usersearch'] = 'Suchen';
 $string['withselectedusers'] = 'Mit ausgewählten Nutzer/innen';
 $string['youenrolledincourse'] = 'Sie sind in den Kurs eingeschrieben';
-$string['youunenrolledfromcourse'] = 'Sie wurden aus dem Kurs "{$a}" ausgeschrieben';
+$string['youunenrolledfromcourse'] = 'Sie wurden vom Kurs \'{$a}\' abgemeldet.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ar', version '3.8'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['confirmquestionsaveasedited'] = 'أؤكد أنني أريد أن يتم حفظ السؤال كما حررته';
 $string['confirmsave'] = 'تأكيد ثم حفظ {$a}';
 $string['correctanswer'] = 'الإجابة صحيحة';
-$string['correctanswerandfeedback'] = 'الجواب الصحيح والإفادة';
-$string['decodeverifyquestiontext'] = 'فك الترميز و التحقق من نص السؤال';
+$string['correctanswerandfeedback'] = 'الجواب الصحيح و ردة الفعل';
+$string['decodeverifyquestiontext'] = 'فك الترميز والتحقق من نص السؤال';
 $string['invalidmultianswerquestion'] = 'سؤال الإجابات المضمنة (Cloze) غير صالح ({$a}).';
 $string['layout'] = 'تصميم';
 $string['layouthorizontal'] = 'صف أفقي من أزرة الراديو';
@@ -42,16 +42,19 @@ $string['nooptionsforsubquestion'] = 'غير قادر على الحصول على
 $string['noquestions'] = 'السؤال أكمل الفراغ (الإجابات المتعددة) "<strong>{$a}</strong>" لا يحتوي على أي سؤال';
 $string['pleaseananswerallparts'] = 'يرجى الإجابة على جميع أجزاء السؤال.';
 $string['pluginname'] = 'الإجابات المضمنة (إكمال الفراغ)';
+$string['pluginname_help'] = 'أسئلة الإجابات المضمنة (Cloze) تتكون من قطعة نصية ذات أسئلة مثل متعدد الخيارات والإجابات القصيرة مضمنة داخلها.';
 $string['pluginnameadding'] = 'بإضافة إجابات مضمنة للسؤال (إكمال الفراغ)';
 $string['pluginnameediting'] = 'بتحرير الإجابات المضمنة للسؤال (إكمال الفراغ)';
-$string['pluginname_help'] = 'الإجابات المضمنة (أكمل الفراغ) أسئلة تتكون من تمرير النص مع الأسئلة مثل الإجابة متعددة الخيارات و القصيرة مضمنة داخلها.';
-$string['pluginnamesummary'] = 'أسئلة من هذا النوع هي مرنة للغاية، و لكن يمكن فقط إنشاء طريقة إدخال نصية تحتوي على رموز خاصة .. التي تنشئ مضمنة اختيار من متعدد، و أسئلة الإجابات القصيرة العددية.';
-$string['privacy:metadata'] = 'إن ملحق نوع السؤال، الإجابات المضمنة (Cloze) لا يخزن أي بيانات شخصية.';
+$string['pluginnamesummary'] = 'الأسئلة من هذا النوع مرنة للغاية، ولكن يمكن فقط إنشاؤها عبر إدخال نص يحتوي رموزًا خاصة لتضمين متعدد الخيارات، الإجابات القصيرة والأسئلة العددية.';
+$string['privacy:metadata'] = 'لا يخزن المكون الإضافي Embedded answers (Cloze) question type  أيّ بيانات شخصية.';
 $string['qtypenotrecognized'] = 'نوع السؤال {$a} غير معروف';
 $string['questiondefinition'] = 'تعريف السؤال';
 $string['questiondeleted'] = 'حذف السؤال';
-$string['questioninquiz'] = '<ul> <li>الأسئلة المضافة و المحذوفة , </li> <li>تغيير ترتيب الأسئلة في النص,</li> <li>تغيير نوع الأسئلة (العددية، الإجابة المختصرة، الاختيار من متعدد). </li></ul>';
-$string['questionnotfound'] = 'تعذر العثور على نص السؤال للجزء #{$a}';
+$string['questioninquiz'] = '<ul>
+ <li>إضافة الأسئلة أو حذفها، </li>
+ <li>تغيير ترتيب الأسئلة في النص، </li>
+ <li>تغيير نوع الأسئلة (العددية، الإجابة القصيرة، الاختيار من متعدد). </li></ul>';
+$string['questionnotfound'] = 'غير قادر على العثور على مسألة لجزء السؤال #{$a}';
 $string['questionsadded'] = 'أضيف السؤال';
 $string['questionsaveasedited'] = 'سيتم حفظ السؤال كما حررته';
 $string['questionsless'] = '{$a} الأسئلة أقل مما كانت عليه في جواب الأسئلة المتعددة المخزنة في قاعدة البيانات';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'chat', language 'nl', version '3.8'.
  *
- * @package   chat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     chat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,13 +36,13 @@ $string['chat:chat'] = 'Gebruik chat';
 $string['chat:deletelog'] = 'Verwijder chat logs';
 $string['chat:exportparticipatedsession'] = 'Exporteer je chatdeelname';
 $string['chat:exportsession'] = 'Exporteer een chatsessie';
+$string['chat:readlog'] = 'Bekijk chat logs';
+$string['chat:talk'] = 'Praat in een chat';
+$string['chat:view'] = 'Bekijk chat-activiteit';
 $string['chatintro'] = 'Inleidende tekst';
 $string['chatname'] = 'Naam van deze chatroom';
-$string['chat:readlog'] = 'Bekijk chat logs';
 $string['chatreport'] = 'Chat-sessies';
-$string['chat:talk'] = 'Praat in een chat';
 $string['chattime'] = 'Volgende chattijd';
-$string['chat:view'] = 'Bekijk chat-activiteit';
 $string['compact'] = 'Compact';
 $string['composemessage'] = 'Maak een bericht';
 $string['configmethod'] = 'De AJAX chatmethode geeft een AJAX gebaseerde chatinterface die regelmatig de server contacteert voor updates. De gewone chatmethode laat de clients regelmatig contact maken met de server voor updates. Deze methode vraagt geen configuratie en werkt op alle servers, maar kan een zware belasting op de server veroorzaken wanneer er veel chatters tegelijk online zijn. Om een serverdaemon te kunnen gebruiken heb je shell-toegang tot Unix nodig, maar je krijgt er een snelle, schaalbare chatomgeving mee.';
@@ -72,13 +72,13 @@ $string['explainmethodnormal'] = 'Deze instellingen worden alleen gebruikt als j
 $string['generalconfig'] = 'Algemene instellingen';
 $string['idle'] = 'Wachtend';
 $string['indicator:cognitivedepth'] = 'Chat cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Chat activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Chat cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de Chat-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken, Reageren op feedback)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Chat activiteit.';
 $string['indicator:socialbreadth'] = 'Chat sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Chat activiteit.';
 $string['indicator:socialbreadthdef'] = 'Chat sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de Chat-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, Alleen deelnemer, Deelnemer met anderen)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Chat activiteit.';
 $string['inputarea'] = 'Inputvenster';
 $string['invalidid'] = 'Kon chatroom niet vinden!';
 $string['list_all_sessions'] = 'Toon alle sessies.';
@@ -110,8 +110,8 @@ Chats zijn heel geschikt wanneer de chatters elkaar niet geregeld ontmoeten, bij
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Berichten nooit verwijderen';
 $string['nextsession'] = 'Volgende geplande sessie';
-$string['nochat'] = 'Geen chatruimte gevonden';
 $string['no_complete_sessions_found'] = 'Geen volledige sessies gevonden.';
+$string['nochat'] = 'Geen chatruimte gevonden';
 $string['noguests'] = 'De chatruimte is niet toegankelijk voor gastgebruikers';
 $string['nomessages'] = 'Nog geen berichten';
 $string['nopermissiontoseethechatlog'] = 'Je hebt het recht  niet om de chat-logs te zien';

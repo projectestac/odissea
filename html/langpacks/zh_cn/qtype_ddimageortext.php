@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'zh_cn', version '3.8'.
  *
- * @package   qtype_ddimageortext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddimageortext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,9 +48,9 @@ $string['infinite'] = '无限制';
 $string['label'] = '文字';
 $string['nolabel'] = '没有标签文字';
 $string['pluginname'] = '拖放到图片题';
+$string['pluginname_help'] = '拖放到图片题要求做题者拖放图片或文字标签到一张定义好拖放区域的背景图片上。可拖放的项目可以被分组，所以特定组的所有项目被着上与相应拖放区域相同的颜色。被标记为无限的可拖放项目可以拖放到不止一个拖放区域。';
 $string['pluginnameadding'] = '添加拖放到图片题';
 $string['pluginnameediting'] = '编辑拖放到图片题';
-$string['pluginname_help'] = '拖放到图片题要求做题者拖放图片或文字标签到一张定义好拖放区域的背景图片上。可拖放的项目可以被分组，所以特定组的所有项目被着上与相应拖放区域相同的颜色。被标记为无限的可拖放项目可以拖放到不止一个拖放区域。';
 $string['pluginnamesummary'] = '拖放图片或文字标签到背景图片上的拖放区域。';
 $string['previewareaheader'] = '预览';
 $string['previewareamessage'] = '选择一张背景图片，指定可拖放的项目，并在背景图上定义好拖放区域。';

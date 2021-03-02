@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'edufields', language 'ar', version '3.8'.
  *
- * @package   edufields
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     edufields
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['field101'] = 'العلوم الطبيعية والفيزيائية';
 $string['field10101'] = 'العلوم الرياضية';
 $string['field1010101'] = 'الرياضيات';
-$string['field1010103'] = 'إحصاء';
+$string['field1010103'] = 'الإحصائيات';
 $string['field1010199'] = 'العلوم الرياضية (أخرى)';
 $string['field10103'] = 'الفيزياء وعلم الفلك';
 $string['field1010301'] = 'الفيزياء';

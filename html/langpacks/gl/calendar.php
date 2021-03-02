@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'gl', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -148,7 +148,7 @@ $string['explain_site_timeformat'] = 'Pode seleccionar o formato no que se ven a
 $string['export'] = 'Exportar';
 $string['exportbutton'] = 'Exportar';
 $string['exportcalendar'] = 'Exportar o calendario';
-$string['exporthelp'] = 'Como me subscribo a este calendario desde unha aplicación de calendario (Google/Outlook/Outro)?';
+$string['exporthelp'] = 'Como me subscribo a este calendario dende unha aplicación de calendario (Google/Outlook/Outro)?';
 $string['forcecalendartype'] = 'Forzar calendario';
 $string['fri'] = 'ven';
 $string['friday'] = 'venres';
@@ -193,29 +193,29 @@ $string['noupcomingevents'] = 'Non hai eventos próximos';
 $string['oneevent'] = '1 evento';
 $string['pollinterval'] = 'Intervalo para actualizar';
 $string['pollinterval_help'] = 'Con que frecuencia quere actualizar o calendario cos novos eventos.';
-$string['preferences'] = 'Preferencias';
-$string['preferences_available'] = 'As súas preferencias persoais';
-$string['preferredcalendar'] = 'Calendario preferido';
-$string['pref_lookahead'] = 'Prazo de comezo de eventos próximos';
+$string['pref_lookahead'] = 'Prazo de comezo de actividades próximas';
 $string['pref_lookahead_help'] = 'Esta opción estabelece o número (máximo) de días nos que debe comezar un evento a fin de poder presentalo como evento pendente. Teña en conta que <strong>non hai garantía</strong> de que se presenten todos os eventos que comecen nesa data; se hai demasiados (máis que os indicados na preferencia «Núm. máximo de evento pendentes»), os evento máis distantes non se amosarán.';
 $string['pref_maxevents'] = 'Num. máximo de eventos pendentes';
 $string['pref_maxevents_help'] = 'Esta opción estabelece o número máximo de eventos pendentes que poden presentarse. Se escribe un número elevado, é probábel que a presentación de eventos ocupe moito espazo na pantalla.';
-$string['pref_persistflt'] = 'Lembrar a configuración do filtro';
-$string['pref_persistflt_help'] = 'Se está activado, Moodle lembrará a última configuración do filtro de eventos e restauraraos de forma automática cada vez que acceda ao sitio.';
+$string['pref_persistflt'] = 'Lembrar os axustes do filtro';
+$string['pref_persistflt_help'] = 'Se está activado, Moodle lembrará os últimos axustes do filtro de eventos e restauraraos de forma automática cada vez que acceda ao sitio.';
 $string['pref_startwday'] = 'Primeiro día da semana';
 $string['pref_startwday_help'] = 'As semanas do calendario amosaranse comezando o día que se escolla aquí.';
 $string['pref_timeformat'] = 'Formato de presentación da hora';
 $string['pref_timeformat_help'] = 'Pode escoller ver las horas en formato de 12 ou 24 horas. Se escolle «predeterminado», o formato axustarase automaticamente en función do idioma empregado no sitio.';
+$string['preferences'] = 'Preferencias';
+$string['preferences_available'] = 'As súas preferencias persoais';
+$string['preferredcalendar'] = 'Calendario preferido';
 $string['privacy:metadata:calendar:event'] = 'O compoñente do calendario pode almacenar os detalles do evento do calendario do usuario dentro do subsistema central.';
 $string['privacy:metadata:calendar:event:description'] = 'A descrición do evento do calendario.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'O tipo de evento do calendario.';
 $string['privacy:metadata:calendar:event:name'] = 'O nome do evento do calendario.';
+$string['privacy:metadata:calendar:event:timeduration'] = 'A duración do evento do calendario.';
+$string['privacy:metadata:calendar:event:timestart'] = 'A hora de comezo do evento do calendario.';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'O compoñente do calendario pode almacenar os detalles das subscricións do calendario do usuario dentro do subsistema central.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'O tipo de evento da subscrición do calendario.';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'O nome do evento da subscrición do calendario.';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'O URL da subscrición do calendario.';
-$string['privacy:metadata:calendar:event:timeduration'] = 'A duración do evento do calendario.';
-$string['privacy:metadata:calendar:event:timestart'] = 'A hora de comezo do evento do calendario.';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'O tipo de evento de calendario configurado mostra as preferencias dos usuarios.';
 $string['recentupcoming'] = '60 días recentes e próximos';
 $string['repeatedevents'] = 'Eventos repetidos';

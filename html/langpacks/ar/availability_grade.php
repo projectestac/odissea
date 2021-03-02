@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability_grade', language 'ar', version '3.8'.
  *
- * @package   availability_grade
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability_grade
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cachedef_items'] = 'مفردات التقييم المخبأة لتقييم التوافر الشرطي';
-$string['cachedef_scores'] = 'علامات المستخدم المخبأة لتقييم التوافر الشرطي';
-$string['description'] = 'يتطلب من الطلاب تحقيق علامة محددة.';
+$string['cachedef_items'] = 'بنود الدرجة في الذاكرة المؤقتة لتقييم التوافر الشرطي';
+$string['cachedef_scores'] = 'درجات المستخدم في الذاكرة المؤقتة لتقييم التوافر الشرطي';
+$string['description'] = 'طلب من الطلاب لتحقيق درجات محددة.';
 $string['error_backwardrange'] = 'عند تحديد نطاق التقدير ، يجب أن يكون الحد الأدنى أقل من الحد الأقصى.';
 $string['error_invalidnumber'] = 'يجب تحديد نطاقات التقدير بنسب مئوية صالحة.';
 $string['error_selectgradeid'] = 'يجب عليك تحديد درجة محددة لتقديم حالة التقدير.';
@@ -36,12 +36,12 @@ $string['label_min'] = 'الحد الأدنى لنسبة الدرجة (شامل�
 $string['missing'] = '(النشاط المفقود)';
 $string['option_max'] = 'يجب أن يكون <';
 $string['option_min'] = 'يجب أن يكون ≥';
-$string['pluginname'] = 'التقييد حسب العلامات';
-$string['privacy:metadata'] = 'إن ملحق التقييد حسب العلامات لا يخزن أيّ بيانات شخصية.';
+$string['pluginname'] = 'تقييد بالدرجات';
+$string['privacy:metadata'] = 'البرنامج المساعد Restriction by grades لا يخزن أيّ بيانات شخصية.';
 $string['requires_any'] = 'لديك درجة في {$a}';
-$string['requires_max'] = 'أنت تحصل على درجة مناسبة في <strong>{$a}</strong>';
-$string['requires_min'] = 'أنت تحقق الدرجة المطلوب في <strong>{$a}</strong>';
+$string['requires_max'] = 'أنت حصلت على درجة مناسبة في {$a}';
+$string['requires_min'] = 'حقتت الدرجة المطلوبة في {$a}';
 $string['requires_notany'] = 'ليس لديك درجة في {$a}';
-$string['requires_notgeneral'] = 'أنت لا تحصل على نتائج مؤكدة في <strong>{$a}</strong>';
-$string['requires_range'] = 'أنت تحصل على درجة معينة في <strong>{$a}</strong>';
+$string['requires_notgeneral'] = 'لم تحصل على نتائج معينة في {$a}';
+$string['requires_range'] = 'حصلت على درجة جزئية في  {$a}';
 $string['title'] = 'الدرجة';

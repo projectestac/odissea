@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'pt', version '3.8'.
  *
- * @package   assignfeedback_comments
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_comments
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = 'Comentário inserido no texto';
+$string['commentinline_help'] = 'Se ativar esta opção, o texto da submissão será copiado para o campo de comentários de feedback durante a avaliação, tornando mais fácil fazer um comentário inserido no texto (usando uma cor diferente, talvez) ou para editar o texto original.';
 $string['commentinlinedefault'] = 'Comentário inserido no texto por predefinição';
 $string['commentinlinedefault_help'] = 'Se definido, a funcionalidade de comentário inserido no texto será ativada por predefinição para todos os novos trabalhos.';
-$string['commentinline_help'] = 'Se ativar esta opção, o texto da submissão será copiado para o campo de comentários de feedback durante a avaliação, tornando mais fácil fazer um comentário inserido no texto (usando uma cor diferente, talvez) ou para editar o texto original.';
 $string['default'] = 'Ativo por predefinição';
 $string['default_help'] = 'Se ativar esta opção, este método de feedback estará disponível para todos os trabalhos.';
 $string['enabled'] = 'Comentários de feedback';

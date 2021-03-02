@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,24 +12,25 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_course_list', language 'gl', version '3.8'.
  *
- * @package   block_course_list
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_course_list
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['adminview'] = 'Vista do administrador';
 $string['allcourses'] = 'O administrador ve todos os cursos';
-$string['configadminview'] = 'Que debería ver o administrador no bloque de listaxe de cursos?';
+$string['configadminview'] = 'Se quere amosar todos os cursos no bloque de cursos ou só os cursos nos que o administrador está matriculado.';
 $string['confighideallcourseslink'] = 'Agochar a ligazón «Todos os cursos» no fondo do bloque. Agochar as ligazóns non afecta a vista do administrador.';
 $string['course_list:addinstance'] = 'Engadir un novo bloque de cursos';
-$string['course_list:myaddinstance'] = 'Engadir un novo bloque de cursos ao cartafol persoal';
+$string['course_list:myaddinstance'] = 'Engadir un novo bloque de cursos ao Taboleiro';
 $string['hideallcourseslink'] = 'Agochar a ligazón a Todos os cursos';
 $string['owncourses'] = 'O administrador ve os seus propios cursos';
 $string['pluginname'] = 'Cursos';

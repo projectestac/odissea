@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'de', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -95,25 +95,25 @@ $string['filenotuploadederror'] = 'Datei \'{$a}\' konnte nicht hochgeladen werde
 $string['files'] = 'Dateien';
 $string['filtername'] = 'Autoverlinkung im Wiki';
 $string['firstpagetitle'] = 'Name der Startseite';
-$string['firstpagetitle_help'] = 'Der Name der Startseite im Wiki kann nachträglich nicht geändert werden!';
+$string['firstpagetitle_help'] = 'Der Name der Startseite im Wiki kann nicht geändert werden, sobald das Wiki angelegt wurde.';
 $string['forceformat'] = 'Format vorgeben';
 $string['forceformat_help'] = 'Wenn das Format vorgegeben ist, kann bei der Erstellung einer neuen Wikiseite kein anderes Format eingestellt werden.';
 $string['format'] = 'Format';
+$string['format_help'] = '* HTML - Der Texteditor ist verfügbar
+* Creole - Markup-Editor für Wikis mit Werkzeugleiste
+* NWiki - MediaWiki-ähnlicher Markup-Editor';
 $string['formatcreole'] = 'Creole-Format';
 $string['formatcreole_help'] = 'Creole ist eine Markup-Sprache für Wikis mit einer Werkzeugleiste zum Einfügen der entsprechenden Formatierungszeichen.
 
 Um eine neue Seite zu erstellen, geben Sie den neuen Seitennamen in doppelte Eckige Klammern ein, z.B. [[Neue Seite]].';
-$string['format_help'] = '* HTML - Der Texteditor ist verfügbar
-* Creole - Markup-Editor für Wikis mit Werkzeugleiste
-* NWiki - MediaWiki-ähnlicher Markup-Editor';
 $string['formathtml'] = 'HTML-Format';
-$string['formathtml_help'] = 'Der HTML-Editor kann benutzt werden, um Inhalte zu formatieren.
+$string['formathtml_help'] = 'Der HTML-Editor kann benutzt werden, um Texte im Wiki zu formatieren.
 
-Um eine neue Seite zu erstellen, geben Sie den neuen Seitennamen in doppelte Eckige Klammern ein, z.B. [[Neue Seite]].';
+Um eine neue Seite zu anzulegen, geben Sie den Namen der neuen Seite in doppelte eckige Klammern ein, z.B. [[Neue Seite]].';
 $string['formatnwiki'] = 'NWiki-Format';
-$string['formatnwiki_help'] = 'NWiki ist eine dem MediaWiki ähnliche Markup-Sprache, die für das in Moodle enthaltene Modul NWiki verwendet wird.
+$string['formatnwiki_help'] = 'NWiki ist eine dem MediaWiki ähnliche Markup-Sprache, um Texte im Wiki zu formatieren.
 
-Um eine neue Seite zu erstellen, geben Sie den neuen Seitennamen in doppelte Eckige Klammern ein, z.B. [[Neue Seite]].';
+Um eine neue Seite zu anzulegen, geben Sie den Namen der neuen Seite in doppelte eckige Klammern ein, z.B. [[Neue Seite]].';
 $string['history'] = 'Verlauf';
 $string['history_help'] = 'Der Link \'Verlauf\' führt zu älteren Versionen der Seite';
 $string['html'] = 'HTML';
@@ -122,13 +122,13 @@ $string['incorrectpageid'] = 'Die Seiten-ID ist falsch.';
 $string['incorrectsubwikiid'] = 'Die Subwiki-ID ist falsch.';
 $string['incorrectwikiid'] = 'Die Wiki-ID ist falsch.';
 $string['indicator:cognitivedepth'] = 'Wiki kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Wiki-Aktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Wiki kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Wiki-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Wiki-Aktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Wiki sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Wiki-Aktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Wiki sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Wiki-Aktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Wiki-Aktivität erreicht hat.';
 $string['individualpagedoesnotexist'] = 'Wikiseite existiert nicht';
 $string['insertcomment'] = 'Kommentar einfügen';
 $string['insertimage'] = 'Bild einfügen...';
@@ -193,17 +193,17 @@ $string['orphaned'] = 'Verwaiste Seiten';
 $string['orphaned_help'] = 'Liste von Seiten ohne Verlinkung von anderen Seiten';
 $string['overridelocks'] = 'Datensperren ändern';
 $string['overridinglocks'] = 'Datensperren werden geändert...';
+$string['page-mod-wiki-comments'] = 'Wiki-Kommentarseite';
+$string['page-mod-wiki-history'] = 'Wiki-Versionsseite';
+$string['page-mod-wiki-map'] = 'Wiki-Spezialseiten';
+$string['page-mod-wiki-view'] = 'Wiki-Hauptseite';
+$string['page-mod-wiki-x'] = 'Jede Wiki-Seite';
 $string['pageexists'] = 'Diese Seite existiert bereits.';
 $string['pageindex'] = 'Seitenindex';
 $string['pageindex_help'] = 'Struktur dieses Wikis';
 $string['pageislocked'] = 'Jemand anderes bearbeitet gerade diese Seite. Versuchen Sie es in ein paar Minuten nochmal.';
 $string['pagelist'] = 'Seitenliste';
 $string['pagelist_help'] = 'Seitenübersicht in alphabetischer Reihenfolge';
-$string['page-mod-wiki-comments'] = 'Wiki-Kommentarseite';
-$string['page-mod-wiki-history'] = 'Wiki-Versionsseite';
-$string['page-mod-wiki-map'] = 'Wiki-Spezialseiten';
-$string['page-mod-wiki-view'] = 'Wiki-Hauptseite';
-$string['page-mod-wiki-x'] = 'Jede Wiki-Seite';
 $string['pagename'] = 'Seitenname';
 $string['peerreview'] = 'Einstufung durch Peers';
 $string['pluginadministration'] = 'Wiki-Administration';
@@ -283,11 +283,17 @@ $string['viewperpage'] = '{$a} Versionen pro Seite anzeigen';
 $string['viewversion'] = 'Seitenversion #{$a} anzeigen';
 $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Neues Wiki hinzufügen';
-$string['wikiattachments'] = 'Anhänge im Wiki';
-$string['wikiboldtext'] = 'Fett';
 $string['wiki:createpage'] = 'Neue Wikiseiten erstellen';
 $string['wiki:editcomment'] = 'Kommentar zu Seiten hinzufügen';
 $string['wiki:editpage'] = 'Wikiseiten sichern';
+$string['wiki:managecomment'] = 'Kommentare im Wiki verwalten';
+$string['wiki:managefiles'] = 'Dateien im Wiki verwalten';
+$string['wiki:managewiki'] = 'Einstellungen des Wikis verwalten';
+$string['wiki:overridelock'] = 'Seitensperrung übergehen';
+$string['wiki:viewcomment'] = 'Seitenkommentare ansehen';
+$string['wiki:viewpage'] = 'Wikiseiten ansehen';
+$string['wikiattachments'] = 'Anhänge im Wiki';
+$string['wikiboldtext'] = 'Fett';
 $string['wikiexternalurl'] = 'Externe URL';
 $string['wikifiles'] = 'Wikidateien';
 $string['wikifiletable'] = 'Dateiliste hochladen';
@@ -298,23 +304,17 @@ $string['wikiinternalurl'] = 'Interner Link';
 $string['wikiintro'] = 'Beschreibung';
 $string['wikiitalictext'] = 'Kursiv';
 $string['wikilockingsettings'] = 'Datensperre aktiviert';
-$string['wiki:managecomment'] = 'Kommentare im Wiki verwalten';
-$string['wiki:managefiles'] = 'Dateien im Wiki verwalten';
-$string['wiki:managewiki'] = 'Einstellungen des Wikis verwalten';
 $string['wikimode'] = 'Wikimodus';
-$string['wikimodecollaborative'] = 'Gemeinsames Wiki';
 $string['wikimode_help'] = 'Der Wikimodus legt fest, wie damit gearbeitet werden kann. <ul>
 <li>gemeinsames Wiki - alle benutzen und bearbeiten das Wiki gemeinsam</li>
 <li>persönliches Wiki - jede Person hat ihr eigenes Wiki, das sie alleine bearbeitet</li></ul>';
+$string['wikimodecollaborative'] = 'Gemeinsames Wiki';
 $string['wikimodeindividual'] = 'Persönliches Wiki';
 $string['wikiname'] = 'Name des Wikis';
 $string['wikinowikitext'] = 'Kein Wikitext';
 $string['wikiorderedlist'] = 'Geordnete Liste';
-$string['wiki:overridelock'] = 'Seitensperrung übergehen';
 $string['wikipages'] = 'Wikiseiten';
 $string['wikisettings'] = 'Einstellungen des Wikis';
 $string['wikiunorderedlist'] = 'Ungeordnete Liste';
-$string['wiki:viewcomment'] = 'Seitenkommentare ansehen';
-$string['wiki:viewpage'] = 'Wikiseiten ansehen';
 $string['wrongversionlock'] = 'Jemand anderes hat die Seite aktualisiert, während Sie daran gearbeitet haben. Deswegen ist der von Ihnen verwendete Seiteninhalt veraltet.';
 $string['wrongversionsave'] = 'Jemand hat eine neue Version der Seite gespeichert, während Sie daran gearbeitet haben. Sie haben diese neuen Inhalte überschrieben. Bitte prüfen Sie den Seitenverlauf.';

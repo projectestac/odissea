@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository', language 'gl', version '3.8'.
  *
- * @package   repository
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,7 +36,7 @@ $string['addplugin'] = 'Engadir un engadido de repositorio';
 $string['allowexternallinks'] = 'Permitir ligazóns externas';
 $string['areacategoryintro'] = 'Introdución da categoría';
 $string['areacourseintro'] = 'Introdución do curso';
-$string['areacourseoverviewfiles'] = 'Ficheiros do resumo do curso';
+$string['areacourseoverviewfiles'] = 'Imaxe do curso';
 $string['areamainfile'] = 'Ficheiro principal';
 $string['arearoot'] = 'Sistema';
 $string['areauserbackup'] = 'Copia de seguranza do usuario';
@@ -51,7 +51,7 @@ $string['back'] = '&laquo; Atrás';
 $string['backtodraftfiles'] = '&laquo; Volver ao xestor de ficheiros en versión preliminar';
 $string['cachecleared'] = 'Os ficheiros da caché son retirados';
 $string['cacheexpire'] = 'Expiración da caché';
-$string['cannotaccessparentwin'] = 'Se a xanela principal está en HTTPS, non se lle permitirá acceder ao obxecto window.opener, polo que non poderá actualizar o repositorio de forma automática, mais xa ten a sesión, volva ao selector de ficheiros e seleccione de novo o repositorio, agora xa debería poder traballar.';
+$string['cannotaccessparentwin'] = 'Cando se usa HTTPS, o repositorio non se actualiza automaticamente. En vez diso, ten que volver ao selector de ficheiros e seleccionar de novo o repositorio.';
 $string['cannotdelete'] = 'Non foi posíbel eliminar este ficheiro.';
 $string['cannotdownload'] = 'Non foi posíbel descargar este ficheiro.';
 $string['cannotdownloaddir'] = 'Non foi posíbel descargar este cartafol';
@@ -60,13 +60,13 @@ $string['choosealink'] = 'Escolla unha ligazón...';
 $string['chooselicense'] = 'Escolla a licenza';
 $string['cleancache'] = 'Limpar os meus ficheiros na caché';
 $string['close'] = 'Pechar';
-$string['commonrepositorysettings'] = 'Configuración común do repositorio';
+$string['commonrepositorysettings'] = 'Axustes comúns do repositorio';
 $string['configallowexternallinks'] = 'Esta opción activa que os usuarios escollan se os elementos multimedia externos se copien ou non en Moodle. Se está desactivada, os medios copiaranse sempre en Moodle (isto é o mellor para a integridade xeral dos datos e da seguranza). Se está activada, os usuarios poderran escoller cada vez que engadan elementos multimedia a un texto.';
 $string['configcacheexpire'] = 'Tempo total (en segundos) durante o que os listados de ficheiros están na caché local cando se navega por repositorios externos.';
 $string['configgetfiletimeout'] = 'Tempo de espera en segundos, para descargar un ficheiro externo dentro de Moodle.';
 $string['configsaved'] = 'Configuración gardada.';
 $string['configsyncfiletimeout'] = 'Tempo de espera en segundos, para sincronizar o tamaño do ficheiro externo.';
-$string['configsyncimagetimeout'] = 'Tempo de espera en segundos, para descargar un ficheiro de imaxe desde un repositorio externo durante a sincronización.';
+$string['configsyncimagetimeout'] = 'Tempo de espera en segundos, para descargar un ficheiro de imaxe dende un repositorio externo durante a sincronización.';
 $string['confirmdelete'] = 'Confirma que quere eliminar o repositorio {$a}? Se escolle «Continuar e descargar», os ficheiros referidos a contidos externos descargaranse a Moodle, mais a este proceso levaralle bastante tempo.';
 $string['confirmdeletefile'] = 'Confirma que quere eliminar este ficheiro?';
 $string['confirmdeletefilewithhref'] = 'Confirma que quere eliminar este ficheiro? Hai {$a} alcumes/atallos a ficheiros que usan este ficheiro como orixe. Se continua, estes alcumes converteranse en copias reais.';
@@ -112,8 +112,8 @@ $string['enter'] = 'Introducir';
 $string['entername'] = 'Introduza o nome do cartafol';
 $string['enternewname'] = 'Introduza o novo nome do ficheiro';
 $string['error'] = 'Produciuse un erro descoñecido.';
-$string['errordoublereference'] = 'Non é posíbel sobrescribir un ficheiro cun atallo/alias debido a que xa existen atallos cara este ficheiro.';
-$string['errornotyourfile'] = 'Non pode seleccionar un ficheiro que non teña sido engadido por vostede';
+$string['errordoublereference'] = 'Non é posíbel sobrescribir un ficheiro cun atallo/alias debido a que xa existen atallos cara a este ficheiro.';
+$string['errornotyourfile'] = 'Só pode seleccionar os ficheiros que engadiu vostede.';
 $string['errorpostmaxsize'] = 'O ficheiro enviado excede a directiva post_max_size en php.ini.';
 $string['erroruniquename'] = 'O nome da instancia de repositorio debe ser único';
 $string['errorwhilecommunicatingwith'] = 'Produciuse un erro ao comunicar co repositorio «{$a}».';
@@ -131,7 +131,7 @@ $string['filesaved'] = 'O ficheiro foi gardado';
 $string['filesizenull'] = 'Non foi posíbel determinar o tamaño do ficheiro';
 $string['folderexists'] = 'Este nome de cartafol xa está empregado. empregue outro nome';
 $string['foldernotfound'] = 'Non se atopou o cartafol';
-$string['folderrecurse'] = 'Non é posíbel mover un cartafol cara un subcartafol propio';
+$string['folderrecurse'] = 'Non é posíbel mover un cartafol cara a un subcartafol propio';
 $string['getfile'] = 'Seleccionar este ficheiro';
 $string['getfiletimeout'] = 'Obter o tempo de espera do ficheiro';
 $string['help'] = 'Axuda';
@@ -230,9 +230,9 @@ $string['searchrepo'] = 'Buscar repositorio';
 $string['sectionbackup'] = 'Copias de seguranza da sección';
 $string['select'] = 'Seleccionar';
 $string['setmainfile'] = 'Estabelecer como ficheiro principal';
-$string['setmainfile_help'] = 'Se houber múltiples ficheiros no cartafol, o ficheiro principal é o que aparece ao ver a páxina. Outros ficheiros, coma as imaxes ou vídeos, poden  incrustarse dentro deste. No xestor de ficheiros, o ficheiro principal está indicado co seu título resaltado en negriñas.';
+$string['setmainfile_help'] = 'Se houber múltiples ficheiros no cartafol, o ficheiro principal é o que aparece ao ver a páxina. Outros ficheiros, coma as imaxes ou vídeos, poden incrustarse dentro deste. No xestor de ficheiros, o ficheiro principal está indicado co seu título resaltado en negriñas.';
 $string['settings'] = 'Axustes';
-$string['setupdefaultplugins'] = 'Configuración dos engadidos predeterminados de repositorio';
+$string['setupdefaultplugins'] = 'Axuste dos engadidos predeterminados de repositorio';
 $string['siteinstances'] = 'Instancias de repositorios do sitio';
 $string['size'] = 'Tamaño';
 $string['sourcekeymismatch'] = 'O URL de orixe non coincide coa chave de orixe.';

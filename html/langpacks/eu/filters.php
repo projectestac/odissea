@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filters', language 'eu', version '3.8'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,10 +52,10 @@ $string['doesnotcontain'] = 'ez daukana';
 $string['endswith'] = 'honela bukatzen da';
 $string['filterallwarning'] = 'Iragazkiak edukiez gain goiburuei ere aplikatzeak zure zerbitzariak egin beharreko lana handitu egiten du. Mesedez "Aplikatu" aukera tentuz erabili. Erabilera ohikoena iragazki eleanitzarena da.';
 $string['filtersettings'] = 'Iragazkien ezarpenak';
-$string['filtersettingsforin'] = 'Iragazkien ezarpenak honentzat: {$a->filter} eta hemen: {$a->context}';
 $string['filtersettings_help'] = 'Orri honek gunearen toki jakin batean iragazkiak gaitu edo desgaitzeko modua emango dizu.
 
 Iragazki batzuek ezarpen lokalak onartzen dituzte. Kasu horietan, izenaren ondoan ezarpenetarako esteka izango da.';
+$string['filtersettingsforin'] = 'Iragazkien ezarpenak honentzat: {$a->filter} eta hemen: {$a->context}';
 $string['filtersettingsin'] = 'Iragazkien ezarpenak hemen: {$a}';
 $string['firstaccess'] = 'Lehen sarrera';
 $string['globalrolelabel'] = '{$a->label} {$a->value} da';

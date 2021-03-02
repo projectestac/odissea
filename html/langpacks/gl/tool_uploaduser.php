@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'gl', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,12 +49,13 @@ $string['uploadpicture_cannotsave'] = 'Non é posíbel gardar a imaxe do usuario
 $string['uploadpicture_cannotunzip'] = 'Non é posíbel descomprimir o arquivo de imaxes.';
 $string['uploadpicture_invalidfilename'] = 'O nome do ficheiro de imaxe {$a} ten caracteres incorrectos. Foi omitido.';
 $string['uploadpicture_overwrite'] = 'Sobrescribir as imaxes do usuario?';
-$string['uploadpictures'] = 'Enviar imaxes do usuario';
-$string['uploadpictures_help'] = 'As imaxes dos usuarios poden cargarse masivamente mediante un arquivo zip. Estes arquivos debe ser nomeados en atención ao «atributo do usuario» escollido (username, idnumber, id) por exemplo usuario1234.jpg para un usuario co nome_de_usuario (username) usuario1234.';
 $string['uploadpicture_userfield'] = 'Atributo do usuario a utilizar para facelo coincidir coas imaxes:';
 $string['uploadpicture_usernotfound'] = 'O usuario co «{$a->userfield}» valor de «{$a->uservalue}» non existe. Foi omitido.';
 $string['uploadpicture_userskipped'] = 'Omitiuse o usuario {$a} (xa ten unha imaxe).';
 $string['uploadpicture_userupdated'] = 'Imaxe actualizada para o usuario {$a}.';
+$string['uploadpictures'] = 'Enviar imaxes do usuario';
+$string['uploadpictures_help'] = 'As imaxes dos usuarios poden cargarse masivamente mediante un arquivo zip. Estes arquivos debe ser nomeados en atención ao «atributo do usuario» escollido (username, idnumber, id) por exemplo usuario1234.jpg para un usuario co nome_de_usuario (username) usuario1234.';
+$string['uploaduser:uploaduserpictures'] = 'Enviar imaxes do usuario';
 $string['uploadusers'] = 'Cargar usuarios';
 $string['uploadusers_help'] = 'Para enviar os usuarios (e, opcionalmente, matriculalos en cursos) pode facerse por medio dun ficheiro de texto. O formato debe ser o seguinte:
 
@@ -64,7 +65,6 @@ $string['uploadusers_help'] = 'Para enviar os usuarios (e, opcionalmente, matric
 * Os nomes de campo necesarios son nome de usuario (username), contrasinal (password), nome propio (firstname), apelido (lastname) e correo (email)';
 $string['uploaduserspreview'] = 'Vista previa do envío de usuarios';
 $string['uploadusersresult'] = 'Resultados do envío de usuarios';
-$string['uploaduser:uploaduserpictures'] = 'Enviar imaxes do usuario';
 $string['useraccountupdated'] = 'Usuario actualizado';
 $string['useraccountuptodate'] = 'Usuario ata hoxe';
 $string['userdeleted'] = 'Eliminado o usuario';
@@ -93,8 +93,8 @@ $string['uupasswordcron'] = 'Xerado en cron';
 $string['uupasswordnew'] = 'Novo contrasinal de usuario';
 $string['uupasswordold'] = 'Xa existe un contrasinal deste usuario';
 $string['uustandardusernames'] = 'Estandarizar os nomes de usuario';
-$string['uuupdateall'] = 'Omitir con ficheiro e valores predeterminados';
-$string['uuupdatefromfile'] = 'Omitir con ficheiro';
+$string['uuupdateall'] = 'Substituír polo ficheiro e valores predeterminados';
+$string['uuupdatefromfile'] = 'Substituír polo ficheiro';
 $string['uuupdatemissing'] = 'Enches os datos ausentes desde un ficheiro e valores predeterminados';
 $string['uuupdatetype'] = 'Detalles de usuario existente';
 $string['uuusernametemplate'] = 'Modelo de nome de usuario';

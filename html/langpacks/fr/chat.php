@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'chat', language 'fr', version '3.8'.
  *
- * @package   chat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     chat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,13 +36,13 @@ $string['chat:chat'] = 'Accéder à un salon de chat';
 $string['chat:deletelog'] = 'Supprimer les journaux des chats';
 $string['chat:exportparticipatedsession'] = 'Exporter les sessions de chat auxquelles vous avez participé';
 $string['chat:exportsession'] = 'Exporter toutes les sessions de chat';
+$string['chat:readlog'] = 'Consulter les journaux des chats';
+$string['chat:talk'] = 'Participer à un chat';
+$string['chat:view'] = 'Consulter les activités chat';
 $string['chatintro'] = 'Description';
 $string['chatname'] = 'Nom de ce salon';
-$string['chat:readlog'] = 'Consulter les journaux des chats';
 $string['chatreport'] = 'Sessions de chat';
-$string['chat:talk'] = 'Participer à un chat';
 $string['chattime'] = 'Prochaine session';
-$string['chat:view'] = 'Consulter les activités chat';
 $string['compact'] = 'Compact';
 $string['composemessage'] = 'Composer un message';
 $string['configmethod'] = 'La méthode de chat AJAX fournit une interface AJAX pour le chat, qui contacte régulièrement le serveur pour actualiser l\'affichage. La méthode normale de chat contacte également régulièrement le serveur pour actualiser l\'affichage. Aucune configuration n\'est nécessaire et cela fonctionne partout. En revanche, cela induit une charge importante du serveur, notamment s\'il y a de nombreux participants au chat. L\'utilisation d\'un « démon » sur le serveur nécessite l\'accès à l\'environnement de commande Unix, mais offre en contrepartie un chat rapide et extensible.';
@@ -72,13 +72,13 @@ $string['explainmethodnormal'] = 'Ces réglages ne sont effectifs que si vous av
 $string['generalconfig'] = 'Configuration générale';
 $string['idle'] = 'En attente';
 $string['indicator:cognitivedepth'] = 'Chat : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Chat.';
 $string['indicator:cognitivedepthdef'] = 'Chat : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Chat » (niveaux : pas de vue, vue, envoi, vue du feedback, commentaire du feedback).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Chat.';
 $string['indicator:socialbreadth'] = 'Chat : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Chat.';
 $string['indicator:socialbreadthdef'] = 'Chat : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Chat » (niveaux : pas de participation, participant seul, participant avec d\'autres).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Chat.';
 $string['inputarea'] = 'Zone de saisie';
 $string['invalidid'] = 'Salon de chat introuvable !';
 $string['list_all_sessions'] = 'Lister toutes les sessions.';
@@ -108,8 +108,8 @@ Les chats sont particulièrement utiles lorsque le groupe ne peut pas se rencont
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Ne pas effacer les messages';
 $string['nextsession'] = 'Prochaine session prévue';
-$string['nochat'] = 'Aucun chat trouvé';
 $string['no_complete_sessions_found'] = 'Aucune session complète trouvée.';
+$string['nochat'] = 'Aucun chat trouvé';
 $string['noguests'] = 'Ce salon n\'est pas ouvert aux visiteurs anonymes';
 $string['nomessages'] = 'Pas encore de messages';
 $string['nopermissiontoseethechatlog'] = 'Vous n\'avez pas les permissions requises pour consulter les journaux de chat.';

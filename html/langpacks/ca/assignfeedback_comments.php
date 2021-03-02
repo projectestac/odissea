@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_comments', language 'ca', version '3.8'.
  *
- * @package   assignfeedback_comments
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_comments
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['commentinline'] = 'Comentaris intercalats';
+$string['commentinline_help'] = 'Si activeu aquesta opció, el text de la tramesa es copiarà durant la qualificació en el camp de comentaris de retroalimentació, de manera que resulti fàcil inserir comentaris intercalats (utilitzant un color diferent, potser) o editar el text original.';
 $string['commentinlinedefault'] = 'Comentaris intercalats per defecte';
 $string['commentinlinedefault_help'] = 'Si activeu aquesta opció, la funció de comentaris intercalats s\'habilitarà per defecte en totes les tasques noves.';
-$string['commentinline_help'] = 'Si activeu aquesta opció, el text de la tramesa es copiarà durant la qualificació en el camp de comentaris de retroalimentació, de manera que resulti fàcil inserir comentaris intercalats (utilitzant un color diferent, potser) o editar el text original.';
 $string['default'] = 'Habilitat per defecte';
 $string['default_help'] = 'Si està actiu, aquest mètode de retroalimentació s\'habilitarà per defecte per a totes les tasques noves.';
 $string['enabled'] = 'Comentaris de retroalimentació';

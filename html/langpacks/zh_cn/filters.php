@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filters', language 'zh_cn', version '3.8'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,10 +51,10 @@ $string['doesnotcontain'] = '不包含';
 $string['endswith'] = '以...结束';
 $string['filterallwarning'] = '对标题和内容使用过滤器会大大增加您的服务器的负荷。请谨慎使用“应用到”设置。其主要用途是针对multilang过滤器。';
 $string['filtersettings'] = '过滤器设置';
-$string['filtersettingsforin'] = '在{$a->context}中过滤器{$a->filter}的设置';
 $string['filtersettings_help'] = '本页使您可以在本站指定部分打开或关闭过滤器。
 
 可能有些过滤器允许您做局部设置，在它们的名字后面会有一个设置链接。';
+$string['filtersettingsforin'] = '在{$a->context}中过滤器{$a->filter}的设置';
 $string['filtersettingsin'] = '{$a}中的过滤器设置';
 $string['firstaccess'] = '第一次访问';
 $string['globalrolelabel'] = '{$a->label}是： {$a->value}';

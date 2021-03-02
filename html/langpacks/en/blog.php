@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'en', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -158,17 +158,17 @@ $string['privacy:metadata:post:usermodified'] = 'The user who last modified the 
 $string['privacy:path:blogassociations'] = 'Associated blog posts';
 $string['privacy:unknown'] = 'Unknown';
 $string['publishto'] = 'Publish to';
+$string['publishto_help'] = 'There are 3 options:
+
+* Yourself (draft) - Only you and the administrators can see this entry
+* Anyone on this site - Anyone who is registered on this site can read this entry
+* Anyone in the world - Anyone, including guests, could read this entry';
 $string['publishtocourse'] = 'Users sharing a course with you';
 $string['publishtocourseassoc'] = 'Members of the associated course';
 $string['publishtocourseassocparam'] = 'Members of {$a}';
 $string['publishtogroup'] = 'Users sharing a group with you';
 $string['publishtogroupassoc'] = 'Your group members in the associated course';
 $string['publishtogroupassocparam'] = 'Your group members in {$a}';
-$string['publishto_help'] = 'There are 3 options:
-
-* Yourself (draft) - Only you and the administrators can see this entry
-* Anyone on this site - Anyone who is registered on this site can read this entry
-* Anyone in the world - Anyone, including guests, could read this entry';
 $string['publishtonoone'] = 'Yourself (draft)';
 $string['publishtosite'] = 'Anyone on this site';
 $string['publishtoworld'] = 'Anyone in the world';

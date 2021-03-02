@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'ko', branch 'MOODLE_36_STABLE'
+ * Strings for component 'block_community', language 'ko', version '3.8'.
  *
- * @package   block_community
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_community
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,7 +49,7 @@ $string['courses'] = '강좌';
 $string['coverage'] = '태그: {$a}';
 $string['donotrestore'] = '복구않함';
 $string['dorestore'] = '복구함';
-$string['download'] = '내려받기';
+$string['download'] = '다운로드';
 $string['downloadable'] = '내려받을 수 있는 강좌';
 $string['downloadablecourses'] = '다운로드 가능한 강좌들';
 $string['downloadconfirmed'] = '백업이 {$a} 로 저장됨';
@@ -88,8 +88,8 @@ $string['nocourse'] = '강좌 없음';
 $string['noratings'] = '등급 없음';
 $string['operation'] = '작동';
 $string['orderby'] = '정렬방식';
-$string['orderbyeldest'] = '가장오래된';
 $string['orderby_help'] = '검색 결과가 표시되는 순서';
+$string['orderbyeldest'] = '가장오래된';
 $string['orderbyname'] = '이름';
 $string['orderbynewest'] = '가장 최신의';
 $string['orderbypublisher'] = '공개자';

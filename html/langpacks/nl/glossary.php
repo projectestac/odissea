@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'nl', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,9 +39,9 @@ $string['allentries'] = 'Alles';
 $string['allowcomments'] = 'Commentaar toevoegen toelaten';
 $string['allowcomments_help'] = '<p>Het is mogelijk om leerlingen commentaar te laten toevoegen bij items in de woordenlijst.</p>
 <p>Je kunt kiezen om deze optie in te schakelen of niet.</p>';
-$string['allowduplicatedentries'] = 'Woord meer keren invoegen toelaten';
+$string['allowduplicatedentries'] = 'Woord mag meerdere keren voorkomen';
 $string['allowduplicatedentries_help'] = 'Indien ingeschakeld kunnen meerder items dezelfde conceptnaam hebben.';
-$string['allowprintview'] = 'Afdrukbare versie tonen toelaten';
+$string['allowprintview'] = 'Afdrukbare versie tonen';
 $string['allowprintview_help'] = '<p>Je kunt leerlingen toelaten een afdrukbare versie van de woordenlijst te zien.</p>
 
 <p>Je kunt ervoor kiezen deze optie in te schakelen of uit te schakelen.</p>
@@ -101,7 +101,7 @@ $string['completionentriesdesc'] = 'Leerling moet minstens {$a} items invoeren.'
 $string['completionentriesgroup'] = 'Items eisen';
 $string['concept'] = 'Concept';
 $string['concepts'] = 'Concepten';
-$string['configenablerssfeeds'] = 'Met deze instelling kun je de mogelijkheid voor het maken van RSS-feeds inschakelen voor alle woordenlijsten. Je zult wel nog voor elke woordenlijst afzonderlijk het maken van de RSS-feeds moeten inschakelen.';
+$string['configenablerssfeeds'] = 'Met deze instelling kun je RSS-feeds inschakelen voor alle woordenlijsten. Je zult wel nog voor elke woordenlijst afzonderlijk de RSS-feeds moeten inschakelen.';
 $string['current'] = 'Gesorteerd op {$a}';
 $string['currentglossary'] = 'Huidige woordenlijst';
 $string['date'] = 'datum';
@@ -125,14 +125,6 @@ $string['destination'] = 'Bestemming van geïmporteerde items';
 $string['destination_help'] = 'Items kunnen geïmporteerd worden en toegevoegd worden aan de huidige woordenlijst of aan een nieuwe woordenlijst. In dat laatste geval  zal een nieuwe woordenlijst gemaakt worden, gebaseerd op de informatie uit het gekozen XML-bestand .';
 $string['disapprove'] = 'Goedkeuring ongedaan maken';
 $string['displayformat'] = 'Kies opmaak';
-$string['displayformatcontinuous'] = 'Volledige lijst zonder auteur';
-$string['displayformatdefault'] = 'Standaard hetzelfde als opmaakformaat';
-$string['displayformatdictionary'] = 'Gewone, woordenboekstijl';
-$string['displayformatencyclopedia'] = 'Encyclopedie';
-$string['displayformatentrylist'] = 'Lijst met items';
-$string['displayformatfaq'] = 'FAQ';
-$string['displayformatfullwithauthor'] = 'Volledig met auteur';
-$string['displayformatfullwithoutauthor'] = 'Volledig zonder auteur';
 $string['displayformat_help'] = 'Er zijn 7 opmaakformaten:
 
 * Eenvoudig, woordenboekstijl - Er worden geen auteurs getoond en bijlagen worden als links getoond
@@ -142,6 +134,14 @@ $string['displayformat_help'] = 'Er zijn 7 opmaakformaten:
 * Encyclopedie - Zoals \'volledig met auteur\', maar met afbeeldingen als bijlage getoond op de pagina
 * Itemlijst - De concepten getoond als links
 * FAQ - De woorden VRAAG en ANTWOORD worden toegevoegd aan het concept en aan de definitie';
+$string['displayformatcontinuous'] = 'Volledige lijst zonder auteur';
+$string['displayformatdefault'] = 'Standaard hetzelfde als opmaakformaat';
+$string['displayformatdictionary'] = 'Gewone, woordenboekstijl';
+$string['displayformatencyclopedia'] = 'Encyclopedie';
+$string['displayformatentrylist'] = 'Lijst met items';
+$string['displayformatfaq'] = 'FAQ';
+$string['displayformatfullwithauthor'] = 'Volledig met auteur';
+$string['displayformatfullwithoutauthor'] = 'Volledig zonder auteur';
 $string['displayformats'] = 'Bekijk opmaakmogelijkheden';
 $string['displayformatssetup'] = 'Instellingen van de opmaakmogelijkheden';
 $string['duplicatecategory'] = 'Dupliceer categorie';
@@ -160,7 +160,7 @@ $string['entry'] = 'Invoer';
 $string['entryalreadyexist'] = 'Item bestaat al';
 $string['entryapproved'] = 'Dit item is goedgekeurd';
 $string['entrydeleted'] = 'Item verwijderd';
-$string['entryexported'] = 'Item met succes geëxporteerd';
+$string['entryexported'] = 'Item exporteren gelukt';
 $string['entryishidden'] = '(dit item is verborgen)';
 $string['entryleveldefaultsettings'] = 'Standaardinstellingen invoer';
 $string['entrylink'] = 'Item link: {$a}';
@@ -214,20 +214,20 @@ $string['glossary:approve'] = 'Items goedkeuren of goedgekeurde items verwerpen'
 $string['glossary:comment'] = 'Commentaar toevoegen';
 $string['glossary:export'] = 'Items exporteren';
 $string['glossary:exportentry'] = 'Exporteer één item';
-$string['glossary:exportownentry'] = 'Exporteer één item van jouw';
+$string['glossary:exportownentry'] = 'Exporteer één item van jou';
 $string['glossary:import'] = 'Items importeren';
-$string['glossaryleveldefaultsettings'] = 'Standaardinstellingen woordenlijst';
 $string['glossary:managecategories'] = 'Categorieën beheren';
 $string['glossary:managecomments'] = 'Commentaren beheren';
 $string['glossary:manageentries'] = 'Items beheren';
 $string['glossary:rate'] = 'Items beoordelen';
-$string['glossarytype'] = 'Type woordenlijst';
-$string['glossarytype_help'] = 'Een hoofdwoordenlijst is een woordenlijst waarin items van secundaire woordenlijsten kunnen geïmporteerd worden. Als het importeren van woordenlijstitems niet nodig is, dan mogen alle woordenlijsten in de cursus secundaire woordenlijsten zijn.';
 $string['glossary:view'] = 'Woordenlijsten bekijken';
 $string['glossary:viewallratings'] = 'Bekijk alle ruwe beoordelingsresultaten';
 $string['glossary:viewanyrating'] = 'Bekijk de totalen van de beoordelingsresultaten';
 $string['glossary:viewrating'] = 'Jouw beoordelingen bekijken';
 $string['glossary:write'] = 'Nieuwe items toevoegen';
+$string['glossaryleveldefaultsettings'] = 'Standaardinstellingen woordenlijst';
+$string['glossarytype'] = 'Type woordenlijst';
+$string['glossarytype_help'] = 'Een hoofdwoordenlijst is een woordenlijst waarin items van secundaire woordenlijsten kunnen geïmporteerd worden. Als het importeren van woordenlijstitems niet nodig is, dan mogen alle woordenlijsten in de cursus secundaire woordenlijsten zijn.';
 $string['guestnoedit'] = 'Gasten mogen geen woordenlijsten bewerken';
 $string['importcategories'] = 'Importeer categorieën';
 $string['importedcategories'] = 'Geïmporteerde categorieën';
@@ -236,13 +236,13 @@ $string['importentries'] = 'Importeer inhoud';
 $string['importentriesfromxml'] = 'Items importeren uit XML-bestand';
 $string['includegroupbreaks'] = 'Scheiding invoegen';
 $string['indicator:cognitivedepth'] = 'Woordenlijst cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Woordenlijst activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Woordenlijst cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de verklarende woordenlijstactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Woordenlijst activiteit.';
 $string['indicator:socialbreadth'] = 'Woordenlijst sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Woordenlijst activiteit.';
 $string['indicator:socialbreadthdef'] = 'Woordenlijst sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de maatschappelijke betrokkenheid van de verklarende woordenlijstactiviteiten tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Woordenlijst activiteit.';
 $string['isglobal'] = 'Is dit een globale woordenlijst?';
 $string['isglobal_help'] = '<p>Enkel beheerders en andere gebruikers met de mogelijkheid site:doanything toegelaten kunnen een globale woordenlijst definiëren.</p>
 

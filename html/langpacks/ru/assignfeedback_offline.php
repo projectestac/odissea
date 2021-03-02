@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_offline', language 'ru', version '3.8'.
  *
- * @package   assignfeedback_offline
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_offline
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['feedbackupdate'] = 'Установить в поле «{$a->field}» д
 $string['gradelockedingradebook'] = 'Оценка для {$a} была заблокирована в журнале оценок';
 $string['graderecentlymodified'] = 'Оценка для {$a} в Moodle была изменена позже, чем в ведомости';
 $string['gradesfile'] = 'Ведомость с оценками (формат CSV)';
-$string['gradesfile_help'] = 'Ведомость с измененными оценками. Этот файл в формате CSV, который был скачан с этим заданием должен содержать столбцы для оценок студента и идентификатора. Кодировка файла должна быть «UTF-8».';
+$string['gradesfile_help'] = 'Ведомость с измененными оценками. Это файл в формате CSV, который был скачан с этим заданием должен содержать столбцы для оценок студента и идентификатора. Кодировка файла должна быть «UTF-8».';
 $string['gradeupdate'] = 'Установить студенту {$a->student} оценку {$a->grade}';
 $string['ignoremodified'] = 'Разрешить обновление записей, которые были изменены в Moodle раньше, чем в ведомости.';
 $string['ignoremodified_help'] = 'При скачивании из Moodle ведомости оценок, она содержит дату последнего изменения каждой из оценок. Если любая из оценок обновляются в Moodle и после этого ведомость скачивается и изменяется, то по умолчанию Moodle откажется переписывать эту обновленную информацию при импорте оценок. При выборе этой опции в Moodle будет отключена такая проверка сохранности, и это может дать возможность нескольким оценщикам перезаписывать оценки друг друга.';

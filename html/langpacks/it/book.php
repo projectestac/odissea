@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'book', language 'it', version '3.8'.
  *
- * @package   book
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     book
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,13 +52,13 @@ $string['eventchapterupdated'] = 'Aggiornato capitolo';
 $string['eventchapterviewed'] = 'Visualizzato capitolo';
 $string['hidechapter'] = 'Nascondi il capitolo "{$a}"';
 $string['indicator:cognitivedepth'] = 'Libro cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Libro.';
 $string['indicator:cognitivedepthdef'] = 'Libro cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dall\'attività Compito (Livelli: Nessuna visualizzazione, Visualizzazione)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Libro.';
 $string['indicator:socialbreadth'] = 'Libro sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse Libro.';
 $string['indicator:socialbreadthdef'] = 'Libro sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Libro (Livelli: Nessuna partecipazione, Partecipazione da solo)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse Libro.';
 $string['modulename'] = 'Libro';
 $string['modulename_help'] = 'Il modulo libro consente ad un docente di creare risorse multi pagina componendole, similmente ad un libro, in capitoli e paragrafi.
 I libri possono contenere file multimediali e testi e sono indicati per contenuti corposi da suddividere in diverse sezioni.
@@ -80,8 +80,8 @@ $string['navoptions_desc'] = 'Opzioni per la visualizzazione della navigazione n
 $string['navprev'] = 'Pagina precedente';
 $string['navprevtitle'] = 'Precedente: {$a}';
 $string['navstyle'] = 'Stile della navigazione';
-$string['navstyle_help'] = '* Immagini - Per la navigazione saranno usare icone
-* Testo - Per la navigazione saranno usati i titolo dei capitoli';
+$string['navstyle_help'] = '* Immagini - Per la navigazione saranno usate icone
+* Testo - Per la navigazione saranno usati i titoli dei capitoli';
 $string['navtext'] = 'Testo';
 $string['navtoc'] = 'Solo TOC';
 $string['nocontent'] = 'Questo libro al momento non ha contenuti.';
@@ -109,7 +109,7 @@ $string['subchapter'] = 'Paragrafo';
 $string['subchapternotice'] = '(Disponibile solo dopo la creazione del primo capitolo)';
 $string['subplugintype_booktool'] = 'Tool libro';
 $string['subplugintype_booktool_plural'] = 'Tool libro';
-$string['tagarea_book_chapters'] = 'Capitolo dei libri';
+$string['tagarea_book_chapters'] = 'Capitoli del libro';
 $string['tagsdeleted'] = 'I tag del libro sono stati eliminati';
 $string['toc'] = 'Sommario';
 $string['top'] = 'Ritorna su';

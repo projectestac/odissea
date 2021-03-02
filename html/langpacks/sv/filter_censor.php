@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,16 +12,19 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_censor', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filter_censor', language 'sv', version '3.8'.
  *
- * @package   filter_censor
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filter_censor
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'Censur av ord';
+$string['badwords'] = 'shit,fucked,fucker,fuck,dickhead,dick,cockhead,cock,cunt,asshole,arsehole,,bitch,jism,whore,wanker,wank,bastard,dildo,masturbate,orgasm,penis,nigger,pussy,kuk,fitta,neger,blatte,spagge,skäggbarn,svarting,svartskalle,hora,invandrarjävel,negerhora,invandrarhora,blattehora,blattejävel';
+$string['filtername'] = 'Ordcensur';
+$string['privacy:metadata'] = 'Pluginmodulen Ordcensur lagrar ingen personlig data.';

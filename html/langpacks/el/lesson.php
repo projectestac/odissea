@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'el', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,8 +64,8 @@ $string['addtruefalse'] = 'Δημιουργία μιας σελίδας ερώτ
 $string['allotheranswers'] = 'Όλες οι άλλες απαντήσεις';
 $string['allotheranswersjump'] = 'Όλες οι άλλες απαντήσεις προκαλούν μεταπήδηση';
 $string['allotheranswersscore'] = 'Όλες οι άλλες απαντήσεις βαθμολογούνται';
-$string['allowofflineattempts'] = 'Να επιτρέπεται εκτός σύνδεσης χρήση της διδασκαλίας με χρήση της εφαρμογής κινητού';
-$string['allowofflineattempts_help'] = 'Αν ενεργοποιηθεί, ένας χρήστης της εφαρμογής κινητού μπορεί να κατεβάσει τη διδασκαλία και να την προσπαθήσει εκτός σύνδεσης. Όλες οι πιθανές απαντήσεις καθώς και οι σωστές αποκρίσεις θα κατεβούν επίσης. Σημείωση: Δεν είναι δυνατόν για μια διδασκαλία να επιχειρηθεί εκτός σύνδεσης αν έχει όριο χρόνου.';
+$string['allowofflineattempts'] = 'Να επιτρέπεται παρακολούθηση της διδασκαλίας χωρίς σύνδεση με χρήση της εφαρμογής κινητού';
+$string['allowofflineattempts_help'] = 'Αν ενεργοποιηθεί, ένας χρήστης της εφαρμογής κινητού μπορεί να κατεβάσει τη διδασκαλία και να την προσπαθήσει χωρίς σύνδεση. Όλες οι πιθανές απαντήσεις καθώς και οι σωστές αποκρίσεις θα κατεβούν επίσης. Σημείωση: Δεν είναι δυνατόν για μια διδασκαλία να επιχειρηθεί χωρίς σύνδεση αν έχει όριο χρόνου.';
 $string['anchortitle'] = 'Αρχή κύριου περιεχόμενου';
 $string['and'] = 'ΚΑΙ';
 $string['answer'] = 'Απάντηση';
@@ -117,7 +117,7 @@ $string['collapsed'] = 'Συμπτυγμένο';
 $string['comments'] = 'Τα σχόλιά σας';
 $string['completed'] = 'Ολοκληρώθηκε';
 $string['completederror'] = 'Ολοκληρώστε την διδασκαλία';
-$string['completethefollowingconditions'] = 'Πρέπει να εκπληρώνετε τις ακόλουθες προϋποθέσεις(η) στην <b>{$a}</b> διδασκαλία προκειμένου να συνεχίσετε.';
+$string['completethefollowingconditions'] = 'Πρέπει να εκλπληρώνετε τις ακόλουθες προϋποθέσεις(η) στην <b>{$a}</b> διδασκαλία προκειμένου να συνεχίσετε.';
 $string['completionendreached'] = 'Να απαιτείται φτάσιμο στο τέλος';
 $string['completionendreached_desc'] = 'Ο μαθητής πρέπει να φτάσει στο τέλος της διδασκαλίας για να ολοκληρώσει αυτήν τη δραστηριότητα.';
 $string['completiontimespent'] = 'Ο μαθητής πρέπει να κάνει αυτή τη δραστηριότητα τουλάχιστον για';
@@ -209,7 +209,7 @@ $string['enterpassword'] = 'Παρακαλούμε εισάγετε τον κω�
 $string['eolstudentoutoftime'] = 'Προσοχή: Βγήκατε εκτός χρόνου σε αυτή την διδασκαλία. Η τελευταία απάντησή σας μπορεί να μη μετρήσει αν δόθηκε μετά το τέλος του χρόνου.';
 $string['eolstudentoutoftimenoanswers'] = 'Δεν απαντήσατε καμία ερώτηση. Πήρατε 0 σε αυτήν τη διδασκαλία.';
 $string['essay'] = 'Έκθεση';
-$string['essayemailmessage2'] = '<p>Προτροπή έκθεσης:<blockquote>{$a->question}</blockquote></p><p>Η απόκρισή σας:<blockquote><em>{$a->response}</em></blockquote></p><p>Τα σχόλια του βαθμολογητή:<blockquote><em>{$a->comment}</em></blockquote></p><p>Πήρατε {$a->earned} στα {$a->outof} για αυτήν την ερώτηση έκθεσης.</p><p>Ο βαθμός σας στην διδασκαλία έχει αλλάξει σε {$a->newgrade}%.</p>';
+$string['essayemailmessage2'] = '<p>Έκθεση:<blockquote>{$a->question}</blockquote></p><p>Η απόκρισή σας:<blockquote><em>{$a->response}</em></blockquote></p><p>Τα σχόλια του βαθμολογητή:<blockquote><em>{$a->comment}</em></blockquote></p><p>Πήρατε {$a->earned} στα {$a->outof} για αυτήν την ερώτηση έκθεσης.</p><p>Ο βαθμός σας στην διδασκαλία έχει αλλάξει σε {$a->newgrade}%.</p>';
 $string['essayemailmessagesmall'] = '<p>Έχετε λάβει {$a->earned} από {$a->outof} για αυτή την ερώτηση.</p><p>Ο βαθμός σας για το μάθημα {$a->lesson} έχει αλλάξει σε {$a->newgrade}%.</p>';
 $string['essayemailsubject'] = 'Οι διαθέσιμοι βαθμοί για την ερώτηση μαθήματος';
 $string['essaynotgradedyet'] = 'Αυτή η έκθεση δεν έχει βαθμολογηθεί ακόμη';
@@ -269,15 +269,15 @@ $string['importquestions'] = 'Εισαγωγή ερωτήσεων';
 $string['importquestions_help'] = 'Αυτό το χαρακτηριστικό επιτρέπει την εισαγωγή ερωτήσεων σε διάφορες μορφές μέσω αρχείου κειμένου.';
 $string['inactiveoverridehelp'] = '* Αυτή η παράκαμψη είναι ανενεργή, επειδή η πρόσβαση του χρήστη στη δραστηριότητα είναι περιορισμένη. Αυτό μπορεί να οφείλεται σε αναθέσεις ομάδων ή ρόλων, σε άλλους περιορισμούς πρόσβασης ή στην απόκρυψη της δραστηριότητας.';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης διδασκαλίας';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα διδασκαλίας.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης διδασκαλίας';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Διδασκαλίας κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση, Υποβολή, Εμφάνιση ανατροφοδότησης, Σχόλιο στην ανατροφοδότηση, Επανυποβολή μετά την εμφάνιση της ανατροφοδότησης)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα διδασκαλίας.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος διδασκαλίας';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα διδασκαλίας.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος διδασκαλίας';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Διδασκαλίας κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος, Συμμετέχων με άλλους)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα διδασκαλίας.';
 $string['insertedpage'] = 'Εισαχθείσα σελίδα';
 $string['invalidfile'] = 'Μη έγκυρο αρχείο';
 $string['invalidid'] = 'Δεν δόθηκε κανένα αναγνωριστικό αρθρώματος μαθήματος ή αναγνωριστικό διδασκαλίας';
@@ -288,20 +288,22 @@ $string['jump'] = 'Μεταπήδηση';
 $string['jumps'] = 'Μεταπηδήσεις';
 $string['jumps_help'] = 'Κάθε απάντηση (για ερωτήσεις) ή περιγραφή (για σελίδες περιεχομένου) έχει αντίστοιχη μεταπήδηση. Η μεταπήδηση μπορεί να είναι σχετική, όπως αυτή η (τρέχουσα) σελίδα ή η επόμενη σελίδα, ή απόλυτη, καθορίζοντας οποιαδήποτε από τις σελίδες του μαθήματος.';
 $string['jumpsto'] = 'Μεταπήδηση σε <em>{$a}</em>';
-$string['leftduringtimed'] = 'Αποχωρήσατε κατά τη διάρκεια χρονομετρημένης διδασκαλίας. <br />Παρακαλούμε, πατήστε Συνέχεια για να επανεκκινήσετε την διδασκαλία.';
-$string['leftduringtimednoretake'] = 'Αποχωρήσατε κατά τη διάρκεια χρονομετρημένης διδασκαλίας και <br />δεν έχετε το δικαίωμα να επαναλάβετε ή να συνεχίσετε την διδασκαλία.';
+$string['leftduringtimed'] = 'Αποχωρήσατε κατά τη διάρκεια χρονομετρημένης διδασκαλίας. <br />Παρακαλούμε, πατήστε Συνέχεια για να επανεκκινήσετε την ενότητα.';
+$string['leftduringtimednoretake'] = 'Αποχωρήσατε κατά τη διάρκεια χρονομετρημένης διδασκαλίας και <br />δεν έχετε το δικαίωμα να επαναλάβεται ή να συνεχίσετε την ενότητα.';
 $string['leftduringtimedsession'] = 'Έχετε φύγει κατά τη διάρκεια μιας χρονομετρημένης διδασκαλίας.';
 $string['lesson:addinstance'] = 'Προσθήκη μιας νέας διδασκαλίας';
-$string['lessonclosed'] = 'Αυτή η διδασκαλία έκλεισε {$a}.';
-$string['lessoncloses'] = 'Κλείσιμο διδασκαλίας';
-$string['lessoncloseson'] = 'Η διδασκαλία κλείνει στις {$a}';
-$string['lesson:edit'] = 'Επεξεργασία μιας δραστηριότητας διδασκαλίας';
-$string['lessoneventcloses'] = 'Λήγει {$a}';
-$string['lessoneventopens'] = 'Ξεκινά {$a}';
-$string['lessonformating'] = 'Μορφοποίηση διδασκαλίας';
+$string['lesson:edit'] = 'Επεξεργασία δραστηριότητας διδασκαλίας';
 $string['lesson:grade'] = 'Βαθμολόγηση ερωτήσεων έκθεσης της διδασκαλίας';
 $string['lesson:manage'] = 'Διαχείριση δραστηριότητας διδασκαλίας';
 $string['lesson:manageoverrides'] = 'Διαχείριση παρακάμψεων διδασκαλίας';
+$string['lesson:view'] = 'Εμφάνιση δραστηριότητας της διδασκαλίας';
+$string['lesson:viewreports'] = 'Εμφάνιση αναφορών της διδασκαλίας';
+$string['lessonclosed'] = 'Αυτή η διδασκαλία έκλεισε {$a}.';
+$string['lessoncloses'] = 'Κλείσιμο διδασκαλίας';
+$string['lessoncloseson'] = 'Η διδασκαλία κλείνει στις {$a}';
+$string['lessoneventcloses'] = 'Λήγει {$a}';
+$string['lessoneventopens'] = 'Ξεκινά {$a}';
+$string['lessonformating'] = 'Μορφοποίηση διδασκαλίας';
 $string['lessonmenu'] = 'Μενού διδασκαλίας';
 $string['lessonname'] = 'Διδασκαλία: {$a}';
 $string['lessonnotready'] = 'Η διδασκαλία δεν είναι έτοιμη για παρακολούθηση. Παρακαλούμε επικοινωνήστε με τον/την {$a} σας.';
@@ -310,8 +312,6 @@ $string['lessonopen'] = 'Αυτή η διδασκαλία θα είναι ανο
 $string['lessonopens'] = 'Άνοιγμα διδασκαλίας';
 $string['lessonpagelinkingbroken'] = 'Δεν βρέθηκε η πρώτη σελίδα. Η σύνδεση με τη σελίδα της διδασκαλίας μάλλον έχει διακοπεί. Παρακαλούμε επικοινωνήστε με έναν διαχειριστή.';
 $string['lessonstats'] = 'Στατιστικά διδασκαλίας';
-$string['lesson:view'] = 'Εμφάνιση δραστηριότητας της διδασκαλίας';
-$string['lesson:viewreports'] = 'Εμφάνιση αναφορών της διδασκαλίας';
 $string['linkedmedia'] = 'Συνδεδεμένα πολυμέσα';
 $string['loginfail'] = 'Αποτυχημένη σύνδεση. Παρακαλούμε προσπαθήστε ξανά...';
 $string['lowscore'] = 'Χαμηλό σκορ';
@@ -329,7 +329,7 @@ $string['maximumnumberofattempts_help'] = 'Αυτή η ρύθμιση καθορ
 $string['maximumnumberofattemptsreached'] = 'Συμπληρώθηκε ο μέγιστος αριθμός προσπαθειών - Μετάβαση στην επόμενη σελίδα';
 $string['mediaclose'] = 'Εμφάνιση κουμπιού εξόδου';
 $string['mediafile'] = 'Συνδεδεμένα πολυμέσα';
-$string['mediafile_help'] = 'Ένα αρχείο πολυμέσων μπορεί να ανεβεί για χρήση στη διδασκαλία. Ένας σύνδεσμος «Κάντε κλικ εδώ για εμφάνιση» θα εμφανίζεται κατόπιν σε ένα μπλοκ με όνομα «Συνδεδεμένα πολυμέσα» σε κάθε σελίδα της διδασκαλίας.';
+$string['mediafile_help'] = 'Ένα αρχείο πολυμέσων μπορεί να ανεβεί για χρήση στη διδασκαλία. Ένας σύνδεσμος «Κάντε κλικ εδώ για προβολή» θα εμφανίζεται κατόπιν σε ένα μπλοκ με όνομα «Συνδεδεμένα πολυμέσα» σε κάθε σελίδα της διδασκαλίας.';
 $string['mediafilepopup'] = 'Πατήστε εδώ για εμφάνιση';
 $string['mediaheight'] = 'Ύψος αναδυόμενου παραθύρου';
 $string['mediawidth'] = 'Πλάτος αναδυόμενου παραθύρου';
@@ -397,15 +397,17 @@ $string['numberofcorrectanswers'] = 'Αριθμός σωστών απαντήσ�
 $string['numberofcorrectanswersheader'] = 'Αριθμός σωστών απαντήσεων';
 $string['numberofcorrectmatches'] = 'Αριθμός σωστών αντιστοιχιών: {$a}';
 $string['numberofpagestoshow'] = 'Αριθμός σελίδων προς εμφάνιση';
-$string['numberofpagestoshow_help'] = 'Αυτή η ρύθμιση καθορίζει τον αριθμό των σελίδων που εμφανίζονται σε μία διδασκαλία. Εφαρμόζεται μόνο σε διδασκαλίες με σελίδες που εμφανίζονται με τυχαία σειρά (όταν η «Ενέργεια μετά από σωστή απάντηση» είναι ορισμένη σε «Εμφάνισε μια σελίδα που δεν έχει ξαναεμφανιστεί» ή «Εμφάνισε μια σελίδα που δεν έχει ξανα-απαντηθεί». Αν οριστεί σε 0, τότε εμφανίζονται όλες οι σελίδες.';
+$string['numberofpagestoshow_help'] = 'Αυτή η ρύθμιση καθορίζει τον αριθμό των σελίδων που εμφανίζονται σε σε μία διδασκαλία. Εφαρμόζεται μόνο σε διδασκαλίες με σελίδες που εμφανίζονται με τυχαία σειρά (όταν η «Ενέργεια μετά από σωστή απάντηση» είναι ορισμένη σε «Εμφάνισε μια σελίδα που δεν έχει ξαναεμφανιστεί» ή «Εμφάνισε μια σελίδα που δεν έχει ξανα-απαντηθεί». Αν οριστεί σε 0, τότε εμφανίζονται όλες οι σελίδες.';
 $string['numberofpagesviewed'] = 'Αριθμός απαντημένων ερωτήσεων: {$a}';
 $string['numberofpagesviewedheader'] = 'Αριθμός απαντημένων ερωτήσεων';
 $string['numberofpagesviewednotice'] = 'Αριθμός απαντημένων ερωτήσεων: {$a->nquestions} (Πρέπει να απαντήσετε τουλάχιστον: {$a->minquestions})';
 $string['numerical'] = 'Αριθμητικός';
+$string['numericanswer'] = 'Αριθμητική απάντηση';
+$string['numericanswer_help'] = 'Μπορείτε να καθορίσετε έναν μεμονωμένο αριθμό ή μια περιοχή αριθμών χρησιμοποιώντας άνω και κάτω τελεία. Για παράδειγμα, 2:5 σημαίνει ότι οποιαδήποτε απάντηση μεταξύ 2 και 5 συμπεριλαμβανομένων των 2 και 5 είναι σωστή.';
 $string['offlinedatamessage'] = 'Έχετε εργαστεί σε αυτήν την προσπάθεια χρησιμοποιώντας μια κινητή συσκευή. Τα δεδομένα αποθηκεύτηκαν για τελευταία φορά σε αυτόν τον ιστότοπο {$a}. Ελέγξτε ότι δεν έχετε καμία μη αποθηκευμένη εργασία.';
 $string['ongoing'] = 'Εμφάνιση τρέχοντος σκορ';
-$string['ongoingcustom'] = 'Έχετε πάρει {$a->score} από τους {$a->currenthigh} πόντους μέχρι τώρα.';
 $string['ongoing_help'] = 'Εάν ενεργοποιηθεί, κάθε σελίδα θα εμφανίσει τους τρέχοντες βαθμούς του μαθητή από το σύνολο που είναι δυνατό μέχρι τώρα.';
+$string['ongoingcustom'] = 'Έχετε πάρει {$a->score} από τους {$a->currenthigh} πόντους μέχρι τώρα.';
 $string['ongoingnormal'] = 'Έχετε απαντήσει {$a->correct} σωστά από τις {$a->viewed} προσπάθειες.';
 $string['onpostperpage'] = 'Μια ανάρτηση μόνο ανά βαθμό';
 $string['openafterclose'] = 'Έχετε ορίσει ημερομηνία έναρξης μετά την ημερομηνία λήξης';
@@ -430,11 +432,11 @@ $string['overview_help'] = 'Ένα μάθημα αποτελείται από π
 Μια σελίδα περιεχομένου είναι μια σελίδα που περιέχει ένα σύνολο συνδέσμων σε άλλες σελίδες του μαθήματος,
 για παράδειγμα έναν Πίνακα περιεχομένων.';
 $string['page'] = 'Σελίδα: {$a}';
-$string['pageanswers'] = 'Απαντήσεις σελίδας';
-$string['pagecontents'] = 'Περιεχόμενα σελίδας';
 $string['page-mod-lesson-edit'] = 'Επεξεργασία σελίδας διδασκαλίας';
 $string['page-mod-lesson-view'] = 'Εμφάνιση ή προεπισκόπηση σελίδας διδασκαλίας';
 $string['page-mod-lesson-x'] = 'Οποιαδήποτε σελίδα διδασκαλίας';
+$string['pageanswers'] = 'Απαντήσεις σελίδας';
+$string['pagecontents'] = 'Περιεχόμενα σελίδας';
 $string['pageresponses'] = 'Αποκρίσεις σελίδας';
 $string['pages'] = 'Σελίδες';
 $string['pagetitle'] = 'Τίτλος σελίδας';
@@ -523,7 +525,7 @@ $string['returnto'] = 'Επιστροφή στο {$a}';
 $string['returntocourse'] = 'Επιστροφή στο μάθημα';
 $string['reverttodefaults'] = 'Επαναφορά στις προεπιλογές διδασκαλίας';
 $string['review'] = 'Ανασκόπηση';
-$string['reviewlesson'] = 'Ανασκόπηση της διδασκαλίας';
+$string['reviewlesson'] = 'Ανασκόπιση της διδασκαλίας';
 $string['reviewquestionback'] = 'Ναι, θα ήθελα να δοκιμάσω πάλι';
 $string['reviewquestioncontinue'] = 'Όχι, θα ήθελα να πάω στην επόμενη ερώτηση';
 $string['sanitycheckfailed'] = 'Αποτυχημένος έλεγχος λογικής ορθότητας: Αυτή η προσπάθεια έχει διαγραφεί';
@@ -546,9 +548,9 @@ $string['showanunseenpage'] = 'Εμφάνιση μιας σελίδας που �
 $string['singleanswer'] = 'Μίας απάντησης';
 $string['skip'] = 'Παράληψη πλοήγησης';
 $string['slideshow'] = 'Προβολή διαφανειών';
+$string['slideshow_help'] = 'Εάν ενεργοποιηθεί, η διδασκαλία εμφανίζεται ως παρουσίαση διαφανειών, με σταθερό πλάτος και ύψος.';
 $string['slideshowbgcolor'] = 'Χρώμα υπόβαθρου της προβολής διαφανειών';
 $string['slideshowheight'] = 'Ύψος προβολής διαφανειών';
-$string['slideshow_help'] = 'Εάν ενεργοποιηθεί, η διδασκαλία εμφανίζεται ως παρουσίαση διαφανειών, με σταθερό πλάτος και ύψος.';
 $string['slideshowwidth'] = 'Πλάτος προβολής διαφανειών';
 $string['startlesson'] = 'Έναρξη διδασκαλίας';
 $string['studentattemptlesson'] = 'Αριθμός προσπάθειας {$a->attempt} του χρήστη {$a->firstname} {$a->lastname}';

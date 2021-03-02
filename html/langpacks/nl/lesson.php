@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'nl', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -95,7 +95,7 @@ $string['cannotfindfirstpage'] = 'Kon eerste pagina niet vinden';
 $string['cannotfindgrade'] = 'Fout: kon cijfers niet vinden';
 $string['cannotfindnewestgrade'] = 'Fout: kon nieuwste cijfer niet vinden';
 $string['cannotfindnextpage'] = 'Lesback-up: volgende pagina niet gevonden';
-$string['cannotfindpagerecord'] = 'Pagina-record aan het einde van de vertakking niet gevonden';
+$string['cannotfindpagerecord'] = 'Voeg het einde van een tak toe: pagina-record niet gevonden';
 $string['cannotfindpages'] = 'Kon lespagina\'s niet vinden';
 $string['cannotfindpagetitle'] = 'Bevesting verwijderen: paginatitel niet gevonden';
 $string['cannotfindpreattempt'] = 'Record van vorige poging niet gevondden!';
@@ -200,8 +200,8 @@ $string['editshortanswer'] = 'Bewerk een kort antwoordpagina';
 $string['edittruefalse'] = 'Bewerk een waar/niet waar vraagpagina';
 $string['email'] = 'E-mail';
 $string['emailallgradedessays'] = 'E-mail ALLE beoordeelde werken';
-$string['emailgradedessays'] = 'E-mail de werken met een cijfer';
-$string['emailsuccess'] = 'E-mails goed verzonden';
+$string['emailgradedessays'] = 'E-mail de beoordeling';
+$string['emailsuccess'] = 'E-mails verzenden gelukt';
 $string['emptypassword'] = 'Wachtwoord kan niet leeg zijn';
 $string['enabled'] = 'Ingeschakeld';
 $string['endofbranch'] = 'Einde vertakking';
@@ -273,13 +273,13 @@ $string['importquestions'] = 'Importeer vragen';
 $string['importquestions_help'] = 'Met deze functie kun je vragen importeren uit tekstbestanden.';
 $string['inactiveoverridehelp'] = '* Deze overschrijving is niet actief omdat de toegang tot de activiteit beperkt is voor deze gebruiker. Dit kan te wijten zijn aan roltoewijzingen, andere toegangsbeperkingen of de activiteit die verborgen is.';
 $string['indicator:cognitivedepth'] = 'Les cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Les activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Les cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de lesactiviteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden, Feedback bekijken, Reageren op feedback, Opnieuw verzenden na het bekijken van feedback)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Les activiteit.';
 $string['indicator:socialbreadth'] = 'Les sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Les activiteit.';
 $string['indicator:socialbreadthdef'] = 'Les sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de lesactiviteiten tijdens dit analyse-interval bereikt (niveaus = geen deelname, alleen deelnemer, deelnemer met anderen)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Les activiteit.';
 $string['insertedpage'] = 'Pagina ingevoegd';
 $string['invalidfile'] = 'Ingeldig bestand';
 $string['invalidid'] = 'Geen cursusmodule ID of le ID is doorgegeven';
@@ -294,16 +294,18 @@ $string['leftduringtimed'] = 'Je bent weggegaan tijdens een getimede les. <br />
 $string['leftduringtimednoretake'] = 'Je bent weggegaan tijdens een getimede les.  <br />Je mag niet verder werken.';
 $string['leftduringtimedsession'] = 'Je bent weggegaan tijdens een getimede les';
 $string['lesson:addinstance'] = 'Voeg een nieuwe les toe';
-$string['lessonclosed'] = 'Deze les sluit op {$a}.';
-$string['lessoncloses'] = 'Les sluit';
-$string['lessoncloseson'] = 'Les sluit op {$a}';
 $string['lesson:edit'] = 'Bewerk een les';
-$string['lessoneventcloses'] = '{$a} sluit';
-$string['lessoneventopens'] = '{$a} opent';
-$string['lessonformating'] = 'Opmaken van de les';
 $string['lesson:grade'] = 'Cijfer van de open vragen van de les';
 $string['lesson:manage'] = 'Beheer een les';
 $string['lesson:manageoverrides'] = 'Beheer lesoverschrijvingen';
+$string['lesson:view'] = 'Bekijk lesactiviteit';
+$string['lesson:viewreports'] = 'Toon lesrapporten';
+$string['lessonclosed'] = 'Deze les sluit op {$a}.';
+$string['lessoncloses'] = 'Les sluit';
+$string['lessoncloseson'] = 'Les sluit op {$a}';
+$string['lessoneventcloses'] = '{$a} sluit';
+$string['lessoneventopens'] = '{$a} opent';
+$string['lessonformating'] = 'Opmaken van de les';
 $string['lessonmenu'] = 'Lesmenu';
 $string['lessonname'] = 'Les: {$a}';
 $string['lessonnotready'] = 'Deze les is nog niet klaar. Contacteer aub je {$a}';
@@ -312,8 +314,6 @@ $string['lessonopen'] = 'Deze les zal openen op {$a}.';
 $string['lessonopens'] = 'Les opent';
 $string['lessonpagelinkingbroken'] = 'Eerste pagina niet gevonden. Waarschijnlijk is de link naar de lespagina gebroken. Contacteer een beheerder';
 $string['lessonstats'] = 'Statistieken van de les';
-$string['lesson:view'] = 'Bekijk lesactiviteit';
-$string['lesson:viewreports'] = 'Toon lesrapporten';
 $string['linkedmedia'] = 'Gelinkte media';
 $string['loginfail'] = 'Login mislukt. Probeer nog eens...';
 $string['lowscore'] = 'Laagste score';
@@ -359,7 +359,7 @@ $string['movedpage'] = 'Pagina verplaatst';
 $string['movepagehere'] = 'Verplaats de pagina naar hier';
 $string['movepagenamed'] = 'Verplaats pagina: {$a}';
 $string['moving'] = 'Bezig met pagina {$a} verplaatsen';
-$string['multianswer'] = 'Meer antwoorden';
+$string['multianswer'] = 'Meervoudig antwoord';
 $string['multianswer_help'] = 'Vink het selectievakje aan als er meer dan één juist antwoord is.';
 $string['multichoice'] = 'Meerkeuze';
 $string['multipleanswer'] = 'Meer antwoorden';
@@ -413,8 +413,8 @@ $string['numericanswer'] = 'Numeriek antwoord';
 $string['numericanswer_help'] = 'Je kunt een nummer of een reeks nummers specificeren door een dubbele punt te gebruiken. Bijvoorbeeld 2: 5 betekent dat elk antwoord tussen 2 en 5 inclusief het juiste is.';
 $string['offlinedatamessage'] = 'Je hebt aan deze poging gewerkt met een mobiel toestel. De laatste gegevens hierover zijn op deze site {$a} geleden bewaard. Controleer of je geen onbewaard werk hebt.';
 $string['ongoing'] = 'Toon het huidige cijfer';
-$string['ongoingcustom'] = 'Dit is een les op {$a->score} punten. Je hebt nu al {$a->score} punten verdiend van de {$a->currenthigh} punten die er tot nu toe te verdienen waren.';
 $string['ongoing_help'] = 'Indien ingeschakeld, zal elke pagina het huidig aantal verdiende punten uit het mogelijk totaal tonen.';
+$string['ongoingcustom'] = 'Dit is een les op {$a->score} punten. Je hebt nu al {$a->score} punten verdiend van de {$a->currenthigh} punten die er tot nu toe te verdienen waren.';
 $string['ongoingnormal'] = 'Je hebt {$a->correct} vragen van de {$a->viewed} juist beantwoord.';
 $string['onpostperpage'] = 'Slechts één bericht per cijfer';
 $string['openafterclose'] = 'Je hebt een startdatum opgegeven na de einddatum';
@@ -435,11 +435,11 @@ $string['overview'] = 'Overzicht';
 $string['overview_help'] = 'Een les is opgebouwd uit een aantal pagina\'s en optioneel een aantal inhoudspagina\'s. Een pagina bevat een zekere inhoud en eindigt gewoonlijk met een vraag.
 Aan elk antwoord op de vraag is een sprong verbonden. De sprong kan relatief zijn, zoals deze pagina of volgende pagina, of absoluut verwijzen naar om het even welke pagina in de les. Een inhoudspagina is een pagina die een reeks links naar andere pagina\'s in de les bevat, zoals bijvoorbeeld een inhoudsopgave.';
 $string['page'] = 'Pagina: {$a}';
-$string['pageanswers'] = 'Pagineer antwoorden';
-$string['pagecontents'] = 'Inhoud van de pagina';
 $string['page-mod-lesson-edit'] = 'Bewerk lespagina';
 $string['page-mod-lesson-view'] = 'Bekijk of bekijk voorbeeld van lespagina';
 $string['page-mod-lesson-x'] = 'Elke lespagina';
+$string['pageanswers'] = 'Pagineer antwoorden';
+$string['pagecontents'] = 'Inhoud van de pagina';
 $string['pageresponses'] = 'Pagineer reacties';
 $string['pages'] = 'Pagina\'s';
 $string['pagetitle'] = 'Titel van de pagina';
@@ -557,10 +557,10 @@ $string['showanunseenpage'] = 'Toon een ongeziene pagina';
 $string['singleanswer'] = 'Eén enkel antwoord';
 $string['skip'] = 'Sla navigatie over';
 $string['slideshow'] = 'Diavoorstelling';
-$string['slideshowbgcolor'] = 'Achtergrondkleur van de diavoorstelling';
-$string['slideshowheight'] = 'Hoogte van de diavoorstelling';
 $string['slideshow_help'] = '<p>Hiermee kun je de les als een diavoorstelling tonen, met een vaste breedte, hoogte en een aangepaste achtergrondkleur. Een op CSS gebaseerde rolbalk wordt getoond als de breedte of hoogte van de dia overschreden wordt door de inhoud van de pagina.
 Standaard worden vragen niet getoond in een diavoorstelling, alleen vertakkingstabellen verschijnen. Knoppen met labels voor "Terug" en "Verder" worden links en rechts van de dia getoond als die optie gekozen is. Andere knoppen worden in het midden van de dia geplaatst.</p>';
+$string['slideshowbgcolor'] = 'Achtergrondkleur van de diavoorstelling';
+$string['slideshowheight'] = 'Hoogte van de diavoorstelling';
 $string['slideshowwidth'] = 'Breedte van de diavoorstelling';
 $string['startlesson'] = 'Start de les';
 $string['studentattemptlesson'] = 'Pogingnummer {$a->attempt} van {$a->lastname}, {$a->firstname}';

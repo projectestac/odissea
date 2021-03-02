@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'en', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,10 +64,10 @@ $string['enablemessaging'] = 'Group messaging';
 $string['enablemessaging_help'] = 'If enabled, group members can send messages to the others in their group via the messaging drawer.';
 $string['encoding'] = 'Encoding';
 $string['enrolmentkey'] = 'Enrolment key';
-$string['enrolmentkeyalreadyinuse'] = 'This enrolment key is already used for another group.';
 $string['enrolmentkey_help'] = 'An enrolment key enables access to the course to be restricted to only those who know the key. If a group enrolment key is specified, then not only will entering that key let the user into the course, but it will also automatically make them a member of this group.
 
 Note: Group enrolment keys must be enabled in the self enrolment settings and an enrolment key for the course must also be specified.';
+$string['enrolmentkeyalreadyinuse'] = 'This enrolment key is already used for another group.';
 $string['erroraddremoveuser'] = 'Error adding/removing user {$a} to group';
 $string['erroreditgroup'] = 'Error creating/updating group {$a}';
 $string['erroreditgrouping'] = 'Error creating/updating grouping {$a}';
@@ -97,9 +97,9 @@ $string['groupinfo'] = 'Info about selected group';
 $string['groupinfomembers'] = 'Info about selected members';
 $string['groupinfopeople'] = 'Info about selected people';
 $string['grouping'] = 'Grouping';
+$string['grouping_help'] = 'A grouping is a collection of groups within a course. If a grouping is selected, students assigned to groups within the grouping will be able to work together.';
 $string['groupingaddedsuccesfully'] = 'Grouping {$a} added successfully';
 $string['groupingdescription'] = 'Grouping description';
-$string['grouping_help'] = 'A grouping is a collection of groups within a course. If a grouping is selected, students assigned to groups within the grouping will be able to work together.';
 $string['groupingname'] = 'Grouping name';
 $string['groupingnameexists'] = 'The grouping name \'{$a}\' already exists in this course, please choose another one.';
 $string['groupings'] = 'Groupings';
@@ -112,8 +112,6 @@ $string['groupmembers'] = 'Group members';
 $string['groupmemberssee'] = 'See group members';
 $string['groupmembersselected'] = 'Members of selected group';
 $string['groupmode'] = 'Group mode';
-$string['groupmodeforce'] = 'Force group mode';
-$string['groupmodeforce_help'] = 'If group mode is forced, then the course group mode is applied to every activity in the course. Group mode settings in each activity are then ignored.';
 $string['groupmode_help'] = 'This setting has 3 options:
 
 * No groups
@@ -121,6 +119,8 @@ $string['groupmode_help'] = 'This setting has 3 options:
 * Visible groups - Each group member works in their own group, but can also see other groups
 
 The group mode defined at course level is the default mode for all activities within the course. Each activity that supports groups can also define its own group mode, though if the group mode is forced at course level, the group mode setting for each activity is ignored.';
+$string['groupmodeforce'] = 'Force group mode';
+$string['groupmodeforce_help'] = 'If group mode is forced, then the course group mode is applied to every activity in the course. Group mode settings in each activity are then ignored.';
 $string['groupmy'] = 'My group';
 $string['groupname'] = 'Group name';
 $string['groupnameexists'] = 'The group name \'{$a}\' already exists in this course, please choose another one.';
@@ -168,8 +168,8 @@ $string['nogroupsassigned'] = 'No groups assigned';
 $string['nopermissionforcreation'] = 'Can\'t create group "{$a}" as you don\'t have the required permissions';
 $string['nosmallgroups'] = 'Prevent last small group';
 $string['notingroup'] = 'Ignore users in groups';
-$string['notingrouping'] = '[Not in a grouping]';
-$string['notingrouplist'] = '[Not in a group]';
+$string['notingrouping'] = 'Not in a grouping';
+$string['notingrouplist'] = 'Not in a group';
 $string['nousersinrole'] = 'There are no suitable users in the selected role';
 $string['number'] = 'Group/member count';
 $string['numgroups'] = 'Number of groups';

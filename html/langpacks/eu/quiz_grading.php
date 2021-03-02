@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'eu', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,23 +49,23 @@ $string['graded'] = '(kalifikatuta)';
 $string['gradenextungraded'] = 'Kalifikatu gabeko hurrengo {$a} saiakerak kalifikatu';
 $string['gradeungraded'] = 'Kalifikatu gabeko {$a} saiakera guztiak kalifikatu';
 $string['grading'] = 'Eskuzko kalifikazioa';
+$string['grading:componentname'] = 'Eskuzko kalifikazio-txostena';
+$string['grading:viewidnumber'] = 'Ikusi ikasleen ID zenbakiak kalifikatu bitartean';
+$string['grading:viewstudentnames'] = 'Ikusi ikasleen izenak kalifikatu bitartean';
 $string['gradingall'] = '{$a} saiakera guztiak galdera honetarako.';
 $string['gradingattempt'] = '{$a->fullname}-(r)en {$a->attempt} saiakera-zenbakia';
 $string['gradingattemptsxtoyofz'] = 'Saiakerak kalifikatzen {$a->from}-tik {$a->to}-ra, guztira {$a->of}';
 $string['gradingattemptwithidnumber'] = '{$a->attempt} saiakera-zenbakia {$a->fullname}-rentzat ({$a->idnumber})';
-$string['grading:componentname'] = 'Eskuzko kalifikazio-txostena';
 $string['gradingnextungraded'] = 'Kalifikatu gabeko hurrengo {$a} saiakerak';
 $string['gradingnotallowed'] = 'Ez duzu baimenik galdetegi honetan erantzunak eskuz kalifikatzeko';
 $string['gradingquestionx'] = '{$a->number} galdera kalifikatzen: {$a->questionname}';
 $string['gradingreport'] = 'Eskuzko kalifikazioaren txostena';
 $string['gradingungraded'] = 'Kalifikatu gabeko {$a} saiakera';
 $string['gradinguser'] = 'Saiakerak honentzat: {$a}';
-$string['grading:viewidnumber'] = 'Ikusi ikasleen ID zenbakiak kalifikatu bitartean';
-$string['grading:viewstudentnames'] = 'Ikusi ikasleen izenak kalifikatu bitartean';
 $string['hideautomaticallygraded'] = 'Ezkutatu automatikoki kalifikatutako galderak';
 $string['inprogress'] = 'Ari da';
 $string['invalidattemptid'] = 'Ez dago ID saiakera hori';
-$string['invalidquestionid'] = '{$a} IDa duen galdera kalifikagarririk ez dago';
+$string['invalidquestionid'] = '{$a} IDa duen galdera kalifikagarria ez da aurkitu';
 $string['noquestionsfound'] = 'Ez da eskuz kalifikatutako galderarik aurkitu';
 $string['nothingfound'] = 'Ez dago erakusteko ezer';
 $string['options'] = 'Aukerak';

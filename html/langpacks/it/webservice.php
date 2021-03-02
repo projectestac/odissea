@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'webservice', language 'it', version '3.8'.
  *
- * @package   webservice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     webservice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -95,7 +95,7 @@ $string['eventwebserviceserviceuserremoved'] = 'Eliminato utente servizio web se
 $string['eventwebservicetokencreated'] = 'Creato token web service';
 $string['eventwebservicetokensent'] = 'Inviato token web service';
 $string['execute'] = 'Esegui';
-$string['executewarnign'] = 'ATTENZIONE: premendo il pulsante Esegui il database sarà modificato e le modiche apportate non potranno essere annullate automaticamente!';
+$string['executewarnign'] = 'ATTENZIONE: premendo il pulsante Esegui il database sarà modificato e le modiche apportate non potranno essere annullate automaticamente.';
 $string['externalservice'] = 'Servizio';
 $string['externalservicefunctions'] = 'Funzioni del servizio esterno';
 $string['externalservices'] = 'Gestione servizi';
@@ -121,7 +121,7 @@ $string['keyshelp'] = 'Le chiavi vengono usate per accedere il tuo account Moodl
 $string['loginrequired'] = 'Disponibile solo agli utenti autenticati';
 $string['manageprotocols'] = 'Gestione protocolli';
 $string['managetokens'] = 'Gestione token';
-$string['missingcaps'] = 'Privilegi mancanti.';
+$string['missingcaps'] = 'Privilegi mancanti';
 $string['missingcaps_help'] = 'Elenco dei privilegi richiesti per usare la funzione che non sono posseduti dall\'utente selezionato. Per usare il servizio devi assegnare all\'utente i privilegi mancanti.';
 $string['missingpassword'] = 'Password mancante';
 $string['missingrequiredcapability'] = 'E\' necessario il privilegio {$a}.';
@@ -200,11 +200,11 @@ $string['shortnametaken'] = 'Il nome breve è già usato da un altro servizio ({
 $string['simpleauthlog'] = 'Login con autenticazione semplice';
 $string['step'] = 'Passo';
 $string['supplyinfo'] = 'Ulteriori informazioni';
-$string['testauserwithtestclientdescription'] = 'Simula l\'accesso al web service dall\'esterno  tramite il client di test. Prima di effettuare il test, autenticati con un account che ha il privilegio "moodle/webservice:createtoken" e ottieni il token dell\'utente dalle impostazioni del profilo. Potrai usare questo token nel client di test, dove sceglierai anche il protocollo abilitato. <strong>Attenzione: la funzione che testerai SARA\' REALMENTE ESEGUITA per questo utente, fai molta attenzione su cosa scegli di provare!</strong>';
+$string['testauserwithtestclientdescription'] = 'Simula l\'accesso al web service dall\'esterno  tramite il client di test. Prima di effettuare il test, autenticarsi con un account che abbia il privilegio "moodle/webservice:createtoken" e ottenere il token dell\'utente, reperibile nelle impostazioni del profilo. Sarà possibile usare questo token nel client di test, dove si potrà selezionare anche il protocollo abilitato. <strong>Attenzione: la funzione SARA\' REALMENTE ESEGUITA, fare molta attenzione su cosa si sceglie di provare.</strong>';
 $string['testclient'] = 'Test Client web service';
 $string['testclientdescription'] = '* Il client di test web service  <strong>esegue</strong> le funzioni <strong>REALMENTE</strong>. Evitare di provare funzioni che non si conoscono.<br/>* Non tutte le funzioni web service sono supportate dal client di test. <br/>* Per testare se un utente non è abilitato ad accedere a determinate funzioni, provare con le funzioni che non gli sono consentite.<br/>* Per un debugging più approfondito, impostare il debug a <strong>{$a->mode}</strong> in {$a->atag}.';
 $string['testwithtestclient'] = 'Prova il funzionamento del servizio';
-$string['testwithtestclientdescription'] = 'Simula l\'accesso al web service dall\'esterno  tramite il client di test. Puoi utilizzare un protocollo abilitato con l\'autenticazione token.<strong>Attenzione: la funzione che testerai SARA\' REALMENTE ESEGUITA, fai molta attenzione su cosa scegli di provare!</strong>';
+$string['testwithtestclientdescription'] = 'Simula l\'accesso al web service dall\'esterno  tramite il client di test. E\' possibile utilizzare un protocollo abilitato con l\'autenticazione via token.<strong>Attenzione: la funzione SARA\' REALMENTE ESEGUITA, fare molta attenzione su cosa si sceglie di provare.</strong>';
 $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Autenticazione token';
 $string['tokencreatedbyadmin'] = 'Può essere reimpostata solo da un amministratore (*)';

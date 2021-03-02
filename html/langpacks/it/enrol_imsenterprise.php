@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'it', version '3.8'.
  *
- * @package   enrol_imsenterprise
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_imsenterprise
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['categoryseparator'] = 'Carattere di separazione delle categorie';
 $string['categoryseparator_desc'] = 'Il carattere di separazione delle categorie è obbligatorio se è abilitato anche il Codice identificativo della categoria.';
 $string['coursesettings'] = 'Opzioni del corso';
 $string['createnewcategories'] = 'Crea nuove categorie (nascoste) di corsi se non presenti in Moodle';
-$string['createnewcategories_desc'] = 'Se l\'elemento <org><orgunit> è presente nel file, il contenuto dell\'elemento sarà utilizzato per categorizzare i corsi da creare. La categorizzazione vale solo per i corsi nuovi, quelli già esistenti non saranno categorizzati nuovamente.
+$string['createnewcategories_desc'] = 'Se l\'elemento &lt;org&gt;&lt;orgunit&gt è presente nel file, il contenuto dell\'elemento sarà utilizzato per categorizzare i corsi da creare. La categorizzazione vale solo per i corsi nuovi, quelli già esistenti non saranno categorizzati nuovamente.
 
 Se non sono presenti categorie con il nome contenuto nell\'elemento, saranno create nuove categorie nascoste.';
 $string['createnewcourses'] = 'Crea nuovi corsi (nascosti) se non presenti in Moodle';
@@ -68,7 +68,7 @@ $string['nestedcategories'] = 'Consenti categorie nidificate';
 $string['nestedcategories_desc'] = 'IMS Enterprise creerà categorie nidificate';
 $string['pluginname'] = 'File IMS Enterprise';
 $string['pluginname_desc'] = 'Il plugin di iscrizione IMS Enterprise controlla ripetutamente la presenza di un file di testo in un dato percorso. Il file deve seguire le specifiche IMS Enterprise e contenere gli elementi XML relativi a persone, gruppi e appartenenza. ';
-$string['privacy:metadata'] = 'Il plugin di iscrizione "File IMS Enterprise" non memorizza dati personali.';
+$string['privacy:metadata'] = 'Il plugin di iscrizione File IMS Enterprise non memorizza dati personali.';
 $string['processphoto'] = 'Aggiungi una foto al profilo';
 $string['processphotowarning'] = 'ATTENZIONE: lavorare un\'immagine potrebbe aggravare il lavoro del server. Si raccomanda di NON attivare questa opzione se è previsto un elevato numero di utenti.';
 $string['restricttarget'] = 'Elabora i dati solo se destinati al sistema specificato';

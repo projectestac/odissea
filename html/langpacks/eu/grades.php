@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grades', language 'eu', version '3.8'.
  *
- * @package   grades
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grades
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,20 +57,6 @@ $string['aggregatesum'] = 'Naturala';
 $string['aggregateweightedmean'] = 'Kalifikazioen batez besteko ponderatua';
 $string['aggregateweightedmean2'] = 'Kalifikazioen batez besteko ponderatu sinplea';
 $string['aggregation'] = 'Agregazioa';
-$string['aggregationcoef'] = 'Agregazio-koefizientea';
-$string['aggregationcoefextra'] = 'Aparteko kreditua';
-$string['aggregationcoefextra_help'] = 'Agregazioa \'naturala\' edo \'batez besteko ponderatu sinplea\' bada eta aparteko kredituen laukitxoa markatuta badago, kalifikazio-elementuaren gehienezko kalifikazioa ez zaio batuko kategoriaren  gehienezko kalifikazioari. Ondorioz, posiblea izango da kategorian gehienezko kalifikazioa lortzea kalifikazio-elementu guztietan gehienezko kalifikazioa lortu gabe. Guneko kudeatzaileak gehienezko kalifikaziotik gorako kalifikazioak gaitu baditu gehienezko kalifikaziotik gorako kalifikazioak ere egon daitezke.
-
-Agregazioa kalifikazioen \'batez bestekoa (aparteko kredituekin)\' bada eta aparteko kredituak zerotik gorako balioa ezarrita badu, aparteko kreditu horrekin biderkatuko da kalifikazioa, media kalkulatu ondorengo guztirakoari gehitu aurretik.';
-$string['aggregationcoefextra_link'] = 'kalifikazioa/agregazioa';
-$string['aggregationcoefextrasum'] = 'Aparteko kreditua';
-$string['aggregationcoefextrasumabbr'] = '+';
-$string['aggregationcoefextrasum_help'] = 'Aparteko kredituen laukitxoa markatuta badago, kalifikazio-elementuaren gehienezko kalifikazioa ez zaio batuko kategoriaren  gehienezko kalifikazioari, eta beraz ezin izango da lortu gehienezko kalifikazioa (edo gehienezko kalifikaziotik gora, guneko kudeatzaileak gaitu badu) kategorian ez badu gehienezko kalifikazioa elementu guztietan.';
-$string['aggregationcoefextraweight'] = 'Aparteko kredituen pisua';
-$string['aggregationcoefextraweight_help'] = 'Aparteko kredituen pisuan 0tik gorako balio bat zehaztuz gero, kalifikazioak aparteko kredituen moduan erabiltzen da agregazioa egitean. Zenbaki horrekin biderkatuko da kalifikazioaren balioa kalifikazio guztien batuketari gaineratu aurretik.';
-$string['aggregationcoefweight'] = 'Elementuaren pisua';
-$string['aggregationcoefweight_help'] = 'Elementuaren pisua kategoriaren agregazioan erabiltzen da kategoria bereko beste kalifikazio-elementuekin alderatuta elementu horrek duen garrantzia nabarmentzeko.';
-$string['aggregationcoefweight_link'] = 'kalifikazioa/agregazioa';
 $string['aggregation_help'] = 'Agregazioak zehazten du kategoria bateko kalifikazioak nola lotzen diren, adibidez
 
 * Kalifikazioen batez bestekoa - Kalifikazio guztien batuketa zati kalifikazio-kopurua.
@@ -78,25 +64,39 @@ $string['aggregation_help'] = 'Agregazioak zehazten du kategoria bateko kalifika
 * Kalifikazio baxuena
 * Kalifikazio altuena
 * Kalifikazioen moda - Sarrien agertzen den kalifikazioa
-* Naturala - Kalifikazio balio guztien batuketa, eskala bidezko kalifikazioak alde batera utzita.';
+* Naturala - Kalifikazio balio guztien batuketa pisuaren arabera ponderatuta';
+$string['aggregation_link'] = 'kalifikazioa/agregazioa';
+$string['aggregationcoef'] = 'Agregazio-koefizientea';
+$string['aggregationcoefextra'] = 'Aparteko kreditua';
+$string['aggregationcoefextra_help'] = 'Agregazioa \'naturala\' edo \'batez besteko ponderatu sinplea\' bada eta aparteko kredituen laukitxoa markatuta badago, kalifikazio-elementuaren gehienezko kalifikazioa ez zaio batuko kategoriaren  gehienezko kalifikazioari. Ondorioz, posiblea izango da kategorian gehienezko kalifikazioa lortzea kalifikazio-elementu guztietan gehienezko kalifikazioa lortu gabe. Guneko kudeatzaileak gehienezko kalifikaziotik gorako kalifikazioak gaitu baditu gehienezko kalifikaziotik gorako kalifikazioak ere egon daitezke.
+
+Agregazioa kalifikazioen \'batez bestekoa (aparteko kredituekin)\' bada eta aparteko kredituak zerotik gorako balioa ezarrita badu, aparteko kreditu horrekin biderkatuko da kalifikazioa, media kalkulatu ondorengo guztirakoari gehitu aurretik.';
+$string['aggregationcoefextra_link'] = 'kalifikazioa/agregazioa';
+$string['aggregationcoefextrasum'] = 'Aparteko kreditua';
+$string['aggregationcoefextrasum_help'] = 'Aparteko kredituen laukitxoa markatuta badago, kalifikazio-elementuaren gehienezko kalifikazioa ez zaio batuko kategoriaren  gehienezko kalifikazioari, eta beraz ezin izango da lortu gehienezko kalifikazioa (edo gehienezko kalifikaziotik gora, guneko kudeatzaileak gaitu badu) kategorian ez badu gehienezko kalifikazioa elementu guztietan.';
+$string['aggregationcoefextrasumabbr'] = '+';
+$string['aggregationcoefextraweight'] = 'Aparteko kredituen pisua';
+$string['aggregationcoefextraweight_help'] = 'Aparteko kredituen pisuan 0tik gorako balio bat zehaztuz gero, kalifikazioak aparteko kredituen moduan erabiltzen da agregazioa egitean. Zenbaki horrekin biderkatuko da kalifikazioaren balioa kalifikazio guztien batuketari gaineratu aurretik.';
+$string['aggregationcoefweight'] = 'Elementuaren pisua';
+$string['aggregationcoefweight_help'] = 'Elementuaren pisua kategoriaren agregazioan erabiltzen da kategoria bereko beste kalifikazio-elementuekin alderatuta elementu horrek duen garrantzia nabarmentzeko.';
+$string['aggregationcoefweight_link'] = 'kalifikazioa/agregazioa';
 $string['aggregationhintdropped'] = '(Kokatua)';
 $string['aggregationhintexcluded'] = '(Baztertua)';
 $string['aggregationhintextra'] = '(Aparteko kreditua)';
 $string['aggregationhintnovalue'] = '(Hutsik)';
-$string['aggregation_link'] = 'kalifikazioa/agregazioa';
 $string['aggregationofa'] = '{$a}-(r)en agregazioa';
 $string['aggregationposition'] = 'Agregazioaren kokalekua';
 $string['aggregationposition_help'] = 'Ezarpen honek adierazten du kategoria eta ikastaroan guztirako zutabeak kalifikazio-liburuaren txostenaren hasieran edo amaieran agertuko diren.';
-$string['aggregationsvisible'] = 'Eskura dauden agregazio-motak';
+$string['aggregationsvisible'] = 'Eskura dauden agregazio motak';
 $string['aggregationsvisiblehelp'] = 'Aukeratu erabilgarri egongo diren agregazio-motak. Mantendu Ctrl tekla sakatuta hainbat elementu aukeratzeko.';
 $string['allgrades'] = 'Kalifikazio guztiak kategoriaka';
 $string['allstudents'] = 'Ikasle guztiak';
 $string['allusers'] = 'Erabiltzaile guztiak';
 $string['autosort'] = 'Automatikoki ordenatu';
-$string['availableidnumbers'] = 'Eskura dauden ID zenbakiak';
+$string['availableidnumbers'] = 'Eskuragarri dauden ID zenbakiak';
 $string['average'] = 'Batez bestekoa';
 $string['averagesdecimalpoints'] = 'Hamartarrak batez bestekoetan';
-$string['averagesdecimalpoints_help'] = 'Ezarpen honek bataz bestekoen zutabe bakoitzean erakutsiko diren hamartarren kopurua edo kategoria edo kalifikazio-elementu bakoitzean zehaztutakoa erabiliko den (zaharkituta).';
+$string['averagesdecimalpoints_help'] = 'Ezarpen honek bataz bestekoen zutabe bakoitzean erakutsiko diren hamartar-kopurua edo kategoria edo kalifikazio-elementu bakoitzean zehaztutakoa erabiliko den (zaharkituta).';
 $string['averagesdisplaytype'] = 'Batez bestekoak erakusteko modua';
 $string['averagesdisplaytype_help'] = 'Ezarpen honek zehazten du batez bestekoa (media) kalifikazio errealetan, ehunekotan edo letretan erakutsiko den ala kategoria edo kalifikazio-elementua erakusteko era erabiliko den (heredatua).';
 $string['backupwithoutgradebook'] = 'Segurtasun-kopiak ez ditu kalifikazio-liburuaren ezarpenak';
@@ -107,10 +107,10 @@ $string['bonuspoints'] = 'Bonifikazio-puntuak';
 $string['bulkcheckboxes'] = 'Egiaztapen masiboetarako laukitxoak';
 $string['calculatedgrade'] = 'Kalkulatutako kalifikazioa';
 $string['calculation'] = 'Kalkulua';
-$string['calculationadd'] = 'Gehitu kalkulua';
-$string['calculationedit'] = 'Editatu kalkulua';
 $string['calculation_help'] = 'Kalifikazioen kalkulua kalifikazioak ezartzeko erabiltzen den formula bat da. Formulak berdin (=) sinboloarekin hasi behar du eta ohiko eragiketa matematikoak erabiltzen ditu, besteak beste max, min and sum. Nahi izanez gero, beste kalifikazio-elementu batzuk sar daitezke kalkuluan horien ID zenbakiak bi kortxeteren artean idatzita.';
 $string['calculation_link'] = 'kalifikazioa/kalkulua';
+$string['calculationadd'] = 'Gehitu kalkulua';
+$string['calculationedit'] = 'Editatu kalkulua';
 $string['calculationsaved'] = 'Kalkulua gordeta';
 $string['calculationview'] = 'Ikusi kalkulua';
 $string['cannotaccessgroup'] = 'Ezin dira eskuratu aukeratutako taldearen kalifikazioa, sentitzen dugu.';
@@ -121,15 +121,15 @@ $string['categoryname'] = 'Kategoriaren izena';
 $string['categorytotal'] = 'Kategorian guztira';
 $string['categorytotalfull'] = '{$a->category} guztira';
 $string['categorytotalname'] = 'Kategorian guztira-rako izena';
-$string['changedefaults'] = 'Aldatu lehenetsitako balioak';
-$string['changereportdefaults'] = 'Aldatu txostenaren lehenetsitako balioak';
+$string['changedefaults'] = 'Aldatu berezko balioak';
+$string['changereportdefaults'] = 'Aldatu txostenaren berezko balioak';
 $string['chooseaction'] = 'Aukeratu ekintza bat...';
 $string['choosecategory'] = 'Aukeratu kategoria';
 $string['collapsecriterion'] = 'Tolestu irizpidea';
 $string['combo'] = 'Fitxak eta zabaltzen den menua';
 $string['compact'] = 'Konpaktatu';
 $string['componentcontrolsvisibility'] = 'Kalifikazio-elementu hau ezkutuan dagoen jardueraren ezarpenetatik kontrolatzen da.';
-$string['contract'] = 'Uzkurtu kategoria';
+$string['contract'] = 'Tolestu kategoria';
 $string['contributiontocoursetotal'] = 'Ikastaroaren denerako ekarpena';
 $string['controls'] = 'Kontrolak';
 $string['courseavg'] = 'Ikastaroaren batez bestekoa';
@@ -150,8 +150,8 @@ $string['creatinggradebooksettings'] = 'Kalifikazio-liburuaren ezarpenak sortzen
 $string['csv'] = 'CSV';
 $string['currentparentaggregation'] = 'Oraingo goragoko agregazioa';
 $string['curveto'] = 'Hona borobildu';
-$string['decimalpoints'] = 'Hamartar kopuru orokorra';
-$string['decimalpoints_help'] = 'Honek kalifikazio bakoitzean erakutsiko den hamartar kopurua zehazten du. Ez du eraginik kalifikazioen kalkuluetan 5 hamartarreko zehaztasunez egina baitago.';
+$string['decimalpoints'] = 'Hamartar-kopuru orokorra';
+$string['decimalpoints_help'] = 'Honek kalifikazio bakoitzean erakutsiko den hamartar-kopurua zehazten du. Ez du eraginik kalifikazioen kalkuluetan 5 hamartarreko zehaztasunez egina baitago.';
 $string['default'] = 'Lehenetsitakoa';
 $string['defaultprev'] = 'Balio lehenetsia ({$a})';
 $string['deletecategory'] = 'Ezabatu kategoria';
@@ -163,9 +163,9 @@ $string['displaypoints'] = 'Erakutsi puntuak';
 $string['displayweighted'] = 'Erakutsi kalifikazio ponderatuak';
 $string['dropdown'] = 'Zabaltzen den menua';
 $string['droplow'] = 'Baztertu baxuena';
+$string['droplow_help'] = 'Ezarpen honek X kalifikaziotik beherakoak agregaziotik baztertzea ahalbidetzen du.';
 $string['droplowestvalue'] = 'Ezarri kalifikazio-balio txikiena baztertzeko aukera';
 $string['droplowestvalues'] = 'Baztertu balio txikienak {$a}';
-$string['droplow_help'] = 'Ezarpen honek X kalifikaziotik beherakoak agregaziotik baztertzea ahalbidetzen du.';
 $string['dropped'] = 'Baztertuta';
 $string['dropxlowest'] = 'Baztertu X baino baxuagoak';
 $string['dropxlowestwarning'] = 'Oharra: \'X baino baxuagorik kontuan ez hartu\' erabiltzen baduzu, kalifikazioak kategoriako item guztiak gehienezko zenbakizko kalifikazio bera dutela suposatzen du. Zenbakizko kalifikazio horiek ezberdinak badira, emaitzak edonolakoak izango dira.';
@@ -199,7 +199,7 @@ $string['errorsavegrade'] = 'Ezin da kalifikazioa gorde, sentitzen dugu.';
 $string['errorsettinggrade'] = 'Errorea "{$a->itemname}" -(r)en kalifikazioa gordetzean {$a->userid} erabiltzailearentzat';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = 'Errorea {$a->id} ID kategoria-kalifikazioaren "Hutsik dauden kalifikazioak baino ez agregatu" ezarpena eguneratzean.';
 $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Errorea {$a->id} ID kategoria-kalifikazioaren "Sartu ikaste-emaitzak agregazioan" ezarpena eguneratzean.';
-$string['errorupdatinggradecategoryaggregation'] = 'Errorea {$a->id} IDdun kalifikazio-kategoriaren agregazio-mota eguneratzean';
+$string['errorupdatinggradecategoryaggregation'] = 'Errorea {$a->id} IDdun kalifikazio-kategoriaren agregazio mota eguneratzean';
 $string['errorupdatinggradeitemaggregationcoef'] = 'Errorea {$a->id} IDdun kalifikazio-elementuaren agregazio-koefizientea eguneratzean (pisua edo aparteko kreditua)';
 $string['eventgradedeleted'] = 'Kalifikazioa ezabatu da';
 $string['eventgradeitemcreated'] = 'Kalifikazio-elementua sortu da';
@@ -231,11 +231,11 @@ $string['externalurl_desc'] = 'Kanpoko kalifikazio-liburua erabiliz gero, hemen 
 $string['extracreditvalue'] = 'Aparteko kreditu-balioa {$a}rako';
 $string['extracreditwarning'] = 'Oharra: Kategoriko elementu guztiak krediturik gabe uzten badira, notaren kalkuluan ez dira kontuan hartuko eta, ondorioz, puntuazio orokorrik ez da izango';
 $string['feedback'] = 'Feedbacka';
+$string['feedback_help'] = 'Laukitxo honek aukera ematen du gahitutako kalifikazioari buruzko oharrak idazteko.';
 $string['feedbackadd'] = 'Gehitu feedbacka';
 $string['feedbackedit'] = 'Editatu feedbacka';
 $string['feedbackfiles'] = 'Feedback fitxategiak';
 $string['feedbackforgradeitems'] = '{$a}-(r)entzako feedbacka';
-$string['feedback_help'] = 'Laukitxo honek aukera ematen du gahitutako kalifikazioari buruzko oharrak idazteko.';
 $string['feedbackhistoryfiles'] = 'Feedbackaren historia-fitxategiak';
 $string['feedbacks'] = 'Feedbackak';
 $string['feedbacksaved'] = 'Feedbacka gordeta';
@@ -254,6 +254,7 @@ $string['full'] = 'Osoa';
 $string['fullmode'] = 'Aldatu ikuspegi osora';
 $string['generalsettings'] = 'Ezarpen orokorrak';
 $string['grade'] = 'Kalifikazioa';
+$string['grade_help'] = 'Ikasle honek bere lanagatik jaso behar duen kalifikazioa.';
 $string['gradeadministration'] = 'Kalifikazioen kudeaketa';
 $string['gradealreadyupdated'] = '{$a} kalifikazio ez dira inportatu fitxategiko kalifikazioak kalifikatzaile-txostenean daudenak baino zaharragoak direlako. Hala ere inportazioarekin aurrera egiteko, erabili behartu kalifikazioak inportatzea aukera.';
 $string['gradeanalysis'] = 'Kalifikazio-analisia';
@@ -285,8 +286,8 @@ $string['gradeexport'] = 'Kalifikazioak esportatu';
 $string['gradeexportcolumntype'] = '{$a->name} ({$a->extra})';
 $string['gradeexportcustomprofilefields'] = 'Profilaren eremu pertsonalizatuak kalifikazioen esportazioan';
 $string['gradeexportcustomprofilefields_desc'] = 'Sartu profilaren eremu pertsonalizatu hauek kalifikazioen esportazioan, komaz banatuta.';
-$string['gradeexportdecimalpoints'] = 'Kalifikazio-esportazioan erabili beharreko hamartar kopurua';
-$string['gradeexportdecimalpoints_desc'] = 'Esportaziorako erakutsi beharreko hamartar kopurua. Balio hau esportazioa egitean baliogabetu daiteke.';
+$string['gradeexportdecimalpoints'] = 'Kalifikazio-esportazioan erabili beharreko hamartar-kopurua';
+$string['gradeexportdecimalpoints_desc'] = 'Esportaziorako erakutsi beharreko hamartar-kopurua. Balio hau esportazioa egitean baliogabetu daiteke.';
 $string['gradeexportdisplaytype'] = 'Kalifikazio-esportazioa erakusteko modua';
 $string['gradeexportdisplaytype_desc'] = 'Kalifikazioak kalifikazio erreal gisa, ehunekotan (gehienezko eta gutxienezkoen arabera) edo letratan (A,B,C...) eman daitezke esportaziorako. Esportazioan zehar alde batera utzi daiteke hau.';
 $string['gradeexportdisplaytypes'] = 'Kalifikazioen esportazioa erakusteko motak';
@@ -295,7 +296,6 @@ $string['gradeexportuserprofilefields_desc'] = 'Sartu erabiltzailearen profilare
 $string['gradeforstudent'] = '{$a->student}<br />{$a->item}{$a->feedback}';
 $string['gradegrademinmax'] = 'Hasierako gutxieneko eta gehienezko kalifikazioak';
 $string['gradehelp'] = 'Kalifikazioei buruzko laguntza';
-$string['grade_help'] = 'Ikasle honek bere lanagatik jaso behar duen kalifikazioa.';
 $string['gradehistorylifetime'] = 'Kalifikazio-historiaren iraupena';
 $string['gradehistorylifetime_help'] = 'Lotutako kalifikazio-tauletan izandako aldaketen historiala zenbat denboraz mantendu nahi duzun zehazten du. Ahal beste mantentzea gomendatzen da. Funtzionamendu-arazoak edo datu-basean espazio txikia baduzu, saiatu balio txikiagoa ipintzen.';
 $string['gradeimport'] = 'Kalifikazioa inportatu';
@@ -330,8 +330,8 @@ $string['gradeoutcomeitem'] = 'Kalifikaziorako ikaste-emaitza elementuak';
 $string['gradeoutcomes'] = 'Ikaste-emaitzak';
 $string['gradeoutcomescourses'] = 'Ikastaroaren ikaste-emaitzak';
 $string['gradepass'] = 'Gainditzeko kalifikazioa';
-$string['gradepassgreaterthangrade'] = 'Gainditzeko kalifikazioa ezin da izan gehienezko kalifikazio posiblea baino handiagoa {$a}';
 $string['gradepass_help'] = 'Ezarpen honek zehazten du gainditzeko gutxienezko kalifikazioa. Balioa jarduera eta ikastaro-osaketan erabiltzen da, eta baita kalifikazio-liburuan, zeinetan gainditzeko kalifikazioak berdez markatzen diren eta gainditzen ez dutenak gorriz.';
+$string['gradepassgreaterthangrade'] = 'Gainditzeko kalifikazioa ezin da izan gehienezko kalifikazio posiblea baino handiagoa {$a}';
 $string['gradepointdefault'] = 'Lehenetsitako kalifikazioa';
 $string['gradepointdefault_help'] = 'Ezarpen honek jarduera baterako gehienezko zenbakizko kalifikazio eskuragarrirako lehenetsitako balioa zehazten du.';
 $string['gradepointdefault_validateerror'] = 'Balio honek 1 eta gehienezko puntuazioaren arteko zenbaki osoa izan behar du.';
@@ -351,13 +351,13 @@ $string['gradesmoduledeletionpendingwarning'] = 'Oharra: Jarduerak ezabatzen ari
 $string['gradesmoduledeletionprefix'] = '[Ezabaketa martxan da]';
 $string['gradesonly'] = 'Aldatu soilik kalifikazioetara';
 $string['gradessettings'] = 'kalifikazioen ezarpenak';
-$string['gradetype'] = 'Kalifikazio-mota';
+$string['gradetype'] = 'Kalifikazio mota';
 $string['gradetype_help'] = '4 kalifikazio mota daude:
 
 * Bat ere ez - Ezin da kalifikatu
 * Balioa - Zenbakizko balio bat, gehieneko eta gutxienekoarekin
 * Eskala - Zerrenda bateko elementu bat
-* Testua - Feedback-a soilik
+* Testua - Feedback-a bakarrik
 
 Soilik balioa eta eskala motako kalifikazioak batu daitezke. Jarduera baten kalifikaziorako kalifikazio-mota jardueraren ezarpenek orrian aukeratzen da.';
 $string['gradevaluetoobig'] = 'Kalifikazioren batek gehienez baimendutako {$a} balioa baino balio handiagoa du.';
@@ -367,9 +367,9 @@ $string['gradeweighthelp'] = 'Kalifikazioen pisuari buruzko laguntza';
 $string['gradingmodulename'] = 'Kalifikatzen ({$a})';
 $string['groupavg'] = 'Taldearen batez bestekoa';
 $string['hidden'] = 'Ezkutuan';
+$string['hidden_help'] = 'Markatuta, ezkutatu egingo zaizkie kalifikazioak ikasleei. Nahi izanez gero noiz arte ezkutatu ezar daiteke, kalifikazioa osatuta dagoenean kalifikazioak erakusteko.';
 $string['hiddenasdate'] = 'Erakutsi ezkutuko kalifikazioetan bidalketa-data';
 $string['hiddenasdate_help'] = 'Erabiltzaileak ezin baditu ezkutuko kalifikazioak erakutsi bidalketa data \'-\'-en ordez.';
-$string['hidden_help'] = 'Markatuta, ezkutatu egingo zaizkie kalifikazioak ikasleei. Nahi izanez gero noiz arte ezkutatu ezar daiteke, kalifikazioa osatuta dagoenean kalifikazioak erakusteko.';
 $string['hiddenuntil'] = 'Noiz arte ezkutuan';
 $string['hiddenuntildate'] = 'Noiz arte ezkutuan: {$a}';
 $string['hideadvanced'] = 'Ezkutatu ezaugarri aurreratuak';
@@ -443,8 +443,8 @@ $string['itemnamehelp'] = 'Elementu honen izena, moduluak emandakoa';
 $string['items'] = 'Elementuak';
 $string['itemsedit'] = 'Editatu kalifikazio-elementua';
 $string['keephigh'] = 'Mantendu altuena';
+$string['keephigh_help'] = '<p>Ezarriz gero, X kalifikazio altuenak bakarrik gordeko dira, eta X izango da aukera honetarako ezarritako balioa.</p>';
 $string['keephighestvalues'] = 'Mantendu baliorik altuenak: {$a}';
-$string['keephigh_help'] = '<p>Ezarriz gero, soilik X kalifikazio altuenak gordeko dira, eta X izango da aukera honetarako ezarritako balioa.</p>';
 $string['keymanager'] = 'Giltzen kudeatzailea';
 $string['lessthanmin'] = '{$a->itemname}-n {$a->username}-ri emandako kalifikazioa baimendutako txikiena baino baxuagoa da';
 $string['letter'] = 'Letra';
@@ -472,7 +472,7 @@ $string['mappings_help'] = 'Kalkulu-orriko kalifikazio-zutabe bakoitzeko, aukera
 $string['mapto'] = 'Mapa hona';
 $string['mapto_help'] = 'Aukeratu \'Mapa hemendik\' aukeran hautatutako datu identifikatzaile berdina.';
 $string['max'] = 'Altuena';
-$string['maxgrade'] = 'Gehien. Kal.';
+$string['maxgrade'] = 'Gehienezko kalifikazioa';
 $string['meanall'] = 'Kalifikazio guztiak';
 $string['meangraded'] = 'Hutsik ez dauden kalifikazioak';
 $string['meanselection'] = 'Batez bestekoen zutaberako aukeratutako kalifikazioak';
@@ -491,13 +491,14 @@ $string['missingitemtypeoreid'] = 'Array gakoa (itemtype edo eid) falta da grade
 $string['missingscale'] = 'Eskala aukeratu beha da';
 $string['mode'] = 'Modua';
 $string['modgrade'] = 'Kalifikazioa';
+$string['modgrade_help'] = 'Aukeratu jarduera honetan erabiliko den kalifikazio-mota. "Eskala" aukeratuz gero, ondoren zabaltzen den "eskala" menuan bat aukeratu beharko duzu. Zenbakizko kalifikazioa erabiliz gero, jarduera honetarako gehienezko kalifikazioa sar dezakezu.';
 $string['modgradecantchangegradetype'] = 'Ezin duzu mota aldatu, dagoeneko elementu honentzako kalifikazioak daudelako.';
-$string['modgradecantchangegradetypemsg'] = 'Kalifikazio batzuk dagoeneko esleitu dira, eta ondorioz ezin da kalifikazio-mota aldatu. Gehienezko kalifikazioa aldatu nahi baduzu, aurretik existitzen diren kalifikazioak berriz eskalatu nahi dituzun aukeratu behar duzu.';
+$string['modgradecantchangegradetypemsg'] = 'Kalifikazio batzuk dagoeneko esleitu dira, eta ondorioz ezin da kalifikazio mota aldatu. Gehienezko kalifikazioa aldatu nahi baduzu, aurretik existitzen diren kalifikazioak berriz eskalatu nahi dituzun aukeratu behar duzu.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Kalifikazio batzuk dagoeneko esleitu dira, eta ondorioz ezin dira mota eta eskala aldatu.';
 $string['modgradecantchangeratingmaxgrade'] = 'Ezin duzu gehienezko kalifikazioa aldatu puntuazioak dituen jarduerarentzat dagoeneko kalifikazioak daudenean.';
 $string['modgradecantchangescale'] = 'Ezin duzu eskala aldatu, elementu honentzat dagoeneko kalifikazioak daudelako.';
-$string['modgradecategorycantchangegradetypemsg'] = 'Kategoria honek baliogabetuak izan diren kalifikazio-elementu batzuk ditu. Dagoeneko kalifikazio batzuk esleitu direnez, kalifikazio-mota ezin da aldatu. Gehienezko kalifikazioa aldatu nahi baduzu, aurretik existitzen diren kalifikazioak berriz eskalatu nahi dituzun aukeratu behar duzu.';
-$string['modgradecategorycantchangegradetyporscalemsg'] = 'Kategoria honekin lotuta dauden kalifikazioak baliogabetuak izan dira. Dagoeneko kalifikazio batzuk esleitu direnez, kalifikazio-mota ezin da aldatu.';
+$string['modgradecategorycantchangegradetypemsg'] = 'Kategoria honekin lotuta dauden kalifikazioa baliogabetuak izan dira. Dagoeneko kalifikazio batzuk esleitu direnez, kalifikazio mota ezin da aldatu. Gehienezko kalifikazioa aldatu nahi baduzu, aurretik existitzen diren kalifikazioak berriz eskalatu nahi dituzun aukeratu behar duzu.';
+$string['modgradecategorycantchangegradetyporscalemsg'] = 'Kategoria honekin lotuta dauden kalifikazioak baliogabetuak izan dira. Dagoeneko kalifikazio batzuk esleitu direnez, kalifikazio mota ezin da aldatu.';
 $string['modgradecategoryrescalegrades'] = 'Berriz eskalatu baliogabetutako kalifikazioak';
 $string['modgradecategoryrescalegrades_help'] = 'Kalifikazio-liburuko elementu baten gehienezko kalifikazioa aldatzean zehaztu behar duzu dagoeneko existitzen diren ehunekoak ere aldatu beharko diren edo ez.
 
@@ -507,7 +508,6 @@ Adibidez, \'Bai\' aukeratuz gero, elementu baten gehienezko kalifikazio 10etik 2
 $string['modgradedonotmodify'] = 'Ez aldatu ezarrita dauden kalifikazioak';
 $string['modgradeerrorbadpoint'] = 'Kalifikazio balio baliogabea. 1 eta {$a} arteko zenbaki oso bat izan behar da.';
 $string['modgradeerrorbadscale'] = 'Eskala baliogabea aukeratu da. Mesedez ziurtatu beheko aukeretatik hautatzen duzula.';
-$string['modgrade_help'] = 'Aukeratu jarduera honetan erabiliko den kalifikazio-mota. "Eskala" aukeratuz gero, ondoren zabaltzen den "eskala" menuan bat aukeratu beharko duzu. Zenbakizko kalifikazioa erabiliz gero, jarduera honetarako gehienezko kalifikazioa sar dezakezu.';
 $string['modgrademaxgrade'] = 'Gehienezko puntuazioa';
 $string['modgraderescalegrades'] = 'Berriz eskalatu existitzen diren kalifikazioak';
 $string['modgraderescalegrades_help'] = 'Kalifikazio-elementu baten gehienezko kalifikazioa aldatzen duzunean zehaztu behar duzu existitzen diren kalifikazioen ehunekoak ere aldatuko diren edo ez.
@@ -548,7 +548,7 @@ $string['nolettergrade'] = 'Ikusteko kalifikaziorik ez';
 $string['nomode'] = 'NA';
 $string['nonnumericweight'] = 'Zenbakidun balioa jaso da';
 $string['nonunlockableverbose'] = 'Kalifikazio hau ezin da desblokeatu {$a->itemname} desblokeatu arte.';
-$string['nonweightedpct'] = '% ez neurtua';
+$string['nonweightedpct'] = 'ponderatu gabeko %a';
 $string['nooutcome'] = 'Ez dago ikaste-emaitzarik';
 $string['nooutcomes'] = 'Ikaste-emaitzak ikastaroko ikaste-emaitza batekin lotuta egon behar du, baina ikastaro honetan ez dago ikaste-emaitzarik. Gehitu nahi al duzu bat?';
 $string['nopermissiontoresetweights'] = 'Ez duzu pisuak berrabiarazteko baimenik.';
@@ -568,6 +568,7 @@ $string['operations'] = 'Eragiketak';
 $string['options'] = 'Aukerak';
 $string['others'] = 'Beste batzuk';
 $string['outcome'] = 'Ikaste-emaitza';
+$string['outcome_help'] = 'Ezarpen honek zehazten du kalifikazio-elementua zein ikaste-emaitzarekin lotuta agertuko den kalifikazio-liburuan.';
 $string['outcomeassigntocourse'] = 'Esleitu beste ikaste-emaitza bat ikastaro honetan';
 $string['outcomecategory'] = 'Sortu ikaste-emaitzak kategorian';
 $string['outcomecategorynew'] = 'Kategoria berria';
@@ -575,7 +576,6 @@ $string['outcomeconfirmdelete'] = 'Ziur zaude "{$a}" ikaste-emaitza ezabatu nahi
 $string['outcomecreate'] = 'Gehitu ikaste-emaitza berria';
 $string['outcomedelete'] = 'Ezabatu ikaste-emaitza';
 $string['outcomefullname'] = 'Izen osoa';
-$string['outcome_help'] = 'Ezarpen honek zehazten du kalifikazio-elementua zein ikaste-emaitzarekin lotuta agertuko den kalifikazio-liburuan.';
 $string['outcomeitem'] = 'Ikaste-emaitza elementua';
 $string['outcomeitemsedit'] = 'Editatu ikaste-emaitza elementua';
 $string['outcomereport'] = 'Ikaste-emaitzen txostena';
@@ -642,22 +642,22 @@ $string['privacy:metadata:grades:aggregationstatus'] = 'Agregazioaren egoera';
 $string['privacy:metadata:grades:aggregationweight'] = 'Pisua agregazioan';
 $string['privacy:metadata:grades:feedback'] = 'Feedbacka';
 $string['privacy:metadata:grades:finalgrade'] = 'Kalifikazioa';
-$string['privacy:metadata:gradeshistory'] = 'Aurretiko kalifikazioen erregistroa';
 $string['privacy:metadata:grades:information'] = 'Kalifikazioaren inguruko informazio gehigarria';
 $string['privacy:metadata:grades:timemodified'] = 'Kalifikazioa azkenengoz aldatu zeneko unea';
 $string['privacy:metadata:grades:userid'] = 'Kalifikazioaren erabiltzailea denaren IDa';
 $string['privacy:metadata:grades:usermodified'] = 'Erregistroa azkenengoz aldatu zuen erabiltzailearen IDa';
+$string['privacy:metadata:gradeshistory'] = 'Aurretiko kalifikazioen erregistroa';
 $string['privacy:metadata:history:loggeduser'] = 'Aldaketa egin zenean saioa hasita zegoen erabiltzailea';
 $string['privacy:metadata:history:timemodified'] = 'Kalifikazio-aldaketa egin zeneko unea';
 $string['privacy:metadata:itemshistory'] = 'Kalifikazio-elementuen aurretiko bertsioen erregistroa';
 $string['privacy:metadata:outcomes'] = 'Ikaste-emaitzen erregistroa';
-$string['privacy:metadata:outcomeshistory'] = 'Ikaste-emaitzen aurretirko bertsioen erregistroa';
 $string['privacy:metadata:outcomes:timemodified'] = 'Erregistroa aldatu zeneko unea';
 $string['privacy:metadata:outcomes:usermodified'] = 'Erregistroa aldatu zuen erabiltzailea';
+$string['privacy:metadata:outcomeshistory'] = 'Ikaste-emaitzen aurretirko bertsioen erregistroa';
 $string['privacy:metadata:scale'] = 'Eskalen erregistroa';
-$string['privacy:metadata:scalehistory'] = 'Eskalen aurretiko bertsioen erregistroa';
 $string['privacy:metadata:scale:timemodified'] = 'Erregistroa azkenengoz aldatu zen unea';
 $string['privacy:metadata:scale:userid'] = 'Erregistroa azkenengoz aldatu zuen erabiltzailea';
+$string['privacy:metadata:scalehistory'] = 'Eskalen aurretiko bertsioen erregistroa';
 $string['privacy:path:relatedtome'] = 'Nirekin lotutakoak';
 $string['privacy:request:historyactiondelete'] = 'Ezabatu';
 $string['privacy:request:historyactioninsert'] = 'Sartu';
@@ -673,10 +673,10 @@ $string['quickgrading_help'] = 'Gaituz gero, eta edizioa aktibatuta dagoenean, t
 
 Kontuan izan kalifikatzaile-txostenean kalifikazio bat editatzen denean baliogabetua izan denaren marka jartzen zaiola, eta horrek esan nahi du kalifikazioa ezingo dela lotutako jardueratik aldatu ahalko.';
 $string['range'] = 'Ibiltartea';
-$string['rangedecimals'] = 'Ibiltarteen hamartar kopurua';
-$string['rangedecimals_help'] = 'Ibiltartean erakutsiko diren hamartar kopurua.';
+$string['rangedecimals'] = 'Ibiltarteen hamartar-kopurua';
+$string['rangedecimals_help'] = 'Ibiltartean erakutsiko diren hamartar-kopurua.';
 $string['rangesdecimalpoints'] = 'Hamartarrak erakutsi ibiltarteetan';
-$string['rangesdecimalpoints_help'] = 'Ezarpen honek kalifikazio-tarte bakoitzarentzako erakutsi beharreko hamartarren kopurua edo kategoria ala kategoria edo kalifikazio-elementua erakusteko hamartarren kopurua ezarpena erabiliko den (zaharkitua) zehazten du.';
+$string['rangesdecimalpoints_help'] = 'Ezarpen honek kalifikazio-tarte bakoitzarentzako erakutsi beharreko hamartar-kopurua edo kategoria ala kategoria edo kalifikazio-elementua erakusteko hamartar-kopurua ezarpena erabiliko den (zaharkitua) zehazten du.';
 $string['rangesdisplaytype'] = 'Ibiltartea erakusteko modua';
 $string['rangesdisplaytype_help'] = 'Ezarpen honek ibiltartea nola erakutsiko diren zehazten du: benetako kalifikazioak, ehunekoak edo letrak, edo kategoriaren edo kalifikazio-elemetuarena (heredatutakoa).';
 $string['rank'] = 'Sailkapena';
@@ -697,7 +697,7 @@ $string['report'] = 'Txostena';
 $string['reportdefault'] = 'Lehenetsitako ezarpena ({$a})';
 $string['reportplugins'] = 'Txostenetarako plugin-ak';
 $string['reportsettings'] = 'Txostenaren ezarpenak';
-$string['reprintheaders'] = 'Goialdeak berriz inprimatu';
+$string['reprintheaders'] = 'Berriz inprimatu goiburuak';
 $string['resetweights'] = 'Berrabiarazi {$a->itemname}-ren pisuak';
 $string['resetweightsshort'] = 'Berrabiarazi pisuak';
 $string['respectingcurrentdata'] = 'Egungo ezarpenak ez dira aldatu';
@@ -784,7 +784,7 @@ $string['showuserimage_help'] = 'Kalifikatzaile-txostenean erabiltzailearen izen
 $string['showverbose'] = 'Erakutsi {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['showweight'] = 'Erakutsi ponderazioak';
 $string['showweight_help'] = 'Kalifikazio-pisuaren zutabea erakutsi?';
-$string['simpleview'] = 'Ikuspegi sinplea';
+$string['simpleview'] = 'Banakako ikuspegia';
 $string['singleview'] = 'Ikuspegi sinplea ondokoarentzat: {$a}';
 $string['sitewide'] = 'Gune osoa';
 $string['sort'] = 'ordenatu';
@@ -853,12 +853,12 @@ $string['verbosescales_help'] = 'Hitzen bidezko eskalek zenbakien ordez hitzak e
 $string['viewbygroup'] = 'Taldea';
 $string['viewgrades'] = 'Ikusi kalifikazioak';
 $string['weight'] = 'Pisua';
-$string['weightcourse'] = 'Erabili ponderatutako kalifikazioak ikastarorako';
-$string['weightedascending'] = 'Ordenatu neurtutako portzentajearen arabera gorantz';
-$string['weighteddescending'] = 'Ordenatu neurtutako portzentajearen arabera beherantz';
-$string['weightedpct'] = '% ponderatua';
-$string['weightedpctcontribution'] = 'ekarpenaren pisuaren %a';
 $string['weight_help'] = 'Ikastaroko kategoria batean elementuen balio erlatiboa zehazteko erabiltzen den balioa.';
+$string['weightcourse'] = 'Erabili ponderatutako kalifikazioak ikastarorako';
+$string['weightedascending'] = 'Ordenatu ponderatutako ehunekoaren arabera gorantz';
+$string['weighteddescending'] = 'Ordenatu ponderatutako ehunekoaren arabera beherantz';
+$string['weightedpct'] = '% ponderatua';
+$string['weightedpctcontribution'] = 'ekarpenaren pisu ponderatuaren %a';
 $string['weightofa'] = '{$a}-ren pisua';
 $string['weightorextracredit'] = 'Pisua edo aparteko kreditua';
 $string['weightoverride'] = 'pisua doitzea';

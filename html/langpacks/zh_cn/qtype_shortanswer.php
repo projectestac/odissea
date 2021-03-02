@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'zh_cn', version '3.8'.
  *
- * @package   qtype_shortanswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_shortanswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,7 +38,7 @@ $string['filloutoneanswer'] = '必须提供至少一个可能的答案。答案�
 $string['notenoughanswers'] = '此类型的题目至少要有 {$a} 个答案';
 $string['pleaseenterananswer'] = '请输入答案。';
 $string['pluginname'] = '填空题';
+$string['pluginname_help'] = '此类题目（题干可以包含图片）的答题者输入一个词或一句话做为答案。可以设定多个正确答案，每个答案可以有不同的得分。如果勾选了“大小写敏感”选项，那么您就可以给“Word”和“word”不同的分数。';
 $string['pluginnameadding'] = '添加一道填空题';
 $string['pluginnameediting'] = '编辑填空题';
-$string['pluginname_help'] = '此类题目（题干可以包含图片）的答题者输入一个词或一句话做为答案。可以设定多个正确答案，每个答案可以有不同的得分。如果勾选了“大小写敏感”选项，那么您就可以给“Word”和“word”不同的分数。';
 $string['pluginnamesummary'] = '允许用一个或多个词回答，系统通过和不同的标准答案（可以包含通配符）对比来自动评分。';

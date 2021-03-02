@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,47 +12,48 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_customlang', language 'ar', version '3.8'.
  *
- * @package   tool_customlang
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_customlang
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['checkin'] = 'حفظ النصوص في حزمة اللغة';
-$string['checkout'] = 'فتح حزمة اللغة لتحريرها';
-$string['checkoutdone'] = 'تم استخراج النصوص بنجاح إلى المترجم';
-$string['checkoutinprogress'] = 'يتم استخراج النصوص للمترجم';
-$string['confirmcheckin'] = 'ستقوم بإدخال نصوص معدّلة لمجموعة لغتك المحليّة. سيقوم هذا بتصدير النصوص المعدّلة من المترجم إلى مجلد البيانات وسيبدأ مودل باستخدام النصوص المعدّلة. اضفط زر "متابعة"، للمتابعة بعملية الإدخال.';
-$string['customlang:edit'] = 'تحرير الترجمة المحلية';
+$string['checkin'] = 'احفظ الجمل إلى حزمة اللغة';
+$string['checkout'] = 'فتح حزمة اللغة للتحرير';
+$string['checkoutdone'] = 'حزمة اللغة المحملة';
+$string['checkoutinprogress'] = 'تحميل حزمة اللغة';
+$string['confirmcheckin'] = 'أنت على وشك أن تحفظ التعديلات على حزمة اللغة المحلية. و بذلك يتم تصدير الجمل المخصصة من المترجم إلى دليل بيانات مودل ومودل سيبدأ استخدام الجمل المعدلة. اضغط على "متابعة" للمضي قدما في الحفظ.';
+$string['customlang:edit'] = 'حرر الترجمة المحلية';
 $string['customlang:view'] = 'اعرض الترجمة المحلية';
-$string['filter'] = 'فلترة النصوص';
-$string['filtercomponent'] = 'عرض نصوص هذه المكونات';
+$string['filter'] = 'مرشح الجمل';
+$string['filtercomponent'] = 'أظهر جمل هذه العناصر';
 $string['filtercustomized'] = 'المخصصة فقط';
 $string['filtermodified'] = 'المعدلة فقط';
-$string['filteronlyhelps'] = 'فقط المساعدة';
-$string['filtershowstrings'] = 'عرض النصوص';
-$string['filterstringid'] = 'معرِّف النص';
-$string['filtersubstring'] = 'فقط النصوص التي تحوي';
-$string['headingcomponent'] = 'المكوِّن';
-$string['headinglocal'] = 'التخصيص المحلي';
-$string['headingstandard'] = 'النص القياسي';
-$string['headingstringid'] = 'النص';
+$string['filteronlyhelps'] = 'المساعدة فقط';
+$string['filtershowstrings'] = 'أظهر الجمل';
+$string['filterstringid'] = 'معرف الجمل';
+$string['filtersubstring'] = 'فقط الجمل التي تحتوي على';
+$string['headingcomponent'] = 'العنصر';
+$string['headinglocal'] = 'مخصصة المحلية';
+$string['headingstandard'] = 'النص الأصل';
+$string['headingstringid'] = 'الجملة';
 $string['markinguptodate'] = 'وسم التخصيص أنه يصل إلى تاريخ';
 $string['markinguptodate_help'] = 'الترجمة المخصصة قد تكون قديمة إما أن الأصل باللغة الإنجليزية أو الترجمة الرئيسية عُدِّلت منذ تم تخصيص الجملة على الموقع. راجع الترجمة المخصصة. اذا وجدت أنها تصل إلى التاريخ الحالي، انقر فوق خانة الاختيار. أو حررها على خلاف ذلك.';
 $string['markuptodate'] = 'علّم أنها تصل إلى تاريخ';
 $string['modifiedno'] = 'لا توجد جمل معدلة لحفظها.';
-$string['modifiednum'] = 'هناك {$a} نص مغّير. عليك أن تدخلها للقرص لتسجيلها بشكل دائم.';
-$string['nostringsfound'] = 'لم نجد أي نصوص، يرجى تغيير إعدادات الترشيح';
+$string['modifiednum'] = 'هناك {$a} جملة معدّلة، هل ترغب في حفظ هذه التغييرات إلى حزمة لغتك المحلية؟';
+$string['nostringsfound'] = 'لا يوجد جمل، يرجى تعديل إعدادات التصفية';
 $string['placeholder'] = 'العناصر النائبة';
 $string['placeholder_help'] = 'العناصر النائبة هي تعبير خاص مثل `{$a}` أو `{$a->something}` داخل الجملة. يتم استبدالها بقيمة عند طبع الجملة فعليا. من المهم أن تنسخها بالضبط كما هي الحال في الجملة الأصلية. لا تترجمها ولا تغيير اتجاهها من اليسار إلى اليمين الخاصة بها.';
 $string['placeholderwarning'] = 'الجملة تحتوي على عنصر نائب';
-$string['pluginname'] = 'تحرير اللغة';
+$string['pluginname'] = 'تخصيص اللغة';
 $string['privacy:metadata'] = 'البرنامج المساعد  Language customisation  لا يخزن أي بيانات شخصية.';
-$string['savecheckin'] = 'حفظ التغييرات في حزمة اللغة';
-$string['savecontinue'] = 'حفظ ومتابعة التحرير';
+$string['savecheckin'] = 'احفظ التغييرات إلى حزمة اللغة';
+$string['savecontinue'] = 'طبق التغييرات و تابع التحرير';

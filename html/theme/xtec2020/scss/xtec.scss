@@ -1,8 +1,8 @@
-$maincolor: #ac2013 !default; //color2
+$maincolor: #ff494e !default; //color2
 $colorcontrast: white !default;
-$fontcolor: #303030 !default; //color4
-$linkscolor: #ac2013 !default; //color5
-$headerbg: #f4f4f4 !default;
+$fontcolor: #007377 !default; //color4
+$linkscolor: #910048 !default; //color5
+$headerbg: #f8f8f8 !default;
 $fontsize: 1rem !default;
 $fontfamily: null !default;
 $texttransform: null !default;
@@ -46,7 +46,7 @@ a,
 
 /* Copy styling of all contexts to pages of CONTEXT_USER, which are formatted differently by context_header() */
 div.page-context-header div.page-header-image {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 h2,
@@ -63,12 +63,28 @@ h4 {
     background-image: url('[[pix:theme|top]]');
     // Use absolute right margin instead of width percentage
     // background-position: 98% center;
-    background-position: center right 0px;
+    background-position: center right 0;
     background-repeat: no-repeat;
     background-color: $headerbg;
 
     .row {
         min-height: 93px;
+    }
+
+    &.odissea {
+        background-image: url('[[pix:theme|top_odissea]]');
+    }
+
+    &.alexandria {
+        background-image: url('[[pix:theme|top_alexandria]]');
+    }
+
+    &.eix {
+        background-image: url('[[pix:theme|top_eix]]');
+    }
+
+    &.eoi {
+        background-image: url('[[pix:theme|top_eoi]]');
     }
 }
 
@@ -79,7 +95,7 @@ h4 {
 
 /* Navigation */
 nav.fixed-top.navbar {
-    
+
     padding: 0.5rem;
 
     border-bottom: 2px solid $maincolor;
@@ -200,9 +216,11 @@ nav.fixed-top.navbar {
         display: none;
     }
 
+    /* stylelint-disable declaration-no-important */
     &.block_settings .content {
-        margin-top: 0px !important;
+        margin-top: 0 !important;
     }
+    /* stylelint-enable declaration-no-important */
 
     .minicalendar {
         max-width: none;
@@ -394,6 +412,7 @@ nav.fixed-top.navbar {
 
     .moodle_footer img {
         width: 95px;
+        margin-top: -8px;
     }
 }
 
@@ -427,10 +446,10 @@ nav.fixed-top.navbar {
     margin-left: 0.2rem;
 }
 
-a.dimmed + .availabilityinfoXTEC .label-info{
+a.dimmed + .availabilityinfoXTEC .label-info {
     background-color: #999;
 }
-.availabilityinfoXTEC .label-info.isrestricted{
+.availabilityinfoXTEC .label-info.isrestricted {
     background-color: #999;
 }
 
@@ -453,7 +472,7 @@ a.dimmed + .availabilityinfoXTEC .label-info{
     margin-right: .3em;
     font-weight: normal;
     font-size: 1.2em;
-    line-height: 0px;
+    line-height: 0;
 }
 
 .block_news_items .block-header h5:before {
@@ -627,7 +646,8 @@ a.dimmed + .availabilityinfoXTEC .label-info{
 
 /* Tables */
 
-th, td {
+th,
+td {
     border: none;
 }
 
@@ -640,4 +660,60 @@ th, td {
     li * {
         padding-left: 0;
     }
+}
+
+/* 1051-2020-0043 */
+body#page-admin-report-coursequotas-filemanager div#page.container-fluid section#region-main div#results table.generaltable {
+    font-size: 0.8em;
+}
+
+div#page.container-fluid div#page-content div#filter_sizer div#filter_caption i {
+    margin-right: 5px;
+}
+div#page.container-fluid div#page-content div#filter_sizer div#filter_inner input,
+div#page.container-fluid div#page-content div#filter_sizer div#filter_inner select {
+    margin-bottom: 5px;
+}
+
+div#page.container-fluid section#region-main ul.nav-tabs li {
+    margin-right: 10px;
+}
+
+div#page.container-fluid section#region-main ul.nav-tabs li.active a {
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #dee2e6;
+    border-bottom: 0;
+    padding: 5px 10px;
+}
+
+.path-local-alexandriaimporter div#page.container-fluid section#region-main div#alexandria_restore
+.row-fluid {
+    padding: 1.0em;
+}
+
+div#alexandria_restore div.tab-content div.row-fluid div.text-right {
+    width: 100%;
+}
+
+div#alexandria_restore div.tab-content .form-search div.simple {
+    margin-left: 30%;
+}
+
+div#alexandria_restore div.tab-content .form-search .controls {
+    display: inline;
+}
+
+div#alexandria_restore div.tab-content #accordion .accordion-group .container-fluid {
+    clear: both;
+    border-top: 1px solid #dee2e6;
+    padding-top: 5px;
+}
+
+div#alexandria_restore div.tab-content #accordion .accordion-group .container-fluid div {
+    float: left;
+}
+
+div#alexandria_restore div.tab-content #accordion .accordion-group .container-fluid div.text-right {
+    float: right;
+    padding-bottom: 5px;
 }

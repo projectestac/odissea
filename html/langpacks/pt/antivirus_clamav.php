@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'antivirus_clamav', language 'pt', version '3.8'.
  *
- * @package   antivirus_clamav
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     antivirus_clamav
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,7 +39,7 @@ $string['pathtoclamdesc'] = 'Se o método de execução estiver configurado para
 $string['pathtounixsocket'] = 'Socket de domínio Unix';
 $string['pathtounixsocketdesc'] = 'Se o método de execução estiver configurado para "socket de domínio Unix", introduza o caminho para o Antivírus ClamAV aqui. No Linux Debian isto será /var/run/clamav/clamd.ctl. Por favor, certifique-se de que o daemon clamav tem acesso de leitura aos ficheiros carregados e a forma mais fácil de garantir é adicionar o utilizador \'clamav\' ao seu grupo webserver (\'www-data\' no Linux  Debian).';
 $string['pluginname'] = 'Antivírus ClamAV';
-$string['privacy:metadata'] = 'O módulo ClamAV antivirus não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo ClamAV antivirus não armazena quaisquer dados pessoais.';
 $string['quarantinedir'] = 'Pasta da Quarentena';
 $string['runningmethod'] = 'Método de execução';
 $string['runningmethodcommandline'] = 'Linha de comandos';

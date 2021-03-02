@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'zh_cn', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -201,7 +201,7 @@ $string['endoflesson'] = '练习结束';
 $string['enteredthis'] = '输入这个';
 $string['enterpassword'] = '请输入密码：';
 $string['eolstudentoutoftime'] = '注意：您已经超过了本程序教学规定的时间。您最后回答的题目如果是在时限之后作答，那么可能不会被算分。';
-$string['eolstudentoutoftimenoanswers'] = '您没有回答任何题目。您在本程序教学中得到了 0 分。';
+$string['eolstudentoutoftimenoanswers'] = '您没有回答任何题目。您在本程序教学中获得 0 分。';
 $string['essay'] = '问答题';
 $string['essayemailmessage2'] = '<p>问答题：<blockquote>{$a->question}</blockquote></p><p>您的回答：<blockquote><em>{$a->response}</em></blockquote></p><p>评分人评论：<blockquote><em>{$a->comment}</em></blockquote></p><p>此问答题您得到了{$a->earned}分（满分{$a->outof}）。</p><p>您此程序教学的成绩已经变为{$a->newgrade}%。</p>';
 $string['essayemailsubject'] = '题目{$a}的成绩';
@@ -264,12 +264,13 @@ $string['jumpsto'] = '跳转到<em>{$a}</em>';
 $string['leftduringtimed'] = '您已在定时程序教学中离开。<br/>请点击“继续”重新开始。';
 $string['leftduringtimednoretake'] = '您已在定时程序教学中离开。<br/>不允许您重新开始或继续。';
 $string['lesson:addinstance'] = '添加一个新练习';
+$string['lesson:edit'] = '编辑程序教学活动';
+$string['lesson:manage'] = '管理程序教学活动';
+$string['lesson:viewreports'] = '查看程序教学报表';
 $string['lessonclosed'] = '此程序教学在 {$a} 关闭。';
 $string['lessoncloses'] = '关闭程序教学';
 $string['lessoncloseson'] = '程序教学在{$a}关闭';
-$string['lesson:edit'] = '编辑程序教学活动';
 $string['lessonformating'] = '程序教学显示格式';
-$string['lesson:manage'] = '管理程序教学活动';
 $string['lessonmenu'] = '程序教学菜单';
 $string['lessonnotready'] = '这个程序教学还没有准备好。请与{$a}联系。';
 $string['lessonnotready2'] = '此程序教学还没准备。';
@@ -277,11 +278,10 @@ $string['lessonopen'] = '本程序教学将在 {$a} 开放。';
 $string['lessonopens'] = '开放程序教学';
 $string['lessonpagelinkingbroken'] = '找不到第一个页面。程序教学的页面链接一定损坏了。请与管理员联系。';
 $string['lessonstats'] = '程序教学统计';
-$string['lesson:viewreports'] = '查看程序教学报表';
 $string['linkedmedia'] = '链接的媒体';
 $string['loginfail'] = '登录错误，请重试…';
 $string['lowscore'] = '低分';
-$string['lowtime'] = '短耗时';
+$string['lowtime'] = '短用时';
 $string['manualgrading'] = '问答题评分';
 $string['matchesanswer'] = '答案匹配';
 $string['matching'] = '匹配题';
@@ -355,8 +355,8 @@ $string['numberofpagesviewed'] = '回答的题目数：{$a}';
 $string['numberofpagesviewednotice'] = '已回答题数：{$a->nquestions}（您至少要回答{$a->minquestions}道题）';
 $string['numerical'] = '计算题';
 $string['ongoing'] = '显示即时分数';
-$string['ongoingcustom'] = '到目前为止，您已经获得了{$a->score}/{$a->currenthigh} 分。';
 $string['ongoing_help'] = '如果启用，每个页面都会显示学生已经获得的分数和目前的总分。';
+$string['ongoingcustom'] = '到目前为止，您已经获得了{$a->score}/{$a->currenthigh} 分。';
 $string['ongoingnormal'] = '您已经在{$a->viewed}次尝试中正确回答了{$a->correct}次。';
 $string['onpostperpage'] = '每个成绩只能发布一次';
 $string['options'] = '选项';
@@ -367,11 +367,11 @@ $string['outof'] = '超出 {$a}';
 $string['overview'] = '概览';
 $string['overview_help'] = '一个程序教学由一系列的页面和可选的内容页构成。一个页面包含一些内容，且通常以一个问题结束。问题的每个答案都有一个对应的跳转。这个跳转可以是相对的，比如本页或下一页，也可以是绝对的，指向本程序教学中的任意一页。内容页面包含到程序教学中其它页面的链接，就像一个目录一样。';
 $string['page'] = '页面：{$a}';
-$string['pageanswers'] = '页面问题';
-$string['pagecontents'] = '页面内容';
 $string['page-mod-lesson-edit'] = '程序教学编辑页面';
 $string['page-mod-lesson-view'] = '查看或预览程序教学页面';
 $string['page-mod-lesson-x'] = '任意程序教学页面';
+$string['pageanswers'] = '页面问题';
+$string['pagecontents'] = '页面内容';
 $string['pageresponses'] = '页面响应';
 $string['pages'] = '页面';
 $string['pagetitle'] = '页面标题';
@@ -439,9 +439,9 @@ $string['showanunseenpage'] = '显示一个未浏览的页面';
 $string['singleanswer'] = '一个答案';
 $string['skip'] = '跳跃导航';
 $string['slideshow'] = '幻灯片';
+$string['slideshow_help'] = '如果启用，此程序教学将以固定宽和高的幻灯片的形式显示。';
 $string['slideshowbgcolor'] = '幻灯片背景';
 $string['slideshowheight'] = '幻灯片高度';
-$string['slideshow_help'] = '如果启用，此程序教学将以固定宽和高的幻灯片的形式显示。';
 $string['slideshowwidth'] = '幻灯片宽度';
 $string['startlesson'] = '开始练习';
 $string['studentattemptlesson'] = '{$a->firstname {$a->lastname}}的尝试次数{$a->attempt}';

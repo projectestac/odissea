@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'en', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,10 @@ $string['char_limitui_parenthesis_start'] = '⦗';
 $string['choice'] = 'Choice';
 $string['choicegroup:addinstance'] = 'Add a new group choice activity';
 $string['choicegroup:choose'] = 'Record a choice';
-$string['choicegroupclose'] = 'Until';
 $string['choicegroup:deleteresponses'] = 'Delete responses';
 $string['choicegroup:downloadresponses'] = 'Download responses';
+$string['choicegroup:readresponses'] = 'Read responses';
+$string['choicegroupclose'] = 'Until';
 $string['choicegroupfull'] = 'This group choice is full and there are no available places.';
 $string['choicegroupname'] = 'Group choice name';
 $string['choicegroupopen'] = 'Open';
@@ -59,7 +60,6 @@ The list on the left displays all available groups and groupings. To add one or 
 The selected groups appear on the list on the right.
 
 To remove any groups from the selection, select them from the list on the right and click "Remove".';
-$string['choicegroup:readresponses'] = 'Read responses';
 $string['choicegroupsaved'] = 'Your choice has been saved';
 $string['choicetext'] = 'Choice text';
 $string['chooseaction'] = 'Choose an action ...';
@@ -74,8 +74,8 @@ $string['del_groups'] = 'Remove Groups';
 $string['displayhorizontal'] = 'Display horizontally';
 $string['displaymode'] = 'Display mode';
 $string['displayvertical'] = 'Display vertically';
-$string['double_click_grouping_legend'] = 'Double click on a grouping to expand/collapse individually.';
 $string['double_click_group_legend'] = 'Double click on a group to add it.';
+$string['double_click_grouping_legend'] = 'Double click on a grouping to expand/collapse individually.';
 $string['event:answered'] = 'Choice made';
 $string['event:answered_desc'] = 'The user with id \'{$a->userid}\' has chosen a group in the group choice with the course module id \'{$a->contextinstanceid}\'.';
 $string['event:removed'] = 'Choice removed';

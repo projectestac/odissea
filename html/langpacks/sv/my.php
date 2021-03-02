@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'my', language 'sv', version '3.8'.
  *
- * @package   my
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     my
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,10 +31,14 @@ $string['allprofileswerereset'] = 'Alla profilsidor har återställts till stand
 $string['defaultpage'] = 'Mitt Moodle standardsida';
 $string['defaultprofilepage'] = 'Standardprofilsida';
 $string['delpage'] = 'Ta bort sida';
-$string['managepages'] = 'Administrera sidor';
+$string['managepages'] = 'Hantera sidor';
 $string['mymoodle'] = 'Mitt Moodle';
 $string['nocourses'] = 'Det finns ingen kursinformation att visa.';
-$string['noguest'] = 'Sidan \'Mitt Moodle\' är inte tillgänglig för gästanvändare.';
-$string['pinblocks'] = 'Konfigurera \'fast placerade\' block för Mitt Moodle.';
-$string['pinblocksexplan'] = 'Alla inställningar för block som Du konfigurerar här kommer att vara synliga (och inte-redigerbara) för varje användare av Moodle på deras \'Mitt Moodle\' skärm.';
+$string['noguest'] = 'Sidan Mitt Moodle är inte tillgänglig för gästanvändare.';
+$string['pinblocks'] = 'Konfigurera fastnålade block för Mitt Moodle.';
+$string['pinblocksexplan'] = 'Alla inställningar för block som du konfigurerar här kommer att vara synliga (och icke-redigerbara) för varje användare av Moodle på deras \'Mitt Moodle\' sida.';
+$string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'Användarens inställningar för hemsidan';
+$string['reseterror'] = 'Ett fel inträffade då sidan skulle återställas';
+$string['reseteveryonesdashboard'] = 'Återställ allas Mitt Moodle';
+$string['reseteveryonesprofile'] = 'Återställ allas profiler';
 $string['resetpage'] = 'Återställ sidan till standard';

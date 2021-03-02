@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'moodle', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'moodle', language 'zh_cn', version '3.8'.
  *
- * @package   moodle
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     moodle
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -333,7 +333,6 @@ $string['coursebackup'] = '课程备份';
 $string['coursebulkaction'] = '对选定课程的批量设置';
 $string['coursecategories'] = '课程类别';
 $string['coursecategory'] = '课程类别';
-$string['coursecategorydeleted'] = '已删除课程类别 {$a}';
 $string['coursecategory_help'] = '<p align="center"><b>课程类别</b></p>
 
 <p>您的 Moodle 管理员可能已经设立了几个课程分类。</p>
@@ -341,6 +340,7 @@ $string['coursecategory_help'] = '<p align="center"><b>课程类别</b></p>
 <p>例如，“自然科学”，“人文科学”，“公共卫生”等。</p>
 
 <p>选择一个最适合用于您的课程的。这个选择将影响到您的课程在课程列表上的显示，也会更容易的让学生们找到您的课程。</p>';
+$string['coursecategorydeleted'] = '已删除课程类别 {$a}';
 $string['coursecatmanagement'] = '课程和类别管理';
 $string['coursecompletion'] = '修完课程';
 $string['coursecompletions'] = '修完课程';
@@ -385,8 +385,8 @@ $string['coursemessage'] = '课程用户消息';
 $string['coursenotaccessible'] = '这个课程未对公众开放';
 $string['courseoverview'] = '课程总览';
 $string['courseoverviewfiles'] = '课程摘要文件';
-$string['courseoverviewfilesext'] = '课程摘要文件类型';
 $string['courseoverviewfiles_help'] = '课程摘要文件(图像)显示在个人主页的课程概览中。站点管理员可以启用其他可接受的文件类型和多个文件。如果是，这些文件将显示在课程列表页面的课程简介旁边。';
+$string['courseoverviewfilesext'] = '课程摘要文件类型';
 $string['courseoverviewfileslimit'] = '课程摘要文件限制';
 $string['courseoverviewgraph'] = '课程概述图';
 $string['coursepreferences'] = '课程设置';
@@ -652,7 +652,6 @@ $string['emailconfirmsent'] = '<p>一封邮件已经发送到您的地址 <b>{$a
 $string['emailconfirmsentfailure'] = '确认邮件发送失败';
 $string['emailconfirmsentsuccess'] = '确认邮件发送成功';
 $string['emaildigest'] = 'Email摘要类型';
-$string['emaildigestcomplete'] = '完整的(每天一封，包含完整内容)';
 $string['emaildigest_help'] = '这是论坛默认使用的每日摘要设置。
 
 * 没有摘要 - 你将会收到每个论坛帖子所对应的一封邮件。
@@ -660,13 +659,14 @@ $string['emaildigest_help'] = '这是论坛默认使用的每日摘要设置。
 * 摘要 - 只包含主题 - 你将会每天收到一封摘要邮件，里面只包含每个论坛帖子的主题。
 
 如果你愿意，你也可以为每一个论坛选择不同的设置。';
+$string['emaildigestcomplete'] = '完整的(每天一封，包含完整内容)';
 $string['emaildigestoff'] = '无摘要(每个帖子发送一封Email)';
 $string['emaildigestsubjects'] = '主题(每天一封，只包含主题)';
 $string['emaildisable'] = '这个email地址已禁用';
 $string['emaildisableclick'] = '点击此处不再向此地址发送任何邮件';
 $string['emaildisplay'] = '显示Email';
-$string['emaildisplaycourse'] = '只允许课程成员查看我的email地址';
 $string['emaildisplay_help'] = '特权用户（例如教师或管理员）将看到您的邮箱地址。';
+$string['emaildisplaycourse'] = '只允许课程成员查看我的email地址';
 $string['emaildisplayhidden'] = '已隐藏 Email';
 $string['emaildisplayno'] = '对无权限用户隐藏我的电子邮件地址';
 $string['emaildisplayyes'] = '允许所有人看到我的email地址';
@@ -875,8 +875,8 @@ $string['force'] = '强制';
 $string['forcelanguage'] = '指定课程语言类型';
 $string['forceno'] = '不强制';
 $string['forcepasswordchange'] = '强制修改密码';
-$string['forcepasswordchangecheckfull'] = '您十分确定要将密码强行改为 {$a} 吗？';
 $string['forcepasswordchange_help'] = '如果此复选框被勾选，那么用户在下次登录时会被要求修改密码';
+$string['forcepasswordchangecheckfull'] = '您十分确定要将密码强行改为 {$a} 吗？';
 $string['forcepasswordchangenot'] = '不能强制将密码改为 {$a}';
 $string['forcepasswordchangenotice'] = '您必须更改密码才能继续。';
 $string['forcetheme'] = '强制使用主题';
@@ -981,8 +981,8 @@ $string['hiddenassign'] = '隐藏作业';
 $string['hiddenfromstudents'] = '对学生隐藏';
 $string['hiddenoncoursepage'] = '可用，但不显示在课程页面';
 $string['hiddensections'] = '隐藏小节';
-$string['hiddensectionscollapsed'] = '以折叠方式显示隐藏的小节';
 $string['hiddensections_help'] = '此设置决定隐藏的小节是向学生折叠显示（比如在星期格式的课程中表示假期）还是完全隐藏。';
+$string['hiddensectionscollapsed'] = '以折叠方式显示隐藏的小节';
 $string['hiddensectionsinvisible'] = '完全不显示隐藏的小节';
 $string['hiddenwithbrackets'] = '(隐藏的)';
 $string['hide'] = '隐藏';
@@ -1015,9 +1015,9 @@ $string['icon'] = '图标';
 $string['icqnumber'] = 'ICQ号码';
 $string['idnumber'] = '学号';
 $string['idnumbercourse'] = '课程编号';
+$string['idnumbercourse_help'] = '课程的编号用于和外部系统匹配——它从不显示于Moodle的内部。如果您的课程有一个正式的编号，可以在这里使用它，否则您可以空着它。';
 $string['idnumbercoursecategory'] = '分类ID';
 $string['idnumbercoursecategory_help'] = '课程分类的ID号只用来和外部系统匹配，不会在网站的任何地方显示。如果此分类有官方编号，可以在此输入，否则可以留空。';
-$string['idnumbercourse_help'] = '课程的编号用于和外部系统匹配——它从不显示于Moodle的内部。如果您的课程有一个正式的编号，可以在这里使用它，否则您可以空着它。';
 $string['idnumbergroup'] = '小组 ID 编号';
 $string['idnumbergroup_help'] = '一个小组的ID编号只是用来和外部系统对应，不会在网站的任何地方显示。如果此小组有公共编号的话，可以在此输入，否则此处留空。';
 $string['idnumbergrouping'] = '大组 ID 编号';
@@ -1061,9 +1061,9 @@ $string['indicator:anywrite_help'] = '此指标表示学生采取的任何写(�
 $string['indicator:anywriteincourse'] = '课程中的任何写操作';
 $string['indicator:anywriteincourse_help'] = '此指标表示学生在任何课程活动中采取的任何写(提交)操作。';
 $string['indicator:completeduserprofile'] = '用户档案已完善';
+$string['indicator:completeduserprofile_help'] = '这个指标表示学生已完善了其用户个人档案。';
 $string['indicator:completeduserprofiledef'] = '用户完善了个人档案';
 $string['indicator:completeduserprofiledef_help'] = '已同意网站政策，用户已填写以下字段：机构、部门、地址、城市、国家、URL。';
-$string['indicator:completeduserprofile_help'] = '这个指标表示学生已完善了其用户个人档案。';
 $string['indicator:completionenabled'] = '‎已启用进度跟踪‎';
 $string['indicator:completionenabled_help'] = '这个指标表示这门课程已经启用了进度跟踪。';
 $string['indicator:nostudent'] = '没有学生';
@@ -1071,13 +1071,13 @@ $string['indicator:nostudent_help'] = '这个指标反映了这门课程没有�
 $string['indicator:noteacher'] = '没有教师';
 $string['indicator:noteacher_help'] = '这个指标反映了这门课没有教师。';
 $string['indicator:potentialcognitive'] = '课程潜在的认知深度';
+$string['indicator:potentialcognitive_help'] = '这一指标是基于学生参与课程活动所能达到的潜在认知深度。';
 $string['indicator:potentialcognitivedef'] = '课程潜在认知深度';
 $string['indicator:potentialcognitivedef_help'] = '课程提供“深度”认知参与的程度，例如提交工作以获得反馈、有机会回顾他人的工作、有机会修改和重新提交工作。';
-$string['indicator:potentialcognitive_help'] = '这一指标是基于学生参与课程活动所能达到的潜在认知深度。';
 $string['indicator:potentialsocial'] = '课程潜在的社会广度';
+$string['indicator:potentialsocial_help'] = '这一指标是基于学生参与课程活动所能达到的潜在社会广度。';
 $string['indicator:potentialsocialdef'] = '课程潜在的社会广度';
 $string['indicator:potentialsocialdef_help'] = '课程提供“广泛”社会参与的程度，与其他成员和课外实践社区互动。';
-$string['indicator:potentialsocial_help'] = '这一指标是基于学生参与课程活动所能达到的潜在社会广度。';
 $string['indicator:readactions'] = '读操作数量';
 $string['indicator:readactions_help'] = '这个指标表示学生执行读(浏览)操作的数量。';
 $string['indicator:userforumstracking'] = '用户正在跟踪论坛';
@@ -1136,11 +1136,11 @@ $string['loggedinas'] = '您以{$a}登录';
 $string['loggedinasguest'] = '您正在用访客帐号访问';
 $string['loggedinnot'] = '您尚未登录。';
 $string['login'] = '登录';
+$string['login_failure_logs'] = '登录失败日志';
 $string['loginactivity'] = '登录活动';
 $string['loginalready'] = '您已经登录';
 $string['loginas'] = '登录为';
 $string['loginaspasswordexplain'] = '<p>要使用此功能，您需要特别的“登录为密码”。<br />如果您没有，请和服务器管理员联系。</p>';
-$string['login_failure_logs'] = '登录失败日志';
 $string['loginguest'] = '以访客身份登录';
 $string['loginsite'] = '登录本网站';
 $string['loginsteps'] = '要完全访问此站点，您首先需要创建一个帐户。';
@@ -1330,8 +1330,8 @@ $string['newaccount'] = '新帐号';
 $string['newactivityname'] = '活动{$a}的新名字';
 $string['newcourse'] = '新课程';
 $string['newpassword'] = '新密码';
-$string['newpasswordfromlost'] = '<strong>注意：</strong>您的<strong>当前密码</strong> 将在两封email的<strong>第二</strong>封里发送给您。这是恢复丢失密码流程的一部分。在从此屏幕继续之前，请确认您收到了新的密码。';
 $string['newpassword_help'] = '输入一个新密码或留空以保留当前密码。';
+$string['newpasswordfromlost'] = '<strong>注意：</strong>您的<strong>当前密码</strong> 将在两封email的<strong>第二</strong>封里发送给您。这是恢复丢失密码流程的一部分。在从此屏幕继续之前，请确认您收到了新的密码。';
 $string['newpasswordtext'] = '{$a->firstname}，您好：
 
 您在“{$a->sitename}”上的帐号密码已被重设为一个新生成的临时密码。
@@ -1431,7 +1431,7 @@ $string['notavailablecourse'] = '{$a} 不可用';
 $string['noteachersyet'] = '此课程尚无教师';
 $string['noteachingupcomingcourses'] = '即将开始的课程没有老师和学生';
 $string['notenrolled'] = '{$a}没有选修该课程。';
-$string['notenrolledprofile'] = '此个人档案无效，因为该用户没有加入此课程。';
+$string['notenrolledprofile'] = '此个人档案无效，因为此用户没有加入此课程。';
 $string['noteusercannotrolldatesoncontext'] = '<strong>注意：</strong>因为您缺少必需的权限，在恢复备份时不能回滚日期。';
 $string['noteuserschangednonetocourse'] = '<strong>注意：</strong>恢复用户数据（活动中的数据、文件或消息）时用户资料也要恢复。此项设置已经替您更改。';
 $string['nothingnew'] = '自从您上次登录以来尚无新活动';
@@ -1605,9 +1605,9 @@ $string['privacy:metadata:upgrade_log:timemodified'] = '升级发生的时间。
 $string['privacy:metadata:upgrade_log:type'] = '事件记录项类型。';
 $string['privacy:metadata:upgrade_log:userid'] = '运行升级的用户。';
 $string['privacy:metadata:upgrade_log:version'] = '插件的旧版本。';
-$string['privatefiles'] = '私人文件';
 $string['private_files_handler'] = '保存附件到电子邮件的私人文件存储空间。';
 $string['private_files_handler_name'] = '发送电子邮件到私人文件';
+$string['privatefiles'] = '私人文件';
 $string['privatefilesmanage'] = '管理私人文件';
 $string['proceed'] = '继续';
 $string['profile'] = '个人档案';
@@ -1751,13 +1751,13 @@ $string['scalestip2'] = '要建立自定义量表，请点击课程管理菜单�
 $string['schedule'] = '时间表';
 $string['screenshot'] = '抓屏';
 $string['search'] = '搜索';
+$string['search_help'] = '基本搜索可以在文本中查找一个或多个词。词之间用空格分隔。只有一个字母的单词会被忽略。
+
+如要进行高级搜索，直接点击搜索按钮，搜索框中什么都不要输入，便可访问高级搜索表单。';
 $string['searchagain'] = '再次搜索';
 $string['searchbyemail'] = '用email地址搜索';
 $string['searchbyusername'] = '用用户名搜索';
 $string['searchcourses'] = '搜索课程';
-$string['search_help'] = '基本搜索可以在文本中查找一个或多个词。词之间用空格分隔。只有一个字母的单词会被忽略。
-
-如要进行高级搜索，直接点击搜索按钮，搜索框中什么都不要输入，便可访问高级搜索表单。';
 $string['searchoptions'] = '搜索选项';
 $string['searchresults'] = '搜索结果';
 $string['sec'] = '秒';
@@ -1997,9 +1997,9 @@ $string['thiscategorycontains'] = '此类别包含';
 $string['time'] = '时间';
 $string['timecreatedcourse'] = '课程创建时间';
 $string['timesplitting:deciles'] = '十分法';
+$string['timesplitting:deciles_help'] = '此分析间隔将这门课程时间分成了十个十分之一(10个相等的部分)，每个预测都是基于最近的上一个十分之一的数据。';
 $string['timesplitting:decilesaccum'] = '十分累计法';
 $string['timesplitting:decilesaccum_help'] = '此分析间隔将这门课程时间分成了十个十分之一(10个相等的部分)，每个预测都是基于之前所有的十分之一累计的数据。';
-$string['timesplitting:deciles_help'] = '此分析间隔将这门课程时间分成了十个十分之一(10个相等的部分)，每个预测都是基于最近的上一个十分之一的数据。';
 $string['timesplitting:nosplitting'] = '没有时间限制';
 $string['timesplitting:nosplitting_help'] = '该模型没有定义分析间隔。';
 $string['timesplitting:onemonthafterstart'] = '开始后一个月';
@@ -2013,9 +2013,9 @@ $string['timesplitting:pastmonth_help'] = '‎此分析间隔每月生成预测�
 $string['timesplitting:pastweek'] = '过去的一周';
 $string['timesplitting:pastweek_help'] = '‎此分析间隔每周生成预测。指标计算将基于过去一周。';
 $string['timesplitting:quarters'] = '四分法';
+$string['timesplitting:quarters_help'] = '此分析间隔将这门课程时间分为四个四分之一(4个相等的部分)，每个预测都基于最近的上一个四分之一的数据。';
 $string['timesplitting:quartersaccum'] = '四分累计法';
 $string['timesplitting:quartersaccum_help'] = '此分析间隔将这门课程时间分为四个四分之一(4个相等的部分)，每个预测都基于之前所有的四分之一累计的数据。';
-$string['timesplitting:quarters_help'] = '此分析间隔将这门课程时间分为四个四分之一(4个相等的部分)，每个预测都基于最近的上一个四分之一的数据。';
 $string['timesplitting:singlerange'] = '从开始到结束';
 $string['timesplitting:singlerange_help'] = '此分析间隔将整个课程视为一个整体。';
 $string['timesplitting:tenpercentafterstart'] = '开始后10%';

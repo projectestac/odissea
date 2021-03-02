@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradingform_guide', language 'ar', version '3.8'.
  *
- * @package   gradingform_guide
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradingform_guide
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,13 +52,13 @@ $string['criterionname'] = 'اسم المعيار';
 $string['criterionremark'] = 'ملاحظة المعيار {$a}';
 $string['definemarkingguide'] = 'تعريف دليل وضع العلامات';
 $string['description'] = 'الوصف';
-$string['descriptionmarkers'] = 'وصف لواضعي العلامات';
+$string['descriptionmarkers'] = 'وصف للمصححين';
 $string['descriptionstudents'] = 'وصف للطلاب';
 $string['err_maxscoreisnegative'] = 'الدرجة القصوى غير صحيحة، لا يسمح بالقيم السالبة.';
 $string['err_maxscorenotnumeric'] = 'ينبغي أن تكون الدرجة القصوى للمعيار رقماً';
 $string['err_nocomment'] = 'التعليق لا يمكن أن يترك فارغاً';
 $string['err_nodescription'] = 'الوصف للطلاب لا يمكن أن يترك فارغاً';
-$string['err_nodescriptionmarkers'] = 'الوصف لواضع العلامات لا يمكن أن يترك فارغاً';
+$string['err_nodescriptionmarkers'] = 'الوصف للمصححين لا يمكن أن يترك فارغاً';
 $string['err_nomaxscore'] = 'الدرجة القصوى للمعيار لا يمكن تركها فارغة';
 $string['err_noshortname'] = 'اسم المعيار لا يمكن تركه فارغاً';
 $string['err_scoreinvalid'] = 'الدرجة المعطاة لـ \'{$a->criterianame}\' غير صحيحة، الدرجة القصوى هي: {$a->maxscore}';
@@ -71,8 +71,8 @@ $string['guidemappingexplained'] = 'تحذير: دليل وضع العلامات
 $string['guidenotcompleted'] = 'لطفاً، أعط علامة صحيحة لكل معيار';
 $string['guideoptions'] = 'خيارات دليل وضع العلامات';
 $string['guidestatus'] = 'حالة دليل وضع العلامات الحالي';
-$string['hidemarkerdesc'] = 'أخفِ أوصاف المعايير عن واضعي العلامات';
-$string['hidestudentdesc'] = 'أخفِ أوصاف المعايير عن الطلاب';
+$string['hidemarkerdesc'] = 'إخفاء أوصاف المعايير عن المصححين';
+$string['hidestudentdesc'] = 'إخفاء أوصاف المعايير عن الطلاب';
 $string['informationforcriterion'] = 'معلومات {$a}';
 $string['insertcomment'] = 'أدرج تعليقاً شائع الاستعمال';
 $string['maxscore'] = 'الدرجة القصوى';
@@ -84,7 +84,7 @@ $string['previewmarkingguide'] = 'استعراض دليل وضع العلاما�
 $string['privacy:metadata:criterionid'] = 'مُعرَّف للمعيار لوضع العلامات المتقدم';
 $string['privacy:metadata:fillingssummary'] = 'يخزن معلومات عن دليل المستخدم والإفادات بشأن دليل وضع العلامات';
 $string['privacy:metadata:instanceid'] = 'مُعرَّف للدرجة المستعملة من قبل النشاط';
-$string['privacy:metadata:preference:showmarkerdesc'] = 'فيما إذا كان ينبغي إظهار أوصاف المعايير لواضعي العلامات';
+$string['privacy:metadata:preference:showmarkerdesc'] = 'فيما إذا كان ينبغي إظهار أوصاف المعايير للمصححين';
 $string['privacy:metadata:preference:showstudentdesc'] = 'فيما إذا كان ينبغي إظهار أوصاف المعايير للطلاب';
 $string['privacy:metadata:remark'] = 'الملاحظات المتعلقة بمعيار وضع العلامة هذا';
 $string['privacy:metadata:score'] = 'درجة لمعيار وضع العلامة هذا';
@@ -92,13 +92,14 @@ $string['regrademessage1'] = 'أنت على وشك حفظ التغييرات ف�
 $string['regrademessage5'] = 'أنت على وشك حفظ تغييرات هامة في دليل وضع علامات سبق وأن تم استعماله لتقييم الطلبة. القيم في سجل الدرجات لن تتغير ولكن دليل وضع العلامات سيكون مخفياً عن الطلاب حتى تتم مراجعة علاماتهم.';
 $string['regradeoption0'] = 'لا تضع علامة لإعادة التقييم';
 $string['regradeoption1'] = 'ضع علامة لإعادة التقييم';
+$string['remark_help'] = 'أدخل أي تعليقات إضافية عن هذا المعيار.';
 $string['restoredfromdraft'] = 'ملاحظة: آخر محاولة لتقييم هذا الشخص لم يتم حفظها بشكل صحيح لذلك تمت استعادة مسودات العلامات. إذا أردت إلغاء هذه التغييرات استعمل زر \'إلغاء\' أدناه.';
 $string['save'] = 'احفظ';
 $string['saveguide'] = 'إحفظ دليل وضع العلامات واجعله جاهزاً';
 $string['saveguidedraft'] = 'إحفظ كمسودة';
 $string['score'] = 'الدرجة';
-$string['scoreforcriterion'] = 'درجة {$a}';
 $string['score_help'] = 'أدخل درجة {$a->criterion} ما بين 0 و {$a->maxscore}.';
-$string['showmarkerdesc'] = 'أظهر أوصاف المعايير لواضعي العلامات';
+$string['scoreforcriterion'] = 'درجة {$a}';
+$string['showmarkerdesc'] = 'أظهر أوصاف المعايير للمصححين';
 $string['showmarkspercriterionstudents'] = 'إظهار العلامات لكل معيار للطلبة';
 $string['showstudentdesc'] = 'أظهر أوصاف المعايير للطلاب';

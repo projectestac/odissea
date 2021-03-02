@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'folder', language 'fr', version '3.8'.
  *
- * @package   folder
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     folder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,17 +37,17 @@ $string['downloadfolder'] = 'Télécharger le dossier';
 $string['eventallfilesdownloaded'] = 'Archive ZIP d\'un dossier téléchargée';
 $string['eventfolderupdated'] = 'Dossier modifié';
 $string['folder:addinstance'] = 'Ajouter un dossier';
-$string['foldercontent'] = 'fichiers et sous-dossiers';
 $string['folder:managefiles'] = 'Gérer les fichiers dans le module dossier';
 $string['folder:view'] = 'Accéder au contenu des dossiers';
+$string['foldercontent'] = 'fichiers et sous-dossiers';
 $string['indicator:cognitivedepth'] = 'Dossier : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Dossier.';
 $string['indicator:cognitivedepthdef'] = 'Dossier : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Dossier » (niveaux : pas de vue, vue).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Dossier.';
 $string['indicator:socialbreadth'] = 'Dossier : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Dossier.';
 $string['indicator:socialbreadthdef'] = 'Dossier : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Dossier » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Dossier.';
 $string['maxsizetodownload'] = 'Taille maximale des dossiers à télécharger (Mo)';
 $string['maxsizetodownload_help'] = 'La taille maximale d\'un dossier pouvant être téléchargé sous forme d\'une archive ZIP. Si 0 est indiqué, la taille du dossier est illimitée.';
 $string['modulename'] = 'Dossier';

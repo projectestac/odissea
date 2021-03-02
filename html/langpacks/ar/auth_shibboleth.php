@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_shibboleth', language 'ar', version '3.8'.
  *
- * @package   auth_shibboleth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_shibboleth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,17 +29,11 @@ $string['auth_shib_auth_logo'] = 'شعار طريقة المصادقة';
 $string['auth_shib_auth_logo_description'] = 'أعط شعاراً لطريقة مصادقة Shibboleth ليكون مألوفاً لمستخدميك. هذا قد يكون شعار Shibboleth لاتحادك، كما في <tt>دخول SWITCHaai</tt> أو <tt>دخول InCommon</tt> أو ما شابه.';
 $string['auth_shib_auth_method'] = 'اسم طريقة المصادقة';
 $string['auth_shib_auth_method_description'] = 'أعط اسماً لطريقة مصادقة Shibboleth ليكون مألوفاً لمستخدميك. هذا قد يكون اسم Shibboleth لاتحادك، كما في <tt>دخول SWITCHaai</tt> أو <tt>دخول InCommon</tt> أو ما شابه.';
-$string['auth_shibbolethdescription'] = 'باستعمال هذه الطريقة يتم إنشاء حسابات المستخدمين والمصادقة عليها بواسطة Shibboleth. لمعرفة تفاصيل التنصيب، أنظر <a href="{$a}">Shibboleth README</a>.';
-$string['auth_shibboleth_errormsg'] = 'الرجاء اختيار المنظمة التي أنت عضو فيها';
-$string['auth_shibboleth_login'] = 'دخول شيبولث';
-$string['auth_shibboleth_login_long'] = 'الدخول إلى مودل عن طريق شيبولث';
-$string['auth_shibboleth_manual_login'] = 'الدخول اليدوي';
-$string['auth_shibboleth_select_member'] = 'أنا عضو في...';
-$string['auth_shibboleth_select_organization'] = 'أنا عضو في';
 $string['auth_shib_changepasswordurl'] = 'رابط تغيير كلمة المرور';
-$string['auth_shib_contact_administrator'] = 'في حالة عدم ارتباطك بتلك المنظمات ولكنك بحاجة إلى الوصول إلى مساقٍ ما في هذا المخدم، لطفاً، تواصل مع <a href="mailto:{$a}">مشرف مودل</a>.';
+$string['auth_shib_contact_administrator'] = 'في حالة عدم ارتباطك بتلك المنظمات ولكنك بحاجة إلى الوصول إلى مقرر دراسي ما في هذا المخدم، لطفاً، تواصل مع <a href="mailto:{$a}">مشرف مودل</a>.';
 $string['auth_shib_convert_data'] = 'تعديل البيانات API';
 $string['auth_shib_convert_data_description'] = 'يمكنك استعمال واجهة برمجة التطبيق هذه لإجراء المزيد من التعديلات على البيانات المزودة من قبل Shibboleth. إقرأ <a href="{$a}">README</a> للمزيد من التعليمات.';
+$string['auth_shib_convert_data_filepath_warning'] = 'لا يمكنك استعمال ملف موجود ضمن مجلد بيانات الموقع الحالي ($CFG->dataroot) بمثابة واجهة برمجة التطبيق لتعديل البيانات.';
 $string['auth_shib_convert_data_warning'] = 'الملف غير موجود أو تتعذر قراءته من قبل عملية مخدم الويب!';
 $string['auth_shib_idp_list'] = 'مزودو الهوية';
 $string['auth_shib_idp_list_description'] = 'أعط قائمة من مزودي الهوية entityIDs لتسمح للمستخدم بالاختيار منها في صفحة الدخول.<br />في كل سطر، ينبغي أن يوجد صف مفصول بفوارز من entityID لـ IdP (أنظر ملف البيانات الوصفية لـ Shibboleth) واسم  IdP حيث سيتم عرضها في القائمة المنسدلة.<br />بمثابة خيار ثالث إختياري، يمكنك إضافة بادئ موضع جلسة Shibboleth الذي سيتم استعماله في حالة كون تنصيبك من مودل هو جزء من تنصيب متعدد موحد .';
@@ -56,8 +50,15 @@ $string['auth_shib_no_organizations_warning'] = 'إذا أردت استعمال 
 $string['auth_shib_only'] = 'شيبولث فقط';
 $string['auth_shib_only_description'] = 'قم بتأشير هذا الخيار إذا كان في النية فرض مصادقة Shibboleth.';
 $string['auth_shib_username_description'] = 'اسم متغير مخدم الويب لـ Shibboleth الذي سيتم استعماله بمثابة اسم دخول مودل';
+$string['auth_shibboleth_errormsg'] = 'الرجاء اختيار المنظمة التي أنت عضو فيها';
+$string['auth_shibboleth_login'] = 'دخول Shibboleth';
+$string['auth_shibboleth_login_long'] = 'الدخول إلى مودل عن طريق شيبولث';
+$string['auth_shibboleth_manual_login'] = 'الدخول اليدوي';
+$string['auth_shibboleth_select_member'] = 'أنا عضو في...';
+$string['auth_shibboleth_select_organization'] = 'أنا عضو في';
+$string['auth_shibbolethdescription'] = 'باستعمال هذه الطريقة يتم إنشاء حسابات المستخدمين والمصادقة عليها بواسطة Shibboleth. لمعرفة تفاصيل التنصيب، أنظر <a href="{$a}">Shibboleth README</a>.';
 $string['pluginname'] = 'Shibboleth';
-$string['privacy:metadata'] = 'إن ملحق مصادقة Shibboleth لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق مصادقة Shibboleth لا يخزن أي بيانات شخصية';
 $string['shib_invalid_account_error'] = 'يبدو أنك مصادق من قبل Shibboleth ولكن ليس لمودل حساب صحيح باسم دخولك. حسابك قد لا يكون موجوداً أو تم تعليقه.';
 $string['shib_no_attributes_error'] = 'يبدو أنك مصادق من قبل Shibboleth ولكن مودل لم يتلقَ أي سمات مستخدم. لطفاً، تحقق من كون مزود هويتك يطلق السمات المطلوبة ({$a}) لمزود الخدمة الذي يقوم مودل بتشغيله، أو قم بإبلاغ مدير الويب في هذا المخدم.';
 $string['shib_not_all_attributes_error'] = 'مودل بحاجة إلى سمات Shibboleth معينة والتي ليست موجودة عندك. السمات هي: {$a}<br />لطفاً، تواصل مع مشرف الويب لهذا المخدم أو مع مزود الهوية العائد لك.';

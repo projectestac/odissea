@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'nl', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['addpurpose'] = 'Voeg doel toe';
 $string['addroleoverride'] = 'Rol overschrijven toevoegen';
 $string['approve'] = 'Goedkeuren';
 $string['approverequest'] = 'Aanvraag goedkeuren';
-$string['automaticdeletionrequests'] = 'Maak automatische verwijder verzoeken voor gegevens';
+$string['automaticdeletionrequests'] = 'Maak automatische gegevens verwijder verzoeken aan';
 $string['automaticdeletionrequests_desc'] = 'Indien ingeschakeld, wordt er automatisch een aanvraag tot verwijderen van gebruikersgegevens gemaakt voor elke gebruiker die manueel verwijderd wordt.';
 $string['bulkapproverequests'] = 'Aanvragen goedkeuren';
 $string['bulkdenyrequests'] = 'Weiger aanvragen';
@@ -41,14 +41,14 @@ $string['cachedef_purpose'] = 'Gegevensdoelen';
 $string['cachedef_purpose_overrides'] = 'Overschrijvingen van doelen in de Data Privacy tool';
 $string['cancelrequest'] = 'Annuleer verzoek';
 $string['cancelrequestconfirmation'] = 'Wil je dit gegevensverzoek echt annuleren?';
-$string['cannotreset'] = 'Kan dit verzoek niet resetten. Alleen afgewezen verzoeken kunnen worden gereset.';
+$string['cannotreset'] = 'Je kunt dit verzoek niet resetten. Alleen afgewezen verzoeken kunnen gerest worden.';
 $string['categories'] = 'Categorieën';
 $string['categorieslist'] = 'Lijst met gegevenscategorieën';
 $string['category'] = 'Categorie';
+$string['category_help'] = 'Een categorie in het gegevensregister beschrijft een gegevenstype. Een nieuwe categorie kan toegevoegd worden, of wanneer overerven is ingeschakeld, dan wordt de categorie van een hogere context toegepast. Contexten zijn (van laag naar hoog): Blokken > Activiteitsmodules > Cursussen > Cursuscategorieën > Gebruiker > Site.';
 $string['categorycreated'] = 'Categorie gemaakt';
 $string['categorydefault'] = 'Standaardcategorie';
 $string['categorydefault_help'] = 'De standaardcategorie is de datacategorie die toegepast wordt op elke nieuwe instantie. Indien overerven is geselecteerd, dan wordt de datacategorie van een hogere context toegepast. Contexten zijn (van laag naar hoog): Blokken > Activiteitsmodules > Cursussen > Cursuscategorieën > Gebruiker > Site.';
-$string['category_help'] = 'Een categorie in het gegevensregister beschrijft een gegevenstype. Een nieuwe categorie kan toegevoegd worden, of wanneer overerven is ingeschakeld, dan wordt de categorie van een hogere context toegepast. Contexten zijn (van laag naar hoog): Blokken > Activiteitsmodules > Cursussen > Cursuscategorieën > Gebruiker > Site.';
 $string['categoryupdated'] = 'Categorie bijgewerkt';
 $string['close'] = 'Sluiten';
 $string['compliant'] = 'Klacht';
@@ -58,7 +58,7 @@ $string['confirmbulkdenial'] = 'Wilt u de geselecteerde gegevensverzoeken echt w
 $string['confirmcompletion'] = 'Wil je echt deze gebruikersvraag als onvolledig markeren?';
 $string['confirmcontextdeletion'] = 'Wil je echt het verwijderen van de geselecteerde contexten bevestigen? Dit zal ook alle gebruikersgegevens voor de gerelateerde subcontexten verwijderen.';
 $string['confirmdenial'] = 'Wil je echt dit gegevensverzoek weigeren?';
-$string['confirmrequestresubmit'] = 'Weet u zeker dat u de huidige {$a->type} aanvraag voor {$a->username}  wilt annuleren en opnieuw wilt verzenden?';
+$string['confirmrequestresubmit'] = 'Weet je zeker dat je het huidige {$a->type} verzoek voor {$a->username} wilt annuleren en opnieuw wil indienen?';
 $string['contactdataprotectionofficer'] = 'Neem contact op met de functionaris voor gegevensbescherming';
 $string['contactdataprotectionofficer_desc'] = 'Door deze functie in te schakelen, kunnen gebruikers contact opnemen met de functionaris gegevensbescherming en hun gegevens opvragen via een link op hun profielpagina.';
 $string['contactdpoviaprivacypolicy'] = 'Neem contact op met de functionaris gegevensbescherming van deze website, zoals beschreven in het privacybeleid.';
@@ -88,8 +88,8 @@ $string['dataprivacy:requestdeleteforotheruser'] = 'Gegevensverwijdering aanvrag
 $string['dataregistry'] = 'Gegevensregister';
 $string['dataregistryinfo'] = 'Het gegevensregister maakt het mogelijk om categorieën (types van gegevens) en doelen (de redenen van het verwerken van gegevens) in te stellen voor alle inhoud van de site - van gebruikers en cursussen tot activiteiten en blokken. Voor elk doel kan een bewaartijd ingesteld worden. Wanneer de bewaartijd verstreken is, dan worden de gegevens gemarkeerd en opgelijst voor verwijdering in afwachting van de bevestiging van de beheerder.';
 $string['datarequestcreatedforuser'] = 'Gegevensaanvraag gemaakt voor {$a}';
-$string['datarequestcreatedfromscheduledtask'] = 'Automatisch gemaakt vanuit een geplande taak (reeds bestaande verwijderde gebruiker).';
-$string['datarequestcreatedupondelete'] = 'Automatisch gemaakt na verwijdering van de gebruiker.';
+$string['datarequestcreatedfromscheduledtask'] = 'Automatisch aangemaakt vanuit een geplande taak (gebruikers die al eerder verwijderd zijn).';
+$string['datarequestcreatedupondelete'] = 'Automatisch aangemaakt bij gebruikersverwijdering.';
 $string['datarequestemailsubject'] = 'Gegevensverzoek: {$a}';
 $string['datarequests'] = 'Gegevens verzoeken';
 $string['dataretentionexplanation'] = 'Deze samenvatting toont de standaardcategorieën en -doelen voor het bewaren van gebruikersinformatie. Bepaalde delen van het systeem kunnen meer specifieke categorieën en doelen hebben dan de hier vermelde.';
@@ -114,7 +114,7 @@ $string['deletecategory'] = 'Verwijder de categorie';
 $string['deletecategorytext'] = 'Weet je zeker dat je de categorie \'{$a}\' wilt verwijderen?';
 $string['deletedefaults'] = 'Standaardwaarden verwijderen: {$a}';
 $string['deletedefaultsconfirmation'] = 'Weet u zeker dat u de standaardcategorie en het doel voor {$a} modules wilt verwijderen?';
-$string['deleteexistingdeleteduserstask'] = 'Maak een gegevensverzoek voor reeds bestaande verwijderde gebruikers';
+$string['deleteexistingdeleteduserstask'] = 'Maak een gegevens verwijder verzoek aan voor gebruikers die eerder verwijderd zijn.';
 $string['deleteexpiredcontextstask'] = 'Verwijder vervallen contexten';
 $string['deleteexpireddatarequeststask'] = 'Verwijder verlopen gegevensverzoeken';
 $string['deletemyaccount'] = 'Verwijder mijn account';
@@ -249,10 +249,10 @@ $string['privacyrequestexpiry_desc'] = 'De tijd dat goedgekeurde gegevensverzoek
 $string['protected'] = 'Beschermd';
 $string['protectedlabel'] = 'Het bewaren van deze gegevens heeft een hoger juridisch precedent over het verzoek van een gebruiker om te worden vergeten. Deze gegevens worden pas verwijderd nadat de bewaarperiode is verstreken.';
 $string['purpose'] = 'Doel';
+$string['purpose_help'] = 'Het doel beschrijft de reden voor het verwerken van de gegevens. Een nieuw doel kan toegevoegd worden of worden overgeërfd als dit is ingeschakeld, als het doel van een hogere context wordt toegepast. Contexten zijn (van laag naar hoog): Blokken > Activiteitsmodules > Cursussen > Cursuscategorieën > Gebruikers > Site.';
 $string['purposecreated'] = 'Doel aangemaakt';
 $string['purposedefault'] = 'Standaard doel';
 $string['purposedefault_help'] = 'Het standaard doel is het doel dat toegepast wordt op elke nieuwe instantie. Als overerven is ingeschakeld, dan zal het doel van een hogere context toegepast worden. Contexten zijn (van laag naar hoog): Blokken > Activiteitsmodules > Cursussen > Cursuscategorieën > Gebruikers > Site.';
-$string['purpose_help'] = 'Het doel beschrijft de reden voor het verwerken van de gegevens. Een nieuw doel kan toegevoegd worden of worden overgeërfd als dit is ingeschakeld, als het doel van een hogere context wordt toegepast. Contexten zijn (van laag naar hoog): Blokken > Activiteitsmodules > Cursussen > Cursuscategorieën > Gebruikers > Site.';
 $string['purposeoverview'] = 'Een doel beschrijft het beoogde gebruik en bewaarbeleid voor opgeslagen gegevens. De basis voor het opslaan en bewaren van die gegevens wordt ook beschreven in het doel.';
 $string['purposes'] = 'Doeleinden';
 $string['purposeslist'] = 'Lijst van gegevensdoeleinden';
@@ -275,11 +275,11 @@ $string['requestsdenied'] = 'De verzoeken zijn geweigerd';
 $string['requeststatus'] = 'Status';
 $string['requestsubmitted'] = 'Je aanvraag is ingediend bij de  functionaris voor gegevensbescherming van deze website';
 $string['requesttype'] = 'Type';
+$string['requesttype_help'] = 'Selecteer de reden waarom je contact wilt opnemen met de  functionaris voor gegevensbescherming  van deze website. Wees je er van bewust dat het verwijderen van al je gegevens van deze site er ook zal voor zorgen dat je je niet meer kunt aanmelden.';
 $string['requesttypedelete'] = 'Verwijder al mijn persoonlijke gegevens';
 $string['requesttypedeleteshort'] = 'Verwijder';
 $string['requesttypeexport'] = 'Exporteer al mijn persoonlijke gegevens';
 $string['requesttypeexportshort'] = 'Exporteer';
-$string['requesttype_help'] = 'Selecteer de reden waarom je contact wilt opnemen met de  functionaris voor gegevensbescherming  van deze website. Wees je er van bewust dat het verwijderen van al je gegevens van deze site er ook zal voor zorgen dat je je niet meer kunt aanmelden.';
 $string['requesttypeothers'] = 'Algemene vraag';
 $string['requesttypeothersshort'] = 'Bericht';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';

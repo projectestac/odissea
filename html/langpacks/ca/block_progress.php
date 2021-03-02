@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'ca', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_progress', language 'ca', version '3.8'.
  *
- * @package   block_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -93,10 +93,10 @@ $string['mouse_over_prompt'] = 'Passeu el ratolí sobre el bloc per més informa
 $string['no_blocks'] = 'No hi ha configurat cap Bloc de progrés als vostres cursos.';
 $string['no_events_config_message'] = 'No hi ha cap activitat o recurs per monitoritzar-ne el progrés. Creeu alguna activitat o recurs per poder configurar aleshores el bloc.';
 $string['no_events_message'] = 'No hi ha cap activitat o recurs per monitoritzar. Utilitzeu la Configuració per configurar-ne el seguiment.';
+$string['no_visible_events_message'] = 'Actualment no són visibles cap dels esdeveniments monitoritzats.';
 $string['notAttempted_colour'] = '#C71C22';
 $string['notattempted_colour_descr'] = 'Codi de color HTML dels elements actuals que encara no han estat realitzats';
 $string['notattempted_colour_title'] = 'Color dels no realitzats';
-$string['no_visible_events_message'] = 'Actualment no són visibles cap dels esdeveniments monitoritzats.';
 $string['now_indicator'] = 'ARA';
 $string['overview'] = 'Descripció general pels estudiants';
 $string['page'] = 'Pàgina';
@@ -107,10 +107,10 @@ $string['pluginname'] = 'Barra de progrés';
 $string['posted_to'] = 'enviat a';
 $string['progress'] = 'Progrés';
 $string['progress:addinstance'] = 'Afegeix una Barra de progrés nova';
-$string['progressbar'] = 'Barra de progrés';
 $string['progress:myaddinstance'] = 'Afegeix un bloc de Barra de progrés a «El meu Moodle»';
 $string['progress:overview'] = 'Veure el resum del curs amb Barres de progrés de tots els estudiants';
 $string['progress:showbar'] = 'Mostra la barra al bloc Barra de progrés';
+$string['progressbar'] = 'Barra de progrés';
 $string['questionnaire'] = 'Qüestionari';
 $string['quiz'] = 'Qüestionari';
 $string['recordingsbn'] = 'Enregistraments BBB';

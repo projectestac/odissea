@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'timezones', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'timezones', language 'el', version '3.8'.
  *
- * @package   timezones
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     timezones
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -130,8 +130,8 @@ $string['america/dominica'] = 'Αμερική/Ντομίνικα';
 $string['america/edmonton'] = 'Αμερική/Έντμοντον';
 $string['america/eirunepe'] = 'Αμερική/Εϊρουνέπε';
 $string['america/el_salvador'] = 'Αμερική/Ελ_Σαλβαδόρ';
-$string['america/fortaleza'] = 'Αμερική/Φορταλέζα';
 $string['america/fort_nelson'] = 'Αμερική/Φορτ Νέλσον';
+$string['america/fortaleza'] = 'Αμερική/Φορταλέζα';
 $string['america/glace_bay'] = 'Αμερική/Γκλέις_Μπέι';
 $string['america/godthab'] = 'Αμερική/Νουούκ';
 $string['america/goose_bay'] = 'Αμερική/Γκουζ_Μπέι';
@@ -148,11 +148,11 @@ $string['america/indiana/indianapolis'] = 'Αμερική/Ιντιάνα/Ινδ�
 $string['america/indiana/knox'] = 'Αμερική/Ιντιάνα/Νοξ';
 $string['america/indiana/marengo'] = 'Αμερική/Ιντιάνα/Μαρένγκο';
 $string['america/indiana/petersburg'] = 'Αμερική/Ιντιάνα/Πίτερσμπεργκ';
-$string['america/indianapolis'] = 'Αμερική/Ιντιανάπολις';
 $string['america/indiana/tell_city'] = 'Αμερική/Ιντιάνα/Τελ_Σίτι';
 $string['america/indiana/vevay'] = 'Αμερική/Ιντιάνα/Βιβέι';
 $string['america/indiana/vincennes'] = 'Αμερική/Ιντιάνα/Βινσέν';
 $string['america/indiana/winamac'] = 'Αμερική/Ιντιάνα/Γουίναμακ';
+$string['america/indianapolis'] = 'Αμερική/Ιντιανάπολις';
 $string['america/inuvik'] = 'Αμερική/Ινούβικ';
 $string['america/iqaluit'] = 'Αμερική/Ικαλούιτ';
 $string['america/jamaica'] = 'Αμερική/Τζαμάικα';
@@ -342,8 +342,8 @@ $string['atlantic/faroe'] = 'Ατλαντικός/Νήσοι_Φερόες';
 $string['atlantic/madeira'] = 'Ατλαντικός/Μαδέρα';
 $string['atlantic/reykjavik'] = 'Ατλαντικός/Ρέικιαβικ';
 $string['atlantic/south_georgia'] = 'Ατλαντικός/Νότιος_Γεωργία';
-$string['atlantic/stanley'] = 'Ατλαντικός/Στάνλεϋ';
 $string['atlantic/st_helena'] = 'Ατλαντικός/Αγ.Ελένη_Νήσος';
+$string['atlantic/stanley'] = 'Ατλαντικός/Στάνλεϋ';
 $string['australia/adelaide'] = 'Αυστραλία/Αδελαΐδα';
 $string['australia/brisbane'] = 'Αυστραλία/Μπρισμπέιν';
 $string['australia/broken_hill'] = 'Αυστραλία/Μπρόκεν_Χιλ';

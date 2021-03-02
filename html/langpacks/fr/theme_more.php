@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'fr', branch 'MOODLE_36_STABLE'
+ * Strings for component 'theme_more', language 'fr', version '3.8'.
  *
- * @package   theme_more
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_more
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,10 +30,10 @@ $string['backgroundfixed_desc'] = 'Permet de fixer l\'image de fond à la page.'
 $string['backgroundimage'] = 'Image de fond';
 $string['backgroundimage_desc'] = 'L\'image à afficher en arrière-plan sur le site.';
 $string['backgroundposition'] = 'Position de l\'image de fond';
+$string['backgroundposition_desc'] = 'La position de l\'image de fond.';
 $string['backgroundpositioncenterbottom'] = 'En bas centré';
 $string['backgroundpositioncentercenter'] = 'Au milieu centré';
 $string['backgroundpositioncentertop'] = 'En haut centré';
-$string['backgroundposition_desc'] = 'La position de l\'image de fond.';
 $string['backgroundpositionleftbottom'] = 'En bas à gauche';
 $string['backgroundpositionleftcenter'] = 'Au milieu à gauche';
 $string['backgroundpositionlefttop'] = 'En haut à gauche';

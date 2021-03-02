@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'countries', language 'it', version '3.8'.
  *
- * @package   countries
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     countries
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,7 +54,7 @@ $string['BL'] = 'Saint Barthélemy';
 $string['BM'] = 'Bermuda';
 $string['BN'] = 'Sultanato del Brunei';
 $string['BO'] = 'Bolivia (Stato Plurinazionale della)';
-$string['BQ'] = 'Bonaire, Sint Eustatius e Saba';
+$string['BQ'] = 'Isole BES';
 $string['BR'] = 'Brasile';
 $string['BS'] = 'Bahamas';
 $string['BT'] = 'Bhutan';
@@ -165,7 +165,7 @@ $string['MA'] = 'Marocco';
 $string['MC'] = 'Monaco';
 $string['MD'] = 'Moldavi (Repubblica di)';
 $string['ME'] = 'Montenegro';
-$string['MF'] = 'Saint Martin (parte francese)';
+$string['MF'] = 'Saint Martin (francese)';
 $string['MG'] = 'Madagascar';
 $string['MH'] = 'Isole Marshall';
 $string['MK'] = 'Macedonia del Nord';
@@ -265,7 +265,7 @@ $string['VC'] = 'Saint Vincent e Grenadine';
 $string['VE'] = 'Venezuela (Repubblica Bolivariana del)';
 $string['VG'] = 'Isole Vergini (Britanniche)';
 $string['VI'] = 'Isole Vergini (Stati Uniti)';
-$string['VN'] = 'Vietnam';
+$string['VN'] = 'Viet Nam';
 $string['VU'] = 'Vanuatu';
 $string['WF'] = 'Wallis e Futuna';
 $string['WS'] = 'Samoa';

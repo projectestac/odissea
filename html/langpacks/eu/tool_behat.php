@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_behat', language 'eu', version '3.8'.
  *
- * @package   tool_behat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_behat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,13 +34,13 @@ $string['errordataroot'] = '$CFG->behat_dataroot ez dago zehaztuta edo baliogabe
 $string['errorsetconfig'] = 'config.php fitxategian $CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot zehaztu behar dira.';
 $string['erroruniqueconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot balioek $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot eta $CFG->phpunit_prefix balioekiko ezberdinak izan behar dute.';
 $string['fieldvalueargument'] = 'Eremu-balioetako argumentuak';
-$string['fieldvalueargument_help'] = 'Argumentu hau eremu-balio batekin osatu behar da. Eremu-mota asko dago, batzuk sinpleak (laukitxoak, aukera-zerrendak edo testu-eremuak bezalakoak) eta konplexuak besteak (datu-hautatzaileak bezalakoak). Ikusi garatzaileentzako dokumentazioa <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a> espero diren eremu-balioen zehaztasun gehiagora ikusteko.';
+$string['fieldvalueargument_help'] = 'Argumentu hau eremu-balio batekin osatu behar da. Eremu-mota asko dago, batzuk sinpleak (laukitxoak, aukera-zerrendak edo testu-eremuak bezalakoak) eta konplexuak besteak (datu-hautatzaileak bezalakoak). Ikusi garatzaileentzako dokumentazioa <a href="http://docs.moodle.org/dev/Acceptance_testing" target="_blank">Acceptance_testing</a> espero diren eremu-balioen zehaztasun gehiagora ikusteko.';
 $string['giveninfo'] = 'Emandakoa. Ingurunea konfiguratzeko prozesuak.';
 $string['infoheading'] = 'Informazioa';
 $string['installinfo'] = 'Irakurri {$a} instalazio eta proben exekuzioaren informazioa izateko';
 $string['newstepsinfo'] = 'Irakurri {$a} urratsen definizio berriak gehitzeko moduaren inguruko informazioa izateko';
 $string['newtestsinfo'] = 'Irakurri {$a} proba berriak idazteko moduaren inguruko informazioa izateko';
-$string['nostepsdefinitions'] = 'Ez dago iragazki hauek betetzen dituen urratsen definiziorik';
+$string['nostepsdefinitions'] = 'Ez dago iragazki honek betetzen duen urrats-definiziorik';
 $string['pluginname'] = 'Onarpen probak';
 $string['privacy:metadata'] = 'Onarpen probak pluginak ez du datu pertsonalik biltzen.';
 $string['stepsdefinitionscomponent'] = 'Eremua';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,31 +12,33 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bulkusers', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'bulkusers', language 'sv', version '3.8'.
  *
- * @package   bulkusers
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     bulkusers
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addall'] = 'Lägg till alla';
-$string['addsel'] = 'Lägg till urvalet av tillgängliga användare';
+$string['addsel'] = 'Lägg till i urvalet';
 $string['allfilteredusers'] = 'Alla filtrerade ({$a->count}/{$a->total})';
 $string['allselectedusers'] = 'Alla valda ({$a->count}/{$a->total})';
 $string['allusers'] = 'Alla användare';
 $string['available'] = 'Tillgänglig';
 $string['confirmmessage'] = 'Vill du verkligen skicka det ovanstående meddelandet till alla dessa användare?<br />{$a}';
-$string['nofilteredusers'] = 'Det gick inte att hitta några användare(0/{$a})';
-$string['noselectedusers'] = 'Inga användare är valda';
+$string['deleteduser'] = 'Borttagen användare';
+$string['nofilteredusers'] = 'Det gick inte att hitta några användare (0/{$a})';
+$string['noselectedusers'] = 'Inga användare valda';
 $string['removeall'] = 'Ta bort alla ';
-$string['removesel'] = 'Ta bort urvalet av tillgängliga användare';
-$string['selected'] = 'Urvald/a';
-$string['selectedlist'] = 'Lista över urval av användare...';
+$string['removesel'] = 'Ta bort från urvalet';
+$string['selected'] = 'Valda';
+$string['selectedlist'] = 'Valda användare...';
 $string['selectedlist_help'] = '<h2>Lista över valda användare...</h2>
 
 <ul>
@@ -48,11 +49,7 @@ $string['selectedlist_help'] = '<h2>Lista över valda användare...</h2>
 <li>Ta bort alla - tar bort alla användare från listan över Utvalda.</li>
 </ul>';
 $string['users'] = 'Användare';
-$string['usersfound'] = '{$a} användare har hittats';
-$string['users_help'] = '<h2>Listor över användare</h2>
-
-<p>Listan över <strong>tillgängliga</strong> innehåller användare som har passerat de aktiva filtren. Om t.ex. sektionerna för aktiva filter innehåller bara ett filter för användare vars land är Rumänien, då kommer listan över tillgängliga endast att innehålla användare som har angivit Rumänien som sitt land i sidan för profiler.</p>
-
-<p>Listan över <strong>Utvalda</strong> innehåller användare som du har lagt till till listan genom att använda knapparna från <em>Listan över utvalda användare...</em>. När du håller ned knappen <em>Gå</em> från  <em> med valda användare...</em> så kommer den åtgärd du har valt att utföras på användarna från denna lista.</p>';
+$string['users_help'] = 'Alla användare som har passerat de aktiva filtren listas i rutan. Om inget filter är inställt listas alla webbplatsanvändare.';
+$string['usersfound'] = '{$a} användare hittades';
 $string['usersinlist'] = 'Användare i lista';
-$string['usersselected'] = '{$a} användare har förts till urvalet';
+$string['usersselected'] = '{$a} användare valda.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradingform_guide', language 'eu', version '3.8'.
  *
- * @package   gradingform_guide
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradingform_guide
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -62,7 +62,7 @@ $string['err_nodescriptionmarkers'] = 'Kalifikatzailearen deskribapena ezin da h
 $string['err_nomaxscore'] = 'Irizpidearen gehienezko kalifikazioa ezin da hutsik egon';
 $string['err_noshortname'] = 'Irizpidearen izena ezin da hutsik egon';
 $string['err_scoreinvalid'] = '{$a->criterianame}-ri emandako puntuazioa ez da baliagarria, gehienezko puntuazioa hau da: {$a->maxscore}';
-$string['err_scoreisnegative'] = '\'{$a->criterianame}\'-(e)ri emandako puntuazioa ez da baliagarria, balio negatiboak ez daude baimenduta';
+$string['err_scoreisnegative'] = '\'{$a->criterianame}\'(e)ri emandako puntuazioa ez da baliagarria, balio negatiboak ez daude baimenduta';
 $string['err_shortnametoolong'] = 'Irizpidearen izenak gehienez 256 karaktere izan ditzake';
 $string['gradingof'] = '{$a} kalifikatzen';
 $string['guide'] = 'Ebaluazio-gida';
@@ -78,7 +78,7 @@ $string['insertcomment'] = 'Txertatu maiz erabilitako iruzkina';
 $string['maxscore'] = 'Gehienezko puntuazioa';
 $string['name'] = 'Izena';
 $string['needregrademessage'] = 'Ebaluazio-gidaren definizioa aldatu da ikasle hau kalifikatu ondoren. Ikasleak ezin du ikusi kalifikazio-gida, zuk gida egiaztatu eta kalifikazioa eguneratu arte.';
-$string['outof'] = '{$a}-(e)rarteko puntuazioa';
+$string['outof'] = '{$a}(e)rarteko puntuazioa';
 $string['pluginname'] = 'Ebaluazio-gida';
 $string['previewmarkingguide'] = 'Aurreikusi ebaluazio-gida';
 $string['privacy:metadata:criterionid'] = 'Kalifikazio aurreraturako irizpide baten identifikatzailea';
@@ -97,8 +97,8 @@ $string['save'] = 'Gorde';
 $string['saveguide'] = 'Gorde ebaluazio-gida eta utzi erabiltzeko prest';
 $string['saveguidedraft'] = 'Gorde zirriborro gisa';
 $string['score'] = 'puntuazioa';
-$string['scoreforcriterion'] = '{$a} puntuazioa';
 $string['score_help'] = 'Zehaztu {$a->criterion} irizpiderako 0 eta {$a->maxscore} arteko puntuazioa.';
+$string['scoreforcriterion'] = '{$a} puntuazioa';
 $string['showmarkerdesc'] = 'Erakutsi kalifikatzailearen irizpideen deskribapenak';
 $string['showmarkspercriterionstudents'] = 'Erakutsi ikasleei irizpide bakoitzearen kalifikazioak';
 $string['showstudentdesc'] = 'Erakutsi Ikasleen irizpideen deskribapenak';

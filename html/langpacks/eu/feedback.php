@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'eu', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,7 +37,7 @@ $string['anonymous_entries'] = 'Sarrera anonimoak ({$a})';
 $string['anonymous_user'] = 'Erabiltzaile ezezaguna';
 $string['answerquestions'] = 'Erantzun galderari';
 $string['append_new_items'] = 'Gehitu elementu berriak';
-$string['autonumbering'] = 'Zenbatu galdera bakoitza automatikoki';
+$string['autonumbering'] = 'Zenbakitu galderak automatikoki';
 $string['autonumbering_help'] = 'Gaitu edo desgaitu galdera bakoitzerako zenbaketa automatikoa';
 $string['average'] = 'Batez bestekoa';
 $string['bold'] = 'Lodia';
@@ -48,15 +48,15 @@ $string['cannotsavetempl'] = 'Txantiloiak gordetzea ez dago gaituta';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha ez da ezarri';
 $string['check'] = 'Aukera anitza - erantzun anitzak';
-$string['checkbox'] = 'Aukera anitza - erantzun anitzak baimenduta (egiaztatze-karratutxoak)';
 $string['check_values'] = 'Erantzun posibleak';
+$string['checkbox'] = 'Aukera anitza - erantzun anitzak baimenduta (aukera anitzeko laukitxoak)';
 $string['choosefile'] = 'Aukeratu fitxategi bat';
 $string['chosen_feedback_response'] = 'Aukeratutako inkestaren erantzunak';
 $string['closebeforeopen'] = 'Zehaztu duzun amaiera-data hasiera-data baino lehenagokoa da.';
+$string['complete_the_form'] = 'Erantzun galderei';
 $string['completed'] = 'Osatua';
 $string['completed_feedbacks'] = 'Bidalitako erantzunak';
 $string['completedon'] = 'Noiz osatua: {$a}';
-$string['complete_the_form'] = 'Erantzun galderei';
 $string['completionsubmit'] = 'Ikasleak inkesta bidali behar du osatzeko';
 $string['configallowfullanonymous'] = '\'Bai\' aukeratuz gero, erabiltzaileek inkesta osatu ahal izango dute hasiera-orrian, saioa hasi gabe ere.';
 $string['confirmdeleteentry'] = 'Ziur zaude sarrera hau ezabatu nahi duzula?';
@@ -96,16 +96,16 @@ $string['dependvalue'] = 'Baldintzapeko balioa';
 $string['description'] = 'Deskribapena';
 $string['do_not_analyse_empty_submits'] = 'Ez analizatu bidalketa hutsak';
 $string['downloadresponseas'] = 'Jaitsi erantzun guztiak honela:';
-$string['dropdown'] = 'Aukera anitza - erantzun bakarra baimenduta (zabaltzen den zerrenda)';
-$string['dropdownlist'] = 'Aukera anitza - erantzun bakarra baimenduta (zabaltzen dena)';
-$string['dropdownrated'] = 'Zabaltzen den zerrenda (kalifikatua)';
-$string['dropdown_values'] = 'Erantzunak';
 $string['drop_feedback'] = 'Ezabatu ikastaro honetatik';
+$string['dropdown'] = 'Aukera anitza - erantzun bakarra baimenduta (zabaltzen den menua)';
+$string['dropdown_values'] = 'Erantzunak';
+$string['dropdownlist'] = 'Aukera anitza - erantzun bakarra baimenduta (zabaltzen den menua)';
+$string['dropdownrated'] = 'Zabaltzen den menua (kalifikatua)';
 $string['edit_item'] = 'Editatu galdera';
 $string['edit_items'] = 'Editatu galderak';
 $string['email_notification'] = 'Gaitu bidalketen jakinarazpenak';
 $string['email_notification_help'] = 'Gaituz gero, irakasleek bidalketen jakinarazapenak jasoko dituzte.';
-$string['emailteachermail'] = '{$a->username}(e)k inkesta hau bete du: \'{$a->feedback}\'
+$string['emailteachermail'] = '{$a->username}(e)k inkesta osatu du: \'{$a->feedback}\'
 
 Hemen ikus dezakezu:
 
@@ -118,41 +118,41 @@ $string['eventresponsesubmitted'] = 'Erantzuna bidali da';
 $string['export_questions'] = 'Esportatu galderak';
 $string['export_to_excel'] = 'Esportatu Excel-era';
 $string['feedback:addinstance'] = 'Gehitu inkesta berria';
-$string['feedbackclose'] = 'Erantzunetarako itxiera-data';
 $string['feedback:complete'] = 'Osatu inkesta bat';
-$string['feedbackcompleted'] = '{$a->username}-(e)k osatu du {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Sortu txantiloi pribatua';
 $string['feedback:createpublictemplate'] = 'Sortu txantiloi publikoa';
 $string['feedback:deletesubmissions'] = 'Ezabatu osatutako bidalketak';
 $string['feedback:deletetemplate'] = 'Ezabatu txantiloia';
 $string['feedback:edititems'] = 'Editatu elementuak';
-$string['feedback_is_not_for_anonymous'] = 'Inkesta ez da anonimoentzat';
-$string['feedback_is_not_open'] = 'Inkesta ez dago zabalik';
 $string['feedback:mapcourse'] = 'Esleitu ikastaroak inkesta orokorretarako';
-$string['feedbackopen'] = 'Erantzunetarako hasiera-data';
 $string['feedback:receivemail'] = 'Jaso jakinarazpena posta elektroniko bidez';
 $string['feedback:view'] = 'Ikusi inkesta bat';
 $string['feedback:viewanalysepage'] = 'Bidali ondoren, ikusi analisi-orria';
 $string['feedback:viewreports'] = 'Ikusi txostenak';
+$string['feedback_is_not_for_anonymous'] = 'Inkesta ez da anonimoentzat';
+$string['feedback_is_not_open'] = 'Inkesta ez dago zabalik';
+$string['feedbackclose'] = 'Erantzunetarako itxiera-data';
+$string['feedbackcompleted'] = '{$a->username}(e)k osatu du {$a->feedbackname}';
+$string['feedbackopen'] = 'Erantzunetarako hasiera-data';
 $string['file'] = 'Fitxategia';
 $string['filter_by_course'] = 'Iragazi ikastaroen arabera';
 $string['handling_error'] = 'Errorea gertatu da inkesta moduluak ekintza kudeatzean';
 $string['hide_no_select_option'] = 'Ezkutatu "Aukeratu gabea" aukera';
 $string['horizontal'] = 'Horizontala';
-$string['importfromthisfile'] = 'Inportatu fitxategi honetatik';
 $string['import_questions'] = 'Inportatu galderak';
 $string['import_successfully'] = 'Ondo inportatu da';
+$string['importfromthisfile'] = 'Inportatu fitxategi honetatik';
 $string['includeuserinrecipientslist'] = 'Sartu {$a} jasotzaileen zerrendan';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa inkestetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Inkesta motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa inkestetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Inkesta jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da)';
-$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Inkesta motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala inkestetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Inkesta motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala inkestetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Inkesta jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea, parte-hartzea besteekin)';
-$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Inkesta motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['info'] = 'Informazioa';
-$string['infotype'] = 'Informazioa-mota';
+$string['infotype'] = 'Informazioa mota';
 $string['insufficient_responses'] = 'Ez dago erantzun nahikorik';
 $string['insufficient_responses_for_this_group'] = 'Ez dago erantzun nahikorik talde honentzat';
 $string['insufficient_responses_help'] = 'Iruzkin anonimoak mantentzeko, gutxienez 2 erantzun izan behar dira.';
@@ -175,7 +175,7 @@ $string['mode'] = 'Modua';
 $string['modulename'] = 'Inkesta';
 $string['modulename_help'] = 'Inkesta jarduerak irakasleari inkesta pertsonalizatuak sortzea ahalbidetzen diote, parte-hartzaileen feedbackak jasotzeko hainbat galdera-mota erabilita, tartean aukera anitzekoak, Bai/Ez modukoak eta testua idaztekoak.
 
-Inkestaren emaitzak ikasleek erantzun ondoren erakutsi daitezke, baita irakasleentzat soilik erakutsi ere. Emaitzak ikasleen izenekin edo modu anonimoan erakutsi daitezke. Moodleko hasiera orrian dauden inkestak saioa hasi gabeko erabiltzaileek ere osatu ditzakete.
+Inkestaren emaitzak ikasleek erantzun ondoren erakutsi daitezke, baita irakasleentzat soilik erakutsi ere. Emaitzak ikasleen izenekin edo modu anonimoan erakutsi daitezke. Moodle-ko hasiera orrian dauden inkestak saioa hasi gabeko erabiltzaileek ere osatu ditzakete.
 
 Inkesta jarduerak erabili daitezke
 
@@ -186,25 +186,25 @@ Inkesta jarduerak erabili daitezke
 $string['modulenameplural'] = 'Inkesta';
 $string['move_item'] = 'Mugitu galdera hau';
 $string['multichoice'] = 'Aukera anitzak';
+$string['multichoice_values'] = 'Aukera anitzen balioak';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->name}';
 $string['multichoicerated'] = 'Aukera anitzak (kalifikatua)';
 $string['multichoicetype'] = 'Aukera anitzen mota';
-$string['multichoice_values'] = 'Aukera anitzen balioak';
 $string['multiplesubmit'] = 'Baimendu bidalketa anitzak';
 $string['multiplesubmit_help'] = 'Inkesta anonimoak gaituz gero, erabiltzaileek erantzunak nahi beste aldiz bidal ditzakete.';
 $string['name'] = 'Izena';
-$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['name_required'] = 'Izena ezinbestekoa da';
+$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['next_page'] = 'Hurrengo orria';
 $string['no_handler'] = 'Ez dago honentzako kudeatzalerik';
 $string['no_itemlabel'] = 'Etiketarik ez';
 $string['no_itemname'] = 'Ez da testurik';
 $string['no_items_available_yet'] = 'Oraindik ez da galderarik ezarri';
+$string['no_templates_available_yet'] = 'Oraindik ez dago txantiloirik';
 $string['non_anonymous'] = 'Erabiltzaile-izena erantzunekin erakutsiko da';
 $string['non_anonymous_entries'] = 'Sarrera anonimorik ez ({$a})';
 $string['non_respondents_students'] = 'Erantzun ez duten ikasleak ({$a})';
 $string['not_completed_yet'] = 'Oraindik ez da osatu';
-$string['no_templates_available_yet'] = 'Oraindik ez dago txantiloirik';
 $string['not_selected'] = 'Aukeratu gabea';
 $string['not_started'] = 'Hasi gabea';
 $string['numberoutofrange'] = 'Tartetik kanpoko zenbakia';
@@ -218,9 +218,9 @@ $string['only_one_captcha_allowed'] = 'Inkesta bakoitzean captcha bakarra erabil
 $string['openafterclose'] = 'Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
 $string['overview'] = 'Ikuspegi orokorra';
 $string['page'] = 'Orria';
+$string['page-mod-feedback-x'] = 'Inkesta moduluaren edozein orri';
 $string['page_after_submit'] = 'Osaketa-mezua';
 $string['pagebreak'] = 'Orri-jauzia';
-$string['page-mod-feedback-x'] = 'Inkesta moduluaren edozein orri';
 $string['pluginadministration'] = 'Inkestaren kudeaketa';
 $string['pluginname'] = 'Inkesta';
 $string['position'] = 'Kokalekua';
@@ -228,11 +228,11 @@ $string['previous_page'] = 'Aurreko orria';
 $string['privacy:metadata:completed'] = 'Inkestari egindako bidalketen erregistroa';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Bidalketa modu anonimoan erabiliko den edo ez.';
 $string['privacy:metadata:completed:timemodified'] = 'Bidalketa azkenengoz aldatu zeneko unea.';
-$string['privacy:metadata:completedtmp'] = 'Oraindik amaitu gabeko bidalketen erregistroa.';
 $string['privacy:metadata:completed:userid'] = 'Inkesta jarduera osatu duen erabiltzailearen IDa.';
+$string['privacy:metadata:completedtmp'] = 'Oraindik amaitu gabeko bidalketen erregistroa.';
 $string['privacy:metadata:value'] = 'Galderaren erantzunaren erregistroa.';
-$string['privacy:metadata:valuetmp'] = 'Oraindik amaitu gabeko galderaren erantzunaren erregistroa.';
 $string['privacy:metadata:value:value'] = 'Aukeratutako erantzuna.';
+$string['privacy:metadata:valuetmp'] = 'Oraindik amaitu gabeko galderaren erantzunaren erregistroa.';
 $string['public'] = 'Publikoa';
 $string['question'] = 'Galdera';
 $string['questionandsubmission'] = 'Galdera eta bidalketen ezarpenak';
@@ -273,8 +273,8 @@ $string['switch_item_to_not_required'] = 'Ezarri "Ez ezinbesteko" moduan';
 $string['switch_item_to_required'] = 'Ezarri "Ezinbesteko" moduan';
 $string['template'] = 'Txantiloia';
 $string['template_deleted'] = 'Txantiloia ezabatau da';
-$string['templates'] = 'Txantiloiak';
 $string['template_saved'] = 'Txantiloia gorde da';
+$string['templates'] = 'Txantiloiak';
 $string['textarea'] = 'Testu luzeko erantzuna';
 $string['textarea_height'] = 'Lerro-kopurua';
 $string['textarea_width'] = 'Eremuaren zabalera';

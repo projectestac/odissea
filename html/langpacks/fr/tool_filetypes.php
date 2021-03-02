@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'fr', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['corestring'] = 'Chaîne de caractères de langue alternative';
 $string['corestring_help'] = 'Ce réglage peut être utilisé pour sélectionner une langue différente dans le fichier de langue réinstallé mimetypes.php. Le champ doit être en principe laissé vide. Pour des types personnalisés, utilisez le champ de description.';
 $string['defaulticon'] = 'Icône par défaut des types MIME';
 $string['defaulticon_help'] = 'Si plusieurs extensions de fichier utilisent le même type MIME, choisissez cette option pour une des extensions, de sorte que l\'icône sera utilisée pour l\'affichage de l\'icône des fichiers à partir du type MIME.';
-$string['deletea'] = 'Supprimer {$a}';
 $string['delete_confirmation'] = 'Voulez-vous vraiment supprimer le type <strong>.{$a}</strong> ?';
+$string['deletea'] = 'Supprimer {$a}';
 $string['deletefiletypes'] = 'Supprimer un type de fichier';
 $string['description'] = 'Description personnalisée';
 $string['description_help'] = 'Description brève d\'un type de fichier, par exemple « Livre ePUB ». Si votre plateforme est proposée en plusieurs langues et utilise le filtre multilingue, vous pouvez utiliser ici la syntaxe multilingue pour indiquer des descriptions en plusieurs langues.';

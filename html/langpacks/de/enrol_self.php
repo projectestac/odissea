@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_self', language 'de', version '3.8'.
  *
- * @package   enrol_self
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_self
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,7 +51,7 @@ $string['enrolenddaterror'] = 'Das Einschreibungsende muss nach dem Einschreibun
 $string['enrolme'] = 'Einschreiben';
 $string['enrolperiod'] = 'Einschreibedauer';
 $string['enrolperiod_desc'] = 'Die Einschreibedauer ist die Zeitdauer, in der die Einschreibung gültig ist. Wenn diese Option deaktiviert wird, ist die Einschreibedauer unbegrenzt.';
-$string['enrolperiod_help'] = 'Die Einschreibedauer ist die Zeitdauer, in der die Einschreibung gültig ist, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert wird, ist die Einschreibedauer unbegrenzt.';
+$string['enrolperiod_help'] = 'Die Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
 $string['enrolstartdate'] = 'Einschreibungsbeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen sich ab diesem Zeitpunkt selbst in den Kurs einschreiben.';
 $string['expiredaction'] = 'Aktion bei Ablauf der Kurseinschreibung';
@@ -104,7 +104,7 @@ $string['passwordinvalid'] = 'Falscher Einschreibeschlüssel';
 $string['passwordinvalidhint'] = 'Falscher Einschreibeschlüssel. Das erste Zeichen ist \'{$a}\'.';
 $string['pluginname'] = 'Selbsteinschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Selbsteinschreibung\' erlaubt es Nutzer/innen, selber einen Kurs zur Teilnahme auszuwählen. Kurse können mit einem Einschreibeschlüssel gesichert oder ohne Einschreibeschlüssel offen sein. Intern nutzt die Selbsteinschreibung das Plugin \'Manuelle Einschreibung\', welches deswegen im Kurs ebenfalls aktiviert sein muss.';
-$string['privacy:metadata'] = 'Das Plugin Selbsteinschreibung speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Selbsteinschreibungs-Plugin speichert keine personenbezogenen Daten.';
 $string['requirepassword'] = 'Einschreibeschlüssel notwendig';
 $string['requirepassword_desc'] = 'Die Verwendung eines Einschreibeschlüssels ist in neuen Kursen notwendig. In bestehenden Kursen wird das Löschen eines Einschreibeschlüssels verhindert.';
 $string['role'] = 'Rolle im Kurs';
@@ -122,10 +122,10 @@ $string['status'] = 'Existierende Einschreibungen erlauben';
 $string['status_desc'] = 'Selbsteinschreibung für neue Kurse aktivieren';
 $string['status_help'] = 'Wenn diese Option aktiviert und \'Neue Einschreibungen erlauben\' deaktiviert ist, können alle vorhandenen Selbsteinschreibungen weiter auf den Kurs zugreifen. Wenn die Option deaktiviert ist, werden alle vorhandenen Selbsteinschreibungen deaktiviert und keine neuen Selbsteinschreibungen zugelassen.';
 $string['syncenrolmentstask'] = 'Selbsteinschreibung synchronisieren';
-$string['unenrol'] = 'Nutzer/in ausschreiben';
-$string['unenrolselfconfirm'] = 'Möchten Sie sich wirklich selbst aus dem Kurs \'{$a}\' abmelden?';
-$string['unenroluser'] = 'Möchten Sie wirklich \'{$a->user}\' aus dem Kurs \'{$a->course}\' abmelden?';
-$string['unenrolusers'] = 'Nutzer/innen ausschreiben';
+$string['unenrol'] = 'Nutzer/in abmelden';
+$string['unenrolselfconfirm'] = 'Möchten Sie sich selbst wirklich vom Kurs \'{$a}\' abmelden?';
+$string['unenroluser'] = 'Möchten Sie \'{$a->user}\' wirklich vom Kurs \'{$a->course}\' abmelden?';
+$string['unenrolusers'] = 'Nutzer/innen abmelden';
 $string['usepasswordpolicy'] = 'Kennwortregeln verwenden';
 $string['usepasswordpolicy_desc'] = 'Die Kennwortregeln gelten auch für die Einschreibeschlüssel.';
 $string['welcometocourse'] = 'Willkommen zu {$a}';

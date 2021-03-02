@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_randomsamatch', language 'el', version '3.8'.
  *
- * @package   qtype_randomsamatch
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_randomsamatch
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,10 +29,10 @@ $string['insufficientoptions'] = 'Δεν υπάρχουν επαρκείς επ�
 $string['nosaincategory'] = 'Δεν υπάρχουν ερωτήσεις σύντομης απάντησης στην κατηγορία που επιλέξατε «{$a->catname}». Επιλέξτε μια άλλη κατηγορία ή δημιουργήστε μερικές ερωτήσεις σε αυτή την κατηγορία.';
 $string['notenoughsaincategory'] = 'Υπάρχει/υπάρχουν μόνο {$a->nosaquestions} ερωτήσεις σύντομης απάντησης στην κατηγορία που επιλέξατε «{$a->catname}». Επιλέξτε μια άλλη κατηγορία ή δημιουργήστε μερικές ερωτήσεις σε αυτή την κατηγορία ή μειώστε τον αριθμό των ερωτήσεων που επιλέξατε.';
 $string['pluginname'] = 'Τυχαία αντιστοίχισης σύντομης απάντησης';
-$string['pluginnameadding'] = 'Προσθήκη μιας Τυχαίας ερώτησης αντιστοίχισης σύντομης απάντησης';
-$string['pluginnameediting'] = 'Επεξεργασία Τυχαίας ερώτησης αντιστοίχισης σύντομης απάντησης';
 $string['pluginname_help'] = 'Από την άποψη του μαθητή, αυτό μοιάζει ακριβώς με μια ερώτηση αντιστοίχισης. Η διαφορά είναι ότι η λίστα των ονομάτων ή δηλώσεων (ερωτήσεων) για αντιστοίχιση επιλέγονται τυχαία από τις ερωτήσεις σύντομης απάντησης στην τρέχουσα κατηγορία. Πρέπει να υπάρχουν επαρκείς ερωτήσεις σύντομης απάντησης στην κατηγορία, διαφορετικά θα εμφανιστεί ένα μήνυμα σφάλματος.';
 $string['pluginname_link'] = 'ερώτηση/τύπος/αντιστοίχησηςτυχαίασυνταπάντ';
+$string['pluginnameadding'] = 'Προσθήκη μιας Τυχαίας ερώτησης αντιστοίχισης σύντομης απάντησης';
+$string['pluginnameediting'] = 'Επεξεργασία Τυχαίας ερώτησης αντιστοίχισης σύντομης απάντησης';
 $string['pluginnamesummary'] = 'Όπως μια ερώτηση αντιστοίχισης, αλλά δημιουργείται τυχαία από τις σύντομες απαντήσεις ερωτήσεων σε μια συγκεκριμένη κατηγορία.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Τύπος τυχαίας ερώτησης αντιστοίχισης σύντομης απάντησης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['randomsamatch'] = 'Τυχαία αντιστοίχισης σύντομης απάντησης';

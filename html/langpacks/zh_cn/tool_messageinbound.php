@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'zh_cn', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,11 +44,11 @@ $string['handlerdisabled'] = '您试图联系的电子邮件处理程序已被�
 $string['incomingmailconfiguration'] = '接收邮件设置';
 $string['incomingmailserversettings'] = '接收邮件服务器设置';
 $string['incomingmailserversettings_desc'] = 'Moodle可以连接到合适配置的IMAP服务器。你可以在这里设置IMAP服务器';
+$string['invalid_recipient_handler'] = '若收到一封有效邮件消息，但无法验证发送者，这个消息会被储存在邮件服务器上，并会以发送者的个人档案里的地址来联系发信者。让该用户有机会回复以确认这个消息是由他发送的。 这个处理程序是用来处理这些回复。 这个处理程序的发送者验证是无法关闭的，因为若他们的email客户端配置错误，该用户会从一个错误的地址回复。';
+$string['invalid_recipient_handler_name'] = '无效的发送方处理程序';
 $string['invalidrecipientdescription'] = '这条 "{$a->subject}" 邮件消息无法验证，因为不是从您的个人档案里的email地址，而是从不同的email地址所发送。若要让这个消息能被验证，您需要回复该消息。';
 $string['invalidrecipientdescriptionhtml'] = '这条 "{$a->subject}" 邮件消息无法验证，因为不是从您的个人档案里的地址，而是从不同的email地址所发送。若要让这个消息能被认证，您需要回复该消息。';
 $string['invalidrecipientfinal'] = '这一封 "{$a->subject}" 无法验证，请检查是从您的个人档案里的email地址发送的。';
-$string['invalid_recipient_handler'] = '若收到一封有效邮件消息，但无法验证发送者，这个消息会被储存在邮件服务器上，并会以发送者的个人档案里的地址来联系发信者。让该用户有机会回复以确认这个消息是由他发送的。 这个处理程序是用来处理这些回复。 这个处理程序的发送者验证是无法关闭的，因为若他们的email客户端配置错误，该用户会从一个错误的地址回复。';
-$string['invalid_recipient_handler_name'] = '无效的发送方处理程序';
 $string['mailbox'] = '邮箱名称';
 $string['mailboxconfiguration'] = '邮箱配置';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';

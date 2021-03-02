@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'gradingform_rubric', language 'pt', version '3.8'.
  *
- * @package   gradingform_rubric
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     gradingform_rubric
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -65,7 +65,7 @@ $string['pointsvalue'] = '{$a} pontos';
 $string['previewrubric'] = 'Pré-visualizar grelha';
 $string['privacy:metadata:criterionid'] = 'Um identificador para um critério específico que está a ser avaliado.';
 $string['privacy:metadata:fillingssummary'] = 'Armazena informações sobre a nota do utilizador.';
-$string['privacy:metadata:instanceid'] = 'Um identificador relacionado com uma nota de uma atividade.';
+$string['privacy:metadata:instanceid'] = 'Um identificador relacionado com a nota de uma atividade.';
 $string['privacy:metadata:levelid'] = 'O nível obtido.';
 $string['privacy:metadata:remark'] = 'Comentários relacionados com o critério avaliado.';
 $string['regrademessage1'] = 'Está prestes a guardar alterações a uma grelha que já foi utilizada para avaliação. Indique se existem notas que devem ser revistas. Se alterou isto, então a avaliação com grelha qualitativa estará oculta para o aluno até o item ser reavaliado.';
@@ -91,8 +91,8 @@ $string['scorepostfix'] = '{$a}pontos';
 $string['showdescriptionstudent'] = 'Mostrar descrição da grelha para os alunos que estão a ser avaliados';
 $string['showdescriptionteacher'] = 'Mostrar descrição da grelha durante a avaliação';
 $string['showremarksstudent'] = 'Mostrar observações aos que estão a ser avaliados';
-$string['showscorestudent'] = 'Mostrar pontos para cada nível aos que estão a ser avaliados';
-$string['showscoreteacher'] = 'Mostrar pontos para cada nível durante a avaliação';
+$string['showscorestudent'] = 'Exibir pontos para cada nível aos que estão a ser avaliados';
+$string['showscoreteacher'] = 'Exibir pontos para cada nível durante a avaliação';
 $string['sortlevelsasc'] = 'Ordem de classificação para os níveis:';
 $string['sortlevelsasc0'] = 'Decrescente por número de pontos';
 $string['sortlevelsasc1'] = 'Ascendente por número de pontos';

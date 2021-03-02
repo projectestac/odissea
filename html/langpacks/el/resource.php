@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'el', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,34 +43,34 @@ $string['configpopupwidth'] = 'Ποιο είναι το προεπιλεγμέν
 $string['contentheader'] = 'Περιεχόμενο';
 $string['displayoptions'] = 'Διαθέσιμες επιλογές εμφάνισης';
 $string['displayselect'] = 'Εμφάνιση';
-$string['displayselectexplain'] = 'Επιλογή τύπου εμφάνισης. Δυστυχώς δεν είναι όλοι οι τύποι κατάλληλοι για όλα τα αρχεία.';
 $string['displayselect_help'] = 'Η ρύθμιση αυτή, μαζί με τον τύπο αρχείου και κατά πόσον ο περιηγητής επιτρέπει την ενσωμάτωση, καθορίζει πως θα εμφανίζεται το αρχείο. Οι επιλογές περιλαμβάνουν:
 * Αυτόματα - Η καλύτερη επιλογή εμφάνισης για τον τύπο αρχείου επιλέγεται αυτόματα.
 * Ενσωμάτωση - Το αρχείο εμφανίζεται μέσα στη σελίδα κάτω από τη μπάρα πλοήγησης μαζί με την περιγραφή του αρχείου και οποιοδήποτε μπλοκ.
-* Επιβολή λήψης αρχείου - Ο χρήστης προτρέπεται να κατεβάσει το αρχείο.
+* Επιβολή λήψης αρχείου - Ζητείται από το χρήστη να κατεβάσει το αρχείο.
 * Ανοιχτό - Μόνο το αρχείο εμφανίζεται στο παράθυρο του περιηγητή.
 * Σε αναδυόμενο παράθυρο - Το αρχείο εμφανίζεται σε ένα νέο παράθυρο του περιηγητή χωρίς μενού ή γραμμή διευθύνσεων.
 * Σε πλαίσιο - Το αρχείο εμφανίζεται μέσα σε ένα πλαίσιο κάτω από τη μπάρα πλοήγησης και την περιγραφή αρχείου.
 * Νέο παράθυρο - Το αρχείο εμφανίζεται σε ένα νέο παράθυρο περιηγητή με μενού και γραμμή διευθύνσεων.';
 $string['displayselect_link'] = 'άρθρωμα/αρχείο/άρθρωμα';
+$string['displayselectexplain'] = 'Επιλογή τύπου εμφάνισης. Δυστυχώς δεν είναι όλοι οι τύποι κατάλληλοι για όλα τα αρχεία.';
 $string['dnduploadresource'] = 'Δημιουργία πόρου αρχείου';
 $string['encryptedcode'] = 'Κρυπτογραφημένος κώδικας';
-$string['filenotfound'] = 'Λυπούμαστε! Το αρχείο δεν βρέθηκε.';
+$string['filenotfound'] = 'Δυστυχώς, το αρχείο δεν βρέθηκε!';
 $string['filterfiles'] = 'Χρήση φίλτρων για το περιεχόμενο αρχείου';
 $string['filterfilesexplain'] = 'Επιλέξτε τύπο φιλτραρίσματος για το περιεχόμενο του αρχείου. Παρακαλούμε σημειώστε ότι αυτό μπορεί να προκαλέσει προβλήματα για ορισμένες Flash και Java εφαρμογές. Παρακαλούμε βεβαιωθείτε ότι όλα τα αρχεία κειμένου είναι σε κωδικοποίηση UTF-8.';
 $string['filtername'] = 'Αυτόματη σύνδεση ονομάτων πηγών';
 $string['forcedownload'] = 'Επιβολή λήψης αρχείου';
 $string['framesize'] = 'Ύψος πλαισίου';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Αρχείου';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Αρχείου.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Αρχείου';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Αρχείου κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Αρχείου.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Αρχείου';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Αρχείου.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Αρχείου';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Αρχείου κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Αρχείου.';
 $string['legacyfiles'] = 'Μετεγκατάσταση (μεταφορά/μετατροπή) παλαιού αρχείου μαθήματος';
 $string['legacyfilesactive'] = 'Ενεργό';
 $string['legacyfilesdone'] = 'Τελείωσαν';
@@ -102,13 +102,13 @@ $string['printintro'] = 'Εμφάνιση περιγραφής πόρου';
 $string['printintroexplain'] = 'Εμφάνιση περιγραφής πηγής κάτω από το περιεχόμενο. Ορισμένοι τύποι εμφάνισης μπορεί να μην εμφανίζουν την περιγραφή, ακόμα και αν έχει ενεργοποιηθεί.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Πόρος αρχείου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['resource:addinstance'] = 'Προσθήκη νέου πόρου';
+$string['resource:exportresource'] = 'Εξαγωγή πόρου';
+$string['resource:view'] = 'Εμφάνιση πόρου';
 $string['resourcecontent'] = 'Αρχεία και υπο-φάκελοι';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Εξαγωγή πόρου';
-$string['resource:view'] = 'Εμφάνιση πόρου';
 $string['search:activity'] = 'Αρχείο';
 $string['selectmainfile'] = 'Παρακαλούμε επιλέξτε το βασικό αρχείο πατώντας το εικονίδιο δίπλα από το όνομα αρχείου.';
 $string['showdate'] = 'Εμφάνιση ημερομηνίας ανεβάσματος/τροποποίησης';

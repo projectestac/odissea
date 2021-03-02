@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mnet', language 'en', version '3.8'.
  *
- * @package   mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (self-signed)';
+$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (signed)';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP unencrypted';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (self-signed)';
+$string['RPC_HTTP_VERIFIED'] = 'HTTP (signed)';
 $string['aboutyourhost'] = 'About your server';
 $string['accesslevel'] = 'Access level';
 $string['addhost'] = 'Add host';
@@ -45,8 +50,8 @@ $string['couldnotgetcert'] = 'No certificate found at <br />{$a}. <br />The host
 $string['couldnotmatchcert'] = 'This does not match the certificate currently published by the webserver.';
 $string['courses'] = 'courses';
 $string['courseson'] = 'courses on';
-$string['currentkey'] = 'Current public key';
 $string['current_transport'] = 'Current transport';
+$string['currentkey'] = 'Current public key';
 $string['databaseerror'] = 'Could not write details to the database.';
 $string['deleteaserver'] = 'Deleting a server';
 $string['deletedhostinfo'] = 'This host has been deleted. If you want to undelete it, switch the deleted status back to \'No\'.';
@@ -92,9 +97,9 @@ $string['hostnamehelp'] = 'The fully-qualified domain name of the remote host, e
 $string['hostnotconfiguredforsso'] = 'This server is not configured for remote login.';
 $string['hostsettings'] = 'Host settings';
 $string['http_self_signed_help'] = 'Permit connections using a self-signed DIY SSL certificate on the remote host.';
+$string['http_verified_help'] = 'Permit connections using a verified SSL certificate in PHP on the remote host, but over http (not https).';
 $string['https_self_signed_help'] = 'Permit connections using a self-signed DIY SSL in PHP on the remote host over http.';
 $string['https_verified_help'] = 'Permit connections using a verified SSL certificate on the remote host.';
-$string['http_verified_help'] = 'Permit connections using a verified SSL certificate in PHP on the remote host, but over http (not https).';
 $string['id'] = 'ID';
 $string['idhelp'] = 'This value is automatically assigned and cannot be changed';
 $string['importfields'] = 'Fields to import';
@@ -129,6 +134,7 @@ $string['methodsavailableonhostinservice'] = 'Methods available for {$a->service
 $string['methodsignature'] = 'Method signature for {$a}';
 $string['mnet'] = 'MNet';
 $string['mnet_concatenate_strings'] = 'Concatenate (up to) 3 strings and return the result';
+$string['mnet_session_prohibited'] = 'Users from your home server are not currently permitted to roam to {$a}.';
 $string['mnetdisabled'] = 'MNet is <strong>disabled</strong>.';
 $string['mnetidprovider'] = 'MNet ID provider';
 $string['mnetidproviderdesc'] = 'You can use this facility to retrieve a link that you can log in at, if you can provide the correct email address to match the username you previously tried to log in with.';
@@ -136,7 +142,6 @@ $string['mnetidprovidermsg'] = 'You should be able to login at your {$a} provide
 $string['mnetidprovidernotfound'] = 'Sorry, but no further information could be found.';
 $string['mnetpeers'] = 'Peers';
 $string['mnetservices'] = 'Services';
-$string['mnet_session_prohibited'] = 'Users from your home server are not currently permitted to roam to {$a}.';
 $string['mnetsettings'] = 'MNet settings';
 $string['moodle_home_help'] = 'The path to the homepage of MNet application on the remote host, e.g. /moodle/.';
 $string['name'] = 'Name';
@@ -159,11 +164,11 @@ $string['nosuchpublickey'] = 'Unable to obtain public key for signature verifica
 $string['nosuchservice'] = 'The RPC service is not running on this host.';
 $string['nosuchtransport'] = 'No transport with that ID exists.';
 $string['notBASE64'] = 'This string is not in base64 encoded format. It cannot be a valid key.';
-$string['notenoughidpinfo'] = 'Your identity provider is not giving us enough information to create or update your account locally. Sorry!';
+$string['notPEM'] = 'This key is not in PEM format. It will not work.';
 $string['not_in_range'] = 'The IP address <code>{$a}</code> does not represent a valid trusted host.';
+$string['notenoughidpinfo'] = 'Your identity provider is not giving us enough information to create or update your account locally. Sorry!';
 $string['notinxmlrpcserver'] = 'Attempt to access the MNet remote client, not during XMLRPC server execution';
 $string['notmoodleapplication'] = 'WARNING: This is not a Moodle application, so some of the inspection methods may not work properly.';
-$string['notPEM'] = 'This key is not in PEM format. It will not work.';
 $string['notpermittedtojump'] = 'You do not have permission to begin a remote session from this Moodle server.';
 $string['notpermittedtojumpas'] = 'You can\'t begin a remote session while you are logged in as another user.';
 $string['notpermittedtoland'] = 'You do not have permission to begin a remote session.';
@@ -203,11 +208,6 @@ $string['restore'] = 'Restore';
 $string['returnvalue'] = 'Return value';
 $string['reviewhostdetails'] = 'Review host details';
 $string['reviewhostservices'] = 'Review host services';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP unencrypted';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (self-signed)';
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (self-signed)';
-$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (signed)';
-$string['RPC_HTTP_VERIFIED'] = 'HTTP (signed)';
 $string['selectaccesslevel'] = 'Please select an access level from the list.';
 $string['selectahost'] = 'Please select a remote host.';
 $string['service'] = 'Service name';

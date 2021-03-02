@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'en', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -102,16 +102,16 @@ $string['prevpage'] = 'Back';
 $string['privacy:metadata:tag'] = 'The details of each unique tag are stored alongside their description and other related information';
 $string['privacy:metadata:tag:description'] = 'The description of the tag.';
 $string['privacy:metadata:tag:flag'] = 'Whether a tag has been flagged as inappropriate.';
+$string['privacy:metadata:tag:name'] = 'The name of the tag - this is the normalised version of the name.';
+$string['privacy:metadata:tag:rawname'] = 'The name of the tag - this is the display name.';
+$string['privacy:metadata:tag:timemodified'] = 'The time that the tag was last modified.';
+$string['privacy:metadata:tag:userid'] = 'The ID of the user who created the tag.';
 $string['privacy:metadata:taginstance'] = 'The link between each tag and where it is used.';
 $string['privacy:metadata:taginstance:ordering'] = 'The relative order of this tag.';
 $string['privacy:metadata:taginstance:tagid'] = 'The link to the tag.';
 $string['privacy:metadata:taginstance:timecreated'] = 'The time that this tag was linked to the target.';
 $string['privacy:metadata:taginstance:timemodified'] = 'The time that this tag was modified for the target.';
 $string['privacy:metadata:taginstance:tiuserid'] = 'Where shared content can be individually tagged by users, the owner of the tag instance is stored.';
-$string['privacy:metadata:tag:name'] = 'The name of the tag - this is the normalised version of the name.';
-$string['privacy:metadata:tag:rawname'] = 'The name of the tag - this is the display name.';
-$string['privacy:metadata:tag:timemodified'] = 'The time that the tag was last modified.';
-$string['privacy:metadata:tag:userid'] = 'The ID of the user who created the tag.';
 $string['ptags'] = 'User defined tags (Comma separated)';
 $string['relatedblogs'] = 'Most recent blog entries';
 $string['relatedtags'] = 'Related tags';
@@ -147,11 +147,11 @@ $string['tag'] = 'Tag';
 $string['tagarea_blog_external'] = 'External blog posts';
 $string['tagarea_course'] = 'Courses';
 $string['tagarea_course_modules'] = 'Activities and resources';
+$string['tagarea_post'] = 'Blog posts';
+$string['tagarea_user'] = 'User interests';
 $string['tagareaenabled'] = 'Enabled';
 $string['tagareaname'] = 'Name';
-$string['tagarea_post'] = 'Blog posts';
 $string['tagareas'] = 'Tag areas';
-$string['tagarea_user'] = 'User interests';
 $string['tagcollection'] = 'Tag collection';
 $string['tagcollection_help'] = 'Tag collections are sets of tags for different areas. For example, a collection of standard tags can be used to tag courses, with user interests and blog post tags kept in a separate collection. When a user clicks on a tag, the tag page displays only items with that tag in the same collection. Tags can be automatically added to a collection according to the area tagged or can be added manually as standard tags.';
 $string['tagcollections'] = 'Tag collections';

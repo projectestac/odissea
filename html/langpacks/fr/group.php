@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'fr', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,10 +64,10 @@ $string['enablemessaging'] = 'Messagerie de groupe';
 $string['enablemessaging_help'] = 'Si ce réglage est activé, les membres du groupe peuvent envoyer des messages personnels aux autres membres de leur groupe.';
 $string['encoding'] = 'Encodage';
 $string['enrolmentkey'] = 'Clef d\'inscription';
-$string['enrolmentkeyalreadyinuse'] = 'Cette clef d\'inscription est déjà utilisée pour un autre groupe.';
 $string['enrolmentkey_help'] = 'Une clef d\'inscription permet de donner accès à un cours aux seuls utilisateurs la détenant. Si une clef d\'inscription de groupe est spécifiée, non seulement cette clef permettra l\'accès au cours, mais elle inscrira simultanément l\'utilisateur utilisant cette clef comme membre de ce groupe.
 
 Remarque : le réglage pour les clefs d\'inscription de groupe doit être également activé dans les réglages d\'auto-inscription, et une clef d\'inscription doit en outre être spécifiée pour le cours.';
+$string['enrolmentkeyalreadyinuse'] = 'Cette clef d\'inscription est déjà utilisée pour un autre groupe.';
 $string['erroraddremoveuser'] = 'Erreur lors de l\'ajout ou du retrait de l\'utilisateur {$a} du groupe';
 $string['erroreditgroup'] = 'Erreur lors de la création ou de la modification du groupe {$a}';
 $string['erroreditgrouping'] = 'Erreur lors de la création ou de la modification du groupement {$a}';
@@ -97,9 +97,9 @@ $string['groupinfo'] = 'Information sur le groupe sélectionné';
 $string['groupinfomembers'] = 'Information sur les membres sélectionnés';
 $string['groupinfopeople'] = 'Information sur les personnes sélectionnées';
 $string['grouping'] = 'Groupement';
+$string['grouping_help'] = 'Un groupement est un ensemble de groupes dans un cours. Si un groupement est sélectionné, les utilisateurs dans les groupes du groupement pourront travailler ensemble.';
 $string['groupingaddedsuccesfully'] = 'Groupement {$a} ajouté';
 $string['groupingdescription'] = 'Description du groupement';
-$string['grouping_help'] = 'Un groupement est un ensemble de groupes dans un cours. Si un groupement est sélectionné, les utilisateurs dans les groupes du groupement pourront travailler ensemble.';
 $string['groupingname'] = 'Nom du groupement';
 $string['groupingnameexists'] = 'Le nom de groupement « {$a} » existe déjà dans ce cours. Veuillez en choisir un autre.';
 $string['groupings'] = 'Groupements';
@@ -112,8 +112,6 @@ $string['groupmembers'] = 'Membres du groupe';
 $string['groupmemberssee'] = 'Voir les membres du groupe';
 $string['groupmembersselected'] = 'Membres du groupe sélectionné';
 $string['groupmode'] = 'Mode de groupe';
-$string['groupmodeforce'] = 'Imposer le mode de groupe';
-$string['groupmodeforce_help'] = 'Lorsque le type des groupes est imposé, le type des groupes défini dans le cours est appliqué à chaque activité du cours. Le type des groupes défini dans les activités est ignoré.';
 $string['groupmode_help'] = 'Ce réglage a trois options :
 
 * Pas de groupe ;
@@ -121,6 +119,8 @@ $string['groupmode_help'] = 'Ce réglage a trois options :
 * Groupes visibles - chaque membre du groupe travaille uniquement dans son propre groupe, mais peut aussi voir les autres groupes.
 
 Le mode de groupe défini au niveau du cours est le type par défaut pour toutes les activités du cours. Chaque activité qui supporte les groupes peut définir son propre mode de groupe. Toutefois, si dans le cours le paramètre « Imposer le mode des groupes » a été choisi, le mode des groupes défini dans les activités sera ignoré.';
+$string['groupmodeforce'] = 'Imposer le mode de groupe';
+$string['groupmodeforce_help'] = 'Lorsque le type des groupes est imposé, le type des groupes défini dans le cours est appliqué à chaque activité du cours. Le type des groupes défini dans les activités est ignoré.';
 $string['groupmy'] = 'Mon groupe';
 $string['groupname'] = 'Nom du groupe';
 $string['groupnameexists'] = 'Le nom de groupe « {$a} » existe déjà dans ce cours. Veuillez en choisir un autre.';
@@ -163,13 +163,13 @@ $string['newpicture_help'] = 'Sélectionnez une image en format JPG ou PNG. L\'i
 $string['noallocation'] = 'Pas d\'attribution';
 $string['nogroup'] = 'Aucun groupe';
 $string['nogrouping'] = 'Pas de groupement';
-$string['nogroups'] = 'Il n\'y a pas encore de groupes dans ce cours';
+$string['nogroups'] = 'Il n\'y a pas encore de groupe dans ce cours';
 $string['nogroupsassigned'] = 'Aucun groupe n\'a été attribué';
 $string['nopermissionforcreation'] = 'Impossible de créer le groupe « {$a} », car vous n\'avez pas les permissions requises';
 $string['nosmallgroups'] = 'Empêcher un petit groupe pour terminer';
 $string['notingroup'] = 'Ignorer les utilisateurs dans des groupes';
-$string['notingrouping'] = '[Dans aucun groupement]';
-$string['notingrouplist'] = '[Membre d\'aucun groupe]';
+$string['notingrouping'] = 'Membre d\'aucun groupement';
+$string['notingrouplist'] = 'Membre d\'aucun groupe';
 $string['nousersinrole'] = 'Il n\'y a pas d\'utilisateur adéquat dans le rôle sélectionné';
 $string['number'] = 'Nombre de groupes/membres';
 $string['numgroups'] = 'Nombre de groupes';

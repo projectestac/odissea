@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'customfield', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'customfield', language 'de', version '3.8'.
  *
- * @package   customfield
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     customfield
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['addnewcategory'] = 'Neue Kategorie hinzufügen';
 $string['afterfield'] = 'Nach Feld {$a}';
 $string['categorynotfound'] = 'Kategorie nicht gefunden';
 $string['checked'] = 'Markiert';
-$string['commonsettings'] = 'Allgemeine Einstellungen';
+$string['commonsettings'] = 'Allgemein';
 $string['componentsettings'] = 'Komponenteneinstellungen';
 $string['confirmdeletecategory'] = 'Möchten Sie diese Kategorie wirklich löschen? Alle Felder innerhalb der Kategorie und die damit verbundenen Daten werden ebenfalls gelöscht. Dieser Vorgang kann nicht rückgängig gemacht werden.';
 $string['confirmdeletefield'] = 'Möchten Sie dieses Feld wirklich löschen? Alle damit verbundenen Daten werden ebenfalls gelöscht. Dieser Vorgang kann nicht rückgängig gemacht werden.';
@@ -80,7 +80,7 @@ $string['privacy:metadata:customfield_data:decvalue'] = 'Datenwert, wenn es sich
 $string['privacy:metadata:customfield_data:fieldid'] = 'Felddefinitions-ID';
 $string['privacy:metadata:customfield_data:instanceid'] = 'Instanz-ID, die sich auf die Daten bezieht';
 $string['privacy:metadata:customfield_data:intvalue'] = 'Datenwert, wenn es eine Ganzzahl ist';
-$string['privacy:metadata:customfield_data:shortcharvalue'] = 'Datenwert, wenn es sich um ein kurzes Zeichen handelt';
+$string['privacy:metadata:customfield_data:shortcharvalue'] = 'Datenwert, wenn es sich um ein Zeichen handelt';
 $string['privacy:metadata:customfield_data:timecreated'] = 'Zeit, zu der die Daten angelegt wurden';
 $string['privacy:metadata:customfield_data:timemodified'] = 'Zeit, zu der die Daten zuletzt geändert wurden';
 $string['privacy:metadata:customfield_data:value'] = 'Datenwert, wenn es sich um einen Text handelt';

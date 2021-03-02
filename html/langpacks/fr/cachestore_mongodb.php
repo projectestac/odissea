@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cachestore_mongodb', language 'fr', version '3.8'.
  *
- * @package   cachestore_mongodb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_mongodb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,8 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['database'] = 'Base de données';
 $string['database_help'] = 'Le nom de la base de données à utiliser';
 $string['extendedmode'] = 'Utiliser les clefs étendues';
-$string['extendedmode_help'] = 'Si ce réglage est activé, des ensembles complets de clefs seront utilisés par ce plugin. Ceci n\'est pas encore utilisé à l\'interne, mais pourrait vous servir d\'investiguer manuellement le plugin MongoDB si vous le désirez.
-L\'activation chargera un peu le serveur et ne doit donc être choisie que si nécessaire.';
+$string['extendedmode_help'] = 'Si ce réglage est activé, des ensembles complets de clefs seront utilisés par ce plugin. Ceci n\'est pas encore utilisé à l\'interne, mais pourrait vous servir d\'investiguer manuellement le plugin MongoDB si vous le désirez. L\'activation chargera un peu le serveur et ne doit donc être choisie que si nécessaire.';
 $string['password'] = 'Mot de passe';
 $string['password_help'] = 'Le mot de passe du compte utilisé pour la connexion.';
 $string['pleaseupgrademongo'] = 'Vous utilisez une ancienne version de l\'extension PHP Mongo (antérieure à 1.3). D\'anciennes versions de cette extension ne seront plus supportées à l\'avenir. Veuillez penser à faire une mise à jour.';

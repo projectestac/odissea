@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'nl', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -95,14 +95,14 @@ $string['select'] = 'Selecteer';
 $string['stamp'] = 'Stempel';
 $string['stamppicker'] = 'Stempelzoeker';
 $string['stamps'] = 'Stempels';
-$string['stampsdesc'] = 'Stempels moeten afbeeldingen zijn. Deze afbeeldingen kunnen gebruikt worden met het stempelgereedschap om PDF\'s mee te annoteren.';
+$string['stampsdesc'] = 'Stempels moeten afbeeldingen zijn (aanbevolen grootte: 40 X 40à. Deze afbeeldingen kunnen gebruikt worden met het stempelgereedschap om PDF\'s mee te annoteren.';
 $string['test_doesnotexist'] = 'Het pad naar Ghostscript verwijst naar een bestand dat niet bestaat.';
 $string['test_empty'] = 'Het Ghostscript-pad is leeg - geef het juiste pad in.';
-$string['testgs'] = 'Test het ghostscript-pad';
 $string['test_isdir'] = 'Het Ghostscript-pad wijst naar een map. Zet ook het programmabestand in het opgegeven pad.';
 $string['test_notestfile'] = 'De test-PDF ontbreekt';
 $string['test_notexecutable'] = 'Het Gostscript-pad verwijst naar een bestand dat niet uitvoerbaar is.';
 $string['test_ok'] = 'Het Ghostscript-pad lijkt in orde - controleer of je de boodschap in onderstaand bericht kunt zien.';
+$string['testgs'] = 'Test het ghostscript-pad';
 $string['tool'] = 'Gereedschap';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Bekijk verbeterde opdracht...';

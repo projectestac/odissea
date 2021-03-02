@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'nl', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -73,6 +73,7 @@ $string['emailtagline'] = 'Deze e-mail is een kopie van een bericht dat naar jou
 $string['enabled'] = 'Ingeschakeld';
 $string['errorcallingprocessor'] = 'Fout bij het aanroepen van de opgegeven output';
 $string['errorconversationdoesnotexist'] = 'Gesprek bestaat niet';
+$string['errormessagetoolong'] = 'Het bericht is langer dan het toegestane maximum.';
 $string['errortranslatingdefault'] = 'Fout bij het vertalen van de standaardinstelling van de plugin. Systeemstandaarden worden gebruikt.';
 $string['eventgroupmessagesent'] = 'Groepsbericht verzonden';
 $string['eventmessagecontactadded'] = 'Berichtcontact toegevoegd';
@@ -98,11 +99,11 @@ $string['info'] = 'Gebruikersinfo';
 $string['isnotinyourcontacts'] = '{$a} staat niet in je contacten';
 $string['loadmore'] = 'Meer zoekresultaten';
 $string['loggedin'] = 'Online';
-$string['loggedindescription'] = 'Wanneer ik aangemeld ben in Moodle';
 $string['loggedin_help'] = 'Configureren hoe ik de meldingen zou willen ontvangen wanneer ik aangemeld bent bij Moodle';
+$string['loggedindescription'] = 'Wanneer ik aangemeld ben in Moodle';
 $string['loggedoff'] = 'Offline';
-$string['loggedoffdescription'] = 'Wanneer ik niet aangemeld ben in Moodle';
 $string['loggedoff_help'] = 'Configureren hoe ik de meldingen zou willen ontvangen wanneer ik niet aangemeld bent bij Moodle';
+$string['loggedoffdescription'] = 'Wanneer ik niet aangemeld ben in Moodle';
 $string['managemessageoutputs'] = 'Standaard berichtenvoorkeuren';
 $string['message'] = 'Bericht';
 $string['messagecontactrequestsnotification'] = '{$a} wil als contact worden toegevoegd.';
@@ -164,7 +165,6 @@ $string['participants'] = 'Deelnemers';
 $string['pendingcontactrequests'] = 'Er zijn {$a} wachtende contactverzoeken';
 $string['permitted'] = 'Toegestaan';
 $string['privacy'] = 'Privacy';
-$string['privacy_desc'] = 'Je kunt beperken wie je een bericht kan sturen';
 $string['privacy:export:conversationprefix'] = 'Gesprek:';
 $string['privacy:metadata:core_favourites'] = 'De door gebruiker als favoriet gemarkeerde conversaties';
 $string['privacy:metadata:message_contact_requests'] = 'De lijst met contactverzoeken';
@@ -184,6 +184,15 @@ $string['privacy:metadata:message_conversation_members'] = 'De lijst met gebruik
 $string['privacy:metadata:message_conversation_members:conversationid'] = 'De ID van de conversatie';
 $string['privacy:metadata:message_conversation_members:timecreated'] = 'Het tijdstip waarop het lidmaatschap is gemaakt';
 $string['privacy:metadata:message_conversation_members:userid'] = 'De ID van de gebruiker in een conversatie';
+$string['privacy:metadata:message_user_actions'] = 'De lijst met berichtenacties van gebruikers';
+$string['privacy:metadata:message_user_actions:action'] = 'De actie die werd uitgevoerd';
+$string['privacy:metadata:message_user_actions:messageid'] = 'De ID van het bericht waarbij deze actie hoort';
+$string['privacy:metadata:message_user_actions:timecreated'] = 'Het tijdstip waarop de actie werd gemaakt';
+$string['privacy:metadata:message_user_actions:userid'] = 'De ID van de gebruiker die deze actie uitvoerde';
+$string['privacy:metadata:message_users_blocked'] = 'De lijst met geblokkeerde gebruikers';
+$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'De ID van de gebruiker die is geblokkeerd';
+$string['privacy:metadata:message_users_blocked:timecreated'] = 'Het tijdstip waarop de geblokkeerde actie is gemaakt';
+$string['privacy:metadata:message_users_blocked:userid'] = 'De ID van de gebruiker die de geblokkeerde actie heeft uitgevoerd';
 $string['privacy:metadata:messages'] = 'Berichten';
 $string['privacy:metadata:messages:conversationid'] = 'De ID van een conversatie';
 $string['privacy:metadata:messages:customdata'] = 'Aangepaste gegevens, meestal met interne ID\'s en een openbare URL van de afzenderafbeelding (gebruiker of groep)';
@@ -194,15 +203,6 @@ $string['privacy:metadata:messages:smallmessage'] = 'Eeen kleine versie van het 
 $string['privacy:metadata:messages:subject'] = 'Het onderwerp van het bericht';
 $string['privacy:metadata:messages:timecreated'] = 'Het tijdstip waarop het bericht gemaakt is';
 $string['privacy:metadata:messages:useridfrom'] = 'De ID van de gebruiker die het bericht verstuurde';
-$string['privacy:metadata:message_user_actions'] = 'De lijst met berichtenacties van gebruikers';
-$string['privacy:metadata:message_user_actions:action'] = 'De actie die werd uitgevoerd';
-$string['privacy:metadata:message_user_actions:messageid'] = 'De ID van het bericht waarbij deze actie hoort';
-$string['privacy:metadata:message_user_actions:timecreated'] = 'Het tijdstip waarop de actie werd gemaakt';
-$string['privacy:metadata:message_user_actions:userid'] = 'De ID van de gebruiker die deze actie uitvoerde';
-$string['privacy:metadata:message_users_blocked'] = 'De lijst met geblokkeerde gebruikers';
-$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'De ID van de gebruiker die is geblokkeerd';
-$string['privacy:metadata:message_users_blocked:timecreated'] = 'Het tijdstip waarop de geblokkeerde actie is gemaakt';
-$string['privacy:metadata:message_users_blocked:userid'] = 'De ID van de gebruiker die de geblokkeerde actie heeft uitgevoerd';
 $string['privacy:metadata:notifications'] = 'Meldingen';
 $string['privacy:metadata:notifications:component'] = 'De component die verantwoordelijk is voor het versturen van de melding';
 $string['privacy:metadata:notifications:contexturl'] = 'De URL gerelateerd aan deze melding';
@@ -220,6 +220,7 @@ $string['privacy:metadata:notifications:useridfrom'] = 'De ID van de gebruiker d
 $string['privacy:metadata:notifications:useridto'] = 'De ID van de gebruiker die de melding kreeg';
 $string['privacy:metadata:preference:core_message_settings'] = 'Instellingen die verband houden met berichten';
 $string['privacy:request:preference:set'] = 'De waarde van de instelling \'{$a->name}\' was \'{$a->value}\'';
+$string['privacy_desc'] = 'Je kunt beperken wie je een bericht kan sturen';
 $string['processorsettings'] = 'Processor instellingen';
 $string['removecontact'] = 'Verwijder contactpersoon';
 $string['removecontactconfirm'] = 'Weet je zeker dat je {$a} uit je contacten wilt verwijderen?';
@@ -243,7 +244,7 @@ $string['sendbulkmessagesent'] = 'Bericht verstuurd naar {$a} mensen';
 $string['sendbulkmessagesentsingle'] = 'Bericht verstuurd naar 1 persoon';
 $string['sendbulkmessagesingle'] = 'Verstuur bericht naar 1 persoon';
 $string['sendcontactrequest'] = 'Verzend contact-verzoek';
-$string['sender'] = '{$a:}';
+$string['sender'] = '{$a}:';
 $string['sendingvia'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen';
 $string['sendingviawhen'] = '\'{$a->provider }\' via \'{$a->processor}\' aan het versturen wanneer {$a->state}';
 $string['sendmessage'] = 'Stuur bericht';

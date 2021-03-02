@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'pt', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,11 +43,11 @@ $string['analytics:listinsights'] = 'Mostrar perceções';
 $string['analytics:listowninsights'] = 'Listar perceções próprias';
 $string['analytics:managemodels'] = 'Gerir modelos';
 $string['archetype'] = 'Papel modelo';
+$string['archetype_help'] = 'O modelo do papel define as permissões atribuídas quando o papel é reiniciado para os seus valores originais. Define ainda novas permissões para o papel quando o site é atualizado.';
 $string['archetypecoursecreator'] = 'MODELO: Criador de disciplina';
 $string['archetypeeditingteacher'] = 'MODELO: Professor (editor)';
 $string['archetypefrontpage'] = 'MODELO: Utilizador autenticado na página principal';
 $string['archetypeguest'] = 'MODELO: Visitante';
-$string['archetype_help'] = 'O modelo do papel define as permissões atribuídas quando o papel é reiniciado para os seus valores originais. Define ainda novas permissões para o papel quando o site é atualizado.';
 $string['archetypemanager'] = 'MODELO: Gestor';
 $string['archetypestudent'] = 'MODELO: Aluno';
 $string['archetypeteacher'] = 'MODELO: Professor (não editor)';
@@ -62,8 +62,8 @@ $string['assignrole'] = 'Atribuir papel';
 $string['assignrolenameincontext'] = 'Atribuir papel \'{$a->role}\' em {$a->context}';
 $string['assignroles'] = 'Atribuir papel de';
 $string['assignroles_help'] = 'A atribuição de um papel a um utilizador num contexto dá a esse utilizador as permissões associadas ao papel no contexto em que o papel é atribuído e em todos os contextos abaixo desse. Por exemplo, se for atribuído o papel de aluno a um utilizador numa disciplina, ele terá também o papel de aluno em todas as atividades e blocos da disciplina.';
-$string['assignrolesin'] = 'Atribuir papéis no contexto de \'{$a}\'';
 $string['assignroles_link'] = 'admin/roles/assign';
+$string['assignrolesin'] = 'Atribuir papéis no contexto de \'{$a}\'';
 $string['assignrolesrelativetothisuser'] = 'Atribuir papéis relativos a este utilizador';
 $string['backtoallroles'] = 'Voltar à lista de papéis';
 $string['backup:anonymise'] = 'Ocultar identificação dos utilizadores na cópia de segurança';
@@ -164,7 +164,7 @@ $string['course:activityvisibility'] = 'Ocultar/mostrar atividades';
 $string['course:bulkmessaging'] = 'Enviar uma mensagem a várias pessoas';
 $string['course:changecategory'] = 'Modificar a categoria da disciplina';
 $string['course:changefullname'] = 'Modificar o nome completo da disciplina';
-$string['course:changeidnumber'] = 'Modificar o ID da disciplina';
+$string['course:changeidnumber'] = 'Modificar o número ID da disciplina';
 $string['course:changelockedcustomfields'] = 'Alterar campos personalizados bloqueados';
 $string['course:changeshortname'] = 'Modificar o nome curto da disciplina';
 $string['course:changesummary'] = 'Modificar a descrição da disciplina';
@@ -286,15 +286,15 @@ $string['legacy:editingteacher'] = 'PAPEL LEGADO: Professor (editor)';
 $string['legacy:guest'] = 'PAPEL LEGADO: Visitante';
 $string['legacy:student'] = 'PAPEL LEGADO: Aluno';
 $string['legacy:teacher'] = 'PAPEL LEGADO: Professor (não editor)';
-$string['legacytype'] = 'Tipo de legado de atribuições';
 $string['legacy:user'] = 'PAPEL LEGADO: Utilizador autenticado';
+$string['legacytype'] = 'Tipo de legado de atribuições';
 $string['listallroles'] = 'Mostrar lista de papéis';
 $string['localroles'] = 'Papéis atribuídos localmente';
 $string['mainadmin'] = 'Administrador principal';
 $string['mainadminset'] = 'Definir administrador principal';
 $string['manageadmins'] = 'Gerir os administradores do site';
 $string['manager'] = 'Gestor';
-$string['managerdescription'] = 'Os gestores podem aceder às disciplinas e modificá-las. Normalmente não participam nas disciplinas.';
+$string['managerdescription'] = 'Os gestores podem aceder às disciplinas e modificá-las mas normalmente não participam nas disciplinas.';
 $string['manageroles'] = 'Gerir papéis';
 $string['maybeassignedin'] = 'Tipos de contextos em que este papel pode ser atribuído';
 $string['morethan'] = 'Mais de {$a}';
@@ -317,10 +317,10 @@ $string['novisibleroles'] = 'Sem papeis';
 $string['overrideanotherrole'] = 'Redefinir outro papel';
 $string['overridecontext'] = 'Contexto de redefinição';
 $string['overridepermissions'] = 'Redefinir permissões';
-$string['overridepermissionsforrole'] = 'Redefinir permissões no papel \'{$a->role}\' em {$a->context}';
 $string['overridepermissions_help'] = 'Redefinir permissões faz com que as permissões selecionadas sejam permitidas ou não num contexto específico.';
-$string['overridepermissionsin'] = 'Redefinir permissões em {$a}';
 $string['overridepermissions_link'] = 'admin/roles/override';
+$string['overridepermissionsforrole'] = 'Redefinir permissões no papel \'{$a->role}\' em {$a->context}';
+$string['overridepermissionsin'] = 'Redefinir permissões em {$a}';
 $string['overrideroles'] = 'Redefinir Papéis';
 $string['overriderolesin'] = 'Redefinir papéis em {$a}';
 $string['overrides'] = 'Ajustamentos';
@@ -390,31 +390,31 @@ $string['restore:uploadfile'] = 'Carregar ficheiros para as áreas das cópias d
 $string['restore:userinfo'] = 'Restaurar informações dos utilizadores';
 $string['restore:viewautomatedfilearea'] = 'Restaurar disciplinas de cópias de segurança automáticas';
 $string['risks'] = 'Riscos';
+$string['role:assign'] = 'Atribuir papéis aos utilizadores';
+$string['role:manage'] = 'Criar e editar papéis';
+$string['role:override'] = 'Redefinir papéis';
+$string['role:review'] = 'Rever permissões de outros';
+$string['role:safeoverride'] = 'Redefinir permissões seguras de outros';
+$string['role:switchroles'] = 'Assumir outros papéis';
 $string['roleallowheader'] = 'Permitir papel:';
 $string['roleallowinfo'] = 'Selecione um papel a ser adicionado à lista de papéis permitidos no contexto {$a->context}, permissão {$a->cap}:';
-$string['role:assign'] = 'Atribuir papéis aos utilizadores';
 $string['roleassignments'] = 'Atribuição de papéis';
 $string['roledefinitions'] = 'Definições de papel';
 $string['rolefullname'] = 'Nome do papel';
 $string['roleincontext'] = '{$a->role} in {$a->context}';
-$string['role:manage'] = 'Criar e editar papéis';
-$string['role:override'] = 'Redefinir papéis';
 $string['roleprohibitheader'] = 'Proibir papel';
 $string['roleprohibitinfo'] = 'Selecione um papel a ser adicionado à lista de papéis proibidos no contexto {$a->context}, permissão {$a->cap}:';
 $string['rolerepreset'] = 'Usar configurações predefinidas do papel';
 $string['roleresetdefaults'] = 'Configurações predefinidas';
 $string['roleresetrole'] = 'Usar papel ou modelo';
-$string['role:review'] = 'Rever permissões de outros';
 $string['rolerisks'] = 'Riscos do papel';
 $string['roles'] = 'Papéis';
-$string['role:safeoverride'] = 'Redefinir permissões seguras de outros';
+$string['roles_help'] = 'Papéis são conjuntos de permissões, definidos para todo o sistema, que são atribuídos aos utilizadores em contextos específicos.';
+$string['roles_link'] = 'papéis';
 $string['roleselect'] = 'Selecionar papel';
 $string['rolesforuser'] = 'Papéis do utilizador {$a}';
-$string['roles_help'] = 'Papéis são conjuntos de permissões, definidos para todo o sistema, que são atribuídos aos utilizadores em contextos específicos.';
 $string['roleshortname'] = 'Nome curto';
 $string['roleshortname_help'] = 'O nome curto do papel é um identificador de papel de nível reduzido no qual apenas caracteres alfanuméricos ASCII são permitidos. Não modifique os nomes curtos ou os papéis-padrão.';
-$string['roles_link'] = 'papéis';
-$string['role:switchroles'] = 'Assumir outros papéis';
 $string['roletoassign'] = 'Papel a atribuir';
 $string['roletooverride'] = 'Papel a redefinir';
 $string['safeoverridenotice'] = 'Nota: As permissões com riscos foram bloqueadas porque apenas possui permissão para redefinir permissões seguras.';
@@ -425,7 +425,6 @@ $string['selectrole'] = 'Selecione papel';
 $string['showallroles'] = 'Mostrar todos os papéis';
 $string['showthisuserspermissions'] = 'Mostrar as permissões deste utilizador';
 $string['site:accessallgroups'] = 'Aceder a todos os grupos';
-$string['siteadministrators'] = 'Administradores do site';
 $string['site:approvecourse'] = 'Aprovar criação de disciplinas';
 $string['site:backup'] = 'Fazer cópias de segurança de disciplinas';
 $string['site:config'] = 'Alterar configurações do site';
@@ -452,6 +451,7 @@ $string['site:viewfullnames'] = 'Ver sempre o nome completo dos utilizadores';
 $string['site:viewparticipants'] = 'Ver participantes';
 $string['site:viewreports'] = 'Ver relatórios';
 $string['site:viewuseridentity'] = 'Ver os dados completos do utilizador em lista';
+$string['siteadministrators'] = 'Administradores do site';
 $string['tag:edit'] = 'Editar palavras-chave existentes';
 $string['tag:editblocks'] = 'Editar blocos nas páginas de palavras-chave';
 $string['tag:flag'] = 'Marcar palavras-chave como inapropriadas';
@@ -467,28 +467,28 @@ $string['user:delete'] = 'Eliminar utilizadores';
 $string['user:editmessageprofile'] = 'Editar o perfil de envio de mensagens do utilizador';
 $string['user:editownmessageprofile'] = 'Editar o seu perfil de envio de mensagens';
 $string['user:editownprofile'] = 'Editar perfil próprio';
-$string['user:editprofile'] = 'Editar perfil do utilizador';
+$string['user:editprofile'] = 'Editar perfil de utilizador';
 $string['user:ignoreuserquota'] = 'Ignorar o limite de quota do utilizador';
 $string['user:loginas'] = 'Entrar como outro utilizador';
-$string['user:manageblocks'] = 'Gerir blocos no perfil do utilizador de outros utilizadores';
+$string['user:manageblocks'] = 'Gerir blocos no perfil de utilizador de outros utilizadores';
 $string['user:manageownblocks'] = 'Gerir blocos no seu perfil público de utilizador';
 $string['user:manageownfiles'] = 'Gerir ficheiros nas áreas de ficheiros privados';
 $string['user:managesyspages'] = 'Configurar a estrutura predefinida das páginas dos perfis de utilizadores públicas';
 $string['user:readuserblogs'] = 'Ver todos os blogues do utilizador';
 $string['user:readuserposts'] = 'Ver todos os tópicos de Fórum do utilizador';
-$string['usersfrom'] = 'Utilizadores de {$a}';
-$string['usersfrommatching'] = 'Utilizadores de {$a->contextname} correspondem a \'{$a->search}';
-$string['usersinthisx'] = 'Utilizadores deste {$a}';
-$string['usersinthisxmatching'] = 'Utilizadores deste {$a->contexttype} correspondem a \'{$a->search}';
-$string['userswithrole'] = 'Todos os utilizadores com um papel';
-$string['userswiththisrole'] = 'Utilizadores com papel';
-$string['user:update'] = 'Modificar o perfil dos utilizadores';
+$string['user:update'] = 'Modificar perfil dos utilizadores';
 $string['user:viewalldetails'] = 'Ver a informação completa do utilizador';
 $string['user:viewdetails'] = 'Ver perfil dos utilizadores';
 $string['user:viewhiddendetails'] = 'Ver dados ocultos dos utilizadores';
 $string['user:viewlastip'] = 'Ver último endereço IP do utilizador';
 $string['user:viewuseractivitiesreport'] = 'Ver relatórios de atividade do utilizador';
 $string['user:viewusergrades'] = 'Ver notas de utilizador';
+$string['usersfrom'] = 'Utilizadores de {$a}';
+$string['usersfrommatching'] = 'Utilizadores de {$a->contextname} correspondem a \'{$a->search}';
+$string['usersinthisx'] = 'Utilizadores deste {$a}';
+$string['usersinthisxmatching'] = 'Utilizadores deste {$a->contexttype} correspondem a \'{$a->search}';
+$string['userswithrole'] = 'Todos os utilizadores com um papel';
+$string['userswiththisrole'] = 'Utilizadores com papel';
 $string['useshowadvancedtochange'] = 'Usar \'Mostrar avançado\' para alterar';
 $string['viewingdefinitionofrolex'] = 'A visualizar as configurações do papel \'{$a}\'';
 $string['viewrole'] = 'Ver pormenores de papéis';

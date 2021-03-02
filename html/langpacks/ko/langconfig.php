@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'langconfig', language 'ko', version '3.8'.
  *
- * @package   langconfig
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     langconfig
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,16 +41,16 @@ $string['parentlanguage'] = '';
 $string['strftimedate'] = '%Y년 %B %d일';
 $string['strftimedatefullshort'] = '%y/%m/%d';
 $string['strftimedateshort'] = '%B%d일';
-$string['strftimedatetime'] = '%Y년 %B %d일, %p %I:%M';
+$string['strftimedatetime'] = '%d %B %Y, %I:%M %p';
 $string['strftimedatetimeshort'] = '%Y/%m/%d %H:%M';
 $string['strftimedaydate'] = '%Y년 %B  %d일, %A';
-$string['strftimedaydatetime'] = '%Y년 %B %d일, %A, %p %I:%M';
+$string['strftimedaydatetime'] = '%A, %d %B %Y, %I:%M %p';
 $string['strftimedayshort'] = '%B %d일, %A';
 $string['strftimedaytime'] = '%a,%H:%M';
 $string['strftimemonthyear'] = '%Y년 %B';
 $string['strftimerecent'] = '%b %d일, %H:%M';
-$string['strftimerecentfull'] = '%Y년 %b %d일, %a, %p %I:%M';
-$string['strftimetime'] = '%p %I:%M';
+$string['strftimerecentfull'] = '%a, %d %b %Y, %I:%M %p';
+$string['strftimetime'] = '%I:%M %p';
 $string['strftimetime12'] = '%I:%M %p';
 $string['strftimetime24'] = '%H:%M';
 $string['thisdirection'] = 'ltr';

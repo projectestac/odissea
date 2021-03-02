@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'es', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -122,7 +122,7 @@ $string['eventsimported'] = 'Eventos importados: {$a}';
 $string['eventskey'] = 'Clave de eventos';
 $string['eventsource'] = 'Origen del evento';
 $string['eventspersonal'] = 'Mis eventos personales';
-$string['eventsrelatedtocategories'] = 'Eventos relacionados a categorías';
+$string['eventsrelatedtocategories'] = 'Eventos relacionados con categorías';
 $string['eventsrelatedtocourses'] = 'Eventos referidos a los cursos';
 $string['eventsrelatedtogroups'] = 'Eventos relacionados con grupos';
 $string['eventstarttime'] = 'Hora de comienzo';
@@ -192,9 +192,6 @@ $string['noupcomingevents'] = 'No hay eventos próximos';
 $string['oneevent'] = '1 evento';
 $string['pollinterval'] = 'Intervalo de actualización';
 $string['pollinterval_help'] = '¿Con qué frecuencia le gustaría que el calendario actualizara los nuevos eventos?';
-$string['preferences'] = 'Preferencias';
-$string['preferences_available'] = 'Sus preferencias personales';
-$string['preferredcalendar'] = 'Calendario preferido';
 $string['pref_lookahead'] = 'Plazo de comienzo de eventos próximos';
 $string['pref_lookahead_help'] = 'Esta opción ajusta el número (máximo) de días en que un evento debe comenzar a fin de poder mostrarse como evento pendiente. Por favor, note que <strong>no hay garantía</strong> de que se muestren todos los eventos que comiencen en esa fecha; si hay demasiados (más que los señalados en la preferencia "Número máximo de eventos pendientes"), los eventos más distantes no se mostrarán.';
 $string['pref_maxevents'] = 'Nº máximo de eventos próximos';
@@ -205,16 +202,19 @@ $string['pref_startwday'] = 'Primer día de la semana';
 $string['pref_startwday_help'] = 'Las semanas del calendario se mostrarán comenzando el día que se seleccione aquí.';
 $string['pref_timeformat'] = 'Formato de hora';
 $string['pref_timeformat_help'] = 'Puede elegir ver las horas en formato de 12 o 24 horas. Si elige "valor por defecto", el formato será elegido automáticamente en función del idioma usado en el sitio.';
+$string['preferences'] = 'Preferencias';
+$string['preferences_available'] = 'Sus preferencias personales';
+$string['preferredcalendar'] = 'Calendario preferido';
 $string['privacy:metadata:calendar:event'] = 'El componente del Calendario puede almacenar detalles de evento del calendario dentro del subsistema del núcleo.';
 $string['privacy:metadata:calendar:event:description'] = 'La descripción del evento del calendario.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'El tipo de evento del evento del calendario.';
 $string['privacy:metadata:calendar:event:name'] = 'El nombre del evento del calendario.';
+$string['privacy:metadata:calendar:event:timeduration'] = 'La duración del evento del calendario.';
+$string['privacy:metadata:calendar:event:timestart'] = 'La fecha de inicio del evento del calendario.';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'El componente del Calendario puede almacenar detalles de suscripciones a calendario del usuario dentro del subsistema del núcleo.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'El tipo de evento de la suscripción del calendario.';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'El nombre de la suscripción del calendario.';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'La URL de la suscripción del calendario.';
-$string['privacy:metadata:calendar:event:timeduration'] = 'La duración del evento del calendario.';
-$string['privacy:metadata:calendar:event:timestart'] = 'La fecha de inicio del evento del calendario.';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'El tipo de evento del calendario configurado a mostrar en las preferencias del usuario.';
 $string['recentupcoming'] = '60 días recientes y próximos';
 $string['repeatedevents'] = 'Eventos repetidos';
@@ -222,7 +222,7 @@ $string['repeateditall'] = 'Aplicar también los cambios a los otros {$a} evento
 $string['repeateditthis'] = 'Aplicar los cambios sólo a este evento';
 $string['repeatevent'] = 'Repetir este evento';
 $string['repeatnone'] = 'No repeticiones';
-$string['repeatweeksl'] = 'Repetir semanalmente, creando juntos';
+$string['repeatweeksl'] = 'Número de eventos similares repetidos semanalmente';
 $string['repeatweeksr'] = 'eventos';
 $string['sat'] = 'Sáb';
 $string['saturday'] = 'Sábado';
@@ -271,5 +271,6 @@ $string['weekly'] = 'Semanal';
 $string['weeknext'] = 'Semana próxima';
 $string['weekthis'] = 'Esta semana';
 $string['when'] = 'Cuándo';
+$string['whendate'] = 'Cuándo: {$a}';
 $string['yesterday'] = 'Ayer';
 $string['youcandeleteallrepeats'] = 'Este evento es parte de una serie de eventos repetidos. Puede eliminar sólo este evento, o todos los eventos {$a} de la serie de una vez.';

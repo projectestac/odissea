@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'nl', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,15 +48,15 @@ $string['cannotsavetempl'] = 'Bewaren van sjablonen is niet toegelaten';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha is niet ingesteld';
 $string['check'] = 'Meerkeuze - meerdere antwoorden';
-$string['checkbox'] = 'Checkbox';
 $string['check_values'] = 'Checkbox-waarden';
+$string['checkbox'] = 'Checkbox';
 $string['choosefile'] = 'Kies een bestand';
 $string['chosen_feedback_response'] = 'Gekozen feedback-antwoord';
 $string['closebeforeopen'] = 'Je hebt een einddatum opgegeven voor de startdatum.';
+$string['complete_the_form'] = 'Beantwoord de vragen';
 $string['completed'] = 'Voltooid';
 $string['completed_feedbacks'] = 'Ingevulde antwoorden';
 $string['completedon'] = 'Voltooid op {$a}';
-$string['complete_the_form'] = 'Beantwoord de vragen';
 $string['completionsubmit'] = 'Bekijk als voltooid als de feedback verstuurd is';
 $string['configallowfullanonymous'] = 'Als deze optie op ja staat, dan kan de feedback op de startpagina ingevuld worden zonder aangemeld te zijn.';
 $string['confirmdeleteentry'] = 'Ben je zeker dat je dit wil verwijderen?';
@@ -93,11 +93,11 @@ $string['dependvalue'] = 'Hangt af van waarde';
 $string['description'] = 'Beschrijving';
 $string['do_not_analyse_empty_submits'] = 'Analyseer geen lege inzendingen';
 $string['downloadresponseas'] = 'Download alle antwoorden als:';
+$string['drop_feedback'] = 'Verwijder uit deze cursus';
 $string['dropdown'] = 'Meerkeuzevraag - één antwoord toegelaten (rolmenu)';
+$string['dropdown_values'] = 'Antwoorden';
 $string['dropdownlist'] = 'Meerkeuzevraag - één antwoord (rolmenu)';
 $string['dropdownrated'] = 'Rolmenu (beoordeeld)';
-$string['dropdown_values'] = 'Antwoorden';
-$string['drop_feedback'] = 'Verwijder uit deze cursus';
 $string['edit_item'] = 'Bewerk vraag';
 $string['edit_items'] = 'Bewerk vragen...';
 $string['email_notification'] = 'Stuur e-mailnotificaties voor inzendingen';
@@ -115,39 +115,39 @@ $string['eventresponsesubmitted'] = 'Antwoord ingestuurd';
 $string['export_questions'] = 'Exporteer vragen';
 $string['export_to_excel'] = 'Exporteren naar Excel';
 $string['feedback:addinstance'] = 'Voeg een nieuwe feedback toe';
-$string['feedbackclose'] = 'Antwoorden toestaan tot';
 $string['feedback:complete'] = 'Feedback invullen';
-$string['feedbackcompleted'] = '{$a->username} heeft {$a->feedbackname} voltooid';
 $string['feedback:createprivatetemplate'] = 'Maak een privé sjabloon';
 $string['feedback:createpublictemplate'] = 'Maak een publiek sjabloon';
 $string['feedback:deletesubmissions'] = 'Verwijder ingevulde inzendingen';
 $string['feedback:deletetemplate'] = 'Verwijder sjabloon';
 $string['feedback:edititems'] = 'Bewerk items';
-$string['feedback_is_not_for_anonymous'] = 'Feedback is niet anoniem';
-$string['feedback_is_not_open'] = 'De feedback is niet open';
 $string['feedback:mapcourse'] = 'Koppel cursussen aan globale feedbacks';
-$string['feedbackopen'] = 'Antwoorden toestaan van';
 $string['feedback:receivemail'] = 'E-mailnotificatie ontvangen';
 $string['feedback:view'] = 'Feedback bekijken';
 $string['feedback:viewanalysepage'] = 'Bekijk de analysepagina na insturen';
 $string['feedback:viewreports'] = 'Rapporten bekijken';
+$string['feedback_is_not_for_anonymous'] = 'Feedback is niet anoniem';
+$string['feedback_is_not_open'] = 'De feedback is niet open';
+$string['feedbackclose'] = 'Antwoorden toestaan tot';
+$string['feedbackcompleted'] = '{$a->username} heeft {$a->feedbackname} voltooid';
+$string['feedbackopen'] = 'Antwoorden toestaan van';
 $string['file'] = 'Bestand';
 $string['filter_by_course'] = 'Filter op cursus';
 $string['handling_error'] = 'Er is een fout opgetreden bij de verwerking door de feedback';
 $string['hide_no_select_option'] = 'Verberg de "Niets gekozen"-optie';
 $string['horizontal'] = 'Horizontaal';
-$string['importfromthisfile'] = 'Importeer van dit bestand';
 $string['import_questions'] = 'Importeer vragen';
 $string['import_successfully'] = 'Import gelukt';
+$string['importfromthisfile'] = 'Importeer van dit bestand';
 $string['includeuserinrecipientslist'] = 'Neem {$a} op in de lijst met ontvangers';
 $string['indicator:cognitivedepth'] = 'Feedbackformulier cognitief';
+$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Feedbackformulier activiteit.';
 $string['indicator:cognitivedepthdef'] = 'Feedback cognitief';
 $string['indicator:cognitivedepthdef_help'] = 'De deelnemer heeft dit percentage van de cognitieve betrokkenheid van de Feedback-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen weergave, Bekijken, Verzenden)';
-$string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Feedbackformulier activiteit.';
 $string['indicator:socialbreadth'] = 'Feedbackformulier sociaal';
+$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Feedbackformulier activiteit.';
 $string['indicator:socialbreadthdef'] = 'Feedback sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de sociale betrokkenheid van de Feedback-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, Alleen deelnemer, Deelnemer met anderen)';
-$string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de door de leerling behaalde sociale breedte in een Feedbackformulier activiteit.';
 $string['info'] = 'Informatie';
 $string['infotype'] = 'Informatietype';
 $string['insufficient_responses'] = 'Onvoldoende antwoorden';
@@ -159,7 +159,7 @@ $string['label'] = 'Label';
 $string['labelcontents'] = 'Inhoud';
 $string['mapcourse'] = 'Koppel feedback aan cursussen';
 $string['mapcourse_help'] = 'Standaard zijn feedback formulieren die op je startpagina gemaakt worden beschikbaar voor heel de site en zullen verschijnen in alle cursussen wanneer je het feedbackblok gebruikt. Je kunt het feedbackformulier vastzetten door er een permanent blok van te maken of het aantal cursussen waarin het blok verschijnt limiteren door het te koppelen aan specifieke cursussen.';
-$string['mapcourseinfo'] = 'Dit is een feedback die beschikbaar is voor alle cursussen van de hele site die het feedback blok gebruiken. Je kunt echter de cursussen waar de feedback zal verschijnen beperken door ze te koppelen. Zoek de cursus en koppel die aan deze feedback.';
+$string['mapcourseinfo'] = 'Dit is een feedbackformulier dat beschikbaar is voor alle cursussen van de hele site die het feedback blok gebruiken. Je kunt echter de cursussen waar de feedback zal verschijnen beperken door het te koppelen aan bepaalde cursussen. Zoek de cursus en koppel die aan dit feedbackformulier.';
 $string['mapcoursenone'] = 'Er zijn geen cursussen gekoppeld. De feedback staat open voor alle cursussen';
 $string['mapcourses'] = 'Koppel feedback aan cursussen';
 $string['mappedcourses'] = 'Gekoppelde cursussen';
@@ -183,26 +183,26 @@ Feedback kan gebruikt worden
 $string['modulenameplural'] = 'Feedbackformulieren';
 $string['move_item'] = 'Verplaats deze vraag';
 $string['multichoice'] = 'Meerkeuze';
+$string['multichoice_values'] = 'Meerkeuzewaarden';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->name}';
 $string['multichoicerated'] = 'Meerkeuze (beoordeling)';
 $string['multichoicetype'] = 'Meerkeuze type';
-$string['multichoice_values'] = 'Meerkeuzewaarden';
 $string['multiplesubmit'] = 'Meerdere inzendingen toestaan';
 $string['multiplesubmit_help'] = 'Indien er gekozen is voor anonieme onderzoeken, dan kunnen gebruikers een onbeperkt aantal keer het formulier insturen';
 $string['name'] = 'Naam';
-$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['name_required'] = 'Naam verplicht';
+$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['next_page'] = 'Volgende pagina';
 $string['no_handler'] = 'Er is geen actionhandler voor';
 $string['no_itemlabel'] = 'Geen label';
 $string['no_itemname'] = 'Geen itemnaam';
 $string['no_items_available_yet'] = 'Er zijn nog geen vragen toegevoegd';
+$string['no_templates_available_yet'] = 'Nog geen sjablonen beschikbaar';
 $string['non_anonymous'] = 'De gebruikersnamen zullen bewaard worden en samen met de antwoorden getoond worden';
 $string['non_anonymous_entries'] = 'Niet-anonieme items  ({$a})';
 $string['non_respondents_students'] = 'Leerlingen die niet ingestuurd hebben ({$a})';
 $string['not_completed_yet'] = 'Nog niet ingevuld';
-$string['no_templates_available_yet'] = 'Nog geen sjablonen beschikbaar';
-$string['not_selected'] = 'Niet geselecteerd';
+$string['not_selected'] = 'Niets geselecteerd';
 $string['not_started'] = 'Niet begonnen';
 $string['numberoutofrange'] = 'Aantal buiten bereik';
 $string['numeric'] = 'Numeriek antwoord';
@@ -215,9 +215,9 @@ $string['only_one_captcha_allowed'] = 'Slechts één captcha is toegelaten in ee
 $string['openafterclose'] = 'Je hebt een startdatum opgegeven na de sluitdatum';
 $string['overview'] = 'Overzicht';
 $string['page'] = 'Pagina';
+$string['page-mod-feedback-x'] = 'Elke feedback modulepagina';
 $string['page_after_submit'] = 'Bericht na voltooien';
 $string['pagebreak'] = 'Paginascheiding';
-$string['page-mod-feedback-x'] = 'Elke feedback modulepagina';
 $string['pluginadministration'] = 'Feedback beheer';
 $string['pluginname'] = 'Feedbackformulier';
 $string['position'] = 'Positie';
@@ -225,11 +225,11 @@ $string['previous_page'] = 'Vorige pagina';
 $string['privacy:metadata:completed'] = 'Gegevens over de inzendingen voor de feedback';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Of de inzending anoniem gebruikt moet worden.';
 $string['privacy:metadata:completed:timemodified'] = 'De laatste wijzigingstijd van de inzending.';
-$string['privacy:metadata:completedtmp'] = 'Gegevens over de inzendingen die nog bezig zijn.';
 $string['privacy:metadata:completed:userid'] = 'De ID van de gebruiker die de feedbackactiviteit ingevuld heeft.';
+$string['privacy:metadata:completedtmp'] = 'Gegevens over de inzendingen die nog bezig zijn.';
 $string['privacy:metadata:value'] = 'Gegevens over het antwoord op een vraag.';
-$string['privacy:metadata:valuetmp'] = 'Gegevens over het antwoord op een vraag in een inzending die nog bezig is.';
 $string['privacy:metadata:value:value'] = 'Het gekozen antwoord.';
+$string['privacy:metadata:valuetmp'] = 'Gegevens over het antwoord op een vraag in een inzending die nog bezig is.';
 $string['public'] = 'Publiek';
 $string['question'] = 'Vraag';
 $string['questionandsubmission'] = 'Vraag- en instuuropties';
@@ -243,7 +243,7 @@ $string['resetting_data'] = 'Verwijder alle antwoorden';
 $string['resetting_feedbacks'] = 'Feedback naar standaardinstellingen';
 $string['response_nr'] = 'Antwoordnummer';
 $string['responses'] = 'Antwoorden';
-$string['responsetime'] = 'Antwoordtijd';
+$string['responsetime'] = 'Reactietijden';
 $string['save_as_new_item'] = 'Bewaar als nieuwe vraag';
 $string['save_as_new_template'] = 'Opslaan als nieuw sjabloon';
 $string['save_entries'] = 'Verzend je antwoorden';
@@ -270,8 +270,8 @@ $string['switch_item_to_not_required'] = 'Wijzig naar antwoord niet verplicht';
 $string['switch_item_to_required'] = 'Wijzig naar antwoord verplicht';
 $string['template'] = 'Sjabloon';
 $string['template_deleted'] = 'Sjabloon verwijderd';
-$string['templates'] = 'Sjablonen';
 $string['template_saved'] = 'Sjabloon bewaard';
+$string['templates'] = 'Sjablonen';
 $string['textarea'] = 'Langer tekstantwoord';
 $string['textarea_height'] = 'Aantal regels';
 $string['textarea_width'] = 'Breedte';

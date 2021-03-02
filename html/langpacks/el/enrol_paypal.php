@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_paypal', language 'el', version '3.8'.
  *
- * @package   enrol_paypal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_paypal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,11 +52,11 @@ $string['mailstudents'] = 'Ειδοποίηση μαθητών';
 $string['mailteachers'] = 'Ενημέρωση καθηγητών';
 $string['messageprovider:paypal_enrolment'] = 'Μηνύματα εγγραφής PayPal';
 $string['nocost'] = 'Δεν υπάρχει κόστος που σχετικό με την εγγραφή σε αυτό το μάθημα!';
-$string['paypalaccepted'] = 'Αποδεκτές οι πληρωμές μέσω PayPal';
 $string['paypal:config'] = 'Παραμετροποίηση περιπτώσεων εγγραφής μέσω PayPal';
-$string['paypal:manage'] = 'Διαχείριση εγγεγραμμένων χρηστών';
+$string['paypal:manage'] = 'Διαχείριση εγγεγραμένων χρηστών';
 $string['paypal:unenrol'] = 'Ακύρωση εγγραφής χρηστών στο μάθημα';
 $string['paypal:unenrolself'] = 'Ακύρωση εγγραφής στο μάθημα από τον ίδιο';
+$string['paypalaccepted'] = 'Αποδεκτές οι πληρωμές μέσω PayPal';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'Το άρθρωμα PayPal σας επιτρέπει να δημιουργήσετε μαθήματα επί πληρωμή. Αν το κόστος για κάθε μάθημα είναι μηδενικό, τότε οι μαθητές δεν καλούνται να πληρώσουν για να εισαχθούν. Υπάρχει ένα κόστος για όλο τον ιστότοπο το οποίο το ορίζετε εδώ ως προεπιλογή για όλο τον ιστότοπο και έπειτα μια ρύθμιση μαθήματος που μπορείτε να ορίσετε για κάθε μάθημα μεμονωμένα. Το κόστος μαθήματος παρακάμπτει το κόστος ιστοτόπου.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'Πληροφορίες σχετικά με τις συναλλαγές PayPal για εγγραφές PayPal.';
@@ -91,4 +91,4 @@ $string['sendpaymentbutton'] = 'Αποστολή πληρωμής με Paypal';
 $string['status'] = 'Επιτρέπονται εγγραφές PayPal';
 $string['status_desc'] = 'Επιτρέπεται στους χρήστες να χρησιμοποιούν PayPal για να εγγραφούν στο μάθημα από προεπιλογή.';
 $string['transactions'] = 'Συναλλαγές PayPal';
-$string['unenrolselfconfirm'] = 'Είστε βέβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας στο μάθημα «{$a}»;';
+$string['unenrolselfconfirm'] = 'Είστε βεβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας στο μάθημα «{$a}»;';

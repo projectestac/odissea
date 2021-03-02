@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'nl', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,10 @@ $string['char_limitui_parenthesis_start'] = '⦗';
 $string['choice'] = 'Keuze';
 $string['choicegroup:addinstance'] = 'Voeg een nieuwe groepkeuze activiteit toe';
 $string['choicegroup:choose'] = 'Sla een keuze op';
-$string['choicegroupclose'] = 'Tot';
 $string['choicegroup:deleteresponses'] = 'Verwijder de keuzes';
 $string['choicegroup:downloadresponses'] = 'Download de keuzes';
+$string['choicegroup:readresponses'] = 'Bekijk de gemaakte keuzes';
+$string['choicegroupclose'] = 'Tot';
 $string['choicegroupfull'] = 'Deze groepskeuze is vol; er zijn geen plaatsen meer over.';
 $string['choicegroupname'] = 'Naam van de groepskeuze';
 $string['choicegroupopen'] = 'Open';
@@ -55,7 +56,6 @@ $string['choicegroupoptions'] = 'Keuzemogelijkheden';
 $string['choicegroupoptions_help'] = 'Hier bepaal je de keuzes waar de deelnemers een keuze uit moeten maken.
 
 Hier kun naar eigen inzicht het aantal keuze bepalen. Keuzes die je leeg laat, zullen niet worden weergegeven, wil je de deelnemers meer keuze geven dan er staan, klik dan op "Voeg 3 keuzevelden toe" knop.';
-$string['choicegroup:readresponses'] = 'Bekijk de gemaakte keuzes';
 $string['choicegroupsaved'] = 'Jouw keuze is opgeslagen';
 $string['choicetext'] = 'Keuze tekst';
 $string['chooseaction'] = 'Selecteer een actie...';
@@ -70,8 +70,8 @@ $string['del_groups'] = 'Verwijder groepen';
 $string['displayhorizontal'] = 'Geef horizontaal weer';
 $string['displaymode'] = 'Weergave modus';
 $string['displayvertical'] = 'Geef verticaal weer';
-$string['double_click_grouping_legend'] = 'Dubbelklik op een groepering om deze individueel uit- of in te klappen.';
 $string['double_click_group_legend'] = 'Dubbelklik op een groep om deze toe te voegen';
+$string['double_click_grouping_legend'] = 'Dubbelklik op een groepering om deze individueel uit- of in te klappen.';
 $string['event:answered'] = 'Gemaakte keuze';
 $string['event:answered_desc'] = 'De gebruiker met id \'{$a->userid}\' heeft een groep gekozen in de groepskeuze met cursusmodule id \'{$a->contextinstanceid}\'.';
 $string['event:removed'] = 'Keuze verwijderd';

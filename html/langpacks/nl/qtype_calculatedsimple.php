@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'nl', version '3.8'.
  *
- * @package   qtype_calculatedsimple
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedsimple
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['findwildcards'] = 'Zoek de jokers {x...} in je juiste antwoordformules'
 $string['generatenewitemsset'] = 'Genereer';
 $string['newsetwildcardvalues'] = 'nieuwe set joker waarden';
 $string['pluginname'] = 'Berekend eenvoudig';
+$string['pluginname_help'] = 'Een eenvoudige versie van berekende vragen. Deze zijn als numerieke vragen maar met de getallen willekeurig gekozen uit een set terwijl de test wordt afgenomen. Eenvoudig numerieke vragen bieden de meeste mogelijkheden van berekende vragen, maar met een eenvoudiger interface om ze te maken.';
 $string['pluginnameadding'] = 'Een eenvoudige berekende vraag toevoegen';
 $string['pluginnameediting'] = 'Een eenvoudige berekende vraag bewerken';
-$string['pluginname_help'] = 'Een eenvoudige versie van berekende vragen. Deze zijn als numerieke vragen maar met de getallen willekeurig gekozen uit een set terwijl de test wordt afgenomen. Eenvoudig numerieke vragen bieden de meeste mogelijkheden van berekende vragen, maar met een eenvoudiger interface om ze te maken.';
 $string['pluginnamesummary'] = 'Een eenvoudige versie van berekende vragen. Deze zijn als numerieke vragen maar met de getallen willekeurig gekozen uit een set terwijl de test wordt afgenomen.';
 $string['privacy:metadata'] = 'De eenvoudige plug-in Calculated simple question type  slaat geen persoonlijke gegevens op.';
 $string['setno'] = 'Set {$a}';

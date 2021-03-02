@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth', language 'en', version '3.8'.
  *
- * @package   auth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,17 +37,13 @@ $string['auth_changepasswordurl_expl'] = 'Specify the url to send users who have
 $string['auth_changingemailaddress'] = 'You have requested a change of email address, from {$a->oldemail} to {$a->newemail}. For security reasons, we are sending you an email message at the new address to confirm that it belongs to you. Your email address will be updated as soon as you open the URL sent to you in that message.';
 $string['auth_common_settings'] = 'Common settings';
 $string['auth_data_mapping'] = 'Data mapping';
-$string['authenticationoptions'] = 'Authentication options';
 $string['auth_fieldlock'] = 'Lock value';
 $string['auth_fieldlock_expl'] = '<p><b>Lock value:</b> If enabled, will prevent Moodle users and admins from editing the field directly. Use this option if you are maintaining this data in the external auth system. </p>';
 $string['auth_fieldlockfield'] = 'Lock value ({$a})';
 $string['auth_fieldlocks'] = 'Lock user fields';
 $string['auth_fieldlocks_help'] = '<p>You can lock user data fields. This is useful for sites where the user data is maintained by the administrators manually by editing user records or uploading using the \'Upload users\' facility. If you are locking fields that are required by Moodle, make sure that you provide that data when creating user accounts or the accounts will be unusable.</p><p>Consider setting the lock mode to \'Unlocked if empty\' to avoid this problem.</p>';
 $string['auth_fieldmapping'] = 'Data mapping ({$a})';
-$string['authinstructions'] = 'Leave this blank for the default login instructions to be displayed on the login page. If you want to provide custom login instructions, enter them here.';
 $string['auth_invalidnewemailkey'] = 'Error: if you are trying to confirm a change of email address, you may have made a mistake in copying the URL we sent you by email. Please copy the address and try again.';
-$string['authloginviaemail'] = 'Allow log in via email';
-$string['authloginviaemail_desc'] = 'Allow users to use both username and email address (if unique) for site login.';
 $string['auth_multiplehosts'] = 'Multiple hosts OR addresses can be specified (eg host1.com;host2.com;host3.com) or (eg xxx.xxx.xxx.xxx;xxx.xxx.xxx.xxx)';
 $string['auth_notconfigured'] = 'The authentication method {$a} is not configured.';
 $string['auth_outofnewemailupdateattempts'] = 'You have run out of allowed attempts to update your email address. Your update request has been cancelled.';
@@ -66,12 +62,16 @@ $string['auth_updatelocal_expl'] = '<p><b>Update local:</b> If enabled, the fiel
 $string['auth_updatelocalfield'] = 'Update local ({$a})';
 $string['auth_updateremote'] = 'Update external';
 $string['auth_updateremote_expl'] = '<p><b>Update external:</b> If enabled, the external auth will be updated when the user record is updated. Fields should be unlocked to allow edits.</p>';
-$string['auth_updateremotefield'] = 'Update external ({$a})';
 $string['auth_updateremote_ldap'] = '<p><b>Note:</b> Updating external LDAP data requires that you set binddn and bindpw to a bind-user with editing privileges to all the user records. It currently does not preserve multi-valued attributes, and will remove extra values on update. </p>';
+$string['auth_updateremotefield'] = 'Update external ({$a})';
 $string['auth_user_create'] = 'Enable user creation';
 $string['auth_user_creation'] = 'New (anonymous) users can create user accounts on the external authentication source and confirmed via email. If you enable this , remember to also configure module-specific options for user creation.';
 $string['auth_usernameexists'] = 'Selected username already exists. Please choose a new one.';
 $string['auth_usernotexist'] = 'Cannot update non-existent user: {$a}';
+$string['authenticationoptions'] = 'Authentication options';
+$string['authinstructions'] = 'Leave this blank for the default login instructions to be displayed on the login page. If you want to provide custom login instructions, enter them here.';
+$string['authloginviaemail'] = 'Allow log in via email';
+$string['authloginviaemail_desc'] = 'Allow users to use both username and email address (if unique) for site login.';
 $string['auto_add_remote_users'] = 'Auto add remote users';
 $string['cannotmapfield'] = 'The field "{$a->fieldname}" can\'t be mapped because its short name "{$a->shortname}" is too long. To allow it to be mapped, you need to reduce the short name to {$a->charlimit} characters. <a href="{$a->link}">Edit user profile fields</a>';
 $string['changepassword'] = 'Change password URL';
@@ -105,8 +105,8 @@ $string['eventuserloggedin'] = 'User has logged in';
 $string['eventuserloggedinas'] = 'User logged in as another user';
 $string['eventuserloginfailed'] = 'User login failed';
 $string['forcechangepassword'] = 'Force change password';
-$string['forcechangepasswordfirst_help'] = 'Force users to change password on their first login to Moodle.';
 $string['forcechangepassword_help'] = 'Force users to change password on their next login to Moodle.';
+$string['forcechangepasswordfirst_help'] = 'Force users to change password on their first login to Moodle.';
 $string['forgottenpassword'] = 'If you enter a URL here, it will be used as the lost password recovery page for this site. This is intended for sites where passwords are handled entirely outside of Moodle. Leave this blank to use the default password recovery.';
 $string['forgottenpasswordurl'] = 'Forgotten password URL';
 $string['getrecaptchaapi'] = 'To use reCAPTCHA you must get an API key from <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';

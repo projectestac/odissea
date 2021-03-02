@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'ja', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -102,16 +102,16 @@ $string['prevpage'] = '戻る';
 $string['privacy:metadata:tag'] = 'それぞれのユニークタグの詳細は説明および他の関連情報と共に保存されます。';
 $string['privacy:metadata:tag:description'] = 'タグの説明です。';
 $string['privacy:metadata:tag:flag'] = 'タグが不適切にフラグされているかどうかです。';
+$string['privacy:metadata:tag:name'] = 'タグ名 - これは正規化されたバージョンの名称です。';
+$string['privacy:metadata:tag:rawname'] = 'タグ名 - これは表示名です。';
+$string['privacy:metadata:tag:timemodified'] = 'タグが最後に修正された時間です。';
+$string['privacy:metadata:tag:userid'] = 'タグを最初に作成したユーザのIDです。';
 $string['privacy:metadata:taginstance'] = 'タグと使用場所間のリンクです。';
 $string['privacy:metadata:taginstance:ordering'] = 'このタグの相対的順序です。';
 $string['privacy:metadata:taginstance:tagid'] = 'タグへのリンクです。';
 $string['privacy:metadata:taginstance:timecreated'] = 'このタグがターゲットにリンクされた時間です。';
 $string['privacy:metadata:taginstance:timemodified'] = 'このタグがターゲットのために修正された時間です。';
 $string['privacy:metadata:taginstance:tiuserid'] = 'ユーザが共有コンテンツを個別にタグ付けできる場合、タグインスタンスのオーナーが保存されます。';
-$string['privacy:metadata:tag:name'] = 'タグ名 - これは正規化されたバージョンの名称です。';
-$string['privacy:metadata:tag:rawname'] = 'タグ名 - これは表示名です。';
-$string['privacy:metadata:tag:timemodified'] = 'タグが最後に修正された時間です。';
-$string['privacy:metadata:tag:userid'] = 'タグを最初に作成したユーザのIDです。';
 $string['ptags'] = 'ユーザ定義タグ (カンマ区切り)';
 $string['relatedblogs'] = '最新のブログエントリ';
 $string['relatedtags'] = '関連タグ';
@@ -147,11 +147,11 @@ $string['tag'] = 'タグ';
 $string['tagarea_blog_external'] = '外部ブログ記事';
 $string['tagarea_course'] = 'コース';
 $string['tagarea_course_modules'] = '活動およびリソース';
+$string['tagarea_post'] = 'ブログ記事';
+$string['tagarea_user'] = 'ユーザの興味のあること';
 $string['tagareaenabled'] = '有効';
 $string['tagareaname'] = '名称';
-$string['tagarea_post'] = 'ブログ記事';
 $string['tagareas'] = 'タグエリア';
-$string['tagarea_user'] = 'ユーザの興味のあること';
 $string['tagcollection'] = 'タグコレクション';
 $string['tagcollection_help'] = 'タグコレクションは異なるエリアのための一連のタグです。例えば標準タグのコレクションはユーザの興味のあることおよびブログ投稿タグを別のコレクションに分けた上で、コース内でタグ付けする場合に使用することができます。ユーザがタグをクリックした場合、そのタグと同じタグ内のタグのみ表示されます。タグはタグ付けされたエリアに基づきコレクションに自動追加することができます。また、標準タグに手動追加することもできます。';
 $string['tagcollections'] = 'タグコレクション';

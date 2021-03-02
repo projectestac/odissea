@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'en', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -71,7 +71,6 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'The time when the
 $string['privacy:metadata:grading_definitions:timemodified'] = 'The time when the grading definition was last modified.';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'The ID of the user who created the grading definition.';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'The ID of the user who last modified the grading definition.';
-$string['privacy:metadata:gradingformpluginsummary'] = 'Data for the grading method.';
 $string['privacy:metadata:grading_instances'] = 'Assessment record for one gradable item assessed by one rater.';
 $string['privacy:metadata:grading_instances:feedback'] = 'The feedback given by the user.';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'The text format of the feedback given by the user.';
@@ -79,6 +78,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'The ID of the user who 
 $string['privacy:metadata:grading_instances:rawgrade'] = 'The grade for the grading instance.';
 $string['privacy:metadata:grading_instances:status'] = 'The status of this grading instance.';
 $string['privacy:metadata:grading_instances:timemodified'] = 'The time when the grading instance was last modified.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Data for the grading method.';
 $string['searchownforms'] = 'include my own forms';
 $string['searchtemplate'] = 'Grading forms search';
 $string['searchtemplate_help'] = 'You can search for a grading form and use it as a template for the new grading form here. Simply type words that should appear somewhere in the form name, its description or the form body itself. To search for a phrase, wrap the whole query in double quotes.

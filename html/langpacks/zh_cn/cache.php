@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'zh_cn', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,7 +40,7 @@ $string['cachedef_capabilities'] = '系统功能列表';
 $string['cachedef_completion'] = '活动完成情况';
 $string['cachedef_config'] = '修改配置信息';
 $string['cachedef_contextwithinsights'] = '洞察力上下文';
-$string['cachedef_coursecat'] = '特定用户的课程列表';
+$string['cachedef_coursecat'] = '特定用户的课程目录列表';
 $string['cachedef_coursecatrecords'] = '课程目录记录';
 $string['cachedef_coursecattree'] = '课程目录树';
 $string['cachedef_coursecompletion'] = '课程完成状态';
@@ -81,10 +81,10 @@ $string['component'] = '组件';
 $string['confirmlockdeletion'] = '确认锁定删除';
 $string['confirmstoredeletion'] = '确认存储删除';
 $string['default_application'] = '默认应用程序储存';
-$string['defaultmappings'] = '当没有映射时所用的储存';
-$string['defaultmappings_help'] = '为缓存定义，如果你没有映射一个多个存储，那将使用默认存储。';
 $string['default_request'] = '默认为请求要储存';
 $string['default_session'] = '默认为SESSION要储存';
+$string['defaultmappings'] = '当没有映射时所用的储存';
+$string['defaultmappings_help'] = '为缓存定义，如果你没有映射一个多个存储，那将使用默认存储。';
 $string['defaultstoreactions'] = '默认为储存不能被修改';
 $string['definition'] = '定义';
 $string['definitionsummaries'] = '已知的缓存定义';
@@ -149,20 +149,20 @@ $string['sharing'] = '分享';
 $string['sharing_all'] = '每个人。';
 $string['sharing_help'] = '这可以让你确定缓存中的数据如何被共享，如果你设置了一个集群，或者如果你有多个站点都设置了同样的存储且希望共享数据。这是一个高级设置，请确保您更改它之前了解其用途。';
 $string['sharing_input'] = '自定义键（在下面输入）';
+$string['sharing_siteid'] = '拥有相同网站id的站点';
+$string['sharing_version'] = '运行相同版本的站点';
 $string['sharingrequired'] = '你必须至少选择一个分享选项';
 $string['sharingselected_all'] = '每个人';
 $string['sharingselected_input'] = '自定义按键';
 $string['sharingselected_siteid'] = '网站识别';
 $string['sharingselected_version'] = '版本';
-$string['sharing_siteid'] = '拥有相同网站id的站点';
-$string['sharing_version'] = '运行相同版本的站点';
-$string['storeconfiguration'] = '保存配置';
 $string['store_default_application'] = '应用缓存的默认文件存储';
 $string['store_default_request'] = '请求缓存的默认静态存储';
 $string['store_default_session'] = '会话缓存的默认存储';
+$string['storeconfiguration'] = '保存配置';
 $string['storename'] = '保存名称';
-$string['storenamealreadyused'] = '你必须为这个商店选择一个独立的名称';
 $string['storename_help'] = '可以在这里设置存储名称。它用来标识系统中的存储，并且只能由a-z A-Z 0-9 -_和空格组成。它也必须是唯一的。如果您尝试使用已被使用的名称，您将收到一个错误。';
+$string['storenamealreadyused'] = '你必须为这个商店选择一个独立的名称';
 $string['storenameinvalid'] = '无效的存储名称。您仅可以使用a-z A-Z 0-9 -_和空格。';
 $string['storenotready'] = '存储尚未就绪';
 $string['storeperformance'] = '缓存性能报告 - {$a} 每个操作的唯一请求';

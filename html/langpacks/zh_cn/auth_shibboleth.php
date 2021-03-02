@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_shibboleth', language 'zh_cn', version '3.8'.
  *
- * @package   auth_shibboleth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_shibboleth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,13 +29,6 @@ $string['auth_shib_auth_logo'] = '身份验证方法徽标';
 $string['auth_shib_auth_logo_description'] = '提供用户熟悉的口令身份验证方式徽标 。如可以是口令联盟徽标，<tt>SWITCHaai 登录</tt> or <tt>InCommon 登录</tt> or 等类型徽标。';
 $string['auth_shib_auth_method'] = '身份认证方法名称';
 $string['auth_shib_auth_method_description'] = '给Shibboleth验证方法起一个用户熟悉的名字。可以是您的Shibboleth组织的名字，比如<tt>SWITCHaai 登陆</tt> 或者 <tt>InCommon 登陆</tt> 或者其他类似的名字。';
-$string['auth_shibbolethdescription'] = '是用这个方法，用户的创建和验证是使用 <a href="http://shibboleth.internet2.edu/" target="_blank">Shibboleth</a> 进行的';
-$string['auth_shibboleth_errormsg'] = '请选择您所在的组织';
-$string['auth_shibboleth_login'] = 'Shibboleth 登录';
-$string['auth_shibboleth_login_long'] = '通过口令登录 Moodle';
-$string['auth_shibboleth_manual_login'] = '手工登录';
-$string['auth_shibboleth_select_member'] = '我是成员之一';
-$string['auth_shibboleth_select_organization'] = '对于通过口令惊醒验证，请在下拉列表中选择您所在的组织。';
 $string['auth_shib_changepasswordurl'] = '更改密码 URL';
 $string['auth_shib_contact_administrator'] = '如果你与所提到的组织没有关系，但是你需要访问此服务器上的一个课程，那么请联系<a href="mailto:{$a}">Moodle管理员</a>。';
 $string['auth_shib_convert_data'] = '数据修改 API';
@@ -56,6 +49,13 @@ $string['auth_shib_no_organizations_warning'] = '如果想使用整合的 WAYF �
 $string['auth_shib_only'] = '只用 Shibboleth';
 $string['auth_shib_only_description'] = '如果只是用 Shibboleth 认证方式，请设定此选项。';
 $string['auth_shib_username_description'] = '用在 Moodle 中当作用户名的 Shibboleth环 境变量名';
+$string['auth_shibboleth_errormsg'] = '请选择您所在的组织';
+$string['auth_shibboleth_login'] = 'Shibboleth 登录';
+$string['auth_shibboleth_login_long'] = '通过口令登录 Moodle';
+$string['auth_shibboleth_manual_login'] = '手工登录';
+$string['auth_shibboleth_select_member'] = '我是成员之一';
+$string['auth_shibboleth_select_organization'] = '对于通过口令惊醒验证，请在下拉列表中选择您所在的组织。';
+$string['auth_shibbolethdescription'] = '是用这个方法，用户的创建和验证是使用 <a href="http://shibboleth.internet2.edu/" target="_blank">Shibboleth</a> 进行的';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = '口令身份验证插件不存储任何个人数据。';
 $string['shib_invalid_account_error'] = '您似乎在使用 Shibboleth 认证，但 Moodle 找不到您提供的用户名的有效账号。您的账号可能不存在，或者被禁用。';

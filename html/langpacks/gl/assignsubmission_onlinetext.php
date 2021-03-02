@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignsubmission_onlinetext', language 'gl', version '3.8'.
  *
- * @package   assignsubmission_onlinetext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignsubmission_onlinetext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['nosubmission'] = 'Non foi enviado nada para esta tarefa';
 $string['numwords'] = '({$a} palabras)';
 $string['numwordsforlog'] = 'Contador de palabras da entrega: {$a} palabras';
 $string['onlinetext'] = 'Texto en liña';
-$string['onlinetextfilename'] = 'textoenrede.html';
+$string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Permitir a entrega de texto en liña';
 $string['pluginname'] = 'Entregas de texto en liña';
 $string['privacy:metadata:assignmentid'] = 'ID da tarefa';
@@ -45,5 +45,5 @@ $string['privacy:metadata:tablepurpose'] = 'Almacena a entrega de texto para cad
 $string['privacy:metadata:textpurpose'] = 'O texto actual entregado para este intento da tarefa.';
 $string['privacy:path'] = 'Textos da entrega';
 $string['wordlimit'] = 'Límite de palabras';
-$string['wordlimitexceeded'] = 'O límite de palabras para esta tarefa é de {$a->limit} palabras, e vostede está tentando enviar {$a->count} palabras. Revise a súa entrega e ténteo de novo.';
 $string['wordlimit_help'] = 'Se están activadas as entregas de texto en liña, este é o número máximo de palabras que cada alumno terá permitido enviar.';
+$string['wordlimitexceeded'] = 'O límite de palabras para esta tarefa é de {$a->limit} palabras, e vostede está tentando enviar {$a->count} palabras. Revise a súa entrega e ténteo de novo.';

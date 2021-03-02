@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,24 +12,31 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_section_links', language 'sv', version '3.8'.
  *
- * @package   block_section_links
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_section_links
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['incby1'] = 'Öka med';
-$string['incby2'] = 'Alternativ ökning med';
-$string['jumptocurrenttopic'] = 'Hoppa till aktuellt &auml;mne';
+$string['incby1_help'] = 'Detta är det värde som avsnittet ökas varje gång en avsnittslänk visas, med början på 1.';
+$string['incby2'] = 'Öka alternativt med';
+$string['incby2_help'] = 'Detta är det värde som avsnittet ökas varje gång en avsnittslänk visas, med början på 1.';
+$string['jumptocurrenttopic'] = 'Hoppa till aktuellt ämne';
 $string['jumptocurrentweek'] = 'Hoppa till aktuell vecka';
 $string['numsections1'] = 'Antal sektioner';
+$string['numsections1_help'] = 'När antalet avsnitt i kursen når detta antal används \'Öka med\'-värdet.';
 $string['numsections2'] = 'Alternativt antal sektioner';
-$string['pluginname'] = 'Länkar till sektioner';
+$string['numsections2_help'] = 'När antalet avsnitt i kursen når detta antal används \'Öka alternativt med\'-värdet.';
+$string['pluginname'] = 'Sektionslänkar';
+$string['privacy:metadata'] = 'Blocket Sektionslänkar visar enbart data som lagrats på andra platser.';
+$string['section_links:addinstance'] = 'Lägg till nytt Sektionslänkar-block';
 $string['topics'] = 'Ämnen';
 $string['weeks'] = 'Veckor';

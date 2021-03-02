@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'it', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,8 +33,8 @@ $string['actionaftercorrectanswer_help'] = 'Dopo aver risposto correttamente ad 
 * Visualizza una pagina non vista - Le pagine vengono visualizzate casualmente evitando di visualizzare due volte la stessa pagina.
 * Visualizza una pagina dove non è stata data una risposta - Le pagine vengono visualizzate casualmente e le pagine dove non è stata data una risposta vengono visualizzate di nuovo';
 $string['actions'] = 'Azioni';
-$string['activitylink'] = 'Collegamento ad una attività';
-$string['activitylink_help'] = 'Per fornire un collegamento ad un\'altra attività del corso quando si raggiunge la fine della lezione, seleziona il collegamento con il menu a discesa.';
+$string['activitylink'] = 'Collegamento all\'attività successiva';
+$string['activitylink_help'] = 'Per fornire un collegamento ad un\'altra attività del corso quando si raggiunge la fine della lezione, selezionare il collegamento tramite il menu a discesa.';
 $string['activitylinkname'] = 'Vai a {$a}';
 $string['activityoverview'] = 'Ci sono lezioni che devi svolgere';
 $string['addabranchtable'] = 'Aggiungi pagina con contenuto';
@@ -61,6 +61,9 @@ $string['addnumerical'] = 'Crea pagina con domanda numerica';
 $string['addpage'] = 'Aggiungi pagina';
 $string['addshortanswer'] = 'Crea pagina con domanda a risposta breve';
 $string['addtruefalse'] = 'Crea pagina con domanda vero/falso';
+$string['allotheranswers'] = 'Tutte le altre ripsoste';
+$string['allotheranswersjump'] = 'Salto per tutte le altre risposte';
+$string['allotheranswersscore'] = 'Punteggio per tutte le altre risposte';
 $string['allowofflineattempts'] = 'La lezione può essere svolta offline tramite l\'app mobile';
 $string['allowofflineattempts_help'] = 'Gli utenti dell\'app moodle potranno scaricare la lezione per fruirne offline. Verranno anche scaricate tutte le risposte possibili assieme alle risposte corrette. Nota: non è possibile fruire di una lezione offline se la lezione ha un tempo limite.';
 $string['anchortitle'] = 'Inizio del contenuto principale';
@@ -196,7 +199,7 @@ $string['edittruefalse'] = 'Modifica pagina con domanda vero/falso';
 $string['email'] = 'Email';
 $string['emailallgradedessays'] = 'Invia per email a TUTTI i testi liberi valutati';
 $string['emailgradedessays'] = 'Invia per email i testi liberi  valutati';
-$string['emailsuccess'] = 'Invio per email effettuato con successo';
+$string['emailsuccess'] = 'Invio email effettuato correttamente';
 $string['emptypassword'] = 'La password deve essere inserita';
 $string['enabled'] = 'Abilitato';
 $string['endofbranch'] = 'Fine diramazione';
@@ -210,6 +213,7 @@ $string['eolstudentoutoftimenoanswers'] = 'Non hai risposto a nessuna domanda. P
 $string['essay'] = 'Testo libero';
 $string['essayemailmessage2'] = '<p>Domanda a testo libero:{$a->question}</p><p>La tua replica:<em>{$a->response}</em></p><p>Commenti valutatore:<em>{$a->comment}</em></p><p>Hai ottenuto {$a->earned} su {$a->outof} per questa domanda a testo libero.</p><p>La tua valutazione per la lezione è stata modificata in {$a->newgrade}%.</p>';
 $string['essayemailsubject'] = 'Valutazione disponibile per la domanda della lezione';
+$string['essaynotgradedyet'] = 'Il testo libero non è stati ancora valutato';
 $string['essayresponses'] = 'Risposte a testo libero';
 $string['essays'] = 'Testi liberi';
 $string['essayscore'] = 'Punteggio testo libero';
@@ -262,13 +266,13 @@ $string['importquestions'] = 'Importa domande';
 $string['importquestions_help'] = 'Abilita l\'importazione di domande redatte in diversi formati tramite file di testo.';
 $string['inactiveoverridehelp'] = '* Lo studente non ha il ruolo o il gruppo corretto per visualizzare/tentare la lezione';
 $string['indicator:cognitivedepth'] = 'Lezione cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Lezione.';
 $string['indicator:cognitivedepthdef'] = 'Lezione cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Lezione (Livelli: Nessuna visualizzazione, Visualizzazione, Invio, Visualizzazione feedback, Commento al feedback, Nuovo invio dopo il feedback)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Lezione.';
 $string['indicator:socialbreadth'] = 'Lezione sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Lezione.';
 $string['indicator:socialbreadthdef'] = 'Lezione sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Lezione (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Lezione.';
 $string['insertedpage'] = 'Pagina aggiunta';
 $string['invalidfile'] = 'File non valido';
 $string['invalidid'] = 'Non è stato passato l\'ID modulo o l\'ID lezione';
@@ -283,16 +287,18 @@ $string['leftduringtimed'] = 'Hai abbandonato il tentativo durante una lezione a
 $string['leftduringtimednoretake'] = 'Hai abbandonato il tentativo durante una lezione a tempo e <br />non puoi riprovare o continuare la lezione.';
 $string['leftduringtimedsession'] = 'Hai abbandonato una lezione a tempo.';
 $string['lesson:addinstance'] = 'Aggiungere lezioni';
-$string['lessonclosed'] = 'Questa lezione è stata chiusa il {$a}.';
-$string['lessoncloses'] = 'La lezione chiude';
-$string['lessoncloseson'] = 'La lezione si chiude il {$a}';
 $string['lesson:edit'] = 'Modificare lezioni';
-$string['lessoneventcloses'] = '{$a} chiude';
-$string['lessoneventopens'] = '{$a} apre';
-$string['lessonformating'] = 'Formato della lezione';
 $string['lesson:grade'] = 'Valutare domande a testo libero';
 $string['lesson:manage'] = 'Gestire lezioni';
 $string['lesson:manageoverrides'] = 'Gestione personalizzazioni lezione';
+$string['lesson:view'] = 'Visualizzare attività lezione';
+$string['lesson:viewreports'] = 'Visualizzati report lezione';
+$string['lessonclosed'] = 'Questa lezione è stata chiusa il {$a}.';
+$string['lessoncloses'] = 'La lezione chiude';
+$string['lessoncloseson'] = 'La lezione si chiude il {$a}';
+$string['lessoneventcloses'] = '{$a} chiude';
+$string['lessoneventopens'] = '{$a} apre';
+$string['lessonformating'] = 'Formato della lezione';
 $string['lessonmenu'] = 'Menu della lezione';
 $string['lessonname'] = 'Lezione: {$a}';
 $string['lessonnotready'] = 'Questa lezione non è ancora pronta. Contatta il tuo {$a}.';
@@ -301,8 +307,6 @@ $string['lessonopen'] = 'Questa lezione sarà disponibile dal {$a}.';
 $string['lessonopens'] = 'La lezione è disponibile';
 $string['lessonpagelinkingbroken'] = 'La prima pagina non è stata trovata. Probabilmente i collegamenti tra le pagine sono rotti. Contatta un amministratore del sistema.';
 $string['lessonstats'] = 'Statistiche della lezione';
-$string['lesson:view'] = 'Visualizzare attività lezione';
-$string['lesson:viewreports'] = 'Visualizzati report lezione';
 $string['linkedmedia'] = 'Media linkati';
 $string['loginfail'] = 'Login fallito, prova ancora...';
 $string['lowscore'] = 'Voti peggiori';
@@ -399,10 +403,11 @@ $string['numberofpagesviewedheader'] = 'Numero di risposte date';
 $string['numberofpagesviewednotice'] = 'Numero di domande dove hai risposto: {$a->nquestions}; (Devi rispondere ad almeno: {$a->minquestions} domande)';
 $string['numerical'] = 'Numerica';
 $string['numericanswer'] = 'Risposta numerica';
+$string['numericanswer_help'] = 'È possibile specificare un singolo numero o un intervallo di numeri utilizzando i due punti. Ad esempio 2:5 significa che qualsiasi risposta tra 2 e 5 (2 e 5 inclusi) è corretta.';
 $string['offlinedatamessage'] = 'Hai svolto offline un tentativo della lezione. L\'ultimo salvataggio dei dati risale a {$a}. Per favore verifica di non avere tentativi non salvati.';
 $string['ongoing'] = 'Visualizza il punteggio ottenuto durante lo svolgimento';
-$string['ongoingcustom'] = 'Finora hai ottenuto {$a->score} punti su {$a->currenthigh}.';
 $string['ongoing_help'] = 'Su ciascuna pagina sarà visualizzato il punteggio ottenuto dallo studente rispetto al punteggio totale.';
+$string['ongoingcustom'] = 'Finora hai ottenuto {$a->score} punti su {$a->currenthigh}.';
 $string['ongoingnormal'] = 'Hai risposto correttamente a {$a->correct} domande su {$a->viewed} tentativi.';
 $string['onpostperpage'] = 'Solo un inserimento per ciascun voto';
 $string['openafterclose'] = 'Hai specificato una data di apertura successiva alla data di chiusura';
@@ -422,11 +427,11 @@ $string['overrideusereventname'] = '{$a->lesson} - Personalizzazione';
 $string['overview'] = 'Riepilogo';
 $string['overview_help'] = 'Una lezione è composta da un insieme di pagine con domande e, opzionalmente,  pagine di diramazione. Una pagina con domanda contiene del contenuto e propone una domanda. Ad ogni possibile risposta è associato un salto verso altre pagine. Il salto può essere relativo, ad esempio la stessa pagina o la pagina seguente, oppure assoluto, ossia una qualsiasi delle pagine che compongono una lezione. Una pagina con diramazione è una pagina che contiene una serie di collegamenti ad altre pagine della lezione, come ad esempio un sommario.';
 $string['page'] = 'Pagina: {$a}';
-$string['pageanswers'] = 'Risposte della pagina';
-$string['pagecontents'] = 'Contenuto della pagina';
 $string['page-mod-lesson-edit'] = 'Modifica pagina della lezione';
 $string['page-mod-lesson-view'] = 'Visualizzazione o anteprima della pagina della lezione';
 $string['page-mod-lesson-x'] = 'Qualsiasi pagina con modulo lezione';
+$string['pageanswers'] = 'Risposte della pagina';
+$string['pagecontents'] = 'Contenuto della pagina';
 $string['pageresponses'] = 'Risposte della pagina';
 $string['pages'] = 'Pagine';
 $string['pagetitle'] = 'Titolo della pagina';
@@ -536,9 +541,9 @@ $string['showanunseenpage'] = 'Visualizza una pagina che non è stata vista';
 $string['singleanswer'] = 'Risposta singola';
 $string['skip'] = 'Salta navigazione';
 $string['slideshow'] = 'Slideshow';
+$string['slideshow_help'] = 'Consente la visualizzazione della lezione come uno slideshow di altezza e larghezza fissi.';
 $string['slideshowbgcolor'] = 'Colore di sfondo slideshow';
 $string['slideshowheight'] = 'Altezza slideshow';
-$string['slideshow_help'] = 'Consente la visualizzazione della la lezione come uno slideshow di altezza e larghezza fissi.';
 $string['slideshowwidth'] = 'Larghezza slideshow';
 $string['startlesson'] = 'Inizio lezione';
 $string['studentattemptlesson'] = 'Tentativo numero {$a->attempt} di {$a->lastname}, {$a->firstname}';

@@ -32,7 +32,7 @@ defined('MOODLE_INTERNAL') || die();
  * @return bool
  */
 function xmldb_theme_xtec2020_upgrade($oldversion) {
-    global $DB;
+    global $DB, $CFG;
 
     $dbman = $DB->get_manager();
 
@@ -42,6 +42,25 @@ function xmldb_theme_xtec2020_upgrade($oldversion) {
     // You will also have to create the db/install.xml file by using the XMLDB Editor.
     // Documentation for the XMLDB Editor can be found at:
     // https://docs.moodle.org/dev/XMLDB_editor
+
+    if ($oldversion < 2020110302) {
+
+    	include_once($CFG->dirroot.'/theme/xtec2020/constants.php');
+        
+        $colorset = get_config('theme_xtec2020', 'colorset'); // Get current colorset
+        print_r($colorset);
+
+        if ($colorset != 'personalitzat' && $colorset != 'nodes' && $colorset != 'PEDC') { // Force PEDC color combination
+        	set_config('colorset', 'PEDC', 'theme_xtec2020');
+        	set_config('maincolor', DEFAULT_MAINCOLOR, 'theme_xtec2020');
+        	set_config('fontcolor', DEFAULT_FONTCOLOR, 'theme_xtec2020');
+            set_config('linkscolor', DEFAULT_LINKSCOLOR, 'theme_xtec2020');
+            set_config('headerbg', DEFAULT_HEADERBG, 'theme_xtec2020');            
+        }
+
+        // xtec2020 savepoint reached
+        upgrade_plugin_savepoint(true, 2020110302, 'theme', 'xtec2020');
+    }
 
     return true;
 }

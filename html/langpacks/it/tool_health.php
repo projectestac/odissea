@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_health', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_health', language 'it', version '3.8'.
  *
- * @package   tool_health
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_health
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['healthnoproblemsfound'] = 'Non è stato rilevato nessun problema di salute.';
-$string['healthproblemsdetected'] = 'Sono stati rilevati problemi di salute!';
-$string['healthproblemsolution'] = 'Soluzione problema di salute';
+$string['healthproblemsdetected'] = 'Sono stati rilevati problemi di integrità';
+$string['healthproblemsolution'] = 'Soluzione al problema di integrità';
 $string['healthreturntomain'] = 'Continua';
 $string['healthsolution'] = 'Soluzione';
-$string['pluginname'] = 'Centro salute';
+$string['pluginname'] = 'Centro integrità';
 $string['privacy:metadata'] = 'Il plugin "Centro salute" non memorizza dati personali.';

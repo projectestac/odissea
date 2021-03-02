@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'currencies', language 'gl', version '3.8'.
  *
- * @package   currencies
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     currencies
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,12 +35,12 @@ $string['ARS'] = 'Peso arxentino';
 $string['AUD'] = 'Dólar australiano';
 $string['AWG'] = 'Florín de Aruba';
 $string['AZN'] = 'Manat acerbaixano';
-$string['BAM'] = 'Marco convertíbel de Bosnia e Herzegovina';
+$string['BAM'] = 'Marco convertíbel de Bosnia e Hercegovina';
 $string['BBD'] = 'Dólar das Barbados';
 $string['BDT'] = 'Taka bangladechiano';
 $string['BGN'] = 'Lev búlgaro';
-$string['BHD'] = 'Dinar de Barein';
-$string['BIF'] = 'Franco burundés';
+$string['BHD'] = 'Dinar de Bahrein';
+$string['BIF'] = 'Franco burundiano';
 $string['BMD'] = 'Dólar das Bermudas';
 $string['BND'] = 'Dólar do Brunei';
 $string['BOB'] = 'Boliviano de Bolivia';
@@ -71,7 +71,7 @@ $string['ERN'] = 'Nakfa eritreo';
 $string['ETB'] = 'Birr etíope';
 $string['EUR'] = 'Euro';
 $string['FJD'] = 'Dólar de Fidxi';
-$string['FKP'] = 'Libra das Illas Falkland';
+$string['FKP'] = 'Libra das Illas Falklands';
 $string['GBP'] = 'Libra Esterlina';
 $string['GEL'] = 'Lari xeorxiano';
 $string['GHS'] = 'Cedi ganés';
@@ -102,7 +102,7 @@ $string['KPW'] = 'Won norcoreano';
 $string['KRW'] = 'Won surcoreano';
 $string['KWD'] = 'Dinar kuwaití';
 $string['KYD'] = 'Dólar das Illas Caimán';
-$string['KZT'] = 'Tenge cazaquistanés';
+$string['KZT'] = 'Tenge casaquistanés';
 $string['LAK'] = 'Kip laosiano';
 $string['LBP'] = 'Libra libanesa';
 $string['LKR'] = 'Rupia de Sri Lanka';
@@ -111,7 +111,7 @@ $string['LSL'] = 'Loti lesotiano';
 $string['LTL'] = 'Litas lituano';
 $string['LVL'] = 'Lats letón';
 $string['LYD'] = 'Dinar libio';
-$string['MAD'] = 'Dirham marroquío';
+$string['MAD'] = 'Dirham marroquí';
 $string['MDL'] = 'Leu moldavo';
 $string['MGA'] = 'Franco malgaxe';
 $string['MKD'] = 'Denar macedonio';
@@ -158,12 +158,12 @@ $string['SSP'] = 'Libra sursudanesa';
 $string['STD'] = 'Dobra de San Tomé e Príncipe';
 $string['SVC'] = 'Colón salvadoreño';
 $string['SYP'] = 'Libra siria';
-$string['SZL'] = 'Lilangeni suazilandés';
+$string['SZL'] = 'Lilangeni suacilandés';
 $string['THB'] = 'Baht tailandés';
 $string['TJS'] = 'Somoni taxiquistanés';
-$string['TMT'] = 'Manat do Turquemenistán';
+$string['TMT'] = 'Manat do Turcomenistán';
 $string['TND'] = 'Dinar tunisiano';
-$string['TOP'] = 'Pa`anga tongano';
+$string['TOP'] = 'Pa\\`anga tongano';
 $string['TRY'] = 'Lira turca';
 $string['TTD'] = 'Dólar de Trindade e Tobago';
 $string['TWD'] = 'Dólar taiwanés';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'it', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_progress', language 'it', version '3.8'.
  *
- * @package   block_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -96,10 +96,10 @@ $string['mouse_over_prompt'] = 'Per maggior informazioni sposta il mouse sopra i
 $string['no_blocks'] = 'Nel corso non sono presenti blocchi Barra di avanzamento.';
 $string['no_events_config_message'] = 'Non sono presenti risorse o attività delle quali monitorare l\'avanzamento. Creare prima qualche risorsa/attività e poi configurare questo blocco.';
 $string['no_events_message'] = 'Non sono presenti risorse o attività monitorate. Utilizzare la configurazione per impostare il controllo.';
+$string['no_visible_events_message'] = 'Nessun evento monitorato è al momento visibile.';
 $string['notAttempted_colour'] = '#C71C22';
 $string['notattempted_colour_descr'] = 'Codice HTML del colore usato per elementi attuali non ancora svolti';
 $string['notattempted_colour_title'] = 'Colore degli elementi non svolti';
-$string['no_visible_events_message'] = 'Nessun evento monitorato è al momento visibile.';
 $string['now_indicator'] = 'SEI QUI';
 $string['ouwiki'] = 'OU Wiki';
 $string['overview'] = 'Panoramica studenti';
@@ -112,10 +112,10 @@ $string['pluginname'] = 'Barra di avanzamento';
 $string['posted_to'] = 'inserimento intervento';
 $string['progress'] = 'Avanzamento';
 $string['progress:addinstance'] = 'Aggiungere blocco Barra di avanzamento';
-$string['progressbar'] = 'Barra di avanzamento';
 $string['progress:myaddinstance'] = 'Aggiungere blocco Barra di avanzamento alla pagina My Home';
 $string['progress:overview'] = 'Visualizzare panoramica avanzamento di tutti gli studenti';
 $string['progress:showbar'] = 'Visualizzare la barra nel blocco Barra di avanzamento';
+$string['progressbar'] = 'Barra di avanzamento';
 $string['questionnaire'] = 'Questionario';
 $string['quiz'] = 'Quiz';
 $string['recordingsbn'] = 'Registrazioni BBB';

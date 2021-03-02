@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hub', language 'it', version '3.8'.
  *
- * @package   hub
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hub
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,9 +35,9 @@ $string['analyticsactionsnotuseful'] = 'Numero di azioni che indicano il pronost
 $string['analyticsenabledmodels'] = 'Numero di modelli dei pronostici abilitati {$a})';
 $string['analyticspredictions'] = 'Numero di pronostici generati ({$a})';
 $string['audience'] = 'Destinatari';
+$string['audience_help'] = 'I destinatari per i quali è pensato il corso.';
 $string['audienceadmins'] = 'Amministratori Moodle';
 $string['audienceeducators'] = 'Formatori';
-$string['audience_help'] = 'I destinatari per i quali è pensato il corso.';
 $string['audiencestudents'] = 'Studenti';
 $string['badgesnumber'] = 'Numero di badge ({$a})';
 $string['communityremoved'] = 'Quel link al corso è stato rimosso dal tuo elenco';
@@ -52,11 +52,11 @@ $string['courseshortname_help'] = 'Inserisci il titolo abbreviato del corso. Non
 $string['coursesnumber'] = 'Numero di corsi ({$a})';
 $string['courseunpublished'] = 'Il corso {$a->courseshortname} non è più condiviso su {$a->hubname}.';
 $string['courseurl'] = 'URL del corso';
-$string['courseurl_help'] = 'L\'URL del tuo corso. Viene visualizzato come link nei risultati della ricerca.';
+$string['courseurl_help'] = 'L\'URL del corso. Verrà visualizzato come collegamento nei risultati della ricerca.';
 $string['creatorname'] = 'Creatore';
 $string['creatorname_help'] = 'Colui che ha creato il corso';
 $string['creatornotes'] = 'Annotazioni del creatore';
-$string['creatornotes_help'] = 'Le annotazioni del creatore sono utili ai docenti su come usare il corso';
+$string['creatornotes_help'] = 'Le annotazioni del creatore sono utili ai docenti su come usare il corso.';
 $string['deletescreenshots'] = 'Elinina questi screenshot';
 $string['deletescreenshots_help'] = 'Elimina tutti gli screenshot caricati';
 $string['demourl'] = 'URL demo';
@@ -152,7 +152,7 @@ $string['registerwithmoodleorginfostats'] = 'Statische Moodle';
 $string['registerwithmoodleorgremove'] = 'Rimuovendo la registrazione, non sarà più possibile ricevere avvisi di sicurezza e altre novità importanti. Inoltre, gli utenti non riceveranno più le notifiche push sulla app mobile. Sei sicuro di continuare?';
 $string['registerwithmoodleorgupdate'] = 'Aggiorna la registrazione del sito';
 $string['registrationconfirmed'] = 'Conferma della registrazione del sito';
-$string['registrationconfirmedon'] = 'Grazie per avere registrato il sito. L\'elaborazione pianificata \'Registrazione del sito\' aggiornerà periodicamente la registrazione in modo automatico.';
+$string['registrationconfirmedon'] = 'Grazie per aver registrato il sito. Le informazioni sulla registrazione saranno mantenute aggiornate dalla elaborazione pianificata \'registrazione del sito\'.';
 $string['registrationinfo'] = 'Informazioni di registrazione';
 $string['removefromhub'] = 'Rimuovi da Moodle.net';
 $string['renewregistration'] = 'Rinnova la registrazione';
@@ -193,7 +193,7 @@ $string['sitephone'] = 'Telefono';
 $string['sitephone_help'] = 'Il numero telefonico non sarà pubblicato. Solo gli amministratori dell\'hub potranno vederlo.';
 $string['siteprivacy'] = 'Privacy';
 $string['siteprivacy_help'] = 'E\' possibile scegliere se il sito apparirà nell\'elenco pubblico dei siti con o senza il link.';
-$string['siteprivacylinked'] = 'Pubblica il nome del sito con un link';
+$string['siteprivacylinked'] = 'Pubblica il nome del sito con un collegamento';
 $string['siteprivacynotpublished'] = 'Non pubblicare questo sito';
 $string['siteprivacypublished'] = 'Pubblica solo il nome del sito';
 $string['siteregistrationcontact'] = 'Visualizza modulo di contatto';

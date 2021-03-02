@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculatedmulti', language 'ja', version '3.8'.
  *
- * @package   qtype_calculatedmulti
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedmulti
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['answeroptions'] = '選択肢オプション';
 $string['answeroptions_help'] = '選択肢の推奨公式は次のとおりです ...<strong>{={x}+..}</strong>...';
 $string['pluginname'] = '多肢選択計算問題';
+$string['pluginname_help'] = '多肢選択計算問題は小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値式を選択肢に含むことのできる多肢選択問題のような問題です。例えば「高さ {l} 、幅 {w} の長方形の面積は?」という問題の場合、1つの選択肢は {={l}*{w}} ( * は乗算を意味します) のようにすることができます。';
 $string['pluginnameadding'] = '多肢選択計算問題の追加';
 $string['pluginnameediting'] = '多肢選択計算問題の編集';
-$string['pluginname_help'] = '多肢選択計算問題は小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値式を選択肢に含むことのできる多肢選択問題のような問題です。例えば「高さ {l} 、幅 {w} の長方形の面積は?」という問題の場合、1つの選択肢は {={l}*{w}} ( * は乗算を意味します) のようにすることができます。';
 $string['pluginnamesummary'] = '多肢選択計算問題は小テスト受験時に個別の値に置換される波括弧内「{}」のワイルドカードを使用する数値式を選択肢に含むことのできる多肢選択問題のような問題です。';
 $string['privacy:metadata'] = '多肢選択計算問題タイププラグインはいかなる個人データも保存しません。';

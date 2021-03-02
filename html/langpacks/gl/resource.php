@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'gl', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,6 @@ $string['configpopupwidth'] = 'Que largura predeterminada deben ter as xanelas e
 $string['contentheader'] = 'Contido';
 $string['displayoptions'] = 'Opcións dispoñíbeis de presentación';
 $string['displayselect'] = 'Presentar';
-$string['displayselectexplain'] = 'Escolla o tipo de presentación. desafortunadamente non todos os tipos están dispoñíbeis para todos os ficheiros.';
 $string['displayselect_help'] = 'Este axuste, xunto co tipo de ficheiro, e sempre que o navegador permita integrar código, determina como se presenta o ficheiro. As opcións poden incluír:
 
 * Automático - Seleccionase de forma automática a mellor opción para presentar o ficheiro
@@ -54,6 +53,7 @@ $string['displayselect_help'] = 'Este axuste, xunto co tipo de ficheiro, e sempr
 * Nun marco - Presentase o ficheiro dentro dun marco baixo a barra de navegación e a descrición do ficheiro
 * Nova xanela - Presentase o ficheiro nunha nova xanela do navegador con menús e unha barra de enderezos';
 $string['displayselect_link'] = 'mod/file/mod';
+$string['displayselectexplain'] = 'Escolla o tipo de presentación. desafortunadamente non todos os tipos están dispoñíbeis para todos os ficheiros.';
 $string['dnduploadresource'] = 'Crear ficheiro de recurso';
 $string['encryptedcode'] = 'Código de cifrado';
 $string['filenotfound'] = 'Non se atopou o ficheiro';
@@ -63,15 +63,15 @@ $string['filtername'] = 'Autoligado de nomes de recursos';
 $string['forcedownload'] = 'Forzar a descarga';
 $string['framesize'] = 'Altura do marco';
 $string['indicator:cognitivedepth'] = 'Ficheiro cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso ficheiro.';
 $string['indicator:cognitivedepthdef'] = 'Ficheiro cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen os recursos de Ficheiro durante este intervalo de análise (Niveis = Sen vista, Ver)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso ficheiro.';
 $string['indicator:socialbreadth'] = 'Ficheiro social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso ficheiro.';
 $string['indicator:socialbreadthdef'] = 'Ficheiro social';
 $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen os recursos de Ficheiro durante este intervalo de análise (Niveis = Sen participación, Participante en solitario)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso ficheiro.';
 $string['legacyfiles'] = 'Migración de ficheiros antigos de curso';
 $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Finalizada';
@@ -103,13 +103,13 @@ $string['printintro'] = 'Presentar a descrición do recurso';
 $string['printintroexplain'] = 'Presentar a descrición do recurso baixo o contido? É posíbel que algúns tipos de pantalla non presenten a descrición incluso aínda que estea activado.';
 $string['privacy:metadata'] = 'O engadido de recurso ficheiro non almacena ningún dato persoal.';
 $string['resource:addinstance'] = 'Engadir un novo recurso';
+$string['resource:exportresource'] = 'Exportar recurso';
+$string['resource:view'] = 'Ver recurso';
 $string['resourcecontent'] = 'Ficheiros e subcartafoles';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Exportar recurso';
-$string['resource:view'] = 'Ver recurso';
 $string['search:activity'] = 'Ficheiro';
 $string['selectmainfile'] = 'Seleccione o ficheiro principal premendo na icona a carón do seu nome.';
 $string['showdate'] = 'Amosar a data de modificación/envío';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_radius', language 'ko', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_radius', language 'ko', version '3.8'.
  *
- * @package   auth_radius
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_radius
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,8 +35,8 @@ $string['auth_radiusnasport_key'] = '포트';
 $string['auth_radiussecret'] = '공유된 암호';
 $string['auth_radiussecret_key'] = '보안키';
 $string['auth_radiustype'] = 'RADIUS 서버에서 사용할 인증 정책을 선택하시오.';
-$string['auth_radiustypechapmd5'] = 'CHAP MD5';
 $string['auth_radiustype_key'] = '인증키';
+$string['auth_radiustypechapmd5'] = 'CHAP MD5';
 $string['auth_radiustypemschapv1'] = '마이크로소프트 CHAP V1';
 $string['auth_radiustypemschapv2'] = '마이크로소프트 CHAP V2';
 $string['auth_radiustypepap'] = 'PAP';

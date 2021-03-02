@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'de', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,16 +57,16 @@ $string['blogs'] = 'Blogs';
 $string['blogscourse'] = 'Kursblogs';
 $string['blogssite'] = 'Blogs der Website';
 $string['blogtags'] = 'Blog-Tags';
-$string['cannotviewcourseblog'] = 'Sie haben nicht die erforderlichen Rechte, um Blogs in diesem Kurs zu sehen';
-$string['cannotviewcourseorgroupblog'] = 'Sie haben nicht die erforderlichen Rechte, um Blogs in diesem Kurs oder in dieser Gruppe zu sehen';
-$string['cannotviewsiteblog'] = 'Sie haben nicht die erforderlichen Rechte, um alle Blogs dieser Website zu sehen';
-$string['cannotviewuserblog'] = 'Sie haben nicht die erforderlichen Rechte, um Blogs aller Nutzer zu lesen';
+$string['cannotviewcourseblog'] = 'Sie dürfen keine Blogs in diesem Kurs sehen';
+$string['cannotviewcourseorgroupblog'] = 'Sie dürfen keine Blogs in diesem Kurs oder in dieser Gruppe sehen';
+$string['cannotviewsiteblog'] = 'Sie dürfen nicht alle Blogs dieser Website sehen';
+$string['cannotviewuserblog'] = 'Sie dürfen keine anderen Nutzerblogs lesen';
 $string['configexternalblogcrontime'] = 'Häufigkeit, mit der externe Blogs auf neue Beiträge hin geprüft werden';
 $string['configmaxexternalblogsperuser'] = 'Anzahl der externen Blogs, die maximal im persönlichen Moodle-Blog verlinkt sein dürfen';
 $string['configuseblogassociations'] = 'Verbindung von Blogeinträgen mit Kursen und Kursmodulen erlauben';
 $string['configuseexternalblogs'] = 'Hinzufügen von externen Blogfeeds erlauben. Moodle prüft die Blogfeeds und kopiert neue Beiträge in den persönlichen Moodle-Blog.';
 $string['courseblog'] = 'Kursblog: {$a}';
-$string['courseblogdisable'] = 'Blogfunktion ist nicht aktiviert';
+$string['courseblogdisable'] = 'Kursblogs sind nicht aktiviert';
 $string['courseblogs'] = 'Blogs von anderen im Kurs';
 $string['deleteblogassociations'] = 'Blogverbindungen löschen';
 $string['deleteblogassociations_help'] = 'Wenn diese Option aktiviert wird, sind Blogeinträge nicht länger mit diesem Kurs, einer Kursaktivität oder einem Kursmaterial verbunden. Die Blogeinträge selber werden nicht gelöscht.';
@@ -75,12 +75,12 @@ $string['deleteexternalblog'] = 'Diesen externen Blog trennen';
 $string['deleteotagswarn'] = 'Möchten Sie diese Tags wirklich aus allen Blogeinträgen und aus dem System entfernen?';
 $string['description'] = 'Beschreibung';
 $string['description_help'] = 'Fassen SIe den Inhalt Ihres externen Blogs kurz zusammen. Falls keine Beschreibung angegeben wird, wird die Beschreibung aus dem externen Blog übernommen.';
-$string['donothaveblog'] = 'Sie haben zur Zeit keinen persönlichen Blog.';
+$string['donothaveblog'] = 'Sie haben bisher keinen eigenen Blog';
 $string['editentry'] = 'Blogeintrag bearbeiten';
 $string['editexternalblog'] = 'Externen Blog bearbeiten';
-$string['emptybody'] = 'Der Eingabetext darf nicht leer sein';
+$string['emptybody'] = 'Eingabetext darf nicht leer sein';
 $string['emptyrssfeed'] = 'Die URL zeigt nicht auf einen gültigen RSS Feed';
-$string['emptytitle'] = 'Der Titel darf nicht leer sein';
+$string['emptytitle'] = 'Titel darf nicht leer sein';
 $string['emptyurl'] = 'Sie müssen eine URL zu einem RSS Feed angeben';
 $string['entrybody'] = 'Eingabetext';
 $string['entrybodyonlydesc'] = 'Beschreibung';
@@ -98,11 +98,11 @@ $string['evententrydeleted'] = 'Blogeintrag gelöscht';
 $string['evententryupdated'] = 'Beitrag aktualisiert';
 $string['eventexternalblogsviewed'] = 'Extern verbundene Blogs angezeigt';
 $string['externalblogcrontime'] = 'Cronjob für externe Blogs';
-$string['externalblogdeleteconfirm'] = 'Diesen externen Blog abmelden?';
+$string['externalblogdeleteconfirm'] = 'Externen Blog abmelden?';
 $string['externalblogdeleted'] = 'Externer Blog ist nicht registriert';
 $string['externalblogs'] = 'Externe Blogs';
-$string['feedisinvalid'] = 'RSS Feed ist nicht gültig';
-$string['feedisvalid'] = 'RSS Feed ist gültig';
+$string['feedisinvalid'] = 'RSS-Feed ist nicht gültig';
+$string['feedisvalid'] = 'RSS-Feed ist gültig';
 $string['filterblogsby'] = 'Filtereinträge von ...';
 $string['filtertags'] = 'Externe Tags';
 $string['filtertags_help'] = 'Mit dieser Option können Sie die Beiträge filtern. Wenn Sie hierbei Tags angeben (getrennt durch Kommas), werden ausschließlich Beiträge mit diesen Tags vom externen Blog kopiert.';
@@ -111,17 +111,17 @@ $string['groupblogdisable'] = 'Gruppenblogs sind nicht aktiviert';
 $string['groupblogentries'] = 'Blogeinträge mit \'{$a->coursename}\' und Gruppe \'{$a->groupname}\' verbunden';
 $string['groupblogs'] = 'Blogs von anderen in einer Gruppe';
 $string['incorrectblogfilter'] = 'Falscher Blogfilter ausgewählt';
-$string['intro'] = 'Der RSS Feed wurde automatisch von einem oder mehreren Blogs erstellt.';
+$string['intro'] = 'RSS-Feed wurde automatisch von einem oder mehreren Blogs erstellt';
 $string['invalidgroupid'] = 'Ungültige Gruppen-ID';
 $string['invalidurl'] = 'URL ist nicht erreichbar';
 $string['linktooriginalentry'] = 'Zum ursprünglichen Blogeintrag verlinken';
-$string['maxexternalblogsperuser'] = 'Maximale Anzahl externer Blogs pro Nutzer/in';
+$string['maxexternalblogsperuser'] = 'Maximalzahl externer Blogs pro Nutzer/in';
 $string['myprofileuserblogs'] = 'Alle Blogbeiträge anzeigen';
 $string['name'] = 'Name';
 $string['name_help'] = 'Geben Sie einen beschreibenden Namen für Ihren externen Blog an. Falls kein Name eingetragen ist, wird der Titel des externen Blogs benutzt.';
 $string['noentriesyet'] = 'Keine sichtbaren Beiträge';
 $string['noguestpost'] = 'Gäste dürfen keine Blogeinträge schreiben.';
-$string['nopermissionstodeleteentry'] = 'Sie haben nicht die erforderliche Rechte zum Löschen dieses Blogeintrags';
+$string['nopermissionstodeleteentry'] = 'Sie dürfen diesen Blogeintrag nicht löschen';
 $string['norighttodeletetag'] = 'Sie dürfen diesen Tag nicht löschen: {$a}';
 $string['nosuchentry'] = 'Kein solcher Blogeintrag vorhanden';
 $string['notallowedtoedit'] = 'Sie haben nicht das Recht, diesen Beitrag zu bearbeiten.';
@@ -151,24 +151,24 @@ $string['privacy:metadata:post:created'] = 'Datum, an dem der Blogbeitrag erstel
 $string['privacy:metadata:post:lastmodified'] = 'Datum, an dem der Blogbeitrag zuletzt geändert wurde';
 $string['privacy:metadata:post:publishstate'] = 'Sichtbarkeit des Blogbeitrags für andere';
 $string['privacy:metadata:post:subject'] = 'Titel des Blogbeitrags';
-$string['privacy:metadata:post:summary'] = 'Blogbeitrag';
+$string['privacy:metadata:post:summary'] = 'Text des Blogbeitrags';
 $string['privacy:metadata:post:uniquehash'] = 'Eindeutige ID für einen externen Blogbeitrag, normalerweise eine URL';
 $string['privacy:metadata:post:userid'] = 'Nutzer-ID von dem der Blogbeitrag hinzugefügt wurde';
 $string['privacy:metadata:post:usermodified'] = 'Nutzer-ID, mit der der Blogbeitrag zuletzt geändert';
 $string['privacy:path:blogassociations'] = 'In Verbindung stehende Blogbeiträge';
 $string['privacy:unknown'] = 'Unbekannt';
 $string['publishto'] = 'Veröffentlichen für';
+$string['publishto_help'] = 'Es gibt 3 Optionen für Blogveröffentlichungen:
+
+* Persönlich - Nur Sie und die Administration können diesen Beitrag lesen
+* Alle auf dieser Website - Alle auf dieser Website registrieren Personen können den Beitrag lesen
+* Weltweit öffentlich - Alle können den Beitrag lesen (auch Gäste und Suchmaschinen)';
 $string['publishtocourse'] = 'Mitglieder in gemeinsamen Kursen';
 $string['publishtocourseassoc'] = 'Mitglieder des verbundenen Kurses';
 $string['publishtocourseassocparam'] = 'Mitglieder von {$a}';
 $string['publishtogroup'] = 'Mitglieder in gemeinsamer Gruppe';
 $string['publishtogroupassoc'] = 'Mitglieder in gemeinsamer Gruppe im verbundenen Kurs';
 $string['publishtogroupassocparam'] = 'Mitglieder in gemeinsamer Gruppe in {$a}';
-$string['publishto_help'] = 'Es gibt 3 Optionen für Blogveröffentlichungen:
-
-* Persönlich - Nur Sie und die Administration können diesen Beitrag lesen
-* Alle auf dieser Website - Alle auf dieser Website registrieren Personen können den Beitrag lesen
-* Weltweit öffentlich - Alle können den Beitrag lesen (auch Gäste und Suchmaschinen)';
 $string['publishtonoone'] = 'Persönlich';
 $string['publishtosite'] = 'Alle auf dieser Website';
 $string['publishtoworld'] = 'Weltweit öffentlich';

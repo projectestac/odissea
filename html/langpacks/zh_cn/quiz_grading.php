@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'zh_cn', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,6 +49,9 @@ $string['graded'] = '(已评分)';
 $string['gradenextungraded'] = '批改下 {$a} 份未评分试卷';
 $string['gradeungraded'] = '批改全部 {$a} 份未评分试卷';
 $string['grading'] = '人工评分';
+$string['grading:componentname'] = '人工评分报告';
+$string['grading:viewidnumber'] = '评分时显示学号';
+$string['grading:viewstudentnames'] = '评分时显示学生姓名';
 $string['gradingall'] = '此试题共被解答 {$a} 次。';
 $string['gradingattempt'] = '{$a->fullname}的第{$a->attempt}次答题';
 $string['gradingattemptsxtoyofz'] = '为{$a->of}次答题中的第{$a->from}次到第{$a->to}次评分';
@@ -59,8 +62,6 @@ $string['gradingquestionx'] = '评分题目 {$a->number}: {$a->questionname}';
 $string['gradingreport'] = '人工评分报告';
 $string['gradingungraded'] = '{$a} 份未评分试卷';
 $string['gradinguser'] = '{$a} 的试卷';
-$string['grading:viewidnumber'] = '评分时显示学号';
-$string['grading:viewstudentnames'] = '评分时显示学生姓名';
 $string['hideautomaticallygraded'] = '隐藏已经被自动评分的题目';
 $string['inprogress'] = '进行中';
 $string['invalidattemptid'] = '此试卷ID不存在';

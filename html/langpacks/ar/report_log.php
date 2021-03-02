@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,39 +12,40 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_log', language 'ar', version '3.8'.
  *
- * @package   report_log
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_log
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['allsources'] = 'كل المصادر';
 $string['cli'] = 'واجهة سطر الأوامر';
-$string['eventcomponent'] = 'المُكوِّن';
+$string['eventcomponent'] = 'عنصر';
 $string['eventcontext'] = 'سياق الحدث';
 $string['eventloggedas'] = '{$a->realusername} كـ {$a->asusername}';
 $string['eventorigin'] = 'المصدر';
 $string['eventrelatedfullnameuser'] = 'المستخدم المتأثر';
-$string['eventreportviewed'] = 'تمت معاينة تقرير سجل الوقوعات';
-$string['eventuserreportviewed'] = 'تمت معاينة تقرير سجل وقوعات المستخدم';
-$string['logsformat'] = 'تنسيق السجلات';
-$string['log:view'] = 'معاينة سجلات وقوعات المساق';
+$string['eventreportviewed'] = 'تم استعراض تقرير السجل';
+$string['eventuserreportviewed'] = 'تم استعراض تقرير سجل المستخدم';
+$string['log:view'] = 'معاينة سجلات المقرر الدراسي';
 $string['log:viewtoday'] = 'معاينة سجلات الوقوعات لهذا اليوم';
+$string['logsformat'] = 'تنسيق سجلات الوقوعات';
 $string['nocapability'] = 'تعذر الوصول إلى تقرير سجل وقوعات المستخدم';
 $string['nologreaderenabled'] = 'لا قارئ مُمَكَّن لسجل الوقوعات';
 $string['origin'] = 'المصدر';
 $string['other'] = 'غيره';
 $string['page'] = 'صفحة {$a}';
 $string['page-report-log-index'] = 'تقرير سجل المقرر الدراسي';
-$string['page-report-log-user'] = 'تقرير سجل وقوعات المستخدم في المساق';
-$string['page-report-log-x'] = 'تقرير أي من السجلات';
-$string['pluginname'] = 'سجلات الوقوعات';
+$string['page-report-log-user'] = 'تقرير سجل المستخدم للمقرر الدراسي';
+$string['page-report-log-x'] = 'أي  تقرير لسجلات الوقوعات';
+$string['pluginname'] = 'سجلات';
 $string['privacy:metadata'] = 'إن ملحق سجلات الوقوعات لا يخزن أي بيانات شخصية.';
 $string['restore'] = 'استعادة';
 $string['selectlogreader'] = 'إختر قارئ سجل الوقوعات';

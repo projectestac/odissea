@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_langimport', language 'nl', version '3.8'.
  *
- * @package   tool_langimport
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_langimport
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,8 +37,8 @@ $string['langpackremoved'] = 'Taalpakket \'{$a}\' verwijderd';
 $string['langpackremovedevent'] = 'Taalpakket verwijderd';
 $string['langpackupdated'] = 'Taalpakket \'{$a}\' aangepast';
 $string['langpackupdatedevent'] = 'Taalpakket bijgewerkt';
-$string['langpackupdateskipped'] = 'De update van taalpakket {$a} is overgeslagen.';
-$string['langpackuptodate'] = 'Taalpakket {$a} is up-to-date';
+$string['langpackupdateskipped'] = 'De update van taalpakket \'{$a}\' is overgeslagen.';
+$string['langpackuptodate'] = 'Taalpakket \'{$a}\' is up-to-date';
 $string['langunsupported'] = '<p>Je server lijkt de volgende talen niet volledig te ondersteunen: </p><ul>{$a->missinglocales}</ul><p> In plaats daarvan zal de globale locale ({$a->globallocale})  worden gebruikt om bepaalde tekenreeksen, zoals datums of nummers, te formatteren. </p>';
 $string['langupdatecomplete'] = 'Taalpakket update voltooid';
 $string['missingcfglangotherroot'] = 'Er ontbreekt een configuratiewaarde $CFG->langotherroot';

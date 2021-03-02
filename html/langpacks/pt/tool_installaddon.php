@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_installaddon', language 'pt', version '3.8'.
  *
- * @package   tool_installaddon
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_installaddon
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,9 +33,9 @@ $string['installaddons'] = 'Instalar módulos';
 $string['installfromrepo'] = 'Instalar a partir da diretoria de módulos do Moodle';
 $string['installfromrepo_help'] = 'Será redirecionado para a diretoria de módulos do Moodle para procurar e instalar um módulo. Note que o nome completo do seu site, o URL e a versão Moodle também serão enviados por forma a lhe facilitar o processo de instalação.';
 $string['installfromzip'] = 'Instalar o módulo a partir de ficheiro ZIP';
-$string['installfromzipfile'] = 'Pacote ZIP';
-$string['installfromzipfile_help'] = 'O pacote ZIP do módulo deve conter apenas uma diretoria e ter um nome correspondente ao do módulo. O conteúdo do ficheiro ZIP será extraído numa localização apropriada para o tipo de módulo. Se descarregou o pacote a partir de moodle.org/plugins, então ele terá essa estrutura.';
 $string['installfromzip_help'] = 'Uma alternativa para instalar um módulo diretamente da diretoria de módulos do Moodle é o carregamento de um pacote ZIP do módulo. O pacote ZIP deve ter a mesma estrutura de um pacote descarregado a partir da diretoria de módulos do Moodle.';
+$string['installfromzipfile'] = 'Pacote ZIP';
+$string['installfromzipfile_help'] = 'O pacote ZIP do módulo deve conter apenas uma diretoria e ter um nome correspondente ao do módulo. O conteúdo do ficheiro ZIP será extraído numa localização apropriada para o tipo de módulo. Se descarregou o pacote a partir da diretoria de módulos do Moodle, ele já terá esta estrutura.';
 $string['installfromzipinvalid'] = 'O pacote ZIP do módulo deve conter apenas uma diretoria e ter um nome correspondente ao do módulo. O ficheiro apresentado é um pacote ZIP do módulo inválido .';
 $string['installfromziprootdir'] = 'Alterar o nome da diretoria raiz';
 $string['installfromziprootdir_help'] = 'Alguns pacotes ZIP, tais como os gerados por Github, podem conter um nome de diretoria raiz incorreto. Se assim for, pode introduzir aqui o nome correto.';

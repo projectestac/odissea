@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multichoice', language 'ja', version '3.8'.
  *
- * @package   qtype_multichoice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multichoice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,11 +29,11 @@ $string['answerhowmany'] = '単一または複数解答?';
 $string['answerhowmany_desc'] = 'デフォルトで単一解答 (例 ラジオボタン) にするか複数解答 (例 チェックボックス) にするか指定します。';
 $string['answernumbering'] = '選択肢に番号付けしますか?';
 $string['answernumbering123'] = '1.  2.  3. ...';
-$string['answernumberingabc'] = 'a.  b.  c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
-$string['answernumbering_desc'] = 'デフォルトの番号付けスタイルです。';
-$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
+$string['answernumbering_desc'] = 'デフォルトの番号付けスタイルです。';
+$string['answernumberingabc'] = 'a.  b.  c., ...';
+$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = '番号付けなし';
 $string['answersingleno'] = '複数解答を許可する';
 $string['answersingleyes'] = '単一解答のみ';
@@ -62,9 +62,9 @@ $string['partiallycorrectfeedback'] = '部分的な正解すべてに対する�
 $string['pleaseselectananswer'] = '答えを選択してください。';
 $string['pleaseselectatleastoneanswer'] = '少なくとも1つの答えを選択してください。';
 $string['pluginname'] = '多肢選択問題';
+$string['pluginname_help'] = '問題 (イメージを含む) に対して解答者が複数の答えを選択します。多肢選択問題では1つまたは2つの正解を持つことができます。';
 $string['pluginnameadding'] = '多肢選択問題の追加';
 $string['pluginnameediting'] = '多肢選択問題の編集';
-$string['pluginname_help'] = '問題 (イメージを含む) に対して解答者が複数の答えを選択します。多肢選択問題では1つまたは2つの正解を持つことができます。';
 $string['pluginnamesummary'] = '所定の一覧より単一または複数の解答を選択することができます。';
 $string['privacy:metadata'] = '多肢選択問題タイププラグインはいかなる個人データも保存しません。';
 $string['selectmulti'] = '1つまたはそれ以上選択してください:';

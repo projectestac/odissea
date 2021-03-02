@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'imscp', language 'fr', version '3.8'.
  *
- * @package   imscp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     imscp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,13 +32,13 @@ $string['deploymenterror'] = 'Erreur dans le contenu du paquetage !';
 $string['imscp:addinstance'] = 'Ajouter un paquetage IMS';
 $string['imscp:view'] = 'Consulter les IMS Content';
 $string['indicator:cognitivedepth'] = 'IMS : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Paquetage IMS content.';
 $string['indicator:cognitivedepthdef'] = 'IMS : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « Paquetage IMS » (niveaux : pas de vue, vue).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Paquetage IMS content.';
 $string['indicator:socialbreadth'] = 'IMS : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Paquetage IMS content.';
 $string['indicator:socialbreadthdef'] = 'IMS : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « Paquetage IMS » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource Paquetage IMS content.';
 $string['keepold'] = 'Archiver les paquetages';
 $string['keepoldexplain'] = 'Combien de paquetages doivent être archivés ?';
 $string['modulename'] = 'Paquetage IMS Content';

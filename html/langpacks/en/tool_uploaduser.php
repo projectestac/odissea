@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'en', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,12 +57,13 @@ $string['uploadpicture_cannotsave'] = 'Cannot save picture for user {$a}. Check 
 $string['uploadpicture_cannotunzip'] = 'Cannot unzip pictures file.';
 $string['uploadpicture_invalidfilename'] = 'Picture file {$a} has invalid characters in its name. Skipping.';
 $string['uploadpicture_overwrite'] = 'Overwrite existing user pictures?';
-$string['uploadpictures'] = 'Upload user pictures';
-$string['uploadpictures_help'] = 'User pictures can be uploaded as a zip file of image files. The image files should be named chosen-user-attribute.extension, for example user1234.jpg for a user with username user1234.';
 $string['uploadpicture_userfield'] = 'User attribute to use to match pictures:';
 $string['uploadpicture_usernotfound'] = 'User with a \'{$a->userfield}\' value of \'{$a->uservalue}\' does not exist. Skipping.';
 $string['uploadpicture_userskipped'] = 'Skipping user {$a} (already has a picture).';
 $string['uploadpicture_userupdated'] = 'Picture updated for user {$a}.';
+$string['uploadpictures'] = 'Upload user pictures';
+$string['uploadpictures_help'] = 'User pictures can be uploaded as a zip file of image files. The image files should be named chosen-user-attribute.extension, for example user1234.jpg for a user with username user1234.';
+$string['uploaduser:uploaduserpictures'] = 'Upload user pictures';
 $string['uploadusers'] = 'Upload users';
 $string['uploadusers_help'] = 'Users may be uploaded (and optionally enrolled in courses) via text file. The format of the file should be as follows:
 
@@ -73,7 +74,6 @@ $string['uploadusers_help'] = 'Users may be uploaded (and optionally enrolled in
 $string['uploadusers_link'] = 'admin/tool/uploaduser/index';
 $string['uploaduserspreview'] = 'Upload users preview';
 $string['uploadusersresult'] = 'Upload users results';
-$string['uploaduser:uploaduserpictures'] = 'Upload user pictures';
 $string['useraccountupdated'] = 'User updated';
 $string['useraccountuptodate'] = 'User up-to-date';
 $string['userdeleted'] = 'User deleted';

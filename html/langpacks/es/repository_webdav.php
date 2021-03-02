@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_webdav', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_webdav', language 'es', version '3.8'.
  *
- * @package   repository_webdav
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_webdav
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,12 +30,12 @@ $string['http'] = 'HTTP';
 $string['https'] = 'HTTPS';
 $string['pluginname'] = 'Repositorio WebDAV';
 $string['webdav'] = 'WebDAV';
-$string['webdavbasicauth'] = 'Identificación básica WebDAV';
-$string['webdavdigestauth'] = 'Identificación implícita WebDAV';
+$string['webdav:view'] = 'Ver repositorio WebDAB';
 $string['webdav_password'] = 'Contraseña del servidor WebDAB';
 $string['webdav_path'] = 'Ruta WebDAV';
 $string['webdav_port'] = 'Puerto del servidor WebDAB';
 $string['webdav_server'] = 'Servidor WebDAB';
 $string['webdav_type'] = 'Tipo WebDAV';
 $string['webdav_user'] = 'Usuario del servidor WebDAB';
-$string['webdav:view'] = 'Ver repositorio WebDAB';
+$string['webdavbasicauth'] = 'Identificación básica WebDAV';
+$string['webdavdigestauth'] = 'Identificación implícita WebDAV';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'ja', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -60,9 +60,9 @@ $string['expirymessageenrollersubject'] = '登録期限切れ通知';
 $string['manual:config'] = '手動登録インスタンスを設定する';
 $string['manual:enrol'] = 'ユーザを登録する';
 $string['manual:manage'] = 'ユーザ登録を管理する';
-$string['manualpluginnotinstalled'] = '「手動」プラグインがまだインストールされていません。';
 $string['manual:unenrol'] = 'コースからユーザを登録解除する';
 $string['manual:unenrolself'] = 'コースから自分自身を登録解除する';
+$string['manualpluginnotinstalled'] = '「手動」プラグインがまだインストールされていません。';
 $string['messageprovider:expiry_notification'] = '手動登録期限切れ通知';
 $string['now'] = '今すぐ';
 $string['pluginname'] = '手動登録';
@@ -74,9 +74,9 @@ $string['selectusers'] = 'ユーザを選択する';
 $string['sendexpirynotificationstask'] = '手動登録有効期限切れ通知送信タスク';
 $string['status'] = '手動登録を有効にする';
 $string['status_desc'] = '内部登録済みユーザがコースにアクセスできるようにします。多くの場合、この設定は有効のままにすべきです。';
+$string['status_help'] = 'この設定では教師等の適切なパーミッションを割り当てたユーザをコース管理設定で手動登録できるかどうか指定します。';
 $string['statusdisabled'] = '無効';
 $string['statusenabled'] = '有効';
-$string['status_help'] = 'この設定では教師等の適切なパーミッションを割り当てたユーザをコース管理設定で手動登録できるかどうか指定します。';
 $string['syncenrolmentstask'] = '手動登録タスクを同期する';
 $string['unenrol'] = 'ユーザの登録を解除する';
 $string['unenrolselectedusers'] = '選択したユーザの登録を解除する';

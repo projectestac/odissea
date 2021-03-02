@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'el', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -85,7 +85,7 @@ $string['backupcoursesections'] = 'Τμήματα μαθήματος';
 $string['backupdate'] = 'Ημερομηνία δημιουργίας';
 $string['backupdetails'] = 'Λεπτομέρειες αντιγράφου ασφαλείας';
 $string['backupdetailsnonstandardinfo'] = 'Το επιλεγμένο αρχείο δεν είναι τυπικό αρχείο αντιγράφου ασφαλείας του Moodle. Η διαδικασία επαναφοράς θα προσπαθήσει να μετατρέψει το αρχείο αντιγράφου ασφαλείας σε τυποποιημένη μορφή και στη συνέχεια να το επαναφέρει.';
-$string['backupformat'] = 'Μορφότυπος';
+$string['backupformat'] = 'Μορφή';
 $string['backupformatimscc1'] = 'IMS Common Cartridge 1.0';
 $string['backupformatimscc11'] = 'IMS Common Cartridge 1.1';
 $string['backupformatmoodle1'] = 'Moodle 1';
@@ -122,6 +122,12 @@ $string['choosefilefromcoursebackup'] = 'Περιοχή αντιγράφων α�
 $string['choosefilefromcoursebackup_help'] = 'Όταν χρησιμοποιούνται οι προεπιλεγμένες ρυθμίσεις για τα αντίγραφα ασφαλείας των μαθημάτων, τα αντίγραφα ασφαλείας θα αποθηκεύονται εδώ.';
 $string['choosefilefromuserbackup'] = 'Προσωπική περιοχή αντιγράφων ασφαλείας χρήστη';
 $string['choosefilefromuserbackup_help'] = 'Τα αρχεία αντιγράφων ασφαλείας με ανώνυμες πληροφορίες χρήστη αποθηκεύονται εδώ.';
+$string['config_keep_groups_and_groupings'] = 'Από προεπιλογή, διατηρήστε τις τρέχουσες ομάδες και τις ομαδοποιήσεις.';
+$string['config_keep_roles_and_enrolments'] = 'Από προεπιλογή, διατηρήστε τους τρέχοντες ρόλους και εγγραφές.';
+$string['config_overwrite_conf'] = 'Επιτρέπει στο χρήστη να αντικαταστήσει τις τρέχουσες ρυθμίσεις μαθήματος';
+$string['config_overwrite_course_fullname'] = 'Από προεπιλογή, αντικαταστήστε το πλήρες όνομα του μαθήματος με αυτό από το αρχείο αντιγράφου ασφαλείας. Αυτό απαιτεί την ενεργοποίηση της επιλογής «Αντικατάσταση ρυθμίσεων μαθήματος» και να έχει την δυνατότητα ο τρέχοντας χρήστης να αλλάξει το πλήρες όνομα του μαθήματος (moodle/course:changefullname)';
+$string['config_overwrite_course_shortname'] = 'Από προεπιλογή, αντικαταστήστε το σύντομο όνομα του μαθήματος με αυτό από το αρχείο αντιγράφου ασφαλείας. Αυτό απαιτεί την ενεργοποίηση της επιλογής «Αντικατάσταση ρυθμίσεων μαθήματος» και να έχει την δυνατότητα ο τρέχοντας χρήστης να αλλάξει το σύντομο όνομα του μαθήματος (moodle/course:changeshortname)';
+$string['config_overwrite_course_startdate'] = 'Από προεπιλογή, αντικαταστήστε την ημερομηνία έναρξης του μαθήματος με αυτό από το αρχείο αντιγράφου ασφαλείας. Αυτό απαιτεί την ενεργοποίηση της επιλογής «Αντικατάσταση ρυθμίσεων μαθήματος» και να έχει την δυνατότητα ο τρέχοντας χρήστης να αλλάξει τις ημερομηνίες του μαθήματος κατά την επαναφορά (moodle/restore:rolldates)';
 $string['configgeneralactivities'] = 'Ορίζει την προεπιλογή για την συμπερίληψη δραστηριοτήτων στα αντίγραφα ασφαλείας.';
 $string['configgeneralanonymize'] = 'Αν ενεργοποιηθεί όλες οι πληροφορίες σχετικά με τους χρήστες θα είναι ανώνυμες από προεπιλογή.';
 $string['configgeneralbadges'] = 'Ορίζει την προεπιλογή για την συμπερίληψη διακριτικών στα αντίγραφα ασφαλείας.';
@@ -138,13 +144,7 @@ $string['configgeneralquestionbank'] = 'Εάν ενεργοποιηθεί, η τ
 $string['configgeneralroleassignments'] = 'Αν ενεργοποιηθεί από προεπιλογή θα προστεθούν επίσης στα αντίγραφα ασφαλείας οι αναθέσεις ρόλων.';
 $string['configgeneralusers'] = 'Ορίζει την προεπιλογή για το αν θα συμπεριλαμβάνονται οι χρήστες στα αντίγραφα ασφαλείας.';
 $string['configgeneraluserscompletion'] = 'Εάν ενεργοποιηθεί, οι πληροφορίες ολοκλήρωσης ενός χρήστη θα περιλαμβάνονται στα αντίγραφα ασφαλείας από προεπιλογή.';
-$string['config_keep_groups_and_groupings'] = 'Από προεπιλογή, διατηρήστε τις τρέχουσες ομάδες και τις ομαδοποιήσεις.';
-$string['config_keep_roles_and_enrolments'] = 'Από προεπιλογή, διατηρήστε τους τρέχοντες ρόλους και εγγραφές.';
 $string['configloglifetime'] = 'Καθορίζει το χρονικό διάστημα που θέλετε να διατηρήσετε πληροφορίες καταγραφών αντιγράφων ασφαλείας. Παλαιότερες καταγραφές διαγράφονται αυτόματα. Συνιστάται να διατηρείται αυτή η τιμή μικρή, επειδή οι καταγραφές αντιγράφων ασφαλείας μπορεί να είναι τεράστιες.';
-$string['config_overwrite_conf'] = 'Επιτρέπει στο χρήστη να αντικαταστήσει τις τρέχουσες ρυθμίσεις μαθήματος';
-$string['config_overwrite_course_fullname'] = 'Από προεπιλογή, αντικαταστήστε το πλήρες όνομα του μαθήματος με αυτό από το αρχείο αντιγράφου ασφαλείας. Αυτό απαιτεί την ενεργοποίηση της επιλογής «Αντικατάσταση ρυθμίσεων μαθήματος» και να έχει την δυνατότητα ο τρέχοντας χρήστης να αλλάξει το πλήρες όνομα του μαθήματος (moodle/course:changefullname)';
-$string['config_overwrite_course_shortname'] = 'Από προεπιλογή, αντικαταστήστε το σύντομο όνομα του μαθήματος με αυτό από το αρχείο αντιγράφου ασφαλείας. Αυτό απαιτεί την ενεργοποίηση της επιλογής «Αντικατάσταση ρυθμίσεων μαθήματος» και να έχει την δυνατότητα ο τρέχοντας χρήστης να αλλάξει το σύντομο όνομα του μαθήματος (moodle/course:changeshortname)';
-$string['config_overwrite_course_startdate'] = 'Από προεπιλογή, αντικαταστήστε την ημερομηνία έναρξης του μαθήματος με αυτό από το αρχείο αντιγράφου ασφαλείας. Αυτό απαιτεί την ενεργοποίηση της επιλογής «Αντικατάσταση ρυθμίσεων μαθήματος» και να έχει την δυνατότητα ο τρέχοντας χρήστης να αλλάξει τις ημερομηνίες του μαθήματος κατά την επαναφορά (moodle/restore:rolldates)';
 $string['configrestoreactivities'] = 'Ορίζει τις προεπιλεγμένες ρυθμίσεις για την επαναφορά δραστηριοτήτων.';
 $string['configrestorebadges'] = 'Ορίζει την προεπιλογή για την επαναφορά διακριτικών (από αντίγραφα ασφαλείας).';
 $string['configrestoreblocks'] = 'Ορίζει την προεπιλογή για την επαναφορά των μπλοκ.';
@@ -180,8 +180,8 @@ $string['enableasyncbackup'] = 'Ενεργοποίηση ασύγχρονων α
 $string['enableasyncbackup_help'] = 'Αν ενεργοποιηθεί, όλες οι λειτουργίες δημιουργίας και επαναφοράς αντιγράφων ασφαλείας θα γίνονται ασύγχρονα. Αυτό δεν επηρεάζει τις εισαγωγές και τις εξαγωγές. Τα ασύγχρονα αντίγραφα ασφαλείας και οι επαναφορές επιτρέπουν στους χρήστες να πραγματοποιούν άλλες λειτουργίες ενώ εκτελείται η δημιουργία ή η επαναφορά των αντιγράφων αυτών.';
 $string['enterasearch'] = 'Εισάγετε μια αναζήτηση';
 $string['error_block_for_module_not_found'] = 'Βρέθηκε ορφανό στιγμιότυπο μπλοκ (αναγνωριστικό: {$a->bid}) για το άρθρωμα αναγνωριστικό(id: {$a->mid}). Αυτό το μπλοκ δεν θα συμπεριληφθεί στο αντίγραφο ασφαλείας.';
-$string['errorcopyingbackupfile'] = 'Αποτυχία αντιγραφής του αρχείου αντιγράφου ασφαλείας στον προσωρινό φάκελο πριν την επαναφορά.';
 $string['error_course_module_not_found'] = 'Βρέθηκε ορφανό άρθρωμα μαθήματος (αναγνωριστικό: {$a}). Αυτό το άρθρωμα δεν θα συμπεριληφθεί στο αντίγραφο ασφαλείας.';
+$string['errorcopyingbackupfile'] = 'Αποτυχία αντιγραφής του αρχείου αντιγράφου ασφαλείας στον προσωρινό φάκελο πριν την επαναφορά.';
 $string['errorfilenamemustbezip'] = 'Το όνομα αρχείου που εισάγετε πρέπει να είναι ένα αρχείο ZIP και να έχει την επέκταση .mbz';
 $string['errorfilenamerequired'] = 'Θα πρέπει να εισάγετε ένα έγκυρο όνομα αρχείου για το αντίγραφο ασφαλείας';
 $string['errorfilenametoolong'] = 'Το όνομα αρχείου πρέπει να έχει μήκος μικρότερο από 255 χαρακτήρες.';
@@ -193,8 +193,8 @@ $string['executionsuccess'] = 'Το αρχείο αντιγράφου ασφαλ
 $string['failed'] = 'Η δημιουργία αντιγράφων ασφαλείας απέτυχε';
 $string['filealiasesrestorefailures'] = 'Αποτυχίες επαναφοράς ψευδώνυμων';
 $string['filealiasesrestorefailures_help'] = 'Τα ψευδώνυμα είναι συμβολικοί σύνδεσμοι σε άλλα αρχεία, συμπεριλαμβανομένων εκείνων που είναι αποθηκευμένα σε εξωτερικά αποθετήρια. Σε ορισμένες περιπτώσεις, το Moodle δεν μπορεί να τα επαναφέρει - για παράδειγμα, όταν η γίνεται επαναφορά του αντιγράφου ασφαλείας σε ένα άλλο ιστότοπο ή όταν δεν υπάρχει το αναφερόμενο αρχείο. Περισσότερες λεπτομέρειες και η πραγματική αιτία της αποτυχίας μπορεί να βρεθεί στο αρχείο καταγραφής της επαναφοράς.';
-$string['filealiasesrestorefailuresinfo'] = 'Δεν είναι δυνατή η επαναφορά μερικών ψευδώνυμων που περιλαμβάνονται στο αρχείο αντιγράφου ασφαλείας. Η ακόλουθη λίστα περιέχει την αναμενόμενη τοποθεσία τους και το αρχείο προέλευσης που αναφέρονταν στον αρχικό ιστότοπο.';
 $string['filealiasesrestorefailures_link'] = 'επαναφορά/ψευδώνυμααρχείου';
+$string['filealiasesrestorefailuresinfo'] = 'Δεν είναι δυνατή η επαναφορά μερικών ψευδώνυμων που περιλαμβάνονται στο αρχείο αντιγράφου ασφαλείας. Η ακόλουθη λίστα περιέχει την αναμενόμενη θέση τους και το αρχείο προέλευσης που αναφέρονταν στον αρχικό ιστότοπο.';
 $string['filename'] = 'Όνομα αρχείου';
 $string['filereferencesincluded'] = 'Οι αναφορές αρχείων σε εξωτερικό περιεχόμενο περιλαμβάνονται στο αρχείο αντιγράφου ασφαλείας. Αυτές δεν θα λειτουργούν αν γίνει επαναφορά του αντιγράφου ασφαλείας σε διαφορετικό ιστότοπο.';
 $string['filereferencesnotsamesite'] = 'Το αρχείο αντιγράφου ασφαλείας είναι από διαφορετικό ιστότοπο, οπότε δεν είναι εφικτή η επαναφορά αναφορών αρχείων.';
@@ -274,14 +274,14 @@ $string['pendingasyncerror'] = 'Εκκρεμεί δημιουργία αντιγ
 $string['preparingdata'] = 'Προετοιμασία δεδομένων';
 $string['preparingui'] = 'Προετοιμασία εμφάνισης σελίδας';
 $string['previousstage'] = 'Προηγούμενο';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Αυτό το αρχείο μπορεί να περιέχει διάφορα δεδομένα χρήστη σχετικά με ένα μάθημα, όπως βαθμοί, εγγραφές χρηστών και δεδομένα δραστηριότητας.';
+$string['privacy:metadata:backup:externalpurpose'] = 'Ο σκοπός αυτού του αρχείου είναι η αποθήκευση πληροφοριών σχετικά με ένα μάθημα, του οποίου μπορεί να γίνει επαναφορά στο μέλλον.';
 $string['privacy:metadata:backup_controllers'] = 'Η λίστα των εργασιών δημιουργίας αντιγράφων ασφαλείας';
 $string['privacy:metadata:backup_controllers:itemid'] = 'Το αναγνωριστικό του μαθήματος';
 $string['privacy:metadata:backup_controllers:operation'] = 'Η λειτουργία που εκτελέστηκε, π.χ. επαναφορά.';
 $string['privacy:metadata:backup_controllers:timecreated'] = 'Η ώρα κατά την οποία δημιουργήθηκε η ενέργεια';
 $string['privacy:metadata:backup_controllers:timemodified'] = 'Πότε τροποποιήθηκε η ενέργεια';
 $string['privacy:metadata:backup_controllers:type'] = 'Ο τύπος του στοιχείου που χρησιμοποιείται, π.χ. δραστηριότητα.';
-$string['privacy:metadata:backup:detailsofarchive'] = 'Αυτό το αρχείο μπορεί να περιέχει διάφορα δεδομένα χρήστη σχετικά με ένα μάθημα, όπως βαθμοί, εγγραφές χρηστών και δεδομένα δραστηριότητας.';
-$string['privacy:metadata:backup:externalpurpose'] = 'Ο σκοπός αυτού του αρχείου είναι η αποθήκευση πληροφοριών σχετικά με ένα μάθημα, του οποίου μπορεί να γίνει επαναφορά στο μέλλον.';
 $string['qcategory2coursefallback'] = 'Η κατηγορία ερωτήσεων «{$a->name}», αρχικά στο πλαίσιο σύστημα/κατηγορία μαθημάτων στο αρχείο αντιγράφου ασφαλείας, θα δημιουργηθεί στο πλαίσιο μαθήματος κατά την επαναφορά';
 $string['qcategorycannotberestored'] = 'Δεν είναι δυνατή η δημιουργία της κατηγορίας ερωτήσεων «{$a->name}» κατά την επαναφορά';
 $string['question2coursefallback'] = 'Η κατηγορία ερωτήσεων «{$a->name}», αρχικά στο πλαίσιο σύστημα/κατηγορία μαθημάτων στο αρχείο αντιγράφου ασφαλείας, θα δημιουργηθεί στο πλαίσιο μαθήματος κατά την επαναφορά';
@@ -358,8 +358,8 @@ $string['selectacourse'] = 'Επιλογή ενός μαθήματος';
 $string['setting_course_fullname'] = 'Όνομα μαθήματος';
 $string['setting_course_shortname'] = 'Σύντομο όνομα μαθήματος';
 $string['setting_course_startdate'] = 'Ημερομηνία έναρξης μαθήματος';
-$string['setting_keep_groups_and_groupings'] = 'Διατήρηση τρεχόντων ομάδων και ομαδοποιήσεων';
-$string['setting_keep_roles_and_enrolments'] = 'Διατήρηση τρεχόντων ρόλων και εγγραφών';
+$string['setting_keep_groups_and_groupings'] = 'Διατήρηση τρέχοντων ομάδων και ομαδοποιήσεων';
+$string['setting_keep_roles_and_enrolments'] = 'Διατήρηση τρέχοντων ρόλων και εγγραφών';
 $string['setting_overwrite_conf'] = 'Αντικατάσταση ρυθμίσεων μαθήματος';
 $string['setting_overwrite_course_fullname'] = 'Αντικαταστήστε το πλήρες όνομα του μαθήματος';
 $string['setting_overwrite_course_shortname'] = 'Αντικαταστήστε το σύντομο όνομα του μαθήματος';

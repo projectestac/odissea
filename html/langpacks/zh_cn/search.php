@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'search', language 'zh_cn', version '3.8'.
  *
- * @package   search
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     search
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,6 +54,7 @@ $string['documentsinindex'] = '索引中的文档';
 $string['duration'] = '周期';
 $string['emptydatabaseerror'] = '数据表不存在，或不包含索引记录。';
 $string['enginenotfound'] = '没有找到{$a}引擎';
+$string['enginenotinstalled'] = '没有安装{$a}。';
 $string['engineserverstatus'] = '搜索引擎无法使用，请联系你的管理员';
 $string['enteryoursearchquery'] = '输入搜索条件';
 $string['errorareanotavailable'] = '{$a} 搜索范围无法使用';
@@ -82,9 +83,9 @@ $string['runindexer'] = '运行索引（真实）';
 $string['runindexertest'] = '运行索引测试';
 $string['score'] = '得分';
 $string['search'] = '搜索';
+$string['search:mycourse'] = '我的课程';
 $string['searcharea'] = '搜索范围';
 $string['searching'] = '搜索中……';
-$string['search:mycourse'] = '我的课程';
 $string['searchnotpermitted'] = '你未被批准使用搜索';
 $string['searchsetupdescription'] = '下列步骤可以帮助你设置Moodle全站搜索';
 $string['seconds'] = '秒';

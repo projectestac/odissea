@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,88 +12,97 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio', language 'sv', version '3.8'.
  *
- * @package   portfolio
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activeportfolios'] = 'Tillgängliga portfolios';
-$string['addalltoportfolio'] = 'Exportera allt till portfolio';
-$string['addnewportfolio'] = 'Lägg till en ny portfolio';
-$string['addtoportfolio'] = 'Exportera till portfolio';
-$string['availableformats'] = 'Tillgängliga format för export';
+$string['activeexport'] = 'Lös aktiv export';
+$string['activeportfolios'] = 'Tillgängliga portföljer';
+$string['addalltoportfolio'] = 'Exportera allt till portfölj';
+$string['addnewportfolio'] = 'Lägg till ny portfölj';
+$string['addtoportfolio'] = 'Exportera till portfölj';
+$string['alreadyalt'] = 'Exporterar redan. Vänligen klicka för att lösa denna överföring';
+$string['alreadyexporting'] = 'Du har redan en pågående portföljexport i den här sessionen. Innan du fortsätter måste du antingen slutföra den här exporten, eller avbryta den. Vill du fortsätta med exporten? (Nej kommer att avbryta den)';
+$string['availableformats'] = 'Tillgängliga exportformat';
 $string['callbackclassinvalid'] = 'Den klass \'callback\' som angavs var ogiltig eller inte del av hierarkin för \'portfolio_caller\'';
-$string['callercouldnotpackage'] = 'Det gick inte att packa upp Dina data för export: det ursprungliga felet var {$a}';
-$string['cannotsetvisible'] = 'Det går inte att ställa in det här till synlig - plugin-programmet har avaktiverats helt p g a felaktig konfiguration';
-$string['commonportfoliosettings'] = 'Vanliga inställningar för portfolio';
-$string['commonsettingsdesc'] = '<p>Om en överföring anses ta godtagbar eller lång tid beror på om användaren kan vänta eller inte tills överföringen är klar.</p><p>Storlekar upp till värdet för godtagbar tid händer direkt utan att användaren tillfrågas, och godtagbar resp. lång överföringstid innebär att de erbjuds möjligheten men varnas för att det kan ta lite tid.</p><p>Dessutom kan vissa portfolioplugins ignorera denna inställning totalt och tvinga alla överföringar att ställas i kö.</p>';
+$string['callercouldnotpackage'] = 'Det gick inte att packa upp dina data för export: det ursprungliga felet var {$a}';
+$string['cannotsetvisible'] = 'Det går inte att ställa in det här till synlig - plugin-programmet har inaktiverats helt p g a felaktig konfiguration';
+$string['commonportfoliosettings'] = 'Generella portföljinställningar';
+$string['commonsettingsdesc'] = '<p>Om en överföring anses ta godtagbar eller lång tid beror på om användaren kan vänta eller inte tills överföringen är klar.</p><p>Storlekar upp till värdet för godtagbar tid händer direkt utan att användaren tillfrågas, och godtagbar resp. lång överföringstid innebär att de erbjuds möjligheten men varnas för att det kan ta lite tid.</p><p>Dessutom kan vissa portföljpkugins ignorera denna inställning totalt och tvinga alla överföringar att ställas i kö.</p>';
 $string['configexport'] = 'Konfigurera exporterade data';
-$string['configplugin'] = 'Konfigurera plugin-program för portfolio';
+$string['configplugin'] = 'Konfigurera portfölj-plugin';
 $string['configure'] = 'Konfigurera';
-$string['confirmcancel'] = 'Är Du säker på att Du vill avbryta den här exporten?';
+$string['confirmcancel'] = 'Är du säker på att du vill avbryta den här exporten?';
 $string['confirmexport'] = 'Var snäll och bekräfta den här exporten';
-$string['confirmsummary'] = 'Sammanfattning av Din export';
-$string['continuetoportfolio'] = 'Fortsätt till Din portfolio';
-$string['deleteportfolio'] = 'Ta bort instans av portfolio';
-$string['destination'] = 'Destination';
-$string['disabled'] = 'Export av portfolio är inte aktiverade på den här webbplatsen';
-$string['disabledinstance'] = 'Avaktiverad';
+$string['confirmsummary'] = 'Sammanfattning av din export';
+$string['continuetoportfolio'] = 'Fortsätt till din portfölj';
+$string['deleteportfolio'] = 'Ta bort portföljinstans';
+$string['destination'] = 'Mål';
+$string['disabled'] = 'Export av portföljer är inte aktiverade på den här webbplatsen';
+$string['disabledinstance'] = 'Inaktiverad';
 $string['displayarea'] = 'Område för export';
-$string['displayexpiry'] = 'Överför utgående tid';
+$string['displayexpiry'] = 'Förfallotid för överföring';
 $string['displayinfo'] = 'Info om export';
 $string['dontwait'] = 'Vänta inte';
-$string['enabled'] = 'Aktivera portfolios';
+$string['enabled'] = 'Aktivera portföljer';
 $string['enableddesc'] = 'Det här kommer att tillåta administratörer att konfigurera fjärrsystem som användare kan exportera innehåll till';
-$string['err_uniquename'] = 'Namnet på portfolion måste vara unikt (per plugin-program)';
-$string['exportalreadyfinished'] = 'Exporten av portfolio är fullföljd!';
-$string['exportcomplete'] = 'Exporten av portfolio är fullföljd!';
+$string['err_uniquename'] = 'Namnet på portföljen måste vara unikt (per plugin-program)';
+$string['exportalreadyfinished'] = 'Portföljexport slutförd!';
+$string['exportalreadyfinisheddesc'] = 'Portföljexport slutförd!';
+$string['exportcomplete'] = 'Portföljexport slutförd!';
 $string['exportedpreviously'] = 'Tidigare exporter';
-$string['exportexpired'] = 'Exporten av portfolio gick ut';
-$string['exporting'] = 'Exporterar till portfolio';
+$string['exportexpired'] = 'Exporten av portföljen förföll';
+$string['exportexpireddesc'] = 'Du försökte upprepa exporten av viss information, eller starta en tom export. För att göra det på rätt sätt bör du gå tillbaka till den ursprungliga platsen och börja om igen. Detta händer ibland om du använder bakåtknappen efter att en export har slutförts, eller genom att bokmärka en ogiltig url.';
+$string['exporting'] = 'Exporterar till portfölj';
 $string['exportingcontentfrom'] = 'Exporterar innehåll från {$a}';
 $string['exportingcontentto'] = 'Exporterar innehåll till {$a}';
-$string['exportqueued'] = 'Portfolioexport har framgångsrikt köats för överföring';
-$string['exportqueuedforced'] = 'Portfolioexport har framgångsrikt köats för överföring (fjärrsystemet har tvingat köade överföringar)';
+$string['exportqueued'] = 'Portföljexporten har lagts till i kön och väntar på att överföras';
+$string['exportqueuedforced'] = 'Portföljexporten har lagts till i kön och väntar på att överföras (mottagarsystemet kräver köade överföringar)';
 $string['failedtopackage'] = 'Det gick inte att hitta filer till paketet';
-$string['filedenied'] = 'Tillgång nekas till filen';
+$string['failedtosendpackage'] = 'Kunde inte skicka din data till vald portföljmottagare: det ursprungliga felet var {$a}';
+$string['filedenied'] = 'Tillträdet nekas till denna fil';
 $string['filenotfound'] = 'Det gick inte att hitta filen';
 $string['fileoutputnotsupported'] = 'Omskrivning av filresultatet stöds inte för detta format';
 $string['format_document'] = 'Dokument';
 $string['format_file'] = 'Fil';
 $string['format_image'] = 'Bild';
-$string['format_leap2a'] = 'Leap2A portfolio format';
+$string['format_leap2a'] = 'Leap2A portföljformat';
 $string['format_mbkp'] = 'Moodle Backup Format';
 $string['format_pdf'] = 'PDF';
 $string['format_plainhtml'] = 'HTML';
 $string['format_presentation'] = 'Presentation';
 $string['format_richhtml'] = 'HTML med bilagor';
 $string['format_spreadsheet'] = 'Kalkylblad';
-$string['format_text'] = 'Vanlig text';
+$string['format_text'] = 'Ren text';
 $string['format_video'] = 'Video';
 $string['highdbsizethreshold'] = 'Hög överföring dbstorlek';
 $string['highdbsizethresholddesc'] = 'Antal db poster vilka kommer att anses ta lång tid att överföra';
 $string['highfilesizethreshold'] = 'Filstorlek hög överföringshastighet';
 $string['highfilesizethresholddesc'] = 'Filstorlekar över detta tröskelvärde kommer att anses ta lång tid att överföra';
-$string['insanebody'] = 'Hej! Du får detta meddelande eftersom du är administratör för {$a->sitename}. Någon portfolioplugin instans har automatiskt avaktiverats på grund av felkonfiguration. Detta innebär att användare för närvarande inte kan exportera innehåll till dessa prtfolios. Listan över portfolioinstanser som har avaktiverats är: {$a->textlist} Detta bör åtgärdas snarast möjligt genom att besöka {$a->fixurl}.';
-$string['insanebodyhtml'] = '<p>Hej! Du får detta meddelande eftersom du är administratör för {$a->sitename}.</p> <p>Någon instans av portfolioplugin har automatiskt avaktiverats på grund av felkonfiguration. Detta innebär att användare för närvarande inte kan exportera innehåll till dessa portfolios.</p> <p>Listan över instanser av portfolioplugins som har avaktiverats är:</p> {$a->htmllist} <p>Detta bör åtgärdas snarast möjligt genom att besöka <a href="{$a->fixurl}">sidorna för konfiguration av portfolio</a></p>';
-$string['insanebodysmall'] = 'Hej! Du får detta meddelande eftersom du är administratör för {$a->sitename}. Någon instans av portfolio plugin har automatiskt avaktiverats på grund av felkonfiguration. Detta innebär att användare för närvarande inte kan exportera innehåll till dessa portfolios. Detta bör åtgärdas snarast möjligt genom att besöka {$a->fixurl}.';
-$string['insanesubject'] = 'Några portfolioinstanser har avaktiverats automatiskt';
-$string['instancedeleted'] = 'Portfolio borttaget';
-$string['instanceismisconfigured'] = 'Portfolio instansen är felkonfigurerad, hoppar över. Felet var: {$a}';
-$string['instancenotsaved'] = 'Misslyckades att spara portfolio';
-$string['instancesaved'] = 'Portfolio sparat';
+$string['insanebody'] = 'Hej! Du får detta meddelande eftersom du är administratör för {$a->sitename}. Någon portföljplugin instans har automatiskt inaktiverats på grund av felkonfiguration. Detta innebär att användare för närvarande inte kan exportera innehåll till dessa portföljer. Listan över portföljinstanser som har inaktiverats är: {$a->textlist} Detta bör åtgärdas snarast möjligt genom att besöka {$a->fixurl}.';
+$string['insanebodyhtml'] = '<p>Hej! Du får detta meddelande eftersom du är administratör för {$a->sitename}.</p> <p>Någon instans av portföljplugin har automatiskt inaktiverats på grund av felkonfiguration. Detta innebär att användare för närvarande inte kan exportera innehåll till dessa portföljer.</p> <p>Listan över instanser av portföljplugins som har inaktiverats är:</p> {$a->htmllist} <p>Detta bör åtgärdas snarast möjligt genom att besöka <a href="{$a->fixurl}">sidorna för konfiguration av portföljer</a></p>';
+$string['insanebodysmall'] = 'Hej! Du får detta meddelande eftersom du är administratör för {$a->sitename}. Någon instans av portfölj plugin har automatiskt inaktiverats på grund av felkonfiguration. Detta innebär att användare för närvarande inte kan exportera innehåll till dessa portföljer. Detta bör åtgärdas snarast möjligt genom att besöka {$a->fixurl}.';
+$string['insanesubject'] = 'Vissa portföljinstanser har inaktiverats automatiskt';
+$string['instancedeleted'] = 'Portfölj borttagen';
+$string['instanceismisconfigured'] = 'Portföljinstansen är felkonfigurerad, hoppar över. Felet var: {$a}';
+$string['instancenotdelete'] = 'Kunde inte ta bort portfölj';
+$string['instancenotsaved'] = 'Kunde inte spara portfölj';
+$string['instancesaved'] = 'Portfölj sparad';
+$string['intro'] = 'Innehåll som du har skapat, till exempel inlämningsuppgifter, foruminlägg och blogginlägg, kan exporteras till en portfölj eller laddas ner. <br> Alla portföljer som du inte vill använda kan döljas så att den inte är listad som ett alternativ att exportera innehåll till.';
 $string['invalidbuttonproperty'] = 'Kunde inte hitta denna egenskap ({$a}) för portfolio_button';
 $string['invalidconfigproperty'] = 'Kunde inte hitta den konfigureringsegenskapen ({$a->property} för {$a->class})';
 $string['invalidexportproperty'] = 'Kunde inte hitta den egenskapen för exportkonfigration ({$a->property} för {$a->class})';
 $string['invalidformat'] = 'Något exporterar ett felaktigt format, {$a}';
-$string['invalidinstance'] = 'Kunde inte hitta denna instans av portfolio';
+$string['invalidinstance'] = 'Kunde inte hitta denna portföljinstans';
 $string['invalidproperty'] = 'Kunde inte hitta denna egenskap ({$a->property} för {$a->class})';
 $string['invalidtempid'] = 'Felaktigt export id. Det kanske är för gammalt.';
 $string['invaliduserproperty'] = 'Kunde inte hitta denna egenskap för användarkonfiguration ({$a->property} för {$a->class})';
@@ -110,42 +118,49 @@ $string['leap2a_overwritingselection'] = 'Skriver över orginaltypen för en pos
 $string['leap2a_selflink'] = 'En Leap2A post ({$a->id}) försökte länka till sig själv med rel {$a->rel}';
 $string['logs'] = 'Överföringsloggar';
 $string['logsummary'] = 'Tidigare framgångsrika överföringar';
-$string['manageportfolios'] = 'Hantera portfolios';
-$string['manageyourportfolios'] = 'Hantera dina portfolios';
-$string['mimecheckfail'] = 'Portfoliopluginen {$a->plugin} stödjer inte denna MIME-typ {$a->mimetype}';
+$string['manageportfolios'] = 'Hantera portföljer';
+$string['manageyourportfolios'] = 'Hantera dina portföljer';
+$string['mimecheckfail'] = 'Portföljpluginen {$a->plugin} stödjer inte denna MIME-typ {$a->mimetype}';
 $string['missingcallbackarg'] = 'Saknat callback argument {$a->arg} för klass {$a->class}';
 $string['moderatedbsizethreshold'] = 'Dbstorlek för måttlig överföringshastighet';
 $string['moderatedbsizethresholddesc'] = 'Antal db poster som kommer att anses ta måttlig tid att överföra';
 $string['moderatefilesizethreshold'] = 'Filstorlek för måttlig överföringshastighet';
 $string['moderatefilesizethresholddesc'] = 'Filstorlekar över detta tröskelvärde kommer att anses ta måttlig tid att överföra';
 $string['multipleinstancesdisallowed'] = 'Försöker skapa en ny instans av en plugin som inte tillåter multipla instanser ({$a})';
-$string['noavailableplugins'] = 'Tyvärr, det finns inga tillgängliga portfolios för dig att exportera till';
+$string['noavailableplugins'] = 'Tyvärr, det finns inga tillgängliga portföljer för dig att exportera till';
 $string['nocallbackclass'] = 'Kunde inte hitta klassen för callback som ska användas ({$a})';
+$string['nocallbackfile'] = 'Något i modulen du försöker exportera från är fel - kunde inte hitta en lämplig portföljfil.';
 $string['noclassbeforeformats'] = 'Du måste ställa in callback klassen före anrop av set_formats in portfolio_button';
-$string['noinstanceyet'] = 'Ännu inte valt';
+$string['noinstanceyet'] = 'Ännu ej valt';
 $string['nologs'] = 'Det finns inga loggar att visa!';
-$string['nomultipleexports'] = 'Tyvärr, portfoliodestinationen ({$a->plugin}) stödjer inte multipla exporter på samma gång. Vänligen <a href="{$a->link}">avsluta nuvarande först</a> och försök sedan igen';
+$string['nomultipleexports'] = 'Tyvärr, exportmålet för portföljen ({$a->plugin}) stödjer inte multipla exporter på samma gång. Vänligen <a href="{$a->link}">avsluta nuvarande först</a> och försök sedan igen';
 $string['nonprimative'] = 'Ett icke primitivt värde skickades som ett callback argument till portfolio_add_button. Kan inte fortsätta. Nyckel var {$a->key} och värdet var {$a->value}';
 $string['nopermissions'] = 'Du har tyvärr inte tillräckliga rättigheter för att exportera filer från den här platsen';
 $string['notexportable'] = 'Den typ av innehåll du försöker exportera är tyvärr inte exporterbart';
 $string['notimplemented'] = 'Du försöker exportera innehåll i något format som tyvärr ännu inte är implementerat ({$a})';
-$string['notyetselected'] = 'Ännu inte vald';
+$string['notyetselected'] = 'Ännu ej vald';
 $string['notyours'] = 'Du försöker återuppta en portfolioexport som inte tillhör dig!';
+$string['nouploaddirectory'] = 'Kunde inte skapa temporär katalog att skapa datapaketet i';
 $string['off'] = 'Aktiverad men dold';
 $string['on'] = 'Aktiverad och synlig';
-$string['plugin'] = 'Portfolio plugin';
+$string['plugin'] = 'Portföljplugin';
 $string['plugincouldnotpackage'] = 'Misslyckades med att packa din data för export: ursprungligt fel var {$a}';
-$string['pluginismisconfigured'] = 'Portfolio pluginen är felkonfigurerad, hoppar över. Felet var: {$a}';
-$string['portfolio'] = 'Portfolio';
-$string['portfolios'] = 'Portfolios';
-$string['queuesummary'] = 'Nuvarande köade överföringar';
+$string['pluginismisconfigured'] = 'Portföljpluginen är felkonfigurerad, hoppar över. Felet var: {$a}';
+$string['portfolio'] = 'Portfölj';
+$string['portfolios'] = 'Portföljer';
+$string['privacy:metadata:instance'] = 'Portföljidentifierare';
+$string['privacy:metadata:name'] = 'Inställningsnamn';
+$string['privacy:metadata:portfolio_tempdata:data'] = 'Exportdata';
+$string['privacy:metadata:userid'] = 'Användar-ID';
+$string['queuesummary'] = 'Aktuella köade överföringar';
 $string['returntowhereyouwere'] = 'Återgå till där du var';
 $string['save'] = 'Spara';
-$string['selectedformat'] = 'Välj exportformat';
+$string['selectedformat'] = 'Valt exportformat';
 $string['selectedwait'] = 'Valde att vänta?';
-$string['selectplugin'] = 'Valde att vänta?';
-$string['singleinstancenomultiallowed'] = 'Endast en instans av portfolio plugin är tillgänglig och den stödjer inte multipla exporter per session. Det finns redan en aktiv export i sessionen som använder denna plugin!';
-$string['somepluginsdisabled'] = 'Några hela portfolio plugins har avaktiverats på grund av att de är felkonfigurerade eller är beroende av något annat som är det:';
+$string['selectplugin'] = 'Välj mål';
+$string['showhide'] = 'Visa / Dölj';
+$string['singleinstancenomultiallowed'] = 'Endast en instans av portfölj plugin är tillgänglig och den stödjer inte multipla exporter per session. Det finns redan en aktiv export i sessionen som använder denna plugin!';
+$string['somepluginsdisabled'] = 'Vissa portfölj pluginmoduler har inaktiverats på grund av att de är felkonfigurerade eller är beroende av något annat som är:';
 $string['sure'] = 'Är du säker på att du vill ta bort \'{$a}? Detta kan inte ångras.';
 $string['transfertime'] = 'Överföringstiden';
 $string['unknownplugin'] = 'Okänd (kan ha sedan tagits bort av en administratör)';

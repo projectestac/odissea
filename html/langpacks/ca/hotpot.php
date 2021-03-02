@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hotpot', language 'ca', version '3.8'.
  *
- * @package   hotpot
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hotpot
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -93,6 +93,7 @@ $string['confirmdeleteattempts'] = 'Voleu de veritat suprimir aquests intents?';
 $string['confirmstop'] = 'Esteu segurs de voler abandonar la navegació per aquesta pàgina?';
 $string['correct'] = 'Correcte';
 $string['couldnotinsertsubmissionform'] = 'No es pot inserir el formulari d\'enviament';
+$string['d_index'] = 'Índex de discriminació';
 $string['delay1'] = 'Retard 1';
 $string['delay1_help'] = 'El mínim retard entre el primer i el segon intent.';
 $string['delay1summary'] = 'Temps de retard entre el primer i el segon intent.';
@@ -100,8 +101,6 @@ $string['delay2'] = 'Retard 2';
 $string['delay2_help'] = 'El mínim retard entre intents després del segon intent.';
 $string['delay2summary'] = 'Temps de retard entre intents posteriors.';
 $string['delay3'] = 'Retard 3';
-$string['delay3afterok'] = 'Espera fins que l\'estudiant premi D\'acord';
-$string['delay3disable'] = 'No continua de forma automàtica';
 $string['delay3_help'] = 'El paràmetre especifica el retard entre finalitzar el qüestionari i retornar el control de la visualització al Moodle.
 
 **Usa una durada específica (en segons)**
@@ -117,13 +116,14 @@ $string['delay3_help'] = 'El paràmetre especifica el retard entre finalitzar el
 : el control no retorna a Moodle després de finalitzar el qüestionari. L\'estudiant tindrà llibertat per navegar enllà de la pàgina del qüestionari.
 
 Nota: Les qualificacions són enviades a Moodle immediatament després que el qüestionari s\'hagi completat o abandonat, malgrat aquest paràmetre.';
+$string['delay3afterok'] = 'Espera fins que l\'estudiant premi D\'acord';
+$string['delay3disable'] = 'No continua de forma automàtica';
 $string['delay3specific'] = 'Utilitza un temps específic (en segons)';
 $string['delay3summary'] = 'Temps de retard al final del qüestionari';
 $string['delay3template'] = 'Usa els paràmetres del fitxer font/plantilla';
 $string['deleteallattempts'] = 'Suprimeix tots els intents';
 $string['deleteattempts'] = 'Suprimeix els intents';
 $string['detailsrecords'] = 'Registres dels detalls HotPot';
-$string['d_index'] = 'Índex de discriminació';
 $string['duration'] = 'Durada';
 $string['enablecache'] = 'Habilita la memòria cau del HotPot';
 $string['enablecron'] = 'Habilita el cron del HotPot';
@@ -131,8 +131,10 @@ $string['enablemymoodle'] = 'Mostra HotPots en El meu Moodle';
 $string['enableobfuscate'] = 'Habilita l\'ofuscació del codi del reproductor multimèdia';
 $string['enableswf'] = 'Permet incrustar fitxers SWF a les activitats HotPot';
 $string['entry_attempts'] = 'Intents';
+$string['entry_dates'] = 'Dates';
+$string['entry_grading'] = 'S\'està qualificant';
+$string['entry_title'] = 'El nom de la unitat és el títol';
 $string['entrycm'] = 'Activitat prèvia';
-$string['entrycmcourse'] = 'Activitat prèvia en aquest curs';
 $string['entrycm_help'] = 'Aquest paràmetre especifica una activitat de Moodle i una qualificació mínima per aquesta activitat que cal assolir abans que aquest Quizport es pugui fer.
 
 El professor pot seleccionar un activitat especifica, o un dels següents paràmetres d\'àmbit general:
@@ -141,12 +143,11 @@ El professor pot seleccionar un activitat especifica, o un dels següents paràm
 * Activitat prèvia en aquesta secció
 * HotPot previ en aquest curs
 * HotPot previ en aquesta secció';
+$string['entrycmcourse'] = 'Activitat prèvia en aquest curs';
 $string['entrycmsection'] = 'Activitat prèvia en aquesta secció de curs';
 $string['entrycompletionwarning'] = 'Abans de començar l\'activitat, cal que mireu {$a}.';
-$string['entry_dates'] = 'Dates';
 $string['entrygrade'] = 'Qualificació prèvia de l\'activitat';
 $string['entrygradewarning'] = 'No podeu començar aquesta activitat fins que la vostra qualificació sigui {$a->entrygrade}% en {$a->entryactivity}. Actualment la vostra qualificació per aquesta activitat és {$a->usergrade}%';
-$string['entry_grading'] = 'S\'està qualificant';
 $string['entryhotpotcourse'] = 'HotPot previ en aquest curs';
 $string['entryhotpotsection'] = 'HotPot previ en aquesta secció de curs';
 $string['entryoptions'] = 'Opcions de la pàgina d\'entrada';
@@ -164,7 +165,6 @@ $string['entryoptions_help'] = 'Aquesta casella de selecció habilita i inhabili
 **Intents**
 : Si s\'habilita, a la pàgina d\'entrada es mostrarà una taula amb els detalls dels intents previs de l\'usuari en aquest HotPot. Els intents que es poden reprendre tenen un botó a la columna de més a la dreta.';
 $string['entrypage'] = 'Mostra la pàgina d\'entrada';
-$string['entrypagehdr'] = 'Pàgina d\'entrada';
 $string['entrypage_help'] = 'Cal mostrar als estudiants una pàgina inicial abans de començar l\'activitat HotPot?
 
 **Sí**
@@ -174,22 +174,10 @@ $string['entrypage_help'] = 'Cal mostrar als estudiants una pàgina inicial aban
 : els estudiants no veuran cap pàgina d\'entrada, i començaran el HotPot immediatament.
 
 Al professor sempre se li mostra una pàgina d\'entrada per proporcionar-li accés als informes i a la pàgina d\'edició dels qüestionaris.';
+$string['entrypagehdr'] = 'Pàgina d\'entrada';
 $string['entrytext'] = 'Text de la pàgina d\'entrada';
-$string['entry_title'] = 'El nom de la unitat és el títol';
 $string['exit_areyouok'] = 'Hola, encara sou aquí?';
 $string['exit_attemptscore'] = 'La puntuació per aquest intent ha estat de {$a}';
-$string['exitcm'] = 'Activitat següent';
-$string['exitcmcourse'] = 'Activitat següent en aquest curs';
-$string['exitcm_help'] = 'Aquest paràmetre especifica una activitat de Moodle a fer després que el Quizport s\'hagi completat.
-El professor pot seleccionar una activitat específica o una dels paràmetres següents d\'àmbit general:
-
-* Activitat següent en aquest curs
-* Activitat següent en aquesta secció
-* HotPot següent en aquest curs
-* HotPot següent en aquest secció
-
-Si s\'han inhabilitat altres opcions de la pàgina de sortida, l\'estudiant anirà directament a l\'activitat següent. Altrament, l\'estudiant veurà un enllaç cap a l\'activitat següent quan estigui a punt.';
-$string['exitcmsection'] = 'Activitat següent en aquesta secció del curs';
 $string['exit_course'] = 'Curs';
 $string['exit_course_text'] = 'Retorna a la pàgina principal del curs';
 $string['exit_encouragement'] = 'Encoratjament';
@@ -215,17 +203,14 @@ $string['exit_feedback_help'] = 'Aquestes opcions habiliten i inhabiliten la vis
 
 A més a més, si el mètode de qualificació de la unitat és «el més gran», es mostrarà a l\'usuari un missatge per informar-lo de si l\'intent més recent ha estat igual o millor que el seu intent previ.';
 $string['exit_goodtry'] = 'Bon intent!';
-$string['exitgrade'] = 'Puntuació de l\'activitat següent';
 $string['exit_grades'] = 'Notes';
 $string['exit_grades_text'] = 'Mireu les notes assolides fins ara en aquest curs';
-$string['exithotpotcourse'] = 'Següent HotPot en aquest curs';
 $string['exit_hotpotgrade'] = 'La vostra nota per aquesta activitat és {$a}';
 $string['exit_hotpotgrade_average'] = 'La vostra qualificació mitjana per a aquesta activitat és {$a}';
 $string['exit_hotpotgrade_highest'] = 'La vostra nota més elevada per a aquesta activitat ha estat {$a}';
 $string['exit_hotpotgrade_highest_equal'] = 'Heu igualat la vostra millor nota per a aquesta activitat!';
 $string['exit_hotpotgrade_highest_previous'] = 'La vostra nota prèvia més elevada per a aquesta activitat havia estat {$a}';
 $string['exit_hotpotgrade_highest_zero'] = 'No heu aconseguit encara superar el rècord {$a} per a aquesta activitat';
-$string['exithotpotsection'] = 'Hot Potatoes següent en aquesta secció del curs';
 $string['exit_index'] = 'Índex';
 $string['exit_index_text'] = 'Aneu a l\'índex d\'activitats';
 $string['exit_links'] = 'Enllaços de la pàgina de sortida';
@@ -245,9 +230,29 @@ $string['exit_links_help'] = 'Aquestes opcions habiliten i inhabiliten la visual
 $string['exit_next'] = 'Següent';
 $string['exit_next_text'] = 'Intenta l\'activitat següent';
 $string['exit_noscore'] = 'Heu completat l\'activitat amb èxit!';
+$string['exit_retry'] = 'Torna a intentar';
+$string['exit_retry_text'] = 'Torna a intentar aquesta activitat';
+$string['exit_welldone'] = 'Ben fet!';
+$string['exit_whatnext_0'] = 'Què us agradaria fer a continuació?';
+$string['exit_whatnext_1'] = 'Trieu la vostra destinació ...';
+$string['exit_whatnext_default'] = 'Trieu una de les següents:';
+$string['exitcm'] = 'Activitat següent';
+$string['exitcm_help'] = 'Aquest paràmetre especifica una activitat de Moodle a fer després que el Quizport s\'hagi completat.
+El professor pot seleccionar una activitat específica o una dels paràmetres següents d\'àmbit general:
+
+* Activitat següent en aquest curs
+* Activitat següent en aquesta secció
+* HotPot següent en aquest curs
+* HotPot següent en aquest secció
+
+Si s\'han inhabilitat altres opcions de la pàgina de sortida, l\'estudiant anirà directament a l\'activitat següent. Altrament, l\'estudiant veurà un enllaç cap a l\'activitat següent quan estigui a punt.';
+$string['exitcmcourse'] = 'Activitat següent en aquest curs';
+$string['exitcmsection'] = 'Activitat següent en aquesta secció del curs';
+$string['exitgrade'] = 'Puntuació de l\'activitat següent';
+$string['exithotpotcourse'] = 'Següent HotPot en aquest curs';
+$string['exithotpotsection'] = 'Hot Potatoes següent en aquesta secció del curs';
 $string['exitoptions'] = 'Opcions de la pàgina de sortida';
 $string['exitpage'] = 'Mostra la pàgina de sortida';
-$string['exitpagehdr'] = 'Pàgina de sortida';
 $string['exitpage_help'] = 'S\'hauria de mostrar una pàgina de sortida després de completar el qüestionari Hot Potatoes?
 
 **Sí**
@@ -255,13 +260,8 @@ Es mostrarà una pàgina de sortida als estudiants quan hagin completat el qües
 
 **No**
 No es mostrarà cap pàgina de sortida als estudiants, sinó que hauran de continuar amb l\'activitat següent o tornar a la pàgina d\'inici del curs.';
-$string['exit_retry'] = 'Torna a intentar';
-$string['exit_retry_text'] = 'Torna a intentar aquesta activitat';
+$string['exitpagehdr'] = 'Pàgina de sortida';
 $string['exittext'] = 'Text de la pàgina de sortida';
-$string['exit_welldone'] = 'Ben fet!';
-$string['exit_whatnext_0'] = 'Què us agradaria fer a continuació?';
-$string['exit_whatnext_1'] = 'Trieu la vostra destinació ...';
-$string['exit_whatnext_default'] = 'Trieu una de les següents:';
 $string['feedbackdiscuss'] = 'Debatre aquest qüestionari en un fòrum';
 $string['feedbackformmail'] = 'Formulari de retroacció';
 $string['feedbackmoodleforum'] = 'Fòrum de Moodle';
@@ -298,11 +298,11 @@ $string['hotpot:deleteallattempts'] = 'Esborra tots els intents de l\'usuari en 
 $string['hotpot:deletemyattempts'] = 'Esborra els intents propis del Hot Potatoes';
 $string['hotpot:ignoretimelimits'] = 'Ignorar la limitació de temps en una activitat HotPot';
 $string['hotpot:manage'] = 'Actualitzar la configuració de Hot Potatoes';
-$string['hotpotname'] = 'Nom de l\'activitat de Hot Potatoes';
 $string['hotpot:preview'] = 'Previsualitzar una activitat de Hot Potatoes';
 $string['hotpot:reviewallattempts'] = 'Veure els intents d\'una activitat de Hot Potatoes de tots els usuaris';
 $string['hotpot:reviewmyattempts'] = 'Veure els intents propis d\'una activitat de Hot Potatoes';
 $string['hotpot:view'] = 'Veure la pàgina d\'entrada d\'una activitat de Hot Potatoes';
+$string['hotpotname'] = 'Nom de l\'activitat de Hot Potatoes';
 $string['ignored'] = 'Ignorat';
 $string['inprogress'] = 'En curs';
 $string['isgreaterthan'] = 'és superior a';
@@ -387,6 +387,10 @@ Els formats de sortida disponibles depenen del tipus de fitxer d\'origen. Alguns
 
 La configuració a "El millor possible" mostrarà el contingut utilitzant el format de sortida més òptim pel navegador de l\'estudiant.';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze HP6 html: estàndard';
+$string['outputformat_hp_6_jcloze_html_dropdown'] = 'JCloze HP6 html: Rottmeier llista desplegable';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'JCloze HP6 html: Rottmeier FindIt (a)';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = 'JCloze HP6 html: Rottmeier FindIt (b)';
+$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JCloze HP6 html: Glossari Rottmeier';
 $string['outputformat_hp_6_jcloze_xml_anctscan'] = 'JCloze des de XML HP6: ANCT-Scan';
 $string['outputformat_hp_6_jcloze_xml_dropdown'] = 'JCloze from HP6 xml: Rottmeier llista desplegable';
 $string['outputformat_hp_6_jcloze_xml_findit_a'] = 'JCloze from HP6 xml: Rottmeier FindIt (a)';
@@ -493,7 +497,6 @@ $string['textsourcespecific'] = 'Text expecífic';
 $string['timeclose'] = 'Disponible fins a';
 $string['timedout'] = 'Temps esgotat';
 $string['timelimit'] = 'Límit de temps';
-$string['timelimitexpired'] = 'El límit de temps per a aquest intent s\'ha acabat';
 $string['timelimit_help'] = 'Aquest paràmetre especifica la durada màxima d\'un intent.
 
 **Utilitza els paràmetres de la fitxer font/plantilla**
@@ -507,6 +510,7 @@ $string['timelimit_help'] = 'Aquest paràmetre especifica la durada màxima d\'u
 : No hi ha cap límit de temps per als intents d\'aquest qüestionari.
 
 Avís: Si un intent es reprèn, el temps continua des de l\'intent en què prèviament va ser aturat.';
+$string['timelimitexpired'] = 'El límit de temps per a aquest intent s\'ha acabat';
 $string['timelimitspecific'] = 'Utilitza temps especific';
 $string['timelimitsummary'] = 'Límit de temps per a un intent';
 $string['timelimittemplate'] = 'Utilitza els paràmetres de la font/fitxer plantilla';

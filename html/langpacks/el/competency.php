@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'competency', language 'el', version '3.8'.
  *
- * @package   competency
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     competency
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -166,7 +166,7 @@ $string['privacy:path:relatedtome'] = 'Σε σχέση με εμένα';
 $string['privacy:path:userevidence'] = 'Αποδεικτικό προηγούμενης μάθησης';
 $string['pushcourseratingstouserplans'] = 'Προώθηση εκτιμήσεων μαθήματος σε ατομικά σχέδια μάθησης';
 $string['pushcourseratingstouserplans_desc'] = 'Προεπιλεγμένη τιμή για τη ρύθμιση μαθήματος κατά την ενημέρωση προσωπικών σχεδίων μάθησης όταν εκτιμώνται προσόντα μαθήματος.';
-$string['syncplanscohorts'] = 'Συγχρονισμός σχεδίων μέσω υποδειγμάτων σχεδίων μάθησης συνόλων χρηστών';
+$string['syncplanscohorts'] = 'Συγχρονισμός σχεδίων μέσω προτύπων σχεδίων μάθησης συνόλων χρηστών';
 $string['taxonomy_behaviour'] = 'Συμπεριφορά';
 $string['taxonomy_competency'] = 'Προσόν';
 $string['taxonomy_concept'] = 'Έννοια';
@@ -193,8 +193,7 @@ $string['usercommentedonaplan'] = 'Ο/Η {$a->fullname} σχολίασε για 
 {$a->comment}
 
 Δείτε: {$a->url}';
-$string['usercommentedonaplanhtml'] = '<p>Ο/Η {$a->fullname} σχολίασε για το σχέδιο μάθησης «{$a->plan}»:</p>
-<div>{$a->comment}</div>
+$string['usercommentedonaplanhtml'] = '<p>Ο/Η {$a->fullname} σχολίασε για το σχέδιο μάθησης «{$a->plan}»:</p> <div>{$a->comment}</div>
 <p>Δείτε: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = 'Ο/Η {$a->fullname} σχολίασε το σχέδιο μάθησης «{$a->plan}».';
 $string['usercommentedonaplansubject'] = 'Ο/Η {$a} σχολίασε για ένα σχέδιο μάθησης.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_shibboleth', language 'it', version '3.8'.
  *
- * @package   auth_shibboleth
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_shibboleth
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,13 +29,6 @@ $string['auth_shib_auth_logo'] = 'Logo associato al metodo di autenticazione';
 $string['auth_shib_auth_logo_description'] = 'Per facilitare gli utenti, è possibile associare un logo al metodo di  autenticazione Shibboleth, come ad esempio  <tt>SWITCHaai Login</tt> or <tt>InCommon Login</tt>.';
 $string['auth_shib_auth_method'] = 'Nome del metodo di autenticazione';
 $string['auth_shib_auth_method_description'] = 'Inserite un nome familiare ai vostri utenti per identificare il metodo di autenticazione Shibboleth. Un nome adatto potrebbe essere il nome della vostra federazione Shibboleth, ad esempio <tt>SWITCHaai Login</tt> oppure <tt>InCommon Login</tt>.';
-$string['auth_shibbolethdescription'] = 'Utilizzando questo metodo gli utenti vengono creati e autenticati utilizzando Shibboleth. Per i dettagli sulla impostazione: <a href="{$a}">Shibboleth README</a>.';
-$string['auth_shibboleth_errormsg'] = 'Seleziona l\'organizzazione di cui sei membro!';
-$string['auth_shibboleth_login'] = 'Login Shibboleth';
-$string['auth_shibboleth_login_long'] = 'Login a Moodle via Shibboleth';
-$string['auth_shibboleth_manual_login'] = 'Login manuale';
-$string['auth_shibboleth_select_member'] = 'Sono un membro di ...';
-$string['auth_shibboleth_select_organization'] = 'Per l\'autenticazione via Shibboleth, seleziona l\'organizzazione di appartenenza dal menu a discesa:';
 $string['auth_shib_changepasswordurl'] = 'URL per cambiare password';
 $string['auth_shib_contact_administrator'] = 'Qualora tu non appartenga alle organizzazioni fornite e hai bisogno di accedere ai corsi presenti su questo server, per favore contatta <a href="mailto:{$a}">l\'Amministratore Moodle</a>.';
 $string['auth_shib_convert_data'] = 'API per la modifica dei dati';
@@ -57,6 +50,13 @@ $string['auth_shib_no_organizations_warning'] = 'Se vuoi usare il servizio integ
 $string['auth_shib_only'] = 'Solo Shibboleth';
 $string['auth_shib_only_description'] = 'Selezionate questa opzione se desiderate forzare l\'autenticazione Shibboleth.';
 $string['auth_shib_username_description'] = 'Nome';
+$string['auth_shibboleth_errormsg'] = 'Seleziona l\'organizzazione di cui sei membro!';
+$string['auth_shibboleth_login'] = 'Login Shibboleth';
+$string['auth_shibboleth_login_long'] = 'Login a Moodle via Shibboleth';
+$string['auth_shibboleth_manual_login'] = 'Login manuale';
+$string['auth_shibboleth_select_member'] = 'Sono un membro di ...';
+$string['auth_shibboleth_select_organization'] = 'Per l\'autenticazione via Shibboleth, seleziona l\'organizzazione di appartenenza dal menu a discesa:';
+$string['auth_shibbolethdescription'] = 'Utilizzando questo metodo gli utenti vengono creati e autenticati utilizzando Shibboleth. Per i dettagli sulla impostazione: <a href="{$a}">Shibboleth README</a>.';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'Il plugin di autenticazione "Shibboleth" non memorizza dati personali.';
 $string['shib_invalid_account_error'] = 'Sembra che tu sia autenticato tramite Shibboleth ma Moodle non ha account validi corrispondenti al tuo username. Il tuo account potrebbe non esistere o essere stato sospeso.';

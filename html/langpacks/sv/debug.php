@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'debug', language 'sv', version '3.8'.
  *
- * @package   debug
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     debug
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,22 +29,34 @@ $string['authpluginnotfound'] = 'Det gick inte att hitta plug-in-programmet {$a}
 $string['blocknotexist'] = 'Det finns inget block {$a} ';
 $string['cannotbenull'] = '{$a} kan inte vara null!';
 $string['cannotdowngrade'] = 'Det går inte att nedgradera {$a->plugin} från {$a->oldversion} till {$a->newversion}';
-$string['cannotfindadmin'] = 'Det gick inte att hitta någon användare med rättigheter som administratör!';
+$string['cannotfindadmin'] = 'Det gick inte att hitta någon administratörsanvändare!';
+$string['cannotinitpage'] = 'Kan inte helt initiera sidan: ogiltigt {$a->name}-id {a->id}';
+$string['cannotsetuptable'] = '{$a}-tabellerna kunde INTE konfigureras korrekt!';
 $string['codingerror'] = 'Detta är ett kodningsfel, det måste åtgärdas av en programmerare: {$a}';
+$string['configmoodle'] = 'Moodle har inte konfigurerats ännu. Du behöver redigera config.php först.';
+$string['debuginfo'] = 'Debuginformation';
 $string['erroroccur'] = 'Det har uppstått ett fel under denna process';
 $string['invalidarraysize'] = 'Felaktig storlek på arrayerna i parametrarna för {$a}';
-$string['invalideventdata'] = 'Felaktiga eventadata har matats in: {$a}';
-$string['invalidparameter'] = 'Ett felaktigt värde för en parameter har upptäckts, körningen kan inte fortsätta.';
-$string['invalidresponse'] = 'Ett felaktigt värde för en respons har upptäckts, körningen kan inte fortsätta.';
+$string['invalideventdata'] = 'Felaktiga händelsedata har angivits: {$a}';
+$string['invalidparameter'] = 'Ett felaktigt värde för en parameter har upptäckts';
+$string['invalidresponse'] = 'Ett felaktigt värde för en respons har upptäckts';
+$string['line'] = 'Rad';
 $string['missingconfigversion'] = 'Det går tyvärr inte att fortsätta eftersom tabellen för konfiguration inte innehåller version.';
 $string['modulenotexist'] = 'Det finns ingen modul {$a}';
 $string['morethanonerecordinfetch'] = 'Det fanns mer än en post i fetch()!';
-$string['mustbeoveride'] = 'Metoden för abstraktion {$a} måste överskridas.';
+$string['mustbeoveride'] = 'Metoden för abstraktion {$a} måste åsidosättas.';
+$string['noadminrole'] = 'Hittade ingen administratörsroll';
 $string['noblocks'] = 'Det finns inga installerade block!';
 $string['nocate'] = 'Inga kategorier!';
 $string['nomodules'] = 'Det gick inte att hitta några moduler!!';
+$string['nopageclass'] = 'Importerade {$a}, men kunde inte hitta några sidklasser';
 $string['noreports'] = 'Det finns inga tillgängliga rapporter';
 $string['notables'] = 'Inga tabeller!';
+$string['outputbuffer'] = 'Utmatningsbuffert';
 $string['phpvaroff'] = 'PHP-server-variabeln \'{$a->name}\' bör vara inställd som Off - {$a->link}';
 $string['phpvaron'] = 'PHP-server-variabeln \'{$a->name}\' är inte inställd som On - {$a->link}';
+$string['sessionmissing'] = '{$a} objekt saknas i sessionen';
+$string['sqlrelyonobsoletetable'] = 'Denna SQL förlitar sig på tabeller \'{$a}\' som inte längre används! Koden behöver korrigeras av en utvecklare.';
+$string['stacktrace'] = 'Stackspårning';
 $string['withoutversion'] = 'Huvudfilen version.php går inte att läsa.';
+$string['xmlizeunavailable'] = '<code>xmlize</code> funktioner ej tillgängliga';

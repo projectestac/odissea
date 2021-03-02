@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_flatfile', language 'el', version '3.8'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['encoding'] = 'Κωδικοποίηση αρχείου';
 $string['expiredaction'] = 'Δράση λήξης εγγραφής';
 $string['expiredaction_help'] = 'Επιλέξτε την ενέργεια που θα εκτελεστεί όταν λήξει η εγγραφή του χρήστη. Παρακαλούμε έχετε υπόψη ότι ορισμένα δεδομένα χρήστη και ρυθμίσεις εξαλείφονται από το μάθημα κατά την ακύρωση εγγραφής στο μάθημα.';
-$string['filelockedmail'] = 'Το αρχείο κειμένου που χρησιμοποιείτε για εγγραφές βασισμένες σε αρχεία ({$a}) δεν μπορεί να διαγραφεί από την διεργασία χρονοπρογραμματισμού cron. Αυτό συνήθως σημαίνει ότι τα δικαιώματα σε αυτήν είναι λάθος. Παρακαλούμε διορθώστε τα δικαιώματα ώστε το Moodle να μπορεί να διαγράψει το αρχείο αυτό, ειδάλλως μπορεί να το επεξεργάζεται επανειλημμένα.';
+$string['filelockedmail'] = 'ο αρχείο κειμένου που χρησιμοποιείτε για εγγραφές βασισμένες σε αρχεία ({$a}) δεν μπορεί να διαγραφεί από την διεργασία χρονοπρογραμματισμού cron. Αυτό συνήθως σημαίνει ότι τα δικαιώματα σε αυτήν είναι λάθος. Παρακαλούμε διορθώστε τα δικαιώματα ώστε το Moodle να μπορεί να διαγράψει το αρχείο αυτό, ειδάλλως μπορεί να το επεξεργάζεται επανειλημμένα.';
 $string['filelockedmailsubject'] = 'Σημαντικό σφάλμα: Αρχείο εγγραφής';
-$string['flatfileenrolments'] = 'Εγγραφές απλού αρχείου (CSV)';
 $string['flatfile:manage'] = 'Διαχείριση των εγγραφών χρηστών χειροκίνητα';
-$string['flatfilesync'] = 'Συγχρονισμός απλού αρχείου εγγραφών';
 $string['flatfile:unenrol'] = 'Ακύρωση εγγραφής χρηστών από το μάθημα χειροκίνητα';
+$string['flatfileenrolments'] = 'Εγγραφές απλού αρχείου (CSV)';
+$string['flatfilesync'] = 'Συγχρονισμός απλού αρχείου εγγραφών';
 $string['location'] = 'Τοποθεσία αρχείου';
 $string['location_desc'] = 'Καθορίστε το πλήρες μονοπάτι του αρχείου εγγραφών. Το αρχείο διαγράφεται αυτόματα μετά την επεξεργασία.';
 $string['mapping'] = 'Αντιστοίχιση ρόλων επίπεδου αρχείου';

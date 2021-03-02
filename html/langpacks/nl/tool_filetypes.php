@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'nl', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['corestring'] = 'Alternatieve taalstring.';
 $string['corestring_help'] = 'Deze instelling kan gebruikt worden om een andere taalstring te kiezen uit het mimetypes.php-bestand. Normaal moet dit leeg gelaten worden. Gebruik voor aangepaste types het beschrijvingsveld.';
 $string['defaulticon'] = 'Standaard icoontje voor MIME-type';
 $string['defaulticon_help'] = 'Er zijn meerdere bestands-extenties met hetzelfde MIME-type. Selecteer deze optie voor één van de extenties zodat dit icoontje gebruikt zal worden bij het bepalen van het icoon van het MIME-type';
-$string['deletea'] = 'Verwijder {$a}';
 $string['delete_confirmation'] = 'Weet je zeker dat je  <strong>.{$a}</strong> wil verwijderen?';
+$string['deletea'] = 'Verwijder {$a}';
 $string['deletefiletypes'] = 'Verwijder een bestandstype';
 $string['description'] = 'Aangepaste beschrijving';
 $string['description_help'] = 'Eenvoudige beschrijving van het bestandstype, vb \'Kindle ebook\'. Als je site meerdere talen ondersteund en de multi-languagefilter gebruikt, dan kun je multi-language-tags in dit veld gebruiken om een beschrijving in verschillende talen te voorzien.';

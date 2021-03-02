@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_activity_results', language 'ca', version '3.8'.
  *
- * @package   block_activity_results
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_activity_results
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,8 +43,8 @@ $string['config_no_activities_in_course'] = 'Encara no hi ha cap activitat en aq
 $string['config_select_activity'] = 'De quina activitat hauria de mostrar els resultats aquest bloc?';
 $string['config_show_best'] = 'Quantes qualificacions de les més altes s\'haurien de mostrar (0 per inhabilitar)?';
 $string['config_show_worst'] = 'Quantes qualificacions de les més baixes s\'haurien de mostrar (0 per inhabilitar)?';
-$string['configuredtoshownothing'] = 'Actualment, la configuració d\'aquest bloc no permet mostrar cap resultat.';
 $string['config_use_groups'] = 'Mostra els grups en lloc dels estudiants (només si l\'activitat admet grups)?';
+$string['configuredtoshownothing'] = 'Actualment, la configuració d\'aquest bloc no permet mostrar cap resultat.';
 $string['defaultdecimalplaces'] = 'Xifres decimals';
 $string['defaultdecimalplaces_desc'] = 'Número de xifres decimals a mostrar per defecte';
 $string['defaultgradedisplay'] = 'Mostra les notes com a';

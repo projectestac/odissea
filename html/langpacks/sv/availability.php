@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,58 +12,60 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability', language 'sv', version '3.8'.
  *
- * @package   availability
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessrestrictions'] = 'Villkor för tillgänglighet';
-$string['addrestriction'] = 'Lägg till villkor';
+$string['accessrestrictions'] = 'Åtkomstbegränsningar';
+$string['addrestriction'] = 'Lägg till begränsning...';
 $string['and'] = 'och';
-$string['condition_group'] = 'Kombination av villkor';
-$string['condition_group_info'] = 'Lägg till ett antal sammanhängande villkor (komplex logik)';
-$string['enableavailability'] = 'Aktivera villkorad tillgänglighet';
-$string['enableavailability_desc'] = 'När denna är aktiverad kan du ange villkor (ex vis datum, resultat eller fullföljande) som styr åtkomsten till aktiviteten.';
-$string['error_list_nochildren'] = 'Kombination av villkor måste innehålla minst ett villkor';
-$string['hidden_all'] = 'Dold helt om användaren inte uppfyller villkoren';
-$string['hidden_individual'] = 'Dold helt om användaren inte uppfyller detta villkor';
+$string['condition_group'] = 'Begränsningar';
+$string['condition_group_info'] = 'Lägg till en uppsättning nästlade begränsningar för att tillämpa komplex logik.';
+$string['enableavailability'] = 'Aktivera begränsad åtkomst';
+$string['enableavailability_desc'] = 'När detta är aktiverat kan du ange villkor (t.ex. datum, betyg eller slutförande) för att styra åtkomsten till aktiviteten.';
+$string['error_list_nochildren'] = 'Kombination av begränsningar måste innehålla minst ett villkor';
+$string['hidden_all'] = 'Helt dold om användaren inte uppfyller villkoren';
+$string['hidden_individual'] = 'Helt dold om användaren inte uppfyller detta villkor';
 $string['hidden_marker'] = '(annars dolt)';
 $string['hide_verb'] = 'Klicka för att dölja';
 $string['invalid'] = 'Vänligen ange';
-$string['itemheading'] = '{$a->number} {$a->type} villkor';
-$string['item_unknowntype'] = 'Dessa villkor använder en plugin som inte längre finns (om det är okej att ta bort denna begränsning bort den nedan)';
-$string['label_multi'] = 'Nödvändiga villkor';
-$string['label_sign'] = 'Villkor typ';
+$string['item_unknowntype'] = 'Dessa begränsningar använder en plugin som inte längre finns (om det är okej att ta bort denna begränsning, ta bort den nedan)';
+$string['itemheading'] = '{$a->number} {$a->type} begränsning';
+$string['label_multi'] = 'Obligatoriska begränsningar';
+$string['label_sign'] = 'Begränsningstyp';
 $string['list_and'] = 'Samtliga:';
-$string['list_and_hidden'] = 'Samtliga (dold på annat sätt):';
-$string['listheader_multi_after'] = 'av följande';
-$string['listheader_multi_and'] = 'alla';
-$string['listheader_multi_before'] = 'match';
-$string['listheader_multi_or'] = 'någon';
-$string['listheader_sign_before'] = 'Student';
-$string['listheader_sign_neg'] = 'måste inte';
-$string['listheader_sign_pos'] = 'måste';
-$string['listheader_single'] = 'matchar följande';
+$string['list_and_hidden'] = 'Samtliga (annars dold):';
 $string['list_or'] = 'Vilken som helst av:';
-$string['list_or_hidden'] = 'Vilken som helst av (dold på annat sätt):';
-$string['list_root_and'] = 'Inte tillgängligt om inte:';
-$string['list_root_and_hidden'] = 'Ej tillgänglig (dold) om inte:';
-$string['list_root_or'] = 'Inte tillgängligt om inte någon av:';
-$string['list_root_or_hidden'] = 'Ej tillgänglig (dold), om inte något av följande:';
-$string['manageplugins'] = 'Hantera villkor/begränsningar';
-$string['missingplugin'] = 'Plugin för villkor/begränsningar saknas';
+$string['list_or_hidden'] = 'Vilken som helst av (annars dold):';
+$string['list_root_and'] = 'Tillgänglig om:';
+$string['list_root_and_hidden'] = 'Tillgänglig (visas) om:';
+$string['list_root_or'] = 'Tillgänglig om någon av:';
+$string['list_root_or_hidden'] = 'Tillgänglig (visas) om något av följande:';
+$string['listheader_multi_after'] = 'av följande';
+$string['listheader_multi_and'] = 'allt';
+$string['listheader_multi_before'] = 'matcha';
+$string['listheader_multi_or'] = 'något';
+$string['listheader_sign_before'] = 'Studenten';
+$string['listheader_sign_neg'] = 'får inte';
+$string['listheader_sign_pos'] = 'måste';
+$string['listheader_single'] = 'matcha följande';
+$string['manageplugins'] = 'Hantera begränsningar';
+$string['missingplugin'] = 'Plugin för begränsningar saknas';
 $string['or'] = 'eller';
-$string['restrictaccess'] = 'Begränsa tillgänglighet';
-$string['restrictbygroup'] = 'Lägg till grupp / gruppindelning åtkomstbegränsning';
-$string['setheading'] = '{$a->number} Uppsättning {$a->count} begränsning (ar)';
-$string['shown_all'] = 'Visas nedtonade om användaren inte uppfyller villkoren';
-$string['shown_individual'] = 'Visas nedtonade om användaren inte uppfyller detta villkor';
-$string['show_verb'] = 'Klicka för att visa';
-$string['unknowncondition'] = 'Okänt villkor (villkorplugin finns inte)';
+$string['privacy:metadata'] = 'Undersystemet för åtkomstbegränsning lagrar ingen personlig information';
+$string['restrictaccess'] = 'Begränsa åtkomst';
+$string['restrictbygroup'] = 'Lägg till åtkomstbegränsning för grupp/gruppindelning';
+$string['setheading'] = '{$a->number} Består av {$a->count} begränsning(ar)';
+$string['show_verb'] = 'Klicka för att visa gråmarkerade';
+$string['shown_all'] = 'Visas gråmarkerade om användaren inte uppfyller villkoren';
+$string['shown_individual'] = 'Visas gråmarkerade om användaren inte uppfyller detta villkor';
+$string['unknowncondition'] = 'Okänt villkor (borttagen villkorsplugin)';

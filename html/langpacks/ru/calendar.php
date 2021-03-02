@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'ru', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -55,6 +55,9 @@ $string['courses'] = 'Курсы';
 $string['customexport'] = 'Пользовательский диапазон ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Ежедневно';
 $string['day'] = 'День';
+$string['dayeventsmany'] = 'Событий: {$a->num}, {$a->day}';
+$string['dayeventsnone'] = 'Нет событий, {$a}';
+$string['dayeventsone'] = '1 событие, {$a}';
 $string['daynext'] = 'Следующий день';
 $string['dayprev'] = 'Предыдущий день';
 $string['dayviewfor'] = 'Дневной обзор для:';
@@ -193,9 +196,6 @@ $string['noupcomingevents'] = 'Нет предстоящих событий';
 $string['oneevent'] = '1 событие';
 $string['pollinterval'] = 'Частота обновлений';
 $string['pollinterval_help'] = 'Как часто обновлять события в календаре';
-$string['preferences'] = 'Настройки';
-$string['preferences_available'] = 'Ваши личные настройки';
-$string['preferredcalendar'] = 'Предпочитаемый календарь';
 $string['pref_lookahead'] = 'Интервал отображения предстоящих событий';
 $string['pref_lookahead_help'] = 'Этот параметр устанавливает максимальное количество дней, которые будут использоваться при выводе предстоящих событий. События, наступающие позже указанного интервала, не будут отображаться в списке предстоящих событий. Учтите, <strong>нет никаких гарантий</strong>, что будут выводиться все события, наступающие в указанный период времени. Если событий слишком много (больше, чем значение параметра «Максимальное число предстоящих событий»), то будут отображаться только наиболее близкие события.';
 $string['pref_maxevents'] = 'Максимальное число предстоящих событий';
@@ -206,16 +206,19 @@ $string['pref_startwday'] = 'Первый день недели';
 $string['pref_startwday_help'] = 'Недели в календаре будут начинаться с выбранного здесь дня.';
 $string['pref_timeformat'] = 'Формат времени';
 $string['pref_timeformat_help'] = 'Вы можете выбрать формат отображения времени: 12- или 24-часовой. Если выбрать настройку «по умолчанию», то формат будет автоматически выбираться в зависимости от используемого на сайте языка.';
+$string['preferences'] = 'Настройки';
+$string['preferences_available'] = 'Ваши личные настройки';
+$string['preferredcalendar'] = 'Предпочитаемый календарь';
 $string['privacy:metadata:calendar:event'] = 'Компонент «Календарь» может хранить подробности о событиях календаря пользователя в подсистеме ядра.';
 $string['privacy:metadata:calendar:event:description'] = 'Описание события календаря.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'Тип события для события календаря.';
 $string['privacy:metadata:calendar:event:name'] = 'Название события календаря.';
+$string['privacy:metadata:calendar:event:timeduration'] = 'Длительность события календаря.';
+$string['privacy:metadata:calendar:event:timestart'] = 'Время начала события календаря.';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'Компонент «Календарь» может хранить подробности о подписках календаря пользователя в подсистеме ядра.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'Тип события для подписки календаря.';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'Название подписки календаря.';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'URL подписки календаря.';
-$string['privacy:metadata:calendar:event:timeduration'] = 'Длительность события календаря.';
-$string['privacy:metadata:calendar:event:timestart'] = 'Время начала события календаря.';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'Настроенный тип события календаря отображает настройки пользователя.';
 $string['recentupcoming'] = 'Последние и ближайшие 60 дней';
 $string['repeatedevents'] = 'Повторяющиеся события';

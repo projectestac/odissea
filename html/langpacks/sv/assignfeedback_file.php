@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_file', language 'sv', version '3.8'.
  *
- * @package   assignfeedback_file
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_file
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,17 +29,17 @@ $string['batchoperationconfirmuploadfiles'] = 'Ladda upp en eller flera återkop
 $string['batchuploadfiles'] = 'Ladda upp återkopplingsfiler för flera användare';
 $string['batchuploadfilesforusers'] = 'Skicka återkopplingsfiler till {$a} vald(a) användare.';
 $string['configmaxbytes'] = 'Maximal filstorlek';
-$string['confirmuploadzip'] = 'Bekräfta zip uppladdning';
+$string['confirmuploadzip'] = 'Bekräfta uppladdning av zipfil';
 $string['countfiles'] = '{$a} filer';
 $string['default'] = 'Aktiverat som standard';
 $string['default_help'] = 'Om valt kommer denna återkopplingsmetod att vara aktiverad som standard för alla nya uppgifter.';
-$string['enabled'] = 'Återkopplingsfil';
-$string['enabled_help'] = 'Om detta är aktiverat kan läraren ladda upp filer med återkoppling vid rättning av uppgiften. Dessa filer kan vara, men är inte begränsade till, rättade elevuppgifter, dokument med kommentarer eller inspelade ljudmeddelanden.';
+$string['enabled'] = 'Fil med återkoppling/feedback';
+$string['enabled_help'] = 'Om detta är aktiverat kan läraren ladda upp filer med återkoppling vid betygsättning av uppgiften. Dessa filer kan vara, men är inte begränsade till, betygsatta elevinlämningar, dokument med kommentarer eller inspelade ljudmeddelanden.';
 $string['feedbackfileadded'] = 'Ny återkopplingsfil "{$a->filename}" för elev "{$a->student}"';
 $string['feedbackfileupdated'] = 'Ändrad återkopplingsfil "{$a->filename}" för elev "{$a->student}"';
-$string['feedbackzip'] = 'Zip-fil med återkopplings-filer';
-$string['feedbackzip_help'] = 'Ett ziparkiv innehållande återkopplingsfiler för en eller flera elever. Återkopplingsfilerna kommer tilldelas eleverna baserat på det deltagar-id som ska vara den andra delen av varje filnamn, omedelbart efter användarens fullständiga namn. Den här namnkonventionen används vid nedladdning av inlämningsuppgifter så att du kan ladda ner alla inlämningar, lägga till kommentarer till några filer och sedan zippa om samt ladda upp alla filer igen. Filer utan modifieringar ignoreras.';
-$string['file'] = 'Återkopplingsfiler';
+$string['feedbackzip'] = 'Ziparkiv med återkopplingsfiler';
+$string['feedbackzip_help'] = 'En zip-fil som innehåller en lista med feedbackfiler för en eller flera elever. Feedbackfiler kommer att tilldelas studenter baserat på användar-ID. ID:t bör vara den andra delen av varje filnamn omedelbart efter användarens fullständiga namn. Denna namnkonvention används när du laddar ner inlämningar så att du kan ladda ner alla inlagor, lägga till kommentarer till några filer, sedan åter zippa ihop och ladda upp alla filer. Filer utan ändringar kommer att ignoreras.';
+$string['file'] = 'Filer för feedback/återkoppling';
 $string['filesadded'] = 'Tillagda återkopplingsfiler: {$a}';
 $string['filesupdated'] = 'Uppdaterade återkopplingsfiler: {$a}';
 $string['importfeedbackfiles'] = 'Importera återkopplingsfil(er)';
@@ -48,7 +48,7 @@ $string['maxfiles'] = 'Maximalt antal uppladdade filer';
 $string['maximumsize'] = 'Maximal filstorlek';
 $string['moreusers'] = '{$a} mer...';
 $string['nochanges'] = 'Inga ändringar';
-$string['pluginname'] = 'Maximal filstorlek';
+$string['pluginname'] = 'Filåterkoppling';
 $string['privacy:metadata:filepurpose'] = 'Återkopplingsfiler från läraren till deltagaren';
 $string['privacy:path'] = 'Återkopplingsfiler';
 $string['selectedusers'] = 'Utvalda användare';

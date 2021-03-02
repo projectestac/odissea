@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'ru', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -55,9 +55,9 @@ $string['expirymessageenrollersubject'] = 'Уведомление об окон�
 $string['manual:config'] = 'Настраивать экземпляры способа записи на курс «Зачисление вручную»';
 $string['manual:enrol'] = 'Записывать пользователей на курсы';
 $string['manual:manage'] = 'Управлять зачислением пользователей на курс';
-$string['manualpluginnotinstalled'] = 'Плагин «Зачисление вручную» еще не был установлен';
 $string['manual:unenrol'] = 'Отчислять пользователей из курса';
 $string['manual:unenrolself'] = 'Отчислять себя из курса';
+$string['manualpluginnotinstalled'] = 'Плагин «Зачисление вручную» еще не был установлен';
 $string['messageprovider:expiry_notification'] = 'Уведомления об истечении срока обучения при записи вручную';
 $string['now'] = 'Сейчас';
 $string['pluginname'] = 'Зачисление вручную';
@@ -67,9 +67,9 @@ $string['selectcohorts'] = 'Выберите глобальные группы';
 $string['selectusers'] = 'Выберите пользователей';
 $string['status'] = 'Разрешить ручную запись на курсы';
 $string['status_desc'] = 'Разрешить доступ к курсу внутренним зарегистрированным пользователям. Этот параметр  должен быть включен в большинстве случаев.';
+$string['status_help'] = 'Этот параметр определяет, могут ли пользователи быть зачислены вручную (посредством ссылки в установках курса) пользователем с соответствующими правами, например, преподавателем.';
 $string['statusdisabled'] = 'Отключено';
 $string['statusenabled'] = 'Включено';
-$string['status_help'] = 'Этот параметр определяет, могут ли пользователи быть зачислены вручную (посредством ссылки в установках курса) пользователем с соответствующими правами, например, преподавателем.';
 $string['unenrol'] = 'Отчислить пользователя';
 $string['unenrolselectedusers'] = 'Отчислить выбранных пользователей';
 $string['unenrolselfconfirm'] = 'Вы действительно хотите исключить себя из курса «{$a}»?';

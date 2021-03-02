@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'ja', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -73,6 +73,7 @@ $string['emailtagline'] = 'これはあなた宛に「 {$a->sitename} 」で送�
 $string['enabled'] = '有効';
 $string['errorcallingprocessor'] = '定義されたアウトプットのコールにエラーが発生しました。';
 $string['errorconversationdoesnotexist'] = '会話はありません。';
+$string['errormessagetoolong'] = 'メッセージが最大許可長を超えています。';
 $string['errortranslatingdefault'] = 'プラグインから提供されているデフォルト設定の変換にエラーが発生しました。代わりにシステムデフォルトを使用します。';
 $string['eventgroupmessagesent'] = 'グループメッセージが送信されました。';
 $string['eventmessagecontactadded'] = 'メッセージコンタクトが追加されました。';
@@ -98,11 +99,11 @@ $string['info'] = 'ユーザ情報';
 $string['isnotinyourcontacts'] = 'あなたのコンタクトに {$a} は登録されていません。';
 $string['loadmore'] = 'さらに読み込む';
 $string['loggedin'] = 'オンライン';
-$string['loggedindescription'] = 'あなたがMoodleにログインしている場合';
 $string['loggedin_help'] = 'あなたがMoodleにログインしている場合、どのように通知を受信するか設定してください。';
+$string['loggedindescription'] = 'あなたがMoodleにログインしている場合';
 $string['loggedoff'] = 'オフライン';
-$string['loggedoffdescription'] = 'あなたがMoodleにログインしていない場合';
 $string['loggedoff_help'] = 'あなたがMoodleにログインしていない場合、どのように通知を受信するか設定してください。';
+$string['loggedoffdescription'] = 'あなたがMoodleにログインしていない場合';
 $string['managemessageoutputs'] = 'デフォルト通知プリファレンス';
 $string['message'] = 'メッセージ';
 $string['messagecontactrequestsnotification'] = '{$a} がコンタクトへの追加をリクエストしています。';
@@ -164,7 +165,6 @@ $string['participants'] = '参加者';
 $string['pendingcontactrequests'] = '{$a} 件の保留コンタクトリクエストがあります。';
 $string['permitted'] = '許可';
 $string['privacy'] = 'プライバシー';
-$string['privacy_desc'] = 'あなたにメッセージを送信する人を制限できます。';
 $string['privacy:export:conversationprefix'] = '会話:';
 $string['privacy:metadata:core_favourites'] = 'ユーザにより星が付けられた会話';
 $string['privacy:metadata:message_contact_requests'] = 'コンタクトリクエスト一覧です。';
@@ -184,6 +184,15 @@ $string['privacy:metadata:message_conversation_members'] = '会話のユーザ�
 $string['privacy:metadata:message_conversation_members:conversationid'] = '会話のIDです。';
 $string['privacy:metadata:message_conversation_members:timecreated'] = 'メンバーが作成された日時です。';
 $string['privacy:metadata:message_conversation_members:userid'] = '会話のユーザのIDです。';
+$string['privacy:metadata:message_user_actions'] = 'メッセージ一覧のユーザのアクションです。';
+$string['privacy:metadata:message_user_actions:action'] = '実行されたアクションです。';
+$string['privacy:metadata:message_user_actions:messageid'] = 'このアクションが属するメッセージのIDです。';
+$string['privacy:metadata:message_user_actions:timecreated'] = 'アクションが作成された日時です。';
+$string['privacy:metadata:message_user_actions:userid'] = 'このアクションを実行したユーザのIDです。';
+$string['privacy:metadata:message_users_blocked'] = 'ブロック済みユーザ一覧です。';
+$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'ブロックされたユーザのIDです。';
+$string['privacy:metadata:message_users_blocked:timecreated'] = 'ブロックアクションが作成された日時です。';
+$string['privacy:metadata:message_users_blocked:userid'] = 'ブロックアクションが実行されたユーザのIDです。';
 $string['privacy:metadata:messages'] = 'メッセージです。';
 $string['privacy:metadata:messages:conversationid'] = '会話のIDです。';
 $string['privacy:metadata:messages:customdata'] = 'カスタムデータです。通常、内部IDおよび送信者イメージ (ユーザまたはグループ) のパブリックURLを含みます。';
@@ -194,15 +203,6 @@ $string['privacy:metadata:messages:smallmessage'] = 'メッセージのスモー
 $string['privacy:metadata:messages:subject'] = 'メッセージの件名です。';
 $string['privacy:metadata:messages:timecreated'] = 'メッセージが作成された日時です。';
 $string['privacy:metadata:messages:useridfrom'] = 'メッセージを送信したユーザのIDです。';
-$string['privacy:metadata:message_user_actions'] = 'メッセージ一覧のユーザのアクションです。';
-$string['privacy:metadata:message_user_actions:action'] = '実行されたアクションです。';
-$string['privacy:metadata:message_user_actions:messageid'] = 'このアクションが属するメッセージのIDです。';
-$string['privacy:metadata:message_user_actions:timecreated'] = 'アクションが作成された日時です。';
-$string['privacy:metadata:message_user_actions:userid'] = 'このアクションを実行したユーザのIDです。';
-$string['privacy:metadata:message_users_blocked'] = 'ブロック済みユーザ一覧です。';
-$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'ブロックされたユーザのIDです。';
-$string['privacy:metadata:message_users_blocked:timecreated'] = 'ブロックアクションが作成された日時です。';
-$string['privacy:metadata:message_users_blocked:userid'] = 'ブロックアクションが実行されたユーザのIDです。';
 $string['privacy:metadata:notifications'] = '通知です。';
 $string['privacy:metadata:notifications:component'] = '通知を送信するコンポーネントです。';
 $string['privacy:metadata:notifications:contexturl'] = 'この通知に関連するURLです。';
@@ -220,6 +220,7 @@ $string['privacy:metadata:notifications:useridfrom'] = '通知を送信したユ
 $string['privacy:metadata:notifications:useridto'] = '通知を受信したユーザのIDです。';
 $string['privacy:metadata:preference:core_message_settings'] = 'メッセージングに関連する設定です。';
 $string['privacy:request:preference:set'] = '設定「 {$a->name} 」の値は「 {$a->value} 」でした。';
+$string['privacy_desc'] = 'あなたにメッセージを送信する人を制限できます。';
 $string['processorsettings'] = 'プロセッサ設定';
 $string['removecontact'] = 'コンタクトから削除する';
 $string['removecontactconfirm'] = '本当にあなたのコンタクトから {$a} を削除してもよろしいですか?';

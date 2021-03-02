@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_behat', language 'gl', version '3.8'.
  *
- * @package   tool_behat
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_behat
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['errorbehatcommand'] = 'Produciuse un erro durante a execución da orde 
 $string['errorcomposer'] = 'Non están instaladas as dependencias do compositor (composer).';
 $string['errordataroot'] = '$CFG->behat_datarootno non está estabelecido ou é incorrecto.';
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot necesitan estabelecerse en config.php.';
-$string['erroruniqueconfig'] = 'Os valores de $CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot necesitan ser diferentes  aos valores de $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot e $CFG->phpunit_prefix.';
+$string['erroruniqueconfig'] = 'Os valores de $CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot necesitan ser diferentes aos valores de $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot e $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Argumentos de valor do campo';
 $string['fieldvalueargument_help'] = 'Este argumento debería de completarse por un valor de campo; hai moitos tipos de campos: os sinxelos como as caixas de verificación, seleccións ou áreas de texto; ou campos complexos como os selectores de datos. Pode revisar <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Field values (Valores de campos)</a> para ver os valores de campo agardados dependendo do tipo de campo que forneza.';
 $string['giveninfo'] = 'Dado. Procesos para configurar o entorno';
@@ -53,5 +53,5 @@ $string['viewsteps'] = 'Filtro';
 $string['wheninfo'] = 'Cando. Accións que provocan unha actividade';
 $string['wrongbehatsetup'] = 'Algo está mal nos axustes de behat, polo que as definicións dos pasos non poden listarse: <b>{$a->errormsg}</b><br/><br/>Revise que :<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot estean estabelecidos en config.php con diferentes valores a $CFG->dataroot, $CFG->prefix e $CFG->wwwroot.</li>
-<li>Vostede executou «{$a->behatinit}» desde o seu directorio raíz de Moodle.</li>
+<li>Vostede executou «{$a->behatinit}» dende o seu directorio raíz de Moodle.</li>
 <li>As dependencias están instaladas no ficheiro {$a->behatcommand} do vendedor e ten permisos para execución.</li></ul>';

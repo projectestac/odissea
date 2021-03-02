@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'eu', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -130,7 +130,7 @@ $string['configmediaclose'] = 'Erakutsi itxiera-botoia estekatutako media-fitxat
 $string['configmediaheight'] = 'Estekatutako media-fitxategiaren popup leihoaren altuera zehazten du.';
 $string['configmediawidth'] = 'Estekatutako media-fitxategiaren popup leihoaren zabalera zehazten du.';
 $string['configpassword_desc'] = 'Ea pasahitza behar den ikasgaira sartzeko.';
-$string['configslideshowbgcolor'] = 'Diapositiba-aurkezpenaren atzeko kolorea, gaituta egonez gero';
+$string['configslideshowbgcolor'] = 'Diapositiba-aurkezpenaren atzeko planoaren kolorea, gaituta egonez gero';
 $string['configslideshowheight'] = 'Diapositiba-aurkezpenaren altuera zehazten du, gaituta egonez gero';
 $string['configslideshowwidth'] = 'Diapositiba-aurkezpenaren zabalera zehazten du, gaituta egonez gero';
 $string['configtimelimit_desc'] = 'Denbora-muga bat zehaztuz gero, ikasgaiaren hasieran ohar bat erakusten da eta atzera kontu bat erakusten da. Zero zehaztuz gero, ez dago denbora mugarik.';
@@ -177,7 +177,7 @@ $string['displayscorewithessays'] = '<p>Automatikoki kalifikatutako galderetan h
 posible zen gehienezko puntuazio honetatik: {$a->tempmaxgrade}.</p>
 <p> {$a->essayquestions} entsegu motako galdera(k) beranduago kalifikatuko dira eta zure azken emaitzari erantsiko zaizkio aurrerago.</p>
 <p>Oraingoz, eta entsegu-galdera(k) kontuan hartu gabe, zure emaitza {$a->score} (e)koa da {$a->grade} (e)tik</p>';
-$string['displayscorewithoutessays'] = 'Zure puntuazioa hau da: {$a->score} (gehienezkoa {$a->grade}-(e)tik).';
+$string['displayscorewithoutessays'] = 'Zure puntuazioa hau da: {$a->score} (gehienezkoa {$a->grade}(e)tik).';
 $string['duplicatepagenamed'] = 'Bikoiztu orria: {$a}';
 $string['edit'] = 'Editatu';
 $string['editbranchtable'] = 'Eduki-orri bat editatzen';
@@ -212,8 +212,8 @@ $string['eolstudentoutoftime'] = 'Kontuz: Ikasgai hau egiteko finkatu zen denbor
 $string['eolstudentoutoftimenoanswers'] = 'Ez duzu erantzunik eman. Ikasgai honetan 0 puntu lortu duzu.';
 $string['essay'] = 'Entsegua';
 $string['essayemailmessage2'] = '<p>Entsegu-galderaren emaitza: {$a->question}</p><p>Zure erantzuna:<em>{$a->response}</em></p>
-<p>{$a->teacher} iruzkinak:<em>{$a->comment}</em></p><p>Zuk {$a->outof}-(e)tik {$a->earned} jaso duzu entsegu-galdera honetako.</p><p>Ikasgai honetan zure kalifikazioa aldatu egin da eta orain hau da: {$a->newgrade}%.</p>';
-$string['essayemailmessagesmall'] = '<p>Entseguaren erantzun honengatik {$a->outof}-(e)tik {$a->earned} lortu dituzu.</p><p>{$a->lesson} ikasgaiaren zure kalifikazioa %{$a->newgrade}-(e)ra aldatu da.</p>';
+<p>{$a->teacher} iruzkinak:<em>{$a->comment}</em></p><p>Zuk {$a->outof}(e)tik {$a->earned} jaso duzu entsegu-galdera honetako.</p><p>Ikasgai honetan zure kalifikazioa aldatu egin da eta orain hau da: {$a->newgrade}%.</p>';
+$string['essayemailmessagesmall'] = '<p>Entseguaren erantzun honengatik {$a->outof}(e)tik {$a->earned} lortu dituzu.</p><p>{$a->lesson} ikasgaiaren zure kalifikazioa %{$a->newgrade}(e)ra aldatu da.</p>';
 $string['essayemailsubject'] = 'Ikasgai galderarako zure kalifikazioa eskuragarri dago';
 $string['essaynotgradedyet'] = 'Saiakera hau ez da oraindik kalifikatu';
 $string['essayresponses'] = 'Entseguaren erantzunak';
@@ -239,7 +239,7 @@ $string['false'] = 'Gezurra';
 $string['fileformat'] = 'Fitxategi-formatua';
 $string['finalwrong'] = 'Ez da egokia.';
 $string['finish'] = 'Amaitu';
-$string['firstanswershould'] = 'Lehenengo erantzunak orri "zuzenera" egin behar luke jauzi';
+$string['firstanswershould'] = 'Lehenengo erantzunak erantzun "Zuzena" orria jauzi egin behar luke';
 $string['firstwrong'] = 'Zure erantzuna ez da zuzena izan. Berriz saiatu nahi al duzu? (Oraingoan ondo erantzunez gero ez da zure azken emaitzan zenbatuko).';
 $string['flowcontrol'] = 'Ibilbidearen kontrola';
 $string['fractionsaddwrong'] = 'Aukeratutako puntuazio positiboen batura ez da % 100<br />Batura %{$a} baino ez da.<br/> Nahi al duzu atzera jo eta galdera hau egokitu?';
@@ -268,13 +268,13 @@ $string['importquestions'] = 'Inportatu galderak';
 $string['importquestions_help'] = 'Funtzio honek testu-fitxategietatik hainbat formatutako galderak inportatzeko aukera ematen du.';
 $string['inactiveoverridehelp'] = '* Baliogabetze hau ez-aktibo dago erabiltzailearen jarduerarako sarbidea murriztuta dagoelako. Honen arrazoia taldeko edo rol-esleipena izan daiteke, bestelako eskuragarritasun baldintzak edo jarduera ezkutuan egotea.';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa ikasgaietan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Ikasgaia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa ikasgaietan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Ikasgaia jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da, Feedbacka ikusi da, Feedbackari iruzkina egin da, Feedback ikusi ondoren berriz bidali da)';
-$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Ikasgaia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala ikasgaietan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Ikasgaia motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala ikasgaietan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Ikasgaia jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea, parte-hartzea besteekin)';
-$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Ikasgaia motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['insertedpage'] = 'Txertatutako orria';
 $string['invalidfile'] = 'Fitxategi baliogabea';
 $string['invalidid'] = 'Ez da modulu edo ikasgaiaren ID gainditu ikastaroan';
@@ -289,16 +289,18 @@ $string['leftduringtimed'] = 'Denbora-epe finkoko ikasgaia eten da.<br/>Berriz h
 $string['leftduringtimednoretake'] = 'Denbora-epe finkoko ikasgaia eten da eta<br/>ez dago berriz hasteko edo jarraitzeko baimenik.';
 $string['leftduringtimedsession'] = 'Denbora neurtua zuen ikasgai batetik irten zara.';
 $string['lesson:addinstance'] = 'Gehitu ikasgai berria';
-$string['lessonclosed'] = 'Ikasgai hau {$a} egunean itxi zen.';
-$string['lessoncloses'] = 'Ikasgaia ixten da';
-$string['lessoncloseson'] = 'Ikasgaia data honetan itxiko da: {$a}';
 $string['lesson:edit'] = 'Editatu ikasgaia';
-$string['lessoneventcloses'] = '{$a}-(r)en itxiera-data:';
-$string['lessoneventopens'] = '{$a}-(r)en hasiera-data';
-$string['lessonformating'] = 'Ikasgaia formateatzen';
 $string['lesson:grade'] = 'Kalifikatu ikasgaiaren entsegu motako galderak';
 $string['lesson:manage'] = 'Kudeatu ikasgaia';
 $string['lesson:manageoverrides'] = 'Kudeatu ikasgai-salbuespenak';
+$string['lesson:view'] = 'Ikusi ikasgaia';
+$string['lesson:viewreports'] = 'Ikusi ikasgaiaren txostenak';
+$string['lessonclosed'] = 'Ikasgai hau {$a} egunean itxi zen.';
+$string['lessoncloses'] = 'Ikasgaia ixten da';
+$string['lessoncloseson'] = 'Ikasgaia data honetan itxiko da: {$a}';
+$string['lessoneventcloses'] = '{$a}-(r)en itxiera-data:';
+$string['lessoneventopens'] = '{$a}-(r)en hasiera-data';
+$string['lessonformating'] = 'Ikasgaia formateatzen';
 $string['lessonmenu'] = 'Ikasgaiaren menua';
 $string['lessonname'] = 'Ikasgaia: {$a}';
 $string['lessonnotready'] = 'Ikasgai hau ez dago praktikatzeko prest. Zure {$a} (r)ekin harremanetan jarri, mesedez.';
@@ -307,8 +309,6 @@ $string['lessonopen'] = 'Ikasgai hau {$a} egunean irekiko da.';
 $string['lessonopens'] = 'Ikasgaia ireki da';
 $string['lessonpagelinkingbroken'] = 'Ez da lehenengo orririk aurkitu. Seguru aski ikasgaiaren orriarekiko esteka hautsita dago. Administratzailearekin harremanetan jarri, mesedez.';
 $string['lessonstats'] = 'Ikasgaiaren estatistikak';
-$string['lesson:view'] = 'Ikusi ikasgaia';
-$string['lesson:viewreports'] = 'Ikusi ikasgaiaren txostenak';
 $string['linkedmedia'] = 'Estekatutako media';
 $string['loginfail'] = 'Sarrerak huts egin du. Berriz saiatu, mesedez...';
 $string['lowscore'] = 'Puntuazio baxua';
@@ -320,7 +320,7 @@ $string['matchingpair'] = 'Lotzeko {$a}. bikotea';
 $string['maxgrade'] = 'Gehienezko kalifikazioa';
 $string['maxgrade_help'] = 'Balio honek ikasgai batean lor daitekeen gehienezko kalifikazioa adierazten du. 0 ezarriz gero, ikasgaia ez da kalifikazio-orrietan agertuko.';
 $string['maximumnumberofanswersbranches'] = 'Gehienezko erantzun-kopurua';
-$string['maximumnumberofanswersbranches_help'] = 'Ezarpen honek ikasgaian erabili ahalko den gehienezko erantzun-kopurua zehazten du. Egia/gezurra galderak soilik erabiltzen badira, 2 ezar daiteke. Edonoiz alda daiteke ezarpen hau, soilik irakasleak ikusten duenari eragiten diolako eta ez datuei.';
+$string['maximumnumberofanswersbranches_help'] = 'Ezarpen honek ikasgaian erabili ahalko den gehienezko erantzun-kopurua zehazten du. Egia/gezurra galderak soilik erabiltzen badira, 2 ezar daiteke. Edonoiz alda daiteke ezarpen hau, irakasleak ikusten duenari bakarrik eragiten diolako eta ez datuei.';
 $string['maximumnumberofattempts'] = 'Gehienezko saiakera-kopurua';
 $string['maximumnumberofattempts_help'] = 'Ezarpen honek zehazten du galdera bakoitzeko gehienezko saiakera-kopurua. Hainbat aldiz oker erantzunda gehienezko hori gainditzen denean, ikasgaiko hurrengo orria erakutsiko da.';
 $string['maximumnumberofattemptsreached'] = 'Gehienezko saiakera-kopurura iritsi zara. Hurrengo orrira jauzi';
@@ -405,8 +405,8 @@ $string['numericanswer'] = 'Erantzun numerikoa';
 $string['numericanswer_help'] = 'Zenbaki bat edo zenbaki tarte bat zehaztu dezakezu bi puntu (:) erabilita. Esaterako 2:5 zehaztuta 2 eta 5 arteko erantzunak zuzentzat emango dira, biak barne.';
 $string['offlinedatamessage'] = 'Saiakera honetan gailu mugikor batetik lan egin duzu. Datuak azkenengoz duela {$a} gorde ziren. Mesedez konprobatu ez duzula gorde gabeko aldaketarik.';
 $string['ongoing'] = 'Erakutsi metatutako puntuazioa';
-$string['ongoingcustom'] = 'Ikasgai hau gehienez {$a->score} punturekin balioesten da. Zuk {$a->score} puntu lortu duzu gehienezko {$a->currenthigh} puntutatik.';
 $string['ongoing_help'] = 'Gaituz gero, orri bakoitzak ikasleak lor daitezkeen puntu guztietatik zenbat lortu duen erakustiko du.';
+$string['ongoingcustom'] = 'Ikasgai hau gehienez {$a->score} punturekin balioesten da. Zuk {$a->score} puntu lortu duzu gehienezko {$a->currenthigh} puntutatik.';
 $string['ongoingnormal'] = 'Zuk {$a->viewed} galderatik {$a->correct} ondo erantzun duzu.';
 $string['onpostperpage'] = 'Mezu bakarra kalifikazioko';
 $string['openafterclose'] = 'Ezarri duzun hasiera-data itxiera-data baino beranduagokoa da.';
@@ -426,11 +426,11 @@ $string['overrideusereventname'] = '{$a->lesson} - Salbuespena';
 $string['overview'] = 'Laburpena';
 $string['overview_help'] = 'Ikasgaia hainbat orriz eta aukeran eduki-orriz osatuta dago. Orri batek eduki bat du eta normaleak galdera batekin bukatzen da. Galderaren erantzun bakoitzarekin jauzi bat dago lotuta. Jauzia erlatiboa izan daiteke, orri hau edo hurrengo orria, adibidez; edo erabatekoa, ikasgaiko orrietako bat zehaztuta. Eduki-orria ikasgaiko beste orri batzuetarako estekak dituen orria da, adibidez Eduki-taula bat.';
 $string['page'] = 'Orria: {$a}';
-$string['pageanswers'] = 'Orriaren erantzunak';
-$string['pagecontents'] = 'Orriaren edukiak';
 $string['page-mod-lesson-edit'] = 'Editatu ikasgaiaren orria';
 $string['page-mod-lesson-view'] = 'Ikusi edo aurreikusi ikasgaiaren orria';
 $string['page-mod-lesson-x'] = 'Ikasgaiaren edozein orri';
+$string['pageanswers'] = 'Orriaren erantzunak';
+$string['pagecontents'] = 'Orriaren edukiak';
 $string['pageresponses'] = 'Orriaren erantzunak';
 $string['pages'] = 'Orriak';
 $string['pagetitle'] = 'Orriaren izenburua';
@@ -486,7 +486,7 @@ $string['privacy:metadata:timer'] = 'Ikasgai-saiakeraren erregistroa';
 $string['privacy:metadata:timer:completed'] = 'Saiakera osatu den edo ez';
 $string['privacy:metadata:timer:lessontime'] = 'Jarduera jaso zen azken unea';
 $string['privacy:metadata:timer:starttime'] = 'Saiakera hasi zeneko unea';
-$string['privacy:metadata:timer:timemodifiedoffline'] = 'Mobile aplikaziotik jarduera jaso zen azken unea';
+$string['privacy:metadata:timer:timemodifiedoffline'] = 'Mobile app-tik jarduera jaso zen azken unea';
 $string['privacy:metadata:timer:userid'] = 'Erabiltzailearen IDa';
 $string['privacy:metadata:userpref:lessonview'] = 'Hobetsitako ikasgaiak editatzeko erakusketa-modua';
 $string['privacy:path:essayanswers'] = 'Entseguaren erantzunak';
@@ -495,13 +495,13 @@ $string['privacy:path:pages'] = 'Orriak';
 $string['processerror'] = 'Errorea gertatu da prozesamenduan!';
 $string['progressbar'] = 'Aurrerapen-barra';
 $string['progressbar_help'] = 'Gaituz gero, ikasgaiaren orrien beheko aldean osatze-mailaren gutxi gorabeherako ehunekoaren barra bat erakutsiko da.';
-$string['progressbarteacherwarning'] = '{$a} -(e)k ez du aurrerapen-barra ikusten';
+$string['progressbarteacherwarning'] = '{$a}(e)k ez du aurrerapen-barra ikusten';
 $string['progressbarteacherwarning2'] = 'Ikasgaia editatzeko baimena duzunez, zuk ez duzu aurrerapen-barra ikusiko';
 $string['progresscompleted'] = 'Ikasgai honen % {$a} osatu duzu';
-$string['qtype'] = 'Orri-mota';
+$string['qtype'] = 'Orri mota';
 $string['question'] = 'Galdera';
 $string['questionoption'] = 'Galdera';
-$string['questiontype'] = 'Galdera-mota';
+$string['questiontype'] = 'Galdera mota';
 $string['randombranch'] = 'Ausazko eduki-orria';
 $string['randompageinbranch'] = 'Eduki-orri baten barruko ausazko galdera';
 $string['rank'] = 'Bitartea';
@@ -515,7 +515,7 @@ $string['reports'] = 'Txostenak';
 $string['response'] = 'Erantzuna';
 $string['retakesallowed'] = 'Ikasgaia berriz hastea baimenduta';
 $string['retakesallowed_help'] = 'Gaituz gero, ikasleek behin baino gehiagotan erantzun ahal diote ikasgaiari.';
-$string['returnto'] = '{$a} -ra itzuli';
+$string['returnto'] = 'Itzuli hona: {$a}';
 $string['returntocourse'] = 'Ikastarora itzuli';
 $string['reverttodefaults'] = 'Itzuli ikasgaiaren balio lehenetsietara';
 $string['review'] = 'Berrikuspena';
@@ -542,9 +542,9 @@ $string['showanunseenpage'] = 'Erakutsi ikusi ez den orri bat';
 $string['singleanswer'] = 'Erantzun bakar bat';
 $string['skip'] = 'Utzi alde batera nabigazioa';
 $string['slideshow'] = 'Diaporama';
-$string['slideshowbgcolor'] = 'Diaporamaren atzeko kolorea';
-$string['slideshowheight'] = 'Diaporamaren altuera';
 $string['slideshow_help'] = 'Gaituz gero, ikasgaia diaporama gisa erakutsiko da, altuera eta zabalera finkoa duela.';
+$string['slideshowbgcolor'] = 'Diaporamaren atzeko planoaren kolorea';
+$string['slideshowheight'] = 'Diaporamaren altuera';
 $string['slideshowwidth'] = 'Diaporamaren zabalera';
 $string['startlesson'] = 'Hasi ikasgaia';
 $string['studentattemptlesson'] = '{$a->lastname}, {$a->firstname} (r)en {$a->attempt} saiakera';
@@ -556,7 +556,7 @@ $string['submit'] = 'Bidali';
 $string['submitname'] = 'Izena bidali';
 $string['teacherjumpwarning'] = 'Ikasgai honetan {$a->cluster} edo {$a->unseen} jauzia erabiltzen ari da. Bere ordez, hurrengo orrirako jauzia erabiliko da. Ikasle gisa sartu zaitez jauzi horiek probatzeko.';
 $string['teacherongoingwarning'] = 'Metatutako puntuazioa soilik ikasleari erakusten zaio. Ikasle gisa sartu zaitez metatutako puntuazioa probatzeko.';
-$string['teachertimerwarning'] = 'Denbora-neurgailua ikasleei erakusten zaie soilik. Denbora-neurgailua probatzeko ikasle gisa sartu.';
+$string['teachertimerwarning'] = 'Denbora-neurgailua soilik ikasleei erakusten zaie. Denbora-neurgailua probatzeko ikasle gisa sartu zaitez.';
 $string['thatsthecorrectanswer'] = 'Hauxe da erantzun zuzena';
 $string['thatsthewronganswer'] = 'Hauxe da erantzun okerra';
 $string['thefollowingpagesjumptothispage'] = 'Orri hauek honetarako jauzia dute';
@@ -575,7 +575,7 @@ $string['truefalse'] = 'Egia/gezurra';
 $string['unabledtosavefile'] = 'Igotako fitxategia ezin izan da gorde';
 $string['unknownqtypesnotimported'] = 'Onartzen ez diren galdera-motetako {$a} galdera ez dira inportatu';
 $string['unseenpageinbranch'] = 'Eduki-orrian ikusi ez den galdera';
-$string['unsupportedqtype'] = 'Galdera mota ez da onartzen ({$a})!';
+$string['unsupportedqtype'] = 'Onartzen ez den galdera mota ({$a})!';
 $string['updatedpage'] = 'Orria eguneratu da';
 $string['updatefailed'] = 'Eguneratzeak huts egin du';
 $string['updatepagenamed'] = 'Eguneratu orria: {$a}';
@@ -601,5 +601,5 @@ $string['xattempts'] = '{$a} saiakera';
 $string['youhaveseen'] = 'Ikasgai honetako orri bat edo gehiago ikusi duzu jadanik.<br />Ikusitako azken orritik hasi nahi al duzu?';
 $string['youranswer'] = 'Zure erantzuna';
 $string['yourcurrentgradeis'] = 'Oraingo zure kalifikazioa {$a} da';
-$string['yourcurrentgradeisoutof'] = 'Zure oraingo kalifikazioa {$a->grade} da gehienezko {$a->total}-(e)tik.';
+$string['yourcurrentgradeisoutof'] = 'Zure oraingo kalifikazioa {$a->grade} da gehienezko {$a->total}(e)tik.';
 $string['youshouldview'] = 'Gutxienez hau ikusi beharko zenuke: {$a}';

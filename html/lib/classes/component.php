@@ -617,7 +617,7 @@ $cache = '.var_export($cache, true).';
                 }
                 //XTEC ************ AFEGIT - Only enabled modules has to be showed
                 //2012.11.06  @sarjona
-                if (!is_enabled_in_agora($pluginname) ){
+                if (function_exists('is_enabled_in_agora') && !is_enabled_in_agora($pluginname) ){
                     continue;
                 }
                 //************ FI

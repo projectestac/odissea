@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'folder', language 'ca', version '3.8'.
  *
- * @package   folder
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     folder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,15 +37,15 @@ $string['downloadfolder'] = 'Descarrega la carpeta';
 $string['eventallfilesdownloaded'] = 'S\'ha descarregat l\'arxiu Zip o la carpeta';
 $string['eventfolderupdated'] = 'Carpeta actualitzada';
 $string['folder:addinstance'] = 'Afegeix una carpeta nova';
-$string['foldercontent'] = 'Fitxers i subcarpetes';
 $string['folder:managefiles'] = 'Gestiona fitxers al mòdul Carpeta';
 $string['folder:view'] = 'Visualitza el contingut de la carpeta';
+$string['foldercontent'] = 'Fitxers i subcarpetes';
 $string['indicator:cognitivedepth'] = 'Carpeta cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva assolida per l\'estudiant en un recurs de carpeta.';
 $string['indicator:socialbreadth'] = 'Carpeta social';
 $string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en la amplitud social assolida per l\'estudiant en un recurs de carpeta.';
 $string['maxsizetodownload'] = 'Mida màxima de la carpeta a descarregar (MB)';
-$string['maxsizetodownload_help'] = 'Mida màxima de la carpeta que es podrà descarregar com un fitxer comprimit. Si s\'estableix a zero, la mida de la carpeta serà il·limitada.';
+$string['maxsizetodownload_help'] = 'La mida màxima de la carpeta que es pot descarregar com a fitxer ZIP. Si es configura a zero, la mida de la carpeta descarregable és iŀlimitada.';
 $string['modulename'] = 'Carpeta';
 $string['modulename_help'] = 'El mòdul de carpeta permet que el professor mostri un nombre de fitxers relacionats dins una sola carpeta, la qual cosa redueix el desplaçament per la pàgina del curs. Un fitxer comprimit es pot carregar i descomprimir per visualitzar-lo, o es pot crear una carpeta buida i enviar-hi els fitxers.
 
@@ -61,7 +61,7 @@ $string['pluginadministration'] = 'Administració de carpetes';
 $string['pluginname'] = 'Carpeta';
 $string['privacy:metadata'] = 'El connector de recurs de carpeta no emmagatzema cap dada personal.';
 $string['search:activity'] = 'Carpeta';
-$string['showdownloadfolder'] = 'Mostra el botó de descàrrega de la carpeta';
+$string['showdownloadfolder'] = 'Mostra el botó de descàrrega de carpeta';
 $string['showdownloadfolder_help'] = 'Si s\'estableix a «Sí», es mostrarà un botó que permetrà de descarregar el contingut de la carpeta en un fitxer comprimit.';
 $string['showexpanded'] = 'Mostra les subcarpetes expandides.';
 $string['showexpanded_help'] = 'Si s\'estableix a «Sí», es mostraran per defecte les subcarpetes expandides. En cas contrari les subcarpetes es mostraran col·lapsades.';

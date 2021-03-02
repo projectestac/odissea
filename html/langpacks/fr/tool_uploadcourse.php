@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'fr', version '3.8'.
  *
- * @package   tool_uploadcourse
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploadcourse
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -113,14 +113,14 @@ $string['result'] = 'Résultat';
 $string['rowpreviewnum'] = 'Rangées à prévisualiser';
 $string['rowpreviewnum_help'] = 'Le nombre de rangées du fichier CSV à prévisualiser sur la page suivante. Cette option a pour but de limiter la taille de la page suivante.';
 $string['shortnametemplate'] = 'Modèle pour génération des noms abrégés';
-$string['shortnametemplate_help'] = 'Le nom abrégé du cours est affiché dans la navigation. Vous pouvez indiquer ici un modèle pour ces noms abrégés avec des variables (%f = nom complet, %i = identifiant) ou saisir une valeur initiale qui sera incrémentée.';
+$string['shortnametemplate_help'] = 'Le nom abrégé du cours est affiché dans la navigation. Vous pouvez indiquer ici un modèle pour ces noms abrégés avec des variables (%f = nom complet, %i = identifiant) ou saisir une valeur initiale qui sera incrémentée';
 $string['templatefile'] = 'Fichier de sauvegarde de cours modèle';
 $string['templatefile_help'] = 'Le fichier de cours sélectionné sera utilisé comme modèle pour tous les cours créés.';
 $string['unknownimportmode'] = 'Mode d\'importation inconnu';
 $string['updatemissing'] = 'Compléter les éléments manquants à partir du fichier CSV et des réglages par défaut';
 $string['updatemode'] = 'Mode de modification';
-$string['updatemodedoessettonothing'] = 'Le mode de modification choisi ne permet pas la modification';
 $string['updatemode_help'] = 'Si vous autorisez la modification des cours, vous devez aussi indiquer comment les modifier.';
+$string['updatemodedoessettonothing'] = 'Le mode de modification choisi ne permet pas la modification';
 $string['updateonly'] = 'Ne modifier que les cours existants';
 $string['updatewithdataonly'] = 'Ne modifier qu\'à partir des données CSV';
 $string['updatewithdataordefaults'] = 'Modifier à partir des données CSV et des réglages par défaut';

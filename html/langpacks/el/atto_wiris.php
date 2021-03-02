@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_wiris', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_wiris', language 'el', version '3.8'.
  *
- * @package   atto_wiris
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_wiris
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['error_connection'] = 'Παρουσιάστηκε κάποιο σφάλμα κατά τη φόρτωση του MathType';
+$string['pluginname'] = 'MathType από το WIRIS';
+$string['privacy:null_reason'] = 'Το ίδιο το MathType για Atto, δεν επηρρεάζει ούτε αποθηκεύει κανένα δεδομένο.';
 $string['wiris_cas_title'] = 'Αριθμομηχανή';
 $string['wiris_chem_editor_title'] = 'Εισαγωγή ενός χημικού τύπου - ChemType';
 $string['wiris_editor_title'] = 'Εισαγωγή μιας μαθηματικής εξίσωσης - MathType';

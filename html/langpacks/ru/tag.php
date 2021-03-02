@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'ru', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -102,16 +102,16 @@ $string['prevpage'] = 'Назад';
 $string['privacy:metadata:tag'] = 'Подробности о каждом уникальном теге хранятся вместе с описанием и другой связанной информацией';
 $string['privacy:metadata:tag:description'] = 'Описание тега.';
 $string['privacy:metadata:tag:flag'] = 'Помечен ли тег как несоответствующий.';
+$string['privacy:metadata:tag:name'] = 'Название тега (это нормализованная версия названия).';
+$string['privacy:metadata:tag:rawname'] = 'Название тега (это отображаемое название).';
+$string['privacy:metadata:tag:timemodified'] = 'Время, когда тег последний раз был изменен.';
+$string['privacy:metadata:tag:userid'] = 'ID пользователя, создавшего тег.';
 $string['privacy:metadata:taginstance'] = 'Связь между каждым тегом и местом, где он использован.';
 $string['privacy:metadata:taginstance:ordering'] = 'Относительный порядок для этого тега.';
 $string['privacy:metadata:taginstance:tagid'] = 'Ссылка на тег.';
 $string['privacy:metadata:taginstance:timecreated'] = 'Время, когда этот тег был связан с целевым элементом.';
 $string['privacy:metadata:taginstance:timemodified'] = 'Время, когда этот тег был изменен для целевого элемента.';
 $string['privacy:metadata:taginstance:tiuserid'] = 'В местах, где общий контент может быть пользователями индивидуально отмечен тегами, хранится владелец экземпляра тега.';
-$string['privacy:metadata:tag:name'] = 'Название тега (это нормализованная версия названия).';
-$string['privacy:metadata:tag:rawname'] = 'Название тега (это отображаемое название).';
-$string['privacy:metadata:tag:timemodified'] = 'Время, когда тег последний раз был изменен.';
-$string['privacy:metadata:tag:userid'] = 'ID пользователя, создавшего тег.';
 $string['ptags'] = 'Теги, указываемые пользователем (резделитель - запятая)';
 $string['relatedblogs'] = 'Последние записи блога с этим тегом';
 $string['relatedtags'] = 'Связанные теги';
@@ -147,11 +147,11 @@ $string['tag'] = 'Тег';
 $string['tagarea_blog_external'] = 'Записи во внешних  блогах';
 $string['tagarea_course'] = 'Курсы';
 $string['tagarea_course_modules'] = 'Элементы и ресурсы';
+$string['tagarea_post'] = 'Записи блогов';
+$string['tagarea_user'] = 'Интересы пользователей';
 $string['tagareaenabled'] = 'Включено';
 $string['tagareaname'] = 'Название';
-$string['tagarea_post'] = 'Записи блогов';
 $string['tagareas'] = 'Области тегов';
-$string['tagarea_user'] = 'Интересы пользователей';
 $string['tagcollection'] = 'Коллекция тегов';
 $string['tagcollection_help'] = 'Коллекции тегов — это наборы тегов для разных областей. Например, коллекция стандартных тегов может использоваться для отметки тегами курсов, тогда как интересы пользователей и теги записей в блогах могут быть в отдельной коллекции. Когда пользователь щелкает по тегу, страница тега показывает только элементы с этим тегом в той же коллекции. Теги могут быть автоматически добавлены в коллекцию, исходя из области, в которой они ставятся, или могут быть добавлены вручную в качестве стандартных тегов.';
 $string['tagcollections'] = 'Коллекции тегов';

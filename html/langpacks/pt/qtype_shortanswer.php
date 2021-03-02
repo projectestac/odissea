@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_shortanswer', language 'pt', version '3.8'.
  *
- * @package   qtype_shortanswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_shortanswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,9 +38,9 @@ $string['filloutoneanswer'] = 'Tem de inserir pelo menos uma resposta possível.
 $string['notenoughanswers'] = 'Necessita de inserir pelos menos {$a} respostas';
 $string['pleaseenterananswer'] = 'Insira uma resposta.';
 $string['pluginname'] = 'Resposta curta';
-$string['pluginnameadding'] = 'A adicionar pergunta de resposta curta';
-$string['pluginnameediting'] = 'A editar pergunta de resposta curta';
 $string['pluginname_help'] = 'Em resposta a uma pergunta (que pode incluir uma imagem) o aluno insere uma palavra ou uma frase curta. Podem existir várias respostas corretas, com diferentes notas associadas. Se a opção "Respeitar maiúsculas/minúsculas" estiver selecionada, pode associar diferentes notas a respostas como "palavra" ou "Palavra".';
 $string['pluginname_link'] = 'pergunta/tipo/respostacurta';
+$string['pluginnameadding'] = 'A adicionar pergunta de resposta curta';
+$string['pluginnameediting'] = 'A editar pergunta de resposta curta';
 $string['pluginnamesummary'] = 'Permite uma resposta de uma ou poucas palavras que são avaliadas com base em várias opções possíveis de resposta definidas pelo professor, as quais podem conter caracteres universais.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Resposta curta não armazena quaisquer dados pessoais.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'competency', language 'eu', version '3.8'.
  *
- * @package   competency
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     competency
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -136,7 +136,7 @@ $string['privacy:metadata:competency_usercompplan'] = 'Ikasketa-plan bateko konp
 $string['privacy:metadata:competency_userevidence'] = 'Aurretik ikasitakoaren ebidentzien erregistroa';
 $string['privacy:metadata:competency_userevidencecomp'] = 'Aurretik ikasitakoaren ebidentziekin lotutako konpetentzien erregistroa';
 $string['privacy:metadata:core_comments'] = 'Ikasketa-planetan eta konpetentzietan egindako iruzkinak';
-$string['privacy:metadata:evidence:action'] = 'Ebidentziekin hartutako ekintza-mota';
+$string['privacy:metadata:evidence:action'] = 'Ebidentziekin hartutako ekintza mota';
 $string['privacy:metadata:evidence:actionuserid'] = 'Ekintza egiten duen erabiltzailea';
 $string['privacy:metadata:evidence:desca'] = 'Estrapolatu daitekeen ebidentziaren deskribapenaren aukerazko parametroak';
 $string['privacy:metadata:evidence:desccomponent'] = 'Estrapolatu daitekeen ebidentziaren osagaia';
@@ -177,27 +177,27 @@ $string['taxonomy_outcome'] = 'Ikaste-emaitza';
 $string['taxonomy_practice'] = 'Praktika';
 $string['taxonomy_proficiency'] = 'Trebezia';
 $string['taxonomy_skill'] = 'Trebetasuna';
-$string['taxonomy_value'] = 'Balorea';
-$string['usercommentedonacompetency'] = '{$a->fullname}-(e)k iruzkina egin du "{$a->competency}" konpetentzian:
+$string['taxonomy_value'] = 'Balioa';
+$string['usercommentedonacompetency'] = '{$a->fullname}(e)k iruzkina egin du "{$a->competency}" konpetentzian:
 
 {$a->comment}
 
 Ikusi: {$a->url}';
-$string['usercommentedonacompetencyhtml'] = '<p>{$a->fullname}-(e)k iruzkina egin du "{$a->competency}" konpetentzian:</p>
+$string['usercommentedonacompetencyhtml'] = '<p>{$a->fullname}(e)k iruzkina egin du "{$a->competency}" konpetentzian:</p>
 <div>{$a->comment}</div>
 <p>Ikusi: <a href="{$a->url}">{$a->urlname}</a>.</p>';
-$string['usercommentedonacompetencysmall'] = '{$a->fullname}-(e)k iruzkina egin du "{$a->competency}" konpetentzian.';
-$string['usercommentedonacompetencysubject'] = '{$a}-(e)k iruzkina egin du konpetentzian.';
-$string['usercommentedonaplan'] = '{$a->fullname}-(e)k iruzkina egin du  "{$a->plan}" ikasketa-planean:
+$string['usercommentedonacompetencysmall'] = '{$a->fullname}(e)k iruzkina egin du "{$a->competency}" konpetentzian.';
+$string['usercommentedonacompetencysubject'] = '{$a}(e)k iruzkina egin du konpetentzian.';
+$string['usercommentedonaplan'] = '{$a->fullname}(e)k iruzkina egin du  "{$a->plan}" ikasketa-planean:
 
 {$a->comment}
 
 Ikusi: {$a->url}';
-$string['usercommentedonaplanhtml'] = '<p>{$a->fullname}-(e)k iruzkina egin du "{$a->plan}" ikasketa-planean:</p>
+$string['usercommentedonaplanhtml'] = '<p>{$a->fullname}(e)k iruzkina egin du "{$a->plan}" ikasketa-planean:</p>
 <div>{$a->comment}</div>
 <p>Ikusi: <a href="{$a->url}">{$a->urlname}</a>.</p>';
-$string['usercommentedonaplansmall'] = '{$a->fullname}-(e)k iruzkina egin du "{$a->plan}" ikasketa-planean.';
-$string['usercommentedonaplansubject'] = '{$a}-(e)k iruzkina egin du ikasketa-planean.';
+$string['usercommentedonaplansmall'] = '{$a->fullname}(e)k iruzkina egin du "{$a->plan}" ikasketa-planean.';
+$string['usercommentedonaplansubject'] = '{$a}(e)k iruzkina egin du ikasketa-planean.';
 $string['usercompetencystatus_idle'] = 'Ez dago aktiboa';
 $string['usercompetencystatus_inreview'] = 'Berrikusten';
 $string['usercompetencystatus_waitingforreview'] = 'Berrikusketaren zain';

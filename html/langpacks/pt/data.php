@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'pt', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -208,13 +208,13 @@ $string['includetags'] = 'Incluir palavaras-chave';
 $string['includetime'] = 'Incluir data de criação/modificação';
 $string['includeuserdetails'] = 'Incluir detalhes do utilizador';
 $string['indicator:cognitivedepth'] = 'Compreensão da Base de dados';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Base de dados.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão da Base de dados';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Base de dados durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Base de dados.';
 $string['indicator:socialbreadth'] = 'Socialização da Base de dados';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Base de dados.';
 $string['indicator:socialbreadthdef'] = 'Socialização da Base de dados';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Base de dados durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
-$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Base de dados.';
 $string['insufficiententries'] = 'são necessários mais registos para ver esta base de dados';
 $string['intro'] = 'Descrição';
 $string['invalidaccess'] = 'Esta página não foi acedida corretamente';
@@ -316,13 +316,13 @@ $string['privacy:metadata:data_content:content2'] = 'Conteúdo adicional 2';
 $string['privacy:metadata:data_content:content3'] = 'Conteúdo adicional 3';
 $string['privacy:metadata:data_content:content4'] = 'Conteúdo adicional 4';
 $string['privacy:metadata:data_content:fieldid'] = 'ID da definição do campo';
-$string['privacy:metadata:datafieldnpluginsummary'] = 'Campos para a atividade Base de dados';
 $string['privacy:metadata:data_records'] = 'Representa registos na atividade Base de dados';
 $string['privacy:metadata:data_records:approved'] = 'Estado da aprovação';
 $string['privacy:metadata:data_records:groupid'] = 'Grupo';
 $string['privacy:metadata:data_records:timecreated'] = 'Data e hora da criação do registo';
 $string['privacy:metadata:data_records:timemodified'] = 'Data e hora da última modificação';
 $string['privacy:metadata:data_records:userid'] = 'Utilizador que criou o registo';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Campos para a atividade Base de dados';
 $string['privacy:metadata:filepurpose'] = 'Ficheiro anexado ao registo da Base de dados';
 $string['privacy:metadata:ratingpurpose'] = 'Classificações nos registos da Base de dados';
 $string['privacy:metadata:tagpurpose'] = 'Palavras-chave no registo da base de dados';

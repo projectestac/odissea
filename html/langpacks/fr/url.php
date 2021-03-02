@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'url', language 'fr', version '3.8'.
  *
- * @package   url
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     url
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,12 +30,11 @@ $string['clicktoopen'] = 'Cliquer le lien {$a} pour ouvrir la ressource.';
 $string['configdisplayoptions'] = 'Sélectionner toutes les options à mettre à disposition des utilisateurs. Les réglages existants ne sont pas modifiés. Vous pouvez sélectionner plusieurs champs simultanément.';
 $string['configframesize'] = 'Cette valeur est la hauteur (en pixels) du cadre contenant la navigation. Elle est utilisée quand une page web ou un fichier déposé est affiché dans un cadre.';
 $string['configrolesinparams'] = 'Activer cette option si vous désirez inclure les noms des rôles (en français) dans la liste des paramètres disponibles.';
-$string['configsecretphrase'] = 'Ce texte secret est utilisé pour générer une valeur cryptée pouvant être envoyée vers des serveurs en tant que paramètre. La valeur cryptée est calculée par le hachage md5 de l\'adresse IP courante, suivie de votre texte secret. Cette valeur n\'est pas à toute épreuve, car l\'adresse IP peut changer et est souvent partagée par plusieurs ordinateurs.';
+$string['configsecretphrase'] = 'Ce texte secret est utilisé pour générer une valeur chiffrée pouvant être envoyée vers des serveurs en tant que paramètre. La valeur chiffrée est le hachage md5 de l\'adresse IP actuelle, suivi de votre texte secret. Cette valeur n\'est pas à toute épreuve, car l\'adresse IP peut changer et est souvent partagée par plusieurs ordinateurs.';
 $string['contentheader'] = 'Contenu';
 $string['createurl'] = 'Créer une URL';
 $string['displayoptions'] = 'Options d\'affichage disponibles';
 $string['displayselect'] = 'Affichage';
-$string['displayselectexplain'] = 'Choisir le type d\'affichage. Tous les types ne sont pas adéquats pour toutes les URLs.';
 $string['displayselect_help'] = 'Ce réglage, ainsi que le type de fichier de l\'URL et la capacité du navigateur à intégrer des objets (<i>embedding</i>), détermine la façon dont l\'URL est affichée. Les options peuvent être :
 
 * Automatique : la meilleure option d\'affichage pour l\'URL concernée est automatiquement sélectionnée
@@ -44,16 +43,17 @@ $string['displayselect_help'] = 'Ce réglage, ainsi que le type de fichier de l\
 * Fenêtre surgissante : l\'URL est affichée dans une nouvelle fenêtre de navigateur sans menu ni barre d\'adresse
 * Dans un cadre : l\'URL est affichée dans un cadre en dessous de la barre de navigation et de la description de l\'URL
 * Nouvelle fenêtre : l\'URL est affichée dans une nouvelle fenêtre du navigateur, avec menus et barre d\'adresse';
+$string['displayselectexplain'] = 'Choisir le type d\'affichage. Tous les types ne sont pas adéquats pour toutes les URLs.';
 $string['externalurl'] = 'URL externe';
 $string['framesize'] = 'Hauteur du cadre';
 $string['indicator:cognitivedepth'] = 'URL : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource URL.';
 $string['indicator:cognitivedepthdef'] = 'URL : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les ressources « URL » (niveaux : pas de vue, vue).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource URL.';
 $string['indicator:socialbreadth'] = 'URL : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource URL.';
 $string['indicator:socialbreadthdef'] = 'URL : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les ressources « URL » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une ressource URL.';
 $string['invalidstoredurl'] = 'Impossible d\'afficher cette ressource : l\'URL n\'est pas valide.';
 $string['invalidurl'] = 'L\'URL saisie n\'est pas valide';
 $string['modulename'] = 'URL';

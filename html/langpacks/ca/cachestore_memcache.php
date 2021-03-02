@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,32 +12,32 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'ca', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcache', language 'ca', version '3.8'.
  *
- * @package   cachestore_memcache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_memcache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['clustered'] = 'Habilita servidors en clúster';
-$string['clusteredheader'] = 'Divideix els servidors';
 $string['clustered_help'] = 'Això s\'utilitza per permetre sols lectura, permet funcionalitats múltiples.
 
 L\'ús previst és crear un magatzem millorat per a les configuracions de càrrega. El magatzem s\'ha pogut recuperar d\'un servidor (normalment localhost), però està configurat per molts (tots els servidors del grup). Per a les memòries cau amb alts coeficients de lectura per a configurar els coeficients, això estalvia una quantitat significativa de sobrecàrrega de la xarxa.
 
 Quan s\'habilita aquesta configuració, el servidor especificat serà utilitzat per recuperar.';
+$string['clusteredheader'] = 'Divideix els servidors';
 $string['pluginname'] = 'Memòria cau';
 $string['prefix'] = 'Prefix de la clau';
 $string['prefix_help'] = 'Aquest prefix s\'utilitza per a tots els noms claus al servidor de memòria cau.
 * Si només teniu una instància Moodle fent servir aquest servidor, podeu deixar aquest valor per defecte. * A causa de les restriccions de longitud de clau, només es permet un màxim de 5 caràcters.';
 $string['prefixinvalid'] = 'Prefix invàlid. Sols podeu utilitzar a-z A-Z 0-9-_.';
 $string['servers'] = 'Servidors';
-$string['serversclusterinvalid'] = 'Caldrà exactament un servidor quan s\'habiliti el clúster.';
 $string['servers_help'] = 'Això configura els servidors que han de ser utilitzats per aquest adaptador de memòria cau. Els servidors s\'han de definir un per línia, i consisteixen en una adreça de servidor i, opcionalment, un port i el pes. Si no es proporciona cap port, s\'utilitza el port per defecte (11211).
 Per exemple:
 <pre>
@@ -47,11 +46,12 @@ adreçaip: port
 nomservidor:port:pes </pre>
 
 Si habilita a sota «Habilita servidors en clúster», hi ha d\'haver un sol servidor dels enumerats aquí. Això sol ser un nom que sempre es resol a l\'equip local, com 127.0.0.1 o localhost.';
+$string['serversclusterinvalid'] = 'Caldrà exactament un servidor quan s\'habiliti el clúster.';
 $string['sessionhandlerconflict'] = 'Avís: Una instància de memòria cau  ({$a}) ha de ser configurada per usar el mateix servidor de memòries cau a les sessions. Purgar totes les memòries cau produirà que les sessions es purguin també.';
 $string['setservers'] = 'Configura els servidors';
 $string['setservers_help'] = 'Aquesta és la llista de servidors que s\'actualitzaran quan les dades siguin modificades a la memòria cau. En general, es posa el nom complet de cada servidor al conjunt.
 **Cal** incloure el servidor enumerat a la llista *Servidors* de més amunt, encara que sigui en un nom d\'amfitrió diferent.
-Els servidors han d\'estar definits un per línia, que consisteix en una adreça de servidor i, de forma opcional, un port.
+Els servidors han d\'estar definits un per línia, que consisteix en una adreça de servidor i, de manera opcional, un port.
 Si no es proporciona cap port, s\'usa el port per defecte (11211).
 
 Per exemple:

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'ca', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,6 @@ $string['configpopupwidth'] = 'Quina amplada han de tenir per defecte les noves 
 $string['contentheader'] = 'Contingut';
 $string['displayoptions'] = 'Opcions disponibles per visualitzar';
 $string['displayselect'] = 'Mostra';
-$string['displayselectexplain'] = 'Tria el tipus de visualització, dissortadament tots els tipus no estan disponibles per tots els fitxers.';
 $string['displayselect_help'] = 'Aquest paràmetre, junt amb el tipus de fitxer i si el navegador permet la incrustació, determina com es mostra el fitxer. Les opcions poden incloure:
 
 * Automàtic - Se selecciona de forma automàtica la millor opció per visualitzar el tipus de fitxer.
@@ -59,6 +58,7 @@ $string['displayselect_help'] = 'Aquest paràmetre, junt amb el tipus de fitxer 
 * Marc - El fitxer es mostra dins d\'un marc sota la barra de navegació i la descripció del fitxer
 
 * Finestra nova - El fitxer es mostra en una finestra nova del navegador amb menús i barra d\'adreces';
+$string['displayselectexplain'] = 'Tria el tipus de visualització, dissortadament tots els tipus no estan disponibles per tots els fitxers.';
 $string['dnduploadresource'] = 'Crea un recurs de fitxer';
 $string['encryptedcode'] = 'Codi xifrat';
 $string['filenotfound'] = 'No s\'ha trobat el fitxer';
@@ -96,13 +96,13 @@ $string['popupwidthexplain'] = 'Especifica l\'amplària per defecte de les fines
 $string['printintro'] = 'Mostra la descripció del recurs';
 $string['printintroexplain'] = 'Voleu mostrar la descripció del recurs per sota del contingut? Algunes pàgines no mostren la descripció malgrat estigui activat.';
 $string['resource:addinstance'] = 'Afegeix un recurs nou';
+$string['resource:exportresource'] = 'Exporta el recurs';
+$string['resource:view'] = 'Veure recurs';
 $string['resourcecontent'] = 'Fitxers i subcarpetes';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Exporta el recurs';
-$string['resource:view'] = 'Veure recurs';
 $string['search:activity'] = 'Fitxer';
 $string['selectmainfile'] = 'Seleccioneu el fitxer principal prement la icona a la vora del nom.';
 $string['showdate'] = 'Mostra la data de la càrrega/modificació';

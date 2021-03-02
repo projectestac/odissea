@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cachestore_memcached', language 'ca', version '3.8'.
  *
- * @package   cachestore_memcached
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_memcached
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['bufferwrites'] = 'Habilita la memòria intermèdia';
 $string['bufferwrites_help'] = 'Habilita o inhabilita la memòria intermèdia d\'entrada/sortida. Habilitar la memòria intermèdia d\'entrada/sortida provoca que les ordres d\'emmagatzematge vagin a la memòria intermèdia en lloc de ser enviades. Qualsevol acció que recuperi les dades fa que les dades de la memòria intermèdia s\'enviïn a la connexió remota. Abandonar la connexió o el tancament de la connexió també farà que les dades emmagatzemades en la memòria intermèdia siguin enviades a la connexió remota.';
 $string['clustered'] = 'Habilita servidors en clúster';
-$string['clusteredheader'] = 'Divideix els servidors';
 $string['clustered_help'] = 'Això s\'utilitza per permetre sols lectura, permet funcionalitats múltiples.
 
 L\'ús previst és crear un magatzem millorat per a les configuracions de càrrega. El magatzem s\'ha pogut recuperar d\'un servidor (normalment localhost), però està configurat per molts (tots els servidors del grup). Per a les memòries cau amb alts coeficients de lectura per a configurar els coeficients, això estalvia una quantitat significativa de sobrecàrrega de la xarxa.
 
 Quan s\'habilita aquesta configuració, el servidor especificat serà utilitzat per recuperar.';
+$string['clusteredheader'] = 'Divideix els servidors';
 $string['hash'] = 'Mètode resum';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'Per defecte (pas a pas)';
@@ -59,7 +59,6 @@ $string['serialiser_igbinary'] = 'El serializador «igbinary».';
 $string['serialiser_json'] = 'El serialitzador JSON';
 $string['serialiser_php'] = 'El serialitzador per defecte de PHP';
 $string['servers'] = 'Servidors';
-$string['serversclusterinvalid'] = 'Caldrà exactament un servidor quan s\'habiliti el clúster.';
 $string['servers_help'] = 'Això configura els servidors que han de ser utilitzats per aquest adaptador de memòria cau. Els servidors s\'han de definir un per línia, i es componen d\'una adreça de servidor i, opcionalment, un port i pes. Si no es proporciona cap port, s\'utilitza el port per defecte (11211).
 Per exemple:
 <pre> server.url.com
@@ -68,6 +67,7 @@ nom_servidor: port: pes
 </pre>
 
 Si habilita a sota «Habilita servidors en clúster», hi ha d\'haver un sol servidor dels enumerats aquí. Això sol ser un nom que sempre es resol a l\'equip local, com 127.0.0.1 o localhost.';
+$string['serversclusterinvalid'] = 'Caldrà exactament un servidor quan s\'habiliti el clúster.';
 $string['sessionhandlerconflict'] = 'Avís: Una instància de memòria cau  ({$a}) ha de ser configurada per usar el mateix servidor de memòries cau a les sessions. Purgar totes les memòries cau produirà que les sessions es purguin també.';
 $string['setservers'] = 'Configura els servidors';
 $string['setservers_help'] = 'Aquesta és la llista de servidors que s\'actualitzaran quan les dades siguin modificades a la memòria cau. En general, es posa el nom complet de cada servidor al conjunt.

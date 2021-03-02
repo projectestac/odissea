@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_essay', language 'ja', version '3.8'.
  *
- * @package   qtype_essay
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_essay
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,9 +44,9 @@ $string['mustrequirefewer'] = 'あなたが許可している以上の添付を�
 $string['nlines'] = '{$a} 行';
 $string['nonexistentfiletypes'] = '次のファイルタイプは認識されませんでした: {$a}';
 $string['pluginname'] = '作文問題';
+$string['pluginname_help'] = '問題への解答において解答者は１つまたはそれ以上のファイルをアップロードまたはオンラインでテキストを入力することができます。解答は手動で評定する必要があります。';
 $string['pluginnameadding'] = '作文問題の追加';
 $string['pluginnameediting'] = '作文問題の編集';
-$string['pluginname_help'] = '問題への解答において解答者は１つまたはそれ以上のファイルをアップロードまたはオンラインでテキストを入力することができます。解答は手動で評定する必要があります。';
 $string['pluginnamesummary'] = 'ファイルアップロードまたはオンラインテキストによる解答を許可します。これは手動で評定する必要があります。';
 $string['privacy:metadata'] = '作文問題タイププラグインはいかなる個人データも保存しません。';
 $string['responsefieldlines'] = '入力ボックスサイズ';
@@ -56,5 +56,5 @@ $string['responsenotrequired'] = 'テキスト入力は任意です';
 $string['responseoptions'] = '回答オプション';
 $string['responserequired'] = 'テキスト必須';
 $string['responsetemplate'] = '解答テンプレート';
-$string['responsetemplateheader'] = '解答テンプレート';
 $string['responsetemplate_help'] = 'ここで入力されたテキストは問題の新しい解答開始時に解答入力ボックス内に表示されます。';
+$string['responsetemplateheader'] = '解答テンプレート';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability', language 'it', version '3.8'.
  *
- * @package   availability
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,12 +38,18 @@ $string['hidden_individual'] = 'Nascosto finché l\'utente non soddisfa la condi
 $string['hidden_marker'] = '(Altrimenti nascosto)';
 $string['hide_verb'] = 'Click per nascondere';
 $string['invalid'] = 'Criterio da impostare';
-$string['itemheading'] = '{$a->number} {$a->type} criteri di accesso';
 $string['item_unknowntype'] = 'Questo criterio richiede un plugin che non è disponibile (Se desideri rimuovere il criterio, puoi eliminarlo)';
+$string['itemheading'] = '{$a->number} {$a->type} criteri di accesso';
 $string['label_multi'] = 'Criteri richiesti per l\'accesso';
 $string['label_sign'] = 'Tipo di criterio di accesso';
 $string['list_and'] = 'Tutti:';
 $string['list_and_hidden'] = 'Tutti (altrimenti attività nascosta):';
+$string['list_or'] = 'Almeno uno:';
+$string['list_or_hidden'] = 'Almeno uno (altrimenti attività nascosta):';
+$string['list_root_and'] = 'Condizioni per l\'accesso:';
+$string['list_root_and_hidden'] = 'Condizioni per l\'accesso (attività nascosta):';
+$string['list_root_or'] = 'Condizioni alternative per l\'accesso:';
+$string['list_root_or_hidden'] = 'Condizioni alternative per l\'accesso (attività nascosta):';
 $string['listheader_multi_after'] = 'seguenti criteri';
 $string['listheader_multi_and'] = 'tutti i';
 $string['listheader_multi_before'] = 'soddisfare';
@@ -52,12 +58,6 @@ $string['listheader_sign_before'] = 'Lo studente';
 $string['listheader_sign_neg'] = 'non deve';
 $string['listheader_sign_pos'] = 'deve';
 $string['listheader_single'] = 'soddisfare il seguente criterio';
-$string['list_or'] = 'Almeno uno:';
-$string['list_or_hidden'] = 'Almeno uno (altrimenti attività nascosta):';
-$string['list_root_and'] = 'Condizioni per l\'accesso:';
-$string['list_root_and_hidden'] = 'Condizioni per l\'accesso (attività nascosta):';
-$string['list_root_or'] = 'Condizioni alternative per l\'accesso:';
-$string['list_root_or_hidden'] = 'Condizioni alternative per l\'accesso (attività nascosta):';
 $string['manageplugins'] = 'Gestione criteri di accesso';
 $string['missingplugin'] = 'Gestione plugin criteri di accesso';
 $string['or'] = 'or';
@@ -65,7 +65,7 @@ $string['privacy:metadata'] = 'Il sottosistema "Criteri di accesso" Criteri di a
 $string['restrictaccess'] = 'Condizioni per l\'accesso';
 $string['restrictbygroup'] = 'Aggiungi criterio di accesso basato su gruppi/raggruppamenti.';
 $string['setheading'] = 'Insieme {$a->number} di  {$a->count} criteri';
+$string['show_verb'] = 'Click per visualizzare disabilitata';
 $string['shown_all'] = 'Visualizzato disabilitato se l\'utente non soddisfa le condizioni';
 $string['shown_individual'] = 'Visualizzato disabilitato se l\'utente non soddisfa la condizione';
-$string['show_verb'] = 'Click per visualizzare disabilitata';
 $string['unknowncondition'] = 'Criterio sconosciuto (plugin criterio eliminato)';

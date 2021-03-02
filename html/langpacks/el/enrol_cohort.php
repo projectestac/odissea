@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,27 +12,28 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_cohort', language 'el', version '3.8'.
  *
- * @package   enrol_cohort
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_cohort
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Προσθήκη σε ομάδα';
 $string['assignrole'] = 'Ανάθεση ρόλου';
-$string['cohort:config'] = 'Ρύθμιση στιγμιότυπων (συγχρονισμού) ενός συνόλου χρηστών';
+$string['cohort:config'] = 'Ρύθμιση στιγμιοτύπων (συγχρονισμού) ενός συνόλου χρηστών';
 $string['cohort:unenrol'] = 'Ακύρωση εγγραφής χρηστών σε αναστολή';
 $string['creategroup'] = 'Δημιουργία νέας ομάδας';
 $string['defaultgroupnametext'] = '{$a->name} σύνολο χρηστών {$a->increment}';
 $string['enrolcohortsynctask'] = 'Εργασία συγχρονισμού εγγραφής συνόλου χρηστών';
 $string['instanceexists'] = 'Αυτό το σύνολο χρηστών είναι ήδη συγχρονισμένο με τον επιλεγμένο ρόλο';
 $string['pluginname'] = 'Συγχρονισμός συνόλων χρηστών';
-$string['pluginname_desc'] = 'Το πρόσθετο εγγραφής συνόλων χρηστών συγχρονίζει τα μέλη ενός συνόλου χρηστών με τους συμμετέχοντες ενός μαθήματος (εγγράφει τα μη εγγεγραμμένα).';
+$string['pluginname_desc'] = 'Το πρόσθετο εγγραφής συνόλων χρηστών συγχρονίζει τα μέλη ενός συνόλου χρηστών με τους συμμετέχοντες ενός μαθήματος (εγγράφει τα μη εγγεγραμένα).';
 $string['privacy:metadata:core_group'] = 'Το πρόσθετο εγγραφής συνόλου χρηστών μπορεί να δημιουργήσει μια νέα ομάδα ή να χρησιμοποιήσει μια υπάρχουσα ομάδα για να προσθέσει όλα τα μέλη του συνόλου χρηστών.';
 $string['status'] = 'Ενεργό';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'editor_atto', language 'eu', version '3.8'.
  *
- * @package   editor_atto
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     editor_atto
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['autosavefailed'] = 'Ezin izan da zerbitzarira konektatu. Orri hau berriz bidaltzen baduzu, agian aldaketak galduko dira.';
 $string['autosavefrequency'] = 'Automatikoki gordetzeko maiztasuna';
-$string['autosavefrequency_desc'] = 'Gordetze automatikoen arteko segundu-kopurua da hau. Attok editoreko testua automatikoki gordeko du ezarpen honen arabera, eta horrela testua automatikoki berreskuratu ahal izango da erabiltzaile berdina formulario horretara bueltatzen denean.';
+$string['autosavefrequency_desc'] = 'Gordetze automatikoen arteko segundo-kopurua da hau. Attok editoreko testua automatikoki gordeko du ezarpen honen arabera, eta horrela testua automatikoki berreskuratu ahal izango da erabiltzaile berdina formulario horretara bueltatzen denean.';
 $string['autosaves'] = 'Editoreko gordetze-automatikoaren informazioa';
 $string['autosavesucceeded'] = 'Zirriborroa gorde da.';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
@@ -39,8 +39,8 @@ $string['errorpluginisusedtwice'] = '\'{$a}\' plugina bi aldiz erabili da; plugi
 $string['errorpluginnotfound'] = '\'{$a}\' plugina ezin da erabili; badirudi ez dagoela instalatuta.';
 $string['errortextrecovery'] = 'Zoritxarrez zirriborroa ezin izan da berrezarri.';
 $string['infostatus'] = 'Informazioa';
-$string['pluginname'] = 'Atto HTML editorea';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['pluginname'] = 'Atto HTML editorea';
 $string['privacy:metadata:database:atto_autosave'] = 'Automatikoki gordetako testu-editorearen zirriborroak.';
 $string['privacy:metadata:database:atto_autosave:drafttext'] = 'Gorde zen testua.';
 $string['privacy:metadata:database:atto_autosave:timemodified'] = 'Edukia gorde zeneko unea.';

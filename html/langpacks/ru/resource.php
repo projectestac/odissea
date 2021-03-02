@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'ru', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,7 +44,6 @@ $string['configpopupwidth'] = 'Какой по умолчанию должна �
 $string['contentheader'] = 'Содержимое';
 $string['displayoptions'] = 'Доступные варианты отображения';
 $string['displayselect'] = 'Способ отображения';
-$string['displayselectexplain'] = 'Выберите вариант отображения. К сожалению, не все варианты подходят ко всем типам файлов.';
 $string['displayselect_help'] = 'Этот параметр (а также тип файла и возможности браузера по внедрению содержимого) определяет способ отображения файла. Параметр может принимать значения:
 
 * Автоматически - Наиболее подходящий режим отображения подбирается автоматически в зависимости от типа файла
@@ -54,6 +53,7 @@ $string['displayselect_help'] = 'Этот параметр (а также тип
 * Во всплывающем окне - Файл открывается во всплывающем окне без меню и адресной строки
 * В фрейме - Файл отображается в отдельном фрейме под панелью навигации и описанием файла
 * В новом окне - Файл открывается в новом окне браузера с меню и адресной строкой';
+$string['displayselectexplain'] = 'Выберите вариант отображения. К сожалению, не все варианты подходят ко всем типам файлов.';
 $string['dnduploadresource'] = 'Создать ресурс «Файл»';
 $string['encryptedcode'] = 'Зашифрованный код';
 $string['filenotfound'] = 'Извините, файл не найден.';
@@ -66,6 +66,8 @@ $string['indicator:cognitivedepth'] = 'Файл: познавательный а
 $string['indicator:cognitivedepth_help'] = 'Этот показатель основан на глубине познания, достигнутой студентом при работе с ресурсом Файл.';
 $string['indicator:socialbreadth'] = 'Файл: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Файл.';
+$string['indicator:socialbreadthdef'] = 'Файл: социальный аспект';
+$string['indicator:socialbreadthdef_help'] = 'Участник достиг этого процента социальной активности, предлагаемой ресурсами Файл в течение этого интервала анализа (Уровни = нет участия, единственный участник)';
 $string['legacyfiles'] = 'Миграция файла из старого курса';
 $string['legacyfilesactive'] = 'Активно';
 $string['legacyfilesdone'] = 'Завершено';
@@ -95,13 +97,13 @@ $string['popupwidthexplain'] = 'Указывает ширину всплываю
 $string['printintro'] = 'Выводить описание ресурса';
 $string['printintroexplain'] = 'Выводить ли описание ресурса под содержимым? При некоторых вариантах отображения, описание ресурса не может быть выведено, даже если параметр включен.';
 $string['resource:addinstance'] = 'Добавлять новые ресурсы';
+$string['resource:exportresource'] = 'Экспортировать ресурс';
+$string['resource:view'] = 'Просматривать ресурс';
 $string['resourcecontent'] = 'Файлы и вложенные папки';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->type}, {$a->size}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'Экспортировать ресурс';
-$string['resource:view'] = 'Просматривать ресурс';
 $string['search:activity'] = 'Файл';
 $string['selectmainfile'] = 'Выберите основной файл, нажав на иконку рядом с именем файла.';
 $string['showdate'] = 'Показать дату загрузки/изменения';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'ko', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['blogaboutthis'] = '{$a->type} 관련 블로그';
 $string['blogaboutthiscourse'] = '본 강좌에 대한 항목 추가';
 $string['blogaboutthismodule'] = '{$a} 에 대한 항목 추가';
 $string['blogadministration'] = '블로그 관리';
-$string['blogdeleteconfirm'] = '이 블로그를 삭제할까요?';
+$string['blogdeleteconfirm'] = '이 블로그 게시글을 삭제할까요?';
 $string['blogdisable'] = '블로깅이 활성화되어 있지 않음!';
 $string['blogentries'] = '블로그 항목';
 $string['blogentriesabout'] = '{$a} 에 대한 블로그 항목';
@@ -126,12 +126,6 @@ $string['permalink'] = 'Permalink';
 $string['personalblogs'] = '사용자는 자신의 블로그만 볼 수 있습니다.';
 $string['preferences'] = '환경 설정';
 $string['publishto'] = '게시';
-$string['publishtocourse'] = '강좌에 공개';
-$string['publishtocourseassoc'] = '연동된 강좌의 구성원';
-$string['publishtocourseassocparam'] = '{$a} 의 구성원';
-$string['publishtogroup'] = '모둠에 공개';
-$string['publishtogroupassoc'] = '연동된 강좌의 모둠 구성원';
-$string['publishtogroupassocparam'] = '{$a} 의 모둠 구성원';
 $string['publishto_help'] = '<p>여기에는 세가지 설정이 있습니다.</p>
 
 <p><b>나(기본값)</b> - 여러분과 관리자만 읽을 수 있다.</p>
@@ -139,13 +133,19 @@ $string['publishto_help'] = '<p>여기에는 세가지 설정이 있습니다.</
 <p><b>사이트</b> - 이 사이트에 등록한 사람들에게만 읽을 권한을 준다.</p>
 
 <p><b>모두</b> - 손님을 비롯해 전세계 어느 누구라도 내용을 읽을 수 있다.</p>';
+$string['publishtocourse'] = '강좌에 공개';
+$string['publishtocourseassoc'] = '연동된 강좌의 구성원';
+$string['publishtocourseassocparam'] = '{$a} 의 구성원';
+$string['publishtogroup'] = '모둠에 공개';
+$string['publishtogroupassoc'] = '연동된 강좌의 모둠 구성원';
+$string['publishtogroupassocparam'] = '{$a} 의 모둠 구성원';
 $string['publishtonoone'] = '자신에게만(초안)';
 $string['publishtosite'] = '이 사이트에 있는 누구에게나';
 $string['publishtoworld'] = '누구에게나';
 $string['readfirst'] = '필독';
 $string['relatedblogentries'] = '관련 항목';
 $string['retrievedfrom'] = '가져온 곳';
-$string['rssfeed'] = '블로그 RSS 송출';
+$string['rssfeed'] = 'Blog RSS 피드';
 $string['searchterm'] = '검색: {$a}';
 $string['settingsupdatederror'] = '오류발생. 블로그 사용자 설정을 업데이트할 수 없습니다.';
 $string['siteblogdisable'] = '사이트 블로그가 활성화되어 있지 않음';
@@ -158,7 +158,7 @@ $string['tagtext'] = '태그문장';
 $string['timefetched'] = '최근 동기화 시각';
 $string['timewithin'] = '최근 사용한 태그 표시';
 $string['updateentrywithid'] = '게시물 업데이트';
-$string['url'] = '웹 주소';
+$string['url'] = 'RSS 피드 URL';
 $string['url_help'] = '외부 블로그의 RSS 피드 주소를 적으시오';
 $string['useblogassociations'] = '블로그 연동 활성화';
 $string['useexternalblogs'] = '외부 블로그 활성화';

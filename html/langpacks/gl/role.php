@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'gl', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,11 +43,11 @@ $string['analytics:listinsights'] = 'Listar ideas';
 $string['analytics:listowninsights'] = 'Listar as súas propias ideas';
 $string['analytics:managemodels'] = 'Xestionar modelos';
 $string['archetype'] = 'Arquetipo de rol';
+$string['archetype_help'] = 'O rol arquetipo determina os permisos cando se restablece un rol aos valores predeterminados. Tamén determina os novos permisos para o rol cando se anova o sitio.';
 $string['archetypecoursecreator'] = 'ARQUETIPO: Creador de cursos';
 $string['archetypeeditingteacher'] = 'ARQUETIPO: Profesor con permiso de edición';
 $string['archetypefrontpage'] = 'ARQUETIPO: Usuario autenticado na páxina de portada';
 $string['archetypeguest'] = 'ARQUETIPO: Convidado';
-$string['archetype_help'] = 'O rol arquetipo determina os permisos cando se restablece un rol aos valores predeterminados. Tamén determina os novos permisos para o rol cando se anova o sitio.';
 $string['archetypemanager'] = 'ARQUETIPO: Xestor';
 $string['archetypestudent'] = 'ARQUETIPO: Alumno';
 $string['archetypeteacher'] = 'ARQUETIPO: Profesor sen permiso de edición';
@@ -62,8 +62,8 @@ $string['assignrole'] = 'Asignar roles';
 $string['assignrolenameincontext'] = 'Asignar rol «{$a->role}» en {$a->context}';
 $string['assignroles'] = 'Asignar roles';
 $string['assignroles_help'] = 'Ao asignar un rol a un usuario nun contexto, concédenselle os permisos propios dese rol, para o contexto actual e todos os contextos inferiores. Por exemplo, se a un usuario se lle asigna o rol de alumno nun curso, terá o rol de alumno en todas as actividades e nos bloques dentro do curso.';
-$string['assignrolesin'] = 'Asignar roles en {$a}';
 $string['assignroles_link'] = 'admin/roles/assign';
+$string['assignrolesin'] = 'Asignar roles en {$a}';
 $string['assignrolesrelativetothisuser'] = 'Asignar roles relativos a este usuario';
 $string['backtoallroles'] = 'Volver á lista de todos os roles';
 $string['backup:anonymise'] = 'Facer anónimos os datos de usuario na copia de seguranza';
@@ -81,13 +81,13 @@ $string['badges:configuremessages'] = 'Mensaxes para configurar unha insignia';
 $string['badges:createbadge'] = 'Crear/duplicar unha insignia';
 $string['badges:deletebadge'] = 'Eliminar insignias';
 $string['badges:earnbadge'] = 'Gañar unha insignia';
-$string['badges:manageglobalsettings'] = 'Configuracións globais para xestionar insignias';
+$string['badges:manageglobalsettings'] = 'Axustes globais para xestionar insignias';
 $string['badges:manageownbadges'] = 'Ver e xestionar as insignias gañadas por Vostede';
 $string['badges:revokebadge'] = 'Revogar a insignia dun usuario';
 $string['badges:viewawarded'] = 'Ver os usuarios que gañaron unha insignia específica sen poder outorgar unha insignia';
 $string['badges:viewbadges'] = 'Ver as insignias dispoñíbeis sen telas gañado';
 $string['badges:viewotherbadges'] = 'Ver as insignias públicas nos perfís doutros usuarios';
-$string['block:edit'] = 'Editar a configuración dun bloque';
+$string['block:edit'] = 'Editar os axustes dun bloque';
 $string['block:view'] = 'Ver bloque';
 $string['blog:create'] = 'Crear novos artigos de blog';
 $string['blog:manageentries'] = 'Editar e xestionar artigos';
@@ -194,7 +194,7 @@ $string['course:setcurrentsection'] = 'Axustar sección actual';
 $string['course:setforcedlanguage'] = 'Forzar o idioma do curso';
 $string['course:tag'] = 'Cambiar as etiquetas do curso';
 $string['course:togglecompletion'] = 'Marcar manualmente as actividades como completadas';
-$string['course:update'] = 'Actualizar a configuración do curso';
+$string['course:update'] = 'Actualizar os axustes do curso';
 $string['course:useremail'] = 'Activar/desactivar enderezos de correo';
 $string['course:view'] = 'Ver cursos sen participación';
 $string['course:viewcoursegrades'] = 'Ver cualificacións do curso';
@@ -219,10 +219,10 @@ $string['defaultx'] = 'Predeterminado/a: {$a}';
 $string['defineroles'] = 'Definir roles';
 $string['deletecourseoverrides'] = 'Eliminar todas as anulacións do curso';
 $string['deletelocalroles'] = 'Eliminar todas as asignacións de rol locais';
-$string['deleterolesure'] = 'Confirma que quere eliminar o rol «{$a->name} ({$a->shortname})»?</p><p>Actualmente este rol está asignado a {$a->count} usuarios.';
+$string['deleterolesure'] = 'Conforma que quere eliminar o rol «{$a->name} ({$a->shortname})»?</p><p>Actualmente este rol está asignado a {$a->count} usuarios.';
 $string['deletexrole'] = 'Eliminar o rol {$a}';
 $string['duplicaterole'] = 'Duplicar este rol';
-$string['duplicaterolesure'] = 'Confirma que quere duplicar o rol «{$a->name} ({$a->shortname})»?</p>';
+$string['duplicaterolesure'] = '<p>Confirma que quere duplicar o rol «{$a->name} ({$a->shortname})»?</p>';
 $string['editingrolex'] = 'Editando o rol «{$a}»';
 $string['editrole'] = 'Editar rol';
 $string['editxrole'] = 'Editar o rol {$a}';
@@ -248,7 +248,7 @@ $string['explanation'] = 'Explicación';
 $string['export'] = 'Exportar';
 $string['extusers'] = 'Usuarios existentes';
 $string['extusersmatching'] = 'Usuarios existentes que coinciden con «{$a}»';
-$string['filter:manage'] = 'Xestionar a configuración de filtros locais';
+$string['filter:manage'] = 'Xestionar os axustes de filtros locais';
 $string['frontpageuser'] = 'Usuario autenticado na páxina de portada';
 $string['frontpageuserdescription'] = 'Todos os usuarios identificados na páxina de portada do curso';
 $string['globalrole'] = 'Rol do sistema';
@@ -274,7 +274,7 @@ $string['grade:viewhidden'] = 'Ver cualificacións agochadas polo propietario';
 $string['h5p:deploy'] = 'Despregue de contido H5P';
 $string['h5p:setdisplayoptions'] = 'Estabelecer as opcións de visualización H5P';
 $string['h5p:updatelibraries'] = 'Xestionar tipos de contido H5P';
-$string['highlightedcellsshowdefault'] = 'Os permisos resaltados na seguinte táboa amosan os permisos predeterminados para o arquetipo de rol seleccionado actualmente.';
+$string['highlightedcellsshowdefault'] = 'Os permisos resaltados na seguinte táboa amosan os permisos predeterminados para o arquetipo de rol seleccionado anteriormente.';
 $string['highlightedcellsshowinherit'] = 'As celas resaltadas na seguinte táboa amosan o permiso (se o hai) que se pode herdar. Ademais dos permisos que realmente quere cambiar, debe deixar todo listo para os permisos a herdar.';
 $string['inactiveformorethan'] = 'inactivo máis de {$a->timeperiod}';
 $string['ingroup'] = 'no grupo «{$a->group}»';
@@ -286,8 +286,8 @@ $string['legacy:editingteacher'] = 'ROL LEGADO: Profesor con permiso de edición
 $string['legacy:guest'] = 'ROL LEGADO: Invitado';
 $string['legacy:student'] = 'ROL LEGADO: Alumno';
 $string['legacy:teacher'] = 'ROL LEGADO: Profesor sen permiso de edición';
-$string['legacytype'] = 'Tipo de rol legado';
 $string['legacy:user'] = 'ROL LEGADO: Usuario autenticado';
+$string['legacytype'] = 'Tipo de rol legado';
 $string['listallroles'] = 'Listar todos os roles';
 $string['localroles'] = 'Roles asignados localmente';
 $string['mainadmin'] = 'Administrador principal';
@@ -317,10 +317,10 @@ $string['novisibleroles'] = 'Non hai roles';
 $string['overrideanotherrole'] = 'Anular outro rol';
 $string['overridecontext'] = 'Anular contexto';
 $string['overridepermissions'] = 'Anular permisos';
-$string['overridepermissionsforrole'] = 'Anular os permisos do rol «{$a->role}» no contexto {$a->context}';
 $string['overridepermissions_help'] = 'As anulacións de permisos posibilitan permitir ou impedir os permisos seleccionados nun contexto específico.';
-$string['overridepermissionsin'] = 'Anular permisos en {$a}';
 $string['overridepermissions_link'] = 'admin/roles/override';
+$string['overridepermissionsforrole'] = 'Anular os permisos do rol «{$a->role}» no contexto {$a->context}';
+$string['overridepermissionsin'] = 'Anular permisos en {$a}';
 $string['overrideroles'] = 'Anular roles';
 $string['overriderolesin'] = 'Anular roles en {$a}';
 $string['overrides'] = 'Anulacións';
@@ -373,8 +373,8 @@ $string['question:useall'] = 'Usar todas as preguntas';
 $string['question:usemine'] = 'Usar as súas propias preguntas';
 $string['question:viewall'] = 'Ver todas as preguntas';
 $string['question:viewmine'] = 'Ver as súas propias preguntas';
-$string['rating:rate'] = 'Engadir as cualificacións aos elementos';
-$string['rating:view'] = 'Ver a ponderación total que vostede reciba';
+$string['rating:rate'] = 'Engadir as puntuacións aos elementos';
+$string['rating:view'] = 'Ver a puntuación total que vostede reciba';
 $string['rating:viewall'] = 'Ver todas as puntuacións en bruto dadas por individuos';
 $string['rating:viewany'] = 'Ver as puntuacións totais que reciba calquera';
 $string['resetrole'] = 'Restabelecer';
@@ -388,33 +388,33 @@ $string['restore:restoretargetimport'] = 'Restaurar de ficheiros indicados como 
 $string['restore:rolldates'] = 'Está permitido mover as datas na configuración da actividade ao restaurar';
 $string['restore:uploadfile'] = 'Enviar ficheiros ás áreas de copia de seguranza';
 $string['restore:userinfo'] = 'Restaurar datos de usuario';
-$string['restore:viewautomatedfilearea'] = 'Restaurar cursos desde copias de seguranza automatizadas';
+$string['restore:viewautomatedfilearea'] = 'Restaurar cursos dende copias de seguranza automatizadas';
 $string['risks'] = 'Riscos';
+$string['role:assign'] = 'Asignar roles aos usuarios';
+$string['role:manage'] = 'Crear e xestionar roles';
+$string['role:override'] = 'Anular permisos para outros';
+$string['role:review'] = 'Revisión de permisos para outros';
+$string['role:safeoverride'] = 'Anular permisos seguros para outros';
+$string['role:switchroles'] = 'Cambiar a outros roles';
 $string['roleallowheader'] = 'Permitir rol:';
 $string['roleallowinfo'] = 'Seleccione un rol que engadir á lista de roles permitidos no contexto «{$a->context}», funcionalidade «{$a-> cap}»:';
-$string['role:assign'] = 'Asignar roles aos usuarios';
 $string['roleassignments'] = 'Asignacións de roles';
 $string['roledefinitions'] = 'Definicións de roles';
 $string['rolefullname'] = 'Nome do rol';
 $string['roleincontext'] = '{$a->role} en {$a->context}';
-$string['role:manage'] = 'Crear e xestionar roles';
-$string['role:override'] = 'Anular permisos para outros';
 $string['roleprohibitheader'] = 'Prohibir rol';
 $string['roleprohibitinfo'] = 'Seleccione un rol que engadir á lista de roles prohibidos no contexto «{$a->context}», funcionalidade «{$a-> cap}»:';
 $string['rolerepreset'] = 'Usar a preconfiguración do rol';
 $string['roleresetdefaults'] = 'Predeterminados';
 $string['roleresetrole'] = 'Usar rol ou arquetipo';
-$string['role:review'] = 'Revisión de permisos para outros';
 $string['rolerisks'] = 'Riscos dos roles';
 $string['roles'] = 'Roles';
-$string['role:safeoverride'] = 'Anular permisos seguros para outros';
+$string['roles_help'] = 'Un rol é un conxunto de permisos definidos para todo o sistema que vostede pode asignar a usuarios específicos en contextos específicos.';
+$string['roles_link'] = 'roles';
 $string['roleselect'] = 'Seleccionar rol';
 $string['rolesforuser'] = 'Roles para o usuario {$a}';
-$string['roles_help'] = 'Un rol é un conxunto de permisos definidos para todo o sistema que vostede pode asignar a usuarios específicos en contextos específicos.';
 $string['roleshortname'] = 'Nome curto';
 $string['roleshortname_help'] = 'Nome curto de rol é un identificador de baixo nivel no que só se permiten caracteres alfanuméricos ASCII. Non cambie os nomes curtos dos roles estándar.';
-$string['roles_link'] = 'roles';
-$string['role:switchroles'] = 'Cambiar a outros roles';
 $string['roletoassign'] = 'Rol a asignar';
 $string['roletooverride'] = 'Rol a anular';
 $string['safeoverridenotice'] = 'Nota: Os permisos con risco máis elevado están bloqueados porque vostede só pode anular permisos seguros.';
@@ -425,7 +425,6 @@ $string['selectrole'] = 'Escolla un rol';
 $string['showallroles'] = 'Amosar todos os roles';
 $string['showthisuserspermissions'] = 'Amosar os permisos deste usuario';
 $string['site:accessallgroups'] = 'Acceder a todos os grupos';
-$string['siteadministrators'] = 'Administradores do sitio';
 $string['site:approvecourse'] = 'Aprobar a creación de cursos';
 $string['site:backup'] = 'Copia de seguranza dos cursos';
 $string['site:config'] = 'Cambiar a configuración do sitio';
@@ -441,17 +440,18 @@ $string['site:manageallmessaging'] = 'Engadir, retirar, bloquear e desbloquear c
 $string['site:manageblocks'] = 'Xestionar bloques nunha páxina';
 $string['site:managecontextlocks'] = 'Administarrar a conxelación de contextos';
 $string['site:messageanyuser'] = 'Ignorar as preferencias de privacidade do usuario para enviar mensaxes a calquera usuario';
-$string['site:mnetloginfromremote'] = 'Acceso desde un aplicativo remoto vía MNet';
+$string['site:mnetloginfromremote'] = 'Acceso dende un aplicativo remoto vía MNet';
 $string['site:mnetlogintoremote'] = 'Desprazarse a un aplicativo remoto vía MNet';
 $string['site:readallmessages'] = 'Ler todas as mensaxes do sitio';
 $string['site:restore'] = 'Restaurar cursos';
 $string['site:sendmessage'] = 'Enviar mensaxes a calquera usuario';
 $string['site:trustcontent'] = 'Confiar en contidos enviados';
-$string['site:uploadusers'] = 'Cargar novos usuarios desde un ficheiro';
+$string['site:uploadusers'] = 'Cargar novos usuarios dende un ficheiro';
 $string['site:viewfullnames'] = 'Ver sempre os nomes completos dos usuarios';
 $string['site:viewparticipants'] = 'Ver participantes';
 $string['site:viewreports'] = 'Ver informes';
 $string['site:viewuseridentity'] = 'Ver a identidade completa do usuario nas listas';
+$string['siteadministrators'] = 'Administradores do sitio';
 $string['tag:edit'] = 'Editar as etiquetas existentes';
 $string['tag:editblocks'] = 'Editar bloques en páxinas de etiquetas';
 $string['tag:flag'] = 'Sinalar etiquetas como inapropiadas';
@@ -476,12 +476,6 @@ $string['user:manageownfiles'] = 'Xestionar ficheiros nas propias áreas privada
 $string['user:managesyspages'] = 'Configurar o deseño predeterminado da páxina para os perfís de usuario públicos';
 $string['user:readuserblogs'] = 'Ver todos os blogs de usuario';
 $string['user:readuserposts'] = 'Ver todas as mensaxes dos usuarios';
-$string['usersfrom'] = 'Usuarios de {$a}';
-$string['usersfrommatching'] = 'Usuarios de {$a->contextname} que coinciden con «{$a->search}»';
-$string['usersinthisx'] = 'Usuarios neste {$a}';
-$string['usersinthisxmatching'] = 'Usuarios neste {$a->contexttype} que coinciden con «{$a->search}»';
-$string['userswithrole'] = 'Todos los usuarios cun rol';
-$string['userswiththisrole'] = 'Usuarios sen rol';
 $string['user:update'] = 'Actualizar perfís de usuario';
 $string['user:viewalldetails'] = 'Ver información completa do usuario';
 $string['user:viewdetails'] = 'Ver perfís de usuario';
@@ -489,6 +483,12 @@ $string['user:viewhiddendetails'] = 'Ver detalles agochados dos usuarios';
 $string['user:viewlastip'] = 'Ver o último enderezo IP do usuario';
 $string['user:viewuseractivitiesreport'] = 'Ver informes de actividade dos usuarios';
 $string['user:viewusergrades'] = 'Ver cualificacións dos usuarios';
+$string['usersfrom'] = 'Usuarios de {$a}';
+$string['usersfrommatching'] = 'Usuarios de {$a->contextname} que coinciden con «{$a->search}»';
+$string['usersinthisx'] = 'Usuarios neste {$a}';
+$string['usersinthisxmatching'] = 'Usuarios neste {$a->contexttype} que coinciden con «{$a->search}»';
+$string['userswithrole'] = 'Tódolos usuarios cun rol';
+$string['userswiththisrole'] = 'Usuarios sen rol';
 $string['useshowadvancedtochange'] = 'Usar «Amosar avanzadas» para cambiar';
 $string['viewingdefinitionofrolex'] = 'Vendo a definición do rol «{$a}»';
 $string['viewrole'] = 'Ver detalles do rol';

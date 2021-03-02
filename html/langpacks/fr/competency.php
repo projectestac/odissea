@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'competency', language 'fr', version '3.8'.
  *
- * @package   competency
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     competency
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -67,10 +67,10 @@ $string['eventplancompleted'] = 'Plan de formation terminé';
 $string['eventplancreated'] = 'Plan de formation créé';
 $string['eventplandeleted'] = 'Plan de formation supprimé';
 $string['eventplanreopened'] = 'Plan de formation rouvert';
-$string['eventplanreviewrequestcancelled'] = 'Demande de validation de plan de formation annulée.';
-$string['eventplanreviewrequested'] = 'Validation de plan de formation demandée.';
-$string['eventplanreviewstarted'] = 'Validation de plan de formation commencée.';
-$string['eventplanreviewstopped'] = 'Validation de plan de formation arrêtée.';
+$string['eventplanreviewrequestcancelled'] = 'Demande de validation de plan de formation annulée';
+$string['eventplanreviewrequested'] = 'Validation de plan de formation demandée';
+$string['eventplanreviewstarted'] = 'Validation de plan de formation commencée';
+$string['eventplanreviewstopped'] = 'Validation de plan de formation arrêtée';
 $string['eventplanunapproved'] = 'Plan de formation désapprouvé';
 $string['eventplanunlinked'] = 'Plan de formation délié';
 $string['eventplanupdated'] = 'Plan de formation modifié';
@@ -83,10 +83,10 @@ $string['eventusercompetencyplanviewed'] = 'Plan de compétences utilisateur con
 $string['eventusercompetencyrated'] = 'Compétence utilisateur évaluée';
 $string['eventusercompetencyratedincourse'] = 'Compétence utilisateur évaluée dans un cours';
 $string['eventusercompetencyratedinplan'] = 'Compétence utilisateur évaluée dans un plan de formation';
-$string['eventusercompetencyreviewrequestcancelled'] = 'Demande de validation de compétence utilisateur annulée.';
-$string['eventusercompetencyreviewrequested'] = 'Validation de compétence utilisateur demandée.';
-$string['eventusercompetencyreviewstarted'] = 'Validation de compétence utilisateur commencée.';
-$string['eventusercompetencyreviewstopped'] = 'Validation de compétence utilisateur arrêtée.';
+$string['eventusercompetencyreviewrequestcancelled'] = 'Demande de validation de compétence utilisateur annulée';
+$string['eventusercompetencyreviewrequested'] = 'Validation de compétence utilisateur demandée';
+$string['eventusercompetencyreviewstarted'] = 'Validation de compétence utilisateur commencée';
+$string['eventusercompetencyreviewstopped'] = 'Validation de compétence utilisateur arrêtée';
 $string['eventusercompetencyviewed'] = 'Compétence utilisateur consultée';
 $string['eventusercompetencyviewedincourse'] = 'Compétence utilisateur consultée dans un cours';
 $string['eventusercompetencyviewedinplan'] = 'Compétence utilisateur consultée dans un plan de formation';

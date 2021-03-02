@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_manual', language 'en', version '3.8'.
  *
- * @package   enrol_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -60,9 +60,9 @@ $string['expirymessageenrollersubject'] = 'Enrolment expiry notification';
 $string['manual:config'] = 'Configure manual enrol instances';
 $string['manual:enrol'] = 'Enrol users';
 $string['manual:manage'] = 'Manage user enrolments';
-$string['manualpluginnotinstalled'] = 'The "Manual" plugin has not yet been installed';
 $string['manual:unenrol'] = 'Unenrol users from the course';
 $string['manual:unenrolself'] = 'Unenrol self from the course';
+$string['manualpluginnotinstalled'] = 'The "Manual" plugin has not yet been installed';
 $string['messageprovider:expiry_notification'] = 'Manual enrolment expiry notifications';
 $string['now'] = 'Now';
 $string['pluginname'] = 'Manual enrolments';
@@ -74,9 +74,9 @@ $string['selectusers'] = 'Select users';
 $string['sendexpirynotificationstask'] = 'Manual enrolment send expiry notifications task';
 $string['status'] = 'Enable manual enrolments';
 $string['status_desc'] = 'Allow course access of internally enrolled users. This should be kept enabled in most cases.';
+$string['status_help'] = 'This setting determines whether users can be enrolled manually, via a link in the course administration settings, by a user with appropriate permissions such as a teacher.';
 $string['statusdisabled'] = 'Disabled';
 $string['statusenabled'] = 'Enabled';
-$string['status_help'] = 'This setting determines whether users can be enrolled manually, via a link in the course administration settings, by a user with appropriate permissions such as a teacher.';
 $string['syncenrolmentstask'] = 'Synchronise manual enrolments task';
 $string['unenrol'] = 'Unenrol user';
 $string['unenrolselectedusers'] = 'Unenrol selected users';
@@ -85,4 +85,4 @@ $string['unenroluser'] = 'Do you really want to unenrol "{$a->user}" from course
 $string['unenrolusers'] = 'Unenrol users';
 $string['wscannotenrol'] = 'Plugin instance cannot manually enrol a user in the course id = {$a->courseid}';
 $string['wsnoinstance'] = 'Manual enrolment plugin instance doesn\'t exist or is disabled for the course (id = {$a->courseid})';
-$string['wsusercannotassign'] = 'You don\'t have the permission to assign this role ({$a->roleid}) to this user ({$a->userid}) in this course({$a->courseid}).';
+$string['wsusercannotassign'] = 'You don\'t have the permission to assign this role ({$a->roleid}) to this user ({$a->userid}) in this course ({$a->courseid}).';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'fr', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,15 +48,15 @@ $string['cannotsavetempl'] = 'L\'enregistrement des modèles n\'est pas autoris�
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha n\'a pas été configuré.';
 $string['check'] = 'Choix multiple - plusieurs réponses';
-$string['checkbox'] = 'Choix multiple - plusieurs réponses sont permises (cases à cocher)';
 $string['check_values'] = 'Réponses possibles';
+$string['checkbox'] = 'Choix multiple - plusieurs réponses sont permises (cases à cocher)';
 $string['choosefile'] = 'Sélectionner un fichier';
 $string['chosen_feedback_response'] = 'Réponse choisie pour le feedback';
 $string['closebeforeopen'] = 'La date de fin indiquée est antérieure à la date de début.';
+$string['complete_the_form'] = 'Répondre aux questions';
 $string['completed'] = 'Terminé';
 $string['completed_feedbacks'] = 'Réponses envoyées';
 $string['completedon'] = 'Terminé le {$a}';
-$string['complete_the_form'] = 'Répondre aux questions';
 $string['completionsubmit'] = 'Afficher comme terminé quand l\'utilisateur a envoyé le feedback';
 $string['configallowfullanonymous'] = 'Si ce réglage est activé, les activités feedback sur la page d\'accueil pourront être effectuées par les utilisateurs sans nécessiter d\'authentification.';
 $string['confirmdeleteentry'] = 'Voulez-vous vraiment supprimer cette saisie ?';
@@ -94,11 +94,11 @@ $string['dependvalue'] = 'Valeur de la dépendance';
 $string['description'] = 'Description';
 $string['do_not_analyse_empty_submits'] = 'Ne pas analyser les remises vides';
 $string['downloadresponseas'] = 'Télécharger les réponses sous :';
+$string['drop_feedback'] = 'Retirer de ce cours';
 $string['dropdown'] = 'Choix multiple - une seule réponse possible (menu déroulant)';
+$string['dropdown_values'] = 'Réponses';
 $string['dropdownlist'] = 'Choix multiple - une seule réponse (menu déroulant)';
 $string['dropdownrated'] = 'Menu déroulant (valué)';
-$string['dropdown_values'] = 'Réponses';
-$string['drop_feedback'] = 'Retirer de ce cours';
 $string['edit_item'] = 'Modifier question';
 $string['edit_items'] = 'Modifier les questions';
 $string['email_notification'] = 'Activer la notification des remises';
@@ -116,39 +116,39 @@ $string['eventresponsesubmitted'] = 'Réponse remise';
 $string['export_questions'] = 'Exporter les questions';
 $string['export_to_excel'] = 'Exporter vers Excel';
 $string['feedback:addinstance'] = 'Ajouter un feedback';
-$string['feedbackclose'] = 'Permettre les réponses jusqu\'au';
 $string['feedback:complete'] = 'Terminer un feedback';
-$string['feedbackcompleted'] = '{$a->username} a terminé {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Créer un modèle privé';
 $string['feedback:createpublictemplate'] = 'Créer un modèle public';
 $string['feedback:deletesubmissions'] = 'Supprimer les envois terminés';
 $string['feedback:deletetemplate'] = 'Supprimer modèle';
 $string['feedback:edititems'] = 'Modifier des éléments';
-$string['feedback_is_not_for_anonymous'] = 'Les utilisateurs anonymes ne peuvent pas utiliser de feedback';
-$string['feedback_is_not_open'] = 'Le feedback n\'est pas ouvert';
 $string['feedback:mapcourse'] = 'Associer des cours aux feedbacks globaux';
-$string['feedbackopen'] = 'Permettre les réponses dès le';
 $string['feedback:receivemail'] = 'Recevoir les notifications par courriel';
 $string['feedback:view'] = 'Accéder à une activité feedback';
 $string['feedback:viewanalysepage'] = 'Accéder à la page d\'analyse après la remise';
 $string['feedback:viewreports'] = 'Accéder aux rapports';
+$string['feedback_is_not_for_anonymous'] = 'Les utilisateurs anonymes ne peuvent pas utiliser de feedback';
+$string['feedback_is_not_open'] = 'Le feedback n\'est pas ouvert';
+$string['feedbackclose'] = 'Permettre les réponses jusqu\'au';
+$string['feedbackcompleted'] = '{$a->username} a terminé {$a->feedbackname}';
+$string['feedbackopen'] = 'Permettre les réponses dès le';
 $string['file'] = 'Fichier';
 $string['filter_by_course'] = 'Filtrer par cours';
 $string['handling_error'] = 'Une erreur est survenue lors du traitement d\'une action du module feedback';
 $string['hide_no_select_option'] = 'Cacher l\'option « Sans réponse »';
 $string['horizontal'] = 'Horizontal';
-$string['importfromthisfile'] = 'Importer depuis ce fichier';
 $string['import_questions'] = 'Importer des questions';
 $string['import_successfully'] = 'Importation réussie';
+$string['importfromthisfile'] = 'Importer depuis ce fichier';
 $string['includeuserinrecipientslist'] = 'Inclure {$a} dans la liste des destinataires';
 $string['indicator:cognitivedepth'] = 'Feedback : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Feedback.';
 $string['indicator:cognitivedepthdef'] = 'Feedback : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Feedback » (niveaux : pas de vue, vue, envoi).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Feedback.';
 $string['indicator:socialbreadth'] = 'Feedback : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Feedback.';
 $string['indicator:socialbreadthdef'] = 'Feedback : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Feedback » (niveaux : pas de participation, participant seul, participant avec d\'autres).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Feedback.';
 $string['info'] = 'Information';
 $string['infotype'] = 'Type d\'information';
 $string['insufficient_responses'] = 'Nombre insuffisant de réponses';
@@ -184,25 +184,25 @@ Les activités feedback peuvent être utilisées pour :
 $string['modulenameplural'] = 'Feedbacks';
 $string['move_item'] = 'Déplacer cette question';
 $string['multichoice'] = 'Choix multiple';
+$string['multichoice_values'] = 'Valeurs du choix multiple';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->name}';
 $string['multichoicerated'] = 'Choix multiple (évalué)';
 $string['multichoicetype'] = 'Type de choix multiple';
-$string['multichoice_values'] = 'Valeurs du choix multiple';
 $string['multiplesubmit'] = 'Permettre plusieurs remises';
 $string['multiplesubmit_help'] = 'Si ce réglage est activé pour les questionnaires anonymes, les utilisateurs peuvent remplir un feedback indéfiniment.';
 $string['name'] = 'Nom';
-$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['name_required'] = 'Nom requis';
+$string['nameandlabelformat'] = '({$a->label}) {$a->name}';
 $string['next_page'] = 'Page suivante';
 $string['no_handler'] = 'Aucun action n\'existe pour';
 $string['no_itemlabel'] = 'Aucune étiquette';
 $string['no_itemname'] = 'Pas de nom d\'élément';
 $string['no_items_available_yet'] = 'Aucune question n\'a encore été mise en place';
+$string['no_templates_available_yet'] = 'Aucun modèle disponible';
 $string['non_anonymous'] = 'Le nom du participant sera enregistré et affiché avec ses réponses';
 $string['non_anonymous_entries'] = 'Réponses non anonymes ({$a})';
 $string['non_respondents_students'] = 'Étudiants sans réponse ({$a})';
 $string['not_completed_yet'] = 'Pas encore terminé';
-$string['no_templates_available_yet'] = 'Aucun modèle disponible';
 $string['not_selected'] = 'Sans réponse';
 $string['not_started'] = 'Pas commencé';
 $string['numberoutofrange'] = 'Nombre en dehors de l\'intervalle permis';
@@ -216,9 +216,9 @@ $string['only_one_captcha_allowed'] = 'Un seul captcha est autorisé par feedbac
 $string['openafterclose'] = 'Vous avez indiqué une date d\'ouverture postérieure à la date de fermeture.';
 $string['overview'] = 'Vue d\'ensemble';
 $string['page'] = 'Page';
+$string['page-mod-feedback-x'] = 'Toute page du module feedback';
 $string['page_after_submit'] = 'Message de fin';
 $string['pagebreak'] = 'Saut de page';
-$string['page-mod-feedback-x'] = 'Toute page du module feedback';
 $string['pluginadministration'] = 'Administration du feedback';
 $string['pluginname'] = 'Feedback';
 $string['position'] = 'Position';
@@ -226,11 +226,11 @@ $string['previous_page'] = 'Page précédente';
 $string['privacy:metadata:completed'] = 'Un enregistrement des réponses du feedback';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Si la réponse doit être traitée de façon anonyme.';
 $string['privacy:metadata:completed:timemodified'] = 'La date et l\'heure de la modification de la réponse.';
-$string['privacy:metadata:completedtmp'] = 'Un enregistrement des réponses qui sont encore en cours.';
 $string['privacy:metadata:completed:userid'] = 'L\'identifiant de l\'utilisateur qui a terminé l\'activité feedback.';
+$string['privacy:metadata:completedtmp'] = 'Un enregistrement des réponses qui sont encore en cours.';
 $string['privacy:metadata:value'] = 'Un enregistrement de la réponse à une question.';
-$string['privacy:metadata:valuetmp'] = 'Un enregistrement de la réponse à une question dans une réponse de feedback en cours.';
 $string['privacy:metadata:value:value'] = 'La réponse choisie.';
+$string['privacy:metadata:valuetmp'] = 'Un enregistrement de la réponse à une question dans une réponse de feedback en cours.';
 $string['public'] = 'Public';
 $string['question'] = 'Question';
 $string['questionandsubmission'] = 'Réglages de questions et d\'envoi';
@@ -242,9 +242,9 @@ $string['ready_feedbacks'] = 'Préparer les feedbacks';
 $string['required'] = 'Requis';
 $string['resetting_data'] = 'Réinitialiser les réponses du feedback';
 $string['resetting_feedbacks'] = 'Réinitialisation des feedbacks';
-$string['response_nr'] = 'Réponse No';
+$string['response_nr'] = 'Réponse no';
 $string['responses'] = 'Réponses';
-$string['responsetime'] = 'Heure de réponse';
+$string['responsetime'] = 'Heure des réponses';
 $string['save_as_new_item'] = 'Enregistrer comme nouvelle question';
 $string['save_as_new_template'] = 'Enregistrer comme modèle';
 $string['save_entries'] = 'Remettre vos réponses';
@@ -271,8 +271,8 @@ $string['switch_item_to_not_required'] = 'Définir comme non requis';
 $string['switch_item_to_required'] = 'Définir comme requis';
 $string['template'] = 'Modèle';
 $string['template_deleted'] = 'Modèle supprimé';
-$string['templates'] = 'Modèles';
 $string['template_saved'] = 'Modèle enregistré';
+$string['templates'] = 'Modèles';
 $string['textarea'] = 'Réponse longue';
 $string['textarea_height'] = 'Nombre de lignes';
 $string['textarea_width'] = 'Largeur';

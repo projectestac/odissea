@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'wiki', language 'ca', version '3.8'.
  *
- * @package   wiki
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     wiki
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -99,12 +99,12 @@ $string['firstpagetitle_help'] = 'Títol de la primera pàgina del wiki';
 $string['forceformat'] = 'Força el format';
 $string['forceformat_help'] = 'Si el format es força (caixa marcada), no hi ha opció d\'escollir un format quan s\'està editant una pàgina wiki';
 $string['format'] = 'Format';
-$string['formatcreole'] = 'Format Creole';
-$string['formatcreole_help'] = 'Creole és un llenguatge d\'etiquetes amb una barra editora per inserir les hipermarques apropiades.
-Per crear una pàgina nova, escriviu el nom de la nova pàgina tancada dins de claudàtors, per exemple: [[Pàgina 2]].';
 $string['format_help'] = '* HTML - L\'editor HTML està disponible.
 * Creole - Un llenguatge d\'etiquetes wiki per al qual hi ha disponible una barra editora.
 * Nwiki - Mediawiki- semblant a un llenguatge d\'etiquetes utilitzat al mòdul Nwiki';
+$string['formatcreole'] = 'Format Creole';
+$string['formatcreole_help'] = 'Creole és un llenguatge d\'etiquetes amb una barra editora per inserir les hipermarques apropiades.
+Per crear una pàgina nova, escriviu el nom de la nova pàgina tancada dins de claudàtors, per exemple: [[Pàgina 2]].';
 $string['formathtml'] = 'Format HTML';
 $string['formathtml_help'] = 'L\'editor HTML pot utilitzar-se per donar format al contingut.
 Per crear una pàgina nova, escriviu el nom de la nova pàgina tancada dins de claudàtors, per exemple: [[Pàgina 2]].';
@@ -188,17 +188,17 @@ $string['orphaned'] = 'Pàgines òrfenes';
 $string['orphaned_help'] = 'Llista de pàgines que no estan enllaçades amb altres pàgines.';
 $string['overridelocks'] = 'Sobreescriu els bloquejos';
 $string['overridinglocks'] = 'S\'estan sobreescrivint els bloquejos...';
+$string['page-mod-wiki-comments'] = 'Pàgina de comentaris del mòdul wiki';
+$string['page-mod-wiki-history'] = 'Pàgina d\'historial del wiki';
+$string['page-mod-wiki-map'] = 'Pàgina del mapa del wiki';
+$string['page-mod-wiki-view'] = 'Pàgina principal del mòdul wiki';
+$string['page-mod-wiki-x'] = 'Qualsevol pàgina del mòdul wiki';
 $string['pageexists'] = 'Aquesta pàgina ja existeix.';
 $string['pageindex'] = 'Índex de pàgines';
 $string['pageindex_help'] = 'L\'arbre de la pàgina wiki';
 $string['pageislocked'] = 'Algú està editant la pàgina ara. Proveu a editar-la alguns minuts més tard.';
 $string['pagelist'] = 'Llista de pàgines';
 $string['pagelist_help'] = 'Llista de pàgines ordenades de forma alfabètica.';
-$string['page-mod-wiki-comments'] = 'Pàgina de comentaris del mòdul wiki';
-$string['page-mod-wiki-history'] = 'Pàgina d\'historial del wiki';
-$string['page-mod-wiki-map'] = 'Pàgina del mapa del wiki';
-$string['page-mod-wiki-view'] = 'Pàgina principal del mòdul wiki';
-$string['page-mod-wiki-x'] = 'Qualsevol pàgina del mòdul wiki';
 $string['pagename'] = 'Nom de la pàgina';
 $string['peerreview'] = 'Revisió entre iguals';
 $string['pluginadministration'] = 'Administració del wiki';
@@ -251,11 +251,17 @@ $string['viewperpage'] = 'Mostra {$a} versions per pàgina';
 $string['viewversion'] = 'S\'està mostrant la versió #{$a} de la pàgina';
 $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Afegeix un wiki nou';
-$string['wikiattachments'] = 'Adjuncions wiki';
-$string['wikiboldtext'] = 'Text en negreta';
 $string['wiki:createpage'] = 'Crea pàgines wiki noves';
 $string['wiki:editcomment'] = 'Afegeix comentaris a les pàgines';
 $string['wiki:editpage'] = 'Desa les pàgines wiki';
+$string['wiki:managecomment'] = 'Gestiona els comentaris wiki';
+$string['wiki:managefiles'] = 'Gestiona els fitxers wiki';
+$string['wiki:managewiki'] = 'Gestiona els paràmetres del wiki';
+$string['wiki:overridelock'] = 'Sobreescriu el blocatge de pàgines';
+$string['wiki:viewcomment'] = 'Mostra els comentaris de la pàgina';
+$string['wiki:viewpage'] = 'Mostra les pàgines wiki';
+$string['wikiattachments'] = 'Adjuncions wiki';
+$string['wikiboldtext'] = 'Text en negreta';
 $string['wikiexternalurl'] = 'URL extern';
 $string['wikifiles'] = 'Fitxers wiki';
 $string['wikifiletable'] = 'S\'ha penjat la llista de fitxers';
@@ -266,21 +272,15 @@ $string['wikiinternalurl'] = 'Enllaç intern';
 $string['wikiintro'] = 'Descripció';
 $string['wikiitalictext'] = 'Text en cursiva';
 $string['wikilockingsettings'] = 'Temps d\'espera del bloqueig i de tornar a analitzar sintàcticament';
-$string['wiki:managecomment'] = 'Gestiona els comentaris wiki';
-$string['wiki:managefiles'] = 'Gestiona els fitxers wiki';
-$string['wiki:managewiki'] = 'Gestiona els paràmetres del wiki';
 $string['wikimode'] = 'Mode wiki';
-$string['wikimodecollaborative'] = 'Wiki col·laboratiu';
 $string['wikimode_help'] = 'El mode wiki determina de quina forma qualsevol persona pot editar el wiki —el wiki col·laboratiu— o de quina forma cadascú té el seu propi wiki, el qual sols ell pot editar —un wiki individual.';
+$string['wikimodecollaborative'] = 'Wiki col·laboratiu';
 $string['wikimodeindividual'] = 'Wiki individual';
 $string['wikiname'] = 'Nom del wiki';
 $string['wikinowikitext'] = 'No hi ha text wiki';
 $string['wikiorderedlist'] = 'Llista ordenada';
-$string['wiki:overridelock'] = 'Sobreescriu el blocatge de pàgines';
 $string['wikipages'] = 'Pàgines wiki';
 $string['wikisettings'] = 'Paràmetres del wiki';
 $string['wikiunorderedlist'] = 'Llista desordenada';
-$string['wiki:viewcomment'] = 'Mostra els comentaris de la pàgina';
-$string['wiki:viewpage'] = 'Mostra les pàgines wiki';
 $string['wrongversionlock'] = 'Un altre usuari ha editat aquesta pàgina wiki que esteu editant i per això el vostre contingut és obsolet.';
 $string['wrongversionsave'] = 'Un altre usuari ha creat una versió mentre estàveu editant i ha sobreescrit els seus canvis, comproveu l\'historial de la pàgina.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_langimport', language 'ca', version '3.8'.
  *
- * @package   tool_langimport
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_langimport
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['install'] = 'Instal·la el paquet de llengua seleccionat';
+$string['install'] = 'Instal·la el/s paquet/s d\'idioma seleccionat(s)';
 $string['installedlangs'] = 'Paquets d\'idioma instal·lats';
 $string['langimport'] = 'Utilitat d\'importació d\'idiomes';
 $string['langimportdisabled'] = 'La característica d\'importació d\'idiomes s\'ha desactivat. Haureu d\'actualitzar els paquets d\'idioma manualment, a nivell de fitxers del sistema. No oblideu purgar la memòria cau de cadenes després.';
@@ -36,8 +36,8 @@ $string['langpackremoved'] = 'S\'ha completat la desinstal·lació del paquet d\
 $string['langpackremovedevent'] = 'Paquet d\'idioma desinstal·lat';
 $string['langpackupdated'] = 'S\'ha actualitzat l\'idioma «{$a}»';
 $string['langpackupdatedevent'] = 'Paquet d\'Idioma actualitzat';
-$string['langpackupdateskipped'] = 'S\'ha omès l\'actualització del paquet d\'idioma {$a}';
-$string['langpackuptodate'] = 'El paquet d\'idioma {$a}  està actualitzat.';
+$string['langpackupdateskipped'] = 'S\'ha omès l\'actualització del paquet d\'idioma «{$a}»';
+$string['langpackuptodate'] = 'El paquet d\'idioma «{$a}» està actualitzat.';
 $string['langupdatecomplete'] = 'S\'ha completat l\'actualització del paquet d\'idioma';
 $string['missingcfglangotherroot'] = 'Falta el valor de configuració $CFG->langotherroot';
 $string['missinglangparent'] = 'Falta l\'idioma pare <em>{$a->parent}</em> de: <em>{$a->lang}</em>.';

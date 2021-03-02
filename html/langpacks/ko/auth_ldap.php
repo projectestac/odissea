@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_ldap', language 'ko', version '3.8'.
  *
- * @package   auth_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,14 +40,12 @@ $string['auth_ldap_contexts_key'] = '문맥';
 $string['auth_ldap_create_context'] = '만약 당신이 이메일 인증으로 사용자를 생성시키려 한다면 어디에 사용자들을 생성시킬지를 명시하라. 이 문맥은 보안상의 문제를 막기위해 다른 사용자들과는 다르게 명기되어야 한다. ldap_context-variable에 작성된 문맥을 포함할 필요는 없다. 무들이 자동적으로 작성된 문맥에서 사용자를 찾아줄 것이다.<br /><b>주의!</b> 사용자 생성을 위해서는 auth/ldap/lib.php에 있는 auth_user_create()를 변경시킬 필요가 있다.';
 $string['auth_ldap_create_context_key'] = '새 사용자를 위한 문맥';
 $string['auth_ldap_create_error'] = 'LDAP 사용자 생성 오류';
-$string['auth_ldapdescription'] = '이 방법은 외부 LDAP서버에 대해 인증을 제공해줍니다. 만약 계정과 비밀번호가 유효하다면 무들은 데이터베이스 안에 새로운 사용자를 만듭니다. 이 모듈은 LDAP에서 사용자 속성을 읽어와서 무들에 필요한 항목을 채웁니다. 추후 로그인 이후에는 단지 계정과 비밀번호만 점검합니다.';
 $string['auth_ldap_expiration_desc'] = '만료된 비밀번호 검색을 불가능하게 하거나 LDAP로부터 비밀번호 만료 시간을 직접 읽어오게 하려면, "아니오"를 선택하라.';
 $string['auth_ldap_expiration_key'] = '만료';
 $string['auth_ldap_expiration_warning_desc'] = '비밀번호 만료 전 경고할 날의 여유';
 $string['auth_ldap_expiration_warning_key'] = '만료 경고';
 $string['auth_ldap_expireattr_desc'] = '선택 사항 : 비밀번호 만료 시간을 저장하는 ldap속성을 덮어쓰기 합니다';
 $string['auth_ldap_expireattr_key'] = '만료 속성';
-$string['auth_ldapextrafields'] = '이 필드는 선택사항이다. 당신이 여기에 명시한 LDAP서버에서 정보와 함께 무들 사용자 필드를 미리 채워놓을 수 있다. <p>만약 이 필드를 빈 공간으로 남겨둔다면, LDAP서버에서 아무것도 이동이 되지 않으며 무들의 기본값이 대신 사용된다.</p><p> 어느 경우라도 사용자가 로그인을 한 후에는, 사용자가 이 필드의 모든 것을 수정할 수 있다.';
 $string['auth_ldap_graceattr_desc'] = '선택사항 : 유예기간 로그인 속성을 덮어쓰기 합니다';
 $string['auth_ldap_gracelogin_key'] = '유예 로그인 속성';
 $string['auth_ldap_gracelogins_desc'] = 'LDAP 유예기간 로그인 지원이 가능합니다. 비밀번호가 만기된 후에 사용자는 유예기간 로그인이 0이 되기 전까지 로그인 가능합니다. 만약 이 설정을 "예"로 놓으면 비밀번호가 만료될 경우에 유예기간 로그인 메세지를 보여줍니다.';
@@ -63,11 +61,10 @@ $string['auth_ldap_memberattribute'] = '선택 사항 : 사용자들이 한 모�
 $string['auth_ldap_memberattribute_isdn'] = '선택 사항 : 0 혹은 1 인  멤버 속성값 처리를 덮어쓰기 합니다.';
 $string['auth_ldap_memberattribute_isdn_key'] = '사용자 속성은 dn을 사용';
 $string['auth_ldap_memberattribute_key'] = '구성원 속성';
+$string['auth_ldap_no_mbstring'] = '활성화된 경로에 사용자를 생성하기 위해서는 mbstring 확장자가 필요합니다.';
 $string['auth_ldap_noconnect'] = 'LDAP모듈이 {$a} 서버에 접속하지 못했습니다.';
 $string['auth_ldap_noconnect_all'] = 'LDAP모듈이 어느 {$a} 서버에도 접속하지 못했습니다.';
 $string['auth_ldap_noextension'] = '<em> PHP의 LDAP 모듈이 존재하지 않는 것 같습니다. 이 인증 플러그인을 사용하려면 모듈이 설치되고 활성화되었는지를 점검하십시요.</em>';
-$string['auth_ldap_no_mbstring'] = '활성화된 경로에 사용자를 생성하기 위해서는 mbstring 확장자가 필요합니다.';
-$string['auth_ldapnotinstalled'] = 'LDAP인증을 사용할 수 없음. PHP의 LDAP모듈이 설치되지 않았습니다.';
 $string['auth_ldap_objectclass'] = '선택 사항 : ldap_user_type에서 이름이나 사용자 찾기에 사용되는 objectClass 를 덮어쓰기 합니다. 보통은 변경시킬 필요가 없습니다.';
 $string['auth_ldap_objectclass_key'] = '객체 클래스';
 $string['auth_ldap_opt_deref'] = 'Aliases가 탐색 동안에 어떻게 처리되야 할지 결정하라. 다음 중 하나를 선택하라.
@@ -94,6 +91,9 @@ $string['auth_ldap_usertypeundefined'] = 'config.user_type 은 아직 정의되�
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type 은 아직 정의되거나 선언되지 않았습니다. ldap_expirationtime2unix는 선택된 유형을 지원하지 않습니다.';
 $string['auth_ldap_version'] = '서버가 사용하고 있는 LDAP 프로토콜 판번호';
 $string['auth_ldap_version_key'] = '판번호';
+$string['auth_ldapdescription'] = '이 방법은 외부 LDAP서버에 대해 인증을 제공해줍니다. 만약 계정과 비밀번호가 유효하다면 무들은 데이터베이스 안에 새로운 사용자를 만듭니다. 이 모듈은 LDAP에서 사용자 속성을 읽어와서 무들에 필요한 항목을 채웁니다. 추후 로그인 이후에는 단지 계정과 비밀번호만 점검합니다.';
+$string['auth_ldapextrafields'] = '이 필드는 선택사항이다. 당신이 여기에 명시한 LDAP서버에서 정보와 함께 무들 사용자 필드를 미리 채워놓을 수 있다. <p>만약 이 필드를 빈 공간으로 남겨둔다면, LDAP서버에서 아무것도 이동이 되지 않으며 무들의 기본값이 대신 사용된다.</p><p> 어느 경우라도 사용자가 로그인을 한 후에는, 사용자가 이 필드의 모든 것을 수정할 수 있다.';
+$string['auth_ldapnotinstalled'] = 'LDAP인증을 사용할 수 없음. PHP의 LDAP모듈이 설치되지 않았습니다.';
 $string['auth_ntlmsso'] = 'NTLM SSO';
 $string['auth_ntlmsso_enabled'] = 'NTLM 도메인에서 싱글사인온을 하려면 예로 설정. <strong>노트:</strong> 웹서버에 추가작업이 필요합니다. <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a> 를 참조하십시요.';
 $string['auth_ntlmsso_enabled_key'] = '활성화';
@@ -101,7 +101,7 @@ $string['auth_ntlmsso_ie_fastpath'] = 'NTLM SSO fast path를 활성화하려면 
 $string['auth_ntlmsso_ie_fastpath_attempt'] = '';
 $string['auth_ntlmsso_ie_fastpath_key'] = 'MS IE fast path?';
 $string['auth_ntlmsso_remoteuserformat_key'] = '원격 사용자 이름 형식';
-$string['auth_ntlmsso_subnet'] = '설정되면 이 서브넷에 있는 클라이언트에 대해 SSO를 시도합니다.  포맷: xxx.xxx.xxx.xxx/bitmask';
+$string['auth_ntlmsso_subnet'] = '설정되면 이 서브넷에 있는 클라이언트에 대해 SSO를 시도합니다.  포맷: xxx.xxx.xxx.xxx/bitmask 여러 서브넷이 있는 경우 \',\'(콤마)로 분리하세요.';
 $string['auth_ntlmsso_subnet_key'] = '서브넷';
 $string['auth_ntlmsso_type'] = '웹 서버에서 사용자 인증을 받기 위해 설정한 인증 방법(잘 모르겠으면, NTLM을 선택)';
 $string['auth_ntlmsso_type_key'] = '인증 형식';
@@ -136,9 +136,9 @@ $string['updatepasserrorexpiregrace'] = '만료시간을 수정하는 도중 혹
 $string['updateremfail'] = 'LDAP 레코드 업데이트 오류. 오류 코드: {$a->errno}; 오류 문자열: {$a->errstring}<br/>Key ({$a->key}) - 예전 무들 값: \'{$a->ouvalue}\' 새로운 값: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = '불명확한 필드  {$a->key} 로 LDAP 업데이트 실패 ; 예전 무들 값: \'{$a->ouvalue}\', 새로운 값: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = '외부에서 업데이트하는 중에 사용자를 찾을 수 없습니다. 검색 베이스: \'{$a->userdn}\'; 검색 필터 filter: \'(objectClass=*)\'; 검색 속성: {$a->attribs}';
-$string['useracctctrlerror'] = '{$a}에 대해 userAccountControl 를 얻는데 오류';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() 는 선택된 사용자 유형 {$a}을 지원하지 않습니다.';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() 는 선택된 사용자 유형 {$a}을 지원하지 않습니다.';
+$string['useracctctrlerror'] = '{$a}에 대해 userAccountControl 를 얻는데 오류';
 $string['userentriestoadd'] = '사용자 기록 추가됨: {$a}';
 $string['userentriestoremove'] = '사용자 기록 삭제됨: {$a}';
 $string['userentriestorevive'] = '사용자 기록 되살려짐: {$a}';

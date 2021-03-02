@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'es', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -51,7 +51,6 @@ $string['course_fullname_updateonsync'] = 'Actualizar nombre completo durante el
 $string['course_fullname_updateonsync_key'] = 'Actualizar nombre completo';
 $string['course_idnumber'] = 'Mapa del identificador único en LDAP, normalmente  <em>cn</em> or <em>uid</em>. Se recomienda bloquear el valor si se está utilizando la creación automática del curso.';
 $string['course_idnumber_key'] = 'Número ID';
-$string['coursenotexistskip'] = 'El curso \'{$a} no existe y la creación automática esta deshabilitada; se pasa por alto';
 $string['course_search_sub'] = 'Buscar pertenencia a grupos en subcontextos';
 $string['course_search_sub_key'] = 'Buscar subcontextos';
 $string['course_settings'] = 'Ajustes de matriculación de Curso';
@@ -63,6 +62,7 @@ $string['course_summary'] = 'Opcional: campo LDAP del que conseguir el sumario.'
 $string['course_summary_key'] = 'Resumen';
 $string['course_summary_updateonsync'] = 'Actualizar resumen durante el script de sincronización';
 $string['course_summary_updateonsync_key'] = 'Actualizar resumen';
+$string['coursenotexistskip'] = 'El curso \'{$a} no existe y la creación automática esta deshabilitada; se pasa por alto';
 $string['courseupdated'] = 'El curso con idnumber  \'{$a->idnumber}\'  ha sido actualizado correctamente.';
 $string['courseupdateskipped'] = 'El curso con número de identificación \'{$a->idnumber}\' no necesita actualización. Omitiéndose...';
 $string['createcourseextid'] = 'CREAR usuario matriculado en un curso inexistente \'{$a->courseextid}\'';
@@ -88,12 +88,12 @@ or \'ldaps://ldap.myorg.com/\'';
 $string['host_url_key'] = 'URL del servidor';
 $string['idnumber_attribute'] = 'Si la pertenencia a grupo contiene \'nombres distinguidos\', especifique el mismo atributo que ha usado para el mapeo del \'Número ID\' del usuario, en la configuración de identificación LDAP';
 $string['idnumber_attribute_key'] = 'Atributo de número ID';
+$string['ldap:manage'] = 'Gestionar ejemplos de matriculación LDAP';
 $string['ldap_encoding'] = 'Indique la codificación utilizada por el servidor LDAP. Lo más probable es que sea utf-8;  MS AD v2 utiliza  codificaciones predeterminadas de la plataforma como cp1252, cp1250, etc';
 $string['ldap_encoding_key'] = 'Codificación LDAP';
-$string['ldap:manage'] = 'Gestionar ejemplos de matriculación LDAP';
 $string['memberattribute'] = 'Atributo de miembro LDAP';
 $string['memberattribute_isdn'] = 'Si la pertenencia a grupo contiene \'nombres distinguidos\'  necesita especificarlo aquí. Si es así, también necesita configurar el resto de parámetros de esta sección.';
-$string['memberattribute_isdn_key'] = 'El atributo de miembro usa dn';
+$string['memberattribute_isdn_key'] = 'El atributo de miembro usa \'dn\' (nombre distinguido)';
 $string['nested_groups'] = '¿Desea usar grupos anidados (i.e., grupos de grupos) para la matriculación?';
 $string['nested_groups_key'] = 'Grupos anidados';
 $string['nested_groups_settings'] = 'Configuración de grupos anidados';
@@ -104,8 +104,8 @@ $string['objectclass_key'] = 'Clase del objeto';
 $string['ok'] = 'Ok';
 $string['opt_deref'] = 'Si la membresía del grupo contiene nombres distinguidos, especifique cómo se manejarán los alias durante la búsqueda. Elija uno de los siguientes valores: \'No\' (LDAP_DEREF_NEVER) o \'Sí\' (LDAP_DEREF_ALWAYS).';
 $string['opt_deref_key'] = 'Eliminar referencias de alias';
-$string['phpldap_noextension'] = '<em>El módulo PHP LDAP no parecen estar presente. Por favor, asegúrese de que está instalado y habilitado si desea utilizar este módulo de matriculación.</em>';
-$string['pluginname'] = 'Inscripciones LDAP';
+$string['phpldap_noextension'] = '<em>El módulo PHP LDAP no parecen estar presente. Por favor, asegúrese de que está instalado y habilitado si desea utilizar esta extensión de de matriculación.</em>';
+$string['pluginname'] = 'Matriculaciones LDAP';
 $string['pluginname_desc'] = '<p>Usted puede utilizar un servidor LDAP para coltrolar sus matriculaciones. Se asume que su árbol LDAP contiene grupos que apuntan a los cursos y que cada uno de esos grupos o cursos contienen entradas de matriculación que hacen referencia a los estudiantes.</p>
 <p>Se asume que los cursos están definidos como grupos en LDAP, de modo que cada grupo tiene múltiples campos de pertenencia  (<em>member</em> o <em>memberUid</em>) que contienen una identificación única del usuario.</p>
 <p>Para usar la matriculación LDAP, los usuarios <strong>deben</strong> tener un campo \'idnumber\' válido. Los grupos LDAP deben contener ese \'idnumber\' en los campos de pertenencia para que un usuario pueda matricularse en un curso. Esto normalmente funcionará bien si usted ya está usando la identificación LDAP.</p>
@@ -123,7 +123,7 @@ $string['roles'] = 'Mapeo de roles';
 $string['server_settings'] = 'Configuración del Servidor LDAP';
 $string['synccourserole'] = '== Sincronizando curso \'{$a->idnumber}\' para el rol \'{$a->role_shortname}\'';
 $string['syncenrolmentstask'] = 'Sincronizar la tarea de matriculaciones LDAP';
-$string['template'] = 'Opcional: los cursos auto-creados pueden copiar sus ajustes a partir de un curso-plantilla.';
+$string['template'] = 'Opcional: los cursos auto-creados pueden copiar sus ajustes a partir de una plantilla de curso.';
 $string['template_key'] = 'Plantilla';
 $string['unassignrole'] = 'Quitando la asignación al rol  \'{$a->role_shortname}\' al usuario \'{$a->user_username}\' en el curso \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['unassignrolefailed'] = 'Fallo al quitar la asignación al rol \'{$a->role_shortname}\' al usuario \'{$a->user_username}\' en el curso \'{$a->course_shortname}\' (id {$a->course_id})';

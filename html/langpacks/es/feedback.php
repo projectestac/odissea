@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'feedback', language 'es', version '3.8'.
  *
- * @package   feedback
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     feedback
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -46,14 +46,14 @@ $string['cannotsavetempl'] = 'no se permite guardar plantillas';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'No se ha ajustado el Captcha.';
 $string['check'] = 'Elección múltiple (varias respuestas)';
-$string['checkbox'] = 'Elección múltiple (se permiten varias respuestas - casillas de verificación)';
 $string['check_values'] = 'Respuestas posibles';
+$string['checkbox'] = 'Elección múltiple (se permiten varias respuestas - casillas de verificación)';
 $string['choosefile'] = 'Seleccione un archivo';
 $string['chosen_feedback_response'] = 'respuesta elegida';
-$string['completed'] = 'completada';
+$string['complete_the_form'] = 'Responda a las preguntas';
+$string['completed'] = 'Completada';
 $string['completed_feedbacks'] = 'Respuestas enviadas';
 $string['completedon'] = 'Completada en {$a}';
-$string['complete_the_form'] = 'Responda a las preguntas';
 $string['completionsubmit'] = 'Ver como "completado" si se envía la encuesta';
 $string['configallowfullanonymous'] = 'Si se establece esta opción la encuesta puede ser respondida por usuarios que previamente no hayan iniciado la sesión. Esto sólo afecta a las encuestas de la página principal.';
 $string['confirmdeleteentry'] = '¿Está seguro que quiere borrar esta entrada?';
@@ -89,11 +89,11 @@ $string['dependvalue'] = 'Depende del valor';
 $string['description'] = 'Descripción';
 $string['do_not_analyse_empty_submits'] = 'No analizar envíos vacíos';
 $string['downloadresponseas'] = 'Descargar todas las respuestas como:';
+$string['drop_feedback'] = 'Eliminar de este curso';
 $string['dropdown'] = 'Opción múltiple (sólo una respuesta - lista desplegable)';
+$string['dropdown_values'] = 'Valores de la lista desplegable';
 $string['dropdownlist'] = 'Opción múltiple  - una respuesta (desplegable)';
 $string['dropdownrated'] = 'Lista desplegable (clasificada)';
-$string['dropdown_values'] = 'Valores de la lista desplegable';
-$string['drop_feedback'] = 'Eliminar de este curso';
 $string['edit_item'] = 'Editar pregunta';
 $string['edit_items'] = 'Editar preguntas';
 $string['email_notification'] = 'Activar notificaciones de las entregas';
@@ -111,30 +111,30 @@ $string['eventresponsesubmitted'] = 'Respuesta enviada';
 $string['export_questions'] = 'Exportar preguntas';
 $string['export_to_excel'] = 'Exportar a Excel';
 $string['feedback:addinstance'] = 'Añadir una nueva encuesta';
-$string['feedbackclose'] = 'Permitir respuestas a';
 $string['feedback:complete'] = 'Cumplimente la encuesta';
-$string['feedbackcompleted'] = '{$a->username} ha completado {$a->feedbackname}';
 $string['feedback:createprivatetemplate'] = 'Crear plantilla privada';
 $string['feedback:createpublictemplate'] = 'Crear plantilla pública';
 $string['feedback:deletesubmissions'] = 'Eliminar envíos completados';
 $string['feedback:deletetemplate'] = 'Borrar plantilla';
 $string['feedback:edititems'] = 'Editar ítems';
-$string['feedback_is_not_for_anonymous'] = 'la encuesta no es anónima';
-$string['feedback_is_not_open'] = 'La encuesta no está disponible';
 $string['feedback:mapcourse'] = 'Asignar cursos a encuestas globales';
-$string['feedbackopen'] = 'Permitir respuestas de';
 $string['feedback:receivemail'] = 'Recibir notificación por correo electrónico';
 $string['feedback:view'] = 'Ver una encuesta';
 $string['feedback:viewanalysepage'] = 'Ver página de análisis después del envío';
 $string['feedback:viewreports'] = 'Ver informes';
+$string['feedback_is_not_for_anonymous'] = 'la encuesta no es anónima';
+$string['feedback_is_not_open'] = 'La encuesta no está disponible';
+$string['feedbackclose'] = 'Permitir respuestas a';
+$string['feedbackcompleted'] = '{$a->username} ha completado {$a->feedbackname}';
+$string['feedbackopen'] = 'Permitir respuestas de';
 $string['file'] = 'Archivo';
 $string['filter_by_course'] = 'Filtrar por curso';
 $string['handling_error'] = 'Error en la ejecución del módulo Encuesta';
 $string['hide_no_select_option'] = 'Ocultar la opción "No seleccionada"';
 $string['horizontal'] = 'horizontal';
-$string['importfromthisfile'] = 'Importar de este archivo';
 $string['import_questions'] = 'Importar preguntas';
 $string['import_successfully'] = 'Importación exitosa';
+$string['importfromthisfile'] = 'Importar de este archivo';
 $string['indicator:cognitivedepth'] = 'Retroalimentación cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Retroalimentación.';
 $string['indicator:socialbreadth'] = 'Retroalimentación social';
@@ -176,9 +176,9 @@ La actividad Encuesta puede ser utilizada
 $string['modulenameplural'] = 'Encuestas';
 $string['move_item'] = 'Mover esta pregunta';
 $string['multichoice'] = 'Elección múltiple';
+$string['multichoice_values'] = 'Valores elección múltiple';
 $string['multichoicerated'] = 'Elección múltiple (clasificadas)';
 $string['multichoicetype'] = 'Tipo elección múltiple';
-$string['multichoice_values'] = 'Valores elección múltiple';
 $string['multiplesubmit'] = 'Permitir múltiples envíos';
 $string['multiplesubmit_help'] = 'Si se habilita en las encuestas anónimas, los usuarios pueden enviar sus opinión un número ilimitado de veces.';
 $string['name'] = 'Nombre';
@@ -188,11 +188,11 @@ $string['no_handler'] = 'Ninguna acción planificada para';
 $string['no_itemlabel'] = 'No etiqueta';
 $string['no_itemname'] = 'Falta el nombre del ítem';
 $string['no_items_available_yet'] = 'No se han planificado preguntas';
+$string['no_templates_available_yet'] = 'No hay plantillas disponibles';
 $string['non_anonymous'] = 'Los nombres de los usuarios se mostrarán y registrarán con las respuestas';
 $string['non_anonymous_entries'] = 'Entradas no anónimas ({$a})';
 $string['non_respondents_students'] = 'Estudiantes sin responder  ({$a})';
 $string['not_completed_yet'] = 'Aún no se ha finalizado';
-$string['no_templates_available_yet'] = 'No hay plantillas disponibles';
 $string['not_selected'] = 'No seleccionada';
 $string['not_started'] = 'Sin comenzar';
 $string['numberoutofrange'] = 'Número fuera de rango';
@@ -205,9 +205,9 @@ $string['oldvalueswillbedeleted'] = 'Se eliminarán las preguntas actuales y tod
 $string['only_one_captcha_allowed'] = 'Solo se permite un captcha por encuesta';
 $string['overview'] = 'Vista general';
 $string['page'] = 'Página';
+$string['page-mod-feedback-x'] = 'Cualquier página del módulo Encuesta';
 $string['page_after_submit'] = 'Mensaje de finalizado';
 $string['pagebreak'] = 'Salto de página';
-$string['page-mod-feedback-x'] = 'Cualquier página del módulo Encuesta';
 $string['pluginadministration'] = 'Administración de la encuesta';
 $string['pluginname'] = 'Módulo de encuesta';
 $string['position'] = 'Posición';
@@ -241,7 +241,7 @@ $string['show_all'] = 'Mostrar todo';
 $string['show_analysepage_after_submit'] = 'Mostrar página de análisis';
 $string['show_entries'] = 'Mostrar respuestas';
 $string['show_entry'] = 'Mostrar respuesta';
-$string['show_nonrespondents'] = 'Mostrar no respondientes';
+$string['show_nonrespondents'] = 'Mostrar sin respuesta';
 $string['site_after_submit'] = 'Sitio tras el envío';
 $string['sort_by_course'] = 'Ordenar por curso';
 $string['started'] = 'Iniciado';
@@ -251,8 +251,8 @@ $string['switch_item_to_not_required'] = 'cambiar a: respuesta no obligatoria';
 $string['switch_item_to_required'] = 'cambiar a: respuesta obligatoria';
 $string['template'] = 'Plantilla';
 $string['template_deleted'] = 'Plantilla borrada';
-$string['templates'] = 'Plantillas';
 $string['template_saved'] = 'Plantilla guardada';
+$string['templates'] = 'Plantillas';
 $string['textarea'] = 'Respuesta de texto larga';
 $string['textarea_height'] = 'Número de líneas';
 $string['textarea_width'] = 'Anchura';

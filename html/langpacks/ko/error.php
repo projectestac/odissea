@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'error', language 'ko', version '3.8'.
  *
- * @package   error
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     error
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alreadyloggedin'] = '이미 {$a}로 로그인 하였습니다. 다른 사용자로 로그인하려면 로그아웃 해야 합니다.';
+$string['TODO'] = '실행목록';
+$string['alreadyloggedin'] = '이미 {$a}로 로그인 하였습니다. 다른 사용자로 로그인하기전에 로그아웃 해야 합니다.';
 $string['authnotexisting'] = '인증 플러그인이 없음';
 $string['backupcontainexternal'] = '백업 파일에 이곳에 맞게 설정되지 않은 외부 무들네트웍 호스트가 포함되어 있음';
 $string['backuptablefail'] = '백업 테이블을 제대로 설정할 수 없습니다!';
@@ -37,7 +38,7 @@ $string['blockdoesnotexistonpage'] = '이  페이지 ({$a->url})에는 블록(id
 $string['blocknameconflict'] = '명칭 중복: {$a->name} 블록은 기존의 {$a->conflict} 블록과 동일한 명칭을 지님!';
 $string['callbackrejectcomment'] = '모듈이 덧글을 추가하는 것을 거부함';
 $string['cannotaddcoursemodule'] = '새 강좌 모듈을 추가할 수 없음';
-$string['cannotaddcoursemoduletosection'] = '그 영역에 새 강좌 모듈을 추가할 수 없음';
+$string['cannotaddcoursemoduletosection'] = '그 섹션에 새 강좌 모듈을 추가할 수 없음';
 $string['cannotaddmodule'] = '{$a} 모듈을 추가할 수 없음!';
 $string['cannotaddnewmodule'] = '{$a} 의 새 모듈을 추가할 수 없음';
 $string['cannotaddrss'] = 'RSS 피드를 추가할 수 있는 권한이 없음';
@@ -82,7 +83,7 @@ $string['cannotfindcategory'] = '데이테베이스에서 ID - {$a} 로 범주 �
 $string['cannotfindcomponent'] = '구성요소를 찾을 수 없음';
 $string['cannotfindcontext'] = '문맥을 찾을 수 없음';
 $string['cannotfindcourse'] = '강좌를 찾을 수 없음';
-$string['cannotfinddocs'] = '"{$a}" 언어의 문서창고를 찾을 수 없음';
+$string['cannotfinddocs'] = '"{$a}" 언어의 문서를 찾을 수 없음';
 $string['cannotfindgradeitem'] = '성적 항목을 찾을 수 없습니다.';
 $string['cannotfindgroup'] = '모둠을 찾을 수 없음';
 $string['cannotfindhelp'] = '"{$a}" 언어팩의 도움말 파일을 찾을 수 없음';
@@ -152,7 +153,7 @@ $string['cannotupdateprofile'] = '사용자 기록 업데이트 오류';
 $string['cannotupdaterecord'] = '레코드 ID {$a} 를 업데이트할 수 없음';
 $string['cannotupdaterss'] = 'RSS를 업데이트할 수 없음';
 $string['cannotupdatesubcourse'] = '하위 강좌를 업데이트할 수 없음!';
-$string['cannotupdateusermsgpref'] = '사용자 메시지 설정을 업데이트할 수 없음';
+$string['cannotupdateusermsgpref'] = '사용자 메세지 설정을 업데이트할 수 없음';
 $string['cannotupdateuseronexauth'] = '외부 인증 {$a} 사용자 자료 업데이트 실패. 자세한 내용은 서버 기록을 참조할 것';
 $string['cannotuploadfile'] = '파일 업로드 처리중 오류';
 $string['cannotuseadmin'] = '관리자만 이  페이지를 사용할 수 있습니다';
@@ -177,7 +178,7 @@ $string['courseformatnotfound'] = '강좌 형식  "{$a}"이 존재하지 않거�
 $string['coursegroupunknown'] = '{$a} 모둠에 상응하는 강좌가 지정되어 있지 않음';
 $string['courseidnotfound'] = '강좌 ID가 없음';
 $string['coursemisconf'] = '강좌가 잘못 설정됨';
-$string['courserequestdisabled'] = '요청한 강좌가 관리자에 의해 비활성화 됐음';
+$string['courserequestdisabled'] = '죄송합니다, 강좌 요청이  관리자에 의해 비활성화 되어 있습니다.';
 $string['csvcolumnduplicates'] = '중복된 열 발견';
 $string['csvemptyfile'] = 'CSV 파일이 비어 있음';
 $string['csvfewcolumns'] = '충분한 열이 없습니다. 구분자 설정을 확인하기 바람';
@@ -261,7 +262,7 @@ $string['guestsarenotallowed'] = '손님은 이 작업을 할 수 없음';
 $string['hackdetected'] = '해커 침입이 탐지됨!';
 $string['hashpoolproblem'] = '{$a} 에 잘못된 파일 지정';
 $string['headersent'] = '헤더는 이미 전송되었음';
-$string['idnumbertaken'] = '다른 강좌에서 이미 같은 ID가 쓰였음';
+$string['idnumbertaken'] = '이 ID 번호는 이미 사용중 입니다.';
 $string['idnumbertoolong'] = '아이디 번호가 너무 깁니다.';
 $string['importformatnotimplement'] = '아직 이 형식의 가져오기는 적용되지 않음!';
 $string['incorrectext'] = '바르지 않은 확장자';
@@ -286,7 +287,7 @@ $string['invalidcomponent'] = '잘못된 구성요소 이름';
 $string['invalidconfirmdata'] = '잘못된 인증 데이터';
 $string['invalidcontext'] = '잘못된 문맥';
 $string['invalidcourse'] = '잘못된 강좌';
-$string['invalidcourseid'] = '잘못된 강좌 아이디:({$a})를 입력하려고 함';
+$string['invalidcourseid'] = '잘못된 강좌 아이디를 사용하려고 하고 있습니다.';
 $string['invalidcourselevel'] = '바르지 않은 문맥 수준!';
 $string['invalidcoursemodule'] = '잘못된 강좌모듈 아이디';
 $string['invalidcoursenameshort'] = '잘못된 강좌 단축명';
@@ -355,9 +356,9 @@ $string['maxareabytes'] = '이 파일은 이 영역에 남아 있는 공간보�
 $string['messagingdisable'] = '이 사이트에서는 메시지 기능을 쓸 수 없음';
 $string['mimetexisnotexist'] = '시스템이 mimeTeX를 구동하도록 설정되지 않음. <a href="http://moodle.org/download/mimetex/">http://moodle.org/download/mimetex/</a>에서 환경에 맞는 적절한 파일을 내려받거나 <a href="http://www.forkosh.com/mimetex.zip"> http://www.forkosh.com/mimetex.zip</a>에서 C 원본 코드를 내려받아 컴파일하여 moodle/filter/tex/ 경로에 넣어야 함.';
 $string['mimetexnotexecutable'] = '맞춤 mimetex가 실행되지 않음!';
+$string['missing_moodle_backup_xml_file'] = '백업에 XML 파일 {$a} 이 없습니다.';
 $string['missingfield'] = '필드 "{$a}" 가 없음';
 $string['missingkeyinsql'] = '오류: 질의에 "{$a}" 매개변수 누락';
-$string['missing_moodle_backup_xml_file'] = '백업에 XML 파일 {$a} 이 없습니다.';
 $string['missingparam'] = '필수 매개변수 ({$a}) 누락';
 $string['missingparameter'] = '매개변수 누락';
 $string['missingrequiredfield'] = '필요한 항목이 빠져 있음';
@@ -395,7 +396,7 @@ $string['nologinas'] = '현재 사용자 ID로는 로그인 할 수 없음';
 $string['nonmeaningfulcontent'] = '의미없는 내용';
 $string['noparticipants'] = '강좌에 참여자가 아무도 없음';
 $string['noparticipatorycms'] = '죄송하지만, 보고할만한 참여했던 강좌 모듈이 없습니다.';
-$string['nopermissions'] = '죄송합니다만 그 ({$a})를 할만한 권한이 없습니다.';
+$string['nopermissions'] = '죄송합니다. 현재 ({$a})에 대한 권한이 없습니다.';
 $string['nopermissiontocomment'] = '본 어휘집에 덧글을 추가할 수 없음!';
 $string['nopermissiontodelentry'] = '타인의 입력사항을 삭제할 수 없음!';
 $string['nopermissiontoeditcomment'] = '타인의 덧글을 수정할 수 없음!';
@@ -442,17 +443,17 @@ $string['remotedownloadnotallowed'] = '서버로 구성요소를 내려받는 �
 $string['reportnotavailable'] = '사이트 수준의 강좌에서만 이 유형의 보고서를 쓸 수 있음';
 $string['requirecorrectaccess'] = '잘못된 url 혹은 포트';
 $string['requireloginerror'] = '강좌 혹은 활동에 접속할 수 없음';
-$string['restorechecksumfailed'] = '세션에 저장되었던 정보를 복구하던 중 약간의 문제가 발생하였습니다. php 저장영역 혹은 데이터베이스 용량의 한계를 점검해 보기 바랍니다. 복구가 중지됨.';
 $string['restore_path_element_missingmethod'] = '복구 메쏘드 {$a}가 누락되었습니다. 개발자가 정의해야 합니다.';
 $string['restore_path_element_noobject'] = '복구 객체 {$a} 는 객체가 아닙니다.';
+$string['restorechecksumfailed'] = '세션에 저장되었던 정보를 복구하던 중 약간의 문제가 발생하였습니다. php 저장영역 혹은 데이터베이스 용량의 한계를 점검해 보기 바랍니다. 복구가 중지됨.';
 $string['restrictedcontextexception'] = '죄송합니다만, 외부 기능의 실행은 문맥 위반입니다.';
 $string['restricteduser'] = '죄송합니다. 현재 당신의 "{$a}" 계정으로는 그 일을 할 수 없습니다.';
 $string['reverseproxyabused'] = '죄송합니다만 역 프록시가 활성화되어 있기 때문에 서버가 직접 접속할 수 없습니다.<br />서버 관리자에게 연락하시기 바랍니다.';
 $string['rpcerror'] = 'MNET 교신에 실패! 다음의 내용을 관리자에게 전달해주기 바랍니다: {$a}';
 $string['scheduledbackupsdisabled'] = '자동 백업이 서버관리자에 의해 비활성화 되었음';
 $string['secretalreadyused'] = '암호 변경 확인 링크가 이미 사용되었으므로 암호는 변경되지 않습니다.';
-$string['sectionnotexist'] = '영역이 존재하지 않음';
-$string['sendmessage'] = '메세지 보내기';
+$string['sectionnotexist'] = '섹션이 존재하지 않음';
+$string['sendmessage'] = '쪽지 보내기';
 $string['serverconnection'] = '서버 접속 오류';
 $string['servicedonotexist'] = '그런 서비스가 없음';
 $string['sessioncookiesdisable'] = 'require_key_login()의 사용이 바르지 않음 - 세션 쿠기를 비활성해야 함!';
@@ -461,7 +462,7 @@ $string['sessionerroruser'] = '세션이 종료 되었습니다. 다시 로그�
 $string['sessionerroruser2'] = '로그인 세션에 영향을 줄만한 서버 오류가 발생했습니다. 다시 로그인 하시거나 인터넷 창을 다시 켜주십시오.';
 $string['sessionipnomatch'] = '죄송합니다 당신의 아이피 주소가 처음 로그인 했을 때와 다릅니다. 이 보안 기능은 해커가 아이디를 도용해 이 사이트에 접속하는 것을 방지합니다. 정상적인 사용자들에게는 이 메시지가 나타나지 않을 것입니다. 도움을 원한다면 이 사이트의 운영자에게 문의하시기 바랍니다.';
 $string['sessionipnomatch2'] = '죄송합니다. 당신의 아이피 주소가 처음 로그인 했을 때와 다릅니다. 이 보안 기능은 해커가 아이디를 도용해 이 사이트에 접속하는 것을 방지합니다. 이 메시지는 무선네트웍을 이용하거나 로밍 서비스를 이용할 때에도 나타날 수 있습니다. 좀 더 자세한 사항은 사이트 관리자에게 문의하기 바랍니다.<br /><br />계속 진행하고 싶으시면 F5키를 눌러 페이지를 업데이트하십시오.';
-$string['shortnametaken'] = '이미 다른 강좌에서 같은 단측명이 사용되었음';
+$string['shortnametaken'] = '강좌 짧은 이름이 이미 다른 강좌({$a})에서 사용되고 있습니다.';
 $string['socksnotsupported'] = 'PHP4는 SOCKS5 프록시를 지원하지 않음';
 $string['spellcheckernotconf'] = '철자검색기가 설정되지 않음';
 $string['sslonlyaccess'] = '죄송합니다만, 보안상 이유로 https 접속만 허용됩니다.';
@@ -477,7 +478,6 @@ $string['tagnotfound'] = '지정한 태그가 데이터베이스에 없음';
 $string['targetdatabasenotempty'] = '대상 데이터베이스가 비어있지 않음. 안전성을 이유로 전송 취소';
 $string['textconditionsnotallowed'] = '텍스트 컬럼 조건 비교가 허용되지 않습니다. 질의에 sql_compare_text() 를 사용하십시요.';
 $string['themenotinstall'] = '테마가 설치되지 않았음!';
-$string['TODO'] = '실행목록';
 $string['tokengenerationfailed'] = '새로운 토큰을 생성할 수 없음';
 $string['transactionvoid'] = '이미 취소되었기 때문에 거래를 취소할 수 없음';
 $string['unenrolerror'] = '그 사람을 제명시키려 하는 중에 오류 발생';

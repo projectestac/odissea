@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'timezones', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'timezones', language 'ko', version '3.8'.
  *
- * @package   timezones
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     timezones
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -137,8 +137,8 @@ $string['america/havana'] = '아메리카/하바나';
 $string['america/hermosillo'] = '아메리카/에르모시오';
 $string['america/indiana/knox'] = '아메리카/인디애나/녹스';
 $string['america/indiana/marengo'] = '아메리카/인디애나/마렝고';
-$string['america/indianapolis'] = '아메리카/인디애나폴리스';
 $string['america/indiana/vevay'] = '아메리카/인디애나/비베이';
+$string['america/indianapolis'] = '아메리카/인디애나폴리스';
 $string['america/inuvik'] = '아메리카/이누빅';
 $string['america/iqaluit'] = '아메리카/이콸루이트';
 $string['america/jamaica'] = '아메리카/자메이카';
@@ -292,8 +292,8 @@ $string['atlantic/faeroe'] = '대서양/페로';
 $string['atlantic/madeira'] = '대서양/마데이라';
 $string['atlantic/reykjavik'] = '대서양/레이캬비크';
 $string['atlantic/south_georgia'] = '대서양/사우스조지아';
-$string['atlantic/stanley'] = '대서양/스탠리';
 $string['atlantic/st_helena'] = '대서양/세인트 헬레나';
+$string['atlantic/stanley'] = '대서양/스탠리';
 $string['australia/adelaide'] = '호주/애들레이드';
 $string['australia/brisbane'] = '호주/브리즈번';
 $string['australia/broken_hill'] = '호주/브로큰힐';

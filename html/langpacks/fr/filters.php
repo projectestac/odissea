@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'filters', language 'fr', version '3.8'.
  *
- * @package   filters
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     filters
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,12 +52,12 @@ $string['doesnotcontain'] = 'ne contient pas';
 $string['endswith'] = 'se termine par';
 $string['filterallwarning'] = 'L\'application des filtres aux titres et au contenu peut augmenter considérablement la charge sur votre serveur. Veuillez utiliser ce réglage « Appliquer à » avec parcimonie. Il est habituellement utilisé en combinaison avec le filtre multilingue.';
 $string['filtersettings'] = 'Réglages des filtres';
-$string['filtersettingsforin'] = 'Réglages du filtre {$a->filter} dans {$a->context}';
 $string['filtersettings_help'] = '<p>Cette page vous permet d\'activer ou de désactiver des filtres dans une section précise du site.
 Vous n\'avez accès depuis cette page qu\'aux filtres que l\'administrateur a activés.</p>
 
 <p>Certains filtres autorisent les réglages locaux, auquel cas vous verrez un lien
 « Réglages » à côté de leurs noms.</p>';
+$string['filtersettingsforin'] = 'Réglages du filtre {$a->filter} dans {$a->context}';
 $string['filtersettingsin'] = 'Réglages de filtre dans {$a}';
 $string['firstaccess'] = 'Premier accès';
 $string['globalrolelabel'] = '{$a->label} est {$a->value}';

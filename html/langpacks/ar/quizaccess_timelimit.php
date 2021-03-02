@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quizaccess_timelimit', language 'ar', version '3.8'.
  *
- * @package   quizaccess_timelimit
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quizaccess_timelimit
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['confirmstart'] = 'محاولتك ستكون محددة بوقت مقداره {$a}. عندما تبدأ، سيبدأ عداد الوقت التنازلي بالحساب ولا يمكن إيقافه. عليك إنهاء المحاولة قبل انتهاء الوقت المحدد لها. هل أنت متأكد من رغبتك بالبدء الآن؟';
 $string['confirmstartheader'] = 'محدد الوقت';
-$string['pluginname'] = 'قاعدة الوقت المُحدَّد للوصول للاختبار';
-$string['privacy:metadata'] = 'إن ملحق قاعدة الوصول للاختبار ذو محدد الوقت لا يخزن أي بيانات شخصية.';
-$string['quiztimelimit'] = 'الوقت المحدد: {$a}';
+$string['pluginname'] = 'نظام الوصول للاختبار بوقت محدد';
+$string['privacy:metadata'] = 'البرنامج المساعد Time limit quiz access rule لا يخزن أيّ بيانات شخصية.';
+$string['quiztimelimit'] = 'الحد الزمني: {$a}';

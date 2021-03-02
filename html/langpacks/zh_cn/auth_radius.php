@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_radius', language 'zh_cn', branch 'MOODLE_31_STABLE'
+ * Strings for component 'auth_radius', language 'zh_cn', version '3.8'.
  *
- * @package   auth_radius
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_radius
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,8 +34,8 @@ $string['auth_radiusnasport_key'] = '端口';
 $string['auth_radiussecret'] = '共享密钥';
 $string['auth_radiussecret_key'] = '秘密';
 $string['auth_radiustype'] = '选择一个验证机制来配合使用RADIUS服务器。';
-$string['auth_radiustypechapmd5'] = 'CHAP MD5';
 $string['auth_radiustype_key'] = '认证';
+$string['auth_radiustypechapmd5'] = 'CHAP MD5';
 $string['auth_radiustypemschapv1'] = '微软CHAP版本1';
 $string['auth_radiustypemschapv2'] = '微软CHAP版本2';
 $string['auth_radiustypepap'] = 'PAP';

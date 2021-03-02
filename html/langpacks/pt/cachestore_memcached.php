@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cachestore_memcached', language 'pt', version '3.8'.
  *
- * @package   cachestore_memcached
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_memcached
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['bufferwrites'] = 'Escrita do Buffer';
 $string['bufferwrites_help'] = 'Ativa ou desativa o buffer I/O. Ativar o buffer I/O faz com que os comandos de armazenamento do "buffer" em vez de ser enviado. Qualquer ação que recupera dados faz com que o buffer seja enviado para a conexão remota. Sair ou fechar a conexão também fará com que os dados no buffer sejam encaminhados para a conexão remota.';
 $string['clustered'] = 'Ativar servidores em cluster';
-$string['clusteredheader'] = 'Dividir servidores';
 $string['clustered_help'] = 'Esta opção é usada para permitir a funcionalidade \'read-one, set-multi\'.
 
 A utilização pretendida consiste em melhorar o armazenamento para as configurações de balanceamento. O armazenamento irá procurar num servidor (normalmente localmente), mas definido para muitos (todos os servidores no load-balance pool). Para caches com uma leitura muito elevada que permitem definir rácios, isto reduz significativamente a sobrecarga na rede.
 
 Quando esta opção está ativada, a lista de servidores acima será usado para procurar.';
+$string['clusteredheader'] = 'Dividir servidores';
 $string['hash'] = 'Método Hash';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'Predefinido (um de cada vez)';
@@ -61,7 +61,6 @@ $string['serialiser_igbinary'] = 'O serializador igbinary.';
 $string['serialiser_json'] = 'O serializador JSON.';
 $string['serialiser_php'] = 'O serializador predefinido de PHP.';
 $string['servers'] = 'Servidores';
-$string['serversclusterinvalid'] = 'É necessário precisamente um servidor quando o clustering está ativado.';
 $string['servers_help'] = 'Esta configuração define os servidores que devem ser utilizados por este adaptador memcache.
 Os servidores devem ser indicados um por linha e consiste no endereço do servidor e, opcionalmente, uma porta e importância.
 Caso nenhuma porta seja indicada, será utilizada a porta padrão (11211).
@@ -74,6 +73,7 @@ servername:port:weight
 </pre>
 
 Se ativar a configuração *Ativar servidores em cluster*, apenas poderá estar listado um servidor. Normalmente é o nome da máquina local, como por exemplo 127.0.0.1 ou localhost.';
+$string['serversclusterinvalid'] = 'É necessário precisamente um servidor quando o clustering está ativado.';
 $string['sessionhandlerconflict'] = 'Aviso: uma instância de memcache ({$a}) foi configurada para usar o mesmo servidor de memcache que as sessões. Apagar o conteúdo de todas as caches fará com que também sejam apagadas as sessões.';
 $string['setservers'] = 'Definir servidores';
 $string['setservers_help'] = 'Lista de servidores que serão atualizados quando os dados são modificados na cache. Geralmente o nome completo de cada servidor na pool.

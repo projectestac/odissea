@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'resource', language 'ja', version '3.8'.
  *
- * @package   resource
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     resource
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,6 @@ $string['configpopupwidth'] = '新しいポップアップウィンドウのデ�
 $string['contentheader'] = 'コンテンツ';
 $string['displayoptions'] = '利用可能な表示オプション';
 $string['displayselect'] = '表示';
-$string['displayselectexplain'] = '表示タイプを選択してください。残念ですがすべてのタイプがすべてのファイルに適しているということではありません。';
 $string['displayselect_help'] = 'ファイルタイプおよびブラウザが埋め込みを許可するかどうかも含めてこの設定ではファイルがどのように表示されるか決定します。オプションには以下を含みます:
 
 * 自動- 選択されたファイルタイプを自動的に検出する最良の表示オプションです。
@@ -53,6 +52,7 @@ $string['displayselect_help'] = 'ファイルタイプおよびブラウザが�
 * ポップアップ - ファイルはメニューまたはアドレスバーなしの新しいブラウザウィンドウに表示されます。
 * フレーム - ファイルはフレーム内のナビゲーションバーの下にファイル説明およびブロックと共に表示されます。
 * 新しいウィンドウ - ファイルは新しいウィンドウ内にメニューおよびアドレスバーと共に表示されます。';
+$string['displayselectexplain'] = '表示タイプを選択してください。残念ですがすべてのタイプがすべてのファイルに適しているということではありません。';
 $string['dnduploadresource'] = 'ファイルリソースを作成する';
 $string['encryptedcode'] = '暗号化コード';
 $string['filenotfound'] = '申し訳ございません、ファイルが見つかりませんでした。';
@@ -62,13 +62,13 @@ $string['filtername'] = 'リソース名オートリンク';
 $string['forcedownload'] = 'ダウンロードを強制する';
 $string['framesize'] = 'フレーム高';
 $string['indicator:cognitivedepth'] = 'ファイル認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標はファイルリソースで学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'ファイル認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者がファイルリソースから提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧)。';
-$string['indicator:cognitivedepth_help'] = 'この指標はファイルリソースで学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = 'ファイル社会的';
+$string['indicator:socialbreadth_help'] = 'この指標はファイルリソースで学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = 'ファイル社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者がファイルリソースから提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標はファイルリソースで学生が到達した社会的広がりに基づきます。';
 $string['legacyfiles'] = '古いコースファイルの移行';
 $string['legacyfilesactive'] = 'アクティブ';
 $string['legacyfilesdone'] = '終了';
@@ -99,13 +99,13 @@ $string['printintro'] = 'ページ説明を表示する';
 $string['printintroexplain'] = 'コンテンツの下にページ説明を表示しますか? 有効にしてもいくつかの表示タイプでは説明を表示することができません。';
 $string['privacy:metadata'] = 'ファイルリソースプラグインはいかなる個人データも保存しません。';
 $string['resource:addinstance'] = '新しいリソースを追加する';
+$string['resource:exportresource'] = 'リソースをエクスポートする';
+$string['resource:view'] = 'リソースを表示する';
 $string['resourcecontent'] = 'ファイルおよびサブフォルダ';
 $string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
 $string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
 $string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
-$string['resource:exportresource'] = 'リソースをエクスポートする';
-$string['resource:view'] = 'リソースを表示する';
 $string['search:activity'] = 'ファイル';
 $string['selectmainfile'] = 'ファイル名の横にあるアイコンをクリックしてメインファイルを選択してください。';
 $string['showdate'] = 'アップロード/修正日時を表示する';

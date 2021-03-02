@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_rss_client', language 'es', version '3.8'.
  *
- * @package   block_rss_client
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_rss_client
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,7 +39,7 @@ $string['configblock'] = 'Configurar este bloque';
 $string['couldnotfindfeed'] = 'No se pudo encontrar un canal con esa id';
 $string['couldnotfindloadrssfeed'] = 'No se puede encontrar o cargar el feed RSS.';
 $string['customtitlelabel'] = 'Título personalizado (déjelo en blanco para usar el título suministrado por el canal):';
-$string['deletefeedconfirm'] = '¿Está seguro de que desea eliminar este canal?';
+$string['deletefeedconfirm'] = '¿Está seguro que desea eliminar este canal?';
 $string['disabledrssfeeds'] = 'Los canales RSS están deshabilitados';
 $string['displaydescriptionlabel'] = '¿Mostrar descripción de cada enlace?';
 $string['editafeed'] = 'Editar un canal';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'question', language 'it', version '3.8'.
  *
- * @package   question
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     question
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -156,7 +156,7 @@ $string['errorduringregrade'] = 'Impossibile rivalutare la domanda {$a->qid}, sp
 $string['errorfilecannotbecopied'] = 'Errore: non è possibile copiare il file {$a}.';
 $string['errorfilecannotbemoved'] = 'Errore: non è possibile spostare il file {$a}.';
 $string['errorfileschanged'] = 'Errore: i file linkati dalle domande sono cambiati da quando è iniziata la visualizzazione del form.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La domanda ({$a}) è stata utilizzata più di una volta nello stesso test in diverse posizioni e con diversi pesi. Questa situazione al momento non è supportata dalla statistiche e potrebbe rendere i risultati non affidabili.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La domanda ({$a}) è stata utilizzata più di una volta nello stesso test in diverse posizioni e con diversi pesi. Questa situazione al momento non è supportata dalla statistiche e può produrre risultati non affidabili.';
 $string['errormanualgradeoutofrange'] = 'La valutazione {$a->grade} non è compresa tra 0 e {$a->maxgrade} per la domanda {$a->name}. Punteggio e commento non sono stati salvati.';
 $string['errormovingquestions'] = 'Errore nello spostamento di domande con ids {$a}.';
 $string['errorpostprocess'] = 'Si è verificato un errore durante la post-elaborazione!';
@@ -221,6 +221,7 @@ In alternativa puoi consentire agli studenti di dare una risposta a ciascuna dom
 
 Le due modalità sono probabilmente quelle  più comunemente utilizzate.';
 $string['idnumber'] = 'Codice identificativo';
+$string['idnumber_help'] = 'Se utilizzato, il codice identificativo deve essere univoco all\'interno di ciascuna categoria di domande. Fornisce un modo alternativo per identificare una domanda che può risultare utile in alcuni scenari d\'uso, è tuttavia possibile lasciarlo vuoto.';
 $string['ignorebroken'] = 'Ignora link interrotti';
 $string['import'] = 'Importa';
 $string['importcategory'] = 'Importa categoria';
@@ -266,7 +267,6 @@ $string['markedoutofmax'] = 'Punteggio max.: {$a}';
 $string['markoutofmax'] = 'Punteggio ottenuto {$a->mark} su {$a->max}';
 $string['marks'] = 'Punteggio';
 $string['matchgrades'] = 'Allinea voti';
-$string['matchgradeserror'] = 'Errore se la valutazione non è presente nell\'elenco';
 $string['matchgrades_help'] = '<p>Le valutazioni importate <b>devono</b> corrispondere a uno dei valori della lista fissata, come segue...</p>
 
 <ul>
@@ -304,6 +304,7 @@ Se si trova una valutazione che non corrisponde ad alcun valore della lista, la 
 </ul>
 
 <p><i>Nota: alcuni formati di importazione scrivono direttamente nel database e possono bypassare questo controllo</i></p>';
+$string['matchgradeserror'] = 'Errore se la valutazione non è presente nell\'elenco';
 $string['matchgradesnearest'] = 'Voto più vicino se non presente nell\'elenco';
 $string['missingcourseorcmid'] = 'Bisogna fornire courseid o cmid a print_questione.';
 $string['missingcourseorcmidtolink'] = 'Bisogna fornire courseid o cmid a get_question_edit_link.';
@@ -374,9 +375,13 @@ $string['permissionsaveasnew'] = 'Salvare questa domanda come nuova domanda';
 $string['permissionto'] = 'Sei autorizzato a:';
 $string['previewquestion'] = 'Anteprima domanda: {$a}';
 $string['privacy:metadata:database:question'] = 'Dettagli su una domanda specifica.';
-$string['privacy:metadata:database:question_attempts'] = 'Informazioni su un tentativo per una domanda specifica,';
-$string['privacy:metadata:database:question_attempts:flagged'] = 'Segno lasciato dall\'utente per contrassegnare la domanda durante il tentativo.';
-$string['privacy:metadata:database:question_attempts:responsesummary'] = 'Riassunto della risposta alla domanda.';
+$string['privacy:metadata:database:question:createdby'] = 'La persona che ha creato la domanda.';
+$string['privacy:metadata:database:question:generalfeedback'] = 'Feedback generale alla domanda.';
+$string['privacy:metadata:database:question:modifiedby'] = 'La persona che ha apportato le ultime modifiche alla domanda.';
+$string['privacy:metadata:database:question:name'] = 'Titolo della domanda.';
+$string['privacy:metadata:database:question:questiontext'] = 'Testo della domanda.';
+$string['privacy:metadata:database:question:timecreated'] = 'Data e ora di creazione della domanda.';
+$string['privacy:metadata:database:question:timemodified'] = 'Data e ora di modifica della domanda.';
 $string['privacy:metadata:database:question_attempt_step_data'] = 'I diversi passaggi che costruiscono i tentativi delle domande possono avere dei dati aggiuntivi specifici di un determinato passaggio. I dati sono memorizzati nella tabella step_data.';
 $string['privacy:metadata:database:question_attempt_step_data:name'] = 'Nome dell\'elemento dati.';
 $string['privacy:metadata:database:question_attempt_step_data:value'] = 'Valore dell\'elemento dati.';
@@ -385,14 +390,10 @@ $string['privacy:metadata:database:question_attempt_steps:fraction'] = 'Valutazi
 $string['privacy:metadata:database:question_attempt_steps:state'] = 'Stato del tentativo alla fine della transizione al passo successivo.';
 $string['privacy:metadata:database:question_attempt_steps:timecreated'] = 'Data e ora in cui è iniziata la transizione al passo successivo.';
 $string['privacy:metadata:database:question_attempt_steps:userid'] = 'Utente interessato dalla transizione al passo successivo.';
+$string['privacy:metadata:database:question_attempts'] = 'Informazioni su un tentativo per una domanda specifica,';
+$string['privacy:metadata:database:question_attempts:flagged'] = 'Segno lasciato dall\'utente per contrassegnare la domanda durante il tentativo.';
+$string['privacy:metadata:database:question_attempts:responsesummary'] = 'Riassunto della risposta alla domanda.';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'Ora di modifica del tentativo.';
-$string['privacy:metadata:database:question:createdby'] = 'La persona che ha creato la domanda.';
-$string['privacy:metadata:database:question:generalfeedback'] = 'Feedback generale alla domanda.';
-$string['privacy:metadata:database:question:modifiedby'] = 'La persona che ha apportato le ultime modifiche alla domanda.';
-$string['privacy:metadata:database:question:name'] = 'Titolo della domanda.';
-$string['privacy:metadata:database:question:questiontext'] = 'Testo della domanda.';
-$string['privacy:metadata:database:question:timecreated'] = 'Data e ora di creazione della domanda.';
-$string['privacy:metadata:database:question:timemodified'] = 'Data e ora di modifica della domanda.';
 $string['privacy:metadata:link:qbehaviour'] = 'Il sottosistema Domanda utilizza i plugin di tipo Comportamento domanda.';
 $string['privacy:metadata:link:qformat'] = 'Il sottosistema Domanda utilizza i plugin di tipo Formati di importazione/esportazione domande per importare ed esportare le domande in formati diversi.';
 $string['privacy:metadata:link:qtype'] = 'Il sottosistema Domanda interagisce con i plugin Tipi domande, che contiene le diverse tipologie di domande.';
@@ -406,7 +407,7 @@ $string['questionbehavioursdisabledexplained'] = 'Inserire un elenco di comporta
 $string['questionbehavioursorder'] = 'Ordine dei comportamenti delle risposte';
 $string['questionbehavioursorderexplained'] = 'Inserire un elenco di comportamenti (separati da virgole)  nello stesso ordine con il quale si desidera farli comparire nel menù a discesa';
 $string['questioncategory'] = 'Categoria di domande';
-$string['questioncatsfor'] = 'Categorie di domande per \'{$a}\'';
+$string['questioncatsfor'] = 'Categorie di domande di \'{$a}\'';
 $string['questiondoesnotexist'] = 'Questa domanda non esiste';
 $string['questionformtagheader'] = '{$a} tag';
 $string['questionidmismatch'] = 'Mancata corrispondenza delle id delle domande';
@@ -417,7 +418,7 @@ $string['questionpreviewdefaults'] = 'Default anteprima domanda';
 $string['questionpreviewdefaults_desc'] = 'I default vengono utilizzati quando un utente visualizza l\'anteprima di una domanda presente nel deposito delle domande. Dopo che la domanda è stata visualizzata in anteprima per la prima volta, le preferenze personali saranno memorizzate come preferenze dell\'utente.';
 $string['questions'] = 'Domande';
 $string['questionsaveerror'] = 'Si sono verificati errori durante il salvataggio della domanda - ({$a})';
-$string['questionsinuse'] = '(* Le domande contrassegnate da un asterisco sono quelle giù in uso in altri quiz. Tali domande non saranno eliminate da quei quiz ma solo dall\'elenco della categoria.)';
+$string['questionsinuse'] = '(* Le domande contrassegnate da un asterisco sono quelle in uso in altri quiz. Tali domande non saranno eliminate ma solo nascoste.)';
 $string['questionsmovedto'] = 'Domande ancora in uso spostate a "{$a}" nella categoria superiore di corso.';
 $string['questionsrescuedfrom'] = 'Domande salvate dal contesto {$a}.';
 $string['questionsrescuedfrominfo'] = 'Queste domande (alcune delle quali possono essere nascoste) sono state salvate quando il contesto {$a} è stato eliminato, in quanto sono ancora utilizzate da qualche quiz o da altre attività.';
@@ -444,7 +445,7 @@ $string['selectcategoryabove'] = 'Scegli una delle categorie sopra elencate';
 $string['selectquestionsforbulk'] = 'Seleziona le domande per azioni su elenchi';
 $string['settingsformultipletries'] = 'Tentativi multipli';
 $string['shareincontext'] = 'Condividi in contesto per {$a}';
-$string['showhidden'] = 'Visualizza anche le domande vecchie';
+$string['showhidden'] = 'Visualizza anche le domande già valutate';
 $string['showmarkandmax'] = 'Visualizza punteggio e max.';
 $string['showmaxmarkonly'] = 'Visualizza solo punteggio massimo';
 $string['shown'] = 'Visualizzato';

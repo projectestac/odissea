@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'nl', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,13 +41,13 @@ $string['cachedef_capabilities'] = 'Lijst systeemmogelijkheden';
 $string['cachedef_completion'] = 'Status van activiteitsvoltooiing';
 $string['cachedef_config'] = 'Configuratie-instellingen';
 $string['cachedef_contextwithinsights'] = 'Context met inzichten';
+$string['cachedef_course_user_dates'] = 'De gebruikersdatums voor cursussen ingesteld op relatieve datums';
 $string['cachedef_coursecat'] = 'Cursuscategorielijst voor een bepaalde gebruiker';
 $string['cachedef_coursecatrecords'] = 'Cursuscategorie-records';
 $string['cachedef_coursecattree'] = 'Cursuscategorieboomstructuur';
 $string['cachedef_coursecompletion'] = 'Cursus voltooiingsstatus';
 $string['cachedef_coursecontacts'] = 'Lijst met cursuscontacten';
 $string['cachedef_coursemodinfo'] = 'Geaccumuleerde informatie over modules en secties voor elke cursus';
-$string['cachedef_course_user_dates'] = 'De gebruikersdatums voor cursussen ingesteld op relatieve datums';
 $string['cachedef_databasemeta'] = 'Meta-informatie databank';
 $string['cachedef_eventinvalidation'] = 'Gebeurtenis ongeldig maken';
 $string['cachedef_externalbadges'] = 'Externe badges voor een bepaalde gebruiker';
@@ -87,10 +87,10 @@ $string['component'] = 'Component';
 $string['confirmlockdeletion'] = 'Bevestig verwijderen lock';
 $string['confirmstoredeletion'] = 'Bevestig verwijderen van opslag';
 $string['default_application'] = 'Standaard applicatie-opslag';
-$string['defaultmappings'] = 'Opslag die gebruikt wordt wanneer er geen koppeling is';
-$string['defaultmappings_help'] = 'Dit is de standaard opslag die gebruikt wordt als je niet één of meer opslag koppelt aan de cache definitie';
 $string['default_request'] = 'Standaard vraag opslag';
 $string['default_session'] = 'Standaard sessie opslag';
+$string['defaultmappings'] = 'Opslag die gebruikt wordt wanneer er geen koppeling is';
+$string['defaultmappings_help'] = 'Dit is de standaard opslag die gebruikt wordt als je niet één of meer opslag koppelt aan de cache definitie';
 $string['defaultstoreactions'] = 'Standaard opslag kan niet gewijzigd worden';
 $string['definition'] = 'Definitie';
 $string['definitionsummaries'] = 'Bekende cache-definitie';
@@ -158,20 +158,20 @@ $string['sharing'] = 'Delen';
 $string['sharing_all'] = 'Iedereen';
 $string['sharing_help'] = 'Hiermee kun je bepalen hoe cachegegevens gedeeld worden als je een geclusterde installatie hebt of als je meerdere sites met dezelfde opslag hebt en de gegevens wenst te delen. Dit is een geavanceerde instellingen. Zorg ervoor dat je de bedoeling ervan begrijpt voor je ze wijzigt.';
 $string['sharing_input'] = 'Aangepaste sleutel (onderaan ingegeven)';
+$string['sharing_siteid'] = 'Sites met dezelfde id.';
+$string['sharing_version'] = 'Sites met dezelfde versie';
 $string['sharingrequired'] = 'Je moet minstens één optie voor delen selecteren.';
 $string['sharingselected_all'] = 'Iedereen';
 $string['sharingselected_input'] = 'Aangepaste sleutel';
 $string['sharingselected_siteid'] = 'Site identificatie';
 $string['sharingselected_version'] = 'Versie';
-$string['sharing_siteid'] = 'Sites met dezelfde id.';
-$string['sharing_version'] = 'Sites met dezelfde versie';
-$string['storeconfiguration'] = 'Opslagconfiguratie';
 $string['store_default_application'] = 'Standaardbestandsopslag voor applicatie-caches';
 $string['store_default_request'] = 'Standaard statische opslag voor vraag-caches';
 $string['store_default_session'] = 'Standaard sessieopslag voor sessie-cache';
+$string['storeconfiguration'] = 'Opslagconfiguratie';
 $string['storename'] = 'Opslagnaam';
-$string['storenamealreadyused'] = 'Je moet een unieke naam voor deze opslag kiezen';
 $string['storename_help'] = 'Hiermee bepaal je de opslagnaam. Die wordt gebruikt om de opslag te identificeren in het systeem en kan enkel a-z, A-Z, 0-9, _ en spaties bevatten. De naam moet uniek zijn. Als je een naam hergebruikt, zul je fouten krijgen.';
+$string['storenamealreadyused'] = 'Je moet een unieke naam voor deze opslag kiezen';
 $string['storenameinvalid'] = 'Ongeldige opslagnaam. Je mag enkel a-z, A-Z, 0-9, _ en spaties gebruiken.';
 $string['storenotready'] = 'Opslag niet klaar';
 $string['storeperformance'] = 'Cache-opslag performatierapport - {$a} unieke vragen per bewerking.';

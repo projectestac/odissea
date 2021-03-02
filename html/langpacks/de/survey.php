@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'de', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -210,14 +210,14 @@ $string['howlong'] = 'Wie lange haben Sie für das Ausfüllen dieser Umfrage geb
 $string['howlongoptions'] = 'unter 1 Min, 1-2 Min, 2-3 Min, 3-4 Min, 4-5 Min, 5-10 Min, mehr als 10 Min';
 $string['ifoundthat'] = 'Dies findet statt:';
 $string['indicator:cognitivedepth'] = 'Umfrage kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Umfrageaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Umfrage kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Umfrageaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Umfrageaktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Umfrage sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Umfrageaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Umfrage sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Umfrageaktivität während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Umfrageaktivität erreicht hat.';
-$string['introtext'] = 'Einführungstext';
+$string['introtext'] = 'Anleitungstext';
 $string['invalidsurveyid'] = 'Falsche Umfrage-ID';
 $string['invalidtmptid'] = 'Ungültige Masken-ID';
 $string['ipreferthat'] = 'Ich bevorzuge es so:';
@@ -264,13 +264,13 @@ $string['seemoredetail'] = 'Hier klicken, um weitere Details sichtbar zu machen'
 $string['selectedquestions'] = 'Ausgewählte Fragen aus einer Skala, alle Teilnehmer/innen';
 $string['summary'] = 'Zusammenfassung';
 $string['survey:addinstance'] = 'Neue Umfrage hinzufügen';
-$string['surveycompleted'] = 'Sie haben die Umfrage beendet. Das folgende Diagramm zeigt Ihre Ergebnisse im Vergleich zum Durchschnitt Ihrer Lerngruppe.';
-$string['surveycompletednograph'] = 'Sie haben diese Umfrage abgeschlossen.';
 $string['survey:download'] = 'Antworten herunterladen';
-$string['surveygraph'] = 'Umfragegrafik';
-$string['surveyname'] = 'Name der Umfrage';
 $string['survey:participate'] = 'Umfrage beantworten';
 $string['survey:readresponses'] = 'Antworten anzeigen';
+$string['surveycompleted'] = 'Sie haben die Umfrage beendet. Das folgende Diagramm zeigt Ihre Ergebnisse im Vergleich zum Durchschnitt Ihrer Lerngruppe.';
+$string['surveycompletednograph'] = 'Sie haben diese Umfrage abgeschlossen.';
+$string['surveygraph'] = 'Umfragegrafik';
+$string['surveyname'] = 'Name der Umfrage';
 $string['surveysaved'] = 'Umfrage gespeichert';
 $string['surveytype'] = 'Typ der Umfrage';
 $string['surveytype_help'] = 'Es gibt 3 verfügbare Umfragetypen:

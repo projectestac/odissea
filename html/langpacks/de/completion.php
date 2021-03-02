@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'de', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -60,10 +60,8 @@ $string['completedunlocked'] = 'Abschlussoptionen verfügbar';
 $string['completedunlockedtext'] = 'Wenn Sie Ihre Änderungen speichern, wird der Abschlussstatus für alle Nutzer/innen gelöscht. Wenn Sie dies nicht möchten, speichern Sie bitte nicht!';
 $string['completedwarning'] = 'Abschlussoptionen gesperrt';
 $string['completedwarningtext'] = 'Eine oder mehrere Personen ({$a}) haben diese Aktivität bereits als abgeschlossen markiert.
-
 Die Änderung der Abschlussoptionen löscht alle Daten zum Abschlussstatus und könnte zu Verwirrungen führen. Deswegen wurden die Optionen gesperrt und sollten auch nicht freigegeben werden, außer es ist unbedingt notwendig.';
 $string['completion'] = 'Abschlussverfolgung';
-$string['completionactivitydefault'] = 'Aktivitätseinstellungen benutzen';
 $string['completion-alt-auto-enabled'] = 'Das System markiert dieses Element entsprechend den Bedingungen als abgeschlossen: {$a}';
 $string['completion-alt-auto-fail'] = 'Abgeschlossen: {$a} (Bestehensgrenze nicht erreicht)';
 $string['completion-alt-auto-n'] = 'Nicht abgeschlossen: {$a}';
@@ -76,36 +74,39 @@ $string['completion-alt-manual-n'] = 'Nicht abgeschlossen: {$a} - mit Auswahl al
 $string['completion-alt-manual-n-override'] = 'Nicht abgeschlossen: {$a->modname} (gesetzt von {$a->overrideuser}). Wählen, um dies als abgeschlossen zu markieren.';
 $string['completion-alt-manual-y'] = 'Abgeschlossen: {$a}  - mit Auswahl als nicht abgeschlossen markieren';
 $string['completion-alt-manual-y-override'] = 'Abgeschlossen: {$a->modname} (gesetzt von {$a->overrideuser}). Wählen, um dies als nicht abgeschlossen zu markieren.';
+$string['completion-fail'] = 'Abgeschlossen (Bestehensgrenze nicht erreicht)';
+$string['completion-n'] = 'Nicht abgeschlossen';
+$string['completion-n-override'] = 'Nicht abgeschlossen (gesetzt von {$a})';
+$string['completion-pass'] = 'Abgeschlossen (Bestehensgrenze erreicht)';
+$string['completion-y'] = 'Abgeschlossen';
+$string['completion-y-override'] = 'Abgeschlossen (gesetzt von {$a})';
 $string['completion_automatic'] = 'Abschluss, wenn alle Bedingungen erfüllt sind';
+$string['completion_help'] = 'Wenn diese Option aktiviert ist, dann werden die Aktivitätsfortschritte manuell oder automatisch entsprechend den gesetzten Bedingungen protokolliert. Mehrfachbedingungen können gesetzt sein, falls dies gewünscht ist. Ist dies der Fall, so wird eine Aktivität erst dann abgeschlossen, wenn ALLE Bedingungen zutreffen.
+
+Ein Häkchen direkt neben den Aktivitätsnamen signalisiert auf der Kursseite, dass diese Aktivität abgeschlossen ist.';
+$string['completion_manual'] = 'Abschluss wird manuell markiert';
+$string['completion_none'] = 'Abschluss wird nicht angezeigt';
+$string['completionactivitydefault'] = 'Aktivitätseinstellungen benutzen';
 $string['completiondefault'] = 'Abschlussverfolgung-Standardwert';
 $string['completiondisabled'] = 'Deaktiviert';
 $string['completionduration'] = 'Einschreibung';
 $string['completionenabled'] = 'Aktiviert';
 $string['completionexpected'] = 'Abschlusstermin';
+$string['completionexpected_help'] = 'Diese Einstellung legt den Zeitpunkt fest, wann für die Aktivität der Bearbeitungsabschluss erwartet wird.';
 $string['completionexpecteddesc'] = 'Abschluss erwartet bis {$a}';
 $string['completionexpectedfor'] = 'Abschluss erwartet für {$a->instancename}';
-$string['completionexpected_help'] = 'Diese Einstellung legt den Zeitpunkt fest, wann für die Aktivität der Bearbeitungsabschluss erwartet wird.';
-$string['completion-fail'] = 'Abgeschlossen (Bestehensgrenze nicht erreicht)';
-$string['completion_help'] = 'Wenn diese Option aktiviert ist, dann werden die Aktivitätsfortschritte manuell oder automatisch entsprechend den gesetzten Bedingungen protokolliert. Mehrfachbedingungen können gesetzt sein, falls dies gewünscht ist. Ist dies der Fall, so wird eine Aktivität erst dann abgeschlossen, wenn ALLE Bedingungen zutreffen.
-
-Ein Häkchen direkt neben den Aktivitätsnamen signalisiert auf der Kursseite, dass diese Aktivität abgeschlossen ist.';
 $string['completionicons'] = 'Markierung zur Fortschrittsanzeige';
 $string['completionicons_help'] = 'Das Kästchen an der Seite neben der Aktivität zeigt an, ob Sie die Aktivität abgeschlossen haben.
 
 Falls ein Kästchen mit gepunktetem Rand zu sehen ist, wird darin automatisch ein Häkchen erscheinen, sobald Sie die Aktivität entsprechend den Trainervorgaben abgeschlossen haben.
 
 Falls ein Kästchen mit durchgezogenem Rand zu sehen ist, können Sie es anklicken, wenn diese Aktivität Ihrer Meinung nach abgeschlossen ist. (Ein erneuter Klick entfernt das Häkchen wieder, falls Sie Ihre Meinung nachträglich ändern sollten.)';
-$string['completion_manual'] = 'Abschluss wird manuell markiert';
 $string['completionmenuitem'] = 'Abschluss';
-$string['completion-n'] = 'Nicht abgeschlossen';
-$string['completion_none'] = 'Abschluss wird nicht angezeigt';
 $string['completionnotenabled'] = 'Abschluss ist nicht aktiviert';
 $string['completionnotenabledforcourse'] = 'Abschluss ist für diesen Kurs nicht aktiviert';
 $string['completionnotenabledforsite'] = 'Abschluss ist für diese Website nicht aktiviert';
-$string['completion-n-override'] = 'Nicht abgeschlossen (gesetzt von {$a})';
 $string['completionondate'] = 'Datum';
 $string['completionondatevalue'] = 'Datum, wann der Kurs als abgeschlossen markiert wird';
-$string['completion-pass'] = 'Abgeschlossen (Bestehensgrenze erreicht)';
 $string['completionsettingslocked'] = 'Abschlusseinstellungen gesperrt';
 $string['completionupdated'] = 'Aktualisierter Abschluss für Aktivität <b>{$a}</b>';
 $string['completionusegrade'] = 'Bewertung notwendig';
@@ -113,8 +114,6 @@ $string['completionusegrade_desc'] = 'Teilnehmer/innen müssen eine Bewertung er
 $string['completionusegrade_help'] = 'Wenn diese Option aktiviert ist, wird die Aktivität als abgeschlossen betrachtet, sobald eine Bewertung vorliegt. Icons für die erfolgreiche oder erfolglose Bearbeitung können angezeigt werden, wenn dafür eine Bestehensgrenze festgelegt wurde.';
 $string['completionview'] = 'Ansicht notwendig';
 $string['completionview_desc'] = 'Teilnehmer/innen müssen die Aktivität aufgerufen haben, um sie abzuschließen';
-$string['completion-y'] = 'Abgeschlossen';
-$string['completion-y-override'] = 'Abgeschlossen (gesetzt von {$a})';
 $string['configcompletiondefault'] = 'Standardwert für die Abschlussverfolgung beim Erstellen neuer Aktivitäten.';
 $string['configenablecompletion'] = 'Diese Option legt fest, dass Abschlussbedingungen für den Kurs und für Aktivitäten festgelegen werden können. Abschlussbedingungen für die Aktivitäten werden empfohlen, um Nutzer/innen in deren Kursübersicht im Dashboard aussagekräftige Daten anzuzeigen.';
 $string['confirmselfcompletion'] = 'Vollständigen Abschluss des Kurses bestätigen';
@@ -145,7 +144,7 @@ $string['dependenciescompleted'] = 'Abschluss von anderen Kursen';
 $string['editcoursecompletionsettings'] = 'Abschlusseinstellungen bearbeiten';
 $string['enablecompletion'] = 'Abschlussverfolgung aktivieren';
 $string['enablecompletion_help'] = 'Diese Option legt fest, ob die Einstellung zur Abschlussverfolgung in den Einstellungen der Aktivität und/oder der Übersichtsseite zur Abschlussverfolgung angezeigt wird. Es wird empfohlen diese Einstellung zu verwenden, damit im Dashboard sinnvolle Informationen zum Kursfortschritt angezeigt werden können.';
-$string['enrolmentduration'] = 'Tage noch verfügbar';
+$string['enrolmentduration'] = 'Einschreibedauer';
 $string['enrolmentdurationlength'] = 'Nutzer/in muss eingeschrieben bleiben';
 $string['err_noactivities'] = 'Die Abschlussinformation ist nicht für jede Aktivität eingeschaltet, daher kann keine angezeigt werden. Sie können die Abschlussinformation einschalten, indem Sie die Einstellungen einer Aktivität bearbeiten.';
 $string['err_nocourses'] = 'Die Abschlussverfolgung ist für keinen Kurs aktiviert, so dass kein Kurs angezeigt werden kann. Sie können die Abschlussverfolgung in den Kurseinstellungen aktivieren.';
@@ -198,7 +197,7 @@ $string['privacy:metadata:timecompleted'] = 'Zeitpunkt des Kursabschlusses';
 $string['privacy:metadata:timeenrolled'] = 'Zeit, bei der die Person im Kurs eingeschrieben wurde';
 $string['privacy:metadata:timemodified'] = 'Zeitpunkt zu dem Kursmodulabschluss geändert wurde';
 $string['privacy:metadata:timestarted'] = 'Startzeitpunkt des Kurses';
-$string['privacy:metadata:unenroled'] = 'Zeitpunkt, zu dem Einschreibung in Kurs aufgehoben wurde';
+$string['privacy:metadata:unenroled'] = 'Ob die Person vom Kurs abgemeldet wurde';
 $string['privacy:metadata:userid'] = 'ID der Person, für die der Kurs- und Aktivitätsabschluss gespeichert wird';
 $string['privacy:metadata:viewed'] = 'Wann das Kursmodul angesehen wurde';
 $string['progress'] = 'Bearbeitungsstand';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'el', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,13 +41,13 @@ $string['cachedef_capabilities'] = 'Λίστα δυνατοτήτων συστή
 $string['cachedef_completion'] = 'Κατάσταση ολοκλήρωσης δραστηριότητας';
 $string['cachedef_config'] = 'Ρυθμίσεις διαμόρφωσης';
 $string['cachedef_contextwithinsights'] = 'Πλαίσιο με ενοράσεις';
+$string['cachedef_course_user_dates'] = 'Οι ημερομηνίες χρηστών για τα μαθήματα που έχουν ρυθμιστεί σε κατάσταση σχετικών ημερομηνιών';
 $string['cachedef_coursecat'] = 'Λίστες με κατηγορίες μαθημάτων για συγκεκριμένο χρήστη';
 $string['cachedef_coursecatrecords'] = 'Εγγραφές κατηγοριών μαθημάτων';
 $string['cachedef_coursecattree'] = 'Δέντρο κατηγοριών μαθημάτων';
 $string['cachedef_coursecompletion'] = 'Κατάσταση ολοκλήρωσης μαθήματος';
 $string['cachedef_coursecontacts'] = 'Λίστα επαφών μαθήματος';
 $string['cachedef_coursemodinfo'] = 'Συσσωρευμένες πληροφορίες για αρθρώματα και τμήματα για κάθε μάθημα';
-$string['cachedef_course_user_dates'] = 'Οι ημερομηνίες χρηστών για τα μαθήματα που έχουν ρυθμιστεί σε κατάσταση σχετικών ημερομηνιών';
 $string['cachedef_databasemeta'] = 'Πληροφορίες μεταδεδομένων βάσης δεδομένων';
 $string['cachedef_eventinvalidation'] = 'Γεγονός ακύρωσης (κρυφής μνήμης)';
 $string['cachedef_externalbadges'] = 'Εξωτερικά διακριτικά για συγκεκριμένο χρήστη';
@@ -69,7 +69,7 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'Στιγμιότ
 $string['cachedef_postprocessedcss'] = 'Κώδικας CSS προς επεξεργασία σε δεύτερη φάση (Post-processed)';
 $string['cachedef_presignup'] = 'Δεδομένα πριν την εγγραφή για συγκεκριμένο μη εγγεγραμμένο χρήστη';
 $string['cachedef_questiondata'] = 'Ορισμοί ερωτημάτων';
-$string['cachedef_repositories'] = 'Δεδομένα στιγμιότυπου αποθετηρίου';
+$string['cachedef_repositories'] = 'Δεδομένα στγμιοτύπου αποθετηρίου';
 $string['cachedef_roledefs'] = 'Ορισμοί ρόλων';
 $string['cachedef_string'] = 'Κρυφή μνήμη συμβολοσειράς γλώσσας';
 $string['cachedef_suspended_userids'] = 'Λίστα χρηστών σε αναστολή ανά μάθημα';
@@ -87,17 +87,17 @@ $string['component'] = 'Στοιχείο λογισμικού';
 $string['confirmlockdeletion'] = 'Επιβεβαίωση διαγραφής κλειδώματος';
 $string['confirmstoredeletion'] = 'Επιβεβαίωση διαγραφής αποθήκευσης';
 $string['default_application'] = 'Προεπιλεγμένες αποθηκεύσεις εφαρμογών';
-$string['defaultmappings'] = 'Αποθηκεύσεις που χρησιμοποιούνται όταν δεν υπάρχει αντιστοίχιση';
-$string['defaultmappings_help'] = 'Εδώ ορίζονται οι προεπιλεγμένοι χώροι που θα χρησιμοποιούνται αν δεν ορίσετε έναν ή περισσότερους χώρους στον ορισμό της κρυφής μνήμης';
 $string['default_request'] = 'Προεπιλεγμένη αποθήκευση αιτήματος';
 $string['default_session'] = 'Προεπιλεγμένη αποθήκευση συνόδου';
+$string['defaultmappings'] = 'Αποθηκεύσεις που χρησιμοποιούνται όταν δεν υπάρχει αντιστοίχιση';
+$string['defaultmappings_help'] = 'Εδώ ορίζονται οι προεπιλεγμένοι χώροι που θα χρησιμοποιούνται αν δεν ορίσετε έναν ή περισσότερους χώρους στον ορισμό της κρυφής μνήμης';
 $string['defaultstoreactions'] = 'Δεν είναι δυνατό να τροποποιηθούν οι προεπιλεγμένες αποθηκεύσεις';
 $string['definition'] = 'Ορισμός';
 $string['definitionsummaries'] = 'Γνωστοί ορισμοί κρυφής μνήμης';
 $string['delete'] = 'Διαγραφή';
 $string['deletelock'] = 'Διαγραφή κλειδώματος';
 $string['deletelockconfirmation'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε το κλειδί {$a};';
-$string['deletelockhasuses'] = 'Δεν είναι δυνατή η διαγραφή αυτού του στιγμιότυπου κλειδώματος επειδή χρησιμοποιείται από μία ή περισσότερες αποθηκεύσεις.';
+$string['deletelockhasuses'] = 'Δεν είναι δυνατή η διαγραφή αυτού του στιγμιοτύπου κλειδώματος επειδή χρησιμοποιείται από μία ή περισσότερες αποθηκεύσεις.';
 $string['deletelocksuccess'] = 'Επιτυχής διαγραφή του κλειδώματος.';
 $string['deletestore'] = 'Διαγραφή αποθήκευσης';
 $string['deletestoreconfirmation'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε την αποθήκευση «{$a}»;';
@@ -110,7 +110,7 @@ $string['editsharing'] = 'Επεξεργασία διαμοιρασμού';
 $string['editstore'] = 'Επεξεργασία αποθήκευσης';
 $string['editstoresuccess'] = 'Επιτυχής επεξεργασία του χώρου κρυφής μνήμης';
 $string['ex_configcannotsave'] = 'Δεν ήταν δυνατή η αποθήκευση του αρχείου ρυθμίσεων κρυφής μνήμης σε αρχείο.';
-$string['ex_nodefaultlock'] = 'Δεν είναι δυνατή η εύρεση ενός προεπιλεγμένου στιγμιότυπου κλειδώματος.';
+$string['ex_nodefaultlock'] = 'Δεν είναι δυνατή η εύρεση ενός προεπιλεγμένου στιγμιοτύπου κλειδώματος.';
 $string['ex_unabletolock'] = 'Δεν είναι δυνατή η επίτευξη κλειδώματος για κρυφή αποθήκευση.';
 $string['ex_unmetstorerequirements'] = 'Δεν μπορείτε να χρησιμοποιήσετε αυτή την αποθήκευση αυτή τη στιγμή. Ανατρέξτε στην τεκμηρίωση για να καθορίσετε τις απαιτήσεις της.';
 $string['gethit'] = 'Get - Hit (φέρε - πέτυχε)';
@@ -126,7 +126,7 @@ $string['locking_help'] = 'Το κλείδωμα είναι ένας μηχαν�
 $string['lockname'] = 'Όνομα';
 $string['locknamedesc'] = 'Το όνομα πρέπει να είναι μοναδικό και μπορεί μόνο να αποτελείται από τους χαρακτήρες: a-zA-Z_';
 $string['locknamenotunique'] = 'Το όνομα που έχετε επιλέξει δεν είναι μοναδικό. Παρακαλούμε, επιλέξτε ένα μοναδικό όνομα.';
-$string['locksummary'] = 'Περίληψη στιγμιότυπων κλειδώματος κρυφών μνημών.';
+$string['locksummary'] = 'Περίληψη κρυφών μνημών στιγμιοτύπων κλειδωμάτων.';
 $string['locktype'] = 'Τύπος';
 $string['lockuses'] = 'Χρήσεις';
 $string['mappingdefault'] = '(προεπιλογή)';
@@ -158,20 +158,20 @@ $string['sharing'] = 'Διαμοιρασμός';
 $string['sharing_all'] = 'Όλοι';
 $string['sharing_help'] = 'Αυτό σας επιτρέπει να προσδιορίσετε τον τρόπο με τον οποίο μπορείτε να διαμοιράζεστε τα δεδομένα της προσωρινής μνήμης εάν έχετε μια εγκατάσταση σε συστάδες ή έχετε πολλούς ιστοτόπους που έχουν εγκατασταθεί όλοι με την ίδια αποθήκευση και επιθυμούν να μοιραστούν τα δεδομένα. Αυτή είναι μια προχωρημένη ρύθμιση· βεβαιωθείτε ότι έχετε κατανοήσει το σκοπό της πριν την αλλάξετε.';
 $string['sharing_input'] = 'Προσαρμοσμένο κλειδί (εισάγεται παρακάτω)';
+$string['sharing_siteid'] = 'Ιστότοποι με το ίδιο αναγνωριστικό ιστοτόπου.';
+$string['sharing_version'] = 'Ιστότοποι που εκτελούν την ίδια έκδοση.';
 $string['sharingrequired'] = 'Πρέπει να επιλεγεί τουλάχιστον μια επιλογή διαμοιρασμού';
 $string['sharingselected_all'] = 'Όλοι';
 $string['sharingselected_input'] = 'Προσαρμοσμένο κλειδί';
 $string['sharingselected_siteid'] = 'Αναγνωριστικό ιστοτόπου';
 $string['sharingselected_version'] = 'Έκδοση';
-$string['sharing_siteid'] = 'Ιστότοποι με το ίδιο αναγνωριστικό ιστοτόπου.';
-$string['sharing_version'] = 'Ιστότοποι που εκτελούν την ίδια έκδοση.';
-$string['storeconfiguration'] = 'Ρυθμίσεις αποθήκευσης';
 $string['store_default_application'] = 'Προεπιλεγμένη αποθήκευση αρχείων για χρήση ως κρυφή μνήμη εφαρμογών';
 $string['store_default_request'] = 'Προεπιλεγμένη στατική αποθήκευση για χρήση ως κρυφή μνήμη αιτημάτων';
 $string['store_default_session'] = 'Προεπιλεγμένη αποθήκευση συνόδων για χρήση ως κρυφή μνήμη συνόδων';
+$string['storeconfiguration'] = 'Ρυθμίσεις αποθήκευσης';
 $string['storename'] = 'Όνομα αποθήκευσης';
-$string['storenamealreadyused'] = 'Πρέπει να επιλέξετε ένα μοναδικό όνομα για αυτή την αποθήκευση.';
 $string['storename_help'] = 'Εδώ ορίζεται το όνομα της αποθήκευσης. Χρησιμοποιείται για την αναγνώριση της αποθήκευσης μέσα στο σύστημα και μπορεί να αποτελείται μόνο από a-z A-Z 0-9 -_ και κενά. Πρέπει επίσης να είναι μοναδικό. Αν επιχειρήσετε να χρησιμοποιήσετε ένα όνομα που έχει ήδη χρησιμοποιηθεί, θα λάβετε ένα σφάλμα.';
+$string['storenamealreadyused'] = 'Πρέπει να επιλέξετε ένα μοναδικό όνομα για αυτή την αποθήκευση.';
 $string['storenameinvalid'] = 'Μη έγκυρο όνομα αποθήκευσης. Μπορείτε να χρησιμοποιήσετε μόνο τα a-z A-Z 0-9 -_ και κενά.';
 $string['storenotready'] = 'Η αποθήκευση δεν είναι έτοιμη';
 $string['storeperformance'] = 'Αναφορά απόδοσης αποθήκευσης κρυφής μνήμης - {$a} μοναδικά αιτήματα ανά λειτουργία.';

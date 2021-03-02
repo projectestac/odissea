@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'folder', language 'el', version '3.8'.
  *
- * @package   folder
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     folder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,23 +32,23 @@ $string['display_help'] = 'Εάν επιλέξετε να εμφανίσετε �
 $string['displayinline'] = 'Ένθετα (inline) σε μια σελίδα μαθημάτων';
 $string['displaypage'] = 'Σε ξεχωριστή σελίδα';
 $string['dnduploadmakefolder'] = 'Αποσυμπίεση αρχείων και δημιουργία φακέλου';
-$string['downloadfolder'] = 'Λήψη φακέλου';
+$string['downloadfolder'] = 'Φάκελος λήψεων';
 $string['eventallfilesdownloaded'] = 'Ολοκληρώθηκε η λήψη του φακέλου σε συμπιεσμένο (zip) αρχείο';
 $string['eventfolderupdated'] = 'Ο φάκελος ενημερώθηκε';
 $string['folder:addinstance'] = 'Προσθήκη νέου φακέλου';
-$string['foldercontent'] = 'Αρχεία και υποφάκελοι';
 $string['folder:managefiles'] = 'Διαχείριση αρχείων στο άρθρωμα φακέλου';
 $string['folder:view'] = 'Εμφάνιση περιεχομένου φακέλου';
+$string['foldercontent'] = 'Αρχεία και υποφάκελοι';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Φακέλου';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Φακέλου.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Φακέλου';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Φακέλου κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Φακέλου.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Φακέλου';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Φακέλου.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Φακέλου';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Φακέλου κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Φακέλου.';
 $string['maxsizetodownload'] = 'Μέγιστο μέγεθος λήψης φακέλου (MB)';
 $string['maxsizetodownload_help'] = 'Το μέγιστο μέγεθος του φακέλου που μπορεί να κατεβεί ως αρχείο zip. Αν ορισθεί σε μηδέν, το μέγεθος του φακέλου θα είναι απεριόριστο.';
 $string['modulename'] = 'Φάκελος';

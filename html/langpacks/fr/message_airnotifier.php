@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message_airnotifier', language 'fr', version '3.8'.
  *
- * @package   message_airnotifier
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message_airnotifier
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['airnotifier:managedevice'] = 'Gérer les appareils';
 $string['airnotifieraccesskey'] = 'Clef d\'accès Airnotifier';
 $string['airnotifierappname'] = 'Nom de l\'app Airnotifier';
-$string['airnotifier:managedevice'] = 'Gérer les appareils';
 $string['airnotifiermobileappname'] = 'Nom de l\'App mobile';
 $string['airnotifierport'] = 'Port Airnotifier';
 $string['airnotifierurl'] = 'URL Airnotifier';
@@ -43,7 +43,7 @@ $string['errorretrievingkey'] = 'Une erreur est survenue lors de l\'obtention de
 $string['keyretrievedsuccessfully'] = 'Clef obtenue correctement. Pour accéder aux statistiques d\'usage de l\'app Moodle, veuillez créer un compte sur le <a href="https://apps.moodle.com">portail des apps Moodle</a>.';
 $string['moodleappsportallimitswarning'] = 'Veuillez prendre note que le nombre d\'appareils pouvant recevoir des notifications dépend de votre abonnement pour l\'app Moodle. Pour plus d\'informations, visitez le <a href="{$a}" target="_blank">portail des apps Moodle</a>.';
 $string['nodevices'] = 'Aucun appareil enregistré. Les appareils apparaîtront automatiquement une fois l\'app Moodle installée et ce site ajouté.';
-$string['nopermissiontomanagedevices'] = 'Vous n\'avez pas les permissions requises pour gérer les appareils.';
+$string['nopermissiontomanagedevices'] = 'Vous n\'avez pas l\'autorisation de gérer les appareils.';
 $string['notconfigured'] = 'Le serveur Airnotifier n\'a pas été configuré. Les notifications « push » ne peuvent donc pas être envoyées.';
 $string['pluginname'] = 'Mobile';
 $string['privacy:appiddescription'] = 'L\'identifiant faisant le lien avec l\'application utilisée.';

@@ -80,6 +80,13 @@ if ($hassiteconfig) {
     $default = $DB->get_field('role', 'id', array('shortname' => 'student'));
     $settings->add(new admin_setting_configselect($name, $visiblename, $description, $default, $choices));
 
+    //advanced debug mode
+    $name = 'local_clickedu/advdebug';
+    $visiblename = new lang_string('configadvdebug', 'local_clickedu');
+    $description = new lang_string('configadvdebugdesc', 'local_clickedu');
+    $default = false;
+    $settings->add(new admin_setting_configcheckbox($name, $visiblename, $description, $default));
+
     $ADMIN->add('localplugins', $settings);
 }
 

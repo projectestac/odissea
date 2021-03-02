@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,19 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'availability_date', language 'sv', version '3.8'.
  *
- * @package   availability_date
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     availability_date
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['ajaxerror'] = 'Fel kontakt server för att konvertera tider';
+$string['ajaxerror'] = 'Ett fel inträffade då servern kontaktades för att konvertera tider';
 $string['description'] = 'Förhindra åtkomst till (eller från) ett visst datum och tid.';
 $string['direction_before'] = 'Datum';
 $string['direction_from'] = 'from';
@@ -35,7 +35,8 @@ $string['full_from'] = 'Det är efter <strong>{$a}</strong>';
 $string['full_from_date'] = 'Det är på <strong>{$a}</strong> eller efter';
 $string['full_until'] = 'Det är före <strong>{$a}</strong>';
 $string['full_until_date'] = 'Det är före utgången av <strong>{$a}</strong>';
-$string['pluginname'] = 'Begränsning/Villkor efter datum';
+$string['pluginname'] = 'Begränsning via datum';
+$string['privacy:metadata'] = 'Pluginmodulen Begränsning via datum lagrar ingen personlig information.';
 $string['short_from'] = 'Tillgänglig från <strong>{$a}</strong>';
 $string['short_from_date'] = 'Tillgänglig från <strong>{$a}</strong>';
 $string['short_until'] = 'Tillgängligt till <strong>{$a}</strong>';

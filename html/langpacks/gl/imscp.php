@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscp', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'imscp', language 'gl', version '3.8'.
  *
- * @package   imscp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     imscp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,15 +32,15 @@ $string['deploymenterror'] = 'Erro no contido do paquete!';
 $string['imscp:addinstance'] = 'Engadir un novo paquete de contido IMS';
 $string['imscp:view'] = 'Ver o contido do IMS';
 $string['indicator:cognitivedepth'] = 'Paquete de contido IMS cognitiva';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso paquete de contido IMS.';
 $string['indicator:cognitivedepthdef'] = 'Paquete de contido IMS cognitiva';
 $string['indicator:cognitivedepthdef_help'] = 'O participante acadou esta porcentaxe do compromiso cognitivo que ofrecen os recursos do Paquete IMS durante este intervalo de análise (Niveis = Sen vista, Ver)';
 $string['indicator:cognitivedepthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Profundidade_cognitiva';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está baseado na profundidade cognitiva acadada polo alumno nun recurso paquete de contido IMS.';
 $string['indicator:socialbreadth'] = 'Paquete de contido IMS social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso paquete de contido IMS.';
 $string['indicator:socialbreadthdef'] = 'Paquete de contido IMS social';
 $string['indicator:socialbreadthdef_help'] = 'O participante acadou esta porcentaxe do compromiso social que ofrecen os recursos do Paquete IMS durante este intervalo de análise (Niveis = Sen participación, Participante en solitario)';
 $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analítico#Amplitude_social';
-$string['indicator:socialbreadth_help'] = 'Este indicador está baseado na amplitude social acadada polo alumno nun recurso paquete de contido IMS.';
 $string['keepold'] = 'Arquivar paquetes';
 $string['keepoldexplain'] = 'Cantos paquetes se deberían de arquivar?';
 $string['modulename'] = 'Contido de paquete IMS';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block', language 'el', version '3.8'.
  *
- * @package   block
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,8 +36,8 @@ $string['bracketlast'] = '{$a} (τελευταίο)';
 $string['configureblock'] = 'Ρύθμιση μπλοκ {$a}';
 $string['contexts'] = 'Πλαίσια σελίδας';
 $string['contexts_help'] = 'Τα πλαίσια είναι πιο συγκεκριμένοι τύποι σελίδων όπου αυτό το μπλοκ μπορεί να εμφανιστεί μέσα στην τοποθεσία του αρχικού μπλοκ. Θα έχετε διάφορες επιλογές εδώ ανάλογα με την τοποθεσία του αρχικού μπλοκ και την τρέχουσα τοποθεσία σας. Για παράδειγμα, μπορείτε να περιορίσετε ένα μπλοκ να εμφανίζεται μόνο σε σελίδες φόρουμ σε ένα μάθημα, προσθέτοντας το μπλοκ στο μάθημα (κάνοντάς το να εμφανίζεται σε όλες τις υπο-σελίδες) και μετά πηγαίνοντας σε ένα φόρουμ και ορίζοντας στις επιλογές του μπλοκ, να περιορίζεται η εμφάνιση μόνο σε σελίδες φόρουμ.';
-$string['createdat'] = 'Αρχική τοποθεσία μπλοκ';
-$string['createdat_help'] = 'Η αρχική τοποθεσία στην οποία δημιουργήθηκε το μπλοκ. Οι ρυθμίσεις του μπλοκ μπορεί να προκαλέσουν την εμφάνισή του σε άλλες θέσεις (πλαίσια) μέσα στην αρχική τοποθεσία. Για παράδειγμα, ένα μπλοκ που δημιουργήθηκε σε μια σελίδα μαθήματος θα μπορούσε να εμφανιστεί σε δραστηριότητες μέσα σε αυτό το μάθημα. Ένα μπλοκ που δημιουργήθηκε στην αρχική σελίδα μπορεί να εμφανίζεται σε ολόκληρο τον ιστότοπο.';
+$string['createdat'] = 'Αρχική θέση μπλοκ';
+$string['createdat_help'] = 'Η αρχική θέση που δημιουργήθηκε το μπλοκ. Οι ρυθμίσεις του μπλοκ μπορεί να προκαλέσουν την εμφάνιση του σε άλλες θέσεις (πλαίσια) μέσα στην αρχική θέση. Για παράδειγμα, ένα μπλοκ που δημιουργήθηκε σε μια σελίδα μαθήματος θα μπορούσε να εμφανιστεί σε δραστηριότητες μέσα σε αυτό το μάθημα. Ένα μπλοκ που δημιουργήθηκε στην αρχική σελίδα μπορεί να εμφανίζεται σε ολόκληρο τον ιστότοπο.';
 $string['defaultregion'] = 'Προεπιλεγμένη περιοχή';
 $string['defaultregion_help'] = 'Τα αισθητικά θέματα μπορούν να ορίσουν μία ή περισσότερες ονομασμένες περιοχές μπλοκ όπου εμφανίζονται μπλοκ. Αυτή η ρύθμιση ορίζει σε ποιά από αυτές τις περιοχές θέλετε το μπλοκ σας να εμφανίζεται από προεπιλογή. Η περιοχή μπορεί να παρακαμφθεί σε συγκεκριμένες σελίδες αν απαιτηθεί.';
 $string['defaultweight'] = 'Προεπιλεγμένη βαρύτητα';
@@ -48,7 +48,7 @@ $string['deleteblockwarning'] = '<p>Πρόκειται να διαγράψετε
 $string['deletecheck'] = 'Διαγραφή μπλοκ {$a};';
 $string['dockblock'] = 'Πλευρική ελαχιστοποίηση του μπλοκ «{$a}»';
 $string['hideblock'] = 'Σύμπτυξη μπλοκ {$a}';
-$string['hidedockpanel'] = 'Απόκρυψη πλευρικής μπάρας';
+$string['hidedockpanel'] = 'Απόκρυψη αναδυόμενου πάνελ';
 $string['hidepanel'] = 'Απόκρυψη πίνακα';
 $string['moveblock'] = 'Μετακίνηση μπλοκ {$a}';
 $string['moveblockafter'] = 'Μετακίνηση μπλοκ μετά το μπλοκ {$a}';
@@ -61,7 +61,7 @@ $string['pagetypes'] = 'Τύποι σελίδας';
 $string['pagetypewarning'] = 'Ο τύπος σελίδας που είχε καθοριστεί προηγουμένως δεν είναι πλέον επιλέξιμος. Επιλέξτε τον πιο κατάλληλο τύπο σελίδας παρακάτω.';
 $string['privacy:metadata:userpref:dockedinstance'] = 'Καταγράφει το πότε ο χρήστης ελαχιστοποίησε πλευρικά ένα μπλοκ';
 $string['privacy:metadata:userpref:hiddenblock'] = 'Καταγράφει πότε ο χρήστης κατέρρευσε/έκρυψε ένα μπλοκ';
-$string['privacy:request:blockisdocked'] = 'Δείχνει εάν το μπλοκ έχει ελαχιστοποιηθεί πλευρικά';
+$string['privacy:request:blockisdocked'] = 'Υποδεικνύει εάν το μπλοκ έχει ελαχιστοποιηθεί πλευρικά';
 $string['privacy:request:blockishidden'] = 'Δείχνει εάν το μπλοκ ήταν κρυμμένο/κατέρρευσε';
 $string['region'] = 'Περιοχή';
 $string['restrictpagetypes'] = 'Τύποι εμφάνισης σελίδων';

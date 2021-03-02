@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'en', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activatesuccess'] = 'Access to the badges was successfully enabled.';
 $string['addalignment'] = 'Add external skill or standard';
 $string['addbackpack'] = 'Add backpack';
 $string['addbadge'] = 'Add badges';
-$string['addbadgecriteria'] = 'Add badge criteria';
 $string['addbadge_help'] = 'Select all badges that should be added to this badge requirement. Hold CTRL key to select multiple items.';
+$string['addbadgecriteria'] = 'Add badge criteria';
 $string['addcohort'] = 'Add cohort';
 $string['addcohort_help'] = 'Select all cohorts that should be added to this badge requirement. Hold CTRL key to select multiple items.';
 $string['addcompetency'] = 'Add competency';
@@ -101,9 +101,9 @@ $string['backpackbadgessettings'] = 'Change backpack settings';
 $string['backpackbadgessummary'] = 'You have {$a->totalbadges} badge(s) displayed from {$a->totalcollections} collection(s).';
 $string['backpackcannotsendverification'] = 'Cannot send verification email';
 $string['backpackconnection'] = 'Backpack connection';
+$string['backpackconnection_help'] = 'Connecting to a backpack enables you to share your badges from this site, and display public badge collections from your backpack on your profile page on this site.';
 $string['backpackconnectioncancelattempt'] = 'Connect using a different email address';
 $string['backpackconnectionconnect'] = 'Connect to backpack';
-$string['backpackconnection_help'] = 'Connecting to a backpack enables you to share your badges from this site, and display public badge collections from your backpack on your profile page on this site.';
 $string['backpackconnectionnottested'] = 'The connection cannot be tested for this backpack because only Open Badges v2.0 backpacks support it.';
 $string['backpackconnectionok'] = 'Backpack connection successfully established';
 $string['backpackconnectionresendemail'] = 'Resend verification email';
@@ -211,8 +211,6 @@ $string['criteria_8'] = 'Cohort membership';
 $string['criteria_8_help'] = 'Allows a badge to be awarded to users based on cohort membership.';
 $string['criteria_9'] = 'Competencies';
 $string['criteria_9_help'] = 'Allows a badge to be awarded to users based on the competencies they have completed.';
-$string['criteriacreated'] = 'Badge criteria successfully created';
-$string['criteriadeleted'] = 'Badge criteria successfully deleted';
 $string['criteria_descr'] = 'Users are awarded this badge when they complete the following requirement:';
 $string['criteria_descr_0'] = 'Users are awarded this badge when they complete <strong>{$a}</strong> of the listed requirements.';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> of the following activities are completed:';
@@ -250,6 +248,8 @@ $string['criteria_descr_single_short6'] = 'Complete:';
 $string['criteria_descr_single_short7'] = 'Complete:';
 $string['criteria_descr_single_short8'] = 'Membership in:';
 $string['criteria_descr_single_short9'] = 'Complete:';
+$string['criteriacreated'] = 'Badge criteria successfully created';
+$string['criteriadeleted'] = 'Badge criteria successfully deleted';
 $string['criteriasummary'] = 'Criteria summary';
 $string['criteriaupdated'] = 'Badge criteria successfully updated';
 $string['criterror'] = 'Current parameters issues';

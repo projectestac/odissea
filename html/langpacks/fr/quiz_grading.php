@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'fr', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,19 +49,19 @@ $string['graded'] = '(évalué)';
 $string['gradenextungraded'] = 'Évaluer les {$a} tentatives non évaluées suivantes';
 $string['gradeungraded'] = 'Évaluer toutes les {$a} tentatives non évaluées';
 $string['grading'] = 'Évaluation manuelle';
+$string['grading:componentname'] = 'Rapport d\'évaluation manuelle';
+$string['grading:viewidnumber'] = 'Voir l\'identifiant de l\'étudiant durant l\'évaluation';
+$string['grading:viewstudentnames'] = 'Voir le nom des participants durant l\'évaluation';
 $string['gradingall'] = 'Toutes les {$a} tentatives pour cette question.';
 $string['gradingattempt'] = 'Tentative no {$a->attempt} de {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Évaluation des tentatives {$a->from} à {$a->to} sur {$a->of}';
 $string['gradingattemptwithidnumber'] = 'Tentative n°{$a->attempt} de {$a->fullname} ({$a->idnumber})';
-$string['grading:componentname'] = 'Rapport d\'évaluation manuelle';
 $string['gradingnextungraded'] = '{$a} tentatives non évaluées suivantes';
 $string['gradingnotallowed'] = 'Vous n\'avez pas les permissions requises pour évaluer manuellement les réponses de ce test';
 $string['gradingquestionx'] = 'Évaluation de la question {$a->number} : {$a->questionname}';
 $string['gradingreport'] = 'Rapport d\'évaluation manuelle';
 $string['gradingungraded'] = '{$a} tentatives non évaluées';
 $string['gradinguser'] = 'Tentatives de {$a}';
-$string['grading:viewidnumber'] = 'Voir l\'identifiant de l\'étudiant durant l\'évaluation';
-$string['grading:viewstudentnames'] = 'Voir le nom des participants durant l\'évaluation';
 $string['hideautomaticallygraded'] = 'Cacher les questions qui ont été évaluées automatiquement';
 $string['inprogress'] = 'En cours';
 $string['invalidattemptid'] = 'Cet identifiant de tentative n\'existe pas';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'de', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -46,7 +46,7 @@ $string['clievaluationandpredictions'] = 'Ein regelmäßiger Task arbeitet sich 
 $string['clievaluationandpredictionsnoadmin'] = 'Ein regelmäßiger Task arbeitet sich durch die aktivierten Modelle und erzeugt Vorhersagen. Der Start der Evaluation über die Weboberfläche ist deaktiviert und kann von Administrator/innen aktiviert werden.';
 $string['component'] = 'Komponente';
 $string['componentcore'] = 'Core';
-$string['componentselect'] = 'Alle Modelle der Komponente \'{§a}\' auswählen';
+$string['componentselect'] = 'Alle Modelle der Komponente \'{$a}\' auswählen';
 $string['componentselectnone'] = 'Alle abwählen';
 $string['contexts'] = 'Kontexte';
 $string['contexts_help'] = 'Das Modell wird auf diese Reihe von Kontexten beschränkt sein. Es werden keine Kontextbeschränkungen angewendet, wenn keine Kontexte ausgewählt werden.';
@@ -70,15 +70,15 @@ $string['evaluate'] = 'Auswerten';
 $string['evaluatemodel'] = 'Modell auswerten';
 $string['evaluationinbatches'] = 'Die Inhalte der Website werden in Batches berechnet und gespeichert. Während der Bewertung können Sie den Prozess zu jedem Zeitpunkt stoppen. Wenn der Prozess das nächste Mal startet, wird er an der gleichen Stelle weiter machen, an der Sie ihn unterbrochen haben.';
 $string['evaluationmode'] = 'Auswertungsmodus';
-$string['evaluationmodecolconfiguration'] = 'Konfiguration';
-$string['evaluationmodecoltrainedmodel'] = 'Angelerntes Modell';
-$string['evaluationmodeconfiguration'] = 'Modellkonfiguration überprüfen';
 $string['evaluationmode_help'] = 'Es gibt zwei Auswertemodi:
 
 * Trainiertes Modell - Die Systemdaten werden als Testdaten verwendet, um die Genauigkeit des trainierten Modells zu bewerten.
 * Konfiguration - Die Systemdaten werden in Trainings- und Testdaten unterteilt, um die Genauigkeit der Modellkonfiguration zu trainieren und zu testen.
 
 Das trainierte Modell ist nur verfügbar, wenn ein trainiertes Modell in das System importiert wurde und noch nicht anhand von Systemdaten neu geschult wurde.';
+$string['evaluationmodecolconfiguration'] = 'Konfiguration';
+$string['evaluationmodecoltrainedmodel'] = 'Angelerntes Modell';
+$string['evaluationmodeconfiguration'] = 'Modellkonfiguration überprüfen';
 $string['evaluationmodeinfo'] = 'Dieses Modell wurde in dieses System importiert. Sie können entweder die Performance des Modells oder die Performance der Modellkonfiguration anhand von Systemdaten bewerten.';
 $string['evaluationmodetrainedmodel'] = 'Auswerten des trainierten Modells';
 $string['executescheduledanalysis'] = 'Geplante Analyse ausführen';

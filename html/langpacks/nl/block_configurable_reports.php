@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_configurable_reports', language 'nl', version '3.8'.
  *
- * @package   block_configurable_reports
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_configurable_reports
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -87,7 +87,6 @@ $string['comp_filters_help'] = '<p>Hier kan je kiezen welke filters worden getoo
 <p>Voor het gebruik van filters als je rapporttype SQL is, zie: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">Creating a SQL Report Tutorial</a></p>
 
 <p>Meer hulp: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
-$string['componenthelp'] = 'Hulp bij dit onderdeel';
 $string['comp_ordering'] = 'Sortering';
 $string['comp_ordering_help'] = '<p>Hier kun je kiezen hoe je het rapport sorteert met behulp van velden en aanwijzingen</p>
 
@@ -108,16 +107,17 @@ $string['comp_template_help'] = '<p>Je kan de lay-out van het rapport wijzigen d
 <p> Zie voor het maken van een sjabloon de joker-markeringen die je kunt gebruiken in de kop- en voettekst en voor elk rapportrecord met behulp van de helpknoppen of de informatie die op dezelfde pagina wordt weergegeven. </ p>
 
 <p> Meer hulp: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank"> Plugin documentation </a> </ p>';
+$string['componenthelp'] = 'Hulp bij dit onderdeel';
 $string['conditionexpr'] = 'Voorwaarde';
 $string['conditionexpr_conditions'] = 'Voorwaarde';
 $string['conditionexpr_conditions_help'] = '<p>Je kunt voorwaarden combineren met een logische uitdrukking </p>
 
 <p>Voer een geldige logische uitdrukking in met deze operatoren: and, or. </p>';
-$string['conditionexprhelp'] = 'Voer een geldige voorwaarde in, bijvoorbeeld: (c1 en c2) of (c4 en c3)';
 $string['conditionexpr_permissions'] = 'Voorwaarde';
 $string['conditionexpr_permissions_help'] = '<p>Je kunt voorwaarden combineren met een logische uitdrukking </p>
 
 <p>Voer een geldige logische uitdrukking in met deze operatoren: and, or. </p>';
+$string['conditionexprhelp'] = 'Voer een geldige voorwaarde in, bijvoorbeeld: (c1 en c2) of (c4 en c3)';
 $string['conditions'] = 'Voorwaarden';
 $string['configurable_reports:addinstance'] = 'Voeg een nieuw configureerbaar rapportblok toe';
 $string['configurable_reports:manageownreports'] = 'Beheer eigen rapporten';
@@ -137,18 +137,18 @@ $string['courseparent'] = 'Cursussen waarvan de bovenliggende cursus is';
 $string['courses'] = 'Cursussen';
 $string['coursestats'] = 'Cursusstatistieken';
 $string['cron'] = 'Automatisch dagelijks uitvoeren';
-$string['crondescription'] = 'Plan deze query zodat hij elke dag wordt uitgevoerd (\'s nachts)';
 $string['cron_help'] = 'Plan deze query zodat hij elke dag wordt uitgevoerd (\'s nachts)';
+$string['crondescription'] = 'Plan deze query zodat hij elke dag wordt uitgevoerd (\'s nachts)';
 $string['crrepository'] = 'Rapporten opslagplaats';
 $string['crrepositoryinfo'] = 'Extern gedeelde opslagplaats met voorbeeldrapporten die volledig functioneel zijn (naam van eigenaar GitHub-account + slash + naam opslagplaats)';
 $string['currentreportcourse'] = 'Actueel cursusverslag';
 $string['currentreportcourse_summary'] = 'De cursus waar het rapport is gemaakt';
 $string['currentuser'] = 'Huidige gebruiker';
+$string['currentuser_summary'] = 'De gebruiker die dit rapport bekijkt';
 $string['currentusercourses'] = 'Ingeschreven cursussen van huidige gebruiker';
 $string['currentusercourses_summary'] = 'Een lijst van huidige gebruikers van de cursus (alleen in cursus zichtbaar)';
 $string['currentuserfinalgrade'] = 'Uiteindelijke cijfer van de huidige gebruiker in de cursus';
 $string['currentuserfinalgrade_summary'] = 'Deze kolom toont het eindcijfer van de huidige gebruiker in de rij-cursus';
-$string['currentuser_summary'] = 'De gebruiker die dit rapport bekijkt';
 $string['cuserfield'] = 'Gebruikersveldconditie';
 $string['custom'] = 'Op maat';
 $string['customdateformat'] = 'Vrije datumweergave';
@@ -156,7 +156,6 @@ $string['customsql'] = 'SQL op maat';
 $string['datatables'] = 'DataTables JS library aanzetten';
 $string['datatables_emptytable'] = 'Geen data beschikbaar in de tabel';
 $string['datatables_first'] = 'Eerste';
-$string['datatablesinfo'] = 'DataTables JS library (kolommen sorteren, vastgezette koppen, zoeken, paginering...)';
 $string['datatables_info'] = 'Laat _START_ to _END_ of _TOTAL_ regels zien';
 $string['datatables_infoempty'] = 'Laat 0 tot 0 van 0 regels zien';
 $string['datatables_infofiltered'] = '(gefilterd van _MAX_ total entries)';
@@ -170,6 +169,7 @@ $string['datatables_search'] = 'Zoeken:';
 $string['datatables_sortascending'] = ': activeer om de kolom oplopend te sorteren';
 $string['datatables_sortdescending'] = ': activeer om de kolom aflopend te sorteren';
 $string['datatables_zerorecords'] = 'Geen regels gevonden';
+$string['datatablesinfo'] = 'DataTables JS library (kolommen sorteren, vastgezette koppen, zoeken, paginering...)';
 $string['date'] = 'Datum';
 $string['dateformat'] = 'Datumformat';
 $string['dbhost'] = 'DB host';
@@ -206,14 +206,16 @@ $string['executeatinfo'] = 'Moodle CRON voert geplande SQL-query\'s uit na de ge
 $string['export_csv'] = 'Exporteer in CSV formaat';
 $string['export_json'] = 'Exporteer in JSON formaat';
 $string['export_ods'] = 'Exporteer in ODS formaat';
+$string['export_xls'] = 'Exporteer in XLS formaat';
 $string['exportoptions'] = 'Exporteeropties';
 $string['exportreport'] = 'Exporteer rapport';
-$string['export_xls'] = 'Exporteer in XLS formaat';
 $string['fcoursefield'] = 'Cursusveld filter';
 $string['field'] = 'Veld';
 $string['filter'] = 'Filter';
 $string['filter_all'] = 'Alles';
 $string['filter_apply'] = 'Toepassen';
+$string['filter_searchtext'] = 'Zoektekst';
+$string['filter_searchtext_summary'] = 'Vrije tekstfilters';
 $string['filtercategories'] = 'Filtercategorieën';
 $string['filtercategories_summary'] = 'Filteren op categorie';
 $string['filtercoursecategories'] = 'Cursuscategorie filter';
@@ -227,8 +229,6 @@ $string['filterenrolledstudents_summary'] = 'Filter een gebruiker (op id) van in
 $string['filterrole'] = 'rol';
 $string['filterrole_summary'] = 'Filter systeemrollen (leraar, leerling, ....)';
 $string['filters'] = 'Filters';
-$string['filter_searchtext'] = 'Zoektekst';
-$string['filter_searchtext_summary'] = 'Vrije tekstfilters';
 $string['filtersemester'] = 'Semester (Hebreeuws)';
 $string['filtersemester_list'] = 'Semester 1, Semester 2, Semester 3, Cursus';
 $string['filtersemester_summary'] = 'Sta filteren toe voor semesters (in het Hebreeuws, bijvoorbeeld: semester 1, semester 2)';
@@ -236,9 +236,9 @@ $string['filterstartendtime_summary'] = 'Start- / einddatum filter';
 $string['filtersubcategories'] = 'Categorie (inclusief subcategorieën)';
 $string['filtersubcategories_summary'] = 'Gebruik: %%FILTER_SUBCATEGORIES:mdl_course_category.path%%';
 $string['filteruser'] = 'Gebruiker huidige cursus';
+$string['filteruser_summary'] = 'Filter een gebruiker (id) van huidige cursisten';
 $string['filterusers'] = 'Systeemgebruiker';
 $string['filterusers_summary'] = 'Filter een gebruiker (op id) uit de systeemgebruikerslijst';
-$string['filteruser_summary'] = 'Filter een gebruiker (id) van huidige cursisten';
 $string['filteryearhebrew'] = 'Jaar (Hebreeuws)';
 $string['filteryearhebrew_list'] = 'Negen, Negen, Negen, Negen, Negen, Negen, Negen';
 $string['filteryearhebrew_summary'] = 'Filter gebruikt Hebreeuwse jaren (תשעג, ...)';
@@ -260,8 +260,8 @@ $string['groupseries'] = 'Groepserie';
 $string['groupvalues'] = 'Groepeer gelijke waarden (som)';
 $string['head_color'] = 'Grafiek achtergrondkleur';
 $string['head_data'] = 'Grafiekdata';
-$string['header'] = 'Koptekst';
 $string['head_size'] = 'Grafiekgrootte';
+$string['header'] = 'Koptekst';
 $string['height'] = 'Hoogte';
 $string['importfromrepository'] = 'Import rapportage uit de bibliotheek';
 $string['importreport'] = 'Importeer rapportage';
@@ -330,14 +330,17 @@ $string['puserfield_summary'] = 'Gebruiker met de gesleceteerde waarde in het ge
 $string['queryfailed'] = 'Zoekopdracht is mislukt <code><pre>{$a}</pre></code>';
 $string['querysql'] = 'SQL-query';
 $string['remote'] = 'Voer uit op externe db';
-$string['remotedescription'] = 'Wil je deze zoekopdracht uitvoeren op een externe db';
 $string['remote_help'] = 'Wil je deze zoekopdracht uitvoeren op een externe db';
+$string['remotedescription'] = 'Wil je deze zoekopdracht uitvoeren op een externe db';
 $string['remotequerysql'] = 'SQL-query';
 $string['report'] = 'Rapport';
-$string['reportcategories'] = '1) Kies een externe rapportcategorie';
 $string['report_categories'] = 'Categorieënrapport';
-$string['reportcolumn'] = 'Andere rapportkolom';
 $string['report_courses'] = 'Cursusrapport';
+$string['report_sql'] = 'SQL-rapport';
+$string['report_timeline'] = 'Tijdslijnrapport';
+$string['report_users'] = 'Gebruikersrapport';
+$string['reportcategories'] = '1) Kies een externe rapportcategorie';
+$string['reportcolumn'] = 'Andere rapportkolom';
 $string['reportcreated'] = 'Rapport succesvol aangemaakt';
 $string['reportlimit'] = 'Rapport rijlimiet';
 $string['reportlimitinfo'] = 'Beperk het aantal rijen dat getoond wordt in de rapporttabel (Standaard is 500 rijen. Het heeft de voorkeur de rijen te limiteren om de database niet te veel te belasten)';
@@ -345,15 +348,12 @@ $string['reports'] = 'Rapporten';
 $string['reportscapabilities'] = 'Rapportagemogelijkheden';
 $string['reportscapabilities_summary'] = 'Gebruikers met de mogelijkheid moodle / site: viewreports ingeschakeld';
 $string['reportsincategory'] = '2) Kies een rapport uit de lijst';
-$string['report_sql'] = 'SQL-rapport';
 $string['reporttable'] = 'Rapporttabel';
 $string['reporttable_help'] = '<p>Dit is de breedte van de tabel die de rapportrecords zal weergeven.</p>
 
 <p>Als je een sjabloon gebruikt, heeft deze optie geen effect.</p>';
 $string['reporttableui'] = 'Rapporttabel UI';
 $string['reporttableuiinfo'] = 'Geef de rapporttabel weer als: Eenvoudige scrollbare HTML-tabel, jQuery met kolom sortering of DataTables JS-bibliotheek (Kolom sorteren, vaste kop, zoeken, paging ...)';
-$string['report_timeline'] = 'Tijdslijnrapport';
-$string['report_users'] = 'Gebruikersrapport';
 $string['repository'] = 'Rapporten opslagruimte';
 $string['repository_help'] = 'Je kunt voorbeeldrapporten uit een openbare gedeelde opslagruimte importeren.
 

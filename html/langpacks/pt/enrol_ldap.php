@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'pt', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,7 +38,7 @@ $string['bind_pw'] = 'Senha do utilizador de <em>bind</em>';
 $string['bind_pw_key'] = 'Senha';
 $string['bind_settings'] = 'Configurações de <em>bind</em>';
 $string['cannotcreatecourse'] = 'Não foi possível criar a disciplina porque falta informação no registo LDAP!';
-$string['cannotupdatecourse'] = 'Não é possível atualizar a disciplina: está em falta um dado de registo LDAP requerido. Número de ID da disciplina: \'{$a->idnumber}\'';
+$string['cannotupdatecourse'] = 'Não é possível atualizar a disciplina: está em falta um dado de registo LDAP requerido. Número de identificação (ID) da disciplina: \'{$a->idnumber}\'';
 $string['cannotupdatecourse_duplicateshortname'] = 'Não é possível atualizar a disciplina: nome curto em duplicado. A ignorar disciplina com o número de ID \'{$a->idnumber}\'...';
 $string['category'] = 'Categoria a atribuir às disciplinas criadas automaticamente.';
 $string['category_key'] = 'Categoria';
@@ -50,7 +50,6 @@ $string['course_fullname_updateonsync'] = 'Atualizar o nome completo durante o s
 $string['course_fullname_updateonsync_key'] = 'Atualizar nome completo';
 $string['course_idnumber'] = 'Atributo LDAP que fornece o identificador da disciplina. Ex: "cn" or "uid".';
 $string['course_idnumber_key'] = 'Identificador da disciplina';
-$string['coursenotexistskip'] = 'A disciplina "{$a}" não existe e a criação automática de disciplinas está desativada -- Ignorar';
 $string['course_search_sub'] = 'Procurar pertenças a grupos em subcontextos.';
 $string['course_search_sub_key'] = 'Procurar em subcontextos';
 $string['course_settings'] = 'Configurações de inscrições em disciplinas';
@@ -62,6 +61,7 @@ $string['course_summary'] = 'Opcional: Atributo LDAP que fornece o sumário da d
 $string['course_summary_key'] = 'Sumário';
 $string['course_summary_updateonsync'] = 'Atualizar o sumário durante o script de sincronização';
 $string['course_summary_updateonsync_key'] = 'Atualizar sumário';
+$string['coursenotexistskip'] = 'A disciplina "{$a}" não existe e a criação automática de disciplinas está desativada -- Ignorar';
 $string['courseupdated'] = 'A disciplina com o número de ID \'{$a->idnumber}\' foi atualizada com sucesso.';
 $string['courseupdateskipped'] = 'A disciplina com o ID \'{$a->idnumber}\' não requer atualização. A ignorar...';
 $string['createcourseextid'] = 'CRIAR Utilizador inscrito numa disciplina que não existe: \'{$a->courseextid}\'';
@@ -86,9 +86,9 @@ $string['host_url'] = 'Esta configuração permite definir o URL do servidor LDA
 $string['host_url_key'] = 'URL do servidor';
 $string['idnumber_attribute'] = 'Se o <em>group membership</em> contém <em>distinguished names</em>, indique o mesmo atributo que usou para o mapeamento do \'ID Number\' do utilizador nas configurações da autenticação LDAP.';
 $string['idnumber_attribute_key'] = 'Atributo <strong>ID number</strong>';
+$string['ldap:manage'] = 'Gerir instâncias de inscrições LDAP';
 $string['ldap_encoding'] = 'Esta configuração permite definir a codificação usada pelo servidor LDAP. Provavelmente será utf-8. Os sistemas MS AD v2 normalmente usam a codificação predefinida na plataforma (cp1252, cp1250, etc.)';
 $string['ldap_encoding_key'] = 'Codificação LDAP';
-$string['ldap:manage'] = 'Gerir instâncias de inscrições LDAP';
 $string['memberattribute'] = 'Atributo <strong>LDAP member</strong>';
 $string['memberattribute_isdn'] = 'Se o <em>group membership</em> contém <em>distinguished names</em> é necessário indicar aqui esses valores. Em caso afirmativo, é obrigatório preencher as restantes configurações desta secção.';
 $string['memberattribute_isdn_key'] = 'O atributo "Member" usa dn';

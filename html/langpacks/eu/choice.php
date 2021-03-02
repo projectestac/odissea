@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'eu', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,13 +34,15 @@ $string['calendarend'] = '{$a}-(r)en itxiera-data:';
 $string['calendarstart'] = '{$a}-(r)en hasiera-data';
 $string['cannotsubmit'] = 'Sentitzen dugu, arazoa gertatu da zure aukera bidaltzean. Mesedez, saiatu berriz.';
 $string['choice'] = 'Aukera';
-$string['choiceactivityname'] = 'Aukera: {$a}';
 $string['choice:addinstance'] = 'Gehitu kontsulta berria';
 $string['choice:choose'] = 'Erantzun kontsultari';
-$string['choiceclose'] = 'Erantzunetarako amaiera-data';
-$string['choicecloseson'] = 'Kontsultaren itxiera: {$a}';
 $string['choice:deleteresponses'] = 'Aldatu eta ezabatu erantzunak';
 $string['choice:downloadresponses'] = 'Jaitsi erantzunak';
+$string['choice:readresponses'] = 'Ikusi erantzunak';
+$string['choice:view'] = 'Ikusi kontsulta jarduera';
+$string['choiceactivityname'] = 'Aukera: {$a}';
+$string['choiceclose'] = 'Erantzunetarako amaiera-data';
+$string['choicecloseson'] = 'Kontsultaren itxiera: {$a}';
 $string['choicefull'] = 'Hautatu duzun aukeretakoren bat beteta dago jada. Zure erantzuna ez da gorde. Mesedez aukeratu ezazu berriz ere.';
 $string['choicename'] = 'Kontsultaren izena';
 $string['choiceopen'] = 'Erantzunetarako hasiera-data';
@@ -48,10 +50,8 @@ $string['choiceoptions'] = 'Kontsultaren aukerak';
 $string['choiceoptions_help'] = 'Hemen partaideek hauta ditzaketen aukerak jarri behar dituzu.
 
 Hauetako nahi beste bete ditzakezu. Batzuk hutsik uzten badituzu ez dira erakutsiko. 8 aukera baino gehiago behar badituzu, egin klik "Gehitu 3 eremu formulariora" botoian.';
-$string['choice:readresponses'] = 'Ikusi erantzunak';
 $string['choicesaved'] = 'Zure aukera ondo gorde da';
 $string['choicetext'] = 'Kontsultaren testua';
-$string['choice:view'] = 'Ikusi kontsulta jarduera';
 $string['chooseaction'] = 'Aukeratu ekintza bat...';
 $string['chooseoption'] = 'Aukeratu: {$a}';
 $string['closebeforeopen'] = 'Ezarri duzun itxiera-data hasiera-data baino lehenagokoa da.';
@@ -72,13 +72,13 @@ $string['full'] = '(Beteta)';
 $string['havetologin'] = 'Saioa hasi behar duzu erantzuna bidali ahal izateko.';
 $string['includeinactive'] = 'Sartu kontua etenda duten edo aktibo ez dauden erabiltzaileen erantzunak';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa kontsultetan';
+$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Kontsulta motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa kontsultetan';
 $string['indicator:cognitivedepthdef_help'] = 'Partaide honek Kontsulta jarduerak eskaintzen duen gaitasun kognitiboaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Ikusi gabe, Ikusi da, Bidali da, Feedbacka ikusi da)';
-$string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Kontsulta motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:socialbreadth'] = 'Gaitasun soziala kontsultetan';
+$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Kontsulta motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala kontsultetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Kontsulta jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea, parte-hartzea besteekin)';
-$string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Kontsulta motako jardueretan lortutako zabalera sozialean oinarrituta dago.';
 $string['limit'] = 'Muga';
 $string['limitanswers'] = 'Onar daitezkeen erantzunen kopurua mugatu';
 $string['limitanswers_help'] = 'Aukera honek aukera posible bakoitza zenbat partaidek aukeratu ahal duen mugatzea ahalbidetzen dizu. Muga iristerakoan inork gehiagok ezingo du aukera hori hautatu.
@@ -115,7 +115,7 @@ $string['options'] = 'Aukerak';
 $string['page-mod-choice-x'] = 'Kontsulta moduluaren edozein orri';
 $string['pluginadministration'] = 'Kontsultaren kudeaketa';
 $string['pluginname'] = 'Kontsulta';
-$string['previewonly'] = 'Hau jarduera honetan eskuragarri dauden aukeren aurrebista besterik ez da. Ezingo duzu zure erantzuna bidali {$a}-(e)ra arte.';
+$string['previewonly'] = 'Hau jarduera honetan eskuragarri dauden aukeren aurrebista besterik ez da. Ezingo duzu zure erantzuna bidali {$a}(e)ra arte.';
 $string['privacy'] = 'Emaitzen pribatutasuna';
 $string['privacy:metadata:choice_answers'] = 'Emandako kontsulta-jardueran erabiltzaileak aukeratutako erantzunen inguruko informazioa';
 $string['privacy:metadata:choice_answers:choiceid'] = 'Kontsulta-jardueraren IDa';
@@ -124,7 +124,7 @@ $string['privacy:metadata:choice_answers:timemodified'] = 'Erabiltzaileak kontsu
 $string['privacy:metadata:choice_answers:userid'] = 'Kontsulta-jarduera hau erantzuten ari den erabiltzailearen IDa';
 $string['publish'] = 'Emaitzak argitaratu';
 $string['publishafteranswer'] = 'Erakutsi emaitzak ikasleari erantzun ondoren';
-$string['publishafterclose'] = 'Erakutsi emaitzak ikasleari soilik kontsulta itxi ondoren.';
+$string['publishafterclose'] = 'Erakutsi emaitzak ikasleari bakarrik kontsulta itxi ondoren.';
 $string['publishalways'] = 'Beti erakutsi emaitzak ikasleari';
 $string['publishanonymous'] = 'Emaitzak anonimoki argitaratu. Ez erakutsi ikasleen izenak.';
 $string['publishinfoanonafter'] = 'Zuk erantzun ondoren erantzun anonimoak publikatuko dira.';

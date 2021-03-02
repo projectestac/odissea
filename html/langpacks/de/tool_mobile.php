@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_mobile', language 'de', version '3.8'.
  *
- * @package   tool_mobile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_mobile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,8 +34,8 @@ $string['apprequired'] = 'Diese Funktionalität ist nur verfügbar, wenn Moodle 
 $string['autologinkeygenerationlockout'] = 'Das Erzeugen von Auto-Login-Token ist blockiert. Sie müssen 6 Minuten zwischen den Anforderungen warten.';
 $string['autologinnotallowedtoadmins'] = 'Das Auto-Login ist für Administrator/innen der Website nicht erlaubt.';
 $string['cachedef_plugininfo'] = 'Hier wird die Liste von Plugins mit mobilen Add-ons gespeichert.';
-$string['clickheretolaunchtheapp'] = 'Tippen Sie hier, falls sich die App nicht automatisch öffnet.';
-$string['configmobilecssurl'] = 'Die CSS-Datei ermöglicht die optische Anpassung der mobilen App.';
+$string['clickheretolaunchtheapp'] = 'Tippen Sie hier, falls sich die mobile App nicht automatisch öffnet.';
+$string['configmobilecssurl'] = 'Die CSS-Datei dient zur Anpassung der mobilen App.';
 $string['customlangstrings'] = 'Benutzerdefinierte Texte';
 $string['customlangstrings_desc'] = 'Wörter und Texteinträge für die mobile App können angepasst werden. Schreiben Sie jeden angepassten Text in eine neue Zeile, u.z. in folgendem Format: Text-ID, angepasster Text und Sprachcode, jeweils getrennt durch Pipe-Zeichen |.
 

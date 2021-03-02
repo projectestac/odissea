@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'course', language 'eu', version '3.8'.
  *
- * @package   course
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     course
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,12 +36,12 @@ $string['coursenotyetstarted'] = 'Ikastaroa ez da oraindik hasi';
 $string['coursetoolong'] = 'Ikastaroa luzeegia da';
 $string['customfield_islocked'] = 'Blokeatuta';
 $string['customfield_islocked_help'] = 'Eremua blokeatuta dagoenean "Aldatu blokeatutako eremuak" baimena duten kudeatzaileek baino ezingo dute aldatu ikastaroko edizio-formularioan.';
-$string['customfield_notvisible'] = 'Ez ikusgai';
-$string['customfieldsettings'] = 'Ikastaroko eremu pertsonalizatuen ezarpen komunak';
+$string['customfield_notvisible'] = 'Inork ez';
 $string['customfield_visibility'] = 'Norentzat ikusgai';
 $string['customfield_visibility_help'] = 'Ezarpen honek zehazten du eremu pertsonalizatuaren izena eta balioa nork ikusi ahalko dituen ikastaroen zerrendan edo Aginte-paneleko eskuragarri dauden eremu pertsonalizatuen iragazkian.';
 $string['customfield_visibletoall'] = 'Guztiak';
 $string['customfield_visibletoteachers'] = 'Irakasleak';
+$string['customfieldsettings'] = 'Ikastaroko eremu pertsonalizatuen ezarpen komunak';
 $string['errorendbeforestart'] = '({$a}) amaiera-data hasiera data baino lehenagokoa da.';
 $string['favourite'] = 'Nabarmendutako ikastaroa';
 $string['gradetopassnotset'] = 'Ez da ikastaro hau gainditzeko kalifikaziorik ezarri. Ikastaroaren kalifikazio-elementuan ezarri daiteke (Kalifikazio-liburuaren ezarpenak).';
@@ -75,6 +75,15 @@ $string['target:coursedropout'] = 'Ikastaroa bertan behera uzteko arriskua duten
 $string['target:coursedropout_help'] = 'Helburu honek deskribatzen du ikasleak ikastaroa bertan behera uzteko arriskua ote duen.';
 $string['target:coursegradetopass'] = 'Ikastaroa gainditzeko gutxieneko kalifikazioa ez lortzeko arriskua duten ikasleak';
 $string['target:coursegradetopass_help'] = 'Helburu honek deskribatzen du ikasle bat ikastaroa gainditzeko gutxieneko kalifikazioa ez lortzeko arriskuan dagoen edo ez.';
+$string['target:noaccesssincecoursestart'] = 'Ikastarora oraindik sartu ez diren ikasleak';
+$string['target:noaccesssincecoursestart_help'] = 'Helburu honek matrikulatuta dauden ikastaroetan oraindik sartu ez diren ikasleak antzematen ditu.';
+$string['target:noaccesssincecoursestartinfo'] = 'Hurrengo ikasleak hasita dagoen ikastaro batean matrikulatuta daude, baina oraindik ez dira bertan inoiz sartu.';
+$string['target:norecentaccesses'] = 'Ikastarora berriki sartu ez diren ikasleak';
+$string['target:norecentaccesses_help'] = 'Helburu honek matrikulatuta dauden ikastaroren batean zehaztutako analisi-tartean (modu lehenetsian azken hilabetean) sartu ez diren ikasleak antzematen ditu.';
+$string['target:norecentaccessesinfo'] = 'Hurrengo ikasleak matrikulatuta dauden ikastaro batean ez dira sartu zehaztutako analisi-tartean (modu lehenetsian azken hilabetea)';
+$string['target:noteachingactivity'] = 'Ez hasteko arriskuan dauden ikastaroak';
+$string['target:noteachingactivity_help'] = 'Helburu honek deskribatzen du datorren astean hastekoak diren ikastaroek irakasle-jarduera izango duten edo ez.';
+$string['target:noteachingactivityinfo'] = 'Hurrengo ikastaroak laster hastekoak dira eta ez hasteko arriskuan daude ez dutelako irakasleak edo ikasleak matrikulatuta.';
 $string['targetlabelstudentcompetenciesno'] = 'Ikastaro bati esleitutako konpetentziak seguruenik lortuko duen ikaslea';
 $string['targetlabelstudentcompetenciesyes'] = 'Ikastaro bati esleitutako konpetentziak ez lortzeko arriskuan dagoen ikaslea';
 $string['targetlabelstudentcompletionno'] = 'Ikastaroaren osatze-baldintzak seguruenik lortuko duen ikaslea';
@@ -85,12 +94,3 @@ $string['targetlabelstudentgradetopassno'] = 'Ikastaroa gainditzeko gutxieneko k
 $string['targetlabelstudentgradetopassyes'] = 'Ikastaroa gainditzeko gutxieneko kalifikazioa ez lortzeko arriskuan dagoen ikaslea.';
 $string['targetlabelteachingno'] = 'Ez hasteko arriskuan dauden ikastaroak';
 $string['targetlabelteachingyes'] = 'Ikastaroan irakasle-baimenak dituzten erabiltzaileak';
-$string['target:noaccesssincecoursestart'] = 'Ikastarora oraindik sartu ez diren ikasleak';
-$string['target:noaccesssincecoursestart_help'] = 'Helburu honek matrikulatuta dauden ikastaroetan oraindik sartu ez diren ikasleak antzematen ditu.';
-$string['target:noaccesssincecoursestartinfo'] = 'Hurrengo ikasleak hasita dagoen ikastaro batean matrikulatuta daude, baina oraindik ez dira bertan inoiz sartu.';
-$string['target:norecentaccesses'] = 'Ikastarora berriki sartu ez diren ikasleak';
-$string['target:norecentaccesses_help'] = 'Helburu honek matrikulatuta dauden ikastaroren batean zehaztutako analisi-tartean (modu lehenetsian azken hilabetean) sartu ez diren ikasleak antzematen ditu.';
-$string['target:norecentaccessesinfo'] = 'Hurrengo ikasleak matrikulatuta dauden ikastaro batean ez dira sartu zehaztutako analisi-tartean (modu lehenetsian azken hilabetea)';
-$string['target:noteachingactivity'] = 'Ez hasteko arriskuan dauden ikastaroak';
-$string['target:noteachingactivity_help'] = 'Helburu honek deskribatzen du datorren astean hastekoak diren ikastaroek irakasle-jarduera izango duten edo ez.';
-$string['target:noteachingactivityinfo'] = 'Hurrengo ikastaroak laster hastekoak dira eta ez hasteko arriskuan daude ez dutelako irakasleak edo ikasleak matrikulatuta.';

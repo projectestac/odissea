@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_langimport', language 'gl', version '3.8'.
  *
- * @package   tool_langimport
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_langimport
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadnotavailable'] = 'Non foi posíbel conectar co servidor de descargas. Non é posible instalar ou actualizar automaticamente os paquetes de idiomas. Descargue o(s) ficheiro(s) ZIP apropiados de <a href="{$a->src}">{$a->src}</a> e descomprímaos manualmente no directorio de datos <code>{$a->dest}</code>';
-$string['install'] = 'Instalar o paquete de idioma seleccionado';
+$string['install'] = 'Instalar o/s paquete/s de idioma seleccionado';
 $string['installedlangs'] = 'Paquetes de idioma instalados';
 $string['langimport'] = 'Utilidade para a importación de idiomas';
-$string['langimportdisabled'] = 'Foi desactivada a opción de importación de idioma. Deberá actualizar os seus paquetes de idioma manualmente no nivel de sistema de ficheiros. Non esqueza purgar a cachés de cadeas despois de facelo.';
+$string['langimportdisabled'] = 'Foi desactivada a opción de importación de idioma. Deberá actualizar os seus paquetes de idioma manualmente no nivel de sistema de ficheiros. Non esqueza purgar as cachés de cadeas despois de facelo.';
 $string['langpackinstalled'] = 'O paquete de idioma «{$a}» foi instalado satisfactoriamente';
 $string['langpackinstalledevent'] = 'O paquete de idioma foi instalado';
 $string['langpacknotremoved'] = 'Produciuse un erro; o paquete del idioma «{$a}» non está completamente desinstalado, revise os permisos de ficheiros.';
@@ -50,5 +50,5 @@ $string['privacy:metadata'] = 'O engadido de paquetes de idioma non almacena nin
 $string['purgestringcaches'] = 'Purgar as cachés de cadeas';
 $string['selectlangs'] = 'Seleccione os idiomas a desinstalar';
 $string['uninstall'] = 'Desinstale o paquete de idiomas seleccionado';
-$string['uninstallconfirm'] = 'Está a punto de desinstalar completamente o paquete de idiomas {$a}, está certo?';
+$string['uninstallconfirm'] = 'Está a punto de desinstalar completamente o paquete de idiomas <strong>{$a}</strong>, está certo?';
 $string['updatelangs'] = 'Actualizar todos os paquetes de idiomas locais';

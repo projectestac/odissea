@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_webdav', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_webdav', language 'pt', version '3.8'.
  *
- * @package   repository_webdav
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_webdav
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,12 +31,12 @@ $string['https'] = 'HTTPS';
 $string['pluginname'] = 'WebDAV';
 $string['privacy:metadata'] = 'O módulo repositório WebDav não armazena dados pessoais, mas são transmitidos do Moodle para o sistema remoto.';
 $string['webdav'] = 'WebDAV';
-$string['webdavbasicauth'] = 'Autenticação WebDAV base';
-$string['webdavdigestauth'] = 'Autenticação WebDAV digest';
+$string['webdav:view'] = 'Ver repositório WebDAV';
 $string['webdav_password'] = 'Senha do servidor WebDAV';
 $string['webdav_path'] = 'Caminho WebDAV';
 $string['webdav_port'] = 'Porta do servidor WebDAV';
 $string['webdav_server'] = 'Servidor WebDAV';
 $string['webdav_type'] = 'Tipo WebDAV';
 $string['webdav_user'] = 'Utilizador de acesso ao servidor WebDAV';
-$string['webdav:view'] = 'Ver repositório WebDAV';
+$string['webdavbasicauth'] = 'Autenticação WebDAV base';
+$string['webdavdigestauth'] = 'Autenticação WebDAV digest';

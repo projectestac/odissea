@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'plugin', language 'ja', version '3.8'.
  *
- * @package   plugin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plugin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -131,8 +131,8 @@ $string['type_editor_plural'] = 'エディタ';
 $string['type_enrol'] = '登録方法';
 $string['type_enrol_plural'] = '登録方法';
 $string['type_fileconverter'] = 'ドキュメントコンバータ';
-$string['type_fileconvertermanage'] = 'ドキュメントコンバータを管理する';
 $string['type_fileconverter_plural'] = 'ドキュメントコンバータ';
+$string['type_fileconvertermanage'] = 'ドキュメントコンバータを管理する';
 $string['type_filter'] = 'テキストフィルタ';
 $string['type_filter_plural'] = 'テキストフィルタ';
 $string['type_format'] = 'コースフォーマット';
@@ -208,10 +208,6 @@ $string['validationmsg_filesnumber'] = 'パッケージ内に十分なファイ�
 $string['validationmsg_filestatus'] = 'すべてのファイルを展開できません。';
 $string['validationmsg_filestatus_info'] = 'ファイル「 {$a->file} 」の展開を試みましたが、エラー「 {$a->status} 」が発生しました。';
 $string['validationmsg_foundlangfile'] = '言語ファイルが見つかりました。';
-$string['validationmsglevel_debug'] = 'デバッグ';
-$string['validationmsglevel_error'] = 'エラー';
-$string['validationmsglevel_info'] = 'OK';
-$string['validationmsglevel_warning'] = '警告';
 $string['validationmsg_maturity'] = '宣言済み成熟レベル';
 $string['validationmsg_maturity_help'] = 'プラグインに成熟レベルを宣言することができます。メインテナがプラグインを安定していると考える場合、宣言済み成熟レベルでは「MATURITY_STABLE」を読み込みます。他の成熟レベル (alphaまたはbeta等) は不安定だとみなされ、警告が表示されます。';
 $string['validationmsg_missingcomponent'] = 'プラグインのコンポーネント名が宣言されていません。';
@@ -239,6 +235,10 @@ $string['validationmsg_targetexists_help'] = 'すでにプラグインディレ�
 $string['validationmsg_targetnotdir'] = 'ターゲットロケーションのファイル占有';
 $string['validationmsg_unknowntype'] = '不明なプラグインタイプ';
 $string['validationmsg_versionphpsyntax'] = 'version.php内でサポートされていない構文が検出されました。';
+$string['validationmsglevel_debug'] = 'デバッグ';
+$string['validationmsglevel_error'] = 'エラー';
+$string['validationmsglevel_info'] = 'OK';
+$string['validationmsglevel_warning'] = '警告';
 $string['version'] = 'バージョン';
 $string['versiondb'] = '現在のバージョン';
 $string['versiondisk'] = '新しいバージョン';

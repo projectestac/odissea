@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_pop3', language 'ar', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_pop3', language 'ar', version '3.8'.
  *
- * @package   auth_pop3
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_pop3
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,7 +29,7 @@ $string['auth_pop3changepasswordurl_key'] = 'عنوان تغير كلمة الم
 $string['auth_pop3description'] = 'يستخدم هذا الأسلوب مزود برتوكول مكتب البريد3 POP3 للتأكد من صحة اسم المستخدم وكلمة المرور.';
 $string['auth_pop3host'] = 'عنوان مزود برتوكول مكتب البريد3 POP3. استخدم رقم البروتوكول لا اسم النطاق.';
 $string['auth_pop3host_key'] = 'مستضيف';
-$string['auth_pop3mailbox'] = 'اسم صندوق البريدالمرغوب الأتصال به (عادة صندوق الوارد)';
+$string['auth_pop3mailbox'] = 'اسم صندوق البريدالمرغوب الاتصال به (عادة صندوق الوارد)';
 $string['auth_pop3mailbox_key'] = 'صندوق البريد';
 $string['auth_pop3notinstalled'] = '';
 $string['auth_pop3port'] = 'منفذ المزود (110 هي الأكثر شيوعا)';
@@ -37,3 +37,4 @@ $string['auth_pop3port_key'] = 'منفذ';
 $string['auth_pop3type'] = 'نوع المزود. إذا كان مزودك يستخدم حماية الشهادة، قم باختيار pop3cert.';
 $string['auth_pop3type_key'] = 'نوع';
 $string['pluginname'] = 'POP3 خادم الـ';
+$string['privacy:metadata'] = 'إن ملحق مصادقة مخدم POP3 لا يخزن أي بيانات شخصية.';

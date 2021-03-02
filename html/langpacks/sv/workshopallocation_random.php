@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,39 +12,44 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshopallocation_random', language 'sv', version '3.8'.
  *
- * @package   workshopallocation_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshopallocation_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allocationdeallocategraded'] = 'Det går inte att ta bort redan betygsatt bedömning
-: utvärderare <strong>{$a->reviewername}</strong>, inlämnare: <strong>{$a->authorname}</strong>';
+$string['addselfassessment'] = 'Lägg till egenbedömningar';
+$string['allocationaddeddetail'] = 'Ny bedömning att göra: <strong>{$a->reviewername}</strong> är granskare av <strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = 'Det gick inte att ta tillbaka fördelningen av betygsatt bedömning: granskare <strong>{$a->reviewername}</strong>, inlämnande författare <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Återanvände utvärdering: <strong>{$a->reviewername}</strong> behölls som utvärderare av <strong>{$a->authorname}</strong>';
-$string['allocationsettings'] = 'Inställningar för tilldelning av utvärderare';
+$string['allocationsettings'] = 'Fördelningsinställning';
 $string['assessmentdeleteddetail'] = 'Utvärderare borttagen: <strong>{$a->reviewername}</strong> utvärderar inte längre <strong>{$a->authorname}</strong>';
-$string['assesswosubmission'] = 'Deltagarna får utvärdera utan att ha lämnat in något själva';
-$string['confignumofreviews'] = 'Standard antal inlämningar som slumpmässigt tilldelas';
-$string['excludesamegroup'] = 'Förhindra bedömning från samma grupp';
-$string['noallocationtoadd'] = 'Inga tilldelningar att lägga till';
-$string['nogroupusers'] = '<p>Varning: Om workshopen är i läget \'synliga grupper\' eller \'separata grupper\', så måste användarna höra till åtminstone en grupp för att detta verktyg ska tilldela dem utvärderingar. Användare utan grupp kan fortfarande ges nya självutvärderingar eller få redan existerande utvärderingar borttagna.</p>
-<p>Följande användare saknar grupp: {$a}</p>';
-$string['numofdeallocatedassessment'] = 'Raderar {$a} utvärderingstilldelning(ar)';
-$string['numofrandomlyallocatedsubmissions'] = 'Tilldela slumpmässigt {$a} tilldelningar';
-$string['numofreviews'] = 'Antalet givna utvärderingar';
+$string['assesswosubmission'] = 'Deltagarna kan utvärdera utan att ha lämnat in något';
+$string['confignumofreviews'] = 'Standardantal inlämningar som ska fördelas slumpmässigt';
+$string['excludesamegroup'] = 'Förhindra bedömning från kollegor från samma grupp';
+$string['noallocationtoadd'] = 'Inga fördelningar att lägga till';
+$string['nogroupusers'] = '<p>Varning: Om Workshopen är i \'Synliga/separata grupper\'-läge MÅSTE användare vara medlem av minst en grupp för att kunna få kollegie-bedömningar tilldela till sig av detta verktyg. Icke-grupperade användare kan fortfarande få nya självbedömningar eller få befintliga bedömningar borttagna.</p>
+<p>Dessa användare är för närvarande inte medlemmar i en grupp: {$a}</p>';
+$string['numofdeallocatedassessment'] = 'Tar bort {$a} fördelade utvärderingar';
+$string['numofrandomlyallocatedsubmissions'] = 'Fördelar {$a} slumpmässiga inlämningar';
+$string['numofreviews'] = 'Antal utvärderingar';
+$string['numofselfallocatedsubmissions'] = 'Auto-fördelar {$a} inlämning(ar)';
+$string['numperauthor'] = 'per inlämning';
 $string['numperreviewer'] = 'per utvärderare';
 $string['pluginname'] = 'Slumpmässig fördelning';
+$string['privacy:metadata'] = 'Pluginmodulen Slumpmässig fördelning lagrar inga personuppgifter. Faktiska personuppgifter om vem som ska bedöma vem lagras av själva Workshop-modulen och de ligger till grund för export av bedömningsuppgifterna.';
 $string['randomallocationdone'] = 'Slumpmässig fördelning gjord';
-$string['removecurrentallocations'] = 'Radera nuvarande tilldelningar';
-$string['resultnomorepeers'] = 'Inga flera kolleger tillgängliga';
-$string['resultnomorepeersingroup'] = 'Inga flera kolleger tillgängliga i denna separata grupp';
+$string['removecurrentallocations'] = 'Ta bort nuvarande fördelningar';
+$string['resultnomorepeers'] = 'Inga flera kollegor tillgängliga';
+$string['resultnomorepeersingroup'] = 'Inga flera kollegor tillgängliga i denna enskilda grupp';
 $string['resultnotenoughpeers'] = 'För få tillgängliga kolleger';
 $string['resultnumperauthor'] = 'Försöker dela ut {$a} utvärderare per författare';
-$string['resultnumperreviewer'] = 'Försöker dela ut {$a} utvärdering(ar) per utvärderare';
-$string['stats'] = 'Statistik för tilldelningen';
+$string['resultnumperreviewer'] = 'Försöker fördela {$a} utvärdering(ar) per utvärderare';
+$string['stats'] = 'Aktuell fördelningsstatistik';

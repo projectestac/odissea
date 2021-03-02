@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multichoice', language 'es', version '3.8'.
  *
- * @package   qtype_multichoice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multichoice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,20 +28,21 @@ defined('MOODLE_INTERNAL') || die();
 $string['answerhowmany'] = '¿Una o varias respuestas?';
 $string['answernumbering'] = '¿Numerar las elecciones?';
 $string['answernumbering123'] = '1., 2., 3., ...';
-$string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
-$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
+$string['answernumberingabc'] = 'a., b., c., ...';
+$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = 'Sin numeración';
 $string['answersingleno'] = 'Se permiten varias respuestas';
 $string['answersingleyes'] = 'Sólo una respuesta';
 $string['choiceno'] = 'Elección {$a}';
 $string['choices'] = 'Opciones disponibles';
-$string['clearchoice'] = 'Quitar mi selección';
+$string['clearchoice'] = 'Quitar mi elección';
 $string['clozeaid'] = 'Escribir palabra perdida';
 $string['correctansweris'] = 'La respuesta correcta es: {$a}';
 $string['correctanswersare'] = 'Las respuestas correctas son: {$a}';
 $string['correctfeedback'] = 'Para cualquier respuesta correcta';
+$string['deletedchoice'] = 'Esta opción fue eliminada después de que el intento fuera iniciado.';
 $string['errfractionsaddwrong'] = 'Las calificaciones positivas elegidas no alcanzan el 100%<br />Sólo alcanzan el {$a}%';
 $string['errfractionsnomax'] = 'Una de las respuestas debería tener el 100% de forma que sea <br />posible alcanzar la calificación máxima en esta pregunta.';
 $string['errgradesetanswerblank'] = 'Calificación establecida, pero la respuesta está en blanco';
@@ -59,14 +60,15 @@ $string['partiallycorrectfeedback'] = 'Para cualquier respuesta parcialmente cor
 $string['pleaseselectananswer'] = 'Por favor, selecciona una respuesta.';
 $string['pleaseselectatleastoneanswer'] = 'Por favor, selecciona al menos una respuesta.';
 $string['pluginname'] = 'Opción múltiple';
-$string['pluginnameadding'] = 'Agregando pregunta de opción múltiple';
-$string['pluginnameediting'] = 'Editando una pregunta de opción múltiple';
 $string['pluginname_help'] = 'En respuesta a una pregunta (puede incluir una imagen) el alumno escoje la respuesta entre varias respuestas posibles.
 Hay dos tipos de preguntas con respuesta múltiple: con una y con más de una respuesta válida.';
+$string['pluginnameadding'] = 'Agregando pregunta de opción múltiple';
+$string['pluginnameediting'] = 'Editando una pregunta de opción múltiple';
 $string['pluginnamesummary'] = 'Permite la selección de una o varias respuestas a partir de una lista predefinida.';
 $string['selectmulti'] = 'Seleccione una o más de una:';
 $string['selectone'] = 'Seleccione una:';
 $string['shuffleanswers'] = '¿Barajar respuestas?';
+$string['shuffleanswers_desc'] = 'Si por defecto las opciones deben ser barajadas aleatoriamente para cada intento.';
 $string['shuffleanswers_help'] = 'Si está activado, el orden de las respuestas varía de forma aleatoria en cada intento, siempre que "Barajar dentro de las preguntas" en la configuración del cuestionario también esté habilitada.';
 $string['singleanswer'] = 'Seleccione una respuesta.';
 $string['toomanyselected'] = 'Ha seleccionado demasiadas opciones.';

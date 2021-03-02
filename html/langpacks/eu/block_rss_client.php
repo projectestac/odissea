@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_rss_client', language 'eu', version '3.8'.
  *
- * @package   block_rss_client
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_rss_client
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -59,7 +59,7 @@ $string['feedsconfigurenewinstance'] = 'Egin klik hemen RSS jarioak erakustearre
 $string['feedsconfigurenewinstance2'] = 'Egin klik goiko edizio-ikonoan bloke hau RSS jarioak erakusteko konfiguratzeko.';
 $string['feedupdated'] = 'Albiste-jarioa eguneratu da';
 $string['feedurl'] = 'Jarioaren URLa';
-$string['findmorefeeds'] = 'RSS jario gehiago aurkitu';
+$string['findmorefeeds'] = 'Bilatu RSS jario gehiago';
 $string['managefeeds'] = 'Kudeatu nire jario guztiak';
 $string['nofeeds'] = 'Gune honetako ez da RSS jariorik definitu.';
 $string['numentries'] = 'Sarrerak jarioko';
@@ -85,9 +85,9 @@ $string['rss_client:myaddinstance'] = 'Gehitu urrutiko RSS albiste-jarioa bloke 
 $string['seeallfeeds'] = 'Ikusi jario guztiak';
 $string['sharedfeed'] = 'Partekatutako jarioa';
 $string['shownumentrieslabel'] = 'Blokeko erakuts daitekeen gehienezko sarrera-kopurua.';
-$string['submitters'] = 'Nork defini ditzake RSS albiste-jarioak? Definitutako jarioak zure gunearen orri guztietatik eskuratu ahal izango dira.';
+$string['submitters'] = 'Nork sortu ahalko ditu RSS albiste-jarioak? Sortutako jarioak zure gunearen orri guztietatik eskuratu ahal izango dira.';
 $string['submitters2'] = 'Igorleak';
-$string['timeout'] = 'Minututan neurtutako denbora RSS jarioa iraungi aurretik. Hartu kontuan denbora honek iraungi aurretiko gutxieneko tartea definitzen duela; jarioa cron-aren hurrengo exekuzioan freskatuko da. Gomendatutako balioak 30 minutu edo gehiago dira.';
+$string['timeout'] = 'Minututan neurtutako denbora RSS jarioa iraungi aurretik. Hartu kontuan denbora honek iraungi aurretiko gutxieneko tartea definitzen duela; jarioa cron-aren hurrengo egikaritzean freskatuko da. Gomendatutako balioak 30 minutu edo gehiago dira.';
 $string['timeout2'] = 'Itxaroteko denbora';
 $string['timeoutdesc'] = 'Albiste-jarioak cachean iraun dezakeen denbora-epea (minututan)';
 $string['updatefeed'] = 'Eguneratu albiste-jario baten URLa:';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilitychecker', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_accessibilitychecker', language 'fr', version '3.8'.
  *
- * @package   atto_accessibilitychecker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_accessibilitychecker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,6 +34,6 @@ $string['nowarnings'] = 'Bravo ! Aucun problème d\'accessibilité détecté.';
 $string['pluginname'] = 'Contrôle d\'accessibilité';
 $string['privacy:metadata'] = 'Le plugin atto_accessibilitychecker n\'enregistre aucune donnée personnelle.';
 $string['report'] = 'Rapport d\'accessibilité :';
-$string['tablesmissingcaption'] = 'Les tables devraient avoir une légende. Bien qu\'il ne soit pas nécessaire à chaque table d\'avoir une légende, celle-ci est en général très utile.';
-$string['tablesmissingheaders'] = 'Les tables devraient avoir une rangée et/ou une colonne d\'entête.';
-$string['tableswithmergedcells'] = 'Les tables ne devraient pas comporter de cellules fusionnées. Bien que le formatage de telles cellules soit standard depuis de nombreuses années, certains lecteurs d\'écran ne lisent pas encore correctement des tables complexes. Si possibles, rendez votre table simple et évitez les cellules fusionnées.';
+$string['tablesmissingcaption'] = 'Les tables doivent avoir une légende. Bien qu\'il ne soit pas nécessaire à chaque table d\'avoir une légende, celle-ci est en général très utile.';
+$string['tablesmissingheaders'] = 'Les tables doivent avoir une rangée et/ou une colonne d\'entête.';
+$string['tableswithmergedcells'] = 'Les tables ne doivent pas comporter de cellules fusionnées. Bien que le formatage de telles cellules soit standard depuis de nombreuses années, certains lecteurs d\'écran ne lisent pas encore correctement des tables complexes. Si possible, rendez votre table simple et évitez les cellules fusionnées.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'de', version '3.8'.
  *
- * @package   qtype_ddmarker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddmarker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -77,9 +77,9 @@ $string['nolabel'] = 'Kein Beschriftungstext';
 $string['noofdrags'] = 'Anzahl';
 $string['pleasedragatleastonemarker'] = 'Die Antwort ist nicht vollständig. Sie müssen mindestens eine Markierung auf das Bild setzen.';
 $string['pluginname'] = 'Drag-and-drop-Markierungen';
+$string['pluginname_help'] = '"Drag-and-drop- Markierungen" benötigen Platzhalter, um Textbausteine in die vorgesehenen Anlegebereiche auf dem Hintergrundbild verschieben zu können.';
 $string['pluginnameadding'] = 'Füge "Drag-and-drop- Markierungen" hinzu';
 $string['pluginnameediting'] = 'Bearbeite "Drag-and-drop- Markierungen"';
-$string['pluginname_help'] = '"Drag-and-drop- Markierungen" benötigen Platzhalter, um Textbausteine in die vorgesehenen Anlegebereiche auf dem Hintergrundbild verschieben zu können.';
 $string['pluginnamesummary'] = 'Markierungen werden per Drag-and-drop auf ein Hintergrundbild gezogen.
 
 Hinweis: Dieser Fragetyp ist für sehbehinderte Benutzer nicht barrierefrei.';

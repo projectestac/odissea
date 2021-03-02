@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_glossary_random', language 'de', version '3.8'.
  *
- * @package   block_glossary_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_glossary_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['askinvisible'] = 'Wenn Teilnehmer/innen das Glossar weder sehen noch Ei
 $string['askviewglossary'] = 'Wenn Teilnehmer/innen das Glossar sehen können, aber keine Einträge hinzufügen dürfen, wird ein Link mit folgendem Text angezeigt.';
 $string['glossary_random:addinstance'] = 'Neuen Block \'Glossareintrag\' hinzufügen';
 $string['glossary_random:myaddinstance'] = 'Neuen Block \'Glossareintrag\' zum Dashboard hinzufügen';
-$string['intro'] = 'Legen Sie zuerst mindestens ein Glossar mit mindestens einem Eintrag in diesem Kurs an. Danach können Sie die folgenden Einstellungen bearbeiten.';
+$string['intro'] = 'Legen Sie ein Glossar mit einem Eintrag im Kurs an, um die weiteren Einstellungen zu bearbeiten.';
 $string['invisible'] = '(Fortsetzung folgt)';
 $string['lastmodified'] = 'Zuletzt geänderter Eintrag';
 $string['nextalpha'] = 'Alphabetisch';
@@ -39,7 +39,7 @@ $string['nextone'] = 'Nächster Eintrag';
 $string['noentriesyet'] = 'Im ausgewählten Glossar gibt es keine Einträge.';
 $string['notyetconfigured'] = 'Legen Sie ein Glossar im Kurs an und bearbeiten Sie dann die Einstellungen für diesen Block.';
 $string['notyetglossary'] = 'Sie müssen mindestens ein Glossar auswählen.';
-$string['pluginname'] = 'Glossareintrag';
+$string['pluginname'] = 'Zufälliger Glossareintrag';
 $string['privacy:metadata'] = 'Der Block \'Zufälliger Glossareintrag\' zeigt nur Daten an, die an anderen Orten gespeichert sind.';
 $string['random'] = 'Zufallseintrag';
 $string['refresh'] = 'Dauer (in Tagen) bis der Eintrag gewechselt wird';

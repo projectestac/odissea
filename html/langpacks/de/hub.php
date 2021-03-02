@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hub', language 'de', version '3.8'.
  *
- * @package   hub
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hub
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,9 +35,9 @@ $string['analyticsactionsnotuseful'] = 'Anzahl der Aktionen Vorhersage als nicht
 $string['analyticsenabledmodels'] = 'Anzahl der aktivierten Vorhersage-Modellen ({$a})';
 $string['analyticspredictions'] = 'Anzahl der generierten Vorhersagen ({$a})';
 $string['audience'] = 'Adressaten';
+$string['audience_help'] = 'Angestrebte Zielgruppe des Kurses';
 $string['audienceadmins'] = 'Administrator/innen';
 $string['audienceeducators'] = 'Lehrende';
-$string['audience_help'] = 'Angestrebte Zielgruppe des Kurses';
 $string['audiencestudents'] = 'Lernende';
 $string['badgesnumber'] = 'Anzahl der Badges ({$a})';
 $string['communityremoved'] = 'Dieser Kurslink wurde von Ihrer Liste entfernt';
@@ -134,7 +134,7 @@ $string['publishername'] = 'Veröffentlicht von';
 $string['publishername_help'] = 'In dieses Feld tragen Sie die veröffentlichende Person oder Organisation ein. Falls Sie den Kurs im Auftrage einer anderen Person veröffentlichen, so sind Sie das.';
 $string['questionsnumber'] = 'Anzahl der Fragen ({$a})';
 $string['readvertiseon'] = 'Informationen auf {$a} aktualisieren';
-$string['registeredactiveuserdevices'] = 'Anzahl von aktiven Nutzer/innen mit registrierten mobilen Geräten, die Mitteilungen empfangen ({$a})';
+$string['registeredactiveuserdevices'] = 'Anzahl von aktiven Nutzer/innen mit registrierten mobilen Geräten, die Systemnachrichten empfangen ({$a})';
 $string['registeredcourses'] = 'Registrierte Kurse';
 $string['registeredsites'] = 'Registrierte Websites';
 $string['registereduserdevices'] = 'Anzahl von Nutzer/innen mit registrierten mobilen Geräte ({$a})';
@@ -179,7 +179,7 @@ $string['sitecommnews_help'] = 'Sie haben die Möglichkeit, unseren Moodle-Newsl
 $string['sitecommnewsno'] = 'Nein, ich möchte keine E-Mails bekommen';
 $string['sitecommnewsyes'] = 'Ja, ich möchte den Moodle-Newsletter empfangen';
 $string['sitecountry'] = 'Land';
-$string['sitecountry_help'] = 'Das Land Ihrer Organisation ist enthalten.';
+$string['sitecountry_help'] = 'Das Land Ihrer Organisation.';
 $string['sitedesc'] = 'Beschreibung';
 $string['sitedesc_help'] = 'Die Beschreibung Ihrer Website wird in der Liste aller Website angezeigt. Tragen Sie einige Informationen über Ihre Site ein.';
 $string['siteemail'] = 'E-Mail-Adresse des Admins';
@@ -195,7 +195,7 @@ $string['sitephone_help'] = 'Ihre Telefonnummer kann nur von Administrator/innen
 $string['siteprivacy'] = 'Angaben zur Site';
 $string['siteprivacy_help'] = 'Sie können wählen, ob Ihre Site öffentlich mit einem Link zu Ihrer Plattform angezeigt wird.';
 $string['siteprivacylinked'] = 'Namen der Website mit einem Link veröffentlichen';
-$string['siteprivacynotpublished'] = 'Diese Website nicht veröffentlichen';
+$string['siteprivacynotpublished'] = 'Meine Website nicht veröffentlichen';
 $string['siteprivacypublished'] = 'Nur den Namen der Website veröffentlichen';
 $string['siteregistrationcontact'] = 'Kontaktformular anzeigen';
 $string['siteregistrationcontact_help'] = 'Wenn diese Option aktiviert ist, können andere Personen über ein Kontaktformular auf dem Hub mit Ihnen in Kontakt treten. Ihre E-Mail-Adresse wird niemals angezeigt.';

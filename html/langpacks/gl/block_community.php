@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'gl', branch 'MOODLE_36_STABLE'
+ * Strings for component 'block_community', language 'gl', version '3.8'.
  *
- * @package   block_community
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_community
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,7 +39,7 @@ $string['blocks'] = 'Bloques';
 $string['cannotselecttopsubject'] = 'Non é posíbel escoller un nivel de tema superior';
 $string['comments'] = 'Comentarios ({$a})';
 $string['community:addinstance'] = 'Engadir un novo bloque buscador da comunidade';
-$string['community:myaddinstance'] = 'Engadir un novo bloque de localizador de comunidade ao meu cartafol persoal';
+$string['community:myaddinstance'] = 'Engadir un novo bloque de localizador de comunidade ao Taboleiro';
 $string['contentinfo'] = 'Tema: {$a->subject} - Audiencia: {$a->audience} - Nivel educativo: {$a->educationallevel}';
 $string['continue'] = 'Continuar';
 $string['contributors'] = '- Colaboradores: {$a}';
@@ -60,7 +60,7 @@ $string['downloadingsize'] = 'Agarde, o ficheiro do curso está a descargarse ({
 $string['downloadtemplate'] = 'Crear un curso a partir dun modelo';
 $string['educationallevel'] = 'Nivel educativo';
 $string['educationallevel_help'] = 'Que nivel educativo é o que busca? No caso das comunidades de educadores, este nivel describe o nivel que están ensinando.';
-$string['enroldownload'] = 'Atopar';
+$string['enroldownload'] = 'Buscar';
 $string['enroldownload_help'] = 'Algúns dos cursos enumerados no centro escollido anúncianse para que a xente poida vir e participar neles no sitio orixinal.
 
 Outros son modelos dos cursos previstos para que vostede poida descargalos e empregalos no seu propio sitio de Moodle.';
@@ -89,8 +89,8 @@ $string['nocourse'] = 'Non se atopan cursos';
 $string['noratings'] = 'Sen puntuacións';
 $string['operation'] = 'Operación';
 $string['orderby'] = 'Ordenar por';
-$string['orderbyeldest'] = 'O máis antigo';
 $string['orderby_help'] = 'A orde na que se presentan os resultados da busca.';
+$string['orderbyeldest'] = 'O máis antigo';
 $string['orderbyname'] = 'Nome';
 $string['orderbynewest'] = 'O máis recente';
 $string['orderbypublisher'] = 'Editor';
@@ -103,7 +103,7 @@ $string['privacy:metadata:block_community:coursename'] = 'O nome do curso da com
 $string['privacy:metadata:block_community:courseurl'] = 'O URL do curso do curso da comunidade ligada.';
 $string['privacy:metadata:block_community:imageurl'] = 'O URL da iomaxe do curso da comunidade ligada.';
 $string['privacy:metadata:block_community:userid'] = 'O ID do usuario que creou o curso da comunidade ligada.';
-$string['rateandcomment'] = 'Puntuar e comentar';
+$string['rateandcomment'] = 'Cualificar e comentar';
 $string['rating'] = 'Puntuación';
 $string['removecommunitycourse'] = 'Retirar curso da comunidade';
 $string['restorecourse'] = 'Restaurar curso';

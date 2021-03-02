@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tinymce_managefiles', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tinymce_managefiles', language 'ar', version '3.8'.
  *
- * @package   tinymce_managefiles
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tinymce_managefiles
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['hasmissingfiles'] = 'تحذير! يبدو أن الملفات التا�
 $string['manageareafiles'] = 'إدارة الملفات المضمنة في محرر النصوص';
 $string['managefiles:desc'] = 'إدارة الملفات المضمنة';
 $string['pluginname'] = 'إدارة الملفات المضمنة';
-$string['privacy:metadata'] = 'إن ملحق إدارة الملفات المضمنة في TinyMCE لا يخزن أيّ بيانات شخصية.';
-$string['refreshfiles'] = 'تحديث قوائم الملفات المفقودة وغير المستخدمة';
+$string['privacy:metadata'] = 'البرنامج المساعد The Manage embedded files TinyMCE لا يخزن أيّ بيانات شخصية.';
+$string['refreshfiles'] = 'قم بتحديث قوائم الملفات المفقودة و غير المستخدمة';
 $string['unusedfilesdesc'] = 'لا يتم استخدام الملفات المضمنة التالية في منطقة النص:';
 $string['unusedfilesheader'] = 'الملفات غير المستخدمة';

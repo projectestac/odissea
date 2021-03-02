@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'ja', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,19 +49,19 @@ $string['graded'] = '(評定済み)';
 $string['gradenextungraded'] = '次の {$a} 件の未評定の受験を評定する';
 $string['gradeungraded'] = '{$a} 件すべての未評定の受験を評定する';
 $string['grading'] = '手動評定';
+$string['grading:componentname'] = '手動評定レポート';
+$string['grading:viewidnumber'] = '評定中、学籍番号を表示する';
+$string['grading:viewstudentnames'] = '評定中、学生名を表示する';
 $string['gradingall'] = 'この問題すべての受験件数は {$a} 件です。';
 $string['gradingattempt'] = '{$a->fullname} の受験可能回数: {$a->attempt}';
 $string['gradingattemptsxtoyofz'] = '受験評定 {$a->from} -> {$a->to} / {$a->of}';
 $string['gradingattemptwithidnumber'] = '{$a->fullname} ({$a->idnumber}) の受験数: {$a->attempt}';
-$string['grading:componentname'] = '手動評定レポート';
 $string['gradingnextungraded'] = '次の {$a} 件の未評定の受験';
 $string['gradingnotallowed'] = 'あなたにはこの小テストの解答を手動評定するパーミッションがありません。';
 $string['gradingquestionx'] = '問題評定 {$a->number}: {$a->questionname}';
 $string['gradingreport'] = '手動評定レポート';
 $string['gradingungraded'] = '未評定の受験 {$a}';
 $string['gradinguser'] = '{$a} の受験';
-$string['grading:viewidnumber'] = '評定中、学籍番号を表示する';
-$string['grading:viewstudentnames'] = '評定中、学生名を表示する';
 $string['hideautomaticallygraded'] = '自動評定された問題を隠す';
 $string['inprogress'] = '進行中';
 $string['invalidattemptid'] = 'そのような受験IDはありません。';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_database', language 'ca', version '3.8'.
  *
- * @package   enrol_database
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_database
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,7 +34,7 @@ $string['dbname'] = 'Nom de la base de dades';
 $string['dbname_desc'] = 'Deixeu-ho en blanc si esteu utilitzant un nom NFD en el servidor de la base de dades.';
 $string['dbpass'] = 'Contrasenya de la base de dades';
 $string['dbsetupsql'] = 'Ordre per configurar la base de dades';
-$string['dbsetupsql_desc'] = 'Ordre SQL per configurar la base de dades, sovint utilitzada per configurar la codificació de la comunicació - exemple per MySQL i PostgreSQL: <em>SET NAMES \'utf8\'</em>';
+$string['dbsetupsql_desc'] = 'Ordre SQL per configurar la base de dades, sovint utilitzada per configurar la codificació de la comunicació; exemple per MySQL i PostgreSQL: <em>SET NAMES \'utf8\'</em>';
 $string['dbsybasequoting'] = 'Utilitza cometes sybase';
 $string['dbsybasequoting_desc'] = 'Les cometes d\'escapament d\'estil Sybase - s\'utilitzen a les bases de dades Oracle, MS SQL i altres bases de dades. No les utilitzeu per MySQL !';
 $string['dbtype'] = 'Controlador de base de dades';

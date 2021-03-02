@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cachestore_memcached', language 'ru', version '3.8'.
  *
- * @package   cachestore_memcached
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_memcached
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['bufferwrites'] = 'Буферизованная запись';
 $string['bufferwrites_help'] = 'Включает или отключает буферизацию ввода/вывода. Включение буферизации ввода/вывода вызывает хранение команд в «буфере» вместо их  отправки. Любое действие, которое извлекает данные, вызывает отправку этого буфера к удаленному подключению. Завершение соединения или полное закрытие соединения также вызовет передачу данных буфера к удаленному подключению.';
 $string['clustered'] = 'Включить в кластер серверов';
-$string['clusteredheader'] = 'Используемые серверы';
 $string['clustered_help'] = 'Параметр используется, чтобы задать мульти-функциональность с разрешением единичного чтения.
 
 Предполагаемое использование позволит создать улучшенное хранилище для конфигурации с балансировкой нагрузки. Данные будут выбираться из одного сервера (как правило, локального), но задаваться для многих (всех объединенных сбалансированных серверов). Между кэшами устанавливаются соотношения с очень высокой скоростью считывания, это экономит значительное количество сетевых ресурсов.
 
 При включенном параметре вышеперечисленные серверы будут использоваться для выборки.';
+$string['clusteredheader'] = 'Используемые серверы';
 $string['hash'] = 'Хэш-метод';
 $string['hash_crc'] = 'CRC';
 $string['hash_default'] = 'По умолчанию (хэш-функция Дженкинса)';
@@ -61,7 +61,6 @@ $string['serialiser_igbinary'] = 'Сериализатор IGBINARY.';
 $string['serialiser_json'] = 'Сериализатор JSON.';
 $string['serialiser_php'] = 'Сериализатор PHP по умолчанию';
 $string['servers'] = 'Серверы';
-$string['serversclusterinvalid'] = 'Необходимый сервер при включенном кластере.';
 $string['servers_help'] = 'В этом параметре следует указать, какие серверы memcahce следует использовать с этим экземпляром кэша.
 Серверы должны указываться по одному в строке и состоять из адреса сервера и (необязательно) - порта и веса. Если порт не задан, то используется порт по умолчанию (11211).
 
@@ -73,6 +72,7 @@ servername:port:weight
 </pre>
 
 Если ниже включен параметр *Включить кластер серверов*, то здесь должен быть приведен только один сервер. Это, как правило, имя локального компьютера, такое как 127.0.0.1 или localhost.';
+$string['serversclusterinvalid'] = 'Необходимый сервер при включенном кластере.';
 $string['sessionhandlerconflict'] = 'Предупреждение: экземпляр кэша memcache  ({$a}) был настроен на использование того же сервера, который кэширует и сессии. Очистка всех кэшей приведет к тому, что сессии тоже будут удалены.';
 $string['setservers'] = 'Серверы';
 $string['setservers_help'] = 'Список серверов, которые будут обновлены  при изменении данных в кэше. Обычно это полные имена каждого из объединенных серверов.

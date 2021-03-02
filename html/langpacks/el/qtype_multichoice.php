@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multichoice', language 'el', version '3.8'.
  *
- * @package   qtype_multichoice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multichoice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,11 +29,11 @@ $string['answerhowmany'] = 'Μία ή πολλές απαντήσεις;';
 $string['answerhowmany_desc'] = 'Εάν η προεπιλογή πρέπει να είναι μία απόκριση (δηλ. κουμπί μοναδικής επιλογής) ή πολλές αποκρίσεις (δηλ. πλαίσια ελέγχου).';
 $string['answernumbering'] = 'Να αριθμούνται οι επιλογές;';
 $string['answernumbering123'] = '1., 2., 3., ...';
-$string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'Α., B., C., ...';
-$string['answernumbering_desc'] = 'Το προεπιλεγμένο στυλ αρίθμησης.';
-$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
+$string['answernumbering_desc'] = 'Το προεπιλεγμένο στυλ αρίθμησης.';
+$string['answernumberingabc'] = 'a., b., c., ...';
+$string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = 'Χωρίς αρίθμηση';
 $string['answersingleno'] = 'Οι πολλαπλές απαντήσεις επιτρέπονται';
 $string['answersingleyes'] = 'Μία απάντηση μόνο';
@@ -62,10 +62,10 @@ $string['partiallycorrectfeedback'] = 'Για οποιαδήποτε μερικ�
 $string['pleaseselectananswer'] = 'Παρακαλούμε επιλέξτε μία απάντηση.';
 $string['pleaseselectatleastoneanswer'] = 'Επιλέξτε τουλάχιστον μία απάντηση.';
 $string['pluginname'] = 'Πολλαπλής Επιλογής';
-$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης Πολλαπλής Επιλογής';
-$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης Πολλαπλής Επιλογής';
 $string['pluginname_help'] = 'Σε απάντηση μιας ερώτησης (η οποία μπορεί να περιλαμβάνει μια εικόνα) ο ερωτώμενος επιλέγει ανάμεσα σε κάποιες απαντήσεις (που δίνονται). Μια ερώτηση πολλαπλών επιλογών μπορεί να έχει μία ή περισσότερες σωστές απαντήσεις.';
 $string['pluginname_link'] = 'ερώτηση/τύπος/πολλαπλήεπιλογή';
+$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης Πολλαπλής Επιλογής';
+$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης Πολλαπλής Επιλογής';
 $string['pluginnamesummary'] = 'Επιτρέπει την επιλογή μιας ή περισσοτέρων αποκρίσεων από μια προ-καθορισμένη λίστα.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις τύπου πολλαπλής επιλογής» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['selectmulti'] = 'Επιλέξτε ένα ή περισσότερα:';

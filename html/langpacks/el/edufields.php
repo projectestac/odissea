@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'edufields', language 'el', version '3.8'.
  *
- * @package   edufields
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     edufields
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,7 +52,7 @@ $string['field1010903'] = 'Βοτανική';
 $string['field1010905'] = 'Οικολογία και Εξέλιξη';
 $string['field1010907'] = 'Ναυτική Επιστήμη';
 $string['field1010909'] = 'Γενετική';
-$string['field1010911'] = 'Μικροβιολογία';
+$string['field1010911'] = 'Μικροβολογία';
 $string['field1010913'] = 'Ανθρώπινη Βιολογία';
 $string['field1010915'] = 'Ζωολογία';
 $string['field1010999'] = 'Βιολογικές Επιστήμες (Άλλο)';
@@ -312,7 +312,7 @@ $string['field1080319'] = 'Διαχείριση Φιλοξενίας';
 $string['field1080321'] = 'Διαχείριση Αγροκαλλιεργειών και Γεωργία';
 $string['field1080323'] = 'Διαχείριση Τουρισμού';
 $string['field1080399'] = 'Διοίκηση και Επιχειρήσεις (Άλλο)';
-$string['field10805'] = 'Πωλήσεις και Μάρκετινγκ';
+$string['field10805'] = 'Πωλήσεις και Mάρκετινγκ';
 $string['field1080501'] = 'Πωλήσεις';
 $string['field1080503'] = 'Κτηματομεσιτικά';
 $string['field1080505'] = 'Μάρκετινγκ (Προώθηση)';
@@ -362,7 +362,7 @@ $string['field10907'] = 'Συμπεριφορική επιστήμη';
 $string['field1090701'] = 'Ψυχολογία';
 $string['field1090799'] = 'Συμπεριφορική επιστήμη (άλλα)';
 $string['field10909'] = 'Δίκαιο';
-$string['field1090901'] = 'Δίκαιο Επιχειρήσεων και Εμπορικό Δίκαιο';
+$string['field1090901'] = 'Δίκαιο Επιχειρήσων και Εμπορικό Δίκαιο';
 $string['field1090903'] = 'Συνταγματικό Δίκαιο';
 $string['field1090905'] = 'Εγκληματολογία';
 $string['field1090907'] = 'Οικογενειακό Δίκαιο';
@@ -380,7 +380,7 @@ $string['field1091301'] = 'Βιβλιοθηκονομία και Διαχείρ�
 $string['field1091303'] = 'Επιμελητικές Σπουδές';
 $string['field10915'] = 'Γλώσσα και λογοτεχνία';
 $string['field1091501'] = 'Αγγλική γλώσσα';
-$string['field1091503'] = 'Γλώσσες Βόρειας Ευρώπης';
+$string['field1091503'] = 'Γλώσσες Βόριας Ευρώπης';
 $string['field1091505'] = 'Γλώσσες Νότιας Ευρώπης';
 $string['field1091507'] = 'Γλώσσες Ανατολικής Ευρώπης';
 $string['field1091509'] = 'Γλώσσες Νοτιοδυτικής Ασίας και Βορείου Αφρικής';
@@ -400,7 +400,7 @@ $string['field1091901'] = 'Οικονομικά';
 $string['field1091903'] = 'Οικονομετρία';
 $string['field10921'] = 'Αθλητισμός και Αναψυχή';
 $string['field1092101'] = 'Δραστηριότητες Αθλητισμού και Αναψυχής';
-$string['field1092103'] = 'Αθλητική Προπονητική, Διαιτησία και Εκπαίδευση';
+$string['field1092103'] = 'Αθλητικό προπονητή, διορισμός και εκπαίδευση';
 $string['field1092199'] = 'Αθλητισμός και Αναψυχή (Άλλο)';
 $string['field10999'] = 'Άλλη Κοινωνία και Πολιτισμός';
 $string['field1099901'] = 'Οικογένεια και Σπουδές Καταναλωτή';

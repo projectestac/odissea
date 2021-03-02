@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'search', language 'el', version '3.8'.
  *
- * @package   search
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     search
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -69,8 +69,8 @@ $string['enginenotinstalled'] = 'Η μηχανή {$a} δεν έχει εγκατ
 $string['enginenotselected'] = 'Δεν έχετε επιλέξει κάποια μηχανή αναζήτησης.';
 $string['engineserverstatus'] = 'Η μηχανή αναζήτησης δεν είναι διαθέσιμη. Παρακαλούμε, επικοινωνήστε με τον διαχειριστή σας.';
 $string['enteryoursearchquery'] = 'Δώστε το ερώτημά σας προς αναζήτηση';
-$string['errorareanotavailable'] = 'Η περιοχή αναζήτησης {$a} δεν είναι διαθέσιμη.';
 $string['error_indexing'] = 'Παρουσιάστηκε σφάλμα κατά τη δημιουργία ευρετηρίου';
+$string['errorareanotavailable'] = 'Η περιοχή αναζήτησης {$a} δεν είναι διαθέσιμη.';
 $string['errors'] = 'Σφάλματα';
 $string['everywhere'] = 'Οπουδήποτε μπορείτε να έχετε πρόσβαση';
 $string['filesinindexdirectory'] = 'Αρχεία στον κατάλογο ευρετηρίου';
@@ -114,18 +114,18 @@ $string['schemanotupdated'] = 'Το σχήμα αναζήτησης είναι �
 $string['schemaversionunknown'] = 'Η μηχανή αναζήτησης δεν γνωρίζει την τρέχουσα έκδοση σχήματος.';
 $string['score'] = 'Σκορ';
 $string['search'] = 'Αναζήτηση';
-$string['searcharea'] = 'Περιοχή αναζήτησης';
-$string['searchareacategories'] = 'Κατηγορίες περιοχών αναζήτησης';
 $string['search:course'] = 'Μαθήματα';
 $string['search:customfield'] = 'Προσαρμοσμένα πεδία μαθήματος';
-$string['searching'] = 'Γίνεται αναζήτηση στο...';
 $string['search:message_received'] = 'Μηνύματα - ληφθέντα';
 $string['search:message_sent'] = 'Μηνύματα - απεσταλμένα';
 $string['search:mycourse'] = 'Τα μαθήματά μου';
-$string['searchnotpermitted'] = 'Δεν επιτρέπεται να κάνετε αναζήτηση';
 $string['search:section'] = 'Τμήματα μαθήματος';
-$string['searchsetupdescription'] = 'Τα ακόλουθα βήματα σας βοηθούν να εγκαταστήσετε την καθολική αναζήτηση του Moodle.';
 $string['search:user'] = 'Χρήστες';
+$string['searcharea'] = 'Περιοχή αναζήτησης';
+$string['searchareacategories'] = 'Κατηγορίες περιοχών αναζήτησης';
+$string['searching'] = 'Γίνεται αναζήτηση στο...';
+$string['searchnotpermitted'] = 'Δεν επιτρέπεται να κάνετε αναζήτηση';
+$string['searchsetupdescription'] = 'Τα ακόλουθα βήματα σας βοηθούν να εγκαταστήσετε την καθολική αναζήτηση του Moodle.';
 $string['searchwithin'] = 'Αναζήτηση εντός';
 $string['seconds'] = 'δευτερόλεπτα';
 $string['solutions'] = 'Λύσεις';

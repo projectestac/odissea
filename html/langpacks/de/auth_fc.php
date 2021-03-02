@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_fc', language 'de', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_fc', language 'de', version '3.8'.
  *
- * @package   auth_fc
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_fc
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_fcchangepasswordurl'] = 'URL zur Kennwortänderung';
 $string['auth_fcconnfail'] = 'Verbindung fehlgeschlagen - Fehler: {$a->no} - Fehlertext: {$a->str}';
-$string['auth_fccreators'] = 'Eine Liste von Gruppen, denen es erlaubt ist, Kurse zu verwalten und neu anzulegen (Liste der Kursverwalter/innen). Trennen Sie verschiedene Gruppen durch \';\'. Namen müssen genau so geschrieben werden, wie auf dem FirstClass-Server. Achten Sie auch auf die korrekte Groß-/ Kleinschreibung.';
+$string['auth_fccreators'] = 'Eine Liste von Gruppen, denen es erlaubt ist, Kurse zu verwalten und neu anzulegen (Liste der Kursersteller/innen). Trennen Sie verschiedene Gruppen durch \';\'. Namen müssen genau so geschrieben werden, wie auf dem FirstClass-Server. Achten Sie auch auf die korrekte Groß-/ Kleinschreibung.';
 $string['auth_fccreators_key'] = 'Kursersteller/innen';
 $string['auth_fcdescription'] = 'Dieses Verfahren überprüft auf einem anderen Server die Gültigkeit von Anmeldenamen und Kennwort.';
 $string['auth_fcfppport'] = 'Server-Port (meistens wird 3333 benutzt)';
@@ -39,3 +39,4 @@ $string['auth_fcpasswd_key'] = 'Kennwort';
 $string['auth_fcuserid'] = 'Nutzer-ID auf dem FirstClass-Server mit der bevorzugten \'Subadmin\'-Einstellung';
 $string['auth_fcuserid_key'] = 'Nutzer-ID';
 $string['pluginname'] = 'FirstClass-Server';
+$string['privacy:metadata'] = 'Die Authentifizierung \'FirstClass Server\' speichert keine personenbezogenen Daten.';

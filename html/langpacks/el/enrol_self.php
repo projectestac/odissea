@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_self', language 'el', version '3.8'.
  *
- * @package   enrol_self
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_self
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['canntenrol'] = 'Οι εγγραφές είναι απενεργοποιημένες ή ανενεργές';
 $string['canntenrolearly'] = 'Δεν μπορείτε να εγγραφείτε ακόμα. Οι εγγραφές αρχίζουν στις {$a}.';
 $string['canntenrollate'] = 'Δεν μπορείτε πλέον να εγγραφείτε, καθώς οι εγγραφές ολοκληρώθηκαν στις {$a}.';
-$string['cohortnonmemberinfo'] = 'Μόνο μέλη της ομάδας χρηστών «{$a}» μπορούν να αυτο-εγγραφούν.';
-$string['cohortonly'] = 'Μόνο μέλη ομάδας χρηστών';
-$string['cohortonly_help'] = 'Η αυτο-εγγραφή μπορεί να περιορίζεται στα μέλη μόνο μιας συγκεκριμένης ομάδας. Σημειώστε ότι η αλλαγή αυτής της ρύθμισης δεν έχει καμία επίδραση στις υπάρχουσες εγγραφές.';
+$string['cohortnonmemberinfo'] = 'Μόνο μέλη του συνόλου χρηστών «{$a}» μπορούν να αυτο-εγγραφούν.';
+$string['cohortonly'] = 'Μόνο μέλη συνόλου χρηστών';
+$string['cohortonly_help'] = 'Η αυτο-εγγραφή μπορεί να περιορίζεται στα μέλη μόνο ενός συγκεκριμένου συνόλου χρηστών. Έχετε υπόψη ότι η αλλαγή αυτής της ρύθμισης δεν έχει καμία επίδραση στις υπάρχουσες εγγραφές.';
 $string['confirmbulkdeleteenrolment'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτές τις εγγραφές χρηστών;';
 $string['customwelcomemessage'] = 'Προσαρμοσμένο μήνυμα καλωσορίσματος';
 $string['customwelcomemessage_help'] = 'Ένα προσαρμοσμένο μήνυμα καλωσορίσματος μπορεί να προστεθεί ως απλό κείμενο ή σε μορφότυπο Moodle-auto, που μπορεί να περιλαμβάνει ετικέτες HTML και ετικέτες πολλαπλών γλωσσών (multi-lang).
@@ -98,7 +98,7 @@ $string['requirepassword_desc'] = 'Απαιτείται κλειδί εγγρα�
 $string['role'] = 'Προεπιλεγμένος ρόλος που ανατίθεται';
 $string['self:config'] = 'Παραμετροποίηση περιπτώσεων αυτο-εγγραφής';
 $string['self:holdkey'] = 'Εμφανίζεται ως ο κάτοχος κλειδιού αυτο-εγγραφής';
-$string['self:manage'] = 'Διαχείριση εγγεγραμμένων χρηστών';
+$string['self:manage'] = 'Διαχείριση εγγεγραμένων χρηστών';
 $string['self:unenrol'] = 'Ακύρωση εγγραφής χρηστών στο μάθημα';
 $string['self:unenrolself'] = 'Αυτο-απεγγραφή από το μάθημα';
 $string['sendcoursewelcomemessage'] = 'Αποστολή μηνύματος καλωσορίσματος σε επίπεδο μαθήματος';
@@ -111,8 +111,8 @@ $string['status_desc'] = 'Επιτρέψτε αυτο-εγγραφές (χρησ
 $string['status_help'] = 'Εάν ενεργοποιηθεί με την επιλογή «Επιτρέπονται νέες εγγραφές» απενεργοποιημένη, μόνο χρήστες που έχουν εγγραφεί από μόνοι τους προηγουμένως μπορούν να έχουν πρόσβαση στο μάθημα. Αν απενεργοποιηθεί, αυτή η μέθοδος αυτο-εγγραφής απενεργοποιείται στην πράξη, αφού όλες οι υπάρχουσες αυτο-εγγραφές αναστέλλονται και δεν μπορούν να εγγραφούν από μόνοι τους νέοι χρήστες.';
 $string['syncenrolmentstask'] = 'Διεργασία συγχρονισμού αυτο-εγγραφών';
 $string['unenrol'] = 'Ακύρωση εγγραφής χρήστη';
-$string['unenrolselfconfirm'] = 'Είστε βέβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας στο μάθημα «{$a}»;';
-$string['unenroluser'] = 'Είστε βέβαιοι ότι θέλετε να ακυρώσετε την εγγραφή του χρήστη «{$a->user}» στο μάθημα «{$a}»;';
+$string['unenrolselfconfirm'] = 'Είστε βεβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας στο μάθημα «{$a}»;';
+$string['unenroluser'] = 'Είστε βεβαιοι ότι θέλετε να ακυρώσετε την εγγραφή του χρήστη «{$a->user}» στο μάθημα «{$a}»;';
 $string['unenrolusers'] = 'Ακύρωση εγγραφής χρηστών';
 $string['usepasswordpolicy'] = 'Χρήση πολιτικής κωδικού πρόσβασης';
 $string['usepasswordpolicy_desc'] = 'Χρήση της τυπικής πολιτικής κωδικών πρόσβασης για τα κλειδιά εγγραφής.';

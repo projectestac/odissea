@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_monitor', language 'it', version '3.8'.
  *
- * @package   tool_monitor
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_monitor
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -72,11 +72,11 @@ $string['messagetemplate_help'] = 'Il messaggio di notifica che sarà inviato ag
 * Descrizione {description}
 * Nome dell\'evento {eventname}';
 $string['moduleinstance'] = 'Istanza';
+$string['monitor:managerules'] = 'Gestione regole monitoraggio eventi';
+$string['monitor:managetool'] = 'Abilitare/disabilitare monitoraggio eventi';
+$string['monitor:subscribe'] = 'Sottoscrizione regole monitoraggio eventi';
 $string['monitordisabled'] = 'Il monitoraggio eventi è disabilitato.';
 $string['monitorenabled'] = 'Il monitoraggio eventi è abilitato.';
-$string['monitor:managerules'] = 'Gestione regole monitoraggio eventi';
-$string['monitor:managetool'] = 'Abilita/disabilita monitoraggio eventi';
-$string['monitor:subscribe'] = 'Sottoscrizione regole monitoraggio eventi';
 $string['norules'] = 'Non ci sono regole di monitoraggio eventi.';
 $string['pluginname'] = 'Monitoraggio eventi';
 $string['privacy:createdrules'] = 'Regole di monitoraggio eventi create da me';

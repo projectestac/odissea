@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'my', language 'pt', version '3.8'.
  *
- * @package   my
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     my
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,7 +36,7 @@ $string['mymoodle'] = 'Painel do utilizador';
 $string['nocourses'] = 'Sem informação das suas disciplinas para mostrar.';
 $string['noguest'] = 'O Painel do utilizador não está disponível para visitantes';
 $string['pinblocks'] = 'Configurar blocos fixos para a \'Minha página principal\'';
-$string['pinblocksexplan'] = 'Quaisquer configurações do bloco que aqui sejam definidas serão disponibilizadas (sem possibilidade de edição) a todos os utilizadores do Moodle na sua página \'Painel do utilizador\'';
+$string['pinblocksexplan'] = 'Quaisquer definições de blocos que aqui sejam configuradas serão disponibilizadas (sem possibilidade de edição) a qualquer utilizador do Moodle na sua página \'Minha página principal\'';
 $string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'Preferência da página principal do utilizador.';
 $string['reseterror'] = 'Houve um erro ao redefinir a sua página';
 $string['reseteveryonesdashboard'] = 'Restaurar as páginas de Painel do utilizador de todos os utilizadores';

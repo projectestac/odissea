@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'zh_cn', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -193,9 +193,6 @@ $string['noupcomingevents'] = '没有即将到来的事件';
 $string['oneevent'] = '1个事件';
 $string['pollinterval'] = '更新间隔';
 $string['pollinterval_help'] = '您希望日历多久更新一次新事件。';
-$string['preferences'] = '偏好';
-$string['preferences_available'] = '您的个人偏好';
-$string['preferredcalendar'] = '日历偏好';
 $string['pref_lookahead'] = '预见即将到来的事件';
 $string['pref_lookahead_help'] = '这里设置未来多少天内将开始的事件被显示为即将到来的事件。此天数以后开始的事件不会被显示为即将到来。请注意，<strong>并不保证</strong>在此时间窗口内开始的所有事件都会被显示；如果太多（超过“即将到来的事件数的最大值”偏好），那么最远的事件不会被显示。';
 $string['pref_maxevents'] = '即将到来的事件数的最大值';
@@ -206,16 +203,19 @@ $string['pref_startwday'] = '一周的第一天';
 $string['pref_startwday_help'] = '日历里的一周将从您选择的那天开始。';
 $string['pref_timeformat'] = '时间显示格式';
 $string['pref_timeformat_help'] = '您可以选择使用12小时或24小时格式。如果您选择“默认”，系统将根据您所使用的语言自动为您选择时间格式。';
+$string['preferences'] = '偏好';
+$string['preferences_available'] = '您的个人偏好';
+$string['preferredcalendar'] = '日历偏好';
 $string['privacy:metadata:calendar:event'] = '日历组件可以在核心子系统中存储用户日历事件的详细信息。';
 $string['privacy:metadata:calendar:event:description'] = '日历事件的描述。';
 $string['privacy:metadata:calendar:event:eventtype'] = '日历事件的事件类型。';
 $string['privacy:metadata:calendar:event:name'] = '日历事件的名称。';
+$string['privacy:metadata:calendar:event:timeduration'] = '日历事件的持续时间。';
+$string['privacy:metadata:calendar:event:timestart'] = '日历事件的开始时间。';
 $string['privacy:metadata:calendar:event_subscriptions'] = '日历组件可以在核心子系统中存储用户日历订阅的详细信息。';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = '日历订阅的事件类型。';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = '日历订阅的名称。';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = '日历订阅的网址。';
-$string['privacy:metadata:calendar:event:timeduration'] = '日历事件的持续时间。';
-$string['privacy:metadata:calendar:event:timestart'] = '日历事件的开始时间。';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = '已配置的日历事件类型显示用户偏好。';
 $string['recentupcoming'] = '最近和接下来的60天';
 $string['repeatedevents'] = '重复事件';

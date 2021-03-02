@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'eu', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activatesuccess'] = 'Dominetarako sarbidea ondo gaitu da.';
 $string['addalignment'] = 'Gehitu kanpoko trebetasuna edo estandarra';
 $string['addbackpack'] = 'Gehitu motxila';
 $string['addbadge'] = 'Gehitu dominak';
-$string['addbadgecriteria'] = 'Gehitu dominarako irizpidea';
 $string['addbadge_help'] = 'Aukeratu dominarako baldintza honetara gehitu beharreko ikastaro guztiak. Eutsi CTRL teklari hainbat elementu aukeratzeko.';
+$string['addbadgecriteria'] = 'Gehitu dominarako irizpidea';
 $string['addcohort'] = 'Gehitu kohortea';
 $string['addcohort_help'] = 'Aukeratu domina honen eskaerei lotu beharreko kohorte guztiak. Eutsi CTRL teklari hainbat elementu aukeratzeko.';
 $string['addcompetency'] = 'Gehitu konpetentzia';
@@ -73,7 +73,7 @@ $string['anymethodprofile'] = 'Aukeratutako edozein profil-eremu osatu da';
 $string['apiversion'] = 'Onartutako API bertsioa';
 $string['archivebadge'] = '\'{$a}\' domina ezabatu nahi duzu, baina emandako dominak mantenduta?';
 $string['archiveconfirm'] = 'Ezabatu eta mantendu emandako dominak';
-$string['archivehelp'] = '<p>Aukera honen bidez domina "baztertuta" bezala markatuko da eta aurrerantzean ez da dominen zerrendan agertuko. Erabiltzaileek ezingo dute domina hau gehiago eskuratu, baina aurretik eskuratu dutenek euren profilean domina hau ikusi eta kanpo-motxiletara gehitzeko aukera izaten jarraituko dute.</p>
+$string['archivehelp'] = '<p>Aukera honen bidez domina "baztertuta" bezala markatuko da eta aurrerantzean ez da dominen zerrendan agertuko. Erabiltzaileek ezingo dute domina hau gehiago eskuratu, baina domina aurretik jaso dutenek euren profilean domina hau ikusi eta kanpo-motxiletara gehitzeko aukera izaten jarraituko dute.</p>
 <p>Erabiltzaileek euren dominetara sarbidea izaten jarraitzea nahi izanez gero aukera hau hautatzea garrantzitsua da, domina guztiz ezabatu beharrean</p>';
 $string['attachment'] = 'Erantsi domina mezuari';
 $string['attachment_help'] = 'Gaituz gero, jasotzailearen e-mailari domina jaisteko moduan erantsiko zaio. (Eranskinek gaituta egon behar dute hemen aukera hau erabiltzeko: Gunearen kudeaketa > Pluginak > Irteerako mezuak > Posta elektronikoa)';
@@ -103,9 +103,9 @@ $string['backpackbadgessettings'] = 'Aldatu motxilaren ezarpenak';
 $string['backpackbadgessummary'] = '{$a->totalcollections} bildumetako {$a->totalbadges} domina erakusten ari zara.';
 $string['backpackcannotsendverification'] = 'Ezin da bidali egiaztapenerako e-maila';
 $string['backpackconnection'] = 'Motxilarako konexioa';
+$string['backpackconnection_help'] = 'Kanpoko motxila batekin lotzeak gune honetako dominak partekatzeko aukera ematen dizu, baita zure motxilan publikoa den edozein domina-bilduma gune honetako zure profilean erakusteko aukera ere.';
 $string['backpackconnectioncancelattempt'] = 'Konektatu beste helbide elektroniko bat erabilita';
 $string['backpackconnectionconnect'] = 'Konektatu  motxilara';
-$string['backpackconnection_help'] = 'Kanpoko motxila batekin lotzeak gune honetako dominak partekatzeko aukera ematen dizu, baita zure motxilan publikoa den edozein domina-bilduma gune honetako zure profilean erakusteko aukera ere.';
 $string['backpackconnectionnottested'] = 'Ezin da motxila honetarako konexioa probatu soilik Open Badges v2.0 motxilek onartzen dutelako.';
 $string['backpackconnectionok'] = 'Motxilarako konexioa ondo egin da';
 $string['backpackconnectionresendemail'] = 'Berriz bidali egiaztapenerako e-maila';
@@ -192,7 +192,7 @@ $string['coursebadgesdisabled'] = 'Ikastaroko dominak ez daude gaituta gune hone
 $string['coursecompletion'] = 'Erabiltzaileek ikastaro hau osatu behar dute';
 $string['create'] = 'Domina berria';
 $string['createbutton'] = 'Sortu domina';
-$string['creatorbody'] = '<p>{$a->user}-(e)k dominarako baldintzak bete ditu eta domina hau lortu du. Ikusi emandako dominak hemen: {$a->link} </p>';
+$string['creatorbody'] = '<p>{$a->user}(e)k dominarako baldintzak bete ditu eta domina hau lortu du. Ikusi emandako dominak hemen: {$a->link} </p>';
 $string['creatorsubject'] = 'Norbaitek \'{$a}\' domina lortu du!';
 $string['criteria_0'] = 'Domina hau honela lortzen da:';
 $string['criteria_1'] = 'Jarduera-osaketa';
@@ -213,8 +213,6 @@ $string['criteria_8'] = 'Kohorteko partaidetza';
 $string['criteria_8_help'] = 'Erabiltzaileei kohortetako partaidetzan oinarrituta domina bat emateko aukera eskaintzen du.';
 $string['criteria_9'] = 'Konpetentziak';
 $string['criteria_9_help'] = 'Erabiltzaileek osatutako konpetentzien arabera domina esleitzea ahalbidetzen du.';
-$string['criteriacreated'] = 'Dominarako irizpidea modu egokian sortu da';
-$string['criteriadeleted'] = 'Dominarako irizpidea modu egokian ezabatu da';
 $string['criteria_descr'] = 'Ondorengo baldintza betetzen dutenean emango zaie ikasleei domina hau:';
 $string['criteria_descr_0'] = 'Erabiltzaileei domina hau zerrendako <strong>{$a}</strong> baldintza betetzean emango zaie.';
 $string['criteria_descr_1'] = 'Ondorengo jardueretatik <strong>{$a}</strong> osatu dira:';
@@ -252,6 +250,8 @@ $string['criteria_descr_single_short6'] = 'Osatuta:';
 $string['criteria_descr_single_short7'] = 'Osatu:';
 $string['criteria_descr_single_short8'] = 'Partaidetza hemen:';
 $string['criteria_descr_single_short9'] = 'Osatu';
+$string['criteriacreated'] = 'Dominarako irizpidea modu egokian sortu da';
+$string['criteriadeleted'] = 'Dominarako irizpidea modu egokian ezabatu da';
 $string['criteriasummary'] = 'Irizpide-multzoa';
 $string['criteriaupdated'] = 'Dominarako irizpidea modu egokian eguneratu da';
 $string['criterror'] = 'Oraingo parametroekiko arazoak';
@@ -298,7 +298,7 @@ $string['error:duplicatename'] = 'Badago aldez aurretik izen hori duen domina si
 $string['error:externalbadgedoesntexist'] = 'Ez da domina aurkitu.';
 $string['error:guestuseraccess'] = 'Bisitari gisa sartu zara. Dominak ikusteko erabiltzaile-kontua erabilita sartu behar duzu.';
 $string['error:invalidbadgeurl'] = 'Emailearen URL formatu baliogabea. URLak http:// edo https:// aurrizkia izan beharko luke.';
-$string['error:invalidcriteriatype'] = 'Irizpide-mota desegokia';
+$string['error:invalidcriteriatype'] = 'Irizpide mota desegokia';
 $string['error:invalidexpiredate'] = 'Iraungitze-datak etorkizunekoa izan behar du.';
 $string['error:invalidexpireperiod'] = 'Iraungitze data ezin da negatiboa edo 0 izan.';
 $string['error:invalidparambadge'] = 'Domina ez da existitzen.';
@@ -327,7 +327,7 @@ $string['error:requesttimeout'] = 'Konexio-eskaera tartea agortu egin da konexio
 $string['error:save'] = 'Ezin da domina gorde.';
 $string['error:userdeleted'] = '{$a->user} (Erabiltzaile hau ez dago dagoeneko {$a->site} -n)';
 $string['eventbadgearchived'] = 'Domina artxibatu da';
-$string['eventbadgeawarded'] = 'Domina lortu da';
+$string['eventbadgeawarded'] = 'Domina eman da';
 $string['eventbadgecreated'] = 'Domina sortu da';
 $string['eventbadgecriteriacreated'] = 'Dominarako irizpidea sortu da';
 $string['eventbadgecriteriadeleted'] = 'Dominarako irizpidea ezabatu da';
@@ -349,7 +349,7 @@ $string['expireddate'] = 'Domina {$a}-n iraungitzen da.';
 $string['expireperiod'] = 'Domina, eman eta  {$a} egunetara iraungitzen da.';
 $string['expireperiodh'] = 'Domina, eman eta  {$a} ordutara iraungitzen da.';
 $string['expireperiodm'] = 'Domina, eman eta  {$a} minututara iraungitzen da.';
-$string['expireperiods'] = 'Domina, eman eta  {$a} segundutara iraungitzen da.';
+$string['expireperiods'] = 'Domina, eman eta  {$a} segundotara iraungitzen da.';
 $string['expirydate'] = 'Epemugaren data';
 $string['expirydate_help'] = 'Aukeran, dominak data jakin batean iraungi daitezke, edo erabiltzaileari eman zitzaioneko dataren arabera kalkulatu daiteke.';
 $string['externalbadges'] = 'Nire dominak beste web-gune batzuetan';
@@ -454,7 +454,7 @@ $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
 $string['overallcrit'] = 'aukeratutako irizpideetatik bete da.';
 $string['potentialrecipients'] = 'Balizko domina-jasotzaileak';
-$string['preferences'] = 'Dominen hobespenak';
+$string['preferences'] = 'Dominen aukerak';
 $string['privacy:metadata:backpack'] = 'Erabiltzailearen motxilen erregistroa';
 $string['privacy:metadata:backpack:backpackuid'] = 'Motxilaren identifikatzaile-bakarra';
 $string['privacy:metadata:backpack:email'] = 'Motxilarekin lotutako helbide elektronikoa';
@@ -473,7 +473,7 @@ $string['privacy:metadata:external:backpacks:badge'] = 'Dominaren izena';
 $string['privacy:metadata:external:backpacks:description'] = 'Dominaren deskribapena';
 $string['privacy:metadata:external:backpacks:image'] = 'Dominaren irudia';
 $string['privacy:metadata:external:backpacks:issuer'] = 'Emailearen inguruko informazioa';
-$string['privacy:metadata:external:backpacks:url'] = 'Dominaren informazioa ikusgarri dagoen Moodleko URLa';
+$string['privacy:metadata:external:backpacks:url'] = 'Dominaren informazioa ikusgarri dagoen Moodle-ko URLa';
 $string['privacy:metadata:issued'] = 'Emandako dominen erregistroa';
 $string['privacy:metadata:issued:dateexpire'] = 'Domina-ematea iraungitzen deneko data';
 $string['privacy:metadata:issued:dateissued'] = 'Domina-ematearen data';

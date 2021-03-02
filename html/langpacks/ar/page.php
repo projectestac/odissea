@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'page', language 'ar', version '3.8'.
  *
- * @package   page
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     page
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,33 +33,33 @@ $string['displayoptions'] = 'عرض الخيارات المتاحة';
 $string['displayselect'] = 'عرض';
 $string['displayselectexplain'] = 'إختر نوع العرض.';
 $string['indicator:cognitivedepth'] = 'الصفحة معرفياً';
+$string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في مورد الصفحة.';
 $string['indicator:cognitivedepthdef'] = 'الصفحة معرفياً';
 $string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها موارد الصفحة خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة)';
-$string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في مورد الصفحة.';
 $string['indicator:socialbreadth'] = 'الصفحة إجتماعياً';
+$string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في مورد الصفحة.';
 $string['indicator:socialbreadthdef'] = 'الصفحة إجتماعياً';
 $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها موارد الصفحة خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً)';
-$string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في مورد الصفحة.';
-$string['legacyfiles'] = 'ترحيل ملف المساق القديم';
+$string['legacyfiles'] = 'ترحيل ملفات المقرر الدراسي القديمة';
 $string['legacyfilesactive'] = 'نشط';
 $string['legacyfilesdone'] = 'انتهى';
 $string['modulename'] = 'صفحة';
-$string['modulename_help'] = 'وحدة الصفحة تمكن المعلم من إنشاء مورد كصفحة ويب باستعمال محرر النصوص. يمكن أن تعرض الصفحة النصوص والصور والصوت والفيديو، وكذلك روابط الإنترنت والتعليمات البرمجية المضمنة، مثل خرائط Google.
+$string['modulename_help'] = 'المقرروحدة الصفحة تمكن المعلم لإنشاء مصدر كصفحة ويب باستخدام محرر النصوص. يمكن أن تعرض الصفحة  النصوص والصور والصوت والفيديو، وكذلك وصلات الإنترنت والتعليمات البرمجية المضمنة، مثل خرائط جوجل.
 
-وتشمل مزايا استعمال وحدة الصفحة بدلاً من وحدة الملف كونها مورد أكثر سهولة للوصول إليه (على سبيل المثال لمستخدمي الأجهزة النقالة) وأسهل للتحديث.
+وتشمل مزايا استخدام وحدة الصفحة بدلاً من وحدة الملف  كونها مصدر أكثر سهولة (على سبيل المثال لمستخدمي الأجهزة النقالة) وأسهل للتحديث.
 
-لكميات كبيرة من المحتوى، من المستحسن أن يتم استخدام الكتاب كمورد بدلاً من الصفحة.
+لكميات كبيرة من المحتوى، من المستحسن أن يتم استخدام الكتاب كمصدر بدلاً من الصفحة.
 
-يمكن استعمال مصدر الصفحة:
+يمكن استخدام مصدر الصفحة
 
-* لعرض بنود وشروط المساق أو لعرض ملخص المنهج الدراسي
+* لعرض بنود وشروط المقرر الدراسي أو لعرض وصف المقرر
 * لتضمين العديد من أشرطة الفيديو أو ملفات الصوت مع بعض النصوص التوضيحية';
 $string['modulenameplural'] = 'صفحات';
 $string['optionsheader'] = 'خيارات العرض';
-$string['page:addinstance'] = 'إضافة مصدر صفحة جديد';
 $string['page-mod-page-x'] = 'أي صفحة لوحدة الصفحة';
+$string['page:addinstance'] = 'إضافة مصدر صفحة جديد';
 $string['page:view'] = 'معاينة محتوى الصفحة';
-$string['pluginadministration'] = 'إدارة وحدة الصفحة';
+$string['pluginadministration'] = 'إدارة وحدة الصفحات';
 $string['pluginname'] = 'الصفحة';
 $string['popupheight'] = 'ارتفاع النوافذ المنبثقة (بالبكسل)';
 $string['popupheightexplain'] = 'يحدد الارتفاع الافتراضي للنوافذ المنبثقة.';
@@ -67,7 +67,7 @@ $string['popupwidth'] = 'عرض النوافذ المنبثقة (بالبكسل)
 $string['popupwidthexplain'] = 'يحدد العرض الافتراضي للنوافذ المنبثقة.';
 $string['printheading'] = 'عرض اسم الصفحة';
 $string['printheadingexplain'] = 'عرض اسم الصفحة فوق المحتوى؟';
-$string['printintro'] = 'عرض وصف الصفحة';
+$string['printintro'] = 'اعرض وصف الصفحة';
 $string['printintroexplain'] = 'أتريد عرض وصف الصفحة فوق المحتوى؟';
 $string['printlastmodified'] = 'إعرض تاريخ آخر تعديل';
 $string['printlastmodifiedexplain'] = 'أتريد عرض تاريخ آخر تعديل أسفل المحتوى؟';

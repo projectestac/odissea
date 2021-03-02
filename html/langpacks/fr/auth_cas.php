@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_cas', language 'fr', version '3.8'.
  *
- * @package   auth_cas
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_cas
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['CASform'] = 'Choix du mode d\'authentification';
 $string['accesCAS'] = 'Utilisateurs CAS';
 $string['accesNOCAS'] = 'Autres utilisateurs';
 $string['auth_cas_auth_logo'] = 'Logo de la méthode d\'authentification';
@@ -47,15 +48,14 @@ $string['auth_cas_changepasswordurl'] = 'URL pour changement de mot de passe';
 $string['auth_cas_create_user'] = 'Veuillez activer cette option si vous voulez insérer dans la base de données de Moodle les utilisateurs authentifiés par le CAS. Dans le cas contraire, seuls les utilisateurs déjà présents dans la base de données de Moodle pourront se connecter.';
 $string['auth_cas_create_user_key'] = 'Créer l\'utilisateur';
 $string['auth_cas_curl_ssl_version'] = 'La version SSL à utiliser (2 ou 3). par défaut, PHP détermine ce réglage de lui-même, mais dans certains cas ce paramètre doit être défini manuellement.';
-$string['auth_cas_curl_ssl_version_default'] = 'Défaut';
-$string['auth_cas_curl_ssl_version_key'] = 'Version cURL SSL';
 $string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
 $string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
 $string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
 $string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
 $string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
 $string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
-$string['auth_casdescription'] = 'Cette méthode utilise un serveur CAS (Central Authentication Service) pour authentifier les utilisateurs dans un environnement Single Sign On (SSO). Il est aussi possible d\'utiliser une simple authentification LDAP. Si le nom d\'utilisateur et le mot de passe donnés sont valides suivant le CAS, Moodle crée un nouvel utilisateur dans sa base de données, en héritant si nécessaire des attributs LDAP de l\'utilisateur. Lors des connexions ultérieures, seuls le nom d\'utilisateur et le mot de passe sont vérifiés.';
+$string['auth_cas_curl_ssl_version_default'] = 'Défaut';
+$string['auth_cas_curl_ssl_version_key'] = 'Version cURL SSL';
 $string['auth_cas_enabled'] = 'Veuillez activer cette option si vous voulez utiliser l\'authentification CAS.';
 $string['auth_cas_hostname'] = 'Nom d\'hôte du serveur CAS,<br />par exemple : « host.domaine.fr »';
 $string['auth_cas_hostname_key'] = 'Nom d\'hôte';
@@ -63,13 +63,12 @@ $string['auth_cas_invalidcaslogin'] = 'Désolé, la connexion a échoué ! Vous
 $string['auth_cas_language'] = 'Langue des pages d\'authentification';
 $string['auth_cas_language_key'] = 'Langue';
 $string['auth_cas_logincas'] = 'Accès par connexion sécurisée';
-$string['auth_cas_logoutcas'] = 'Veuillez sélectionner « Oui » si vous voulez vous déconnecter de CAS lors de la déconnexion de Moodle';
-$string['auth_cas_logoutcas_key'] = 'Option de déconnexion CAS';
 $string['auth_cas_logout_return_url'] = 'Indiquer ici l\'URL vers laquelle les utilisateurs CAS seront redirigés après s\'être déconnectés.<br />Si le champ n\'est pas renseigné, les utilisateurs seront redirigés vers la page où Moodle redirige normalement les utilisateurs';
 $string['auth_cas_logout_return_url_key'] = 'URL de redirection alternative après déconnexion';
+$string['auth_cas_logoutcas'] = 'Veuillez sélectionner « Oui » si vous voulez vous déconnecter de CAS lors de la déconnexion de Moodle';
+$string['auth_cas_logoutcas_key'] = 'Option de déconnexion CAS';
 $string['auth_cas_multiauth'] = 'Veuillez sélectionner « Oui » si vous voulez utilisez l\'authentification multiple (CAS + d\'autres méthodes d\'authentification)';
 $string['auth_cas_multiauth_key'] = 'Authentification multiple';
-$string['auth_casnotinstalled'] = 'Impossible d\'utiliser l\'authentification CAS. Le module PHP LDAP n\'est pas installé.';
 $string['auth_cas_port'] = 'Port utilisé par le serveur CAS';
 $string['auth_cas_port_key'] = 'Port';
 $string['auth_cas_proxycas'] = 'Veuillez sélectionner « Oui » si vous souhaitez vous connecter en mode proxy CAS';
@@ -78,7 +77,8 @@ $string['auth_cas_server_settings'] = 'Configuration du serveur CAS';
 $string['auth_cas_text'] = 'Connexion sécurisée';
 $string['auth_cas_use_cas'] = 'Utiliser CAS';
 $string['auth_cas_version'] = 'Version du protocole CAS à utiliser';
-$string['CASform'] = 'Choix du mode d\'authentification';
+$string['auth_casdescription'] = 'Cette méthode utilise un serveur CAS (Central Authentication Service) pour authentifier les utilisateurs dans un environnement Single Sign On (SSO). Il est aussi possible d\'utiliser une simple authentification LDAP. Si le nom d\'utilisateur et le mot de passe donnés sont valides suivant le CAS, Moodle crée un nouvel utilisateur dans sa base de données, en héritant si nécessaire des attributs LDAP de l\'utilisateur. Lors des connexions ultérieures, seuls le nom d\'utilisateur et le mot de passe sont vérifiés.';
+$string['auth_casnotinstalled'] = 'Impossible d\'utiliser l\'authentification CAS. Le module PHP LDAP n\'est pas installé.';
 $string['noldapserver'] = 'Aucun serveur LDAP n\'est configuré pour CAS ! Synchronisation désactivée.';
 $string['pluginname'] = 'Serveur CAS (SSO)';
 $string['privacy:metadata'] = 'Le plugin d\'authentification Serveur CAS (SSO) n\'enregistre aucune donnée personnelle.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'page', language 'el', version '3.8'.
  *
- * @package   page
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     page
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,15 +33,15 @@ $string['displayoptions'] = 'Διαθέσιμες επιλογές εμφάνι�
 $string['displayselect'] = 'Εμφάνιση';
 $string['displayselectexplain'] = 'Επιλέξτε τύπο εμφάνισης.';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης σελίδας';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Σελίδας.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης σελίδας';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Σελίδας κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Σελίδας.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Σελίδας';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Σελίδας.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Σελίδας';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Σελίδας κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε έναν πόρο Σελίδας.';
 $string['legacyfiles'] = 'Μετεγκατάσταση (μεταφορά/μετατροπή) παλαιού αρχείου μαθήματος';
 $string['legacyfilesactive'] = 'Ενεργά';
 $string['legacyfilesdone'] = 'Έληξαν';
@@ -53,8 +53,8 @@ $string['modulename_help'] = 'Το άρθρωμα σελίδας επιτρέπ�
 $string['modulename_link'] = 'άρθρωμα/σελίδα/εμφάνιση';
 $string['modulenameplural'] = 'Σελίδες';
 $string['optionsheader'] = 'Εμφάνιση επιλογών';
-$string['page:addinstance'] = 'Προσθήκη νέου πόρου σελίδας';
 $string['page-mod-page-x'] = 'Οποιαδήποτε σελίδα αρθρώματος σελίδας';
+$string['page:addinstance'] = 'Προσθήκη νέου πόρου σελίδας';
 $string['page:view'] = 'Εμφάνιση περιεχομένου σελίδας';
 $string['pluginadministration'] = 'Διαχείριση αρθρώματος σελίδας';
 $string['pluginname'] = 'Σελίδα';

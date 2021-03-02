@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'currencies', language 'eu', version '3.8'.
  *
- * @package   currencies
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     currencies
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,7 +29,7 @@ $string['AED'] = 'Arabiar Emirerri Batuetako Dirhama';
 $string['AFN'] = 'Afghanistango Afghania';
 $string['ALL'] = 'Albaniako Leka';
 $string['AMD'] = 'Armeniako Drama';
-$string['ANG'] = 'Antilla Holandarretako Guilderra';
+$string['ANG'] = 'Holandarren Antilletako Guilderra';
 $string['AOA'] = 'Angolako Kwanza';
 $string['ARS'] = 'Argentinako pesoa';
 $string['AUD'] = 'Australiako Dolarra';
@@ -47,7 +47,7 @@ $string['BOB'] = 'Bolibiako Bolibianoa';
 $string['BRL'] = 'Brasilgo Erreala';
 $string['BSD'] = 'Bahametako Dolarra';
 $string['BTN'] = 'Butango Ngultruma';
-$string['BWP'] = 'Botswanako Pula';
+$string['BWP'] = 'Botswanar pula';
 $string['BYR'] = 'Bielorrusiako Errubloa';
 $string['BZD'] = 'Belizeko Dolarra';
 $string['CAD'] = 'Kanadako Dolarra';
@@ -60,7 +60,7 @@ $string['COP'] = 'Kolonbiako Pesoa';
 $string['CRC'] = 'Costa Ricako Colona';
 $string['CUC'] = 'Kubako Pesoa';
 $string['CUP'] = 'Kubako Pesoa';
-$string['CVE'] = 'Cabo Verdeko Eskudoa';
+$string['CVE'] = 'Cabo Verdeko Ezkutua';
 $string['CZK'] = 'Txekiako Koroa';
 $string['DJF'] = 'Djiboutiko Frankoa';
 $string['DKK'] = 'Danimarkako Koroa';
@@ -72,21 +72,21 @@ $string['ETB'] = 'Etiopiako Birra';
 $string['EUR'] = 'Euroa';
 $string['FJD'] = 'Fijiko Dolarra';
 $string['FKP'] = 'Falkland Irletako Libera';
-$string['GBP'] = 'Britaniako Libera';
+$string['GBP'] = 'Britaniako Libera esterlina';
 $string['GEL'] = 'Georgiako Laria';
 $string['GHS'] = 'Ghanako Cedia';
 $string['GIP'] = 'Gibraltarreko Libera';
 $string['GMD'] = 'Gambiako Dalasia';
 $string['GNF'] = 'Guineako Frankoa';
 $string['GTQ'] = 'Guatemalako Quetzala';
-$string['GYD'] = 'Guayanako Dolarra';
+$string['GYD'] = 'Dolar guyanarra';
 $string['HKD'] = 'Hong Kong-eko Dolarra';
 $string['HNL'] = 'Honduraseko Lempira';
 $string['HRK'] = 'Kroaziako Kuna';
 $string['HTG'] = 'Haitiko Gourdea';
 $string['HUF'] = 'Hungariako Forinta';
 $string['IDR'] = 'Indonesiako Errupia';
-$string['ILS'] = 'Israelgo Shekala';
+$string['ILS'] = 'Israelgo Shekela';
 $string['INR'] = 'Indiako Errupia';
 $string['IQD'] = 'Irakeko Dinarra';
 $string['IRR'] = 'Irango Riala';
@@ -94,7 +94,7 @@ $string['ISK'] = 'Islandiako Koroa';
 $string['JMD'] = 'Jamaikako Dolarra';
 $string['JOD'] = 'Jordaniako Dinarra';
 $string['JPY'] = 'Japongo Yena';
-$string['KES'] = 'KenyakoTxelina';
+$string['KES'] = 'Kenyako Txelina';
 $string['KGS'] = 'Kirgizistan-eko Som';
 $string['KHR'] = 'Camboiako Riela';
 $string['KMF'] = 'Komoreetako Frankoa';
@@ -120,15 +120,15 @@ $string['MNT'] = 'Mongoliako Tugrika';
 $string['MOP'] = 'Makau-ko Pataca';
 $string['MRO'] = 'Mauritaniako Ouguiya';
 $string['MUR'] = 'Maurizioko Errupia';
-$string['MVR'] = 'Maldivetako Errufiyaa';
+$string['MVR'] = 'Errupia maldivarra';
 $string['MWK'] = 'Malawi-ko Kwacha';
-$string['MXN'] = 'Mexikoko Pesoa';
+$string['MXN'] = 'Peso mexikarra';
 $string['MYR'] = 'Malasyako Ringgita';
 $string['MZN'] = 'Mozambikeko metikala';
 $string['NAD'] = 'Namibiako Dolarra';
 $string['NGN'] = 'Nigeriako Naira';
 $string['NIO'] = 'Nikaraguako urrezko Cordoba';
-$string['NOK'] = 'Norbegiako Koroa';
+$string['NOK'] = 'Norvegiar koroa';
 $string['NPR'] = 'Nepal-go Errupia';
 $string['NZD'] = 'Zelanda Berriko Dolarra';
 $string['OMR'] = 'Omango Erriala';
@@ -137,7 +137,7 @@ $string['PEN'] = 'Peruko Nuevo Sol';
 $string['PGK'] = 'Papua Ginea Berriko Kina';
 $string['PHP'] = 'Filipinetako Pesoa';
 $string['PKR'] = 'Pakistango Errupia';
-$string['PLN'] = 'Poloniako Zlotya';
+$string['PLN'] = 'Poloniako Złotya';
 $string['PYG'] = 'Paraguaiko Guarania';
 $string['QAR'] = 'Qatarreko Erriala';
 $string['RON'] = 'Errumaniako Leua';
@@ -158,8 +158,8 @@ $string['SSP'] = 'Hego Sudango Libera';
 $string['STD'] = 'Santo Tome eta Principeko Dobra';
 $string['SVC'] = 'El Salvadorreko Colona';
 $string['SYP'] = 'Siriako Libera';
-$string['SZL'] = 'Suaziko Lilangenia';
-$string['THB'] = 'Tailandiako Bhata';
+$string['SZL'] = 'Eswatiniko Lilangenia';
+$string['THB'] = 'Thailandiar baht';
 $string['TJS'] = 'Tajikistango somonia';
 $string['TMT'] = 'Turkmenistandar manata';
 $string['TND'] = 'Tunisiako Dinarra';
@@ -171,7 +171,7 @@ $string['TZS'] = 'Tanzaniako Txelina';
 $string['UAH'] = 'Ukraniako Hryvnia';
 $string['UGX'] = 'Ugandako Txelina';
 $string['USD'] = 'EEBBetako Dolarra';
-$string['UYU'] = 'Uruguayko Pesoa';
+$string['UYU'] = 'Peso uruguaitarra';
 $string['UZS'] = 'Uzbekistango Suma';
 $string['VEF'] = 'Venezuelako Bolibar indartsua';
 $string['VND'] = 'Vietnameko donga';
@@ -181,7 +181,7 @@ $string['XAF'] = 'CFA libera';
 $string['XCD'] = 'Karibe Ekialdeko Dolarra';
 $string['XOF'] = 'CFA libera';
 $string['XPF'] = 'CFP libera';
-$string['YER'] = 'Yemengo Riyala';
+$string['YER'] = 'Yemengo Riala';
 $string['ZAR'] = 'Hego Afrikako randa';
 $string['ZMK'] = 'Zambiako Kwacha';
 $string['ZWL'] = 'Zimbabweko Dolarra';

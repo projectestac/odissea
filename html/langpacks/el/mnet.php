@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mnet', language 'el', version '3.8'.
  *
- * @package   mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (αυτο-υπογεγραμμένο)';
+$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (υπογεγραμμένο)';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP χωρίς κρυπτογράφηση';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (αυτο-υπογεγραμμένο)';
+$string['RPC_HTTP_VERIFIED'] = 'HTTP (υπογεγραμμένο)';
 $string['aboutyourhost'] = 'Σχετικά με τον εξυπηρετητή σας';
 $string['accesslevel'] = 'Επίπεδο πρόσβασης';
 $string['addhost'] = 'Προσθήκη κεντρικού υπολογιστή';
@@ -45,8 +50,8 @@ $string['couldnotgetcert'] = 'Δεν βρέθηκε πιστοποιητικό �
 $string['couldnotmatchcert'] = 'Αυτό δεν ταιριάζει με το πιστοποιητικό που έχει δημοσιευθεί αυτή τη στιγμή από τον εξυπηρετητή ιστού.';
 $string['courses'] = 'μαθήματα';
 $string['courseson'] = 'μαθήματα σε';
-$string['currentkey'] = 'Τρέχον δημόσιο κλειδί';
 $string['current_transport'] = 'Τρέχουσα μεταφορά';
+$string['currentkey'] = 'Τρέχον δημόσιο κλειδί';
 $string['databaseerror'] = 'Δεν ήταν δυνατή η εγγραφή λεπτομερειών στη βάση δεδομένων.';
 $string['deleteaserver'] = 'Διαγραφή ενός εξυπηρετητή...';
 $string['deletedhostinfo'] = 'Αυτός ο κεντρικός υπολογιστής έχει διαγραφεί. Αν θέλετε να ακυρώσετε την διαγραφή, αλλάξτε την κατάσταση διαγραφής πίσω σε «Όχι».';
@@ -92,9 +97,9 @@ $string['hostnamehelp'] = 'Το πλήρως-εγκεκριμένο όνομα �
 $string['hostnotconfiguredforsso'] = 'Αυτός ο εξυπηρετητής δεν είναι ρυθμισμένος για απομακρυσμένη σύνδεση.';
 $string['hostsettings'] = 'Ρυθμίσεις κεντρικού Η/Υ';
 $string['http_self_signed_help'] = 'Να επιτρέπονται συνδέσεις με χρήση ενός αυτο-υπογεγραμμένου πιστοποιητικού DIY SSL στον απομακρυσμένο κεντρικό Η/Υ.';
+$string['http_verified_help'] = 'Να επιτρέπονται συνδέσεις με χρήση ενός επαληθευμένου πιστοποιητικού SSL σε PHP στον απομακρυσμένο κεντρικό Η/Υ, αλλά με χρήση http (όχι https).';
 $string['https_self_signed_help'] = 'Επέτρεψε τις συνδέσεις με χρήση ενός αυτο-υπογεγραμμένου πιστοποιητικού DIY SSL σε PHP στον απομακρυσμένο κεντρικό υπολογιστή πάνω από http.';
 $string['https_verified_help'] = 'Να επιτρέπονται συνδέσεις με χρήση ενός επαληθευμένου πιστοποιητικού SSL στον απομακρυσμένο κεντρικό Η/Υ.';
-$string['http_verified_help'] = 'Να επιτρέπονται συνδέσεις με χρήση ενός επαληθευμένου πιστοποιητικού SSL σε PHP στον απομακρυσμένο κεντρικό Η/Υ, αλλά με χρήση http (όχι https).';
 $string['id'] = 'Αναγνωριστικό';
 $string['idhelp'] = 'Αυτή η τιμή έχει ανατεθεί αυτόματα και δεν μπορεί να αλλάξει';
 $string['importfields'] = 'Πεδία για εισαγωγή';
@@ -129,6 +134,7 @@ $string['methodsavailableonhostinservice'] = 'Οι διαθέσιμες μέθο
 $string['methodsignature'] = 'Υπογραφή μεθόδου για «{$a}»';
 $string['mnet'] = 'MNet';
 $string['mnet_concatenate_strings'] = 'Συνένωση (μέχρι) 3 συμβολοσειρών και επιστροφή του αποτελέσματος';
+$string['mnet_session_prohibited'] = 'Οι χρήστες από τον κεντρικό εξυπηρετητή σας δεν επιτρέπεται προς το παρόν να περιηγούνται στο {$a}.';
 $string['mnetdisabled'] = 'Το MNet είναι <strong>απενεργοποιημένο</strong>.';
 $string['mnetidprovider'] = 'Πάροχος αναγνωριστικού/ταυτότητας MNet';
 $string['mnetidproviderdesc'] = 'Μπορείτε να χρησιμοποιήσετε αυτήν τη δυνατότητα για να ανακτήσετε έναν σύνδεσμο με τον οποίο μπορείτε να συνδεθείτε, αν μπορείτε να δώσετε τη σωστή διεύθυνση ηλε.ταχυδρομείου που να ταιριάζει με το όνομα χρήστη με το οποίο προσπαθήσατε προηγουμένως να συνδεθείτε.';
@@ -136,7 +142,6 @@ $string['mnetidprovidermsg'] = 'Θα πρέπει να μπορείτε να σ�
 $string['mnetidprovidernotfound'] = 'Λυπούμαστε, αλλά δεν βρέθηκαν περισσότερες πληροφορίες.';
 $string['mnetpeers'] = 'Ομότιμοι';
 $string['mnetservices'] = 'Υπηρεσίες';
-$string['mnet_session_prohibited'] = 'Οι χρήστες από τον κεντρικό εξυπηρετητή σας δεν επιτρέπεται προς το παρόν να περιηγούνται στο {$a}.';
 $string['mnetsettings'] = 'Ρυθμίσεις MNet';
 $string['moodle_home_help'] = 'Το μονοπάτι προς την αρχική σελίδα της εφαρμογής MNet στον απομακρυσμένο κεντρικό Η/Υ, π.χ. /moodle/.';
 $string['name'] = 'Όνομα';
@@ -158,11 +163,11 @@ $string['nosuchpublickey'] = 'Αδυναμία απόκτησης του δημ�
 $string['nosuchservice'] = 'Η υπηρεσία RPC δεν τρέχει σε αυτόν τον κεντρικό υπολογιστή.';
 $string['nosuchtransport'] = 'Δεν υπάρχει μεταφορά με αυτο το αναγνωριστικό.';
 $string['notBASE64'] = 'Η συμβολοσειρά δεν είναι στην μορφή κωδικοποίησης Base64. Δεν μπορεί να είναι ένα έγκυρο κλειδί.';
-$string['notenoughidpinfo'] = 'Ο πάροχος ταυτότητας δεν μας παρέχει αρκετές πληροφορίες για τη δημιουργία ή την ενημέρωση του λογαριασμού σας τοπικά. Λυπούμαστε!';
+$string['notPEM'] = 'Αυτό το κλειδί δεν είναι σε μορφότυπο PEM. Δεν θα δουλέψει.';
 $string['not_in_range'] = 'Η διεύθυνση IP <code>{$a}</code> δεν αναπαριστά έναν έγκυρο έμπιστο κεντρικό υπολογιστή.';
+$string['notenoughidpinfo'] = 'Ο πάροχος ταυτότητας δεν μας παρέχει αρκετές πληροφορίες για τη δημιουργία ή την ενημέρωση του λογαριασμού σας τοπικά. Λυπούμαστε!';
 $string['notinxmlrpcserver'] = 'Προσπαθήστε να αποκτήσετε πρόσβαση στον απομακρυσμένο υπολογιστή-πελάτη MNet, όχι κατά την εκτέλεση του εξυπηρετητή XMLRPC';
 $string['notmoodleapplication'] = 'ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Αυτή δεν είναι μια εφαρμογή Moodle, επομένως ορισμένες από τις μεθόδους ελέγχου ενδέχεται να μην λειτουργούν σωστά.';
-$string['notPEM'] = 'Αυτό το κλειδί δεν είναι σε μορφότυπο PEM. Δεν θα δουλέψει.';
 $string['notpermittedtojump'] = 'Δεν έχετε δικαίωμα να εκκινήσετε μια απομακρυσμένη σύνοδο από αυτόν τον εξυπηρετητή Moodle.';
 $string['notpermittedtojumpas'] = 'Δεν μπορείτε να ξεκινήσετε μια απομακρυσμένη περίοδο σύνδεσης ενώ είστε συνδεδεμένοι ως άλλος χρήστης.';
 $string['notpermittedtoland'] = 'Δεν έχετε δικαίωμα να εκκινήσετε μια απομακρυσμένη σύνοδο.';
@@ -202,11 +207,6 @@ $string['restore'] = 'Επαναφορά';
 $string['returnvalue'] = 'Τιμή επιστροφής';
 $string['reviewhostdetails'] = 'Επισκόπηση λεπτομερειών κεντρικού Η/Υ';
 $string['reviewhostservices'] = 'Επισκόπηση υπηρεσιών κεντρικού Η/Υ';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP χωρίς κρυπτογράφηση';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (αυτο-υπογεγραμμένο)';
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (αυτο-υπογεγραμμένο)';
-$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (υπογεγραμμένο)';
-$string['RPC_HTTP_VERIFIED'] = 'HTTP (υπογεγραμμένο)';
 $string['selectaccesslevel'] = 'Παρακαλούμε επιλέξτε ένα επίπεδο πρόσβασης από τη λίστα.';
 $string['selectahost'] = 'Παρακαλούμε επιλέξτε έναν απομακρυσμένο κεντρικό Η/Υ.';
 $string['service'] = 'Όνομα υπηρεσίας';
@@ -238,7 +238,7 @@ $string['theypublish'] = 'Δημοσιεύουν';
 $string['theysubscribe'] = 'Εγγράφονται';
 $string['transport_help'] = 'Αυτές οι επιλογές είναι αμοιβαίες, οπότε μπορείτε να υποχρεώσετε έναν απομακρυσμένο κεντρικό υπολογιστή να χρησιμοποιεί ένα υπογεγραμμένο πιστοποιητικό SSL μόνο εάν o εξυπηρετητής σας έχει επίσης ένα υπογεγραμμένο πιστοποιητικό SSL (Secure Sockets Layer: πρωτόκολλο ασφαλούς σύνδεσης).';
 $string['trustedhosts'] = 'Κεντρικοί Η/Υ XML-RPC';
-$string['trustedhostsexplain'] = '<p>Ο μηχανισμός των έμπιστων κεντρικών υπολογιστών επιτρέπει σε συγκεκριμένους υπολογιστές να εκτελούν κλήσεις μέσω XML-RPC σε οποιοδήποτε τμήμα του Moodle API. Αυτό είναι διαθέσιμο σε σενάρια για να ελέγχουν την συμπεριφορά του Moodle και μπορεί να είναι μια πολύ επικίνδυνη επιλογή αν το ενεργοποιήσετε. Εάν έχετε αμφιβολίες, αφήστε το απενεργοποιημένο.</p>
+$string['trustedhostsexplain'] = '<p>Ο μηχανισμός των έμπιστων κεντρικών υπολογιστών επιτρέπει σε συγκεκριμένους υπολογιστές να εκτελούν κλήσεις μέσω XML-RPC σε οποιοδήποτε τμήμα του Moodle API. Αυτό είναι διαθέσιμο σε σενάρια για να ελέγχουν την συμπεριφορά του Moodle και μπορεί να είναι μια πολύ επικίνδυνη επιλογη αν το ενεργοποιήσετε. Εάν έχετε αμφιβολίες, αφήστε το απενεργοποιημένο.</p>
 
 <p>Αυτό <strong>δεν</strong> είναι απαραίτητο για τη Δικτύωση Moodle.</p>
 
@@ -258,7 +258,7 @@ $string['trustedhostsexplain'] = '<p>Ο μηχανισμός των έμπιστ
 
 Οποιοσδήποτε κεντρικός υπολογιστής:<br /> 192.168.0.0/0<br />
 
-Προφανώς το τελευταίο παράδειγμα είναι μια <strong>μη</strong> συνιστώμενη ρύθμιση.';
+Προφανώς το τελευταίο παράδειγμα <strong>δεν</strong> είναι μια προτεινόμενη ρύθμιση.';
 $string['turnitoff'] = 'Απενεργοποίηση';
 $string['turniton'] = 'Ενεργοποίηση';
 $string['type'] = 'Τύπος';

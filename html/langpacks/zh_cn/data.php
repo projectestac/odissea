@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'zh_cn', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -127,8 +127,8 @@ $string['editorenable'] = '可编辑';
 $string['emptyadd'] = '模板为空，按缺省模板生成...';
 $string['emptyaddform'] = '您没有填写任何字段!';
 $string['entries'] = '条目';
-$string['entrieslefttoadd'] = '要完成此活动，必须添加{$a->entriesleft}以上条目';
-$string['entrieslefttoaddtoview'] = '您必须添加{$a->entrieslefttoview}以上条目才能查看其他参与者的条目。';
+$string['entrieslefttoadd'] = '您必须添加{$a-> entriesleft}个以上条目才能完成此活动';
+$string['entrieslefttoaddtoview'] = '您必须添加{$a-> entrieslefttoview}个以上条目，才能查看其他参与人的条目。';
 $string['entry'] = '条目';
 $string['entrysaved'] = '您的条目已保存';
 $string['errormustbeteacher'] = '只有教师能使用此页';

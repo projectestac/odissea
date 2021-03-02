@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploadcourse', language 'sv', version '3.8'.
  *
- * @package   tool_uploadcourse
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploadcourse
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,6 +31,7 @@ $string['allowrenames'] = 'Tillåt namnbyten';
 $string['allowrenames_help'] = 'Anger huruvida det är tillåtet att byta namn på ett fält, eller ej.';
 $string['allowresets'] = 'Tillåt återställningar';
 $string['allowresets_help'] = 'Anger huruvida det är tillåtet att återställa ett fält, eller ej.';
+$string['cachedef_helper'] = 'Stödcachning';
 $string['cannotdeletecoursenotexist'] = 'Kan inte ta bort en kurs som inte finns';
 $string['cannotforcelang'] = 'Ingen behörighet att tvinga språk för denna kurs';
 $string['cannotgenerateshortnameupdatemode'] = 'Kan inte generera ett kortnamn när uppdateringar är tillåtna';
@@ -118,8 +119,8 @@ $string['templatefile_help'] = 'Välj en fil att använda som mall för alla kur
 $string['unknownimportmode'] = 'Okänt importläge';
 $string['updatemissing'] = 'Fyll i de saknade värdena från CSV-data samt standardvärden';
 $string['updatemode'] = 'Läge för uppdatering';
-$string['updatemodedoessettonothing'] = 'Uppdateringsläget tillåter inga uppdateringar';
 $string['updatemode_help'] = 'Om du tillåter kursuppdateringar behöver du även specificera för uppdateringsverktyget vad kurserna ska uppdateras med.';
+$string['updatemodedoessettonothing'] = 'Uppdateringsläget tillåter inga uppdateringar';
 $string['updateonly'] = 'Uppdatera enbart befintliga kurser';
 $string['updatewithdataonly'] = 'Uppdatera enbart med data från CSV-filen';
 $string['updatewithdataordefaults'] = 'Uppdatera med data från CSV-filen samt med standardvärden för kursen.';

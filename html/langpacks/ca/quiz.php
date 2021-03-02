@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz', language 'ca', version '3.8'.
  *
- * @package   quiz
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -108,7 +108,7 @@ $string['attemptsonly'] = 'Mostra només els estudiants amb intents';
 $string['attemptstate'] = 'Estat';
 $string['attemptstillinprogress'] = 'Intent encara en curs';
 $string['attemptsunlimited'] = 'Intents il·limitats';
-$string['autosaveperiod'] = 'Període d\'autodesat';
+$string['autosaveperiod'] = 'Període d\'autodesament';
 $string['autosaveperiod_desc'] = 'Les respostes dels estudiants es poden desar automàticament cada pocs minuts durant els intents dels qüestionaris. Això implica un compromís: Desar les respostes augmenta la càrrega del servidor, però redueix la possibilitat que els estudiants perdin la feina.';
 $string['back'] = 'Torna a la previsualització de la pregunta';
 $string['backtocourse'] = 'Torna al curs';
@@ -322,19 +322,19 @@ $string['errorunexpectedevent'] = 'Codi d\'esdeveniment inesperat {$a->event} tr
 $string['essay'] = 'Resposta oberta';
 $string['essayquestions'] = 'Preguntes';
 $string['eventattemptdeleted'] = 'S\'ha suprimit l\'intent del qüestionari';
-$string['eventattemptpreviewstarted'] = 'Ha començat la previsualització de l\'intent del qüestionari';
+$string['eventattemptpreviewstarted'] = 'S\'ha iniciat la previsualització de l\'intent del qüestionari';
 $string['eventattemptreviewed'] = 'S\'ha revisat l\'intent del qüestionari';
-$string['eventattemptsummaryviewed'] = 'S\'ha visualitzat el resum de l\'intent del qüestionari';
-$string['eventattemptviewed'] = 'S\'ha visualitzat l\'intent del qüestionari';
+$string['eventattemptsummaryviewed'] = 'S\'ha mostrat el resum de l\'intent del qüestionari';
+$string['eventattemptviewed'] = 'S\'han mostrat l\'intent del qüestionari';
 $string['eventeditpageviewed'] = 'S\'ha visualitzat la pàgina d\'edició del qüestionari';
 $string['eventoverridecreated'] = 'S\'ha creat l\'excepció al qüestionari';
 $string['eventoverridedeleted'] = 'S\'ha suprimit l\'excepció del qüestionari';
 $string['eventoverrideupdated'] = 'S\'ha actualitzat l\'excepció del qüestionari';
-$string['eventquestionmanuallygraded'] = 'S\'ha qualificat manualment la pregunta';
+$string['eventquestionmanuallygraded'] = 'S\'ha qualificat la pregunta de forma manual';
 $string['eventquizattemptabandoned'] = 'S\'ha abandonat l\'intent del qüestionari';
 $string['eventquizattemptstarted'] = 'S\'ha començat l\'intent del qüestionari';
 $string['eventquizattemptsubmitted'] = 'S\'ha tramès l\'intent del qüestionari';
-$string['eventquizattempttimelimitexceeded'] = 'S\'ha excedit el límit de temps de l\'intent del qüestionari';
+$string['eventquizattempttimelimitexceeded'] = 'S\'ha excedit el temps límit de l\'intent del qüestionari';
 $string['eventreportviewed'] = 'S\'ha visualitzat l\'informe del qüestionari';
 $string['everynquestions'] = 'Cada {$a} preguntes';
 $string['everyquestion'] = 'Cada pregunta';
@@ -374,8 +374,8 @@ $string['functiondisabledbysecuremode'] = 'Aquesta funcionalitat es troba inacti
 $string['generalfeedback'] = 'Retroacció general';
 $string['generalfeedback_help'] = 'La retroacció general és un text que es mostra després que s\'hagi intentat una resposta. A diferència de la retroacció específica, que depèn de la resposta proporcionada, la retroacció general sempre és la mateixa.';
 $string['graceperiod'] = 'Període de gràcia per a la tramesa';
-$string['graceperiod_desc'] = 'Si està definit què fer quan el temps expira com a \'Permet un període de gràcia per a l\'enviament, però no canvies les respostes\', la quantitat predeterminada de temps extra que es permet, s\'estableix en segons.';
-$string['graceperiod_help'] = 'Si està definit què fer quan el temps expira com a \'Permet un període de gràcia per a l\'enviament, però no canvies les respostes\', s\'estableix la quantitat predeterminada de temps extra que es permet.';
+$string['graceperiod_desc'] = 'Si està definit què fer quan el temps expira com a «Permet un període de gràcia per a la tramesa, però no canviïs les respostes», la quantitat predeterminada de temps extra que es permet s\'estableix en segons.';
+$string['graceperiod_help'] = 'Si està definit què fer quan el temps expira com a «Permet un període de gràcia per a la tramesa, però no canviïs les respostes», s\'estableix la quantitat predeterminada de temps extra que es permet.';
 $string['graceperiodmin'] = 'Últim període de gràcia per a la tramesa';
 $string['graceperiodmin_desc'] = 'Hi ha un problema potencial just al final del qüestionari.
 D\'una banda, volem permetre que els estudiants continuïn treballant fins a l\'últim segon, amb l\'ajuda del cronòmetre, que, de manera automàtica, tramet el qüestionari quan el temps s\'acaba.
@@ -414,21 +414,21 @@ $string['hidereordertool'] = 'Amaga l\'eina de reordenació';
 $string['history'] = 'Historial de respostes:';
 $string['howquestionsbehave_desc'] = 'Paràmetres per defecte del comportament de les preguntes dins un qüestionari.';
 $string['imagedisplay'] = 'Imatge que es visualitzarà';
-$string['importcategory'] = 'importa una categoria';
-$string['importerror'] = 'S\'ha produït un error durant el procés d\'importació';
-$string['importfilearea'] = 'Importació d\'un fitxer que ja és a l\'àrea de fitxers del curs...';
-$string['importfileupload'] = 'Importació d\'un fitxer del vostre ordinador...';
-$string['importfromthisfile'] = 'Importa d\'aquest fitxer';
 $string['import_help'] = 'Aquesta funció us permet importar preguntes de fitxers externs.
 
 Si el vostre fitxer té caràcters que no siguin ASCII, cal que utilitzeu la codificació UTF-8. Aneu amb compte amb fitxers generats amb aplicacions de Microsoft Word, perquè utilitzen una codificació especial que no es pot controlar correctament.
 
 Els formats d\'importació i exportació són un recurs integrat. Es poden obtenir altres formats entre els complements de la base de dades de Moodle.';
+$string['importcategory'] = 'importa una categoria';
+$string['importerror'] = 'S\'ha produït un error durant el procés d\'importació';
+$string['importfilearea'] = 'Importació d\'un fitxer que ja és a l\'àrea de fitxers del curs...';
+$string['importfileupload'] = 'Importació d\'un fitxer del vostre ordinador...';
+$string['importfromthisfile'] = 'Importa d\'aquest fitxer';
 $string['importingquestions'] = 'S\'estan important {$a} preguntes del fitxer';
 $string['importmax10error'] = 'Hi ha un error en aquesta pregunta. No podeu tenir més de 10 respostes.';
 $string['importmaxerror'] = 'Hi ha un error en aquesta pregunta. Teniu massa respostes.';
 $string['importquestions'] = 'Importa preguntes des d\'un fitxer';
-$string['inactiveoverridehelp'] = '* L\'estudiant no pertany al grup o no té el rol adequat per respondre el qüestionari.';
+$string['inactiveoverridehelp'] = '* L\'estudiant no pertany al grup, té una restricció d\'accés o no té el rol adequat per respondre el qüestionari.';
 $string['incorrect'] = 'Incorrecta';
 $string['indivresp'] = 'Respostes dels individus per a cada element';
 $string['info'] = 'Informació';
@@ -475,7 +475,7 @@ $string['min'] = 'Mín.';
 $string['minutes'] = 'minuts';
 $string['missingcorrectanswer'] = 'Cal especificar la resposta correcta';
 $string['missingitemtypename'] = 'Falta el nom';
-$string['missingquestion'] = 'Aquesta pregunta sembla no existir ja';
+$string['missingquestion'] = 'Sembla que aquesta pregunta ja no existeix';
 $string['modulename'] = 'Qüestionari';
 $string['modulename_help'] = 'El mòdul de qüestionaris permet al professor crear qüestionaris amb preguntes de diversos tipus, com ara d\'opció múltiple, vertader/fals, aparellament, resposta breu i numèriques.
 
@@ -494,9 +494,9 @@ Els qüestionaris es poden utilitzar:
 * Per a l\'autoavaluació.';
 $string['modulenameplural'] = 'Qüestionaris';
 $string['moveselectedonpage'] = 'Mou les preguntes seleccionades a la pàgina: {$a}';
-$string['multichoice'] = 'Opcions múltiples';
+$string['multichoice'] = 'Opció múltiple';
 $string['multipleanswers'] = 'Trieu almenys una resposta';
-$string['mustbesubmittedby'] = 'Aquest intent s\'ha d\'enviar abans de {$a}.';
+$string['mustbesubmittedby'] = 'Aquest intent s\'ha de trametre abans de {$a}.';
 $string['name'] = 'Títol';
 $string['navigatenext'] = 'Pàgina següent';
 $string['navigateprevious'] = 'Pàgina anterior';
@@ -509,10 +509,10 @@ $string['neverallononepage'] = 'Mai, totes les preguntes en una pàgina';
 $string['newattemptfail'] = 'Error: no s\'ha pogut iniciar un nou intent del qüestionari';
 $string['newcategory'] = 'Categoria nova';
 $string['newpage'] = 'Pàgina nova';
+$string['newpage_help'] = 'En qüestionaris molt llargs té sentit partir el qüestionari en diverses pàgines limitant el nombre de preguntes per pàgina. Quan afegiu preguntes al qüestionari, els salts de pàgina s\'introduiran automàticament d\'acord amb els paràmetres que hàgiu triat aquí. Tanmateix, després podreu canviar de lloc aquests salts de pàgina a mà en la pàgina d\'edició.';
 $string['newpageevery'] = 'Afegeix una pàgina nova automàticament';
-$string['newpage_help'] = 'En qüestionaris molt llargs té sentit limitar el nombre de preguntes per pàgina i partir el qüestionari en diverses pàgines. Quan afegiu preguntes al qüestionari els salts de pàgina s\'introduiran automàticament d\'acord amb els paràmetres que hàgeu triat aquí. Tanmateix, després podreu canviar de lloc aquests salts de pàgina a mà en la pàgina d\'edició.';
 $string['noanswers'] = 'No s\'ha seleccionat cap resposta';
-$string['noattempts'] = 'Aquest qüestionari no ha estat contestat';
+$string['noattempts'] = 'No s\'han fet intents en aquest qüestionari';
 $string['noattemptsfound'] = 'No s\'han trobat intents';
 $string['noattemptstoshow'] = 'No hi ha intents per mostrar';
 $string['nocategory'] = 'No heu especificat una categoria o la categoria és incorrecta';
@@ -528,7 +528,7 @@ $string['none'] = 'Cap';
 $string['noopen'] = 'No hi ha una data d\'obertura';
 $string['nooverridedata'] = 'Heu de modificar com a mínim un dels paràmetres del qüestionari.';
 $string['nopossibledatasets'] = 'No hi ha conjunts de dades possibles';
-$string['noquestionintext'] = 'El text de la pregunta no conté cap pregunta a dins.';
+$string['noquestionintext'] = 'El text de la pregunta no conté cap pregunta incrustada.';
 $string['noquestions'] = 'Encara no s\'han afegit preguntes';
 $string['noquestionsfound'] = 'No s\'han trobat preguntes';
 $string['noquestionsinquiz'] = 'No hi ha preguntes en aquest qüestionari';
@@ -540,7 +540,7 @@ $string['noreviewattempt'] = 'No teniu permís per revisar aquest intent.';
 $string['noreviewshort'] = 'No permès';
 $string['noreviewuntil'] = 'No teniu permís per revisar aquest qüestionari fins el {$a}';
 $string['noreviewuntilshort'] = '{$a} disponible';
-$string['noscript'] = 'El javascript ha d\'estar habilitat per continuar';
+$string['noscript'] = 'El JavaScript ha d\'estar habilitat per a continuar';
 $string['notavailabletostudents'] = 'Nota: aquest qüestionari no està disponible actualment per als vostres estudiants';
 $string['notenoughrandomquestions'] = 'No hi ha prou preguntes a la categoria {$a->category} per crear la pregunta {$a->name} ({$a->id}).';
 $string['notenoughsubquestions'] = 'No heu definit prou subpreguntes!<br />
@@ -556,18 +556,18 @@ $string['numberabbr'] = 'n.';
 $string['numerical'] = 'Numèrica';
 $string['numquestionsx'] = 'Preguntes: {$a}';
 $string['oneminute'] = '1 minut';
-$string['onlyteachersexport'] = 'Només el professorat pot exportar preguntes';
-$string['onlyteachersimport'] = 'Només el professorat amb permís d\'edició pot importar preguntes';
+$string['onlyteachersexport'] = 'Només els professors poden exportar preguntes';
+$string['onlyteachersimport'] = 'Només els professors amb permís d\'edició poden importar preguntes';
 $string['onthispage'] = 'Aquesta pàgina';
 $string['open'] = 'Sense resposta';
 $string['openclosedatesupdated'] = 'S\'han actualitzat les dates d\'inici i tancament del qüestionari';
 $string['optional'] = 'opcional';
 $string['orderandpaging'] = 'Ordre i paginació';
-$string['orderandpaging_help'] = 'Els números 10, 20, 30, ... a l\'altre costat de cada pregunta indiquen l\'ordre de les preguntes. Els números augmenten de 10 en 10 per permetre espai per a preguntes addicionals que es puguin inserir. Per reordenar les preguntes, canvieu els números i feu clic al botó "Reordena les preguntes".
+$string['orderandpaging_help'] = 'Els números 10, 20, 30,... a l\'altre costat de cada pregunta indiquen l\'ordre de les preguntes. Els números augmenten de 10 en 10 per permetre un espai per a inserir preguntes addicionals. Per a reordenar les preguntes, canvieu els números i feu clic al botó «Reordena les preguntes».
 
-Per afegir salts de pàgina després d\'una pregunta determinada, marqueu els quadres de selecció després de les preguntes i feu clic al botó "Afegeix pàgines després de les preguntes seleccionades".
+Per a afegir salts de pàgina després d\'una pregunta determinada, marqueu els quadres de selecció després de les preguntes i feu clic al botó «Afegeix més pàgines després de les preguntes seleccionades».
 
-Per distribuir les preguntes en un nombre de pàgines feu clic al botó "Repagina" i seleccioneu el nombre de preguntes per pàgina.';
+Per a distribuir les preguntes en un nombre de pàgines feu clic al botó «Repagina» i seleccioneu el nombre de preguntes per pàgina que vulgueu.';
 $string['orderingquiz'] = 'Ordre i paginació';
 $string['orderingquizx'] = 'Ordre i paginació: {$a}';
 $string['outcomesadvanced'] = 'Les competències són paràmetres avançats';
@@ -578,14 +578,14 @@ $string['overallfeedback'] = 'Retroacció global';
 $string['overallfeedback_help'] = 'Retroacció global és un text que es mostra després d\'haver acabat l\'intent d\'un qüestionari. Si s\'especifiquen límits de puntuació addicional (com a percentatge o com a número), el text que es mostri dependrà de la puntuació obtinguda.';
 $string['overdue'] = 'Venciment';
 $string['overduehandling'] = 'Quan el temps expiri';
+$string['overduehandling_desc'] = 'Què hauria de passar per defecte si un estudiant no envia el qüestionari abans que expiri el temps.';
+$string['overduehandling_help'] = 'Aquest paràmetre controla què ocorre si un estudiant no envia el seu intent del qüestionari abans que el temps s\'acabi. Si l\'estudiant treballa de manera activa en el qüestionari en aquell moment, el cronòmetre de compte enrere tramet sempre l\'intent de manera automàtica, però si l\'estudiant ha tancat la sessió, aleshores aquest paràmetre controla què passa.';
 $string['overduehandlingautoabandon'] = 'Els intents s\'han d\'enviar abans que el temps expiri o no comptaran';
 $string['overduehandlingautosubmit'] = 'Els intents oberts s\'envien automàticament';
-$string['overduehandling_desc'] = 'Què hauria de passar per defecte si un estudiant no envia el qüestionari abans que expiri el temps.';
 $string['overduehandlinggraceperiod'] = 'Hi ha un període de gràcia durant el qual els intents oberts es poden enviar, però no es poden contestar més preguntes';
-$string['overduehandling_help'] = 'Aquest paràmetre controla què ocorre si un estudiant no envia el seu intent del qüestionari abans que el temps s\'acabi. Si l\'estudiant treballa de manera activa en el qüestionari en aquell moment, el cronòmetre de compte enrere tramet sempre l\'intent de manera automàtica, però si l\'estudiant ha tancat la sessió, aleshores aquest paràmetre controla què passa.';
 $string['overduemustbesubmittedby'] = 'Aquest intent ha arribat al termini de venciment. Ja s\'hauria d\'haver tramès. Si voleu que aquest qüestionari us sigui qualificat, l\'heu de trametre abans de {$a}. Si no el trameteu llavors, no es comptabilitzarà cap qualificació d\'aquest intent.';
 $string['override'] = 'Excepció';
-$string['overridedeletegroupsure'] = 'Segur que voleu sborrar l\'excepció pel grup {$a}?';
+$string['overridedeletegroupsure'] = 'Segur que voleu esborrar l\'excepció per al grup {$a}?';
 $string['overridedeleteusersure'] = 'Segur que voleu esborrar l\'excepció per l\'usuari {$a}?';
 $string['overridegroup'] = 'Estableix una excepció per al grup';
 $string['overridegroupeventname'] = '{$a->quiz} - {$a->group}';
@@ -595,8 +595,8 @@ $string['overrideusereventname'] = '{$a->quiz} - Excepció';
 $string['page-mod-quiz-attempt'] = 'Pàgina de l\'intent del qüestionari';
 $string['page-mod-quiz-edit'] = 'Edita la pàgina del qüestionari';
 $string['page-mod-quiz-report'] = 'Qualsevol pàgina de l\'informe del qüestionari';
-$string['page-mod-quiz-review'] = 'Pàgina de revisió de l\'intent del qüestionari';
-$string['page-mod-quiz-summary'] = 'Pàgina de resum de l\'intent del qüestionari';
+$string['page-mod-quiz-review'] = 'Torna a mostrar la pàgina d\'intents del qüestionari';
+$string['page-mod-quiz-summary'] = 'Pàgina de resums d\'intents del qüestionari';
 $string['page-mod-quiz-view'] = 'Pàgina d\'informació del qüestionari';
 $string['page-mod-quiz-x'] = 'Qualsevol pàgina del mòdul de qüestionari';
 $string['pageshort'] = 'P';
@@ -607,14 +607,14 @@ $string['parsingquestions'] = 'S\'estan analitzant les preguntes del fitxer d\'i
 $string['partiallycorrect'] = 'Parcialment correcte';
 $string['penalty'] = 'Penalització';
 $string['penaltyscheme'] = 'Aplica penalitzacions';
-$string['penaltyscheme_help'] = '<p>Si un qüestionari funciona en mode adaptatiu, un estudiant pot provar de nou després d\'una resposta incorrecta. En aquest cas podeu voler imposar una penalització per cada resposta incorrecta perquè sigui restada de la puntuació final de la pregunta. La quantitat de la penalització es tria individualment per a cada pregunta quan s\'actualitza o edita la pregunta.</p>
+$string['penaltyscheme_help'] = '<p>Si s\'habilita, es resta una penalització de la puntuació final per cada pregunta amb una resposta incorrecta. La quantitat de la penalització s\'especifica en els paràmetres de la pregunta.</p>
 
-<p>Aquest paràmetre no té efecte si el qüestionari no està funcionant en mode adaptatiu.</p>';
+<p>Aquest paràmetre només s\'aplica si s\'habilita el mode adaptatiu.</p>';
 $string['percentcorrect'] = 'Percentatge de correctes';
 $string['pleaseclose'] = 'La vostra petició ha estat processada. Podeu tancar aquesta finestra.';
 $string['pluginadministration'] = 'Administració del qüestionari';
 $string['pluginname'] = 'Qüestionari';
-$string['popup'] = 'Mostra el qüestionari en una finestra "segura"';
+$string['popup'] = 'Mostra el qüestionari en una finestra «segura»';
 $string['popupblockerwarning'] = 'Aquesta secció de la prova es fa en mode segur. Això vol dir que cal contestar el qüestionari en una finestra segura. Desactiveu el blocatge de finestres emergents.';
 $string['popupnotice'] = 'Els estudiants veuran aquest qüestionari en una finestra segura';
 $string['preprocesserror'] = 'S\'ha produït un error durant el preprocessament';
@@ -634,12 +634,12 @@ $string['questionbank'] = 'Afegeix una pregunta del banc de preguntes';
 $string['questionbankmanagement'] = 'Administració del banc de preguntes';
 $string['questionbehaviour'] = 'Comportament de la pregunta';
 $string['questioncats'] = 'Categories de preguntes';
-$string['questiondeleted'] = 'Aquesta pregunta ha estat suprimida. Consulteu el professorat del curs.';
+$string['questiondeleted'] = 'Aquesta pregunta ha estat suprimida. Poseu-vos en contacte amb el professor del curs.';
 $string['questiondependencyadd'] = 'No hi ha restriccions sobre quan es pot intentar la pregunta {$a->thisq} • Cliqueu per canviar';
 $string['questiondependencyfree'] = 'No hi ha restriccions en aquesta pregunta';
 $string['questiondependencyremove'] = 'La pregunta {$a->thisq} no es pot intentar fins que hàgiu completat la pregunta prèvia {$a->previousq} • Cliqueu per canviar';
 $string['questiondependsonprevious'] = 'Aquesta pregunta  no es pot intentar fins que hàgiu completat la pregunta prèvia.';
-$string['questioninuse'] = 'La pregunta \'{$a->questionname}\' s\'està utilitzant actualment en:<br />{$a->quiznames}<br />Només se suprimirà la pregunta en la llista de categories, no en els qüestionaris que la utilitzen.';
+$string['questioninuse'] = 'La pregunta «{$a->questionname}» s\'està utilitzant actualment a:<br />{$a->quiznames}<br />Només se suprimirà la pregunta de la llista de categories, no dels qüestionaris que la utilitzen.';
 $string['questionmissing'] = 'La pregunta d\'aquesta sessió ha desaparegut';
 $string['questionname'] = 'Títol de la pregunta';
 $string['questionnonav'] = '<span class="accesshide">Pregunta </span>{$a->number}<span class="accesshide"> {$a->attributes}</span>';
@@ -652,7 +652,7 @@ $string['questionsinclhidden'] = 'Preguntes (incloses les ocultes)';
 $string['questionsinthisquiz'] = 'Preguntes d\'aquest qüestionari';
 $string['questionsmatchingfilter'] = 'Preguntes que coincideixen amb aquest filtre: {$a}';
 $string['questionsperpage'] = 'Preguntes per pàgina';
-$string['questionsperpageselected'] = 'El nombre de preguntes per pàgina s\'ha fixat. Pewr tant, els controls de distribució per pàgines s\'han desactivat. Podeu canviar-ho a {$a}.';
+$string['questionsperpageselected'] = 'El nombre de preguntes per pàgina s\'ha fixat. Per tant, els controls de distribució per pàgines s\'han desactivat. Podeu canviar-ho a {$a}.';
 $string['questionsperpagex'] = 'Preguntes per pàgina: {$a}';
 $string['questiontext'] = 'Text de la pregunta';
 $string['questiontextisempty'] = '[Text de la pregunta en blanc]';
@@ -660,43 +660,43 @@ $string['questiontype'] = 'Tipus de pregunta {$a}';
 $string['questiontypesetupoptions'] = 'Opcions de configuració dels tipus de pregunta:';
 $string['quiz:addinstance'] = 'Afegeix un qüestionari nou';
 $string['quiz:attempt'] = 'Contestar qüestionaris';
-$string['quizavailable'] = 'El qüestionari està disponible fins: {$a}';
-$string['quizclose'] = 'Tanca el qüestionari';
-$string['quizclosed'] = 'Aquest qüestionari es va tancar el {$a}';
-$string['quizcloses'] = 'El qüestionari es tancarà el';
-$string['quizcloseson'] = 'Aquest qüestionari es tancarà el {$a}';
-$string['quiz:deleteattempts'] = 'Suprimeix intents del qüestionari';
-$string['quiz:emailconfirmsubmission'] = 'Rep un missatge de confirmació quan hi hagi enviaments';
-$string['quiz:emailnotifysubmission'] = 'Rep un missatge de notificació quan s\'hagi enviat un intent';
-$string['quiz:emailwarnoverdue'] = 'Rep un missatge de notificació quan un intent arribe al termini de venciment i necessiti enviar-se.';
-$string['quizeventcloses'] = '{$a} es tanca el';
-$string['quizeventopens'] = '{$a} s\'obre el';
+$string['quiz:deleteattempts'] = 'Suprimeix els intents del qüestionari';
+$string['quiz:emailconfirmsubmission'] = 'Rep un missatge de confirmació quan es trameti';
+$string['quiz:emailnotifysubmission'] = 'Rep un missatge de notificació quan s\'hagi tramès un intent';
+$string['quiz:emailwarnoverdue'] = 'Rep un missatge de notificació quan un intent arribi al termini de venciment i calgui trametre\'l.';
 $string['quiz:grade'] = 'Qualifica els qüestionaris manualment';
 $string['quiz:ignoretimelimits'] = 'Ignora el límit de temps dels qüestionaris';
-$string['quizisclosed'] = 'El qüestionari està tancat';
-$string['quizisclosedwillopen'] = 'El qüestionari es va tancar (s\'obre el {$a})';
-$string['quizisopen'] = 'El qüestionari està obert';
-$string['quizisopenwillclose'] = 'El qüestionari està obert (es tanca el {$a})';
-$string['quiz:manage'] = 'Gestionar qüestionaris';
+$string['quiz:manage'] = 'Gestiona els qüestionaris';
 $string['quiz:manageoverrides'] = 'Gestiona les excepcions del qüestionari';
+$string['quiz:preview'] = 'Previsualitza els qüestionaris';
+$string['quiz:regrade'] = 'Torna a qualificar els intents del qüestionari';
+$string['quiz:reviewmyattempts'] = 'Revisa els intents propis';
+$string['quiz:view'] = 'Visualitza la informació del qüestionari';
+$string['quiz:viewreports'] = 'Visualitza els informes del qüestionari';
+$string['quizavailable'] = 'El qüestionari està disponible fins: {$a}';
+$string['quizclose'] = 'Tanca el qüestionari';
+$string['quizclosed'] = 'Aquest qüestionari es va tancar el dia {$a}';
+$string['quizcloses'] = 'El qüestionari es tancarà el';
+$string['quizcloseson'] = 'Aquest qüestionari es tancarà el dia {$a}';
+$string['quizeventcloses'] = '{$a} es tanca el';
+$string['quizeventopens'] = '{$a} s\'obre el';
+$string['quizisclosed'] = 'El qüestionari està tancat';
+$string['quizisclosedwillopen'] = 'El qüestionari es va tancar (s\'obre el dia {$a})';
+$string['quizisopen'] = 'El qüestionari està obert';
+$string['quizisopenwillclose'] = 'El qüestionari està obert (es tanca el dia {$a})';
 $string['quiznavigation'] = 'Navegació pel qüestionari';
 $string['quizopen'] = 'Obre el qüestionari';
 $string['quizopenclose'] = 'Dates d\'obertura i tancament';
 $string['quizopenclose_help'] = 'Els estudiants només poden iniciar els seus intents després de l\'obertura i els han d\'acabar abans del tancament.';
 $string['quizopened'] = 'El qüestionari està obert.';
-$string['quizopenedon'] = 'Aquest qüestionari està disponible des de: {$a}';
+$string['quizopenedon'] = 'Aquest qüestionari està disponible des del dia: {$a}';
 $string['quizopens'] = 'El qüestionari s\'obrirà el';
-$string['quizopenwillclose'] = 'Aquest qüestionari està obert, es tancarà el {$a}';
+$string['quizopenwillclose'] = 'Aquest qüestionari està obert, es tancarà el dia {$a}';
 $string['quizordernotrandom'] = 'Ordre sense alterar';
 $string['quizorderrandom'] = '* Ordre alterat';
-$string['quiz:preview'] = 'Previsualitza qüestionaris';
-$string['quiz:regrade'] = 'Torna a qualificar els intents';
-$string['quiz:reviewmyattempts'] = 'Revisa els intents propis';
 $string['quizsettings'] = 'Paràmetres del qüestionari';
 $string['quiztimer'] = 'Temporitzador del qüestionari';
-$string['quiz:view'] = 'Veure informació del qüestionari';
-$string['quiz:viewreports'] = 'Veure informes del qüestionari';
-$string['quizwillopen'] = 'Aquest qüestionari s\'obrirà el {$a}';
+$string['quizwillopen'] = 'Aquest qüestionari s\'obrirà el dia {$a}';
 $string['random'] = 'Pregunta aleatòria';
 $string['randomcreate'] = 'Crea preguntes aleatòries';
 $string['randomfromcategory'] = 'Pregunta aleatòria de la categoria:';
@@ -706,10 +706,10 @@ $string['randomnumber'] = 'Nombre de preguntes aleatòries';
 $string['randomquestiontags'] = 'Etiquetes';
 $string['randomquestionusinganewcategory'] = 'Pregunta aleatòria fent servir una categoria nova.';
 $string['randomwithsubcat'] = 'Pregunta d\'aquesta categoria i de les seves subcategories.';
-$string['readytosend'] = 'Esteu a punt d\'enviar el qüestionari complet perquè sigui qualificat. Esteu segur que voleu continuar?';
+$string['readytosend'] = 'Ara enviareu el qüestionari complet perquè sigui qualificat. Esteu segur que voleu continuar?';
 $string['reattemptquiz'] = 'Reintenta el qüestionari';
 $string['recentlyaddedquestion'] = 'Aquesta pregunta ha estat afegida recentment';
-$string['recurse'] = 'Visualitza també les preguntes de les subcategories';
+$string['recurse'] = 'Inclou també les preguntes de les subcategories';
 $string['redoesofthisquestion'] = 'Altres preguntes intentades aquí:  {$a}';
 $string['redoquestion'] = 'Torna a respondre a la pregunta';
 $string['regrade'] = 'Torna a calcular les qualificacions';
@@ -718,7 +718,7 @@ $string['regradecount'] = 'S\'han modificat {$a->changed} de {$a->attempt} quali
 $string['regradedisplayexplanation'] = 'Els intents que canvien durant el còmput es visualitzen com a enllaços a la finestra de revisió de les preguntes';
 $string['regradenotallowed'] = 'No teniu permís per a tornar a qualificar aquest qüestionari';
 $string['regradingquestion'] = 'S\'està recalculant "{$a}".';
-$string['regradingquiz'] = 'S\'està requalificant el qüestionari "{$a}"';
+$string['regradingquiz'] = 'S\'està requalificant el qüestionari «{$a}»';
 $string['remove'] = 'Suprimeix';
 $string['removeallgroupoverrides'] = 'Esborra totes les excepcions de grup';
 $string['removeallquizattempts'] = 'Suprimeix tots els intents del qüestionari';
@@ -740,11 +740,11 @@ $string['reportanalysis'] = 'Anàlisi d\'elements';
 $string['reportattemptsfrom'] = 'Intents des de';
 $string['reportattemptsthatare'] = 'Intents que són';
 $string['reportdisplayoptions'] = 'Visualitza les opcions';
-$string['reportfullstat'] = 'Estadístiques detallada';
+$string['reportfullstat'] = 'Estadístiques detallades';
 $string['reportmulti_percent'] = 'Percentatges múltiples';
-$string['reportmulti_q_x_student'] = 'Opcions per estudiants múltiples';
+$string['reportmulti_q_x_student'] = 'Opcions per a estudiants múltiples';
 $string['reportmulti_resp'] = 'Respostes individuals';
-$string['reportmustselectstate'] = 'Heu de triar almenys un estat';
+$string['reportmustselectstate'] = 'Heu de triar almenys un estat.';
 $string['reportnotfound'] = 'Informe desconegut ({$a})';
 $string['reportoverview'] = 'Resum';
 $string['reportregrade'] = 'Recalcula les qualificacions';
@@ -752,16 +752,14 @@ $string['reportresponses'] = 'Respostes detallades';
 $string['reports'] = 'Informes';
 $string['reportshowonly'] = 'Mostra només intents';
 $string['reportshowonlyfinished'] = 'Mostra com a molt un intent acabat per l\'usuari ({$a})';
-$string['reportsimplestat'] = 'Estadístiques simple';
+$string['reportsimplestat'] = 'Estadístiques simples';
 $string['reportusersall'] = 'tots els usuaris que han intentat el qüestionari';
 $string['reportuserswith'] = 'usuaris inscrits que han intentat el qüestionari';
 $string['reportuserswithorwithout'] = 'usuaris inscrits que han intentat o no el qüestionari';
 $string['reportuserswithout'] = 'usuaris inscrits que no han intentat el qüestionari';
-$string['reportwhattoinclude'] = 'Què incloure en l\'informe';
-$string['requirepassword'] = 'Demana contrasenya';
-$string['requirepassword_help'] = '<p>Aquest camp és opcional.</p>
-
-<p>Si especifiqueu una contrasenya aquí, els participants hauran d\'introduir aquesta contrasenya abans que se\'ls permeti contestar el qüestionari.</p>';
+$string['reportwhattoinclude'] = 'Què cal incloure en l\'informe';
+$string['requirepassword'] = 'Demana una contrasenya';
+$string['requirepassword_help'] = '<p>Si especifiqueu una contrasenya aquí, l\'estudiant l\'haurà d\'introduir a fi d\'intentar respondre el qüestionari.</p>';
 $string['requiresubnet'] = 'Restringeix a certes adreces IP';
 $string['requiresubnet_help'] = 'Podeu restringir l\'accés a un qüestionari a una subxarxa concreta de la xarxa local o d\'Internet si especifiqueu una llista d\'adreces IP numèriques, completes o parcials, separada per comes.
 
@@ -806,7 +804,7 @@ $string['reviewoptionsheading_help'] = 'Aquestes opcions controlen quina informa
 $string['reviewoverallfeedback'] = 'Retroacció global';
 $string['reviewoverallfeedback_help'] = 'La retroacció donada al final de l\'intent, depenent de la puntuació total de l\'estudiant.';
 $string['reviewresponse'] = 'Revisa la resposta';
-$string['reviewresponsetoq'] = 'Revisa la resposat (pregunta {$a})';
+$string['reviewresponsetoq'] = 'Revisa la resposta (pregunta {$a})';
 $string['reviewthisattempt'] = 'Reviseu les vostres respostes d\'aquest intent';
 $string['rqp'] = 'Pregunta remota';
 $string['rqps'] = 'Preguntes remotes';
@@ -814,26 +812,26 @@ $string['sameasoverall'] = 'La mateixa que les qualificacions globals';
 $string['save'] = 'Desa';
 $string['saveandedit'] = 'Desa els canvis i edita les preguntes';
 $string['saveattemptfailed'] = 'No s\'ha pogut desar aquest intent del qüestionari';
-$string['savedfromdeletedcourse'] = 'Procedent del curs suprimit "{$a}"';
+$string['savedfromdeletedcourse'] = 'Procedent del curs suprimit «{$a}»';
 $string['savegrades'] = 'Desa les qualificacions';
 $string['savemyanswers'] = 'Desa les meves respostes';
-$string['savenosubmit'] = 'Desa sense enviar';
+$string['savenosubmit'] = 'Desa sense trametre';
 $string['saveoverrideandstay'] = 'Desa i introdueix una altra excepció';
 $string['savequiz'] = 'Desa tot el qüestionari';
-$string['saving'] = 'Es desa';
-$string['savingnewgradeforquestion'] = 'Es desa el valor de puntació per a la pregunta d\'identificador {$a}.';
-$string['savingnewmaximumgrade'] = 'Es desa la puntuació màxima nova.';
+$string['saving'] = 'S\'està desant';
+$string['savingnewgradeforquestion'] = 'S\'està desant una nova qualificació per a la pregunta amb ID {$a}.';
+$string['savingnewmaximumgrade'] = 'S\'està desant una nova qualificació màxima.';
 $string['score'] = 'Puntuació bruta';
 $string['scores'] = 'Puntuacions';
 $string['search:activity'] = 'Qüestionari: informació de l\'activitat';
 $string['sectionheadingedit'] = 'Edita la capçalera «{$a}»';
 $string['sectionheadingremove'] = 'Suprimeix la capçalera «{$a}»';
-$string['seequestions'] = '(Veure preguntes)';
+$string['seequestions'] = '(Vegeu les preguntes)';
 $string['select'] = 'Selecciona';
 $string['selectall'] = 'Selecciona-ho tot';
 $string['selectcategory'] = 'Selecciona una categoria';
 $string['selectedattempts'] = 'Intents seleccionats';
-$string['selectmultipleitems'] = 'Selecciona diversos elements';
+$string['selectmultipleitems'] = 'Seleccioneu diversos elements';
 $string['selectnone'] = 'Desselecciona-ho tot';
 $string['selectquestiontype'] = '-- Selecciona un tipus de pregunta --';
 $string['serveradded'] = 'S\'ha afegit el servidor';
@@ -850,17 +848,17 @@ $string['showblocks_help'] = 'Si es manté actiu, els blocs laterals es veuran m
 $string['showbreaks'] = 'Mostra salts de pàgina';
 $string['showcategorycontents'] = 'Mostra el contingut de la categoria {$a->arrow}';
 $string['showcorrectanswer'] = 'Voleu incloure la resposta correcta en la retroacció?';
-$string['showdetailedmarks'] = 'Mostra detalls dels punts';
-$string['showeachpage'] = 'Mostra només una pàgina';
+$string['showdetailedmarks'] = 'Mostra els detalls dels punts';
+$string['showeachpage'] = 'Mostra només una pàgina cada vegada';
 $string['showfeedback'] = 'Voleu mostrar la retroacció després de contestar?';
-$string['showinsecurepopup'] = 'Utilitza una finestra emergent \'segura\' per als intents';
+$string['showinsecurepopup'] = 'Utilitza una finestra emergent «segura» per als intents';
 $string['showlargeimage'] = 'Imatge gran';
 $string['shownoattempts'] = 'Mostra els estudiants sense intents';
 $string['shownoattemptsonly'] = 'Mostra només els estudiants que no tinguin intents';
 $string['shownoimage'] = 'Sense imatge';
 $string['showreport'] = 'Mostra l\'informe';
-$string['showsmallimage'] = 'Imatge menuda';
-$string['showteacherattempts'] = 'Mostra els intents del professorat';
+$string['showsmallimage'] = 'Imatge petita';
+$string['showteacherattempts'] = 'Mostra els intents del professor';
 $string['showuserpicture'] = 'Mostra la fotografia de l\'usuari';
 $string['showuserpicture_help'] = 'Si s\'activa, el nom i la fotografia de l\'estudiant apareixen a la pantalla mentre es realitza l\'intent, i a la pantalla de revisió, cosa que fa més fàcil comprovar que l\'alumne ha iniciat sessió com a si mateix en un entorn d\'examen supervisat.';
 $string['shuffle'] = 'Barreja';
@@ -871,11 +869,9 @@ $string['shufflequestions_help'] = 'Si ho habiliteu, cada vegada que el qüestio
 
 Això pot fer difícil als alumnes compartir les respostes, però també fa difícil als alumnes preguntar-vos dubtes sobre una pregunta particular.';
 $string['shufflewithin'] = 'Barreja dins de les preguntes';
-$string['shufflewithin_help'] = 'Si activeu aquesta opció, les parts que componen una pregunta es barrejaran aleatòriament cada vegada que un/a estudiant entri al qüestionari, sempre que l\'opció estigui habilitada també en els paràmetres de la pregunta.
+$string['shufflewithin_help'] = 'Si activeu aquesta opció, les parts que componen una pregunta es barrejaran aleatòriament cada vegada que un estudiant intenti resoldre el qüestionari, sempre que l\'opció estigui habilitada també en els paràmetres de la pregunta.
 
-La intenció és simplement fer una mica més difícil que els estudiants copiïn els uns dels altres.
-
-Aquesta opció només s\'aplica a preguntes que tinguin  diverses parts, com ara preguntes d\'opcions múltiples o d\'aparellar.';
+Aquesta opció només s\'aplica a preguntes que tinguin  diverses parts, com ara les preguntes d\'opció múltiple o les d\'aparellament.';
 $string['singleanswer'] = 'Trieu una resposta.';
 $string['sortage'] = 'Ordena per temps';
 $string['sortalpha'] = 'Ordena per nom';
@@ -887,44 +883,44 @@ $string['specificquestionnotonquiz'] = 'La pregunta especificada no es troba al 
 $string['startagain'] = 'Comença de nou';
 $string['startattempt'] = 'Inicia l\'intent';
 $string['startedon'] = 'Començat el';
-$string['startnewpreview'] = 'Comença una altra previsualització';
-$string['stateabandoned'] = 'Mai enviat';
+$string['startnewpreview'] = 'Comença una previsualització nova';
+$string['stateabandoned'] = 'No s\'ha tramès mai';
 $string['statefinished'] = 'Acabat';
-$string['statefinisheddetails'] = 'Enviat {$a}';
+$string['statefinisheddetails'] = 'Tramès {$a}';
 $string['stateinprogress'] = 'En curs';
 $string['statenotloaded'] = 'L\'estat de la pregunta {$a} no s\'ha carregat de la base de dades';
-$string['stateoverdue'] = 'Venciment';
-$string['stateoverduedetails'] = 'Ha d\'enviar-se en {$a}';
+$string['stateoverdue'] = 'Vençut';
+$string['stateoverduedetails'] = 'Ha de trametre\'s abans de {$a}';
 $string['status'] = 'Estat';
 $string['stoponerror'] = 'Atura si es produeix un error';
 $string['submitallandfinish'] = 'Envia-ho tot i acaba';
-$string['subneterror'] = 'Aquest qüestionari ha estat blocat i només és accessible des de certes ubicacions. A hores d\'ara el vostre ordinador no és un dels que han estat autoritzats.';
+$string['subneterror'] = 'Aquest qüestionari ha estat blocat i només és accessible des de certes ubicacions. A hores d\'ara el vostre ordinador no és cap dels que han estat autoritzats per emprar aquest qüestionari.';
 $string['subnetnotice'] = 'Aquest qüestionari ha estat blocat de manera que només sigui accessible des de certes ubicacions. El vostre ordinador no es troba en una subxarxa autoritzada. Tanmateix com a professor podeu previsualitzar-lo.';
 $string['subplugintype_quiz'] = 'Informe';
+$string['subplugintype_quiz_plural'] = 'Informes';
 $string['subplugintype_quizaccess'] = 'Regla d\'accés';
 $string['subplugintype_quizaccess_plural'] = 'Regles d\'accés';
-$string['subplugintype_quiz_plural'] = 'Informes';
 $string['substitutedby'] = 'serà reemplaçat amb';
 $string['summaryofattempt'] = 'Resum de l\'intent';
 $string['summaryofattempts'] = 'Resum dels vostres intents anteriors';
-$string['temporaryblocked'] = 'Temporalment no us és permès de tornar a contestar aquest qüestionari.<br />Podeu tornar a contestar-lo en:';
+$string['temporaryblocked'] = 'Temporalment no us és permès de reintentar aquest qüestionari.<br/> Podeu tornar a intentar-lo en:';
 $string['theattempt'] = 'L\'intent';
 $string['theattempt_help'] = 'Si l\'estudiant pot revisar l\'intent o no.';
 $string['time'] = 'Temps';
 $string['timecompleted'] = 'Completat';
-$string['timedelay'] = 'No us permès de tornar a contestar aquest qüestionari perquè no heu deixat passar el temps estipulat per a nous intents.';
+$string['timedelay'] = 'No us és permès de tornar a contestar aquest qüestionari perquè no heu deixat passar el període de temps estipulat abans d\'intentar resoldre un nou qüestionari.';
 $string['timeleft'] = 'Temps restant';
 $string['timelimit'] = 'Límit de temps';
-$string['timelimitexeeded'] = 'S\'ha acabat el temps per fer el qüestionari';
 $string['timelimit_help'] = 'Si està activat, el límit de temps s\'indica a la pàgina inicial del qüestionari, i es mostra un temporitzador de compte enrere al bloc de navegació del qüestionari.';
+$string['timelimitexeeded'] = 'S\'ha acabat el temps per fer el qüestionari';
 $string['timestr'] = '%d/%m/%y - %H:%M:%S';
-$string['timesup'] = 'Temps esgotat';
+$string['timesup'] = 'S\'ha acabat el temps';
 $string['timetaken'] = 'Temps emprat';
 $string['timing'] = 'Temporització';
 $string['tofile'] = 'al fitxer';
 $string['tolerance'] = 'Tolerància';
-$string['toomanyrandom'] = 'Es necessiten més preguntes aleatòries de les que hi ha en aquesta categoria.';
-$string['top'] = 'Dalt';
+$string['toomanyrandom'] = 'Es necessiten més preguntes aleatòries de les que hi ha encara disponibles en aquesta categoria.';
+$string['top'] = 'Dalt de tot';
 $string['totalmarksx'] = 'Nombre de puntuacions: {$a}';
 $string['totalquestionsinrandomqcategory'] = 'Total de {$a} preguntes a la categoria.';
 $string['true'] = 'Vertader';
@@ -936,18 +932,18 @@ $string['unit'] = 'Unitat';
 $string['unknowntype'] = 'Tipus de pregunta incompatible a la línia {$a}. La pregunta s\'ha ignorat';
 $string['updatesettings'] = 'Actualitza els paràmetres del qüestionari';
 $string['updatingatttemptgrades'] = 'Actualitza les puntuacions.';
-$string['updatingfinalgrades'] = 'Actualitza les puntuacions finals';
+$string['updatingfinalgrades'] = 'S\'estan actualitzant les puntuacions finals.';
 $string['updatingthegradebook'] = 'Actualitza el llibre de qualificacions.';
 $string['upgradesure'] = '<div>En particular el mòdul qüestionari efectuarà canvis generalitzats en les taules de la base de dades i aquesta actualització no s\'ha provat suficientment. És molt aconsellable que feu una còpia de seguretat de la base de dades abans de continuar.</div>';
 $string['upgradingquizattempts'] = 'Actualització dels intents: qüestionari {$a->done}/{$a->outof} (Identificador {$a->info})';
 $string['upgradingveryoldquizattempts'] = 'Actualitza intents molt antics:  {$a->done}/{$a->outof}';
 $string['url'] = 'URL';
-$string['usedcategorymoved'] = 'Aquesta categoria s\'ha mogut al nivell del lloc perquè és una categoria publicada que encara s\'utilitza en altres cursos.';
+$string['usedcategorymoved'] = 'Aquesta categoria s\'ha desat i s\'ha mogut al nivell del lloc perquè és una categoria publicada que encara s\'utilitza en altres cursos.';
 $string['useroverrides'] = 'Excepcions d\'usuari';
 $string['useroverridesdeleted'] = 'S\'han esborrat les excepcions d\'usuari';
 $string['usersnone'] = 'Els estudiants no poden accedir a aquest qüestionari';
 $string['validate'] = 'Valida';
-$string['viewallanswers'] = 'Visualitza {$a} qüestionaris completats';
+$string['viewallanswers'] = 'Visualitza {$a} intents de resoldre el qüestionari';
 $string['viewallreports'] = 'Visualitza informes per a {$a} intents';
 $string['viewed'] = 'Vist';
 $string['warningmissingtype'] = '<b>Aquesta pregunta és d\'un tipus que encara no s\'ha instal·lat en aquest Moodle.<br />Aviseu l\'administrador de Moodle.</b>';

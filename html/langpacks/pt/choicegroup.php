@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choicegroup', language 'pt', version '3.8'.
  *
- * @package   choicegroup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choicegroup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,9 +45,10 @@ $string['char_limitui_parenthesis_start'] = '(';
 $string['choice'] = 'Escolha';
 $string['choicegroup:addinstance'] = 'Adicionar uma nova atividade Escolher Grupo';
 $string['choicegroup:choose'] = 'Registar a escolha';
-$string['choicegroupclose'] = 'Até';
 $string['choicegroup:deleteresponses'] = 'Apagar respostas';
 $string['choicegroup:downloadresponses'] = 'Descarregar respostas';
+$string['choicegroup:readresponses'] = 'Ler respostas';
+$string['choicegroupclose'] = 'Até';
 $string['choicegroupfull'] = 'Escolher Grupo está cheio e não há lugares disponíveis';
 $string['choicegroupname'] = 'Nome do Escolher Grupo';
 $string['choicegroupopen'] = 'Desde';
@@ -55,7 +56,6 @@ $string['choicegroupoptions'] = 'Opções de escolha';
 $string['choicegroupoptions_help'] = 'Aqui pode especificar quais os grupos estão disponíveis para os participantes poderem escolher.
 A lista da esquerda mostra todos os grupos e agrupamentos disponíveis. Para adicionar um ou vários grupos, selecione da lista e clique em "Adicionar". Para adicionar todos os grupos de um agrupamento, selecione o agrupamento e clique em "Adicionar".
 Os grupos selecionados são exibidos na lista à direita. Para remover grupo(s) da seleção, selecione na lista da direita e clique em "Remover".';
-$string['choicegroup:readresponses'] = 'Ler respostas';
 $string['choicegroupsaved'] = 'A escolha foi registada';
 $string['choicetext'] = 'Texto da escolha';
 $string['chooseaction'] = 'Escolha uma ação ...';
@@ -70,8 +70,8 @@ $string['del_groups'] = 'Remover grupos';
 $string['displayhorizontal'] = 'Mostrar horizontalmente';
 $string['displaymode'] = 'Modo de exibição';
 $string['displayvertical'] = 'Mostrar verticalmente';
-$string['double_click_grouping_legend'] = 'Duplo clique num agrupamento para expandir/contrair';
 $string['double_click_group_legend'] = 'Duplo clique num grupo para adicioná-lo.';
+$string['double_click_grouping_legend'] = 'Duplo clique num agrupamento para expandir/contrair';
 $string['event:answered'] = 'escolha efetuada';
 $string['event:answered_desc'] = 'O utilizador com id \'{$a->userid}\' escolheu um grupo no Escolher Grupo do módulo da disciplina com id \'{$a->contextinstanceid}\'.';
 $string['event:removed'] = 'Escolha removida';

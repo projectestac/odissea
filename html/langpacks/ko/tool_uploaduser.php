@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'ko', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -46,13 +46,14 @@ $string['uploadpicture_cannotsave'] = '{$a} 의 사진을 저장할 수 없습�
 $string['uploadpicture_cannotunzip'] = '묶음 파일을 풀 수 없습니다.';
 $string['uploadpicture_invalidfilename'] = '그림 파일 {$a} 에는 쓸 수 없는 문자가 포함된 이름이 있습니다. 생략합니다.';
 $string['uploadpicture_overwrite'] = '기존 사진에 덮어 쓰겠습니까?';
-$string['uploadpictures'] = '사진 올려주기';
-$string['uploadpictures_help'] = '<p>사용자들의 사진은 한꺼번에 이미지 파일들을 묶은 압축(zip)파일로 올릴 수 있습니다. 각 이미지 파일은 <i>선택된 사용자 속성.확장자</i>의 형태로 명명되어야만 합니다. 예를들어 선택된 사용자 속성이 사용자의 ID이고 그 사용자의 ID가 blabla라면 그 사람의 이미지 파일명은 blabla.확장자가 되어야 합니다.</p>
-<p>여기에서 내부적으로 쓰일 수 있는 이미지 파일의 확장자는 gif, jpg 그리고 png가 있습니다.</p>';
 $string['uploadpicture_userfield'] = '사진에 상응하는 사용자 속성:';
 $string['uploadpicture_usernotfound'] = '\'{$a->uservalue}\'가 \'{$a->userfield}\'인 사용자는 존재하지 않습니다. 생략합니다.';
 $string['uploadpicture_userskipped'] = '{$a} 는 이미 사진이 있으므로 생략합니다.';
 $string['uploadpicture_userupdated'] = '{$a} 사진 업데이트됨';
+$string['uploadpictures'] = '사진 올려주기';
+$string['uploadpictures_help'] = '<p>사용자들의 사진은 한꺼번에 이미지 파일들을 묶은 압축(zip)파일로 올릴 수 있습니다. 각 이미지 파일은 <i>선택된 사용자 속성.확장자</i>의 형태로 명명되어야만 합니다. 예를들어 선택된 사용자 속성이 사용자의 ID이고 그 사용자의 ID가 blabla라면 그 사람의 이미지 파일명은 blabla.확장자가 되어야 합니다.</p>
+<p>여기에서 내부적으로 쓰일 수 있는 이미지 파일의 확장자는 gif, jpg 그리고 png가 있습니다.</p>';
+$string['uploaduser:uploaduserpictures'] = '사용자 사진 업로드';
 $string['uploadusers'] = '사용자 업로드';
 $string['uploadusers_help'] = '사용자는 텍스트 파일을 통하여 업로드(및 강좌에 선택적으로 등록) 될 수 있습니다. 파일 포맷은 다음과 같아야 합니다.
 
@@ -62,7 +63,6 @@ $string['uploadusers_help'] = '사용자는 텍스트 파일을 통하여 업로
 * 필요한 항목이름은 사용자 이름, 암호, 이름, 성, 이메일 입니다.';
 $string['uploaduserspreview'] = '올린 사용자 미리보기';
 $string['uploadusersresult'] = '올린 사용자  결과';
-$string['uploaduser:uploaduserpictures'] = '사용자 사진 업로드';
 $string['useraccountupdated'] = '사용자가 업데이트됨';
 $string['useraccountuptodate'] = '사용자  (최신)';
 $string['userdeleted'] = '사용자 삭제됨';
@@ -73,7 +73,7 @@ $string['usersrenamed'] = '사용자 ID들이 변경됨';
 $string['usersskipped'] = '사용자들이 생략됨';
 $string['usersupdated'] = '사용자들이 업데이트됨';
 $string['usersweakpassword'] = '사용자가 너무 취약한 암호를 씀';
-$string['uubulk'] = '일괄 작업을 위한 선택';
+$string['uubulk'] = '대량 사용자 작업을 선택';
 $string['uubulkall'] = '모든 사용자';
 $string['uubulknew'] = '새 사용자';
 $string['uubulkupdated'] = '업데이트된 사용자';

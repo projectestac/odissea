@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'gl', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,9 +29,9 @@ $string['acceptandaddcontact'] = 'Aceptar e engadir aos contactos';
 $string['addcontact'] = 'Engadir un contacto';
 $string['addcontactconfirm'] = 'Confirma que quere engadir a {$a} aos seus contactos?';
 $string['addtofavourites'] = 'Destacar a conversa';
-$string['addtoyourcontacts'] = 'Engadir aos seus contactos';
+$string['addtoyourcontacts'] = 'Engadir a contactos';
 $string['addtoyourcontactsandmessage'] = 'Engadir a contactos e mensaxe';
-$string['ago'] = 'vai {$a}';
+$string['ago'] = 'Vai {$a}';
 $string['allusers'] = 'Todas as mensaxes de todos os usuarios';
 $string['backto'] = 'Volver a {$a}';
 $string['backupmessageshelp'] = 'Se está activado, as mensaxes instantáneas serán incluídas nas copias de seguranza automatizadas do SITIO';
@@ -54,9 +54,9 @@ $string['contactrequestsent'] = 'Enviouse a solicitude de contacto';
 $string['contacts'] = 'Contactos';
 $string['conversationactions'] = 'Menú de accións para conversa';
 $string['decline'] = 'Declinar';
-$string['defaultmessageoutputs'] = 'Mensaxes saíntes predeterminadas';
+$string['defaultmessageoutputs'] = 'Axustes das notificacións';
 $string['defaults'] = 'Predeterminados';
-$string['deleteallconfirm'] = 'Confirma que quere eliminar toda a conversación?';
+$string['deleteallconfirm'] = 'Confirma que quere eliminar toda esta conversa? Isto non a eliminará para outros participantes na conversa.';
 $string['deleteallmessages'] = 'Eliminar todas as mensaxes';
 $string['deleteallselfconfirm'] = 'Confirma que quere eliminar toda esta conversa persoal?';
 $string['deleteconversation'] = 'Eliminar a conversa';
@@ -97,13 +97,13 @@ $string['individualconversations'] = 'Privado';
 $string['info'] = 'Información do usuario';
 $string['isnotinyourcontacts'] = '{$a} non está nos seus contactos';
 $string['loadmore'] = 'Cargar máis';
-$string['loggedin'] = 'Conectado';
-$string['loggedindescription'] = 'Cando vostede accedeu a Moodle';
+$string['loggedin'] = 'En liña';
 $string['loggedin_help'] = 'Configurar como quere recibir as notificacións cando estea conectado a Moodle';
-$string['loggedoff'] = 'Non conectado';
-$string['loggedoffdescription'] = 'Cando estou desconectado';
+$string['loggedindescription'] = 'Cando vostede accedeu a Moodle';
+$string['loggedoff'] = 'Fora de liña';
 $string['loggedoff_help'] = 'Configurar como quere recibir as notificacións cando non estea conectado a Moodle';
-$string['managemessageoutputs'] = 'Xestionar as mensaxes saíntes';
+$string['loggedoffdescription'] = 'Cando estou desconectado';
+$string['managemessageoutputs'] = 'Preferencias de notificación predeterminadas';
 $string['message'] = 'Mensaxe';
 $string['messagecontactrequestsnotification'] = '{$a} quere engadirse como contacto';
 $string['messagecontactrequestsnotificationsubject'] = '{$a} quere engadirse como contacto';
@@ -118,7 +118,7 @@ $string['messagedrawerviewgroupinfo'] = 'Detalles do grupo para {$a}';
 $string['messagedrawerviewoverview'] = 'Vista xeral das mensaxes';
 $string['messagedrawerviewsearch'] = 'Resultados da busca de mensaxes para {$a}';
 $string['messagedrawerviewsettings'] = 'Axustes da mensaxe';
-$string['messageoutputs'] = 'Mensaxes saíntes';
+$string['messageoutputs'] = 'Engadidos de notificación';
 $string['messagepreferences'] = 'Preferencias de mensaxe';
 $string['messages'] = 'Mensaxes';
 $string['messagesselected:'] = 'Mensaxes seleccionadas:';
@@ -138,7 +138,7 @@ $string['nogroupconversations'] = 'Non hai conversas en grupo';
 $string['noindividualconversations'] = 'Non hai conversas privadas';
 $string['nomessages'] = 'Sen mensaxes';
 $string['nomessagesfound'] = 'Non se atoparon mensaxes';
-$string['noncontacts'] = 'Sen contactos';
+$string['noncontacts'] = 'Non hai contactos';
 $string['nonotifications'] = 'Non ten notificacións';
 $string['noparticipants'] = 'Non hai participantes';
 $string['noreply'] = 'Non responder a este correo';
@@ -164,7 +164,6 @@ $string['participants'] = 'Participantes';
 $string['pendingcontactrequests'] = 'Ten pendentes {$a} solicitudes de contacto';
 $string['permitted'] = 'Permitido';
 $string['privacy'] = 'Privacidade';
-$string['privacy_desc'] = 'Pode restrinxir quen pode enviarlle unha mensaxe';
 $string['privacy:export:conversationprefix'] = 'Conversa:';
 $string['privacy:metadata:core_favourites'] = 'As conversas destacadas polo usuario';
 $string['privacy:metadata:message_contact_requests'] = 'A lista de solicitudes de contacto';
@@ -184,6 +183,15 @@ $string['privacy:metadata:message_conversation_members'] = 'A lista de usuarios 
 $string['privacy:metadata:message_conversation_members:conversationid'] = 'O ID da conversa';
 $string['privacy:metadata:message_conversation_members:timecreated'] = 'A data na que se creou o membro';
 $string['privacy:metadata:message_conversation_members:userid'] = 'O ID do usuario nunha conversa';
+$string['privacy:metadata:message_user_actions'] = 'A lista de accións do usuario da mensaxe';
+$string['privacy:metadata:message_user_actions:action'] = 'A acción que se realizou';
+$string['privacy:metadata:message_user_actions:messageid'] = 'O ID da mensaxe á que pertence esta acción';
+$string['privacy:metadata:message_user_actions:timecreated'] = 'A data na que se creou a acción';
+$string['privacy:metadata:message_user_actions:userid'] = 'O ID do usuario que realizou esta acción';
+$string['privacy:metadata:message_users_blocked'] = 'A lista de usuarios bloqueados';
+$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'O ID do usuario que foi bloqueado';
+$string['privacy:metadata:message_users_blocked:timecreated'] = 'O momento no que se creou a acción de bloqueo';
+$string['privacy:metadata:message_users_blocked:userid'] = 'O ID do usuario que realizou a acción de bloqueado';
 $string['privacy:metadata:messages'] = 'Mensaxes';
 $string['privacy:metadata:messages:conversationid'] = 'O ID da conversa';
 $string['privacy:metadata:messages:customdata'] = 'Datos personalizados, que normalmente conteñen ID internos e un URL público da imaxe do remitente (usuario ou grupo)';
@@ -194,17 +202,8 @@ $string['privacy:metadata:messages:smallmessage'] = 'Unha versión curta da mens
 $string['privacy:metadata:messages:subject'] = 'O asunto da mensaxe';
 $string['privacy:metadata:messages:timecreated'] = 'A data na que se creou a mensaxe';
 $string['privacy:metadata:messages:useridfrom'] = 'O ID do usuario que enviou a mensaxe';
-$string['privacy:metadata:message_user_actions'] = 'A lista de accións do usuario da mensaxe';
-$string['privacy:metadata:message_user_actions:action'] = 'A acción que se realizou';
-$string['privacy:metadata:message_user_actions:messageid'] = 'O ID da mensaxe á que pertence esta acción';
-$string['privacy:metadata:message_user_actions:timecreated'] = 'A data na que se creou a acción';
-$string['privacy:metadata:message_user_actions:userid'] = 'O ID do usuario que realizou esta acción';
-$string['privacy:metadata:message_users_blocked'] = 'A lista de usuarios bloqueados';
-$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'O ID do usuario que foi bloqueado';
-$string['privacy:metadata:message_users_blocked:timecreated'] = 'O momento no que se creou a acción de bloqueo';
-$string['privacy:metadata:message_users_blocked:userid'] = 'O ID do usuario que realizou a acción de bloqueado';
 $string['privacy:metadata:notifications'] = 'Notificacións';
-$string['privacy:metadata:notifications:component'] = 'O compoñente responsable de enviar a notificación';
+$string['privacy:metadata:notifications:component'] = 'O compoñente responsábel de enviar a notificación';
 $string['privacy:metadata:notifications:contexturl'] = 'O URL relacionado con esta notificación';
 $string['privacy:metadata:notifications:contexturlname'] = 'O nome do contexto';
 $string['privacy:metadata:notifications:customdata'] = 'Datos personalizados que, normalmente conteñen ID internos e un URL público da imaxe do remitente (se hai)';
@@ -220,12 +219,13 @@ $string['privacy:metadata:notifications:useridfrom'] = 'O ID do usuario que envi
 $string['privacy:metadata:notifications:useridto'] = 'O ID do usuario que recibiu a notificación';
 $string['privacy:metadata:preference:core_message_settings'] = 'Axustes relacionados coa mensaxería';
 $string['privacy:request:preference:set'] = 'O valor do axuste «{$a->name}» era «{$a->value}»';
+$string['privacy_desc'] = 'Pode restrinxir quen pode enviarlle unha mensaxe';
 $string['processorsettings'] = 'Axustes do procesador';
 $string['removecontact'] = 'Retirar o contacto';
 $string['removecontactconfirm'] = 'Confirma que quere retirar a {$a} dos seus contactos?';
 $string['removecoursefilter'] = 'Retirar filtro para o curso {$a}';
 $string['removefromfavourites'] = 'Retirar o destaque da conversa';
-$string['removefromyourcontacts'] = 'Retirar dos seus contactos';
+$string['removefromyourcontacts'] = 'Retirar dos contactos';
 $string['requirecontacttomessage'] = 'Debe solicitar a {$a} que o engada como contacto para poder enviarlle mensaxes.';
 $string['requiresconfiguration'] = 'Require configuración';
 $string['searchcombined'] = 'Buscar persoas e mensaxes';
@@ -251,7 +251,7 @@ $string['sendmessageto'] = 'Enviar mensaxe a {$a}';
 $string['sendmessagetopopup'] = 'Enviar mensaxe a {$a} - nova xanela';
 $string['settings'] = 'Axustes';
 $string['showmessagewindownonew'] = 'Amosar a xanela de mensaxes sen novas mensaxes';
-$string['showmessagewindowwithcount'] = 'Amosar a xanela de mensaxes con  {$a} mensaxes novas';
+$string['showmessagewindowwithcount'] = 'Amosar a xanela de mensaxes con {$a} mensaxes novas';
 $string['shownotificationwindownonew'] = 'Amosar a xanela de notificación sen novas notificacións';
 $string['shownotificationwindowwithcount'] = 'Amosar a xanela de notificación con {$a} notificacións novas';
 $string['togglemessagemenu'] = 'Amosar/agochar a caixa de mensaxes';

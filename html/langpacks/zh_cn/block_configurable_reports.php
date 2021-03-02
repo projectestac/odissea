@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_configurable_reports', language 'zh_cn', version '3.8'.
  *
- * @package   block_configurable_reports
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_configurable_reports
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,8 +29,8 @@ $string['comp_calcs_help'] = '<p>您可以此栏位增加计算结果，例如�
 <p>更多帮助: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">外链文档</a></p>';
 $string['componenthelp'] = '组件帮助';
 $string['confirmdeletereport'] = '你确定要删除这个报告吗？';
-$string['datatablesinfo'] = '数据表 JS 库（列排序、固定标题、搜索、分页等）';
 $string['datatables_search'] = '搜索：';
+$string['datatablesinfo'] = '数据表 JS 库（列排序、固定标题、搜索、分页等）';
 $string['dbpass'] = '数据库密码';
 $string['email_message'] = '消息';
 $string['filter_searchtext'] = '搜索文本';

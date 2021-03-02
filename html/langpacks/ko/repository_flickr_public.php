@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository_flickr_public', language 'ko', version '3.8'.
  *
- * @package   repository_flickr_public
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository_flickr_public
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,7 @@ $string['by-nc-sa'] = '저작자표시-비상업적-동일조건변경허락 사
 $string['by-nd'] = '저작자표시-변경금지 사용허가';
 $string['by-sa'] = '저작자표시-동일조건변경허락 사용허가';
 $string['callbackurl'] = '회신 URL';
-$string['commercialuse'] = '나는 이미지를 상업적으로 이용할 수 있게 되길 바랍니다.';
+$string['commercialuse'] = '나는 이미지를 상업적으로 사용하고자 합니다.';
 $string['configplugin'] = 'Flickr 공개 구성';
 $string['creativecommonscommercial'] = '크리에이티브 커먼즈 비영리만';
 $string['emailaddress'] = '이메일 주소';

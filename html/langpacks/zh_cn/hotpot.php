@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpot', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hotpot', language 'zh_cn', version '3.8'.
  *
- * @package   hotpot
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hotpot
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -81,6 +81,7 @@ $string['confirmdeleteattempts'] = '您真的要删除这些提交么？';
 $string['confirmstop'] = '您确定要离开此页面吗？';
 $string['correct'] = '正确';
 $string['couldnotinsertsubmissionform'] = '无法插入提交表单';
+$string['d_index'] = '区分度指数';
 $string['delay1'] = '延迟 1';
 $string['delay1_help'] = '第一次和第二次答题间的最小延迟。';
 $string['delay1summary'] = '试卷一与试卷二之间的时间延迟';
@@ -88,8 +89,6 @@ $string['delay2'] = '延迟2';
 $string['delay2_help'] = '试卷二后，试卷间的最小时间延迟。';
 $string['delay2summary'] = '后续试卷间的时间延迟';
 $string['delay3'] = '延迟3';
-$string['delay3afterok'] = '等待学生点击确定';
-$string['delay3disable'] = '不要自动继续';
 $string['delay3_help'] = '该设定规定了完成测试与将显示控制交还给Moodle之间的延迟。
 
 **使用特定的时间（以秒为单位）**
@@ -108,13 +107,14 @@ $string['delay3_help'] = '该设定规定了完成测试与将显示控制交还
 ：测试结束后，控制权将会被交还给Moodle。学生可以从测试页面自由转去其它页面。
 
 注意，无论该设置如何设定，测试结果总是在测试完成或放弃后立即返回给Moodle。';
+$string['delay3afterok'] = '等待学生点击确定';
+$string['delay3disable'] = '不要自动继续';
 $string['delay3specific'] = '使用特定的时间（以秒为单位）';
 $string['delay3summary'] = '测试结束处的时间延迟';
 $string['delay3template'] = '使用源文件或模板文件中的设置';
 $string['deleteallattempts'] = '删除所有尝试';
 $string['deleteattempts'] = '删除试卷';
 $string['detailsrecords'] = 'HotPot 详情记录';
-$string['d_index'] = '区分度指数';
 $string['duration'] = '持续时间';
 $string['enablecache'] = '启用HotPot缓存';
 $string['enablecron'] = '启用 HotPot 计划任务';
@@ -122,8 +122,10 @@ $string['enablemymoodle'] = '在我的Moodle上显示HotPots';
 $string['enableobfuscate'] = '启用媒体播放器代码混淆';
 $string['enableswf'] = '允许HotPot活动中嵌入SWF文件';
 $string['entry_attempts'] = '试卷';
+$string['entry_dates'] = '日期';
+$string['entry_grading'] = '评分';
+$string['entry_title'] = '单元名称作为标题';
 $string['entrycm'] = '上一个活动';
-$string['entrycmcourse'] = '本课程上次活动';
 $string['entrycm_help'] = '该设置指定了一个Moodle活动与在尝试该Quizport前，必须达到的最小等级。
 
 教师可以选择一个特定的活动，
@@ -133,12 +135,11 @@ $string['entrycm_help'] = '该设置指定了一个Moodle活动与在尝试该Qu
 *该节之前的活动
 *该课程之前的HotPot
 *该节之前的HotPot';
+$string['entrycmcourse'] = '本课程上次活动';
 $string['entrycmsection'] = '本节的上次活动';
 $string['entrycompletionwarning'] = '在开始本项活动之前，您必须查看{$a}。';
-$string['entry_dates'] = '日期';
 $string['entrygrade'] = '以前的活动成绩';
 $string['entrygradewarning'] = '您在 {$a->entryactivity} 中得到 {$a->entrygrade}% 分数前您不能开始此活动。 目前您该活动的成绩是 {$a->usergrade}%';
-$string['entry_grading'] = '评分';
 $string['entryhotpotcourse'] = '此课程中以前的 HotPot';
 $string['entryhotpotsection'] = '此课程小节中以前的 HotPot';
 $string['entryoptions'] = '入口页面选项';
@@ -156,7 +157,6 @@ $string['entryoptions_help'] = '这些复选框启用和禁用 HotPot 入口页�
 **答卷**
 ：如果选中，一个显示用户以前在此 HotPot 的答卷详细信息的表格将会显示在入口页面上。答卷如果中断，在最右边的栏里将会显示一个继续按钮。';
 $string['entrypage'] = '显示入口页面';
-$string['entrypagehdr'] = '入口页面';
 $string['entrypage_help'] = '在开始使用 HotPot 前应该给学生显示一个初始页面吗？
 
 **是**
@@ -166,23 +166,10 @@ $string['entrypage_help'] = '在开始使用 HotPot 前应该给学生显示一�
 ：将不会给学生显示入口页面，并立即开始使用 HotPot。
 
 为了能访问报告和编辑测验页面，入口页面将会始终显示给老师';
+$string['entrypagehdr'] = '入口页面';
 $string['entrytext'] = '入口页面文字';
-$string['entry_title'] = '单元名称作为标题';
 $string['exit_areyouok'] = '您好，您还在吗？';
 $string['exit_attemptscore'] = '您的那次答卷成绩是 {$a}';
-$string['exitcm'] = '下一个活动';
-$string['exitcmcourse'] = '本课程的下一个活动';
-$string['exitcm_help'] = '此设置指定在 Quizport 完成后需要进行的 Moodle 活动。
-
-教师可以选择一个特定的活动，或者下面几个通用设置之一：
-
-* 此课程的下一项活动
-* 此小节的下一项活动
-* 此课程的下一个 HotPot
-* 此小节的下一个 HotPot
-
-如果其他退出页面选项被禁用了，学生将会直接进入下一项活动。否则将会给学生显示一个链接，当他们准备好时可以带他们进入下一项活动。';
-$string['exitcmsection'] = '本节的下一个活动';
 $string['exit_course'] = '课程';
 $string['exit_course_text'] = '返回课程主页';
 $string['exit_encouragement'] = '鼓励';
@@ -208,17 +195,14 @@ $string['exit_feedback_help'] = '这些选项启用和禁用 HotPot 退出页面
 
 另外，如果单元评分方式是最高的，将会显示一条消息，告诉用户最新的答卷是等于还是优于前次。';
 $string['exit_goodtry'] = '良好的尝试！';
-$string['exitgrade'] = '下一个活动的评分';
 $string['exit_grades'] = '成绩';
 $string['exit_grades_text'] = '查看此课程您目前为止的成绩';
-$string['exithotpotcourse'] = '此课程的下一个 HotPot';
 $string['exit_hotpotgrade'] = '您这项活动的成绩是 {$a}';
 $string['exit_hotpotgrade_average'] = '您这项活动目前的平均成绩是 {$a}';
 $string['exit_hotpotgrade_highest'] = '您这项活动目前的最高成绩是 {$a}';
 $string['exit_hotpotgrade_highest_equal'] = '这项活动您平了以前的最好成绩！';
 $string['exit_hotpotgrade_highest_previous'] = '您这项活动以前的最高成绩是 {$a}';
 $string['exit_hotpotgrade_highest_zero'] = '您这项活动的成绩还没有高于 {$a}';
-$string['exithotpotsection'] = '此课程小节的下一个 HotPot';
 $string['exit_index'] = '索引';
 $string['exit_index_text'] = '去活动的索引';
 $string['exit_links'] = '退出页面链接';
@@ -238,9 +222,30 @@ $string['exit_links_help'] = '这些选项开启和禁用 HotPot 退出页面上
 $string['exit_next'] = '下一个';
 $string['exit_next_text'] = '尝试下一个活动';
 $string['exit_noscore'] = '您已经成功完成此活动！';
+$string['exit_retry'] = '重试';
+$string['exit_retry_text'] = '重试此活动';
+$string['exit_welldone'] = '做得好！';
+$string['exit_whatnext_0'] = '您想下一步想要做什么？';
+$string['exit_whatnext_1'] = '选择您的目的地……';
+$string['exit_whatnext_default'] = '请从下面选择其一：';
+$string['exitcm'] = '下一个活动';
+$string['exitcm_help'] = '此设置指定在 Quizport 完成后需要进行的 Moodle 活动。
+
+教师可以选择一个特定的活动，或者下面几个通用设置之一：
+
+* 此课程的下一项活动
+* 此小节的下一项活动
+* 此课程的下一个 HotPot
+* 此小节的下一个 HotPot
+
+如果其他退出页面选项被禁用了，学生将会直接进入下一项活动。否则将会给学生显示一个链接，当他们准备好时可以带他们进入下一项活动。';
+$string['exitcmcourse'] = '本课程的下一个活动';
+$string['exitcmsection'] = '本节的下一个活动';
+$string['exitgrade'] = '下一个活动的评分';
+$string['exithotpotcourse'] = '此课程的下一个 HotPot';
+$string['exithotpotsection'] = '此课程小节的下一个 HotPot';
 $string['exitoptions'] = '退出页面选项';
 $string['exitpage'] = '显示退出页面';
-$string['exitpagehdr'] = '退出页面';
 $string['exitpage_help'] = '在 HotPot 测验完成后应该显示一个退出页面吗？
 
 **是**
@@ -248,13 +253,8 @@ $string['exitpage_help'] = '在 HotPot 测验完成后应该显示一个退出�
 
 **否**
 ：将不向学生显示退出页面。相反，他们将会直接进入下一项活动或者返回 Moodle 课程页面。';
-$string['exit_retry'] = '重试';
-$string['exit_retry_text'] = '重试此活动';
+$string['exitpagehdr'] = '退出页面';
 $string['exittext'] = '退出页面文字';
-$string['exit_welldone'] = '做得好！';
-$string['exit_whatnext_0'] = '您想下一步想要做什么？';
-$string['exit_whatnext_1'] = '选择您的目的地……';
-$string['exit_whatnext_default'] = '请从下面选择其一：';
 $string['feedbackdiscuss'] = '在论坛里讨论这个测验';
 $string['feedbackformmail'] = '反馈格式';
 $string['feedbackmoodleforum'] = 'Moodle讨论';
@@ -290,11 +290,11 @@ $string['hotpot:deleteallattempts'] = '删除一项 HotPot 活动里任何用户
 $string['hotpot:deletemyattempts'] = '删除自己在一项 HotPot 活动里的答卷';
 $string['hotpot:ignoretimelimits'] = '忽略一项 HotPot 活动的时间限制';
 $string['hotpot:manage'] = '修改一项 HotPot 活动的设置';
-$string['hotpotname'] = 'HotPot 活动名称';
 $string['hotpot:preview'] = '预览一个 HotPot 活动';
 $string['hotpot:reviewallattempts'] = '查看一项 HotPot 活动里任何用户的答卷';
 $string['hotpot:reviewmyattempts'] = '查看自己在一项 HotPot 活动里的答卷';
 $string['hotpot:view'] = '查看一项 HotPot 活动的入口页面';
+$string['hotpotname'] = 'HotPot 活动名称';
 $string['ignored'] = '忽略';
 $string['inprogress'] = '处理中';
 $string['isgreaterthan'] = '大于';
@@ -370,6 +370,10 @@ $string['outputformat_help'] = '输出格式指定了内容将怎样呈现给学
 
 “最佳”设置将会为学生的浏览器使用最佳输出格式显示内容。';
 $string['outputformat_hp_6_jcloze_html'] = 'JCloze HP6 HTML：标准';
+$string['outputformat_hp_6_jcloze_html_dropdown'] = 'JCloze HP6 HTML：Rottmeier 下拉式';
+$string['outputformat_hp_6_jcloze_html_findit_a'] = 'JCloze HP6 HTML：Rottmeier FindIt（一）';
+$string['outputformat_hp_6_jcloze_html_findit_b'] = 'JCloze HP6 HTML：Rottmeier FindIt（二）';
+$string['outputformat_hp_6_jcloze_html_jgloss'] = 'JCloze HP6 HTML：Rottmeier JGloss';
 $string['outputformat_hp_6_jcross_html'] = 'JCross HP6 HTML';
 $string['outputformat_hp_6_jquiz_html'] = 'JQuiz HP6 HTML';
 $string['outputformat_html_xhtml'] = '标准 HTML 文件';

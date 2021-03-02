@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_installaddon', language 'el', version '3.8'.
  *
- * @package   tool_installaddon
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_installaddon
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,9 +33,9 @@ $string['installaddons'] = 'Εγκατάσταση πρόσθετων';
 $string['installfromrepo'] = 'Εγκατάσταση πρόσθετων από τον κατάλογο πρόσθετων του Moodle';
 $string['installfromrepo_help'] = 'Θα μεταφερθείτε στον κατάλογο πρόσθετων Moodle για να αναζητήσετε και να εγκαταστήσετε μια προσθήκη. Λάβετε υπόψη ότι το πλήρες όνομα, η διεύθυνση URL και η έκδοση Moodle του ιστοτόπου σας θα αποστέλλονται επίσης, για να είναι πιο εύκολη η διαδικασία εγκατάστασης.';
 $string['installfromzip'] = 'Εγκατάσταση πρόσθετου από αρχείο Zip';
+$string['installfromzip_help'] = 'Μια εναλλακτική λύση για την εγκατάσταση ενός πρόσθετου απευθείας από τον κατάλογο πρόσθετων του Moodle είναι να ανεβάσετε ένα πακέτο ZIP του πρόσθετου. Το πακέτο ZIP θα πρέπει να έχει την ίδια δομή με το πακέτο που έχει ληφθεί από τον κατάλογο πρόσθετων του Moodle.';
 $string['installfromzipfile'] = 'Πακέτο ZIP';
 $string['installfromzipfile_help'] = 'Το πακέτο ZIP του πρόσθετου πρέπει να περιέχει μόνο έναν κατάλογο με όνομα που να ταιριάζει με το όνομα του πρόσθετου. Το ZIP θα εξαχθεί σε μια κατάλληλη θέση για τον τύπο του πρόσθετου. Αν το πακέτο έχει ληφθεί από τον κατάλογο πρόσθετων του Moodle τότε θα έχει αυτή τη δομή.';
-$string['installfromzip_help'] = 'Μια εναλλακτική λύση για την εγκατάσταση ενός πρόσθετου απευθείας από τον κατάλογο πρόσθετων του Moodle είναι να ανεβάσετε ένα πακέτο ZIP του πρόσθετου. Το πακέτο ZIP θα πρέπει να έχει την ίδια δομή με το πακέτο που έχει ληφθεί από τον κατάλογο πρόσθετων του Moodle.';
 $string['installfromzipinvalid'] = 'Το πακέτο ZIP του πρόσθετου πρέπει να περιέχει μόνο έναν κατάλογο με όνομα που να ταιριάζει με το όνομα του πρόσθετου. Το παρεχόμενο αρχείο δεν είναι ένα έγκυρο πακέτο ZIP κάποιου πρόσθετου.';
 $string['installfromziprootdir'] = 'Μετονομασία του ριζικού καταλόγου';
 $string['installfromziprootdir_help'] = 'Κάποια πακέτα zip, όπως εκείνα που δημιουργούνται από το Github, μπορεί να περιέχουν λανθασμένο όνομα ριζικού (αρχικού) καταλόγου. Αν συμβαίνει αυτό, πρέπει να δώσετε εδώ το σωστό όνομα.';

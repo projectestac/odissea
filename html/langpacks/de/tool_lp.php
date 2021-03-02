@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_lp', language 'de', version '3.8'.
  *
- * @package   tool_lp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_lp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['aisrequired'] = '\'{$a}\' ist erforderlich';
 $string['aplanswerecreated'] = '{$a} Lernpläne sind neu angelegt worden.';
 $string['aplanswerecreatedmoremayrequiresync'] = '{$a} Lernpläne sind neu angelegt worden und weitere werden bei der nächsten Synchronisation folgen.';
 $string['assigncohorts'] = 'Globale Gruppen zuweisen';
-$string['averageproficiencyrate'] = 'Der durchschnittliche Fähigkeitsgrad für Lernpläne, die abgeschlossen wurden und auf dieser Vorlage basieren, beträgt {$a}%.';
+$string['averageproficiencyrate'] = 'Der durchschnittliche Fähigkeitsgrad für abgeschlossene Lernpläne, die auf dieser Vorlage basieren, beträgt {$a}%.';
 $string['cancelreviewrequest'] = 'Überprüfungsanfrage abbrechen';
 $string['cannotaddrules'] = 'Diese Kompetenz kann nicht konfiguriert werden.';
 $string['cannotcreateuserplanswhentemplateduedateispassed'] = 'Neue Lernpläne können nicht angelegt werden. Das Fälligkeitsdatum für diese Vorlage ist abgelaufen oder wird in Kürze ablaufen.';
@@ -112,7 +112,7 @@ $string['findcourses'] = 'Kurse finden';
 $string['frameworkcannotbedeleted'] = 'Der Kompetenzrahlen \'{$a}\' kann nicht gelöscht werden.';
 $string['hidden'] = 'Verborgen';
 $string['hiddenhint'] = '(verborgen)';
-$string['idnumber'] = 'ID Nummer';
+$string['idnumber'] = 'ID-Nummer';
 $string['inheritfromframework'] = 'Vom Kompetenzrahmen übernehmen (Standard)';
 $string['itemstoadd'] = 'Hinzuzufügende Werte';
 $string['jumptocompetency'] = 'Zur Kompetenz';

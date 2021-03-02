@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_match', language 'en', version '3.8'.
  *
- * @package   qtype_match
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_match
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,10 +38,10 @@ $string['notenoughqsandas'] = 'You must supply at least {$a->q} questions and {$
 $string['notenoughquestions'] = 'You must supply at least {$a} question and answer pairs.';
 $string['pleaseananswerallparts'] = 'Please answer all parts of the question.';
 $string['pluginname'] = 'Matching';
-$string['pluginnameadding'] = 'Adding a Matching question';
-$string['pluginnameediting'] = 'Editing a Matching question';
 $string['pluginname_help'] = 'Matching questions require the respondent to correctly match a list of names or statements (questions) to another list of names or statements (answers).';
 $string['pluginname_link'] = 'question/type/match';
+$string['pluginnameadding'] = 'Adding a Matching question';
+$string['pluginnameediting'] = 'Editing a Matching question';
 $string['pluginnamesummary'] = 'The answer to each of a number of sub-question must be selected from a list of possibilities.';
 $string['privacy:metadata'] = 'The Matching question type plugin does not store any personal data.';
 $string['shuffle'] = 'Shuffle';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'fr', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -77,7 +77,7 @@ $string['description'] = 'Description';
 $string['description_help'] = 'Saisir une phrase ou deux résumant le contenu de votre blog externe. Si aucune description n\'est fournie, la description publiée sur votre blog externe sera utilisée.';
 $string['donothaveblog'] = 'Désolé, vous n\'avez pas votre propre blog.';
 $string['editentry'] = 'Modifier un article de blog';
-$string['editexternalblog'] = 'Modifier un blog externe';
+$string['editexternalblog'] = 'Modifier ce blog externe';
 $string['emptybody'] = 'Le texte d\'un article de blog ne peut pas être vide';
 $string['emptyrssfeed'] = 'L\'URL indiquée ne pointe pas vers un flux RSS valide';
 $string['emptytitle'] = 'Le titre d\'un article de blog ne peut pas être vide';
@@ -158,17 +158,17 @@ $string['privacy:metadata:post:usermodified'] = 'L\'utilisateur qui a modifié l
 $string['privacy:path:blogassociations'] = 'Articles de blog associés';
 $string['privacy:unknown'] = 'Inconnu';
 $string['publishto'] = 'Publier pour';
+$string['publishto_help'] = 'Il y a trois options :
+
+* Vous-même (brouillon) : seul vous et les administrateurs pourront voir cet article
+* Tout le monde sur le site : tous les utilisateurs enregistrés sur ce site pourront voir cet article
+* Tout le monde : n\'importe qui pourra voir cet article, y compris des visiteurs anonymes';
 $string['publishtocourse'] = 'Les participants à un de vos cours';
 $string['publishtocourseassoc'] = 'Les participants au cours associé';
 $string['publishtocourseassocparam'] = 'Participants à {$a}';
 $string['publishtogroup'] = 'Les utilisateurs appartenant à un même groupe que vous';
 $string['publishtogroupassoc'] = 'Les membres de votre groupe dans le cours associé';
 $string['publishtogroupassocparam'] = 'Les membres de votre groupe dans {$a}';
-$string['publishto_help'] = 'Il y a trois options :
-
-* Vous-même (brouillon) : seul vous et les administrateurs pourront voir cet article
-* Tout le monde sur le site : tous les utilisateurs enregistrés sur ce site pourront voir cet article
-* Tout le monde : n\'importe qui pourra voir cet article, y compris des visiteurs anonymes';
 $string['publishtonoone'] = 'Vous-même (brouillon)';
 $string['publishtosite'] = 'Tout le monde sur ce site';
 $string['publishtoworld'] = 'Tout le monde (grand public)';

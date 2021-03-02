@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multianswer', language 'el', version '3.8'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -42,10 +42,10 @@ $string['nooptionsforsubquestion'] = 'Αδυναμία λήψης επιλογώ
 $string['noquestions'] = 'Η ερώτηση τύπου ενσωματωμένων απαντήσεων (Cloze πολλαπλής απάντησης) «<strong>{$a}</strong>» δεν περιέχει καμία ερώτηση';
 $string['pleaseananswerallparts'] = 'Απαντήστε σε όλα τα τμήματα της ερώτησης.';
 $string['pluginname'] = 'Ενσωματωμένες απαντήσεις (Cloze)';
-$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης με Ενσωματωμένες απαντήσεις (Cloze)';
-$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης με Ενσωματωμένες απαντήσεις (Cloze)';
 $string['pluginname_help'] = 'Οι ερωτήσεις Ενσωματωμένων απαντήσεων (Cloze) αποτελούνται από ένα απόσπασμα κειμένου με ερωτήσεις, όπως π.χ. πολλαπλής επιλογής ή σύντομης απάντησης, ενσωματωμένες μέσα σε αυτό.';
 $string['pluginname_link'] = 'ερώτηση/τύπος/πολλαπλήςαπάντησης';
+$string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης με Ενσωματωμένες απαντήσεις (Cloze)';
+$string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης με Ενσωματωμένες απαντήσεις (Cloze)';
 $string['pluginnamesummary'] = 'Οι ερωτήσεις αυτού του τύπου είναι πολύ ευέλικτες, αλλά μπορούν να δημιουργηθούν μόνο με την εισαγωγή κειμένου το οποίο περιέχει ειδικούς κωδικούς που δημιουργούν ενσωματωμένες ερωτήσεις πολλαπλής επιλογής, σύντομης απάντησης και αριθμητικές.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις τύπου ενσωματωμένων απαντήσεων (Cloze)» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['qtypenotrecognized'] = 'τύπος ερώτησης {$a} μη αναγνωρίσιμος';

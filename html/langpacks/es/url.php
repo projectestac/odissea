@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'url', language 'es', version '3.8'.
  *
- * @package   url
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     url
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -35,7 +35,6 @@ $string['contentheader'] = 'Contenido';
 $string['createurl'] = 'Crear una URL';
 $string['displayoptions'] = 'Opciones de visualización disponibles';
 $string['displayselect'] = 'Mostrar';
-$string['displayselectexplain'] = 'Elija el modo de visualización; por desgracia no todos los modos son adecuados para todas las direcciones URL.';
 $string['displayselect_help'] = 'Este parámetro, junto con el tipo de URL, y siempre que el navegador permita incorporar código, determina cómo se muestra la dirección URL.
 Las opciones pueden incluir:
 
@@ -43,6 +42,7 @@ Las opciones pueden incluir:
 * Incrustar - La URL se muestra dentro de la página debajo de la barra de navegación junto con la descripción y cualquier otro bloque
 * Abrir  - Sólo se muestra la dirección en la ventana del navegador
 * En ventana emergente - La URL se muestra en una ventana nueva del navegador sin menús y sin barra de direcciones';
+$string['displayselectexplain'] = 'Elija el modo de visualización; por desgracia no todos los modos son adecuados para todas las direcciones URL.';
 $string['externalurl'] = 'URL externa';
 $string['framesize'] = 'Altura del marco';
 $string['indicator:cognitivedepth'] = 'URL cognitiva';
@@ -59,7 +59,7 @@ Hay una serie de opciones de visualización de la URL, como incrustada o abierta
 Tenga en cuenta que las URLs también pueden ser añadidas en otros recursos o actividades a través del editor de texto.';
 $string['modulenameplural'] = 'URLs';
 $string['page-mod-url-x'] = 'Cualquier página del módulo URL';
-$string['parameterinfo'] = 'parámetro=variable';
+$string['parameterinfo'] = '&amp;parámetro=variable';
 $string['parametersheader'] = 'Parámetros';
 $string['parametersheader_help'] = 'Algunas variables internas de Moodle pueden ser añadidas automáticamente al la URL. Escriba el nombre del parámetro en cada caja de texto y seleccione la variable correspondiente.';
 $string['pluginadministration'] = 'Administración del módulo URL';

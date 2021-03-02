@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'forum', language 'el', version '3.8'.
  *
- * @package   forum
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     forum
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['actionsforgraderinterface'] = 'Ενέργειες για τη διεπαφή βαθμολογητή';
 $string['actionsforpost'] = 'Ενέργειες για ανάρτηση';
-$string['activityoverview'] = 'Υπάρχουν νέες αναρτήσεις στο φόρουμ';
+$string['activityoverview'] = 'Υπάρχουν νέες δημοσιεύσεις φόρουμ';
 $string['addanewdiscussion'] = 'Προσθήκη νέου θέματος συζήτησης';
 $string['addanewquestion'] = 'Προσθήκη νέας ερώτησης';
 $string['addanewtopic'] = 'Προσθήκη νέου θέματος';
@@ -56,10 +56,10 @@ $string['authorreplyingprivatelytoauthor'] = 'Ο/Η {$a->respondant} σε απά
 $string['authorreplyingtoauthor'] = 'Ο/Η {$a->respondant} σε απάντηση στον/στην {$a->author}';
 $string['availability'] = 'Διαθεσιμότητα';
 $string['blockafter'] = 'Ανώτατο όριο αναρτήσεων για μπλοκάρισμα';
-$string['blockafter_help'] = 'Αυτή η ρύθμιση καθορίζει τον μέγιστο αριθμό αναρτήσεων τις οποίες μπορεί να κάνει ένας χρήστης σε μια δεδομένη χρονική περίοδο. Οι χρήστες με την δυνατότητα mod/forum:postwithoutthrottling εξαιρούνται από όρια αναρτήσεων.';
+$string['blockafter_help'] = 'Αυτή η ρύθμιση καθορίζει τον μέγιστο αριθμό δημοσιεύσεων τις οποίες μπορεί να κάνει ένας χρήστης σε μια δεδομένη χρονική περίοδο. Οι χρήστες με την δυνατότητα mod/forum:postwithoutthrottling εξαιρούνται από όρια δημοσιεύσεων.';
 $string['blockperiod'] = 'Χρονική περίοδος για μπλοκάρισμα';
+$string['blockperiod_help'] = 'Οι μαθητές μπορούν να μπλοκαριστούν από το να κάνουν περισσότερες από ένα δεδομένο αριθμό δημοσιεύσεων σε μια δεδομένη χρονική περίοδο. Οι χρήστες με την δυνατότητα mod/forum:postwithoutthrottling εξαιρούνται από όρια δημοσιεύσεων.';
 $string['blockperioddisabled'] = 'Όχι μπλοκάρισμα';
-$string['blockperiod_help'] = 'Οι μαθητές μπορούν να μπλοκαριστούν από το να κάνουν περισσότερες από ένα δεδομένο αριθμό αναρτήσεων σε μια δεδομένη χρονική περίοδο. Οι χρήστες με την δυνατότητα mod/forum:postwithoutthrottling εξαιρούνται από όρια αναρτήσεων.';
 $string['blogforum'] = 'Το τυπικό φόρουμ να εμφανίζεται με μορφότυπο παρόμοιο με ιστολογίου';
 $string['bynameondate'] = 'από {$a->name} - {$a->date}';
 $string['cachedef_forum_is_tracked'] = 'Κατάσταση παρακολούθησης φόρουμ για τον χρήστη';
@@ -70,12 +70,12 @@ $string['cannotadddiscussion'] = 'Η προσθήκη συζητήσεων σε 
 $string['cannotadddiscussionall'] = 'Δεν έχετε δικαίωμα προσθήκης νέου θέματος συζήτησης για όλους τους συμμετέχοντες.';
 $string['cannotadddiscussiongroup'] = 'Δεν μπορείτε να δημιουργήσετε μια συζήτηση επειδή δεν είστε μέλος καμίας ομάδας.';
 $string['cannotaddsubscriber'] = 'Δεν ήταν δυνατό να προστεθεί ο συνδρομητής με αναγνωριστικό {$a} σε αυτό το φόρουμ!';
-$string['cannotaddteacherforumto'] = 'Αδυναμία προσθήκης του μετατραπέντος στιγμιότυπου του φόρουμ διδασκόντων στο τμήμα 0 στο μάθημα';
+$string['cannotaddteacherforumto'] = 'Αδυναμία προσθήκης του στιγμιοτύπου του παραχθέντος από την μετατροπή φόρουμ διδάσκοντος στο τμήμα 0 στο μάθημα';
 $string['cannotcreatediscussion'] = 'Δεν ήταν δυνατή η δημιουργία νέας συζήτησης';
 $string['cannotcreateinstanceforteacher'] = 'Δεν ήταν δυνατό να δημιουργηθεί το νέο στιγμιότυπο αρθρώματος μαθήματος για το φόρουμ διδάσκοντος';
 $string['cannotdeletediscussioninsinglediscussion'] = 'Δεν μπορείτε να διαγράψετε την πρώτη ανάρτηση ένα απλό φόρουμ μιας συζήτησης';
 $string['cannotdeletepost'] = 'Δεν είναι δυνατή η διαγραφή αυτής της ανάρτησης!';
-$string['cannoteditposts'] = 'Δεν είναι δυνατή η επεξεργασία αναρτήσεων άλλων χρηστών!';
+$string['cannoteditposts'] = 'Δεν είναι δυνατή η επεξεργασία δημοσιεύσεων άλλων χρηστών!';
 $string['cannotexportforum'] = 'Δεν μπορείτε να εξαγάγετε αυτό το φόρουμ';
 $string['cannotfavourite'] = 'Λυπούμαστε, αλλά δεν έχετε την άδεια να επισημάνετε συζητήσεις με αστερίσκο.';
 $string['cannotfinddiscussion'] = 'Δεν ήταν δυνατόν να βρεθεί η συζήτηση σε αυτό το φόρουμ';
@@ -111,9 +111,9 @@ $string['completiondiscussions'] = 'Ο μαθητής πρέπει να δημι
 $string['completiondiscussionsdesc'] = 'Ο μαθητής πρέπει να δημιουργήσει τουλάχιστον {$a} συζητήσεις';
 $string['completiondiscussionsgroup'] = 'Απαιτούνται συζητήσεις';
 $string['completiondiscussionshelp'] = 'απαιτούνται συζητήσεις για την ολοκλήρωση';
-$string['completionposts'] = 'Οι μαθητές πρέπει να αναρτήσουν συζητήσεις ή απαντήσεις:';
+$string['completionposts'] = 'Οι μαθητές πρέπει να δημοσιεύσουν συζητήσεις ή απαντήσεις:';
 $string['completionpostsdesc'] = 'Ο μαθητής πρέπει να αναρτήσει τουλάχιστον {$a} συζητήσεις/-η ή απαντήσεις/-η';
-$string['completionpostsgroup'] = 'Απαιτούνται αναρτήσεις';
+$string['completionpostsgroup'] = 'Απαιτούνται δημοσιεύσεις';
 $string['completionpostshelp'] = 'απαιτούνται συζητήσεις ή απαντήσεις για την ολοκλήρωση';
 $string['completionreplies'] = 'Οι μαθητές θα πρέπει να αναρτούν απαντήσεις:';
 $string['completionrepliesdesc'] = 'Ο μαθητής πρέπει να αναρτήσει {$a} τουλάχιστον αναρτήσεις/-η';
@@ -124,9 +124,9 @@ $string['configdigestmailtime'] = 'Για τους χρήστες που επι�
 $string['configdisplaymode'] = 'Ο προεπιλεγμένος τρόπος εμφάνισης συζητήσεων αν δεν έχει καθοριστεί κάποιος ακόμα.';
 $string['configenablerssfeeds'] = 'Αυτός ο διακόπτης θα επιτρέψει τη δυνατότητα τροφοδοσιών RSS για όλα τα φόρουμ. Θα πρέπει όμως ακόμα, να ενεργοποιήσετε τις τροφοδοσίες χειροκίνητα στις ρυθμίσεις του κάθε φόρουμ.';
 $string['configenabletimedposts'] = 'Ορίστε το σε «ναι» εάν επιθυμείτε να επιτρέψετε ρύθμιση περιόδων εμφάνισης κατά την ανάρτηση μιας νέας συζήτησης σε ένα φόρουμ';
-$string['configlongpost'] = 'Οποιαδήποτε ανάρτηση μεγαλύτερη από αυτό το μήκος (σε χαρακτήρες μη συμπεριλαμβανομένου του HTML κώδικα) θεωρείται μεγάλη. Αναρτήσεις που εμφανίζονται στην αρχική σελίδα ιστοτόπου, σε σελίδες μαθημάτων κοινωνικού μορφότυπου, ή σε προφίλ χρηστών περικόπτονται προς ένα φυσικό σημείο κάπου μεταξύ των τιμών των forum_shortpost και forum_longpost.';
+$string['configlongpost'] = 'Οποιαδήποτε δημοσίευση μεγαλύτερη από αυτό το μήκος (σε χαρακτήρες μη συμπεριλαμβανομένου του HTML κώδικα) θεωρείται μεγάλη. Δημοσιεύσεις που εμφανίζονται στην αρχική σελίδα ιστοτόπου, σε σελίδες μαθημάτων κοινωνικού μορφότυπου, ή σε προφίλ χρηστών περικόπτονται προς ένα φυσικό σημείο κάπου μεταξύ των τιμών των forum_shortpost και forum_longpost.';
 $string['configmanydiscussions'] = 'Ο μέγιστος αριθμός συζητήσεων που εμφανίζονται σε ένα φόρουμ ανά σελίδα';
-$string['configmaxattachments'] = 'Ο προεπιλεγμένος μέγιστος αριθμός συνημμένων που επιτρέπονται ανά ανάρτηση.';
+$string['configmaxattachments'] = 'Ο προεπιλεγμένος μέγιστος αριθμός συνημμένων που επιτρέπονται ανά δημοσίευση.';
 $string['configmaxbytes'] = 'Το προεπιλεγμένο μέγιστο μέγεθος για όλα τα συνημμένα σε φόρουμ του ιστοτόπου (εξαρτάται και από τα όρια του μαθήματος και άλλων τοπικών ρυθμίσεων)';
 $string['configoldpostdays'] = 'Αριθμός ημερών μέχρι να θεωρηθεί μια ανάρτηση ως αναγνωσμένη.';
 $string['configreplytouser'] = 'Όταν μια ανάρτηση φόρουμ αποστέλλεται με ηλε.ταχυδρομείο, να περιέχει τη διεύθυνση του αποστολέα, ώστε οι παραλήπτες να μπορούν να απαντήσουν προσωπικά και όχι μόνο μέσω του φόρουμ; Ακόμα και αν οριστεί σε «Ναι» οι χρήστες μπορούν να επιλέξουν μέσα από το προφίλ τους να αποκρύπτουν την διεύθυνση ηλε.ταχυδρομείου τους.';
@@ -157,7 +157,7 @@ $string['deletedposts'] = 'Αυτές οι αναρτήσεις έχουν δι�
 $string['deleteduser'] = 'Διαγραμμένος χρήστης';
 $string['deletesure'] = 'Σίγουρα θέλετε να διαγράψετε αυτήν την ανάρτηση;';
 $string['deletesureplural'] = 'Σίγουρα θέλετε να διαγράψετε αυτήν την ανάρτηση και όλες τις απαντήσεις; ({$a} αναρτήσεις)';
-$string['digestmailheader'] = 'Αυτή είναι η ημερήσια σύνοψη νέων αναρτήσεων από τα φόρουμ του ιστοτόπου {$a->sitename}. Για να αλλάξετε τις προεπιλεγμένες ρυθμίσεις ηλε.ταχυδρομείου του φόρουμ, επισκεφθείτε τη σελίδα {$a->userprefs}.';
+$string['digestmailheader'] = 'Αυτή είναι η ημερήσια σύνοψη νέων δημοσιεύσεων από τα φόρουμ του ιστοτόπου {$a->sitename}. Για να αλλάξετε τις προεπιλεγμένες ρυθμίσεις ηλε.ταχυδρομείου του φόρουμ, επισκεφθείτε τη σελίδα {$a->userprefs}.';
 $string['digestmailpost'] = 'Αλλαγή των προτιμήσεων σύνοψης φόρουμ';
 $string['digestmailpostlink'] = 'Αλλαγή των προτιμήσεων σύνοψης φόρουμ: {$a}';
 $string['digestmailprefs'] = 'το προφίλ σας ως χρήστης';
@@ -202,19 +202,19 @@ $string['discussionsubscribed'] = 'Έχετε τώρα εγγραφεί σε α�
 $string['discussionsubscribestart'] = 'Να μου αποστέλλονται ειδοποιήσεις για νέες αναρτήσεις σε αυτή τη συζήτηση';
 $string['discussionsubscribestop'] = 'Δεν θέλω να ενημερώνομαι για νέες αναρτήσεις σε αυτή τη συζήτηση';
 $string['discussionsubscription'] = 'Εγγραφή στη συζήτηση';
-$string['discussionsubscription_help'] = 'Κάνοντας εγγραφή σε μια συζήτηση σημαίνει ότι θα λαμβάνετε ειδοποιήσεις (με ηλε.ταχυδρομείο) όταν γίνονται νέες αναρτήσεις σε αυτή τη συζήτηση.';
+$string['discussionsubscription_help'] = 'Κάνοντας εγγραφή στη συζήτηση σημαίνει ότι θα λαμβάνετε ειδοποιήσεις όταν γίνονται νέες δημοσιεύσεις σε αυτή τη συζήτηση.';
 $string['discussionunpin'] = 'Ξεκαρφιτσώνω';
 $string['discussionunsubscribed'] = 'Έχετε τώρα απεγγραφεί από αυτή τη συζήτηση.';
 $string['discussthistopic'] = 'Συζήτηση αυτού του θέματος';
 $string['discusstopicname'] = 'Συζητήστε το θέμα: {$a}';
 $string['displayend'] = 'Τέλος εμφάνισης';
-$string['displayenddate'] = 'Τέλος εμφάνισης: {$a}.';
 $string['displayend_help'] = 'Αυτή η ρύθμιση καθορίζει εάν πρέπει να γίνει απόκρυψη μιας ανάρτησης μετά από μια συγκεκριμένη ημερομηνία. Σημειώστε πως οι διαχειριστές μπορούν πάντα να βλέπουν αναρτήσεις σε φόρουμ.';
+$string['displayenddate'] = 'Τέλος εμφάνισης: {$a}.';
 $string['displaymode'] = 'Λειτουργία εμφάνισης';
 $string['displayperiod'] = 'Περίοδος εμφάνισης';
 $string['displaystart'] = 'Έναρξη εμφάνισης';
-$string['displaystartdate'] = 'Έναρξη εμφάνισης: {$a}.';
 $string['displaystart_help'] = 'Αυτή η ρύθμιση καθορίζει εάν πρέπει να γίνει εμφάνιση μιας ανάρτησης μετά από μια συγκεκριμένη ημερομηνία. Σημειώστε πως οι διαχειριστές μπορούν πάντα να βλέπουν αναρτήσεις σε φόρουμ.';
+$string['displaystartdate'] = 'Έναρξη εμφάνισης: {$a}.';
 $string['displaywordcount'] = 'Εμφάνιση αριθμού λέξεων';
 $string['displaywordcount_help'] = 'Αυτή η ρύθμιση καθορίζει εάν πρέπει να εμφανίζεται ή όχι το πλήθος των λέξεων κάθε ανάρτησης.';
 $string['duedate'] = 'Οφειλόμενη ημερομηνία';
@@ -233,9 +233,9 @@ $string['emaildigesttype'] = 'Επιλογές σύνοψης μηνυμάτων
 $string['emaildigesttype_help'] = 'Ο τύπος ειδοποίησης που θα λαμβάνετε για κάθε φόρουμ.
 
 * Προεπιλογή - εφαρμόζεται η ρύθμιση σύνοψης που υπάρχει στο προφίλ χρήστη σας. Αν ενημερώσετε το προφίλ σας, τότε η αλλαγή θα αντικατοπτρίζεται και εδώ.
-* Χωρίς σύνοψη - θα λαμβάνετε ένα μήνυμα ηλε.ταχυδρομείου ανά ανάρτηση σε φόρουμ.
-* Σύνοψη - πλήρεις αναρτήσεις - θα λαμβάνετε μια σύνοψη μέσω ηλε.ταχυδρομείου ανά ημέρα που θα περιέχει το πλήρες περιεχόμενο κάθε ανάρτησης σε φόρουμ.
-* Σύνοψη - θέματα μόνο - θα λαμβάνετε μια σύνοψη μέσω ηλε.ταχυδρομείου ανά ημέρα που θα περιέχει μόνο το θέμα της κάθε ανάρτησης σε φόρουμ.';
+* Χωρίς σύνοψη - θα λαμβάνετε ένα μήνυμα ηλε.ταχυδρομείου ανά δημοσίευση σε φόρουμ.
+* Σύνοψη - πλήρεις δημοσιεύσεις - θα λαμβάνετε μια σύνοψη μέσω ηλε.ταχυδρομείου ανά ημέρα που θα περιέχει το πλήρες περιεχόμενο κάθε δημοσίευσης σε φόρουμ.
+* Σύνοψη - θέματα μόνο - θα λαμβάνετε μια σύνοψη μέσω ηλε.ταχυδρομείου ανά ημέρα που θα περιέχει μόνο το θέμα της κάθε δημοσίευσης σε φόρουμ.';
 $string['emptymessage'] = 'Υπήρξε κάποιο σφάλμα στο μήνυμά σας. Ίσως το αφήσατε κενό ή το συνημμένο ήταν πολύ μεγάλο. Οι αλλαγές σας ΔΕΝ αποθηκεύτηκαν.';
 $string['errorcannotlock'] = 'Δεν έχετε το δικαίωμα να κλειδώνετε συζητήσεις.';
 $string['erroremptymessage'] = 'Το μήνυμα της ανάρτησης δεν μπορεί να είναι άδειο';
@@ -287,10 +287,6 @@ $string['forum:addinstance'] = 'Προσθήκη νέου φόρουμ';
 $string['forum:addnews'] = 'Προσθήκη ανακοινώσεων';
 $string['forum:addquestion'] = 'Προσθήκη ερώτησης';
 $string['forum:allowforcesubscribe'] = 'Επιτρέπεται υποχρεωτική εγγραφή';
-$string['forumauthorhidden'] = 'Συγγραφέας (κρυμμένος)';
-$string['forumblockingalmosttoomanyposts'] = 'Πλησιάζετε το ανώτατο όριο αναρτήσεων. Έχετε αναρτήσει {$a->numposts} φορές στα τελευταία {$a->blockperiod} και το όριο είναι {$a->blockafter} αναρτήσεις.';
-$string['forumbodydeleted'] = 'Το περιεχόμενο αυτής της ανάρτησης στο φόρουμ έχει καταργηθεί και δεν είναι πλέον δυνατή η πρόσβαση.';
-$string['forumbodyhidden'] = 'Δεν μπορείτε να δείτε αυτήν την ανάρτηση, πιθανώς επειδή δεν έχετε αναρτήσει στη συζήτηση, ο μέγιστος χρόνος επεξεργασίας δεν έχει ακόμη περάσει, η συζήτηση δεν έχει ξεκινήσει ή η συζήτηση έχει λήξει.';
 $string['forum:canoverridecutoff'] = 'Ανάρτηση σε φόρουμ μετά την ημερομηνία λήξης τους';
 $string['forum:canoverridediscussionlock'] = 'Απάντηση (και) σε κλειδωμένες συζητήσεις';
 $string['forum:canposttomygroups'] = 'Μπορεί να γίνει ανάρτηση σε όλες τις ομάδες στις οποίες έχετε πρόσβαση';
@@ -304,24 +300,35 @@ $string['forum:exportforum'] = 'Εξαγωγή φόρουμ';
 $string['forum:exportownpost'] = 'Εξαγωγή των δικών σας αναρτήσεων';
 $string['forum:exportpost'] = 'Εξαγωγή ανάρτησης';
 $string['forum:grade'] = 'Βαθμολόγηση του φόρουμ';
-$string['forumgrader'] = 'Βαθμολογητής φόρουμ';
-$string['forumgradingnavigation'] = 'Πλοήγηση βαθμολόγησης φόρουμ';
-$string['forumgradingpanel'] = 'Πίνακας βαθμολόγησης φόρουμ';
-$string['forumintro'] = 'Περιγραφή';
 $string['forum:managesubscriptions'] = 'Διαχείριση εγγραφών';
 $string['forum:movediscussions'] = 'Μετακίνηση συζητήσεων';
-$string['forumname'] = 'Όνομα φόρουμ';
 $string['forum:pindiscussions'] = 'Καρφίτσωμα συζητήσεων';
 $string['forum:postprivatereply'] = 'Απάντηση ιδιωτικά (όχι δημόσια) στις αναρτήσεις';
-$string['forumposts'] = 'Αναρτήσεις φόρουμ';
 $string['forum:postwithoutthrottling'] = 'Εξαίρεση από ανώτατο όριο αναρτήσεων';
 $string['forum:rate'] = 'Βαθμολόγηση αναρτήσεων';
 $string['forum:readprivatereplies'] = 'Εμφάνιση ιδιωτικών απαντήσεων';
 $string['forum:replynews'] = 'Απάντηση στις ανακοινώσεις';
 $string['forum:replypost'] = 'Απάντηση στις αναρτήσεις';
-$string['forums'] = 'Φόρουμ';
 $string['forum:splitdiscussions'] = 'Διαίρεση συζητήσεων';
 $string['forum:startdiscussion'] = 'Έναρξη νέων συζητήσεων';
+$string['forum:viewallratings'] = 'Εμφάνιση όλων των πρώτων αξιολογήσεων που δόθηκαν ατομικά';
+$string['forum:viewanyrating'] = 'Εμφάνιση των συνολικών αξιολογήσεων που έλαβε ο καθένας';
+$string['forum:viewdiscussion'] = 'Εμφάνιση συζητήσεων';
+$string['forum:viewhiddentimedposts'] = 'Εμφάνιση κρυμμένων χρονομετρημένων αναρτήσεων';
+$string['forum:viewqandawithoutposting'] = 'Πάντα να γίνεται προβολή των αναρτήσεων Ερωτήσεων και Απαντήσεων';
+$string['forum:viewrating'] = 'Εμφάνιση της συνολικής βαθμολογίας που λάβατε';
+$string['forum:viewsubscribers'] = 'Εμφάνιση εγγεγραμμένων';
+$string['forumauthorhidden'] = 'Συγγραφέας (κρυμμένος)';
+$string['forumblockingalmosttoomanyposts'] = 'Πλησιάζετε το ανώτατο όριο αναρτήσεων. Έχετε αναρτήσει {$a->numposts} φορές στα τελευταία {$a->blockperiod} και το όριο είναι {$a->blockafter} αναρτήσεις.';
+$string['forumbodydeleted'] = 'Το περιεχόμενο αυτής της ανάρτησης στο φόρουμ έχει καταργηθεί και δεν είναι πλέον δυνατή η πρόσβαση.';
+$string['forumbodyhidden'] = 'Δεν μπορείτε να δείτε αυτήν την ανάρτηση, πιθανώς επειδή δεν έχετε αναρτήσει στη συζήτηση, ο μέγιστος χρόνος επεξεργασίας δεν έχει ακόμη περάσει, η συζήτηση δεν έχει ξεκινήσει ή η συζήτηση έχει λήξει.';
+$string['forumgrader'] = 'Βαθμολογητής φόρουμ';
+$string['forumgradingnavigation'] = 'Πλοήγηση βαθμολόγησης φόρουμ';
+$string['forumgradingpanel'] = 'Πίνακας βαθμολόγησης φόρουμ';
+$string['forumintro'] = 'Περιγραφή';
+$string['forumname'] = 'Όνομα φόρουμ';
+$string['forumposts'] = 'Αναρτήσεις φόρουμ';
+$string['forums'] = 'Φόρουμ';
 $string['forumsubjectdeleted'] = 'Αυτή η ανάρτηση στο φόρουμ έχει καταργηθεί';
 $string['forumsubjecthidden'] = 'Θέμα (κρυμμένο)';
 $string['forumtracked'] = 'Οι μη αναγνωσμένες αναρτήσεις παρακολουθούνται';
@@ -334,27 +341,20 @@ $string['forumtype_help'] = 'Υπάρχουν 5 τύποι φόρουμ:
 * Φόρουμ Ερώτησης & Απάντησης - Οι μαθητές πρέπει πρώτα να αναρτήσουν τις απόψεις τους προτού δουν τις αναρτήσεις των άλλων μαθητών.
 * Τυπικό φόρουμ με μορφή ιστολογίου - Ένα ανοιχτό φόρουμ όπου οποιοσδήποτε μπορεί να αρχίσει μια νέα συζήτηση οποτεδήποτε, και στο οποίο τα θέματα συζήτησης εμφανίζονται σε μια σελίδα με συνδέσμους «Συζήτηση αυτού του θέματος».
 * Τυπικό φόρουμ γενικής χρήσης - Ένα ανοιχτό φόρουμ όπου οποιοσδήποτε μπορεί να ξεκινήσει μια νέα συζήτηση οποτεδήποτε.';
-$string['forum:viewallratings'] = 'Εμφάνιση όλων των πρώτων αξιολογήσεων που δόθηκαν ατομικά';
-$string['forum:viewanyrating'] = 'Εμφάνιση των συνολικών αξιολογήσεων που έλαβε ο καθένας';
-$string['forum:viewdiscussion'] = 'Εμφάνιση συζητήσεων';
-$string['forum:viewhiddentimedposts'] = 'Εμφάνιση κρυμμένων χρονομετρημένων αναρτήσεων';
-$string['forum:viewqandawithoutposting'] = 'Πάντα να γίνεται προβολή των αναρτήσεων Ερωτήσεων και Απαντήσεων';
-$string['forum:viewrating'] = 'Εμφάνιση της συνολικής βαθμολογίας που λάβατε';
-$string['forum:viewsubscribers'] = 'Εμφάνιση εγγεγραμμένων';
 $string['generalforum'] = 'Τυπικό φόρουμ γενικής χρήσης';
 $string['generalforums'] = 'Γενικά φόρουμ';
-$string['graded'] = 'Βαθμολογήθηκε';
-$string['gradeforrating'] = 'Βαθμός για αξιολόγηση: {$a->str_long_grade}';
-$string['gradeforratinghidden'] = 'Απόκρυψη βαθμού για αξιολόγηση';
 $string['grade_forum_header'] = 'Βαθμολόγηση ολόκληρου του φόρουμ';
 $string['grade_forum_name'] = 'Ολόκληρο το φόρουμ';
 $string['grade_forum_title'] = 'Βαθμός';
+$string['grade_rating_name'] = 'Αξιολόγηση';
+$string['graded'] = 'Βαθμολογήθηκε';
+$string['gradeforrating'] = 'Βαθμός για αξιολόγηση: {$a->str_long_grade}';
+$string['gradeforratinghidden'] = 'Απόκρυψη βαθμού για αξιολόγηση';
 $string['gradeforwholeforum'] = 'Βαθμός για το φόρουμ: {$a->str_long_grade}';
 $string['gradeforwholeforumhidden'] = 'Απόκρυψη βαθμού για το φόρουμ';
 $string['gradeitem:forum'] = 'Φόρουμ';
 $string['gradeitemnameforrating'] = 'Βαθμός αξιολόγησης για {$a->name}';
 $string['gradeitemnameforwholeforum'] = 'Βαθμολόγηση ολόκληρου του φόρουμ για {$a->name}';
-$string['grade_rating_name'] = 'Αξιολόγηση';
 $string['grades:gradesavedfor'] = 'Ο βαθμός αποθηκεύτηκε για τον/την {$a->fullname}';
 $string['grades:gradesavefailed'] = 'Αδυναμία αποθήκευσης βαθμού για τον/την {$a->fullname}: {$a->error}';
 $string['gradeusers'] = 'Βαθμολόγηση χρηστών';
@@ -366,15 +366,15 @@ $string['hidepreviousrepliescount'] = 'Απόκρυψη προηγουμένων
 $string['hideusersearch'] = 'Απόκρυψη αναζήτησης χρήστη';
 $string['indexoutoftotal'] = '{$a->index} στα {$a->total}';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης φόρουμ';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Φόρουμ.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης φόρουμ';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Φόρουμ κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση, Υποβολή, Εμφάνιση ανατροφοδότησης, Σχόλιο στην ανατροφοδότηση, Επανυποβολή μετά την εμφάνιση της ανατροφοδότησης)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Φόρουμ.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Φόρουμ';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Φόρουμ.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Φόρουμ';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Φόρουμ κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος, Συμμετέχων με άλλους)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Φόρουμ.';
 $string['inforum'] = 'σε {$a}';
 $string['inpagereplysubject'] = 'Re: {$a}';
 $string['inreplyto'] = 'Σε απάντηση σε {$a}';
@@ -418,9 +418,9 @@ $string['maxattachmentsize'] = 'Μέγιστο μέγεθος συνημμένο
 $string['maxattachmentsize_help'] = 'Αυτή η ρύθμιση ορίζει το μέγιστο μέγεθος συνημμένου αρχείου που μπορεί να επισυναφθεί σε μια ανάρτηση σε φόρουμ.';
 $string['maxtimehaspassed'] = 'Συγγνώμη, αλλά ο μέγιστος χρόνος για την επεξεργασία αυτού του μηνύματος ({$a}) έχει παρέλθει!';
 $string['message'] = 'Μήνυμα';
-$string['messageinboundattachmentdisallowed'] = 'Δεν είναι δυνατή η ανάρτηση της απάντησής σας, διότι περιλαμβάνει ένα συνημμένο και το φόρουμ δεν επιτρέπει συνημμένα.';
-$string['messageinboundfilecountexceeded'] = 'Δεν είναι δυνατή η ανάρτηση της απάντησής σας, διότι περιλαμβάνει περισσότερα από τον μέγιστο αριθμό συνημμένων που επιτρέπονται για το φόρουμ ({$a->forum->maxattachments}).';
-$string['messageinboundfilesizeexceeded'] = 'Δεν είναι δυνατή η ανάρτηση της απάντησής σας, διότι το συνολικό μέγεθος συνημμένων ({$a->filesize}) είναι μεγαλύτερο από το μέγιστο επιτρεπόμενο μέγεθος για το φόρουμ ({$a->maxbytes}).';
+$string['messageinboundattachmentdisallowed'] = 'Δεν είναι δυνατή η δημοσίευση της απάντησής σας, διότι περιλαμβάνει ένα συνημμένο και το φόρουμ δεν επιτρέπει συνημμένα.';
+$string['messageinboundfilecountexceeded'] = 'Δεν είναι δυνατή η δημοσίευση της απάντησής σας, διότι περιλαμβάνει περισσότερα από τον μέγιστο αριθμό συνημμένων που επιτρέπονται για το φόρουμ ({$a->forum->maxattachments}).';
+$string['messageinboundfilesizeexceeded'] = 'Δεν είναι δυνατή η δημοσίευση της απάντησής σας, διότι το συνολικό μέγεθος συνημμένων ({$a->filesize}) είναι μεγαλύτερο από το μέγιστο επιτρεπόμενο μέγεθος για το φόρουμ ({$a->maxbytes}).';
 $string['messageinboundforumhidden'] = 'Δεν είναι δυνατή η ανάρτηση της απάντησής σας, διότι το φόρουμ είναι προς το παρόν μη διαθέσιμο.';
 $string['messageinboundnopostforum'] = 'Δεν είναι δυνατή η ανάρτηση της απάντησής σας, διότι δεν έχετε δικαίωμα ανάρτησης στο φόρουμ {$a->forum->name}.';
 $string['messageinboundthresholdhit'] = 'Δεν είναι δυνατή η ανάρτηση της απάντησής σας. Έχετε υπερβεί το όριο αναρτήσεων που έχει οριστεί για αυτό το φόρουμ.';
@@ -468,7 +468,7 @@ $string['nameteacher'] = 'Φόρουμ διδασκόντων';
 $string['newforumposts'] = 'Νέες αναρτήσεις φόρουμ';
 $string['nextdiscussiona'] = 'Επόμενη συζήτηση: {$a}';
 $string['nextuser'] = 'Αποθηκεύστε τις αλλαγές και προχωρήστε στον επόμενο χρήστη';
-$string['noattachments'] = 'Δεν υπάρχουν συνημμένα σε αυτή τη ανάρτηση';
+$string['noattachments'] = 'Δεν υπάρχουν συνημμένα σε αυτή τη δημοσίευση';
 $string['nodiscussions'] = 'Δεν υπάρχουν ακόμα θέματα συζήτησης σε αυτό το φόρουμ';
 $string['nodiscussionsstartedby'] = 'Καμία συζήτηση δεν ξεκίνησε από το χρήστη {$a}';
 $string['nodiscussionsstartedbyyou'] = 'Δεν έχετε ξεκινήσει κάποια συζήτηση ακόμα';
@@ -480,9 +480,9 @@ $string['nonews'] = 'Δεν έχουν αναρτηθεί ακόμα ανακο�
 $string['noonecansubscribenow'] = 'Δεν επιτρέπονται πλέον εγγραφές';
 $string['nopermissiontosubscribe'] = 'Δεν έχετε το δικαίωμα να δείτε τους εγγεγραμμένους του φόρουμ';
 $string['nopermissiontoview'] = 'Δεν έχετε δικαίωμα να δείτε αυτή την ανάρτηση';
-$string['nopostforum'] = 'Συγνώμη, δεν επιτρέπεται να αναρτήσετε σε αυτό το φόρουμ';
+$string['nopostforum'] = 'Συγνώμη, δεν επιτρέπεται να δημοσιεύσετε σε αυτό το φόρουμ';
 $string['noposts'] = 'Καμία ανάρτηση';
-$string['nopostsmadebyuser'] = 'Ο/Η {$a} δεν έχει κάνει καμία ανάρτηση';
+$string['nopostsmadebyuser'] = 'Ο/Η {$a} δεν έχει κάνει καμία δημοσίευση';
 $string['nopostsmadebyyou'] = 'Δεν έχετε αναρτήσει κάτι';
 $string['noquestions'] = 'Δεν υπάρχουν ερωτήσεις ακόμα σε αυτό το φόρουμ';
 $string['nosubscribers'] = 'Δεν υπάρχουν εγγεγραμμένοι ακόμα σε αυτό το φόρουμ';
@@ -531,7 +531,7 @@ $string['postbymailsuccess_html'] = 'Η απάντησή σας <a href="{$a->di
 $string['postbyuser'] = '«{$a->post}» από «{$a->user}»';
 $string['postincontext'] = 'Δείτε αυτήν την ανάρτηση στα συμφραζόμενά της';
 $string['postisprivatereply'] = 'Αυτή η ανάρτηση είναι ιδιωτική. Δεν είναι ορατή σε άλλους χρήστες.';
-$string['postmailinfolink'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που αναρτήθηκε στο {$a->coursename}.
+$string['postmailinfolink'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που δημοσιεύτηκε στο {$a->coursename}.
 
 Για να απαντήσετε, πατήστε σε αυτόν το σύνδεσμο: {$a->replylink}';
 $string['postmailnow'] = '<p> Αυτή η ανάρτηση θα αποσταλεί αμέσως με ηλε.ταχυδρομείο σε όλους τους εγγεγραμμένους στο φόρουμ.</p>';
@@ -560,14 +560,14 @@ $string['privacy:metadata:forum_digests'] = 'Πληροφορίες σχετικ
 $string['privacy:metadata:forum_digests:forum'] = 'Το φόρουμ στο οποίο έγινε εγγραφή.';
 $string['privacy:metadata:forum_digests:maildigest'] = 'Η προτίμηση σύνοψης.';
 $string['privacy:metadata:forum_digests:userid'] = 'Το αναγνωριστικό του χρήστη με την προτίμηση σύνοψης.';
-$string['privacy:metadata:forum_discussions'] = 'Πληροφορίες σχετικά με τις μεμονωμένες συζητήσεις φόρουμ που έχει δημιουργήσει ένας χρήστης.';
-$string['privacy:metadata:forum_discussions:assessed'] = 'TODOD - τι αποθηκεύει αυτό το πεδίο';
-$string['privacy:metadata:forum_discussions:name'] = 'Το όνομα της συζήτησης, όπως επιλέχθηκε από τον συγγραφέα.';
-$string['privacy:metadata:forum_discussions:timemodified'] = 'Πότε τροποποιήθηκε τελευταία η συζήτηση.';
 $string['privacy:metadata:forum_discussion_subs'] = 'Πληροφορίες σχετικά με τις εγγραφές σε μεμονωμένες συζητήσεις φόρουμ.';
 $string['privacy:metadata:forum_discussion_subs:discussionid'] = 'Η ταυτότητα της συζήτησης στην οποία έγινε εγγραφή.';
 $string['privacy:metadata:forum_discussion_subs:preference'] = 'Η ώρα έναρξης της συνδρομής.';
 $string['privacy:metadata:forum_discussion_subs:userid'] = 'Το αναγνωριστικό του χρήστη με τη συνδρομή συζήτησης.';
+$string['privacy:metadata:forum_discussions'] = 'Πληροφορίες σχετικά με τις μεμονωμένες συζητήσεις φόρουμ που έχει δημιουργήσει ένας χρήστης.';
+$string['privacy:metadata:forum_discussions:assessed'] = 'TODOD - τι αποθηκεύει αυτό το πεδίο';
+$string['privacy:metadata:forum_discussions:name'] = 'Το όνομα της συζήτησης, όπως επιλέχθηκε από τον συγγραφέα.';
+$string['privacy:metadata:forum_discussions:timemodified'] = 'Πότε τροποποιήθηκε τελευταία η συζήτηση.';
 $string['privacy:metadata:forum_discussions:userid'] = 'Το αναγνωριστικό του χρήστη που δημιούργησε τη συζήτηση';
 $string['privacy:metadata:forum_discussions:usermodified'] = 'Το αναγνωριστικό του χρήστη που τροποποίησε τελευταία τη συζήτηση με κάποιο τρόπο.';
 $string['privacy:metadata:forum_grades'] = 'Δεδομένα βαθμών για το φόρουμ';
@@ -629,10 +629,10 @@ $string['replies'] = 'Απαντήσεις';
 $string['repliesmany'] = '{$a} απαντήσεις μέχρι τώρα';
 $string['repliesone'] = '{$a} απάντηση μέχρι τώρα';
 $string['reply'] = 'Απάντηση';
-$string['replyauthorself'] = '{$a} (εσείς)';
-$string['replyforum'] = 'Απάντηση σε φόρουμ';
 $string['reply_handler'] = 'Απάντηση σε αναρτήσεις φόρουμ μέσω ηλε.ταχυδρομείου';
 $string['reply_handler_name'] = 'Απάντηση σε αναρτήσεις φόρουμ';
+$string['replyauthorself'] = '{$a} (εσείς)';
+$string['replyforum'] = 'Απάντηση σε φόρουμ';
 $string['replyingtoauthor'] = 'Απαντήσεις σε {$a}...';
 $string['replyplaceholder'] = 'Γράψτε την απάντησή σας ...';
 $string['replytopostbyemail'] = 'Μπορείτε να απαντήσετε σε αυτό μέσω ηλε.ταχυδρομείου.';
@@ -645,12 +645,13 @@ $string['resettrackprefs'] = 'Διαγραφή όλων των προτιμήσ�
 $string['rssarticles'] = 'Αριθμός πρόσφατων άρθρων τροφοδοσίας RSS';
 $string['rssarticles_help'] = 'Αυτή η ρύθμιση ορίζει τον αριθμό των άρθρων (είτε συζητήσεων είτε αναρτήσεων) που θα συμπεριλαμβάνονται στην τροφοδοσία RSS. Γενικά επιτρέπονται 5 με 20.';
 $string['rsssubscriberssdiscussions'] = 'Τροφοδοσία RSS συζητήσεων';
-$string['rsssubscriberssposts'] = 'Τροφοδοσία RSS αναρτήσεων';
+$string['rsssubscriberssposts'] = 'Τροφοδοσία RSS δημοσιεύσεων';
 $string['rsstype'] = 'Τροφοδοσία RSS για αυτή τη δραστηριότητα';
+$string['rsstype_help'] = 'Για να ενεργοποιήσετε την τροφοδοσία RSS για αυτήν τη δραστηριότητα, επιλέξτε είτε δημοσιεύσεις είτε αναρτήσεις που θα συμπεριληφθούν στην τροφοδοσία.';
 $string['rsstypedefault'] = 'Τύπος τροφοδοσίας RSS';
-$string['rsstype_help'] = 'Για να ενεργοποιήσετε την τροφοδοσία RSS για αυτήν τη δραστηριότητα, επιλέξτε είτε συζητήσεις είτε αναρτήσεις για να συμπεριληφθούν στην τροφοδοσία.';
 $string['search'] = 'Αναζήτηση';
 $string['search:activity'] = 'Φόρουμ - πληροφορίες δραστηριότητας';
+$string['search:post'] = 'Φόρουμ - αναρτήσεις';
 $string['searchdatefrom'] = 'Οι αναρτήσεις πρέπει να είναι νεότερες από αυτό';
 $string['searchdateto'] = 'Οι αναρτήσεις πρέπει να είναι παλαιότερες από αυτό';
 $string['searchforumintro'] = 'Παρακαλούμε, εισάγετε τους όρους αναζήτησης σε ένα ή περισσότερα από τα επόμενα πεδία';
@@ -659,20 +660,17 @@ $string['searchfullwords'] = 'Αυτές οι λέξεις πρέπει να ε�
 $string['searchnotwords'] = 'Αυτές οι λέξεις ΔΕΝ πρέπει να περιέχονται';
 $string['searcholderposts'] = 'Αναζήτηση παλαιότερων μηνυμάτων...';
 $string['searchphrase'] = 'Αυτή ακριβώς η φράση πρέπει να εμφανίζεται στην ανάρτηση';
-$string['search:post'] = 'Φόρουμ - αναρτήσεις';
 $string['searchresults'] = 'Αναζήτηση στα αποτελέσματα';
 $string['searchsubject'] = 'Αυτές οι λέξεις θα πρέπει να εμφανίζονται στο θέμα';
 $string['searchtags'] = 'Έχει ετικέτα με όνομα';
 $string['searchuser'] = 'Αυτό το όνομα θα πρέπει να ταιριάζει με το συγγραφέα';
-$string['searchuserid'] = 'Το αναγνωριστικό Moodle του συγγραφέα';
+$string['searchuserid'] = 'Το Moodle ID του συγγραφέα';
 $string['searchusers'] = 'Αναζήτηση χρηστών';
 $string['searchwhichforums'] = 'Επιλέξτε σε ποιά φόρουμ θα ψάξετε';
 $string['searchwords'] = 'Αυτές οι λέξεις μπορούν να εμφανίζονται οπουδήποτε στην ανάρτηση';
 $string['seeallposts'] = 'Δείτε όλες τις αναρτήσεις από αυτόν το χρήστη';
-$string['sendstudentnotifications'] = 'Ειδοποίηση μαθητών';
 $string['sendstudentnotificationsdefault'] = 'Προεπιλεγμένη ρύθμιση για «Ειδοποίηση μαθητών»';
 $string['sendstudentnotificationsdefault_help'] = 'Ορίστε την προεπιλεγμένη τιμή για το πλαίσιο ελέγχου «Ειδοποίηση μαθητών» στην φόρμα βαθμολόγησης.';
-$string['sendstudentnotifications_help'] = 'Εάν είναι ενεργοποιημένη, οι μαθητές λαμβάνουν ένα μήνυμα σχετικά με την ενημερωμένη βαθμολογία ή την ανατροφοδότηση. Εάν η ροή εργασίας βαθμολόγησης είναι ενεργοποιημένη σε αυτή την ανάθεση εργασίας, οι ειδοποιήσεις θα σταλούν μόνο όταν η βαθμολογία γίνει «Ανακοινώθηκε».';
 $string['sendstudentnotificationsno'] = 'Όχι';
 $string['sendstudentnotificationsyes'] = 'Ναι, αποστολή ειδοποίησης στον μαθητή';
 $string['settings'] = 'Ρυθμίσεις';
@@ -700,11 +698,11 @@ $string['subscriberstowithcount'] = 'Εγγεγραμμένοι στο «{$a->na
 $string['subscribestart'] = 'Να μου αποστέλλονται ειδοποιήσεις (με ηλε.ταχυδρομείο) για νέες αναρτήσεις σε αυτό το φόρουμ';
 $string['subscribestop'] = 'Δεν επιθυμώ να ειδοποιούμαι (μέσω ηλε.ταχυδρομείου) για νέες αναρτήσεις σε αυτό το φόρουμ';
 $string['subscription'] = 'Εγγραφή';
+$string['subscription_help'] = 'Αν εγγραφείτε σε ένα φόρουμ αυτό σημαίνει ότι θα λαμβάνετε ειδοποιήσεις (μέσω ηλε.ταχυδρομείου) για νέες αναρτήσεις φόρουμ. Συνήθως μπορείτε να επιλέξετε αν θέλετε να εγγραφείτε αλλά κάποιες φορές η εγγραφή είναι υποχρεωτική ώστε να λαμβάνουν όλοι ειδοποιήσεις.';
 $string['subscriptionandtracking'] = 'Εγγραφή και παρακολούθηση';
 $string['subscriptionauto'] = 'Αυτόματη εγγραφή';
 $string['subscriptiondisabled'] = 'Απενεργοποίηση εγγραφής';
 $string['subscriptionforced'] = 'Υποχρεωτική εγγραφή';
-$string['subscription_help'] = 'Αν εγγραφείτε σε ένα φόρουμ αυτό σημαίνει ότι θα λαμβάνετε ειδοποιήσεις (μέσω ηλε.ταχυδρομείου) για νέες αναρτήσεις φόρουμ. Συνήθως μπορείτε να επιλέξετε αν θέλετε να εγγραφείτε αλλά κάποιες φορές η εγγραφή είναι υποχρεωτική ώστε να λαμβάνουν όλοι ειδοποιήσεις.';
 $string['subscriptionmode'] = 'Λειτουργία εγγραφής';
 $string['subscriptionmode_help'] = 'Όταν ένας συμμετέχων εγγράφεται σε ένα φόρουμ αυτό σημαίνει ότι θα λαμβάνει ενημερώσεις αναρτήσεων στο φόρουμ.
 Υπάρχουν 4 επιλογές κατάστασης ειδοποιήσεων:

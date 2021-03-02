@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,28 +12,29 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'format_weeks', language 'ar', version '3.8'.
  *
- * @package   format_weeks
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     format_weeks
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addsections'] = 'أضف أسابيع';
 $string['automaticenddate'] = 'إحسب تاريخ الانتهاء من عدد المقاطع';
-$string['automaticenddate_help'] = 'عند تمكينه، فتاريخ انتهاء المساق سيتم احتسابه تلقائياً من عدد مقاطعه وتاريخ بدئه.';
-$string['currentsection'] = 'هذا الاسبوع';
+$string['automaticenddate_help'] = 'عند تمكينه، فتاريخ انتهاء المقرر الدراسي سيتم احتسابه تلقائياً من عدد مقاطعه وتاريخ بدئه.';
+$string['currentsection'] = 'هذا الأسبوع';
 $string['deletesection'] = 'حذف أسبوع';
 $string['editsection'] = 'تحرير الأسبوع';
 $string['editsectionname'] = 'تعديل اسم الأسبوع';
 $string['hidefromothers'] = 'إخفاء الأسبوع';
 $string['newsectionname'] = 'الاسم الجديد للأسبوع {$a}';
-$string['page-course-view-weeks'] = 'أي صفحة رئيسية لمساق بالتنسيق الأسبوعي';
+$string['page-course-view-weeks'] = 'أي صفحة رئيسية لمقرر بالتنسيق الأسبوعي';
 $string['page-course-view-weeks-x'] = 'أي صفحة مقرر دراسي في تنسيق الأسابيع';
 $string['pluginname'] = 'التنسيق الأسبوعي';
 $string['privacy:metadata'] = 'إن ملحق التنسيق الأسبوعي لا يخزن أي بيانات شخصية.';

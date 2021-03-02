@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'edufields', language 'pt', version '3.8'.
  *
- * @package   edufields
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     edufields
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,7 +117,7 @@ $string['field10307'] = 'Mecânica e Engenharia Industrial e Tecnologia';
 $string['field1030701'] = 'Engenharia Mecânica';
 $string['field1030703'] = 'Engenharia Industrial';
 $string['field1030705'] = 'Confeção de peças';
-$string['field1030707'] = 'Encaixe Metal, Torneamento e Usinagem';
+$string['field1030707'] = 'Montagem de metal, Torneamento e Mecanização';
 $string['field1030709'] = 'Confeção de metal';
 $string['field1030711'] = 'Caldeiraria e Soldagem';
 $string['field1030713'] = 'Metal fundido';
@@ -448,7 +448,7 @@ $string['field1110303'] = 'Cabeleireiro';
 $string['field1110399'] = 'Serviços Pessoais (Outros)';
 $string['field112'] = 'Campo misto programas';
 $string['field11201'] = 'Programas de Educação Geral';
-$string['field1120101'] = 'Programas de Educação da Primária e Secundário';
+$string['field1120101'] = 'Programas da Educação Primária e do Secundário';
 $string['field1120103'] = 'Programas de alfabetização e aritmética';
 $string['field1120105'] = 'Programas de Aprendizagem de Competências';
 $string['field1120199'] = 'Programas de Educação Geral (Outros)';

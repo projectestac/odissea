@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'ja', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,15 +43,15 @@ $string['handlerdisabled'] = 'あなたが接続を試みたメールハンド�
 $string['incomingmailconfiguration'] = '受信メール設定';
 $string['incomingmailserversettings'] = '受信メールサーバ設定';
 $string['incomingmailserversettings_desc'] = 'Moodleは適切に設定されたIMAPサーバに接続することができます。あなたはIMAPサーバに接続するための設定をここで指定することができます。';
-$string['invalidrecipientdescription'] = 'あなたのユーザプロファイルと異なるメールアドレスから送信されたため、メッセージ「 {$a->subject} 」を認証できませんでした。メッセージを認証するにはあなたはこのメッセージに返信する必要があります。';
-$string['invalidrecipientdescriptionhtml'] = 'あなたのユーザプロファイルと異なるメールアドレスから送信されたため、メッセージ「 {$a->subject} 」を認証できませんでした。メッセージを認証するにはあなたはこのメッセージに返信する必要があります。';
-$string['invalidrecipientfinal'] = 'メッセージ「 {$a->subject} 」を認証できませんでした。あなたのプロファイルのメールアドレスと同じメールアドレスを使用してメッセージを送信したことを確認してください。';
 $string['invalid_recipient_handler'] = '有効なメッセージが受信されたにもかかわらず送信者を認証できない場合、メッセージはメールサーバに保存されます。同時にユーザプロファイルのメールアドレスを使用してユーザに連絡されます。オリジナルメッセージの信頼度を追認するためユーザには返信するチャンスが与えられます。
 
 このハンドラはこれらの返信を処理します。
 
 メールクライアントが正しく設定されていない場合、ユーザは正しくないメールアドレスから返信できるためこのハンドラの送信者確認を無効にすることはできません。';
 $string['invalid_recipient_handler_name'] = '無効な送信者ハンドラ';
+$string['invalidrecipientdescription'] = 'あなたのユーザプロファイルと異なるメールアドレスから送信されたため、メッセージ「 {$a->subject} 」を認証できませんでした。メッセージを認証するにはあなたはこのメッセージに返信する必要があります。';
+$string['invalidrecipientdescriptionhtml'] = 'あなたのユーザプロファイルと異なるメールアドレスから送信されたため、メッセージ「 {$a->subject} 」を認証できませんでした。メッセージを認証するにはあなたはこのメッセージに返信する必要があります。';
+$string['invalidrecipientfinal'] = 'メッセージ「 {$a->subject} 」を認証できませんでした。あなたのプロファイルのメールアドレスと同じメールアドレスを使用してメッセージを送信したことを確認してください。';
 $string['mailbox'] = 'メールボックス名';
 $string['mailboxconfiguration'] = 'メールボックス設定';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';

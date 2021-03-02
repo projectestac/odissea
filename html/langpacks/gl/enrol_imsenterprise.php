@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_imsenterprise', language 'gl', version '3.8'.
  *
- * @package   enrol_imsenterprise
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_imsenterprise
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,17 +28,17 @@ defined('MOODLE_INTERNAL') || die();
 $string['aftersaving...'] = 'Unha vez gardados os seus axustes, poderá desexar';
 $string['allowunenrol'] = 'Permitir datos IMS para <strong>desmatricular</strong> alumnos/profesores';
 $string['allowunenrol_desc'] = 'De estar activado, as matriculacións retiraranse cando se especifique nos datos de empresa.';
-$string['basicsettings'] = 'Configuracións básicas';
+$string['basicsettings'] = 'Axustes básicos';
 $string['categoryidnumber'] = 'Permitir «idnumber» por categoría';
 $string['categoryidnumber_desc'] = 'Se está activado, IMS Enterprise creará categoría con «idnumber»';
 $string['categoryseparator'] = 'Carácter separador de categoría';
 $string['categoryseparator_desc'] = 'Requírese cando está activado o «idnumber de categoría». Carácter para separar o nome da categoría e o «idnumber».';
 $string['coursesettings'] = 'Opcións dos datos do curso';
-$string['createnewcategories'] = 'Crear novas (ocultas) categorías de curso se non as encontra en Moodle';
+$string['createnewcategories'] = 'Crear novas (agochadas) categorías de curso se non as atopa en Moodle';
 $string['createnewcategories_desc'] = 'Se o elemento <org><orgunit> está presente en datos de entrada dun curso, o seu contido utilizarase para especificar unha categoría se o curso se está creando a partir de cero. O plugin NON reclasificará os cursos existentes.
 
 Se non existe ningunha categoría co nome desexado, daquela crearase unha categoría agochada.';
-$string['createnewcourses'] = 'Crear novos cursos (ocultos) se non os encontra en Moodle';
+$string['createnewcourses'] = 'Crear novos cursos (agochados) se non os atopa en Moodle';
 $string['createnewcourses_desc'] = 'Se está activado, o engadido de IMS Enterprise pode crear novos cursos de calquera que atope nos datos do IMS pero non na base de datos de Moodle. Todos os cursos creados de novas están en principio agochados.';
 $string['createnewusers'] = 'Crear contas para usuarios aínda non rexistrados en Moodle';
 $string['createnewusers_desc'] = 'Os datos de matriculación de IMS Enterprise normalmente describen un conxunto de usuarios. Se está activado, as contas poden crearse para calquera dos usuarios que non se atopan na base de datos de Moodle.
@@ -46,10 +46,10 @@ $string['createnewusers_desc'] = 'Os datos de matriculación de IMS Enterprise n
 Búscase os usuarios primeiro polo seu «idnumber», e secundariamente polo seu nome de usuario de Moodle. Os contrasinais non os importa o engadido IMS Enterprise. O uso dun engadido de autenticación recoméndase para a identificación de usuarios.';
 $string['cronfrequency'] = 'Frecuencia do procesamento';
 $string['deleteusers'] = 'Eliminar contas de usuario cando son especificadas en datos IMS';
-$string['deleteusers_desc'] = 'Se está activado, os datos de matriculación de IMS Enterprise poden especificar a eliminación das contas de usuario (se a marca "recstatus" se define como 3, que representa a eliminación dunha conta). Como é estándar no Moodle, o rexistro do usuario non se elimina realmente da base de datos de Moodle, pero estabelécese un marca para sinalar a conta como eliminada.';
+$string['deleteusers_desc'] = 'Se está activado, os datos de matriculación de IMS Enterprise poden especificar a eliminación das contas de usuario (se o sinalador «recstatus» se define como 3, que representa a eliminación dunha conta). Como é estándar no Moodle, o rexistro do usuario non se elimina realmente da base de datos de Moodle, pero estabelécese un marca para sinalar a conta como eliminada.';
 $string['doitnow'] = 'executar unha importación IMS Enterprise agora mesmo';
 $string['emptyattribute'] = 'Deixalo baleiro';
-$string['filelockedmail'] = 'O ficheiro de texto que está a utilizar para as inscricións baseadas nos ficheiros IMS ({$a}) non pode ser eliminado polo proceso cron.  Normalmente, isto significa que os permisos non son apropiados.  Sinale os permisos para que Moodle poida eliminar o ficheiro, no caso contrario poderá ser procesado repetidamente.';
+$string['filelockedmail'] = 'O ficheiro de texto que está a utilizar para as inscricións baseadas nos ficheiros IMS ({$a}) non pode ser eliminado polo proceso cron. Normalmente, isto significa que os permisos non son apropiados. Sinale os permisos para que Moodle poida eliminar o ficheiro, no caso contrario poderá ser procesado repetidamente.';
 $string['filelockedmailsubject'] = 'Erro importante: Ficheiro de inscricións';
 $string['fixcasepersonalnames'] = 'Modificar os nomes persoais para maiúsculas no Título';
 $string['fixcaseusernames'] = 'Modificar nomes de usuario para minúsculas';
@@ -59,7 +59,7 @@ $string['imsenterprise:config'] = 'Configurar as instancias de categorías de IM
 $string['imsenterprisecrontask'] = 'Procesamento de ficheiros de matriculación';
 $string['imsrolesdescription'] = 'A especificación IMS Enterprise inclúe 8 tipos diferentes de papeis. Escolla como desexa que sexan atribuídos en Moodle, tamén se calquera deles podería ser ignorado.';
 $string['location'] = 'Localización do ficheiro';
-$string['logtolocation'] = 'Localización da saída do ficheiro de rexistro  (en branco significa sen rexistro)';
+$string['logtolocation'] = 'Localización da saída do ficheiro de rexistro (en branco significa sen rexistro)';
 $string['mailadmins'] = 'Notificar ao administrador por correo electrónico';
 $string['mailusers'] = 'Notificar aos usuarios por correo electrónico';
 $string['messageprovider:imsenterprise_enrolment'] = 'Mensaxes de matriculación de IMS Enterprise';
@@ -81,7 +81,7 @@ $string['settingfullnamedescription'] = 'O nome completo é un campo requirido d
 $string['settingshortname'] = 'A etiqueta de descrición IMS para o nome curto do curso';
 $string['settingshortnamedescription'] = 'O nome curto é un campo requirido do curso así que ten que definir a etiqueta de descrición seleccionada no seu ficheiro IMS Enterprise';
 $string['settingsummary'] = 'A etiqueta de descrición IMS para o resumo do curso';
-$string['settingsummarydescription'] = 'É un campo opcional, seleccione \'Deixalo baleiro\' se non quere especificar un resumo do curso';
+$string['settingsummarydescription'] = 'É un campo opcional, seleccione «Deixalo baleiro» se non quere especificar un resumo do curso';
 $string['sourcedidfallback'] = 'Utilice o «sourcedid» para o identificador de usuario se o campo «userid» non é atopado';
 $string['sourcedidfallback_desc'] = 'Nos datos do IMS, o campo <sourcedid> campo o código persistente de identificación dunha persoa que utiliza o sistema orixe. O campo <userid> é un campo separado que debe conter o código de identificación utilizado polo usuario cando inicia sesión. En moitos casos, estes dous códigos poden ser os mesmos - pero non sempre.
 

@@ -73,58 +73,41 @@ function get_debug() {
 }
 
 // Execute a command via CLI
-function run_cli($command, $outputfile = false, $append = true, $background = true, $params = array()) {
+function run_cli($command, $outputfile = false, $append = true, $background = true, $params = []) {
     global $CFG;
 
-    $command = $CFG->dirroot . '/'.$command;
+    $command = $CFG->dirroot . '/' . $command;
 
     if (isset($CFG->dnscentre)) {
         $params['ccentre'] = $CFG->dnscentre;
     }
-    if ($params && is_array($params)) {
+
+    if (is_array($params)) {
         foreach ($params as $key => $value) {
-            $command .= ' --'.$key.'='.$value;
+            $command .= ' --' . $key . '=' . $value;
         }
     }
 
-    if (isset($CFG->clicommand)) {
-        $cmd = $CFG->clicommand;
-    } else {
-        $cmd = "php";
-    }
-
-    $command = 'nohup '.$cmd.' '.$command;
-
-    if ($append) {
-        $command .= ' >> ';
-    } else {
-        $command .= ' > ';
-    }
+    $cmd = (isset($CFG->clicommand)) ? $CFG->clicommand : 'php';
+    $command = 'nohup ' . $cmd . ' ' . $command;
+    $command .= ($append) ? ' >> ' : ' > ';
 
     if (empty($outputfile)) {
-        if ($background) {
-            $outputfile = '/dev/null';
-        } else {
-            $outputfile = '/dev/stdout';
-        }
+        $outputfile = ($background) ? '/dev/null' : '/dev/stdout';
     }
 
-    $command .= $outputfile.' 2>&1 ';
+    $command .= $outputfile . ' 2>&1 ';
 
     if ($background) {
-         $command .= ' & echo $!';
+        $command .= ' & echo $!';
     }
 
-    // Això és una marranada a evitar...
-    if (isset($CFG->cli_ldlibrarypath)) {
-        putenv('LD_LIBRARY_PATH='.$CFG->cli_ldlibrarypath);
-    }
     if (isset($CFG->cli_path)) {
-        putenv('PATH='.$CFG->cli_path);
+        putenv('PATH=' . $CFG->cli_path);
     }
 
-    $output = "";
-    $returnvar = "";
+    $output = '';
+    $returnvar = '';
     exec($command, $output, $returnvar);
 
     if (is_xtecadmin()) {
@@ -182,7 +165,7 @@ function run_cli_cron($background = true) {
     $force = optional_param('forcecron', false, PARAM_BOOL);
     if (!$force) {
         $cronstart = get_config(null, 'cronstart');
-        $cronperiod = 840; // 14 minutes minimum
+        $cronperiod = 480; // 8 minutes minimum
         if ($cronstart + $cronperiod > time()) {
             echo "Moodle cron was executed recently.\n";
             exit(1);
@@ -193,11 +176,9 @@ function run_cli_cron($background = true) {
     }
 
     $outputfile = false;
-    if (isset($CFG->savecronlog)) {
-        $savecronlog = $CFG->savecronlog;
-    } else {
-        $savecronlog = $DB->get_field('config', 'value', array('name' => 'savecronlog'));
-    }
+
+    $savecronlog = (isset($CFG->savecronlog)) ? $CFG->savecronlog : $DB->get_field('config', 'value', ['name' => 'savecronlog']);
+
     if (!empty($savecronlog)) {
         $outputdir = get_admin_datadir_folder('crons', false);
         $outputfile = $outputdir.'/cron_'.$CFG->siteidentifier.'_'.date("Ymd").'.log';
@@ -241,7 +222,7 @@ function is_rush_hour() {
     global $CFG;
 
     // If param is not defined or is false, there's no rush hour.
-    if (!isset($CFG->enable_hour_restrictions) || ($CFG->enable_hour_restrictions == false)) {
+    if (!isset($CFG->enable_hour_restrictions) || (!$CFG->enable_hour_restrictions)) {
         return false;
     }
 
@@ -412,108 +393,10 @@ function get_moodle2_admin_datadir_folder($folder = '', $exceptiononerror = true
     return $directory;
 }
 
-function get_mailsender() {
-    global $mailsender, $CFG;
-    require_once($CFG->dirroot.'/local/agora/mailer/mailsender.class.php');
-
-    if (!is_null($mailsender)) {
-        return $mailsender;
-    }
-
-    // Load the mailsender
-    $wsdl = get_config('local_agora', 'environment_url');
-    $wsdl = empty($wsdl) ? $CFG->apligestenv : $wsdl;
-
-    try {
-        if (empty($CFG->apligestlogpath)) {
-            $CFG->apligestlogpath = get_admin_datadir_folder('log');
-            set_config('apligestlogpath', $CFG->apligestlogpath);
-        }
-        $mailsender = new mailsender($CFG->apligestaplic, $CFG->noreplyaddress, 'educacio', $wsdl, $CFG->apligestlog, $CFG->apligestlogdebug, $CFG->apligestlogpath);
-    } catch (Exception $e) {
-        if (CLI_SCRIPT) {
-            mtrace('ERROR: Cannot initialize mailsender, no mail will be sent.');
-            mtrace($e->getMessage());
-            mtrace('The execution must go on!');
-        } else {
-            debugging('ERROR: Cannot initialize mailsender, no mail will be sent. <br> '.$e->getMessage(), DEBUG_NORMAL);
-        }
-        $mailsender = false;
-    }
-    return $mailsender;
-}
-
-function send_apligest_mail(&$mail, $user, $attachments = []) {
-
-    global $CFG;
-
-    try {
-        $sender = get_mailsender();
-        if (!$sender) {
-            $mail->ErrorInfo = 'Cannot initialize mailsender, no mail will be sent';
-            return false;
-        }
-
-        require_once($CFG->dirroot.'/local/agora/mailer/message.class.php');
-
-        if (empty($CFG->apligestlogpath)) {
-            $CFG->apligestlogpath = get_admin_datadir_folder('log');
-            set_config('apligestlogpath', $CFG->apligestlogpath);
-        }
-
-        // Set $to
-        $toarray = array();
-        foreach ($mail->to as $to) {
-            $toarray[] = $to[0];
-        }
-        
-        // Set $cc
-        $ccarray = array();
-        foreach ($mail->cc as $cc) {
-            $ccarray[] = $cc[0];
-        }
-
-        // Set $bcc
-        $bccarray = array();
-        foreach ($mail->bcc as $bcc) {
-            $bccarray[] = $bcc[0];
-        }
-
-        // Set attachments
-        if (!empty($attachments)){
-            foreach ($attachments as $attachment) {
-                $attach_names[]     = $attachment[7];
-                $attach_contents[]  = $attachment[0];
-                $attach_mimetypes[] = $attachment[4];
-            }
-        } else {
-            $attach_names     = [];
-            $attach_contents  = [];
-            $attach_mimetypes = [];
-        }
-
-        if (!$sender->add_message($toarray, $ccarray, $bccarray, $mail->Subject, $mail->Body, $attach_names, '', $attach_contents, $attach_mimetypes, 'text/html')) {
-            $mail->ErrorInfo = 'Impossible to add message to mailsender';
-            return false;
-        }
-
-        // Send messages
-        if (!$sender->send_mail()) {
-            $mail->ErrorInfo = 'Impossible to send messages';
-            return false;
-        } else {
-            return true;
-        }
-    } catch (Exception $e) {
-        $mail->ErrorInfo = 'Exception: '. $e->getMessage();
-        return false;
-    }
-}
-
 function get_colors_from_nodes($solveerrors = false) {
 
     try {
-        $filename = INSTALL_BASE.'/html/wordpress/wp-content/themes/reactor-primaria-1/custom-tac/colors_nodes.php';
+        $filename = INSTALL_BASE . '/html/wordpress/wp-content/themes/reactor/custom-tac/colors_nodes.php';
         if (file_exists($filename)) {
             global $colors_nodes;
             $db = external_db('nodes');
@@ -528,10 +411,10 @@ function get_colors_from_nodes($solveerrors = false) {
                 'logo_color' => $paleta['primary']
             );
             if ($solveerrors) {
-                set_config('color2', $colors['color'], 'theme_xtec2');
-                set_config('color4', $colors['color'], 'theme_xtec2');
-                set_config('color5', $colors['color'], 'theme_xtec2');
-                set_config('logo_color', $colors['logo_color'], 'theme_xtec2');
+                set_config('color2', $colors['color'], 'theme_xtec2020');
+                set_config('color4', $colors['color'], 'theme_xtec2020');
+                set_config('color5', $colors['color'], 'theme_xtec2020');
+                set_config('logo_color', $colors['logo_color'], 'theme_xtec2020');
             }
             //$db->dispose();
             return $colors;
@@ -541,14 +424,13 @@ function get_colors_from_nodes($solveerrors = false) {
     }
 
     if ($solveerrors) {
-        set_config('colorset', 'grana', 'theme_xtec2');
-        set_config('color2', '#AC2013', 'theme_xtec2');
-        set_config('color4', '#303030', 'theme_xtec2');
-        set_config('color5', '#AC2013', 'theme_xtec2');
+        set_config('colorset', 'PEDC', 'theme_xtec2020');
+        set_config('color2', '#FF494E', 'theme_xtec2020');
+        set_config('color4', '#007377', 'theme_xtec2020');
+        set_config('color5', '#910048', 'theme_xtec2020');
     }
     return false;
 }
-
 
 /**
  * Connecta a una base de dades configurada d'un servei
@@ -574,6 +456,7 @@ function external_db($service) {
 
     $options = array();
     $options['dbpersist'] = false;
+    $options['dbcollation'] = 'utf8_unicode_ci';
     if (isset($agora[$service]['port']) && !empty($agora[$service]['port'])) {
         $options['dbport'] = $agora[$service]['port'];
     }

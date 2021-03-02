@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'ru', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,7 +30,7 @@ $string['activemethodinfonone'] = 'Для области «{$a->area}» выбр
 $string['changeactivemethod'] = 'Изменить активный метод оценивания на';
 $string['clicktoclose'] = 'щелкните, чтобы закрыть';
 $string['exc_gradingformelement'] = 'Не удалось создать экземпляр элемента формы оценивания';
-$string['formnotavailable'] = 'Для использования был выбран передовой метод оценивания, но его форма оценивания еще не готова. Вы должны задать ее в первую очередь. Используйте ссылку в блоке управления.';
+$string['formnotavailable'] = 'Для использования был выбран передовой метод оценивания, но его форма оценивания еще не готова. Вы должны задать ее в первую очередь. Используйте ссылку в блоке «Администрирование».';
 $string['gradingformunavailable'] = 'Пожалуйста, обратите внимание: форма передового оценивания не готова в данный момент. Пока форма не имеет необходимого статуса, будет использоваться простой метод оценивания.';
 $string['gradingmanagement'] = 'Передовое оценивание';
 $string['gradingmanagementtitle'] = 'Передовое оценивание:
@@ -71,7 +71,6 @@ $string['privacy:metadata:grading_definitions:timecreated'] = 'Время, ко�
 $string['privacy:metadata:grading_definitions:timemodified'] = 'Время, когда форма оценивания была последний раз изменена.';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'ID пользователя, создавшего форму оценивания.';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'ID пользователя, последним изменившего форму оценивания.';
-$string['privacy:metadata:gradingformpluginsummary'] = 'Данные для метода оценивания.';
 $string['privacy:metadata:grading_instances'] = 'Запись оценки для одного элемента оценивания, оцененного одним оценщиком.';
 $string['privacy:metadata:grading_instances:feedback'] = 'Отзыв, данный пользователем.';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'Текстовый формат отзыва, данного пользователем.';
@@ -79,6 +78,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'ID пользовате
 $string['privacy:metadata:grading_instances:rawgrade'] = 'Оценка за оцениваемый экземпляр.';
 $string['privacy:metadata:grading_instances:status'] = 'Статус этого оцениваемого экземпляра.';
 $string['privacy:metadata:grading_instances:timemodified'] = 'Время, когда оцениваемый экземпляр был последний раз изменен.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Данные для метода оценивания.';
 $string['searchownforms'] = 'включить мои формы';
 $string['searchtemplate'] = 'Поиск форм оценивания';
 $string['searchtemplate_help'] = 'Здесь Вы можете найти форму оценивания и использовать ее в качестве шаблона для новой формы оценивания. Просто введите слова, которые должны присутствовать где-нибудь в названии формы, ее описании или содержимом формы. Чтобы найти фразу, заключите весь запрос в двойные кавычки.

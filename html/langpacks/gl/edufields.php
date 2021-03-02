@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'edufields', language 'gl', version '3.8'.
  *
- * @package   edufields
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     edufields
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -83,7 +83,7 @@ $string['field1020305'] = 'Análise de Sistemas e Deseño';
 $string['field1020307'] = 'Sistemas de Asistencia á Decisión';
 $string['field1020399'] = 'Sistemas de Información (outras)';
 $string['field10299'] = 'Outra Tecnoloxía da Información';
-$string['field1029901'] = 'Ciencias da Seguridade';
+$string['field1029901'] = 'Ciencias de Seguridade';
 $string['field1029999'] = 'Tecnoloxía da Información (outras)';
 $string['field103'] = 'Enxeñaría e Tecnoloxías Relacionadas';
 $string['field10301'] = 'Enxeñaría e Tecnoloxía da Manufactura';
@@ -95,7 +95,7 @@ $string['field1030109'] = 'Confección de Calzado';
 $string['field1030111'] = 'Mecanización da Madeira e Torno';
 $string['field1030113'] = 'Ebanistería';
 $string['field1030115'] = 'Tapizado e Renovación';
-$string['field1030117'] = 'Pulido de Mobles';
+$string['field1030117'] = 'Pulido de mobles';
 $string['field1030199'] = 'Enxeñaría da Manufactura e Tecnoloxía (outras)';
 $string['field10303'] = 'Procesos e Recursos da Enxeñaría';
 $string['field1030301'] = 'Enxeñaría Química';
@@ -112,7 +112,7 @@ $string['field1030509'] = 'Construción de Chasis Automóbiles';
 $string['field1030511'] = 'Chapistería';
 $string['field1030513'] = 'Ebanistería e Tapizado de Automóbil';
 $string['field1030515'] = 'Operacións sobre Vehículos Automóbiles';
-$string['field1030599'] = 'Tecnoloxía e Enxeñaría do Automóbiel (outras)';
+$string['field1030599'] = 'Tecnoloxía e Enxeñaría do Automóbil (outras)';
 $string['field10307'] = 'Enxeñaría e Tecnoloxía Mecánica e Industrial';
 $string['field1030701'] = 'Enxeñaría Mecánica';
 $string['field1030703'] = 'Enxeñaría Industrial';
@@ -122,7 +122,7 @@ $string['field1030709'] = 'Traballos en Metal Doce';
 $string['field1030711'] = 'Caldeirería e Soldadura';
 $string['field1030713'] = 'Fundición e Moldeado';
 $string['field1030715'] = 'Metalurxia de Precisión';
-$string['field1030717'] = 'Operacións e Máquinas de Planra';
+$string['field1030717'] = 'Operacións e Máquinas de Planta';
 $string['field1030799'] = 'Enxeñaría e Tecnoloxía Mecánica e Industrial (outras)';
 $string['field10309'] = 'Enxeñaría Civil';
 $string['field1030901'] = 'Enxeñaría da Construción';
@@ -137,7 +137,7 @@ $string['field10311'] = 'Enxeñaría Xeomática';
 $string['field1031101'] = 'Vixilancia';
 $string['field1031103'] = 'Ciencia da Cartografía';
 $string['field1031199'] = 'Enxeñaría Xeomática (outra)';
-$string['field10313'] = 'Enxeñaría e Tecnoloxía Electrica e Electrónica';
+$string['field10313'] = 'Enxeñaría e Tecnoloxía Eléctrica e Electrónica';
 $string['field1031301'] = 'Enxeñaría Eléctrica';
 $string['field1031303'] = 'Enxeñaría Electrónica';
 $string['field1031305'] = 'Enxeñaría Computacional';
@@ -225,7 +225,7 @@ $string['field1060119'] = 'Práctica Xeral';
 $string['field1060199'] = 'Estudos Médicos (outra)';
 $string['field10603'] = 'Enfermaría';
 $string['field1060301'] = 'Enfermaría Xeral';
-$string['field1060303'] = 'Enfermaria Obstétrica';
+$string['field1060303'] = 'Enfermaría Obstétrica';
 $string['field1060305'] = 'Enfermaría da Saúde Mental';
 $string['field1060307'] = 'Enfermaría da Comunidade';
 $string['field1060309'] = 'Enfermaría de Coidados Intensivos';
@@ -456,10 +456,10 @@ $string['field11203'] = 'Programas de Competencias Sociais';
 $string['field1120301'] = 'Programas de Competencias Sociais e Interpersoais';
 $string['field1120303'] = 'Programas de Competencias en Supervivencia';
 $string['field1120305'] = 'Programas de Educación Parental';
-$string['field1120399'] = 'Programas de Compentencias Sociais (outros)';
+$string['field1120399'] = 'Programas de Competencias Sociais (outros)';
 $string['field11205'] = 'Programas de Competencias de Emprego';
 $string['field1120501'] = 'Programas de Desenvolvemento de Carreira';
-$string['field1120503'] = 'Programas de Compentencias en Busca de Emprego';
+$string['field1120503'] = 'Programas de Competencias en Busca de Emprego';
 $string['field1120505'] = 'Programas de Prácticas Laborais';
 $string['field1120599'] = 'Programas de Competencias de Emprego (outros)';
 $string['field11299'] = 'Programas de Campos Mixtos Alternativos';

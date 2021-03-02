@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'timezones', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'timezones', language 'es', version '3.8'.
  *
- * @package   timezones
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     timezones
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -137,8 +137,8 @@ $string['america/havana'] = 'América/La Habana';
 $string['america/hermosillo'] = 'América/Hermosillo';
 $string['america/indiana/knox'] = 'América/Indiana/Knox';
 $string['america/indiana/marengo'] = 'América/Indiana/Marengo';
-$string['america/indianapolis'] = 'América/Indianápolis';
 $string['america/indiana/vevay'] = 'América/Indiana/Vevay';
+$string['america/indianapolis'] = 'América/Indianápolis';
 $string['america/inuvik'] = 'América/Inuvik';
 $string['america/iqaluit'] = 'América/Iqaluit';
 $string['america/jamaica'] = 'América/Jamaica';
@@ -292,8 +292,8 @@ $string['atlantic/faeroe'] = 'Atlántico/Faeroe';
 $string['atlantic/madeira'] = 'Atlántico/Madeira';
 $string['atlantic/reykjavik'] = 'Atlántico/Reykjavik';
 $string['atlantic/south_georgia'] = 'Atlántico/South_Georgia';
-$string['atlantic/stanley'] = 'Atlántico/Stanley';
 $string['atlantic/st_helena'] = 'Atlántico/St_Helena';
+$string['atlantic/stanley'] = 'Atlántico/Stanley';
 $string['australia/adelaide'] = 'Australia/Adelaida';
 $string['australia/brisbane'] = 'Australia/Brisbane';
 $string['australia/broken_hill'] = 'Australia/Broken_Hill';

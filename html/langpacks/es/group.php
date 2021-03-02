@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'es', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -62,8 +62,8 @@ $string['editusersgroupsa'] = 'Editar grupos para "{$a}"';
 $string['enablemessaging'] = 'Mensajes de grupo';
 $string['enablemessaging_help'] = 'Si se habilita, los miembros del grupo pueden enviar mensajes a los otros de su grupo a través del menú de mensajes.';
 $string['enrolmentkey'] = 'Clave de matriculación';
-$string['enrolmentkeyalreadyinuse'] = 'Esta clave de matriculación ya está siendo usada para otro grupo.';
 $string['enrolmentkey_help'] = 'Una clave de acceso permite que el acceso al curso esté limitado sólo a aquellos que conocen la clave. Si se especifica una clave de acceso grupal, entonces dicha clave no sólo permitirá a los usuarios entrar al curso, sino que los hará miembros del grupo.';
+$string['enrolmentkeyalreadyinuse'] = 'Esta clave de matriculación ya está siendo usada para otro grupo.';
 $string['erroraddremoveuser'] = 'Error al agregar/quitar al usuario {$a} del grupo';
 $string['erroreditgroup'] = 'Error al crear o actualizar el grupo {$a}';
 $string['erroreditgrouping'] = 'Error al crear o actualizar el agrupamiento {$a}';
@@ -93,9 +93,9 @@ $string['groupinfo'] = 'Información sobre el grupo seleccionado';
 $string['groupinfomembers'] = 'Información sobre los miembros seleccionados';
 $string['groupinfopeople'] = 'Información sobre las personas seleccionadas';
 $string['grouping'] = 'Agrupamiento';
+$string['grouping_help'] = 'Un agrupamiento es un conjunto de grupos dentro de un curso. Si se selecciona un agrupamiento, los usuarios asignados a los grupos dentro del agrupamiento podrán trabajar juntos.';
 $string['groupingaddedsuccesfully'] = 'Agrupamiento {$a} añadido con éxito';
 $string['groupingdescription'] = 'Descripción del agrupamiento';
-$string['grouping_help'] = 'Un agrupamiento es un conjunto de grupos dentro de un curso. Si se selecciona un agrupamiento, los usuarios asignados a los grupos dentro del agrupamiento podrán trabajar juntos.';
 $string['groupingname'] = 'Nombre del agrupamiento';
 $string['groupingnameexists'] = 'El nombre de agrupamiento {$a} ya existe en este curso. Por favor, elija otro.';
 $string['groupings'] = 'Agrupamientos';
@@ -108,8 +108,6 @@ $string['groupmembers'] = 'Miembros del grupo';
 $string['groupmemberssee'] = 'Ver los integrantes del grupo';
 $string['groupmembersselected'] = 'Miembros del grupo seleccionado';
 $string['groupmode'] = 'Modo de grupo';
-$string['groupmodeforce'] = 'Forzar el modo de grupo';
-$string['groupmodeforce_help'] = 'Si se fuerza el modo grupo, entonces el modo de grupo en el curso se aplica a todas las actividades del curso. En ese caso se pasan por alto los ajustes del modo de grupo.';
 $string['groupmode_help'] = '<p>El modo grupo puede ser de alguno de estos tres niveles:
    <ul>
       <li>Sin grupos - No hay grupos, todos son parte de una gran comunidad.</li>
@@ -126,6 +124,8 @@ $string['groupmode_help'] = '<p>El modo grupo puede ser de alguno de estos tres 
    <dt><b>2. Nivel Actividad</b></dt>
    <dd>Toda actividad que soporte grupos puede definir su propio modo de agrupación. Si el curso está configurado como  "<a href="help.php?module=moodle&file=groupmodeforce.html">forzar modo de grupo</a>" entonces no se tendrá en cuenta la configuración de cada actividad.</dd>
 </dl>';
+$string['groupmodeforce'] = 'Forzar el modo de grupo';
+$string['groupmodeforce_help'] = 'Si se fuerza el modo grupo, entonces el modo de grupo en el curso se aplica a todas las actividades del curso. En ese caso se pasan por alto los ajustes del modo de grupo.';
 $string['groupmy'] = 'Mi grupo';
 $string['groupname'] = 'Nombre del grupo';
 $string['groupnameexists'] = 'El nombre de grupo \'{$a}\' ya existe en este curso; por favor, elija otro.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,85 +12,85 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cohort', language 'ar', version '3.8'.
  *
- * @package   cohort
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cohort
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcohort'] = 'إضافة فوج جديد';
-$string['allcohorts'] = 'كل الأفواج';
-$string['anycohort'] = 'أي';
-$string['assign'] = 'تعيين';
-$string['assigncohorts'] = 'تعيين أعضاء الدفعة';
-$string['assignto'] = 'أعضاء فوج \'{$a}\'';
+$string['addcohort'] = 'أضف دفعة جديدة';
+$string['allcohorts'] = 'جميع الدفعات';
+$string['anycohort'] = 'أيَ';
+$string['assign'] = 'عين';
+$string['assigncohorts'] = 'تعيين أعضاء الفوج';
+$string['assignto'] = 'أعضاء الفوج \'{$a}\'';
 $string['backtocohorts'] = 'عودة إلى الأفواج';
-$string['bulkadd'] = 'الإضافة إلى فوج';
-$string['bulknocohort'] = 'لا توجد دفعات متاحة للعرض';
+$string['bulkadd'] = 'أضف إلى الدفعة';
+$string['bulknocohort'] = 'لا توجد أفواج متاحة للعرض';
 $string['categorynotfound'] = 'لم يتم العثور على الفئة <b>{$a}</b> أو ليس لديك إذن لإنشاء دفعة هناك. سيتم استخدام السياق الافتراضي.';
-$string['cohort'] = 'فوج';
+$string['cohort'] = 'دفعة';
 $string['cohorts'] = 'الأفواج';
-$string['cohortsin'] = '{$a}: الأفواج المتاحة';
+$string['cohortsin'] = '{$a} : دفعة متاحة';
 $string['component'] = 'المصدر';
 $string['contextnotfound'] = 'لم يتم العثور على السياق {$a} أو ليس لديك إذن لإنشاء دفعة هناك. سيتم استخدام السياق الافتراضي.';
-$string['csvcontainserrors'] = 'تم العثور على أخطاء في بيانات CSV. أنظر التفاصيل أدناه.';
-$string['csvcontainswarnings'] = 'تم العثور على تحذيرات في بيانات CSV. انظر التفاصيل أدناه.';
+$string['csvcontainserrors'] = 'تم العثور على أخطاء في بيانات CSV. انظر الى التفاصيل بالأسفل.';
+$string['csvcontainswarnings'] = 'تم العثور على تحذيرات في بيانات CSV. انظر الى التفاصيل بالأسفل.';
 $string['csvextracolumns'] = 'سيتم تجاهل العمود (الأعمدة) <b>{$a}</b>.';
 $string['currentusers'] = 'المستخدمون الحاليون';
 $string['currentusersmatching'] = 'المستخدمون الحاليون المطابقون';
 $string['defaultcontext'] = 'السياق الافتراضي';
-$string['delcohort'] = 'حذف الفوج';
-$string['delconfirm'] = 'هل حقاً تريد حذف فوج \'{$a}\'؟';
+$string['delcohort'] = 'احذف الدفعة';
+$string['delconfirm'] = 'هل حقاً تريد حذف الدفعة \'{$a}\'؟';
 $string['description'] = 'الوصف';
 $string['displayedrows'] = '{$a->displayed} الصفوف تعرض من {$a->total}.';
-$string['duplicateidnumber'] = 'يوجد فوج مع نفس رقم المعرّف موجود مسبقاً';
-$string['editcohort'] = 'تحرير الفوج';
+$string['duplicateidnumber'] = 'فوج بنفس رقم المُعرَّف موجود مسبقاً';
+$string['editcohort'] = 'تحرير الدفعة';
 $string['editcohortidnumber'] = 'تحرير معرف الدفعة';
 $string['editcohortname'] = 'تحرير اسم الدفعة';
-$string['eventcohortcreated'] = 'إنشاء  دفعة';
-$string['eventcohortdeleted'] = 'حذف الدفعة';
-$string['eventcohortmemberadded'] = 'تمت إضافة المستخدم إلى الدفعة';
-$string['eventcohortmemberremoved'] = 'تمت إزالة المستخدم من الدفعة';
-$string['eventcohortupdated'] = 'تم تحديث الدفعة';
+$string['eventcohortcreated'] = 'فوج تم إنشاؤه';
+$string['eventcohortdeleted'] = 'فوج تم حذفه';
+$string['eventcohortmemberadded'] = 'مستخدم تمت إضافته إلى فوج';
+$string['eventcohortmemberremoved'] = 'مستخدم تمت إزالته من فوج';
+$string['eventcohortupdated'] = 'فوج تم تحديثه';
 $string['external'] = 'دفعة خارجية';
-$string['idnumber'] = 'معرّف الفوج';
+$string['idnumber'] = 'رقم معرّف الدفعة';
 $string['invalidtheme'] = 'قالب الدفعة غير موجود';
-$string['memberscount'] = 'حجم الفوج';
+$string['memberscount'] = 'حجم الدفعة';
 $string['name'] = 'الاسم';
 $string['namecolumnmissing'] = 'يوجد خطأ ما في تنسيق ملف CSV. يرجى التحقق من أنه يتضمن أسماء الأعمدة الصحيحة. لإضافة مستخدمين إلى الدفعة، انتقل إلى "تحميل المستخدمين" في إدارة الموقع.';
 $string['namefieldempty'] = 'اسم الحقل لا يمكن أن يكون فارغاً';
-$string['newidnumberfor'] = 'رقم معرف جديد للدفعة {$a}';
+$string['newidnumberfor'] = 'رقم مُعرَّف جديد للفوج {$a}';
 $string['newnamefor'] = 'اسم جديد للدفعة {$a}';
 $string['nocomponent'] = 'تم إنشاؤه يدوياً';
 $string['potusers'] = 'المستخدمون المحتملون';
 $string['potusersmatching'] = 'المستخدمون المحتملون المطابقون';
 $string['preview'] = 'معاينة';
-$string['privacy:metadata:cohort_members'] = 'معلومات عن فوج المستخدم';
-$string['privacy:metadata:cohort_members:cohortid'] = 'مُعرَّف الفوج';
-$string['privacy:metadata:cohort_members:timeadded'] = 'الطابع الزمني الذي يشير إلى وقت إضافة المستخدم إلى الفوج';
-$string['privacy:metadata:cohort_members:userid'] = 'مُعرَّف المستخدم المرتبط الفوج';
-$string['removeuserwarning'] = 'إزالة المستخدمين من الفوج قد يؤدي إلى إلغاء انضمامات المستخدمين في مساقات متعددة وهذا الأمر يتضمن حذف إعداداتهم، علاماتهم، عضوياتهم في المجموعات وغيرها من معلومات المستخدمين في المساقات المتأثرة بتلك الإزالة.';
+$string['privacy:metadata:cohort_members'] = 'معلومات حول دفعة المستخدم.';
+$string['privacy:metadata:cohort_members:cohortid'] = 'معرف الدفعة';
+$string['privacy:metadata:cohort_members:timeadded'] = 'الطابع الزمني الذي يشير إلى وقت إضافة المستخدم إلى الدفعة';
+$string['privacy:metadata:cohort_members:userid'] = 'معرف المستخدم المرتبط بالدفعة';
+$string['removeuserwarning'] = 'إزالة مستخدمين من الدفعة قد يؤدي إلى إلغاء التحاقهم من المستخدمين في مقررات متعددة و الذي يتضمن حذفهم من إعدادات المستخدم و الدرجات ، و غيرها من عضوية المجموعات و معلومات المستخدم من المقررات المتأثرة .';
 $string['search'] = 'بحث';
-$string['searchcohort'] = 'البحث في الأفواج';
-$string['selectfromcohort'] = 'إختر أعضاءً من الفوج';
-$string['systemcohorts'] = 'أفواج النظام';
+$string['searchcohort'] = 'بحث الدفعة';
+$string['selectfromcohort'] = 'اختر أعضاءً من الدفعة';
+$string['systemcohorts'] = 'نظام الدفعات';
 $string['unknowncohort'] = 'دفعة غير معروفة ({$a}) !';
-$string['uploadcohorts'] = 'رفع الأفواج';
-$string['uploadcohorts_help'] = 'يمكن رفع الأفواج عبر ملف نصي. يجب أن يكون تنسيق الملف كما يلي:
-
+$string['uploadcohorts'] = 'تحميل الدفعات';
+$string['uploadcohorts_help'] = 'يمكن تحميل الدفعات عبر ملف نصي. يجب أن يكون تنسيق الملف كما يلي:
 * يحتوي كل سطر من الملف على سجل واحد
-* كل سجل عبارة عن سلسلة من البيانات مفصولة بفوارز (أو محددات أخرى)
-* يحتوي السجل الأول على قائمة بأسماء الحقول التي تحدد تنسيق باقي الملف
-* الحقل المطلوب هو حقل name
-* الحقول الاختيارية هي idnumber، description، descriptionformat، visible، context، category، category_id، category_idnumber، category_path';
-$string['uploadedcohorts'] = 'تم رفع {$a} من الأفواج';
+* كل سجل عبارة عن سلسلة من البيانات مفصولة بفواصل (أو محددات أخرى)
+* يحتوي السجل الأول على قائمة بأسماء الحقول التي تحدد تنسيق الباقي الملف
+* اسم الحقل المطلوب هو الاسم
+* أسماء الحقول الاختيارية هي idnumber ، والوصف ، و descriptionformat ، مرئية ، والسياق ، والفئة ، category_id ، category_idnumber ، category_path';
+$string['uploadedcohorts'] = 'تم تحميل {$a} دفعات';
 $string['useradded'] = 'إضافة المستخدم للدفعة "{$a}"';
 $string['visible'] = 'مرئي';
-$string['visible_help'] = 'يمكن معاينة أي فوج من قبل المستخدمين الذين لديهم الإمكانية \'moodle/cohort:view\' في سياق الفوج.
-يمكن أيضاً معاينة الأفواج المرئية بواسطة المستخدمين في المساقات الضمنية.';
+$string['visible_help'] = 'يمكن عرض أي دفعة من قبل المستخدمين الذين لديهم قدرة "moodle / cohort: view" في سياق الدفعات.
+يمكن أيضًا عرض الدفعات المرئية بواسطة المستخدمين في الدورات المواد الأساسية.';

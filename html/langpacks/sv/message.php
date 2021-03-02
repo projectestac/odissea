@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'message', language 'sv', version '3.8'.
  *
- * @package   message
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     message
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,10 +34,10 @@ $string['addtoyourcontactsandmessage'] = 'Lägg till kontakter och skicka meddel
 $string['ago'] = 'För {$a} sedan';
 $string['allusers'] = 'Alla meddelanden från alla användare';
 $string['backto'] = 'Tillbaka till {$a}';
-$string['backupmessageshelp'] = 'Om detta är altiverat så kommer snabbmeddelanden att tas med i automatiska säkerhetskopieringar för hela webbplatsen.';
+$string['backupmessageshelp'] = 'Om detta är aktiverat så kommer snabbmeddelanden att tas med i automatiska säkerhetskopieringar för hela webbplatsen.';
 $string['blockcontact'] = 'Blockera kontakt';
 $string['blockedusers'] = 'Blockerade användare';
-$string['blocknoncontacts'] = 'Blockera alla nya meddelanden från personer som inte finns med på min kontaktlista.';
+$string['blocknoncontacts'] = 'Förhindra personer som inte finns i min kontaktlista från att skicka meddelanden till mig';
 $string['blockuser'] = 'Blockera användare';
 $string['blockuserconfirm'] = 'Är du säker att du vill blockera {$a}?';
 $string['blockuserconfirmbutton'] = 'Block';
@@ -52,10 +52,11 @@ $string['contactblocked'] = 'Kontakt blockerad';
 $string['contactrequests'] = 'Kontaktförfrågan';
 $string['contactrequestsent'] = 'Kontaktförfrågan skickad';
 $string['contacts'] = 'Kontakter';
+$string['conversationactions'] = 'Åtgärdsmeny för konversationer';
 $string['decline'] = 'Avböj';
-$string['defaultmessageoutputs'] = 'Inställningar för notiser';
+$string['defaultmessageoutputs'] = 'Notisinställningar';
 $string['defaults'] = 'Standardvärden';
-$string['deleteallconfirm'] = 'Vill du verkligen radera hela denna konversation?';
+$string['deleteallconfirm'] = 'Vill du verkligen radera hela denna konversation? OBS att den kommer att finnas kvar för övriga deltagare i konverastionen.';
 $string['deleteallmessages'] = 'Radera alla meddelanden';
 $string['deleteallselfconfirm'] = 'Vill du verkligen radera hela denna personliga konversation?';
 $string['deleteconversation'] = 'Radera konversation';
@@ -64,15 +65,15 @@ $string['deleteforeveryoneselectedmessagesconfirm'] = 'Är du säker på att du 
 $string['deleteselectedmessages'] = 'Radera utvalda meddelanden';
 $string['deleteselectedmessagesconfirm'] = 'Vill du verkligen radera de valda meddelandena? Detta kommer inte radera dem för andra deltagare i konversationen.';
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Vill du verkligen radera denna valda personliga konversation?';
-$string['disableall'] = 'Tillfälligt inaktivera meddelanden';
-$string['disabled'] = 'Funktionen meddelanden är avaktiverad på den här webbplatsen';
+$string['disableall'] = 'Stäng av notifieringar';
+$string['disabled'] = 'Meddelandefunktionen är inaktiverad för webbplatsen';
 $string['disallowed'] = 'Otillåten';
 $string['editmessages'] = 'Redigera meddelanden';
-$string['emailtagline'] = 'Det här e-postmeddelandet är en kopia av ett meddelande som har skickats till Dig på "{$a>sitename}". Gå till  {$a->url} för att svara.
-';
+$string['emailtagline'] = 'Det här e-postmeddelandet är en kopia av ett meddelande som har skickats till dig på "{$a>sitename}". Gå till  {$a->url} för att svara.';
 $string['enabled'] = 'Aktiverat';
-$string['errorcallingprocessor'] = 'Fel i sb m anrop till den definierade processorn';
+$string['errorcallingprocessor'] = 'Fel vid anrop av definierad output';
 $string['errorconversationdoesnotexist'] = 'Konversationen finns inte';
+$string['errormessagetoolong'] = 'Meddelandet är längre än tillåtet.';
 $string['errortranslatingdefault'] = 'Fel vid översättningen av standardinställningar från plugin, använder systemets standard istället.';
 $string['eventgroupmessagesent'] = 'Gruppmeddelande har skickats';
 $string['eventmessagecontactadded'] = 'En kontakt har lagts till.';
@@ -86,23 +87,23 @@ $string['eventmessageuserunblocked'] = 'Användaren har avblockerats';
 $string['eventmessageviewed'] = 'Meddelandet har öppnats.';
 $string['eventnotificationsent'] = 'Notifiering har skickats';
 $string['eventnotificationviewed'] = 'Notifiering har visats';
-$string['forced'] = 'Tvingad';
-$string['groupconversations'] = 'Grupp';
+$string['forced'] = 'Låst';
+$string['groupconversations'] = 'Gruppkonversationer';
 $string['groupinfo'] = 'Gruppinformation';
-$string['guestnoeditmessage'] = 'Gästanvändare kan inte redigera alternativen för meddelanden';
-$string['guestnoeditmessageother'] = 'Gästanvändare kan inte redigera andra alternativ för meddelanden';
+$string['guestnoeditmessage'] = 'Gästanvändare kan inte ändra inställningar för meddelanden';
+$string['guestnoeditmessageother'] = 'Gästanvändare kan inte ändra andra inställningar för meddelanden';
 $string['hidemessagewindow'] = 'Dölj meddelandefönstret';
 $string['hidenotificationwindow'] = 'Dölj notifieringsfönstret';
 $string['individualconversations'] = 'Privat';
 $string['info'] = 'Användarinformation';
 $string['isnotinyourcontacts'] = '{$a} finns inte bland dina kontakter';
 $string['loadmore'] = 'Mer';
-$string['loggedin'] = 'Uppkopplad';
-$string['loggedindescription'] = 'När jag är inloggad på Moodle';
+$string['loggedin'] = 'Inloggad';
 $string['loggedin_help'] = 'Välj hur du vill få notiser när du är inloggad i Moodle';
-$string['loggedoff'] = 'Inte uppkopplad';
-$string['loggedoffdescription'] = 'När jag inte är inloggad på Moodle';
+$string['loggedindescription'] = 'När jag är inloggad på Moodle';
+$string['loggedoff'] = 'Inte inloggad';
 $string['loggedoff_help'] = 'Välj hur du vill få notiser när du inte är inloggad i Moodle';
+$string['loggedoffdescription'] = 'När jag inte är inloggad på Moodle';
 $string['managemessageoutputs'] = 'Standardinställningar för notiser';
 $string['message'] = 'Meddelande';
 $string['messagecontactrequestsnotification'] = '{$a} vill bli tillagd som kontakt';
@@ -119,10 +120,10 @@ $string['messagedrawerviewoverview'] = 'Översikt för Meddelanden';
 $string['messagedrawerviewsearch'] = 'Sökreslutat för {$a}';
 $string['messagedrawerviewsettings'] = 'Inställningar för Meddelanden';
 $string['messageoutputs'] = 'Plugins för notiser';
-$string['messagepreferences'] = 'Välj inställningar för meddelanden';
+$string['messagepreferences'] = 'Meddelandeinställningar';
 $string['messages'] = 'Meddelanden';
 $string['messagesselected:'] = 'Valda meddelanden:';
-$string['messagingdatahasnotbeenmigrated'] = 'Dina meddelanden är tillfälligt oåtkomliga. V.g. försök lite senare.';
+$string['messagingdatahasnotbeenmigrated'] = 'Dina meddelanden är inte tillgängliga för tillfället på grund av en uppgradering av meddelandesystemet. Vänligen vänta tills den är klar.';
 $string['messagingdisabled'] = 'Funktionen för meddelanden är avaktiverad på den här webbplatsen, det kommer att skickas ut e-post istället.';
 $string['muteconversation'] = 'Stäng av ljudet';
 $string['mutedconversation'] = 'Tystad konversation';
@@ -132,31 +133,31 @@ $string['newonlymsg'] = 'Visa bara nya';
 $string['nocontactrequests'] = 'Inga kontaktförfrågningar';
 $string['nocontacts'] = 'Inga kontakter';
 $string['nocontactsgetstarted'] = 'Inga kontakter';
-$string['nofavourites'] = 'Inga favoriter konversationer';
+$string['nofavourites'] = 'Inga favoritmärkta konversationer';
 $string['noframesjs'] = 'Använd ett mer tillgängligt gränssnitt';
-$string['nogroupconversations'] = 'Det finns inga gruppkonversationer';
-$string['noindividualconversations'] = 'Det finns inga privata konversationer';
-$string['nomessages'] = 'Inga avvaktande meddelanden';
-$string['nomessagesfound'] = 'Det gick inte att hitta några nya meddelanden';
+$string['nogroupconversations'] = 'Inga gruppkonversationer';
+$string['noindividualconversations'] = 'Inga privata konversationer';
+$string['nomessages'] = 'Det finns inga avvaktande meddelanden';
+$string['nomessagesfound'] = 'Inga meddelanden hittades';
 $string['noncontacts'] = 'Icke-kontakter';
 $string['nonotifications'] = 'Du har inga notiser';
 $string['noparticipants'] = 'Det finns inga deltagare';
 $string['noreply'] = 'Svara inte på detta meddelande';
 $string['notificationdatahasnotbeenmigrated'] = 'Dina notiser är tillfälligt oåtkomliga. V.g. försök lite senare.';
 $string['notificationimage'] = 'Bild för notiser';
-$string['notificationpreferences'] = 'Välj inställningar för notiser';
+$string['notificationpreferences'] = 'Notisinställningar';
 $string['notifications'] = 'Notiser';
-$string['notificationwindow'] = 'Notifieringsfönster';
+$string['notificationwindow'] = 'Notisfönster';
 $string['notincontacts'] = 'Du måste lägga {$a} till dina kontakter för att kunna skicka ett meddelande till honom/henne.';
 $string['notincontactsheading'] = '{$a} finns inte bland dina kontakter';
 $string['numparticipants'] = '{$a} deltagare';
 $string['off'] = 'Av';
-$string['offline'] = 'Frånkopplat läge';
+$string['offline'] = 'Offline';
 $string['on'] = 'På';
-$string['online'] = 'Uppkopplad';
+$string['online'] = 'Online';
 $string['otherparticipants'] = 'Andra deltagare';
 $string['outputdisabled'] = 'Utmatning inaktiverat';
-$string['outputdoesnotexist'] = 'Meddelande utmatning existerar inte';
+$string['outputdoesnotexist'] = 'Meddelandeutmatning existerar inte';
 $string['outputenabled'] = 'Utmatning aktiverad';
 $string['outputnotavailable'] = 'Ej tillgänglig';
 $string['outputnotconfigured'] = 'Ej konfigurerad';
@@ -164,7 +165,6 @@ $string['participants'] = 'Deltagare';
 $string['pendingcontactrequests'] = 'Du har {$a} kontaktförfrågningar.';
 $string['permitted'] = 'Tillåten';
 $string['privacy'] = 'Sekretess';
-$string['privacy_desc'] = 'Du kan välja vilka som kan skicka meddelanden till dig.';
 $string['privacy:export:conversationprefix'] = 'Konversation:';
 $string['privacy:metadata:core_favourites'] = 'Konversationer som markerats som favoriter av användaren';
 $string['privacy:metadata:message_contact_requests'] = 'Lista över kontaktförfrågningar';
@@ -184,32 +184,40 @@ $string['privacy:metadata:message_conversation_members'] = 'Lista över använda
 $string['privacy:metadata:message_conversation_members:conversationid'] = 'ID för konversationen';
 $string['privacy:metadata:message_conversation_members:timecreated'] = 'Tiden när deltagaren skapades';
 $string['privacy:metadata:message_conversation_members:userid'] = 'ID för användaren i en konversation';
+$string['privacy:metadata:message_user_actions:action'] = 'Åtgärden som utfördes';
+$string['privacy:metadata:message_user_actions:timecreated'] = 'Tid då åtgärden skapades';
+$string['privacy:metadata:message_users_blocked'] = 'Lista över blockerade användare';
+$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'ID för den användare som har blockerats';
 $string['privacy:metadata:messages'] = 'Meddelanden';
 $string['privacy:metadata:messages:conversationid'] = 'ID för konversationen';
 $string['privacy:metadata:messages:fullmessage'] = 'Meddelandet i sin helhet';
+$string['privacy:metadata:messages:fullmessageformat'] = 'Format för det fullständiga meddelandet';
+$string['privacy:metadata:messages:fullmessagehtml'] = 'HTML-format för fullständigt meddelande';
 $string['privacy:metadata:messages:smallmessage'] = 'Kortversion av meddelandet';
 $string['privacy:metadata:messages:subject'] = 'Meddelandets ärende';
 $string['privacy:metadata:messages:timecreated'] = 'Tiden när meddelandet skapades';
 $string['privacy:metadata:messages:useridfrom'] = 'ID för den användare som skickade meddelandet';
-$string['privacy:metadata:message_users_blocked'] = 'Lista över blockerade användare';
-$string['privacy:metadata:message_users_blocked:blockeduserid'] = 'ID för den användare som har blockerats';
-$string['privacy:metadata:notifications'] = 'Notifieringar';
+$string['privacy:metadata:notifications'] = 'Notiser';
+$string['privacy:metadata:notifications:contexturlname'] = 'Kontextnamnet';
 $string['privacy:metadata:notifications:eventtype'] = 'Händelsetypen';
-$string['privacy:metadata:notifications:fullmessage'] = 'Notifieringen i sina helhet';
-$string['privacy:metadata:notifications:smallmessage'] = 'Kortversion av notifieringen';
-$string['privacy:metadata:notifications:subject'] = 'Notifieringens ärende';
-$string['privacy:metadata:notifications:timecreated'] = 'Tiden när notifieringen skapades';
-$string['privacy:metadata:notifications:timeread'] = 'Tiden när notifieringen lästes';
-$string['privacy:metadata:notifications:useridfrom'] = 'ID för användaren som skickade notifieringen';
-$string['privacy:metadata:notifications:useridto'] = 'ID för användaren som fått notifieringen';
+$string['privacy:metadata:notifications:fullmessage'] = 'Notisen i sina helhet';
+$string['privacy:metadata:notifications:fullmessageformat'] = 'Notisformatet';
+$string['privacy:metadata:notifications:smallmessage'] = 'Kortversion av notisen';
+$string['privacy:metadata:notifications:subject'] = 'Notisens ärende';
+$string['privacy:metadata:notifications:timecreated'] = 'Tiden när notisen skapades';
+$string['privacy:metadata:notifications:timeread'] = 'Tiden när notisen lästes';
+$string['privacy:metadata:notifications:useridfrom'] = 'ID för användaren som skickade notisen';
+$string['privacy:metadata:notifications:useridto'] = 'ID för användaren som fått notisen';
 $string['privacy:metadata:preference:core_message_settings'] = 'Inställningar för meddelanden';
+$string['privacy:request:preference:set'] = 'Värdet för \'{$a->name}\'-inställningen var \'{$a->value}\'';
+$string['privacy_desc'] = 'Du kan välja vilka som kan skicka meddelanden till dig.';
 $string['processorsettings'] = 'Processorinställningar';
 $string['removecontact'] = 'Ta bort kontakt';
 $string['removecontactconfirm'] = 'Är du säker på att du vill ta bort {$a} från dina kontaker?';
 $string['removecoursefilter'] = 'Ta bort filter för kursen {$a}';
-$string['removefromfavourites'] = 'Ta bort från Favoriter';
-$string['removefromyourcontacts'] = 'Ta bort från dina kontakter';
-$string['requirecontacttomessage'] = 'Be {$a} att lägga till dig som kontakt för att du ska kunna skicka meddelanden till honom/henne.';
+$string['removefromfavourites'] = 'Ta bort från favoriter';
+$string['removefromyourcontacts'] = 'Ta bort från kontakter';
+$string['requirecontacttomessage'] = 'Be {$a} att lägga till dig som kontakt för att du ska kunna skicka meddelanden till hen.';
 $string['requiresconfiguration'] = 'Kräver konfigurering';
 $string['searchcombined'] = 'Sök personer och meddelanden';
 $string['searchforuser'] = 'Sök efter en användare';
@@ -217,8 +225,9 @@ $string['searchforuserorcourse'] = 'Sök efter en användare eller en kurs';
 $string['searchmessages'] = 'Sök meddelande';
 $string['seeall'] = 'Visa alla';
 $string['selectmessagestodelete'] = 'Välj de meddelanden som ska raderas';
-$string['selfconversation'] = 'Personlig yta';
-$string['selfconversationdefaultmessage'] = 'Spara utkast till meddelanden, länkar, anteckningar etc. för senare åtkomst';
+$string['selectnotificationtoview'] = 'Välj från listan med notiser för att se ytterligare information';
+$string['selfconversation'] = 'Personligt utrymme';
+$string['selfconversationdefaultmessage'] = 'Spara meddelandeutkast, länkar, anteckningar etc. för senare åtkomst.';
 $string['send'] = 'Skicka';
 $string['sendbulkmessage'] = 'Skicka meddelande till {$a} personer';
 $string['sendbulkmessagesent'] = 'Meddelande har skickats till {$a} personer';
@@ -232,23 +241,24 @@ $string['sendmessage'] = 'Skicka meddelande';
 $string['sendmessageto'] = 'Skicka meddelande till {$a}';
 $string['sendmessagetopopup'] = 'Skicka meddelande till {$a} - nytt fönster';
 $string['settings'] = 'Inställningar';
-$string['togglemessagemenu'] = 'Växla till meddelandemenyn';
+$string['togglemessagemenu'] = 'Visa/dölj meddelandepanelen';
 $string['togglenotificationmenu'] = 'Växla till notismenyn';
 $string['totalconversations'] = '{$a} konversationer';
 $string['touserdoesntexist'] = 'Du kan inte skicka ett meddelande till en användar-id ({$a}) som inte existerar';
 $string['unabletomessage'] = 'Du kan inte skicka meddelanden till denna användare';
 $string['unblock'] = 'Avblockera';
-$string['unblockcontact'] = 'Ta bort blockering av användare';
+$string['unblockcontact'] = 'Avblockera kontakt';
 $string['unblockuser'] = 'Avblockera användare';
-$string['unblockuserconfirm'] = 'Är du säker att du vill avblockera {$a}?';
+$string['unblockuserconfirm'] = 'Är du säker på att du vill avblockera {$a}?';
 $string['unknownuser'] = 'Okänd användare';
+$string['unmuteconversation'] = 'Ljud på';
 $string['unreadconversations'] = 'Du har {$a} olästa konversationer';
 $string['unreadmessages'] = 'Du har {$a} olästa meddelanden';
 $string['unreadnewgroupconversationmessage'] = 'Nytt meddelande från {$a->name} i {$a->conversationname}';
 $string['unreadnewmessage'] = 'Nytt meddelande från {$a}';
 $string['unreadnotification'] = 'Oläst notis: {$a}';
 $string['unreadnotifications'] = 'Du har {$a} olästa notifieringar';
-$string['useentertosend'] = 'Använd Enter för att skicka';
+$string['useentertosend'] = 'Använd <em>Enter</em> för att skicka';
 $string['usercantbemessaged'] = 'Du kan inte skicka meddelanden till {$a} pga hens inställningar för meddelanden. Försök att lägga till hen som kontakt.';
 $string['userisblockingyou'] = 'Den här användaren har blockerat dig från att skicka meddelanden till honom/henne.';
 $string['userisblockingyounoncontact'] = 'Den här användaren accepterar bara meddelanden från personer på sin kontaktlista och där finns du f.n. inte med.';
@@ -260,5 +270,5 @@ $string['viewunreadmessageswith'] = 'Visa olästa meddelanden med: {$a}';
 $string['wouldliketocontactyou'] = 'Vill kontakta dig';
 $string['writeamessage'] = 'Skriv ett meddelande...';
 $string['you'] = 'Du:';
-$string['youhaveblockeduser'] = 'Du har tidigare blockerat denna användare';
-$string['yourcontactrequestpending'] = 'Din kontaktförfrågan till {$a} väntar på svar';
+$string['youhaveblockeduser'] = 'Du har blockerat denna användare.';
+$string['yourcontactrequestpending'] = 'Du har en väntande kontaktförfrågan till {$a}';

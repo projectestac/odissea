@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grades', language 'en', version '3.8'.
  *
- * @package   grades
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grades
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,22 +57,6 @@ $string['aggregatesum'] = 'Natural';
 $string['aggregateweightedmean'] = 'Weighted mean of grades';
 $string['aggregateweightedmean2'] = 'Simple weighted mean of grades';
 $string['aggregation'] = 'Aggregation';
-$string['aggregationcoef'] = 'Aggregation coefficient';
-$string['aggregationcoefextra'] = 'Extra credit';
-$string['aggregationcoefextra_help'] = 'If the aggregation is \'Natural\' or \'Simple weighted mean\' and the extra credit checkbox is ticked, the grade item\'s maximum grade is not added to the category\'s maximum grade. This will result in the possibility of achieving the maximum grade in the category without having the maximum grade in all the grade items. If the site administrator has enabled grades over the maximum, there might be grades over the maximum.
-
-If the aggregation is \'Mean of grades (with extra credits)\' and the extra credit is set to a value greater than zero, the extra credit is the factor by which the grade is multiplied before adding it to the total after the computation of the mean.';
-$string['aggregationcoefextra_link'] = 'grade/aggregation';
-$string['aggregationcoefextrasum'] = 'Extra credit';
-$string['aggregationcoefextrasumabbr'] = '+';
-$string['aggregationcoefextrasum_help'] = 'If the extra credit checkbox is ticked, the grade item\'s maximum grade is not added to the category\'s maximum grade, resulting in the possibility of achieving the maximum grade (or grades over the maximum if enabled by the site administrator) in the category without having the maximum grade in all the grade items.';
-$string['aggregationcoefextrasum_link'] = 'grade/aggregation';
-$string['aggregationcoefextraweight'] = 'Extra credit weight';
-$string['aggregationcoefextraweight_help'] = 'If the extra credit weight is set to a value greater than zero, the grade acts as extra credit during aggregation. The number is the factor by which the grade is multiplied before adding it to the total for the computation of the mean.';
-$string['aggregationcoefextraweight_link'] = 'grade/aggregation';
-$string['aggregationcoefweight'] = 'Item weight';
-$string['aggregationcoefweight_help'] = 'The item weight is used in the category aggregation to influence the importance of the item compared with other grade items in the same category.';
-$string['aggregationcoefweight_link'] = 'grade/aggregation';
 $string['aggregation_help'] = 'The aggregation determines how grades in a category are combined, such as
 
 * Mean of grades - The sum of all grades divided by the total number of grades
@@ -81,11 +65,27 @@ $string['aggregation_help'] = 'The aggregation determines how grades in a catego
 * Highest grade
 * Mode of grades - The grade that occurs the most frequently
 * Natural - The sum of all grade values scaled by weight';
+$string['aggregation_link'] = 'grade/aggregation';
+$string['aggregationcoef'] = 'Aggregation coefficient';
+$string['aggregationcoefextra'] = 'Extra credit';
+$string['aggregationcoefextra_help'] = 'If the aggregation is \'Natural\' or \'Simple weighted mean\' and the extra credit checkbox is ticked, the grade item\'s maximum grade is not added to the category\'s maximum grade. This will result in the possibility of achieving the maximum grade in the category without having the maximum grade in all the grade items. If the site administrator has enabled grades over the maximum, there might be grades over the maximum.
+
+If the aggregation is \'Mean of grades (with extra credits)\' and the extra credit is set to a value greater than zero, the extra credit is the factor by which the grade is multiplied before adding it to the total after the computation of the mean.';
+$string['aggregationcoefextra_link'] = 'grade/aggregation';
+$string['aggregationcoefextrasum'] = 'Extra credit';
+$string['aggregationcoefextrasum_help'] = 'If the extra credit checkbox is ticked, the grade item\'s maximum grade is not added to the category\'s maximum grade, resulting in the possibility of achieving the maximum grade (or grades over the maximum if enabled by the site administrator) in the category without having the maximum grade in all the grade items.';
+$string['aggregationcoefextrasum_link'] = 'grade/aggregation';
+$string['aggregationcoefextrasumabbr'] = '+';
+$string['aggregationcoefextraweight'] = 'Extra credit weight';
+$string['aggregationcoefextraweight_help'] = 'If the extra credit weight is set to a value greater than zero, the grade acts as extra credit during aggregation. The number is the factor by which the grade is multiplied before adding it to the total for the computation of the mean.';
+$string['aggregationcoefextraweight_link'] = 'grade/aggregation';
+$string['aggregationcoefweight'] = 'Item weight';
+$string['aggregationcoefweight_help'] = 'The item weight is used in the category aggregation to influence the importance of the item compared with other grade items in the same category.';
+$string['aggregationcoefweight_link'] = 'grade/aggregation';
 $string['aggregationhintdropped'] = '( Dropped )';
 $string['aggregationhintexcluded'] = '( Excluded )';
 $string['aggregationhintextra'] = '( Extra credit )';
 $string['aggregationhintnovalue'] = '( Empty )';
-$string['aggregation_link'] = 'grade/aggregation';
 $string['aggregationofa'] = 'Aggregation of {$a}';
 $string['aggregationposition'] = 'Aggregation position';
 $string['aggregationposition_help'] = 'This setting determines whether the category and course total columns are displayed first or last in the gradebook reports.';
@@ -109,10 +109,10 @@ $string['bonuspoints'] = 'Bonus points';
 $string['bulkcheckboxes'] = 'Bulk checkboxes';
 $string['calculatedgrade'] = 'Calculated grade';
 $string['calculation'] = 'Calculation';
-$string['calculationadd'] = 'Add calculation';
-$string['calculationedit'] = 'Edit calculation';
 $string['calculation_help'] = 'A grade calculation is a formula used to determine grades. The formula should start with an equal (=) sign and may use common mathematical operators, such as max, min and sum. If desired, other grade items may be included in the calculation by typing the ID numbers in double square brackets.';
 $string['calculation_link'] = 'grade/calculation';
+$string['calculationadd'] = 'Add calculation';
+$string['calculationedit'] = 'Edit calculation';
 $string['calculationsaved'] = 'Calculation saved';
 $string['calculationview'] = 'View calculation';
 $string['cannotaccessgroup'] = 'Can not access grades of selected group, sorry.';
@@ -165,9 +165,9 @@ $string['displaypoints'] = 'Display points';
 $string['displayweighted'] = 'Display weighted grades';
 $string['dropdown'] = 'Drop-down menu';
 $string['droplow'] = 'Drop the lowest';
+$string['droplow_help'] = 'This setting enables a specified number of the lowest grades to be excluded from the aggregation.';
 $string['droplowestvalue'] = 'Set drop lowest grade value';
 $string['droplowestvalues'] = 'Drop {$a} lowest values';
-$string['droplow_help'] = 'This setting enables a specified number of the lowest grades to be excluded from the aggregation.';
 $string['dropped'] = 'Dropped';
 $string['dropxlowest'] = 'Drop X lowest';
 $string['dropxlowestwarning'] = 'Note: If you use drop x lowest the grading assumes that all items in the category have the same point value. If point values differ results will be unpredictable';
@@ -233,11 +233,11 @@ $string['externalurl_desc'] = 'If an external gradebook is used, the URL should 
 $string['extracreditvalue'] = 'Extra credit value for {$a}';
 $string['extracreditwarning'] = 'Note: Setting all items for a category to extra credit will effectively remove them from the grade calculation. Since there will be no point total';
 $string['feedback'] = 'Feedback';
+$string['feedback_help'] = 'This box enables any comments about the grade to be added.';
 $string['feedbackadd'] = 'Add feedback';
 $string['feedbackedit'] = 'Edit feedback';
 $string['feedbackfiles'] = 'Feedback files';
 $string['feedbackforgradeitems'] = 'Feedback for {$a}';
-$string['feedback_help'] = 'This box enables any comments about the grade to be added.';
 $string['feedbackhistoryfiles'] = 'Feedback history files';
 $string['feedbacks'] = 'Feedbacks';
 $string['feedbacksaved'] = 'Feedback saved';
@@ -256,6 +256,7 @@ $string['full'] = 'Full';
 $string['fullmode'] = 'Change to full view';
 $string['generalsettings'] = 'General settings';
 $string['grade'] = 'Grade';
+$string['grade_help'] = 'The grade to award the student for their work.';
 $string['gradeadministration'] = 'Grade administration';
 $string['gradealreadyupdated'] = '{$a} grades have not been imported because the grades in the import file are older than in the grader report. To proceed with the grade import anyway, use the force import option.';
 $string['gradeanalysis'] = 'Grade analysis';
@@ -297,7 +298,6 @@ $string['gradeexportuserprofilefields_desc'] = 'Include these user profile field
 $string['gradeforstudent'] = '{$a->student}<br />{$a->item}{$a->feedback}';
 $string['gradegrademinmax'] = 'Initial min and max grades';
 $string['gradehelp'] = 'Grade help';
-$string['grade_help'] = 'The grade to award the student for their work.';
 $string['gradehistorylifetime'] = 'Grade history lifetime';
 $string['gradehistorylifetime_help'] = 'This specifies the length of time you want to keep history of changes in grade related tables. It is recommended to keep it as long as possible. If you experience performance problems or have limited database space, try to set lower value.';
 $string['gradeimport'] = 'Grade import';
@@ -332,8 +332,8 @@ $string['gradeoutcomeitem'] = 'Grade outcome item';
 $string['gradeoutcomes'] = 'Outcomes';
 $string['gradeoutcomescourses'] = 'Course outcomes';
 $string['gradepass'] = 'Grade to pass';
-$string['gradepassgreaterthangrade'] = 'The grade to pass can not be greater than the maximum possible grade {$a}';
 $string['gradepass_help'] = 'This setting determines the minimum grade required to pass. The value is used in activity and course completion, and in the gradebook, where pass grades are highlighted in green and fail grades in red.';
+$string['gradepassgreaterthangrade'] = 'The grade to pass can not be greater than the maximum possible grade {$a}';
 $string['gradepointdefault'] = 'Grade point default';
 $string['gradepointdefault_help'] = 'This setting determines the default value for the grade point value available in a grade item.';
 $string['gradepointdefault_validateerror'] = 'This setting must be an integer between 1 and the grade point maximum.';
@@ -369,9 +369,9 @@ $string['gradeweighthelp'] = 'Grade weight help';
 $string['gradingmodulename'] = 'Grading ({$a})';
 $string['groupavg'] = 'Group average';
 $string['hidden'] = 'Hidden';
+$string['hidden_help'] = 'If ticked, grades are hidden from students. A hidden until date may be set if desired, to release grades after grading is completed.';
 $string['hiddenasdate'] = 'Show submitted date for hidden grades';
 $string['hiddenasdate_help'] = 'If user can not see hidden grades show date of submission instead of \'-\'.';
-$string['hidden_help'] = 'If ticked, grades are hidden from students. A hidden until date may be set if desired, to release grades after grading is completed.';
 $string['hiddenuntil'] = 'Hidden until';
 $string['hiddenuntildate'] = 'Hidden until: {$a}';
 $string['hideadvanced'] = 'Hide advanced features';
@@ -447,8 +447,8 @@ $string['itemnamehelp'] = 'The name of this item, pushed in by the module.';
 $string['items'] = 'Items';
 $string['itemsedit'] = 'Edit grade item';
 $string['keephigh'] = 'Keep the highest';
-$string['keephighestvalues'] = 'Keep the {$a} highest values';
 $string['keephigh_help'] = 'If set, this option will only keep the X highest grades, X being the selected value for this option.';
+$string['keephighestvalues'] = 'Keep the {$a} highest values';
 $string['keymanager'] = 'Key manager';
 $string['lessthanmin'] = 'The grade entered for {$a->itemname} for {$a->username} is less than the minimum allowed';
 $string['letter'] = 'Letter';
@@ -496,6 +496,7 @@ $string['missingitemtypeoreid'] = 'Array key (itemtype or eid) missing from 2nd 
 $string['missingscale'] = 'Scale must be selected';
 $string['mode'] = 'Mode';
 $string['modgrade'] = 'Grade';
+$string['modgrade_help'] = 'Select the type of grading used for this activity. If \'scale\' is chosen, you can then choose the scale from the drop-down menu. If using point grading, you can then enter the maximum grade available for this activity.';
 $string['modgradecantchangegradetype'] = 'You cannot change the type, as grades already exist for this item.';
 $string['modgradecantchangegradetypemsg'] = 'Some grades have already been awarded, so the grade type cannot be changed. If you wish to change the maximum grade, you must first choose whether or not to rescale existing grades.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Some grades have already been awarded, so the grade type and scale cannot be changed.';
@@ -512,7 +513,6 @@ For example, if this option is set to \'Yes\', changing the maximum grade on an 
 $string['modgradedonotmodify'] = 'Do not modify existing grades';
 $string['modgradeerrorbadpoint'] = 'Invalid grade value. This must be an integer between 1 and {$a}';
 $string['modgradeerrorbadscale'] = 'Invalid scale selected. Please make sure you select a scale from the selections below.';
-$string['modgrade_help'] = 'Select the type of grading used for this activity. If \'scale\' is chosen, you can then choose the scale from the drop-down menu. If using point grading, you can then enter the maximum grade available for this activity.';
 $string['modgrademaxgrade'] = 'Maximum grade';
 $string['modgraderescalegrades'] = 'Rescale existing grades';
 $string['modgraderescalegrades_help'] = 'When changing the maximum grades on a gradebook item you need to specify whether or not this will cause existing percentage grades to change as well.
@@ -573,6 +573,7 @@ $string['operations'] = 'Operations';
 $string['options'] = 'Options';
 $string['others'] = 'Others';
 $string['outcome'] = 'Outcome';
+$string['outcome_help'] = 'This setting determines the outcome which this grade item will represent in the gradebook.';
 $string['outcomeassigntocourse'] = 'Assign another outcome to this course';
 $string['outcomecategory'] = 'Create outcomes in category';
 $string['outcomecategorynew'] = 'New category';
@@ -580,7 +581,6 @@ $string['outcomeconfirmdelete'] = 'Are you sure you wish to delete the outcome "
 $string['outcomecreate'] = 'Add a new outcome';
 $string['outcomedelete'] = 'Delete outcome';
 $string['outcomefullname'] = 'Full name';
-$string['outcome_help'] = 'This setting determines the outcome which this grade item will represent in the gradebook.';
 $string['outcomeitem'] = 'Outcome item';
 $string['outcomeitemsedit'] = 'Edit outcome item';
 $string['outcomereport'] = 'Outcome report';
@@ -647,22 +647,22 @@ $string['privacy:metadata:grades:aggregationstatus'] = 'The aggregation status';
 $string['privacy:metadata:grades:aggregationweight'] = 'The weight in aggregation';
 $string['privacy:metadata:grades:feedback'] = 'The feedback';
 $string['privacy:metadata:grades:finalgrade'] = 'The grade';
-$string['privacy:metadata:gradeshistory'] = 'A record of the previous grades';
 $string['privacy:metadata:grades:information'] = 'Additional information about the grade';
 $string['privacy:metadata:grades:timemodified'] = 'The time when the grade was last modified';
 $string['privacy:metadata:grades:userid'] = 'The ID of the user whose grade it is';
 $string['privacy:metadata:grades:usermodified'] = 'The ID of the user who last modified the record';
+$string['privacy:metadata:gradeshistory'] = 'A record of the previous grades';
 $string['privacy:metadata:history:loggeduser'] = 'The ID of the user who was logged in when the versioning occurred';
 $string['privacy:metadata:history:timemodified'] = 'The time when grade versioning occurred';
 $string['privacy:metadata:itemshistory'] = 'A record of previous versions of grade items';
 $string['privacy:metadata:outcomes'] = 'A record of outcomes';
-$string['privacy:metadata:outcomeshistory'] = 'A record of previous versions of outcomes';
 $string['privacy:metadata:outcomes:timemodified'] = 'The time when the record was modified';
 $string['privacy:metadata:outcomes:usermodified'] = 'The user who last modified the record';
+$string['privacy:metadata:outcomeshistory'] = 'A record of previous versions of outcomes';
 $string['privacy:metadata:scale'] = 'A record of scales';
-$string['privacy:metadata:scalehistory'] = 'A record of previous versions of scales';
 $string['privacy:metadata:scale:timemodified'] = 'The time when the record was last modified';
 $string['privacy:metadata:scale:userid'] = 'The user who last modified the record';
+$string['privacy:metadata:scalehistory'] = 'A record of previous versions of scales';
 $string['privacy:path:relatedtome'] = 'Related to me';
 $string['privacy:request:historyactiondelete'] = 'Delete';
 $string['privacy:request:historyactioninsert'] = 'Insert';
@@ -858,12 +858,12 @@ $string['verbosescales_help'] = 'A verbose scale uses words rather than numbers.
 $string['viewbygroup'] = 'Group';
 $string['viewgrades'] = 'View grades';
 $string['weight'] = 'Weight';
+$string['weight_help'] = 'A value used to determine the relative value of multiple grade items in a category or course.';
 $string['weightcourse'] = 'Use weighted grades for course';
 $string['weightedascending'] = 'Sort by weighted percent ascending';
 $string['weighteddescending'] = 'Sort by weighted percent descending';
 $string['weightedpct'] = 'weighted %';
 $string['weightedpctcontribution'] = 'weighted % contribution';
-$string['weight_help'] = 'A value used to determine the relative value of multiple grade items in a category or course.';
 $string['weightofa'] = 'Weight of {$a}';
 $string['weightorextracredit'] = 'Weight or extra credit';
 $string['weightoverride'] = 'weight adjustment';

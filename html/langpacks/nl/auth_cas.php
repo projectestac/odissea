@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_cas', language 'nl', version '3.8'.
  *
- * @package   auth_cas
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_cas
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['CASform'] = 'Authenticatiekeuze';
 $string['accesCAS'] = 'CAS-gebruikers';
 $string['accesNOCAS'] = 'andere gebruikers';
 $string['auth_cas_auth_logo'] = 'Authenticatiemethode logo';
@@ -47,15 +48,14 @@ $string['auth_cas_changepasswordurl'] = 'URL om wachtwoord te wijzigen';
 $string['auth_cas_create_user'] = 'Schakel dit in als je gebruikers met CAS-authenticatie in de Moodle-databank wil zetten. Indien niet ingeschakeld zullen enkel gebruikers die al in de Moodle-databank bestaan, kunnen aanmelden.';
 $string['auth_cas_create_user_key'] = 'Maak gebruiker';
 $string['auth_cas_curl_ssl_version'] = 'De te gebruiken SSL-versie (2 of 3). Standaard zal PHP dat zelf proberen te bepalen. In sommige gevallen moet dit manueel ingesteld worden.';
-$string['auth_cas_curl_ssl_version_default'] = 'Standaard';
-$string['auth_cas_curl_ssl_version_key'] = 'cURL SSL Versie';
 $string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
 $string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
 $string['auth_cas_curl_ssl_version_TLSv10'] = 'TLSv1.0';
 $string['auth_cas_curl_ssl_version_TLSv11'] = 'TLSv1.1';
 $string['auth_cas_curl_ssl_version_TLSv12'] = 'TLSv1.2';
 $string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
-$string['auth_casdescription'] = 'Deze methode gebruikt een CAS-server (Central Authentication Service) om gebruikers in een Single Sign On omgeving (SSO) te authenticeren. Als de ingegeven gebuikersnaam en wachtwoord volgens CAS kloppen, dan zal Moodle een nieuwe gebruiker in zijn databank maken en de gebruikersgegevens uit LDAP overnemen indien nodig. Bij volgende aanmeldingen worden dan enkel de gebruikersnaam en wachtwoord gecontroleerd.';
+$string['auth_cas_curl_ssl_version_default'] = 'Standaard';
+$string['auth_cas_curl_ssl_version_key'] = 'cURL SSL Versie';
 $string['auth_cas_enabled'] = 'Schakel dit in als je CAS-authenticatie wil gebruiken.';
 $string['auth_cas_hostname'] = 'Server-naam van de CAS-server<br />vb: host.domein.nl';
 $string['auth_cas_hostname_key'] = 'Host-naam';
@@ -63,13 +63,12 @@ $string['auth_cas_invalidcaslogin'] = 'Sorry, je login is mislukt - je kon niet 
 $string['auth_cas_language'] = 'Kies taal voor authenticatiepagina\'s';
 $string['auth_cas_language_key'] = 'Taal';
 $string['auth_cas_logincas'] = 'Toegang met veilige verbinding';
-$string['auth_cas_logoutcas'] = 'Zet deze instelling op \'Ja\' als je wil uitloggen uit CAS wanneer je Moodle verlaat.';
-$string['auth_cas_logoutcas_key'] = 'CAS uitlog-optie';
 $string['auth_cas_logout_return_url'] = 'Geef een URL waarnaar CAS-gebruikers gestuurd worden na afmelden.<br />Als je dit leeg laat, dan zullen gebruikers naar de pagina gestuurd worden waar Moodle gebruikers naar stuurt.';
 $string['auth_cas_logout_return_url_key'] = 'Alternatieve URL na afmelden';
+$string['auth_cas_logoutcas'] = 'Zet deze instelling op \'Ja\' als je wil uitloggen uit CAS wanneer je Moodle verlaat.';
+$string['auth_cas_logoutcas_key'] = 'CAS uitlog-optie';
 $string['auth_cas_multiauth'] = 'Zet deze instelling op \'Ja\' als je multi-authenticatie wil gebruiken (CAS samen met een andere authenticatiemethode)';
 $string['auth_cas_multiauth_key'] = 'Multi-authenticatie';
-$string['auth_casnotinstalled'] = 'Kan CAS-authenticatie niet gebruiken. De PHP LDAP-module is niet geïnstalleerd.';
 $string['auth_cas_port'] = 'Poort van de CAS-server';
 $string['auth_cas_port_key'] = 'Poort';
 $string['auth_cas_proxycas'] = 'Zet deze instelling op \'Ja\' als je CAS in proxy-modus gebruikt.';
@@ -78,7 +77,8 @@ $string['auth_cas_server_settings'] = 'CAS-serverconfiguratie';
 $string['auth_cas_text'] = 'Veilige verbinding';
 $string['auth_cas_use_cas'] = 'Gebruik CAS';
 $string['auth_cas_version'] = 'Te gebruiken CAS-protocolversie';
-$string['CASform'] = 'Authenticatiekeuze';
+$string['auth_casdescription'] = 'Deze methode gebruikt een CAS-server (Central Authentication Service) om gebruikers in een Single Sign On omgeving (SSO) te authenticeren. Als de ingegeven gebuikersnaam en wachtwoord volgens CAS kloppen, dan zal Moodle een nieuwe gebruiker in zijn databank maken en de gebruikersgegevens uit LDAP overnemen indien nodig. Bij volgende aanmeldingen worden dan enkel de gebruikersnaam en wachtwoord gecontroleerd.';
+$string['auth_casnotinstalled'] = 'Kan CAS-authenticatie niet gebruiken. De PHP LDAP-module is niet geïnstalleerd.';
 $string['noldapserver'] = 'Er is geen LDAP-server geconfigureerd voor CAS! Synchronisatie uitgeschakeld';
 $string['pluginname'] = 'CAS-server (SSO)';
 $string['privacy:metadata'] = 'De CAS-server (SSO) authenticatie-plugin bewaart geen persoonlijke gegevens.';

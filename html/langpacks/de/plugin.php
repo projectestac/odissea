@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'plugin', language 'de', version '3.8'.
  *
- * @package   plugin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plugin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -132,8 +132,8 @@ $string['type_editor_plural'] = 'Editoren';
 $string['type_enrol'] = 'Einschreibemethode';
 $string['type_enrol_plural'] = 'Einschreibemethoden';
 $string['type_fileconverter'] = 'Dokumentkonverter';
-$string['type_fileconvertermanage'] = 'Dokumentkonverter verwalten';
 $string['type_fileconverter_plural'] = 'Dokumentkonverter';
+$string['type_fileconvertermanage'] = 'Dokumentkonverter verwalten';
 $string['type_filter'] = 'Filter';
 $string['type_filter_plural'] = 'Filter';
 $string['type_format'] = 'Kursformat';
@@ -210,10 +210,6 @@ $string['validationmsg_filesnumber'] = 'Zu wenige Dateien im Paket gefunden';
 $string['validationmsg_filestatus'] = 'Mehrere Dateien konnten nicht entgepackt werden';
 $string['validationmsg_filestatus_info'] = 'Der Versuch, die Datei {$a->file} zu entpacken, führte zu folgendem Fehler \'{$a->status}\'.';
 $string['validationmsg_foundlangfile'] = 'Spachdatei gefunden';
-$string['validationmsglevel_debug'] = 'Debug';
-$string['validationmsglevel_error'] = 'Fehler';
-$string['validationmsglevel_info'] = 'OK';
-$string['validationmsglevel_warning'] = 'Warnung';
 $string['validationmsg_maturity'] = 'Entwicklungsstand';
 $string['validationmsg_maturity_help'] = 'Das Plugin kann seinen Entwicklungsstand angeben. Wenn der Entwickler als Entwicklungsstand des Plugin als \'stabil\' definiert, wird MATURITY_STABLE angezeigt. Alle anderen Entwicklungsstände (wie alpha oder beta) werden als unstable bestätigt und ein Warnhinweis wird angezeigt.';
 $string['validationmsg_missingcomponent'] = 'Das Plugin zeigt keinen Modulnamen an.';
@@ -241,6 +237,10 @@ $string['validationmsg_targetexists_help'] = 'Das Plugin-Verzeichnis existiert b
 $string['validationmsg_targetnotdir'] = 'Das Zielobjekt ist mit einer Datei belegt';
 $string['validationmsg_unknowntype'] = 'Unbekannter Plugin-Typ';
 $string['validationmsg_versionphpsyntax'] = 'Nicht-unterstütze Syntax in der Datei version.php gefunden';
+$string['validationmsglevel_debug'] = 'Debug';
+$string['validationmsglevel_error'] = 'Fehler';
+$string['validationmsglevel_info'] = 'OK';
+$string['validationmsglevel_warning'] = 'Warnung';
 $string['version'] = 'Version';
 $string['versiondb'] = 'Aktuelle Version';
 $string['versiondisk'] = 'Neue Version';

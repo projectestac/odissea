@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recentlyaccessedcourses', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_recentlyaccessedcourses', language 'ar', version '3.8'.
  *
- * @package   block_recentlyaccessedcourses
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_recentlyaccessedcourses
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['displaycategories'] = 'عرض التصنيفات';
-$string['displaycategories_help'] = 'إعرض تصنيف المساق ضمن عناصر كتلة المساقات التي تم الوصول إليها مؤخراً.';
-$string['nocourses'] = 'لا مساقات تم الوصول إليها مؤخراً';
-$string['pluginname'] = 'مساقات تم الوصول إليها مؤخراً';
-$string['privacy:metadata'] = 'كتلة المساقات التي تم الوصول إليها مؤخراً لا تخزن أي بيانات شخصية.';
-$string['recentlyaccessedcourses:myaddinstance'] = 'إضافة كتلة جديدة من المساقات التي تم الوصول إليها مؤخراً إلى دفة القيادة';
+$string['displaycategories_help'] = 'إعرض تصنيف المقرر ضمن عناصر كتلة المقررات الدراسية التي تم الوصول إليها مؤخراً.';
+$string['nocourses'] = 'لا مقررات دراسية تم الوصول إليها مؤخراً';
+$string['pluginname'] = 'مقررات دراسية تم الوصول إليها مؤخراً';
+$string['privacy:metadata'] = 'كتلة المقررات الدراسية التي تم الوصول إليها مؤخراً لا تخزن أي بيانات شخصية.';
+$string['recentlyaccessedcourses:myaddinstance'] = 'إضافة كتلة جديدة من المقررات الدراسية التي تم الوصول إليها مؤخراً إلى لوحة التحكم';

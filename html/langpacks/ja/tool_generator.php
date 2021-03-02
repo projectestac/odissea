@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_generator', language 'ja', version '3.8'.
  *
- * @package   tool_generator
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_generator
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -100,7 +100,7 @@ tool_generatorの一部であるため、コースによるコースおよびサ
 * ページモジュールインスタンス
 * 少なくとも1件のディスカッションおよび1件の返信を含むフォーラムインスタンス
 
-特にJMeterにより生成されるロードが大きくなるため、大きなテストプランを実効する場合、あなたのサーバの性能を考慮した方が良いでしょう。この種の問題を減らすためスレッド (ユーザ) 数に応じて起動時間は調整されますが、ロードは依然と大きなものになります。
+特にJMeterにより生成されるロードが大きくなるため、大きなテストプランを実行する場合、あなたのサーバの性能を考慮した方が良いでしょう。この種の問題を減らすためスレッド (ユーザ) 数に応じて起動時間は調整されますが、ロードは依然と大きなものになります。
 
 **実運用サイトでこの機能を使用しないでください** この機能はJMeterにフィードするためのファイルのみ作成します。そのため、それ自体に危険性ありませんが、あなたはこのテストプランを実運用サイトで***決して***実行すべきではありません。';
 $string['testplansize_0'] = 'XS ({$a->users} ユーザ / {$a->loops} ループ /  {$a->rampup} Ramp-Up期間)';

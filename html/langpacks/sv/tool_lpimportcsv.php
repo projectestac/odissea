@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,35 +12,47 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_lpimportcsv', language 'sv', version '3.8'.
  *
- * @package   tool_lpimportcsv
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_lpimportcsv
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['competencyscale'] = 'Kompetensskala: {$a}';
 $string['competencyscaledescription'] = 'Kompetensskala skapad vid import';
 $string['confirm'] = 'Bekräfta';
-$string['csvdelimiter'] = 'CSV, avgränsare';
+$string['confirmcolumnmappings'] = 'Bekräfta inställningar för kolumner';
+$string['csvdelimiter'] = 'CSV-avgränsare';
 $string['description'] = 'Beskrivning';
 $string['descriptionformat'] = 'Beskrivningsformat';
-$string['encoding'] = 'Avkodning';
+$string['encoding'] = 'Teckenkodning';
 $string['export'] = 'Exportera';
-$string['exportnavlink'] = 'Exportera ramverk för kompetenser';
+$string['exportid'] = 'Export-ID (Valfritt)';
+$string['exportnavlink'] = 'Exportera kompetensramverk';
+$string['idnumber'] = 'ID-nummer';
 $string['import'] = 'Importera';
-$string['importfile'] = 'CSV-Fil med ramverksbeskrivning';
+$string['importfile'] = 'CSV-fil med ramverksbeskrivning';
+$string['importfile_help'] = 'Ett kompetensramverk kan importeras via textfil. Formatet kan fastställas genom att skapa ett kompetensramverk och sedan exportera det.';
+$string['importingfile'] = 'Importerar fil';
 $string['invalidimportfile'] = 'Filformat är ogiltigt';
 $string['isframework'] = 'Är ramverk';
-$string['noframeworks'] = 'Inga ramverk för kompetenser har skapats än';
-$string['pluginname'] = 'Importer ramverk för kompetenser';
-$string['ruleconfig'] = 'Regel inställningar (valfritt)';
-$string['ruleoutcome'] = 'Regel utfall (valfritt)';
-$string['ruletype'] = 'Regel typ (valfritt)';
-$string['scaleconfiguration'] = 'Inställning för skala';
-$string['scalevalues'] = 'Värden för skala';
+$string['noframeworks'] = 'Inga kompetensramverk har skapats ännu';
+$string['parentidnumber'] = 'Överliggande ID-nummer';
+$string['pluginname'] = 'Importera kompetensramverk';
+$string['privacy:metadata'] = 'Pluginmodulen Importera kompetensramverk lagrar ingen personlig information.';
+$string['processingfile'] = 'Bearbetar fil';
+$string['relatedidnumbers'] = 'Korsrefererade kompetens id-nummer';
+$string['ruleconfig'] = 'Regelinställning (valfritt)';
+$string['ruleoutcome'] = 'Regelutfall (valfritt)';
+$string['ruletype'] = 'Regeltyp (valfritt)';
+$string['scaleconfiguration'] = 'Skalinställning';
+$string['scalevalues'] = 'Skalvärden';
+$string['shortname'] = 'Kortnamn';
 $string['taxonomy'] = 'Taxonomi';

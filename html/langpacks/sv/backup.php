@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'backup', language 'sv', version '3.8'.
  *
- * @package   backup
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     backup
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,6 +32,9 @@ $string['asyncbackuperror'] = 'Säkerhetskopieringen misslyckades';
 $string['asyncbackuperrordetail'] = 'Säkerhetskopieringen har misslyckats. Kontakta systemadministratören.';
 $string['asyncbackuppending'] = 'Väntande säkerhetskopiering';
 $string['asyncbackupprocessing'] = 'Säkerhetskopieringen pågår';
+$string['asyncbadexecution'] = 'Felaktig backupcontrollerkörning. Den är {$a} men de borde vara 2.';
+$string['asynccheckprogress'] = 'Du kan kontrollera förloppet när som helst på <a href="{$a}">sidan för återställning</a>.';
+$string['asyncemailenable'] = 'Aktivera notiser';
 $string['asyncemailenabledetail'] = 'Om detta alternativ är aktivt kommer användare att få ett meddelande då en asynkron säkerhetskopiering eller återställning slutförts.';
 $string['asyncgeneralsettings'] = 'Asynkron säkerhetskopiering/återställning';
 $string['asyncmessagebody'] = 'Meddelande';
@@ -52,31 +55,31 @@ $string['asyncrestoreinprogress_help'] = 'Pågående asynkrona kursåterställni
 $string['asyncrestorepending'] = 'Väntande återställning';
 $string['asyncrestoreprocessing'] = 'Återställningen pågår';
 $string['asyncreturn'] = 'Återgå till kurs';
-$string['autoactivedescription'] = 'Välj om det skall göras automatisk säkerhetskopiering eller inte. Om manuell säkerhetskopiering väljs kommer automatisk säkerhetskopiering endast vara möjlig via CLI skript för automatiserad backup.
+$string['autoactivedescription'] = 'Välj om det skall göras automatisk säkerhetskopiering eller inte. Om manuell säkerhetskopiering väljs kommer automatisk säkerhetskopiering endast vara möjlig via CLI skript för automatiserad säkerhetskopiering.
 Säkerhetskopiering kan då göras manuellt på kommando prompten eller genom cron.';
-$string['autoactivedisabled'] = 'Avaktiverad';
+$string['autoactivedisabled'] = 'Inaktiverad';
 $string['autoactiveenabled'] = 'Aktiverad';
 $string['autoactivemanual'] = 'Manuell';
 $string['automatedbackupschedule'] = 'Schema';
 $string['automatedbackupschedulehelp'] = 'Välj vilka dagar i veckan som automatiska säkerhetskopieringar ska genomföras.';
-$string['automatedbackupsinactive'] = 'Webbplatsens administratör har inte aktiverat schemalagd säkerhetskopiering.';
-$string['automatedbackupstatus'] = 'Status för schemalagd säkerhetskopiering.';
+$string['automatedbackupsinactive'] = 'Webbplatsens administratör har inte aktiverat automatisk säkerhetskopiering.';
+$string['automatedbackupstatus'] = 'Status för automatisk säkerhetskopiering.';
 $string['automateddeletedays'] = 'Radera säkerhetskopior äldre än';
 $string['automatedmaxkept'] = 'Maximalt antal säkerhetskopior att behålla';
 $string['automatedmaxkepthelp'] = 'Specificerar det maximala antalet senaste säkerhetskopieringar som ska behållas för varje kurs. Äldre säkerhetskopior kommer automatiskt raderas.';
 $string['automatedminkept'] = 'Minsta antal säkerhetskopior att behålla';
 $string['automatedminkepthelp'] = 'Om säkerhetskopior äldre än ett angivet antal dagar raderas kan detta medföra att inaktiva kurser efter en tid har några säkerhetskopior. För att förhindra detta bör ett minsta antal säkerhetskopior att behålla anges.';
-$string['automatedsettings'] = 'Schemalagda inställningar för säkerhetskopiering';
+$string['automatedsettings'] = 'Inställningar för automatisk säkerhetskopiering';
 $string['automatedsetup'] = 'Inställningar för automatisk säkerhetskopiering';
-$string['automatedstorage'] = 'Lagring för automatisk säkerhetskopiering';
+$string['automatedstorage'] = 'Lagringsplats vid automatisk säkerhetskopiering';
 $string['automatedstoragehelp'] = 'Välj vilken plats som automatiska säkerhetskopior ska lagras på.';
-$string['backupactivity'] = 'Aktivitet av typ säkerhetskopiering: {$a}';
-$string['backupcourse'] = 'Säkerhetskopierad kurs: {$a}';
-$string['backupcoursedetails'] = 'Detaljer om kurs';
+$string['backupactivity'] = 'Säkerhetskopieringsaktivitet: {$a}';
+$string['backupcourse'] = 'Säkerhetskopiera kurs: {$a}';
+$string['backupcoursedetails'] = 'Kursdetaljer';
 $string['backupcoursesection'] = 'Sektion: {$a}';
-$string['backupcoursesections'] = 'Sektioner av kurs';
-$string['backupdate'] = 'Datum för tagning';
-$string['backupdetails'] = 'Detaljer om säkerhetskopiering';
+$string['backupcoursesections'] = 'Kurssektioner';
+$string['backupdate'] = 'Datum gjord';
+$string['backupdetails'] = 'Detaljer för säkerhetskopia';
 $string['backupdetailsnonstandardinfo'] = 'Den valda filen är inte en vanlig Moodle säkerhetskopia. Återställningsprocessen kommer att försöka konvertera filen till standardformat och därefter återställa den.';
 $string['backupformat'] = 'Format';
 $string['backupformatimscc1'] = 'IMS Common Cartridge 1.0';
@@ -91,11 +94,11 @@ $string['backupmode20'] = 'Importera';
 $string['backupmode30'] = 'Hubb';
 $string['backupmode40'] = 'Samma webbplats';
 $string['backupmode50'] = 'Automatiserad';
-$string['backupmode60'] = 'Konverterat';
+$string['backupmode60'] = 'Konverterad';
 $string['backupmode70'] = 'Asynkron';
 $string['backupsection'] = 'Sektion för säkerhetskopiering av kurs: {$a}';
 $string['backupsettings'] = 'Inställningar för säkerhetskopiering';
-$string['backupsitedetails'] = 'Detaljer om webbplats';
+$string['backupsitedetails'] = 'Webbplatsdetaljer';
 $string['backupstage16action'] = 'Fortsätt';
 $string['backupstage1action'] = 'Nästa';
 $string['backupstage2action'] = 'Nästa';
@@ -105,16 +108,22 @@ $string['backuptype'] = 'Typ';
 $string['backuptypeactivity'] = 'Aktivitet';
 $string['backuptypecourse'] = 'Kurs';
 $string['backuptypesection'] = 'Sektion';
-$string['backupversion'] = 'Version av säkerhetskopiering';
-$string['cannotfindassignablerole'] = 'Rollen {$a} i säkerhetskopian kan inte likställas med någon av de roller som du har rätt (behörighet) att tilldela.';
-$string['choosefilefromactivitybackup'] = 'Område för säkerhetskopiering av aktiviteter';
+$string['backupversion'] = 'Version';
+$string['cannotfindassignablerole'] = 'Rollen {$a} i säkerhetskopian kan inte kopplas till någon av de roller du har rätt att tilldela.';
+$string['choosefilefromactivitybackup'] = 'Plats för säkerhetskopierade aktiviteter';
 $string['choosefilefromactivitybackup_help'] = 'När säkerhetskopiering med standardinställningar görs kommer säkerhetskopiorna sparas här';
 $string['choosefilefromautomatedbackup'] = 'Automatiska säkerhetskopieringar';
 $string['choosefilefromautomatedbackup_help'] = 'Innehåller automatiskt genererade säkerhetskopior.';
-$string['choosefilefromcoursebackup'] = 'Område för säkerhetskopiering av kurser';
+$string['choosefilefromcoursebackup'] = 'Plats för säkerhetskopierade kurser';
 $string['choosefilefromcoursebackup_help'] = 'När kurser säkerhetskopieras med standardinställningar kommer säkerhetskopiorna att sparas här';
-$string['choosefilefromuserbackup'] = 'Område för privat säkerhetskopiering för användare';
+$string['choosefilefromuserbackup'] = 'Plats för användares privata säkerhetskopior';
 $string['choosefilefromuserbackup_help'] = 'När säkerhetskopiering görs med "Anonymisera användarinformation" valet aktiverat kommer säkerhetskopiorna att sparas här';
+$string['config_keep_groups_and_groupings'] = 'Som standard, behåll nuvarande grupper och gruppindelningar.';
+$string['config_keep_roles_and_enrolments'] = 'Som standard, behåll nuvarande roller och registreringar.';
+$string['config_overwrite_conf'] = 'Tillåter att användaren skriver över nuvarande kursinställningar';
+$string['config_overwrite_course_fullname'] = 'Som standard skriv över kursens fullständiga namn med det från backup-filen. Detta kräver att "Skriv över kurskonfiguration" är ikryssad och att aktuell användare har behörighet att ändra kursens fullständiga namn (moodle/course:changefullname)';
+$string['config_overwrite_course_shortname'] = 'Som standard skriv över kursens kortnamn med det från backup-filen. Detta kräver att "Skriv över kurskonfiguration" är ikryssad och att aktuell användare har behörighet att ändra kursens kortnamn (moodle/course:changeshortname)';
+$string['config_overwrite_course_startdate'] = 'Som standard skriv över kursens startdatum med det från backup-filen. Detta kräver att "Skriv över kurskonfiguration" är ikryssad och att aktuell användare har behörighet att ändra kursens startdatum vid återställningar (moodle/restore:rolldates)';
 $string['configgeneralactivities'] = 'Anger grundinställningen för att inkludera aktiviteter i en säkerhetskopia.';
 $string['configgeneralanonymize'] = 'Om det är aktiverat alla uppgifter om användare kommer att anonymiseras som standard.';
 $string['configgeneralbadges'] = 'Definierar standardinställningen för "märken" (badges) i säkerhetskopior';
@@ -122,7 +131,7 @@ $string['configgeneralblocks'] = 'Anger grundinställningen för att inkludera b
 $string['configgeneralcalendarevents'] = 'Anger standardinställningarna för hur kalenderhändelser ska inkluderas vid en säkerhetskopiering.';
 $string['configgeneralcomments'] = 'Anger grundinställningen för att inkludera kommentarer i en säkerhetskopia.';
 $string['configgeneralcompetencies'] = 'Anger standardinställningarna för hur kompetenser ska inkluderas vid en säkerhetskopiering.';
-$string['configgeneralfiles'] = 'Anger standardinställningarna för hur filer ska inkluderas vid en säkerhetskopiering. OBS! Om du avaktiverar denna inställning kommer enbart referenser till filer inkluderas i säkerhetskopian. Detta är inget problem om säkerhetskopian återställs på samma webbplats och filerna inte raderats enligt inställnigarna under \'Clean up trash pool files\' (filescleanupperiod).';
+$string['configgeneralfiles'] = 'Anger standardinställningarna för hur filer ska inkluderas vid en säkerhetskopiering. OBS! Om du inaktiverar denna inställning kommer enbart referenser till filer inkluderas i säkerhetskopian. Detta är inget problem om säkerhetskopian återställs på samma webbplats och filerna inte tagits bort enligt inställningen <em>Städa upp bland skräpfiler</em> under <em>Hantera webbplats -> Server -> Städa upp</em (<code>filescleanupperiod</code>).';
 $string['configgeneralfilters'] = 'Anger grundinställningen för att inkludera filter i en säkerhetskopia.';
 $string['configgeneralgroups'] = 'Definierar standardinställningen för grupper och gruppindelningar i säkerhetskopior';
 $string['configgeneralhistories'] = 'Anger grundinställningen för att inkludera användarhistoria i en säkerhetskopia.';
@@ -131,40 +140,52 @@ $string['configgeneralquestionbank'] = 'Om aktiverat kommer frågebanken att ing
 $string['configgeneralroleassignments'] = 'Om valet aktiverats kommer rolltilldelning att säkerhetskopieras.';
 $string['configgeneralusers'] = 'Anger grundinställningen för om du vill inkludera användare i säkerhetskopior.';
 $string['configgeneraluserscompletion'] = 'Om valet aktiverats kommer spårning av fullföljande att ingå i säkerhetskopior som standard.';
-$string['config_keep_groups_and_groupings'] = 'Som standard, behåll nuvarande grupper och gruppindelningar.';
-$string['config_keep_roles_and_enrolments'] = 'Som standard, behåll nuvarande roller och registreringar.';
-$string['configloglifetime'] = 'Detta anger hur lång tid du vill behålla logginformation för säkerhetskopiering. Loggar som är äldre än angiven ålder raderas automatiskt. Rekommendationen är att hålla detta värde lågt eftersom logginformationen kan vara enorm.';
+$string['configloglifetime'] = 'Detta anger hur lång tid du vill behålla logginformation för säkerhetskopiering. Loggar som är äldre än angiven ålder tas automatiskt bort. Rekommendationen är att hålla detta värde lågt eftersom logginformationen kan vara omfattande.';
+$string['configrestoreactivities'] = 'Ställer in standardvärdena för att återställa aktiviteter.';
+$string['configrestorebadges'] = 'Ställer in standardvärdena för att återställa märken.';
+$string['configrestoreblocks'] = 'Ställer in standardvärdena för att återställa block.';
+$string['configrestorecalendarevents'] = 'Ställer in standardvärdena för att återställa kalenderhändelser.';
+$string['configrestorecomments'] = 'Ställer in standardvärdena för att återställa kommentarer.';
+$string['configrestorecompetencies'] = 'Ställer in standardvärdena för att återställa kompetenser.';
+$string['configrestoreenrolments'] = 'Ställer in standardvärdena för att återställa anmälningsmetoder.';
+$string['configrestorefilters'] = 'Ställer in standardvärdena för att återställa filter.';
+$string['configrestoregroups'] = 'Ställer in standardvärdena för att återställa grupper och gruppindelningar om de inkluderats i backupen.';
+$string['configrestorehistories'] = 'Ställer in standardvärdena för att återställa användarhistorik om den inkluderats i backupen.';
+$string['configrestorelogs'] = 'Om aktiverad kommer loggar att återställas om de fanns med i säkerhetskopian.';
+$string['configrestoreroleassignments'] = 'Om aktiverad kommer rolltilldelningarna återställas om de inkluderats i säkerhetskopian.';
+$string['configrestoreusers'] = 'Anger standardvärdet för om användare ska återställas om de inkluderats i säkerhetskopian.';
+$string['configrestoreuserscompletion'] = 'Om aktiverad kommer användarnas slutförandeinformation återställas som standard om den inkluderats i säkerhetskopian.';
 $string['confirmcancel'] = 'Avbryt säkerhetskopiering';
 $string['confirmcancelimport'] = 'Avbryt import';
 $string['confirmcancelno'] = 'Stanna';
-$string['confirmcancelquestion'] = 'Är Du säker på att Du vill avbryta? All information som Du har matat in kommer att försvinna.';
+$string['confirmcancelquestion'] = 'Är du säker på att du vill avbryta? All information som du har matat in kommer att försvinna.';
 $string['confirmcancelrestore'] = 'Avbryt återställning';
 $string['confirmcancelyes'] = 'Avbryt';
 $string['confirmnewcoursecontinue'] = 'Nykurs varning';
 $string['confirmnewcoursecontinuequestion'] = 'En tillfällig (dold) kurs kommer att skapas av kursåterställningsprocessen. För att avbryta återställningen klicka på Avbryt. Stäng inte webbläsaren medan återställningen pågår-';
 $string['coursecategory'] = 'Kategori som kursen återställs till';
 $string['courseid'] = 'Ursprungligt ID';
-$string['coursesettings'] = 'Inställningar för kurs';
+$string['coursesettings'] = 'Kursinställningar';
 $string['coursetitle'] = 'Titel';
-$string['currentstage1'] = 'Inledande inställningar';
-$string['currentstage16'] = 'Genomförd';
-$string['currentstage2'] = 'Inställningar för schema';
+$string['currentstage1'] = 'Initiala inställningar';
+$string['currentstage16'] = 'Slutförd';
+$string['currentstage2'] = 'Schemainställningar';
 $string['currentstage4'] = 'Bekräftelse och förnyad kontroll';
 $string['currentstage8'] = 'Utför säkerhetskopiering';
 $string['enableasyncbackup'] = 'Aktivera asynkrona säkerhetskopieringar';
 $string['enableasyncbackup_help'] = 'Om detta alternativ är aktiverat kommer alla säkerhetskopieringar och återställningar göras asynkront (i bakgrunden). Detta påverkar inte importer eller exporter. Asynkrona säkerhetskopieringar och återställningar gör det möjligt för användare att göra andra saker under tiden som säkerhetskopieringen eller återställningen pågår.';
 $string['enterasearch'] = 'Ange en sökning';
 $string['error_block_for_module_not_found'] = 'Den övergivna block-instansen (ID: {$a->bid}) för delkurs (ID: {$a->mid}) hittades. Detta block kommer inte att säkerhetskopieras';
-$string['errorcopyingbackupfile'] = 'Misslyckades med att kopiera filen med säkerhetskopian till den tillfälliga mappen innan återställningen.';
 $string['error_course_module_not_found'] = 'Den övergivna kursen (ID: {$a}) hittades. Denna modul kommer inte att säkerhetskopieras.';
+$string['errorcopyingbackupfile'] = 'Misslyckades med att kopiera filen med säkerhetskopian till den tillfälliga mappen innan återställningen.';
 $string['errorfilenamemustbezip'] = 'Filnamnet du anger måste vara en ZIP-fil och har .mbz förlängning';
 $string['errorfilenamerequired'] = 'Du måste ange ett giltigt filnamn för denna säkerhetskopia';
 $string['errorfilenametoolong'] = 'Filnamnet måste innehålla mindre än 255 tecken.';
-$string['errorinvalidformat'] = 'Ogiltigt format för säkerhetskopiering';
+$string['errorinvalidformat'] = 'Okänd backup format';
 $string['errorinvalidformatinfo'] = 'Den valda filen är inte en giltig Moodle backupfil och kan inte återställas.';
 $string['errorminbackup20version'] = 'Denna säkerhetskopia har skapats med en utvecklingsversion av Moodle backup ({$a->backup}). Minimikravet är {$a->min}. Säkerhetskopian kan inte återställas.';
 $string['errorrestorefrontpagebackup'] = 'Säkerhetskopior från ingångssidan kan endast återställas på ingångssidan';
-$string['executionsuccess'] = 'Säkerhetskopian har skapats framgångsrikt..';
+$string['executionsuccess'] = 'Säkerhetskopian har skapats.';
 $string['failed'] = 'Säkerhetskopieringen misslyckades';
 $string['filealiasesrestorefailures'] = 'Det gick inte att återställa alias.';
 $string['filealiasesrestorefailures_help'] = 'Alias är symboliska länkar till andra filer, inklusive de som lagras i externa databaser. I vissa fall kan Moodle inte återställa dem - till exempel när du återställer säkerhetskopian på en annan plats eller när den refererade filen finns inte. Fler detaljer och den faktiska orsaken till felet finns i loggfilen för återställningen.';
@@ -175,7 +196,7 @@ $string['filereferencesnotsamesite'] = 'Säkerhetskopian är från en annan plat
 $string['filereferencessamesite'] = 'Säkerhetskopian är från samma webbplats, filreferenser kan återställas';
 $string['generalactivities'] = 'Ta med aktiviteter';
 $string['generalanonymize'] = 'Anonymisera informationen';
-$string['generalbackdefaults'] = 'Allmänna standardvärden för säkerhetskopieringar';
+$string['generalbackdefaults'] = 'Allmänna inställningar för säkerhetskopiering';
 $string['generalbadges'] = 'Inkludera märken';
 $string['generalblocks'] = 'Ta med block';
 $string['generalcalendarevents'] = 'Inkludera kalenderhändelser';
@@ -202,9 +223,9 @@ $string['importbackupstage2action'] = 'Nästa';
 $string['importbackupstage4action'] = 'Utför import';
 $string['importbackupstage8action'] = 'Fortsätt';
 $string['importcurrentstage0'] = 'Val av kurser';
-$string['importcurrentstage1'] = 'Inledande inställningar';
-$string['importcurrentstage16'] = 'Genomförd';
-$string['importcurrentstage2'] = 'Inställningar för schema';
+$string['importcurrentstage1'] = 'Initiala inställningar';
+$string['importcurrentstage16'] = 'Slutförd';
+$string['importcurrentstage2'] = 'Schemainställningar';
 $string['importcurrentstage4'] = 'Bekräftelse och förnyad kontroll';
 $string['importcurrentstage8'] = 'Utför import';
 $string['importfile'] = 'Importera en säkerhetskopierad fil';
@@ -222,18 +243,18 @@ $string['includefilereferences'] = 'Filreferenser till externt innehåll';
 $string['includesection'] = 'Sektion {$a}';
 $string['includeuserinfo'] = 'Användardata';
 $string['inprogress'] = 'Säkerhetskopiering pågår';
-$string['jumptofinalstep'] = 'Gå direkt till sista steget';
+$string['jumptofinalstep'] = 'Hoppa till sista steget';
 $string['keep'] = 'Behåll';
 $string['locked'] = 'Låst';
 $string['lockedbyconfig'] = 'Den här inställningen har låsts av standardinställningarna för säkerhetskopiering';
 $string['lockedbyhierarchy'] = 'Låst av beroenden';
 $string['lockedbypermission'] = 'Du har inte tillräckliga behörigheter för att ändra den här inställningen.';
-$string['loglifetime'] = 'Behåll loggar för';
+$string['loglifetime'] = 'Behåll loggar i';
 $string['managefiles'] = 'Administrera säkerhetskopierade filer';
 $string['mergerestoredefaults'] = 'Återställ standardinställningarna vid sammanslagning med annan kurs';
 $string['missingfilesinpool'] = 'Vissa filer kunde inte sparas under säkerhetskopieringen, det kommer inte att vara möjligt att återställa dem.';
 $string['module'] = 'Modul';
-$string['moodleversion'] = 'Version av Moodle';
+$string['moodleversion'] = 'Moodle-version';
 $string['morecoursesearchresults'] = 'Hittade mer än {$a} kurser, visar första {$a} resultat';
 $string['moreresults'] = 'Det finns för många resultat, ange en mer specifik sökning.';
 $string['nomatchingcourses'] = 'Det finns inga kurser att visa';
@@ -247,6 +268,8 @@ $string['pendingasyncerror'] = 'Väntande säkerhetskopiering för denna resurs'
 $string['preparingdata'] = 'Förbereder data';
 $string['preparingui'] = 'Förbereder att visa sidan';
 $string['previousstage'] = 'Föregående';
+$string['privacy:metadata:backup:detailsofarchive'] = 'Det här arkivet kan innehålla olika användardata som har med en kurs att göra, till exempel resultat, användarregistreringar och aktivitetsdata.';
+$string['privacy:metadata:backup:externalpurpose'] = 'Syftet med detta arkiv är att lagra information relaterad till en kurs och som kan återställas i framtiden.';
 $string['privacy:metadata:backup_controllers'] = 'Listan med säkerhetskopieringsaktiviteter';
 $string['privacy:metadata:backup_controllers:itemid'] = 'Kursens ID';
 $string['privacy:metadata:backup_controllers:operation'] = 'Processen som utfördes, t.ex. återställning';
@@ -261,7 +284,7 @@ $string['recyclebin_desc'] = 'OBS att dessa inställningar även kommer att anv�
 $string['replacerestoredefaults'] = 'Återställ standardinställningarna när återställningen görs in i en annan kurs där innehållet raderas.';
 $string['restoreactivity'] = 'Återställ aktivitet';
 $string['restorecourse'] = 'Återställ kurs';
-$string['restorecoursesettings'] = 'Inställningar för kurs';
+$string['restorecoursesettings'] = 'Kursinställningar';
 $string['restoreexecutionsuccess'] = 'Kursen återställdes framgångsrikt, klicka på fortsätt knappen under för att se kursen du återställde.';
 $string['restorefileweremissing'] = 'Vissa filer kunde inte återställas eftersom de saknades i säkerhetskopian.';
 $string['restorenewcoursefullname'] = 'Namn på ny kurs';
@@ -280,7 +303,7 @@ $string['restorestage32'] = 'Process';
 $string['restorestage32action'] = 'Fortsätt';
 $string['restorestage4'] = 'Inställningar';
 $string['restorestage4action'] = 'Nästa';
-$string['restorestage64'] = 'Genomförd';
+$string['restorestage64'] = 'Slutförd';
 $string['restorestage64action'] = 'Fortsätt';
 $string['restorestage8'] = 'Schema';
 $string['restorestage8action'] = 'Nästa';
@@ -296,12 +319,12 @@ $string['restoretonewcourse'] = 'Återställ som en ny kurs';
 $string['restoringcourse'] = 'Återställning av kurs pågår';
 $string['restoringcourseshortname'] = 'återställer';
 $string['rootenrolmanual'] = 'Återställ med manuell inskrivning';
-$string['rootsettingactivities'] = 'Ta med aktiviteter och resurser';
-$string['rootsettinganonymize'] = 'Anonymisera information om användare';
+$string['rootsettingactivities'] = 'Inkludera aktiviteter och resurser';
+$string['rootsettinganonymize'] = 'Anonymisera användarinformation';
 $string['rootsettingbadges'] = 'Inkludera märken';
-$string['rootsettingblocks'] = 'Ta med block';
+$string['rootsettingblocks'] = 'Inkludera block';
 $string['rootsettingcalendarevents'] = 'Inkludera kalenderhändelser';
-$string['rootsettingcomments'] = 'Ta med kommentarer';
+$string['rootsettingcomments'] = 'Inkludera kommentarer';
 $string['rootsettingcompetencies'] = 'Inkludera kompetenser';
 $string['rootsettingcustomfield'] = 'Inkludera anpassade fält';
 $string['rootsettingenrolments'] = 'Inkludera registreringsmetoder';
@@ -340,7 +363,7 @@ $string['sitecourseformatwarning'] = 'Detta är en säkerhetskopia av en Ingång
 $string['skiphidden'] = 'Hoppa över dolda kurser';
 $string['skiphiddenhelp'] = 'Välj om du vill hoppa över dolda kurser';
 $string['skipmodifdays'] = 'Hoppa över kurser som inte ändrats sedan';
-$string['skipmodifdayshelp'] = 'Välj att hoppa över kurser som inte har ändrats sedan ett antal dagar';
+$string['skipmodifdayshelp'] = 'Välj att hoppa över kurser som inte har ändrats sedan detta antal dagar';
 $string['skipmodifprev'] = 'Hoppa över kurser inte ändrats sedan föregående säkerhetskopiering';
 $string['skipmodifprevhelp'] = 'Välj om du vill hoppa över kurser som inte har ändrats sedan föregående säkerhetskopiering';
 $string['status'] = 'Status';
@@ -349,7 +372,7 @@ $string['storagecourseonly'] = 'Filarea för kursens säkerhetskopia';
 $string['storageexternalonly'] = 'Specificerad katalog för automatiska säkerhetskopieringar';
 $string['successful'] = 'Säkerhetskopieringen lyckades';
 $string['successfulrestore'] = 'Återställningen lyckades';
-$string['timetaken'] = 'Tid för genomförande';
+$string['timetaken'] = 'Tidsåtgång';
 $string['title'] = 'Titel';
 $string['totalcategorysearchresults'] = 'Summa kategorier: {$a}';
 $string['totalcoursesearchresults'] = 'Summa kurser: {$a}';

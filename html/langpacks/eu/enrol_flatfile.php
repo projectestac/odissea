@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,27 +12,28 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_flatfile', language 'eu', version '3.8'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['encoding'] = 'Fitxategien kodifikazioa';
 $string['expiredaction'] = 'Matrikulazioaren iraungitze-ekintza';
-$string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla ikastarotik desmatrikulatzean.';
+$string['expiredaction_help'] = 'Aukeratu matrikulazioa iraungitzean exekutatuko den ekintza. Mesedez kontuan izan erabiltzailea ikastarotik desmatrikulatzean hainbat erabiltzaile-datu eta ezarpen ezabatuak izango direla.';
 $string['filelockedmail'] = 'Cron prozesuak ezin du ezabatu matrikulazioak egiteko ({$a}) fitxategian oinarriturik erabiltzen ari zaren testu-fitxategia. Normalean honen zergatia zure baimenak desegokiak izatean datza. Baimenak ezar itzazu Moodlek fitxategia ezabatu ahal izateko, mesedez. Bestela, prozesua errepikatu egingo da.';
 $string['filelockedmailsubject'] = 'Errore larria: Matrikulazio-fitxategia';
-$string['flatfileenrolments'] = 'Testu-soileko fitxategi (CSV) bidezko matrikulazioak';
 $string['flatfile:manage'] = 'Kudeatu erabiltzaileen matrikulazioak eskuz';
-$string['flatfilesync'] = 'Testu-soileko fitxategi bidezko sinkronizazioa';
 $string['flatfile:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik eskuz';
+$string['flatfileenrolments'] = 'Testu-soileko fitxategi (CSV) bidezko matrikulazioak';
+$string['flatfilesync'] = 'Testu-soileko fitxategi bidezko sinkronizazioa';
 $string['location'] = 'Fitxategiaren kokapena';
 $string['location_desc'] = 'Zehaztu matrikulazio-fitxategiaren bide osoa. Fitxategi hau automatikoki ezabatzen da prozesatu ondoren.';
 $string['mapping'] = 'Testu-soileko fitxategiko rolen lotura';

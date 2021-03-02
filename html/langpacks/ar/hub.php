@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,44 +12,45 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hub', language 'ar', version '3.8'.
  *
- * @package   hub
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hub
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addscreenshots'] = '';
-$string['advertise'] = 'قم بمشاركة هذا المساق لينضم إليه الناس';
+$string['advertise'] = 'قم بمشاركة هذا المقرر لينضم إليه الناس';
 $string['advertised'] = 'لينضم إليه الناس';
-$string['advertiseon'] = 'مشاركة هذا المساق في {$a}';
-$string['advertisepublication_help'] = 'سيتم إدراج هذا المساق في Moodle.net بمثابة مساق يمكن للناس الانضمام إليه والمشاركة فيه. ينبغي تمكين الانضمام الذاتي المبني على البريد الالكتروني في الموقع، كما ينبغي تمكين الانضمام الذاتي في هذا المساق.';
+$string['advertiseon'] = 'مشاركة هذا المقرر الدراسي في {$a}';
+$string['advertisepublication_help'] = 'الإعلان عن المواد الخاصة بك على الخادم الجماعي .. مركزاً يتيح للناس العثور على هذا المواد و يأتون إلى هنا للتسجيل.';
 $string['analyticsactions'] = 'عدد الإجراءات المتخذة بشأن التنبؤات المولدة ({$a})';
-$string['analyticsactionsnotuseful'] = 'عدد الإجراءات التي تشير إلى التنبؤ على أنه غير مفيد ({$a})';
+$string['analyticsactionsnotuseful'] = 'عدد الإجراءات التي تشير إلى التنبؤ على أنها غير مفيدة  ({$a})';
 $string['analyticsenabledmodels'] = 'عدد نماذج التنبؤ الممكنة ({$a})';
 $string['analyticspredictions'] = 'عدد التنبؤات التي تم إنشاؤها ({$a})';
 $string['audience'] = 'الجمهور';
+$string['audience_help'] = 'قم بتحديد المستهدفين من هذا المقرر.';
 $string['audienceadmins'] = 'المسؤولون عن مودل';
 $string['audienceeducators'] = 'المعلمون';
-$string['audience_help'] = 'قم بتحديد المستهدفين من هذا المقرر.';
 $string['audiencestudents'] = 'الطلاب';
 $string['badgesnumber'] = 'عدد الشارات ({$a})';
 $string['communityremoved'] = 'لقد تم إزالة رابط هذا المقرر الذراسي من قائمتك';
 $string['completeregistration'] = 'التسجيل الكامل مع Moodle.net';
 $string['confirmregistration'] = 'تأكيد التسجيل';
 $string['contributornames'] = 'المساهمين الآخرين';
-$string['contributornames_help'] = 'يمكنك استعمال هذا الحقل لسرد أسماء أيّ أشخاص آخرين ساهموا في هذا المساق.';
+$string['contributornames_help'] = 'يمكنك استخدام هذا الحقل لسرد أسماء لأيّ شخص آخر ساهم في هذا المقرر.';
 $string['coursename'] = 'الاسم';
-$string['coursepublished'] = 'تمت مشاركة هذا المساق بنجاح في \'{$a}\'.';
+$string['coursepublished'] = 'تمت مشاركة هذا المقرر الدراسي بنجاح في \'{$a}\'.';
 $string['courseshortname'] = 'الاسم القصير';
-$string['courseshortname_help'] = 'أدخل اسماً مختصراً للمساق. ليس من الضروري أن يكون فريداً.';
-$string['coursesnumber'] = 'عدد المساقات ({$a})';
-$string['courseunpublished'] = 'المساق {$a->courseshortname} لم يعد منشوراً بعد الآن في {$a->courseshortname}.';
+$string['courseshortname_help'] = 'أدخل اسماً مختصراً للمقرر. ليس من الضروري أن يكون فريداً.';
+$string['coursesnumber'] = 'عدد المقررات الدراسية ({$a})';
+$string['courseunpublished'] = 'المقرر الدراسي {$a->courseshortname} لم يعد منشوراً بعد الآن في {$a->courseshortname}.';
 $string['courseurl'] = 'رابط المادة';
 $string['courseurl_help'] = 'هذا رابط للمادة، يتم عرض هذا العنوان كرابط في نتيجة البحث .';
 $string['creatorname'] = 'المؤلف';
@@ -63,9 +63,9 @@ $string['demourl'] = 'رابط تجريبي';
 $string['demourl_help'] = 'أدخل رابط تجريبي لمادتك، بشكل افتراضي هو رابط المادة .
 يتم عرض العنوان التجريبي كرابط في نتيجة البحث .';
 $string['description'] = 'الوصف';
-$string['description_help'] = 'سيتم عرض هذا النص الوصفي في قائمة المساقات لموقع Moodle.net.';
+$string['description_help'] = 'سيتم عرض نص الوصف هذا في قائمة الدورات التدريبية على Moodle.net.';
 $string['detectednotexistingpublication'] = '{$a->hubname} تسرد قائمة من المقررات لم يعد لها وجود. أشعر مسؤول المركز بضرورة إزالة المنشور برقم {$a->id}.';
-$string['downloadable'] = 'قابل للتنزيل';
+$string['downloadable'] = 'يمكن تحميله';
 $string['educationallevel'] = 'المستوى التعليمي';
 $string['educationallevel_help'] = 'حدد أنسب مستوى تعليمي ينسجم مع المقرر .';
 $string['edulevelassociation'] = 'الجمعية';
@@ -79,42 +79,42 @@ $string['emailalert'] = 'إشعارات بالبريد الإلكتروني';
 $string['emailalert_help'] = 'إذا تم تمكينه، سيرسل لك المشرف على المركز الرئيسي رسائل عن مشاكل الأمان وغيرها من الأخبار المهمة.';
 $string['enrollable'] = 'قابل للانضمام';
 $string['errorbadimageheightwidth'] = 'يجب ألا يتجاوز قياس أبعاد الصورة {$a->width} X {$a->height}';
-$string['errorcourseinfo'] = 'وقع خطأ عند استعادة البيانات الوصفية للمساق من {$a}. لطفاً، حاول مجدداً لاستعادة البيانات الوصفية للمساق عبر إعادة تحميل هذه الصفحة لاحقاً. بخلاف ذلك، يمكن أن تقرر المضي بعملية التسجيل بالبيانات الوصفية الافتراضية الآتية.';
-$string['errorcoursepublish'] = 'وقع خطأ خلال نشر المساق {$a}. لطفاً، حاول مرة أخرى لاحقاً.';
+$string['errorcourseinfo'] = 'وقع خطأ عند استعادة البيانات الوصفية للمقرر من {$a}. لطفاً، حاول مجدداً لاستعادة البيانات الوصفية للمقرر عبر إعادة تحميل هذه الصفحة لاحقاً. بخلاف ذلك، يمكن أن تقرر المضي بعملية التسجيل بالبيانات الوصفية الافتراضية الآتية.';
+$string['errorcoursepublish'] = 'وقع خطأ خلال نشر المقرر الدراسي {$a}. لطفاً، حاول مرة أخرى لاحقاً.';
 $string['errorcoursewronglypublished'] = 'أرجع موقع Moodle.net خطأ خلال النشر. لطفاً، حاول مرة أخرى لاحقاً.';
 $string['errorotherhubsnotsupported'] = 'لم يعد بالإمكان استعمال هذه الصفحة للتسجيل مع الدلائل المخصصة للمواقع.';
 $string['errorregistration'] = 'وقع خطأ خلال التسجيل. لطفاً، حاول مرة أخرى لاحقاً. ({$a})';
 $string['errorregistrationupdate'] = 'وقع خطأ خلال تحديث التسجيل ({$a})';
-$string['errorunpublishcourses'] = 'نظراً لوقوع خطأ غير متوقع، تعذر حذف المساقات من Moodle.net. حاول مرة أخرى لاحقاً (موصى به) أو تواصل مع إدارة Moodle.net.';
+$string['errorunpublishcourses'] = 'نظراً لوقوع خطأ غير متوقع، تعذر حذف المقررات الدراسية من Moodle.net. حاول مرة أخرى لاحقاً (موصى به) أو تواصل مع إدارة Moodle.net.';
 $string['errorws'] = '{$a}';
 $string['errorwstokenreset'] = '{$a}. تمت إعادة تعيين ترميز التسجيل في هذا الموقع. بإمكانك الآن تسجيل موقعك مرة أخرى.';
-$string['existingscreenshotnumber'] = 'لقطات الشاشة الموجودة لـ {$a}. ستتمكن من معاينة تلك اللقطات في هذه الصفحة، بمجرد قيام إدارة Moodle.net بتمكين مساقك.';
+$string['existingscreenshotnumber'] = 'لقطات الشاشة الموجودة لـ {$a}. ستتمكن من معاينة تلك اللقطات في هذه الصفحة، بمجرد قيام إدارة Moodle.net بتمكين مقررك.';
 $string['existingscreenshots'] = 'لقطات الشاشة الموجودة';
 $string['geolocation'] = 'الموقع الجغرافي';
-$string['geolocation_help'] = 'قد نوفر مستقبلاً ميزة البحث المبني على أساس الموقع. إذا أردت تحديد موقع لمساقك، استعمل قيم خطوط العرض/الطول هنا (مثلاً: 33.3165 ,44.3650). إحدى طرق العثور على الموقع هو استعمال خرائط Google.';
+$string['geolocation_help'] = 'قد نوفر مستقبلاً ميزة البحث المبني على أساس الموقع. إذا أردت تحديد موقع لمقررك، استعمل قيم خطوط العرض/الطول هنا (مثلاً: 33.3165 ,44.3650). إحدى طرق العثور على الموقع هو استعمال خرائط Google.';
 $string['imageurl'] = 'رابط الصورة';
 $string['imageurl_help'] = 'سيتم عرض هذه الصورة في المركز الرئيسي. ستكون متاحة في أيِّ وقتٍ الآن. ينبغي أن تكون الأبعاد القصوى للصورة {$a->width} × {$a->height}';
 $string['issuedbadgesnumber'] = 'عدد الشارات الممنوحة ({$a})';
 $string['language'] = 'اللغة';
-$string['language_help'] = 'الغة الرئيسية لهذا المقرر';
+$string['language_help'] = 'اللغة الرئيسية لهذا المقرر الدراسي.';
 $string['lasttimechecked'] = 'آخر تحقق كان بتاريخ';
 $string['licence'] = 'الرخصة';
 $string['licence_help'] = 'حدد الرخصة التي تريد نشر هذا المقرر تحتها';
 $string['logourl'] = 'رابط الشعار';
 $string['mobilenotificationsenabled'] = 'تم تمكين إشعارات الجوال ({$a})';
 $string['mobileservicesenabled'] = 'تم تمكين خدمات الجوال ({$a})';
-$string['modulenumberaverage'] = 'متوسط عدد وحدات المساقات ({$a})';
+$string['modulenumberaverage'] = 'متوسط عدد وحدات المقررات الدراسية ({$a})';
 $string['mustselectsubject'] = 'عليك أن تختار موضوعاً';
 $string['name'] = 'الاسم';
-$string['name_help'] = 'هذا الاسم سيتم عرضه في قائمة المساق.';
+$string['name_help'] = 'هذا الاسم سيتم عرضه في قائمة المقرر الدراسي.';
 $string['neverchecked'] = 'لم يتم التحقق أبداً';
 $string['next'] = 'التالي';
 $string['no'] = 'لا';
 $string['nocheckstatusfromunreghub'] = 'الموقع غير مسجل في المركز الرئيسي لذلك لا يمكن التحقق من الحالة.';
 $string['nohubselected'] = 'لم يتم اختيار المركز الرئيسي';
 $string['none'] = 'لا شيء';
-$string['nosearch'] = 'لا تقم بنشر المركز الرئيسي أو المساقات';
-$string['notregisteredonhub'] = 'ينبغي على المشرف تسجيل هذا الموقع في Moodle.net قبل أن تتمكن من مشاركة أي مساق.';
+$string['nosearch'] = 'لا تقم بنشر المركز الرئيسي أو المقررات الدراسية';
+$string['notregisteredonhub'] = 'ينبغي على المشرف تسجيل هذا الموقع في Moodle.net قبل أن تتمكن من مشاركة أي مقرر دراسي.';
 $string['operation'] = 'الإجراءات';
 $string['participantnumberaverage'] = 'متوسط عدد المشاركين ({$a})';
 $string['policyagreed'] = 'إشعار الخصوصية واتفاقية معالجة البيانات';
@@ -123,33 +123,32 @@ $string['postaladdress'] = 'العنوان البريدي';
 $string['postaladdress_help'] = 'العنوان البريدي لهذا الموقع، أو للكيان المتمثل بهذا الموقع.';
 $string['postsnumber'] = 'عدد منشورات المنتديات ({$a})';
 $string['previousregistrationdeleted'] = 'تم حذف التسجيل السابق من {$a}. بإمكانك إعادة بدء عملية التسجيل. شكراً لك';
-$string['publicationinfo'] = 'معلومات نشر المساق';
+$string['publicationinfo'] = 'معلومات نشر المقرر الدراسي';
 $string['publish'] = 'مشاركة';
 $string['publishcourse'] = 'مشاركة {$a}';
 $string['publishcourseon'] = 'مشاركة في {$a}';
-$string['publishedon'] = 'مشاركة المساق';
+$string['publishedon'] = 'مشاركة المقرر الدراسي';
 $string['publisheremail'] = 'البريد الالكتروني للناشر';
-$string['publisheremail_help'] = 'عنوان البريد الالكتروني للناشر يتيح للمشرف على المركز الرئيسي تنبيه الناشر بشأن أي تغييرات في حالة المساق المنشور';
+$string['publisheremail_help'] = 'عنوان البريد الالكتروني للناشر يتيح للمشرف على المركز الرئيسي تنبيه الناشر بشأن أي تغييرات في حالة المقرر المنشور';
 $string['publishername'] = 'الناشر';
-$string['publishername_help'] = 'الناشر هو الشخص أو المنظمة التي تعتبر الناشر الرسمي للمساق. ما لم تكن تنشره بالنيابة عن آخرين، فهو عادة أنت.';
+$string['publishername_help'] = 'الناشر هو الشخص أو المنظمة التي تعتبر الناشر الرسمي للمقرر. ما لم تكن تنشره بالنيابة عن آخرين، فهو عادة أنت.';
 $string['questionsnumber'] = 'عدد الأسئلة ({$a})';
 $string['readvertiseon'] = 'تحديث المعلومات الدعائية في {$a}';
 $string['registeredactiveuserdevices'] = 'عدد المستخدمين النشطين الحائزين على أجهزة جوال مسجلة ويتلقون الإشعارات ({$a})';
-$string['registeredcourses'] = 'المساقات المسجلة';
+$string['registeredcourses'] = 'المقررات الدراسية المسجلة';
 $string['registeredsites'] = 'المواقع المسجلة';
 $string['registereduserdevices'] = 'عدد المستخدمين الحائزين على أجهزة جوال مسجلة ({$a})';
 $string['registersite'] = 'سَجِّل في {$a}';
 $string['registerwithmoodleorg'] = 'تسجيل موقعك';
 $string['registerwithmoodleorgcomplete'] = 'أكمل تسجيل موقعك';
-$string['registerwithmoodleorginfo'] = 'يسعدنا البقاء على اتصال وتزويدك بأشياء مهمة لموقع مودل الخاص بك! عن طريق التسجيل:
-
-* يمكنك الاشتراك لتلقي إشعارات عن إصدارات مودل الجديدة، تنبيهات الأمان، والأخبار الهامة الأخرى.
-* يمكنك الوصول إلى الإشعارات المدفعوعة إلى الجوالات وتنشيطها من موقع مودل الخاص بك ومن خلال تطبيق مودل المجاني.
-* أنت تساهم في إحصائيات مودل الخاصة بمجتمعه العلمي، مما يساعدنا في تحسينه وتحسين مواقع مجتمعنا.
-* إذا كنت ترغب في ذلك، يمكن إدراج موقعك في قائمة مواقع مودل المسجلة في بلدك.';
-$string['registerwithmoodleorginfoapp'] = 'حول تطبيق مودل';
+$string['registerwithmoodleorginfo'] = 'يسعدنا البقاء على اتصال و تزويدك بأشياء مهمة لموقع Moodle الخاص بك! عن طريق التسجيل:
+* يمكنك الاشتراك لتلقي إخطارات بإصدارات Moodle الجديدة و تنبيهات الأمان و الأخبار الهامة الأخرى.
+* يمكنك الوصول إلى إشعارات الدفع عبر الهاتف المحمول و تنشيطها من موقع Moodle الخاص بك من خلال تطبيق Moodle المجاني.
+* أنت تساهم في إحصائيات Moodle الخاصة بالمجتمع في جميع أنحاء العالم ، و التي تساعدنا في تحسين Moodle ومواقع مجتمعنا.
+* إذا كنت ترغب في ذلك ، يمكن إدراج موقعك في قائمة مواقع Moodle المسجلة في بلدك.';
+$string['registerwithmoodleorginfoapp'] = 'حول تطبيق Moodle';
 $string['registerwithmoodleorginfosites'] = 'مواقع أخرى في بلدي';
-$string['registerwithmoodleorginfostats'] = 'إحصائيات مودل';
+$string['registerwithmoodleorginfostats'] = 'إحصائيات Moodle';
 $string['registerwithmoodleorgremove'] = 'أنت تقوم بإلغاء تسجيل موقعك. في حالة المتابعة، لن تتمكن من الوصول إلى الإشعارات وتنبيهات الأمان الهامة.
 لن يتمكن مستخدموك من تلقي الإشعارات المدفعوعة من موقعك إلى تطبيق مودل للجوالات.
 هل أنت متأكد من أنك تريد إلغاء تسجيل موقعك؟';
@@ -163,17 +162,17 @@ $string['resourcesnumber'] = 'عدد الموارد ({$a})';
 $string['restartregistration'] = 'أعد عملية التسجيل';
 $string['roleassignmentsnumber'] = 'عدد تعيينات الأدوار ({$a})';
 $string['screenshots'] = 'لقطات الشاشة';
-$string['screenshots_help'] = 'أي لقطات شاشة للمساق سيتم عرضها في نتائج البحث.';
+$string['screenshots_help'] = 'أي لقطات شاشة للمقرر سيتم عرضها في نتائج البحث.';
 $string['search'] = 'بحث';
 $string['sendfollowinginfo'] = 'المزيد من المعلومات';
 $string['sendfollowinginfo_help'] = 'سيتم إرسال المعلومات الآتية للمساهمة في الإحصائيات الإجمالية حصراً. قد لا تكون متاحة للعامة ضمن أي قائمة مواقع.';
 $string['sendingcourse'] = 'إرسال مقرر';
-$string['sendingsize'] = 'لطفاً، انتظر رفع ملف المساق ({$a->total}Mb)...';
+$string['sendingsize'] = 'لطفاً، إنتظر. ملف المقرر الدراسي قيد الرفع ({$a->total} ميغا بايت)...';
 $string['sent'] = '... أُكمِلَت';
-$string['share'] = 'شارك هذا المساق ليكون متاحاً للتنزيل من قبل الناس';
+$string['share'] = 'شارك هذا المقرر الدراسي ليكون متاحاً للتنزيل من قبل الناس';
 $string['shared'] = 'للتنزيل من قبل الناس';
-$string['shareon'] = 'إرفع هذا المساق إلى {$a}';
-$string['sharepublication_help'] = 'ستتوافر نسخة احتياطية من هذا المساق في Moodle.net ليتمكن الناس من استعادتها واستعمالها في مواقعهم.';
+$string['shareon'] = 'إرفع هذا المقرر الدراسي إلى {$a}';
+$string['sharepublication_help'] = 'ستتوافر نسخة احتياطية من هذا المقرر الدراسي في Moodle.net ليتمكن الناس من استعادتها واستعمالها في مواقعهم.';
 $string['siteadmin'] = 'المشرف';
 $string['siteadmin_help'] = 'الاسم الكامل للمشرف على الموقع.';
 $string['sitecommnews'] = 'رسالة مودل الخبرية';
@@ -216,14 +215,14 @@ $string['status'] = 'حالة الإدراج في القائمة';
 $string['statuspublished'] = 'مدرج';
 $string['statusunpublished'] = 'غير مدرج';
 $string['subject'] = 'الموضوع';
-$string['subject_help'] = 'إختر المجال الرئيسي الذي يغطيه المساق.';
+$string['subject_help'] = 'إختر المجال الرئيسي الذي يغطيه المقرر الدراسي.';
 $string['tags'] = 'الوسوم';
-$string['tags_help'] = 'الوسوم تساعد في إضفاء المزيد من التنظيم على تصنيف المساق وتتيح للآخرين العثور عليه بسهولة أكبر. لطفاً، استعمل كلمات بسيطة ذات معنى مفصولاً بينها بفوارز. على سبيل المثال: رياضيات، جبر، مثلثات';
+$string['tags_help'] = 'الوسوم تساعد في إضفاء المزيد من التنظيم على تصنيف المقرر الدراسي وتتيح للآخرين العثور عليه بسهولة أكبر. لطفاً، استعمل كلمات بسيطة ذات معنى مفصولاً بينها بفوارز. على سبيل المثال: رياضيات، جبر، مثلثات';
 $string['type'] = 'مشارَك';
 $string['unpublish'] = 'أوقف المشاركة';
-$string['unpublishalladvertisedcourses'] = 'قم بإزالة كل المساقات التي كانت مشارَكة للناس للانضمام إليها في Moodle.net';
-$string['unpublishalluploadedcourses'] = 'قم بإزالة كل المساقات التي كانت مشارَكة للناس لتنزيلها من Moodle.net';
-$string['unpublishconfirmation'] = 'هل ترغب حقاً في إزالة المساق "{$a->courseshortname}" من "{$a->hubname}"';
+$string['unpublishalladvertisedcourses'] = 'قم بإزالة كل المقررات الدراسية التي كانت مشارَكة للناس للانضمام إليها في Moodle.net';
+$string['unpublishalluploadedcourses'] = 'قم بإزالة كل المقررات الدراسية التي كانت مشارَكة للناس لتنزيلها من Moodle.net';
+$string['unpublishconfirmation'] = 'هل ترغب حقاً في إزالة المقرر الدراسي "{$a->courseshortname}" من "{$a->hubname}"';
 $string['unpublishcourse'] = 'أوقف مشاركة {$a}';
 $string['unregister'] = 'إلغاء التسجيل';
 $string['unregisterexplained'] = 'إذا كان الموقع ذو الرابط {$a} مسجلاً، فسيتم إلغاء تسجيله.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'ja', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -158,17 +158,17 @@ $string['privacy:metadata:post:usermodified'] = '最後にエントリを修正�
 $string['privacy:path:blogassociations'] = '関連ブログ記事です。';
 $string['privacy:unknown'] = '不明';
 $string['publishto'] = '公開先:';
+$string['publishto_help'] = 'ここには以下3つのオプションがあります:
+
+* あなたのみ閲覧可 (下書き) - あなたおよび管理者のみ、このエントリを閲覧することができます。
+* このサイトの誰でも閲覧可- このサイトに登録している人は誰でも、このエントリを閲覧することができます。
+* 世界中の誰でも閲覧可 - ゲストを含む誰でも、このエントリを閲覧することができます。';
 $string['publishtocourse'] = 'あなたとコースを共有しているユーザ';
 $string['publishtocourseassoc'] = '関連コースのメンバー';
 $string['publishtocourseassocparam'] = '{$a} のメンバー';
 $string['publishtogroup'] = 'あなたとグループを共有しているユーザ';
 $string['publishtogroupassoc'] = '関連コース内のあなたのグループメンバー';
 $string['publishtogroupassocparam'] = '{$a} のあなたのグループメンバー';
-$string['publishto_help'] = 'ここには以下3つのオプションがあります:
-
-* あなたのみ閲覧可 (下書き) - あなたおよび管理者のみ、このエントリを閲覧することができます。
-* このサイトの誰でも閲覧可- このサイトに登録している人は誰でも、このエントリを閲覧することができます。
-* 世界中の誰でも閲覧可 - ゲストを含む誰でも、このエントリを閲覧することができます。';
 $string['publishtonoone'] = 'あなたのみ閲覧可 (下書き)';
 $string['publishtosite'] = 'このサイトの誰でも閲覧可';
 $string['publishtoworld'] = '世界中の誰でも閲覧可';

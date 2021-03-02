@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'de', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,8 +30,8 @@ $string['corestring'] = 'Alternativer Text';
 $string['corestring_help'] = 'Diese Option kann verwendet werden, um einen von den Einträgen in mimetypes.php abweichenden Text festzulegen.  Meist sollte die Option leer bleiben. Für benutzerdefinierte Typen verwenden Sie das Feld \'Beschreibung\'.';
 $string['defaulticon'] = 'Icon für MIME-Typ';
 $string['defaulticon_help'] = 'Falls es mehrere Dateiendungen für den gleichen MIME-Type gibt, wählen Sie in dieser Option aus, welches Icon für diesen MIME-Typ verwendet werden soll.';
-$string['deletea'] = 'Löschen {$a}';
 $string['delete_confirmation'] = 'Möchten Sie wirklich \'.{$a}\' löschen?';
+$string['deletea'] = 'Löschen {$a}';
 $string['deletefiletypes'] = 'Dateityp löschen';
 $string['description'] = 'Angepasste Beschreibung';
 $string['description_help'] = 'Einfache Beschreibung für den Dateityp, z.B. \'Kindle ebook\'. Falls Ihre Website mehrere Sprachen unterstützt und der Multilanguage-Filter aktiviert ist, können Sie mit Multilanguage-Tags die Beschreibung auch in verschiedenen Sprachen anbieten.';
@@ -52,7 +52,7 @@ $string['error_defaulticon'] = 'Eine andere Dateiendung mit dem gleichen MIME-Ty
 $string['error_extension'] = 'Die Dateiendung \'{$a}\' existiert bereits oder ist ungültig. Dateiendungen müssen eindeutig sein und dürfen keine Sonderzeichen enthalten.';
 $string['error_notfound'] = 'Der Dateityp mit der Endung \'{$a}\' kann nicht gefunden werden.';
 $string['extension'] = 'Dateiendung';
-$string['extension_help'] = 'Die Dateiendung wird ohne Punkt angegeben, z.B. \'mobi\'.';
+$string['extension_help'] = 'Dateiendung ohne Punkt, z.B. \'mobi\'';
 $string['groups'] = 'Typgruppen';
 $string['groups_help'] = 'Optionale Liste von Typgruppen, zu denen dieser Dateityp gehört. Dies sind allgemeine Kategorien wie z.B. \'document\' oder \'image\'.';
 $string['icon'] = 'Dateisymbol';

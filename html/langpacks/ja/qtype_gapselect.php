@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_gapselect', language 'ja', version '3.8'.
  *
- * @package   qtype_gapselect
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_gapselect
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,9 +39,9 @@ $string['errorquestiontextblank'] = 'あなたは問題テキストを入力す�
 $string['group'] = 'グループ';
 $string['pleaseputananswerineachbox'] = 'それぞれのテキストボックスに答えを入力してください。';
 $string['pluginname'] = 'ミッシングワード選択';
+$string['pluginname_help'] = 'ミッシングワード選択問題ではドロップダウンメニューから選択するためレスポンデントを必要とします。1、2、3 ... と指定された正解の選択肢に対して[[1]]、[[2]]、[[3]] ... は問題テキスト内でそれぞれのプレースホルダとして使用されます。問題を難しくするためさらに答えの選択肢を追加することができます。それぞれのドロップダウンメニューで利用できる答えを制限するため答えの選択肢をグループ分けすることができます。';
 $string['pluginnameadding'] = 'ミッシングワード選択問題の追加';
 $string['pluginnameediting'] = 'ミッシングワード選択問題の編集';
-$string['pluginname_help'] = 'ミッシングワード選択問題ではドロップダウンメニューから選択するためレスポンデントを必要とします。1、2、3 ... と指定された正解の選択肢に対して[[1]]、[[2]]、[[3]] ... は問題テキスト内でそれぞれのプレースホルダとして使用されます。問題を難しくするためさらに答えの選択肢を追加することができます。それぞれのドロップダウンメニューで利用できる答えを制限するため答えの選択肢をグループ分けすることができます。';
 $string['pluginnamesummary'] = 'ドロップダウンメニューを使って問題テキスト内の足りない言葉を埋めます。';
 $string['privacy:metadata'] = 'ミッシングワード選択問題タイププラグインはいかなる個人データも保存しません。';
 $string['shuffle'] = 'シャッフル';

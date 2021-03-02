@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'el', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,11 +43,11 @@ $string['analytics:listinsights'] = 'Λίστα με ενοράσεις';
 $string['analytics:listowninsights'] = 'Κατάλογος των δικών σας ενοράσεων';
 $string['analytics:managemodels'] = 'Διαχείριση μοντέλων';
 $string['archetype'] = 'Αρχέτυπο ρόλου';
+$string['archetype_help'] = 'Ο ρόλος αρχέτυπο καθορίζει τα δικαιώματα όταν ένας ρόλος επαναφέρεται στις προεπιλεγμένες ρυθμίσεις. Καθορίζει επίσης οποιαδήποτε νέα δικαιώματα για το ρόλο, όταν αναβαθμίζεται ο ιστότοπος.';
 $string['archetypecoursecreator'] = 'ΑΡΧΕΤΥΠΟ: Δημιουργός μαθημάτων';
 $string['archetypeeditingteacher'] = 'ΑΡΧΕΤΥΠΟ: Διδάσκων (με δικαίωμα επεξεργασίας)';
 $string['archetypefrontpage'] = 'ΑΡΧΕΤΥΠΟ: Πιστοποιημένος χρήστης στην «Αρχική ιστοτόπου»';
 $string['archetypeguest'] = 'ΑΡΧΕΤΥΠΟ: Επισκέπτης';
-$string['archetype_help'] = 'Ο ρόλος αρχέτυπο καθορίζει τα δικαιώματα όταν ένας ρόλος επαναφέρεται στις προεπιλεγμένες ρυθμίσεις. Καθορίζει επίσης οποιαδήποτε νέα δικαιώματα για το ρόλο, όταν αναβαθμίζεται ο ιστότοπος.';
 $string['archetypemanager'] = 'ΑΡΧΕΤΥΠΟ: Διαχειριστής';
 $string['archetypestudent'] = 'ΑΡΧΕΤΥΠΟ: Μαθητής';
 $string['archetypeteacher'] = 'ΑΡΧΕΤΥΠΟ: Περιορισμένος διδάσκων (χωρίς δικαίωμα επεξεργασίας)';
@@ -62,8 +62,8 @@ $string['assignrole'] = 'Ανάθεση ρόλου';
 $string['assignrolenameincontext'] = 'Ανάθεση του ρόλου {$a->role} στο πλαίσιο {$a->context}';
 $string['assignroles'] = 'Ανάθεση ρόλων';
 $string['assignroles_help'] = 'Αναθέτοντας ένα ρόλο σε ένα χρήστη σε ένα πλαίσιο, του παρέχετε τα δικαιώματα που περιλαμβάνονται σε αυτόν τον ρόλο, για το τρέχον πλαίσιο και όλα τα χαμηλότερα (ειδικότερα) πλαίσια. Για παράδειγμα, αν σε ένα χρήστη ανατεθεί ο ρόλος του μαθητή σε ένα μάθημα, θα έχει και το ρόλο του μαθητή σε όλες τις δραστηριότητες και μπλοκ μέσα στο μάθημα.';
-$string['assignrolesin'] = 'Ανάθεση ρόλων στο {$a}';
 $string['assignroles_link'] = 'διαχειριστής/ρόλοι/ανάθεση';
+$string['assignrolesin'] = 'Ανάθεση ρόλων στο {$a}';
 $string['assignrolesrelativetothisuser'] = 'Ανάθεση ρόλων σχετιζόμενων με αυτό το χρήστη';
 $string['backtoallroles'] = 'Επιστροφή στη λίστα ρόλων';
 $string['backup:anonymise'] = 'Ανώνυμα δεδομένα χρήστη στα αντίγραφα ασφαλείας';
@@ -113,9 +113,9 @@ $string['checkpermissionsin'] = 'Έλεγχος δυνατοτήτων στο {$
 $string['checksystempermissionsfor'] = 'Έλεγχος δυνατοτήτων συστήματος για το χρήστη {$a->fullname}';
 $string['checkuserspermissionshere'] = 'Έλεγχος δυνατοτήτων για το χρήστη {$a->fullname} που έχει στο επίπεδο πλαισίου {$a->contextlevel}';
 $string['chooseroletoassign'] = 'Παρακαλούμε επιλέξτε ρόλο προς ανάθεση';
-$string['cohort:assign'] = 'Προσθήκη και διαγραφή μελών ομάδας χρηστών';
-$string['cohort:manage'] = 'Δημιουργία, διαγραφή και μετακίνηση ομάδων χρηστών';
-$string['cohort:view'] = 'Εμφάνιση όλων των ομάδων χρηστών της πλατφόρμας';
+$string['cohort:assign'] = 'Προσθήκη και διαγραφή μελών συνόλου χρηστών';
+$string['cohort:manage'] = 'Δημιουργία, διαγραφή και μετακίνηση συνόλων χρηστών';
+$string['cohort:view'] = 'Εμφάνιση όλων των συνόλων χρηστών του ιστοτόπου';
 $string['comment:delete'] = 'Διαγραφή σχολίων';
 $string['comment:post'] = 'Αποστολή σχολίων';
 $string['comment:view'] = 'Εμφάνιση σχολίων';
@@ -286,15 +286,15 @@ $string['legacy:editingteacher'] = 'ΡΟΛΟΣ ΠΑΛΑΙΟΤΕΡΟΥ ΤΥΠΟΥ
 $string['legacy:guest'] = 'ΡΟΛΟΣ ΠΑΛΑΙΟΤΕΡΟΥ ΤΥΠΟΥ: Επισκέπτης';
 $string['legacy:student'] = 'ΡΟΛΟΣ ΠΑΛΑΙΟΤΕΡΟΥ ΤΥΠΟΥ: Μαθητής';
 $string['legacy:teacher'] = 'ΡΟΛΟΣ ΠΑΛΑΙΟΤΕΡΟΥ ΤΥΠΟΥ: Περιορισμένος διδάσκων (χωρίς δικαίωμα επεξεργασίας)';
-$string['legacytype'] = 'Τύπος ρόλου παλαιότερου τύπου';
 $string['legacy:user'] = 'ΡΟΛΟΣ ΠΑΛΑΙΟΤΕΡΟΥ ΤΥΠΟΥ: Αυθεντικοποιημένος χρήστης';
+$string['legacytype'] = 'Τύπος ρόλου παλαιότερου τύπου';
 $string['listallroles'] = 'Εμφάνιση όλων των ρόλων';
 $string['localroles'] = 'Τοπικά ανατεθειμένοι ρόλοι';
 $string['mainadmin'] = 'Κύριος διαχειριστής';
 $string['mainadminset'] = 'Ορισμός κύριου διαχειριστή';
 $string['manageadmins'] = 'Επεξεργασία διαχειριστών ιστοτόπου';
 $string['manager'] = 'Διαχειριστής';
-$string['managerdescription'] = 'Οι διαχειριστές μπορούν να έχουν πρόσβαση στο μάθημα και να το τροποποιούν, συνήθως όμως δεν συμμετέχουν στα μαθήματα.';
+$string['managerdescription'] = 'Οι διαχειριστές μπορούν να έχουν πρόσβαση σε μαθήματα και να τα τροποποιούν, αλλά συνήθως δεν συμμετέχουν σε αυτά.';
 $string['manageroles'] = 'Διαχείριση ρόλων';
 $string['maybeassignedin'] = 'Τύποι πλαισίου στους οποίους μπορεί να ανατεθεί ο ρόλος αυτός';
 $string['morethan'] = 'Περισσότερο από {$a}';
@@ -317,10 +317,10 @@ $string['novisibleroles'] = 'Χωρίς ρόλους';
 $string['overrideanotherrole'] = 'Παράκαμψη άλλου ρόλου';
 $string['overridecontext'] = 'Παράκαμψη πλαισίου';
 $string['overridepermissions'] = 'Παράκαμψη δυνατοτήτων';
-$string['overridepermissionsforrole'] = 'Παράκαμψη δυνατοτήτων για το ρόλο «{$a->role}» στο {$a->context}';
 $string['overridepermissions_help'] = 'Οι παρακάμψεις δικαιωμάτων επιτρέπουν την αποδοχή ή την αποτροπή επιλεγμένων δυνατοτήτων σε ένα συγκεκριμένο πλαίσιο.';
-$string['overridepermissionsin'] = 'Παράκαμψη δυνατοτήτων σε {$a}';
 $string['overridepermissions_link'] = 'διαχειριστής/ρόλοι/παράκαμψη';
+$string['overridepermissionsforrole'] = 'Παράκαμψη δυνατοτήτων για το ρόλο «{$a->role}» στο {$a->context}';
+$string['overridepermissionsin'] = 'Παράκαμψη δυνατοτήτων σε {$a}';
 $string['overrideroles'] = 'Παράκαμψη ρόλων';
 $string['overriderolesin'] = 'Παράκαμψη ρόλων σε {$a}';
 $string['overrides'] = 'Παρακάμψεις';
@@ -390,31 +390,31 @@ $string['restore:uploadfile'] = 'Ανέβασμα αρχείων στις περ
 $string['restore:userinfo'] = 'Επαναφορά δεδομένων χρήστη';
 $string['restore:viewautomatedfilearea'] = 'Επαναφορά μαθημάτων από αυτόματα αντίγραφα ασφαλείας';
 $string['risks'] = 'Κίνδυνοι';
+$string['role:assign'] = 'Ανάθεση ρόλων στους χρήστες';
+$string['role:manage'] = 'Δημιουργία και διαχείριση ρόλων';
+$string['role:override'] = 'Παράκαμψη δικαιωμάτων από άλλους';
+$string['role:review'] = 'Εξέταση δικαιωμάτων για άλλους χρήστες';
+$string['role:safeoverride'] = 'Παράκαμψη δικαιωμάτων από άλλους με ασφάλεια';
+$string['role:switchroles'] = 'Αλλαγή σε άλλους ρόλους';
 $string['roleallowheader'] = 'Επιτρέπονται στο ρόλο:';
 $string['roleallowinfo'] = 'Επιλέξτε ένα ρόλο που θα προστεθεί στη λίστα επιτρεπόμενων ρόλων στο πλαίσιο «{$a->context}», δυνατότητα «{$a->cap}»:';
-$string['role:assign'] = 'Ανάθεση ρόλων στους χρήστες';
 $string['roleassignments'] = 'Ανάθεση ρόλων';
 $string['roledefinitions'] = 'Ορισμοί ρόλων';
 $string['rolefullname'] = 'Όνομα';
 $string['roleincontext'] = 'με ρόλο: «{$a->role}» στο πλαίσιο: «{$a->context}»';
-$string['role:manage'] = 'Δημιουργία και διαχείριση ρόλων';
-$string['role:override'] = 'Παράκαμψη δικαιωμάτων από άλλους';
 $string['roleprohibitheader'] = 'Απαγόρευση ρόλου';
 $string['roleprohibitinfo'] = 'Επιλέξτε ένα ρόλο που θα προστεθεί στη λίστα απαγορευμένων ρόλων στο πλαίσιο «{$a->context}», δυνατότητα «{$a->cap}»:';
 $string['rolerepreset'] = 'Χρήση προτύπου ρόλου';
 $string['roleresetdefaults'] = 'Προεπιλογές';
 $string['roleresetrole'] = 'Χρήση ρόλου ή αρχετύπου';
-$string['role:review'] = 'Εξέταση δικαιωμάτων για άλλους χρήστες';
 $string['rolerisks'] = 'Κίνδυνοι ρόλου';
 $string['roles'] = 'Ρόλοι';
-$string['role:safeoverride'] = 'Παράκαμψη δικαιωμάτων από άλλους με ασφάλεια';
+$string['roles_help'] = 'Ρόλος είναι μια συλλογή από δικαιώματα ορισμένα για όλο τον ιστότοπο που μπορούν να ανατεθούν σε συγκεκριμένους χρήστες σε συγκεκριμένα πλαίσια.';
+$string['roles_link'] = 'ρόλοι';
 $string['roleselect'] = 'Επιλογή ρόλου';
 $string['rolesforuser'] = 'Ρόλοι για τον χρήστη «{$a}»';
-$string['roles_help'] = 'Ρόλος είναι μια συλλογή από δικαιώματα ορισμένα για όλο τον ιστότοπο που μπορούν να ανατεθούν σε συγκεκριμένους χρήστες σε συγκεκριμένα πλαίσια.';
 $string['roleshortname'] = 'Σύντομο όνομα';
 $string['roleshortname_help'] = 'Το σύντομο όνομα ρόλου είναι ένα αναγνωριστικό ρόλου χαμηλού επιπέδου στο οποίο επιτρέπονται μόνο αλφαριθμητικοί χαρακτήρες ASCII. Μην αλλάζετε τα σύντομα ονόματα τυπικών ρόλων.';
-$string['roles_link'] = 'ρόλοι';
-$string['role:switchroles'] = 'Αλλαγή σε άλλους ρόλους';
 $string['roletoassign'] = 'Ρόλος προς καταχώρηση';
 $string['roletooverride'] = 'Ρόλος προς παράκαμψη';
 $string['safeoverridenotice'] = 'Σημείωση: Οι δυνατότητες με υψηλότερους πιθανούς κινδύνους είναι κλειδωμένες γιατί μπορείτε να παρακάμψετε μόνο ασφαλείς δυνατότητες.';
@@ -425,7 +425,6 @@ $string['selectrole'] = 'Επιλογή ρόλου';
 $string['showallroles'] = 'Εμφάνιση όλων των ρόλων';
 $string['showthisuserspermissions'] = 'Εμφάνιση των δικαιωμάτων του χρήστη';
 $string['site:accessallgroups'] = 'Πρόσβαση σε όλες τις ομάδες';
-$string['siteadministrators'] = 'Διαχειριστές ιστοτόπου';
 $string['site:approvecourse'] = 'Έγκριση δημιουργίας μαθήματος';
 $string['site:backup'] = 'Αντίγραφα ασφαλείας μαθημάτων';
 $string['site:config'] = 'Αλλαγή των ρυθμίσεων του Moodle';
@@ -452,6 +451,7 @@ $string['site:viewfullnames'] = 'Εμφάνιση του ονοματεπώνυ�
 $string['site:viewparticipants'] = 'Εμφάνιση συμμετεχόντων';
 $string['site:viewreports'] = 'Εμφάνιση αναφορών';
 $string['site:viewuseridentity'] = 'Δείτε το πλήρες αναγνωριστικό του χρήστη στις λίστες';
+$string['siteadministrators'] = 'Διαχειριστές ιστοτόπου';
 $string['tag:edit'] = 'Τροποποίηση υπαρχουσών ετικετών';
 $string['tag:editblocks'] = 'Τροποποίηση μπλοκ στις σελίδες ετικετών';
 $string['tag:flag'] = 'Σημαιοδότηση ετικετών ως ανάρμοστων';
@@ -476,12 +476,6 @@ $string['user:manageownfiles'] = 'Διαχείριση αρχείων στις �
 $string['user:managesyspages'] = 'Διαμόρφωση προεπιλεγμένης διάταξης σελίδας για δημόσια προφίλ χρηστών';
 $string['user:readuserblogs'] = 'Εμφάνιση των ιστολογίων όλων των χρηστών';
 $string['user:readuserposts'] = 'Εμφάνιση όλων των αναρτήσεων φόρουμ του χρήστη';
-$string['usersfrom'] = 'Χρήστες του πλαισίου {$a}';
-$string['usersfrommatching'] = 'Χρήστες του πλαισίου «{$a->contextname}» που ταιριάζουν με «{$a->search}»';
-$string['usersinthisx'] = 'Χρήστες σε αυτό το {$a}';
-$string['usersinthisxmatching'] = 'Χρήστες σε αυτό το «{$a->contexttype}» που ταιριάζουν στο «{$a->search}»';
-$string['userswithrole'] = 'Χρήστες με οποιοδήποτε ρόλο';
-$string['userswiththisrole'] = 'Χρήστες με αυτό το ρόλο';
 $string['user:update'] = 'Επεξεργασία των προφίλ των χρηστών';
 $string['user:viewalldetails'] = 'Εμφάνιση όλων των πληροφοριών του χρήστη';
 $string['user:viewdetails'] = 'Εμφάνιση των προφίλ των χρηστών';
@@ -489,6 +483,12 @@ $string['user:viewhiddendetails'] = 'Εμφάνιση των κρυφών πλη
 $string['user:viewlastip'] = 'Εμφάνιση της τελευταίας διεύθυνσης IP του χρήστη';
 $string['user:viewuseractivitiesreport'] = 'Εμφάνιση αναφορών δραστηριότητας χρήστη';
 $string['user:viewusergrades'] = 'Εμφάνιση βαθμών χρήστη';
+$string['usersfrom'] = 'Χρήστες του πλαισίου {$a}';
+$string['usersfrommatching'] = 'Χρήστες του πλαισίου «{$a->contextname}» που ταιριάζουν με «{$a->search}»';
+$string['usersinthisx'] = 'Χρήστες σε αυτό το {$a}';
+$string['usersinthisxmatching'] = 'Χρήστες σε αυτό το «{$a->contexttype}» που ταιριάζουν στο «{$a->search}»';
+$string['userswithrole'] = 'Χρήστες με οποιοδήποτε ρόλο';
+$string['userswiththisrole'] = 'Χρήστες με αυτό το ρόλο';
 $string['useshowadvancedtochange'] = 'Χρησιμοποιήστε το «Εμφάνιση προχωρημένων» για αλλαγές';
 $string['viewingdefinitionofrolex'] = 'Εμφάνιση του ορισμού του ρόλου «{$a}»';
 $string['viewrole'] = 'Εμφάνιση των λεπτομερειών του ρόλου';

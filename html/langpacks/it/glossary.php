@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'it', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -119,14 +119,6 @@ $string['destination'] = 'Destinazione delle voci importate';
 $string['destination_help'] = 'E\' possibile importare voci nel glossario in uso o in un nuovo glossario. Nel secondo caso verrà creato un nuovo glossario con le impostazioni contenute nel file XML.';
 $string['disapprove'] = 'Disapprova';
 $string['displayformat'] = 'Formato di visualizzazione';
-$string['displayformatcontinuous'] = 'Continuo senza autore';
-$string['displayformatdefault'] = 'Di default uguale al formato di visualizzazione';
-$string['displayformatdictionary'] = 'Semplice, stile dizionario';
-$string['displayformatencyclopedia'] = 'Enciclopedia';
-$string['displayformatentrylist'] = 'Elenco di voci';
-$string['displayformatfaq'] = 'FAQ';
-$string['displayformatfullwithauthor'] = 'Completo con autore';
-$string['displayformatfullwithoutauthor'] = 'Completo senza autore';
 $string['displayformat_help'] = 'Sono disponibili 7 formati di visualizzazione:
 
 * Semplice, stile dizionario - Non sono visualizzati gli autori e gli eventuali allegati sono disponibili tramite link.
@@ -136,6 +128,14 @@ $string['displayformat_help'] = 'Sono disponibili 7 formati di visualizzazione:
 * Enciclopedia - Analogo a \'Completo con Autore\' ma le eventuali immagini allegate vengono visualizzate direttamente.
 * Elenco di voci - Elenco di voci visualizzati come link.
 * FAQ - Aggiunge automaticamente le parole DOMANDA e RISPOSTA, rispettivamente nei campi \'concetto\' e \'definizione\'';
+$string['displayformatcontinuous'] = 'Continuo senza autore';
+$string['displayformatdefault'] = 'Di default uguale al formato di visualizzazione';
+$string['displayformatdictionary'] = 'Semplice, stile dizionario';
+$string['displayformatencyclopedia'] = 'Enciclopedia';
+$string['displayformatentrylist'] = 'Elenco di voci';
+$string['displayformatfaq'] = 'FAQ';
+$string['displayformatfullwithauthor'] = 'Completo con autore';
+$string['displayformatfullwithoutauthor'] = 'Completo senza autore';
 $string['displayformats'] = 'Formati di visualizzazione';
 $string['displayformatssetup'] = 'Impostazione dei formati di visualizzazione';
 $string['duplicatecategory'] = 'Categoria duplicata';
@@ -202,18 +202,18 @@ $string['glossary:export'] = 'Esportare voci';
 $string['glossary:exportentry'] = 'Esportare voce singolarmente';
 $string['glossary:exportownentry'] = 'Esportare le proprie voci singolarmente';
 $string['glossary:import'] = 'Importare voci';
-$string['glossaryleveldefaultsettings'] = 'Impostazioni standard per i glossari';
 $string['glossary:managecategories'] = 'Gestire categorie';
 $string['glossary:managecomments'] = 'Gestire commenti';
 $string['glossary:manageentries'] = 'Gestire voci';
 $string['glossary:rate'] = 'Valutare voci';
-$string['glossarytype'] = 'Tipo di glossario';
-$string['glossarytype_help'] = 'Un glossario primario è un glossario dove è possibile importare voci da glossari secondari. Un corso può avere un solo glossario primario. Se l\'importazione tra glossari non dovesse essere utile, allora  tutti i glossari del corso possono essere impostati come glossari secondari.';
 $string['glossary:view'] = 'Visualizzare glossario';
 $string['glossary:viewallratings'] = 'Visualizzare voti grezzi dati da ciascuno';
 $string['glossary:viewanyrating'] = 'Visualizzare voti totali ricevuti da ciascuno';
 $string['glossary:viewrating'] = 'Visualizzare le proprie valutazioni';
 $string['glossary:write'] = 'Creare nuove voci';
+$string['glossaryleveldefaultsettings'] = 'Impostazioni standard dei glossari';
+$string['glossarytype'] = 'Tipo di glossario';
+$string['glossarytype_help'] = 'Un glossario primario è un glossario dove è possibile importare voci da glossari secondari. Un corso può avere un solo glossario primario. Se l\'importazione tra glossari non dovesse essere utile, allora  tutti i glossari del corso possono essere impostati come glossari secondari.';
 $string['guestnoedit'] = 'Agli ospiti non è consentito modificare i glossari';
 $string['importcategories'] = 'Importa categorie';
 $string['importedcategories'] = 'Categorie importate';
@@ -222,13 +222,13 @@ $string['importentries'] = 'Importa voci';
 $string['importentriesfromxml'] = 'Importa voci da file XML';
 $string['includegroupbreaks'] = 'Visualizza separazione dei gruppi';
 $string['indicator:cognitivedepth'] = 'Glossario cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Glossario.';
 $string['indicator:cognitivedepthdef'] = 'Glossario cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalle attività Gossario (Livelli: Nessuna visualizzazione, Visualizzazione, Invio)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente svolgendo attività Glossario.';
 $string['indicator:socialbreadth'] = 'Glossario sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Glossario.';
 $string['indicator:socialbreadthdef'] = 'Glossario sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Glossario (Livelli: Nessuna partecipazione, Partecipazione da solo)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività Glossario.';
 $string['isglobal'] = 'Glossario globale';
 $string['isglobal_help'] = 'le voci di un glossario globale sono collegati automaticamente in tutto il sito. Solo gli amministratori possono impostare glossari globali.';
 $string['letter'] = 'alfabetico';

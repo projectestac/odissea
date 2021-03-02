@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'it', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -63,7 +63,7 @@ $string['gotopage'] = 'Vai a pagina';
 $string['green'] = 'Verde';
 $string['gsimage'] = 'Immagine di test Ghostscript';
 $string['highlight'] = 'Evidenziato';
-$string['jsrequired'] = 'Per annotare documenti PDF è necessario javascript. Per favore abilitare javascript nel browser per usare questa funzionalità.';
+$string['jsrequired'] = 'Per annotare documenti PDF è necessario javascript. Per favore per usare questa funzionalità abilitare javascript nel browser.';
 $string['launcheditor'] = 'Lancio dell\'editor PDF';
 $string['line'] = 'Linea';
 $string['loadingeditor'] = 'Caricamento editor PDF';
@@ -98,11 +98,11 @@ $string['stamps'] = 'Timbri';
 $string['stampsdesc'] = 'I timbri devono essere file di immagini (dimensione consigliata 40x40). E\' possibile usare le immagini come timbri per annotare PDF.';
 $string['test_doesnotexist'] = 'Il percorso ghostscript punta ad un file inesistente';
 $string['test_empty'] = 'Il percorso ghostscript è vuoto - per favore inserire il percorso corretto';
-$string['testgs'] = 'Percorso ghostscript';
 $string['test_isdir'] = 'Il percorso ghostscript punta ad una cartella, per favore includere il programma ghostscript nel percorso indicato';
 $string['test_notestfile'] = 'Il test PDF è mancante';
 $string['test_notexecutable'] = 'Il percorso ghostscript punta ad un file non eseguibile';
 $string['test_ok'] = 'Il percorso ghostscript sembra OK - verifica se sotto è visibile un messaggio nell\'immagine sottostante.';
+$string['testgs'] = 'Percorso ghostscript';
 $string['tool'] = 'Strumento';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Visualizza pdf annotato...';

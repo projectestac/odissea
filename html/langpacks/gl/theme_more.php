@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'gl', branch 'MOODLE_36_STABLE'
+ * Strings for component 'theme_more', language 'gl', version '3.8'.
  *
- * @package   theme_more
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_more
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,10 +30,10 @@ $string['backgroundfixed_desc'] = 'Use este axuste para arranxar a imaxe do fond
 $string['backgroundimage'] = 'Imaxe de fondo';
 $string['backgroundimage_desc'] = 'A imaxe a amosar como fondo de pantalla do sitio.';
 $string['backgroundposition'] = 'Posición do fondo';
+$string['backgroundposition_desc'] = 'A posición da imaxe de fondo.';
 $string['backgroundpositioncenterbottom'] = 'Centrado no pé da páxina';
 $string['backgroundpositioncentercenter'] = 'Centrado no centro';
 $string['backgroundpositioncentertop'] = 'Centro no inicio da páxina';
-$string['backgroundposition_desc'] = 'A posición da imaxe de fondo.';
 $string['backgroundpositionleftbottom'] = 'Esquerda abaixo';
 $string['backgroundpositionleftcenter'] = 'Esquerda ao centro';
 $string['backgroundpositionlefttop'] = 'Esquerda arriba';
@@ -62,7 +62,7 @@ $string['invertdesc'] = 'Alterna entre branco e negro o texto e o fondo da barra
 $string['linkcolor'] = 'Cor da ligazón';
 $string['linkcolor_desc'] = 'A cor das ligazóns';
 $string['logo'] = 'Logotipo';
-$string['logodesc'] = 'O logotipo só se amosa na cabeceira da páxina de portada e da páxina de acceso ao sitio.<br /> Se a altura do seu logotipo for maior de 75 píxeles, engada «div.logo {height: 100px;}» na caixa de texto de CSS personalizado inferior, arranxándoa axeitadamente se a altura for diferente de 100 píxeles. Se non se engade un logotipo aquí, empregarase o logotipo indicado en Aparencia > Logotipos.';
+$string['logodesc'] = 'O logotipo só se amosa na cabeceira da páxina de portada e da páxina de acceso ao sitio.<br /> Se a altura do seu logotipo for maior de 75 píxeles, engada «div.logo {height: 100px;}» na caixa de texto CSS personalizado inferior, arranxándoa axeitadamente se a altura for diferente de 100 píxeles. Se non se engade un logotipo aquí, empregarase o logotipo indicado en Aparencia > Logotipos.';
 $string['pluginname'] = 'More';
 $string['privacy:metadata'] = 'O tema More non almacena ningún dato persoal sobre ningún usuario.';
 $string['region-side-post'] = 'Dereita';

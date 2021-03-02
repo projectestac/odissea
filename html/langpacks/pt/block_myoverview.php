@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_myoverview', language 'pt', version '3.8'.
  *
- * @package   block_myoverview
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_myoverview
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -63,7 +63,7 @@ $string['customfield'] = 'Campo personalizado';
 $string['customfiltergrouping'] = 'Campo a usar';
 $string['customfiltergrouping_nofields'] = 'Esta opção requer que um campo personalizado da disciplina seja configurado e visível para todos.';
 $string['defaulttab'] = 'Separador predefinido';
-$string['defaulttab_desc'] = 'Separador mostrado ao utilizador quando acede pela primeira vez às Minhas disciplinas. Ao retornar às Minhas disciplinas, será exibido o último separador que o utilizador ativou.';
+$string['defaulttab_desc'] = 'Separador mostrado ao utilizador quando acede pela primeira vez à visão global das disciplinas. Ao retornar à vista global da disciplina, será exibido o último separador que o utilizador ativou.';
 $string['displaycategories'] = 'Mostrar categorias';
 $string['displaycategories_help'] = 'Mostrar a categoria da disciplina nas disciplinas apresentadas no painel do utilizador, incluindo na visualização em cartões, lista e descrição.';
 $string['favourites'] = 'Com estrela';
@@ -85,11 +85,11 @@ $string['nocoursesfuture'] = 'Nenhuma disciplina por iniciar';
 $string['nocoursesinprogress'] = 'Nenhuma disciplina a decorrer';
 $string['nocoursespast'] = 'Nenhuma disciplina terminada';
 $string['nocustomvalue'] = 'Não {$a}';
-$string['noevents'] = 'Não existem atividades com data limite próxima';
+$string['noevents'] = 'Não há atividades com data limite próxima';
 $string['past'] = 'Histórico';
 $string['pluginname'] = 'Minhas disciplinas';
 $string['privacy:metadata:overviewgroupingpreference'] = 'A preferência de agrupamento no bloco Minhas disciplinas.';
-$string['privacy:metadata:overviewlasttab'] = 'Armazena o último separador selecionado pelo utilizador no bloco Minhas disciplinas.';
+$string['privacy:metadata:overviewlasttab'] = 'Isto armazena o último separador selecionado pelo utilizador no bloco Visão global.';
 $string['privacy:metadata:overviewpagingpreference'] = 'A preferência de paginação no bloco Minhas disciplinas.';
 $string['privacy:metadata:overviewsortpreference'] = 'A preferência de ordenação no bloco Minhas disciplinas.';
 $string['privacy:metadata:overviewviewpreference'] = 'A preferência de visualização do bloco Minhas disciplinas.';

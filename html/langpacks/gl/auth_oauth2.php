@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_oauth2', language 'gl', version '3.8'.
  *
- * @package   auth_oauth2
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_oauth2
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,31 +34,36 @@ $string['confirmaccountemail'] = 'Ola, {$a->fullname},
 Alguén solicitou unha nova conta en «{$a->sitename}»
 co seu enderezo de correo electrónico.
 
-Para confirmar o rexistro visite este enderezo web:
+Para confirmar a súa nova conta visite este enderezo web:
 
 {$a->link}
 
-En moitos programas de correo poderá premer na ligazón anterior mais, se non é posible,
-copie e pegue o enderezo na barra do explorador.
+Na maioría de programas de correo electrónico esta
+ligazón debería aparecer en azul, para poder premer nela.
+Se non funciona, cópiea e péguea na barra de enderezos
+do seu navegador.
 
-Para calquera información contacte co administrador do sitio,
+Se precisa axuda, contacte co administrador do sitio,
 {$a->admin}';
 $string['confirmaccountemailsubject'] = 'Confirmación da conta: {$a}';
 $string['confirmationinvalid'] = 'A ligazón de confirmación non é válida ou caducou. Inicie o proceso de acceso para xerar un novo correo de confirmación.';
 $string['confirmationpending'] = 'Esta conta está pendente de confirmación por correo.';
 $string['confirmlinkedloginemail'] = 'Ola, {$a->fullname},
 
-Alguen realizou unha solicitude para ligar o acceso de {$a->issuername} {$a->linkedemail} na súa conta en «{$a->sitename}»
+Alguen realizou unha solicitude para ligar o acceso de {$a->issuername}
+{$a->linkedemail} na súa conta en «{$a->sitename}»
 usando o seu enderezo de correo.
 
 Para confirmar esta solicitude e ligar estes accesos, diríxase a este enderezo web:
 
 {$a->link}
 
-En moitos programas de correo poderá premer na ligazón anterior mais, se non é posible,
-copie e pegue o enderezo na barra do explorador.
+Na maioría de programas de correo electrónico esta
+ligazón debería aparecer en azul, para poder premer nela.
+Se non funciona, cópiea e péguea na barra de enderezos
+do seu navegador.
 
-Para calquera información contacte co administrador do sitio,
+Se precisa axuda, contacte co administrador do sitio,
 {$a->admin}';
 $string['confirmlinkedloginemailsubject'] = 'Confirmación de acceso ligada: {$a}';
 $string['createaccountswarning'] = 'Este engadido de autenticación permite aos usuarios crear contas no seu sitio. Pode querer activar a configuración «authpreventaccountcreation» se usa este engadido.';

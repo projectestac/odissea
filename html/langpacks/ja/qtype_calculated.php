@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculated', language 'ja', version '3.8'.
  *
- * @package   qtype_calculated
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculated
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -110,9 +110,9 @@ $string['oneanswertrueansweroutsidelimits'] = '少なくとも1つの答えが�
 $string['param'] = '変数 {<strong>{$a}</strong>}';
 $string['partiallycorrectfeedback'] = '部分的に正しい解答すべて';
 $string['pluginname'] = '計算問題';
+$string['pluginname_help'] = '計算問題では小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。例えば「高さ {l} 、幅 {w} の長方形の面積は?」という問題があったとして正解は {={l}*{w}} ( * は乗算を意味します) のようになります。';
 $string['pluginnameadding'] = '計算問題の追加';
 $string['pluginnameediting'] = '計算問題の編集';
-$string['pluginname_help'] = '計算問題では小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。例えば「高さ {l} 、幅 {w} の長方形の面積は?」という問題があったとして正解は {={l}*{w}} ( * は乗算を意味します) のようになります。';
 $string['pluginnamesummary'] = '計算問題は数値問題に似ていますが、小テスト受験時、設定された数値がランダムに使用されます。';
 $string['possiblehdr'] = '問題テキスト内のみのワイルドカード';
 $string['privacy:metadata'] = '計算問題タイププラグインはいかなる個人データも保存しません。';

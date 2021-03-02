@@ -58,3 +58,22 @@ function local_clickedu_extend_settings_navigation($settingsnav, $context) {
 
     $coursenode->add_node($node);
 }
+
+function local_clickedu_before_footer() {
+
+    $advdebug = get_config('local_clickedu', 'advdebug');
+
+
+    if ($advdebug) {
+        global $SESSION;
+        if (isset($SESSION->clickedu_logs) && count($SESSION->clickedu_logs) > 0 ) {
+            echo "<hr>";
+            echo "<h2>".get_string('debug:clickedudebug', 'local_clickedu')."</h2>";
+            foreach ($SESSION->clickedu_logs as $log) {
+                echo "<pre>".$log."</pre>";
+            }
+            unset($SESSION->clickedu_logs);
+            echo "<hr>";
+        }
+    }
+}

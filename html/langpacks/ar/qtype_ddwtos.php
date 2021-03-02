@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,29 +12,29 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddwtos', language 'ar', version '3.8'.
  *
- * @package   qtype_ddwtos
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddwtos
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmorechoiceblanks'] = 'إضافة {no} خيارات أخرى';
+$string['addmorechoiceblanks'] = 'الفراغات لـ {no} خيارات أخرى';
 $string['answer'] = 'الإجابة';
 $string['blank'] = 'فراغ';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}';
 $string['infinite'] = 'غير محدود';
 $string['pleaseputananswerineachbox'] = 'يرجى وضع إجابة في كل مربع.';
-$string['pluginname'] = 'السحب والإفلات في النص';
-$string['pluginnameadding'] = 'إضافة السحب و الإفلات في النص';
-$string['pluginnameediting'] = 'تحرير السحب و الإفلات في النص';
-$string['pluginname_help'] = 'يتطلب السحب و الإفلات من الأسئلة النصية من المجيب سحب الكلمات أو العبارات إلى الفجوات الصحيحة في نص السؤال.
-يتم استخدام [[1]] ، [[2]] ، [[3]] ، ... كعناصر نائبة في نص السؤال ، مع تحديد الإجابات الصحيحة كأجوبة اختيار 1 ، 2 ، 3 ، ... على التوالي. يمكن تجميع إجابات الاختيار بحيث يتم تلوين جميع الإجابات الموجودة في مجموعة معينة بنفس الفجوات الموجودة في نص السؤال.
-يمكن استخدام إجابات الاختيار التي تحمل علامة غير محدودة في أكثر من فجوة واحدة.';
-$string['pluginnamesummary'] = 'يتم ملء الكلمات المفقودة في نص السؤال باستعمال السحب والإفلات.';
-$string['privacy:metadata'] = 'إن ملحق نوع السؤال، السحب والإفلات في النص لا يخزن أي بيانات شخصية.';
+$string['pluginname'] = 'السحب و الإفلات في النص';
+$string['pluginname_help'] = 'أسئلة السحب والإفلات إلى النص تتطلب من المستجيب سحب الكلمات أو العبارات إلى الفجوات الصحيحة في نص السؤال.
+يتم استعمال [[1]]، [[2]]، [[3]]، ... كعناصر نائبة في نص السؤال، مع تحديد الصائب من خيارات الإجابات بالشكل 1، 2، 3، ... على التوالي. يمكن تجميع خيارات الإجابات بحيث يتم تلوين كل الإجابات الموجودة في مجموعة معينة بنفس لون الفجوات المحاكية لها والموجودة في نص السؤال. خيارات الإجابات التي تحمل علامة غير محدودة يمكن استعمالها في أكثر من فجوة واحدة.';
+$string['pluginnameadding'] = 'إضافة السحب والإفلات إلى النص';
+$string['pluginnameediting'] = 'تحرير السحب والإفلات إلى النص';
+$string['pluginnamesummary'] = 'تمتلئ الكلمات المفقودة في نص السؤال باستخدام السحب و الإفلات.';
+$string['privacy:metadata'] = 'لا يقوم المكون الإضافي للسحب و الإفلات في نص السؤال بتخزين أي بيانات شخصية.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'ja', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,7 +58,6 @@ $string['completedunlockedtext'] = 'あなたが変更を保存した場合、�
 $string['completedwarning'] = '完了オプションがロックされました。';
 $string['completedwarningtext'] = 'この活動はすでに {$a} 名の参加者に対して活動が完了されています。完了オプションを変更することにより、それらの完了ステータスを消去するため、混乱の原因となる可能性があります。そのため、完了オプションはロックされてます。あなたが絶対に必要な場合を除き、ロック解除しないことをお勧めします。';
 $string['completion'] = '完了トラッキング';
-$string['completionactivitydefault'] = '活動デフォルトを使用する';
 $string['completion-alt-auto-enabled'] = '状態に応じて、システムはこのアイテムに完了マークします: {$a}';
 $string['completion-alt-auto-fail'] = '完了: {$a} (合格点未到達)';
 $string['completion-alt-auto-n'] = '未完了: {$a}';
@@ -71,36 +70,39 @@ $string['completion-alt-manual-n'] = '未完了: {$a} 完了マークするに�
 $string['completion-alt-manual-n-override'] = '未完了: {$a->modname} ({$a->overrideuser} による設定)  完了をマークするには選択してください。';
 $string['completion-alt-manual-y'] = '完了: {$a} 未完了マークするには選択してください。';
 $string['completion-alt-manual-y-override'] = '完了: {$a->modname} ({$a->overrideuser} による設定)  未完了をマークするには選択してください。';
+$string['completion-fail'] = '完了 (合格点未到達)';
+$string['completion-n'] = '未完了';
+$string['completion-n-override'] = '未完了 ({$a} による設定)';
+$string['completion-pass'] = '完了 (合格点到達)';
+$string['completion-y'] = '完了';
+$string['completion-y-override'] = '完了 ({$a} による設定)';
 $string['completion_automatic'] = '条件を満たした場合、活動完了を表示する';
+$string['completion_help'] = 'この設定を有効にした場合、コンディションに基づき手動または自動の活動完了がトラッキングされます。必要に応じて、複数のコンディションを設定することができます。その場合、すべてのコンディションに合致したときのみ活動が完了したとみなされます。
+
+活動が完了した場合、コースページの活動名の横にチェックが表示されます。';
+$string['completion_manual'] = 'ユーザが手動で活動を完了マークできる';
+$string['completion_none'] = '活動完了を表示しない';
+$string['completionactivitydefault'] = '活動デフォルトを使用する';
 $string['completiondefault'] = 'デフォルト完了トラッキング';
 $string['completiondisabled'] = '無効、活動設定に表示しない';
 $string['completionduration'] = '登録';
 $string['completionenabled'] = '有効、完了設定および活動設定によりコントロールする';
 $string['completionexpected'] = '期待される完了日';
+$string['completionexpected_help'] = 'この設定では期待される活動完了日を指定します。';
 $string['completionexpecteddesc'] = '完了予定日は {$a} です。';
 $string['completionexpectedfor'] = '{$a->instancename} 要完了';
-$string['completionexpected_help'] = 'この設定では期待される活動完了日を指定します。';
-$string['completion-fail'] = '完了 (合格点未到達)';
-$string['completion_help'] = 'この設定を有効にした場合、コンディションに基づき手動または自動の活動完了がトラッキングされます。必要に応じて、複数のコンディションを設定することができます。その場合、すべてのコンディションに合致したときのみ活動が完了したとみなされます。
-
-活動が完了した場合、コースページの活動名の横にチェックが表示されます。';
 $string['completionicons'] = '完了チェックボックス';
 $string['completionicons_help'] = '活動名の横にあるチェックボックスにより活動の完了時期を指定します。
 
-ドット線のボックスが表示された場合、教師により設定されたコンディションに従ってあなたが活動を完了した時点で、チェックが自動的に表示されます。
+破線のボックスが表示された場合、教師により設定された条件に従ってあなたが活動を完了した時点で、チェックが自動的に表示されます。
 
-実践のボックスが表示された場合、あなたが活動を完了したと思う時点でボックスをチェックすることができます (あなたの気持ちが変わった場合、再度クリックすることによりチェック解除してください)。';
-$string['completion_manual'] = 'ユーザが手動で活動を完了マークできる';
+実線のボックスが表示された場合、あなたが活動を完了したと思う時点でボックスをチェックすることができます (あなたの気持ちが変わった場合、再度クリックすることによりチェック解除してください)。';
 $string['completionmenuitem'] = '完了';
-$string['completion-n'] = '未完了';
-$string['completion_none'] = '活動完了を表示しない';
 $string['completionnotenabled'] = '完了は有効にされていません。';
 $string['completionnotenabledforcourse'] = 'このコースでは完了は有効にされていません。';
 $string['completionnotenabledforsite'] = 'このサイトでは完了は有効にされていません。';
-$string['completion-n-override'] = '未完了 ({$a} による設定)';
 $string['completionondate'] = '日付';
 $string['completionondatevalue'] = 'コースが完了マークされる日付';
-$string['completion-pass'] = '完了 (合格点到達)';
 $string['completionsettingslocked'] = '完了設定ロック中';
 $string['completionupdated'] = '活動「 {$a} 」の完了が更新されました。';
 $string['completionusegrade'] = '評定を必要とする';
@@ -108,8 +110,6 @@ $string['completionusegrade_desc'] = 'この活動を完了するには学生が
 $string['completionusegrade_help'] = 'この設定を有効にした場合、学生が評定された時点で活動が完了したとみなされます。活動の合格点が設定された場合、合格および不合格アイコンが表示されます。';
 $string['completionview'] = '閲覧を必要とする';
 $string['completionview_desc'] = '完了するには学生はこの活動を閲覧する必要があります。';
-$string['completion-y'] = '完了';
-$string['completion-y-override'] = '完了 ({$a} による設定)';
 $string['configcompletiondefault'] = '新しい活動を作成する場合の完了トラッキングのデフォルト設定です。';
 $string['configenablecompletion'] = 'この設定を有効にした場合、コースおよび活動完了コンディションを設定できます。ダッシュボードのコース概要でユーザに有益なデータが表示されるため、活動完了コンディションの設定をお勧めします。';
 $string['confirmselfcompletion'] = '自己完了を承認します。';

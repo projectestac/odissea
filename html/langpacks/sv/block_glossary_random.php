@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,38 +12,40 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_glossary_random', language 'sv', version '3.8'.
  *
- * @package   block_glossary_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_glossary_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addentry'] = 'L&auml;gg till Dina egna favoritcitat!';
-$string['askaddentry'] = 'Om studenter/elever/deltagare/l&auml;rande har r&auml;tt att l&auml;gga till egna inl&auml;gg i ord- och begreppslistan s&aring; kommer en l&auml;nk till ord- och begreppslistan att visas i den f&ouml;ljande texten.';
-$string['askinvisible'] = 'Om Du vill d&ouml;lja den ursprungliga ord- och begreppslistan f&ouml;r studenterna/eleverna/deltagarna/de l&auml;rande s&aring; kommer ingen l&auml;nk att visas. Den f&ouml;ljande texten visas ist&auml;llet.';
-$string['askviewglossary'] = 'Om studenterna/eleverna/deltagarna/de l&auml;rande bara har r&auml;tt att se hela inneh&aring;llet i ord- och begreppslistan  s&aring; kommer en l&auml;nk till ord- och begreppslistan att visas i den f&ouml;ljande texten.';
-$string['glossary_random:addinstance'] = 'Lägg till ett nytt block för slumpvisa uppslagsord/inlägg';
-$string['glossary_random:myaddinstance'] = '';
-$string['intro'] = 'Se till att Du &aring;tminstone har en ord- och begreppslista som inneh&aring;ller &aring;tminstone ett bidrag som &auml;r inlagt f&ouml;r den h&auml;r kursen. Sedan kan Du finjustera inst&auml;llningarna';
-$string['invisible'] = '(forts&auml;ttning f&ouml;ljer)';
-$string['lastmodified'] = 'Det senast modifierade bidraget';
+$string['addentry'] = 'Lägg till nytt ord';
+$string['askaddentry'] = 'När användare kan lägga till poster i ordlistan visar du en länk med den här texten';
+$string['askinvisible'] = 'När användare inte kan redigera eller visa ordlistan visar du denna text (utan länk)';
+$string['askviewglossary'] = 'När användare kan visa ordlistan men inte lägga till poster visar du en länk med den här texten';
+$string['glossary_random:addinstance'] = 'Lägg till ett nytt block för slumpvisa uppslagsord';
+$string['glossary_random:myaddinstance'] = 'Lägg till ett nytt slumpmässigt ord-block till Mitt Moodle';
+$string['intro'] = 'Se till att du åtminstone har en ord- och begreppslista som innehåller åtminstone ett bidrag som är inlagt för den här kursen. Sedan kan du finjustera inställningarna';
+$string['invisible'] = '(fortsättning följer)';
+$string['lastmodified'] = 'Det senast modifierade ordet';
 $string['nextalpha'] = 'Alfabetisk ordning';
-$string['nextone'] = 'N&auml;sta bidrag';
-$string['noentriesyet'] = 'Det finns &auml;nnu inga bidrag i den valda ord- och begreppslistan';
-$string['notyetconfigured'] = 'Var sn&auml;ll och konfigurera det h&auml;r blocket med hj&auml;lp av ikonen f&ouml;r redigering.';
-$string['notyetglossary'] = 'Du beh&ouml;ver &aring;tminstone ha en valbar ord- och begreppslista';
-$string['pluginname'] = 'Slumpade bidrag till ordlista';
-$string['random'] = 'Slumpm&auml;ssigt bidrag';
-$string['refresh'] = 'Dagar innan ett nytt bidrag v&auml;ljs';
-$string['select_glossary'] = 'Ta bidrag fr&aring;n den h&auml;r ord- och begreppslistan';
-$string['showconcept'] = 'Visa begreppet (ledordet) f&ouml;r varje bidrag';
+$string['nextone'] = 'Nästa ord';
+$string['noentriesyet'] = 'Det finns ännu inga ord i den valda ordlistan.';
+$string['notyetconfigured'] = 'Vänligen redigera detta block med redigera-ikonen';
+$string['notyetglossary'] = 'Du behöver ha minst en valbar ordlista.';
+$string['pluginname'] = 'Slumpat ordlisteord';
+$string['privacy:metadata'] = 'Blocket slumpartat ord visar enbart information som lagras på andra platser.';
+$string['random'] = 'Slumpmässigt ord';
+$string['refresh'] = 'Daggar innan ett nytt ord väljs';
+$string['select_glossary'] = 'Använd ord från denna ordlista';
+$string['showconcept'] = 'Visa begrepp (rubrik) för varje ord';
 $string['title'] = 'Titel';
-$string['type'] = 'Hur ett nytt bidrag v&auml;ljs';
-$string['viewglossary'] = 'Fler citat...';
-$string['whichfooter'] = 'Du kan visa l&auml;nkar till h&auml;ndelser i ord- och begreppslistor som det h&auml;r blocket &auml;r kopplat till. Blocket kommer bara att visa l&auml;nkar till h&auml;ndelser som &auml;r aktiverade f&ouml;r den ord- och begreppslistan.';
+$string['type'] = 'Hur ett nytt ord väljs';
+$string['viewglossary'] = 'Visa alla ord';
+$string['whichfooter'] = 'Du kan visa länkar till händelser i ord- och begreppslistor som det här blocket är kopplat till. Blocket kommer bara att visa länkar till händelser som är aktiverade för den ord- och begreppslistan.';

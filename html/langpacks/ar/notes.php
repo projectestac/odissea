@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'notes', language 'ar', version '3.8'.
  *
- * @package   notes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     notes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,7 +34,7 @@ $string['addnewnoteselect'] = 'حدد المستخدمين لكتابة ملاح
 $string['bynameondate'] = 'بواسطة {$a->name} في {$a->date}';
 $string['configenablenotes'] = 'تمكين تخزين الملاحظات عن المستخدمين.';
 $string['content'] = 'المحتوى';
-$string['course'] = 'المساق';
+$string['course'] = 'المقرر الدراسي';
 $string['coursenotes'] = 'ملاحظات المقرر الدراسي';
 $string['created'] = 'تم إنشاؤه';
 $string['deleteconfirm'] = 'حذف هذه الملاحظة؟';
@@ -43,7 +43,7 @@ $string['editnote'] = 'تحرير الملاحظة';
 $string['enablenotes'] = 'تفعيل الملاحظات';
 $string['eventnotecreated'] = 'تم إنشاء الملاحظة';
 $string['eventnotedeleted'] = 'تم حذف الملاحظة';
-$string['eventnotesviewed'] = 'تمت معاينة الملاحظات';
+$string['eventnotesviewed'] = 'ملاحظات تمت معاينتها';
 $string['eventnoteupdated'] = 'تم تحديث الملاحظة';
 $string['invalidid'] = 'معرّف الملاحظة المحدد غير صالح';
 $string['invaliduserid'] = 'رقم المستخدم غير صحيح  : {$a}';
@@ -54,7 +54,7 @@ $string['nopermissiontodelete'] = 'لا يمكنك حذف هذه الملاحظ�
 $string['note'] = 'ملاحظة';
 $string['notes'] = 'الملاحظات';
 $string['notesdisabled'] = 'عذراً، الملاحظات معطلة.';
-$string['notesnotvisible'] = 'أنت غير مخوّل لعرض هذه الملاحظات.';
+$string['notesnotvisible'] = 'ليس مسموحًا لك بمعاينة الملاحظات.';
 $string['nouser'] = 'يجب أن تحدد مستخدماً';
 $string['page-notes-index'] = 'صفحة الملاحظات الرئيسية';
 $string['page-notes-x'] = 'أي صفحات خاصة بالملاحظات';
@@ -62,7 +62,7 @@ $string['personal'] = 'شخصي';
 $string['personalnotes'] = 'ملاحظات شخصية';
 $string['privacy:metadata:core_notes'] = 'مكون الملاحظات يحفظ ملاحظات المستخدم ضمن نواة النظام الفرعية';
 $string['privacy:metadata:core_notes:content'] = 'محتوى الملاحظة';
-$string['privacy:metadata:core_notes:courseid'] = 'مُعرَّف المساق المتعلق بالملاحظة';
+$string['privacy:metadata:core_notes:courseid'] = 'مُعرَّف المقرر الدراسي المتعلق بالملاحظة';
 $string['privacy:metadata:core_notes:created'] = 'وقت وتاريخ إنشاء الملاحظة';
 $string['privacy:metadata:core_notes:lastmodified'] = 'وقت وتاريخ آخر تحديث للملاحظة';
 $string['privacy:metadata:core_notes:publishstate'] = 'حالة نشر الملاحظة';
@@ -71,8 +71,8 @@ $string['publishstate'] = 'السياق';
 $string['publishstate_help'] = 'سياق الملاحظة يحدد من يمكنه رؤيتها في الاستعمالات اليومية. على المستخدمين أن يدركوا بأن كل الملاحظات، بضمنها الشخصية، قد تكون عرضة للكشف عنها وفقاً لقوانين سلطاتهم القضائية.
 
 * شخصي - ستكون الملاحظة مرئية بالنسبة لك فقط
-* المساق - ستكون الملاحظة مرئية للمعلمين في هذا المساق
-* الموقع - ستكون الملاحظة مرئية للمعلمين في جميع المساقات';
+* المقرر الدراسي - ستكون الملاحظة مرئية للمعلمين في هذا المقرر
+* الموقع - ستكون الملاحظة مرئية للمعلمين في جميع المقررات الدراسية';
 $string['site'] = 'الموقع';
 $string['sitenotes'] = 'ملاحظات الموقع';
 $string['unknown'] = 'غير معروف';

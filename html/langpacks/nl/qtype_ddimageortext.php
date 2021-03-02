@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'nl', version '3.8'.
  *
- * @package   qtype_ddimageortext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddimageortext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,10 +57,10 @@ $string['infinite'] = 'Onbeperkt';
 $string['label'] = 'Tekst';
 $string['nolabel'] = 'Geen labeltekst';
 $string['pleasedraganimagetoeachdropregion'] = 'Je antwoord is niet volledig; sleep een item naar elke doelzone.';
-$string['pluginname'] = 'Slepen en neerzetten op afbeelding';
+$string['pluginname'] = 'Sleep en neerzetten op afbeelding';
+$string['pluginname_help'] = 'Vragen met slepen en neerzetten op afbeelding vragen van de respondent dat die afbeeldingen of tekst labels sleept en neerzet op een bepaalde zone van een achtergrondafbeelding. Sleepbare items kunnen gegroepeerd worden zodat alle items in een bepaalde groep gekleurd worden zoals de doelzones. Versleepbare items die als onbeperkt gemarkeerd zijn, kunnen op meer dan één zone neergezet worden.';
 $string['pluginnameadding'] = 'Voeg slepen en neerzetten op afbeelding toe';
 $string['pluginnameediting'] = 'Bewerk slepen en neerzetten op afbeelding';
-$string['pluginname_help'] = 'Vragen met slepen en neerzetten op afbeelding vragen van de respondent dat die afbeeldingen of tekst labels sleept en neerzet op een bepaalde zone van een achtergrondafbeelding. Sleepbare items kunnen gegroepeerd worden zodat alle items in een bepaalde groep gekleurd worden zoals de doelzones. Versleepbare items die als onbeperkt gemarkeerd zijn, kunnen op meer dan één zone neergezet worden.';
 $string['pluginnamesummary'] = 'Afbeeldingen of tekstlabels worden gesleept en neergezet in een doelzone op een achtergrondafbeelding.
 
 Merk op: dit vraagtype is niet toegankelijk slechtzienden.';

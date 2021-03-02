@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_statistics', language 'pt', version '3.8'.
  *
- * @package   quiz_statistics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_statistics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -55,11 +55,11 @@ $string['duration'] = 'Aberto para';
 $string['effective_weight'] = 'Peso efetivo';
 $string['errordeleting'] = 'Erro ao apagar registos antigos {$a}';
 $string['errormedian'] = 'Ocorreu um erro ao calcular a mediana';
-$string['errorpowerquestions'] = 'Ocorreu um erro ao tentar obter os dados para calcular a variância das notas da pergunta';
-$string['errorpowers'] = 'Ocorreu um erro ao tentar obter os dados para calcular a variância das notas do teste';
+$string['errorpowerquestions'] = 'Ocorreu um erro ao procurar os dados para calcular a variância das notas da pergunta';
+$string['errorpowers'] = 'Ocorreu um erro ao procurar os dados para calcular a variância das notas do teste';
 $string['errorrandom'] = 'Ocorreu um erro ao obter dados dos sub itens';
 $string['errorratio'] = 'Ocorreu um erro no rácio (em {$a})';
-$string['errorstatisticsquestions'] = 'Ocorreu um erro ao tentar obter os dados para calcular as estatísticas das notas da pergunta';
+$string['errorstatisticsquestions'] = 'Ocorreu um erro ao procurar os dados para calcular as estatísticas para as notas das perguntas';
 $string['facility'] = 'Índice de Facilidade';
 $string['firstattempts'] = 'primeiras tentativas';
 $string['firstattemptsavg'] = 'Nota média das primeiras tentativas';
@@ -116,9 +116,9 @@ $string['standarddeviationq'] = 'Desvio Padrão';
 $string['standarderror'] = 'Erro padrão (para {$a})';
 $string['statistics'] = 'Estatísticas';
 $string['statistics:componentname'] = 'Relatório de Estatísticas do teste';
+$string['statistics:view'] = 'Ver relatório de estatísticas';
 $string['statisticsreport'] = 'Relatório de estatísticas';
 $string['statisticsreportgraph'] = 'Estatística para as posições da pergunta';
-$string['statistics:view'] = 'Ver relatório de estatísticas';
 $string['statsfor'] = 'Estatísticas do teste (para {$a})';
 $string['variant'] = 'Variante';
 $string['viewanalysis'] = 'Ver detalhes';

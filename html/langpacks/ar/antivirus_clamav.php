@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'antivirus_clamav', language 'ar', version '3.8'.
  *
- * @package   antivirus_clamav
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     antivirus_clamav
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['clamfailed'] = 'فشل تشغيل مضاد الفيروسات ClamAV. رسالة الخطأ الواردة هي "{$a}". إليك ما أخرجه ClamAV:';
-$string['clamfailureonupload'] = 'عند فشل ClamAV';
-$string['configclamactlikevirus'] = 'عامل الملفات كفيروسات';
-$string['configclamdonothing'] = 'عامل الملفات على أنها سليمة';
+$string['clamfailureonupload'] = 'في حال فشل مكافح الفيروسات';
+$string['configclamactlikevirus'] = 'معالجة الملفات كفيروسات';
+$string['configclamdonothing'] = 'معالجة الملفات كجيدة';
 $string['configclamfailureonupload'] = 'إذا تم اختيار \'عامل الملفات على أنها سليمة\'، سيتم نقل الملفات إلى المجلد المقصود. إذا تم اختيار \'أرفض الرفع، حاول مجدداً\'، ستتم مطالبة المستخدم بالمحاولة مرة أخرى لاحقاً. إذا تم اختيار \'عامل الملفات على أنها فيروسات\'، سيتم نقل الملفات إلى منطقة الحجر، أو حذفها. تحذير: مع هذا الخيار، إذا فشل مضاد الفيروسات في العمل لسبب ما (عادة بسبب تمرير مسار خاطئ)، فإن كل الملفات المرفوعة سيتم نقلها إلى منطقة الحجر المحددة، أو حذفها.';
 $string['errorcantopensocket'] = 'الاتصال بمقبس مجال يونكس أنتج خطأً، {$a}';
 $string['errorclamavnoresponse'] = 'مضاد الفيروسات ClamAV لا يستجيب؛ تحقق من حالة تشغيل مهمة ديمون الخاصة به.';

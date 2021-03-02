@@ -52,6 +52,13 @@ if (empty($CFG->extendedusernamechars)) {
 
 echo $OUTPUT->header();
 
+$config = get_config('local_clickedu');
+
+//##
+if ($config->advdebug) {
+    local_clickedu_add_debug('debug:syncusersbegin', 'local_clickedu');
+}
+
 $users = clickedu_get_new_users();
 
 if ($users) {
@@ -61,6 +68,10 @@ if ($users) {
         echo html_writer::start_div('clickedu-progressbar');
         $progressbar = new progress_bar();
         $progressbar->create();
+        //##
+        if ($config->advdebug) {
+            local_clickedu_add_debug('debug:syncusersprocessing', 'local_clickedu', count($users));
+        }
         clickedu_create_users($users, $progressbar);
         echo html_writer::end_div();
         $text = get_string('newuserscreated', 'local_clickedu', count($users));

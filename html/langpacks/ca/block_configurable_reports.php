@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_configurable_reports', language 'ca', version '3.8'.
  *
- * @package   block_configurable_reports
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_configurable_reports
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -87,7 +87,6 @@ $string['comp_filters_help'] = '<p>Aquí podeu escollir quins filtres es mostrar
 <p>Per utilitzar filtres, si el vostre tipus d\'informe és SQL, consulteu: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank"> Creació d\'un tutorial d\'informe SQL</a></p>
 
 <p>Més ajuda: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank"> documentació del connector</a></p>';
-$string['componenthelp'] = 'Ajuda del component';
 $string['comp_ordering'] = 'Petició';
 $string['comp_ordering_help'] = '<p>Aquí podeu triar com sol·licitar l\'informe mitjançant camps i adreces</p>
 
@@ -108,16 +107,17 @@ $string['comp_template_help'] = '<p>Podeu modificar el disseny de l\'informe cre
 <p>Per crear una plantilla, vegeu les marques de reemplaçament que podeu utilitzar a la capçalera, el peu de pàgina i per a cada registre de l\'informe mitjançant els botons d\'ajuda o la informació que es mostra a la mateixa pàgina.</p>
 
 <p>Més ajuda: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank"> documentació del connector</a></p>';
+$string['componenthelp'] = 'Ajuda del component';
 $string['conditionexpr'] = 'Condició';
 $string['conditionexpr_conditions'] = 'Condició';
 $string['conditionexpr_conditions_help'] = '<p>Podeu combinar condicions emprant una expressió lògica</p>
 
 <p>Introduïu una expressió lògica vàlida amb aquests operadors: and, or (i, o).</p>';
-$string['conditionexprhelp'] = 'Introduïu una condició vàlida, p. ex.: (c1 and c2) or (c4 and c3)';
 $string['conditionexpr_permissions'] = 'Condició';
 $string['conditionexpr_permissions_help'] = '<p>Podeu combinar condicions emprant una expressió lògica</p>
 
 <p>Introduïu una expressió lògica vàlida amb aquests operadors: and, or (i, o).</p>';
+$string['conditionexprhelp'] = 'Introduïu una condició vàlida, p. ex.: (c1 and c2) or (c4 and c3)';
 $string['conditions'] = 'Condicions';
 $string['configurable_reports:addinstance'] = 'Afegeix un bloc d\'informes configurables nou';
 $string['configurable_reports:manageownreports'] = 'Gestiona els informes propis';
@@ -137,18 +137,18 @@ $string['courseparent'] = 'Cursos el pare dels quals és';
 $string['courses'] = 'Cursos';
 $string['coursestats'] = 'Estadístiques del curs';
 $string['cron'] = 'S\'executa diàriament de manera automàtica';
-$string['crondescription'] = 'Programa aquesta consulta per executar-la cada dia (a la nit)';
 $string['cron_help'] = 'Programa aquesta consulta per executar-la cada dia (a la nit)';
+$string['crondescription'] = 'Programa aquesta consulta per executar-la cada dia (a la nit)';
 $string['crrepository'] = 'Repositori d\'informes';
 $string['crrepositoryinfo'] = 'Dipòsit compartit remot amb informes d\'exemple completament funcionals (Nom del propietari del compte de GitHub + barra inclinada + nom del repositori)';
 $string['currentreportcourse'] = 'Informe del curs actual';
 $string['currentreportcourse_summary'] = 'El curs on s\'ha creat l\'informe';
 $string['currentuser'] = 'Usuari actual';
+$string['currentuser_summary'] = 'L\'usuari que està veient l\'informe';
 $string['currentusercourses'] = 'Cursos en els quals està inscrit l\'usuari actual';
 $string['currentusercourses_summary'] = 'Una llista dels cursos d\'usuaris actuals (només cursos visibles)';
 $string['currentuserfinalgrade'] = 'Nota final de l\'usuari actual al curs';
 $string['currentuserfinalgrade_summary'] = 'Aquesta columna mostra la nota final de l\'usuari a la fila del curs';
-$string['currentuser_summary'] = 'L\'usuari que està veient l\'informe';
 $string['cuserfield'] = 'Condició del camp d\'usuari';
 $string['custom'] = 'Personalitza';
 $string['customdateformat'] = 'Format de data personalitzat';
@@ -156,7 +156,6 @@ $string['customsql'] = 'SQL personalitzada';
 $string['datatables'] = 'Habilita la llibreria DataTables JS';
 $string['datatables_emptytable'] = 'No hi ha cap dada disponible a la taula';
 $string['datatables_first'] = 'Primer';
-$string['datatablesinfo'] = 'DataTables JS library (classe de columna, encapçalament fix, cerca, paginació...)';
 $string['datatables_infoempty'] = 'S\'estan mostrant 0 a 0 de 0 entrades';
 $string['datatables_infofiltered'] = '(filtrat des de _MAX_ entrades totals)';
 $string['datatables_last'] = 'Última';
@@ -169,6 +168,7 @@ $string['datatables_search'] = 'Cerca:';
 $string['datatables_sortascending'] = ': activa per ordenar la columna en sentit ascendent';
 $string['datatables_sortdescending'] = ': activa per ordenar la columna en sentit descendent';
 $string['datatables_zerorecords'] = 'No s\'ha trobat cap registre que coincideixi amb la cerca';
+$string['datatablesinfo'] = 'DataTables JS library (classe de columna, encapçalament fix, cerca, paginació...)';
 $string['date'] = 'Data';
 $string['dateformat'] = 'Format de la data';
 $string['dbhost'] = 'Servidor de la base de dades (DB Host)';
@@ -205,14 +205,16 @@ $string['executeatinfo'] = 'Moodle CRON executarà consultes SQL programades des
 $string['export_csv'] = 'Exporta en format CSV';
 $string['export_json'] = 'Exporta en format JSON';
 $string['export_ods'] = 'Exporta en format ODS';
+$string['export_xls'] = 'Exporta en format XLS';
 $string['exportoptions'] = 'Opcions d\'exportació';
 $string['exportreport'] = 'Exporta l\'informe';
-$string['export_xls'] = 'Exporta en format XLS';
 $string['fcoursefield'] = 'Filtre del camp del curs';
 $string['field'] = 'Camp';
 $string['filter'] = 'Filtre';
 $string['filter_all'] = 'Tot';
 $string['filter_apply'] = 'Aplica';
+$string['filter_searchtext'] = 'Cerca text';
+$string['filter_searchtext_summary'] = 'Filtre de text lliure';
 $string['filtercategories'] = 'Filtre de categories';
 $string['filtercategories_summary'] = 'Filtra per categoria';
 $string['filtercoursecategories'] = 'Filtre per categoria del curs';
@@ -226,8 +228,6 @@ $string['filterenrolledstudents_summary'] = 'Filtra un usuari (per id) dels estu
 $string['filterrole'] = 'rol';
 $string['filterrole_summary'] = 'Sistema de filtres per rols (professor, estudiant...)';
 $string['filters'] = 'Filtres';
-$string['filter_searchtext'] = 'Cerca text';
-$string['filter_searchtext_summary'] = 'Filtre de text lliure';
 $string['filtersemester'] = 'Semestre (hebreu)';
 $string['filtersemester_list'] = 'Semestre 1, Semestre 2, Semestre 3, Seminari';
 $string['filtersemester_summary'] = 'Permet filtrar abans dels semestres (en hebreu, per exemple: semestre 1, semestre 2)';
@@ -235,9 +235,9 @@ $string['filterstartendtime_summary'] = 'Filtre de data d\'inici / de finalitzac
 $string['filtersubcategories'] = 'Categoria (inclou subcategories)';
 $string['filtersubcategories_summary'] = 'Feu servir: %%FILTER_SUBCATEGORIES:mdl_course_category.path%%';
 $string['filteruser'] = 'Usuari del curs actual';
+$string['filteruser_summary'] = 'Filtra un usuari (id) dels usuaris del curs actual';
 $string['filterusers'] = 'Usuari del sistema';
 $string['filterusers_summary'] = 'Filtra un usuari (per id) de la llista d\'usuaris del sistema';
-$string['filteruser_summary'] = 'Filtra un usuari (id) dels usuaris del curs actual';
 $string['filteryearhebrew'] = 'Any (hebreu)';
 $string['filteryearhebrew_summary'] = 'El filtre està utilitzant anys hebreus (תשעג, ...)';
 $string['filteryearnumeric'] = 'Any (numèric)';
@@ -258,8 +258,8 @@ $string['groupseries'] = 'Agrupa les sèries';
 $string['groupvalues'] = 'Agrupa els mateixos valors (suma)';
 $string['head_color'] = 'Color de fons del gràfic';
 $string['head_data'] = 'Dades del gràfic';
-$string['header'] = 'Capçalera';
 $string['head_size'] = 'Mida del gràfic';
+$string['header'] = 'Capçalera';
 $string['height'] = 'Alçària';
 $string['importfromrepository'] = 'Importa un informe del repositori';
 $string['importreport'] = 'Importa un informe';
@@ -325,14 +325,17 @@ $string['puserfield_summary'] = 'Usuari amb el valor seleccionat al camp selecci
 $string['queryfailed'] = 'Error de consulta <code><pre>{$a}</pre></code>';
 $string['querysql'] = 'Consulta SQL';
 $string['remote'] = 'Executa en una base de dades (db) remota';
-$string['remotedescription'] = 'Voleu executar aquesta consulta a la base de dades (db) remota?';
 $string['remote_help'] = 'Voleu executar aquesta consulta a la base de dades (db) remota?';
+$string['remotedescription'] = 'Voleu executar aquesta consulta a la base de dades (db) remota?';
 $string['remotequerysql'] = 'Consulta SQL';
 $string['report'] = 'Informe';
-$string['reportcategories'] = '1) Tria les categories d\'informes remots';
 $string['report_categories'] = 'Informe de categories';
-$string['reportcolumn'] = 'Una altra columna de l\'informe';
 $string['report_courses'] = 'Informe de cursos';
+$string['report_sql'] = 'Informe SQL';
+$string['report_timeline'] = 'Informe de cronologia';
+$string['report_users'] = 'Informe d\'usuaris';
+$string['reportcategories'] = '1) Tria les categories d\'informes remots';
+$string['reportcolumn'] = 'Una altra columna de l\'informe';
 $string['reportcreated'] = 'S\'ha creat l\'informe correctament';
 $string['reportlimit'] = 'Indica el límit de la fila';
 $string['reportlimitinfo'] = 'Limita el nombre de files que es mostren a la taula d\'informes (el valor predeterminat és de 5000 files. És millor tenir algun límit, de manera que els usuaris no carreguin més el motor de la base de dades (DB))';
@@ -340,15 +343,12 @@ $string['reports'] = 'Informes';
 $string['reportscapabilities'] = 'Capacitats de l\'informe';
 $string['reportscapabilities_summary'] = 'Usuaris amb la capacitat moodle/site:viewrepots habilitada';
 $string['reportsincategory'] = '2) Tria un informe de la llista';
-$string['report_sql'] = 'Informe SQL';
 $string['reporttable'] = 'Taula d\'informes';
 $string['reporttable_help'] = '<p>Aquesta és l\'amplària de la taula que mostrarà els registres de l\'informe.</p>
 
 <p>Si utilitzeu una plantilla, aquesta opció no té efecte</p>';
 $string['reporttableui'] = 'Taula d\'informe UI';
 $string['reporttableuiinfo'] = 'Mostra la taula d\'informes com: taula HTML simple amb desplaçament (<i>scrollable</i>), jQuery amb ordenació de columnes o DataTables JS library (classificació de columnes, encapçalament fix, cerca, paginació...)';
-$string['report_timeline'] = 'Informe de cronologia';
-$string['report_users'] = 'Informe d\'usuaris';
 $string['repository'] = 'Repositori d\'informes';
 $string['repository_help'] = 'Podeu importar informes d\'exemple des d\'un dipòsit compartit públic.
 

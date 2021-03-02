@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'it', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,10 +64,10 @@ $string['enablemessaging'] = 'Messaggistica di gruppo';
 $string['enablemessaging_help'] = 'I membri dei gruppi potranno inviare messaggi ad altri membri dello stesso gruppo';
 $string['encoding'] = 'Codifica';
 $string['enrolmentkey'] = 'Chiave di iscrizione';
-$string['enrolmentkeyalreadyinuse'] = 'Questa chiave di iscrizione è già stata usata per un altro gruppo.';
 $string['enrolmentkey_help'] = 'Una chiave d\'iscrizione consente l\'accesso al gruppo alle sole persone che ne sono in possesso. Specificando una chiave di iscrizione al gruppo, questa non solo consentirà l\'accesso al corso, ma aggiungerà la persona tra i membri del gruppo.
 
 Nota: la chiave di iscrizione al gruppo deve essere abilitata nelle impostazioni del plugin Iscrizione spontanea e deve anche essere impostata una chiave d\'iscrizione del corso.';
+$string['enrolmentkeyalreadyinuse'] = 'Questa chiave di iscrizione è già stata usata per un altro gruppo.';
 $string['erroraddremoveuser'] = 'Errore durante l\'aggiunta/rimozione dell\'utente {$a} al gruppo';
 $string['erroreditgroup'] = 'Errore nella creazione/modifica del gruppo {$a}';
 $string['erroreditgrouping'] = 'Errore nella creazione/modifica del raggruppamento {$a}';
@@ -97,9 +97,9 @@ $string['groupinfo'] = 'Informazioni su gruppo selezionato';
 $string['groupinfomembers'] = 'Informazioni sui membri selezionati';
 $string['groupinfopeople'] = 'Informazioni sulle persone selezionate';
 $string['grouping'] = 'Raggruppamento';
+$string['grouping_help'] = 'Un raggruppamento è un insieme di gruppi di un corso. Utilizzando i raggruppamenti, gli appartenenti a gruppi facenti parte dello stesso raggruppamento potranno condividere attività.';
 $string['groupingaddedsuccesfully'] = 'Il raggruppamento "{$a}" è stato aggiunto correttamente';
 $string['groupingdescription'] = 'Descrizione raggruppamento';
-$string['grouping_help'] = 'Un raggruppamento è un insieme di gruppi di un corso. Utilizzando i raggruppamenti, gli appartenenti a gruppi facenti parte dello stesso raggruppamento potranno condividere attività.';
 $string['groupingname'] = 'Nome raggruppamento';
 $string['groupingnameexists'] = 'Il raggruppamento di nome \'{$a}\' già esiste in questo corso, scegli un nome diverso.';
 $string['groupings'] = 'Raggruppamenti';
@@ -112,8 +112,6 @@ $string['groupmembers'] = 'Membri del gruppo';
 $string['groupmemberssee'] = 'Visualizza membri del gruppo';
 $string['groupmembersselected'] = 'Membri del gruppo selezionato';
 $string['groupmode'] = 'Modalità gruppo';
-$string['groupmodeforce'] = 'Forza modalità gruppo';
-$string['groupmodeforce_help'] = 'Forzando la modalità gruppo, tale modalità sarà applicata a tutte le attività del corso. Eventuali modalità gruppo diverse non saranno prese in considerazione.';
 $string['groupmode_help'] = 'L\'impostazione ha 3 opzioni:
 
 * Senza gruppi
@@ -121,6 +119,8 @@ $string['groupmode_help'] = 'L\'impostazione ha 3 opzioni:
 * Gruppi visibili - ciascun partecipante è membro del gruppo al quale è stato assegnato ma può vedere il lavoro svolto dagli altri gruppi.
 
 La modalità gruppo definita nelle impostazioni del corso è la modalità di default per le attività del corso. La modalità gruppo può essere gestita per ciascuna attività del corso purché l\'attività supporti i gruppi e la modalità gruppo non sia stata forzata a livello di corso.';
+$string['groupmodeforce'] = 'Forza modalità gruppo';
+$string['groupmodeforce_help'] = 'Forzando la modalità gruppo, tale modalità sarà applicata a tutte le attività del corso. Eventuali modalità gruppo diverse non saranno prese in considerazione.';
 $string['groupmy'] = 'Il mio gruppo';
 $string['groupname'] = 'Nome gruppo';
 $string['groupnameexists'] = 'Il nome del gruppo \'{$a}\' è già esistente in questo corso, per favore cambialo.';
@@ -167,8 +167,8 @@ $string['nogroupsassigned'] = 'Nessun gruppo assegnato';
 $string['nopermissionforcreation'] = 'Non puoi creare il gruppo "{$a}" in quanto non hai i privilegi necessari';
 $string['nosmallgroups'] = 'Evita gruppi piccoli';
 $string['notingroup'] = 'Ignora utenti appartenenti a gruppi';
-$string['notingrouping'] = '[Non raggruppati]';
-$string['notingrouplist'] = '[Senza gruppo]';
+$string['notingrouping'] = 'Senza raggruppamento';
+$string['notingrouplist'] = 'Senza gruppo';
 $string['nousersinrole'] = 'Non ci sono utenti disponibili nel ruolo selezionato';
 $string['number'] = 'Numero gruppo/membri';
 $string['numgroups'] = 'Numero di gruppi';

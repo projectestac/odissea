@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'data', language 'de', version '3.8'.
  *
- * @package   data
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     data
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -85,7 +85,7 @@ $string['confirmdeletefield'] = 'Möchten Sie dieses Feld wirklich in der Datenb
 $string['confirmdeleterecord'] = 'Möchten Sie diesen Datensatz in der Datenbank wirklich löschen?';
 $string['confirmdeleterecords'] = 'Möchten Sie diese Einträge wirklich löschen?';
 $string['csstemplate'] = 'CSS-Vorlage';
-$string['csvfailed'] = 'Die Daten aus der CSV-Datei konnten nicht gelesen werden.';
+$string['csvfailed'] = 'Aus der CSV-Datei konnten keine Daten gelesen werden';
 $string['csvfile'] = 'CSV-Datei';
 $string['csvimport'] = 'CSV-Dateiimport';
 $string['csvimport_help'] = 'Daten können über eine CSV-Datei importiert werden, wobei die erste Zeile eine Liste von Feldnamen enthalten muss, gefolgt von den Daten mit jeweils einem Datensatz pro Zeile.';
@@ -111,7 +111,7 @@ $string['data:viewentry'] = 'Einträge anzeigen';
 $string['data:viewrating'] = 'Eigene Gesamtwertung anzeigen';
 $string['data:writeentry'] = 'Einträge schreiben';
 $string['date'] = 'Datum';
-$string['dateentered'] = 'Daten eingetragen';
+$string['dateentered'] = 'Datum eingetragen';
 $string['defaultfielddelimiter'] = '(Vorgabe: Komma)';
 $string['defaultfieldenclosure'] = '(Vorgabe: kein Zeichen)';
 $string['defaultsortfield'] = 'Standard-Sortierfeld';
@@ -159,7 +159,7 @@ $string['exportaszip'] = 'Export als ZIP-Datei';
 $string['exportaszip_help'] = 'Mit dem Export als ZIP-Datei können Sie den Vorlagensatz auf Ihren Computer herunterladen, um ihn später als "Import aus einer ZIP-Datei" in einem anderen Kurs hochzuladen und zu nutzen.';
 $string['exportedtozip'] = 'In eine temporäre ZIP-Datei exportiert...';
 $string['exportentries'] = 'Einträge exportieren';
-$string['exportownentries'] = 'Nur die eigenen Einträge exportieren? ({$a->mine}/{$a->all})';
+$string['exportownentries'] = 'Nur eigene Einträge exportieren? ({$a->mine}/{$a->all})';
 $string['failedpresetdelete'] = 'Fehler beim Löschen eines Vorlagensatzes';
 $string['fieldadded'] = 'Feld hinzugefügt';
 $string['fieldallowautolink'] = 'Autolink erlauben';
@@ -171,7 +171,7 @@ $string['fieldheight'] = 'Höhe';
 $string['fieldheightlistview'] = 'Höhe in Listenansicht';
 $string['fieldheightsingleview'] = 'Höhe in Einzelansicht';
 $string['fieldids'] = 'Feldnummern';
-$string['fieldmappings'] = 'Feldübersicht';
+$string['fieldmappings'] = 'Feldzuordnungen';
 $string['fieldmappings_help'] = 'Dieses Menü ermöglicht es, die Daten aus der bestehenden Datenbank zu behalten. Um die Daten in einem Feld zu behalten, müssen Sie das Feld in ein neues Feld übertragen ("mappen"), in dem die Daten dann erscheinen. Felder können dabei auch leer gelassen werden.  Jedes alte Feld, das keinem neuen Feld zugeordnet ist, geht verloren und alle Daten werden entfernt.
 Sie können nur Felder desselben Typs zuordnen, sodass jedes Dropdown-Menü unterschiedliche Felder enthält. Versuchen Sie bitte auch nicht, ein altes Feld mehr als einem neuen Feld zuzuordnen.';
 $string['fieldname'] = 'Feldname';
@@ -194,10 +194,10 @@ $string['fromfile'] = 'Import aus ZIP-Datei';
 $string['fromfile_help'] = 'Mit dem Import aus einer ZIP-Datei können Sie Vorlagensätze hochladen, die Vorlagen und Felder enthalten.';
 $string['generateerror'] = 'Mehrere Dateien wurden nicht angelegt!';
 $string['header'] = 'Kopfzeile';
-$string['headeraddtemplate'] = 'Definiert Formular zum Anlegen neuer Einträge';
-$string['headerasearchtemplate'] = 'Definiert das Interface zur erweiterten Suche';
+$string['headeraddtemplate'] = 'Formular zum Anlegen neuer Einträge erstellen';
+$string['headerasearchtemplate'] = 'Formular zur erweiterten Suche erstellen';
 $string['headercsstemplate'] = 'Definiert lokale CSS-Styles für die anderen Vorlagen';
-$string['headerjstemplate'] = 'Definiert angepasstes JavaScript für alle anderen Vorlagen';
+$string['headerjstemplate'] = 'Angepasstes Javascript zur Anzeige von Elementen in den anderen Vorlagen';
 $string['headerlisttemplate'] = 'Definiert Übersichtsansicht für mehrere Einträge';
 $string['headerrsstemplate'] = 'Definiert Darstellung der Einträge in RSS Feeds';
 $string['headersingletemplate'] = 'Definiert Darstellung für die Einzelansicht';
@@ -208,13 +208,13 @@ $string['includetags'] = 'Tags einbeziehen';
 $string['includetime'] = 'Zeitpunkt hinzugefügt/geändert einfügen';
 $string['includeuserdetails'] = 'Nutzerdetails einfügen';
 $string['indicator:cognitivedepth'] = 'Datenbank kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Datenbankaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Datenbank kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Datenbankaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Datenbankaktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Datenbank sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Datenbankaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Datenbank sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Datenbankaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Datenbankaktivität erreicht hat.';
 $string['insufficiententries'] = 'Weitere Einträge sind erforderlich, um die Datenbank einzusehen.';
 $string['intro'] = 'Beschreibung';
 $string['invalidaccess'] = 'Seite wurde nicht richtig aufgerufen';
@@ -233,12 +233,12 @@ $string['latlongboth'] = 'Längen- und Breitengrad müssen eingetragen werden.';
 $string['latlongdownloadallhint'] = 'Download aller Einträge als KML';
 $string['latlongkmllabelling'] = 'Wie sollen Ziele in KML-Dateien bezeichnet werden? (Google Earth)';
 $string['latlonglinkservicesdisplayed'] = 'Links zum Anzeigen geografischer Daten';
-$string['latlongotherfields'] = 'Andere Felder';
+$string['latlongotherfields'] = 'Weitere Felder';
 $string['list'] = 'Listenansicht';
 $string['listtemplate'] = 'Vorlage für Liste';
 $string['longitude'] = 'Längengrad';
 $string['manageapproved'] = 'Änderung von freigegebenen Einträgen erlauben';
-$string['manageapproved_help'] = 'Diese Option legt fest, ob freigegebene Einträge durch deren Autor/in geändert oder gelöscht werden dürfen. Die Einstellung ist nur wirksam, wenn eine Freigabe von Einträgen notwendig ist.';
+$string['manageapproved_help'] = 'Diese Option legt fest, ob freigegebene Einträge weiter von deren Autor/in bearbeitet oder gelöscht werden dürfen. Die Einstellung ist nur wirksam, wenn eine Freigabe von Einträgen notwendig ist.';
 $string['mapexistingfield'] = 'Verknüpfen mit {$a}';
 $string['mapnewfield'] = 'Neues Feld anlegen';
 $string['mappingwarning'] = 'Alle alten Felder, die keinem neuen Feld zugeordnet wurden, werden zusammen mit allen Daten aus diesen Feldern gelöscht.';
@@ -247,7 +247,7 @@ $string['maxentries_help'] = 'Die maximale Zahl der Einträge begrenzt die Eintr
 $string['maxsize'] = 'Größe (max)';
 $string['menu'] = 'Menü';
 $string['menuchoose'] = 'Auswählen ...';
-$string['missingdata'] = 'Daten-ID bzw. Daten-Objekt müssen zur Feldklasse passen';
+$string['missingdata'] = 'Daten-ID bzw. Datenobjekt müssen zur Feldklasse passen';
 $string['missingfield'] = 'Programmierfehler: Sie müssen Feld und Daten angeben, wenn Sie eine Feldklasse definieren.';
 $string['modulename'] = 'Datenbank';
 $string['modulename_help'] = 'Sammeln Sie mit Ihren Teilnehmer/innen Informationen in einer Datenbank. Legen Sie eine Struktur für die Felder der Datenbank fest und definieren Sie, was später in der Übersicht (Listenansicht) oder einer Detailansicht angezeigt werden soll.
@@ -298,7 +298,7 @@ $string['picture'] = 'Bild';
 $string['pleaseaddsome'] = 'Bitte erzeugen Sie ein Feld oder <a href="{$a}">wählen Sie einen Vorlagensatz</a>, um zu beginnen';
 $string['pluginadministration'] = 'Datenbank-Administration';
 $string['pluginname'] = 'Datenbank';
-$string['portfolionotfile'] = 'In ein Portfolio und nicht als Datei exportieren (csv und leap2a)';
+$string['portfolionotfile'] = 'In ein Portfolio und nicht als Datei exportieren (nur csv und leap2a)';
 $string['presetinfo'] = 'Durch das Sichern als Vorlagensatz wird Ihre Datenbank-Gestaltung für die gesamte Moodle-Installation veröffentlicht. Andere Nutzer/innen können dann diesen Vorlagensatz für ihre Datenbank nutzen.';
 $string['presets'] = 'Vorlagensätze';
 $string['privacy:metadata:commentpurpose'] = 'Kommentar zum Datenbankeintrag';
@@ -309,13 +309,13 @@ $string['privacy:metadata:data_content:content2'] = 'Zusätzlicher Inhalt 2';
 $string['privacy:metadata:data_content:content3'] = 'Zusätzlicher Inhalt 3';
 $string['privacy:metadata:data_content:content4'] = 'Zusätzlicher Inhalt 4';
 $string['privacy:metadata:data_content:fieldid'] = 'Felddefinitons-ID';
-$string['privacy:metadata:datafieldnpluginsummary'] = 'Felder der Datenbankaktivität';
 $string['privacy:metadata:data_records'] = 'Steht für Einträge in der Datenbank';
 $string['privacy:metadata:data_records:approved'] = 'Bestätigungsstatus';
 $string['privacy:metadata:data_records:groupid'] = 'Gruppe';
 $string['privacy:metadata:data_records:timecreated'] = 'Zeitpunkt, an dem Eintrag erstellt wurde';
 $string['privacy:metadata:data_records:timemodified'] = 'Zeitpunkt, zu dem Eintrag verändert wurde';
 $string['privacy:metadata:data_records:userid'] = 'Nutzer, der den Eintrag erstellt hat';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Felder der Datenbankaktivität';
 $string['privacy:metadata:filepurpose'] = 'Datei, die Datenbankeintrag zugeordnet wurde';
 $string['privacy:metadata:ratingpurpose'] = 'Bewertung für Datenbankeintrag';
 $string['privacy:metadata:tagpurpose'] = 'Tags für Datenbankeintrag';
@@ -323,10 +323,10 @@ $string['radiobutton'] = 'Einfachauswahl';
 $string['recordapproved'] = 'Datensatz wurde angenommen';
 $string['recorddeleted'] = 'Datensatz gelöscht';
 $string['recorddisapproved'] = 'Eintrag nicht freigegeben';
-$string['recordsnotsaved'] = 'Kein Datensatz wurde gespeichert. Prüfen Sie bitte das Format der hochgeladenen Datei.';
-$string['recordssaved'] = 'Datensätze gespeichert';
+$string['recordsnotsaved'] = 'Kein Eintrag wurde gespeichert. Prüfen Sie bitte das Format der hochgeladenen Datei.';
+$string['recordssaved'] = 'Einträge gespeichert';
 $string['removealldatatags'] = 'Alle Datenbank-Tags entfernen';
-$string['requireapproval'] = 'Freigabe erforderlich?';
+$string['requireapproval'] = 'Freigabe erforderlich';
 $string['requireapproval_help'] = 'Wenn diese Option aktiviert ist, müssen die Einträge von Trainer/innen erst bestätigt werden, bevor sie für alle anderen angezeigt werden?';
 $string['required'] = 'Notwendig';
 $string['requiredentries'] = 'Erforderliche Einträge für den Abschluss (alt)';
@@ -392,7 +392,7 @@ $string['uploadrecords_help'] = 'Einträge können als Textdatei hochgeladen wer
 Die Feldbegrenzung ist ein Zeichen, dass jedes Feld im jedem Datensatz zusätzlich abgrenzt. Normalerweise ist es nicht gesetzt.';
 $string['url'] = 'URL';
 $string['usedate'] = 'In Suche einbeziehen';
-$string['usestandard'] = 'Vorlagensatz benutzen';
+$string['usestandard'] = 'Vorlage benutzen';
 $string['usestandard_help'] = 'Um einen auf der gesamten Website verfügbaren Vorlagensatz zu benutzen, wählen Sie ihn aus der Liste aus. Wenn Sie selbst einen Vorlagensatz zur Liste hinzugefügt haben, können Sie ihn hier auch wieder löschen.';
 $string['viewfromdate'] = 'Bearbeiten sperren ab';
 $string['viewtodate'] = 'Bearbeiten sperren bis';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'folder', language 'it', version '3.8'.
  *
- * @package   folder
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     folder
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,8 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['bynameondate'] = 'di {$a->name} - {$a->date}';
 $string['contentheader'] = 'Contenuto';
 $string['display'] = 'Visualizzazione del contenuto';
-$string['display_help'] = 'Scegliendo di visualizzare il contenuto del folder nella pagina home del corso, non sarà disponibile il link ad una pagina separata della risorsa. La descrizione sarà visualizzata solo se è stata selezionata l\'impostazione "Visualizza descrizione nella home del corso".<br />
-Da notare che con questa impostazione la visualizzazione della risorsa da parte dei partecipanti non potrà essere inserita nel log.';
+$string['display_help'] = 'Scegliendo di visualizzare il contenuto del folder nella pagina home del corso, non sarà disponibile il link ad una pagina separata della risorsa. La descrizione sarà visualizzata solo se è stata selezionata l\'impostazione \'Visualizza descrizione nella home del corso\'. Da notare che con questa impostazione la visualizzazione della risorsa da parte dei partecipanti non potrà essere inserita nel log.';
 $string['displayinline'] = 'Nella pagina home del corso';
 $string['displaypage'] = 'In una pagina separata';
 $string['dnduploadmakefolder'] = 'Decomprimi i file e crea le cartelle';
@@ -37,17 +36,17 @@ $string['downloadfolder'] = 'Scarica cartella';
 $string['eventallfilesdownloaded'] = 'L\'archivio zip della cartella è stato scaricato';
 $string['eventfolderupdated'] = 'Aggiornata catella';
 $string['folder:addinstance'] = 'Aggiungere cartelle';
-$string['foldercontent'] = 'File e sotto cartelle';
 $string['folder:managefiles'] = 'Gestire file nel modulo cartella';
 $string['folder:view'] = 'Visualizzare contenuto cartella';
+$string['foldercontent'] = 'File e sotto cartelle';
 $string['indicator:cognitivedepth'] = 'Cartella cognitivo';
+$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Cartella.';
 $string['indicator:cognitivedepthdef'] = 'Cartella cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento cognitivo offerto dalla risorsa Cartella (Livelli: Nessuna visualizzazione, Visualizzazione)';
-$string['indicator:cognitivedepth_help'] = 'L\'indicatore è basato sulla profondità cognitiva toccata dallo studente con risorse Cartella.';
 $string['indicator:socialbreadth'] = 'Cartella sociale';
+$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse \'file\'.';
 $string['indicator:socialbreadthdef'] = 'Cartella sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dalle risorse Cartella (Livelli: Nessuna partecipazione, Partecipazione da solo)';
-$string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente con risorse \'file\'.';
 $string['maxsizetodownload'] = 'Dimensione massima della cartella da scaricare (MB)';
 $string['maxsizetodownload_help'] = 'L\'impostazione limita la dimensione massima oltre la quale gli utenti non potranno scaricare la cartella in formato zip. Impostando a zero, non ci saranno limiti dimensionali.';
 $string['modulename'] = 'Cartella';

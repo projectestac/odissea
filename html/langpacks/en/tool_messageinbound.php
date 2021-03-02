@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'en', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,15 +43,15 @@ $string['handlerdisabled'] = 'The email handler you tried to contact has been di
 $string['incomingmailconfiguration'] = 'Incoming mail configuration';
 $string['incomingmailserversettings'] = 'Incoming mail server settings';
 $string['incomingmailserversettings_desc'] = 'Moodle is capable of connecting to appropriately configured IMAP servers. You can specify the settings used to connect to your IMAP server here.';
-$string['invalidrecipientdescription'] = 'The message "{$a->subject}" could not be authenticated, since it was sent from a different email address than in your user profile. For the message to be authenticated, you need to reply to this message.';
-$string['invalidrecipientdescriptionhtml'] = 'The message "{$a->subject}" could not be authenticated, since it was sent from a different email address than in your user profile. For the message to be authenticated, you need to reply to this message.';
-$string['invalidrecipientfinal'] = 'The message "{$a->subject}" could not be authenticated. Please check that you are sending your message from the same email address as in your profile.';
 $string['invalid_recipient_handler'] = 'If a valid message is received but the sender cannot be authenticated, the message is stored on the email server and the user is contacted using the email address in their user profile. The user is given the chance to reply to confirm the authenticity of the original message.
 
 This handler processes those replies.
 
 It is not possible to disable sender verification of this handler because the user may reply from an incorrect email address if their email client configuration is incorrect.';
 $string['invalid_recipient_handler_name'] = 'Invalid sender handler';
+$string['invalidrecipientdescription'] = 'The message "{$a->subject}" could not be authenticated, since it was sent from a different email address than in your user profile. For the message to be authenticated, you need to reply to this message.';
+$string['invalidrecipientdescriptionhtml'] = 'The message "{$a->subject}" could not be authenticated, since it was sent from a different email address than in your user profile. For the message to be authenticated, you need to reply to this message.';
+$string['invalidrecipientfinal'] = 'The message "{$a->subject}" could not be authenticated. Please check that you are sending your message from the same email address as in your profile.';
 $string['mailbox'] = 'Mailbox name';
 $string['mailboxconfiguration'] = 'Mailbox configuration';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cohort', language 'el', version '3.8'.
  *
- * @package   cohort
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cohort
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -47,22 +47,22 @@ $string['currentusers'] = 'Τρέχοντες χρήστες';
 $string['currentusersmatching'] = 'Τρέχοντες χρήστες που ταιριάζουν';
 $string['defaultcontext'] = 'Προεπιλεγμένο πλαίσιο';
 $string['delcohort'] = 'Διαγραφή ενός συνόλου χρηστών';
-$string['delconfirm'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το σύνολο χρηστών «{$a}»;';
+$string['delconfirm'] = 'Είστε βέβαιοι οτι θέλετε να διαγράψετε αυτό το σύνολο χρηστών «{$a}»;';
 $string['description'] = 'Περιγραφή';
 $string['displayedrows'] = 'Εμφάνιση {$a->displayed} γραμμών από {$a->total}.';
 $string['duplicateidnumber'] = 'Υπάρχει ήδη σύνολο χρηστών με τον ίδιο αναγνωριστικό αριθμό';
 $string['editcohort'] = 'Επεξεργασία συνόλου χρηστών';
-$string['editcohortidnumber'] = 'Τροποποίηση αναγνωριστικού αυτού του συνόλου χρηστών';
-$string['editcohortname'] = 'Τροποποίηση του ονόματος αυτού του συνόλου χρηστών';
-$string['eventcohortcreated'] = 'Αυτό το σύνολο χρηστών δημιουργήθηκε';
+$string['editcohortidnumber'] = 'Επεξεργασία αναγνωριστικού συνόλου χρηστών';
+$string['editcohortname'] = 'Επεξεργασία ονόματος ενό συνόλου χρηστών';
+$string['eventcohortcreated'] = 'Το σύνολο χρηστών δημιουργήθηκε';
 $string['eventcohortdeleted'] = 'Αυτό το σύνολο χρηστών διαγράφηκε';
 $string['eventcohortmemberadded'] = 'Ο χρήστης προστέθηκε σε ένα σύνολο χρηστών';
 $string['eventcohortmemberremoved'] = 'Ο χρήστης αφαιρέθηκε από ένα σύνολο χρηστών';
 $string['eventcohortupdated'] = 'Αυτό το σύνολο χρηστών ενημερώθηκε';
 $string['external'] = 'Εξωτερικό σύνολο χρηστών';
-$string['idnumber'] = 'ID';
+$string['idnumber'] = 'Αναγνωριστικό συνόλου χρηστών';
 $string['invalidtheme'] = 'Δεν υπάρχει τέτοιο αισθητικό θέμα συνόλου χρηστών';
-$string['memberscount'] = 'Μέλη';
+$string['memberscount'] = 'Μέγεθος συνόλου χρηστών';
 $string['name'] = 'Όνομα';
 $string['namecolumnmissing'] = 'Υπάρχει κάποιο πρόβλημα με τη μορφή του αρχείου CSV. Παρακαλούμε ελέγξτε ότι περιλαμβάνονται τα ονόματα των στηλών. Για να προσθέσετε χρήστες σε ένα σύνολο χρηστών, μεταβείτε στην επιλογή «Εισαγωγή χρηστών» στη Διαχείριση ιστοτόπου.';
 $string['namefieldempty'] = 'Το όνομα πεδίου δεν μπορεί να είναι κενό';
@@ -74,8 +74,8 @@ $string['potusersmatching'] = 'Πιθανοί χρήστες που ταιριά
 $string['preview'] = 'Προεπισκόπηση';
 $string['privacy:metadata:cohort_members'] = 'Πληροφορίες σχετικά με το σύνολο χρηστών του χρήστη.';
 $string['privacy:metadata:cohort_members:cohortid'] = 'Το αναγνωριστικό του συνόλου χρηστών';
-$string['privacy:metadata:cohort_members:timeadded'] = 'Η χρονοσφραγίδα που δείχνει πότε ο χρήστης προστέθηκε στο σύνολο χρηστών';
-$string['privacy:metadata:cohort_members:userid'] = 'Το αναγνωριστικό του χρήστη που συσχετίζεται με την ομάδα';
+$string['privacy:metadata:cohort_members:timeadded'] = 'Η χρονοσφραγίδα που σηματοδοτεί πότε ο χρήστης προστέθηκε στο σύνολο χρηστών';
+$string['privacy:metadata:cohort_members:userid'] = 'Το αναγνωριστικό του χρήστη που συσχετίζεται με το σύνολο χρηστών';
 $string['removeuserwarning'] = 'Η αφαίρεση χρηστών από ένα σύνολο χρηστών μπορεί να έχει ως αποτέλεσμα την ακύρωση εγγραφής των χρηστών από πολλαπλά μαθήματα και περιλαμβάνει διαγραφή ρυθμίσεων χρήστη, βαθμών, συμμετοχής σε ομάδες συμμετεχόντων μαθήματος και άλλες πληροφορίες χρήστη από τα επηρεαζόμενα μαθήματα.';
 $string['search'] = 'Αναζήτηση';
 $string['searchcohort'] = 'Αναζήτηση ενός συνόλου χρηστών';
@@ -86,8 +86,8 @@ $string['uploadcohorts'] = 'Ανέβασμα συνόλων χρηστών';
 $string['uploadcohorts_help'] = 'Τα σύνολα χρηστών μπορούν να ανεβούν μέσω αρχείου κειμένου. Ο μορφότυπος του αρχείου θα πρέπει να είναι ως εξής:
 
 * Κάθε γραμμή του αρχείου περιέχει μια εγγραφή.
-* Κάθε εγγραφή είναι μια σειρά δεδομένων που διαχωρίζονται με κόμματα (ή άλλα διαχωριστικά).
-* Η πρώτη εγγραφή περιέχει μια λίστα των ονομάτων πεδίων που καθορίζουν τη μορφή του υπόλοιπου αρχείου.
+* Κάθε εγγραφή είναι μια σειρά δεδομένων που διαχωρίζονται με κόμματα (ή άλλους οριοθέτες).
+* Η πρώτη εγγραφή περιέχει μια λίστα των ονομάτων πεδιών που καθορίζουν τη μορφή του υπόλοιπου αρχείου.
 * Απαραίτητο όνομα πεδίου είναι το name.
 * Προαιρετικά ονόματα πεδίων είναι idnumber, description, descriptionformat, visible, context, category, category_id, category_idnumber, category_path.';
 $string['uploadedcohorts'] = 'Ανέβηκαν {$a} σύνολα χρηστών';

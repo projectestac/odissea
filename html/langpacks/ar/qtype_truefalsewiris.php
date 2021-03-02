@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalsewiris', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_truefalsewiris', language 'ar', version '3.8'.
  *
- * @package   qtype_truefalsewiris
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_truefalsewiris
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['addingtruefalsewiris'] = 'إضافة سؤال صح/خطأ - الرياضيات والعلوم من WIRIS';
 $string['editingtruefalsewiris'] = 'تحرير سؤال صح/خطأ - الرياضيات والعلوم من WIRIS';
 $string['pluginname'] = 'صح/خطأ - العلوم';
+$string['pluginname_help'] = 'كما في سؤال صح/خطأ القياسي، ولكن يمكنك توليد نص سؤال مختلف عبر إدراج أرقام، معادلات أو تخطيطات عشوائية. يمكنك بمرونة تحديد ما إذا كانت الإجابة الصائبة هي صح أو خطأ. الإفادة أيضاً يمكنها استعمال الأرقام العشوائية.';
 $string['pluginnameadding'] = 'إضافة سؤال صح/خطأ - الرياضيات والعلوم من WIRIS';
 $string['pluginnameediting'] = 'تحرير سؤال صح/خطأ - الرياضيات والعلوم من WIRIS';
-$string['pluginname_help'] = 'كما في سؤال صح/خطأ القياسي، ولكن يمكنك توليد نص سؤال مختلف عبر إدراج أرقام، معادلات أو تخطيطات عشوائية. يمكنك بمرونة تحديد ما إذا كانت الإجابة الصائبة هي صح أو خطأ. الإفادة أيضاً يمكنها استعمال الأرقام العشوائية.';
 $string['pluginnamesummary'] = 'كما في سؤال صح/خطأ القياسي، ولكن يمكنك توليد نص سؤال مختلف عبر إدراج أرقام، معادلات أو تخطيطات عشوائية. يمكنك بمرونة تحديد ما إذا كانت الإجابة الصائبة هي صح أو خطأ. الإفادة أيضاً يمكنها استعمال الأرقام العشوائية.';
 $string['privacy:null_reason'] = 'إن ملحق نوع سؤال صح/خطأ من Wiris لا يؤثر على أو يخزن أي بيانات بحد ذاته.';
 $string['truefalsewiris'] = 'صح/خطأ - العلوم';
@@ -39,7 +39,7 @@ $string['truefalsewiris_correct_answer_variable'] = 'متغير الإجابة �
 $string['truefalsewiris_feedback_right_response'] = 'الإفادة للاستجابة الصحيحة';
 $string['truefalsewiris_feedback_wrong_response'] = 'الإفادة للاستجابة الخاطئة';
 $string['truefalsewiris_help'] = 'كما في سؤال صح/خطأ القياسي، ولكن يمكنك توليد نص سؤال مختلف عبر إدراج أرقام، معادلات أو تخطيطات عشوائية. يمكنك بمرونة تحديد ما إذا كانت الإجابة الصائبة هي صح أو خطأ. الإفادة أيضاً يمكنها استعمال الأرقام العشوائية.';
+$string['truefalsewiris_wiris_variables'] = 'متغيرات WIRIS';
 $string['truefalsewirisoverrideanswer_identifier'] = 'متغير الإجابة الصحيحة';
 $string['truefalsewirisoverrideanswer_identifier_help'] = 'إذا تم تعريفها، هذه القيمة ستتجاوز حقل الإجابة الصحيحة أدناه. أكتب الخوارزمية في تبويب المتغيرات لجعل هذا المتغير "صح" أو "خطأ".';
 $string['truefalsewirissummary'] = 'كما في سؤال صح/خطأ القياسي، ولكن يمكنك توليد نص سؤال مختلف عبر إدراج أرقام، معادلات أو تخطيطات عشوائية. يمكنك بمرونة تحديد ما إذا كانت الإجابة الصائبة هي صح أو خطأ. الإفادة أيضاً يمكنها استعمال الأرقام العشوائية.';
-$string['truefalsewiris_wiris_variables'] = 'متغيرات WIRIS';

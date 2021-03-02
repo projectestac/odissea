@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_pam', language 'en', branch 'MOODLE_32_STABLE'
+ * Strings for component 'auth_pam', language 'en', version '3.8'.
  *
- * @package   auth_pam
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_pam
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,3 +29,4 @@ $string['auth_pamdescription'] = 'This method uses PAM to access the native user
 $string['auth_passwordisexpired'] = 'Your password has expired. Do you want to change your password now?';
 $string['auth_passwordwillexpire'] = 'Your password will expire in {$a} days. Do you want to change your password now?';
 $string['pluginname'] = 'PAM (Pluggable Authentication Modules)';
+$string['privacy:metadata'] = 'The PAM (Pluggable Authentication Modules) authentication plugin does not store any personal data.';

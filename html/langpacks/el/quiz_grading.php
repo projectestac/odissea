@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_grading', language 'el', version '3.8'.
  *
- * @package   quiz_grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,19 +49,19 @@ $string['graded'] = '(βαθμολογημένο)';
 $string['gradenextungraded'] = 'Βαθμολόγηση των επόμενων {$a} μη βαθμολογημένων προσπαθειών';
 $string['gradeungraded'] = 'Βαθμολόγηση και των {$a} μη βαθμολογημένων προσπαθειών';
 $string['grading'] = 'Χειροκίνητη βαθμολόγηση';
+$string['grading:componentname'] = 'Αναφορά χειροκίνητης βαθμολόγησης';
+$string['grading:viewidnumber'] = 'Εμφάνιση των αναγνωριστικών αριθμών των μαθητών κατά τη διάρκεια της βαθμολόγησης';
+$string['grading:viewstudentnames'] = 'Εμφάνιση των ονομάτων των μαθητών κατά τη διάρκεια της βαθμολόγησης';
 $string['gradingall'] = 'Και οι {$a} προσπάθειες σε αυτή την ερώτηση.';
 $string['gradingattempt'] = 'Προσπάθεια με αριθμό {$a->attempt} για τον/την {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Προσπάθειες βαθμολόγησης {$a->from} έως {$a->to} από {$a->of}';
 $string['gradingattemptwithidnumber'] = 'Αριθμός προσπάθειας {$a->attempt} για {$a->fullname} ({$a->idnumber})';
-$string['grading:componentname'] = 'Αναφορά χειροκίνητης βαθμολόγησης';
 $string['gradingnextungraded'] = 'Επόμενες {$a} μη βαθμολογημένες προσπάθειες';
 $string['gradingnotallowed'] = 'Δεν έχετε το δικαίωμα να βαθμολογήσετε χειροκίνητα απαντήσεις σε αυτό το κουίζ';
 $string['gradingquestionx'] = 'Βαθμολόγηση ερώτησης {$a->number}: {$a->questionname}';
 $string['gradingreport'] = 'Αναφορά χειροκίνητης βαθμολόγησης';
 $string['gradingungraded'] = '{$a} μη βαθμολογημένες προσπάθειες';
 $string['gradinguser'] = 'Προσπάθειες για {$a}';
-$string['grading:viewidnumber'] = 'Εμφάνιση των αναγνωριστικών αριθμών των μαθητών κατά τη διάρκεια της βαθμολόγησης';
-$string['grading:viewstudentnames'] = 'Εμφάνιση των ονομάτων των μαθητών κατά τη διάρκεια της βαθμολόγησης';
 $string['hideautomaticallygraded'] = 'Απόκρυψη ερωτήσεων που έχουν βαθμολογηθεί αυτόματα';
 $string['inprogress'] = 'Σε εξέλιξη';
 $string['invalidattemptid'] = 'Δεν υπάρχει τέτοιο αναγνωριστικό προσπάθειας';

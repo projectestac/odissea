@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'de', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,24 +34,24 @@ $string['calendarend'] = '{$a} endet';
 $string['calendarstart'] = '{$a} beginnt';
 $string['cannotsubmit'] = 'Ihre Auswahl konnte nicht gespeichert werden. Versuchen Sie es bitte noch einmal.';
 $string['choice'] = 'Abstimmung';
-$string['choiceactivityname'] = 'Abstimmung: {$a}';
 $string['choice:addinstance'] = 'Neue Abstimmung hinzufügen';
 $string['choice:choose'] = 'Abstimmung vornehmen';
-$string['choiceclose'] = 'Antworten zulassen bis';
-$string['choicecloseson'] = 'Ende der Abstimmung: {$a}';
 $string['choice:deleteresponses'] = 'Antworten ändern und löschen';
 $string['choice:downloadresponses'] = 'Antworten herunterladen';
+$string['choice:readresponses'] = 'Antworten anzeigen';
+$string['choice:view'] = 'Abstimmungsaktivität anzeigen';
+$string['choiceactivityname'] = 'Abstimmung: {$a}';
+$string['choiceclose'] = 'Antworten zulassen bis';
+$string['choicecloseson'] = 'Ende der Abstimmung: {$a}';
 $string['choicefull'] = 'Eine oder mehrere von Ihnen gewählte Optionen sind bereits voll. Ihre Auswahl wurde nicht gespeichert. Wählen Sie etwas anderes.';
 $string['choicename'] = 'Abstimmungsname';
 $string['choiceopen'] = 'Antworten zulassen ab';
 $string['choiceoptions'] = 'Abstimmungsoptionen';
-$string['choiceoptions_help'] = 'Tragen Sie die Abstimmungsoptionen ein, zwischen denen sich die Teilnehmer/innen entscheiden sollen.
+$string['choiceoptions_help'] = 'Tragen Sie die Abstimmoptionen ein, zwischen denen sich die Teilnehmer/innen entscheiden sollen.
 
 Sie können jedes der vorhandenen Felder ausfüllen, Sie dürfen aber auch nicht benötigte Felder leer lassen, die dann in der Abstimmung nicht angezeigt werden. Weitere Optionsfelder erhalten Sie über den Knopf "Optionen hinzufügen".';
-$string['choice:readresponses'] = 'Antworten anzeigen';
 $string['choicesaved'] = 'Ihre Auswahl wurde gespeichert';
 $string['choicetext'] = 'Abstimmungstext';
-$string['choice:view'] = 'Abstimmungsaktivität anzeigen';
 $string['chooseaction'] = 'Aktion auswählen...';
 $string['chooseoption'] = 'Auswahl: {$a}';
 $string['closebeforeopen'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
@@ -72,13 +72,13 @@ $string['full'] = '(Nicht verfügbar)';
 $string['havetologin'] = 'Sie müssen angemeldet sein, um sich an der Abstimmung beteiligen zu können.';
 $string['includeinactive'] = 'Einschließlich Ergebnissen von inaktiven/gesperrten Nutzer/innen';
 $string['indicator:cognitivedepth'] = 'Abstimmung kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Abstimmungsaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Abstimmung kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Abstimmungsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Abstimmungsaktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Abstimmung sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Abstimmungsaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Abstimmung sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Abstimmungsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Abstimmungsaktivität erreicht hat.';
 $string['limit'] = 'Obergrenze';
 $string['limitanswers'] = 'Anzahl der Antworten bei den Abstimmungsoptionen beschränken';
 $string['limitanswers_help'] = 'Diese Option setzt die maximale Anzahl von möglichen Stimmabgaben für die betreffende Abstimmoption. Sobald diese Obergrenze erreicht ist, kann sich niemand mehr für diese Abstimmoption entscheiden.
@@ -100,7 +100,7 @@ Eine Abstimmungs-Aktivität kann verwendet werden
 $string['modulenameplural'] = 'Abstimmungen';
 $string['moveselectedusersto'] = 'Ausgewählte Nutzer/innen bewegen nach...';
 $string['multiplenotallowederror'] = 'In dieser Auswahl ist nur eine Antwort erlaubt.';
-$string['mustchooseone'] = 'Sie müssen eine Option auswählen, um sie speichern können. Bisher wurde noch nichts gespeichert.';
+$string['mustchooseone'] = 'Sie müssen eine Option auswählen, um sie speichern können.';
 $string['noguestchoose'] = 'Gäste dürfen an Abstimmungen nicht teilnehmen.';
 $string['noresultsviewable'] = 'Ergebnisse sind aktuell nicht sichtbar.';
 $string['notanswered'] = 'Nicht abgestimmt';

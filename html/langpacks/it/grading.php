@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'it', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,7 +31,7 @@ $string['changeactivemethod'] = 'Cambia il metodo di valutazione attivo in';
 $string['clicktoclose'] = 'click per chiudere';
 $string['error:notinrange'] = 'La valutazione \'{$a->grade}\' non è valida. le valutazioni devono essere tra 0 e {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Non è possibile istanziare lo schema di valutazione';
-$string['formnotavailable'] = 'E\' stato selezionato il metodo di valutazione avanzato ma lo schema di valutazione non è ancora pronto. Puoi prepararlo tramite il link disponibile nel blocco Amministrazione';
+$string['formnotavailable'] = 'E\' stato selezionato il metodo di valutazione avanzato ma lo schema di valutazione non è ancora pronto. Puoi prepararlo tramite il collegamento disponibile nel blocco Amministrazione';
 $string['gradingformunavailable'] = 'Attenzione: il metodo di valutazione avanzato non è ancora pronto all\'uso. Verrà utilizzata la valutazione semplice diretta finché non sarà disponibile uno schema di valutazione valido.';
 $string['gradingmanagement'] = 'Valutazione avanzata';
 $string['gradingmanagementtitle'] = 'Valutazione avanzata: {$a->component} ({$a->area})';
@@ -77,6 +77,7 @@ $string['privacy:metadata:grading_instances:raterid'] = 'ID dell\'utente che ha 
 $string['privacy:metadata:grading_instances:rawgrade'] = 'Valutazione per l\'istanza.';
 $string['privacy:metadata:grading_instances:status'] = 'Stato dell\'istanza di valutazione.';
 $string['privacy:metadata:grading_instances:timemodified'] = 'Data e ora dell\'ultima modifica dell\'istanza di valutazione.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Data del metodo di valutazione';
 $string['searchownforms'] = 'Includi i miei schemi';
 $string['searchtemplate'] = 'Ricerca schemi di valutazione';
 $string['searchtemplate_help'] = 'E\' possibile cercare uno schema di valutazione da usare come modello. Inserisci le parole da cercare nel nome degli schemi, nella descrizione o nel testo dello schema. Per cercare una frase, racchiudi le parole tra doppi apici.

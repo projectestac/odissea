@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_analytics', language 'ar', version '3.8'.
  *
- * @package   tool_analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['classdoesnotexist'] = 'الفئة {$a} غير موجودة';
 $string['clearmodelpredictions'] = 'هل تريد بالتأكيد محو جميع تنبؤات "{$ a}"؟';
 $string['clearpredictions'] = 'توقعات واضحة';
 $string['clienablemodel'] = 'يمكنك تمكين النموذج عبر اختيار فترة التحليل بمُعرَّفها. لاحظ أن بإمكانك أيضاً تمكينها لاحقاً باستعمال واجهة الويب (\'لا شيء\' للخروج).';
-$string['clievaluationandpredictions'] = 'تتناوب المهمة المجدولة ما بين النماذج الممَكَّنة وتحصل على التنبؤات. تم تعطيل تقييم النماذج عبر واجهة الويب. يمكنك السماح بتنفيذ هذه العمليات يدوياً عبر واجهة الويب عن طريق تعطيل إعداد التحليلات <a href="{$a}">\'من سطر الأوامر فقط\'</a>.';
+$string['clievaluationandpredictions'] = 'تكرر المهمة المجدولة من خلال النموذج الممكن و تحصل على التنبؤات. تم تعطيل تقييم النماذج عبر واجهة الويب. يمكنك السماح بتنفيذ هذه العمليات يدويًا عبر واجهة الويب عن طريق تعطيل إعداد التحليلات "onlycli" .';
 $string['clievaluationandpredictionsnoadmin'] = 'تكرر المهمة المجدولة من خلال النماذج الممكّنة وتحصل على التنبؤات. تم تعطيل تقييم النماذج عبر واجهة الويب. قد يتم تمكينه من قبل مسؤول الموقع.';
 $string['component'] = 'مكوِّن';
 $string['componentcore'] = 'النواة';
@@ -61,26 +61,27 @@ $string['editmodel'] = 'تحرير "{$a}" نموذج';
 $string['edittrainedwarning'] = 'لقد تم تدريب هذا النموذج سابقاً. لاحظ أن تغيير مؤشراته أو فترة تحليله سيؤدي إلى حذف تنبؤاته السابقة والشروع بتوليد تنبؤات جديدة.';
 $string['enabled'] = 'تمكين';
 $string['errorcantenablenotimesplitting'] = 'ينبغي عليك تحديد فترة التحليل قبل تمكين النموذج';
-$string['errornoenabledandtrainedmodels'] = 'لا توجد نماذج مُمَكَّنة ومدربة للتنبؤ.';
-$string['errornoenabledmodels'] = 'لا توجد نماذج مُمَكَّنة لتدريبها.';
+$string['errornoenabledandtrainedmodels'] = 'لا توجد نماذج ممكنة و مدربة للتنبؤ.';
+$string['errornoenabledmodels'] = 'لا توجد نماذج ممكنة للتدريب.';
 $string['errornoexport'] = 'يمكن تصدير النماذج المدرّبة فقط';
-$string['errornostaticevaluated'] = 'لا يمكن تقييم النماذج القائمة على الافتراضات. هي دائما صحيحة 100 ٪ وفقاً للطريقة التي تم تعريفها بها.';
+$string['errornostaticevaluated'] = 'لا يمكن تقييم النماذج القائمة على الافتراضات. هي دائما صحيحة 100 ٪ وفقا للطريقة التي تم تعريفها.';
 $string['errornostaticlog'] = 'لا يمكن تقييم النماذج القائمة على الافتراضات لعدم وجود سجل أداء.';
 $string['erroronlycli'] = 'لا يُسمح بالتنفيذ إلا عبر سطر الأوامر';
-$string['errortrainingdataexport'] = 'تعذر تصدير بيانات تدريب النموذج';
+$string['errortrainingdataexport'] = 'لا يمكن تصدير بيانات التدريب النموذجية';
 $string['evaluate'] = 'تقييم';
 $string['evaluatemodel'] = 'تقييم النموذج';
-$string['evaluationinbatches'] = 'يتم حساب محتويات الموقع و تخزينها على دفعات. قد تتوقف عملية التقييم في أيّ وقت. عند تشغيله القادم، ستتابع من النقطة التي توقفت عندها.';
+$string['evaluationinbatches'] = 'يتم حساب محتويات الموقع و تخزينها على دفعات. قد تتوقف عملية التقييم في أيّ وقت.
+في المرة التالية التي يتم فيها تشغيله ، سيستمر من النقطة التي تم إيقافه فيها.';
 $string['evaluationmode'] = 'نمط التقييم';
-$string['evaluationmodecolconfiguration'] = 'التهيئة';
-$string['evaluationmodecoltrainedmodel'] = 'نموذج مُدَرَّب';
-$string['evaluationmodeconfiguration'] = 'تقييم تهيئة النموذج';
 $string['evaluationmode_help'] = 'هناك نمطان للتقييم:
 
 * نموذج مُدَرَّب - يتم استعمال بيانات الموقع كبيانات اختبار لتقييم دقة النموذج المدرب.
 * التهيئة - يتم تقسيم بيانات الموقع إلى بيانات تدريب وبيانات اختبار، وذلك لتدريب واختبار دقة تهيئة النموذج.
 
-يتوفر النموذج المدرب فقط إذا تم استيراد نموذج مدرب إلى الموقع، و لم تتم إعادة تدريبه بعد باستعمال بيانات الموقع.';
+يتوفر النموذج المدرب فقط إذا تم استيراد نموذج مدرب إلى الموقع، ولم تتم إعادة تدريبه بعد باستعمال بيانات الموقع.';
+$string['evaluationmodecolconfiguration'] = 'التهيئة';
+$string['evaluationmodecoltrainedmodel'] = 'نموذج مُدَرَّب';
+$string['evaluationmodeconfiguration'] = 'تقييم تهيئة النموذج';
 $string['evaluationmodeinfo'] = 'تم استيراد هذا النموذج إلى الموقع. يمكنك إما تقييم أداء النموذج، أو يمكنك تقييم أداء تهيئة النموذج باستعمال بيانات الموقع.';
 $string['evaluationmodetrainedmodel'] = 'تقييم النموذج المُدَرَّب';
 $string['executescheduledanalysis'] = 'نفذ التحليل المجدوَل';
@@ -88,11 +89,10 @@ $string['export'] = 'تصدير';
 $string['exportincludeweights'] = 'تضمين أوزان النموذج المُدَرَّب';
 $string['exportmodel'] = 'تصدير التهيئة';
 $string['exporttrainingdata'] = 'تصدير بيانات التدريب';
-$string['extrainfo'] = 'المعلومات';
-$string['generalerror'] = 'خطأ في التقييم. ترميز الحالة {$a}';
-$string['getpredictions'] = 'إجلب التنبؤات';
-$string['goodmodel'] = 'هذا نموذج جيد للحصول على تنبؤات.
-قم بتمكينه للحصول على التنبؤات.';
+$string['extrainfo'] = 'معلومات';
+$string['generalerror'] = 'خطأ في التقييم. شفرة الحالة {$a}';
+$string['getpredictions'] = 'الحصول على التوقعات';
+$string['goodmodel'] = 'هذا نموذج جيد لاستخدامه للحصول على تنبؤات. تمكنه من البدء في الحصول على التنبؤات.';
 $string['ignoreversionmismatches'] = 'تجاهل عدم تطابق الإصدار';
 $string['ignoreversionmismatchescheckbox'] = 'تجاهل الاختلافات بين إصدار الموقع هذا وإصدار الموقع الأصلي.';
 $string['importedsuccessfully'] = 'تم استيراد النموذج بنجاح.';
@@ -100,24 +100,24 @@ $string['importmodel'] = 'استورد النموذج';
 $string['indicators'] = 'المؤشرات';
 $string['indicators_help'] = 'المؤشرات هي ما تعتقد أنها ستؤدي إلى تنبؤ دقيق للهدف.';
 $string['indicatorsnum'] = 'عدد المؤشرات: {$a}';
-$string['info'] = 'المعلومات';
-$string['insights'] = 'الرؤى';
+$string['info'] = 'معلومات';
+$string['insights'] = 'أفكارا';
 $string['insightsreport'] = 'تقرير الرؤى';
 $string['invalidanalysables'] = 'عناصر الموقع غير صالحة';
-$string['invalidanalysablesinfo'] = 'تسرد هذه الصفحة العناصر القابلة للتحليل والتي لا يمكن استعمالها من قبل نموذج التنبؤ هذا. لا يمكن استعمال العناصر المدرجة لتدريب نموذج التنبؤ ولا يمكن لنموذج التنبؤ الحصول على تنبؤات لها.';
-$string['invalidanalysablestable'] = 'جدول العناصر القابلة للتحليل، غير الصحيحة في الموقع';
+$string['invalidanalysablesinfo'] = 'تسرد هذه الصفحة العناصر القابلة للتحليل و التي لا يمكن استخدامها بواسطة نموذج التنبؤ هذا. لا يمكن استخدام العناصر المدرجة إما لتدريب نموذج التنبؤ ولا يمكن لنموذج التنبؤ الحصول على تنبؤات لهم.';
+$string['invalidanalysablestable'] = 'جدول العناصر غير القابلة للتحليل في الموقع';
 $string['invalidcurrenttimesplitting'] = 'فترة التحليل الحالية غير صحيحة بالنسبة إلى مقصد هذا النموذج. لطفاً، إختر فترة تحليل مختلفة.';
 $string['invalidindicatorsremoved'] = 'لقد تمت إضافة نموذج جديد. المؤشرات التي لا تعمل مع المقصد المحدد تمت إزالتها تلقائياً.';
-$string['invalidprediction'] = 'لا يصلح للحصول على تنبؤات';
+$string['invalidprediction'] = 'غير صالح للحصول على توقعات';
 $string['invalidtimesplitting'] = 'فترة التحليل المحددة غير صحيحة بالنسبة إلى المقصد المحدد.';
 $string['invalidtimesplittinginmodels'] = 'فترة التحليل المستعملة من قبل بعض النماذج غير صحيحة. لطفاً، إختر فترة مختلفة للنماذج الآتية: {$a}';
-$string['invalidtraining'] = 'لا يصلح لتدريب النموذج';
-$string['loginfo'] = 'سجِّل معلومات إضافية';
+$string['invalidtraining'] = 'غير صالح لتدريب النموذج';
+$string['loginfo'] = 'تسجيل معلومات اضافية';
 $string['missingmoodleversion'] = 'الملف المستورد لا يحدد رقم الإصدار';
 $string['modelid'] = 'معرف النموذج';
-$string['modelinvalidanalysables'] = 'عناصر قابلة للتحليل غير صالحة لنموذج "{$a}"';
+$string['modelinvalidanalysables'] = 'عناصر غير صالحة للتحليل لنموذج "{$a}"';
 $string['modelname'] = 'اسم النموذج';
-$string['modelresults'] = 'نتائج {$a}';
+$string['modelresults'] = '{$a} النتائج';
 $string['modeltimesplitting'] = 'فترة التحليل';
 $string['newmodel'] = 'نموذج جديد';
 $string['nextpage'] = 'الصفحة التالية';
@@ -125,15 +125,15 @@ $string['noactionsfound'] = 'لم يقم المستخدمون بتنفيذ أي 
 $string['nodatatoevaluate'] = 'لا توجد بيانات لتقييم النموذج';
 $string['nodatatopredict'] = 'لا عناصر جديدة للحصول على تنبؤات لها.';
 $string['nodatatotrain'] = 'لا توجد بيانات جديدة يمكن استعمالها للتدريب.';
-$string['noinvalidanalysables'] = 'لا يحتوي هذا الموقع على أية عناصر قابلة للتحليل غير صالحة.';
+$string['noinvalidanalysables'] = 'لا يحتوي هذا الموقع على أي عنصر غير صالح للتحليل.';
 $string['notdefined'] = 'لم يحدد بعد';
 $string['pluginname'] = 'نماذج تحليلية';
-$string['predictionprocessfinished'] = 'انتهت عملية التنبؤ';
+$string['predictionprocessfinished'] = 'الانتهاء من عملية التنبؤ';
 $string['predictionresults'] = 'نتائج التنبؤ';
-$string['predictmodels'] = 'تنبأ النماذج';
-$string['predictorresultsin'] = 'تم تسجيل معلومات التنبؤ في المجلد {$a}';
+$string['predictmodels'] = 'توقع النماذج';
+$string['predictorresultsin'] = 'سجل توقع المعلومات في الدليل {$a}';
 $string['previouspage'] = 'الصفحة السابقة';
-$string['privacy:metadata'] = 'إن ملحق نماذج التحليل لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'لا يخزن البرنامج المساعد Analytic models  أيّ بيانات شخصية.';
 $string['restoredefault'] = 'استعادة النماذج الافتراضية';
 $string['restoredefaultempty'] = 'يرجى اختيار النماذج لاستعادتها.';
 $string['restoredefaultinfo'] = 'هذه النماذج الافتراضية مفقودة أو تغيرت منذ تنصيبها. يمكنك استعادة النماذج الافتراضية المحددة.';
@@ -145,16 +145,16 @@ $string['samestartdate'] = 'تاريخ البدء الحالي جيد';
 $string['scheduledanalysisresults'] = 'النتائج التي تستعمل فترة التحليل {$a->name}';
 $string['scheduledanalysisresultscli'] = 'النتائج التي تستعمل فترة التحليل {$a->name} (المُعرَّف: {$a->id})';
 $string['selecttimesplittingforevaluation'] = 'إختر فترة التحليل التي تريد استعمالها لتقييم تهيئة النموذج.';
-$string['target'] = 'المقصد';
+$string['target'] = 'الهدف';
 $string['target_help'] = 'المقصد هو ما سيتنبأ به النموذج.';
 $string['target_link'] = 'الأهداف';
 $string['timesplittingnotdefined'] = 'لم يتم تعريف فترة التحليل.';
 $string['timesplittingnotdefined_help'] = 'ينبغي عليك تحديد فترة التحليل قبل تمكين النموذج.';
-$string['trainandpredictmodel'] = 'تدريب النموذج وحساب التنبؤات';
-$string['trainingprocessfinished'] = 'انتهت عملية التدريب';
+$string['trainandpredictmodel'] = 'نموذج التدريب و حساب التوقعات';
+$string['trainingprocessfinished'] = 'الانتهاء من عملية التدريب';
 $string['trainingresults'] = 'نتائج التدريب';
-$string['trainmodels'] = 'تدريب النماذج';
+$string['trainmodels'] = 'نماذج القطار';
 $string['versionnotsame'] = 'الملف المستورد كان من إصدار مختلف ({$a->importedversion}) عن الإصدار الحالي ({$a->version})';
 $string['viewlog'] = 'سجل التقييم';
-$string['weeksenddateautomaticallyset'] = 'تاريخ الانتهاء المحدد تلقائياً بناءً على تاريخ البدء وعدد المقاطع';
-$string['weeksenddatedefault'] = 'تاريخ الانتهاء المحسوب تلقائياً من تاريخ بدء المساق.';
+$string['weeksenddateautomaticallyset'] = 'يتم تحديد تاريخ الانتهاء تلقائيًا بناءً على تاريخ البدء و عدد الأقسام';
+$string['weeksenddatedefault'] = 'تاريخ الانتهاء محسوب تلقائيًا من تاريخ بدء المادة.';

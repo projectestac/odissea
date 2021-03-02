@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'it', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['cannotreset'] = 'Non è stato possibile resettare la richiesta di dati.
 $string['categories'] = 'Categorie';
 $string['categorieslist'] = 'Elenco delle categorie di dati';
 $string['category'] = 'Categoria';
+$string['category_help'] = 'Una categoria nel registro dei dati rappresenta una tipologia di dati. E\' possibile aggiungere una categoria, oppure, se è stato sezionato "Eredita", sarà applicata la categoria di dati del contesto superiore, I contesti disponibili (dal più basso al più alto) sono: Blocchi > Moduli di attività > Corsi > Categorie di corsi > Utenti > Sito.';
 $string['categorycreated'] = 'Categoria creata';
 $string['categorydefault'] = 'Categoria di default';
 $string['categorydefault_help'] = 'La categoria di default è la categoria di dati che sarà applicata a qualsiasi nuova istanza. Se è stato sezionato "Eredita", sarà applicata la categoria di dati del contesto superiore, I contesti disponibili (dal più basso al più alto) sono: Blocchi > Moduli di attività > Corsi > Categorie di corsi > Utenti > Sito.';
-$string['category_help'] = 'Una categoria nel registro dei dati rappresenta una tipologia di dati. E\' possibile aggiungere una categoria, oppure, se è stato sezionato "Eredita", sarà applicata la categoria di dati del contesto superiore, I contesti disponibili (dal più basso al più alto) sono: Blocchi > Moduli di attività > Corsi > Categorie di corsi > Utenti > Sito.';
 $string['categoryupdated'] = 'Categoria aggiornata';
 $string['close'] = 'Chiudi';
 $string['compliant'] = 'Conforme';
@@ -247,10 +247,10 @@ $string['privacyrequestexpiry_desc'] = 'Il tempo trascorso il quale saranno elim
 $string['protected'] = 'Dati protetti';
 $string['protectedlabel'] = 'La conservazione di questi dati ha precedenza legale rispetto al diritto all\'oblio dell\'utente. I dati protetti verranno eliminati solo allo scadere del tempo di conservazione.';
 $string['purpose'] = 'Finalità';
+$string['purpose_help'] = 'La finalità definisce le ragione per cui si trattano i dati. E\' possibile aggiungere una nuova finalità, oppure se è stato impostato "Eredita", verrà applicata la finalità del contesto superiore. I contesti sono (dal più basso al più alto): Blocchi > Moduli di attività > Corsi > Categorie di corso > Utente > Sito.';
 $string['purposecreated'] = 'Finalità creata';
 $string['purposedefault'] = 'Finalità di default';
 $string['purposedefault_help'] = 'La finalità di default è la finalità assegnata alle nuove istanze. Impostando "Eredita", sarà assegnata la finalità del contesto superiore. I contesti sono (dal più basso al più alto): Blocchi > Moduli di attività > Corsi > Categorie di corso > Utente > Sito.';
-$string['purpose_help'] = 'La finalità definisce le ragione per cui si trattano i dati. E\' possibile aggiungere una nuova finalità, oppure se è stato impostato "Eredita", verrà applicata la finalità del contesto superiore. I contesti sono (dal più basso al più alto): Blocchi > Moduli di attività > Corsi > Categorie di corso > Utente > Sito.';
 $string['purposeoverview'] = 'La finalità definisce l\'uso dei dati e la politica di conservazione. Nella finalità è anche descritto  criteri di memorizzazione e mantenimento.';
 $string['purposes'] = 'Finalità';
 $string['purposeslist'] = 'Elenco delle finalità';
@@ -273,11 +273,11 @@ $string['requestsdenied'] = 'Le richieste sono state respinte';
 $string['requeststatus'] = 'Stato';
 $string['requestsubmitted'] = 'La richiesta è stata inviata al responsabile del trattamento dei dati del sito';
 $string['requesttype'] = 'Tipo';
+$string['requesttype_help'] = 'Inserisci per quale motivo desideri contattare il responsabile del trattamento dei dati del sito';
 $string['requesttypedelete'] = 'Eliminazione dati personali';
 $string['requesttypedeleteshort'] = 'Eliminazione';
 $string['requesttypeexport'] = 'Esportazione dati personali';
 $string['requesttypeexportshort'] = 'Esportazione';
-$string['requesttype_help'] = 'Inserisci per quale motivo desideri contattare il responsabile del trattamento dei dati del sito';
 $string['requesttypeothers'] = 'Richiesta generica';
 $string['requesttypeothersshort'] = 'Messaggio';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';

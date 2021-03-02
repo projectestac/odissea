@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_uploaduser', language 'eu', version '3.8'.
  *
- * @package   tool_uploaduser
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_uploaduser
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,7 +40,7 @@ $string['examplecsv_help'] = 'Adibidezko testu-fitxategia erabiltzeko, jaitsi et
 
 Adibidezko testu-fitxategia probetarako ere erabili daiteke, erabiltzaile-kontuak sortu aurretik erabiltzaileen datuak aurreikusi eta ekintza bertan behera utz daitekeelako.';
 $string['invalidtheme'] = '"{$a}" azala ez dago instalatuta eta baztertua izango da.';
-$string['invalidupdatetype'] = 'Igoera-mota honetan ezin da aukera hau hautatu.';
+$string['invalidupdatetype'] = 'Igoera mota honetan ezin da aukera hau aukeratu.';
 $string['invaliduserdata'] = '{$a} erabiltzailearen datu baliogabea antzeman da eta automatikoki garbitu da.';
 $string['nochanges'] = 'Aldaketarik ez';
 $string['notheme'] = 'Ez dago azalik zehaztuta erabiltzaile honentzat.';
@@ -57,12 +57,15 @@ $string['uploadpicture_cannotsave'] = 'Ezin da gorde {$a} erabiltzailearentzako 
 $string['uploadpicture_cannotunzip'] = 'Ezin da irudi-fitxategia deskonprimatu.';
 $string['uploadpicture_invalidfilename'] = '{$a} irudi-fitxategiaren izenak balio ez duten karaktereak ditu. Alde batera utzi da.';
 $string['uploadpicture_overwrite'] = 'Gainidatzi erabiltzaileek dagoeneko dituzten irudiak?';
-$string['uploadpictures'] = 'Igo erabiltzaileen irudiak';
-$string['uploadpictures_help'] = 'Erabiltzailearen irudiak zip fitxategia edo irudi-fitxategi gisa igo daitezke. Irudi-fitxategiei aukeratutako-erabiltzaile-ezaugarria.luzapena izena eman behar zaie. Adibidez, erabiltzaile-izena erabil1234 bada fitxategiaren izena erabil1234.jpg izango da.';
 $string['uploadpicture_userfield'] = 'Irudiak lotzean erabilitako erabiltzailearen atributua:';
-$string['uploadpicture_usernotfound'] = '\'{$a->uservalue}\'-n \'{$a->userfield}\' balioa duen erabiltzailea ez da existitzen. Alde batera utzi da.';
+$string['uploadpicture_usernotfound'] = '\'{$a->uservalue}\'-n \'{$a->userfield}\' balioa duen erabiltzailea ez dago. Alde batera utzi da.';
 $string['uploadpicture_userskipped'] = '{$a} erabiltzailea alde batera utzi da (dagoeneko badu irudia).';
 $string['uploadpicture_userupdated'] = '{$a} erabiltzailearen irudia eguneratu da.';
+$string['uploadpictures'] = 'Igo erabiltzaileen irudiak';
+$string['uploadpictures_help'] = '<p>Erabiltzailearen irudiak zip fitxategia edo irudi-fitxategi gisa igo daitezke. Irudi-fitxategiei <i>aukeratutako-erabiltzaile-ezaugarria.luzapena</i> izena eman behar zaie. Adibidez, irudiak egokitzeko aukeratutako erabiltzaile-ezaugarria erabiltzaile-izena bada eta izen hori erabil1234 bada, orduan fitxategiaren izena erabil1234.jpg izango da.</p>
+<p>Onartutako irudi motak gif, jpg, eta png dira.</p>
+<p>Irudi-fitxategien izenetan ez ditu letra larriak eta xeheak bereizten .</p>';
+$string['uploaduser:uploaduserpictures'] = 'Igo erabiltzailearen irudiak';
 $string['uploadusers'] = 'Igo erabiltzaileak';
 $string['uploadusers_help'] = 'Erabiltzaileak testu-fitxategi bidez igo (eta aukeran ikastaroetan matrikulatu) daitezke. Fitxategiak hurrengo formatua izan behar du:
 
@@ -72,7 +75,6 @@ $string['uploadusers_help'] = 'Erabiltzaileak testu-fitxategi bidez igo (eta auk
 * Derrigorrezko eremuen izenak: \'username\' (erabiltzaile-izena), \'firstname\' (izena), \'lastname\' (abizena) eta \'email\' (helbide elektronikoa)';
 $string['uploaduserspreview'] = 'Aurreikusi igotako erabiltzaileak';
 $string['uploadusersresult'] = 'Igotako erabiltzaileen emaitzak';
-$string['uploaduser:uploaduserpictures'] = 'Igo erabiltzailearen irudiak';
 $string['useraccountupdated'] = 'Erabiltzailea eguneratu da';
 $string['useraccountuptodate'] = 'Eguneratuta zeuden erabiltzaileak';
 $string['userdeleted'] = 'Erabiltzailea ezabatu da';
@@ -93,7 +95,7 @@ $string['uulegacy1role'] = '(Jatorrizko Ikaslea) N=1 mota';
 $string['uulegacy2role'] = '(Jatorrizko Irakaslea) N=2 mota';
 $string['uulegacy3role'] = '(Jatorrizko edizio-baimenik gabeko Irakaslea) N=3 mota';
 $string['uunoemailduplicates'] = 'Galarazi helbide elektronikoak bikoiztea';
-$string['uuoptype'] = 'Igotze-mota';
+$string['uuoptype'] = 'Igotze mota';
 $string['uuoptype_addinc'] = 'Gehitu guztia, behar izanez gero erabiltzaile-izenari kontagailua gehituta';
 $string['uuoptype_addnew'] = 'Gehitu soilik berriak, lehendik existitzen diren erabiltzaileak alde batera utziz';
 $string['uuoptype_addupdate'] = 'Gehitu berriak eta eguneratu lehendik dauden erabiltzaileak';

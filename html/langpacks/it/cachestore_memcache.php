@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,25 +12,26 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'it', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcache', language 'it', version '3.8'.
  *
- * @package   cachestore_memcache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_memcache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['clustered'] = 'Abilita server in cluster';
-$string['clusteredheader'] = 'Split server';
 $string['clustered_help'] = 'Abilita la funzionalità "read-one set-multi".
 
 Permette di disporre di uno store più performante adatto a configurazioni in load balancing. Lo store leggerà da un solo server (generalmente localhost) ma scriverà su tutti i server che compongono il pool di load balancing. Per cache con un rapporto molto alto di letture/scritture si riduce notevolmente l\'overhead dovuto alla rete.
 
 Abilitando questa impostazione, il server indicato sopra sarà usato per la lettura.';
+$string['clusteredheader'] = 'Split server';
 $string['pluginname'] = 'Memcache';
 $string['prefix'] = 'Prefisso chiave';
 $string['prefix_help'] = 'Il prefisso da usare per tutti nomi delle chiavi nel server memcache.
@@ -40,7 +40,6 @@ $string['prefix_help'] = 'Il prefisso da usare per tutti nomi delle chiavi nel s
 $string['prefixinvalid'] = 'Prefisso non valido. E\' possibile usare solamente a-z A-Z 0-9-_.';
 $string['privacy:metadata:memcache:data'] = 'Dati memorizzati in cache';
 $string['servers'] = 'Server';
-$string['serversclusterinvalid'] = 'Con il clustering abilitato nell\'elenco deve essere presente un solo server.';
 $string['servers_help'] = 'Imposta i server utilizzati dall\'adapter memcached.
 I server devono essere impostati usando una linea per ciascun server specificando obbligatoriamente l\'indirizzo e opzionalmente la porta ed il peso. In assenza di indicazione sulla porta sarà utilizzata la porta di default (11211).
 
@@ -52,6 +51,7 @@ nomeserver:porta:peso
 </pre>
 
 Se viene utilizzata l\'impostazione *Abilita server in cluster*, allora nell\'elenco dovrà essere presente un solo server, in genere il nome o l\'IP della macchina locale come ad esempio 127.0.0.1 oppure localhost.';
+$string['serversclusterinvalid'] = 'Con il clustering abilitato nell\'elenco deve essere presente un solo server.';
 $string['sessionhandlerconflict'] = 'Attenzione: l\'istanza memcache ({$a}) è stata configurata per usare lo stesso server memcache usato anche per le sessioni. Lo svuotamento delle cache provocherà anche l\'eliminazione delle sessioni.';
 $string['setservers'] = 'Set Server';
 $string['setservers_help'] = 'L\'elenco dei server da aggiornare quando i dati della cache vengono modificati. In genere il nome qualificato di ciascun server appartenentre al pool di load balancing.

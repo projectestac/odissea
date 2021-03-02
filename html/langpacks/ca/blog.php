@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'blog', language 'ca', version '3.8'.
  *
- * @package   blog
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blog
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,7 +43,7 @@ $string['blogaboutthis'] = 'Blog sobre aquest {$a->type}';
 $string['blogaboutthiscourse'] = 'Afegiu una entrada sobre aquest curs';
 $string['blogaboutthismodule'] = 'Afegiu una entrada sobre aquest {$a}';
 $string['blogadministration'] = 'Administració del blog';
-$string['blogdeleteconfirm'] = 'Suprimiu aquesta entrada del blog?';
+$string['blogdeleteconfirm'] = 'Voleu suprimir l\'entrada «{$a}» del blog?';
 $string['blogdisable'] = 'Els blogs estan inhabilitats!';
 $string['blogentries'] = 'Entrades del blog';
 $string['blogentriesabout'] = 'Entrades del blog sobre {$a}';
@@ -136,12 +136,6 @@ $string['personalblogs'] = 'Els usuaris només poden veure el seu propi blog';
 $string['preferences'] = 'Preferències del blog';
 $string['privacy:metadata:core_comments'] = 'Comentaris associats amb entrades del blog';
 $string['publishto'] = 'Publica per a';
-$string['publishtocourse'] = 'Usuaris que comparteixen un curs amb vós';
-$string['publishtocourseassoc'] = 'Membres del curs associat';
-$string['publishtocourseassocparam'] = 'Membres de {$a}';
-$string['publishtogroup'] = 'Usuaris que comparteixen un grup amb vós';
-$string['publishtogroupassoc'] = 'El vostre grup de membres al curs associat';
-$string['publishtogroupassocparam'] = 'El vostre grup de membres a {$a}';
 $string['publishto_help'] = '<p>Aquí hi ha tres opcions possibles:</p>
 
 <p><b>Privat (esborrany)</b>: només l\'autor i els administradors poden veure aquesta entrada.</p>
@@ -149,6 +143,12 @@ $string['publishto_help'] = '<p>Aquí hi ha tres opcions possibles:</p>
 <p><b>Usuaris del lloc</b>: tots els usuaris que tinguin un compte en aquest lloc poden llegir aquesta entrada.</p>
 
 <p><b>Tothom</b>: tothom, inclosos els usuaris visitants, pot llegir aquesta entrada.</p>';
+$string['publishtocourse'] = 'Usuaris que comparteixen un curs amb vós';
+$string['publishtocourseassoc'] = 'Membres del curs associat';
+$string['publishtocourseassocparam'] = 'Membres de {$a}';
+$string['publishtogroup'] = 'Usuaris que comparteixen un grup amb vós';
+$string['publishtogroupassoc'] = 'El vostre grup de membres al curs associat';
+$string['publishtogroupassocparam'] = 'El vostre grup de membres a {$a}';
 $string['publishtonoone'] = 'Privat (esborrany)';
 $string['publishtosite'] = 'Usuaris del lloc';
 $string['publishtoworld'] = 'Tothom';

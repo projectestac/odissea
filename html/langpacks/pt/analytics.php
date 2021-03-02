@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'analytics', language 'pt', version '3.8'.
  *
- * @package   analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,10 +44,10 @@ $string['errorcannotreaddataset'] = 'Não é possível ler o ficheiro dos dados 
 $string['errorcannotusetimesplitting'] = 'O intervalo de análise indicado não pode ser usado neste modelo.';
 $string['errorcannotwritedataset'] = 'Não é possível escrever no ficheiro dos dados {$a}.';
 $string['errorexportmodelresult'] = 'O modelo de aprendizagem de máquina não pode ser exportado.';
-$string['errorimport'] = 'Erro ao importar o ficheiro json fornecido.';
+$string['errorimport'] = 'Erro ao importar o ficheiro JSON fornecido.';
 $string['errorimportmissingclasses'] = 'Os seguintes componentes de análise não estão disponíveis neste site: {$a->missingclasses}.';
-$string['errorimportmissingcomponents'] = 'O modelo fornecido requer que os seguintes módulos estejam instalados: {$a}. Tenha em atenção que as versões não precisam necessariamente corresponder às versões instaladas no seu sistema. Instalar a mesma versão, ou uma versão mais recente, do módulo deve ser suficiente na maioria dos casos.';
-$string['errorimportversionmismatches'] = 'A versão dos seguintes componentes é diferente da versão instalada neste site: {$a}. Pode usar a opção "Ignorar versões incompatíveis" para ignorar essas diferenças.';
+$string['errorimportmissingcomponents'] = 'O modelo fornecido requer que os seguintes módulos estejam instalados: {$a}. Tenha em atenção que as versões não precisam necessariamente corresponder às versões instaladas no seu site. Na maioria dos casos é suficiente instalar a mesma versão ou uma versão mais recente do módulo.';
+$string['errorimportversionmismatches'] = 'A versão dos seguintes componentes difere da versão instalada neste site: {$a}. Pode usar a opção "Ignorar versões incompatíveis" para ignorar estas diferenças.';
 $string['errorinvalidcontexts'] = 'Alguns dos contextos selecionados não podem ser usados nesta meta.';
 $string['errorinvalidindicator'] = 'Indicador inválido {$a}';
 $string['errorinvalidtarget'] = 'Meta {$a} inválida';
@@ -77,15 +77,15 @@ $string['incorrectlyflagged'] = 'Marcado incorretamente';
 $string['insightinfomessageaction'] = '{$a->text}: {$a->url}';
 $string['insightinfomessagehtml'] = 'O sistema gerou uma previsão para si.';
 $string['insightinfomessageplain'] = 'O sistema gerou uma previsão para si: {$a}';
-$string['insightmessagesubject'] = 'Nova apreciações para "{$a}"';
+$string['insightmessagesubject'] = 'Nova apreciação para "{$a}"';
 $string['invalidanalysablefortimesplitting'] = 'Não pode ser analisado utilizando o intervalo de análise {$a}';
 $string['invalidtimesplitting'] = 'O modelo com o ID {$a} precisa de um intervalo de análise antes de poder ser utilizado.';
 $string['levelinstitution'] = 'Nível de escolaridade';
-$string['levelinstitutionisced0'] = 'Pré-primária ("anterior à primária" para efeitos de escolaridade)';
+$string['levelinstitutionisced0'] = 'Pré-primária';
 $string['levelinstitutionisced1'] = 'Primeiro ciclo';
-$string['levelinstitutionisced2'] = 'Nivel inferior do secundário';
-$string['levelinstitutionisced3'] = 'Nivel superior do secundário';
-$string['levelinstitutionisced4'] = 'Ensino pós-secundário não superior (pode incluir trabalho comunitário ou voluntariado/ONG';
+$string['levelinstitutionisced2'] = 'Segundo e terceiro ciclo';
+$string['levelinstitutionisced3'] = 'Secundário';
+$string['levelinstitutionisced4'] = 'Ensino pós-secundário não superior (pode incluir trabalho comunitário ou voluntariado/ONG)';
 $string['levelinstitutionisced5'] = 'Ensino superior de ciclo curto (pode incluir trabalho comunitário ou voluntariado/ONG)';
 $string['levelinstitutionisced6'] = 'Bacharelato ou equivalente';
 $string['levelinstitutionisced7'] = 'Mestrado ou equivalente';
@@ -111,13 +111,13 @@ $string['nopredictionsyet'] = 'Sem previsões disponíveis';
 $string['noranges'] = 'Ainda não há previsões';
 $string['notapplicable'] = 'Não aplicável';
 $string['notrainingbasedassumptions'] = 'Modelos baseados em suposições não precisam de treino';
-$string['notuseful'] = 'Não útil';
+$string['notuseful'] = 'Não é útil';
 $string['novaliddata'] = 'Não existem dados válidos disponíveis';
 $string['novalidsamples'] = 'Nenhuma amostra válida disponível';
 $string['onlycli'] = 'Execução dos processos de análise apenas por linha de comando';
-$string['onlycliinfo'] = 'Processos analíticos, como avaliar modelos, algoritmos de aprendizagem de máquinas de treino ou obter previsões podem levar algum tempo. Serão executados como as tarefas do cron e podem ser forçados através da linha de comando. Desative esta configuração se desejar que os gestores do seu site possam executar estes processos manualmente por meio da interface da web';
+$string['onlycliinfo'] = 'Processos analíticos, tais como, avaliar modelos, algoritmos de aprendizagem de máquina de treino ou obter previsões, podem levar algum tempo. Serão executados como as tarefas do cron e podem ser forçados através da linha de comando. Desative esta configuração se desejar que os gestores do seu site possam executar estes processos manualmente através da interface web';
 $string['percentonline'] = 'B-Learning';
-$string['percentonline_help'] = 'Se a instituição oferece cursos combinados ou híbridos, qual a percentagem do trabalho do aluno é realizada online no Moodle? Use um valor numérico de 0 a 100.';
+$string['percentonline_help'] = 'Se a instituição oferece cursos combinados ou mistos, que percentagem do trabalho do aluno é realizada online no Moodle? Use um valor numérico de 0 a 100.';
 $string['predictionsprocessor'] = 'Processador de previsões';
 $string['predictionsprocessor_help'] = 'O processador de previsões é uma estrutura de suporte à aprendizagem que processa os dados gerados pelo cálculo de indicadores e metas de cada modelo. Cada modelo pode usar um processador diferente. O que for especificado aqui será o predefinido.';
 $string['privacy:metadata:analytics:indicatorcalc'] = 'Cálculos de indicadores';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'analytics', language 'ar', version '3.8'.
  *
- * @package   analytics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     analytics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -63,21 +63,21 @@ $string['errornotimesplittings'] = 'هذا النموذج ليس لديه أي �
 $string['errorpredictioncontextnotavailable'] = 'لم يعد سياق التنبؤ هذا متاحاً.';
 $string['errorpredictionformat'] = 'تصميم خاطئ لحسابات التنبؤ';
 $string['errorpredictionnotfound'] = 'التنبؤ غير موجود';
-$string['errorpredictionsprocessor'] = 'خطأ في المعالج التنبؤ:';
-$string['errorpredictwrongformat'] = 'رد معالج التنبؤ لا يمكن فهمه: "{$a}"';
-$string['errorprocessornotready'] = 'معالج التوقعات الذي تم اختياره غير جاهز:{$a}';
+$string['errorpredictionsprocessor'] = 'خطأ في معالج التنبؤات: {$a}';
+$string['errorpredictwrongformat'] = 'لا يمكن فك شفرة عودة معالج التنبؤات: "{$a}"';
+$string['errorprocessornotready'] = 'معالج التنبؤات المحدد ليس جاهزًا: {$a}';
 $string['errorsamplenotavailable'] = 'العينة المتوقعة لم تعد متوفرة';
 $string['errorunexistingmodel'] = 'نموذج غير موجود {$a}';
 $string['errorunexistingtimesplitting'] = 'طريقة تقسيم الوقت التي تم اختيارها غير متوفرة.';
 $string['errorunknownaction'] = 'إجراء غير معروف';
-$string['eventinsightsviewed'] = 'أفكار تم مشاهدتها';
-$string['eventpredictionactionstarted'] = 'بدأت عملية التنبؤ';
-$string['fixedack'] = 'تم الاقرار به';
+$string['eventinsightsviewed'] = 'رؤى تمت مشاهدتها';
+$string['eventpredictionactionstarted'] = 'عملية تنبؤ بدأت';
+$string['fixedack'] = 'اعتراف';
 $string['incorrectlyflagged'] = 'مُعلَّم خطأً';
 $string['insightinfomessageaction'] = '{$a->text}: {$a->url}';
 $string['insightinfomessagehtml'] = 'النظام أنتج بعض الافكار لك: <a href="{$a}">{$a}</a>.';
-$string['insightinfomessageplain'] = 'النظام أنتج بعض الافكار لك: {$a}';
-$string['insightmessagesubject'] = 'أفكار جديدة لِ"{$a->contextname}": {$a->insightname}';
+$string['insightinfomessageplain'] = 'النظام أعطاك رؤية: {$a}';
+$string['insightmessagesubject'] = 'رؤية جديدة لـ "{$a}"';
 $string['invalidanalysablefortimesplitting'] = 'لا يمكن تحليلها باستخدام طريقة {$a} تقسيم الوقت.';
 $string['invalidtimesplitting'] = 'يحتاج النموذج الذي يحمل المعرّف {$a} إلى طريقة تقسيم الوقت قبل استخدامه للتدرب.';
 $string['levelinstitution'] = 'مستوى التعليم';
@@ -100,10 +100,10 @@ $string['modeloutputdirwithdefaultinfo'] = 'المجلد الذي تحفظ في�
 $string['modeltimelimit'] = 'الوقت الأقصى لتحليل كل نموذج';
 $string['modeltimelimitinfo'] = 'يحدد هذا الإعداد الوقت الذي يقضيه كل نموذج في تحليل محتويات الموقع.';
 $string['neutral'] = 'طبيعي';
-$string['nocourses'] = 'لا توجد مساقات لتحليلها';
+$string['nocourses'] = 'لا توجد مقررات لتحليل';
 $string['nodata'] = 'لا توجد بيانات لتحليلها';
 $string['noevaluationbasedassumptions'] = 'لا يمكن تقييم النماذج القائمة على الافتراضات.';
-$string['noinsights'] = 'لم يتم الإبلاغ عن أي رؤى';
+$string['noinsights'] = 'لم يبلغ عن الأفكار';
 $string['noinsightsmodel'] = 'هذا النموذج لا يولد افكار';
 $string['nonewdata'] = 'لا توجد بيانات جديدة متاحة';
 $string['nonewranges'] = 'لا توجد تنبؤات جديدة حتى الآن';
@@ -117,32 +117,32 @@ $string['novalidsamples'] = 'لا توجد عينات صالحة المتاحة'
 $string['onlycli'] = 'تنفيذ معالجة التحليلات من خلال سطر الأوامر فقط';
 $string['onlycliinfo'] = 'يمكن أن تستغرق عمليات التحليلات مثل تقييم النماذج أو تدريب خوارزميات تعلم الآلة أو الحصول على تنبؤات بعض الوقت ، حيث يتم تشغيلها كمهام cron ويمكن فرضها عبر سطر الأوامر. يمكنك تعطيل هذا الإعداد إذا كنت ترغب في أن يتمكن مديرو المواقع من تشغيل هذه العمليات يدويًا عبر واجهة الويب';
 $string['percentonline'] = 'النسبة المئوية للإنترنت';
-$string['percentonline_help'] = 'إذا كانت مؤسستك تقدم مساقات مختلطة أو هجينة، فما هي نسبة ما ينجزه الطلاب عبر الإنترنت في مودل؟ أدخل رقماً يتراوح بين 0 و 100.';
+$string['percentonline_help'] = 'إذا كانت مؤسستك تقدم مقررات دراسية مختلطة أو هجينة، فما هي نسبة ما ينجزه الطلاب عبر الإنترنت في مودل؟ أدخل رقماً يتراوح بين 0 و 100.';
 $string['predictionsprocessor'] = 'معالج التنبؤات';
 $string['predictionsprocessor_help'] = 'معالج التوقعات هو الخلفية للتعلم الآلي التي تعالج مجموعات البيانات الناتجة عن حساب مؤشرات وأهداف النماذج. سيتم حذف جميع الخوارزميات والتنبؤات المدربة إذا قمت بالتغيير إلى معالج تنبؤات آخر.';
 $string['privacy:metadata:analytics:indicatorcalc'] = 'حسابات المؤشر';
 $string['privacy:metadata:analytics:indicatorcalc:contextid'] = 'السياق';
 $string['privacy:metadata:analytics:indicatorcalc:endtime'] = 'نهاية وقت الحساب';
-$string['privacy:metadata:analytics:indicatorcalc:indicator'] = 'فئة حاسبة المؤشر';
+$string['privacy:metadata:analytics:indicatorcalc:indicator'] = 'درجة آلة حاسبة مؤشر';
 $string['privacy:metadata:analytics:indicatorcalc:sampleid'] = 'الرقم التعريفي للعينة';
 $string['privacy:metadata:analytics:indicatorcalc:sampleorigin'] = 'الجدول الأصلي للعينة';
 $string['privacy:metadata:analytics:indicatorcalc:starttime'] = 'بداية وقت الحساب';
-$string['privacy:metadata:analytics:indicatorcalc:timecreated'] = 'متى تم التنبؤ';
+$string['privacy:metadata:analytics:indicatorcalc:timecreated'] = 'عندما تم التنبؤ';
 $string['privacy:metadata:analytics:indicatorcalc:value'] = 'القيمة المحسوبة';
 $string['privacy:metadata:analytics:predictionactions'] = 'إجراءات التنبؤ';
-$string['privacy:metadata:analytics:predictionactions:actionname'] = 'اسم الإجراء';
-$string['privacy:metadata:analytics:predictionactions:predictionid'] = 'مُعرَّف التنبؤ';
-$string['privacy:metadata:analytics:predictionactions:timecreated'] = 'متى تم تنفيذ إجراء التنبؤ';
+$string['privacy:metadata:analytics:predictionactions:actionname'] = 'اسم الفعل';
+$string['privacy:metadata:analytics:predictionactions:predictionid'] = 'الرقم التعريفي للتنبؤ';
+$string['privacy:metadata:analytics:predictionactions:timecreated'] = 'عندما تم تنفيذ إجراء التنبؤ';
 $string['privacy:metadata:analytics:predictionactions:userid'] = 'المستخدم الذي اتخذ الإجراء';
 $string['privacy:metadata:analytics:predictions'] = 'التنبؤات';
 $string['privacy:metadata:analytics:predictions:calculations'] = 'حسابات المؤشر';
 $string['privacy:metadata:analytics:predictions:contextid'] = 'السياق';
-$string['privacy:metadata:analytics:predictions:modelid'] = 'مُعرَّف النموذج';
+$string['privacy:metadata:analytics:predictions:modelid'] = 'الرقم التعريفي للنموذج';
 $string['privacy:metadata:analytics:predictions:prediction'] = 'التنبؤ';
 $string['privacy:metadata:analytics:predictions:predictionscore'] = 'درجة التنبؤ';
 $string['privacy:metadata:analytics:predictions:rangeindex'] = 'فهرس فترة التحليل';
-$string['privacy:metadata:analytics:predictions:sampleid'] = 'مُعرَّف للعينة';
-$string['privacy:metadata:analytics:predictions:timecreated'] = 'متى تم التنبؤ';
+$string['privacy:metadata:analytics:predictions:sampleid'] = 'الرقم التعريفي للعينة';
+$string['privacy:metadata:analytics:predictions:timecreated'] = 'عندما تم التنبؤ';
 $string['privacy:metadata:analytics:predictions:timeend'] = 'وقت انتهاء الحسابات';
 $string['privacy:metadata:analytics:predictions:timestart'] = 'وقت بدء الحسابات';
 $string['processingsitecontents'] = 'معالجة محتويات الموقع';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'el', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_progress', language 'el', version '3.8'.
  *
- * @package   block_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -56,6 +56,7 @@ $string['config_orderby_course_order'] = 'Ταξινόμηση στο μάθημ
 $string['config_orderby_due_time'] = '«Αναμένεται μέχρι» ημερομηνία-ώρα';
 $string['config_percentage'] = 'Εμφάνιση ποσοστού στους μαθητές';
 $string['config_scroll'] = 'Κύλιση';
+$string['config_squeeze'] = 'Συρρίκνωση';
 $string['config_title'] = 'Εναλλακτικός τίτλος';
 $string['coursenametoshow'] = 'Όνομα μαθήματος για εμφάνιση στο Ταμπλό';
 $string['cross'] = 'Σταυρός';
@@ -87,18 +88,22 @@ $string['no_blocks'] = 'Δεν έχει ρυθμιστεί κανένα μπλο
 $string['no_courses'] = 'Δεν έχετε εγγραφεί σε κανένα μάθημα. Εμφανίζονται μόνο μπάρες από μαθήματα στα οποία είστε εγγεγραμμένος.';
 $string['no_events_config_message'] = 'Δεν υπάρχει καμία δραστηριότητα ή πόρος για να παρακολουθείται η πρόοδός τους. Δημιουργήστε μερικές δραστηριότητες και/ή πόρους και ρυθμίστε μετά αυτό το μπλοκ.';
 $string['no_events_message'] = 'Καθόλου δραστηριότητες ή πόροι δεν παρακολουθούνται. Χρήση ρυθμίσεων για διαμόρφωση παρακολούθησης.';
+$string['no_visible_events_message'] = 'Κανένα από τα παρακολουθούμενα γεγονότα δεν είναι αυτή τη στιγμή ορατό.';
 $string['notAttempted_colour'] = '#C71C22';
 $string['notattempted_colour_descr'] = 'Κωδικός χρώματος HTML για τρέχοντα στοιχεία που δεν έχουν ακόμη δοκιμαστεί';
 $string['notattempted_colour_title'] = 'Χρώμα μη-δοκιμασμένου';
-$string['no_visible_events_message'] = 'Κανένα από τα παρακολουθούμενα γεγονότα δεν είναι αυτή τη στιγμή ορατό.';
 $string['now_indicator'] = 'ΤΩΡΑ';
 $string['overview'] = 'Επισκόπηση μαθητών';
 $string['page'] = 'Σελίδα';
+$string['passed'] = 'πέρασε';
+$string['passedby'] = 'πέρασε κατά προθεσμία';
+$string['passedscorm'] = 'πέρασε';
 $string['pluginname'] = 'Μπάρα προόδου';
+$string['posted_to'] = 'στάλθηκε προς';
 $string['progress'] = 'Πρόοδος';
 $string['progress:addinstance'] = 'Προσθήκη ενός νέου μπλοκ μπάρας προόδου';
-$string['progressbar'] = 'Μπάρα προόδου';
 $string['progress:myaddinstance'] = 'Προσθήκη ενός νέου μπλοκ μπάρας προόδου στην αρχική σελίδα μου';
+$string['progressbar'] = 'Μπάρα προόδου';
 $string['questionnaire'] = 'Ερωτηματολόγιο';
 $string['quiz'] = 'Κουίζ';
 $string['resource'] = 'Αρχείο';

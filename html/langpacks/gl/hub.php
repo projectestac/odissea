@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,20 +12,21 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'hub', language 'gl', version '3.8'.
  *
- * @package   hub
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     hub
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['addscreenshots'] = 'Engadir capturas de pantalla';
-$string['advertise'] = 'Anunciar este curso para que a xente se inscriba';
+$string['advertise'] = 'Anunciar este curso nun centro';
 $string['advertised'] = 'Anunciado';
 $string['advertiseon'] = 'Anunciar este curso en {$a}';
 $string['advertisepublication_help'] = 'Este curso estará listado en Moodle.net como un curso no que as persoas poderán matricularse e participar. O autorexistro baseado en correo electrónico debe estar activado no sitio e necesitará activar a automatriculación neste curso.';
@@ -35,9 +35,9 @@ $string['analyticsactionsnotuseful'] = 'Número de accións que marcan unha prev
 $string['analyticsenabledmodels'] = 'Número de modelos de previsión activados ({$a})';
 $string['analyticspredictions'] = 'Número de predicións xeradas ({$a})';
 $string['audience'] = 'Audiencia';
+$string['audience_help'] = 'Seleccionar a audiencia a que se dirixe este curso.';
 $string['audienceadmins'] = 'Administradores de Moodle';
 $string['audienceeducators'] = 'Educadores';
-$string['audience_help'] = 'Seleccionar a audiencia a que se dirixe este curso.';
 $string['audiencestudents'] = 'Alumnos';
 $string['badgesnumber'] = 'Número de insignias ({$a})';
 $string['communityremoved'] = 'Esa ligazón de curso foi retirada da súa lista';
@@ -75,7 +75,7 @@ $string['edulevelprimary'] = 'Primaria';
 $string['edulevelsecondary'] = 'Secundaria';
 $string['eduleveltertiary'] = 'Superior';
 $string['emailalert'] = 'Notificacións por correo';
-$string['emailalert_help'] = 'Ao activar isto o administrador do centro enviaralle mensaxes sobre incidencias de seguranza e outras novas importantes.';
+$string['emailalert_help'] = 'Ao activar isto o administrador do centro enviaralle mensaxes sobre incidencias de seguridade e outras novas importantes.';
 $string['enrollable'] = 'Matriculábel';
 $string['errorbadimageheightwidth'] = 'A imaxe debería ter un tamaño máximo de {$a->width} X {$a->height}';
 $string['errorcourseinfo'] = 'Produciuse un erro ao recuperar os metadatos do curso do centro ({$a}). Probe outra vez para recuperar os metadatos do curso do centro recargando esta páxina un pouco máis adiante. De non ser posíbel, pode decidir continuar o proceso de rexistro cos seguintes metadatos predeterminados.';
@@ -90,7 +90,7 @@ $string['errorwstokenreset'] = '{a}. Restabeleceuse a marca de rexistro neste si
 $string['existingscreenshotnumber'] = 'hai {$a} capturas de pantalla. Poderá ver estas capturas de pantalla nesta páxina, só despois de que o administrador do centro active o seu curso.';
 $string['existingscreenshots'] = 'Capturas de pantalla existentes';
 $string['geolocation'] = 'Xeolocalización';
-$string['geolocation_help'] = 'No futuro poderemos fornecer buscas baseadas en localización. Se quere especificar a localización do seu curso, use un valor de latitude/lonxitude aquí (i.e: -31.947884,115.871285).  Unha das vías para atopala é usar Google Maps.';
+$string['geolocation_help'] = 'No futuro poderemos fornecer buscas baseadas en localización. Se quere especificar a localización do seu curso, use un valor de latitude/lonxitude aquí (i.e: -31.947884,115.871285). Unha das vías para atopala é usar Google Maps.';
 $string['imageurl'] = 'URL da imaxe';
 $string['imageurl_help'] = 'Esta imaxe presentarase en pantalla do centro. Debe estar dispoñíbel desde o centro en calquera momento. A imaxe debería ter un tamaño máximo de {$a->width} X {$a->height}';
 $string['issuedbadgesnumber'] = 'Número de insignias recibidas ({$a})';
@@ -124,14 +124,14 @@ $string['postaladdress_help'] = 'Enderezo postal deste sitio, ou da entidade rep
 $string['postsnumber'] = 'Número de mensaxes ({$a})';
 $string['previousregistrationdeleted'] = 'O rexistro previo eliminouse de {$a}. Pode reiniciar o proceso de rexistro. Grazas.';
 $string['publicationinfo'] = 'Información de publicación do curso';
-$string['publish'] = 'Publicar';
-$string['publishcourse'] = 'Publicar {$a}';
-$string['publishcourseon'] = 'Publicar en {$a}';
-$string['publishedon'] = 'Publicado o';
+$string['publish'] = 'Compartir';
+$string['publishcourse'] = 'Compartir {$a}';
+$string['publishcourseon'] = 'Compartir en {$a}';
+$string['publishedon'] = 'Curso compartido';
 $string['publisheremail'] = 'Correo do editor';
 $string['publisheremail_help'] = 'O enderezo de correo do editor permítelle ao administrador do centro alertar o editor sobre calquera cambio que afecte o estado do curso publicado.';
 $string['publishername'] = 'Editor';
-$string['publishername_help'] = 'O editor é a persoa ou organización que é o/a creador oficial do curso.  Salvante que vostede estea a publicar en representación de alguén máis, será vostede mesmo.';
+$string['publishername_help'] = 'O editor é a persoa ou organización que é o/a creador oficial do curso. Salvante que vostede estea a publicar en representación de alguén máis, será vostede mesmo.';
 $string['questionsnumber'] = 'Número de preguntas ({$a})';
 $string['readvertiseon'] = 'Actualizar a información publicitaria en {$a}';
 $string['registeredactiveuserdevices'] = 'Número de usuarios activos con dispositivos móbiles rexistrados que están recibindo notificacións ({$a})';
@@ -164,7 +164,7 @@ $string['screenshots'] = 'Capturas de pantalla';
 $string['screenshots_help'] = 'Calquera captura de pantalla do curso presentarase nos resultados de busca.';
 $string['search'] = 'Buscar';
 $string['sendfollowinginfo'] = 'Máis información';
-$string['sendfollowinginfo_help'] = 'A seguinte información enviaráselle só para que colabore coas estatísticas xerais.  Non será público en ningunha listaxe do sitio.';
+$string['sendfollowinginfo_help'] = 'A seguinte información enviaráselle só para que colabore coas estatísticas xerais. Non será público en ningunha listaxe do sitio.';
 $string['sendingcourse'] = 'Enviando o curso';
 $string['sendingsize'] = 'Agarde, que o ficheiro do curso está a enviarse ({$a->total}Mb)...';
 $string['sent'] = '...rematada';
@@ -181,11 +181,11 @@ $string['sitecommnewsyes'] = 'Si, inclúanme nas actualizacións regulares do bo
 $string['sitecountry'] = 'País';
 $string['sitecountry_help'] = 'O país no que está a súa organización.';
 $string['sitedesc'] = 'Descrición';
-$string['sitedesc_help'] = 'Esta descrición do seu sitio pode amosarse na listaxe do sitio.  Use texto simple unicamente, por favor.';
+$string['sitedesc_help'] = 'Esta descrición do seu sitio pode amosarse na listaxe do sitio. Use texto simple unicamente, por favor.';
 $string['siteemail'] = 'Enderezo de correo';
-$string['siteemail_help'] = 'Debe de fornecer un enderezo de correo para que o administrador do centro poida contactar con vostede se fose necesario.  Non se usará para ningún outro propósito. Recoméndaselle que introduza un enderezo de correo relacionado co cargo (exemplo: sitemanager@example.com), e non directamente coa súa persoa.';
+$string['siteemail_help'] = 'Debe de fornecer un enderezo de correo para que o administrador do centro poida contactar con vostede se fose necesario. Non se usará para ningún outro propósito. Recoméndaselle que introduza un enderezo de correo relacionado co cargo (exemplo: sitemanager@example.com), e non directamente coa súa persoa.';
 $string['sitegeolocation'] = 'Xeolocalización';
-$string['sitegeolocation_help'] = 'No futuro poderemos fornecer buscas baseadas nos centros. Se quere especificar a localización do seu sitio, use un valor de latitude/lonxitude aquí (i.e: -31.947884,115.871285).  Unha das vías para atopala é usar Google Maps.';
+$string['sitegeolocation_help'] = 'No futuro poderemos fornecer buscas baseadas nos centros. Se quere especificar a localización do seu sitio, use un valor de latitude/lonxitude aquí (i.e: -31.947884,115.871285). Unha das vías para atopala é usar Google Maps.';
 $string['sitelang'] = 'Idioma';
 $string['sitelang_help'] = 'O idioma do seu sitio presentarase na listaxe do sitio.';
 $string['sitename'] = 'Nome';
@@ -198,7 +198,7 @@ $string['siteprivacylinked'] = 'Publicar o nome do sitio cunha ligazón';
 $string['siteprivacynotpublished'] = 'Non publique este sitio, por favor';
 $string['siteprivacypublished'] = 'Publicar só o nome do sitio';
 $string['siteregistrationcontact'] = 'Formulario de contacto';
-$string['siteregistrationcontact_help'] = 'Se o permite, outras persoas serán quen de contactar con vostede vía un formulario de contacto no centro.  Nunca serán quen de ver o seu enderezo de correo.';
+$string['siteregistrationcontact_help'] = 'Se o permite, outras persoas serán quen de contactar con vostede vía un formulario de contacto no centro. Nunca serán quen de ver o seu enderezo de correo.';
 $string['siteregistrationemail'] = 'Notificación por correo';
 $string['siteregistrationemail_help'] = 'Vostede ten a opción de subscribirse á nosa lista de correo de baixo ruído para recibir novas importantes (sobre incidencias de seguridade ou novas versións).';
 $string['siteregistrationupdated'] = 'Actualizouse o rexistro do sitio';
@@ -206,7 +206,7 @@ $string['siterelease'] = 'Versión publicada de Moodle';
 $string['siterelease_help'] = 'Número da versión publicada de Moodle neste sitio.';
 $string['sitereleasenum'] = 'Versión publicada de Moodle ({$a})';
 $string['siteurl'] = 'URL do sitio';
-$string['siteurl_help'] = 'O URL é o enderezo deste sitio.  Se a configuración de privacidade lle permite ver enderezos do sitio, entón este será o URL do sitio que se utilizará.';
+$string['siteurl_help'] = 'O URL é o enderezo deste sitio. Se a configuración de privacidade lle permite ver enderezos do sitio, entón este será o URL do sitio que se utilizará.';
 $string['siteversion'] = 'Versión de Moodle';
 $string['siteversion_help'] = 'A versión de Moodle deste sitio.';
 $string['skipregistration'] = 'Omitir';

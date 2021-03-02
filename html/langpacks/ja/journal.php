@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'journal', language 'ja', version '3.8'.
  *
- * @package   journal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     journal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,6 +45,7 @@ $string['feedbackupdated'] = '{$a} エントリのフィードバックが更新
 $string['gradeingradebook'] = '評定表の現在の評定';
 $string['journal:addentries'] = '日誌エントリを追加する';
 $string['journal:addinstance'] = '日誌インスタンスを追加する';
+$string['journal:manageentries'] = '日誌エントリを管理する';
 $string['journalmail'] = '{$a->teacher} 先生があなたの「 {$a->journal} 」の日誌エントリにフィードバックを投稿しました。
 
 あなたの日誌エントリに追加されたフィードバックを閲覧することができます:
@@ -52,7 +53,6 @@ $string['journalmail'] = '{$a->teacher} 先生があなたの「 {$a->journal} �
     {$a->url}';
 $string['journalmailhtml'] = '$a->teacher} 先生があなたの「 {$a->journal} 」の日誌エントリにフィードバックを投稿しました。<br /><br />
 あなたの<a href="{$a->url}">日誌エントリ</a>に追加されたフィードバックを閲覧することができます。';
-$string['journal:manageentries'] = '日誌エントリを管理する';
 $string['journalname'] = '日誌名';
 $string['journalquestion'] = '日誌質問';
 $string['mailsubject'] = '日誌フィードバック';

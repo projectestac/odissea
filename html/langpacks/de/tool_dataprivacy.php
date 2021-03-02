@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_dataprivacy', language 'de', version '3.8'.
  *
- * @package   tool_dataprivacy
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_dataprivacy
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -45,10 +45,10 @@ $string['cannotreset'] = 'Diese Abfrage kann nicht zurückgesetzt werden. Aussch
 $string['categories'] = 'Kategorien';
 $string['categorieslist'] = 'Liste von Datenkategorien';
 $string['category'] = 'Kategorie';
+$string['category_help'] = 'Eine Kategorie in der Datenregistrierung beschreibt einen Datentyp/Datenkategorie. Eine neue Kategorie kann hinzugefügt werden. Wenn \'vererben\' ausgewählt ist, wird eine Kategorie von der darüberliegenden Ebene gewählt. Kontexte sind (von unten nach oben): Block > Aktivitätsmodul > Kurs > Kursbereich > Nutzer/in > Website';
 $string['categorycreated'] = 'Kategorie erstellt';
 $string['categorydefault'] = 'Standardkategorie';
 $string['categorydefault_help'] = 'Die Standardkategorie wird allen neuen Instanzen als Standardwert zugewiesen. Wenn vererben gewählt ist, wird die Datenkategorie der darüber liegenden Ebene zugewiesen. Kontexte sind (von unten nach oben): Block > Aktivitätsmodul > Kurs > Kursbereich > Nutzer/in > Website';
-$string['category_help'] = 'Eine Kategorie in der Datenregistrierung beschreibt einen Datentyp/Datenkategorie. Eine neue Kategorie kann hinzugefügt werden. Wenn \'vererben\' ausgewählt ist, wird eine Kategorie von der darüberliegenden Ebene gewählt. Kontexte sind (von unten nach oben): Block > Aktivitätsmodul > Kurs > Kursbereich > Nutzer/in > Website';
 $string['categoryupdated'] = 'Kategorie aktualisiert';
 $string['close'] = 'Schließen';
 $string['compliant'] = 'Zustimmung';
@@ -61,7 +61,7 @@ $string['confirmdenial'] = 'Möchten Sie wirklich diese Datenanfrage ablehnen?';
 $string['confirmrequestresubmit'] = 'Möchten Sie wirklich die aktuelle {$a->type} Abfrage für {$a->username} abbrechen und neu einreichen?';
 $string['contactdataprotectionofficer'] = 'Kontakt für Datenschutzfragen';
 $string['contactdataprotectionofficer_desc'] = 'Das Aktivieren dieser Funktion stellt einen Link für Nutzer/innen zur Verfügung, um sich mit Datenschutzfragen an die Systembetreiber zu wenden. Der Link wird in der Profilseite angezeigt.';
-$string['contactdpoviaprivacypolicy'] = 'Richten Sie Fragen zum Datenschutz in der Plattform an unsere Ansprechpersonen.';
+$string['contactdpoviaprivacypolicy'] = 'Richten Sie bitte alle Fragen zum Datenschutz in der Plattform an unsere Ansprechpersonen.';
 $string['contextlevelname10'] = 'Website';
 $string['contextlevelname30'] = 'Nutzer/innen';
 $string['contextlevelname40'] = 'Kurskategorien';
@@ -80,7 +80,7 @@ $string['datadeletionpagehelp'] = 'Daten, deren Speicherdatum abgelaufen ist, si
 $string['dataprivacy:downloadallrequests'] = 'Daten aller Personen herunterladen';
 $string['dataprivacy:downloadownrequest'] = 'Ihre eigenen Daten herunterladen';
 $string['dataprivacy:makedatadeletionrequestsforchildren'] = 'Antrag auf Löschung der Daten von Minderjährigen';
-$string['dataprivacy:makedatarequestsforchildren'] = 'Datenanfrage für Kinder erstellen';
+$string['dataprivacy:makedatarequestsforchildren'] = 'Datenanfrage für Minderjährige erstellen';
 $string['dataprivacy:managedataregistry'] = 'Datenverarbeitung verwalten';
 $string['dataprivacy:managedatarequests'] = 'Datenanfragen verwalten';
 $string['dataprivacy:requestdelete'] = 'Antrag auf Löschung der eigenen Daten';
@@ -122,7 +122,7 @@ $string['deprecated'] = 'Veraltet';
 $string['deprecatedexplanation'] = 'Dieses Plugin verwendet eine veraltete Version eines Datenschutzinterfaces und sollte aktualisiert werden.';
 $string['download'] = 'Download';
 $string['downloadexpireduser'] = 'Der Download ist abgelaufen. Senden Sie eine neue Datenanfrage, wenn Sie Ihre personenbezogenen Daten exportieren möchten.';
-$string['dporolemapping'] = 'Rollenzuordnung für Datenschutzansprechpartner';
+$string['dporolemapping'] = 'Rollenzuordnung für Ansprechpartner zum Datenschutz';
 $string['dporolemapping_desc'] = 'Ein Datenschutzansprechpartner kann Anfragen zum Datenschutz verwalten. Die Berechtigung \'tool/dataprivacy:managedatarequests\'  muss für eine Rolle erlaubt sein, um für die Rollenzuordnung als Datenschutzansprechpartner gelistet zu werden.';
 $string['duplicaterole'] = 'Rolle wurde bereits festgelegt';
 $string['editcategories'] = 'Kategorien bearbeiten';
@@ -150,7 +150,7 @@ $string['errorsendingmessagetodpo'] = 'Beim Versenden einer Mitteilung an {$a} i
 $string['exceptionnotificationbody'] = '<p>Beim Aufruf von <b>{$a->fullmethodname}</b> ist ein Fehler aufgetreten.<br>Das Plugin <b>{$a->component}</b> hat die Verarbeitung der Daten nicht beendet. Unten finden Sie Informationen für den Pluginentwickler.</p><pre>{$a->message}<br>
 
 {$a->backtrace}</pre>';
-$string['exceptionnotificationsubject'] = 'Fehler beim Verarbeiten persönlicher Daten';
+$string['exceptionnotificationsubject'] = 'Fehler beim Verarbeiten personenbezogener Daten';
 $string['expandplugin'] = 'Plugin auf- und zuklappen';
 $string['expandplugintype'] = 'Plugintyp auf- und zuklappen';
 $string['expiredretentionperiodtask'] = 'Aufbewahrungszeitraum abgelaufen';
@@ -194,7 +194,7 @@ $string['gdpr_art_9_2_i_name'] = 'Öffentliche Gesundheit (DSGVO Art 9.2(i))';
 $string['gdpr_art_9_2_j_description'] = 'Die Verarbeitung ist auf der Grundlage des Unionsrechts oder des Rechts eines Mitgliedstaats, das in angemessenem Verhältnis zu dem verfolgten Ziel steht, den Wesensgehalt des Rechts auf Datenschutz wahrt und angemessene und spezifische Maßnahmen zur Wahrung der Grundrechte und Interessen der betroffenen Person vorsieht, für im öffentlichen Interesse liegende Archivzwecke, für wissenschaftliche oder historische Forschungszwecke oder für statistische Zwecke gemäß Artikel 89 Absatz 1 erforderlich';
 $string['gdpr_art_9_2_j_name'] = 'Öffentliches Interesse oder wissenschaftliche, historische oder statistische Zwecke (DSGVO Art 9.2(i))';
 $string['hide'] = 'Alles einklappen';
-$string['httpwarning'] = 'Daten, die von dieser Website heruntergeladen werden, sind evtl. nicht verschlüsselt. Nehmen Sie Kontakt mit dem/der Administrator/in auf, um SSL für diese Website zu installieren.';
+$string['httpwarning'] = 'Daten, die von dieser Website heruntergeladen werden, sind evtl. nicht verschlüsselt. Nehmen Sie Kontakt mit dem Administrator auf, um SSL für diese Website zu installieren.';
 $string['inherit'] = 'Vererben';
 $string['lawfulbases'] = 'Rechtliche Grundlagen';
 $string['lawfulbases_help'] = 'Wählen Sie mindestens eine Option aus, auf deren rechtlicher Grundlage die Verarbeitung der Daten beruht. Details finden Sie unter <a href="https://gdpr-info.eu/art-6-gdpr/" target="_blank">DSGVO Art. 6.1</a>';
@@ -245,10 +245,10 @@ $string['privacyrequestexpiry_desc'] = 'Zeitlimit, in dem genehmigte Datenfragen
 $string['protected'] = 'Geschützt';
 $string['protectedlabel'] = 'Die Aufbewahrung der Daten hat Vorrang vor der Anfrage des Nutzers zur Datenlöschung. Die Daten werden nach Ablauf der Aufbewahrungsfrist  gelöscht.';
 $string['purpose'] = 'Zweck';
+$string['purpose_help'] = 'Eine Kategorie in der Datenregistrierung beschreibt einen Datentyp/Datenkategorie.  Ein Zweck beschreibt den Zweck der Verarbeitung der Daten . Ein neuer Zweck kann hinzugefügt werden oder wenn \'vererben\' ausgewählt ist wird ein Zweck von der darüberliegenden Ebene gewählt.  Kontexte sind von unten nach oben: Block > Aktivitätsmodul > Kurs > Kursbereich > Nutzer > Site';
 $string['purposecreated'] = 'Zweck angelegt';
 $string['purposedefault'] = 'Standardwert für Zweck';
 $string['purposedefault_help'] = 'Der Standardzweck wird allen neuen Instanzen als Standardwert zugewiesen. Wenn vererben gewählt wird, wird der Zweck der darüber liegenden Ebene zugewiesen. Kontexte sind von unten nach oben: Block > Aktivitätsmodul > Kurs > Kursbereich >Nutzer > Site';
-$string['purpose_help'] = 'Eine Kategorie in der Datenregistrierung beschreibt einen Datentyp/Datenkategorie.  Ein Zweck beschreibt den Zweck der Verarbeitung der Daten . Ein neuer Zweck kann hinzugefügt werden oder wenn \'vererben\' ausgewählt ist wird ein Zweck von der darüberliegenden Ebene gewählt.  Kontexte sind von unten nach oben: Block > Aktivitätsmodul > Kurs > Kursbereich > Nutzer > Site';
 $string['purposeoverview'] = 'Ein Zweck beschreibt die beabsichtigte Verwendung und Aufbewahrungsrichtlinie für gespeicherte Daten. Die Grundlage für die Speicherung und Aufbewahrung dieser Daten wird ebenfalls im Zweck beschrieben.';
 $string['purposes'] = 'Zwecke';
 $string['purposeslist'] = 'Liste der Zwecke der Datenverarbeitung';
@@ -271,11 +271,11 @@ $string['requestsdenied'] = 'Die Anfragen wurden abgelehnt';
 $string['requeststatus'] = 'Status';
 $string['requestsubmitted'] = 'Ihre Anfrage wurde an die Ansprechpersonen für Datenschutzfragen weitergeleitet.';
 $string['requesttype'] = 'Typ';
+$string['requesttype_help'] = 'Wählen Sie den Grund für die Kontaktaufnahme mit dem Datenschutzbeauftragten. Beachten Sie, dass das Löschen aller personenbezogenen Daten dazu führt, dass Sie sich nicht mehr auf der Website anmelden können.';
 $string['requesttypedelete'] = 'Alle über mich gespeicherten Daten löschen';
 $string['requesttypedeleteshort'] = 'Löschen';
 $string['requesttypeexport'] = 'Alle über mich gespeicherten Daten exportieren';
 $string['requesttypeexportshort'] = 'Export';
-$string['requesttype_help'] = 'Wählen Sie den Grund für die Kontaktaufnahme mit dem Datenschutzbeauftragten. Beachten Sie, dass das Löschen aller personenbezogenen Daten dazu führt, dass Sie sich nicht mehr auf der Website anmelden können.';
 $string['requesttypeothers'] = 'Allgemeine Anfrage';
 $string['requesttypeothersshort'] = 'Mitteilung';
 $string['requesttypeuser'] = '{$a->typename} ({$a->user})';

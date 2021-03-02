@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,20 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'error', language 'zh_cn', version '3.8'.
  *
- * @package   error
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     error
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['TODO'] = 'TODO';
 $string['activityisscheduledfordeletion'] = '正在删除活动中...';
 $string['agedigitalconsentmapinvalidage'] = '"{$a}" 不是有效的年龄值。';
 $string['agedigitalconsentmapinvalidcomma'] = '"{$a}" 有多于或少于一个的逗号分隔符。';
@@ -237,6 +238,7 @@ $string['duplicateusername'] = '重复用户名 - 跳过记录';
 $string['emailfail'] = '邮件发送失败';
 $string['enddatebeforestartdate'] = '课程结束日期必须晚于开始日期';
 $string['error'] = '发生了错误';
+$string['error_question_answers_missing_in_db'] = '无法从question_answer数据表中找到"{$a->answer}"的答案。发生此现象的原因，是将备份文件中的试题以编号 {$a->filequestionid} 恢复，面它已经和数据库中编号{$a->dbquestionid}的试题相匹配。';
 $string['errorcleaningdirectory'] = '在清空目录“{$a}”时发生错误';
 $string['errorcopyingfiles'] = '在复制文件时发生错误';
 $string['errorcreatingdirectory'] = '在创建目录“{$a}”时发生错误';
@@ -247,7 +249,6 @@ $string['erroronline'] = '发生错误于第 {$a} 行';
 $string['erroroutput'] = '输出出错，因此禁用自动重定向。';
 $string['errorparsingxml'] = '解析XML出现错误：{$a->errorstring}，发生在行 {$a->errorline}，字符 {$a->errorchar} ';
 $string['errorprocessingarchive'] = '处理存档文件时出错';
-$string['error_question_answers_missing_in_db'] = '无法从question_answer数据表中找到"{$a->answer}"的答案。发生此现象的原因，是将备份文件中的试题以编号 {$a->filequestionid} 恢复，面它已经和数据库中编号{$a->dbquestionid}的试题相匹配。';
 $string['errorreadingfile'] = '在读取文件“{$a}”时发生错误';
 $string['errorsavingrequest'] = '在保存您的请求时发生了错误。';
 $string['errorsettinguserpref'] = '设置用户参数时发生错误';
@@ -389,9 +390,9 @@ $string['maxbytesfile'] = '这个文件 {$a->file} 太大了。你可以上传�
 $string['messagingdisable'] = '本站的消息系统已禁用';
 $string['mimetexisnotexist'] = '您的系统未配置运行mimeTeX。您需要从<a href="http://www.forkosh.com/mimetex.zip">http://www.forkosh.com/mimetex.zip</a> 下载C语言源代码，编译后将可执行文件复制到您的 moodle/filter/tex/ 目录。';
 $string['mimetexnotexecutable'] = '自定义mimetex不可执行！';
+$string['missing_moodle_backup_xml_file'] = '找不到备份XML文件：{$a}';
 $string['missingfield'] = '字段“{$a}”不存在';
 $string['missingkeyinsql'] = '错误：查询语句缺少参数"{$a}"';
-$string['missing_moodle_backup_xml_file'] = '找不到备份XML文件：{$a}';
 $string['missingparam'] = '缺少必要的参数（{$a}）';
 $string['missingparameter'] = '缺少参数';
 $string['missingrequiredfield'] = '缺少了必需的字段';
@@ -433,7 +434,7 @@ $string['noguest'] = '没有访客！';
 $string['noinstances'] = '在本课程中没有 {$a}！';
 $string['nologinas'] = '您不允许登录为此用户';
 $string['nonmeaningfulcontent'] = '无意义的内容';
-$string['noparticipants'] = '找不到此课程的参与人';
+$string['noparticipants'] = '未找到该课程的参与者';
 $string['noparticipatorycms'] = '很抱歉，您没有可参与的课程模块来生成报表';
 $string['nopermissions'] = '很抱歉，您目前没有执行此操作的权限（{$a}）';
 $string['nopermissiontocomment'] = '你不能添加评论';
@@ -487,9 +488,9 @@ $string['remotedownloadnotallowed'] = '不允许为您的服务器下载组件(a
 $string['reportnotavailable'] = '该类型报告只对站点课程有效';
 $string['requirecorrectaccess'] = '无效链接或端口。';
 $string['requireloginerror'] = '不能访问课程或活动。';
-$string['restorechecksumfailed'] = '从您的会话恢复保存的信息时发生了一些错误。请检查你的PHP内存/数据库包大小限制。恢复停止。';
 $string['restore_path_element_missingmethod'] = '缺少恢复方法{$a}。它必须由开发者定义。';
 $string['restore_path_element_noobject'] = '恢复对象{$a}不是一个对象。';
+$string['restorechecksumfailed'] = '从您的会话恢复保存的信息时发生了一些错误。请检查你的PHP内存/数据库包大小限制。恢复停止。';
 $string['restrictedcontextexception'] = '抱歉，执行外部函数违反了上下文限制。';
 $string['restricteduser'] = '很抱歉,您的当前帐号“{$a}”无权进行上述操作。';
 $string['reverseproxyabused'] = '反向代理启用，不能直接访问服务器，抱歉。<br />请联系服务器管理员。';
@@ -527,7 +528,6 @@ $string['tagnotfound'] = '在数据库中未发现指定的标签。';
 $string['targetdatabasenotempty'] = '目标数据库不是空的。因为安全原因取消传输。';
 $string['textconditionsnotallowed'] = '不允许对文本列做条件比较。请在您的查询中使用sql_compare_text()。';
 $string['themenotinstall'] = '该主题尚未安装！';
-$string['TODO'] = 'TODO';
 $string['tokengenerationfailed'] = '无法生成新的令牌。';
 $string['transactionvoid'] = '事务不能被取消，因为它已经被取消了。';
 $string['unenrolerror'] = '在试图取消此用户选课时发生错误';

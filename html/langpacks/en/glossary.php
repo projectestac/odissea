@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'en', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -119,14 +119,6 @@ $string['destination'] = 'Destination of imported entries';
 $string['destination_help'] = 'Entries can either be imported and added to the current glossary or to a new glossary, in which case a new glossary will be created based on information in the XML file.';
 $string['disapprove'] = 'Undo approval';
 $string['displayformat'] = 'Display format';
-$string['displayformatcontinuous'] = 'Continuous without author';
-$string['displayformatdefault'] = 'Default to same as display format';
-$string['displayformatdictionary'] = 'Simple, dictionary style';
-$string['displayformatencyclopedia'] = 'Encyclopedia';
-$string['displayformatentrylist'] = 'Entry list';
-$string['displayformatfaq'] = 'FAQ';
-$string['displayformatfullwithauthor'] = 'Full with author';
-$string['displayformatfullwithoutauthor'] = 'Full without author';
 $string['displayformat_help'] = 'There are 7 display formats:
 
 * Simple, dictionary style - No authors are displayed and attachments are shown as links
@@ -136,6 +128,14 @@ $string['displayformat_help'] = 'There are 7 display formats:
 * Encyclopedia - As for "Full with author" but attached images are shown inline
 * Entry list - Concepts are listed as links
 * FAQ - The words QUESTION and ANSWER are appended to the concept and definition respectively';
+$string['displayformatcontinuous'] = 'Continuous without author';
+$string['displayformatdefault'] = 'Default to same as display format';
+$string['displayformatdictionary'] = 'Simple, dictionary style';
+$string['displayformatencyclopedia'] = 'Encyclopedia';
+$string['displayformatentrylist'] = 'Entry list';
+$string['displayformatfaq'] = 'FAQ';
+$string['displayformatfullwithauthor'] = 'Full with author';
+$string['displayformatfullwithoutauthor'] = 'Full without author';
 $string['displayformats'] = 'Display formats';
 $string['displayformatssetup'] = 'Display formats setup';
 $string['duplicatecategory'] = 'Duplicate category';
@@ -202,18 +202,18 @@ $string['glossary:export'] = 'Export entries';
 $string['glossary:exportentry'] = 'Export single entry';
 $string['glossary:exportownentry'] = 'Export single entry of yours';
 $string['glossary:import'] = 'Import entries';
-$string['glossaryleveldefaultsettings'] = 'Glossary level default settings';
 $string['glossary:managecategories'] = 'Manage categories';
 $string['glossary:managecomments'] = 'Manage comments';
 $string['glossary:manageentries'] = 'Manage entries';
 $string['glossary:rate'] = 'Rate entries';
-$string['glossarytype'] = 'Glossary type';
-$string['glossarytype_help'] = 'A main glossary is a glossary in which entries from secondary glossaries can be imported. There can only be one main glossary in a course. If glossary entry import is not required, all glossaries in the course can be secondary glossaries.';
 $string['glossary:view'] = 'View glossary';
 $string['glossary:viewallratings'] = 'View all raw ratings given by individuals';
 $string['glossary:viewanyrating'] = 'View total ratings that anyone received';
 $string['glossary:viewrating'] = 'View the total rating you received';
 $string['glossary:write'] = 'Create new entries';
+$string['glossaryleveldefaultsettings'] = 'Glossary level default settings';
+$string['glossarytype'] = 'Glossary type';
+$string['glossarytype_help'] = 'A main glossary is a glossary in which entries from secondary glossaries can be imported. There can only be one main glossary in a course. If glossary entry import is not required, all glossaries in the course can be secondary glossaries.';
 $string['guestnoedit'] = 'Guests are not allowed to edit glossaries';
 $string['importcategories'] = 'Import categories';
 $string['importedcategories'] = 'Imported categories';
@@ -222,15 +222,15 @@ $string['importentries'] = 'Import entries';
 $string['importentriesfromxml'] = 'Import entries from XML file';
 $string['includegroupbreaks'] = 'Include group breaks';
 $string['indicator:cognitivedepth'] = 'Glossary cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Glossary activity.';
 $string['indicator:cognitivedepthdef'] = 'Glossary cognitive';
 $string['indicator:cognitivedepthdef_help'] = 'The participant has reached this percentage of the cognitive engagement offered by the Glossary activities during this analysis interval (Levels = No view, View, Submit)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
-$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Glossary activity.';
 $string['indicator:socialbreadth'] = 'Glossary social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Glossary activity.';
 $string['indicator:socialbreadthdef'] = 'Glossary social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the Glossary activities during this analysis interval (Levels = No participation, Participant alone)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Glossary activity.';
 $string['isglobal'] = 'Is this glossary global?';
 $string['isglobal_help'] = 'A global glossary has entries which are linked to from throughout the site, rather than only in the course that the glossary is in. Only administrators can set a glossary as global.';
 $string['letter'] = 'letter';

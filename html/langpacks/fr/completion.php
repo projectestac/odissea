@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'fr', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -59,9 +59,8 @@ $string['completed'] = 'Terminé';
 $string['completedunlocked'] = 'Options d\'achèvement déverrouillées';
 $string['completedunlockedtext'] = 'Lors de l\'enregistrement, l\'état d\'achèvement des activités de tous les participants sera supprimé. Si ce n\'est pas ce que vous voulez, n\'enregistrez pas.';
 $string['completedwarning'] = 'Options d\'achèvement verrouillées';
-$string['completedwarningtext'] = 'Cette activité a déjà été marquée comme terminée pour {$a} participant(s). La modification des options d\'achèvement supprimera cet état terminé et risque de causer des confusions. C\'est pourquoi les options ont été verrouillées et ne devraient pas être déverrouillées à moins que cela ne soit absolument nécessaire.';
+$string['completedwarningtext'] = 'Cette activité a déjà été marquée comme terminée pour {$a} participant(s). La modification des options d\'achèvement supprimera cet état terminé et risque de causer des confusions. C\'est pourquoi les options ont été verrouillées et ne doivent être déverrouillées que si cela est absolument nécessaire.';
 $string['completion'] = 'Suivi d\'achèvement';
-$string['completionactivitydefault'] = 'Utiliser le réglage par défaut de l\'activité';
 $string['completion-alt-auto-enabled'] = 'Le système marquera cet élément comme terminé selon les conditions : {$a}';
 $string['completion-alt-auto-fail'] = 'Terminé : {$a} (n\'a pas atteint la note pour passer)';
 $string['completion-alt-auto-n'] = 'Non terminé : {$a}';
@@ -74,36 +73,39 @@ $string['completion-alt-manual-n'] = 'Non terminé : {$a}. Sélectionner pour m
 $string['completion-alt-manual-n-override'] = 'Non terminé : {$a->modname} (défini par {$a->overrideuser}). Sélectionner pour marquer comme terminé.';
 $string['completion-alt-manual-y'] = 'Terminé : {$a}. Sélectionner pour marquer comme non terminé.';
 $string['completion-alt-manual-y-override'] = 'Terminé : {$a->modname} (défini par {$a->overrideuser}). Sélectionner pour marquer comme non terminé.';
+$string['completion-fail'] = 'Terminé (n\'a pas atteint la note pour passer)';
+$string['completion-n'] = 'Pas terminé';
+$string['completion-n-override'] = 'Non terminé (défini par {$a})';
+$string['completion-pass'] = 'Terminé (note pour passer atteinte)';
+$string['completion-y'] = 'Terminé';
+$string['completion-y-override'] = 'Terminé (défini par {$a})';
 $string['completion_automatic'] = 'Afficher l\'activité comme terminée dès que les conditions sont remplies';
+$string['completion_help'] = 'Cette option permet d\'activer le suivi de l\'achèvement des activités, manuellement ou automatiquement, sur la base de conditions choisies. Plusieurs conditions peuvent être exigées simultanément. Dans ce cas, l\'activité sera considérée comme terminée si toutes les conditions sont requises.
+
+Une coche à côté du nom de l\'activité indique sur la page de cours lorsqu\'une activité est terminée.';
+$string['completion_manual'] = 'Les participants peuvent marquer manuellement cette activité comme terminée';
+$string['completion_none'] = 'Ne pas afficher l\'état d\'achèvement';
+$string['completionactivitydefault'] = 'Utiliser le réglage par défaut de l\'activité';
 $string['completiondefault'] = 'Suivi d\'achèvement par défaut';
 $string['completiondisabled'] = 'Désactivé. Pas affiché dans les réglages de l\'activité';
 $string['completionduration'] = 'Inscription';
 $string['completionenabled'] = 'Activé. La configuration s\'effectue dans les réglages des activités';
 $string['completionexpected'] = 'Achèvement attendu le';
+$string['completionexpected_help'] = 'Ce réglage détermine la date à laquelle l\'activité devrait être terminée.';
 $string['completionexpecteddesc'] = 'Achèvement attendu le {$a}';
 $string['completionexpectedfor'] = '{$a->instancename} doit être achevée';
-$string['completionexpected_help'] = 'Ce réglage détermine la date à laquelle l\'activité devrait être terminée.';
-$string['completion-fail'] = 'Terminé (n\'a pas atteint la note pour passer)';
-$string['completion_help'] = 'Cette option permet d\'activer le suivi de l\'achèvement des activités, manuellement ou automatiquement, sur la base de conditions choisies. Plusieurs conditions peuvent être exigées simultanément. Dans ce cas, l\'activité sera considérée comme terminée si toutes les conditions sont requises.
-
-Une coche à côté du nom de l\'activité indique sur la page de cours lorsqu\'une activité est terminée.';
 $string['completionicons'] = 'Coches d\'achèvement';
 $string['completionicons_help'] = 'Une coche à côté du nom de l\'activité peut être utilisée pour indiquer que l\'activité est terminée.
 
 Si la bordure de la case à cocher est traitillée, une coche apparaîtra automatiquement lorsque l\'activité sera terminée d\'après les conditions fixées par l\'enseignant.
 
 Si la bordure de la case à cocher est continue, vous pouvez la cocher lorsque vous pensez avoir terminé l\'activité. Vous pouvez cliquer une nouvelle fois si vous changez d\'avis.';
-$string['completion_manual'] = 'Les participants peuvent marquer manuellement cette activité comme terminée';
 $string['completionmenuitem'] = 'Achèvement';
-$string['completion-n'] = 'Pas terminé';
-$string['completion_none'] = 'Ne pas afficher l\'état d\'achèvement';
 $string['completionnotenabled'] = 'L\'achèvement n\'est pas activé';
 $string['completionnotenabledforcourse'] = 'L\'achèvement n\'est pas activé pour ce cours';
 $string['completionnotenabledforsite'] = 'L\'achèvement n\'est pas activé pour ce site';
-$string['completion-n-override'] = 'Non terminé (défini par {$a})';
 $string['completionondate'] = 'Date';
 $string['completionondatevalue'] = 'Date à laquelle le cours sera marqué comme terminé';
-$string['completion-pass'] = 'Terminé (note pour passer atteinte)';
 $string['completionsettingslocked'] = 'Réglages d\'achèvement verrouillés';
 $string['completionupdated'] = 'Achèvement modifié pour l\'activité <b>{$a}</b>';
 $string['completionusegrade'] = 'Note requise';
@@ -111,8 +113,6 @@ $string['completionusegrade_desc'] = 'Les étudiants doivent recevoir une note p
 $string['completionusegrade_help'] = 'Quand cette option est activée, les étudiants doivent obtenir une note à l\'activité pour la terminer. Des icônes de réussite ou d\'échec peuvent être affichées, si une note minimale pour réussir a été spécifiée.';
 $string['completionview'] = 'Affichage requis';
 $string['completionview_desc'] = 'Les étudiants doivent afficher cette activité pour la terminer';
-$string['completion-y'] = 'Terminé';
-$string['completion-y-override'] = 'Terminé (défini par {$a})';
 $string['configcompletiondefault'] = 'Le réglage par défaut du suivi d\'achèvement lors de la création de nouvelles activités.';
 $string['configenablecompletion'] = 'Si ce réglage est activé, des conditions d\'achèvement de cours et d\'activité peuvent être définies. De telles définitions sont recommandées de sorte à afficher des données pertinentes aux utilisateurs dans la vue d\'ensemble des cours sur leur tableau de bord..';
 $string['confirmselfcompletion'] = 'Confirmer l\'auto achèvement';

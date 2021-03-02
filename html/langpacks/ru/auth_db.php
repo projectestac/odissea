@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_db', language 'ru', version '3.8'.
  *
- * @package   auth_db
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_db
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -68,8 +68,8 @@ $string['auth_dbsybasequoting'] = 'Кавычки как в Sybase';
 $string['auth_dbsybasequotinghelp'] = 'Экранирование апострофа в стиле Sybase - необходимо для Oracle, MS SQL и некоторых других баз данных. Не используйте для MySQL!';
 $string['auth_dbsyncuserstask'] = 'Задача синхронизации пользователей';
 $string['auth_dbtable'] = 'Название таблицы в базе данных';
-$string['auth_dbtableempty'] = 'Внешняя таблица пуста.';
 $string['auth_dbtable_key'] = 'Таблица';
+$string['auth_dbtableempty'] = 'Внешняя таблица пуста.';
 $string['auth_dbtype'] = 'Тип базы данных (подробнее в <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - Database Abstraction Layer for PHP</a>).';
 $string['auth_dbtype_key'] = 'База данных';
 $string['auth_dbupdateerror'] = 'Ошибка обновления внешней базы данных.';

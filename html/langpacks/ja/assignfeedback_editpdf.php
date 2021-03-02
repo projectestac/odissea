@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assignfeedback_editpdf', language 'ja', version '3.8'.
  *
- * @package   assignfeedback_editpdf
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assignfeedback_editpdf
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -98,11 +98,11 @@ $string['stamps'] = 'スタンプ';
 $string['stampsdesc'] = 'スタンプはイメージファイルである必要があります (推奨サイズ: 40x40)。これらのイメージはスタンプツールでPDFに注釈を付けるために使用することができます。';
 $string['test_doesnotexist'] = 'Ghostscriptのパスは存在しないファイルを指しています。';
 $string['test_empty'] = 'Ghostscriptのパスが空白です - 正しいパスを入力してください。';
-$string['testgs'] = 'Ghostscriptのパスをテストする';
 $string['test_isdir'] = 'Ghostscriptのパスはフォルダを指しています。あなたが指定するパス内にGhostscriptプログラムを含んでください。';
 $string['test_notestfile'] = 'テストPDFがありません。';
 $string['test_notexecutable'] = 'Ghostscriptは実行できないファイルを指しています。';
 $string['test_ok'] = 'Ghostscriptのパスに問題はないようですが - 下のイメージ内にメッセージが表示されることを確認してください。';
+$string['testgs'] = 'Ghostscriptのパスをテストする';
 $string['tool'] = 'ツール';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = '注釈付きPDFを表示する ...';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'choice', language 'ja', version '3.8'.
  *
- * @package   choice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     choice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -34,13 +34,15 @@ $string['calendarend'] = '{$a} 終了';
 $string['calendarstart'] = '{$a} 開始';
 $string['cannotsubmit'] = '申し訳ございません、あなたの投票送信時に問題が発生しました。再度お試しください。';
 $string['choice'] = '選択肢';
-$string['choiceactivityname'] = '投票: {$a}';
 $string['choice:addinstance'] = '新しい投票を追加する';
 $string['choice:choose'] = '投票を記録する';
-$string['choiceclose'] = '回答終了日時';
-$string['choicecloseson'] = '投票は {$a} に終了します。';
 $string['choice:deleteresponses'] = '投票結果を修正および削除する';
 $string['choice:downloadresponses'] = '投票結果をダウンロードする';
+$string['choice:readresponses'] = '投票結果を表示する';
+$string['choice:view'] = '投票活動を表示する';
+$string['choiceactivityname'] = '投票: {$a}';
+$string['choiceclose'] = '回答終了日時';
+$string['choicecloseson'] = '投票は {$a} に終了します。';
 $string['choicefull'] = 'あなたが選択した1つまたはそれ以上のオプションはすでに選択されています。あなたの回答は保存されませんでした。違うものを選択してください。';
 $string['choicename'] = '投票名';
 $string['choiceopen'] = '回答開始日時';
@@ -48,10 +50,8 @@ $string['choiceoptions'] = '投票オプション';
 $string['choiceoptions_help'] = 'ここであなたは参加者が選択しなければならないオプションを指定します。
 
 あなたはどのような数でも入力することができます。オプションを空白にした場合、そのオプションは表示されません。あなたが8個以上のオプションを追加したい場合、「フィールド 3 個をフォームに追加する」ボタンをクリックしてください。';
-$string['choice:readresponses'] = '投票結果を表示する';
 $string['choicesaved'] = 'あなたの投票が保存されました。';
 $string['choicetext'] = '説明文';
-$string['choice:view'] = '投票活動を表示する';
 $string['chooseaction'] = '操作を選択する ...';
 $string['chooseoption'] = '選択: {$a}';
 $string['closebeforeopen'] = 'あなたは開始日時の前に終了日時を指定しました。';
@@ -72,13 +72,13 @@ $string['full'] = '(上限到達)';
 $string['havetologin'] = 'あなたは投票する前にログインする必要があります。';
 $string['includeinactive'] = '利用停止ユーザからの回答を含む';
 $string['indicator:cognitivedepth'] = '投票認知的';
+$string['indicator:cognitivedepth_help'] = 'この指標は投票活動で学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = '投票認知的';
 $string['indicator:cognitivedepthdef_help'] = 'この分析間隔中、参加者が投票活動から提供された認知的関与のこのパーセンテージに到達しました (レベル = 閲覧なし, 閲覧, 送信, フィードバックの閲覧)。';
-$string['indicator:cognitivedepth_help'] = 'この指標は投票活動で学生が到達した認識深度に基づきます。';
 $string['indicator:socialbreadth'] = '投票社会的';
+$string['indicator:socialbreadth_help'] = 'この指標は投票活動で学生が到達した社会的広がりに基づきます。';
 $string['indicator:socialbreadthdef'] = '投票社会的';
 $string['indicator:socialbreadthdef_help'] = 'この分析間隔中、参加者が投票活動から提供された社会的関与のこのパーセンテージに到達しました (レベル = 参加なし, 個人で参加, 他の人と参加)。';
-$string['indicator:socialbreadth_help'] = 'この指標は投票活動で学生が到達した社会的広がりに基づきます。';
 $string['limit'] = '投票制限数';
 $string['limitanswers'] = '投票可能数を制限する';
 $string['limitanswers_help'] = 'このオプションではあなたは参加者がそれぞれの選択オプションを選択できる数を制限できます。制限数に達した場合、そのオプションを選択できないようになります。

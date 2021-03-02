@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_numerical', language 'gl', version '3.8'.
  *
- * @package   qtype_numerical
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_numerical
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,10 +64,10 @@ $string['onlynumerical'] = 'As unidades non se utilizan de ningunha maneira. Soa
 $string['pleaseenterananswer'] = 'Introduza unha resposta.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Introduza a súa resposta sen utilizar o separador de millares ({$a})';
 $string['pluginname'] = 'Numérica';
-$string['pluginnameadding'] = 'Engadindo unha pregunta numérica';
-$string['pluginnameediting'] = 'Engadir unha pregunta numérica';
 $string['pluginname_help'] = 'Desde a perspectiva do alumno, unha pregunta numérica parece coma unha pregunta de resposta curta. A diferenza é que se permite que a resposta numérica teña un erro aceptado. Isto permite un intervalo fixe de respostas que avaliar como unha única resposta. Por exemplo, se a resposta é 10, cun erro aceptado de 2, entón calquera número entre 8 e 12 se aceptará como correcto.';
 $string['pluginname_link'] = 'pregunta/tipo/numérica';
+$string['pluginnameadding'] = 'Engadindo unha pregunta numérica';
+$string['pluginnameediting'] = 'Engadir unha pregunta numérica';
 $string['pluginnamesummary'] = 'Permite unha resposta numérica, posibelmente con unidades, que se cualifica comparando contra varios modelos de respostas, posibelmente con tolerancias.';
 $string['privacy:metadata'] = 'O engadido de pregunta numérica non almacena ningún dato persoal.';
 $string['relative'] = 'Relativo';
@@ -105,10 +105,9 @@ $string['unitx'] = 'Unidade {no}';
 $string['validnumberformats'] = 'Formatos válidos de número';
 $string['validnumberformats_help'] = '* números regulares 13500.67, 13 500.67, 13500,67 ou 13 500,67
 
-* se a configuración do paquete de idioma (langconfig.php file)utiliza a coma (,) como separador de milleiros poña *sempre* o punto (.) decimal como en 13,500.67 : 13,500.
+* se os axustes do paquete de idioma (langconfig.php file)utiliza a coma (,) como separador de milleiros poña *sempre* o punto (.) decimal como en 13,500.67 : 13,500.
 
-* para a forma do expoñente, é dicir 1.350067 * 10<sup>4</sup>, utilice
- 1.350067 E4 : 1.350067 E04';
+* para a forma do expoñente, é dicir 1.350067 * 10<sup>4</sup>, utilice 1.350067 E4 : 1.350067 E04';
 $string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 ou 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} debe ser un número.';
 $string['xmustnotbenumeric'] = '{$a} non pode ser un número.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ru', version '3.8'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,9 +41,9 @@ $string['nooptionsforsubquestion'] = 'Невозможно получить ва
 $string['noquestions'] = 'Вопрос «Вложенные ответы» (Cloze) «<strong>{$a}</strong>» не содержит ни одного вопроса';
 $string['pleaseananswerallparts'] = 'Ответьте на все части вопроса';
 $string['pluginname'] = 'Вложенные ответы (Cloze)';
+$string['pluginname_help'] = 'Вопросы типа «Вложенные ответы» (Cloze) представляют собой текст с вложенными в него вопросами, такими, как «Множественный выбор», «Числовой ответ» и «Короткий ответ».';
 $string['pluginnameadding'] = 'Добавление вопроса «Вложенные ответы» (Cloze)';
 $string['pluginnameediting'] = 'Редактирование вопроса «Вложенные ответы» (Cloze)';
-$string['pluginname_help'] = 'Вопросы типа «Вложенные ответы» (Cloze) представляют собой текст с вложенными в него вопросами, такими, как «Множественный выбор», «Числовой ответ» и «Короткий ответ».';
 $string['pluginnamesummary'] = 'Вопросы такого типа являются очень гибкими, но могут быть созданы только путем ввода текста со специальными кодами, которые создают встроенные вопросы «Множественный выбор», «Числовой ответ» и «Короткий ответ».';
 $string['privacy:metadata'] = 'Плагин «Тип вопроса Вложенные ответы (Cloze)» не хранит никаких персональных данных';
 $string['qtypenotrecognized'] = 'Тип вопроса {$a} не опознан';
@@ -55,7 +55,7 @@ $string['questionsadded'] = 'Вопрос добавлен';
 $string['questionsaveasedited'] = 'Вопрос будет сохранен в том виде, в каком будет отредактирован';
 $string['questionsless'] = 'Вопросов ({$a}) меньше, чем   вопросов типа «Множественный выбор», хранящихся в базе данных';
 $string['questionsmissing'] = 'Текст вопроса должен содержать, по меньшей мере, один встроенный ответ.';
-$string['questionsmore'] = 'Вопросов ({$a}) больще, чем   вопросов типа «Множественный выбор», хранящихся в базе данных';
+$string['questionsmore'] = 'Вопросов ({$a}) больше, чем вопросов типа «Множественный выбор», хранящихся в базе данных.';
 $string['questiontypechanged'] = 'Тип вопроса изменен';
 $string['questiontypechangedcomment'] = 'По крайней мере один тип вопроса был изменен.<br />Вы добавили, удалили или переместили вопрос?<br />Осторожно!';
 $string['questionusedinquiz'] = 'Этот вопрос используется в тесте(ах): {$a->nb_of_quiz}, всего попыток: {$a->nb_of_attempts}';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'pt', branch 'MOODLE_36_STABLE'
+ * Strings for component 'theme_more', language 'pt', version '3.8'.
  *
- * @package   theme_more
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_more
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,10 +30,10 @@ $string['backgroundfixed_desc'] = 'Use esta configuração para corrigir a image
 $string['backgroundimage'] = 'Imagem de fundo';
 $string['backgroundimage_desc'] = 'Adicione nesta área a imagem a usar como imagem de fundo do site.';
 $string['backgroundposition'] = 'Posição do fundo';
+$string['backgroundposition_desc'] = 'Selecione a posição em que a imagem de fundo será alinhada.';
 $string['backgroundpositioncenterbottom'] = 'Centrado abaixo';
 $string['backgroundpositioncentercenter'] = 'Centrado a meio';
 $string['backgroundpositioncentertop'] = 'Centrado acima';
-$string['backgroundposition_desc'] = 'Selecione a posição em que a imagem de fundo será alinhada.';
 $string['backgroundpositionleftbottom'] = 'Esquerda abaixo';
 $string['backgroundpositionleftcenter'] = 'Esquerda a meio';
 $string['backgroundpositionlefttop'] = 'Esquerda acima';

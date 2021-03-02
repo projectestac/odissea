@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'ru', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,15 +43,15 @@ $string['handlerdisabled'] = 'Обработчик электронной поч
 $string['incomingmailconfiguration'] = 'Настройка входящей почты';
 $string['incomingmailserversettings'] = 'Настройки сервера входящей почты';
 $string['incomingmailserversettings_desc'] = 'Moodle может подключаться к настроенным соответствующим образом серверам IMAP. Здесь Вы можете указать параметры подключения к серверу IMAP.';
-$string['invalidrecipientdescription'] = 'Не удается проверить подлинность отправленного Вами сообщения с темой «{$a->subject}», так как сообщение было отправлено с адреса электронной почты, отличающегося от указанного в Вашем профиле пользователя. Чтобы подтвердить подлинность отправленного ранее сообщения, Вам необходимо ответить на это сообщение.';
-$string['invalidrecipientdescriptionhtml'] = 'Не удается проверить подлинность отправленного Вами сообщения с темой «{$a->subject}», так как сообщение было отправлено с адреса электронной почты, отличающегося от указанного в Вашем профиле пользователя. Чтобы подтвердить подлинность отправленного ранее сообщения, Вам необходимо ответить на это сообщение.';
-$string['invalidrecipientfinal'] = 'Не удается проверить подлинность отправленного Вами сообщения с темой «{$a->subject}». Пожалуйста, убедитесь, что Вы отправляете сообщение с адреса электронной почты, указанного в Вашем профиле Moodle.';
 $string['invalid_recipient_handler'] = 'Если получено корректное сообщение, но нет возможности убедиться в подлинности отправителя, сообщение сохраняется на сервере электронной почты. В этом случае на адрес электронной почты, указанный в профиле отправителя, отсылается специальное письмо. Пользователю предоставляется возможность ответить на него, чтобы подтвердить подлинность исходного сообщения.
 
 Этот обработчик отправляет такие ответы.
 
 Отключить проверку отправителя, осуществляемую этим обработчиком, нельзя. Это связано с тем, что пользователь может отвечать с неправильного адреса электронной почты, если его клиент электронной почты настроен неверно.';
-$string['invalid_recipient_handler_name'] = 'Обработчик некорректного получателя';
+$string['invalid_recipient_handler_name'] = 'Обработчик некорректного отправителя';
+$string['invalidrecipientdescription'] = 'Не удается проверить подлинность отправленного Вами сообщения с темой «{$a->subject}», так как сообщение было отправлено с адреса электронной почты, отличающегося от указанного в Вашем профиле пользователя. Чтобы подтвердить подлинность отправленного ранее сообщения, Вам необходимо ответить на это сообщение.';
+$string['invalidrecipientdescriptionhtml'] = 'Не удается проверить подлинность отправленного Вами сообщения с темой «{$a->subject}», так как сообщение было отправлено с адреса электронной почты, отличающегося от указанного в Вашем профиле пользователя. Чтобы подтвердить подлинность отправленного ранее сообщения, Вам необходимо ответить на это сообщение.';
+$string['invalidrecipientfinal'] = 'Не удается проверить подлинность отправленного Вами сообщения с темой «{$a->subject}». Пожалуйста, убедитесь, что Вы отправляете сообщение с адреса электронной почты, указанного в Вашем профиле Moodle.';
 $string['mailbox'] = 'Имя почтового ящика';
 $string['mailboxconfiguration'] = 'Настройки почтового ящика';
 $string['mailboxdescription'] = '[адрес]+субадрес@[домен]';
@@ -98,6 +98,11 @@ $string['onehour'] = 'Один час';
 $string['oneweek'] = 'Одна неделя';
 $string['oneyear'] = 'Один год';
 $string['pluginname'] = 'Настройка входящих сообщений';
+$string['privacy:metadata:messagelist'] = 'Список идентификаторов сообщений, не прошедших проверку и требующих дальнейшего решения.';
+$string['privacy:metadata:messagelist:address'] = 'Адрес, на который было отправлено письмо';
+$string['privacy:metadata:messagelist:messageid'] = 'ID сообщения';
+$string['privacy:metadata:messagelist:timecreated'] = 'Время, когда была сделана запись';
+$string['privacy:metadata:messagelist:userid'] = 'ID пользователя, которому нужно одобрить сообщение.';
 $string['replysubjectprefix'] = 'Re:';
 $string['requirevalidation'] = 'Подтверждать адрес отправителя';
 $string['ssl'] = 'SSL (Автоматическое определение версии SSL)';

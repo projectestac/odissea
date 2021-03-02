@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'grading', language 'ja', version '3.8'.
  *
- * @package   grading
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     grading
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -71,7 +71,6 @@ $string['privacy:metadata:grading_definitions:timecreated'] = '評定定義が�
 $string['privacy:metadata:grading_definitions:timemodified'] = '評定定義の最終更新日時です。';
 $string['privacy:metadata:grading_definitions:usercreated'] = '評定定義を作成したユーザのIDです。';
 $string['privacy:metadata:grading_definitions:usermodified'] = '評定定義を最後に更新したユーザのIDです。';
-$string['privacy:metadata:gradingformpluginsummary'] = '評定方法のデータです。';
 $string['privacy:metadata:grading_instances'] = '評価者によって評価された評定可能アイテムの評価レコードです。';
 $string['privacy:metadata:grading_instances:feedback'] = 'ユーザにより与えられたフィードバックです。';
 $string['privacy:metadata:grading_instances:feedbackformat'] = 'ユーザにより与えられたフィードバックのテキストフォーマットです。';
@@ -79,6 +78,7 @@ $string['privacy:metadata:grading_instances:raterid'] = '評定インスタン�
 $string['privacy:metadata:grading_instances:rawgrade'] = '評定インスタンスの評定です。';
 $string['privacy:metadata:grading_instances:status'] = '評定インスタンスのステータスです。';
 $string['privacy:metadata:grading_instances:timemodified'] = '評定インスタンスの最終更新日時です。';
+$string['privacy:metadata:gradingformpluginsummary'] = '評定方法のデータです。';
 $string['searchownforms'] = '私のフォームを含む';
 $string['searchtemplate'] = '評定フォーム検索';
 $string['searchtemplate_help'] = 'あなたは評定フォームを検索して新しいフォームのテンプレートとしてここで使用することができます。フォーム名、説明またはフォーム本文に使われている単語を入力してください。言葉を検索するには検索後を二重引用符 (") で囲んでください。

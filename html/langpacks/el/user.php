@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'user', language 'el', version '3.8'.
  *
- * @package   user
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     user
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -89,7 +89,7 @@ $string['privacy:metadata:phone'] = 'Ένας αριθμός τηλεφώνου 
 $string['privacy:metadata:picture'] = 'Τα στοιχεία της εικόνας που συσχετίζονται με αυτόν τον χρήστη.';
 $string['privacy:metadata:platform'] = 'Η πλατφόρμα συσκευής, Android ή iOS κλπ.';
 $string['privacy:metadata:policyagreed'] = 'Μια σημαιοδότηση που δείχνει αν ο χρήστης έχει συμφωνήσει με την πολιτική του ιστοτόπου.';
-$string['privacy:metadata:pushid'] = 'Το αναγνωριστικό προώθησης (PUSH) κλειδιού/αναγνωριστικού/αναγνωριστικού εγγραφής της συσκευής';
+$string['privacy:metadata:pushid'] = 'Το αναγνωριστικό προώθησης (PUSH) κουπονιού/κλειδιού/αναγνωριστικού/καταχώρησης της συσκευής';
 $string['privacy:metadata:reason'] = 'Ο λόγος για τον οποίο ζητήθηκε το μάθημα αυτό.';
 $string['privacy:metadata:requester'] = 'Ένα αναγνωριστικό για έναν χρήστη που ζήτησε αυτό το μάθημα.';
 $string['privacy:metadata:requestsummary'] = 'Αποθηκεύει πληροφορίες σχετικά με αιτήματα για μαθήματα που κάνουν οι χρήστες.';
@@ -98,7 +98,7 @@ $string['privacy:metadata:sessdata'] = 'Περιεχόμενο συνόδου';
 $string['privacy:metadata:sessiontablesummary'] = 'Αποθήκευση συνόδου βασισμένη σε βάση δεδομένων';
 $string['privacy:metadata:shortname'] = 'Ένα σύντομο όνομα για το μάθημα.';
 $string['privacy:metadata:sid'] = 'Το αναγνωριστικό συνόδου';
-$string['privacy:metadata:skype'] = 'Το αναγνωριστικό skype του χρήστη.';
+$string['privacy:metadata:skype'] = 'Το αναγνωριστικό Skype του χρήστη.';
 $string['privacy:metadata:state'] = '0 σημαίνει μια κανονική σύνοδο.';
 $string['privacy:metadata:summary'] = 'Περιγραφή του μαθήματος.';
 $string['privacy:metadata:suspended'] = 'Μια σημαιοδότηση που δείχνει αν ο χρήστης έχει προσωρινή απαγόρευση σε αυτό το σύστημα.';
@@ -113,12 +113,12 @@ $string['privacy:metadata:token'] = 'το μυστικό ορίστηκε και
 $string['privacy:metadata:trackforums'] = 'Μια προτίμηση για τα φόρουμ και την παρακολούθησή τους.';
 $string['privacy:metadata:trustbitmask'] = 'Η μάσκα δυαδικών ψηφίων εμπιστοσύνης';
 $string['privacy:metadata:url'] = 'Μια διεύθυνση URL που σχετίζεται με αυτόν τον χρήστη.';
-$string['privacy:metadata:userid'] = 'Το αναγνωριστικό χρήστη που συνδέθηκε με αυτόν τον πίνακα.';
-$string['privacy:metadata:username'] = 'Το όνομα χρήστη για αυτόν τον χρήστη.';
 $string['privacy:metadata:user_preferences'] = 'Προτιμήσεις που συσχετίζονται με τον συγκεκριμένο χρήστη';
 $string['privacy:metadata:user_preferences:name'] = 'Όνομα προτίμησης';
 $string['privacy:metadata:user_preferences:userid'] = 'Το αναγνωριστικό χρήστη';
 $string['privacy:metadata:user_preferences:value'] = 'Τιμή προτίμησης';
+$string['privacy:metadata:userid'] = 'Το αναγνωριστικό χρήστη που συνδέθηκε με αυτόν τον πίνακα.';
+$string['privacy:metadata:username'] = 'Το όνομα χρήστη για αυτόν τον χρήστη.';
 $string['privacy:metadata:usertablesummary'] = 'Αυτός ο πίνακας αποθηκεύει τα κύρια προσωπικά δεδομένα σχετικά με το χρήστη.';
 $string['privacy:metadata:uuid'] = 'Το αναγνωριστικό UUID του πωλητή της συσκευής';
 $string['privacy:metadata:version'] = 'Η έκδοση της συσκευής, 6.1.2, 4.2.2 κλπ.';

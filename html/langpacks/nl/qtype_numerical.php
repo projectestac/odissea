@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_numerical', language 'nl', version '3.8'.
  *
- * @package   qtype_numerical
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_numerical
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -64,9 +64,9 @@ $string['onlynumerical'] = 'Eenheden worden helemaal niet gebruikt. Enkel de num
 $string['pleaseenterananswer'] = 'Geef een antwoord';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Geef je antwoord zonder scheidingsteken voor de duizendtallen ({$a}).';
 $string['pluginname'] = 'Numeriek';
+$string['pluginname_help'] = 'Vanuit het perspectief van de leerling lijkt een numerieke vraag hetzelfde als een kort antwoordvraag. Het verschil is dat numerieke vragen een foutentolerantie kunnen hebben. Dit maakt het mogelijk om een reeks antwoorden als juist antwoord te laten beoordelen. Als het juiste antwoord bijvoorbeeld 10 is met een foutenmarge van 2, dan zal elk getal tussen 8 en 12 juist gerekend worden.';
 $string['pluginnameadding'] = 'Numerieke vraag toevoegen';
 $string['pluginnameediting'] = 'Numerieke vraag bewerken';
-$string['pluginname_help'] = 'Vanuit het perspectief van de leerling lijkt een numerieke vraag hetzelfde als een kort antwoordvraag. Het verschil is dat numerieke vragen een foutentolerantie kunnen hebben. Dit maakt het mogelijk om een reeks antwoorden als juist antwoord te laten beoordelen. Als het juiste antwoord bijvoorbeeld 10 is met een foutenmarge van 2, dan zal elk getal tussen 8 en 12 juist gerekend worden.';
 $string['pluginnamesummary'] = 'Maakt het mogelijk een numeriek antwoord te laten geven, zelfs met eenheden en toleranties. Dat antwoord kan beoordeeld worden met verschillende modelantwoorden,';
 $string['privacy:metadata'] = 'De numerieke vraagtype-plugin bewaart geen persoonlijke gegevens.';
 $string['relative'] = 'Relatief';

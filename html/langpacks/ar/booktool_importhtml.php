@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_importhtml', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'booktool_importhtml', language 'ar', version '3.8'.
  *
- * @package   booktool_importhtml
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     booktool_importhtml
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,15 +28,15 @@ defined('MOODLE_INTERNAL') || die();
 $string['doimport'] = 'استيراد';
 $string['errornochapters'] = 'لا يوجد فصول في الملف المختار';
 $string['import'] = 'استورد فصل';
-$string['importhtml:import'] = 'استيراد الفصول';
+$string['importhtml:import'] = 'استورد فصول';
 $string['importing'] = 'استيراد';
 $string['importingchapters'] = 'استيراد فصول للكتاب';
-$string['pluginname'] = 'استيراد فصل الكتاب';
-$string['privacy:metadata'] = 'إن ملحق استيراد فصل الكتاب لا يخزن أيّ بيانات شخصية.';
+$string['pluginname'] = 'استورد فصل من كتاب';
+$string['privacy:metadata'] = 'البرنامج المساعد Book chapter import  لا يخزن أيّ بيانات شخصية.';
 $string['relinking'] = 'إعادة الربط';
 $string['type'] = 'النوع';
-$string['typeonefile'] = 'ملف واحد من HTML مع عناوين بمثابة فصول';
+$string['typeonefile'] = 'ملف واحد من لغة توصيف النصوص المترابطة مع عناوين الفصول';
 $string['typezipdirs'] = 'كل مجلد يمثل فصلاً واحداً';
-$string['typezipfiles'] = 'كل ملف من نصوص HTML يمثل فصلاً واحداً';
+$string['typezipfiles'] = 'كل ملف للغة توصيف النصوص المترابطة HTML يمثل فصلاً واحداً';
 $string['ziparchive'] = 'ملف مضغوط';
-$string['ziparchive_help'] = 'إختر ملفاً مضغوطاً يحتوي على ملفات HTML واختيارياً ملفات الوسائط المتعددة والمجلدات. لتحميل الفصول الفرعية، أضف عبارة "_sub" إلى نهاية اسم ملف HTML أو اسم المجلد.';
+$string['ziparchive_help'] = 'حدد ملف مضغوط يحتوي على ملفات بلغة توصيف النصوص المترابطة و اختيارياً ملفات الوسائط المتعددة و المجلدات. لتحميل الفصول الفرعية، حيث تضاف عبارة "_sub" إلى نهاية ملف لغة توصيف النصوص المترابطة أو أسماء المجلد.';

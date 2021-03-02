@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multichoice', language 'ca', version '3.8'.
  *
- * @package   qtype_multichoice
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multichoice
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,10 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['answerhowmany'] = 'Una resposta o múltiples respostes?';
 $string['answernumbering'] = 'Voleu numerar les opcions?';
 $string['answernumbering123'] = '1., 2., 3., ...';
-$string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
-$string['answernumberingiii'] = 'i, ii, iii, ...';
 $string['answernumberingIIII'] = 'I, II, III, ....';
+$string['answernumberingabc'] = 'a., b., c., ...';
+$string['answernumberingiii'] = 'i, ii, iii, ...';
 $string['answernumberingnone'] = 'Sense numerar';
 $string['answersingleno'] = 'Es permeten múltiples respostes';
 $string['answersingleyes'] = 'Només una resposta';
@@ -60,9 +60,9 @@ $string['partiallycorrectfeedback'] = 'Per a qualsevol resposta parcialment corr
 $string['pleaseselectananswer'] = 'Trieu una resposta.';
 $string['pleaseselectatleastoneanswer'] = 'Seleccioneu almenys una resposta.';
 $string['pluginname'] = 'Opció múltiple';
+$string['pluginname_help'] = 'En resposta a una pregunta (que pot contenir una imatge) l\'alumne pot escollir entre diferents opcions. Una pregunta d\'opció múltiple pot tenir una única resposta correcta o múltiples respostes correctes.';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'opcions múltiples';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'opcions múltiples';
-$string['pluginname_help'] = 'En resposta a una pregunta (que pot contenir una imatge) l\'alumne pot escollir entre diferents opcions. Una pregunta d\'opció múltiple pot tenir una única resposta correcta o múltiples respostes correctes.';
 $string['pluginnamesummary'] = 'Permet la selecció d\'una o diverses respostes d\'una llista predefinida.';
 $string['selectmulti'] = 'Trieu-ne una o més:';
 $string['selectone'] = 'Trieu-ne una:';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'eu', version '3.8'.
  *
- * @package   qtype_ddimageortext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddimageortext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,46 +32,46 @@ $string['bgimage'] = 'Atzeko planoko irudia';
 $string['blank'] = 'hutsik';
 $string['correctansweris'] = 'Erantzun zuzena ondokoa da: {$a}';
 $string['deletedchoice'] = '[Ezabatutako aukera]';
-$string['draggableimage'] = 'Eramateko irudia';
-$string['draggableitem'] = 'Eramateko elementua';
-$string['draggableitemheader'] = 'Eramateko elementua {$a}';
-$string['draggableitems'] = 'Eramateko elementuak';
+$string['draggableimage'] = 'Irudi eramangarria';
+$string['draggableitem'] = 'Elementu eramangarria';
+$string['draggableitemheader'] = '{$a} elementu eramangarria';
+$string['draggableitems'] = 'Elementu eramangarriak';
 $string['draggableitemtype'] = 'Mota';
-$string['draggableword'] = 'Eramateko testua';
+$string['draggableword'] = 'Testu eramangarria';
 $string['dropbackground'] = 'Atzeko planoko irudia, bertara markatzaileak eramateko';
-$string['dropzone'] = 'Eramateko tokia {$a}';
-$string['dropzoneheader'] = 'Eramateko tokiak';
-$string['formerror_disallowedtags'] = '"{$a}" etiketak baino ez daude baimenduta eramateko testuan.';
+$string['dropzone'] = '{$a} askatze-eremua';
+$string['dropzoneheader'] = 'Askatze-eremuak';
+$string['formerror_disallowedtags'] = 'Soilik "{$a}" etiketak onartzen dira hartu eta eramateko testu honetan.';
 $string['formerror_multipledraginstance'] = '{$a} irudia aukera zuzen gisa aukeratu duzu erortze-puntu baten baino gehiagotan, baina ez dago markatuta mugarik gabe arrastatu daiteken elementu gisa.';
 $string['formerror_multipledraginstance2'] = 'Irudi hau aukera zuzen gisa aukeratu duzu erortze-puntu baten baino gehiagotan, baina ez dago markatuta mugarik gabe arrastatu daiteken elementu gisa.';
 $string['formerror_noallowedtags'] = 'HTML etiketak ez dira onartzen testu honetan arrastatu daitekeen irudi baten testu alternatiboa delako.';
-$string['formerror_nobgimage'] = 'Irudi bat aukeratu behar duzu atzeko planoan hartu eta eramateko tokiak zehazteko.';
+$string['formerror_nobgimage'] = 'Atzeko planoko irudi bat aukeratu behar duzu hartu eta eramateko eremurako.';
 $string['formerror_nofile'] = 'Fitxategi bat igo edo aukeratu behar duzu hemen erabiltzeko.';
 $string['formerror_nofile3'] = 'Hemen irudi-fitxategi bat aukeratu behar duzu, edo bestela ezabatu elementuari lotutako testua eta \'Mugarik gabe\' laukitxoa.';
-$string['formerror_noimageselected'] = 'Eramateko toki honetarako eramateko elementu bat aukera zuzen gisa aukeratu behar duzu.';
+$string['formerror_noimageselected'] = 'Eramateko elementu bat aukeratu behar duzu aukera zuzen gisa askatze-eremu honetarako.';
 $string['formerror_notintxleft'] = 'X koordenatua zenbaki oso bat izan behar da.';
 $string['formerror_notintytop'] = 'Y koordenatua zenbaki oso bat izan behar da.';
 $string['formerror_noxleft'] = 'Eramateko toki honen goiko ezkerreko ertzaren X koordenatuaren balio bat eman behar duzu. Eramateko tokia hartu eta eramana dezakezu koordenatuak automatikoki zehazteko edo bestela eskuz sartu ditzakezu hemen.';
 $string['formerror_noytop'] = 'Eramateko toki honen goiko ezkerreko ertzaren Y koordenatuaren balio bat eman behar duzu. Eramateko tokia hartu eta eramana dezakezu koordenatuak automatikoki zehazteko edo bestela eskuz sartu ditzakezu hemen.';
-$string['infinite'] = 'Mugarik gabea';
+$string['infinite'] = 'Mugarik gabe';
 $string['label'] = 'Testua';
 $string['nolabel'] = 'Ez dago testurik etiketan';
-$string['pleasedraganimagetoeachdropregion'] = 'Zure erantzuna osatu gabe dago; mesedez, eraman elementu bat toki bakoitzera.';
+$string['pleasedraganimagetoeachdropregion'] = 'Zure erantzuna osatu gabe dago; mesedez, eraman elementu bat askatze-eremu bakoitzera.';
 $string['pluginname'] = 'Hartu eta eraman irudira';
+$string['pluginname_help'] = 'Hartu era eraman irudira motako galderek ikasleei irudi edo testuak hartu eta atzeko planoko irudian zehaztuta dauden eramateko tokietara eramatea eskatzen diete. Elementu eramangarriak taldekatu daitezke talde bakoitzeko elementu guztiak eramateko tokien kolore berdina izan dezaten. \'Mugarik gabe\' gisa markatutako elementu eramangarriak eremu bat baino gehigotara eraman daitezke.';
 $string['pluginnameadding'] = 'Hartu eta eraman irudira motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman irudira motako galdera editatzen';
-$string['pluginname_help'] = 'Hartu era eraman irudira motako galderek ikasleei irudi edo testuak hartu eta atzeko planoko irudian zehaztuta dauden eramateko tokietara eramatea eskatzen diete. Elementu eramangarriak taldekatu daitezke talde bakoitzeko elementu guztiak eramateko tokien kolore berdina izan dezaten. \'Mugarik gabe\' gisa markatutako elementu eramangarriak eremu bat baino gehigotara eraman daitezke.';
 $string['pluginnamesummary'] = 'Irudiak edo testu-etiketak hartu eta eraman dira atzeko planoko irudira.
 
 Oharra: Galdera-mota hau ez dago ikuspen urritasuna duten erabiltzaileentzako eskuragarri.';
 $string['previewareaheader'] = 'Aurrebista';
-$string['previewareamessage'] = 'Aukeratu atzeko planoko irudia, zehaztu elementu eramangarriak eta kokatu elementuak irudiaren gainean kokatzeko eramateko tokiak.';
-$string['privacy:metadata'] = 'Hartu eta eraman irudira galdera-mota pluginak ez du datu pertsonalik biltzen.';
+$string['previewareamessage'] = 'Aukeratu atzeko planoaren irudia, zehaztu elementu eramangarriak eta kokatu elementuak irudiaren gainean kokatzeko eramateko tokiak.';
+$string['privacy:metadata'] = 'Hartu eta eraman irudira galdera mota pluginak ez du datu pertsonalik biltzen.';
 $string['refresh'] = 'Freskatu aurrebista';
-$string['shuffleimages'] = 'Nahastu eramateko elementuak galderari erantzuten zaion bakoitzean';
+$string['shuffleimages'] = 'Nahastu elementu eramangarriak galderari erantzuten zaion bakoitzean';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';
 $string['summarisechoiceno'] = '{$a} elementua';
 $string['summariseplace'] = '{$a->no}. {$a->text}';
-$string['summariseplaceno'] = 'Eramateko tokia {$a}';
+$string['summariseplaceno'] = '{$a} askatze-eremua';
 $string['xleft'] = 'Ezkerra';
 $string['ytop'] = 'Goian';

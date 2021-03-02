@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_statistics', language 'es', version '3.8'.
  *
- * @package   quiz_statistics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_statistics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -48,11 +48,11 @@ $string['counttryno'] = 'Recuento de intentos {$a}';
 $string['coursename'] = 'Nombre del curso';
 $string['detailedanalysis'] = 'Análisis más detallado de las respuestas a esta pregunta';
 $string['detailedanalysisforvariant'] = 'Análisis más detallado para las respuestas a la variante {$a} de esta pregunta';
-$string['discrimination_index'] = 'Índice de Discriminación';
+$string['discrimination_index'] = 'Índice de discriminación';
 $string['discriminative_efficiency'] = 'Eficiencia discriminativa';
 $string['downloadeverything'] = 'Descargar informe completo como';
 $string['duration'] = 'Abierto por';
-$string['effective_weight'] = 'peso efectivo';
+$string['effective_weight'] = 'Peso efectivo';
 $string['errordeleting'] = 'Error al eliminar {$a} registros antiguos.';
 $string['errormedian'] = 'Error al buscar la mediana';
 $string['errorpowerquestions'] = 'Error al recuperar datos para calcular la varianza de las calificaciones de la pregunta';
@@ -115,9 +115,9 @@ $string['standarddeviationq'] = 'Desviación estándar';
 $string['standarderror'] = 'Error estándar (para {$a})';
 $string['statistics'] = 'Estadísticas';
 $string['statistics:componentname'] = 'Informe estadístico del cuestionario';
+$string['statistics:view'] = 'Ver informe de estadísticas';
 $string['statisticsreport'] = 'Informe estadístico';
 $string['statisticsreportgraph'] = 'Estadísticas de las pregunta';
-$string['statistics:view'] = 'Ver informe de estadísticas';
 $string['statsfor'] = 'Estadísticas del cuestionario (para {$a})';
 $string['variant'] = 'Variante';
 $string['viewanalysis'] = 'Ver detalles';

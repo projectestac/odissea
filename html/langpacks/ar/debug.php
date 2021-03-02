@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,50 +12,51 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'debug', language 'ar', version '3.8'.
  *
- * @package   debug
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     debug
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['authpluginnotfound'] = 'لم يتم إيجاد إضافة المصادقة {$a}';
+$string['authpluginnotfound'] = 'المكون الإضافي للمصادقة {$a} غير موجود .';
 $string['blocknotexist'] = 'الكتلة {$a} غير موجودة';
-$string['cannotbenull'] = 'لا يمكن أن يكون {$a}  فارغًا (null) !';
-$string['cannotdowngrade'] = 'لا يمكن التراجع عن ترقية {$a->plugin} من {$a->oldversion} إلى {$a->newversion}.';
-$string['cannotfindadmin'] = 'لا يمكن إيجاد مستخدم مدير!';
-$string['cannotinitpage'] = 'لا يمكن تهيئة الصفحة بالكامل: معرف {$a->name} غير صالح {$a->id}';
-$string['cannotsetuptable'] = 'لا يمكن ضبط جداول {$a} بنجاح!';
-$string['codingerror'] = 'تم الكشف عن خطأ بالكود، يجب إصلاحه من قبل مبرمج: {$a}';
-$string['configmoodle'] = 'لم يتم إعداد مودل بعد. يجب أن تقوم بتحرير الملف config.php أولاً.';
+$string['cannotbenull'] = 'لا يمكن أن يكون {$a} فارغا !';
+$string['cannotdowngrade'] = 'لا يمكن التراجع عن الترقية {$a->plugin} من {$a->oldversion} إلى {$a->newversion} .';
+$string['cannotfindadmin'] = 'لا يمكن إيجاد مستخدم مسؤول !';
+$string['cannotinitpage'] = 'لا يمكن تهيئة الصفحة بالكامل : غير صالح {$a->name} برقم معرف  {$a->id}';
+$string['cannotsetuptable'] = 'الجداول {$a} لم يتم تعيينها بنجاح !';
+$string['codingerror'] = 'تم الكشف عن خطأ بالنص البرمجي ،  يجب إصلاحه من قبل المبرمج : {$a}';
+$string['configmoodle'] = 'لم يتم إعداد مودل بعد . يجب أن تقوم بتحرير الملف config.php أولاً.';
 $string['debuginfo'] = 'معلومات التصحيح';
 $string['erroroccur'] = 'لقد حدث خطأ أثناء هذه العملية';
-$string['invalidarraysize'] = 'طول مصفوفة غير صحيح للوسيط {$a}';
-$string['invalideventdata'] = 'تم تسليم بيانات أحداث غير صحيحة: {$a}';
+$string['invalidarraysize'] = 'حجم المصفوفة غير صحيح في معاملات {$a}';
+$string['invalideventdata'] = 'تم تسليم بيانات أحداث غير صحيحة : {$a}';
 $string['invalidparameter'] = 'تم الكشف عن قيمة معامل غير صالحة';
 $string['invalidresponse'] = 'تم الكشف عن قيمة إجابة غير صالحة';
 $string['line'] = 'خط';
-$string['missingconfigversion'] = 'جدول الإعدادات لا يحوي رقم الإصدار، لا يمكن الاستمرار للأسف.';
+$string['missingconfigversion'] = 'جدول الإعدادات لا يحتوي رقم الإصدار ، لا يمكن الاستمرار ، آسف .';
 $string['modulenotexist'] = 'الوحدة {$a} غير موجودة';
-$string['morethanonerecordinfetch'] = 'تم إيجاد أكثر من سجل في تابع fetch() !';
-$string['mustbeoveride'] = 'لا يمكن إعادة كتابة الطريقة المجردة {$a}.';
-$string['noadminrole'] = 'لا يمكن إيجاد دور مدير';
-$string['noblocks'] = 'لا توجد كتل منصبة!';
-$string['nocate'] = 'لا يوجد تصنيفات!';
-$string['nomodules'] = 'لا يوجد وحدات!';
-$string['nopageclass'] = 'تم استيراد {$a} لكن لم يوجد أي صفوف صفحات';
-$string['noreports'] = 'لا يوجد تقارير يمكن الوصول لها';
-$string['notables'] = 'لا يوجد جداول!';
+$string['morethanonerecordinfetch'] = 'تم إيجاد أكثر من سجل في fetch() !';
+$string['mustbeoveride'] = 'طريقة المستخلص {$a} يجب تجاوزها .';
+$string['noadminrole'] = 'لا يمكن إيجاد دور مسؤول';
+$string['noblocks'] = 'لا يوجد كتل مركبة !';
+$string['nocate'] = 'لا يوجد فئات !';
+$string['nomodules'] = 'لا يوجد وحدات !';
+$string['nopageclass'] = 'تم استيراد {$a} لكن لم يوجد أي مقاطع صفحات';
+$string['noreports'] = 'لا يوجد تقارير يمكن الوصول إليها';
+$string['notables'] = 'لا يوجد جداول !';
 $string['outputbuffer'] = 'التخزين المؤقت للمخرجات';
-$string['phpvaroff'] = 'يجب إطفاء متحول مخدم PHP المسمى \'{$a->name}\' - {$a->link}';
-$string['phpvaron'] = 'متحول مخدم PHP المسمى \'{$a->name}\' غير مشغل - {$a->link}';
+$string['phpvaroff'] = 'متغيرات خادم PHP \'{$a->name}\' يجب أن يكون مغلقا  - {$a->link}';
+$string['phpvaron'] = 'متغيرات خادم PHP  \'{$a->name}\' يجب أن يكون مفتوحا - {$a->link}';
 $string['sessionmissing'] = 'الغرض {$a} مفقود من الجلسة';
-$string['sqlrelyonobsoletetable'] = 'هذه الـ SQL تعتمد على جداول متقادمة: {$a}! يجب إصلاح كودك من قبل مبرمج.';
+$string['sqlrelyonobsoletetable'] = 'هذه الـ SQL تعتمد على جداول متقادمة : {$a} ! يجب إصلاح النص البرمجي من قبل مبرمج .';
 $string['stacktrace'] = 'تتبع المكدس';
-$string['withoutversion'] = 'ملف version.php الرئيسي مفقود أو غير مقروء أو تم نقله.';
+$string['withoutversion'] = 'ملف version.php الرئيسي مفقود أو غير مقروء أو تم نقله .';
 $string['xmlizeunavailable'] = 'توابع التحويل إلى xml غير متوافرة';

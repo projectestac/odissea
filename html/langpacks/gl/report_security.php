@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'gl', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,7 +30,7 @@ Teña en conta que esta medida non mellora a seguridade do servidor de forma sig
 $string['check_configrw_name'] = 'Ficheiro config.php escribíbel';
 $string['check_configrw_ok'] = 'O config.php non pode ser modificado por scripts PHP.';
 $string['check_configrw_warning'] = 'Os scripts PHP poden modificar o config.php.';
-$string['check_cookiesecure_details'] = '<p>De activar a comunicación https, recoméndase que tamén active as cookies seguras. Tamén debería engadir unha redirección permanente de http a https.</p>';
+$string['check_cookiesecure_details'] = '<p>De activar a comunicación https, recoméndase permitir o envío de cookies seguras. Debería ter unha redirección permanente de http a https e idealmente servir tamén cabeceiras HSTS.</p>';
 $string['check_cookiesecure_error'] = 'Active as cookies seguras';
 $string['check_cookiesecure_name'] = 'Cookies seguras';
 $string['check_cookiesecure_ok'] = 'As cookies seguras están activadas.';
@@ -94,7 +94,7 @@ $string['check_passwordpolicy_ok'] = 'Activouse a norma sobre contrasinal.';
 $string['check_preventexecpath_details'] = '<p>Permitir que se configuren rutas executábeis a través da IGU de administración é un vector para a escalada de privilexios.</p>';
 $string['check_preventexecpath_name'] = 'Rutas executábeis';
 $string['check_preventexecpath_ok'] = 'As rutas executábeis só poden estabelecerse en config.php.';
-$string['check_preventexecpath_warning'] = 'As rutas executábeis pódense configurar na IGU de administración.';
+$string['check_preventexecpath_warning'] = 'Os camiños executábeis pódense configurar na IGU de administración.';
 $string['check_riskadmin_detailsok'] = '<p>Comprobe a seguinte lista de administradores do sistema:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Comprobe a seguinte lista de administradores do sistema:</p>{$a->admins}
 <p>Recoméndase asignar un rol de administrador soamente no contexto do sistema. Os seguintes usuarios teñen (incompatíbeis) asignación de rol de administración noutros contextos:</p>{$a->unsupported}';
@@ -102,10 +102,10 @@ $string['check_riskadmin_name'] = 'Administradores';
 $string['check_riskadmin_ok'] = 'Atopouse {$a} administrador(es) do servidor.';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) revisar as asignacións de rol</a>';
 $string['check_riskadmin_warning'] = 'Atopouse {$a->admincount} administrador(es) de servidor e {$a->unsupcount} asignacións de rol incompatíbeis.';
-$string['check_riskbackup_detailsok'] = 'Ningún rol permite explicitamente a copia de datos de usuario. No entanto, vexa que os administradores coa capacidade de «facer-calquera-cousa» adoitan ser quen de facelo.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Esas sobrescrituras activas dánlle aos usuarios a posibilidade de incluír datos de usuario na copia de seguranza. Asegúrese de que este permiso é necesario.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Os seguintes roles do sistema permítenlle aos usuarios incluír datos de usuario nas copias de seguranza. Asegúrese de que este permiso é necesario.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>Debido a roles superiores ou a sobrescrituras locais, as seguintes contas de usuario teñen permiso para facer copias de seguranza que conteñan datos privados de calquera dos usuarios matriculados no seu curso. Asegúrese de que sexan (a) de confianza e (b) teñan contrasinais fortes.:</p> {$a}';
+$string['check_riskbackup_detailsok'] = 'Ningún rol permite explicitamente a copia de datos de usuario. No entanto, vexa que os administradores coa capacidade de «facer-calquera-cousa» adoitan ser quen de facelo.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} en {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Copia de seguranza dos datos de usuario';

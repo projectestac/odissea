@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'repository', language 'es', version '3.8'.
  *
- * @package   repository
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     repository
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -61,7 +61,7 @@ $string['chooselicense'] = 'Seleccionar licencia';
 $string['cleancache'] = 'Limpiar mis archivos en caché';
 $string['close'] = 'Cerrar';
 $string['commonrepositorysettings'] = 'Ajustes comunes del repositorio';
-$string['configallowexternallinks'] = 'Esta opción permite que los usuarios elijan si los elementos multimedia externos se copien o no  en Moodle. Si está deshabilitado los medios de comunicación siempre se copiarán en Moodle (esto es lo mejor para la integridad general de los datos y la seguridad). Si es así, entoces los usuarios pueden elegir cada vez que agreguen elementos multimedia a un texto.';
+$string['configallowexternallinks'] = 'Esta opción les permite a todos los usuarios elegir si los medios externos se copiarán a Moodle o no. Si está apagada, entonces los medios siempre se copian a Moodle (generalmente es lo mejor para la integridad de datos y seguridad). Si está encendida entonces los usuarios pueden elegir cada vez que añadan medios a un texto.';
 $string['configcacheexpire'] = 'Cantidad de tiempo (en segundos) que los listados de archivos están en caché local cuando se navega por repositorios externos.';
 $string['configgetfiletimeout'] = 'Tiempo de espera en segundos para la descarga del fichero externo en Moodle.';
 $string['configsaved'] = 'Configuración guardada.';
@@ -69,7 +69,7 @@ $string['configsyncfiletimeout'] = 'Tiempo de espera en segundos para la sincron
 $string['configsyncimagetimeout'] = 'Tiempo de espera en segundos para la descarga de un fichero de imagen de un repositorio externo durante la sincronizazión';
 $string['confirmdelete'] = '¿Está seguro de que desea eliminar este repositorio {$a}?
 
-Si selecciona "Continuar y descargar", los archivos refereridos a contenidos externos se descargaran a Moodle, pero este proceso llevará tiempo.';
+Si selecciona "Continuar y descargar", los archivos referidos a contenidos externos se descargaran a Moodle, pero este proceso llevará tiempo.';
 $string['confirmdeletefile'] = '¿Está seguro de que desea eliminar este archivo?';
 $string['confirmdeletefilewithhref'] = '¿Está seguro de que desea eliminar este archivo? Hay {$a} alias/atajos a archivos que usan este archivo como origen. Si continua, estos alias se transformarán en copias reales.';
 $string['confirmdeletefolder'] = '¿Está seguro que quiere eliminar esta carpeta? Todoas loas archivos y las subcarpetas se eliminarán?';
@@ -82,12 +82,12 @@ $string['continueuninstall'] = 'Continuar';
 $string['continueuninstallanddownload'] = 'Continuar y descargar';
 $string['copying'] = 'Copiando';
 $string['coursebackup'] = 'Copias de seguridad del curso';
-$string['create'] = 'Crear un ejemplo de repositorio';
+$string['create'] = 'Crear un repositorio';
 $string['createfolder'] = 'Crear carpeta';
 $string['createfolderfail'] = 'Error al crear este directorio';
 $string['createfoldersuccess'] = 'Directorio creado con éxito';
 $string['createinstance'] = 'Crear una instancia de repositorio';
-$string['createrepository'] = 'Crear un ';
+$string['createrepository'] = 'Crear una instancia de repositorio';
 $string['createxxinstance'] = 'Crear una instancia de repositorio "{$a}"';
 $string['date'] = 'Fecha';
 $string['datecreated'] = 'Creado';
@@ -110,23 +110,23 @@ $string['draftareanofiles'] = 'No se puede descargar porque no hay archivos adju
 $string['editrepositoryinstance'] = 'Editar una instancia de repositorio';
 $string['emptylist'] = 'Lista vacía';
 $string['emptytype'] = 'No se puede crear el tipo de repositorio: el nombre del tipo está vacío';
-$string['enablecourseinstances'] = 'Permitir a los usuarios agregar un elemento de repositorio dentro del curso';
-$string['enableuserinstances'] = 'Permitir a los usuarios agregar un elemento de repositorio dentro del contexto del usuario';
+$string['enablecourseinstances'] = 'Permitir a los usuarios agregar una instancia de repositorio dentro del curso';
+$string['enableuserinstances'] = 'Permitir a los usuarios agregar una instancia de repositorio dentro del contexto del usuario';
 $string['enter'] = 'Entrar';
 $string['entername'] = 'Por favor, escriba el nombre del directorio';
 $string['enternewname'] = 'Por favor, escriba el nombre del nuevo archivo';
 $string['error'] = 'Ha ocurrido un error desconocido.';
 $string['errordoublereference'] = 'No se puede sobrescribir el archivo con sobrenombre/alias porque el sobrenombre para este archivo ya existe.';
 $string['errornotyourfile'] = 'No puede seleccionar un archivo que no haya sido añadido por usted';
-$string['errorpostmaxsize'] = 'El archivo subido puede que exceda la directiva max_post_size del php.ini.';
-$string['erroruniquename'] = 'El nombre del ejemplo de repositorio debe ser único';
+$string['errorpostmaxsize'] = 'El archivo que intentó subir pesa mucho para poder ser procesado por el servidor';
+$string['erroruniquename'] = 'El nombre del repositorio debe ser único';
 $string['errorwhilecommunicatingwith'] = 'Error mientras se comunicaba con el repositorio \'{$a}\'.';
 $string['errorwhiledownload'] = 'Hubo un error al descargar el archivo: {$a}';
 $string['existingrepository'] = 'El repositorio ya existe';
-$string['federatedsearch'] = 'Búsqueda fedeerada';
+$string['federatedsearch'] = 'Búsqueda federada';
 $string['fileexists'] = 'Nombre de archivo ya usado. Por favor, use otro nombre';
-$string['fileexistsdialog_editor'] = 'Un archivo con el mismo nombre ya se ha adjuntado al texto que está editando.';
-$string['fileexistsdialog_filemanager'] = 'Un archivo con ese nombre ya ha sido adjuntado';
+$string['fileexistsdialog_editor'] = 'Un archivo con ese nombre ha sido anexado al texto que Usted está editando';
+$string['fileexistsdialog_filemanager'] = 'Ya ha sido anexado un archivo con ese nombre';
 $string['fileexistsdialogheader'] = 'El archivo existe';
 $string['filename'] = 'Nombre del archivo';
 $string['filenotnull'] = 'Debe seleccionar un archivo para subir';
@@ -144,9 +144,9 @@ $string['imagesize'] = '{$a->width} x {$a->height} px';
 $string['instance'] = 'instancia';
 $string['instancedeleted'] = 'Instancia de repositorio eliminada';
 $string['instances'] = 'Instancias de repositorio';
-$string['instancesforcourses'] = '{$a} Ejemplo(s) común(es) de todo el curso';
-$string['instancesforsite'] = '{$a} Ejemplo(s) común(es) de todo el curso';
-$string['instancesforusers'] = '{$a} Ejemplo(s) de usuario privado';
+$string['instancesforcourses'] = '{$a} Repositorio(s) común(es) de todo el curso';
+$string['instancesforsite'] = '{$a} Repositorio(s) común(es) de todo el curso';
+$string['instancesforusers'] = '{$a} Repositorio(s) de usuario privado';
 $string['invalidfiletype'] = 'El tipo de archivo {$a} no se acepta.';
 $string['invalidjson'] = 'Cadena JSON no válida';
 $string['invalidparams'] = 'Parámetros no válidos';
@@ -182,7 +182,7 @@ $string['nopermissiontoaccess'] = 'No tiene permiso para acceder a este reposito
 $string['norepositoriesavailable'] = 'Lo sentimos, ninguno de sus repositorios actuales puede devolver archivos en el formato solicitado.';
 $string['norepositoriesexternalavailable'] = 'Lo sentimos, ninguno de sus repositorios actuales puede devolver archivos externos.';
 $string['noresult'] = 'No hay resultados de la búsqueda';
-$string['notyourinstances'] = 'No puede ver ni editar ejemplos del repositorio de otro usuario';
+$string['notyourinstances'] = 'No puede ver ni editar repositorios de otro usuario';
 $string['off'] = 'Activado pero oculto';
 $string['on'] = 'Activado y visible';
 $string['openpicker'] = 'Seleccione un archivo...';
@@ -199,7 +199,7 @@ $string['popup'] = 'Pulse en el botón "Entrar" para identificarse';
 $string['popupblockeddownload'] = 'La ventana de descarga está bloqueada. Por favor, permita ventanas emergentes y vuelva a intentarlo.';
 $string['preview'] = 'Vista previa';
 $string['privatefilesof'] = '{$a} Archivos privados';
-$string['readonlyinstance'] = 'No puede editar ni eliminar un ejemplo de sólo lectura';
+$string['readonlyinstance'] = 'No puede editar ni eliminar un repositorio de sólo lectura';
 $string['referencesexist'] = 'Existen {$a} archivos de alias/atajos que emplean este archivo como su orígen';
 $string['referenceslist'] = 'Alias/Atajos';
 $string['refresh'] = 'Refrescar';
@@ -228,7 +228,7 @@ $string['setupdefaultplugins'] = 'Configuración de los plugins de repositorio p
 $string['siteinstances'] = 'Instancias de repositorios del sitio';
 $string['size'] = 'Tamaño';
 $string['submit'] = 'Enviar';
-$string['sync'] = 'Sync';
+$string['sync'] = 'Sincronizar';
 $string['syncfiletimeout'] = 'Tiempo de sincronización del fichero agotado';
 $string['syncimagetimeout'] = 'Tiempo de sincronización de la imagen agotado';
 $string['thumbview'] = 'Ver en forma de iconos';
@@ -247,5 +247,5 @@ $string['usenonjsfilemanager'] = 'Abrir gestor de archivos en una nueva ventana'
 $string['usenonjsfilepicker'] = 'Abrir el archivo selector en una ventana nueva';
 $string['usercontextrepositorydisabled'] = 'Usted no puede editar este repositorio en el contexto del usuario';
 $string['wrongcontext'] = 'No puede acceder a este contexto';
-$string['xhtmlerror'] = 'Usted probablemente está utilizando encabezado XHTML estricto, algunos componentes YUI no funciona en este modo, por favor deshabilite la opción en moodle';
+$string['xhtmlerror'] = 'Probablemente esté utilizando encabezado XHTML estricto. Algunos componentes YUI no funciona en este modo; por favor deshabilite la opción.';
 $string['ziped'] = 'Comprimir carpeta con éxito';

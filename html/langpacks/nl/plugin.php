@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'plugin', language 'nl', version '3.8'.
  *
- * @package   plugin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     plugin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -131,8 +131,8 @@ $string['type_editor_plural'] = 'Editors';
 $string['type_enrol'] = 'Aanmeldingswijze';
 $string['type_enrol_plural'] = 'Aanmeldingswijze';
 $string['type_fileconverter'] = 'Document converter';
-$string['type_fileconvertermanage'] = 'Beheer document converters';
 $string['type_fileconverter_plural'] = 'Document converters';
+$string['type_fileconvertermanage'] = 'Beheer document converters';
 $string['type_filter'] = 'Filter';
 $string['type_filter_plural'] = 'Tekst filters';
 $string['type_format'] = 'Cursusopmaak';
@@ -162,7 +162,7 @@ $string['type_plagiarism_plural'] = 'Plagiaatspreventieplugins';
 $string['type_portfolio'] = 'Portfolio';
 $string['type_portfolio_plural'] = 'Portfolio\'s';
 $string['type_profilefield'] = 'Profielveldtype';
-$string['type_profilefield_plural'] = 'Profielbveldtypes';
+$string['type_profilefield_plural'] = 'Profielveldtypes';
 $string['type_qbehaviour'] = 'Vragengedrag';
 $string['type_qbehaviour_plural'] = 'Vragengedrag';
 $string['type_qformat'] = 'Vraag import/export opmaak';
@@ -208,10 +208,6 @@ $string['validationmsg_filesnumber'] = 'Te weinig bestanden in het pakket';
 $string['validationmsg_filestatus'] = 'Kon niet alle bestanden uitpakken';
 $string['validationmsg_filestatus_info'] = 'De poging om bestand {$a->file} uit te pakken mislukte met als fout \'{$a->status}\'.';
 $string['validationmsg_foundlangfile'] = 'Taalbestand gevonden';
-$string['validationmsglevel_debug'] = 'Debug';
-$string['validationmsglevel_error'] = 'Fout';
-$string['validationmsglevel_info'] = 'OK';
-$string['validationmsglevel_warning'] = 'Waarschuwing';
 $string['validationmsg_maturity'] = 'Verklaar maturiteitsniveau';
 $string['validationmsg_maturity_help'] = 'De plugin kan verklaren hoe volwassen de code is. Als degene die de code onderhoud vindt dat de code stabiel is, dan zal er MATURITY_STABLE staan. Alle andere niveau\'s (zoals alfa of beta) moeten als niet stabiel beschouwd worden en er wordt een waarschuwing getoond.';
 $string['validationmsg_missingcomponent'] = 'Plugin verklaart zijn componentnaam niet';
@@ -239,6 +235,10 @@ $string['validationmsg_targetexists_help'] = 'De map waar de add-on in geïnstal
 $string['validationmsg_targetnotdir'] = 'Doellocatie wordt ingenomen door een bestand';
 $string['validationmsg_unknowntype'] = 'Onbekend plugintype';
 $string['validationmsg_versionphpsyntax'] = 'Niet-ondersteunde syntax gevonden in het bestand version.php';
+$string['validationmsglevel_debug'] = 'Debug';
+$string['validationmsglevel_error'] = 'Fout';
+$string['validationmsglevel_info'] = 'OK';
+$string['validationmsglevel_warning'] = 'Waarschuwing';
 $string['version'] = 'Versie';
 $string['versiondb'] = 'Huidige versies';
 $string['versiondisk'] = 'Nieuwe versie';

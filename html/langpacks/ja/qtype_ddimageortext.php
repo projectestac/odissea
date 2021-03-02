@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddimageortext', language 'ja', version '3.8'.
  *
- * @package   qtype_ddimageortext
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddimageortext
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -58,9 +58,9 @@ $string['label'] = 'テキスト';
 $string['nolabel'] = 'ラベルテキストなし';
 $string['pleasedraganimagetoeachdropregion'] = 'あなたの解答は完了していません。それぞれのドロップエリアにアイテムをドラッグしてください。';
 $string['pluginname'] = 'ドラッグ＆ドロップイメージ';
+$string['pluginname_help'] = 'ドラッグ＆ドロップイメージ問題は背景イメージに定義されたドロップゾーンにイメージまたはテキストラベルをドラッグ＆ドロップするためのレスポンデントを必要とします。ドラッグ可能アイテムは特定のグループ内アイテムすべてをドロップゾーンで同じ色にするためにグループ分けすることができます。無制限にマークされたドラッグ可能アイテムは2つの以上のゾーンにドロップすることができます。';
 $string['pluginnameadding'] = 'ドラッグ＆ドロップイメージの追加';
 $string['pluginnameediting'] = 'ドラッグ＆ドロップイメージの編集';
-$string['pluginname_help'] = 'ドラッグ＆ドロップイメージ問題は背景イメージに定義されたドロップゾーンにイメージまたはテキストラベルをドラッグ＆ドロップするためのレスポンデントを必要とします。ドラッグ可能アイテムは特定のグループ内アイテムすべてをドロップゾーンで同じ色にするためにグループ分けすることができます。無制限にマークされたドラッグ可能アイテムは2つの以上のゾーンにドロップすることができます。';
 $string['pluginnamesummary'] = 'イメージまたはテキストラベルは背景イメージのドロップゾーンにドラッグ＆ドロップされます。
 
 注意: この問題タイプは視覚に障害のあるユーザは利用できません。';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'group', language 'ko', version '3.8'.
  *
- * @package   group
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     group
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -81,19 +81,19 @@ $string['filtergroups'] = '모둠을 다음 조건으로 필터링 :';
 $string['group'] = '모둠';
 $string['groupaddedsuccesfully'] = '{$a} 모둠이 성공적으로 추가되었습니다';
 $string['groupaddedtogroupingsuccesfully'] = '모둠 {$a->groupname}이 모둠무리 {$a->groupingname}에 성공적으로 추가되었습니다.';
-$string['groupby'] = '다음 수에 근거하여 모둠 생성';
+$string['groupby'] = '자동 생성 :';
 $string['groupdescription'] = '모둠 설명';
 $string['groupinfo'] = '선택한 모둠의 정보';
 $string['groupinfomembers'] = '선택한 구성원의 정보';
 $string['groupinfopeople'] = '선택한 사람의 정보';
 $string['grouping'] = '모둠무리';
-$string['groupingaddedsuccesfully'] = '모둠무리 {$a}가 성공적으로 추가되었습니다.';
-$string['groupingdescription'] = '모둠무리 설명';
 $string['grouping_help'] = '모둠 무리는 강좌내 모둠들의 집합을 의미합니다.
 
 모둠 무리를 선택하면, 모둠무리내의 모둠에 배정된 사용자들은 함께 작업할 수 있습니다.
 
 ';
+$string['groupingaddedsuccesfully'] = '모둠무리 {$a}가 성공적으로 추가되었습니다.';
+$string['groupingdescription'] = '모둠무리 설명';
 $string['groupingname'] = '모둠무리 이름';
 $string['groupingnameexists'] = '이 강좌에 이미 \'{$a}\'라는 모둠무리 이름이 존재합니다. 다른 이름을 쓰세요.';
 $string['groupings'] = '모둠무리';
@@ -106,8 +106,6 @@ $string['groupmembers'] = '모둠 구성원';
 $string['groupmemberssee'] = '모둠 구성원 보기';
 $string['groupmembersselected'] = '선택한 모둠의 구성원';
 $string['groupmode'] = '모둠 모드';
-$string['groupmodeforce'] = '강제모둠 모드';
-$string['groupmodeforce_help'] = '만일 강제모둠 모드가 되면, 강좌 내의 모든 활동은 모듬 모드로 작동한다. 개개 활동의 모둠 모드 설정은 무시된다.';
 $string['groupmode_help'] = '이 설정은 세 옵션이 있습니다.
 
 * 모둠 없음 - 하위 모둠이 없으며, 모두가 하나의 커다란 공동체의 일원이 됨
@@ -116,6 +114,8 @@ $string['groupmode_help'] = '이 설정은 세 옵션이 있습니다.
 
 강좌 수준에서 정의된 모둠 모드는 그 강좌내에서 정의된 모든 활동에 대해 기본으로 적용됩니다.
 모둠을 지원하는 개개의 활동은 그 자체의 모둠을 정의할 수 있습니다. 만일 모둠 모드가 강좌수준에서 정해지면  개별활동에 설정된 모둠 모드는 무시됩니다.';
+$string['groupmodeforce'] = '강제모둠 모드';
+$string['groupmodeforce_help'] = '만일 강제모둠 모드가 되면, 강좌 내의 모든 활동은 모듬 모드로 작동한다. 개개 활동의 모둠 모드 설정은 무시된다.';
 $string['groupmy'] = '내 모둠';
 $string['groupname'] = '모둠 이름';
 $string['groupnameexists'] = '이 강좌에는 이미 \'{$a}\'라는 모둠이 있습니다. 다른 이름을 선택하세요.';
@@ -171,7 +171,7 @@ $string['removegroupfromselectedgrouping'] = '선택한 모둠무리에서 모�
 $string['removegroupingsmembers'] = '모둠무리에서 모둠 제거';
 $string['removegroupsmembers'] = '모둠 구성원 제거';
 $string['removeselectedusers'] = '선택한 사용자 제거';
-$string['selectfromrole'] = '구성원을 선택할 수 있는 역할';
+$string['selectfromrole'] = '다음 역할의 구성원 선택';
 $string['showgroupsingrouping'] = '무리에 있는 모둠 보기';
 $string['showmembersforgroup'] = '모둠 구성원 보기';
 $string['toomanygroups'] = '모둠의 수를 채우기에 부족한 사용자 수 - 선택된 역할에 단지 {$a} 사용자만 있습니다.';

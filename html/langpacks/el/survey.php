@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'el', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -184,15 +184,15 @@ $string['howlong'] = 'Πόση ώρα σας πήρε για να συμπληρ
 $string['howlongoptions'] = 'Κάτω από 1 λεπτό, 1-2 λεπτά, 2-3 λεπτά, 3-4 λεπτά, 4-5-λεπτά, 5-10 λεπτά, περισσότερο από 10 λεπτά';
 $string['ifoundthat'] = 'Ανακάλυψα ότι';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Έρευνας';
+$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Έρευνας.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Έρευνας';
 $string['indicator:cognitivedepthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο βάθος κατανόησης που προσφέρεται από τις δραστηριότητες Έρευνας κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία εμφάνιση, Εμφάνιση, Υποβολή)';
 $string['indicator:cognitivedepthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Βάθος_κατανόησης';
-$string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Έρευνας.';
 $string['indicator:socialbreadth'] = 'Κοινωνικό εύρος Έρευνας';
+$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Έρευνας.';
 $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Έρευνας';
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Έρευνας κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία συμμετοχή, Συμμετέχων μόνος)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
-$string['indicator:socialbreadth_help'] = 'Αυτός ο δείκτης βασίζεται στο κοινωνικό εύρος που επιτεύχθηκε από τον μαθητή σε μια δραστηριότητα Έρευνας.';
 $string['introtext'] = 'Κείμενο εισαγωγής';
 $string['invalidsurveyid'] = 'Εσφαλμένο id έρευνας';
 $string['invalidtmptid'] = 'Εσφαλμένο id τύπου';
@@ -239,20 +239,20 @@ $string['seemoredetail'] = 'Κάντε κλικ εδώ για να δείτε π
 $string['selectedquestions'] = 'Επιλεγμένες ερωτήσεις μιας κλίμακας, όλοι οι μαθητές';
 $string['summary'] = 'Περίληψη';
 $string['survey:addinstance'] = 'Προσθήκη νέας έρευνας';
-$string['surveycompleted'] = 'Έχετε ολοκληρώσει αυτή την έρευνα. Το παρακάτω γράφημα δείχνει μια σύνοψη των αποτελεσμάτων σας, σε σύγκριση με τους μέσους όρους της τάξης.';
-$string['surveycompletednograph'] = 'Έχετε ολοκληρώσει αυτή την έρευνα.';
 $string['survey:download'] = 'Κατεβάστε τις απαντήσεις';
-$string['surveygraph'] = 'Γραφική παράσταση';
-$string['surveyname'] = 'Όνομα έρευνας';
 $string['survey:participate'] = 'Συμμετοχή στην έρευνα';
 $string['survey:readresponses'] = 'Δείτε τις απαντήσεις';
+$string['surveycompleted'] = 'Έχετε ολοκληρώσει αυτή την έρευνα. Το παρακάτω γράφημα δείχνει μια σύνοψη των αποτελεσμάτων σας, σε σύγκριση με τους μέσους όρους της τάξης.';
+$string['surveycompletednograph'] = 'Έχετε ολοκληρώσει αυτή την έρευνα.';
+$string['surveygraph'] = 'Γραφική παράσταση';
+$string['surveyname'] = 'Όνομα έρευνας';
 $string['surveysaved'] = 'Αποθήκευση έρευνας';
 $string['surveytype'] = 'Τύπος έρευνας';
 $string['surveytype_help'] = 'Υπάρχουν 3 διαθέσιμοι τύποι έρευνας:
 
 * Έρευνα για την στάση και την μάθηση (Attitudes to Thinking and Learning Survey - ATTLS) - Για την μέτρηση του βαθμού στον οποίο ένα άτομο είναι «συνδεδεμένος γνώστης» (τείνει να βρίσκει την μάθηση πιο ευχάριστη και συχνά είναι πιο συνεργάσιμος, συμπαθής και πιο πρόθυμος να χτίσει πάνω στις ιδέες των άλλων) ή ένας «αυτόνομος γνώστης» (τείνει να έχει πιο κριτική και διαλεκτική στάση απέναντι στη μάθηση)
 * Έρευνα κρίσιμων περιστατικών
-* Έρευνα κονστρουκτιβιστικού(εποικοδομιστικού) διαδικτυακού μαθησιακού περιβάλλοντος (Critical incidents survey / Constructivist On-line Learning Environment Survey - COLLES) - Για την παρακολούθηση του βαθμού στον οποίο η διαδραστική ικανότητα του παγκόσμιου ιστού μπορεί να χρησιμοποιηθεί για την εμπλοκή μαθητών σε δυναμικές πρακτικές μάθησης';
+* Έρευνα κονστρουκτιβιστικού διαδικτυακού μαθησιακού περιβάλλοντος (Critical incidents survey / Constructivist On-line Learning Environment Survey - COLLES) - Για την παρακολούθηση του βαθμού στον οποίο η διαδραστική ικανότητα του παγκόσμιου ιστού μπορεί να χρησιμοποιηθεί για την εμπλοκή μαθητών σε δυναμικές πρακτικές μάθησης';
 $string['surveytype_link'] = 'άρθρωμα/έρευνα/άρθρωμα';
 $string['thanksforanswers'] = 'Ευχαριστούμε που απαντήσατε σε αυτή την έρευνα, {$a}';
 $string['time'] = 'Ώρα';

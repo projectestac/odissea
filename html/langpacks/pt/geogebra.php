@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'geogebra', language 'pt', version '3.8'.
  *
- * @package   geogebra
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     geogebra
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -54,23 +54,23 @@ $string['extractedfromggb'] = 'ficheiros extraidos de ggb';
 $string['filename'] = 'Nome do ficheiro';
 $string['filenotfound'] = 'O ficheiro indicado não existe';
 $string['filetype'] = 'Tipo';
-$string['filetypeexternal'] = 'URL externo';
 $string['filetype_help'] = 'Esta configuração determina como a atividade GeoGebra está incluída na disciplina. Existem até 2 opções:
 
 * Carregar GeoGebra - Permite que um pacote válido ".ggb" possa ser escolhido pelo seletor de ficheiros.
 * URL externo - Permite que seja especificada um URL. Nota: O URL deve começar com http(s) ou www e conter um ficheiro ".ggb" válido.';
+$string['filetypeexternal'] = 'URL externo';
 $string['filetypelocal'] = 'Novo ficheiro';
 $string['firstattempt'] = 'Primeira tentativa';
 $string['for'] = 'para';
 $string['functionalityoptionsgrp'] = 'Funcionalidades';
 $string['geogebra:addinstance'] = 'Adicionar GeoGebra';
-$string['geogebrafile'] = 'Ficheiro GeoGebra';
-$string['geogebrafile_help'] = 'ficheiro .gbb';
 $string['geogebra:grade'] = 'Avaliar GeoGebra';
 $string['geogebra:submit'] = 'Submeter GeoGebra';
+$string['geogebra:view'] = 'Visualizar GeoGebra';
+$string['geogebrafile'] = 'Ficheiro GeoGebra';
+$string['geogebrafile_help'] = 'ficheiro .gbb';
 $string['geogebraurl'] = 'URL';
 $string['geogebraurl_help'] = 'Esta configuração permite que seja especificado um URL para o ficheiro GeoGebra, em vez de escolher um ficheiro através do seletor de ficheiros.';
-$string['geogebra:view'] = 'Visualizar GeoGebra';
 $string['grade'] = 'Nota';
 $string['gradeit'] = 'Avaliar';
 $string['grademethod'] = 'Método de avaliação';
@@ -124,9 +124,9 @@ $string['settings'] = 'Configurações';
 $string['showAlgebraInput'] = 'Mostrar barra de entrada';
 $string['showMenuBar'] = 'Mostrar barra de menu';
 $string['showResetIcon'] = 'Mostrar ícone de reiniciar';
-$string['showsubmit'] = 'Mostrar botão Submeter';
 $string['showToolBar'] = 'Mostrar barra de ferramentas';
 $string['showToolBarHelp'] = 'Mostrar ajuda';
+$string['showsubmit'] = 'Mostrar botão Submeter';
 $string['status'] = 'Estado';
 $string['submitandfinish'] = 'Submeter e finalizar';
 $string['timing'] = 'Disponibilidade';

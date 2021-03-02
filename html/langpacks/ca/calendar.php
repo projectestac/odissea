@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'calendar', language 'ca', version '3.8'.
  *
- * @package   calendar
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     calendar
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -193,9 +193,6 @@ $string['noupcomingevents'] = 'No hi ha esdeveniments propers.';
 $string['oneevent'] = 'un esdeveniment';
 $string['pollinterval'] = 'Interval d\'actualització';
 $string['pollinterval_help'] = 'Freqüència amb què us agradaria que el calendari s\'actualitzés amb nous esdeveniments.';
-$string['preferences'] = 'Preferències';
-$string['preferences_available'] = 'Preferències personals';
-$string['preferredcalendar'] = 'Calendari preferit';
 $string['pref_lookahead'] = 'Esdeveniments propers';
 $string['pref_lookahead_help'] = 'Això estableix el nombre (màxim) de dies futurs en què pot caure l\'inici d\'un esdeveniment per tal de mostrar-se com a esdeveniment proper. Els esdeveniments que comencin més enllà no es mostraran mai com a propers. Tingueu en compte que <strong>no hi ha cap garantia</strong> que els esdeveniments que comencin en aquest interval es mostrin; si n\'hi ha molts (més que els especificats al paràmetre «Nombre màxim d\'esdeveniments propers») aleshores els més distants no es mostraran.';
 $string['pref_maxevents'] = 'Nombre màxim d\'esdeveniments propers';
@@ -206,16 +203,19 @@ $string['pref_startwday'] = 'Primer dia de la setmana';
 $string['pref_startwday_help'] = 'Les setmanes del calendari es mostraran començant pel dia que escolliu aquí.';
 $string['pref_timeformat'] = 'Format de visualització de l\'hora';
 $string['pref_timeformat_help'] = 'Podeu escollir visualitzar les hores en format de 12 hores o bé de 24. Si escolliu «per defecte», llavors el format s\'escollirà automàticament en funció de l\'idioma que utilitzeu al lloc.';
+$string['preferences'] = 'Preferències';
+$string['preferences_available'] = 'Preferències personals';
+$string['preferredcalendar'] = 'Calendari preferit';
 $string['privacy:metadata:calendar:event'] = 'El component Calendari pot emmagatzemar els detalls d\'esdeveniment del calendari de l\'usuari en el nucli del subsistema.';
 $string['privacy:metadata:calendar:event:description'] = 'La descripció de l\'esdeveniment del calendari.';
 $string['privacy:metadata:calendar:event:eventtype'] = 'El tipus d\'esdeveniment de l\'esdeveniment del calendari.';
 $string['privacy:metadata:calendar:event:name'] = 'El nom de l\'esdeveniment del calendari.';
+$string['privacy:metadata:calendar:event:timeduration'] = 'La durada de la subscripció del calendari.';
+$string['privacy:metadata:calendar:event:timestart'] = 'El temps de començament de la subscripció del calendari.';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'El component Calendari pot emmagatzemar els detalls de subscripcions del calendari de l\'usuari en el nucli del subsistema.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'El tipus d\'esdeveniment de la subscripció del calendari.';
 $string['privacy:metadata:calendar:event_subscriptions:name'] = 'El nom de la subscripció del calendari.';
 $string['privacy:metadata:calendar:event_subscriptions:url'] = 'L\'URL de la subscripció del calendari.';
-$string['privacy:metadata:calendar:event:timeduration'] = 'La durada de la subscripció del calendari.';
-$string['privacy:metadata:calendar:event:timestart'] = 'El temps de començament de la subscripció del calendari.';
 $string['privacy:metadata:calendar:preferences:calendar_savedflt'] = 'El tipus d\'esdeveniment de calendari configurat mostra la preferència d\'usuari.';
 $string['recentupcoming'] = 'Recents i els propers 60 dies';
 $string['repeatedevents'] = 'Esdeveniments periòdics';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'pagetype', language 'gl', version '3.8'.
  *
- * @package   pagetype
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     pagetype
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,7 +36,7 @@ $string['page-course-view-x'] = 'Calquera tipo de páxina principal do curso';
 $string['page-course-x'] = 'Calquera páxina do curso';
 $string['page-mod-x'] = 'Calquera páxina de módulo de actividade';
 $string['page-mod-x-view'] = 'Calquera páxina do módulo de actividade principal';
-$string['page-my-index'] = 'A miña páxina de inicio';
+$string['page-my-index'] = 'Páxina do taboleiro';
 $string['page-report-x'] = 'Calquera páxina de informe';
 $string['page-site-index'] = 'Só a páxina de portada';
 $string['page-site-x'] = 'Calquera páxina de alto nivel do sitio';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_exportimscp', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'booktool_exportimscp', language 'ar', version '3.8'.
  *
- * @package   booktool_exportimscp
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     booktool_exportimscp
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventbookexported'] = 'تصدير كتاب';
+$string['eventbookexported'] = 'كتاب تم تصديره';
 $string['exportimscp:export'] = 'تصدير الكتاب كحزمة محتوى IMS';
 $string['generateimscp'] = 'توليد IMS CP';
 $string['nochapters'] = 'لا يوجد فصول للكتاب، فغير قادر على التصدير إلى CP IMS.';
-$string['pluginname'] = 'تصدير كتاب IMS CP';
-$string['privacy:metadata'] = 'لا يقوم ملحق تصدير Book IMS CP بتخزين أيّ بيانات شخصية.';
+$string['pluginname'] = 'كتاب IMS CP تم تصديره';
+$string['privacy:metadata'] = 'لا يقوم ملحق The Book IMS CP export  بتخزين أيّ بيانات شخصية.';

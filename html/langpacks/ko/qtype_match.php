@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_match', language 'ko', version '3.8'.
  *
- * @package   qtype_match
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_match
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,9 +36,9 @@ $string['notenoughqsandas'] = '최소한 {$a->q} 개의 질문과 {$a->a} 개의
 $string['notenoughquestions'] = '적어도 {$a} 개의 질문-답 쌍을 제공해야만 합니다.';
 $string['pleaseananswerallparts'] = '질문의 모든 부분에 대해 답하세요.';
 $string['pluginname'] = '짝찾기형';
+$string['pluginname_help'] = '짝찾기형 질문은 응답자에게 이름이나 문장의 목록(질문)을 다른 이름이나 문장으로 짝을 연결하도록 합니다.';
 $string['pluginnameadding'] = '짝찾기형 질문 추가';
 $string['pluginnameediting'] = '짝찾기형 질문 편집';
-$string['pluginname_help'] = '짝찾기형 질문은 응답자에게 이름이나 문장의 목록(질문)을 다른 이름이나 문장으로 짝을 연결하도록 합니다.';
 $string['pluginnamesummary'] = '각 내용에 적합한 답을 주어진 목록에서 맞추어야 합니다.';
 $string['shuffle'] = '섞음';
-$string['shuffle_help'] = '활성화되고, 퀴즈 설정에서  "질문내 섞음"도 활성화되면 문장(답)의 순서가 매 시도때마다 무작위로 섞이게 됩니다.';
+$string['shuffle_help'] = '활성화되고, 활동 설정에서  "질문내 섞음"도 활성화되면 문장(답)의 순서가 매 시도때마다 무작위로 섞이게 됩니다.';

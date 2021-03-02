@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'editor_atto', language 'ca', version '3.8'.
  *
- * @package   editor_atto
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     editor_atto
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,8 +39,8 @@ $string['errorpluginisusedtwice'] = 'El connector \'{$a}\' està duplicat; els c
 $string['errorpluginnotfound'] = 'El connector \'{$a}\' no és pot utilitzar; no sembla qu estigui instal·lat.';
 $string['errortextrecovery'] = 'Malauradament l\'esborrany no s\'ha pogut restaurar.';
 $string['infostatus'] = 'Informació';
-$string['pluginname'] = 'Editor HTML Atto';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
+$string['pluginname'] = 'Editor HTML Atto';
 $string['privacy:metadata:database:atto_autosave'] = 'Esborranys de l\'editor de text desats automàticament';
 $string['privacy:metadata:database:atto_autosave:drafttext'] = 'El text que s\'ha desat.';
 $string['privacy:metadata:database:atto_autosave:timemodified'] = 'El temps que s\'ha modificat el contingut.';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,25 +12,26 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'nl', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcache', language 'nl', version '3.8'.
  *
- * @package   cachestore_memcache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_memcache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['clustered'] = 'Clusterserver inschakelen';
-$string['clusteredheader'] = 'Split servers';
 $string['clustered_help'] = 'Dit wordt gebruikt om lees één, schrijf veel functionaliteit mogelijk te maken.
 
 Het bedoelde gebruik is om een geöptimaliseerder opslagruimte te maken voor configuratie die load-balancing gebruiken. De opslagruimte zal van één server (gewoonlijk localhost), maar schrijft weg naar veel server (alle servers in de load balance pool). Voor caches waarbij de lees/schrijfverhouding erg groot is, bespaart dit veel netwerkbelasting.
 
 Wanneer deze instelling is ingeschakeld, dan wordt de server hierboven opgelijst.';
+$string['clusteredheader'] = 'Split servers';
 $string['pluginname'] = 'Memcache';
 $string['prefix'] = 'Sleutel voorvoegsel';
 $string['prefix_help'] = 'Dit prefix wordt gebruikt voor alle sleutelnamen op de memcacheserver.
@@ -41,7 +41,6 @@ $string['prefixinvalid'] = 'Ongeldige prefix. Je mag enkel a-z A-Z 0-9 _ gebruik
 $string['privacy:metadata:memcache'] = 'De Memcache-plugin bewaart gegevens kort als deel van zijn cachingsfunctie. Deze gegevens worden bewaard op een Memcache-server en daar regelmatig gewist.';
 $string['privacy:metadata:memcache:data'] = 'De gegevens die in cache bewaard worden';
 $string['servers'] = 'Servers';
-$string['serversclusterinvalid'] = 'Er is één server vereist wanneer je clustering inschakeld.';
 $string['servers_help'] = 'Hiermee worden de servers ingesteld die door de memcache-adaptor gebruikt moeten worden. Servers moeten één per regel gedefiniëerd worden en moeten een serveradres en optioneel een poort en weging bevatten. Als er geen poort opgegeven wordt, dan wordt de standaardpoort gebruikt (11211).
 
 Bijvoorbeeld:
@@ -52,6 +51,7 @@ servernaam:poort:weging
 </pre>
 
 Als *Cluster servers* ingeschakeld is onderaan, dan moet er minstens één server daar in de lijst voorkomen. Dit kan de naam zijn die altijd de lokale machine geeft, bijvoorbeeld 127.0.0.1 of localhost.';
+$string['serversclusterinvalid'] = 'Er is één server vereist wanneer je clustering inschakeld.';
 $string['sessionhandlerconflict'] = 'Waarschuwing: een memcache instantie ({$a}) is geconfigureerd om dezelfde memcached server te gebruiken voor sessies. Het leegmaken van alle caches zal er voor zorgen dat ook sessies worden verwijderd.';
 $string['setservers'] = 'Set servers';
 $string['setservers_help'] = 'Dt is de lijst van servers die aangepast zal worden wanneer gegevens in de cache gewijzigd worden. Meestal de fully qualified domain name voor elke server in de pool.

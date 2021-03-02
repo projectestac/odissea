@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'eu', branch 'MOODLE_31_STABLE'
+ * Strings for component 'block_progress', language 'eu', version '3.8'.
  *
- * @package   block_progress
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_progress
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,10 +117,10 @@ $string['no_blocks'] = 'Ez dago aurrerapen-barra blokerik ezarrita zure ikastaro
 $string['no_courses'] = 'Ez zaude ezein ikastarotan matrikulatuta. Bakarrik matrikulatuta zaudeneko ikastaroetako barrak erakutsiko dira.';
 $string['no_events_config_message'] = 'Ez dago jarduera edo baliabiderik jarraipena egiteko. Sor itzazu jarduera edota baliabide batzuk eta ondoren konfigura ezazu bloke hau.';
 $string['no_events_message'] = 'Ez dago jarraituriko jarduera edo baliabiderik. Konfigura ezazu blokea jarraipena ezartzeko.';
+$string['no_visible_events_message'] = 'Une honetan ez dago ikusgai jarraituriko elementurik.';
 $string['notAttempted_colour'] = '#C71C22';
 $string['notattempted_colour_descr'] = 'HTML Kolore kodea oraindik saiatu gabeko  elementuentzat';
 $string['notattempted_colour_title'] = 'Saiatu gabekoen kolorea';
-$string['no_visible_events_message'] = 'Une honetan ez dago ikusgai jarraituriko elementurik.';
 $string['now_indicator'] = 'ORAIN';
 $string['ouwiki'] = 'OU Wikia';
 $string['overview'] = 'Ikasleen ikuspegi orokorra';
@@ -133,10 +133,10 @@ $string['pluginname'] = 'Aurrerapen-barra';
 $string['posted_to'] = 'bertan idatzi izana';
 $string['progress'] = 'Aurrerapena';
 $string['progress:addinstance'] = 'Gehitu aurrerapen-barra bloke berria';
-$string['progressbar'] = 'Aurrerapen-barra';
 $string['progress:myaddinstance'] = 'Gehitu aurrerapen-barra Nire hasiera orrira';
 $string['progress:overview'] = 'Ikusi ikasle guztien aurrerapen-barren ikuspegi orokorra';
 $string['progress:showbar'] = 'Erakutsi barra aurrerapen-barra blokean';
+$string['progressbar'] = 'Aurrerapen-barra';
 $string['questionnaire'] = 'Galdeketa-inkesta';
 $string['quiz'] = 'Galdetegia';
 $string['recordingsbn'] = 'BBB Grabaketak';

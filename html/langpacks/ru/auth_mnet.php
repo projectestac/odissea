@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,23 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_mnet', language 'ru', version '3.8'.
  *
- * @package   auth_mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_mnet_auto_add_remote_users'] = 'Если установлено значение «Да», то локальная запись пользователя создается автоматически при первом входе внешнего пользователя в систему.';
-$string['auth_mnetdescription'] = 'Аутентификация пользователей с использованием сети доверия, определенной в настройках «Сетевое взаимодейтсвие MNet».';
 $string['auth_mnet_roamin'] = 'Пользователи этих сайтов могут путешествовать по Вашему сайту';
 $string['auth_mnet_roamout'] = 'Ваши пользователи могут путешествовать по этим сайтам';
 $string['auth_mnet_rpc_negotiation_timeout'] = 'Тайм-аут (в секундах) для аутентификации по протоколу XML-RPC.';
+$string['auth_mnetdescription'] = 'Аутентификация пользователей с использованием сети доверия, определенной в настройках «Сетевое взаимодейтсвие MNet».';
 $string['auto_add_remote_users'] = 'Автоматически добавлять внешних пользователей';
 $string['pluginname'] = 'Аутентификация для пользователей сети MNet';
 $string['privacy:metadata:external:mahara'] = 'Этот плагин может отправлять данные наружу в связанное приложение Mahara.';

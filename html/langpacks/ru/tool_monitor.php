@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ru', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_monitor', language 'ru', version '3.8'.
  *
- * @package   tool_monitor
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_monitor
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -72,11 +72,11 @@ $string['messagetemplate_help'] = 'Это шаблон сообщения, ко�
 * Описание правила {description}<br />
 * Название события, связанного с правилом {eventname}';
 $string['moduleinstance'] = 'Экземпляр модуля';
-$string['monitordisabled'] = 'Мониторинг событий в настоящее время отключен.';
-$string['monitorenabled'] = 'Мониторинг событий в настоящее время включен.';
 $string['monitor:managerules'] = 'Управлять правилами отслеживания событий';
 $string['monitor:managetool'] = 'Включать/отключать отслеживание событий';
 $string['monitor:subscribe'] = 'Подписываться на уведомления о срабатывании правил';
+$string['monitordisabled'] = 'Мониторинг событий в настоящее время отключен.';
+$string['monitorenabled'] = 'Мониторинг событий в настоящее время включен.';
 $string['norules'] = 'Нет правил для мониторинга событий.';
 $string['pluginname'] = 'Отслеживание событий';
 $string['privacy:metadata:historysummary'] = 'Хранит историю отправленных уведомлений';

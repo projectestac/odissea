@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'assign', language 'de', version '3.8'.
  *
- * @package   assign
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     assign
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = 'Sie haben Aufgaben, die Ihre Bearbeitung erfordern.';
 $string['addattempt'] = 'Weiteren Versuch zulassen';
 $string['addnewattempt'] = 'Neuen Versuch hinzufügen';
+$string['addnewattempt_help'] = 'Dies erzeugt eine neue leere Lösung, die Sie bearbeiten können.';
 $string['addnewattemptfromprevious'] = 'Neuen Versuch auf Grundlage der vorherigen Lösung abgeben';
-$string['addnewattemptfromprevious_help'] = 'Hiermit kopieren Sie den Inhalt Ihrer vorherigen Einreichungen, um eine neue Einreichung zu erstellen.';
-$string['addnewattempt_help'] = 'Dies erzeugt eine neue leere Lösung, in der Sie arbeiten können.';
+$string['addnewattemptfromprevious_help'] = 'Hiermit kopieren Sie den Inhalt Ihrer vorherigen Lösung, um eine neue Lösung zu erstellen.';
 $string['addnewgroupoverride'] = 'Verfügbarkeitsänderungen für Gruppen anlegen';
 $string['addnewuseroverride'] = 'Verfügbarkeitsänderung für Nutzer anlegen';
-$string['addsubmission'] = 'Abgabe hinzufügen';
+$string['addsubmission'] = 'Lösung erstellen';
 $string['addsubmission_help'] = 'Sie haben bisher keine Lösungen abgegeben.';
 $string['allocatedmarker'] = 'Zugeordnete/r Bewerter/in';
 $string['allocatedmarker_help'] = 'Bewerter/in, der/die dieser Abgabe zugeordnet ist';
@@ -49,14 +49,23 @@ $string['applytoteam'] = 'Bewertungen und Feedback der gesamten Gruppe zuweisen'
 $string['assign:addinstance'] = 'Neue Aufgabe hinzufügen';
 $string['assign:editothersubmission'] = 'Weitere Teilnehmerlösung bearbeiten';
 $string['assign:exportownsubmission'] = 'Eigene Lösung exportieren';
-$string['assignfeedback'] = 'Feedback Plugin';
-$string['assignfeedbackpluginname'] = 'Feedback Plugin';
 $string['assign:grade'] = 'Aufgabe bewerten';
 $string['assign:grantextension'] = 'Erweiterung zulassen';
 $string['assign:manageallocations'] = 'Bewerter/innen verwalten, die dieser Abgabe zugeordnet sind';
 $string['assign:managegrades'] = 'Bewertungen überprüfen und veröffentlichen';
 $string['assign:manageoverrides'] = 'Verfügbarkeitsänderungen für Aufgaben verwalten';
-$string['assignmentisdue'] = 'Aufgabe ist fällig';
+$string['assign:receivegradernotifications'] = 'Systemnachrichten zur Bewertungsabgabe empfangen';
+$string['assign:releasegrades'] = 'Bewertung veröffentlichen';
+$string['assign:revealidentities'] = 'Teilnehmeridentität anzeigen';
+$string['assign:reviewgrades'] = 'Bewertungen prüfen';
+$string['assign:showhiddengrader'] = 'Identität von verborgener Bewertungsperson sehen';
+$string['assign:submit'] = 'Lösung abgeben';
+$string['assign:view'] = 'Aufgabe ansehen';
+$string['assign:viewblinddetails'] = 'Teilnehmeridentität anzeigen, obwohl anonyme Bewertung eingeschaltet ist';
+$string['assign:viewgrades'] = 'Bewertungen anzeigen';
+$string['assignfeedback'] = 'Feedback Plugin';
+$string['assignfeedbackpluginname'] = 'Feedback Plugin';
+$string['assignmentisdue'] = 'Das Abgabeende ist vorbei';
 $string['assignmentmail'] = 'Guten Tag,
 
 {$a->grader} hat Ihnen ein Feedback zur Ihrer Aufgabenlösung für  \'{$a->assignment}\' bereitgestellt.
@@ -79,17 +88,8 @@ Ihr E-Learning-Team';
 $string['assignmentname'] = 'Name der Aufgabe';
 $string['assignmentplugins'] = 'Aufgabentypen';
 $string['assignmentsperpage'] = 'Aufgaben pro Seite';
-$string['assign:receivegradernotifications'] = 'Systemnachrichten zur Bewertungsabgabe empfangen';
-$string['assign:releasegrades'] = 'Bewertung veröffentlichen';
-$string['assign:revealidentities'] = 'Teilnehmeridentität anzeigen';
-$string['assign:reviewgrades'] = 'Bewertungen prüfen';
-$string['assign:showhiddengrader'] = 'Identität von verborgener Bewertungsperson sehen';
 $string['assignsubmission'] = 'Abgabetyp';
 $string['assignsubmissionpluginname'] = 'Abgabetyp';
-$string['assign:submit'] = 'Aufgabe abgeben';
-$string['assign:view'] = 'Aufgabe ansehen';
-$string['assign:viewblinddetails'] = 'Teilnehmeridentität anzeigen, obwohl anonyme Bewertung eingeschaltet ist';
-$string['assign:viewgrades'] = 'Bewertungen anzeigen';
 $string['attemptheading'] = 'Versuch {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Vorherige Versuche';
 $string['attemptnumber'] = 'Nummer';
@@ -121,8 +121,8 @@ $string['batchoperationunlock'] = 'Abgaben freigeben';
 $string['batchsetallocatedmarker'] = 'Bewerter für {$a} ausgewählte Nutzer festlegen.';
 $string['batchsetmarkingworkflowstateforusers'] = 'Bewertungsworkflow-Status für {$a} ausgewählte Nutzer festlegen.';
 $string['blindmarking'] = 'Anonyme Bewertung';
-$string['blindmarkingenabledwarning'] = 'Anonyme Bewertungen sind für diese Aktivität aktiviert.';
 $string['blindmarking_help'] = 'Die anonyme Bewertung verbirgt die Teilnehmeridentität während der Bewertung. Die Option kann nicht mehr geändert werden, nachdem die erste Lösung eingereicht oder Bewertung vorgenommen wurde.';
+$string['blindmarkingenabledwarning'] = 'Anonyme Bewertungen sind für diese Aktivität aktiviert.';
 $string['calendardue'] = '{$a} ist fällig.';
 $string['calendargradingdue'] = '{$a} ist zur Bewertung fällig.';
 $string['changefilters'] = 'Filter wechseln';
@@ -151,9 +151,9 @@ $string['currentattempt'] = 'Dies ist Versuch {$a}.';
 $string['currentattemptof'] = 'Versuch {$a->attemptnumber} (mögliche Versuche {$a->maxattempts})';
 $string['currentgrade'] = 'Aktuelle Bewertung in Bewertungen';
 $string['cutoffdate'] = 'Letzte Abgabemöglichkeit';
+$string['cutoffdate_help'] = 'Diese Funktion sperrt die Abgabe von Lösungen ab diesem Termin, sofern keine individuellen Verlängerungen zugelassen wurden.';
 $string['cutoffdatecolon'] = 'Letzte Abgabemöglichkeit: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'Der Termin der letzten Abgabemöglichkeit kann nicht früher liegen als der erlaubte Abgabebeginn.';
-$string['cutoffdate_help'] = 'Diese Funktion sperrt die Abgabe von Lösungen ab diesem Termin, sofern keine individuellen Verlängerungen zugelassen wurden.';
 $string['cutoffdatevalidation'] = 'Der Termin der letzten Abgabemöglichkeit kann nicht früher liegen als das Fälligkeitsdatum.';
 $string['defaultlayout'] = 'Standardlayout wiederherstellen';
 $string['defaultsettings'] = 'Voreinstellungen';
@@ -167,8 +167,8 @@ $string['downloadasfolders'] = 'Abgaben in Verzeichnissen herunterladen';
 $string['downloadasfolders_help'] = 'Bei Aktivierung werden die heruntergeladenen Dateien in separaten Ordnern platziert und Dateien werden nicht umbenannt.';
 $string['downloadselectedsubmissions'] = 'Ausgewählte Abgaben herunterladen';
 $string['duedate'] = 'Fälligkeitsdatum';
-$string['duedatecolon'] = 'Fälligkeitsdatum: {$a}';
 $string['duedate_help'] = 'Zum Abgabeende wird die Aufgabe fällig. Spätere Abgaben sind auch danach noch möglich, werden dann aber als verspätet markiert. Um eine Abgabe nach einem bestimmten Datum zu verhindern, kann ein Termin der letzten Abgabemöglichkeit gesetzt werden.';
+$string['duedatecolon'] = 'Fälligkeitsdatum: {$a}';
 $string['duedateno'] = 'Kein Fälligkeitsdatum';
 $string['duedatereached'] = 'Das Fälligkeitsdatum für diese Aufgabe ist vorbei.';
 $string['duedatevalidation'] = 'Das Fälligkeitsdatum kann nicht früher liegen als der erlaubte Abgabebeginn.';
@@ -205,7 +205,7 @@ $string['eventrevealidentitiesconfirmationpageviewed'] = 'Identität der Bewerte
 $string['eventstatementaccepted'] = 'Nutzer/in hat die Abgabebedingung bestätigt.';
 $string['eventsubmissionconfirmationformviewed'] = 'Abgabebestätigungsformular angesehen';
 $string['eventsubmissioncreated'] = 'Abgabe angelegt';
-$string['eventsubmissionduplicated'] = 'Die Lösung wurde von Nutzer/in dupliziert';
+$string['eventsubmissionduplicated'] = 'Nutzer/in hat die Lösung dupliziert';
 $string['eventsubmissionformviewed'] = 'Abgabeformular angezeigt';
 $string['eventsubmissiongraded'] = 'Die Lösung wurde bewertet.';
 $string['eventsubmissionlocked'] = 'Die Abgabe wurde für Nutzer/in gesperrt.';
@@ -293,13 +293,13 @@ Beachten Sie, dass diese Einstellung keine Auswirkungen auf das Kommentarfeld au
 $string['hideshow'] = 'Verbergen/Anzeigen';
 $string['inactiveoverridehelp'] = '* Diese Nutzeränderung ist inaktiv, weil kein Zugang zur Aktivität besteht. Das kann aufgrund der Gruppenzugehörigkeit oder Rolle sein, aufgrund anderer Zugriffsbeschränkungen oder weil die Aktivität verborgen ist.';
 $string['indicator:cognitivedepth'] = 'Aufgabe kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Aufgabenaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Aufgabe kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Aufgabenaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen, Feedback kommentieren, Beiträge nach Feedback überarbeiten).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person in einer Aufgabenaktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Aufgabe sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Aufgabenaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Aufgabe sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Aufgabenaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Aufgabenaktivität erreicht hat.';
 $string['instructionfiles'] = 'Anleitungsdateien';
 $string['introattachments'] = 'Zusätzliche Dateien';
 $string['introattachments_help'] = 'Zusätzliche Dateien bei der Benutzung der Aktivität Aufgabe können hinzugefügt werden, z.B. Antwortvorlagen.';
@@ -415,7 +415,7 @@ $string['privacy:blindmarkingidentifier'] = 'Identifier, der für verdeckte Bewe
 $string['privacy:gradepath'] = 'Bewertung';
 $string['privacy:metadata:assigndownloadasfolders'] = 'Nutzerpräferenz, ob mehrere Dateien in einer  Aufgabenlösung in Ordnern sortiert heruntergeladen werden sollen.';
 $string['privacy:metadata:assignfeedbackpluginsummary'] = 'Feedbackeinträge für die Aufgabe';
-$string['privacy:metadata:assignfilter'] = 'Filteroptionen wie \'Eingereicht\', \'Nicht eingereicht\', \'Erfordert Bewertung\' und \'Verlängerung bewilligt\'.';
+$string['privacy:metadata:assignfilter'] = 'Filteroptionen wie \'Eingereicht\', \'Nicht eingereicht\', \'Erfordert Bewertung\' und \'Verlängerung bewilligt\'';
 $string['privacy:metadata:assigngrades'] = 'Speichert Bewertungen des Nutzers für die Aufgabe';
 $string['privacy:metadata:assignmarkerfilter'] = 'Aufgabenzusammenfassung gefiltert anhand des zugewiesenen Kennzeichens';
 $string['privacy:metadata:assignmentid'] = 'Aufgaben-ID';
@@ -438,8 +438,8 @@ $string['privacy:metadata:userid'] = 'Nutzer-ID';
 $string['privacy:studentpath'] = 'Abgaben von Teilnehmern';
 $string['privacy:submissionpath'] = 'Abgabe';
 $string['quickgrading'] = 'Schnellbewertung';
-$string['quickgradingchangessaved'] = 'Die Änderungen in der Bewertung wurden gespeichert';
 $string['quickgrading_help'] = 'Die Schnellbewertung ermöglicht Ihnen direkt in der Übersichtstabelle Bewertungen vorzunehmen. Diese Möglichkeit steht nicht bei erweiterten Bewertungsmethoden zur Verfügung.';
+$string['quickgradingchangessaved'] = 'Die Änderungen in der Bewertung wurden gespeichert';
 $string['quickgradingresult'] = 'Schnellbewertung';
 $string['recordid'] = 'ID';
 $string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} nach Kursbeginn';
@@ -447,7 +447,7 @@ $string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} vor Kursbeg
 $string['relativedatessubmissiontimeleft'] = 'Für alle Teilnehmer/innen berechnet';
 $string['removeallgroupoverrides'] = 'Alle Verfügbarkeitsänderungen für Gruppen löschen';
 $string['removealluseroverrides'] = 'Alle Verfügbarkeitsänderungen für Nutzer löschen';
-$string['removesubmission'] = 'Abgabe entfernen';
+$string['removesubmission'] = 'Lösung entfernen';
 $string['removesubmissionconfirm'] = 'Möchten Sie wirklich die Abgabedaten löschen?';
 $string['removesubmissionconfirmforstudent'] = 'Möchten Sie wirklich die Abgabedaten von {$a} löschen?';
 $string['removesubmissionforstudent'] = 'Abgabe entfernen für Teilnehmer/in: (id={$a->id}, fullname={$a->fullname}).';
@@ -466,7 +466,7 @@ $string['reviewed'] = 'Nachgeprüft';
 $string['save'] = 'Speichern';
 $string['saveallquickgradingchanges'] = 'Bewertungsänderungen sichern';
 $string['saveandcontinue'] = 'Sichern und weiter';
-$string['savechanges'] = 'Änderungen sichern';
+$string['savechanges'] = 'Änderungen speichern';
 $string['savegradingresult'] = 'Bewertung';
 $string['savenext'] = 'Sichern und weiter';
 $string['saveoverrideandstay'] = 'Speichern und weitere Überschreibung anlegen';
@@ -481,9 +481,9 @@ $string['sendlatenotifications_help'] = 'Mit der Aktivierung werden die Bewerter
 $string['sendnotifications'] = 'Mitteilungen an bewertende Personen senden';
 $string['sendnotifications_help'] = 'Mit der Aktivierung werden die Bewerter (meist die Trainer/innen) benachrichtigt wenn eine Lösung zeitgerecht oder verspätet abgegeben wird. Die Zustellung der Benachrichtigung ist individuell einstellbar.';
 $string['sendstudentnotifications'] = 'Teilnehmer/innen benachrichtigen';
+$string['sendstudentnotifications_help'] = 'Wenn aktiviert, dann erhalten Teilnehmer/innen eine Benachrichtigung über aktualisierte Bewertungen oder Feedbacks. Wenn in dieser Aufgabe der Bewertungsworkflow verwendet wird, werden Benachrichtigungen erst verschickt, nachdem dessen Status auf "Freigegeben" gesetzt wird.';
 $string['sendstudentnotificationsdefault'] = 'Standardeinstellung für Teilnehmer&shy;benachrichtigung';
 $string['sendstudentnotificationsdefault_help'] = 'Den Standardwert für Auswahlfeld "Teilnehmer/innen benachrichtigen"  im Bewertungsformular festlegen.';
-$string['sendstudentnotifications_help'] = 'Wenn aktiviert, dann erhalten Teilnehmer/innen eine Benachrichtigung über aktualisierte Bewertungen oder Feedbacks. Wenn in dieser Aufgabe der Bewertungsworkflow verwendet wird, werden Benachrichtigungen erst verschickt, nachdem dessen Status auf "Freigegeben" gesetzt wird.';
 $string['sendsubmissionreceipts'] = 'Abgabebestätigung an Teilnehmer/innen versenden';
 $string['sendsubmissionreceipts_help'] = 'Diese Option aktiviert Bestätigungen, die bei der Einreichung von Aufgabenlösungen an die Teilnehmer/innen gesendet werden.';
 $string['setmarkerallocationforlog'] = 'Bewertungszuordnung gesetzt auf: (id={$a->id}, Name={$a->fullname}, Bewerter={$a->marker}).';
@@ -536,29 +536,29 @@ $string['submissionslocked'] = 'Bei dieser Aufgabe können derzeit keine Lösung
 $string['submissionslockedshort'] = 'Abgabeänderungen sind nicht erlaubt';
 $string['submissionsnotgraded'] = 'Nicht bewertete Abgaben: {$a}';
 $string['submissionstatement'] = 'Erklärung zur Eigenständigkeit';
+$string['submissionstatement_help'] = 'Die Erklärung zur Eigenständigkeit muss akzeptiert werden, um die Arbeit abzugeben.';
 $string['submissionstatementacceptedlog'] = 'Erklärung zur Eigenständigkeit wurde akzeptiert von {$a}';
 $string['submissionstatementdefault'] = 'Diese Arbeit ist meine eigene Leistung. Sofern ich fremde Quellen verwendet habe, sind diese Stellen entsprechend gekennzeichnet.';
-$string['submissionstatement_help'] = 'Die Erklärung zur Eigenständigkeit muss akzeptiert werden, um die Arbeit abzugeben.';
 $string['submissionstatementteamsubmission'] = 'Gruppenerklärung zur Eigenständigkeit';
-$string['submissionstatementteamsubmissionallsubmit'] = 'Gruppenerklärung zur Eigenständigkeit, der alle Gruppenmitglieder zustimmen';
-$string['submissionstatementteamsubmissionallsubmitdefault'] = 'Diese Arbeit ist meine eigene Leistung als Gruppenmitglied. Sofern ich fremde Quellen verwendet habe, sind diese Stellen entsprechend gekennzeichnet.';
-$string['submissionstatementteamsubmissionallsubmit_help'] = 'Die Erklärung zur Eigenständigkeit muss akzeptiert werden, um die Arbeit als Gruppemitglied abzugeben.';
-$string['submissionstatementteamsubmissiondefault'] = 'Diese Arbeit ist die eigene Leistung meiner Gruppe. Sofern wir fremde Quellen verwendet haben, sind diese Stellen entsprechend gekennzeichnet.';
 $string['submissionstatementteamsubmission_help'] = 'Die Erklärung zur Eigenständigkeit muss akzeptiert werden, um die Arbeit der Gruppe abzugeben.';
+$string['submissionstatementteamsubmissionallsubmit'] = 'Gruppenerklärung zur Eigenständigkeit, der alle Gruppenmitglieder zustimmen';
+$string['submissionstatementteamsubmissionallsubmit_help'] = 'Die Erklärung zur Eigenständigkeit muss akzeptiert werden, um die Arbeit als Gruppemitglied abzugeben.';
+$string['submissionstatementteamsubmissionallsubmitdefault'] = 'Diese Arbeit ist meine eigene Leistung als Gruppenmitglied. Sofern ich fremde Quellen verwendet habe, sind diese Stellen entsprechend gekennzeichnet.';
+$string['submissionstatementteamsubmissiondefault'] = 'Diese Arbeit ist die eigene Leistung meiner Gruppe. Sofern wir fremde Quellen verwendet haben, sind diese Stellen entsprechend gekennzeichnet.';
 $string['submissionstatus'] = 'Abgabestatus';
 $string['submissionstatus_'] = 'Keine Abgabe';
 $string['submissionstatus_draft'] = 'Entwurf (nicht abgegeben)';
-$string['submissionstatusheading'] = 'Abgabestatus';
 $string['submissionstatus_marked'] = 'Bewertet';
 $string['submissionstatus_new'] = 'Keine Abgabe';
 $string['submissionstatus_reopened'] = 'Erneut geöffnet';
 $string['submissionstatus_submitted'] = 'Zur Bewertung abgegeben';
+$string['submissionstatusheading'] = 'Abgabestatus';
 $string['submissionsummary'] = '{$a->status}. Letzte Änderung {$a->timemodified}';
 $string['submissionteam'] = 'Gruppe';
 $string['submissiontypes'] = 'Abgabetypen';
 $string['submitaction'] = 'Abgeben';
 $string['submitassignment'] = 'Aufgabe abgeben';
-$string['submitassignment_help'] = 'Sobald diese Aufgabe abgegeben wird, sind keine weiteren Änderungen mehr möglich';
+$string['submitassignment_help'] = 'Sobald die Aufgabe abgegeben ist, können Sie keine Änderungen mehr vornehmen.';
 $string['submitforgrading'] = 'Zur Bewertung abgeben';
 $string['submitted'] = 'Abgegeben';
 $string['submittedearly'] = 'Aufgabe wurde {$a} vor dem Abgabeende abgegeben';
@@ -571,9 +571,9 @@ $string['subplugintype_assignsubmission'] = 'Abgabe Plugin';
 $string['subplugintype_assignsubmission_plural'] = 'Abgabe Plugins';
 $string['teamname'] = 'Team: {$a}';
 $string['teamsubmission'] = 'Teilnehmer/innen geben in Gruppen ab';
+$string['teamsubmission_help'] = 'Wenn diese Option aktiviert ist, werden die Teilnehmer/innen anhand der Standardgruppen oder einer benutzerdefinierten Gruppierung in Gruppen eingeteilt. Eine Gruppeneinreichung wird unter den Gruppenmitgliedern geteilt, und alle sehen die Änderungen der jeweils anderen Personen an der Einreichung.';
 $string['teamsubmissiongroupingid'] = 'Berücksichtigte Gruppierung';
 $string['teamsubmissiongroupingid_help'] = 'Diese Gruppierung wird verwendet, um Gruppen für die Aufgabenbearbeitung zu finden. Wird keine Gruppierung festgelegt, wird die Standardeinstellung für Gruppen verwendet.';
-$string['teamsubmission_help'] = 'Wenn diese Option aktiviert ist, werden die Teilnehmer/innen anhand der Standardgruppen oder einer benutzerdefinierten Gruppierung in Gruppen eingeteilt. Eine Gruppeneinreichung wird unter den Gruppenmitgliedern geteilt, und alle sehen die Änderungen der jeweils anderen Personen an der Einreichung.';
 $string['textinstructions'] = 'Aufgabenstellung';
 $string['timemodified'] = 'Zuletzt geändert';
 $string['timeremaining'] = 'Verbleibende Zeit';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_blackboard_six', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qformat_blackboard_six', language 'sv', version '3.8'.
  *
- * @package   qformat_blackboard_six
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qformat_blackboard_six
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,6 +29,9 @@ $string['defaultname'] = 'Importerad fråga {$a}';
 $string['errormanifest'] = 'Fel vid analys av IMS deklarationsdokumentet';
 $string['filenothandled'] = 'Detta arkiv innehåller referenser till  fil material {$a} som iför närvarande inte hanteras av import';
 $string['imagenotfound'] = 'Sökvägen för bildfilen {$a} hittades inte vid importen';
+$string['importedcategory'] = 'Importerad kategori {$a}';
 $string['importnotext'] = 'Saknad frågetext i XML filen';
 $string['notenoughtsubans'] = 'Kunde inte importera matchande fråga \'{$a}\' eftersom en matchande fråga måste bestå av minst två frågor och tre svar.';
+$string['pluginname'] = 'Blackboard V6+';
+$string['pluginname_help'] = 'Blackboard V6 + formatet gör frågor som är sparade i alla Blackboard export format kan importeras via en DAT-eller zip-fil. För zip-filer, stöds inte bildimport.';
 $string['unhandledpresblock'] = 'Ohanterat presentationsblock';

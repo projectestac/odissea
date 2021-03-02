@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'ja', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -100,10 +100,10 @@ $string['check_riskadmin_name'] = '管理者';
 $string['check_riskadmin_ok'] = '{$a} 名のサーバ管理者が登録されています。';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) ロール割り当てをレビューする</a>';
 $string['check_riskadmin_warning'] = '{$a->admincount} 名のサーバ管理者および {$a->unsupcount} 名のサポートされない管理者ロールの割り当てが見つかりました。';
-$string['check_riskbackup_detailsok'] = 'ユーザデータのバックアップを明確に許可しているロールはありません。しかし、「doanything」ケイパビリティを持った管理者はまだユーザデータをバックアップできることに留意してください。';
 $string['check_riskbackup_details_overriddenroles'] = '<p>これらのアクティブなオーバーライドはバックアップ内にユーザデータを含むことができる能力をユーザに与えます。このパーミッションが本当に必要かどうか確認してください。</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>現在、以下のシステムロールはバックアップ内にユーザデータを含むことをユーザに許可しています。このパーミッションが本当に必要かどうか確認してください。</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>上記のロールまたはローカルオーバーライドのため以下のユーザアカウントは現在コースに登録しているユーザの個人情報を含むバックアップを作成できるパーミッションを持っています。これらのユーザが (a)信用されて (b)強度の高いパスワードで守られていることを確認してください:</p> {$a}';
+$string['check_riskbackup_detailsok'] = 'ユーザデータのバックアップを明確に許可しているロールはありません。しかし、「doanything」ケイパビリティを持った管理者はまだユーザデータをバックアップできることに留意してください。';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->contextname} 内の {$a->name}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'ユーザデータのバックアップ';

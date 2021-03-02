@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'timezones', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'timezones', language 'sv', version '3.8'.
  *
- * @package   timezones
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     timezones
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -137,8 +137,8 @@ $string['america/havana'] = 'Amerika/Havanna';
 $string['america/hermosillo'] = 'Amerika/Hermosillo';
 $string['america/indiana/knox'] = 'Amerika/Indiana/Knox';
 $string['america/indiana/marengo'] = 'Amerika/Indiana/Marengo';
-$string['america/indianapolis'] = 'Amerika/Indianapolis';
 $string['america/indiana/vevay'] = 'Amerika/Indiana/Vevay';
+$string['america/indianapolis'] = 'Amerika/Indianapolis';
 $string['america/inuvik'] = 'Amerika/Inuvik';
 $string['america/iqaluit'] = 'Amerika/Iqaluit';
 $string['america/jamaica'] = 'Amerika/Jamaica';
@@ -204,12 +204,15 @@ $string['america/yellowknife'] = 'Amerika/Yellowknife';
 $string['antarctica/casey'] = 'Antarktis/Casey';
 $string['antarctica/davis'] = 'Antarktis/Davis';
 $string['antarctica/dumontdurville'] = 'Antarktis/DumontDUrville';
+$string['antarctica/macquarie'] = 'Antarktis/Macquarieön';
 $string['antarctica/mawson'] = 'Antarktis/Mawson';
 $string['antarctica/mcmurdo'] = 'Antarktis/McMurdo';
 $string['antarctica/palmer'] = 'Antarktis/Palmer';
 $string['antarctica/rothera'] = 'Antarktis/Rothera';
 $string['antarctica/syowa'] = 'Antarktis/Syowa';
+$string['antarctica/troll'] = 'Antarktis/Troll';
 $string['antarctica/vostok'] = 'Antarktis/Vostok';
+$string['arctic/longyearbyen'] = 'Arktis/Longyearbyen';
 $string['asia/aden'] = 'Asien/Aden';
 $string['asia/almaty'] = 'Asien/Almaty';
 $string['asia/amman'] = 'Asien/Amman';
@@ -292,8 +295,8 @@ $string['atlantic/faeroe'] = 'Atlanten/F&auml;r&ouml;arna';
 $string['atlantic/madeira'] = 'Atlanten/Madeira';
 $string['atlantic/reykjavik'] = 'Atlanten/Reykjavik';
 $string['atlantic/south_georgia'] = 'Atlanten/South_Georgia';
-$string['atlantic/stanley'] = 'Atlanten/Stanley';
 $string['atlantic/st_helena'] = 'Atlanten/St_Helena';
+$string['atlantic/stanley'] = 'Atlanten/Stanley';
 $string['australia/adelaide'] = 'Australien/Adelaide';
 $string['australia/brisbane'] = 'Australien/Brisbane';
 $string['australia/broken_hill'] = 'Australien/Broken_Hill';
@@ -395,3 +398,4 @@ $string['pacific/truk'] = 'Stilla havet/Truk';
 $string['pacific/wake'] = 'Stilla havet/Wake';
 $string['pacific/wallis'] = 'Stilla havet/Wallis';
 $string['pacific/yap'] = 'Stilla havet/Yap';
+$string['utc'] = 'UTC';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'ja', version '3.8'.
  *
- * @package   qtype_calculatedsimple
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedsimple
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,9 +31,9 @@ $string['findwildcards'] = '正解の公式に登録されているワイルド�
 $string['generatenewitemsset'] = '生成';
 $string['newsetwildcardvalues'] = 'セットの新しいワイルドカード値';
 $string['pluginname'] = 'シンプル計算問題';
+$string['pluginname_help'] = 'シンプル計算問題は小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。シンプル計算問題では計算問題で使用されるほとんどの機能を簡単な作成インターフェースにより提供します。';
 $string['pluginnameadding'] = 'シンプル計算問題を追加する';
 $string['pluginnameediting'] = 'シンプル計算問題を編集する';
-$string['pluginname_help'] = 'シンプル計算問題は小テスト受験時に個別の値に置換される波括弧「{}」内のワイルドカードを使用する数値問題を作成することができます。シンプル計算問題では計算問題で使用されるほとんどの機能を簡単な作成インターフェースにより提供します。';
 $string['pluginnamesummary'] = '計算問題のシンプルバージョンです。シンプル計算問題は数値問題に似ていますが小テスト受験時、設定された数値がランダムに使用されます';
 $string['privacy:metadata'] = 'シンプル計算問題タイププラグインはいかなる個人データも保存しません。';
 $string['setno'] = 'セット {$a}';

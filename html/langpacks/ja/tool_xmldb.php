@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'ja', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_xmldb', language 'ja', version '3.8'.
  *
- * @package   tool_xmldb
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_xmldb
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -33,16 +33,16 @@ $string['backtomainview'] = 'メインに戻る';
 $string['cannotuseidfield'] = '「id」フィールドは追加できません。自動作成されるカラムです。';
 $string['change'] = '変更';
 $string['charincorrectlength'] = 'charフィールドの長さが正しくありません。';
-$string['checkbigints'] = '整数型をチェックする';
 $string['check_bigints'] = '不正なDB整数型を調査中';
-$string['checkdefaults'] = 'デフォルトをチェックする';
 $string['check_defaults'] = '矛盾したデフォルト値を調査中';
-$string['checkforeignkeys'] = '外部キーをチェックする';
 $string['check_foreign_keys'] = '外部キー違反を調査中';
-$string['checkindexes'] = 'インデックスをチェックする';
 $string['check_indexes'] = '不明なDBインデックスを調査中';
-$string['checkoraclesemantics'] = 'セマンティクスをチェックする';
 $string['check_oracle_semantics'] = '正しくない長さのセマンティクスを調査中';
+$string['checkbigints'] = '整数型をチェックする';
+$string['checkdefaults'] = 'デフォルトをチェックする';
+$string['checkforeignkeys'] = '外部キーをチェックする';
+$string['checkindexes'] = 'インデックスをチェックする';
+$string['checkoraclesemantics'] = 'セマンティクスをチェックする';
 $string['completelogbelow'] = '(検索結果に関する以下の完全なログをご覧ください)';
 $string['confirmcheckbigints'] = 'この機能はあなたのMoodleサーバで<a href="https://tracker.moodle.org/browse/MDL-11038">潜在的に不正な整数型フィールド</a>を調査し、DB内の整数型を適切に定義するためのSQL文を自動的に生成します (実行ではありません!)。
 
@@ -152,12 +152,12 @@ $string['missingindexes'] = 'インデックスが見つかりません。';
 $string['mustselectonefield'] = 'フィールドに関連した処理を見るにはフィールド1つを選択してください!';
 $string['mustselectoneindex'] = 'インデックスに関連した処理を見るにはインデックス1つを選択してください!';
 $string['mustselectonekey'] = 'キーに関連した処理を見るにはキー1つを選択してください!';
+$string['new_table_from_mysql'] = 'MySQLから新しいテーブル';
 $string['newfield'] = '新しいフィールド';
 $string['newindex'] = '新しいインデックス';
 $string['newkey'] = '新しいキー';
 $string['newtable'] = '新しいテーブル';
 $string['newtablefrommysql'] = 'MySQLから新しいテーブル';
-$string['new_table_from_mysql'] = 'MySQLから新しいテーブル';
 $string['nofieldsspecified'] = '指定されたフィールドはありません。';
 $string['nomasterprimaryuniquefound'] = 'あなたの外部キーが参照するカラムは参照テーブルのプライマリまたはユニークキーに含まれている必要があります。ユニークインデックスに含まれているカラムでは十分ではありませんので留意してください。';
 $string['nomissingindexesfound'] = '不明なインデックスは見つかりませんでした。あなたのDBに関してさらなる操作は不要です。';
@@ -165,7 +165,7 @@ $string['noreffieldsspecified'] = '参照フィールドが指定されていま
 $string['noreftablespecified'] = '指定された参照テーブルが見つかりませんでした。';
 $string['noviolatedforeignkeysfound'] = '外部キー違反は見つかりませんでした。';
 $string['nowrongdefaultsfound'] = '矛盾したデフォルト値は見つかりませんでした。あなたのDBに関してさらなる操作は不要です。';
-$string['nowrongintsfound'] = '不正な整数型は見つかりませんでした。あなたのDBに関してさらなる操作は不要です。';
+$string['nowrongintsfound'] = '不正な整数型は見つかりませんでした。あなたのDBに関して、さらなる処置は不要です。';
 $string['nowrongoraclesemanticsfound'] = 'BYTEセマンティクスを使用しているOracleカラムは見つかりませんでした。さらなる操作は不要です。';
 $string['numberincorrectdecimals'] = 'numberフィールドの小数点以下桁数が正しくありません。';
 $string['numberincorrectlength'] = 'numberフィールドの長さが正しくありません。';
@@ -199,15 +199,15 @@ $string['unknowntable'] = '不明なテーブルを参照しています。';
 $string['unload'] = 'アンロード';
 $string['up'] = '上へ';
 $string['view'] = '表示';
-$string['viewedited'] = '編集済みを表示する';
-$string['vieworiginal'] = 'オリジナルを表示する';
-$string['viewphpcode'] = 'PHPコードを表示する';
 $string['view_reserved_words'] = '予約語を表示する';
-$string['viewsqlcode'] = 'SQLコードを表示する';
 $string['view_structure_php'] = 'PHPストラクチャを表示する';
 $string['view_structure_sql'] = 'SQLストラクチャを表示する';
 $string['view_table_php'] = 'PHPテーブルを表示する';
 $string['view_table_sql'] = 'SQLテーブルを表示する';
+$string['viewedited'] = '編集済みを表示する';
+$string['vieworiginal'] = 'オリジナルを表示する';
+$string['viewphpcode'] = 'PHPコードを表示する';
+$string['viewsqlcode'] = 'SQLコードを表示する';
 $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = '外部キー違反';
 $string['violatedforeignkeysfound'] = '外部キー違反が見つかりました。';
@@ -224,6 +224,6 @@ $string['yesmissingindexesfound'] = '<p>あなたのDBに不明なインデッ�
 $string['yeswrongdefaultsfound'] = '<p>あなたのDBに矛盾したデフォルト値が見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでインデックス作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
 <p>SQL文の実行後、これ以上矛盾したデフォルト値が見つかるかどうかこのユーティリティの再実行を強くお勧めします。</p>';
 $string['yeswrongintsfound'] = '<p>あなたのDBに不正な整数型が見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースで整数型の修正を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
-<p>修正後、これ以上不正な整数型が見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';
+<p>修正後、さらに不正な整数型が見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';
 $string['yeswrongoraclesemanticsfound'] = '<p>あなたのOracleカラムに不正なBYTEセマンティクスが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでOracleカラムすべての変換を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
-<p>SQL文の実行後、これ以上不正なセマンティクスが見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';
+<p>SQL文の実行後、これ以上不正なOracleカラムが見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';

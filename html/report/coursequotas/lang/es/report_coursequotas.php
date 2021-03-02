@@ -1,19 +1,21 @@
 <?php
 
+// Course quotas
 $string['pluginname'] = 'Ocupación de disco';
 $string['coursequotas'] = 'Ocupación de disco';
 $string['total_noquota_description'] = 'Ocupación de disco';
 $string['coursequotas:view'] = 'Ver el consumo de cuota de los cursos';
 $string['total_data'] = 'Total';
 $string['disk_used'] = 'Espacio ocupado';
+$string['disk_used_other'] = 'Otros';
+$string['disk_used_course'] = 'Cursos';
+$string['disk_used_backup'] = 'Copias de seguridad';
+$string['disk_used_temp'] = 'Archivos temporales';
+$string['disk_used_trash'] = 'Papelera';
+$string['disk_used_repository'] = 'Repositorio';
+$string['disk_used_user'] = 'Archivos de usuario';
+$string['disk_used_h5plib'] = 'Librerías H5P';
 $string['disk_free'] = 'Espacio libre';
-$string['disk_used_other'] = 'Espacio ocupado en otros';
-$string['disk_used_course'] = 'Espacio ocupado en cursos';
-$string['disk_used_backup'] = 'Espacio ocupado en backups';
-$string['disk_used_temp'] = 'Espacio ocupado en archivos temporales';
-$string['disk_used_trash'] = 'Espacio ocupado en archivos trash';
-$string['disk_used_repository'] = 'Espacio ocupado en el repositorio';
-$string['disk_used_user'] = 'Espacio ocupado en archivos de usuario';
 $string['category_data'] = 'Categorías';
 $string['larger_courses'] = 'Cursos';
 $string['backups'] = 'Copias de seguridad';
@@ -31,7 +33,14 @@ $string['disk_consume_trash'] = '<strong>{$a->number} {$a->unit}</strong> utiliz
 $string['total_description'] = 'A continuación se muestra el porcentaje de cuota de disco ocupado en relación con al total';
 $string['category_description'] = 'A continuación se muestran los cursos de las diferentes categorias junto con el tamaño total de los ficheros que lo componen';
 $string['courses_description'] = 'A continuación se muestran todos los cursos junto con su categoría y el tamaño de sus ficheros ordenados de mayor a menor según este último dato';
+$string['manage_backup_files'] = 'Para liberar espacio, se pueden eliminar las copias de seguridad de los cursos desde <a href="{$a}">este apartado</a>';
+$string['quotas_updated'] = 'La información de uso se ha actualizado correctamente';
+$string['lastest_update'] = 'Última actualización';
+$string['update_long_time'] = 'La información mostrada puede no estar actualizada. Puedes hacer clic en el botón siguiente para actualizarla. Si la cuota es muy elevada es posible que dé error. En este caso, contacta con nosotros en el foro para solicitar su actualización';
+$string['update_now'] = 'Actualiza ahora';
+$string['disk_quota_missing'] = 'Hay {$a} MB sin localizar';
 
+// File manager
 $string['filemanager'] = 'Gestión de archivos';
 $string['manage'] = 'Gestionar los archivos';
 $string['filearea'] = 'Área de archivos';
@@ -49,7 +58,6 @@ $string['allcomponents'] = 'Todos los componentes';
 $string['more_than'] = 'Más de';
 $string['less_than'] = 'Menos de';
 $string['showonlybackups'] = 'Mostrar solo los archivos de cópia de seguridad';
-$string['hidesamehash'] = 'No mostrar los archivos con el mismo <i>contenthash</i> (Modo experto)';
+$string['hidesamehash'] = 'No mostrar los archivos con el mismo <em>contenthash</em> (Modo experto)';
 $string['viewsimilarfiles'] = 'Ver archivos similares';
-$string['manage_backup_files'] = 'Para liberar espacio, se pueden eliminar las copias de seguridad de los cursos desde <a href="{$a}">este apartado</a>';
-$string['coursequotas:manage'] = 'Gestionar cuota';
+$string['coursequotas:manage'] = 'Gestionar la cuota';

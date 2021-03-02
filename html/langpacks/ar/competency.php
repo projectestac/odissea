@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,22 +12,23 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'competency', language 'ar', version '3.8'.
  *
- * @package   competency
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     competency
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['allchildrenarecomplete'] = 'كل الفروع قد اكتملت';
-$string['competencies'] = 'الكفاءات';
+$string['competencies'] = 'الكفايات';
 $string['competenciesarenotenabled'] = 'الكفاءات معطلة.';
-$string['competenciessettings'] = 'إعدادات الكفاءات';
+$string['competenciessettings'] = 'إعدادات الكفايات';
 $string['completeplanstask'] = 'إكمال خطط التعلم المستحقة';
 $string['coursecompetencyoutcome_complete'] = 'أكمل الكفاءة';
 $string['coursecompetencyoutcome_evidence'] = 'إرفق دليلاً';
@@ -45,62 +45,62 @@ $string['enablecompetencies_desc'] = 'الكفاءات تسمح بتقييم ا�
 $string['errorcannotchangeapastduedate'] = 'موعد الاستحقاق قد انقضى؛ لا يمكن تغييره حالياً.';
 $string['errorcannotsetduedateinthepast'] = 'لا يمكن أن يكون تاريخ الاستحقاق في الماضي.';
 $string['errorcannotsetduedatetoosoon'] = 'موعد الاستحقاق قريب جداً.';
-$string['errorcompetencyrule'] = 'قاعدة كفاءة المساق \'{$a}\' مجهولة';
-$string['errorcoursecompetencyrule'] = 'قاعدة كفاءة المساق \'{$a}\' مجهولة';
-$string['errorinvalidcourse'] = 'مساق غير صحيح.';
+$string['errorcompetencyrule'] = 'قاعدة كفاءة المقرر الدراسي \'{$a}\' مجهولة';
+$string['errorcoursecompetencyrule'] = 'قاعدة كفاءة المقرر الدراسي \'{$a}\' مجهولة';
+$string['errorinvalidcourse'] = 'مقرر غير صحيح.';
 $string['errornocompetency'] = 'تعذر العثور على كفاءة \'{$a}\'';
 $string['errorplanstatus'] = 'حالة خطط التعلم \'{$a}\' غير معلومة';
 $string['errorscalealreadyused'] = 'تعذر تغيير المقياس نظراً لكونه قيد الاستعمال حالياً.';
 $string['errorscaleconfiguration'] = 'المقياس بحاجة إلى تهيئة عبر اختيار العنصر الافتراضي وعناصر الخبرة.';
 $string['errorusercomptencystatus'] = 'حالة كفاءة المستخدم \'{$a}\' غير معروفة';
-$string['eventcompetencycreated'] = 'تم إنشاء الكفاءة.';
-$string['eventcompetencydeleted'] = 'تم حذف الكفاءة.';
-$string['eventcompetencyframeworkcreated'] = 'تم إنشاء إطار عمل الكفاءة.';
-$string['eventcompetencyframeworkdeleted'] = 'تم حذف إطار عمل الكفاءة.';
-$string['eventcompetencyframeworkupdated'] = 'تم تحديث إطار عمل الكفاءة.';
-$string['eventcompetencyframeworkviewed'] = 'تمت معاينة إطار عمل الكفاءة.';
-$string['eventcompetencyupdated'] = 'تم تحديث الكفاءة.';
-$string['eventcompetencyviewed'] = 'تمت معاينة الكفاءة.';
-$string['eventevidencecreated'] = 'تم إنشاء الدليل.';
-$string['eventplanapproved'] = 'تمت الموافقة على خطة التعلم.';
-$string['eventplancompleted'] = 'تم إكمال خطة التعلم.';
-$string['eventplancreated'] = 'تم إنشاء خطة التعلم.';
-$string['eventplandeleted'] = 'تم حذف خطة التعلم.';
-$string['eventplanreopened'] = 'خطة التعلم أُعيد فتحها.';
-$string['eventplanreviewrequestcancelled'] = 'تم إلغاء إلتماس تنقيح خطة التعلم.';
-$string['eventplanreviewrequested'] = 'تم إلتماس تنقيح خطة التعلم.';
-$string['eventplanreviewstarted'] = 'تمت المباشرة بتنقيح خطة التعلم.';
-$string['eventplanreviewstopped'] = 'تم التوقف عن تنقيح خطة التعلم.';
-$string['eventplanunapproved'] = 'تم رفض خطة التعلم.';
-$string['eventplanunlinked'] = 'تم فك ارتباط خطة التعلم.';
-$string['eventplanupdated'] = 'تم تحديث خطة التعلم.';
-$string['eventplanviewed'] = 'تمت معاينة خطة التعلم.';
-$string['eventtemplatecreated'] = 'تم إنشاء قالب خطة التعلم.';
-$string['eventtemplatedeleted'] = 'تم حذف قالب خطة التعلم.';
-$string['eventtemplateupdated'] = 'تم تحديث قالب خطة التعلم.';
-$string['eventtemplateviewed'] = 'تمت معاينة قالب خطة التعلم.';
-$string['eventusercompetencyplanviewed'] = 'تمت معاينة خطة كفاءة المستخدم.';
-$string['eventusercompetencyrated'] = 'تم تقييم كفاءة المستخدم.';
-$string['eventusercompetencyratedincourse'] = 'تم تقييم كفاءة المستخدم في المساق.';
-$string['eventusercompetencyratedinplan'] = 'تم تقييم كفاءة المستخدم في خطة التعلم.';
-$string['eventusercompetencyreviewrequestcancelled'] = 'تم إلغاء إلتماس مراجعة كفاءة المستخدم.';
-$string['eventusercompetencyreviewrequested'] = 'تم إلتماس مراجعة كفاءة المستخدم.';
-$string['eventusercompetencyreviewstarted'] = 'تمت المباشرة بمراجعة كفاءة المستخدم.';
-$string['eventusercompetencyreviewstopped'] = 'تم التوقف عن مراجعة كفاءة المستخدم.';
-$string['eventusercompetencyviewed'] = 'تمت معاينة كفاءة المستخدم.';
-$string['eventusercompetencyviewedincourse'] = 'تمت معاينة كفاءة المستخدم في المساق.';
-$string['eventusercompetencyviewedinplan'] = 'تمت معاينة كفاءة المستخدم في خطة التعلم.';
-$string['eventuserevidencecreated'] = 'تم إنشاء الدليل على التعلم السابق.';
-$string['eventuserevidencedeleted'] = 'تم حذف الدليل على التعلم السابق.';
-$string['eventuserevidenceupdated'] = 'تم تحديث الدليل على التعلم السابق.';
+$string['eventcompetencycreated'] = 'كفاءة تم إنشاؤها';
+$string['eventcompetencydeleted'] = 'كفاءة تم حذفها';
+$string['eventcompetencyframeworkcreated'] = 'إطار عمل الكفاءة تم إنشاؤه';
+$string['eventcompetencyframeworkdeleted'] = 'إطار عمل الكفاءة تم حذفه';
+$string['eventcompetencyframeworkupdated'] = 'إطار عمل الكفاءة تم تحديثه';
+$string['eventcompetencyframeworkviewed'] = 'إطار عمل الكفاءة تمت معاينته';
+$string['eventcompetencyupdated'] = 'كفاءة تم تحديثها';
+$string['eventcompetencyviewed'] = 'كفاءة تمت معاينتها';
+$string['eventevidencecreated'] = 'دليل تم إنشاؤه';
+$string['eventplanapproved'] = 'خطة تعلم تمت الموافقة عليها';
+$string['eventplancompleted'] = 'خطة تعلم تم إكمالها';
+$string['eventplancreated'] = 'خطة تعلم تم إنشاؤها';
+$string['eventplandeleted'] = 'خطة تعلم تم حذفها';
+$string['eventplanreopened'] = 'خطة تعلم أُعيد فتحها';
+$string['eventplanreviewrequestcancelled'] = 'إلتماس تنقيح خطة تعلم تم إلغاؤه';
+$string['eventplanreviewrequested'] = 'تنقيح خطة تعلم تم إلتماسه';
+$string['eventplanreviewstarted'] = 'تنقيح خطة تعلم تمت المباشرة به';
+$string['eventplanreviewstopped'] = 'تنقيح خطة تعلم تم التوقف عنه';
+$string['eventplanunapproved'] = 'خطة تعلم تم رفضها';
+$string['eventplanunlinked'] = 'خطة تعلم تم فك ارتباطها';
+$string['eventplanupdated'] = 'خطة تعلم تم تحديثها';
+$string['eventplanviewed'] = 'خطة تعلم تمت معاينتها';
+$string['eventtemplatecreated'] = 'قالب خطة تعلم تم إنشاؤه';
+$string['eventtemplatedeleted'] = 'قالب خطة تعلم تم حذفه';
+$string['eventtemplateupdated'] = 'قالب خطة تعلم تم تحديثه';
+$string['eventtemplateviewed'] = 'قالب خطة تعلم تمت معاينته';
+$string['eventusercompetencyplanviewed'] = 'خطة كفاءة مستخدم تمت معاينتها';
+$string['eventusercompetencyrated'] = 'كفاءة مستخدم تم تقييمها';
+$string['eventusercompetencyratedincourse'] = 'كفاءة مستخدم تم تقييمها في المقرر الدراسي';
+$string['eventusercompetencyratedinplan'] = 'كفاءة مستخدم في خطة التعلم تم تقييمها';
+$string['eventusercompetencyreviewrequestcancelled'] = 'إلتماس مراجعة كفاءة المستخدم تم إلغاؤه';
+$string['eventusercompetencyreviewrequested'] = 'مراجعة كفاءة مستخدم تم إلتماسها';
+$string['eventusercompetencyreviewstarted'] = 'مراجعة كفاءة مستخدم تمت المباشرة بها';
+$string['eventusercompetencyreviewstopped'] = 'مراجعة كفاءة مستخدم تم التوقف عنها';
+$string['eventusercompetencyviewed'] = 'كفاءة مستخدم تمت معاينتها';
+$string['eventusercompetencyviewedincourse'] = 'كفاءة مستخدم في مقرر دراسي تمت معاينتها';
+$string['eventusercompetencyviewedinplan'] = 'كفاءة مستخدم في خطة تعلم تمت معاينتها';
+$string['eventuserevidencecreated'] = 'دليل على تعلم سابق تم إنشاؤه';
+$string['eventuserevidencedeleted'] = 'دليل على تعلم سابق تم حذفه';
+$string['eventuserevidenceupdated'] = 'دليل على تعلم السابق تم تحديثه';
 $string['evidence_competencyrule'] = 'تمت تلبية قاعدة الكفاءة.';
-$string['evidence_coursecompleted'] = 'تم إكمال المساق \'{$a}\'.';
+$string['evidence_coursecompleted'] = 'تم إكمال المقرر الدراسي \'{$a}\'.';
 $string['evidence_coursemodulecompleted'] = 'تم إكمال النشاط \'{$a}\'.';
-$string['evidence_courserestored'] = 'تمت استعادة التقييم مع المساق \'{$a}\'.';
+$string['evidence_courserestored'] = 'تمت استعادة التقييم مع المقرر الدراسي \'{$a}\'.';
 $string['evidence_evidenceofpriorlearninglinked'] = 'تم ربط الدليل على التعلم السابق \'{$a}\'.';
 $string['evidence_evidenceofpriorlearningunlinked'] = 'تم فك ارتباط الدليل على التعلم السابق \'{$a}\'.';
 $string['evidence_manualoverride'] = 'تقييم الكفاءة تم وضعه يدوياً.';
-$string['evidence_manualoverrideincourse'] = 'تقييم الكفاءة تم وضعه يدوياً للمساق \'{$a}\'.';
+$string['evidence_manualoverrideincourse'] = 'تقييم الكفاءة تم وضعه يدوياً للمقرر \'{$a}\'.';
 $string['evidence_manualoverrideinplan'] = 'تقييم الكفاءة تم وضعه يدوياً لخطة التعلم \'{$a}\'.';
 $string['invalidevidencedesc'] = 'وصف الدليل غير صحيح.';
 $string['invalidgrade'] = 'تقييم غير صحيح.';
@@ -119,8 +119,8 @@ $string['privacy:evidence:action:complete'] = 'أكمل الكفاءة إن كا
 $string['privacy:evidence:action:log'] = 'إجراء سجل التوثيق';
 $string['privacy:evidence:action:override'] = 'تجاوز تقييم الكفاءة';
 $string['privacy:metadata:competency'] = 'سِجل عن الكفاءات';
-$string['privacy:metadata:competency_coursecomp'] = 'سِجل عن الكفاءات المرتبطة بمساق';
-$string['privacy:metadata:competency_coursecompsetting'] = 'سِجل عن إعدادات الكفاءة في مساق';
+$string['privacy:metadata:competency_coursecomp'] = 'سِجل عن الكفاءات المرتبطة بمقرر';
+$string['privacy:metadata:competency_coursecompsetting'] = 'سِجل عن إعدادات الكفاءة في مقرر دراسي';
 $string['privacy:metadata:competency_evidence'] = 'سِجل عن الدليل المؤثر على حالة الكفاءة';
 $string['privacy:metadata:competency_framework'] = 'سِجل عن إطار عمل الكفاءة';
 $string['privacy:metadata:competency_modulecomp'] = 'سِجل عن الكفاءات المرتبطة بوحدة';
@@ -131,7 +131,7 @@ $string['privacy:metadata:competency_template'] = 'سِجل عن قوالب خط
 $string['privacy:metadata:competency_templatecohort'] = 'سِجل عن الأفواج ذات الصلة بقالب خطة التعلم';
 $string['privacy:metadata:competency_templatecomp'] = 'سِجل عن الكفاءات في قالب خطة التعلم';
 $string['privacy:metadata:competency_usercomp'] = 'سِجل عن حالة كفاءات المستخدم';
-$string['privacy:metadata:competency_usercompcourse'] = 'سِجل عن حالة كفاءات المستخدم في مساق';
+$string['privacy:metadata:competency_usercompcourse'] = 'سِجل عن حالة كفاءات المستخدم في مقرر دراسي';
 $string['privacy:metadata:competency_usercompplan'] = 'سِجل عن حالة كفاءات المستخدم في خطة تعلم';
 $string['privacy:metadata:competency_userevidence'] = 'سِجل عن الدليل على التعلم السابق';
 $string['privacy:metadata:competency_userevidencecomp'] = 'سِجل عن الكفاءات ذات الصلة بالدليل على التعلم السابق';
@@ -164,13 +164,13 @@ $string['privacy:metadata:usermodified'] = 'المستخدم الذي أنشأ �
 $string['privacy:path:plans'] = 'خطط التعلم';
 $string['privacy:path:relatedtome'] = 'عائد لي';
 $string['privacy:path:userevidence'] = 'الدليل على التعلم السابق';
-$string['pushcourseratingstouserplans'] = 'أقحِم تقييمات المساق في خطط التعلم الفردي';
-$string['pushcourseratingstouserplans_desc'] = 'القيمة الافتراضية في إعدادات المساق لتحديث خطط التعلم الفردي عند تقييم كفاءات المساق';
+$string['pushcourseratingstouserplans'] = 'أقحِم تقييمات المقرر الدراسي في خطط التعلم الفردي';
+$string['pushcourseratingstouserplans_desc'] = 'القيمة الافتراضية في إعدادات المقرر الدراسي لتحديث خطط التعلم الفردي عند تقييم كفاءات المقرر الدراسي';
 $string['syncplanscohorts'] = 'مزامنة الخطط من أفواج قالب خطة التعلم';
 $string['taxonomy_behaviour'] = 'سلوك';
 $string['taxonomy_competency'] = 'كفاءة';
 $string['taxonomy_concept'] = 'مفهوم';
-$string['taxonomy_domain'] = 'مدى';
+$string['taxonomy_domain'] = 'المجال';
 $string['taxonomy_indicator'] = 'مؤشر';
 $string['taxonomy_level'] = 'مستوى';
 $string['taxonomy_outcome'] = 'حاصل';

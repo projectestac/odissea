@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'lesson', language 'pt', version '3.8'.
  *
- * @package   lesson
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     lesson
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -267,13 +267,13 @@ $string['importquestions'] = 'Importar questões';
 $string['importquestions_help'] = 'Esta opção permite importar perguntas de vários formatos a partir de um ficheiro de texto.';
 $string['inactiveoverridehelp'] = '* Essa substituição está inativa porque o acesso do utilizador à atividade é restrito. Pode ser devido ao grupo ou atribuições de papel, outras restrições de acesso ou atividade oculta.';
 $string['indicator:cognitivedepth'] = 'Compreensão da Lição';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Lição.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão da Lição';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Lição durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido, Visualizado feedback, Comentários ao feedback, Voltar a submeter após visualizar feedback)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Lição.';
 $string['indicator:socialbreadth'] = 'Socialização da Lição';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Lição.';
 $string['indicator:socialbreadthdef'] = 'Socialização da Lição';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Lição durante esse intervalo de análise (Níveis = Sem participação, Participante individual, Participante com outros)';
-$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Lição.';
 $string['insertedpage'] = 'Página inserida';
 $string['invalidfile'] = 'Ficheiro inválido';
 $string['invalidid'] = 'Não foi especificado nenhum ID do módulo ou da lição';
@@ -288,16 +288,18 @@ $string['leftduringtimed'] = 'Interrompeu uma lição com tempo limite.<br />Cli
 $string['leftduringtimednoretake'] = 'Interrompeu uma lição com tempo limite<br />e não é permitido repetir ou continuar a lição.';
 $string['leftduringtimedsession'] = 'Saiu durante uma lição com tempo limite';
 $string['lesson:addinstance'] = 'Adicionar nova Lição';
-$string['lessonclosed'] = 'Esta lição fechou {$a}';
-$string['lessoncloses'] = 'A lição fecha';
-$string['lessoncloseson'] = 'A lição fecha em {$a}';
 $string['lesson:edit'] = 'Editar uma lição';
-$string['lessoneventcloses'] = 'Fecha \'{$a}\'';
-$string['lessoneventopens'] = 'Abre \'{$a}\'';
-$string['lessonformating'] = 'Formatação da lição';
 $string['lesson:grade'] = 'Avaliar perguntas de desenvolvimento da Lição';
 $string['lesson:manage'] = 'Gerir uma lição';
 $string['lesson:manageoverrides'] = 'Gerir exceções da lição';
+$string['lesson:view'] = 'Ver atividade lição';
+$string['lesson:viewreports'] = 'Ver os relatórios da lição';
+$string['lessonclosed'] = 'Esta lição fechou {$a}';
+$string['lessoncloses'] = 'A lição fecha';
+$string['lessoncloseson'] = 'A lição fecha em {$a}';
+$string['lessoneventcloses'] = 'Fecha \'{$a}\'';
+$string['lessoneventopens'] = 'Abre \'{$a}\'';
+$string['lessonformating'] = 'Formatação da lição';
 $string['lessonmenu'] = 'Menu da lição';
 $string['lessonname'] = 'Lição: {$a}';
 $string['lessonnotready'] = 'Esta lição não está pronta para ser realizada. Contacte o seu {$a}.';
@@ -306,8 +308,6 @@ $string['lessonopen'] = 'Esta lição ficará disponível {$a}.';
 $string['lessonopens'] = 'A lição abre';
 $string['lessonpagelinkingbroken'] = 'Não foi encontrada a primeira página. As ligações entre páginas da lição poderão estar erradas. Contacte um administrador.';
 $string['lessonstats'] = 'Estatísticas da lição';
-$string['lesson:view'] = 'Ver atividade lição';
-$string['lesson:viewreports'] = 'Ver os relatórios da lição';
 $string['linkedmedia'] = 'Conteúdo de suporte';
 $string['loginfail'] = 'A autenticação falhou. Tente de novo...';
 $string['lowscore'] = 'Nota mais baixa';
@@ -364,7 +364,7 @@ $string['nameapproved'] = 'O nome foi aprovado';
 $string['namereject'] = 'O seu nome foi rejeitado pelo filtro.<br />Tente outro nome.';
 $string['new'] = 'novo';
 $string['nextpage'] = 'Página seguinte';
-$string['noanswer'] = 'Uma ou mais perguntas estão ainda por responder. Por favor, volte atrás e submeta uma resposta.';
+$string['noanswer'] = 'Uma ou mais perguntas ainda estão por responder. Por favor, volte atrás e submeta uma resposta.';
 $string['noattemptrecordsfound'] = 'Não foram encontrados registos de tentativas: não foi atribuída nota';
 $string['nobranchtablefound'] = 'Não foi encontrada nenhuma página de conteúdo';
 $string['noclose'] = 'Sem data de fecho';
@@ -408,8 +408,8 @@ $string['numericanswer'] = 'Resposta numérica';
 $string['numericanswer_help'] = 'Pode especificar um número apenas ou intervalo de números usando dois pontos. Por exemplo, 2:5 significa que qualquer resposta entre 2 e 5, incluindo-os, está correta.';
 $string['offlinedatamessage'] = 'Já trabalhou nesta tentativa usando um dispositivo móvel. Os dados foram guardados pela última vez neste site há {$a} atrás. Verifique que não possui trabalhos por guardar.';
 $string['ongoing'] = 'Exibir avaliação no decorrer da lição';
-$string['ongoingcustom'] = 'Até agora obteve {$a->score} num máximo de {$a->currenthigh} pontos.';
 $string['ongoing_help'] = 'Se ativar esta opção, cada página da lição exibirá a pontuação obtida pelo aluno e a máxima possível de obter na lição.';
+$string['ongoingcustom'] = 'Até agora obteve {$a->score} num máximo de {$a->currenthigh} pontos.';
 $string['ongoingnormal'] = 'Respondeu corretamente a {$a->correct} de {$a->viewed} perguntas.';
 $string['onpostperpage'] = 'Apenas um registo por nota';
 $string['openafterclose'] = 'Indicou uma data de abertura posterior à data de fecho';
@@ -429,11 +429,11 @@ $string['overrideusereventname'] = '{$a->lesson} - Exceção';
 $string['overview'] = 'Perspetiva global';
 $string['overview_help'] = 'Lição é uma atividade constituída por um conjunto de páginas. Cada página contém um determinado conteúdo e geralmente termina com uma pergunta. Associada a cada resposta está uma página para onde a lição segue. A página a seguir pode ser definida de forma relativa, para a mesma página ou para a seguinte, ou absoluta, seguindo para qualquer outra página na lição. A página de conteúdo é a que contém um conjunto de botões para navegar para outras páginas na Lição, que serve por exemplo de menu/índice da Lição.';
 $string['page'] = 'Página: {$a}';
-$string['pageanswers'] = 'Página de respostas';
-$string['pagecontents'] = 'Conteúdo';
 $string['page-mod-lesson-edit'] = 'Editar página da lição';
 $string['page-mod-lesson-view'] = 'Ver ou pré-visualizar página';
 $string['page-mod-lesson-x'] = 'Qualquer página da atividade lição';
+$string['pageanswers'] = 'Página de respostas';
+$string['pagecontents'] = 'Conteúdo';
 $string['pageresponses'] = 'Página de respostas';
 $string['pages'] = 'Páginas';
 $string['pagetitle'] = 'Título da página';
@@ -545,9 +545,9 @@ $string['showanunseenpage'] = 'Mostrar página não vista';
 $string['singleanswer'] = 'Resposta única';
 $string['skip'] = 'Ignorar navegação';
 $string['slideshow'] = 'Apresentação de slides';
+$string['slideshow_help'] = 'Se ativar esta opção, a lição é exibida como uma apresentação de slides com um ecrã com uma largura e altura predefinidas.';
 $string['slideshowbgcolor'] = 'Cor de fundo da apresentação de slides';
 $string['slideshowheight'] = 'Altura da apresentação de slides';
-$string['slideshow_help'] = 'Se ativar esta opção, a lição é exibida como uma apresentação de slides com um ecrã com uma largura e altura predefinidas.';
 $string['slideshowwidth'] = 'Largura da apresentação de slides';
 $string['startlesson'] = 'Iniciar lição';
 $string['studentattemptlesson'] = '{$a->lastname}, {$a->firstname} tentativa número {$a->attempt}';
@@ -558,11 +558,11 @@ $string['studentresponse'] = 'Resposta de {$a}';
 $string['submit'] = 'Submeter';
 $string['submitname'] = 'Submeter nome';
 $string['teacherjumpwarning'] = 'Nesta lição existem páginas que seguem para {$a->cluster} ou para {$a->unseen}. Esta sequência será ignorada e a lição seguirá para a página seguinte. Para testar a sequência das páginas, assuma o papel de aluno.';
-$string['teacherongoingwarning'] = 'A exibição da pontuação no decorrer da lição só é visível para os alunos. Para ver a pontuação no decorrer da lição entre como aluno.';
+$string['teacherongoingwarning'] = 'A exibição da pontuação no decorrer da lição só é visível para os alunos. Para ver a pontuação no decorrer da lição, assuma o papel de aluno.';
 $string['teachertimerwarning'] = 'O cronómetro só é visível para os alunos. Para testar esta funcionalidade, entre como aluno.';
 $string['thatsthecorrectanswer'] = 'A sua resposta está correta.';
 $string['thatsthewronganswer'] = 'A sua resposta <strong>não</strong> está correta.';
-$string['thefollowingpagesjumptothispage'] = 'As páginas seguintes seguem para esta página';
+$string['thefollowingpagesjumptothispage'] = 'As páginas seguintes seguem para esta';
 $string['thispage'] = 'Esta página';
 $string['timeisup'] = 'Terminou o tempo';
 $string['timelimit'] = 'Tempo limite';
@@ -589,7 +589,7 @@ $string['usepassword_help'] = 'Se ativar esta opção, é necessário introduzir
 $string['useroverrides'] = 'Exceções para utilizadores';
 $string['useroverridesdeleted'] = 'Exceções para utilizadores apagadas';
 $string['usersnone'] = 'Nenhum aluno tem acesso a esta lição';
-$string['viewessayanswers'] = 'Visualizar respostas de desenvolvimento';
+$string['viewessayanswers'] = 'Ver respostas à pergunta de desenvolvimento';
 $string['viewgrades'] = 'Ver notas';
 $string['viewreports'] = 'Ver {$a->attempts} tentativas concluídas de {$a->student}';
 $string['viewreports2'] = 'Ver {$a} tentativas concluídas';

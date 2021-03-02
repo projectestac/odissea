@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,27 +12,61 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_database', language 'sv', version '3.8'.
  *
- * @package   enrol_database
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_database
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['dbhost'] = 'Serverns IP-nummer eller namn';
+$string['database:config'] = 'Konfigurera Databasregistreringsinstanser';
+$string['database:unenrol'] = 'Avregistrera avstängda användare';
+$string['dbencoding'] = 'Databaskodning';
+$string['dbhost'] = 'Databasserver';
+$string['dbhost_desc'] = 'Ange serverns IP-adress eller namn. Använd ett system-DSN om ODBC används. Använd ett PDO DSN om PDO används.';
 $string['dbname'] = 'Databasens namn';
-$string['dbpass'] = 'Lösenord för server';
-$string['dbtype'] = 'Typ av databas';
-$string['dbuser'] = 'Serveranvändare';
+$string['dbname_desc'] = 'Lämna fältet tomt om du använder ett DSN-namn för databasservern.';
+$string['dbpass'] = 'Lösenord för databas';
+$string['dbsetupsql'] = 'Databasens initierings SQL-kommando';
+$string['dbsetupsql_desc'] = 'SQL-kommando för anpassad databaskonfiguration. Detta används ofta för att ange databaskodningen som används i kommunikationen. För PostgreSQL: <code>SET NAMES \'utf8\'</code>';
+$string['dbsybasequoting'] = 'Använd sybase-citationstecken';
+$string['dbtype'] = 'Databasdrivrutin';
+$string['dbtype_desc'] = 'Namn och typ av ADOdb-databasdrivrutin.';
+$string['dbuser'] = 'Databasanvändare';
+$string['debugdb'] = 'Debugga ADOdb';
+$string['defaultcategory'] = 'Standardkategori för ny kurs';
 $string['defaultcategory_desc'] = 'Förinställd kategori för automatiskt skapade kurser. Används om ingen ny kategori anges eller om den saknas.';
-$string['localcoursefield'] = 'Det namn på fältet i tabellen för kurser som vi använder för att matcha inmatningar i fjärrdatabasen (t.ex. idnummer).';
-$string['localrolefield'] = 'Det namn på fältet i tabellen för roller som vi använder för att matcha inmatningar i fjärrdatabasen (t.ex. kortnamn).';
-$string['localuserfield'] = 'Det namn på fältet i tabellen för användare som vi använder för att matcha inmatningar i fjärrdatabasen (t.ex. idnummer).';
-$string['remotecoursefield'] = 'Det namn på fältet i fjärrtabellen som vi använder för att matcha inmatningar i tabellen för kurser.';
-$string['remoterolefield'] = 'Det namn på fältet i fjärrtabellen som vi använder för att matcha inmatningar i tabellen för roller.';
-$string['remoteuserfield'] = 'Det namn på fältet i fjärrtabellen som vi använder för att matcha inmatningar i tabellen för användare.';
+$string['defaultrole'] = 'Standardroll';
+$string['defaultrole_desc'] = 'Den roll som tilldelas om ingen roll specificerats i den externa tabellen.';
+$string['ignorehiddencourses'] = 'Ignorera dolda kurser';
+$string['ignorehiddencourses_desc'] = 'Om aktiverat kommer användare inte att registreras på kurser som är inställda för att vara otillgängliga för deltagare.';
+$string['localcategoryfield'] = 'Lokalt kategorifält';
+$string['localcoursefield'] = 'Lokalt kursfält';
+$string['localrolefield'] = 'Lokalt rollfält';
+$string['localuserfield'] = 'Lokalt användarfält';
+$string['newcoursecategory'] = 'Kategorifält för ny kurs';
+$string['newcoursefullname'] = 'Kursnamnsfält för ny kurs';
+$string['newcourseidnumber'] = 'Kurs-ID fält för ny kurs';
+$string['newcourseshortname'] = 'Kortnamnsfält för ny kurs';
+$string['newcoursetable'] = 'Extern kurstabell för ny kurs';
+$string['newcoursetable_desc'] = 'Ange om namnet på tabellen som innehåller listan över kurser som ska skapas automatiskt. Ett tomt fält innebär att inga kurser skapas.';
+$string['pluginname'] = 'Extern databas';
+$string['pluginname_desc'] = 'Du kan använda en extern databas (av nästan alla slag) för att kontrollera dina kursregistreringar. Det antas att din externa databas innehåller minst ett fält som innehåller ett kurs-ID, och ett fält som innehåller ett användar-ID. Dessa jämförs mot fält som du väljer i de lokala kurs- och användartabellerna.';
+$string['privacy:metadata'] = 'Pluginmodulen för Extern databaskursregistrering lagrar ingen personlig information.';
+$string['remotecoursefield'] = 'Externt kursfält';
+$string['remoteenroltable'] = 'Extern kursregistreringstabell';
+$string['remoteotheruserfield'] = 'Övrigt externt användarfält';
+$string['remoterolefield'] = 'Externt rollfält';
+$string['remoteuserfield'] = 'Externt användarfält';
+$string['settingsheaderdb'] = 'Extern databasanslutning';
+$string['settingsheaderlocal'] = 'Lokal fältmappning';
+$string['settingsheadernewcourses'] = 'Skapande av nya kurser';
+$string['settingsheaderremote'] = 'Extern synkronisering av kursregistreringar';
+$string['syncenrolmentstask'] = 'Synkronisera kursregistreringar via extern databas';
+$string['templatecourse'] = 'Mall för ny kurs';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ddmarker', language 'zh_cn', version '3.8'.
  *
- * @package   qtype_ddmarker
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ddmarker
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -63,9 +63,9 @@ $string['nolabel'] = '没有标签文本';
 $string['noofdrags'] = '可以被使用几次';
 $string['pleasedragatleastonemarker'] = '您的回答不完整；您必须在图片上放置至少一个标记。';
 $string['pluginname'] = '拖放标签题';
+$string['pluginname_help'] = '拖放标记题要求答题者拖动文本标签并将其放入背景图片上定义的放置区域。';
 $string['pluginnameadding'] = '添加拖放标记题';
 $string['pluginnameediting'] = '编辑拖放标签题';
-$string['pluginname_help'] = '拖放标记题要求答题者拖动文本标签并将其放入背景图片上定义的放置区域。';
 $string['pluginnamesummary'] = '标记被拖动并放置到背景图片上。
 注意：视障用户无法访问此试题类型。';
 $string['previewareaheader'] = '预览';

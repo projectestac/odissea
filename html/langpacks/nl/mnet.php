@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,18 +12,24 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'mnet', language 'nl', version '3.8'.
  *
- * @package   mnet
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     mnet
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (eigen certificaat)';
+$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (certificaat)';
+$string['RPC_HTTP_PLAINTEXT'] = 'HTTP niet geëncrypteerd';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (eigen certificaat)';
+$string['RPC_HTTP_VERIFIED'] = 'HTTP (certificaat)';
 $string['aboutyourhost'] = 'Over jouw server';
 $string['accesslevel'] = 'Toegangsniveau';
 $string['addhost'] = 'Host toevoegen';
@@ -45,8 +50,8 @@ $string['couldnotgetcert'] = 'Geen certificaat gevonden op <br />{$a}.<br />De h
 $string['couldnotmatchcert'] = 'Dit komt niet overeen met het certificaat dat door de webserver gepubliceerd wordt.';
 $string['courses'] = 'cursussen';
 $string['courseson'] = 'cursussen op';
-$string['currentkey'] = 'Huidige publieke sleutel';
 $string['current_transport'] = 'Huidig transport';
+$string['currentkey'] = 'Huidige publieke sleutel';
 $string['databaseerror'] = 'Kon details niet in de databank bewaren';
 $string['deleteaserver'] = 'Server verwijderen';
 $string['deletedhostinfo'] = 'Deze host is verwijderd; Als je dit ongedaan wil maken, schakel dan de verwijderd status terug naar \'nee\'';
@@ -72,7 +77,7 @@ $string['eventaccesscontrolupdated'] = 'Toeganscontrole aangepast';
 $string['expired'] = 'Deze sleutel verloopt op';
 $string['expires'] = 'Geldig tot';
 $string['expireyourkey'] = 'Verwijder deze sleutel';
-$string['expireyourkeyexplain'] = 'Moodle roteert je sleutels automatisch om de 28 dagen (standaardinstelling), maar je hebt de optie om deze sleutel <em>manueel</em> te laten verlopen op gelijk welk moment. Dit is enkel nuttig als je denkt dat deze sleutel niet meer veilig is. Een vervangsleutel zal automatisch gegenereerd worden.<br />Het verwijderen van deze sleutel zal het voor andere applicaties onmogelijk maken  om met jou te communiceren, tot je manueel contact omneemt met elke beheerder en hen de nieuwe sleutel geeft.';
+$string['expireyourkeyexplain'] = 'Moodle roteert je sleutels automatisch om de 28 dagen (standaardinstelling), maar je hebt de optie om deze sleutel <em>manueel</em> te laten verlopen op gelijk welk moment. Dit is enkel nuttig als je denkt dat deze sleutel niet meer veilig is. Een vervangsleutel zal automatisch gegenereerd worden.<br />Het verwijderen van deze sleutel zal het voor andere applicaties onmogelijk maken  om met jou te communiceren, tot je manueel contact opneemt met elke beheerder en hen de nieuwe sleutel geeft.';
 $string['exportfields'] = 'Te exporteren velden';
 $string['failedaclwrite'] = 'Het schrijven naar de MNet access control list voor gebruiker \'{$a}\' is mislukt.';
 $string['findlogin'] = 'Zoek login';
@@ -92,9 +97,9 @@ $string['hostnamehelp'] = 'De fully-qualified domain name van die host, bv. www.
 $string['hostnotconfiguredforsso'] = 'Deze server is niet geconfigureerd voor externe aanmeldingen.';
 $string['hostsettings'] = 'Instellingen host';
 $string['http_self_signed_help'] = 'Connecties toestaan die een eigen DIY SSL certificaat hebben op de externe host.';
+$string['http_verified_help'] = 'Connecties toestaan die een geverifieerd SSL certificaat in PHP gebruiken op de externe host, maar over http (niet over https).';
 $string['https_self_signed_help'] = 'Connecties toestaan die een eigen DIY SSL certificaat in PHP gebruiken op de externe host over http.';
 $string['https_verified_help'] = 'Connecties toestaan die een geverifieerd SSL certificaat gebruiken op de externe host.';
-$string['http_verified_help'] = 'Connecties toestaan die een geverifieerd SSL certificaat in PHP gebruiken op de externe host, maar over http (niet over https).';
 $string['id'] = 'ID';
 $string['idhelp'] = 'Deze waarde wordt automatisch toegekend en kan niet gewijzigd worden.';
 $string['importfields'] = 'Te importeren velden';
@@ -129,6 +134,7 @@ $string['methodsavailableonhostinservice'] = 'Methodes beschikbaar voor {$a->ser
 $string['methodsignature'] = 'Methode handtekening voor {$a}';
 $string['mnet'] = 'MNet';
 $string['mnet_concatenate_strings'] = 'Voeg (tot maximaal) 3 strings samen en geef het resultaat.';
+$string['mnet_session_prohibited'] = 'Gebruikers van jouw server mogen op dit moment niet op {$a} aanmelden.';
 $string['mnetdisabled'] = 'MNet is <strong>uitgeschakeld</strong>.';
 $string['mnetidprovider'] = 'MNET ID-Provider';
 $string['mnetidproviderdesc'] = 'Je kunt dit gebruiken om een link te verkrijgen waar je kunt inloggen als je het juiste e-mailadres kunt geven dat overeen komt met de gebruikersnaam waarmee je net probeerde in te loggen';
@@ -136,7 +142,6 @@ $string['mnetidprovidermsg'] = 'Je zou moeten kunnen aanmelden bij je {$a} provi
 $string['mnetidprovidernotfound'] = 'Er kon niet meer informatie gevonden worden.';
 $string['mnetpeers'] = 'Peer servers';
 $string['mnetservices'] = 'Services';
-$string['mnet_session_prohibited'] = 'Gebruikers van jouw server mogen op dit moment niet op {$a} aanmelden.';
 $string['mnetsettings'] = 'Instellingen Mnet';
 $string['moodle_home_help'] = 'Het pad naar de startpagina van de MNet-applicatie op de externe host, bijvoorbeeld /moodle/.';
 $string['name'] = 'Naam';
@@ -158,11 +163,11 @@ $string['nosuchpublickey'] = 'Kon geen publieke sleutel voor verificatie vinden.
 $string['nosuchservice'] = 'Op deze host loopt de RPC-service niet.';
 $string['nosuchtransport'] = 'Er bestaat geen transport met dat ID';
 $string['notBASE64'] = 'Deze string is niet in het Base64-formaat. Het kan geen geldige sleutel zijn.';
-$string['notenoughidpinfo'] = 'Je identiteitsprovider geeft ons niet genoeg informatie om je account lokaal aan te maken of te updaten.';
+$string['notPEM'] = 'Deze sleutel is niet in het PEM-formaat. Het zal niet werken.';
 $string['not_in_range'] = 'Het IP-adres   <code>{$a}</code>   is niet van een geldige vertrouwde host.';
+$string['notenoughidpinfo'] = 'Je identiteitsprovider geeft ons niet genoeg informatie om je account lokaal aan te maken of te updaten.';
 $string['notinxmlrpcserver'] = 'Poging toegang te krijgen tot de MNET client op afstand, niet tijdens uitvoeren van XMLRPC server';
 $string['notmoodleapplication'] = 'Waarschuwing: dit is geen Moodle-applicatie, dus sommige inspectiemethodes kunnen niet goed werken';
-$string['notPEM'] = 'Deze sleutel is niet in het PEM-formaat. Het zal niet werken.';
 $string['notpermittedtojump'] = 'Je hebt de toelating niet om een externe sessie te beginnen vanaf deze Moodle server.';
 $string['notpermittedtojumpas'] = 'Je kunt geen sessie op afstand beginnen terwijl je aangemeld bent als een andere gebruiker.';
 $string['notpermittedtoland'] = 'Je hebt het recht niet om een externe sessie te starten.';
@@ -203,11 +208,6 @@ $string['restore'] = 'Terugzetten';
 $string['returnvalue'] = 'Teruggegeven waarde';
 $string['reviewhostdetails'] = 'Bekijk details van host';
 $string['reviewhostservices'] = 'Bekijk services van host';
-$string['RPC_HTTP_PLAINTEXT'] = 'HTTP niet geëncrypteerd';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (eigen certificaat)';
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (eigen certificaat)';
-$string['RPC_HTTPS_VERIFIED'] = 'HTTPS (certificaat)';
-$string['RPC_HTTP_VERIFIED'] = 'HTTP (certificaat)';
 $string['selectaccesslevel'] = 'Kies een toegangsniveau uit de lijst.';
 $string['selectahost'] = 'Kies een externe host.';
 $string['service'] = 'Servicenaam';

@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,30 +12,31 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_ldap', language 'eu', version '3.8'.
  *
- * @package   enrol_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = '\'{$a->role_shortname}\' rola esleitzen \'{$a->user_username}\' erabiltzaileari \'{$a->course_shortname}\'  ikastaroan (id {$a->course_id})';
 $string['assignrolefailed'] = 'Huts egin du \'{$a->role_shortname}\' rola esleitzean \'{$a->user_username}\' erabiltzaileari \'{$a->course_shortname}\' ikastaroan (id {$a->course_id})';
-$string['autocreate'] = '<p>Ikastaroak era automatikoan sor daitezke oraindik ere Moodlen existitzen ez den ikastaro batean matrikulazioak badaude.</p><p>Ikastaro sorrera automatikoa erabiltzen baduzu, gomendagarria da gaitasun hauek rol garrantzitsuenei ezgaitzea: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname eta moodle/course:changesummary. Horrela, goian aipatutako lau ikastaro eremuak aldatzea debekatuko da (ID zenbakia, izen laburra, izen osoa eta laburpena).</p>';
+$string['autocreate'] = '<p>Ikastaroak era automatikoan sor daitezke oraindik ere Moodle-n existitzen ez den ikastaro batean matrikulazioak badaude.</p><p>Ikastaro sorrera automatikoa erabiltzen baduzu, gomendagarria da gaitasun hauek rol garrantzitsuenei ezgaitzea: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname eta moodle/course:changesummary. Horrela, goian aipatutako lau ikastaro eremuak aldatzea debekatuko da (ID zenbakia, izen laburra, izen osoa eta laburpena).</p>';
 $string['autocreate_key'] = 'Sortu automatikoki';
 $string['autocreation_settings'] = 'Ikastaroak era automatikoan sortzeko ezarpenak';
 $string['autoupdate_settings'] = 'Ikastaroak era automatikoan eguneratzeko ezarpenak';
 $string['autoupdate_settings_desc'] = '<p>Aukeratu \'Sinkronizatu LDAP matrikulazioak\' programatutako ataza exekutatzean eguneratuko diren eremuak.</p><p>Gutxienez eremu bat aukeratzen bada eguneratzea egingo da.</p>';
-$string['bind_dn'] = 'Erabiltzaileak bilatzeko \'bind-user\' bat erabili nahi baduzu, zehaztu hemen. Horrelako zerbait \'cn=ldapuser,ou=public,o=org\'';
-$string['bind_dn_key'] = '\'Bind-user\'aren izen gorena (distinguished name)';
-$string['bind_pw'] = '\'Bind-user\'aren pasahitza';
+$string['bind_dn'] = 'Erabiltzaileak bilatzeko lotura--erabiltzailea (bind-user) erabili nahi baduzu, hemen zehaztu ezazu. Honen antzeko zerbait litzateke: \'cn=ldapuser,ou=public,o=org\'';
+$string['bind_dn_key'] = 'Lotura-erabiltzailearen izen gorena (distinguished name)';
+$string['bind_pw'] = 'Lotura-erabiltzailearen pasahitza';
 $string['bind_pw_key'] = 'Pasahitza';
-$string['bind_settings'] = 'Bind ezarpenak';
+$string['bind_settings'] = 'Loturaren ezarpenak';
 $string['cannotcreatecourse'] = 'Ezin izan da ikastaroa sortu: LDAP erregistroan beharrezko datuak falta dira!';
 $string['cannotupdatecourse'] = 'Ezin izan da ikastaroa eguneratu: LDAP erregistroan beharrezko datuak falta dira! Ikastaroaren ID zenbakia: \'{$a->idnumber}\'';
 $string['cannotupdatecourse_duplicateshortname'] = 'Ezin izan da ikastaroa eguneratu: Bikoiztutako izen laburra. Alde batera utzi da \'{$a->idnumber}\' ID zenbakia duen ikastaroa...';
@@ -50,7 +50,6 @@ $string['course_fullname_updateonsync'] = 'Eguneratu izen osoa sinkronizazio scr
 $string['course_fullname_updateonsync_key'] = 'Eguneratu izen osoa';
 $string['course_idnumber'] = 'Identifikatzaile bakarraren mapa LADPn, ohikoena <em>cn</em> edo <em>uid</em>. Balioa blokeatzea gomendatzen da ikastaroa sortzeko era automatikoa erabiltzen ari bada.';
 $string['course_idnumber_key'] = 'ID zenbakia';
-$string['coursenotexistskip'] = '\'{$a}\' ikastaroa ez da existitzen eta sorrera automatikoa desgaituta dago, alde batera utzi da';
 $string['course_search_sub'] = 'Bilatu taldetako partaidetza azpitestuinguruetan';
 $string['course_search_sub_key'] = 'Bilatu azpitestuinguruak';
 $string['course_settings'] = 'Ikastaroan matrikulatzeko ezarpenak';
@@ -62,6 +61,7 @@ $string['course_summary'] = 'Aukerakoa:  LDAP eremua zeinetatik lortuko den labu
 $string['course_summary_key'] = 'Laburpena';
 $string['course_summary_updateonsync'] = 'Eguneratu laburpena sinkronizazio script-ean';
 $string['course_summary_updateonsync_key'] = 'Eguneratu laburpena';
+$string['coursenotexistskip'] = '\'{$a}\' ikastaroa ez da existitzen eta sorrera automatikoa desgaituta dago, alde batera utzi da';
 $string['courseupdated'] = '\'{$a->idnumber}\' ID zenbakia duen ikastaroa ondo eguneratu da.';
 $string['courseupdateskipped'] = '\'{$a->idnumber}\' ID zenbakia duen ikastaroak ez du eguneratzerik behar. Alde batera utzi da...';
 $string['createcourseextid'] = 'SORTU matrikulatutako erabiltzailea existitzen ez den ikastaroan \'{$a->courseextid}\'';
@@ -73,7 +73,7 @@ $string['emptyenrolment'] = 'Hutsik \'{$a->course_shortname}\' ikastaroaren \'{$
 $string['enrolname'] = 'LDAP';
 $string['enroluser'] = 'Matrikulatu \'{$a->user_username}\' erabiltzailea \'{$a->course_shortname}\' ikastaroan (id {$a->course_id})';
 $string['enroluserenable'] = '\'{$a->user_username}\' erabiltzailea \'{$a->course_shortname}\' (id {$a->course_id}) ikastaroan matrikulatu da.';
-$string['explodegroupusertypenotsupported'] = 'ldap_explode_group()-ek ez du erabiltzaile-mota hau onartzen: {$a}';
+$string['explodegroupusertypenotsupported'] = 'ldap_explode_group()-ek ez du erabiltzaile mota hau onartzen: {$a}';
 $string['extcourseidinvalid'] = 'Ikastaroaren kanpoko IDa ez da baliozkoa!';
 $string['extremovedsuspend'] = 'Matrikulazioa desgaitu da \'{$a->user_username}\' erabiltzailearentzat \'{$a->course_shortname}\' ikastaroan (id {$a->course_id})';
 $string['extremovedsuspendnoroles'] = 'Matrikulazioa desgaitu da eta rolak ezabatu zaizkio  \'{$a->user_username}\' erabiltzailearentzat \'{$a->course_shortname}\' ikastaroan (id {$a->course_id})';
@@ -87,9 +87,9 @@ edo \'ldaps://ldap.myorg.com/\'';
 $string['host_url_key'] = 'Ostalariaren URLa';
 $string['idnumber_attribute'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu ezazu LDAP autentifikazio ezarpenetako erabiltzailearen \'ID zenbakia\' eremuarekin lotutako atributu berdina.';
 $string['idnumber_attribute_key'] = 'Atributuaren ID zenbakia';
+$string['ldap:manage'] = 'Kudeatu LDAP matrikulaziorako instantziak';
 $string['ldap_encoding'] = 'Zehaztu LDAP zerbitzariak erabiltzen duen kodifikazioa. Ziur aski utf-8, MS AD v2-k modu lehenetsian cp1252, cp1250 eta antzeko kodifikazioak erabiltzen ditu.';
 $string['ldap_encoding_key'] = 'LDAP kodifikazioa';
-$string['ldap:manage'] = 'Kudeatu LDAP matrikulaziorako instantziak';
 $string['memberattribute'] = 'LDAP kide-ezaugarria';
 $string['memberattribute_isdn'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), hemen zehaztu beharko dituzu. Hala izanez gero, atal honetako beste ezarpenak ere konfiguratu beharko dituzu.';
 $string['memberattribute_isdn_key'] = '\'Member\' atributuak \'dn\' erabiltzen du';
@@ -98,7 +98,7 @@ $string['nested_groups_key'] = 'Habiaratutako taldeak';
 $string['nested_groups_settings'] = 'Habiaratutako taldeen ezarpenak';
 $string['nosuchrole'] = 'Hurrengo rola ez da existitzen: \'{$a}\'';
 $string['objectclass'] = 'Ikastaroak bilatzeko erabilitako objectClass. Ohikoena \'posixGroup\'.';
-$string['objectclass_key'] = 'Objektu-mota';
+$string['objectclass_key'] = 'Objektu mota';
 $string['ok'] = 'Ados!';
 $string['opt_deref'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu bilaketetan ezinezak nola kudeatuko diren. Aukeratu hurengo balioetako bat: \'Ez\' (LDAP_DEREF_NEVER) edo \'Bai\' (LDAP_DEREF_ALWAYS)';
 $string['opt_deref_key'] = 'Erreferentziazko ezizenak';
@@ -115,7 +115,7 @@ $string['role_mapping_key'] = 'Lotu rolak LDAPetik';
 $string['roles'] = 'Rolen lotura';
 $string['server_settings'] = 'LDAP zerbitzariaren ezarpenak';
 $string['synccourserole'] = '== \'{$a->idnumber}\' ikastaroaren \'{$a->role_shortname}\' rola sinkronizatzen';
-$string['syncenrolmentstask'] = 'Sinkronizatu LDAP matrikulazioak ataza';
+$string['syncenrolmentstask'] = 'Sinkronizatu LDAP matrikulazioak zeregina';
 $string['template'] = 'Aukerakoa: era automatikoan sortutako ikastaroak ikastaro-txantiloi batetik kopia ditzakete beren zehaztasunak.';
 $string['template_key'] = 'Txantiloia';
 $string['unassignrole'] = '\'{$a->user_username}\' erabiltzaileari \'{$a->role_shortname}\' rola kentzen \'{$a->course_shortname}\' ikastarotik (id {$a->course_id})';
@@ -130,6 +130,6 @@ $string['user_search_sub'] = 'Taldetako partaidetzak izen gorenak baditu (distin
 $string['user_search_sub_key'] = 'Bilatu azpitestuinguruak';
 $string['user_settings'] = 'Erabiltzaileen bilaketaren ezarpenak';
 $string['user_type'] = 'Taldeetako partaidetzak izen gorenak baditu (distinguished names), zehaztu LDAPean erabiltzaileak gordetzen diren modua';
-$string['user_type_key'] = 'Erabiltzaile-mota';
+$string['user_type_key'] = 'Erabiltzaile mota';
 $string['version'] = 'Zerbitzariak erabiltzen duen LDAP protokoloaren bertsioa';
 $string['version_key'] = 'Bertsioa';

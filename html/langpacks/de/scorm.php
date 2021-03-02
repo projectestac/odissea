@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'scorm', language 'de', version '3.8'.
  *
- * @package   scorm
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     scorm
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -61,11 +61,11 @@ $string['attemptstatusmy'] = 'Nur Dashboard';
 $string['attemptsx'] = '{$a} Versuche';
 $string['attr_error'] = 'Falscher Wert für das Attribut ({$a->attr}) im Tag {$a->tag}';
 $string['autocommit'] = 'Automatisch übernehmen';
-$string['autocommitdesc'] = 'SCORM-Daten automatisch sichern, wenn sie nicht vom Lernpaket gesichert werden.';
 $string['autocommit_help'] = 'Die Option legt fest, ob SCORM-Daten automatisch in der Datenbank gesichert werden. Dies ist hilfreich für SCORM-Objekte, die ihre Daten nicht regelmäßig sichern.';
-$string['autocontinue'] = 'Automatische Fortsetzung';
-$string['autocontinuedesc'] = 'Diese Einstellung setzt für diese Aktivität die automatische Fortsetzung.';
+$string['autocommitdesc'] = 'SCORM-Daten automatisch sichern, wenn sie nicht vom Lernpaket gesichert werden.';
+$string['autocontinue'] = 'Automatisch fortsetzen';
 $string['autocontinue_help'] = 'Wenn die Option aktiviert ist, wird nach dem Bearbeiten eines Lernobjekts automatisch das nächste verfügbare Lernobjekt aufgerufen. Andernfalls muss eine Taste \'Weiter\' benutzt werden.';
+$string['autocontinuedesc'] = 'Diese Einstellung setzt für diese Aktivität die automatische Fortsetzung.';
 $string['averageattempt'] = 'Durchschnitt';
 $string['badarchive'] = 'Sie müssen eine gültige ZIP-Datei bereitstellen';
 $string['badimsmanifestlocation'] = 'Eine Datei imsmanifest.xml wurde gefunden. Sie liegt jedoch nicht im Root-Verzeichnis der ZIP-Datei. Packen Sie das SCORM-Paket neu zusammen.';
@@ -86,22 +86,22 @@ $string['collapsetocwinsizedesc'] = 'Die Einstellung ermöglicht Ihnen festzuleg
 $string['compatibilitysettings'] = 'Kompatibilität';
 $string['completed'] = 'Abgeschlossen';
 $string['completionscorerequired'] = 'Mindestpunkte notwendig';
-$string['completionscorerequireddesc'] = 'Die Mindestpunktzahl {$a} ist zum Abschluss erforderlich.';
 $string['completionscorerequired_help'] = 'Wenn diese Option aktiviert ist, müssen Teilnehmer/innen neben anderen Anforderungen auch die angegebene Mindestpunkte erreichen, um dieses Lernpaket als \'abgeschlossen\' markieren zu können.';
-$string['completionstatusallscos'] = 'Alle Scos sind erforderlich, um den Abschlussstatus zurückzugeben';
-$string['completionstatusallscos_help'] = 'Einige SCORM Pakete enthalten mehrere Komponenten oder "scos" - bei Aktivierung müssen alle scos innerhalb des Pakets den entsprechenden lesson_status für diese Aktivität zurücksenden um als abgeschlossen markiert zu werden.';
+$string['completionscorerequireddesc'] = 'Die Mindestpunktzahl {$a} ist zum Abschluss erforderlich.';
 $string['completionstatus_completed'] = 'Erledigt';
 $string['completionstatus_passed'] = 'Durchlaufen';
+$string['completionstatusallscos'] = 'Alle Scos sind erforderlich, um den Abschlussstatus zurückzugeben';
+$string['completionstatusallscos_help'] = 'Einige SCORM Pakete enthalten mehrere Komponenten oder "scos" - bei Aktivierung müssen alle scos innerhalb des Pakets den entsprechenden lesson_status für diese Aktivität zurücksenden um als abgeschlossen markiert zu werden.';
 $string['completionstatusrequired'] = 'Status erforderlich';
-$string['completionstatusrequireddesc'] = 'Teilnehmer/in muss mindestens einen der folgenden Status erreichen: {$a}';
 $string['completionstatusrequired_help'] = 'Wenn Sie einen oder mehrere Punkte anwählen, müssen Teilnehmer/innen neben anderen Anforderungen auch mindestens einen dieser Punkte erledigen, um dieses Lernpaket als \'abgeschlossen\' markieren zu können.';
+$string['completionstatusrequireddesc'] = 'Teilnehmer/in muss mindestens einen der folgenden Status erreichen: {$a}';
 $string['confirmloosetracks'] = 'Warnung: Das Lernpaket scheint verändert worden zu sein. Evtl. ist die Paketstruktur geändert worden. Beim Update könnten Protokolldaten der Nutzer/innen verloren gehen.';
 $string['contents'] = 'Inhalte';
 $string['coursepacket'] = 'Lernpaket';
 $string['coursestruct'] = 'Kursstruktur';
 $string['crontask'] = 'Hintergrundprozess für Lernpakete';
 $string['currentwindow'] = 'Aktuelles Fenster';
-$string['datadir'] = 'Dateisystemfehler: Das Verzeichnis für Kursdaten konnte nicht erstellt werden';
+$string['datadir'] = 'Fehler: Das Verzeichnis für die Kursdaten konnte nicht erstellt werden.';
 $string['defaultdisplaysettings'] = 'Standard-Anzeigeeinstellungen';
 $string['defaultgradesettings'] = 'Standard-Bewertungseinstellungen';
 $string['defaultothersettings'] = 'Weitere Standardeinstellungen';
@@ -116,11 +116,11 @@ $string['display'] = 'Lernpaket anzeigen';
 $string['displayactivityname'] = 'Aktivitätsname anzeigen';
 $string['displayactivityname_help'] = 'Anzeige des Aktivitätsnamens über der Anzeige des Lernpakets';
 $string['displayattemptstatus'] = 'Status der Versuche anzeigen';
-$string['displayattemptstatusdesc'] = 'Die Option legt fest, ob eine Zusammenfassung der Nutzerversuche in der Kursübersicht im Dashboard und/oder der Anfangsseite des Lernpakets angezeigt werden soll.';
 $string['displayattemptstatus_help'] = 'Diese Option legt fest, ob eine Zusammenfassung der Nutzerversuche in der Kursübersicht im Dashboard und/oder auf der Anfangsseite des Lernpakets angezeigt wird.';
+$string['displayattemptstatusdesc'] = 'Die Option legt fest, ob eine Zusammenfassung der Nutzerversuche in der Kursübersicht im Dashboard und/oder der Anfangsseite des Lernpakets angezeigt werden soll.';
 $string['displaycoursestructure'] = 'Kursstruktur auf Einstiegsseite anzeigen';
-$string['displaycoursestructuredesc'] = 'Wenn diese Option aktiviert ist, wir die Inhaltsstruktur auf der Einstiegsseite angezeigt.';
 $string['displaycoursestructure_help'] = 'Wenn diese Option aktiviert ist, wird die Inhaltsstruktur des Lernpakets auf der Einstiegsseite angezeigt.';
+$string['displaycoursestructuredesc'] = 'Wenn diese Option aktiviert ist, wir die Inhaltsstruktur auf der Einstiegsseite angezeigt.';
 $string['displaydesc'] = 'Ob das Lernpaket in einem neuen Fenster gezeigt werden soll.';
 $string['displaysettings'] = 'Anzeigeeinstellungen';
 $string['dnduploadscorm'] = 'Lernpaket hinzufügen';
@@ -141,7 +141,7 @@ $string['eventuserreportviewed'] = 'Nutzerbericht angezeigt';
 $string['everyday'] = 'Jeden Tag';
 $string['everytime'] = 'Alle Nutzungszeiten';
 $string['exceededmaxattempts'] = 'Sie haben die Höchstzahl der Versuche erreicht.';
-$string['exit'] = 'Lernpaket beenden';
+$string['exit'] = 'Kurs beenden';
 $string['exitactivity'] = 'Beenden';
 $string['expired'] = 'Entschuldigung, die Aktivität wurde am {$a} geschlossen und ist nicht länger verfügbar';
 $string['external'] = 'Externe Paket-Zeitnahme benutzen';
@@ -154,8 +154,8 @@ $string['floating'] = 'Umfliessen';
 $string['forceattemptalways'] = 'Immer';
 $string['forceattemptoncomplete'] = 'Wann vorherige Versuche abgeschlossen, bestätigt oder gescheitert sind';
 $string['forcecompleted'] = 'Abschluss einfordern';
-$string['forcecompleteddesc'] = 'Diese Einstellung setzt den Standardwert für die Einstellung \'Abschluss einfordern\'';
 $string['forcecompleted_help'] = 'Mit dieser Einstellung \'Abschluss einfordern\' wird sicher gestellt, dass ein Versuch als \'abgeschlossen\' registriert wird. Dies funktioniert nur mit SCORM 1.2.';
+$string['forcecompleteddesc'] = 'Diese Einstellung setzt den Standardwert für die Einstellung \'Abschluss einfordern\'';
 $string['forcejavascript'] = 'Aktivierung von JavaScript einfordern';
 $string['forcejavascript_desc'] = 'Lernpakete erfordern JavaScript zur Kommunikation zwischen dem Lernpaket und Moodle, z.B. um Bewertungen zu übergeben. Mit dieser Funktion wird der Zugriff auf ein Lernpaket lesend möglich, wenn JavaScript im Browser nicht verfügbar ist. Es werden jedoch keine Bewertungen abgespeichert. Es wird empfohlen, diese Funktion zu aktivieren.';
 $string['forcejavascriptmessage'] = 'Um dieses Objekt anzuzeigen ist JavaScript notwendig. Bitte aktivieren Sie JavaScript für Ihren Browser und versuchen Sie es nochmal.';
@@ -165,8 +165,8 @@ $string['forcenewattempts_help'] = 'Es gibt drei Optionen:
 * Nein - Wenn ein vorheriger Versuch abgeschlossen, bestanden oder gescheitert ist, erhält der Nutzer die Option den Rückblick-Modus zu beginnen oder einen neuen Versuch zu starten.
 * Wenn vorherige Versuche, abgeschlossen, bestanden oder gescheitert sind. Dies hängt von den Einstellungen des SCORM Pakets ab, was passiert wenn der Versuch \'abgeschlossen\', \'bestanden\' oder \'gescheitert\' ist.';
 $string['found'] = 'Manifest gefunden';
-$string['frameheight'] = 'Die Einstellung definiert die Höhe der Darstellung.';
-$string['framewidth'] = 'Die Einstellung definiert die Breite der Darstellung.';
+$string['frameheight'] = 'Höhe des Anzeigeframes oder des Fensters';
+$string['framewidth'] = 'Breite des Anzeigeframes oder des Fensters';
 $string['fromleft'] = 'Von links';
 $string['fromtop'] = 'Von oben';
 $string['fullscreen'] = 'Auf Bildschirmgröße anpassen';
@@ -175,38 +175,38 @@ $string['gradeaverage'] = 'Durchschnittsnote';
 $string['gradeforattempt'] = 'Bewertung für Versuch';
 $string['gradehighest'] = 'Höchstnote';
 $string['grademethod'] = 'Bewertungsmethode';
-$string['grademethoddesc'] = 'Diese Einstellung setzt die Standardbewertungsmethode für eine Aktivität';
 $string['grademethod_help'] = 'Die Bewertungsmethoden legen fest, wie ein Versuch ausgewertet wird:
 
 * Zahl der Lernobjekte - Zahl der abgeschlossenen bzw. erfolgreichen Lernobjekte
 * Höchstbewertung - Die höchste Bewertung der erfolgreichen Lernobjekte wird übernommen
 * Durchschnitt - Die Durchschnittswerte aller Bewertungen werden errechnet
 * Summe der Bewertungen - Alle erreichten Bewertungen werden summiert';
+$string['grademethoddesc'] = 'Die Bewertungsmethode legt fest, wie die Bewertung eines einzelnen Versuchs bestimmt wird.';
 $string['gradereported'] = 'Bewertung veröffentlicht';
-$string['gradescoes'] = 'Zahl der Lernobjekte';
+$string['gradescoes'] = 'Lernobjekte';
 $string['gradesettings'] = 'Bewertungseinstellungen';
 $string['gradesum'] = 'Summe der Bewertungen';
 $string['height'] = 'Höhe';
 $string['hidden'] = 'Verborgen';
 $string['hidebrowse'] = 'Vorschau deaktivieren';
-$string['hidebrowsedesc'] = 'Diese Einstellung legt fest, ob eine Vorschau möglich ist bevor ein Versuch gestartet wird.';
 $string['hidebrowse_help'] = 'Der Vorschaumodus erlaubt es, eine Aktivität von dem Abgeben noch einmal anzusehen. Wenn die Vorschau deaktiviert ist, wird die Taste \'Vorschau\' nicht angezeigt.';
+$string['hidebrowsedesc'] = 'Diese Einstellung legt fest, ob eine Vorschau möglich ist bevor ein Versuch gestartet wird.';
 $string['hideexit'] = 'Taste \'Beenden\' verbergen';
 $string['hidereview'] = 'Taste \'Wiederholen\' verbergen';
 $string['hidetoc'] = 'Kursstruktur im Lernpaket anzeigen';
-$string['hidetocdesc'] = 'Diese Einstellung legt fest, wie die Kursstruktur im Lernpaket angezeigt wird.';
 $string['hidetoc_help'] = 'Diese Einstellung legt fest, wie die Kursstruktur im Lernpaket angezeigt wird.';
+$string['hidetocdesc'] = 'Diese Einstellung legt fest, wie die Kursstruktur im Lernpaket angezeigt wird.';
 $string['highestattempt'] = 'Bester Versuch';
 $string['identifier'] = 'Fragen-ID';
 $string['incomplete'] = 'Unvollständig';
 $string['indicator:cognitivedepth'] = 'Lernpaket kognitiv';
+$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die einPerson in einer Lernpaketaktivität erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Lernpaket kognitiv';
 $string['indicator:cognitivedepthdef_help'] = 'Die Person hat diesen Prozentsatz des kognitiven Engagements erreicht, das die Lernpaketaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Ansicht, Ansicht, Beiträge, Feedback anzeigen).';
-$string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die einPerson in einer Lernpaketaktivität erreicht hat.';
 $string['indicator:socialbreadth'] = 'Lernpaket sozial';
+$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Lernpaketaktivität erreicht hat.';
 $string['indicator:socialbreadthdef'] = 'Lernpaket sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Lernpaketaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
-$string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozialen Breite, die eine Person in einer Lernpaketaktivität erreicht hat.';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interaktionen';
 $string['invalidactivity'] = 'Aktivität im Lernpaket ist falsch';
@@ -220,22 +220,22 @@ $string['last'] = 'Letzter Versuch am';
 $string['lastaccess'] = 'Letzter Versuch';
 $string['lastattempt'] = 'Letzter vollständiger Versuch';
 $string['lastattemptlock'] = 'Nach letztem Versuch sperren';
-$string['lastattemptlockdesc'] = 'Diese Option legt fest, ob die Aktivität nach letztem Versuch für weitere Versuche gesperrt wird';
 $string['lastattemptlock_help'] = 'Diese Option legt fest, ob Teilnehmer/innen nach dem Erreichen der Anzahl zulässiger Versuche weiter auf das Lernpaket zugreifen können oder ob der Zugriff zum Lernpaket nach dem letzten zulässigen Versuch gesperrt wird. Dazu muss ein Wert für die Anzahl der Versuche angegeben sein.';
+$string['lastattemptlockdesc'] = 'Diese Option legt fest, ob die Aktivität nach letztem Versuch für weitere Versuche gesperrt wird.';
 $string['location'] = 'Adresse anzeigen';
 $string['masteryoverride'] = 'Status für die Punktzahlüberschreibung zum Bestehen';
-$string['masteryoverridedesc'] = 'Diese Einstellung legt die Vorgabe für die Punktzahl zum Bestehen fest.';
 $string['masteryoverride_help'] = 'Wenn die Option aktiviert ist, wird der Status unter Einbeziehung des Raw-Score und des Master-Score neu berechnet und jeder Status überschrieben, der von SCORM (einschließlich "unvollständig") bereitgestellt wird. Voraussetzung ist dabei, dass ein Mastery-Score und ein Raw-Score gesetzt sind und das LMSFinish aufgerufen wird.';
+$string['masteryoverridedesc'] = 'Diese Einstellung legt die Vorgabe für die Punktzahl zum Bestehen fest.';
 $string['max'] = 'Höchstpunktzahl';
 $string['maximumattempts'] = 'Zahl der Versuche';
-$string['maximumattemptsdesc'] = 'Diese Einstellung legt die maximale Anzahl von Versuchen für eine Aktivität fest';
 $string['maximumattempts_help'] = 'Diese Einstellung legt die maximale Anzahl der möglichen Versuche fest, was nur für Lernpakete im Format SCORM1.2 und AICC funktioniert.';
+$string['maximumattemptsdesc'] = 'Diese Einstellung legt die maximale Anzahl von Versuchen für eine Aktivität fest';
 $string['maximumgradedesc'] = 'Diese Einstellung setzt den Standardwert für die maximale Bewertung einer Aktivität';
 $string['menubar'] = 'Menüs anzeigen';
 $string['min'] = 'Niedrigste Punktzahl';
 $string['missing_attribute'] = 'Fehlende Attribute {$a->attr} im Tag {$a->tag}';
-$string['missingparam'] = 'Parameter fehlt oder ist falsch.';
 $string['missing_tag'] = 'Fehlendes Tag {$a->tag}';
+$string['missingparam'] = 'Parameter fehlt oder ist falsch.';
 $string['mode'] = 'Einstellung';
 $string['modulename'] = 'Lernpaket';
 $string['modulename_help'] = 'In einem Lernpaket sind die Inhalte meist über mehrere Seiten verteilt und werden über eine Navigation aufgerufen. Häufig sind Testfragen direkt integriert. Die Ergebnisse der Bearbeitung können in Moodle gespeichert werden.
@@ -245,7 +245,6 @@ $string['modulenameplural'] = 'Lernpakete';
 $string['myaiccsessions'] = 'Meine AICC sessions';
 $string['myattempts'] = 'Meine Versuche';
 $string['nav'] = 'Navigation anzeigen';
-$string['navdesc'] = 'Die Einstellung legt fest, ob und wo die Navigationstasten Anzeigen/Verbergen angezeigt werden.';
 $string['nav_help'] = 'Die Einstellung legt fest, ob die  Navigationstasten angezeigt oder verborgen werden und wo sie ggfs. platziert sind.
 
 Es gibt drei Optionen:
@@ -253,6 +252,7 @@ Es gibt drei Optionen:
 * Nein - Navigationstasten werden nicht angezeigt
 * Unter dem Inhalt - Navigationstasten werden unter dem Inhalt des Lernpakets gezeigt.
 * Variabel (float) - Navigationstasten werden abhängig von der Fenstergröße platziert.';
+$string['navdesc'] = 'Die Einstellung legt fest, ob und wo die Navigationstasten Anzeigen/Verbergen angezeigt werden.';
 $string['navigation'] = 'Navigation';
 $string['navpositionleft'] = 'Position der Navigationstasten von links (als Pixel)';
 $string['navpositiontop'] = 'Position der Navigationstasten von oben (als Pixel)';
@@ -260,19 +260,19 @@ $string['networkdropped'] = 'Die Anzeige für das Lernpaket hat festgestellt, da
 Sie sollten die Aktivität abbrechen und erst fortsetzen, wenn die Internetverbindung wieder besteht.';
 $string['newattempt'] = 'Neuen Versuch beginnen';
 $string['next'] = 'Weiter';
+$string['no_attributes'] = 'Tag {$a->tag} muss Attribute haben';
+$string['no_children'] = 'Tag {$a->tag} muss Unrereinheiten (children) haben';
 $string['noactivity'] = 'Nichts zu berichten';
 $string['noattemptsallowed'] = 'Zahl zulässiger Versuche';
 $string['noattemptsmade'] = 'Zahl Ihrer Versuche';
-$string['no_attributes'] = 'Tag {$a->tag} muss Attribute haben';
-$string['no_children'] = 'Tag {$a->tag} muss Unrereinheiten (children) haben';
 $string['nolimit'] = 'Unbegrenzte Zahl der Versuche';
 $string['nomanifest'] = 'Falsches Dateipaket - die Datei imsmanifest.xml oder AICCC Struktur wird nicht gefunden';
 $string['noprerequisites'] = 'Sie haben die Zugangvoraussetzungen zu diesem Lernobjekt noch nicht erfüllt.';
 $string['noreports'] = 'Kein Bericht zum Anzeigen vorhanden';
 $string['normal'] = 'Normal';
-$string['noscriptnoscorm'] = 'Ihr Browser unterstützt kein Javascript oder Javascript ist ausgeschaltet. Dieses Lernpaket wird deswegen nicht richtig angezeigt und kann Daten nicht korrekt speichern.';
-$string['notattempted'] = 'Nicht versucht';
+$string['noscriptnoscorm'] = 'Ihr Browser unterstützt kein Javascript oder Javascript ist ausgeschaltet. Das Lernpaket wird deswegen eventuell nicht richtig angezeigt und kann Daten nicht korrekt speichern.';
 $string['not_corr_type'] = 'Falsche Schreibweise im Tag {$a->tag}';
+$string['notattempted'] = 'Nicht versucht';
 $string['notopenyet'] = 'Entschuldigung, diese Aktivität ist nicht verfügbar bis {$a}';
 $string['objectives'] = 'Ziele';
 $string['openafterclose'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
@@ -280,16 +280,16 @@ $string['optallstudents'] = 'alle Nutzer/innen';
 $string['optattemptsonly'] = 'Nutzer/innen mit Versuchen';
 $string['options'] = 'Einstellungen (von einigen Browsern nicht unterstützt)';
 $string['optionsadv'] = 'Optionen (erweitert)';
-$string['optionsadv_desc'] = 'Wenn die Option aktiviert ist, werden Fensteroptionen als erweiterte Einstellungen im Formular vorgenommen.';
+$string['optionsadv_desc'] = 'Wenn die Option aktiviert ist, werden Breite und Höhe als erweiterte Einstellungen angezeigt.';
 $string['optnoattemptsonly'] = 'Nutzer/innen ohne Versuche';
 $string['organization'] = 'Organisation';
 $string['organizations'] = 'Organisationen';
 $string['othersettings'] = 'Erweiterte Einstellungen';
 $string['package'] = 'Lernpaket';
-$string['packagedir'] = 'Dateisystemfehler: Das Paketverzeichnis kann nicht erstellt werden';
+$string['package_help'] = 'Ein Lernpaket ist eine ZIP-Datei (oder eine PIF-Datei), die alle SCORM- oder AICC-Kursdefinitionen und Dateien enthält.';
+$string['packagedir'] = 'Fehler: Das Paketverzeichnis konnte nicht erstellt werden.';
 $string['packagefile'] = 'Keine Lernpaket ausgewählt';
 $string['packagehdr'] = 'Lernpaket';
-$string['package_help'] = 'Ein Lernpaket ist eine ZIP-Datei (oder eine PIF-Datei), die alle SCORM- oder AICC-Kursdefinitionen und Dateien enthält.';
 $string['packageurl'] = 'URL';
 $string['packageurl_help'] = 'Diese Einstellung ermöglicht die Eingabe einer URL für das Lernpaket, anstatt das Lernpaket in der Dateiauswahl auszusuchen.';
 $string['page-mod-scorm-x'] = 'Jede Lernpaketseite';
@@ -334,21 +334,23 @@ $string['response'] = 'Antwort';
 $string['result'] = 'Ergebnis';
 $string['results'] = 'Ergebnisse';
 $string['review'] = 'Rückblick';
-$string['reviewmode'] = 'Rückblick-Modus';
+$string['reviewmode'] = 'Überprüfungsmodus';
 $string['rightanswer'] = 'Richtige Antwort';
 $string['scoes'] = 'Lernobjekte';
 $string['score'] = 'Bewertung';
 $string['scorm:addinstance'] = 'Neues Lernpaket hinzufügen';
-$string['scormclose'] = 'Verfügbar bis';
-$string['scormcourse'] = 'Lernpaket-Kurs';
 $string['scorm:deleteownresponses'] = 'Eigene Versuche löschen';
 $string['scorm:deleteresponses'] = 'Versuche im Lernpaket löschen';
+$string['scorm:savetrack'] = 'Trackingdaten speichern';
+$string['scorm:skipview'] = 'Übersicht überspringen';
+$string['scorm:viewreport'] = 'Berichte sehen';
+$string['scorm:viewscores'] = 'Bewertungen sehen';
+$string['scormclose'] = 'Verfügbar bis';
+$string['scormcourse'] = 'Lernkurs';
 $string['scormloggingoff'] = 'API-Logdaten deaktiviert';
 $string['scormloggingon'] = 'API-Logdaten aktiviert';
 $string['scormopen'] = 'Verfügbar ab';
 $string['scormresponsedeleted'] = 'Gelöschte Nutzerversuche';
-$string['scorm:savetrack'] = 'Trackingdaten speichern';
-$string['scorm:skipview'] = 'Übersicht überspringen';
 $string['scormstandard'] = 'Standardmodus von SCORM';
 $string['scormstandarddesc'] = 'Wenn deaktiviert, ermöglicht Moodle dem SCORM 1.2 Paket mehr zu speichern als die Spezifikation vorsieht und verwendet den vollständigen Namen des Modle-Nutzers im SCORM Paket';
 $string['scormtype'] = 'Typ';
@@ -358,17 +360,15 @@ $string['scormtype_help'] = 'Diese Einstellung legt fest, wie das Lernpaket in d
 * Externes SCORM Manifest - eine URL zu einer imsmanifest.xml-Datei muss angegeben werden. Hinweis: Falls diese URL einen anderen Domainnamen als Ihre Website besitzt, ist das \'Heruntergeladene Lernpaket\' die bessere Variante, da sonst Bewertungen nicht gespeichert werden.
 * Heruntergeladenes Lernpaket - eine URL zum Lernpaket muss angegeben werden. Das Lernpaket wird heruntergeladen, ausgepackt und lokal gespeichert. Sobald das externe Lernpaket aktualisiert wird, werden alle Änderungen lokal übernommen.
 * Externe AICC URL - Die URL führt zu einer extern abgelegten einzelnen AICC Aktivität. Ein \'Pseudo\'-Paket wird darum herum angelegt werden.';
-$string['scorm:viewreport'] = 'Berichte sehen';
-$string['scorm:viewscores'] = 'Bewertungen sehen';
 $string['scrollbars'] = 'Scrollfunktion im Fenster bereitstellen';
 $string['search:activity'] = 'Lernpaket - Beschreibung';
 $string['selectall'] = 'Alles auswählen';
 $string['selectnone'] = 'Alles abwählen';
 $string['show'] = 'Zeigen';
-$string['sided'] = 'Auf der linken Seite';
+$string['sided'] = 'Zur Seite';
 $string['skipview'] = 'Übersicht überspringen';
-$string['skipviewdesc'] = 'Diese Einstellung legt fest, ob die Übersicht einer Seite übersprungen werden kann.';
 $string['skipview_help'] = 'Diese Einstellung legt fest, ob die Strukturübersicht einer Seite übersprungen werden kann (bzw. nicht angezeigt wird). Falls das Lernpaket nur ein Lernobjekt enthält, dann wird grundsätzlich keine Übersicht angezeigt.';
+$string['skipviewdesc'] = 'Diese Einstellung legt fest, ob die Übersicht einer Seite übersprungen werden kann.';
 $string['slashargs'] = 'Achtung: Slash-Argumente sind für diese Website ausgeschaltet. Einige Objekte werden nicht wie erwartet funktionieren!';
 $string['stagesize'] = 'Darstellungsgröße';
 $string['stagesize_help'] = 'Diese beiden Einstellungen legen die Breite und die Höhe für die Darstellung eines Lernpakets fest.';
@@ -384,9 +384,9 @@ $string['tag_error'] = 'Unbekanntes Tag ({$a->tag}) mit dem Inhalt: {$a->value}'
 $string['time'] = 'Zeit';
 $string['title'] = 'Titel';
 $string['toc'] = 'Inhaltsverzeichnis';
-$string['toolbar'] = 'Toolbar anzeigen';
 $string['too_many_attributes'] = 'Tag {$a->tag} hat zu viele Attribute';
 $string['too_many_children'] = 'Tag {$a->tag} hat zu viele Untereinheitenr (children)';
+$string['toolbar'] = 'Toolbar anzeigen';
 $string['totaltime'] = 'Zeit';
 $string['trackcorrectcount'] = 'Anzahl ändern';
 $string['trackcorrectcount_help'] = 'Zahl der richtigen Antworten für die Frage';
@@ -423,9 +423,9 @@ $string['typelocalsync'] = 'Heruntergeladenes Paket';
 $string['undercontent'] = 'Unter dem Inhalt';
 $string['unziperror'] = 'Beim Entpacken des Pakets ist ein Fehler aufgetreten.';
 $string['updatefreq'] = 'Auto-Update-Häufigkeit';
-$string['updatefreqdesc'] = 'Diese Einstellung setzt den Standardwert  für die Auto-Update-Häufigkeit einer Aktivität';
 $string['updatefreq_error'] = 'Ein Updatezyklus kann nur festgelegt werden wenn das Paket extern gehostet wird.';
 $string['updatefreq_help'] = 'Diese Option erlaubt dem externen Lernpaket, automatisch heruntergeladen und aktualisiert zu werden';
+$string['updatefreqdesc'] = 'Diese Einstellung setzt den Standardwert  für die Auto-Update-Häufigkeit einer Aktivität';
 $string['validateascorm'] = 'Überprüfen eines Lernpakets';
 $string['validation'] = 'Prüfergebnis';
 $string['validationtype'] = 'Die Einstellungen der DOMXML Library werden zur Prüfung der Lernpaket-Liste verwandt. Wenn Sie sich nicht genau auskennen, lassen Sie die Einstellungen unverändert stehen.';
@@ -434,7 +434,6 @@ $string['versionwarning'] = 'Die Version der Liste ist älter als 1.3, Warnung b
 $string['viewallreports'] = 'Bericht für {$a} Versuch/e anzeigen';
 $string['viewalluserreports'] = 'Berichte für {$a} Nutzer anzeigen';
 $string['whatgrade'] = 'Bewertung der Versuche';
-$string['whatgradedesc'] = 'Diese Einstellung setzt den Standardwert für die Bewertung der Versuche. Es kann der höchste, durchschnittliche, erste oder letzte Versuch festgelegt werden.';
 $string['whatgrade_help'] = 'Bei mehreren Versuchen legt diese Einstellung fest, welcher Versuch bewertet wird (z.B. beste Bewertung, erste oder letzte Bewertung oder Durchschnittswert).
 Die Option \'letzte Bewertung\' lässt fehlgeschlagene Versuche unberücksichtigt.
 
@@ -443,6 +442,7 @@ Hinweise zur Nutzung mehrfacher Versuche:
 * Die Option zum Starten eines neuen Versuchs wird mit einer Checkbox auf der Übersichtsseite angezeigt. Prüfen Sie, ob Sie mehr als einen Versuch zulassen möchten.
 * Einige Lernpakete unterstützen erneute Versuchen, viele aber nicht. Wenn Teilnehmer/innen erneut in einen bereits beendeten Versuch einsteigen, könnte die Bewertung des vorherigen Versuchs überschrieben werden, selbst wenn der Versuch als \'abgeschlossen\' oder \'erfolgreich\' markiert war.
 * Die Einstellungen \'Abschluss einfordern\', \'Neuen Versuch einfordern\' und \'Nach letztem Versuch sperren\' bieten zusätzliche Möglichkeiten für mehrerer Versuche.';
+$string['whatgradedesc'] = 'Diese Einstellung setzt den Standardwert für die Bewertung der Versuche. Es kann der höchste, durchschnittliche, erste oder letzte Versuch festgelegt werden.';
 $string['width'] = 'Breite';
 $string['window'] = 'Fenster';
 $string['youmustselectastatus'] = 'Sie müssen einen erforderlichen Status auswählen';

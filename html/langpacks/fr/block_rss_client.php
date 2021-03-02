@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_rss_client', language 'fr', version '3.8'.
  *
- * @package   block_rss_client
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_rss_client
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -87,7 +87,7 @@ $string['sharedfeed'] = 'Flux RSS partagé';
 $string['shownumentrieslabel'] = 'Nombre maximum d\'articles à afficher par bloc';
 $string['submitters'] = 'Qui aura les permissions requises pour définir de nouveaux flux RSS ? Les flux RSS définis sont disponibles sur toutes les pages de votre site.';
 $string['submitters2'] = 'Pouvant définir';
-$string['timeout'] = 'Durée en minutes avant l\'expiration d\'un flux RSS en cache. Cette durée définit le laps de temps minimal avant expiration. Le flux sera mis à jour lors de l\'exécution du cron après expiration. Valeur recommandée : 30 min ou plus.';
+$string['timeout'] = 'Durée en minutes avant l\'expiration d\'un flux RSS en cache. Cette durée définit le laps de temps minimal avant expiration. Le flux sera actualisé lors de l\'exécution du cron après expiration. Valeur recommandée : 30 min ou plus.';
 $string['timeout2'] = 'Durée de vie';
 $string['timeoutdesc'] = 'Durée de vie en cache d\'un flux RSS (en minutes).';
 $string['updatefeed'] = 'Modifier l\'URL d\'un flux URL :';

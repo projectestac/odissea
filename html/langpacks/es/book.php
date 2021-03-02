@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'book', language 'es', version '3.8'.
  *
- * @package   book
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     book
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -52,13 +52,13 @@ $string['eventchapterupdated'] = 'Capítulo actualizado';
 $string['eventchapterviewed'] = 'Capítulo visto';
 $string['hidechapter'] = 'Ocultar capítulo "{$a}"';
 $string['indicator:cognitivedepth'] = 'Libro cognitivo';
+$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Libro.';
 $string['indicator:cognitivedepthdef'] = 'Libro cognitivo';
 $string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje de compromiso cognitivo ofrecido por las actividades de Libro durante este intervalo de análisis (Niveles = Sin ver, Ver)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Libro.';
 $string['indicator:socialbreadth'] = 'Libro social';
+$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Libro.';
 $string['indicator:socialbreadthdef'] = 'Libro social';
 $string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por las actividades de Libro durante este intervalo de análisis (Niveles = Sin participación, Participante solo, Participante con otros)';
-$string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Libro.';
 $string['modulename'] = 'Libro';
 $string['modulename_help'] = 'El módulo libro permite crear material de estudio de múltiples páginas en formato libro, con capítulos y subcapítulos. El libro puede incluir contenido multimedia así como texto y es útil para mostrar grandes volúmenes de información repartido en secciones.
 

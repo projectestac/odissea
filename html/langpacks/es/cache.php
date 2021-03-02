@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'cache', language 'es', version '3.8'.
  *
- * @package   cache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -83,10 +83,10 @@ $string['component'] = 'Componente';
 $string['confirmlockdeletion'] = 'Confirmar la eliminación del bloqueo';
 $string['confirmstoredeletion'] = 'Confirme borrado de almacén';
 $string['default_application'] = 'Almacén de aplicación por defecto';
-$string['defaultmappings'] = 'Almacenes usados cuando no hay mapeo presente';
-$string['defaultmappings_help'] = 'Estos son los almacenes por defecto que serán usados si Usted no mapea uno o más almacenes para la definición del caché';
 $string['default_request'] = 'Almacén de solicitud por defecto';
 $string['default_session'] = 'Almacén de sesión por defecto';
+$string['defaultmappings'] = 'Almacenes usados cuando no hay mapeo presente';
+$string['defaultmappings_help'] = 'Estos son los almacenes por defecto que serán usados si Usted no mapea uno o más almacenes para la definición del caché';
 $string['defaultstoreactions'] = 'Los almacenes por defecto no pueden modificarse';
 $string['definition'] = 'Definición';
 $string['definitionsummaries'] = 'Definiciones de caché conocidas';
@@ -153,20 +153,20 @@ $string['sharing'] = 'Compartiendo';
 $string['sharing_all'] = 'Todo el mundo.';
 $string['sharing_help'] = 'Este ajuste le permite determinar cómo los datos de la caché se pueden compartir si tiene una configuración en clúster, o si tiene varios sitios configurados para el mismo almacén y desea compartir los datos. Esta es una opción avanzada, por favor asegúrese de que entiende su propósito antes de cambiarla.';
 $string['sharing_input'] = 'Clave personalizada (introducirla debajo)';
+$string['sharing_siteid'] = 'Sitios con el mismo ID de sitio.';
+$string['sharing_version'] = 'Sitios funcionando con la misma versión.';
 $string['sharingrequired'] = 'Debe seleccionar al menos una opción de uso compartido.';
 $string['sharingselected_all'] = 'Todo el mundo.';
 $string['sharingselected_input'] = 'Clave personalizada';
 $string['sharingselected_siteid'] = 'Identificador del sitio';
 $string['sharingselected_version'] = 'Versión';
-$string['sharing_siteid'] = 'Sitios con el mismo ID de sitio.';
-$string['sharing_version'] = 'Sitios funcionando con la misma versión.';
-$string['storeconfiguration'] = 'Guardar configuración';
 $string['store_default_application'] = 'Almacén de archivo por defecto para los cachés de aplicación';
 $string['store_default_request'] = 'Almacén estático por defecto para los cachés de solicitudes';
 $string['store_default_session'] = 'Almacén de sesión por defecto para los cachés de sesión';
+$string['storeconfiguration'] = 'Guardar configuración';
 $string['storename'] = 'Nombre de almacén';
-$string['storenamealreadyused'] = 'Usted debe elegir un nombre único para este almacén';
 $string['storename_help'] = 'Esto configura el nombre del almacén. Se usa para identificar el almacén dentro del sistema y solamente puede estar formado por caracteres a-z A-Z 0-9 -_ y espacios. También debe ser único. Si intenta usar un nombre que ya haya sido usado, recibirá un mensaje de error.';
+$string['storenamealreadyused'] = 'Usted debe elegir un nombre único para este almacén';
 $string['storenameinvalid'] = 'Nombre de almacén inválido. Usted solamente puede usar letras de a-z A-Z números de 0-9 el caracter de subrayado _ y espacios.';
 $string['storenotready'] = 'El almacén no está listo';
 $string['storeperformance'] = 'Reporte del desempeño de almacén de caché - {$a} solicitudes únicas por operación.';

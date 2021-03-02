@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,34 +12,35 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'access', language 'sv', version '3.8'.
  *
- * @package   access
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     access
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['access'] = 'Tillgänglighet';
 $string['accesshelp'] = 'Hjälp med tillgänglighet';
-$string['accesskey'] = 'Kod för tillgänglighet';
-$string['accessstatement'] = 'Spelregler för tillgänglighet';
+$string['accesskey'] = 'Åtkomstnyckel, {$a}';
+$string['accessstatement'] = 'Tillgänglighetsredogörelse';
 $string['activitynext'] = 'Nästa aktivitet';
 $string['activityprev'] = 'Föregående aktivitet';
-$string['breadcrumb'] = 'Navigationsfält';
+$string['breadcrumb'] = 'Navigeringsfält';
 $string['eventcontextlocked'] = 'Innehåll låst';
 $string['eventcontextunlocked'] = 'Innehåll olåst';
-$string['hideblocka'] = 'Dölj {$a} block';
-$string['showblocka'] = 'Visa {$a} block';
-$string['sitemap'] = 'Karta över webbplatsen';
+$string['hideblocka'] = 'Dölj {$a}-blocket';
+$string['showblocka'] = 'Visa {$a}-blocket';
+$string['sitemap'] = 'Webbplatskarta';
 $string['skipa'] = 'Hoppa över {$a}';
 $string['skipblock'] = 'Hoppa över block';
-$string['skipnavigation'] = 'Hoppa över navigation';
+$string['skipnavigation'] = 'Hoppa över navigering';
 $string['skipto'] = 'Hoppa till {$a}';
-$string['tocontent'] = 'Gå till huvudinnehåll';
-$string['tonavigation'] = 'Gå till navigation';
+$string['tocontent'] = 'Gå direkt till huvudinnehåll';
+$string['tonavigation'] = 'Gå till navigering';
 $string['youarehere'] = 'Du är här';

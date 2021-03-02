@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol', language 'it', version '3.8'.
  *
- * @package   enrol
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -86,10 +86,10 @@ $string['eventuserenrolmentcreated'] = 'Iscritto utente al corso';
 $string['eventuserenrolmentdeleted'] = 'Disiscritto utente dal corso';
 $string['eventuserenrolmentupdated'] = 'Aggiornata iscrizione utente';
 $string['expirynotify'] = 'Notifica la scadenza dell\'iscrizione';
+$string['expirynotify_help'] = 'L\'impostazione consente di impostare l\'invio della Notifica di scadenza dell\'iscrizione';
 $string['expirynotifyall'] = 'Sia ai partecipanti sia a colui che
 li ha iscritti';
 $string['expirynotifyenroller'] = 'Solo a colui che ha iscritto i partecipanti';
-$string['expirynotify_help'] = 'L\'impostazione consente di impostare l\'invio della Notifica di scadenza dell\'iscrizione';
 $string['expirynotifyhour'] = 'Orario di invio delle notifiche di scadenza delle iscrizioni';
 $string['expirythreshold'] = 'Soglia di notifica';
 $string['expirythreshold_help'] = 'Consente di impostare con quanti giorni di anticipo deve essere inviata la notifica di scadenza iscrizione.';

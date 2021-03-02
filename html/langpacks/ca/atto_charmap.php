@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'atto_charmap', language 'ca', version '3.8'.
  *
- * @package   atto_charmap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     atto_charmap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -240,7 +240,7 @@ $string['similarto'] = '似 (Símbol semblant a)';
 $string['singleleftpointinganglequotationmark'] = '‹ (Símbol cometa d\'angle apuntant a l\'esquerra)';
 $string['singlelow9quotationmark'] = '‚ (Símbol cometa senzilla baixeta)';
 $string['singlerightpointinganglequotationmark'] = '› (Símbol cometa d\'angle apuntant a la dreta)';
-$string['smalltilde'] = '˜ (Símbol titlla menuda)';
+$string['smalltilde'] = '˜ (Símbol titlla petita)';
 $string['softhyphen'] = '(Símbol guionet condicionat)';
 $string['squareroot'] = '√ (Símbol arrel quadrada)';
 $string['subsetof'] = '⊂ (Símbol subconjunt de)';
@@ -257,7 +257,7 @@ $string['therefore'] = '∴ (Símbol en conseqüència)';
 $string['theta'] = 'θ (Theta minúscula)';
 $string['theta_caps'] = 'Θ (Theta majúscula)';
 $string['thetasymbol'] = 'ϑ (Símbol theta)';
-$string['thinspace'] = '  (Símbol espai menut)';
+$string['thinspace'] = '  (Símbol espai fi)';
 $string['thorn'] = 'þ (Thorn minúscula)';
 $string['thorn_caps'] = 'Þ (Thorn majúscula)';
 $string['threedotleader'] = '… (Símbol punts suspensius)';

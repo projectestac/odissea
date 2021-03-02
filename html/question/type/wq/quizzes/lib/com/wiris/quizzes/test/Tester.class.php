@@ -38,7 +38,7 @@ class com_wiris_quizzes_test_Tester {
 		if($qi2->getCompoundAnswerGrade(0, 0, 1, $q) !== 0.0) {
 			throw new HException(new com_wiris_system_Exception("Failed compatibility test!", null));
 		}
-		haxe_Log::trace("Test compatibility OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 1254, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testCompatibility")));
+		haxe_Log::trace("Test compatibility OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 1256, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testCompatibility")));
 	}
 	public function testSubQuestion4() {
 		$question = "<question><subquestions><subquestion><correctAnswers><correctAnswer>12</correctAnswer></correctAnswers><assertions><assertion name=\"check_factorized\"/></assertions></subquestion><subquestion index=\"1\"><correctAnswers><correctAnswer type=\"mathml\"><![CDATA[<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mn>5</mn><mspace linebreak=\"newline\"/><mi>b</mi><mo>=</mo><mn>42</mn></math>]]></correctAnswer></correctAnswers><localData><data name=\"inputCompound\">true</data></localData></subquestion></subquestions></question>";
@@ -68,7 +68,7 @@ class com_wiris_quizzes_test_Tester {
 		if(_hx_index_of($s, "0_c0", null) < 0 || _hx_index_of($s, "0_c1", null) < 0) {
 			throw new HException(new com_wiris_system_Exception("Failed test subquestion 4! Compound indices not found", null));
 		}
-		haxe_Log::trace("Test subquestion4 OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 1233, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testSubQuestion4")));
+		haxe_Log::trace("Test subquestion4 OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 1235, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testSubQuestion4")));
 	}
 	public function responseSubQuestion3($s, $q, $qi) {
 		$qii = $qi;
@@ -335,13 +335,13 @@ class com_wiris_quizzes_test_Tester {
 					}
 				}
 			}
-			haxe_Log::trace("Test " . $id . " OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 1081, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
+			haxe_Log::trace("Test " . $id . " OK!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 1083, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
 			$this->endCall();
 		}catch(Exception $ªe) {
 			$_ex_ = ($ªe instanceof HException) ? $ªe->e : $ªe;
 			$e = $_ex_;
 			{
-				haxe_Log::trace("Failed test " . $id . "!!!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 1084, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
+				haxe_Log::trace("Failed test " . $id . "!!!", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 1086, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "onServiceResponse")));
 				throw new HException($e);
 			}
 		}
@@ -524,7 +524,7 @@ class com_wiris_quizzes_test_Tester {
 			throw new HException("Failed test");
 		}
 		if($t2 >= $t1) {
-			haxe_Log::trace("WARNING: Uncached question was faster than cached one! time miss: " . _hx_string_rec($t1, "") . "ms, time hit: " . _hx_string_rec($t2, "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 820, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testCache")));
+			haxe_Log::trace("WARNING: Uncached question was faster than cached one! time miss: " . _hx_string_rec($t1, "") . "ms, time hit: " . _hx_string_rec($t2, "") . "ms.", _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 822, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testCache")));
 		}
 	}
 	public function testFilter() {
@@ -547,7 +547,7 @@ class com_wiris_quizzes_test_Tester {
 		$r = $qb->newVariablesRequest($text, $q, $qi);
 		$qi->update($qb->getQuizzesService()->execute($r));
 		$expanded = $qi->expandVariables($text);
-		haxe_Log::trace($expanded, _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 778, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testPerformance")));
+		haxe_Log::trace($expanded, _hx_anonymous(array("fileName" => "Tester.hx", "lineNumber" => 780, "className" => "com.wiris.quizzes.test.Tester", "methodName" => "testPerformance")));
 	}
 	public function responseTranslation1($s, $q) {
 		$fr = "<session lang=\"fr\" version=\"2.0\"><library closed=\"false\"><mtext style=\"color:#ffc800\">library</mtext><group><command><input><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mi>al√©a</mi><mo>(</mo><mn>1</mn><mo>.</mo><mo>.</mo><mn>10</mn><mo>)</mo></math></input></command></group></library></session>";
@@ -789,7 +789,7 @@ class com_wiris_quizzes_test_Tester {
 	}
 	public function responseImages2($s, $q, $qi) {
 		$text = "#p";
-		$md5s = new _hx_array(array("1d35f135d9d9e9a3596c4143ac6b10bf", "4e0fa2b5e6d8b12ce9fda6541fdb5557", "d12e3d4c916bf89de659e0d53002dc8e", "49f8df1ac28ce771814d9f968ea13e36"));
+		$md5s = new _hx_array(array("1d35f135d9d9e9a3596c4143ac6b10bf", "4e0fa2b5e6d8b12ce9fda6541fdb5557", "d12e3d4c916bf89de659e0d53002dc8e", "49f8df1ac28ce771814d9f968ea13e36", "bb1be75495f251c3a3dc7098a0f9d9ef"));
 		$qi->update($s);
 		$res = $qi->expandVariables($text);
 		if(!$this->checkImage($res, $md5s)) {
@@ -815,7 +815,7 @@ class com_wiris_quizzes_test_Tester {
 	}
 	public function responseImages1($s, $q, $qi) {
 		$text = "#p";
-		$md5s = new _hx_array(array("1d35f135d9d9e9a3596c4143ac6b10bf", "4e0fa2b5e6d8b12ce9fda6541fdb5557", "d12e3d4c916bf89de659e0d53002dc8e", "49f8df1ac28ce771814d9f968ea13e36"));
+		$md5s = new _hx_array(array("1d35f135d9d9e9a3596c4143ac6b10bf", "4e0fa2b5e6d8b12ce9fda6541fdb5557", "d12e3d4c916bf89de659e0d53002dc8e", "49f8df1ac28ce771814d9f968ea13e36", "bb1be75495f251c3a3dc7098a0f9d9ef"));
 		$qi->update($s);
 		$res = $qi->expandVariables($text);
 		if(!$this->checkImage($res, $md5s)) {

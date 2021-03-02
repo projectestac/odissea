@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'eu', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_manual', language 'eu', version '3.8'.
  *
- * @package   auth_manual
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_manual
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_manualdescription'] = 'Metodo honek erabiltzaileen sorrera automatizatua ahalbidetzen du. Erabiltzaile guztiak kudeatzaileak sortu behar ditu.';
 $string['expiration'] = 'Gaitu pasahitzen iraungitzea';
 $string['expiration_desc'] = 'Gaitu pasahitzak denbora baten ondoren iraungitzea.';
-$string['expiration_warning'] = 'Jakinarazpenen ataria';
+$string['expiration_warning'] = 'Jakinarazpenen atalasea';
 $string['expiration_warning_desc'] = 'Pasahitza iraungi aurretiko egun kopurua jakinarazpena bidaltzeko.';
 $string['passwdexpire_settings'] = 'Pasahitzaren iraungitzerako ezarpenak';
 $string['passwdexpiretime'] = 'Pasahitzaren iraupena';

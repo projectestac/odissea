@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_filetypes', language 'zh_cn', version '3.8'.
  *
- * @package   tool_filetypes
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_filetypes
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,8 +29,8 @@ $string['addfiletypes'] = '新增一个文件类型';
 $string['corestring'] = '另一种语言的字符串';
 $string['corestring_help'] = '该设置可以从核心mimetypes.php语言文件选择一个不同的语言字串。一般情况下它应该被留空。对于自定义类型，请使用说明字段。';
 $string['defaulticon'] = 'MIME类型的默认图标';
-$string['deletea'] = '删除 {$a}';
 $string['delete_confirmation'] = '你确定要删除<strong>.{$a}</strong>？';
+$string['deletea'] = '删除 {$a}';
 $string['deletefiletypes'] = '删除一个文件类型';
 $string['description'] = '自定义说明';
 $string['descriptiontype'] = '说明类型';

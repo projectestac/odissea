@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'it', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tool_messageinbound', language 'it', version '3.8'.
  *
- * @package   tool_messageinbound
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tool_messageinbound
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,13 +43,13 @@ $string['handlerdisabled'] = 'Il gestore email che hai tentato di contattare è 
 $string['incomingmailconfiguration'] = 'Configurazione email in entrata';
 $string['incomingmailserversettings'] = 'Impostazioni server email in entrata';
 $string['incomingmailserversettings_desc'] = 'Moodle può collegarsi ad un server IMAP correttamente configurato. Le impostazioni del server IMAP possono essere specificate sotto.';
-$string['invalidrecipientdescription'] = 'Non è stato possibile verificare il messaggio "{$a->subject}" poiché l\'indirizzo del mittente è diverso da quello presente nel tuo profilo. Per verificare il tuo messaggio devi rispondere a questo messaggio.';
-$string['invalidrecipientdescriptionhtml'] = 'Non è stato possibile verificare il messaggio "{$a->subject}" poiché l\'indirizzo del mittente è diverso da quello presente nel tuo profilo. Per verificare il tuo messaggio devi rispondere a questo messaggio.';
-$string['invalidrecipientfinal'] = 'Non è stato possibile autenticare il messaggio "{$a->subject}". Per favore controlla che stai inviando messaggi dalla stessa email presente nel tuo profilo.';
 $string['invalid_recipient_handler'] = 'Se viene ricevuto un messaggio valido senza poter autenticare il mittente, il messaggio viene conservato nel server di mail e l\'utente contattato tramite l\'indirizzo email presente nel suo profilo. L\'utente avrà la possibilità di di rispondere confermando l\'autenticità del proprio messaggio.  Le risposte sono elaborate da questo gestore.
 
 Non è possibile disabilitare  la verifica del mittente di questo gestore poiché l\'utente potrebbe rispondere da un indirizzo email diverso in base alla configurazione del client di posta utilizzato.';
 $string['invalid_recipient_handler_name'] = 'Mittente non valido';
+$string['invalidrecipientdescription'] = 'Non è stato possibile verificare il messaggio "{$a->subject}" poiché l\'indirizzo del mittente è diverso da quello presente nel tuo profilo. Per verificare il tuo messaggio devi rispondere a questo messaggio.';
+$string['invalidrecipientdescriptionhtml'] = 'Non è stato possibile verificare il messaggio "{$a->subject}" poiché l\'indirizzo del mittente è diverso da quello presente nel tuo profilo. Per verificare il tuo messaggio devi rispondere a questo messaggio.';
+$string['invalidrecipientfinal'] = 'Non è stato possibile autenticare il messaggio "{$a->subject}". Per favore controlla che stai inviando messaggi dalla stessa email presente nel tuo profilo.';
 $string['mailbox'] = 'Nome casella email';
 $string['mailboxconfiguration'] = 'Configurazione casella email';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';

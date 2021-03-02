@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'survey', language 'en', version '3.8'.
  *
- * @package   survey
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     survey
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -210,15 +210,15 @@ $string['howlong'] = 'How long did this survey take you to complete?';
 $string['howlongoptions'] = 'under 1 min,1-2 min,2-3 min,3-4 min,4-5-min,5-10 min,more than 10';
 $string['ifoundthat'] = 'I found that';
 $string['indicator:cognitivedepth'] = 'Survey cognitive';
+$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Survey activity.';
 $string['indicator:cognitivedepthdef'] = 'Survey cognitive';
 $string['indicator:cognitivedepthdef_help'] = 'The participant has reached this percentage of the cognitive engagement offered by the Survey activities during this analysis interval (Levels = No view, View, Submit)';
 $string['indicator:cognitivedepthdef_link'] = 'Learning_analytics_indicators#Cognitive_depth';
-$string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Survey activity.';
 $string['indicator:socialbreadth'] = 'Survey social';
+$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Survey activity.';
 $string['indicator:socialbreadthdef'] = 'Survey social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the Survey activities during this analysis interval (Levels = No participation, Participant alone)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
-$string['indicator:socialbreadth_help'] = 'This indicator is based on the social breadth reached by the student in a Survey activity.';
 $string['introtext'] = 'Introduction text';
 $string['invalidsurveyid'] = 'Survey ID was incorrect';
 $string['invalidtmptid'] = 'Invalid template id';
@@ -267,13 +267,13 @@ $string['seemoredetail'] = 'Click here to see more detail';
 $string['selectedquestions'] = 'Selected questions from a scale, all students';
 $string['summary'] = 'Summary';
 $string['survey:addinstance'] = 'Add a new survey';
-$string['surveycompleted'] = 'You\'ve completed this survey.  The graph below shows a summary of your results compared to the class averages.';
-$string['surveycompletednograph'] = 'You have completed this survey.';
 $string['survey:download'] = 'Download responses';
-$string['surveygraph'] = 'Survey graph';
-$string['surveyname'] = 'Survey name';
 $string['survey:participate'] = 'Respond to survey';
 $string['survey:readresponses'] = 'View responses';
+$string['surveycompleted'] = 'You\'ve completed this survey.  The graph below shows a summary of your results compared to the class averages.';
+$string['surveycompletednograph'] = 'You have completed this survey.';
+$string['surveygraph'] = 'Survey graph';
+$string['surveyname'] = 'Survey name';
 $string['surveysaved'] = 'Survey saved';
 $string['surveytype'] = 'Survey type';
 $string['surveytype_help'] = 'There are 3 available survey types:

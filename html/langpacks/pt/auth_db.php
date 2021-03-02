@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_db', language 'pt', version '3.8'.
  *
- * @package   auth_db
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_db
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -37,7 +37,7 @@ $string['auth_dbdeleteusererror'] = 'Erro ao apagar o utilizador {$a}';
 $string['auth_dbdescription'] = 'Este método usa uma base de dados externa para verificar se um nome de utilizador e senha são válidos. Se for uma conta nova, a informação de outros campos pode ser também usada na criação da conta Moodle.';
 $string['auth_dbextencoding'] = 'Codificação da base de dados externa';
 $string['auth_dbextencodinghelp'] = 'Codificação usada na base de dados externa';
-$string['auth_dbextrafields'] = 'Estes campos são opcionais. Pode optar por preencher alguns campos do perfil do utilizador com informação da base de dados externa indicada aqui.<p>Se deixar estes campos em branco serão usados os valores predefinidos.</p><p>Em qualquer caso o utilizador poderá alterar estes dados depois de autenticar-se no Moodle.</p>';
+$string['auth_dbextrafields'] = 'Estes campos são opcionais. Pode optar por preencher alguns campos do perfil do utilizador com informação da base de dados externa indicada aqui.<p>Se deixar estes campos em branco serão usados os valores predefinidos.</p><p>Em qualquer caso o utilizador poderá alterar estes dados depois de se autenticar no Moodle.</p>';
 $string['auth_dbfieldpass'] = 'Nome do campo que contém as senhas';
 $string['auth_dbfieldpass_key'] = 'Campo senha';
 $string['auth_dbfielduser'] = 'Nome do campo que contém os nomes de utilizador. Este campo deve ser do tipo de dados de carácter variável (varchar).';
@@ -66,8 +66,8 @@ $string['auth_dbsybasequoting'] = 'Usar formato de aspas Sybase';
 $string['auth_dbsybasequotinghelp'] = 'Usar o estilo de Sybase de escaping de aspas - necessário para Oracle, MS SQL e outras bases de dados. Não usar com MySQL!';
 $string['auth_dbsyncuserstask'] = 'Tarefa de sincronizar utilizadores';
 $string['auth_dbtable'] = 'Nome da tabela na base de dados';
-$string['auth_dbtableempty'] = 'A tabela externa está vazia.';
 $string['auth_dbtable_key'] = 'Tabela';
+$string['auth_dbtableempty'] = 'A tabela externa está vazia.';
 $string['auth_dbtype'] = 'Tipo de base de dados (consulte a documentação <a href="http://adodb.org/dokuwiki/doku.php" target="_blank">ADOdb - camada de abstração da base de dados para PHP</a> para mais detalhes).';
 $string['auth_dbtype_key'] = 'Base de dados';
 $string['auth_dbupdateerror'] = 'Ocorreu um erro ao atualizar a base de dados externa.';

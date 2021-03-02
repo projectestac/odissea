@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_ordering', language 'en', version '3.8'.
  *
- * @package   qtype_ordering
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_ordering
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -76,18 +76,18 @@ $string['noscore'] = 'No score';
 $string['notenoughanswers'] = 'Ordering questions must have more than {$a} answers.';
 $string['numberingstyle'] = 'Number the choices?';
 $string['numberingstyle123'] = '1., 2., 3., ...';
-$string['numberingstyleabc'] = 'a., b., c., ...';
 $string['numberingstyleABCD'] = 'A., B., C., ...';
+$string['numberingstyleIIII'] = 'I., II., III., ...';
 $string['numberingstyle_desc'] = 'The default numbering style.';
 $string['numberingstyle_help'] = 'Choose the numbering style for draggable items in this question.';
+$string['numberingstyleabc'] = 'a., b., c., ...';
 $string['numberingstyleiii'] = 'i., ii., iii., ...';
-$string['numberingstyleIIII'] = 'I., II., III., ...';
 $string['numberingstylenone'] = 'No numbering';
 $string['pluginname'] = 'Ordering';
-$string['pluginnameadding'] = 'Adding an Ordering question';
-$string['pluginnameediting'] = 'Editing an Ordering question';
 $string['pluginname_help'] = 'Several items are displayed in a jumbled order. The items can be dragged into a meaningful order.';
 $string['pluginname_link'] = 'question/type/ordering';
+$string['pluginnameadding'] = 'Adding an Ordering question';
+$string['pluginnameediting'] = 'Editing an Ordering question';
 $string['pluginnamesummary'] = 'Put jumbled items into a meaningful order.';
 $string['positionx'] = 'Position {$a}';
 $string['privacy:metadata'] = 'The ordering question type plugin does not store any personal data.';

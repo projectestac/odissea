@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'quiz_statistics', language 'ko', version '3.8'.
  *
- * @package   quiz_statistics
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     quiz_statistics
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,12 +28,12 @@ defined('MOODLE_INTERNAL') || die();
 $string['actualresponse'] = '실제 응답';
 $string['allattempts'] = '모든 시도';
 $string['allattemptsavg'] = '모든 시도의 평균값';
-$string['allattemptscount'] = '총 시도의 수';
+$string['allattemptscount'] = '완전하게 채점된 시도의 총 수';
 $string['analysisnameonly'] = '"{$a->name}"';
 $string['analysisno'] = '({$a->number}) "{$a->name}"';
 $string['analysisnovariant'] = '({$a->number}) "{$a->name}" 배리언트 {$a->variant}';
 $string['analysisofresponses'] = '응답분석';
-$string['analysisofresponsesfor'] = '{$a} 응답분석';
+$string['analysisofresponsesfor'] = '{$a}에 대한 응답분석';
 $string['analysisvariant'] = '"{$a->name}" 배리언트 {$a->variant}';
 $string['attempts'] = '시도';
 $string['attemptsall'] = '모든 시도';
@@ -47,7 +47,7 @@ $string['coursename'] = '강좌명';
 $string['detailedanalysis'] = '본 질문의 좀 더 자세한 응답 분석';
 $string['discrimination_index'] = '변별도 지수';
 $string['discriminative_efficiency'] = '변별 효율';
-$string['downloadeverything'] = '모든 보고서 내려받기';
+$string['downloadeverything'] = '{$a->formatsmenu} {$a->downloadbutton} 로 전체 보고서 다운로드';
 $string['duration'] = '개방 기간';
 $string['effective_weight'] = '유효 가중치';
 $string['errordeleting'] = '옛 {$a} 기록 삭제 중 오류';
@@ -60,7 +60,7 @@ $string['errorstatisticsquestions'] = '질문 성적의 통계를 계산하기 �
 $string['facility'] = '난이도';
 $string['firstattempts'] = '최초 시도';
 $string['firstattemptsavg'] = '최초 시도의 평균값';
-$string['firstattemptscount'] = '첫번째 시도의 돗수';
+$string['firstattemptscount'] = '완전하게 채점된 처음 시도 수';
 $string['frequency'] = '빈도';
 $string['highestattempts'] = '최고 점수 받은 시도';
 $string['intended_weight'] = '의도한 가중치';
@@ -106,8 +106,9 @@ $string['standarddeviation'] = '({$a})표준편차';
 $string['standarddeviationq'] = '표준편차';
 $string['standarderror'] = '({$a})표준오차';
 $string['statistics'] = '통계';
+$string['statistics:componentname'] = '퀴즈 통계 보고서';
+$string['statistics:view'] = '통계 보고서 보기';
 $string['statisticsreport'] = '통계 보고';
 $string['statisticsreportgraph'] = '질문 위치에 대한 통계';
-$string['statistics:view'] = '통계 보고서 보기';
 $string['statsfor'] = '퀴즈 ({$a}) 통계';
 $string['whichtries'] = '다음에 대한 응답분석';

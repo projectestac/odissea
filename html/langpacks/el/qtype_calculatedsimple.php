@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_calculatedsimple', language 'el', version '3.8'.
  *
- * @package   qtype_calculatedsimple
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_calculatedsimple
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,10 +31,10 @@ $string['findwildcards'] = 'Βρείτε τους χαρακτήρες μπαλ�
 $string['generatenewitemsset'] = 'Δημιουργία';
 $string['newsetwildcardvalues'] = 'νέο σύνολο(α) τιμών μπαλαντέρ';
 $string['pluginname'] = 'Απλή ερώτηση υπολογιστικού τύπου';
-$string['pluginnameadding'] = 'Προσθήκη μιας απλής ερώτησης υπολογιστικού τύπου';
-$string['pluginnameediting'] = 'Επεξεργασία μιας απλής ερώτησης υπολογιστικού τύπου';
 $string['pluginname_help'] = 'Οι απλές ερωτήσεις υπολογιστικού τύπου επιτρέπουν τη δημιουργία μεμονωμένων αριθμητικών ερωτήσεων με τη χρήση μπαλαντέρ που αντικαθίστανται με ξεχωριστές τιμές κατά τη λήψη του κουίζ. Οι απλές ερωτήσεις υπολογιστικού τύπου προσφέρουν τα πιο χρησιμοποιούμενα χαρακτηριστικά της ερώτησης υπολογιστικού τύπου με μια απλούστερη διεπαφή δημιουργίας.';
 $string['pluginname_link'] = 'ερώτηση/τύπος/υπολογισμούαπλή';
+$string['pluginnameadding'] = 'Προσθήκη μιας απλής ερώτησης υπολογιστικού τύπου';
+$string['pluginnameediting'] = 'Επεξεργασία μιας απλής ερώτησης υπολογιστικού τύπου';
 $string['pluginnamesummary'] = 'Μια απλούστερη εκδοχή των ερωτήσεων υπολογιστικού τύπου που είναι σαν αριθμητικές ερωτήσεις, αλλά με τους αριθμούς που χρησιμοποιούνται να επιλέγονται τυχαία από ένα σύνολο όταν λαμβάνεται το κουίζ.';
 $string['privacy:metadata'] = 'Το πρόσθετο «Απλή ερώτηση υπολογιστικού τύπου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['setno'] = 'Σύνολο {$a}';

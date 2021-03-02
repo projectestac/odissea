@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_glossary_random', language 'ar', version '3.8'.
  *
- * @package   block_glossary_random
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_glossary_random
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,7 +30,7 @@ $string['askaddentry'] = 'عندما يستطيع المستخدمون من إض
 $string['askinvisible'] = 'عندما لا يستطيع المستخدمون من تحرير أو مشاهدة المسرد، أظهر هذا النص. (بدون رابط)';
 $string['askviewglossary'] = 'عندما يستطيع المستخدمون مشاهدة المسرد بدون أن يستطيعوا إضافة مدخلاتهم إلى المسرد، أظهر الرابط مع هذا النص.';
 $string['glossary_random:addinstance'] = 'إضافة كتلة جديدة لمصطلح عشوائي من مسرد';
-$string['glossary_random:myaddinstance'] = 'إضافة كتلة جديدة لمصطلح عشوائي من مسرد إلى دفة القيادة';
+$string['glossary_random:myaddinstance'] = 'إضافة كتلة جديدة لمصطلح عشوائي من مسرد إلى لوحة التحكم';
 $string['intro'] = 'تأكد من وجود مسرد وأحد بمدخل وأحد على الأقل في هذا المقرر الدراسي، بعد ذلك يمكنك القيام بتعديل الإعدادات التالية';
 $string['invisible'] = '(سيتم التتابع)';
 $string['lastmodified'] = 'المدخل المعدل مؤخراً';

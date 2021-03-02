@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'role', language 'de', version '3.8'.
  *
- * @package   role
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     role
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -43,11 +43,11 @@ $string['analytics:listinsights'] = 'Einschätzungen auflisten';
 $string['analytics:listowninsights'] = 'Eigene Erkenntnisse auflisten';
 $string['analytics:managemodels'] = 'Modelle verwalten';
 $string['archetype'] = 'Grundform der Rolle';
+$string['archetype_help'] = 'Die Basisrolle legt alle Rechte fest, die eine Rolle in ihrem Ausgangszustand besitzt. Hier werden auch alle neuen Rechte für eine Rolle eingefügt, wenn die Website aktualisiert wird.';
 $string['archetypecoursecreator'] = 'Basisrolle: Kursersteller/in';
 $string['archetypeeditingteacher'] = 'Basisrolle: Trainer/in';
 $string['archetypefrontpage'] = 'Basisrolle: Authentifizierte/r Nutzer/in der Startseite';
 $string['archetypeguest'] = 'Basisrolle: Gast';
-$string['archetype_help'] = 'Die Basisrolle legt alle Rechte fest, die eine Rolle in ihrem Ausgangszustand besitzt. Hier werden auch alle neuen Rechte für eine Rolle eingefügt, wenn die Website aktualisiert wird.';
 $string['archetypemanager'] = 'Basisrolle: Manager/in';
 $string['archetypestudent'] = 'Basisrolle: Teilnehmer/in';
 $string['archetypeteacher'] = 'Basisrolle: Trainer/in ohne Bearbeitungsrecht';
@@ -62,7 +62,7 @@ $string['assignrole'] = 'Rollen zuweisen';
 $string['assignrolenameincontext'] = 'Rolle \'{$a->role}\' in \'{$a->context}\' zuweisen';
 $string['assignroles'] = 'Rollen zuweisen';
 $string['assignroles_help'] = 'Durch die Rollenzuweisung in einem Kontext werden alle Fähigkeiten der Rolle übertragen, u.z. im aktuellen Kontext und in allen nachrangigen Kontexten. Wird z.B. Nutzer/innen die Teilnehmerrolle in einem Kurs zugewiesen, so haben sie die Teilnehmerrolle auch für alle Aktivitäten und Blöcke innerhalb des Kurses.';
-$string['assignrolesin'] = 'Rollen in {$a} zuweisen';
+$string['assignrolesin'] = 'Rollen zuweisen in {$a}';
 $string['assignrolesrelativetothisuser'] = 'Rollen relativ zu diesem Nutzerkonto zuweisen';
 $string['backtoallroles'] = 'Zurück zur Rollenliste';
 $string['backup:anonymise'] = 'Nutzerdaten bei Sicherung anonymisieren';
@@ -152,8 +152,8 @@ $string['competency:userevidencemanageown'] = 'Beleg über Vorkenntnisse verwalt
 $string['competency:userevidenceview'] = 'Beleg über Vorkenntnisse einer Person anzeigen';
 $string['confirmaddadmin'] = 'Möchten Sie wirklich <strong>{$a}</strong> als neue/n Administrator/in hinzufügen?';
 $string['confirmdeladmin'] = 'Möchten Sie \'{$a}\' wirklich aus der Administrationsliste löschen?';
-$string['confirmroleprevent'] = 'Möchten Sie wirklich <strong>{$a->role}</strong> aus der Liste der erlaubten Rollen für die Fähigkeit {$a->cap} im Kontext {$a->context} entfernen?';
-$string['confirmroleunprohibit'] = 'Möchten Sie wirklich <strong>{$a->role}</strong> aus der Liste der verbotenen Rollen für die Fähigkeit {$a->cap} im Kontext {$a->context} entfernen?';
+$string['confirmroleprevent'] = 'Möchten Sie wirklich <strong>{$a->role}</strong> aus der Liste der Rollen entfernen, für die das Recht {$a->cap} im Kontext {$a->context} erlaubt ist?';
+$string['confirmroleunprohibit'] = 'Möchten Sie wirklich <strong>{$a->role}</strong> aus der Liste der Rollen entfernen, für die das Recht {$a->cap} im Kontext {$a->context} verboten ist?';
 $string['confirmunassign'] = 'Möchten Sie die Rolle wirklich bei dieser Person löschen?';
 $string['confirmunassignno'] = 'Abbrechen';
 $string['confirmunassigntitle'] = 'Rollenwechsel bestätigen';
@@ -286,8 +286,8 @@ $string['legacy:editingteacher'] = 'Basisrolle: Trainer/in';
 $string['legacy:guest'] = 'Basisrolle: Gast';
 $string['legacy:student'] = 'Basisrolle: Teilnehmer/in';
 $string['legacy:teacher'] = 'Basisrolle: Trainer/in ohne Bearbeitungsrecht';
-$string['legacytype'] = 'Basisrollentyp';
 $string['legacy:user'] = 'Basisrolle: Authentifizierte/r Nutzer/in';
+$string['legacytype'] = 'Basisrollentyp';
 $string['listallroles'] = 'Alle Rollen auflisten';
 $string['localroles'] = 'Lokale Rollen zuweisen';
 $string['mainadmin'] = 'Primärer Administrator';
@@ -314,11 +314,11 @@ $string['notes:manage'] = 'Anmerkungen verwalten';
 $string['notes:view'] = 'Anmerkungen sehen';
 $string['notset'] = 'Nicht gesetzt';
 $string['novisibleroles'] = 'Keine Rollen';
-$string['overrideanotherrole'] = 'Weitere Rolle ändern';
+$string['overrideanotherrole'] = 'Andere Rolle ändern';
 $string['overridecontext'] = 'Kontext ändern';
 $string['overridepermissions'] = 'Rechte ändern';
-$string['overridepermissionsforrole'] = 'Rechte für \'{$a->role}\' in {$a->context} ändern';
 $string['overridepermissions_help'] = 'Die Änderung von Rollenrechten ermöglicht, ausgewählte Fähigkeiten in bestimmten Kontexten zu erlauben oder zu verbieten.';
+$string['overridepermissionsforrole'] = 'Rechte für \'{$a->role}\' in {$a->context} ändern';
 $string['overridepermissionsin'] = 'Rechte in {$a} ändern';
 $string['overrideroles'] = 'Rollen ändern';
 $string['overriderolesin'] = 'Rollen in {$a} ändern';
@@ -340,7 +340,7 @@ $string['potusers'] = 'Mögliche Nutzer/innen';
 $string['potusersmatching'] = 'Mögliche Nutzer/innen passend zu \'{$a}\'';
 $string['prevent'] = 'Entziehen';
 $string['privacy:metadata:preference:showadvanced'] = 'Verfahren, um den erweiterten Modus-Button zu überspringen';
-$string['privacy:metadata:role_assignments'] = 'Rolenzuweisungen';
+$string['privacy:metadata:role_assignments'] = 'Rollenzuweisungen';
 $string['privacy:metadata:role_assignments:component'] = 'Plugin, das für Rollenzuweisungen verantwortlich ist. Leer wenn Rollen manuell zugewiesen werden.';
 $string['privacy:metadata:role_assignments:itemid'] = 'ID der Einschreibe/Authentifizierungsinstanz, die für Rollenzuweisung verantwortlich ist';
 $string['privacy:metadata:role_assignments:modifierid'] = 'ID des Nutzers, der die Rollenzuweisung erstellte oder veränderte';
@@ -387,33 +387,33 @@ $string['restore:restoretargetimport'] = 'Aus für Import bestimmten Dateien wie
 $string['restore:rolldates'] = 'Beim Wiederherstellen ist das Hinzufügen von Konfigurationsdaten erlaubt';
 $string['restore:uploadfile'] = 'Dateien ins Verzeichnis \'Sicherung\' hochladen';
 $string['restore:userinfo'] = 'Nutzerdaten wiederherstellen';
-$string['restore:viewautomatedfilearea'] = 'Kurse aus automatischen Backup wiederherstellen';
+$string['restore:viewautomatedfilearea'] = 'Kurse aus automatisch erstellten Sicherungen wiederherstellen';
 $string['risks'] = 'Risiken';
+$string['role:assign'] = 'Rollen an Nutzer/innen zuweisen';
+$string['role:manage'] = 'Rollen erstellen und verwalten';
+$string['role:override'] = 'Rechte von anderen ändern';
+$string['role:review'] = 'Rechte von anderen prüfen';
+$string['role:safeoverride'] = 'Sichere Rechte von anderen ändern';
+$string['role:switchroles'] = 'Rollen wechseln';
 $string['roleallowheader'] = 'Erlaube Rolle:';
 $string['roleallowinfo'] = 'Wählen Sie eine Rolle aus, die in die Liste der erlaubten Rollen hinzugefügt werden soll - Kontext {$a->context}, Fähigkeit {$a->cap}:';
-$string['role:assign'] = 'Rollen an Nutzer/innen zuweisen';
 $string['roleassignments'] = 'Rollenzuweisungen';
 $string['roledefinitions'] = 'Rollendefinitionen';
 $string['rolefullname'] = 'Name';
 $string['roleincontext'] = '{$a->role} in {$a->context}';
-$string['role:manage'] = 'Rollen erstellen und verwalten';
-$string['role:override'] = 'Rechte von anderen ändern';
 $string['roleprohibitheader'] = 'Nichterlaubte Rolle';
 $string['roleprohibitinfo'] = 'Wählen Sie eine Rolle aus, die in die Liste der nicht erlaubten Rollen hinzugefügt werden soll - Kontext {$a->context}, Fähigkeit {$a->cap}:';
 $string['rolerepreset'] = 'Grundeinstellung benutzen';
 $string['roleresetdefaults'] = 'Grundeinstellungen';
 $string['roleresetrole'] = 'Rolle oder Basisrolle benutzen';
-$string['role:review'] = 'Rechte von anderen prüfen';
 $string['rolerisks'] = 'Rollenrisiken';
 $string['roles'] = 'Rollen';
-$string['role:safeoverride'] = 'Sichere Rechte von anderen ändern';
-$string['roleselect'] = 'Rolle aussuchen';
-$string['rolesforuser'] = 'Rollen für Nutzer/in {$a}';
 $string['roles_help'] = 'Eine Rolle ist definiert durch einen Satz von Rechten, die für die gesamte Website festgelegt sind. Rollen können einzelnen Nutzer/innen in bestimmten Kontexten (Zusammenhängen) zugewiesen werden.
 ';
+$string['roleselect'] = 'Rolle aussuchen';
+$string['rolesforuser'] = 'Rollen für Nutzer/in {$a}';
 $string['roleshortname'] = 'Kurzbezeichnung';
 $string['roleshortname_help'] = 'Der Kurzname ist ein direktes Identifizierungsmerkmal der Rolle, bei dem ausschließlich alphanumerische Zeichen erlaubt sind. Ändern Sie niemals die Kurznamen der Standardrollen!';
-$string['role:switchroles'] = 'Rollen wechseln';
 $string['roletoassign'] = 'Zuzuweisende Rolle';
 $string['roletooverride'] = 'Zu überschreibende Rolle';
 $string['safeoverridenotice'] = 'Anmerkung: Rechte mit höheren Risiken sind gesperrt. Sie dürfen nur sichere Rechte ändern.';
@@ -424,7 +424,6 @@ $string['selectrole'] = 'Rolle auswählen';
 $string['showallroles'] = 'Alle Rollen anzeigen';
 $string['showthisuserspermissions'] = 'Rechte für dieses Nutzerkonto';
 $string['site:accessallgroups'] = 'Auf alle Gruppen zugreifen';
-$string['siteadministrators'] = 'Administrator/innen';
 $string['site:approvecourse'] = 'Kurserstellung genehmigen';
 $string['site:backup'] = 'Kurse sichern';
 $string['site:config'] = 'Moodle-Konfiguration anpassen';
@@ -451,6 +450,7 @@ $string['site:viewfullnames'] = 'Vollständige Nutzernamen sehen';
 $string['site:viewparticipants'] = 'Alle Nutzer/innen sehen';
 $string['site:viewreports'] = 'Berichte sehen';
 $string['site:viewuseridentity'] = 'Alle Nutzerinformationen als Liste sehen';
+$string['siteadministrators'] = 'Administrator/innen';
 $string['tag:edit'] = 'Vorhandene Tags bearbeiten';
 $string['tag:editblocks'] = 'Blöcke auf Tag-Seiten bearbeiten';
 $string['tag:flag'] = 'Tags als unangemessen markieren';
@@ -475,12 +475,6 @@ $string['user:manageownfiles'] = 'Dateien im Bereich \'Meine Dateien\' verwalten
 $string['user:managesyspages'] = 'Standardlayout für die öffentlichen Nutzerprofile konfigurieren';
 $string['user:readuserblogs'] = 'Alle Nutzerblogs anzeigen';
 $string['user:readuserposts'] = 'Alle Nutzerbeiträge im Forum sehen';
-$string['usersfrom'] = 'Nutzer/innen von {$a}';
-$string['usersfrommatching'] = 'Nutzer/innen im Kontext {$a->contextname} passen zur Suche \'{$a->search}\'';
-$string['usersinthisx'] = 'Nutzer/innen in diesem {$a}';
-$string['usersinthisxmatching'] = 'Nutzer/innen in diesem {$a->contexttype} passen zur Suche \'{$a->search}\'.';
-$string['userswithrole'] = 'Alle Nutzer/innen mit Rollenzuweisung';
-$string['userswiththisrole'] = 'Nutzer/innen mit Rollenzuweisung';
 $string['user:update'] = 'Nutzerprofile aktualisieren';
 $string['user:viewalldetails'] = 'Alle Nutzerinformationen sehen';
 $string['user:viewdetails'] = 'Nutzerprofile sehen';
@@ -488,6 +482,12 @@ $string['user:viewhiddendetails'] = 'Verborgene Nutzerdetails sehen';
 $string['user:viewlastip'] = 'Letzte Nutzer-IP-Adresse sehen';
 $string['user:viewuseractivitiesreport'] = 'Nutzerberichte sehen';
 $string['user:viewusergrades'] = 'Nutzerbewertungen sehen';
+$string['usersfrom'] = 'Nutzer/innen von {$a}';
+$string['usersfrommatching'] = 'Nutzer/innen im Kontext {$a->contextname} passen zur Suche \'{$a->search}\'';
+$string['usersinthisx'] = 'Nutzer/innen in diesem {$a}';
+$string['usersinthisxmatching'] = 'Nutzer/innen in diesem {$a->contexttype} passen zur Suche \'{$a->search}\'';
+$string['userswithrole'] = 'Alle Nutzer/innen mit Rollenzuweisung';
+$string['userswiththisrole'] = 'Nutzer/innen mit Rollenzuweisung';
 $string['useshowadvancedtochange'] = '\'Optionale Felder anzeigen\', <br />um Änderungen duchzuführen';
 $string['viewingdefinitionofrolex'] = 'Definition der Rolle \'{$a}\' anzeigen';
 $string['viewrole'] = 'Rollendetails sehen';

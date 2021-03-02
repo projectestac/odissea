@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'zh_cn', branch 'MOODLE_38_STABLE'
+ * Strings for component 'auth_ldap', language 'zh_cn', version '3.8'.
  *
- * @package   auth_ldap
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     auth_ldap
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -40,14 +40,12 @@ $string['auth_ldap_contexts_key'] = '场景';
 $string['auth_ldap_create_context'] = '如果您允许通过Email确认创建用户，请指定将用户创建在哪个场景。为了安全起见，该场景应该有别于其他用户。您不需要把场景添加到ldap_context-variable。Moodle会自动在此场景中搜索用户。<br /><b>注意！</b>您必须修改auth/ldap/auth.php文件中的user_create()方法，才能创建用户';
 $string['auth_ldap_create_context_key'] = '新用户默认场景';
 $string['auth_ldap_create_error'] = '在 LDAP 中创建用户发生错误';
-$string['auth_ldapdescription'] = '该方法利用一个外部的 LDAP 服务器进行身份认证。如果用户名和密码是有效的，Moodle会在数据库中创建一个新用户。该模块可以从 LDAP 中读取用户属性，并把指定的字段预先填入Moodle。此后的登录将只检验用户名和密码。';
 $string['auth_ldap_expiration_desc'] = '选择“否”关闭密码过期检查，选择 LDAP 则从 LDAP 中读取密码过期时间。';
 $string['auth_ldap_expiration_key'] = '期限';
 $string['auth_ldap_expiration_warning_desc'] = '在多少天前显示密码过期警告。';
 $string['auth_ldap_expiration_warning_key'] = '到期警告';
 $string['auth_ldap_expireattr_desc'] = '可选：覆盖LDAP的密码存储期限属性';
 $string['auth_ldap_expireattr_key'] = '到期属性';
-$string['auth_ldapextrafields'] = '这些字段是可选的。您可以用这里指定的<b>LDAP 字段</b>中的信息预先填充Moodle的用户字段。 <p>如果此处留空，将使用Moodle系统默认值。</p><p>无论以上何种情况，用户在登录之后都可以修改这些字段。</p>';
 $string['auth_ldap_graceattr_desc'] = '可选: 覆盖宽限登录属性';
 $string['auth_ldap_gracelogin_key'] = '宽限登录属性';
 $string['auth_ldap_gracelogins_desc'] = '激活 LDAP 宽限登录的支持。在密码过期后，宽限登录计数值为0前，用户仍可以登录。激活此选项后，当密码过期时将显示宽限登录信息。';
@@ -63,11 +61,10 @@ $string['auth_ldap_memberattribute'] = '可选：当用户属于某个组时，�
 $string['auth_ldap_memberattribute_isdn'] = '可选：覆盖对成员属性值的处理，0 或 1。';
 $string['auth_ldap_memberattribute_isdn_key'] = '成员属性中使用 dn';
 $string['auth_ldap_memberattribute_key'] = '成员属性';
+$string['auth_ldap_no_mbstring'] = '在 Active Directory 中创建用户时需要 mbstring 扩展支持。';
 $string['auth_ldap_noconnect'] = 'LDAP 模块不能连接上服务器：{$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAP 模块不能连接到任何服务器：{$a}';
 $string['auth_ldap_noextension'] = '<em>似乎没有安装 PHP LDAP模块。如果您要使用此认证方式，请确认它已安装且被激活。</em>';
-$string['auth_ldap_no_mbstring'] = '在 Active Directory 中创建用户时需要 mbstring 扩展支持。';
-$string['auth_ldapnotinstalled'] = '不能使用 LDAP 认证方式，PHP LDAP 模块没有安装。';
 $string['auth_ldap_objectclass'] = '可选: 覆盖用于在 ldap _ user _ type 上命名/搜索用户时使用的对象类。通常无需改变此设置。';
 $string['auth_ldap_objectclass_key'] = '对象类';
 $string['auth_ldap_opt_deref'] = '检查在搜索时如何处理别名。选择下列值之一: “否”(LDAP_DEREF_NEVER) 或“是”(LDAP_DEREF_ALWAYS)。';
@@ -96,6 +93,9 @@ $string['auth_ldap_usertypeundefined'] = 'config.user_type 没有定义或函数
 $string['auth_ldap_usertypeundefined2'] = 'config.user_type 没有定义或函数 ldap_unixi2expirationtime 不支持选择的类型！';
 $string['auth_ldap_version'] = '您的服务器正使用的 LDAP 协议版本。';
 $string['auth_ldap_version_key'] = '版本';
+$string['auth_ldapdescription'] = '该方法利用一个外部的 LDAP 服务器进行身份认证。如果用户名和密码是有效的，Moodle会在数据库中创建一个新用户。该模块可以从 LDAP 中读取用户属性，并把指定的字段预先填入Moodle。此后的登录将只检验用户名和密码。';
+$string['auth_ldapextrafields'] = '这些字段是可选的。您可以用这里指定的<b>LDAP 字段</b>中的信息预先填充Moodle的用户字段。 <p>如果此处留空，将使用Moodle系统默认值。</p><p>无论以上何种情况，用户在登录之后都可以修改这些字段。</p>';
+$string['auth_ldapnotinstalled'] = '不能使用 LDAP 认证方式，PHP LDAP 模块没有安装。';
 $string['auth_ntlmsso'] = 'NTLM 单点登录';
 $string['auth_ntlmsso_enabled'] = '设置为“是”将尝试用 NTLM 域进行单点登录。<strong>注意:</strong>还需要在 Web 服务器上有额外的设置，具体查看 <a href="http://docs.moodle.org/en/NTLM_authentication">http://docs.moodle.org/en/NTLM_authentication</a>';
 $string['auth_ntlmsso_enabled_key'] = '启用';
@@ -154,9 +154,9 @@ $string['updateremfail'] = '更新LDAP记录出错。错误代码：{$a->errno}�
 $string['updateremfailamb'] = '无法使用不明确的字段{$a->key}更新LDAP - 旧moodle值：“{$a->ouvalue}”，新值：“{$a->nuvalue}”';
 $string['updateremfailfield'] = '无法更新 LDAP 不存在的字段  (\'{$a->ldapkey}\')。Key ({$a->key}) -Moodle旧值: \'{$a->ouvalue}\' 新值: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = '在外部更新时找不到用户。细节信息：搜索基：“{$a->userdn}”；搜索过滤器：“(objectClass=*)”；搜索属性：{$a->attribs}';
-$string['useracctctrlerror'] = '获得{$a}的userAccountControl时出错';
 $string['user_activatenotsupportusertype'] = '认证：ldap user_activate()不支持所选的用户类型：{$a}';
 $string['user_disablenotsupportusertype'] = '认证：ldap user_disable()不支持所选的用户类型：{$a}';
+$string['useracctctrlerror'] = '获得{$a}的userAccountControl时出错';
 $string['userentriestoadd'] = '要添加的用户项：{$a}';
 $string['userentriestoremove'] = '要删除的用户项：{$a}';
 $string['userentriestorevive'] = '要恢复的用户项：{$a}';

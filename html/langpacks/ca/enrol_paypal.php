@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_paypal', language 'ca', version '3.8'.
  *
- * @package   enrol_paypal
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_paypal
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -49,11 +49,11 @@ $string['mailstudents'] = 'Notifica als estudiants';
 $string['mailteachers'] = 'Notifica als professors';
 $string['messageprovider:paypal_enrolment'] = 'Missatges d\'inscripcions mitjançant PayPal';
 $string['nocost'] = 'No hi ha cap cost associat a la inscripció en aquest curs!';
-$string['paypalaccepted'] = 'S\'accepten pagaments via PayPal';
 $string['paypal:config'] = 'Configura les instàncies d\'inscripció PayPal';
 $string['paypal:manage'] = 'Gestiona els usuaris inscrits';
 $string['paypal:unenrol'] = 'Cancel·la la inscripció d\'usuaris del curs';
 $string['paypal:unenrolself'] = 'Cancel·la la meva inscripció al curs';
+$string['paypalaccepted'] = 'S\'accepten pagaments via PayPal';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'El modul PayPal us permet configurar cursos de pagament. Si el curs és gratuït, als estudiants, no se\'ls demana pagar per entrar. Aquí hi ha el cost del lloc per que podeu configurar per defecte per tot el lloc o un pagament per cada curs individual. El pagament del curs individual anul·la el pagament de tot el lloc.';
 $string['sendpaymentbutton'] = 'Envia pagament via Paypal';

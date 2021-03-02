@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'report_security', language 'es', version '3.8'.
  *
- * @package   report_security
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     report_security
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -56,7 +56,7 @@ $string['check_emailchangeconfirmation_name'] = 'Confirmar cambio de correo elec
 $string['check_emailchangeconfirmation_ok'] = 'Cornfirmar el cambio de dirección de correo electrónico en el perfil de usuario.';
 $string['check_embed_details'] = '<p> La Incrustación ilimitada de objetos es muy peligrosa - Cualquier usuario registrado puede lanzar un ataque XSS contra otros usuarios del servidor. Este ajuste debe ser desactivado en los servidores de producción. </p>';
 $string['check_embed_error'] = 'Incrustación ilimitada de objetos habilitada - esto es muy peligroso en la mayoría de los servidores.';
-$string['check_embed_name'] = 'Permitir EMBED y OBJET';
+$string['check_embed_name'] = 'Permitir EMBED (incrustar) y OBJECT (objeto)';
 $string['check_embed_ok'] = 'No se permite la incrustación ilimitada de objetos.';
 $string['check_frontpagerole_details'] = 'El rol por defecto en la página principal se da a todos los usuarios registrados para las actividades en la portada. Por favor, asegúrese de que no están permitidos privilegios con riesgo para este rol.
 Se recomienda crear un rol especial a tal efecto y no se use un tipo de rol preestablecido.';
@@ -73,7 +73,7 @@ $string['check_guestrole_ok'] = 'La definición del rol de invitado es correcta.
 $string['check_mediafilterswf_details'] = '<p> La incrustación automática de archivos SWF es muy peligrosa - Cualquier usuario registrado puede lanzar un ataque XSS contra otros usuarios del servidor. Por favor, desactivarla en los servidores de producción. </p>';
 $string['check_mediafilterswf_error'] = 'El filtro para archivos multimedia de Flash está habilitado - esto es muy peligroso en la mayoría de los servidores.';
 $string['check_mediafilterswf_name'] = 'Habilitado el filtro .swf';
-$string['check_mediafilterswf_ok'] = 'El filtro Flash no está activado.';
+$string['check_mediafilterswf_ok'] = 'El filtro para archivos multimedia Flash no está activado.';
 $string['check_noauth_details'] = '<p>La extensión <em>Sin identificación</em> no está diseñado para sitios en producción. Por favor deshabilítelo a menos que este sea un servidor de pruebas de desarrollo.</p>';
 $string['check_noauth_error'] = 'La extensión "Sin identificación" no puede usarse en sitios en producción.';
 $string['check_noauth_name'] = 'Sin identificación';
@@ -98,10 +98,10 @@ $string['check_riskadmin_name'] = 'Administradores';
 $string['check_riskadmin_ok'] = 'Se han encontrado {$a} administrador/es del sistema';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) revisar asignación de rol</a>';
 $string['check_riskadmin_warning'] = 'Se encontraron {$a->admincount} administradores del servidor y {$a->unsupcount}  asignaciones de rol admin no-soportadas.';
-$string['check_riskbackup_detailsok'] = 'Ningún rol permite explícitamente respaldar datos de usuario. Sin embargo, observe que los administradores con la capacidad de \'hacer todo\' (doanything) es probable que puedan hacer esto.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Estas sustituciones activas dan a los usuarios la habilidad para incluir datos de usuarios dentro de los respaldos. Por favor, asegúrese que este permiso sea estrictamente necesario.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Los siguientes roles del sistema actualmente les permiten a los usuarios incluir datos de usuarios dentro de los respaldos. Por favor, asegúrese que este permiso sea estrictamente necesario.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>Debido a los roles de más nivel o a las sutituciones locales, las siguientes cuentas de usuarios actualmente tienen permisos para realizar copias de seguridad conteniendo datos privados de cualquier usuario inscrito en estos cursos. Asegúrese de cumplir la normativa nacional para datos personales, que estos usuarios sean de confianza y estén protegidos por contraseñas seguras:</p> {$a}';
+$string['check_riskbackup_detailsok'] = 'Ningún rol permite explícitamente respaldar datos de usuario. Sin embargo, observe que los administradores con la capacidad de \'hacer todo\' (doanything) es probable que puedan hacer esto.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} en {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Copia de seguridad de datos de usuario';

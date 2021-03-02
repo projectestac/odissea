@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'el', branch 'MOODLE_38_STABLE'
+ * Strings for component 'tag', language 'el', version '3.8'.
  *
- * @package   tag
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     tag
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -102,16 +102,16 @@ $string['prevpage'] = 'Επιστροφή';
 $string['privacy:metadata:tag'] = 'Οι λεπτομέρειες κάθε μοναδικής ετικέτας αποθηκεύονται μαζί με την περιγραφή τους και άλλες σχετικές πληροφορίες';
 $string['privacy:metadata:tag:description'] = 'Η περιγραφή της ετικέτας.';
 $string['privacy:metadata:tag:flag'] = 'Αν μια ετικέτα έχει σημαιοδοτηθεί ως ανάρμοστη.';
+$string['privacy:metadata:tag:name'] = 'Το όνομα της ετικέτας - αυτή είναι η κανονικοποιημένη έκδοση του ονόματος.';
+$string['privacy:metadata:tag:rawname'] = 'Το όνομα της ετικέτας - αυτό είναι το εμφανιζόμενο όνομα.';
+$string['privacy:metadata:tag:timemodified'] = 'Πότε τροποποιήθηκε τελευταία η ετικέτα.';
+$string['privacy:metadata:tag:userid'] = 'Το αναγνωριστικό του χρήστη που δημιούργησε την ετικέτα.';
 $string['privacy:metadata:taginstance'] = 'Ο σύνδεσμος μεταξύ κάθε ετικέτας και του σημείου όπου χρησιμοποιείται.';
 $string['privacy:metadata:taginstance:ordering'] = 'Η σχετική σειρά αυτής της ετικέτας.';
 $string['privacy:metadata:taginstance:tagid'] = 'Ο σύνδεσμος προς την ετικέτα.';
 $string['privacy:metadata:taginstance:timecreated'] = 'Πότε συνδέθηκε αυτή η ετικέτα με το στόχο.';
 $string['privacy:metadata:taginstance:timemodified'] = 'Πότε τροποποιήθηκε αυτή η ετικέτα για τον στόχο.';
 $string['privacy:metadata:taginstance:tiuserid'] = 'Όταν κοινόχρηστο περιεχόμενο μπορεί να πάρει ετικέτες μεμονωμένα από χρήστες, αποθηκεύεται ο κάτοχος του στιγμιότυπου ετικέτας.';
-$string['privacy:metadata:tag:name'] = 'Το όνομα της ετικέτας - αυτή είναι η κανονικοποιημένη έκδοση του ονόματος.';
-$string['privacy:metadata:tag:rawname'] = 'Το όνομα της ετικέτας - αυτό είναι το εμφανιζόμενο όνομα.';
-$string['privacy:metadata:tag:timemodified'] = 'Πότε τροποποιήθηκε τελευταία η ετικέτα.';
-$string['privacy:metadata:tag:userid'] = 'Το αναγνωριστικό του χρήστη που δημιούργησε την ετικέτα.';
 $string['ptags'] = 'Ετικέτες χρηστών (χωρισμένες με κόμματα)';
 $string['relatedblogs'] = 'Οι πιο πρόσφατες αναρτήσεις ιστολογίου';
 $string['relatedtags'] = 'Σχετικές ετικέτες';
@@ -147,11 +147,11 @@ $string['tag'] = 'Ετικέτα';
 $string['tagarea_blog_external'] = 'Αναρτήσεις εξωτερικών ιστολογίων';
 $string['tagarea_course'] = 'Μαθήματα';
 $string['tagarea_course_modules'] = 'Δραστηριότητες και πόροι';
+$string['tagarea_post'] = 'Αναρτήσεις ιστολογίου';
+$string['tagarea_user'] = 'Ενδιαφέροντα χρήστη';
 $string['tagareaenabled'] = 'Ενεργοποιημένο';
 $string['tagareaname'] = 'Όνομα';
-$string['tagarea_post'] = 'Αναρτήσεις ιστολογίου';
 $string['tagareas'] = 'Περιοχές ετικετών';
-$string['tagarea_user'] = 'Ενδιαφέροντα χρήστη';
 $string['tagcollection'] = 'Συλλογή ετικετών';
 $string['tagcollection_help'] = 'Οι συλλογές ετικετών είναι σύνολα ετικετών για διαφορετικές περιοχές. Για παράδειγμα, μια συλλογή από τυπικές ετικέτες μπορεί να χρησιμοποιηθεί για την επισήμανση μαθημάτων, με τα ενδιαφέροντα των χρηστών και τις ετικέτες αναρτήσεων ιστολογίων να διατηρούνται σε μια ξεχωριστή συλλογή. Όταν ένας χρήστης κάνει κλικ σε μια ετικέτα, η σελίδα ετικέτας εμφανίζει μόνο στοιχεία με αυτήν την ετικέτα στην ίδια συλλογή. Οι ετικέτες μπορούν να προστεθούν αυτόματα σε μια συλλογή σύμφωνα με την περιοχή ή μπορούν να προστεθούν χειρονακτικά ως τυπικές ετικέτες.';
 $string['tagcollections'] = 'Συλλογές ετικετών';

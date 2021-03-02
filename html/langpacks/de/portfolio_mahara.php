@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'de', branch 'MOODLE_38_STABLE'
+ * Strings for component 'portfolio_mahara', language 'de', version '3.8'.
  *
- * @package   portfolio_mahara
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     portfolio_mahara
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,12 +36,12 @@ $string['err_nomnethosts'] = 'Basiert auf MNet';
 $string['err_nomnethosts_help'] = 'Das Plugin basiert auf MNet Peers mit veröffentlichten SSO IDP. SSO SP und  Portfolio gezeichnet<b> und </b> veröffentlicht sowie dem MNet Authentifizierungsplugin. Jede Instanz des Plugins wird auf unsichtbar gesetzt, bis dies geschehen ist. Die Einstellung sichtbar/verfügbar muss manuell vorgenommen werden. Erst dann kann das Plugin genutzt werden.';
 $string['failedtojump'] = 'Die Kommunikation mit dem externen Server konnte nicht gestartet werden.';
 $string['failedtoping'] = 'Die Kommunikation mit dem externen Server ({$a}) konnte nicht gestartet werden.';
-$string['mnethost'] = 'MNet-Host';
 $string['mnet_nofile'] = 'Datei zum Transfer konnte nicht gefunden werden.';
 $string['mnet_nofilecontents'] = 'Datei im Transferobjekt gefunden, Fehler aufgetreten: {$a}';
 $string['mnet_noid'] = 'Kein passender Transfer-Datensatz zu diesem Token gefunden';
 $string['mnet_notoken'] = 'Kein passendes Token zu diesem Transfer gefunden';
 $string['mnet_wronghost'] = 'Der Remote-Host passt nicht zum Transfer-Datensatz für dieses Token';
+$string['mnethost'] = 'MNet-Host';
 $string['pf_description'] = 'Abonnieren <b>und</b> veröffentlichen Sie diesen Dienst, damit Ihre Nutzer/innen vorhandene Inhalte von Moodle nach {$a} übertragen können.<br /><ul>
 <li><em>Voraussetzung</em>: Sie müssen den SSO-Dienst (Identify Provider) für {$a} <strong>veröffentlichen</strong>.</li>
 <li><em>Voraussetzung</em>: Sie müssen den SSO-Dienst (Service Provider) von {$a} <strong>abonnieren</strong>.</li>

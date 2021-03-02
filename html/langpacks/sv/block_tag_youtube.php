@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,35 +12,43 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'sv', branch 'MOODLE_38_STABLE'
+ * Strings for component 'block_tag_youtube', language 'sv', version '3.8'.
  *
- * @package   block_tag_youtube
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_tag_youtube
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Valfri kategori';
-$string['autosvehicles'] = 'Bilar &amp;, fordon';
+$string['apierror'] = 'API-nyckeln till YouTube är inte angiven. Kontakta administratören.';
+$string['apikey'] = 'API-nyckel';
+$string['apikeyinfo'] = 'Hämta en <a href="https://developers.google.com/youtube/v3/getting-started">Google API-nyckel</a> för din Moodle-webbplats.';
+$string['autosvehicles'] = 'Bilar & Fordon';
 $string['category'] = 'Kategori';
 $string['comedy'] = 'Komedi';
 $string['configtitle'] = 'Titel';
 $string['education'] = 'Utbildning';
 $string['entertainment'] = 'Underhållning';
-$string['filmsanimation'] = 'Filmer &amp; Animation';
-$string['gadgetsgames'] = 'Gadgets  &amp; Spel';
-$string['howtodiy'] = 'HurGörMan &amp; DIY';
+$string['filmsanimation'] = 'Filmer & Animation';
+$string['gadgetsgames'] = 'Prylar & Spel';
+$string['howtodiy'] = 'Hur gör man & Gör det själv';
 $string['includeonlyvideosfromplaylist'] = 'Ta bara med videor med id från spellistan';
 $string['music'] = 'Musik';
-$string['newspolitics'] = 'Nyheter &amp; Politik';
+$string['newspolitics'] = 'Nyheter & Politik';
 $string['numberofvideos'] = 'Antal videor';
-$string['peopleblogs'] = 'Människor &amp; Bloggar';
-$string['petsanimals'] = 'Husdjur &amp; Djur';
+$string['peopleblogs'] = 'Människor & Bloggar';
+$string['petsanimals'] = 'Husdjur & Djur';
 $string['pluginname'] = 'Youtube';
+$string['privacy:metadata'] = 'Blocket YouTube visar enbart data som lagras på andra platser.';
+$string['requesterror'] = 'Kunde inte hämta data från servern.
+Kontakta administratören om problemen kvarstår.';
 $string['scienceandtech'] = 'Vetenskap & teknik';
 $string['sports'] = 'Sport';
-$string['travel'] = 'Resor &amp; Platser';
+$string['tag_youtube:addinstance'] = 'Lägg till nytt YouTube-block';
+$string['travel'] = 'Resor & Platser';

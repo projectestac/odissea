@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,30 +12,31 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'ar', branch 'MOODLE_38_STABLE'
+ * Strings for component 'workshopform_rubric', language 'ar', version '3.8'.
  *
- * @package   workshopform_rubric
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     workshopform_rubric
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredimensions'] = 'إضافة {$a} معايير أخرى';
-$string['configuration'] = 'تهيئة سلم التقييم';
-$string['criteria'] = 'المعيار';
+$string['addmoredimensions'] = 'الفراغات لـ {$a} معايير أخرى';
+$string['configuration'] = 'تكوين نموذج التقييم';
+$string['criteria'] = 'مقياس';
 $string['dimensiondescription'] = 'الوصف';
-$string['dimensionnumber'] = 'المعيار {$a}';
-$string['layout'] = 'تخطيط سلم التقييم';
+$string['dimensionnumber'] = 'القياسي {$a}';
+$string['layout'] = 'تخطيط نموذج التقييم';
 $string['layoutgrid'] = 'الشبكة';
-$string['layoutlist'] = 'قائمة';
-$string['levelgroup'] = 'درجة المستوى وتعريفه';
+$string['layoutlist'] = 'القائمة';
+$string['levelgroup'] = 'تعريف المستوى و درجاته';
 $string['levels'] = 'المستويات';
 $string['mustbeunique'] = 'يجب أن تكون درجات المستوى فريدة داخل المعيار';
-$string['mustchooseone'] = 'ينبغي عليك اختيار أحد هذه العناصر';
-$string['mustdefinelevel'] = 'يتطلب مستوى واحد على الأقل';
-$string['pluginname'] = 'سلم التقييم';
-$string['privacy:metadata'] = 'يخزن ملحق سلم التقييم فقط تفاصيل نموذج التقييم. يتم تخزين البيانات الشخصية الفعلية لكيفية ملء النموذج بواسطة وحدة ورشة العمل نفسها ويتم إرفاقها بالتقييمات المصدرة.';
+$string['mustchooseone'] = 'يجب عليك أن تختار واحدا من هذه العناصر';
+$string['mustdefinelevel'] = 'مطلوب مستوى واحد على الأقل';
+$string['pluginname'] = 'نموذج التقييم';
+$string['privacy:metadata'] = 'يقوم المكون الإضافي Rubric بتخزين تفاصيل نموذج التقييم فقط. يتم تخزين البيانات الشخصية الفعلية لكيفية ملىء النموذج بواسطة وحدة ورشة العمل نفسها ويتم إرفاقها بالتقييمات المصدرة.';

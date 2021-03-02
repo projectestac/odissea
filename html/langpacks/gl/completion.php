@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,26 +12,27 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'gl', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Acadando a cualificación';
 $string['activities'] = 'Actividades';
-$string['activitiescompleted'] = 'Actividades completadas';
+$string['activitiescompleted'] = 'Completado da actividade';
 $string['activitiescompletednote'] = 'Nota: O completado da actividade debe configurarse para que na lista de enriba apareza unha actividade.';
 $string['activitieslabel'] = 'Actividades / recursos';
 $string['activityaggregation'] = 'Condición requirida';
 $string['activityaggregation_all'] = 'TODAS as actividades seleccionadas para seren completadas';
-$string['activityaggregation_any'] = 'CALQUERA actividade seleccionada para seren completada';
+$string['activityaggregation_any'] = 'CALQUERA actividade seleccionada para ser completada';
 $string['activitycompletion'] = 'Completado da actividade';
 $string['activitycompletionupdated'] = 'Cambios gardados';
 $string['activitygradenotrequired'] = 'Non é obrigatoria a cualificación';
@@ -52,7 +52,7 @@ $string['bulkcompletiontracking_help'] = '<strong>Ningunha:</strong> Non indicar
 <strong>Manual:</strong> O alumno pode marcar manualmente a actividade como completada
 
 <strong>Con condición(s):</strong> Amosar a actividade como completada cando se cumpran as condicións';
-$string['checkactivity'] = 'Caixa de selección para actividade / recurso: {$a}';
+$string['checkactivity'] = 'Caixa de verificación para actividade / recurso: {$a}';
 $string['checkall'] = 'Marcar ou desmarcar todas as actividades e recursos';
 $string['checkallsection'] = 'Marcar ou desmarcar todas as actividades e recursos na sección seguinte: {$a}';
 $string['completed'] = 'Completado';
@@ -61,7 +61,6 @@ $string['completedunlockedtext'] = 'Cando garda os cambios, borrase o estado de 
 $string['completedwarning'] = 'Opcións de completado bloqueadas';
 $string['completedwarningtext'] = 'Un ou máis alumnos ({$a}) xa marcaron esta actividade como completada. Cambiar as opcións de completado borrará o seu estado de completado e pode causar confusión. Polo tanto, estas opcións foron bloqueadas e non se deberían desbloquear agás que for absolutamente necesario.';
 $string['completion'] = 'Seguimento de completado';
-$string['completionactivitydefault'] = 'Usar os valores  predeterminados de actividade';
 $string['completion-alt-auto-enabled'] = 'O sistema marca este elemento como completado conforme coas condicións: {$a}';
 $string['completion-alt-auto-fail'] = 'Completado {$a} (non acadou a cualificación de aprobado)';
 $string['completion-alt-auto-n'] = 'Sen completar: {$a}';
@@ -74,52 +73,53 @@ $string['completion-alt-manual-n'] = 'Sen completar: {$a}. Seleccione para marca
 $string['completion-alt-manual-n-override'] = 'Sen completar: {$a->modname} (estabelecido por {$a->overrideuser}). Seleccione para marcar como completo.';
 $string['completion-alt-manual-y'] = 'Completado: {$a}. Seleccione para marcar como sen completar.';
 $string['completion-alt-manual-y-override'] = 'Completado: {$a->modname} (estabelecido por {$a->overrideuser}). Seleccione para marcar como sen completar.';
-$string['completion_automatic'] = 'Amosar a actividade como completada cando se cumpran as condicións';
-$string['completiondefault'] = 'Seguimento predeterminado o completado';
-$string['completiondisabled'] = 'Desactivado, non se amosa na configuración da actividade';
-$string['completionduration'] = 'Matriculación';
-$string['completionenabled'] = 'Activado, control por medio da configuración de completado e de actividade';
-$string['completionexpected'] = 'Agardase completala en';
-$string['completionexpecteddesc'] = 'Completado agardado en {$a}';
-$string['completionexpectedfor'] = '{$a->instancename} debería estar completada';
-$string['completionexpected_help'] = 'Este axuste especifica a data na que agarda que a actividade estea completada.';
 $string['completion-fail'] = 'Completado (non acadou a cualificación de aprobado)';
+$string['completion-n'] = 'Sen completar';
+$string['completion-n-override'] = 'Sen completar (estabelecido por {$a})';
+$string['completion-pass'] = 'Completado (acadou a cualificación de aprobado)';
+$string['completion-y'] = 'Completado';
+$string['completion-y-override'] = 'Completado (estabelecido por {$a})';
+$string['completion_automatic'] = 'Amosar a actividade como completada cando se cumpran as condicións';
 $string['completion_help'] = 'Se está activada esta opción, faise un seguimento do grao de completado de calquera actividade, ben manual, ben automaticamente, baseándose en determinadas condicións. Pódense fixar múltiples condicións. De ser así, a actividade unicamente se considerará completada cando se cumpran TODAS as condicións.
 
 Una marca a carón do nome da actividade na páxina do curso indica cando está completada a actividade.';
+$string['completion_link'] = 'activity/completion';
+$string['completion_manual'] = 'Os alumnos poden marcar manualmente a actividade como completada';
+$string['completion_none'] = 'Non indicar o completado da actividade';
+$string['completionactivitydefault'] = 'Usar os valores predeterminados de actividade';
+$string['completiondefault'] = 'Seguimento predeterminado o completado';
+$string['completiondisabled'] = 'Desactivado, non se amosa nos axustes da actividade';
+$string['completionduration'] = 'Matriculación';
+$string['completionenabled'] = 'Activado, control por medio dos axustes de completado e de actividade';
+$string['completionexpected'] = 'Agardase completala en';
+$string['completionexpected_help'] = 'Este axuste especifica a data na que agarda que a actividade estea completada.';
+$string['completionexpecteddesc'] = 'Completado agardado en {$a}';
+$string['completionexpectedfor'] = '{$a->instancename} debería estar completada';
 $string['completionicons'] = 'Caixas para marcar o grao de completado';
 $string['completionicons_help'] = 'Pode utilizarse unha marca a carón do nome da actividade para indicar que se completou unha actividade.
 
 Se se amosa unha caixa co bordo punteado, a marca aparecerá automaticamente cando se teña completada a actividade segundo as condiciones estabelecidas polo profesor.
 
 Se se amosa unha caixa co bordo sólido, entón poderase premer sobre ela cando pense que completou a actividade. (Se cambia de opinión, pode volver premer nela e a marca desaparecerá).';
-$string['completion_link'] = 'activity/completion';
-$string['completion_manual'] = 'Os alumnos poden marcar manualmente a actividade como completada';
 $string['completionmenuitem'] = 'Completado';
-$string['completion-n'] = 'Sen completar';
-$string['completion_none'] = 'Non indicar o completado da actividade';
 $string['completionnotenabled'] = 'O completado non está activado';
 $string['completionnotenabledforcourse'] = 'O completado non está activado para este curso';
 $string['completionnotenabledforsite'] = 'O completado non está activado para este sitio';
-$string['completion-n-override'] = 'Sen completar (estabelecido por {$a})';
 $string['completionondate'] = 'Data';
-$string['completionondatevalue'] = 'O usuario debe permanecer matriculado ata';
-$string['completion-pass'] = 'Completado (acadou a cualificación de aprobado)';
-$string['completionsettingslocked'] = 'Configuración de completado bloqueados';
+$string['completionondatevalue'] = 'A data na que se marcará o curso como completado';
+$string['completionsettingslocked'] = 'Axustes de completado bloqueados';
 $string['completionupdated'] = 'Actualizado o completado para a actividade <b>{$a}</b>';
 $string['completionusegrade'] = 'Require cualificación';
 $string['completionusegrade_desc'] = 'O alumno debe recibir unha cualificación para completar esta actividade';
 $string['completionusegrade_help'] = 'Se está activada, a actividade considerase completada cando un alumno recibe unha cualificación. As iconas Aprobar e Suspender preséntanse se foi estabelecida unha cualificación de aprobado para a actividade.';
 $string['completionview'] = 'Requirir ver';
 $string['completionview_desc'] = 'O alumno debe ver esta actividade para completala';
-$string['completion-y'] = 'Completado';
-$string['completion-y-override'] = 'Completado (estabelecido por {$a})';
-$string['configcompletiondefault'] = 'A configuración predeterminada para o seguimento do completado cando se crean actividades novas.';
+$string['configcompletiondefault'] = 'Os axustes predeterminados para o seguimento do completado cando se crean actividades novas.';
 $string['configenablecompletion'] = 'Cando se activa, volvese ás características de seguimento (progreso) do grao de completado no nivel do curso.';
 $string['confirmselfcompletion'] = 'Confirmar o completado propio';
 $string['courseaggregation'] = 'Condición requirida';
 $string['courseaggregation_all'] = 'TODOS os cursos seleccionados para seren completados';
-$string['courseaggregation_any'] = 'CALQUERA curso seleccionado para seren completado';
+$string['courseaggregation_any'] = 'CALQUERA curso seleccionado para ser completado';
 $string['coursealreadycompleted'] = 'Vostede xa completou este curso';
 $string['coursecomplete'] = 'Completado do curso';
 $string['coursecompleted'] = 'Curso completado';
@@ -141,7 +141,7 @@ $string['defaultcompletionupdated'] = 'Cambios gardados';
 $string['deletecompletiondata'] = 'Eliminar os datos de completado';
 $string['dependencies'] = 'Dependencias';
 $string['dependenciescompleted'] = 'Grao de completado doutros cursos';
-$string['editcoursecompletionsettings'] = 'Editar a configuración de completado do curso';
+$string['editcoursecompletionsettings'] = 'Editar os axustes de completado do curso';
 $string['enablecompletion'] = 'Activar o seguimento do progreso (para o completado)';
 $string['enablecompletion_help'] = 'Se se activa, poden estabelecerse as condicións de completado da actividade e/ou as condicións de completado do curso. Recomendase ter isto activado para que se amosen datos significativos no taboleiro da vista xeral do curso.';
 $string['enrolmentduration'] = 'Duración da matriculación';
@@ -161,20 +161,20 @@ $string['excelcsvdownload'] = 'Descargar en formato compatíbel con Excel (.csv)
 $string['fraction'] = 'Fracción';
 $string['graderequired'] = 'Requírese unha cualificación';
 $string['gradexrequired'] = '{$a} requirido';
-$string['hiddenrules'] = 'Agacháronse algúns axustes específicos para <b>{$a}</b>. Para velos desmarque outras actividades';
-$string['inprogress'] = 'En progreso';
+$string['hiddenrules'] = 'Agocháronse algúns axustes específicos para <b>{$a}</b>. Para velos desmarque outras actividades';
+$string['inprogress'] = 'Avanzando';
 $string['manual'] = 'Manual';
 $string['manualcompletionby'] = 'Completado manual por';
 $string['manualcompletionbynote'] = 'Nota: A funcionalidade moodle/course:markcomplete debe estar activada para que un rol apareza na lista.';
-$string['manualselfcompletion'] = 'Completado propio manual';
-$string['manualselfcompletionnote'] = 'Nota: O bloque de autocompletado debería seren engadido se se activa o autocompletado manual.';
+$string['manualselfcompletion'] = 'Autocompletado manual';
+$string['manualselfcompletionnote'] = 'Nota: O bloque de autocompletado debería ser engadido se se activa o autocompletado manual.';
 $string['markcomplete'] = 'Marcar como completado';
 $string['markedcompleteby'] = 'Marcado como completado por {$a}';
 $string['markingyourselfcomplete'] = 'Marcado como completado por vostede';
 $string['modifybulkactions'] = 'Modifique as accións que quere editar de xeito masivo';
 $string['moredetails'] = 'Máis detalles';
 $string['nocriteriaset'] = 'Non hai criterios estabelecidos para o completado deste curso';
-$string['nogradeitem'] = 'Non se pode activar o requirimento de cualificación para <b>{$a}</b> porque a actividade non está cualificada.';
+$string['nogradeitem'] = 'Non se pode activar o requisito de cualificación para <b>{$a}</b> porque a actividade non está cualificada.';
 $string['notcompleted'] = 'Sen completar';
 $string['notenroled'] = 'Vostede non está matriculado neste curso';
 $string['nottracked'] = 'Vostede, actualmente, non está a ser supervisado sobre o seu grao de avance neste curso';
@@ -211,8 +211,8 @@ $string['requiredcriteria'] = 'Criterios requiridos';
 $string['resetactivities'] = 'Limpar todas as actividades e recursos marcados';
 $string['restoringcompletiondata'] = 'Escribindo os datos do grao de completado';
 $string['roleaggregation'] = 'Condición requirida';
-$string['roleaggregation_all'] = 'TODOS os roles seleccionados marquen cando se cumpren as condicións';
-$string['roleaggregation_any'] = 'CALQUERA dos roles seleccionados marquen cando se cumpren as condicións';
+$string['roleaggregation_all'] = 'TODAS as matriculas seleccionadas para marcar cando se cumpren as condicións';
+$string['roleaggregation_any'] = 'CALQUERA das matriculas seleccionadas para marcar cando se cumpren as condicións';
 $string['roleidnotfound'] = 'Non se atopa a matricula co ID {$a}';
 $string['saved'] = 'Gardado';
 $string['seedetails'] = 'Ver detalles';

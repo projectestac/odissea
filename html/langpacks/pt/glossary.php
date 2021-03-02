@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'pt', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'pt', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -119,14 +119,6 @@ $string['destination'] = 'Destino dos termos importados';
 $string['destination_help'] = 'Os termos podem ser importados e adicionados ao glossário atual ou a um novo glossário. Neste caso, o novo glossário será criado com base nas informações contidas no ficheiro XML.';
 $string['disapprove'] = 'Anular aprovação';
 $string['displayformat'] = 'Formato de visualização';
-$string['displayformatcontinuous'] = 'Contínuo sem autor';
-$string['displayformatdefault'] = 'Igual ao formato de visualização predefinido';
-$string['displayformatdictionary'] = 'Simples, estilo dicionário';
-$string['displayformatencyclopedia'] = 'Enciclopédia';
-$string['displayformatentrylist'] = 'Lista de termos';
-$string['displayformatfaq'] = 'FAQ';
-$string['displayformatfullwithauthor'] = 'Completo com autor';
-$string['displayformatfullwithoutauthor'] = 'Completo sem autor';
 $string['displayformat_help'] = 'Existem sete formatos de visualização do glossário:
 
 * Simples, estilo dicionário - Os autores não são apresentados e os anexos são mostrados como hiperligações
@@ -136,6 +128,14 @@ $string['displayformat_help'] = 'Existem sete formatos de visualização do glos
 * Enciclopédia - Idêntico ao "Completo com autor", mas os anexos tipo imagem são exibidos como imagem
 * Lista de Termos - Os termos são listados como links
 * FAQ - As palavras PERGUNTA e RESPOSTA são juntas ao termo e definição, respetivamente';
+$string['displayformatcontinuous'] = 'Contínuo sem autor';
+$string['displayformatdefault'] = 'Igual ao formato de visualização predefinido';
+$string['displayformatdictionary'] = 'Simples, estilo dicionário';
+$string['displayformatencyclopedia'] = 'Enciclopédia';
+$string['displayformatentrylist'] = 'Lista de termos';
+$string['displayformatfaq'] = 'FAQ';
+$string['displayformatfullwithauthor'] = 'Completo com autor';
+$string['displayformatfullwithoutauthor'] = 'Completo sem autor';
 $string['displayformats'] = 'Formatos de visualização';
 $string['displayformatssetup'] = 'Configuração de formatos de visualização';
 $string['duplicatecategory'] = 'Duplicar categoria';
@@ -202,18 +202,18 @@ $string['glossary:export'] = 'Exportar termos';
 $string['glossary:exportentry'] = 'Exportar um termo único';
 $string['glossary:exportownentry'] = 'Exportar um termo único inserido pelo próprio';
 $string['glossary:import'] = 'Importar termos';
-$string['glossaryleveldefaultsettings'] = 'Configurações predefinidas para o glossário';
 $string['glossary:managecategories'] = 'Gerir categorias';
 $string['glossary:managecomments'] = 'Gerir comentários';
 $string['glossary:manageentries'] = 'Gerir termos';
 $string['glossary:rate'] = 'Avaliar termos';
-$string['glossarytype'] = 'Tipo de glossário';
-$string['glossarytype_help'] = 'Um glossário principal permite que sejam importados termos a partir de glossários secundários. Apenas pode existir um glossário principal por disciplina. Se não for necessário importar termos, todos os glossários da disciplina podem ser secundários.';
 $string['glossary:view'] = 'Ver glossário';
 $string['glossary:viewallratings'] = 'Ver avaliações individuais dos termos';
 $string['glossary:viewanyrating'] = 'Ver avaliação dos termos de todos';
 $string['glossary:viewrating'] = 'Ver a nota total que recebeu';
 $string['glossary:write'] = 'Criar novos termos';
+$string['glossaryleveldefaultsettings'] = 'Configurações predefinidas para o glossário';
+$string['glossarytype'] = 'Tipo de glossário';
+$string['glossarytype_help'] = 'Um glossário principal permite que sejam importados termos a partir de glossários secundários. Apenas pode existir um glossário principal por disciplina. Se não for necessário importar termos, todos os glossários da disciplina podem ser secundários.';
 $string['guestnoedit'] = 'Os visitantes não estão autorizados a editar glossários';
 $string['importcategories'] = 'Importar categorias';
 $string['importedcategories'] = 'Categorias importadas';
@@ -222,13 +222,13 @@ $string['importentries'] = 'Importar termos';
 $string['importentriesfromxml'] = 'Importar termos de ficheiro XML';
 $string['includegroupbreaks'] = 'Incluir separadores de grupos';
 $string['indicator:cognitivedepth'] = 'Compreensão do Glossário';
+$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Glossário.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão do Glossário';
 $string['indicator:cognitivedepthdef_help'] = 'O participante alcançou esta percentagem da capacidade cognitiva oferecida pelas atividades Glossário durante esse intervalo de análise (Níveis = Não visualizado, Visualizado, Submetido)';
-$string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno na atividade Glossário.';
 $string['indicator:socialbreadth'] = 'Socialização do Glossário';
+$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Glossário.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Glossário';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelas atividades Glossário durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
-$string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno na atividade Glossário.';
 $string['isglobal'] = 'Este glossário é global?';
 $string['isglobal_help'] = 'Um glossário global contém termos que geram hiperligações em todo o site e não apenas da disciplina em que se encontra inserido. Apenas os administradores podem configurar um glossário como global.';
 $string['letter'] = 'letra';
@@ -312,7 +312,7 @@ $string['showall_help'] = 'Se ativar esta opção, os participantes podem consul
 $string['showalphabet'] = 'Mostrar hiperligações para o alfabeto';
 $string['showalphabet_help'] = 'Se ativar esta opção, os participantes podem consultar os termos por letra inicial.';
 $string['showspecial'] = 'Mostrar a hiperligação Especial';
-$string['showspecial_help'] = 'Se ativar esta opção, os participantes podem pesquisar os termos iniciados por caracteres especiais, tais como @ e #.';
+$string['showspecial_help'] = 'Se ativar esta opção, os participantes podem pesquisar os termos iniciados por carateres especiais como @ e #.';
 $string['sortby'] = 'Ordenar por';
 $string['sortbycreation'] = 'Por data de criação';
 $string['sortbylastupdate'] = 'Por última atualização';

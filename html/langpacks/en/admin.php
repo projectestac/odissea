@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'en', branch 'MOODLE_38_STABLE'
+ * Strings for component 'admin', language 'en', version '3.8'.
  *
- * @package   admin
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     admin
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -30,11 +30,11 @@ $string['accounts'] = 'Accounts';
 $string['addcategory'] = 'Add a category';
 $string['additionalhtml'] = 'Additional HTML';
 $string['additionalhtml_desc'] = 'These settings allow you to specify HTML that you want added to every page. You can set HTML that will be added within the HEAD tag for the page, immediately after the BODY tag has been opened, or immediately before the body tag is closed.<br />Doing this allows you to add custom headers or footers on every page, or add support for services like Google Analytics very easily, independent of your chosen theme.';
+$string['additionalhtml_heading'] = 'Additional HTML to be added to every page.';
 $string['additionalhtmlfooter'] = 'Before BODY is closed';
 $string['additionalhtmlfooter_desc'] = 'Content here will be added in to every page right before the body tag is closed.';
 $string['additionalhtmlhead'] = 'Within HEAD';
 $string['additionalhtmlhead_desc'] = 'Content here will be added to the bottom of the HEAD tag for every page.';
-$string['additionalhtml_heading'] = 'Additional HTML to be added to every page.';
 $string['additionalhtmltopofbody'] = 'When BODY is opened';
 $string['additionalhtmltopofbody_desc'] = 'Content here will be added in to every page immediately after the opening body tag.';
 $string['admincategory'] = 'Category: {$a}';
@@ -86,9 +86,9 @@ $string['autologinguests'] = 'Auto-login guests';
 $string['availablelicenses'] = 'Available licences';
 $string['availableto'] = 'Available to';
 $string['backgroundcolour'] = 'Transparent colour';
-$string['backups'] = 'Backups';
 $string['backup_shortname'] = 'Use course name in backup filename';
 $string['backup_shortnamehelp'] = 'Use the course name as part of the backup filename.';
+$string['backups'] = 'Backups';
 $string['badwordsconfig'] = 'Enter your list of bad words separated by commas.';
 $string['badwordsdefault'] = 'If the custom list is empty, a default list from the language pack will be used.';
 $string['badwordslist'] = 'Custom bad words list';
@@ -118,11 +118,11 @@ $string['cachesettings'] = 'Cache settings';
 $string['cachetemplates'] = 'Cache templates';
 $string['cachetemplates_help'] = 'Template caching will improve page loading performance and is strongly recommended for production sites. Developers will probably want to disable this feature.';
 $string['caching'] = 'Caching';
+$string['calendar_weekend'] = 'Weekend days';
 $string['calendarexportsalt'] = 'Calendar export salt';
 $string['calendarsettings'] = 'Calendar';
 $string['calendartype'] = 'Calendar type';
 $string['calendartype_desc'] = 'Choose a default calendar type for the whole site. This setting can be overridden in the course settings or by users in their personal profile.';
-$string['calendar_weekend'] = 'Weekend days';
 $string['cannotdeletemodfilter'] = 'You cannot uninstall the \'{$a->filter}\' because it is part of the \'{$a->module}\' module.';
 $string['cannotuninstall'] = '{$a} can not be uninstalled.';
 $string['categoryemail'] = 'Email';
@@ -414,6 +414,7 @@ $string['contextlocking_desc'] = 'This setting enables read-only access to be se
 $string['cookiehttponly'] = 'Only http cookies';
 $string['cookiesecure'] = 'Secure cookies only';
 $string['country'] = 'Default country';
+$string['course_customfield'] = 'Course custom fields';
 $string['coursecolor'] = 'Colour {$a}';
 $string['coursecolorheading_desc'] = 'Any courses without a course image set in the course settings are displayed on the Dashboard with a patterned course card. The colours used in the pattern may be specified below.';
 $string['coursecolorsettings'] = 'Course card colours';
@@ -421,7 +422,6 @@ $string['coursecontact'] = 'Course contacts';
 $string['coursecontact_desc'] = 'This setting allows you to control who appears on the course description. Users need to have at least one of these roles in a course to be shown on the course description for that course.';
 $string['coursecontactduplicates'] = 'Display all course contact roles';
 $string['coursecontactduplicates_desc'] = 'If enabled, users with more than one of the selected course contact roles will be displayed in the course description with each of their roles. Otherwise, they will be displayed with only one role (whichever is listed highest in \'Define roles\' in the Site administration).';
-$string['course_customfield'] = 'Course custom fields';
 $string['coursegraceperiodafter'] = 'Grace period for past courses';
 $string['coursegraceperiodbefore'] = 'Grace period for future courses';
 $string['courselistshortnames'] = 'Display extended course names';
@@ -438,12 +438,12 @@ $string['courseswithsummarieslimit'] = 'Courses with summaries limit';
 $string['creatornewroleid'] = 'Creators\' role in new courses';
 $string['creatornewroleid_help'] = 'If the user does not already have the permission to manage the new course, the user is automatically enrolled using this role.';
 $string['cron'] = 'Cron';
+$string['cron_help'] = 'The cron.php script runs a number of tasks at different scheduled intervals, such as sending forum post notification emails. The script should be run regularly - ideally every minute.';
+$string['cron_link'] = 'admin/cron';
 $string['cronclionly'] = 'Cron execution via command line only';
 $string['cronerrorclionly'] = 'Sorry, internet access to this page has been disabled by the administrator.';
 $string['cronerrorpassword'] = 'Sorry, you have not provided a valid password to access this page';
-$string['cron_help'] = 'The cron.php script runs a number of tasks at different scheduled intervals, such as sending forum post notification emails. The script should be run regularly - ideally every minute.';
 $string['croninfrequent'] = 'The time between the last two runs of the cron maintenance script was over {$a} seconds. We recommend configuring it to run more frequently.';
-$string['cron_link'] = 'admin/cron';
 $string['cronremotepassword'] = 'Cron password for remote access';
 $string['cronwarning'] = 'The <a href="{$a}">cron.php maintenance script</a> has not been run for at least 24 hours.';
 $string['cronwarningcli'] = 'The cli/cron.php maintenance script has not been run for at least 24 hours.';
@@ -590,7 +590,7 @@ $string['experimentalsettings'] = 'Experimental settings';
 $string['extendedusernamechars'] = 'Allow extended characters in usernames';
 $string['extramemorylimit'] = 'Extra PHP memory limit';
 $string['fatalsessionautostart'] = '<p>Serious configuration error detected, please notify server administrator.</p><p> To operate properly, Moodle requires that administrator changes PHP settings.</p><p><code>session.auto_start</code> must be set to <code>off</code>.</p><p>This setting is controlled by editing <code>php.ini</code>, Apache/IIS <br />configuration or <code>.htaccess</code> file on the server.</p>';
-$string['fileconversioncleanuptask'] = 'Cleanup of temporary records for file conversions.';
+$string['fileconversioncleanuptask'] = 'Cleanup of temporary records for file conversions';
 $string['filecreated'] = 'New file created';
 $string['filescleanupperiod'] = 'Clean up trash pool files';
 $string['filescleanupperiod_help'] = 'How often trash pool files are deleted. These are files that are associated with a context that no longer exists, for example when a course is deleted. Please note: This setting can result in missing files in a course which is backed up, deleted and then restored if the setting \'Include files\' (backup_auto_files) in \'Automated backup settings\' is disabled.';
@@ -744,9 +744,9 @@ $string['loginpageautofocus'] = 'Autofocus login page form';
 $string['loginpageautofocus_help'] = 'Enabling this option improves usability of the login page, but automatically focusing fields may be considered an accessibility issue.';
 $string['loglifetime'] = 'Keep logs for';
 $string['logo'] = 'Logo';
+$string['logo_desc'] = 'A full logo to be used as decoration by some themes (such as core themes). This image can be quite high resolution because it will be scaled down for use (and cached for performance). Logos that are wider than they are high usually give better results. Formats accepted: PNG and JPG.';
 $string['logocompact'] = 'Compact logo';
 $string['logocompact_desc'] = 'A compact version of the same logo as above, such as an emblem, shield or icon. The image should be clear even at small sizes. Formats accepted: PNG and JPG.';
-$string['logo_desc'] = 'A full logo to be used as decoration by some themes (such as core themes). This image can be quite high resolution because it will be scaled down for use (and cached for performance). Logos that are wider than they are high usually give better results. Formats accepted: PNG and JPG.';
 $string['logossettings'] = 'Logos';
 $string['logstorenotrequired'] = 'Log store not required';
 $string['logstoressupported'] = 'Log stores that support this report';
@@ -943,8 +943,8 @@ $string['pluginschecktodo'] = 'You must solve all the plugin requirements before
 $string['pluginsoverview'] = 'Plugins overview';
 $string['pluginsoverviewsee'] = 'See <a href="{$a->url}">plugins overview</a> page for more details.';
 $string['policysettings'] = 'Policy settings';
-$string['privacyandpolicies'] = 'Privacy and policies';
 $string['privacy:metadata'] = 'The Administration plugin does not store any personal data.';
+$string['privacyandpolicies'] = 'Privacy and policies';
 $string['privacysettings'] = 'Privacy settings';
 $string['profilecategory'] = 'Category';
 $string['profilecategoryname'] = 'Category name (must be unique)';
@@ -994,10 +994,10 @@ $string['profileshortnamenotunique'] = 'This short name is already in use';
 $string['profilesignup'] = 'Display on signup page?';
 $string['profilespecificsettings'] = 'Specific settings';
 $string['profilevisible'] = 'Who is this field visible to?';
-$string['profilevisibleall'] = 'Visible to everyone';
 $string['profilevisible_help'] = '* Not visible - For private data only viewable by administrators
 * Visible to user - For private data only viewable by the user and by administrators
 * Visible to everyone';
+$string['profilevisibleall'] = 'Visible to everyone';
 $string['profilevisiblenone'] = 'Not visible';
 $string['profilevisibleprivate'] = 'Visible to user';
 $string['profiling'] = 'Profiling';
@@ -1099,10 +1099,10 @@ $string['scssinvalid'] = 'SCSS code is not valid, fails with: {$a}';
 $string['search'] = 'Search';
 $string['searchablecourses'] = 'Searchable courses';
 $string['searchallavailablecourses'] = 'Searchable courses';
-$string['searchallavailablecoursesdesc'] = 'If set to search within enrolled courses only, course information (name and summary) and course content will only be searched in courses which the user is enrolled in. Otherwise, course information and course content will be searched in all courses which the user can access, such as courses with guest access enabled.';
 $string['searchallavailablecourses_desc'] = 'In some situations the search engine may not work when searching across a large number of courses. Set to search only enrolled courses if you need to restrict the number of courses searched.';
 $string['searchallavailablecourses_off'] = 'Search within enrolled courses only';
 $string['searchallavailablecourses_on'] = 'Search within all courses the user can access';
+$string['searchallavailablecoursesdesc'] = 'If set to search within enrolled courses only, course information (name and summary) and course content will only be searched in courses which the user is enrolled in. Otherwise, course information and course content will be searched in all courses which the user can access, such as courses with guest access enabled.';
 $string['searchalldeleted'] = 'All indexed contents have been deleted';
 $string['searchareadisabled'] = 'Search area disabled';
 $string['searchareaenabled'] = 'Search area enabled';
@@ -1171,13 +1171,13 @@ $string['sitemaintenancewarning2'] = 'Your site is currently in maintenance mode
 $string['sitemenubar'] = 'Site navigation';
 $string['sitepolicies'] = 'Site security settings';
 $string['sitepolicy'] = 'Site policy URL';
+$string['sitepolicy_help'] = 'The URL of the site policy that all registered users must see and agree to before accessing the site. Note that this setting will only have an effect if the site policy handler is set to default (core).';
 $string['sitepolicyguest'] = 'Site policy URL for guests';
 $string['sitepolicyguest_help'] = 'The URL of the site policy that all guests must see and agree to before accessing the site. Note that this setting will only have an effect if the site policy handler is set to default (core).';
 $string['sitepolicyhandler'] = 'Site policy handler';
-$string['sitepolicyhandlercore'] = 'Default (core)';
 $string['sitepolicyhandler_desc'] = 'This determines how policies and user consents are managed. The default (core) handler enables a site policy URL and a site policy URL for guests to be specified. The policies handler enables site, privacy and other policies to be set. It also enables user consents to be viewed and, if necessary, consent on behalf of minors to be given.';
+$string['sitepolicyhandlercore'] = 'Default (core)';
 $string['sitepolicyhandlerplugin'] = '{$a->name} ({$a->component})';
-$string['sitepolicy_help'] = 'The URL of the site policy that all registered users must see and agree to before accessing the site. Note that this setting will only have an effect if the site policy handler is set to default (core).';
 $string['sitesectionhelp'] = 'If selected, a topic section will be displayed on the site\'s front page.';
 $string['sixtyfourbitswarning'] = 'It has been detected that your site is not using a 64-bit PHP version. It is recommended that you upgrade your site to ensure future compatibility.';
 $string['slasharguments'] = 'Use slash arguments';
@@ -1228,6 +1228,30 @@ $string['task_adhoc_concurrency_limit'] = 'Ad hoc task concurrency limit';
 $string['task_adhoc_concurrency_limit_desc'] = 'The number of ad hoc task runners allowed to run concurrently. If the limit is high then scheduled tasks may not run regularly when there are lots of ad hoc tasks. A setting of 0 will disable processing of ad hoc tasks completely.';
 $string['task_adhoc_max_runtime'] = 'Ad hoc task runner lifetime';
 $string['task_adhoc_max_runtime_desc'] = 'The age of an ad hoc task runner before it is freed. A low duration is recommended as there is no limit to the number of ad hoc tasks queued. If this number is too high and you have a large ad hoc task queue then scheduled tasks may not be run regularly.';
+$string['task_dbstats'] = 'Database';
+$string['task_duration'] = 'Duration';
+$string['task_logmode'] = 'When to log';
+$string['task_logmode_all'] = 'Store the log output of all jobs';
+$string['task_logmode_desc'] = 'You can choose when you wish task logging to take place. By default logs are always captured. You can disable logging entirely, or change to only log tasks which fail.';
+$string['task_logmode_failonly'] = 'Only store logs for jobs which fail';
+$string['task_logmode_none'] = 'Do not log anything';
+$string['task_logretainruns'] = 'Retain runs';
+$string['task_logretainruns_desc'] = 'The number of runs of each task to retain. This setting interacts with the \'Retention period\' setting: whichever is reached first will apply.';
+$string['task_logretention'] = 'Retention period';
+$string['task_logretention_desc'] = 'The maximum period that logs should be kept for. This setting interacts with the \'Retain runs\' setting: whichever is reached first will apply';
+$string['task_logtostdout'] = 'Display log output';
+$string['task_logtostdout_desc'] = 'When jobs are running and the output is captured, whether the captured output should also be displayed as the task runs.';
+$string['task_result'] = 'Result';
+$string['task_result:failed'] = 'Fail';
+$string['task_scheduled_concurrency_limit'] = 'Scheduled task concurrency limit';
+$string['task_scheduled_concurrency_limit_desc'] = 'The number of scheduled task runners allowed to run concurrently. If the limit is high then the server may experience high load which affects performance. A setting of 0 will disable processing of scheduled tasks completely.';
+$string['task_scheduled_max_runtime'] = 'Scheduled task runner lifetime';
+$string['task_scheduled_max_runtime_desc'] = 'The age of a scheduled task runner before it is freed.';
+$string['task_starttime'] = 'Start time';
+$string['task_stats:dbreads'] = '{$a} reads';
+$string['task_stats:dbwrites'] = '{$a} writes';
+$string['task_type:adhoc'] = 'Ad hoc';
+$string['task_type:scheduled'] = 'Scheduled';
 $string['taskadmintitle'] = 'Tasks';
 $string['taskanalyticscleanup'] = 'Analytics cleanup';
 $string['taskautomatedbackup'] = 'Automated backups';
@@ -1243,11 +1267,9 @@ $string['taskcompletiondaily'] = 'Completion mark as started';
 $string['taskcompletionregular'] = 'Calculate regular completion data';
 $string['taskcontextcleanup'] = 'Cleanup contexts';
 $string['taskcreatecontexts'] = 'Create missing contexts';
-$string['task_dbstats'] = 'Database';
 $string['taskdeletecachetext'] = 'Delete old text cache records';
 $string['taskdeleteincompleteusers'] = 'Delete incomplete users';
 $string['taskdeleteunconfirmedusers'] = 'Delete unconfirmed users';
-$string['task_duration'] = 'Duration';
 $string['taskeventscron'] = 'Background processing for events';
 $string['taskfiletrashcleanup'] = 'Cleanup files in trash';
 $string['taskglobalsearchindex'] = 'Global search indexing';
@@ -1257,18 +1279,7 @@ $string['taskgradehistorycleanup'] = 'Background processing for cleaning grade h
 $string['tasklegacycron'] = 'Legacy cron processing for plugins';
 $string['tasklogcleanup'] = 'Cleanup of task logs';
 $string['tasklogging'] = 'Task log configuration';
-$string['task_logmode'] = 'When to log';
-$string['task_logmode_all'] = 'Store the log output of all jobs';
-$string['task_logmode_desc'] = 'You can choose when you wish task logging to take place. By default logs are always captured. You can disable logging entirely, or change to only log tasks which fail.';
-$string['task_logmode_failonly'] = 'Only store logs for jobs which fail';
-$string['task_logmode_none'] = 'Do not log anything';
-$string['task_logretainruns'] = 'Retain runs';
-$string['task_logretainruns_desc'] = 'The number of runs of each task to retain. This setting interacts with the \'Retention period\' setting: whichever is reached first will apply.';
-$string['task_logretention'] = 'Retention period';
-$string['task_logretention_desc'] = 'The maximum period that logs should be kept for. This setting interacts with the \'Retain runs\' setting: whichever is reached first will apply';
 $string['tasklogs'] = 'Task logs';
-$string['task_logtostdout'] = 'Display log output';
-$string['task_logtostdout_desc'] = 'When jobs are running and the output is captured, whether the captured output should also be displayed as the task runs.';
 $string['taskmessagingcleanup'] = 'Background processing for messaging';
 $string['taskpasswordresetcleanup'] = 'Cleanup password reset attempts';
 $string['taskplagiarismcron'] = 'Background processing for legacy cron in plagiarism plugins';
@@ -1278,24 +1289,13 @@ $string['taskquestioncron'] = 'Background processing for cleaning up question pr
 $string['taskquestionstatscleanupcron'] = 'Background processing for cleaning up question statistics caches';
 $string['taskrefreshsystemtokens'] = 'Refresh OAuth tokens for service accounts';
 $string['taskregistrationcron'] = 'Site registration';
-$string['task_result'] = 'Result';
-$string['task_result:failed'] = 'Fail';
-$string['task_scheduled_concurrency_limit'] = 'Scheduled task concurrency limit';
-$string['task_scheduled_concurrency_limit_desc'] = 'The number of scheduled task runners allowed to run concurrently. If the limit is high then the server may experience high load which affects performance. A setting of 0 will disable processing of scheduled tasks completely.';
-$string['task_scheduled_max_runtime'] = 'Scheduled task runner lifetime';
-$string['task_scheduled_max_runtime_desc'] = 'The age of a scheduled task runner before it is freed.';
 $string['tasksendfailedloginnotifications'] = 'Send failed login notifications';
 $string['tasksendnewuserpasswords'] = 'Send new user passwords';
 $string['tasksessioncleanup'] = 'Cleanup old sessions';
-$string['task_starttime'] = 'Start time';
 $string['taskstatscron'] = 'Background processing for statistics';
-$string['task_stats:dbreads'] = '{$a} reads';
-$string['task_stats:dbwrites'] = '{$a} writes';
 $string['tasktagcron'] = 'Background processing for tags';
 $string['tasktempfilecleanup'] = 'Delete stale temp files';
 $string['tasktype'] = 'Type';
-$string['task_type:adhoc'] = 'Ad hoc';
-$string['task_type:scheduled'] = 'Scheduled';
 $string['tempdatafoldercleanup'] = 'Clean up temporary data files older than';
 $string['templates'] = 'Templates';
 $string['testoutgoingmailconf'] = 'Test outgoing mail configuration';
@@ -1355,16 +1355,16 @@ $string['updateaccounts'] = 'Update existing accounts';
 $string['updateautocheck'] = 'Automatically check for available updates';
 $string['updateautocheck_desc'] = 'If enabled, your site will automatically check for available updates for both Moodle code and all additional plugins. If there is a new update available, a notification will be sent to site admins.';
 $string['updateavailable'] = 'There is a newer Moodle version available!';
+$string['updateavailable_moreinfo'] = 'More info...';
+$string['updateavailable_release'] = 'Moodle {$a}';
+$string['updateavailable_version'] = 'Version {$a}';
 $string['updateavailabledetailslink'] = 'See {$a->url} for more details';
 $string['updateavailableforplugin'] = 'There is a newer version for some of your plugins available!';
 $string['updateavailableinstall'] = 'Install this update';
 $string['updateavailableinstallall'] = 'Install available updates ({$a})';
 $string['updateavailableinstallallhead'] = 'Installing available updates';
-$string['updateavailable_moreinfo'] = 'More info...';
 $string['updateavailablenot'] = 'Your Moodle code is up-to-date!';
 $string['updateavailablerecommendation'] = 'It is strongly recommended that you update your site to the latest version to obtain all recent security and bug fixes.';
-$string['updateavailable_release'] = 'Moodle {$a}';
-$string['updateavailable_version'] = 'Version {$a}';
 $string['updatecomponent'] = 'Update component';
 $string['updateminmaturity'] = 'Required code maturity';
 $string['updateminmaturity_desc'] = 'Notify about available updates only if the available code has the selected maturity level at least. Updates for plugins that do not declare their code maturity level are always reported regardless this setting.';

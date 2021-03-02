@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'currencies', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'currencies', language 'es', version '3.8'.
  *
- * @package   currencies
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     currencies
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -60,7 +60,7 @@ $string['COP'] = 'Peso Colombiano';
 $string['CRC'] = 'Colón Costarricense';
 $string['CUC'] = 'Peso Convertible cubano';
 $string['CUP'] = 'Peso Cubano';
-$string['CVE'] = 'Escudo Caboverdiano';
+$string['CVE'] = 'Escudo caboverdiano';
 $string['CZK'] = 'Corona/Koruna Checa';
 $string['DJF'] = 'Franco Yibutiano';
 $string['DKK'] = 'Corona Danesa';
@@ -72,14 +72,14 @@ $string['ETB'] = 'Birr Etíope';
 $string['EUR'] = 'Euro';
 $string['FJD'] = 'Dólar Fijiano';
 $string['FKP'] = 'Libra Malvinense';
-$string['GBP'] = 'Libra Esterlina';
+$string['GBP'] = 'Libra esterlina';
 $string['GEL'] = 'Lari Georgiano';
 $string['GHS'] = 'Cedi de Ghana';
 $string['GIP'] = 'Libra de Gibraltar';
 $string['GMD'] = 'Dalasi Gambiano';
 $string['GNF'] = 'Franco Guineano';
 $string['GTQ'] = 'Quetzal Guatemalteco';
-$string['GYD'] = 'Dólar Guyanés';
+$string['GYD'] = 'Dólar guyanés';
 $string['HKD'] = 'Dólar de Hong Kong';
 $string['HNL'] = 'Lempira Hondureña';
 $string['HRK'] = 'Kuna Croata';
@@ -94,7 +94,7 @@ $string['ISK'] = 'Corona/Króna Islandesa';
 $string['JMD'] = 'Dólar Jamaicano';
 $string['JOD'] = 'Dinar Jordano';
 $string['JPY'] = 'Yen Japonés';
-$string['KES'] = 'Chelín Keniata';
+$string['KES'] = 'Chelín keniano';
 $string['KGS'] = 'Som kirguís';
 $string['KHR'] = 'Riel Camboyano';
 $string['KMF'] = 'Franco de Comoras';
@@ -120,7 +120,7 @@ $string['MNT'] = 'Tughrik Mongol';
 $string['MOP'] = 'Pataca de Macao';
 $string['MRO'] = 'Ouguiya Mauritana';
 $string['MUR'] = 'Rupia Mauricia';
-$string['MVR'] = 'Rufiyaa Maldiva';
+$string['MVR'] = 'Rupia de Maldivas';
 $string['MWK'] = 'Kwacha Malawiano';
 $string['MXN'] = 'Peso Mexicano';
 $string['MYR'] = 'Ringgit Malayo';
@@ -137,8 +137,8 @@ $string['PEN'] = 'Nuevo sol peruano';
 $string['PGK'] = 'Kina de Papúa Nueva Guinea';
 $string['PHP'] = 'Peso Filipino';
 $string['PKR'] = 'Rupia Pakistaní';
-$string['PLN'] = 'Zloty Polaco';
-$string['PYG'] = 'Guaraní Paraguayo';
+$string['PLN'] = 'Esloti polaco';
+$string['PYG'] = 'Guaraní paraguayo';
 $string['QAR'] = 'Rial Qatarí';
 $string['RON'] = 'Leu Rumano';
 $string['RSD'] = 'Dinar Serbio';
@@ -152,14 +152,14 @@ $string['SEK'] = 'Corona/Krona Sueca';
 $string['SGD'] = 'Dólar de Singapur';
 $string['SHP'] = 'Libra de Santa Helena';
 $string['SLL'] = 'Leone de Sierra Leona';
-$string['SOS'] = 'Chelín Somalí';
+$string['SOS'] = 'Chelín somalí';
 $string['SRD'] = 'Dólar de Surinam';
 $string['SSP'] = 'Libra SurSudanesa';
 $string['STD'] = 'Dobra de Santo Tomé y Príncipe';
 $string['SVC'] = 'Colón Salvadoreño';
-$string['SYP'] = 'Libra de Siria';
-$string['SZL'] = 'Lilangeni Suazi';
-$string['THB'] = 'Baht Tailandés';
+$string['SYP'] = 'Libra siria';
+$string['SZL'] = 'Lilangeni suazi';
+$string['THB'] = 'Baht tailandés';
 $string['TJS'] = 'Somoni tayiko';
 $string['TMT'] = 'Manat turkmeno';
 $string['TND'] = 'Dinar Tunecino';
@@ -167,11 +167,11 @@ $string['TOP'] = 'Pa`anga Tongano';
 $string['TRY'] = 'Lira Turca';
 $string['TTD'] = 'Dólar de Trinidad y Tobago';
 $string['TWD'] = 'Dólar Taiwanés';
-$string['TZS'] = 'Chelín Tanzano';
+$string['TZS'] = 'Chelín tanzano';
 $string['UAH'] = 'Grivna Ucraniana';
 $string['UGX'] = 'Chelín Ugandés';
 $string['USD'] = 'Dólar Estadounidense';
-$string['UYU'] = 'Peso Uruguayo';
+$string['UYU'] = 'Peso uruguayo';
 $string['UZS'] = 'Som uzbeko';
 $string['VEF'] = 'Bolívar Fuerte venezolano';
 $string['VND'] = 'Dong Vietnamita';
@@ -181,7 +181,7 @@ $string['XAF'] = 'Franco CFA de África Central';
 $string['XCD'] = 'Dólar del Caribe del este';
 $string['XOF'] = 'Franco CFA de África Occidental';
 $string['XPF'] = 'Franco CFP';
-$string['YER'] = 'Riyal Yemení';
+$string['YER'] = 'Rial yemení';
 $string['ZAR'] = 'Rand Sudafricano';
 $string['ZMK'] = 'Kwacha Zambiano';
 $string['ZWL'] = 'Dólar Zimbabuense';

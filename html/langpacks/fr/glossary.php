@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'fr', branch 'MOODLE_38_STABLE'
+ * Strings for component 'glossary', language 'fr', version '3.8'.
  *
- * @package   glossary
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     glossary
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -117,14 +117,6 @@ $string['destination'] = 'Destination des articles importés';
 $string['destination_help'] = 'Les articles peuvent être importés et ajoutés au glossaire actuel ou à un nouveau glossaire. Dans ce dernier cas, un nouveau glossaire sera créé à partir des informations du fichier XML.';
 $string['disapprove'] = 'Retirer l\'approbation';
 $string['displayformat'] = 'Format d\'affichage';
-$string['displayformatcontinuous'] = 'Continu sans auteur';
-$string['displayformatdefault'] = 'Par défaut identique au format d\'affichage';
-$string['displayformatdictionary'] = 'Simple, style dictionnaire';
-$string['displayformatencyclopedia'] = 'Encyclopédie';
-$string['displayformatentrylist'] = 'Liste d\'articles';
-$string['displayformatfaq'] = 'FAQ';
-$string['displayformatfullwithauthor'] = 'Complet avec auteur';
-$string['displayformatfullwithoutauthor'] = 'Complet sans auteur';
 $string['displayformat_help'] = 'Il existe 7 formats d\'affichages :
 
 * Simple, style dictionnaire : ressemble à un dictionnaire avec des articles séparés. Les auteurs ne sont pas affichés. Les annexes sont proposées sous forme de liens.
@@ -134,6 +126,14 @@ $string['displayformat_help'] = 'Il existe 7 formats d\'affichages :
 * Encyclopédie : identique au format « Complet avec auteur », mais les images en annexe sont affichées en ligne.
 * Liste d\'articles : une liste des concepts, sous forme de liens.
 * FAQ : utile pour l\'affichage de Foires Aux Questions. Les mots « Question » et « Réponse » sont affichés automatiquement en regard du concept, respectivement de la définition.';
+$string['displayformatcontinuous'] = 'Continu sans auteur';
+$string['displayformatdefault'] = 'Par défaut identique au format d\'affichage';
+$string['displayformatdictionary'] = 'Simple, style dictionnaire';
+$string['displayformatencyclopedia'] = 'Encyclopédie';
+$string['displayformatentrylist'] = 'Liste d\'articles';
+$string['displayformatfaq'] = 'FAQ';
+$string['displayformatfullwithauthor'] = 'Complet avec auteur';
+$string['displayformatfullwithoutauthor'] = 'Complet sans auteur';
 $string['displayformats'] = 'Formats d\'affichage';
 $string['displayformatssetup'] = 'Réglages des formats d\'affichage';
 $string['duplicatecategory'] = 'Doublon de catégorie';
@@ -200,18 +200,18 @@ $string['glossary:export'] = 'Exporter des articles';
 $string['glossary:exportentry'] = 'Exporter un unique article';
 $string['glossary:exportownentry'] = 'Exporter un de ses propres articles';
 $string['glossary:import'] = 'Importer des articles';
-$string['glossaryleveldefaultsettings'] = 'Réglages par défaut des glossaires';
 $string['glossary:managecategories'] = 'Gérer les catégories';
 $string['glossary:managecomments'] = 'Gérer les commentaires';
 $string['glossary:manageentries'] = 'Gérer les articles';
 $string['glossary:rate'] = 'Évaluer les articles';
-$string['glossarytype'] = 'Type de glossaire';
-$string['glossarytype_help'] = 'Un glossaire principal est un glossaire dans lequel les articles d\'un glossaire secondaire peuvent être importés. Il ne peut y avoir qu\'un seul glossaire principal par cours. Si la fonctionnalité d\'importation d\'articles de glossaire n\'est pas requise, tous ses glossaires du cours peuvent être des glossaires secondaires.';
 $string['glossary:view'] = 'Consulter les glossaires';
 $string['glossary:viewallratings'] = 'Voir toutes les évaluations brutes données par des participants';
 $string['glossary:viewanyrating'] = 'Voir toutes les évaluations globales';
 $string['glossary:viewrating'] = 'Voir sa propre évaluation globale reçue';
 $string['glossary:write'] = 'Créer des articles';
+$string['glossaryleveldefaultsettings'] = 'Réglages par défaut des glossaires';
+$string['glossarytype'] = 'Type de glossaire';
+$string['glossarytype_help'] = 'Un glossaire principal est un glossaire dans lequel les articles d\'un glossaire secondaire peuvent être importés. Il ne peut y avoir qu\'un seul glossaire principal par cours. Si la fonctionnalité d\'importation d\'articles de glossaire n\'est pas requise, tous ses glossaires du cours peuvent être des glossaires secondaires.';
 $string['guestnoedit'] = 'Les visiteurs anonymes n\'ont pas les permissions requises pour modifier les glossaires';
 $string['importcategories'] = 'Importer les catégories';
 $string['importedcategories'] = 'Catégories importées';
@@ -220,13 +220,13 @@ $string['importentries'] = 'Importer des articles';
 $string['importentriesfromxml'] = 'Importer des articles d\'un fichier XML';
 $string['includegroupbreaks'] = 'Inclure les séparations entre groupes';
 $string['indicator:cognitivedepth'] = 'Glossaire : aspect cognitif';
+$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Glossaire.';
 $string['indicator:cognitivedepthdef'] = 'Glossaire : aspect cognitif';
 $string['indicator:cognitivedepthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement cognitif offert par les activités « Glossaire » (niveaux : pas de vue, vue, envoi).';
-$string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une activité Glossaire.';
 $string['indicator:socialbreadth'] = 'Glossaire : aspect social';
+$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Glossaire.';
 $string['indicator:socialbreadthdef'] = 'Glossaire : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Glossaire » (niveaux : pas de participation, participant seul).';
-$string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interaction sociale atteinte par l\'étudiant dans une activité Glossaire.';
 $string['isglobal'] = 'Glossaire global';
 $string['isglobal_help'] = 'Les articles d\'un glossaire global sont utilisés dans tout le site pour la création automatique des liens, et pas seulement dans le cours auquel il appartient. Seuls les administrateurs peuvent définir un glossaire comme étant global.';
 $string['letter'] = 'lettre';

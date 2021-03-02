@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_multianswer', language 'ca', version '3.8'.
  *
- * @package   qtype_multianswer
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_multianswer
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -39,9 +39,9 @@ $string['nooptionsforsubquestion'] = 'No es poden obtenir les opcions per part d
 $string['noquestions'] = 'La pregunta de buits "<strong>{$a}</strong>" no conté cap buit';
 $string['pleaseananswerallparts'] = 'Responeu totes les parts de la pregunta.';
 $string['pluginname'] = 'Respostes incrustades (Cloze)';
+$string['pluginname_help'] = 'Una pregunta amb respostes incrustades (Cloze) consisteix en un text amb espais per a respostes d\'elecció múltiple o de resposta breu en el text.';
 $string['pluginnameadding'] = 'S\'està afegint una resposta incrustada (activitat de buits)';
 $string['pluginnameediting'] = 'S\'està editant una resposta incrustada (activitat de buits)';
-$string['pluginname_help'] = 'Una pregunta amb respostes incrustades (Cloze) consisteix en un text amb espais per a respostes d\'elecció múltiple o de resposta breu en el text.';
 $string['pluginnamesummary'] = 'Les preguntes d\'aquest tipus són molt flexibles, però només es poden crear mitjançant l\'entrada de text amb codis especials que creen seleccions múltiples incrustades, respostes curtes i preguntes numèriques.';
 $string['qtypenotrecognized'] = 'Tipus de pregunta {$a} no reconegut';
 $string['questiondefinition'] = 'Definició de la pregunta';

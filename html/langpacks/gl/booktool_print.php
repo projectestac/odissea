@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_print', language 'gl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'booktool_print', language 'gl', version '3.8'.
  *
- * @package   booktool_print
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     booktool_print
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventbookprinted'] = 'Libro impreso';
 $string['eventchapterprinted'] = 'Capítulo impreso';
 $string['pluginname'] = 'Impresión de libros';
+$string['print:print'] = 'Imprimir libro';
 $string['printbook'] = 'Imprimir libro';
 $string['printchapter'] = 'Imprimir este capítulo';
 $string['printdate'] = 'Data';
 $string['printedby'] = 'Impreso por';
-$string['print:print'] = 'Imprimir libro';
 $string['privacy:metadata'] = 'O engadido de impresión de libros  non almacena ningún dato persoal.';

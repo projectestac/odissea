@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'ca', branch 'MOODLE_38_STABLE'
+ * Strings for component 'qtype_match', language 'ca', version '3.8'.
  *
- * @package   qtype_match
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     qtype_match
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -38,9 +38,9 @@ $string['notenoughqsandas'] = 'Heu de proporcionar almenys {$a->q} preguntes i {
 $string['notenoughquestions'] = 'Heu de proporcionar almenys {$a} parells de preguntes i respostes';
 $string['pleaseananswerallparts'] = 'Responeu totes les parts de la pregunta.';
 $string['pluginname'] = 'Aparellament';
+$string['pluginname_help'] = 'Per respondre bé les preguntes d\'aparellament cal que l\'alumne aparelli correctament una llista de noms o enunciats (preguntes) amb una altra llista de noms o enunciats (les respostes).';
 $string['pluginnameadding'] = 'S\'està afegint una pregunta d\'aparellament.';
 $string['pluginnameediting'] = 'S\'està editant una pregunta d\'aparellament.';
-$string['pluginname_help'] = 'Per respondre bé les preguntes d\'aparellament cal que l\'alumne aparelli correctament una llista de noms o enunciats (preguntes) amb una altra llista de noms o enunciats (les respostes).';
 $string['pluginnamesummary'] = 'La resposta a cadascuna d\'una sèrie de preguntes s\'ha de seleccionar d\'una llista de possibilitats.';
 $string['shuffle'] = 'Barreja';
 $string['shuffle_help'] = '<p>Si activeu aquesta opció, l\'ordre dels parells pregunta-resposta es modificarà aleatòriament cada vegada que l\'estudiant entri en un qüestionari que contingui aquesta pregunta, sempre que "Barreja dins de les preguntes" estigui activat en els paràmetres del qüestionari.</p>

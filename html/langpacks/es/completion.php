@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,21 +12,22 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'es', branch 'MOODLE_38_STABLE'
+ * Strings for component 'completion', language 'es', version '3.8'.
  *
- * @package   completion
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     completion
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['achievinggrade'] = 'Alcanzando calificación';
 $string['activities'] = 'Actividades';
-$string['activitiescompleted'] = 'Actividades finalizadas';
+$string['activitiescompleted'] = 'Finalización de actividades';
 $string['activitiescompletednote'] = 'Nota: La finalización de actividades debe establecerse para que una actividad aparezca en la lista de abajo';
 $string['activitieslabel'] = 'Actividades / recursos';
 $string['activityaggregation'] = 'Condición requerida';
@@ -57,9 +57,8 @@ $string['completed'] = 'Finalizado';
 $string['completedunlocked'] = 'Opciones de finalización desbloqueadas';
 $string['completedunlockedtext'] = 'Cuando guarda los cambios, se borrará el estado de finalización de todos los estudiantes. Si cambia de parecer sobre este asunto, no guarde el formulario.';
 $string['completedwarning'] = 'Opciones de finalización bloqueadas';
-$string['completedwarningtext'] = 'Uno o más estudiantes ({$a}) ya ha(n) marcado esta actividad como finalizada. Cambiar las opciones de finalización borrará su estado de finalización y puede ocasionar confusión. Por tanto, estas opciones han sido bloqueadas y no se deberían desbloquear salvo que fuera absolutamente necesario.';
+$string['completedwarningtext'] = 'Esta actividad ya ha sido completada por {$a} participante(s). Cambiar las opciones de finalización borrará su estado de finalización y puede ocasionar confusión. Por tanto, estas opciones han sido bloqueadas y no se deberían desbloquear salvo que fuera absolutamente necesario.';
 $string['completion'] = 'Rastreo de finalización';
-$string['completionactivitydefault'] = 'Utilizar actividad por defecto';
 $string['completion-alt-auto-enabled'] = 'El sistema marca este ítem como finalizado de acuerdo con las condiciones {$a}';
 $string['completion-alt-auto-fail'] = 'Finalizado {$a} (no ha alcanzado la calificación de aprobado)';
 $string['completion-alt-auto-n'] = 'Sin finalizar: {$a}';
@@ -72,36 +71,39 @@ $string['completion-alt-manual-n'] = 'No finalizado; {$a}. Seleccione para marca
 $string['completion-alt-manual-n-override'] = 'No completado: {$a->modname} (configurado por {$a->overrideuser}). Seleccionar para marcarlo como completado.';
 $string['completion-alt-manual-y'] = 'Finalizado; {$a} seleccione para marcar como no finalizado';
 $string['completion-alt-manual-y-override'] = 'Completado: {$a->modname} (configurado por {$a->overrideuser}). Seleccionar para marcarlo como no completado.';
+$string['completion-fail'] = 'Finalizado (no ha alcanzado la calificación de aprobado)';
+$string['completion-n'] = 'No finalizado';
+$string['completion-n-override'] = 'No completado (configurado por {$a})';
+$string['completion-pass'] = 'Finalizado (ha alcanzado la califiación de aprobado)';
+$string['completion-y'] = 'Finalizado';
+$string['completion-y-override'] = 'Completado (configurado por {$a})';
 $string['completion_automatic'] = 'Mostrar la actividad como completada cuando se cumplan las condiciones';
+$string['completion_help'] = 'Si se activa esta opción, se rastrea el grado de finalización de cualquier actividad, bien manual, bien automáticamente, basándose en determinadas condiciones. Si se desea, se pueden fijar múltiples condiciones. Si se hace así, la actividad únicamente se considerará completa si se cumplen TODAS las condiciones.
+
+Una marca al lado del nombre de la actividad enla página del curso indica cuándo la actividad está completa.';
+$string['completion_manual'] = 'Los estudiantes pueden marcar manualmente la actividad como completada';
+$string['completion_none'] = 'No indicar finalización de la actividad';
+$string['completionactivitydefault'] = 'Utilizar actividad por defecto';
 $string['completiondefault'] = 'Seguimiento de finalización por defecto';
 $string['completiondisabled'] = 'Desactivado, no se muestra en los ajustes de la actividad';
 $string['completionduration'] = 'Matriculación';
 $string['completionenabled'] = 'Activado, control por medio de los ajustes de finalización y de actividad';
 $string['completionexpected'] = 'Se espera finalizar en';
+$string['completionexpected_help'] = 'Esta opción especifica la fecha en que se espera que la actividad esté finalizada.';
 $string['completionexpecteddesc'] = 'Finalización esperada en {$a}';
 $string['completionexpectedfor'] = '{$a->instancename} debería ser completado';
-$string['completionexpected_help'] = 'Esta opción especifica la fecha en que se espera que la actividad esté finalizada.';
-$string['completion-fail'] = 'Finalizado (no ha alcanzado la calificación de aprobado)';
-$string['completion_help'] = 'Si se activa esta opción, se rastrea el grado de finalización de cualquier actividad, bien manual, bien automáticamente, basándose en determinadas condiciones. Si se desea, se pueden fijar múltiples condiciones. Si se hace así, la actividad únicamente se considerará completa si se cumplen TODAS las condiciones.
-
-Una marca al lado del nombre de la actividad enla página del curso indica cuándo la actividad está completa.';
 $string['completionicons'] = 'Casillas para marcar el grado de finalización';
 $string['completionicons_help'] = 'Una marca junto al nombre de la actividad puede utilizarse para indicar que una actividad se completó.
 
 Si se muestra una casilla con el borde punteado, la marca aparecerá automáticamente cuando se haya completado la actividad de acuerdo con las condiciones establecidas por el profesor.
 
-Si se muestra una casilla con el borde sólido, entonces será posible hacer clic sobre ella cuando piense que ha finalizado la actividad. (Si se vuelve a hacer clic sobre ella, la marca desaparece en caso de que haya cambiado de opinión). Esto es una acción opcional que se utiliza para llevar un seguimiento personal del progreso a través del curso.';
-$string['completion_manual'] = 'Los estudiantes pueden marcar manualmente la actividad como completada';
+Si se muestra una casilla con el borde sólido, entonces será posible hacer clic sobre ella cuando piense que ha finalizado la actividad. (Si se vuelve a hacer clic sobre ella, la marca desaparece en caso de que haya cambiado de opinión). Esto es una acción opcional que se utiliza para llevar un seguimiento personal del progreso a lo largo del curso.';
 $string['completionmenuitem'] = 'Finalización';
-$string['completion-n'] = 'No finalizado';
-$string['completion_none'] = 'No indicar finalización de la actividad';
 $string['completionnotenabled'] = 'Completar curso no está habilitada';
 $string['completionnotenabledforcourse'] = 'Completar curso no está habilitada';
 $string['completionnotenabledforsite'] = 'Completar curso no está habilitada';
-$string['completion-n-override'] = 'No completado (configurado por {$a})';
 $string['completionondate'] = 'Fecha';
 $string['completionondatevalue'] = 'Los usuarios permanecerán matriculados hasta';
-$string['completion-pass'] = 'Finalizado (ha alcanzado la califiación de aprobado)';
 $string['completionsettingslocked'] = 'Ajustes de finalización bloqueados';
 $string['completionupdated'] = 'Se actualizó finalización para actividad <b>{$a}</b>';
 $string['completionusegrade'] = 'Requerir calificación';
@@ -109,8 +111,6 @@ $string['completionusegrade_desc'] = 'El estudiante debe recibir una calificaci�
 $string['completionusegrade_help'] = 'Si se activa, la actividad se considera finalizada cuando un estudiante recibe una calificación. Los iconos Aprobar y Suspender se muestran si se ha establecido una calificación de aprobado para la actividad.';
 $string['completionview'] = 'Requerir ver';
 $string['completionview_desc'] = 'El estudiante debe ver esta actividad para finalizarla';
-$string['completion-y'] = 'Finalizado';
-$string['completion-y-override'] = 'Completado (configurado por {$a})';
 $string['configcompletiondefault'] = 'Configuración predeterminada para el seguimiento de la finalización cuando se crean nuevas actividades.';
 $string['configenablecompletion'] = 'Cuando se habilita, le permite activar las características de seguimiento de la finalización (seguimiento del  progreso) a nivel del curso.';
 $string['confirmselfcompletion'] = 'Confirmar completar automáticamente';
@@ -140,7 +140,7 @@ $string['dependencies'] = 'Dependencias';
 $string['dependenciescompleted'] = 'Dependencias finalizadas';
 $string['editcoursecompletionsettings'] = 'Editar ajustes de grado de finalización del curso';
 $string['enablecompletion'] = 'Habilitar rastreo del grado de finalización';
-$string['enablecompletion_help'] = 'Una vez activada, la configuración de seguimiento de finalización se muestran en la página de seguimiento de finalización, y en la configuración de la actividad.';
+$string['enablecompletion_help'] = 'Una vez activada, las condiciones de la finalización de la actividad se podrán establecer en la página de configuración de la activdad y/o las condiciones de finalización del curso podrán configurarse.';
 $string['enrolmentduration'] = 'Periodo de tiempo de la matrícula';
 $string['enrolmentdurationlength'] = 'El usuario debe permanecer matriculado por';
 $string['err_noactivities'] = 'No está habilitada la información sobre la finalización de ninguna actividad. Puede activar la información sobre la finalización de una actividad editando su  parámetros de configuración.';
@@ -148,7 +148,7 @@ $string['err_nocourses'] = 'La finalización del curso no está habilitada para 
 $string['err_nograde'] = 'En este curso no se ha establecido una calificación para pasar el curso. Para activar este tipo de criterio, debe crear una calificación para pasar el curso.';
 $string['err_noroles'] = 'No hay roles con la capacidad \'moodle/course:markcomplete\' en este curso.';
 $string['err_nousers'] = 'No hay estudiantes ni grupos en este curso para los que se muestre la información sobre finalización. (Por defecto, la información sobre finalización se muestra solo para estudiantes, por lo que si no hay estudiantes verá este error. Los administradores pueden modificar esta opción mediante las pantallas de administración)';
-$string['err_settingslocked'] = 'Uno o más estudiantes han finalizado ya  un criterio, por lo que los parámetros han sido bloqueados. Desbloquer los parámetros de los criterios de finalización borrará cualquier dato de usuario lo que podría causar confusión.';
+$string['err_settingslocked'] = 'Uno o más estudiantes han finalizado ya un criterio, por lo que los parámetros han sido bloqueados. Desbloquer los parámetros de los criterios de finalización borrará cualquier dato existente de usuario, lo que podría causar confusión.';
 $string['err_system'] = 'Se ha producido un error interno en el sistema de finalización. (Los administradores del sistema pueden habilitar la información de seguimiento para ver más detalles)';
 $string['eventcoursecompleted'] = 'Curso finalizado';
 $string['eventcoursecompletionupdated'] = 'Finalización de curso actualizado';
@@ -217,7 +217,7 @@ $string['select'] = 'Seleccionar';
 $string['self'] = 'Auto';
 $string['selfcompletion'] = 'Completar automáticamente';
 $string['showinguser'] = 'Mostrando usuario';
-$string['unenrolingfromcourse'] = 'Dando de baja del curso';
+$string['unenrolingfromcourse'] = 'Desmatricularse del curso';
 $string['unenrolment'] = 'Dar de baja';
 $string['unit'] = 'Unidad';
 $string['unlockcompletion'] = 'Desbloquear opciones de grado de finalización';

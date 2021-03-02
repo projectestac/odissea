@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'fr', branch 'MOODLE_36_STABLE'
+ * Strings for component 'block_community', language 'fr', version '3.8'.
  *
- * @package   block_community
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     block_community
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -66,7 +66,7 @@ $string['enroldownload_help'] = 'Certains cours du serveur d\'échanges sélecti
 D\'autres sont des modèles de cours que vous pouvez télécharger et installer dans votre propre Moodle.';
 $string['enrollable'] = 'Cours où s\'inscrire';
 $string['enrollablecourses'] = 'Cours disponibles pour inscription';
-$string['errorcourselisting'] = 'Une erreur est survenue lors de la récupération de la liste des cours du serveur d\'échanges sélectionné. Veuillez réessayer plus tard ({$a}).';
+$string['errorcourselisting'] = 'Avertissement : il n\'est plus possible de rechercher des cours sur moodle.net. Les cours précédemment partagés sont désormais disponibles sur archive.moodle.net. Consultez <a href="https://docs.moodle.org/en/Sunsetting_moodle.net">Sunsetting moodle.net</a> (en anglais) pour plus d\'informations.';
 $string['errorhublisting'] = 'Une erreur est survenue lors de la récupération de la liste des cours du serveur d\'échanges de Moodle.org. Veuillez réessayer plus tard ({$a}).';
 $string['fileinfo'] = 'Langue : {$a->lang} ; Licence : {$a->license} ; date de modification : {$a->timeupdated}';
 $string['hideall'] = 'Cacher les serveurs d\'échange';
@@ -89,8 +89,8 @@ $string['nocourse'] = 'Aucun cours trouvé';
 $string['noratings'] = 'Pas d\'évaluation';
 $string['operation'] = 'Opération';
 $string['orderby'] = 'Trier par';
-$string['orderbyeldest'] = 'Plus ancien';
 $string['orderby_help'] = 'L\'ordre d\'affichage des résultats de recherche.';
+$string['orderbyeldest'] = 'Plus ancien';
 $string['orderbyname'] = 'Nom';
 $string['orderbynewest'] = 'Plus récent';
 $string['orderbypublisher'] = 'Éditeur';

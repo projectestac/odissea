@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,35 +12,35 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcache', language 'eu', branch 'MOODLE_34_STABLE'
+ * Strings for component 'cachestore_memcache', language 'eu', version '3.8'.
  *
- * @package   cachestore_memcache
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     cachestore_memcache
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['clustered'] = 'Gaitu taldekatutako zerbitzariak';
-$string['clusteredheader'] = 'Bereizi zerbitzariak';
 $string['clustered_help'] = 'Ezarpen hau behin-irakurri guztietan-ezarri funtzionalitatea baimentzeko erabiltzen da.
 
 Nahitako erabilera-kasua karga-banatze konfigurazioetan biltegi hobetu bat sortzea da. Biltegiak zerbitzari batetik jasoko du datua (normalean localhost), baina anitzetan ezarriko du (karga-banatze guneko zerbitzari guztietan). Irakurketa-ratio handiko cacheetarako, ezarpen honek sare-gainkarga esanguratsua aurrezten du.
 
 Ezarpen hau gaituta dagoenean, datuak eskuratzeko goiko zerrendan zehaztutako zerbitzariak erabiliko dira.';
+$string['clusteredheader'] = 'Bereizi zerbitzariak';
 $string['pluginname'] = 'Memcache';
-$string['prefix'] = 'Gako-aurrizkia';
+$string['prefix'] = 'Gakoen aurrizkia';
 $string['prefix_help'] = 'Aurrizki hau memcache zerbitzariko gakoen izen guztietan erabiliko da
 * Zerbitzari hau erabiltzen duen Moodle instantzia bakarra baduzu, hemen berezko balioa utzi dezakezu.
 * Luzera mugak direla-eta, hemen gehienez 5 karaktere baimentzen dira.';
-$string['prefixinvalid'] = 'Aurrizki baliogabea. Bakarrik erabil ditzakezu ondokoak: a-z A-Z 0-9-_.';
+$string['prefixinvalid'] = 'Aurrizki baliogabea. Ondoko hauek baino ezin dira erabili: a-z A-Z 0-9-_.';
 $string['privacy:metadata:memcache'] = 'Memcache cache-biltegi pluginak datuak laburki gordetzen ditu bere cache-funtzioaren baitan. Datu hauek Memcache zerbitzari batean gordetzen dira, eta bertan datuak erregularki ezabatzen dira.';
 $string['privacy:metadata:memcache:data'] = 'Cachean gordetako era askotako datuak';
 $string['servers'] = 'Zerbitzariak';
-$string['serversclusterinvalid'] = 'Zehazki zerbitzari bat behar da zerbitzari-taldekatzea gaituta dagoenean.';
 $string['servers_help'] = 'Hemen memcache egokitzaileak erabiliko dituen zerbitzariak zehazten dira.
 Errenkada bakoitzean zerbitzari bat zehaztu behar da, zerbitzariaren helbidea eta aukeran ataka eta pisua zehaztuta.
 Atakarik zehazten ez bada berezko ataka (11211) erabiliko da.
@@ -54,6 +53,7 @@ zerbitzariizena:ataka:pisua
 </pre>
 
 Azpian *Gaitu taldekatutako zerbitzariak* markatuta badago hemen zerbitzari bakarra egon beharko du. Hau makina lokalera bideratzen duen izena izan ohi da, 127.0.0.1 edo localhost modukoa.';
+$string['serversclusterinvalid'] = 'Zehazki zerbitzari bat behar da zerbitzari-taldekatzea gaituta dagoenean.';
 $string['sessionhandlerconflict'] = 'Kontuz: saioak gordetzeko memcache zerbitzari bera erabiltzen duen memcache instantzia bat ({$a}) konfiguratu da. Cache guztiak garbituz gero saioak ere ezabatu egingo dira.';
 $string['setservers'] = 'Ezarri zerbitzariak';
 $string['setservers_help'] = 'Cacheko datuak aldatzen direnean eguneratuko diren zerbitzarien zerrenda da hau, normalean guneko zerbitzari bakoitzaren izen osoa.
@@ -66,6 +66,6 @@ Adibidez:
 zerbitzari.url.eus
 iphelbidea:ataka
 </pre>';
-$string['testservers'] = 'Proba-zerbitzariak';
+$string['testservers'] = 'Probetarako zerbitzariak';
 $string['testservers_desc'] = 'memcache zerbitzariekin konexio-proba egiteko karaketere-katea edo kateak. Probetarako zerbitzari bat zehaztu bada memcache-ren errendimendua kudeaketa blokeko Cache atalaren Probatu errendimendua orria erabiliz probatu daiteke.
 Adibidez: 127.0.0.1:11211';

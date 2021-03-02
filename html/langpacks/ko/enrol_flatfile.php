@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'ko', branch 'MOODLE_38_STABLE'
+ * Strings for component 'enrol_flatfile', language 'ko', version '3.8'.
  *
- * @package   enrol_flatfile
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     enrol_flatfile
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -32,7 +32,7 @@ $string['filelockedmailsubject'] = '중대한 오류: 등록 화일';
 $string['flatfile:manage'] = '수동으로 사용자 등록 관리';
 $string['flatfile:unenrol'] = '수동으로 강좌에서 사용자 등록 해지';
 $string['location'] = '화일 위치';
-$string['mapping'] = '평문 파일 매핑';
+$string['mapping'] = 'Flat 파일 역할 매핑';
 $string['messageprovider:flatfile_enrolment'] = '플랫 파일 등록 메세지';
 $string['notifyadmin'] = '관리자에게 통지';
 $string['notifyenrolled'] = '등록된 사용자에게 통지';

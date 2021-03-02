@@ -1,6 +1,5 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - https://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -13,14 +12,15 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'nl', branch 'MOODLE_38_STABLE'
+ * Strings for component 'badges', language 'nl', version '3.8'.
  *
- * @package   badges
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     badges
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -31,8 +31,8 @@ $string['activatesuccess'] = 'De toegang tot de badges is met succes ingeschakel
 $string['addalignment'] = 'Externe vaardigheid of standaard toevoegen';
 $string['addbackpack'] = 'Voeg backpack toe';
 $string['addbadge'] = 'Badges toevoegen';
-$string['addbadgecriteria'] = 'Voeg badge criteria toe';
 $string['addbadge_help'] = 'Selecteer alle badges die aan deze badge-eis moeten worden toegevoegd. Houd de CTRL-toets ingedrukt om meerdere items te selecteren.';
+$string['addbadgecriteria'] = 'Voeg badge criteria toe';
 $string['addcohort'] = 'Site-groep toevoegen';
 $string['addcohort_help'] = 'Selecteer alle site-groepen die aan deze badge-vereiste moeten toegevoegd worden. Hou de CTRL-toets ingedrukt om meerdere items te selecteren.';
 $string['addcompetency'] = 'Voeg competentie toe';
@@ -104,9 +104,9 @@ $string['backpackbadgessettings'] = 'Verander de backpack instellingen';
 $string['backpackbadgessummary'] = 'Je hebt {$a->totalbadges} badge (s) weergegeven in de verzameling (en) van {$a->totalcollections} collection(s)';
 $string['backpackcannotsendverification'] = 'Kan e-mail voor verificatie niet versturen';
 $string['backpackconnection'] = 'Backpack connectie';
+$string['backpackconnection_help'] = 'Door te verbinden met een backpack kun je externe badges van deze site delen en kun je publieke badges uit je backpack tonen op je profielpagina van deze site.';
 $string['backpackconnectioncancelattempt'] = 'Verbind door een ander e-mailadres te gebruiken';
 $string['backpackconnectionconnect'] = 'Verbind met Backpack';
-$string['backpackconnection_help'] = 'Door te verbinden met een backpack kun je externe badges van deze site delen en kun je publieke badges uit je backpack tonen op je profielpagina van deze site.';
 $string['backpackconnectionnottested'] = 'Verbinding kan niet worden getest voor deze backpack omdat enkel Open Badges v2.0 backpacks deze ondersteunen.';
 $string['backpackconnectionok'] = 'Backpack verbinding tot stand gebracht';
 $string['backpackconnectionresendemail'] = 'Stuur de e-mail voor verificatie opnieuw';
@@ -215,8 +215,6 @@ $string['criteria_8'] = 'Site-groep lidmaatschap';
 $string['criteria_8_help'] = 'Staat toe om een badge uit te reiken, gebaseerd op lidmaatschap van een site-groep';
 $string['criteria_9'] = 'Competenties';
 $string['criteria_9_help'] = 'Hiermee kan een badge worden toegekend aan gebruikers op basis van de competenties die ze hebben voltooid.';
-$string['criteriacreated'] = 'Badge criteria aanmaken gelukt';
-$string['criteriadeleted'] = 'Badge criteria verwijderen gelukt';
 $string['criteria_descr'] = 'Gebruikers krijgen deze badge als ze aan volgende criteria voltooien:';
 $string['criteria_descr_0'] = 'Gebruikers krijgen deze badge als ze <strong>{$a}</strong> van de criteria in de lijst voltooien.';
 $string['criteria_descr_1'] = '<strong>{$a}</strong> van volgende activiteiten zijn voltooid.';
@@ -254,6 +252,8 @@ $string['criteria_descr_single_short6'] = 'Voltooid:';
 $string['criteria_descr_single_short7'] = 'Voltooid:';
 $string['criteria_descr_single_short8'] = 'Lidmaatschap in:';
 $string['criteria_descr_single_short9'] = 'Voltooid:';
+$string['criteriacreated'] = 'Badge criteria aanmaken gelukt';
+$string['criteriadeleted'] = 'Badge criteria verwijderen gelukt';
 $string['criteriasummary'] = 'Samenvatting criteria:';
 $string['criteriaupdated'] = 'Badge criteria aanpassen gelukt';
 $string['criterror'] = 'Huidige parameterproblemen';
@@ -429,7 +429,7 @@ $string['notacceptedrole'] = 'Je huidige rol behoort niet tot die rollen die een
 Als je wil zien wie al een badge verdient heeft, dan kan je volgende pagina bezoeken: {$a}';
 $string['notconnected'] = 'Niet verbonden';
 $string['notealignment'] = 'Externe vaardigheden of standaarden die onder deze badge vallen kunnen hier opgegeven worden. Elke vaardigheid of standaard wordt op de badge-pagina getoond.';
-$string['noteendorsement'] = 'Goedkeuring door een dered partij kan gebuikt worde om de badge meer waardevol te maken. Zo kan bijvoorbeeld een badge, uitgereikt door een leraar, goedgekeurd worden door de school, of kan een badge die uitgereikt wordt door een lokale entiteit goedgekeurd worden door een nationale entiteit.';
+$string['noteendorsement'] = 'Goedkeuring door een derde partij kan gebruikt worden om de badge meer waardevol te maken. Zo kan bijvoorbeeld een badge, uitgereikt door een leraar, goedgekeurd worden door de school, of kan een badge die uitgereikt wordt door een lokale entiteit goedgekeurd worden door een nationale entiteit.';
 $string['noterelated'] = 'Badges met een connectie kunnen als gerelateerd gemarkeerd worden. Bijvoorbeeld badges met dezelfde criteria die in verschillende talen getoond worden, kunnen als gerelateerd aangeduid worden. Alle gerelateerde badges worden op de badge-pagina getoond.';
 $string['nothingtoadd'] = 'Er zijn geen criteria beschikbaar om toe te voegen';
 $string['notification'] = 'Waarschuw uitgever van de badge';
