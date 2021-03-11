@@ -8,3 +8,6 @@
 [submodule "html/auth/saml2"]
 	path = html/auth/saml2
 	url = https://github.com/projectestac/moodle-auth_saml2.git
+[submodule "html/local/redislock"]
+	path = html/local/redislock
+	url = https://github.com/open-lms-open-source/moodle-local_redislock.git
