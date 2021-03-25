@@ -1,16 +1,18 @@
-Release notes for Odissea (http://odissea.xtec.cat)
+Release notes for Odissea (https://odissea.xtec.cat)
 
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
 
-Work in progress
+Changes 21.03.25
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle from v3.6.7 to v3.8.7
 - Updated language packages
 - Removed theme xtec2
 - Added theme xtec2020
 - Removed module mailer (mail sender using apligest) and associated hacks in Moodle core
+- Added authentication plugin SAML2
+- odisseagtafsync: Changed connection to FTP server by SFTP server
 - Upgraded block completion_progress
 - Upgraded all wiris plugins
 - Upgraded all components from Vicens Vives
@@ -21,14 +23,12 @@ Work in progress
 - Upgraded module journal
 - Upgraded module questionnaire
 - Upgraded module jclic
-- Upgraded block completion_progress
 - Course format Simple: Fixed edition of section name
 - Geogebra: Improved literals
 - Removed is_portal. Added is_odissea and is_alexandria. Some clean up.
 - Unlock digestmailtime parameter
 - Unlock supportemail parameter
 - Fixed typo in local_oauth
-- Geogebra: Improved literals
 
 
 Changes 21.01.07
