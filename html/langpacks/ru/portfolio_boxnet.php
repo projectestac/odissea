@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'ru', version '3.8'.
+ * Strings for component 'portfolio_boxnet', language 'ru', version '3.11'.
  *
  * @package     portfolio_boxnet
  * @category    string
@@ -41,6 +41,8 @@ $string['notarget'] = 'Необходимо указать или существ
 $string['noticket'] = 'Не удалось получить ключ от Box, чтобы начать сеанс аутентификации';
 $string['password'] = 'Ваш пароль для Box  (не будет запомнен)';
 $string['pluginname'] = 'Box';
+$string['privacy:metadata'] = 'Этот плагин отправляет внешние данные в связанную учетную запись Box. Он не хранит данные локально.';
+$string['privacy:metadata:data'] = 'Персональные данные, передаваемые из подсистемы портфолио.';
 $string['sendfailed'] = 'Не удалось отправить содержимое на Box: {$a}';
 $string['setupinfo'] = 'Инструкция по установке';
 $string['setupinfodetails'] = 'Для получения ID и секретного ключа клиента войдите в Box и посетите их <a href="{$a->servicesurl}">страницу разработчика Box</a>. Проследуйте по ссылке «Create new application» («Создать новое приложение») и создайте новое приложение для своего сайта Moodle. ID и секретный ключ клиента отображаются в разделе «OAuth2 parameters» («Параметры OAuth2») в форме редактирования заявки. При желании Вы можете также предоставить другую информацию о своем сайте Moodle.';

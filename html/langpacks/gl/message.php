@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'gl', version '3.8'.
+ * Strings for component 'message', language 'gl', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -31,10 +31,10 @@ $string['addcontactconfirm'] = 'Confirma que quere engadir a {$a} aos seus conta
 $string['addtofavourites'] = 'Destacar a conversa';
 $string['addtoyourcontacts'] = 'Engadir a contactos';
 $string['addtoyourcontactsandmessage'] = 'Engadir a contactos e mensaxe';
-$string['ago'] = 'Vai {$a}';
+$string['ago'] = 'Hai {$a}';
 $string['allusers'] = 'Todas as mensaxes de todos os usuarios';
 $string['backto'] = 'Volver a {$a}';
-$string['backupmessageshelp'] = 'Se está activado, as mensaxes instantáneas serán incluídas nas copias de seguranza automatizadas do SITIO';
+$string['backupmessageshelp'] = 'Se está activado, as mensaxes instantáneas serán incluídas nas copias de seguridade automatizadas do SITIO';
 $string['blockcontact'] = 'Bloquear o contacto';
 $string['blockedusers'] = 'Usuarios bloqueados';
 $string['blocknoncontacts'] = 'Bloquear mensaxes de usuarios que non estean na miña lista de contactos';
@@ -76,9 +76,7 @@ $string['errorconversationdoesnotexist'] = 'Non existe a conversa';
 $string['errortranslatingdefault'] = 'Produciuse un erro ao traducir o axuste predeterminado fornecido polo engadido, usando os valores predeterminados do sistema no seu canto.';
 $string['eventgroupmessagesent'] = 'Mensaxe enviada ao grupo';
 $string['eventmessagecontactadded'] = 'Contacto de mensaxe engadido';
-$string['eventmessagecontactblocked'] = 'Contacto de mensaxe bloqueado';
 $string['eventmessagecontactremoved'] = 'Contacto de mensaxe retirado';
-$string['eventmessagecontactunblocked'] = 'Contacto de mensaxe desbloqueado';
 $string['eventmessagedeleted'] = 'Mensaxe eliminada';
 $string['eventmessagesent'] = 'Mensaxe enviada';
 $string['eventmessageuserblocked'] = 'Usuario bloqueado';
@@ -100,13 +98,13 @@ $string['loadmore'] = 'Cargar máis';
 $string['loggedin'] = 'En liña';
 $string['loggedin_help'] = 'Configurar como quere recibir as notificacións cando estea conectado a Moodle';
 $string['loggedindescription'] = 'Cando vostede accedeu a Moodle';
-$string['loggedoff'] = 'Fora de liña';
-$string['loggedoff_help'] = 'Configurar como quere recibir as notificacións cando non estea conectado a Moodle';
-$string['loggedoffdescription'] = 'Cando estou desconectado';
+$string['loggedoff'] = 'Sen conexión';
+$string['loggedoff_help'] = 'Configurar como quere recibir as notificacións cando non estea rexistrado no Moodle';
+$string['loggedoffdescription'] = 'Cando non está rexistrado no Moodle';
 $string['managemessageoutputs'] = 'Preferencias de notificación predeterminadas';
 $string['message'] = 'Mensaxe';
-$string['messagecontactrequestsnotification'] = '{$a} quere engadirse como contacto';
-$string['messagecontactrequestsnotificationsubject'] = '{$a} quere engadirse como contacto';
+$string['messagecontactrequestsnotification'] = '{$a} solicita ser engadido como contacto.';
+$string['messagecontactrequestsnotificationsubject'] = 'Solicitude de contacto de {$a}';
 $string['messagecontentaudio'] = 'Son';
 $string['messagecontentimage'] = 'Imaxe';
 $string['messagecontentmultimediageneral'] = 'Outro medio';
@@ -123,7 +121,6 @@ $string['messagepreferences'] = 'Preferencias de mensaxe';
 $string['messages'] = 'Mensaxes';
 $string['messagesselected:'] = 'Mensaxes seleccionadas:';
 $string['messagingdatahasnotbeenmigrated'] = 'As súas mensaxes non están dispoñíbeis temporalmente por mor de actualizacións na infraestrutura de mensaxes. Agarde que sexan migrados.';
-$string['messagingdisabled'] = 'A mensaxería está desactivada neste sitio, enviaránselle correos no seu canto';
 $string['muteconversation'] = 'Silenciar';
 $string['mutedconversation'] = 'Conversa silenciada';
 $string['newmessage'] = 'Nova mensaxe';
@@ -151,7 +148,7 @@ $string['notincontacts'] = 'Necesita engadir a {$a} aos seus contactos para pode
 $string['notincontactsheading'] = '{$a} non están nos seus contactos';
 $string['numparticipants'] = '{$a} participantes';
 $string['off'] = 'Desactivada';
-$string['offline'] = 'Fora de liña';
+$string['offline'] = 'Sen conexión';
 $string['on'] = 'Activada';
 $string['online'] = 'En liña';
 $string['otherparticipants'] = 'Outros participantes';
@@ -254,7 +251,7 @@ $string['showmessagewindownonew'] = 'Amosar a xanela de mensaxes sen novas mensa
 $string['showmessagewindowwithcount'] = 'Amosar a xanela de mensaxes con {$a} mensaxes novas';
 $string['shownotificationwindownonew'] = 'Amosar a xanela de notificación sen novas notificacións';
 $string['shownotificationwindowwithcount'] = 'Amosar a xanela de notificación con {$a} notificacións novas';
-$string['togglemessagemenu'] = 'Amosar/agochar a caixa de mensaxes';
+$string['togglemessagemenu'] = 'Cambiar o caixón de mensaxería';
 $string['togglenotificationmenu'] = 'Amosar/agochar o menú de notificacións';
 $string['totalconversations'] = '{$a} conversas totais';
 $string['touserdoesntexist'] = 'Non pode enviar unha mensaxe a un ID de usuario ({$a}) que non existe';
@@ -266,15 +263,13 @@ $string['unblockuserconfirm'] = 'Confirma que quere desbloquear a {$a}?';
 $string['unknownuser'] = 'Usuario descoñecido';
 $string['unmuteconversation'] = 'Activar son';
 $string['unreadconversations'] = 'Hai {$a} conversas sen ler';
-$string['unreadmessages'] = 'Hai {$ a} mensaxes sen ler';
+$string['unreadmessages'] = 'Hai {$a} mensaxes sen ler';
 $string['unreadnewgroupconversationmessage'] = 'Nova mensaxe de {$a->name} en {$a->conversationname}';
 $string['unreadnewmessage'] = 'Mensaxe nova de ({$a})';
 $string['unreadnotification'] = 'Notificación sen ler: {$a}';
-$string['unreadnotifications'] = 'Hai {$ a} notificacións sen ler';
+$string['unreadnotifications'] = 'Hai {$a} notificacións sen ler';
 $string['useentertosend'] = 'Usar Intro para enviar';
 $string['usercantbemessaged'] = 'Non pode enviar a mensaxe a {$a} por mor das súas preferencias de mensaxe. Tente engadilo como contacto.';
-$string['userisblockingyou'] = 'Este usuario bloqueouno e non pode enviarlle mensaxes';
-$string['userisblockingyounoncontact'] = '{$a} só acepta mensaxes dos seus contactos.';
 $string['userwouldliketocontactyou'] = '{$a}, gustaríame contactar con vostede';
 $string['viewfullnotification'] = 'Ver a notificación completa';
 $string['viewmessageswith'] = 'Ver mensaxes con {$a}';

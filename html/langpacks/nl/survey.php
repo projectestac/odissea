@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'nl', version '3.8'.
+ * Strings for component 'survey', language 'nl', version '3.11'.
  *
  * @package     survey
  * @category    string
@@ -188,6 +188,7 @@ Er zijn geen \'goede\' en geen \'foute\' antwoorden; we zijn alleen maar geïnte
 
 Hartelijk bedankt.';
 $string['collespname'] = 'COLLES (Voorkeur)';
+$string['completiondetail:submit'] = 'Stuur antwoorden in';
 $string['completionsubmit'] = 'De leerling moet deze activiteit insturen om ze te voltooien';
 $string['customintro'] = 'Beschrijving';
 $string['deleteallanswers'] = 'Verwijder alle onderzoek antwoorden';

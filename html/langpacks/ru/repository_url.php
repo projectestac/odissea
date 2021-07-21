@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_url', language 'ru', version '3.8'.
+ * Strings for component 'repository_url', language 'ru', version '3.11'.
  *
  * @package     repository_url
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Конфигурация хранилища URL';
 $string['download'] = 'Скачать';
 $string['pluginname'] = 'Загрузка файлов по URL';
+$string['privacy:metadata'] = 'Плагин хранилище «Загрузка файлов по URL» не хранит и не передает какие-либо личные данные.';
 $string['rename'] = 'Название';
 $string['url'] = 'URL';
 $string['url:view'] = 'Использовать загрузку файлов по URL в окне выбора файла';

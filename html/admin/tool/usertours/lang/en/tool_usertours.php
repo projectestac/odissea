@@ -54,14 +54,22 @@ $string['event_tour_reset'] = 'Tour reset';
 $string['event_tour_ended'] = 'Tour ended';
 $string['event_step_shown'] = 'Step shown';
 $string['exporttour'] = 'Export tour';
+$string['filter_accessdate'] = 'Access date';
+$string['filter_accessdate_enabled'] = 'Enable access date filter';
+$string['filter_accessdate_enabled_help'] = 'Only show the tour to new users or users who have accessed the site recently.';
 $string['filter_category'] = 'Category';
 $string['filter_category_help'] = 'Show the tour on a page that is associated with a course in the selected category.';
 $string['filter_course'] = 'Courses';
 $string['filter_course_help'] = 'Show the tour on a page that is associated with the selected course.';
 $string['filter_courseformat'] = 'Course format';
 $string['filter_courseformat_help'] = 'Show the tour on a page that is associated with a course using the selected course format.';
+$string['filter_cssselector'] = 'CSS selector';
+$string['filter_cssselector_help'] = 'Only show the tour when the specified CSS selector is found on the page.';
 $string['filter_header'] = 'Tour filters';
 $string['filter_help'] = 'Select the conditions under which the tour will be shown. All of the filters must match for a tour to be shown to a user.';
+$string['filter_date_account_creation'] = 'User account creation date within';
+$string['filter_date_first_login'] = 'User\'s first access date within';
+$string['filter_date_last_login'] = 'User\'s last access date within';
 $string['filter_theme'] = 'Theme';
 $string['filter_theme_help'] = 'Show the tour when the user is using one of the selected themes.';
 $string['filter_role'] = 'Role';
@@ -78,6 +86,7 @@ $string['newstep'] = 'Create step';
 $string['newstep'] = 'New step';
 $string['newtour'] = 'Create a new tour';
 $string['next'] = 'Next';
+$string['nextstep'] = 'Next';
 $string['options_heading'] = 'Options';
 $string['pathmatch'] = 'Apply to URL match';
 $string['pathmatch_help'] = 'Tours will be displayed on any page whose URL matches this value.
@@ -94,6 +103,7 @@ If you wish to display a tour on the Site Home page, you can use the value: "FRO
 ';
 $string['placement'] = 'Placement';
 $string['pluginname'] = 'User tours';
+$string['previousstep'] = 'Previous';
 $string['resettouronpage'] = 'Reset user tour on this page';
 $string['right'] = 'Right';
 $string['select_block'] = 'Select a block';
@@ -204,7 +214,7 @@ These actions only affect your view.
 
 You can also choose to display the courses in a list, or with summary information, or the default \'card\' view.';
 $string['tour3_title_displayoptions'] = 'Display options';
-$string['tour3_content_displayoptions'] = 'Courses may be sorted by course name or by last access date.
+$string['tour3_content_displayoptions'] = 'Courses may be sorted by course name, course short name or last access date.
 
 You can also choose to display the courses in a list, with summary information, or the default \'card\' view.';
 
@@ -225,6 +235,18 @@ $string['tour4_title_starred'] = 'Starred';
 $string['tour4_content_starred'] = 'You can choose to star particular conversations to make them easier to find.';
 $string['tour4_title_settings'] = 'Messaging settings';
 $string['tour4_content_settings'] = 'You can access your messaging settings via the cog icon. A new privacy setting allows you to restrict who can message you.';
+
+// 3.11 Activity information tour.
+$string['tour_activityinfo_activity_student_title'] = 'New: Activity information';
+$string['tour_activityinfo_activity_student_content'] = 'Activity dates plus what to do to complete the activity are shown on the activity page.';
+$string['tour_activityinfo_activity_teacher_title'] = 'New: Activity information';
+$string['tour_activityinfo_activity_teacher_content'] = 'Activity dates and completion conditions are now displayed for students on each activity page (and optionally on the course page).
+
+For activities requiring students to manually mark an activity as completed, a \'Mark as done\' button is shown on the activity page.';
+$string['tour_activityinfo_course_student_title'] = 'New: Activity information';
+$string['tour_activityinfo_course_student_content'] = 'Activity dates and/or what to do to complete the activity are displayed on the course page.';
+$string['tour_activityinfo_course_teacher_title'] = 'New: Activity information';
+$string['tour_activityinfo_course_teacher_content'] = 'New course settings \'Show completion conditions\' and \'Show activity dates\' enable you to choose whether activity completion conditions (if set) and/or dates are displayed for students on the course page.';
 
 $string['tour_final_step_title'] = 'End of tour';
 $string['tour_final_step_content'] = 'This is the end of your user tour. It won\'t show again unless you reset it using the link in the footer.';

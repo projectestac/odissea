@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ca', version '3.8'.
+ * Strings for component 'choice', language 'ca', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -70,7 +70,9 @@ $string['expired'] = 'Aquesta activitat es va tancar el dia {$a}.';
 $string['full'] = '(Complet)';
 $string['havetologin'] = 'Abans de trametre una resposta heu d\'entrar amb el vostre nom d\'usuari i contrasenya.';
 $string['includeinactive'] = 'Inclou respostes dels usuaris inactius/suspesos';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Consulta en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions)';
 $string['limit'] = 'Límit';
+$string['limita'] = 'Límit: {$a}';
 $string['limitanswers'] = 'Limita el nombre de respostes permeses';
 $string['limitanswers_help'] = 'Aquest paràmetre us permet limitar el nombre de participants que poden seleccionar cada opció concreta. Quan s\'arriba al límit, ningú més no pot seleccionar aquesta opció.
 
@@ -123,6 +125,7 @@ $string['publishnot'] = 'No publiquis els resultats';
 $string['removemychoice'] = 'Suprimeix la meva resposta';
 $string['removeresponses'] = 'Suprimeix totes les respostes';
 $string['responses'] = 'Respostes';
+$string['responsesa'] = 'Respostes: {$a}';
 $string['responsesresultgraphheader'] = 'Mostra la gràfica';
 $string['responsesto'] = 'Respostes per a {$a}';
 $string['results'] = 'Resultats';

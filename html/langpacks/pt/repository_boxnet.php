@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_boxnet', language 'pt', version '3.8'.
+ * Strings for component 'repository_boxnet', language 'pt', version '3.11'.
  *
  * @package     repository_boxnet
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Chave da API';
 $string['boxnet:view'] = 'Ver repositório Box';
-$string['cannotcreatereference'] = 'Não é possível criar uma referência, não há permissões suficientes para compartilhar o ficheiro no Box.';
+$string['cannotcreatereference'] = 'Não é possível criar uma referência por não haver permissões suficientes para partilhar o ficheiro no Box.';
 $string['clientid'] = 'ID do Cliente';
 $string['clientsecret'] = 'Senha do Cliente';
 $string['configplugin'] = 'Configurar Box';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'ru', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'ru', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -47,6 +47,6 @@ $string['pluginname'] = 'Ведомость с оценками';
 $string['privacy:nullproviderreason'] = 'Этот плагин не содержит базы данных для хранения информации пользователя. Он только использует API в mod_assign для отображения интерфейса оценивания.';
 $string['processgrades'] = 'Импорт оценок';
 $string['skiprecord'] = 'Пропустить запись';
-$string['updatedgrades'] = 'Обновленные оценки и отзывы - {$a}';
+$string['updatedgrades'] = 'Обновлены оценки (<strong>{$a->gradeupdatescount}</strong>) и отзывы (<strong>{$a->feedbackupdatescount}</strong>).';
 $string['updaterecord'] = 'Обновить запись';
 $string['uploadgrades'] = 'Загрузить ведомость с оценками';

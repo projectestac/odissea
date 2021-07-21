@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'eu', version '3.8'.
+ * Strings for component 'quiz_grading', language 'eu', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(kalifikatuta)';
 $string['gradenextungraded'] = 'Kalifikatu gabeko hurrengo {$a} saiakerak kalifikatu';
 $string['gradeungraded'] = 'Kalifikatu gabeko {$a} saiakera guztiak kalifikatu';
 $string['grading'] = 'Eskuzko kalifikazioa';
-$string['grading:componentname'] = 'Eskuzko kalifikazio-txostena';
 $string['grading:viewidnumber'] = 'Ikusi ikasleen ID zenbakiak kalifikatu bitartean';
 $string['grading:viewstudentnames'] = 'Ikusi ikasleen izenak kalifikatu bitartean';
 $string['gradingall'] = '{$a} saiakera guztiak galdera honetarako.';
@@ -71,7 +70,8 @@ $string['nothingfound'] = 'Ez dago erakusteko ezer';
 $string['options'] = 'Aukerak';
 $string['orderattempts'] = 'Ordenatu saiakerak';
 $string['pluginname'] = 'Eskuzko kalifikazioa';
-$string['privacy:metadata'] = 'Galdetegien Eskuzko kalifikazioa pluginak ez du datu pertsonalik biltzen. Erabiltzaileek datuak gordetzeko interfazea eskaintzen du baina inolako daturik gorde gabe.';
+$string['privacy:preference:order'] = 'Kalifikazioa behar duten saiakerak erakusteko erabilitako ordena.';
+$string['privacy:preference:pagesize'] = 'Ebaluazio-interfazeko orri bakoitzean erakutsi beharreko saiakera kopurua.';
 $string['qno'] = 'G #';
 $string['questionname'] = 'Galderaren izena';
 $string['questionsperpage'] = 'Galderak orriko';

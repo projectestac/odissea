@@ -113,13 +113,18 @@ class core_files_renderer extends plugin_renderer_base {
                 array('invalidjson', 'repository'), array('popupblockeddownload', 'repository'),
                 array('unknownoriginal', 'repository'), array('confirmdeletefolder', 'repository'),
                 array('confirmdeletefilewithhref', 'repository'), array('confirmrenamefolder', 'repository'),
-                array('confirmrenamefile', 'repository'), array('newfolder', 'repository'), array('edit', 'moodle')
+                array('confirmrenamefile', 'repository'), array('newfolder', 'repository'), array('edit', 'moodle'),
+                array('originalextensionchange', 'repository'), array('originalextensionremove', 'repository'),
+                array('aliaseschange', 'repository'), ['nofilesselected', 'repository'],
+                ['confirmdeleteselectedfile', 'repository'], ['selectall', 'moodle'], ['deselectall', 'moodle'],
+                ['selectallornone', 'form'],
             )
         );
         if ($this->page->requires->should_create_one_time_item_now('core_file_managertemplate')) {
             $this->page->requires->js_init_call('M.form_filemanager.set_templates',
                     array($this->filemanager_js_templates()), true, $module);
         }
+        $this->page->requires->js_call_amd('core/checkbox-toggleall', 'init');
         $this->page->requires->js_init_call('M.form_filemanager.init', array($fm->options), true, $module);
 
         // non javascript file manager
@@ -138,13 +143,14 @@ class core_files_renderer extends plugin_renderer_base {
      * @return string
      */
     protected function fm_print_generallayout($fm) {
-        //XTEC ************ AFEGIT - If disk quota is exceeded, don't allow upload files --> REVIEW!
-        //2012.08.24 @sarjona
+
+        // XTEC ************ AFEGIT - If disk quota is exceeded, don't allow upload files
+        // 2012.08.24 @sarjona
         global $CFG;
         if (isset($CFG->diskPercent) && ($CFG->diskPercent > 100)) {
-            $strdndenabledinbox = '<div class="error">'.get_string('diskquotaerror', 'local_agora').'</div>';
-        } 
-        //************ FI
+            return '<div class="fp-content-error"><div class="fp-error">' . get_string('diskquotaerror', 'local_agora') . '</div></div>';
+        }
+        // ************ FI
 
         $context = [
                 'client_id' => $fm->options->client_id,
@@ -169,7 +175,7 @@ class core_files_renderer extends plugin_renderer_base {
     protected function fm_js_template_iconfilename() {
         $rv = '
 <div class="fp-file">
-    <a href="#">
+    <a href="#" class="d-block aabtn">
     <div style="position:relative;">
         <div class="fp-thumbnail"></div>
         <div class="fp-reficons1"></div>
@@ -179,7 +185,8 @@ class core_files_renderer extends plugin_renderer_base {
         <div class="fp-filename text-truncate"></div>
     </div>
     </a>
-    <a class="fp-contextmenu" href="#">'.$this->pix_icon('i/menu', '▶').'</a>
+    <a class="fp-contextmenu btn btn-icon btn-light border icon-no-margin icon-size-3" href="#">
+        <span>'.$this->pix_icon('i/menu', '▶').'</span></a>
 </div>';
         return $rv;
     }
@@ -229,7 +236,7 @@ class core_files_renderer extends plugin_renderer_base {
 <div class="filemanager fp-mkdir-dlg" role="dialog" aria-live="assertive" aria-labelledby="fp-mkdir-dlg-title">
     <div class="fp-mkdir-dlg-text">
         <label id="fp-mkdir-dlg-title">' . get_string('newfoldername', 'repository') . '</label><br/>
-        <input type="text" />
+        <input type="text" class="form-control"/>
     </div>
     <button class="fp-dlg-butcreate btn-primary btn">'.get_string('makeafolder').'</button>
     <button class="fp-dlg-butcancel btn-cancel btn">'.get_string('cancel').'</button>
@@ -253,7 +260,9 @@ class core_files_renderer extends plugin_renderer_base {
      */
     protected function fm_js_template_fileselectlayout() {
         $context = [
-                'helpicon' => $this->help_icon('setmainfile', 'repository')
+                'helpicon' => $this->help_icon('setmainfile', 'repository'),
+                'licensehelpicon' => $this->create_license_help_icon_context(),
+                'columns' => true
         ];
         return $this->render_from_template('core/filemanager_fileselect', $context);
     }
@@ -406,7 +415,10 @@ class core_files_renderer extends plugin_renderer_base {
      * @return string
      */
     protected function fp_js_template_selectlayout() {
-        return $this->render_from_template('core/filemanager_selectlayout', []);
+        $context = [
+            'licensehelpicon' => $this->create_license_help_icon_context()
+        ];
+        return $this->render_from_template('core/filemanager_selectlayout', $context);
     }
 
     /**
@@ -415,21 +427,19 @@ class core_files_renderer extends plugin_renderer_base {
      * @return string
      */
     protected function fp_js_template_uploadform() {
-        //XTEC ************ AFEGIT - If disk quota is exceeded, don't allow upload files - REVIEW!
-        //2012.08.24 @sarjona
+
+        // XTEC ************ AFEGIT - If disk quota is exceeded, don't allow upload files
+        // 2012.08.24 @sarjona
         global $CFG;
         if (isset($CFG->diskPercent) && ($CFG->diskPercent > 100)) {
-            $rv = '<div class="error">'.get_string('diskquotaerror', 'local_agora').'</div>';
-        } else{
-        //************ FI
- 
-        return $this->render_from_template('core/filemanager_uploadform', []);
-
-        //XTEC ************** AFEGIT - If disk quota is exceeded, don't allow upload files - REVIEW!
-        //2012.08.24 @sarjona
+            return '<div class="fp-content-error"><div class="fp-error">' . get_string('diskquotaerror', 'local_agora') . '</div></div>';
         }
-        //************ FI
+        // ************ FI
 
+        $context = [
+            'licensehelpicon' => $this->create_license_help_icon_context()
+        ];
+        return $this->render_from_template('core/filemanager_uploadform', $context);
     }
 
     /**
@@ -535,6 +545,32 @@ class core_files_renderer extends plugin_renderer_base {
      */
     public function repository_default_searchform() {
         return $this->render_from_template('core/filemanager_default_searchform', []);
+    }
+
+    /**
+     * Create the context for rendering help icon with license links displaying all licenses and sources.
+     *
+     * @return \stdClass $iconcontext the context for rendering license help info.
+     */
+    protected function create_license_help_icon_context() : stdClass {
+        $licensecontext = new stdClass();
+
+        $licenses = [];
+        // Discard licenses without a name or source from enabled licenses.
+        foreach (license_manager::get_active_licenses() as $license) {
+            if (!empty($license->fullname) && !empty($license->source)) {
+                $licenses[] = $license;
+            }
+        }
+
+        $licensecontext->licenses = $licenses;
+        $helptext = $this->render_from_template('core/filemanager_licenselinks', $licensecontext);
+
+        $iconcontext = new stdClass();
+        $iconcontext->text = $helptext;
+        $iconcontext->alt = get_string('helpprefix2', 'moodle', get_string('chooselicense', 'repository'));
+
+        return $iconcontext;
     }
 }
 

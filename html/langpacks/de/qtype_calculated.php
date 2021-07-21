@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'de', version '3.8'.
+ * Strings for component 'qtype_calculated', language 'de', version '3.11'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -132,7 +132,7 @@ $string['significantfiguresformat'] = 'signifikante Zeichen';
 $string['synchronize'] = 'Daten von gemeinsam genutzten Datensätzen mit anderen Fragen in einem Test synchronisieren';
 $string['synchronizeno'] = 'Nicht synchronisieren';
 $string['synchronizeyes'] = 'Synchronisieren';
-$string['synchronizeyesdisplay'] = 'Gemeinsam genutzte Datensatztitel als Prefix vor Fragetitel anzeigen und synchronisieren';
+$string['synchronizeyesdisplay'] = 'Geteilte Datensatztitel als Prefix vor Fragetitel anzeigen und synchronisieren';
 $string['tolerance'] = 'Toleranz ±';
 $string['tolerancetype'] = 'Typ';
 $string['trueanswerinsidelimits'] = 'Richtige Antwort: {$a->correct} liegt innerhalb der Grenzen des wahren Wertes {$a->true}';

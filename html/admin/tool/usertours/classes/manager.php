@@ -438,17 +438,7 @@ class manager {
         $filename = 'tour_export_' . $tour->get_id() . '_' . time() . '.json';
 
         // Force download.
-        header('Last-Modified: ' . gmdate('D, d M Y H:i:s', time()) . ' GMT');
-        header('Cache-Control: private, must-revalidate, pre-check=0, post-check=0, max-age=0');
-        header('Expires: ' . gmdate('D, d M Y H:i:s', 0) . 'GMT');
-        header('Pragma: no-cache');
-        header('Accept-Ranges: none');
-        header('Content-disposition: attachment; filename=' . $filename);
-        header('Content-length: ' . strlen($exportstring));
-        header('Content-type: text/calendar; charset=utf-8');
-
-        echo $exportstring;
-        die;
+        send_file($exportstring, $filename, 0, 0, true, true);
     }
 
     /**
@@ -608,42 +598,46 @@ class manager {
     }
 
     /**
-     * Get the first tour matching the current page URL.
+     * Get all tours for the current page URL.
      *
-     * @param   bool        $reset      Forcibly update the current tour
-     * @return  tour
+     * @param   bool        $reset      Forcibly update the current tours
+     * @return  array
      */
-    public static function get_current_tour($reset = false) {
+    public static function get_current_tours($reset = false): array {
         global $PAGE;
 
-        static $tour = false;
+        static $tours = false;
 
-        if ($tour === false || $reset) {
-            $tour = self::get_matching_tours($PAGE->url);
+        if ($tours === false || $reset) {
+            $tours = self::get_matching_tours($PAGE->url);
         }
 
-        return $tour;
+        return $tours;
     }
 
     /**
-     * Get the first tour matching the specified URL.
+     * Get all tours matching the specified URL.
      *
      * @param   moodle_url  $pageurl        The URL to match.
-     * @return  tour
+     * @return  array
      */
-    public static function get_matching_tours(\moodle_url $pageurl) {
+    public static function get_matching_tours(\moodle_url $pageurl): array {
         global $PAGE;
 
         $tours = cache::get_matching_tourdata($pageurl);
 
-        foreach ($tours as $record) {
-            $tour = tour::load_from_record($record);
-            if ($tour->is_enabled() && $tour->matches_all_filters($PAGE->context)) {
-                return $tour;
+        $matches = [];
+        if ($tours) {
+            $filters = helper::get_all_filters();
+            foreach ($tours as $record) {
+                $tour = tour::load_from_record($record);
+                if ($tour->is_enabled() && $tour->matches_all_filters($PAGE->context, $filters)) {
+                    $matches[] = $tour;
+                }
             }
         }
 
-        return null;
+        return $matches;
     }
 
     /**
@@ -860,21 +854,23 @@ class manager {
         // the format filename => version. The version value needs to
         // be increased if the tour has been updated.
         $shippedtours = [
-            '36_dashboard.json' => 3
+            '311_activity_information_activity_page_student.json' => 2,
+            '311_activity_information_activity_page_teacher.json' => 2,
+            '311_activity_information_course_page_student.json' => 2,
+            '311_activity_information_course_page_teacher.json' => 2
         ];
 
         // These are tours that we used to ship but don't ship any longer.
         // We do not remove them, but we do disable them.
         $unshippedtours = [
+            // Formerly included in Moodle 3.2.0.
             'boost_administrator.json' => 1,
             'boost_course_view.json' => 1,
-        ];
 
-        if ($CFG->messaging) {
-            $shippedtours['36_messaging.json'] = 3;
-        } else {
-            $unshippedtours['36_messaging.json'] = 3;
-        }
+            // Formerly included in Moodle 3.6.0.
+            '36_dashboard.json' => 3,
+            '36_messaging.json' => 3,
+        ];
 
         $existingtourrecords = $DB->get_recordset('tool_usertours_tours');
 

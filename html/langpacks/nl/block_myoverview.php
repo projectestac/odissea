@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'nl', version '3.8'.
+ * Strings for component 'block_myoverview', language 'nl', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = 'Sorteer cursussen op laatst bekeken';
 $string['aria:list'] = 'Schakel over naar lijstweergave';
 $string['aria:past'] = 'Eerdere cursussen weergeven';
 $string['aria:removefromfavourites'] = 'Verwijder uit favorieten voor';
+$string['aria:shortname'] = 'Sorteer cursussen bij cursus korte naam';
 $string['aria:showcourse'] = 'Toon {$a}';
 $string['aria:sortingdropdown'] = 'Rolmenu sortering';
 $string['aria:summary'] = 'Schakel over naar overzichtsweergave';
@@ -62,8 +63,6 @@ $string['courseprogress'] = 'Cursusvordering:';
 $string['customfield'] = 'Aangepast veld';
 $string['customfiltergrouping'] = 'Veld om te gebruiken';
 $string['customfiltergrouping_nofields'] = 'Voor deze optie moet je een aangepast veld in je cursus maken en dat zichtbaar zetten voor iedereen.';
-$string['defaulttab'] = 'Standaard-tab';
-$string['defaulttab_desc'] = 'Dit is de standaard-tab die aan een gebruiker getoond de eerste keer dat die een cursus bezoekt. Bij het terugkeren naar het cursusoverzicht wordt de actieve tab van de gebruiker onthouden.';
 $string['displaycategories'] = 'Toon categorieën';
 $string['displaycategories_help'] = 'Toon de cursuscategorie bij cursusitems op Mijn startpagina inclusief items als kaart, lijst of samenvatting.';
 $string['favourites'] = 'Favoriet';
@@ -76,31 +75,18 @@ $string['lastaccessed'] = 'Laatst geopend';
 $string['layouts'] = 'Beschikbare lay-outs';
 $string['layouts_help'] = 'Cursus overzicht-lay-outs die beschikbaar zijn voor selectie door gebruikers. Als er geen geselecteerd zijn, zal de kaart-lay-out gebruikt worden.';
 $string['list'] = 'Lijst';
-$string['morecourses'] = 'Meer cursussen';
 $string['myoverview:myaddinstance'] = 'Een nieuw cursusoverzichtblok toevoegen aan Mijn startpagina';
-$string['next30days'] = 'Komende 30 dagen';
-$string['next7days'] = 'Komende 7 dagen';
 $string['nocourses'] = 'Geen cursussen';
-$string['nocoursesfuture'] = 'Geen toekomstige cursussen';
-$string['nocoursesinprogress'] = 'Geen actieve cursussen';
-$string['nocoursespast'] = 'Geen voltooide cursussen';
 $string['nocustomvalue'] = 'Geen {$a}';
-$string['noevents'] = 'Er zijn geen verwachte activiteiten';
 $string['past'] = 'Voltooid';
 $string['pluginname'] = 'Cursusoverzicht';
 $string['privacy:metadata:overviewgroupingpreference'] = 'Het Cursusoverzichtsblok groeperingsvoorkeuren.';
-$string['privacy:metadata:overviewlasttab'] = 'Dit bewaart de laatste tab die de gebruiker geselecteerd heeft op het overzichtsblok.';
 $string['privacy:metadata:overviewpagingpreference'] = 'Het Cursusoverzichtsblok paginavoorkeur.';
 $string['privacy:metadata:overviewsortpreference'] = 'Het Cursusoverzichtsblok sorteringsvoorkeur.';
 $string['privacy:metadata:overviewviewpreference'] = 'Het Cursusoverzichtsblok bekijk voorkeur.';
 $string['privacy:request:preference:set'] = 'De waarde van de instelling \'{$a->name}\' was \'{$a->value}\'';
-$string['recentlyoverdue'] = 'Deadline verstreken';
 $string['removefromfavourites'] = 'Verwijderen uit favorieten';
+$string['shortname'] = 'Korte naam';
 $string['show'] = 'Toon deze cursus';
-$string['sortbycourses'] = 'Op cursus sorteren';
-$string['sortbydates'] = 'Op datum sorteren';
 $string['summary'] = 'Samenvatting';
-$string['timeline'] = 'Tijdlijn';
 $string['title'] = 'Cursusnaam';
-$string['viewcourse'] = 'Bekijk cursus';
-$string['viewcoursename'] = 'Bekijk cursus {$a}';

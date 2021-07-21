@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'gl', version '3.8'.
+ * Strings for component 'availability', language 'gl', version '3.11'.
  *
  * @package     availability
  * @category    string
@@ -31,25 +31,25 @@ $string['and'] = 'e';
 $string['condition_group'] = 'Conxunto de restricións';
 $string['condition_group_info'] = 'Engadir un conxunto de restricións aniñadas para aplicar lóxica complexa.';
 $string['enableavailability'] = 'Activar o acceso condicional';
-$string['enableavailability_desc'] = 'Cando se activa, permítelle poñer condicións (baseadas en data, cualificación, ou finalización) que controlan se se pode ou non acceder a unha actividade ou recurso.';
+$string['enableavailability_desc'] = 'Cando se activa, poden estabelecerse condicións (baseadas en data, cualificación, ou completado) que controlan se se pode ou non acceder a unha actividade ou recurso.';
 $string['error_list_nochildren'] = 'Os conxuntos de restricións precisan conter polo menos unha condición.';
 $string['hidden_all'] = 'Agochar por completo se o usuario non cumpre as condicións';
 $string['hidden_individual'] = 'Agochar por completo se o usuario non cumpre esta condición';
 $string['hidden_marker'] = '(agochar en caso contrario)';
 $string['hide_verb'] = 'Premer para agochar';
-$string['invalid'] = 'Por favor estabeleza';
-$string['item_unknowntype'] = 'Estas restricións usan un engadido que xa non está dispoñíbel (se é correcto eliminar esta restrición bórrea máis abaixo)';
+$string['invalid'] = 'Estabeleza';
+$string['item_unknowntype'] = 'Estas restricións usan un engadido que xa non está dispoñíbel (se é correcto eliminar esta restrición elimínea máis abaixo)';
 $string['itemheading'] = 'restrición {$a->number} {$a->type}';
 $string['label_multi'] = 'Restricións necesarias';
 $string['label_sign'] = 'Tipo de restrición';
 $string['list_and'] = 'Todas de:';
 $string['list_and_hidden'] = 'Todas de (agochar en caso contrario)';
-$string['list_or'] = 'Calquera das:';
-$string['list_or_hidden'] = 'Calquera de (agochar en caso contrario):';
-$string['list_root_and'] = 'Non dispoñíbel a non ser que:';
-$string['list_root_and_hidden'] = 'Non dispoñíbel (agochada) a non ser que:';
-$string['list_root_or'] = 'Non dispoñíbel a non ser que calquera de:';
-$string['list_root_or_hidden'] = 'Non dispoñíbel (agochada) a non ser que calquera de:';
+$string['list_or'] = 'Calquera de:';
+$string['list_or_hidden'] = 'Calquera de (senón agochado):';
+$string['list_root_and'] = 'Non dispoñíbel ata que:';
+$string['list_root_and_hidden'] = 'Non dispoñíbel (agochado) a non ser que:';
+$string['list_root_or'] = 'Non dispoñíbel ata que calquera de:';
+$string['list_root_or_hidden'] = 'Non dispoñíbel (agochado) agás calquera de:';
 $string['listheader_multi_after'] = 'das seguintes';
 $string['listheader_multi_and'] = 'todas';
 $string['listheader_multi_before'] = 'coincide';

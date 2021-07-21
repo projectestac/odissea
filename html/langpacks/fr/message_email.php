@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'fr', version '3.8'.
+ * Strings for component 'message_email', language 'fr', version '3.11'.
  *
  * @package     message_email
  * @category    string
@@ -31,6 +31,7 @@ $string['emaildigestunreadmessages'] = 'Messages non lus';
 $string['emaildigestviewallmessages'] = 'Afficher tous les messages';
 $string['emailonlyfromnoreplyaddress'] = 'Toujours envoyer les messages à partir de l\'adresse de non-réponse ?';
 $string['ifemailleftempty'] = 'Laisser vide pour envoyer les notifications à {$a}';
+$string['messagedigestemailsubject'] = '{$a} : récapitulatif des messages';
 $string['pluginname'] = 'Courriel';
 $string['privacy:metadata:attachment'] = 'Un fichier dans le système de fichiers.';
 $string['privacy:metadata:attachname'] = 'Le nom du fichier annexe (l\'extension indique MIME).';

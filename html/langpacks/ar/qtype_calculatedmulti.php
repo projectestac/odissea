@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedmulti', language 'ar', version '3.8'.
+ * Strings for component 'qtype_calculatedmulti', language 'ar', version '3.11'.
  *
  * @package     qtype_calculatedmulti
  * @category    string
@@ -32,4 +32,4 @@ $string['pluginname_help'] = 'أسئلة متعدد الخيارات الحسا�
 $string['pluginnameadding'] = 'إضافة سؤال حسابي باختيارات متعددة';
 $string['pluginnameediting'] = 'تحرير سؤال حسابي من الاختيار المتعدد';
 $string['pluginnamesummary'] = 'أسئلة حسابية باختيارات متعددة، مثل أسئلة الاختيار المتعدد التي يمكن أن تشمل اختيار نتائج صيغة من القيم الرقمية التي يتم اختيارها عشوائياً من مجموعة، عندما يتم أخذ هذا الاختبار.';
-$string['privacy:metadata'] = 'لا يُخزن المكون الإضافي  Calculated multichoice question type أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق نوع السؤال الحسابي متعدد الخيارات لا يخزن أي بيانات شخصية.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'eu', version '3.8'.
+ * Strings for component 'tool_langimport', language 'eu', version '3.11'.
  *
  * @package     tool_langimport
  * @category    string
@@ -28,6 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadnotavailable'] = 'Ezin izan da deskargen zerbitzarira konektatu. Ezin da hizkuntza-paketerik automatikoki instalatu edo eguneratu. Mesedez jaitsi ZIP fitxategi egokia(k) <a href="{$a->src}">{$a->src}</a> helbidetik eta eskuz erauzi zure datuen direktorioko <code>{$a->dest}</code> kokapenean.';
 $string['install'] = 'Instalatu aukeratutako hizkuntza-paketea(k)';
 $string['installedlangs'] = 'Instalatutako hizkuntza-paketeak';
+$string['installfailed'] = 'Hizkuntza-paketeen instalazioak huts egin du!';
+$string['installfinished'] = 'Hizkuntza-paketeen instalazioa amaitu da.';
+$string['installpending'] = 'Hurrengo hizkuntza-paketeak laster instalatuko dira: {$a}.';
+$string['installscheduled'] = 'Instalatzeko programatuta dauden hizkuntza-paketeak.';
 $string['langimport'] = 'Hizkuntza inportatzeko baliabidea';
 $string['langimportdisabled'] = 'Hizkuntza inportatzeko funtzioa ez dago gaituta. Eskuz eguneratu behar dituzu hizkuntza-paketeak fitxategi-sisteman. Hori egin ondoren ez ahaztu kateen cachea ezabatzeaz.';
 $string['langpackinstalled'] = '\'{$a}\' hizkuntza-paketea ondo instalatu da';
@@ -48,7 +52,9 @@ $string['nolangupdateneeded'] = 'Hizkuntza-pakete guztiak eguneratuta daude: ez 
 $string['pluginname'] = 'Hizkuntza-paketeak';
 $string['privacy:metadata'] = 'Hizkuntza-paketeak pluginak ez du datu pertsonalik biltzen.';
 $string['purgestringcaches'] = 'Ezabatu hizkuntza-kateen cacheak';
+$string['search'] = 'Bilatu eskuragarri dauden hizkuntza-paketeak';
 $string['selectlangs'] = 'Aukeratu desinstalatzeko hizkuntzak';
 $string['uninstall'] = 'Desinstalatu aukeratutako hizkuntza-paketea(k)';
 $string['uninstallconfirm'] = 'Hizkuntza-pakete hauek desinstalatzera zoaz: <strong>{$a}</strong>. Ziur zaude?';
 $string['updatelangs'] = 'Eguneratu instalatutako hizkuntza-pakete guztiak';
+$string['updatelangsnote'] = 'Instalatutako hizkuntza pakete guztiak botoian sakatuta eguneratzeak denbora asko eraman dezake eta denbora-mugak eragin ditzake. Horren ordez \'{$a->taskname}\' programatutako ataza erabiltzea gomendatzen da (modu lehenetsian egunero exekutatzen dena).';

@@ -32,12 +32,13 @@ defined('MOODLE_INTERNAL') || die();
  */
 class auth extends base {
     public function is_uninstall_allowed() {
-        //XTEC ************ AFEGIT - Disable uninstalling
-        //2014.09.09  @pferre22
+        // XTEC ************ AFEGIT - Disable uninstalling
+        // 2014.09.09 @pferre22
         if (!get_protected_agora()) {
             return false;
         }
-        //************ FI
+        // ************ FI
+
         global $DB;
 
         if (in_array($this->name, array('manual', 'nologin', 'webservice', 'mnet'))) {
@@ -127,7 +128,9 @@ class auth extends base {
         }
         if (($key = array_search($this->name, $auths)) !== false) {
             unset($auths[$key]);
-            set_config('auth', implode(',', $auths));
+            $value = implode(',', $auths);
+            add_to_config_log('auth', $CFG->auth, $value, 'core');
+            set_config('auth', $value);
         }
 
         if (!empty($CFG->registerauth) and $CFG->registerauth === $this->name) {

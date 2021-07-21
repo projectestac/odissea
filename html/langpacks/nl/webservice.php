@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'nl', version '3.8'.
+ * Strings for component 'webservice', language 'nl', version '3.11'.
  *
  * @package     webservice
  * @category    string
@@ -127,7 +127,7 @@ $string['loginrequired'] = 'Beperkt tot aangemelde gebruikers';
 $string['manageprotocols'] = 'Beheer protocols';
 $string['managetokens'] = 'Beheer tokens';
 $string['missingcaps'] = 'Ontbrekende mogelijkheden';
-$string['missingcaps_help'] = 'Lijst van vereiste mogelijkheden voor de service die de geselecteerde gebruiker niet heeft. Ontbrekende mogelijkheden moeten toegevoegd worden aan de rol van de gebruiker om de service te kunnen gebruiken.';
+$string['missingcaps_help'] = 'Lijst van vereiste mogelijkheden voor de service die de geselecteerde gebruiker niet heeft. Sommige service-functionaliteit zal niet beschikbaar zijn zonder deze mogelijkheden.';
 $string['missingpassword'] = 'Wachtwoord ontbreekt';
 $string['missingrequiredcapability'] = 'De mogelijkheid {$a} is vereist.';
 $string['missingusername'] = 'Gebruikersnaam ontbreekt';
@@ -139,7 +139,7 @@ $string['norequiredcapability'] = 'Geen vereiste mogelijkheid';
 $string['notoken'] = 'De tokenlijst is leeg';
 $string['onesystemcontrolling'] = 'Een extern systeem toestaan Moodle te controleren';
 $string['onesystemcontrollingdescription'] = 'Onderstaande stappen helpen je om de Moodle webservice te configureren voor een systeem dat interageert met Moodle controleert (vb een leerlinginformatiesysteem). Deze stappen helpen je om de aangeraden tokenauthenticatiemethode (met beveiligingssleutels) te configureren.';
-$string['onlyseecreatedtokens'] = 'Elk token kan verwijderd worden, maar je kunt enkel tokens zien die jij gemaakt hebt.';
+$string['onlyseecreatedtokens'] = 'Je kunt enkel tokens zien die jij gemaakt hebt.';
 $string['operation'] = 'Operatie';
 $string['optional'] = 'Optioneel';
 $string['passwordisexpired'] = 'Wachtwoord is verlopen';
@@ -214,6 +214,9 @@ $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Tokenauthenticatie';
 $string['tokencreatedbyadmin'] = 'Kan enkel door de beheerder gereset worden (*)';
 $string['tokencreator'] = 'Aanmaker';
+$string['tokenfilter'] = 'Tokens filter';
+$string['tokenfilterreset'] = 'Toon alle tokens';
+$string['tokenfiltersubmit'] = 'Toon alleen overeenkomende tokens';
 $string['unknownoptionkey'] = 'Onbekende optiesleutel ({$a})';
 $string['unnamedstringparam'] = 'Een stringparameter heeft geen naam.';
 $string['updateusersettings'] = 'Update';

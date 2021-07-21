@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_stats', language 'ru', version '3.8'.
+ * Strings for component 'report_stats', language 'ru', version '3.11'.
  *
  * @package     report_stats
  * @category    string
@@ -32,5 +32,15 @@ $string['page-report-stats-index'] = 'Отчет «Статистика» для
 $string['page-report-stats-user'] = 'Отчет «Статистика» для участника курса';
 $string['page-report-stats-x'] = 'Любой отчет «Статистика»';
 $string['pluginname'] = 'Статистика';
+$string['privacy:dailypath'] = 'Ежедневная статистика';
+$string['privacy:metadata'] = 'Плагин статистики не хранит никаких личных данных.';
+$string['privacy:metadata:courseid'] = 'ID курса';
+$string['privacy:metadata:roleid'] = 'ID роли пользователя.';
+$string['privacy:metadata:statsreads'] = 'Просмотры контента';
 $string['privacy:metadata:statssummary'] = 'Записывает основную статистику о взаимодействии пользователей в курсах.';
+$string['privacy:metadata:statswrites'] = 'Контент, созданный в курсе.';
+$string['privacy:metadata:stattype'] = 'Тип записываемой статистики';
+$string['privacy:metadata:userid'] = 'ID пользователя, связанного с этой таблицей.';
+$string['privacy:monthlypath'] = 'Статистика по месяцам';
+$string['privacy:weeklypath'] = 'Статистика еженедельно';
 $string['stats:view'] = 'Просматривать отчет «Статистика»';

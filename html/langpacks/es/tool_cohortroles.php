@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'es', version '3.8'.
+ * Strings for component 'tool_cohortroles', language 'es', version '3.11'.
  *
  * @package     tool_cohortroles
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'nl', version '3.8'.
+ * Strings for component 'qtype_multichoice', language 'nl', version '3.11'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -66,9 +66,17 @@ $string['pluginname_help'] = 'Als antwoord op een vraag (waarin een afbeelding k
 $string['pluginnameadding'] = 'Een meerkeuzevraag toevoegen';
 $string['pluginnameediting'] = 'Meerkeuzevraag bewerken';
 $string['pluginnamesummary'] = 'Laat de keuze van één of meerdere antwoorden toe uit een vooraf opgestelde lijst.';
-$string['privacy:metadata'] = 'De meerkeuzevraagtype-plugin bewaart geen persoonlijke gegevens.';
+$string['privacy:metadata'] = 'De meerkeuzevraagtype-plugin  laat vraag-auteurs standaardopties en gebruikersvoorkeuren instellen.';
+$string['privacy:preference:answernumbering'] = 'Welke nummeringsstijl gebruikt moet worden (\'1., 2., 3., ...\', \'a., b., c., ...\' enz.)';
+$string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
+$string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
+$string['privacy:preference:showstandardinstruction'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
+$string['privacy:preference:shuffleanswers'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
+$string['privacy:preference:single'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['selectmulti'] = 'Kies één of meer van de volgende antwoorden:';
 $string['selectone'] = 'Kies het juiste antwoord uit de volgende mogelijkheden:';
+$string['showstandardinstruction'] = 'Toon standaardinstructies';
+$string['showstandardinstruction_help'] = 'Of de instructies "Selecteer een:" of "Selecteer een of meer" getoond worden voor meerkeuze antwoorden.';
 $string['shuffleanswers'] = 'Antwoorden in willekeurige volgorde?';
 $string['shuffleanswers_desc'] = 'Moeten opties standaard door elkaar geschud worden voor elke poging?';
 $string['shuffleanswers_help'] = 'Indien ingeschakeld wordt de volgorde van de antwoorden voor elke poging door elkaar gehaald, toch indien "Door elkaar halen binnen vragen" ook is ingesteld op het niveau van de activiteit.';

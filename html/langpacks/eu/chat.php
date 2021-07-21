@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'eu', version '3.8'.
+ * Strings for component 'chat', language 'eu', version '3.11'.
  *
  * @package     chat
  * @category    string
@@ -109,6 +109,7 @@ Txatak bereziki erabilgarriak dira aurrez aurreko talde-bilerak egin ezin direne
 * Ikasleei azterketak prestatzen laguntzeko saioak egiteko, non irakasleak edo beste ikasle batzuk adibide galderak planteatuko dituzten';
 $string['modulenameplural'] = 'Txat-gelak';
 $string['neverdeletemessages'] = 'Ez ezabatu mezuak';
+$string['nextchattime'] = 'Hurrengo txataren unea:';
 $string['nextsession'] = 'Programatutako hurrengo txat-saioa';
 $string['no_complete_sessions_found'] = 'Ez da aurkitu osatutako saiorik';
 $string['nochat'] = 'Ez dago txatik';
@@ -158,6 +159,7 @@ $string['servermax'] = 'Gehienezko erabiltzaileak';
 $string['serverport'] = 'Zerbitzariaren portua';
 $string['sessions'] = 'Txat-saioetako txostenak';
 $string['sessionstart'] = 'Txat-saioa {$a->date}(e)tan hasiko da, (hemendik {$a->fromnow}(e)ra)';
+$string['sessionstartsin'] = 'Hurrengo txat-saioa {$a} barru hasiko da.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Denek ikus ditzakete izandako saioetako txostenak';
 $string['studentseereports_help'] = 'EZ aukeratuz gero, mod/chat:readlog gaitasuna duten erabiltzaileek baino ezingo dituzte txat-agerraldiak ikusi';

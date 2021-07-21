@@ -57,7 +57,7 @@ class send_email_task extends scheduled_task {
      * Send out emails.
      */
     public function execute() {
-        global $DB, $PAGE;
+        global $DB, $PAGE, $SITE;
 
         // Get the maximum id we are going to use.
         // We use this as records may be added to the table while this task runs.
@@ -91,7 +91,7 @@ class send_email_task extends scheduled_task {
             }
             $conversations->close();
             if ($hascontent) {
-                $subject = get_string('emaildigestsubject', 'message_email');
+                $subject = get_string('messagedigestemailsubject', 'message_email', format_string($SITE->fullname));
                 $message = $textrenderer->render($renderable);
                 $messagehtml = $htmlrenderer->render($renderable);
                 if (email_to_user($user, $noreplyuser, $subject, $message, $messagehtml)) {
@@ -137,7 +137,7 @@ class send_email_task extends scheduled_task {
         // now this will have to do before 3.7 code freeze.
         // See related MDL-63814.
         $sql = "SELECT DISTINCT mc.id, mc.name, c.id as courseid, c.fullname as coursename, g.id as groupid,
-                                g.picture, g.hidepicture
+                                g.picture
                   FROM {message_conversations} mc
                   JOIN {groups} g
                     ON mc.itemid = g.id
@@ -161,7 +161,8 @@ class send_email_task extends scheduled_task {
     protected function get_users_messages_for_conversation(int $conversationid, int $userid) : moodle_recordset {
         global $DB;
 
-        $usernamefields = \user_picture::fields('u');
+        $userfieldsapi = \core_user\fields::for_userpic();
+        $usernamefields = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
         $sql = "SELECT $usernamefields, m.*
                   FROM {messages} m
                   JOIN {user} u

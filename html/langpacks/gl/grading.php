@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'gl', version '3.8'.
+ * Strings for component 'grading', language 'gl', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -31,12 +31,12 @@ $string['changeactivemethod'] = 'Cambiar o método activo de cualificación a';
 $string['clicktoclose'] = 'premer para pechar';
 $string['error:notinrange'] = 'A cualificación «{$a->grade}»  non é válida. As cualificacións deben estar comprendida entre 0 e {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Non é posíbel crear instancias do elemento formulario de cualificación';
-$string['formnotavailable'] = 'Seleccionou o método de cualificación avanzada para o seu uso, mais o formato de cualificación aínda non está dispoñíbel. Terá que definilo previamente utilizando a ligazón existente no bloque de Administración.';
+$string['formnotavailable'] = 'Seleccionou un método de cualificación avanzada para o seu uso, mais o formato de cualificación aínda non está dispoñíbel. Terá que definilo previamente utilizando a ligazón existente no bloque de Administración.';
 $string['gradingformunavailable'] = 'Teña en conta que o formulario de cualificación avanzada non está preparado neste momento. Empregarase o método de cualificación simple ata que formulario teña un estado correcto.';
 $string['gradingmanagement'] = 'Cualificación avanzada';
 $string['gradingmanagementtitle'] = 'Cualificación avanzada: {$a->component} ({$a->area})';
 $string['gradingmethod'] = 'Método de cualificación';
-$string['gradingmethod_help'] = 'Escolla o método de cualificación avanzada que debe empregarse para o cálculo das cualificacións no contexto dado.
+$string['gradingmethod_help'] = 'Escolla o método de cualificación avanzada que debe empregarse para o cálculo das cualificacións no contexto determinado.
 
 Para desactivar a cualificación avanzada e volver ao mecanismo de cualificación predeterminado, escolla «Cualificación directa simple».';
 $string['gradingmethodnone'] = 'Cualificación directa simple';

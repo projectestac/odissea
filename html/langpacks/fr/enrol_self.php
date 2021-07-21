@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'fr', version '3.8'.
+ * Strings for component 'enrol_self', language 'fr', version '3.11'.
  *
  * @package     enrol_self
  * @category    string
@@ -101,6 +101,7 @@ $string['requirepassword'] = 'Exiger la clef d\'inscription';
 $string['requirepassword_desc'] = 'Exiger la clef d\'inscription dans les nouveaux cours et empêcher la suppression de la clef d\'inscription des cours existants.';
 $string['role'] = 'Rôle attribué par défaut';
 $string['self:config'] = 'Configurer les instances d\'auto-inscription';
+$string['self:enrolself'] = 'S\'inscrire dans un cours';
 $string['self:holdkey'] = 'Apparaître comme détenteur de la clef d\'inscription';
 $string['self:manage'] = 'Gérer les utilisateurs inscrits';
 $string['self:unenrol'] = 'Désinscrire du cours les utilisateurs';

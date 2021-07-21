@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'ru', version '3.8'.
+ * Strings for component 'repository_equella', language 'ru', version '3.11'.
  *
  * @package     repository_equella
  * @category    string
@@ -34,6 +34,7 @@ $string['equellaurl'] = 'URL-адрес EQUELLA';
 $string['group'] = 'Настройки роли {$a}';
 $string['groupdefault'] = 'По умолчанию';
 $string['pluginname'] = 'Хранилище EQUELLA';
+$string['privacy:metadata'] = 'Плагин хранилища EQUELLA не хранит никаких личных данных, но передает данные пользователя из Moodle в отдаленную систему.';
 $string['restrictionattachmentsonly'] = 'Только прикрепленный ресурс';
 $string['restrictionitemsonly'] = 'Только описание элемента';
 $string['restrictionnone'] = 'Нет ограничений';

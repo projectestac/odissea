@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ru', version '3.8'.
+ * Strings for component 'availability', language 'ru', version '3.11'.
  *
  * @package     availability
  * @category    string
@@ -65,7 +65,7 @@ $string['privacy:metadata'] = 'Подсистема ограничения до�
 $string['restrictaccess'] = 'Ограничение доступа';
 $string['restrictbygroup'] = 'Добавить ограничение доступа по группе/потоку';
 $string['setheading'] = '{$a->number} Набор из {$a->count} ограничений';
-$string['show_verb'] = 'Щелкните, чтобы показать';
+$string['show_verb'] = 'Щелкните, чтобы показать серым';
 $string['shown_all'] = 'Отображается серым, если пользователь не соответствует условиям';
 $string['shown_individual'] = 'Отображается серым, если пользователь не соответствует этому условию';
 $string['unknowncondition'] = 'Неизвестное условие (плагин условия удален)';

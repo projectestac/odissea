@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'eu', version '3.8'.
+ * Strings for component 'feedback', language 'eu', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -57,6 +57,7 @@ $string['complete_the_form'] = 'Erantzun galderei';
 $string['completed'] = 'Osatua';
 $string['completed_feedbacks'] = 'Bidalitako erantzunak';
 $string['completedon'] = 'Noiz osatua: {$a}';
+$string['completiondetail:submit'] = 'Feedbacka bidaltzea';
 $string['completionsubmit'] = 'Ikasleak inkesta bidali behar du osatzeko';
 $string['configallowfullanonymous'] = '\'Bai\' aukeratuz gero, erabiltzaileek inkesta osatu ahal izango dute hasiera-orrian, saioa hasi gabe ere.';
 $string['confirmdeleteentry'] = 'Ziur zaude sarrera hau ezabatu nahi duzula?';
@@ -175,7 +176,7 @@ $string['mode'] = 'Modua';
 $string['modulename'] = 'Inkesta';
 $string['modulename_help'] = 'Inkesta jarduerak irakasleari inkesta pertsonalizatuak sortzea ahalbidetzen diote, parte-hartzaileen feedbackak jasotzeko hainbat galdera-mota erabilita, tartean aukera anitzekoak, Bai/Ez modukoak eta testua idaztekoak.
 
-Inkestaren emaitzak ikasleek erantzun ondoren erakutsi daitezke, baita irakasleentzat soilik erakutsi ere. Emaitzak ikasleen izenekin edo modu anonimoan erakutsi daitezke. Moodle-ko hasiera orrian dauden inkestak saioa hasi gabeko erabiltzaileek ere osatu ditzakete.
+Inkestaren emaitzak ikasleek erantzun ondoren erakutsi daitezke, baita irakasleentzat soilik erakutsi ere. Emaitzak ikasleen izenekin edo modu anonimoan erakutsi daitezke. Moodleko hasiera orrian dauden inkestak saioa hasi gabeko erabiltzaileek ere osatu ditzakete.
 
 Inkesta jarduerak erabili daitezke
 
@@ -258,7 +259,7 @@ $string['searchcourses'] = 'Bilatu ikastaroak';
 $string['searchcourses_help'] = 'Bilatu inkesta honekin lotu nahi duzun kodea edo ikastaro(ar)en izena.';
 $string['selected_dump'] = 'Aukeratutako indizeen $SESSION saioko aldagai hauek jaitsi dira:';
 $string['send'] = 'Bidali';
-$string['send_message'] = 'Bidali mezua';
+$string['send_message'] = 'Bidali jakinarazpena';
 $string['show_all'] = 'Erakutsi guztiak';
 $string['show_analysepage_after_submit'] = 'Erakutsi analisi-orria';
 $string['show_entries'] = 'Erakutsi erantzunak';

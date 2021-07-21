@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'sv', version '3.8'.
+ * Strings for component 'gradingform_rubric', language 'sv', version '3.11'.
  *
  * @package     gradingform_rubric
  * @category    string
@@ -55,12 +55,19 @@ $string['leveldefinition'] = 'Nivå {$a}-definition';
 $string['leveldelete'] = 'Ta bort nivå {$a}';
 $string['levelempty'] = 'Klick för att redigera nivå';
 $string['levelsgroup'] = 'Nivågrupp';
+$string['lockzeropoints'] = 'Beräkna betyg med en lägsta poäng på lägsta möjliga betyg för kriteriet';
+$string['lockzeropoints_help'] = 'Den här inställningen gäller endast om summan av det minsta antalet poäng för varje kriterium är större än 0. Om den är markerad kommer aktivitetens lägsta poäng att vara det lägsta uppnåeliga betyget för kriteriet. Om det inte har plockats bort mappas minsta möjliga poäng för kriteriet till det lägsta tillgängliga betyget för aktiviteten (vilket är 0 om inte en skala används).';
 $string['name'] = 'Namn';
 $string['needregrademessage'] = 'Definitionen av bedömningsmatrisen ändrades efter att studenten betygsattes. Studenten kan inte se den här matrisen förrän du kontrollerar matrisen och uppdatera betyget.';
 $string['notset'] = 'Ej angiven';
 $string['pluginname'] = 'Bedömningsmatris';
 $string['pointsvalue'] = '{$a} poäng';
 $string['previewrubric'] = 'Förhandsgranska matris';
+$string['privacy:metadata:criterionid'] = 'En identifierare för ett visst kriterium som betygsätts.';
+$string['privacy:metadata:fillingssummary'] = 'Lagrar information om användarens resultat som skapats av kriteriet.';
+$string['privacy:metadata:instanceid'] = 'En identifierare som relaterar till ett resultat i en aktivitet.';
+$string['privacy:metadata:levelid'] = 'Den nivå som erhålls i matrisen.';
+$string['privacy:metadata:remark'] = 'Anmärkningar för matriskriteriet som bedöms.';
 $string['regrademessage1'] = 'Du håller på att spara ändringarna till en bedömningsmatris som redan har använts för betygssättning. Vänligen ange om befintliga betyg behöver ses över. Om du ställer in detta kommer matrisen att döljas för studenten eleverna tills deras uppgift är åter betygsatt.';
 $string['regrademessage5'] = 'Du håller på att spara betydande ändringarna till en bedömningsmatris som redan har använts för betygssättning. Betygssättningens värde kommer att vara oförändrad, men matrisen kommer att döljas för studenter tills deras uppgift är åter betygsatt.';
 $string['regradeoption0'] = 'Markera inte för ombedömning';
@@ -68,13 +75,18 @@ $string['regradeoption1'] = 'Markera för ombedömning';
 $string['restoredfromdraft'] = 'OBS: Den senaste försök att betygsätta denna student har inte sparats korrekt - betyg har sparats som "utkast". Om du vill ta bort dessa ändringarna välj "Avbryt" nedan.';
 $string['rubric'] = 'Bedömningsmatris';
 $string['rubricmapping'] = 'Hur poäng omvandlas till resultat för uppgiften';
-$string['rubricmappingexplained'] = 'Minsta möjliga poäng för denna bedömningsmatris är {$a->minscore} poäng och det kommer att konverteras till den minsta grad som är tillgängliga i denna modul (som är noll om inte skalan redan används). Den maximala poängen {$a->maxscore} poäng kommer att konverteras till den högsta grad. Mellanliggande poäng kommer att konverteras till närmaste betyg. Om en skala används istället för en betyg, kommer poängen omvandlas till skalans element som om de vore på varandra följande heltal.';
+$string['rubricmappingexplained'] = 'Minsta möjliga poäng för det här kriteriet är <b>{$a->minscore}</b> poäng. Den konverteras till det lägsta möjliga betyget för aktiviteten (vilket är 0 om inte en skala används). Den maximala poängen <b>{$a->maxscore}</b> poäng konverteras till det maximala betyget. Mellanliggande poäng konverteras på motsvarande sätt.
+
+Om en skala används för bedömning avrundas poängen och konverteras till skalelementen som om de vore på varandra följande heltal.
+
+Denna betygsberäkning kan ändras genom att redigera formuläret och kryssa i rutan "Beräkna resultat med en lägsta poäng på det lägsta uppnåeliga betyget för kriteriet".';
 $string['rubricnotcompleted'] = 'Välj något för varje kriterium';
 $string['rubricoptions'] = 'Bedömningsmatrisalternativ';
 $string['rubricstatus'] = 'Nuvarande bedömningsmatris-status';
 $string['save'] = 'Spara';
 $string['saverubric'] = 'Spara matris och gör den redo';
 $string['saverubricdraft'] = 'Sparar som utkast';
+$string['scoreinputforlevel'] = 'Poäng för nivå {$a}';
 $string['scorepostfix'] = '{$a}poäng';
 $string['showdescriptionstudent'] = 'Visa matrisens beskrivning för de som betygsätter';
 $string['showdescriptionteacher'] = 'Visa matrisens beskrivning under värderingen';
@@ -84,3 +96,5 @@ $string['showscoreteacher'] = 'Visa poäng för varje nivå för den som betygs�
 $string['sortlevelsasc'] = 'Visningsordning för nivåer:';
 $string['sortlevelsasc0'] = 'Fallande i poängordning';
 $string['sortlevelsasc1'] = 'Stigande i poängordning';
+$string['zerolevelsabsent'] = 'Varning! Minsta möjliga poäng för detta kriterium är inte 0; Detta kan resultera i oväntade betyg för aktiviteten. För att undvika detta bör varje kriterium ha en nivå med 0 poäng.
+Den här varningen kan ignoreras om en skala används för bedömning och miniminivåerna i kriterierna motsvarar skalans minimivärde.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'journal', language 'ar', version '3.8'.
+ * Strings for component 'journal', language 'ar', version '3.11'.
  *
  * @package     journal
  * @category    string
@@ -32,17 +32,28 @@ $string['editingended'] = 'انتهت فترة التعديل';
 $string['editingends'] = 'تنتهي فترة التعديل';
 $string['entries'] = 'مدخلات';
 $string['evententriesviewed'] = 'إدخالات دفتر يوميات تمت معاينتها';
+$string['evententrycreated'] = 'إدخال دفتر يوميات تم إنشاؤه';
+$string['evententryupdated'] = 'إدخال دفتر يوميات تم تحديثه';
+$string['eventfeedbackupdated'] = 'إفادة دفتر يوميات تم تحديثه';
+$string['eventjournalcreated'] = 'دفتر يوميات تم إنشاؤه';
+$string['eventjournaldeleted'] = 'دفتر يوميات تم حذفه';
 $string['eventjournalviewed'] = 'دفتر يوميات تمت معاينته';
-$string['feedbackupdated'] = 'تصحيح محدث {$a} للمدخلات';
-$string['journalmail'] = '{$a->teacher} قام يوضع بعض التصحيحات على مادة مذكرتك المسلمة لـ \'{$a->journal}\'
-تستطيع مشاهدتها مرفقة مع مادة مذكرتك: {$a->url}';
-$string['journalmailhtml'] = '{$a->teacher} قام بوضع بعض التصحيحات على مادة مذكرتك \'<i>{$a->journal}</i>\'<br /><br />
- يمكنك مشاهدتها مرفقة مع لمادة مذكرتك<a href="{$a->url}">journal entry</a>.';
+$string['feedbackupdated'] = 'تم تحديث الإفادة لـ {$a} من المدخلات';
+$string['journal:addinstance'] = 'إضافة مجلة جديدة';
+$string['journalmail'] = '{$a->teacher} نشر إفادة بشإن إدخالك
+في المذكرة \'{$a->journal}\'
+
+يمكنك مشاهدتها ملحقة بمذكرتك:
+
+   {$a->url}';
+$string['journalmailhtml'] = '{$a->teacher} نشر إفادة بشإن إدخالك في المذكرة \'<i>{$a->journal}</i>\'<br /><br />
+يمكنك مشاهدتها ملحقة <a href="{$a->url}">بإدخالك في المذكرة</a>.';
 $string['journalname'] = 'اسم المذكرة';
 $string['journalquestion'] = 'سؤال المذكرة';
-$string['mailsubject'] = 'تغذية استرجاعية لمذكرة';
+$string['mailsubject'] = 'إفادة المذكرة';
 $string['modulename'] = 'مذكرة';
 $string['modulenameplural'] = 'مذكرات';
+$string['needsregrade'] = 'تغير الإدخال منذ آخر حفظ للإفادة.';
 $string['newjournalentries'] = 'مدخلات مذكرة جديدة';
 $string['noentry'] = 'لا يوجد مدخلات';
 $string['noratinggiven'] = 'لا توجد تصنيفات محددة';
@@ -50,6 +61,6 @@ $string['notopenuntil'] = 'هذه المذكرة لن تفتح حتى';
 $string['notstarted'] = 'إنك لم تبدا هذه المذكرة حتى الآن';
 $string['overallrating'] = 'غالبية التصنيفات';
 $string['rate'] = 'صنف';
-$string['saveallfeedback'] = 'أحفظ جميع التصحيحات الخاص بي';
+$string['saveallfeedback'] = 'حفظ كل إفاداتي';
 $string['startoredit'] = 'تعديل مذكرتي';
 $string['viewallentries'] = 'معاينة {$a} مدخلات المذكرة';

@@ -1,8 +1,6 @@
 # Wiris Quizzes Short-Answer question type
-### Master Build Status
-[![Build Status](https://travis-ci.org/wiris/moodle-qtype_shortanswerwiris.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_shortanswerwiris)
-### Development Build Status
-[![Build Status](https://travis-ci.org/wiris/moodle-qtype_shortanswerwiris.svg?branch=development)](https://travis-ci.org/wiris/moodle-qtype_shortanswerwiris)
+
+[![Moodle Plugin CI](https://github.com/wiris/moodle-qtype_shortanswerwiris/actions/workflows/ci.yml/badge.svg)](https://github.com/wiris/moodle-qtype_shortanswerwiris/actions/workflows/ci.yml)
 
 The Wiris Short-Answer question type extends the Moodle Short-Answer type, adding mathematical functionality to it.
 
@@ -19,6 +17,14 @@ git clone https://github.com/wiris/moodle-qtype_shortanswerwiris.git question/ty
 Then add /question/type/shortanswerwiris to your git ignore.
 
 Alternatively, download the zip from <https://github.com/wiris/moodle-qtype_shortanswerwiris/archive/master.zip> it into the question/type folder, and then rename the new folder to "shortanswerwiris".
+
+## Technical Support
+
+If you have questions or need help integrating MathType, please contact us (support@wiris.com) instead of opening an issue.
+
+## Privacy policy
+
+The [MathType Privacy Policy](https://www.wiris.com/mathtype/privacy-policy) covers the data processing operations for the MathType users. It is an addendum of the company’s general Privacy Policy and the [general Privacy Policy](https://wiris.com/en/privacy-policy) still applies to MathType users.
 
 ## License
 

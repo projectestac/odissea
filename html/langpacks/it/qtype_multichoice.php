@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'it', version '3.8'.
+ * Strings for component 'qtype_multichoice', language 'it', version '3.11'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -68,6 +68,8 @@ $string['pluginnamesummary'] = 'Consente l\'utilizzo di domande a risposta multi
 $string['privacy:metadata'] = 'Il plugin Tipo di domande \'Risposta multipla\' non memorizza dati personali.';
 $string['selectmulti'] = 'Scegli una o più alternative:';
 $string['selectone'] = 'Scegli un\'alternativa:';
+$string['showstandardinstruction'] = 'Visualizza istruzioni standard';
+$string['showstandardinstruction_help'] = 'Consente di visualizzare, prima delle risposte a scelta multipla, le istruzioni "Scegli una un\'alternativa:" oppure "Scegli una o più alternative:".';
 $string['shuffleanswers'] = 'Alternative in ordine casuale';
 $string['shuffleanswers_help'] = 'Consente l\'ordinamento casuale delle possibili risposte alternative, purché l\'opzione "Alternative in ordine casuale" sia abilitata.';
 $string['singleanswer'] = 'Scegli una sola risposta.';

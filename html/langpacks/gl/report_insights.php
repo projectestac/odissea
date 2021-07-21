@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_insights', language 'gl', version '3.8'.
+ * Strings for component 'report_insights', language 'gl', version '3.11'.
  *
  * @package     report_insights
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actionsaved'] = 'Gardouse o seu comentario de «{$a}».';
 $string['confirmbulkaction'] = 'Confirma que quere marcar as {$a->nitems} predicións seleccionadas como {$a->action}?';
-$string['disabledmodel'] = 'Mágoa, este modelo foi desactivado polo administrador';
+$string['disabledmodel'] = 'Este modelo foi desactivado por un administrador';
 $string['indicators'] = 'Indicadores';
 $string['insight'] = 'Estimación';
 $string['insights'] = 'Estimacións';
@@ -47,5 +47,5 @@ $string['privacy:metadata'] = 'O engadido de estimacións non almacena ningún d
 $string['selectotherinsights'] = 'Seleccionar outras estimacións...';
 $string['selectprediction'] = 'Seleccionar {$a} para unha acción masiva';
 $string['timecreated'] = 'Tempo predito';
-$string['timerange'] = 'Intervalo de tempo';
+$string['timerange'] = 'Intervalo de análise';
 $string['timerangewithdata'] = '{$a->timestart} to {$a->timeend}';

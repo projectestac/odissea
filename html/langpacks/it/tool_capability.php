@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'it', version '3.8'.
+ * Strings for component 'tool_capability', language 'it', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -30,9 +30,12 @@ $string['capabilityreport'] = 'Report dei privilegi';
 $string['changeoverrides'] = 'Cambia le modifiche in questo contesto';
 $string['changeroles'] = 'Modifica le definizioni del ruolo';
 $string['eventreportviewed'] = 'Visualizzato report';
+$string['filters'] = 'Filtra risultati';
 $string['forroles'] = 'Per il ruolo {$a}';
 $string['getreport'] = 'Visualizza il report';
 $string['intro'] = 'Questo report consente la visualizzazione dello stato di un dato privilegio all\'interno della definizione dei ruoli. Il report consente anche di visualizzare in quali parti del sito è stato modificato il ruolo.';
+$string['nodifferences'] = 'In questo contesto non risultano differenze tra i ruoli selezionati';
+$string['onlydiff'] = 'Visualizza solo le differenze';
 $string['pluginname'] = 'Report dei privilegi';
 $string['privacy:metadata'] = 'Il plugin \'Report dei privilegi\' non memorizza dati personali.';
 $string['reportforcapability'] = 'Report per il privilegio \'{$a}\'';

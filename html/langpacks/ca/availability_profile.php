@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'ca', version '3.8'.
+ * Strings for component 'availability_profile', language 'ca', version '3.11'.
  *
  * @package     availability_profile
  * @category    string
@@ -40,14 +40,14 @@ $string['op_isequalto'] = 'és igual a';
 $string['op_isnotempty'] = 'no està buit';
 $string['op_startswith'] = 'comença per';
 $string['pluginname'] = 'Restriccions per perfil';
-$string['requires_contains'] = 'El vostre <strong>{$a->field}</strong> conté <strong>{$a->value}</strong>';
-$string['requires_doesnotcontain'] = 'El vostre <strong>{$a->field}</strong> no conté <strong>{$a->value}</strong>';
-$string['requires_endswith'] = 'El vostre <strong>{$a->field}</strong> acaba amb <strong>{$a->value}</strong>';
-$string['requires_isempty'] = 'El vostre <strong>{$a->field}</strong> és buit';
-$string['requires_isequalto'] = 'El vostre <strong>{$a->field}</strong> és <strong>{$a->value}</strong>';
-$string['requires_isnotempty'] = 'El vostre <strong>{$a->field}</strong> no està buit';
-$string['requires_notendswith'] = 'El vostre <strong>{$a->field}</strong> no acaba amb <strong>{$a->value}</strong>';
-$string['requires_notisequalto'] = 'El vostre <strong>{$a->field}</strong> no és <strong>{$a->value}</strong>';
-$string['requires_notstartswith'] = 'El vostre <strong>{$a->field}</strong> no comença amb <strong>{$a->value}</strong>';
-$string['requires_startswith'] = 'El vostre <strong>{$a->field}</strong> comença amb <strong>{$a->value}</strong>';
+$string['requires_contains'] = 'El vostre camp de perfil <strong>{$a->field}</strong> contingui <strong>{$a->value}</strong>';
+$string['requires_doesnotcontain'] = 'El vostre camp de perfil <strong>{$a->field}</strong> no contingui <strong>{$a->value}</strong>';
+$string['requires_endswith'] = 'El vostre camp de perfil <strong>{$a->field}</strong> acabi en <strong>{$a->value}</strong>';
+$string['requires_isempty'] = 'El vostre camp de perfil <strong>{$a->field}</strong> estigui buit';
+$string['requires_isequalto'] = 'El vostre camp de perfil <strong>{$a->field}</strong> sigui <strong>{$a->value}</strong>';
+$string['requires_isnotempty'] = 'El vostre camp de perfil <strong>{$a->field}</strong> no estigui buit';
+$string['requires_notendswith'] = 'El vostre camp de perfil <strong>{$a->field}</strong> no acabi en <strong>{$a->value}</strong>';
+$string['requires_notisequalto'] = 'El vostre camp de perfil <strong>{$a->field}</strong> no sigui <strong>{$a->value}</strong>';
+$string['requires_notstartswith'] = 'El vostre camp de perfil <strong>{$a->field}</strong> no comenci amb <strong>{$a->value}</strong>';
+$string['requires_startswith'] = 'El vostre camp de perfil <strong>{$a->field}</strong> comenci amb <strong>{$a->value}</strong>';
 $string['title'] = 'Perfil de l\'usuari';

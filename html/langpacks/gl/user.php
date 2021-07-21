@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'gl', version '3.8'.
+ * Strings for component 'user', language 'gl', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -50,7 +50,7 @@ $string['privacy:metadata:description'] = 'Información xeral sobre este usuario
 $string['privacy:metadata:devicename'] = 'O nome do dispositivo, ocam ou iPhone, etc.';
 $string['privacy:metadata:devicetablesummary'] = 'Esta táboa almacena a información do dispositivo móbil do usuario para enviar notificacións «PUSH»';
 $string['privacy:metadata:email'] = 'Un enderezo de correo para o contacto.';
-$string['privacy:metadata:emailstop'] = 'Unha preferencia de deixar de enviar correo ao usuario.';
+$string['privacy:metadata:emailstop'] = 'Unha preferencia para desactivar as notificacións de envío ao usuario.';
 $string['privacy:metadata:fieldid'] = 'o ID relacionado co campo de usuario personalizado.';
 $string['privacy:metadata:filelink'] = 'Hai varios ficheiros diferentes para o usuario almacenado na táboa de ficheiros.';
 $string['privacy:metadata:firstaccess'] = 'O momento no que este usuario accedeu por primeira vez ao sitio.';
@@ -83,20 +83,20 @@ $string['privacy:metadata:my_pages:name'] = 'Nome da páxina';
 $string['privacy:metadata:my_pages:private'] = 'Se a páxina non é privada (taboleiro) ou pública (perfil)';
 $string['privacy:metadata:my_pages:userid'] = 'O usuario propietario desta páxina ou 0 para predeterminado do sistema';
 $string['privacy:metadata:password'] = 'O contrasinal para que este usuario acceda ao sistema.';
-$string['privacy:metadata:passwordresettablesummary'] = 'Unha táboa de seguimento de marcas de confirmación de restabelecemento do contrasinal';
+$string['privacy:metadata:passwordresettablesummary'] = 'Unha táboa de seguimento de testemuños de confirmación de restabelecemento do contrasinal';
 $string['privacy:metadata:passwordtablesummary'] = 'Un rexistro rotativo de «hashes» de contrasinais usados anteriormente para o usuario.';
 $string['privacy:metadata:phone'] = 'Un número de teléfono para o usuario.';
 $string['privacy:metadata:picture'] = 'Os detalles da imaxe asociada con este usuario.';
 $string['privacy:metadata:platform'] = 'A plataforma do dispositivo, Android ou iOS, etc.';
-$string['privacy:metadata:policyagreed'] = 'Unha sinalización para determinar se o usuario aceptou a política do sitio.';
-$string['privacy:metadata:pushid'] = 'O ID da marca/chave/identificador/rexistro «PUSH» do dispositivo';
+$string['privacy:metadata:policyagreed'] = 'Unha sinalización para determinar se o usuario aceptou as normas do sitio.';
+$string['privacy:metadata:pushid'] = 'O ID do testemuño/chave/identificador/rexistro «PUSH» do dispositivo';
 $string['privacy:metadata:reason'] = 'A razón para solicitar este curso.';
 $string['privacy:metadata:requester'] = 'O ID do usuario que solicitou o curso';
 $string['privacy:metadata:requestsummary'] = 'Almacena información sobre as solicitudes de cursos que fan os usuarios.';
 $string['privacy:metadata:secret'] = 'Segredo ... non está seguro.';
 $string['privacy:metadata:sessdata'] = 'Contido da sesión';
 $string['privacy:metadata:sessiontablesummary'] = 'Almacenamento da sesión baseado na base de datos';
-$string['privacy:metadata:shortname'] = 'Un nome curto para o curso';
+$string['privacy:metadata:shortname'] = 'Un nome abreviado para o curso';
 $string['privacy:metadata:sid'] = 'O ID da sesión';
 $string['privacy:metadata:skype'] = 'O identificador Skype do usuario';
 $string['privacy:metadata:state'] = '0 significa unha sesión normal';
@@ -128,6 +128,7 @@ $string['privacy:passwordresetpath'] = 'Restabelecemento do contrasinal';
 $string['privacy:privatefilespath'] = 'Ficheiros privados';
 $string['privacy:profileimagespath'] = 'Imaxes do perfil';
 $string['privacy:sessionpath'] = 'Datos da sesión';
+$string['selectfiltertype'] = 'Seleccionar';
 $string['target:upcomingactivitiesdue'] = 'Actividades pendentes de entrega';
-$string['target:upcomingactivitiesdue_help'] = 'Este obxectivo xera recordatorios para as actividades pendentes de entrega.';
+$string['target:upcomingactivitiesdue_help'] = 'Este destino xera recordatorios para as actividades pendentes de entrega.';
 $string['target:upcomingactivitiesdueinfo'] = 'Aquí están listadas todas as actividades vindeiras estimadas. Estes alumnos recibiron estas estimacións directamente.';

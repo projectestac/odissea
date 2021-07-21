@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_quiz_results', language 'gl', version '3.8'.
+ * Strings for component 'block_quiz_results', language 'gl', version '3.11'.
  *
  * @package     block_quiz_results
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Resultados da proba';
 $string['privacy:metadata'] = 'O bloque de resultados da proba só amosa os datos almacenados noutros lugares.';
-$string['quiz_results:addinstance'] = 'Engadir un novo bloque de resultados de exame';
+$string['quiz_results:addinstance'] = 'Engadir un novo bloque de resultados de proba';

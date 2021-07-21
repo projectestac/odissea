@@ -258,6 +258,11 @@ class grade_item extends grade_object {
     public $dependson_cache = null;
 
     /**
+     * @var bool If we regrade this item should we mark it as overridden?
+     */
+    public $markasoverriddenwhengraded = true;
+
+    /**
      * Constructor. Optionally (and by default) attempts to fetch corresponding row from the database
      *
      * @param array $params An array with required parameters for this grade object.
@@ -413,6 +418,12 @@ class grade_item extends grade_object {
         $this->delete_all_grades($source);
         $success = parent::delete($source);
         $transaction->allow_commit();
+
+        if ($success) {
+            $event = \core\event\grade_item_deleted::create_from_grade_item($this);
+            $event->trigger();
+        }
+
         return $success;
     }
 
@@ -447,6 +458,41 @@ class grade_item extends grade_object {
         $transaction->allow_commit();
 
         return true;
+    }
+
+    /**
+     * Duplicate grade item.
+     *
+     * @return grade_item The duplicate grade item
+     */
+    public function duplicate() {
+        // Convert current object to array.
+        $copy = (array) $this;
+
+        if (empty($copy["id"])) {
+            throw new moodle_exception('invalidgradeitemid');
+        }
+
+        // Remove fields that will be either unique or automatically filled.
+        $removekeys = array();
+        $removekeys[] = 'id';
+        $removekeys[] = 'idnumber';
+        $removekeys[] = 'timecreated';
+        $removekeys[] = 'sortorder';
+        foreach ($removekeys as $key) {
+            unset($copy[$key]);
+        }
+
+        // Addendum to name.
+        $copy["itemname"] = get_string('duplicatedgradeitem', 'grades', $copy["itemname"]);
+
+        // Create new grade item.
+        $gradeitem = new grade_item($copy);
+
+        // Insert grade item into database.
+        $gradeitem->insert();
+
+        return $gradeitem;
     }
 
     /**
@@ -1454,7 +1500,7 @@ class grade_item extends grade_object {
             }
 
         } else {
-            return get_string('grade');
+            return get_string('gradenoun');
         }
     }
 
@@ -1617,7 +1663,7 @@ class grade_item extends grade_object {
             return $this->dependson_cache;
         }
 
-        if ($this->is_locked()) {
+        if ($this->is_locked() && !$this->is_category_item()) {
             // locked items do not need to be regraded
             $this->dependson_cache = array();
             return $this->dependson_cache;
@@ -1795,7 +1841,7 @@ class grade_item extends grade_object {
 
         // changed grade?
         if ($finalgrade !== false) {
-            if ($this->is_overridable_item()) {
+            if ($this->is_overridable_item() && $this->markasoverriddenwhengraded) {
                 $grade->overridden = time();
             }
 

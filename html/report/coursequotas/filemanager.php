@@ -83,20 +83,20 @@ if ($hash) {
 $filteroptions = get_all_filter_options($context);
 
 // Filtering.
-$filters = '<form>' . html_writer::label(get_string('filename', 'backup'), 'filename', false, ['class' => 'inline']) . ' ';
+$filters = '<form>' . html_writer::label(get_string('filename', 'backup'), 'filename', false, [REPORT_COURSEQUOTAS_CLASS_STRING => REPORT_COURSEQUOTAS_INLINE_STRING]) . ' ';
 $filters .= '<input type="text" id="filename" name="filename" value="' . $filename . '"><br>';
 
-$filters .= html_writer::label(get_string('owner', REPORT_COMPONENTNAME), 'userid', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::label(get_string(REPORT_COURSEQUOTAS_OWNER_STRING, REPORT_COMPONENTNAME), 'userid', false, [REPORT_COURSEQUOTAS_CLASS_STRING => REPORT_COURSEQUOTAS_INLINE_STRING]) . ' ';
 $filters .= html_writer::select($filteroptions->users, "userid", $userid, get_string("allusers", REPORT_COMPONENTNAME)) . '<br>';
 
-$filters .= html_writer::label(get_string('course'), 'context', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::label(get_string('course'), 'context', false, [REPORT_COURSEQUOTAS_CLASS_STRING => REPORT_COURSEQUOTAS_INLINE_STRING]) . ' ';
 $filters .= html_writer::select($filteroptions->contexts, "context", $context, get_string("allcourses", "search")) . ' ';
 $filters .= html_writer::checkbox("children", 1, $addchildren, get_string("addchildren", REPORT_COMPONENTNAME)) . '<br>';
 
-$filters .= html_writer::label(get_string('filearea', REPORT_COMPONENTNAME), 'filearea', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::label(get_string('filearea', REPORT_COMPONENTNAME), 'filearea', false, [REPORT_COURSEQUOTAS_CLASS_STRING => REPORT_COURSEQUOTAS_INLINE_STRING]) . ' ';
 $filters .= html_writer::select($filteroptions->fileareas, "filearea", $filearea, get_string("allfileareas", REPORT_COMPONENTNAME)) . ' ';
 
-$filters .= html_writer::label(get_string('component', REPORT_COMPONENTNAME), 'component', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::label(get_string('component', REPORT_COMPONENTNAME), 'component', false, [REPORT_COURSEQUOTAS_CLASS_STRING => REPORT_COURSEQUOTAS_INLINE_STRING]) . ' ';
 $filters .= html_writer::select($filteroptions->components, "component", $component, get_string("allcomponents", REPORT_COMPONENTNAME)) . ' ';
 $filters .= html_writer::checkbox("backups", 1, $showonlybackups, get_string("showonlybackups", REPORT_COMPONENTNAME)) . '<br>';
 
@@ -109,7 +109,7 @@ $sizeselect = [
     get_string('less_than', REPORT_COMPONENTNAME),
 ];
 
-$filters .= html_writer::label(get_string('size'), 'size', false, ['class' => 'inline']) . ' ';
+$filters .= html_writer::label(get_string('size'), 'size', false, [REPORT_COURSEQUOTAS_CLASS_STRING => REPORT_COURSEQUOTAS_INLINE_STRING]) . ' ';
 $filters .= html_writer::select($sizeselect, "sizeselect", $sizeselected, false);
 $filters .= ' <input type="number" id="size" name="size" value="' . $size . '"> MB<br />';
 $filters .= '<button type="submit" class="btn btn-success edit-btn"><i class="smallicon fa fa-search"></i>' . get_string('search') . '</button> <a href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php" class="btn btn-warning edit-btn"><i class="smallicon fa fa-undo"></i>' . get_string('reset') . '</a></form>';
@@ -153,7 +153,7 @@ if ($files->count) {
     $table->class = 'generaltable';
     $columns = [
         'filename' => get_string('filename', 'backup'),
-        'owner' => get_string('owner', REPORT_COMPONENTNAME),
+        REPORT_COURSEQUOTAS_OWNER_STRING => get_string(REPORT_COURSEQUOTAS_OWNER_STRING, REPORT_COMPONENTNAME),
         'context' => get_string('context', REPORT_COMPONENTNAME),
         'filearea' => get_string('filearea', REPORT_COMPONENTNAME),
         'component' => get_string('component', REPORT_COMPONENTNAME),
@@ -161,7 +161,7 @@ if ($files->count) {
     ];
 
     foreach ($columns as $column => $columnname) {
-        if ($column == 'owner' || $column == 'context') {
+        if ($column == REPORT_COURSEQUOTAS_OWNER_STRING || $column == 'context') {
             $table->head[] = $columnname;
         } else {
             if ($sort != $column) {
@@ -184,7 +184,7 @@ if ($files->count) {
         }
     }
 
-    $table->align = ['left', 'center', 'center', 'center', 'center', 'center'];
+    $table->align = ['left', REPORT_COURSEQUOTAS_CENTER_STRING, REPORT_COURSEQUOTAS_CENTER_STRING, REPORT_COURSEQUOTAS_CENTER_STRING, REPORT_COURSEQUOTAS_CENTER_STRING, REPORT_COURSEQUOTAS_CENTER_STRING];
     foreach ($files->files as $file) {
 
         if ($file->userid && !isset($ownernamecache[$file->userid])) {
@@ -227,10 +227,10 @@ if ($files->count) {
         $table->data[] = $row;
     }
 
-    echo $OUTPUT->box(get_string('showingfiles', REPORT_COMPONENTNAME, ['files' => count($files->files), 'total' => $files->count]), 'text-right');
-    echo $OUTPUT->box($pagingbar, 'text-right');
+    echo $OUTPUT->box(get_string('showingfiles', REPORT_COMPONENTNAME, ['files' => count($files->files), 'total' => $files->count]), REPORT_COURSEQUOTAS_TEXTRIGHT_STRING);
+    echo $OUTPUT->box($pagingbar, REPORT_COURSEQUOTAS_TEXTRIGHT_STRING);
     echo html_writer::table($table);
-    echo $OUTPUT->box($pagingbar, 'text-right');
+    echo $OUTPUT->box($pagingbar, REPORT_COURSEQUOTAS_TEXTRIGHT_STRING);
 
     echo '  
     <div id="fileModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="fileModalLabel" aria-hidden="true">
@@ -243,13 +243,13 @@ if ($files->count) {
               <div class="modal-body">
                 <span id="fileModal_fileid" class="hidden"></span>
                 <span id="fileModal_urlroot" class="hidden">' . $CFG->wwwroot . '</span>
-                <p><strong>' . get_string('owner', REPORT_COMPONENTNAME) . '</strong>: <span id="fileModal_owner"></span></p>
+                <p><strong>' . get_string(REPORT_COURSEQUOTAS_OWNER_STRING, REPORT_COMPONENTNAME) . '</strong>: <span id="fileModal_owner"></span></p>
                 <p><strong>' . get_string('context', REPORT_COMPONENTNAME) . '</strong>: <span id="fileModal_context"></span></p>
                 <p><strong>' . get_string('filearea', REPORT_COMPONENTNAME) . '</strong>: <span id="fileModal_filearea"></span></p>
                 <p><strong>' . get_string('component', REPORT_COMPONENTNAME) . '</strong>: <span id="fileModal_component"></span></p>
                 <p><strong>' . get_string('size') . '</strong>: <span id="fileModal_filesize"></span></p>
-                <p><strong>' . get_string('path', 'repository') . '</strong>: <span id="fileModal_filepath"></span></p>
-                <p><strong>' . get_string('type', 'repository') . '</strong>: <span id="fileModal_mimetype"></span></p>
+                <p><strong>' . get_string('path', REPORT_COURSEQUOTAS_REPOSITORY_STRING) . '</strong>: <span id="fileModal_filepath"></span></p>
+                <p><strong>' . get_string('type', REPORT_COURSEQUOTAS_REPOSITORY_STRING) . '</strong>: <span id="fileModal_mimetype"></span></p>
                 <p><strong>' . get_string('lastmodified') . '</strong>: <span id="fileModal_timemodified"></span></p>
                 <p><strong>Content hash</strong>: <span id="fileModal_contenthash"></span></p>
                 <p><strong>Path hash</strong>: <span id="fileModal_pathnamehash"></span></p>
@@ -270,7 +270,7 @@ if ($files->count) {
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               </div>
               <div class="modal-body">
-                <p>' . get_string('confirmdeletefile', 'repository') . '</p>
+                <p>' . get_string('confirmdeletefile', REPORT_COURSEQUOTAS_REPOSITORY_STRING) . '</p>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-success edit-btn" data-dismiss="modal" aria-hidden="true" onclick="filemanager_deleteFile_confirm()"><i class="fa fa-check" aria-hidden="true"></i>' . get_string('confirm') . '</button>

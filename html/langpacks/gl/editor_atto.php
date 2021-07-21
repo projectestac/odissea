@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'gl', version '3.8'.
+ * Strings for component 'editor_atto', language 'gl', version '3.11'.
  *
  * @package     editor_atto
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['autosavefailed'] = 'Non foi posíbel conectar co servidor. Se envía esta páxina agora, os seus cambios poden perderse.';
 $string['autosavefrequency'] = 'Frecuencia de gardado automático';
-$string['autosavefrequency_desc'] = 'Este é o número de segundos entre os intentos de gardar automaticamente. Atto gardará automaticamente o texto no editor de acordo con esta configuración, de xeito que o texto pode ser restaurado automaticamente cando o mesmo usuario volva ao mesmo formulario';
+$string['autosavefrequency_desc'] = 'Este é o número de segundos entre os intentos de gardar automaticamente. Atto gardará automaticamente o texto no editor de acordo con este axuste, de xeito que o texto pode ser restaurado automaticamente cando o mesmo usuario volva ao mesmo formulario';
 $string['autosaves'] = 'Información de gardado automático do editor';
 $string['autosavesucceeded'] = 'Versión preliminar gardada';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
@@ -49,8 +49,8 @@ $string['recover'] = 'Recuperar';
 $string['settings'] = 'Axustes da barra de ferramentas do Atto';
 $string['subplugintype_atto'] = 'Engadido Atto';
 $string['subplugintype_atto_plural'] = 'Engadidos Atto';
-$string['taskautosavecleanup'] = 'Eliminar as versións preliminares gardados automaticamente xa caducadas da base de datos.';
+$string['taskautosavecleanup'] = 'Elimina as versións preliminares caducadas gardadas automaticamente';
 $string['textrecovered'] = 'A versión preliminar deste texto foi restaurada automaticamente.';
 $string['toolbarconfig'] = 'Configuración da barra de tarefas';
 $string['toolbarconfig_desc'] = 'A lista de engadidos e a orde na que se amosan pode configurarse aquí. A configuración consiste en grupos (un por liña) seguidos da lista ordenada de engadidos para ese grupo. O grupo está separado dos engadidos cun signo igual e os engadidos están separados por comas. Os nomes dos grupos deben ser únicos e deben indicar o que teñen en común os botóns. Os nomes dos botóns e os grupos non deben repetirse e só poden conter caracteres alfanuméricos.';
-$string['warningstatus'] = 'Aviso';
+$string['warningstatus'] = 'Advertencia';

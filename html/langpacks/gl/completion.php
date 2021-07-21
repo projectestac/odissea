@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'gl', version '3.8'.
+ * Strings for component 'completion', language 'gl', version '3.11'.
  *
  * @package     completion
  * @category    string
@@ -31,7 +31,7 @@ $string['activitiescompleted'] = 'Completado da actividade';
 $string['activitiescompletednote'] = 'Nota: O completado da actividade debe configurarse para que na lista de enriba apareza unha actividade.';
 $string['activitieslabel'] = 'Actividades / recursos';
 $string['activityaggregation'] = 'Condición requirida';
-$string['activityaggregation_all'] = 'TODAS as actividades seleccionadas para seren completadas';
+$string['activityaggregation_all'] = 'TODAS as actividades seleccionadas para ser completadas';
 $string['activityaggregation_any'] = 'CALQUERA actividade seleccionada para ser completada';
 $string['activitycompletion'] = 'Completado da actividade';
 $string['activitycompletionupdated'] = 'Cambios gardados';
@@ -115,14 +115,14 @@ $string['completionusegrade_help'] = 'Se está activada, a actividade consideras
 $string['completionview'] = 'Requirir ver';
 $string['completionview_desc'] = 'O alumno debe ver esta actividade para completala';
 $string['configcompletiondefault'] = 'Os axustes predeterminados para o seguimento do completado cando se crean actividades novas.';
-$string['configenablecompletion'] = 'Cando se activa, volvese ás características de seguimento (progreso) do grao de completado no nivel do curso.';
+$string['configenablecompletion'] = 'Se está activado, pódense estabelecer condicións de completado de actividades e cursos. Recoméndase configurar as condicións de completado da actividade para que se amosen datos significativos para os usuarios na súa vista xeral do curso no Taboleiro.';
 $string['confirmselfcompletion'] = 'Confirmar o completado propio';
 $string['courseaggregation'] = 'Condición requirida';
-$string['courseaggregation_all'] = 'TODOS os cursos seleccionados para seren completados';
+$string['courseaggregation_all'] = 'TODOS os cursos seleccionados para ser completados';
 $string['courseaggregation_any'] = 'CALQUERA curso seleccionado para ser completado';
 $string['coursealreadycompleted'] = 'Vostede xa completou este curso';
 $string['coursecomplete'] = 'Completado do curso';
-$string['coursecompleted'] = 'Curso completado';
+$string['coursecompleted'] = 'Curso concluído';
 $string['coursecompletion'] = 'Completado de cursos';
 $string['coursecompletioncondition'] = 'Condición: {$a}';
 $string['coursegrade'] = 'Cualificación do curso';
@@ -143,17 +143,17 @@ $string['dependencies'] = 'Dependencias';
 $string['dependenciescompleted'] = 'Grao de completado doutros cursos';
 $string['editcoursecompletionsettings'] = 'Editar os axustes de completado do curso';
 $string['enablecompletion'] = 'Activar o seguimento do progreso (para o completado)';
-$string['enablecompletion_help'] = 'Se se activa, poden estabelecerse as condicións de completado da actividade e/ou as condicións de completado do curso. Recomendase ter isto activado para que se amosen datos significativos no taboleiro da vista xeral do curso.';
+$string['enablecompletion_help'] = 'Se se activa, poden estabelecerse as condicións de completado da actividade e/ou as condicións de completado do curso. Recomendase ter isto activado para que se amosen datos significativos na vista xeral do curso no Taboleiro.';
 $string['enrolmentduration'] = 'Duración da matriculación';
 $string['enrolmentdurationlength'] = 'O usuario debe permanecer matriculado para';
-$string['err_noactivities'] = 'No está activada a información sobre o completado de ningunha actividade, polo que non é posíbel presentar ningunha. Pode activar a información sobre o completado dunha actividade editando a súa configuración.';
-$string['err_nocourses'] = 'O completado de curso non está activado para ningún outro curso, polo que non é posíbel presentar ningún. Pode activar o completado de cursos mediante a configuración do curso.';
+$string['err_noactivities'] = 'No está activada a información sobre o completado de ningunha actividade, polo que non é posíbel presentar ningunha. Pode activar a información sobre o completado dunha actividade editando os seus axustes.';
+$string['err_nocourses'] = 'O completado de curso non está activado para ningún outro curso, polo que non é posíbel presentar ningún. Pode activar o completado de cursos mediante os axustes do curso.';
 $string['err_nograde'] = 'Neste curso non se estabeleceu unha cualificación de aprobado. Para activar este tipo de criterio, debe crear unha cualificación de aprobado.';
 $string['err_noroles'] = 'Non hai roles coas funcionalidades «moodle/course:markcomplete» neste curso.';
-$string['err_nousers'] = 'Non hai alumnos nin grupos neste curso aos que presentar a información sobre completado. (De xeito predeterminado, a información sobre completado presentase só aos alumnos, polo que se non hai alumnos verá este erro. Os administradores poden modificar esta opción mediante as pantallas de administración)';
-$string['err_settingslocked'] = 'Un ou máis alumnos xa teñen completado un criterio, polo que a configuración foi bloqueada. Desbloquear a configuración dos criterios de completado eliminará calquera dato de usuario o que podería causar confusión.';
+$string['err_nousers'] = 'Non hai alumnos neste curso ou grupo para os que se amose información sobre completado. (A información de completado amosase só para os usuarios coa funcionalidade «Amosarse en informes de completado». A funcionalidade está permitida só para o rol predeterminado do alumno, polo que se non hai alumnos, verá esta mensaxe.)';
+$string['err_settingslocked'] = 'Un ou máis alumnos xa teñen completado un criterio, polo que os axustes foron bloqueados. Desbloquear os axustes dos criterios de completado eliminará calquera dato de usuario o que podería causar confusión.';
 $string['err_system'] = 'Produciuse un erro interno no sistema de completado. (Os administradores do sistema poden activar a información de depuración para ver máis detalles.)';
-$string['eventcoursecompleted'] = 'Curso completado';
+$string['eventcoursecompleted'] = 'Curso concluído';
 $string['eventcoursecompletionupdated'] = 'Actualizado o curso completado';
 $string['eventcoursemodulecompletionupdated'] = 'Completado de actividade de curso actualizado';
 $string['eventdefaultcompletionupdated'] = 'Valor predeterminado para completado de actividade de curso actualizado';
@@ -174,7 +174,7 @@ $string['markingyourselfcomplete'] = 'Marcado como completado por vostede';
 $string['modifybulkactions'] = 'Modifique as accións que quere editar de xeito masivo';
 $string['moredetails'] = 'Máis detalles';
 $string['nocriteriaset'] = 'Non hai criterios estabelecidos para o completado deste curso';
-$string['nogradeitem'] = 'Non se pode activar o requisito de cualificación para <b>{$a}</b> porque a actividade non está cualificada.';
+$string['nogradeitem'] = 'Non é posíbel activar a cualificación obrigatoria para <b>{$a}</b> por mor de que a actividade non está cualificada.';
 $string['notcompleted'] = 'Sen completar';
 $string['notenroled'] = 'Vostede non está matriculado neste curso';
 $string['nottracked'] = 'Vostede, actualmente, non está a ser supervisado sobre o seu grao de avance neste curso';
@@ -183,7 +183,7 @@ $string['overallaggregation'] = 'Requisitos do completado';
 $string['overallaggregation_all'] = 'O curso está completo cando se cumpren TODAS as condicións';
 $string['overallaggregation_any'] = 'O curso está completo cando se cumpre CALQUERA das condicións';
 $string['pending'] = 'Pendente';
-$string['periodpostenrolment'] = 'Período despois da matriculación';
+$string['periodpostenrolment'] = 'Período após a matriculación';
 $string['privacy:metadata:completionstate'] = 'Se a actividade foi completada';
 $string['privacy:metadata:course'] = 'Un identificador do curso';
 $string['privacy:metadata:coursecompletedsummary'] = 'Almacena información sobre usuarios que teñen criterios completados nun curso';

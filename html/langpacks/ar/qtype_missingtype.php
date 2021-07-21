@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_missingtype', language 'ar', version '3.8'.
+ * Strings for component 'qtype_missingtype', language 'ar', version '3.11'.
  *
  * @package     qtype_missingtype
  * @category    string
@@ -26,14 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerno'] = 'الجواب {$a}';
-$string['cannotchangeamissingqtype'] = 'لا يمكنك إجراء أيّ تغيير على السؤال من نوع البحث عن المفقود.';
+$string['cannotchangeamissingqtype'] = 'لا يمكنك إجراء أيّ تغييرات على سؤال مفقود النوع.';
 $string['deletedquestion'] = 'سؤال مفقود';
-$string['deletedquestiontext'] = 'هذا السؤال هو البحث عن المفقود. غير قادر على عرض أيّ شيء.';
+$string['deletedquestiontext'] = 'هذا السؤال مفقود. لا يمكن عرض أيّ شيء.';
 $string['missing'] = 'السؤال من النوع الذي لم يتم تثبيته على هذا النظام';
-$string['missingqtypewarning'] = 'هذا النوع لم يتم تثبيته حالياً على هذا النظام. أنت لن تكون قادراً على فعل أيّ شيء مع هذه المسألة.';
-$string['pluginname'] = 'البحث عن المفقود';
-$string['pluginnameadding'] = 'إضافة سؤال من نوع غير مثبت على هذا النظام';
+$string['missingqtypewarning'] = 'هذا النوع من الأسئلة ليس منصباً حالياً في هذا النظام. لن تكون قادراً على فعل أيّ شيء مع هذا السؤال.';
+$string['pluginname'] = 'نوع مفقود';
+$string['pluginnameadding'] = 'إضافة سؤال من نوع غير منصب على هذا النظام';
 $string['pluginnameediting'] = 'تحرير سؤال من نوع لم يتم تثبيته على هذا النظام';
-$string['privacy:metadata'] = 'لا يخزن المكون الإضافي اSelect missing words question type أي بيانات شخصية.';
-$string['warningmissingtype'] = 'هذا السؤال لم يتم تثبيته في مودل الخاص بك حتى الآن.
-يرجى تنبيه مسؤول مودل الخاص بك.';
+$string['privacy:metadata'] = 'إن ملحق نوع السؤال، إختيار الكلمة المفقودة لا يخزن أي بيانات شخصية.';
+$string['warningmissingtype'] = '<b>هذا السؤال لم يتم تثبيته في مودل الخاص بك حتى الآن.<br />يرجى تنبيه مسؤول مودل الخاص بك.</b>';

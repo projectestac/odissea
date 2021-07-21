@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'sv', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'sv', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -35,7 +35,7 @@ $string['feedbackupdate'] = 'Sätt fält "{$a->field}" för "{$a->student}" till
 $string['gradelockedingradebook'] = 'Betyget har låsts i betygskatalogen för {$a}';
 $string['graderecentlymodified'] = 'Betyget har ändrats i Moodle mer nyligen än i arbetsbladet för betygsättning för {$a}';
 $string['gradesfile'] = 'Arbetsblad för betygsättning (csv-format)';
-$string['gradesfile_help'] = 'Arbetsblad för betygsättning med ändrade betyg. Den här filen måste vara en csv-fil som laddats ned från den här uppgiften och måste innehålla kolumner för elevbetyg samt identifierare. Teckenkodningen för filen måste vara "UTF-8"';
+$string['gradesfile_help'] = 'Arbetsblad för betygsättning med ändrade betyg. Den här filen måste vara en CDV-fil som laddats ned från den här uppgiften och måste innehålla kolumner för elevbetyg samt identifierare. Teckenkodningen för filen måste vara UTF-8.';
 $string['gradeupdate'] = 'Sätt betyg för {$a->student} till {$a->grade}';
 $string['ignoremodified'] = 'Tillåt uppdatering av poster som ändrats senare i Moodle än i kalkylbladet.';
 $string['ignoremodified_help'] = 'När arbetsbladet för betygsättning laddas ned från Moodle så innehåller den senast modifierat-datum för varje betyg. Om någon av betygen uppdaterats i Moodle mer nyligen än arbetsbladet laddats ned så kommer Moodle, som standard, att vägra skriva över den uppdaterade informationen när betygen importeras. Genom att välja den här optionen så kommer Moodle inaktivera säkerhetskontrollen, något som skulle kunna innebära att multipla betygsättare skriver över varandras betyg.';
@@ -47,6 +47,6 @@ $string['pluginname'] = 'Arbetsblad för betygsättning offline';
 $string['privacy:nullproviderreason'] = 'Denna pluginmodul har ingen databas i vilken personinformation sparas. Den använder enbart API:er i mod_assign som stöd för visningen av bedömningsgränssnittet.';
 $string['processgrades'] = 'Importera betyg';
 $string['skiprecord'] = 'Hoppa över post';
-$string['updatedgrades'] = 'Uppdaterade {$a} betyg och återkoppling';
+$string['updatedgrades'] = 'Uppdaterade <strong>{$a->gradeupdatescount}</strong> betyg och <strong>{$a->feedbackupdatescount}</strong> återkopplingsinstanser.';
 $string['updaterecord'] = 'Uppdatera post';
 $string['uploadgrades'] = 'Ladda upp arbetsblad för betygsättning';

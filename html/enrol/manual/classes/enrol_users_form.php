@@ -93,7 +93,7 @@ class enrol_manual_enrol_users_form extends moodleform {
             'courseid' => $course->id,
             'enrolid' => $instance->id,
             'perpage' => $CFG->maxusersperpage,
-            'userfields' => implode(',', get_extra_user_fields($context))
+            'userfields' => implode(',', \core_user\fields::get_identity_fields($context, true))
         );
         $mform->addElement('autocomplete', 'userlist', get_string('selectusers', 'enrol_manual'), array(), $options);
 
@@ -116,7 +116,7 @@ class enrol_manual_enrol_users_form extends moodleform {
             }
         }
 
-        $roles = get_assignable_roles($context);
+        $roles = get_assignable_roles($context, ROLENAME_BOTH);
         $mform->addElement('select', 'roletoassign', get_string('assignrole', 'enrol_manual'), $roles);
         $mform->setDefault('roletoassign', $instance->roleid);
 

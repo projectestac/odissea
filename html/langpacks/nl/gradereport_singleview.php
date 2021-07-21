@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'nl', version '3.8'.
+ * Strings for component 'gradereport_singleview', language 'nl', version '3.11'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -52,6 +52,7 @@ $string['override'] = 'Overschrijf';
 $string['overrideall'] = 'Overschrijf alle cijfers';
 $string['overridefor'] = 'Overschrijf voor {$a}';
 $string['overridenone'] = 'Overschrijf geen cijfers';
+$string['overridenoneconfirm'] = 'Je probeert alle cijferoverschrijvingen uit te schakelen. Na het bewaren zullen alle voorheen overschreven cijfers verloren gaan. Wil je verder gaan?';
 $string['pluginname'] = 'Enkelvoudig scherm';
 $string['privacy:metadata'] = 'Het rapport cijfer (enkele weergave)  toont alleen gegevens die op andere locaties zijn opgeslagen.';
 $string['save'] = 'Bewaar';

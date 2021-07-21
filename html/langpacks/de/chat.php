@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'de', version '3.8'.
+ * Strings for component 'chat', language 'de', version '3.11'.
  *
  * @package     chat
  * @category    string
@@ -62,7 +62,7 @@ $string['deletesession'] = 'Diese Sitzung löschen';
 $string['deletesessionsure'] = 'Möchten Sie diese Sitzung wirklich löschen?';
 $string['donotusechattime'] = 'Keinen Termin anzeigen';
 $string['enterchat'] = 'Chat betreten';
-$string['entermessage'] = 'Schreiben Sie Ihre Mitteilung';
+$string['entermessage'] = 'Mitteilung schreiben';
 $string['errornousers'] = 'Niemanden gefunden!';
 $string['eventmessagesent'] = 'Mitteilung  gesendet';
 $string['eventsessionsviewed'] = 'Sitzungen angezeigt';
@@ -84,12 +84,12 @@ $string['invalidid'] = 'Chat-Raum wurde nicht gefunden!';
 $string['list_all_sessions'] = 'Alle Sitzungen auflisten';
 $string['list_complete_sessions'] = 'Beendete Sitzungen auflisten';
 $string['listing_all_sessions'] = 'Alle Sitzungen werden aufgelistet';
-$string['messagebeepseveryone'] = '{$a} piepst jeden an!';
-$string['messagebeepsyou'] = '{$a} hat Sie angepiepst!';
+$string['messagebeepseveryone'] = '{$a} piept alle an!';
+$string['messagebeepsyou'] = '{$a} hat Sie angepiept!';
 $string['messageenter'] = '{$a} hat den Chat betreten';
 $string['messageexit'] = '{$a} hat den Chat verlassen';
 $string['messages'] = 'Mitteilungen';
-$string['messageyoubeep'] = 'Sie haben {$a} angepiepst';
+$string['messageyoubeep'] = 'Sie haben {$a} angepiept';
 $string['method'] = 'Chat-Methode';
 $string['methodajax'] = 'AJAX';
 $string['methoddaemon'] = 'Chat-Server-Daemon';
@@ -99,9 +99,19 @@ $string['modulename_help'] = 'Die Chat-Aktivität ermöglicht eine textbasierte 
 
 Der Chat in Moodle ist für den Einsatz mit kleinen Gruppen konzipiert. Bei großen Gruppen entsteht eine hohe Belastung auf den Webservern.
 
-Ein Chat kann eine einmalige Aktivität sein, aber auch täglich oder wöchentlich nach Terminabsprache wiederholt werden. Chat-Sitzungen können gespeichert und veröffentlicht werden.';
+Ein Chat kann eine einmalige Aktivität sein, aber auch täglich oder wöchentlich nach Terminabsprache wiederholt werden. Chat-Sitzungen können gespeichert und veröffentlicht werden.
+
+Chats sind besonders nützlich, wenn die Gruppe sich nicht persönlich treffen kann, wie z.B.
+
+* Regelmäßige Treffen von Teilnehmer/innen, die an Online-Kursen teilnehmen, damit sie Erfahrungen mit anderen im selben Kurs, aber an einem anderen Ort austauschen können
+* Ein/e Teilnehmer/in, der vorübergehend nicht persönlich teilnehmen kann, um mit ihrem/seinen Trainer/in zu chatten und seine Arbeit nachzuholen
+* Teilnehmer/innen, die ein Praktikum machen, treffen sich, um ihre Erfahrungen miteinander und mit ihrer/m Trainer/in zu diskutieren
+* Jüngere Kinder nutzen den Chat zu Hause am Abend als kontrollierte (überwachte) Einführung in die Welt der sozialen Netzwerke
+* Eine Frage- und Antwortsitzung mit einem eingeladenen Redner an einem anderen Ort
+* Sitzungen zur Unterstützung der Teilnehmer/innen bei der Vorbereitung auf Tests, bei denen die/der Trainer/in oder andere Teilnehmer/innen Beispielfragen stellen würden';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Nie löschen';
+$string['nextchattime'] = 'Nächster Chat:';
 $string['nextsession'] = 'Nächste Sitzung';
 $string['no_complete_sessions_found'] = 'Keine beendete Sitzung gefunden';
 $string['nochat'] = 'Kein Chat gefunden';
@@ -141,7 +151,7 @@ $string['repeattimes'] = 'Chat-Termine veröffentlichen';
 $string['repeatweekly'] = 'Wöchentlich zur gleichen Zeit';
 $string['saidto'] = 'sagte zu';
 $string['savemessages'] = 'Sitzungen speichern';
-$string['search:activity'] = 'Chat - Beschreibung';
+$string['search:activity'] = 'Chat - Aktivitätsinfo';
 $string['seesession'] = 'Sitzung ansehen';
 $string['send'] = 'Senden';
 $string['sending'] = 'wird gesendet';
@@ -150,7 +160,8 @@ $string['serverip'] = 'Server-IP';
 $string['servermax'] = 'Maximale Nutzerzahl';
 $string['serverport'] = 'Server-Port';
 $string['sessions'] = 'Chat-Sitzungen';
-$string['sessionstart'] = 'Nächster Chat beginnt {$a->date}, (also in {$a->fromnow})';
+$string['sessionstart'] = 'Der nächste Chat beginnt {$a->date}, (also in {$a->fromnow})';
+$string['sessionstartsin'] = 'Der nächste Chat beginnt in {$a}.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Chat-Protokolle sichtbar für alle';
 $string['studentseereports_help'] = 'Mit der Einstellung \'Nein\' dürfen ausschließlich Nutzer/innen mit dem Recht \'mod/chat:readlog\' die Chat-Protokolle sehen.';

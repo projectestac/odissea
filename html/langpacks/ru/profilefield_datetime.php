@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_datetime', language 'ru', version '3.8'.
+ * Strings for component 'profilefield_datetime', language 'ru', version '3.11'.
  *
  * @package     profilefield_datetime
  * @category    string
@@ -30,7 +30,10 @@ $string['defaultdate'] = 'Дата по умолчанию';
 $string['endyear'] = 'Наибольший год';
 $string['notset'] = 'Не установлено';
 $string['pluginname'] = 'Дата/время';
+$string['privacy:metadata:profilefield_datetime:data'] = 'Пользовательские данные поля «Дата и время» профиля пользователя';
+$string['privacy:metadata:profilefield_datetime:dataformat'] = 'Формат пользовательских данных поля «Дата и время» профиля пользователя';
 $string['privacy:metadata:profilefield_datetime:fieldid'] = 'ID поля профиля';
+$string['privacy:metadata:profilefield_datetime:tableexplanation'] = 'Дополнительные данные профиля';
 $string['privacy:metadata:profilefield_datetime:userid'] = 'ID пользователя, данные которого хранятся в поле «Дата/время» профиля пользователя';
 $string['specifydatedefault'] = 'или укажите дату';
 $string['startyear'] = 'Наименьший год';

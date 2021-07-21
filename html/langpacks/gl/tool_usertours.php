@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'gl', version '3.8'.
+ * Strings for component 'tool_usertours', language 'gl', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -87,6 +87,7 @@ $string['name'] = 'Nome';
 $string['newstep'] = 'Novo paso';
 $string['newtour'] = 'Crea unha nova visita guiada';
 $string['next'] = 'Seguinte';
+$string['nextstep'] = 'Seguinte';
 $string['options_heading'] = 'Opcións';
 $string['orphan'] = 'Amosar se non se atopou o destino';
 $string['orphan_help'] = 'Amosar o paso se non se atopou o destino na páxina.';
@@ -108,6 +109,7 @@ $string['placement_help'] = 'Un paso pódese situar arriba, abaixo, á esquerda 
 
 Se o paso non colle nunha páxina determinada no lugar especificado, colocarase automaticamente noutro lugar.';
 $string['pluginname'] = 'Visitas guiadas de usuario';
+$string['previousstep'] = 'Anterior';
 $string['privacy:metadata:preference:completed'] = 'Data e hora na que un usuario completou por última vez unha visita de usuario.';
 $string['privacy:metadata:preference:requested'] = 'Data e hora na que un usuario solicitou manualmente unha visita de usuario manualmente.';
 $string['privacy:request:preference:completed'] = 'Vostede marcou por última vez a visita guiada de «{$a->name}» como rematada o {$a->time}';
@@ -169,6 +171,9 @@ $string['tour2_title_opendrawer'] = 'Abre o caixón de navegación';
 $string['tour2_title_participants'] = 'Participantes no curso';
 $string['tour2_title_welcome'] = 'Benvido/a';
 $string['tour3_content_dashboard'] = 'O seu novo panel de traballo ten moitas funcións para axudarlle a acceder facilmente á información máis importante para vostede.';
+$string['tour3_content_displayoptions'] = 'Os cursos pódense ordenar polo nome do curso ou pola última data de acceso.
+
+Tamén pode optar por amosar os cursos nunha lista, ou con información resumida, ou a vista predeterminada da «tarxeta».';
 $string['tour3_content_overview'] = 'O bloque de vista xeral do curso amosa todos os cursos nos que esta inscrito.
 
 Pode escoller amosar os cursos que están actualmente en proceso, estiveron no pasado ou estarán no futuro, ou os cursos que destacou.';

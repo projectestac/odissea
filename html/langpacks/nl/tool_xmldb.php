@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'nl', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'nl', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -114,6 +114,7 @@ $string['edit_xml_file'] = 'Bewerk XML-bestand';
 $string['enumvaluesincorrect'] = 'Foute waarden voor enum veld';
 $string['expected'] = 'Verwacht';
 $string['extensionrequired'] = 'Sorry - the PHP-extentie \'{$a}\' is vereist voor deze actie. Installeer de extentie als je deze functie wil gebruiken.';
+$string['extraindexesfound'] = 'Extra indexen gevonden';
 $string['field'] = 'Veld';
 $string['fieldnameempty'] = 'Naam veld leeg';
 $string['fields'] = 'Velden';
@@ -159,7 +160,7 @@ $string['newtable'] = 'Nieuwe tabel';
 $string['newtablefrommysql'] = 'Nieuwe tabel van MySQL';
 $string['nofieldsspecified'] = 'Geen velden opgegeven';
 $string['nomasterprimaryuniquefound'] = 'De kolom(men) waarnaar jouw foreign key refereert moet inbegrepen zijn in een primary key of een unique key in de gerefereerde tabel. Merk op: het is niet goed genoeg als de kolom in een UNIQUE INDEX is.';
-$string['nomissingindexesfound'] = 'Er zijn geen ontbrekende indexen gevonden, er moet niets aan je databank gewijzigd worden.';
+$string['nomissingorextraindexesfound'] = 'Er zijn geen ontbrekende of extra indexen gevonden. Er zijn geen verdere acties nodig.';
 $string['noreffieldsspecified'] = 'Geen referentievelden opgegeven';
 $string['noreftablespecified'] = 'Opgegeven referentietabel niet gevonden';
 $string['noviolatedforeignkeysfound'] = 'Geen foute foreign keys gevonden';
@@ -218,6 +219,7 @@ $string['wronglengthforenum'] = 'Lengte van enum veld fout';
 $string['wrongnumberofreffields'] = 'Fout aantal referentievelden';
 $string['wrongoraclesemantics'] = 'Verkeerde Oracle BYTE semantiek gevonden';
 $string['wrongreservedwords'] = 'Gebruikte gereserveerde woorden<br />(merk op dat tabelnamen niet belangrijk zijn als je *CFG->prefix gebruikt)';
+$string['yesextraindexesfound'] = 'De volgende aanvullende indexen zijn gevonden.';
 $string['yesmissingindexesfound'] = '<p>Er zijn ontbrekende indexen gevonden in je databank. Hier vind je de details en de nodige SQL-statements om uit te voeren in je favoriete SQL interface om de indexen aan te maken.</p><p>Nadat je dit gedaan hebt, is het ten zeerste aangeraden deze functie nogmaals te laten lopen om te controleren of er niet meer ontbrekende indexen gevonden kunnen worden.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Er zijn inconsistenties gevonden in je databank. Hier zijn de juiste standaardwaarden en de nodige SQL-expressies om uit te voeren in je favoriete SQL-interface om ze allemaal te herstellen (vergeet niet je databank te back-uppen voor je dat doet).</p><p>
 Daarna is het ten zeerste aangeraden om dit script nogmaals te laten lopen om te zoeken naar meer inconsistenties.<p>';

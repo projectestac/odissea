@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'gl', version '3.8'.
+ * Strings for component 'competency', language 'gl', version '3.11'.
  *
  * @package     competency
  * @category    string
@@ -50,8 +50,8 @@ $string['errorcoursecompetencyrule'] = 'A regra da competencia do curso «{$a}»
 $string['errorinvalidcourse'] = 'Curso incorrecto.';
 $string['errornocompetency'] = 'Non existe a competencia {$a}';
 $string['errorplanstatus'] = 'O estado do plan de aprendizaxe «{$a}» é descoñecido';
-$string['errorscalealreadyused'] = 'Non se pode cambiar a escala xa que está a ser usada.';
-$string['errorscaleconfiguration'] = 'A escala ten que ser configurada seleccionando elementos predeterminados e competentes.';
+$string['errorscalealreadyused'] = 'Non é posíbel cambiar a escala xa que está a ser usada.';
+$string['errorscaleconfiguration'] = 'A escala ten que ser configurada seleccionando elementos predeterminados e capaces.';
 $string['errorusercomptencystatus'] = 'O estado da competencia do usuario «{$a}» é descoñecida';
 $string['eventcompetencycreated'] = 'Creada a competencia.';
 $string['eventcompetencydeleted'] = 'Eliminada a competencia.';
@@ -122,7 +122,7 @@ $string['privacy:metadata:competency'] = 'Un rexistro das competencias';
 $string['privacy:metadata:competency_coursecomp'] = 'Un rexistro das competencias enlazadas a un curso';
 $string['privacy:metadata:competency_coursecompsetting'] = 'Un rexistro dos axustes das competencias nun curso';
 $string['privacy:metadata:competency_evidence'] = 'Un rexistro da evidencia que afecta ao estado dunha competencia';
-$string['privacy:metadata:competency_framework'] = 'Un rexistro dos marcos de competencia';
+$string['privacy:metadata:competency_framework'] = 'Un rexistro dos marcos de competencias';
 $string['privacy:metadata:competency_modulecomp'] = 'Un rexistro das competencias enlazadas a un módulo';
 $string['privacy:metadata:competency_plan'] = 'Un rexistro dos plans de aprendizaxe';
 $string['privacy:metadata:competency_plancomp'] = 'Un rexistro das competencias nun plan de aprendizaxe';
@@ -153,7 +153,7 @@ $string['privacy:metadata:plan:userid'] = 'O ID do usuario de quen é o plan de 
 $string['privacy:metadata:timecreated'] = 'A data na que se creou o rexistro';
 $string['privacy:metadata:timemodified'] = 'A data na que se editou o rexistro';
 $string['privacy:metadata:usercomp:grade'] = 'A cualificación dada pola competencia';
-$string['privacy:metadata:usercomp:proficiency'] = 'Se se logra a aptitude';
+$string['privacy:metadata:usercomp:proficiency'] = 'Se se logra a pericia';
 $string['privacy:metadata:usercomp:reviewerid'] = 'O ID do revisor';
 $string['privacy:metadata:usercomp:status'] = 'O estado da competencia';
 $string['privacy:metadata:usercomp:userid'] = 'O ID do usuario de quen é esta competencia';
@@ -175,27 +175,27 @@ $string['taxonomy_indicator'] = 'Indicador';
 $string['taxonomy_level'] = 'Nivel';
 $string['taxonomy_outcome'] = 'Resultado';
 $string['taxonomy_practice'] = 'Práctica';
-$string['taxonomy_proficiency'] = 'Aptitude';
+$string['taxonomy_proficiency'] = 'Pericia';
 $string['taxonomy_skill'] = 'Habilidade';
 $string['taxonomy_value'] = 'Valor';
-$string['usercommentedonacompetency'] = '{$a->fullname} comentou na competencia "{$a->competency}":
+$string['usercommentedonacompetency'] = '{$a->fullname} comentou na competencia «{$a->competency}»:
 
 {$a->comment}
 
-See: {$a->url}';
-$string['usercommentedonacompetencyhtml'] = '<p>{$a->fullname} comentou na competencia "{$a->competency}":</p>
+Vexa: {$a->url}';
+$string['usercommentedonacompetencyhtml'] = '<p>{$a->fullname} comentou na competencia «{$a->competency}»:</p>
 <div>{$a->comment}</div>
-<p>Ver: <a href="{$a->url}">{$a->urlname}</a>.</p>';
+<p>Vexa: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonacompetencysmall'] = '{$a->fullname} comentou na competencia «{$a->competency}».';
 $string['usercommentedonacompetencysubject'] = '{$a} comentou nunha competencia.';
-$string['usercommentedonaplan'] = '{$a->fullname} comentou no plan de aprendizaxe "{$a->plan}":
+$string['usercommentedonaplan'] = '{$a->fullname} comentou no plan de aprendizaxe «{$a->plan}»:
 
 {$a->comment}
 
-Ver: {$a->url}';
-$string['usercommentedonaplanhtml'] = '<p>{$a->fullname} comentou no plan de aprendizaxe "{$a->plan}":</p>
+Vexa: {$a->url}';
+$string['usercommentedonaplanhtml'] = '<p>{$a->fullname} comentou no plan de aprendizaxe «{$a->plan}»:</p>
 <div>{$a->comment}</div>
-<p>Ver: <a href="{$a->url}">{$a->urlname}</a>.</p>';
+<p>Vexa: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = '{$a->fullname} comentou no plan de aprendizaxe «{$a->plan}».';
 $string['usercommentedonaplansubject'] = '{$a} comentou un plan de aprendizaxe.';
 $string['usercompetencystatus_idle'] = 'Inactivo';

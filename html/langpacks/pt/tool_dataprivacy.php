@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'pt', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'pt', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -31,7 +31,12 @@ $string['addnewdefaults'] = 'Adicionar uma nova predefinição de módulo';
 $string['addpurpose'] = 'Adicionar finalidade';
 $string['addroleoverride'] = 'Adicionar exceção de papel';
 $string['approve'] = 'Aprovar';
+$string['approvedrequestsubmitted'] = 'O seu pedido foi enviado e será processado em breve.';
 $string['approverequest'] = 'Aprovar pedido';
+$string['automaticdatadeletionapproval'] = 'Aprovação automática das solicitações de eliminação de dados';
+$string['automaticdatadeletionapproval_desc'] = 'Se ativar esta opção, as solicitações de eliminação de dados são aprovadas automaticamente.<br/>Tenha em atenção que a aprovação automática será aplicada apenas às novas solicitações de eliminação de dados com esta configuração ativada. As solicitações de eliminação de dados existentes com aprovação pendente ainda terão que ser aprovadas manualmente pelo responsável pela privacidade.';
+$string['automaticdataexportapproval'] = 'Aprovação automática das solicitações de exportação de dados';
+$string['automaticdataexportapproval_desc'] = 'Se ativar esta opção, as solicitações de exportação de dados são aprovadas automaticamente.<br/>Tenha em atenção que a aprovação automática será aplicada apenas às novas solicitações de exportação de dados com esta configuração ativada. As solicitações de exportação de dados existentes com aprovação pendente ainda terão que ser aprovadas manualmente pelo responsável pela privacidade.';
 $string['automaticdeletionrequests'] = 'Criar solicitações automáticas de eliminação de dados';
 $string['automaticdeletionrequests_desc'] = 'Se ativar esta opção, uma solicitação de eliminação de dados será criada automaticamente sempre que uma conta de utilizador for apagada manualmente.';
 $string['bulkapproverequests'] = 'Aprovar pedidos';
@@ -139,6 +144,7 @@ $string['effectiveretentionperioduser'] = '{$a} (Desde a última vez que o utili
 $string['emailsalutation'] = 'Caro/a {$a},';
 $string['errorcannotrequestdeleteforother'] = 'Não tem permissão para criar uma solicitação de eliminação de dados para este utilizador.';
 $string['errorcannotrequestdeleteforself'] = 'Não tem permissão para criar uma solicitação de eliminação dos seus dados.';
+$string['errorcontactdpodisabled'] = 'O contacto com o responsável pela privacidade está desativado.';
 $string['errorcontexthasunexpiredchildren'] = 'O contexto "{$a}" ainda tem subcontextos que ainda não expiraram. Nenhum contexto foi assinalado para apagamento.';
 $string['errorinvalidrequestcomments'] = 'O campo de comentário apenas pode conter texto simples.';
 $string['errorinvalidrequestcreationmethod'] = 'Método de criação de pedido inválido!';
@@ -323,7 +329,6 @@ $string['statusdeleted'] = 'Apagado';
 $string['statusdetail'] = 'Estado:';
 $string['statusexpired'] = 'Expirado';
 $string['statuspending'] = 'Pendente';
-$string['statuspreprocessing'] = 'Pré-processamento';
 $string['statusprocessing'] = 'Processamento';
 $string['statusready'] = 'Pronto para descarregar';
 $string['statusrejected'] = 'Rejeitado';

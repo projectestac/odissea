@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_strike', language 'ar', version '3.8'.
+ * Strings for component 'atto_strike', language 'ar', version '3.11'.
  *
  * @package     atto_strike
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'يتوسطه خط';
-$string['privacy:metadata'] = 'البرنامج المساعد atto_strike لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق atto_strike لا يخزن أيّ بيانات شخصية.';

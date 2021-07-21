@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'pt', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'pt', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -39,7 +39,9 @@ $string['createnewgoogleissuer'] = 'Criar novo serviço Google';
 $string['createnewissuer'] = 'Criar novo serviço personalizado';
 $string['createnewmicrosoftissuer'] = 'Criar novo serviço Microsoft';
 $string['createnewnextcloudissuer'] = 'Criar novo serviço Nextcloud';
+$string['createnewservice'] = 'Criar um novo serviço:';
 $string['createnewuserfieldmapping'] = 'Criar novo mapeamento de campo de utilizador para o emissor "{$a}"';
+$string['custom_service'] = 'Personalizado';
 $string['deleteconfirm'] = 'Tem a certeza de que pretende apagar o emissor de identidade "{$a}"? Quaisquer módulos que dependam deste emissor deixarão de funcionar.';
 $string['deleteendpointconfirm'] = 'Tem a certeza de que pretende apagar o endpoint "{$a->endpoint}" para o emissor "{$a->issuer}"? Quaisquer módulos que dependam deste endpoint deixarão de funcionar.';
 $string['deleteuserfieldmappingconfirm'] = 'Tem a certeza de que pretende apagar o mapeamento de campo do utilizador para o emissor "{$a}"?';
@@ -57,6 +59,9 @@ $string['endpointname_help'] = 'Chave utilizada para pesquisar este endpoint. De
 $string['endpointsforissuer'] = 'Endpoints para o emissor: {$a}';
 $string['endpointurl'] = 'URL';
 $string['endpointurl_help'] = 'URL para este endpoint. Deve usar o protocolo https://.';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Domínios de autenticação';
 $string['issueralloweddomains_help'] = 'Se ativar esta opção, esta configuração é uma lista de domínios, separados por vírgulas, aos quais as autenticações estão restritas ao usar este fornecedor.';
 $string['issuerbaseurl'] = 'URL base do serviço';
@@ -70,13 +75,15 @@ $string['issuerdisabled'] = 'Emissor de identidade desativado';
 $string['issuerenabled'] = 'Emissor de identidade ativado';
 $string['issuerimage'] = 'URL do logótipo';
 $string['issuerimage_help'] = 'O URL da imagem usada como logótipo deste emissor. Pode ser mostrada na página de autenticação.';
-$string['issuerloginparams'] = 'Parâmetros adicionais incluídos numa solicitação de autenticação.';
+$string['issuerloginpagename'] = 'Nome exibido na página de autenticação';
+$string['issuerloginpagename_help'] = 'Se especificado, este nome será usado na página de autenticação em vez do nome do serviço acima.';
+$string['issuerloginparams'] = 'Parâmetros adicionais incluídos numa solicitação de autenticação';
 $string['issuerloginparams_help'] = 'Alguns sistemas exigem parâmetros adicionais durante a autenticação para permitir ler o perfil dos utilizadores.';
-$string['issuerloginparamsoffline'] = 'Parâmetros adicionais incluídos numa solicitação de autenticação para acesso offline.';
+$string['issuerloginparamsoffline'] = 'Parâmetros adicionais incluídos numa solicitação de autenticação para acesso offline';
 $string['issuerloginparamsoffline_help'] = 'Cada sistema OAauth define uma maneira diferente de solicitar acesso offline. Por exemplo, a Google requer os parâmetros adicionais: "access_type=offline&prompt=consent". Estes parâmetros devem estar incluídos no formato do URL do parâmetro de consulta.';
-$string['issuerloginscopes'] = 'Âmbitos incluídos numa solicitação de autenticação.';
+$string['issuerloginscopes'] = 'Âmbitos incluídos numa solicitação de autenticação';
 $string['issuerloginscopes_help'] = 'Alguns sistemas requerem âmbitos adicionais na solicitação de autenticação para lerem o perfil básico dos utilizadores. Os âmbitos padrão para um sistema compatível com OpenID Connect são "e-mail de perfil OpenID".';
-$string['issuerloginscopesoffline'] = 'Âmbitos incluídos numa solicitação de autenticação para acesso offline.';
+$string['issuerloginscopesoffline'] = 'Âmbitos incluídos numa solicitação de autenticação para acesso offline';
 $string['issuerloginscopesoffline_help'] = 'Cada sistema OAuth tem uma maneira diferente de solicitar acesso offline. Por exemplo, a Microsoft requer o âmbito adicional "offline_access"';
 $string['issuername'] = 'Nome';
 $string['issuername_help'] = 'Nome do emissor de identidade. Pode ser mostrado na página de autenticação.';
@@ -87,7 +94,20 @@ $string['issuersetup'] = 'Instruções detalhadas para configurar os serviços m
 $string['issuersetuptype'] = 'Instruções detalhadas para configurar o fornecedor OAauth 2 {$a}';
 $string['issuershowonloginpage'] = 'Mostrar na página de autenticação';
 $string['issuershowonloginpage_help'] = 'Se o módulo de autenticação OAuth 2 estiver ativado, este emissor de autenticação será mostrado na página de autenticação para permitir que os utilizadores possam autenticar-se com contas deste emissor.';
+$string['issuersservicesallow'] = 'Permitir serviços';
+$string['issuersservicesnotallow'] = 'Não permitir serviços';
+$string['issuerusedforinternal'] = 'Serviços internos';
+$string['issuerusedforlogin'] = 'Autenticação';
+$string['issuerusein'] = 'Este serviço será usado';
+$string['issuerusein_help'] = 'Os serviços OAuth 2 podem ser usados em serviços internos, na página de autenticação ou em ambos, se necessário';
+$string['issueruseineverywhere'] = 'Página de autenticação e serviços internos';
+$string['issueruseininternalonly'] = 'Apenas serviços internos';
+$string['issueruseinloginonly'] = 'Apenas na página de autenticação';
+$string['linkedin_service'] = 'LinkedIn';
+$string['logindisplay'] = 'Mostrar na página de autenticação com';
 $string['loginissuer'] = 'Permitir autenticação';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Não configurado';
 $string['notdiscovered'] = 'A pesquisa de serviço não foi bem sucedida';
 $string['notloginissuer'] = 'Não permitir autenticação';

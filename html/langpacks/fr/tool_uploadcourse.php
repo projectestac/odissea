@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'fr', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'fr', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -77,9 +77,15 @@ $string['csvdelimiter'] = 'Délimiteur CSV';
 $string['csvdelimiter_help'] = 'Délimiteur du fichier CSV';
 $string['csvfileerror'] = 'Le format de ce fichier CSV comporte des erreurs. Veuillez vérifier que le nombre des champs d\'entête et celui des champs des lignes suivantes correspondent et que le délimiteur et l\'encodage du fichier soient correctement définis : {$a}';
 $string['csvline'] = 'Ligne';
+$string['customfieldinvalid'] = 'Le champ personnalisé « {$a} » est vide ou contient des données non valides';
 $string['defaultvalues'] = 'Réglages par défaut pour les cours';
+$string['defaultvaluescustomfieldcategory'] = 'Valeurs par défaut pour « {$a} »';
+$string['downloadcontentnotallowed'] = 'Configuration du téléchargement des contenus de cours pas autorisée';
 $string['encoding'] = 'Encodage';
 $string['encoding_help'] = 'Encodage du fichier CSV';
+$string['errorcannotcreateorupdateenrolment'] = 'Impossible de créer ou modifier la méthode d\'inscription « {$a} »';
+$string['errorcannotdeleteenrolment'] = 'Impossible de supprimer la méthode d\'inscription « {$a} »';
+$string['errorcannotdisableenrolment'] = 'Impossible de désactiver la méthode d\'inscription « {$a} »';
 $string['errorwhiledeletingcourse'] = 'Erreur lors de la suppression du cours';
 $string['errorwhilerestoringcourse'] = 'Erreur lors de la restauration du cours';
 $string['generatedshortnamealreadyinuse'] = 'Le nom abrégé généré existe déjà';
@@ -90,6 +96,7 @@ $string['importoptions'] = 'Options d\'importation';
 $string['invalidbackupfile'] = 'Fichier de sauvegarde non valide';
 $string['invalidcourseformat'] = 'Format de cours non valide';
 $string['invalidcsvfile'] = 'Fichier CSV non valide';
+$string['invaliddownloadcontent'] = 'Valeur non valide pour le téléchargement de contenus de cours';
 $string['invalidencoding'] = 'Encodage non valide';
 $string['invalideupdatemode'] = 'Mode de modification sélectionné non valide';
 $string['invalidfullnametoolong'] = 'Le nom complet du champ est limité à {$a} caractères';

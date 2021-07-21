@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'pt', version '3.8'.
+ * Strings for component 'quiz_grading', language 'pt', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['alldoneredirecting'] = 'Todas as tentativas selecionadas foram avaliadas. A voltar à lista das perguntas.';
+$string['alldoneredirecting'] = 'Todas as tentativas selecionadas foram avaliadas.';
 $string['alreadygraded'] = 'Avaliadas';
-$string['alsoshowautomaticallygraded'] = 'Incluir perguntas que foram avaliadas automaticamente';
+$string['alsoshowautomaticallygraded'] = 'Mostrar perguntas que foram avaliadas automaticamente';
 $string['attemptstograde'] = 'Avaliar tentativas';
 $string['automaticallygraded'] = 'Avaliadas automaticamente';
 $string['backtothelistofquestions'] = 'Voltar à lista das perguntas';
@@ -49,15 +49,14 @@ $string['graded'] = '(avaliado)';
 $string['gradenextungraded'] = 'Avaliar as próximas {$a} tentativas não avaliadas';
 $string['gradeungraded'] = 'Avaliar {$a} tentativa(s) não avaliada(s)';
 $string['grading'] = 'Avaliação manual';
-$string['grading:componentname'] = 'Relatório da avaliação manual';
 $string['grading:viewidnumber'] = 'Ver ID\'s dos alunos durante a avaliação';
 $string['grading:viewstudentnames'] = 'Ver o nome dos alunos durante a avaliação';
 $string['gradingall'] = 'Todas as {$a} tentativas para esta pergunta';
-$string['gradingattempt'] = 'Tentativa número {$a->attempt} de {$a->fullname}';
+$string['gradingattempt'] = 'Tentativa #{$a->attempt} de {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'A avaliar tentativas \'{$a->from}\' a \'{$a->to}\' do total de {$a->of}';
-$string['gradingattemptwithidnumber'] = 'Tentativa número {$a->attempt} de {$a->fullname} ({$a->idnumber})';
+$string['gradingattemptwithidnumber'] = 'Tentativa #{$a->attempt} de {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Próximas {$a} tentativas não avaliadas';
-$string['gradingnotallowed'] = 'Não tem autorização para avaliar perguntas manualmente neste teste';
+$string['gradingnotallowed'] = 'Não tem permissão para avaliar perguntas manualmente neste teste';
 $string['gradingquestionx'] = 'A avaliar pergunta {$a->number}: {$a->questionname}';
 $string['gradingreport'] = 'Relatório da avaliação manual';
 $string['gradingungraded'] = '{$a} tentativas não avaliadas';
@@ -71,7 +70,8 @@ $string['nothingfound'] = 'Nada a mostrar';
 $string['options'] = 'Opções';
 $string['orderattempts'] = 'Ordem de exibição';
 $string['pluginname'] = 'Avaliação manual';
-$string['privacy:metadata'] = 'O módulo Avaliação manual do teste não armazena dados pessoais.';
+$string['privacy:preference:order'] = 'Ordem de exibição das tentativas que precisam de ser avaliadas.';
+$string['privacy:preference:pagesize'] = 'O número de tentativas que são exibidas em cada página da interface de avaliação.';
 $string['qno'] = 'P #';
 $string['questionname'] = 'Nome da pergunta';
 $string['questionsperpage'] = 'Perguntas por página';
@@ -80,7 +80,7 @@ $string['questiontitle'] = 'Pergunta {$a->number} : "{$a->name}" ({$a->openspan}
 $string['randomly'] = 'Aleatória';
 $string['saveandnext'] = 'Guardar e passar à página seguinte';
 $string['showstudentnames'] = 'Mostrar nomes dos alunos';
-$string['tograde'] = 'Para avaliar';
+$string['tograde'] = 'Por avaliar';
 $string['total'] = 'Total';
 $string['unknownquestion'] = 'Pergunta desconhecida';
 $string['updategrade'] = 'Atualizar notas';

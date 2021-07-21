@@ -22,7 +22,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-use core_h5p\autoloader;
+use core_h5p\local\library\autoloader;
 use core_h5p\h5p_test_factory;
 
 defined('MOODLE_INTERNAL') || die();
@@ -36,9 +36,9 @@ defined('MOODLE_INTERNAL') || die();
  *
  * @runTestsInSeparateProcesses
  */
-class h5p_get_content_types_task_test extends advanced_testcase {
+class h5p_get_content_types_task_testcase extends advanced_testcase {
 
-    protected function setup() {
+    protected function setup(): void {
         global $CFG;
         parent::setUp();
 
@@ -73,7 +73,7 @@ class h5p_get_content_types_task_test extends advanced_testcase {
 
         // Mock implementation of \core\task\h5p_get_content_types_task::get_core to avoid external systems.
         $mocktask = $this->getMockBuilder(\core\task\h5p_get_content_types_task::class)
-            ->setMethods(['get_core'])
+            ->onlyMethods(['get_core'])
             ->getMock();
 
         $mocktask->expects($this->any())

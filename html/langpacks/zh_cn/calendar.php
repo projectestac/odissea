@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'zh_cn', version '3.8'.
+ * Strings for component 'calendar', language 'zh_cn', version '3.11'.
  *
  * @package     calendar
  * @category    string
@@ -140,6 +140,7 @@ $string['eventtypecourse'] = '课程';
 $string['eventtypeglobal'] = '全局';
 $string['eventtypegroup'] = '小组';
 $string['eventtypemodule'] = '模块';
+$string['eventtypeother'] = '其他';
 $string['eventtypesite'] = '站点';
 $string['eventtypeuser'] = '用户';
 $string['eventview'] = '事件详情';

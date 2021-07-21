@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'en', version '3.8'.
+ * Strings for component 'choicegroup', language 'en', version '3.11'.
  *
  * @package     choicegroup
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:hasopened'] = 'Opened:';
+$string['activitydate:willclose'] = 'Closes:';
+$string['activitydate:willopen'] = 'Opens:';
 $string['add'] = 'Add';
 $string['add_group'] = 'Add Group';
 $string['add_grouping'] = 'Add Grouping';

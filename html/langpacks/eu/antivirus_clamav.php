@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'eu', version '3.8'.
+ * Strings for component 'antivirus_clamav', language 'eu', version '3.11'.
  *
  * @package     antivirus_clamav
  * @category    string
@@ -25,11 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['antivirusfailed'] = 'Une honetan arazo bat dago antibirusaren eskaneatzearekin. Zure {$a->item} fitxategia ez da igo. Mesedez berriz saiatu zaitez beranduago.';
 $string['clamfailed'] = 'ClamAV-ren exekuzioak huts egin du. Errore-mezua {$a} izan da. Hau da ClamAV-ren irteera-mezua:';
 $string['clamfailureonupload'] = 'ClamAV-ek huts egiten duenean';
 $string['configclamactlikevirus'] = 'Tratatu fitxategiekin birusak balira bezala';
 $string['configclamdonothing'] = 'Tratatu fitxategiak ondo baleude bezala';
-$string['configclamfailureonupload'] = 'clam igotako fitxategiak eskaneatzeko konfiguratu baduzu, baina modu ezegokian konfiguratuta badago edo exekutatzean huts egiten badu arrazoi ezezagunak tarteko, zer egin beharko litzateke? \'Tratatu fitxategiekin birusak balira bezala\' aukeratzen baduzu, kuarentena-eremura mugituko dira, edo ezabatuko dira. \'Tratatu fitxategiak ondo baleude bezala\' aukeratzen baduzu, fitxategiak helburuko karpetara mugituko dira ohiko moduan. Edonola ere, kudeatzaileei clam-ek huts egin izanaren jakinarazpena bidaliko zaie. \'Tratatu fitxategiekin birusak balira bezala\' aukeratzen baduzu eta edozein arrazoiengatik clam-en exekuzioak huts egiten badu (normalean pathtoclam ezegokiaa zehaztu duzulako), igotako fitxategi GUZTIAK zehaztutako kuarentena-eremura mugituko dira, edo ezabatuko dira. Kontuz ibili ezarpen honekin.';
+$string['configclamfailureonupload'] = '\'Tratatu fitxategiak ondo baleude bezala\' aukeratuz gero fitxategiak helmugako direktoriora mugituko dira. \'Igoera ukatu, berriz saiatu\' aukeratuz gero erabiltzaileari berriz saiatzeko eskatuko zaio. \'Tratatu fitxategiekin birusak balira bezala\' aukeratuz gero fitxategiak berrogeialdi-eremura mugitu edo ezabatuko dira. Kontuz: aukera honekin, edozein arrazoiengatik clam-en exekuzioak huts egiten badu (normalean pathtoclam ezegokia zehaztu duzulako), igotako fitxategi GUZTIAK zehaztutako berrogeialdi-eremura mugitu edo ezabatuko dira.';
+$string['configclamtryagain'] = 'Igoera ukatu, berriz saiatu';
 $string['errorcantopensocket'] = 'Unix domeinuko socket-erako konexioan errorea gertatu da {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV-k ez du erantzuten; egiaztatu \'daemon\'aren exekuzio-egoera.';
 $string['errornounixsocketssupported'] = 'Sistema honetan ez da Unix domeinuko socket bidezko garraioa onartzen. Mesedez, erabili horren ordez komando-lerroa aukera.';
@@ -44,5 +46,14 @@ $string['quarantinedir'] = 'Berrogeialdi-direktorioa';
 $string['runningmethod'] = 'Exekuzio-modua';
 $string['runningmethodcommandline'] = 'Komando-lerroa';
 $string['runningmethoddesc'] = 'ClamAV exekutatzeko modua. Modu lehenetsian komando-lerroa erabiltzen da, baina Unix sistematan errendimendu hobea lor daiteke sistemako socket-ak erabilita.';
+$string['runningmethodtcpsocket'] = 'TCP socket-a';
 $string['runningmethodunixsocket'] = 'Unix domeinuko socket-a';
+$string['tcpsockethost'] = 'TCP socket-aren hostalari-izena';
+$string['tcpsockethostdesc'] = 'ClamAV zerbitzariaren domeinu-izena';
+$string['tcpsocketport'] = 'TCP socket-aren ataka';
+$string['tcpsocketportdesc'] = 'ClamAV-ra konetatzean erabili beharreko ataka';
+$string['tries'] = 'Saiakerak eskaneatzen';
+$string['tries_desc'] = 'Eskaneatze-prozesuan errorea gertatzen denean ClamAV-k egingo duen saiakera-kopurua.';
+$string['tries_notice'] = 'Clamav-k {$a->tries} eskaneatze-saiakera egin ditu.
+{$a->notice}';
 $string['unknownerror'] = 'ClamAV-ren errore ezezaguna gertatu da.';

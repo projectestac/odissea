@@ -202,8 +202,8 @@ if (!$version or !$release) {
 
 if (!core_tables_exist()) {
 
-    //XTEC ************ AFEGIT - Block access to install functions. Show "site off" message instead.
-    //2013.12.16 @aginard
+    // XTEC ************ AFEGIT - Block access to install functions. Show "site off" message instead.
+    // 2013.12.16 @aginard
     if (!isset($agora['server']['enviroment']) || ($agora['server']['enviroment'] != 'LOCAL' && $agora['server']['enviroment'] != 'DES')) {
         $siteoff_file = '../siteoff.html';
         if (file_exists($siteoff_file)) {
@@ -220,9 +220,7 @@ if (!core_tables_exist()) {
         }
         exit(0);
     }
-
-
-    //************ FI
+    // ************ FI
 
 
     $PAGE->set_pagelayout('maintenance');
@@ -265,7 +263,7 @@ if (!core_tables_exist()) {
 
     // check plugin dependencies
     $failed = array();
-    if (!core_plugin_manager::instance()->all_plugins_ok($version, $failed)) {
+    if (!core_plugin_manager::instance()->all_plugins_ok($version, $failed, $CFG->branch)) {
         $PAGE->navbar->add(get_string('pluginscheck', 'admin'));
         $PAGE->set_title($strinstallation);
         $PAGE->set_heading($strinstallation . ' - Moodle ' . $CFG->target_release);
@@ -532,7 +530,7 @@ if (!$cache and $version > $CFG->version) {  // upgrade
     } else {
         // Always verify plugin dependencies!
         $failed = array();
-        if (!core_plugin_manager::instance()->all_plugins_ok($version, $failed)) {
+        if (!core_plugin_manager::instance()->all_plugins_ok($version, $failed, $CFG->branch)) {
             echo $output->unsatisfied_dependencies_page($version, $failed, new moodle_url($PAGE->url,
                 array('confirmplugincheck' => 0)));
             die();
@@ -724,7 +722,7 @@ if (!$cache and moodle_needs_upgrading()) {
 
         // Make sure plugin dependencies are always checked.
         $failed = array();
-        if (!$pluginman->all_plugins_ok($version, $failed)) {
+        if (!$pluginman->all_plugins_ok($version, $failed, $CFG->branch)) {
             $output = $PAGE->get_renderer('core', 'admin');
             echo $output->unsatisfied_dependencies_page($version, $failed, new moodle_url($PAGE->url,
                 array('confirmplugincheck' => 0)));
@@ -869,8 +867,9 @@ $errorsdisplayed = defined('WARN_DISPLAY_ERRORS_ENABLED');
 $lastcron = get_config('tool_task', 'lastcronstart');
 $cronoverdue = ($lastcron < time() - 3600 * 24);
 $lastcroninterval = get_config('tool_task', 'lastcroninterval');
-$expectedfrequency = $CFG->expectedcronfrequency ?? 200;
-$croninfrequent = !$cronoverdue && ($lastcroninterval > $expectedfrequency || $lastcron < time() - $expectedfrequency);
+
+$expectedfrequency = $CFG->expectedcronfrequency ?? MINSECS;
+$croninfrequent = !$cronoverdue && ($lastcroninterval > ($expectedfrequency + MINSECS) || $lastcron < time() - $expectedfrequency);
 $dbproblems = $DB->diagnose();
 $maintenancemode = !empty($CFG->maintenance_enabled);
 
@@ -924,6 +923,12 @@ if (empty($CFG->disabledevlibdirscheck) && (is_dir($CFG->dirroot.'/vendor') || i
 // Check if the site is being foced onto ssl.
 $overridetossl = !empty($CFG->overridetossl);
 
+// Check if moodle campaign content setting is enabled or not.
+$showcampaigncontent = !isset($CFG->showcampaigncontent) || $CFG->showcampaigncontent;
+
+// Encourage admins to enable the user feedback feature if it is not enabled already.
+$showfeedbackencouragement = empty($CFG->enableuserfeedback);
+
 admin_externalpage_setup('adminnotifications');
 
 $output = $PAGE->get_renderer('core', 'admin');
@@ -931,4 +936,5 @@ $output = $PAGE->get_renderer('core', 'admin');
 echo $output->admin_notifications_page($maturity, $insecuredataroot, $errorsdisplayed, $cronoverdue, $dbproblems,
                                        $maintenancemode, $availableupdates, $availableupdatesfetch, $buggyiconvnomb,
                                        $registered, $cachewarnings, $eventshandlers, $themedesignermode, $devlibdir,
-                                       $mobileconfigured, $overridetossl, $invalidforgottenpasswordurl, $croninfrequent);
+                                       $mobileconfigured, $overridetossl, $invalidforgottenpasswordurl, $croninfrequent,
+                                       $showcampaigncontent, $showfeedbackencouragement);

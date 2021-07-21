@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_menu', language 'sv', version '3.8'.
+ * Strings for component 'profilefield_menu', language 'sv', version '3.11'.
  *
  * @package     profilefield_menu
  * @category    string
@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Nedrullningsmeny';
+$string['privacy:metadata:profilefield_menu:data'] = 'Användardata för användarfält i den nedrullningsbara menyn';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'Formatet för användarfältsdata för den nedrullningsbara menyn';
+$string['privacy:metadata:profilefield_menu:fieldid'] = 'Profilfältets ID';
+$string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Ytterligare profildata';
+$string['privacy:metadata:profilefield_menu:userid'] = 'ID:et för den användare vars data lagras i det nedrullningsbara användarprofilfältet på menyn';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'fr', version '3.8'.
+ * Strings for component 'survey', language 'fr', version '3.11'.
  *
  * @package     survey
  * @category    string
@@ -57,7 +57,7 @@ $string['attls19'] = 'Lorsque je rencontre des gens d\'opinions qui me semblent 
 $string['attls19short'] = 'faire l\'effort de s\'élargir l\'esprit';
 $string['attls1short'] = 'attention sur la qualité de l\'argumentation';
 $string['attls2'] = 'J\'aime jouer l\'avocat du diable - en argumentant l\'opposé de ce que quelqu\'un dit.';
-$string['attls20'] = 'Je prends du temps pour rechercher « ce qui ne vas pas ». Par exemple je cherche dans une interprétation littéraire ce qui n\'est pas suffisamment bien étayé.';
+$string['attls20'] = 'Je prends du temps pour rechercher « ce qui ne va pas ». Par exemple je cherche dans une interprétation littéraire ce qui n\'est pas suffisamment bien étayé.';
 $string['attls20short'] = 'qu\'est-ce qui ne va pas ?';
 $string['attls2short'] = 'jouer l\'avocat du diable';
 $string['attls3'] = 'J\'aime comprendre d\'où viennent les gens, quelles expériences les ont conduits à être comme ils sont.';
@@ -190,6 +190,7 @@ Vos réponses soigneusement réfléchies nous aideront à améliorer la façon d
 
 Nous vous remercions de votre collaboration.';
 $string['collespname'] = 'COLLES (idéal)';
+$string['completiondetail:submit'] = 'Envoyer des réponses';
 $string['completionsubmit'] = 'L\'étudiant doit remettre cette activité pour l\'achever';
 $string['customintro'] = 'Description';
 $string['deleteallanswers'] = 'Supprimer toutes les réponses des consultations';
@@ -268,7 +269,7 @@ $string['survey:download'] = 'Télécharger les réponses';
 $string['survey:participate'] = 'Répondre aux consultations';
 $string['survey:readresponses'] = 'Voir les réponses';
 $string['surveycompleted'] = 'Vous avez complètement répondu à cette consultation. Le graphique ci-dessous montre un résumé de vos résultats comparés aux moyennes de la classe.';
-$string['surveycompletednograph'] = 'Vous avez terminé ce sondage.';
+$string['surveycompletednograph'] = 'Vous avez terminé cette consultation.';
 $string['surveygraph'] = 'Graphique de la consultation';
 $string['surveyname'] = 'Nom de la consultation';
 $string['surveysaved'] = 'Consultation enregistrée';

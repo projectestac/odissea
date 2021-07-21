@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'fr', version '3.8'.
+ * Strings for component 'tool_behat', language 'fr', version '3.11'.
  *
  * @package     tool_behat
  * @category    string
@@ -50,6 +50,7 @@ $string['stepsdefinitionstype'] = 'Type';
 $string['theninfo'] = 'Alors. Vérifications assurant que les résultats sont bien ceux attendus';
 $string['unknownexceptioninfo'] = 'Un problème est survenu avec Selenium ou votre navigateur. Assurez-vous que vous utilisez la dernière version de Selenium. Erreur :';
 $string['viewsteps'] = 'Filtre';
+$string['warndirrootconfigfound'] = 'Un fichier de configuration a été trouvé à {$a}. Ce fichier n\'est pas mis à jour automatiquement et peut devenir obsolète. Il est recommandé de supprimer ce fichier.';
 $string['wheninfo'] = 'Quand. Action qui provoque un événement';
 $string['wrongbehatsetup'] = 'Quelque chose n\'est pas correct dans vos réglages behat, qui empêche l\'affichage de la définition des étapes : <b>{$a->errormsg}</b><br/><br/>Assurez-vous que
 <ul>

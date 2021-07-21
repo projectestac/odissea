@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_checkbox', language 'ar', version '3.8'.
+ * Strings for component 'datafield_checkbox', language 'ar', version '3.11'.
  *
  * @package     datafield_checkbox
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'حقل مربع اختيار';
 $string['pluginname'] = 'مربع الاختيار';
-$string['privacy:metadata'] = 'لا يخزن  Checkbox أي بيانات شخصية بحد ذاته ، بل يستخدم جداول معرفة في mod_data.';
+$string['privacy:metadata'] = 'إن مكون حقل خانة التأشير لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل جداول معرفة في mod_data.';

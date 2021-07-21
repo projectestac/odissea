@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'pt', version '3.8'.
+ * Strings for component 'qtype_multichoice', language 'pt', version '3.11'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -41,11 +41,11 @@ $string['choiceno'] = 'Resposta {$a}';
 $string['choices'] = 'Respostas disponíveis';
 $string['clearchoice'] = 'Limpar a minha escolha';
 $string['clozeaid'] = 'Introduza a palavra em falta';
-$string['correctansweris'] = 'A resposta correta é: {$a}';
+$string['correctansweris'] = 'Resposta correta: {$a}';
 $string['correctanswersare'] = 'Respostas corretas: {$a}';
 $string['correctfeedback'] = 'Para qualquer resposta correta';
 $string['deletedchoice'] = 'Esta opção foi apagada após a tentativa ter sido iniciada.';
-$string['errfractionsaddwrong'] = 'As notas positivas que escolheu não somam 100%<br /> Em vez disso somam {$a}%';
+$string['errfractionsaddwrong'] = 'As notas positivas que escolheu não somam 100%<br />Em vez disso somam {$a}%';
 $string['errfractionsnomax'] = 'Uma das respostas deve ter a nota de 100% para que seja possível obter a pontuação máxima nesta pergunta.';
 $string['errgradesetanswerblank'] = 'A nota foi atribuida mas a resposta está em branco';
 $string['feedback'] = 'Feedback';
@@ -67,11 +67,19 @@ $string['pluginname_link'] = 'pergunta/tipo/escolhamúltipla';
 $string['pluginnameadding'] = 'A adicionar pergunta de escolha múltipla';
 $string['pluginnameediting'] = 'A editar pergunta de escolha múltipla';
 $string['pluginnamesummary'] = 'Permite a seleção de uma ou mais respostas a partir de uma lista de respostas predefinida.';
-$string['privacy:metadata'] = 'O módulo Pergunta do tipo Escolha múltipla não armazena quaisquer dados pessoais.';
-$string['selectmulti'] = 'Selecione uma ou mais opções de resposta:';
-$string['selectone'] = 'Selecione uma opção de resposta:';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Escolha múltipla permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
+$string['privacy:preference:answernumbering'] = 'O tipo de numeração que deve ser usado (\'1., 2., 3., ...\', \'a., b., c., ...\' etc.)';
+$string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
+$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das é o \'Interativo com múltiplas tentativas\' ou \'Modo adaptável \'.';
+$string['privacy:preference:showstandardinstruction'] = 'Se deve ser mostrada, ou não, a instrução predefinida.';
+$string['privacy:preference:shuffleanswers'] = 'Se as respostas devem, ou não, ser baralhadas automaticamente.';
+$string['privacy:preference:single'] = 'Se a resposta é única com botões de rádio ou múltipla com caixas de seleção.';
+$string['selectmulti'] = 'Selecione uma ou mais opções:';
+$string['selectone'] = 'Selecione uma opção:';
+$string['showstandardinstruction'] = 'Mostrar instruções predefinidas';
+$string['showstandardinstruction_help'] = 'Se pretende mostrar, ou não, as instruções "Selecione uma opção:" ou "Selecione uma ou mais opções:" antes das opções de respostas.';
 $string['shuffleanswers'] = 'Baralhar opções de resposta';
 $string['shuffleanswers_desc'] = 'Se, por definição, as opções devem ser aleatoriamente baralhadas em cada tentativa.';
-$string['shuffleanswers_help'] = 'Se ativar esta opção, a ordem das opções de resposta é definida aleatoriamente em cada nova tentativa, desde que a opção "Baralhar perguntas" nas opções de configuração do Teste também se encontre ativa.';
+$string['shuffleanswers_help'] = 'Se ativar esta opção, a ordem das opções de resposta é definida aleatoriamente em cada nova tentativa, desde que a opção "Baralhar perguntas" nas opções de configuração do teste também esteja ativa.';
 $string['singleanswer'] = 'Escolha uma resposta.';
 $string['toomanyselected'] = 'Selecionou demasiadas opções';

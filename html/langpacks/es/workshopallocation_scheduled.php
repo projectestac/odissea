@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'es', version '3.8'.
+ * Strings for component 'workshopallocation_scheduled', language 'es', version '3.11'.
  *
  * @package     workshopallocation_scheduled
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['crontask'] = 'Procesamiento en segundo plano para la asignación programada';
 $string['currentstatus'] = 'Estado actual';
 $string['currentstatusexecution'] = 'Estado';
 $string['currentstatusexecution1'] = 'Ejecutado el {$a->datetime}';
@@ -40,6 +41,7 @@ $string['currentstatusresult'] = 'Resultado de la ejecución reciente';
 $string['enablescheduled'] = 'Habilitar asignación programada';
 $string['enablescheduledinfo'] = 'Asignar automáticamente las entregas al final de la fase de envío';
 $string['pluginname'] = 'Asignación programada';
+$string['privacy:metadata'] = 'El complemento de asignación programada no almacena ningún dato personal. Los datos personales reales sobre quién va a evaluar a quién son almacenados por el módulo de Taller y forman la base para exportar los detalles de las evaluaciones.';
 $string['randomallocationsettings'] = 'Ajustes de asignación';
 $string['randomallocationsettings_help'] = 'Los parámetros de la asignación se definen aquí. Estos parámetros se usan para definir cómo se asignan los envíos.';
 $string['resultdisabled'] = 'Asignación programada deshabilitada';

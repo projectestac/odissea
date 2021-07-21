@@ -15,15 +15,18 @@ Feature: A user can control their own subscription preferences for a discussion
       | user | course | role |
       | student1 | C1 | student |
     And I log in as "admin"
-    And I am on "Course 1" course homepage with editing mode on
 
   @javascript
   Scenario: An optional forum can have discussions subscribed to
-    Given I add a "Forum" to section "1" and I fill the form with:
-      | Forum name        | Test forum name |
-      | Forum type        | Standard forum for general use |
-      | Description       | Test forum description |
-      | Subscription mode | Optional subscription |
+    Given the following "activity" exists:
+      | activity       | forum                  |
+      | course         | C1                     |
+      | idnumber       | forum1                 |
+      | name           | Test forum name        |
+      | intro          | Test forum description |
+      | type           | general                |
+      | forcesubscribe | 0                      |
+    And I am on "Course 1" course homepage
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject one |
       | Message | Test post message one |
@@ -37,15 +40,15 @@ Feature: A user can control their own subscription preferences for a discussion
     Then I can subscribe to this forum
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
-    And I click on "label[for^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
+    And I click on "input[id^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
     And I can subscribe to this forum
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
-    And I click on "label[for^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
+    And I click on "input[id^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
     And I can subscribe to this forum
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
-    And I click on "label[for^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
+    And I click on "input[id^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
     And I can subscribe to this forum
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
@@ -62,11 +65,15 @@ Feature: A user can control their own subscription preferences for a discussion
 
   @javascript
   Scenario: An automatic subscription forum can have discussions unsubscribed from
-    Given I add a "Forum" to section "1" and I fill the form with:
-      | Forum name        | Test forum name |
-      | Forum type        | Standard forum for general use |
-      | Description       | Test forum description |
-      | Subscription mode | Auto subscription |
+    Given the following "activity" exists:
+      | activity       | forum                  |
+      | course         | C1                     |
+      | idnumber       | forum1                 |
+      | name           | Test forum name        |
+      | intro          | Test forum description |
+      | type           | general                |
+      | forcesubscribe | 2                      |
+    And I am on "Course 1" course homepage
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject one |
       | Message | Test post message one |
@@ -80,15 +87,15 @@ Feature: A user can control their own subscription preferences for a discussion
     Then I can unsubscribe from this forum
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
-    And I click on "label[for^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
+    And I click on "input[id^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
     And I can unsubscribe from this forum
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
-    And I click on "label[for^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
+    And I click on "input[id^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
     And I can unsubscribe from this forum
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
-    And I click on "label[for^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
+    And I click on "input[id^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
     And I can unsubscribe from this forum
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
@@ -105,11 +112,15 @@ Feature: A user can control their own subscription preferences for a discussion
 
   @javascript
   Scenario: A user does not lose their preferences when a forum is switch from optional to automatic
-    Given I add a "Forum" to section "1" and I fill the form with:
-      | Forum name        | Test forum name |
-      | Forum type        | Standard forum for general use |
-      | Description       | Test forum description |
-      | Subscription mode | Optional subscription |
+    Given the following "activity" exists:
+      | activity       | forum                  |
+      | course         | C1                     |
+      | idnumber       | forum1                 |
+      | name           | Test forum name        |
+      | intro          | Test forum description |
+      | type           | general                |
+      | forcesubscribe | 0                      |
+    And I am on "Course 1" course homepage
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject one |
       | Message | Test post message one |
@@ -123,7 +134,7 @@ Feature: A user can control their own subscription preferences for a discussion
     And I can subscribe to this forum
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
-    And I click on "label[for^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
+    And I click on "input[id^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
     And I can subscribe to this forum
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
@@ -150,11 +161,15 @@ Feature: A user can control their own subscription preferences for a discussion
 
   @javascript
   Scenario: A user does not lose their preferences when a forum is switch from optional to automatic
-    Given I add a "Forum" to section "1" and I fill the form with:
-      | Forum name        | Test forum name |
-      | Forum type        | Standard forum for general use |
-      | Description       | Test forum description |
-      | Subscription mode | Optional subscription |
+    Given the following "activity" exists:
+      | activity       | forum                  |
+      | course         | C1                     |
+      | idnumber       | forum1                 |
+      | name           | Test forum name        |
+      | intro          | Test forum description |
+      | type           | general                |
+      | forcesubscribe | 0                      |
+    And I am on "Course 1" course homepage
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject one |
       | Message | Test post message one |
@@ -168,7 +183,7 @@ Feature: A user can control their own subscription preferences for a discussion
     And I can subscribe to this forum
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
-    And I click on "label[for^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
+    And I click on "input[id^=subscription-toggle]" "css_element" in the "Test post subject one" "table_row"
     And I can subscribe to this forum
     And "Unsubscribe from this discussion" "checkbox" should exist in the "Test post subject one" "table_row"
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
@@ -194,11 +209,15 @@ Feature: A user can control their own subscription preferences for a discussion
     And "Subscribe to this discussion" "checkbox" should exist in the "Test post subject two" "table_row"
 
   Scenario: An optional forum prompts a user to subscribe to a discussion when posting unless they have already chosen not to subscribe
-    Given I add a "Forum" to section "1" and I fill the form with:
-      | Forum name        | Test forum name |
-      | Forum type        | Standard forum for general use |
-      | Description       | Test forum description |
-      | Subscription mode | Optional subscription |
+    Given the following "activity" exists:
+      | activity       | forum                  |
+      | course         | C1                     |
+      | idnumber       | forum1                 |
+      | name           | Test forum name        |
+      | intro          | Test forum description |
+      | type           | general                |
+      | forcesubscribe | 0                      |
+    And I am on "Course 1" course homepage
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject one |
       | Message | Test post message one |
@@ -230,11 +249,15 @@ Feature: A user can control their own subscription preferences for a discussion
     And the field "Discussion subscription" matches value "I don't want to be notified of new posts in this discussion"
 
   Scenario: An automatic forum prompts a user to subscribe to a discussion when posting unless they have already chosen not to subscribe
-    Given I add a "Forum" to section "1" and I fill the form with:
-      | Forum name        | Test forum name |
-      | Forum type        | Standard forum for general use |
-      | Description       | Test forum description |
-      | Subscription mode | Auto subscription |
+    Given the following "activity" exists:
+      | activity       | forum                  |
+      | course         | C1                     |
+      | idnumber       | forum1                 |
+      | name           | Test forum name        |
+      | intro          | Test forum description |
+      | type           | general                |
+      | forcesubscribe | 2                      |
+    And I am on "Course 1" course homepage
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject one |
       | Message | Test post message one |
@@ -266,11 +289,11 @@ Feature: A user can control their own subscription preferences for a discussion
     And the field "Discussion subscription" matches value "I don't want to be notified of new posts in this discussion"
 
   Scenario: A guest should not be able to subscribe to a discussion
-    Given I am on site homepage
-    And I add a "Forum" to section "1" and I fill the form with:
-     | Forum name        | Test forum name |
-     | Forum type        | Standard forum for general use |
-     | Description       | Test forum description |
+    Given the following "activities" exist:
+      | activity    | name            | intro                  | course               | section | idnumber  | type    |
+      | forum       | Test forum name | Test forum description | Acceptance test site | 1       | forum1    | general |
+    And I am on site homepage
+    And I turn editing mode on
     And I add a new discussion to "Test forum name" forum with:
      | Subject | Test post subject one |
      | Message | Test post message one |
@@ -284,11 +307,11 @@ Feature: A user can control their own subscription preferences for a discussion
     And "Unsubscribe from this discussion" "checkbox" should not exist
 
   Scenario: A user who is not logged in should not be able to subscribe to a discussion
-    Given I am on site homepage
-    And I add a "Forum" to section "1" and I fill the form with:
-     | Forum name        | Test forum name |
-     | Forum type        | Standard forum for general use |
-     | Description       | Test forum description |
+    Given the following "activities" exist:
+      | activity    | name            | intro                  | course               | section | idnumber  | type    |
+      | forum       | Test forum name | Test forum description | Acceptance test site | 1       | forum1    | general |
+    And I am on site homepage
+    And I turn editing mode on
     And I add a new discussion to "Test forum name" forum with:
      | Subject | Test post subject one |
      | Message | Test post message one |
@@ -301,11 +324,15 @@ Feature: A user can control their own subscription preferences for a discussion
     And "Unsubscribe from this discussion" "checkbox" should not exist
 
   Scenario: A user can toggle their subscription preferences when viewing a discussion
-    Given I add a "Forum" to section "1" and I fill the form with:
-      | Forum name        | Test forum name |
-      | Forum type        | Standard forum for general use |
-      | Description       | Test forum description |
-      | Subscription mode | Optional subscription |
+    Given the following "activity" exists:
+      | activity       | forum                  |
+      | course         | C1                     |
+      | idnumber       | forum1                 |
+      | name           | Test forum name        |
+      | intro          | Test forum description |
+      | type           | general                |
+      | forcesubscribe | 0                      |
+    And I am on "Course 1" course homepage
     And I add a new discussion to "Test forum name" forum with:
       | Subject | Test post subject one |
       | Message | Test post message one |

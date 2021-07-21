@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'ja', version '3.8'.
+ * Strings for component 'block_myoverview', language 'ja', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = '最終アクセス日でコースを並べ替え
 $string['aria:list'] = 'リストビューにスイッチする';
 $string['aria:past'] = '過去のコースを表示する';
 $string['aria:removefromfavourites'] = '星を削除する';
+$string['aria:shortname'] = 'コースをコース省略名で並べ替える';
 $string['aria:showcourse'] = '{$a} を表示にリストアする';
 $string['aria:sortingdropdown'] = 'ドロップダウンメニューの並べ替え';
 $string['aria:summary'] = '概要ビューにスイッチする';
@@ -62,8 +63,6 @@ $string['courseprogress'] = 'コース進捗:';
 $string['customfield'] = 'カスタムフィールド';
 $string['customfiltergrouping'] = '使用するフィールド';
 $string['customfiltergrouping_nofields'] = 'このオプションはコースカスタムフィールドのセットアップおよびすべての人の閲覧を必要とします。';
-$string['defaulttab'] = 'デフォルトタブ';
-$string['defaulttab_desc'] = 'タブはユーザの初回コース概要閲覧時に表示されます。コース概要に戻ってきた場合、ユーザのアクティブタブが再現されます。';
 $string['displaycategories'] = 'カテゴリを表示する';
 $string['displaycategories_help'] = 'カード、リストアイテムおよびアイテム概要を含むダッシュボードコースアイテムにコースカテゴリを表示します。';
 $string['favourites'] = '星付き';
@@ -76,31 +75,18 @@ $string['lastaccessed'] = '最終アクセス';
 $string['layouts'] = '利用可能なレイアウト';
 $string['layouts_help'] = 'ユーザが選択可能なコース概要レイアウトです。何も選択されない場合、カードレイアウトが使用されます。';
 $string['list'] = 'リスト';
-$string['morecourses'] = 'コースをさらに';
 $string['myoverview:myaddinstance'] = 'ダッシュボードに新しいコース概要ブロックを追加する';
-$string['next30days'] = '次の30日';
-$string['next7days'] = '次の7日';
 $string['nocourses'] = 'コースなし';
-$string['nocoursesfuture'] = '未来のコースはありません。';
-$string['nocoursesinprogress'] = '進行中のコースはありません。';
-$string['nocoursespast'] = '過去のコースはありません。';
 $string['nocustomvalue'] = '{$a} なし';
-$string['noevents'] = '直近の活動期限はありません。';
 $string['past'] = '過去';
 $string['pluginname'] = 'コース概要';
 $string['privacy:metadata:overviewgroupingpreference'] = 'コース概要ブロックのグルーピングプリファレンスです。';
-$string['privacy:metadata:overviewlasttab'] = 'ここではコース概要ブロックでユーザが最後に選択したタブを保存します。';
 $string['privacy:metadata:overviewpagingpreference'] = 'コース概要ブロックのページングリファレンスです。';
 $string['privacy:metadata:overviewsortpreference'] = 'コース概要ブロック並べ替えプリファレンスです。';
 $string['privacy:metadata:overviewviewpreference'] = 'コース概要ブロック表示プリファレンスです。';
 $string['privacy:request:preference:set'] = '設定「 {$a->name} 」の設定値は「 {$a->value} 」でした。';
-$string['recentlyoverdue'] = '最近の期限切れ';
 $string['removefromfavourites'] = 'このコースの星を外す';
+$string['shortname'] = '省略名';
 $string['show'] = '表示にリストアする';
-$string['sortbycourses'] = 'コースで並べ替える';
-$string['sortbydates'] = '日付で並べ替える';
 $string['summary'] = '概要';
-$string['timeline'] = 'タイムライン';
 $string['title'] = 'コース名';
-$string['viewcourse'] = 'コースを表示する';
-$string['viewcoursename'] = 'コース {$a} を表示する';

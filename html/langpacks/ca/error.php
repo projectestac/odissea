@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ca', version '3.8'.
+ * Strings for component 'error', language 'ca', version '3.11'.
  *
  * @package     error
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['TODO'] = 'Per fer';
 $string['activityisscheduledfordeletion'] = 'Eliminació de l\'activitat en curs...';
-$string['alreadyloggedin'] = 'Ja heu iniciat sessió com a {$a}; heu de finalitzar la sessió abans d\'identificar-vos com un altre usuari.';
+$string['alreadyloggedin'] = 'Ja heu iniciat la sessió com a {$a}; heu de finalitzar la sessió abans d\'identificar-vos com un altre usuari.';
 $string['authnotexisting'] = 'No existeix el connector d\'autorització.';
 $string['backupcontainexternal'] = 'Aquest fitxer de còpia de seguretat conté hostes en xarxa de Moodle externs que no han estat configurats localment.';
 $string['backuptablefail'] = 'No s\'han pogut configurar correctament les taules de la còpia de seguretat.';
@@ -179,6 +179,7 @@ $string['commentmisconf'] = 'L\'ID del comentari està mal configurat';
 $string['componentisuptodate'] = 'El component està actualitzat';
 $string['confirmationnotenabled'] = 'La confirmació de l\'usuari no està habilitada en aquest lloc';
 $string['confirmsesskeybad'] = 'No s\'ha pogut confirmar la vostra clau de sessió per portar a terme aquesta acció. Aquesta característica de seguretat impedeix que s\'executin funcions importants en el vostre nom de manera accidental o fraudulenta. Confirmeu que volíeu realment executar aquesta funció.';
+$string['contenttypenotfound'] = 'El tipus de banc de contingut «{$a}»  no existeix o no es reconeix.';
 $string['couldnotassignrole'] = 'S\'ha produït un error greu sense especificar mentre se us intentava assignar un rol';
 $string['couldnotupdatenoexistinguser'] = 'No s\'ha pogut actualitzar l\'usuari perquè no existeix.';
 $string['countriesphpempty'] = 'Error: falta o està buit el fitxer de països countries.php del paquet d\'idioma {$a}';
@@ -508,7 +509,7 @@ $string['storedfilecannotcreatefiledirs'] = 'No s\'han pogut crear els directori
 $string['storedfilecannotread'] = 'No es pot llegir el fitxer bé perquè no existeix, bé perquè hi ha problemes amb els permisos.';
 $string['storedfilecannotreadfile'] = 'No es pot llegir l\'arxiu «{$a}». O l\'arxiu no existeix o hi ha un problema de permisos.';
 $string['storedfilenotcreated'] = 'No s\'ha pogut crear el fitxer "{$a->contextid}/{$a->component}/{$a->filearea}/{$a->itemid}{$a->filepath}{$a->filename}"';
-$string['storedfileproblem'] = 'Hi ha una excepció desconeguda en relació amb els fitxers locals ({$ a})';
+$string['storedfileproblem'] = 'Hi ha una excepció desconeguda en relació amb els fitxers locals ({$a})';
 $string['tagdisabled'] = 'S\'han desactivat les etiquetes';
 $string['tagnotfound'] = 'L\'etiqueta especificada no s\'ha pogut trobar a la base de dades';
 $string['targetdatabasenotempty'] = 'La base de dades de destí no està buida. S\'ha aturat la transferència per raons de seguretat.';

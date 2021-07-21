@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_overview', language 'ru', version '3.8'.
+ * Strings for component 'gradereport_overview', language 'ru', version '3.11'.
  *
  * @package     gradereport_overview
  * @category    string
@@ -29,3 +29,4 @@ $string['eventgradereportviewed'] = 'Отчет «Обзорный отчет» 
 $string['gradesoverview'] = 'Обзор оценок';
 $string['overview:view'] = 'Просматривать обзорный отчет';
 $string['pluginname'] = 'Обзорный отчет';
+$string['privacy:metadata'] = 'В отчете «Обзор оценок» отображаются только данные, хранящиеся в других местах.';

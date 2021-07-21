@@ -17,7 +17,6 @@
  * AJAX helper for the tag management page.
  *
  * @module     core/tag
- * @package    core_tag
  * @copyright  2015 Marina Glancy
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since      3.0
@@ -51,7 +50,7 @@ define([
         initTagindexPage: function() {
             // Click handler for changing tag type.
             $('body').delegate('.tagarea[data-ta] a[data-quickload=1]', 'click', function(e) {
-                var pendingPromise = new Pending();
+                var pendingPromise = new Pending('core/tag:initTagindexPage');
 
                 e.preventDefault();
                 var target = $(this);
@@ -74,7 +73,7 @@ define([
                     templates.replaceNode(tagarea, html, js);
                     return;
                 })
-                .then(pendingPromise.resolve)
+                .always(pendingPromise.resolve)
                 .catch(notification.exception);
             });
         },
@@ -105,7 +104,7 @@ define([
 
                     return;
                 })
-                .then(pendingPromise.resolve)
+                .always(pendingPromise.resolve)
                 .catch(notification.exception);
 
                 if (e.ajaxreturn.itemtype === 'tagflag') {
@@ -125,17 +124,17 @@ define([
                 e.preventDefault();
                 var href = $(this).attr('href');
                 str.get_strings([
-                        {key: 'delete', component: 'core'},
-                        {key: 'confirmdeletetag', component: 'tag'},
-                        {key: 'yes', component: 'core'},
-                        {key: 'no', component: 'core'},
+                    {key: 'delete', component: 'core'},
+                    {key: 'confirmdeletetag', component: 'tag'},
+                    {key: 'yes', component: 'core'},
+                    {key: 'no', component: 'core'},
                 ])
                 .then(function(s) {
                     return notification.confirm(s[0], s[1], s[2], s[3], function() {
                         window.location.href = href;
                     });
                 })
-                .then(pendingPromise.resolve)
+                .always(pendingPromise.resolve)
                 .catch(notification.exception);
             });
 
@@ -152,10 +151,10 @@ define([
                 var tempElement = $("<input type='hidden'/>").attr('name', this.name);
                 e.preventDefault();
                 str.get_strings([
-                    {key: 'delete'},
+                    {key: 'delete', component: 'core'},
                     {key: 'confirmdeletetags', component: 'tag'},
-                    {key: 'yes'},
-                    {key: 'no'},
+                    {key: 'yes', component: 'core'},
+                    {key: 'no', component: 'core'},
                 ])
                 .then(function(s) {
                     return notification.confirm(s[0], s[1], s[2], s[3], function() {
@@ -163,7 +162,7 @@ define([
                         form.submit();
                     });
                 })
-                .then(pendingPromise.resolve)
+                .always(pendingPromise.resolve)
                 .catch(notification.exception);
             });
 
@@ -184,11 +183,12 @@ define([
                     .then(function(s) {
                         return notification.alert(s[0], s[1], s[2]);
                     })
-                    .then(pendingPromise.resolve)
+                    .always(pendingPromise.resolve)
                     .catch(notification.exception);
 
                     return;
                 }
+
                 var tempElement = $("<input type='hidden'/>").attr('name', this.name);
                 var saveButtonText = '';
                 var tagOptions = [];
@@ -203,7 +203,7 @@ define([
 
                 str.get_strings([
                     {key: 'combineselected', component: 'tag'},
-                    {key: 'continue'}
+                    {key: 'continue', component: 'core'}
                 ])
                 .then(function(langStrings) {
                     var modalTitle = langStrings[0];
@@ -251,18 +251,18 @@ define([
                     return;
 
                 })
-                .then(pendingPromise.resolve)
+                .always(pendingPromise.resolve)
                 .catch(notification.exception);
             });
 
             // When user changes tag name to some name that already exists suggest to combine the tags.
             $('body').on('updatefailed', '[data-inplaceeditable][data-itemtype=tagname]', function(e) {
-                var pendingPromise = new Pending('core/tag:tag-management-combine-exists');
-
                 var exception = e.exception; // The exception object returned by the callback.
                 var newvalue = e.newvalue; // The value that user tried to udpated the element to.
                 var tagid = $(e.target).attr('data-itemid');
                 if (exception.errorcode === 'namesalreadybeeingused') {
+                    var pendingPromise = new Pending('core/tag:updatefailed');
+
                     e.preventDefault(); // This will prevent default error dialogue.
                     str.get_strings([
                         {key: 'confirm', component: 'core'},
@@ -277,14 +277,14 @@ define([
                                 '&action=renamecombine&sesskey=' + M.cfg.sesskey;
                         });
                     })
-                    .then(pendingPromise.resolve)
+                    .always(pendingPromise.resolve)
                     .catch(notification.exception);
                 }
             });
 
             // Form for adding standard tags.
             $('body').on('click', 'a[data-action=addstandardtag]', function(e) {
-                var pendingPromise = new Pending();
+                var pendingPromise = new Pending('core/tag:addstandardtag');
                 e.preventDefault();
 
                 return ModalFactory.create({
@@ -341,7 +341,7 @@ define([
                     return;
 
                 })
-                .then(pendingPromise.resolve)
+                .always(pendingPromise.resolve)
                 .catch(notification.exception);
             });
         },
@@ -392,7 +392,8 @@ define([
                         component: 'tag'
                     },
                     {
-                        key: 'create'
+                        key: 'create',
+                        component: 'core'
                     }
                 ];
 
@@ -456,7 +457,7 @@ define([
                     return modal;
 
                 })
-                .then(pendingPromise.resolve)
+                .always(pendingPromise.resolve)
                 .catch(notification.exception);
             });
 
@@ -476,7 +477,7 @@ define([
                         window.location.href = href;
                     });
                 })
-                .then(pendingPromise.resolve)
+                .always(pendingPromise.resolve)
                 .catch(notification.exception);
             });
         }

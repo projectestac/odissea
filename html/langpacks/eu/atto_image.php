@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'eu', version '3.8'.
+ * Strings for component 'atto_image', language 'eu', version '3.11'.
  *
  * @package     atto_image
  * @category    string
@@ -40,8 +40,8 @@ $string['enterurl'] = 'Idatzi URLa';
 $string['height'] = 'Altuera';
 $string['imageproperties'] = 'Irudiaren ezaugarriak';
 $string['pluginname'] = 'Txertatu edo editatu irudia';
-$string['presentation'] = 'Deskribapena ez da beharrezkoa';
-$string['presentationoraltrequired'] = 'Irudiek deskribapena behar dute, besterik adierazi ezean';
+$string['presentation'] = 'Irudi hau soilik apaingarria da';
+$string['presentationoraltrequired'] = 'Irudiek deskribapena behar dute, soilik apaingarria gisa markatuta egon ezean.';
 $string['preview'] = 'Aurreikusi';
 $string['privacy:metadata'] = 'atto_image pluginak ez du datu pertsonalik biltzen.';
 $string['saveimage'] = 'Gorde irudia';

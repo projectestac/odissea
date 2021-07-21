@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'ja', version '3.8'.
+ * Strings for component 'role', language 'ja', version '3.11'.
  *
  * @package     role
  * @category    string
@@ -103,7 +103,7 @@ $string['category:create'] = 'カテゴリを作成する';
 $string['category:delete'] = 'カテゴリを削除する';
 $string['category:manage'] = 'カテゴリを管理する';
 $string['category:update'] = 'カテゴリを更新する';
-$string['category:viewcourselist'] = 'あなたが登録していないコース一覧を表示する';
+$string['category:viewcourselist'] = 'コースカテゴリおよびその中のコースを表示する';
 $string['category:viewhiddencategories'] = '非表示カテゴリを表示する';
 $string['category:visibility'] = '非表示カテゴリを表示する';
 $string['checkglobalpermissions'] = 'システムパーミッションをチェックする';
@@ -158,6 +158,15 @@ $string['confirmunassign'] = '本当にこのユーザからこのロールを�
 $string['confirmunassignno'] = 'キャンセル';
 $string['confirmunassigntitle'] = 'ロール変更を承認する';
 $string['confirmunassignyes'] = '削除';
+$string['contentbank:access'] = 'コンテンツバンクにアクセスする';
+$string['contentbank:deleteanycontent'] = 'コンテンツバンクからすべてのコンテンツを削除する';
+$string['contentbank:deleteowncontent'] = '自分のコンテンツバンクからコンテンツを削除する';
+$string['contentbank:downloadcontent'] = 'コンテンツバンクからコンテンツをダウンロードする';
+$string['contentbank:manageanycontent'] = 'コンテンツバンクからのすべてのコンテンツを管理する';
+$string['contentbank:manageowncontent'] = '自分のコンテンツバンクからのコンテンツを管理する';
+$string['contentbank:upload'] = 'コンテンツバンクに新しいコンテンツをアップロードする';
+$string['contentbank:useeditor'] = 'コンテンツタイプエディタを使用してコンテンツを作成または編集する';
+$string['contentbank:viewunlistedcontent'] = 'コンテンツバンクから非公開のコンテンツを表示する';
 $string['context'] = 'コンテクスト';
 $string['course:activityvisibility'] = '活動を表示/非表示にする';
 $string['course:bulkmessaging'] = '多くの人にメッセージを送信する';
@@ -168,9 +177,11 @@ $string['course:changelockedcustomfields'] = 'ロック済みカスタムフィ�
 $string['course:changeshortname'] = 'コース省略名を変更する';
 $string['course:changesummary'] = 'コース概要を変更する';
 $string['course:configurecustomfields'] = 'カスタムフィールドを設定する';
+$string['course:configuredownloadcontent'] = 'コースコンテンツのダウンロードを設定する';
 $string['course:create'] = 'コースを作成する';
 $string['course:creategroupconversations'] = 'グループ会話を作成する';
 $string['course:delete'] = 'コースを削除する';
+$string['course:downloadcoursecontent'] = 'コースコンテンツのダウンロード';
 $string['course:enrolconfig'] = 'コースの登録インスタンスを設定する';
 $string['course:enrolreview'] = 'コース登録をレビューする';
 $string['course:ignoreavailabilityrestrictions'] = '利用制限を無視する';
@@ -184,6 +195,7 @@ $string['course:managescales'] = '評価尺度を管理する';
 $string['course:markcomplete'] = 'コース完了に関してユーザに完了をマークする';
 $string['course:movesections'] = 'セクションを移動する';
 $string['course:overridecompletion'] = '活動完了ステータスをオーバーライドする';
+$string['course:recommendactivity'] = '活動チューザの活動を推奨する';
 $string['course:renameroles'] = 'ロールをリネームする';
 $string['course:request'] = '新しいコースをリクエストする';
 $string['course:reset'] = 'コースをリセットする';
@@ -323,6 +335,8 @@ $string['overrideroles'] = 'ロールをオーバーライドする';
 $string['overriderolesin'] = '{$a} のロールをオーバーライドする';
 $string['overrides'] = 'オーバーライド';
 $string['overridesbycontext'] = 'オーバーライド (コンテクストによる)';
+$string['payment:manageaccounts'] = 'アカウントを管理する';
+$string['payment:viewpayments'] = '支払いを表示する';
 $string['permission'] = 'パーミッション';
 $string['permission_help'] = 'パーミッションはケイパビリティを付与するための設定です。設定には4つのオプションがあります:
 
@@ -441,9 +455,11 @@ $string['site:mnetloginfromremote'] = 'MNet経由でリモートアプリケー�
 $string['site:mnetlogintoremote'] = 'MNet経由でリモートアプリケーションを散策する';
 $string['site:readallmessages'] = 'サイトのすべてのメッセージを読む';
 $string['site:restore'] = 'コースをリストアする';
+$string['site:senderrormessage'] = 'エラーページからサポートユーザにメッセージを送信する';
 $string['site:sendmessage'] = 'すべてのユーザにメッセージを送信する';
 $string['site:trustcontent'] = '送信されたコンテンツを信頼する';
 $string['site:uploadusers'] = 'ファイルから新しいユーザをアップロードする';
+$string['site:viewanonymousevents'] = 'レポートで匿名イベントを表示する';
 $string['site:viewfullnames'] = 'ユーザのフルネームを常に表示する';
 $string['site:viewparticipants'] = '参加者を表示する';
 $string['site:viewreports'] = 'レポートを表示する';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_graphs', language 'ru', version '3.8'.
+ * Strings for component 'scormreport_graphs', language 'ru', version '3.11'.
  *
  * @package     scormreport_graphs
  * @category    string
@@ -29,3 +29,4 @@ $string['invaliddata'] = 'Недостаточно данных';
 $string['participants'] = 'Количество участников';
 $string['percent'] = 'Обеспеченный процент (%)';
 $string['pluginname'] = 'Графический отчет';
+$string['privacy:metadata'] = 'В графическом отчете только отображаются данные, хранящиеся в других местах.';

@@ -63,7 +63,7 @@ class phpunit_util extends testing_util {
     /**
      * @var array Files to skip when dropping dataroot folder
      */
-    protected static $datarootskipondrop = array('.', '..', 'lock', 'webrunner.xml');
+    protected static $datarootskipondrop = array('.', '..', 'lock');
 
     /**
      * Load global $CFG;
@@ -483,25 +483,23 @@ class phpunit_util extends testing_util {
     }
 
     /**
-     * Builds dirroot/phpunit.xml and dataroot/phpunit/webrunner.xml files using defaults from /phpunit.xml.dist
+     * Builds dirroot/phpunit.xml file using defaults from /phpunit.xml.dist
      * @static
      * @return bool true means main config file created, false means only dataroot file created
      */
     public static function build_config_file() {
         global $CFG;
 
-        $template = '
-        <testsuite name="@component@_testsuite">
-            <directory suffix="_test.php">@dir@</directory>
-        </testsuite>';
-        $filtertemplate = '
-        <testsuite name="@component@_testsuite">
-            <directory suffix="_test.php">@dir@</directory>
-        </testsuite>';
+        $template = <<<EOF
+            <testsuite name="@component@_testsuite">
+              <directory suffix="_test.php">@dir@</directory>
+            </testsuite>
+
+        EOF;
         $data = file_get_contents("$CFG->dirroot/phpunit.xml.dist");
 
         $suites = '';
-        $whitelists = [];
+        $includelists = [];
         $excludelists = [];
 
         $subsystems = core_component::get_core_subsystems();
@@ -517,7 +515,7 @@ class phpunit_util extends testing_util {
 
             $dir = substr($fulldir, strlen($CFG->dirroot) + 1);
             if ($coverageinfo = self::get_coverage_info($fulldir)) {
-                $whitelists = array_merge($whitelists, $coverageinfo->get_whitelists($dir));
+                $includelists = array_merge($includelists, $coverageinfo->get_includelists($dir));
                 $excludelists = array_merge($excludelists, $coverageinfo->get_excludelists($dir));
             }
         }
@@ -544,7 +542,7 @@ class phpunit_util extends testing_util {
 
                 if ($coverageinfo = self::get_coverage_info($plugindir)) {
 
-                    $whitelists = array_merge($whitelists, $coverageinfo->get_whitelists($dir));
+                    $includelists = array_merge($includelists, $coverageinfo->get_includelists($dir));
                     $excludelists = array_merge($excludelists, $coverageinfo->get_excludelists($dir));
                 }
             }
@@ -555,14 +553,14 @@ class phpunit_util extends testing_util {
         // end up being placed in phpunit or behat test code.
         $sequencestart = 100000 + mt_rand(0, 99) * 1000;
 
-        $data = preg_replace('|<!--@plugin_suites_start@-->.*<!--@plugin_suites_end@-->|s', $suites, $data, 1);
+        $data = preg_replace('| *<!--@plugin_suites_start@-->.*<!--@plugin_suites_end@-->|s', trim($suites, "\n"), $data, 1);
         $data = str_replace(
             '<const name="PHPUNIT_SEQUENCE_START" value=""/>',
             '<const name="PHPUNIT_SEQUENCE_START" value="' . $sequencestart . '"/>',
             $data);
 
-        $filters = self::get_filter_config($whitelists, $excludelists);
-        $data = str_replace('<!--@filterlist@-->', $filters, $data);
+        $coverages = self::get_coverage_config($includelists, $excludelists);
+        $data = preg_replace('| *<!--@coveragelist@-->|s', trim($coverages, "\n"), $data);
 
         $result = false;
         if (is_writable($CFG->dirroot)) {
@@ -570,14 +568,6 @@ class phpunit_util extends testing_util {
                 testing_fix_file_permissions("$CFG->dirroot/phpunit.xml");
             }
         }
-
-        // relink - it seems that xml:base does not work in phpunit xml files, remove this nasty hack if you find a way to set xml base for relative refs
-        $data = str_replace('lib/phpunit/', $CFG->dirroot.DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'phpunit'.DIRECTORY_SEPARATOR, $data);
-        $data = preg_replace('|<directory suffix="_test.php">([^<]+)</directory>|',
-            '<directory suffix="_test.php">'.$CFG->dirroot.(DIRECTORY_SEPARATOR === '\\' ? '\\\\' : DIRECTORY_SEPARATOR).'$1</directory>',
-            $data);
-        file_put_contents("$CFG->dataroot/phpunit/webrunner.xml", $data);
-        testing_fix_file_permissions("$CFG->dataroot/phpunit/webrunner.xml");
 
         return (bool)$result;
     }
@@ -591,19 +581,21 @@ class phpunit_util extends testing_util {
     public static function build_component_config_files() {
         global $CFG;
 
-        $template = '
-    <testsuites>
-        <testsuite name="@component@_testsuite">
-            <directory suffix="_test.php">.</directory>
-        </testsuite>
-    </testsuites>';
-        $filterdefault = '
-            <whitelist processUncoveredFilesFromWhitelist="false">
-                <directory suffix=".php">.</directory>
-                <exclude>
-                    <directory suffix="_test.php">.</directory>
-                </exclude>
-            </whitelist>';
+        $template = <<<EOT
+            <testsuites>
+              <testsuite name="@component@_testsuite">
+                <directory suffix="_test.php">.</directory>
+              </testsuite>
+            </testsuites>
+          EOT;
+        $coveragedefault = <<<EOT
+            <include>
+              <directory suffix=".php">.</directory>
+            </include>
+            <exclude>
+              <directory suffix="_test.php">.</directory>
+            </exclude>
+        EOT;
 
         // Start a sequence between 100000 and 199000 to ensure each call to init produces
         // different ids in the database.  This reduces the risk that hard coded values will
@@ -612,7 +604,7 @@ class phpunit_util extends testing_util {
 
         // Use the upstream file as source for the distributed configurations
         $ftemplate = file_get_contents("$CFG->dirroot/phpunit.xml.dist");
-        $ftemplate = preg_replace('|<!--All core suites.*</testsuites>|s', '<!--@component_suite@-->', $ftemplate);
+        $ftemplate = preg_replace('| *<!--All core suites.*</testsuites>|s', '<!--@component_suite@-->', $ftemplate);
 
         // Gets all the components with tests
         $components = tests_finder::get_components_with_tests('phpunit');
@@ -625,13 +617,13 @@ class phpunit_util extends testing_util {
 
             $fcontents = str_replace('<!--@component_suite@-->', $ctemplate, $ftemplate);
 
-            // Check for filter configurations.
+            // Check for coverage configurations.
             if ($coverageinfo = self::get_coverage_info($cpath)) {
-                $filters = self::get_filter_config($coverageinfo->get_whitelists(''), $coverageinfo->get_excludelists(''));
+                $coverages = self::get_coverage_config($coverageinfo->get_includelists(''), $coverageinfo->get_excludelists(''));
             } else {
-                $filters = $filterdefault;
+                $coverages = $coveragedefault;
             }
-            $fcontents = str_replace('<!--@filterlist@-->', $filters, $fcontents);
+            $fcontents = preg_replace('| *<!--@coveragelist@-->|s', trim($coverages, "\n"), $fcontents);
 
             // Apply it to the file template.
             $fcontents = str_replace(
@@ -924,7 +916,7 @@ class phpunit_util extends testing_util {
      *        or the name of the static class when calling a static method.
      * @return mixed the respective return value of the method.
      */
-    public static function call_internal_method($object, $methodname, array $params = array(), $classname) {
+    public static function call_internal_method($object, $methodname, array $params, $classname) {
         $reflection = new \ReflectionClass($classname);
         $method = $reflection->getMethod($methodname);
         $method->setAccessible(true);
@@ -939,34 +931,34 @@ class phpunit_util extends testing_util {
      * @return  string
      */
     protected static function pad(string $string, int $level) : string {
-        return str_repeat(" ", $level * 4) . "{$string}\n";
+        return str_repeat(" ", $level * 2) . "{$string}\n";
     }
 
     /**
-     * Get the filter config for the supplied whitelist and excludelist configuration.
+     * Get the coverage config for the supplied includelist and excludelist configuration.
      *
-     * @param   array[] $whitelists The list of files/folders in the whitelist.
+     * @param   array[] $includelists The list of files/folders in the includelist.
      * @param   array[] $excludelists The list of files/folders in the excludelist.
      * @return  string
      */
-    protected static function get_filter_config(array $whitelists, array $excludelists) : string {
-        $filters = '';
-        if (!empty($whitelists)) {
-            $filters .= self::pad("<whitelist>", 2);
-            foreach ($whitelists as $line) {
-                $filters .= self::pad($line, 3);
+    protected static function get_coverage_config(array $includelists, array $excludelists) : string {
+        $coverages = '';
+        if (!empty($includelists)) {
+            $coverages .= self::pad("<include>", 2);
+            foreach ($includelists as $line) {
+                $coverages .= self::pad($line, 3);
             }
+            $coverages .= self::pad("</include>", 2);
             if (!empty($excludelists)) {
-                $filters .= self::pad("<exclude>", 3);
+                $coverages .= self::pad("<exclude>", 2);
                 foreach ($excludelists as $line) {
-                    $filters .= self::pad($line, 4);
+                    $coverages .= self::pad($line, 3);
                 }
-                $filters .= self::pad("</exclude>", 3);
+                $coverages .= self::pad("</exclude>", 2);
             }
-            $filters .= self::pad("</whitelist>", 2);
         }
 
-        return $filters;
+        return $coverages;
     }
 
     /**

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_session', language 'sv', version '3.8'.
+ * Strings for component 'cachestore_session', language 'sv', version '3.11'.
  *
  * @package     cachestore_session
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Sessionscache';
-$string['privacy:metadata:core_user'] = 'Plugin-modulen Sessionscache lagra kortvarigt data som en del i cachningsfunktionaliteten. Denna data lagras i den kortlivade användarsessionen.';
+$string['privacy:metadata:core_user'] = 'Pluginmodulen modulen Sessionscache lagra kortvarigt data som en del i cachningsfunktionaliteten. Denna data lagras i den kortlivade användarsessionen.';

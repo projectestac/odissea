@@ -439,6 +439,8 @@ class qformat_xml extends qformat_default {
         $qo->answernumbering = $this->getpath($question,
                 array('#', 'answernumbering', 0, '#'), 'abc');
         $qo->shuffleanswers = $this->trans_single($shuffleanswers);
+        $qo->showstandardinstruction = $this->getpath($question,
+            array('#', 'showstandardinstruction', 0, '#'), '1');
 
         // There was a time on the 1.8 branch when it could output an empty
         // answernumbering tag, so fix up any found.
@@ -768,10 +770,20 @@ class qformat_xml extends qformat_default {
                 array('#', 'responsefieldlines', 0, '#'), 15);
         $qo->responserequired = $this->getpath($question,
                 array('#', 'responserequired', 0, '#'), 1);
+        $qo->minwordlimit = $this->getpath($question,
+                array('#', 'minwordlimit', 0, '#'), null);
+        $qo->minwordenabled = !empty($qo->minwordlimit);
+        $qo->maxwordlimit = $this->getpath($question,
+                array('#', 'maxwordlimit', 0, '#'), null);
+        $qo->maxwordenabled = !empty($qo->maxwordlimit);
         $qo->attachments = $this->getpath($question,
                 array('#', 'attachments', 0, '#'), 0);
         $qo->attachmentsrequired = $this->getpath($question,
                 array('#', 'attachmentsrequired', 0, '#'), 0);
+        $qo->filetypeslist = $this->getpath($question,
+                array('#', 'filetypeslist', 0, '#'), null);
+        $qo->maxbytes = $this->getpath($question,
+                array('#', 'maxbytes', 0, '#'), null);
         $qo->graderinfo = $this->import_text_with_files($question,
                 array('#', 'graderinfo', 0), '', $this->get_format($qo->questiontextformat));
         $qo->responsetemplate['text'] = $this->getpath($question,
@@ -1166,7 +1178,6 @@ class qformat_xml extends qformat_default {
      * @return string xml segment
      */
     public function writequestion($question) {
-        global $CFG, $OUTPUT;
 
         $invalidquestion = false;
         $fs = get_file_storage();
@@ -1257,7 +1268,9 @@ class qformat_xml extends qformat_default {
                         $this->get_single($question->options->shuffleanswers) .
                         "</shuffleanswers>\n";
                 $expout .= "    <answernumbering>" . $question->options->answernumbering .
-                        "</answernumbering>\n";
+                    "</answernumbering>\n";
+                $expout .= "    <showstandardinstruction>" . $question->options->showstandardinstruction .
+                    "</showstandardinstruction>\n";
                 $expout .= $this->write_combined_feedback($question->options, $question->id, $question->contextid);
                 $expout .= $this->write_answers($question->options->answers);
                 break;
@@ -1344,10 +1357,18 @@ class qformat_xml extends qformat_default {
                         "</responserequired>\n";
                 $expout .= "    <responsefieldlines>" . $question->options->responsefieldlines .
                         "</responsefieldlines>\n";
+                $expout .= "    <minwordlimit>" . $question->options->minwordlimit .
+                        "</minwordlimit>\n";
+                $expout .= "    <maxwordlimit>" . $question->options->maxwordlimit .
+                        "</maxwordlimit>\n";
                 $expout .= "    <attachments>" . $question->options->attachments .
                         "</attachments>\n";
                 $expout .= "    <attachmentsrequired>" . $question->options->attachmentsrequired .
                         "</attachmentsrequired>\n";
+                $expout .= "    <maxbytes>" . $question->options->maxbytes .
+                        "</maxbytes>\n";
+                $expout .= "    <filetypeslist>" . $question->options->filetypeslist .
+                        "</filetypeslist>\n";
                 $expout .= "    <graderinfo " .
                         $this->format($question->options->graderinfoformat) . ">\n";
                 $expout .= $this->writetext($question->options->graderinfo, 3);

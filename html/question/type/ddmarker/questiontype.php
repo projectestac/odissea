@@ -28,9 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot . '/question/type/ddimageortext/questiontypebase.php');
 
-define('QTYPE_DDMARKER_BGIMAGE_MAXWIDTH', 600);
-define('QTYPE_DDMARKER_BGIMAGE_MAXHEIGHT', 400);
-
 /**
  * Question hint for ddmarker.
  *
@@ -84,6 +81,12 @@ class question_hint_ddmarker extends question_hint_with_parts {
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qtype_ddmarker extends qtype_ddtoimage_base {
+
+    public function save_defaults_for_new_questions(stdClass $fromform): void {
+        parent::save_defaults_for_new_questions($fromform);
+        $this->set_default_value('showmisplaced', $fromform->showmisplaced);
+        $this->set_default_value('shuffleanswers', $fromform->shuffleanswers);
+    }
 
     public function save_question_options($formdata) {
         global $DB, $USER;
@@ -151,10 +154,6 @@ class qtype_ddmarker extends qtype_ddtoimage_base {
             list($sql, $params) = $DB->get_in_or_equal(array_values($olddragids));
             $DB->delete_records_select('qtype_ddmarker_drags', "id $sql", $params);
         }
-
-        self::constrain_image_size_in_draft_area($formdata->bgimage,
-                                                    QTYPE_DDMARKER_BGIMAGE_MAXWIDTH,
-                                                    QTYPE_DDMARKER_BGIMAGE_MAXHEIGHT);
         file_save_draft_area_files($formdata->bgimage, $formdata->context->id,
                                     'qtype_ddmarker', 'bgimage', $formdata->id,
                                     array('subdirs' => 0, 'maxbytes' => 0, 'maxfiles' => 1));

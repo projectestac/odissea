@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'ar', version '3.8'.
+ * Strings for component 'editor', language 'ar', version '3.11'.
  *
  * @package     editor
  * @category    string
@@ -44,7 +44,7 @@ $string['cancel'] = 'إلغاء';
 $string['cellpadding'] = 'نطاق الخلية';
 $string['cellspacing'] = 'المسافة بين الخلايا';
 $string['choosechar'] = 'إختر الحرف';
-$string['chooseicon'] = 'أختر أيقونه للإدراج';
+$string['chooseicon'] = 'إختر الأيقونة لأدراجها';
 $string['close'] = 'أغلق';
 $string['closeafterreplace'] = 'أغلق بعد الاستبدال';
 $string['cols'] = 'أعمدة';
@@ -107,8 +107,8 @@ $string['mustenterurl'] = 'يجب ادخال العنوان';
 $string['nolink'] = 'إمنع الربط التلقائي';
 $string['normal'] = 'عادي';
 $string['notimage'] = 'الملف المختار ليس صورة. الرجاء إختيار صورة';
-$string['notset'] = 'غير محدد';
-$string['ok'] = 'موافقة';
+$string['notset'] = 'غير مُعد';
+$string['ok'] = 'تمام';
 $string['options'] = 'خيارات';
 $string['orderedlist'] = 'قائمة منظمة';
 $string['outdent'] = 'إنقاص المسافة البادئة';
@@ -120,7 +120,7 @@ $string['pleaseenteralt'] = 'الرجاء إدخال نص بديل';
 $string['popupeditor'] = 'تكبير المحرر';
 $string['preformatted'] = 'منسق سابقاً';
 $string['preview'] = 'معاينة';
-$string['privacy:metadata:preference:htmleditor'] = 'تفضيلات محرر النص';
+$string['privacy:metadata:preference:htmleditor'] = 'تفضيلات محرر النصوص';
 $string['privacy:preference:htmleditor'] = 'المحرر الذي تفضل استعماله لكتابة نصوص HTML هو {$a}';
 $string['properties'] = 'خصائص';
 $string['redo'] = 'إعادة الإجراء الأخير';

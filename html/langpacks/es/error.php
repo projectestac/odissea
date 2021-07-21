@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'es', version '3.8'.
+ * Strings for component 'error', language 'es', version '3.11'.
  *
  * @package     error
  * @category    string
@@ -32,7 +32,7 @@ $string['agedigitalconsentmapinvalidcomma'] = '"{$a}" tiene más o menos de una 
 $string['agedigitalconsentmapinvalidcountry'] = '"{$a}" no es un valor válido para país.';
 $string['agedigitalconsentmapinvaliddefault'] = 'Falta el valor predeterminado (*).';
 $string['agelocationverificationdisabled'] = 'Verificación de ubicación y edad deshabilitadas';
-$string['alreadyloggedin'] = 'Está actualmente logueado como {$a}, necesita salir antes de volver a entrar con un usuario diferente.';
+$string['alreadyloggedin'] = 'Actualmente ha iniciado sesión como {$a}, necesita salir antes de volver a entrar con un usuario diferente.';
 $string['authnotexisting'] = 'El plugin de autorización no existe';
 $string['backupcontainexternal'] = 'Este fichero de copia de seguridad contiene nombres de Equipos de Red externos que no están configurados localmente';
 $string['backuptablefail'] = '¡Las tablas de copia de seguridad NO pueden ser configuradas correctamente!';
@@ -109,7 +109,7 @@ $string['cannotimport'] = 'Error de importación';
 $string['cannotimportformat'] = 'Lo sentimos, la importación de este formato aún no está implementado!';
 $string['cannotimportgrade'] = 'Error al importar calificaciones';
 $string['cannotinsertgrade'] = 'No se puede insertar el ítem de calificación sin el id de curso';
-$string['cannotinsertrate'] = 'No se puede insertar una nueva evaluación ({$a->id} = {$a->rating})';
+$string['cannotinsertrate'] = 'No se puede insertar una nueva valoración ({$a->id} = {$a->rating})';
 $string['cannotinsertrecord'] = 'No se pudo insertar el ID del nuevo registro {$a}';
 $string['cannotmailconfirm'] = 'Error al enviar el correo electrónico de confirmación de cambio de contraseña';
 $string['cannotmanualctrack'] = 'La actividad no prevé seguimiento manual de finalización';
@@ -155,7 +155,7 @@ $string['cannotsetupblock'] = 'Las tablas de los bloques NO se pudieron establec
 $string['cannotsetupcapformod'] = 'No se pueden establecer los permisos para {$a}';
 $string['cannotsetupcapforplugin'] = 'No se pueden establecer los permisos para {$a}';
 $string['cannotshowhidecoursesincategory'] = 'No se puede mostrar/ocultar los cursos en la categoría {$a}';
-$string['cannotsignup'] = 'No puede crear una nueva cuenta porque actualmente estás logueado como {$a}.';
+$string['cannotsignup'] = 'No puede crear una nueva cuenta porque actualmente ha iniciado sesión como {$a}.';
 $string['cannotunassigncap'] = 'No se puede revocar la asignación de capacidad obsoleta {$a->cap} del rol {$a->role}';
 $string['cannotunassignrolefrom'] = 'No se puede revocar la asignación de este usuario del Id de rol: {$a}';
 $string['cannotunzipfile'] = 'No se puede descomprimir el archivo';
@@ -184,6 +184,7 @@ $string['commentmisconf'] = 'ID del comentario está mal configurado';
 $string['componentisuptodate'] = 'El componente está actualizado';
 $string['confirmationnotenabled'] = 'La confirmación del usuario no está activada en este sitio';
 $string['confirmsesskeybad'] = 'Lo sentimos, pero su clave de sesión no ha podido ser confirmada para llevar a cabo esta acción. Esta característica de seguridad previene contra la ejecución en su nombre (accidental o maliciosa) de funciones importantes. Por favor, asegúrese de que realmente deseaba ejecutar esta función.';
+$string['contenttypenotfound'] = 'El tipo de banco de contenido \'{$a}\' no existe o no es reconocido.';
 $string['couldnotassignrole'] = 'Al intentar asignarle un rol, ha ocurrido un error grave no especificado';
 $string['couldnotupdatenoexistinguser'] = 'No se puede actualizar el usuario - el usuario no existe';
 $string['couldnotverifyagedigitalconsent'] = 'Ocurrió un error al tratar de verificar la edad de consentimiento digital.<br />Por favor póngase en contacto con el administrador.';
@@ -325,7 +326,7 @@ $string['invalidcourselevel'] = 'Nivel de contexto incorrecto';
 $string['invalidcoursemodule'] = 'ID de módulo de curso no válida';
 $string['invalidcoursenameshort'] = 'El nombre corto del curso no es valido';
 $string['invaliddata'] = 'La información suministrada es invalida';
-$string['invaliddatarootpermissions'] = 'Se han detectado permisos inválidos al intentar crear un directorio. Active la depuración para más detalles.';
+$string['invaliddatarootpermissions'] = 'Se han detectado permisos no válidos al tratar de crear un  directorio. Active la depuración (debugging) para más detalles.';
 $string['invaliddevicetype'] = 'Tipo de dispositivo inválido';
 $string['invalidelementid'] = 'El ID del elemento es incorrecto!';
 $string['invalidentry'] = 'Esta no es una entrada valida!';
@@ -353,7 +354,7 @@ $string['invalidpagesize'] = 'Tamaño de página incorrecto';
 $string['invalidpasswordpolicy'] = 'Directiva de contraseñas errónea';
 $string['invalidpaymentmethod'] = 'Método de pago incorrecto: {$a}';
 $string['invalidqueryparam'] = 'ERROR: Número incorrecto de parámetros de consulta. Se esperaban {$a->expected}, se tienen {$a->actual}.';
-$string['invalidratingarea'] = 'Área de calificación inválida';
+$string['invalidratingarea'] = 'Área de valoración inválida';
 $string['invalidrecord'] = 'No se puede encontrar registro de datos en la tabla {$a} de la base de datos.';
 $string['invalidrecordunknown'] = 'No se puede encontrar registro de datos en la base de datos.';
 $string['invalidrequest'] = 'Petición no válida';

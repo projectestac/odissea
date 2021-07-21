@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_textarea', language 'ru', version '3.8'.
+ * Strings for component 'profilefield_textarea', language 'ru', version '3.11'.
  *
  * @package     profilefield_textarea
  * @category    string
@@ -26,5 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Область ввода текста';
+$string['privacy:metadata:profile_field_textarea:data'] = 'Пользовательские данные поля «Текстовая область» профиля пользователя';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'Формат пользовательских данных поля «Текстовая область» профиля пользователя';
 $string['privacy:metadata:profile_field_textarea:fieldid'] = 'ID поля профиля';
+$string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Дополнительные данные профиля';
 $string['privacy:metadata:profile_field_textarea:userid'] = 'ID пользователя, данные которого хранятся в поле «Область ввода текста» профиля пользователя';

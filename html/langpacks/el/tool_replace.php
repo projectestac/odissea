@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'el', version '3.8'.
+ * Strings for component 'tool_replace', language 'el', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = 'Πρόσθετοι πίνακες παράλειψης';
+$string['additionalskiptables_desc'] = 'Μια λίστα πινάκων (διαχωρισμένων με κόμματα) που θα πρέπει να παραλείπονται κατά την εκτέλεση της αναζήτησης και αντικατάστασης της βάσης δεδομένων.';
 $string['cannotfit'] = 'Η αντικατάσταση υπερβαίνει το αρχικό μέγεθος και περικοπή δεν επιτρέπεται. Αδυναμία συνέχισης.';
 $string['disclaimer'] = 'Καταλαβαίνω τους κινδύνους αυτής της ενέργειας';
 $string['doit'] = 'Ναι, να γίνει!';

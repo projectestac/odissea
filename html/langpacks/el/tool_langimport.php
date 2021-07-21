@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'el', version '3.8'.
+ * Strings for component 'tool_langimport', language 'el', version '3.11'.
  *
  * @package     tool_langimport
  * @category    string
@@ -26,21 +26,25 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadnotavailable'] = 'Δεν είναι εφικτή η σύνδεση με τον εξυπηρετητή λήψεων. Δεν είναι εφικτή η αυτόματη εγκατάσταση ή ενημέρωση των πακέτων γλωσσών. Παρακαλούμε κάντε λήψη των κατάλληλων συμπιεσμένων αρχείων zip από το <a href="{$a->src}">{$a->src}</a> και αποσυμπιέστε τα χειροκίνητα στον κατάλογο δεδομένων <code>{$a->dest}</code>';
-$string['install'] = 'Eγκατάσταση επιλεγμένου πακέτου γλώσσας';
+$string['install'] = 'Εγκατάσταση επιλεγμένου/-ων πακέτων γλώσσας';
 $string['installedlangs'] = 'Εγκατεστημένα πακέτα γλωσσών';
+$string['installfailed'] = 'Η εγκατάσταση πακέτων γλωσσών απέτυχε!';
+$string['installfinished'] = 'Η εγκατάσταση πακέτων γλωσσών ολοκληρώθηκε.';
+$string['installpending'] = 'Τα ακόλουθα πακέτα γλωσσών θα εγκατασταθούν σύντομα: {$a}.';
+$string['installscheduled'] = 'Πακέτα γλωσσών προγραμματισμένα προς εγκατάσταση.';
 $string['langimport'] = 'Εισαγωγή γλωσσικού πακέτου';
 $string['langimportdisabled'] = 'Η δυνατότητα εισαγωγής γλώσσας έχει απενεργοποιηθεί. Πρέπει να ενημερώσετε τα πακέτα γλωσσών σας χειροκίνητα σε επίπεδο αρχείων συστήματος. Μην ξεχάσετε να εκκαθαρίσετε τις προσωρινές μνήμες αλφαριθμητικών αφού το κάνετε.';
-$string['langpackinstalled'] = 'Το πακέτο γλώσσας «{$a}» εγκαταστάθηκε επιτυχώς';
-$string['langpackinstalledevent'] = 'Το πακέτο γλώσσας εγκαταστάθηκε';
+$string['langpackinstalled'] = 'Το πακέτο γλώσσας «{$a}» εγκαταστάθηκε επιτυχώς.';
+$string['langpackinstalledevent'] = 'Το πακέτο γλώσσας εγκαταστάθηκε.';
 $string['langpacknotremoved'] = 'Παρουσιάστηκε κάποιο σφάλμα! Το πακέτο γλώσσας «{$a}» δεν έχει απεγκατασταθεί πλήρως. Παρακαλούμε ελέγξτε τα δικαιώματα αρχείων.';
-$string['langpackremoved'] = 'Το πακέτο γλώσσας «{$a}» απεγκαταστάθηκε';
-$string['langpackremovedevent'] = 'Το πακέτο γλώσσας απεγκαταστάθηκε';
-$string['langpackupdated'] = 'Το πακέτο γλώσσας «{$a}» ενημερώθηκε επιτυχώς';
-$string['langpackupdatedevent'] = 'Το πακέτο γλώσσας ενημερώθηκε';
+$string['langpackremoved'] = 'Το πακέτο γλώσσας «{$a}» απεγκαταστάθηκε.';
+$string['langpackremovedevent'] = 'Το πακέτο γλώσσας απεγκαταστάθηκε.';
+$string['langpackupdated'] = 'Το πακέτο γλώσσας «{$a}» ενημερώθηκε με επιτυχία.';
+$string['langpackupdatedevent'] = 'Το πακέτο γλώσσας ενημερώθηκε.';
 $string['langpackupdateskipped'] = 'Παράλειψη ενημέρωσης πακέτου γλώσσας «{$a}».';
-$string['langpackuptodate'] = 'Το πακέτο γλώσσας «{$a}» είναι ενημερωμένο';
+$string['langpackuptodate'] = 'Το πακέτο γλώσσας «{$a}» είναι ενημερωμένο.';
 $string['langunsupported'] = '<p>Ο εξυπηρετητής σας δεν φαίνεται να υποστηρίζει πλήρως τις ακόλουθες γλώσσες:</p><ul>{$a->missinglocales}</ul><p>Αντ\' αυτού, η γενική τοπική ρύθμιση ({$a->globallocale}) θα χρησιμοποιηθεί για τη διαμόρφωση ορισμένων συμβολοσειρών, όπως ημερομηνιών ή αριθμών.</p>';
-$string['langupdatecomplete'] = 'Η ενημέρωση του πακέτου γλώσσας ολοκληρώθηκε';
+$string['langupdatecomplete'] = 'Η ενημέρωση του πακέτου γλώσσας ολοκληρώθηκε.';
 $string['missingcfglangotherroot'] = 'Λείπει η τιμή $CFG->langotherroot στις ρυθμίσεις.';
 $string['missinglangparent'] = 'Απούσα γλώσσα-γονέας <em>{$a->parent}</em> του <em>{$a->lang}</em>.';
 $string['noenglishuninstall'] = 'Δεν είναι εφικτή η απεγκατάσταση του πακέτου Αγγλικής γλώσσας.';
@@ -48,7 +52,9 @@ $string['nolangupdateneeded'] = 'Όλα τα πακέτα γλωσσών είν�
 $string['pluginname'] = 'Πακέτα γλωσσών';
 $string['privacy:metadata'] = 'Το πρόσθετο «Πακέτα γλώσσας» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['purgestringcaches'] = 'Εκκαθάριση κρυφών μνημών συμβολοσειρών';
+$string['search'] = 'Αναζήτηση διαθέσιμων πακέτων γλωσσών';
 $string['selectlangs'] = 'Επιλογή γλωσσών για απεγκατάσταση';
 $string['uninstall'] = 'Απεγκατάσταση επιλεγμένων πακέτων γλωσσών';
 $string['uninstallconfirm'] = 'Πρόκειται να απεγκαταστήσετε πλήρως αυτά τα πακέτα γλωσσών: <strong>{$a}</strong>. Είστε σίγουροι;';
 $string['updatelangs'] = 'Ενημέρωση όλων των εγκατεστημένων πακέτων γλωσσών';
+$string['updatelangsnote'] = 'Η ενημέρωση όλων των εγκατεστημένων πακέτων γλωσσών κάνοντας κλικ στο κουμπί μπορεί να διαρκέσει πολύ και να οδηγήσει σε υπέρβαση χρονικών ορίων. Συνιστάται αντί αυτού να κάνετε χρήση της προγραμματισμένης εργασίας «{$a->taskname}» (η οποία εκτελείται από προεπιλογή κάθε μέρα).';

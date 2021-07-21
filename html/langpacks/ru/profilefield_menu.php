@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_menu', language 'ru', version '3.8'.
+ * Strings for component 'profilefield_menu', language 'ru', version '3.11'.
  *
  * @package     profilefield_menu
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Выбор из списка';
+$string['pluginname'] = 'Выпадающее меню';
+$string['privacy:metadata:profilefield_menu:data'] = 'Пользовательские данные поля «Выпадающее меню» профиля пользователя';
+$string['privacy:metadata:profilefield_menu:dataformat'] = 'Формат пользовательских данных поля «Выпадающее меню» профиля пользователя';
 $string['privacy:metadata:profilefield_menu:fieldid'] = 'ID поля профиля';
-$string['privacy:metadata:profilefield_menu:userid'] = 'ID пользователя, данные которого хранятся в поле «Выбор из списка» профиля пользователя';
+$string['privacy:metadata:profilefield_menu:tableexplanation'] = 'Дополнительные данные профиля';
+$string['privacy:metadata:profilefield_menu:userid'] = 'ID пользователя, данные которого хранятся в поле «Выпадающее меню» профиля пользователя';

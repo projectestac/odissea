@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'ru', version '3.8'.
+ * Strings for component 'tool_installaddon', language 'ru', version '3.11'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -49,6 +49,7 @@ $string['permcheckrepeat'] = 'Проверить снова';
 $string['permcheckresultno'] = 'Каталог <em>{$a->path}</em>, предназначенный  для плагинов указанного типа не доступен для записи';
 $string['permcheckresultyes'] = 'Каталог <em>{$a->path}</em>, предназначенный  для плагинов указанного типа доступен для записи';
 $string['pluginname'] = 'Установщик плагинов';
+$string['privacy:metadata'] = 'Плагин Установщик плагинов не хранит никаких личных данных.';
 $string['remoterequestalreadyinstalled'] = 'Есть запрос на установку на этом сайте плагина «{$a->name}» ({$a->component}) версии {$a->version} из каталога плагинов Moodle. Однако, этот плагин <strong>уже установлен</strong> на этом сайте.';
 $string['remoterequestconfirm'] = 'Есть запрос на установку на этом сайте плагина «<strong>{$a->name}</strong>» ({$a->component}) версии {$a->version} из каталога плагинов Moodle. Если Вы нажмете «Продолжить», ZIP-пакет с плагином будет скачан для проверки. На этом этапе ничего не будет устанавливаться.';
 $string['remoterequestinvalid'] = 'Есть запрос на установку на этом сайте плагина из каталога плагинов Moodle. К сожалению, этот запрос был некорретным и плагин не может быть установлен.';

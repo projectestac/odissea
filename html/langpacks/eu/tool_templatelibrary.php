@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_templatelibrary', language 'eu', version '3.8'.
+ * Strings for component 'tool_templatelibrary', language 'eu', version '3.11'.
  *
  * @package     tool_templatelibrary
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Osagai guztiak';
 $string['component'] = 'Osagaia';
+$string['core'] = 'Muina';
 $string['coresubsystem'] = 'Azpisistema ({$a})';
 $string['documentation'] = 'Dokumentazioa';
 $string['example'] = 'Adibidea';

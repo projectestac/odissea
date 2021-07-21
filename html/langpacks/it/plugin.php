@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'it', version '3.8'.
+ * Strings for component 'plugin', language 'it', version '3.11'.
  *
  * @package     plugin
  * @category    string
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Non è stato possibile ottenere i dati sugl
 $string['filterall'] = 'Visualizza tutto';
 $string['filtercontribonly'] = 'Visualizza solo i plugin aggiuntivi';
 $string['filterupdatesonly'] = 'Visualizza solo plugin aggiornabili';
+$string['incompatibleversion'] = 'Versione di Moodle non compatibile: {$a}';
 $string['isenabled'] = 'Abilita';
 $string['misdepinfoplugin'] = 'Informazioni plugin';
 $string['misdepinfoversion'] = 'Informazioni sulla versione';
@@ -61,11 +62,13 @@ $string['misdepsavail'] = 'Dipendenze mancanti disponibili';
 $string['misdepsunavail'] = 'Dipendenze mancanti non disponibili';
 $string['misdepsunavaillist'] = 'Non ci sono versioni che soddisfino le dipendenze: {$a}.';
 $string['misdepsunknownlist'] = 'Non è presente nella cartella dei Plugin: <strong>{$a}</strong>.';
+$string['moodlebranch'] = 'Moodle {$a->min} - {$a->max}';
 $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Non ci sono plugin di questo tipo installati.';
 $string['notdownloadable'] = 'Non è possibile scaricare i pacchetti';
 $string['notdownloadable_help'] = 'Non è possibile scaricare automaticamente i pacchetti ZIP degli aggiornamenti. Per aiuto ulteriore consulta la documentazione.';
 $string['notes'] = 'Note';
+$string['notsupported'] = 'Il plugin può non essere compilabile con la versione {$a} di Moodle';
 $string['notwritable'] = 'I file del plugin non sono scrivibili';
 $string['notwritable_help'] = 'll web server non ha i permessi di scrittura nella  cartella del plugin. Può anche essere necessario concedere i permessi di scrittura  sulla cartella radice dei plugin.';
 $string['otherplugin'] = '{$a->component}';
@@ -120,6 +123,8 @@ $string['type_cachestore'] = 'Cache store';
 $string['type_cachestore_plural'] = 'Cache store';
 $string['type_calendartype'] = 'Tipo di calendario';
 $string['type_calendartype_plural'] = 'Tipi di calendario';
+$string['type_contentbank'] = 'Deposito dei contenuti';
+$string['type_contentbank_plural'] = 'Plugin deposito dei contenuti';
 $string['type_coursereport'] = 'Report del corso';
 $string['type_coursereport_plural'] = 'Report del corso';
 $string['type_customfield'] = 'Campo personalizzato';
@@ -145,6 +150,8 @@ $string['type_gradereport'] = 'Report registro valutatore';
 $string['type_gradereport_plural'] = 'Report registro valutatore';
 $string['type_gradingform'] = 'Metodo di valutazione avanzato';
 $string['type_gradingform_plural'] = 'Metodi di valutazione avanzati';
+$string['type_h5plib'] = 'Infrastruttura H5P';
+$string['type_h5plib_plural'] = 'Infrastrutture H5P';
 $string['type_local'] = 'Plugin locale';
 $string['type_local_plural'] = 'Plugin locali';
 $string['type_media'] = 'Riproduttore multimediali';
@@ -157,6 +164,9 @@ $string['type_mnetservice'] = 'Servizio MNet';
 $string['type_mnetservice_plural'] = 'Servizi MNet';
 $string['type_mod'] = 'Modulo attività';
 $string['type_mod_plural'] = 'Moduli attività';
+$string['type_paygw'] = 'Gateway di pagamento';
+$string['type_paygw_plural'] = 'Gateway di pagamento';
+$string['type_paygwmanage'] = 'Gestione gateway di pagamento';
 $string['type_plagiarism'] = 'Plugin prevenzione plagio';
 $string['type_plagiarism_plural'] = 'Plugin prevenzione plagio';
 $string['type_portfolio'] = 'Portfolio';

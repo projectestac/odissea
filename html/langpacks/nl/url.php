@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'nl', version '3.8'.
+ * Strings for component 'url', language 'nl', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -66,7 +66,7 @@ $string['modulenameplural'] = 'URL\'s';
 $string['page-mod-url-x'] = 'Elke URL module-pagina';
 $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'URL variabelen';
-$string['parametersheader_help'] = 'Sommige interne Moodle-variabelen kunnen automatisch aan de URL toegevoegd worden. Geef jouw naam voor de parameter in elk tekstvak en selecteer de overeenkomende variabele.';
+$string['parametersheader_help'] = 'In deze sectie kun je interne informatie meesturen als onderdeel van de URL. Dat is zinvol wanneer de URL verwijst naar een interactieve webpagina die parameters accepteert, en je bijvoorbeeld de naam van de huidige gebruiker wilt doorsturen. Voer de naam van de URL parameter in het tekstvak in en kies vervolgens de daarbij passende variabele van de site.';
 $string['pluginadministration'] = 'Beheer URL-module';
 $string['pluginname'] = 'URL';
 $string['popupheight'] = 'Hoogte pop-upvenster (in pixels)';

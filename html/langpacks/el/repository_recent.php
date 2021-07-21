@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'el', version '3.8'.
+ * Strings for component 'repository_recent', language 'el', version '3.11'.
  *
  * @package     repository_recent
  * @category    string
@@ -33,3 +33,5 @@ $string['pluginname_help'] = 'Αρχεία που χρησιμοποιούντα
 $string['privacy:metadata'] = 'Το πρόσθετο αποθετηρίου «Πρόσφατα αρχεία» δεν αποθηκεύει ούτε μεταβιβάζει κανένα προσωπικό δεδομένο.';
 $string['recent:view'] = 'Δείτε το πρόσθετο αποθετηρίου πρόσφατων αρχείων';
 $string['recentfilesnumber'] = 'Αριθμός πρόσφατων αρχείων';
+$string['timelimit'] = 'Όριο χρόνου';
+$string['timelimit_help'] = 'Ανάκτηση πρόσφατων αρχείων μόνο εντός της προθεσμίας';

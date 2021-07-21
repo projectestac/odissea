@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'pt', version '3.8'.
+ * Strings for component 'qtype_randomsamatch', language 'pt', version '3.11'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['insufficientoptions'] = 'As opções de seleção para esta pergunta são insuficientes e, por isso, não estarão disponíveis neste teste. Por favor, informe o seu professor.';
 $string['nosaincategory'] = 'Não existem perguntas de resposta curta na categoria que escolheu \'{$a->catname}\'. Escolha uma categoria diferente, ou crie algumas perguntas nesta categoria.';
-$string['notenoughsaincategory'] = 'Existe(m) só {$a->nosaquestions} perguntas de resposta curta na categoria que escolheu \'{$a->catname}\'. Escolha uma categoria diferente, crie mais perguntas nesta categoria ou reduza o número de perguntas que selecionou.';
+$string['notenoughsaincategory'] = 'Existe(m) só {$a->nosaquestions} pergunta(s) de resposta curta na categoria que escolheu \'{$a->catname}\'. Escolha uma categoria diferente, crie mais perguntas nesta categoria ou reduza o número de perguntas que selecionou.';
 $string['pluginname'] = 'Correspondência de respostas curtas aleatórias';
 $string['pluginname_help'] = 'Na perspetiva do aluno esta pergunta é similar à de correspondência. A diferença é que a lista de itens (perguntas) para correspondência é retirada aleatoriamente do conjunto de perguntas de resposta curta disponíveis numa categoria. Para tal, devem existir perguntas de resposta curta em número suficiente, caso contrário é exibida uma mensagem de erro.';
 $string['pluginname_link'] = 'question/type/randomsamatch';

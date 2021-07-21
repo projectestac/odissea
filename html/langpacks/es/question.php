@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'es', version '3.8'.
+ * Strings for component 'question', language 'es', version '3.11'.
  *
  * @package     question
  * @category    string
@@ -154,6 +154,17 @@ $string['errorsavingcomment'] = 'Error al guardar el comentario para la pregunta
 $string['errorsavingflags'] = 'Error al guardar el estado.';
 $string['errorupdatingattempt'] = 'Error al actualizar el intento {$a->id} en la base de datos.';
 $string['eventquestioncategorycreated'] = 'Categoría de preguntas creada';
+$string['eventquestioncategorydeleted'] = 'Categoría de preguntas borrada';
+$string['eventquestioncategorymoved'] = 'Categoría de preguntas movida';
+$string['eventquestioncategoryupdated'] = 'Categoría de preguntas actualizada';
+$string['eventquestioncategoryviewed'] = 'Categoría de preguntas visualizada';
+$string['eventquestioncreated'] = 'Pregunta creada';
+$string['eventquestiondeleted'] = 'Pregunta borrada';
+$string['eventquestionmoved'] = 'Pregunta movida';
+$string['eventquestionsexported'] = 'Preguntas exportadas';
+$string['eventquestionsimported'] = 'Preguntas importadas';
+$string['eventquestionupdated'] = 'Pregunta actualizada';
+$string['eventquestionviewed'] = 'Pregunta visualizada';
 $string['export'] = 'Exportar';
 $string['exportcategory'] = 'Exportar categoría';
 $string['exportcategory_help'] = '<p align="center"><b>Categoría de exportación</b></p>
@@ -164,6 +175,7 @@ $string['exportcategory_help'] = '<p align="center"><b>Categoría de exportació
 $string['exporterror'] = 'Ha ocurrido un error durante la exportación';
 $string['exportfilename'] = 'preguntas';
 $string['exportnameformat'] = '%Y%m%d-%H%M';
+$string['exportonequestion'] = 'Descargar esta pregunta en formato Moodle XML';
 $string['exportquestions'] = 'Exportar preguntas a un archivo';
 $string['exportquestions_help'] = '<P>Esta función permite exportar una categoría completa de preguntas a un archivo de texto.</p> <p>Por favor, advierta que en muchos formatos de archivo se pierde alguna información cuando se exportan las preguntas. Esto se debe a que muchos formatos no poseen todas las características existentes en las preguntas de Moodle. No puede esperarse exportar preguntas y luego importarlas de modo que ambas sean idénticas. Asimismo, algunos tipos de preguntas no pueden exportarse en absoluto. Compruebe los datos exportados antes de usarlos en un servidor de producción.</p> <P>Los formatos posibles actualmente son:</p> <P><B>Formato GIFT</B></P> <ul> <p>GIFT es el formato de importación/exportación más completo de que se dispone para exportar preguntas Moodle a un archivo de texto. Fue diseñado para que los profesores escribieran fácilmente preguntas en un archivo de texto. Soporta los formatos de elección múltiple, verdadero-falso, respuesta corta, relacionar columnas, preguntas numéricas, así como la inserción de _______ en el formato de "palabra faltante". Advierta que las preguntas incrustadas ("cloze") no se incluyen por el momento. En un archivo de texto pueden mezclarse preguntas de distinto tipo, y el formato soporta asimismo comentarios, nombres de las preguntas, retroalimentación y calificaciones ponderadas (en porcentajes). He aquí algunos ejemplos:</p> <pre> ¿En qué mes de 1492 Colón descubrió América?{~Noviembre ~Septiembre =Octubre} Colón descubrió América el 12 de {~noviembre =octubre ~septiembre} de 1492. Colón descubrió América el 12 de noviembre de 1492.{FALSE} ¿Quién descubrió América el 12 de octubre de 1492?{=Colón =Cristóbal Colón} ¿En qué año llegó Colón a América?{#1492} </pre> <p class="moreinfo"><a href="help.php?file=formatgift.html&amp;module=quiz">Más sobre el formato "GIFT"</a></p> </ul> <p><b>Formato XML Moodle XML</b></p> <ul> <p>Este formato específico de Moodle exporta preguntas en formato simple XML. Esas preguntas pueden luego importarse a cualquier categoría del examen, o usarse en cualquier otro proceso, tal como una transformación XSLT.</p> </ul> <p><b>IMS QTI 2.0</b></p> <ul> <p>Las preguntas se exportan en el formato IMS QTI estándar (version 2.0) format. Note que este modo de exportación genera un grupo de archivos dentro de un único archivo \'zip\'.</p> <p class="moreinfo"><a href="http://www.imsglobal.org/question/" target="_qti">Más información sobre el sitio IMS QTI</a> (sitio externo en una ventana nueva)</p> </ul> <p><b>XHTML</b></p> <ul> <p>Exporta la categoría en una única página de XHTML \'estricto\'. Cada una de las preguntas es ubicada en su propia marca &lt;div&gt;. Si desea usar esta página tal cual, necesitará al menos editar la marca &lt;form&gt; al comienzo de la sección &lt;body&gt; para posibilitar acciones tales como \'mailto\'.</p> </ul> <P>¡Pronto se dispondrá de más formatos, incluyendo WebCT y cualesquiera otros que los usuarios de Moodle quieran incorporar! </p>';
 $string['feedback'] = 'Retroalimentación';
@@ -195,6 +207,8 @@ $string['howquestionsbehave_help'] = 'Los estudiantes pueden interactuar con las
 Alternativamente, usted puede desear que los estudiantes envíen cada pregunta y sobre la marcha obtengan retroalimentación inmediata, y si la respuesta no es correcta, tengan otra otra oportunidad con menor puntuación. Este modo sería \'interactivo con varios intentos\' .
 
 Esos son probablemente los dos modos de comportamiento más comúnmente utilizados.';
+$string['idnumber'] = 'Número de ID';
+$string['idnumber_help'] = 'Si se usa, el número de ID debe ser único dentro de la categoría de la pregunta. Proporciona otra manera de identificar una pregunta que a veces resulta útil, pero generalmente se deja en blanco.';
 $string['ignorebroken'] = 'Pasar por alto enlaces rotos';
 $string['import'] = 'Importar';
 $string['importcategory'] = 'Categoría a donde importar';

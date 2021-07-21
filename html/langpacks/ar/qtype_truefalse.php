@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'ar', version '3.8'.
+ * Strings for component 'qtype_truefalse', language 'ar', version '3.11'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -38,5 +38,5 @@ $string['pluginnameadding'] = 'إضافة سؤال صح/خطأ';
 $string['pluginnameediting'] = 'تحرير سؤال صح/خطأ';
 $string['pluginnamesummary'] = 'نوع بسيط من الأسئلة متعددة الخيارات مع خيارين فقط \'صح\' و \'خطأ\'';
 $string['privacy:metadata'] = 'إن ملحق نوع السؤال، صح/خطأ لا يخزن أي بيانات شخصية.';
-$string['selectone'] = 'اخترأحد الخيارات';
+$string['selectone'] = 'إختر واحداً:';
 $string['true'] = 'صح';

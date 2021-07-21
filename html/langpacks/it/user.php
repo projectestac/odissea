@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'it', version '3.8'.
+ * Strings for component 'user', language 'it', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Aggiungi condizione';
+$string['adverbfor_and'] = 'and';
+$string['adverbfor_andnot'] = 'and not';
+$string['adverbfor_or'] = 'or';
+$string['applyfilters'] = 'Applica filtri';
+$string['clearfilterrow'] = 'Elimina riga del filtro';
+$string['clearfilters'] = 'Azzera filtri';
+$string['clearfilterselection'] = 'Elimina "{$a}" dal filtro';
+$string['countparticipantsfound'] = '{$a} participanti trovati';
+$string['filterbykeyword'] = 'Parola chiave';
+$string['filterrowlegend'] = 'Filtro {$a}';
+$string['filtersetmatchdescription'] = 'La modalità di combinazione dei filtri';
+$string['filtertype'] = 'Tipo di filtro';
+$string['match'] = 'Filtra';
+$string['matchofthefollowing'] = 'delle seguenti condizioni:';
+$string['moodlenetprofile'] = 'Profilo MoodleNet';
+$string['moodlenetprofile_help'] = 'Campo per il collegamento del proprio profilo tra MoodleNet e Moodle. Deve essere un URI WebFinger-compliant.';
+$string['placeholdertype'] = 'Scrivi...';
+$string['placeholdertypeorselect'] = 'Scrivi o seleziona...';
 $string['privacy:courserequestpath'] = 'Corsi richiesti';
 $string['privacy:descriptionpath'] = 'Descrizione del profilo';
 $string['privacy:devicespath'] = 'Dispostivi dell\'utente';
@@ -77,6 +96,7 @@ $string['privacy:metadata:maildisplay'] = 'Preferenza dell\'utente per mostrare 
 $string['privacy:metadata:middlename'] = 'Secondo nome dell\'utente.';
 $string['privacy:metadata:mnethostid'] = 'Identificatore per host MNet, se utilizzato.';
 $string['privacy:metadata:model'] = 'Nome del dispositivo (occam, iPhone, ecc)';
+$string['privacy:metadata:moodlenetprofile'] = 'Profilo MoodleNet dell\'utente';
 $string['privacy:metadata:msn'] = 'Identificatore MSN dell\'utente.';
 $string['privacy:metadata:my_pages'] = 'Pagine dell\'utente - dashboard e profilo. Questa tabella non contiene dati personali, viene utilizzata solamente per collegare i blocchi della dashboard agli utenti.';
 $string['privacy:metadata:my_pages:name'] = 'Titolo della pagina.';
@@ -128,6 +148,7 @@ $string['privacy:passwordresetpath'] = 'Reimpostazioni password';
 $string['privacy:privatefilespath'] = 'File privati';
 $string['privacy:profileimagespath'] = 'Immagini del profilo';
 $string['privacy:sessionpath'] = 'Dati della sessione';
+$string['selectfiltertype'] = 'Seleziona';
 $string['target:upcomingactivitiesdue'] = 'Prossime attività da svolgere';
 $string['target:upcomingactivitiesdue_help'] = 'L\'obiettivo genera promemoria per prossime attività da svolgere.';
 $string['target:upcomingactivitiesdueinfo'] = 'Di seguito sono elencate tutte le considerazioni relative alle prossime attività da svolgere. Gli studenti hanno ricevuto le considerazioni direttamente.';

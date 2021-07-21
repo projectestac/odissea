@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'ru', version '3.8'.
+ * Strings for component 'workshopform_accumulative', language 'ru', version '3.11'.
  *
  * @package     workshopform_accumulative
  * @category    string
@@ -41,6 +41,7 @@ $string['mustchoosegrade'] = 'Вы должны выбрать оценку дл
 $string['pluginname'] = 'Совокупное оценивание';
 $string['poor'] = 'Плохо';
 $string['present'] = 'Присутствует';
+$string['privacy:metadata'] = 'Плагин накопительной оценки хранит только данные формы оценивания. Актуальные   персональные данные о том, как была заполнена форма, хранятся в самом модуле Семинара и прилагаются к экспортируемым оценкам.';
 $string['scalename0'] = 'Да / Нет (2 пункта)';
 $string['scalename1'] = 'Присутствует / Отсутствует (2 пункта)';
 $string['scalename2'] = 'Верно / Неверно (2 пункта)';

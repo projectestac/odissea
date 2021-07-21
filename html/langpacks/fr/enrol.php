@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'fr', version '3.8'.
+ * Strings for component 'enrol', language 'fr', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -63,6 +63,7 @@ $string['enrolmentnew'] = 'Nouvelle inscription dans {$a}';
 $string['enrolmentnewuser'] = '{$a->user} s\'est inscrit au cours « {$a->course} »';
 $string['enrolmentoptions'] = 'Options d\'inscription';
 $string['enrolments'] = 'Inscriptions';
+$string['enrolmentupdatedforuser'] = 'L\'inscription de l\'utilisateur « {$a->fullname} » a été mise à jour';
 $string['enrolnotpermitted'] = 'Vous n\'avez pas les permissions requises pour inscrire quelqu\'un dans ce cours.';
 $string['enrolperiod'] = 'Durée d\'inscription';
 $string['enroltimecreated'] = 'Inscription créée';
@@ -115,7 +116,7 @@ $string['noexistingparticipants'] = 'Aucun participant';
 $string['nogroup'] = 'Aucun groupe';
 $string['noguestaccess'] = 'Les visiteurs anonymes ne peuvent pas accéder à ce cours. Veuillez vous connecter.';
 $string['none'] = 'Aucun';
-$string['notenrollable'] = 'Vous ne pouvez pas vous inscrire à ce cours.';
+$string['notenrollable'] = 'Vous ne pouvez pas vous inscrire vous-même à ce cours.';
 $string['notenrolledusers'] = 'Autres utilisateurs';
 $string['otheruserdesc'] = 'Les utilisateurs suivants ne sont pas inscrits dans ce cours, mais y ont des rôles attribués ou hérités.';
 $string['participationactive'] = 'Active';
@@ -155,6 +156,7 @@ $string['totalunenrolledusers'] = '{$a} utilisateurs désinscrits';
 $string['unassignnotpermitted'] = 'Vous n\'avez pas les permissions requises pour retirer des rôles dans ce cours';
 $string['unenrol'] = 'Désinscription';
 $string['unenrolconfirm'] = 'Voulez-vous vraiment désinscrire « {$a->user} » (inscrit via « {$a->enrolinstancename} ») du cours « {$a->course} » ?';
+$string['unenrolleduser'] = 'L\'utilisateur « {$a->fullname} » a été désinscrit du cours.';
 $string['unenrolme'] = 'Me désinscrire de {$a}';
 $string['unenrolnotpermitted'] = 'Vous n\'avez pas les permissions requises pour désinscrire cet utilisateur de ce cours.';
 $string['unenrolroleusers'] = 'Désinscrire les utilisateurs';

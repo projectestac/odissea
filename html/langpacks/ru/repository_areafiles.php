@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_areafiles', language 'ru', version '3.8'.
+ * Strings for component 'repository_areafiles', language 'ru', version '3.11'.
  *
  * @package     repository_areafiles
  * @category    string
@@ -29,3 +29,4 @@ $string['areafiles:view'] = 'Просматривать хранилище фа�
 $string['configplugin'] = 'Настройка хранилища «Вложенные файлы»';
 $string['pluginname'] = 'Вложенные файлы';
 $string['pluginname_help'] = 'Файлы, встроенные в текущий текстовый редактор';
+$string['privacy:metadata'] = 'Плагин хранилища встроенных файлов не хранит и не передает какие-либо личные данные.';

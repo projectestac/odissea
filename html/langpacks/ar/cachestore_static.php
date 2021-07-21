@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_static', language 'ar', version '3.8'.
+ * Strings for component 'cachestore_static', language 'ar', version '3.11'.
  *
  * @package     cachestore_static
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'طلب ثابت لذاكرة التخزين المؤقت';
-$string['privacy:metadata'] = 'يقوم المكون الإضافي Static request cachestore  بتخزين بعض البيانات ، و لكن هذا موجود فقط طوال عمر طلب HTTP الواحد.';
+$string['pluginname'] = 'خبء الطلبات الثابتة';
+$string['privacy:metadata'] = 'يقوم ملحق مخزن خبء الطلب الثابت بتخزين بعض البيانات، ولكنها تكون حاضرة فقط خلال عمر طلبية HTTP واحدة.';

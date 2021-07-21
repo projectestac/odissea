@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'gl', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'gl', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actual'] = 'Real';
 $string['addpersistent'] = 'Add mandatory persistent fields';
-$string['aftertable'] = 'Despois da táboa:';
+$string['aftertable'] = 'Após a táboa:';
 $string['back'] = 'Volver';
 $string['backtomainview'] = 'Volver ao principal';
-$string['cannotuseidfield'] = 'Non é posible inserir o campo "id". É unha columna de numeración automática';
+$string['cannotuseidfield'] = 'Non é posíbel inserir o campo "id". É unha columna de numeración automática';
 $string['change'] = 'Modificar';
 $string['charincorrectlength'] = 'Lonxitude incorrecta para un campo de caracteres';
 $string['check_bigints'] = 'Buscar enteiros BD incorrectos';
@@ -44,39 +44,35 @@ $string['checkforeignkeys'] = 'Comprobar as chaves externas';
 $string['checkindexes'] = 'Comprobar índices';
 $string['checkoraclesemantics'] = 'Revisar semántica';
 $string['completelogbelow'] = '(ver abaixo o rexistro completo da busca)';
-$string['confirmcheckbigints'] = 'Esta funcionalidade buscará <a href="http://tracker.moodle.org/browse/MDL-11038">posíbeis campos enteiros errados</a> no seu servidor Moodle, xerando (pero non executando!) automaticamente as sentencias SQL necesarias para ter todos os enteiros da súa base de datos adecuadamente definidos
+$string['confirmcheckbigints'] = 'This functionality will search for <a href="https://tracker.moodle.org/browse/MDL-11038">potential wrong integer fields</a> in your Moodle server, generating (but not executing!) automatically the needed SQL statements to have all the integers in your DB properly defined.
 
-Unha vez xerados, pode copiar as ordes e executalas con seguridade na súa interface SQL favorita (non esqueza facer copias de seguridade dos seus datos antes de facer iso).
+Once generated you can copy such statements and execute them safely with your favourite SQL interface (don\'t forget to backup your data before doing that).
 
-Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos enteiros errados.
+It\'s highly recommended to be running the latest (+ version) available of your Moodle release before executing the search of wrong integers.
 
-Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
+This functionality doesn\'t perform any action against the DB (just reads from it), so can be safely executed at any moment.';
 $string['confirmcheckdefaults'] = 'Esta funcionalidade buscará valores predeterminados inconsistentes no seu servidor Moodle, xerando (non executando) as ordes SQL precisas para manter os valores predeterminados adecuadamente definidos.
 
 Unha vez xerados, pode copiar as ordes e executalas con seguridade na súa interface SQL favorita (non esqueza facer copias de seguridade dos seus datos antes de facer iso).
 
-Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos valores predeterminados inconsistentes.
+Recoméndase executar a última versión dispoñíbel de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos valores predeterminados inconsistentes.
 
 Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
 $string['confirmcheckforeignkeys'] = 'Esta funcionalidade buscará posíbeis vulneracións das chaves externas  definidas en install.xml. (Moodle non xera actualmente restricións de chave externa na base de datos, polo que poden estar presentes datos non válidos.)
 
-Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos valores predeterminados inconsistentes.
+Recoméndase executar a última versión dispoñíbel de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos valores predeterminados inconsistentes.
 
 Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
-$string['confirmcheckindexes'] = 'Esta funcionalidade buscará potenciais índices ausentes no seu servidor Moodle, xerando (non executando) automaticamente as ordes SQL precisas para manter todo actualizado.
-
-Unha vez xerados, pode copiar as ordes e executalas con seguridade na súa interface SQL favorita (non esqueza facer copias de seguridade dos seus datos antes de facer iso).
-
-Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos índices ausentes.
-
+$string['confirmcheckindexes'] = 'Esta funcionalidade buscará potenciais índices ausentes no seu servidor Moodle, xerando (non executando) automaticamente as ordes SQL precisos para manter todo actualizado. Unha vez xerados, pode copiar as ordes e executalas con seguridade na súa interface SQL favorita.<br /><br />
+Recoméndase executar a última versión dispoñíbel de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca dos índices ausentes.<br /><br />
 Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
-$string['confirmcheckoraclesemantics'] = 'Esta funcionalidade buscará <a href="http://tracker.moodle.org/browse/MDL-29322">Oracle varchar2 columnas usando semánticas BYTE </a> no seu servidor Moodle, xerando, (pero non executando!) automaticamente as instrucións SQL necesarias para que todas as columnas se convertan a semánticas CHAR no seu lugar (o que é mellor para a compatibilidade entre bases de datos e maiores contidos  max. length)
+$string['confirmcheckoraclesemantics'] = 'This functionality will search for <a href="https://tracker.moodle.org/browse/MDL-29322">Oracle varchar2 columns using BYTE semantics</a> in your Moodle server, generating (but not executing!) automatically the needed SQL statements to have all the columns converted to use CHAR semantics instead (better for cross-db compatibility and increased contents max. length).
 
-Unha vez xerados, pode copiar as ordes e executalas con seguridade na súa interface SQL favorita (non esqueza facer copias de seguridade dos seus datos antes de facer iso) .
+Once generated you can copy such statements and execute them safely with your favourite SQL interface (don\'t forget to backup your data before doing that).
 
-Recoméndase executar a última versión dispoñible de Moodle (1.8, 1.9, 2.x ...) antes de realizar a busca de semánticas BYTE.
+It\'s highly recommended to be running the latest (+ version) available of your Moodle release before executing the search of BYTE semantics.
 
-Esta funcionalidade non executa ningunha acción contra a BD (simplemente le nela), de maneira que pode executarse con seguridade en calquera momento.';
+This functionality doesn\'t perform any action against the DB (just reads from it), so can be safely executed at any moment.';
 $string['confirmdeletefield'] = 'Confirma que quere eliminar o campo:';
 $string['confirmdeleteindex'] = 'Confirma que quere eliminar o índice:';
 $string['confirmdeletekey'] = 'Confirma que quere eliminar a chave:';
@@ -121,10 +117,10 @@ $string['fields'] = 'Campos';
 $string['fieldsnotintable'] = 'O campo non existe na táboa';
 $string['fieldsusedinindex'] = 'Este campo usase como índice';
 $string['fieldsusedinkey'] = 'Este campo usase como chave.';
-$string['filemodifiedoutfromeditor'] = 'Aviso: O ficheiro foi modificado localmente mentres se empregaba o editor XMLDB. Se o garda sobrescribiranse os cambios locais.';
-$string['filenotwriteable'] = 'Ficheiro non escribible';
-$string['fkunknownfield'] = 'Chave externa {$a->keyname} na táboa {$a->tablename}, que apunta cara un campo inexistente {$a->reffield} na táboa referenciada {$a->reftable}.';
-$string['fkunknowntable'] = 'Chave externa {$a->keyname} na táboa {$a->tablename}, que apunta cara unha táboa inexistente {$a->reftable}.';
+$string['filemodifiedoutfromeditor'] = 'Advertencia: O ficheiro foi modificado localmente mentres se empregaba o editor XMLDB. Se o garda sobrescribiranse os cambios locais.';
+$string['filenotwriteable'] = 'Ficheiro non escribíbel';
+$string['fkunknownfield'] = 'Chave externa {$a->keyname} na táboa {$a->tablename}, que apunta cara a un campo inexistente {$a->reffield} na táboa referenciada {$a->reftable}.';
+$string['fkunknowntable'] = 'Chave externa {$a->keyname} na táboa {$a->tablename}, que apunta cara a unha táboa inexistente {$a->reftable}.';
 $string['fkviolationdetails'] = 'A chave externa {$a->keyname} na táboa {$a->tablename} é vulnerada por {$a->numviolations} dun total de {$a->numrows} filas.';
 $string['float2numbernote'] = 'Aviso: A pesar de que os campos «float» (flotante) con compatíbeis ao 100% por XMLDB, recomendase migrar a campos «number» (número) no seu lugar.';
 $string['floatincorrectdecimals'] = 'Número incorrecto de decimais para un campo flotante';
@@ -143,7 +139,7 @@ $string['integerincorrectlength'] = 'Lonxitude incorrecta para un campo enteiro'
 $string['key'] = 'Chave';
 $string['keynameempty'] = 'O nome da chave non pode estar baleiro.';
 $string['keys'] = 'Chaves';
-$string['listreservedwords'] = 'Lista de palabras reservadas<br/>(utilizado para manter <a href="http://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB_reserved_words</a> actualizado)';
+$string['listreservedwords'] = 'List of reserved words<br />(used to keep <a href="https://docs.moodle.org/en/XMLDB_reserved_words" target="_blank">XMLDB reserved words</a> updated)';
 $string['load'] = 'Cargar';
 $string['main_view'] = 'Vista principal';
 $string['masterprimaryuniqueordernomatch'] = 'Os campos da chave externa deben aparecer na mesma orden na que se enumeran na CHAVE ÚNICA da táboa de referencia.';
@@ -159,8 +155,7 @@ $string['newkey'] = 'Nova chave';
 $string['newtable'] = 'Nova táboa';
 $string['newtablefrommysql'] = 'Nova táboa de MySQL';
 $string['nofieldsspecified'] = 'Non se especificaron campos';
-$string['nomasterprimaryuniquefound'] = 'A(s) columna(s) das súas referencias de chave externa deben ser incluídas nunha chave principal ou única na táboa de referencia. Teña en conta que a columna que está nun índice único non é boa de abondo.';
-$string['nomissingindexesfound'] = 'Non se atoparon índices ausentes: a súa BD non require accións adicionais.';
+$string['nomasterprimaryuniquefound'] = 'The column(s) that your foreign key references must be included in a primary or unique KEY in the referenced table. Note that the column being in a UNIQUE INDEX is not good enough.';
 $string['noreffieldsspecified'] = 'Non se especificaron campos de referencia';
 $string['noreftablespecified'] = 'Non se atopou a táboa de referencia especificada';
 $string['noviolatedforeignkeysfound'] = 'Non se atoparon chaves externas vulneradas';
@@ -181,7 +176,7 @@ $string['primarykeyonlyallownotnullfields'] = 'As chaves primarias non poden ser
 $string['privacy:metadata'] = 'The XMLDB editor plugin does not store any personal data.';
 $string['reserved'] = 'Reservadas';
 $string['reservedwords'] = 'Palabras reservadas';
-$string['revert'] = 'Desfacer';
+$string['revert'] = 'Reverter';
 $string['revert_changes'] = 'Desfacer modificacións';
 $string['save'] = 'Gardar';
 $string['searchresults'] = 'Buscar resultados';
@@ -212,18 +207,17 @@ $string['viewxml'] = 'XML';
 $string['violatedforeignkeys'] = 'Chaves externas vulneradas';
 $string['violatedforeignkeysfound'] = 'Atopáronse chaves externas vulneradas';
 $string['violations'] = 'Vulneracións';
-$string['wrong'] = 'Erroneo';
+$string['wrong'] = 'Erróneo';
 $string['wrongdefaults'] = 'Atopáronse valores predeterminados errados';
 $string['wrongints'] = 'Atopáronse enteiros errados';
 $string['wronglengthforenum'] = 'Lonxitude incorrecta para un campo enum';
 $string['wrongnumberofreffields'] = 'Número errado de campos de referencia';
 $string['wrongoraclesemantics'] = 'Atopouse semántica de Oracle BYTE errada';
 $string['wrongreservedwords'] = 'Palabras reservadas actualmente utilizadas<br />(Os nomes das táboas non son importantes cando se emprega un $CFG->prefix)';
-$string['yesmissingindexesfound'] = '<p>Na súa BD atopáronse algúns índices ausentes. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para crealos. Lémbrese de facer antes unha copia de seguridade</p>
-<p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis índices ausentes.</p>';
-$string['yeswrongdefaultsfound'] = '<p>Na súa BD atopáronse algúns valores predeterminados inconsistentes. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para arranxalos. Lémbrese de facer antes unha copia de seguridade</p>
+$string['yesmissingindexesfound'] = 'Na súa BD atopáronse algúns índices ausentes. Aquí pode ver os seus detalles, así como as ordes SQL para executar coa súa interface SQL favorita para crealos.<br /><br />Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis índices ausentes.';
+$string['yeswrongdefaultsfound'] = '<p>Na súa BD atopáronse algúns valores predeterminados inconsistentes. Aquí pode ver os seus detalles, así como as ordes SQL para executar coa súa interface SQL favorita para arranxalos. Lémbrese de facer antes unha copia de seguridade</p>
 <p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis valores predeterminados inconsistentes.</p>';
-$string['yeswrongintsfound'] = '<p>Na súa BD atopáronse algúns enteiros errados. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para crealos. Lémbrese de facer antes unha copia de seguridade</p>
-<p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis enteiros errados.</p>';
-$string['yeswrongoraclesemanticsfound'] = '<p>Na súa BD atopáronse algunhas columnas de Oracle que empregan semánticas de BYTE erradas. Aquí pode ver os seus detalles, así como os comandos SQL para executar coa súa interface SQL favorita para crealos. Lémbrese de facer antes unha copia de seguridade</p>
-<p>Unha vez feito isto, recoméndase que execute de novo esta utilidade para comprobar que non se atopan máis columnas de Oracle que empregan semánticas de BYTE erradas.</p>';
+$string['yeswrongintsfound'] = '<p>Some wrong integers have been found in your DB. Here are their details and the needed SQL statements to be executed with your favourite SQL interface to fix them. Remember to backup your data first!</p>
+<p>After fixing them, it is highly recommended to execute this utility again to check that no more wrong integers are found.</p>';
+$string['yeswrongoraclesemanticsfound'] = '<p>Some Oracle columns using BYTE semantics have been found in your DB. Here are their details and the needed SQL statements to be executed with your favourite SQL interface to convert them all. Remember to backup your data first!</p>
+<p>After doing that, it\'s highly recommended to execute this utility again to check that no more wrong semantics are found.</p>';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'ru', version '3.8'.
+ * Strings for component 'tool_lpmigrate', language 'ru', version '3.11'.
  *
  * @package     tool_lpmigrate
  * @category    string
@@ -62,6 +62,7 @@ $string['migratingcourses'] = 'Мигрирование курсов';
 $string['missingmappings'] = 'Отсутствующие связи';
 $string['performmigration'] = 'Выполнить миграцию';
 $string['pluginname'] = 'Инструмент миграции компетенций';
+$string['privacy:metadata'] = 'Плагин Инструмент переноса компетентностей не хранит никаких личных данных.';
 $string['results'] = 'Результаты';
 $string['startdatefrom'] = 'Дата начала действия';
 $string['unmappedin'] = 'Убрана связь в {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'eu', version '3.8'.
+ * Strings for component 'scorm', language 'eu', version '3.11'.
  *
  * @package     scorm
  * @category    string
@@ -85,6 +85,11 @@ $string['collapsetocwinsize'] = 'Tolestu TOC leihoaren tamaina ondokoa baino txi
 $string['collapsetocwinsizedesc'] = 'Ezarpen honek leihoaren tamaina minimo batetik behera TOC-a automatikoki tolesteko aukera ematen du.';
 $string['compatibilitysettings'] = 'Bateragarritasunerako ezarpenak';
 $string['completed'] = 'Osatua';
+$string['completiondetail:allscos'] = 'Jardueraren atal guztiak egitea';
+$string['completiondetail:completionscore'] = '{$a} edo gehiagoko puntuazio bat jasotzea';
+$string['completiondetail:completionstatuscompleted'] = 'Jarduera osatzea';
+$string['completiondetail:completionstatuscompletedandpassed'] = 'Jarduera osatu eta gainditzea';
+$string['completiondetail:completionstatuspassed'] = 'Jarduera gainditzea';
 $string['completionscorerequired'] = 'Gutxieneko puntuazioa beharrezkoa da';
 $string['completionscorerequired_help'] = 'Ezarpen hau gaituz gero, ikasleari SCORM jarduera osatutzat emateko, puntuazio minimoa izan beharko du eta jarduera-osaketarako beste eskakizunak bete beharko ditu.';
 $string['completionscorerequireddesc'] = 'Jarduera osatzeko {$a}-eko gutxieneko kalifikazioa beharrezkoa da.';
@@ -196,9 +201,9 @@ $string['hidebrowse_help'] = 'Aurrebista-moduak baimentzen die ikasleei jarduera
 $string['hidebrowsedesc'] = 'Aurrebista-moduak baimentzen die ikasleei jarduera arakatzea saiakera egin aurretik.';
 $string['hideexit'] = 'Ezkutatu irteera-esteka';
 $string['hidereview'] = 'Ezkutatu berrikusketa-esteka';
-$string['hidetoc'] = 'Erakutsi ikastaroaren egitura erreproduzitzailean';
-$string['hidetoc_help'] = 'Nola erakutsiko den eduki-taula SCORM erreproduzitzailean.';
-$string['hidetocdesc'] = 'Ezarpen honek zehazten du nola erakutsiko den eduki-taula SCORM erreproduzitzailean.';
+$string['hidetoc'] = 'Erakutsi ikastaroaren egitura erreproduzigailuan';
+$string['hidetoc_help'] = 'Nola erakutsiko den eduki-taula SCORM erreproduzigailuan.';
+$string['hidetocdesc'] = 'Ezarpen honek zehazten du nola erakutsiko den eduki-taula SCORM erreproduzigailuan.';
 $string['highestattempt'] = 'Saiakera altuena';
 $string['identifier'] = 'Galdera-identifikatzailea';
 $string['incomplete'] = 'Osatu gabea';
@@ -223,8 +228,8 @@ $string['last'] = 'Azken sarrera hemen';
 $string['lastaccess'] = 'Azken sarrera';
 $string['lastattempt'] = 'Osatutako azken saiakera';
 $string['lastattemptlock'] = 'Blokeatu azken saiakeraren ondoren';
-$string['lastattemptlock_help'] = 'Gaituz gero, ikasleari ez zaio uzten SCORM erreproduzitzailea abiarazten baimendutako saiakera kopurua erabili ondoren.';
-$string['lastattemptlockdesc'] = 'Gaituz gero, ikasleari ez zaio uzten SCORM erreproduzitzailea abiarazten baimendutako saiakera kopurua erabili ondoren.';
+$string['lastattemptlock_help'] = 'Gaituz gero, ikasleari ez zaio uzten SCORM erreproduzigailua abiarazten baimendutako saiakera kopurua erabili ondoren.';
+$string['lastattemptlockdesc'] = 'Gaituz gero, ikasleari ez zaio uzten SCORM erreproduzigailua abiarazten baimendutako saiakera kopurua erabili ondoren.';
 $string['location'] = 'Erakutsi kokapen-barra';
 $string['masteryoverride'] = 'Menderatze-mailaren puntuazioaren salbuespenaren egoera';
 $string['masteryoverride_help'] = 'Gaituz gero eta menderatze-mailaren puntuazioa badago, LMSFinish deitzen denean eta puntuazio gordina ezarri denean, egoera berriz kalkulatutako da puntuazio gordina eta menderatze-mailaren puntuazioa erabilita eta SCORM-ek emandako edozein egoera ("osatu gabea" barne) gainidatziko da.';
@@ -307,7 +312,7 @@ $string['php5'] = 'PHP 5 (DOMXML jatorrizko liburutegia)';
 $string['pluginadministration'] = 'SCORM paketearen kudeaketa';
 $string['pluginname'] = 'SCORM paketea';
 $string['popup'] = 'Leiho berrian';
-$string['popuplaunched'] = 'SCORM pakete hau leiho berri batean abiarazi da, baliabidea ikusten amaitu baduzu egin klik hemen ikastaroko orrira bueltatzeko.';
+$string['popuplaunched'] = 'SCORM pakete hau popup leiho batean abiarazi da, baliabidea ikusten amaitu baduzu egin klik hemen ikastaroko orrira bueltatzeko.';
 $string['popupmenu'] = 'Zabaltzen den menuan';
 $string['popupopen'] = 'Ireki paketea leiho berrian';
 $string['popupsblocked'] = 'Itxuraz popup leihoak blokeatuta daude, eta ez da posible SCORM pakete hau erreproduzitzea. Mesedez, zure nabigatzailearen ezarpenak berrikusi berriro saiatu aurretik.';

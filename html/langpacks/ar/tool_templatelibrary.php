@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_templatelibrary', language 'ar', version '3.8'.
+ * Strings for component 'tool_templatelibrary', language 'ar', version '3.11'.
  *
  * @package     tool_templatelibrary
  * @category    string
@@ -27,13 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'جميع المكونات';
 $string['component'] = 'مكوّن';
+$string['core'] = 'النواة';
 $string['coresubsystem'] = 'النظام الفرعي ({$a})';
 $string['documentation'] = 'وثيق';
 $string['example'] = 'المثال';
 $string['noresults'] = 'لا نتائج';
 $string['notemplateselected'] = 'لم يتم تحديد قالب';
 $string['pluginname'] = 'مكتبة القوالب';
-$string['privacy:metadata'] = 'لا يخزن مكون Template library  أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق مكتبة القوالب لا يخزن أي بيانات شخصية.';
 $string['search'] = 'ابحث';
 $string['searchtemplates'] = 'قوالب البحث';
 $string['templatehasnoexample'] = 'لا يحتوي هذا القالب على مثال لسياق ، لذلك لا يمكن تقديمه هنا. لإضافة سياق مثال إلى هذا القالب ، قم بإدراج تعليق في Moustache "مثال على السياق (json):" ، متبوعًا بسياق نموذج مشفر json للقالب.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'pt', version '3.8'.
+ * Strings for component 'form', language 'pt', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -41,16 +41,18 @@ $string['err_minlength'] = 'Deve introduzir neste campo pelo menos {$a->format} 
 $string['err_nonzero'] = 'Deve introduzir neste campo um número que não inicie em 0';
 $string['err_nopunctuation'] = 'Não deve introduzir pontuação neste campo.';
 $string['err_numeric'] = 'Deve introduzir um número neste campo.';
+$string['err_positiveint'] = 'Tem de inserir um número maior que 0.';
 $string['err_rangelength'] = 'Deve introduzir entre {$a->format[0]} e {$a->format[1]} caracteres neste campo.';
 $string['err_required'] = 'Deve introduzir um valor neste campo';
 $string['err_wrappingwhitespace'] = 'O valor não pode iniciar ou terminar com espaço em branco.';
-$string['err_wrongfileextension'] = 'Alguns ficheiros ({$a->wrongfiles}) não puderam ser carregados. Apenas são permitidos ficheiros do tipo {$a->whitelist}.';
+$string['err_wrongfileextension'] = 'Alguns ficheiros ({$a->wrongfiles}) não foram carregados. Apenas são permitidos ficheiros do tipo {$a->allowlist}.';
 $string['filesofthesetypes'] = 'Tipos de ficheiro permitidos:';
-$string['filetypesany'] = 'Todos os tipos de ficheiros';
-$string['filetypesnotall'] = 'Não é permitido selecionar aqui \'Todos os tipos de ficheiros\'';
-$string['filetypesnotwhitelisted'] = 'Esses tipos de ficheiros não são permitidos aqui: {$a}';
+$string['filetypesany'] = 'Todos os tipos de ficheiro';
+$string['filetypesnotall'] = 'Não é permitido selecionar aqui \'Todos os tipos de ficheiro\'';
+$string['filetypesnotallowed'] = 'Tipos de ficheiro não permitidos aqui: {$a}';
+$string['filetypesnotwhitelisted'] = 'Tipos de ficheiro permitidos aqui: {$a}';
 $string['filetypesothers'] = 'Outros ficheiros';
-$string['filetypesunknown'] = 'Tipos de ficheiros desconhecidos: {$a}';
+$string['filetypesunknown'] = 'Tipos de ficheiro desconhecidos: {$a}';
 $string['general'] = 'Geral';
 $string['hideadvanced'] = 'Ocultar opções avançadas';
 $string['hour'] = 'Hora';
@@ -62,6 +64,7 @@ $string['mustbeoverriden'] = 'Abstract form_definition() método na classe {$a} 
 $string['newvaluefor'] = 'Novo valor para {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Não existe nenhum método para adicionar um botão de ajuda ao elemento de formulário {$a->name} (class {$a->classname})';
 $string['nonexistentformelements'] = 'Tentativa de adicionar botões de ajuda a elementos de formulário não existentes: {$a}';
+$string['nopermissionform'] = 'Não tem permissão para aceder este formulário.';
 $string['noselection'] = 'Sem seleção';
 $string['nosuggestions'] = 'Sem sugestões';
 $string['novalue'] = 'Nada inserido';
@@ -82,8 +85,9 @@ $string['showadvanced'] = 'Mostrar opções avançadas';
 $string['showless'] = 'Mostrar menos…';
 $string['showmore'] = 'Mostrar mais…';
 $string['somefieldsrequired'] = 'São de preenchimento obrigatório os campos assinalados com {$a}';
+$string['suggestions'] = 'Sugestões';
 $string['time'] = 'tempo';
 $string['timeunit'] = 'Unidade de tempo';
-$string['timing'] = 'Tempo';
+$string['timing'] = 'Disponibilidade';
 $string['unmaskpassword'] = 'Revelar';
 $string['year'] = 'Ano';

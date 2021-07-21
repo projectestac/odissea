@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'eu', version '3.8'.
+ * Strings for component 'tool_behat', language 'eu', version '3.11'.
  *
  * @package     tool_behat
  * @category    string
@@ -50,6 +50,7 @@ $string['stepsdefinitionstype'] = 'Mota';
 $string['theninfo'] = 'Orduan. Emaitzak espero zirenak direla bermatzeko kontrolak';
 $string['unknownexceptioninfo'] = 'Arazo bat egon da Selenium edo zure nabigatzailearekin. Mesedez, ziurtatu Selenium-eko bertsio berriena erabiltzen ari zarela. Errorea:';
 $string['viewsteps'] = 'Iragazkia';
+$string['warndirrootconfigfound'] = 'Konfigurazio-fitxategi bat aurkitu da {$a} kokapenean. Fitxategi hau ez da automatikoki eguneratzen eta zaharkituta geratu daiteke. Fitxategi hau ezabatzea gomendatzen dizugu.';
 $string['wheninfo'] = 'Noiz. Ekitaldi bat abiarazten duen ekintza';
 $string['wrongbehatsetup'] = 'Arazoren bat dago behat-eko konfigurazioarekin eta urratsen definizioak ezin izan dira zerrendatu: <b>{$a->errormsg}</b><br/><br/>Mesedez egiaztatu:<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix eta $CFG->behat_wwwroot parametroak config.php fitxategian $CFG->dataroot, $CFG->prefix eta $CFG->wwwroot parametroen balio ezberdinekin definituta daudela.</li>

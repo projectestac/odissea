@@ -222,7 +222,7 @@ function questionnaire_get_context($cmid) {
     }
 
     if (!$context = context_module::instance($cmid)) {
-            print_error('badcontext');
+        throw new \moodle_exception('badcontext', 'mod_questionnaire');
     }
     return $context;
 }
@@ -480,6 +480,7 @@ function questionnaire_set_events($questionnaire) {
     $event->modulename = 'questionnaire';
     $event->instance = $questionnaire->id;
     $event->eventtype = 'open';
+    $event->type = CALENDAR_EVENT_TYPE_ACTION;
     $event->timestart = $questionnaire->opendate;
     $event->visible = instance_is_visible('questionnaire', $questionnaire);
     $event->timeduration = ($questionnaire->closedate - $questionnaire->opendate);
@@ -487,18 +488,21 @@ function questionnaire_set_events($questionnaire) {
     if ($questionnaire->closedate && $questionnaire->opendate && ($event->timeduration <= QUESTIONNAIRE_MAX_EVENT_LENGTH)) {
         // Single event for the whole questionnaire.
         $event->name = $questionnaire->name;
+        $event->timesort = $questionnaire->opendate;
         calendar_event::create($event);
     } else {
         // Separate start and end events.
         $event->timeduration  = 0;
         if ($questionnaire->opendate) {
             $event->name = $questionnaire->name.' ('.get_string('questionnaireopens', 'questionnaire').')';
+            $event->timesort = $questionnaire->opendate;
             calendar_event::create($event);
             unset($event->id); // So we can use the same object for the close event.
         }
         if ($questionnaire->closedate) {
             $event->name = $questionnaire->name.' ('.get_string('questionnairecloses', 'questionnaire').')';
             $event->timestart = $questionnaire->closedate;
+            $event->timesort = $questionnaire->closedate;
             $event->eventtype = 'close';
             calendar_event::create($event);
         }
@@ -622,7 +626,7 @@ function questionnaire_get_parent ($question) {
         $parent [$qid]['name'] = $question->name;
         $parent [$qid]['content'] = $question->content;
         $parent [$qid]['parentposition'] = $dependquestion->position;
-        $parent [$qid]['parent'] = $dependquestion->name.'->'.$dependchoice;
+        $parent [$qid]['parent'] = format_string($dependquestion->name) . '->' . format_string ($dependchoice);
     }
     return $parent;
 }
@@ -850,26 +854,26 @@ function questionnaire_get_standard_page_items($id = null, $a = null) {
 
     if ($id) {
         if (! $cm = get_coursemodule_from_id('questionnaire', $id)) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule', 'mod_questionnaire');
         }
 
         if (! $course = $DB->get_record("course", array("id" => $cm->course))) {
-            print_error('coursemisconf');
+            throw new \moodle_exception('coursemisconf', 'mod_questionnaire');
         }
 
         if (! $questionnaire = $DB->get_record("questionnaire", array("id" => $cm->instance))) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule', 'mod_questionnaire');
         }
 
     } else {
         if (! $questionnaire = $DB->get_record("questionnaire", array("id" => $a))) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule', 'mod_questionnaire');
         }
         if (! $course = $DB->get_record("course", array("id" => $questionnaire->course))) {
-            print_error('coursemisconf');
+            throw new \moodle_exception('coursemisconf', 'mod_questionnaire');
         }
         if (! $cm = get_coursemodule_from_instance("questionnaire", $questionnaire->id, $course->id)) {
-            print_error('invalidcoursemodule');
+            throw new \moodle_exception('invalidcoursemodule', 'mod_questionnaire');
         }
     }
 

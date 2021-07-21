@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'countries', language 'es', version '3.8'.
+ * Strings for component 'countries', language 'es', version '3.11'.
  *
  * @package     countries
  * @category    string
@@ -267,7 +267,7 @@ $string['UZ'] = 'Uzbekistan';
 $string['VA'] = 'El Vaticano';
 $string['VC'] = 'San Vincente y Las Granadinas';
 $string['VE'] = 'Venezuela (República Bolivariana de)';
-$string['VG'] = 'Islas Vírgenes (Británícas)';
+$string['VG'] = 'Islas Vírgenes (Británicas)';
 $string['VI'] = 'Islas Vírgenes (Americanas)';
 $string['VN'] = 'Vietnam';
 $string['VU'] = 'Vanuatu';

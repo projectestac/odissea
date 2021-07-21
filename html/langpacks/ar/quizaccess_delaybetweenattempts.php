@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_delaybetweenattempts', language 'ar', version '3.8'.
+ * Strings for component 'quizaccess_delaybetweenattempts', language 'ar', version '3.11'.
  *
  * @package     quizaccess_delaybetweenattempts
  * @category    string
@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'نظام زمن التأخير بين المحاولات المختلفة للوصول للامتحان';
-$string['privacy:metadata'] = 'المساعد Delay between attempts quiz access rule  لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق قاعدة التأخير بين المحاولات للدخول على الاختبار لا يخزن أي بيانات شخصية.';
 $string['youcannotwait'] = 'هذا الاختبار سيغلق قبل أن يتم السماح لك ببدء محاولة أخرى.';
-$string['youmustwait'] = 'يجب عليك الانتظار قبل أن تتمكن من إعادة المحاولة لهذا الاختبار. و سوف يسمح لك ببدء محاولة أخرى بعد {$a}.';
+$string['youmustwait'] = 'عليك الانتظار قبل أن تعيد محاولة هذا الاختبار. سيسمح لك بالبدء بمحاولة أخرى بعد {$a}.';

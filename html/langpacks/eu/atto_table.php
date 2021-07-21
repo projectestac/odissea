@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'eu', version '3.8'.
+ * Strings for component 'atto_table', language 'eu', version '3.11'.
  *
  * @package     atto_table
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_youtube', language 'ru', version '3.8'.
+ * Strings for component 'repository_youtube', language 'ru', version '3.11'.
  *
  * @package     repository_youtube
  * @category    string
@@ -35,7 +35,7 @@ $string['privacy:metadata:repository_youtube:searchtext'] = 'Поисковый 
 $string['search'] = 'Искать видео';
 $string['sortby'] = 'Сортировать по';
 $string['sortpublished'] = 'Дате публикации';
-$string['sortrating'] = 'Рейтинг';
+$string['sortrating'] = 'Рейтингу';
 $string['sortrelevance'] = 'Релевантности';
 $string['sortviewcount'] = 'Количеству просмотров';
 $string['youtube:view'] = 'Использовать YouTube в выборе файлов';

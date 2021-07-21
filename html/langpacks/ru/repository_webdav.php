@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_webdav', language 'ru', version '3.8'.
+ * Strings for component 'repository_webdav', language 'ru', version '3.11'.
  *
  * @package     repository_webdav
  * @category    string
@@ -29,6 +29,7 @@ $string['configplugin'] = 'Конфигурация WebDAV';
 $string['http'] = 'HTTP';
 $string['https'] = 'HTTPS';
 $string['pluginname'] = 'Хранилище WebDAV';
+$string['privacy:metadata'] = 'Плагин хранилище  WebDAV не хранит никаких личных данных, но передает их из Moodle в отдаленную систему.';
 $string['webdav'] = 'WebDAV';
 $string['webdav:view'] = 'Просматривать хранилище файлов «WebDAV»';
 $string['webdav_password'] = 'Пароль сервера WebDAV';

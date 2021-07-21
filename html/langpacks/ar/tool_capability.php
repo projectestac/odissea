@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'ar', version '3.8'.
+ * Strings for component 'tool_capability', language 'ar', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -25,16 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['capabilitylabel'] = 'القدرة :';
-$string['capabilityreport'] = 'نظرة عامة على القدرة';
+$string['capabilitylabel'] = 'الإمكانية:';
+$string['capabilityreport'] = 'استعراض الإمكانية';
 $string['changeoverrides'] = 'تغيير التجاوزات في هذا السياق';
 $string['changeroles'] = 'تغيير تعريفات الدور';
-$string['eventreportviewed'] = 'النظر إلى التقرير';
+$string['eventreportviewed'] = 'تقرير تمت معاينته';
+$string['filters'] = 'ترشيح النتائج';
 $string['forroles'] = 'للقيام بأدوار {$a}';
 $string['getreport'] = 'الحصول على النظرة العامة';
-$string['intro'] = 'يبين هذا التقرير القدرة على وجه الخصوص ، ما إذا كان صاحب القدرة لديه في تعريف كل دور (أو مجموعة مختارة من الأدوار) ، و في كل مكان في الموقع حيث أن هذه القدرة ممكن تجاوزها .';
-$string['pluginname'] = 'نظرة عامة على القدرة';
-$string['privacy:metadata'] = 'لا يخزن المكون الإضافي Capability overview لأي بيانات شخصية.';
+$string['intro'] = 'يبين هذا التقرير بالنسبة إلى إمكانية معينة، الصلاحيات التي لديها بالنسبة إلى تعريف كل دور (أو مجموعة مختارة من الأدوار)، والأماكن التي تم تجاوزها فيها على امتداد الموقع.';
+$string['nodifferences'] = 'ليست هناك اختلافات لعرضها بين الأدوار المحددة في هذا السياق';
+$string['onlydiff'] = 'أظهر الاختلافات فقط';
+$string['pluginname'] = 'استعراض الإمكانية';
+$string['privacy:metadata'] = 'إن ملحق استعراض الإمكانية لا يخزن أي بيانات شخصية.';
 $string['reportforcapability'] = 'تقرير عن القدرة \'{$a}\\';
 $string['reportsettings'] = 'إعدادات التقرير';
-$string['roleslabel'] = 'الأدوار :';
+$string['roleslabel'] = 'الأدوار:';

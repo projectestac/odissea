@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'gl', version '3.8'.
+ * Strings for component 'tool_mobile', language 'gl', version '3.11'.
  *
  * @package     tool_mobile
  * @category    string
@@ -35,7 +35,7 @@ $string['autologinkeygenerationlockout'] = 'A xeración de claves de acceso auto
 $string['autologinnotallowedtoadmins'] = 'Non está permitido o acceso automático para administradores do sitio.';
 $string['cachedef_plugininfo'] = 'Isto garda a lista de engadidos cos complementos móbiles';
 $string['clickheretolaunchtheapp'] = 'Prema aquí se a apli non se abre automaticamente.';
-$string['configmobilecssurl'] = 'Ficheiro CSS para personalizar a súa interface de aplicativos móbiles.';
+$string['configmobilecssurl'] = 'Ficheiro CSS para personalizar a súa interface de aplicacións móbiles.';
 $string['customlangstrings'] = 'Cadeas de idioma personalizadas';
 $string['customlangstrings_desc'] = 'Pódense personalizar aquí palabras e frases amosadas na apli. Insira cada cadea de idioma personalizada nunha nova liña co formato: identificador de cadea, cadea de idioma personalizada e código do idioma, separados por caracteres de canalización «|». Por exemplo:
  <pre>
@@ -75,7 +75,7 @@ $string['insecurealgorithmwarning'] = 'Parece que o certificado HTTPS usa un alg
 $string['invalidcertificatechainwarning'] = 'Parece que a cadea do certificado non é válida.';
 $string['invalidcertificateexpiredatewarning'] = 'Parece que o certificado HTTPS do sitio caducou.';
 $string['invalidcertificatestartdatewarning'] = 'Parece que o certificado HTTPS do sitio aínda non é válido (con data de inicio no futuro).';
-$string['invalidprivatetoken'] = 'A testemuña privada non é válida. A testemuña non debe estar baleira nin pasar polo parámetro GET.';
+$string['invalidprivatetoken'] = 'O testemuño privado non é válido. O testemuño non debe estar baleiro nin pasar polo parámetro GET.';
 $string['invaliduserquotawarning'] = 'A cota de usuario (userquota) está definida nun número non válido. Debería axustarse a un número válido (un valor enteiro) nos axustes de seguridade do sitio.';
 $string['iosappid'] = 'Identificador único da aplicación de iOS';
 $string['iosappid_desc'] = 'Este axuste pode deixarse como predeterminada a non ser que teña unha apli personalizada para iOS.';

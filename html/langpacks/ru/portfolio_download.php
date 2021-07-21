@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_download', language 'ru', version '3.8'.
+ * Strings for component 'portfolio_download', language 'ru', version '3.11'.
  *
  * @package     portfolio_download
  * @category    string
@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadfile'] = 'Скачать экспортный файл Вашего портфолио';
 $string['downloading'] = 'Загрузка...';
 $string['pluginname'] = 'Скачать файл';
+$string['privacy:metadata'] = 'Этот плагин не хранит личные данные и не экспортирует личные данные во внешнее хранилище.';

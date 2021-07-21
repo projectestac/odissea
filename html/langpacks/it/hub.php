@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'it', version '3.8'.
+ * Strings for component 'hub', language 'it', version '3.11'.
  *
  * @package     hub
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activeparticipantnumberaverage'] = 'Numero medio di partecipanti attivi di recente ({$a})';
+$string['activeusersnumber'] = 'Numero di utenti attivi di recente ({$a})';
 $string['addscreenshots'] = 'Aggiungi screenshot';
 $string['advertise'] = 'Condividi il corso consentendo alle persone di iscriversi';
 $string['advertised'] = 'Gli utenti possono iscriversi';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'sv', version '3.8'.
+ * Strings for component 'user', language 'sv', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Lägg till villkor';
+$string['adverbfor_and'] = 'och';
+$string['adverbfor_andnot'] = 'och';
+$string['adverbfor_or'] = 'eller';
+$string['applyfilters'] = 'Använd filter';
+$string['clearfilterrow'] = 'Ta bort filterrad';
+$string['clearfilters'] = 'Rensa filter';
+$string['clearfilterselection'] = 'Ta bort "{$a}" från filtret';
+$string['countparticipantsfound'] = '{$a} deltagare hittades';
+$string['filterbykeyword'] = 'Nyckelord';
+$string['filterrowlegend'] = 'Filter {$a}';
+$string['filtersetmatchdescription'] = 'Hur multipla filter ska kombineras';
+$string['filtertype'] = 'Typ av filter';
+$string['match'] = 'Matcha';
+$string['matchofthefollowing'] = 'av följande:';
+$string['moodlenetprofile'] = 'MoodleNet-profil';
+$string['moodlenetprofile_help'] = 'Detta fält är till för att länka din MoodleNet-profile med Moodle. Det förväntar sig en WebFinger-kompatibel URI.';
+$string['placeholdertype'] = 'Skriv...';
+$string['placeholdertypeorselect'] = 'Skriv eller välj...';
 $string['privacy:courserequestpath'] = 'Begärda kurser';
 $string['privacy:descriptionpath'] = 'Profilbeskrivning';
 $string['privacy:devicespath'] = 'Användarenheter';
@@ -77,6 +96,7 @@ $string['privacy:metadata:maildisplay'] = 'En preferens för användaren om att 
 $string['privacy:metadata:middlename'] = 'Användarens mellannamn';
 $string['privacy:metadata:mnethostid'] = 'Identifierare för MNet-servern, om en sådan används';
 $string['privacy:metadata:model'] = 'Enhetsnamnet, occam eller iPhone osv.';
+$string['privacy:metadata:moodlenetprofile'] = 'Användarens MoodleNet-profil';
 $string['privacy:metadata:msn'] = 'Användarens MSN-identifierare';
 $string['privacy:metadata:my_pages'] = 'Användarsidor - instrumentpanel och profil. Denna tabell innehåller inte personuppgifter och används endast för att länka instrumentpanelsblock till användare';
 $string['privacy:metadata:my_pages:name'] = 'Sidnamn';
@@ -128,6 +148,7 @@ $string['privacy:passwordresetpath'] = 'Lösenordsåterställningar';
 $string['privacy:privatefilespath'] = 'Privata filer';
 $string['privacy:profileimagespath'] = 'Profilbilder';
 $string['privacy:sessionpath'] = 'Sessionsdata';
+$string['selectfiltertype'] = 'Välj';
 $string['target:upcomingactivitiesdue'] = 'Aktiviteter som förfaller';
 $string['target:upcomingactivitiesdue_help'] = 'Detta mål skapar påminnelser om aktiviteter som förfaller.';
 $string['target:upcomingactivitiesdueinfo'] = 'Alla insikter om aktiviteter som förfaller listas här. Dessa studenter har tagit del av insikterna direkt.';

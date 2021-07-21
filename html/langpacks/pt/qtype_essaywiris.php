@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essaywiris', language 'pt', version '3.8'.
+ * Strings for component 'qtype_essaywiris', language 'pt', version '3.11'.
  *
  * @package     qtype_essaywiris
  * @category    string

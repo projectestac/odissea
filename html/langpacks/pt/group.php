@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'pt', version '3.8'.
+ * Strings for component 'group', language 'pt', version '3.11'.
  *
  * @package     group
  * @category    string
@@ -57,8 +57,8 @@ $string['deletegrouping'] = 'Apagar agrupamento';
 $string['deletegroupingconfirm'] = 'Tem a certeza de que pretende apagar o agrupamento \'{$a}\'? (Os grupos contidos no agrupamento não são apagados)';
 $string['deletegroupsconfirm'] = 'Tem a certeza de que pretende excluir os seguintes grupos?';
 $string['deleteselectedgroup'] = 'Apagar grupos selecionados';
-$string['editgroupingsettings'] = 'Editar definições do agrupamento';
-$string['editgroupsettings'] = 'Editar definições do grupo';
+$string['editgroupingsettings'] = 'Editar configurações do agrupamento';
+$string['editgroupsettings'] = 'Editar configurações do grupo';
 $string['editusersgroupsa'] = 'Editar grupos de "{$a}"';
 $string['enablemessaging'] = 'Ativar mensagens de grupo';
 $string['enablemessaging_help'] = 'Se ativar esta opção, os membros do grupo podem enviar mensagens para os outros membros do grupo através da caixa de mensagens.';

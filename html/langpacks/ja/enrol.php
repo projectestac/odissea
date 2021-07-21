@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ja', version '3.8'.
+ * Strings for component 'enrol', language 'ja', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -63,6 +63,7 @@ $string['enrolmentnew'] = '{$a} の新しい登録';
 $string['enrolmentnewuser'] = '{$a->user} がコース 「 {$a->course} 」に登録しました。';
 $string['enrolmentoptions'] = '登録オプション';
 $string['enrolments'] = '登録';
+$string['enrolmentupdatedforuser'] = 'ユーザ「 {$a->fullname} 」の登録が更新されました。';
 $string['enrolnotpermitted'] = 'あなたにはこのコースにユーザを登録するパーミッションが割り当てられていないか、許可されていません。';
 $string['enrolperiod'] = '登録期間';
 $string['enroltimecreated'] = '登録作成日時';
@@ -115,7 +116,7 @@ $string['noexistingparticipants'] = '参加者は登録されていません。'
 $string['nogroup'] = 'グループなし';
 $string['noguestaccess'] = 'このコースにゲストはアクセスできません。ログインしてください。';
 $string['none'] = 'なし';
-$string['notenrollable'] = 'あなたはこのコースに登録できません。';
+$string['notenrollable'] = 'あなた自身をこのコースに登録できません。';
 $string['notenrolledusers'] = '他のユーザ';
 $string['otheruserdesc'] = '以下のユーザはこのコースに登録されていませんが、コース内でのロールが継承または割り当てられています。';
 $string['participationactive'] = 'アクティブ';
@@ -155,8 +156,9 @@ $string['totalunenrolledusers'] = '{$a} 登録解除ユーザ';
 $string['unassignnotpermitted'] = 'あなたにはこのコース内のロール割り当てを解除するパーミッションがありません。';
 $string['unenrol'] = '登録解除';
 $string['unenrolconfirm'] = '本当に「 {$a->user} 」 (「 {$a->enrolinstancename} 」経由で登録済み) を「 {$a->course} 」から登録解除してもよろしいですか?';
+$string['unenrolleduser'] = 'ユーザ「 {$a->fullname} 」がコースから登録解除されました。';
 $string['unenrolme'] = '{$a} から私を登録解除する';
-$string['unenrolnotpermitted'] = 'あなたにはこのユーザをこのコースから登録解除するパーミッションがない、または登録解除することができません。';
+$string['unenrolnotpermitted'] = 'あなたにはこのユーザをコースから登録解除するパーミッションがありません。';
 $string['unenrolroleusers'] = '次のユーザを登録解除する';
 $string['uninstallmigrating'] = '「 {$a} 」登録の移行';
 $string['unknowajaxaction'] = '不明な操作がリクエストされました。';

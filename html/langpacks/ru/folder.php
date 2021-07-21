@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ru', version '3.8'.
+ * Strings for component 'folder', language 'ru', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -40,8 +40,12 @@ $string['folder:addinstance'] = 'Добавлять новый ресурс ти
 $string['folder:managefiles'] = 'Управлять файлами в модуле «Папка»';
 $string['folder:view'] = 'Просматривать содержимое ресурса типа «Папка»';
 $string['foldercontent'] = 'Файлы и вложенные папки';
+$string['forcedownload'] = 'Файлы принудительно скачивать';
+$string['forcedownload_help'] = 'Должны ли определенные файлы, такие как изображения или файлы HTML, отображаться в браузере, а не скачиваться. Обратите внимание, что из соображений безопасности галочку у этого параметра следует снимать только в том случае, если все пользователи, имеющие возможность управлять файлами в папке, являются доверенными пользователями.';
 $string['indicator:cognitivedepth'] = 'Папка: познавательный аспект';
 $string['indicator:cognitivedepth_help'] = 'Этот показатель основан на  глубине познания, достигнутой студентом при работе с ресурсом Папка.';
+$string['indicator:cognitivedepthdef'] = 'Папка: познавательный аспект';
+$string['indicator:cognitivedepthdef_help'] = 'Участник достиг этого процента познавательного взаимодействия, предлагаемого ресурсом «Папка» в течение этого интервала анализа (Уровни = Нет просмотра, Просмотр)';
 $string['indicator:socialbreadth'] = 'Папка: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Папка.';
 $string['indicator:socialbreadthdef'] = 'Папка: социальный аспект';

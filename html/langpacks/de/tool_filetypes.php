@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'de', version '3.8'.
+ * Strings for component 'tool_filetypes', language 'de', version '3.11'.
  *
  * @package     tool_filetypes
  * @category    string
@@ -54,7 +54,7 @@ $string['error_notfound'] = 'Der Dateityp mit der Endung \'{$a}\' kann nicht gef
 $string['extension'] = 'Dateiendung';
 $string['extension_help'] = 'Dateiendung ohne Punkt, z.B. \'mobi\'';
 $string['groups'] = 'Typgruppen';
-$string['groups_help'] = 'Optionale Liste von Typgruppen, zu denen dieser Dateityp gehört. Dies sind allgemeine Kategorien wie z.B. \'document\' oder \'image\'.';
+$string['groups_help'] = 'Optionale Liste von Dateitypen, zu denen dieser Dateityp gehört. Dies sind allgemeine Kategorien wie z.B. \'document\' oder \'image\'.';
 $string['icon'] = 'Dateisymbol';
 $string['icon_help'] = 'Icon-Dateiname
 

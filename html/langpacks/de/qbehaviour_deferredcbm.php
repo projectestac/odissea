@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'de', version '3.8'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'de', version '3.11'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string

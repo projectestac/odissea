@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswerwiris', language 'ar', version '3.8'.
+ * Strings for component 'qtype_multianswerwiris', language 'ar', version '3.11'.
  *
  * @package     qtype_multianswerwiris
  * @category    string
@@ -26,3 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['contentnotviewable'] = 'لا يمكن عرض المحتويات.';
+$string['multianswerwiris_help'] = 'كما في سؤال الإجابات المُضَمَّنة (Cloze) القياسي، ولكن يمكنك توليد نص سؤال وخيارات مختلفة عبر إدراج أرقام، معادلات أو تخطيطات عشوائية. الإفادة أيضًا يمكنها استعمال القيم العشوائية.';
+$string['multianswerwirissummary'] = 'كما في سؤال الإجابات المُضَمَّنة (Cloze) القياسي، ولكن يمكنك توليد نص سؤال وخيارات مختلفة عبر إدراج أرقام، معادلات أو تخطيطات عشوائية. الإفادة أيضًا يمكنها استعمال القيم العشوائية.';
+$string['pluginname_help'] = 'كما في سؤال الإجابات المُضَمَّنة (Cloze) القياسي، ولكن يمكنك توليد نص سؤال وخيارات مختلفة عبر إدراج أرقام، معادلات أو تخطيطات عشوائية. الإفادة أيضًا يمكنها استعمال القيم العشوائية.';
+$string['pluginnamesummary'] = 'كما في سؤال الإجابات المُضَمَّنة (Cloze) القياسي، ولكن يمكنك توليد نص سؤال وخيارات مختلفة عبر إدراج أرقام، معادلات أو تخطيطات عشوائية. الإفادة أيضًا يمكنها استعمال القيم العشوائية.';

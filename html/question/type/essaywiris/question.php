@@ -30,6 +30,8 @@ class qtype_essaywiris_question extends qtype_wq_question implements question_ma
     public $graderinfoformat;
     public $responsetemplate;
     public $responsetemplateformat;
+    public $maxbytes;
+    public $filetypeslist;
 
     public function join_all_text() {
         $text = parent::join_all_text();
@@ -69,4 +71,10 @@ class qtype_essaywiris_question extends qtype_wq_question implements question_ma
         }
         return $complete;
     }
+
+    public function get_word_count_message_for_review(array $response): string {
+        return $this->base->get_word_count_message_for_review($response);
+    }
+
+
 }

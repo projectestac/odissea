@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'gl', version '3.8'.
+ * Strings for component 'workshopallocation_random', language 'gl', version '3.11'.
  *
  * @package     workshopallocation_random
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Engadir autoavaliacións';
 $string['allocationaddeddetail'] = 'Nova avaliación a realizar: <strong>{$a->reviewername}</strong> é revisor de <strong>{$a->authorname}</strong>';
-$string['allocationdeallocategraded'] = 'Non é posíbel retirar unha asignación xa cualificada: revisor <strong>{$a->reviewername}</strong>, autor da entrega: <strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = 'Non foi posíbel desasignar a avaliación xa clasificada: revisor <strong>{$a->reviewername}</strong>, autor da entrega <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Avaliación reutilizada: <strong>{$a->reviewername}</strong> é revisor de <strong>{$a->authorname}</strong>';
 $string['allocationsettings'] = 'Axustes da asignación';
 $string['assessmentdeleteddetail'] = 'Retirada a asignación da avaliación: <strong>{$a->reviewername}</strong> xa non é revisor de <strong>{$a->authorname}</strong>';
@@ -35,7 +35,7 @@ $string['assesswosubmission'] = 'Os participantes poden avaliar sen ter enviado 
 $string['confignumofreviews'] = 'Número predeterminado de entregas para ser asignado ao chou';
 $string['excludesamegroup'] = 'Impedir revisións por pares do mesmo grupo';
 $string['noallocationtoadd'] = 'Non hai asignacións para engadir';
-$string['nogroupusers'] = '<p>Aviso: Se o obradoiro está no modo de «grupos visíbeis» ou no modo de «grupos separados» , entón, os usuarios DEBEN SER membros de polo menos un grupo para poder ter avaliación por pares que lles sexan asignados por esta ferramenta. Os usuarios que non estean agrupados, aínda poderán ter novas autoavaliacións ou que se lles retiren as avaliacións existentes.</p> <p>Estes usuarios actualmente non están nun grupo: {$a}</p>';
+$string['nogroupusers'] = '<p>Advertencia: Se o obradoiro está no modo de «grupos visíbeis» ou no modo de «grupos separados» , entón, os usuarios DEBEN SER membros de polo menos un grupo para poder ter avaliación por pares que lles sexan asignados por esta ferramenta. Os usuarios que non estean agrupados, aínda poderán ter novas autoavaliacións ou que se lles retiren as avaliacións existentes.</p> <p>Estes usuarios actualmente non están nun grupo: {$a}</p>';
 $string['numofdeallocatedassessment'] = 'Retirando a asignación a {$a} avaliación(s)';
 $string['numofrandomlyallocatedsubmissions'] = 'Asignada(s) ao chou {$a} avaliación(s)';
 $string['numofreviews'] = 'Número de revisións';
@@ -43,7 +43,7 @@ $string['numofselfallocatedsubmissions'] = 'Autoasignada(s) {$a} entrega(s)';
 $string['numperauthor'] = 'por entrega';
 $string['numperreviewer'] = 'por revisor';
 $string['pluginname'] = 'Asignación ao chou';
-$string['privacy:metadata'] = 'O engadido de Asignación ao chou non almacena datos persoais. Os datos persoais reais sobre quen vai avaliar a quen están almacenados polo propio módulo de Taller e son a base para exportar os detalles das avaliacións.';
+$string['privacy:metadata'] = 'O engadido de Asignación ao chou non almacena datos persoais. Os datos persoais reais sobre quen vai avaliar a quen están almacenados polo propio módulo de Obradoiro e son a base para exportar os detalles das avaliacións.';
 $string['randomallocationdone'] = 'Feita a asignación ao chou';
 $string['removecurrentallocations'] = 'Retirar as asignacións actuais';
 $string['resultnomorepeers'] = 'Non hai máis pares dispoñíbeis';

@@ -164,13 +164,51 @@ if ($hassiteconfig) {
     }
 
     // Antivirus plugins.
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2016.06.09  @sarjona
-    if (get_protected_agora() ) {
-    //************ FI
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2016.06.09 @sarjona
+    // 2021.05.20 @aginard
+    if (get_protected_agora()) {
+    // ************ FI
+
     $ADMIN->add('modules', new admin_category('antivirussettings', new lang_string('antiviruses', 'antivirus')));
     $temp = new admin_settingpage('manageantiviruses', new lang_string('antivirussettings', 'antivirus'));
     $temp->add(new admin_setting_manageantiviruses());
+
+    // Common settings.
+    $temp->add(new admin_setting_heading('antiviruscommonsettings', new lang_string('antiviruscommonsettings', 'antivirus'), ''));
+
+    // Alert email.
+    $temp->add(
+        new admin_setting_configtext(
+            'antivirus/notifyemail',
+            new lang_string('notifyemail', 'antivirus'),
+            new lang_string('notifyemail_help', 'antivirus'),
+            '',
+            PARAM_EMAIL
+        )
+    );
+
+    // Enable quarantine.
+    $temp->add(
+        new admin_setting_configcheckbox(
+            'antivirus/enablequarantine',
+            new lang_string('enablequarantine', 'antivirus'),
+            new lang_string('enablequarantine_help', 'antivirus',
+            \core\antivirus\quarantine::DEFAULT_QUARANTINE_FOLDER),
+            0
+        )
+    );
+
+    // Quarantine time.
+    $temp->add(
+        new admin_setting_configduration(
+            'antivirus/quarantinetime',
+            new lang_string('quarantinetime', 'antivirus'),
+            new lang_string('quarantinetime_desc', 'antivirus'),
+            \core\antivirus\quarantine::DEFAULT_QUARANTINE_TIME
+        )
+    );
+
     $ADMIN->add('antivirussettings', $temp);
     $plugins = core_plugin_manager::instance()->get_plugins_of_type('antivirus');
     core_collator::asort_objects_by_property($plugins, 'displayname');
@@ -178,10 +216,6 @@ if ($hassiteconfig) {
         /* @var \core\plugininfo\antivirus $plugin */
         $plugin->load_settings($ADMIN, 'antivirussettings', $hassiteconfig);
     }
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2016.06.09  @sarjona
-    }
-    //************ FI
 
     // Machine learning backend plugins.
     $ADMIN->add('modules', new admin_category('mlbackendsettings', new lang_string('mlbackendsettings', 'admin')));
@@ -190,19 +224,11 @@ if ($hassiteconfig) {
         $plugin->load_settings($ADMIN, 'mlbackendsettings', $hassiteconfig);
     }
 
-/// License types
-    $ADMIN->add('modules', new admin_category('licensesettings', new lang_string('licenses')));
-    $temp = new admin_settingpage('managelicenses', new lang_string('managelicenses', 'admin'));
-
-    require_once($CFG->libdir . '/licenselib.php');
-    $licenses = array();
-    $array = explode(',', $CFG->licenses);
-    foreach ($array as $value) {
-        $licenses[$value] = new lang_string($value, 'license');
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2016.06.09 @sarjona
+    // 2021.05.20 @aginard
     }
-    $temp->add(new admin_setting_configselect('sitedefaultlicense', new lang_string('configsitedefaultlicense','admin'), new lang_string('configsitedefaultlicensehelp','admin'), 'allrightsreserved', $licenses));
-    $temp->add(new admin_setting_managelicenses());
-    $ADMIN->add('licensesettings', $temp);
+    // ************ FI
 
 /// Filter plugins
     $ADMIN->add('modules', new admin_category('filtersettings', new lang_string('managefilters')));
@@ -266,19 +292,43 @@ if ($hassiteconfig) {
         $plugin->load_settings($ADMIN, 'mediaplayers', $hassiteconfig);
     }
 
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2016.08.16 @sarjona
+    // 2021.05.20 @aginard
+    if (get_protected_agora()) {
+    // ************ FI
+
+    // Payment gateway plugins.
+    $ADMIN->add('modules', new admin_category('paymentgateways', new lang_string('type_paygw_plural', 'plugin')));
+    $temp = new admin_settingpage('managepaymentgateways', new lang_string('type_paygwmanage', 'plugin'));
+    $temp->add(new \core_admin\local\settings\manage_payment_gateway_plugins());
+    $temp->add(new admin_setting_description(
+        'managepaymentgatewayspostfix',
+        '',
+        new lang_string('gotopaymentaccounts', 'payment',
+            html_writer::link(new moodle_url('/payment/accounts.php'), get_string('paymentaccounts', 'payment')))
+    ));
+    $ADMIN->add('paymentgateways', $temp);
+
+    $plugins = core_plugin_manager::instance()->get_plugins_of_type('paygw');
+    core_collator::asort_objects_by_property($plugins, 'displayname');
+    foreach ($plugins as $plugin) {
+        /** @var \core\plugininfo\paygw $plugin */
+        $plugin->load_settings($ADMIN, 'paymentgateways', $hassiteconfig);
+    }
+
     // Data format settings.
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2016.08.16  @sarjona
-    if (get_protected_agora() ) {
-    //************ FI
+
     $ADMIN->add('modules', new admin_category('dataformatsettings', new lang_string('dataformats')));
     $temp = new admin_settingpage('managedataformats', new lang_string('managedataformats'));
     $temp->add(new admin_setting_managedataformats());
     $ADMIN->add('dataformatsettings', $temp);
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2016.08.16  @sarjona
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2016.08.16 @sarjona
+    // 2021.05.20 @aginard
     }
-    //************ FI
+    // ************ FI
 
     //== Portfolio settings ==
     require_once($CFG->libdir. '/portfoliolib.php');
@@ -376,64 +426,6 @@ if ($hassiteconfig) {
         /** @var \core\plugininfo\repository $plugin */
         $plugin->load_settings($ADMIN, 'repositorysettings', $hassiteconfig);
     }
-
-/// Web services
-    $ADMIN->add('modules', new admin_category('webservicesettings', new lang_string('webservices', 'webservice')));
-
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2012.08.20  @sarjona
-    if (get_protected_agora() ) {
-    //************ FI
-    /// overview page
-    $temp = new admin_settingpage('webservicesoverview', new lang_string('webservicesoverview', 'webservice'));
-    $temp->add(new admin_setting_webservicesoverview());
-    $ADMIN->add('webservicesettings', $temp);
-    //API documentation
-    $ADMIN->add('webservicesettings', new admin_externalpage('webservicedocumentation', new lang_string('wsdocapi', 'webservice'), "$CFG->wwwroot/$CFG->admin/webservice/documentation.php", 'moodle/site:config', false));
-    /// manage service
-    $temp = new admin_settingpage('externalservices', new lang_string('externalservices', 'webservice'));
-    $temp->add(new admin_setting_heading('manageserviceshelpexplaination', new lang_string('information', 'webservice'), new lang_string('servicehelpexplanation', 'webservice')));
-    $temp->add(new admin_setting_manageexternalservices());
-    $ADMIN->add('webservicesettings', $temp);
-    $ADMIN->add('webservicesettings', new admin_externalpage('externalservice', new lang_string('editaservice', 'webservice'), "$CFG->wwwroot/$CFG->admin/webservice/service.php", 'moodle/site:config', true));
-    $ADMIN->add('webservicesettings', new admin_externalpage('externalservicefunctions', new lang_string('externalservicefunctions', 'webservice'), "$CFG->wwwroot/$CFG->admin/webservice/service_functions.php", 'moodle/site:config', true));
-    $ADMIN->add('webservicesettings', new admin_externalpage('externalserviceusers', new lang_string('externalserviceusers', 'webservice'), "$CFG->wwwroot/$CFG->admin/webservice/service_users.php", 'moodle/site:config', true));
-    $ADMIN->add('webservicesettings', new admin_externalpage('externalserviceusersettings', new lang_string('serviceusersettings', 'webservice'), "$CFG->wwwroot/$CFG->admin/webservice/service_user_settings.php", 'moodle/site:config', true));
-    /// manage protocol page link
-    $temp = new admin_settingpage('webserviceprotocols', new lang_string('manageprotocols', 'webservice'));
-    $temp->add(new admin_setting_managewebserviceprotocols());
-    if (empty($CFG->enablewebservices)) {
-        $temp->add(new admin_setting_heading('webservicesaredisabled', '', new lang_string('disabledwarning', 'webservice')));
-    }
-
-    // We cannot use $OUTPUT this early, doing so means that we lose the ability
-    // to set the page layout on all admin pages.
-    // $wsdoclink = $OUTPUT->doc_link('How_to_get_a_security_key');
-    $url = new moodle_url(get_docs_url('How_to_get_a_security_key'));
-    $wsdoclink = html_writer::tag('a', new lang_string('supplyinfo', 'webservice'), array('href'=>$url));
-    $temp->add(new admin_setting_configcheckbox('enablewsdocumentation', new lang_string('enablewsdocumentation',
-                        'admin'), new lang_string('configenablewsdocumentation', 'admin', $wsdoclink), false));
-    $ADMIN->add('webservicesettings', $temp);
-    /// links to protocol pages
-    $plugins = core_plugin_manager::instance()->get_plugins_of_type('webservice');
-    core_collator::asort_objects_by_property($plugins, 'displayname');
-    foreach ($plugins as $plugin) {
-        /** @var \core\plugininfo\webservice $plugin */
-        $plugin->load_settings($ADMIN, 'webservicesettings', $hassiteconfig);
-    }
-    /// manage token page link
-    $ADMIN->add('webservicesettings', new admin_externalpage('addwebservicetoken', new lang_string('managetokens', 'webservice'), "$CFG->wwwroot/$CFG->admin/webservice/tokens.php", 'moodle/site:config', true));
-    $temp = new admin_settingpage('webservicetokens', new lang_string('managetokens', 'webservice'));
-    $temp->add(new admin_setting_managewebservicetokens());
-    if (empty($CFG->enablewebservices)) {
-        $temp->add(new admin_setting_heading('webservicesaredisabled', '', new lang_string('disabledwarning', 'webservice')));
-    }
-    $ADMIN->add('webservicesettings', $temp);
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2012.08.20  @sarjona
-    }
-    //************ FI
-
 }
 
 // Question type settings
@@ -563,14 +555,15 @@ foreach ($pages as $page) {
     $ADMIN->add('reportplugins', $page);
 }
 
-//XTEC ************ MODIFICAT - To let access only to xtecadmin user
-//2016.06.09  @sarjona
-if ($hassiteconfig && get_protected_agora() ) {
-//************ ORIGINAL
+// XTEC ************ MODIFICAT - Allow access only to xtecadmin user
+// 2016.06.09 @sarjona
+if ($hassiteconfig && get_protected_agora()) {
+// ************ ORIGINAL
 /*
 if ($hassiteconfig) {
 */
-//************ FI
+// ************ FI
+
     // Global Search engine plugins.
     $ADMIN->add('modules', new admin_category('searchplugins', new lang_string('search', 'admin')));
     $temp = new admin_settingpage('manageglobalsearch', new lang_string('globalsearchmanage', 'admin'));
@@ -595,8 +588,19 @@ if ($hassiteconfig) {
 
     // Search engine selection.
     $temp->add(new admin_setting_heading('searchengineheading', new lang_string('searchengine', 'admin'), ''));
-    $temp->add(new admin_setting_configselect('searchengine',
-                                new lang_string('selectsearchengine', 'admin'), '', 'simpledb', $engines));
+    $searchengineselect = new admin_setting_configselect('searchengine',
+            new lang_string('selectsearchengine', 'admin'), '', 'simpledb', $engines);
+    $searchengineselect->set_validate_function(function(string $value): string {
+        global $CFG;
+
+        // Check nobody's setting the indexing and query-only server to the same one.
+        if (isset($CFG->searchenginequeryonly) && $CFG->searchenginequeryonly === $value) {
+            return get_string('searchenginequeryonlysame', 'admin');
+        } else {
+            return '';
+        }
+    });
+    $temp->add($searchengineselect);
     $temp->add(new admin_setting_heading('searchoptionsheading', new lang_string('searchoptions', 'admin'), ''));
     $temp->add(new admin_setting_configcheckbox('searchindexwhendisabled',
             new lang_string('searchindexwhendisabled', 'admin'), new lang_string('searchindexwhendisabled_desc', 'admin'),
@@ -636,6 +640,43 @@ if ($hassiteconfig) {
         new lang_string('searchhideallcategory_desc', 'admin'),
         0));
 
+    $temp->add(new admin_setting_heading('searchmanagement', new lang_string('searchmanagement', 'admin'),
+            new lang_string('searchmanagement_desc', 'admin')));
+
+    // Get list of search engines including those with alternate settings.
+    $searchenginequeryonlyselect = new admin_setting_configselect('searchenginequeryonly',
+            new lang_string('searchenginequeryonly', 'admin'),
+            new lang_string('searchenginequeryonly_desc', 'admin'), '', function() use($engines) {
+                $options = ['' => new lang_string('searchenginequeryonly_none', 'admin')];
+                foreach ($engines as $name => $display) {
+                    $options[$name] = $display;
+
+                    $classname = '\search_' . $name . '\engine';
+                    $engine = new $classname;
+                    if ($engine->has_alternate_configuration()) {
+                        $options[$name . '-alternate'] =
+                                new lang_string('searchenginealternatesettings', 'admin', $display);
+                    }
+                }
+                return $options;
+            });
+    $searchenginequeryonlyselect->set_validate_function(function(string $value): string {
+        global $CFG;
+
+        // Check nobody's setting the indexing and query-only server to the same one.
+        if (isset($CFG->searchengine) && $CFG->searchengine === $value) {
+            return get_string('searchenginequeryonlysame', 'admin');
+        } else {
+            return '';
+        }
+    });
+    $temp->add($searchenginequeryonlyselect);
+    $temp->add(new admin_setting_configcheckbox('searchbannerenable',
+            new lang_string('searchbannerenable', 'admin'), new lang_string('searchbannerenable_desc', 'admin'),
+            0));
+    $temp->add(new admin_setting_confightmleditor('searchbanner',
+            new lang_string('searchbanner', 'admin'), '', ''));
+
     $ADMIN->add('searchplugins', $temp);
     $ADMIN->add('searchplugins', new admin_externalpage('searchareas', new lang_string('searchareas', 'admin'),
         new moodle_url('/admin/searchareas.php')));
@@ -662,14 +703,16 @@ foreach ($plugins as $plugin) {
 }
 
 // Now add the Cache plugins
-//XTEC ************ MODIFICAT - To let access only to xtecadmin user
-//2013.04.16  @sarjona
+
+// XTEC ************ MODIFICAT - Allow access only to xtecadmin user
+// 2013.04.16 @sarjona
 if ($hassiteconfig && get_protected_agora() ) {
-//************ ORIGINAL
+// ************ ORIGINAL
 /*
 if ($hassiteconfig) {
 */
-//************ FI
+// ************ FI
+
     $ADMIN->add('modules', new admin_category('cache', new lang_string('caching', 'cache')));
     $ADMIN->add('cache', new admin_externalpage('cacheconfig', new lang_string('cacheconfig', 'cache'), $CFG->wwwroot .'/cache/admin.php'));
     $ADMIN->add('cache', new admin_externalpage('cachetestperformance', new lang_string('testperformance', 'cache'), $CFG->wwwroot . '/cache/testperformance.php'));
@@ -693,6 +736,28 @@ if ($hassiteconfig) {
     foreach ($plugins as $plugin) {
         /** @var \core\plugininfo\calendartype $plugin */
         $plugin->load_settings($ADMIN, 'calendartype', $hassiteconfig);
+    }
+}
+
+// Content bank content types.
+
+// XTEC ************ MODIFICAT - Allow access only to xtecadmin user
+// 2021.06.23 @aginard
+if ($hassiteconfig && get_protected_agora()) {
+// ************ ORIGINAL
+/*
+if ($hassiteconfig) {
+*/
+// ************ FI
+
+    $ADMIN->add('modules', new admin_category('contentbanksettings', new lang_string('contentbank')));
+    $temp = new admin_settingpage('managecontentbanktypes', new lang_string('managecontentbanktypes'));
+    $temp->add(new admin_setting_managecontentbankcontenttypes());
+    $ADMIN->add('contentbanksettings', $temp);
+    $plugins = core_plugin_manager::instance()->get_plugins_of_type('contenttype');
+    foreach ($plugins as $plugin) {
+        /** @var \core\plugininfo\contentbank $plugin */
+        $plugin->load_settings($ADMIN, 'contentbanksettings', $hassiteconfig);
     }
 }
 

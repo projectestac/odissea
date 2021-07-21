@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'nl', version '3.8'.
+ * Strings for component 'analytics', language 'nl', version '3.11'.
  *
  * @package     analytics
  * @category    string
@@ -34,6 +34,8 @@ $string['analyticslogstore'] = 'Log store gebruikt voor analytics';
 $string['analyticslogstore_help'] = 'De log store die gebruikt zal worden door de analytics API om de activiteit van gebruikers te lezen.';
 $string['analyticssettings'] = 'Instellingen analytics';
 $string['analyticssiteinfo'] = 'Site informatie';
+$string['calclifetime'] = 'Behoud analytische berekeningen gedurende';
+$string['configlcalclifetime'] = 'Dit geeft de duur aan hoelang je de berekende gegevens wil bewaren. Dit zal geen voorspellingen verwijderen, maar verwijdert de gegevens die gebruikt zijn om de voorspellingen te genereren. Hier de standaardopties gebruiken houdt je schijfgebruik het beste onder controle, maar als je de berekeningstabellen voor iets anders wil gebruiken, dan kun je hier de waarde verhogen.';
 $string['defaultpredictionsprocessor'] = 'Standaard voorspellingsprocessor';
 $string['defaultpredictoroption'] = 'Standaard processor ({$a})';
 $string['defaulttimesplittingmethods'] = 'Standaard analyse-intervallen voor de evaluatie van het model';
@@ -96,10 +98,11 @@ $string['modeinstructionfacetoface'] = 'Face-to-face';
 $string['modeinstructionfullyonline'] = 'Volledig online';
 $string['modeloutputdir'] = 'Output-map voor modellen';
 $string['modeloutputdirinfo'] = 'De map waar voorspellingsprocessoren al hun evaluatie-informatie opslaan. Nuttig voor foutopsporing en onderzoek.';
-$string['modeloutputdirwithdefaultinfo'] = 'Directory waar voorspellingsprocessors alle evaluatie-informatie opslaan. Handig voor foutopsporing en onderzoek. Indien leeg, wordt \'<strong> {$ a} </strong>\' als standaard gebruikt.';
+$string['modeloutputdirwithdefaultinfo'] = 'Directory waar voorspellingsprocessors alle evaluatie-informatie opslaan. Handig voor foutopsporing en onderzoek. Indien leeg, wordt {$a} als standaard gebruikt.';
 $string['modeltimelimit'] = 'Tijdslimiet analyse per model';
 $string['modeltimelimitinfo'] = 'Deze instelling beperkt de tijd voor ieder model om de inhoud van de site te analyseren.';
 $string['neutral'] = 'Neutrale';
+$string['neverdelete'] = 'Berekeningen nooit verwijderen';
 $string['nocourses'] = 'Geen cursussen om te analyseren';
 $string['nodata'] = 'Geen data om te analyseren';
 $string['noevaluationbasedassumptions'] = 'Modellen gebaseerd op aannames kunnen niet worden geëvalueerd.';

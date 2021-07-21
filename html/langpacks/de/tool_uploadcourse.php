@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'de', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'de', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -77,9 +77,15 @@ $string['csvdelimiter'] = 'CSV-Trenner';
 $string['csvdelimiter_help'] = 'Trennzeichen der csv-Datei';
 $string['csvfileerror'] = 'Es tritt ein Fehler mit dem CSV-Format auf. Prüfen Sie die Anzahl der Kopfzeilen- und Inhaltsspalten. Überprüfen Sie auch die Trennzeichen und das Encoding: {$a}';
 $string['csvline'] = 'Zeile';
+$string['customfieldinvalid'] = 'Das benutzerdefinierte Feld \'{$a}\' ist leer oder enthält ungültige Daten';
 $string['defaultvalues'] = 'Standardwerte für Kurseinstellungen';
+$string['defaultvaluescustomfieldcategory'] = 'Standardmäßiger Wert für \'{$a}\'';
+$string['downloadcontentnotallowed'] = 'Das Herunterladen von Kursinhalten kann nicht konfiguriert werden.';
 $string['encoding'] = 'Kodierung';
 $string['encoding_help'] = 'Zeichensatz (Encoding) der csv-Datei';
+$string['errorcannotcreateorupdateenrolment'] = 'Die Einschreibemethode \'{$a}\' kann nicht angelegt oder aktualisiert werden.';
+$string['errorcannotdeleteenrolment'] = 'Die Einschreibemethode \'{$a}\' kann nicht gelöscht werden.';
+$string['errorcannotdisableenrolment'] = 'Die Einschreibemethode \'{$a}\' kann nicht deaktiviert werden-';
 $string['errorwhiledeletingcourse'] = 'Fehler beim Löschen des Kurses';
 $string['errorwhilerestoringcourse'] = 'Fehler beim Wiederherstellen des Kurses';
 $string['generatedshortnamealreadyinuse'] = 'Der erzeugte Kursname existiert bereits';
@@ -90,6 +96,7 @@ $string['importoptions'] = 'Importoptionen';
 $string['invalidbackupfile'] = 'Ungültige Sicherungsdatei';
 $string['invalidcourseformat'] = 'Ungültiges Kursformat';
 $string['invalidcsvfile'] = 'Ungültige CSV-Datei';
+$string['invaliddownloadcontent'] = 'Ungültiges Herunterladen von Kursinhalten';
 $string['invalidencoding'] = 'Ungültige Kodierung';
 $string['invalideupdatemode'] = 'Ungültige Aktualisierung ausgewählt';
 $string['invalidfullnametoolong'] = 'Das Feld \'Vollständiger Name\' ist auf {$a} Zeichen beschränkt.';

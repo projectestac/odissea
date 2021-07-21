@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dbtransfer', language 'ru', version '3.8'.
+ * Strings for component 'tool_dbtransfer', language 'ru', version '3.11'.
  *
  * @package     tool_dbtransfer
  * @category    string
@@ -37,6 +37,7 @@ $string['exportdata'] = 'Экспорт данных';
 $string['notargetconectexception'] = 'К сожалению, не удается подключиться к целевой базе данных.';
 $string['options'] = 'Параметры';
 $string['pluginname'] = 'Перенос базы данных';
+$string['privacy:metadata'] = 'Плагин переноса базы данных не хранит никаких личных данных.';
 $string['targetdatabase'] = 'Целевая база данных';
 $string['targetdatabasenotempty'] = 'Целевая база данных не должна содержать таблицы с указанным префиксом!';
 $string['transferdata'] = 'Перенос данных';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_offlineattempts', language 'eu', version '3.8'.
+ * Strings for component 'quizaccess_offlineattempts', language 'eu', version '3.11'.
  *
  * @package     quizaccess_offlineattempts
  * @category    string
@@ -29,10 +29,10 @@ $string['allowofflineattempts'] = 'Baimendu galdetegia lineaz-kanpo mobile aplik
 $string['allowofflineattempts_help'] = 'Gaituz gero, mobile aplikazioaren erabiltzaile batek galdetegia jaitsi eta lineaz kanpo erantzuteko aukera izango du.
 
 Oharra: Ezin da galdetegia lineaz kanpo erantzun denbora-muga bat badu, sare-helbide zehatza eskatzen badu, edo beranduagoko feedbacka (CBM-rekin edo gabe) ez den galderen jokaera bat erabiltzen badu.';
-$string['confirmdatasaved'] = 'Konfirmatzen dut ez dudala gorde gabeko lanik gailu mugikorrean.';
+$string['confirmdatasaved'] = 'Baieztatzen dut ez dudala gorde gabeko lanik gailu mugikorrean.';
 $string['mobileapp'] = 'Aplikazio mugikorra';
 $string['offlineattemptserror'] = 'Ezin da galdetegia lineaz kanpo erantzun denbora-muga bat badu, sare-helbide zehatza eskatzen badu, edo beranduagoko feedbacka (CBM-rekin edo gabe) ez den galderen jokaera bat erabiltzen badu.';
 $string['offlinedatamessage'] = 'Saiakera honetan gailu mugikor batetik lanean aritu zara. Datuak gunean orain dela {$a} gorde ziren azkenekoz.';
-$string['pleaseconfirm'] = 'Mesedez aztertu eta konfirmatu ez duzula gorde gabeko inolako lanik.';
+$string['pleaseconfirm'] = 'Mesedez aztertu eta berretsi ezazu ez duzula gorde gabeko inolako lanik.';
 $string['pluginname'] = 'Lineaz kanpoko saiakerentzako sarbide-araua';
 $string['privacy:metadata'] = 'Lineaz kanpoko saiakerentzako galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';

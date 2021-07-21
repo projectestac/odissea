@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'en', version '3.8'.
+ * Strings for component 'feedback', language 'en', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -57,6 +57,7 @@ $string['complete_the_form'] = 'Answer the questions';
 $string['completed'] = 'Completed';
 $string['completed_feedbacks'] = 'Submitted answers';
 $string['completedon'] = 'Completed on {$a}';
+$string['completiondetail:submit'] = 'Submit feedback';
 $string['completionsubmit'] = 'View as completed if the feedback is submitted';
 $string['configallowfullanonymous'] = 'If set to \'yes\', users can complete a feedback activity on the front page without being required to log in.';
 $string['confirmdeleteentry'] = 'Are you sure you want to delete this entry?';
@@ -262,7 +263,7 @@ $string['searchcourses'] = 'Search courses';
 $string['searchcourses_help'] = 'Search for the code or name of the course(s) that you wish to associate with this feedback.';
 $string['selected_dump'] = 'Selected indexes of $SESSION variable are dumped below:';
 $string['send'] = 'Send';
-$string['send_message'] = 'Send message';
+$string['send_message'] = 'Send notification';
 $string['show_all'] = 'Show all';
 $string['show_analysepage_after_submit'] = 'Show analysis page';
 $string['show_entries'] = 'Show responses';

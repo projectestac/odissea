@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'eu', version '3.8'.
+ * Strings for component 'folder', language 'eu', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -39,6 +39,8 @@ $string['folder:addinstance'] = 'Gehitu karpeta berria';
 $string['folder:managefiles'] = 'Kudeatu fitxategiak karpeta moduluan';
 $string['folder:view'] = 'Ikusi karpetaren edukia';
 $string['foldercontent'] = 'Fitxategiak eta azpikarpetak';
+$string['forcedownload'] = 'Behartu fitxategien deskarga';
+$string['forcedownload_help'] = 'Fitxategi zehatz batzuk, hala nola irudiak edo HTML fitxategiak, nabigatzailean erakutsi behar diren deskargatuak izan ordez. Kontuan izan, segurtasun-arrazoiak direla-eta, ezarpen hau soilik desmarkatu beharko litzatekeela karpetetako fitxategiak kudeatzeko baimena duten erabiltzaile guztiak konfiantzazkoak badira.';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa karpetetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Karpeta motako baliabideetan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa karpetetan';
@@ -50,12 +52,12 @@ $string['indicator:socialbreadthdef_help'] = 'Partaide honek Karpeta baliabideak
 $string['maxsizetodownload'] = 'Karpetak jaisteko gehienezko tamaina (MB)';
 $string['maxsizetodownload_help'] = 'Karpetak zip fitxategi moduan jaisteko gehienezko tamaina. 0 ezarriz gero, karpetaren tamainak ez du mugarik izango.';
 $string['modulename'] = 'Karpeta';
-$string['modulename_help'] = 'Karpeta baliabideak irakasleak karpeta baten barruan erlazioa duten fitxategi-multzoak erakustea ahalbidetzen du, ikastaroko orriko scroll-a gutxituz. ZIP fitxategi batean konprimatutako karpeta bat igo eta erakusgai jartzeko deskonprimitu daiteke.
+$string['modulename_help'] = 'Karpeta baliabideak irakasleak karpeta baten barruan erlazioa duten fitxategi-multzoak erakustea ahalbidetzen du, ikastaroko orriko scroll-a gutxituz. ZIP fitxategi batean konprimatutako karpeta bat igo eta erakusgai jartzeko deskonprimi daiteke.
 
-Karpeta bat erabili daiteke
+Karpeta bat erabil daiteke
 
-* Gai batekin lotutako-fitxategi multzoak erakusteko, iraganeko azterketa multzoak edo ikasleek proiektuetan erabilitako irudi-multzoak adibidez.
-* Irakasleen ikastaroko elkartrukerako gune bezala (karpeta izkutaturik utzita irakasleek bakarrik ikus dezaten)';
+* Gai batekin lotutako fitxategi-multzoak erakusteko, iraganeko azterketa-multzoak edo ikasleek proiektuetan erabilitako irudi-multzoak adibidez.
+* Irakasleen ikastaroko elkartrukerako gune bezala (karpeta ezkutaturik utzita soilik irakasleek ikus dezaten)';
 $string['modulenameplural'] = 'Karpetak';
 $string['newfoldercontent'] = 'Karpeta berriaren edukia';
 $string['noautocompletioninline'] = 'Jarduera ikustearen osaketa automatikoa ezin da aukeratu "Erakutsi ikastaroaren orrian" aukerarekin batera.';

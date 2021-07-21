@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ru', version '3.8'.
+ * Strings for component 'block_section_links', language 'ru', version '3.11'.
  *
  * @package     block_section_links
  * @category    string
@@ -38,5 +38,7 @@ $string['numsections2_help'] = 'Если число разделов в курс
 $string['pluginname'] = 'Ссылки на разделы';
 $string['privacy:metadata'] = 'Блок «Ссылки на разделы» только показывает данные, хранящиеся в других местах.';
 $string['section_links:addinstance'] = 'Добавлять новый блок «Ссылки на разделы»';
+$string['showsectionname'] = 'Показывать название раздела';
+$string['showsectionname_help'] = 'Отображать название раздела в дополнение к номеру раздела';
 $string['topics'] = 'Темы';
 $string['weeks'] = 'Недели';

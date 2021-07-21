@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_singleactivity', language 'sv', version '3.8'.
+ * Strings for component 'format_singleactivity', language 'sv', version '3.11'.
  *
  * @package     format_singleactivity
  * @category    string
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activitytype'] = 'Aktivitetstyp';
 $string['activitytype_help'] = 'Välj aktivitet eller resurs att använda i denna kurs';
-$string['defactivitytype'] = 'Standardvärde för aktivitetstyp';
+$string['defactivitytype'] = 'Standardaktivitetstyp';
 $string['defactivitytypedesc'] = 'Välj standardaktivitetstypen som används vid skapande av ny kurs';
 $string['erroractivitytype'] = 'Aktivitetstyp är inte konfigurerad i kursinställningarna';
 $string['orphaned'] = 'Föräldralös';
 $string['orphanedwarning'] = 'Dessa aktiviteter kan inte nås av användare!';
-$string['pluginname'] = 'Ensam aktivitet';
-$string['privacy:metadata'] = 'Pluginmodulen Ensam aktivitet lagrar ingen personlig information.';
+$string['pluginname'] = 'Enskild aktivitet';
+$string['privacy:metadata'] = 'Pluginmodulen Enskild aktivitet lagrar ingen personlig information.';
+$string['sectionname'] = '';
+$string['warningchangeformat'] = 'När du ändrar det befintliga kursformatet till "Enskild aktivitet", säkerställ att du har tagit bort alla extra aktiviteter från kursen inklusive "Meddelanden". Observera att avsnittsstrukturen kan ändras.';

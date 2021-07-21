@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_csv', language 'ar', version '3.8'.
+ * Strings for component 'gradeimport_csv', language 'ar', version '3.11'.
  *
  * @package     gradeimport_csv
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['csv:view'] = 'استورد درجات من CSV';
+$string['csv:view'] = 'استيراد العلامات من CSV';
 $string['pluginname'] = 'ملف CSV';
 $string['privacy:metadata'] = 'إن ملحق استيراد التقديرات من CSV لا يخزن أي بيانات شخصية.';

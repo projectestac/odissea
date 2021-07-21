@@ -143,20 +143,20 @@ Feature: Set up contextual data for tests
     And I log out
     And I log in as "user2"
     And I am on "Course 1" course homepage
-    And "Turn editing on" "link" should exist in current page administration
+    And "Turn editing on" "button" should exist
     And I log out
     And I log in as "user3"
     And I am on "Course 1" course homepage
-    And "Turn editing on" "link" should exist in current page administration
+    And "Turn editing on" "button" should exist
     And I log out
     And I log in as "user4"
     And I am on "Course 1" course homepage
-    And "Turn editing on" "link" should exist in current page administration
+    And "Turn editing on" "button" should exist
     And I log out
     And I log in as "user5"
     And I should see "You are logged in as"
     And I am on "Course 1" course homepage
-    And I should see "You can not enrol yourself in this course."
+    And I should see "You cannot enrol yourself in this course."
 
   Scenario: Add modules
     Given the following "courses" exist:
@@ -259,9 +259,9 @@ Feature: Set up contextual data for tests
     Then the "groups" select box should contain "Group 1 (1)"
     And the "groups" select box should contain "Group 2 (1)"
     And I set the field "groups" to "Group 1 (1)"
-    And the "members" select box should contain "Student 1"
+    And the "members" select box should contain "Student 1 (student1@example.com)"
     And I set the field "groups" to "Group 2 (1)"
-    And the "members" select box should contain "Student 2"
+    And the "members" select box should contain "Student 2 (student2@example.com)"
 
   Scenario: Add cohorts and cohort members with data generator
     Given the following "categories" exist:

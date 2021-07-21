@@ -115,7 +115,16 @@ class framework implements \H5PFrameworkInterface {
      * @param string $url
      */
     public function setLibraryTutorialUrl($libraryname, $url) {
-        // Tutorial url is currently not being used or stored in libraries.
+        global $DB;
+
+        $sql = 'UPDATE {h5p_libraries}
+                   SET tutorial = :tutorial
+                 WHERE machinename = :machinename';
+        $params = [
+            'tutorial' => $url,
+            'machinename' => $libraryname,
+        ];
+        $DB->execute($sql, $params);
     }
 
     /**
@@ -511,7 +520,7 @@ class framework implements \H5PFrameworkInterface {
 
         $results = $DB->get_records('h5p_libraries', [], 'title ASC, majorversion ASC, minorversion ASC',
             'id, machinename AS machine_name, majorversion AS major_version, minorversion AS minor_version,
-            patchversion AS patch_version, runnable, title');
+            patchversion AS patch_version, runnable, title, enabled');
 
         $libraries = array();
         foreach ($results as $library) {
@@ -568,7 +577,7 @@ class framework implements \H5PFrameworkInterface {
     }
 
     /**
-     * Get file extension whitelist.
+     * Get allowed file extension list.
      * Implements getWhitelist.
      *
      * The default extension list is part of h5p, but admins should be allowed to modify it.
@@ -685,6 +694,9 @@ class framework implements \H5PFrameworkInterface {
      *                           - dropLibraryCss(optional): list of associative arrays containing:
      *                             - machineName: machine name for the librarys that are to drop their css
      *                           - semantics(optional): Json describing the content structure for the library
+     *                           - metadataSettings(optional): object containing:
+     *                             - disable: 1 if metadata is disabled completely
+     *                             - disableExtraTitleField: 1 if the title field is hidden in the form
      * @param bool $new Whether it is a new or existing library.
      */
     public function saveLibraryData(&$librarydata, $new = true) {
@@ -722,6 +734,7 @@ class framework implements \H5PFrameworkInterface {
             'addto' => isset($librarydata['addTo']) ? json_encode($librarydata['addTo']) : null,
             'coremajor' => isset($librarydata['coreApi']['majorVersion']) ? $librarydata['coreApi']['majorVersion'] : null,
             'coreminor' => isset($librarydata['coreApi']['majorVersion']) ? $librarydata['coreApi']['minorVersion'] : null,
+            'metadatasettings' => isset($librarydata['metadataSettings']) ? $librarydata['metadataSettings'] : null,
         );
 
         if ($new) {
@@ -795,6 +808,13 @@ class framework implements \H5PFrameworkInterface {
             $content['library']['libraryId'] = $mainlibrary->id;
         }
 
+        $content['disable'] = $content['disable'] ?? null;
+        // Add title to 'params' to use in the editor.
+        if (!empty($content['title'])) {
+            $params = json_decode($content['params']);
+            $params->title = $content['title'];
+            $content['params'] = json_encode($params);
+        }
         $data = [
             'jsoncontent' => $content['params'],
             'displayoptions' => $content['disable'],
@@ -1082,20 +1102,10 @@ class framework implements \H5PFrameworkInterface {
      * @param int $minorversion The library's minor version
      */
     public function alterLibrarySemantics(&$semantics, $name, $majorversion, $minorversion) {
-        global $DB;
+        global $PAGE;
 
-        $library = $DB->get_record('h5p_libraries',
-            array(
-                'machinename' => $name,
-                'majorversion' => $majorversion,
-                'minorversion' => $minorversion,
-            )
-        );
-
-        if ($library) {
-            $library->semantics = json_encode($semantics);
-            $DB->update_record('h5p_libraries', $library);
-        }
+        $renderer = $PAGE->get_renderer('core_h5p');
+        $renderer->h5p_alter_semantics($semantics, $name, $majorversion, $minorversion);
     }
 
     /**
@@ -1133,17 +1143,8 @@ class framework implements \H5PFrameworkInterface {
      * @param stdClass $library Library object with id, name, major version and minor version
      */
     public function deleteLibrary($library) {
-        global $DB;
-
-        $fs = new \core_h5p\file_storage();
-        // Delete the library from the file system.
-        $fs->delete_library(array('libraryId' => $library->id));
-        // Delete also the cache assets to rebuild them next time.
-        $this->deleteCachedAssets($library->id);
-
-        // Remove library data from database.
-        $DB->delete_records('h5p_library_dependencies', array('libraryid' => $library->id));
-        $DB->delete_records('h5p_libraries', array('id' => $library->id));
+        $factory = new \core_h5p\factory();
+        \core_h5p\api::delete_library($factory, $library);
     }
 
     /**
@@ -1171,7 +1172,7 @@ class framework implements \H5PFrameworkInterface {
 
         $sql = "SELECT hc.id, hc.jsoncontent, hc.displayoptions, hl.id AS libraryid,
                        hl.machinename, hl.title, hl.majorversion, hl.minorversion, hl.fullscreen,
-                       hl.embedtypes, hl.semantics, hc.filtered
+                       hl.embedtypes, hl.semantics, hc.filtered, hc.pathnamehash
                   FROM {h5p} hc
                   JOIN {h5p_libraries} hl ON hl.id = hc.mainlibraryid
                  WHERE hc.id = :h5pid";
@@ -1205,8 +1206,20 @@ class framework implements \H5PFrameworkInterface {
             'libraryMinorVersion' => $data->minorversion,
             'libraryEmbedTypes' => $data->embedtypes,
             'libraryFullscreen' => $data->fullscreen,
-            'metadata' => ''
+            'metadata' => '',
+            'pathnamehash' => $data->pathnamehash
         );
+
+        $params = json_decode($data->jsoncontent);
+        if (empty($params->metadata)) {
+            $params->metadata = new \stdClass();
+        }
+        // Add title to metadata.
+        if (!empty($params->title) && empty($params->metadata->title)) {
+            $params->metadata->title = $params->title;
+        }
+        $content['metadata'] = $params->metadata;
+        $content['params'] = json_encode($params->params ?? $params);
 
         return $content;
     }
@@ -1264,6 +1277,10 @@ class framework implements \H5PFrameworkInterface {
      * Get stored setting.
      * Implements getOption.
      *
+     * To avoid updating the cache libraries when using the Hub selector,
+     * {@link \H5PEditorAjax::isContentTypeCacheUpdated}, the setting content_type_cache_updated_at
+     * always return the current time.
+     *
      * @param string $name Identifier for the setting
      * @param string $default Optional default value if settings is not set
      * @return mixed Return  Whatever has been stored as the setting
@@ -1274,6 +1291,11 @@ class framework implements \H5PFrameworkInterface {
             // defined in the displayoptions DB field.
             // This check should be removed if they are added as new H5P settings, to let admins to define the default value.
             return \H5PDisplayOptionBehaviour::CONTROLLED_BY_AUTHOR_DEFAULT_OFF;
+        }
+
+        // To avoid update the libraries cache using the Hub selector.
+        if ($name == 'content_type_cache_updated_at') {
+            return time();
         }
 
         $value = get_config('core_h5p', $name);

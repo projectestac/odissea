@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'ja', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'ja', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -115,6 +115,7 @@ $string['edit_xml_file'] = 'XMLファイルを編集する';
 $string['enumvaluesincorrect'] = 'enumフィールドの値が正しくありません。';
 $string['expected'] = '期待値';
 $string['extensionrequired'] = '申し訳ございません - この処理を実行するにはPHP拡張モジュール「 {$a} 」が必要です。あなたがこの機能を使用したい場合、拡張モジュールをインストールしてください。';
+$string['extraindexesfound'] = '拡張インデックスが見つかりました。';
 $string['field'] = 'フィールド';
 $string['fieldnameempty'] = 'フィールド名が空です。';
 $string['fields'] = 'フィールド';
@@ -160,12 +161,12 @@ $string['newtable'] = '新しいテーブル';
 $string['newtablefrommysql'] = 'MySQLから新しいテーブル';
 $string['nofieldsspecified'] = '指定されたフィールドはありません。';
 $string['nomasterprimaryuniquefound'] = 'あなたの外部キーが参照するカラムは参照テーブルのプライマリまたはユニークキーに含まれている必要があります。ユニークインデックスに含まれているカラムでは十分ではありませんので留意してください。';
-$string['nomissingindexesfound'] = '不明なインデックスは見つかりませんでした。あなたのDBに関してさらなる操作は不要です。';
+$string['nomissingorextraindexesfound'] = '不明または拡張インデックスは見つかりませんでした。そのため、さらなる操作は不要です。';
 $string['noreffieldsspecified'] = '参照フィールドが指定されていません。';
 $string['noreftablespecified'] = '指定された参照テーブルが見つかりませんでした。';
 $string['noviolatedforeignkeysfound'] = '外部キー違反は見つかりませんでした。';
 $string['nowrongdefaultsfound'] = '矛盾したデフォルト値は見つかりませんでした。あなたのDBに関してさらなる操作は不要です。';
-$string['nowrongintsfound'] = '不正な整数型は見つかりませんでした。あなたのDBに関して、さらなる処置は不要です。';
+$string['nowrongintsfound'] = '不正な整数型は見つかりませんでした。あなたのDBに関してさらなる操作は不要です。';
 $string['nowrongoraclesemanticsfound'] = 'BYTEセマンティクスを使用しているOracleカラムは見つかりませんでした。さらなる操作は不要です。';
 $string['numberincorrectdecimals'] = 'numberフィールドの小数点以下桁数が正しくありません。';
 $string['numberincorrectlength'] = 'numberフィールドの長さが正しくありません。';
@@ -219,11 +220,12 @@ $string['wronglengthforenum'] = 'enumフィールドの長さが正しくあり�
 $string['wrongnumberofreffields'] = '参照フィールド番号が正しくありません。';
 $string['wrongoraclesemantics'] = '不正なOracle BYTEセマンティクスが見つかりました。';
 $string['wrongreservedwords'] = '現在使用されている予約語<br />($CFG->prefixを使用している場合、テーブル名は重要ではない点に留意してください)';
+$string['yesextraindexesfound'] = '次の追加インデックスが見つかりました。';
 $string['yesmissingindexesfound'] = '<p>あなたのDBに不明なインデックスが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでインデックス作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
 <p>SQL文の実行後、これ以上不明なインデックスが見つかるかどうかこのユーティリティの再実行を強くお勧めします。</p>';
 $string['yeswrongdefaultsfound'] = '<p>あなたのDBに矛盾したデフォルト値が見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでインデックス作成を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
 <p>SQL文の実行後、これ以上矛盾したデフォルト値が見つかるかどうかこのユーティリティの再実行を強くお勧めします。</p>';
 $string['yeswrongintsfound'] = '<p>あなたのDBに不正な整数型が見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースで整数型の修正を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
-<p>修正後、さらに不正な整数型が見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';
+<p>修正後、これ以上不正な整数型が見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';
 $string['yeswrongoraclesemanticsfound'] = '<p>あなたのOracleカラムに不正なBYTEセマンティクスが見つかりました。以下、詳細情報およびあなたの好きなSQLインターフェースでOracleカラムすべての変換を実行するためのSQL文です。最初にあなたのデータを忘れずにバックアップしてください!</p>
-<p>SQL文の実行後、これ以上不正なOracleカラムが見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';
+<p>SQL文の実行後、これ以上不正なセマンティクスが見つかるかどうかこのユーティリティの再実行を強くお勧めします。<p>';

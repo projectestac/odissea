@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'el', version '3.8'.
+ * Strings for component 'tool_behat', language 'el', version '3.11'.
  *
  * @package     tool_behat
  * @category    string
@@ -50,6 +50,7 @@ $string['stepsdefinitionstype'] = 'Τύπος';
 $string['theninfo'] = 'Τότε. Έλεγχοι για εξασφάλιση ότι τα αποτελέσματα είναι τα αναμενόμενα';
 $string['unknownexceptioninfo'] = 'Εμφανίστηκε ένα πρόβλημα με το Selenium ή τον περιηγητή σας. Παρακαλούμε βεβαιωθείτε ότι χρησιμοποιείτε την τελευταία έκδοση του Selenium. Σφάλμα:';
 $string['viewsteps'] = 'Φίλτρο';
+$string['warndirrootconfigfound'] = 'Βρέθηκε ένα αρχείο ρυθμίσεων στο {$a}. Αυτό το αρχείο δεν ενημερώνεται αυτόματα και μπορεί να γίνει ακατάλληλο για χρήση. Σας συνιστούμε να καταργήσετε αυτό το αρχείο.';
 $string['wheninfo'] = 'Όταν. Ενέργεια που προκαλεί ένα γεγονός';
 $string['wrongbehatsetup'] = 'Κάτι συμβαίνει με τη ρύθμιση behat και έτσι δεν μπορούν να εισαχθούν ορισμοί βημάτων: <b>{$a->errormsg}</b><br/><br/>Παρακαλούμε, ελέγξτε:<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix and $CFG->behat_wwwroot ορίζονται στο config.php με διαφορετικές τιμές από $CFG->dataroot, $CFG->prefix και $CFG->wwwroot.</li>

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'ar', version '3.8'.
+ * Strings for component 'auth_email', language 'ar', version '3.11'.
  *
  * @package     auth_email
  * @category    string
@@ -30,5 +30,5 @@ $string['auth_emailnoemail'] = 'تمت محاولة إرسال بريد إلكت
 $string['auth_emailrecaptcha'] = 'يضيف عنصر تأكيد بشكل مرئي/مسموع إلى صفحة تسجيل الدخول بالنسبة إلى المستخدمين الراغبين بالتسجيل الشخصي المبني على أساس البريد الالكتروني. هذا من شأنه حماية موقعك من المزعجين ويرفع من أدائه بشكل عام. أنظر https://www.google.com/recaptcha للمزيد من التفاصيل.';
 $string['auth_emailrecaptcha_key'] = 'تمكين عنصر reCAPTCHA';
 $string['auth_emailsettings'] = 'الإعدادات';
-$string['pluginname'] = 'تسجيل ذاتي عن طريق البريد الإلكتروني';
+$string['pluginname'] = 'التسجيل الذاتي عن طريق البريد الالكتروني';
 $string['privacy:metadata'] = 'إن ملحق التسجيل الشخصي المبني على أساس البريد الالكتروني لا يخزن أي بيانات شخصية.';

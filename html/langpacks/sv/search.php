@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'sv', version '3.8'.
+ * Strings for component 'search', language 'sv', version '3.11'.
  *
  * @package     search
  * @category    string
@@ -34,11 +34,15 @@ $string['author'] = 'Författare';
 $string['authorname'] = 'Namn på författare';
 $string['back'] = 'Tillbaka';
 $string['beadmin'] = 'Du behöver vara administratör för att använda den här sidan.';
-$string['checkdb'] = 'Kontrollera databasen';
+$string['checkdb'] = 'Kontrollera databas';
 $string['checkdbadvice'] = 'Kontrollera databasen för att se om det finns några problem.';
 $string['checkdir'] = 'Kontrollera sökväg';
 $string['checkdiradvice'] = 'Säkerställ att datakatalogen finns och är skrivbar.';
 $string['commenton'] = 'Kommentar till';
+$string['confirm_delete'] = 'Vill du ta bort indexet för {$a}? Tills sökområdet är indexerat får användarna inga sökresultat från det här området.';
+$string['confirm_deleteall'] = 'Vill du ta bort allt indexerat innehåll nu? Tills webbplatsen indexeras igen får användarna inga sökresultat.';
+$string['confirm_indexall'] = 'Vill du uppdatera indexerat innehåll nu? Om en stor mängd innehåll behöver indexeras kan det ta lång tid. För liveservrar bör du normalt överlåta indexeringen till den schemalagda aktiviteten "Global sökindexering".';
+$string['confirm_reindexall'] = 'Vill du indexera om allt webbplatsinnehåll nu? Om webbplatsen innehåller en stor mängd innehåll tar det lång tid och användarna kanske inte får fullständiga sökresultat innan indexeringen är klar.';
 $string['core-all'] = 'Allt';
 $string['core-course-content'] = 'Kursinnehåll';
 $string['core-courses'] = 'Kurser';
@@ -83,24 +87,31 @@ $string['indexwhendisabledfullnotice'] = 'Indexering är för närvarande inte t
 $string['indexwhendisabledshortnotice'] = 'Indexering är inte tillgängligt.';
 $string['invalidindexerror'] = 'Indexkatalogen innehåller antingen ett ogiltigt index eller ingenting alls.';
 $string['ittook'] = 'Det tog';
+$string['matchingfile'] = 'Matchad från fil <span class="filename">{$a}</span>';
+$string['matchingfiles'] = 'Matchad från filer:';
 $string['mycoursesonly'] = 'Enbart mina kurser';
 $string['next'] = 'Nästa';
-$string['noindexmessage'] = 'Admin: Det förefaller inte att finnas någo t sökindex. Var snäll och';
+$string['noindexmessage'] = 'Admin: Det verkar inte att finnas något sökindex. Vänligen';
 $string['noresults'] = 'Inga resultat';
 $string['normalsearch'] = 'Normal sökning';
 $string['notitle'] = 'Ingen titel';
 $string['openedon'] = 'öppnad den';
 $string['optimize'] = 'Optimera';
 $string['order'] = 'Resultatordning';
+$string['order_location'] = 'Prioritera resultat relaterade till {$a}';
 $string['order_relevance'] = 'Relevanta överst';
 $string['priority'] = 'Prioritet';
 $string['priority_normal'] = 'Normal';
 $string['priority_reindexing'] = 'Omindexerar';
 $string['privacy:metadata'] = 'Sök-undersystemet lagrar ingen personlig information.';
 $string['progress'] = 'Förlopp';
+$string['queryerror'] = 'Frågan du angav kunde inte tolkas av sökmotorn: {$a}';
+$string['queueheading'] = 'Ytterligare indexeringskö ({$a}-objekt)';
 $string['resultsreturnedfor'] = 'resultat returnerade för';
 $string['runindexer'] = 'Kör indexeraren (real)';
 $string['runindexertest'] = 'Kör test av indexeraren';
+$string['schemanotupdated'] = 'Sökschemat är för gammalt.';
+$string['schemaversionunknown'] = 'Sökmotorn känner inte till den aktuella schemaversionen.';
 $string['score'] = 'Resultat';
 $string['search'] = 'Sök';
 $string['search:course'] = 'Kurser';

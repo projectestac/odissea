@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'eu', version '3.8'.
+ * Strings for component 'report_security', language 'eu', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -25,13 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p>Instalazioa burutu ondoren config.php fitxategiaren baimenak aldatzea gomendatzen da, fitxategia web-zerbitzaritik aldatzea ekiditeko.
+$string['check_configrw_details'] = '<p>Instalazioa burutu ondoren <code>config.php</code>  fitxategiaren baimenak aldatzea gomendatzen da, fitxategia web-zerbitzaritik aldatzea ekiditeko.
 Kontuan izan neurri honek ez duela zerbitzariaren segurtasuna modu nabarmenean hobetzen, baina exploit orokorrak mugatu edo mantsotu ditzake.</p>';
 $string['check_configrw_name'] = 'config.php idatz daiteke';
 $string['check_configrw_ok'] = 'PHP script-ek ezin dute config.php fitxategia aldatu.';
 $string['check_configrw_warning'] = 'PHP script-ek config.php fitxategia alda dezakete.';
 $string['check_cookiesecure_details'] = '<p>HTTPS komunikazioak gaituta badaude cookie seguruak ere gaitzea gomendatzen da. HTTPtik HTTPSra berbideraketa iraunkorra ere gehitu beharko zenuke, eta ahal dela HSTS goiburuak bidaltzea.</p>';
 $string['check_cookiesecure_error'] = 'Mesedez, gaitu cookie seguruak';
+$string['check_cookiesecure_http'] = 'HTTPS gaitu behar duzu cookie seguruak erabili ahal izateko';
 $string['check_cookiesecure_name'] = 'Cookie seguruak';
 $string['check_cookiesecure_ok'] = 'Cookie seguruak gaituta.';
 $string['check_crawlers_details'] = '<p>"Ireki bilaketa-motorrei" ezarpenak bilaketa-motorrei ikastaroetan bisitari gisa sartzen uzten die. Honek ez du ezertarako balio bisitariek sarbidea baimenduta ez badute.</p>';
@@ -45,10 +46,12 @@ $string['check_defaultuserrole_error'] = '"{$a}" izeneko lehenetsitako erabiltza
 $string['check_defaultuserrole_name'] = 'Lehenetsitako rola erabiltzaile guztientzat';
 $string['check_defaultuserrole_notset'] = 'Lehenetsitako rola ez da ezarri.';
 $string['check_defaultuserrole_ok'] = 'Erabiltzaile guztientzako lehenetsitako rolaren definizioa ONDO dago.';
+$string['check_dirindex_info'] = 'Direktorioen indexatzea ez litzateke gaituta egon beharko';
 $string['check_displayerrors_details'] = '<p>Ez da gomendatzen <code>display_errors</code> izeneko PHP ezarpena gaitzea lanean dauden guneetan errore-mezuek zerbitzariari buruzko informazioa garrantzitsua ezagutzera eman dezaketelako.</p>';
 $string['check_displayerrors_error'] = 'Erroreak erakusteko PHP ezarpena gaituta dago. Desgaituta egotea gomendatzen da.';
 $string['check_displayerrors_name'] = 'PHP erroreak erakustea';
 $string['check_displayerrors_ok'] = 'PHP erroreak erakustea desgaituta.';
+$string['check_dotfiles_info'] = 'Puntudun fitxategiak ez lirateke publikoak izan beharko, /.well-known/* izan ezik';
 $string['check_emailchangeconfirmation_details'] = '<p>Erabiltzaile batek bere profileko helbide elektronikoa aldatzen duenean helbide elektronikoa berresteko urratsa behartzea gomendatzen da. Desgaituz gero, spam-igorleek aukera hori baliatu dezakete zerbitzaria SPAMa bidaltzen saiatzeko.</p>
 <p>Beste aukera bat helbide elektronikoaren eremua autentifikazio-pluginetan blokeatzea da, baina aukera hori hemen ez da kontuan hartzen.</p>';
 $string['check_emailchangeconfirmation_error'] = 'Erabiltzaileek edozein helbide elektroniko sar dezakete.';
@@ -75,12 +78,8 @@ $string['check_mediafilterswf_details'] = '<p>swf enbotatze automatikoa oso arri
 $string['check_mediafilterswf_error'] = 'Flash media iragazkia gaituta dago - hau oso arrikutsua izaten da zerbitzari gehienentzat';
 $string['check_mediafilterswf_name'] = '.swf media iragazkia gaituta dago';
 $string['check_mediafilterswf_ok'] = 'Flash media iragazkia ez dago gaituta.';
-$string['check_noauth_details'] = '<p><em>Autentifikatu gabe</em> plugina ez dago diseinatuta lanean dauden guneetarako. Mesedez, desgaitu aukera hori garapenerako proba-zerbitzaria ez bada.</p>';
-$string['check_noauth_error'] = '\'Autentifikatu gabe\' plugina ezin da erabili lanean dauden guneetan.';
-$string['check_noauth_name'] = 'Autentifikatu gabe';
-$string['check_noauth_ok'] = '\'Autentifikatu gabe\' plugina desgaituta dago.';
-$string['check_nodemodules_details'] = '<p><em>{$a->path}</em> karpetak Node.js moduluak eta euren menpekotasunak ditu, normalean NPM bitartez instalatuta. Modulu hauek Moodle-ko garapen lokalerako beharrezkoak izan daitezke, esaterako grunt framework-a erabiltzeko. Ez dira behar lanean dagoen Moodle gune batean, eta potentzialki urruneko erasotzaileei kodea erakusteko arriskua dago.</p>
-<p>Karpeta hori ezabatzea irmoki gomendatzen da gunea URL publiko baten bitartez eskuragarri badago, edo gutxienez zure web-zerbitzariaren konfigurazioan bertara web bidezko sarbidea ukatzea.</p>';
+$string['check_nodemodules_details'] = '<p><code>{$a->path}</code> direktorioak Node.js moduluak eta euren menpekotasunak ditu, normalean NPM bitartez instalatuta. Modulu hauek Moodle-ko garapen lokalerako beharrezkoak izan daitezke, esaterako grunt framework-a erabiltzeko. Ez dira behar lanean dagoen Moodle gune batean, eta potentzialki urruneko erasotzaileei kodea erakusteko arriskua dago.</p>
+<p>Direktorio hori ezabatzea irmoki gomendatzen da gunea URL publiko baten bitartez eskuragarri badago, edo gutxienez zure web-zerbitzariaren konfigurazioan bertara web bidezko sarbidea ukatzea.</p>';
 $string['check_nodemodules_info'] = 'node_modules direktorioak ez luke gune publikoetan egon behar.';
 $string['check_nodemodules_name'] = 'Node.js moduluen direktorioa';
 $string['check_openprofiles_details'] = 'Spam-bidaltzaileek erabiltzaile-profil irekiak baliatu ditzakete. Gomendatzen da <code>Behartu erabiltzaileak identifikatzera profilak ikusi ahal izateko</code> edo <code>Behartu erabiltzaileak identifikatzera</code> gaituta egotea.';
@@ -92,10 +91,13 @@ Hala ere, ez zehaztu baldintza zorrotzegiak, horrek erabiltzaileek pasahitza ez 
 $string['check_passwordpolicy_error'] = 'Pasahitzen politika ez da ezarri.';
 $string['check_passwordpolicy_name'] = 'Pasahitzen politika';
 $string['check_passwordpolicy_ok'] = 'Pasahitzen politika gaituta dago.';
-$string['check_preventexecpath_details'] = '<p>Exekutagarrietarako bideak kudeatzailearen interfaz grafikoaren bidez zehaztea baimentzea baimenetan gora egiteko bektore bat da.</p>';
+$string['check_preventexecpath_details'] = '<p>Exekutagarrietarako bideak kudeatzailearen interfaze grafikoaren bidez zehaztea baimentzea baimenetan gora egiteko bektore bat da. Hau config.php fitxategian behartu behar da</p><p><code>$CFG->preventexecpath = true;<code></p>';
 $string['check_preventexecpath_name'] = 'Exekutagarrietarako bideak';
 $string['check_preventexecpath_ok'] = 'Exekutagarrietarako bideak config.php fitxategian baino ezin dira konfiguratu.';
 $string['check_preventexecpath_warning'] = 'Exekutagarrietarako bideak kudeatzailearen interfaz grafikoan konfiguratu daitezke.';
+$string['check_publicpaths_403'] = '(403 errorea itzuli da, idealki 404 izan beharko litzateke)';
+$string['check_publicpaths_generic'] = '{$a} fitxategiak ez lirateke publikoak izan beharko';
+$string['check_publicpaths_name'] = 'Egiaztatu bide publiko/pribatu guztiak';
 $string['check_riskadmin_detailsok'] = '<p>Mesedez, egiaztatu ezazu sistemako kudeatzaileen ondoko zerrenda hau:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Mesedez, egiazta ezazu sistemako kudeatzaileen zerrenda hau:</p>{$a->admins}
 <p>Gomendagarria da kudeatzaile-rola sistemaren testuinguruan baino ez esleitzea. Ondoko erabiltzaileek (onartzen ez den) kudeatzaile-rola esleituta dute beste testuinguru batzuetan:</p>{$a->unsupported}';
@@ -124,8 +126,8 @@ $string['check_unsecuredataroot_error'] = 'Zure <code>{$a}</code> dataroot direk
 $string['check_unsecuredataroot_name'] = 'dataroot ez da segurua';
 $string['check_unsecuredataroot_ok'] = 'Dataroot direktorioak ez du web bidez eskuragarri egon behar.';
 $string['check_unsecuredataroot_warning'] = 'Zure <code>{$a}</code> dataroot direktorioa okerreko kokagunean dago eta web bidez eskuragarri egon daiteke.';
-$string['check_vendordir_details'] = '<p><em>{$a->path}</em> karpetak bitartekoen liburutegiak eta euren menpekotasunak ditu, normalean PHP composer bitartez instalatutakoak. Liburutegi hauek Moodle-ko garapen lokalerako beharrezkoak izan daitezke, esaterako PHPUnit framework-a instalatzeko. Ez dira behar lanean dagoen Moodle gune batean, eta potentzialki urruneko erasotzaileei kodea erakusteko arriskua dago.</p>
-<p>Karpeta hori ezabatzea irmoki gomendatzen da gunea URL publiko baten bitartez eskuragarri badago, edo gutxienez zure web-zerbitzariaren konfigurazioan bertara web bidezko sarbidea ukatzea.</p>';
+$string['check_vendordir_details'] = '<p><code>{$a->path}</code> direktorioak bitartekoen liburutegiak eta euren menpekotasunak ditu, normalean PHP composer bitartez instalatutakoak. Liburutegi hauek Moodle-ko garapen lokalerako beharrezkoak izan daitezke, esaterako PHPUnit framework-a instalatzeko. Ez dira behar lanean dagoen Moodle gune batean, eta potentzialki urruneko erasotzaileei kodea erakusteko arriskua dago.</p>
+<p>Direktorio hori ezabatzea irmoki gomendatzen da gunea URL publiko baten bitartez eskuragarri badago, edo gutxienez zure web-zerbitzariaren konfigurazioan bertara web bidezko sarbidea ukatzea.</p>';
 $string['check_vendordir_info'] = 'vendor direktorioak ez luke gune publikoetan egon behar.';
 $string['check_vendordir_name'] = 'vendor direktorioa';
 $string['check_webcron_details'] = '<p>Cron-a web-nabigatzaile baten bitartez exekutatzeak informazio pribilegiatua erabiltzaile ezezagunei ikusgai jartzea suposatu lezake. Cron-a komando-lerro batetik baino ez exekutatzea edo bestela cron-aren urruneko sarbideetarako pasahitza zehaztea gomendatzen da</p>';
@@ -135,14 +137,9 @@ $string['check_webcron_warning'] = 'Erabiltzaile anonimoak cron-era sar daitezke
 $string['configuration'] = 'Ezarpenak';
 $string['description'] = 'Deskribapena';
 $string['details'] = 'Xehetasunak';
+$string['eventreportviewed'] = 'Segurtasun-egiaztapenen txostena ikusi da';
 $string['issue'] = 'Arazoa';
-$string['pluginname'] = 'Segurtasunaren ikuspegi orokorra';
+$string['pluginname'] = 'Segurtasun-egiaztapenak';
 $string['privacy:metadata'] = 'Segurtasunaren ikuspegi orokorra pluginak ez du datu pertsonalik biltzen.';
 $string['security:view'] = 'Ikusi segurtasun-txostena';
-$string['status'] = 'Egoera';
-$string['statuscritical'] = 'Larria';
-$string['statusinfo'] = 'Informazioa';
-$string['statusok'] = 'ONDO';
-$string['statusserious'] = 'Larria';
-$string['statuswarning'] = 'Kontuz';
 $string['timewarning'] = 'Datuen prozesamenduak luze iraun dezake, mesedez, pazientzia izan ezazu...';

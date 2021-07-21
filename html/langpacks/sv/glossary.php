@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'sv', version '3.8'.
+ * Strings for component 'glossary', language 'sv', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -62,7 +62,7 @@ $string['cachedef_concepts'] = 'Begreppslänkning';
 $string['cantinsertcat'] = 'Kan inte infoga kategori';
 $string['cantinsertrec'] = 'Kan inte infoga post';
 $string['cantinsertrel'] = 'Det går inte att infoga relation kategori-post';
-$string['casesensitive'] = 'Det här bidraget gör <br />gör skillnad på stor och liten bokstav';
+$string['casesensitive'] = 'Det här uppslagsordet är skiftlägeskänsligt';
 $string['casesensitive_help'] = 'Den här inställningen anger om auto-länkningen av ett uppslagsord är skiftlägeskänslig.';
 $string['cat'] = 'kategori';
 $string['categories'] = 'Kategorier';
@@ -73,7 +73,7 @@ $string['changeto'] = 'ändra till {$a}';
 $string['cnfallowcomments'] = 'Ange om en ordlista tillåter kommentarer på uppslagsord som standard.';
 $string['cnfallowdupentries'] = 'Ange om en ordlista tillåter dubbletter som standard.';
 $string['cnfapprovalstatus'] = 'Ange standard för godkännandestatus för uppslagsord skapade av studenter.';
-$string['cnfcasesensitive'] = 'Ange huruvida ett bidrag som standardval ska vara skiftlägeskänsligt när det länkas';
+$string['cnfcasesensitive'] = 'Definiera om en post, när den är länkad, är skiftlägeskänslig som standard';
 $string['cnfdefaulthook'] = 'Välj standardurvalet som ska visas när ordlistan visas första gången';
 $string['cnfdefaultmode'] = 'Välj standardramen som ska visad när ordlistan visas första gången';
 $string['cnffullmatch'] = 'Ange om ett uppslagsord som standard är skiftlägeskänsligt då det matchas mot måltexten';
@@ -90,6 +90,7 @@ $string['commentdeleted'] = 'Kommentaren har tagits bort';
 $string['comments'] = 'Kommentarer';
 $string['commentson'] = 'Kommentarer för';
 $string['commentupdated'] = 'Kommentaren har uppdaterats';
+$string['completiondetail:entries'] = 'Skapa poster: {$a}';
 $string['completionentries'] = 'Studenten måste skapa uppslagsord:';
 $string['completionentriesdesc'] = 'Studenten måste skapa minst {$a} uppslagsord';
 $string['completionentriesgroup'] = 'Kräv uppslagsord';
@@ -114,7 +115,7 @@ $string['deleteentrya'] = 'Ta bort uppslagsord: {$a}';
 $string['deletenotenrolled'] = 'Ta bort uppslagsord från användare som inte är registrerade';
 $string['deletingcomment'] = 'Tar bort kommentar';
 $string['deletingnoneemptycategory'] = 'Om du tar bort den här kategorin tas inte de poster den innehåller bort - de markeras som okategoriserade.';
-$string['descending'] = '(fallande)';
+$string['descending'] = 'fallande';
 $string['destination'] = 'Mål för importerade uppslagsord';
 $string['destination_help'] = 'Uppslagsord kan antingen importeras och läggas till i den aktuella ordlistan eller i en ny ordlista, vilket i så fall medför att en ny ordlista kommer skapas baserat på information i XML-filen.';
 $string['disapprove'] = 'Återkalla godkännande';
@@ -141,13 +142,7 @@ $string['displayformatssetup'] = 'Inställningar för visningsformat';
 $string['duplicatecategory'] = 'Dubblettkategori';
 $string['duplicateentry'] = 'Dubblettpost';
 $string['editalways'] = 'Tillåt alltid redigering';
-$string['editalways_help'] = '<p>Det här alternativet låter dig avgöra om studenterna/eleverna/deltagarna/de lärande
-ska kunna redigera sina bidrag när som helst.</p>
-<br />Du kan välja:
-<ul>
-<li><b>Ja:</b> Bidrag går alltid att redigera.</li>
-<li><b>Nej:</b> Bidrag går bara att redigera inom den angivna tiden.</li>
-</ul>';
+$string['editalways_help'] = 'Den här inställningen anger om poster alltid kan redigeras eller om deltagarna bara kan redigera sina poster under en förkonfigurerad redigeringstid (vanligtvis 30 minuter).';
 $string['editcategories'] = 'Redigera kategorier';
 $string['editcategory'] = 'Redigera kategori';
 $string['editentry'] = 'Redigera uppslagsord';
@@ -244,7 +239,7 @@ $string['linking'] = 'Automatisk länkning';
 $string['mainglossary'] = 'Huvudordlista';
 $string['maxtimehaspassed'] = 'Maxtiden för att redigera den här kommentaren har tyvärr gått ut ({$a})';
 $string['modulename'] = 'Ordlista';
-$string['modulename_help'] = 'Med hjälp av aktivitetsmodulen <em>Ordlista</em> kan deltagarna skapa och underhålla en lista över definitioner, som en uppslagsbok, eller att samla in och organisera resurser eller information.
+$string['modulename_help'] = 'Aktiviteten <em>Ordlista</em> gör det möjligt för kursdeltagare att skapa och underhålla en lista över definitioner, som en uppslagsbok, eller att samla in och organisera resurser eller information.
 
 En lärare kan tillåta att filer bifogas till uppslagsord. Bifogade bilder visas i artikeln. Det går att söka på uppslagsord. Det går att bläddra i ordlistan, efter alfabetisk ordning, efter kategori eller efter datum eller författare. Nya uppslagsord kan godkännas som standard eller kräva godkännande av en lärare innan de kan visas för alla.
 
@@ -299,7 +294,7 @@ $string['privacy:metadata:glossary_entries:timemodified'] = 'Tidsstämpel som an
 $string['privacy:metadata:glossary_entries:userid'] = 'Användar-ID:t för användaren som lägger till detta ord i ordlistan';
 $string['question'] = 'Fråga';
 $string['rejectedentries'] = 'Nekade ord';
-$string['rejectionrpt'] = 'Avvisade bidrag';
+$string['rejectionrpt'] = 'Avvisade poster';
 $string['removeallglossarytags'] = 'Ta bort alla ordliste-etiketter';
 $string['resetglossaries'] = 'Ta bort uppslagsord från';
 $string['resetglossariesall'] = 'Ta bort uppslagsord från alla ordlistor';
@@ -324,7 +319,7 @@ $string['searchindefinition'] = 'Fulltextsökning';
 $string['secondaryglossary'] = 'Sekundär ordlista';
 $string['showall'] = 'Visa länken \'ALLA\'';
 $string['showall_help'] = 'Om aktiverat kan studenter söka bland alla uppslagsord samtidigt.';
-$string['showalphabet'] = 'Visa alfabetet';
+$string['showalphabet'] = 'Visa alfabetetlänkar';
 $string['showalphabet_help'] = 'Om aktiverat kan studenter söka i ordlistan via bokstäverna i alfabetet.';
 $string['showspecial'] = 'Visa länken \'Special\'';
 $string['showspecial_help'] = 'Om aktiverat kan deltagare söka i ordlistan med hjälp av specialtecken som t.ex. @ och #.';
@@ -339,17 +334,7 @@ $string['tagarea_glossary_entries'] = 'Uppslagsord';
 $string['tagsdeleted'] = 'Ordlisteetiketter har tagits bort';
 $string['totalentries'] = 'Totalt antal uppslagsord';
 $string['usedynalink'] = 'Länka uppslagsord automatiskt';
-$string['usedynalink_help'] = '<p align="center"><b>
-Att automatiskt l&auml;nka ord- och begreppslistor till andra moduler </b></p>
-<p>Om Du anger att en ord- och begreppslista ska l&auml;nkas automatiskt s&aring;
-kommer de ber&ouml;rda bidragen automatiskt att l&auml;nkas n&auml;rhelst de
-dyker upp i andra resurser (forum, kommentarer osv)</p>
-<p>Om Du inte vill att ett visst bidrag ska l&auml;nkas
-s&aring; b&ouml;r Du b&auml;dda in det mellan taggarna
-&lt;nolink> och &lt;/nolink> i HTML-(k&auml;ll)koden.</p>
-<p>Om det &auml;r en kategori som har hittats s&aring; kommer den ocks&aring;
-att l&auml;nkas. L&auml;gg m&auml;rke till att l&auml;nkning av kategorier
-&auml;r skiftl&auml;gesk&auml;nsligt.</p>';
+$string['usedynalink_help'] = 'Om automatisk länkning av ordlistan har aktiverats globalt av en administratör och den här inställningen är aktiverad innehåller formuläret "Lägg till en ny post" alternativet att automatiskt länka posten där begreppsorden och fraserna visas i kursen.';
 $string['visibletabs'] = 'Synliga flikar';
 $string['waitingapproval'] = 'Väntar på godkännande';
 $string['warningstudentcapost'] = '(Gäller enbart om ordlistan inte är huvudordlistan)';

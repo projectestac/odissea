@@ -236,6 +236,17 @@ nav.fixed-top.navbar {
     }
 }
 
+/* Improve contrast in dropdown menus */
+.dropdown-item {
+    &:active,
+    &:hover,
+    &:focus,
+    &:focus-within {
+        outline: 0;
+        background-color: $maincolor;
+    }
+}
+
 #nav-drawer {
     background: $gray-100;
     border-right: 1px solid $gray-200;
@@ -417,22 +428,8 @@ nav.fixed-top.navbar {
 }
 
 #goto-top-link {
-    i {
-        opacity: 0.3;
-        display: block;
-        background-color: $gray-600;
-        color: $white;
-        border-radius: 50%;
-        position: fixed;
-        height: 32px;
-        width: 32px;
-        line-height: 32px;
-        vertical-align: middle;
-        bottom: 20px;
-        right: 20px;
-        text-align: center;
-        font-size: 24px;
-    }
+    /* Ensure image "to top" is always on top of all the content */
+    z-index: 1000;
 }
 
 .availabilityinfoXTEC {
@@ -440,16 +437,16 @@ nav.fixed-top.navbar {
     margin-right: 0.2rem;
 }
 
-.availabilityinfoXTEC .label {
+.availabilityinfoXTEC .badge {
     min-width: 4rem;
     text-align: center;
     margin-left: 0.2rem;
 }
 
-a.dimmed + .availabilityinfoXTEC .label-info {
+a.dimmed + .availabilityinfoXTEC .badge-info {
     background-color: #999;
 }
-.availabilityinfoXTEC .label-info.isrestricted {
+.availabilityinfoXTEC .badge-info.isrestricted {
     background-color: #999;
 }
 
@@ -687,12 +684,18 @@ div#page.container-fluid section#region-main ul.nav-tabs li.active a {
 }
 
 .path-local-alexandriaimporter div#page.container-fluid section#region-main div#alexandria_restore
-.row-fluid {
+.row {
     padding: 1.0em;
 }
 
-div#alexandria_restore div.tab-content div.row-fluid div.text-right {
+div#alexandria_restore div.tab-content div.row div.text-right {
     width: 100%;
+}
+
+div#alexandria_restore div.tab-content {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 div#alexandria_restore div.tab-content .form-search div.simple {
@@ -701,6 +704,10 @@ div#alexandria_restore div.tab-content .form-search div.simple {
 
 div#alexandria_restore div.tab-content .form-search .controls {
     display: inline;
+}
+
+div#alexandria_restore div.tab-content .form-search .controls input {
+    width: inherit;
 }
 
 div#alexandria_restore div.tab-content #accordion .accordion-group .container-fluid {

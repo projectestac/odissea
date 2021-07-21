@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'de', version '3.8'.
+ * Strings for component 'search', language 'de', version '3.11'.
  *
  * @package     search
  * @category    string
@@ -41,7 +41,7 @@ $string['checkdiradvice'] = 'Stellen Sie sicher, dass das Datenverzeichnis exist
 $string['commenton'] = 'Kommentiert am';
 $string['confirm_delete'] = 'Wollen Sie wirklich den Index für {$a} löschen? Bis der Suchbereich indexiert ist, werden Nutzer aus diesen Bereich keine Suchergebnisse erhalten.';
 $string['confirm_deleteall'] = 'Sind Sie sicher, dass Sie alle indexierten Inhalte jetzt löschen wollen? Nutzer werden dann so lange keine Suchergebnisse erhalten bis eine erneute Indexierung erfolgt ist.';
-$string['confirm_indexall'] = 'Möchten Sie wirklich alle Inhalte erneut indexieren? Wenn Sie sehr viele Inhalte haben, kann dies sehr lange dauern. Auf produktiven Servern sollte dieser Prozess durch den geplanten Vorgang  \'Indizierung für die globale Suche\' ausgeführt werden.';
+$string['confirm_indexall'] = 'Möchten Sie wirklich alle Inhalte erneut indexieren? Wenn Sie sehr viele Inhalte haben, kann dies sehr lange dauern. Auf produktiven Servern sollte dieser Prozess durch die geplanten Task  \'Indizierung für die globale Suche\' ausgeführt werden.';
 $string['confirm_reindexall'] = 'Sind Sie sicher, dass Sie alle Inhalte erneut indexieren wollen? Wenn Sie sehr viele Inhalte haben, kann dies recht lange dauern. Bevor der Prozess abgeschlossen ist werden Nutzer nur Teilergenisse sehen.';
 $string['core-all'] = 'Alle';
 $string['core-course-content'] = 'Kursinhalte';

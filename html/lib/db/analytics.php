@@ -47,7 +47,7 @@ $models = [
             '\mod_chat\analytics\indicator\cognitive_depth',
             '\mod_chat\analytics\indicator\social_breadth',
 */
-//************ FI
+// ************ FI
 
             '\mod_choice\analytics\indicator\cognitive_depth',
             '\mod_choice\analytics\indicator\social_breadth',

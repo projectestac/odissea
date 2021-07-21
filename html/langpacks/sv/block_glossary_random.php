@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'sv', version '3.8'.
+ * Strings for component 'block_glossary_random', language 'sv', version '3.11'.
  *
  * @package     block_glossary_random
  * @category    string
@@ -31,7 +31,7 @@ $string['askinvisible'] = 'När användare inte kan redigera eller visa ordlista
 $string['askviewglossary'] = 'När användare kan visa ordlistan men inte lägga till poster visar du en länk med den här texten';
 $string['glossary_random:addinstance'] = 'Lägg till ett nytt block för slumpvisa uppslagsord';
 $string['glossary_random:myaddinstance'] = 'Lägg till ett nytt slumpmässigt ord-block till Mitt Moodle';
-$string['intro'] = 'Se till att du åtminstone har en ord- och begreppslista som innehåller åtminstone ett bidrag som är inlagt för den här kursen. Sedan kan du finjustera inställningarna';
+$string['intro'] = 'Se till att du åtminstone har en ord- och begreppslista som innehåller åtminstone ett uppslagsord inlagt för den här kursen. Därefter kan du justera följande inställningar';
 $string['invisible'] = '(fortsättning följer)';
 $string['lastmodified'] = 'Det senast modifierade ordet';
 $string['nextalpha'] = 'Alfabetisk ordning';
@@ -39,7 +39,7 @@ $string['nextone'] = 'Nästa ord';
 $string['noentriesyet'] = 'Det finns ännu inga ord i den valda ordlistan.';
 $string['notyetconfigured'] = 'Vänligen redigera detta block med redigera-ikonen';
 $string['notyetglossary'] = 'Du behöver ha minst en valbar ordlista.';
-$string['pluginname'] = 'Slumpat ordlisteord';
+$string['pluginname'] = 'Slumpmässigt uppslagsord';
 $string['privacy:metadata'] = 'Blocket slumpartat ord visar enbart information som lagras på andra platser.';
 $string['random'] = 'Slumpmässigt ord';
 $string['refresh'] = 'Daggar innan ett nytt ord väljs';

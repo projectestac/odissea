@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'zh_cn', version '3.8'.
+ * Strings for component 'error', language 'zh_cn', version '3.11'.
  *
  * @package     error
  * @category    string
@@ -185,6 +185,7 @@ $string['commentmisconf'] = '评论ID配置错误';
 $string['componentisuptodate'] = '组件已经是最新的了';
 $string['confirmationnotenabled'] = '本站未启用用户确认';
 $string['confirmsesskeybad'] = '很抱歉，您的会话密钥不能确保您完成当前的动作。这个安全功能防止了人们无意或恶意的以您的身份运行重要功能。请确定您真的想要执行这个功能。';
+$string['contenttypenotfound'] = '“{$a}”内容库类型不存在或不能识别。';
 $string['couldnotassignrole'] = '当试图给您分配角色时，发生了一个严重但未说明原因的错误';
 $string['couldnotupdatenoexistinguser'] = '无法更新用户——该用户不存在';
 $string['couldnotverifyagedigitalconsent'] = '验证数字年龄合规时发生错误。<br/>请联系管理员。';
@@ -434,7 +435,7 @@ $string['noguest'] = '没有访客！';
 $string['noinstances'] = '在本课程中没有 {$a}！';
 $string['nologinas'] = '您不允许登录为此用户';
 $string['nonmeaningfulcontent'] = '无意义的内容';
-$string['noparticipants'] = '未找到该课程的参与者';
+$string['noparticipants'] = '找不到此课程的参与人';
 $string['noparticipatorycms'] = '很抱歉，您没有可参与的课程模块来生成报表';
 $string['nopermissions'] = '很抱歉，您目前没有执行此操作的权限（{$a}）';
 $string['nopermissiontocomment'] = '你不能添加评论';
@@ -447,7 +448,7 @@ $string['nopermissiontomanagegroup'] = '您没有权限管理组';
 $string['nopermissiontorate'] = '项目不允许评分';
 $string['nopermissiontoshow'] = '没有浏览权限！';
 $string['nopermissiontounlock'] = '没有解锁的权限！';
-$string['nopermissiontoupdatecalendar'] = '对不起，您没有权限更新日历事件。';
+$string['nopermissiontoupdatecalendar'] = '抱歉，您目前没有更新日历事件的权限。';
 $string['nopermissiontoviewgrades'] = '不能查看成绩。';
 $string['nopermissiontoviewletergrade'] = '没有查看分数段的权限';
 $string['nopermissiontoviewpage'] = '您不允许浏览这个页面';

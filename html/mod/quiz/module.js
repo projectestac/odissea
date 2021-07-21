@@ -58,6 +58,9 @@ M.mod_quiz.timer = {
     // so we can cancel.
     timeoutid: null,
 
+    // Threshold for updating time remaining, in milliseconds.
+    threshold: 3000,
+
     /**
      * @param Y the YUI object
      * @param start, the timer starting time, in seconds.
@@ -68,7 +71,7 @@ M.mod_quiz.timer = {
         M.mod_quiz.timer.endtime = M.pageloadstarttime.getTime() + start*1000;
         M.mod_quiz.timer.preview = preview;
         M.mod_quiz.timer.update();
-        Y.one('#quiz-timer').setStyle('display', 'block');
+        Y.one('#quiz-timer-wrapper').setStyle('display', 'flex');
     },
 
     /**
@@ -130,6 +133,18 @@ M.mod_quiz.timer = {
 
         // Arrange for this method to be called again soon.
         M.mod_quiz.timer.timeoutid = setTimeout(M.mod_quiz.timer.update, 100);
+    },
+
+    // Allow the end time of the quiz to be updated.
+    updateEndTime: function(timeleft) {
+        var newtimeleft = new Date().getTime() + timeleft * 1000;
+
+        // Only update if change is greater than the threshold, so the
+        // time doesn't bounce around unnecessarily.
+        if (Math.abs(newtimeleft - M.mod_quiz.timer.endtime) > M.mod_quiz.timer.threshold) {
+            M.mod_quiz.timer.endtime = newtimeleft;
+            M.mod_quiz.timer.update();
+        }
     }
 };
 
@@ -160,6 +175,12 @@ M.mod_quiz.nav.init = function(Y) {
             // Automatically submit the form. We do it this strange way because just
             // calling form.submit() does not run the form's submit event handlers.
             var submit = form.one('input[name="next"]');
+
+            // Navigation when button enable.
+            if (submit.get('disabled')) {
+                return;
+            }
+
             submit.set('name', '');
             submit.getDOMNode().click();
         };

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'de', version '3.8'.
+ * Strings for component 'feedback', language 'de', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -53,16 +53,17 @@ $string['checkbox'] = 'Mehrere Antworten erlaubt (Checkboxen)';
 $string['choosefile'] = 'Datei auswählen';
 $string['chosen_feedback_response'] = 'Gewählte Antwort';
 $string['closebeforeopen'] = 'Das Ende des Feedbacks muss nach dem Beginn liegen.';
-$string['complete_the_form'] = 'Fragebogen ausfüllen';
+$string['complete_the_form'] = 'Formular ausfüllen';
 $string['completed'] = 'Abgeschlossen';
 $string['completed_feedbacks'] = 'Ausgefüllte Feedbacks';
 $string['completedon'] = 'Abgeschlossen am {$a}';
+$string['completiondetail:submit'] = 'Feedback einreichen';
 $string['completionsubmit'] = 'Als abgeschlossen ansehen, wenn das Feedback abgegeben wurde';
 $string['configallowfullanonymous'] = 'Wenn diese Option aktiviert ist, kann ein Feedback ohne vorhergehende Anmeldung abgegeben werden. Dies betrifft aber ausschließlich Feedbacks auf der Startseite.';
 $string['confirmdeleteentry'] = 'Möchten Sie diesen Eintrag wirklich löschen?';
 $string['confirmdeleteitem'] = 'Möchten Sie dieses Element wirklich löschen?';
 $string['confirmdeletetemplate'] = 'Möchten Sie diese Vorlage wirklich löschen?';
-$string['confirmusetemplate'] = 'Möchten Sie diese Vorlage wirklich nutzen?';
+$string['confirmusetemplate'] = 'Möchten Sie diese Vorlage wirklich verwenden?';
 $string['continue_the_form'] = 'Ausfüllen des Formulars fortsetzen';
 $string['count_of_nums'] = 'Anzahl von Werten';
 $string['courseid'] = 'Kurs-ID';
@@ -74,25 +75,24 @@ $string['delete_pagebreak'] = 'Seitenumbruch löschen';
 $string['delete_template'] = 'Vorlage löschen';
 $string['delete_templates'] = 'Vorlage löschen...';
 $string['depending'] = 'Abhängigkeiten';
-$string['depending_help'] = 'Abhängige Elemente erlauben es Ihnen zu zeigen, wie Elemente mit den Werten anderer Elemente zusammenhängen<br /><br />
-<strong>Beispiel für abhängige Elemente:</strong>
+$string['depending_help'] = 'Ein abhängiges Element wird in Abhängigkeit von einem anderen Element angezeigt.<br /><br />
+<strong>Beispiel:</strong>
 <ul>
-<li>Zuerst legen Sie das Element an, von dem andere Elemente abhängen sollen.</li>
-<li>Jetzt fügen Sie einen Seitenumbruch hinzu.</li>
-<li>Danach fügen Sie die Elemente hinzu, die von dem vorherigen Elementewert abhängen sollen.<br />
-Wählen Sie bei der Erstellung das Format "Abhängiges Element" und setzen Sie den notwendigen Wert auf "Abhängiger Wert"</li>
+<li>Legen Sie zunächst das Element an, von dem ein anderes Element abhängt.</li>
+<li>Fügen Sie dann einen Seitenumbruch hinzu.</li>
+<li>Fügen Sie nun die Elemente hinzu, die vom Wert des zuvor erstellten Elements abhängen. Wählen Sie das Element in der Liste "Abhängigkeitselement" aus und legen Sie den erforderlichen Wert im Textfeld "Abhängigkeitswert" fest.</li>
 </ul>
 <strong>Die Struktur sollte folgendermaßen aussehen:</strong>
 <ol>
 <li>Element - Frage: Haben Sie ein Auto? Antwort: ja/nein</li>
 <li>Seitenumbruch</li>
 <li>Element - Frage: Welche Farbe hat Ihr Auto?<br />
-(Dieses Element bezieht sich auf den Wert \'ja\' des Elements 1)</li>
+(Dieses Element wird bei der Antwort "ja" in der ersten Frage angezeigt)</li>
 <li>Element - Frage: Warum haben Sie kein Auto?<br />
-(Dieses Element bezieht sich auf den Wert \'nein\' des Elements 1)</li>
+(Dieses Element wird bei der Antwort "nein" in der ersten Frage angezeigt)</li>
 <li> ... weitere Elemente</li>
 </ol>
-Das war schon alles. Viel Erfolg!';
+Das ist schon alles.';
 $string['dependitem'] = 'Abhängigkeitselement';
 $string['dependvalue'] = 'Abhängigkeitswert';
 $string['description'] = 'Beschreibung';
@@ -113,7 +113,7 @@ Sie können es hier anschauen:
 
 {$a->url}';
 $string['emailteachermailhtml'] = '<p>{$a->username} hat das Feedback \'{$a->feedback}\' abgeschlossen</p><p>
-Das Feedback ist <a href="{$a->url}">auf der Webseite</a> verfügbar.';
+Das Feedback ist <a href="{$a->url}">auf der Webseite</a> verfügbar.</p>';
 $string['entries_saved'] = 'Die Einträge wurden gespeichert.';
 $string['eventresponsedeleted'] = 'Antwort gelöscht';
 $string['eventresponsesubmitted'] = 'Antwort abgegeben';
@@ -158,32 +158,37 @@ $string['infotype'] = 'Informationstyp';
 $string['insufficient_responses'] = 'Unzulängliche Antworten';
 $string['insufficient_responses_for_this_group'] = 'Es gibt unzulängliche Antworten für diese Gruppe';
 $string['insufficient_responses_help'] = 'Damit das Feedback anonym ist, müssen mindestens zwei Antworten abgegeben sein.';
-$string['item_label'] = 'Bezeichnung';
-$string['item_name'] = 'Fragetext/Erläuterung';
+$string['item_label'] = 'Textfeld';
+$string['item_name'] = 'Frage';
 $string['label'] = 'Textfeld';
 $string['labelcontents'] = 'Inhalte';
 $string['mapcourse'] = 'Kurs zuordnen';
-$string['mapcourse_help'] = 'Standardmäßig sind Feedbacks, die auf der Startseite erstellt wurden, für die ganze Website verfügbar und werden über den Block \'Feedback\' in Kursen angezeigt.
+$string['mapcourse_help'] = 'Die auf der Startseite erstellten Feedbacks sind auf der gesamten Website verfügbar und werden über den Block \'Feedback\' in allen Kursen angezeigt.
 
-Sie können das Feedback in jedem Kurs erzwingen, indem Sie einen festen Block erzeugen. Andererseits können Sie das Feedback auf ausgewählte Kurse einschränken, indem Sie das Feedback mit bestimmten Kursen verknüpfen.';
-$string['mapcourseinfo'] = 'Dies ist ein globales Feedback. Es ist in allen Kursen verfügbar, die den Feedback-Block nutzen. Die Kurse in denen das Feedback erscheinen sollen, können begrenzt werden durch explizites Zuordnen. Dazu muss der Kurs gesucht und diesem Feedback zugeordnet werden.';
+Sie können das Erscheinen in jedem Kurs erzwingen, indem Sie einen festen Block erzeugen. Andererseits können Sie das Feedback auf ausgewählte Kurse einschränken, indem Sie das Feedback mit bestimmten Kursen verknüpfen.';
+$string['mapcourseinfo'] = 'Dieses globale Feedback ist in allen Kursen verfügbar, die den Block \'Feedback\' nutzen. Sie können die Kurse einschränken, in denen das Feedback angezeigt wird. Ordnen Sie dazu das Feedback ausgewählten Kursen zu.';
 $string['mapcoursenone'] = 'Keinem Kurs zugeordnet. Dieses Feedback ist in allen Kursen verfügbar.';
 $string['mapcourses'] = 'Feedback zu Kursen zuordnen';
 $string['mappedcourses'] = 'Zugeordnete Kurse';
 $string['mappingchanged'] = 'Kurszuordnung wurde geändert';
 $string['maximal'] = 'Maximal';
-$string['messageprovider:message'] = 'Systemnachricht zu Feedback';
+$string['messageprovider:message'] = 'Erinnerung zum Feedback';
 $string['messageprovider:submission'] = 'Systemnachrichten bei Feedback';
 $string['minimal'] = 'Minimal';
 $string['mode'] = 'Modus';
 $string['modulename'] = 'Feedback';
-$string['modulename_help'] = 'Mit dem Feedback können Sie eigene Umfragen oder Evaluationsformulare anlegen, wofür eine Reihe von Fragetypen zur Verfügung stehen.
+$string['modulename_help'] = 'Mit dem Feedback können Sie eigene Umfragen oder Evaluationsformulare anlegen, wofür eine Reihe von Fragetypen, einschließlich Multiple-Choice, Ja/Nein oder Texteingabe, zur Verfügung stehen.
 
-Die Antworten können Personen zugeordnet oder anonym erfolgen. Die Ergebnisse können Sie nach dem Ausfüllen anzeigen lassen und später als Datei exportieren.
+Die Antworten können Personen zugeordnet werden oder anonym erfolgen. Die Ergebnisse können Sie nach dem Ausfüllen anzeigen lassen und später als Datei exportieren.
 
 Feedbacks auf der Startseite können völlig anonym auch von nicht angemeldeten Personen ausgefüllt und abgegeben werden.
 
-Legen Sie Feedback-Fragebögen zentral an und setzen Sie sie in ausgewählten Kursen ein.';
+Eine Feedback-Aktivität kann verwendet werden
+
+* Bei Kursbewertungen, um den Inhalt für spätere Teilnehmer/innen zu verbessern
+* Um den Teilnehmer/innen die Möglichkeit zu geben, sich für Kursmodule, Veranstaltungen usw. anzumelden
+* Für Gästebefragungen zu Kurswahl, Schulpolitik usw.
+* Für Anti-Mobbing-Befragungen, bei denen Teilnehmer/innen Vorfälle anonym melden können';
 $string['modulenameplural'] = 'Feedback';
 $string['move_item'] = 'Element verschieben';
 $string['multichoice'] = 'Multiple-Choice';
@@ -256,7 +261,7 @@ $string['saving_failed'] = 'Fehler beim Speichern';
 $string['search:activity'] = 'Feedback - Aktivitätsinfo';
 $string['search_course'] = 'Kurs suchen';
 $string['searchcourses'] = 'Kurse suchen';
-$string['searchcourses_help'] = 'Nach Codes oder Namen von Kursen suchen, die Sie diesem Feedback zuordnen möchten';
+$string['searchcourses_help'] = 'Nach Codes oder Namen von Kursen suchen, die Sie diesem Feedback zuordnen möchten.';
 $string['selected_dump'] = 'Dump der ausgewählten Indexe der Variable $SESSION:';
 $string['send'] = 'Senden';
 $string['send_message'] = 'Mitteilung senden';
@@ -287,8 +292,8 @@ $string['this_feedback_is_already_submitted'] = 'Sie haben diese Aktivität bere
 $string['typemissing'] = 'Fehlender Typ';
 $string['update_item'] = 'Element aktualisieren';
 $string['url_for_continue'] = 'URL für die Taste "Weiter"';
-$string['url_for_continue_help'] = 'Nach der Feedback-Abgabe wird eine Taste "Weiter" gezeigt. Meistens wird auf die Kurshauptseite weitergeleitet. Falls Sie auf ein anderes Ziel verlinken möchten, können Sie hier die URL angeben.';
-$string['use_one_line_for_each_value'] = 'Benutzen Sie für jede Antwort eine neue Zeile!';
+$string['url_for_continue_help'] = 'Nach der Feedback-Abgabe wird eine Taste "Weiter" gezeigt. Zumeist auf die Kursseite weitergeleitet. Falls Sie auf ein anderes Ziel verlinken möchten, können Sie hier die URL angeben.';
+$string['use_one_line_for_each_value'] = 'Schreiben Sie jede Antwort in eine neue Zeile!';
 $string['use_this_template'] = 'Diese Vorlage verwenden';
 $string['using_templates'] = 'Vorlage verwenden';
 $string['vertical'] = 'Untereinander';

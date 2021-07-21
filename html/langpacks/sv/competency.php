@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'sv', version '3.8'.
+ * Strings for component 'competency', language 'sv', version '3.11'.
  *
  * @package     competency
  * @category    string
@@ -108,7 +108,7 @@ $string['invalidpersistenterror'] = 'Fel: {$a}';
 $string['invalidplan'] = 'Ogiltig studieplan';
 $string['invalidtaxonomy'] = 'Ogiltig taxonomi: {$a}';
 $string['invalidurl'] = 'URL:en är felaktig.  Se till att den börjar med \'http://\' eller \'https://\'.';
-$string['nouserplanswithcompetency'] = 'Det finns inga användare vars läroplaner som innehåller denna kompetens';
+$string['nouserplanswithcompetency'] = 'Inga studieplaner innehåller denna kompetens.';
 $string['planstatusactive'] = 'Aktiv';
 $string['planstatuscomplete'] = 'Slutförd';
 $string['planstatusdraft'] = 'Utkast';

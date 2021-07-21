@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'eu', version '3.8'.
+ * Strings for component 'tool_messageinbound', language 'eu', version '3.11'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['classname'] = 'Klasearen izena';
 $string['component'] = 'Osagaia';
-$string['configmessageinboundhost'] = 'Moodle-k e-mailak bilatzera joan behar deneko zerbitzariaren helbidea. Lehenetsitakoa ez den ataka bat zehazteko, [zerbitzaria]:[ataka] erabili dezakezu, mail.adibidea.eus:587 formatua adibidez. Atakarik zehazten ez baduzu, posta elektronikoko zerbitzari motaren lehenetsitako ataka erabiliko da.';
+$string['configmessageinboundhost'] = 'Moodlek e-mailak bilatzera joan behar deneko zerbitzariaren helbidea. Lehenetsitakoa ez den ataka bat zehazteko, [zerbitzaria]:[ataka] erabili dezakezu, posta.adibidea.eus:993 formatua adibidez. Atakarik zehazten ez baduzu, posta elektronikoko zerbitzari motaren lehenetsitako ataka erabiliko da.';
 $string['defaultexpiration'] = 'Helbideen iraungitze-epe lehenetsia';
 $string['defaultexpiration_help'] = 'Kudeatzaileak helbide elektroniko bat sortzen duenean, automatikoki iraungitze-epe bat zehaztu dakioke epe hori igaro ondoren ezin erabiltzeko. Iraungitze-epea zehaztea gomendagarria da.';
 $string['description'] = 'Deskribapena';
@@ -86,7 +86,7 @@ $string['messageprocessingsuccess'] = '{$a->plain}
 Aurrerantzean ez baduzu horrelako jakinarazpenik jaso nahi, zure mezularitza hobespenak editatu ditzakezu zure nabigatzailean {$a->messagepreferencesurl} irekita.';
 $string['messageprocessingsuccesshtml'] = '{$a->html}
 <p>Aurrerantzean ez baduzu horrelako jakinarazpenik jaso nahi, <a href="{$a->messagepreferencesurl}">zure mezularitza hobespenak editatu ditzakezu</a>.</p>';
-$string['messageprovider:invalidrecipienthandler'] = 'Sarrera-mezu bat zuk bidali duzula konfirmatzeko mezua';
+$string['messageprovider:invalidrecipienthandler'] = 'Sarrera-mezu bat zuk bidali duzula berresteko mezua';
 $string['messageprovider:messageprocessingerror'] = 'Sarrera-mezu bat prozesatu ezin deneko abisua';
 $string['messageprovider:messageprocessingsuccess'] = 'Mezu bat ondo prozesatu deneko berrespena';
 $string['name'] = 'Izena';

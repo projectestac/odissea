@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ar', version '3.8'.
+ * Strings for component 'webservice', language 'ar', version '3.11'.
  *
  * @package     webservice
  * @category    string
@@ -35,7 +35,7 @@ $string['addfunctionhelp'] = 'إختر الوظيفة لإضافتها إلى ا
 $string['addfunctions'] = 'أضف وظائف';
 $string['addfunctionsdescription'] = 'إختر الوظائف المطلوبة للخدمة المنشأة حديثاً.';
 $string['addrequiredcapability'] = 'تعيين/إلغاء تعيين الإمكانية المطلوبة';
-$string['addservice'] = 'أضف خدمة جديدة: {$a->name} (المُعرَّف: {$a->id})';
+$string['addservice'] = 'إضافة خدمة جديدة: {$a->name} (المُعرَّف: {$a->id})';
 $string['addservicefunction'] = 'أضف وظائف إلى الخدمة "{$a}"';
 $string['allusers'] = 'كل المستخدمين';
 $string['apiexplorer'] = 'مستكشف API';
@@ -85,15 +85,15 @@ $string['errorcoursecontextnotvalid'] = 'لا يمكنك تنفيذ الوظائ
 $string['errorinvalidparam'] = 'المعامل "{$a}" غير صحيح.';
 $string['errornotemptydefaultparamarray'] = 'معامل وصف خدمة الويب المسمى \'{$a}\' هو في بنية مفردة أو متعددة. الافتراضي يمكن فقط أن يكون مصفوفة فارغة. تحقق من وصف خدمة الويب.';
 $string['erroroptionalparamarray'] = 'معامل وصف خدمة الويب المسمى \'{$a}\' هو في بنية مفردة أو متعددة. لا يمكن ضبطه ليكون بمثابة VALUE_OPTIONAL. تحقق من وصف خدمة الويب.';
-$string['eventwebservicefunctioncalled'] = 'تم استدعاء وظيفة خدمة الويب';
-$string['eventwebserviceloginfailed'] = 'فشل دخول خدمة الويب';
-$string['eventwebserviceservicecreated'] = 'تم إنشاء خدمة ويب';
-$string['eventwebserviceservicedeleted'] = 'تم حذف خدمة ويب';
-$string['eventwebserviceserviceupdated'] = 'تم تحديث خدمة ويب';
-$string['eventwebserviceserviceuseradded'] = 'تمت إضافة مستخدم إلى خدمة ويب';
-$string['eventwebserviceserviceuserremoved'] = 'تمت إزالة مستخدم من خدمة ويب';
-$string['eventwebservicetokencreated'] = 'تم إنشاء ترميز خدمة ويب';
-$string['eventwebservicetokensent'] = 'تم إرسال ترميز خدمة ويب';
+$string['eventwebservicefunctioncalled'] = 'وظيفة خدمة ويب تم استدعاؤها';
+$string['eventwebserviceloginfailed'] = 'دخول خدمة ويب فشل';
+$string['eventwebserviceservicecreated'] = 'خدمة ويب تم إنشاؤها';
+$string['eventwebserviceservicedeleted'] = 'خدمة ويب تم حذفها';
+$string['eventwebserviceserviceupdated'] = 'خدمة ويب تم تحديثها';
+$string['eventwebserviceserviceuseradded'] = 'مستخدم خدمة ويب تمت إضافته';
+$string['eventwebserviceserviceuserremoved'] = 'مستخدم خدمة ويب تمت إزالته';
+$string['eventwebservicetokencreated'] = 'ترميز خدمة ويب تم إنشاؤه';
+$string['eventwebservicetokensent'] = 'ترميز خدمة ويب تم إرساله';
 $string['execute'] = 'نفذ';
 $string['executewarnign'] = 'تحذير: إذا ضغطت على تنفيذ، فسيتم تعديل قاعدة بياناتك والتعديلات لا يمكن التراجع عنها ذاتياً!';
 $string['externalservice'] = 'الخدمة الخارجية';
@@ -121,8 +121,8 @@ $string['keyshelp'] = 'المفاتيح تستعمل للوصول إلى حسا�
 $string['loginrequired'] = 'مقتصر على المستخدمين الداخلين إلى الموقع';
 $string['manageprotocols'] = 'إدارة البروتوكولات';
 $string['managetokens'] = 'إدارة الترميزات';
-$string['missingcaps'] = 'إمكانيات مفقودة';
-$string['missingcaps_help'] = 'قائمة بالإمكانيات المطلوبة للخدمة والتي لا يمتلكها المستخدم المحدد. تنبغي إضافة الإمكانيات المفقودة إلى دور المستخدم من أجل تمكينه من استعمال الخدمة.';
+$string['missingcaps'] = 'الإمكانيات المفقودة';
+$string['missingcaps_help'] = 'قائمة بالإمكانيات المعلنة من قبل الخدمة والتي لا يمتلكها المستخدم. قد لا تتوفر بعض وظائف الخدمة بدون تلك الإمكانيات.';
 $string['missingpassword'] = 'كلمة المرور مفقودة';
 $string['missingrequiredcapability'] = 'الإمكانية {$a} مطلوبة.';
 $string['missingusername'] = 'اسم المستخدم مفقود';
@@ -134,7 +134,7 @@ $string['norequiredcapability'] = 'لا يتطلب إمكانية';
 $string['notoken'] = 'قائمة الترميزات فارغة.';
 $string['onesystemcontrolling'] = 'السماح لنظام خارجي بالتحكم بمودل';
 $string['onesystemcontrollingdescription'] = 'الخطوات الآتية تساعدك في تهيئة خدمات الويب في مودل بُغية السماح لنظام خارجي بالتفاعل معه. هذا يتضمن تهيئة طريقة المصادقة عبر ترميز (مفتاح أمان).';
-$string['onlyseecreatedtokens'] = 'يمكن حذف أي ترميز، رغم أنك تستطيع معاينة الترميزات التي أنشأتها حصراً.';
+$string['onlyseecreatedtokens'] = 'يمكنك معاينة الترميزات التي أنشأتها حصرًا.';
 $string['operation'] = 'عملية';
 $string['optional'] = 'إختياري';
 $string['passwordisexpired'] = 'كلمة المرور منتهية الصلاحية';
@@ -209,6 +209,9 @@ $string['token'] = 'الترميز';
 $string['tokenauthlog'] = 'مصادقة الترميز';
 $string['tokencreatedbyadmin'] = 'يمكن فقط إعادة ضبطه من قبل المشرف (*)';
 $string['tokencreator'] = 'المنشئ';
+$string['tokenfilter'] = 'مرشح الترميزات';
+$string['tokenfilterreset'] = 'إظهار كل الترميزات';
+$string['tokenfiltersubmit'] = 'إظهار الترميزات المطابقة فقط';
 $string['unknownoptionkey'] = 'مفتاح خيار مجهول ({$a})';
 $string['unnamedstringparam'] = 'معامل نصي غير مسمى.';
 $string['updateusersettings'] = 'تحديث';
@@ -227,14 +230,14 @@ $string['usersettingssaved'] = 'تم حفظ إعدادات المستخدم';
 $string['validuntil'] = 'صالحة حتى';
 $string['validuntil_help'] = 'عند تأشيره، سيتم إبطال الخدمة بعد هذا التاريخ لهذا المستخدم.';
 $string['webservice'] = 'خدمة الويب';
-$string['webservices'] = 'خدمات الوب';
+$string['webservices'] = 'خدمات الويب';
 $string['webservicesoverview'] = 'نظرة عامة';
 $string['webservicetokens'] = 'ترميزات خدمة الويب';
 $string['wrongusernamepassword'] = 'اسم مستخدم أو كلمة مرور خاطئة';
 $string['wsaccessuserdeleted'] = 'الوصول المرفوض لخدمة ويب لحساب مستخدم محذوف: {$a}';
 $string['wsaccessuserexpired'] = 'الوصول المرفوض لخدمة ويب لحساب مستخدم ذي كلمة مرور منتهية الصلاحية: {$a}';
 $string['wsaccessusernologin'] = 'الوصول المرفوض لخدمة ويب لحساب مستخدم بلا مصادقة دخول: {$a}';
-$string['wsaccessusersuspended'] = 'تم رفض الدخول لخدمة الوب للمستخدم المعلق: {$a}';
+$string['wsaccessusersuspended'] = 'تم رفض الدخول لخدمة الويب للمستخدم المعلق: {$a}';
 $string['wsaccessuserunconfirmed'] = 'الوصول المرفوض لخدمة ويب لحساب مستخدم غير مؤكد: {$a}';
 $string['wsclientdoc'] = 'توثيقات مودل لوكيل خدمة الويب';
 $string['wsdocapi'] = 'توثيقات واجهة برمجة التطبيق';

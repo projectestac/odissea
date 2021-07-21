@@ -35,8 +35,11 @@
         "cachestore": "cache\/stores",
         "cachelock": "cache\/locks",
         "fileconverter": "files\/converter",
+        "contenttype": "contentbank\/contenttype",
         "theme": "theme",
-        "local": "local"
+        "local": "local",
+        "h5plib": "h5p\/h5plib",
+        "paygw": "payment\/gateway"
     },
     "subsystems": {
         "access": null,
@@ -56,6 +59,7 @@
         "comment": "comment",
         "competency": "competency",
         "completion": "completion",
+        "contentbank": "contentbank",
         "countries": null,
         "course": "course",
         "currencies": null,
@@ -91,6 +95,7 @@
         "my": "my",
         "notes": "notes",
         "pagetype": null,
+        "payment" : "payment",
         "pix": null,
         "plagiarism": "plagiarism",
         "plugin": null,
@@ -102,11 +107,12 @@
         "rss": "rss",
         "role": "admin\/roles",
         "search": "search",
-        "table": null,
+        "table": "lib\/table",
         "tag": "tag",
         "timezones": null,
         "user": "user",
         "userkey": "lib\/userkey",
-        "webservice": "webservice"
+        "webservice": "webservice",
+        "xapi": "lib\/xapi"
     }
 }

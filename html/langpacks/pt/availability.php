@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'pt', version '3.8'.
+ * Strings for component 'availability', language 'pt', version '3.11'.
  *
  * @package     availability
  * @category    string
@@ -31,7 +31,7 @@ $string['and'] = 'e';
 $string['condition_group'] = 'Conjugar condições';
 $string['condition_group_info'] = 'Adicionar conjunto de condições de acesso conjugadas com operadores lógicos (e/ou)';
 $string['enableavailability'] = 'Ativar condições de acesso';
-$string['enableavailability_desc'] = 'Se ativar esta opção, poderá definir em cada secção/atividade/recurso as condições necessárias (baseadas na data, notas, conclusão de outras atividades, etc.) para um aluno poder aceder à atividade/recusrso.';
+$string['enableavailability_desc'] = 'Se ativar esta opção, poderá definir em cada secção/atividade/recurso as condições necessárias (baseadas na data, notas, conclusão de outras atividades, etc.) para um aluno poder aceder à atividade/recurso.';
 $string['error_list_nochildren'] = 'Os conjuntos de condições de acesso devem conter pelo menos uma condição.';
 $string['hidden_all'] = 'Completamente oculta se o utilizador não reunir as condições';
 $string['hidden_individual'] = 'Completamente oculta se o utilizador não reunir esta condição';

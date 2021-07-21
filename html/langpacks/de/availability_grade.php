@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'de', version '3.8'.
+ * Strings for component 'availability_grade', language 'de', version '3.11'.
  *
  * @package     availability_grade
  * @category    string
@@ -43,5 +43,5 @@ $string['requires_max'] = 'Sie haben eine angemessene Punktzahl in <strong>{$a}<
 $string['requires_min'] = 'Sie haben die erforderliche Punktzahl in <strong>{$a}</strong> erhalten';
 $string['requires_notany'] = 'Sie haben keine Bewertung in <strong>{$a}</strong> erhalten.';
 $string['requires_notgeneral'] = 'Sie haben keine Punktzahl in <strong>{$a}</strong> erhalten.';
-$string['requires_range'] = 'Sie haben teilweise Punkte erhalten in <strong>{$a}</strong> .';
+$string['requires_range'] = 'Sie haben teilweise Punkte erhalten in <strong>{$a}</strong>.';
 $string['title'] = 'Bewertung';

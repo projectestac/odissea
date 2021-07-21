@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'es', version '3.8'.
+ * Strings for component 'antivirus_clamav', language 'es', version '3.11'.
  *
  * @package     antivirus_clamav
  * @category    string
@@ -25,11 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['antivirusfailed'] = 'Hay un problema con el escaneo de AntiVirus en este momento. Su archivo {$a->item} no se ha cargado. Por favor, inténtelo de nuevo más tarde.';
 $string['clamfailed'] = 'Clam AV no se ha ejecutado. El mensaje de error de retorno es {$a}. Éste es el output de Clam:';
 $string['clamfailureonupload'] = 'Cuando ClamAV falle';
 $string['configclamactlikevirus'] = 'Trata los ficheros como virus';
 $string['configclamdonothing'] = 'Trata ficheros como si estuvieran bien';
-$string['configclamfailureonupload'] = 'Si has configurado clam para analizar los ficheros subidos, pero está mal configurado o falla al ejecutarse por alguna razón desconocida, ¿cómo debería comportarse?. Si eliges "Trata los ficheros como virus", los ficheros serán movidos a la zona de cuarentena o serán borrados. Si eliges "Trata los ficheros como si estuvieran bien", los ficheros serán movidos al directorio de destino del modo habitual. En cualquier caso los administradores serán alertados de que clam ha fallado. Si eliges "Trata los ficheros como virus" y por alguna razón clam falla al ejecutarse (normalmente debido a que has introducido una ruta de clam incorrecta), TODOS los ficheros que se suban será movidos a la zona de cuarentena definida o serán borrados. Ten cuidado con esta configuración.';
+$string['configclamfailureonupload'] = 'Si se selecciona "Tratar archivos como OK", los archivos se moverán al directorio de destino. Si se selecciona "Rechazar carga, intentar de nuevo", se le pedirá al usuario que vuelva a intentarlo más tarde. Si se selecciona "Tratar archivos como virus", los archivos se moverán al área de cuarentena o se eliminarán. Advertencia: Con esta opción, si por alguna razón clam no se ejecuta (generalmente debido a un pathtoclam no válido), TODOS los archivos cargados se moverán al área de cuarentena indicada o se eliminarán.';
+$string['configclamtryagain'] = 'Rechazar la carga, inténtelo de nuevo';
 $string['errorcantopensocket'] = 'La conexión al socket del dominio de Unix ha generado un error {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV no responde; comprueba el estado del demonio';
 $string['errornounixsocketssupported'] = 'El transporte del socket del dominio Unix no es compatible en este sistema. En su lugar, utilice la línea de comandos.';
@@ -44,5 +46,14 @@ $string['quarantinedir'] = 'Directorio de cuarentena';
 $string['runningmethod'] = 'Método de ejecución';
 $string['runningmethodcommandline'] = 'Línea de comandos';
 $string['runningmethoddesc'] = 'Método de arranque ClamAV. La línea de comandos es usada por defecto, sin embargo en sistemas Unix se puede obtener un mejor rendimiento usando sockets del sistema.';
+$string['runningmethodtcpsocket'] = 'Socket TCP';
 $string['runningmethodunixsocket'] = 'Socket del dominio Unix';
+$string['tcpsockethost'] = 'Nombre de host del socket TCP';
+$string['tcpsockethostdesc'] = 'Nombre de dominio del servidor ClamAV';
+$string['tcpsocketport'] = 'Puerto del socket TCP';
+$string['tcpsocketportdesc'] = 'El puerto que se utilizará al conectarse a ClamAV';
+$string['tries'] = 'Intentos de escaneo';
+$string['tries_desc'] = 'Número de intentos realizados por ClamAV si hay un error durante el proceso de escaneo.';
+$string['tries_notice'] = 'El escaneo de Clamav ha intentado {$a->tries} veces.
+{$a->notice}';
 $string['unknownerror'] = 'Se ha producido un error desconocido con Clam.';

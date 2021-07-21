@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'pt', version '3.8'.
+ * Strings for component 'tool_messageinbound', language 'pt', version '3.11'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -29,7 +29,7 @@ $string['classname'] = 'Nome da classe';
 $string['component'] = 'Componente';
 $string['configmessageinboundhost'] = 'O endereço do servidor em que o Moodle deve verificar o correio eletrónico. Para especificar uma porta não predefinida, pode usar a sintaxe [server]:[port], como por exemplo \'mail.example.com:993\'. Se deixar o campo vazio, o Moodle usará a porta predefinida para o tipo de servidor de e-mail que especificou.';
 $string['defaultexpiration'] = 'Período de validade do endereço predefinido';
-$string['defaultexpiration_help'] = 'Quando um endereço de e-mail é gerado pelo handler, pode ser definido para expirar automaticamente após um período de tempo e, por isso, já não pode ser usado novamente. É aconselhável definir um período de validade.';
+$string['defaultexpiration_help'] = 'Quando um endereço de e-mail é gerado pelo handler, pode ser definido para expirar automaticamente após um período de tempo e, por isso, já não pode ser usado novamente. É aconselhado definir um período de validade.';
 $string['description'] = 'Descrição';
 $string['domain'] = 'Domínio do e-mail';
 $string['edit'] = 'Editar';

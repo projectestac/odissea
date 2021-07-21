@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'pt', version '3.8'.
+ * Strings for component 'tool_installaddon', language 'pt', version '3.11'.
  *
  * @package     tool_installaddon
  * @category    string

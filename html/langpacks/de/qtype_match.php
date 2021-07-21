@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'de', version '3.8'.
+ * Strings for component 'qtype_match', language 'de', version '3.11'.
  *
  * @package     qtype_match
  * @category    string
@@ -38,10 +38,13 @@ $string['notenoughqsandas'] = 'Sie müssen mindestens {$a->q} Fragen und {$a->a}
 $string['notenoughquestions'] = 'Sie müssen mindestens {$a} Paare mit Frage und Antwort anbieten.';
 $string['pleaseananswerallparts'] = 'Bitte beantworten Sie alle Teile der Frage';
 $string['pluginname'] = 'Zuordnung';
-$string['pluginname_help'] = 'Zuordnungsfragen fordern dazu auf, Begriffe, Aussagen oder Fragen jeweils anderen Begriffen, Aussagen oder Fragen zuzuordnen.';
+$string['pluginname_help'] = 'Zuordnungsfragen fordern dazu auf, eine Liste von Begriffen oder Aussagen (Fragen) jeweils anderen Begriffen oder Aussagen (Antworten) zuzuordnen.';
 $string['pluginnameadding'] = 'Zuordnungsfrage hinzufügen';
 $string['pluginnameediting'] = 'Zuordnungsfrage bearbeiten';
 $string['pluginnamesummary'] = 'Die Antwort auf jede der Unterfragen muss aus einer Liste von Möglichkeiten ausgewählt werden.';
-$string['privacy:metadata'] = 'Der Fragentyp \'Zuordnungsfrage\' speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin "Zuordnungsfrage" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
+$string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
+$string['privacy:preference:shuffleanswers'] = 'Ob die Antworten automatisch gemischt werden sollen.';
 $string['shuffle'] = 'Mischen';
-$string['shuffle_help'] = 'Wenn aktiviert ist die Reihenfolge der Antworten bei jedem Versuch zufällig, sofern die Option "In Fragen zufällig mischen" aktiviert ist.';
+$string['shuffle_help'] = 'Wenn diese Option aktiviert ist, ist die Reihenfolge der Begriffe oder Aussagen (Antworten) bei jedem Versuch zufällig, sofern die Option "In Fragen zufällig mischen" in den Einstellungen des Tests ebenfalls aktiviert ist.';

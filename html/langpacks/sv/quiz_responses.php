@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_responses', language 'sv', version '3.8'.
+ * Strings for component 'quiz_responses', language 'sv', version '3.11'.
  *
  * @package     quiz_responses
  * @category    string
@@ -38,12 +38,12 @@ $string['privacy:preference:which_tries:all'] = 'Alla försök på en fråga vid
 $string['privacy:preference:which_tries:first'] = 'Det första försöket på en fråga vid en användares provtillfälle.';
 $string['privacy:preference:which_tries:last'] = 'Det sista försöket på en fråga vid en användares provtillfälle.';
 $string['questiontext'] = 'Frågetext';
-$string['reportresponses'] = 'Svaren';
+$string['reportresponses'] = 'Svar';
 $string['response'] = 'svar';
 $string['responses'] = 'Svar';
 $string['responsesdownload'] = 'Ladda ner svaren';
 $string['responsesfilename'] = 'svaren';
-$string['responsesoptions'] = 'Alternativ för responser';
+$string['responsesoptions'] = 'Svarsalternativ';
 $string['responsesreport'] = 'Svarsrapport';
 $string['responsestitle'] = 'Svar';
 $string['responsex'] = 'Svar {$a}';

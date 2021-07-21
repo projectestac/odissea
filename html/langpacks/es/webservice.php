@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'es', version '3.8'.
+ * Strings for component 'webservice', language 'es', version '3.11'.
  *
  * @package     webservice
  * @category    string
@@ -209,6 +209,9 @@ $string['token'] = 'Ficha';
 $string['tokenauthlog'] = 'Autenticación mediante ficha (token)';
 $string['tokencreatedbyadmin'] = 'Únicamente puede ser restablecido por el administrador (*)';
 $string['tokencreator'] = 'Creador';
+$string['tokenfilter'] = 'Filtro de tokens';
+$string['tokenfilterreset'] = 'Mostrar todos los tokens';
+$string['tokenfiltersubmit'] = 'Mostrar solo tokens coincidentes';
 $string['unknownoptionkey'] = 'Clave de opción desconocida ({$a})';
 $string['unnamedstringparam'] = 'Un parámetro de tipo cadena está sin nombre.';
 $string['updateusersettings'] = 'Actualizar';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'es', version '3.8'.
+ * Strings for component 'competency', language 'es', version '3.11'.
  *
  * @package     competency
  * @category    string
@@ -38,7 +38,7 @@ $string['coursemodulecompetencyoutcome_complete'] = 'Completar la competencia';
 $string['coursemodulecompetencyoutcome_evidence'] = 'Adjuntar evidencia';
 $string['coursemodulecompetencyoutcome_none'] = 'No hacer nada';
 $string['coursemodulecompetencyoutcome_recommend'] = 'Enviar para revisión';
-$string['deletecompetencyratings'] = 'Eliminar la clasificación de la competencia';
+$string['deletecompetencyratings'] = 'Eliminar la valoración de la competencia';
 $string['duplicateditemname'] = '{$a} (copiar)';
 $string['enablecompetencies'] = 'Activar las competencias';
 $string['enablecompetencies_desc'] = 'Las competencias permiten a los alumnos ser evaluados de acuerdo a sus planes de aprendizaje';

@@ -41,14 +41,14 @@ var COMPONENT = 'atto_table',
     },
     TEMPLATE = '' +
         '<form class="{{CSS.FORM}}">' +
-            '<div class="mb-1 form-group row-fluid">' +
+            '<div class="mb-1 form-group row">' +
             '<div class="col-sm-4">' +
             '<label for="{{elementid}}_atto_table_caption">{{get_string "caption" component}}</label>' +
             '</div><div class="col-sm-8">' +
             '<input type="text" class="form-control {{CSS.CAPTION}}" id="{{elementid}}_atto_table_caption" required />' +
             '</div>' +
             '</div>' +
-            '<div class="mb-1 form-group row-fluid">' +
+            '<div class="mb-1 form-group row">' +
             '<div class="col-sm-4">' +
             '<label for="{{elementid}}_atto_table_captionposition">' +
             '{{get_string "captionposition" component}}</label>' +
@@ -60,7 +60,7 @@ var COMPONENT = 'atto_table',
             '</select>' +
             '</div>' +
             '</div>' +
-            '<div class="mb-1 form-group row-fluid">' +
+            '<div class="mb-1 form-group row">' +
             '<div class="col-sm-4">' +
             '<label for="{{elementid}}_atto_table_headers">{{get_string "headers" component}}</label>' +
             '</div><div class="col-sm-8">' +
@@ -72,7 +72,7 @@ var COMPONENT = 'atto_table',
             '</div>' +
             '</div>' +
             '{{#if nonedit}}' +
-                '<div class="mb-1 form-group row-fluid">' +
+                '<div class="mb-1 form-group row">' +
                 '<div class="col-sm-4">' +
                 '<label for="{{elementid}}_atto_table_rows">{{get_string "numberofrows" component}}</label>' +
                 '</div><div class="col-sm-8">' +
@@ -80,7 +80,7 @@ var COMPONENT = 'atto_table',
                 'id="{{elementid}}_atto_table_rows" size="8" min="1" max="50"/>' +
                 '</div>' +
                 '</div>' +
-                '<div class="mb-1 form-group row-fluid">' +
+                '<div class="mb-1 form-group row">' +
                 '<div class="col-sm-4">' +
                 '<label for="{{elementid}}_atto_table_columns" ' +
                 '>{{get_string "numberofcolumns" component}}</label>' +
@@ -95,7 +95,7 @@ var COMPONENT = 'atto_table',
                 '<fieldset>' +
                 '<legend class="mdl-align">{{get_string "appearance" component}}</legend>' +
                 '{{#if allowBorders}}' +
-                    '<div class="mb-1 form-group row-fluid">' +
+                    '<div class="mb-1 form-group row">' +
                     '<div class="col-sm-4">' +
                     '<label for="{{elementid}}_atto_table_borders">{{get_string "borders" component}}</label>' +
                     '</div><div class="col-sm-8">' +
@@ -106,7 +106,7 @@ var COMPONENT = 'atto_table',
                     '</select>' +
                     '</div>' +
                     '</div>' +
-                    '<div class="mb-1 form-group row-fluid">' +
+                    '<div class="mb-1 form-group row">' +
                     '<div class="col-sm-4">' +
                     '<label for="{{elementid}}_atto_table_borderstyle">' +
                     '{{get_string "borderstyles" component}}</label>' +
@@ -119,7 +119,7 @@ var COMPONENT = 'atto_table',
                     '</select>' +
                     '</div>' +
                     '</div>' +
-                    '<div class="mb-1 form-group row-fluid">' +
+                    '<div class="mb-1 form-group row">' +
                     '<div class="col-sm-4">' +
                     '<label for="{{elementid}}_atto_table_bordersize">' +
                     '{{get_string "bordersize" component}}</label>' +
@@ -132,7 +132,7 @@ var COMPONENT = 'atto_table',
                     '</div>' +
                     '</div>' +
                     '</div>' +
-                    '<div class="mb-1 form-group row-fluid">' +
+                    '<div class="mb-1 form-group row">' +
                     '<div class="col-sm-4">' +
                     '<label for="{{elementid}}_atto_table_bordercolour">' +
                     '{{get_string "bordercolour" component}}</label>' +
@@ -159,7 +159,7 @@ var COMPONENT = 'atto_table',
                     '</div>' +
                 '{{/if}}' +
                 '{{#if allowBackgroundColour}}' +
-                    '<div class="mb-1 form-group row-fluid">' +
+                    '<div class="mb-1 form-group row">' +
                     '<div class="col-sm-4">' +
                     '<label for="{{elementid}}_atto_table_backgroundcolour">' +
                     '{{get_string "backgroundcolour" component}}</label>' +
@@ -187,7 +187,7 @@ var COMPONENT = 'atto_table',
                     '</div>' +
                 '{{/if}}' +
                 '{{#if allowWidth}}' +
-                    '<div class="mb-1 form-group row-fluid">' +
+                    '<div class="mb-1 form-group row">' +
                     '<div class="col-sm-4">' +
                     '<label for="{{elementid}}_atto_table_width">' +
                     '{{get_string "width" component}}</label>' +
@@ -291,15 +291,48 @@ Y.namespace('M.atto_table').Button = Y.Base.create('button', Y.M.editor_atto.Edi
     _menuOptions: null,
 
     initializer: function() {
-        this.addButton({
+        var button = this.addButton({
             icon: 'e/table',
             callback: this._displayTableEditor,
             tags: 'table'
         });
+
+        // Listen for toggled highlighting.
+        require(['editor_atto/events'], function(attoEvents) {
+            var domButton = button.getDOMNode();
+            domButton.addEventListener(attoEvents.eventTypes.attoButtonHighlightToggled, function(e) {
+                this._setAriaAttributes(e.detail.buttonName, e.detail.highlight);
+            }.bind(this));
+        }.bind(this));
+
         // Disable mozilla table controls.
         if (Y.UA.gecko) {
             document.execCommand("enableInlineTableEditing", false, false);
             document.execCommand("enableObjectResizing", false, false);
+        }
+    },
+
+    /**
+     * Sets the appropriate ARIA attributes for the table button when it switches roles between a button and a menu button.
+     *
+     * @param {String} buttonName The button name.
+     * @param {Boolean} highlight True when the button was highlighted. False, otherwise.
+     * @private
+     */
+    _setAriaAttributes: function(buttonName, highlight) {
+        var menuButton = this.buttons[buttonName];
+        if (menuButton) {
+            if (highlight) {
+                // This button becomes a menu button. Add appropriate ARIA attributes.
+                var id = menuButton.getAttribute('id');
+                menuButton.setAttribute('aria-haspopup', true);
+                menuButton.setAttribute('aria-controls', id + '_menu');
+                menuButton.setAttribute('aria-expanded', true);
+            } else {
+                menuButton.removeAttribute('aria-haspopup');
+                menuButton.removeAttribute('aria-controls');
+                menuButton.removeAttribute('aria-expanded');
+            }
         }
     },
 
@@ -341,10 +374,19 @@ Y.namespace('M.atto_table').Button = Y.Base.create('button', Y.M.editor_atto.Edi
      */
     _displayTableEditor: function(e) {
         var cell = this._getSuitableTableCell();
+        var menuButton = e.currentTarget.ancestor('button', true);
         if (cell) {
+            var id = menuButton.getAttribute('id');
+
+            // Indicate that the menu is expanded.
+            menuButton.setAttribute('aria-expanded', true);
+
             // Add the cell to the EventFacade to save duplication in when showing the menu.
             e.tableCell = cell;
-            return this._showTableMenu(e);
+            return this._showTableMenu(e, id);
+        } else {
+            // Dialog mode. Remove aria-expanded attribute.
+            menuButton.removeAttribute('aria-expanded');
         }
         return this._displayDialogue(e);
     },
@@ -813,9 +855,10 @@ Y.namespace('M.atto_table').Button = Y.Base.create('button', Y.M.editor_atto.Edi
      *
      * @method _showTableMenu
      * @param {EventFacade} e
+     * @param {String} buttonId The ID of the menu button associated with this menu.
      * @private
      */
-    _showTableMenu: function(e) {
+    _showTableMenu: function(e, buttonId) {
         e.preventDefault();
 
         var boundingBox;
@@ -871,7 +914,8 @@ Y.namespace('M.atto_table').Button = Y.Base.create('button', Y.M.editor_atto.Edi
             ];
 
             this._contextMenu = new Y.M.editor_atto.Menu({
-                items: this._menuOptions
+                items: this._menuOptions,
+                buttonId: buttonId
             });
 
             // Add event handlers for table control menus.

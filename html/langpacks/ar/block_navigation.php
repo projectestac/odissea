@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'ar', version '3.8'.
+ * Strings for component 'block_navigation', language 'ar', version '3.11'.
  *
  * @package     block_navigation
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['courseactivities'] = 'التصنيفات، المقررات الدراسية، وأنشطة المقررات الدراسية';
 $string['courses'] = 'الفئات، المقررات الدراسية';
 $string['coursestructures'] = 'الفئات، المقررات الدراسية، وتراكيب المقرر الدراسي';
-$string['enabledockdesc'] = 'إسمح للمستخدم بإرساء هذه الكتلة';
+$string['enabledockdesc'] = 'السماح للمستخدم بإرساء هذه الكتلة';
 $string['everything'] = 'كُلّ شيء';
 $string['expansionlimit'] = 'التنقل العام لما يأتي';
 $string['linkcategoriesdesc'] = 'أعرض التصنيفات كروابط';

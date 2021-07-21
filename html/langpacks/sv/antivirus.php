@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'sv', version '3.8'.
+ * Strings for component 'antivirus', language 'sv', version '3.11'.
  *
  * @package     antivirus
  * @category    string
@@ -26,11 +26,39 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actantivirushdr'] = 'Tillgängliga Antivirus-plugins';
+$string['antiviruscommonsettings'] = 'Gemensamma antivirusinställningar';
 $string['antiviruses'] = 'Antivirus-plugins';
 $string['antivirussettings'] = 'Hantera Antivirus-plugins';
 $string['configantivirusplugins'] = 'Vänligen välj de antivirus-plugins du vill använda och arrangera dem i den ordning du vill att de ska tillämpas.';
+$string['datainfecteddesc'] = 'Infekterad data har upptäckts.';
+$string['datainfectedname'] = 'Infekterad data';
 $string['datastream'] = 'Data';
+$string['emailadditionalinfo'] = 'Ytterligare information från virus-motorn:';
+$string['emailauthor'] = 'Uppladdat av:';
+$string['emailcontenthash'] = 'Innehålls-hash:';
+$string['emailcontenttype'] = 'Innehållstyp:';
+$string['emaildate'] = 'Uppladdningsdatum:';
+$string['emailfilename'] = 'Filnamn:';
+$string['emailfilesize'] = 'Filstorlek:';
+$string['emailgeoinfo'] = 'Plats:';
+$string['emailinfectedfiledetected'] = 'Infekterad fil har upptäckts';
+$string['emailipaddress'] = 'IP-adress:';
+$string['emailreferer'] = 'Referens:';
+$string['emailreport'] = 'Rapport:';
+$string['emailscanner'] = 'Antivirusprogram:';
+$string['emailscannererrordetected'] = 'Ett fel inträffade vid genomsökningen';
 $string['emailsubject'] = '{$a} :: Antivirusnotis';
+$string['enablequarantine'] = 'Aktivera karantän';
+$string['enablequarantine_help'] = 'Om aktiverad kommer alla infekterade filer som upptäcks placeras i en karantänmapp ([dataroot]/{$a}) för senare inspektion. Uppladdningen i Moodle kommer att misslyckas. Om du använder ett antivirusprogram på filnivå bör denna katalog uteslutas från sökningen för att undvika att eventuella filer i karantän ger utslag.';
+$string['fileinfecteddesc'] = 'En infekterad fil upptäcktes.';
+$string['fileinfectedname'] = 'Infekterad fil';
+$string['notifyemail'] = 'E-post för notifiering från Antivirusprogrammet';
+$string['notifyemail_help'] = 'E-postadress för notifieringar när ett virus upptäcks. Om detta fält lämnas tomt kommer alla webbplatsadministratörer få notifieringen.';
 $string['privacy:metadata'] = 'Antivirussystemet lagrar inga personliga data.';
+$string['quarantinedfiles'] = 'Filer i karantän';
+$string['quarantinedisabled'] = 'Karantän är inaktiverad. Filen lagras inte.';
+$string['quarantinetime'] = 'Maximal karantäntid';
+$string['quarantinetime_desc'] = 'Filer i karantän äldre än den angivna perioden kommer att tas bort.';
+$string['taskcleanup'] = 'Städa upp filer i karantän';
+$string['unknown'] = 'Okänd';
 $string['virusfound'] = '{$a->item} har sökts igenom av antivirusprogrammet och har konstaterats vara infekterad!';
-$string['virusfounduser'] = 'Den fil som du laddade upp med namnet, {$a->filename}, har skannats med ett antivirusprogram och det visade sig att den innehöll ett virus! Din fil laddades INTE upp på rätt sätt.';

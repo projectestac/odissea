@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ru', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'ru', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -42,4 +42,7 @@ $string['pluginname_help'] = 'В качестве ответа на вопрос
 $string['pluginnameadding'] = 'Добавление вопроса «Короткий ответ»';
 $string['pluginnameediting'] = 'Редактирование вопроса «Короткий ответ».';
 $string['pluginnamesummary'] = 'Позволяет вводить в качестве ответа одно или несколько слов. Ответы оцениваются путем сравнения с разными образцами ответов, в которых могут использоваться подстановочные знаки.';
-$string['privacy:metadata'] = 'Плагин «Тип вопроса Короткий ответ» не хранит никаких персональных данных';
+$string['privacy:metadata'] = 'Плагин «Тип вопроса Короткий ответ» позволяет авторам вопросов устанавливать параметры по умолчанию как пользовательские настройки.';
+$string['privacy:preference:defaultmark'] = 'Оценка по умолчанию, установленная для данного вопроса.';
+$string['privacy:preference:penalty'] = 'Штраф за каждую неправильную попытку, когда вопросы задаются с использованием режимов поведения «Интерактивный с несколькими попытками» или «Адаптивный».';
+$string['privacy:preference:usecase'] = 'Учитывать ли регистр в ответах.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_cohort', language 'sv', version '3.8'.
+ * Strings for component 'enrol_cohort', language 'sv', version '3.11'.
  *
  * @package     enrol_cohort
  * @category    string
@@ -33,7 +33,7 @@ $string['creategroup'] = 'Ny grupp';
 $string['defaultgroupnametext'] = '{$a->name} kohort {$a->increment}';
 $string['enrolcohortsynctask'] = 'Synkronisera kohortregistreringar';
 $string['instanceexists'] = 'Kohorten är redan synkroniserad med vald roll';
-$string['pluginname'] = 'Kohortregistrering';
+$string['pluginname'] = 'Kohortsynkronisering';
 $string['pluginname_desc'] = 'Pluginmodulen Kohortregistrering synkroniserar kohortmedlemmar med kursdeltagare.';
 $string['privacy:metadata:core_group'] = 'Pluginmodulen Kohortregistrering kan skapa en ny grupp eller använda en befintlig grupp för att lägga till alla medlemmar från kohorten.';
 $string['status'] = 'Aktiv';

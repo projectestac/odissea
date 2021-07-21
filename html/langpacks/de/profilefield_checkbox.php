@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_checkbox', language 'de', version '3.8'.
+ * Strings for component 'profilefield_checkbox', language 'de', version '3.11'.
  *
  * @package     profilefield_checkbox
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Markierungsfeld';
-$string['privacy:metadata:profilefield_checkbox:data'] = 'Die gespeicherten Nutzerdaten.';
-$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Format der gespeicherten Nutzerdaten.';
-$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'ID des Profilfelds.';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'Die Nutzerdaten des Checkbox-Nutzerprofilfeld.';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Die Format des Checkbox-Nutzerprofilfelds.';
+$string['privacy:metadata:profilefield_checkbox:fieldid'] = 'ID des Profilfelds';
 $string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Zusätzliche Profildaten';
-$string['privacy:metadata:profilefield_checkbox:userid'] = 'Die ID des Nutzers dessen Daten im Checkbox-Plugin  gespeichert werden.';
+$string['privacy:metadata:profilefield_checkbox:userid'] = 'Nutzer-ID der Person, deren Daten vom Checkbox-Plugin gespeichert wurden';

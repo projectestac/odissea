@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'sv', version '3.8'.
+ * Strings for component 'badges', language 'sv', version '3.11'.
  *
  * @package     badges
  * @category    string
@@ -28,26 +28,26 @@ defined('MOODLE_INTERNAL') || die();
 $string['actions'] = 'Åtgärder';
 $string['activate'] = 'Aktivera tillgång';
 $string['activatesuccess'] = 'Aktivering av tillgång till märken lyckades.';
-$string['addalignment'] = 'Lägg till extern färdighet eller kvalitet';
+$string['addalignment'] = 'Lägg till extern färdighet eller standard';
 $string['addbackpack'] = 'Lägg till ryggsäck';
 $string['addbadge'] = 'Lägg till märken';
 $string['addbadge_help'] = 'Välj de märken som ska läggas till i kraven för att kunna få detta märke. Håll ner CTRL-tangenten för att välja flera.';
-$string['addbadgecriteria'] = 'Lägg till kriterier för märke';
+$string['addbadgecriteria'] = 'Lägg till märkeskriteria';
 $string['addcohort'] = 'Lägg till kohort';
 $string['addcohort_help'] = 'Välj de kohorter som ska läggas till kraven för att få detta märke. Håll ner CTRL-tangenten för att välja flera.';
 $string['addcompetency'] = 'Lägg till kompetens';
 $string['addcompetency_help'] = 'Välj de kompetenser som ska läggas till kraven för att få detta märke. Håll ner CTRL-tangenten för att välja flera.';
 $string['addcourse'] = 'Lägg till kurser';
-$string['addcourse_help'] = 'Välj alla kurser som ska läggas till kraven för det här märket. Håll ned CTRL-tangenten för att välja fler än en kurs.';
+$string['addcourse_help'] = 'Välj de kurser som ska läggas till kraven för att få detta märke. Håll ner CTRL-tangenten för att välja flera.';
 $string['addcriteria'] = 'Lägg till kriterier';
-$string['addcriteriatext'] = 'För att börja lägga till kriterier, var god välj ett av alternativen från rullgardinsmenyn.';
-$string['addedtobackpack'] = 'Lägg till märke i ryggsäck';
+$string['addcriteriatext'] = 'För att börja lägga till kriterier, vänligen välj ett av alternativen från rullgardinsmenyn.';
+$string['addedtobackpack'] = 'Märket lades till i ryggsäcken';
 $string['addrelated'] = 'Lägg till relaterat märke';
 $string['addtobackpack'] = 'Lägg till i ryggsäck';
-$string['adminonly'] = 'Den här sidan är begränsad till enbart administratörer för webbplatsen.';
-$string['after'] = 'efter datumet för utfärdande.';
-$string['aggregationmethod'] = 'Metod för aggregation';
-$string['alignment'] = 'Anpassning till externa färdigheter och standarder';
+$string['adminonly'] = 'Den här sidan är begränsad till enbart webbplatsadministratörer.';
+$string['after'] = 'efter datum för utfärdande.';
+$string['aggregationmethod'] = 'Aggregeringsmetod';
+$string['alignment'] = 'Inriktning';
 $string['all'] = 'Alla';
 $string['allmethod'] = 'Alla de valda villkoren är uppfyllda';
 $string['allmethodactivity'] = 'Alla de valda aktiviteterna är slutförda';
@@ -59,66 +59,60 @@ $string['allmethodmanual'] = 'Alla valda roller tilldelar märket';
 $string['allmethodprofile'] = 'Alla de valda profilfälten har fyllts i';
 $string['allowcoursebadges'] = 'Aktivera märken för kurser';
 $string['allowcoursebadges_desc'] = 'Tillåt att märken skapas och tilldelas i kurser.';
-$string['allowexternalbackpack'] = 'Aktivera anslutning till externa ryggsäckar';
-$string['allowexternalbackpack_desc'] = 'Tillåt användare att konfigurera anslutningar och visa märken från deras externa ryggsäcks-leverantörer.
-
-Observera: Det är rekommenderat att låta den här inställningen förbli deaktiverad om webbplatsen inte kan nås via Internet (t.ex. på grund av brandväggen).';
-$string['any'] = 'Någon/något';
+$string['allowexternalbackpack'] = 'Extern anslutning till ryggsäck';
+$string['allowexternalbackpack_desc'] = 'Om aktiverat kan användare ansluta till en extern ryggsäck och dela sina märken från den här webbplatsen. Användare kan också välja att visa alla offentliga märkessamlingar från sin externa ryggsäck på sin profilsida på denna webbplats. Vi rekommenderar att du lämnar det här alternativet inaktiverat om webbplatsen inte är tillgänglig från Internet.';
+$string['any'] = 'Något';
 $string['anymethod'] = 'Något av de valda villkoren är uppfyllt';
 $string['anymethodactivity'] = 'Någon av de valda aktiviteterna är slutförd';
-$string['anymethodbadges'] = 'Någon av de valda märkena har erhållits';
+$string['anymethodbadges'] = 'Något av de valda märkena har erhållits';
 $string['anymethodcohort'] = 'Medlemskap i någon av de valda kohorterna';
 $string['anymethodcompetencies'] = 'Någon av de valda kompetenserna har slutförts';
 $string['anymethodcourseset'] = 'Någon av de valda kurserna är slutförd';
 $string['anymethodmanual'] = 'Någon av de valda rollerna tilldelar märket';
 $string['anymethodprofile'] = 'Något av de valda profilfälten är ifyllt';
-$string['apiversion'] = 'Version av API som stöds';
-$string['archivebadge'] = 'Vill du ta bort märket \'{$a}\', men behålla existerande umärkningar?';
+$string['apiversion'] = 'API-version som stöds';
+$string['archivebadge'] = 'Vill du ta bort märket <strong>\'{$a}\'</strong> men behålla befintliga utdelade märken?';
 $string['archiveconfirm'] = 'Ta bort och behåll befintliga utdelade märken';
 $string['archivehelp'] = '<p>Detta alternativ betyder att märket kommer att markeras som "pensionerat" och därför inte längre kommer att synas i listan med märken. Användare kommer inte längre kunna erhålla detta märke. Befintliga mottagare av märket kommer dock kunna visa det i sin profil och de kommer att kunna ladda upp det till sin externa ryggsäck.<p>
 <p>Om du vill att dina användare ska kunna behålla tillgången till sina intjänade märken är det viktigt att du väljer detta alternativ istället för att helt radera märkena.<p>';
-$string['attachment'] = 'Bifoga märke med meddelande';
-$string['attachment_help'] = 'Om ikryssad så kommer ett utfärdat märke bifogas med mottagarens epost för nedladdning';
+$string['attachment'] = 'Bifoga märke till meddelande';
+$string['attachment_help'] = 'Om ikryssad kommer ett utfärdat märke bifogas till mottagarens e-post för nedladdning. (Bilagor måste vara aktiverade under <em>Administrera webbplats / Server / E-post / Konfiguration av utgående E-post</em> för att denna funktion ska vara möjlig att använda.)';
 $string['award'] = 'Tilldela märke';
 $string['awardedtoyou'] = 'Utfärdade till mig';
-$string['awardoncron'] = 'Aktivering av tillgång till märken lyckades. Det här märket kan omedelbart tas av för många användare, för att säkerställa webbplatsens prestanda så kommer denna åtgärd att ta lite tid att bearbeta.';
+$string['awardoncron'] = 'Aktivering av åtkomst till märken lyckades. Det här märket kan omedelbart tas av för många användare, för att säkerställa webbplatsens prestanda så kommer denna åtgärd att ta lite tid att bearbeta.';
 $string['awards'] = 'Mottagare';
 $string['backpackapiurl'] = 'URL till ryggsäcks-API';
 $string['backpackavailability'] = 'Extern verifikation av märke';
 $string['backpackavailability_help'] = 'För att mottagare av märken ska ha möjlighet att bevisa att de tagit märken från er så måste en extern ryggsäcks-tjänst kunna komma åt er webbplats och verifiera märken som utfärdats från den. För tillfället verkar er webbplats inte vara tillgänglig, vilket betyder att märken som ni redan utfärdat, eller kommer utfärda i framtiden, inte kan verifieras.
 
-##Varför ser jag det här meddelandet?
+**Varför ser jag det här meddelandet?
 
 Det kan vara så att er brandvägg förhindrar åtkomst från användare utanför ert nätverk, att er webbplats är lösenordsskyddad eller att webbplatsen körs på en dator som inte är tillgänglig via Internet (som t.ex. en lokal utvecklingsmaskin).
 
-##Är det här ett problem?
+**Är det här ett problem?
 
 Du bör åtgärda det här problemet på alla produktionswebbplatser där ni planerar att utfärda märken, annars kommer mottagarna inte kunna bevisa att de tagit märken från er. Om er webbplats inte ännu är live så kan ni skapa och utfärda testmärken, så länge er webbplats är tillgänglig innan ni går live.
 
-##Vad händer om jag inte kan göra hela webbplatsen publikt tillgänglig?
+**Vad händer om jag inte kan göra hela webbplatsen publikt tillgänglig?
 
 Den enda URL som krävs för verifikation är [din-webbplats-url]/badges/assertion.php så om du kan konfigurera din brandvägg för extern åtkomst till den filen så kommer verifikation av märken fortfarande fungera.';
-$string['backpackbadges'] = 'Du har {$a->totalbadges} märke(n) visade av {$a->totalcollections} samling(ar). <a href="mybackpack.php">Ändra inställningar för ryggsäck</a>.';
-$string['backpackbadgessettings'] = 'Ändra inställningar för ryggsäck';
+$string['backpackbadgessettings'] = 'Ändra ryggsäcksinställningar';
 $string['backpackbadgessummary'] = 'Du ser {$a->totalbadges} märken från {$a->totalcollections} samling(ar).';
 $string['backpackcannotsendverification'] = 'Kan inte skicka e-post verifikation';
+$string['backpackconnected'] = 'Ryggsäcken är ansluten';
 $string['backpackconnection'] = 'Anslutning till ryggsäck';
-$string['backpackconnection_help'] = 'Den här sidan tillåter dig att ansluta en extern ryggsäckstjänst för badges/märken. När du ansluter till en ryggsäck kan du visa externa märken här på Moodle och trycka ut märken du tagit här till din externa ryggsäck.
-
-För nuvarande stöds endast <a href="http://backpack.openbadges.org">Mozilla OpenBadges Backpack</a>. Du behöver registrera dig hos en ryggsäckstjänst innan du försöker ansluta ryggsäcken via den här sidan.';
+$string['backpackconnection_help'] = 'Genom att ansluta till en ryggsäck kan du dela dina märken från den här webbplatsen och visa offentliga märkessamlingar från din ryggsäck på din profilsida på den här webbplatsen.';
 $string['backpackconnectioncancelattempt'] = 'Anslut med en annan e-postadress';
 $string['backpackconnectionconnect'] = 'Anslut till ryggsäck';
 $string['backpackconnectionnottested'] = 'Anslutningen kan inte testas för denna ryggsäck eftersom enbart ryggsäckar som stödjer Open Badges v2.0 har stöd för detta.';
 $string['backpackconnectionok'] = 'Anslutningen till ryggsäcken lyckades';
 $string['backpackconnectionresendemail'] = 'Skicka om bekräftelsemejlet';
 $string['backpackconnectionunexpectedmessage'] = 'Ryggsäcken returnerade felet: "{$a}".';
-$string['backpackconnectionunexpectedresult'] = 'Anslutningen till din ryggsäck misslyckades. V.g. försök igen.
-<br><br>Om problemet kvarstår kontakta din administratör.';
+$string['backpackconnectionunexpectedresult'] = 'Det gick inte att ansluta till ryggsäcken. Kontrollera autentiseringsuppgifterna och försök igen.';
 $string['backpackdetails'] = 'Ryggsäcksinställningar';
+$string['backpackdisconnected'] = 'Ryggsäcken är frånkopplad';
 $string['backpackemail'] = 'E-postadress';
-$string['backpackemail_help'] = 'E-postadress associerad med din ryggsäck.
-
-Om anslutning till ryggsäcken etableras kommer den här e-postadressen användas istället för din interna e-postadress för att trycka ut märken till din ryggsäck.';
+$string['backpackemail_help'] = 'E-postadressen som är kopplad till din ryggsäck. När du är ansluten kommer alla märken som erhålls på den här webbplatsen att associeras med den här e-postadressen.';
 $string['backpackemailverificationpending'] = 'Väntar på bekräftelse';
 $string['backpackemailverifyemailbody'] = 'Hej,
 
@@ -132,16 +126,18 @@ I de flesta e-post program borde detta visas som en blå länk du kan klicka på
 
 Om du behöver hjälp kan du kontakta webbplatsen administratör,
 {$a->admin}';
-$string['backpackemailverifyemailsubject'] = '{$a}: E-postbekräftelse av Backpack för Märken';
+$string['backpackemailverifyemailsubject'] = '{$a}: E-postbekräftelse av märkesryggsäck';
 $string['backpackemailverifypending'] = 'Ett bekräftelsemejl har skickats till <strong>{$a}</strong>. Klicka på bekräftelselänken för att aktivera anslutningen till din ryggsäck.';
 $string['backpackemailverifysuccess'] = 'Tack för att du har bekräftat din e-postadress. Du är nu ansluten till din ryggsäck.';
 $string['backpackemailverifytokenmismatch'] = 'Det token som angivits i den länk du klickade på matchar inte det sparade. Försäkra dig om att du klickade på länken i det senaste e-postmeddelandet du fick.';
-$string['backpackimport'] = 'Inställningar för import av märken';
-$string['backpackimport_help'] = 'Efter lyckad anslutning av ryggsäck så kan märken från din ryggsäck visas på din "Mina märken"-sida och din profilsida.
+$string['backpackexporterror'] = 'Kan inte exportera märket till ryggsäcken';
+$string['backpackimport'] = 'Inställningar för märkesimport';
+$string['backpackimport_help'] = 'Efter lyckad anslutning av ryggsäck så kan märken från din ryggsäck visas på din <em>Mina märken</em>-sida och din profilsida.
 
 I detta område kan du välja samlingar av märken från din ryggsäck som du vill visa i din profil.';
 $string['backpackneedsupdate'] = 'Ryggsäcken som anslutits till denna profil stämmer inte överens med ryggsäcken på webbplatsen. Du behöver koppla ifrån och ansluta ryggsäcken på nytt.';
-$string['backpacksettings'] = 'Inställningar för ryggsäck';
+$string['backpackprovider'] = 'Ryggsäcksleverantör';
+$string['backpacksettings'] = 'Ryggsäcksinställningar';
 $string['backpackweburl'] = 'URL till ryggsäck';
 $string['badgedetails'] = 'Märkesdetaljer';
 $string['badgeimage'] = 'Bild';
@@ -149,20 +145,22 @@ $string['badgeimage_help'] = 'Det här är en bild som kommer användas när det
 
 För att lägga till en ny bild, bläddra och välj en bild (i JPG- eller PNG-format), klicka sedan på "Spara ändringar". Bilden kommer att beskäras till en fyrkant och skalas om för att matcha bildkraven för märken.';
 $string['badgeprivacysetting'] = 'Sekretessinställningar för märke';
-$string['badgeprivacysetting_help'] = 'Märken som du tar kan visas på din kontoprofilsida. Den här inställningen tillåter dig att automatiskt ställa in synligheten på nyligen tagna märken.
+$string['badgeprivacysetting_help'] = 'Märken som du tar kan visas på din profilsida. Den här inställningen tillåter dig att automatiskt ställa in synligheten på nyligen tagna märken.
 
 Du kan fortfarande göra individuella sekretessinställningar för märken på din "Mina märken"-sida.';
 $string['badgeprivacysetting_str'] = 'Visa automatiskt märken jag tagit på min profilsida';
 $string['badges'] = 'Märken';
-$string['badgesalt'] = 'Salt för att hasha mottagarens epost-adress';
-$string['badgesalt_desc'] = 'Användningen av en hash ger ryggsäcks-tjänster möjligheten att bekräfta den som tagit ett märke utan att exponera dennes epost-adress. Den här inställningen ska bara använda siffror och bokstäver.';
+$string['badgesalt'] = 'Salt för att hasha mottagarens e-postadress';
+$string['badgesalt_desc'] = 'Genom att använda en hash kan ryggsäckstjänster bekräfta märkesägaren utan att behöva avslöja dess e-postadress. Den här inställningen bör bara använda siffror och bokstäver.
+
+För mottagarverifieringsändamål bör du undvika att ändra den här inställningen när du börjat utfärda märken.';
 $string['badgesdisabled'] = 'Märken är inte aktiverade på den här webbplatsen.';
 $string['badgesearned'] = 'Antal tagna märken: {$a}';
 $string['badgesettings'] = 'Märkesinställningar';
-$string['badgestatus_0'] = 'Inte tillgängliga för användare';
-$string['badgestatus_1'] = 'Tillgängliga för användare';
-$string['badgestatus_2'] = 'Inte tillgängliga för användare';
-$string['badgestatus_3'] = 'Tillgängliga för användare';
+$string['badgestatus_0'] = 'Inte tillgängligt för användare';
+$string['badgestatus_1'] = 'Tillgängligt för användare';
+$string['badgestatus_2'] = 'Inte tillgängligt för användare';
+$string['badgestatus_3'] = 'Tillgängligt för användare';
 $string['badgestatus_4'] = 'Arkiverade';
 $string['badgestoearn'] = 'Antal tillgängliga märken: {$a}';
 $string['badgesview'] = 'Märken för kurs';
@@ -176,14 +174,14 @@ $string['bmessage'] = 'Meddelande';
 $string['boverview'] = 'Översikt';
 $string['brelated'] = 'Relaterade märken ({$a})';
 $string['bydate'] = 'slutför senast';
-$string['claim'] = 'Fordran';
-$string['claimcomment'] = 'Kommentarer till rekommendationen';
-$string['claimid'] = 'URL till fordran';
+$string['claim'] = 'Rekommendation';
+$string['claimcomment'] = 'Kommentar';
+$string['claimid'] = 'URL till rekommendation';
 $string['clearsettings'] = 'Rensa inställningar';
 $string['completioninfo'] = 'Det här märket utfärdades för slutförandet av:';
 $string['completionnotenabled'] = 'Slutförande av kurs är inte aktiverad för den här kursen så den kan inte inkluderas i kriterierna för märket. Slutförande av kurs kan aktiveras i inställningarna för kurser.';
 $string['configenablebadges'] = 'Om aktiverad låter den här funktionen dig skapa märken och tilldela dem till användare på webbplatsen.';
-$string['configuremessage'] = 'Meddelande för märke';
+$string['configuremessage'] = 'Märkesmeddelande';
 $string['connect'] = 'Anslut';
 $string['connected'] = 'Ansluten';
 $string['connecting'] = 'Ansluter ...';
@@ -223,7 +221,7 @@ $string['criteria_descr_2'] = 'Det här märket behöver tilldelas av användare
 $string['criteria_descr_4'] = 'Användare måste slutföra kursen';
 $string['criteria_descr_5'] = '<strong>{$a}</strong> av de följande kurserna måste slutföras:';
 $string['criteria_descr_6'] = '<strong>{$a}</strong> av de följande användarprofilfälten måste fyllas i:';
-$string['criteria_descr_7'] = '';
+$string['criteria_descr_7'] = '<strong>{$a}</strong> av följande märken måste erhållas:';
 $string['criteria_descr_8'] = 'Medlemskap i <strong>{$a}</strong> av följande kohorter krävs:';
 $string['criteria_descr_9'] = '<strong>{$a}</strong> av följande kompetenser måste uppnås:';
 $string['criteria_descr_bydate'] = 'senast <em>{$a}</em>';
@@ -245,27 +243,27 @@ $string['criteria_descr_single_6'] = 'Det följande användarprofilfältet måst
 $string['criteria_descr_single_7'] = 'Följande märke måste erhållas:';
 $string['criteria_descr_single_8'] = 'Medlemskap i följande kohorter krävs:';
 $string['criteria_descr_single_9'] = 'Följande kompetenser måste uppnås:';
-$string['criteria_descr_single_short1'] = 'Slutfört:';
+$string['criteria_descr_single_short1'] = 'Slutför:';
 $string['criteria_descr_single_short2'] = 'Tilldelad av:';
 $string['criteria_descr_single_short4'] = 'Slutför kursen';
-$string['criteria_descr_single_short5'] = 'Slutfört:';
-$string['criteria_descr_single_short6'] = 'Slutfört:';
+$string['criteria_descr_single_short5'] = 'Slutför:';
+$string['criteria_descr_single_short6'] = 'Slutför:';
 $string['criteria_descr_single_short7'] = 'Färdigt:';
 $string['criteria_descr_single_short8'] = 'Medlemskap i:';
-$string['criteria_descr_single_short9'] = 'Slutfört:';
+$string['criteria_descr_single_short9'] = 'Slutför:';
 $string['criteriacreated'] = 'Skapandet av märkeskriterierna lyckades';
 $string['criteriadeleted'] = 'Raderingen av märkeskriterierna lyckades';
 $string['criteriasummary'] = 'Sammanfattning av kriterier';
 $string['criteriaupdated'] = 'Uppdateringen av märkeskriterierna lyckades';
 $string['criterror'] = 'Aktuella problem med parametrar';
-$string['criterror_help'] = 'Den här fältgruppen visar alla parametrar som ursprungligen lades till kraven för det här märket men som inte längre är tillgängliga. Det rekommenderas att du avmarkerar sådana parametrar för att säkerställa att studerande kan ta det här märket i framtiden.';
+$string['criterror_help'] = 'Den här fältuppsättningen visar alla parametrar som ursprungligen lades till i det här märkeskravet men som inte längre är tillgängliga. Vi rekommenderar att du avmarkerar dessa parametrar för att se till att användarna kan erhålla detta märke i framtiden.';
 $string['currentimage'] = 'Aktuell bild';
 $string['currentstatus'] = 'Aktuell status:';
 $string['dateawarded'] = 'Utfärdandedatum';
 $string['dateearned'] = 'Datum: {$a}';
 $string['day'] = 'Dag(ar)';
-$string['deactivate'] = 'Inaktivera tillgång';
-$string['deactivatesuccess'] = 'Inaktivering av tillgång till märken lyckades.';
+$string['deactivate'] = 'Inaktivera åtkomst';
+$string['deactivatesuccess'] = 'Inaktivering av åtkomst till märken lyckades.';
 $string['defaultissuercontact'] = 'E-postadress till utfärdare av märket';
 $string['defaultissuercontact_desc'] = 'En e-postadress som är kopplad till utfärdaren av märket. För en Open Badges v2.0-ryggsäck används denna för autentisering vid publicering av märken till en ryggsäck.';
 $string['defaultissuername'] = 'Namn på utfärdare av märket';
@@ -277,7 +275,8 @@ $string['delconfirm'] = 'Ta bort befintliga utfärdade märken';
 $string['delcritconfirm'] = 'Är du säker på att du vill ta bort det här kriteriet?';
 $string['deletehelp'] = '<p>Att fullständigt radera ett märke betyder att all information och kriterier associerade med märket tas bort permanent. Användare som tilldelats märket kommer inte längre ha tillgång till det eller möjlighet att visa det i sin profil.</p>
 <p>OBS! Användare som tilldelats detta märke och som redan laddat upp det till sin externa ryggsäck kommer fortfarande ha tillgång till sitt märke. Dock kommer de inte längre ha tillgång till den information om utfärdande och intyg som lagrades på denna webbplats.</p>';
-$string['delexternalbackpackconfirm'] = 'Radera ryggsäcken \'{$a}\' från denna webbplats?';
+$string['delexternalbackpack'] = 'Radera webbplatsens ryggsäck';
+$string['delexternalbackpackconfirm'] = 'Ta bort ryggsäcken <strong>\'{$a}\'</strong> från denna webbplats?';
 $string['delparamconfirm'] = 'Är du säker på att du vill ta bort den här parametern?';
 $string['description'] = 'Beskrivning';
 $string['disconnect'] = 'Koppla från';
@@ -288,34 +287,31 @@ $string['endorsement'] = 'Rekommendation';
 $string['error:backpackdatainvalid'] = 'Den data som returnerades från ryggsäcken var ogiltig.';
 $string['error:backpackemailnotfound'] = 'E-postadressen \'{$a}\' är inte ansluten till någon ryggsäck. Du behöver antingen i <a href="http://backpack.openbadges.org">skapa en ryggsäck </a> för detta e-postkonto eller logga in med en annan e-postadress.';
 $string['error:backpacknotavailable'] = 'Din webbplats är inte tillgänlig via Internet så märken som utfärdats från den här webbplatsen kan inte verifieras av externa ryggsäcks-tjänster.';
-$string['error:backpackproblem'] = 'Anslutningen till din ryggsäcktjänst misslyckades. V.g. försök senare.';
+$string['error:backpackproblem'] = 'Anslutningen till din ryggsäcktjänst misslyckades. Vänligen försök senare.';
 $string['error:badgeawardnotfound'] = 'Detta märke kan inte verifieras. Möjligtvis har det återkallats.';
-$string['error:badgenotfound'] = 'Inget märke hittades';
+$string['error:badgenotfound'] = 'Märket kunde inte hittas';
 $string['error:cannotact'] = 'Kan inte aktivera märket.';
 $string['error:cannotawardbadge'] = 'Kan inte tilldela märke till en användare.';
-$string['error:cannotdeletecriterion'] = 'Detta kriterium kan inte raderas';
-$string['error:cannotrevokebadge'] = 'Kan inte återkalla märket från användaren.';
+$string['error:cannotdeletecriterion'] = 'Detta kriterium kan inte tas bort.';
+$string['error:cannotrevokebadge'] = 'Kan inte återkalla märket från en användare.';
 $string['error:clone'] = 'Kan inte klona märket.';
 $string['error:connectionunknownreason'] = 'Anslutningen misslyckades, men orsaken angavs inte.';
 $string['error:duplicatename'] = 'Ett märke med det namnet finns redan i systemet.';
 $string['error:externalbadgedoesntexist'] = 'Märke ej hittat';
 $string['error:guestuseraccess'] = 'Du är inloggad som gäst. För att kunna se märken behöver du logga in med ditt användarkonto.';
-$string['error:invalidbadgeurl'] = 'Ogiltigt URL-format för utfärdare av märke';
 $string['error:invalidcriteriatype'] = 'Ogiltig kriterietyp.';
 $string['error:invalidexpiredate'] = 'Förfallodatum måste vara i framtiden.';
 $string['error:invalidexpireperiod'] = 'Förfallotid kan inte vara negativ eller noll.';
 $string['error:invalidparambadge'] = 'Märket finns inte.';
 $string['error:invalidparamcohort'] = 'Kohorten finns inte.';
 $string['error:noactivities'] = 'Det finns inga aktiviteter med kriterier för slutförande som är aktiverade i den här kursen.';
-$string['error:nobadges'] = 'Det finns inga kurs- eller webbplatsmärken med åtkomst aktiverad att lägga till som kriterium.';
+$string['error:nobadges'] = 'Det finns för närvarande inga märken med åtkomst aktiverad för att läggas till som villkor. Ett webbplatsmärke kan bara ha andra platsmärken som kriterier. Ett kursmärke kan ha andra kursmärken eller platsmärken som kriterier.';
 $string['error:nocohorts'] = 'Inga kohorter';
 $string['error:nocourses'] = 'Slutförande av kurs är inte aktiverad för någon av webbplatsens kurser så därför kan inga visas. Slutförande av kurs kan aktiveras i inställningarna för kurser.';
-$string['error:nogroups'] = '<p>Det finns inga publika samlingar av märken tillgängliga i din ryggsäck. </p>
-<p>Endast publika samlingar visas så <a href="http://backpack.openbadges.org">besök din ryggsäck</a> för att skapa några publika samlingar.</p>';
 $string['error:nogroupslink'] = '<p>Endast publika samlingar visas. <a href="{$a}" target="_blank" rel="nofollow">Besök din ryggsäck</a> för att skapa publika samlingar.</p>';
 $string['error:nogroupssummary'] = '<p>Det finns inga publika samlingar av märken i din ryggsäck. </p>';
 $string['error:nopermissiontoview'] = 'Du har inte rättigheter att visa mottagare av märken';
-$string['error:nosuchbadge'] = 'Märke med id {$a} existerar inte.';
+$string['error:nosuchbadge'] = 'Det finns inget märke med id {$a}.';
 $string['error:nosuchcohort'] = 'Varning: Denna kohort är inte längre tillgänglig.';
 $string['error:nosuchcourse'] = 'Varning: Den här kursen är inte längre tillgänglig.';
 $string['error:nosuchfield'] = 'Varning: Det här användarprofilfältet är inte längre tillgängligt.';
@@ -330,12 +326,12 @@ $string['error:requesttimeout'] = 'Tidsgränsen för begäran om anslutning öve
 $string['error:save'] = 'Kan inte spara märket.';
 $string['error:userdeleted'] = '{$a->user} (Denna användare finns inte längre på {$a->site})';
 $string['eventbadgearchived'] = 'Märket har arkiverats';
-$string['eventbadgeawarded'] = 'Märke belönat till';
+$string['eventbadgeawarded'] = 'Märke tilldelat';
 $string['eventbadgecreated'] = 'Märke skapat';
 $string['eventbadgecriteriacreated'] = 'Kriterium för märke skapat';
 $string['eventbadgecriteriadeleted'] = 'Kriterium för märket raderat';
 $string['eventbadgecriteriaupdated'] = 'Kriterium för märket uppdaterat';
-$string['eventbadgedeleted'] = 'Märket raderat';
+$string['eventbadgedeleted'] = 'Märke borttaget';
 $string['eventbadgedisabled'] = 'Märke inaktiverat';
 $string['eventbadgeduplicated'] = 'En kopia av märket har skapats';
 $string['eventbadgeenabled'] = 'Märke aktiverat';
@@ -344,15 +340,15 @@ $string['eventbadgerevoked'] = 'Märke återkallat';
 $string['eventbadgeupdated'] = 'Märke uppdaterat';
 $string['eventbadgeviewed'] = 'Märke visat';
 $string['evidence'] = 'Bevis';
-$string['existingrecipients'] = 'Existerande mottagare av märke';
+$string['existingrecipients'] = 'Befintliga märkesmottagare';
 $string['existsinbackpack'] = 'Märket finns redan i ryggsäcken';
-$string['expired'] = 'Förfallen';
+$string['expired'] = 'Förfallet';
 $string['expiredate'] = 'Det här märket förfaller {$a}.';
 $string['expireddate'] = 'Det här märket förföll {$a}.';
 $string['expireperiod'] = 'Det här märket förfaller {$a} dag(ar) efter utfärdande.';
-$string['expireperiodh'] = 'Det här märket förfaller {$a} timma(r) efter utfärdande.';
-$string['expireperiodm'] = 'Det här märket förfaller {$a} minut(er) efter utfärdande.';
-$string['expireperiods'] = 'Det här märket förfaller {$a} sekund(er) efter  utfärdande.';
+$string['expireperiodh'] = 'Det här märket förfaller {$a} timmar efter utfärdande.';
+$string['expireperiodm'] = 'Det här märket förfaller {$a} minuter efter utfärdande.';
+$string['expireperiods'] = 'Det här märket förfaller {$a} sekunder efter  utfärdande.';
 $string['expirydate'] = 'Förfallodatum';
 $string['expirydate_help'] = 'Alternativt så kan märken förfalla på ett specifikt datum, eller så kan datumet beräknas baserat på datumet när märket utfärdades till en användare.';
 $string['externalbadges'] = 'Mina märken från andra webbplatser';
@@ -370,10 +366,11 @@ $string['imageauthorurl'] = 'URL till bildens upphovsman.';
 $string['imageauthorurl_help'] = 'Om angiven visas en länk till bildens upphovsmans webbplats på sidan för märken. URL:en ska ha prefixen http:// eller http://.';
 $string['imagecaption'] = 'Bildtitel';
 $string['imagecaption_help'] = 'Om bildtiteln angivits kommer denna visas på sidan för märken.';
+$string['includeauthdetails'] = 'Inkludera autentiseringsuppgifter med ryggsäcken';
 $string['invalidurl'] = 'Ogiltig URL';
 $string['issuancedetails'] = 'Förfallodatum för märke';
 $string['issuedbadge'] = 'Information för utfärdat märke';
-$string['issuerdetails'] = 'Utfärdaredetaljer';
+$string['issuerdetails'] = 'Utfärdare';
 $string['issueremail'] = 'E-post';
 $string['issueremail_help'] = 'E-postadress till den organisation som utfärdade rekommendationen.';
 $string['issuername'] = 'Utfärdarens namn';
@@ -384,8 +381,8 @@ $string['issuerurl'] = 'Utfärdarens URL';
 $string['issuerurl_help'] = 'Adressen till webbplatsen för den organisation som utfärdar rekommendationen. URL:en ska ha prefixen http:// eller http://.';
 $string['language'] = 'Språk';
 $string['language_help'] = 'Det språk som används på sidan för märken.';
-$string['listbackpacks'] = 'Lista med ryggsäckar.';
-$string['localbadges'] = 'Mina märken från webbplats {$a}';
+$string['listbackpacks'] = 'Ryggsäckar';
+$string['localbadges'] = 'Mina märken från {$a}-webbplatsen';
 $string['localbadgesh'] = 'Mina märken från den här webbplatsen';
 $string['localbadgesh_help'] = 'Alla märken som tagits inom den här webbplatsen genom att slutföra kurser, kursaktiviteter eller andra krav.
 
@@ -397,11 +394,11 @@ $string['localconnectto'] = 'För att dela de här märkena utanför den här we
 $string['makeprivate'] = 'Gör privat';
 $string['makepublic'] = 'Gör publik';
 $string['managebackpacks'] = 'Hantera ryggsäckar';
-$string['managebadges'] = 'Administrera märken';
+$string['managebadges'] = 'Hantera märken';
 $string['message'] = 'Meddelandets brödtext';
 $string['messagebody'] = '<p>Du har tilldelats märket "%badgename%"!</p>
 <p>Mer information om det här märket kan du hitta på %badgelink%.</p>
-<p>Om inget märke bifogats med det här e-postmeddelandet så kan du administrera och ladda ned det från sidan {$a}.</p>';
+<p>Du kan administrera och ladda ned märket från {$a}-sidan.</p>';
 $string['messagesubject'] = 'Grattis! Du har just tagit ett märke!';
 $string['method'] = 'Det här kriteriet är uppfyllt när...';
 $string['mingrade'] = 'Lägsta betyg som krävs';
@@ -409,15 +406,14 @@ $string['month'] = 'Månad(er)';
 $string['mybackpack'] = 'Mina ryggsäcksinställningar';
 $string['mybadges'] = 'Mina märken';
 $string['never'] = 'Aldrig';
+$string['newbackpack'] = 'Lägg till en ny ryggsäck';
 $string['newbadge'] = 'Lägg till nytt märke';
 $string['newimage'] = 'Ny bild';
-$string['noalignment'] = 'Det finns inga externa färdigheter eller kvaliteter angivna för detta märke.';
+$string['noalignment'] = 'Det finns inga externa färdigheter eller standarder angivna för detta märke.';
 $string['noawards'] = 'Det här märket har inte tagits ännu.';
-$string['nobackpack'] = 'Ingen tjänst för ryggsäck är ansluten till det här kontot.<br/>';
-$string['nobackpackbadges'] = 'Det finns inga märken i samlingen du har valt. <a href="mybackpack.php">Lägg till fler samlingar</a>.';
-$string['nobackpackbadgessummary'] = 'Det finns inga märken i den samling du valt.';
-$string['nobackpackcollections'] = 'Inga samlingar av märken har valts. <a href="mybackpack.php">Lägg till samlingar</a>.';
-$string['nobackpackcollectionssummary'] = 'Ingen samling med märken har valts.';
+$string['nobackpack'] = 'Ingen tjänst för ryggsäckar är ansluten till det här kontot.<br/>';
+$string['nobackpackbadgessummary'] = 'Det finns inga märken i de valda samlingarna.';
+$string['nobackpackcollectionssummary'] = 'Ingen märkessamling har valts.';
 $string['nobackpacks'] = 'Det finns inga tillgängliga ryggsäckar.';
 $string['nobadges'] = 'Det finns inga märken tillgängliga.';
 $string['nocompetencies'] = 'Inga kompetenser valda.';
@@ -429,8 +425,8 @@ $string['norelated'] = 'Detta märke har inga relaterade märken.';
 $string['notacceptedrole'] = 'Din nuvarande rolltilldelning finns inte bland de roller som manuellt kan tilldela det här märket.<br/>
 Om du skulle vilja se vilka användare som redan tagit det här märket så kan du besöka sidan {$a}.';
 $string['notconnected'] = 'Inte ansluten';
-$string['notealignment'] = 'Externa färdigheter eller standarder detta märke matchar kan anges här. Dessa visas på sidan för märken.';
-$string['noteendorsement'] = 'En rekommendation från tredjepart kan användas för att addera värde till märket. Ett märke utfärdat av en lärare kan t.ex. vara sanktionerat av skolan, eller så kan ett märke utfärdat av en lokal utfärdarorganisation vara sanktionerat av den nationella utfärdarorganisationen.';
+$string['notealignment'] = 'Externa färdigheter eller standarder detta märke är inriktat mot kan anges här. Dessa visas på sidan för märken.';
+$string['noteendorsement'] = 'En rekommendation från tredjepart kan användas för att addera värde till märket. Ett märke utfärdat av en lärare kan t.ex. vara rekommenderat av skolan, eller så kan ett märke utfärdat av en lokal utfärdarorganisation vara rekommenderat av den nationella utfärdarorganisationen.';
 $string['noterelated'] = 'Märken som har en relation kan markeras som relaterade. T.ex. kan märken som bygger på samma kriterium, men som visas med olika språk markeras som relaterade. Relaterade märken visas på sidan för märken.';
 $string['nothingtoadd'] = 'Det finns inga tillgängliga kriterier att lägga till.';
 $string['notification'] = 'Notifiera skaparen av märket';
@@ -453,8 +449,10 @@ $string['notifymonthly'] = 'Månadsvis';
 $string['notifyweekly'] = 'Veckovis';
 $string['numawards'] = 'Det här märket har tilldelats <a href="{$a->link}">{$a->count}</a> användare.';
 $string['numawardstat'] = 'Det här märket har tilldelats {$a} användare.';
+$string['oauth2issuer'] = 'OAuth 2-tjänster';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
+$string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['overallcrit'] = 'av de valda kriterierna är slutförda.';
 $string['potentialrecipients'] = 'Potentiella mottagare av märket';
 $string['preferences'] = 'Märkesinställningar';
@@ -463,6 +461,12 @@ $string['privacy:metadata:backpack:backpackuid'] = 'Unik identifierare för rygg
 $string['privacy:metadata:backpack:email'] = 'E-postadress associerad med ryggsäcken';
 $string['privacy:metadata:backpack:externalbackpackid'] = 'Ryggsäckens ID';
 $string['privacy:metadata:backpack:userid'] = 'ID för den användare vars ryggsäck det är';
+$string['privacy:metadata:backpackoauth2'] = 'OAuth 2-information när en användare ansluter till en extern ryggsäck';
+$string['privacy:metadata:backpackoauth2:issuerid'] = 'OAuth 2-tjänsten ID';
+$string['privacy:metadata:backpackoauth2:scope'] = 'Lista omfattning av ryggsäcksanslutning';
+$string['privacy:metadata:backpackoauth2:token'] = 'Token för ryggsäcksanslutning';
+$string['privacy:metadata:backpackoauth2:userid'] = 'Användar-ID för kopplingen till ryggsäcken';
+$string['privacy:metadata:backpackoauth2:usermodified'] = 'Användar-ID för den som redigerade anslutningen';
 $string['privacy:metadata:badge'] = 'En samling märken';
 $string['privacy:metadata:badge:timecreated'] = 'Tidpunkten då märket skapades';
 $string['privacy:metadata:badge:timemodified'] = 'Tidpunkten då märket senast ändrades';
@@ -504,31 +508,33 @@ $string['reviewconfirm'] = '<p>Detta gör ditt märke synligt för användarna o
 $string['revoke'] = 'Återkalla märke';
 $string['save'] = 'Spara';
 $string['searchname'] = 'Sök via namn';
-$string['selectaward'] = 'Var vänlig välj rollen som du skulle vilja använda för att tilldela det här märket:';
-$string['selectgroup_end'] = 'Endast publika samlingar visas, <a href="http://backpack.openbadges.org">besök din ryggsäck</a> för att skapa fler publika samlingar.';
+$string['selectaward'] = 'Välj rollen du skulle vilja använda för att tilldela det här märket:';
+$string['selectgroup_end'] = 'Endast publika samlingar visas. <a href="{$a}">Gå till din ryggsäck</a> för att skapa fler publika samlingar.';
 $string['selectgroup_start'] = 'Välj samlingar från din ryggsäck att visa på den här webbplatsen:';
 $string['selecting'] = 'Med valda märken...';
 $string['setup'] = 'Konfigurera anslutning';
 $string['sitebackpack'] = 'Aktiv extern ryggsäck';
 $string['sitebackpack_help'] = 'Den externa ryggsäck som användare kan ansluta till från denna webbplats. Observera att om denna inställning ändras efter det att användare har anslutit sina ryggsäckar kommer det att krävas att varje användare går till sina ryggsäcksinställningar och förnyar kopplingen.';
+$string['sitebackpackdeleted'] = 'Webbplatsens ryggsäck har tagits bort.';
+$string['sitebackpacknotdeleted'] = 'Den här ryggsäcken kunde inte tas bort eftersom den för närvarande är webbplatsens standardryggsäck';
 $string['sitebackpackverify'] = 'Ryggsäcksanslutning';
 $string['sitebackpackwarning'] = 'Kunde inte ansluta till ryggsäck. <br/><br/> Kontrollera att inställningen "Märkesutfärdarens e-postadress" är ett giltigt konto på webbplatsen för ryggsäcken. <br/><br/> Kontrollera att "Märkesutfärdarens lösenord" på <a href="{$a->url}">sidan för märkesinställningar</a> är rätt lösenord för kontot på ryggsäckens webbplats. <br/><br/> Ryggsäcken returnerade: "{$a->warning}"';
 $string['sitebadges'] = 'Märken för webbplatsen';
 $string['sitebadges_help'] = 'Märken för webbplatsen kan enbart tilldelas användare för aktiviteter som rör webbplatsen. Det kan inkludera slutförandet av en uppsättning kurser eller delar av användarprofiler. Märken för webbplatser kan också tilldelas manuellt av en användare till en annan.
 
-Märken för kursrelaterade aktiviteter måste skapas på kursnivå. Märken för kurser hanteras under <em>Administrera kurs -> Märken</em>.';
-$string['status'] = 'Status för märke';
+Märken för kursrelaterade aktiviteter måste skapas på kursnivå. Märken för kurser hanteras under <em>Administrera kurs &#10132; Märken</em>.';
+$string['status'] = 'Status';
 $string['status_help'] = 'Statusen för ett märke avgör dess beteende i systemet:
 
-* **TILLGÄNGLIGT** – Betyder att märket kan tas av användarna. Medan ett märke är tillgängligt kan dess kriterier inte ändras.
+* **TILLGÄNGLIGT** – Betyder att märket kan tas av användarna. Om ett märke är tillgängligt kan dess kriterier inte ändras.
 
-* **INTE TILLGÄNGLIGT** – Betyder att märket inte är tillgängligt för användarna och kan därför inte tas eller manuellt tilldelas. Så länge märket aldrig tilldelats någon så kan dess kriterier ändras.
+* **INTE TILLGÄNGLIGT** – Betyder att märket inte är tillgängligt för användarna och det kan därför inte tas eller manuellt tilldelas. Så länge märket aldrig tilldelats någon kan dess kriterier ändras.
 
-Så fort ett märke tilldelats åtminstone en användare så blir det automatiskt **LÅST**. Låsta märken kan fortfarande tas av användare men deras kriterier kan inte längre uppdateras. Om du behöver ändra detaljer eller kriterier för ett låst märke så kan du duplicera märket och göra ändringarna på kopian.
+Så snart ett märke tilldelats åtminstone en användare blir det automatiskt **LÅST**. Låsta märken kan fortfarande tas av användare men deras kriterier kan inte längre ändras. Om du behöver ändra detaljer eller kriterier för ett låst märke kan du duplicera märket och göra ändringarna på kopian.
 
-*Varför låser vi märken?*
+*Varför låses märken?*
 
-Vi vill säkerställa att alla användare uppfyllt samma krav när de tagit ett märke. För nuvarande är det inte möjligt att återkalla märken. Om vi tillät kraven för märken att ändras när som helst så skulle vi sannolikt till slut hamna i en situation där olika användare innehar samma märke men har mött helt skilda krav.';
+Ett märke låses för att säkerställa att alla användare uppfyller samma krav när de tar ett märke. För närvarande är det inte möjligt att återkalla märken. Om det vore tillåtet att kraven för märken ändrades när som helst skulle det sannolikt till slut uppstå en situation där olika användare innehar samma märke, men att de uppfyllt helt olika krav för att erhålla det.';
 $string['statusmessage_0'] = 'För närvarande är det här märket inte tillgängligt för användarna. Aktivera tillgång om du vill att det här märket ska kunna tas.';
 $string['statusmessage_1'] = 'För närvarande är det här märket tillgängligt för användare. Inaktivera tillgång för att göra ändringar.';
 $string['statusmessage_2'] = 'För närvarande är det här märket inte tillgängligt för användare och dess kriterier är låsta. Aktivera tillgång om du vill att användare ska kunna ta det här märket.';
@@ -549,16 +555,16 @@ $string['testbackpack'] = 'Testa ryggsäcken \'{$a}\'';
 $string['testsettings'] = 'Testa inställningar';
 $string['type'] = 'Typ';
 $string['variablesubstitution'] = 'Variabelersättning i meddelanden.';
-$string['variablesubstitution_help'] = 'I ett meddelande för ett märke kan vissa variabler läggas in i ämnesraden och/eller brödtexten så att de kommer ersättas med riktiga värden när meddelandet sänds. Variablerna ska infogas i texten exakt som de visas nedan. De följande variablerna kan användas:
+$string['variablesubstitution_help'] = 'I ett märkesmeddelande kan vissa variabler läggas in i ämnesraden och/eller brödtexten så att de kan ersättas med riktiga värden när meddelandet sänds. Variablerna ska infogas i texten exakt som de visas nedan. Följande variabler kan användas:
 
 %badgename%
-:   Det här kommer ersättas med märkets fullständiga namn.
+:   Det här kommer ersättas av märkets fullständiga namn.
 
 %username%
-:   Det här kommer ersättas med mottagarens fullständiga namn.
+:   Det här kommer ersättas av mottagarens fullständiga namn.
 
 %badgelink%
-:   Det här kommer ersättas med den publika URL som leder till informationen runt det utfärdade märket.';
+:   Det här kommer ersättas av den publika URL som leder till information om det utfärdade märket.';
 $string['version'] = 'Version';
 $string['version_help'] = 'Versionsfältet kan användas för att hålla reda på märkets utveckling. Om det anges visas versionen på sidan för märket.';
 $string['viewbadge'] = 'Visa utfärdat märke';

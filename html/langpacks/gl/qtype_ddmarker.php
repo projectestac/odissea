@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'gl', version '3.8'.
+ * Strings for component 'qtype_ddmarker', language 'gl', version '3.11'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -37,7 +37,7 @@ $string['draggableitem'] = 'Elemento arrastrábel';
 $string['draggableitemheader'] = 'Elemento arrastrábel {$a}';
 $string['draggableitemtype'] = 'Tipo';
 $string['draggableword'] = 'Texto arrastrábel';
-$string['dropbackground'] = 'Imaxe de fondo cara onde arrastrar os marcadores';
+$string['dropbackground'] = 'Imaxe de fondo cara a onde arrastrar os marcadores';
 $string['dropzone'] = 'Zona de solta {$a}';
 $string['dropzoneheader'] = 'Zonas de solta';
 $string['dropzones'] = 'Zonas de solta';
@@ -81,7 +81,9 @@ $string['pluginname_help'] = 'Os marcadores de arrastrar e soltar requiren que o
 $string['pluginname_link'] = 'question/type/ddmarker';
 $string['pluginnameadding'] = 'Engadindo arrastrar e soltar marcadores';
 $string['pluginnameediting'] = 'Editando arrastrar e soltar marcadores';
-$string['pluginnamesummary'] = 'Os marcadores arrástranse e sóltanse nunha imaxe de fondo.';
+$string['pluginnamesummary'] = 'Arrástranse os marcadores e déixanse caer nunha imaxe de fondo.
+
+Nota: Este tipo de pregunta non é accesíbel para usuarios con deficiencias visuais.';
 $string['previewareaheader'] = 'Vista previa';
 $string['previewareamessage'] = 'Seleccione un ficheiro de imaxe de fondo, introduza etiquetas de texto para marcadores e defina as zonas de solta na imaxe de fondo sobre a que se deben soltar.';
 $string['privacy:metadata'] = 'O engadido de preguntas de arrastrar e soltar marcadores non almacena ningún dato persoal.';

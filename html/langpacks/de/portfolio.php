@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'de', version '3.8'.
+ * Strings for component 'portfolio', language 'de', version '3.11'.
  *
  * @package     portfolio
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activeexport'] = 'Aktiven Export abbrechen';
-$string['activeportfolios'] = 'Aktive Portfolios';
+$string['activeportfolios'] = 'Verfügbare Portfolios';
 $string['addalltoportfolio'] = 'Alles ins Portfolio exportieren';
 $string['addnewportfolio'] = 'Neues Portfolio hinzufügen';
 $string['addtoportfolio'] = 'Ins Portfolio exportieren';
@@ -62,7 +62,7 @@ $string['exportcomplete'] = 'Portfolio-Export beendet!';
 $string['exportedpreviously'] = 'Vorherige Exporte';
 $string['exportexceptionnoexporter'] = 'Eine portfolio_export_exception wurde in einer aktiven Session ohne Exportobjekt erstellt.';
 $string['exportexpired'] = 'Zeitbegrenzung beim Portfolio-Export überschritten';
-$string['exportexpireddesc'] = 'Sie haben versucht, den Export von Daten zu wiederholen oder einen leeren Export zu starten. Versuchen Sie bitte, die Originaldaten noch einmal zu exportieren. Dieser Fehler kann auftreten, wenn Sie nach einem beendeten Export auf den Zurück-Button klicken oder eine falsche URL gespeichert wurde.';
+$string['exportexpireddesc'] = 'Sie haben versucht, den Export von Daten zu wiederholen oder einen leeren Export zu starten. Versuchen Sie bitte, zu den Originaldaten zurückzugehen, und beginnen Sie noch einmal. Dieser Fehler kann auftreten, wenn Sie nach einem beendeten Export auf den Zurück-Button klicken oder eine falsche URL gespeichert wurde.';
 $string['exporting'] = 'In ein Portfolio exportieren';
 $string['exportingcontentfrom'] = 'Inhalte aus {$a} exportieren';
 $string['exportingcontentto'] = 'Inhalt exportieren nach {$a}';
@@ -142,7 +142,7 @@ $string['invaliduserproperty'] = 'Dieses Konfigurationsmerkmal für Nutzer konnt
 $string['leap2a_emptyselection'] = 'Erforderliche Option nichtausgewählt';
 $string['leap2a_entryalreadyexists'] = 'Sie versuchten einen Leap2A Eintrag mit der id ({$a}) hinzuzufügen, die bereite im Feed existiert.';
 $string['leap2a_feedtitle'] = 'Leap2A-Export von Moodle für {$a}';
-$string['leap2a_filecontent'] = 'Versuch den Inhalt eines leap2a Eintrags auf Datei zu setzen, statt der Subclass file.';
+$string['leap2a_filecontent'] = 'Versuch den Inhalt eines leap2a Eintrags auf Datei zu setzen, statt der Subclass Datei.';
 $string['leap2a_invalidentryfield'] = 'Sie versuchten ein Eintragsfeld festzulegen, das nicht existiert ({$a}) oder nicht direkt gesetzt werden kann.';
 $string['leap2a_invalidentryid'] = 'Sie versuchten auf einen Eintrag mit einer nicht existierenden id zuzugreifen {$a}';
 $string['leap2a_missingfield'] = 'Erforderlicher Leap2A Feldeintrag {$a} fehlt';
@@ -185,13 +185,13 @@ $string['pluginismisconfigured'] = 'Fehler in der Konfiguration des Portfolio-Pl
 $string['portfolio'] = 'Portfolio';
 $string['portfolios'] = 'Portfolios';
 $string['privacy:metadata'] = 'Das Portfolio-Subsystem arbeitet als Kanal, der Anfragen in verschiedene Portfolio-Plugins weiterleitet.';
-$string['privacy:metadata:instance'] = 'Identifier des Portfolios';
+$string['privacy:metadata:instance'] = 'ID des Portfolios';
 $string['privacy:metadata:instancesummary'] = 'Speichert Instanzen und Voreinstellungen für Portfolios';
 $string['privacy:metadata:name'] = 'Name der Voreinstellung';
 $string['privacy:metadata:portfolio_log'] = 'Log von Portfoliotransfers (wird zur späteren Prüfung von Duplikaten genutzt)';
 $string['privacy:metadata:portfolio_log:caller_class'] = 'Name der Klasse, die zum Transfer genutzt wird';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'Komponentenname, der für Export verantwortlich ist';
-$string['privacy:metadata:portfolio_log:time'] = 'Zeitpunkt des Transfers (im Falle einer Warteschlange ist dies der Zeitpunkt zu dem der Transfer läuft, nicht wenn der Nutzer ihn startet)';
+$string['privacy:metadata:portfolio_log:time'] = 'Zeitpunkt des Transfers (bei einer Warteschlange ist dies der Zeitpunkt, zu dem der Transfer tatsächlich ausgeführt wurde, und nicht der Zeitpunkt, zu dem der Nutzer ihn startet)';
 $string['privacy:metadata:portfolio_log:userid'] = 'ID des Nutzers, der Content exportierte';
 $string['privacy:metadata:portfolio_tempdata'] = 'Speichert temporäre Daten für Portfolioexporte';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Datenexport';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'ru', version '3.8'.
+ * Strings for component 'tool_monitor', language 'ru', version '3.11'.
  *
  * @package     tool_monitor
  * @category    string
@@ -79,11 +79,28 @@ $string['monitordisabled'] = 'Мониторинг событий в насто�
 $string['monitorenabled'] = 'Мониторинг событий в настоящее время включен.';
 $string['norules'] = 'Нет правил для мониторинга событий.';
 $string['pluginname'] = 'Отслеживание событий';
+$string['privacy:createdrules'] = 'Созданные мной правила монитора событий';
+$string['privacy:metadata:description'] = 'Описание правила';
+$string['privacy:metadata:eventname'] = 'Полное название события';
+$string['privacy:metadata:frequency'] = 'Частота уведомлений';
 $string['privacy:metadata:historysummary'] = 'Хранит историю отправленных уведомлений';
+$string['privacy:metadata:inactivedate'] = 'Период времени в днях, по истечении которого неактивная подписка будет полностью удалена';
+$string['privacy:metadata:lastnotificationsent'] = 'Когда в последний раз было отправлено уведомление об этой подписке.';
+$string['privacy:metadata:messagesummary'] = 'Уведомления отправляются в систему сообщений.';
+$string['privacy:metadata:name'] = 'Название правила';
+$string['privacy:metadata:plugin'] = 'Плагин Frankenstlye';
 $string['privacy:metadata:rulessummary'] = 'Хранит правила отслеживания';
 $string['privacy:metadata:subscriptionssummary'] = 'Хранит подписки пользователей на различные правила';
+$string['privacy:metadata:template'] = 'Шаблон сообщения';
+$string['privacy:metadata:timecreatedrule'] = 'Когда это правило было создано';
+$string['privacy:metadata:timecreatedsub'] = 'Когда была создана эта подписка';
+$string['privacy:metadata:timemodifiedrule'] = 'Когда это правило было в последний раз изменено';
+$string['privacy:metadata:timesent'] = 'Когда было отправлено сообщение';
+$string['privacy:metadata:timewindow'] = 'Временное окно в секундах';
+$string['privacy:metadata:userid'] = 'ID пользователя, создавшего правило.';
 $string['privacy:metadata:useridhistory'] = 'ID пользователя, которому было отправлено это уведомление';
 $string['privacy:metadata:useridsub'] = 'ID подписчика';
+$string['privacy:subscriptions'] = 'Мои подписки на отслеживание событий.';
 $string['processevents'] = 'Обработать события';
 $string['ruleareyousure'] = 'Вы уверены, что хотите удалить правило «{$a}»?';
 $string['ruleareyousureextra'] = 'Есть подписки на это правило ({$a}), которые также будут удалены.';
@@ -103,5 +120,6 @@ $string['subdeletesuccess'] = 'Подписка удалена';
 $string['subhelp'] = 'Информация о подписке';
 $string['subhelp_help'] = 'Это подписка на уведомления о случаях, когда в модуле «{$a->moduleinstance}» событие «{$a->eventname}» происходит {$a->frequency} раз(а) за {$a->minutes} мин.';
 $string['subscribeto'] = 'Подписаться на правило «{$a}»';
+$string['taskchecksubscriptions'] = 'Активировать/деактивировать подписки на неработающие правила';
 $string['taskcleanevents'] = 'Очистить данные отслеживания событий';
 $string['unsubscribe'] = 'Отказаться от подписки';

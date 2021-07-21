@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'el', version '3.8'.
+ * Strings for component 'blog', language 'el', version '3.11'.
  *
  * @package     blog
  * @category    string
@@ -43,15 +43,15 @@ $string['blogaboutthis'] = 'Ιστολόγιο για τον τύπο {$a->type}
 $string['blogaboutthiscourse'] = 'Προσθέστε μια καταχώρηση για αυτό το μάθημα';
 $string['blogaboutthismodule'] = 'Προσθέστε μια καταχώρηση για αυτό (το άρθρωμα) {$a}';
 $string['blogadministration'] = 'Διαχείριση ιστολογίου';
-$string['blogdeleteconfirm'] = 'Διαγραφή αυτής της ανάρτησης;';
+$string['blogdeleteconfirm'] = 'Διαγραφή της ανάρτησης ιστολογίου «{$a}»;';
 $string['blogdisable'] = 'Η χρήση ιστολογίων έχει απενεργοποιηθεί!';
-$string['blogentries'] = 'Αναρτήσεις (ιστολογίου)';
-$string['blogentriesabout'] = 'Αναρτήσεις (ιστολογίου) για {$a}';
-$string['blogentriesbygroupaboutcourse'] = 'Αναρτήσεις (ιστολογίου) για το μάθημα {$a->course} από την ομάδα {$a->group}';
-$string['blogentriesbygroupaboutmodule'] = 'Αναρτήσεις (ιστολογίου) για το άρθρωμα {$a->mod} από την ομάδα {$a->group}';
-$string['blogentriesbyuseraboutcourse'] = 'Αναρτήσεις (ιστολογίου) για το μάθημα {$a->course} από τον χρήστη {$a->user}';
-$string['blogentriesbyuseraboutmodule'] = 'Αναρτήσεις (ιστολογίου) για το άρθρωμα {$a->mod} από τον χρήστη {$a->user}';
-$string['blogentrybyuser'] = 'Αναρτήσεις (ιστολογίου) από {$a}';
+$string['blogentries'] = 'Αναρτήσεις ιστολογίου';
+$string['blogentriesabout'] = 'Αναρτήσεις ιστολογίου για {$a}';
+$string['blogentriesbygroupaboutcourse'] = 'Αναρτήσεις ιστολογίου για το μάθημα {$a->course} από την ομάδα {$a->group}';
+$string['blogentriesbygroupaboutmodule'] = 'Αναρτήσεις ιστολογίου για το άρθρωμα {$a->mod} από την ομάδα {$a->group}';
+$string['blogentriesbyuseraboutcourse'] = 'Αναρτήσεις ιστολογίου για το μάθημα {$a->course} από τον χρήστη {$a->user}';
+$string['blogentriesbyuseraboutmodule'] = 'Αναρτήσεις ιστολογίου για το άρθρωμα {$a->mod} από τον χρήστη {$a->user}';
+$string['blogentrybyuser'] = 'Αναρτήσεις ιστολογίου από {$a}';
 $string['blogpreferences'] = 'Προτιμήσεις ιστολογίων';
 $string['blogs'] = 'Ιστολόγια';
 $string['blogscourse'] = 'Ιστολόγια μαθήματος';
@@ -63,7 +63,7 @@ $string['cannotviewsiteblog'] = 'Δεν έχετε τα απαιτούμενα �
 $string['cannotviewuserblog'] = 'Δεν έχετε τα απαιτούμενα δικαιώματα για να δείτε ιστολόγια χρηστών';
 $string['configexternalblogcrontime'] = 'Πόσο συχνά ελέγχει το Moodle τα εξωτερικά ιστολόγια για νέες αναρτήσεις.';
 $string['configmaxexternalblogsperuser'] = 'Πόσα εξωτερικά ιστολόγια επιτρέπεται κάθε χρήστης να συνδέσει με το ιστολόγιό του στο Moodle.';
-$string['configuseblogassociations'] = 'Επιτρέπει την συσχέτιση αναρτήσεων (ιστολογίου) με μαθήματα και ενότητες μαθημάτων.';
+$string['configuseblogassociations'] = 'Επιτρέπει την συσχέτιση αναρτήσεων ιστολογίου με μαθήματα και ενότητες μαθημάτων.';
 $string['configuseexternalblogs'] = 'Επιτρέπει σε κάθε χρήστη να καθορίσει feeds εξωτερικών ιστολογίων. Το Moodle τακτικά ελέγχει αυτά τα feeds ιστολογίων και αντιγράφει νέες αναρτήσεις στο τοπικό ιστολόγιο αυτού του χρήστη.';
 $string['courseblog'] = 'Ιστολόγιο μαθήματος: {$a}';
 $string['courseblogdisable'] = 'Τα ιστολόγια μαθήματος δεν είναι ενεργοποιημένα';
@@ -114,9 +114,9 @@ $string['incorrectblogfilter'] = 'Εσφαλμένη επιλογή είδους
 $string['intro'] = 'Αυτή η τροφοδοσία RSS δημιουργήθηκε αυτόματα από ένα ή περισσότερα ιστολόγια.';
 $string['invalidgroupid'] = 'Μη έγκυρο αναγνωριστικό ομάδας';
 $string['invalidurl'] = 'Αυτή η διεύθυνση URL δεν είναι προσβάσιμη';
-$string['linktooriginalentry'] = 'Σύνδεσμος με την αρχική ανάρτηση (ιστολογίου)';
+$string['linktooriginalentry'] = 'Σύνδεσμος με την αρχική ανάρτηση ιστολογίου';
 $string['maxexternalblogsperuser'] = 'Μέγιστος αριθμός εξωτερικών ιστολογίων ανά χρήστη';
-$string['myprofileuserblogs'] = 'Εμφάνιση όλων των αναρτήσεων (ιστολογίου)';
+$string['myprofileuserblogs'] = 'Εμφάνιση όλων των αναρτήσεων ιστολογίου';
 $string['name'] = 'Όνομα';
 $string['name_help'] = 'Εισάγετε ένα περιγραφικό όνομα για το εξωτερικό σας ιστολόγιο. (Αν δεν εισάγετε όνομα, θα χρησιμοποιηθεί ο τίτλος του εξωτερικού σας ιστολογίου).';
 $string['noentriesyet'] = 'Δεν υπάρχουν ορατές καταχωρήσεις ακόμα';
@@ -141,14 +141,14 @@ $string['privacy:metadata:external'] = 'Ένας σύνδεσμος προς μ�
 $string['privacy:metadata:external:description'] = 'Περιγραφή της τροφοδοσίας';
 $string['privacy:metadata:external:filtertags'] = 'Η λίστα των ετικετών για να φιλτράρετε με αυτές, τις καταχωρήσεις';
 $string['privacy:metadata:external:name'] = 'Το όνομα της τροφοδοσίας';
-$string['privacy:metadata:external:timefetched'] = 'Ημερομηνία κατά την οποία λήφθηκε τελευταία η τροφή';
+$string['privacy:metadata:external:timefetched'] = 'Ημερομηνία κατά την οποία κλήθηκε/λήφθηκε τελευταία η τροφοδοσία';
 $string['privacy:metadata:external:timemodified'] = 'Η ώρα κατά την οποία η συσχέτιση τροποποιήθηκε τελευταία φορά';
 $string['privacy:metadata:external:url'] = 'Η διεύθυνση URL της τροφοδοσίας';
 $string['privacy:metadata:external:userid'] = 'Το αναγνωριστικό του χρήστη που πρόσθεσε την εξωτερική καταχώρηση ιστολογίου.';
 $string['privacy:metadata:post'] = 'Οι πληροφορίες που σχετίζονται με αναρτήσεις ιστολογίου';
 $string['privacy:metadata:post:content'] = 'Το περιεχόμενο μιας εξωτερικής καταχώρησης ιστολογίου.';
 $string['privacy:metadata:post:created'] = 'Ημερομηνία κατά την οποία δημιουργήθηκε η καταχώρηση.';
-$string['privacy:metadata:post:lastmodified'] = 'Ημερομηνία κατά την οποία η καταχώριση τροποποιήθηκε τελευταία.';
+$string['privacy:metadata:post:lastmodified'] = 'Ημερομηνία κατά την οποία η καταχώρηση τροποποιήθηκε τελευταία.';
 $string['privacy:metadata:post:publishstate'] = 'Εάν η καταχώρηση θα είναι ορατή σε άλλους ή όχι';
 $string['privacy:metadata:post:subject'] = 'Τίτλος καταχώρησης στο ιστολόγιο';
 $string['privacy:metadata:post:summary'] = 'Καταχώρηση στο ιστολόγιο.';

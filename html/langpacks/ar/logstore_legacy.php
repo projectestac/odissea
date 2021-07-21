@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_legacy', language 'ar', version '3.8'.
+ * Strings for component 'logstore_legacy', language 'ar', version '3.11'.
  *
  * @package     logstore_legacy
  * @category    string
@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventlegacylogged'] = 'تم تسجيل الحدث القديم';
-$string['loglegacy'] = 'تسجيل البيانات القديمة';
-$string['loglegacy_help'] = 'يسجل هذا البرنامج المساعد بيانات السجل إلى جدول السجل القديم (mdl_log). تم استبدال هذه الوظيفة بمكونات إضافية لتسجيل الدخول أكثر ثراءً و فعالية ، لذا يجب عليك تشغيل هذا المكون الإضافي فقط إذا كان لديك تقارير مخصصة قديمة تستعلم مباشرة عن جدول السجل القديم. ستؤدي الكتابة إلى السجلات القديمة إلى زيادة الحمل ، لذلك يوصى بتعطيل هذا المكون الإضافي لأسباب تتعلق بالأداء عندما لا تكون هناك حاجة إليه.';
+$string['eventlegacylogged'] = 'حدث قديم تم توثيقه';
+$string['loglegacy'] = 'توثيق البيانات القديمة';
+$string['loglegacy_help'] = 'يسجل هذا الملحق بيانات سجل الوقوعات في جدول الوقوعات القديم (mdl_log). تم استبدال هذه الوظيفة بما هو أحدث، أغنى، وأكثر فعالية، من الملاحق، لذا ينبغي عليك تشغيل هذا الملحق فقط إذا كان لديك تقارير مخصصة قديمة تستعلم مباشرة من جدول سجل الوقوعات القديم. ستؤدي الكتابة إلى سجلات الوقوعات القديمة إلى زيادة الحمل، لذلك يوصى بتعطيل هذا الملحق لأسباب تتعلق بالأداء عندما لا تكون هناك حاجة إليه.';
 $string['pluginname'] = 'السجل القديم';
-$string['pluginname_desc'] = 'المكون الإضافي log يقوم بتخزين إدخالات السجل في جدول السجل القديم.';
+$string['pluginname_desc'] = 'ملحق سجل الوقوعات الذي يخزن إدخالات السجل في جدول السجل القديم.';
 $string['privacy:metadata:log'] = 'مجموعة من الأحداث الماضية';
-$string['privacy:metadata:log:action'] = 'وصف للإجراء';
+$string['privacy:metadata:log:action'] = 'وصف الإجراء';
 $string['privacy:metadata:log:info'] = 'معلومة إضافية';
 $string['privacy:metadata:log:ip'] = 'عنوان IP المستخدم في وقت الحدث';
 $string['privacy:metadata:log:time'] = 'الوقت الذي حدث فيه الإجراء';

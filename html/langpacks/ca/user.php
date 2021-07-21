@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ca', version '3.8'.
+ * Strings for component 'user', language 'ca', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Afegeix una condició';
+$string['adverbfor_and'] = 'i';
+$string['adverbfor_andnot'] = 'i';
+$string['adverbfor_or'] = 'o';
+$string['applyfilters'] = 'Aplica filtres';
+$string['clearfilterrow'] = 'Suprimeix la fila de filtres';
+$string['clearfilters'] = 'Neteja els filtres';
+$string['clearfilterselection'] = 'Suprimeix «{$a}» del filtre';
+$string['countparticipantsfound'] = 'Nombre de participants que s\'han trobat: {$a}';
+$string['filterbykeyword'] = 'Paraula clau';
+$string['filterrowlegend'] = 'Filtre {$a}';
+$string['filtersetmatchdescription'] = 'La manera com s\'haurien de combinar els múltiples filtres';
+$string['match'] = 'Coincideix';
+$string['matchofthefollowing'] = 'de les següents:';
+$string['moodlenetprofile'] = 'Perfil de MoodleNet';
 $string['privacy:descriptionpath'] = 'Descripció del perfil';
 $string['privacy:draftfilespath'] = 'Esborrany de fitxers';
 $string['privacy:lastaccesspath'] = 'Darrer accés als cursos';
@@ -46,3 +61,4 @@ $string['privacy:metadata:lastaccesstablesummary'] = 'Informació sobre l\'últi
 $string['privacy:metadata:lastip'] = 'Darrera adreça IP de l\'usuari.';
 $string['privacy:metadata:lastname'] = 'Cognom de l\'usuari.';
 $string['privacy:metadata:lastnamephonetic'] = 'Detalls fonètics sobre el cognom de l\'usuari.';
+$string['selectfiltertype'] = 'Selecciona';

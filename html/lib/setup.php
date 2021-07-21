@@ -40,6 +40,7 @@
  *  - $CFG->tempdir  - Path to moodle's temp file directory on server's filesystem.
  *  - $CFG->cachedir - Path to moodle's cache directory on server's filesystem (shared by cluster nodes).
  *  - $CFG->localcachedir - Path to moodle's local cache directory (not shared by cluster nodes).
+ *  - $CFG->localrequestdir - Path to moodle's local temp request directory (not shared by cluster nodes).
  *
  * @global object $CFG
  * @name $CFG
@@ -146,7 +147,7 @@ if (defined('BEHAT_SITE_RUNNING')) {
 // Normalise dataroot - we do not want any symbolic links, trailing / or any other weirdness there
 if (!isset($CFG->dataroot)) {
     if (isset($_SERVER['REMOTE_ADDR'])) {
-        header($_SERVER['SERVER_PROTOCOL'] . ' 503 Service Unavailable');
+        header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error ');
     }
     echo('Fatal error: $CFG->dataroot is not specified in config.php! Exiting.'."\n");
     exit(1);
@@ -154,13 +155,13 @@ if (!isset($CFG->dataroot)) {
 $CFG->dataroot = realpath($CFG->dataroot);
 if ($CFG->dataroot === false) {
     if (isset($_SERVER['REMOTE_ADDR'])) {
-        header($_SERVER['SERVER_PROTOCOL'] . ' 503 Service Unavailable');
+        header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error ');
     }
     echo('Fatal error: $CFG->dataroot is not configured properly, directory does not exist or is not accessible! Exiting.'."\n");
     exit(1);
 } else if (!is_writable($CFG->dataroot)) {
     if (isset($_SERVER['REMOTE_ADDR'])) {
-        header($_SERVER['SERVER_PROTOCOL'] . ' 503 Service Unavailable');
+        header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error ');
     }
     echo('Fatal error: $CFG->dataroot is not writable, admin has to fix directory permissions! Exiting.'."\n");
     exit(1);
@@ -169,7 +170,7 @@ if ($CFG->dataroot === false) {
 // wwwroot is mandatory
 if (!isset($CFG->wwwroot) or $CFG->wwwroot === 'http://example.com/moodle') {
     if (isset($_SERVER['REMOTE_ADDR'])) {
-        header($_SERVER['SERVER_PROTOCOL'] . ' 503 Service Unavailable');
+        header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error ');
     }
     echo('Fatal error: $CFG->wwwroot is not configured! Exiting.'."\n");
     exit(1);
@@ -206,6 +207,11 @@ if (!isset($CFG->cachedir)) {
 // Allow overriding of localcachedir.
 if (!isset($CFG->localcachedir)) {
     $CFG->localcachedir = "$CFG->dataroot/localcache";
+}
+
+// Allow overriding of localrequestdir.
+if (!isset($CFG->localrequestdir)) {
+    $CFG->localrequestdir = sys_get_temp_dir() . '/requestdir';
 }
 
 // Location of all languages except core English pack.
@@ -566,6 +572,11 @@ if (defined('BEHAT_SITE_RUNNING') && !defined('BEHAT_TEST') && !defined('BEHAT_U
     set_error_handler('behat_error_handler', E_ALL | E_STRICT);
 }
 
+if (defined('WS_SERVER') && WS_SERVER) {
+    require_once($CFG->dirroot . '/webservice/lib.php');
+    set_exception_handler('early_ws_exception_handler');
+}
+
 // If there are any errors in the standard libraries we want to know!
 error_reporting(E_ALL | E_STRICT);
 
@@ -615,6 +626,7 @@ require_once($CFG->dirroot.'/cache/lib.php');       // Cache API
 // make sure PHP is not severly misconfigured
 setup_validate_php_configuration();
 
+// Connect to the database
 setup_DB();
 
 if (PHPUNIT_TEST and !PHPUNIT_UTIL) {
@@ -787,7 +799,11 @@ if (CLI_SCRIPT) {
 
 // Start session and prepare global $SESSION, $USER.
 if (empty($CFG->sessiontimeout)) {
-    $CFG->sessiontimeout = 7200;
+    $CFG->sessiontimeout = 8 * 60 * 60;
+}
+// Set sessiontimeoutwarning 20 minutes.
+if (empty($CFG->sessiontimeoutwarning)) {
+    $CFG->sessiontimeoutwarning = 20 * 60;
 }
 \core\session\manager::start();
 

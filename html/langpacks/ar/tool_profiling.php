@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'ar', version '3.8'.
+ * Strings for component 'tool_profiling', language 'ar', version '3.11'.
  *
  * @package     tool_profiling
  * @category    string
@@ -41,9 +41,9 @@ $string['importprefix'] = 'استيراد البادئة';
 $string['importproblem'] = 'حدثت بعض المشاكل عند استيراد الملف "{$a}".';
 $string['lastrunof'] = 'موجز عن التشغيل الأخير لـ {$a}';
 $string['markreferencerun'] = 'ميَزه كمرجع تشغيل / تعليق';
-$string['memory'] = 'الذاكرة المستخدمة';
+$string['memory'] = 'الذاكرة المستعملة';
 $string['pluginname'] = 'ملامح التشغيلات';
-$string['privacy:metadata'] = 'البرنامج المساعد Profiling runs  لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق Profiling runs لا يخزن أيّ بيانات شخصية.';
 $string['profilingfocusscript'] = 'التركيز على ملامح التشغيلات للبرنامج النصي: {$a}';
 $string['profilingruns'] = 'ملامح التشغيلات';
 $string['profilingrunsfor'] = 'ملامح التشغيلات لـ {$a}';

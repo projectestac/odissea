@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_none', language 'ja', version '3.8'.
+ * Strings for component 'auth_none', language 'ja', version '3.11'.
  *
  * @package     auth_none
  * @category    string
@@ -26,5 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'ユーザはログインしてすぐに有効なアカウントを作成することができます。外部サーバに対する認証およびメールによる確認も不要です。このオプションを使用する場合は注意してください - これにより生じる可能性のあるセキュリティおよび管理問題を考慮してください。';
+$string['checknoauth'] = '認証なし';
+$string['checknoauthdetails'] = '<p>「認証なし」プラグインは実運用サイト向けではありません。このサイトが開発テストサイトではない限りこのプラグインを無効にしてください。</p>';
+$string['checknoautherror'] = '「認証なし」プラグインは実運用サイトでは使用できません。';
+$string['checknoauthok'] = '無効にされた認証プラグインはありません。';
 $string['pluginname'] = '認証なし';
 $string['privacy:metadata'] = '認証なしプラグインはいかなる個人データも保存しません。';

@@ -76,12 +76,14 @@ if ($id == -1) {
     // Editing existing user.
     require_capability('moodle/user:update', $systemcontext);
     $user = $DB->get_record('user', array('id' => $id), '*', MUST_EXIST);
-    //XTEC ************ AFEGIT - To avoid admin edit xtecadmin profile
-    //2012.05.23  @sarjona
-    if ($user->id !== $USER->id && $user->username=='xtecadmin') {
+
+    // XTEC ************ AFEGIT - Avoid admin edit xtecadmin profile
+    // 2012.05.23 @sarjona
+    if ($user->id !== $USER->id && $user->username == 'xtecadmin') {
         redirect($CFG->wwwroot . "/user/view.php?id=$id&course={$course->id}");
     }
-    //************ FI
+    // ************ FI
+
     $PAGE->set_context(context_user::instance($user->id));
     $PAGE->navbar->includesettingsbase = true;
     if ($user->id != $USER->id) {
@@ -210,7 +212,7 @@ if ($userform->is_cancelled()) {
         if (!$authplugin->is_internal() and $authplugin->can_change_password() and !empty($usernew->newpassword)) {
             if (!$authplugin->user_update_password($usernew, $usernew->newpassword)) {
                 // Do not stop here, we need to finish user creation.
-                debugging(get_string('cannotupdatepasswordonextauth', '', '', $usernew->auth), DEBUG_NONE);
+                debugging(get_string('cannotupdatepasswordonextauth', 'error', $usernew->auth), DEBUG_NONE);
             }
         }
         $usercreated = true;
@@ -312,11 +314,11 @@ if ($userform->is_cancelled()) {
             // Somebody double clicked when editing admin user during install.
             redirect("$CFG->wwwroot/$CFG->admin/");
         } else {
-            redirect($returnurl);
+            redirect($returnurl, get_string('changessaved'), null, \core\output\notification::NOTIFY_SUCCESS);
         }
     } else {
         \core\session\manager::gc(); // Remove stale sessions.
-        redirect("$CFG->wwwroot/$CFG->admin/user.php");
+        redirect("$CFG->wwwroot/$CFG->admin/user.php", get_string('changessaved'), null, \core\output\notification::NOTIFY_SUCCESS);
     }
     // Never reached..
 }

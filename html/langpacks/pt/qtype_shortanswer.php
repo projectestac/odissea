@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'pt', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'pt', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -43,4 +43,7 @@ $string['pluginname_link'] = 'pergunta/tipo/respostacurta';
 $string['pluginnameadding'] = 'A adicionar pergunta de resposta curta';
 $string['pluginnameediting'] = 'A editar pergunta de resposta curta';
 $string['pluginnamesummary'] = 'Permite uma resposta de uma ou poucas palavras que são avaliadas com base em várias opções possíveis de resposta definidas pelo professor, as quais podem conter caracteres universais.';
-$string['privacy:metadata'] = 'O módulo Pergunta do tipo Resposta curta não armazena quaisquer dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Resposta curta permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
+$string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
+$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das é o \'Interativo com múltiplas tentativas\' ou \'Modo adaptável \'.';
+$string['privacy:preference:usecase'] = 'Se as respostas devem ser sensíveis a maiúsculas e minúsculas.';

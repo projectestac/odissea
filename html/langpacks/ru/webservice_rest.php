@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice_rest', language 'ru', version '3.8'.
+ * Strings for component 'webservice_rest', language 'ru', version '3.11'.
  *
  * @package     webservice_rest
  * @category    string
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Протокол REST';
+$string['privacy:metadata'] = 'Плагин протокола REST не хранит никаких личных данных.';
 $string['rest:use'] = 'Использовать протокол REST';

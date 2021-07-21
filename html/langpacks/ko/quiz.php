@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ko', version '3.8'.
+ * Strings for component 'quiz', language 'ko', version '3.11'.
  *
  * @package     quiz
  * @category    string
@@ -173,7 +173,7 @@ $string['configshufflewithin'] = '이 기능을 활성화하고, 질문 설정�
 $string['configtimelimit'] = '분 단위의 기본 응시 시간. 0은 무제한';
 $string['configtimelimitsec'] = '초 단위의 기본 응시 시간. 0은 무제한';
 $string['configurerandomquestion'] = '질문 구성';
-$string['confirmclose'] = '일단 제출하면, 이 시도에 대한 답들을 더 이상 수정할 수 없습니다.';
+$string['confirmclose'] = '한 번 제출하면, 당신은 정답을 바꿀 수 없습니다.';
 $string['confirmserverdelete'] = '당신은 정말 서버 <b>{$a}</b>를 목록에서 삭제하겠습니까?';
 $string['containercategorycreated'] = '처음 만들어진 범주 안에 생성된 모든 것들은 그 범주가 사라지더라도 그 상위 범주에 모두 저장됩니다.';
 $string['continueattemptquiz'] = '지난번 시도 계속';
@@ -490,8 +490,8 @@ $string['orderandpaging_help'] = '각 질문의 반대편에 있는 10,20,30... 
 $string['orderingquiz'] = '퀴즈 정렬 및 페이지 나누기';
 $string['orderingquizx'] = '정렬 및 페이지 나누기 {$a}';
 $string['outcomesadvanced'] = '학습성과는 고급 설정입니다';
-$string['outof'] = '{$a->maxgrade} 중 {$a->grade}';
-$string['outofpercent'] = '{$a->maxgrade} 중 {$a->grade} ({$a->percent}%)';
+$string['outof'] = '최고등급 {$a->maxgrade} 중 {$a->grade}';
+$string['outofpercent'] = '최고등급 {$a->maxgrade} 중 {$a->grade} (상위 {$a->percent}%)';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
 $string['overallfeedback'] = '전반적인 피드백';
 $string['overallfeedback_help'] = '전반적인 회신의견은 학생들이 퀴즈를 다 끝마쳤을 때 학생들에게 보여지는 문장입니다. 추가적으로 성적 경계를  (백분율 혹은 수로서) 명시하면 보여지는 문장은 학생들이 얻은 점수에 의해서 달라집니다.

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'pt', version '3.8'.
+ * Strings for component 'data', language 'pt', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -53,7 +53,7 @@ Os marcadores para os campos são definidos no formato <b>[[nomedocampo]]</b>. T
 Apenas os marcadores que estão na lista <b>Marcadores disponíveis</b> podem ser usados no modelo atual.';
 $string['availabletodate'] = 'Disponível até';
 $string['availabletodatevalidation'] = '"Disponível até" não pode ser anterior a "Disponível a partir de".';
-$string['blank'] = 'Vazio';
+$string['blank'] = 'Em branco';
 $string['buttons'] = 'Botões';
 $string['bynameondate'] = 'por  {$a->name} - {$a->date}';
 $string['calendarend'] = 'Fecha \'{$a}\'';
@@ -63,10 +63,10 @@ $string['cannotaccesspresentsother'] = 'Não tem permissão para aceder a protó
 $string['cannotadd'] = 'Não foi possível adicionar registos!';
 $string['cannotdeletepreset'] = 'Ocorreu um erro ao apagar o protótipo!';
 $string['cannotoverwritepreset'] = 'Ocorreu um erro ao criar o protótipo!';
-$string['cannotunziptopreset'] = 'Não foi possível descompactar o ficheiro para a diretoria definida.';
+$string['cannotunziptopreset'] = 'Não foi possível descompactar o ficheiro para a pasta definida.';
 $string['checkbox'] = 'Caixas de seleção';
-$string['chooseexportfields'] = 'Escolha os campos que pretende exportar:';
-$string['chooseexportformat'] = 'Escolha o formato de exportação:';
+$string['chooseexportfields'] = 'Escolha os campos que pretende exportar';
+$string['chooseexportformat'] = 'Escolha o formato da exportação';
 $string['chooseorupload'] = 'Selecionar ficheiro';
 $string['closebeforeopen'] = 'Indicou uma data de fim antes da data de início.';
 $string['columns'] = 'Colunas';
@@ -77,8 +77,9 @@ $string['comments'] = 'Comentários';
 $string['commentsaved'] = 'O comentário foi guardado';
 $string['commentsn'] = '{$a} comentário(s)';
 $string['commentsoff'] = 'A opção de comentários não está ativa';
+$string['completiondetail:entries'] = 'Adicionar registos: {$a}';
 $string['completionentries'] = 'Requer registos';
-$string['completionentriescount'] = 'Número de Registos';
+$string['completionentriescount'] = 'Número de registos:&nbsp;';
 $string['completionentriesdesc'] = 'Número mínimo de registos requeridos: {$a}';
 $string['configenablerssfeeds'] = 'A ativação desta configuração permite a geração de listas RSS em todas as bases de dados, ao nível do site. Para utilizar esta funcionalidade numa base de dados específica deve ainda ativar a mesma na respectiva página de configuração.';
 $string['confirmdeletefield'] = 'Tem a certeza de que pretende apagar este campo?';
@@ -89,7 +90,7 @@ $string['csvfailed'] = 'Não foi possível ler a informação existente no fiche
 $string['csvfile'] = 'Ficheiro CSV';
 $string['csvimport'] = 'Importação de ficheiro CSV';
 $string['csvimport_help'] = 'Os registos podem ser importados através de um ficheiro de texto, indicando na primeira linha os nomes dos campos e nas linhas seguintes a respetiva informação, com um registo por linha.';
-$string['csvwithselecteddelimiter'] = 'Ficheiro <acronym title="Valores separados por vírgulas">CSV</acronym> com delimitador';
+$string['csvwithselecteddelimiter'] = '<abbr title="Valores separados por vírgulas">CSV</abbr>';
 $string['data:addinstance'] = 'Adicionar nova Base de Dados';
 $string['data:approve'] = 'Aprovar e cancelar registos já aprovados';
 $string['data:comment'] = 'Escrever comentários';
@@ -159,6 +160,8 @@ $string['exportaszip'] = 'Exportar como ficheiro ZIP';
 $string['exportaszip_help'] = 'A exportação para ficheiro ZIP permite o armazenamento dos modelos e campos num ficheiro zip protótipo que pode ser descarregado. Este ficheiro pode depois ser importado para outra disciplina.';
 $string['exportedtozip'] = 'Exportado para ficheiro ZIP temporário...';
 $string['exportentries'] = 'Exportar registos';
+$string['exportformat'] = 'Formato da exportação';
+$string['exportoptions'] = 'Opções da exportação';
 $string['exportownentries'] = 'Exportar apenas os seus registos? ({$a->mine} / {$a->all})';
 $string['failedpresetdelete'] = 'Ocorreu um erro durante a eliminação do protótipo!';
 $string['fieldadded'] = 'O campo foi adicionado';
@@ -172,9 +175,10 @@ $string['fieldheightlistview'] = 'Altura no modo de lista';
 $string['fieldheightsingleview'] = 'Altura no modo registo';
 $string['fieldids'] = 'Identificadores de campo';
 $string['fieldmappings'] = 'Mapeamentos dos campos';
-$string['fieldmappings_help'] = 'Este menu permite-lhe manter os dados da base de dados existente. Para preservar os dados de um campo, este deverá ser mapeado para um novo campo. Os campos podem ser deixados em branco, caso em que não será copiada informação. Todos os campos que não sejam mapeados para novos campos serão apagados e a sua informação perdida.
+$string['fieldmappings_help'] = 'Este menu permite-lhe manter os dados da base de dados existente. Para preservar os dados de um campo, este deverá ser mapeado para um novo campo. Os campos podem ser deixados em branco, caso em que não será copiada a informação. Todos os campos que não sejam mapeados para novos campos serão apagados e a sua informação perdida.
 Apenas podem ser mapeados campos do mesmo tipo, pelo que cada lista pendente apresentará os tipos permitidos. Não é permitido o mapeamento de um campo para mais do que um novo campo.';
 $string['fieldname'] = 'Nome do campo';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'Os seguintes campos presentes no ficheiro não existem nesta base de dados: {$a}';
 $string['fieldoptions'] = 'Opções (uma por linha)';
 $string['fields'] = 'Campos';
@@ -290,7 +294,7 @@ $string['number'] = 'Número';
 $string['numberrssarticles'] = 'Entradas na lista RSS';
 $string['numnotapproved'] = 'Pendente(s)';
 $string['numrecords'] = '<b>{$a}</b> registos';
-$string['ods'] = 'Ficheiro <acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<abbr title="OpenDocument Spreadsheet">ODS</abbr>&nbsp;(OpenOffice)';
 $string['openafterclose'] = 'Indicou uma data de abertura posterior à data de fecho';
 $string['optionaldescription'] = 'Descrição resumida (opcional)';
 $string['optionalfilename'] = 'Nome do ficheiro (opcional)';
@@ -337,14 +341,14 @@ $string['requireapproval'] = 'Requer aprovação dos registos';
 $string['requireapproval_help'] = 'Se ativar esta opção, os registos necessitam de aprovação do professor antes de ficarem visíveis para todos os utilizadores.';
 $string['required'] = 'Obrigatório';
 $string['requiredentries'] = 'Registos requeridos para conclusão (antigo)';
-$string['requiredentries_help'] = 'Se ativar esta opção, uma mensagem será mostrada para informar o número de registos necessários para a conclusão. Tenha em atenção que esta configuração não está ligada à conclusão da atividade.
+$string['requiredentries_help'] = 'Se ativar esta opção, será mostrada uma mensagem para informar o número de registos necessários para a conclusão. Tenha em atenção que esta configuração não está ligada à conclusão da atividade.
 
 Para os registos necessários para a conclusão da atividade, na nova configuração de conclusão da atividade, deve ser usada \'Requer registos\'. Para remover completamente esta definição, defina como Nenhum e, em seguida, guarde as alterações.
-Use em vez de registos necessários na secção de conclusão da atividade.';
+Em vez desta configuração, use "Requer registos" na secção "Conclusão da atividade".';
 $string['requiredentriestoview'] = 'Registos requeridos antes de ser permitida a visualização';
 $string['requiredentriestoview_help'] = 'Número de registos que o aluno tem que submeter antes de poder ver os registos dos outros participantes.
 
-Nota: Se for necessário submeter registos antes de poder ver a base de dados, o filtro <b>hiperligações automáticas à base de dados</b> tem que ser desativado pois este filtro não consegue determinar se um utilizador já submeteu o número de registos requerido.';
+Nota: Se for necessário submeter registos antes de poder ver a base de dados, o filtro <b>Autoligação à base de dados</b> tem que ser desativado uma vez que o filtro não consegue determinar se um utilizador já submeteu o número de registos requerido.';
 $string['requiredentrieswarning'] = 'Esta configuração foi substituída por uma configuração de conclusão da atividade "Requer registos"';
 $string['requiredfield'] = 'Campo obrigatório';
 $string['resetsettings'] = 'Reiniciar filtros';
@@ -354,6 +358,7 @@ $string['rows'] = 'linhas';
 $string['rssglobaldisabled'] = 'Desativado. Consulte as variáveis de configuração do site.';
 $string['rsstemplate'] = 'Modelo de lista RSS';
 $string['rsstitletemplate'] = 'Listas RSS';
+$string['rsstype'] = 'Lista RSS para esta atividade';
 $string['save'] = 'Guardar';
 $string['saveandadd'] = 'Guardar e adicionar outro';
 $string['saveandview'] = 'Guardar e visualizar';
@@ -366,6 +371,8 @@ $string['search'] = 'Pesquisar';
 $string['search:activity'] = 'Base de dados - informações da atividade';
 $string['search:entry'] = 'Base de dados - registos';
 $string['selectedrequired'] = 'Todos os selecionados são obrigatórios';
+$string['selectexportoptions'] = 'Selecione as opções da exportação';
+$string['selectfields'] = 'Selecionar campos';
 $string['showall'] = 'Mostrar todos os registos';
 $string['single'] = 'Ver registo';
 $string['singletemplate'] = 'Registo';
@@ -387,6 +394,8 @@ $string['todatabase'] = 'para esta base de dados.';
 $string['type'] = 'Tipo de campo';
 $string['undefinedprocessactionmethod'] = 'Não foi definido o método de ação em Data_Preset para executar a ação "{$a}".';
 $string['unsupportedexport'] = 'O tipo de campo <b>{$a->fieldtype}</b> não pode ser exportado.';
+$string['unsupportedfields'] = 'Campos não suportados';
+$string['unsupportedfieldslist'] = 'Os seguintes campos não podem ser exportados:';
 $string['updatefield'] = 'Atualizar um campo existente';
 $string['uploadfile'] = 'Enviar ficheiro';
 $string['uploadrecords'] = 'Importar registos a partir de ficheiro';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'fr', version '3.8'.
+ * Strings for component 'qtype_ddimageortext', language 'fr', version '3.11'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -67,7 +67,10 @@ $string['pluginnamesummary'] = 'Les images ou les étiquettes sont glissés et d
 À noter : ce type de question n\'est pas accessible pour les personnes malvoyantes.';
 $string['previewareaheader'] = 'Aperçu';
 $string['previewareamessage'] = 'Sélectionnez un fichier image de fond, définissez des éléments à glisser-déposer ainsi que des zones de dépôt sur l\'image de fond où ces éléments doivent être placés.';
-$string['privacy:metadata'] = 'Le plugin de type de question Glisser-déposer sur une image n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de type de question Glisser-déposer sur une image permet aux auteurs de questions d\'enregistrer des préférences par défaut.';
+$string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pour une question.';
+$string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
+$string['privacy:preference:shuffleanswers'] = 'Si les réponses doivent être mélangées automatiquement.';
 $string['refresh'] = 'Rafraîchir l\'aperçu';
 $string['shuffleimages'] = 'Mélanger les éléments déplaçables lors de chaque tentative';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

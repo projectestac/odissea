@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'el', version '3.8'.
+ * Strings for component 'block_section_links', language 'el', version '3.11'.
  *
  * @package     block_section_links
  * @category    string
@@ -38,5 +38,7 @@ $string['numsections2_help'] = 'Μόλις ο αριθμός των τμημάτ
 $string['pluginname'] = 'Σύνδεσμοι τμημάτων';
 $string['privacy:metadata'] = 'Το μπλοκ συνδέσμων τμήματος εμφανίζει μόνο τα δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';
 $string['section_links:addinstance'] = 'Προσθέστε ένα νέο μπλοκ συνδέσμων τμήματος';
+$string['showsectionname'] = 'Εμφάνιση ονόματος τμήματος';
+$string['showsectionname_help'] = 'Εμφάνιση ονόματος τμήματος εκτός από τον αριθμό τμήματος';
 $string['topics'] = 'Τμήματα';
 $string['weeks'] = 'Εβδομάδες';

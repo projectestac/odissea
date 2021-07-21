@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'sv', version '3.8'.
+ * Strings for component 'tool_behat', language 'sv', version '3.11'.
  *
  * @package     tool_behat
  * @category    string
@@ -50,5 +50,6 @@ $string['stepsdefinitionstype'] = 'Typ';
 $string['theninfo'] = 'Sen. Kontroller för att validera att utfallen är de förväntade.';
 $string['unknownexceptioninfo'] = 'Det är problem med Selenium eller din webbläsare. Försäkra dig om att du använder senaste versionen av Selenium. Fel:';
 $string['viewsteps'] = 'Filter';
+$string['warndirrootconfigfound'] = 'En konfigurationsfil hittades i {$a}. Denna fil uppdateras inte automatiskt och kan bli förlegad. Vi rekommenderar att du tar bort denna fil.';
 $string['wheninfo'] = 'När. Åtgärd som förorsakar en händelse.';
 $string['wrongbehatsetup'] = 'Något är fel med behat-inställningen och därför kan inte stegdefinitionerna visas: <b>{$a->errormsg}</b><br/><br/>Vänligen kontrollera att:<ul> <li>Värdena för $CFG->behat_dataroot, $CFG->behat_prefix och $CFG->behat_wwwroot som anges i config.php skiljer sig från värdena för $CFG->dataroot, $CFG->prefix och $CFG->wwwroot.</li> <li>Du körde "{$a->behatinit}" från din Moodle root katalog.</li> <li>Beroenden installeras i vändor/ och filen {$a->behatcommand} har exekveringsrättighetet.</li></ul>';

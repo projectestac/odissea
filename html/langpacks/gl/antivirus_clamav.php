@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'gl', version '3.8'.
+ * Strings for component 'antivirus_clamav', language 'gl', version '3.11'.
  *
  * @package     antivirus_clamav
  * @category    string
@@ -39,7 +39,7 @@ $string['pathtoclamdesc'] = 'Se o método de execución está configurado como �
 $string['pathtounixsocket'] = '«Socket» do dominio Unix';
 $string['pathtounixsocketdesc'] = 'Se o método de execución está configurado en "«Socket» do dominio Unix", introduza a ruta ao «socket» ClamAV Unix aquí. En Debian Linux este será /var/run/clamav/clamd.ctl. Asegúrese de que o servizo clamav teña acceso de lectura aos ficheiros cargados, o xeito máis sinxelo é engadir o usuario «clamav» ao grupo do seu servidor web («www-data» en Debian Linux).';
 $string['pluginname'] = 'Antivirus ClamAV';
-$string['privacy:metadata'] = 'O engadido de antivirus ClamAV non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O engadido de Antivirus ClamAV non almacena ningún dato persoal.';
 $string['quarantinedir'] = 'Directorio de corentena';
 $string['runningmethod'] = 'Método de execución';
 $string['runningmethodcommandline'] = 'Liña de ordes';

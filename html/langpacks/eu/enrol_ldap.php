@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'eu', version '3.8'.
+ * Strings for component 'enrol_ldap', language 'eu', version '3.11'.
  *
  * @package     enrol_ldap
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignrole'] = '\'{$a->role_shortname}\' rola esleitzen \'{$a->user_username}\' erabiltzaileari \'{$a->course_shortname}\'  ikastaroan (id {$a->course_id})';
 $string['assignrolefailed'] = 'Huts egin du \'{$a->role_shortname}\' rola esleitzean \'{$a->user_username}\' erabiltzaileari \'{$a->course_shortname}\' ikastaroan (id {$a->course_id})';
-$string['autocreate'] = '<p>Ikastaroak era automatikoan sor daitezke oraindik ere Moodle-n existitzen ez den ikastaro batean matrikulazioak badaude.</p><p>Ikastaro sorrera automatikoa erabiltzen baduzu, gomendagarria da gaitasun hauek rol garrantzitsuenei ezgaitzea: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname eta moodle/course:changesummary. Horrela, goian aipatutako lau ikastaro eremuak aldatzea debekatuko da (ID zenbakia, izen laburra, izen osoa eta laburpena).</p>';
+$string['autocreate'] = '<p>Ikastaroak era automatikoan sor daitezke oraindik ere Moodlen existitzen ez den ikastaro batean matrikulazioak badaude.</p><p>Ikastaro sorrera automatikoa erabiltzen baduzu, gomendagarria da gaitasun hauek rol garrantzitsuenei ezgaitzea: moodle/course:changeidnumber, moodle/course:changeshortname, moodle/course:changefullname eta moodle/course:changesummary. Horrela, goian aipatutako lau ikastaro eremuak aldatzea debekatuko da (ID zenbakia, izen laburra, izen osoa eta laburpena).</p>';
 $string['autocreate_key'] = 'Sortu automatikoki';
 $string['autocreation_settings'] = 'Ikastaroak era automatikoan sortzeko ezarpenak';
 $string['autoupdate_settings'] = 'Ikastaroak era automatikoan eguneratzeko ezarpenak';
@@ -102,7 +102,7 @@ $string['objectclass_key'] = 'Objektu mota';
 $string['ok'] = 'Ados!';
 $string['opt_deref'] = 'Taldetako partaidetzak izen gorenak baditu (distinguished names), zehaztu bilaketetan ezinezak nola kudeatuko diren. Aukeratu hurengo balioetako bat: \'Ez\' (LDAP_DEREF_NEVER) edo \'Bai\' (LDAP_DEREF_ALWAYS)';
 $string['opt_deref_key'] = 'Erreferentziazko ezizenak';
-$string['phpldap_noextension'] = '<em>Dirudienez PHPko LDAP modulua ez dago instalatuta. Mesedez ziurtatu instalatuta eta gaituta dagoela matrikulazio plugin hau erabili nahi baduzu</em>';
+$string['phpldap_noextension'] = 'Dirudienez PHPko LDAP modulua ez dago instalatuta. Mesedez ziurtatu instalatuta eta gaituta dagoela matrikulazio plugin hau erabili nahi baduzu.';
 $string['pluginname'] = 'LDAP matrikulak';
 $string['pluginname_desc'] = '<p>LDAP zerbitzaria erabil dezakezu matrikulazioak kontrolatzeko. Suposatu egiten da zure LDAP arbolak ikastaroetarako taldeak dituela eta hauetako talde edo ikastaro bakoitzak ikasleei erreferentzia egiten dieten matrikulazio-sarrerak dituztela.</p><p>Suposatu egiten da ikastaroak talde bezala daudela definituta LDAPen, talde bakoitzak erabiltzailea identifikazio bakarra duten hainbat matrikulazio-eremu dituelarik (<em>member</em> edo <em>memberUid</em>).</p><p>LDAP matrikulazioa erabiltzeko, erabiltzaileek balio duen ID zenbakia eremua izan <strong>behar</strong>dute. LDAP taldeek \'idnumber\' hori izan behar dute erabiltzaile-eremuetan erabiltzailea ikastaro batean matrikulatu ahal izateko. Ondo funtzionatuko du dagoeneko LDAP Autentifikazioa erabiltzen baduzu.</p><p>Matrikulazioak eguneratu egingo dira erabiltzailea idenfikatzen denean. Kontsulta ezazu <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p>Plugin hau LDAPn talde berriak agertzen direnean ikastaro berriak era automatikoan sortzeko ere zehaztu ahal da.</p>';
@@ -115,7 +115,7 @@ $string['role_mapping_key'] = 'Lotu rolak LDAPetik';
 $string['roles'] = 'Rolen lotura';
 $string['server_settings'] = 'LDAP zerbitzariaren ezarpenak';
 $string['synccourserole'] = '== \'{$a->idnumber}\' ikastaroaren \'{$a->role_shortname}\' rola sinkronizatzen';
-$string['syncenrolmentstask'] = 'Sinkronizatu LDAP matrikulazioak zeregina';
+$string['syncenrolmentstask'] = 'Sinkronizatu LDAP matrikulazioak ataza';
 $string['template'] = 'Aukerakoa: era automatikoan sortutako ikastaroak ikastaro-txantiloi batetik kopia ditzakete beren zehaztasunak.';
 $string['template_key'] = 'Txantiloia';
 $string['unassignrole'] = '\'{$a->user_username}\' erabiltzaileari \'{$a->role_shortname}\' rola kentzen \'{$a->course_shortname}\' ikastarotik (id {$a->course_id})';

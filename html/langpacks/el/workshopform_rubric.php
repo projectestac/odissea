@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'el', version '3.8'.
+ * Strings for component 'workshopform_rubric', language 'el', version '3.11'.
  *
  * @package     workshopform_rubric
  * @category    string
@@ -26,11 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Κενά για {$a} ακόμη κριτήρια';
-$string['configuration'] = 'Ρυθμίσεις ρουμπρίκας (Κλίμακας Διαβαθμισμένων Κριτηρίων, rubric)';
-$string['criteria'] = 'Kριτήρια';
+$string['configuration'] = 'Ρυθμίσεις ρουμπρίκας';
+$string['criteria'] = 'Κριτήρια';
 $string['dimensiondescription'] = 'Περιγραφή';
 $string['dimensionnumber'] = 'Κριτήριο {$a}';
-$string['layout'] = 'Διάταξη ρουμπρίκας (Κλίμακας Διαβαθμισμένων Κριτηρίων, rubric)';
+$string['layout'] = 'Διάταξη ρουμπρίκας';
 $string['layoutgrid'] = 'Πλέγμα';
 $string['layoutlist'] = 'Λίστα';
 $string['levelgroup'] = 'Βαθμός και ορισμός επιπέδου';

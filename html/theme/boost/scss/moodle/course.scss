@@ -1,10 +1,5 @@
 /* course.less */
 /* COURSE CONTENT */
-.section-modchooser-link img {
-    margin-right: 0.5rem;
-    width: 16px;
-    height: 16px;
-}
 
 .section_add_menus {
     text-align: right;
@@ -49,10 +44,11 @@ body:not(.editing)  .sitetopic ul.section {
     }
 }
 
-.course-content ul.section {
-    margin: $spacer;
+@include media-breakpoint-up(sm) {
+    .course-content ul.section {
+        margin: $spacer;
+    }
 }
-
 .section {
     .side {
         &.left {
@@ -93,7 +89,7 @@ body:not(.editing)  .sitetopic ul.section {
             min-height: 2em;
 
             > a {
-                display: block;
+                display: inline-block;
                 text-indent: -31px;
                 padding-left: 31px;
             }
@@ -106,7 +102,7 @@ body:not(.editing)  .sitetopic ul.section {
         }
 
         .stealth {
-            @extend .text-muted;
+            color: $text-muted;
         }
         a.stealth,
         a.stealth:hover {
@@ -121,10 +117,11 @@ body:not(.editing)  .sitetopic ul.section {
             display: block;
             height: inherit;
         }
-
-        .mod-indent-outer {
-            padding-left: 24px;
-            display: block;
+        @include media-breakpoint-up(sm) {
+            .mod-indent-outer {
+                padding-left: 24px;
+                display: block;
+            }
         }
     }
 
@@ -204,12 +201,35 @@ body:not(.editing)  .sitetopic ul.section {
 
 .section .activity.modtype_label.label {
     font-weight: normal;
-    padding: .2em;
+
+    // Remove min-height for labels so top and bottom paddings can be displayed more consistently.
+    .contentwithoutlink {
+        min-height: 0;
+    }
+
+    // When activity information is shown remove the bottom margin for the last p/i elements.
+    &.hasinfo {
+        p:last-child,
+        i:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .section li.activity {
     padding: .2em;
     clear: both;
+
+    &.hasinfo {
+        border-bottom: $border-width solid $table-border-color;
+        padding-top: map-get($spacers, 3);
+        padding-bottom: map-get($spacers, 3);
+
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
 }
 
 .section .activity .activityinstance .groupinglabel {
@@ -228,7 +248,7 @@ body:not(.editing)  .sitetopic ul.section {
 
 .editing .section .activity:hover,
 .editing .section .activity.action-menu-shown {
-    background-color: $table-bg-accent;
+    background-color: $table-accent-bg;
 }
 
 .course-content .current {
@@ -237,7 +257,7 @@ body:not(.editing)  .sitetopic ul.section {
 
 .course-content .current::before {
     content: "";
-    border-left: $brand-primary 2px solid;
+    border-left: $primary 2px solid;
     position: absolute;
     left: -$card-spacer-x;
     top: 0;
@@ -259,7 +279,7 @@ body:not(.editing)  .sitetopic ul.section {
 }
 
 .course-content .section-summary .section-summary-activities .activity-count {
-    @extend .text-muted;
+    color: $text-muted;
     font-size: $font-size-sm;
     margin: 3px;
     white-space: nowrap;
@@ -323,7 +343,7 @@ body:not(.editing)  .sitetopic ul.section {
     .sectionname > span,
     .content > div.summary,
     .activity .activityinstance {
-        @extend .text-muted;
+        color: $text-muted;
     }
 }
 
@@ -336,10 +356,16 @@ body:not(.editing)  .sitetopic ul.section {
     li.section {
         margin-top: $spacer;
         padding-bottom: $spacer;
+        .content {
+            margin: 0;
+            padding: 0;
+        }
 
-        .summary,
-        .content > .availabilityinfo {
-            margin-left: 25px;
+        @include media-breakpoint-up(sm) {
+            .summary,
+            .content > .availabilityinfo {
+                margin-left: 25px;
+            }
         }
 
         .left,
@@ -347,6 +373,20 @@ body:not(.editing)  .sitetopic ul.section {
             padding: 0 6px 0;
             text-align: right;
             width: auto;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    body:not(.editing) {
+        .course-content ul.topics,
+        .course-content ul.weeks {
+            li.section {
+                .left,
+                .right {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -361,6 +401,11 @@ body:not(.editing)  .sitetopic ul.section {
 
 .course-content li {
     &.section {
+        @include media-breakpoint-down(sm) {
+            ul {
+                padding-left: 0;
+            }
+        }
         ul {
             list-style: disc;
 
@@ -693,12 +738,12 @@ span.editinstructions {
 
 .courses .coursebox {
     &.collapsed {
-        padding-top: $spacer-y / 2;
-        padding-bottom: $spacer-y / 2;
+        padding-top: $spacer / 2;
+        padding-bottom: $spacer / 2;
     }
 
     &.even {
-        background-color: $table-bg-accent;
+        background-color: $table-accent-bg;
     }
 }
 
@@ -904,11 +949,11 @@ span.editinstructions {
         }
         // The category or course is hidden.
         &[data-visible="0"] {
-            @extend .text-muted;
+            color: $text-muted;
 
             > div {
                 > a {
-                    @extend .text-muted;
+                    color: $text-muted;
                 }
 
                 .item-actions {
@@ -929,7 +974,7 @@ span.editinstructions {
             > div,
             > div:hover,
             &[data-selected='1'] > div {
-                background-color: $table-bg-hover;
+                background-color: $table-hover-bg;
             }
         }
     }
@@ -1037,7 +1082,7 @@ span.editinstructions {
         text-align: center;
 
         &.dimmed {
-            @extend .text-muted;
+            color: $text-muted;
             margin: 0.4rem 1rem 0.45rem;
         }
     }
@@ -1167,5 +1212,11 @@ span.editinstructions {
     #prev-activity-link,
     #next-activity-link {
         white-space: pre-wrap;
+    }
+}
+
+.automatic-completion-conditions {
+    .badge {
+        font-size: 100%;
     }
 }

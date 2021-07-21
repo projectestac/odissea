@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'sv', version '3.8'.
+ * Strings for component 'qtype_multianswer', language 'sv', version '3.11'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -35,7 +35,7 @@ $string['layout'] = 'Utseende';
 $string['layouthorizontal'] = 'Horisontell rad med radioknappar';
 $string['layoutmultiple_horizontal'] = 'Horisontell rad med kryssrutor';
 $string['layoutmultiple_vertical'] = 'Vertikal kolumn med kryssrutor';
-$string['layoutselectinline'] = 'Nedrullningsmeny inbäddad i texten';
+$string['layoutselectinline'] = 'Rullgardinsmeny inbäddad i texten';
 $string['layoutundefined'] = 'Odefinierat utseende';
 $string['layoutvertical'] = 'Vertikal kolumn med radioknappar';
 $string['nooptionsforsubquestion'] = 'Kan inte hämta alternativ för frågedel # {$a->sub} (question->id={$a->id})';
@@ -61,7 +61,7 @@ $string['questionsless'] = '{$a} fråga(or) mindre än i flervalsfrågan lagrat 
 $string['questionsmissing'] = 'Frågetexten måste innehålla minst ett inbäddat svar.';
 $string['questionsmore'] = '{$a} fråga(or) mer än i flervalsfrågan lagrat i databasen';
 $string['questiontypechanged'] = 'Frågetyp ändrad';
-$string['questiontypechangedcomment'] = 'Åtminstone en frågetyp har ändrats.<br >Har du lagt till, raderat eller flyttat en fråga?<br >Se vidare framåt.';
+$string['questiontypechangedcomment'] = 'Minst en frågetyp har ändrats.<br >Har du lagt till, tagit bort eller flyttat en fråga?<br >Se vidare framåt.';
 $string['questionusedinquiz'] = 'Denna fråga används i {$a->nb_of_quiz} test(er), totalt antal försök : {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Lagrad frågetyp {$a}';
 $string['subqresponse'] = 'del {$a->i}: {$a->response}';

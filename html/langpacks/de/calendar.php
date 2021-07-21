@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'de', version '3.8'.
+ * Strings for component 'calendar', language 'de', version '3.11'.
  *
  * @package     calendar
  * @category    string
@@ -46,7 +46,7 @@ $string['collastupdated'] = 'Zuletzt aktualisiert';
 $string['colpoll'] = 'Aktualisieren';
 $string['commontasks'] = 'Optionen';
 $string['confirmeventdelete'] = 'Möchten Sie den Termin \'{$a}\' wirklich löschen?';
-$string['confirmeventseriesdelete'] = 'Der Termin \'{$a->name}\' ist Teil der Serie. Wollen Sie nur diesen Termin entfernen oder alle {$a->count} Termine dieser Serie?';
+$string['confirmeventseriesdelete'] = 'Der Termin \'{$a->name}\' ist Teil der Serie. Möchten Sie nur diesen Termin entfernen oder alle {$a->count} Termine dieser Serie?';
 $string['course'] = 'Kurs';
 $string['coursecalendar'] = '{$a} Kalender';
 $string['courseevent'] = 'Kurstermin';
@@ -143,6 +143,7 @@ $string['eventtypecourse'] = 'Kurs';
 $string['eventtypeglobal'] = 'Website';
 $string['eventtypegroup'] = 'Gruppe';
 $string['eventtypemodule'] = 'Aktivitäten';
+$string['eventtypeother'] = 'andere';
 $string['eventtypesite'] = 'Website';
 $string['eventtypeuser'] = 'Nutzer';
 $string['eventview'] = 'Termindetails';

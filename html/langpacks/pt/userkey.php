@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'pt', version '3.8'.
+ * Strings for component 'userkey', language 'pt', version '3.11'.
  *
  * @package     userkey
  * @category    string
@@ -33,7 +33,7 @@ $string['keyiprestriction'] = 'Restrição de endereço de IP na chave';
 $string['keyiprestriction_help'] = 'Indique um endereço de IP específico ou um intervalo de endereços IP. Estes serão os únicos endereços com permissão para aceder a esta informação. Se este campo estiver vazio, não será feita qualquer restrição aos endereços de IP. Por questões de segurança, o valor deste campo não deve estar vazio.';
 $string['keymanager'] = 'Gestor de chaves';
 $string['keyvaliduntil'] = 'A chave é válida até';
-$string['keyvaliduntil_help'] = 'Por questões de segurança, deve definir uma data adicional a partir da qual a chave não será válida.';
+$string['keyvaliduntil_help'] = 'Por questões de segurança, deve definir uma data adicional a partir da qual a chave deixará de ser válida.';
 $string['keyvalue'] = 'Valor da chave';
 $string['newuserkey'] = 'Nova chave de utilizador';
 $string['privacy:metadata:user_private_key'] = 'Chaves privadas do utilizador';
@@ -45,5 +45,5 @@ $string['privacy:metadata:user_private_key:userid'] = 'O utilizador associado à
 $string['privacy:metadata:user_private_key:validuntil'] = 'A data/hora até quando a chave é válida';
 $string['privacy:metadata:user_private_key:value'] = 'O valor da chave.';
 $string['userkey'] = 'Chave de utilizador';
-$string['userkey_help'] = 'Selecione uma das chaves gravadas para dar acesso aos utilizadores à informação publicada por este módulo de exportação. Estes utilizadores não terão que iniciar sessão no Moodle para terem acesso a esta informação. Selecione "Criar uma nova chave de utilizador" para gerar uma nova chave quando submeter este formulário.';
+$string['userkey_help'] = 'Selecione uma das chaves guardadas para dar acesso aos utilizadores à informação publicada por este módulo de exportação. Estes utilizadores não terão que iniciar sessão no Moodle para terem acesso a esta informação. Selecione "Criar uma nova chave de utilizador" para gerar uma nova chave quando submeter este formulário.';
 $string['userkeys'] = 'Chaves de utilizador';

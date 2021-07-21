@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'pt', version '3.8'.
+ * Strings for component 'report_security', language 'pt', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -25,13 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p>É recomendado que as permissões do ficheiro <strong>config.php</strong> sejam alteradas depois da instalação do Moodle para que este não possa ser posteriormente modificado pelo servidor web.
+$string['check_configrw_details'] = '<p>É recomendado que as permissões do ficheiro <strong><code>config.php</code></strong> sejam alteradas depois da instalação do Moodle para que este não possa ser posteriormente modificado pelo servidor web.
 Note-se que esta medida não melhora significativamente a segurança do servidor, mas permite dificultar a exploração de algumas vulnerabilidades.</p>';
 $string['check_configrw_name'] = 'Permissões de escrita do ficheiro <strong>config.php</strong>';
 $string['check_configrw_ok'] = 'O ficheiro <strong>config.php</strong> não pode ser alterado por scripts PHP.';
 $string['check_configrw_warning'] = 'O ficheiro <strong>config.php</strong> pode ser alterado por scripts PHP.';
 $string['check_cookiesecure_details'] = '<p>Se a comunicação HTTPS estiver ativa, recomenda-se ativar o envio de cookies seguros. Deve ter o redirecionamento permanente de http para https e, de preferência, utilizar também cabeçalhos HSTS.</p>';
 $string['check_cookiesecure_error'] = 'A utilização de cookies seguros não está ativa.';
+$string['check_cookiesecure_http'] = 'Tem de ativar o https para usar cookies seguros';
 $string['check_cookiesecure_name'] = 'Cookies seguros';
 $string['check_cookiesecure_ok'] = 'A utilização de cookies seguros está ativa.';
 $string['check_crawlers_details'] = '<p>A configuração <strong>Permitir acesso aos motores de busca</strong> disponibiliza aos motores de busca o acesso às disciplinas que permitem acesso a visitantes. Não faz sentido ativar esta configuração se o site não permitir o acesso de visitante.</p>';
@@ -45,10 +46,12 @@ $string['check_defaultuserrole_error'] = 'O papel "{$a}", a atribuir automaticam
 $string['check_defaultuserrole_name'] = 'Papel a atribuir a todos os utilizadores autenticados';
 $string['check_defaultuserrole_notset'] = 'Não foi definido nenhum papel para ser atribuído automaticamente a todos os utilizadores autenticados';
 $string['check_defaultuserrole_ok'] = 'O papel a atribuir automaticamente a todos os utilizadores autenticados está configurado corretamente.';
+$string['check_dirindex_info'] = 'O índice da diretoria não deve estar ativado';
 $string['check_displayerrors_details'] = '<p>A ativação da configuração <strong>display_errors</strong> do PHP não é recomendada para sites em produção porque as mensagens de erro apresentadas podem revelar informações que ponham em causa a segurança do servidor. Esta configuração é definida no ficheiro <strong>php.ini</strong>.</p>';
 $string['check_displayerrors_error'] = 'A configuração <strong>display_errors</strong> do PHP não deve estar ativa.';
 $string['check_displayerrors_name'] = 'Apresentação de erros PHP';
 $string['check_displayerrors_ok'] = 'A apresentação de erros PHP não está ativa.';
+$string['check_dotfiles_info'] = 'Todos os dotfiles, exceto /.well-known/*, não devem ser públicos';
 $string['check_emailchangeconfirmation_details'] = '<p>É recomendado que se envie um e-mail de confirmação aos utilizadores que mudam o endereço de e-mail registado no seu perfil. Se esta configuração estiver desativada, este facto pode ser utilizado para envio de spam.</p>
 <p>Adicionalmente o campo <strong>E-mail</strong> pode ser bloqueado ao nível dos módulos de autenticação. Esta possibilidade não é considerada aqui.</p>';
 $string['check_emailchangeconfirmation_error'] = 'Os utilizadores podem indicar qualquer endereço de e-mail, não sendo feita qualquer restrição ao nível de domínios permitidos/bloqueados.';
@@ -59,12 +62,12 @@ $string['check_embed_details'] = '<p>A incorporação de objetos sem restriçõe
 $string['check_embed_error'] = '<p>A configuração de incorporação de objetos sem restrições está ativa. Esta configuração levanta problemas de segurança graves na maioria dos servidores.</p>';
 $string['check_embed_name'] = 'Permitir conteúdos incorporados e OBJECT';
 $string['check_embed_ok'] = 'Conteúdos incorporados e OBJECT ilimitados';
-$string['check_frontpagerole_details'] = '<p>O papel predefinido para a página de entrada é atribuídos a todos os utilizadores no contexto das atividades da página de entrada.  Por isso, não devem ser atribuídas permissões a este papel que ponham em risco o site.</p>
+$string['check_frontpagerole_details'] = '<p>O papel predefinido para a página principal é atribuído a todos os utilizadores no contexto das atividades da página principal.  Por isso, não devem ser atribuídas permissões a este papel que ponham em risco o site.</p>
 <p>É recomendado que se crie um papel especificamente para este contexto e que não seja usado nenhum dos papéis retrocompatíveis (usados por versões anteriores do Moodle).</p>';
-$string['check_frontpagerole_error'] = 'O papel "{$a}", definido para a página de entrada, está configurado incorretamente!';
-$string['check_frontpagerole_name'] = 'Papel para a página de entrada';
-$string['check_frontpagerole_notset'] = 'Não foi definido nenhum papel para a página de entrada.';
-$string['check_frontpagerole_ok'] = 'O papel definido para a página de entrada está configurado corretamente.';
+$string['check_frontpagerole_error'] = 'O papel "{$a}", definido para a página principal, está configurado incorretamente!';
+$string['check_frontpagerole_name'] = 'Papel para a página principal';
+$string['check_frontpagerole_notset'] = 'Não foi definido nenhum papel para a página principal.';
+$string['check_frontpagerole_ok'] = 'O papel definido para a página principal está configurado corretamente.';
 $string['check_guestrole_details'] = '<p>O papel de visitante é usado por visitantes, utilizadores sem sessão ativa e utilizadores com acesso temporário de visitante às disciplinas. Por isso, não devem ser atribuídas permissões a este papel que ponham em risco o site.</p>
 <p>O único papel retrocompatível (usado em versões anteriores do Moodle) que pode ser usado com o papel de visitante é <strong>Visitante</strong>.</p>';
 $string['check_guestrole_error'] = 'O papel de visitante "{$a}" está configurado incorretamente!';
@@ -75,11 +78,7 @@ $string['check_mediafilterswf_details'] = '<p>A incorporação automática de co
 $string['check_mediafilterswf_error'] = 'O filtro de conteúdo Flash está ativo. Esta configuração levanta problemas de segurança graves na maioria dos servidores.';
 $string['check_mediafilterswf_name'] = 'Filtro de conteúdos SWF (Flash)';
 $string['check_mediafilterswf_ok'] = 'O filtro de conteúdo Flash não está ativo.';
-$string['check_noauth_details'] = '<p>O módulo de autenticação <strong>Sem autenticação</strong> não deve ser usado em sites em produção. Desative esta configuração se não se tratar de um site em desenvolvimento.</p>';
-$string['check_noauth_error'] = 'O módulo de autenticação <strong>Sem autenticação</strong> não deve ser usado em sites em produção.';
-$string['check_noauth_name'] = 'Módulo de autenticação <strong>Sem autenticação</strong>';
-$string['check_noauth_ok'] = 'O módulo de autenticação <strong>Sem autenticação</strong> não está ativo.';
-$string['check_nodemodules_details'] = '<p>A diretoria <em>{$a->path}</em> contém módulos Node.js e suas dependências, normalmente instalados pelo utilitário NPM. Esses módulos podem ser necessários para o desenvolvimento local do Moodle, como, por exemplo, o uso da grunt framework. Não são necessários para executar um site Moodle em produção e podem conter código potencialmente perigoso, expondo o seu site a ataques remotos.</p><p>É altamente recomendável remover a diretoria se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso web na configuração do seu servidor web.</p>';
+$string['check_nodemodules_details'] = '<p>A diretoria <code>{$a->path}</code> contém módulos Node.js e suas dependências, normalmente instalados pelo utilitário NPM. Esses módulos podem ser necessários para o desenvolvimento local do Moodle, como, por exemplo, o uso da framework grunt. Não são necessários para executar um site Moodle em produção e podem conter código potencialmente perigoso, expondo o seu site a ataques remotos.</p><p>É altamente recomendado remover a diretoria se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso web na configuração do seu servidor web.</p>';
 $string['check_nodemodules_info'] = 'O diretório de módulos Node não deve estar presente em sites públicos.';
 $string['check_nodemodules_name'] = 'Diretório de módulos Node.js';
 $string['check_openprofiles_details'] = '<p>Os perfis de utilizador que permitem acesso público podem ser utilizados de forma abusiva por <em>spammers</em>. É recomendado ativar a configuração <code>Apenas utilizadores autenticados podem aceder a perfis de outros utilizadores</code> ou <code>Apenas utilizadores autenticados podem aceder ao site</code>.</p>';
@@ -91,10 +90,13 @@ No entanto, não devem ser definidas regras demasiado exigentes, para que os uti
 $string['check_passwordpolicy_error'] = 'Devem ser definidas regras para as palavras-chaves.';
 $string['check_passwordpolicy_name'] = 'Regras para as senhas';
 $string['check_passwordpolicy_ok'] = 'Estão definidas regras para as palavras-chaves.';
-$string['check_preventexecpath_details'] = '<p>Permitir que os caminhos para executáveis sejam definidos através da interface de Administração, é um vetor para escalonamento de privilégios.</p>';
+$string['check_preventexecpath_details'] = '<p>Permitir que os caminhos para executáveis sejam definidos através da interface de Administração, é um vetor para escalonamento de privilégios. Tem de ser forçada no ficheiro config.php:</p><p><code>$CFG->preventexecpath = true;<code></p></p>';
 $string['check_preventexecpath_name'] = 'Caminhos executáveis';
 $string['check_preventexecpath_ok'] = 'Os caminhos executáveis apenas podem ser configurados no config.php.';
 $string['check_preventexecpath_warning'] = 'Os caminhos executáveis podem ser configurados na Admin GUI.';
+$string['check_publicpaths_403'] = '(Retornou erro 403 mas idealmente deveria ser 404)';
+$string['check_publicpaths_generic'] = '{$a} ficheiros não devem ser públicos';
+$string['check_publicpaths_name'] = 'Verificar todos os caminhos públicos/privados';
 $string['check_riskadmin_detailsok'] = '<p>Verifique a lista de administradores do sistema:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Verifique a lista de administradores do sistema:</p>{$a->admins}
 <p>É recomendado que o papel de administrador apenas seja atribuído no contexto de sistema. Os seguintes utilizadores têm o papel de administrador  em outros contextos (não aconselhado):</p>{$a->unsupported}';
@@ -102,9 +104,9 @@ $string['check_riskadmin_name'] = 'Administradores do site';
 $string['check_riskadmin_ok'] = 'Existe(m) {$a} administrador(es) de sistema.';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) verificar atribuição de papel</a>';
 $string['check_riskadmin_warning'] = 'Existe(m) {$a->admincount} administrador(es) de sistema e {$a->unsupcount} atribuições de papel de administrador noutros contextos (não aconselhado).';
-$string['check_riskbackup_details_overriddenroles'] = '<p>Se esta configuração estiver ativa, os utilizadores poderão incluir os dados dos utilizadores nas cópias de segurança. Se esta permissão não for necessária deve ser desativada.</p> {$a}';
+$string['check_riskbackup_details_overriddenroles'] = '<p>Se ativar esta opção, os utilizadores poderão incluir os dados dos utilizadores nas cópias de segurança. Se esta permissão não for necessária deve ser desativada.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Os papéis indicados em seguida têm atualmente permissão para incluir informação dos utilizadores nas cópias de segurança.Se esta permissão não for necessária deve ser desativada.</p> {$a}';
-$string['check_riskbackup_details_users'] = '<p>Devido aos papéis indicados acima ou por causa de redefinições locais, os utilizadores indicados de seguida têm permissão para incluir a informação dos utilizadores nas cópias de segurança das disciplinas. Por questões de privacidade deve ser garantido que (a) são utilizadores de confiança e (b) as suas contas estão protegidas por senhas robustas:</p> {$a}';
+$string['check_riskbackup_details_users'] = '<p>Devido aos papéis indicados acima ou por causa de redefinições locais, os utilizadores indicados a seguir têm permissão para incluir a informação dos utilizadores nas cópias de segurança das disciplinas. Por questões de privacidade deve ser garantido que (a) são utilizadores de confiança e (b) as suas contas estão protegidas por senhas robustas:</p> {$a}';
 $string['check_riskbackup_detailsok'] = 'A configuração efetuada não permite que nenhum papel tenha permissão para incluir dados dos utilizadores nas cópias de segurança das disciplinas. Contudo, utilizadores que tenham o papel de administrador com a permissão <strong>doanything</strong> poderão fazê-lo.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} no contexto {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
@@ -121,8 +123,8 @@ $string['check_unsecuredataroot_details'] = '<p>Não deve ser possível aceder �
 $string['check_unsecuredataroot_error'] = 'A pasta de dados está numa localização potencialmente insegura: <strong>{$a}</strong>!';
 $string['check_unsecuredataroot_name'] = 'Segurança da pasta de dados';
 $string['check_unsecuredataroot_ok'] = 'Não deve ser possível aceder à pasta de dados através da web.';
-$string['check_unsecuredataroot_warning'] = 'A diretoria dataroot <code>{$a}</code> está no local errado e pode ser acessível através da web.';
-$string['check_vendordir_details'] = '<p>A diretoria <em>{$a->path}</em> contém várias bibliotecas de terceiros e suas dependências, normalmente instaladas pelo PHP Composer. Essas bibliotecas podem ser necessárias para o desenvolvimento local do Moodle, como por exemplo, para instalar o framework PHPUnit. Eles não são necessários para executar um site Moodle em produção e podem conter código potencialmente perigoso expondo seu site a ataques remotos.</p><p>É altamente recomendável remover a diretoria se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso via web na configuração do seu servidor web.</p>';
+$string['check_unsecuredataroot_warning'] = 'A pasta de dados (dataroot) <code>{$a}</code> está num local errado e pode ser acessível através da web.';
+$string['check_vendordir_details'] = '<p>A diretoria <code>{$a->path}</code> contém várias bibliotecas de terceiros e suas dependências, normalmente instaladas pelo PHP Composer. Essas bibliotecas podem ser necessárias para o desenvolvimento local do Moodle, como por exemplo, para instalar a framework PHPUnit. Não são necessárias para executar um site Moodle em produção e podem conter código potencialmente perigoso, expondo o seu site a ataques remotos.</p><p>É altamente recomendado remover a diretoria se o site estiver disponível através de um URL público, ou, pelo menos, proibir o acesso via web na configuração do seu servidor web.</p>';
 $string['check_vendordir_info'] = 'O diretório de fornecedor não deve estar presente em sites públicos.';
 $string['check_vendordir_name'] = 'Diretório de fornecedores';
 $string['check_webcron_details'] = '<p>Executar o cron pela Web pode expor informação privilegiada a utilizadores não identificados. É recomendado que o cron seja executado via CLI ou proteger a página do cron com uma senha.</p>';
@@ -132,14 +134,9 @@ $string['check_webcron_warning'] = 'Utilizadores anónimos podem aceder ao cron.
 $string['configuration'] = 'Configuração';
 $string['description'] = 'Descrição';
 $string['details'] = 'Detalhes';
+$string['eventreportviewed'] = 'Visualizado o relatório da verificação de segurança';
 $string['issue'] = 'Assunto';
-$string['pluginname'] = 'Informação de segurança';
-$string['privacy:metadata'] = 'O módulo Informação de segurança não armazena dados pessoais.';
+$string['pluginname'] = 'Verificações de segurança';
+$string['privacy:metadata'] = 'O módulo Informação de segurança não armazena quaisquer dados pessoais.';
 $string['security:view'] = 'Ver relatório de segurança';
-$string['status'] = 'Estado';
-$string['statuscritical'] = 'Crítico';
-$string['statusinfo'] = 'Informação';
-$string['statusok'] = 'OK';
-$string['statusserious'] = 'Verificar';
-$string['statuswarning'] = 'Aviso';
 $string['timewarning'] = 'Em processamento. Por favor, aguarde…';

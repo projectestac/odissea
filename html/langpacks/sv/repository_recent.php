@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'sv', version '3.8'.
+ * Strings for component 'repository_recent', language 'sv', version '3.11'.
  *
  * @package     repository_recent
  * @category    string
@@ -27,6 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Konfiguration för källa för nyligen använda filer';
 $string['emptyfilelist'] = 'Det finns inga filer att visa';
+$string['notitle'] = 'ingentitel';
 $string['pluginname'] = 'Senaste filer';
-$string['recent:view'] = 'Visa plugin för nyligen använda filer';
+$string['pluginname_help'] = 'Senast använda filer för aktuell användare';
+$string['privacy:metadata'] = 'Pluginmodulen Senaste filer lagrar ingen personinformation.';
+$string['recent:view'] = 'Visa pluginmodulen Senaste filer';
 $string['recentfilesnumber'] = 'Antal nyligen använda filer';
+$string['timelimit'] = 'Tidsgräns';
+$string['timelimit_help'] = 'Hämta endast de senaste filerna inom tidsgränsen';

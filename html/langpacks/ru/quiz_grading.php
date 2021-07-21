@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ru', version '3.8'.
+ * Strings for component 'quiz_grading', language 'ru', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(оценено)';
 $string['gradenextungraded'] = 'Оценить следующие {$a} неоцененых попыток';
 $string['gradeungraded'] = 'Оценить все {$a} неоцененных попыток';
 $string['grading'] = 'Оценивание вручную';
-$string['grading:componentname'] = 'Отчет по тесту «Оценивание вручную»';
 $string['grading:viewidnumber'] = 'Видеть ID-номер студента при оценивании';
 $string['grading:viewstudentnames'] = 'Видеть имя студента при оценивании';
 $string['gradingall'] = 'Все попытки для этого вопроса: {$a}.';
@@ -65,12 +64,14 @@ $string['gradinguser'] = 'Попытки для {$a}';
 $string['hideautomaticallygraded'] = 'Скрыть вопросы, которые были оценены автоматически';
 $string['inprogress'] = 'В процессе';
 $string['invalidattemptid'] = 'Нет попытки с таким ID';
-$string['invalidquestionid'] = 'Оцениваемый вопрос с id {$a} не найден';
+$string['invalidquestionid'] = 'Оцениваемый вопрос с ID {$a} не найден';
 $string['noquestionsfound'] = 'Вручную оцениваемые вопросы не найдены';
 $string['nothingfound'] = 'Нечего отображать';
 $string['options'] = 'Параметры';
 $string['orderattempts'] = 'Порядок попыток';
 $string['pluginname'] = 'Оценивание вручную';
+$string['privacy:preference:order'] = 'В каком порядке показывать попытки, требующие оценки.';
+$string['privacy:preference:pagesize'] = 'Сколько попыток отображать на каждой странице оценивания.';
 $string['qno'] = '№';
 $string['questionname'] = 'Название вопроса';
 $string['questionsperpage'] = 'Вопросов на страницу';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'de', version '3.8'.
+ * Strings for component 'my', language 'de', version '3.11'.
  *
  * @package     my
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addpage'] = 'Seite hinzufügen';
 $string['alldashboardswerereset'] = 'Alle Dashboard-Seiten wurden auf die Standardwerte zurückgesetzt.';
 $string['allprofileswerereset'] = 'Alle Nutzerprofile wurden auf die Standardwerte zurückgesetzt.';
-$string['defaultpage'] = 'Standardmäßiges Dashboard';
+$string['defaultpage'] = 'Standard-Dashboard';
 $string['defaultprofilepage'] = 'Standard-Profilseite';
 $string['delpage'] = 'Seite löschen';
 $string['managepages'] = 'Seiten verwalten';
@@ -42,3 +42,4 @@ $string['reseterror'] = 'Fehler beim Zurücksetzen der Seite';
 $string['reseteveryonesdashboard'] = 'Dashboard für alle Nutzer/innen übernehmen';
 $string['reseteveryonesprofile'] = 'Nutzerprofile für alle Nutzer/innen zurücksetzen';
 $string['resetpage'] = 'Standard wiederherstellen';
+$string['resettingdashboards'] = 'Alle Dashboards auf Standard zurücksetzen';

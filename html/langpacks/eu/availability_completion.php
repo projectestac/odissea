@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'eu', version '3.8'.
+ * Strings for component 'availability_completion', language 'eu', version '3.11'.
  *
  * @package     availability_completion
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_previous_cache'] = 'Aurreko jarduerarekiko mendekotasunen informazioa';
 $string['description'] = 'Behartu ikasleak beste jarduera bat osatzera (edo ez osatzera).';
 $string['error_selectcmid'] = 'Jarduera bat aukeratu behar duzu osaketa-baldintzarako.';
 $string['error_selectcmidpassfail'] = '"Kalifikazioa behar du" baldintza zehaztuta duen jarduera bat aukeratu behar duzu.';
@@ -35,6 +36,7 @@ $string['option_complete'] = 'osatutzat markatu behar da';
 $string['option_fail'] = 'gutxiegi kalifikazioarekin osatua egon behar du';
 $string['option_incomplete'] = 'ez du osatutzat markatuta egon behar';
 $string['option_pass'] = 'gaindituta kalifikazioarekin osatua egon behar da';
+$string['option_previous'] = 'Osaketaren jarraipena duen aurreko jarduera';
 $string['pluginname'] = 'Jarduera-osaketaren araberako baldintza';
 $string['privacy:metadata'] = 'Jarduera-osaketaren araberako baldintza pluginak ez du datu pertsonalik biltzen.';
 $string['requires_complete'] = '<strong>{$a}</strong> jarduera osatutzat markatuta dago.';
@@ -43,4 +45,10 @@ $string['requires_complete_pass'] = '<strong>{$a}</strong> jarduera osatua eta g
 $string['requires_incomplete'] = '<strong>{$a}</strong> jarduera osatu gabe dago';
 $string['requires_not_complete_fail'] = '<strong>{$a}</strong> jarduera osatu gabe eta gainditu gabe dago';
 $string['requires_not_complete_pass'] = '<strong>{$a}</strong> jarduera osatu gabe eta gaindituta dago';
+$string['requires_previous_complete'] = '<strong>Osaketaren jarraipena duen aurreko jarduera</strong> osatutzat markatuta dago';
+$string['requires_previous_complete_fail'] = '<strong>Osaketaren jarraipena duen aurreko jarduera</strong> osatuta eta gainditu gabe dago';
+$string['requires_previous_complete_pass'] = '<strong>Osaketaren jarraipena duen aurreko jarduera</strong> osatuta eta gaindituta dago';
+$string['requires_previous_incomplete'] = '<strong>Osaketaren jarraipena duen aurreko jarduera</strong> osatu gabe dago';
+$string['requires_previous_not_complete_fail'] = '<strong>Osaketaren jarraipena duen aurreko jarduera</strong> osatu gabe eta gainditu gabe dago';
+$string['requires_previous_not_complete_pass'] = '<strong>Osaketaren jarraipena duen aurreko jarduera</strong> osatu gabe eta gaindituta dago';
 $string['title'] = 'Jarduera-osaketa';

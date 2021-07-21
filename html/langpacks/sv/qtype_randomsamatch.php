@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'sv', version '3.8'.
+ * Strings for component 'qtype_randomsamatch', language 'sv', version '3.11'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -25,10 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['nosaincategory'] = 'Det finns inga kortsvars-frågor i den kategori \'{$a->catname}\' som Du valde. Välj en annan kategori, och producera några frågor i den kategorin.';
-$string['notenoughsaincategory'] = 'Det finns bara {$a->nosaquestions} kortsvars-frågor i den kategori \'{$a->catname}\' som Du valde. Välj en annan kategori, och producera några fler frågor i den kategorin eller reducera det antal frågor som Du har valt.';
+$string['insufficientoptions'] = 'Otillräckliga urvalsalternativ är tillgängliga för den här frågan och därför är den inte tillgänglig i det här testet. Informera din lärare.';
+$string['nosaincategory'] = 'Det finns inga kortsvars-frågor i den kategori \'{$a->catname}\' du valde. Välj en annan kategori, och producera några frågor i den kategorin.';
+$string['notenoughsaincategory'] = 'Det finns bara {$a->nosaquestions} kortsvars-frågor i den kategori \'{$a->catname}\' fu valde. Välj en annan kategori, och producera några fler frågor i den kategorin eller reducera det antal frågor du har valt.';
 $string['pluginname'] = 'Slumpmässiga korta svar matchning';
 $string['pluginname_help'] = 'Från elevens perspektiv ser detta bara ut som en matchningsfråga. Skillnaden är att listan med namn eller påståenden (frågor) för matchning hämtas slumpmässigt från kortsvarsfrågora i den aktuella kategorin. Det bör finnas tillräckligt med oanvända kortsvarsfrågor i kategorin, annars kommer ett felmeddelande att visas.';
 $string['pluginnameadding'] = 'Lägga till en slumpmässig kort svar matchningsfråga';
 $string['pluginnameediting'] = 'Redigera en slumpmässig kort svar matchningsfråga';
 $string['pluginnamesummary'] = 'Som en matchningsfråga, dock skapad slumpmässigt från de kortsvarsfrågorna i en viss kategori.';
+$string['privacy:metadata'] = 'Pluginmodulen Slumpmässig kortsvarsmatchning lagrar ingen personinformation.';
+$string['randomsamatch'] = 'Slumpmässig kortsvarsmatchning';
+$string['randomsamatchintro'] = 'För var och en av följande frågor väljer du det matchande svaret i menyn.';
+$string['randomsamatchnumber'] = 'Antal frågor att välja';
+$string['subcats'] = 'Inkludera underkategorier';
+$string['subcats_help'] = 'Om markerad, kommer frågor att väljas även från underkategorier.';

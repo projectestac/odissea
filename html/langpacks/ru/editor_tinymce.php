@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'ru', version '3.8'.
+ * Strings for component 'editor_tinymce', language 'ru', version '3.11'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -426,7 +426,7 @@ $string['fullpage_dlg:meta_index_follow'] = 'Индексировать и сл�
 $string['fullpage_dlg:meta_index_nofollow'] = 'Индексировать и не следовать';
 $string['fullpage_dlg:meta_keywords'] = 'Ключевые слова';
 $string['fullpage_dlg:meta_noindex_follow'] = 'Не индексировать но следовать';
-$string['fullpage_dlg:meta_noindex_nofollow'] = 'Не индексировать и не следовать';
+$string['fullpage_dlg:meta_noindex_nofollow'] = 'Не индексировать и не переходить по ссылкам';
 $string['fullpage_dlg:meta_props'] = 'Мета информация';
 $string['fullpage_dlg:meta_robots'] = 'Роботы';
 $string['fullpage_dlg:meta_tab'] = 'Основные';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'gl', version '3.8'.
+ * Strings for component 'enrol_paypal', language 'gl', version '3.11'.
  *
  * @package     enrol_paypal
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['assignrole'] = 'Asignar rol';
 $string['businessemail'] = 'Correo de empresa PayPal';
 $string['businessemail_desc'] = 'O enderezo de correo da súa conta de empresa PayPal';
-$string['cost'] = 'Custo de matrícula';
+$string['cost'] = 'Custo da matrícula';
 $string['costerror'] = 'O custo da matriculación non é numérico';
 $string['costorkey'] = 'Escolla un dos seguintes métodos de matriculación.';
 $string['currency'] = 'Moeda';
@@ -39,14 +39,14 @@ $string['enrolenddate_help'] = 'De estar activado, os usuarios soamente se poden
 $string['enrolenddaterror'] = 'A fin de data de matriculación non pode ser anterior á data de inicio';
 $string['enrolperiod'] = 'Duración da matriculación';
 $string['enrolperiod_desc'] = 'Período de tempo durante o que é válida a matriculación. De configurarse a cero, a duración da matriculación será ilimitada de modo predeterminado.';
-$string['enrolperiod_help'] = 'Tempo durante o que a matriculación é válida, comezando desde o momento en que o usuario se matricula. De estar desactivado, a duración da matriculación será ilimitada.';
+$string['enrolperiod_help'] = 'Tempo durante o que a matriculación é válida, comezando dende o momento en que o usuario se matricula. De estar desactivado, a duración da matriculación será ilimitada.';
 $string['enrolstartdate'] = 'Data de inicio';
 $string['enrolstartdate_help'] = 'De estar conectada, os usuarios soamente se poden matricular dende esta data en diante.';
 $string['errdisabled'] = 'O engadido de matriculación con PayPal está desactivado e non manexa as notificacións de pagamentos.';
 $string['erripninvalid'] = 'A notificación de pagamento instantáneo non foi verificada por PayPal.';
 $string['errpaypalconnect'] = 'Non foi posíbel conectar a {$a->url} para verificar a notificación de pagamento instantáneo: {$a->result}';
 $string['expiredaction'] = 'Acción na expiración da matrícula';
-$string['expiredaction_help'] = 'Seleccione a acción que se realizar cando a matricula do usuario expire. Vexa que algúns datos do usuario e de configuración purgaranse do curso na desmatriculación.';
+$string['expiredaction_help'] = 'Seleccione a acción que se realizar cando a matricula do usuario expire. Teña en conta que algúns datos do usuario e axustes purgaranse do curso na desmatriculación.';
 $string['mailadmins'] = 'Notificarlle ao admin';
 $string['mailstudents'] = 'Notificarlle aos alumnos';
 $string['mailteachers'] = 'Notificarlle aos profesores';
@@ -58,7 +58,7 @@ $string['paypal:unenrol'] = 'Desmatricular usuarios do curso';
 $string['paypal:unenrolself'] = 'Desmatricularse por si mesmo do curso';
 $string['paypalaccepted'] = 'Pagamentos PayPal aceptados';
 $string['pluginname'] = 'PayPal';
-$string['pluginname_desc'] = 'O módulo Paypal permítelle configurar cursos de pago. No caso de calquera curso ser cero, non se lles pedirá aos alumnos ningún pagamento para a entrada. Hai un custo xeral que vostede configura como predeterminado para o sitio enteiro e despois unha configuración para cada curso individualmente. O custo do curso sobrescribe o custo do sitio.';
+$string['pluginname_desc'] = 'O módulo Paypal permítelle configurar cursos de pago. No caso de calquera curso ser cero, non se lles pedirá aos alumnos ningún pagamento para a entrada. Hai un custo xeral que vostede configura como predeterminado para todo o sitio e após un axuste para cada curso individualmente. O custo do curso sobrescribe o custo do sitio.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'Información sobre as transaccións de PayPal para matriculacións con PayPal.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = 'Enderezo de correo ou identificación da conta de PayPal do destinatario do pagamento (é dicir, o comerciante).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = 'O ID do curso que se vende.';
@@ -69,7 +69,7 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:option_selection1_x'] = 'Nom
 $string['privacy:metadata:enrol_paypal:enrol_paypal:parent_txn_id'] = 'No caso de reembolso, reversión ou revogación cancelada, este sería o ID de transacción da transacción orixinal.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_status'] = 'O estado do pagamento';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = 'Considera se o pagamento foi financiado cun eCheck (echeck), ou foi financiado con saldo de PayPal, tarxeta de crédito ou transferencia instantánea (instantánea).';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'A razón pola que o estado de pagamento está pendente (se así for).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'A razón pola que o estado do pagamento está pendente (se así for).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:reason_code'] = 'A razón pola que o estado do pagamento está revertido, reembolsado, cancelado ou rexeitado (se o estado é un deles).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'Enderezo de correo electrónico principal do destinatario (é dicir, o comerciante).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'Identificación única da conta de PayPal do destinatario do pagamento (é dicir, o comerciante).';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'en', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'en', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -39,7 +39,9 @@ $string['createnewgoogleissuer'] = 'Create new Google service';
 $string['createnewissuer'] = 'Create new custom service';
 $string['createnewmicrosoftissuer'] = 'Create new Microsoft service';
 $string['createnewnextcloudissuer'] = 'Create new Nextcloud service';
+$string['createnewservice'] = 'Create new service:';
 $string['createnewuserfieldmapping'] = 'Create new user field mapping for issuer "{$a}"';
+$string['custom_service'] = 'Custom';
 $string['deleteconfirm'] = 'Are you sure you want to delete the identity issuer "{$a}"? Any plugins relying on this issuer will stop working.';
 $string['deleteendpointconfirm'] = 'Are you sure you want to delete the endpoint "{$a->endpoint}" for issuer "{$a->issuer}"? Any plugins relying on this endpoint will stop working.';
 $string['deleteuserfieldmappingconfirm'] = 'Are you sure you want to delete the user field mapping for issuer "{$a}"?';
@@ -57,6 +59,9 @@ $string['endpointname_help'] = 'Key used to search for this endpoint. Must end w
 $string['endpointsforissuer'] = 'Endpoints for issuer: {$a}';
 $string['endpointurl'] = 'URL';
 $string['endpointurl_help'] = 'URL for this endpoint. Must use https:// protocol.';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Login domains';
 $string['issueralloweddomains_help'] = 'If set, this setting is a comma separated list of domains that logins will be restricted to when using this provider.';
 $string['issueralloweddomains_link'] = 'OAuth_2_login_domains';
@@ -71,6 +76,8 @@ $string['issuerdisabled'] = 'Identity issuer disabled';
 $string['issuerenabled'] = 'Identity issuer enabled';
 $string['issuerimage'] = 'Logo URL';
 $string['issuerimage_help'] = 'An image URL used to show a logo for this issuer. May be displayed on login page.';
+$string['issuerloginpagename'] = 'Name displayed on the login page';
+$string['issuerloginpagename_help'] = 'If specified, this name will be used on the login page instead of the service name.';
 $string['issuerloginparams'] = 'Additional parameters included in a login request.';
 $string['issuerloginparams_help'] = 'Some systems require additional parameters for a login request in order to read the user\'s basic profile.';
 $string['issuerloginparamsoffline'] = 'Additional parameters included in a login request for offline access.';
@@ -88,7 +95,20 @@ $string['issuersetup'] = 'Detailed instructions on configuring the common OAuth 
 $string['issuersetuptype'] = 'Detailed instructions on setting up the {$a} OAuth 2 provider';
 $string['issuershowonloginpage'] = 'Show on login page';
 $string['issuershowonloginpage_help'] = 'If the OAuth 2 authentication plugin is enabled, this login issuer will be listed on the login page to allow users to log in with accounts from this issuer.';
+$string['issuersservicesallow'] = 'Allow services';
+$string['issuersservicesnotallow'] = 'Do not allow services';
+$string['issuerusedforinternal'] = 'Internal services';
+$string['issuerusedforlogin'] = 'Login';
+$string['issuerusein'] = 'This service will be used';
+$string['issuerusein_help'] = 'OAuth 2 services can be used for internal services, on the login page, or both, if required.';
+$string['issueruseineverywhere'] = 'Login page and internal services';
+$string['issueruseininternalonly'] = 'Internal services only';
+$string['issueruseinloginonly'] = 'Login page only';
+$string['linkedin_service'] = 'LinkedIn';
+$string['logindisplay'] = 'Display on login page as';
 $string['loginissuer'] = 'Allow login';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Not configured';
 $string['notdiscovered'] = 'Service discovery not successful';
 $string['notloginissuer'] = 'Do not allow login';

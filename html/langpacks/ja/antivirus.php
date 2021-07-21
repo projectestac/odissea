@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'ja', version '3.8'.
+ * Strings for component 'antivirus', language 'ja', version '3.11'.
  *
  * @package     antivirus
  * @category    string
@@ -26,11 +26,41 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actantivirushdr'] = '利用可能なアンチウイルスプラグイン';
+$string['antiviruscommonsettings'] = '一般アンチウイルス設定';
 $string['antiviruses'] = 'アンチウイルスプラグイン';
 $string['antivirussettings'] = 'アンチウイルスプラグインを管理する';
 $string['configantivirusplugins'] = 'あなたが使用したいアンチウイルスプラグインを選択して、適用順に並べ替えてください。';
+$string['datainfecteddesc'] = '感染データが検知されました。';
+$string['datainfectedname'] = '感染データ';
 $string['datastream'] = 'データ';
+$string['emailadditionalinfo'] = 'ウイルスエンジンからの追加詳細戻り値:';
+$string['emailauthor'] = 'アップロード by:';
+$string['emailcontenthash'] = 'コンテンツハッシュ:';
+$string['emailcontenttype'] = 'コンテンツタイプ:';
+$string['emaildate'] = 'アップロード日時:';
+$string['emailfilename'] = 'ファイル名:';
+$string['emailfilesize'] = 'ファイルサイズ:';
+$string['emailgeoinfo'] = 'ジオロケーション:';
+$string['emailinfectedfiledetected'] = '感染ファイル検出';
+$string['emailipaddress'] = 'IPアドレス:';
+$string['emailreferer'] = 'リファラ:';
+$string['emailreport'] = 'レポート:';
+$string['emailscanner'] = 'スキャナ:';
+$string['emailscannererrordetected'] = 'スキャナエラーが発生しました。';
 $string['emailsubject'] = '{$a} :: ClamAV通知';
+$string['enablequarantine'] = '隔離を有効にする';
+$string['enablequarantine_help'] = 'この設定を有効にした場合、ウイルスとして検出されたすべてのファイルは後で調査するため隔離フォルダ ([dataroot]/{$a}) に置かれます。
+Moodleへのアップロードは失敗します。
+あなたがファイルシステムレベルのウイルススキャニングを導入している場合、隔離ファイルの検出を避けるため隔離フォルダをアンチウイルスチェックから除外してください。';
+$string['fileinfecteddesc'] = '感染ファイルが検出されました。';
+$string['fileinfectedname'] = '感染ファイル';
+$string['notifyemail'] = 'アンチウイルス警告通知メール';
+$string['notifyemail_help'] = 'ウイルス検出時に通知するメールアドレスです。空白にした場合、サイト管理者に通知が送信されます。';
 $string['privacy:metadata'] = 'アンチウイルスシステムはいかなる個人データも保存しません。';
+$string['quarantinedfiles'] = 'アンチウイルス隔離ファイル';
+$string['quarantinedisabled'] = '隔離は無効にされています。ファイルは保存されません。';
+$string['quarantinetime'] = '最大隔離時間';
+$string['quarantinetime_desc'] = '指定された期間より古い隔離ファイルは削除されます。';
+$string['taskcleanup'] = '隔離ファイルをクリーンアップします。';
+$string['unknown'] = '不明';
 $string['virusfound'] = '{$a->item} をウイルスチェッカでスキャンした結果、感染が発見されました!';
-$string['virusfounduser'] = 'あなたがアップロードしたファイル {$a->filename} はウイルスチェッカによりスキャンされ、ウイルスに感染していることが発見されました! あなたのファイルは正常にアップロードされませんでした。';

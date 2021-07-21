@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'gl', version '3.8'.
+ * Strings for component 'tool_cohortroles', language 'gl', version '3.11'.
  *
  * @package     tool_cohortroles
  * @category    string
@@ -39,9 +39,9 @@ $string['nocohortroleassignmentssaved'] = 'Non se gardaron as asignacións de ro
 $string['onecohortroleassignmentsaved'] = 'Gardouse unha asignación de rol de círculo.';
 $string['pluginname'] = 'Xestión de roles de círculo';
 $string['privacy:metadata:tool_cohortroles'] = 'O engadido de xestión de roles «Cohort» almacena asignacións de roles de círculos.';
-$string['privacy:metadata:tool_cohortroles:cohortid'] = 'O ID do círculo.';
+$string['privacy:metadata:tool_cohortroles:cohortid'] = 'O ID do círculo';
 $string['privacy:metadata:tool_cohortroles:id'] = 'O ID do rexistro de asignación de roles de círculo.';
-$string['privacy:metadata:tool_cohortroles:roleid'] = 'O ID do rol.';
+$string['privacy:metadata:tool_cohortroles:roleid'] = 'O ID do rol';
 $string['privacy:metadata:tool_cohortroles:timecreated'] = 'A data/hora na que se creou a asignación de rol de círculo.';
 $string['privacy:metadata:tool_cohortroles:timemodified'] = 'A data/hora na que se modificou a asignación de rol de círculo.';
 $string['privacy:metadata:tool_cohortroles:userid'] = 'O ID do usuario.';

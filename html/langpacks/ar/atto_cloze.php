@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_cloze', language 'ar', version '3.8'.
+ * Strings for component 'atto_cloze', language 'ar', version '3.11'.
  *
  * @package     atto_cloze
  * @category    string
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['pluginname'] = 'محرر Cloze';
 $string['privacy:metadata'] = 'إن ملحق محرر Atto Cloze لا يخزن أيّ بيانات شخصية.';

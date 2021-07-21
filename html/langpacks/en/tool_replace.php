@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'en', version '3.8'.
+ * Strings for component 'tool_replace', language 'en', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = 'Additional skip tables';
+$string['additionalskiptables_desc'] = 'A list of tables (separated by commas) which should be skipped when running the database search and replace.';
 $string['cannotfit'] = 'The replacement is longer than the original and shortening is not allowed; cannot continue.';
 $string['disclaimer'] = 'I understand the risks of this operation';
 $string['doit'] = 'Yes, do it!';

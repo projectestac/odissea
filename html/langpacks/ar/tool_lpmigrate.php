@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'ar', version '3.8'.
+ * Strings for component 'tool_lpmigrate', language 'ar', version '3.11'.
  *
  * @package     tool_lpmigrate
  * @category    string
@@ -25,46 +25,49 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowedcourses'] = 'المواد المسموح بها';
+$string['allowedcourses'] = 'المقررات الدراسية المسموح بها';
 $string['allowedcourses_help'] = 'حدد المواد المراد ترحيلها إلى الإطار الجديد. إذا لم يتم تحديد مادة ، فسيتم ترحيل جميع المواد.';
-$string['continuetoframeworks'] = 'الاستمرار في الأطر';
+$string['continuetoframeworks'] = 'المتابعة إلى أطر العمل';
 $string['coursecompetencymigrations'] = 'ترحيل الكفاءة من المادة';
 $string['coursemodulecompetencymigrations'] = 'ترحيل نشاط المادة ومصادر الكفاءة';
 $string['coursemodulesfound'] = 'أنشطة المادة أو الموارد الموجودة';
-$string['coursesfound'] = 'المواد الموجودة';
-$string['coursestartdate'] = 'تاريخ بدء المواد';
-$string['coursestartdate_help'] = 'في حالة التمكين ، فلن يتم ترحيل المواد التي لها تاريخ بدء قبل التاريخ المحدد.';
-$string['disallowedcourses'] = 'المواد غير المسموح بها';
+$string['coursesfound'] = 'المقررات الدراسية الموجودة';
+$string['coursestartdate'] = 'تاريخ بدء المقررات الدراسية';
+$string['coursestartdate_help'] = 'في حالة التمكين، لن يتم ترحيل المقررات الدراسية التي لها تاريخ بدء قبل التاريخ المحدد.';
+$string['disallowedcourses'] = 'المقررات الدراسية غير المسموح بها';
 $string['disallowedcourses_help'] = 'حدد أي مادة لا ينبغي ترحيلها إلى الإطار الجديد.';
 $string['errorcannotmigratetosameframework'] = 'لا يمكن الترحيل من وإلى نفس الإطار.';
 $string['errorcouldnotmapcompetenciesinframework'] = 'لا يمكن تعيين أي كفاءة في هذا الإطار.';
 $string['errors'] = 'الأخطاء';
 $string['errorwhilemigratingcoursecompetencywithexception'] = 'خطأ أثناء ترحيل كفاءة المادة: {$a}';
-$string['errorwhilemigratingmodulecompetencywithexception'] = 'خطأ أثناء ترحيل النشاط أو كفاءة المصادر: {$a}';
+$string['errorwhilemigratingmodulecompetencywithexception'] = 'وقع خطأ عند ترحيل كفاءة النشاط أو المورد: {$a}';
 $string['excludethese'] = 'استبعد هذه';
-$string['explanation'] = 'يمكن استخدام هذه الأداة لتحديث إطار الكفاءات إلى إصدار أحدث. يبحث عن الكفاءات في الدورات و الأنشطة باستخدام الإطار القديم ، و يقوم بتحديث الروابط للإشارة إلى الإطار الجديد.
-لا يوصى بتحرير المجموعة القديمة من الكفاءات مباشرةً ، حيث سيؤدي ذلك إلى تغيير جميع الكفاءات التي تم منحها بالفعل في خطط تعلم المستخدمين. عادةً ما تقوم باستيراد الإصدار الجديد من إطار عمل وإخفاء الإطار القديم ثم استخدام هذه الأداة لترحيل المواد الجديدة إلى الإطار الجديد.';
+$string['explanation'] = 'يمكن استعمال هذه الأداة لتحديث إطار عمل الكفاءة إلى إصدار أحدث. إنها تبحث عن الكفاءات في المقررات الدراسية والأنشطة باستعمال الإطار القديم، وتقوم بتحديث الروابط للإشارة إلى الإطار الجديد.
+
+لا يوصى بتحرير المجموعة القديمة من الكفاءات مباشرةً، حيث سيؤدي ذلك إلى تغيير كل الكفاءات التي تم منحها بالفعل في خطط تعلم المستخدمين.
+
+عادةً، ستقوم باستيراد الإصدار الجديد من إطار العمل وإخفاء الإطار القديم، ثم استعمال هذه الأداة لترحيل المقررات الدراسية الجديدة إلى إطار العمل الجديد.';
 $string['findingcoursecompetencies'] = 'العثور على كفاءات المقرر';
-$string['findingmodulecompetencies'] = 'إيجاد النشاط و كفاءات المصادر';
-$string['frameworks'] = 'الأُطر';
+$string['findingmodulecompetencies'] = 'إيجاد كفاءات النشاط والمورد';
+$string['frameworks'] = 'أُطر العمل';
 $string['limittothese'] = 'الحد من هذه';
-$string['lpmigrate:frameworksmigrate'] = 'ترحيل الأطر';
-$string['migrateframeworks'] = 'ترحيل الأطر';
-$string['migratefrom'] = 'الهجرة من';
+$string['lpmigrate:frameworksmigrate'] = 'ترحيل أطر العمل';
+$string['migrateframeworks'] = 'ترحيل أطر العمل';
+$string['migratefrom'] = 'الترحيل من';
 $string['migratefrom_help'] = 'حدد الإطار الأقدم المستخدم حاليًا.';
 $string['migratemore'] = 'ترحيل المزيد';
 $string['migrateto'] = 'ترحيل إلى';
 $string['migrateto_help'] = 'حدد الإصدار الأحدث من الإطار. من الممكن فقط اختيار إطار غير مخفي.';
-$string['migratingcourses'] = 'ترحيل المواد';
+$string['migratingcourses'] = 'ترحيل المقررات الدراسية';
 $string['missingmappings'] = 'تعيينات مفقودة';
-$string['performmigration'] = 'أداء الترحيل';
+$string['performmigration'] = 'تنفيذ الترحيل';
 $string['pluginname'] = 'أداة ترحيل الكفاءات';
-$string['privacy:metadata'] = 'لا يخزن مكون Competencies migration tool أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق أداة ترحيل الكفاءات لا يخزن أي بيانات شخصية.';
 $string['results'] = 'النتائج';
 $string['startdatefrom'] = 'تاريخ البدء من';
 $string['unmappedin'] = 'غير معيّن في {$a}';
 $string['warningcouldnotremovecoursecompetency'] = 'لا يمكن إزالة كفاءة المادة.';
 $string['warningcouldnotremovemodulecompetency'] = 'لا يمكن إزالة النشاط أو كفاءة المورد.';
 $string['warningdestinationcoursecompetencyalreadyexists'] = 'الكفاءة الوجهة موجودة بالفعل.';
-$string['warningdestinationmodulecompetencyalreadyexists'] = 'النشاط الوجهة أو كفاءة المصادر موجودة بالفعل.';
+$string['warningdestinationmodulecompetencyalreadyexists'] = 'الكفاءة المقصودة للنشاط أو المورد موجودة سلفاً.';
 $string['warnings'] = 'تحذيرات';

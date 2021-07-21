@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'fr', version '3.8'.
+ * Strings for component 'block_myoverview', language 'fr', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = 'Trier les cours par date de dernier accès';
 $string['aria:list'] = 'Passer à la vue en liste';
 $string['aria:past'] = 'Afficher les cours passés';
 $string['aria:removefromfavourites'] = 'Retirer des favoris';
+$string['aria:shortname'] = 'Trier les cours par nom abrégé';
 $string['aria:showcourse'] = 'Montrer {$a} dans l\'affichage';
 $string['aria:sortingdropdown'] = 'Menu déroulant de tri';
 $string['aria:summary'] = 'Passer à la vue en résumé';
@@ -62,8 +63,6 @@ $string['courseprogress'] = 'Progression du cours :';
 $string['customfield'] = 'Champ personnalisé';
 $string['customfiltergrouping'] = 'Champ à utiliser';
 $string['customfiltergrouping_nofields'] = 'Cette option nécessite d\'avoir au moins un champ de cours personnalisé visible pour tout le monde.';
-$string['defaulttab'] = 'Onglet par défaut';
-$string['defaulttab_desc'] = 'L\'onglet qui sera affiché lors du premier affichage de la vue d\'ensemble du cours. Lors d\'un affichage ultérieur, l\'onglet actif de l\'utilisateur est affiché.';
 $string['displaycategories'] = 'Afficher les catégories';
 $string['displaycategories_help'] = 'Afficher la catégorie de cours dans les infos des cours sur le tableau de bord, notamment dans les cartes, les listes et les résumés.';
 $string['favourites'] = 'Favoris';
@@ -76,31 +75,18 @@ $string['lastaccessed'] = 'Dernier accès';
 $string['layouts'] = 'Dispositions disponibles';
 $string['layouts_help'] = 'Les dispositions de cours que les utilisateurs peuvent sélectionner. Si aucune n\'est choisie, la disposition en cartes sera utilisée.';
 $string['list'] = 'Liste';
-$string['morecourses'] = 'Plus de cours';
 $string['myoverview:myaddinstance'] = 'Ajouter un bloc Vue d\'ensemble des cours au tableau de bord';
-$string['next30days'] = '30 prochains jours';
-$string['next7days'] = '7 prochains jours';
 $string['nocourses'] = 'Pas de cours';
-$string['nocoursesfuture'] = 'Pas de cours à venir';
-$string['nocoursesinprogress'] = 'Pas de cours actif';
-$string['nocoursespast'] = 'Pas de cours passé';
 $string['nocustomvalue'] = 'Pas de {$a}';
-$string['noevents'] = 'Pas d\'activité à venir à rendre';
 $string['past'] = 'Passés';
 $string['pluginname'] = 'Vue d\'ensemble des cours';
 $string['privacy:metadata:overviewgroupingpreference'] = 'Le réglage du filtre du bloc Vue d\'ensemble du cours.';
-$string['privacy:metadata:overviewlasttab'] = 'Ceci enregistre le dernier onglet sélectionné par l\'utilisateur dans le bloc vue d\'ensemble.';
 $string['privacy:metadata:overviewpagingpreference'] = 'La préférence de pagination du bloc Vue d\'ensemble des cours.';
 $string['privacy:metadata:overviewsortpreference'] = 'Le réglage de tri du bloc Vue d\'ensemble du cours.';
 $string['privacy:metadata:overviewviewpreference'] = 'Le réglage d\'affichage du bloc Vue d\'ensemble du cours.';
 $string['privacy:request:preference:set'] = 'La valeur du réglage « {$a->name} » était « {$a->value} »';
-$string['recentlyoverdue'] = 'Récemment en retard';
 $string['removefromfavourites'] = 'Retirer ce cours des favoris';
+$string['shortname'] = 'Nom abrégé';
 $string['show'] = 'Montrer dans l\'affichage';
-$string['sortbycourses'] = 'Tri par cours';
-$string['sortbydates'] = 'Tri par date';
 $string['summary'] = 'Résumé';
-$string['timeline'] = 'Chronologie';
 $string['title'] = 'Nom';
-$string['viewcourse'] = 'Afficher le cours';
-$string['viewcoursename'] = 'Afficher le cours {$a}';

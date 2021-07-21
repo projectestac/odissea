@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_jabber', language 'sv', version '3.8'.
+ * Strings for component 'message_jabber', language 'sv', version '3.11'.
  *
  * @package     message_jabber
  * @category    string
@@ -29,6 +29,7 @@ $string['configjabberhost'] = 'Den server som ansluts till för att skicka Jabbe
 $string['configjabberpassword'] = 'Lösenord för att ansluta till Jabber-servern.';
 $string['configjabberport'] = ' Den port som ska användas vid kontakt med jabber-servern.';
 $string['configjabberserver'] = 'Värd ID för MPP (detta kan lämnas tomt om det är det samma som jabber-värden)';
+$string['configjabberusername'] = 'Användarnamnet som ska användas vid anslutning till Jabber-servern';
 $string['jabberhost'] = 'Jabber värd';
 $string['jabberid'] = 'Jabber-ID';
 $string['jabberpassword'] = 'Jabber-lösenord';
@@ -37,3 +38,8 @@ $string['jabberserver'] = 'Jabber server';
 $string['jabberusername'] = 'Jabber-användarnamn';
 $string['notconfigured'] = 'Jabber-servern har inte konfigurerats så Jabber-meddelanden kan inte skickas. (Denna används för närvarande inte.)';
 $string['pluginname'] = 'Jabber';
+$string['privacy:metadata:contexturl'] = 'URL:en för att visa händelsen.';
+$string['privacy:metadata:externalpurpose'] = 'Den här informationen skickas till en extern Jabber-server som i slutändan levereras som ett meddelande till mottagaren.';
+$string['privacy:metadata:smallmessage'] = 'Ett avsnitt av meddelandet.';
+$string['privacy:metadata:userfrom'] = 'Användaren som skickar meddelandet.';
+$string['privacy:metadata:userto'] = 'Mottagaren av meddelandet.';

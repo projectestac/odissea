@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'ko', version '3.8'.
+ * Strings for component 'atto_title', language 'ko', version '3.11'.
  *
  * @package     atto_title
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['h3'] = '헤딩 1';
-$string['h4'] = '헤딩 2';
-$string['h5'] = '헤딩 3';
+$string['h3'] = '대주제';
+$string['h4'] = '중주제';
+$string['h5'] = '소주제';
 $string['p'] = '문단';
 $string['pluginname'] = '문단 스타일';
 $string['pre'] = '사전 포맷';

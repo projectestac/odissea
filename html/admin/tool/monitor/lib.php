@@ -32,12 +32,14 @@ defined('MOODLE_INTERNAL') || die;
  * @param context         $context    The context of the course
  */
 function tool_monitor_extend_navigation_course($navigation, $course, $context) {
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     if (!get_protected_agora()) {
         return;
     }
-    //************ FI
+    // ************ FI
+
     if (has_capability('tool/monitor:managerules', $context) && get_config('tool_monitor', 'enablemonitor')) {
         $url = new moodle_url('/admin/tool/monitor/managerules.php', array('courseid' => $course->id));
         $settingsnode = navigation_node::create(get_string('managerules', 'tool_monitor'), $url, navigation_node::TYPE_SETTING,
@@ -59,12 +61,13 @@ function tool_monitor_extend_navigation_course($navigation, $course, $context) {
  */
 function tool_monitor_extend_navigation_frontpage($navigation, $course, $context) {
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     if (!get_protected_agora()) {
         return;
     }
-    //************ FI
+    // ************ FI
+
     if (has_capability('tool/monitor:managerules', $context)) {
         $url = new moodle_url('/admin/tool/monitor/managerules.php', array('courseid' => $course->id));
         $settingsnode = navigation_node::create(get_string('managerules', 'tool_monitor'), $url, navigation_node::TYPE_SETTING,
@@ -89,12 +92,13 @@ function tool_monitor_extend_navigation_frontpage($navigation, $course, $context
 function tool_monitor_extend_navigation_user_settings($navigation, $user, $usercontext, $course, $coursecontext) {
     global $USER, $PAGE;
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     if (!get_protected_agora()) {
         return;
     }
-    //************ FI
+    // ************ FI
+
     // Don't bother doing needless calculations unless we are on the relevant pages.
     $onpreferencepage = $PAGE->url->compare(new moodle_url('/user/preferences.php'), URL_MATCH_BASE);
     $onmonitorpage = $PAGE->url->compare(new moodle_url('/admin/tool/monitor/index.php'), URL_MATCH_BASE);

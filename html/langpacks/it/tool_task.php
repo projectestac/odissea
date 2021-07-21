@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'it', version '3.8'.
+ * Strings for component 'tool_task', language 'it', version '3.11'.
  *
  * @package     tool_task
  * @category    string
@@ -25,34 +25,57 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adhoc'] = 'Ad hoc';
+$string['adhocempty'] = 'La coda delle elaborazioni ad hoc è vuota';
+$string['adhocqueueold'] = 'L\'elaborazione più vecchia è {$a->age}, che è maggiore di {$a->max}';
+$string['adhocqueuesize'] = 'La coda ad hoc contiene {$a} elaborazioni.';
+$string['adhoctaskid'] = 'ID elaborazione ad hoc: {$a}';
+$string['adhoctasks'] = 'Elaborazione ad hoc';
 $string['asap'] = 'ASAP';
 $string['backtoscheduledtasks'] = 'Torna alle elaborazioni pianificate';
 $string['blocking'] = 'Blocco';
 $string['cannotfindthepathtothecli'] = 'Non è stato possibile trovare il percorso del CLI PHP, l\'elaborazione non è stata avviata. E\' possibile impostare il \'Percorso del CLI PHP\' in Amministrazione del sito / Server / Percorsi di sistema';
+$string['checkadhocqueue'] = 'Coda elaborazioni ad hoc';
+$string['checkcronrunning'] = 'Esecuzione del cron';
+$string['checkmaxfaildelay'] = 'Ritardo massimo elaborazioni in errore';
+$string['classname'] = 'Nome classe';
 $string['clearfaildelay_confirm'] = 'Sei sicuro di annullare il ritardo massimo dell\'elaborazione \'{$a}\'? A seguire l\'elaborazione riprenderà la sua pianificazione.';
 $string['component'] = 'Componente';
 $string['corecomponent'] = 'Core';
+$string['crondisabled'] = 'Il cron è disabilitato. Non saranno avviate nuove elaborazioni pianificate e il sistema non funzionerà correttamente fin quando il cron non sarà di nuovo attivo.';
+$string['cronok'] = 'Il cron gira regolarmente';
 $string['default'] = 'Default';
+$string['defaultx'] = 'Default: {$a}';
 $string['disabled'] = 'Disabilitato';
 $string['disabled_help'] = 'Le elaborazioni pianificate disabilitate che non  saranno elaborate dal cron possono essere lanciate manualmente via CLI.';
 $string['edittaskschedule'] = 'Modifica elaborazione pianificata:  {$a}';
 $string['enablerunnow'] = 'Abilita \'Esegui adesso\' per le elaborazioni pianificate';
 $string['enablerunnow_desc'] = 'Gli amministratori potranno lanciare singole elaborazioni direttamente dall\'interfaccia senza attendere l\'elaborazione pianificata. La funzione richiede l\'impostazione del \'Percorso del CLI PHP\' nei Percorsi di sistema. Da tenere presente che l\'elaborazione girerà sul web server, quindi durante l\'elaborazione le prestazioni potrebbero degradarsi.';
 $string['faildelay'] = 'Ritardo in caso di errore';
+$string['fromcomponent'] = 'Dal componente: {$a}';
+$string['hostname'] = 'Nome host';
 $string['lastruntime'] = 'Ultima elaborazione';
+$string['lastupdated'] = 'Ultimo aggiornamento: {$a}.';
 $string['nextruntime'] = 'Prossima elaborazione';
+$string['pid'] = 'PID';
 $string['plugindisabled'] = 'Plugin disabilitato';
 $string['pluginname'] = 'Configurazione elaborazioni pianificate';
 $string['privacy:metadata'] = 'Il plugin "Elaborazioni pianificate" non memorizza dati personali.';
 $string['resettasktodefaults'] = 'Ripristina la pianificazione di default';
 $string['resettasktodefaults_help'] = 'La pianificazione personalizzata sarà eliminata e verrà ripristinata la pianificazione di default';
+$string['runagain'] = 'Esegui di nuovo';
+$string['runningtasks'] = 'L\'elaborazione è in corso';
 $string['runnow'] = 'Esegui adesso';
 $string['runnow_confirm'] = 'Sei sicuro di eseguire l\'elaborazione ‘{$a}’ adesso? L\'elaborazione sarà lanciata sul server web e richiederà del tempo per essere completata.';
 $string['runpattern'] = 'Schema di esecuzione';
+$string['scheduled'] = 'Pianificata';
 $string['scheduledtaskchangesdisabled'] = 'La modifica delle elaborazioni pianificate è disabilitata';
 $string['scheduledtasks'] = 'Elaborazioni pianificate';
+$string['started'] = 'Avviata';
 $string['taskdisabled'] = 'Elaborazione disabilitata';
+$string['taskfailures'] = '{$a} elaborazioni in errore';
 $string['tasklogs'] = 'Log delle elaborazioni';
+$string['tasknofailures'] = 'Non ci sono elaborazioni in errore';
 $string['taskscheduleday'] = 'Giorno';
 $string['taskscheduleday_help'] = 'Il giorno del mese nel quale svolgere l\'elaborazione. Il formato da usare è lo stesso del cron Unix. Esempi:
 

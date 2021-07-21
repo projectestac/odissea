@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ar', version '3.8'.
+ * Strings for component 'hub', language 'ar', version '3.11'.
  *
  * @package     hub
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activeparticipantnumberaverage'] = 'متوسط عدد المشاركين النشطين مؤخراً ({$a})';
+$string['activeusersnumber'] = 'عدد المستخدمين النشطين مؤخراً ({$a})';
 $string['addscreenshots'] = '';
 $string['advertise'] = 'قم بمشاركة هذا المقرر لينضم إليه الناس';
 $string['advertised'] = 'لينضم إليه الناس';
 $string['advertiseon'] = 'مشاركة هذا المقرر الدراسي في {$a}';
-$string['advertisepublication_help'] = 'الإعلان عن المواد الخاصة بك على الخادم الجماعي .. مركزاً يتيح للناس العثور على هذا المواد و يأتون إلى هنا للتسجيل.';
+$string['advertisepublication_help'] = 'سيتم إدراج هذا المقرر الدراسي في Moodle.net بمثابة مقرر دراسي يمكن للناس الانضمام إليه والمشاركة فيه. ينبغي تمكين الانضمام الذاتي المبني على البريد الالكتروني في الموقع، كما ينبغي تمكين الانضمام الذاتي في هذا المقرر.';
 $string['analyticsactions'] = 'عدد الإجراءات المتخذة بشأن التنبؤات المولدة ({$a})';
-$string['analyticsactionsnotuseful'] = 'عدد الإجراءات التي تشير إلى التنبؤ على أنها غير مفيدة  ({$a})';
+$string['analyticsactionsnotuseful'] = 'عدد الإجراءات التي تشير إلى التنبؤ على أنه غير مفيد ({$a})';
 $string['analyticsenabledmodels'] = 'عدد نماذج التنبؤ الممكنة ({$a})';
 $string['analyticspredictions'] = 'عدد التنبؤات التي تم إنشاؤها ({$a})';
 $string['audience'] = 'الجمهور';
@@ -44,7 +46,7 @@ $string['communityremoved'] = 'لقد تم إزالة رابط هذا المقر
 $string['completeregistration'] = 'التسجيل الكامل مع Moodle.net';
 $string['confirmregistration'] = 'تأكيد التسجيل';
 $string['contributornames'] = 'المساهمين الآخرين';
-$string['contributornames_help'] = 'يمكنك استخدام هذا الحقل لسرد أسماء لأيّ شخص آخر ساهم في هذا المقرر.';
+$string['contributornames_help'] = 'يمكنك استعمال هذا الحقل لسرد أسماء أيّ أشخاص آخرين ساهموا في هذا المقرر الدراسي.';
 $string['coursename'] = 'الاسم';
 $string['coursepublished'] = 'تمت مشاركة هذا المقرر الدراسي بنجاح في \'{$a}\'.';
 $string['courseshortname'] = 'الاسم القصير';
@@ -63,9 +65,9 @@ $string['demourl'] = 'رابط تجريبي';
 $string['demourl_help'] = 'أدخل رابط تجريبي لمادتك، بشكل افتراضي هو رابط المادة .
 يتم عرض العنوان التجريبي كرابط في نتيجة البحث .';
 $string['description'] = 'الوصف';
-$string['description_help'] = 'سيتم عرض نص الوصف هذا في قائمة الدورات التدريبية على Moodle.net.';
+$string['description_help'] = 'سيتم عرض هذا النص الوصفي في قائمة المقررات الدراسية لموقع Moodle.net.';
 $string['detectednotexistingpublication'] = '{$a->hubname} تسرد قائمة من المقررات لم يعد لها وجود. أشعر مسؤول المركز بضرورة إزالة المنشور برقم {$a->id}.';
-$string['downloadable'] = 'يمكن تحميله';
+$string['downloadable'] = 'قابل للتنزيل';
 $string['educationallevel'] = 'المستوى التعليمي';
 $string['educationallevel_help'] = 'حدد أنسب مستوى تعليمي ينسجم مع المقرر .';
 $string['edulevelassociation'] = 'الجمعية';
@@ -78,7 +80,7 @@ $string['eduleveltertiary'] = 'التعليم بعد الثانوي';
 $string['emailalert'] = 'إشعارات بالبريد الإلكتروني';
 $string['emailalert_help'] = 'إذا تم تمكينه، سيرسل لك المشرف على المركز الرئيسي رسائل عن مشاكل الأمان وغيرها من الأخبار المهمة.';
 $string['enrollable'] = 'قابل للانضمام';
-$string['errorbadimageheightwidth'] = 'يجب ألا يتجاوز قياس أبعاد الصورة {$a->width} X {$a->height}';
+$string['errorbadimageheightwidth'] = 'يجب ألا يتجاوز قياس أبعاد الصورة {$a->width} × {$a->height}';
 $string['errorcourseinfo'] = 'وقع خطأ عند استعادة البيانات الوصفية للمقرر من {$a}. لطفاً، حاول مجدداً لاستعادة البيانات الوصفية للمقرر عبر إعادة تحميل هذه الصفحة لاحقاً. بخلاف ذلك، يمكن أن تقرر المضي بعملية التسجيل بالبيانات الوصفية الافتراضية الآتية.';
 $string['errorcoursepublish'] = 'وقع خطأ خلال نشر المقرر الدراسي {$a}. لطفاً، حاول مرة أخرى لاحقاً.';
 $string['errorcoursewronglypublished'] = 'أرجع موقع Moodle.net خطأ خلال النشر. لطفاً، حاول مرة أخرى لاحقاً.';
@@ -141,14 +143,15 @@ $string['registereduserdevices'] = 'عدد المستخدمين الحائزين
 $string['registersite'] = 'سَجِّل في {$a}';
 $string['registerwithmoodleorg'] = 'تسجيل موقعك';
 $string['registerwithmoodleorgcomplete'] = 'أكمل تسجيل موقعك';
-$string['registerwithmoodleorginfo'] = 'يسعدنا البقاء على اتصال و تزويدك بأشياء مهمة لموقع Moodle الخاص بك! عن طريق التسجيل:
-* يمكنك الاشتراك لتلقي إخطارات بإصدارات Moodle الجديدة و تنبيهات الأمان و الأخبار الهامة الأخرى.
-* يمكنك الوصول إلى إشعارات الدفع عبر الهاتف المحمول و تنشيطها من موقع Moodle الخاص بك من خلال تطبيق Moodle المجاني.
-* أنت تساهم في إحصائيات Moodle الخاصة بالمجتمع في جميع أنحاء العالم ، و التي تساعدنا في تحسين Moodle ومواقع مجتمعنا.
-* إذا كنت ترغب في ذلك ، يمكن إدراج موقعك في قائمة مواقع Moodle المسجلة في بلدك.';
-$string['registerwithmoodleorginfoapp'] = 'حول تطبيق Moodle';
+$string['registerwithmoodleorginfo'] = 'يسعدنا البقاء على اتصال وتزويدك بأشياء مهمة لموقع مودل الخاص بك! عن طريق التسجيل:
+
+* يمكنك الاشتراك لتلقي إشعارات عن إصدارات مودل الجديدة، تنبيهات الأمان، والأخبار الهامة الأخرى.
+* يمكنك الوصول إلى الإشعارات المدفعوعة إلى الجوالات وتنشيطها من موقع مودل الخاص بك ومن خلال تطبيق مودل المجاني.
+* أنت تساهم في إحصائيات مودل الخاصة بمجتمعه العلمي، مما يساعدنا في تحسينه وتحسين مواقع مجتمعنا.
+* إذا كنت ترغب في ذلك، يمكن إدراج موقعك في قائمة مواقع مودل المسجلة في بلدك.';
+$string['registerwithmoodleorginfoapp'] = 'حول تطبيق مودل';
 $string['registerwithmoodleorginfosites'] = 'مواقع أخرى في بلدي';
-$string['registerwithmoodleorginfostats'] = 'إحصائيات Moodle';
+$string['registerwithmoodleorginfostats'] = 'إحصائيات مودل';
 $string['registerwithmoodleorgremove'] = 'أنت تقوم بإلغاء تسجيل موقعك. في حالة المتابعة، لن تتمكن من الوصول إلى الإشعارات وتنبيهات الأمان الهامة.
 لن يتمكن مستخدموك من تلقي الإشعارات المدفعوعة من موقعك إلى تطبيق مودل للجوالات.
 هل أنت متأكد من أنك تريد إلغاء تسجيل موقعك؟';
@@ -165,7 +168,7 @@ $string['screenshots'] = 'لقطات الشاشة';
 $string['screenshots_help'] = 'أي لقطات شاشة للمقرر سيتم عرضها في نتائج البحث.';
 $string['search'] = 'بحث';
 $string['sendfollowinginfo'] = 'المزيد من المعلومات';
-$string['sendfollowinginfo_help'] = 'سيتم إرسال المعلومات الآتية للمساهمة في الإحصائيات الإجمالية حصراً. قد لا تكون متاحة للعامة ضمن أي قائمة مواقع.';
+$string['sendfollowinginfo_help'] = 'سيتم إرسال المعلومات الآتية إلى مودل عند كل تحديث لتسجيل موقعك (الذي يحدث أسبوعيًا بشكل تلقائي عند تنفيذ المهمة المجدولة \'تسجيل الموقع\'). المعلومات تساهم في الإحصائيات الإجمالية حصراً ولن تكون متاحة للعامة ضمن أي قائمة مواقع.';
 $string['sendingcourse'] = 'إرسال مقرر';
 $string['sendingsize'] = 'لطفاً، إنتظر. ملف المقرر الدراسي قيد الرفع ({$a->total} ميغا بايت)...';
 $string['sent'] = '... أُكمِلَت';

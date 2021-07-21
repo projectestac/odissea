@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'nl', version '3.8'.
+ * Strings for component 'qtype_ddwtos', language 'nl', version '3.11'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -37,4 +37,7 @@ De antwoordkeuzes kunnen gegroepeerd worden zodat alle antwoorden in een bepaald
 $string['pluginnameadding'] = 'Slepen en neerzetten in tekst toevoegen';
 $string['pluginnameediting'] = 'Slepen en neerzetten in tekst bewerken';
 $string['pluginnamesummary'] = 'Ontbrekende woorden in de vraagtekst worden ingevuld door woorden te slepen en neer te zetten.';
-$string['privacy:metadata'] = 'De plug-in Drag and drop into text question type slaat geen persoonlijke gegevens op.';
+$string['privacy:metadata'] = 'Het woorden slepen en neerzetten in tekst vraag-type laat vraag-auteurs standaardopties en gebruikersvoorkeuren instellen.';
+$string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
+$string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
+$string['privacy:preference:shuffleanswers'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';

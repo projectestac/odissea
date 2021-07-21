@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_uploadsingle', language 'ar', version '3.8'.
+ * Strings for component 'assignment_uploadsingle', language 'ar', version '3.11'.
  *
  * @package     assignment_uploadsingle
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'تحميل واحد';
-$string['privacy:metadata'] = 'لا يقوم المكون الإضافي لUpload single assignment   بتخزين أي بيانات شخصية.';
+$string['pluginname'] = 'رفع منفرد';
+$string['privacy:metadata'] = 'إن ملحق رفع الواجب المنفرد لا يخزن أي بيانات شخصية.';

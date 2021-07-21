@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_informationitem', language 'sv', version '3.8'.
+ * Strings for component 'qbehaviour_informationitem', language 'sv', version '3.11'.
  *
  * @package     qbehaviour_informationitem
  * @category    string
@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Beteende för informationsobjekt';
+$string['pluginname'] = 'Beteende hos informationsobjekt';
+$string['privacy:metadata'] = 'Pluginmodulen Informationsobjekt frågebeteende lagrar ingen personinformation.';
 $string['seen'] = 'Sett';

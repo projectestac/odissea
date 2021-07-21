@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'fr', version '3.8'.
+ * Strings for component 'quiz_statistics', language 'fr', version '3.11'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -38,7 +38,7 @@ $string['analysisvariant'] = '« {$a->name} » variante {$a->variant}';
 $string['attempts'] = 'Tentatives';
 $string['attemptsall'] = 'toutes les tentatives';
 $string['attemptsfirst'] = 'Première tentative';
-$string['backtoquizreport'] = 'Retour à la page du rapport de statistiques principal.';
+$string['backtoquizreport'] = 'Retour à la page principale du rapport de statistiques.';
 $string['calculatefrom'] = 'Calculer les statistiques de';
 $string['calculatingallstats'] = 'Calcul des statistiques du test, des questions et analyse des données des réponses';
 $string['cic'] = 'Coefficient de cohérence interne pour {$a}';
@@ -95,7 +95,7 @@ $string['privacy:metadata'] = 'Bien que le plugin Statistiques de test ait des t
 $string['questioninformation'] = 'Info question';
 $string['questionname'] = 'Nom de question';
 $string['questionnumber'] = 'No Q';
-$string['questionstatistics'] = 'Statistiques question';
+$string['questionstatistics'] = 'Statistiques de question';
 $string['questionstatsfilename'] = 'statistiques_de_question';
 $string['questiontype'] = 'Type de question';
 $string['quizinformation'] = 'Information du test';
@@ -115,10 +115,9 @@ $string['standarddeviation'] = 'Écart type pour {$a}';
 $string['standarddeviationq'] = 'Écart type';
 $string['standarderror'] = 'Erreur standard pour {$a}';
 $string['statistics'] = 'Statistiques';
-$string['statistics:componentname'] = 'Rapport de statistiques des tests';
 $string['statistics:view'] = 'Consulter le rapport de statistiques';
 $string['statisticsreport'] = 'Rapport de statistiques';
-$string['statisticsreportgraph'] = 'Statistique des positions de question';
+$string['statisticsreportgraph'] = 'Statistiques des positions de question';
 $string['statsfor'] = 'Statistiques de test pour {$a}';
 $string['variant'] = 'Variante';
 $string['viewanalysis'] = 'Afficher les détails';

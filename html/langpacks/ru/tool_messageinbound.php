@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'ru', version '3.8'.
+ * Strings for component 'tool_messageinbound', language 'ru', version '3.11'.
  *
  * @package     tool_messageinbound
  * @category    string
@@ -98,6 +98,7 @@ $string['onehour'] = 'Один час';
 $string['oneweek'] = 'Одна неделя';
 $string['oneyear'] = 'Один год';
 $string['pluginname'] = 'Настройка входящих сообщений';
+$string['privacy:metadata:coreuserkey'] = 'Ключи пользователя для подтверждения полученного письма';
 $string['privacy:metadata:messagelist'] = 'Список идентификаторов сообщений, не прошедших проверку и требующих дальнейшего решения.';
 $string['privacy:metadata:messagelist:address'] = 'Адрес, на который было отправлено письмо';
 $string['privacy:metadata:messagelist:messageid'] = 'ID сообщения';

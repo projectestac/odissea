@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'eu', version '3.8'.
+ * Strings for component 'qtype_gapselect', language 'eu', version '3.11'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -43,7 +43,10 @@ $string['pluginname_help'] = 'Aukeratu falta diren hitzak motako galderak eskatz
 $string['pluginnameadding'] = 'Aukeratu falta diren hitzak motako galdera bat gehitzen';
 $string['pluginnameediting'] = 'Aukeratu falta diren hitzak motako galdera bat editatzen';
 $string['pluginnamesummary'] = 'Galderaren testuan falta diren hitzak zabaltzen diren menuetan betetzen dira.';
-$string['privacy:metadata'] = 'Aukeratu falta diren hitzak galdera mota pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Aukeratu falta diren hitzak galdera mota pluginak egileari aukera lehenetsiak erabiltzaile hobespen gisa gordetzea baimentzen dio.';
+$string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
+$string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
+$string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu behar diren edo ez.';
 $string['shuffle'] = 'Nahastu';
 $string['tagsnotallowed'] = '{$a->tag} ez dago baimenduta. ({$a->tag} soilik dago baimenduta.)';
 $string['tagsnotallowedatall'] = '{$a->tag} ez dago baimenduta. (Ezin da HTML kodea erabili hemen.)';

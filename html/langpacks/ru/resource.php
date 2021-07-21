@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ru', version '3.8'.
+ * Strings for component 'resource', language 'ru', version '3.11'.
  *
  * @package     resource
  * @category    string
@@ -64,6 +64,8 @@ $string['forcedownload'] = 'Принудительное скачивание';
 $string['framesize'] = 'Размер фрейма';
 $string['indicator:cognitivedepth'] = 'Файл: познавательный аспект';
 $string['indicator:cognitivedepth_help'] = 'Этот показатель основан на глубине познания, достигнутой студентом при работе с ресурсом Файл.';
+$string['indicator:cognitivedepthdef'] = 'Файл: познавательный аспект';
+$string['indicator:cognitivedepthdef_help'] = 'Участник достиг этого процента познавательного взаимодействия, предлагаемого ресурсом «Файл» в течение этого интервала анализа (Уровни = Нет просмотра, Просмотр)';
 $string['indicator:socialbreadth'] = 'Файл: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Файл.';
 $string['indicator:socialbreadthdef'] = 'Файл: социальный аспект';
@@ -96,6 +98,7 @@ $string['popupwidth'] = 'Ширина всплывающего окна (в пи
 $string['popupwidthexplain'] = 'Указывает ширину всплывающего окна по умолчанию.';
 $string['printintro'] = 'Выводить описание ресурса';
 $string['printintroexplain'] = 'Выводить ли описание ресурса под содержимым? При некоторых вариантах отображения, описание ресурса не может быть выведено, даже если параметр включен.';
+$string['privacy:metadata'] = 'Плагин «Ресурс Файл» не хранит никаких личных данных.';
 $string['resource:addinstance'] = 'Добавлять новые ресурсы';
 $string['resource:exportresource'] = 'Экспортировать ресурс';
 $string['resource:view'] = 'Просматривать ресурс';

@@ -69,7 +69,7 @@ class user_filtering {
                                 'country' => 1, 'confirmed' => 1, 'suspended' => 1, 'profile' => 1, 'courserole' => 1,
                                 'anycourses' => 1, 'systemrole' => 1, 'cohort' => 1, 'firstaccess' => 1, 'lastaccess' => 1,
                                 'neveraccessed' => 1, 'timemodified' => 1, 'nevermodified' => 1, 'auth' => 1, 'mnethostid' => 1,
-                                'idnumber' => 1, 'lastip' => 1);
+                                'idnumber' => 1, 'institution' => 1, 'department' => 1, 'lastip' => 1);
 
             // Get the config which filters the admin wanted to show by default.
             $userfiltersdefault = get_config('core', 'userfiltersdefault');
@@ -101,6 +101,12 @@ class user_filtering {
         // Fist the new filter form.
         $this->_addform = new user_add_filter_form($baseurl, array('fields' => $this->_fields, 'extraparams' => $extraparams));
         if ($adddata = $this->_addform->get_data()) {
+            // Clear previous filters.
+            if (!empty($adddata->replacefilters)) {
+                $SESSION->user_filtering = [];
+            }
+
+            // Add new filters.
             foreach ($this->_fields as $fname => $field) {
                 $data = $field->check_data($adddata);
                 if ($data === false) {
@@ -111,19 +117,16 @@ class user_filtering {
                 }
                 $SESSION->user_filtering[$fname][] = $data;
             }
-            // Clear the form.
-            $_POST = array();
-            $this->_addform = new user_add_filter_form($baseurl, array('fields' => $this->_fields, 'extraparams' => $extraparams));
         }
 
         // Now the active filters.
         $this->_activeform = new user_active_filter_form($baseurl, array('fields' => $this->_fields, 'extraparams' => $extraparams));
-        if ($adddata = $this->_activeform->get_data()) {
-            if (!empty($adddata->removeall)) {
+        if ($activedata = $this->_activeform->get_data()) {
+            if (!empty($activedata->removeall)) {
                 $SESSION->user_filtering = array();
 
-            } else if (!empty($adddata->removeselected) and !empty($adddata->filter)) {
-                foreach ($adddata->filter as $fname => $instances) {
+            } else if (!empty($activedata->removeselected) and !empty($activedata->filter)) {
+                foreach ($activedata->filter as $fname => $instances) {
                     foreach ($instances as $i => $val) {
                         if (empty($val)) {
                             continue;
@@ -135,11 +138,14 @@ class user_filtering {
                     }
                 }
             }
-            // Clear+reload the form.
-            $_POST = array();
-            $this->_activeform = new user_active_filter_form($baseurl, array('fields' => $this->_fields, 'extraparams' => $extraparams));
         }
-        // Now the active filters.
+
+        // Rebuild the forms if filters data was processed.
+        if ($adddata || $activedata) {
+            $_POST = []; // Reset submitted data.
+            $this->_addform = new user_add_filter_form($baseurl, ['fields' => $this->_fields, 'extraparams' => $extraparams]);
+            $this->_activeform = new user_active_filter_form($baseurl, ['fields' => $this->_fields, 'extraparams' => $extraparams]);
+        }
     }
 
     /**
@@ -173,6 +179,8 @@ class user_filtering {
             case 'nevermodified': return new user_filter_checkbox('nevermodified', get_string('nevermodified', 'filters'), $advanced, array('timemodified', 'timecreated'), array('timemodified_sck', 'timemodified_eck'));
             case 'cohort':      return new user_filter_cohort($advanced);
             case 'idnumber':    return new user_filter_text('idnumber', get_string('idnumber'), $advanced, 'idnumber');
+            case 'institution': return new user_filter_text('institution', get_string('institution'), $advanced, 'institution');
+            case 'department': return new user_filter_text('department', get_string('department'), $advanced, 'department');
             case 'lastip':    return new user_filter_text('lastip', get_string('lastip'), $advanced, 'lastip');
             case 'auth':
                 $plugins = core_component::get_plugin_list('auth');

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'gl', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'gl', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -30,9 +30,9 @@ $string['addmoreanswerblanks'] = 'En branco para {no} respostas máis';
 $string['addmoreunitblanks'] = 'En branco para {no} unidades máis';
 $string['answercolon'] = 'Resposta:';
 $string['answererror'] = 'Erro';
-$string['answermustbenumberorstar'] = 'A resposta debe ser un número, por exemplo ou -1.234 ou 3e8, ou «*».';
+$string['answermustbenumberorstar'] = 'A resposta debe ser un número, por exemplo -1.234 ou 3e8, ou «*».';
 $string['answerno'] = 'Resposta {$a}';
-$string['decfractionofquestiongrade'] = 'Coma unha fracción (0-1) da cualificación da pregunta';
+$string['decfractionofquestiongrade'] = 'coma unha fracción (0-1) da cualificación da pregunta';
 $string['decfractionofresponsegrade'] = 'coma unha fracción (0-1) da cualificación da resposta';
 $string['decimalformat'] = 'decimais';
 $string['editableunittext'] = 'o elemento de entrada de texto';
@@ -64,7 +64,7 @@ $string['onlynumerical'] = 'As unidades non se utilizan de ningunha maneira. Soa
 $string['pleaseenterananswer'] = 'Introduza unha resposta.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Introduza a súa resposta sen utilizar o separador de millares ({$a})';
 $string['pluginname'] = 'Numérica';
-$string['pluginname_help'] = 'Desde a perspectiva do alumno, unha pregunta numérica parece coma unha pregunta de resposta curta. A diferenza é que se permite que a resposta numérica teña un erro aceptado. Isto permite un intervalo fixe de respostas que avaliar como unha única resposta. Por exemplo, se a resposta é 10, cun erro aceptado de 2, entón calquera número entre 8 e 12 se aceptará como correcto.';
+$string['pluginname_help'] = 'Dende a perspectiva do alumno, unha pregunta numérica parece coma unha pregunta de resposta curta. A diferenza é que se permite que a resposta numérica teña un erro aceptado. Isto permite un intervalo fixe de respostas que avaliar como unha única resposta. Por exemplo, se a resposta é 10, cun erro aceptado de 2, entón calquera número entre 8 e 12 se aceptará como correcto.';
 $string['pluginname_link'] = 'pregunta/tipo/numérica';
 $string['pluginnameadding'] = 'Engadindo unha pregunta numérica';
 $string['pluginnameediting'] = 'Engadir unha pregunta numérica';
@@ -105,7 +105,7 @@ $string['unitx'] = 'Unidade {no}';
 $string['validnumberformats'] = 'Formatos válidos de número';
 $string['validnumberformats_help'] = '* números regulares 13500.67, 13 500.67, 13500,67 ou 13 500,67
 
-* se os axustes do paquete de idioma (langconfig.php file)utiliza a coma (,) como separador de milleiros poña *sempre* o punto (.) decimal como en 13,500.67 : 13,500.
+* se os axustes do paquete de idioma (langconfig.php file) utiliza a coma (,) como separador de milleiros poña *sempre* o punto (.) decimal como en 13,500.67 : 13,500.
 
 * para a forma do expoñente, é dicir 1.350067 * 10<sup>4</sup>, utilice 1.350067 E4 : 1.350067 E04';
 $string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 ou 1.350067 E04';

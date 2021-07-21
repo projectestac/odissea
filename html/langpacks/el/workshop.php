@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'el', version '3.8'.
+ * Strings for component 'workshop', language 'el', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'Οι αξιολογήσεις κλείνουν:';
+$string['activitydate:assessmentsclosed'] = 'Οι αξιολογήσεις έκλεισαν:';
+$string['activitydate:assessmentsopen'] = 'Οι αξιολογήσεις ανοίγουν:';
+$string['activitydate:assessmentsopened'] = 'Οι αξιολογήσεις άνοιξαν:';
+$string['activitydate:submissionsclose'] = 'Οι υποβολές κλείνουν:';
+$string['activitydate:submissionsclosed'] = 'Οι υποβολές έκλεισαν:';
+$string['activitydate:submissionsopen'] = 'Οι υποβολές άνοιξαν:';
+$string['activitydate:submissionsopened'] = 'Οι υποβολές άνοιξαν:';
 $string['aggregategrades'] = 'Επανυπολογισμός βαθμών';
 $string['aggregation'] = 'Συνάθροιση βαθμών';
 $string['allocate'] = 'Εκχώρηση υποβολών';
@@ -143,7 +151,7 @@ $string['exampleedit'] = 'Επεξεργασία παραδείγματος';
 $string['exampleediting'] = 'Επεξεργασία παραδείγματος...';
 $string['exampleneedassessed'] = 'Πρέπει πρώτα να αξιολογήσετε όλα τα παραδείγματα υποβολών';
 $string['exampleneedsubmission'] = 'Πρέπει πρώτα να υποβάλετε την εργασία σας και να αξιολογήσετε όλα τα παραδείγματα υποβολών';
-$string['examplesbeforeassessment'] = 'Τα παραδείγματα είναι διαθέσιμα μετά την δική μας υποβολή και πρέπει να αξιολογηθούν πριν την αξιολόγηση (ομοτίμων) των υπολοίπων (εργασιών συμμαθητών)';
+$string['examplesbeforeassessment'] = 'Τα παραδείγματα είναι διαθέσιμα μετά την δική μας υποβολή και πρέπει να αξιολογηθούν πριν την αξιολόγηση (ομότιμων) των υπολοίπων (εργασιών συμμαθητών)';
 $string['examplesbeforesubmission'] = 'Τα παραδείγματα πρέπει να αξιολογούνται πριν την δική μας υποβολή';
 $string['examplesmode'] = 'Τρόπος αξιολόγησης παραδειγμάτων';
 $string['examplesubmissions'] = 'Παραδείγματα υποβολών';
@@ -261,6 +269,22 @@ $string['privacy:metadata:late'] = 'Αν η υποβολή έχει υποβλη
 $string['privacy:metadata:peercomment'] = 'Σχόλιο σχετικά με το βαθμό που δόθηκε από τον χρήστη που παρέχει την αξιολόγηση';
 $string['privacy:metadata:peercommentformat'] = 'Μορφότυπος κειμένου του σχολίου σχετικά με το βαθμό που δόθηκε';
 $string['privacy:metadata:preference:perpage'] = 'Αριθμός υποβολών που ο χρήστης προτιμά να δει σε μια σελίδα';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Παραδείγματα υποβολής».';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Αναφορά υποβολών εργαστηρίου».';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Φόρμα αξιολόγησης».';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Εκχωρημένες υποβολές προς αξιολόγηση».';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Εργαλειοθήκη εργαστηρίου».';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Συμπέρασμα».';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Παραδείγματα υποβολών προς αξιολόγηση».';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Παραδείγματα υποβολών προς αξιολόγηση».';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Αναφορά βαθμολογιών εργαστηρίου».';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Οδηγίες για υποβολή».';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Οδηγίες για αξιολόγηση».';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Εισαγωγή».';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Συνολική ανατροφοδότηση».';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Η υποβολή σας».';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Δημοσιευμένες υποβολές».';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = 'Η συμπτυγμένη/αναπτυγμένη κατάσταση για την προβολή «Οι βαθμοί σας».';
 $string['privacy:metadata:published'] = 'Αν η υποβολή πρέπει να δημοσιευθεί σε όλους τους συμμετέχοντες μόλις κλείσει το εργαστήριο';
 $string['privacy:metadata:reviewerid'] = 'Αναγνωριστικό του χρήστη που παρέχει την αξιολόγηση';
 $string['privacy:metadata:strategy'] = 'Όνομα υπο-πρόσθετου της βαθμολογικής στρατηγικής που ερμηνεύει τις τιμές εγγραφής';
@@ -298,7 +322,7 @@ $string['resetphase_help'] = 'Εάν είναι ενεργοποιημένο, ό
 $string['resetsubmissions'] = 'Διαγράψτε όλες τις υποβολές';
 $string['resetsubmissions_help'] = 'Όλες οι υποβολές και οι αξιολογήσεις τους θα διαγραφούν. Αυτό δεν επηρεάζει τις υποβολές παραδειγμάτων.';
 $string['saveandclose'] = 'Αποθήκευση και κλείσιμο';
-$string['saveandcontinue'] = 'Αποθήκευσε και συνέχισε την επεξεργασία';
+$string['saveandcontinue'] = 'Αποθήκευση και συνέχεια επεξεργασίας';
 $string['saveandpreview'] = 'Αποθήκευση και προεπισκόπηση';
 $string['saveandshownext'] = 'Αποθήκευση και εμφάνιση επόμενου';
 $string['search:activity'] = 'Εργαστήριο - πληροφορίες δραστηριότητας';
@@ -426,3 +450,4 @@ $string['workshopname'] = 'Όνομα εργαστηρίου';
 $string['yourassessmentfor'] = 'Η αξιολόγησή σας για {$a}';
 $string['yourgrades'] = 'Οι βαθμοί σας';
 $string['yoursubmission'] = 'Η υποβολή σας';
+$string['yoursubmissionwithassessments'] = 'Η υποβολή σας με αξιολογήσεις';

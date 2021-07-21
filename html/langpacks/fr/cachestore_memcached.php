@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_memcached', language 'fr', version '3.8'.
+ * Strings for component 'cachestore_memcached', language 'fr', version '3.11'.
  *
  * @package     cachestore_memcached
  * @category    string
@@ -30,7 +30,7 @@ $string['bufferwrites_help'] = 'Active ou désactive les entrées/sorties en tam
 $string['clustered'] = 'Activer les serveurs en cluster';
 $string['clustered_help'] = 'Ce réglage est utilisé pour permettre la fonctionnalité lire une fois, définir plusieurs fois.
 
-L\'utilisation visée est la création d\'un cache amélioré pour les configurations avec répartition de charge (<i>load balanced</i>). Le cache récupérera les données à partir d\'un serveur (habituellement localhost), mais écrira les définitions sur plusieurs serveurs (tous les serveurs sur lesquels la charge est répartie). Pour les caches dans lesquels le rapport lecture/définition est très élevé, cette fonctionnalité permet de réduire l\'utilisation du réseau de façon significative.
+L\'utilisation visée est la création d\'un cache amélioré pour les configurations avec répartition de charge (<em>load balanced</em>). Le cache récupérera les données à partir d\'un serveur (habituellement localhost), mais écrira les définitions sur plusieurs serveurs (tous les serveurs sur lesquels la charge est répartie). Pour les caches dans lesquels le rapport lecture/définition est très élevé, cette fonctionnalité permet de réduire l\'utilisation du réseau de façon significative.
 
 Si ce réglage est activé, les serveurs de la liste ci-dessus seront utilisés pour récupérer le contenu du cache.';
 $string['clusteredheader'] = 'Serveurs partagés';

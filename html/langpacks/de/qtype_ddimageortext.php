@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'de', version '3.8'.
+ * Strings for component 'qtype_ddimageortext', language 'de', version '3.11'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -66,7 +66,10 @@ $string['pluginnamesummary'] = 'Bilder oder Texte werden auf Ablagebereiche eine
 Hinweis: Dieser Fragetyp ist für Personen mit Sehbehinderung nicht zugänglich.';
 $string['previewareaheader'] = 'Vorschau';
 $string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, ziehbare Bilder oder geben Sie Texte ein. Definieren Sie anschließend auf dem Hintergrundbild für jedes Objekt einen Ablegebereich, auf den das Objekt gezogen werden soll.';
-$string['privacy:metadata'] = 'Das Drag-and-Drop auf Bild Frageformat Plugin speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin "Drag-and-Drop auf Bild Frageformat" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
+$string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
+$string['privacy:preference:shuffleanswers'] = 'Gibt an, ob die Antworten automatisch gemischt werden sollen.';
 $string['refresh'] = 'Vorschau neu laden';
 $string['shuffleimages'] = 'Ziehbare Objekte bei jedem Versuch zufällig anordnen.';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

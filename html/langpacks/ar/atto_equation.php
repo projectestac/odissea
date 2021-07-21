@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_equation', language 'ar', version '3.8'.
+ * Strings for component 'atto_equation', language 'ar', version '3.11'.
  *
  * @package     atto_equation
  * @category    string
@@ -37,7 +37,7 @@ $string['librarygroup4'] = 'متقدم';
 $string['librarygroup4_desc'] = 'أوامر TeX المدرجة في علامة التبويب المتقدمة.';
 $string['pluginname'] = 'محرر المعادلات الرياضية';
 $string['preview'] = 'عرض المعادلة';
-$string['privacy:metadata'] = 'هذه الاضافة لا تخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق atto_equation لا يخزن أي بيانات شخصية.';
 $string['saveequation'] = 'حفظ المعادلة';
 $string['settings'] = 'إعدادات محرر المعادلات';
 $string['update'] = 'تحديث';

@@ -87,22 +87,34 @@ function tool_mobile_create_app_download_url() {
 }
 
 /**
- * Checks if the given user has a mobile token (has used recently the app).
+ * Return the user mobile app WebService access token.
  *
- * @param  int $userid the user to check
- * @return bool        true if the user has a token, false otherwise.
+ * @param  int $userid the user to return the token from
+ * @return stdClass|false the token or false if the token doesn't exists
+ * @since  3.10
  */
-function tool_mobile_user_has_token($userid) {
+function tool_mobile_get_token($userid) {
     global $DB;
 
-    $sql = "SELECT 1
+    $sql = "SELECT t.*
               FROM {external_tokens} t, {external_services} s
              WHERE t.externalserviceid = s.id
                AND s.enabled = 1
                AND s.shortname IN ('moodle_mobile_app', 'local_mobile')
                AND t.userid = ?";
 
-    return $DB->record_exists_sql($sql, [$userid]);
+    return $DB->get_record_sql($sql, [$userid], IGNORE_MULTIPLE);
+}
+
+/**
+ * Checks if the given user has a mobile token (has used recently the app).
+ *
+ * @param  int $userid the user to check
+ * @return bool true if the user has a token, false otherwise.
+ */
+function tool_mobile_user_has_token($userid) {
+
+    return !empty(tool_mobile_get_token($userid));
 }
 
 /**
@@ -122,28 +134,81 @@ function tool_mobile_myprofile_navigation(\core_user\output\myprofile\tree $tree
         return;
     }
 
-    if (!$iscurrentuser) {
-        return;
+    $newnodes = [];
+    $mobilesettings = get_config('tool_mobile');
+
+    // Check if we should display a QR code.
+    if ($iscurrentuser && !empty($mobilesettings->qrcodetype)) {
+        $mobileqr = null;
+        $qrcodeforappstr = get_string('qrcodeformobileappaccess', 'tool_mobile');
+
+        if ($mobilesettings->qrcodetype == tool_mobile\api::QR_CODE_LOGIN && is_https()) {
+
+            if (is_siteadmin() || \core\session\manager::is_loggedinas()) {
+                $mobileqr = get_string('qrsiteadminsnotallowed', 'tool_mobile');
+            } else {
+                $qrcodeimg = tool_mobile\api::generate_login_qrcode($mobilesettings);
+
+                $minutes = tool_mobile\api::LOGIN_QR_KEY_TTL / MINSECS;
+                $mobileqr = html_writer::tag('p', get_string('qrcodeformobileapploginabout', 'tool_mobile', $minutes));
+                $mobileqr .= html_writer::link('#qrcode', get_string('viewqrcode', 'tool_mobile'),
+                    ['class' => 'btn btn-primary mt-2', 'data-toggle' => 'collapse',
+                    'role' => 'button', 'aria-expanded' => 'false']);
+                $mobileqr .= html_writer::div(html_writer::img($qrcodeimg, $qrcodeforappstr), 'collapse mt-4', ['id' => 'qrcode']);
+            }
+
+        } else if ($mobilesettings->qrcodetype == tool_mobile\api::QR_CODE_URL) {
+            $qrcodeimg = tool_mobile\api::generate_login_qrcode($mobilesettings);
+
+            $mobileqr = get_string('qrcodeformobileappurlabout', 'tool_mobile');
+            $mobileqr .= html_writer::div(html_writer::img($qrcodeimg, $qrcodeforappstr));
+        }
+
+        if ($mobileqr) {
+            $newnodes[] = new core_user\output\myprofile\node('mobile', 'mobileappqr', $qrcodeforappstr, null, null, $mobileqr);
+        }
     }
 
-    if (!$url = tool_mobile_create_app_download_url()) {
-        return;
+    // Check if the user is using the app, encouraging him to use it otherwise.
+    if ($iscurrentuser || is_siteadmin()) {
+        $usertoken = tool_mobile_get_token($user->id);
+        $mobilestrconnected = null;
+        $mobilelastaccess = null;
+
+        if ($usertoken) {
+            $mobilestrconnected = get_string('lastsiteaccess');
+            if ($usertoken->lastaccess) {
+                $mobilelastaccess = userdate($usertoken->lastaccess) . "&nbsp; (" . format_time(time() - $usertoken->lastaccess) . ")";
+                // Logout link.
+                $validtoken = empty($usertoken->validuntil) || time() < $usertoken->validuntil;
+                if ($iscurrentuser && $validtoken) {
+                    $url = new moodle_url('/'.$CFG->admin.'/tool/mobile/logout.php', ['sesskey' => sesskey()]);
+                    $logoutlink = html_writer::link($url, get_string('logout'));
+                    $mobilelastaccess .= "&nbsp; ($logoutlink)";
+                }
+            } else {
+                // We should not reach this point.
+                $mobilelastaccess = get_string("never");
+            }
+        } else if ($url = tool_mobile_create_app_download_url()) {
+             $mobilestrconnected = get_string('mobileappenabled', 'tool_mobile', $url->out());
+        }
+
+        if ($mobilestrconnected) {
+            $newnodes[] = new core_user\output\myprofile\node('mobile', 'mobileappnode', $mobilestrconnected, null, null,
+                $mobilelastaccess);
+        }
     }
 
-    $userhastoken = tool_mobile_user_has_token($user->id);
+    // Add nodes, if any.
+    if (!empty($newnodes)) {
+        $mobilecat = new core_user\output\myprofile\category('mobile', get_string('mobileapp', 'tool_mobile'), 'loginactivity');
+        $tree->add_category($mobilecat);
 
-    $mobilecategory = new core_user\output\myprofile\category('mobile', get_string('mobileapp', 'tool_mobile'),
-            'loginactivity');
-    $tree->add_category($mobilecategory);
-
-    if ($userhastoken) {
-        $mobilestr = get_string('mobileappconnected', 'tool_mobile');
-    } else {
-        $mobilestr = get_string('mobileappenabled', 'tool_mobile', $url->out());
+        foreach ($newnodes as $node) {
+            $tree->add_node($node);
+        }
     }
-
-    $node = new  core_user\output\myprofile\node('mobile', 'mobileappnode', $mobilestr, null);
-    $tree->add_node($node);
 }
 
 /**

@@ -156,7 +156,6 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
             $serialiser = Memcached::SERIALIZER_PHP;
         }
         $prefix = (!empty($configuration['prefix'])) ? (string)$configuration['prefix'] : crc32($name);
-
         $hashmethod = (array_key_exists('hash', $configuration)) ? (int)$configuration['hash'] : Memcached::HASH_DEFAULT;
         $bufferwrites = array_key_exists('bufferwrites', $configuration) ? (bool)$configuration['bufferwrites'] : false;
 
@@ -205,23 +204,23 @@ class cachestore_memcached extends cache_store implements cache_is_configurable 
         $this->connection = new Memcached(crc32($this->name));
         $servers = $this->connection->getServerList();
 
-        // XTEC ************ AFEGIT - Fixed cache pollution due to XTEC patches
+        // XTEC ************ AFEGIT - Fixed cache pollution in memcached
         // 19.08.05 @aginard
         foreach ($this->options as $key => $value) {
             $this->connection->setOption($key, $value);
         }
-        //************ FI
+        // ************ FI
 
         if (empty($servers)) {
 
-            // XTEC ************ REMOVED - Fixed cache pollution due to XTEC patches
+            // XTEC ************ ELIMINAT - Fixed cache pollution in memcached
             // 19.08.05 @aginard
             /*
             foreach ($this->options as $key => $value) {
                 $this->connection->setOption($key, $value);
             }
             */
-            //************ FI
+            // ************ FI
 
             $this->connection->addServers($this->servers);
         }

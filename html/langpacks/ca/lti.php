@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ca', version '3.8'.
+ * Strings for component 'lti', language 'ca', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -186,6 +186,7 @@ $string['grading'] = 'Encaminament de la qualificació';
 $string['icon_url'] = 'URL de l\'icona';
 $string['icon_url_help'] = 'L\'URL de la icona permet a la icona mostrar la llista del curs per a aquesta activitat per a ser modificat. En lloc d\'utilitzar la icona per defecte, es mostrarà una icona que transporta el tipus d\'activitat.';
 $string['id'] = 'id';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats LTI en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions)';
 $string['invalidid'] = 'La identificació de LTI és incorrecta';
 $string['launch_in_moodle'] = 'Llança l\'eina a Moodle';
 $string['launch_in_popup'] = 'Llança una eina emergent';

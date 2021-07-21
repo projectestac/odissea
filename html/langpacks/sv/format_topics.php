@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'sv', version '3.8'.
+ * Strings for component 'format_topics', language 'sv', version '3.11'.
  *
  * @package     format_topics
  * @category    string
@@ -25,14 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addsections'] = 'Lägg till sektioner/ämnen';
+$string['addsections'] = 'Lägg till ämnen';
 $string['currentsection'] = 'Det här ämnet';
-$string['deletesection'] = 'Radera sektion/ämne';
-$string['editsection'] = 'Redigera sektion/ämne';
-$string['editsectionname'] = 'Redigera namn på sektion/ämne';
-$string['hidefromothers'] = 'Dölj sektion/ämne';
-$string['newsectionname'] = 'Nytt namn för sektion/ämne {$a}';
-$string['page-course-view-topics'] = 'Vilken ingångssida (för kurs) som helst i  ämnesformat';
+$string['deletesection'] = 'Ta bort ämne';
+$string['editsection'] = 'Redigera ämne';
+$string['editsectionname'] = 'Redigera namn';
+$string['hidefromothers'] = 'Dölj ämne';
+$string['newsectionname'] = 'Nytt namn på ämne {$a}';
+$string['page-course-view-topics'] = 'Valfri kurs-huvudsida i ämnesformat';
+$string['page-course-view-topics-x'] = 'Valfri kurssida i ämnesformat';
 $string['pluginname'] = 'Ämnesformat';
 $string['privacy:metadata'] = 'Pluginmodulen Ämnesformat lagrar ingen personlig information.';
 $string['section0name'] = 'Allmänt';

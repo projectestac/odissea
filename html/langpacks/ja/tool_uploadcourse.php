@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ja', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'ja', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -77,9 +77,15 @@ $string['csvdelimiter'] = 'CSVデリミタ';
 $string['csvdelimiter_help'] = 'CSVファイルのCSVデリミタです。';
 $string['csvfileerror'] = 'CSVファイルのフォーマットに問題があります。ヘッディングの数およびカラムが合致しているか、またデリミタおよびファイルエンコーディングが正しいか確認してください: {$a}';
 $string['csvline'] = '行';
+$string['customfieldinvalid'] = 'カスタムフィールド「 {$a} 」が空または無効なデータが含まれています。';
 $string['defaultvalues'] = 'デフォルトコース値';
+$string['defaultvaluescustomfieldcategory'] = '「 {$a} 」のデフォルト値';
+$string['downloadcontentnotallowed'] = 'コースコンテンツのダウンロード設定は許可されていません。';
 $string['encoding'] = 'エンコーディング';
 $string['encoding_help'] = 'CSVファイルのエンコーディングです。';
+$string['errorcannotcreateorupdateenrolment'] = '登録方法「 {$a} 」を作成または更新できません。';
+$string['errorcannotdeleteenrolment'] = '登録方法「 {$a} 」を削除できません。';
+$string['errorcannotdisableenrolment'] = '登録方法「 {$a} 」を無効にできません。';
 $string['errorwhiledeletingcourse'] = 'コース削除中にエラーが発生しました。';
 $string['errorwhilerestoringcourse'] = 'コースリストア中にエラーが発生しました。';
 $string['generatedshortnamealreadyinuse'] = '生成された省略名はすでに使用されています。';
@@ -90,6 +96,7 @@ $string['importoptions'] = 'インポートオプション';
 $string['invalidbackupfile'] = '無効なバックアップファイル';
 $string['invalidcourseformat'] = '無効なコースフォーマット';
 $string['invalidcsvfile'] = '無効な入力CSVファイル';
+$string['invaliddownloadcontent'] = '無効なコースコンテンツ値のダウンロードです。';
 $string['invalidencoding'] = '無効なエンコーディング';
 $string['invalideupdatemode'] = '無効な更新モードが選択されました。';
 $string['invalidfullnametoolong'] = 'フルネームフィールドは {$a} 文字に制限されています。';

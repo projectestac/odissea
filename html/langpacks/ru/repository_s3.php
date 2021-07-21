@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_s3', language 'ru', version '3.8'.
+ * Strings for component 'repository_s3', language 'ru', version '3.11'.
  *
  * @package     repository_s3
  * @category    string
@@ -30,5 +30,6 @@ $string['configplugin'] = 'Настройки Amazon S3';
 $string['endpoint'] = 'Конечная точка Amazon S3';
 $string['needaccesskey'] = 'Необходимо предоставить ключ доступа';
 $string['pluginname'] = 'Amazon S3';
+$string['privacy:metadata'] = 'Плагин хранилища Amazon S3 не хранит никаких личных данных, но передает данные пользователя из Moodle в отдаленную систему.';
 $string['s3:view'] = 'Просматривать хранилище файлов «Amazon S3»';
 $string['secret_key'] = 'Секретный ключ';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'ja', version '3.8'.
+ * Strings for component 'tool_assignmentupgrade', language 'ja', version '3.11'.
  *
  * @package     tool_assignmentupgrade
  * @category    string

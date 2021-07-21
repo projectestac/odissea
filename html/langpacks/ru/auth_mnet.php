@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'ru', version '3.8'.
+ * Strings for component 'auth_mnet', language 'ru', version '3.11'.
  *
  * @package     auth_mnet
  * @category    string
@@ -29,8 +29,9 @@ $string['auth_mnet_auto_add_remote_users'] = 'Если установлено з
 $string['auth_mnet_roamin'] = 'Пользователи этих сайтов могут путешествовать по Вашему сайту';
 $string['auth_mnet_roamout'] = 'Ваши пользователи могут путешествовать по этим сайтам';
 $string['auth_mnet_rpc_negotiation_timeout'] = 'Тайм-аут (в секундах) для аутентификации по протоколу XML-RPC.';
-$string['auth_mnetdescription'] = 'Аутентификация пользователей с использованием сети доверия, определенной в настройках «Сетевое взаимодейтсвие MNet».';
+$string['auth_mnetdescription'] = 'Аутентификация пользователей с использованием сети доверия, определенной в настройках «Сетевое взаимодействие MNet».';
 $string['auto_add_remote_users'] = 'Автоматически добавлять внешних пользователей';
+$string['crontask'] = 'Фоновая обработка для аутентификации MNET';
 $string['pluginname'] = 'Аутентификация для пользователей сети MNet';
 $string['privacy:metadata:external:mahara'] = 'Этот плагин может отправлять данные наружу в связанное приложение Mahara.';
 $string['privacy:metadata:external:moodle'] = 'Этот плагин может отправлять данные наружу в связанное приложение Moodle.';

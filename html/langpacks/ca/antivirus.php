@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'ca', version '3.8'.
+ * Strings for component 'antivirus', language 'ca', version '3.11'.
  *
  * @package     antivirus
  * @category    string
@@ -30,4 +30,3 @@ $string['antiviruses'] = 'Connectors d\'antivirus';
 $string['antivirussettings'] = 'Gestiona els connectors d\'antivirus';
 $string['configantivirusplugins'] = 'Seleccioneu els connectors d\'antivirus que voleu emprar i arrangeu-los en l\'ordre que han d\'aplicar-se.';
 $string['emailsubject'] = '{$a} :: Notificació d\'antivirus';
-$string['virusfounduser'] = 'El fitxer que heu provat de penjar, {$a->filename}, ha estat escanejat per un antivirus i sembla que està infectat!. El fitxer NO s\'ha penjat.';

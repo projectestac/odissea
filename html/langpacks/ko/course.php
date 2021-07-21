@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ko', version '3.8'.
+ * Strings for component 'course', language 'ko', version '3.11'.
  *
  * @package     course
  * @category    string
@@ -29,3 +29,6 @@ $string['aria:coursename'] = '강의명';
 $string['coursenotyetfinished'] = '강의가 아직 끝나지 않았습니다.';
 $string['customfield_islocked'] = '잠김';
 $string['customfield_visibletoteachers'] = '강사';
+$string['downloadcoursecontent'] = '강의 내용 내려받기';
+$string['recommend'] = '추천';
+$string['searchresults'] = '검색 결과: {$a}';

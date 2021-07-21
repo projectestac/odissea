@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'pt', version '3.8'.
+ * Strings for component 'block_myoverview', language 'pt', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = 'Ordenar disciplinas pela data do último acesso'
 $string['aria:list'] = 'Alternar para a vista de Lista';
 $string['aria:past'] = 'Mostrar disciplinas já terminadas';
 $string['aria:removefromfavourites'] = 'Remover estrela de';
+$string['aria:shortname'] = 'Ordenar disciplina pelo nome curto da disciplina';
 $string['aria:showcourse'] = 'Restaurar {$a} na visualização';
 $string['aria:sortingdropdown'] = 'Lista pendente de ordenação';
 $string['aria:summary'] = 'Alternar para a vista de Descrição';
@@ -62,8 +63,6 @@ $string['courseprogress'] = 'Progresso da disciplina';
 $string['customfield'] = 'Campo personalizado';
 $string['customfiltergrouping'] = 'Campo a usar';
 $string['customfiltergrouping_nofields'] = 'Esta opção requer que um campo personalizado da disciplina seja configurado e visível para todos.';
-$string['defaulttab'] = 'Separador predefinido';
-$string['defaulttab_desc'] = 'Separador mostrado ao utilizador quando acede pela primeira vez à visão global das disciplinas. Ao retornar à vista global da disciplina, será exibido o último separador que o utilizador ativou.';
 $string['displaycategories'] = 'Mostrar categorias';
 $string['displaycategories_help'] = 'Mostrar a categoria da disciplina nas disciplinas apresentadas no painel do utilizador, incluindo na visualização em cartões, lista e descrição.';
 $string['favourites'] = 'Com estrela';
@@ -74,33 +73,20 @@ $string['hidecourse'] = 'Remover da visualização';
 $string['inprogress'] = 'Em progresso';
 $string['lastaccessed'] = 'Último acesso';
 $string['layouts'] = 'Estruturas disponíveis';
-$string['layouts_help'] = 'Estruturas do bloco Minhas disciplinas que estarão disponíveis para seleção pelos utilizadores. Se nenhuma for selecionada, será usada a estrutura de cartões.';
+$string['layouts_help'] = 'Estruturas do bloco \'Minhas disciplinas\' que estarão disponíveis para seleção pelos utilizadores. Se nenhuma for selecionada, será usada a estrutura de cartões.';
 $string['list'] = 'Lista';
-$string['morecourses'] = 'Mais disciplinas';
-$string['myoverview:myaddinstance'] = 'Adicionar novo bloco Minhas disciplinas no Painel ao utilizador';
-$string['next30days'] = 'Próximos 30 dias';
-$string['next7days'] = 'Próximos 7 dias';
+$string['myoverview:myaddinstance'] = 'Adicionar novo bloco \'Minhas disciplinas\' no Painel ao utilizador';
 $string['nocourses'] = 'Sem disciplinas';
-$string['nocoursesfuture'] = 'Nenhuma disciplina por iniciar';
-$string['nocoursesinprogress'] = 'Nenhuma disciplina a decorrer';
-$string['nocoursespast'] = 'Nenhuma disciplina terminada';
 $string['nocustomvalue'] = 'Não {$a}';
-$string['noevents'] = 'Não há atividades com data limite próxima';
 $string['past'] = 'Histórico';
 $string['pluginname'] = 'Minhas disciplinas';
 $string['privacy:metadata:overviewgroupingpreference'] = 'A preferência de agrupamento no bloco Minhas disciplinas.';
-$string['privacy:metadata:overviewlasttab'] = 'Isto armazena o último separador selecionado pelo utilizador no bloco Visão global.';
 $string['privacy:metadata:overviewpagingpreference'] = 'A preferência de paginação no bloco Minhas disciplinas.';
 $string['privacy:metadata:overviewsortpreference'] = 'A preferência de ordenação no bloco Minhas disciplinas.';
 $string['privacy:metadata:overviewviewpreference'] = 'A preferência de visualização do bloco Minhas disciplinas.';
 $string['privacy:request:preference:set'] = 'O valor da configuração \'{$a->name}\' era \'{$a->value}\'';
-$string['recentlyoverdue'] = 'Com data limite ultrapassada';
 $string['removefromfavourites'] = 'Desmarcar a estrela desta disciplina';
+$string['shortname'] = 'Nome curto';
 $string['show'] = 'Repor na visualização';
-$string['sortbycourses'] = 'Ordenar por disciplinas';
-$string['sortbydates'] = 'Ordenar por datas';
 $string['summary'] = 'Descrição';
-$string['timeline'] = 'Cronograma';
 $string['title'] = 'Nome da disciplina';
-$string['viewcourse'] = 'Visualizar a disciplina';
-$string['viewcoursename'] = 'Visualizar a disciplina {$a}';

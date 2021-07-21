@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'it', version '3.8'.
+ * Strings for component 'glossary', language 'it', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -90,6 +90,7 @@ $string['commentdeleted'] = 'Il commento è stato eliminato';
 $string['comments'] = 'Commenti';
 $string['commentson'] = 'Commenti su';
 $string['commentupdated'] = 'Il commento è stato aggiornato';
+$string['completiondetail:entries'] = 'Inserire voci: {$a}';
 $string['completionentries'] = 'Lo studente deve inserire il seguente numero di voci:';
 $string['completionentriesdesc'] = 'Lo studente deve inserire il seguente numero di voci: {$a}';
 $string['completionentriesgroup'] = 'Numero di voci';

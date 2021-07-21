@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'local_mobile', language 'ar', version '3.8'.
+ * Strings for component 'local_mobile', language 'ar', version '3.11'.
  *
  * @package     local_mobile
  * @category    string
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowpermissions'] = 'منح الصلاحيات إلى دور المستخدم المصادق عليه';
 $string['privacy:metadata'] = 'إن ملحق المزايا الإضافية لجوال مول لا يخزن أي بيانات شخصية.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ca', version '3.8'.
+ * Strings for component 'url', language 'ca', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -46,6 +46,7 @@ $string['displayselect_help'] = 'Aquest paràmetre, juntament amb el tipus de fi
 $string['displayselectexplain'] = 'Trieu el tipus de visualització. No tots els tipus són compatibles amb tots els URL.';
 $string['externalurl'] = 'URL extern';
 $string['framesize'] = 'Alçada del marc';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta pels recursos d\'URL en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
 $string['invalidstoredurl'] = 'No es pot visualitzar aquest recurs: l\'URL és invàlid.';
 $string['invalidurl'] = 'L\'URL que heu introduït no és vàlid';
 $string['modulename'] = 'URL';

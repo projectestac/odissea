@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'es', version '3.8'.
+ * Strings for component 'form', language 'es', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -48,6 +48,7 @@ $string['err_wrongfileextension'] = 'Algunos ficheros ({$a->wrongfiles}) no se p
 $string['filesofthesetypes'] = 'Tipos de archivo aceptados:';
 $string['filetypesany'] = 'Todos los tipos de archivo';
 $string['filetypesnotall'] = 'No se permite seleccionar \'Todos los tipos de archivo\' aquí';
+$string['filetypesnotallowed'] = 'Estos tipos de archivos no están permitidos: {$a}';
 $string['filetypesnotwhitelisted'] = 'Estos tipos de archivos no están permitidos: {$a}';
 $string['filetypesothers'] = 'Otros archivos';
 $string['filetypesunknown'] = 'Tipos de archivos desconocidos: {$a}';

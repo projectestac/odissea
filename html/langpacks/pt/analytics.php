@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'pt', version '3.8'.
+ * Strings for component 'analytics', language 'pt', version '3.11'.
  *
  * @package     analytics
  * @category    string
@@ -34,6 +34,8 @@ $string['analyticslogstore'] = 'Registos armazenados a usar na análise';
 $string['analyticslogstore_help'] = 'Os registos que serão utilizados pela API analítica para ler a atividade dos utilizadores.';
 $string['analyticssettings'] = 'Configurações da análise';
 $string['analyticssiteinfo'] = 'Informação do site';
+$string['calclifetime'] = 'Manter cálculos analíticos por';
+$string['configlcalclifetime'] = 'Especifica por quanto tempo pretende manter os dados de cálculo - não apagará as previsões, mas apaga os dados usados para gerar as previsões. É preferível usar aqui a opção predefinida, uma vez que mantém o uso do espaço do disco sob controlo. No entanto, se estiver a usar tabelas de cálculo para outros fins, pode querer aumentar este valor.';
 $string['defaultpredictionsprocessor'] = 'Processador de previsões predefinido';
 $string['defaultpredictoroption'] = 'Processador predefinido ({$a})';
 $string['defaulttimesplittingmethods'] = 'Intervalos de análise predefinidos para avaliação do modelo';
@@ -96,10 +98,11 @@ $string['modeinstructionfacetoface'] = 'Presencial';
 $string['modeinstructionfullyonline'] = 'E-Learning';
 $string['modeloutputdir'] = 'Diretoria dos modelos';
 $string['modeloutputdirinfo'] = 'Diretoria onde o processador de previsões guarda toda a informação da avaliação. Útil para análise e pesquisa.';
-$string['modeloutputdirwithdefaultinfo'] = 'Diretoria onde os processadores de previsões guardam todas as informações de avaliação. Útil para análise e pesquisa. Se estiver vazio, \'<strong>{$a}</strong>\' será usado como predefinição.';
+$string['modeloutputdirwithdefaultinfo'] = 'Diretoria onde os processadores de previsões guardam todas as informações de avaliação. Útil para análise e pesquisa. Se estiver vazio, \'{$a}\' será usada como predefinição.';
 $string['modeltimelimit'] = 'Duração máxima de análise por modelo';
 $string['modeltimelimitinfo'] = 'Esta configuração limita o tempo que cada modelo gasta a analisaro o conteúdo do site.';
 $string['neutral'] = 'Neutro';
+$string['neverdelete'] = 'Nunca apagar cálculos';
 $string['nocourses'] = 'Nenhuma disciplina para analisar';
 $string['nodata'] = 'Sem dados para analisar';
 $string['noevaluationbasedassumptions'] = 'Modelos baseados em hipóteses não podem ser avaliados.';
@@ -158,4 +161,4 @@ $string['viewdetails'] = 'Ver detalhes';
 $string['viewinsight'] = 'Ver perceção';
 $string['viewinsightdetails'] = 'Ver detalhes da perceção';
 $string['viewprediction'] = 'Detalhes da previsão';
-$string['washelpful'] = 'Foi útil?';
+$string['washelpful'] = 'Esta informação foi útil?';

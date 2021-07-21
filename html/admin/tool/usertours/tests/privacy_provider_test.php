@@ -39,6 +39,20 @@ use \tool_usertours\privacy\provider;
 class tool_usertours_privacy_provider_testcase extends \core_privacy\tests\provider_testcase {
 
     /**
+     * Helper method for creating a tour
+     *
+     * @return tour
+     */
+    protected function create_test_tour(): tour {
+        return (new tour())
+            ->set_name('test_tour')
+            ->set_description('Test tour')
+            ->set_enabled(true)
+            ->set_pathmatch('/')
+            ->persist();
+    }
+
+    /**
      * Ensure that get_metadata exports valid content.
      */
     public function test_get_metadata() {
@@ -69,11 +83,9 @@ class tool_usertours_privacy_provider_testcase extends \core_privacy\tests\provi
         $this->resetAfterTest();
         $this->setAdminUser();
 
-        $alltours = $DB->get_records('tool_usertours_tours');
-        $tourdata = reset($alltours);
+        $tour = $this->create_test_tour();
 
         $user = \core_user::get_user_by_username('admin');
-        $tour = tour::instance($tourdata->id);
         $tour->mark_user_completed();
         provider::export_user_preferences($user->id);
 
@@ -94,11 +106,9 @@ class tool_usertours_privacy_provider_testcase extends \core_privacy\tests\provi
         $this->resetAfterTest();
         $this->setAdminUser();
 
-        $alltours = $DB->get_records('tool_usertours_tours');
-        $tourdata = reset($alltours);
+        $tour = $this->create_test_tour();
 
         $user = \core_user::get_user_by_username('admin');
-        $tour = tour::instance($tourdata->id);
         $tour->mark_user_completed();
         $tour->request_user_reset();
         provider::export_user_preferences($user->id);
@@ -115,12 +125,9 @@ class tool_usertours_privacy_provider_testcase extends \core_privacy\tests\provi
      * Make sure we are exporting preferences for the correct user
      */
     public function test_export_user_preferences_correct_user(): void {
-        global $DB;
-
         $this->resetAfterTest();
 
-        $alltours = $DB->get_records('tool_usertours_tours');
-        $tour = tour::instance(reset($alltours)->id);
+        $tour = $this->create_test_tour();
 
         // Create test user, mark them as having completed the tour.
         $user = $this->getDataGenerator()->create_user();
@@ -154,14 +161,15 @@ class tool_usertours_privacy_provider_testcase extends \core_privacy\tests\provi
         $this->resetAfterTest();
         $this->setAdminUser();
 
+        $tour1 = $this->create_test_tour();
+        $tour2 = $this->create_test_tour();
+
         $user = \core_user::get_user_by_username('admin');
 
         $alltours = $DB->get_records('tool_usertours_tours');
 
-        $tour1 = tour::instance(array_shift($alltours)->id);
         $tour1->mark_user_completed();
 
-        $tour2 = tour::instance(array_shift($alltours)->id);
         $tour2->mark_user_completed();
         $tour2->remove();
 
@@ -175,6 +183,6 @@ class tool_usertours_privacy_provider_testcase extends \core_privacy\tests\provi
         $this->assertCount(1, (array) $prefs);
 
         // The preference should be related to the first tour.
-        $this->assertContains($tour1->get_name(), reset($prefs)->description);
+        $this->assertStringContainsString($tour1->get_name(), reset($prefs)->description);
     }
 }

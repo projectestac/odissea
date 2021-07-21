@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'nl', version '3.8'.
+ * Strings for component 'qtype_gapselect', language 'nl', version '3.11'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -44,7 +44,10 @@ $string['pluginname_help'] = 'Een "ontbrekende woorden selecteren"-vraag verwach
 $string['pluginnameadding'] = 'Een "ontbrekende woorden selecteren"-vraag toevoegen';
 $string['pluginnameediting'] = 'Een "ontbrekende woorden selecteren"-vraag bewerken';
 $string['pluginnamesummary'] = 'De ontbrekende woorden in de tekst worden ingevuld met woorden uit de rolmenu\'s.';
-$string['privacy:metadata'] = 'De selecteer ontbrekende woorden-plugin bewaart geen persoonlijke gegevens.';
+$string['privacy:metadata'] = 'De selecteer ontbrekende woorden-plugin  laat vraag-auteurs standaardopties en gebruikersvoorkeuren instellen.';
+$string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
+$string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
+$string['privacy:preference:shuffleanswers'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['shuffle'] = 'Door elkaar halen';
 $string['tagsnotallowed'] = '{$a->tag} is niet toegestaan. (Enkel {$a->allowed} zijn toegestaan.)';
 $string['tagsnotallowedatall'] = '{$a->tag} is niet toegestaan. (Hier geen HTML gebruiken.)';

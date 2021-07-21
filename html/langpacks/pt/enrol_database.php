@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'pt', version '3.8'.
+ * Strings for component 'enrol_database', language 'pt', version '3.11'.
  *
  * @package     enrol_database
  * @category    string
@@ -41,13 +41,13 @@ $string['dbtype'] = '<em>Driver</em> da base de dados';
 $string['dbtype_desc'] = 'Esta configuração define o nome do <em>driver</em> da base de dados ADOdb correspondente ao motor de base de dados externo.';
 $string['dbuser'] = 'Utilizador de acesso à base de dados';
 $string['debugdb'] = 'Depuração do ADOdb';
-$string['debugdb_desc'] = 'Se esta configuração for ativada, será feita a análise da ligação do ADOdb à base de dados externa. Esta funcionalidade deve ser utilizada quando surge uma página em branco durante o processo de autenticação. Esta configuração não deve ser usada em sites em produção!';
+$string['debugdb_desc'] = 'Se ativar esta opção, será feita a análise da ligação do ADOdb à base de dados externa. Esta funcionalidade deve ser utilizada quando surge uma página em branco durante o processo de autenticação. Esta configuração não deve ser usada em sites em produção!';
 $string['defaultcategory'] = 'Categoria predefinida para as novas disciplinas criadas';
 $string['defaultcategory_desc'] = 'Categoria predefinida para disciplinas criadas autonomamente. Este valor é usado quando tiver especificada uma categoria.';
 $string['defaultrole'] = 'Papel predefinido';
 $string['defaultrole_desc'] = 'Papel que será atribuído se não houver nenhum definido na tabela externa.';
 $string['ignorehiddencourses'] = 'Ignorar disciplinas ocultas';
-$string['ignorehiddencourses_desc'] = 'Se esta configuração estiver ativa os utilizadores não serão inscritos em disciplinas que não estiverem disponíveis para alunos.';
+$string['ignorehiddencourses_desc'] = 'Se ativar esta opção, os utilizadores não serão inscritos em disciplinas não disponíveis para os alunos.';
 $string['localcategoryfield'] = 'Campo da categoria local';
 $string['localcoursefield'] = 'Nome do campo "Disciplina" na tabela do Moodle';
 $string['localrolefield'] = 'Nome do campo "Papel" na tabela do Moodle';

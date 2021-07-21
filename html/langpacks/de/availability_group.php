@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'de', version '3.8'.
+ * Strings for component 'availability_group', language 'de', version '3.11'.
  *
  * @package     availability_group
  * @category    string
@@ -31,8 +31,8 @@ $string['error_selectgroup'] = 'Sie müssen eine Gruppe auswählen.';
 $string['missing'] = '(Fehlende Gruppe)';
 $string['pluginname'] = 'Voraussetzung: Gruppe';
 $string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Gruppe\' speichert keine personenbezogenen Daten.';
-$string['requires_anygroup'] = 'Sie gehören zu einer Gruppe';
-$string['requires_group'] = 'Sie gehören zu <strong>{$a}</strong>';
-$string['requires_notanygroup'] = 'Sie gehören zu keiner Gruppe';
-$string['requires_notgroup'] = 'Sie gehören nicht zu <strong>{$a}</strong>';
+$string['requires_anygroup'] = 'Sie sind in einer Gruppe';
+$string['requires_group'] = 'Sie sind in <strong>{$a}</strong>';
+$string['requires_notanygroup'] = 'Sie sind in keiner Gruppe';
+$string['requires_notgroup'] = 'Sie sind nicht in <strong>{$a}</strong>';
 $string['title'] = 'Gruppe';

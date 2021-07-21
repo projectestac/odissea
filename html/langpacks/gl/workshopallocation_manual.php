@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_manual', language 'gl', version '3.8'.
+ * Strings for component 'workshopallocation_manual', language 'gl', version '3.11'.
  *
  * @package     workshopallocation_manual
  * @category    string
@@ -29,7 +29,7 @@ $string['addreviewee'] = 'Engadir revisor';
 $string['addreviewer'] = 'Engadir revisor';
 $string['allocationadded'] = 'A entrega foi asignada satisfactoriamente';
 $string['allocationexists'] = 'Xa existe a asignación';
-$string['areyousuretodeallocate'] = 'Confirma que quere retirar a asignación seleccionada?';
+$string['areyousuretodeallocate'] = 'Confirma que quere asignar a avaliación seleccionada?';
 $string['areyousuretodeallocategraded'] = 'Vai a retirar a avaliación que xa tiña sido cualificada. Confirma que  quere facelo?';
 $string['pluginname'] = 'Asignación manual';
 $string['privacy:metadata:preference:perpage'] = 'Número de avaliacións asignadas que o usuario prefire ver nunha páxina.';

@@ -42,6 +42,8 @@ define('FEEDBACK_DEFAULT_PAGE_COUNT', 20);
 define('FEEDBACK_EVENT_TYPE_OPEN', 'open');
 define('FEEDBACK_EVENT_TYPE_CLOSE', 'close');
 
+require_once(__DIR__ . '/deprecatedlib.php');
+
 /**
  * @uses FEATURE_GROUPS
  * @uses FEATURE_GROUPINGS
@@ -388,7 +390,8 @@ function feedback_get_recent_mod_activity(&$activities, &$index,
 
     $sqlargs = array();
 
-    $userfields = user_picture::fields('u', null, 'useridagain');
+    $userfieldsapi = \core_user\fields::for_userpic();
+    $userfields = $userfieldsapi->get_sql('u', false, '', 'useridagain', false)->selects;
     $sql = " SELECT fk . * , fc . * , $userfields
                 FROM {feedback_completed} fc
                     JOIN {feedback} fk ON fk.id = fc.feedback
@@ -508,32 +511,6 @@ function feedback_print_recent_mod_activity($activity, $courseid, $detail, $modn
     echo "</td></tr></table>";
 
     return;
-}
-
-/**
- * Obtains the automatic completion state for this feedback based on the condition
- * in feedback settings.
- *
- * @param object $course Course
- * @param object $cm Course-module
- * @param int $userid User ID
- * @param bool $type Type of comparison (or/and; can be used as return value if no conditions)
- * @return bool True if completed, false if not, $type if conditions not set.
- */
-function feedback_get_completion_state($course, $cm, $userid, $type) {
-    global $CFG, $DB;
-
-    // Get feedback details
-    $feedback = $DB->get_record('feedback', array('id'=>$cm->instance), '*', MUST_EXIST);
-
-    // If completion option is enabled, evaluate it and return true/false
-    if ($feedback->completionsubmit) {
-        $params = array('userid'=>$userid, 'feedback'=>$feedback->id);
-        return $DB->record_exists('feedback_completed', $params);
-    } else {
-        // Completion option is not enabled so just return $type
-        return $type;
-    }
 }
 
 /**
@@ -809,7 +786,8 @@ function feedback_set_events($feedback) {
         $event->eventtype    = FEEDBACK_EVENT_TYPE_OPEN;
         $event->type         = empty($feedback->timeclose) ? CALENDAR_EVENT_TYPE_ACTION : CALENDAR_EVENT_TYPE_STANDARD;
         $event->name         = get_string('calendarstart', 'feedback', $feedback->name);
-        $event->description  = format_module_intro('feedback', $feedback, $feedback->coursemodule);
+        $event->description  = format_module_intro('feedback', $feedback, $feedback->coursemodule, false);
+        $event->format       = FORMAT_HTML;
         $event->timestart    = $feedback->timeopen;
         $event->timesort     = $feedback->timeopen;
         $event->visible      = instance_is_visible('feedback', $feedback);
@@ -844,7 +822,8 @@ function feedback_set_events($feedback) {
         $event->type         = CALENDAR_EVENT_TYPE_ACTION;
         $event->eventtype    = FEEDBACK_EVENT_TYPE_CLOSE;
         $event->name         = get_string('calendarend', 'feedback', $feedback->name);
-        $event->description  = format_module_intro('feedback', $feedback, $feedback->coursemodule);
+        $event->description  = format_module_intro('feedback', $feedback, $feedback->coursemodule, false);
+        $event->format       = FORMAT_HTML;
         $event->timestart    = $feedback->timeclose;
         $event->timesort     = $feedback->timeclose;
         $event->visible      = instance_is_visible('feedback', $feedback);
@@ -983,7 +962,8 @@ function feedback_get_incomplete_users(cm_info $cm,
 
     //first get all user who can complete this feedback
     $cap = 'mod/feedback:complete';
-    $allnames = get_all_user_name_fields(true, 'u');
+    $userfieldsapi = \core_user\fields::for_name();
+    $allnames = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
     $fields = 'u.id, ' . $allnames . ', u.picture, u.email, u.imagealt';
     if (!$allusers = get_users_by_capability($context,
                                             $cap,
@@ -1120,7 +1100,8 @@ function feedback_get_complete_users($cm,
         $sortsql = '';
     }
 
-    $ufields = user_picture::fields('u');
+    $userfieldsapi = \core_user\fields::for_userpic();
+    $ufields = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
     $sql = 'SELECT DISTINCT '.$ufields.', c.timemodified as completed_timemodified
             FROM {user} u, {feedback_completed} c '.$fromgroup.'
             WHERE '.$where.' anonymous_response = :anon
@@ -2637,6 +2618,7 @@ function feedback_send_email($cm, $feedback, $course, $user, $completed = null) 
             ];
             if ($feedback->anonymous == FEEDBACK_ANONYMOUS_NO) {
                 $eventdata = new \core\message\message();
+                $eventdata->anonymous        = false;
                 $eventdata->courseid         = $course->id;
                 $eventdata->name             = 'submission';
                 $eventdata->component        = 'mod_feedback';
@@ -2659,6 +2641,7 @@ function feedback_send_email($cm, $feedback, $course, $user, $completed = null) 
                 message_send($eventdata);
             } else {
                 $eventdata = new \core\message\message();
+                $eventdata->anonymous        = true;
                 $eventdata->courseid         = $course->id;
                 $eventdata->name             = 'submission';
                 $eventdata->component        = 'mod_feedback';
@@ -2724,6 +2707,7 @@ function feedback_send_email_anonym($cm, $feedback, $course) {
             }
 
             $eventdata = new \core\message\message();
+            $eventdata->anonymous        = true;
             $eventdata->courseid         = $course->id;
             $eventdata->name             = 'submission';
             $eventdata->component        = 'mod_feedback';

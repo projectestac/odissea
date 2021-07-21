@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'de', version '3.8'.
+ * Strings for component 'gradingform_guide', language 'de', version '3.11'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -92,6 +92,7 @@ $string['regrademessage1'] = 'Sie nehmen nun Änderungen im Bewertungsschema vor
 $string['regrademessage5'] = 'Sie nehmen nun wesentliche Änderungen des Bewertungsschema vor, das bereits zuvor verwandt worden ist. Die Einträge im Kurs-Bewertungsbereich bleiben zunächst unverändert. Die Detailbewertungen der Aktivität werden für Teilnehmer/innen jedoch verborgen, bis Sie die Bewertungen überprüft und ggfs. bestätigt oder angepasst haben.';
 $string['regradeoption0'] = 'Nicht zur Neubewertung markieren';
 $string['regradeoption1'] = 'Für Neubewertung markieren';
+$string['remark_help'] = 'Geben Sie zusätzliche Kommentare zu diesem Kriterium ein.';
 $string['restoredfromdraft'] = 'Hinweis: Die letzte Bewerung für diese/n Nutzer/in wurde nicht richtig abgespeichert. Die Entwurfs-Bewertungen wurden daher wieder hergestellt. Mit dem \'Abbrechen\'-Button können Sie diese Änderung rückgängig machen.';
 $string['save'] = 'Sichern';
 $string['saveguide'] = 'Bewertungsrichtlinie speichern und aktivieren.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'ar', version '3.8'.
+ * Strings for component 'workshopform_numerrors', language 'ar', version '3.11'.
  *
  * @package     workshopform_numerrors
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredimensions'] = 'الفراغات لـ {$a} للتأكيد أكثر';
+$string['addmoredimensions'] = 'إضافة {$a} تأكيدات أخرى';
 $string['configgrade0'] = 'الكلمة الافتراضية التي تصف التقييم السلبي للتأكيد.';
 $string['configgrade1'] = 'الكلمة الافتراضية التي تصف تقييماً إيجابياً للتأكيد.';
 $string['dimensioncommentfor'] = 'تعليق لـ {$a}';
@@ -33,14 +33,13 @@ $string['dimensiondescription'] = 'الوصف';
 $string['dimensiongrade'] = 'الدرجة';
 $string['dimensionnumber'] = 'التأكيد {$a}';
 $string['dimensionweight'] = 'الوزن';
-$string['grade0'] = 'تعبير عن خطأ';
+$string['grade0'] = 'الكلمة التي تمثل الخطأ';
 $string['grade0default'] = 'لا';
-$string['grade1'] = 'تعبير عن النجاح';
+$string['grade1'] = 'الكلمة التي تمثل النجاح';
 $string['grade1default'] = 'نعم';
 $string['grademapping'] = 'جدول توزيع الدرجات';
-$string['maperror'] = 'وزن عدد الأخطاء إذا كانت أقل أو تساوي';
-$string['mapgrade'] = 'تصحيح التقديمات';
+$string['maperror'] = 'عدد الأخطاء الموزون هو أقل من أو يساوي';
+$string['mapgrade'] = 'العلامة المخصصة للتسليم';
 $string['pluginname'] = 'عدد الأخطاء';
-$string['privacy:export:metadata:map'] = 'إذا وصل العدد المرجح للأخطاء إلى {$a->nonegative} ، فسيكون التقدير {$a->grade} في النسب المئوية.';
-$string['privacy:metadata'] = 'يخزن المكون الإضافي ... Number of errors ... فقط تفاصيل نموذج التقييم.
-يتم تخزين البيانات الشخصية الفعلية لكيفية ملىء النموذج بواسطة وحدة ورشة العمل نفسها و يتم إرفاقها بالتقييمات المصدرة.';
+$string['privacy:export:metadata:map'] = 'إذا وصل عدد الأخطاء الموزون إلى {$a->nonegative}، فستكون العلامة {$a->grade} بالمئة.';
+$string['privacy:metadata'] = 'يخزن ملحق عدد الأخطاء فقط تفاصيل نموذج التقييم. يتم تخزين البيانات الشخصية الفعلية لكيفية ملء النموذج بواسطة وحدة ورشة العمل نفسها ويتم إرفاقها بالتقييمات المصدرة.';

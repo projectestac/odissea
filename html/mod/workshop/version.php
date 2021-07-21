@@ -24,6 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2019111800;        // The current module version (YYYYMMDDXX)
-$plugin->requires  = 2019111200;        // Requires this Moodle version.
+$plugin->version   = 2021051700;        // The current module version (YYYYMMDDXX).
+$plugin->requires  = 2021051100;        // Requires this Moodle version.
 $plugin->component = 'mod_workshop';

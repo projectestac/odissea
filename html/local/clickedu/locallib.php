@@ -265,6 +265,7 @@ function clickedu_get_courses() {
         }
 
         $idcgap = $course['id_cgap'];
+        $ce_actual = $course['ce_actual'];
 
         $courseid = $DB->get_field('course', 'id', array('idnumber' => $idcgap));
         list($oldteachers, $oldstudents) = clickedu_get_course_enrolments($courseid);
@@ -293,6 +294,7 @@ function clickedu_get_courses() {
 
         $courses[$idcgap] = (object) array(
             'id' => $courseid,
+            'ce' => $ce_actual,
             'idnumber' => $idcgap,
             'shortname' => $shortname,
             'fullname' => $fullname,
@@ -848,6 +850,8 @@ function clickedu_sync_contents_module($course, $section, $idnumber, $modulecont
 function clickedu_sync_courses(array $courses, progress_bar $progress) {
     global $CFG, $DB;
 
+    $ce = $course->ce;
+
     $config = get_config('local_clickedu');
 
     $msg = get_string('syncingcourses', 'local_clickedu');
@@ -894,6 +898,43 @@ function clickedu_sync_courses(array $courses, progress_bar $progress) {
             local_clickedu_add_debug('debug:setdefaultcat', 'local_clickedu', $category->id);
         }
         set_config('coursecat', $category->id, 'local_clickedu');
+
+    } else{
+        /* 
+            maguilera: Mejora para añadir y detectar si existe un curso escolar y crearlo como categoria
+        */
+        $category = $DB->get_record('course_categories', array('name' => $ce), '*');
+        
+        if(!$category) {
+            $objectLastCategory = $DB->get_records_sql('SELECT max(id) as lastid, max(sortorder) as sortorder FROM {course_categories}');
+            foreach($objectLastCategory as $lastCategory){
+                $id = $lastCategory->lastid;
+                $lastSort = intval($lastCategory->sortorder);
+                
+                $id++;
+                $newOrder = $lastSort + 10000;
+            }
+
+            $newCategory = (object) [
+                'name' => (string) $ce,
+                'idnumber' => NULL,
+                'description' => "NULL",
+                'descriptiononformat' => 1,
+                'parent' => 0,
+                'sortorder' => (int) $newOrder,
+                'coursecount' => count($courses),
+                'visible' => 1,
+                'visibleold' => 1,
+                'timemodified' => time(),
+                'depth' => 1,
+                'path' => "/$id",
+                'theme' => NULL,
+            ];
+            
+            $id = $DB->insert_record('course_categories', $newCategory, true, false);
+            
+            $category = $DB->get_record('course_categories', array('id' => $id), '*');    
+        }
     }
 
     //##
@@ -913,6 +954,21 @@ function clickedu_sync_courses(array $courses, progress_bar $progress) {
                 local_clickedu_add_debug('debug:coursenoidcreated', 'local_clickedu', $course->id);
             }
             $progress->update($cur++, $total, $msg);
+            
+        }else{
+            /*Recuperamos la fila que contiene los datos del cgap que llega des de clickedu*/
+            $objectCourse = $DB->get_record('course', array('idnumber' => $course->idnumber), '*');
+            if (is_object($objectCourse) && !empty($objectCourse)) {
+
+                //Creamos un objeto para actualizar los nombres
+                $newNameCourse = (object) [
+                    'id' => (string) $objectCourse->id, //id primary que llega de la query del cgap en moodle
+                    'shortname' => (string) $course->shortname, //nombre corto
+                    'fullname' => (string) $course->fullname //nombre largo
+                ];
+
+                $DB->update_record('course', $newNameCourse); //Update
+            }
         }
 
         if ($config->advdebug) {

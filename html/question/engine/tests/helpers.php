@@ -329,6 +329,7 @@ class test_question_maker {
 
         $mc->shuffleanswers = 1;
         $mc->answernumbering = 'abc';
+        $mc->showstandardinstruction = 0;
 
         $mc->answers = array(
             13 => new question_answer(13, 'A', 1, 'A is right', FORMAT_HTML),
@@ -355,6 +356,7 @@ class test_question_maker {
 
         $mc->shuffleanswers = 1;
         $mc->answernumbering = 'abc';
+        $mc->showstandardinstruction = 0;
 
         self::set_standard_combined_feedback_fields($mc);
 
@@ -480,12 +482,12 @@ abstract class question_testcase extends advanced_testcase {
     public function assert($expectation, $compare, $notused = '') {
 
         if (get_class($expectation) === 'question_pattern_expectation') {
-            $this->assertRegExp($expectation->pattern, $compare,
+            $this->assertMatchesRegularExpression($expectation->pattern, $compare,
                     'Expected regex ' . $expectation->pattern . ' not found in ' . $compare);
             return;
 
         } else if (get_class($expectation) === 'question_no_pattern_expectation') {
-            $this->assertNotRegExp($expectation->pattern, $compare,
+            $this->assertDoesNotMatchRegularExpression($expectation->pattern, $compare,
                     'Unexpected regex ' . $expectation->pattern . ' found in ' . $compare);
             return;
 
@@ -794,7 +796,7 @@ abstract class qbehaviour_walkthrough_test_base extends question_testcase {
      */
     protected $currentoutput = '';
 
-    protected function setUp() {
+    protected function setUp(): void {
         parent::setUp();
         $this->resetAfterTest(true);
 
@@ -803,7 +805,7 @@ abstract class qbehaviour_walkthrough_test_base extends question_testcase {
             context_system::instance());
     }
 
-    protected function tearDown() {
+    protected function tearDown(): void {
         $this->displayoptions = null;
         $this->quba = null;
         parent::tearDown();
@@ -896,8 +898,8 @@ abstract class qbehaviour_walkthrough_test_base extends question_testcase {
                 // so explicity check not null in this case.
                 $this->assertNotNull($this->quba->get_question_mark($this->slot));
             }
-            $this->assertEquals($mark, $this->quba->get_question_mark($this->slot),
-                'Expected mark and actual mark differ.', 0.000001);
+            $this->assertEqualsWithDelta($mark, $this->quba->get_question_mark($this->slot),
+                 0.000001, 'Expected mark and actual mark differ.');
         }
     }
 
@@ -972,13 +974,13 @@ abstract class qbehaviour_walkthrough_test_base extends question_testcase {
 
     protected function check_output_contains($string) {
         $this->render();
-        $this->assertContains($string, $this->currentoutput,
+        $this->assertStringContainsString($string, $this->currentoutput,
                 'Expected string ' . $string . ' not found in ' . $this->currentoutput);
     }
 
     protected function check_output_does_not_contain($string) {
         $this->render();
-        $this->assertNotContains($string, $this->currentoutput,
+        $this->assertStringNotContainsString($string, $this->currentoutput,
                 'String ' . $string . ' unexpectedly found in ' . $this->currentoutput);
     }
 

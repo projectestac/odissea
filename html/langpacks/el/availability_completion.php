@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'el', version '3.8'.
+ * Strings for component 'availability_completion', language 'el', version '3.11'.
  *
  * @package     availability_completion
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_previous_cache'] = 'Πληροφορίες εξάρτησης προηγούμενης δραστηριότητας';
 $string['description'] = 'Απαιτήστε από τους μαθητές να ολοκληρώσουν (ή να μην ολοκληρώσουν) κάποια άλλη δραστηριότητα.';
 $string['error_selectcmid'] = 'Πρέπει να επιλέξετε μια δραστηριότητα για την συνθήκη ολοκλήρωσης.';
 $string['error_selectcmidpassfail'] = 'Πρέπει να επιλέξετε μια δραστηριότητα στην οποία να έχει τεθεί η συνθήκη ολοκλήρωσης «Απαιτείται βαθμός».';
@@ -35,6 +36,7 @@ $string['option_complete'] = 'πρέπει να έχει επισημανθεί 
 $string['option_fail'] = 'πρέπει να έχει ολοκληρωθεί με βαθμό κάτω από τη βάση';
 $string['option_incomplete'] = 'πρέπει να μην έχει επισημανθεί ως ολοκληρωμένη';
 $string['option_pass'] = 'πρέπει να έχει ολοκληρωθεί με βαθμό πάνω από τη βάση';
+$string['option_previous'] = 'Προηγούμενη δραστηριότητα με ολοκλήρωση';
 $string['pluginname'] = 'Περιορισμός με βάση την ολοκλήρωση δραστηριότητας';
 $string['privacy:metadata'] = 'Το πρόσθετο «Περιορισμός με βάση την ολοκλήρωση δραστηριότητας» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['requires_complete'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι επισημασμένη ως ολοκληρωμένη';
@@ -43,4 +45,10 @@ $string['requires_complete_pass'] = 'Η δραστηριότητα <strong>{$a}<
 $string['requires_incomplete'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ανολοκλήρωτη';
 $string['requires_not_complete_fail'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ανολοκλήρωτη και κάτω από τη βάση';
 $string['requires_not_complete_pass'] = 'Η δραστηριότητα <strong>{$a}</strong> είναι ανολοκλήρωτη και πάνω από τη βάση';
+$string['requires_previous_complete'] = 'Η <strong>προηγούμενη δραστηριότητα με ολοκλήρωση</strong> επισημαίνεται ως ολοκληρωμένη';
+$string['requires_previous_complete_fail'] = 'Η <strong>προηγούμενη δραστηριότητα με ολοκλήρωση</strong> έχει ολοκληρωθεί και έχει αποτύχει';
+$string['requires_previous_complete_pass'] = 'Η <strong>προηγούμενη δραστηριότητα με ολοκλήρωση</strong> έχει ολοκληρωθεί και έχει επιτύχει';
+$string['requires_previous_incomplete'] = 'Η <strong>προηγούμενη δραστηριότητα με ολοκλήρωση</strong> δεν έχει ολοκληρωθεί';
+$string['requires_previous_not_complete_fail'] = 'Η <strong>προηγούμενη δραστηριότητα με ολοκλήρωση</strong> δεν έχει ολοκληρωθεί και έχει αποτύχει';
+$string['requires_previous_not_complete_pass'] = 'Η <strong>προηγούμενη δραστηριότητα με ολοκλήρωση</strong> δεν έχει ολοκληρωθεί και έχει επιτύχει';
 $string['title'] = 'Ολοκλήρωση δραστηριότητας';

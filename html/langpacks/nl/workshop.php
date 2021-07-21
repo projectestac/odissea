@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'nl', version '3.8'.
+ * Strings for component 'workshop', language 'nl', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'Beoordelingen sluiten:';
+$string['activitydate:assessmentsclosed'] = 'Beoordelingen gesloten:';
+$string['activitydate:assessmentsopen'] = 'Beoordelingen open:';
+$string['activitydate:assessmentsopened'] = 'Beoordelingen geopend:';
+$string['activitydate:submissionsclose'] = 'Insturen sluit:';
+$string['activitydate:submissionsclosed'] = 'Insturen gesloten:';
+$string['activitydate:submissionsopen'] = 'Insturen open';
+$string['activitydate:submissionsopened'] = 'Insturen geopend:';
 $string['aggregategrades'] = 'Cijfers opnieuw berekenen';
 $string['aggregation'] = 'Cijferaggregatie';
 $string['allocate'] = 'Inzendingen toewijzen';
@@ -262,6 +270,22 @@ $string['privacy:metadata:late'] = 'Of de inzending na de deadline is ingestuurd
 $string['privacy:metadata:peercomment'] = 'Opmerking bij het gegeven cijfer van de gebruiker die de beoordeling gegeven heeft';
 $string['privacy:metadata:peercommentformat'] = 'Tekst format voor de opmerking bij het gegeven cijfer';
 $string['privacy:metadata:preference:perpage'] = 'Aantal inzendingen dat de gebruiker wil zien op één pagina';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = 'De ingeklapte / uitgeklapte status van het \'voorbeeldtaak\' viewlet.';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = 'De ingeklapte / uitgeklapte status van het \'Workshop insturingsrapport\' viewlet.';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Beoordelingsformulier" viewlet.';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Toegewezen inzendingen om te beoordelen" viewlet.';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Workshop gereedschapskist" viewlet';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Conclusie" viewlet';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Voorbeeldinzendingen om te beoordelen" viewlet.';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Voorbeeldinzendingen om te beoordelen" viewlet.';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Workshop cijferrapport" viewlet.';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Instructies voor insturen" viewlet.';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Instructies voor beoordelen" viewlet.';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Intro" viewlet.';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Algemene feedback" viewlet.';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Jouw inzending" viewlet.';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Gepubliceerde inzendingen" viewlet.';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = 'De ingeklapte / uitgeklapte status van het "Jouw cijfers" viewlet.';
 $string['privacy:metadata:published'] = 'Of de inzending moet gepubliceerd worden voor alle deelnemers eens de workshop gesloten is';
 $string['privacy:metadata:reviewerid'] = 'ID van de gebruiker die de beoordeling gaf';
 $string['privacy:metadata:strategy'] = 'Naam van de beoordelingsstrategie subplugin die de recordwaardes interpreteert';
@@ -428,3 +452,4 @@ $string['workshopname'] = 'Workshop naam';
 $string['yourassessmentfor'] = 'Jouw beoordeling voor {$a}';
 $string['yourgrades'] = 'Jouw cijfers';
 $string['yoursubmission'] = 'Jouw taak';
+$string['yoursubmissionwithassessments'] = 'Jouw inzending met beoordelingen';

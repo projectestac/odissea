@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'eu', version '3.8'.
+ * Strings for component 'page', language 'eu', version '3.11'.
  *
  * @package     page
  * @category    string
@@ -62,9 +62,9 @@ $string['page:view'] = 'Ikusi orriaren edukia';
 $string['pluginadministration'] = 'Orriaren kudeaketa';
 $string['pluginname'] = 'Orria';
 $string['popupheight'] = 'Popup-aren altuera (pixeletan)';
-$string['popupheightexplain'] = 'Zehaztu zabaltzen den leihoaren lehenetsitako altuera.';
+$string['popupheightexplain'] = 'Zehaztu popup leihoaren lehenetsitako altuera.';
 $string['popupwidth'] = 'Popup-aren zabalera (pixeletan)';
-$string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren lehenetsitako zabalera.';
+$string['popupwidthexplain'] = 'Zehaztu popup  leihoaren lehenetsitako zabalera.';
 $string['printheading'] = 'Erakutsi orriaren izena';
 $string['printheadingexplain'] = 'Erakutsi orriaren izena edukiaren gainean?';
 $string['printintro'] = 'Erakutsi orriaren deskribapena';

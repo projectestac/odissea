@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'ja', version '3.8'.
+ * Strings for component 'plugin', language 'ja', version '3.11'.
  *
  * @package     plugin
  * @category    string
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = '利用可能なアップデートデータ�
 $string['filterall'] = 'すべてを表示する';
 $string['filtercontribonly'] = '追加プラグインのみ表示する';
 $string['filterupdatesonly'] = '更新可能のみ表示する';
+$string['incompatibleversion'] = '互換性のないMoodleバージョン: {$a}';
 $string['isenabled'] = '有効にしますか?';
 $string['misdepinfoplugin'] = 'プラグイン情報';
 $string['misdepinfoversion'] = 'バージョン情報';
@@ -61,11 +62,13 @@ $string['misdepsavail'] = '利用可能な不足している依存';
 $string['misdepsunavail'] = '利用不可な不足している依存';
 $string['misdepsunavaillist'] = '依存必要条件を満たすバージョンは見つかりませんでした: {$a}.';
 $string['misdepsunknownlist'] = 'プラグインディレクトリにありません: <strong>{$a}</strong>';
+$string['moodlebranch'] = 'Moodle {$a->min} - {$a->max}';
 $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'このタイプのプラグインはインストールされていません。';
 $string['notdownloadable'] = 'パッケージをダウンロードできません。';
-$string['notdownloadable_help'] = 'アップデートのZIPパッケージを自動的にダウンロードできません。詳細はドキュメンテーションページをご覧ください。';
+$string['notdownloadable_help'] = 'アップデートのZIPパッケージを自動的にダウンロードできません。';
 $string['notes'] = 'ノート';
+$string['notsupported'] = 'Moodleバージョン {$a} に互換性のないプラグイン';
 $string['notwritable'] = 'プラグインファイル書き込み不可';
 $string['notwritable_help'] = 'ウェブサーバにプラグインファイルを書き込むことができません。ウェブサーバプロセスはプラグインフォルダおよびそのコンテンツに関して書き込み権を持つ必要があります。プラグインタイプのルートフォルダにも書き込み権が必要です。';
 $string['otherplugin'] = '{$a->component}';
@@ -120,6 +123,8 @@ $string['type_cachestore'] = 'キャッシュストア';
 $string['type_cachestore_plural'] = 'キャッシュストア';
 $string['type_calendartype'] = 'カレンダータイプ';
 $string['type_calendartype_plural'] = 'カレンダータイプ';
+$string['type_contentbank'] = 'コンテンツバンク';
+$string['type_contentbank_plural'] = 'コンテンツバンクプラグイン';
 $string['type_coursereport'] = 'コースレポート';
 $string['type_coursereport_plural'] = 'コースレポート';
 $string['type_customfield'] = 'カスタムフィールド';
@@ -145,6 +150,8 @@ $string['type_gradereport'] = '評定表レポート';
 $string['type_gradereport_plural'] = '評定表レポート';
 $string['type_gradingform'] = '高度な評定方法';
 $string['type_gradingform_plural'] = '高度な評定方法';
+$string['type_h5plib'] = 'H5Pフレームワーク';
+$string['type_h5plib_plural'] = 'H5Pフレームワーク';
 $string['type_local'] = 'ローカルプラグイン';
 $string['type_local_plural'] = 'ローカルプラグイン';
 $string['type_media'] = 'メディアプレイヤ';
@@ -157,6 +164,9 @@ $string['type_mnetservice'] = 'MNetサービス';
 $string['type_mnetservice_plural'] = 'MNetサービス';
 $string['type_mod'] = '活動モジュール';
 $string['type_mod_plural'] = '活動モジュール';
+$string['type_paygw'] = '支払いゲートウェイ';
+$string['type_paygw_plural'] = '支払いゲートウェイ';
+$string['type_paygwmanage'] = '支払いゲートウェイを管理する';
 $string['type_plagiarism'] = '盗作プラグイン';
 $string['type_plagiarism_plural'] = '盗作プラグイン';
 $string['type_portfolio'] = 'ポートフォリオ';

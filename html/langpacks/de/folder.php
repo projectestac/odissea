@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'de', version '3.8'.
+ * Strings for component 'folder', language 'de', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -39,6 +39,8 @@ $string['folder:addinstance'] = 'Neues Verzeichnis hinzufügen';
 $string['folder:managefiles'] = 'Dateien im Verzeichnis verwalten';
 $string['folder:view'] = 'Verzeichnisinhalt sehen';
 $string['foldercontent'] = 'Dateien und Verzeichnisse';
+$string['forcedownload'] = 'Herunterladen von Dateien erzwingen';
+$string['forcedownload_help'] = 'Ob bestimmte Dateien wie Bilder oder HTML-Dateien im Browser angezeigt werden sollen, anstatt heruntergeladen zu werden. Beachten Sie, dass die Einstellung aus Sicherheitsgründen nur deaktiviert werden sollte, wenn alle Benutzer, die Dateien im Ordner verwalten können, vertrauenswürdige Benutzer sind.';
 $string['indicator:cognitivedepth'] = 'Verzeichnis kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einem Verzeichnis erreicht hat.';
 $string['indicator:cognitivedepthdef'] = 'Verzeichnis kognitiv';
@@ -52,7 +54,12 @@ $string['maxsizetodownload_help'] = 'Die Option legt die maximale Verzeichnisgr�
 $string['modulename'] = 'Verzeichnis';
 $string['modulename_help'] = 'Wenn Sie eine größere Anzahl von Dateien in Ihrem Kurs bereitstellen möchten, legen Sie dafür ein Verzeichnis an. Laden Sie die Dateien ins Verzeichnis und strukturieren Sie alles übersichtlich in Unterverzeichnissen.
 
-Laden Sie mehrere Dateien als gepacktes ZIP-Archiv hoch und entpacken Sie sie im Verzeichnis. Auch eine Struktur mit Unterverzeichnissen bleibt beim Übertragen in ein Verzeichnis erhalten.';
+Laden Sie mehrere Dateien als gepacktes ZIP-Archiv hoch und entpacken Sie sie im Verzeichnis. Auch eine Struktur mit Unterverzeichnissen bleibt beim Übertragen in ein Verzeichnis erhalten.
+
+Ein Verzeichnis kann verwendet werden
+
+* Für eine Reihe von Dateien zu einem Thema, z.B. einen Satz früherer Prüfungsarbeiten im PDF-Format oder eine Sammlung von Bilddateien zur Verwendung in Projekten von Teilnehmer/innen
+* Bereitstellung eines gemeinsamen Upload-Bereichs für Trainer/innen auf der Kursseite (wobei das Verzeichnis verborgen bleibt, damit nur Trainer/innen ihn sehen können)';
 $string['modulenameplural'] = 'Verzeichnisse';
 $string['newfoldercontent'] = 'Neuer Ordnerinhalt';
 $string['noautocompletioninline'] = 'Der automatische Abschluss kann nicht gleichzeitig mit der Anzeige "Auf der Kursseite" gewählt werden';

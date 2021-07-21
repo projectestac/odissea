@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ja', version '3.8'.
+ * Strings for component 'cache', language 'ja', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -40,7 +40,10 @@ $string['cachedef_calendar_subscriptions'] = 'カレンダー購読';
 $string['cachedef_capabilities'] = 'システムケイパビリティリスト';
 $string['cachedef_completion'] = '活動完了ステータス';
 $string['cachedef_config'] = 'Config設定';
+$string['cachedef_contentbank_context_extensions'] = 'コンテンツバンクコンテクスト内で許可される拡張子およびサポータプラグイン';
+$string['cachedef_contentbank_enabled_extensions'] = 'コンテンツバンク内で許可される拡張子およびサポータプラグイン';
 $string['cachedef_contextwithinsights'] = '洞察のコンテクスト';
+$string['cachedef_course_image'] = 'コースイメージ';
 $string['cachedef_course_user_dates'] = '相対日付モードで設定するコースのユーザ日付';
 $string['cachedef_coursecat'] = '特定ユーザのコースカテゴリ一覧';
 $string['cachedef_coursecatrecords'] = 'コースカテゴリレコード';
@@ -54,9 +57,13 @@ $string['cachedef_externalbadges'] = '特定ユーザの外部バッジ';
 $string['cachedef_fontawesomeiconmapping'] = 'Font Awesomのアイコンマッピング';
 $string['cachedef_grade_categories'] = '評定カテゴリクエリ';
 $string['cachedef_grade_letters'] = '評定文字クエリ';
+$string['cachedef_gradesetting'] = 'コース評定設定';
 $string['cachedef_groupdata'] = 'コースグループ情報';
+$string['cachedef_h5p_content_type_translations'] = 'H5Pコンテンツタイプライブラリ翻訳';
+$string['cachedef_h5p_library_files'] = 'H5Pライブラリファイル';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - クリーニング済みコンテンツ';
 $string['cachedef_langmenu'] = '利用可能な言語一覧';
+$string['cachedef_license'] = 'ライセンス一覧';
 $string['cachedef_locking'] = 'ロッキング';
 $string['cachedef_message_processors_enabled'] = 'メッセージプロセッサ有効ステータス';
 $string['cachedef_message_time_last_message_between_users'] = '会話内の直近メッセージの作成日時';
@@ -69,6 +76,7 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'portfolio_add_bu
 $string['cachedef_postprocessedcss'] = '後処理CSS';
 $string['cachedef_presignup'] = '特定の未登録ユーザの事前サインアップデータ';
 $string['cachedef_questiondata'] = '問題定義';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'コースコンテンツアイテムの推奨';
 $string['cachedef_repositories'] = 'リポジトリインスタンスデータ';
 $string['cachedef_roledefs'] = 'ロール定義';
 $string['cachedef_string'] = '言語ストリングキャッシュ';
@@ -76,6 +84,8 @@ $string['cachedef_suspended_userids'] = 'コースごとの利用停止ユーザ
 $string['cachedef_tagindexbuilder'] = 'タグ付きアイテムの検索結果';
 $string['cachedef_tags'] = 'タグコレクションおよびエリア';
 $string['cachedef_temp_tables'] = '一時テーブルキャッシュ';
+$string['cachedef_user_course_content_items'] = 'コースあたりのユーザのコンテンツアイテム数 (活動、リソースおよびサブシステム)';
+$string['cachedef_user_favourite_course_content_items'] = 'ユーザの星付きアイテム';
 $string['cachedef_user_group_groupings'] = 'ユーザのコースあたりのグルーピングおよびグループ';
 $string['cachedef_userselections'] = 'Moodle内でのユーザ選択の保持に使用するデータ';
 $string['cachedef_yuimodules'] = 'YUIモジュール定義';

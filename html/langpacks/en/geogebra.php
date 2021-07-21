@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'en', version '3.8'.
+ * Strings for component 'geogebra', language 'en', version '3.11'.
  *
  * @package     geogebra
  * @category    string
@@ -74,16 +74,12 @@ $string['geogebraurl_help'] = 'Find the construction on <a href="https://www.geo
 $string['grade'] = 'Grade';
 $string['gradeit'] = 'Grade';
 $string['grademethod'] = 'Grading Method';
-$string['header_geogebra'] = 'GeoGebra Settings';
-$string['header_score'] = 'Avaluation Settings';
 $string['height'] = 'Height';
 $string['highestattempt'] = 'Highest attempt';
 $string['httpnotallowed'] = 'At the moment is not allowed to use external files';
 $string['interfaceoptionsgrp'] = 'User interface';
 $string['invalidgeogebrafile'] = 'Invalid GeoGebra specified. It must have the ".ggb" extension.';
 $string['invalidurl'] = 'Invalid URL specified. It must start with http(s) and has to be a valid ".ggb" file.';
-$string['javacodebase'] = 'GeoGebra codebase';
-$string['javacodebase_help'] = 'GeoGebra jar files URL';
 $string['language'] = 'Language';
 $string['lastattempt'] = 'Last attempt';
 $string['lastattemptremaining'] = 'This is your last attempt for this activity';
@@ -156,6 +152,5 @@ $string['viewattempt'] = 'View';
 $string['viewattempts'] = 'View attemtps';
 $string['viewattempttab'] = 'View attempt';
 $string['viewtab'] = 'View';
-$string['warningnojava'] = 'This is a Java Applet created using GeoGebra from www.geogebra.org - it looks like you don\'t have Java installed, please go to www.java.com';
 $string['weight'] = 'Weight';
 $string['width'] = 'Width';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_interactions', language 'ru', version '3.8'.
+ * Strings for component 'scormreport_interactions', language 'ru', version '3.11'.
  *
  * @package     scormreport_interactions
  * @category    string
@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Отчет о взаимодействии';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'Отображать ли сводку вопросов в отчете о взаимодействиях SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'Отображать ли сводку ответов в отчете о взаимодействиях SCORM';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'Отображать ли сводку результатов в отчете о взаимодействиях SCORM';
 $string['privacy:metadata:preference:scorm_report_interactions_right'] = 'Отображать ли правильные ответы в отчете о взаимодействии SCORM?';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Количество пользователей, отображающихся в отчетах SCORM';
 $string['questionx'] = 'Вопрос {$a}';
 $string['responsex'] = 'Ответ {$a}';
 $string['resultx'] = 'Результат {$a}';

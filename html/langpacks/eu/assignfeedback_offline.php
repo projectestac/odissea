@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'eu', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'eu', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -40,13 +40,13 @@ $string['gradeupdate'] = 'Eman {$a->grade} kalifikazioa {$a->student} ikasleari'
 $string['ignoremodified'] = 'Baimendu kalifikazioen eguneraketa kasu hau ematen denean: Moodlen dagoen kalifikazioa kalkulu-orria sortu ondoren eman da.';
 $string['ignoremodified_help'] = 'Kalifikazio kalkulu-orria Moodletik jaisten denean, kalifikazio bakoitzaren azken eguneraketa data jasotzen da. Horietako kalifikazioren bat eguneratzen bada Moodlen orria jaitsi ondoren, lehentasuna emango zaio azken kalifikazio honi inportazioa egiteko unean. Aukera hau gaitzen bada, Moodlek desgaituko du babes neurri hau, eta kalifikatzaile bat baino gehiago badago, posible izango da batak besteari kalifikazioak zanpatzea.';
 $string['importgrades'] = 'Aldaketak berretsi kalifikazio kalkulu-orrian';
-$string['invalidgradeimport'] = 'Moodle-k ezin izan du irakurri igotako kalkulu-orria. Ziurtatu ezazu komaz banatutako balioen formatuan (.csv) gorde duzula eta berriz saiatu zaitez.';
+$string['invalidgradeimport'] = 'Moodlek ezin izan du irakurri igotako kalkulu-orria. Ziurtatu ezazu komaz banatutako balioen formatuan (.csv) gorde duzula eta berriz saiatu zaitez.';
 $string['nochanges'] = 'Ez da topatu aldatutako kalifikaziorik igotako kalkulu-orrian';
 $string['offlinegradingworksheet'] = 'Kalifikazioak';
 $string['pluginname'] = 'Lineaz kanpoko kalkulu-orria';
 $string['privacy:nullproviderreason'] = 'Plugin honek ez du erabiltzailearen informazioa biltzeko datu-baserik. Soilik mod_assign-eko APIak erabiltzen ditu kalifikazio-interfazea erakusten laguntzeko.';
 $string['processgrades'] = 'Inportatu kalifikazioak';
 $string['skiprecord'] = 'Utzi alde batera erregistroa';
-$string['updatedgrades'] = '{$a} kalifikazioak eta feedbackak eguneratu dira';
+$string['updatedgrades'] = '<strong>{$a->gradeupdatescount}</strong> kalifikazio eta <strong>{$a->feedbackupdatescount}</strong> feedback-instantzia eguneratu dira.';
 $string['updaterecord'] = 'Eguneratu erregistroa';
 $string['uploadgrades'] = 'Igo kalifikazio kalkulu-orria';

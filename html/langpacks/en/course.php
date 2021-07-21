@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'en', version '3.8'.
+ * Strings for component 'course', language 'en', version '3.11'.
  *
  * @package     course
  * @category    string
@@ -25,11 +25,42 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitychooseractivefooter'] = 'Activity chooser footer';
+$string['activitychooseractivefooter_desc'] = 'The activity chooser can support plugins that add items to the footer.';
+$string['activitychoosercategory'] = 'Activity chooser';
+$string['activitychooserhidefooter'] = 'No footer';
+$string['activitychooserrecommendations'] = 'Recommended activities';
+$string['activitychoosersettings'] = 'Activity chooser settings';
+$string['activitychoosertabmode'] = 'Activity chooser tabs';
+$string['activitychoosertabmode_desc'] = 'The activity chooser enables a teacher to easily select activities and resources to add to their course. This setting determines which tabs should be displayed in it. Note that the starred tab is only displayed for a user if they have starred one or more activities and the recommended tab is only displayed if a site administrator has specified some recommended activities.';
+$string['activitychoosertabmodeone'] = 'Starred, All, Activities, Resources, Recommended';
+$string['activitychoosertabmodethree'] = 'Starred, Activities, Resources, Recommended';
+$string['activitychoosertabmodetwo'] = 'Starred, All, Recommended';
+$string['activitydate:closed'] = 'Closed:';
+$string['activitydate:closes'] = 'Closes:';
+$string['activitydate:opened'] = 'Opened:';
+$string['activitydate:opens'] = 'Opens:';
 $string['aria:coursecategory'] = 'Course category';
 $string['aria:courseimage'] = 'Course image';
 $string['aria:coursename'] = 'Course name';
 $string['aria:courseshortname'] = 'Course short name';
+$string['aria:defaulttab'] = 'Default activities';
 $string['aria:favourite'] = 'Course is starred';
+$string['aria:favouritestab'] = 'Starred activities';
+$string['aria:modulefavourite'] = 'Star {$a} activity';
+$string['aria:recommendedtab'] = 'Recommended activities';
+$string['completion_automatic:done'] = 'Done:';
+$string['completion_automatic:failed'] = 'Failed:';
+$string['completion_automatic:todo'] = 'To do:';
+$string['completion_manual:aria:done'] = '{$a} is marked as done. Press to undo.';
+$string['completion_manual:aria:markdone'] = 'Mark {$a} as done';
+$string['completion_manual:done'] = 'Done';
+$string['completion_manual:markdone'] = 'Mark as done';
+$string['completion_setby:auto:done'] = 'Done: {$a->condition} (set by {$a->setby})';
+$string['completion_setby:auto:todo'] = 'To do: {$a->condition} (set by {$a->setby})';
+$string['completion_setby:manual:done'] = '{$a->activityname} is marked by {$a->setby} as done. Press to undo.';
+$string['completion_setby:manual:markdone'] = '{$a->activityname} is marked by {$a->setby} as not done. Press to mark as done.';
+$string['completionrequirements'] = 'Completion requirements for {$a}';
 $string['coursealreadyfinished'] = 'Course already finished';
 $string['coursenotyetfinished'] = 'The course has not yet finished';
 $string['coursenotyetstarted'] = 'The course has not yet started';
@@ -42,31 +73,41 @@ $string['customfield_visibility_help'] = 'This setting determines who can view t
 $string['customfield_visibletoall'] = 'Everyone';
 $string['customfield_visibletoteachers'] = 'Teachers';
 $string['customfieldsettings'] = 'Common course custom fields settings';
+$string['downloadcourseconfirmation'] = 'You are about to download a zip file of course content (excluding items which cannot be downloaded and any files larger than {$a}).';
+$string['downloadcoursecontent'] = 'Download course content';
+$string['downloadcoursecontent_help'] = 'This setting determines whether course content may be downloaded by users with the download course content capability (by default users with the role of student or teacher).';
+$string['enabledownloadcoursecontent'] = 'Enable download course content';
 $string['errorendbeforestart'] = 'The end date ({$a}) is before the course start date.';
 $string['favourite'] = 'Starred course';
 $string['gradetopassnotset'] = 'This course does not have a grade to pass set. It may be set in the grade item of the course (Gradebook setup).';
+$string['informationformodule'] = 'Information about the {$a} activity';
+$string['module'] = 'Activity';
 $string['noaccesssincestartinfomessage'] = 'Hi {$a->userfirstname},
-
-</br><br/>A number of students in {$a->coursename} have never accessed the course.';
+<p>A number of students in {$a->coursename} have never accessed the course.</p>';
 $string['nocourseactivity'] = 'Not enough course activity between the start and the end of the course';
 $string['nocourseendtime'] = 'The course does not have an end time';
 $string['nocoursesections'] = 'No course sections';
 $string['nocoursestudents'] = 'No students';
 $string['norecentaccessesinfomessage'] = 'Hi {$a->userfirstname},
-
-</br><br/>A number of students in {$a->coursename} have not accessed the course recently.';
+<p>A number of students in {$a->coursename} have not accessed the course recently.</p>';
 $string['noteachinginfomessage'] = 'Hi {$a->userfirstname},
-
-</br><br/>Courses with start dates in the next week have been identified as having no teacher or student enrolments.';
+<p>Courses with start dates in the next week have been identified as having no teacher or student enrolments.</p>';
 $string['privacy:completionpath'] = 'Course completion';
 $string['privacy:favouritespath'] = 'Course starred information';
+$string['privacy:metadata:activityfavouritessummary'] = 'The course system contains information about which items from the activity chooser have been starred by the user.';
 $string['privacy:metadata:completionsummary'] = 'The course contains completion information about the user.';
 $string['privacy:metadata:favouritessummary'] = 'The course contains information relating to the course being starred by the user.';
 $string['privacy:perpage'] = 'The number of courses to show per page.';
+$string['recommend'] = 'Recommend';
+$string['recommendcheckbox'] = 'Recommend activity: {$a}';
+$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} after course start';
+$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} before course start';
+$string['searchactivitiesbyname'] = 'Search for activities by name';
+$string['searchresults'] = 'Search results: {$a}';
 $string['studentsatriskincourse'] = 'Students at risk in {$a} course';
 $string['studentsatriskinfomessage'] = 'Hi {$a->userfirstname},
-
-</br><br/>Students in the {$a->coursename} course have been identified as being at risk.';
+<p>Students in the {$a->coursename} course have been identified as being at risk.</p>';
+$string['submitsearch'] = 'Submit search';
 $string['target:coursecompetencies'] = 'Students at risk of not achieving the competencies assigned to a course';
 $string['target:coursecompetencies_help'] = 'This target describes whether a student is at risk of not achieving the competencies assigned to a course. This target considers that all competencies assigned to the course must be achieved by the end of the course.';
 $string['target:coursecompletion'] = 'Students at risk of not meeting the course completion conditions';

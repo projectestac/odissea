@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'nl', version '3.8'.
+ * Strings for component 'choice', language 'nl', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -55,6 +55,7 @@ $string['choicetext'] = 'Keuzetekst';
 $string['chooseaction'] = 'Kies een actie...';
 $string['chooseoption'] = 'Kies: {$a}';
 $string['closebeforeopen'] = 'Je hebt een afsluitdatum opgegeven die vroeger ligt dan de openingsdatum.';
+$string['completiondetail:submit'] = 'Maak een keuze';
 $string['completionsubmit'] = 'Toon als voltooid wanneer de gebruiker een keuze maakt';
 $string['description'] = 'Inleidende tekst';
 $string['deselectalloption'] = 'Deselecteer alles "{$a}"';
@@ -80,6 +81,7 @@ $string['indicator:socialbreadth_help'] = 'Deze indicator is gebaseerd op de doo
 $string['indicator:socialbreadthdef'] = 'Keuze sociaal';
 $string['indicator:socialbreadthdef_help'] = 'De deelnemer heeft dit percentage van de maatschappelijke betrokkenheid van de Choice-activiteiten tijdens dit analyse-interval bereikt (Niveaus = Geen deelname, Alleen deelnemer, Deelnemer met anderen)';
 $string['limit'] = 'Beperk';
+$string['limita'] = 'Limiet: {$a}';
 $string['limitanswers'] = 'Beperk het aantal toegelaten antwoorden';
 $string['limitanswers_help'] = 'Met deze optie is het mogelijk om het aantal deelnemers dat elke optie kan kiezen te beperken.
 
@@ -115,6 +117,7 @@ $string['options'] = 'Opties';
 $string['page-mod-choice-x'] = 'Keuzemodulepagina';
 $string['pluginadministration'] = 'Keuzebeheer';
 $string['pluginname'] = 'Keuze';
+$string['previewing'] = 'Dit is slechts een voorbeeld van de mogelijke opties voor deze activiteit. Je zult kunnen kiezen wanneer die opent.';
 $string['previewonly'] = 'Dit is slechts een voorbeeld van de beschikbare opties voor deze activiteit. Je zult je keuze niet kunnen maken voor {$a}.';
 $string['privacy'] = 'Privacy van de resultaten';
 $string['privacy:metadata:choice_answers'] = 'Informatie over het door de gebruiker gekozen antwoord voor een bepaalde keuzeactiviteit';
@@ -137,12 +140,15 @@ $string['publishnot'] = 'Publiceer geen resultaten voor de leerlingen';
 $string['removemychoice'] = 'Verwijder mijn keuze';
 $string['removeresponses'] = 'Verwijder alle antwoorden';
 $string['responses'] = 'Antwoorden';
+$string['responsesa'] = 'Reacties: {$a}';
 $string['responsesresultgraphheader'] = 'Grafiek tonen';
 $string['responsesto'] = 'Antwoorden op  {$a}';
 $string['results'] = 'Resultaten';
 $string['savemychoice'] = 'Bewaar mijn antwoord';
 $string['search:activity'] = 'Keuze - activiteitsinformatie';
 $string['selectalloption'] = 'Selecteer alles "{$a}"';
+$string['showavailable'] = 'Toon beschikbare ruimtes';
+$string['showavailable_help'] = 'Laat deelnemers de limiet zien voor elke optie en het aantal er antwoorden er tot nu toe al zijn.';
 $string['showpreview'] = 'Toon voorbeeld';
 $string['showpreview_help'] = 'Laat leerlingen een voorbeeld zien van de mogelijke opties voor de keuze open is voor insturen.';
 $string['showunanswered'] = 'Toon een kolom voor onbeantwoord';

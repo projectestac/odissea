@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ru', version '3.8'.
+ * Strings for component 'tool_uploaduser', language 'ru', version '3.11'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -29,20 +29,34 @@ $string['allowdeletes'] = 'Разрешить удаления';
 $string['allowrenames'] = 'Разрешить переименовывать';
 $string['allowsuspends'] = 'Разрешить блокировку и активацию учетных записей';
 $string['assignedsysrole'] = 'Назначена системная роль {$a}';
+$string['clidefault'] = 'По умолчанию:';
+$string['clierrorargument'] = 'Значение аргумента - {$a->name} недопустимо. Допустимые значения: {$a->values}';
+$string['clifile'] = 'Путь к CSV-файлу с данными пользователей. Необходим!';
+$string['clifilenotreadable'] = 'Файл {$a} не существует или не доступен для чтения';
+$string['clihelp'] = 'Распечатать эту справку.';
+$string['climissingargument'] = 'Необходим аргумент - {$а}';
+$string['clititle'] = 'Инструмент Загрузка пользователей из командной строки.';
+$string['clivalidationerror'] = 'Ошибка проверки:';
 $string['csvdelimiter'] = 'Разделитель для CSV';
 $string['defaultvalues'] = 'Значения по умолчанию';
 $string['deleteerrors'] = 'Ошибки удаления';
 $string['encoding'] = 'Кодировка';
 $string['errormnetadd'] = 'Невозможно добавить отдаленных пользователей';
+$string['errorprefix'] = 'Ошибка:';
 $string['errors'] = 'Ошибки';
 $string['examplecsv'] = 'Пример текстового файла';
 $string['examplecsv_help'] = 'Чтобы использовать пример текстового файла, загрузите его и откройте в текстовом редакторе или редакторе электронных таблиц. Оставьте первую строку без изменений, затем отредактируйте следующие строки (записи) и добавьте свои пользовательские данные, добавив дополнительные строки при необходимости. Сохраните файл как CSV, затем загрузите его.
 
 Пример текстового файла также может использоваться для тестирования, так как вы можете предварительно просмотреть данные пользователя и можете отменить действие до создания учетных записей пользователей.';
+$string['infoprefix'] = 'Информация:';
+$string['invalidtheme'] = 'Тема «{$a}» не установлена и будет проигнорирована.';
 $string['invalidupdatetype'] = 'Этот параметр не может быть выбран с заданным типом загрузки.';
 $string['invaliduserdata'] = 'Обнаружены некорректные данные для пользователя {$a}, они были автоматически очищены.';
+$string['linex'] = 'Строка {$а}';
 $string['nochanges'] = 'Не изменять';
+$string['notheme'] = 'Тема не определена для этого пользователя.';
 $string['pluginname'] = 'Загрузка пользователей';
+$string['privacy:metadata'] = 'Плагин загрузки пользователей не хранит никаких личных данных.';
 $string['renameerrors'] = 'Ошибки переименования';
 $string['requiredtemplate'] = 'Обязательный параметр. Здесь Вы можете использовать подстановки (%l = фамилия, %f = имя, %u = логин). Подробнее смотрите в справке и примерах.';
 $string['rowpreviewnum'] = 'Строк предпросмотра';
@@ -80,6 +94,7 @@ $string['usersrenamed'] = 'Переименовано пользователей
 $string['usersskipped'] = 'Пропущено пользователей';
 $string['usersupdated'] = 'Пользователи обновлены';
 $string['usersweakpassword'] = 'Пользователи с простыми паролями';
+$string['userthemesnotallowed'] = 'Темы пользователей не разрешены. Все темы, имеющиеся в файле загрузки пользователей, будут проигнорированы.';
 $string['uubulk'] = 'Выбрать для массовых операций';
 $string['uubulkall'] = 'Все пользователи';
 $string['uubulknew'] = 'Новые пользователи';
@@ -103,3 +118,4 @@ $string['uuupdatefromfile'] = 'Заменять данными из файла';
 $string['uuupdatemissing'] = 'Заполнить пустые поля данными из файла и значениями по умолчанию';
 $string['uuupdatetype'] = 'Данные существующих пользователей';
 $string['uuusernametemplate'] = 'Шаблон логина';
+$string['warningprefix'] = 'Предупреждение:';

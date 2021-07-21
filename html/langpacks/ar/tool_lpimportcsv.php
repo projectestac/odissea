@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'ar', version '3.8'.
+ * Strings for component 'tool_lpimportcsv', language 'ar', version '3.11'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -26,27 +26,27 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['competencyscale'] = 'مقياس الكفاءة: {$a}';
-$string['competencyscaledescription'] = 'مقياس الكفاءة التي أنشأتها الاستيراد';
-$string['confirm'] = 'تؤكد';
+$string['competencyscaledescription'] = 'مقياس الكفاءة التي أنشأها الاستيراد';
+$string['confirm'] = 'أكِّد';
 $string['confirmcolumnmappings'] = 'تأكيد تعيينات العمود';
-$string['csvdelimiter'] = 'محدد CSV';
-$string['description'] = 'hgوصف';
+$string['csvdelimiter'] = 'فاصل CSV';
+$string['description'] = 'الوصف';
 $string['descriptionformat'] = 'تنسيق الوصف';
-$string['encoding'] = 'التشفير';
-$string['export'] = 'hgتصدير';
+$string['encoding'] = 'الترميز';
+$string['export'] = 'التصدير';
 $string['exportid'] = 'معرف تصدير (اختياري)';
-$string['exportnavlink'] = 'إطار كفاءة التصدير';
+$string['exportnavlink'] = 'تصدير إطار الكفاءة';
 $string['idnumber'] = 'رقم المعرف';
 $string['import'] = 'استيراد';
-$string['importfile'] = 'ملف وصف إطار عمل CSV';
+$string['importfile'] = 'ملف وصف إطار العمل بصيغة CSV';
 $string['importfile_help'] = 'يمكن استيراد إطار الكفاءات عبر ملف نصي. يمكن تحديد تنسيق الملف عن طريق إنشاء إطار عمل كفاءات جديد على الموقع ثم تصديره.';
 $string['importingfile'] = 'استيراد بيانات الملف';
 $string['invalidimportfile'] = 'تنسيق الملف غير صالح.';
-$string['isframework'] = 'هو الإطار';
-$string['noframeworks'] = 'لم يتم إنشاء أطر للكفاءة بعد';
+$string['isframework'] = 'هو إطار عمل';
+$string['noframeworks'] = 'لم يتم إنشاء أطر عمل للكفاءة بعد';
 $string['parentidnumber'] = 'رقم معرف الأصل';
-$string['pluginname'] = 'استورد إطار كفاءة';
-$string['privacy:metadata'] = 'لا يخزن المكون الإضافي Import competency framework أيّ بيانات شخصية.';
+$string['pluginname'] = 'استيراد إطار عمل الكفاءة';
+$string['privacy:metadata'] = 'إن ملحق استيراد إطار عمل الكفاءة لا يخزن أي بيانات شخصية.';
 $string['processingfile'] = 'معالجة الملف';
 $string['relatedidnumbers'] = 'أرقام معرّف الكفاءة التبادلية';
 $string['ruleconfig'] = 'تهيئة القاعدة (اختياري)';

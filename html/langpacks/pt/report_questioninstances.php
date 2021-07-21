@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_questioninstances', language 'pt', version '3.8'.
+ * Strings for component 'report_questioninstances', language 'pt', version '3.11'.
  *
  * @package     report_questioninstances
  * @category    string
@@ -28,14 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['editquestionshere'] = 'Editar perguntas neste contexto';
 $string['eventreportviewed'] = 'Relatório visualizado';
 $string['getreport'] = 'Gerar relatório';
-$string['hiddenquestions'] = 'Oculto';
-$string['intro'] = 'Este relatório lista todos os contextos no sistema onde existem perguntas de um determinado tipo.';
+$string['hiddenquestions'] = 'Oculta';
+$string['intro'] = 'Listagem de todos os contextos no sistema onde existem perguntas de um determinado tipo.';
 $string['pluginname'] = 'Instâncias das perguntas';
 $string['privacy:metadata'] = 'O módulo Instâncias das perguntas não armazena dados pessoais.';
 $string['questioninstances:view'] = 'Ver relatório de instâncias das perguntas';
 $string['reportforallqtypes'] = 'Relatório de todos os tipos de perguntas';
 $string['reportformissingqtypes'] = 'Relatório de perguntas de tipos desconhecidos';
-$string['reportforqtype'] = 'Relatório da pergunta \'{$a}';
+$string['reportforqtype'] = 'Relatório do tipo de pergunta \'{$a}\'';
 $string['reportsettings'] = 'Configurações do relatório';
 $string['totalquestions'] = 'Total';
 $string['visiblequestions'] = 'Visível';

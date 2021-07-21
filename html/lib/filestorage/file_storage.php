@@ -664,6 +664,41 @@ class file_storage {
     }
 
     /**
+     * Returns the file area item ids and their updatetime for a user's draft uploads, sorted by updatetime DESC.
+     *
+     * @param int $userid user id
+     * @param int $updatedsince only return draft areas updated since this time
+     * @param int $lastnum only return the last specified numbers
+     * @return array
+     */
+    public function get_user_draft_items(int $userid, int $updatedsince = 0, int $lastnum = 0): array {
+        global $DB;
+
+        $params = [
+            'component' => 'user',
+            'filearea' => 'draft',
+            'contextid' => context_user::instance($userid)->id,
+        ];
+
+        $updatedsincesql = '';
+        if ($updatedsince) {
+            $updatedsincesql = 'AND f.timemodified > :time';
+            $params['time'] = $updatedsince;
+        }
+        $sql = "SELECT itemid,
+                       MAX(f.timemodified) AS timemodified
+                  FROM {files} f
+                 WHERE component = :component
+                       AND filearea = :filearea
+                       AND contextid = :contextid
+                       $updatedsincesql
+              GROUP BY itemid
+              ORDER BY MAX(f.timemodified) DESC";
+
+        return $DB->get_records_sql($sql, $params, 0, $lastnum);
+    }
+
+    /**
      * Returns array based tree structure of area files
      *
      * @param int $contextid context ID
@@ -1823,6 +1858,21 @@ class file_storage {
 
     /**
      * Serve file content using X-Sendfile header.
+     * Please make sure that all headers are already sent and the all
+     * access control checks passed.
+     *
+     * This alternate method to xsendfile() allows an alternate file system
+     * to use the full file metadata and avoid extra lookups.
+     *
+     * @param stored_file $file The file to send
+     * @return bool success
+     */
+    public function xsendfile_file(stored_file $file): bool {
+        return $this->filesystem->xsendfile_file($file);
+    }
+
+    /**
+     * Serve file content using X-Sendfile header.
      * Please make sure that all headers are already sent
      * and the all access control checks passed.
      *
@@ -2196,15 +2246,19 @@ class file_storage {
         // those are identified by time stamp of the /. root dir
         mtrace('Deleting old draft files... ', '');
         cron_trace_time_and_memory();
-        //XTEC ************ MODIFICAT - To reduce from 4 days to 1 the waiting time to purge files
-        //2012.11.16 @sarjona
-        if (empty($CFG->agora_draftfilepurgeage)) $CFG->agora_draftfilepurgeage = 60*60*24;
+
+        // XTEC ************ MODIFICAT - Reduce from 4 days to 1 the waiting time to purge files
+        // 2012.11.16 @sarjona
+        if (empty($CFG->agora_draftfilepurgeage)) {
+            $CFG->agora_draftfilepurgeage = 60 * 60 * 24;
+        }
         $old = time() - $CFG->agora_draftfilepurgeage;
-        //************ ORIGINAL
+        // ************ ORIGINAL
         /*
         $old = time() - 60*60*24*4;
         */
-        //************ FI
+        // ************ FI
+
         $sql = "SELECT *
                   FROM {files}
                  WHERE component = 'user' AND filearea = 'draft' AND filepath = '/' AND filename = '.'
@@ -2216,35 +2270,19 @@ class file_storage {
         $rs->close();
         mtrace('done.');
 
-        // remove orphaned preview files (that is files in the core preview filearea without
-        // the existing original file)
-        mtrace('Deleting orphaned preview files... ', '');
+        // Remove orphaned files:
+        // * preview files in the core preview filearea without the existing original file.
+        // * document converted files in core documentconversion filearea without the existing original file.
+        mtrace('Deleting orphaned preview, and document conversion files... ', '');
         cron_trace_time_and_memory();
         $sql = "SELECT p.*
                   FROM {files} p
              LEFT JOIN {files} o ON (p.filename = o.contenthash)
-                 WHERE p.contextid = ? AND p.component = 'core' AND p.filearea = 'preview' AND p.itemid = 0
-                       AND o.id IS NULL";
-        $syscontext = context_system::instance();
-        $rs = $DB->get_recordset_sql($sql, array($syscontext->id));
-        foreach ($rs as $orphan) {
-            $file = $this->get_file_instance($orphan);
-            if (!$file->is_directory()) {
-                $file->delete();
-            }
-        }
-        $rs->close();
-        mtrace('done.');
-
-        // Remove orphaned converted files (that is files in the core documentconversion filearea without
-        // the existing original file).
-        mtrace('Deleting orphaned document conversion files... ', '');
-        cron_trace_time_and_memory();
-        $sql = "SELECT p.*
-                  FROM {files} p
-             LEFT JOIN {files} o ON (p.filename = o.contenthash)
-                 WHERE p.contextid = ? AND p.component = 'core' AND p.filearea = 'documentconversion' AND p.itemid = 0
-                       AND o.id IS NULL";
+                 WHERE p.contextid = ?
+                   AND p.component = 'core'
+                   AND (p.filearea = 'preview' OR p.filearea = 'documentconversion')
+                   AND p.itemid = 0
+                   AND o.id IS NULL";
         $syscontext = context_system::instance();
         $rs = $DB->get_recordset_sql($sql, array($syscontext->id));
         foreach ($rs as $orphan) {

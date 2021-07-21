@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'en', version '3.8'.
+ * Strings for component 'quiz_statistics', language 'en', version '3.11'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -115,7 +115,6 @@ $string['standarddeviation'] = 'Standard deviation (for {$a})';
 $string['standarddeviationq'] = 'Standard deviation';
 $string['standarderror'] = 'Standard error (for {$a})';
 $string['statistics'] = 'Statistics';
-$string['statistics:componentname'] = 'Quiz statistics report';
 $string['statistics:view'] = 'View statistics report';
 $string['statisticsreport'] = 'Statistics report';
 $string['statisticsreportgraph'] = 'Statistics for question positions';

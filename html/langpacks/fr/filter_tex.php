@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'fr', version '3.8'.
+ * Strings for component 'filter_tex', language 'fr', version '3.11'.
  *
  * @package     filter_tex
  * @category    string
@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configconvertformat'] = 'Si les exécutables <i>latex</i> et <i>dvips</i> sont disponibles en plus de <i>convert</i> et <i>dvisvgm</i>, les images seront créées dans le type sélectionné (<i>convert</i> produit des images GIF ou PNG ; <i>dvisvgm</i> produit des images SVG). Sinon, les images seront créées par mimeTeX en format GIF.';
+$string['configconvertformat'] = 'Si les exécutables <em>latex</em> et <em>dvips</em> sont disponibles en plus de <em>convert</em> et <em>dvisvgm</em>, les images seront créées dans le type sélectionné (<em>convert</em> produit des images GIF ou PNG ; <em>dvisvgm</em> produit des images SVG). Sinon, les images seront créées par mimeTeX en format GIF.';
 $string['convertformat'] = 'Format de sortie image';
 $string['filtername'] = 'Notation TeX';
 $string['latexpreamble'] = 'Préambule LaTeX';
 $string['latexsettings'] = 'Réglages de LaTeX Renderer';
-$string['pathconvert'] = 'Chemin d\'accès à <i>convert</i>';
-$string['pathdvips'] = 'Chemin d\'accès à <i>dvips</i>';
-$string['pathdvisvgm'] = 'Chemin d\'accès à <i>dvisvgm</i>';
-$string['pathlatex'] = 'Chemin d\'accès à <i>latex</i>';
-$string['pathmimetex'] = 'Chemin d\'accès à <i>mimetex</i>';
+$string['pathconvert'] = 'Chemin d\'accès à <em>convert</em>';
+$string['pathdvips'] = 'Chemin d\'accès à <em>dvips</em>';
+$string['pathdvisvgm'] = 'Chemin d\'accès à <em>dvisvgm</em>';
+$string['pathlatex'] = 'Chemin d\'accès à <em>latex</em>';
+$string['pathmimetex'] = 'Chemin d\'accès à <em>mimetex</em>';
 $string['pathmimetexdesc'] = 'Moodle utilisera son propre programme Mimetex, à moins qu\'un chemin valide soit indiqué ici.';
 $string['privacy:metadata'] = 'Le plugin Notation TeX n\'enregistre aucune donnée personnelle.';
 $string['source'] = 'Source TeX';

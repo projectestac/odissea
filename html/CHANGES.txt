@@ -4,6 +4,41 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 21.07.14
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.1
+- Updated langpacks
+- Content bank: Restricted access to xtecadmin
+- H5P core: Allow access only to xtecadmin
+- H5P module: Upgraded to version 1.22.3
+- Block completion_progress: Upgraded version
+- Alexandria importer: Improved presentation
+- Choicegroup: Upgraded version
+- Clickedu: Upgraded version
+- Geogebra: Upgraded version
+- Jclic: Upgraded version
+- Questionnaire: Upgraded version
+- Upgraded all wiris plugins
+- Question type ordering: Upgraded version
+- Single task execution: Added param to identify Moodle instance in Agora
+- Cron: Removed minimum time between executions
+- Local Agora: Updated MUC for Moodle 3.11
+- Atto plugin cloze: Upgraded version
+- Theme xtec2020: Added compatibility with Moodle 3.11
+- Activate usage of X-SendFile
+
+
+Changes 21.05.20
+---------------------------------------------------------------------------------------
+- Upgraded module H5P to version 1.22.2
+- Upgraded report coursequotas (Improved performance)
+- Moved sessions from database to redis
+- Disabled cursors with hold
+- Local redislock: Added plugin
+- Local agora: Removed unused old scripts
+- Local agora: Added script to remove unused old directories in moodledata
+
+
 Changes 21.03.01
 ---------------------------------------------------------------------------------------
 - Updated language packages

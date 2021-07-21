@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'fr', version '3.8'.
+ * Strings for component 'tool_lp', language 'fr', version '3.11'.
  *
  * @package     tool_lp
  * @category    string
@@ -46,7 +46,7 @@ $string['assigncohorts'] = 'Attribuer des cohortes';
 $string['averageproficiencyrate'] = 'Le niveau d\'acquisition de compétences pour les plans de formation achevés basés sur ce modèle est de {$a} %.';
 $string['cancelreviewrequest'] = 'Annuler la demande de validation';
 $string['cannotaddrules'] = 'Cette compétence ne peut pas être configurée';
-$string['cannotcreateuserplanswhentemplateduedateispassed'] = 'De nouveaux plans de formation ne peuvent pas être créés. Le délai de ce modèle est échu ou sur le point d\'échoir.';
+$string['cannotcreateuserplanswhentemplateduedateispassed'] = 'De nouveaux plans de formation ne peuvent pas être créés. Le délai de ce modèle est échu ou sur le point d\'arriver à échéance.';
 $string['cannotcreateuserplanswhentemplatehidden'] = 'De nouveaux plans de formation ne peuvent pas être créés tant que ce modèle est caché.';
 $string['category'] = 'Catégorie';
 $string['chooserating'] = 'Sélectionner une évaluation…';

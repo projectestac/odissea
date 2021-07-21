@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'de', version '3.8'.
+ * Strings for component 'message', language 'de', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -77,9 +77,7 @@ $string['errormessagetoolong'] = 'Die Mitteilung ist länger als erlaubt.';
 $string['errortranslatingdefault'] = 'Fehler in der Plugin-Einstellung. Es werden die Standardeinstellungen benutzt.';
 $string['eventgroupmessagesent'] = 'Gruppenmitteilung gesendet';
 $string['eventmessagecontactadded'] = 'Kontakt hinzugefügt';
-$string['eventmessagecontactblocked'] = 'Kontakt blockiert';
 $string['eventmessagecontactremoved'] = 'Kontakt entfernt';
-$string['eventmessagecontactunblocked'] = 'Blockierung für Kontakt aufgehoben';
 $string['eventmessagedeleted'] = 'Mitteilung gelöscht';
 $string['eventmessagesent'] = 'Mitteilung gesendet';
 $string['eventmessageuserblocked'] = 'Blockierte Personen';
@@ -106,8 +104,10 @@ $string['loggedoff_help'] = 'Konfigurieren Sie, wie Sie Systemnachrichten empfan
 $string['loggedoffdescription'] = 'Wenn Sie nicht in Moodle angemeldet sind';
 $string['managemessageoutputs'] = 'Standardeinstellungen für Systemnachrichten';
 $string['message'] = 'Mitteilung';
+$string['messagecontactrequest'] = '{$a->user} fragt an, als Kontakt hinzugefügt zu werden. Schauen Sie auf Ihre <a href="{$a->url}">Kontaktanfragen</a>, um zu antworten.';
 $string['messagecontactrequestsnotification'] = '{$a} möchte als Kontakt hinzugefügt werden.';
 $string['messagecontactrequestsnotificationsubject'] = 'Kontaktanfrage von {$a}';
+$string['messagecontactrequestsubject'] = '{$a->sitename}: Kontaktanfrage von {$a->user}';
 $string['messagecontentaudio'] = 'Audio';
 $string['messagecontentimage'] = 'Bild';
 $string['messagecontentmultimediageneral'] = 'Andere Medien';
@@ -123,8 +123,8 @@ $string['messageoutputs'] = 'Systemnachrichten';
 $string['messagepreferences'] = 'Mitteilungen';
 $string['messages'] = 'Mitteilungen';
 $string['messagesselected:'] = 'Ausgewählte Mitteilungen:';
+$string['messagetextrequired'] = 'Mitteilung schreiben';
 $string['messagingdatahasnotbeenmigrated'] = 'Ihre Mitteilungen sind zeitweise aufgrund von Upgrades der Mitteilungs-Infrastruktur nicht verfügbar. Warten Sie bitte und versuchen Sie es zu einem späteren Zeitpunkt erneut.';
-$string['messagingdisabled'] = 'Mitteilungen sind für diese Website deaktiviert. Es werden stattdessen E-Mails gesendet.';
 $string['muteconversation'] = 'Stummschalten';
 $string['mutedconversation'] = 'Stummgeschaltete Kommunikation';
 $string['newmessage'] = 'Neue Mitteilung';
@@ -161,6 +161,7 @@ $string['outputdoesnotexist'] = 'Dieser Mitteilungskanal ist nicht verfügbar.';
 $string['outputenabled'] = 'Ausgabe aktiviert';
 $string['outputnotavailable'] = 'Nicht verfügbar';
 $string['outputnotconfigured'] = 'Nicht konfiguriert';
+$string['page-message-x'] = 'Jede Mitteilungsseite';
 $string['participants'] = 'Teilnehmer/innen';
 $string['pendingcontactrequests'] = 'Es gibt {$a} anstehende Kontaktanfragen.';
 $string['permitted'] = 'Aktiviert';
@@ -227,7 +228,7 @@ $string['removecontactconfirm'] = 'Möchten Sie wirklich {$a} aus Ihren Kontakte
 $string['removecoursefilter'] = 'Filter für Kurs {$a} entfernen';
 $string['removefromfavourites'] = 'Markierung der Kommunikaton entfernen';
 $string['removefromyourcontacts'] = 'Aus Kontakten entfernen';
-$string['requirecontacttomessage'] = 'Sie müssen {$a} bitten, Sie als Kontakt hinzuzufügen, um eine Mitteilung senden zu können.';
+$string['requirecontacttomessage'] = 'Sie müssen {$a} anfragen, Sie als Kontakt hinzuzufügen. Erst dann können Sie eine Mitteilung senden.';
 $string['requiresconfiguration'] = 'Einstellungen notwendig';
 $string['searchcombined'] = 'Personen und Mitteilungen suchen';
 $string['searchforuser'] = 'Nutzer/in suchen';
@@ -237,7 +238,7 @@ $string['seeall'] = 'Alle anzeigen';
 $string['selectmessagestodelete'] = 'Mitteilungen zum Löschen auswählen';
 $string['selectnotificationtoview'] = 'Für weitere Details wählen Sie aus der Liste der Mitteilungen an der Seite';
 $string['selfconversation'] = 'Persönlicher Bereich';
-$string['selfconversationdefaultmessage'] = 'Speichern Sie Entwürfe von Nachrichten, Links, Notizen etc. für einen späteren Zugriff.';
+$string['selfconversationdefaultmessage'] = 'Speichern Sie Entwürfe von Nachrichten, Links, Notizen usw. für einen späteren Zugriff.';
 $string['send'] = 'Senden';
 $string['sendbulkmessage'] = 'Mitteilung an {$a} Personen senden';
 $string['sendbulkmessagesent'] = 'Mitteilung an {$a} Personen gesendet';
@@ -274,8 +275,6 @@ $string['unreadnotification'] = 'Ungelesene Mitteilung: {$a}';
 $string['unreadnotifications'] = '{$a} ungelesene Systemnachrichten';
 $string['useentertosend'] = 'Zum Senden die Eingabetaste tippen';
 $string['usercantbemessaged'] = 'Sie können {$a} keine Mitteilung senden, da er/sie dies nicht wünscht.  Versuchen Sie die Person als Kontakt hinzuzufügen.';
-$string['userisblockingyou'] = 'Diese Person hat Sie blockiert, so dass Sie ihr keine Mitteilungen schicken können.';
-$string['userisblockingyounoncontact'] = '{$a} akzeptiert ausschließlich Personen aus der Kontaktliste.';
 $string['userwouldliketocontactyou'] = '{$a} möchte Sie kontaktieren';
 $string['viewfullnotification'] = 'Mitteilung vollständig anzeigen';
 $string['viewmessageswith'] = 'Mitteilungen mit {$a} anzeigen';

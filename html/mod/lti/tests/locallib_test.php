@@ -377,7 +377,7 @@ class mod_lti_locallib_testcase extends advanced_testcase {
         $this->assertEquals('frame,iframe,window', $params['accept_presentation_document_targets']);
         $this->assertEquals($returnurl->out(false), $params['content_item_return_url']);
         $this->assertEquals('false', $params['accept_unsigned']);
-        $this->assertEquals('false', $params['accept_multiple']);
+        $this->assertEquals('true', $params['accept_multiple']);
         $this->assertEquals('false', $params['accept_copy_advice']);
         $this->assertEquals('false', $params['auto_create']);
         $this->assertEquals($type->name, $params['title']);
@@ -386,6 +386,7 @@ class mod_lti_locallib_testcase extends advanced_testcase {
         $this->assertFalse(isset($params['resource_link_description']));
         $this->assertFalse(isset($params['launch_presentation_return_url']));
         $this->assertFalse(isset($params['lis_result_sourcedid']));
+        $this->assertEquals($params['tool_consumer_instance_guid'], 'www.example.com');
 
         // Custom parameters.
         $title = 'My custom title';
@@ -626,7 +627,8 @@ class mod_lti_locallib_testcase extends advanced_testcase {
                 'suffix' => 'dl',
                 'group' => 'deep_linking_settings',
                 'claim' => 'accept_copy_advice',
-                'isarray' => false
+                'isarray' => false,
+                'type' => 'boolean'
             ],
             'accept_media_types' => [
                 'suffix' => 'dl',
@@ -638,7 +640,8 @@ class mod_lti_locallib_testcase extends advanced_testcase {
                 'suffix' => 'dl',
                 'group' => 'deep_linking_settings',
                 'claim' => 'accept_multiple',
-                'isarray' => false
+                'isarray' => false,
+                'type' => 'boolean'
             ],
             'accept_presentation_document_targets' => [
                 'suffix' => 'dl',
@@ -656,19 +659,22 @@ class mod_lti_locallib_testcase extends advanced_testcase {
                 'suffix' => 'dl',
                 'group' => 'deep_linking_settings',
                 'claim' => 'accept_unsigned',
-                'isarray' => false
+                'isarray' => false,
+                'type' => 'boolean'
             ],
             'auto_create' => [
                 'suffix' => 'dl',
                 'group' => 'deep_linking_settings',
                 'claim' => 'auto_create',
-                'isarray' => false
+                'isarray' => false,
+                'type' => 'boolean'
             ],
             'can_confirm' => [
                 'suffix' => 'dl',
                 'group' => 'deep_linking_settings',
                 'claim' => 'can_confirm',
-                'isarray' => false
+                'isarray' => false,
+                'type' => 'boolean'
             ],
             'content_item_return_url' => [
                 'suffix' => 'dl',
@@ -889,7 +895,7 @@ class mod_lti_locallib_testcase extends advanced_testcase {
             'tool_consumer_info_product_family_code' => [
                 'suffix' => '',
                 'group' => 'tool_platform',
-                'claim' => 'family_code',
+                'claim' => 'product_family_code',
                 'isarray' => false
             ],
             'tool_consumer_info_version' => [
@@ -983,14 +989,14 @@ class mod_lti_locallib_testcase extends advanced_testcase {
                 'isarray' => false
             ],
             'lis_outcome_service_url' => [
-                'suffix' => 'bos',
-                'group' => 'basicoutcomesservice',
+                'suffix' => 'bo',
+                'group' => 'basicoutcome',
                 'claim' => 'lis_outcome_service_url',
                 'isarray' => false
             ],
             'lis_result_sourcedid' => [
-                'suffix' => 'bos',
-                'group' => 'basicoutcomesservice',
+                'suffix' => 'bo',
+                'group' => 'basicoutcome',
                 'claim' => 'lis_result_sourcedid',
                 'isarray' => false
             ],
@@ -1077,6 +1083,8 @@ V6L11BWkpzGXSW4Hv43qa+GSYOD2QU68Mb59oSk2OB+BtOLpJofmbGEGgvmwyCI9
 MwIDAQAB
 -----END PUBLIC KEY-----';
 
+        $config->lti_keytype = LTI_RSA_KEY;
+
         $typeid = lti_add_type($type, $config);
 
         lti_verify_jwt_signature($typeid, '', 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4g' .
@@ -1084,6 +1092,46 @@ MwIDAQAB
             'S_TuYI3OG85AmiExREkrS6tDfTQ2B3WXlrr-wp5AokiRbz3_oB4OxG-W9KcEEbDRcZc0nH3L7LzYptiy1PtAylQGxHTWZXtGz4ht0bAecBgmpdgXMgu' .
             'EIcoqPJ1n3pIWk_dUZegpqx0Lka21H6XxUTxiy8OcaarA8zdnPUnV6AmNP3ecFawIFYdvJB_cm-GvpCSbr8G8y_Mllj8f4x9nBH8pQux89_6gUY618iY' .
             'v7tuPWBFfEbLxtF2pZS6YC1aSfLQxeNe8djT9YjpvRZA');
+    }
+
+    /**
+     * Test lti_verify_jwt_signature_jwk().
+     */
+    public function test_lti_verify_jwt_signature_jwk() {
+        $this->resetAfterTest();
+
+        $this->setAdminUser();
+
+        // Create a tool type, associated with that proxy.
+        $type = new stdClass();
+        $type->state = LTI_TOOL_STATE_CONFIGURED;
+        $type->name = "Test tool";
+        $type->description = "Example description";
+        $type->baseurl = $this->getExternalTestFileUrl('/test.html');
+
+        $config = new stdClass();
+        $config->lti_publickeyset = dirname(__FILE__) . '/fixtures/test_keyset';
+
+        $config->lti_keytype = LTI_JWK_KEYSET;
+
+        $typeid = lti_add_type($type, $config);
+
+        $jwt = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjU3YzExNzdkMmQ1M2EwMjFjNzM';
+        $jwt .= '3NTY0OTFjMTM3YjE3In0.eyJpc3MiOiJnclJvbkd3RTd1WjRwZ28iLCJzdWIiOiJnclJvb';
+        $jwt .= 'kd3RTd1WjRwZ28iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0L21vb2RsZS9tb2QvbHRpL3R';
+        $jwt .= 'va2VuLnBocCIsImp0aSI6IjFlMUJPVEczVFJjbFdUem00dERsMGc9PSIsImlhdCI6MTU4M';
+        $jwt .= 'Dg1NTUwNX0.Lowhc9ovNAXRb2rkAnv1oozDXlRD54Mz2JS1i8Zx4yGWQzmXzam-La19_g0';
+        $jwt .= 'CTnwlKM6gxaInnRKFRAcwhJVcWec389liLAjMbna6d6iTWYTZr7q_4BIe3CT_oTMWASGta';
+        $jwt .= 'Paaq53ch1rO4YdueEtmtd1K47ibo4Lhu1jmP_icc3lxjfnqiv4vIYdy7W2JQEzpk1ImuQr';
+        $jwt .= 'AlO1xR3fZ6bgcJhVIaw5xoaZD3ZgEjuZOQXMkywv1bL-mL17RX336CzHd8rYZg82QXrBzb';
+        $jwt .= 'NWzAlaZxv9VSug8t6mORvM6TkYYWjqEBKemgkD5rNh1BHrPcjWP7vy2Jz7YMjLsmuvDuLK';
+        $jwt .= '_PHYIKL--s4gcXWoYmOu1vj-SgoPczTJPoiBD35hAKqVHy5ggHaYHBy95_bbcFd8H1smHw';
+        $jwt .= 'pejrAFj1QAwGyTISLzUm08oq7Ak0tSxRKKXw4lpZAka1MmYxO3tJ_3-MXw6Bwz12bNgitJ';
+        $jwt .= 'lQd6n3kkGLCJAmANeRkPsH6eZVwF0n2cjh2O1JAwyNcMD2vs4I8ftM1EqqoE2M3r6kt3AC';
+        $jwt .= 'EscmqzizI3j80USBCLUUb1UTsfJb2g7oyApJAp-13Q3InR3QyvWO8unG5VraFE7IL5I28h';
+        $jwt .= 'MkQAHuCI90DFmXB4leflAu7wNlIK_U8xkGl8X8Mnv6MWgg94Ki8jgIq_kA85JAqI';
+
+        lti_verify_jwt_signature($typeid, '', $jwt);
     }
 
     /**
@@ -1142,7 +1190,6 @@ MwIDAQAB
      */
     public function test_lti_verify_jwt_signature_no_public_key() {
         $this->resetAfterTest();
-
         $this->setAdminUser();
 
         // Create a tool type, associated with that proxy.
@@ -1154,6 +1201,7 @@ MwIDAQAB
         $type->baseurl = $this->getExternalTestFileUrl('/test.html');
 
         $config = new stdClass();
+        $config->lti_keytype = LTI_RSA_KEY;
         $typeid = lti_add_type($type, $config);
 
         $this->expectExceptionMessage('No public key configured');
@@ -1170,7 +1218,28 @@ MwIDAQAB
             'url' => 'http://example.com/messages/launch',
             'title' => 'Test title',
             'text' => 'Test text',
-            'frame' => []
+            'iframe' => []
+        ];
+        $contentitems[] = [
+            'type' => 'ltiResourceLink',
+            'url' => 'http://example.com/messages/launch2',
+            'title' => 'Test title2',
+            'text' => 'Test text2',
+            'iframe' => [
+                'height' => 200,
+                'width' => 300
+            ],
+            'window' => []
+        ];
+        $contentitems[] = [
+            'type' => 'ltiResourceLink',
+            'url' => 'http://example.com/messages/launch3',
+            'title' => 'Test title3',
+            'text' => 'Test text3',
+            'window' => [
+                'targetName' => 'test-win',
+                'height' => 400
+            ]
         ];
 
         $contentitems = json_encode($contentitems);
@@ -1187,16 +1256,184 @@ MwIDAQAB
         $objgraph->url = 'http://example.com/messages/launch';
         $objgraph->title = 'Test title';
         $objgraph->text = 'Test text';
-        $objgraph->frame = [];
+        $objgraph->placementAdvice = new stdClass();
+        $objgraph->placementAdvice->presentationDocumentTarget = 'iframe';
         $objgraph->{$strtype} = 'LtiLinkItem';
         $objgraph->mediaType = 'application\/vnd.ims.lti.v1.ltilink';
+
+        $objgraph2 = new stdClass();
+        $objgraph2->url = 'http://example.com/messages/launch2';
+        $objgraph2->title = 'Test title2';
+        $objgraph2->text = 'Test text2';
+        $objgraph2->placementAdvice = new stdClass();
+        $objgraph2->placementAdvice->presentationDocumentTarget = 'iframe';
+        $objgraph2->placementAdvice->displayHeight = 200;
+        $objgraph2->placementAdvice->displayWidth = 300;
+        $objgraph2->{$strtype} = 'LtiLinkItem';
+        $objgraph2->mediaType = 'application\/vnd.ims.lti.v1.ltilink';
+
+        $objgraph3 = new stdClass();
+        $objgraph3->url = 'http://example.com/messages/launch3';
+        $objgraph3->title = 'Test title3';
+        $objgraph3->text = 'Test text3';
+        $objgraph3->placementAdvice = new stdClass();
+        $objgraph3->placementAdvice->presentationDocumentTarget = 'window';
+        $objgraph3->placementAdvice->displayHeight = 400;
+        $objgraph3->placementAdvice->windowTarget = 'test-win';
+        $objgraph3->{$strtype} = 'LtiLinkItem';
+        $objgraph3->mediaType = 'application\/vnd.ims.lti.v1.ltilink';
 
         $expected = new stdClass();
         $expected->{$strcontext} = 'http://purl.imsglobal.org/ctx/lti/v1/ContentItem';
         $expected->{$strgraph} = [];
         $expected->{$strgraph}[] = $objgraph;
+        $expected->{$strgraph}[] = $objgraph2;
+        $expected->{$strgraph}[] = $objgraph3;
 
         $this->assertEquals($expected, $jsondecode);
+    }
+
+    /**
+     * Test adding a single gradable item through content item.
+     */
+    public function test_lti_tool_configuration_from_content_item_single_gradable() {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $type = new stdClass();
+        $type->name = "Test tool";
+        $type->baseurl = "http://example.com";
+        $config = new stdClass();
+        $config->lti_acceptgrades = LTI_SETTING_DELEGATE;
+        $typeid = lti_add_type($type, $config);
+
+        $generator = $this->getDataGenerator()->get_plugin_generator('mod_lti');
+        $contentitems = [];
+        $contentitems[] = [
+            'type' => 'ltiResourceLink',
+            'url' => 'http://example.com/messages/launch',
+            'title' => 'Test title',
+            'lineItem' => [
+                'resourceId' => 'r12345',
+                'tag' => 'final',
+                'scoreMaximum' => 10.0
+            ],
+            'frame' => []
+        ];
+        $contentitemsjson13 = json_encode($contentitems);
+        $json11 = lti_convert_content_items($contentitemsjson13);
+
+        $config = lti_tool_configuration_from_content_item($typeid,
+                                                           'ContentItemSelection',
+                                                           $type->ltiversion,
+                                                           'ConsumerKey',
+                                                           $json11);
+
+        $this->assertEquals($contentitems[0]['url'], $config->toolurl);
+        $this->assertEquals(LTI_SETTING_ALWAYS, $config->instructorchoiceacceptgrades);
+        $this->assertEquals($contentitems[0]['lineItem']['tag'], $config->lineitemtag);
+        $this->assertEquals($contentitems[0]['lineItem']['resourceId'], $config->lineitemresourceid);
+        $this->assertEquals($contentitems[0]['lineItem']['scoreMaximum'], $config->grade_modgrade_point);
+    }
+
+    /**
+     * Test adding multiple gradable items through content item.
+     */
+    public function test_lti_tool_configuration_from_content_item_multiple() {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $type = new stdClass();
+        $type->name = "Test tool";
+        $type->baseurl = "http://example.com";
+        $config = new stdClass();
+        $config->lti_acceptgrades = LTI_SETTING_DELEGATE;
+        $typeid = lti_add_type($type, $config);
+
+        $generator = $this->getDataGenerator()->get_plugin_generator('mod_lti');
+        $contentitems = [];
+        $contentitems[] = [
+            'type' => 'ltiResourceLink',
+            'url' => 'http://example.com/messages/launch',
+            'title' => 'Test title',
+            'text' => 'Test text',
+            'icon' => [
+                'url' => 'http://lti.example.com/image.jpg',
+                'width' => 100
+            ],
+            'frame' => []
+        ];
+        $contentitems[] = [
+            'type' => 'ltiResourceLink',
+            'url' => 'http://example.com/messages/launchgraded',
+            'title' => 'Test Graded',
+            'lineItem' => [
+                'resourceId' => 'r12345',
+                'tag' => 'final',
+                'scoreMaximum' => 10.0
+            ],
+            'frame' => []
+        ];
+        $contentitemsjson13 = json_encode($contentitems);
+        $json11 = lti_convert_content_items($contentitemsjson13);
+
+        $config = lti_tool_configuration_from_content_item($typeid,
+                                                           'ContentItemSelection',
+                                                           $type->ltiversion,
+                                                           'ConsumerKey',
+                                                           $json11);
+        $this->assertNotNull($config->multiple);
+        $this->assertEquals(2, count( $config->multiple ));
+        $this->assertEquals($contentitems[0]['title'], $config->multiple[0]->name);
+        $this->assertEquals($contentitems[0]['url'], $config->multiple[0]->toolurl);
+        $this->assertEquals(LTI_SETTING_NEVER, $config->multiple[0]->instructorchoiceacceptgrades);
+        $this->assertEquals($contentitems[1]['url'], $config->multiple[1]->toolurl);
+        $this->assertEquals(LTI_SETTING_ALWAYS, $config->multiple[1]->instructorchoiceacceptgrades);
+        $this->assertEquals($contentitems[1]['lineItem']['tag'], $config->multiple[1]->lineitemtag);
+        $this->assertEquals($contentitems[1]['lineItem']['resourceId'], $config->multiple[1]->lineitemresourceid);
+        $this->assertEquals($contentitems[1]['lineItem']['scoreMaximum'], $config->multiple[1]->grade_modgrade_point);
+    }
+
+    /**
+     * Test adding a single non gradable item through content item.
+     */
+    public function test_lti_tool_configuration_from_content_item_single() {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $type = new stdClass();
+        $type->name = "Test tool";
+        $type->baseurl = "http://example.com";
+        $config = new stdClass();
+        $typeid = lti_add_type($type, $config);
+
+        $generator = $this->getDataGenerator()->get_plugin_generator('mod_lti');
+        $contentitems = [];
+        $contentitems[] = [
+            'type' => 'ltiResourceLink',
+            'url' => 'http://example.com/messages/launch',
+            'title' => 'Test title',
+            'text' => 'Test text',
+            'icon' => [
+                'url' => 'http://lti.example.com/image.jpg',
+                'width' => 100
+            ],
+            'frame' => []
+        ];
+        $contentitemsjson13 = json_encode($contentitems);
+        $json11 = lti_convert_content_items($contentitemsjson13);
+
+        $config = lti_tool_configuration_from_content_item($typeid,
+                                                           'ContentItemSelection',
+                                                           $type->ltiversion,
+                                                           'ConsumerKey',
+                                                           $json11);
+        $this->assertEquals($contentitems[0]['title'], $config->name);
+        $this->assertEquals($contentitems[0]['text'], $config->introeditor['text']);
+        $this->assertEquals($contentitems[0]['url'], $config->toolurl);
+        $this->assertEquals($contentitems[0]['icon']['url'], $config->icon);
+        $this->assertEquals(LTI_SETTING_NEVER, $config->instructorchoiceacceptgrades);
+
     }
 
     /**
@@ -1271,6 +1508,7 @@ e+lf4s4OxQawWD79J9/5d3Ry0vbV3Am1FtGJiJvOwRsIfVChDpYStTcHTCMqtvWb
 V6L11BWkpzGXSW4Hv43qa+GSYOD2QU68Mb59oSk2OB+BtOLpJofmbGEGgvmwyCI9
 MwIDAQAB
 -----END PUBLIC KEY-----';
+        $config->lti_keytype = LTI_RSA_KEY;
 
         $typeid = lti_add_type($type, $config);
 
@@ -1382,5 +1620,163 @@ MwIDAQAB
         $this->assertEquals(json_encode(array_values($scopes)), $token->scope);
         $this->assertEquals($token->timecreated + LTI_ACCESS_TOKEN_LIFE, $token->validuntil);
         $this->assertNull($token->lastaccess);
+    }
+
+    /**
+     * Test lti_build_login_request().
+     */
+    public function test_lti_build_login_request() {
+        global $USER, $CFG;
+
+        $this->resetAfterTest();
+
+        $USER->id = 123456789;
+
+        $course   = $this->getDataGenerator()->create_course();
+        $instance = $this->getDataGenerator()->create_module('lti',
+            [
+                'course' => $course->id,
+            ]
+        );
+
+        $config = new stdClass();
+        $config->lti_clientid = 'some-client-id';
+        $config->typeid = 'some-type-id';
+        $config->lti_toolurl = 'some-lti-tool-url';
+
+        $request = lti_build_login_request($course->id, $instance->id, $instance, $config, 'basic-lti-launch-request');
+
+        $this->assertEquals($CFG->wwwroot, $request['iss']);
+        $this->assertEquals('http://some-lti-tool-url', $request['target_link_uri']);
+        $this->assertEquals(123456789, $request['login_hint']);
+        $this->assertEquals($instance->id, $request['lti_message_hint']);
+        $this->assertEquals('some-client-id', $request['client_id']);
+        $this->assertEquals('some-type-id', $request['lti_deployment_id']);
+    }
+
+    /**
+     * Test default orgid is host if not specified in config (tool installed in earlier version of Moodle).
+     */
+    public function test_lti_get_launch_data_default_organizationid_unset_usehost() {
+        global $DB;
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        $config = new stdClass();
+        $config->lti_organizationid = '';
+        $course = $this->getDataGenerator()->create_course();
+        $type = $this->create_type($config);
+        $link = $this->create_instance($type, $course);
+        $launchdata = lti_get_launch_data($link);
+        $this->assertEquals($launchdata[1]['tool_consumer_instance_guid'], 'www.example.com');
+    }
+
+    /**
+     * Test default org id is set to host when config is usehost.
+     */
+    public function test_lti_get_launch_data_default_organizationid_set_usehost() {
+        global $DB;
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        $config = new stdClass();
+        $config->lti_organizationid = '';
+        $config->lti_organizationid_default = LTI_DEFAULT_ORGID_SITEHOST;
+        $course = $this->getDataGenerator()->create_course();
+        $type = $this->create_type($config);
+        $link = $this->create_instance($type, $course);
+        $launchdata = lti_get_launch_data($link);
+        $this->assertEquals($launchdata[1]['tool_consumer_instance_guid'], 'www.example.com');
+    }
+
+    /**
+     * Test default org id is set to site id when config is usesiteid.
+     */
+    public function test_lti_get_launch_data_default_organizationid_set_usesiteid() {
+        global $DB;
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        $config = new stdClass();
+        $config->lti_organizationid = '';
+        $config->lti_organizationid_default = LTI_DEFAULT_ORGID_SITEID;
+        $course = $this->getDataGenerator()->create_course();
+        $type = $this->create_type($config);
+        $link = $this->create_instance($type, $course);
+        $launchdata = lti_get_launch_data($link);
+        $this->assertEquals($launchdata[1]['tool_consumer_instance_guid'], md5(get_site_identifier()));
+    }
+
+    /**
+     * Test orgid can be overridden in which case default is ignored.
+     */
+    public function test_lti_get_launch_data_default_organizationid_orgid_override() {
+        global $DB;
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        $config = new stdClass();
+        $config->lti_organizationid = 'overridden!';
+        $config->lti_organizationid_default = LTI_DEFAULT_ORGID_SITEID;
+        $course = $this->getDataGenerator()->create_course();
+        $type = $this->create_type($config);
+        $link = $this->create_instance($type, $course);
+        $launchdata = lti_get_launch_data($link);
+        $this->assertEquals($launchdata[1]['tool_consumer_instance_guid'], 'overridden!');
+    }
+
+    public function test_get_course_history() {
+        global $DB;
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        $parentparentcourse = $this->getDataGenerator()->create_course();
+        $parentcourse = $this->getDataGenerator()->create_course();
+        $parentcourse->originalcourseid = $parentparentcourse->id;
+        $DB->update_record('course', $parentcourse);
+        $course = $this->getDataGenerator()->create_course();
+        $course->originalcourseid = $parentcourse->id;
+        $DB->update_record('course', $course);
+        $this->assertEquals(get_course_history($parentparentcourse), []);
+        $this->assertEquals(get_course_history($parentcourse), [$parentparentcourse->id]);
+        $this->assertEquals(get_course_history($course), [$parentcourse->id, $parentparentcourse->id]);
+        $course->originalcourseid = 38903;
+        $DB->update_record('course', $course);
+        $this->assertEquals(get_course_history($course), [38903]);
+    }
+
+    /**
+     * Create an LTI Tool.
+     *
+     * @param object $config tool config.
+     *
+     * @return object tool.
+     */
+    private function create_type(object $config) {
+        $type = new stdClass();
+        $type->state = LTI_TOOL_STATE_CONFIGURED;
+        $type->name = "Test tool";
+        $type->description = "Example description";
+        $type->clientid = "Test client ID";
+        $type->baseurl = $this->getExternalTestFileUrl('/test.html');
+
+        $configbase = new stdClass();
+        $configbase->lti_acceptgrades = LTI_SETTING_NEVER;
+        $configbase->lti_sendname = LTI_SETTING_NEVER;
+        $configbase->lti_sendemailaddr = LTI_SETTING_NEVER;
+        $mergedconfig = (object) array_merge( (array) $configbase, (array) $config);
+        $typeid = lti_add_type($type, $mergedconfig);
+        return lti_get_type($typeid);
+    }
+
+    /**
+     * Create an LTI Instance for the tool in a given course.
+     *
+     * @param object $type tool for which an instance should be added.
+     * @param object $course course where the instance should be added.
+     *
+     * @return object instance.
+     */
+    private function create_instance(object $type, object $course) {
+        $generator = $this->getDataGenerator()->get_plugin_generator('mod_lti');
+        return $generator->create_instance(array('course' => $course->id,
+                  'toolurl' => $type->baseurl,
+                  'typeid' => $type->id
+                  ), array());
     }
 }

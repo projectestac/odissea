@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_multilang', language 'ar', version '3.8'.
+ * Strings for component 'filter_multilang', language 'ar', version '3.11'.
  *
  * @package     filter_multilang
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'محتوى متعدد اللغات';
-$string['privacy:metadata'] = 'لا يخزن المكون الإضافي Multi-Language  أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق المحتوى متعدد اللغات لا يخزن أي بيانات شخصية.';

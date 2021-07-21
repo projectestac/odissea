@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'eu', version '3.8'.
+ * Strings for component 'repository_flickr_public', language 'eu', version '3.11'.
  *
  * @package     repository_flickr_public
  * @category    string
@@ -49,7 +49,7 @@ $string['notitle'] = 'Izenbururik gabe';
 $string['nullphotolist'] = 'Ez dago argazkirik kontu honetan';
 $string['pluginname'] = 'Flickr Publikoa';
 $string['pluginname_help'] = 'Biltegia flickr.com-en';
-$string['privacy:metadata:repository_flickr_public'] = 'Flickr Publikoa biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_flickr_public'] = 'Flickr Publikoa biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_flickr_public:author'] = 'Flickr Publikoa biltegiko edukien egilea.';
 $string['privacy:metadata:repository_flickr_public:email_address'] = 'Flickr Publikoa biltegi-plugineko erabiltzailearen helbide elektronikoa.';
 $string['privacy:metadata:repository_flickr_public:text'] = 'Flickr Publikoa biltegi-plugineko erabiltzailearen bilaketa-testua.';

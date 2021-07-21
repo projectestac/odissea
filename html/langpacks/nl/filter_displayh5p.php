@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_displayh5p', language 'nl', version '3.8'.
+ * Strings for component 'filter_displayh5p', language 'nl', version '3.11'.
  *
  * @package     filter_displayh5p
  * @category    string
@@ -28,6 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowedsourceslist'] = 'Toegelaten bronnen';
 $string['allowedsourceslistdesc'] = 'Een lijst met URL\'s waaruit gebruikers H5P-inhoud kunnen insluiten. Als er geen is opgegeven, blijven alle URL\'s als koppelingen en worden ze niet weergegeven als ingesloten H5P-inhoud.
 
-\'[id]\' is een tijdelijke aanduiding voor het H5P-inhouds-ID in de externe bron.';
+\'[id]\' is een tijdelijke aanduiding voor het H5P-inhouds-ID in de externe bron.
+Bijvoorbeeld:
+
+- H5P.com: https://[xxxxxx].h5p.com/content/[id]
+- Wordpress: http://myserver/wp-admin/admin-ajax.php?action=h5p_embed&id=[id]';
 $string['filtername'] = 'Toon H5P';
 $string['privacy:metadata'] = 'De toon H5P-filter bewaart geen persoonlijke gegevens.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ja', version '3.8'.
+ * Strings for component 'tool_usertours', language 'ja', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -64,12 +64,20 @@ $string['event_tour_ended'] = 'ツアー終了';
 $string['event_tour_reset'] = 'ツアーリセット';
 $string['event_tour_started'] = 'ツアー開始';
 $string['exporttour'] = 'ツアーをエクスポートする';
+$string['filter_accessdate'] = 'アクセス日';
+$string['filter_accessdate_enabled'] = 'アクセス日フィルタを有効にする';
+$string['filter_accessdate_enabled_help'] = '新しいユーザまたは最近サイトにアクセスしたユーザにのみツアーを表示します。';
 $string['filter_category'] = 'カテゴリ';
 $string['filter_category_help'] = '選択されたカテゴリ内のコースに関連するページにツアーを表示します。';
 $string['filter_course'] = 'コース';
 $string['filter_course_help'] = '選択されたコースに関連するページにツアーを表示します。';
 $string['filter_courseformat'] = 'コースフォーマット';
 $string['filter_courseformat_help'] = '選択されたコースフォーマットを使用しているコースに関連するページにツアーを表示します。';
+$string['filter_cssselector'] = 'CSSセレクタ';
+$string['filter_cssselector_help'] = '指定したCSSセレクタがページに見つかった場合のみツアーを表示します。';
+$string['filter_date_account_creation'] = '次の期間以内のユーザアカウント作成日';
+$string['filter_date_first_login'] = '次の期間以内のユーザ初回アクセス日';
+$string['filter_date_last_login'] = '次の期間以内のユーザ最新アクセス日';
 $string['filter_header'] = 'ツアーフィルタ';
 $string['filter_help'] = 'ツアーが表示されるコンディションを選択してください。ツアーをユーザに表示するためにはフィルタすべてに合致する必要があります。';
 $string['filter_role'] = 'ロール';
@@ -87,6 +95,7 @@ $string['name'] = '名称';
 $string['newstep'] = '新しいステップ';
 $string['newtour'] = '新しいツアーを作成する';
 $string['next'] = '次へ';
+$string['nextstep'] = '次へ';
 $string['options_heading'] = 'オプション';
 $string['orphan'] = 'ターゲットが見つからない場合に表示する';
 $string['orphan_help'] = 'ページ上にターゲットが見つからない場合にステップを表示します。';
@@ -108,6 +117,7 @@ $string['placement_help'] = 'ステップはターゲットの上下左右に配
 
 指定された場所の特定ページにステップが適合しない場合、自動的に他の場所に配置されます。';
 $string['pluginname'] = 'ユーザツアー';
+$string['previousstep'] = '前へ';
 $string['privacy:metadata:preference:completed'] = 'ユーザがユーザツアーを完了した時間です。';
 $string['privacy:metadata:preference:requested'] = 'ユーザが最後に手動でユーザツアーをリクエストした時間です。';
 $string['privacy:request:preference:completed'] = 'あなたは「 {$a->name} 」ユーザツアーを {$a->time} に完了マークしました。';
@@ -169,7 +179,7 @@ $string['tour2_title_opendrawer'] = 'ナビゲーションドロワを開く';
 $string['tour2_title_participants'] = 'コース参加者';
 $string['tour2_title_welcome'] = 'ようこそ';
 $string['tour3_content_dashboard'] = 'あなたの新しいダッシュボードには最も重要な情報に簡単にアクセスするための多くの機能があります。';
-$string['tour3_content_displayoptions'] = 'コースはコース名または最終アクセス日で並べ替えることができます。
+$string['tour3_content_displayoptions'] = 'コースはコース名、コース省略名、または最終アクセス日で並べ替えれます。
 
 あなたはコースを概要情報で一覧表示またはデフォルトの「カード」表示に選択できます。';
 $string['tour3_content_overview'] = 'コース概要ブロックではあなたが登録しているすべてのコースを表示します。
@@ -208,6 +218,16 @@ $string['tour4_title_icon'] = 'メッセージング';
 $string['tour4_title_messaging'] = '新しいメッセージングインターフェース';
 $string['tour4_title_settings'] = 'メッセージング設定';
 $string['tour4_title_starred'] = '星付き';
+$string['tour_activityinfo_activity_student_content'] = '活動日付および活動を完了するために何をすべきか活動ページに表示されます。';
+$string['tour_activityinfo_activity_student_title'] = 'New: 活動情報';
+$string['tour_activityinfo_activity_teacher_content'] = '活動日付および完了コンディションがそれぞれの活動ページ (および任意でコースページ) で学生に表示されるようになりました。
+
+学生が手動で活動完了をマークする必要がある活動では活動ページに「完了マークする」ボタンが表示されます。';
+$string['tour_activityinfo_activity_teacher_title'] = 'New: 活動情報';
+$string['tour_activityinfo_course_student_content'] = '活動日付および活動を完了するために何をすべきかコースページに表示されます。';
+$string['tour_activityinfo_course_student_title'] = 'New: 活動情報';
+$string['tour_activityinfo_course_teacher_content'] = '新しいコース設定「完了コンディションを表示する」および「活動日付を表示する」では活動の完了条件 (設定されている場合) および日付をコースページで学生に表示するかどうか選択できます。';
+$string['tour_activityinfo_course_teacher_title'] = 'New: 活動情報';
 $string['tour_final_step_content'] = 'ここであなたのユーザツアーは終了します。あなたがフッタのリンクを使ってリセットしない限り、再度表示されることはありません。';
 $string['tour_final_step_title'] = 'ツアー終了';
 $string['tour_resetforall'] = 'ツアーの状態がリセットされました。再度すべてのユーザに表示されます。';

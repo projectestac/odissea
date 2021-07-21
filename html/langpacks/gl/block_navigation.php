@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_navigation', language 'gl', version '3.8'.
+ * Strings for component 'block_navigation', language 'gl', version '3.11'.
  *
  * @package     block_navigation
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['courseactivities'] = 'Categorías, cursos e actividades de cursos';
+$string['courseactivities'] = 'Categorías, cursos, e actividades de curso';
 $string['courses'] = 'Categorías e cursos';
 $string['coursestructures'] = 'Categorías, cursos e estruturas de curso';
 $string['enabledockdesc'] = 'Permitirlle ao usuario ancorar este bloque';

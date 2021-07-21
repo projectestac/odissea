@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'gl', version '3.8'.
+ * Strings for component 'debug', language 'gl', version '3.11'.
  *
  * @package     debug
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['authpluginnotfound'] = 'O engadido de autenticación «{$a}» non está activado.';
 $string['blocknotexist'] = 'O bloque {$a} non existe';
 $string['cannotbenull'] = '{$a} non pode ser NULO.';
-$string['cannotdowngrade'] = 'Non é posíbel reverter {$a->plugin} dende {$a->oldversion} cara {$a->newversion}.';
+$string['cannotdowngrade'] = 'Non é posíbel reverter {$a->plugin} dende {$a->oldversion} cara a {$a->newversion}.';
 $string['cannotfindadmin'] = 'Non foi posíbel atopar un usuario administrador.';
 $string['cannotinitpage'] = 'Non é posíbel inicializar de forma completa a paxina: incorrecta {$a->name} ID {$a->id}';
 $string['cannotsetuptable'] = 'As táboas {$a} NON foi posíbel estabelecelas satisfactoriamente.';

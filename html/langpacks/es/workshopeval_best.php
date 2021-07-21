@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopeval_best', language 'es', version '3.8'.
+ * Strings for component 'workshopeval_best', language 'es', version '3.11'.
  *
  * @package     workshopeval_best
  * @category    string
@@ -34,3 +34,4 @@ $string['comparisonlevel7'] = 'laxa';
 $string['comparisonlevel9'] = 'muy laxa';
 $string['configcomparison'] = 'Valor por defecto del factor que determina la evaluación de las calificaciones.';
 $string['pluginname'] = 'Comparación con la mejor evaluación';
+$string['privacy:metadata'] = 'El complemento Comparación con la mejor evaluación no almacena ningún dato personal. Las calificaciones reales de los usuarios de datos personales se almacenan en el módulo de Taller y se adjuntan a los envíos exportados y los datos de las evaluaciones.';

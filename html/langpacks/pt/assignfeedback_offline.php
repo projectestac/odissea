@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'pt', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'pt', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -47,6 +47,6 @@ $string['pluginname'] = 'Ficheiro de avaliação';
 $string['privacy:nullproviderreason'] = 'Este módulo não tem base de dados para guardar informação de utilizador. Utiliza apenas APIs no mod_assign para ajudar a exibir a interface de avaliação.';
 $string['processgrades'] = 'Importar notas';
 $string['skiprecord'] = 'Saltar registo';
-$string['updatedgrades'] = 'Atualizadas {$a} notas e feedback';
+$string['updatedgrades'] = 'Atualizadas <strong>{$a->gradeupdatescount}</strong> notas e <strong>{$a->feedbackupdatescount}</strong> instâncias de feedback.';
 $string['updaterecord'] = 'Atualizar registo';
 $string['uploadgrades'] = 'Carregar ficheiro de avaliação';

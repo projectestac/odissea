@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'sv', version '3.8'.
+ * Strings for component 'qtype_calculated', language 'sv', version '3.11'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -29,6 +29,7 @@ $string['additem'] = 'Lägg till objekt';
 $string['addmoreanswerblanks'] = 'Lägg till ytterligare ett tomt svar';
 $string['addsets'] = 'Lägg till datamängd';
 $string['answerdisplay'] = 'Svarsvisning';
+$string['answerformula'] = 'Svar: {$a}-formel';
 $string['answerhdr'] = 'Svar';
 $string['answerstoleranceparam'] = 'Tolerans parametrar för svar';
 $string['answerwithtolerance'] = '{$a->answer} (± {$a->tolerance} {$a->tolerancetype})';
@@ -54,7 +55,7 @@ $string['deletelastitem'] = 'Ta bort sista objektet';
 $string['distributionoption'] = 'Välj alternativ för distribution';
 $string['editdatasets'] = 'Redigera  datamängder för wildcard';
 $string['editdatasets_help'] = 'Wildcard värden kan skapas genom att ange en siffra i varje wild card fälte och sedan klicka på knappen "Lägg till". För att automatiskt generera 10 eller fler värden kan du välja hur många värden som krävs innan du klickar på knappen "Lägg till". En likformig fördelning av varje värde mellan gränserna är lika sannolik att genereras som en loguniform fördelning vilket innebär att värden mot den undre gränsen är mer sannolika.';
-$string['existingcategory1'] = 'kommer att använda ett redan befintligt gemensamt dataset.';
+$string['existingcategory1'] = 'kommer att använda en redan befintlig delad datauppsättning';
 $string['existingcategory2'] = 'en fil från en redan existerande uppsättning filer som också används av andra frågor i denna kategori';
 $string['existingcategory3'] = 'en länk från en redan existerande uppsättning länkar som också används av andra frågor i denna kategori';
 $string['forceregeneration'] = 'Tvinga förnyelse';
@@ -73,7 +74,7 @@ $string['incorrectfeedback'] = 'För varje felaktigt svar';
 $string['itemno'] = 'Punkt {$a}';
 $string['itemscount'] = 'Objekt <br /> Räkna';
 $string['itemtoadd'] = 'Objekt att lägga till';
-$string['keptcategory1'] = 'kommer att använda samma redan befintliga gemensammma dataset som tidigare';
+$string['keptcategory1'] = 'kommer att använda samma befintliga delade datauppsättning som tidigare';
 $string['keptcategory2'] = 'en fil från samma kategori återanvändbara fileruppsättningar som tidigare';
 $string['keptcategory3'] = 'en länk från samma kategori återanvändbara länkar som tidigare';
 $string['keptlocal1'] = 'kommer att använda samma redan befintliga privata datauppsättning som tidigare';
@@ -91,10 +92,10 @@ $string['missingformula'] = 'Saknad formel';
 $string['missingname'] = 'Saknat frågenamn';
 $string['missingquestiontext'] = 'Saknad frågetest';
 $string['mustenteraformulaorstar'] = 'Du måste skriva in en formel eller \'*\' (ett wildcard)';
-$string['newcategory1'] = 'kommer att använda ett nytt gemensamt dataset.';
+$string['newcategory1'] = 'kommer att använda en ny delad datauppsättning';
 $string['newcategory2'] = 'en fil från en ny uppsättning filer som också kan användas av andra frågor i denna kategori';
 $string['newcategory3'] = 'en länk från en ny uppsättning länkar som också kan användas av andra frågor i denna kategori';
-$string['newlocal1'] = 'kommer att använda ett nytt privat dataset.';
+$string['newlocal1'] = 'kommer att använda en ny privat datauppsättning';
 $string['newlocal2'] = 'en fil från en ny uppsättning filer som bara kommer att användas av denna fråga';
 $string['newlocal3'] = 'en länk från en ny uppsättning länkar som endast kommer att användas i denna fråga';
 $string['newsetwildcardvalues'] = 'ny uppsättning(ar) av wildcard värden';
@@ -114,6 +115,7 @@ $string['pluginnameadding'] = 'Lägga till en beräknad fråga';
 $string['pluginnameediting'] = 'Redigerar en Beräknad fråga';
 $string['pluginnamesummary'] = 'Beräknade frågor är som numeriska frågor,  med skillnaden att siffror som används väljs slumpmässigt från en datamängd när testet tas.';
 $string['possiblehdr'] = 'Möjliga \'wild cards\' finns endast med i frågetexten';
+$string['privacy:metadata'] = 'Pluginmodulen Beräknad fråga frågetyp lagrar ingen personinformation.';
 $string['questiondatasets'] = 'Frågans datamängd';
 $string['questiondatasets_help'] = 'Frågans datamängd för wildcards som kommer att användas i varje individuell fråga';
 $string['questionstoredname'] = 'Frågans lagringsnamn';
@@ -127,11 +129,11 @@ $string['sharedwildcards'] = 'Delade wildcards';
 $string['showitems'] = 'Visa';
 $string['significantfigures'] = 'Med {$a}';
 $string['significantfiguresformat'] = 'signifikanta siffror';
-$string['synchronize'] = 'Synkronisera data från delade datamängder med andra frågor i ett test';
+$string['synchronize'] = 'Synkronisera data från delade datamängder med andra frågor i ett kunskapstest';
 $string['synchronizeno'] = 'Synkronisera inte';
 $string['synchronizeyes'] = 'Synkronisera';
-$string['synchronizeyesdisplay'] = 'Synkronisera och visa de delade datamängdernas namn som prefix på frågans namn';
-$string['tolerance'] = 'Tolerans  &plusmn;';
+$string['synchronizeyesdisplay'] = 'Synkronisera och visa de delade datamängdernas namn som prefix för frågans namn';
+$string['tolerance'] = 'Tolerans ±';
 $string['tolerancetype'] = 'Typ';
 $string['trueanswerinsidelimits'] = 'Rätt svar: {$a->correct} innom gränserna för verkligt värde {$a->true}';
 $string['trueansweroutsidelimits'] = '<span class="error">FEL Rätt svar: {$a->correct} är utanför gränserna för verkligt värde {$a->true}</span>';

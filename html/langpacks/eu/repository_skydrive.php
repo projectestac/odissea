@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_skydrive', language 'eu', version '3.8'.
+ * Strings for component 'repository_skydrive', language 'eu', version '3.11'.
  *
  * @package     repository_skydrive
  * @category    string
@@ -34,6 +34,6 @@ $string['oauthinfo'] = '<p>Plugin hau erabiltzeko zure gunea <a href="https://ac
 <p>{$a->callbackurl}</p>
 <p>Behin erregistroa eginda, bezeroaren ID eta sekretu bat jasoko dituzu, eta horiek hemen sartu beharko dituzu.</p>';
 $string['pluginname'] = 'Microsoft OneDrive (zaharkitua)';
-$string['privacy:metadata'] = 'Microsoft OneDrive (zaharkitua) biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata'] = 'Microsoft OneDrive (zaharkitua) biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['secret'] = 'Sekretua';
 $string['skydrive:view'] = 'Ikusi OneDrive (zaharkitua)';

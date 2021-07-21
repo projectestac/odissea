@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_backups', language 'sv', version '3.8'.
+ * Strings for component 'report_backups', language 'sv', version '3.11'.
  *
  * @package     report_backups
  * @category    string
@@ -31,4 +31,5 @@ $string['nobackupsfound'] = 'Inga säkerhetskopior hittades.';
 $string['nologsfound'] = 'Inga loggposter hittades för denna säkerhetskopiering.';
 $string['pluginname'] = 'Rapporter för säkerhetskopieringar';
 $string['privacy:metadata'] = 'Pluginmodulen för rapporter för säkerhetskopieringar lagrar ingen personinformation.';
+$string['strftimetime'] = '%I:%M:%S %p';
 $string['viewlogs'] = 'Visa loggposter';

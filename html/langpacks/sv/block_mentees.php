@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mentees', language 'sv', version '3.8'.
+ * Strings for component 'block_mentees', language 'sv', version '3.11'.
  *
  * @package     block_mentees
  * @category    string
@@ -31,3 +31,4 @@ $string['mentees:addinstance'] = 'Lägg till nytt Lärlingsblock';
 $string['mentees:myaddinstance'] = 'Lägg till nytt Lärlingsblock till Mitt Moodle';
 $string['newmenteesblock'] = '(nytt block för lärlingar)';
 $string['pluginname'] = 'Lärlingar';
+$string['privacy:metadata'] = 'Lärlingsblocket visar endast information som lagras på andra platser.';

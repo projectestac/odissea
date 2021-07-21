@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'pt', version '3.8'.
+ * Strings for component 'portfolio', language 'pt', version '3.11'.
  *
  * @package     portfolio
  * @category    string
@@ -141,7 +141,7 @@ $string['manageyourportfolios'] = 'Gerir os seus portefólios';
 $string['mimecheckfail'] = 'O módulo de portefólio "{$a->plugin}" não permite a utilização do mimetype "{$a->mimetype}"';
 $string['missingcallbackarg'] = 'Falta o argumento de callback "{$a->arg}" para a classe "{$a->class}"';
 $string['moderatedbsizethreshold'] = 'Tamanho da base de dados para transferências de débito moderado';
-$string['moderatedbsizethresholddesc'] = 'Número de registos na base de dados acima do qual será considerado que a transferência demorará um intervalo de tempo moderado';
+$string['moderatedbsizethresholddesc'] = 'Número de registos na base de dados acima do qual será considerado que a transferência demorará algum tempo';
 $string['moderatefilesizethreshold'] = 'Tamanho de ficheiro para transferências de débito moderado';
 $string['moderatefilesizethresholddesc'] = 'Tamanho de ficheiro acima do qual será considerado que a transferência demorará um intervalo de tempo moderado';
 $string['multipleinstancesdisallowed'] = 'O módulo "{$a}" não permite a criação de mais do que uma instância';
@@ -166,7 +166,7 @@ $string['off'] = 'Ativo, mas oculto';
 $string['on'] = 'Ativo, mas visível';
 $string['plugin'] = 'Módulo portefólio';
 $string['plugincouldnotpackage'] = 'Erro ao compactar os seus dados para exportação: erro original {$a}';
-$string['pluginismisconfigured'] = 'Ignorado - o módulo Portefólio está mal configurado. Mensagem de erro: {$a}';
+$string['pluginismisconfigured'] = 'O módulo Portefólio foi ignorado por estar mal configurado. Mensagem de erro: {$a}';
 $string['portfolio'] = 'Portefólio';
 $string['portfolios'] = 'Portefólios';
 $string['privacy:metadata'] = 'O subsistema portefólio funciona como um canal, transmite pedidos dos módulos a vários módulos de portefólio.';
@@ -200,5 +200,5 @@ $string['thirdpartyexception'] = 'Foi lançada uma exceção por parte de um sis
 $string['transfertime'] = 'Tempo de transferência';
 $string['unknownplugin'] = 'Desconhecido (podem ter sido removido pelo administrador)';
 $string['wait'] = 'Esperar';
-$string['wanttowait_high'] = 'Não é recomendável que aguarde que a transferência termine, mas pode fazê-lo se tiver a certeza do que está a fazer';
+$string['wanttowait_high'] = 'Não é recomendado que aguarde que o descarregamento termine, mas pode fazê-lo se tiver a certeza do que está a fazer';
 $string['wanttowait_moderate'] = 'Quer esperar até a transferência estar concluída? Pode demorar alguns minutos.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'gl', version '3.8'.
+ * Strings for component 'block_myprofile', language 'gl', version '3.11'.
  *
  * @package     block_myprofile
  * @category    string
@@ -26,23 +26,23 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['contentsettings'] = 'Amosar os axustes para o contido rexional';
-$string['display_address'] = 'Amosar enderezo';
-$string['display_aim'] = 'Amosar AIM';
-$string['display_city'] = 'Amosar cidade';
-$string['display_country'] = 'Amosar país';
+$string['display_address'] = 'Amosar o enderezo';
+$string['display_aim'] = 'Amosar o AIM';
+$string['display_city'] = 'Amosar a cidade';
+$string['display_country'] = 'Amosar o país';
 $string['display_currentlogin'] = 'Amosar a identificación actual';
 $string['display_email'] = 'Amosar o correo';
 $string['display_firstaccess'] = 'Amosar o primeiro acceso';
-$string['display_icq'] = 'Amosar ICQ';
+$string['display_icq'] = 'Amosar o ICQ';
 $string['display_institution'] = 'Amosar a institución';
 $string['display_lastaccess'] = 'Amosar o último acceso';
 $string['display_lastip'] = 'Amosar o último IP';
-$string['display_msn'] = 'Amosar MSN';
+$string['display_msn'] = 'Amosar o MSN';
 $string['display_phone1'] = 'Amosar o 1º número de tél.';
 $string['display_phone2'] = 'Amosar o 2º número de tél.';
-$string['display_picture'] = 'Amosar imaxe';
-$string['display_skype'] = 'Amosar Skype';
-$string['display_yahoo'] = 'Amosar Yahoo';
+$string['display_picture'] = 'Amosar a imaxe';
+$string['display_skype'] = 'Amosar o Skype';
+$string['display_yahoo'] = 'Amosar o Yahoo';
 $string['myprofile:addinstance'] = 'Engadir un novo identificador no bloque de usuario';
 $string['myprofile:myaddinstance'] = 'Engade un novo bloque de usuario rexistrado no Taboleiro';
 $string['myprofile_settings'] = 'Información visíbel do usuario';

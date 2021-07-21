@@ -16,7 +16,6 @@
 /**
  * Manage the courses view for the overview block.
  *
- * @package    block_myoverview
  * @copyright  2018 Bas Brands <bas@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -33,6 +32,7 @@ define(
     'core_course/events',
     'block_myoverview/selectors',
     'core/paged_content_events',
+    'core/aria',
 ],
 function(
     $,
@@ -44,7 +44,8 @@ function(
     Templates,
     CourseEvents,
     Selectors,
-    PagedContentEvents
+    PagedContentEvents,
+    Aria
 ) {
 
     var SELECTORS = {
@@ -174,12 +175,14 @@ function(
      */
     var hideFavouriteIcon = function(root, courseId) {
         var iconContainer = getFavouriteIconContainer(root, courseId);
+
         var isFavouriteIcon = iconContainer.find(SELECTORS.ICON_IS_FAVOURITE);
         isFavouriteIcon.addClass('hidden');
-        isFavouriteIcon.attr('aria-hidden', true);
+        Aria.hide(isFavouriteIcon);
+
         var notFavourteIcon = iconContainer.find(SELECTORS.ICON_NOT_FAVOURITE);
         notFavourteIcon.removeClass('hidden');
-        notFavourteIcon.attr('aria-hidden', false);
+        Aria.unhide(notFavourteIcon);
     };
 
     /**
@@ -190,12 +193,14 @@ function(
      */
     var showFavouriteIcon = function(root, courseId) {
         var iconContainer = getFavouriteIconContainer(root, courseId);
+
         var isFavouriteIcon = iconContainer.find(SELECTORS.ICON_IS_FAVOURITE);
         isFavouriteIcon.removeClass('hidden');
-        isFavouriteIcon.attr('aria-hidden', false);
+        Aria.unhide(isFavouriteIcon);
+
         var notFavourteIcon = iconContainer.find(SELECTORS.ICON_NOT_FAVOURITE);
         notFavourteIcon.addClass('hidden');
-        notFavourteIcon.attr('aria-hidden', true);
+        Aria.hide(notFavourteIcon);
     };
 
     /**
@@ -537,11 +542,9 @@ function(
 
         // Filter out all pagination options which are too large for the amount of courses user is enrolled in.
         var totalCourseCount = parseInt(root.find(Selectors.courseView.region).attr('data-totalcoursecount'), 10);
-        if (totalCourseCount) {
-            itemsPerPage = itemsPerPage.filter(function(pagingOption) {
-                return pagingOption.value < totalCourseCount;
-            });
-        }
+        itemsPerPage = itemsPerPage.filter(function(pagingOption) {
+            return pagingOption.value < totalCourseCount || pagingOption.value === 0;
+        });
 
         var filters = getFilterValues(root);
         var config = $.extend({}, DEFAULT_PAGED_CONTENT_CONFIG);
@@ -596,7 +599,8 @@ function(
                                 pageCourses = $.merge(loadedPages[currentPage].courses, courses.slice(0, nextPageStart));
                             }
                         } else {
-                            nextPageStart = pageData.limit;
+                            // When the page limit is zero, there is only one page of courses, no start for next page.
+                            nextPageStart = pageData.limit || false;
                             pageCourses = (pageData.limit > 0) ? courses.slice(0, pageData.limit) : courses;
                         }
 
@@ -605,8 +609,8 @@ function(
                             courses: pageCourses
                         };
 
-                        // Set up the next page
-                        var remainingCourses = nextPageStart ? courses.slice(nextPageStart, courses.length) : [];
+                        // Set up the next page (if there is more than one page).
+                        var remainingCourses = nextPageStart !== false ? courses.slice(nextPageStart, courses.length) : [];
                         if (remainingCourses.length) {
                             loadedPages[currentPage + 1] = {
                                 courses: remainingCourses

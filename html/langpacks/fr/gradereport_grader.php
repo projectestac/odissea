@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'fr', version '3.8'.
+ * Strings for component 'gradereport_grader', language 'fr', version '3.11'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -41,7 +41,7 @@ $string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'Le 
 $string['privacy:metadata:preference:grade_report_averagesdisplaytype'] = 'Si la moyenne est affichée sous forme de note, de pourcentage ou de lettre, ou s\'il faut utiliser pour ceci le réglage de la catégorie ou de l\'élément d\'évaluation (héritage).';
 $string['privacy:metadata:preference:grade_report_enableajax'] = 'S\'il faut ajouter des fonctions AJAX au rapport de l\'évaluateur, afin de simplifier et de rendre plus rapide les opérations habituelles';
 $string['privacy:metadata:preference:grade_report_grader_collapsed_categories'] = 'Liste des catégories à replier dans le carnet de notes';
-$string['privacy:metadata:preference:grade_report_meanselection'] = 'Si les cellules sans note doivent être inclues lors du calcul de la moyenne de chaque catégorie ou élément d\'évaluation';
+$string['privacy:metadata:preference:grade_report_meanselection'] = 'Si les cellules sans note doivent être incluses lors du calcul de la moyenne de chaque catégorie ou élément d\'évaluation';
 $string['privacy:metadata:preference:grade_report_quickgrading'] = 'S\'il faut afficher un champ de texte pour chaque note, permettant de modifier plusieurs notes à la fois';
 $string['privacy:metadata:preference:grade_report_rangesdecimalpoints'] = 'Le nombre de décimales à afficher pour chaque plage, ou s\'il faut utiliser pour ceci le réglage de la catégorie ou de l\'élément d\'évaluation (héritage).';
 $string['privacy:metadata:preference:grade_report_rangesdisplaytype'] = 'Si la plage est affichée sous forme de note, de pourcentage ou de lettre, ou s\'il faut utiliser pour ceci le réglage de la catégorie ou de l\'élément d\'évaluation (héritage).';

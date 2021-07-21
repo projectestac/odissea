@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ru', version '3.8'.
+ * Strings for component 'portfolio', language 'ru', version '3.11'.
  *
  * @package     portfolio
  * @category    string
@@ -172,13 +172,13 @@ $string['privacy:metadata:portfolio_log'] = 'Журнал отправки по�
 $string['privacy:metadata:portfolio_log:caller_class'] = 'Название класса, использованного для создания отправки';
 $string['privacy:metadata:portfolio_log:caller_component'] = 'Название компонента, отвечающего за экспорт';
 $string['privacy:metadata:portfolio_log:time'] = 'Время отправки (в случае использования очереди отправки это — время фактического запуска отправки, а не время начала отправки пользователем)';
-$string['privacy:metadata:portfolio_log:userid'] = 'Пользователь, экспортировавший контент';
+$string['privacy:metadata:portfolio_log:userid'] = 'ID пользователя, экспортировавшего контент';
 $string['privacy:metadata:portfolio_tempdata'] = 'Хранит временные данные для экспортируемых портфолио';
 $string['privacy:metadata:portfolio_tempdata:data'] = 'Экспортируемые данные';
 $string['privacy:metadata:portfolio_tempdata:expirytime'] = 'Время окончания срока действия записи';
 $string['privacy:metadata:portfolio_tempdata:instance'] = 'Используемый экземпляр плагина портфолио';
 $string['privacy:metadata:portfolio_tempdata:userid'] = 'Пользователь, выполнивший экспорт';
-$string['privacy:metadata:userid'] = 'Идентификатор пользователя.';
+$string['privacy:metadata:userid'] = 'ID пользователя.';
 $string['privacy:metadata:value'] = 'Значение настройки.';
 $string['privacy:path'] = 'Экземпляры портфолио';
 $string['queuesummary'] = 'Передачи в очереди в данный момент';

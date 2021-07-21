@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'gl', version '3.8'.
+ * Strings for component 'url', language 'gl', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Escoller unha variábel';
 $string['clicktoopen'] = 'Prema na ligazón {$a} para abrir o recurso.';
-$string['configdisplayoptions'] = 'Seleccione todas as opcións que deberían estar dispoñíbeis, a configuración existente non se modifica. Manteña premida a tecla CTRL para seleccionar varios campos.';
+$string['configdisplayoptions'] = 'Seleccione todas as opcións que deberían estar dispoñíbeis, os axustes existentes non se modifican. Manteña premida a tecla CTRL para seleccionar varios campos.';
 $string['configframesize'] = 'Cando se presenta unha páxina web ou un ficheiro cargado dentro dun marco, este valor é a altura en píxeles do marco superior (o que contén a navegación).';
 $string['configrolesinparams'] = 'Actíveo se quere incluír nomes de rol localizados na lista de parámetros de variábel dispoñíbeis.';
-$string['configsecretphrase'] = 'Esta frase secreta utilízase para producir un valor de código cifrado que se pode enviar a algúns servidores como un parámetro. O código cifrado prodúceo un valor md5 do enderezo IP actual concatenado coa súa frase secreta. p.ex code = md5(IP.secretphrase). Vexa que isto non é fiábel porque o enderezo IP pode cambiar e ademais adoita ser compartido entre varios computadores.';
+$string['configsecretphrase'] = 'Esta frase segreda utilízase para producir un valor de código cifrado que se pode enviar a algúns servidores como un parámetro. O código cifrado prodúceo un valor md5 do enderezo IP actual concatenado coa súa frase segreda. p.ex code = md5(IP.secretphrase). Vexa que isto non é fiábel porque o enderezo IP pode cambiar e ademais adoita ser compartido entre varios computadores.';
 $string['contentheader'] = 'Contido';
 $string['createurl'] = 'Crear un URL';
 $string['displayoptions'] = 'Opcións dispoñíbeis de presentación';
@@ -59,7 +59,7 @@ $string['indicator:socialbreadthdef_link'] = 'Indicadores_de_aprendizaxe_analít
 $string['invalidstoredurl'] = 'Non é posíbel presentar este recurso, o URL non é correcto.';
 $string['invalidurl'] = 'O URL introducido non é correcto';
 $string['modulename'] = 'URL';
-$string['modulename_help'] = 'O módulo URL permítelle a un profesor fornecer unha ligazón web como un recurso de curso. Algo que estea libremente dispoñíbel en liña, como poden ser documentos ou imaxes, poden ligarse; o URL non ten que ser a páxina inicial dun sitio web. O URL dunha páxina particular pode ser copiado e pegado ou un profesor pode usar un selector de ficheiros e escoller unha ligazón dun repositorio tipo Flickr, YouTube ou Wikimedia (segundo que repositorios estean activados para o sitio).
+$string['modulename_help'] = 'O módulo URL permítelle a un profesor fornecer unha ligazón web como un recurso de curso. Algo que estea libremente dispoñíbel en liña, como poden ser documentos ou imaxes, poden ligarse; o URL non ten que ser a páxina de inicio dun sitio web. O URL dunha páxina particular pode ser copiado e pegado ou un profesor pode usar un selector de ficheiros e escoller unha ligazón dun repositorio tipo Flickr, YouTube ou Wikimedia (segundo que repositorios estean activados para o sitio).
 
 Hai un certo número de opcións de presentación do URL, incorporada ou para abrirse nunha nova xanela, por exemplo, e opcións avanzadas para pasar información, tales como un nome de alumno, ao URL, se fose necesario.
 

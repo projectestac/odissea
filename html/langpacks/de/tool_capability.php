@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'de', version '3.8'.
+ * Strings for component 'tool_capability', language 'de', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -30,9 +30,12 @@ $string['capabilityreport'] = 'Rechteübersicht';
 $string['changeoverrides'] = 'Überschreibungen in diesem Kontext ändern';
 $string['changeroles'] = 'Rollendefinitionen ändern';
 $string['eventreportviewed'] = 'Aufgerufener Bericht';
+$string['filters'] = 'Ergebnisse filtern';
 $string['forroles'] = 'Für Rolle {$a}';
 $string['getreport'] = 'Bericht aufrufen';
 $string['intro'] = 'Der Bericht zeigt für ein einzelnes Recht, welche Erlaubnisse sich in allen Rollen (oder in einer Rollenauswahl) daraus ergeben und wo überall das Recht geändert wurde.';
+$string['nodifferences'] = 'Es gibt in diesem Kontext keine Unterschiede zwischen den ausgewählten Rollen';
+$string['onlydiff'] = 'Nur Unterschiede zeigen';
 $string['pluginname'] = 'Rechteübersicht';
 $string['privacy:metadata'] = 'Das Plugin für den Berechtigungsüberblick speichert keine personenbezogenen Daten';
 $string['reportforcapability'] = 'Übersicht für das Recht \'{$a}\'';

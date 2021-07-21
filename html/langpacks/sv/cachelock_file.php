@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachelock_file', language 'sv', version '3.8'.
+ * Strings for component 'cachelock_file', language 'sv', version '3.11'.
  *
  * @package     cachelock_file
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fillåsning';
-$string['privacy:metadata'] = 'Pluginmodulen Fillåsning lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Fillåsning lagrar ingen personinformation.';

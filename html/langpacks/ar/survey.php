@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ar', version '3.8'.
+ * Strings for component 'survey', language 'ar', version '3.11'.
  *
  * @package     survey
  * @category    string
@@ -190,6 +190,7 @@ $string['collespintro'] = 'يكمن الغرض من هذا الاستبيان ف
 
 مع جزيل الشكر.';
 $string['collespname'] = 'COLLES (الفعلي)';
+$string['completiondetail:submit'] = 'تسليم الإجابات';
 $string['completionsubmit'] = 'ينبغي على الطلبة تسليم عملهم في هذا النشاط لإكماله';
 $string['customintro'] = 'الوصف';
 $string['deleteallanswers'] = 'حذف كل إجابات الاستبيان';
@@ -202,7 +203,7 @@ $string['downloadresults'] = 'تنزيل النتائج';
 $string['downloadtext'] = 'تنزيل البيانات في مجرد ملف نصوص';
 $string['editingasurvey'] = 'تعديل الاستبيان';
 $string['errorunabletosavenotes'] = 'وقع خطأ عند حفظ ملاحظاتك.';
-$string['eventreportdownloaded'] = 'تم تنزيل تقرير الاستبيان';
+$string['eventreportdownloaded'] = 'تقرير استبيان تم تنزيله';
 $string['eventreportviewed'] = 'تقرير استبيان تمت معاينته';
 $string['eventresponsesubmitted'] = 'تم تسليم إجابة الاستبيان';
 $string['guestsnotallowed'] = 'المستخدمون المنضمون فقط يمكنهم تسليم الاستبيانات';

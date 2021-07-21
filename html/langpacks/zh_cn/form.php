@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'zh_cn', version '3.8'.
+ * Strings for component 'form', language 'zh_cn', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -48,6 +48,7 @@ $string['err_wrongfileextension'] = '某些文件({$a->wrongfiles})无法上传�
 $string['filesofthesetypes'] = '接受的文件类型：';
 $string['filetypesany'] = '所有文件类型';
 $string['filetypesnotall'] = '此处不允许选择“所有文件类型”';
+$string['filetypesnotallowed'] = '此处不允许这些文件类型：{$a}';
 $string['filetypesnotwhitelisted'] = '此处不允许这些文件类型：{$a}';
 $string['filetypesothers'] = '其它文件';
 $string['filetypesunknown'] = '未知文件类型：{$a}';

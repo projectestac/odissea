@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'gl', version '3.8'.
+ * Strings for component 'book', language 'gl', version '3.11'.
  *
  * @package     book
  * @category    string
@@ -68,7 +68,7 @@ Un libro pódese usar
 
 * Para presentar material de lectura para módulos individuais de estudo
 * Como un manual de persoal de departamento
-* Como un modo de presentar un cartafol de traballo do alumno';
+* Como un modo de presentar un portafolios de traballo do alumno';
 $string['modulename_link'] = 'mod/book/view';
 $string['modulenameplural'] = 'Libros';
 $string['movechapterdown'] = 'Mover o capítulo «{$a}» cara abaixo';
@@ -104,8 +104,8 @@ $string['pluginname'] = 'Libro';
 $string['previouschapter'] = 'Capítulo anterior';
 $string['privacy:metadata'] = 'O modulo de actividade libro non almacena ningún dato persoal.';
 $string['removeallbooktags'] = 'Retirar todas as etiquetas libro';
-$string['search:activity'] = 'Libro - información do recurso';
-$string['search:chapter'] = 'Libro - capítulos';
+$string['search:activity'] = 'Libro, información do recurso';
+$string['search:chapter'] = 'Libro, capítulos';
 $string['showchapter'] = 'Amosar o capítulo «{$a}»';
 $string['subchapter'] = 'Subcapítulo';
 $string['subchapternotice'] = '(Só está dipoñíbel dende que se cree o primeiro capítulo)';

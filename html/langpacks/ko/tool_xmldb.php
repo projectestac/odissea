@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'ko', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'ko', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -127,7 +127,6 @@ $string['newtable'] = '새 테이블';
 $string['newtablefrommysql'] = 'MySQL에서 새 테이블';
 $string['nofieldsspecified'] = '필드가 명시되지 않았습니다.';
 $string['nomasterprimaryuniquefound'] = '외래키 참조 열은 참조 테이블의 고유키에포함하여야만 합니다. UNIQUE INDEX에 그 열이 있는 것만으로는 충분치 않습니다.';
-$string['nomissingindexesfound'] = '누락된 인덱스가 발견되지 않았으므로, DB는 추가 조치가 필요하지 않습니다.';
 $string['noreffieldsspecified'] = '참조 필드가 명시되지 않았습니다.';
 $string['noreftablespecified'] = '명시된 참조 테이블을 찾을 수 없습니다.';
 $string['noviolatedforeignkeysfound'] = '위반한 외래키가 없습니다.';

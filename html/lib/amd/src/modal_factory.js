@@ -17,42 +17,54 @@
  * Create a modal.
  *
  * @module     core/modal_factory
- * @class      modal_factory
- * @package    core
  * @copyright  2016 Ryan Wyllie <ryan@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 define(['jquery', 'core/modal_events', 'core/modal_registry', 'core/modal',
-        'core/modal_save_cancel', 'core/modal_cancel',
+        'core/modal_save_cancel', 'core/modal_cancel', 'core/local/modal/alert',
         'core/templates', 'core/notification', 'core/custom_interaction_events',
         'core/pending'],
     function($, ModalEvents, ModalRegistry, Modal, ModalSaveCancel,
-        ModalCancel, Templates, Notification, CustomEvents, Pending) {
+        ModalCancel, ModalAlert, Templates, Notification, CustomEvents, Pending) {
 
     // The templates for each type of modal.
     var TEMPLATES = {
         DEFAULT: 'core/modal',
         SAVE_CANCEL: 'core/modal_save_cancel',
         CANCEL: 'core/modal_cancel',
+        ALERT: 'core/local/modal/alert',
     };
 
-    // The available types of modals.
+    /**
+     * The available types of modals.
+     *
+     * @constant
+     * @static
+     * @public
+     * @property {String} DEFAULT The default modal
+     * @property {String} SAVE_CANCEL A modal which can be used to either save, or cancel.
+     * @property {String} CANCEL A modal which displayed a cancel button
+     * @property {String} ALERT An information modal which only displays information.
+     */
     var TYPES = {
         DEFAULT: 'DEFAULT',
         SAVE_CANCEL: 'SAVE_CANCEL',
         CANCEL: 'CANCEL',
+        ALERT: 'ALERT',
     };
 
     // Register the common set of modals.
     ModalRegistry.register(TYPES.DEFAULT, Modal, TEMPLATES.DEFAULT);
     ModalRegistry.register(TYPES.SAVE_CANCEL, ModalSaveCancel, TEMPLATES.SAVE_CANCEL);
     ModalRegistry.register(TYPES.CANCEL, ModalCancel, TEMPLATES.CANCEL);
+    ModalRegistry.register(TYPES.ALERT, ModalAlert, TEMPLATES.ALERT);
 
     /**
      * Set up the events required to show the modal and return focus when the modal
      * is closed.
      *
      * @method setUpTrigger
+     * @private
      * @param {Promise} modalPromise The modal instance
      * @param {object} triggerElement The jQuery element to open the modal
      * @param {object} modalConfig The modal configuration given to the factory
@@ -113,14 +125,15 @@ define(['jquery', 'core/modal_events', 'core/modal_registry', 'core/modal',
      * the trigger between the modal and the trigger element.
      *
      * @method createFromElement
+     * @private
      * @param {object} registryConf A config from the ModalRegistry
      * @param {object} modalElement The modal HTML jQuery object
      * @return {object} Modal instance
      */
     var createFromElement = function(registryConf, modalElement) {
         modalElement = $(modalElement);
-        var module = registryConf.module;
-        var modal = new module(modalElement);
+        var Module = registryConf.module;
+        var modal = new Module(modalElement);
 
         return modal;
     };
@@ -130,9 +143,10 @@ define(['jquery', 'core/modal_events', 'core/modal_registry', 'core/modal',
      * the correct template.
      *
      * @method createFromType
+     * @private
      * @param {object} registryConf A config from the ModalRegistry
      * @param {object} templateContext The context to render the template with
-     * @return {promise} Resolved with a Modal instance
+     * @returns {promise} Resolved with a Modal instance
      */
     var createFromType = function(registryConf, templateContext) {
         var templateName = registryConf.template;
@@ -158,6 +172,8 @@ define(['jquery', 'core/modal_events', 'core/modal_registry', 'core/modal',
     var create = function(modalConfig, triggerElement) {
         var type = modalConfig.type || TYPES.DEFAULT;
         var isLarge = modalConfig.large ? true : false;
+        // If 'scrollable' is not configured, set the modal to be scrollable by default.
+        var isScrollable = modalConfig.hasOwnProperty('scrollable') ? modalConfig.scrollable : true;
         var registryConf = null;
         var templateContext = {};
 
@@ -185,9 +201,22 @@ define(['jquery', 'core/modal_events', 'core/modal_registry', 'core/modal',
                     modal.setFooter(modalConfig.footer);
                 }
 
+                if (modalConfig.buttons) {
+                    Object.entries(modalConfig.buttons).forEach(function([key, value]) {
+                        modal.setButtonText(key, value);
+                    });
+                }
+
                 if (isLarge) {
                     modal.setLarge();
                 }
+
+                if (typeof modalConfig.removeOnClose !== 'undefined') {
+                    // If configured remove the modal when hiding it.
+                    modal.setRemoveOnClose(modalConfig.removeOnClose);
+                }
+
+                modal.setScrollable(isScrollable);
 
                 return modal;
             });

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'es', version '3.8'.
+ * Strings for component 'calendar', language 'es', version '3.11'.
  *
  * @package     calendar
  * @category    string
@@ -55,6 +55,9 @@ $string['courses'] = 'Cursos';
 $string['customexport'] = 'Intervalo personalizado ({$a->timestart} - {$a->timeend})';
 $string['daily'] = 'Diario';
 $string['day'] = 'Día';
+$string['dayeventsmany'] = '{$a->num} eventos, {$a->day}';
+$string['dayeventsnone'] = 'Sin eventos, {$a}';
+$string['dayeventsone'] = '1 evento, {$a}';
 $string['daynext'] = 'Próximo día';
 $string['dayprev'] = 'Día anterior';
 $string['dayviewfor'] = 'Vista por día para:';
@@ -125,6 +128,7 @@ $string['eventspersonal'] = 'Mis eventos personales';
 $string['eventsrelatedtocategories'] = 'Eventos relacionados con categorías';
 $string['eventsrelatedtocourses'] = 'Eventos referidos a los cursos';
 $string['eventsrelatedtogroups'] = 'Eventos relacionados con grupos';
+$string['eventsskipped'] = 'Eventos saltados: {$a}';
 $string['eventstarttime'] = 'Hora de comienzo';
 $string['eventstoexport'] = 'Eventos a exportar';
 $string['eventsubscriptioncreated'] = 'Suscripción al calendario creada';
@@ -139,6 +143,7 @@ $string['eventtypecourse'] = 'curso';
 $string['eventtypeglobal'] = 'sitio';
 $string['eventtypegroup'] = 'grupo';
 $string['eventtypemodule'] = 'módulo';
+$string['eventtypeother'] = 'otro';
 $string['eventtypesite'] = 'sitio';
 $string['eventtypeuser'] = 'usuario';
 $string['eventview'] = 'Detalles del evento';
@@ -229,6 +234,7 @@ $string['saturday'] = 'Sábado';
 $string['showeventtype'] = 'Mostrar eventos de {$a}';
 $string['shown'] = 'visibles';
 $string['site'] = 'Sitio';
+$string['siteevent'] = 'Evento del sitio';
 $string['siteevents'] = 'Eventos Globales';
 $string['spanningevents'] = 'Eventos en marcha';
 $string['subscriptionname'] = 'Nombre';
@@ -265,6 +271,7 @@ $string['urlforical'] = 'URL para exportar a iCalendar, para suscribirse al cale
 $string['user'] = 'Usuario';
 $string['userevent'] = 'Evento de usuario';
 $string['userevents'] = 'Eventos de usuario';
+$string['viewupcomingactivitiesdue'] = 'Ver las actividades próximas pendientes';
 $string['wed'] = 'Mié';
 $string['wednesday'] = 'Miércoles';
 $string['weekly'] = 'Semanal';

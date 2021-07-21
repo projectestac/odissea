@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'es', version '3.8'.
+ * Strings for component 'cache', language 'es', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -34,12 +34,17 @@ $string['addstoresuccess'] = 'Se añadió exitosamente un nuevo almacén de {$a}
 $string['area'] = 'Área';
 $string['cacheadmin'] = 'Administración de caché';
 $string['cacheconfig'] = 'Configuración';
+$string['cachedef_calculablesinfo'] = 'Información de calculables de analítica';
 $string['cachedef_calendar_categories'] = 'Categorías de curso del calendario a las que puede acceder un usuario';
 $string['cachedef_calendar_subscriptions'] = 'Suscripciones al calendario';
 $string['cachedef_capabilities'] = 'Listado de prestaciones del sistema';
 $string['cachedef_completion'] = 'Estado de finalización de la actividad';
 $string['cachedef_config'] = 'Ajustes de configuración';
+$string['cachedef_contentbank_context_extensions'] = 'Extensiones permitidas y sus plugins que las soportan en un contexto de banco de contenido';
+$string['cachedef_contentbank_enabled_extensions'] = 'Extensiones permitidas y sus plugins que las soportan en banco de contenido';
 $string['cachedef_contextwithinsights'] = 'Contexto con intuiciones (predicciones)';
+$string['cachedef_course_image'] = 'Imágenes del curso';
+$string['cachedef_course_user_dates'] = 'Las fechas del usuario para cursos configurados al modo de fechas relativas';
 $string['cachedef_coursecat'] = 'Listas de categorías de cursos para un usuario en particular';
 $string['cachedef_coursecatrecords'] = 'Registros de categorías de cursos';
 $string['cachedef_coursecattree'] = 'Árbol de categorías de cursos';
@@ -51,9 +56,14 @@ $string['cachedef_eventinvalidation'] = 'Invalidación de evento';
 $string['cachedef_externalbadges'] = 'Insignias externas de un usuario concreto';
 $string['cachedef_fontawesomeiconmapping'] = 'Mapeo de iconos para font Awesome';
 $string['cachedef_grade_categories'] = 'Consulta de categorías de grado';
+$string['cachedef_grade_letters'] = 'Consultas de calificaciones con letras';
+$string['cachedef_gradesetting'] = 'Configuración de calificación del curso';
 $string['cachedef_groupdata'] = 'Información de grupos del curso';
+$string['cachedef_h5p_content_type_translations'] = 'Traducciones de librerías de contenido H5P';
+$string['cachedef_h5p_library_files'] = 'Archivos de librería H5P';
 $string['cachedef_htmlpurifier'] = 'Depurador de HTML - Limpieza de contenido';
 $string['cachedef_langmenu'] = 'Lista de idiomas disponibles';
+$string['cachedef_license'] = 'Lista de licencias';
 $string['cachedef_locking'] = 'Bloqueando';
 $string['cachedef_message_processors_enabled'] = 'Estado habilitado de procesadores de mensaje';
 $string['cachedef_message_time_last_message_between_users'] = 'Hora de creación del mensaje más reciente en una conversación';
@@ -66,6 +76,7 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'Instancias de po
 $string['cachedef_postprocessedcss'] = 'CSS post procesado';
 $string['cachedef_presignup'] = 'Preinscribir datos para un usuario no registrado determinado';
 $string['cachedef_questiondata'] = 'Definiciones de preguntas';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'Recomendaciones de elementos de contenido del curso';
 $string['cachedef_repositories'] = 'Datos de repositorios';
 $string['cachedef_roledefs'] = 'Definiciones de roles';
 $string['cachedef_string'] = 'Caché de cadenas de idioma';
@@ -73,12 +84,15 @@ $string['cachedef_suspended_userids'] = 'Listado de usuarios suspendidos por cur
 $string['cachedef_tagindexbuilder'] = 'Resultados de la búsqueda de elementos etiquetados';
 $string['cachedef_tags'] = 'Etiquetas de colecciones y áreas';
 $string['cachedef_temp_tables'] = 'Tabla temporal de caché';
+$string['cachedef_user_course_content_items'] = 'Elementos de contenido del usuario (actividades, recursos y sus subtipos) por curso';
+$string['cachedef_user_favourite_course_content_items'] = 'Elementos destacados del usuario';
 $string['cachedef_user_group_groupings'] = 'Grupos y agrupamientos de usuarios por curso';
 $string['cachedef_userselections'] = 'Información empleada para mantener las selecciones del usuario en Moodle';
 $string['cachedef_yuimodules'] = 'Definiciones de módulos YUI';
 $string['cachelock_file_default'] = 'Bloqueo de archivo por defecto';
 $string['cachestores'] = 'Almacenes de caché';
 $string['caching'] = 'Caché';
+$string['canuselocalstore'] = 'Puede usar almacén local';
 $string['component'] = 'Componente';
 $string['confirmlockdeletion'] = 'Confirmar la eliminación del bloqueo';
 $string['confirmstoredeletion'] = 'Confirme borrado de almacén';
@@ -142,8 +156,11 @@ $string['plugin'] = 'Plugin';
 $string['pluginsummaries'] = 'Almacenes de caché instalados';
 $string['privacy:metadata:cachestore'] = 'El subsistema de Caché almacena datos temporalmente a nombre de otras partes de Moodle. Estos datos no son fácilmente identificables, y son de muy corta duración. Sirve como una caché de datos almacenados en otro sitio en Moodle y por lo tanto deberían de ser manejados por esos componentes de Moodle.';
 $string['purge'] = 'Purgar';
+$string['purgeagain'] = 'Purgar otra vez';
 $string['purgedefinitionsuccess'] = 'Definición solicitada purgada con éxito.';
 $string['purgestoresuccess'] = 'Se purgó exitosamente el almacén solicitado.';
+$string['purgexdefinitionsuccess'] = 'Se purgó exitosamente ({$a->component}/{$a->area}) del caché "{$a->name}" .';
+$string['purgexstoresuccess'] = 'Se purgó exitosamente el almacenamiento "{$a->store}".';
 $string['requestcount'] = 'Probar con {$a} solicitudes';
 $string['rescandefinitions'] = 'Volver a revisar definiciones';
 $string['result'] = 'Resultado';

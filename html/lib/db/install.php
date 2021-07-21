@@ -107,7 +107,7 @@ function xmldb_main_install() {
     $cat = new stdClass();
     $cat->name         = get_string('miscellaneous');
     $cat->depth        = 1;
-    $cat->sortorder    = MAX_COURSES_IN_CATEGORY;
+    $cat->sortorder    = get_max_courses_in_category();
     $cat->timemodified = time();
     $catid = $DB->insert_record('course_categories', $cat);
     $DB->set_field('course_categories', 'path', '/'.$catid, array('id'=>$catid));
@@ -125,8 +125,8 @@ function xmldb_main_install() {
         'backup_version'        => 2008111700,
         'backup_release'        => '2.0 dev',
         'mnet_dispatcher_mode'  => 'off',
-        'sessiontimeout'        => 7200, // must be present during roles installation
-        'stringfilters'         => '', // These two are managed in a strange way by the filters
+        'sessiontimeout'        => 8 * 60 * 60, // Must be present during roles installation.
+        'stringfilters'         => '', // These two are managed in a strange way by the filters.
         'filterall'             => 0, // setting page, so have to be initialised here.
         'texteditors'           => 'atto,tinymce,textarea',
         'antiviruses'           => '',

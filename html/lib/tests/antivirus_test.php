@@ -29,7 +29,7 @@ require_once(__DIR__ . '/fixtures/testable_antivirus.php');
 class core_antivirus_testcase extends advanced_testcase {
     protected $tempfile;
 
-    protected function setUp() {
+    protected function setUp(): void {
         global $CFG;
         // Use our special testable fixture plugin.
         $CFG->antiviruses = 'testable';
@@ -42,7 +42,7 @@ class core_antivirus_testcase extends advanced_testcase {
         touch($this->tempfile);
     }
 
-    protected function tearDown() {
+    protected function tearDown(): void {
         @unlink($this->tempfile);
     }
 
@@ -82,7 +82,68 @@ class core_antivirus_testcase extends advanced_testcase {
         $this->expectException(\core\antivirus\scanner_exception::class);
         $this->assertEmpty(\core\antivirus\manager::scan_file($this->tempfile, 'FOUND', true));
         // File expected to be deleted.
-        $this->assertFileNotExists($this->tempfile);
+        $this->assertFileDoesNotExist($this->tempfile);
+    }
+
+    public function test_manager_send_message_to_user_email_scan_file_virus() {
+        $sink = $this->redirectEmails();
+        $exception = null;
+        try {
+            set_config('notifyemail', 'fake@example.com', 'antivirus');
+            \core\antivirus\manager::scan_file($this->tempfile, 'FOUND', true);
+        } catch (\core\antivirus\scanner_exception $ex) {
+            $exception = $ex;
+        }
+        $this->assertNotEmpty($exception);
+        $result = $sink->get_messages();
+        $this->assertCount(1, $result);
+        $this->assertStringContainsString('fake@example.com', $result[0]->to);
+        $sink->close();
+    }
+
+    public function test_manager_send_message_to_admin_email_scan_file_virus() {
+        $sink = $this->redirectMessages();
+        $exception = null;
+        try {
+            \core\antivirus\manager::scan_file($this->tempfile, 'FOUND', true);
+        } catch (\core\antivirus\scanner_exception $ex) {
+            $exception = $ex;
+        }
+        $this->assertNotEmpty($exception);
+        $result = $sink->get_messages();
+        $admins = array_keys(get_admins());
+        $this->assertCount(1, $admins);
+        $this->assertCount(1, $result);
+        $this->assertEquals($result[0]->useridto, reset($admins));
+        $sink->close();
+    }
+
+    public function test_manager_quarantine_file_virus() {
+        try {
+            set_config('enablequarantine', true, 'antivirus');
+            \core\antivirus\manager::scan_file($this->tempfile, 'FOUND', true);
+        } catch (\core\antivirus\scanner_exception $ex) {
+            $exception = $ex;
+        }
+        $this->assertNotEmpty($exception);
+        // Quarantined files.
+        $quarantinedfiles = \core\antivirus\quarantine::get_quarantined_files();
+        $this->assertEquals(1, count($quarantinedfiles));
+        // Clean up.
+        \core\antivirus\quarantine::clean_up_quarantine_folder(time());
+        $quarantinedfiles = \core\antivirus\quarantine::get_quarantined_files();
+        $this->assertEquals(0, count($quarantinedfiles));
+    }
+
+    public function test_manager_none_quarantine_file_virus() {
+        try {
+            \core\antivirus\manager::scan_file($this->tempfile, 'FOUND', true);
+        } catch (\core\antivirus\scanner_exception $ex) {
+            $exception = $ex;
+        }
+        $this->assertNotEmpty($exception);
+        $quarantinedfiles = \core\antivirus\quarantine::get_quarantined_files();
+        $this->assertEquals(0, count($quarantinedfiles));
     }
 
     public function test_manager_scan_data_no_virus() {
@@ -99,5 +160,70 @@ class core_antivirus_testcase extends advanced_testcase {
         // Run mock scanning.
         $this->expectException(\core\antivirus\scanner_exception::class);
         $this->assertEmpty(\core\antivirus\manager::scan_data('FOUND'));
+    }
+
+    public function test_manager_send_message_to_user_email_scan_data_virus() {
+        $sink = $this->redirectEmails();
+        set_config('notifyemail', 'fake@example.com', 'antivirus');
+        $exception = null;
+        try {
+            \core\antivirus\manager::scan_data('FOUND');
+        } catch (\core\antivirus\scanner_exception $ex) {
+            $exception = $ex;
+        }
+        $this->assertNotEmpty($exception);
+        $result = $sink->get_messages();
+        $this->assertCount(1, $result);
+        $this->assertStringContainsString('fake@example.com', $result[0]->to);
+        $sink->close();
+    }
+
+    public function test_manager_send_message_to_admin_email_scan_data_virus() {
+        $sink = $this->redirectMessages();
+        $exception = null;
+        try {
+            \core\antivirus\manager::scan_data('FOUND');
+        } catch (\core\antivirus\scanner_exception $ex) {
+            $exception = $ex;
+        }
+        $this->assertNotEmpty($exception);
+        $result = $sink->get_messages();
+        $admins = array_keys(get_admins());
+        $this->assertCount(1, $admins);
+        $this->assertCount(1, $result);
+        $this->assertEquals($result[0]->useridto, reset($admins));
+        $sink->close();
+    }
+
+    public function test_manager_quarantine_data_virus() {
+        set_config('enablequarantine', true, 'antivirus');
+        $exception = null;
+        try {
+            \core\antivirus\manager::scan_data('FOUND');
+        } catch (\core\antivirus\scanner_exception $ex) {
+            $exception = $ex;
+        }
+        $this->assertNotEmpty($exception);
+        // Quarantined files.
+        $quarantinedfiles = \core\antivirus\quarantine::get_quarantined_files();
+        $this->assertEquals(1, count($quarantinedfiles));
+        // Clean up.
+        \core\antivirus\quarantine::clean_up_quarantine_folder(time());
+        $quarantinedfiles = \core\antivirus\quarantine::get_quarantined_files();
+        $this->assertEquals(0, count($quarantinedfiles));
+    }
+
+
+    public function test_manager_none_quarantine_data_virus() {
+        $exception = null;
+        try {
+            \core\antivirus\manager::scan_data('FOUND');
+        } catch (\core\antivirus\scanner_exception $ex) {
+            $exception = $ex;
+        }
+        $this->assertNotEmpty($exception);
+        // No Quarantined files.
+        $quarantinedfiles = \core\antivirus\quarantine::get_quarantined_files();
+        $this->assertEquals(0, count($quarantinedfiles));
     }
 }

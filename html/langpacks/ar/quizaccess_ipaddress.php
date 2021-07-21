@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_ipaddress', language 'ar', version '3.8'.
+ * Strings for component 'quizaccess_ipaddress', language 'ar', version '3.11'.
  *
  * @package     quizaccess_ipaddress
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'نظام الدخول للامتحان بـ IP';
-$string['privacy:metadata'] = 'المكون الإضافي IP address quiz access rule لا يخزن أيّ بيانات شخصية.';
-$string['subnetwrong'] = 'الوصول لهذا الاختبار من مواقع معينة، و هذا الكمبيوتر لم يكن على قائمة المواقع المسموح بها.';
+$string['pluginname'] = 'قاعدة الوصول للاختبار بعنوان بروتوكول الانترنت IP';
+$string['privacy:metadata'] = 'إن ملحق قاعدة الوصول للاختبار بعنوان بروتوكول الانترنت IP لا يخزن أي بيانات شخصية.';
+$string['subnetwrong'] = 'هذا الاختبار لا يمكن الوصول إليه إلا من مواقع معينة، وهذا الكمبيوتر ليس على القائمة المسموح بها.';

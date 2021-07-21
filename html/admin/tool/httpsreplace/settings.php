@@ -26,10 +26,11 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($hassiteconfig) {
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2018.06.12  @svallde2
-    if (get_protected_agora() ) {
-        //************ FI
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2018.06.12 @svallde2
+    if (get_protected_agora()) {
+    // ************ FI
+
     $pluginname = get_string('pluginname', 'tool_httpsreplace');
     $url = $CFG->wwwroot.'/'.$CFG->admin.'/tool/httpsreplace/index.php';
     $ADMIN->add('security', new admin_externalpage('toolhttpsreplace', $pluginname, $url, 'moodle/site:config', true));
@@ -42,8 +43,9 @@ if ($hassiteconfig) {
             new lang_string('toolintro', 'tool_httpsreplace', $httpsreplaceurl)
         )
     );
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2018.06.12  @svallde2
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2018.06.12 @svallde2
     }
-    //************ FI
+    // ************ FI
 }

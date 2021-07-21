@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'en', version '3.8'.
+ * Strings for component 'license', language 'en', version '3.11'.
  *
  * @package     license
  * @category    string
@@ -26,11 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allrightsreserved'] = 'All rights reserved';
+$string['cannotdeletecore'] = 'Cannot delete a standard licence';
+$string['cannotdeletelicenseinuse'] = 'Cannot delete a licence which is currently assigned to one or more files';
 $string['cc'] = 'Creative Commons';
 $string['cc-nc'] = 'Creative Commons - No Commercial';
 $string['cc-nc-nd'] = 'Creative Commons - No Commercial NoDerivs';
 $string['cc-nc-sa'] = 'Creative Commons - No Commercial ShareAlike';
 $string['cc-nd'] = 'Creative Commons - NoDerivs';
 $string['cc-sa'] = 'Creative Commons - ShareAlike';
+$string['licensenotfoundshortname'] = 'Cannot find a licence with the short name \'{$a}\'';
+$string['missinglicensesortorder'] = 'Cannot set licence order, one or more installed licences is missing from new order';
 $string['public'] = 'Public domain';
-$string['unknown'] = 'Other';
+$string['unknown'] = 'Licence not specified';

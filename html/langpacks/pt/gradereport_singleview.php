@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'pt', version '3.8'.
+ * Strings for component 'gradereport_singleview', language 'pt', version '3.11'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -52,6 +52,7 @@ $string['override'] = 'Ajustar';
 $string['overrideall'] = 'Ajustar todas as notas';
 $string['overridefor'] = 'Ajustar para {$a}';
 $string['overridenone'] = 'Não ajustar nenhuma nota';
+$string['overridenoneconfirm'] = 'Está preste a desativar todas as substituições de notas. Esta ação irá apagar todas as notas substituídas anteriormente serão. Tem a certeza de que pretende continuar?';
 $string['pluginname'] = 'Vista simples';
 $string['privacy:metadata'] = 'O Relatório de vista simples mostra apenas dados armazenados noutros locais';
 $string['save'] = 'Guardar';

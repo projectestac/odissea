@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_progress', language 'pt', version '3.8'.
+ * Strings for component 'report_progress', language 'pt', version '3.11'.
  *
  * @package     report_progress
  * @category    string
@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityorder'] = 'Ordem das atividades';
+$string['allactivitiesandresources'] = 'Todas as atividades e recursos';
+$string['alphabetical'] = 'Alfabética';
+$string['include'] = 'Incluir';
+$string['orderincourse'] = 'Ordem da disciplina';
 $string['page-report-progress-index'] = 'Relatório de conclusão das atividades';
 $string['page-report-progress-user'] = 'Relatório de conclusão das atividades do utilizador';
 $string['page-report-progress-x'] = 'Qualquer relatório de conclusão das atividades';

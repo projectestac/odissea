@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'de', version '3.8'.
+ * Strings for component 'page', language 'de', version '3.11'.
  *
  * @package     page
  * @category    string
@@ -44,11 +44,16 @@ $string['legacyfiles'] = 'Migration einer alten Kursdatei';
 $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Beendet';
 $string['modulename'] = 'Textseite';
-$string['modulename_help'] = 'Auf einer Textseite stellen Sie Inhalte für die Teilnehmer/innen zusammen. Die Seite kann Texte, Bilder, Audiodateien, Videos und Links enthalten.
+$string['modulename_help'] = 'Auf einer Textseite stellen Sie Inhalte für die Teilnehmer/innen zusammen. Die Seite kann Texte, Bilder, Audiodateien, Videos und Links, und eingebetteten Code, wie z.B. Google Maps, enthalten.
 
 Die Textseite ist einfacher zu bearbeiten als eine hochgeladene Datei. Bei der Nutzung von mobilen Endgeräten kann der Inhalt besser dargestellt werden.
 
-Alternative: Umfangreiche Inhalte können mit dem Modul \'Buch\' auf mehreren Seiten verteilt und gegliedert werden.';
+Alternative: Umfangreiche Inhalte können mit dem Modul \'Buch\' auf mehreren Seiten verteilt und gegliedert werden.
+
+Eine Textseite kann verwendet werden
+
+* Zur Anzeige der Teilnahmebedingungen eines Kurses oder einer Zusammenfassung des Lehrplans
+* Um mehrere Videos oder Audiodateien zusammen mit einem erläuternden Text einzubetten';
 $string['modulenameplural'] = 'Textseiten';
 $string['optionsheader'] = 'Optionen';
 $string['page-mod-page-x'] = 'Jede Textseite';

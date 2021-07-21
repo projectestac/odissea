@@ -129,11 +129,29 @@ class mod_lti_edit_types_form extends moodleform {
                 $mform->setType('lti_clientid', PARAM_TEXT);
             }
 
-            $mform->addElement('textarea', 'lti_publickey', get_string('publickey', 'lti'), array('rows' => 8, 'cols' => 60));
+            $keyoptions = [
+                LTI_RSA_KEY => get_string('keytype_rsa', 'lti'),
+                LTI_JWK_KEYSET => get_string('keytype_keyset', 'lti'),
+            ];
+            $mform->addElement('select', 'lti_keytype', get_string('keytype', 'lti'), $keyoptions);
+            $mform->setType('lti_keytype', PARAM_TEXT);
+            $mform->addHelpButton('lti_keytype', 'keytype', 'lti');
+            $mform->setDefault('lti_keytype', LTI_JWK_KEYSET);
+            $mform->hideIf('lti_keytype', 'lti_ltiversion', 'neq', LTI_VERSION_1P3);
+
+            $mform->addElement('textarea', 'lti_publickey', get_string('publickey', 'lti'), ['rows' => 8, 'cols' => 60]);
             $mform->setType('lti_publickey', PARAM_TEXT);
             $mform->addHelpButton('lti_publickey', 'publickey', 'lti');
+            $mform->hideIf('lti_publickey', 'lti_keytype', 'neq', LTI_RSA_KEY);
             $mform->hideIf('lti_publickey', 'lti_ltiversion', 'neq', LTI_VERSION_1P3);
             $mform->setForceLtr('lti_publickey');
+
+            $mform->addElement('text', 'lti_publickeyset', get_string('publickeyset', 'lti'), ['size' => '64']);
+            $mform->setType('lti_publickeyset', PARAM_TEXT);
+            $mform->addHelpButton('lti_publickeyset', 'publickeyset', 'lti');
+            $mform->hideIf('lti_publickeyset', 'lti_keytype', 'neq', LTI_JWK_KEYSET);
+            $mform->hideIf('lti_publickeyset', 'lti_ltiversion', 'neq', LTI_VERSION_1P3);
+            $mform->setForceLtr('lti_publickeyset');
 
             $mform->addElement('text', 'lti_initiatelogin', get_string('initiatelogin', 'lti'), array('size' => '64'));
             $mform->setType('lti_initiatelogin', PARAM_URL);
@@ -196,9 +214,8 @@ class mod_lti_edit_types_form extends moodleform {
         $mform->addHelpButton('lti_launchcontainer', 'default_launch_container', 'lti');
         $mform->setType('lti_launchcontainer', PARAM_INT);
 
-        $mform->addElement('advcheckbox', 'lti_contentitem', get_string('contentitem', 'lti'));
-        $mform->addHelpButton('lti_contentitem', 'contentitem', 'lti');
-        $mform->setAdvanced('lti_contentitem');
+        $mform->addElement('advcheckbox', 'lti_contentitem', get_string('contentitem_deeplinking', 'lti'));
+        $mform->addHelpButton('lti_contentitem', 'contentitem_deeplinking', 'lti');
         if ($istool) {
             $mform->disabledIf('lti_contentitem', null);
         }
@@ -206,7 +223,6 @@ class mod_lti_edit_types_form extends moodleform {
         $mform->addElement('text', 'lti_toolurl_ContentItemSelectionRequest',
             get_string('toolurl_contentitemselectionrequest', 'lti'), array('size' => '64'));
         $mform->setType('lti_toolurl_ContentItemSelectionRequest', PARAM_URL);
-        $mform->setAdvanced('lti_toolurl_ContentItemSelectionRequest');
         $mform->addHelpButton('lti_toolurl_ContentItemSelectionRequest', 'toolurl_contentitemselectionrequest', 'lti');
         $mform->disabledIf('lti_toolurl_ContentItemSelectionRequest', 'lti_contentitem', 'notchecked');
         if ($istool) {
@@ -253,12 +269,17 @@ class mod_lti_edit_types_form extends moodleform {
             // LTI Extensions.
 
             // Add grading preferences fieldset where the tool is allowed to return grades.
-            $mform->addElement('select', 'lti_acceptgrades', get_string('accept_grades_admin', 'lti'), $options);
+            $gradeoptions = array();
+            $gradeoptions[] = get_string('never', 'lti');
+            $gradeoptions[] = get_string('always', 'lti');
+            $gradeoptions[] = get_string('delegate_tool', 'lti');
+
+            $mform->addElement('select', 'lti_acceptgrades', get_string('accept_grades_admin', 'lti'), $gradeoptions);
             $mform->setType('lti_acceptgrades', PARAM_INT);
             $mform->setDefault('lti_acceptgrades', '2');
             $mform->addHelpButton('lti_acceptgrades', 'accept_grades_admin', 'lti');
 
-            $mform->addElement('checkbox', 'lti_forcessl', '&nbsp;', ' ' . get_string('force_ssl', 'lti'), $options);
+            $mform->addElement('checkbox', 'lti_forcessl', get_string('force_ssl', 'lti'), '', $options);
             $mform->setType('lti_forcessl', PARAM_BOOL);
             if (!empty($CFG->mod_lti_forcessl)) {
                 $mform->setDefault('lti_forcessl', '1');
@@ -272,14 +293,19 @@ class mod_lti_edit_types_form extends moodleform {
                 // Add setup parameters fieldset.
                 $mform->addElement('header', 'setupoptions', get_string('miscellaneous', 'lti'));
 
-                // Adding option to change id that is placed in context_id.
-                $idoptions = array();
-                $idoptions[0] = get_string('id', 'lti');
-                $idoptions[1] = get_string('courseid', 'lti');
+                $options = array(
+                    LTI_DEFAULT_ORGID_SITEID => get_string('siteid', 'lti'),
+                    LTI_DEFAULT_ORGID_SITEHOST => get_string('sitehost', 'lti'),
+                );
 
-                $mform->addElement('text', 'lti_organizationid', get_string('organizationid', 'lti'));
+                $mform->addElement('select', 'lti_organizationid_default', get_string('organizationid_default', 'lti'), $options);
+                $mform->setType('lti_organizationid_default', PARAM_TEXT);
+                $mform->setDefault('lti_organizationid_default', LTI_DEFAULT_ORGID_SITEID);
+                $mform->addHelpButton('lti_organizationid_default', 'organizationid_default', 'lti');
+
+                $mform->addElement('text', 'lti_organizationid', get_string('organizationidguid', 'lti'));
                 $mform->setType('lti_organizationid', PARAM_TEXT);
-                $mform->addHelpButton('lti_organizationid', 'organizationid', 'lti');
+                $mform->addHelpButton('lti_organizationid', 'organizationidguid', 'lti');
 
                 $mform->addElement('text', 'lti_organizationurl', get_string('organizationurl', 'lti'));
                 $mform->setType('lti_organizationurl', PARAM_URL);

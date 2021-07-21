@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ru', version '3.8'.
+ * Strings for component 'quiz_overview', language 'ru', version '3.11'.
  *
  * @package     quiz_overview
  * @category    string
@@ -56,6 +56,9 @@ $string['pluginname'] = 'Оценки';
 $string['preferencespage'] = 'Настройки только для этой страницы';
 $string['preferencessave'] = 'Сохранить настройки';
 $string['preferencesuser'] = 'Ваши настройки для этого отчета';
+$string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Показывать ли оценки для каждого вопроса.';
+$string['privacy:preference:slotmarks:no'] = 'Оценки не отображаются рядом с вопросом.';
+$string['privacy:preference:slotmarks:yes'] = 'Оценки отображаются рядом с вопросом.';
 $string['regrade'] = 'Переоценить';
 $string['regradeall'] = 'Переоценить все';
 $string['regradealldry'] = 'Пробный прогон переоценки';
@@ -64,9 +67,11 @@ $string['regradealldrydogroup'] = 'Переоценить попытки ({$a->c
 $string['regradealldrygroup'] = 'Пробный прогон полного переоценивания для группы «{$a->groupname}»';
 $string['regradeallgroup'] = 'Полностью переоценить группу «{$a->groupname}»';
 $string['regradecomplete'] = 'Переоценивание успешно завершено';
+$string['regradedsuccessfullyxofy'] = 'Успешно переоценено ({$a->done}/{$a->count})';
 $string['regradeheader'] = 'Переоценивание';
 $string['regradeselected'] = 'Переоценить выбранные попытки';
 $string['regradingattemptxofy'] = 'Переоценка попыток ({$a->done}/{$a->count})';
+$string['regradingattemptxofywithdetails'] = 'Переоценивание попыток ({$a->done}/{$a->count}) - Попытка {$a->attemptnum} от {$a->name} (id {$a->attemptid})';
 $string['show'] = 'Включить';
 $string['showattempts'] = 'Только показать / скачать попытки';
 $string['showdetailedmarks'] = 'Баллы для каждого вопроса';

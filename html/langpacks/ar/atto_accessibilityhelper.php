@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilityhelper', language 'ar', version '3.8'.
+ * Strings for component 'atto_accessibilityhelper', language 'ar', version '3.11'.
  *
  * @package     atto_accessibilityhelper
  * @category    string
@@ -31,7 +31,7 @@ $string['liststyles'] = 'أنماط للجزء المحدد:';
 $string['noimages'] = 'لا يوجد صور:';
 $string['nolinks'] = 'لا يوجد روابط';
 $string['nostyles'] = 'لا يوجد أنماط';
-$string['pluginname'] = 'مساعد ترويسة الشاشة';
-$string['privacy:metadata'] = 'لا يقوم الملحق الإضافي atto_accessibilityhelper بتخزين أيّ بيانات شخصية.';
+$string['pluginname'] = 'مساعد قارئ الشاشة';
+$string['privacy:metadata'] = 'إن ملحق atto_accessibilityhelper لا يخزن أي بيانات شخصية.';
 $string['selectimage'] = 'حدد الصورة';
 $string['selectlink'] = 'حدد الرابط';

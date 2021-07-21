@@ -44,11 +44,9 @@ class create_and_clean_temp_stuff extends backup_execution_step {
 }
 
 /**
- * Delete the temp dir used by backup/restore (conditionally),
- * delete old directories and drop temp ids table. Note we delete
- * the directory but not the corresponding log file that will be
- * there for, at least, 1 week - only delete_old_backup_dirs() or cron
- * deletes log files (for easier access to them).
+ * Delete the temp dir used by backup/restore (conditionally) and drop temp ids table.
+ * Note we delete the directory but not the corresponding log file that will be
+ * there until cron cleans it up.
  */
 class drop_and_clean_temp_stuff extends backup_execution_step {
 
@@ -58,7 +56,6 @@ class drop_and_clean_temp_stuff extends backup_execution_step {
         global $CFG;
 
         backup_controller_dbops::drop_backup_ids_temp_table($this->get_backupid()); // Drop ids temp table
-        backup_helper::delete_old_backup_dirs(strtotime('-1 week'));                // Delete > 1 week old temp dirs.
         // Delete temp dir conditionally:
         // 1) If $CFG->keeptempdirectoriesonbackup is not enabled
         // 2) If backup temp dir deletion has been marked to be avoided
@@ -394,6 +391,8 @@ class backup_course_structure_step extends backup_structure_step {
             'defaultgroupingid', 'lang', 'theme',
             'timecreated', 'timemodified',
             'requested',
+            'showactivitydates',
+            'showcompletionconditions',
             'enablecompletion', 'completionstartonenrol', 'completionnotify'));
 
         $category = new backup_nested_element('category', array('id'), array(
@@ -488,7 +487,10 @@ class backup_course_structure_step extends backup_structure_step {
 
         $course->annotate_files('course', 'summary', null);
         $course->annotate_files('course', 'overviewfiles', null);
-        $course->annotate_files('course', 'legacy', null);
+
+        if ($this->get_setting_value('legacyfiles')) {
+            $course->annotate_files('course', 'legacy', null);
+        }
 
         // Return root element ($course)
 
@@ -510,9 +512,11 @@ class backup_enrolments_structure_step extends backup_structure_step {
     }
 
     protected function define_structure() {
+        global $DB;
 
         // To know if we are including users
         $users = $this->get_setting_value('users');
+        $keptroles = $this->task->get_kept_roles();
 
         // Define each element separated
 
@@ -545,9 +549,27 @@ class backup_enrolments_structure_step extends backup_structure_step {
         // Define sources - the instances are restored using the same sortorder, we do not need to store it in xml and deal with it afterwards.
         $enrol->set_source_table('enrol', array('courseid' => backup::VAR_COURSEID), 'sortorder ASC');
 
-        // User enrolments only added only if users included
-        if ($users) {
+        // User enrolments only added only if users included.
+        if (empty($keptroles) && $users) {
             $enrolment->set_source_table('user_enrolments', array('enrolid' => backup::VAR_PARENTID));
+            $enrolment->annotate_ids('user', 'userid');
+        } else if (!empty($keptroles)) {
+            list($insql, $inparams) = $DB->get_in_or_equal($keptroles);
+            $params = array(
+                backup::VAR_CONTEXTID,
+                backup::VAR_PARENTID
+            );
+            foreach ($inparams as $inparam) {
+                $params[] = backup_helper::is_sqlparam($inparam);
+            }
+            $enrolment->set_source_sql(
+               "SELECT ue.*
+                  FROM {user_enrolments} ue
+            INNER JOIN {role_assignments} ra ON ue.userid = ra.userid
+                 WHERE ra.contextid = ?
+                       AND ue.enrolid = ?
+                       AND ra.roleid $insql",
+                $params);
             $enrolment->annotate_ids('user', 'userid');
         }
 
@@ -812,6 +834,9 @@ class backup_badges_structure_step extends backup_structure_step {
     }
 
     protected function define_structure() {
+        global $CFG;
+
+        require_once($CFG->libdir . '/badgeslib.php');
 
         // Define each element separated.
 
@@ -863,7 +888,15 @@ class backup_badges_structure_step extends backup_structure_step {
 
         // Define sources.
 
-        $badge->set_source_table('badge', array('courseid' => backup::VAR_COURSEID));
+        $parametersql = '
+                SELECT *
+                FROM {badge}
+                WHERE courseid = :courseid
+                AND status != ' . BADGE_STATUS_ARCHIVED;
+        $parameterparams = [
+            'courseid' => backup::VAR_COURSEID
+        ];
+        $badge->set_source_sql($parametersql, $parameterparams);
         $criterion->set_source_table('badge_criteria', array('badgeid' => backup::VAR_PARENTID));
         $endorsement->set_source_table('badge_endorsement', array('badgeid' => backup::VAR_PARENTID));
 
@@ -1000,6 +1033,8 @@ class backup_gradebook_structure_step extends backup_structure_step {
             'plusfactor', 'aggregationcoef', 'aggregationcoef2', 'weightoverride',
             'sortorder', 'display', 'decimals', 'hidden', 'locked', 'locktime',
             'needsupdate', 'timecreated', 'timemodified'));
+
+        $this->add_plugin_structure('local', $grade_item, true);
 
         $grade_grades = new backup_nested_element('grade_grades');
         $grade_grade = new backup_nested_element('grade_grade', array('id'), array(
@@ -1225,7 +1260,7 @@ class backup_groups_structure_step extends backup_structure_step {
 
         $group = new backup_nested_element('group', array('id'), array(
             'name', 'idnumber', 'description', 'descriptionformat', 'enrolmentkey',
-            'picture', 'hidepicture', 'timecreated', 'timemodified'));
+            'picture', 'timecreated', 'timemodified'));
 
         $members = new backup_nested_element('group_members');
 
@@ -1328,12 +1363,11 @@ class backup_users_structure_step extends backup_structure_step {
 
         // Then, the fields potentially needing anonymization
         $anonfields = array(
-            'username', 'idnumber', 'email', 'icq', 'skype',
-            'yahoo', 'aim', 'msn', 'phone1',
+            'username', 'idnumber', 'email', 'phone1',
             'phone2', 'institution', 'department', 'address',
             'city', 'country', 'lastip', 'picture',
-            'url', 'description', 'descriptionformat', 'imagealt', 'auth');
-        $anonfields = array_merge($anonfields, get_all_user_name_fields());
+            'description', 'descriptionformat', 'imagealt', 'auth');
+        $anonfields = array_merge($anonfields, \core_user\fields::get_name_fields());
 
         // Add anonymized fields to $userfields with custom final element
         foreach ($anonfields as $field) {
@@ -1451,7 +1485,6 @@ class backup_users_structure_step extends backup_structure_step {
             // Define id annotations (as final)
             $override->annotate_ids('rolefinal', 'roleid');
         }
-
         // Return root element (users)
         return $users;
     }
@@ -1605,6 +1638,55 @@ class backup_course_logstores_structure_step extends backup_structure_step {
         $this->add_subplugin_structure('logstore', $logstore, true, 'tool', 'log');
 
         return $logstores;
+    }
+}
+
+/**
+ * Structure step in charge of constructing the loglastaccess.xml file for the course logs.
+ *
+ * This backup step will backup the logs of the user_lastaccess table.
+ */
+class backup_course_loglastaccess_structure_step extends backup_structure_step {
+
+    /**
+     *  This function creates the structures for the loglastaccess.xml file.
+     *  Expected structure would look like this.
+     *  <loglastaccesses>
+     *      <loglastaccess id=2>
+     *          <userid>5</userid>
+     *          <timeaccess>1616887341</timeaccess>
+     *      </loglastaccess>
+     *  </loglastaccesses>
+     *
+     * @return backup_nested_element
+     */
+    protected function define_structure() {
+
+        // To know if we are including userinfo.
+        $userinfo = $this->get_setting_value('users');
+
+        // Define the structure of logstores container.
+        $lastaccesses = new backup_nested_element('lastaccesses');
+        $lastaccess = new backup_nested_element('lastaccess', array('id'), array('userid', 'timeaccess'));
+
+        // Define build tree.
+        $lastaccesses->add_child($lastaccess);
+
+        // This element should only happen if we are including user info.
+        if ($userinfo) {
+            // Define sources.
+            $lastaccess->set_source_sql('
+                SELECT id, userid, timeaccess
+                  FROM {user_lastaccess}
+                 WHERE courseid = ?',
+                array(backup::VAR_COURSEID));
+
+            // Define userid annotation to user.
+            $lastaccess->annotate_ids('user', 'userid');
+        }
+
+        // Return the root element (lastaccessess).
+        return $lastaccesses;
     }
 }
 
@@ -2738,5 +2820,36 @@ class backup_completion_defaults_structure_step extends backup_structure_step {
         $cc->add_child($defaults);
         return $cc;
 
+    }
+}
+
+/**
+ * Structure step in charge of constructing the contentbank.xml file for all the contents found in a given context
+ */
+class backup_contentbankcontent_structure_step extends backup_structure_step {
+
+    /**
+     * Define structure for content bank step
+     */
+    protected function define_structure() {
+
+        // Define each element separated.
+        $contents = new backup_nested_element('contents');
+        $content = new backup_nested_element('content', ['id'], [
+            'name', 'contenttype', 'instanceid', 'configdata', 'usercreated', 'usermodified', 'timecreated', 'timemodified']);
+
+        // Build the tree.
+        $contents->add_child($content);
+
+        // Define sources.
+        $content->set_source_table('contentbank_content', ['contextid' => backup::VAR_CONTEXTID]);
+
+        // Define annotations.
+        $content->annotate_ids('user', 'usercreated');
+        $content->annotate_ids('user', 'usermodified');
+        $content->annotate_files('contentbank', 'public', 'id');
+
+        // Return the root element (contents).
+        return $contents;
     }
 }

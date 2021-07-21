@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'sv', version '3.8'.
+ * Strings for component 'gradeimport_xml', language 'sv', version '3.11'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -34,6 +34,10 @@ $string['errincorrectuseridnumber'] = 'Fel - id-numret \'{$a}\' från importfile
 $string['error'] = 'Det uppstår fel';
 $string['errorduringimport'] = 'Ett fel inträffade när vid försök av import: {$a}';
 $string['fileurl'] = 'URL till fjärrfil';
+$string['fileurl_help'] = 'URL-fältet för fjärrfilen är till för att hämta data från en fjärrserver, till exempel ett studentinformationssystem.';
+$string['importxml'] = 'XML-import';
+$string['importxml_help'] = 'Resultat kan importeras via en XML-fil som innehåller användar-ID-nummer och aktivitets-ID nummer. Om du vill hämta rätt format exporterar du först vissa resultat till XML-filen och öppnar sedan filen.';
 $string['pluginname'] = 'XML-fil';
+$string['privacy:metadata'] = 'Pluginmodulen Importera betyg från XML lagrar inga personuppgifter.';
 $string['xml:publish'] = 'Publicera betyg som importerats från XML';
 $string['xml:view'] = 'Importera betyg från XML';

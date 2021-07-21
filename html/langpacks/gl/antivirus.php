@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'gl', version '3.8'.
+ * Strings for component 'antivirus', language 'gl', version '3.11'.
  *
  * @package     antivirus
  * @category    string
@@ -33,4 +33,3 @@ $string['datastream'] = 'Datos';
 $string['emailsubject'] = '{$a} :: Notificación de antivirus';
 $string['privacy:metadata'] = 'O sistema de antivirus non almacena ningún dato persoal.';
 $string['virusfound'] = '{$a->item}, foi examinado por un antivirus e detectouse que está infectado!';
-$string['virusfounduser'] = 'O ficheiro que vostede vén de enviar, {$a->filename}, foi examinado por un antivirus e detectouse que está infectado. NON foi posíbel completar o envío.';

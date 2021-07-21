@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_noautolink', language 'sv', version '3.8'.
+ * Strings for component 'atto_noautolink', language 'sv', version '3.11'.
  *
  * @package     atto_noautolink
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Förhindra automatisk länkning';
+$string['privacy:metadata'] = 'Pluginmodulen atto_noautolink lagrar ingen personinformation.';

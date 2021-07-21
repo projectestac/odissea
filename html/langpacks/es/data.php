@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'es', version '3.8'.
+ * Strings for component 'data', language 'es', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -57,7 +57,7 @@ $string['blank'] = 'En blanco';
 $string['buttons'] = 'Acciones';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
 $string['calendarend'] = 'Base de datos {$a} cerrada';
-$string['calendarstart'] = 'Base de datos {$a} abierta';
+$string['calendarstart'] = '{$a} abre';
 $string['cancel'] = 'Cancelar';
 $string['cannotaccesspresentsother'] = 'No se le permite acceder a los ajustes previos de otros usuarios';
 $string['cannotadd'] = 'No se pueden añadir entradas';
@@ -122,12 +122,11 @@ $string['data:manageuserpresets'] = 'Gestionar ajustes previos de plantillas';
 $string['data:rate'] = 'Calificar entradas';
 $string['data:readentry'] = 'Leer entradas';
 $string['data:view'] = 'Ver actividad de la base de datos';
-$string['data:viewallratings'] = 'Ver todas las calificaciones emitidas por los usuarios';
+$string['data:viewallratings'] = 'Ver todas las valoraciones emitidas por los usuarios';
 $string['data:viewalluserpresets'] = 'Ver ajustes previos de todos los usuarios';
-$string['data:viewanyrating'] = 'Ver el total de calificaciones que alguien recibió
-	';
+$string['data:viewanyrating'] = 'Ver el total de valoraciones que alguien recibió';
 $string['data:viewentry'] = 'Ver entradas';
-$string['data:viewrating'] = 'Ver calificación total recibida';
+$string['data:viewrating'] = 'Ver la valoración total recibida';
 $string['data:writeentry'] = 'Escribir entradas';
 $string['date'] = 'Fecha';
 $string['dateentered'] = 'Fecha introducida';
@@ -276,14 +275,14 @@ $string['modulename_help'] = 'El módulo de actividad de base de datos permite a
 
 La presentación visual de la información al listar, ver o editar las entradas de la base de datos se controla mediante plantillas de base de datos. Las actividades de base de datos pueden ser compartidos entre los cursos como opción preestablecida de manera que un profesor también puede importar y exportar las entradas de base de datos.
 
-Si el filtro de base de datos "auto enlace" está activo, cualquier entrada de la base de datos podrá ser enlazada automáticamente desde donde las palabras o frases aparecen dentro en el curso.
+Si el filtro de base de datos "auto enlace" está activo, cualquier entrada de la base de datos  será enlazada automáticamente cuando sus palabras o frases aparezcan dentro en el curso.
 
 Un profesor puede permitir comentarios en las entradas. Las entradas también pueden se calificadas por profesores u otros estudiantes (evaluación por pares). Las calificaciones se agregarán para formar una calificación final que se registrará en el libro de calificaciones.
 
-Las actividades de base de datos tienen muchos usos, como por ejemplo
+Las actividades de base de datos tienen muchos usos, como por ejemplo:
 
-* Una colección de enlaces de colaboración web, libros, reseñas de libros, referencias de revistas, etc
-* Para la visualización de fotos, carteles, sitios web o poemas de los estudiantes, ya así poder ser comentados por otros estudiantes.';
+* Armar una colección colaborativa de enlaces web, libros, reseñas de libros, referencias de revistas, etc
+* Visualizar fotos, carteles, sitios web o poemas de los estudiantes, que puedan ser comentados por otros estudiantes.';
 $string['modulenameplural'] = 'Bases de datos';
 $string['more'] = 'Más';
 $string['moreurl'] = 'Más URL';
@@ -355,6 +354,7 @@ $string['rows'] = 'filas';
 $string['rssglobaldisabled'] = 'Deshabilitado. Vea las variables de configuración';
 $string['rsstemplate'] = 'Plantilla RSS';
 $string['rsstitletemplate'] = 'Plantilla de título RSS';
+$string['rsstype'] = 'Canal RSS para esta actividad';
 $string['save'] = 'Guardar';
 $string['saveandadd'] = 'Guardar y añadir otro';
 $string['saveandview'] = 'Guardar y ver';

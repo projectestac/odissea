@@ -176,13 +176,14 @@ class qbehaviour_interactive_walkthrough_test extends qbehaviour_walkthrough_tes
                 $this->get_contains_partcorrect_expectation());
 
         $autogradedstep = $this->get_step($this->get_step_count() - 2);
-        $this->assertEquals($autogradedstep->get_fraction(), 0.6666667, '', 0.0000001);
+        $this->assertEqualsWithDelta($autogradedstep->get_fraction(), 0.6666667, 0.0000001);
     }
 
     public function test_interactive_finish_when_try_again_showing() {
 
         // Create a multichoice single question.
         $mc = test_question_maker::make_a_multichoice_single_question();
+        $mc->showstandardinstruction = true;
         $mc->hints = array(
             new question_hint_with_parts(0, 'This is the first hint.', FORMAT_HTML, false, false),
         );
@@ -338,6 +339,7 @@ class qbehaviour_interactive_walkthrough_test extends qbehaviour_walkthrough_tes
 
         // Create a multichoice multiple question.
         $mc = test_question_maker::make_a_multichoice_multi_question();
+        $mc->showstandardinstruction = true;
         $mc->hints = array(
             new question_hint_with_parts(0, 'This is the first hint.', FORMAT_HTML, true, true),
             new question_hint_with_parts(0, 'This is the second hint.', FORMAT_HTML, true, true),

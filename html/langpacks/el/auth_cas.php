@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'el', version '3.8'.
+ * Strings for component 'auth_cas', language 'el', version '3.11'.
  *
  * @package     auth_cas
  * @category    string
@@ -37,14 +37,14 @@ $string['auth_cas_auth_user_create'] = 'Create users externally';
 $string['auth_cas_baseuri'] = 'URI του εξυπηρετητή (τίποτα αν δεν υπάρχει baseURI)<br />Για παράδειγμα, εάν ο εξυπηρετητής CAS απαντάει στο host.domaine.fr/CAS/ τότε <br />cas_baseuri = CAS/';
 $string['auth_cas_baseuri_key'] = 'Base URI';
 $string['auth_cas_broken_password'] = 'Δεν μπορείτε να προχωρήσετε χωρίς να αλλάξετε τον κωδικό πρόσβασής σας, ωστόσο δεν υπάρχει διαθέσιμη σελίδα για την αλλαγή του. Παρακαλούμε επικοινωνήστε με τον διαχειριστή του Moodle.';
-$string['auth_cas_cantconnect'] = 'To LDAP μέρος του αρθρώματος CAS δεν μπορεί να συνδεθεί στον εξυπηρετητή: {$a}';
+$string['auth_cas_cantconnect'] = 'Το LDAP μέρος του αρθρώματος CAS δεν μπορεί να συνδεθεί στον εξυπηρετητή: {$a}';
 $string['auth_cas_casversion'] = 'Έκδοση πρωτοκόλλου CAS';
 $string['auth_cas_certificate_check'] = 'Επιλέξτε «ναι» αν θέλετε να επικυρώσετε το πιστοποιητικό του εξυπηρετητή';
 $string['auth_cas_certificate_check_key'] = 'Επικύρωση εξυπηρετητή';
 $string['auth_cas_certificate_path'] = 'Μονοπάτι του CA (Certificate Authority: Αρχή έκδοσης πιστοποιητικών για ασφαλείς συνδέσεις στο Διαδίκτυο) αρχείου αλυσίδας (σε μορφότυπο PEM) για επικύρωση του πιστοποιητικού εξυπηρετητή.';
 $string['auth_cas_certificate_path_empty'] = 'Αν ενεργοποιήσετε την επικύρωση εξυπηρετητή, πρέπει να καθορίσετε μια διαδρομή πιστοποιητικού';
 $string['auth_cas_certificate_path_key'] = 'Μονοπάτι πιστοποιητικού';
-$string['auth_cas_changepasswordurl'] = 'URL Αλλαγής Κωδικού Πρόσβασης';
+$string['auth_cas_changepasswordurl'] = 'Διεύθυνση URL αλλαγής Κωδικού Πρόσβασης';
 $string['auth_cas_create_user'] = 'Ενεργοποιήστε το εάν επιθυμείτε να εισάγετε CAS-αυθεντικοποιημένους χρήστες στην βάση δεδομένων του Moodle. Εάν όχι, τότε μόνο οι χρήστες που είναι ήδη στη βάση μπορούν να συνδεθούν.';
 $string['auth_cas_create_user_key'] = 'Δημιουργία χρήστη';
 $string['auth_cas_curl_ssl_version'] = 'Η έκδοση SSL (2 ή 3) προς χρήση. Από προεπιλογή, η PHP θα προσπαθήσει να την προσδιορίσει μόνη της, αν και σε ορισμένες περιπτώσεις πρέπει να οριστεί χειροκίνητα.';
@@ -59,7 +59,7 @@ $string['auth_cas_curl_ssl_version_key'] = 'cURL Έκδοση SSL';
 $string['auth_cas_enabled'] = 'Ενεργοποιήστε αν θέλετε να χρησιμοποιήσετε αυθεντικοποίηση CAS.';
 $string['auth_cas_hostname'] = 'Το όνομα Η/Υ (hostname) του CAS εξυπηρετητή <br /> π.χ.: host.domain.fr';
 $string['auth_cas_hostname_key'] = 'Διεύθυνση ή DNS όνομα του Η/Υ (hostname)';
-$string['auth_cas_invalidcaslogin'] = 'Λυπούμαστε! Η σύνδεση απέτυχε. Δεν εξουσιοδοτηθήκατε.';
+$string['auth_cas_invalidcaslogin'] = 'Λυπούμαστε! Η σύνδεση απέτυχε. Αδυναμία εξουσιοδότησης.';
 $string['auth_cas_language'] = 'Επιλογή γλώσσας για σελίδες αυθεντικοποίησης';
 $string['auth_cas_language_key'] = 'Γλώσσα';
 $string['auth_cas_logincas'] = 'Πρόσβαση ασφαλούς σύνδεσης';

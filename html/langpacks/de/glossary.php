@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'de', version '3.8'.
+ * Strings for component 'glossary', language 'de', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -90,6 +90,7 @@ $string['commentdeleted'] = 'Der Kommentar wurde gelöscht.';
 $string['comments'] = 'Kommentare';
 $string['commentson'] = 'Kommentare eingeschaltet';
 $string['commentupdated'] = 'Der Kommentar wurde geändert.';
+$string['completiondetail:entries'] = 'Einträge hinzufügen: {$a}';
 $string['completionentries'] = 'Teilnehmer/innen müssen Einträge anlegen:';
 $string['completionentriesdesc'] = 'Teilnehmer/in muss mindestens {$a} Einträge anlegen';
 $string['completionentriesgroup'] = 'Einträge notwendig';
@@ -317,7 +318,7 @@ $string['rssarticles_help'] = 'Diese Option legt fest, wie viele neue Glossarbeg
 $string['rsssubscriberss'] = 'RSS Feed-Anzeige für \'{$a}\' Begriffe';
 $string['rsstype'] = 'RSS Feed für dieses Glossar';
 $string['rsstype_help'] = 'Diese Option ermöglicht es, RSS Feeds für dieses Glossar zu aktivieren, wobei im Feed die Begriffe mit oder ohne Autor/in einbezogen werden können.';
-$string['search:activity'] = 'Glossar - Beschreibung';
+$string['search:activity'] = 'Glossar - Aktivitätsinfo';
 $string['search:entry'] = 'Glossar - Einträge';
 $string['searchindefinition'] = 'Volltext-Suche';
 $string['secondaryglossary'] = 'Sekundärglossar';

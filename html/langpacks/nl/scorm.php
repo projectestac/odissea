@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'nl', version '3.8'.
+ * Strings for component 'scorm', language 'nl', version '3.11'.
  *
  * @package     scorm
  * @category    string
@@ -88,6 +88,11 @@ $string['collapsetocwinsize'] = 'Inhoudsopgave dichtklappen wanneer het venster 
 $string['collapsetocwinsizedesc'] = 'Deze instelling laat je de venstergrootte kiezen tot wanneer de inhoudsopgave automatisch ingeklapt moet blijven.';
 $string['compatibilitysettings'] = 'Compatibiliteitsinstellingen';
 $string['completed'] = 'Volledig';
+$string['completiondetail:allscos'] = 'Doe alle delen van deze activiteit';
+$string['completiondetail:completionscore'] = 'Behaal een score van {$a} of meer';
+$string['completiondetail:completionstatuscompleted'] = 'Voltooi de activiteit';
+$string['completiondetail:completionstatuscompletedandpassed'] = 'Voltooi de activiteit en slaag ervoor';
+$string['completiondetail:completionstatuspassed'] = 'Slaag voor de activiteit';
 $string['completionscorerequired'] = 'Vereiste minimumscore';
 $string['completionscorerequired_help'] = 'Het inschakelen van deze instelling zal er voor zorgen dat een gebruiker minstens de minimumscore moet behalen om deze SCORM-activiteit als voltooid te markeren, samen met eventuele andere vereisten voor Voltooide Activiteit.';
 $string['completionscorerequireddesc'] = 'Maximale score van {$a} vereist voor voltooiing.';

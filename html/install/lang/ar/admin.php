@@ -31,12 +31,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clianswerno'] = 'لا';
 $string['cliansweryes'] = 'نعم';
-$string['cliincorrectvalueerror'] = 'خطأ، القيمة "{$a->value}" غير صحيحة من أجل "{$a->option}"';
+$string['cliincorrectvalueerror'] = 'خطأ، القيمة "{$a->value}" غير صحيحة لـ "{$a->option}"';
 $string['cliincorrectvalueretry'] = 'قيمة غير صحيحة، حاول مرة أخرى';
 $string['clitypevalue'] = 'اكتب قيمة';
-$string['clitypevaluedefault'] = 'اكتب قيمة أو اضغط زر الإدخال لاستخدام القيم الافتراضية ({$a})';
+$string['clitypevaluedefault'] = 'أدخل القيمة أو إضغط مفتاح Enter لاستعمال القيمة الافتراضية ({$a})';
 $string['cliunknowoption'] = 'خيارات غير معروفة: {$a} الرجاء استخدام -- خيار المساعدة.';
-$string['cliyesnoprompt'] = 'أدخل (Y) و تعني نعم أو (N) و تعني لا';
-$string['environmentrequireinstall'] = 'يجب تثبيته و تمكينه';
+$string['cliyesnoprompt'] = 'أدخل y (وتعني نعم) أو n (وتعني لا)';
+$string['environmentrequireinstall'] = 'يجب تنصيبه/تمكينه';
 $string['environmentrequireversion'] = 'يتطلب الإصدار {$a->needed}، وأنت تستعمل الإصدار {$a->current}';
 $string['upgradekeyset'] = 'مفتاح التحديث (اتركها فارغة إن لم ترغب بتحديده)';

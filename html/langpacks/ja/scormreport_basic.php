@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_basic', language 'ja', version '3.8'.
+ * Strings for component 'scormreport_basic', language 'ja', version '3.11'.
  *
  * @package     scormreport_basic
  * @category    string

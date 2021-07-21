@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'en', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'en', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -77,9 +77,15 @@ $string['csvdelimiter'] = 'CSV delimiter';
 $string['csvdelimiter_help'] = 'CSV delimiter of the CSV file.';
 $string['csvfileerror'] = 'There is something wrong with the format of the CSV file. Please check the number of headings and columns match, and that the delimiter and file encoding are correct: {$a}';
 $string['csvline'] = 'Line';
+$string['customfieldinvalid'] = 'Custom field \'{$a}\' is empty or contains invalid data';
 $string['defaultvalues'] = 'Default course values';
+$string['defaultvaluescustomfieldcategory'] = 'Default values for \'{$a}\'';
+$string['downloadcontentnotallowed'] = 'Configuring download of course content not allowed';
 $string['encoding'] = 'Encoding';
 $string['encoding_help'] = 'Encoding of the CSV file.';
+$string['errorcannotcreateorupdateenrolment'] = 'Cannot create or update enrolment method \'{$a}\'';
+$string['errorcannotdeleteenrolment'] = 'Cannot delete enrolment method \'{$a}\'';
+$string['errorcannotdisableenrolment'] = 'Cannot disable enrolment method \'{$a}\'';
 $string['errorwhiledeletingcourse'] = 'Error while deleting the course';
 $string['errorwhilerestoringcourse'] = 'Error while restoring the course';
 $string['generatedshortnamealreadyinuse'] = 'The generated shortname is already in use';
@@ -90,6 +96,7 @@ $string['importoptions'] = 'Import options';
 $string['invalidbackupfile'] = 'Invalid backup file';
 $string['invalidcourseformat'] = 'Invalid course format';
 $string['invalidcsvfile'] = 'Invalid input CSV file';
+$string['invaliddownloadcontent'] = 'Invalid download of course content value';
 $string['invalidencoding'] = 'Invalid encoding';
 $string['invalideupdatemode'] = 'Invalid update mode selected';
 $string['invalidfullnametoolong'] = 'The fullname field is limited to {$a} characters';

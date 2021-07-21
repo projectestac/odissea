@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'es', version '3.8'.
+ * Strings for component 'tool_mobile', language 'es', version '3.11'.
  *
  * @package     tool_mobile
  * @category    string
@@ -38,3 +38,15 @@ $string['mobileappconnected'] = 'App para dispositivos móviles conectada.';
 $string['mobileappenabled'] = 'Este sitio tiene activado el acceso desde la app.<br /><a href="{$a}">Descargar la app</a>.';
 $string['mobilecssurl'] = 'CSS';
 $string['mobilenotificationsdisabledwarning'] = 'Las notificaciones Mobile no están habilitadas. Deberían de ser habilitadas en Gestionar salidas de mensaje.';
+$string['qrcodedisabled'] = 'Acceso a través de código QR deshabilitado';
+$string['qrcodeformobileappaccess'] = 'Código QR para el acceso desde la app';
+$string['qrcodeformobileapploginabout'] = 'Escanee el código QR con su app y accederá automáticamente. El código QR expirará en {$a} minutos.';
+$string['qrcodeformobileappurlabout'] = 'Escanee el código QR con su app para rellenar la URL del sitio en su app.';
+$string['qrcodetype'] = 'Acceso por código QR';
+$string['qrcodetype_desc'] = 'Un código QR puede ser facilitado a los usuarios de la app para escanear. Este puede ser usado para rellenar la URL del sitio, o cuando el sitio usa HTTPS, para que el usuario inicie sesión automáticamante sin tener que introducir su nombre de usuario y su contraseña.';
+$string['qrcodetypelogin'] = 'Código QR con inicio de sesión automático';
+$string['qrcodetypeurl'] = 'Código QR con la URL del sitio';
+$string['qrsiteadminsnotallowed'] = 'Por razones de seguridad el inicio de sesión a través de código QR no está permitido para administradores de sitio o si usted ha iniciado sesión como otro usuario.';
+$string['scanqrcode'] = 'Escanear código QR';
+$string['subscriptionfeatures'] = 'Características de suscripción';
+$string['viewqrcode'] = 'Ver código QR';

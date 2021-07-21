@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'fr', version '3.8'.
+ * Strings for component 'quiz', language 'fr', version '3.11'.
  *
  * @package     quiz
  * @category    string
@@ -133,6 +133,7 @@ $string['browsersecurity_help'] = 'Si vous sélectionnez l\'option « Nouvelle 
 * le test démarre uniquement si l\'étudiant possède un navigateur qui accepte le Javascript ;
 * le test démarre dans une nouvelle fenêtre qui couvre entièrement les autres fenêtres et qui ne possède pas de boutons de navigation ;
 * les fonctions telles que copier-coller sont, autant que possible, bloquées pour l\'étudiant.';
+$string['cachedef_overrides'] = 'Informations sur les dérogations utilisateur et de groupe';
 $string['calculated'] = 'Calculée';
 $string['calculatedquestion'] = 'Question calculée non supportée (ligne {$a}). La question sera ignorée';
 $string['cannotcreatepath'] = 'Le fichier ne peut pas être créé ({$a})';
@@ -184,9 +185,17 @@ $string['completedon'] = 'Terminé le';
 $string['completionattemptsexhausted'] = 'Ou toutes les tentatives terminées';
 $string['completionattemptsexhausted_help'] = 'Marquer le test comme terminé lorsque l\'étudiant a épuisé le nombre maximal de tentatives.';
 $string['completionattemptsexhausteddesc'] = 'Achevé si toutes les tentatives disponibles sont épuisées';
+$string['completiondetail:minattempts'] = 'Envoyer des tentatives : {$a}';
+$string['completiondetail:passgrade'] = 'Obtenir une note pour passer';
+$string['completiondetail:passorexhaust'] = 'Obtenir une note minimale ou terminer toutes les tentatives disponibles';
+$string['completionminattempts'] = 'Nombre minimum de tentatives :';
+$string['completionminattemptsdesc'] = 'Nombre minimale de tentatives requises : {$a}';
+$string['completionminattemptserror'] = 'Le nombre minimum de tentatives doit être inférieur ou égal au nombre de tentatives permises.';
+$string['completionminattemptsgroup'] = 'Exiger des tentatives';
 $string['completionpass'] = 'Requiert la note de passage';
 $string['completionpass_help'] = 'Si ce réglage est activé, l\'activité est considérée comme terminée lorsque l\'étudiant reçoit la note pour passer (définie ainsi dans la section Notes des réglages du test) ou une note supérieure.';
 $string['completionpassdesc'] = 'L\'étudiant doit atteindre une note minimale pour achever cette activité';
+$string['completionpassorattemptsexhausteddesc'] = 'Les étudiants doivent obtenir une note minimale ou épuiser toutes les tentatives disponibles pour terminer cette activité';
 $string['configadaptive'] = 'Si cette option est activée, le participant pourra donner plusieurs réponses à une question lors de la même tentative du test.';
 $string['configattemptsallowed'] = 'La restriction du nombre des tentatives des participants est autorisée.';
 $string['configdecimaldigits'] = 'Le nombre de chiffres après la virgule lors de l\'affichage des notes.';
@@ -407,6 +416,7 @@ $string['gradesdeleted'] = 'Notes de tests supprimées';
 $string['gradesofar'] = '{$a->method} : {$a->mygrade} / {$a->quizgrade}.';
 $string['gradetopassmustbeset'] = 'La note pour passer ne peut pas être zéro, car l\'achèvement de ce test requiert une note pour passer. Veuillez indiquer une note non nulle.';
 $string['gradetopassnotset'] = 'Ce test n\'a pas encore de note pour passer. Une telle note peut être définie dans la section Notes des réglages du test.';
+$string['gradetopassoutof'] = 'Note pour passer : {$a->grade} sur {$a->maxgrade}';
 $string['gradingdetails'] = 'Points pour cet envoi : {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'En tenant compte des pénalités précédentes, cela donne <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Cet envoi a reçu une pénalité de {$a}.';
@@ -488,7 +498,7 @@ $string['max'] = 'Max';
 $string['maxmark'] = 'Score maximum';
 $string['messageprovider:attempt_overdue'] = 'Avertir lorsque la tentative de test est en retard';
 $string['messageprovider:confirmation'] = 'Confirmation de l\'envoi de vos propres réponses de tests';
-$string['messageprovider:submission'] = 'Notifications des réponses aux tests';
+$string['messageprovider:submission'] = 'Notifications des tentatives de tests remises par vos étudiants';
 $string['min'] = 'Min';
 $string['minutes'] = 'minutes';
 $string['missingcorrectanswer'] = 'La réponse correcte doit être indiquée';
@@ -609,6 +619,14 @@ $string['overridedeleteusersure'] = 'Voulez-vous vraiment supprimer la dérogati
 $string['overridegroup'] = 'Dérogation de groupe';
 $string['overridegroupeventname'] = '{$a->quiz} - {$a->group}';
 $string['overrides'] = 'Dérogations';
+$string['overridesforquiz'] = 'Dérogations de réglages : {$a}';
+$string['overridesnoneforgroups'] = 'Aucune dérogation de réglages de groupe n\'a été créée pour ce test.';
+$string['overridesnoneforusers'] = 'Aucune dérogation de réglages d\'utilisateur n\'a été créée pour ce test.';
+$string['overridessummary'] = 'Des dérogations de réglages de test sont présentes ({$a})';
+$string['overridessummarygroup'] = 'Groupes : {$a}';
+$string['overridessummarythisgroup'] = 'Des dérogations de réglages de test sont présentes ({$a}) pour ce groupe';
+$string['overridessummaryuser'] = 'Utilisateurs : {$a}';
+$string['overridessummaryyourgroups'] = 'Des dérogations de réglages test sont présentes ({$a}) pour vos groupes';
 $string['overrideuser'] = 'Dérogation utilisateur';
 $string['overrideusereventname'] = '{$a->quiz} - Dérogation';
 $string['page-mod-quiz-attempt'] = 'Page de tentative de test';
@@ -704,17 +722,18 @@ $string['questiontypesetupoptions'] = 'Options pour les types de questions :';
 $string['quiz:addinstance'] = 'Ajouter un test';
 $string['quiz:attempt'] = 'Effectuer des tests';
 $string['quiz:deleteattempts'] = 'Supprimer les tentatives de tests';
-$string['quiz:emailconfirmsubmission'] = 'Recevoir un courriel de confirmation lors de l\'envoi d\'un test';
-$string['quiz:emailnotifysubmission'] = 'Recevoir par courriel notification des tentatives envoyées par les participants';
-$string['quiz:emailwarnoverdue'] = 'Obtenir un message d\'avertissement lorsqu\'une tentative arrive au délai et requiert d\'être envoyé.';
+$string['quiz:emailconfirmsubmission'] = 'Recevoir une confirmation lors de la remise de vos propres tentatives de tests';
+$string['quiz:emailnotifysubmission'] = 'Recevoir une notification lors de la remise des tentatives de tests de vos étudiants';
+$string['quiz:emailwarnoverdue'] = 'Recevoir un message d\'avertissement lorsque votre tentative arrive au délai';
 $string['quiz:grade'] = 'Évaluer manuellement les tests';
 $string['quiz:ignoretimelimits'] = 'Ignorer la limite de temps du test';
 $string['quiz:manage'] = 'Gérer les tests';
-$string['quiz:manageoverrides'] = 'Gérer les dérogations de test';
+$string['quiz:manageoverrides'] = 'Gérer les dérogations de réglages de test';
 $string['quiz:preview'] = 'Prévisualiser les tests';
 $string['quiz:regrade'] = 'Ré-évaluer les tentatives des tests';
 $string['quiz:reviewmyattempts'] = 'Relire ses propres tentatives';
 $string['quiz:view'] = 'Voir les informations des tests';
+$string['quiz:viewoverrides'] = 'Consulter les dérogations de réglages de test';
 $string['quiz:viewreports'] = 'Consulter les rapports des tests';
 $string['quizavailable'] = 'Le test est disponible jusqu\'au {$a}';
 $string['quizclose'] = 'Fermer le test';
@@ -737,6 +756,7 @@ $string['quizopens'] = 'Le test est rendu disponible';
 $string['quizopenwillclose'] = 'Ce test est ouvert et sera fermée le {$a} à';
 $string['quizordernotrandom'] = 'L\'ordre du test n\'est pas mélangé';
 $string['quizorderrandom'] = '* L\'ordre du test est mélangé';
+$string['quizreport'] = 'Rapport de test';
 $string['quizsettings'] = 'Réglages du test';
 $string['quiztimer'] = 'Minuterie';
 $string['quizwillopen'] = 'Ce test sera ouvert le {$a}';
@@ -802,7 +822,7 @@ $string['reportresponses'] = 'Réponses détaillées';
 $string['reports'] = 'Rapports';
 $string['reportshowonly'] = 'Afficher selon les tentatives';
 $string['reportshowonlyfinished'] = 'Afficher au plus une tentative terminée par utilisateur ({$a})';
-$string['reportsimplestat'] = 'Statistique simple';
+$string['reportsimplestat'] = 'Statistiques simples';
 $string['reportusersall'] = 'utilisateurs ayant effectué le test';
 $string['reportuserswith'] = 'utilisateurs inscrits ayant effectué le test';
 $string['reportuserswithorwithout'] = 'utilisateurs inscrits (ayant ou non effectué le test)';

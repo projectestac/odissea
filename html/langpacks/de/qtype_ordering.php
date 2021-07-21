@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ordering', language 'de', version '3.8'.
+ * Strings for component 'qtype_ordering', language 'de', version '3.11'.
  *
  * @package     qtype_ordering
  * @category    string
@@ -29,18 +29,18 @@ $string['absoluteposition'] = 'Absolute Position';
 $string['addmultipleanswers'] = '{$a} weitere Elemente hinzufügen';
 $string['addsingleanswer'] = 'Ein weiteres Element hinzufügen';
 $string['allornothing'] = 'Alles oder nichts';
-$string['answer'] = 'Begriff';
-$string['answerheader'] = 'Auswahl {no}';
-$string['correctorder'] = 'Die korrekte Anordnung für diese Antworten ist folgende:';
+$string['answer'] = 'Element';
+$string['answerheader'] = 'Verschiebbares Element {no}';
+$string['correctorder'] = 'Die richtige Anordnung für diese Elemente ist:';
 $string['defaultanswerformat'] = 'Standard Antwortformat';
-$string['defaultquestionname'] = 'Bringen Sie die folgenden Begriffe in die richtige Reihenfolge.';
+$string['defaultquestionname'] = 'Bringen Sie die folgenden Elemente in die richtige Reihenfolge.';
 $string['duplicatesnotallowed'] = 'Verschiebbare Elemente dürfen nicht dupliziert werden. Die Zeichenfolge "{$a->text}" wird bereits in {$a->item} verwendet.';
 $string['editingordering'] = 'Anordnungsfrage bearbeiten';
 $string['gradedetails'] = 'Bewertungsdetails';
 $string['gradingtype'] = 'Bewertungsart';
-$string['gradingtype_help'] = 'Wählen Sie die Art, wie die Bewertung berechnet wird.
+$string['gradingtype_help'] = 'Wählen Sie die Art, wie die Bewertung berechnet werden soll.
 
-**All or nothing**
+**Alles oder nichts**
 : Nur wenn alle Elemente auf der richtigen Position sind, wird die Maximalpunktzahl vergeben. In allen anderen Fällen gibt es null Punkte.
 
 **Absolute Position**
@@ -84,10 +84,10 @@ $string['numberingstyleabc'] = 'a., b., c., ...';
 $string['numberingstyleiii'] = 'i., ii., iii., ...';
 $string['numberingstylenone'] = 'Keine Nummerierung';
 $string['pluginname'] = 'Anordnung';
-$string['pluginname_help'] = 'Die Begriffe sind zufällig angeordnet. Sie können in eine sinnvolle Reihenfolge durch Verschieben an die korrekte Stelle gebracht werden.';
+$string['pluginname_help'] = 'Die Elemente sind zufällig angeordnet. Sie können in eine sinnvolle Reihenfolge durch Verschieben an die korrekte Stelle gebracht werden.';
 $string['pluginnameadding'] = 'Eine Anordnungsfrage hinzufügen';
 $string['pluginnameediting'] = 'Eine Anordnungsfrage bearbeiten';
-$string['pluginnamesummary'] = 'Ordnen Sie die zufällig angeordneten Begriffe in eine sinnvolle Reihenfolge.';
+$string['pluginnamesummary'] = 'Ordnen Sie die zufällig angeordneten Elemente in eine sinnvolle Reihenfolge.';
 $string['positionx'] = 'Position {$a}';
 $string['privacy:metadata'] = 'Der Fragetyp \'Anordnung\' speichert keine personenbezogenen Daten.';
 $string['relativeallpreviousandnext'] = 'Relativ zu ALLEN vorausgehenden und nachfolgenden Elementen';
@@ -96,15 +96,15 @@ $string['relativenextincludelast'] = 'Relativ zum nächsten Element (letztes Ele
 $string['relativeonepreviousandnext'] = 'Relativ zu sowohl den vorausgehenden als auch den nachfolgenden Elementen';
 $string['relativetocorrect'] = 'Relativ zur richtigen Position';
 $string['removeeditor'] = 'HTML-Editor entfernen';
-$string['removeitem'] = 'Ziehbares Element entfernen';
+$string['removeitem'] = 'Verschiebbares Element entfernen';
 $string['scoredetails'] = 'Dies sind die Bewertungen für jedes Element in dieser Antwort:';
-$string['selectall'] = 'Alle Begriffe auswählen';
-$string['selectcontiguous'] = 'Eine Teilmenge mit zusammenhängenden Begriffen auswählen';
+$string['selectall'] = 'Alle Elemente auswählen';
+$string['selectcontiguous'] = 'Eine Teilmenge mit zusammenhängenden Elementen auswählen';
 $string['selectcount'] = 'Größe der Teilmenge';
-$string['selectcount_help'] = 'Die Anzahl der Begriffe, die dargestellt werden, wenn die Frage im Test erscheint.';
-$string['selectrandom'] = 'Eine zufällige Teilmenge von Begriffen auswählen';
-$string['selecttype'] = 'Begriffauswahltyp';
-$string['selecttype_help'] = 'Bestimmen Sie, ob Sie alle Begriffe angezeigt haben möchten oder nur eine Teilmenge davon.';
+$string['selectcount_help'] = 'Die Anzahl der Elemente, die dargestellt werden, wenn die Frage im Test erscheint.';
+$string['selectrandom'] = 'Eine zufällige Teilmenge von Elementen auswählen';
+$string['selecttype'] = 'Elementauswahltyp';
+$string['selecttype_help'] = 'Bestimmen Sie, ob alle Elemente angezeigt werden sollen oder nur eine Teilmenge davon.';
 $string['showgrading'] = 'Bewertungsdetails';
 $string['showgrading_help'] = 'Sie können wählen, ob der/die Teilnehmer/in bei der Anzeige der Antwort Details zur Berechnung der Punktzahl sehen kann oder nicht.';
 $string['vertical'] = 'Vertikal';

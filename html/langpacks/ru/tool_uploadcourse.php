@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'ru', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'ru', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -33,6 +33,7 @@ $string['allowresets'] = 'Разрешить сброс';
 $string['allowresets_help'] = 'Допускается ли сброс поля.';
 $string['cachedef_helper'] = 'Помощник кэширования';
 $string['cannotdeletecoursenotexist'] = 'Не удается удалить несуществующий курс';
+$string['cannotforcelang'] = 'Не разрешено использовать принудительный язык в этом курсе';
 $string['cannotgenerateshortnameupdatemode'] = 'Не удается создать короткое имя при разрешенном обновлении';
 $string['cannotreadbackupfile'] = 'Не удается прочитать файл резервной копии';
 $string['cannotrenamecoursenotexist'] = 'Не удается переименовать несуществующий курс';
@@ -76,9 +77,15 @@ $string['csvdelimiter'] = 'Разделитель CSV';
 $string['csvdelimiter_help'] = 'Символ разделителя в файле CSV.';
 $string['csvfileerror'] = 'Что-то не так с форматом файла CSV. Пожалуйста, проверьте соответствие заголовков и столбцов; верно ли указаны разделитель и кодировка файла: {$a}';
 $string['csvline'] = 'Строка';
+$string['customfieldinvalid'] = 'Пользовательское поле {$a} пусто или содержит недопустимые данные';
 $string['defaultvalues'] = 'Значения по умолчанию';
+$string['defaultvaluescustomfieldcategory'] = 'Значения по умолчанию для \'{$a}\'';
+$string['downloadcontentnotallowed'] = 'Скачивание контента курса запрещено';
 $string['encoding'] = 'Кодировка';
 $string['encoding_help'] = 'Кодировка файла CSV.';
+$string['errorcannotcreateorupdateenrolment'] = 'Не удалось создать или обновить метод зачисления «{$a}»';
+$string['errorcannotdeleteenrolment'] = 'Не удалось удалить метод зачисления «{$a}»';
+$string['errorcannotdisableenrolment'] = 'Не удалось отключить метод зачисления «{$a}»';
 $string['errorwhiledeletingcourse'] = 'Ошибка при удалении курса';
 $string['errorwhilerestoringcourse'] = 'Ошибка при восстановлении курса';
 $string['generatedshortnamealreadyinuse'] = 'Сгенерированные короткие имена уже используются';
@@ -89,11 +96,15 @@ $string['importoptions'] = 'Настройки импорта';
 $string['invalidbackupfile'] = 'Неверный файл резервной копии';
 $string['invalidcourseformat'] = 'Неверный формат курса';
 $string['invalidcsvfile'] = 'Неверный входной файл CSV';
+$string['invaliddownloadcontent'] = 'Скачивание контента курса не удалось';
 $string['invalidencoding'] = 'Неверная кодировка';
 $string['invalideupdatemode'] = 'Выбран неверный режим обновления';
+$string['invalidfullnametoolong'] = 'Поле полного названия может содержать не более {$a} символов.';
 $string['invalidmode'] = 'Выбран неверный режим';
 $string['invalidroles'] = 'Неверное название роли: {$a}';
 $string['invalidshortname'] = 'Неверное короткое имя';
+$string['invalidshortnametoolong'] = 'Поле краткого названия может содержать не более {$a} символов.';
+$string['invalidvisibilitymode'] = 'Недопустимый режим видимости';
 $string['missingmandatoryfields'] = 'Отсутствуют значения обязательных полей: {$a}';
 $string['missingshortnamenotemplate'] = 'Отсутствует короткое имя и шаблон короткого имени не установлен';
 $string['mode'] = 'Режим загрузки';
@@ -101,6 +112,7 @@ $string['mode_help'] = 'Это позволяет указать, в каком 
 $string['nochanges'] = 'Без изменений';
 $string['pluginname'] = 'Загрузка курса';
 $string['preview'] = 'Предпросмотр';
+$string['privacy:metadata'] = 'Плагин загрузки курсов не хранит никаких личных данных.';
 $string['reset'] = 'Сбросить курс после загрузки';
 $string['reset_help'] = 'Сбрасывать ли курс после его создания/обновления.';
 $string['restoreafterimport'] = 'Восстановить после импорта';

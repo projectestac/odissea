@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_courseoverview', language 'ru', version '3.8'.
+ * Strings for component 'report_courseoverview', language 'ru', version '3.11'.
  *
  * @package     report_courseoverview
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = 'Просматривать отчет «Сводка по курсам»';
 $string['pluginname'] = 'Сводка по курсам';
+$string['privacy:metadata'] = 'Плагин обзора курса не хранит никаких личных данных.';

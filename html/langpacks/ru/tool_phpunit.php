@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_phpunit', language 'ru', version '3.8'.
+ * Strings for component 'tool_phpunit', language 'ru', version '3.11'.
  *
  * @package     tool_phpunit
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Тесты PHPUnit';
+$string['privacy:metadata'] = 'Плагин Тесты PHPUnit не хранит никаких личных данных.';

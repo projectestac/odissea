@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'pt', version '3.8'.
+ * Strings for component 'url', language 'pt', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -34,7 +34,7 @@ $string['configsecretphrase'] = 'Esta frase secreta é usada para produzir um c�
 $string['contentheader'] = 'Conteúdo';
 $string['createurl'] = 'Criar um url';
 $string['displayoptions'] = 'Opções de visualização disponíveis';
-$string['displayselect'] = 'Exibir em';
+$string['displayselect'] = 'Modo de exibição';
 $string['displayselect_help'] = 'Esta configuração, em conjunto com o tipo de ficheiro e possibilidades do navegador, determina a forma como é exibido o ficheiro. As opções podem ser:
 
 * Automático: é selecionada automaticamente a melhor opção para exibir o ficheiro;
@@ -72,7 +72,7 @@ $string['modulenameplural'] = 'URLs';
 $string['page-mod-url-x'] = 'Qualquer página do recurso URL';
 $string['parameterinfo'] = 'parâmetro=variável';
 $string['parametersheader'] = 'Variáveis de URL';
-$string['parametersheader_help'] = 'Algumas variáveis internas Moodle podem ser automaticamente anexadas ao URL. Defina um nome para o parâmetro nas caixas de texto e, em seguida, selecione a variável correspondente.';
+$string['parametersheader_help'] = 'Esta secção permite que passe informações internas como parte do URL. É útil se o URL for uma página da web interativa que recebe parâmetros e para qual pretende passar algo como o nome do utilizador atual, por exemplo. Insira o nome do parâmetro do URL na caixa de texto e selecione a variável do site correspondente.';
 $string['pluginadministration'] = 'Administração do URL';
 $string['pluginname'] = 'URL';
 $string['popupheight'] = 'Altura da janela de pop-up (em pixeis)';

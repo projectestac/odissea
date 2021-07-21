@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'pt', version '3.8'.
+ * Strings for component 'tool_recyclebin', language 'pt', version '3.11'.
  *
  * @package     tool_recyclebin
  * @category    string
@@ -29,7 +29,7 @@ $string['alertdeleted'] = '\'{$a->name}\' foi apagado.';
 $string['alertemptied'] = 'A reciclagem foi esvaziada.';
 $string['alertrestored'] = '\'{$a->name}\' foi restaurado.';
 $string['autohide'] = 'Ocultar automaticamente';
-$string['autohide_desc'] = 'Esconde automaticamente a hiperligação para a reciclagem quando a mesma está vazia.';
+$string['autohide_desc'] = 'Oculta automaticamente a hiperligação para a reciclagem quando a mesma está vazia.';
 $string['categorybinenable'] = 'Ativar reciclagem na categoria';
 $string['categorybinexpiry'] = 'Tempo de vida da disciplina';
 $string['categorybinexpiry_desc'] = 'Por quanto tempo deverá uma disciplina apagada permanecer na reciclagem?';
@@ -51,9 +51,9 @@ $string['invalidcontext'] = 'Contexto fornecido inválido.';
 $string['noitemsinbin'] = 'A reciclagem está vazia.';
 $string['notenabled'] = 'Desculpe, mas a funcionalidade reciclagem foi desativada pelo administrador.';
 $string['pluginname'] = 'Reciclagem';
-$string['privacy:metadata'] = 'O módulo Reciclagem não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Reciclagem não armazena quaisquer dados pessoais.';
 $string['recyclebin:deleteitems'] = 'Apagar itens da reciclagem';
 $string['recyclebin:restoreitems'] = 'Restaurar itens da reciclagem';
 $string['recyclebin:viewitems'] = 'Ver itens da reciclagem';
-$string['taskcleanupcategorybin'] = 'Limpar reciclagem da categoria';
-$string['taskcleanupcoursebin'] = 'Limpar reciclagem da disciplina';
+$string['taskcleanupcategorybin'] = 'Esvaziar reciclagem da categoria';
+$string['taskcleanupcoursebin'] = 'Esvaziar reciclagem da disciplina';

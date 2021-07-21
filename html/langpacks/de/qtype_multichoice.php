@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'de', version '3.8'.
+ * Strings for component 'qtype_multichoice', language 'de', version '3.11'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -66,11 +66,19 @@ $string['pluginname_help'] = 'Teilnehmer/innen wählen zur Beantwortung eine ode
 $string['pluginnameadding'] = 'Multiple-Choice-Frage hinzufügen';
 $string['pluginnameediting'] = 'Multiple-Choice-Frage bearbeiten';
 $string['pluginnamesummary'] = 'Erlaubt eine Auswahl einer oder mehrerer Antworten aus einer vordefinierten Liste.';
-$string['privacy:metadata'] = 'Der Fragentyp \'Multiple-Choice\' speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin "Multiple-Choice-Frage" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['privacy:preference:answernumbering'] = 'Welche Nummerierungsart soll verwendet werden?  (\'1, 2, 3, ...\', \'a, b, c, ...\' etc.).';
+$string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
+$string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
+$string['privacy:preference:showstandardinstruction'] = 'Gibt an, ob Standardanweisungen gezeigt werden.';
+$string['privacy:preference:shuffleanswers'] = 'Gibt an, ob die Antworten automatisch gemischt werden sollen.';
+$string['privacy:preference:single'] = 'Gibt an, ob die Antwort ist einzeln mit Radio-Buttons oder mehrfach mit Checkboxen.';
 $string['selectmulti'] = 'Wählen Sie eine oder mehrere Antworten:';
 $string['selectone'] = 'Wählen Sie eine Antwort:';
+$string['showstandardinstruction'] = 'Standard-Anweisungen anzeigen';
+$string['showstandardinstruction_help'] = 'Die Option gibt an, ob die Anweisungen "Wählen Sie eine:" oder "Wählen Sie eine oder mehrere:" vor Multiple-Choice-Antworten angezeigt werden sollen.';
 $string['shuffleanswers'] = 'Antworten mischen?';
 $string['shuffleanswers_desc'] = 'Sollen die Antwortmöglichkeiten neuer Multiple-Choice-Fragen gemischt werden?';
-$string['shuffleanswers_help'] = 'Wenn aktiviert ist die Reihenfolge der Antworten bei jedem Versuch zufällig, sofern die Option "In Fragen zufällig mischen" aktiviert ist.';
+$string['shuffleanswers_help'] = 'Wenn diese Option aktiviert ist, ist die Reihenfolge der Antworten bei jedem Versuch zufällig, sofern die Option "In Fragen zufällig mischen" in den Einstellungen des Tests ebenfalls aktiviert ist.';
 $string['singleanswer'] = 'Antwort wählen:';
 $string['toomanyselected'] = 'Sie haben zu viele Optionen gewählt.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_none', language 'gl', version '3.8'.
+ * Strings for component 'auth_none', language 'gl', version '3.11'.
  *
  * @package     auth_none
  * @category    string
@@ -26,5 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'Os usuarios poden rexistrarse e crear contas válidas inmediatamente, sen autenticación contra un servidor externo e sen confirmación por correo. Vaia con tino ao empregar esta opción; pense nos problemas de seguridade e de administración que pode ocasionar.';
+$string['checknoauthdetails'] = '<p>O engadido <em>Sen autenticación</em> non está pensado para sitios en produción. Desactíveo a non ser que este sexa un sitio de probas de desenvolvemento.</p>';
+$string['checknoautherror'] = 'Non é posíbel utilizar o engadido «Sen autenticación» en sitios en produción.';
+$string['checknoauthok'] = 'O engadido «Sen autenticación» está desactivado.';
 $string['pluginname'] = 'Sen autenticación';
 $string['privacy:metadata'] = 'O engadido de sen autenticación non almacena ningún dato persoal.';

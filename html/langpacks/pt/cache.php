@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'pt', version '3.8'.
+ * Strings for component 'cache', language 'pt', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -40,7 +40,10 @@ $string['cachedef_calendar_subscriptions'] = 'Subscrições do calendário';
 $string['cachedef_capabilities'] = 'Lista de permissões do sistema';
 $string['cachedef_completion'] = 'Estado de conclusão da atividade';
 $string['cachedef_config'] = 'Configurar definições';
+$string['cachedef_contentbank_context_extensions'] = 'Extensões permitidas e respetivos módulos de suporte num contexto de banco de conteúdos';
+$string['cachedef_contentbank_enabled_extensions'] = 'Extensões permitidas e respetivos módulos de suporte num banco de conteúdos';
 $string['cachedef_contextwithinsights'] = 'Contexto com perceções';
+$string['cachedef_course_image'] = 'Imagens da disciplina';
 $string['cachedef_course_user_dates'] = 'As datas do utilizador para as disciplinas configuradas para o modo de datas relativas';
 $string['cachedef_coursecat'] = 'Listas de categorias de disciplina para um utilizador em particular';
 $string['cachedef_coursecatrecords'] = 'Registos de categorias da disciplina';
@@ -54,9 +57,13 @@ $string['cachedef_externalbadges'] = 'Medalhas externas para um utilizador em pa
 $string['cachedef_fontawesomeiconmapping'] = 'Mapeamento de ícones para o tipo de letra awesome';
 $string['cachedef_grade_categories'] = 'Consultas às categorias de avaliação';
 $string['cachedef_grade_letters'] = 'Consultas às notas alfabéticas';
+$string['cachedef_gradesetting'] = 'Configuração da nota da disciplina';
 $string['cachedef_groupdata'] = 'Informação de grupos da disciplina';
+$string['cachedef_h5p_content_type_translations'] = 'Traduções de bibliotecas de tipo de conteúdo H5P';
+$string['cachedef_h5p_library_files'] = 'Ficheiros de biblioteca H5P';
 $string['cachedef_htmlpurifier'] = 'Purificador HTML - conteúdo limpo';
 $string['cachedef_langmenu'] = 'Lista de idiomas disponíveis';
+$string['cachedef_license'] = 'Lista de licenças';
 $string['cachedef_locking'] = 'Bloqueio';
 $string['cachedef_message_processors_enabled'] = 'Estado dos processadores de mensagens ativado';
 $string['cachedef_message_time_last_message_between_users'] = 'Data/hora de criação da mensagem mais recente';
@@ -69,6 +76,7 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'Intâncias Portf
 $string['cachedef_postprocessedcss'] = 'CSS processado da mensagem';
 $string['cachedef_presignup'] = 'Dados de pré-inscrição para determinado utilizador ainda não registado';
 $string['cachedef_questiondata'] = 'Definições da pergunta';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'Recomendação de itens de conteúdo da disciplina';
 $string['cachedef_repositories'] = 'Dados de instância de repositórios';
 $string['cachedef_roledefs'] = 'Definições de papeis';
 $string['cachedef_string'] = 'Cache do pacote linguístico';
@@ -76,6 +84,8 @@ $string['cachedef_suspended_userids'] = 'Lista de utilizadores suspensos por dis
 $string['cachedef_tagindexbuilder'] = 'Resultados da pesquisa de itens marcados com palavras-chave';
 $string['cachedef_tags'] = 'Coleções de palavras-chave e áreas';
 $string['cachedef_temp_tables'] = 'Cache de tabelas temporárias';
+$string['cachedef_user_course_content_items'] = 'Itens de conteúdo do utilizador (atividades, recursos e respetivos subtipos) por disciplina';
+$string['cachedef_user_favourite_course_content_items'] = 'Itens marcados com estrela do utilizador';
 $string['cachedef_user_group_groupings'] = 'Grupos e agrupamentos do utilizador por disciplina';
 $string['cachedef_userselections'] = 'Dados usados para fazer prevalecer as seleções do utilizador em todo o Moodle';
 $string['cachedef_yuimodules'] = 'Definições do Módulo YUI';
@@ -158,7 +168,7 @@ $string['sharing'] = 'Partilha';
 $string['sharing_all'] = 'Todos.';
 $string['sharing_help'] = 'Isto permite-lhe determinar como os dados da cache podem ser partilhados se tiver uma instalação em cluster, ou se tiver múltiplos sites configurados com a mesma unidade de armazenamento e quiser partilhar os dados. Esta é uma configuração avançada, por favor, assegure-se que compreende a sua finalidade antes de a alterar.';
 $string['sharing_input'] = 'Chave personalizada (inserida abaixo)';
-$string['sharing_siteid'] = 'Sites com o mesmo número de identificação de site.';
+$string['sharing_siteid'] = 'Sites com o mesmo número de identificação (ID) de site.';
 $string['sharing_version'] = 'Sites a correr na mesma versão.';
 $string['sharingrequired'] = 'Deve selecionar pelo menos uma opção de partilha.';
 $string['sharingselected_all'] = 'Todos.';

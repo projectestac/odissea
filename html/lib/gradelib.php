@@ -394,20 +394,10 @@ function grade_regrade_final_grades_if_required($course, callable $callback = nu
 
         // Show regrade errors and set the course to no longer needing regrade (stop endless loop).
         if (is_array($status)) {
-        //XTEC ************ MODIFICAT - Fixed infinite loop "Recalculating grades": https://tracker.moodle.org/browse/MDL-55707
-        //2016.09.01 @sarjona
-            foreach ($status as $key => $error) {
-                $errortext = new \core\output\notification($error.' [[id='.$key.']]', \core\output\notification::NOTIFY_ERROR);
-                echo $OUTPUT->render($errortext);
-            }
-        //************ ORIGINAL
-        /*
             foreach ($status as $error) {
                 $errortext = new \core\output\notification($error, \core\output\notification::NOTIFY_ERROR);
                 echo $OUTPUT->render($errortext);
             }
-        */
-        //************ FI
             $courseitem = grade_item::fetch_course_item($course->id);
             $courseitem->regrading_finished();
         }
@@ -686,16 +676,18 @@ function grade_get_grades($courseid, $itemtype, $itemmodule, $iteminstance, $use
 function grade_get_setting($courseid, $name, $default=null, $resetcache=false) {
     global $DB;
 
-    static $cache = array();
+    $cache = cache::make('core', 'gradesetting');
+    $gradesetting = $cache->get($courseid) ?: array();
 
-    if ($resetcache or !array_key_exists($courseid, $cache)) {
-        $cache[$courseid] = array();
+    if ($resetcache or empty($gradesetting)) {
+        $gradesetting = array();
+        $cache->set($courseid, $gradesetting);
 
     } else if (is_null($name)) {
         return null;
 
-    } else if (array_key_exists($name, $cache[$courseid])) {
-        return $cache[$courseid][$name];
+    } else if (array_key_exists($name, $gradesetting)) {
+        return $gradesetting[$name];
     }
 
     if (!$data = $DB->get_record('grade_settings', array('courseid'=>$courseid, 'name'=>$name))) {
@@ -708,7 +700,8 @@ function grade_get_setting($courseid, $name, $default=null, $resetcache=false) {
         $result = $default;
     }
 
-    $cache[$courseid][$name] = $result;
+    $gradesetting[$name] = $result;
+    $cache->set($courseid, $gradesetting);
     return $result;
 }
 

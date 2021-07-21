@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'pt', version '3.8'.
+ * Strings for component 'hub', language 'pt', version '3.11'.
  *
  * @package     hub
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activeparticipantnumberaverage'] = 'Número médio de participantes ativos recentemente ({$a})';
+$string['activeusersnumber'] = 'Número de utilizadores ativos recentemente ({$a})';
 $string['addscreenshots'] = 'Adicionar imagens';
 $string['advertise'] = 'Partilhar esta disciplina para atrair participantes';
 $string['advertised'] = 'Disponíveis para inscrição';
@@ -150,7 +152,7 @@ $string['registerwithmoodleorginfo'] = 'Gostaríamos muito de ficar em contacto 
 $string['registerwithmoodleorginfoapp'] = 'Acerca da Aplicação móvel Moodle';
 $string['registerwithmoodleorginfosites'] = 'Outros sites do meu país';
 $string['registerwithmoodleorginfostats'] = 'Estatísticas do Moodle';
-$string['registerwithmoodleorgremove'] = 'Está prestes a cancelar o registo do seu site. Se continuar, deixará de ter acesso a notificações e alertas de segurança importantes. Os utilizadores do site não poderão receber notificações do seu site na Aplicação móvel Moodle. Tem a certeza de que pretende cancelar o registo do seu site?';
+$string['registerwithmoodleorgremove'] = 'Está prestes a cancelar o registo do seu site. Deixará de receber notificações e alertas de segurança importantes e os utilizadores do site não poderão receber notificações do seu site na Aplicação móvel Moodle. A qualquer momento poderá registar novamente. Tem a certeza de que pretende cancelar o registo do seu site?';
 $string['registerwithmoodleorgupdate'] = 'Atualize o registo do seu site';
 $string['registrationconfirmed'] = 'Confirmação de registo do site';
 $string['registrationconfirmedon'] = 'Obrigado por ter registado o seu site. As informações do registo serão mantidas atualizadas através da tarefa agendada "Registo do site".';
@@ -164,7 +166,7 @@ $string['screenshots'] = 'Imagens';
 $string['screenshots_help'] = 'Todas as imagens da disciplina serão apresentadas nos resultados das pesquisas.';
 $string['search'] = 'Pesquisa';
 $string['sendfollowinginfo'] = 'Mais informação';
-$string['sendfollowinginfo_help'] = 'A seguinte informação será enviada exclusivamente para tratamento estatístico. Não será tornada pública.';
+$string['sendfollowinginfo_help'] = 'As seguintes informações serão enviadas ao Moodle sempre que o registo do seu site for atualizado (por predefinição, semanalmente, quando a tarefa agendada \'Registo do site\' é executada). As informações contribuem apenas para as estatísticas gerais e não serão publicadas em nenhuma listagem do site.';
 $string['sendingcourse'] = 'A enviar disciplina';
 $string['sendingsize'] = 'Por favor, aguarde enquanto o ficheiro da disciplina é carregado ({$a->total}Mb)…';
 $string['sent'] = '… terminado';
@@ -209,7 +211,7 @@ $string['siteurl'] = 'URL do site';
 $string['siteurl_help'] = 'O URL é o endereço deste site. Se as configurações de privacidade o permitirem, então será este o URL que será divulgado publicamente.';
 $string['siteversion'] = 'Release do Moodle';
 $string['siteversion_help'] = 'A versão do Moodle instalada neste site.';
-$string['skipregistration'] = 'Saltar';
+$string['skipregistration'] = 'Ignorar';
 $string['status'] = 'Estado';
 $string['statuspublished'] = 'Está na lista';
 $string['statusunpublished'] = 'Não está na lista';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'eu', version '3.8'.
+ * Strings for component 'competency', language 'eu', version '3.11'.
  *
  * @package     competency
  * @category    string

@@ -78,9 +78,9 @@ class managesubscriptions extends \moodleform {
         $mform->addElement('filepicker', 'importfile', get_string('importfromfile', 'calendar'), null, array('accepted_types' => '.ics'));
 
         // Disable appropriate elements depending on import from value.
-        $mform->disabledIf('pollinterval', 'importfrom', 'eq', CALENDAR_IMPORT_FROM_FILE);
-        $mform->disabledIf('url',  'importfrom', 'eq', CALENDAR_IMPORT_FROM_FILE);
-        $mform->disabledIf('importfile', 'importfrom', 'eq', CALENDAR_IMPORT_FROM_URL);
+        $mform->hideIf('pollinterval', 'importfrom', 'eq', CALENDAR_IMPORT_FROM_FILE);
+        $mform->hideIf('url',  'importfrom', 'eq', CALENDAR_IMPORT_FROM_FILE);
+        $mform->hideIf('importfile', 'importfrom', 'eq', CALENDAR_IMPORT_FROM_URL);
 
         // Add the select elements for the available event types.
         $this->add_event_type_elements($mform, $eventtypes);
@@ -129,8 +129,10 @@ class managesubscriptions extends \moodleform {
         } else if (($data['importfrom'] == CALENDAR_IMPORT_FROM_URL)) {
             // Clean input calendar url.
             $url = clean_param($data['url'], PARAM_URL);
-            if (empty($url) || ($url !== $data['url'])) {
-                $errors['url']  = get_string('invalidurl', 'error');
+            try {
+                calendar_get_icalendar($url);
+            } catch (\moodle_exception $e) {
+                $errors['url']  = get_string('errorinvalidicalurl', 'calendar');
             }
         } else {
             // Shouldn't happen.

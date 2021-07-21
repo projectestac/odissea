@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'fr', version '3.8'.
+ * Strings for component 'form', language 'fr', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -33,21 +33,23 @@ $string['day'] = 'Jour';
 $string['default'] = 'Défaut';
 $string['display'] = 'Affichage';
 $string['err_alphanumeric'] = 'Vous ne devez saisir que des chiffres ou des lettres dans ce champ.';
-$string['err_email'] = 'Vous devez indiquer une adresse de courriel valable dans ce champ.';
+$string['err_email'] = 'Vous devez saisir une adresse de courriel valable dans ce champ.';
 $string['err_lettersonly'] = 'Vous ne devez saisir que des lettres dans ce champ.';
 $string['err_maxfiles'] = 'Vous ne pouvez pas joindre ici plus de {$a} fichiers.';
 $string['err_maxlength'] = 'Vous ne pouvez pas saisir plus de {$a->format} caractères dans ce champ.';
-$string['err_minlength'] = 'Vous devez taper au moins {$a->format} caractères dans ce champ.';
+$string['err_minlength'] = 'Vous devez saisir au moins {$a->format} caractères dans ce champ.';
 $string['err_nonzero'] = 'Vous ne devez pas saisir de nombre commençant par 0 dans ce champ.';
 $string['err_nopunctuation'] = 'Vous ne devez saisir aucune ponctuation dans ce champ.';
-$string['err_numeric'] = 'Vous devez spécifier un nombre dans ce champ.';
-$string['err_rangelength'] = 'Vous devez taper entre {$a->format[0]} et {$a->format[1]} caractères dans ce champ.';
+$string['err_numeric'] = 'Vous devez saisir un nombre dans ce champ.';
+$string['err_positiveint'] = 'Vous devez saisir un nombre plus grand que 0.';
+$string['err_rangelength'] = 'Vous devez saisir entre {$a->format[0]} et {$a->format[1]} caractères dans ce champ.';
 $string['err_required'] = 'Vous devez remplir ce champ.';
 $string['err_wrappingwhitespace'] = 'La valeur ne doit pas commencer ou se terminer par une espace.';
-$string['err_wrongfileextension'] = 'Certains fichiers ({$a->wrongfiles}) ne peuvent pas être déposés. Seuls les types de fichiers {$a->whitelist} sont autorisés.';
+$string['err_wrongfileextension'] = 'Certains fichiers ({$a->wrongfiles}) ne peuvent pas être déposés. Seuls les types de fichiers {$a-> allowlist} sont autorisés.';
 $string['filesofthesetypes'] = 'Types de fichier acceptés :';
 $string['filetypesany'] = 'Tous les types de fichier';
 $string['filetypesnotall'] = 'Il n\'est pas permis de choisir ici « Tous les types de fichier ».';
+$string['filetypesnotallowed'] = 'Ces types de fichier ne sont pas autorisés ici : {$a}';
 $string['filetypesnotwhitelisted'] = 'Ces types de fichier ne sont pas autorisés ici : {$a}';
 $string['filetypesothers'] = 'Autres fichiers';
 $string['filetypesunknown'] = 'Types de fichier inconnu : {$a}';
@@ -62,6 +64,7 @@ $string['mustbeoverriden'] = 'La méthode form_definition() dans la classe {$a} 
 $string['newvaluefor'] = 'Nouvelle valeur de {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Il n\'y a pas de méthode pour ajouter un bouton d\'aide sur un élément {$a->name} (classe {$a->classname}) de formulaire';
 $string['nonexistentformelements'] = 'Tentative d\'ajout de bouton d\'aide à des éléments non existants : {$a}';
+$string['nopermissionform'] = 'Vous n\'avez pas les permissions nécessaires pour accéder à ce formulaire.';
 $string['noselection'] = 'Aucune sélection';
 $string['nosuggestions'] = 'Pas de suggestion';
 $string['novalue'] = 'Champ vide';
@@ -82,6 +85,7 @@ $string['showadvanced'] = 'Afficher éléments supplémentaires';
 $string['showless'] = 'Afficher moins…';
 $string['showmore'] = 'Afficher plus…';
 $string['somefieldsrequired'] = 'Ce formulaire comprend des champs requis, marqués {$a}.';
+$string['suggestions'] = 'Suggestions';
 $string['time'] = 'Durée';
 $string['timeunit'] = 'Unité de temps';
 $string['timing'] = 'Durée';

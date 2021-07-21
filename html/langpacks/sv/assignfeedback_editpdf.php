@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'sv', version '3.8'.
+ * Strings for component 'assignfeedback_editpdf', language 'sv', version '3.11'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -50,7 +50,7 @@ $string['downloadfeedback'] = 'Ladda ner återkopplings PDF';
 $string['draftchangessaved'] = 'Utkast sparade';
 $string['drag'] = 'Dra';
 $string['editpdf'] = 'Kommentera PDF';
-$string['editpdf_help'] = 'Kommentera studentarbete direkt i webbläsaren och skapa en redigerad nedladdningsbar PDF.';
+$string['editpdf_help'] = 'Kommentera studenters inlämnade arbeten direkt i webbläsaren och skapa en redigerad nedladdningsbar PDF.';
 $string['enabled'] = 'Kommentera PDF';
 $string['enabled_help'] = 'Om aktiverad, kommer läraren att kunna skapa kommenterade PDF-filer när bedömning sker. Detta gör det möjligt för läraren att lägga till kommentarer, anteckningar och stämplar direkt på studentarbetet. Bearbetning sker direkt i webbläsaren och utan att extra programvara behövs.';
 $string['errorgenerateimage'] = 'Fel när  bild genereras med ghostscript, felsökningsinformation: {$a}';

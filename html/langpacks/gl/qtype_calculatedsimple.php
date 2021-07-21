@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'gl', version '3.8'.
+ * Strings for component 'qtype_calculatedsimple', language 'gl', version '3.11'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -47,5 +47,5 @@ $string['wildcardparam'] = 'Parámetros dos comodíns usados para xerar os valor
 $string['wildcardrole'] = 'Os comodíns <strong>{x..} </strong> substituiranse por valores numéricos de entre os valores xerados';
 $string['wildcardvalues'] = 'Valores dos comodíns';
 $string['wildcardvaluesgenerated'] = 'Valores dos comodíns xerados';
-$string['willconverttocalculated'] = 'Se estabelece <strong>Guardar como nueva pregunta</strong> gardarase como unha nova pregunta calculada';
+$string['willconverttocalculated'] = 'Se estabelece <strong>Guardar como nova pregunta</strong> gardarase como unha nova pregunta calculada';
 $string['youmustaddatleastonevalue'] = 'Debe engadir polo menos un conxunto de valores para os comodíns antes de que poida gardar esta pregunta.';

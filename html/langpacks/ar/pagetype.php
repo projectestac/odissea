@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'ar', version '3.8'.
+ * Strings for component 'pagetype', language 'ar', version '3.11'.
  *
  * @package     pagetype
  * @category    string
@@ -34,8 +34,8 @@ $string['page-course-report-x'] = 'أي تقرير للمقرر';
 $string['page-course-search'] = 'صفحة البحث في المقررات الدراسية';
 $string['page-course-view-x'] = 'أي صفحة رئيسية لمقرر من أي نوع';
 $string['page-course-x'] = 'أي صفحة مقرر دراسي';
-$string['page-mod-x'] = 'أي صفحة لوحدة نشاطات';
-$string['page-mod-x-view'] = 'أي صفحة رئيسية لوحدة نشاطات';
+$string['page-mod-x'] = 'أي صفحة لوحدة النشاط';
+$string['page-mod-x-view'] = 'أي صفحة لوحدة النشاط الرئيسي';
 $string['page-my-index'] = 'صفحة لوحة التحكم';
 $string['page-report-x'] = 'صفحة أي تقرير';
 $string['page-site-index'] = 'الصفحة الرئيسية فقط';

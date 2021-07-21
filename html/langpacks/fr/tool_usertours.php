@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'fr', version '3.8'.
+ * Strings for component 'tool_usertours', language 'fr', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -64,12 +64,20 @@ $string['event_tour_ended'] = 'Visite guidée terminée';
 $string['event_tour_reset'] = 'Visite guidée relancée';
 $string['event_tour_started'] = 'Visite guidée commencée';
 $string['exporttour'] = 'Exporter la visite guidée';
+$string['filter_accessdate'] = 'Date d\'accès';
+$string['filter_accessdate_enabled'] = 'Activer le filtre de date d\'accès';
+$string['filter_accessdate_enabled_help'] = 'N\'afficher la visite guidée qu\'aux nouveaux utilisateurs ou aux utilisateurs qui ont accès au site récemment.';
 $string['filter_category'] = 'Catégorie';
 $string['filter_category_help'] = 'Affiche la visite guidée sur une page d\'un cours de la catégorie sélectionnée.';
 $string['filter_course'] = 'Cours';
 $string['filter_course_help'] = 'Affiche la visite guidée sur une page du cours sélectionné.';
 $string['filter_courseformat'] = 'Format de cours';
 $string['filter_courseformat_help'] = 'Affiche la visite guidée sur une page d\'un cours utilisant le format de cours sélectionné.';
+$string['filter_cssselector'] = 'Sélecteur CSS';
+$string['filter_cssselector_help'] = 'N\'afficher la visite guidée que lorsque le sélecteur CSS est trouvé sur la page.';
+$string['filter_date_account_creation'] = 'Date de création de l\'utilisateur dans un délai de';
+$string['filter_date_first_login'] = 'Date de premier accès de l\'utilisateur dans un délai de';
+$string['filter_date_last_login'] = 'Date de dernier accès de l\'utilisateur dans un délai de';
 $string['filter_header'] = 'Filtres les visites guidées';
 $string['filter_help'] = 'Il est possible de choisir à quelles conditions la visite guidée sera affichée. Tous les filtres doivent correspondre à une visite guidée à afficher à l\'utilisateur concerné.';
 $string['filter_role'] = 'Rôle';
@@ -87,6 +95,7 @@ $string['name'] = 'Nom';
 $string['newstep'] = 'Nouvelle étape';
 $string['newtour'] = 'Créer une visite guidée';
 $string['next'] = 'Suivant';
+$string['nextstep'] = 'Suivant';
 $string['options_heading'] = 'Options';
 $string['orphan'] = 'Afficher si la cible n\'est pas trouvée';
 $string['orphan_help'] = 'Afficher l\'étape si la cible ne peut pas être trouvée sur la page.';
@@ -107,6 +116,7 @@ $string['placement_help'] = 'Une étape peut être affichée au-dessus, au-desso
 
 Si l\'étape ne tient pas dans la page à l\'emplacement choisi, elle sera automatiquement déplacée.';
 $string['pluginname'] = 'Visites guidées';
+$string['previousstep'] = 'Précédent';
 $string['privacy:metadata:preference:completed'] = 'Date et heure du dernier achèvement d\'une visite guidée par un utilisateur.';
 $string['privacy:metadata:preference:requested'] = 'Date et heure du dernier lancement de visite guidée par un utilisateur.';
 $string['privacy:request:preference:completed'] = 'Vous avez marqué la visite guidée « {$a->name} » comme terminée le {$a->time}';
@@ -168,7 +178,7 @@ $string['tour2_title_opendrawer'] = 'Ouvrir le tiroir de navigation';
 $string['tour2_title_participants'] = 'Participants au cours';
 $string['tour2_title_welcome'] = 'Bienvenue';
 $string['tour3_content_dashboard'] = 'Votre nouveau Tableau de bord a de nombreuses fonctions pour vous permettre d\'accéder facilement aux informations les plus importantes pour vous.';
-$string['tour3_content_displayoptions'] = 'Les cours peuvent être triés par nom ou par date du dernier accès.
+$string['tour3_content_displayoptions'] = 'Les cours peuvent être triés par nom, par nom abrégé ou par date du dernier accès.
 
 Vous pouvez aussi choisir d\'afficher les cours dans une liste, avec les informations résumées, ou dans la vue par défaut en « cartes ».';
 $string['tour3_content_overview'] = 'Le bloc Vue d\'ensemble des cours affiche la totalité des cours dans lesquels vous êtes inscrit.
@@ -207,6 +217,16 @@ $string['tour4_title_icon'] = 'Messagerie';
 $string['tour4_title_messaging'] = 'Nouvelle interface de messagerie';
 $string['tour4_title_settings'] = 'Réglages de messagerie';
 $string['tour4_title_starred'] = 'Favoris';
+$string['tour_activityinfo_activity_student_content'] = 'Les dates des activités ainsi que les actions à effectuer pour terminer l\'activité sont affichées sur la page de l\'activité.';
+$string['tour_activityinfo_activity_student_title'] = 'Nouveau : informations sur l\'activité';
+$string['tour_activityinfo_activity_teacher_content'] = 'Les dates des activités et les conditions d\'achèvement sont maintenant affichées pour les étudiants sur la page de chaque activité (et optionnellement sur la page du cours).
+
+Pour les activités qui demandent de marquer manuellement l\'activité comme terminée, un bouton « Marquer comme terminé » est affiché sur la page de l\'activité.';
+$string['tour_activityinfo_activity_teacher_title'] = 'Nouveau : informations sur l\'activité';
+$string['tour_activityinfo_course_student_content'] = 'Les dates de l\'activité et/ou ce qu\'il faut faire pour terminer l\'activité sont affichées sur la page de cours.';
+$string['tour_activityinfo_course_student_title'] = 'Nouveau : informations sur l\'activité';
+$string['tour_activityinfo_course_teacher_content'] = 'Les nouveaux réglages « Afficher les conditions d\'achèvement » et « Afficher les dates de l\'activité » vous permettent de choisir si les conditions d\'achèvement et/ou les dates sont affichées pour les étudiants sur la page de cours.';
+$string['tour_activityinfo_course_teacher_title'] = 'Nouveau : informations sur l\'activité';
 $string['tour_final_step_content'] = 'Cette visite guidée est terminée. Elle ne sera pas ré-affichée à moins que vous ne la réinitialisiez au moyen du lien dans le pied de page.';
 $string['tour_final_step_title'] = 'Fin de la visite guidée';
 $string['tour_resetforall'] = 'Le statut de la visite guidée a été relancé. La visite sera affichée de nouveau à tous les utilisateurs.';

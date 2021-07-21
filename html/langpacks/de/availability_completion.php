@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'de', version '3.8'.
+ * Strings for component 'availability_completion', language 'de', version '3.11'.
  *
  * @package     availability_completion
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_previous_cache'] = 'Vorherige Infos zur Aktivitätsabhängigkeit';
 $string['description'] = 'Zugriff über den Abschluss einer anderen Aktivität steuern';
 $string['error_selectcmid'] = 'Sie müssen eine Aktivität für die Zugriffssteuerung auswählen.';
 $string['error_selectcmidpassfail'] = 'Sie müssen eine Aktivität auswählen, für die die Abschlussvoraussetzung "Bewertung notwendig" gesetzt ist.';
@@ -35,6 +36,7 @@ $string['option_complete'] = 'muss abgeschlossen sein';
 $string['option_fail'] = 'muss abgeschlossen und gescheitert sein';
 $string['option_incomplete'] = 'darf nicht abgeschlossen sein';
 $string['option_pass'] = 'muss abgeschlossen und bestanden sein';
+$string['option_previous'] = 'Vorherige Aktivität mit Abschluss';
 $string['pluginname'] = 'Voraussetzung: Aktivitätsabschluss';
 $string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Aktivitätsabschluss\' speichert keine personenbezogenen Daten.';
 $string['requires_complete'] = 'Die Aktivität <strong>{$a}</strong> ist als abgeschlossen markiert';
@@ -43,4 +45,10 @@ $string['requires_complete_pass'] = 'Die Aktivität <strong>{$a}</strong> ist ab
 $string['requires_incomplete'] = 'Die Aktivität <strong>{$a}</strong> ist nicht abgeschlossen';
 $string['requires_not_complete_fail'] = 'Die Aktivität <strong>{$a}</strong> ist nicht abgeschlossen und gescheitert';
 $string['requires_not_complete_pass'] = 'Die Aktivität <strong>{$a}</strong> ist nicht abgeschlossen und bestanden';
+$string['requires_previous_complete'] = 'Die <strong>vorherige Aktivität mit Abschluss</strong> wird als abgeschlossen markiert.';
+$string['requires_previous_complete_fail'] = 'Die <strong>vorherige Aktivität mit Abschluss</strong> ist abgeschlossen und fehlgeschlagen.';
+$string['requires_previous_complete_pass'] = 'Die <strong>vorherige Aktivität mit Abschluss</strong> ist abgeschlossen und bestanden.';
+$string['requires_previous_incomplete'] = 'Die <strong>vorherige Aktivität mit Abschluss</strong> ist unvollständig.';
+$string['requires_previous_not_complete_fail'] = 'Die <strong>vorherige Aktivität mit Abschluss</strong> ist nicht abgeschlossen und fehlgeschlagen.';
+$string['requires_previous_not_complete_pass'] = 'Die <strong>vorherige Aktivität mit Abschluss</strong> ist nicht abgeschlossen und bestanden.';
 $string['title'] = 'Aktivitätsabschluss';

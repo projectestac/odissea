@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_displayh5p', language 'it', version '3.8'.
+ * Strings for component 'filter_displayh5p', language 'it', version '3.11'.
  *
  * @package     filter_displayh5p
  * @category    string

@@ -40,7 +40,7 @@ Feature: Add h5ps to Atto
   Scenario: Insert an h5p file
     Given I log in as "admin"
     And I follow "Manage private files..."
-    And I upload "lib/editor/atto/tests/fixtures/guess-the-answer.h5p" file to "Files" filemanager
+    And I upload "h5p/tests/fixtures/guess-the-answer.h5p" file to "Files" filemanager
     And I click on "Save changes" "button"
     And I am on "Course 1" course homepage
     And I follow "PageName1"
@@ -149,7 +149,7 @@ Feature: Add h5ps to Atto
   Scenario: Enable/disable H5P options
     Given I log in as "admin"
     And I follow "Manage private files..."
-    And I upload "lib/editor/atto/tests/fixtures/guess-the-answer.h5p" file to "Files" filemanager
+    And I upload "h5p/tests/fixtures/guess-the-answer.h5p" file to "Files" filemanager
     And I click on "Save changes" "button"
     And I am on "Course 1" course homepage
     And I follow "PageName1"
@@ -239,7 +239,7 @@ Feature: Add h5ps to Atto
       | student1 | C1 | student |
     And I log in as "admin"
     And I follow "Manage private files..."
-    And I upload "lib/editor/atto/tests/fixtures/guess-the-answer.h5p" file to "Files" filemanager
+    And I upload "h5p/tests/fixtures/guess-the-answer.h5p" file to "Files" filemanager
     And I click on "Save changes" "button"
     And I am on "Course 1" course homepage
     And I follow "PageName1"

@@ -49,7 +49,7 @@ class core_repositorylib_testcase extends advanced_testcase {
 
         $plugintype = new repository_type($repositorypluginname);
         $pluginid = $plugintype->create(false);
-        $this->assertInternalType('int', $pluginid);
+        $this->assertIsInt($pluginid);
         $args = array();
         $args['type'] = $repositorypluginname;
         $repos = repository::get_instances($args);
@@ -152,6 +152,60 @@ class core_repositorylib_testcase extends advanced_testcase {
         foreach (array('Terminator.movie', 'Where is Wally?', 'barfoo') as $filename) {
             $this->assertFalse(repository::draftfile_exists($draftitemid, '/', $filename));
         }
+    }
+
+    public function test_delete_selected_files() {
+        global $USER;
+
+        $this->resetAfterTest(true);
+
+        $this->setAdminUser();
+        $fs = get_file_storage();
+
+        $draftitemid = file_get_unused_draft_itemid();
+        $context = context_user::instance($USER->id);
+
+        $dummy = [
+            'contextid' => $context->id,
+            'component' => 'user',
+            'filearea' => 'draft',
+            'itemid' => $draftitemid,
+            'filepath' => '/',
+            'filename' => ''
+        ];
+
+        // Create some files.
+        $existingfiles = [
+            'The Matrix.movie',
+            'Astalavista.txt',
+            'foobar',
+        ];
+
+        $selectedfiles = [
+            'The Matrix.movie' => [],
+            'Astalavista.txt' => []
+        ];
+        foreach ($existingfiles as $filename) {
+            $dummy['filename'] = $filename;
+            $file = $fs->create_file_from_string($dummy, 'Content of ' . $filename);
+            if (array_key_exists($filename, $selectedfiles)) {
+                $selectedfiles[$filename] = (object)[
+                    'filename' => $filename,
+                    'filepath' => $file->get_filepath()
+                ];
+            }
+        }
+
+        // Get area files with default options.
+        $areafiles = $fs->get_area_files($context->id, 'user', 'draft', $draftitemid);
+        // Should be the 3 files we added plus the folder.
+        $this->assertEquals(4, count($areafiles));
+
+        repository_delete_selected_files($context, 'user', 'draft', $draftitemid, $selectedfiles);
+
+        $areafiles = $fs->get_area_files($context->id, 'user', 'draft', $draftitemid);
+        // Should be the 1 file left plus the folder.
+        $this->assertEquals(2, count($areafiles));
     }
 
     public function test_can_be_edited_by_user() {
@@ -541,5 +595,46 @@ class core_repositorylib_testcase extends advanced_testcase {
         $this->assertEquals(1, $DB->count_records('repository_instances', array('contextid' => $usercontext->id)));
         delete_user($user);
         $this->assertEquals(0, $DB->count_records('repository_instances', array('contextid' => $usercontext->id)));
+    }
+
+    /**
+     * Create test file in user private files
+     *
+     * @param string $filepath file path
+     * @param string $filename file name
+     */
+    private function create_user_private_file(string $filepath, string $filename): void {
+        global $USER;
+
+        $filerecord = [];
+        $filerecord['contextid'] = context_user::instance($USER->id)->id;
+        $filerecord['component'] = 'user';
+        $filerecord['filearea'] = 'private';
+        $filerecord['itemid'] = 0;
+        $filerecord['filepath'] = $filepath;
+        $filerecord['filename'] = $filename;
+        $filerecord['userid'] = $USER->id;
+
+        $fs = get_file_storage();
+        $fs->create_file_from_string($filerecord, hash("md5", $filepath . $filename));
+    }
+
+    public function test_listing_and_filter() {
+        $this->resetAfterTest(true);
+        $this->setUser($this->getDataGenerator()->create_user());
+        $repoid = $this->getDataGenerator()->create_repository('user')->id;
+        $this->create_user_private_file('/', 'image1.jpg');
+        $this->create_user_private_file('/', 'file1.txt');
+        $this->create_user_private_file('/folder/', 'image2.jpg');
+        $this->create_user_private_file('/folder/', 'file2.txt');
+        $this->create_user_private_file('/ftexts/', 'file3.txt');
+
+        // Listing without filters returns 4 records (2 files and 2 directories).
+        $repo = repository::get_repository_by_id($repoid, context_system::instance());
+        $this->assertCount(4,  $repo->get_listing()['list']);
+
+        // Listing with filters returns 3 records (1 files and 2 directories).
+        $_POST['accepted_types'] = ['.jpg'];
+        $this->assertCount(3,  $repo->get_listing()['list']);
     }
 }

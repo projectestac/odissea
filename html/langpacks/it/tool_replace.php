@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'it', version '3.8'.
+ * Strings for component 'tool_replace', language 'it', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = 'Tabelle aggiuntive da saltare';
+$string['additionalskiptables_desc'] = 'Un elenco di tabelle, separato da virgole, da saltare durante il processo di ricerca e sostituzione.';
 $string['cannotfit'] = 'La stringa da sostituire è più lunga dell\'originale e l\'accorciamento non è consentito. Non è possibile continuare.';
 $string['disclaimer'] = 'Sono consapevole dei rischi di questa operazione';
 $string['doit'] = 'Si, esegui l\'operazione';

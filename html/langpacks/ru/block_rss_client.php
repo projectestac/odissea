@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'ru', version '3.8'.
+ * Strings for component 'block_rss_client', language 'ru', version '3.11'.
  *
  * @package     block_rss_client
  * @category    string
@@ -74,6 +74,7 @@ $string['privacy:metadata:block_rss_client:tableexplanation'] = 'Здесь хр
 $string['privacy:metadata:block_rss_client:title'] = 'Заголовок RSS-ленты.';
 $string['privacy:metadata:block_rss_client:url'] = 'URL RSS-ленты.';
 $string['privacy:metadata:block_rss_client:userid'] = 'ID пользователя, добавившего RSS-ленту.';
+$string['refreshfeedstask'] = 'Задача обновления RSS-каналов';
 $string['remotenewsfeed'] = 'Внешняя новостная лента';
 $string['rss_client:addinstance'] = 'Добавлять новый блок «Внешние RSS-ленты»';
 $string['rss_client:createprivatefeeds'] = 'Создавать личные RSS-ленты';

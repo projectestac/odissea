@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'sv', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'sv', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptederror'] = 'Accepterat fel';
-$string['addmoreanswerblanks'] = 'Tomma utrymmen för {no}  fler svar';
-$string['addmoreunitblanks'] = 'Tomma utrymmen för {no} fler enheter';
+$string['addmoreanswerblanks'] = 'Tomma utrymmen för ytterligare {no} svar';
+$string['addmoreunitblanks'] = 'Tomma utrymmen för ytterligare {no} enheter';
 $string['answercolon'] = 'Svar:';
 $string['answererror'] = 'Fel';
 $string['answermustbenumberorstar'] = 'Svaret måste vara ett tal, till exempel -1.234, 3e8 eller \'*\'.';
@@ -44,7 +44,7 @@ $string['invalidnumbernounit'] = 'Du måste ange ett giltigt nummer. Inkludera i
 $string['invalidnumericanswer'] = 'En av de svar du angav var inte ett giltigt nummer.';
 $string['invalidnumerictolerance'] = 'En av toleranserna du angav var inte ett giltigt nummer.';
 $string['leftexample'] = 'till vänster, till exempel $1.00 eller £1.00';
-$string['manynumerical'] = 'Enheter är valfria. Om en enhet anges, används den för att konvertera svaret till enhet 1 före betygssättningen.';
+$string['manynumerical'] = 'Enheter är valfria. Om en enhet anges, används den för att konvertera svaret till Enhet 1 innan betygssättningen.';
 $string['multiplier'] = 'Multiplikator';
 $string['nominal'] = 'Nominellt';
 $string['noneditableunittext'] = 'ICKE redigerbar text för enhet Nr1';
@@ -68,6 +68,14 @@ $string['pluginname_help'] = 'Från elevens perspektiv ser en numerisk fråga ut
 $string['pluginnameadding'] = 'Lägga till en numerisk fråga';
 $string['pluginnameediting'] = 'Redigera en numerisk fråga';
 $string['pluginnamesummary'] = 'Tillåter ett numeriskt svar, eventuellt med enheter, som poängsätts genom att jämföras mot olika modellsvar, eventuellt med toleranser.';
+$string['privacy:metadata'] = 'Pluginmodulen för frågetypen Numerisk fråga gör det möjligt för frågeförfattare att ange standardalternativ som användarinställningar.';
+$string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråga.';
+$string['privacy:preference:multichoicedisplay'] = 'Om enheter visas som textinmatningselement, flervalsmarkering eller en rullgardinsmeny.';
+$string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
+$string['privacy:preference:unitgradingtypes'] = 'Om enhetsavdraget gäller som en bråkdel (0-1) av svarsbetyget eller frågebetyget.';
+$string['privacy:preference:unitpenalty'] = 'Vilken fraktion (0-1) av svarsbetyget eller frågebetyget ska gälla?';
+$string['privacy:preference:unitrole'] = 'Om enheten är nödvändig, frivillig eller inte förväntas.';
+$string['privacy:preference:unitsleft'] = 'Oavsett om enheten visas till vänster (t.ex. $, £) eller till höger (t.ex. kg, km, cm).';
 $string['relative'] = 'Relativ';
 $string['rightexample'] = 'till höger, till exempel 1.00cm eller 1.00km';
 $string['selectunit'] = 'Välj en enhet';
@@ -100,11 +108,11 @@ $string['units'] = 'Enheter';
 $string['unitselect'] = 'en nedrullningsmeny';
 $string['unitx'] = 'Enhet {no}';
 $string['validnumberformats'] = 'Giltiga talformat';
-$string['validnumberformats_help'] = '* vanliga nummer 13500,67, 13 500,67, 13500,67 eller 13 500,67
+$string['validnumberformats_help'] = '* vanliga nummer 13500.67, 13 500.67, 13500,67 eller 13 500,67
 
-* om du använder , kommatecken som tusentalsavgränsare sätt *alltid* decimalpunkten . som i 13,500.67: 13.500.
+* om inställningarna för språkpaketet (filen langconfig.php) använder ett kommatecken (,) som tusenavgränsare, ange *alltid* decimaltecknet (.) så som i exemplet: 13,500.67 : 13,500.
 
-* för exponent form säg 1.350067 * 10 <sup>4</sup> använd 1,350067 E4: 1,350067 E04';
+* för exponentform, t.ex. 1,350067 * 10 <sup>4</sup>, använd 1,350067 E4: 1,350067 E04';
 $string['validnumbers'] = '13500.67, 13 500.67, 13,500.67, 13500,67, 13 500,67, 1.350067 E4 eller 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} måste vara ett nummer.';
 $string['xmustnotbenumeric'] = '{$a} får inte vara ett nummer.';

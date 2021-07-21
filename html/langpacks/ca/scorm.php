@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ca', version '3.8'.
+ * Strings for component 'scorm', language 'ca', version '3.11'.
  *
  * @package     scorm
  * @category    string
@@ -192,6 +192,7 @@ $string['hidetocdesc'] = 'Aquesta preferència especifica com es mostra l\'índe
 $string['highestattempt'] = 'Intent més alt';
 $string['identifier'] = 'Identificador de pregunta';
 $string['incomplete'] = 'Incomplet';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats SCORM en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions)';
 $string['info'] = 'Info';
 $string['interactions'] = 'Interaccions';
 $string['invalidactivity'] = 'L\'activitat SCORM és incorrecta';

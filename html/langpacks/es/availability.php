@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'es', version '3.8'.
+ * Strings for component 'availability', language 'es', version '3.11'.
  *
  * @package     availability
  * @category    string
@@ -31,7 +31,7 @@ $string['and'] = 'y';
 $string['condition_group'] = 'Conjunto de restricciones';
 $string['condition_group_info'] = 'Añadir un conjunto de restricciones que se deben aplicar en su conjunto.';
 $string['enableavailability'] = 'Habilitar restricciones de acceso';
-$string['enableavailability_desc'] = 'Si se activa, esta opción le permite fijar las condiciones (basadas en la fecha, la calificación o el grado de finalización) que controlan si una actividad está disponible.';
+$string['enableavailability_desc'] = 'Si está habilitado, las condiciones (basadas en la fecha, calificación, finalización, etc.) se pueden configurar para controlar si se puede acceder a una actividad o recurso.';
 $string['error_list_nochildren'] = 'Los conjuntos de restricciones deben contener al menos una condición.';
 $string['hidden_all'] = 'Completamente ocultado si el usuario no cumple con las condiciones';
 $string['hidden_individual'] = 'Completamente ocultado si el usuario no cumple con las condiciones';
@@ -65,7 +65,7 @@ $string['privacy:metadata'] = 'El subsistema de Restricción del acceso no almac
 $string['restrictaccess'] = 'Restricciones de acceso';
 $string['restrictbygroup'] = 'Añadir restricción de acceso por grupo/agrupamiento';
 $string['setheading'] = '{$a->number} Conjunto de {$a->count} restricción(es)';
-$string['show_verb'] = 'Haga clic para mostrar';
+$string['show_verb'] = 'Haga clic para mostrar en gris';
 $string['shown_all'] = 'Se muestra en gris si el usuario no cumple las condiciones';
 $string['shown_individual'] = 'Se muestra en gris si el usuario no cumple con esta condición';
 $string['unknowncondition'] = 'Condición desconocida (plugin de condición borrado)';

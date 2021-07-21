@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ko', version '3.8'.
+ * Strings for component 'lti', language 'ko', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -129,7 +129,7 @@ $string['misconfiguredtools'] = '잘못 구성된 도구 인스턴스가 발견�
 $string['missingparameterserror'] = '페이지가 잘 못 구성되었습니다. "{$a}"';
 $string['module_class_type'] = '무들 모듈 유형';
 $string['modulename'] = '외부 도구';
-$string['modulenameplural'] = '외부 도구';
+$string['modulenameplural'] = '외부 툴';
 $string['modulenamepluralformatted'] = 'LTI 인스턴스';
 $string['never'] = '전혀 없음';
 $string['new_window'] = '새 창';
@@ -151,7 +151,7 @@ $string['password'] = '공유 암호';
 $string['password_admin'] = '공유 암호';
 $string['pending'] = '보류 중';
 $string['pluginadministration'] = 'LTI 관리';
-$string['pluginname'] = 'LTI';
+$string['pluginname'] = '외부 툴';
 $string['preferheight'] = '선호하는 높이';
 $string['preferwidget'] = '위젯 실행을 선호';
 $string['preferwidth'] = '선호하는 폭';

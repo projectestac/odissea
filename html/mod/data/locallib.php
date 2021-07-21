@@ -607,7 +607,8 @@ function data_set_events($data) {
         if ($data->timeavailablefrom > 0) {
             // Calendar event exists so update it.
             $event->name         = get_string('calendarstart', 'data', $data->name);
-            $event->description  = format_module_intro('data', $data, $data->coursemodule);
+            $event->description  = format_module_intro('data', $data, $data->coursemodule, false);
+            $event->format       = FORMAT_HTML;
             $event->timestart    = $data->timeavailablefrom;
             $event->timesort     = $data->timeavailablefrom;
             $event->visible      = instance_is_visible('data', $data);
@@ -623,7 +624,8 @@ function data_set_events($data) {
         // Event doesn't exist so create one.
         if (isset($data->timeavailablefrom) && $data->timeavailablefrom > 0) {
             $event->name         = get_string('calendarstart', 'data', $data->name);
-            $event->description  = format_module_intro('data', $data, $data->coursemodule);
+            $event->description  = format_module_intro('data', $data, $data->coursemodule, false);
+            $event->format       = FORMAT_HTML;
             $event->courseid     = $data->course;
             $event->groupid      = 0;
             $event->userid       = 0;
@@ -646,7 +648,8 @@ function data_set_events($data) {
         if ($data->timeavailableto > 0) {
             // Calendar event exists so update it.
             $event->name         = get_string('calendarend', 'data', $data->name);
-            $event->description  = format_module_intro('data', $data, $data->coursemodule);
+            $event->description  = format_module_intro('data', $data, $data->coursemodule, false);
+            $event->format       = FORMAT_HTML;
             $event->timestart    = $data->timeavailableto;
             $event->timesort     = $data->timeavailableto;
             $event->visible      = instance_is_visible('data', $data);
@@ -662,7 +665,8 @@ function data_set_events($data) {
         // Event doesn't exist so create one.
         if (isset($data->timeavailableto) && $data->timeavailableto > 0) {
             $event->name         = get_string('calendarend', 'data', $data->name);
-            $event->description  = format_module_intro('data', $data, $data->coursemodule);
+            $event->description  = format_module_intro('data', $data, $data->coursemodule, false);
+            $event->format       = FORMAT_HTML;
             $event->courseid     = $data->course;
             $event->groupid      = 0;
             $event->userid       = 0;
@@ -1108,9 +1112,8 @@ function data_search_entries($data, $cm, $context, $mode, $currentgroup, $search
     $advparams       = array();
     // This is used for the initial reduction of advanced search results with required entries.
     $entrysql        = '';
-    $namefields = user_picture::fields('u');
-    // Remove the id from the string. This already exists in the sql statement.
-    $namefields = str_replace('u.id,', '', $namefields);
+    $userfieldsapi = \core_user\fields::for_userpic()->excluding('id');
+    $namefields = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
 
     // Find the field we are sorting on.
     if ($sort <= 0 or !$sortfield = data_get_field_from_id($sort, $data)) {

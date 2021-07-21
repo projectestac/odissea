@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'zh_cn', version '3.8'.
+ * Strings for component 'wiki', language 'zh_cn', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -201,7 +201,7 @@ $string['page-mod-wiki-history'] = 'Wiki历史页';
 $string['page-mod-wiki-map'] = 'Wiki地图页';
 $string['page-mod-wiki-view'] = 'Wiki模块主页';
 $string['page-mod-wiki-x'] = '任意wiki模块页';
-$string['pageexists'] = '这个页面已经存在。';
+$string['pageexists'] = '此页面已存在。';
 $string['pageindex'] = '页面索引';
 $string['pageindex_help'] = '此wiki的页面树';
 $string['pageislocked'] = '有人正在编辑此页。请过几分钟再试试。';

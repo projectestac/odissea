@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'gl', version '3.8'.
+ * Strings for component 'message_email', language 'gl', version '3.11'.
  *
  * @package     message_email
  * @category    string
@@ -35,7 +35,7 @@ $string['pluginname'] = 'Correo';
 $string['privacy:metadata:attachment'] = 'Un ficheiro no sistema de ficheiros.';
 $string['privacy:metadata:attachname'] = 'O nome do ficheiro anexo (a extensión indica o MIME).';
 $string['privacy:metadata:externalpurpose'] = 'Esta información é enviada a un servidor SMTP externo para ser entregado finalmente como un correo electrónico ao destinatario.';
-$string['privacy:metadata:fullmessage'] = 'A mensaxe completa nun formato dado.';
+$string['privacy:metadata:fullmessage'] = 'A mensaxe completa nun formato determinado.';
 $string['privacy:metadata:fullmessagehtml'] = 'A versión completa da mensaxe';
 $string['privacy:metadata:message_email_messages'] = 'A lista de usuarios matriculados a través dun provedor LTI';
 $string['privacy:metadata:message_email_messages:conversationid'] = 'O ID da conversa enviada a';

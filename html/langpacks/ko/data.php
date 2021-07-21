@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ko', version '3.8'.
+ * Strings for component 'data', language 'ko', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -152,6 +152,7 @@ $string['entrieslefttoaddtoview'] = '다른 참여자의 내용을 보기 전에
 $string['entry'] = '입력 내용';
 $string['entrysaved'] = '입력 내용이 저장되었습니다.';
 $string['errormustbeteacher'] = '선생님만 이 페이지를 사용할 수 있습니다.';
+$string['errormustsupplyvalue'] = '여기에 값을 입력해야합니다.';
 $string['errorpresetexists'] = '지정된 이름으로 미리 설정이 되어 있음';
 $string['eventfieldcreated'] = '필드 생성됨';
 $string['eventfielddeleted'] = '필드 삭제됨';
@@ -233,6 +234,7 @@ $string['invalidurl'] = '맞지 않는 URL';
 $string['jstemplate'] = '자바스크립트 템플릿';
 $string['latitude'] = '위도';
 $string['latlong'] = '위도/경도';
+$string['latlongboth'] = '위도와 경도가 모두 필요합니다.';
 $string['latlongdownloadallhint'] = '모든 입력을 KML로 간주';
 $string['latlongkmllabelling'] = '입력을 KML파일로 명하는 법(Google Earth)';
 $string['latlonglinkservicesdisplayed'] = '외부 표현 양식';
@@ -302,6 +304,7 @@ $string['presets'] = '초기설정들';
 $string['radiobutton'] = '라디오버튼';
 $string['recordapproved'] = '게시물이 허용됨';
 $string['recorddeleted'] = '게시물이 삭제됨';
+$string['recorddisapproved'] = '승인되지 않은 항목';
 $string['recordsnotsaved'] = '게시물이 저장되지 않음. 올린 파일의 형식을 점검하기 바랍니다.';
 $string['recordssaved'] = '게시물이 저장됨';
 $string['requireapproval'] = '승인이 필요합니다';
@@ -324,6 +327,7 @@ $string['rows'] = '열';
 $string['rssglobaldisabled'] = '비활성화됨. 사이트 설정 변수를 확인하세요.';
 $string['rsstemplate'] = 'RSS 템플릿';
 $string['rsstitletemplate'] = 'RSS 표제 템플릿';
+$string['rsstype'] = '이 활동을 RSS로 내보냄';
 $string['save'] = '저장';
 $string['saveandadd'] = '저장 및 추가';
 $string['saveandview'] = '저장 및 보기';
@@ -342,6 +346,7 @@ $string['subplugintype_datafield'] = '데이터베이스 필드 유형';
 $string['subplugintype_datafield_plural'] = '데이터베이스 필드 유형';
 $string['subplugintype_datapreset'] = '프리셋';
 $string['subplugintype_datapreset_plural'] = '초기설정들';
+$string['tagarea_data_records'] = '데이터 기록';
 $string['tags'] = '태그';
 $string['teachersandstudents'] = '{$a->teachers} 및 {$a->students}';
 $string['templates'] = '템플릿';

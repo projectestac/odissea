@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ar', version '3.8'.
+ * Strings for component 'wiki', language 'ar', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -42,7 +42,7 @@ $string['backtomapmenu'] = 'العودة لقائمة الخريطة';
 $string['cannotcomparenewerversion'] = 'إصدار الصفحة يمكن مقارنته فقط بإصدار أقدم.';
 $string['cannoteditpage'] = 'لا يمكنك تحرير هذه الصفحة.';
 $string['cannotmanagefiles'] = 'ليس لديك صلاحيات إدارة ملفات الويكي';
-$string['cannotviewfiles'] = 'ليس لديك صلاحية استعراض ملفات الويكي.';
+$string['cannotviewfiles'] = 'ليس لديك صلاحية معاينة ملفات الويكي.';
 $string['cannotviewpage'] = 'لا يمكنك معاينة هذه الصفحة.';
 $string['changerate'] = 'هل ترغب في تغيرها؟';
 $string['comments'] = 'التعليقات';
@@ -78,18 +78,18 @@ $string['editcomment'] = 'تحرير التعليق';
 $string['editfiles'] = 'تحرير ملفات الويكي';
 $string['editing'] = 'تحرير صفحة الويكي';
 $string['editingcomment'] = 'تحرير التعليق';
-$string['editingpage'] = 'تحرير الصفحة: {$a}';
+$string['editingpage'] = 'يجري تحرير هذه الصفحة: {$a}';
 $string['editsection'] = 'تحرير';
 $string['eventdiffviewed'] = 'اختلاف ويكي تمت معاينته';
 $string['eventhistoryviewed'] = 'ماضي ويكي تمت معاينته';
 $string['eventmapviewed'] = 'خريطة صفحة ويكي تمت معاينتها';
-$string['eventpagecreated'] = 'تم إنشاء صفحة ويكي';
-$string['eventpagedeleted'] = 'تم حذف صفحة ويكي';
-$string['eventpagelocksdeleted'] = 'تم حذف أقفال صفحة ويكي';
-$string['eventpageupdated'] = 'تم تحديث صفحة ويكي';
-$string['eventpageversiondeleted'] = 'تم حذف إصدار صفحة ويكي';
+$string['eventpagecreated'] = 'صفحة ويكي تم إنشاؤها';
+$string['eventpagedeleted'] = 'صفحة ويكي تم حذفها';
+$string['eventpagelocksdeleted'] = 'تأمينات صفحة ويكي تم حذفها';
+$string['eventpageupdated'] = 'صفحة ويكي تم تحديثها';
+$string['eventpageversiondeleted'] = 'إصدار صفحة ويكي تم حذفه';
 $string['eventpageviewed'] = 'صفحة ويكي تمت معاينتها';
-$string['eventversionrestored'] = 'تمت استعادة إصدار ويكي';
+$string['eventversionrestored'] = 'إصدار ويكي تمت استعادته';
 $string['eventversionviewed'] = 'إصدار صفحة ويكي تمت معاينته';
 $string['filenotuploadederror'] = 'تعذر رفع الملف \'{$a}\' بشكل صحيح.';
 $string['files'] = 'ملفات';
@@ -97,7 +97,7 @@ $string['filtername'] = 'الربط التلقائي لصفحة الويكي';
 $string['firstpagetitle'] = 'اسم الصفحة الأولى';
 $string['firstpagetitle_help'] = 'عنوان الصفحة الرئيسية للويكي. بمجرد إنشاء الويكي، لن يكون بالإمكان تغيير العنوان.';
 $string['forceformat'] = 'فرض التنسيق';
-$string['forceformat_help'] = 'إن تم إجبار التنسيق (تفعيل الخيار)، لن يكون هناك إمكانية لاختيار التنسيق عند تحرير صفحة الويكي.';
+$string['forceformat_help'] = 'إن تم فرض التنسيق (تفعيل الخيار)، لن يكون هناك إمكانية لاختيار التنسيق عند تحرير صفحة الويكي.';
 $string['format'] = 'التنسيق';
 $string['format_help'] = '* HTML - محرر HTML متاح
 * Creole - لغة معلَّمات شائعة خاصة بويكي والتي لها شريط أدوات صغير
@@ -133,15 +133,15 @@ $string['individualpagedoesnotexist'] = 'صفحة ويكي شخصية غير م�
 $string['insertcomment'] = 'إدراج تعليق';
 $string['insertimage'] = 'أدرج صورة...';
 $string['insertimage_help'] = 'ستقوم القائمة المنسدلة هذه بإدراج صورة في محرر ويكي. إذا كنت بحاجة إلى إضافة المزيد من الصور إلى الويكي، استعمل لطفاً تبويب "الملفات".';
-$string['invalidlock'] = 'هذه الصفحة مقفلة أصلا من قبل مستخدم آخر.';
+$string['invalidlock'] = 'هذه الصفحة مؤمنة مسبقًا من قبل مستخدم آخر.';
 $string['invalidparameters'] = 'تم إعطاء عوامل غير صحيحة.';
 $string['invalidsection'] = 'مقطع غير صالح';
 $string['invalidsesskey'] = 'جلستك انتهت صلاحيتها على الأغلب. لطفاً، أكتب ملاحظات بشأن ما حررته ثم سجل دخولك مجدداً.';
-$string['javascriptdisabledlocks'] = 'إن JavaScript غير مفعلة في متصفحك لذا لن يعمل القفل، قد لا يتم حفظ التغييرات التي ستقوم بها بشكل صحيح.';
+$string['javascriptdisabledlocks'] = 'إن JavaScript غير مفعلة في متصفحك لذا لن يعمل التأمين، قد لا يتم حفظ التغييرات التي ستقوم بها بشكل صحيح.';
 $string['links'] = 'روابط';
 $string['listall'] = 'أدرج الكل';
 $string['listorphan'] = 'عرض الضفحات اليتيمة';
-$string['lockingajaxtimeout'] = 'تحرير زمن تحديث قفل الصفحة';
+$string['lockingajaxtimeout'] = 'تحرير زمن تحديث تأمين الصفحة';
 $string['lockingtimeout'] = 'زمن الثفل';
 $string['map'] = 'خريطة';
 $string['mapmenu'] = 'قائمة الخريطة';
@@ -174,25 +174,25 @@ $string['noattachments'] = '<strong>لا يوجد ملفات مرفقة</strong>
 $string['nocomments'] = 'لا توجد تعليقات';
 $string['nocontent'] = 'لا يوجد محتوى في هذه الصفحة';
 $string['nocontribs'] = 'ليس لديك مساهمات في هذه الصفحة';
-$string['nocreatepermission'] = 'يجب أن يكون لديك الإذن بإنشاء الصفحة';
-$string['noeditcommentpermission'] = 'تحرير التعليق يحتاح إلى صلاحية';
-$string['noeditpermission'] = 'تحرير الصفحة يحتاح إلى صلاحية';
+$string['nocreatepermission'] = 'يتطلب الأمر صلاحية إنشاء الصفحة';
+$string['noeditcommentpermission'] = 'يتطلب الأمر صلاحية تحرير التعليق';
+$string['noeditpermission'] = 'يتطلب الأمر صلاحية تحرير الصفحة';
 $string['nofrompages'] = 'لا يوجد روابط إلى هذه الصفحة';
 $string['nohistory'] = 'لا يوجد تاريخ لهذه الصفحة';
 $string['nomanagecommentpermission'] = 'يتطلب الأمر صلاحية إدارة التعليقات';
-$string['nomanagewikipermission'] = 'يتطلب الأمر صلاحية إدارة ويكي';
+$string['nomanagewikipermission'] = 'يتطلب الأمر صلاحية إدارة الويكي';
 $string['noorphanedpages'] = 'لا توجد صفحات يتيمة';
-$string['nooverridelockpermission'] = 'يتطلب الأمر صلاحية تجاوز القفل';
+$string['nooverridelockpermission'] = 'يتطلب الأمر صلاحية تجاوز التأمين';
 $string['norated'] = 'لم يتم تقييم هذه الصفحة بعد، كن الأول!';
 $string['norating'] = 'لا يوجد تقييم';
 $string['nosearchresults'] = 'لا يوجد نتائج';
-$string['noteditblocks'] = 'عطل تحرير الكتل';
+$string['noteditblocks'] = 'تعطيل تحرير الكتل';
 $string['notingroup'] = 'لا ينتمي إلى مجموعة';
 $string['notmigrated'] = 'لم يتم تهجير هذا الويكي بعد. لطفاً، تواصل مع مشرفك.';
 $string['notopages'] = 'لا ترتبط هذه الصفحة بصفحات أخرى';
 $string['noupdatedpages'] = 'لا يوجد صفحات محدثه';
-$string['noviewcommentpermission'] = 'معاينة التعليقات يتطلب صلاحية';
-$string['noviewpagepermission'] = 'معاينة الصفحة يتطلب صلاحية';
+$string['noviewcommentpermission'] = 'يتطلب الأمر صلاحية معاينة التعليقات';
+$string['noviewpagepermission'] = 'يتطلب الأمر صلاحية معاينة الصفحة';
 $string['nwiki'] = 'NWiki';
 $string['oldversion'] = 'إصدار قديم';
 $string['orphaned'] = 'الصفحات اليتيمة';
@@ -222,8 +222,8 @@ $string['privacy:metadata:core_files'] = 'الملفات المرفقة بالو
 $string['privacy:metadata:core_tag'] = 'الوسوم المرتبطة بصفحات الويكي';
 $string['privacy:metadata:wiki_locks'] = 'مخزن مؤقت لأقفال تحرير ويكي';
 $string['privacy:metadata:wiki_locks:lockedat'] = 'تاريخ الإقفال';
-$string['privacy:metadata:wiki_locks:sectionname'] = 'اسم المقطع المقفل من الصفحة';
-$string['privacy:metadata:wiki_locks:userid'] = 'المستخدم الذي أقفل الصفحة';
+$string['privacy:metadata:wiki_locks:sectionname'] = 'اسم المقطع المؤمن من الصفحة';
+$string['privacy:metadata:wiki_locks:userid'] = 'المستخدم الذي قام بتأمين الصفحة';
 $string['privacy:metadata:wiki_pages'] = 'معلومات عن صفحات ويكي';
 $string['privacy:metadata:wiki_pages:cachedcontent'] = 'المحتوى المخبأ بتنسيق HTML';
 $string['privacy:metadata:wiki_pages:pageviews'] = 'عدد مرات معاينة الصفحة';
@@ -291,13 +291,13 @@ $string['wiki'] = 'ويكي';
 $string['wiki:addinstance'] = 'إضافة ويكي جديد';
 $string['wiki:createpage'] = 'إنشاء صفحات ويكي جديدة';
 $string['wiki:editcomment'] = 'إضافة تعليقات للصفحات';
-$string['wiki:editpage'] = 'حفظ صفحات ويكي';
+$string['wiki:editpage'] = 'تحرير صفحات ويكي';
 $string['wiki:managecomment'] = 'إدارة تعليقات الويكي';
 $string['wiki:managefiles'] = 'إدارة ملفات الويكي';
 $string['wiki:managewiki'] = 'إدارة إعدادات الويكي';
 $string['wiki:overridelock'] = 'تجاوز أقفال ويكي';
-$string['wiki:viewcomment'] = 'استعراض تعليقات الصفحة';
-$string['wiki:viewpage'] = 'استعراض صفحات الويكي';
+$string['wiki:viewcomment'] = 'معاينة تعليقات الصفحة';
+$string['wiki:viewpage'] = 'معاينة صفحات الويكي';
 $string['wikiattachments'] = 'مرفقات ويكي';
 $string['wikiboldtext'] = 'نص غامق';
 $string['wikiexternalurl'] = 'رابط خارجي';

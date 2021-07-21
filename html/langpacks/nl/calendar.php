@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'nl', version '3.8'.
+ * Strings for component 'calendar', language 'nl', version '3.11'.
  *
  * @package     calendar
  * @category    string
@@ -143,6 +143,7 @@ $string['eventtypecourse'] = 'cursus';
 $string['eventtypeglobal'] = 'globaal';
 $string['eventtypegroup'] = 'groep';
 $string['eventtypemodule'] = 'module';
+$string['eventtypeother'] = 'andere';
 $string['eventtypesite'] = 'site';
 $string['eventtypeuser'] = 'gebruiker';
 $string['eventview'] = 'Details';
@@ -177,7 +178,7 @@ $string['invalidtimedurationminutes'] = 'De tijdsduur in minuten is ongeldig. Ge
 $string['invalidtimedurationuntil'] = 'De datum en tijd die je selecteerde voor de tijdsduur is voor de begintijd van de gebeurtenis. Verbeter dit voor je verdergaat.';
 $string['iwanttoexport'] = 'Exporteer';
 $string['less'] = 'Minder';
-$string['managesubscriptions'] = 'Beheer inschrijvingen';
+$string['managesubscriptions'] = 'Beheer kalenders';
 $string['manyevents'] = '{$a} activiteiten';
 $string['mon'] = 'Ma';
 $string['monday'] = 'Maandag';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'en', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'en', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -47,6 +47,6 @@ $string['pluginname'] = 'Offline grading worksheet';
 $string['privacy:nullproviderreason'] = 'This plugin has no database to store user information. It only uses APIs in mod_assign to help with displaying the grading interface.';
 $string['processgrades'] = 'Import grades';
 $string['skiprecord'] = 'Skip record';
-$string['updatedgrades'] = 'Updated {$a} grades and feedback';
+$string['updatedgrades'] = 'Updated <strong>{$a->gradeupdatescount}</strong> grades and <strong>{$a->feedbackupdatescount}</strong> feedback instances.';
 $string['updaterecord'] = 'Update record';
 $string['uploadgrades'] = 'Upload grading worksheet';

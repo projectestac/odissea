@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'zh_cn', version '3.8'.
+ * Strings for component 'user', language 'zh_cn', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = '添加条件';
+$string['adverbfor_and'] = '与';
+$string['adverbfor_andnot'] = '与';
+$string['adverbfor_or'] = '或';
+$string['applyfilters'] = '应用过滤器';
+$string['clearfilterrow'] = '移除过滤器行';
+$string['clearfilters'] = '清空过滤器';
+$string['clearfilterselection'] = '从过滤器移除 "{$a}"';
+$string['countparticipantsfound'] = '找到了{$a}个参与人';
+$string['filterbykeyword'] = '关键词';
+$string['filterrowlegend'] = '过滤器 {$a}';
+$string['filtersetmatchdescription'] = '如何组合多个过滤器';
+$string['match'] = '匹配';
+$string['matchofthefollowing'] = '以下各项:';
+$string['moodlenetprofile'] = 'MoodleNet 配置文件';
+$string['placeholdertype'] = '输入...';
+$string['placeholdertypeorselect'] = '输入或选择…';
 $string['privacy:courserequestpath'] = '申请的课程';
 $string['privacy:descriptionpath'] = '个人档案描述';
 $string['privacy:devicespath'] = '用户设备';
@@ -77,6 +94,7 @@ $string['privacy:metadata:maildisplay'] = '用户向其他用户显示其电子�
 $string['privacy:metadata:middlename'] = '用户的中间名';
 $string['privacy:metadata:mnethostid'] = 'MNet 主机的标识符（如果使用）';
 $string['privacy:metadata:model'] = '设备名称，occam 或 iPhone 等。';
+$string['privacy:metadata:moodlenetprofile'] = '用户的 MoodleNet 配置文件';
 $string['privacy:metadata:msn'] = '用户的 MSN 号';
 $string['privacy:metadata:my_pages'] = '用户页面 - 个人主页和个人档案。此表不包含个人数据，仅用于将个人主页版块链接到用户';
 $string['privacy:metadata:my_pages:name'] = '页面名称';
@@ -128,6 +146,7 @@ $string['privacy:passwordresetpath'] = '密码重置';
 $string['privacy:privatefilespath'] = '私人文件';
 $string['privacy:profileimagespath'] = '头像';
 $string['privacy:sessionpath'] = '会话数据';
+$string['selectfiltertype'] = '选择';
 $string['target:upcomingactivitiesdue'] = '即将到来的活动';
 $string['target:upcomingactivitiesdue_help'] = '此目标为即将到来的活动生成提醒。';
 $string['target:upcomingactivitiesdueinfo'] = '此处列出了所有即将到来的应有见解的活动。这些学生直接收到了这些见解。';

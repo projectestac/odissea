@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_manual', language 'pt', version '3.8'.
+ * Strings for component 'auth_manual', language 'pt', version '3.11'.
  *
  * @package     auth_manual
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_manualdescription'] = 'Este método elimina qualquer hipótese de os utilizadores poderem criar as suas próprias contas. Todas as contas terão que ser criadas manualmente pelo administrador.';
+$string['auth_manualdescription'] = 'Este método elimina qualquer hipótese dos utilizadores poderem criar as suas próprias contas. Todas as contas terão que ser criadas manualmente pelo administrador.';
 $string['expiration'] = 'Ativar validade da senha';
 $string['expiration_desc'] = 'Permitir que as senhas expirem após um período de tempo específico.';
 $string['expiration_warning'] = 'Limite de notificação';

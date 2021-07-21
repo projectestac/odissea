@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'ar', version '3.8'.
+ * Strings for component 'theme_clean', language 'ar', version '3.11'.
  *
  * @package     theme_clean
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['footnotedesc'] = 'سيتم عرض كل ما تضيفه إلى مربع النص هذا في تذييل الصفحة عبر موقع مودل الخاص بك.';
 $string['logo'] = 'الشعار';
 $string['privacy:metadata'] = 'مظهر Clean لا يخزن أي بيانات شخصية عن أيّ مستخدم.';
 $string['sitelogo'] = 'شعار الموقع';

@@ -57,5 +57,14 @@ function xmldb_filter_displayh5p_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2020031700, 'filter', 'displayh5p');
     }
 
+    // Automatically generated Moodle v3.9.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.10.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.11.0 release upgrade line.
+    // Put any upgrade step following this.
+
     return true;
 }

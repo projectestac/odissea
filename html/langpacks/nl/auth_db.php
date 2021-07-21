@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'nl', version '3.8'.
+ * Strings for component 'auth_db', language 'nl', version '3.11'.
  *
  * @package     auth_db
  * @category    string
@@ -54,7 +54,7 @@ $string['auth_dbnoexttable'] = 'Externe tabel niet gespecificeerd.';
 $string['auth_dbnouserfield'] = 'Extern gebruikersveld niet gespecificeerd.';
 $string['auth_dbpass'] = 'Wachtwoord dat bij de bovengenoemde gebruikersnaam past';
 $string['auth_dbpass_key'] = 'Wachtwoord';
-$string['auth_dbpasstype'] = '<p>Geef hier aan welk formaat het wachtwoordveld gebruikt.</p><p>Gebruik "intern" als je een externe databank het beheer van gebruikersnamen en e-mailadressen wil laten doen, maar Moodle het wachtwoordbeheer. Als je "intern" gebruikt <i>moet</i> je een gevuld e-mailadresveld hebben in de externe databank en moet je zowel admin/cron.php als auth/db/cli/sync_users.php regelmatig laten lopen. Moodle zal een e-mail sturen met een tijdelijk wachtwoord sturen naar nieuwe gebruikers .</p>';
+$string['auth_dbpasstype'] = '<p>Geef hier aan welk formaat het wachtwoordveld gebruikt.</p><p>Gebruik "intern" als je een externe databank het beheer van gebruikersnamen en e-mailadressen wil laten doen, maar Moodle het wachtwoordbeheer. Als je "intern" gebruikt moet je een gevuld e-mailadresveld hebben in de externe databank en moet je de geplande taak \\auth_db\\task\\sync_users regelmatig laten lopen. Moodle zal een e-mail sturen met een tijdelijk wachtwoord sturen naar nieuwe gebruikers .</p>';
 $string['auth_dbpasstype_key'] = 'Wachtwoordformaat';
 $string['auth_dbreviveduser'] = 'Teruggehaalde gebruiker {$a->name} id {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Fout bij het terughalen van gebruiker {$a}';

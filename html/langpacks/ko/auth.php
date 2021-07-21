@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ko', version '3.8'.
+ * Strings for component 'auth', language 'ko', version '3.11'.
  *
  * @package     auth
  * @category    string
@@ -138,7 +138,7 @@ $string['passwordhandling'] = '비밀번호 처리';
 $string['plaintext'] = '단순 텍스트';
 $string['pluginnotenabled'] = '인증 플러그인 \'{$a}\'은 활성화되어 있지 않습니다.';
 $string['pluginnotinstalled'] = '인증 플러그인 \'{$a}\'은 설치되어 있지 않습니다.';
-$string['potentialidps'] = '귀하의 계정을 사용하여 로그인하십시오 :';
+$string['potentialidps'] = '등록된 계정을 사용해 로그인해주세요:';
 $string['recaptcha'] = 'reCAPTCHA';
 $string['recaptcha_help'] = 'CAPTCHA는 자동화된 프로그램의 남용을 방지하기 위한 것입니다. 지시에 따라 자신이 사람인지 확인합니다. 이것은 확인할 상자, 입력해야 하는 이미지에 표시된 문자 또는 선택할 이미지 세트일 수 있습니다.
 

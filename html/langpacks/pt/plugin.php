@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'pt', version '3.8'.
+ * Strings for component 'plugin', language 'pt', version '3.11'.
  *
  * @package     plugin
  * @category    string
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Não é possível descarregar os dados de a
 $string['filterall'] = 'Mostrar tudo';
 $string['filtercontribonly'] = 'Mostrar apenas módulos adicionais';
 $string['filterupdatesonly'] = 'Mostrar apenas o que está disponível para atualizar';
+$string['incompatibleversion'] = 'Versão incompatível do Moodle: {$a}';
 $string['isenabled'] = 'Ativo?';
 $string['misdepinfoplugin'] = 'Informação do módulo';
 $string['misdepinfoversion'] = 'Informação da versão';
@@ -61,11 +62,13 @@ $string['misdepsavail'] = 'Dependências em falta disponíveis';
 $string['misdepsunavail'] = 'Dependências em falta indisponíveis';
 $string['misdepsunavaillist'] = 'Não foi encontrada nenhuma versão para preencher os pré-requisitos: {$a}.';
 $string['misdepsunknownlist'] = 'Não se encontra no diretório de módulos: <strong>{$a}</strong>.';
+$string['moodlebranch'] = 'Moodle {$a->min} - {$a->max}';
 $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Não foram instalados módulos desse tipo';
 $string['notdownloadable'] = 'Não é possível descarregar o pacote';
-$string['notdownloadable_help'] = 'O pacote ZIP com a atualização não pode ser descarregado automaticamente. Por favor, consulte a página de documentação para obter mais ajuda.';
+$string['notdownloadable_help'] = 'O pacote ZIP com a atualização não pode ser descarregado automaticamente.';
 $string['notes'] = 'Observações';
+$string['notsupported'] = 'O módulo pode não ser compatível com a versão Moodle {$a}';
 $string['notwritable'] = 'Os ficheiros do módulo não permitem escrita';
 $string['notwritable_help'] = 'O servidor web não tem permissões de escrita nos ficheiros do módulo.  O servidor web tem de ter acesso de escrita à pasta do módulo e a todos os seus conteúdos. Poderá também ser necessário acesso de escrita à pasta de raiz do tipo de módulo.';
 $string['otherplugin'] = '{$a->component}';
@@ -81,7 +84,7 @@ $string['packagesvalidatingfailed'] = 'Instalação interrompida devido a falha 
 $string['packagesvalidatingok'] = 'Validação bem sucedida! A instalação pode continuar';
 $string['plugincheckall'] = 'Todos os módulos';
 $string['plugincheckattention'] = 'Módulos que requerem atenção';
-$string['pluginchecknone'] = 'De momento, nenhum módulo necessita de atenção';
+$string['pluginchecknone'] = 'De momento, nenhum módulo requer atenção';
 $string['pluginchecknotice'] = 'Esta página exibe os módulos que podem exigir a sua atenção durante a atualização, tais como, novos módulos que estão prestes a ser instalados, módulos que estão prestes a ser atualizados e quaisquer módulos em falta. Os módulos adicionais serão exibidos se houver uma atualização disponível para eles. É recomendado que verifique se existem versões mais recentes dos módulos instalados e, em caso afirmativo, atualizar o respetivo código-fonte antes de continuar com esta atualização do Moodle.';
 $string['plugindisable'] = 'Desativar';
 $string['plugindisabled'] = 'Desativado';
@@ -120,6 +123,8 @@ $string['type_cachestore'] = 'Unidade de armazenamento da cache';
 $string['type_cachestore_plural'] = 'Unidades de armazenamento da cache';
 $string['type_calendartype'] = 'Tipo de calendário';
 $string['type_calendartype_plural'] = 'Tipos de calendário';
+$string['type_contentbank'] = 'Banco de conteúdos';
+$string['type_contentbank_plural'] = 'Módulos de banco de conteúdos';
 $string['type_coursereport'] = 'Relatório da disciplina';
 $string['type_coursereport_plural'] = 'Relatórios da disciplina';
 $string['type_customfield'] = 'Campo personalizado';
@@ -145,10 +150,12 @@ $string['type_gradereport'] = 'Relatório da pauta';
 $string['type_gradereport_plural'] = 'Relatórios da pauta';
 $string['type_gradingform'] = 'Método de avaliação avançada';
 $string['type_gradingform_plural'] = 'Métodos de avaliação avançada';
+$string['type_h5plib'] = 'Framework H5P';
+$string['type_h5plib_plural'] = 'Frameworks H5P';
 $string['type_local'] = 'Módulo local';
 $string['type_local_plural'] = 'Módulos locais';
-$string['type_media'] = 'Leitor de Media';
-$string['type_media_plural'] = 'Leitores de Media';
+$string['type_media'] = 'Leitor multimédia';
+$string['type_media_plural'] = 'Leitores multimédia';
 $string['type_message'] = 'Módulo Notificação';
 $string['type_message_plural'] = 'Módulos Notificação';
 $string['type_mlbackend'] = 'Estrutura de suporte à aprendizagem';
@@ -157,13 +164,16 @@ $string['type_mnetservice'] = 'MNet service';
 $string['type_mnetservice_plural'] = 'MNet services';
 $string['type_mod'] = 'Módulo de atividade';
 $string['type_mod_plural'] = 'Módulos de atividade';
+$string['type_paygw'] = 'Gateway de pagamento';
+$string['type_paygw_plural'] = 'Gateways de pagamento';
+$string['type_paygwmanage'] = 'Gerir gateways de pagamento';
 $string['type_plagiarism'] = 'Módulo de prevenção de plágio';
 $string['type_plagiarism_plural'] = 'Módulos de prevenção de plágio';
 $string['type_portfolio'] = 'Portefólio';
 $string['type_portfolio_plural'] = 'Portefólios';
 $string['type_profilefield'] = 'Tipo de campo de perfil';
 $string['type_profilefield_plural'] = 'Tipos de campos do perfil';
-$string['type_qbehaviour'] = 'Comportamento da pergunta';
+$string['type_qbehaviour'] = 'Comportamento das pergunta';
 $string['type_qbehaviour_plural'] = 'Comportamentos das perguntas';
 $string['type_qformat'] = 'Formato de importação/exportação de perguntas';
 $string['type_qformat_plural'] = 'Formatos de importação/exportação de perguntas';
@@ -179,8 +189,8 @@ $string['type_theme'] = 'Tema';
 $string['type_theme_plural'] = 'Temas';
 $string['type_tool'] = 'Ferramenta do admin';
 $string['type_tool_plural'] = 'Ferramentas de administração';
-$string['type_webservice'] = 'Protocolo Web service';
-$string['type_webservice_plural'] = 'Protocolos Web service';
+$string['type_webservice'] = 'Protocolo do web service';
+$string['type_webservice_plural'] = 'Protocolos do web service';
 $string['uninstall'] = 'Desinstalar';
 $string['uninstallconfirm'] = 'Está prestes a desinstalar o módulo \'<strong>{$a->name}</strong>\'. Isto irá apagar completamente tudo o que existe na base de dados associado a este módulo, incluindo a sua configuração, registos de atividade, ficheiros do utilizador geridos pelo módulo, etc. Esta operação é irreversível e o Moodle não cria qualquer cópia de segurança para recuperação. Tem a certeza de que pretende continuar?';
 $string['uninstalldelete'] = 'Todos os dados associados ao módulo \'<strong>{$a->name}</strong>\' foram eliminados da base de dados. Para evitar que o módulo se reinstale, a respetiva pasta [<em>{$a->rootdir}</em>] deve ser agora removida manualmente do seu servidor. O Moodle por si só não pode remover a pasta devido a permissões de escrita.';

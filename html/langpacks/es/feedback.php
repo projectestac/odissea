@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'es', version '3.8'.
+ * Strings for component 'feedback', language 'es', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -124,7 +124,7 @@ $string['feedback:viewanalysepage'] = 'Ver página de análisis después del env
 $string['feedback:viewreports'] = 'Ver informes';
 $string['feedback_is_not_for_anonymous'] = 'la encuesta no es anónima';
 $string['feedback_is_not_open'] = 'La encuesta no está disponible';
-$string['feedbackclose'] = 'Permitir respuestas a';
+$string['feedbackclose'] = 'Permitir respuestas hasta';
 $string['feedbackcompleted'] = '{$a->username} ha completado {$a->feedbackname}';
 $string['feedbackopen'] = 'Permitir respuestas de';
 $string['file'] = 'Archivo';
@@ -206,7 +206,7 @@ $string['only_one_captcha_allowed'] = 'Solo se permite un captcha por encuesta';
 $string['overview'] = 'Vista general';
 $string['page'] = 'Página';
 $string['page-mod-feedback-x'] = 'Cualquier página del módulo Encuesta';
-$string['page_after_submit'] = 'Mensaje de finalizado';
+$string['page_after_submit'] = 'Mensaje de finalización';
 $string['pagebreak'] = 'Salto de página';
 $string['pluginadministration'] = 'Administración de la encuesta';
 $string['pluginname'] = 'Módulo de encuesta';

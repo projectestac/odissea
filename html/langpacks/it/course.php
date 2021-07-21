@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'it', version '3.8'.
+ * Strings for component 'course', language 'it', version '3.11'.
  *
  * @package     course
  * @category    string
@@ -25,11 +25,37 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitychooseractivefooter'] = 'Piè di pagina del selettore attività';
+$string['activitychooseractivefooter_desc'] = 'Il selettore attività supporta plugin che aggiungono elementi al piè di pagina.';
+$string['activitychoosercategory'] = 'Selettore attività';
+$string['activitychooserhidefooter'] = 'Nessun piè di pagina';
+$string['activitychooserrecommendations'] = 'Attività suggerite';
+$string['activitychoosersettings'] = 'Impostazioni selettore attività';
+$string['activitychoosertabmode'] = 'Schede selettore attività';
+$string['activitychoosertabmode_desc'] = 'Con il selettore attività i docenti possono selezionare facilmente le attività e le risorse da aggiungere nel corso. L\'impostazione consente di definire le schede che appariranno nel selettore. Da notare che la scheda \'Preferite\' sarà visualizzata dopo l\'espressione di preferenza su almeno un\'attività. Analogamente la scheda \'Suggerite\' sarà visualizzato dopo che l\'amministratore del sito avrà indicato una o più attività come suggerite.';
+$string['activitychoosertabmodeone'] = 'Preferite, Tutte, Attività, Risorse, Suggerite';
+$string['activitychoosertabmodethree'] = 'Preferite, Attività, Risorse, Suggerite';
+$string['activitychoosertabmodetwo'] = 'Preferite, Tutte, Suggerite';
+$string['activitydate:closed'] = 'Chiuso:';
+$string['activitydate:closes'] = 'Chiusura:';
+$string['activitydate:opened'] = 'Aperto:';
+$string['activitydate:opens'] = 'Apertura:';
 $string['aria:coursecategory'] = 'Categoria di corsi';
 $string['aria:courseimage'] = 'Immagine del corso';
 $string['aria:coursename'] = 'Titolo del corso';
 $string['aria:courseshortname'] = 'Titolo abbreviato del corso';
+$string['aria:defaulttab'] = 'Attività di default';
 $string['aria:favourite'] = 'Il corso è tra i preferiti';
+$string['aria:favouritestab'] = 'Attività preferite';
+$string['aria:modulefavourite'] = 'Rendi preferita l\'attività {$a}';
+$string['aria:recommendedtab'] = 'Attività suggerite';
+$string['completion_automatic:done'] = 'Fatto:';
+$string['completion_automatic:failed'] = 'Non superato:';
+$string['completion_automatic:todo'] = 'Da fare';
+$string['completion_manual:markdone'] = 'Spunta come completato';
+$string['completion_setby:auto:done'] = 'Completato: {$a->condition} (impostato da {$a->setby})';
+$string['completion_setby:auto:todo'] = 'Da completare: $a->condition} (Impostato da {$a->setby})';
+$string['completionrequirements'] = 'Criteri di completamento di {$a}';
 $string['coursealreadyfinished'] = 'Il corso è terminato';
 $string['coursenotyetfinished'] = 'Il corso non è terminato';
 $string['coursenotyetstarted'] = 'Il corso non è iniziato';
@@ -42,19 +68,41 @@ $string['customfield_visibility_help'] = 'L\'impostazione determina chi potrà v
 $string['customfield_visibletoall'] = 'Tutti';
 $string['customfield_visibletoteachers'] = 'Docenti';
 $string['customfieldsettings'] = 'Impostazioni comuni dei campi personalizzati del corso';
+$string['downloadcourseconfirmation'] = 'Stai per scaricare lo zip con i contenuti del corso (con esclusione degli elementi che non possono essere scaricati e i file più grandi di {$a}).';
+$string['downloadcoursecontent'] = 'Scarica contenuti del corso';
+$string['downloadcoursecontent_help'] = 'Abilita la possibilità di scaricare il contenuto del corso da parte degli utenti il cui ruolo ha il privilegio di farlo (di default il ruolo studente e docente).';
+$string['enabledownloadcoursecontent'] = 'Abilita scaricamento contenuti del corso';
 $string['errorendbeforestart'] = 'La data di fine ({$a}) è antecedente alla data di inizio.';
 $string['favourite'] = 'Corso preferito';
 $string['gradetopassnotset'] = 'Il corso non ha una valutazione minima per superarlo. E\' possibile impostarla nel registro delle valutazioni.';
+$string['informationformodule'] = 'Informazioni sull\'attività {$a}';
+$string['module'] = 'Attività';
+$string['noaccesssincestartinfomessage'] = 'Gentile {$a->userfirstname},
+<p>Nel corso  {$a->coursename} ci sono studenti che non lo hanno mai acceduto.</p>';
 $string['nocourseactivity'] = 'Nel corso non sono presenti un numero sufficiente di attività tra la data di inizio e la data di fine del corso stesso.';
 $string['nocourseendtime'] = 'Il corso non ha una data di fine';
 $string['nocoursesections'] = 'Non ci cono sezioni del corso';
 $string['nocoursestudents'] = 'Non ci sono studenti';
+$string['norecentaccessesinfomessage'] = 'Gentile {$a->userfirstname},
+<p>Nel corso  {$a->coursename} ci sono studenti che non accedono da tempo.</p>';
+$string['noteachinginfomessage'] = 'Gentile {$a->userfirstname},
+<p>Ci sono corsi in partenza la prossima settimana che non hanno docenti né studenti iscritti.</p>';
 $string['privacy:completionpath'] = 'Completamento corso';
 $string['privacy:favouritespath'] = 'Informazioni sui corsi preferiti';
+$string['privacy:metadata:activityfavouritessummary'] = 'Il sistema corso contiene informazioni sugli elementi del selettore attività che sono i preferiti degli utenti.';
 $string['privacy:metadata:completionsummary'] = 'Il corso contiene informazioni sul completamento relative all\'utente.';
 $string['privacy:metadata:favouritessummary'] = 'Il corso contiene informazioni relative al corso che l\'utente ha inserito fra i preferiti.';
 $string['privacy:perpage'] = 'Numero di corsi da visualizzare sulla pagina.';
+$string['recommend'] = 'Suggerisci';
+$string['recommendcheckbox'] = 'Attività suggerita: {$a}';
+$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} dopo l\'inizio del corso';
+$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} prima dell\'inizio del corso';
+$string['searchactivitiesbyname'] = 'Cerca attività per nome';
+$string['searchresults'] = 'Risultati della ricerca: {$a}';
 $string['studentsatriskincourse'] = 'Studenti a rischio nel corso {$a}';
+$string['studentsatriskinfomessage'] = 'Gentile {$a->userfirstname},
+<p>Nel corso  {$a->coursename} ci sono studenti a rischio.</p>';
+$string['submitsearch'] = 'Invia ricerca';
 $string['target:coursecompetencies'] = 'Studenti a rischio di non raggiungere le competenze assegnate al corso';
 $string['target:coursecompetencies_help'] = 'L\'obiettivo descrive se lo studente rischia di non raggiungere le competenze assegnate al corso. L\'obiettivo considera che tutte le competenze assegnate al corso dovranno essere raggiunte prima della fine del coso.';
 $string['target:coursecompletion'] = 'Studenti a rischio di non soddisfare i criteri di completamento del corso';

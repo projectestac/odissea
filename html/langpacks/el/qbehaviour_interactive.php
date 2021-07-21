@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactive', language 'el', version '3.8'.
+ * Strings for component 'qbehaviour_interactive', language 'el', version '3.11'.
  *
  * @package     qbehaviour_interactive
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Συμπεριφορά ερώτησης διαδραστικής με πολλαπλές προσπάθειες';
+$string['pluginname'] = 'Διαδραστική με πολλαπλές προσπάθειες';
 $string['privacy:metadata'] = 'Το πρόσθετο συμπεριφοράς ερώτησης «Διαδραστική με πολλαπλές προσπάθειες» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['triesremaining'] = 'Προσπάθειες που απομένουν: {$a}';
 $string['tryagain'] = 'Προσπαθήστε ξανά';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'ja', version '3.8'.
+ * Strings for component 'workshopallocation_random', language 'ja', version '3.11'.
  *
  * @package     workshopallocation_random
  * @category    string
@@ -50,6 +50,6 @@ $string['removecurrentallocations'] = '現在の割り当てを解除する';
 $string['resultnomorepeers'] = '利用可能な他のユーザは存在しません。';
 $string['resultnomorepeersingroup'] = 'この分離グループには利用可能な他のユーザは存在しません。';
 $string['resultnotenoughpeers'] = '利用可能な十分な他のユーザは存在しません。';
-$string['resultnumperauthor'] = '作者あたり {$a} 件のレビューを割り当て中';
+$string['resultnumperauthor'] = '作成者あたり {$a} 件のレビューを割り当て中';
 $string['resultnumperreviewer'] = '評価者あたり {$a} 件のレビューを割り当て中';
 $string['stats'] = '現在の割り当て統計';

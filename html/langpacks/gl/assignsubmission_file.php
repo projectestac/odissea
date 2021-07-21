@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'gl', version '3.8'.
+ * Strings for component 'assignsubmission_file', language 'gl', version '3.11'.
  *
  * @package     assignsubmission_file
  * @category    string
@@ -30,7 +30,7 @@ $string['acceptedfiletypes_help'] = 'Os tipos de ficheiro aceptados pódense res
 $string['configmaxbytes'] = 'Tamaño máximo do ficheiro';
 $string['countfiles'] = '{$a} ficheiros';
 $string['default'] = 'Activado de xeito predeterminado';
-$string['default_help'] = 'Se establece, este método de comentarios será activado como predeterminado para todas as novas tarefas.';
+$string['default_help'] = 'Se estabelece, este método de comentarios será activado como predeterminado para todas as novas tarefas.';
 $string['defaultacceptedfiletypes'] = 'Tipos predeterminados de ficheiros aceptados';
 $string['enabled'] = 'Entregas de ficheiros';
 $string['enabled_help'] = 'Se está activado, os alumnos serán quen de enviar un ou máis ficheiros como entrega.';

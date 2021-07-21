@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ja', version '3.8'.
+ * Strings for component 'survey', language 'ja', version '3.11'.
  *
  * @package     survey
  * @category    string
@@ -190,6 +190,7 @@ $string['collespintro'] = 'この調査の目的はあなたがオンライン�
 
 ありがとうございます。';
 $string['collespname'] = 'COLLES (要望)';
+$string['completiondetail:submit'] = '回答を送信する';
 $string['completionsubmit'] = '完了するには学生はこの活動に送信する必要があります。';
 $string['customintro'] = '説明';
 $string['deleteallanswers'] = 'すべての調査回答を削除する';

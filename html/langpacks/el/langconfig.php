@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'el', version '3.8'.
+ * Strings for component 'langconfig', language 'el', version '3.11'.
  *
  * @package     langconfig
  * @category    string
@@ -35,6 +35,7 @@ $string['iso6392'] = 'ell';
 $string['labelsep'] = ':';
 $string['listsep'] = ';';
 $string['locale'] = 'el_GR.UTF-8';
+$string['localecldr'] = 'el-GR';
 $string['localewin'] = 'Greek_Greece.1253';
 $string['localewincharset'] = 'WINDOWS-1253';
 $string['oldcharset'] = 'WINDOWS-1253';

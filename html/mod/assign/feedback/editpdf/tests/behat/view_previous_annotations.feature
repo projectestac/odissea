@@ -25,7 +25,7 @@ Feature: In an assignment, teacher can view the feedback for a previous attempt.
       | Description | Submit your PDF file |
       | assignsubmission_file_enabled | 1 |
       | Maximum number of uploaded files | 2 |
-      | Attempts reopened | Manually |
+      | Additional attempts | Manually |
       | Maximum attempts | Unlimited |
     And I log out
     And I log in as "student1"
@@ -54,9 +54,8 @@ Feature: In an assignment, teacher can view the feedback for a previous attempt.
     And I press "Save changes"
     And I wait until the page is ready
     And I should see "The changes to the grade and feedback were saved"
-    And I press "Ok"
     And I follow "View a different attempt"
-    And I click on "//div[contains(@class, 'moodle-dialogue-bd')]//label[2]" "xpath_element"
+    And I click on "Attempt 1" "radio" in the "View a different attempt" "dialogue"
     And I press "View"
     And I wait until the page is ready
     And I should see "You are editing the feedback for a previous attempt. This is attempt 1 out of 2."

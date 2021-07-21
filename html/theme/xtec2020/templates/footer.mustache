@@ -17,6 +17,11 @@
 {{!
     Page footer.
 }}
+<div id="goto-top-link">
+    <a class="btn btn-light" role="button" href="#" aria-label="{{#str}} totop, theme_xtec2020 {{/str}}">
+        {{#pix}} i/up, core{{/pix}}
+    </a>
+</div>
 <footer id="page-footer" class="container-fluid pb-3">
     <div class="row" id="page-footer-top">
         <div class="col-12 col-sm-3 align-self-end lang-icons">
@@ -46,11 +51,6 @@
     <div>
         <div class="footerlogos text-center mt-3">
             {{{ output.footer_logos }}}
-        </div>
-        <div id="goto-top-link" class="d-none d-sm-inline">
-            <a href="#top" class="btn btn-light">
-                {{#pix}} i/up, core, {{#str}} totop, theme_xtec2020 {{/str}}{{/pix}}
-            </a>
         </div>
         {{{ output.standard_end_of_body_html }}}
     </div>

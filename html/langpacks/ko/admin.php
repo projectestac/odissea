@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ko', version '3.8'.
+ * Strings for component 'admin', language 'ko', version '3.11'.
  *
  * @package     admin
  * @category    string
@@ -114,6 +114,7 @@ $string['cfgwwwrootwarning'] = 'config.php의 $CFG->wwwroot 를 잘못 지정하
 $string['change'] = '변경';
 $string['checkboxno'] = '아니오';
 $string['checkboxyes'] = '예';
+$string['checkupgradepending'] = '업그레이드';
 $string['choosefiletoedit'] = '편집할 파일 선택';
 $string['cleanup'] = '정리';
 $string['clianswerno'] = 'n';
@@ -217,7 +218,6 @@ $string['configenablemobilewebservice'] = '공식 무들 앱 혹은 같은 서�
 $string['configenablerssfeeds'] = '이 스위치는 무들에서 자료를 RSS 방식으로 내보낼 수 있게 한다. 각 모듈에서 RSS로 내보내려 한다면, 현재 어떤 상황인지를 살펴보고 안되면 관리자 환경설정 아래에 있는 모듈 설정에서 조정하라.';
 $string['configenablerssfeedsdisabled'] = '만일 사이트 전체 RSS 피드기능을 막아놓았다면, 이 기능은 이용할 수 없다. 이를 가능하게 하려면 우선 관리자 환경설정 아래에 있는 변수 설정으로 가서 사이트 전체의 설정을 바꾸어야 한다.';
 $string['configenablerssfeedsdisabled2'] = 'RSS 피드가 서버 수준에서 비활성화 되어 있습니다. 우선 서버/RSS에서 활성화 할 필요가 있습니다.';
-$string['configenablesafebrowserintegration'] = '이것은 퀴즈 설정 양식에서 브라우저 보안 항목에 \'안전 시험 브라우저 필요\' 라는 선택을 추가합니다. 자세한 것은 http://www.safeexambrowser.org/  를 참고하세요.';
 $string['configenablestats'] = '여기를 체크해 놓으면 무들의 일정관리 기능은 여러 기록과 통계를 수합할 것이다. 사이트의 부하에 따라 다소 시간이 걸릴 수도 있다. 이 기능을 활성화할 경우, 여러분의 강좌는 물론 사이트 전체에 관련된 여러 그래프와 통계를 볼 수 있다.';
 $string['configenabletrusttext'] = '무들은 기본적으로 사용자가 올리는 문서를 철저하게 검색하여 혹시 있을지 모르는 보안에 위해가 되는 악성코드 혹은 동영상 등을 제거합니다. 내용 검증 체계는 신임하는 사용자들이 올리는 내용에 대해서는 간섭하지 않고 향상된 기능을 포함시킬 수 있는 권한을 부여하는 형태로 이루어집니다. 이러한 체계를 가능하게 하려면, 우선 이 설정을 켜고, 내용신임 인증에 대한 특별한 무들 역할을 부여해야 합니다. 이러한 사용자들에 의해 올려지거나 생성되는 문서는 따로 인증표식이 붙어 표시되기 전에 특정 코드가 삭제되지 않을 것입니다.';
 $string['configenablewebservices'] = '웹서비스는 다른 시스템이 무들에 로그인해서 특정 작업을 하는 것을 가능하게 합니다. 이 기능을 사용하지 않으면 향상된 보안을 위해 이 기능은 비활성화 되어야 합니다.';
@@ -438,6 +438,7 @@ $string['devicedetectregex_desc'] = '기본적으로 무들은 디바이스를 �
 $string['devicedetectregexexpression'] = '정규 표현';
 $string['devicedetectregexvalue'] = '반환 값';
 $string['devicetype'] = '기기 유형';
+$string['disabled'] = '비활성화';
 $string['disableuserimages'] = '사용자 개인 사진 비활성화';
 $string['displayerrorswarning'] = '상용 사이트에서는 오류 메세지를 통하여 서버의 민감한 정보가 누출될 우려가 있기 때문에 PHP의 <em>display_errors</em> 설정을 추천하지 않습니다.';
 $string['displayloginfailures'] = '로그인 실패 표시';
@@ -483,9 +484,9 @@ $string['enablegravatar'] = '그라바타 활성화';
 $string['enablemobilewebservice'] = '모바일기기를 위한 웹서비스 활성화';
 $string['enablerecordcache'] = '레코드 캐시 활성화';
 $string['enablerssfeeds'] = 'RSS 피드 활성화';
-$string['enablesafebrowserintegration'] = '안전 시험 브라우저 통합 활성화';
 $string['enablestats'] = '통계 활성화';
 $string['enabletrusttext'] = '신뢰된 내용 활성화';
+$string['enableuserfeedback'] = '이 소프트웨어에 대한 피드백 가능';
 $string['enablewebservices'] = '웹서비스 활성화';
 $string['enablewsdocumentation'] = '웹서비스 문서';
 $string['enrolinstancedefaults'] = '등록 인스턴스 기본 설정';
@@ -516,6 +517,7 @@ $string['experimentalsettings'] = '시험적 설정';
 $string['extendedusernamechars'] = '아이디에 확장 문자 허용';
 $string['extramemorylimit'] = '별도 PHP 메모리 한계';
 $string['fatalsessionautostart'] = '<p>심각한 설정오류가 발견되었으므로 서버 관리자에게 알려주시기 바랍니다.<p/><p>무들을 원활하게 작동시키기 위해 현재의 PHP 설정을 바꿔야만 합니다.<p/><p> <code>session.auto_start</code>는 반드시 <code>off</code>으로 설정되어 있어야만 합니다.<p/><p>이러한 설정은 <code>php.ini</code>를 수정하여 바꿀 수도 있고, Apache/IIS 의 설정 혹은  <code>.htaccess</code> 파일을 수정해도 바꿀 수 있습니다.</p>';
+$string['feedbacksettings'] = '피드백 설정';
 $string['filecreated'] = '새 파일 생성됨';
 $string['filestoredin'] = '다음 경로에 저장 :';
 $string['filestoredinhelp'] = '파일이 저장될 곳';
@@ -688,7 +690,7 @@ $string['multilangforceold'] = '강제로 예전의 다중언어 문법 사용: 
 $string['mustenablestats'] = '아직 통계수집을 하도록 설정하지 않았습니다.';
 $string['mycoursesperpage'] = '강좌의 수';
 $string['mydashboard'] = '시스템 기본 상황페이지';
-$string['mymoodle'] = '내 홈페이지';
+$string['mymoodle'] = '대시보드';
 $string['mymoodleredirect'] = '내 공부방 강제 개설';
 $string['mypage'] = '기본 내 공부방 페이지';
 $string['mypagelocked'] = '기본 페이지 잠김';

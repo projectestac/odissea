@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'pt', version '3.8'.
+ * Strings for component 'qtype_ddimageortext', language 'pt', version '3.11'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -66,7 +66,10 @@ $string['pluginnamesummary'] = 'As imagens e quadros de texto podem ser arrastad
 Nota: este tipo de pergunta não é acessível a utilizadores com deficiência visual.';
 $string['previewareaheader'] = 'Pré-visualização';
 $string['previewareamessage'] = 'Selecione uma imagem de fundo, indique os itens arrastáveis e defina as áreas para largar, na imagem de fundo, onde estes deverão ser largados.';
-$string['privacy:metadata'] = 'O módulo Pergunta do tipo Arrastar e largar numa imagem não armazena quaisquer dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Arrastar e largar numa imagem permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
+$string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
+$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das é o \'Interativo com múltiplas tentativas\' ou \'Modo adaptável \'.';
+$string['privacy:preference:shuffleanswers'] = 'Se as respostas devem, ou não, ser baralhadas automaticamente.';
 $string['refresh'] = 'Atualizar a pré-visualização';
 $string['shuffleimages'] = 'Baralhar os itens para arrastar a cada nova tentativa da pergunta';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

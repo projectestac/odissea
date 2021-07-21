@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'de', version '3.8'.
+ * Strings for component 'hub', language 'de', version '3.11'.
  *
  * @package     hub
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activeparticipantnumberaverage'] = 'Durchschnittliche Anzahl kürzlich aktiver Teilnehmer/innen ({$a})';
+$string['activeusersnumber'] = 'Anzahl kürzlich aktiver Nutzer/innen ({$a})';
 $string['addscreenshots'] = 'Screenshots hinzufügen';
 $string['advertise'] = 'Diesen Kurs anbieten, damit sich Personen anmelden können';
 $string['advertised'] = 'Zum Einschreiben freigegeben';
@@ -143,14 +145,15 @@ $string['registerwithmoodleorg'] = 'Website registrieren';
 $string['registerwithmoodleorgcomplete'] = 'Website-Registrierung abschließen';
 $string['registerwithmoodleorginfo'] = 'Wir würden uns freuen, in Kontakt zu bleiben und Ihnen wichtige Dinge für Ihre Moodle-Website zu empfehlen! Mit der Registrierung:
 
-* Sie können sich anmelden, um Benachrichtigungen über neue Moodle-Versionen, Sicherheitswarnungen und andere wichtige Neuigkeiten zu erhalten.
-* Sie können auf mobile Push-Benachrichtigungen von Ihrer Moodle-Site aus über unsere kostenlose Moodle-App zugreifen und diese aktivieren.
-* Sie tragen zu unserer Moodle-Statistik der weltweiten Community bei, die uns hilft, Moodle und unsere Community-Seiten zu verbessern.
-* Wenn Sie möchten, kann Ihre Website in die Liste der registrierten Moodle-Websites in Ihrem Land aufgenommen werden.';
+* können Sie sich anmelden, um Benachrichtigungen über neue Moodle-Versionen, Sicherheitswarnungen und andere wichtige Neuigkeiten zu erhalten.
+* können Sie auf mobile Push-Benachrichtigungen von Ihrer Moodle-Site aus zugreifen und diese für unsere kostenlose Moodle-App aktivieren.
+* tragen Sie zu unserer Moodle-Statistik der weltweiten Community bei, die uns hilft, Moodle und unsere Community-Seiten zu verbessern.
+* kann Ihre Website, wenn Sie möchten, in die Liste der registrierten Moodle-Websites in Ihrem Land aufgenommen werden.';
 $string['registerwithmoodleorginfoapp'] = 'Über die Moodle-App';
 $string['registerwithmoodleorginfosites'] = 'Weitere Websites in meinem Land';
 $string['registerwithmoodleorginfostats'] = 'Moodle-Statistiken';
-$string['registerwithmoodleorgremove'] = 'Möchten Sie die Registrierung für Ihre Website löschen? Wenn Sie fortfahren, haben Sie keinen Zugriff mehr auf wichtige Benachrichtigungen und Sicherheitswarnungen. Ihre Nutzer/innen können keine Push-Benachrichtigungen von Ihrer Website über die mobile Moodle App erhalten. Sind Sie sicher, dass Sie Ihre Website abmelden möchten?';
+$string['registerwithmoodleorgremove'] = 'Möchten Sie die Registrierung für Ihre Website löschen? Wenn Sie fortfahren, bekommen Sie als Administrator/in keine wichtigen Hinweise und Sicherheitswarnungen mehr. Außerdem können Ihre Nutzer/innen keine Push-Mitteilungen mehr von Ihrer Website über die mobile Moodle App erhalten.
+Sind Sie also sicher, dass Sie Ihre Website abmelden möchten?';
 $string['registerwithmoodleorgupdate'] = 'Website-Registrierung aktualisieren';
 $string['registrationconfirmed'] = 'Registrierung der Website bestätigt';
 $string['registrationconfirmedon'] = 'Danke für die Registrierung Ihrer Website! Die Anmeldeinformationen werden über die automatische Website-Registierung aktualisiert.';
@@ -164,14 +167,14 @@ $string['screenshots'] = 'Screenshots';
 $string['screenshots_help'] = 'Screenshots hinzufügen, die beim Suchergebnis gezeigt werden sollen';
 $string['search'] = 'Suche';
 $string['sendfollowinginfo'] = 'Weitere Informationen';
-$string['sendfollowinginfo_help'] = 'Die folgenden Informationen werden nur erfasst, um eine Gesamtstatistik zu erstellen. Sie werden auf keinen Fall irgendwo veröffentlicht. ';
+$string['sendfollowinginfo_help'] = 'Die folgenden Infos werden bei jeder Aktualisierung Ihrer Website-Registrierung an Moodle gesendet (standardmäßig wöchentlich, wenn die geplante Task "Website-Registrierung" ausgeführt wird). Die Informationen tragen zur Gesamtstatistik bei, werden aber in keiner Website-Liste veröffentlicht.';
 $string['sendingcourse'] = 'Kurs wird gesendet';
 $string['sendingsize'] = 'Bitte warten Sie während des Dateiuploads ({$a->total}Mb)...';
 $string['sent'] = '... fertig';
 $string['share'] = 'Diesen Kurs zum Download freigeben';
 $string['shared'] = 'Zum Herunterladen freigegeben';
 $string['shareon'] = 'Diesen Kurs nach {$a} uploaden';
-$string['sharepublication_help'] = 'Wenn Sie diesen Kurse auf einen Community-Server hochladen, können ihn andere Personen herunterladen und ihn auf ihren eigenen Moodle-Seiten installieren.';
+$string['sharepublication_help'] = 'Eine Sicherung dieses Kurses wird auf Moodle.net verfügbar gemacht, damit andere den Kurs wiederherstellen und auf ihrer eigenen Website verwenden können.';
 $string['siteadmin'] = 'Administrator/in';
 $string['siteadmin_help'] = 'Vollständiger Name des/der Administrators/in';
 $string['sitecommnews'] = 'Moodle-Newsletter';
@@ -200,7 +203,7 @@ $string['siteprivacypublished'] = 'Nur den Namen der Website veröffentlichen';
 $string['siteregistrationcontact'] = 'Kontaktformular anzeigen';
 $string['siteregistrationcontact_help'] = 'Wenn diese Option aktiviert ist, können andere Personen über ein Kontaktformular auf dem Hub mit Ihnen in Kontakt treten. Ihre E-Mail-Adresse wird niemals angezeigt.';
 $string['siteregistrationemail'] = 'Systemnachrichten zu neuen Moodle-Releases, zu Sicherheitsfragen und andere wichtige Neuigkeiten';
-$string['siteregistrationemail_help'] = 'Sie haben die Möglichkeit, sich in unsere E-Mail-Benachrichtigungsliste für wichtige informationen über technische Fragen und Sicherheitsaspekte einzutragen. Wir werden nur sehr selten Benachrichtigungen versenden.';
+$string['siteregistrationemail_help'] = 'Sie haben die Möglichkeit, unsere Mailingliste zu abonnieren, um Benachrichtigungen über neue Moodle-Releases, Sicherheitswarnungen und andere wichtige Neuigkeiten zu erhalten. Sie können sich jederzeit abmelden.';
 $string['siteregistrationupdated'] = 'Seitenregistrierung aktualisiert';
 $string['siterelease'] = 'Moodle-Release';
 $string['siterelease_help'] = 'Nummer des Moodle-Releases auf dieser Website';

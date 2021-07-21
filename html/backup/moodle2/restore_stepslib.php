@@ -57,21 +57,19 @@ class restore_create_and_clean_temp_stuff extends restore_execution_step {
 }
 
 /**
- * delete the temp dir used by backup/restore (conditionally),
- * delete old directories and drop temp ids table
+ * Drop temp ids table and delete the temp dir used by backup/restore (conditionally).
  */
 class restore_drop_and_clean_temp_stuff extends restore_execution_step {
 
     protected function define_execution() {
         global $CFG;
         restore_controller_dbops::drop_restore_temp_tables($this->get_restoreid()); // Drop ids temp table
-        $progress = $this->task->get_progress();
-        $progress->start_progress('Deleting backup dir');
-        backup_helper::delete_old_backup_dirs(strtotime('-1 week'), $progress);      // Delete > 1 week old temp dirs.
         if (empty($CFG->keeptempdirectoriesonbackup)) { // Conditionally
+            $progress = $this->task->get_progress();
+            $progress->start_progress('Deleting backup dir');
             backup_helper::delete_backup_dir($this->task->get_tempdir(), $progress); // Empty restore dir
+            $progress->end_progress();
         }
-        $progress->end_progress();
     }
 }
 
@@ -146,7 +144,11 @@ class restore_gradebook_structure_step extends restore_structure_step {
 
         $paths[] = new restore_path_element('attributes', '/gradebook/attributes');
         $paths[] = new restore_path_element('grade_category', '/gradebook/grade_categories/grade_category');
-        $paths[] = new restore_path_element('grade_item', '/gradebook/grade_items/grade_item');
+
+        $gradeitem = new restore_path_element('grade_item', '/gradebook/grade_items/grade_item');
+        $paths[] = $gradeitem;
+        $this->add_plugin_structure('local', $gradeitem);
+
         if ($userinfo) {
             $paths[] = new restore_path_element('grade_grade', '/gradebook/grade_items/grade_item/grade_grades/grade_grade');
         }
@@ -1187,6 +1189,13 @@ class restore_groups_structure_step extends restore_structure_step {
 
         $restorefiles = false; // Only if we end creating the group
 
+        // This is for backwards compatibility with old backups. If the backup data for a group contains a non-empty value of
+        // hidepicture, then we'll exclude this group's picture from being restored.
+        if (!empty($data->hidepicture)) {
+            // Exclude the group picture from being restored if hidepicture is set to 1 in the backup data.
+            unset($data->picture);
+        }
+
         // Search if the group already exists (by name & description) in the target course
         $description_clause = '';
         $params = array('courseid' => $this->get_courseid(), 'grname' => $data->name);
@@ -1208,6 +1217,12 @@ class restore_groups_structure_step extends restore_structure_step {
         }
         // Save the id mapping
         $this->set_mapping('group', $oldid, $newitemid, $restorefiles);
+
+        // Add the related group picture file if it's available at this point.
+        if (!empty($data->picture)) {
+            $this->add_related_files('group', 'icon', 'group', null, $oldid);
+        }
+
         // Invalidate the course group data cache just in case.
         cache_helper::invalidate_by_definition('core', 'groupdata', array(), array($data->courseid));
     }
@@ -1267,8 +1282,7 @@ class restore_groups_structure_step extends restore_structure_step {
     }
 
     protected function after_execute() {
-        // Add group related files, matching with "group" mappings
-        $this->add_related_files('group', 'icon', 'group');
+        // Add group related files, matching with "group" mappings.
         $this->add_related_files('group', 'description', 'group');
         // Add grouping related files, matching with "grouping" mappings
         $this->add_related_files('grouping', 'description', 'grouping');
@@ -1677,7 +1691,9 @@ class restore_section_structure_step extends restore_structure_step {
      * @param stdClass $data Record data
      */
     public function process_availability_field($data) {
-        global $DB;
+        global $DB, $CFG;
+        require_once($CFG->dirroot.'/user/profile/lib.php');
+
         $data = (object)$data;
         // Mark it is as passed by default
         $passed = true;
@@ -1690,9 +1706,8 @@ class restore_section_structure_step extends restore_structure_step {
             // If one is null but the other isn't something clearly went wrong and we'll skip this condition.
             $passed = false;
         } else if (!is_null($data->customfield)) {
-            $params = array('shortname' => $data->customfield, 'datatype' => $data->customfieldtype);
-            $customfieldid = $DB->get_field('user_info_field', 'id', $params);
-            $passed = ($customfieldid !== false);
+            $field = profile_get_custom_field_data_by_shortname($data->customfield);
+            $passed = $field && $field->datatype == $data->customfieldtype;
         }
 
         if ($passed) {
@@ -1877,6 +1892,11 @@ class restore_course_structure_step extends restore_structure_step {
             $data->idnumber = '';
         }
 
+        // If we restore a course from this site, let's capture the original course id.
+        if ($isnewcourse && $this->get_task()->is_samesite()) {
+            $data->originalcourseid = $this->get_task()->get_old_courseid();
+        }
+
         // Any empty value for course->hiddensections will lead to 0 (default, show collapsed).
         // It has been reported that some old 1.9 courses may have it null leading to DB error. MDL-31532
         if (empty($data->hiddensections)) {
@@ -1895,11 +1915,23 @@ class restore_course_structure_step extends restore_structure_step {
         if ($data->defaultgroupingid) {
             $data->defaultgroupingid = $this->get_mappingid('grouping', $data->defaultgroupingid);
         }
+
+        $courseconfig = get_config('moodlecourse');
+
         if (empty($CFG->enablecompletion)) {
+            // Completion is disabled globally.
             $data->enablecompletion = 0;
             $data->completionstartonenrol = 0;
             $data->completionnotify = 0;
+            $data->showcompletionconditions = null;
+        } else {
+            $showcompletionconditionsdefault = ($courseconfig->showcompletionconditions ?? null);
+            $data->showcompletionconditions = $data->showcompletionconditions ?? $showcompletionconditionsdefault;
         }
+
+        $showactivitydatesdefault = ($courseconfig->showactivitydates ?? null);
+        $data->showactivitydates = $data->showactivitydates ?? $showactivitydatesdefault;
+
         $languages = get_string_manager()->get_list_of_translations(); // Get languages for quick search
         if (isset($data->lang) && !array_key_exists($data->lang, $languages)) {
             $data->lang = '';
@@ -2039,7 +2071,9 @@ class restore_ras_and_caps_structure_step extends restore_structure_step {
         if ($this->get_setting_value('role_assignments')) {
             $paths[] = new restore_path_element('assignment', '/roles/role_assignments/assignment');
         }
-        $paths[] = new restore_path_element('override', '/roles/role_overrides/override');
+        if ($this->get_setting_value('permissions')) {
+            $paths[] = new restore_path_element('override', '/roles/role_overrides/override');
+        }
 
         return $paths;
     }
@@ -3410,6 +3444,81 @@ class restore_course_logstores_structure_step extends restore_structure_step {
 }
 
 /**
+ * Structure step in charge of restoring the loglastaccess.xml file for the course logs.
+ *
+ * This restore step will rebuild the table for user_lastaccess table.
+ */
+class restore_course_loglastaccess_structure_step extends restore_structure_step {
+
+    /**
+     * Conditionally decide if this step should be executed.
+     *
+     * This function checks the following parameter:
+     *
+     *   1. the loglastaccess.xml file exists
+     *
+     * @return bool true is safe to execute, false otherwise
+     */
+    protected function execute_condition() {
+        // Check it is included in the backup.
+        $fullpath = $this->task->get_taskbasepath();
+        $fullpath = rtrim($fullpath, '/') . '/' . $this->filename;
+        if (!file_exists($fullpath)) {
+            // Not found, can't restore loglastaccess.xml information.
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * Return the elements to be processed on restore of loglastaccess.
+     *
+     * @return restore_path_element[] array of elements to be processed on restore.
+     */
+    protected function define_structure() {
+
+        $paths = array();
+        // To know if we are including userinfo.
+        $userinfo = $this->get_setting_value('users');
+
+        if ($userinfo) {
+            $paths[] = new restore_path_element('lastaccess', '/lastaccesses/lastaccess');
+        }
+        // Return the paths wrapped.
+        return $paths;
+    }
+
+    /**
+     * Process the 'lastaccess' elements.
+     *
+     * @param array $data element data
+     */
+    protected function process_lastaccess($data) {
+        global $DB;
+
+        $data = (object)$data;
+
+        $data->courseid = $this->get_courseid();
+        if (!$data->userid = $this->get_mappingid('user', $data->userid)) {
+            return; // Nothing to do, not able to find the user to set the lastaccess time.
+        }
+
+        // Check if record does exist.
+        $exists = $DB->get_record('user_lastaccess', array('courseid' => $data->courseid, 'userid' => $data->userid));
+        if ($exists) {
+            // If the time of last access of the restore is newer, then replace and update.
+            if ($exists->timeaccess < $data->timeaccess) {
+                $exists->timeaccess = $data->timeaccess;
+                $DB->update_record('user_lastaccess', $exists);
+            }
+        } else {
+            $DB->insert_record('user_lastaccess', $data);
+        }
+    }
+}
+
+/**
  * Structure step in charge of restoring the logstores.xml file for the activity logs.
  *
  * Note: Activity structure is completely equivalent to the course one, so just extend it.
@@ -4010,6 +4119,81 @@ class restore_activity_grade_history_structure_step extends restore_structure_st
 }
 
 /**
+ * This structure steps restores the content bank content
+ */
+class restore_contentbankcontent_structure_step extends restore_structure_step {
+
+    /**
+     * Define structure for content bank step
+     */
+    protected function define_structure() {
+
+        $paths = [];
+        $paths[] = new restore_path_element('contentbankcontent', '/contents/content');
+
+        return $paths;
+    }
+
+    /**
+     * Define data processed for content bank
+     *
+     * @param mixed  $data
+     */
+    public function process_contentbankcontent($data) {
+        global $DB;
+
+        $data = (object)$data;
+        $oldid = $data->id;
+
+        $params = [
+            'name'           => $data->name,
+            'contextid'      => $this->task->get_contextid(),
+            'contenttype'    => $data->contenttype,
+            'instanceid'     => $data->instanceid,
+            'timecreated'    => $data->timecreated,
+        ];
+        $exists = $DB->record_exists('contentbank_content', $params);
+        if (!$exists) {
+            $params['configdata'] = $data->configdata;
+            $params['timemodified'] = time();
+
+            // Trying to map users. Users cannot always be mapped, e.g. when copying.
+            $params['usercreated'] = $this->get_mappingid('user', $data->usercreated);
+            if (!$params['usercreated']) {
+                // Leave the content creator unchanged when we are restoring the same site.
+                // Otherwise use current user id.
+                if ($this->task->is_samesite()) {
+                    $params['usercreated'] = $data->usercreated;
+                } else {
+                    $params['usercreated'] = $this->task->get_userid();
+                }
+            }
+            $params['usermodified'] = $this->get_mappingid('user', $data->usermodified);
+            if (!$params['usermodified']) {
+                // Leave the content modifier unchanged when we are restoring the same site.
+                // Otherwise use current user id.
+                if ($this->task->is_samesite()) {
+                    $params['usermodified'] = $data->usermodified;
+                } else {
+                    $params['usermodified'] = $this->task->get_userid();
+                }
+            }
+
+            $newitemid = $DB->insert_record('contentbank_content', $params);
+            $this->set_mapping('contentbank_content', $oldid, $newitemid, true);
+        }
+    }
+
+    /**
+     * Define data processed after execute for content bank
+     */
+    protected function after_execute() {
+        // Add related files.
+        $this->add_related_files('contentbank', 'public', 'contentbank_content');
+    }
+}
+
+/**
  * This structure steps restores one instance + positions of one block
  * Note: Positions corresponding to one existing context are restored
  * here, but all the ones having unknown contexts are sent to backup_ids
@@ -4363,7 +4547,9 @@ class restore_module_structure_step extends restore_structure_step {
      * @param stdClass $data Record data
      */
     protected function process_availability_field($data) {
-        global $DB;
+        global $DB, $CFG;
+        require_once($CFG->dirroot.'/user/profile/lib.php');
+
         $data = (object)$data;
         // Mark it is as passed by default
         $passed = true;
@@ -4376,9 +4562,8 @@ class restore_module_structure_step extends restore_structure_step {
             // If one is null but the other isn't something clearly went wrong and we'll skip this condition.
             $passed = false;
         } else if (!empty($data->customfield)) {
-            $params = array('shortname' => $data->customfield, 'datatype' => $data->customfieldtype);
-            $customfieldid = $DB->get_field('user_info_field', 'id', $params);
-            $passed = ($customfieldid !== false);
+            $field = profile_get_custom_field_data_by_shortname($data->customfield);
+            $passed = $field && $field->datatype == $data->customfieldtype;
         }
 
         if ($passed) {

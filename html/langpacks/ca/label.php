@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ca', version '3.8'.
+ * Strings for component 'label', language 'ca', version '3.11'.
  *
  * @package     label
  * @category    string
@@ -33,6 +33,7 @@ $string['dndresizeheight'] = 'Alçada de redimensionat en arrossegar i soltar';
 $string['dndresizewidth'] = 'Amplada de redimensionat en arrossegar i soltar';
 $string['dnduploadlabel'] = 'Afegeix un recurs multimèdia a la pàgina del curs';
 $string['dnduploadlabeltext'] = 'Afegeix una etiqueta a la pàgina del curs';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats d\'Etiqueta en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
 $string['label:addinstance'] = 'Afegeix una etiqueta nova';
 $string['labeltext'] = 'Text de l\'etiqueta';
 $string['modulename'] = 'Etiqueta';

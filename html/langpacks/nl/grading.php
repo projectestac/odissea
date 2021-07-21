@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'nl', version '3.8'.
+ * Strings for component 'grading', language 'nl', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -29,6 +29,7 @@ $string['activemethodinfo'] = '\'{$a->method}\' is gekozen als beoordelingsmetho
 $string['activemethodinfonone'] = 'Er is geen geavanceerde beoordelingsmethode geselecteerd voor de \'{$a->area}\' zone. Eenvoudig rechtstreeks beoordelen zal gebruikt worden';
 $string['changeactivemethod'] = 'Wijzig de beoordelingsmethode naar';
 $string['clicktoclose'] = 'klik om te sluiten';
+$string['error:gradingunavailable'] = 'De geavanceerde beoordelingsmethode is niet correct ingesteld. Controleer alle forum beoordelingsopties in de instellingen van het forum.';
 $string['error:notinrange'] = 'Ongeldig cijfer \'{$a->grade}\' gegeven. Cijfers moeten tussen 0 en {$a->maxgrade} liggen.';
 $string['exc_gradingformelement'] = 'Kon beoordelingsformulierelement niet instantiëren';
 $string['formnotavailable'] = 'Geavanceerd beoordelen was geselecteerd, maar het beoordelingsformulier is nog niet beschikbaar. Je moet het eerst maken via een link in het actiemenu of het instellingenblok.';

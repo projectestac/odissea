@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_unsuproles', language 'ar', version '3.8'.
+ * Strings for component 'tool_unsuproles', language 'ar', version '3.11'.
  *
  * @package     tool_unsuproles
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmdelete'] = 'هل حقاً تريد حذف جميع تعيينات الأدوار غير المعتمدة لدور "{$a->role}" في إطار المستوى "{$a->level}" ؟';
+$string['confirmdelete'] = 'هل حقاً تريد حذف كل تعيينات الأدوار غير المدعومة لدور "{$a->role}" في مستوى السياق "{$a->level}"؟';
 $string['contextlevel'] = 'مستوى السياق';
-$string['count'] = 'عدد';
-$string['noprolbems'] = 'لم يتم العثور على تعيينات مدعومة.';
-$string['pluginname'] = 'تعيينات الدور غير مدعومة.';
-$string['privacy:metadata'] = 'لا يقوم المكون الإضافيUnsupported role assignments بتخزين أيّ بيانات شخصية.';
+$string['count'] = 'العدد';
+$string['noprolbems'] = 'لم يتم العثور على تعيينات غير مدعومة';
+$string['pluginname'] = 'تعيينات الدور غير المدعومة';
+$string['privacy:metadata'] = 'إن ملحق تعيينات الدور غير المدعومة لا يخزن أي بيانات شخصية.';

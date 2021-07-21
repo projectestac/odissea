@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_equation', language 'sv', version '3.8'.
+ * Strings for component 'atto_equation', language 'sv', version '3.11'.
  *
  * @package     atto_equation
  * @category    string
@@ -37,7 +37,7 @@ $string['librarygroup4'] = 'Avancerat';
 $string['librarygroup4_desc'] = 'TeX-kommandon på avancerat-fliken.';
 $string['pluginname'] = 'Ekvationsredigerare';
 $string['preview'] = 'Förhandsgranska ekvation';
-$string['privacy:metadata'] = 'Plugin-modulen atto_equation lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_equation lagrar ingen personinformation.';
 $string['saveequation'] = 'Spara ekvationen';
 $string['settings'] = 'Inställningar för ekvationsredigeraren';
 $string['update'] = 'Uppdatera';

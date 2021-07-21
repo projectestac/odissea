@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_completion', language 'ko', version '3.8'.
+ * Strings for component 'availability_completion', language 'ko', version '3.11'.
  *
  * @package     availability_completion
  * @category    string

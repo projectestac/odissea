@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_datetime', language 'ar', version '3.8'.
+ * Strings for component 'profilefield_datetime', language 'ar', version '3.11'.
  *
  * @package     profilefield_datetime
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['currentdatedefault'] = 'حدد ليتم استخدام التاريخ الحالي كتاريخ افتراضي';
+$string['currentdatedefault'] = 'قم بالتأشير لاستعمال التاريخ الحالي كتاريخ إفتراضي';
 $string['defaultdate'] = 'التاريخ الافتراضي';
 $string['endyear'] = 'عام الانتهاء';
 $string['notset'] = 'غير مُعد';

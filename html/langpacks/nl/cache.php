@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'nl', version '3.8'.
+ * Strings for component 'cache', language 'nl', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -40,7 +40,10 @@ $string['cachedef_calendar_subscriptions'] = 'Kalenderinschrijvingen';
 $string['cachedef_capabilities'] = 'Lijst systeemmogelijkheden';
 $string['cachedef_completion'] = 'Status van activiteitsvoltooiing';
 $string['cachedef_config'] = 'Configuratie-instellingen';
+$string['cachedef_contentbank_context_extensions'] = 'Toegestane extensies en de bijbehorende plug-ins in een inhoudsbank context';
+$string['cachedef_contentbank_enabled_extensions'] = 'Toegestane extensies en de bijbehorende plug-ins in de inhoudsbank';
 $string['cachedef_contextwithinsights'] = 'Context met inzichten';
+$string['cachedef_course_image'] = 'Cursusafbeeldingen';
 $string['cachedef_course_user_dates'] = 'De gebruikersdatums voor cursussen ingesteld op relatieve datums';
 $string['cachedef_coursecat'] = 'Cursuscategorielijst voor een bepaalde gebruiker';
 $string['cachedef_coursecatrecords'] = 'Cursuscategorie-records';
@@ -53,10 +56,14 @@ $string['cachedef_eventinvalidation'] = 'Gebeurtenis ongeldig maken';
 $string['cachedef_externalbadges'] = 'Externe badges voor een bepaalde gebruiker';
 $string['cachedef_fontawesomeiconmapping'] = 'Koppeling van icoontjes voor lettertype awesome';
 $string['cachedef_grade_categories'] = 'Cijfercategorie queries';
-$string['cachedef_grade_letters'] = 'Vragen over brieven beoordelen';
+$string['cachedef_grade_letters'] = 'Queries letterbeoordelingen';
+$string['cachedef_gradesetting'] = 'Cursuscijfer instellen';
 $string['cachedef_groupdata'] = 'Cursus groepsinformatie';
+$string['cachedef_h5p_content_type_translations'] = 'H5P inhoudstype vertalingen van de bibliotheken';
+$string['cachedef_h5p_library_files'] = 'H5P-bibliotheekbestanden';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - opgeschoonde inhoud';
 $string['cachedef_langmenu'] = 'Lijst van beschikbare talen';
+$string['cachedef_license'] = 'Lijst met licenties';
 $string['cachedef_locking'] = 'Blokkeren';
 $string['cachedef_message_processors_enabled'] = 'Status van ingeschakelde berichtenprocessors';
 $string['cachedef_message_time_last_message_between_users'] = 'Tijdstip van het meest recente bericht tussen gebruikers';
@@ -69,6 +76,7 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'Portfolio-exempl
 $string['cachedef_postprocessedcss'] = 'Nabewerkt CSS';
 $string['cachedef_presignup'] = 'Pre-aanmeldingsgegevens voor bepaalde niet-geregistreerde gebruikers';
 $string['cachedef_questiondata'] = 'Vraagdefinities';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'Aanbeveling voor cursusinhoudsitems';
 $string['cachedef_repositories'] = 'Opslagruimtegegevens';
 $string['cachedef_roledefs'] = 'Roldefinities';
 $string['cachedef_string'] = 'Taalstringcache';
@@ -76,6 +84,8 @@ $string['cachedef_suspended_userids'] = 'Lijst van geschorste leerlingen per cur
 $string['cachedef_tagindexbuilder'] = 'Doorzoek de resultaten van getagede items';
 $string['cachedef_tags'] = 'Tagcollecties en ideeën';
 $string['cachedef_temp_tables'] = 'Tijdelijke tabelcache';
+$string['cachedef_user_course_content_items'] = 'Inhoudsitems van de gebruiker (activiteiten, bronnen en hun subtypen) per cursus';
+$string['cachedef_user_favourite_course_content_items'] = 'Favoriete inhoudsitems van de gebruiker';
 $string['cachedef_user_group_groupings'] = 'Groepen en groeperingen van gebruiker per cursus';
 $string['cachedef_userselections'] = 'Gegevens gebruikt om gebruikersselecties door Moodle te laten volgen';
 $string['cachedef_yuimodules'] = 'YUI Moduledefinities';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ar', version '3.8'.
+ * Strings for component 'report_log', language 'ar', version '3.11'.
  *
  * @package     report_log
  * @category    string
@@ -27,13 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allsources'] = 'كل المصادر';
 $string['cli'] = 'واجهة سطر الأوامر';
-$string['eventcomponent'] = 'عنصر';
+$string['eventcomponent'] = 'المُكوِّن';
 $string['eventcontext'] = 'سياق الحدث';
-$string['eventloggedas'] = '{$a->realusername} كـ {$a->asusername}';
+$string['eventloggedas'] = '{$a->realusername} بصفة {$a->asusername}';
 $string['eventorigin'] = 'المصدر';
 $string['eventrelatedfullnameuser'] = 'المستخدم المتأثر';
-$string['eventreportviewed'] = 'تم استعراض تقرير السجل';
-$string['eventuserreportviewed'] = 'تم استعراض تقرير سجل المستخدم';
+$string['eventreportviewed'] = 'تقرير سجل وقوعات تمت معاينته';
+$string['eventuserreportviewed'] = 'تقرير سجل وقوعات مستخدم تمت معاينته';
 $string['log:view'] = 'معاينة سجلات المقرر الدراسي';
 $string['log:viewtoday'] = 'معاينة سجلات الوقوعات لهذا اليوم';
 $string['logsformat'] = 'تنسيق سجلات الوقوعات';
@@ -43,9 +43,9 @@ $string['origin'] = 'المصدر';
 $string['other'] = 'غيره';
 $string['page'] = 'صفحة {$a}';
 $string['page-report-log-index'] = 'تقرير سجل المقرر الدراسي';
-$string['page-report-log-user'] = 'تقرير سجل المستخدم للمقرر الدراسي';
+$string['page-report-log-user'] = 'تقرير سجل وقوعات المستخدم في المقرر الدراسي';
 $string['page-report-log-x'] = 'أي  تقرير لسجلات الوقوعات';
-$string['pluginname'] = 'سجلات';
+$string['pluginname'] = 'سجلات الوقوعات';
 $string['privacy:metadata'] = 'إن ملحق سجلات الوقوعات لا يخزن أي بيانات شخصية.';
 $string['restore'] = 'استعادة';
 $string['selectlogreader'] = 'إختر قارئ سجل الوقوعات';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_toolsettings', language 'ar', version '3.8'.
+ * Strings for component 'ltiservice_toolsettings', language 'ar', version '3.11'.
  *
  * @package     ltiservice_toolsettings
  * @category    string
@@ -30,4 +30,4 @@ $string['ltiservice_toolsettings'] = 'إعدادات الأداة';
 $string['ltiservice_toolsettings_help'] = 'اسمح للأداة بحفظ واسترداد قيم الإعداد.';
 $string['notallow'] = 'لا تستخدم هذه الخدمة';
 $string['pluginname'] = 'خدمة إعدادات الأداة';
-$string['privacy:metadata'] = 'المكون الإضافي Tool Settings Service لا بخزّن  أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق خدمة إعدادات الأداة لا يخزن أي بيانات شخصية.';

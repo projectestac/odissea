@@ -23,6 +23,7 @@
  */
 
 require_once("../config.php");
+require_once($CFG->dirroot . '/course/lib.php');
 
 $formaction = required_param('formaction', PARAM_LOCALURL);
 $id = required_param('id', PARAM_INT);
@@ -78,12 +79,11 @@ if ($formaction == 'bulkchange.php') {
 
     if (empty($plugin) AND $operationname == 'download_participants') {
         // Check permissions.
-        if (has_capability('moodle/course:manageactivities', $context)) {
+        $pagecontext = ($course->id == SITEID) ? context_system::instance() : $context;
+        if (course_can_view_participants($pagecontext)) {
             $plugins = core_plugin_manager::instance()->get_plugins_of_type('dataformat');
             if (isset($plugins[$dataformat])) {
                 if ($plugins[$dataformat]->is_enabled()) {
-                    require_once($CFG->dirroot . '/lib/dataformatlib.php');
-
                     if (empty($userids)) {
                         redirect($returnurl, get_string('noselectedusers', 'bulkusers'));
                     }
@@ -93,7 +93,8 @@ if ($formaction == 'bulkchange.php') {
                         'lastname' => get_string('lastname'),
                     );
 
-                    $identityfields = get_extra_user_fields($context);
+                    // TODO Does not support custom user profile fields (MDL-70456).
+                    $identityfields = \core_user\fields::get_identity_fields($context, false);
                     $identityfieldsselect = '';
 
                     foreach ($identityfields as $field) {
@@ -110,7 +111,23 @@ if ($formaction == 'bulkchange.php') {
                              WHERE u.id $insql";
 
                     $rs = $DB->get_recordset_sql($sql, $inparams);
-                    download_as_dataformat('courseid_' . $course->id . '_participants', $dataformat, $columnnames, $rs);
+
+                    // Provide callback to pre-process all records ensuring user identity fields are escaped if HTML supported.
+                    \core\dataformat::download_data(
+                        'courseid_' . $course->id . '_participants',
+                        $dataformat,
+                        $columnnames,
+                        $rs,
+                        function(stdClass $record, bool $supportshtml) use ($identityfields): stdClass {
+                            if ($supportshtml) {
+                                foreach ($identityfields as $identityfield) {
+                                    $record->{$identityfield} = s($record->{$identityfield});
+                                }
+                            }
+
+                            return $record;
+                        }
+                    );
                     $rs->close();
                 }
             }

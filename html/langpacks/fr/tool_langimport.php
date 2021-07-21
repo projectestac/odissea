@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'fr', version '3.8'.
+ * Strings for component 'tool_langimport', language 'fr', version '3.11'.
  *
  * @package     tool_langimport
  * @category    string
@@ -28,6 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadnotavailable'] = 'Impossible de se connecter au serveur de téléchargement. Il n\'est pas possible d\'installer ou de mettre à jour les paquetages de langue automatiquement. Veuillez télécharger le(s) fichier(s) ZIP adéquat(s) sur <a href="{$a->src}">{$a->src}</a> et les décompresser manuellement dans le dossier de données de votre Moodle <code>{$a->dest}</code>';
 $string['install'] = 'Installer les paquetages de langue sélectionnés';
 $string['installedlangs'] = 'Langues installées';
+$string['installfailed'] = 'Échec de l\'installation des paquetages de langue !';
+$string['installfinished'] = 'Installation des paquetages de langue terminée';
+$string['installpending'] = 'Les paquetages de langue suivant seront installés prochainement : {$a}.';
+$string['installscheduled'] = 'Paquetages de langue dont l\'installation est programmée.';
 $string['langimport'] = 'Utilitaire d\'importation de langues';
 $string['langimportdisabled'] = 'L\'utilitaire d\'importation de langues a été désactivé. Veuillez effectuer la mise à jour de vos paquetages de langue manuellement au niveau du système de fichiers de votre serveur. N\'oubliez pas de purger les caches une fois cette opération effectuée.';
 $string['langpackinstalled'] = 'Le paquetage de langue « {$a} » a été installé';
@@ -48,7 +52,9 @@ $string['nolangupdateneeded'] = 'Toutes les langues sont à jour. Aucune mise à
 $string['pluginname'] = 'Paquetages de langue';
 $string['privacy:metadata'] = 'Le plugin Paquetages de langue n\'enregistre aucune donnée personnelle.';
 $string['purgestringcaches'] = 'Purger les caches des chaînes de caractères';
+$string['search'] = 'Rechercher dans les paquetages de langues disponibles';
 $string['selectlangs'] = 'Sélectionnez les langues à désinstaller';
 $string['uninstall'] = 'Désinstaller le(s) paquetage(s) de langue sélectionné(s)';
 $string['uninstallconfirm'] = 'Vous êtes sur le point de supprimer totalement les paquetages de langue suivants : <strong>{$a}</strong>. Voulez-vous vraiment continuer ?';
 $string['updatelangs'] = 'Mettre à jour les paquetages de langue installés';
+$string['updatelangsnote'] = 'La mise à jour de tous les paquetages de langue au moyen de ce bouton peut nécessiter une longue durée et conduire à des coupures de connexion. Il est recommandé d\'utiliser plutôt la tâche programmée « {$a->taskname} », qui par défaut est lancée chaque jour.';

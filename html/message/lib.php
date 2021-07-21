@@ -65,12 +65,17 @@ define('MESSAGE_DEFAULT_TIMEOUT_POLL_IN_SECONDS', 5 * MINSECS);
 /**
  * Returns the count of unread messages for user. Either from a specific user or from all users.
  *
+ * @deprecated since 3.10
+ * TODO: MDL-69643
  * @param object $user1 the first user. Defaults to $USER
  * @param object $user2 the second user. If null this function will count all of user 1's unread messages.
  * @return int the count of $user1's unread messages
  */
 function message_count_unread_messages($user1=null, $user2=null) {
     global $USER, $DB;
+
+    debugging('message_count_unread_messages is deprecated and no longer used',
+        DEBUG_DEVELOPER);
 
     if (empty($user1)) {
         $user1 = $USER;
@@ -178,7 +183,8 @@ function message_search_users($courseids, $searchtext, $sort='', $exceptions='')
     }
 
     $fullname = $DB->sql_fullname();
-    $ufields = user_picture::fields('u');
+    $userfieldsapi = \core_user\fields::for_userpic();
+    $ufields = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
 
     if (!empty($sort)) {
         $order = ' ORDER BY '. $sort;
@@ -544,11 +550,12 @@ function message_get_messages($useridto, $useridfrom = 0, $notifications = -1, $
     global $DB;
 
     // If the 'useridto' value is empty then we are going to retrieve messages sent by the useridfrom to any user.
+    $userfieldsapi = \core_user\fields::for_name();
     if (empty($useridto)) {
-        $userfields = get_all_user_name_fields(true, 'u', '', 'userto');
+        $userfields = $userfieldsapi->get_sql('u', false, 'userto', '', false)->selects;
         $messageuseridtosql = 'u.id as useridto';
     } else {
-        $userfields = get_all_user_name_fields(true, 'u', '', 'userfrom');
+        $userfields = $userfieldsapi->get_sql('u', false, 'userfrom', '', false)->selects;
         $messageuseridtosql = "$useridto as useridto";
     }
 
@@ -724,7 +731,7 @@ function core_message_can_edit_message_profile($user) {
 }
 
 /**
- * Implements callback user_preferences, whitelists preferences that users are allowed to update directly
+ * Implements callback user_preferences, lists preferences that users are allowed to update directly
  *
  * Used in {@see core_user::fill_preferences_cache()}, see also {@see useredit_update_user_preference()}
  *

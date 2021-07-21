@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_password', language 'ru', version '3.8'.
+ * Strings for component 'quizaccess_password', language 'ru', version '3.11'.
  *
  * @package     quizaccess_password
  * @category    string
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'Введенный пароль неверен';
 $string['pluginname'] = 'Правило доступа к тесту: пароль';
+$string['privacy:metadata'] = 'Плагин правила доступа к паролю теста не хранит никаких личных данных.';
 $string['quizpassword'] = 'Пароль для доступа к тесту';
 $string['requirepasswordmessage'] = 'Чтобы пройти тест, вам необходимо знать пароль';

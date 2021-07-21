@@ -720,6 +720,15 @@ class quiz_attempt {
     }
 
     /**
+     * Preload all attempt step users to show in Response history.
+     *
+     * @throws dml_exception
+     */
+    public function preload_all_attempt_step_users(): void {
+        $this->quba->preload_all_step_users();
+    }
+
+    /**
      * Let each slot know which section it is part of.
      */
     protected function link_sections_and_slots() {
@@ -1168,7 +1177,7 @@ class quiz_attempt {
             return $options;
         }
 
-        $question = $this->quba->get_question($slot);
+        $question = $this->quba->get_question($slot, false);
         if (!question_has_capability_on($question, 'edit', $question->category)) {
             return $options;
         }
@@ -1273,7 +1282,7 @@ class quiz_attempt {
      *     question length, which could theoretically be greater than one.
      */
     public function is_real_question($slot) {
-        return $this->quba->get_question($slot)->length;
+        return $this->quba->get_question($slot, false)->length;
     }
 
     /**
@@ -1374,7 +1383,7 @@ class quiz_attempt {
      *      by the quiz.
      */
     public function get_question_name($slot) {
-        return $this->quba->get_question($slot)->name;
+        return $this->quba->get_question($slot, false)->name;
     }
 
     /**
@@ -1447,7 +1456,7 @@ class quiz_attempt {
      * @since  Moodle 3.1
      */
     public function get_question_type_name($slot) {
-        return $this->quba->get_question($slot)->get_type_name();
+        return $this->quba->get_question($slot, false)->get_type_name();
     }
 
     /**
@@ -1773,7 +1782,7 @@ class quiz_attempt {
      * @return question_attempt the placeholder question attempt.
      */
     protected function make_blocked_question_placeholder($slot) {
-        $replacedquestion = $this->get_question_attempt($slot)->get_question();
+        $replacedquestion = $this->get_question_attempt($slot)->get_question(false);
 
         question_bank::load_question_definition_classes('description');
         $question = new qtype_description_question();
@@ -2002,7 +2011,7 @@ class quiz_attempt {
         // Transition to the appropriate state.
         switch ($this->quizobj->get_quiz()->overduehandling) {
             case 'autosubmit':
-                $this->process_finish($timestamp, false);
+                $this->process_finish($timestamp, false, $studentisonline ? $timestamp : $timeclose);
                 return;
 
             case 'graceperiod':
@@ -2160,7 +2169,20 @@ class quiz_attempt {
         $transaction->allow_commit();
     }
 
-    public function process_finish($timestamp, $processsubmitted) {
+    /**
+     * Submit the attempt.
+     *
+     * The separate $timefinish argument should be used when the quiz attempt
+     * is being processed asynchronously (for example when cron is submitting
+     * attempts where the time has expired).
+     *
+     * @param int $timestamp the time to record as last modified time.
+     * @param bool $processsubmitted if true, and question responses in the current
+     *      POST request are stored to be graded, before the attempt is finished.
+     * @param ?int $timefinish if set, use this as the finish time for the attempt.
+     *      (otherwise use $timestamp as the finish time as well).
+     */
+    public function process_finish($timestamp, $processsubmitted, $timefinish = null) {
         global $DB;
 
         $transaction = $DB->start_delegated_transaction();
@@ -2173,7 +2195,7 @@ class quiz_attempt {
         question_engine::save_questions_usage_by_activity($this->quba);
 
         $this->attempt->timemodified = $timestamp;
-        $this->attempt->timefinish = $timestamp;
+        $this->attempt->timefinish = $timefinish ?? $timestamp;
         $this->attempt->sumgrades = $this->quba->get_total_mark();
         $this->attempt->state = self::FINISHED;
         $this->attempt->timecheckstate = null;
@@ -2440,7 +2462,7 @@ class quiz_attempt {
             if ($becomingabandoned) {
                 $this->process_abandon($timenow, true);
             } else {
-                $this->process_finish($timenow, !$toolate);
+                $this->process_finish($timenow, !$toolate, $toolate ? $timeclose : $timenow);
             }
 
         } catch (question_out_of_sequence_exception $e) {
@@ -2696,7 +2718,7 @@ abstract class quiz_nav_panel_base {
     }
 
     protected function get_state_string(question_attempt $qa, $showcorrectness) {
-        if ($qa->get_question()->length > 0) {
+        if ($qa->get_question(false)->length > 0) {
             return $qa->get_state_string($showcorrectness);
         }
 
@@ -2794,8 +2816,7 @@ class quiz_attempt_nav_panel extends quiz_nav_panel_base {
             return '';
         }
         return html_writer::link($this->attemptobj->summary_url(),
-                get_string('endtest', 'quiz'), array('class' => 'endtestlink')) .
-                $output->countdown_timer($this->attemptobj, time()) .
+                get_string('endtest', 'quiz'), array('class' => 'endtestlink aalink')) .
                 $this->render_restart_preview_link($output);
     }
 }

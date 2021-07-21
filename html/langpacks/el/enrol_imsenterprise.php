@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'el', version '3.8'.
+ * Strings for component 'enrol_imsenterprise', language 'el', version '3.11'.
  *
  * @package     enrol_imsenterprise
  * @category    string
@@ -40,7 +40,7 @@ $string['createnewcategories_desc'] = 'Εάν το στοιχείο &lt;org&gt;&
 Εάν δεν υπάρχει καμία κατηγορία με το επιθυμητό όνομα, τότε θα δημιουργηθεί μια κρυμμένη κατηγορία.';
 $string['createnewcourses'] = 'Δημιουργία νέων (κρυμμένων) μαθημάτων εάν δεν εντοπίζονται στο Moodle';
 $string['createnewcourses_desc'] = 'Εάν ενεργοποιηθεί, το πρόσθετο εγγραφής Enterprise IMS μπορεί να δημιουργήσει νέα μαθήματα για όσα εντοπίζονται στα δεδομένα IMS, αλλά όχι στη βάση δεδομένων του Moodle. Οποιαδήποτε νέα μαθήματα αρχικά κρύβονται.';
-$string['createnewusers'] = 'Δημιουργία λογαριασμών χρηστών για χρήστες που δεν έχουν ήδη εγγραφεί στο Moodle';
+$string['createnewusers'] = 'Δημιουργία λογαριασμών χρηστών για χρήστες που δεν έχουν ήδη καταχωρηθεί στο Moodle';
 $string['createnewusers_desc'] = 'Τα δεδομένα εγγραφής Enterprise IMS συνήθως περιγράφουν ένα σετ χρηστών. Εάν ενεργοποιηθεί, μπορεί να γίνει δημιουργία λογαριασμού για όποιο χρήστη δεν υπάρχει στη βάση δεδομένων του Moodle. Η αναζήτηση χρηστών γίνεται αρχικά με τον «αναγνωριστικό αριθμό» και στη συνέχεια με το «όνομα χρήστη» στο Moodle. Οι κωδικοί πρόσβασης δεν εισάγονται από το πρόσθετο IMS Enterprise. Η χρήση ενός πρόσθετου αυθεντικοποίησης συνιστάται για την αυθεντικοποίηση χρηστών.';
 $string['cronfrequency'] = 'Συχνότητα επεξεργασίας';
 $string['deleteusers'] = 'Διαγραφή λογαριασμών χρηστών όταν δηλώνεται στα IMS δεδομένα';

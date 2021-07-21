@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'nl', version '3.8'.
+ * Strings for component 'auth_shibboleth', language 'nl', version '3.11'.
  *
  * @package     auth_shibboleth
  * @category    string
@@ -32,7 +32,7 @@ $string['auth_shib_auth_method_description'] = 'Geef een naam voor de Shibboleth
 $string['auth_shib_changepasswordurl'] = 'URL om wachtwoord te wijzigen';
 $string['auth_shib_contact_administrator'] = 'Als je niet geassocieerd bent met de opgegeven organisaties en je hebt toegang nodig tot cursussen op deze server, neem dan contact op met de <a href="mailto:{$a}">Moodle beheerder</a>.';
 $string['auth_shib_convert_data'] = 'Data wijzigings-API';
-$string['auth_shib_convert_data_description'] = 'Je kunt deze API gebruiken om de gegevens die Shibboleth geeft verder aan te passen. Lees <a href="../auth/shibboleth/README.txt" target="_blank">README</a> voor verder instructies.';
+$string['auth_shib_convert_data_description'] = 'Je kunt deze API gebruiken om de gegevens die Shibboleth geeft verder aan te passen. Lees de <a href="{$a}" >README</a> voor verdere instructies.';
 $string['auth_shib_convert_data_filepath_warning'] = 'je kunt een bestand dat zich in de huidige site-gegevensmap ($CFG->dataroot) bevindt, niet gebruiken als de API voor gegevenswijziging.';
 $string['auth_shib_convert_data_warning'] = 'Het bestand bestaat niet of is niet leesbaar voor het webserverproces!';
 $string['auth_shib_idp_list'] = 'Identiteitsproviders';
@@ -56,10 +56,10 @@ $string['auth_shibboleth_login_long'] = 'Inloggen bij Moodle via Shibboleth';
 $string['auth_shibboleth_manual_login'] = 'Manueel inloggen';
 $string['auth_shibboleth_select_member'] = 'Ik ben lid van ...';
 $string['auth_shibboleth_select_organization'] = 'Kies om the authenticeren via Shibboleth. Selecteer je organisatie uit het rolmenu:';
-$string['auth_shibbolethdescription'] = 'Door deze methode te gebruiken kun je verbinding maken met een bestaande Shibboleth server om gebruikers te controleren en nieuwe aan te maken. Documentatie op <a href="../auth/shibboleth/README.txt">Shibboleth README</a>.';
+$string['auth_shibbolethdescription'] = 'Met deze methode worden gebruikers gemaakt en aangemeld door Shibboleth. Documentatie in de <a href="{$a}">Shibboleth README</a>.';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'De Shibboleth authenticatie-plugin bewaart geen persoonlijke gegevens.';
 $string['shib_invalid_account_error'] = 'Je bent blijkbaar via Shibboleth geauthenticeerd, maar Moodle heeft geen geldige account voor jouw gebruikersnaam. Je account bestaat misschien niet of is geschorst.';
 $string['shib_no_attributes_error'] = 'Het lijkt er op dat je door Shibboleth geautenticeerd bent, maar Moodle kon geen gebruikersinformatie vinden. Controleer of je identiteitsprovider de nodige informatie ({$a}) vrijgeeft aan de serviceprovider waarvan Moodle gebruik maakt of waarschuw de webmaster van die server.';
 $string['shib_not_all_attributes_error'] = 'Moodle heeft verschillende Shibboleth attributen nodig die in jouw geval niet aanwezig zijn. De attributen zijn: {$a}<br />Contacteer aub de webmaster van deze server of je identiteitsprovidor';
-$string['shib_not_set_up_error'] = 'Shibboleth authenticatie lijkt niet juist geïnstalleerd te zijn. Raadpleeg het <a href="README.txt">README</a>-bestand voor meer informatie over hoe je Shibboleht authenticatie installeert.';
+$string['shib_not_set_up_error'] = 'Shibboleth authenticatie lijkt niet juist geïnstalleerd te zijn want er zijn geen Shibboleth omgevingsvariablen voor deze pagina. Raadpleeg de <a href="{$a}">README</a>-voor meer informatie over hoe je Shibboleth authenticatie installeert of neem contact op met de webmaster van deze Moodle-installatie.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'eu', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'eu', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -42,4 +42,7 @@ $string['pluginname_help'] = 'Irudi bat izan dezakeen galderaren erantzuna emate
 $string['pluginnameadding'] = 'Erantzun laburreko galdera bat gehitzen';
 $string['pluginnameediting'] = 'Editatu Erantzun laburreko galdera';
 $string['pluginnamesummary'] = 'Hitz bat edo hitz gutxiko erantzunak onartzen ditu eta komodinak izan ditzaketen hainbat erantzun-eredurekin alderatuta kalifikatzen da.';
-$string['privacy:metadata'] = 'Erantzun laburreko galdera galdera mota pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Erantzun laburreko galdera galdera mota pluginak egileari aukera lehenetsiak erabiltzaile hobespen gisa gordetzea baimentzen dio.';
+$string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
+$string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
+$string['privacy:preference:usecase'] = 'Erantzunetan letra larri eta xeheak desberdinduko diren edo ez.';

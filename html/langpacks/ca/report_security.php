@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ca', version '3.8'.
+ * Strings for component 'report_security', language 'ca', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -71,10 +71,6 @@ $string['check_mediafilterswf_details'] = '<p>La incrustació automàtica d\'obj
 $string['check_mediafilterswf_error'] = 'El filtre multimèdia flash està habilitat - això és molt perillós per la majoria de servidors.';
 $string['check_mediafilterswf_name'] = 'El filtre multimèdia .swf està habilitat';
 $string['check_mediafilterswf_ok'] = 'El filtre multimèdia flash no està habilitat.';
-$string['check_noauth_details'] = '<p>El connector <em>Sense autenticació</em> no està pensat per a llocs en producció. Inhabiliteu-lo, llevat que aquest lloc sigui de desenvolupament o de proves.</p>';
-$string['check_noauth_error'] = 'El connector <em>Sense autenticació</em> no pot utilitzar-se en llocs en producció.';
-$string['check_noauth_name'] = 'Sense autenticació';
-$string['check_noauth_ok'] = 'S\'ha inhabilitat el connector <em>Sense autenticació</em>.';
 $string['check_openprofiles_details'] = 'Els perfils oberts dels usuaris poden ser usats abusivament pels que envien correu brossa. Es recomana que: <code>Forceu els usuaris a iniciar la sessió per accedir als perfils</code> o bé <code>Forceu els usuaris a iniciar sessió</code> estigui habilitat.';
 $string['check_openprofiles_error'] = 'Qualsevol persona pot visualitzar perfils d\'usuaris sense iniciar sessió.';
 $string['check_openprofiles_name'] = 'Perfils oberts dels usuaris';
@@ -122,10 +118,4 @@ $string['details'] = 'Detalls';
 $string['issue'] = 'Incidència';
 $string['pluginname'] = 'Característiques de la seguretat';
 $string['security:view'] = 'Mostra l\'informe de seguretat';
-$string['status'] = 'Estat';
-$string['statuscritical'] = 'Crític';
-$string['statusinfo'] = 'Informació';
-$string['statusok'] = 'D\'acord';
-$string['statusserious'] = 'Seriós';
-$string['statuswarning'] = 'Avís';
 $string['timewarning'] = 'El processament de dades pot trigar una temps llarg; tingueu paciència...';

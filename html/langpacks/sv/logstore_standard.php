@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_standard', language 'sv', version '3.8'.
+ * Strings for component 'logstore_standard', language 'sv', version '3.11'.
  *
  * @package     logstore_standard
  * @category    string
@@ -27,9 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['buffersize'] = 'Storlek på skrivbuffert';
 $string['jsonformat'] = 'JSON-format';
+$string['jsonformat_desc'] = 'Använd standardformatet JSON i stället för PHP-serialiserade data i databasfältet "övrigt".';
 $string['pluginname'] = 'Standardlogg';
+$string['pluginname_desc'] = 'Ett loggplugin lagrar loggposter i en Moodledatabas-tabell.';
 $string['privacy:metadata:log'] = 'En samling tidigare händelser';
+$string['privacy:metadata:log:anonymous'] = 'Om händelsen flaggades som anonym';
 $string['privacy:metadata:log:eventname'] = 'Händelsenamnet';
+$string['privacy:metadata:log:ip'] = 'IP-adressen som användes vid tidpunkten för händelsen';
 $string['privacy:metadata:log:origin'] = 'Händelsens ursprungskälla';
 $string['privacy:metadata:log:other'] = 'Ytterligare information om händelsen';
+$string['privacy:metadata:log:realuserid'] = 'ID:t för den verkliga användaren bakom händelsen när du maskerar en användare.';
+$string['privacy:metadata:log:relateduserid'] = 'ID:en för en användare som är relaterad till den här händelsen';
+$string['privacy:metadata:log:timecreated'] = 'Tiden då händelsen inträffade';
+$string['privacy:metadata:log:userid'] = 'ID:t för den användare som utlöste den här händelsen';
 $string['taskcleanup'] = 'Städa upp loggtabell';

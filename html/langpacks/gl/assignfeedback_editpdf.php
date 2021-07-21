@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'gl', version '3.8'.
+ * Strings for component 'assignfeedback_editpdf', language 'gl', version '3.11'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -35,24 +35,24 @@ $string['colourpicker'] = 'Selector de cor';
 $string['command'] = 'Orde:';
 $string['comment'] = 'Comentarios';
 $string['commentcolour'] = 'Cor do comentario';
-$string['commentcontextmenu'] = 'Menú de contexto de comentarios';
+$string['commentcontextmenu'] = 'Menú de contexto do comentario';
 $string['commentindex'] = 'Índice de comentarios';
 $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'Non foi posíbel gardar a páxina {$a}';
 $string['currentstamp'] = 'Selo';
 $string['default'] = 'Activado de xeito predeterminado';
-$string['default_help'] = 'Se establece, este método de comentarios será activado como predeterminado para todas as novas asignacións.';
+$string['default_help'] = 'Se estabelece, este método de comentarios será activado como predeterminado para todas as novas asignacións.';
 $string['deleteannotation'] = 'Eliminar anotación';
 $string['deletecomment'] = 'Eliminar comentario';
 $string['deletefeedback'] = 'Eliminar PDF de comentarios';
 $string['downloadablefilename'] = 'comentarios.pdf';
 $string['downloadfeedback'] = 'Descargar PDF de comentarios';
 $string['draftchangessaved'] = 'Gardadas as versións preliminares de comentarios';
-$string['drag'] = 'Arrastre';
+$string['drag'] = 'Arrastrar';
 $string['editpdf'] = 'Facer anotacións en PDF';
-$string['editpdf_help'] = 'Anote as entregas dos alumnos directamente no navegador e produza un PDF descargábel editado.';
+$string['editpdf_help'] = 'Anotar as entregas dos alumnos directamente no navegador e xerar un PDF editado que se poida descargar.';
 $string['enabled'] = 'Facer anotacións en PDF';
-$string['enabled_help'] = 'Se está activado, o profesor poderá crear ficheiros PDF con anotacións ao cualificar as tarefas. Isto permite que o profesor engada comentarios, debuxos e selos directamente sobre o traballo dos alumnos. A anotación faise no navegador e non se require ningún software adicional.';
+$string['enabled_help'] = 'Se está activado, o profesor poderá crear ficheiros PDF con anotacións ao cualificar as tarefas entregadas. Isto permite que o profesor engada comentarios, debuxos e selos directamente sobre o traballo dos alumnos. A anotación faise no navegador e non se require ningún software adicional.';
 $string['errorgenerateimage'] = 'Produciuse un erro ao xerar a imaxe con «ghostscript», información para depuración: {$a}';
 $string['errorpdfpage'] = 'Produciuse un erro ao xerar esta páxina.';
 $string['expcolcomments'] = 'Expandir/contraer todos os comentarios';
@@ -73,13 +73,13 @@ $string['output'] = 'Saída:';
 $string['oval'] = 'Óvalo';
 $string['pagenumber'] = 'Páxina {$a}';
 $string['pagexofy'] = 'Páxina {$a->page} de {$a->total}';
-$string['partialwarning'] = 'A algúns dos ficheiros deste envío só se pode acceder mediante descarga directa.';
-$string['pathtogspathdesc'] = 'Teña en conta que facer anotacións nun PDF require que a ruta a ghostscript se configure en {$a}.';
+$string['partialwarning'] = 'A algúns dos ficheiros desta entrega só se pode acceder mediante descarga directa.';
+$string['pathtogspathdesc'] = 'Teña en conta que para facer anotacións nun PDF é necesario configurar a ruta a ghostscript en {$a}.';
 $string['pen'] = 'Lapis';
 $string['pluginname'] = 'Facer anotacións en PDF';
-$string['preparesubmissionsforannotation'] = 'Prepare envíos para a anotación';
+$string['preparesubmissionsforannotation'] = 'Preparar entregas para anotacións';
 $string['privacy:metadata:colourpurpose'] = 'Cor do comentario ou anotación';
-$string['privacy:metadata:conversionpurpose'] = 'Os ficheiros son convertidos a PDF para permitir anotacións.';
+$string['privacy:metadata:conversionpurpose'] = 'Os ficheiros convértense a PDF para permitir anotacións.';
 $string['privacy:metadata:filepurpose'] = 'Almacena un PDF anotado con comentarios para o usuario.';
 $string['privacy:metadata:rawtextpurpose'] = 'Almacena o texto en bruto para os datos rápidos.';
 $string['privacy:metadata:tablepurpose'] = 'Almacena comentarios de lista rápida especificados polo profesor';

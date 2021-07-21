@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'sv', version '3.8'.
+ * Strings for component 'lti', language 'sv', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -42,6 +42,8 @@ $string['activate'] = 'Aktivera';
 $string['activatetoadddescription'] = 'Du måste aktivera detta verktyg innan lägga till en beskrivning.';
 $string['active'] = 'Aktiv';
 $string['activity'] = 'Aktivitet';
+$string['add_ltiadv'] = 'Lägg till LTI Advantage';
+$string['add_ltilegacy'] = 'Lägg till äldre LTI';
 $string['addnewapp'] = 'Aktivera extern applikation';
 $string['addserver'] = 'Ny betrodd server';
 $string['addtype'] = 'Lägg till förkonfigurerat verktyg';
@@ -62,6 +64,7 @@ $string['basicltifieldset'] = 'Anpassad exempelfältuppsättning';
 $string['basicltiintro'] = 'Aktivitetsbeskrivning';
 $string['basicltiname'] = 'Aktivitetsnamn';
 $string['basicltisettings'] = 'Grundläggande Learning Tool Interoperability (LTI)-inställningar';
+$string['cachedef_keyset'] = 'Cachar nyckelsamlingsinformation för verktyg';
 $string['cancel'] = 'Avbryt';
 $string['cancelled'] = 'Avbruten';
 $string['cannot_delete'] = 'Du kan inte ta bort denna verktygskonfiguration.';
@@ -84,7 +87,11 @@ $string['configtypes'] = 'Aktivera LTI-applikationer';
 $string['configured'] = 'Konfigurerad';
 $string['confirmtoolactivation'] = 'Är du säker på att du vill aktivera detta verktyg?';
 $string['contentitem'] = 'Innehållsobjekt-meddelande';
+$string['contentitem_deeplinking'] = 'Stödjer djuplänkning (Innehållsobjekt-meddelande)';
+$string['contentitem_deeplinking_help'] = 'Om markerad kommer alternativet \'Välj innehåll\' vara tillgängligt då man lägger till ett externt verktyg.';
 $string['contentitem_help'] = 'Om markerad kommer alternativet \'Välj innehåll\' vara tillgängligt då man lägger till ett externt verktyg.';
+$string['contentitem_multiple_description'] = 'Följande objekt kommer att läggas till i kursen:';
+$string['contentitem_multiple_graded'] = 'Betygsatt aktivitet (Maxbetyg: {$a})';
 $string['course_tool_types'] = 'Kursverktyg';
 $string['courseactivitiesorresources'] = 'Kursaktiviteter eller resurser';
 $string['courseid'] = 'Kurs-ID';
@@ -104,29 +111,75 @@ $string['debuglaunchoff'] = 'Normal start';
 $string['debuglaunchon'] = 'Start i debugläge';
 $string['default'] = 'Förvalt';
 $string['default_launch_container'] = 'Förvald startbehållare';
+$string['default_launch_container_help'] = 'Uppstartsbehållaren påverkar visningen av verktyget när det startas från kursen. Vissa startbehållare ger mer skärmutrymme åt verktyget, och andra ger en mer integrerad känsla i förhållande till Moodle-miljön.
+
+* **Standard** - Använd inställningarna som anges i verktygskonfigurationen.
+* **Bädda in** - Verktyget visas i det befintliga Moodle-fönstret, på ett sätt som liknar de flesta andra aktivitetstyper.
+* **Bädda in, utan block** - Verktyget visas i det befintliga Moodle-fönstret, med bara navigeringskontrollerna
+        högst upp på sidan.
+* **Nytt fönster** - Verktyget öppnas i ett nytt fönster och upptar allt tillgängligt utrymme.
+        Beroende på webbläsaren öppnas den i en ny flik eller i ett popup-fönster.
+        Det är möjligt att vissa webbläsare kommer att förhindra att det nya fönstret öppnas.';
 $string['delegate'] = 'Delegera till lärare';
+$string['delegate_tool'] = 'Som anges i definitionen för Djuplänkning eller Delegera till lärare';
 $string['delete'] = 'Ta bort';
 $string['delete_confirmation'] = 'Är du säker på att du vill ta bort detta förkonfigurerade verktyg?';
 $string['deletetype'] = 'Ta bort förkonfigurerat verktyg';
 $string['display_description'] = 'Visa aktivitetsbeskrivning vid start';
 $string['display_description_help'] = '';
 $string['display_name'] = 'Visa aktivitetsnamn vid start';
+$string['display_name_help'] = 'Om det här alternativet väljs visas aktivitetsnamnet (angivet ovan) ovanför innehållet som visas av verktyget.
+
+Det är möjligt att verktyget också kan visa titeln. Det här alternativet kan förhindra att aktivitetsrubriken
+visas två gånger.
+
+Titeln visas aldrig när verktygets startbehållare är i ett nytt fönster.';
+$string['domain_mismatch'] = 'Verktygsadressens domän matchar inte verktygskonfigurationen.';
 $string['donot'] = 'Skicka inte';
 $string['donotaccept'] = 'Acceptera inte';
 $string['donotallow'] = 'Tillåt inte';
+$string['duplicateregurl'] = 'Den här registreringsadressen används redan';
+$string['dynreg_update_btn_new'] = 'Registrera som nytt externt verktyg';
+$string['dynreg_update_btn_update'] = 'Uppdatera';
+$string['dynreg_update_name'] = 'Verktygsnamn';
+$string['dynreg_update_notools'] = 'Inga verktyg i kontexten.';
+$string['dynreg_update_text'] = 'Det finns befintliga verktyg kopplade till registreringens domän. Vill du uppdatera ett redan installerat externt verktyg eller skapa ett nytt externt verktyg?';
+$string['dynreg_update_url'] = 'Bas-URL';
+$string['dynreg_update_version'] = 'LTI-version';
+$string['dynreg_update_warn_dupdomain'] = 'Vi rekommenderar inte att du har flera externa verktyg under samma domän.';
+$string['editdescription'] = 'Klicka här för att ge verktyget en beskrivning';
 $string['edittype'] = 'Redigera förinställt verktyg';
 $string['embed'] = 'Bädda in';
 $string['embed_no_blocks'] = 'Bädda in utan block';
 $string['enableemailnotification'] = 'Skicka e-postnotiser';
 $string['enableemailnotification_help'] = 'Om aktiverat kommer elever motta notiser via e-post när deras verktygsinlämningar har betygsatts.';
 $string['enterkeyandsecret'] = 'Ange konsumentnyckel och delad hemlighet';
+$string['enterkeyandsecret_help'] = 'Om du fick en konsumentnyckel och/eller en delad hemlighet, mata in dem här';
+$string['errorbadurl'] = 'URL är inte en giltig verktygsadress eller cartridge.';
 $string['errorincorrectconsumerkey'] = 'Konsumentnyckel inkorrekt';
 $string['errorinvaliddata'] = 'Ogiltig data: {$a}';
+$string['errorinvalidmediatype'] = 'Ogiltig medietyp: {$a}';
+$string['errorinvalidresponseformat'] = 'Ogiltigt format för Innehåll-Objekt svar.';
 $string['errormisconfig'] = 'Felkonfigurerat verktyg. Be din Moodleadministratör att rätta till konfigurationen av verktyget.';
+$string['errortooltypenotfound'] = 'Det går inte att hitta LTI-verktygstypen.';
 $string['existing_window'] = 'Befintligt fönster';
+$string['extensions'] = 'LTI-tilläggstjänster';
 $string['external_tool_type'] = 'Förkonfigurerat verktyg';
+$string['external_tool_type_help'] = '* **Automatisk, baserad på verktygsadress** - Den bästa verktygskonfigurationen väljs automatiskt. Om verktygsadressen inte känns igen kan verktygskonfigurationsinformationen behöva anges manuellt.
+* **Ett specifikt förkonfigurerat verktyg** - Verktygskonfigurationen för det angivna verktyget kommer att användas när du kommunicerar med den externa verktygsleverantören. Om verktygsadressen inte verkar tillhöra verktygsleverantören visas en varning. Det är inte alltid nödvändigt att ange en verktygs-URL.
+* **Anpassad konfiguration** - En konsumentnyckel och delad hemlighet kan behöva anges manuellt. Konsumentnyckeln och den delade hemligheten kan erhållas från verktygsleverantören. Alla verktyg kräver dock inte en konsumentnyckel och en delad hemlighet, i vilket fall kan fälten lämnas tomma.
+
+### Förkonfigurerad verktygsredigering
+
+Tre ikoner är tillgängliga efter den förkonfigurerade verktygsmenyn:
+
+* **Lägg till** - Skapa en verktygskonfiguration på kursnivå. Alla externa verktygsinstanser i den här kursen kan använda verktygskonfigurationen.
+* **Redigera** - Välj ett kursnivåverktyg på den nedrullningsbara menyn och klicka sedan på den här ikonen. Informationen om verktygskonfigurationen kan redigeras.
+* **Ta bort** - Ta bort det valda kursnivåverktyget.';
 $string['external_tool_types'] = 'Förkonfigurerade verktyg';
 $string['failedtoconnect'] = 'Moodle kunde inte kommunicera med "{$a}" systemet';
+$string['failedtocreatetooltype'] = 'Det gick inte att skapa ett nytt verktyg. Kontrollera webbadressen och försök igen.';
+$string['failedtodeletetoolproxy'] = 'Det gick inte att ta bort verktygsregistreringen. Du kan behöva gå till "Hantera verktyg" under "Externt verktyg" och ta bort det manuellt.';
 $string['filter_basiclti_configlink'] = 'Konfigurera dina önskade webbplatser och deras lösenord';
 $string['filter_basiclti_password'] = 'Lösenord krävs';
 $string['filterconfig'] = 'LTI-administration';
@@ -143,7 +196,10 @@ Som tillägg, alla webservice förfrågningar från verktygsleverantören kommer
 Om detta alternativ används kontrollera att denna Moodleplats och verktygsleverantören stödjer SSL.';
 $string['forced_help'] = 'Denna inställning har tvingats i en kursnivå eller webbplatsnivå konfiguration för verktyg. Du kan inte ändra den från detta gränssnitt.';
 $string['generaltool'] = 'Generellt verktyg';
-$string['global_tool_types'] = 'Globala verktygstyper';
+$string['global_tool_types'] = 'Förinställda verktyg';
+$string['grading'] = 'Routning av betyg';
+$string['icon_url'] = 'Ikon-URL';
+$string['icon_url_help'] = 'Med ikonadressen kan ikonen som visas i kurslistan för den här aktiviteten ändras. I stället för att använda standard LTI-ikonen, kan en ikon som förmedlar typen av aktivitet anges.';
 $string['id'] = 'ID';
 $string['indicator:cognitivedepth'] = 'LTI kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en LTI-aktivitet.';
@@ -153,16 +209,40 @@ $string['indicator:socialbreadth'] = 'LTI social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en LTI-aktivitet.';
 $string['indicator:socialbreadthdef'] = 'LTI social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av LTI-aktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt, Deltagaren tillsammans med andra)';
+$string['initiatelogin'] = 'Påbörja inloggning-URL';
+$string['initiatelogin_help'] = 'Verktygsadressen till vilken begäran om att initiera en inloggning ska skickas.  Den här URL:en krävs innan ett meddelande kan skickas till verktyget.';
+$string['invalidid'] = 'Ogiltigt LTI-ID';
 $string['jwtsecurity'] = 'LTI 1.3';
+$string['keytype'] = 'Publik nyckeltyp';
+$string['keytype_help'] = 'Autentiseringsmetoden som används för att validera verktyget.';
+$string['keytype_keyset'] = 'URL till nyckeluppsättning';
+$string['keytype_rsa'] = 'RSA-nyckel';
 $string['launch_in_moodle'] = 'Öppna i Moodle';
 $string['launch_in_popup'] = 'Öppna i pop-up fönster';
 $string['launch_url'] = 'Verktygs-URL';
+$string['launch_url_help'] = 'Verktygs-URL:en anger webbadressen till det externa verktyget och kan innehålla ytterligare information, till exempel den resurs som ska visas.
+Om du är osäker på vad du ska ange för verktygsadressen, kontrollera med verktygsleverantören för mer information.
+
+Du kan ange en Cartridge-URL om du har en, och resten av formulärinformationen fylls i automatiskt.
+
+Om du har valt ett förkonfigurerat verktyg behöver du kanske inte ange en verktygsadress. Om verktygslänken används för att bara starta
+i verktygsleverantörens system och inte gå till en specifik resurs, kommer detta sannolikt att vara fallet.';
 $string['launchinpopup'] = 'Startbehållare';
+$string['launchinpopup_help'] = 'Uppstartsbehållaren påverkar visningen av verktyget när det startas från kursen. Vissa typer tillhandahåller ett större skärmutrymme för verktyget medan andra ger en mer integrerad upplevelse i Moodle-miljön.
+
+* **Standard** - Använd inställningarna som tillhandahålls i verktygskonfigurationen.
+* **Bädda in** - Verktyget visas i det befintliga Moodle-fönstret, på ett sätt som liknar de flesta andra aktivitetstyper.
+* **Bädda in, utan block** - Verktyget visas i det befintliga Moodle-fönstret, med enbart navigeringskontrollerna högst upp på sidan.
+* **Nytt fönster** - Verktyget öppnas i ett nytt fönster och upptar allt tillgängligt utrymme.
+        Beroende på webbläsaren öppnas det i en ny flik eller i ett popup-fönster.
+        Det är möjligt att vissa webbläsare kommer att förhindra att det nya fönstret öppnas.';
 $string['launchoptions'] = 'Startalternativ';
 $string['leaveblank'] = 'Lämna tomt om du inte behöver dem';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Lägg till kursspecifika verktygskonfigurationer';
 $string['lti:addinstance'] = 'Nytt externt verktyg';
+$string['lti:addmanualinstance'] = 'Lägg till manuellt konfigurerat verktyg';
+$string['lti:addpreconfiguredinstance'] = 'Lägg till förkonfigurerat verktyg';
 $string['lti:admin'] = 'Agera administratör när det externa verktyget startas';
 $string['lti:grade'] = 'Visa betyg som returnerats av det externa verktyget';
 $string['lti:manage'] = 'Agera instruktör när verktyget startas';
@@ -184,13 +264,31 @@ $string['ltiunknownserviceapicall'] = 'Okänt API-anrop till LTI-tjänst.';
 $string['ltiversion'] = 'LTI-version';
 $string['ltiversion_help'] = 'Den version av LTI som används för signering av meddelanden och tjänstförfrågningar: LTI 1.0/1.1 och LTI 2.0 använder säkerhetsprofilen OAuth 1.0A; LTI 1.3.0 använder JWTs.';
 $string['main_admin'] = 'Allmän hjälp';
+$string['main_admin_help'] = 'Externa verktyg gör det möjligt för Moodle-användare att interagera med utbildningsresurser som finns externt. Genom ett speciellt uppstartsprotokoll har fjärrverktyget tillgång till allmän information om startanvändaren. Till exempel institutionens namn, kurs-ID, användar-ID och annan information, till exempel användarens namn eller e-postadress.
+
+Verktygen på den här sidan är indelade i tre kategorier:
+
+* **Aktiva** - Dessa verktygsleverantörer har godkänts och konfigurerats av en administratör. De kan användas inifrån vilken kurs som helst på denna webbplats. Om en konsumentnyckel och en delad hemlighet anges upprättas en förtroenderelation mellan den här webbplatsen och fjärrverktyget, vilket ger en säker kommunikationskanal.
+* **Väntande** - Dessa verktygsleverantörer kom in genom en paketimport, men har inte konfigurerats av en administratör. Lärare kan fortfarande använda verktyg från dessa leverantörer om de har en konsumentnyckel och delad hemlighet, eller om ingen krävs.
+* **Avvisade** - Dessa verktygsleverantörer flaggas som sådana som en administratör inte har för avsikt att göra tillgängliga på webbplatsen. Lärare kan fortfarande använda verktyg från dessa leverantörer om de har en konsumentnyckel och delad hemlighet, eller om ingen krävs.';
 $string['manage_external_tools'] = 'Hantera verktyg';
 $string['manage_tool_proxies'] = 'Hantera externa verktygsregistreringar';
 $string['manage_tools'] = 'Hantera förinställda verktyg';
+$string['manuallyaddtype'] = 'Alternativt kan du <a href="{$a}">konfigurera ett verktyg manuellt</a>.';
 $string['miscellaneous'] = 'Övrigt';
+$string['misconfiguredtools'] = 'Felkonfigurerade verktygsinstanser upptäcktes';
 $string['missingparameterserror'] = 'Sidan är felkonfigurerad: "{$a}"';
 $string['module_class_type'] = 'Moodle-modultyp';
 $string['modulename'] = 'Externt verktyg';
+$string['modulename_help'] = 'Modulen <em>Externt verktyg</em> gör det möjligt för eleverna att interagera med utbildningsresurser och aktiviteter på andra webbplatser. Ett externt verktyg kan till exempel ge åtkomst till en ny aktivitetstyp eller utbildningsmaterial från en utgivare.
+
+För att skapa en extern verktygsaktivitet krävs en verktygsleverantör som stöder LTI (Learning Tools Interoperability). En lärare kan skapa en extern verktygsaktivitet eller använda ett verktyg som konfigurerats av webbplatsadministratören.
+
+Externa verktygsaktiviteter skiljer sig åt från URL-resurser på några olika sätt:
+
+* Externa verktyg är kontextmedvetna, dvs. de har tillgång till information om den användare som startade verktyget, till exempel institution, kurs och namn
+* Externa verktyg stöder läsning, uppdatering och borttagning av resultat som är associerade med aktivitetsinstansen
+* Externa verktygskonfigurationer skapar en förtroenderelation mellan din webbplats och verktygsleverantören, vilket möjliggör säker kommunikation mellan dem';
 $string['modulenameplural'] = 'Externa verktyg';
 $string['modulenamepluralformatted'] = 'LTI-instanser';
 $string['name'] = 'Namn';
@@ -200,23 +298,63 @@ $string['no_lti_configured'] = 'Inga aktiva externa verktyg har konfigurerats.';
 $string['no_lti_pending'] = 'Det finns inga väntande externa verktyg.';
 $string['no_lti_rejected'] = 'Det finns inga avvisade externa verktyg.';
 $string['no_lti_tools'] = 'Inga externa verktyg har konfigurerats.';
+$string['no_tp_accepted'] = 'Det finns inga accepterade externa verktygsregistreringar.';
+$string['no_tp_cancelled'] = 'Det finns inga annullerade externa verktygsregistreringar.';
+$string['no_tp_configured'] = 'Inga oregistrerade externa verktygsregistreringar har konfigurerats.';
+$string['no_tp_pending'] = 'Det finns inga väntande externa verktygsregistreringar.';
+$string['no_tp_rejected'] = 'Det finns inga avvisade externa verktygsregistreringar.';
+$string['noattempts'] = 'Inga försök har gjorts på den här verktygsinstansen';
 $string['noltis'] = 'Det finns inga externa verktygsinstanser.';
 $string['noprofileservice'] = 'Profiltjänst kunde inte hittas';
 $string['noservers'] = 'Hittade inga servrar';
+$string['notypes'] = 'Det finns för närvarande inga LTI-verktyg konfigurerade i Moodle. Klicka på länken Installera ovan om du vill lägga till några.';
+$string['noviewusers'] = 'Inga användare med behörighet att använda det här verktyget hittades';
 $string['oauthsecurity'] = 'LTI 1.0/1.1';
+$string['opensslconfiginvalid'] = 'LTI 1.3 kräver att en giltig openssl.cnf konfigureras och är tillgänglig för webbservern. Kontakta webbplatsadministratören för att konfigurera och aktivera openssl för den här webbplatsen.';
 $string['optionalsettings'] = 'Valfria inställningar';
 $string['organization'] = 'Organisationsdetaljer';
 $string['organizationdescr'] = 'Organisationsbeskrivning';
 $string['organizationid'] = 'Organisations-ID';
+$string['organizationid_default'] = 'Förinställt Organisations-ID';
+$string['organizationid_default_help'] = 'Standardvärdet som ska användas för organisations-ID. Plats-ID identifierar den här installationen av Moodle.';
+$string['organizationid_help'] = 'En unik identifierare för denna Moodle-instans. Vanligtvis används organisationens DNS-namn.
+
+Om det här fältet lämnas tomt används värdnamnet för moodle-webbplatsen som standardvärde.';
+$string['organizationidguid'] = 'Organisations-ID';
+$string['organizationidguid_help'] = 'En unik identifierare för den här Moodle-instansen som skickas till verktyget som instansens <em>Platform Instance GUID</em>.
+
+Om det här fältet lämnas tomt används standardvärdet.';
 $string['organizationurl'] = 'Organisations-URL';
+$string['organizationurl_help'] = 'Bas-URL:en för moodle-instansen.
+
+Om det här fältet lämnas tomt används ett standardvärde baserat på platskonfigurationen.';
+$string['pagesize'] = 'Inlämningar som visas per sida';
 $string['parameter'] = 'Verktygsparametrar';
+$string['parameter_help'] = 'Verktygsparametrar är inställningar som verktygsleverantören i den accepterade verktygsproxyn förväntas skicka.';
 $string['password'] = 'Delad hemlighet';
 $string['password_admin'] = 'Delad hemlighet';
+$string['password_admin_help'] = 'Den delade hemligheten kan betraktas som ett lösenord som används för att autentisera åtkomst till verktyget. Den tillhandahålls, tillsammans med konsumentnyckeln, av verktygsleverantören.
+
+Verktyg som inte kräver säker kommunikation från Moodle och inte tillhandahåller ytterligare tjänster (t.ex. betygsrapportering)
+kanske inte kräver en delad hemlighet.';
+$string['password_help'] = 'För förkonfigurerade verktyg är det inte nödvändigt att ange en delad hemlighet här eftersom den delade hemligheten kommer att tillhandahållas som en del i konfigurationsprocessen.
+
+Det här fältet bör anges om du skapar en länk till en verktygsleverantör som inte redan är konfigurerad.
+Om verktygsleverantören ska användas mer än en gång i den här kursen är det en bra idé att lägga till en kursverktygskonfiguration.
+
+Den delade hemligheten kan betraktas som ett lösenord som används för att autentisera åtkomst till verktyget. Den tillhandahålls, tillsammans med konsumentnyckeln, av verktygsleverantören.
+
+Verktyg som inte kräver säker kommunikation från Moodle och inte tillhandahåller ytterligare tjänster (t.ex. betygsrapportering)
+kanske inte kräver en delad hemlighet.';
 $string['pending'] = 'Väntande';
+$string['pluginadministration'] = 'Extern verktygsadministration';
 $string['pluginname'] = 'Externt verktyg';
 $string['preferheight'] = 'Föredragen höjd';
+$string['preferwidget'] = 'Föredra widget-ippstart';
 $string['preferwidth'] = 'Föredragen bredd';
+$string['press_to_submit'] = 'Tryck för att starta den här aktiviteten';
 $string['privacy'] = 'Integritet';
+$string['privacy:metadata:coursefullname'] = 'Det fullständiga namnet på kursen användaren får tillgång till LTI Consumer från';
 $string['privacy:metadata:courseid'] = 'ID för kurs från vilken användaren använder LTI-konsumenten';
 $string['privacy:metadata:courseidnumber'] = 'ID-nummer för kurs från vilken användaren använder LTI-konsumenten';
 $string['privacy:metadata:courseshortname'] = 'Kortnamn för kurs från vilken användaren använder LTI-konsumenten';
@@ -244,6 +382,8 @@ $string['privacy:metadata:useridnumber'] = 'ID-nummer för användaren som anvä
 $string['privacy:metadata:username'] = 'Användarnamn för användaren som använder LTI-konsumenten';
 $string['publickey'] = 'Publik nyckel';
 $string['publickey_help'] = 'Den publika nyckeln (i PEM-format) som tillhandahållits av verktyget för att möjliggöra signering av inkommande meddelanden och tjänsteförfrågningar.';
+$string['publickeyset'] = 'Publik nyckeluppsättning';
+$string['publickeyset_help'] = 'Offentliga nycklar från där den här webbplatsen hämtar verktygets offentliga nyckel för att tillåta att signaturer av inkommande meddelanden och tjänstbegäranden verifieras.';
 $string['quickgrade'] = 'Tillåt snabbedömning';
 $string['quickgrade_help'] = 'Om det här alternativet är aktiverat kan flera verktyg bedömas på en sida. Lägg till resultat och kommentarer och klicka sedan på knappen "Spara all min återkoppling" för att spara alla ändringar för sidan.';
 $string['redirect'] = 'Du omdirigeras inom några sekunder. Om inte, tryck på knappen.';
@@ -330,6 +470,8 @@ $string['show_in_course_lti2'] = 'Användning av verktygskonfiguration';
 $string['show_in_course_lti2_help'] = 'Det här verktyget kan visas i aktivitetsväljaren och vara möjligt för en lärare att välja att lägga till i en kurs. Alternativt kan det visas i den förkonfigurerade verktygsmenyn när du lägger till ett externt verktyg i en kurs.';
 $string['show_in_course_no'] = 'Visa inte. Använd endast när en matchande verktygs-URL anges.';
 $string['show_in_course_preconfigured'] = 'Visa som förkonfigurerat verktyg när du lägger till ett externt verktyg';
+$string['sitehost'] = 'Webbplatsnamn';
+$string['siteid'] = 'Webbplats-ID';
 $string['size'] = 'Storleksparametrar';
 $string['submission'] = 'Inlämning';
 $string['submissions'] = 'Inlämningar';

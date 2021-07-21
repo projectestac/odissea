@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'pt', version '3.8'.
+ * Strings for component 'assignsubmission_onlinetext', language 'pt', version '3.11'.
  *
  * @package     assignsubmission_onlinetext
  * @category    string
@@ -31,7 +31,7 @@ $string['default_help'] = 'Se ativar esta opção, este método estará ativo po
 $string['enabled'] = 'Texto online';
 $string['enabled_help'] = 'Se ativo, os alunos podem  submeter um texto diretamente através do editor de texto do Moodle quando submetem o seu trabalho.';
 $string['eventassessableuploaded'] = 'Um texto online foi carregado';
-$string['nosubmission'] = 'Ainda não foi submetido nada neste Trabalho';
+$string['nosubmission'] = 'Nenhuma submissão efetuada para este trabalho';
 $string['numwords'] = '({$a} palavras)';
 $string['numwordsforlog'] = 'Contar palavras: {$a} palavras';
 $string['onlinetext'] = 'Texto online';

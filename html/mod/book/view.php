@@ -208,6 +208,12 @@ book_view($book, $chapter, $islastchapter, $course, $cm, $context);
 echo $OUTPUT->header();
 echo $OUTPUT->heading(format_string($book->name));
 
+// Render the activity information.
+$cminfo = cm_info::create($cm);
+$cmcompletion = \core_completion\cm_completion_details::get_instance($cminfo, $USER->id);
+$activitydates = \core\activity_dates::get_dates_for_module($cminfo, $USER->id);
+echo $OUTPUT->activity_information($cminfo, $cmcompletion, $activitydates);
+
 // Info box.
 if ($book->intro) {
     echo $OUTPUT->box(format_module_intro('book', $book, $cm->id), 'generalbox', 'intro');
@@ -217,7 +223,7 @@ $navclasses = book_get_nav_classes();
 
 if ($book->navstyle) {
     // Upper navigation.
-    echo '<div class="navtop clearfix ' . $navclasses[$book->navstyle] . '">' . $chnavigation . '</div>';
+    echo '<div class="navtop border-top py-3 clearfix ' . $navclasses[$book->navstyle] . '">' . $chnavigation . '</div>';
 }
 
 // The chapter itself.
@@ -246,7 +252,7 @@ if (core_tag_tag::is_enabled('mod_book', 'book_chapters')) {
 
 if ($book->navstyle) {
     // Lower navigation.
-    echo '<div class="navbottom clearfix ' . $navclasses[$book->navstyle] . '">' . $chnavigation . '</div>';
+    echo '<div class="navbottom py-3 border-bottom clearfix ' . $navclasses[$book->navstyle] . '">' . $chnavigation . '</div>';
 }
 
 echo $OUTPUT->footer();

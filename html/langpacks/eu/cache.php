@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'eu', version '3.8'.
+ * Strings for component 'cache', language 'eu', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -40,7 +40,10 @@ $string['cachedef_calendar_subscriptions'] = 'Egutegiaren harpidetzak';
 $string['cachedef_capabilities'] = 'Sistemako gaitasunen zerrenda';
 $string['cachedef_completion'] = 'Jarduera-osaketaren egoera';
 $string['cachedef_config'] = 'Konfigurazioaren ezarpenak';
+$string['cachedef_contentbank_context_extensions'] = 'Baimendutako luzapenak eta eurak sostengatutako pluginak eduki-banku baten testuinguruan';
+$string['cachedef_contentbank_enabled_extensions'] = 'Baimendutako luzapenak eta eurak sostengatutako pluginak eduki-banku batean';
 $string['cachedef_contextwithinsights'] = 'Pertzepzioen testuingurua';
+$string['cachedef_course_image'] = 'Ikastaro-irudiak';
 $string['cachedef_course_user_dates'] = 'Ikastaroetako erabiltzaileen datuak erlatiboak izango dira';
 $string['cachedef_coursecat'] = 'Ikastaro-kategorien zerrenda erabiltzaile jakin batentzat';
 $string['cachedef_coursecatrecords'] = 'Ikastaro-kategorien erregistroak';
@@ -54,9 +57,13 @@ $string['cachedef_externalbadges'] = 'Erabiltzaile jakin batentzako kanpoko domi
 $string['cachedef_fontawesomeiconmapping'] = 'Font awesome-erako ikonoen lotura';
 $string['cachedef_grade_categories'] = 'Kalifikazio-kategorien kontsultak';
 $string['cachedef_grade_letters'] = 'Kalifikazio-letren kontsultak';
+$string['cachedef_gradesetting'] = 'Ikastaro-kalifikazioa ezarpena';
 $string['cachedef_groupdata'] = 'Ikastaroko taldeen informazioa';
+$string['cachedef_h5p_content_type_translations'] = 'H5P eduki-moten liburutegien itzulpenak';
+$string['cachedef_h5p_library_files'] = 'H5P liburutegiko fitxategiak';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - eduki garbitua';
 $string['cachedef_langmenu'] = 'Eskura dauden hizkuntzen zerrenda';
+$string['cachedef_license'] = 'Lizentzien zerrenda';
 $string['cachedef_locking'] = 'Blokeatzen';
 $string['cachedef_message_processors_enabled'] = 'Gaitutako mezu-prozesatzaileen egoera';
 $string['cachedef_message_time_last_message_between_users'] = 'Orain dela gutxiko erabiltzaileen arteko mezuen sorrera-unea';
@@ -69,6 +76,7 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'portfolio_add_bu
 $string['cachedef_postprocessedcss'] = 'Ondoren prozesatutako CSSa';
 $string['cachedef_presignup'] = 'Erregistratu gabeko erabiltzaile baten izena eman aurretiko datuak';
 $string['cachedef_questiondata'] = 'Galdera-definizioak';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'Ikastaroko eduki-elementuen gomendioak';
 $string['cachedef_repositories'] = 'Biltegi-instantzien datuak';
 $string['cachedef_roledefs'] = 'Rolen definizioak';
 $string['cachedef_string'] = 'Hizkuntza-kateen cachea';
@@ -76,6 +84,8 @@ $string['cachedef_suspended_userids'] = 'Kontua etenda duten erabiltzaile-zerren
 $string['cachedef_tagindexbuilder'] = 'Etiketatutako elementuen bilaketen emaitzak';
 $string['cachedef_tags'] = 'Etiketa-biltegiak eta eremuak';
 $string['cachedef_temp_tables'] = 'Behin-behineko taulen cachea';
+$string['cachedef_user_course_content_items'] = 'Erabiltzaileen eduki-elementuak (jarduerak, baliabideak eta euren azpimotak) ikastaroko';
+$string['cachedef_user_favourite_course_content_items'] = 'Erabiltzaileen elementu gogokoak';
 $string['cachedef_user_group_groupings'] = 'Ikaslearen talde-multzo eta taldeak ikastaroko';
 $string['cachedef_userselections'] = 'Erabiltzaile-aukerak Moodle osoan zehar irauteko erabilitako datuak';
 $string['cachedef_yuimodules'] = 'YUI moduluen definizioak';
@@ -84,7 +94,7 @@ $string['cachestores'] = 'Cache-biltegiak';
 $string['caching'] = 'Cacheak';
 $string['canuselocalstore'] = 'Biltegi lokala erabili dezake';
 $string['component'] = 'Osagaia';
-$string['confirmlockdeletion'] = 'Konfirmatu blokeoaren ezabaketa';
+$string['confirmlockdeletion'] = 'Baieztatu blokeoaren ezabaketa';
 $string['confirmstoredeletion'] = 'Baieztatu biltegiaren ezabaketa';
 $string['default_application'] = 'Aplikazioen biltegi lehenetsia';
 $string['default_request'] = 'Eskaeren biltegi lehenetsia';

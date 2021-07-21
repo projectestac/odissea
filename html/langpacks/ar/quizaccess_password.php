@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_password', language 'ar', version '3.8'.
+ * Strings for component 'quizaccess_password', language 'ar', version '3.11'.
  *
  * @package     quizaccess_password
  * @category    string
@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'كلمة المرور المدخلة غير صحيحة';
 $string['pluginname'] = 'نظام الدخول بكلمة مرور للاختبار';
-$string['privacy:metadata'] = 'المكون الإضافي Password quiz access rule  لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق قاعدة كلمة المرور للوصول للاختبار لا يخزن أي بيانات شخصية.';
 $string['quizpassword'] = 'كلمة المرور للاختبار';
-$string['requirepasswordmessage'] = 'لإجراء هذا الاختبار تحتاج إلى معرفة كلمة المرور للاختبار';
+$string['requirepasswordmessage'] = 'لمحاولة هذا الاختبار، ينبغي عليك معرفة كلمة مروره';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'nl', version '3.8'.
+ * Strings for component 'data', language 'nl', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -77,6 +77,7 @@ $string['comments'] = 'Commentaren';
 $string['commentsaved'] = 'Notitie bewaard';
 $string['commentsn'] = '{$a} notitie(s)';
 $string['commentsoff'] = 'De commentaarfunctie is niet ingeschakeld.';
+$string['completiondetail:entries'] = 'Items toevoegen: {$a}';
 $string['completionentries'] = 'Items invoeren vereist';
 $string['completionentriescount'] = 'Aantal items';
 $string['completionentriesdesc'] = 'Minimaal aantal ingevoerde items vereist: {$a}';
@@ -109,7 +110,7 @@ $string['csvimport_help'] = '<p align="center"><strong>Importeren met een CSV be
 </p>
 
 <p>Waarschuwing: sommige veldtypes worden niet ondersteund.</p>';
-$string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">CSV</acronym> tekst met het gekozen scheidingsteken:';
+$string['csvwithselecteddelimiter'] = '<abbr title="Comma Separated Values">CSV</abbr> tekst met het gekozen scheidingsteken:';
 $string['data:addinstance'] = 'Voeg een nieuwe databank toe';
 $string['data:approve'] = 'Keur nieuwe items goed en verwerp goedgekeurde items';
 $string['data:comment'] = 'Schrijf commentaar';
@@ -181,6 +182,8 @@ $string['exportaszip_help'] = '<p align="center"><strong>Exporteren als Zip</str
 <p>Hiermee kun je de sjabloonsets downloaden naar je computer, van waar je ze later terug kunt uploaden naar een andere database met de Importeren van Zip mogelijkheid.</p>';
 $string['exportedtozip'] = 'Geëxporteerd naar tijdelijke zip ...';
 $string['exportentries'] = 'Exporteer items';
+$string['exportformat'] = 'Export formaat';
+$string['exportoptions'] = 'Export opties';
 $string['exportownentries'] = 'Exporteer alleen je eigen items?
 ({$a->mine}/{$a->all})';
 $string['failedpresetdelete'] = 'Fout bij het verwijderen van een sjabloon';
@@ -198,6 +201,7 @@ $string['fieldmappings'] = 'Veldverwijzingen';
 $string['fieldmappings_help'] = 'Met dit menu kun je data behouden van een bestaande databank. Om de data van een veld te bewaren, moet je deze verwijzen naar een nieuw veld, waar de data dan zal terecht komen. Elk veld kan ook leeg gelaten worden als je er geen gegevens wil naar toe kopiëren. De gegevens uit een oud veld dat niet naar een nieuw veld verwezen wordt, zullen verloren gaan.
 Je kunt alleen velden van hetzelfde type naar elkaar laten verwijzen, dus elk dropdownmenu zal andere velden bevatten. Je moet er ook voor opletten om een oud veld niet naar meer dan één nieuwe velden te laten verwijzen.';
 $string['fieldname'] = 'Veldnaam';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'Volgende velden in je bestand zijn niet bekend in de databank: {$a}';
 $string['fieldoptions'] = 'Opties (Eén per lijn)';
 $string['fields'] = 'Velden';
@@ -313,7 +317,7 @@ $string['number'] = 'Getal';
 $string['numberrssarticles'] = 'Items in de RSS-feed';
 $string['numnotapproved'] = 'Wachtend';
 $string['numrecords'] = '{$a} records';
-$string['ods'] = '<acronym title="OpenDocument SRekenblad">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
 $string['openafterclose'] = 'Je hebt een startdatum opgegeven na de einddatum';
 $string['optionaldescription'] = 'Korte beschrijving (optioneel)';
 $string['optionalfilename'] = 'Bestandsnaam (optioneel)';
@@ -378,6 +382,7 @@ $string['rows'] = 'rijen';
 $string['rssglobaldisabled'] = 'Uitgeschakeld. Controleer de configuratievariabelen van de site';
 $string['rsstemplate'] = 'RSS';
 $string['rsstitletemplate'] = 'RSS titelsjabloon';
+$string['rsstype'] = 'RSS-feed voor deze activiteit';
 $string['save'] = 'Bewaar';
 $string['saveandadd'] = 'Bewaar en voeg nog één toe';
 $string['saveandview'] = 'Bewaar en bekijk';
@@ -391,6 +396,8 @@ $string['search'] = 'Zoek';
 $string['search:activity'] = 'Informatie databank-activiteit';
 $string['search:entry'] = 'Databank - inhoud';
 $string['selectedrequired'] = 'Alle geselecteerde vereist';
+$string['selectexportoptions'] = 'Selecteer exportopties';
+$string['selectfields'] = 'Selecteer velden';
 $string['showall'] = 'Toon alles';
 $string['single'] = 'Itemweergave';
 $string['singletemplate'] = 'Itemweergave';
@@ -412,6 +419,8 @@ $string['todatabase'] = 'naar deze database';
 $string['type'] = 'Veldtype';
 $string['undefinedprocessactionmethod'] = 'Geen methode gedefiniëerd in Data_Preset om de actie "{$a}" af te handelen.';
 $string['unsupportedexport'] = '({$a->fieldtype}) kan niet geëxporteerd worden.';
+$string['unsupportedfields'] = 'Niet-ondersteunde velden';
+$string['unsupportedfieldslist'] = 'De volgende velden kunnen niet worden geëxporteerd:';
 $string['updatefield'] = 'Update een bestaand veld';
 $string['uploadfile'] = 'Upload bestand';
 $string['uploadrecords'] = 'Upload records uit een bestand';

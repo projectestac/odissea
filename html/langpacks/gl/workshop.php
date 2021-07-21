@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'gl', version '3.8'.
+ * Strings for component 'workshop', language 'gl', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -39,7 +39,7 @@ $string['allowedfiletypesforoverallfeedback_link'] = 'admin/tool/filetypes/index
 $string['allowedfiletypesforsubmission'] = 'Tipos de ficheiros permitidos como anexos a entregas';
 $string['allowedfiletypesforsubmission_help'] = 'Os tipos de ficheiro permitidos como anexo de entrega poden restrinxirse escribindo unha lista separada por comas das extensións de ficheiros, por exemplo «mp4, mp3, png, jpg». Se deixa o campo baleiro, entón permítense todos os tipos de ficheiro.';
 $string['allowedfiletypesforsubmission_link'] = 'admin/tool/filetypes/index';
-$string['allsubmissions'] = 'Todas as entregas';
+$string['allsubmissions'] = 'Todas as entregas ({$a})';
 $string['alreadygraded'] = 'Xa cualificado';
 $string['areaconclusion'] = 'Texto de conclusión';
 $string['areainstructauthors'] = 'Instrucións para a entrega';
@@ -84,22 +84,22 @@ $string['calculatesubmissiongrades'] = 'Calcular as cualificacións das entregas
 $string['calculatesubmissiongradesdetails'] = 'agardábase: {$a->expected}<br />calculouse: {$a->calculated}';
 $string['chooseuser'] = 'Escoller un usuario...';
 $string['clearaggregatedgrades'] = 'Limpar todas as cualificacións agregadas';
-$string['clearaggregatedgrades_help'] = 'As cualificacións agregadas para a entrega e as cualificacións de avaliación restableceranse. Pode volver calcular estas cualificacións desde o principio na Fase de cualificación das avaliacións.';
+$string['clearaggregatedgrades_help'] = 'As cualificacións agregadas para a entrega e as cualificacións de avaliación restabeleceranse. Pode volver calcular estas cualificacións dende o principio na Fase de cualificación das avaliacións.';
 $string['clearaggregatedgradesconfirm'] = 'Confirma que quere limpar as cualificacións calculadas para as entregas e as cualificacións da avaliación?';
 $string['clearassessments'] = 'Limpar as avaliacións';
-$string['clearassessments_help'] = 'As cualificacións calculadas para as entregas e as cualificacións de avaliación restableceranse. A información sobre como encher os formularios conservase, mais todos os avaliadores deberán abrir o formulario de avaliación de novo e volver gardalo, para que se calculen de novo as cualificacións.';
+$string['clearassessments_help'] = 'As cualificacións calculadas para as entregas e as cualificacións de avaliación restabeleceranse. A información sobre como encher os formularios conservase, mais todos os avaliadores deberán abrir o formulario de avaliación de novo e volver gardalo, para que se calculen de novo as cualificacións.';
 $string['clearassessmentsconfirm'] = 'Confirma que quere limpar todas as cualificacións de avaliación?. Non poderá volver a obter a información por vostede mesmo, os avaliadores terán que avaliar de novo as entregas asignadas.';
 $string['conclusion'] = 'Conclusión';
 $string['conclusion_help'] = 'O texto de conclusión amosáselle aos participantes na fin da actividade.';
 $string['configexamplesmode'] = 'Modo predeterminado na avaliación dos exemplos nos obradoiros';
 $string['configgrade'] = 'Cualificación máxima predeterminada para as entregas nos obradoiros';
-$string['configgradedecimals'] = 'Número predeterminados de díxitos que se deberían amosar despois do punto decimal ao amosar as cualificacións.';
+$string['configgradedecimals'] = 'Número predeterminados de díxitos que se deberían amosar após o punto decimal ao amosar as cualificacións.';
 $string['configgradinggrade'] = 'Cualificación máxima predeterminada para a avaliación nos obradoiros';
 $string['configmaxbytes'] = 'O tamaño máximo predeterminado do ficheiro entregado para todos os obradoiros (suxeito ao límite do curso e a outros axustes locais)';
 $string['configstrategy'] = 'Estratexia de cualificación predeterminada para os obradoiros';
-$string['createsubmission'] = 'Comezar a preparación da súa entrega';
+$string['createsubmission'] = 'Engadir entrega';
 $string['crontask'] = 'Procesamento en segundo plano para o módulo de obradoiro';
-$string['daysago'] = 'vai {$a} días';
+$string['daysago'] = 'hai {$a} días';
 $string['daysleft'] = 'restan {$a} días';
 $string['daystoday'] = 'hoxe';
 $string['daystomorrow'] = 'mañá';
@@ -110,7 +110,7 @@ $string['editassessmentform'] = 'Editar o formato de avaliación';
 $string['editassessmentformstrategy'] = 'Editar o formato de avaliación ({$a})';
 $string['editingassessmentform'] = 'Editando o formato de avaliación';
 $string['editingsubmission'] = 'Editando a entrega';
-$string['editsubmission'] = 'Editar a entrega';
+$string['editsubmission'] = 'Editar entrega';
 $string['err_multiplesubmissions'] = 'Mentres se estaba a editar este formulario, gardouse outra versión da entrega. Non se permiten entregas múltiples por usuario.';
 $string['err_removegrademappings'] = 'Non é posíbel retirar as asignacións de cualificacións non usadas';
 $string['evaluategradeswait'] = 'Agarde ata que se teñan feito as avaliacións e calculado as cualificacións';
@@ -126,7 +126,7 @@ $string['eventphaseswitched'] = 'Fase cambiada';
 $string['eventsubmissionassessed'] = 'Entrega avaliada';
 $string['eventsubmissionassessmentsreset'] = 'Limpadas as avaliacións das entregas';
 $string['eventsubmissioncreated'] = 'Entrega creada';
-$string['eventsubmissiondeleted'] = 'Entrega eliminadas';
+$string['eventsubmissiondeleted'] = 'Entregas eliminadas';
 $string['eventsubmissionreassessed'] = 'Entrega avaliada de novo';
 $string['eventsubmissionupdated'] = 'Entrega actualizada';
 $string['eventsubmissionviewed'] = 'Entrega vista';
@@ -142,8 +142,8 @@ $string['exampledeleteconfirm'] = 'Confirma que quere eliminar a seguinte entreg
 $string['exampleedit'] = 'Editar o exemplo';
 $string['exampleediting'] = 'Editando o exemplo';
 $string['exampleneedassessed'] = 'O primeiro que ten que facer é avaliar os exemplos';
-$string['exampleneedsubmission'] = 'Debe entregar o seu traballo e avaliar todas as entregas de exemplo primeiro';
-$string['examplesbeforeassessment'] = 'Os exemplos estarán dispoñíbeis após enviar a súa propia entrega, e teñen que seren avaliados antes da avaliación por pares';
+$string['exampleneedsubmission'] = 'Debe enviar o seu traballo e avaliar todos os entregas de exemplo primeiro';
+$string['examplesbeforeassessment'] = 'Os exemplos estarán dispoñíbeis após enviar a súa propia entrega, e teñen que ser avaliados antes da avaliación por pares';
 $string['examplesbeforesubmission'] = 'Debe avaliar os exemplos antes da entrega propia';
 $string['examplesmode'] = 'Modo de avaliación de exemplos';
 $string['examplesubmissions'] = 'Entregas de exemplo';
@@ -198,18 +198,18 @@ $string['instructreviewers'] = 'Instrucións para a avaliación';
 $string['introduction'] = 'Descrición';
 $string['latesubmissions'] = 'Entregas atrasadas';
 $string['latesubmissions_desc'] = 'Permitir entregas fora de prazo';
-$string['latesubmissions_help'] = 'De estar activado, un autor pode entregar o seu traballo despois da data límite de entrega ou durante a fase de avaliación. As entregas posteriores non se poden editar.';
+$string['latesubmissions_help'] = 'De estar activado, un autor pode entregar o seu traballo após a data límite de entrega ou durante a fase de avaliación. As entregas posteriores non se poden editar.';
 $string['latesubmissionsallowed'] = 'Permítense entregas atrasadas';
 $string['legacyallocationplugincron'] = 'Asignación de obradoiro por cron legado';
 $string['maxbytes'] = 'Tamaño máximo de anexo na entrega';
 $string['modulename'] = 'Obradoiro';
-$string['modulename_help'] = 'O módulo de actividade obradoiro activa a recollida, revisión e avaliación por pares do traballo dos alumnos.
+$string['modulename_help'] = 'O módulo de actividade Obradoiro activa a recollida, revisión e avaliación por pares do traballo dos alumnos.
 
 Os alumnos poden entregar calquera contido dixital (ficheiros) tales como documentos procesados por palabras ou follas de cálculo e tamén poden escribir directamente dentro dun campo utilizando o editor de texto.
 
 As entregas son avaliadas utilizando un formulario de avaliación multicriterio definido polo profesor. O proceso de avaliación por pares e a comprensión do formulario de avaliación pódese practicar previamente con exemplos de entregas fornecidas polo profesor, xunto cunha avaliación de referencia. Aos alumnos dáselles a oportunidade de avaliar unha ou máis das entregas dos seus pares. As entregas e os revisores poden ser anónimos se se require.
 
-Os alumnos obteñen dúas cualificacións nunha actividade de seminario - unha cualificación pola súa entrega e outra pola avaliación das entregas dos seus pares. Ámbalas cualificacións gárdanse no libro de cualificacións.';
+Os alumnos obteñen dúas cualificacións nunha actividade de seminario, unha cualificación pola súa entrega e outra pola avaliación das entregas dos seus pares. Ámbalas cualificacións gárdanse no libro de cualificacións.';
 $string['modulename_link'] = 'mod/workshop/view';
 $string['modulenameplural'] = 'Obradoiros';
 $string['myassessments'] = 'As miñas avaliacións';
@@ -263,7 +263,7 @@ $string['privacy:metadata:feedbackauthor'] = 'Comentario para o autor';
 $string['privacy:metadata:feedbackauthorformat'] = 'Formato de texto dos comentarios para o autor';
 $string['privacy:metadata:feedbackreviewer'] = 'Comentarios para o usuario que fornece a avaliación';
 $string['privacy:metadata:feedbackreviewerformat'] = 'Formato de texto dos comentarios para o usuario que fornece a avaliación';
-$string['privacy:metadata:late'] = 'Se a presentación foi presentada despois do prazo';
+$string['privacy:metadata:late'] = 'Se a presentación foi presentada após o prazo';
 $string['privacy:metadata:peercomment'] = 'Comentario sobre a cualificación dada polo usuario que fornece a avaliación';
 $string['privacy:metadata:peercommentformat'] = 'Formato de texto do comentario na cualificación dada';
 $string['privacy:metadata:preference:perpage'] = 'Número de entregas que o usuario prefire ver nunha páxina';
@@ -284,7 +284,7 @@ $string['privacy:metadata:timemodified'] = 'Cando este rexistro foi modificado p
 $string['privacy:metadata:userid'] = 'ID do usuario para o que se calcula a cualificación agregada';
 $string['privacy:metadata:weight'] = 'Ponderación da avaliación';
 $string['privacy:metadata:workshopaggregations'] = 'Contén as cualificacións agregadas para avaliación';
-$string['privacy:metadata:workshopassessments'] = 'Contén información sobre as avaliacións asignadas dos envíos do módulo de obradoiro';
+$string['privacy:metadata:workshopassessments'] = 'Contén información sobre as avaliacións asignadas das entregas do módulo de obradoiro';
 $string['privacy:metadata:workshopgrades'] = 'Contén información sobre como se completaron os formularios de avaliación con cualificacións e comentarios';
 $string['privacy:metadata:workshopid'] = 'ID da actividade do obradoiro';
 $string['privacy:metadata:workshopsubmissions'] = 'Contén información sobre as entregas do módulo de obradoiro';
@@ -302,7 +302,7 @@ $string['resetassessments_help'] = 'Vostede pode escoller eliminar soamente as a
 $string['resetphase'] = 'Cambiar para a fase de configuración';
 $string['resetphase_help'] = 'Se activa isto, todos os obradoiros poranse na fase de configuración inicial.';
 $string['resetsubmissions'] = 'Eliminar todas as entregas';
-$string['resetsubmissions_help'] = 'Todas as entregas e as súas avaliacións van seren eliminadas. isto non afecta ás entregas de exemplo.';
+$string['resetsubmissions_help'] = 'Todas as entregas e as súas avaliacións van ser eliminadas. isto non afecta ás entregas de exemplo.';
 $string['saveandclose'] = 'Gardar e pechar';
 $string['saveandcontinue'] = 'Garda e continuar editando';
 $string['saveandpreview'] = 'Gardar e facer unha vista previa';
@@ -331,7 +331,7 @@ $string['submissiondeleteconfirmassess'] = 'Confirma que quere eliminar as segui
 $string['submissionend'] = 'Fin das entregas';
 $string['submissionendbeforestart'] = 'A data límite para as entregas non pode especificarse como anterior a data na se abre o prazo de entrega';
 $string['submissionenddatetime'] = 'Data límite da entrega: {$a->daydatetime} ({$a->distanceday})';
-$string['submissionendevent'] = '{$a} (fin das entregas)';
+$string['submissionendevent'] = '{$a} fin das entregas';
 $string['submissionendswitch'] = 'Cambiar para a seguinte fase após a data límite para entregas';
 $string['submissionendswitch_help'] = 'Se especifica a data límite para as entregas e esta caixa está marcada, o obradoiro cambiará automaticamente a fase de avaliación após a data límite de entregas.
 
@@ -344,9 +344,9 @@ $string['submissionrequiredcontent'] = 'Debe introducir algún texto ou engadir 
 $string['submissionrequiredfile'] = 'Debe engadir un ficheiro ou introducir algún texto.';
 $string['submissionsettings'] = 'Axuste de entregas';
 $string['submissionsreport'] = 'Informe de entregas do obradoiro:';
-$string['submissionstart'] = 'Comezo das entregas';
+$string['submissionstart'] = 'Comezo da entregas de';
 $string['submissionstartdatetime'] = 'Aberto para entregas dende {$a->daydatetime} ({$a->distanceday})';
-$string['submissionstartevent'] = '{$a} (apertura das entregas)';
+$string['submissionstartevent'] = '{$a} comezo das entregas';
 $string['submissiontitle'] = 'Título';
 $string['submissiontypedisabled'] = 'Este tipo de entrega está desactivado para este obradoiro.';
 $string['submissiontypefileavailable'] = 'Ficheiro anexo<span class="accesshide"> dispoñíbel</span>';
@@ -364,9 +364,9 @@ $string['subplugintype_workshopform_plural'] = 'Estratexias das cualificacións'
 $string['switchingphase'] = 'Cambiando a fase';
 $string['switchphase'] = 'Cambiar a fase';
 $string['switchphase10'] = 'Cambiar para a fase de configuración';
-$string['switchphase10info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de instalación</strong>. Nesta fase, os usuarios non poden modificar a súa entrega ou as súas avaliacións. Os profesores poden usar esta fase para cambiar a configuración do obradoiro e modificar a estratexia de cualificación ou a forma de avaliación.';
+$string['switchphase10info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de instalación</strong>. Nesta fase, os usuarios non poden modificar a súa entrega ou as súas avaliacións. Os profesores poden usar esta fase para cambiar os axustes do obradoiro e modificar a estratexia de cualificación ou a forma de avaliación.';
 $string['switchphase20'] = 'Cambiar para a fase de entrega';
-$string['switchphase20info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de entrega</strong>. Nesta fase, os alumnos poden entregar os seus traballos (dentro dos prazos de control de acceso existentes, se foron estabelecidos). Os profesores poden asignar entregas para seren revisadas por pares.';
+$string['switchphase20info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de entrega</strong>. Nesta fase, os alumnos poden enviar os seus traballos (dentro dos prazos de control de acceso existentes, se foron estabelecidos). Os profesores poden asignar entregas para ser revisadas por pares.';
 $string['switchphase30'] = 'Cambiar para a fase de avaliación';
 $string['switchphase30auto'] = 'O obradoiro cambiará automaticamente a fase de avaliación após {$a->daydatetime} ({$a->distanceday})';
 $string['switchphase30info'] = 'Está a piques de cambiar o obradoiro a <strong>Fase de avaliación</strong>. Nesta fase, os revisores poden avaliar os traballos que lles foron asignados (dentro dos prazos de control de acceso existentes, se foron estabelecidos).';

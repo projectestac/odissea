@@ -96,6 +96,48 @@ define(['jquery', 'core/pubsub'], function($, PubSub) {
     };
 
     /**
+     * Toggles the slave checkboxes in a given toggle group when a master element in that toggle group is toggled.
+     *
+     * @private
+     * @param {Object} e The event object.
+     */
+    var toggleSlavesFromMasters = function(e) {
+        var root = e.data.root;
+        var target = $(e.target);
+
+        var toggleGroupName = target.data('togglegroup');
+        var targetState;
+        if (target.is(':checkbox')) {
+            targetState = target.is(':checked');
+        } else {
+            targetState = target.data('checkall') === 1;
+        }
+
+        toggleSlavesToState(root, toggleGroupName, targetState);
+    };
+
+    /**
+     * Toggles the slave checkboxes from the masters.
+     *
+     * @param {HTMLElement} root
+     * @param {String} toggleGroupName
+     */
+    var updateSlavesFromMasterState = function(root, toggleGroupName) {
+        // Normalise to jQuery Object.
+        root = $(root);
+
+        var target = getControlCheckboxes(root, toggleGroupName, false);
+        var targetState;
+        if (target.is(':checkbox')) {
+            targetState = target.is(':checked');
+        } else {
+            targetState = target.data('checkall') === 1;
+        }
+
+        toggleSlavesToState(root, toggleGroupName, targetState);
+    };
+
+    /**
      * Toggles the master checkboxes and action elements in a given toggle group.
      *
      * @param {jQuery} root The root jQuery element.
@@ -135,23 +177,13 @@ define(['jquery', 'core/pubsub'], function($, PubSub) {
     };
 
     /**
-     * Toggles the slave checkboxes in a given toggle group when a master element in that toggle group is toggled.
+     * Toggles the slave checkboxes to a specific state.
      *
-     * @private
-     * @param {Object} e The event object.
+     * @param {HTMLElement} root
+     * @param {String} toggleGroupName
+     * @param {Bool} targetState
      */
-    var toggleSlavesFromMasters = function(e) {
-        var root = e.data.root;
-        var target = $(e.target);
-
-        var toggleGroupName = target.data('togglegroup');
-        var targetState;
-        if (target.is(':checkbox')) {
-            targetState = target.is(':checked');
-        } else {
-            targetState = target.data('checkall') === 1;
-        }
-
+    var toggleSlavesToState = function(root, toggleGroupName, targetState) {
         var slaves = getAllSlaveCheckboxes(root, toggleGroupName);
         // Set the slave checkboxes from the masters and manually trigger the native 'change' event.
         slaves.prop('checked', targetState).trigger('change');
@@ -181,6 +213,22 @@ define(['jquery', 'core/pubsub'], function($, PubSub) {
             checkedSlaves: checkedSlaves,
             anyChecked: targetState,
         });
+    };
+
+    /**
+     * Set the state for an entire group of checkboxes.
+     *
+     * @param {HTMLElement} root
+     * @param {String} toggleGroupName
+     * @param {Bool} targetState
+     */
+    var setGroupState = function(root, toggleGroupName, targetState) {
+        // Normalise to jQuery Object.
+        root = $(root);
+
+        // Set the master and slaves.
+        setMasterStates(root, toggleGroupName, targetState, true);
+        toggleSlavesToState(root, toggleGroupName, targetState);
     };
 
     /**
@@ -284,5 +332,7 @@ define(['jquery', 'core/pubsub'], function($, PubSub) {
             registerListeners();
         },
         events: events,
+        setGroupState: setGroupState,
+        updateSlavesFromMasterState: updateSlavesFromMasterState,
     };
 });

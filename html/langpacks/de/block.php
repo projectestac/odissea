@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'de', version '3.8'.
+ * Strings for component 'block', language 'de', version '3.11'.
  *
  * @package     block
  * @category    string
@@ -29,7 +29,7 @@ $string['addtodock'] = 'Block ins Dock bewegen';
 $string['anypagematchingtheabove'] = 'Jede zur obigen passende Seite';
 $string['appearsinsubcontexts'] = 'Erscheint in Subkontexten';
 $string['assignrolesinblock'] = 'Rollen für \'{$a}\' zuweisen';
-$string['blocksdrawertoggle'] = 'Verbergen/anzeigen des Block-Einblenders';
+$string['blocksdrawertoggle'] = 'Verbergen/anzeigen der Blockleiste';
 $string['blocksettings'] = 'Blockeinstellungen';
 $string['bracketfirst'] = '{$a} (erstes)';
 $string['bracketlast'] = '{$a} (letztes)';

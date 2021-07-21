@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_print', language 'sv', version '3.8'.
+ * Strings for component 'booktool_print', language 'sv', version '3.11'.
  *
  * @package     booktool_print
  * @category    string
@@ -27,9 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventbookprinted'] = 'Boken har skrivits ut';
 $string['eventchapterprinted'] = 'Kapitlet har skrivits ut';
-$string['pluginname'] = 'Bok';
+$string['pluginname'] = 'Bokutskrift';
 $string['print:print'] = 'Skriv ut bok';
 $string['printbook'] = 'Skriv ut hela boken';
 $string['printchapter'] = 'Skriv ut det här kapitlet';
 $string['printdate'] = 'Datum';
 $string['printedby'] = 'Utskrivet av';
+$string['privacy:metadata'] = 'Pluginmodulen Utskrift av bok lagrar ingen personinformation.';

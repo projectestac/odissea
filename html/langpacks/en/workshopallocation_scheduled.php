@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'en', version '3.8'.
+ * Strings for component 'workshopallocation_scheduled', language 'en', version '3.11'.
  *
  * @package     workshopallocation_scheduled
  * @category    string

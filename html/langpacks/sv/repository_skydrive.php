@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_skydrive', language 'sv', version '3.8'.
+ * Strings for component 'repository_skydrive', language 'sv', version '3.11'.
  *
  * @package     repository_skydrive
  * @category    string
@@ -25,4 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_foldername'] = 'Katalognamns-cache';
+$string['clientid'] = 'Klient-ID';
+$string['configplugin'] = 'Konfigurera Microsoft OneDrive (äldre)';
+$string['deprecatedwarning'] = 'Varning: Det API som används av denna lagringsplatspluginmodul har blivit inaktuellt och det kommer att sluta fungera så småningom. Migrera till den nyare "Microsoft OneDrive"-lagringen.';
+$string['oauthinfo'] = '<p>För att använda det här plugin-programmet måste du registrera din webbplats <a href="https://account.live.com/developers/applications">hos Microsoft</a>.<p>Som en del i registreringsprocessen måste du ange följande URL som \'Redirect domain\':</p><p>
+{$a->callbackurl}</p>
+<p>Efter att du är registrerad kommer du att få ett klient-ID och en hemlighet som kan anges här.</p>';
 $string['pluginname'] = 'Microsoft OneDrive (äldre version)';
+$string['privacy:metadata'] = 'Pluginmodulen Microsoft OneDrive (äldre) lagrar inga personuppgifter, men överför användardata från Moodle till fjärrsystemet.';
+$string['secret'] = 'Hemlighet';
+$string['skydrive:view'] = 'Visa OneDrive (äldre)';

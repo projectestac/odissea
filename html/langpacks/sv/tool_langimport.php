@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'sv', version '3.8'.
+ * Strings for component 'tool_langimport', language 'sv', version '3.11'.
  *
  * @package     tool_langimport
  * @category    string
@@ -25,19 +25,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadnotavailable'] = 'Det går inte att ansluta till hämtningsservern. Det är inte möjligt att installera eller uppdatera språkpaketen automatiskt. Ladda ner lämplig ZIP-fil(er) från <a href="{$a->src}">{$a->src}</a> och packa upp dem manuellt till din datakatalog <code>{$a->dest}</code>';
+$string['downloadnotavailable'] = 'Det går inte att ansluta till nedladdningsservern. Det är inte möjligt att installera eller uppdatera språkpaketen automatiskt. Ladda ner lämplig ZIP-fil(er) från <a href="{$a->src}">{$a->src}</a> och packa upp dem manuellt till din datakatalog <code>{$a->dest}</code>';
 $string['install'] = 'Installera valda språkpaket';
 $string['installedlangs'] = 'Installerade språkpaket';
+$string['installfailed'] = 'Installationen av språkpaket misslyckades!';
+$string['installfinished'] = 'Språkpaketen installerades.';
+$string['installpending'] = 'Följande språkpaket installeras snart: {$a}';
+$string['installscheduled'] = 'Språkpaket som schemalagts för att installeras.';
 $string['langimport'] = 'Hantera språkpaket';
-$string['langimportdisabled'] = 'Språkimportfunktionen har inaktiverats. Du måste uppdatera dina språkpaket manuellt på filsystemnivå. Glöm inte att rensa cache för strängar efter att du gjort uppdateringen.';
+$string['langimportdisabled'] = 'Språkimportfunktionen har inaktiverats. Du måste uppdatera dina språkpaket manuellt på filsystemnivå. Glöm inte att rensa strängcachen efter att du gjort uppdateringen.';
 $string['langpackinstalled'] = 'Spåkpaket \'{$a}\' installerades';
 $string['langpackinstalledevent'] = 'Språkpaket installerat';
-$string['langpacknotremoved'] = 'Ett fel har uppstått; språkpaketet {$a} inte är helt avinstallerat. Vänligen kontrollera filbehörigheterna.';
-$string['langpackremoved'] = 'Avinstallationen av språkpaket är avslutad';
+$string['langpacknotremoved'] = 'Ett fel har uppstått; språkpaketet \'{$a}\' inte är helt avinstallerat. Vänligen kontrollera filbehörigheterna.';
+$string['langpackremoved'] = 'Språkpaket \'{$a}\' avinstallerades';
 $string['langpackremovedevent'] = 'Språkpaket avinstallerat';
 $string['langpackupdated'] = 'Uppdateringen av språkpaket \'{$a}\' lyckades';
 $string['langpackupdatedevent'] = 'Språkpaketet uppdaterades';
-$string['langpackupdateskipped'] = 'Uppdateringen av {$a} språkpaketet hoppades över';
+$string['langpackupdateskipped'] = 'Uppdateringen av språkpaketet \'{$a}\' hoppades över';
 $string['langpackuptodate'] = 'Språkpaket \'{$a}\' är aktuellt';
 $string['langunsupported'] = '<p>Din server verkar inte helt stödja följande språk:</p><ul>{$a->missinglocales}</ul><p> I stället kommer den globala lokaliseringen ({$a->globallocale}) att användas för att formatera vissa strängar som datum eller siffror.</p>';
 $string['langupdatecomplete'] = 'Uppdateringen av språkpaket har slutförts';
@@ -48,7 +52,9 @@ $string['nolangupdateneeded'] = 'Alla dina språkpaket är aktuella. De behöver
 $string['pluginname'] = 'Språkpaket';
 $string['privacy:metadata'] = 'Språkpaket pluginen lagrar inte några personuppgifter.';
 $string['purgestringcaches'] = 'Töm strängcache';
+$string['search'] = 'Sök bland tillgängliga språkpaket';
 $string['selectlangs'] = 'Välj språk att avinstallera';
 $string['uninstall'] = 'Avinstallera valda språkpaket';
-$string['uninstallconfirm'] = 'Du håller på att fullständigt avinstallera språkpaketet {$a}, är Du säker?';
+$string['uninstallconfirm'] = 'Du håller på att fullständigt avinstallera dessa språkpaket: <strong>{$a}</strong>. Är du säker?';
 $string['updatelangs'] = 'Uppdatera språkpaket';
+$string['updatelangsnote'] = 'Att uppdatera alla installerade språkpaket genom att klicka på knappen kan ta lång tid och leda till timeout. Vi rekommenderar i stället att du använder den schemalagda aktiviteten \'{$a->taskname}\' (som körs som standard varje dag).';

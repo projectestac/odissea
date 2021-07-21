@@ -69,7 +69,7 @@ class question_usage_by_activity {
     /** @var string plugin name of the plugin this usage belongs to. */
     protected $owningcomponent;
 
-    /** @var array {@link question_attempt}s that make up this usage. */
+    /** @var question_attempt[] {@link question_attempt}s that make up this usage. */
     protected $questionattempts = array();
 
     /** @var question_usage_observer that tracks changes to this usage. */
@@ -218,10 +218,12 @@ class question_usage_by_activity {
     /**
      * Get the question_definition for a question in this attempt.
      * @param int $slot the number used to identify this question within this usage.
+     * @param bool $requirequestioninitialised set this to false if you don't need
+     *      the behaviour initialised, which may improve performance.
      * @return question_definition the requested question object.
      */
-    public function get_question($slot) {
-        return $this->get_question_attempt($slot)->get_question();
+    public function get_question($slot, $requirequestioninitialised = true) {
+        return $this->get_question_attempt($slot)->get_question($requirequestioninitialised);
     }
 
     /** @return array all the identifying numbers of all the questions in this usage. */
@@ -887,7 +889,7 @@ class question_usage_by_activity {
             $newmaxmark = $oldqa->get_max_mark();
         }
 
-        $newqa = new question_attempt($oldqa->get_question(), $oldqa->get_usage_id(),
+        $newqa = new question_attempt($oldqa->get_question(false), $oldqa->get_usage_id(),
                 $this->observer, $newmaxmark);
         $newqa->set_database_id($oldqa->get_database_id());
         $newqa->set_slot($oldqa->get_slot());
@@ -964,6 +966,35 @@ class question_usage_by_activity {
         }
 
         return $quba;
+    }
+
+    /**
+     * Preload users of all question attempt steps.
+     *
+     * @throws dml_exception
+     */
+    public function preload_all_step_users(): void {
+        global $DB;
+
+        // Get all user ids.
+        $userids = [];
+        foreach ($this->questionattempts as $qa) {
+            foreach ($qa->get_full_step_iterator() as $step) {
+                $userids[$step->get_user_id()] = 1;
+            }
+        }
+
+        // Load user information.
+        $users = $DB->get_records_list('user', 'id', array_keys($userids), '', '*');
+        // Update user information for steps.
+        foreach ($this->questionattempts as $qa) {
+            foreach ($qa->get_full_step_iterator() as $step) {
+                $user = $users[$step->get_user_id()];
+                if (isset($user)) {
+                    $step->add_full_user_object($user);
+                }
+            }
+        }
     }
 }
 

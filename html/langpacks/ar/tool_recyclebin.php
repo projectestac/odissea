@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'ar', version '3.8'.
+ * Strings for component 'tool_recyclebin', language 'ar', version '3.11'.
  *
  * @package     tool_recyclebin
  * @category    string
@@ -28,32 +28,32 @@ defined('MOODLE_INTERNAL') || die();
 $string['alertdeleted'] = '\'{$a->name}\' تم حذفه.';
 $string['alertemptied'] = 'سلة المحذوفات قد أفرغت.';
 $string['alertrestored'] = 'تمت استعادة {$a->name}.';
-$string['autohide'] = 'إخفاء آلي';
-$string['autohide_desc'] = 'يخفي رابط سلة المحذوفات تلقائيًا عندما تكون الحاوية فارغة.';
-$string['categorybinenable'] = 'تمكين سلة المحذوفات للفئة';
-$string['categorybinexpiry'] = 'مادة مدى الحياة';
-$string['categorybinexpiry_desc'] = 'كم من الوقت يجب أن تبقى الدورة التدريبية المحذوفة في سلة المحذوفات؟';
+$string['autohide'] = 'إخفاء تلقائي';
+$string['autohide_desc'] = 'يخفي رابط سلة المحذوفات تلقائياً عندما تكون فارغة.';
+$string['categorybinenable'] = 'تمكين سلة المحذوفات للتصنيفات';
+$string['categorybinexpiry'] = 'فترة حياة المقرر الدراسي';
+$string['categorybinexpiry_desc'] = 'كم من الوقت ينبغي أن يبقى المقرر الدراسي المحذوف في سلة المحذوفات؟';
 $string['coursebinenable'] = 'تمكين سلة المحذوفات';
-$string['coursebinexpiry'] = 'عنصر مدى الحياة';
-$string['coursebinexpiry_desc'] = 'كم من الوقت يجب أن يبقى عنصر محذوف في سلة المحذوفات؟';
+$string['coursebinexpiry'] = 'فترة حياة العنصر';
+$string['coursebinexpiry_desc'] = 'كم من الوقت ينبغي أن يبقى العنصر المحذوف في سلة المحذوفات؟';
 $string['datedeleted'] = 'تاريخ الحذف';
 $string['deleteall'] = 'حذف الكل';
 $string['deleteallconfirm'] = 'هل تريد بالتأكيد حذف جميع العناصر من سلة المحذوفات؟';
 $string['deleteconfirm'] = 'هل تريد بالتأكيد حذف العنصر المحدد من سلة المحذوفات؟';
 $string['deleteexpirywarning'] = 'سيتم حذف المحتويات نهائيًا بعد {$a}.';
-$string['eventitemcreated'] = 'تم إنشاء العنصر';
-$string['eventitemcreated_desc'] = 'تم إنشاء العنصر بمعرف {$a->objectid}.';
-$string['eventitemdeleted'] = 'تم حذف العنصر';
-$string['eventitemdeleted_desc'] = 'تم حذف العنصر بالكود {$a->objectid}.';
-$string['eventitemrestored'] = 'استعادة العنصر';
-$string['eventitemrestored_desc'] = 'تمت استعادة العنصر بالكود {$a->objectid}.';
+$string['eventitemcreated'] = 'عنصر تم إنشاؤه';
+$string['eventitemcreated_desc'] = 'تم إنشاء العنصر ذي المُعرَّف {$a->objectid}.';
+$string['eventitemdeleted'] = 'عنصر تم حذفه';
+$string['eventitemdeleted_desc'] = 'تم حذف العنصر ذي المُعرَّف {$a->objectid}.';
+$string['eventitemrestored'] = 'عنصر تمت استعادته';
+$string['eventitemrestored_desc'] = 'تمت استعادة العنصر ذي المُعرَّف {$a->objectid}.';
 $string['invalidcontext'] = 'تم توفير سياق غير صالح.';
 $string['noitemsinbin'] = 'لا توجد عناصر في سلة المحذوفات.';
 $string['notenabled'] = 'عذرًا ، لقد تم تعطيل سلة المحذوفات من قبل المسؤول.';
-$string['pluginname'] = 'سلة المهملات';
-$string['privacy:metadata'] = 'لا يقوم مكون Recycle bin  بتخزين أيّ بيانات شخصية.';
-$string['recyclebin:deleteitems'] = 'حذف عناصر سلة المهملات';
-$string['recyclebin:restoreitems'] = 'استعادة عناصر سلة المهملات';
-$string['recyclebin:viewitems'] = 'عرض عناصر سلة المحذوفات';
-$string['taskcleanupcategorybin'] = 'تنظيف فئة سلة المهملات';
-$string['taskcleanupcoursebin'] = 'دورة تنظيف سلة المهملات';
+$string['pluginname'] = 'سلة المحذوفات';
+$string['privacy:metadata'] = 'إن ملحق سلة المحذوفات لا يخزن أي بيانات شخصية.';
+$string['recyclebin:deleteitems'] = 'حذف عناصر سلة المحذوفات';
+$string['recyclebin:restoreitems'] = 'استعادة عناصر سلة المحذوفات';
+$string['recyclebin:viewitems'] = 'معاينة عناصر سلة المحذوفات';
+$string['taskcleanupcategorybin'] = 'تنظيف سلة مهملات التصنيفات';
+$string['taskcleanupcoursebin'] = 'تنظيف سلة مهملات المقررات الدراسية';

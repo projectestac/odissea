@@ -17,7 +17,6 @@
  * This module is responsible for the calendar filter.
  *
  * @module     core_calendar/calendar_selectors
- * @package    core_calendar
  * @copyright  2017 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -30,6 +29,7 @@ define([], function() {
             course: "[data-eventtype-course]",
             group: "[data-eventtype-group]",
             user: "[data-eventtype-user]",
+            other: "[data-eventtype-other]",
         },
         popoverType: {
             site: "[data-popover-eventtype-site]",
@@ -37,6 +37,7 @@ define([], function() {
             course: "[data-popover-eventtype-course]",
             group: "[data-popover-eventtype-group]",
             user: "[data-popover-eventtype-user]",
+            other: "[data-popover-eventtype-other]",
         },
         calendarPeriods: {
             month: "[data-period='month']",

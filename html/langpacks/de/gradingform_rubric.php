@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'de', version '3.8'.
+ * Strings for component 'gradingform_rubric', language 'de', version '3.11'.
  *
  * @package     gradingform_rubric
  * @category    string
@@ -55,8 +55,8 @@ $string['leveldefinition'] = 'Definition Level {$a}';
 $string['leveldelete'] = 'Level {$a} löschen';
 $string['levelempty'] = 'Klicken um Level zu bearbeiten';
 $string['levelsgroup'] = 'Level-Gruppen';
-$string['lockzeropoints'] = 'Bewertung abhängig davon berechnen, ob die Rubrik eine Mindestpunktzahl von 0 hat';
-$string['lockzeropoints_help'] = 'Diese Einstellung greift nur, wenn die minimal erreichbare Punktzahl über alle Kriterien größer als 0 ist. Wenn die Einstellung aktiviert wird, sind nur Bewertungen für die Rubrik möglich, die größer als 0 sind. Wird sie deaktiviert, wird die kleinstmögliche Punktzahl auf die schlechteste Bewertung abgebildet (0 wenn keine Skala verwendet wird).';
+$string['lockzeropoints'] = 'Berechnung der Note, wenn eine Mindestpunktzahl für die Mindestnote der Rubrik erreicht ist';
+$string['lockzeropoints_help'] = 'Diese Einstellung gilt nur, wenn die Summe der Mindestpunktzahl für jedes Kriterium größer als 0 ist. Wenn diese Option aktiviert ist, entspricht die Mindestpunktzahl der Aktivität der für die Rubrik erreichbaren Mindestnote. Wenn diese Option nicht aktiviert ist, wird die minimal mögliche Punktzahl für die Rubrik der für die Aktivität verfügbaren Mindestnote zugeordnet (0, sofern keine Skala verwendet wird).';
 $string['name'] = 'Name';
 $string['needregrademessage'] = 'Die Rubrik wurde geändert, nachdem ein/e Teilnehmer/in bewertet wurde. Teilnehmer/innen sehen diese Bewertung solange nicht, bis Sie die Rubrik geprüft und die Bewertung aktualisiert haben.';
 $string['notset'] = 'Nicht gesetzt';
@@ -75,12 +75,11 @@ $string['regradeoption1'] = 'Für Neubewertung markieren';
 $string['restoredfromdraft'] = 'Anmerkung: Der letzte Versuch zur Bewertung dieses Nutzers wurde nicht richtig gespeichert und nur als Entwurf hinterlegt. Mit dem Abbrechen Button unten können Sie diese Änderungen berabeiten.';
 $string['rubric'] = 'Rubrik';
 $string['rubricmapping'] = 'Regeln der Zuordnung von Punkten zu Bewertungen';
-$string['rubricmappingexplained'] = 'Die geringste Punktzahl für diese Rubrik ist <b>{$a->minscore} Punkte </b> und wird auf die schlechteste Bewertung (0 wenn keine Skala verwendet wird) abgebildet.
-Die höchste Punktzahl, <b>{$a->maxscore} Punkte</b>, wird auf die beste Bewertung abgebildet. <br />Dazwischen liegende Werte werden entsprechend angepasst.<br />
+$string['rubricmappingexplained'] = 'Die minimal mögliche Punktzahl für diese Rubrik beträgt <b>{$a->minscore} Punkte</b> und wird in die für die Aktivität verfügbare Mindestnote umgerechnet (0, sofern keine Skala verwendet wird). Die maximale Punktzahl von <b>{$a->maxscore} Punkten</b> wird in die maximale Note umgewandelt. Zwischenergebnisse werden jeweils konvertiert.
 
-Wenn eine Skala genutzt wird, wird die Punktzahl auf die Skalenelemente abgebildet, die dabei als eine aufeinanderfolgende Zahlenreihe interpretiert werden.
+Wenn eine Skala verwendet wird, wird die Punktzahl gerundet und in die Skalenelemente umgewandelt, als wären sie aufeinanderfolgende ganze Zahlen.
 
-Die Berechnung der Bewertung kann geändert werden, indem bei der Bearbeitung des Formulars das Feld "Bewertung abhängig davon berechnen, ob die Rubrik eine Mindestpunktzahl von 0 hat" markiert wird.';
+Diese Notenberechnung kann geändert werden, indem Sie das Formular bearbeiten und das Kontrollkästchen "Note mit einer Mindestpunktzahl der für die Rubrik erreichbaren Mindestnote berechnen" aktivieren.';
 $string['rubricnotcompleted'] = 'Bitte tragen sie bei jedem Kriterium einen Wert ein';
 $string['rubricoptions'] = 'Optionen';
 $string['rubricstatus'] = 'Aktueller Rubrikstatus';

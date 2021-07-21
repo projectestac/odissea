@@ -1,4 +1,4 @@
-define(['jquery'], function($) {
+define(['jquery', 'core/aria'], function($, Aria) {
 
     /**
      * Tooltip class.
@@ -35,7 +35,7 @@ define(['jquery'], function($) {
         }.bind(this));
     };
 
-    /** @type {String} Selector for the page region containing the user navigation. */
+    /** @property {String} Selector for the page region containing the user navigation. */
     Tooltip.prototype._regionSelector = null;
 
     /**
@@ -50,7 +50,7 @@ define(['jquery'], function($) {
             var tooltipele = $(document.getElementById(tooltipId));
 
             tooltipele.show();
-            tooltipele.attr('aria-hidden', 'false');
+            Aria.unhide(tooltipele);
 
             if (!tooltipele.is('.tooltip')) {
                 // Change the markup to a bootstrap tooltip.
@@ -79,7 +79,7 @@ define(['jquery'], function($) {
             var tooltipele = document.getElementById(tooltipId);
 
             $(tooltipele).hide();
-            $(tooltipele).attr('aria-hidden', 'true');
+            Aria.hide(tooltipele);
         }
     };
 

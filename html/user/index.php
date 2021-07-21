@@ -30,17 +30,19 @@ require_once($CFG->libdir.'/tablelib.php');
 require_once($CFG->libdir.'/filelib.php');
 require_once($CFG->dirroot.'/enrol/locallib.php');
 
+use core_table\local\filter\filter;
+use core_table\local\filter\integer_filter;
+use core_table\local\filter\string_filter;
+
 define('DEFAULT_PAGE_SIZE', 20);
-define('SHOW_ALL_PAGE_SIZE', 5000);
 
 $page         = optional_param('page', 0, PARAM_INT); // Which page to show.
 $perpage      = optional_param('perpage', DEFAULT_PAGE_SIZE, PARAM_INT); // How many per page.
 $contextid    = optional_param('contextid', 0, PARAM_INT); // One of this or.
 $courseid     = optional_param('id', 0, PARAM_INT); // This are required.
 $newcourse    = optional_param('newcourse', false, PARAM_BOOL);
-$selectall    = optional_param('selectall', false, PARAM_BOOL); // When rendering checkboxes against users mark them all checked.
 $roleid       = optional_param('roleid', 0, PARAM_INT);
-$groupparam   = optional_param('group', 0, PARAM_INT);
+$urlgroupid   = optional_param('group', 0, PARAM_INT);
 
 $PAGE->set_url('/user/index.php', array(
         'page' => $page,
@@ -100,107 +102,57 @@ if ($node) {
 echo $OUTPUT->header();
 echo $OUTPUT->heading(get_string('participants'));
 
-// Get the currently applied filters.
-$filtersapplied = optional_param_array('unified-filters', [], PARAM_NOTAGS);
-$filterwassubmitted = optional_param('unified-filter-submitted', 0, PARAM_BOOL);
+$filterset = new \core_user\table\participants_filterset();
+$filterset->add_filter(new integer_filter('courseid', filter::JOINTYPE_DEFAULT, [(int)$course->id]));
 
-// If they passed a role make sure they can view that role.
+$participanttable = new \core_user\table\participants("user-index-participants-{$course->id}");
+
+$canaccessallgroups = has_capability('moodle/site:accessallgroups', $context);
+$filtergroupids = $urlgroupid ? [$urlgroupid] : [];
+
+// Force group filtering if user should only see a subset of groups' users.
+if ($course->groupmode != NOGROUPS && !$canaccessallgroups) {
+    if ($filtergroupids) {
+        $filtergroupids = array_intersect(
+            $filtergroupids,
+            array_keys(groups_get_all_groups($course->id, $USER->id))
+        );
+    } else {
+        $filtergroupids = array_keys(groups_get_all_groups($course->id, $USER->id));
+    }
+
+    if (empty($filtergroupids)) {
+        if ($course->groupmode == SEPARATEGROUPS) {
+            // The user is not in a group so show message and exit.
+            echo $OUTPUT->notification(get_string('notingroup'));
+            echo $OUTPUT->footer();
+            exit();
+        } else {
+            $filtergroupids = [(int) groups_get_course_group($course, true)];
+        }
+    }
+}
+
+// Apply groups filter if included in URL or forced due to lack of capabilities.
+if (!empty($filtergroupids)) {
+    $filterset->add_filter(new integer_filter('groups', filter::JOINTYPE_DEFAULT, $filtergroupids));
+}
+
+// Display single group information if requested in the URL.
+if ($urlgroupid > 0 && ($course->groupmode != SEPARATEGROUPS || $canaccessallgroups)) {
+    $grouprenderer = $PAGE->get_renderer('core_group');
+    $groupdetailpage = new \core_group\output\group_details($urlgroupid);
+    echo $grouprenderer->group_details($groupdetailpage);
+}
+
+// Filter by role if passed via URL (used on profile page).
 if ($roleid) {
     $viewableroles = get_profile_roles($context);
 
-    // Check if the user can view this role.
+    // Apply filter if the user can view this role.
     if (array_key_exists($roleid, $viewableroles)) {
-        $filtersapplied[] = USER_FILTER_ROLE . ':' . $roleid;
-    } else {
-        $roleid = 0;
+        $filterset->add_filter(new integer_filter('roles', filter::JOINTYPE_DEFAULT, [$roleid]));
     }
-}
-
-// Default group ID.
-$groupid = false;
-$canaccessallgroups = has_capability('moodle/site:accessallgroups', $context);
-if ($course->groupmode != NOGROUPS) {
-    if ($canaccessallgroups) {
-        // Change the group if the user can access all groups and has specified group in the URL.
-        if ($groupparam) {
-            $groupid = $groupparam;
-        }
-    } else {
-        // Otherwise, get the user's default group.
-        $groupid = groups_get_course_group($course, true);
-        if ($course->groupmode == SEPARATEGROUPS && !$groupid) {
-            // The user is not in the group so show message and exit.
-            echo $OUTPUT->notification(get_string('notingroup'));
-            echo $OUTPUT->footer();
-            exit;
-        }
-    }
-}
-$hasgroupfilter = false;
-$lastaccess = 0;
-$searchkeywords = [];
-$enrolid = 0;
-$status = -1;
-foreach ($filtersapplied as $filter) {
-    $filtervalue = explode(':', $filter, 2);
-    $value = null;
-    if (count($filtervalue) == 2) {
-        $key = clean_param($filtervalue[0], PARAM_INT);
-        $value = clean_param($filtervalue[1], PARAM_INT);
-    } else {
-        // Search string.
-        $key = USER_FILTER_STRING;
-        $value = clean_param($filtervalue[0], PARAM_TEXT);
-    }
-
-    switch ($key) {
-        case USER_FILTER_ENROLMENT:
-            $enrolid = $value;
-            break;
-        case USER_FILTER_GROUP:
-            $groupid = $value;
-            $hasgroupfilter = true;
-            break;
-        case USER_FILTER_LAST_ACCESS:
-            $lastaccess = $value;
-            break;
-        case USER_FILTER_ROLE:
-            $roleid = $value;
-            break;
-        case USER_FILTER_STATUS:
-            // We only accept active/suspended statuses.
-            if ($value == ENROL_USER_ACTIVE || $value == ENROL_USER_SUSPENDED) {
-                $status = $value;
-            }
-            break;
-        default:
-            // Search string.
-            $searchkeywords[] = $value;
-            break;
-    }
-}
-// If course supports groups we may need to set a default.
-if (!empty($groupid)) {
-    if ($canaccessallgroups) {
-        // User can access all groups, let them filter by whatever was selected.
-        $filtersapplied[] = USER_FILTER_GROUP . ':' . $groupid;
-    } else if (!$filterwassubmitted && $course->groupmode == VISIBLEGROUPS) {
-        // If we are in a course with visible groups and the user has not submitted anything and does not have
-        // access to all groups, then set a default group.
-        $filtersapplied[] = USER_FILTER_GROUP . ':' . $groupid;
-    } else if (!$hasgroupfilter && $course->groupmode != VISIBLEGROUPS) {
-        // The user can't access all groups and has not set a group filter in a course where the groups are not visible
-        // then apply a default group filter.
-        $filtersapplied[] = USER_FILTER_GROUP . ':' . $groupid;
-    } else if (!$hasgroupfilter) { // No need for the group id to be set.
-        $groupid = false;
-    }
-}
-
-if ($groupid > 0 && ($course->groupmode != SEPARATEGROUPS || $canaccessallgroups)) {
-    $grouprenderer = $PAGE->get_renderer('core_group');
-    $groupdetailpage = new \core_group\output\group_details($groupid);
-    echo $grouprenderer->group_details($groupdetailpage);
 }
 
 // Manage enrolments.
@@ -211,76 +163,65 @@ $enrolbuttonsout = '';
 foreach ($enrolbuttons as $enrolbutton) {
     $enrolbuttonsout .= $enrolrenderer->render($enrolbutton);
 }
-echo html_writer::div($enrolbuttonsout, 'float-right');
 
-// Should use this variable so that we don't break stuff every time a variable is added or changed.
-$baseurl = new moodle_url('/user/index.php', array(
-        'contextid' => $context->id,
-        'id' => $course->id,
-        'perpage' => $perpage));
+echo html_writer::div($enrolbuttonsout, 'd-flex justify-content-end', [
+    'data-region' => 'wrapper',
+    'data-table-uniqueid' => $participanttable->uniqueid,
+]);
 
-// Render the unified filter.
-$renderer = $PAGE->get_renderer('core_user');
-echo $renderer->unified_filter($course, $context, $filtersapplied, $baseurl);
+// Render the user filters.
+$userrenderer = $PAGE->get_renderer('core_user');
+echo $userrenderer->participants_filter($context, $participanttable->uniqueid);
 
 echo '<div class="userlist">';
 
-// Add filters to the baseurl after creating unified_filter to avoid losing them.
-foreach (array_unique($filtersapplied) as $filterix => $filter) {
-    $baseurl->param('unified-filters[' . $filterix . ']', $filter);
-}
-$participanttable = new \core_user\participants_table($course->id, $groupid, $lastaccess, $roleid, $enrolid, $status,
-    $searchkeywords, $bulkoperations, $selectall);
-$participanttable->define_baseurl($baseurl);
-
 // Do this so we can get the total number of rows.
 ob_start();
+$participanttable->set_filterset($filterset);
 $participanttable->out($perpage, true);
 $participanttablehtml = ob_get_contents();
 ob_end_clean();
 
-echo html_writer::tag('p', get_string('participantscount', 'moodle', $participanttable->totalrows));
+echo html_writer::start_tag('form', [
+    'action' => 'action_redir.php',
+    'method' => 'post',
+    'id' => 'participantsform',
+    'data-course-id' => $course->id,
+    'data-table-unique-id' => $participanttable->uniqueid,
+]);
+echo '<div>';
+echo '<input type="hidden" name="sesskey" value="'.sesskey().'" />';
+echo '<input type="hidden" name="returnto" value="'.s($PAGE->url->out(false)).'" />';
 
-if ($bulkoperations) {
-    echo '<form action="action_redir.php" method="post" id="participantsform">';
-    echo '<div>';
-    echo '<input type="hidden" name="sesskey" value="'.sesskey().'" />';
-    echo '<input type="hidden" name="returnto" value="'.s($PAGE->url->out(false)).'" />';
-}
+echo html_writer::tag(
+    'p',
+    get_string('countparticipantsfound', 'core_user', $participanttable->totalrows),
+    [
+        'data-region' => 'participant-count',
+    ]
+);
 
 echo $participanttablehtml;
 
-$perpageurl = clone($baseurl);
-$perpageurl->remove_params('perpage');
-if ($perpage == SHOW_ALL_PAGE_SIZE && $participanttable->totalrows > DEFAULT_PAGE_SIZE) {
-    $perpageurl->param('perpage', DEFAULT_PAGE_SIZE);
-    echo $OUTPUT->container(html_writer::link($perpageurl, get_string('showperpage', '', DEFAULT_PAGE_SIZE)), array(), 'showall');
-
-} else if ($participanttable->get_page_size() < $participanttable->totalrows) {
-    $perpageurl->param('perpage', SHOW_ALL_PAGE_SIZE);
-    echo $OUTPUT->container(html_writer::link($perpageurl, get_string('showall', '', $participanttable->totalrows)),
-        array(), 'showall');
-}
+$bulkoptions = (object) [
+    'uniqueid' => $participanttable->uniqueid,
+];
 
 if ($bulkoperations) {
     echo '<br /><div class="buttons"><div class="form-inline">';
 
-    if ($participanttable->get_page_size() < $participanttable->totalrows) {
-        $perpageurl = clone($baseurl);
-        $perpageurl->remove_params('perpage');
-        $perpageurl->param('perpage', SHOW_ALL_PAGE_SIZE);
-        $perpageurl->param('selectall', true);
-        $showalllink = $perpageurl;
-    } else {
-        $showalllink = false;
-    }
-
     echo html_writer::start_tag('div', array('class' => 'btn-group'));
+
     if ($participanttable->get_page_size() < $participanttable->totalrows) {
-        // Select all users, refresh page showing all users and mark them all selected.
+        // Select all users, refresh table showing all users and mark them all selected.
         $label = get_string('selectalluserswithcount', 'moodle', $participanttable->totalrows);
-        echo html_writer::empty_tag('input', array('type' => 'button', 'id' => 'checkall', 'class' => 'btn btn-secondary',
-                'value' => $label, 'data-showallink' => $showalllink));
+        echo html_writer::empty_tag('input', [
+            'type' => 'button',
+            'id' => 'checkall',
+            'class' => 'btn btn-secondary',
+            'value' => $label,
+            'data-target-page-size' => TABLE_SHOW_ALL_PAGE_SIZE,
+        ]);
     }
     echo html_writer::end_tag('div');
     $displaylist = array();
@@ -337,7 +278,7 @@ if ($bulkoperations) {
         'data-action' => 'toggle',
         'data-togglegroup' => 'participants-table',
         'data-toggle' => 'action',
-        'disabled' => empty($selectall)
+        'disabled' => 'disabled'
     );
     $label = html_writer::tag('label', get_string("withselectedusers"),
             ['for' => 'formactionid', 'class' => 'col-form-label d-inline']);
@@ -345,26 +286,27 @@ if ($bulkoperations) {
     echo html_writer::tag('div', $label . $select);
 
     echo '<input type="hidden" name="id" value="' . $course->id . '" />';
+    echo '<div class="d-none" data-region="state-help-icon">' . $OUTPUT->help_icon('publishstate', 'notes') . '</div>';
     echo '</div></div></div>';
-    echo '</form>';
 
-    $options = new stdClass();
-    $options->courseid = $course->id;
-    $options->noteStateNames = note_get_state_names();
-    $options->stateHelpIcon = $OUTPUT->help_icon('publishstate', 'notes');
-    $PAGE->requires->js_call_amd('core_user/participants', 'init', [$options]);
+    $bulkoptions->noteStateNames = note_get_state_names();
 }
+echo '</form>';
 
+$PAGE->requires->js_call_amd('core_user/participants', 'init', [$bulkoptions]);
 echo '</div>';  // Userlist.
 
 $enrolrenderer = $PAGE->get_renderer('core_enrol');
-echo '<div class="float-right">';
 // Need to re-generate the buttons to avoid having elements with duplicate ids on the page.
 $enrolbuttons = $manager->get_manual_enrol_buttons();
+$enrolbuttonsout = '';
 foreach ($enrolbuttons as $enrolbutton) {
-    echo $enrolrenderer->render($enrolbutton);
+    $enrolbuttonsout .= $enrolrenderer->render($enrolbutton);
 }
-echo '</div>';
+echo html_writer::div($enrolbuttonsout, 'd-flex justify-content-end', [
+    'data-region' => 'wrapper',
+    'data-table-uniqueid' => $participanttable->uniqueid,
+]);
 
 if ($newcourse == 1) {
     $str = get_string('proceedtocourse', 'enrol');

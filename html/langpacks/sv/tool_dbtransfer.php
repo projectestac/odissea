@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dbtransfer', language 'sv', version '3.8'.
+ * Strings for component 'tool_dbtransfer', language 'sv', version '3.11'.
  *
  * @package     tool_dbtransfer
  * @category    string
@@ -25,14 +25,22 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['dbexport'] = 'Export av databas';
-$string['dbtransfer'] = 'Överföring av databas';
+$string['clidriverlist'] = 'Databasdrivrutiner tillgängliga för migrering.';
+$string['cliheading'] = 'Databasmigrering - säkerställ att ingen loggar in på servern under migreringen!';
+$string['climigrationnotice'] = 'Databasmigrering pågår, vänta tills migreringen har slutförts och serveradministratören uppdaterar konfigurationen och tar bort $CFG->dataroot/climaintenance.html-filen.';
+$string['convertinglogdisplay'] = 'Konverterar loggvisningsåtgärder';
+$string['dbexport'] = 'Databasexport';
+$string['dbtransfer'] = 'Databasmigrering';
 $string['enablemaintenance'] = 'Aktivera underhållsläge';
+$string['enablemaintenance_help'] = 'Det här alternativet aktiverar underhållsläget under och efter databasmigreringen. Det förhindrar åtkomst för alla användare tills migreringen är klar. Observera att administratören måste ta bort $CFG->datarot/climaintenance.html-filen manuellt efter uppdateringen av inställningarna i <code>config.php</code> för att återgå till normal drift.';
 $string['exportdata'] = 'Exportera data';
-$string['notargetconectexception'] = 'Det går tyvärr inte att kontakta måldatabasen.';
-$string['pluginname'] = 'Export av databas';
+$string['notargetconectexception'] = 'Det går tyvärr inte att ansluta måldatabasen.';
+$string['options'] = 'Alternativ';
+$string['pluginname'] = 'Databasöverföring';
+$string['privacy:metadata'] = 'Pluginmodulen Databasöverföring lagrar inga personuppgifter.';
 $string['targetdatabase'] = 'Måldatabas';
+$string['targetdatabasenotempty'] = 'Måldatabasen får inte innehålla några tabeller med angivet prefix!';
 $string['transferdata'] = 'Överför data';
-$string['transferdbintro'] = 'Det här skriptet kommer att överföra hela innehållet i den här databasen till en annan databasserver.';
+$string['transferdbintro'] = 'Det här skriptet överför hela innehållet i databasen till en annan databasserver. Det används ofta för migrering av data mellan olika databastyper.';
 $string['transferdbtoserver'] = 'Överför den här Moodle-databasen till en annan server';
-$string['transferringdbto'] = 'Överför den här databasen till {$a->dbtype} databasen {$a->dbname} hos {$a->dbhost}';
+$string['transferringdbto'] = 'Överför databasen {$a->dbtypefrom} till {$a->dbtype}-databasen "{$a->dbname}" på {$a->dbhost}"';

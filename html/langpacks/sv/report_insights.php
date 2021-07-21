@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_insights', language 'sv', version '3.8'.
+ * Strings for component 'report_insights', language 'sv', version '3.11'.
  *
  * @package     report_insights
  * @category    string
@@ -45,7 +45,7 @@ $string['prediction'] = 'Prognos';
 $string['predictiondetails'] = 'Prognosdetaljer';
 $string['privacy:metadata'] = 'Pluginen Insikter sparar inga personuppgifter.';
 $string['selectotherinsights'] = 'Välj andra insikter...';
-$string['selectprediction'] = 'Välj en';
+$string['selectprediction'] = 'Välj {$a} för hantering i "bulk"';
 $string['timecreated'] = 'Välj {$a} för hantering i "bulk"';
 $string['timerange'] = 'Analysintervall';
 $string['timerangewithdata'] = '{$a->timestart} till {$a->timeend}';

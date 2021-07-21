@@ -364,6 +364,40 @@ class core_adhoc_task_testcase extends advanced_testcase {
     }
 
     /**
+     * Test get_concurrency_limit() method to return 0 by default.
+     */
+    public function test_get_concurrency_limit() {
+        $this->resetAfterTest(true);
+        $task = new \core\task\adhoc_test_task();
+        $concurrencylimit = $task->get_concurrency_limit();
+        $this->assertEquals(0, $concurrencylimit);
+    }
+
+    /**
+     * Test get_concurrency_limit() method to return a default value set in config.
+     */
+    public function test_get_concurrency_limit_default() {
+        $this->resetAfterTest(true);
+        set_config('task_concurrency_limit_default', 10);
+        $task = new \core\task\adhoc_test_task();
+        $concurrencylimit = $task->get_concurrency_limit();
+        $this->assertEquals(10, $concurrencylimit);
+    }
+
+    /**
+     * Test get_concurrency_limit() method to return a value for specific task class.
+     */
+    public function test_get_concurrency_limit_for_task() {
+        global $CFG;
+        $this->resetAfterTest(true);
+        set_config('task_concurrency_limit_default', 10);
+        $CFG->task_concurrency_limit = array('core\task\adhoc_test_task' => 5);
+        $task = new \core\task\adhoc_test_task();
+        $concurrencylimit = $task->get_concurrency_limit();
+        $this->assertEquals(5, $concurrencylimit);
+    }
+
+    /**
      * Test adhoc task sorting.
      */
     public function test_get_next_adhoc_task_sorting() {

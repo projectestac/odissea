@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_blackboard_six', language 'sv', version '3.8'.
+ * Strings for component 'qformat_blackboard_six', language 'sv', version '3.11'.
  *
  * @package     qformat_blackboard_six
  * @category    string
@@ -34,4 +34,5 @@ $string['importnotext'] = 'Saknad frågetext i XML filen';
 $string['notenoughtsubans'] = 'Kunde inte importera matchande fråga \'{$a}\' eftersom en matchande fråga måste bestå av minst två frågor och tre svar.';
 $string['pluginname'] = 'Blackboard V6+';
 $string['pluginname_help'] = 'Blackboard V6 + formatet gör frågor som är sparade i alla Blackboard export format kan importeras via en DAT-eller zip-fil. För zip-filer, stöds inte bildimport.';
+$string['privacy:metadata'] = 'Pluginmodulen Blackbard frågeformat lagrar ingen personinformation.';
 $string['unhandledpresblock'] = 'Ohanterat presentationsblock';

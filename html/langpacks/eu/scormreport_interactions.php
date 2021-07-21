@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_interactions', language 'eu', version '3.8'.
+ * Strings for component 'scormreport_interactions', language 'eu', version '3.11'.
  *
  * @package     scormreport_interactions
  * @category    string

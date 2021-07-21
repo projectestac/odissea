@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_summary', language 'ar', version '3.8'.
+ * Strings for component 'block_course_summary', language 'ar', version '3.11'.
  *
  * @package     block_course_summary
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['course_summary:addinstance'] = 'إضافة كتلة ملخص المقررالدراسي/الموقع جديدة';
+$string['course_summary:addinstance'] = 'إضافة كتلة جديدة لملخص المقرر/الموقع';
 $string['coursesummary'] = 'ملخص المقرر الدراسي';
-$string['pluginname'] = 'ملخص المقررالدراسي/الموقع';
+$string['pluginname'] = 'ملخص الموقع/المقرر';
 $string['privacy:metadata'] = 'إن كتلة ملخص المقرر/الموقع تظهر فقط معلومات عن المقررات الدراسية ولا تخزن البيانات بحد ذاتها.';

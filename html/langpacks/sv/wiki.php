@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'sv', version '3.8'.
+ * Strings for component 'wiki', language 'sv', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -146,7 +146,7 @@ $string['migrationfinishednowikis'] = 'Migration avslutad, inga wikis har migrer
 $string['missingpages'] = 'Sidor utan innehåll';
 $string['modified'] = 'Modifierad';
 $string['modulename'] = 'Wiki';
-$string['modulename_help'] = 'Wiki-aktivitetsmodulen gör det möjligt för deltagarna att lägga till och redigera en samling webbsidor. En wiki kan vara gemensam där alla kan redigera den, eller enskil, där alla har sin egen wiki som bara de kan redigera.
+$string['modulename_help'] = 'Aktiviteten <em>Wiki</em> gör det möjligt för deltagarna att lägga till och redigera en samling webbsidor. En wiki kan vara gemensam där alla kan redigera den, eller enskil, där alla har sin egen wiki som bara de kan redigera.
 
 Historik över tidigare versioner av varje sida i wikin finns och listar de redigeringar som gjorts av varje deltagare.
 
@@ -170,15 +170,15 @@ $string['noattachments'] = '<strong>Inga bifogade filer</strong>';
 $string['nocomments'] = 'Det finns inga kommentarer';
 $string['nocontent'] = 'Det finns inget innehåll för den här sidan';
 $string['nocontribs'] = 'Du har inte lämnat några bidrag till den här wikin';
-$string['nocreatepermission'] = 'Det krävs tillstånd för att skapa sida';
-$string['noeditcommentpermission'] = 'Det krävs tillstånd för att redigera kommentar';
-$string['noeditpermission'] = 'Det krävs tillstånd för att redigera sida';
+$string['nocreatepermission'] = 'Du saknar behörighet att skapa sida';
+$string['noeditcommentpermission'] = 'Du saknar behörighet att redigera kommentaren';
+$string['noeditpermission'] = 'Du saknar behörighet att redigera sidan';
 $string['nofrompages'] = 'Det finns inga länkar till den här sidan';
 $string['nohistory'] = 'Det finns ingen historik för den här sidan';
-$string['nomanagecommentpermission'] = 'Du behöver tillstånd för att administrera kommentarer';
-$string['nomanagewikipermission'] = 'Det krävs tillstånd för att administrera wikin';
+$string['nomanagecommentpermission'] = 'Du saknar behörighet att administrera kommentarer';
+$string['nomanagewikipermission'] = 'Du saknar behörighet att administrera wikin';
 $string['noorphanedpages'] = 'Det finns inga sidor utan föräldrar';
-$string['nooverridelockpermission'] = 'Det krävs tillstånd för att överskrida låsningen. ';
+$string['nooverridelockpermission'] = 'Du saknar behörighet att åsidosätta låsning';
 $string['norated'] = 'Den här sidan har inte värderad ännu, bli först!';
 $string['norating'] = 'Ingen betygssättning';
 $string['nosearchresults'] = 'Inga resultat';
@@ -187,8 +187,8 @@ $string['notingroup'] = 'Inte i grupp';
 $string['notmigrated'] = 'Denna wiki har inte migrerats än. Kontakta din administratör.';
 $string['notopages'] = 'Den här sidan länkar inte till några andra sidor';
 $string['noupdatedpages'] = 'Det finns inga uppdaterade sidor';
-$string['noviewcommentpermission'] = 'Det krävs tillstånd för att visa kommentarer';
-$string['noviewpagepermission'] = 'Det krävs tillstånd för att visa sidor';
+$string['noviewcommentpermission'] = 'Du saknar behörighet att visa kommentarer';
+$string['noviewpagepermission'] = 'Du saknar behörighet att visa sida';
 $string['nwiki'] = 'NWiki';
 $string['oldversion'] = 'Äldre version';
 $string['orphaned'] = 'Föräldralösa sidor';
@@ -287,7 +287,7 @@ $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Lägg till en ny wiki';
 $string['wiki:createpage'] = 'Skapa nya wiki-sidor';
 $string['wiki:editcomment'] = 'Lägg till kommentarer till sidor';
-$string['wiki:editpage'] = 'Spara wiki-sidor';
+$string['wiki:editpage'] = 'Redigera wiki-sidor';
 $string['wiki:managecomment'] = 'Administrera wiki-kommentarer';
 $string['wiki:managefiles'] = 'Hantera wikifiler';
 $string['wiki:managewiki'] = 'Administrera inställningar för wiki';

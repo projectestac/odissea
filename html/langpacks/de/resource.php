@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'de', version '3.8'.
+ * Strings for component 'resource', language 'de', version '3.11'.
  *
  * @package     resource
  * @category    string
@@ -83,11 +83,11 @@ $string['modulename_help'] = 'Mit dem Lernmaterial \'Datei\' können Trainer/inn
 
 Beachten Sie, dass die Teilnehmer/innen die entsprechende Software brauchen, um die Datei zu öffnen.
 
-Eine Datei kann verwendet werden, um
+Eine Datei kann verwendet werden
 
- * Präsentationen für den Unterricht zu teilen
- * eine Mini-Website als Kursressource einzubinden
- * Entwurfsdateien bereitzustellen, damit die Teilnehmer/innen diese bearbeiten und zur Bewertung einreichen können.';
+ * Um Präsentationen für den Unterricht zu teilen
+ * Um eine Mini-Website als Kursressource einzubinden
+ * Um Entwurfsdateien bereitzustellen, damit die Teilnehmer/innen diese bearbeiten und zur Bewertung einreichen können.';
 $string['modulenameplural'] = 'Dateien';
 $string['notmigrated'] = 'Dieser ältere Materialtyp ({$a}) wurde bisher noch nicht migriert';
 $string['optionsheader'] = 'Optionen';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_participants', language 'ar', version '3.8'.
+ * Strings for component 'block_participants', language 'ar', version '3.11'.
  *
  * @package     block_participants
  * @category    string
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['participants:addinstance'] = 'إضافة كتلة أشخاص جديدة';
 $string['pluginname'] = 'أشخاص';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_spamcleaner', language 'pt', version '3.8'.
+ * Strings for component 'tool_spamcleaner', language 'pt', version '3.11'.
  *
  * @package     tool_spamcleaner
  * @category    string
@@ -30,13 +30,13 @@ $string['privacy:metadata'] = 'O módulo Limpeza de spam não armazena dados pes
 $string['spamauto'] = 'Detetar padrões comuns de spam';
 $string['spamcannotdelete'] = 'Não pode apagar este utilizador';
 $string['spamcannotfinduser'] = 'Não existem utilizadores que correspondam à sua pesquisa';
-$string['spamcleanerintro'] = '<p>Este script permite que procure contas de utilizadores com base em certos textos e as elimine por se tratarem de contas criadas por spammers.  Pode pesquisar por múltiplas palavras-chave utilizando vírgulas para separá-las (ex: casino, porn).</p>
+$string['spamcleanerintro'] = '<p>Este script permite que procure contas de utilizadores com base em certos textos e as elimine por se tratarem de contas criadas por spammers.  Pode pesquisar por múltiplas palavras-chave utilizando vírgulas para separá-las (por exemplo: casino, porn).</p>
 <p>Para mais informações, consulte a documentação disponível em <a href="https://docs.moodle.org/en/Reducing_spam_in_Moodle">Reduzir o spam no Moodle</a>.</p>';
 $string['spamdeleteall'] = 'Apagar todas as contas';
 $string['spamdeleteallconfirm'] = 'Tem a certeza de que pretende apagar todas estas contas de utilizador?  Esta operação é irreversível.';
 $string['spamdeleteconfirm'] = 'Tem a certeza de que pretende apagar esta entrada?  Esta operação é irreversível.';
 $string['spamdesc'] = 'Descrição';
-$string['spameg'] = 'ex:  casino, porn, xxx';
+$string['spameg'] = 'exemplo:  casino, porn, xxx';
 $string['spamfromblog'] = 'Da mensagem do blogue:';
 $string['spamfromcomments'] = 'De comentários:';
 $string['spamfromforumpost'] = 'De mensagens no fórum:';
@@ -44,5 +44,5 @@ $string['spamfrommessages'] = 'De mensagens:';
 $string['spaminvalidresult'] = 'Resultados desconhecidos';
 $string['spamkeyword'] = 'Palavra-chave';
 $string['spamoperation'] = 'Operação';
-$string['spamresult'] = 'Resultados de utilizadores que contenham:';
+$string['spamresult'] = 'Resultados de utilizadores que contenham:&nbsp;';
 $string['spamsearch'] = 'Pesquisar estas palavras-chave';

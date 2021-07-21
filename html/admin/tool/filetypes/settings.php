@@ -24,14 +24,15 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-//XTEC ************ MODIFICAT - To let access only to xtecadmin user
-//2016.08.16 @sarjona
+// XTEC ************ MODIFICAT - Allow access only to xtecadmin user
+// 2016.08.16 @sarjona
 if ($hassiteconfig & get_protected_agora()) {
-//************ ORIGINAL
+// ************ ORIGINAL
 /*
 if ($hassiteconfig) {
  */
-//************ FI
+// ************ FI
+
     $ADMIN->add('server', new admin_externalpage('tool_filetypes',
             new lang_string('pluginname', 'tool_filetypes'),
             $CFG->wwwroot . '/admin/tool/filetypes/index.php'));

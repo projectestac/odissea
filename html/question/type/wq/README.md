@@ -1,8 +1,6 @@
 # Wiris Quizzes Commons question type
-### Master Build Status
-[![Build Status](https://travis-ci.org/wiris/moodle-qtype_wq.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_wq)
-### Development Build Status
-[![Build Status](https://travis-ci.org/wiris/moodle-qtype_wq.svg?branch=development)](https://travis-ci.org/wiris/moodle-qtype_wq)
+
+[![Moodle Plugin CI](https://github.com/wiris/moodle-qtype_wq/actions/workflows/ci.yml/badge.svg)](https://github.com/wiris/moodle-qtype_wq/actions/workflows/ci.yml)
 
 ## Information
 The Wiris Quizzes question type belongs to the Wiris Quizzes set of questions which enhances the usual Moodle question types with mathematical functionality.
@@ -17,6 +15,14 @@ git clone https://github.com/wiris/moodle-qtype_wq.git question/type/wq
 Then add /question/type/wq to your git ignore.
 
 Alternatively, download the zip from <https://github.com/wiris/moodle-qtype_wq/archive/master.zip> it into the question/type folder, and then rename the new folder to "wq".
+
+## Technical Support
+
+If you have questions or need help integrating MathType, please contact us (support@wiris.com) instead of opening an issue.
+
+## Privacy policy
+
+The [MathType Privacy Policy](https://www.wiris.com/mathtype/privacy-policy) covers the data processing operations for the MathType users. It is an addendum of the company’s general Privacy Policy and the [general Privacy Policy](https://wiris.com/en/privacy-policy) still applies to MathType users.
 
 ## License
 

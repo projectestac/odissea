@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'eu', version '3.8'.
+ * Strings for component 'enrol', language 'eu', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -63,6 +63,7 @@ $string['enrolmentnew'] = '{$a} ikastaroan matrikula berria';
 $string['enrolmentnewuser'] = '{$a->user} (e)k "{$a->course}" ikastaroan matrikulatu da';
 $string['enrolmentoptions'] = 'Matrikulazio-aukerak';
 $string['enrolments'] = 'Matrikulazioak';
+$string['enrolmentupdatedforuser'] = '"{$a->fullname}" erabiltzailearen matrikulazioa eguneratu da';
 $string['enrolnotpermitted'] = 'Ez duzu baimenik inor ikastaro honetan matrikulatzeko edo ez dago gaituta';
 $string['enrolperiod'] = 'Matrikularen iraupena';
 $string['enroltimecreated'] = 'Matrikularen sorrera-data';
@@ -155,8 +156,9 @@ $string['totalunenrolledusers'] = '{$a} erabiltzaile desmatrikulatu dira';
 $string['unassignnotpermitted'] = 'Ez duzu baimenik rolak kentzeko ikastaro honetan';
 $string['unenrol'] = 'Desmatrikulatu';
 $string['unenrolconfirm'] = 'Benetan desmatrikulatu nahi al duzu  ("{$a->enrolinstancename}" matrikulazio-metodoa erabiliz matrikulatuta dagoen) "{$a->user}" erabiltzailea "{$a->course}" ikastarotik?';
+$string['unenrolleduser'] = '"{$a->fullname}" erabiltzailea ikastarotik desmatrikulatu da';
 $string['unenrolme'] = '{$a} ikastarotik desmatrikulatu nahi dut';
-$string['unenrolnotpermitted'] = 'Ez duzu baimenik erabiltzaile hau ikastaro honetatik desmatrikulatzeko, edo ez dago gaituta.';
+$string['unenrolnotpermitted'] = 'Ez duzu baimenik erabiltzaile hau ikastaro honetatik desmatrikulatzeko.';
 $string['unenrolroleusers'] = 'Desmatrikulatu erabiltzaileak';
 $string['uninstallmigrating'] = '"{$a}" matrikulak migratzen';
 $string['unknowajaxaction'] = 'Eskatutako ekintza ezezaguna da';

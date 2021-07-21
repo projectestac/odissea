@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'en', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'en', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -31,7 +31,12 @@ $string['addnewdefaults'] = 'Add a new module default';
 $string['addpurpose'] = 'Add purpose';
 $string['addroleoverride'] = 'Add role override';
 $string['approve'] = 'Approve';
+$string['approvedrequestsubmitted'] = 'Your request has been submitted and will be processed soon.';
 $string['approverequest'] = 'Approve request';
+$string['automaticdatadeletionapproval'] = 'Automatic data deletion request approval';
+$string['automaticdatadeletionapproval_desc'] = 'If enabled, data deletion requests are automatically approved.<br/>Note that the automatic approval will only apply to new data deletion requests with this setting enabled. Existing data deletion requests pending approval will still have to be manually approved by the privacy officer.';
+$string['automaticdataexportapproval'] = 'Automatic data export request approval';
+$string['automaticdataexportapproval_desc'] = 'If enabled, data export requests are automatically approved.<br/>Note that the automatic approval will only apply to new data export requests with this setting enabled. Existing data export requests pending approval will still have to be manually approved by the privacy officer.';
 $string['automaticdeletionrequests'] = 'Create automatic data deletion requests';
 $string['automaticdeletionrequests_desc'] = 'If enabled, a data deletion request will be created automatically for any user accounts deleted manually.';
 $string['bulkapproverequests'] = 'Approve requests';
@@ -140,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} (since the last time the user ac
 $string['emailsalutation'] = 'Dear {$a},';
 $string['errorcannotrequestdeleteforother'] = 'You don\'t have permission to create deletion request for this user.';
 $string['errorcannotrequestdeleteforself'] = 'You don\'t have permission to create deletion request for yourself.';
+$string['errorcontactdpodisabled'] = 'The option to contact the privacy officer is disabled.';
 $string['errorcontexthasunexpiredchildren'] = 'The context "{$a}" still has sub-contexts that have not yet expired. No contexts have been flagged for deletion.';
 $string['errorinvalidrequestcomments'] = 'The comments field may contain plain text only.';
 $string['errorinvalidrequestcreationmethod'] = 'Invalid request creation method!';
@@ -326,7 +332,6 @@ $string['statusdeleted'] = 'Deleted';
 $string['statusdetail'] = 'Status:';
 $string['statusexpired'] = 'Expired';
 $string['statuspending'] = 'Pending';
-$string['statuspreprocessing'] = 'Pre-processing';
 $string['statusprocessing'] = 'Processing';
 $string['statusready'] = 'Download ready';
 $string['statusrejected'] = 'Rejected';

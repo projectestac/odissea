@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'sv', version '3.8'.
+ * Strings for component 'gradereport_singleview', language 'sv', version '3.11'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -34,25 +34,33 @@ $string['bulkinsertvalue'] = 'Infoga värde';
 $string['bulklegend'] = 'Bulkinfogning (flera åt gången)';
 $string['bulkperform'] = 'Genomför bulkinfogning (flera åt gången)';
 $string['entrypage'] = 'Betygsätt användare eller betygsätt objekt';
+$string['eventgradereportviewed'] = 'Enskild vy för betyg visad.';
 $string['exclude'] = 'Exkludera';
 $string['excludeall'] = 'Exkludera alla betyg';
 $string['excludefor'] = 'Exkludera för {$a}';
 $string['excludenone'] = 'Exkludera inga betyg';
 $string['feedbackfor'] = 'Återkoppling för {$a}';
+$string['filtergrades'] = 'Visa betyg för {$a}.';
 $string['gradefor'] = 'Betyg för {$a}';
 $string['gradeitem'] = 'Betygsobjekt: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'Betygsobjektet kan inte åsidosättas.';
 $string['gradeuser'] = 'Betygsätt användare: {$a}';
 $string['itemsperpage'] = 'Objekt per sida';
+$string['noscreens'] = 'Kunde inte hitta en lämplig Enskild vy-skärm.';
+$string['notvalid'] = 'Inte en giltig skärm för Enskild vy: {$a}';
 $string['override'] = 'Åsidosätt';
 $string['overrideall'] = '';
 $string['overridefor'] = 'Åsidosätt för {$a}';
 $string['overridenone'] = 'Åsidosätt inga betyg';
+$string['overridenoneconfirm'] = 'Du är på väg att inaktivera betygsåsidosättning. Detta tar bort alla tidigare åsidosatta betyg. Är du säker på att du vill fortsätta?';
 $string['pluginname'] = 'Enskild vy';
+$string['privacy:metadata'] = 'Rapporten Bedöm enstaka vy visar bara data som lagras på andra platser.';
 $string['save'] = 'Spara';
 $string['savegrades'] = 'Sparar betyg';
 $string['savegradessuccess'] = 'Betygsatte {$a} objekt.';
 $string['selectgrade'] = 'Välj objekt att betygsätta';
 $string['selectuser'] = 'Välj användare...';
 $string['singleview:view'] = 'Visa rapport';
+$string['summarygrade'] = 'En tabell med användare, med kolumner för intervall, betyg, återkoppling och om ett visst betyg ska åsidosättas eller uteslutas.';
+$string['summaryuser'] = 'En tabell med betygsobjekt, med kolumner för betygskategori, intervall, betyg, återkoppling och om ett visst betyg ska åsidosättas eller uteslutas.';
 $string['userselect'] = 'Välj aktivitet';

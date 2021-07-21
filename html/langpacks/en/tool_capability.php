@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'en', version '3.8'.
+ * Strings for component 'tool_capability', language 'en', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -30,9 +30,12 @@ $string['capabilityreport'] = 'Capability overview';
 $string['changeoverrides'] = 'Change overrides in this context';
 $string['changeroles'] = 'Change role definitions';
 $string['eventreportviewed'] = 'Report viewed';
+$string['filters'] = 'Filter results';
 $string['forroles'] = 'For roles {$a}';
 $string['getreport'] = 'Get the overview';
 $string['intro'] = 'This report shows, for a particular capability, what permission that capability has in the definition of every role (or a selection of roles), and everywhere in the site where that capability is overridden.';
+$string['nodifferences'] = 'There are no differences to show between selected roles in this context';
+$string['onlydiff'] = 'Show differences only';
 $string['pluginname'] = 'Capability overview';
 $string['privacy:metadata'] = 'The Capability overview plugin does not store any personal data.';
 $string['reportforcapability'] = 'Report for capability \'{$a}\'';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myprofile', language 'sv', version '3.8'.
+ * Strings for component 'block_myprofile', language 'sv', version '3.11'.
  *
  * @package     block_myprofile
  * @category    string
@@ -47,4 +47,4 @@ $string['myprofile:addinstance'] = 'Lägg till';
 $string['myprofile:myaddinstance'] = 'Lägg till blocket Min profil på Mitt Moodle';
 $string['myprofile_settings'] = 'Synlig information';
 $string['pluginname'] = 'Min profil';
-$string['privacy:metadata'] = 'Blocket Min profil visar information om den inloggade användaren och lagrar i sig ingen personlig information.';
+$string['privacy:metadata'] = 'Blocket Min profil visar information om den inloggade användaren och lagrar i sig ingen personinformation.';

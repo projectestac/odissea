@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ru', version '3.8'.
+ * Strings for component 'survey', language 'ru', version '3.11'.
  *
  * @package     survey
  * @category    string
@@ -172,6 +172,8 @@ $string['collesm6short'] = 'Интерпретация';
 $string['collesmintro'] = 'В этом разделе...';
 $string['collespintro'] = 'Цель этого анкетного опроса состоит в том, чтобы помочь нам понять, что Вы наиболее цените в дистанционном обучении. Каждое из этих 24 утверждений ниже предполагает, что Вы сравните Ваши, предпочтения (идеал) и фактический опыт в этом вопросе. Здесь нет \'верных\', или \'неверных\' ответов: мы интересуемся только Вашим мнением. Будьте уверены, что ваши ответы будет рассматриваться с высокой степенью конфиденциальности, и не будут затрагивать Вашу оценку. Ваши ответы помогут нам улучшить качество дистанционного обучения в будущем. Заранее благодарим.';
 $string['collespname'] = 'COLLES (Предпочтения)';
+$string['completiondetail:submit'] = 'Отправлять ответы';
+$string['completionsubmit'] = 'Студент должен принять участие в этой анкете, чтобы выполнить её.';
 $string['customintro'] = 'Описание';
 $string['deleteallanswers'] = 'Удалить все ответы на опрос';
 $string['deleteanalysis'] = 'Удалить анализ ответов';
@@ -192,6 +194,8 @@ $string['howlongoptions'] = 'менее 1 мин, 1-2 мин, 2-3 мин, 3-4 м
 $string['ifoundthat'] = 'Я узнал, что';
 $string['indicator:cognitivedepth'] = 'Анкета: познавательный аспект';
 $string['indicator:cognitivedepth_help'] = 'Этот показатель основан на глубине познания, достигнутой студентом при работе с элементом курса «Анкета».';
+$string['indicator:cognitivedepthdef'] = 'Анкета: познавательный аспект';
+$string['indicator:cognitivedepthdef_help'] = 'Участник достиг этого процента познавательного взаимодействия, предлагаемого элементом курса «Анкета» в течение этого интервала анализа (Уровни = Нет просмотра, Просмотр, Отправка)';
 $string['indicator:socialbreadth'] = 'Анкета: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с элементом Анкета.';
 $string['indicator:socialbreadthdef'] = 'Анкета: социальный аспект';
@@ -220,7 +224,13 @@ $string['preferred'] = 'Более предпочтителен';
 $string['preferredclass'] = 'Класс предпочел';
 $string['preferredstudent'] = '{$a} более предпочтителен';
 $string['privacy:metadata:analysis'] = 'Запись об анализе ответов на опрос.';
+$string['privacy:metadata:analysis:notes'] = 'Заметки сохраняются рядом с ответами пользователя.';
 $string['privacy:metadata:analysis:userid'] = 'ID пользователя, отвечающего на анкету.';
+$string['privacy:metadata:answers'] = 'Сборник ответов на опросы.';
+$string['privacy:metadata:answers:answer1'] = 'Поле для хранения ответа на вопрос.';
+$string['privacy:metadata:answers:answer2'] = 'Дополнительное поле для хранения ответа на вопрос.';
+$string['privacy:metadata:answers:question'] = 'Вопрос.';
+$string['privacy:metadata:answers:time'] = 'Время, когда был опубликован ответ.';
 $string['privacy:metadata:answers:userid'] = 'ID пользователя, отправившего свой ответ.';
 $string['question'] = 'Вопрос';
 $string['questions'] = 'Вопросы';

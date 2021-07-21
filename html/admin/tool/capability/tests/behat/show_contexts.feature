@@ -95,3 +95,39 @@ Feature: Show capabilities for multiple contexts
     And I should see "Permissions in Category: Miscellaneous"
     And I should see "Permissions in Course: Course 1"
     And I should see "Permissions in Course: Course 2"
+
+  Scenario: Show capabilities table with capability with override and only diff
+    When I set the following fields to these values:
+      | Capability: | enrol/category:config |
+      | Roles:      | Student, Teacher      |
+    And I set the field "Show differences only" to "1"
+    And I click on "Get the overview" "button"
+    Then I should see "Permissions in System"
+    And I should see "Permissions in Category: Miscellaneous"
+    And I should see "There are no differences to show between selected roles in this context"
+    And I should see "Permissions in Course: Course 1"
+    And I should not see "Permissions in Course: Course 2"
+
+  Scenario: Show capabilities table with capability without override and only diff and same capability
+    When I set the following fields to these values:
+      | Capability: | enrol/category:synchronised |
+      | Roles:      | Student, Teacher            |
+    And I set the field "Show differences only" to "1"
+    And I click on "Get the overview" "button"
+    Then I should see "Permissions in System"
+    And I should see "There are no differences to show between selected roles in this context"
+    And I should not see "Permissions in Category: Miscellaneous"
+    And I should not see "Permissions in Course: Course 1"
+    And I should not see "Permissions in Course: Course 2"
+
+  Scenario: Show capabilities table with two capabilities only one override and only diff checked
+    When I set the following fields to these values:
+      | Capability: | enrol/category:config, enrol/cohort:config |
+      | Roles:      | Student, Teacher                           |
+    And I set the field "Show differences only" to "1"
+    And I click on "Get the overview" "button"
+    Then I should see "Permissions in System"
+    And I should see "Permissions in Category: Miscellaneous"
+    And I should see "There are no differences to show between selected roles in this context"
+    And I should see "Permissions in Course: Course 1"
+    And I should not see "Permissions in Course: Course 2"

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'it', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'it', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -77,9 +77,15 @@ $string['csvdelimiter'] = 'Separatore CSV';
 $string['csvdelimiter_help'] = 'Il separatore del file CSV';
 $string['csvfileerror'] = 'Il formato del file CSV presenta dei problemi. Verificare che il numero delle intestazioni corrisponda con il numero delle colonne e che il separatore e la codifica siano corretti: {$a}';
 $string['csvline'] = 'Linea';
+$string['customfieldinvalid'] = 'Il campo personalizzato \'{$a}\' è vuoto oppure contiene valori non validi';
 $string['defaultvalues'] = 'Valori di default del corso';
+$string['defaultvaluescustomfieldcategory'] = 'Valori di default di \'{$a}\'';
+$string['downloadcontentnotallowed'] = 'La configurazione dello scaricamento dei corsi non è consentita.';
 $string['encoding'] = 'Codifica';
 $string['encoding_help'] = 'La codifica del file CSV';
+$string['errorcannotcreateorupdateenrolment'] = 'Non è possibile creare o aggiornare il metodo di iscrizione \'{$a}\'';
+$string['errorcannotdeleteenrolment'] = 'Non è possibile eliminare il metodo di iscrizione \'{$a}\'';
+$string['errorcannotdisableenrolment'] = 'Non è possibile disabilitare il metodo di iscrizione \'{$a}\'';
 $string['errorwhiledeletingcourse'] = 'Si è verificato un errore durante l\'eliminazione del corso';
 $string['errorwhilerestoringcourse'] = 'Si è verificato un errore durante il ripristino del corso';
 $string['generatedshortnamealreadyinuse'] = 'Il titolo abbreviato generato è già utilizzato';

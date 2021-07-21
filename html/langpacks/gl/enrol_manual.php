@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'gl', version '3.8'.
+ * Strings for component 'enrol_manual', language 'gl', version '3.11'.
  *
  * @package     enrol_manual
  * @category    string
@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advanced'] = 'Avanzado';
 $string['alterstatus'] = 'Cambiar o estado';
-$string['altertimeend'] = 'Cambiar a hora de remate';
-$string['altertimestart'] = 'Mudar a hora de inicio';
+$string['altertimeend'] = 'Cambiar o tempo de remate';
+$string['altertimestart'] = 'Cambiar o tempo de inicio';
 $string['assignrole'] = 'Asignar rol';
 $string['assignroles'] = 'Asignar roles';
 $string['browsecohorts'] = 'Examinar círculos';
@@ -44,7 +44,7 @@ $string['enrolledincourserole'] = 'Matriculado en «{$a->course}» como «{$a->r
 $string['enrolusers'] = 'Matricular usuarios';
 $string['enroluserscohorts'] = 'Matricular os usuarios e círculos seleccionados';
 $string['expiredaction'] = 'Acción na expiración da matriculación';
-$string['expiredaction_help'] = 'Seleccionar unha acción para realizar cando a matriculación dun usuario expire. Vexa que algúns datos de usuario e configuracións se purgan do curso durante a desmatriculación do curso.';
+$string['expiredaction_help'] = 'Seleccionar unha acción para realizar cando a matriculación dun usuario expire. Vexa que algúns datos de usuario e axustes púrganse do curso durante a desmatriculación do curso.';
 $string['expirymessageenrolledbody'] = 'Prezado/a {$a->user}:
 
 Esta é unha notificación de que a súa matriculación no curso «{$a->course}» está próxima a expirar en {$a->timeend}.
@@ -66,7 +66,7 @@ $string['manualpluginnotinstalled'] = 'O engadido «Manual» aínda non foi inst
 $string['messageprovider:expiry_notification'] = 'Notificacións de expiración da matriculación';
 $string['now'] = 'Agora';
 $string['pluginname'] = 'Matriculacións manuais';
-$string['pluginname_desc'] = 'O engadido de matriculación manual permítelles aos usuarios seren matriculados manualmente por medio dunha ligazón na configuración da administración do curso, por un usuario cos permisos adecuados, como pode ser un profesor. O engadido xa debería estar activado normalmente, xa que outros engadidos de matriculación, como o de automatriculación o requiren.';
+$string['pluginname_desc'] = 'O engadido de matriculación manual permítelles aos usuarios ser matriculados manualmente por medio dunha ligazón nos axustes da administración do curso, por un usuario cos permisos adecuados, como pode ser un profesor. O engadido xa debería estar activado normalmente, xa que outros engadidos de matriculación, como o de automatriculación o requiren.';
 $string['privacy:metadata'] = 'O engadido de matriculacións manuais non almacena ningún dato persoal.';
 $string['selectcohorts'] = 'Escoller círculos';
 $string['selection'] = 'Selección';

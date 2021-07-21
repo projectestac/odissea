@@ -33,7 +33,7 @@ if ($ADMIN->fulltree) {
 // XTEC ************ AFEGIT - Allow access only to xtecadmin user
 // 2019.11.07 @aginard
 if (get_protected_agora()) {
-//************ FI
+// ************ FI
 
     // Types allowed.
     $options = array(
@@ -50,7 +50,7 @@ if (get_protected_agora()) {
 // XTEC ************ AFEGIT - Allow access only to xtecadmin user
 // 2019.11.07 @aginard
 }
-//************ FI
+// ************ FI
 
     // Audio bitrate.
     $name = get_string('audiobitrate', 'atto_recordrtc');

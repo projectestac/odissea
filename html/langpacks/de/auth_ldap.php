@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'de', version '3.8'.
+ * Strings for component 'auth_ldap', language 'de', version '3.11'.
  *
  * @package     auth_ldap
  * @category    string
@@ -65,7 +65,7 @@ $string['auth_ldap_memberattribute_key'] = 'Mitgliedsmerkmal';
 $string['auth_ldap_no_mbstring'] = 'Die PHP-Extension mbstring ist erforderlich, um Nutzer/innen in LDAP anzulegen.';
 $string['auth_ldap_noconnect'] = 'Das LDAP-Modul kann keine Serververbindung herstellen: {$a}';
 $string['auth_ldap_noconnect_all'] = 'Das LDAP-Modul kann keine Serververbindung herstellen: {$a}';
-$string['auth_ldap_noextension'] = 'Die PHP-Extension LDAP ist nicht verfügbar. Um die LDAP-Authentifizierung nutzen zu können, muss die Extension LDAP installiert und aktiviert sein.';
+$string['auth_ldap_noextension'] = 'Die PHP-Extension LDAP ist nicht verfügbar. Wenn die LDAP-Authentifizierung genutzt werden soll, muss die PHP-Extension LDAP installiert und aktiviert sein.';
 $string['auth_ldap_objectclass'] = 'Optional: Überschreibt die ObjectClass zur Nutzersuche in LDAP (ldap_user_type). Die Voreinstellung muss normalerweise nicht geändert werden.';
 $string['auth_ldap_objectclass_key'] = 'ObjectClass';
 $string['auth_ldap_opt_deref'] = 'Legt fest wie Aliasbezeichnungen bei der Suche behandelt werden. Wählen Sie einen der folgenden Werte: \'Nein\' (ldap_deref_never) oder \'Ja\' (ldap_deref_always)';
@@ -76,7 +76,7 @@ $string['auth_ldap_passwdexpire_settings'] = 'Einstellungen zum Ablauf von LDAP-
 $string['auth_ldap_preventpassindb'] = 'Wählen Sie \'ja\', um Kennwörter <b>nicht</b> in die Moodle-Datenbank zu übernehmen';
 $string['auth_ldap_preventpassindb_key'] = 'Kennwort-Caching verhindern';
 $string['auth_ldap_rolecontext'] = '{$a->localname}-Kontext';
-$string['auth_ldap_rolecontext_help'] = 'Der LDAP-Kontext wird verwendet, um die <i>{$a->localname}</i> Zuordnung vorzunehmen. Trennen Sie verschiedene Gruppen mit \';\'. Normalerweise sieht das so aus: "cn={$a->shortname},ou=staff,o=myorg".';
+$string['auth_ldap_rolecontext_help'] = 'Der LDAP-Kontext wird verwendet, um die Zuordnung <i>{$a->localname}</i> vorzunehmen. Trennen Sie verschiedene Gruppen mit \';\'. Normalerweise sieht das so aus: "cn={$a->shortname},ou=first-ou-with-role-groups,o=myorg; cn={$a->shortname},ou=second-ou-with-role-groups,o=myorg".';
 $string['auth_ldap_search_sub'] = 'Nutzersuche auch in Subkontexten durchführen';
 $string['auth_ldap_search_sub_key'] = 'Subkontexte';
 $string['auth_ldap_server_settings'] = 'LDAP-Server-Einstellungen';

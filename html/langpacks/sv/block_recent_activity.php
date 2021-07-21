@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'sv', version '3.8'.
+ * Strings for component 'block_recent_activity', language 'sv', version '3.11'.
  *
  * @package     block_recent_activity
  * @category    string
@@ -27,9 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cleanuptask'] = 'Städa upp blocket senaste aktiviteter';
 $string['pluginname'] = 'Senaste aktivitet';
+$string['privacy:metadata'] = 'Blocket Senaste aktivitet innehåller cachelagrad data från andra platser inom Moodle.';
+$string['privacy:metadata:block_recent_activity'] = 'Tillfällig logg över senaste läraraktivitet. Tas bort efter två dagar.';
 $string['privacy:metadata:block_recent_activity:action'] = 'Åtgärd: skapad, uppdaterad eller borttagen.';
 $string['privacy:metadata:block_recent_activity:cmid'] = 'Kursaktiviteter-ID';
 $string['privacy:metadata:block_recent_activity:courseid'] = 'Kurs-ID';
+$string['privacy:metadata:block_recent_activity:modname'] = 'Modultypnamn (för borttagningsåtgärd)';
 $string['privacy:metadata:block_recent_activity:timecreated'] = 'Tidpunkt då åtgärden utfördes';
 $string['privacy:metadata:block_recent_activity:userid'] = 'Användare som utför åtgärden';
 $string['recent_activity:addinstance'] = 'Lägg till blocket Senaste aktivitet';

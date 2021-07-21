@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_coursefiles', language 'ru', version '3.8'.
+ * Strings for component 'repository_coursefiles', language 'ru', version '3.11'.
  *
  * @package     repository_coursefiles
  * @category    string
@@ -31,4 +31,5 @@ $string['emptyfilelist'] = 'Нет файлов для отображения';
 $string['notitle'] = 'без названия';
 $string['pluginname'] = 'Файлы курса (устаревшее хранилище)';
 $string['pluginname_help'] = 'Файлы курса (устаревшее хранилище)';
+$string['privacy:metadata'] = 'Плагин устаревшего хранилища файлов курса не хранит и не передает какие-либо личные данные.';
 $string['remember'] = 'Запомнить меня';

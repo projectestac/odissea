@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'nl', version '3.8'.
+ * Strings for component 'tool_analytics', language 'nl', version '3.11'.
  *
  * @package     tool_analytics
  * @category    string
@@ -42,7 +42,7 @@ $string['classdoesnotexist'] = 'Class {$a} bestaat niet';
 $string['clearmodelpredictions'] = 'Weet je zeker dat je alle "{$a}" voorspellingen wilt wissen?';
 $string['clearpredictions'] = 'Wis voorspellingen';
 $string['clienablemodel'] = 'Je kunt dit model inschakelen door een analyse-interval te kiezen op ID. Merk op dat je die ook later kan inschakelen via de web-interface (\'geen\' om te verlaten).';
-$string['clievaluationandpredictions'] = 'Een geplande taak gaat door de ingeschakelde modellen en maakt voorspellingen. Model-evaluatie via de web-interface is uitgeschakeld. Je kunt toestaan dat deze processen manueel gestart worden via de web-interface door de the <a href="{$a}">\'onlycli\'</a> analyse-instelling uit te schakelen.';
+$string['clievaluationandpredictions'] = 'Een geplande taak gaat door de ingeschakelde modellen en maakt voorspellingen. Model-evaluatie via de web-interface is uitgeschakeld. Je kunt toestaan dat deze processen manueel gestart worden via de web-interface door de <a href="{$a}">\'onlycli\'</a> analyse-instelling uit te schakelen.';
 $string['clievaluationandpredictionsnoadmin'] = 'Een geplande taak gaat door de ingeschakelde modellen en maakt voorspellingen. Model-evaluatie via de web-interface is uitgeschakeld. Dit kan ingeschakeld worden door de site-beheerder.';
 $string['component'] = 'Component';
 $string['componentcore'] = 'Core';

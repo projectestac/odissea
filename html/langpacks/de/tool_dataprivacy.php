@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'de', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'de', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -25,15 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activitiesandresources'] = 'Aktivitäten und Ressourcen';
+$string['activitiesandresources'] = 'Aktivitäten und Materialien';
 $string['addcategory'] = 'Kategorie hinzufügen';
 $string['addnewdefaults'] = 'Neuen Standard für Aktivitäten hinzufügen';
 $string['addpurpose'] = 'Zweck hinzufügen';
 $string['addroleoverride'] = 'Rollenüberschreibung hinzufügen';
 $string['approve'] = 'Bestätigen';
+$string['approvedrequestsubmitted'] = 'Ihre Anfrage wurde eingereicht und wird in Kürze bearbeitet.';
 $string['approverequest'] = 'Anfrage bestätigen';
+$string['automaticdatadeletionapproval'] = 'Automatische Genehmigung zur Datenlöschung';
+$string['automaticdatadeletionapproval_desc'] = 'Wenn diese Option aktiviert ist, werden Datenlöschanforderungen automatisch genehmigt.<br>Beachten Sie, dass die automatische Genehmigung nur für neue Datenlöschanforderungen gilt, wenn diese Einstellung aktiviert ist. Bereits bestehende Datenlöschanforderungen, deren Genehmigung noch aussteht, müssen vom Datenschutzbeauftragten noch manuell genehmigt werden.';
+$string['automaticdataexportapproval'] = 'Automatische Genehmigung zum Datenexport';
+$string['automaticdataexportapproval_desc'] = 'Wenn diese Option aktiviert ist, werden Datenexportanforderungen automatisch genehmigt. <br>Beachten Sie, dass die automatische Genehmigung nur für neue Datenexportanforderungen mit aktivierter Einstellung gilt. Bereits bestehende Datenexportanforderungen, deren Genehmigung noch aussteht, müssen vom Datenschutzbeauftragten noch manuell genehmigt werden.';
 $string['automaticdeletionrequests'] = 'Automatische Datenlöschanforderungen erstellen';
-$string['automaticdeletionrequests_desc'] = 'Wenn aktiviert, wird automatisch eine Abfrage zur Datenlöschung für alle bereits manuell gelöschten Nutzerkonten erzeugt.';
+$string['automaticdeletionrequests_desc'] = 'Wenn diese Option aktiviert ist, wird automatisch eine Abfrage zur Datenlöschung für alle bereits manuell gelöschten Nutzerkonten erzeugt.';
 $string['bulkapproverequests'] = 'Anfragen bestätigen';
 $string['bulkdenyrequests'] = 'Anfragen ablehnen';
 $string['cachedef_contextlevel'] = 'Zwecke und Kategorien (Kontextlevel)';
@@ -60,7 +65,7 @@ $string['confirmcontextdeletion'] = 'Möchten Sie wirklich die ausgewählten Kon
 $string['confirmdenial'] = 'Möchten Sie wirklich diese Datenanfrage ablehnen?';
 $string['confirmrequestresubmit'] = 'Möchten Sie wirklich die aktuelle {$a->type} Abfrage für {$a->username} abbrechen und neu einreichen?';
 $string['contactdataprotectionofficer'] = 'Kontakt für Datenschutzfragen';
-$string['contactdataprotectionofficer_desc'] = 'Das Aktivieren dieser Funktion stellt einen Link für Nutzer/innen zur Verfügung, um sich mit Datenschutzfragen an die Systembetreiber zu wenden. Der Link wird in der Profilseite angezeigt.';
+$string['contactdataprotectionofficer_desc'] = 'Das Aktivieren dieser Funktion stellt einen Link bereit, um sich direkt an die Ansprechperson für Datenschutzfragen wenden zu können. Der Link wird auf der persönlichen Profilseite angezeigt.';
 $string['contactdpoviaprivacypolicy'] = 'Richten Sie bitte alle Fragen zum Datenschutz in der Plattform an unsere Ansprechpersonen.';
 $string['contextlevelname10'] = 'Website';
 $string['contextlevelname30'] = 'Nutzer/innen';
@@ -136,6 +141,7 @@ $string['effectiveretentionperioduser'] = '{$a} (seit dem letzten Zugriff der Pe
 $string['emailsalutation'] = 'Guten Tag {$a},';
 $string['errorcannotrequestdeleteforother'] = 'Sie haben keine Berechtigung, einen Löschauftrag für diese Person zu erstellen.';
 $string['errorcannotrequestdeleteforself'] = 'Sie haben keine Berechtigung, einen Löschauftrag für sich selbst zu erstellen.';
+$string['errorcontactdpodisabled'] = 'Die Kontaktaufnahme zur Ansprechperson für den Datenschutz ist deaktiviert.';
 $string['errorcontexthasunexpiredchildren'] = 'Der Kontext \'{$a}\' hat Unterkontexte, die noch nicht abgelaufen sind. Es sind derzeit keine Kontexte zum Löschen gekennzeichnet.';
 $string['errorinvalidrequestcomments'] = 'Das Kommentarfeld darf nur unformatierten Text enthalten.';
 $string['errorinvalidrequestcreationmethod'] = 'Ungültige Methode zur Anforderungserzeugung';
@@ -147,7 +153,7 @@ $string['errorrequestalreadyexists'] = 'Sie haben bereits eine Anfrage gestellt,
 $string['errorrequestnotfound'] = 'Anfrage nicht gefunden';
 $string['errorrequestnotwaitingforapproval'] = 'Für die Anfrage wird keine Bestätigung erwartet. Entweder ist sie noch nicht fertig oder wurde bereits bearbeitet.';
 $string['errorsendingmessagetodpo'] = 'Beim Versenden einer Mitteilung an {$a} ist ein Fehler aufgetreten.';
-$string['exceptionnotificationbody'] = '<p>Beim Aufruf von <b>{$a->fullmethodname}</b> ist ein Fehler aufgetreten.<br>Das Plugin <b>{$a->component}</b> hat die Verarbeitung der Daten nicht beendet. Unten finden Sie Informationen für den Pluginentwickler.</p><pre>{$a->message}<br>
+$string['exceptionnotificationbody'] = '<p>Beim Aufruf von <b>{$a->fullmethodname}</b> ist ein Fehler aufgetreten.<br>Das Plugin <b>{$a->component}</b> konnte die Verarbeitung der Daten nicht beenden. Folgende Informationen könnten den Entwickler/innen helfen:</p><pre>{$a->message}<br>
 
 {$a->backtrace}</pre>';
 $string['exceptionnotificationsubject'] = 'Fehler beim Verarbeiten personenbezogener Daten';
@@ -194,7 +200,7 @@ $string['gdpr_art_9_2_i_name'] = 'Öffentliche Gesundheit (DSGVO Art 9.2(i))';
 $string['gdpr_art_9_2_j_description'] = 'Die Verarbeitung ist auf der Grundlage des Unionsrechts oder des Rechts eines Mitgliedstaats, das in angemessenem Verhältnis zu dem verfolgten Ziel steht, den Wesensgehalt des Rechts auf Datenschutz wahrt und angemessene und spezifische Maßnahmen zur Wahrung der Grundrechte und Interessen der betroffenen Person vorsieht, für im öffentlichen Interesse liegende Archivzwecke, für wissenschaftliche oder historische Forschungszwecke oder für statistische Zwecke gemäß Artikel 89 Absatz 1 erforderlich';
 $string['gdpr_art_9_2_j_name'] = 'Öffentliches Interesse oder wissenschaftliche, historische oder statistische Zwecke (DSGVO Art 9.2(i))';
 $string['hide'] = 'Alles einklappen';
-$string['httpwarning'] = 'Daten, die von dieser Website heruntergeladen werden, sind evtl. nicht verschlüsselt. Nehmen Sie Kontakt mit dem Administrator auf, um SSL für diese Website zu installieren.';
+$string['httpwarning'] = 'Daten, die von dieser Website heruntergeladen werden, sind evtl. nicht verschlüsselt. Nehmen Sie Kontakt mit dem/der Administrator/in auf, um SSL für diese Website zu installieren.';
 $string['inherit'] = 'Vererben';
 $string['lawfulbases'] = 'Rechtliche Grundlagen';
 $string['lawfulbases_help'] = 'Wählen Sie mindestens eine Option aus, auf deren rechtlicher Grundlage die Verarbeitung der Daten beruht. Details finden Sie unter <a href="https://gdpr-info.eu/art-6-gdpr/" target="_blank">DSGVO Art. 6.1</a>';
@@ -218,11 +224,11 @@ $string['nocategories'] = 'Es gibt derzeit keine Kategorien';
 $string['nocoursestoload'] = 'Keine Aktivtäten';
 $string['nodatarequests'] = 'Es gibt keine Datenanfragen';
 $string['nodatarequestsmatchingfilter'] = 'Es gibt keine Datenschutz-Anfragen, die diesem Filter entsprechen';
-$string['noexpiredcontexts'] = 'In diesem Kontext sind keine Speicherfristen abgelaufen, für die das Löschen bestätigt werden muss.';
+$string['noexpiredcontexts'] = 'Diese Kontextebene enthält keine Daten, für die die Aufbewahrungsfrist abgelaufen ist.';
 $string['nopersonaldatarequests'] = 'Sie haben keine persönlichen Datenanfragen.';
 $string['nopurposes'] = 'Es gibt derzeit keine hinterlegten Zwecke';
 $string['nosubjectaccessrequests'] = 'Es gibt derzeit keine Datenanfragen, die Sie bearbeiten sollten.';
-$string['nosystemdefaults'] = 'Standardeinträge der Zwecke und Kategorien wurden noch nicht hinterlegt';
+$string['nosystemdefaults'] = 'Zweck und Kategorie der Website wurden noch nicht definiert.';
 $string['notset'] = 'Nicht gesetzt (Standardwert verwenden)';
 $string['notyetexpired'] = '{$a} (noch nicht abgelaufen)';
 $string['overrideinstances'] = 'Instanzen auf angepasste Werte zurücksetzen';
@@ -269,7 +275,7 @@ $string['requestorigin'] = 'Site';
 $string['requestsapproved'] = 'Die Anfragen wurden genehmigt';
 $string['requestsdenied'] = 'Die Anfragen wurden abgelehnt';
 $string['requeststatus'] = 'Status';
-$string['requestsubmitted'] = 'Ihre Anfrage wurde an die Ansprechpersonen für Datenschutzfragen weitergeleitet.';
+$string['requestsubmitted'] = 'Ihre Anfrage wurde an die Ansprechperson für Datenschutzfragen weitergeleitet.';
 $string['requesttype'] = 'Typ';
 $string['requesttype_help'] = 'Wählen Sie den Grund für die Kontaktaufnahme mit dem Datenschutzbeauftragten. Beachten Sie, dass das Löschen aller personenbezogenen Daten dazu führt, dass Sie sich nicht mehr auf der Website anmelden können.';
 $string['requesttypedelete'] = 'Alle über mich gespeicherten Daten löschen';
@@ -282,10 +288,10 @@ $string['requesttypeuser'] = '{$a->typename} ({$a->user})';
 $string['requireallenddatesforuserdeletion'] = 'Kurse ohne Kursende als aktiv betrachten';
 $string['requireallenddatesforuserdeletion_desc'] = 'Beim Ablauf werden verschiedene Faktoren berücksichtigt:
 
-* Die letzte Nutzeranmeldung wird mit der Aufbewahrungsfrist für personenbezogene Daten verglichen; und
-* ob die Person aktiv an Kursen teilgenommen hat.
+* Die letztmalige Anmeldung einer Person wird mit der Aufbewahrungsfrist für personenbezogene Daten verglichen; und
+* Die Person ist in Kursen angemeldet und nimmt aktiv teil.
 
-Wenn bei der Prüfung der aktiven Anmeldung der Kurs kein Kursende hat, wird über diese Einstellung bestimmt, ob dieser Kurs als aktiv angesehen wird oder nicht.
+Wenn bei der aktiven Anmeldung der Kurs kein Kursende hat, wird über diese Einstellung bestimmt, ob die Teilnahme im Kurs als aktiv angesehen wird oder nicht.
 
 Wenn der Kurs kein Kursende hat und diese Einstellung aktiviert ist, können Nutzer/innen nicht gelöscht werden.';
 $string['requiresattention'] = 'Erfordert Ihre Aufmerksamkeit';
@@ -313,7 +319,7 @@ $string['sensitivedatareasons'] = 'Gründe für die Verarbeitung besonderer Kate
 $string['sensitivedatareasons_help'] = 'Wählen Sie einen oder mehrere zutreffende Gründe für die Verarbeitung besonderer Kategorien personenbezogener Daten aus. Weitere Informationen <a href="https://gdpr-info.eu/art-9-gdpr/" target="_blank">DSGVO Art. 9.2</a>';
 $string['setdefaults'] = 'Standardeinstellungen';
 $string['showdataretentionsummary'] = 'Fristen zur Datenlöschung anzeigen';
-$string['showdataretentionsummary_desc'] = 'Wenn aktiviert, wird ein Link zur den Fristen zur Datenlöschung im Footer-Bereich der Website und in Nutzerprofilseiten angezeigt.';
+$string['showdataretentionsummary_desc'] = 'Wenn diese Option aktiviert ist, wird ein Link zur den Fristen zur Datenlöschung im Footer-Bereich der Website und in Nutzerprofilseiten angezeigt.';
 $string['statusapproved'] = 'Bestätigt';
 $string['statusawaitingapproval'] = 'Warten auf Bestätigung';
 $string['statuscancelled'] = 'Abgebrochen';
@@ -322,7 +328,6 @@ $string['statusdeleted'] = 'Gelöscht';
 $string['statusdetail'] = 'Status';
 $string['statusexpired'] = 'Abgelaufen';
 $string['statuspending'] = 'Abwartend';
-$string['statuspreprocessing'] = 'Vorverarbeitung';
 $string['statusprocessing'] = 'Verarbeitung';
 $string['statusready'] = 'Download verfügbar';
 $string['statusrejected'] = 'Zurückgewiesen';

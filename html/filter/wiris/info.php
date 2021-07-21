@@ -33,7 +33,6 @@ function wrs_assert($condition, $reporttext, $solutionlink) {
         return $reporttext;
     } else {
         $result = html_writer::tag('span', $reporttext);
-        // $imageurl = "https://www.wiris.com/system/files/attachments/1689/WIRIS_manual_icon_17_17.png";
         $image = html_writer::empty_tag('img', array('src' => 'img/help.gif', 'class' => 'wrs_plugin wrs_filter'));
         $result .= html_writer::link($solutionlink, $image, array('target' => '_blank'));
         return $result;
@@ -118,7 +117,7 @@ function check_if_wiris_button_are_in_toolbar($editor = null) {
         case 'TinyMCE':
             return check_if_wiris_button_are_in_tinymce_toolbar();
         default:
-            throw new Exception($editor . get_string('notsupportededitor', 'filter_wiris', 1));
+            throw new Exception($editor . '&nbsp;' . get_string('notsupportededitor', 'filter_wiris', 1));
     }
 }
 
@@ -219,8 +218,8 @@ $output .= html_writer::start_tag('tr', array('class' => 'wrs_plugin wrs_filter'
 echo $output;
 
 $output = '';
-$testname = get_string('lookingforwirisplugin', 'filter_wiris') . $currenteditordata['plugin_name'];
-$reporttext = get_string('wirispluginfor', 'filter_wiris') . $currenteditordata['plugin_name'] .
+$testname = get_string('lookingforwirisplugin', 'filter_wiris') . '&nbsp;'  . $currenteditordata['plugin_name'];
+$reporttext = get_string('wirispluginfor', 'filter_wiris') . '&nbsp;' . $currenteditordata['plugin_name'] . '&nbsp;' .
                 get_string('mustbeinstalled', 'filter_wiris');
 $solutionlink = 'http://www.wiris.com/plugins/moodle/download';
 $wirisplugin = $currenteditordata['plugin_path'];
@@ -237,7 +236,7 @@ echo $output;
 $output = '';
 $output .= html_writer::start_tag('tr', array('class' => 'wrs_plugin wrs_filter'));
 $wirisplugin = filter_wiris_pluginwrapper::get_wiris_plugin();
-$testname = get_string('wirispluginfilterfor', 'filter_wiris') . $currenteditordata['plugin_name'] . ' versions';
+$testname = get_string('wirispluginfilterfor', 'filter_wiris') . 'nbsp;' . $currenteditordata['plugin_name'] . ' versions';
 
 if (isset($plugin->version)) {
     $filterversion = $plugin->version;
@@ -257,15 +256,15 @@ if (isset($plugin->version)) {
 }
 
 if ($filterversion == $pluginversion) {
-    $reporttext = get_string('wirispluginfilterfor', 'filter_wiris'). $currenteditordata['plugin_name'] .
+    $reporttext = get_string('wirispluginfilterfor', 'filter_wiris') . 'nbsp;' . $currenteditordata['plugin_name'] . '&nbsp;' .
                     get_string('havesameversion', 'filter_wiris');
     $condition = true;
 } else {
-    $reporttext = get_string('wirispluginfilterfor', 'filter_wiris'). $currenteditordata['plugin_name'] .
+    $reporttext = get_string('wirispluginfilterfor', 'filter_wiris') . 'nbsp;' . $currenteditordata['plugin_name'] . '&nbsp;' .
                     get_string('versionsdontmatch', 'filter_wiris');
-    $reporttext .= "<br>" . get_string('wirisfilterversion', 'filter_wiris') . $filterversion;
-    $reporttext .= "<br>" . get_string('wirispluginfor', 'filter_wiris') .  $currenteditordata['plugin_name'] . ' ' .
-                    get_string('version', 'filter_wiris'). ' = ' . $pluginversion;
+    $reporttext .= "<br>" . get_string('wirisfilterversion', 'filter_wiris') . '&nbsp;' . $filterversion;
+    $reporttext .= "<br>" . get_string('wirispluginfor', 'filter_wiris') . '&nbsp;' .  $currenteditordata['plugin_name'] .
+                    '&nbsp;' . get_string('version', 'filter_wiris'). ' = ' . $pluginversion;
     $condition = false;
 }
 
@@ -278,7 +277,7 @@ echo $output;
 $output = '';
 $output .= html_writer::start_tag('tr', array('class' => 'wrs_plugin wrs_filter'));
 
-$testname = get_string('lookingforwirispluginenabled', 'filter_wiris') . $currenteditordata['plugin_name'];
+$testname = get_string('lookingforwirispluginenabled', 'filter_wiris') . '&nbsp;' . $currenteditordata['plugin_name'];
 try {
     $condition = check_if_wiris_button_are_in_toolbar($currenteditordata['plugin_name']);
     $reporttext = ($condition) ? get_string('enabled', 'filter_wiris') : get_string('disabled', 'filter_wiris');

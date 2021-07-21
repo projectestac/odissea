@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_accessibilityhelper', language 'sv', version '3.8'.
+ * Strings for component 'atto_accessibilityhelper', language 'sv', version '3.11'.
  *
  * @package     atto_accessibilityhelper
  * @category    string
@@ -25,9 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['listimages'] = 'Bilder i textredigeraren:';
+$string['listlinks'] = 'Länkar i textredigeraren:';
+$string['liststyles'] = 'Stilar för aktuellt urval:';
 $string['noimages'] = 'Inga bilder';
 $string['nolinks'] = 'Inga länkar';
 $string['nostyles'] = 'Inga stilar';
 $string['pluginname'] = 'Hjälpmodul för skärmläsare';
+$string['privacy:metadata'] = 'Pluginmodulen atto_accessibilityhelper lagrar ingen personinformation.';
 $string['selectimage'] = 'Välj bild';
 $string['selectlink'] = 'Välj länk';

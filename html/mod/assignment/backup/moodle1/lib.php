@@ -110,12 +110,6 @@ class moodle1_mod_assignment_handler extends moodle1_mod_handler {
 
         foreach ($data as $field => $value) {
             if ($field <> 'id') {
-                //XTEC ************ AFEGIT - To change default introformat (from AutoMoodle to HTML)
-                //2012.07.03  @sarjona
-                if ($field == 'introformat') {
-                    $value = FORMAT_HTML;
-                }
-                //************ FI    
                 $this->xmlwriter->full_tag($field, $value);
             }
         }

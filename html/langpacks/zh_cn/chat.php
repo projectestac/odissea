@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'zh_cn', version '3.8'.
+ * Strings for component 'chat', language 'zh_cn', version '3.11'.
  *
  * @package     chat
  * @category    string
@@ -157,7 +157,7 @@ $string['serverip'] = '服务器 IP';
 $string['servermax'] = '最大用户数';
 $string['serverport'] = '服务器端口';
 $string['sessions'] = '聊天会话';
-$string['sessionstart'] = '下一个聊天会话将从 {$a->date}开始，(距今{$a->fromnow})';
+$string['sessionstart'] = '下一个聊天会话将从{$a->date}开始，(离现在{$a->fromnow})';
 $string['strftimemessage'] = '';
 $string['studentseereports'] = '每个人都可以查看过去的会话';
 $string['studentseereports_help'] = '如果设置为否，只有具有 mod/chat:readlog 权限的用户才能看到聊天日志';

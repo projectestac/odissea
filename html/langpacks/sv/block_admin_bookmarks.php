@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_admin_bookmarks', language 'sv', version '3.8'.
+ * Strings for component 'block_admin_bookmarks', language 'sv', version '3.11'.
  *
  * @package     block_admin_bookmarks
  * @category    string
@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['admin_bookmarks:addinstance'] = 'Lägg till ett nytt block för admins bokmärken';
 $string['admin_bookmarks:myaddinstance'] = 'Lägg till ett nytt block för admins bokmärken på Mitt Moodle';
-$string['pluginname'] = 'Administratörens bokmärken';
+$string['pluginname'] = 'Administratörsbokmärken';
 $string['privacy:metadata'] = 'Admin bokmärken-blocket visar bara data som lagras på andra platser.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'de', version '3.8'.
+ * Strings for component 'choice', language 'de', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -32,7 +32,7 @@ $string['answered'] = 'Beantwortet';
 $string['atleastoneoption'] = 'Sie müssen mindestens eine mögliche Abstimmoption angeben.';
 $string['calendarend'] = '{$a} endet';
 $string['calendarstart'] = '{$a} beginnt';
-$string['cannotsubmit'] = 'Ihre Auswahl konnte nicht gespeichert werden. Versuchen Sie es bitte noch einmal.';
+$string['cannotsubmit'] = 'Ihre Auswahl wurde nicht gespeichert. Versuchen Sie es noch einmal.';
 $string['choice'] = 'Abstimmung';
 $string['choice:addinstance'] = 'Neue Abstimmung hinzufügen';
 $string['choice:choose'] = 'Abstimmung vornehmen';
@@ -47,7 +47,7 @@ $string['choicefull'] = 'Eine oder mehrere von Ihnen gewählte Optionen sind ber
 $string['choicename'] = 'Abstimmungsname';
 $string['choiceopen'] = 'Antworten zulassen ab';
 $string['choiceoptions'] = 'Abstimmungsoptionen';
-$string['choiceoptions_help'] = 'Tragen Sie die Abstimmoptionen ein, zwischen denen sich die Teilnehmer/innen entscheiden sollen.
+$string['choiceoptions_help'] = 'Tragen Sie die Abstimmungsoptionen ein, zwischen denen sich die Teilnehmer/innen entscheiden sollen.
 
 Sie können jedes der vorhandenen Felder ausfüllen, Sie dürfen aber auch nicht benötigte Felder leer lassen, die dann in der Abstimmung nicht angezeigt werden. Weitere Optionsfelder erhalten Sie über den Knopf "Optionen hinzufügen".';
 $string['choicesaved'] = 'Ihre Auswahl wurde gespeichert';
@@ -55,7 +55,8 @@ $string['choicetext'] = 'Abstimmungstext';
 $string['chooseaction'] = 'Aktion auswählen...';
 $string['chooseoption'] = 'Auswahl: {$a}';
 $string['closebeforeopen'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
-$string['completionsubmit'] = 'Als abgeschlossen anzeigen, wenn die Person eine Option gewählt hat.';
+$string['completiondetail:submit'] = 'Eine Auswahl treffen';
+$string['completionsubmit'] = 'Als abgeschlossen anzeigen, wenn die Person eine Auswahl getroffen hat.';
 $string['description'] = 'Beschreibung';
 $string['deselectalloption'] = 'Alles abwählen "{$a}"';
 $string['displayhorizontal'] = 'Horizontal anzeigen';
@@ -80,6 +81,7 @@ $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozi
 $string['indicator:socialbreadthdef'] = 'Abstimmung sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Abstimmungsaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein, Teilnahme mit anderen).';
 $string['limit'] = 'Obergrenze';
+$string['limita'] = 'Obergrenze: {$a}';
 $string['limitanswers'] = 'Anzahl der Antworten bei den Abstimmungsoptionen beschränken';
 $string['limitanswers_help'] = 'Diese Option setzt die maximale Anzahl von möglichen Stimmabgaben für die betreffende Abstimmoption. Sobald diese Obergrenze erreicht ist, kann sich niemand mehr für diese Abstimmoption entscheiden.
 
@@ -115,7 +117,8 @@ $string['options'] = 'Optionen';
 $string['page-mod-choice-x'] = 'Jede Abstimmungsseite';
 $string['pluginadministration'] = 'Abstimmungs-Administration';
 $string['pluginname'] = 'Abstimmung';
-$string['previewonly'] = 'Diese Vorschau zeigt die verfügbaren Optionen für diese Aktivität. Sie können Ihre Wahl nicht vor {$a} einreichen.';
+$string['previewing'] = 'Diese Vorschau zeigt die verfügbaren Optionen für die Aktivität. Sie können Ihre Auswahl einreichen, sobald die Aktivität öffnet.';
+$string['previewonly'] = 'Diese Vorschau zeigt die möglichen Optionen für diese Aktivität. Sie können Ihre Wahl nicht vor {$a} einreichen.';
 $string['privacy'] = 'Ergebnisse anonym darstellen';
 $string['privacy:metadata:choice_answers'] = 'Informationen über die von der Person ausgewählte/n Antwort/en für eine bestimmte Abstimmung';
 $string['privacy:metadata:choice_answers:choiceid'] = 'ID der Abstimmung';
@@ -127,9 +130,9 @@ $string['publishafteranswer'] = 'Nach eigener Stimmabgabe';
 $string['publishafterclose'] = 'Nach Abstimmungsende';
 $string['publishalways'] = 'Ergebnisse immer zeigen';
 $string['publishanonymous'] = 'Ergebnisse ohne Namen';
-$string['publishinfoanonafter'] = 'Ergebnisse werden ohne Namensnennung nach Ihrer Antwort veröffentlicht.';
+$string['publishinfoanonafter'] = 'Ergebnisse werden nach Ihrer Antwort ohne Namensnennung veröffentlicht.';
 $string['publishinfoanonclose'] = 'Ergebnisse werden ohne Namensnennung nach Abschluss der Aktivität veröffentlicht.';
-$string['publishinfofullafter'] = 'Ergebnisse werden vollständig mit Namensnennung nach Ihrer Antwort veröffentlicht.';
+$string['publishinfofullafter'] = 'Ergebnisse werden nach Ihrer Antwort vollständig mit Namensnennung veröffentlicht.';
 $string['publishinfofullclose'] = 'Ergebnisse werden nach Abschluss der Aktivität vollständig mit Namensnennung veröffentlicht.';
 $string['publishinfonever'] = 'Die Ergebnisse werden nach Ihrer Antwort nicht veröffentlicht.';
 $string['publishnames'] = 'Ergebnisse mit Namen';
@@ -137,12 +140,15 @@ $string['publishnot'] = 'Keine Ergebnisse veröffentlichen';
 $string['removemychoice'] = 'Meine Auswahl löschen';
 $string['removeresponses'] = 'Alle Stimmabgaben löschen';
 $string['responses'] = 'Antworten';
+$string['responsesa'] = 'Antworten: {$a}';
 $string['responsesresultgraphheader'] = 'Grafische Darstellung';
 $string['responsesto'] = 'Antworten zu {$a}';
 $string['results'] = 'Ergebnisse';
 $string['savemychoice'] = 'Meine Auswahl speichern';
-$string['search:activity'] = 'Abstimmung - Beschreibung';
+$string['search:activity'] = 'Abstimmung - Aktivitätsinfo';
 $string['selectalloption'] = 'Alles auswählen "{$a}"';
+$string['showavailable'] = 'Obergrenze anzeigen';
+$string['showavailable_help'] = 'Den Teilnehmer/innen wird für jede Option die bisherige Anzahl der Anwahlen und die Obergrenze angezeigt.';
 $string['showpreview'] = 'Vorschau anzeigen';
 $string['showpreview_help'] = 'Diese Option legt fest, ob die verfügbaren Wahlmöglichkeiten bereits vor dem Abstimmungsbeginn angezeigt werden.';
 $string['showunanswered'] = 'Teilnehmer/innen ohne Antwort anzeigen';

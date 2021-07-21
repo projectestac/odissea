@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'el', version '3.8'.
+ * Strings for component 'message', language 'el', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptandaddcontact'] = 'Αποδοχή και προσθήκη στις επαφές';
 $string['addcontact'] = 'Προσθήκη επαφής';
 $string['addcontactconfirm'] = 'Είστε βέβαιοι ότι θέλετε να προσθέσετε τον/την {$a} στις επαφές σας;';
-$string['addtofavourites'] = 'Επισήμανση συνομιλίας με αστερίσκο';
+$string['addtofavourites'] = 'Επισήμανση με αστερίσκο';
 $string['addtoyourcontacts'] = 'Προσθήκη στις επαφές';
 $string['addtoyourcontactsandmessage'] = 'Προσθήκη στις επαφές και στο μήνυμα';
 $string['ago'] = 'πριν {$a}';
@@ -67,7 +67,7 @@ $string['deleteselectedmessagesconfirm'] = 'Είστε βέβαιοι ότι θ�
 $string['deleteselectedmessagesconfirmselfconversation'] = 'Σίγουρα θέλετε να διαγράψετε τα επιλεγμένα προσωπικά μηνύματα;';
 $string['disableall'] = 'Απενεργοποίηση ειδοποιήσεων';
 $string['disabled'] = 'Η ανταλλαγή μηνυμάτων έχει απενεργοποιηθεί σε αυτό τον ιστότοπο';
-$string['disallowed'] = 'Απογορεύεται';
+$string['disallowed'] = 'Απαγορεύεται';
 $string['editmessages'] = 'Επεξεργασία μηνυμάτων';
 $string['emailtagline'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που σας στάλθηκε στον ιστότοπο «{$a->sitename}». Μπορείτε να απαντήσετε στη διεύθυνση {$a->url}.';
 $string['enabled'] = 'Ενεργοποιημένο';
@@ -77,9 +77,7 @@ $string['errormessagetoolong'] = 'Το μήνυμα είναι μεγαλύτε�
 $string['errortranslatingdefault'] = 'Σφάλμα μετάφρασης της προεπιλεγμένης ρύθμισης που παρέχεται από το πρόσθετο. Αντ\' αυτού γίνεται χρήση της προεπιλογής του συστήματος.';
 $string['eventgroupmessagesent'] = 'Το ομαδικό μήνυμα στάλθηκε';
 $string['eventmessagecontactadded'] = 'Η επαφή μηνυμάτων προστέθηκε';
-$string['eventmessagecontactblocked'] = 'Η επαφή μηνυμάτων αποκλείστηκε';
 $string['eventmessagecontactremoved'] = 'Η επαφή μηνυμάτων αφαιρέθηκε';
-$string['eventmessagecontactunblocked'] = 'Ο αποκλεισμός επαφής μηνυμάτων ακυρώθηκε';
 $string['eventmessagedeleted'] = 'Το μήνυμα διαγράφηκε';
 $string['eventmessagesent'] = 'Το μήνυμα στάλθηκε';
 $string['eventmessageuserblocked'] = 'Ο χρήστης αποκλείστηκε';
@@ -106,8 +104,10 @@ $string['loggedoff_help'] = 'Προσαρμόστε το πώς επιθυμεί
 $string['loggedoffdescription'] = 'Όταν δεν έχετε συνδεθεί στο Moodle';
 $string['managemessageoutputs'] = 'Προεπιλεγμένες προτιμήσεις ειδοποιήσεων';
 $string['message'] = 'Μήνυμα';
+$string['messagecontactrequest'] = 'Ο/Η χρήστης {$a->user} ζητά να προστεθεί ως επαφή. Επισκεφτείτε τη σελίδα <a href="{$a->url}">αιτήματα επικοινωνίας</a> για να απαντήσετε στο αίτημα';
 $string['messagecontactrequestsnotification'] = 'Ο/Η {$a} ζητά να προστεθεί ως επαφή';
 $string['messagecontactrequestsnotificationsubject'] = 'Αίτημα επαφής από τον/την {$a}';
+$string['messagecontactrequestsubject'] = '{$a->sitename}: Αίτημα επικοινωνίας από {$a->user}';
 $string['messagecontentaudio'] = 'Ήχος';
 $string['messagecontentimage'] = 'Εικόνα';
 $string['messagecontentmultimediageneral'] = 'Άλλο πολυμέσο';
@@ -123,8 +123,8 @@ $string['messageoutputs'] = 'Πρόσθετα ειδοποιήσεων';
 $string['messagepreferences'] = 'Προτιμήσεις μηνυμάτων';
 $string['messages'] = 'Μηνύματα';
 $string['messagesselected:'] = 'Επιλεγμένα μηνύματα:';
+$string['messagetextrequired'] = 'Παρακαλούμε, εισαγάγετε κείμενο μηνύματος';
 $string['messagingdatahasnotbeenmigrated'] = 'Τα μηνύματά σας είναι προσωρινά μη διαθέσιμα λόγω αναβαθμίσεων στην υποδομή ανταλλαγής μηνυμάτων. Παρακαλούμε, περιμένετε να μετεγκατασταθούν (μεταφορά/μετατροπή).';
-$string['messagingdisabled'] = 'Η ανταλλαγή μηνυμάτων έχει απενεργοποιηθεί σε αυτό τον ιστότοπο. Aντί αυτών θα σταλούν μηνύματα ηλε.ταχυδρομείου';
 $string['muteconversation'] = 'Σίγαση';
 $string['mutedconversation'] = 'Συζήτηση σε σίγαση';
 $string['newmessage'] = 'Νέο μήνυμα';
@@ -161,6 +161,7 @@ $string['outputdoesnotexist'] = 'Η έξοδος μηνύματος δεν υπ�
 $string['outputenabled'] = 'Ενεργοποιημένη έξοδος';
 $string['outputnotavailable'] = 'Μη διαθέσιμη';
 $string['outputnotconfigured'] = 'Δεν έχει ρυθμιστεί';
+$string['page-message-x'] = 'Οποιεσδήποτε σελίδες μηνύματος/-ων';
 $string['participants'] = 'Συμμετέχοντες';
 $string['pendingcontactrequests'] = 'Υπάρχουν {$a} αιτήματα επικοινωνίας σε εκκρεμότητα';
 $string['permitted'] = 'Επιτρέπεται';
@@ -258,7 +259,7 @@ $string['shownotificationwindowwithcount'] = 'Εμφάνιση παραθύρο�
 $string['togglemessagemenu'] = 'Συρτάρι μηνυμάτων: Άνοιγμα/κλείσιμο';
 $string['togglenotificationmenu'] = 'Εναλλαγή εμφάνισης/απόκρυψης του μενού ειδοποιήσεων';
 $string['totalconversations'] = '{$a} συνολικές συζητήσεις';
-$string['touserdoesntexist'] = 'Δεν μπορείτε να αποστείλετε μήνυμα σε ένα αναγνωριστικό χρήστη ({$a}) που δεν υπάρχει';
+$string['touserdoesntexist'] = 'Δεν μπορείτε να αποστείλετε μήνυμα σε ένα αναγνωριστικό χρήστη ({$a}) που δεν υπάρχει.';
 $string['unabletomessage'] = 'Δεν μπορείτε να στείλετε μήνυμα σε αυτόν τον χρήστη';
 $string['unblock'] = 'Ξεκλείδωμα';
 $string['unblockcontact'] = 'Ξεμπλόκαρε την επαφή';
@@ -274,8 +275,6 @@ $string['unreadnotification'] = 'Αδιάβαστη ειδοποίηση: {$a}';
 $string['unreadnotifications'] = 'Υπάρχουν {$a} μη αναγνωσμένες ειδοποιήσεις';
 $string['useentertosend'] = 'Χρήση του πλήκτρου Enter για τέλος εισόδου & αποστολή';
 $string['usercantbemessaged'] = 'Δεν μπορείτε να στείλετε μηνύματα στον χρήστη {$a} λόγω των προτιμήσεων μηνυμάτων του. Προσπαθήστε να τον προσθέσετε ως επαφή.';
-$string['userisblockingyou'] = 'Αυτός ο χρήστης έχει μπλοκάρει την αποδοχή μηνυμάτων από σας.';
-$string['userisblockingyounoncontact'] = 'Ο/Η χρήστης {$a} δέχεται μηνύματα μόνο από όσους βρίσκονται στις επαφές του/της.';
 $string['userwouldliketocontactyou'] = 'Ο/Η {$a} θα ήθελε να επικοινωνήσει μαζί σας';
 $string['viewfullnotification'] = 'Ολόκληρη η ειδοποίηση';
 $string['viewmessageswith'] = 'Εμφάνιση μηνυμάτων με {$a}';

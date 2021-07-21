@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'it', version '3.8'.
+ * Strings for component 'assign', language 'it', version '3.11'.
  *
  * @package     assign
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:submissionsdue'] = 'Data limite';
+$string['activitydate:submissionsopen'] = 'Apre';
+$string['activitydate:submissionsopened'] = 'Aperto';
 $string['activityoverview'] = 'Ci sono compiti che richiedono la tua attenzione';
 $string['addattempt'] = 'Consenti tentativo ulteriore';
 $string['addnewattempt'] = 'Aggiungi tentativo';
@@ -61,7 +64,7 @@ $string['assign:reviewgrades'] = 'Rivedere valutazioni';
 $string['assign:showhiddengrader'] = 'Visualizzare identità di un valutatore nascosto';
 $string['assign:submit'] = 'Consegnare compito';
 $string['assign:view'] = 'Visualizzare compito';
-$string['assign:viewblinddetails'] = 'Visualizzare l\'identità dello studente durante la valutazione cieca';
+$string['assign:viewblinddetails'] = 'Visualizzare l\'identità dello studente quando le consegne anonime sono abilitate';
 $string['assign:viewgrades'] = 'Visualizza valutazioni';
 $string['assignfeedback'] = 'Plugin commento';
 $string['assignfeedbackpluginname'] = 'Plugin commento';
@@ -82,7 +85,7 @@ $string['assignsubmissionpluginname'] = 'Plugin consegna';
 $string['attemptheading'] = 'Tentativo {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Tentativo precedente';
 $string['attemptnumber'] = 'Numero tentativo';
-$string['attemptreopenmethod'] = 'Riapertura tentativo';
+$string['attemptreopenmethod'] = 'Tentativi aggiuntivi';
 $string['attemptreopenmethod_help'] = 'Imposta la modalità di riapertura dei tentativi di consegna. Opzioni disponibili:
 
 * Mai - Il tentativo di consegna non potrà essere riaperto.
@@ -109,9 +112,9 @@ $string['batchoperationsdescription'] = 'Per gli utenti selezionati...';
 $string['batchoperationunlock'] = 'sblocca consegne';
 $string['batchsetallocatedmarker'] = 'Valutatori assegnati per {$a} utenti selezionati.';
 $string['batchsetmarkingworkflowstateforusers'] = 'Stato del flusso di lavoro della valutazione impostato per {$a} utenti selezionati.';
-$string['blindmarking'] = 'Valutazione cieca';
-$string['blindmarking_help'] = 'La valutazione cieca nasconde l\'identità degli studenti ai valutatori. L\'impostazione Valutazione cieca sarà bloccata non appena sarà presente una consegna o una valutazione del compito.';
-$string['blindmarkingenabledwarning'] = 'In questa attività è attiva la valutazione cieca.';
+$string['blindmarking'] = 'Consegne anonime';
+$string['blindmarking_help'] = 'La consegna anonima nasconde l\'identità degli studenti ai valutatori. L\'impostazione di consegna anonima sarà bloccata non appena sarà presente una consegna o una valutazione del compito.';
+$string['blindmarkingenabledwarning'] = 'In questa attività è abilitata la consegna anonima.';
 $string['calendardue'] = '{$a} è in scadenza';
 $string['calendargradingdue'] = '{$a} deve essere valutato';
 $string['changefilters'] = 'Modifica filtri';
@@ -123,6 +126,7 @@ $string['clickexpandreviewpanel'] = 'Click per ingrandire il pannello di revisio
 $string['collapsegradepanel'] = 'Click per ridurre il pannello di revisione';
 $string['collapsereviewpanel'] = 'Riduci il pannello di revisione';
 $string['comment'] = 'Commento';
+$string['completiondetail:submit'] = 'Consegnare';
 $string['completionsubmit'] = 'Lo studente deve consegnare per completare l\'attività';
 $string['configshowrecentsubmissions'] = 'Consente a tutti di visualizzare la notifica delle consegne nei report dell\'attività recente.';
 $string['confirmbatchgradingoperation'] = 'Sei sicuro di eseguire {$a->operation} per {$a->count} studenti?';
@@ -189,6 +193,7 @@ $string['eventmarkerupdated'] = 'Aggiornato valutatore assegnato';
 $string['eventoverridecreated'] = 'Creata personalizzazione del compito';
 $string['eventoverridedeleted'] = 'Eliminata personalizzazione del compito';
 $string['eventoverrideupdated'] = 'Aggiornata personalizzazione del compito';
+$string['eventremovesubmissionformviewed'] = 'Visualizzata conferma rimozione consegna.';
 $string['eventrevealidentitiesconfirmationpageviewed'] = 'Visualizzata pagina conferma rivelazione identità';
 $string['eventstatementaccepted'] = 'Accettata dall\'utente la dichiarazione sulla consegna';
 $string['eventsubmissionconfirmationformviewed'] = 'Visualizzata scheda di conferma consegna';
@@ -233,6 +238,7 @@ $string['feedbacksettings'] = 'Impostazioni commento';
 $string['feedbacktypes'] = 'Tipi di feedback';
 $string['filesubmissions'] = 'File consegnati';
 $string['filter'] = 'Filtro';
+$string['filterdraft'] = 'Bozza';
 $string['filtergrantedextension'] = 'Proroghe concesse';
 $string['filternone'] = 'Senza filtro';
 $string['filternotsubmitted'] = 'Non consegnato';
@@ -405,7 +411,7 @@ $string['preventsubmissions'] = 'Impedisce qualsiasi ulteriore modifica da parte
 $string['preventsubmissionsshort'] = 'Blocca modifiche della consegna';
 $string['previous'] = 'Precedente';
 $string['privacy:attemptpath'] = 'tentativo {$a}';
-$string['privacy:blindmarkingidentifier'] = 'Identificativo utilizzato per la valutazione cieca';
+$string['privacy:blindmarkingidentifier'] = 'Identificativo utilizzato nella consegna anonima';
 $string['privacy:gradepath'] = 'valutazione';
 $string['privacy:metadata:assigndownloadasfolders'] = 'Preferenza utente per lo scaricamento suddiviso in cartelle delle consegne contenenti più file';
 $string['privacy:metadata:assignfeedbackpluginsummary'] = 'Feedback sui compiti.';
@@ -420,7 +426,7 @@ $string['privacy:metadata:assignquickgrading'] = 'Preferenza di utilizzo della v
 $string['privacy:metadata:assignsubmissiondetail'] = 'Informazioni sulla consegna dell\'utente';
 $string['privacy:metadata:assignsubmissionpluginsummary'] = 'Dati della consegna del compito.';
 $string['privacy:metadata:assignuserflags'] = 'Meta dati dell\'utente, ad esempio le proroghe.';
-$string['privacy:metadata:assignusermapping'] = 'Mappatura per la valutazione cieca.';
+$string['privacy:metadata:assignusermapping'] = 'Mappatura della consegna anonima';
 $string['privacy:metadata:assignworkflowfilter'] = 'Filtro basato sulla fase del flusso di lavoro.';
 $string['privacy:metadata:grade'] = 'Valutazione numerico della consegna. Può dipendere da scale/metodi di valutazione avanzata, ecc. ma viene sempre convertito in un numero in virgola mobile.';
 $string['privacy:metadata:grader'] = 'ID utente del valutatore';

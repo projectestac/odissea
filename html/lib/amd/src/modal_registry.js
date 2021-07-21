@@ -18,11 +18,10 @@
  *
  * @module     core/modal_registry
  * @class      modal_registry
- * @package    core
  * @copyright  2016 Ryan Wyllie <ryan@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-define(['core/notification'], function(Notification) {
+define(['core/notification', 'core/prefetch'], function(Notification, Prefetch) {
 
     // A singleton registry for all modules to access. Allows types to be
     // added at runtime.
@@ -64,6 +63,9 @@ define(['core/notification'], function(Notification) {
             module: module,
             template: template,
         };
+
+        // Prefetch the template.
+        Prefetch.prefetchTemplate(template);
     };
 
     return {

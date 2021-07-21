@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'zh_cn', version '3.8'.
+ * Strings for component 'tool_usertours', language 'zh_cn', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -34,7 +34,9 @@ $string['description'] = '描述';
 $string['enabled'] = '启用';
 $string['endtour'] = '结束教程';
 $string['name'] = '名称';
+$string['nextstep'] = '下一个';
 $string['pluginname'] = '用户导航';
+$string['previousstep'] = '上一个';
 $string['resettouronpage'] = '在这个页面上重新开始用户导航';
 $string['skip'] = '跳过';
 $string['target'] = '目标';

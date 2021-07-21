@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ja', version '3.8'.
+ * Strings for component 'wiki', language 'ja', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -291,7 +291,7 @@ $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = '新しいWikiを追加する';
 $string['wiki:createpage'] = '新しいWIkiページを作成する';
 $string['wiki:editcomment'] = 'コメントをページに追加する';
-$string['wiki:editpage'] = 'Wikiページを保存する';
+$string['wiki:editpage'] = 'Wikiページを編集する';
 $string['wiki:managecomment'] = 'Wikiコメントを管理する';
 $string['wiki:managefiles'] = 'Wikiファイルを管理する';
 $string['wiki:managewiki'] = 'Wiki設定を管理する';

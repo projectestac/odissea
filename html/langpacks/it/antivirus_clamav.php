@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'it', version '3.8'.
+ * Strings for component 'antivirus_clamav', language 'it', version '3.11'.
  *
  * @package     antivirus_clamav
  * @category    string
@@ -25,11 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['antivirusfailed'] = 'Si è verificato un problema con la scansione antivirus. Il file {$a->item} non è stato caricato. Per favore riprova più tardi,';
 $string['clamfailed'] = 'Clam AV ha incontrato problemi durante l\'elaborazione. Messaggio d\'errore: {$a}. Di seguito l\'output di Clam:';
 $string['clamfailureonupload'] = 'In caso di errore di ClamAV';
 $string['configclamactlikevirus'] = 'Considera infetto il file';
 $string['configclamdonothing'] = 'Considera non infetto il file';
-$string['configclamfailureonupload'] = 'E\' possibile definire il comportamento quando Clam è impostato per controllare i file caricati ma non fosse configurato correttamente oppure non dovesse funzionare. Selezionando "Considera infetto il file", i file saranno spostati nella cartella di quarantena o eliminati. Selezionando "Considera non infetto il file", i file saranno salvati normalmente. In entrambi i casi gli amministratori saranno avvertiti del problema incontrato da Clam. ATTENZIONE: se hai selezionato "Considera infetto il file" e Clam non dovesse funzionare (di solito perché è errato il percorso dell\'eseguibile), TUTTI i file caricati saranno spostati nella cartella di quarantena oppure eliminati.';
+$string['configclamfailureonupload'] = 'Selezionando \'Considera non infetto il file\', i file saranno salvati nella cartella di destinazione.
+Selezionando \'Rifiuta caricamento, chiedi di riprovare\', l\'utente riceverà una notifica dove si chiede di riprovare il caricamento. Selezionando "Considera infetto il file", i file saranno spostati nella cartella di quarantena o eliminati.
+Attenzione: selezionando "Considera infetto il file", se Clam non dovesse funzionare (di solito perché è errato il percorso dell\'eseguibile), allora TUTTI i file caricati saranno spostati nella cartella di quarantena oppure eliminati.';
+$string['configclamtryagain'] = 'Rifiuta caricamento, chiedi di riprovare';
 $string['errorcantopensocket'] = 'La connessione al domain socket Unix ha provocato un errore: {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV non risponde: verificare lo stato del demone.';
 $string['errornounixsocketssupported'] = 'Il trasporto domain socket Unix non è supportato su questo sistema. Per favore utilizza l\'opzione Linea di comando.';
@@ -44,5 +48,14 @@ $string['quarantinedir'] = 'Cartella di quarantena';
 $string['runningmethod'] = 'Metodo di elaborazione';
 $string['runningmethodcommandline'] = 'Linea di comando';
 $string['runningmethoddesc'] = 'Il metodo di elaborazione per ClamAV. La linea di comando è il default, tuttavia sui sistemi Unix è possibile ottenere prestazioni migliori utilizzando il domain socket Unix.';
+$string['runningmethodtcpsocket'] = 'Socket TCP';
 $string['runningmethodunixsocket'] = 'Domain socket Unix';
+$string['tcpsockethost'] = 'Nome host del socket TCP';
+$string['tcpsockethostdesc'] = 'Nome di dominio del server ClamAV';
+$string['tcpsocketport'] = 'Porta del socket TCP';
+$string['tcpsocketportdesc'] = 'La porta da utilizzare per collegarsi a ClamAV';
+$string['tries'] = 'Tentativi di scansione';
+$string['tries_desc'] = 'Numero di tentativi a disposizione di Clam per riprovare la scansione in caso di errori';
+$string['tries_notice'] = 'Clamav ha tentato la scansione per {$a->tries} volte.
+{$a->notice}';
 $string['unknownerror'] = 'Clam ha segnalato un errore sconosciuto.';

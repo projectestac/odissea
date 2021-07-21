@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_boxnet', language 'ru', version '3.8'.
+ * Strings for component 'repository_boxnet', language 'ru', version '3.11'.
  *
  * @package     repository_boxnet
  * @category    string
@@ -38,6 +38,8 @@ $string['nullfilelist'] = 'В этом хранилище нет файлов';
 $string['password'] = 'Пароль';
 $string['pluginname'] = 'Box';
 $string['pluginname_help'] = 'Хранилище Box';
+$string['privacy:metadata:repository_boxnet'] = 'Плагин хранилища Box не хранит никаких личных данных, но передает данные пользователя из Moodle в отдаленную систему.';
+$string['privacy:metadata:repository_boxnet:query'] = 'Текстовый поисковый запрос пользователя хранилища Box.';
 $string['saved'] = 'Данные Box сохранены';
 $string['shareurl'] = 'Публичная ссылка';
 $string['username'] = 'Логин Box';

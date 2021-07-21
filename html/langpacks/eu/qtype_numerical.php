@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'eu', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'eu', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -68,7 +68,14 @@ $string['pluginname_help'] = 'Ikaslearen ikuspuntutik, zenbakizko galdera bat er
 $string['pluginnameadding'] = 'Zenbakizko galdera bat gehitzen';
 $string['pluginnameediting'] = 'Zenbakizko galdera editatzen';
 $string['pluginnamesummary'] = 'Zenbakizko erantzun bat behar du, gehienetan unitatetan, eta erantzun-tarte batekin alderatuta kalifikatzen da, malgutasun-tartearekin.';
-$string['privacy:metadata'] = 'Zenbakizkoa galdera mota pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Zenbakizkoa galdera mota pluginak egileari aukera lehenetsiak erabiltzaile hobespen gisa gordetzea baimentzen dio.';
+$string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
+$string['privacy:preference:multichoicedisplay'] = 'Unitateak testu-eremu gisa, aukera anitz gisa edo zabaltzen den menu gisa erakutsiko den.';
+$string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
+$string['privacy:preference:unitgradingtypes'] = 'Unitatearen penalizazioa erantzunaren kalifikazioaren zatiki gisa (0-1) edo galderaren kalifikazioaren zatiki gisa aplikatuko den.';
+$string['privacy:preference:unitpenalty'] = 'Erantzunaren edo galderen zein zatiki aplikatuko da?';
+$string['privacy:preference:unitrole'] = 'Unitatea beharrezkoa, aukerazkoa edo desgaituta egongo den.';
+$string['privacy:preference:unitsleft'] = 'Unitatea ezkerrean (esaterako $ edo £) edo eskuinean (esaterako kg. edo km.) erakutsiko den.';
 $string['relative'] = 'Erlatiboa';
 $string['rightexample'] = 'eskuinean, adibidez 1.00cm edo 1.00km';
 $string['selectunit'] = 'Aukeratu unitate bat';
@@ -92,7 +99,7 @@ $string['unitoptional'] = 'Aukerako unitatea';
 $string['unitoptional_help'] = '* Unitatearen eremua hutsik ez badago, erantzuna unitate hori erabilita kalifikatuko da.
 
 * Unitatea gaizki idatzita badago edo ezezaguna bada, erantzuna baliogabekotzat hartuko da.';
-$string['unitpenalty'] = 'Penalizazio-unitatea';
+$string['unitpenalty'] = 'Unitatearen penalizazioa';
 $string['unitpenalty_help'] = 'Penalizazioa aplikatuko da
 
 * unitatearen eremuan unitate izen egokia sartzen ez bada, edo

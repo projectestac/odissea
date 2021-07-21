@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'fr', version '3.8'.
+ * Strings for component 'workshop', language 'fr', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'La phase d\'évaluation ferme :';
+$string['activitydate:assessmentsclosed'] = 'Phase d\'évaluation fermée :';
+$string['activitydate:assessmentsopen'] = 'La phase d\'évaluation ouvre :';
+$string['activitydate:assessmentsopened'] = 'Phase d\'évaluation ouverte :';
+$string['activitydate:submissionsclose'] = 'La phase de remise ferme :';
+$string['activitydate:submissionsclosed'] = 'Phase de remise fermée :';
+$string['activitydate:submissionsopen'] = 'La phase de remise ouvre :';
+$string['activitydate:submissionsopened'] = 'Phase de remise ouverte :';
 $string['aggregategrades'] = 'Recalculer les notes';
 $string['aggregation'] = 'Combinaison des notes';
 $string['allocate'] = 'Attribuer les travaux';
@@ -245,7 +253,7 @@ $string['pluginadministration'] = 'Administration de l\'atelier';
 $string['pluginname'] = 'Atelier';
 $string['prepareexamples'] = 'Préparer des travaux exemplaires';
 $string['previewassessmentform'] = 'Prévisualisation';
-$string['privacy:metadata:aggregatedgradinggrade'] = 'Note combinée de toutes les évaluations faite par l\'utilisateur dans l\'activité atelier donnée';
+$string['privacy:metadata:aggregatedgradinggrade'] = 'Note combinée de toutes les évaluations faites par l\'utilisateur dans l\'activité atelier donnée';
 $string['privacy:metadata:assessmentgrade'] = 'Note combinée suggérée par cette évaluation pour le travail remis';
 $string['privacy:metadata:assessmentgradinggrade'] = 'Note pour avoir fourni cette évaluation';
 $string['privacy:metadata:assessmentgradinggradeover'] = 'Valeur de remplacement donnée manuellement pour la note pour avoir fourni cette évaluation';
@@ -262,9 +270,25 @@ $string['privacy:metadata:late'] = 'Si le travail a été remis après le délai
 $string['privacy:metadata:peercomment'] = 'Commentaire sur la note donnée par l\'utilisateur fournissant l\'évaluation';
 $string['privacy:metadata:peercommentformat'] = 'Format de texte du commentaire sur la note donnée';
 $string['privacy:metadata:preference:perpage'] = 'Nombre de travaux remis que l\'utilisateur préfère voir sur une page';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = 'L\'état replié/déplié de la vue « Travaux exemplaires »';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = 'L\'état replié/déplié de la vue « Rapport de remise de l\'atelier »';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = 'L\'état replié/déplié de la vue « Formulaire d\'évaluation »';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = 'L\'état replié/déplié de la vue « Travaux à évaluer »';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = 'L\'état replié/déplié de la vue « Boîte à outil atelier »';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = 'L\'état replié/déplié de la vue « Conclusion »';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = 'L\'état replié/déplié de la vue « Travaux exemplaires à évaluer »';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = 'L\'état replié/déplié de la vue « Travaux exemplaires à évaluer »';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = 'L\'état replié/déplié de la vue « Rapport d\'évaluation de l\'atelier »';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = 'L\'état replié/déplié de la vue « Instructions pour la remise du travail »';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = 'L\'état replié/déplié de la vue « Instructions pour l\'évaluation »';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = 'L\'état replié/déplié de la vue « Description »';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = 'L\'état replié/déplié de la vue « Feedback général »';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = 'L\'état replié/déplié de la vue « Votre travail remis »';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = 'L\'état replié/déplié de la vue « Travaux remis publiés »';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = 'L\'état replié/déplié de la vue « Vos notes »';
 $string['privacy:metadata:published'] = 'Si le travail remis doit être publié pour tous les participants une fois l\'atelier fermé';
 $string['privacy:metadata:reviewerid'] = 'Identifiant de l\'utilisateur fournissant l\'évaluation';
-$string['privacy:metadata:strategy'] = 'Nom du sous-plugin de stratégie d\'évaluation interprétant les valeur de l\'enregistrement';
+$string['privacy:metadata:strategy'] = 'Nom du sous-plugin de stratégie d\'évaluation interprétant les valeurs de l\'enregistrement';
 $string['privacy:metadata:submissioncontent'] = 'Contenu du travail remis';
 $string['privacy:metadata:submissioncontentformat'] = 'Format texte du contenu du travail remis';
 $string['privacy:metadata:submissiongrade'] = 'Note combinée pour le travail remis, sous la forme d\'un nombre décimal entre 0 et 100';
@@ -427,3 +451,4 @@ $string['workshopname'] = 'Nom de l\'atelier';
 $string['yourassessmentfor'] = 'Votre évaluation pour {$a}';
 $string['yourgrades'] = 'Vos notes';
 $string['yoursubmission'] = 'Votre travail remis';
+$string['yoursubmissionwithassessments'] = 'Votre travail avec ses évaluations';

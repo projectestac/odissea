@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'es', version '3.8'.
+ * Strings for component 'quiz', language 'es', version '3.11'.
  *
  * @package     quiz
  * @category    string
@@ -182,6 +182,9 @@ $string['comments'] = 'Comentarios';
 $string['completedon'] = 'Finalizado en';
 $string['completionattemptsexhausted'] = 'O todos los intentos disponibles completados';
 $string['completionattemptsexhausted_help'] = 'Marcar el cuestionario como completo cuando el estudiante haya agotado el máximo número de intentos.';
+$string['completionminattempts'] = 'Los estudiantes deben realizar intentos:';
+$string['completionminattemptserror'] = 'El número mínimo de intentos debe ser menor o igual a los intentos permitidos.';
+$string['completionminattemptsgroup'] = 'Intentos requeridos';
 $string['completionpass'] = 'Requerir calificación aprobatoria';
 $string['completionpass_help'] = 'Si está habilitada, esta actividad se considera completa cuando el estudiante recibe una calificación aprobatoria , siendo reflejada en el libro de calificaciones';
 $string['completionpassdesc'] = 'El estudiante debe obtener una calificación aprobatoria para completar esta actividad';
@@ -347,6 +350,7 @@ $string['eventoverridedeleted'] = 'Anulación de cuestionario eliminada';
 $string['eventoverrideupdated'] = 'Anulación de cuestionario actualizada';
 $string['eventquestionmanuallygraded'] = 'Pregunta calificada manualmente';
 $string['eventquizattemptabandoned'] = 'Intento abandonado';
+$string['eventquizattemptregraded'] = 'Intento de cuestionario recalificado';
 $string['eventquizattemptstarted'] = 'Ha comenzado el intento';
 $string['eventquizattemptsubmitted'] = 'Intento enviado';
 $string['eventquizattempttimelimitexceeded'] = 'Tiempo límite del cuestionario excedido';
@@ -468,8 +472,8 @@ $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amp
 $string['indivresp'] = 'Respuestas de los individuos a cada ítem';
 $string['info'] = 'Información';
 $string['infoshort'] = 'i';
-$string['initialnumfeedbacks'] = 'Número inicial de campos de realimentación global';
-$string['initialnumfeedbacks_desc'] = 'Al crear un nuevo cuestionario, proporcione este número de cajas de realimentación global vacías. Una vez que el cuestionario haya sido creado, el formulario muestra el número de campos requeridos para el número de realimentaciones en el examen. La configuración debe de ser al menos de 1.';
+$string['initialnumfeedbacks'] = 'Número inicial de campos de retroalimentación global';
+$string['initialnumfeedbacks_desc'] = 'Al crear un nuevo cuestionario, proporcione este número de cajas de retroalimentación global vacías. Una vez que el cuestionario haya sido creado, el formulario muestra el número de campos requeridos para el número de retroalimentaciones en el examen. La configuración debe de ser al menos de 1.';
 $string['inprogress'] = 'En curso';
 $string['introduction'] = 'Descripción';
 $string['invalidattemptid'] = 'No existe un intento con esa ID';
@@ -541,10 +545,12 @@ $string['navmethod_seq'] = 'Secuencial';
 $string['navnojswarning'] = 'Advertencia: estos vínculos no guardarán sus respuestas. Utilice el botón siguiente en la zona inferior de la página.';
 $string['neverallononepage'] = 'Nunca, todas las preguntas en una página';
 $string['newattemptfail'] = 'Error: No se ha podido comenzar un nuevo intento en el cuestionario';
+$string['newcategory'] = 'Nueva categoría';
 $string['newpage'] = 'Página nueva';
 $string['newpage_help'] = '<p>En los cuestionarios más extensos tiene sentido alargar el cuestionario en varias páginas limitando el número de preguntas por página. Cuando se añaden preguntas al cuestionario se insetarán automáticamente saltos de página de acuerdo con el ajuste que se introduzca aquí. Sin embargo, uster podrá cambiar a mano los saltos de página más tarde en la página de edición.
 </p>';
 $string['newpageevery'] = 'Comenzar automáticamente una nueva página';
+$string['newsectionheading'] = 'Nuevo título';
 $string['noanswers'] = 'No se seleccionó ninguna respuesta';
 $string['noattempts'] = 'No se ha intentado responder este cuestionario';
 $string['noattemptsfound'] = 'No se han encontrado intentos.';
@@ -595,6 +601,7 @@ $string['onlyteachersexport'] = 'Sólo los profesores pueden exportar preguntas'
 $string['onlyteachersimport'] = 'Sólo los profesores con permiso de edición pueden importar preguntas';
 $string['onthispage'] = 'Esta página';
 $string['open'] = 'Sin contestar';
+$string['openafterclose'] = 'No se puede actualizar el cuestionario. Ha indicado una fecha de apertura posterior a la fecha de cierre.';
 $string['openclosedatesupdated'] = 'Actualizadas fechas de apertura y cierre del cuestionario';
 $string['optional'] = 'opcional';
 $string['orderandpaging'] = 'Orden y paginación';
@@ -635,7 +642,7 @@ $string['overridedeleteusersure'] = '¿Está seguro que desea eliminar la modifi
 $string['overridegroup'] = 'Reemplazar grupo';
 $string['overridegroupeventname'] = '{$a->quiz} - {$a->group}';
 $string['overrides'] = 'Excepciones';
-$string['overrideuser'] = 'Pasar por alto usuario';
+$string['overrideuser'] = 'Sobrescribir usuario';
 $string['overrideusereventname'] = '{$a->quiz} - Excepción';
 $string['page-mod-quiz-attempt'] = 'Página del intento del cuestionario';
 $string['page-mod-quiz-edit'] = 'Editar página del cuestionario';
@@ -697,6 +704,7 @@ $string['questionposition'] = 'Nueva posición en el orden de la pregunta {$a}';
 $string['questions'] = 'Preguntas';
 $string['questionsinclhidden'] = 'Preguntas (incluídas las ocultas)';
 $string['questionsinthisquiz'] = 'Preguntas en este cuestionario';
+$string['questionsmatchingfilter'] = 'Preguntas que cumplen este filtro:  {$a}';
 $string['questionsperpage'] = 'Número máximo de preguntas por página';
 $string['questionsperpageselected'] = 'Se ha establecido el número de respuestas por página (la paginación está fijada actualmente). Como resultado, se han desactivado los controles de paginación. Puede cambiar esto en {$a}.';
 $string['questionsperpagex'] = 'Preguntas por página: {$a}';
@@ -725,7 +733,7 @@ $string['quizclosed'] = 'Este cuestionario se cerró el {$a}';
 $string['quizcloses'] = 'El cuestionario se cerrará el';
 $string['quizcloseson'] = 'Este cuestionario se cerrará el {$a}';
 $string['quizeventcloses'] = 'Se cierra {$a}';
-$string['quizeventopens'] = '{$a} abre';
+$string['quizeventopens'] = 'Se abre {$a}';
 $string['quizisclosed'] = 'Este cuestionario está cerrado';
 $string['quizisclosedwillopen'] = 'Cuestionario cerrado (se abrirá el {$a})';
 $string['quizisopen'] = 'Este cuestionario está abierto';
@@ -735,20 +743,29 @@ $string['quizopen'] = 'Abrir cuestionario';
 $string['quizopenclose'] = 'Fechas de apertura y cierre';
 $string['quizopenclose_help'] = 'Los estudiantes sólo podrán comenzar un intento de resolver el cuestionario después de la apertura y deben completarlo antes de la hora de cierre.';
 $string['quizopened'] = 'Este cuestionario está abierto';
-$string['quizopenedon'] = 'Este cuestionario está abierto en {$a}';
+$string['quizopenedon'] = 'Este cuestionario se abrió el {$a}';
 $string['quizopens'] = 'El cuestionario se abrirá el';
 $string['quizopenwillclose'] = 'Este cuestionario está abierto, se cerrará en {$a}';
 $string['quizordernotrandom'] = 'Orden no aleatorio';
 $string['quizorderrandom'] = 'Orden aleatorio';
+$string['quizreport'] = 'Informe del cuestionario';
 $string['quizsettings'] = 'Ajustes del cuestionario';
 $string['quiztimer'] = 'Temporizador del cuestionario';
 $string['quizwillopen'] = 'Este cuestionario se abrirá el {$a}';
 $string['random'] = 'Pregunta aleatoria';
 $string['randomcreate'] = 'Crear preguntas aleatorias';
+$string['randomediting'] = 'Editando pregunta aleatoria';
 $string['randomfromcategory'] = 'Pregunta aleatoria de la categoría.';
 $string['randomfromexistingcategory'] = 'Pregunta aleatoria desde una categoría existente';
+$string['randomfromunavailabletag'] = '{$a} (no disponible)';
 $string['randomnosubcat'] = 'Preguntas sólo de esta categoría, no de sus sub-categorías.';
 $string['randomnumber'] = 'Número de preguntas aleatorias';
+$string['randomquestion'] = 'Pregunta aleatoria';
+$string['randomquestion_help'] = 'Una pregunta aleatoria es una forma de añadir una pregunta seleccionada al azar de una categoría o una por una marca específica dentro de una actividad.';
+$string['randomquestiontags'] = 'Marcas';
+$string['randomquestiontags_help'] = 'Aquí puede restringir el criterio de selección por marcas específicas de las preguntas.
+
+Las preguntas "aleatorias" serán seleccionadas entre las preguntas que tengan estas marcas.';
 $string['randomquestionusinganewcategory'] = 'Pregunta aleatoria utilizando una categoría nueva';
 $string['randomwithsubcat'] = 'Preguntas de esta categoría y de sus sub-categorías.';
 $string['readytosend'] = 'Está a punto de enviar su cuestionario para que sea evaluado. ¿Está seguro de que desea continuar?';
@@ -865,6 +882,7 @@ $string['sectionheadingremove'] = 'Borrar cabecera \'{$a}\'';
 $string['seequestions'] = '(Vea las preguntas)';
 $string['select'] = 'Seleccionar';
 $string['selectall'] = 'Seleccionar todos';
+$string['selectattempt'] = 'Seleccionar intento';
 $string['selectcategory'] = 'Seleccionar categoría';
 $string['selectedattempts'] = 'Intentos seleccionados...';
 $string['selectmultipleitems'] = 'Seleccionar varios elementos';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'el', version '3.8'.
+ * Strings for component 'tool_cohortroles', language 'el', version '3.11'.
  *
  * @package     tool_cohortroles
  * @category    string
@@ -51,5 +51,5 @@ $string['removecohortroleassignmentconfirm'] = 'Είστε βέβαιοι ότι
 $string['selectcohorts'] = 'Επιλογή συνόλων χρηστών';
 $string['selectrole'] = 'Επιλογή ρόλου';
 $string['selectusers'] = 'Επιλέξτε χρήστες για ανάθεση ρόλου';
-$string['taskname'] = 'Συγχρονισμός αναθέσεων ρόλου στο σύνολο χρηστών';
+$string['taskname'] = 'Συγχρονισμός αναθέσεων ρόλου στην ομάδα χρηστών';
 $string['thisuserroles'] = 'Ρόλοι που ανατέθηκαν σε σχέση με αυτόν τον χρήστη';

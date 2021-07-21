@@ -34,7 +34,7 @@ YUI.add('moodle-atto_image-button', function (Y, NAME) {
  */
 
 var CSS = {
-        RESPONSIVE: 'img-responsive',
+        RESPONSIVE: 'img-fluid',
         INPUTALIGNMENT: 'atto_image_alignment',
         INPUTALT: 'atto_image_altentry',
         INPUTHEIGHT: 'atto_image_heightentry',
@@ -124,8 +124,14 @@ var CSS = {
                 '</div>' +
                 '<div class="mb-1">' +
                 '<label for="{{elementid}}_{{CSS.INPUTALT}}">{{get_string "enteralt" component}}</label>' +
-                '<input class="form-control fullwidth {{CSS.INPUTALT}}" type="text" value="" ' +
-                'id="{{elementid}}_{{CSS.INPUTALT}}" size="32"/>' +
+                '<textarea class="form-control fullwidth {{CSS.INPUTALT}}" ' +
+                'id="{{elementid}}_{{CSS.INPUTALT}}" maxlength="125"></textarea>' +
+
+                // Add the character count.
+                '<div id="the-count" class="d-flex justify-content-end small">' +
+                '<span id="currentcount">0</span>' +
+                '<span id="maximumcount"> / 125</span>' +
+                '</div>' +
 
                 // Add the presentation select box.
                 '<div class="form-check">' +
@@ -176,7 +182,7 @@ var CSS = {
                 // Add the image preview.
                 '<div class="mdl-align">' +
                 '<div class="{{CSS.IMAGEPREVIEWBOX}}">' +
-                    '<img src="#" class="{{CSS.IMAGEPREVIEW}}" alt="" style="display: none;"/>' +
+                    '<img class="{{CSS.IMAGEPREVIEW}}" alt="" style="display: none;"/>' +
                 '</div>' +
 
                 // Add the submit button and close the form.
@@ -352,6 +358,11 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
 
         host.saveSelection();
 
+        // Trigger form upload start events.
+        require(['core_form/events'], function(FormEvent) {
+            FormEvent.triggerUploadStarted(self.editor.get('id'));
+        });
+
         var options = host.get('filepickeroptions').image,
             savepath = (options.savepath === undefined) ? '/' : options.savepath,
             formData = new FormData(),
@@ -406,6 +417,10 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                             if (placeholder) {
                                 placeholder.remove(true);
                             }
+                            // Trigger form upload complete events.
+                            require(['core_form/events'], function(FormEvent) {
+                                FormEvent.triggerUploadCompleted(self.editor.get('id'));
+                            });
                             throw new M.core.ajaxException(result);
                         }
 
@@ -420,7 +435,8 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                         // Replace placeholder with actual image.
                         newhtml = template({
                             url: file.url,
-                            presentation: true
+                            presentation: true,
+                            classlist: CSS.RESPONSIVE
                         });
                         newimage = Y.Node.create(newhtml);
                         if (placeholder) {
@@ -432,12 +448,20 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                     }
                 } else {
                     Y.use('moodle-core-notification-alert', function() {
+                        // Trigger form upload complete events.
+                        require(['core_form/events'], function(FormEvent) {
+                            FormEvent.triggerUploadCompleted(self.editor.get('id'));
+                        });
                         new M.core.alert({message: M.util.get_string('servererror', 'moodle')});
                     });
                     if (placeholder) {
                         placeholder.remove(true);
                     }
                 }
+                // Trigger form upload complete events.
+                require(['core_form/events'], function(FormEvent) {
+                    FormEvent.triggerUploadCompleted(self.editor.get('id'));
+                });
             }
         };
         xhr.open("POST", M.cfg.wwwroot + '/repository/repository_ajax.php?action=upload', true);
@@ -482,7 +506,9 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
             focusAfterHide: true,
             focusOnShowSelector: SELECTORS.INPUTURL
         });
-
+        // Set a maximum width for the dialog. This will prevent the dialog width to extend beyond the screen width
+        // in cases when the uploaded image has larger width.
+        dialogue.get('boundingBox').setStyle('maxWidth', '90%');
         // Set the dialogue content, and then show the dialogue.
         dialogue.set('bodyContent', this._getDialogueContent())
                 .show();
@@ -604,6 +630,9 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                     this.get('host').showFilepicker('image', this._filepickerCallback, this);
             }, this);
         }
+
+        // Character count.
+        this._form.one('.' + CSS.INPUTALT).on('keyup', this._handleKeyup, this);
 
         return content;
     },
@@ -1043,6 +1072,17 @@ Y.namespace('M.atto_image').Button = Y.Base.create('button', Y.M.editor_atto.Edi
         }
         this.getDialogue().centerDialogue();
         return state;
+    },
+
+    /**
+     * Handle the keyup to update the character count.
+     */
+    _handleKeyup: function() {
+        var form = this._form,
+            alt = form.one('.' + CSS.INPUTALT).get('value'),
+            characterCount = alt.length,
+            current = form.one('#currentcount');
+        current.setHTML(characterCount);
     }
 });
 

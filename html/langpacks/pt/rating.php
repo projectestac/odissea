@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'pt', version '3.8'.
+ * Strings for component 'rating', language 'pt', version '3.11'.
  *
  * @package     rating
  * @category    string
@@ -34,16 +34,16 @@ $string['aggregatesum'] = 'Soma das notas';
 $string['aggregatetype'] = 'Tipo de avaliação';
 $string['aggregatetype_help'] = 'O tipo de avaliação define a forma como as notas são apresentadas na pauta.
 
-* Nota média - A média de todas as notas
+* Nota média - A média de todas as notas é a nota final
 * Número de avaliações - O número de avaliações torna-se a nota final. O total não pode exceder a nota máxima da atividade
 * Nota máxima - A nota mais alta atribuída torna-se a nota final
-* Nota mínima - A nota mais baixa atribuida torna-se a nota final
+* Nota mínima - A nota mais baixa atribuída torna-se a nota final
 * Soma das notas - Todas as notas são somadas. O total não pode exceder a nota máxima da atividade
 
 Se selecionar \'Sem avaliação\', a atividade não aparece na pauta.';
 $string['allowratings'] = 'Permitir avaliação?';
 $string['allratingsforitem'] = 'Todas as avaliações submetidas';
-$string['capabilitychecknotavailable'] = 'Não pode verificar as permissões enquanto a atividade não for gravada';
+$string['capabilitychecknotavailable'] = 'Não é possível verificar as permissões enquanto a atividade não for guardada';
 $string['couldnotdeleteratings'] = 'Não é possível ser apagado pois já existem avaliações';
 $string['norate'] = 'Não é permitido avaliar!';
 $string['noratings'] = 'Não foram submetidas avaliações';
@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'A avaliação não é válida';
 $string['ratings'] = 'Avaliações';
 $string['ratingtime'] = 'Restringir a avaliação para itens de um intervalo de datas';
 $string['rolewarning'] = 'Papéis com permissão para avaliar';
-$string['rolewarning_help'] = 'Para avaliar atividades, os papéis dos utilizadores têm de incluir a permissão \'moodle/rating:rate\' e eventuais permissões especificas do módulo. Os utilizadores com os seguintes papéis devem poder avaliar itens. A lista de papéis pode ser modificada, a partir da hiperligação Permissões no menu de ações ou no bloco Administração, dependendo do tema utilizado.';
+$string['rolewarning_help'] = 'Para avaliar atividades, os papéis dos utilizadores têm de incluir a permissão \'moodle/rating:rate\' e eventuais permissões especificas do módulo. Os utilizadores com os papéis aqui mostrados devem poder avaliar itens. A lista de papéis pode ser modificada, a partir da hiperligação Permissões no menu de ações ou no bloco Administração, dependendo do tema utilizado.';
 $string['scaleselectionrequired'] = 'Quando selecionar um tipo de agregação de avaliações, também deverá selecionar se vai usar uma escala ou definir uma pontuação máxima.';

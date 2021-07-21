@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'el', version '3.8'.
+ * Strings for component 'qtype_ddwtos', language 'el', version '3.11'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -37,4 +37,7 @@ $string['pluginname_link'] = 'ερώτηση/τύπος/μεταποθκειμέ
 $string['pluginnameadding'] = 'Προσθήκη μιας μεταφοράς & απόθεσης σε κείμενο';
 $string['pluginnameediting'] = 'Επεξεργασία μιας μεταφοράς & απόθεσης σε κείμενο';
 $string['pluginnamesummary'] = 'Οι λέξεις που λείπουν στο κείμενο της ερώτησης συμπληρώνονται χρησιμοποιώντας μεταφορά & απόθεση.';
-$string['privacy:metadata'] = 'Το πρόσθετο τύπου ερώτησης μεταφοράς & απόθεσης σε κείμενο δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο τύπου ερώτησης μεταφοράς & απόθεσης σε κείμενο επιτρέπει στους συγγραφείς ερωτήσεων να ορίζουν προεπιλεγμένες επιλογές ως προτιμήσεις χρήστη.';
+$string['privacy:preference:defaultmark'] = 'Ο προεπιλεγμένος βαθμός που έχει οριστεί για μια δεδομένη ερώτηση.';
+$string['privacy:preference:penalty'] = 'Η ποινή για κάθε λανθασμένη δοκιμή όταν εκτελούνται ερωτήσεις χρησιμοποιώντας τη συμπεριφορά «Διαδραστική με πολλαπλές προσπάθειες» ή «Κατάσταση προσαρμογής».';
+$string['privacy:preference:shuffleanswers'] = 'Εάν οι απαντήσεις πρέπει να ανακατεύονται αυτόματα.';

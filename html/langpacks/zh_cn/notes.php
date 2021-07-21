@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'zh_cn', version '3.8'.
+ * Strings for component 'notes', language 'zh_cn', version '3.11'.
  *
  * @package     notes
  * @category    string
@@ -46,7 +46,7 @@ $string['invalidid'] = '错误的备注 ID';
 $string['invaliduserid'] = '无效用户id：{$a}';
 $string['myprofileownnotes'] = '我的笔记';
 $string['nocontent'] = '备注内不能为空';
-$string['nonotes'] = '还没有这种类型的备注';
+$string['nonotes'] = '还没有此类型的备注';
 $string['nopermissiontodelete'] = '您不能删除此备注';
 $string['note'] = '备注';
 $string['notes'] = '备注';

@@ -37,7 +37,7 @@ class core_moodle_page_testcase extends advanced_testcase {
      */
     protected $testpage;
 
-    public function setUp() {
+    public function setUp(): void {
         parent::setUp();
         $this->resetAfterTest();
         $this->testpage = new testable_moodle_page();
@@ -83,32 +83,25 @@ class core_moodle_page_testcase extends advanced_testcase {
         $this->assertSame($originalcourse, $COURSE);
     }
 
-    /**
-     * @expectedException coding_exception
-     */
     public function test_cannot_set_course_once_theme_set() {
         // Setup fixture.
         $this->testpage->force_theme(theme_config::DEFAULT_THEME);
         $course = $this->getDataGenerator()->create_course();
 
         // Exercise SUT.
+        $this->expectException(coding_exception::class);
         $this->testpage->set_course($course);
     }
 
-    /**
-     * @expectedException coding_exception
-     */
     public function test_cannot_set_category_once_theme_set() {
         // Setup fixture.
         $this->testpage->force_theme(theme_config::DEFAULT_THEME);
 
         // Exercise SUT.
+        $this->expectException(coding_exception::class);
         $this->testpage->set_category_by_id(123);
     }
 
-    /**
-     * @expectedException coding_exception
-     */
     public function test_cannot_set_category_once_course_set() {
         // Setup fixture.
         $course = $this->getDataGenerator()->create_course();
@@ -116,6 +109,7 @@ class core_moodle_page_testcase extends advanced_testcase {
         $this->testpage->set_course($course);
 
         // Exercise SUT.
+        $this->expectException(coding_exception::class);
         $this->testpage->set_category_by_id(123);
     }
 
@@ -145,11 +139,9 @@ class core_moodle_page_testcase extends advanced_testcase {
         $this->assertEquals(moodle_page::STATE_DONE, $this->testpage->state);
     }
 
-    /**
-     * @expectedException coding_exception
-     */
     public function test_set_state_cannot_skip_one() {
         // Exercise SUT.
+        $this->expectException(coding_exception::class);
         $this->testpage->set_state(moodle_page::STATE_IN_BODY);
     }
 
@@ -311,6 +303,14 @@ class core_moodle_page_testcase extends advanced_testcase {
         $this->testpage->set_heading('a heading');
         // Validated.
         $this->assertSame('a heading', $this->testpage->heading);
+
+        // By default formatting is applied and tags are removed.
+        $this->testpage->set_heading('a heading <a href="#">edit</a><p>');
+        $this->assertSame('a heading edit', $this->testpage->heading);
+
+        // Without formatting the tags are preserved but cleaned.
+        $this->testpage->set_heading('a heading <a href="#">edit</a><p>', false);
+        $this->assertSame('a heading <a href="#">edit</a><p></p>', $this->testpage->heading);
     }
 
     public function test_set_title() {
@@ -388,15 +388,13 @@ class core_moodle_page_testcase extends advanced_testcase {
         $this->assertEquals($cm->id, $this->testpage->cm->id);
     }
 
-    /**
-     * @expectedException coding_exception
-     */
     public function test_cannot_set_activity_record_before_cm() {
         // Setup fixture.
         $course = $this->getDataGenerator()->create_course();
         $forum = $this->getDataGenerator()->create_module('forum', array('course'=>$course->id));
         $cm = get_coursemodule_from_id('forum', $forum->cmid);
         // Exercise SUT.
+        $this->expectException(coding_exception::class);
         $this->testpage->set_activity_record($forum);
     }
 
@@ -436,9 +434,6 @@ class core_moodle_page_testcase extends advanced_testcase {
         $this->assertEquals($forum, $this->testpage->activityrecord);
     }
 
-    /**
-     * @expectedException coding_exception
-     */
     public function test_cannot_set_inconsistent_activity_record_course() {
         // Setup fixture.
         $course = $this->getDataGenerator()->create_course();
@@ -447,12 +442,10 @@ class core_moodle_page_testcase extends advanced_testcase {
         $this->testpage->set_cm($cm);
         // Exercise SUT.
         $forum->course = 13;
+        $this->expectException(coding_exception::class);
         $this->testpage->set_activity_record($forum);
     }
 
-    /**
-     * @expectedException coding_exception
-     */
     public function test_cannot_set_inconsistent_activity_record_instance() {
         // Setup fixture.
         $course = $this->getDataGenerator()->create_course();
@@ -461,6 +454,7 @@ class core_moodle_page_testcase extends advanced_testcase {
         $this->testpage->set_cm($cm);
         // Exercise SUT.
         $forum->id = 13;
+        $this->expectException(coding_exception::class);
         $this->testpage->set_activity_record($forum);
     }
 
@@ -490,9 +484,6 @@ class core_moodle_page_testcase extends advanced_testcase {
         $this->assertEquals($forum, $this->testpage->activityrecord);
     }
 
-    /**
-     * @expectedException coding_exception
-     */
     public function test_cannot_set_cm_with_inconsistent_course() {
         // Setup fixture.
         $course = $this->getDataGenerator()->create_course();
@@ -500,6 +491,7 @@ class core_moodle_page_testcase extends advanced_testcase {
         $cm = get_coursemodule_from_id('forum', $forum->cmid);
         // Exercise SUT.
         $cm->course = 13;
+        $this->expectException(coding_exception::class);
         $this->testpage->set_cm($cm, $course);
     }
 

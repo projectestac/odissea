@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'nl', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'nl', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -68,7 +68,14 @@ $string['pluginname_help'] = 'Vanuit het perspectief van de leerling lijkt een n
 $string['pluginnameadding'] = 'Numerieke vraag toevoegen';
 $string['pluginnameediting'] = 'Numerieke vraag bewerken';
 $string['pluginnamesummary'] = 'Maakt het mogelijk een numeriek antwoord te laten geven, zelfs met eenheden en toleranties. Dat antwoord kan beoordeeld worden met verschillende modelantwoorden,';
-$string['privacy:metadata'] = 'De numerieke vraagtype-plugin bewaart geen persoonlijke gegevens.';
+$string['privacy:metadata'] = 'De numerieke vraagtype-plugin  laat vraag-auteurs standaardopties en gebruikersvoorkeuren instellen.';
+$string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
+$string['privacy:preference:multichoicedisplay'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
+$string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
+$string['privacy:preference:unitgradingtypes'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
+$string['privacy:preference:unitpenalty'] = 'Op welk deel (0-1) van het antwoordcijfer of vraagcijfer is van toepassing?';
+$string['privacy:preference:unitrole'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
+$string['privacy:preference:unitsleft'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['relative'] = 'Relatief';
 $string['rightexample'] = 'rechts, bijvoorbeeld 1,00cm of 1,00km';
 $string['selectunit'] = 'Kies een eenheid';

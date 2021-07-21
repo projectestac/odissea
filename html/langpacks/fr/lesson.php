@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'fr', version '3.8'.
+ * Strings for component 'lesson', language 'fr', version '3.11'.
  *
  * @package     lesson
  * @category    string
@@ -86,6 +86,7 @@ $string['averagescore'] = 'Note moyenne';
 $string['averagetime'] = 'Durée moyenne';
 $string['branch'] = 'Contenu';
 $string['branchtable'] = 'Table de contenu';
+$string['cachedef_overrides'] = 'Informations sur les dérogations utilisateur et de groupe';
 $string['cancel'] = 'Annuler';
 $string['cannotfindanswer'] = 'Erreur : impossible de trouver la réponse';
 $string['cannotfindattempt'] = 'Erreur : impossible de trouver la tentative';
@@ -109,7 +110,7 @@ $string['checkbranchtable'] = 'Vérifier la page de contenu';
 $string['checkedthisone'] = 'Ont coché cette option.';
 $string['checknavigation'] = 'Vérifier la navigation';
 $string['checkquestion'] = 'Vérifier la question';
-$string['classstats'] = 'Statistique de classe';
+$string['classstats'] = 'Statistiques de classe';
 $string['clicktodownload'] = 'Cliquer sur le lien ci-dessous pour télécharger le fichier.';
 $string['closebeforeopen'] = 'Impossible de modifier la leçon. Vous avez indiqué une date de fermeture antérieure à la date d\'ouverture.';
 $string['cluster'] = 'Groupe';
@@ -120,6 +121,8 @@ $string['comments'] = 'Vos commentaires';
 $string['completed'] = 'Terminé';
 $string['completederror'] = 'Terminer la leçon';
 $string['completethefollowingconditions'] = 'Vous devez remplir la (les) condition(s) suivante(s) dans la leçon <b>{$a}</b> avant de continuer.';
+$string['completiondetail:reachend'] = 'Effectuer l\'activité jusqu\'à la fin';
+$string['completiondetail:timespent'] = 'Passer au moins {$a} sur cette activité';
 $string['completionendreached'] = 'Exiger d\'atteindre la fin';
 $string['completionendreached_desc'] = 'Si ce réglage est activé, les étudiants doivent atteindre la page de fin de la leçon pour terminer cette activité';
 $string['completiontimespent'] = 'Les étudiants doivent faire cette activité au moins durant';
@@ -295,7 +298,7 @@ $string['lesson:manage'] = 'Gérer les activités leçon';
 $string['lesson:manageoverrides'] = 'Gérer les dérogations de leçon';
 $string['lesson:view'] = 'Consulter les activités leçon';
 $string['lesson:viewreports'] = 'Consulter les rapports des leçons';
-$string['lessonclosed'] = 'Cette leçon n\'est plus disponible depuis {$a}.';
+$string['lessonclosed'] = 'Cette leçon s\'est terminée le {$a}.';
 $string['lessoncloses'] = 'La leçon se termine';
 $string['lessoncloseson'] = 'La leçon se termine le {$a}';
 $string['lessoneventcloses'] = '{$a} se termine';
@@ -322,7 +325,7 @@ $string['maxgrade_help'] = 'Ce réglage détermine la note maximale pouvant êtr
 $string['maximumnumberofanswersbranches'] = 'Nombre maximal de réponses';
 $string['maximumnumberofanswersbranches_help'] = 'Cette valeur détermine le nombre maximal de réponses utilisables dans la leçon. Si une leçon n\'utilise que des questions vrai/faux, elle peut être fixée à 2. Ce paramètre peut être modifié à tout moment, car il n\'a d\'effet que sur ce que voit l\'enseignant, pas sur les données.
 ';
-$string['maximumnumberofattempts'] = 'Nombre maximal de tentatives';
+$string['maximumnumberofattempts'] = 'Nombre maximal de tentatives par question';
 $string['maximumnumberofattempts_help'] = 'Ce réglage fixe le nombre maximal de tentatives à disposition des étudiants pour répondre à chaque question. Si une réponse incorrecte est répétée, lorsque cette valeur est atteinte, la page suivante de la leçon est affichée.';
 $string['maximumnumberofattemptsreached'] = 'Le nombre maximal de tentatives a été atteint - On passe à la page suivante';
 $string['mediaclose'] = 'Afficher un bouton fermer';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'ko', version '3.8'.
+ * Strings for component 'badges', language 'ko', version '3.11'.
  *
  * @package     badges
  * @category    string
@@ -65,6 +65,7 @@ $string['bcriteria'] = '기준';
 $string['bdetails'] = '세부사항 편집';
 $string['bmessage'] = '메세지';
 $string['boverview'] = '개요';
+$string['claimid'] = '신고 URL';
 $string['clearsettings'] = '설정 지우기';
 $string['completioninfo'] = '이 뱃지가 수여되게된 완료된 강좌';
 $string['configuremessage'] = '뱃지 메세지';
@@ -124,7 +125,6 @@ $string['error:cannotact'] = '뱃지를 활성화할 수 없습니다.';
 $string['error:cannotawardbadge'] = '사용자에게 뱃지를 수여할 수 없습니다.';
 $string['error:clone'] = '뱃지를 복제할 수 없습니다.';
 $string['error:duplicatename'] = '같은 이름의 뱃지가 시스템에 이미 존재합니다.';
-$string['error:invalidbadgeurl'] = '잘못된 뱃지 발행자 URL 포맷';
 $string['error:invalidcriteriatype'] = '잘못된 기준 유형';
 $string['error:invalidexpiredate'] = '만료일은 미래이어야 합니다.';
 $string['error:invalidexpireperiod'] = '만료 기간은 음이거나 0이 될 수 없습니다.';
@@ -153,9 +153,14 @@ $string['externalconnectto'] = '외부 뱃지를 표시하려면  <a href="{$a}"
 $string['fixed'] = '고정된 날짜';
 $string['hidden'] = '감춰짐';
 $string['hiddenbadge'] = '아쉬웁게도 뱃지 소유자가 이 정보를 공개하지 않았습니다.';
+$string['imageauthoremail'] = '이미지 권리자의 이메일';
+$string['imageauthorname'] = '이미지 권리자의 이름';
+$string['imageauthorurl'] = '이미지 권리자의 URL';
+$string['imagecaption'] = '이미지 캡션';
 $string['issuancedetails'] = '뱃지 만료기한';
 $string['issuedbadge'] = '발행된 뱃지 정보';
 $string['issuerdetails'] = '발행자 세부정보';
+$string['issueremail'] = '이메일';
 $string['issuername'] = '발행자 이름';
 $string['issuername_help'] = '발행기관 이름';
 $string['issuerurl'] = '발행자 URL';
@@ -213,6 +218,7 @@ $string['statusmessage_4'] = '이 뱃지는 현재 저장소에 보관됩니다.
 $string['subject'] = '메세지 제목';
 $string['targetname'] = '이름';
 $string['variablesubstitution'] = '메시지에 변수 치환';
+$string['version'] = '버전';
 $string['viewbadge'] = '발급된  뱃지 보기';
 $string['visible'] = '볼수 있음';
 $string['warnexpired'] = '(이 뱃지는 만료되었습니다)';

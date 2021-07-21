@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'ru', version '3.8'.
+ * Strings for component 'enrol_manual', language 'ru', version '3.11'.
  *
  * @package     enrol_manual
  * @category    string
@@ -65,11 +65,13 @@ $string['pluginname_desc'] = 'Плагин ручной записи на кур
 $string['privacy:metadata'] = 'Плагин «Зачисление вручную» не хранит никаких персональных данных.';
 $string['selectcohorts'] = 'Выберите глобальные группы';
 $string['selectusers'] = 'Выберите пользователей';
+$string['sendexpirynotificationstask'] = 'Ручная отправка уведомлений об истечении срока действия зачисления';
 $string['status'] = 'Разрешить ручную запись на курсы';
 $string['status_desc'] = 'Разрешить доступ к курсу внутренним зарегистрированным пользователям. Этот параметр  должен быть включен в большинстве случаев.';
 $string['status_help'] = 'Этот параметр определяет, могут ли пользователи быть зачислены вручную (посредством ссылки в установках курса) пользователем с соответствующими правами, например, преподавателем.';
 $string['statusdisabled'] = 'Отключено';
 $string['statusenabled'] = 'Включено';
+$string['syncenrolmentstask'] = 'Ручная синхронизация зачислений';
 $string['unenrol'] = 'Отчислить пользователя';
 $string['unenrolselectedusers'] = 'Отчислить выбранных пользователей';
 $string['unenrolselfconfirm'] = 'Вы действительно хотите исключить себя из курса «{$a}»?';

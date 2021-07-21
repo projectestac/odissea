@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ko', version '3.8'.
+ * Strings for component 'block_activity_results', language 'ko', version '3.11'.
  *
  * @package     block_activity_results
  * @category    string
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['bestgrade'] = '가장 높은 성적';
 $string['bestgrades'] = '가장 {$a} 높은 성적';
 $string['config_format_percentage'] = '백분율';
+$string['pluginname'] = '활동결과';
 $string['worstgrade'] = '가장 낮은 성적';
 $string['worstgrades'] = '{$a} 가장 낮은 성적';

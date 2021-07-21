@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ru', version '3.8'.
+ * Strings for component 'quiz_statistics', language 'ru', version '3.11'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -91,6 +91,7 @@ $string['partofquestion'] = 'Часть вопроса';
 $string['pluginname'] = 'Статистика';
 $string['position'] = 'Позиция';
 $string['positions'] = 'Позиция(и)';
+$string['privacy:metadata'] = 'Хотя в плагине «Статистика теста» и есть таблицы базы данных, эти данные являются обобщенными и не характеризуют отдельного человека.';
 $string['questioninformation'] = 'Информация вопроса';
 $string['questionname'] = 'Название вопроса';
 $string['questionnumber'] = '№';
@@ -100,8 +101,11 @@ $string['questiontype'] = 'Тип вопроса';
 $string['quizinformation'] = 'Информация о тесте';
 $string['quizname'] = 'Название теста';
 $string['quizoverallstatistics'] = 'Общая статистика теста';
+$string['quizstatisticscleanuptask'] = 'Очистить старые записи кэша статистики тестов';
 $string['quizstructureanalysis'] = 'Анализ структуры теста';
 $string['random_guess_score'] = 'Балл случайного угадывания';
+$string['rangebetween'] = '{$a->min} − {$a->max}';
+$string['rangeofvalues'] = 'Диапазон статистики по этим вопросам';
 $string['recalculatenow'] = 'Пересчитать сейчас';
 $string['reportsettings'] = 'Настройки статистического отчета';
 $string['response'] = 'Ответ';
@@ -111,10 +115,10 @@ $string['standarddeviation'] = 'Стандартное отклонение (д�
 $string['standarddeviationq'] = 'Стандартное отклонение';
 $string['standarderror'] = 'Стандартная ошибка ( для {$a})';
 $string['statistics'] = 'Статистика';
-$string['statistics:componentname'] = 'Отчет «Статистика» по тесту';
 $string['statistics:view'] = 'Просматривать отчет «Статистика» по тесту';
 $string['statisticsreport'] = 'Статистический отчет';
 $string['statisticsreportgraph'] = 'Статистика по позиции вопроса';
 $string['statsfor'] = 'Статистика теста (для {$a})';
 $string['variant'] = 'Вариант';
+$string['viewanalysis'] = 'Посмотреть детали';
 $string['whichtries'] = 'Анализ ответов';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'nl', version '3.8'.
+ * Strings for component 'grades', language 'nl', version '3.11'.
  *
  * @package     grades
  * @category    string
@@ -182,6 +182,7 @@ $string['droplowestvalues'] = 'Laat de {$a} laagste waarden vallen';
 $string['dropped'] = 'Weggelaten';
 $string['dropxlowest'] = 'Laat de X laagste weg';
 $string['dropxlowestwarning'] = 'Opmerking: als je \'Laat de X laagste weg\' gebruikt, dan gaat het cijferlijst er van uit dat alle items in de categorie dezelfde puntenwaarde hebben. Als de puntenwaarden verschillen, dan zullen de resultaten onvoorspelbaar zijn.';
+$string['duplicatedgradeitem'] = '{$a} (kopie)';
 $string['duplicatescale'] = 'Kopieer schaal';
 $string['edit'] = 'Bewerk';
 $string['editcalculation'] = 'Bewerk berekening';
@@ -216,6 +217,7 @@ $string['errorupdatinggradecategoryaggregation'] = 'Fout bij het aanpassen van h
 $string['errorupdatinggradeitemaggregationcoef'] = 'Fout bij het updaten van de aggregatiecoëfficiënt (weging of bonus) van beoordelingsitem ID {$a->id}';
 $string['eventgradedeleted'] = 'Cijfer verwijderd';
 $string['eventgradeitemcreated'] = 'Cijfer item gemaakt';
+$string['eventgradeitemdeleted'] = 'Cijferitem verwijderd';
 $string['eventgradeitemupdated'] = 'Grade-item bijgewerkt';
 $string['eventgradelettercreated'] = 'Beoordelingsletter gemaakt';
 $string['eventgradeletterdeleted'] = 'Beoordelingsletter verwijderd';

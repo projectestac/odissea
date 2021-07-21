@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'de', version '3.8'.
+ * Strings for component 'auth_shibboleth', language 'de', version '3.11'.
  *
  * @package     auth_shibboleth
  * @category    string
@@ -32,7 +32,7 @@ $string['auth_shib_auth_method_description'] = 'Vergeben Sie für die verwendete
 $string['auth_shib_changepasswordurl'] = 'URL zur Kennwortänderung';
 $string['auth_shib_contact_administrator'] = 'Falls Sie nicht dieser Organisation zugeordnet wurden und Kurszugriff benötigen, nehmen Sie bitte mit <a href="mailto:{$a}">Moodle Administrator/innen</a> Kontakt auf.';
 $string['auth_shib_convert_data'] = 'Datenmodifikation APU';
-$string['auth_shib_convert_data_description'] = 'Sie können diese API nutzen, um die von Shibboleth bereitgestellten Daten anzupassen. Weitere Infos entnehmen Sie dem <a href="{$a}">README</a>.';
+$string['auth_shib_convert_data_description'] = 'Sie können diese API nutzen, um die von Shibboleth bereitgestellten Daten anzupassen. Weitere Infos: <a href="{$a}">README</a>.';
 $string['auth_shib_convert_data_filepath_warning'] = 'Sie können keine Datei verwenden, die sich im aktuellen Website-Datenverzeichnis befindet ($CFG->dataroot) wie die Datenänderungs-API.';
 $string['auth_shib_convert_data_warning'] = 'Die Datei existiert nicht oder ist vom Server nicht lesbar.';
 $string['auth_shib_idp_list'] = 'Identity-Provider';

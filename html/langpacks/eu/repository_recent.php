@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'eu', version '3.8'.
+ * Strings for component 'repository_recent', language 'eu', version '3.11'.
  *
  * @package     repository_recent
  * @category    string
@@ -33,3 +33,5 @@ $string['pluginname_help'] = 'Oraingo erabiltzaileak duela gutxi erabilitako fit
 $string['privacy:metadata'] = 'Azken fitxategiak biltegi-pluginak ez du datu pertsonalik biltzen edo transmititzen.';
 $string['recent:view'] = 'Ikusi azken fitxategien biltegi-plugina';
 $string['recentfilesnumber'] = 'Azken fitxategi-kopurua';
+$string['timelimit'] = 'Denbora-muga';
+$string['timelimit_help'] = 'Soilik eskuratu denbora-muga hau baino berriagoak diren azken fitxategiak';

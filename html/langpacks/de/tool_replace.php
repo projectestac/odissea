@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'de', version '3.8'.
+ * Strings for component 'tool_replace', language 'de', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,16 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = 'Zu überspringende Tabellen';
+$string['additionalskiptables_desc'] = 'Eine Liste von Tabellen (kommagetrennt), die beim Ausführen des Suchen und Ersetzen in der Datenbank übersprungen werden sollten.';
 $string['cannotfit'] = 'Die Textersetzung ist länger als das Original und ein Verkürzen ist nicht möglich. Der Vorgang wird abgebrochen.';
 $string['disclaimer'] = 'Ja, ich kenne das Risiko!';
 $string['doit'] = 'Ersetzen';
-$string['excludedtables'] = 'Verschiedene Tabellen werden nicht geändert, z.B. configuration, log, events und session';
+$string['excludedtables'] = 'Einige Tabellen werden bei der Textersetzung nicht verändert. Dazu gehören die Tabellen configuration, log, events und session.';
 $string['invalidcharacter'] = 'Im Such- oder im Ersetzungstext wurden ungültige Zeichen gefunden.';
 $string['notifyfinished'] = '... fertig!';
 $string['notifyrebuilding'] = 'Der Cache wird neu aufgebaut...';
 $string['notimplemented'] = 'Diese Option funktioniert nicht mit Ihrer Datenbank.';
-$string['notsupported'] = 'Das Script verändert die Datenbank. Die Änderungen können nicht rückgängig gemacht werden!
-<br />Erstellen Sie unbedingt eine vollständige Sicherung der Datenbank, bevor Sie dieses Script ausführen!';
+$string['notsupported'] = 'Das Script verändert die Datenbank. Die vorgenommenen Änderungen können nicht rückgängig gemacht werden!
+<br />Erstellen Sie unbedingt eine Sicherung der gesamten Datenbank, bevor Sie dieses Script ausführen!';
 $string['pageheader'] = 'Suchen und Ersetzen in der Datenbank';
 $string['pluginname'] = 'Suchen und Ersetzen in der Datenbank';
 $string['privacy:metadata'] = 'Das Plugin \'DB Suchen und Ersetzen\' speichert keine personenbezogenen Daten.';

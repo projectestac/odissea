@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'nl', version '3.8'.
+ * Strings for component 'role', language 'nl', version '3.11'.
  *
  * @package     role
  * @category    string
@@ -104,7 +104,7 @@ $string['category:create'] = 'Categorieën maken';
 $string['category:delete'] = 'Categorieën verwijderen';
 $string['category:manage'] = 'Beheer categorieën';
 $string['category:update'] = 'Categorieën updaten';
-$string['category:viewcourselist'] = 'Bekijk de lijst met cursussen waarvoor u niet bent ingeschreven';
+$string['category:viewcourselist'] = 'Bekijk de cursuscategorie en de cursussen die er in zitten';
 $string['category:viewhiddencategories'] = 'Verborgen categorieën bekijken';
 $string['category:visibility'] = 'Verborgen categorieën bekijken';
 $string['checkglobalpermissions'] = 'Controleer systeemrechten';
@@ -159,6 +159,15 @@ $string['confirmunassign'] = 'Wil je echt deze rol van deze gebruiker verwijdere
 $string['confirmunassignno'] = 'Annuleer';
 $string['confirmunassigntitle'] = 'Bevestig rolwijziging';
 $string['confirmunassignyes'] = 'Verwijder';
+$string['contentbank:access'] = 'Toegang tot de inhoudsbank';
+$string['contentbank:deleteanycontent'] = 'Verwijder alle inhoud uit de inhoudsbank';
+$string['contentbank:deleteowncontent'] = 'Verwijder inhoud uit je eigen inhoudsbank';
+$string['contentbank:downloadcontent'] = 'Download inhoud van de inhoudsbank';
+$string['contentbank:manageanycontent'] = 'Beheer alle inhoud van de inhoudsbank';
+$string['contentbank:manageowncontent'] = 'Beheer inhoud van mijn eigen inhoudsbank';
+$string['contentbank:upload'] = 'Upload nieuwe inhoud in de inhoudsbank';
+$string['contentbank:useeditor'] = 'Maak of bewerk inhoud met de inhoudstype editor';
+$string['contentbank:viewunlistedcontent'] = 'Bekijk niet-vermelde inhoud van de inhoudsbank';
 $string['context'] = 'Context';
 $string['course:activityvisibility'] = 'Tonen/verbergen van activiteiten';
 $string['course:bulkmessaging'] = 'Stuur een boodschap naar meerdere gebruikers';
@@ -169,9 +178,11 @@ $string['course:changelockedcustomfields'] = 'Verander vergrendelde aangepaste v
 $string['course:changeshortname'] = 'Wijzig cursus korte naam';
 $string['course:changesummary'] = 'Cursussamenvatting wijzigen';
 $string['course:configurecustomfields'] = 'Aangepaste velden configureren';
+$string['course:configuredownloadcontent'] = 'Configureer download cursusinhoud';
 $string['course:create'] = 'Cursussen aanmaken';
 $string['course:creategroupconversations'] = 'Maak groepsconversaties';
 $string['course:delete'] = 'Cursussen verwijderen';
+$string['course:downloadcoursecontent'] = 'Download cursusinhoud';
 $string['course:enrolconfig'] = 'Configureer aanmeldingen in cursussen';
 $string['course:enrolreview'] = 'Aanmeldingen in cursussen nakijken';
 $string['course:ignoreavailabilityrestrictions'] = 'Negeer beschikbaarheidsbeperkingen';
@@ -185,6 +196,7 @@ $string['course:managescales'] = 'Schalen beheren';
 $string['course:markcomplete'] = 'Markeer gebruikers als voltooid in cursus voltooiing';
 $string['course:movesections'] = 'Verplaats secties';
 $string['course:overridecompletion'] = 'Overschrijf activiteitsvoltooiingsstatus';
+$string['course:recommendactivity'] = 'Beveel activiteiten aan bij de activiteitenkiezer';
 $string['course:renameroles'] = 'Rollen hernoemen';
 $string['course:request'] = 'Nieuwe cursussen aanvragen';
 $string['course:reset'] = 'Cursus opruimen';
@@ -294,7 +306,7 @@ $string['mainadmin'] = 'Hoofdbeheerder';
 $string['mainadminset'] = 'Hoofdbeheerder instellen';
 $string['manageadmins'] = 'Beheer sitebeheerders';
 $string['manager'] = 'Beheerder';
-$string['managerdescription'] = 'Beheerders hebben toegang tot cursussen en kunnen die aanpassen; Gewoonlijk doen zij niet mee in cursussen.';
+$string['managerdescription'] = 'Beheerders hebben toegang tot cursussen en kunnen die aanpassen, maar gewoonlijk doen zij niet mee in cursussen.';
 $string['manageroles'] = 'Beheer rollen';
 $string['maybeassignedin'] = 'Contexttypes waarin deze rol mag toegewezen worden';
 $string['morethan'] = 'Meer dan {$a}';
@@ -346,6 +358,8 @@ $string['overrideroles'] = 'Rollen overschrijven';
 $string['overriderolesin'] = 'Rollen overschrijven in {$a}';
 $string['overrides'] = 'Rollen overschrijven';
 $string['overridesbycontext'] = 'Overschrijvingen (per context)';
+$string['payment:manageaccounts'] = 'Beheer accounts';
+$string['payment:viewpayments'] = 'Bekijk betalingen';
 $string['permission'] = 'Recht';
 $string['permission_help'] = 'Rechten zijn instellingen van mogelijkheden. Er zijn 4 opties:
 
@@ -464,9 +478,11 @@ $string['site:mnetloginfromremote'] = 'Aanmelden vanaf een externe Moodle met MN
 $string['site:mnetlogintoremote'] = 'Ga naar een externe Moodle met MNet';
 $string['site:readallmessages'] = 'Alle berichten op de site lezen';
 $string['site:restore'] = 'Cursussen terugzetten';
+$string['site:senderrormessage'] = 'Stuur een bericht naar de ondersteunende gebruiker vanaf de foutpagina';
 $string['site:sendmessage'] = 'Stuur berichten naar gelijk welke gebruiker';
 $string['site:trustcontent'] = 'Ingestuurde inhoud vertrouwen';
 $string['site:uploadusers'] = 'Nieuwe gebruikers uploaden van een bestand';
+$string['site:viewanonymousevents'] = 'Bekijk anonieme gebeurtenissen in rapporten';
 $string['site:viewfullnames'] = 'Altijd volledige namen van gebruikers zien';
 $string['site:viewparticipants'] = 'Deelnemers bekijken';
 $string['site:viewreports'] = 'Rapporten bekijken';

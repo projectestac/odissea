@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'sv', version '3.8'.
+ * Strings for component 'block_mnet_hosts', language 'sv', version '3.11'.
  *
  * @package     block_mnet_hosts
  * @category    string
@@ -25,7 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['error_authmnetneeded'] = 'MNet-autentiseringspluginmodulen måste vara aktiverad för att det ska gå att se listan med MNet-servrar.';
+$string['error_localusersonly'] = 'Fjärranvändare kan inte hoppa till andra nätverksservrar från den här värden.';
+$string['error_roamcapabilityneeded'] = 'Användare behöver ha funktionsbehörigheten \'Roama till en extern applikation via MNet\' för att kunna se en lista med MNet-servrar.';
 $string['mnet_hosts:addinstance'] = 'Lägg till nytt Nätverksservrar-block';
 $string['mnet_hosts:myaddinstance'] = 'Lägg till nytt Nätverksservrar-block till Mitt Moodle';
 $string['pluginname'] = 'Nätverksservrar';
+$string['privacy:metadata'] = 'Blocket Nätverksservrar tillåter endast interaktion mellan nätverksservrar och varken lagrar eller exporterar data i sig.';
 $string['server'] = 'Server';

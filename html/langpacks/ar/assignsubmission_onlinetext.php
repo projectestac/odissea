@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'ar', version '3.8'.
+ * Strings for component 'assignsubmission_onlinetext', language 'ar', version '3.11'.
  *
  * @package     assignsubmission_onlinetext
  * @category    string
@@ -30,19 +30,19 @@ $string['default'] = 'ممكّن بشكل افتراضي';
 $string['default_help'] = 'إذا اخترتها، سيتم تمكين هذه الطريقة في التقديم بشكل افتراضي لتقديم كافة الواجبات الجديدة.';
 $string['enabled'] = 'نص في وضع متصل.';
 $string['enabled_help'] = 'إذا مكّن .. يكون الطلاب قادرين على الطباعة النصية مباشرة في حقل التسليم ..';
-$string['eventassessableuploaded'] = 'تم تحميل نص عبر الإنترنت.';
+$string['eventassessableuploaded'] = 'نص عبر الإنترنت تم رفعه';
 $string['nosubmission'] = 'لا يوجد شيء تم تقديمه في هذا الواجب ..!';
 $string['numwords'] = '({$a} كلمات )';
 $string['numwordsforlog'] = 'عدد كلمات التقديم: {$a} كلمة';
 $string['onlinetext'] = 'نص في وضع متصل.';
 $string['onlinetextfilename'] = 'نص في وضع متصل بصيغة هيتمل';
 $string['onlinetextsubmission'] = 'اسمح بالتقديم النصي عبر الإنترنت';
-$string['pluginname'] = 'تقديم نصي عبر الإنترنت ..';
+$string['pluginname'] = 'التسليمات النصية عبر الإنترنت';
 $string['privacy:metadata:assignmentid'] = 'معرف الواجب';
-$string['privacy:metadata:filepurpose'] = 'الملفات المضمنة في تقديم النص.';
-$string['privacy:metadata:submissionpurpose'] = 'معرف الإرسال الذي يرتبط بالإرسالات للمستخدم.';
-$string['privacy:metadata:tablepurpose'] = 'يخزن إرسال النص لكل محاولة.';
-$string['privacy:metadata:textpurpose'] = 'النص الفعلي المقدم لمحاولة التعيين هذه.';
+$string['privacy:metadata:filepurpose'] = 'الملفات المضمنة في تقديم النص';
+$string['privacy:metadata:submissionpurpose'] = 'معرف الإرسال الذي يرتبط بالإرسالات للمستخدم';
+$string['privacy:metadata:tablepurpose'] = 'يخزن إرسال النص لكل محاولة';
+$string['privacy:metadata:textpurpose'] = 'النص الفعلي المقدم لمحاولة التعيين هذه';
 $string['privacy:path'] = 'تقديم النص';
 $string['wordlimit'] = 'كلمة الحد';
 $string['wordlimit_help'] = 'إذا تم تمكين عمليات التسليم النصية عبر الإنترنت، فإن هذا هو الحد الأقصى لعدد الكلمات التي سيسمح لكل طالب بإرسالها.';

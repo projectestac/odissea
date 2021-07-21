@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'eu', version '3.8'.
+ * Strings for component 'qtype_calculatedsimple', language 'eu', version '3.11'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -29,7 +29,7 @@ $string['atleastonewildcard'] = 'Gutxienez aldagai bat <strong>{x..}</strong> iz
 $string['converttocalculated'] = 'Gorde galdera kalkulatu berri gisa';
 $string['findwildcards'] = 'Bilatu itzazu erantzun zuzenaren formuletan dauden aldagaiak {x..}';
 $string['generatenewitemsset'] = 'Sortu';
-$string['newsetwildcardvalues'] = 'Komodin(ar)en balioen ezarpen berria(k)';
+$string['newsetwildcardvalues'] = 'Aldagaien balioen ezarpen berriak';
 $string['pluginname'] = 'Galdera kalkulatu sinplea';
 $string['pluginname_help'] = 'Galdera kalkulatu sinpleek zenbakizko galderak aldagaiak erabiliz sortzea ahalbidetzen dute, galdetegia egiterakoan balioekin ordezkatzen direnak. Galdera kalkulatu sinpleak galdera kalkulatuen aukera erabilienak eskaintzen ditu sortze-interfaze sinpleagoa erabilita.';
 $string['pluginnameadding'] = 'Galdera kalkulatu sinplea gehitzen';
@@ -37,14 +37,14 @@ $string['pluginnameediting'] = 'Galdera kalkulatu sinplea editatzen';
 $string['pluginnamesummary'] = 'Galdera kalkulatuen bertsio sinpleagoa, zenbakizko galderen modukoak direnak baina hauetan erabilitako zenbakiak datu-multzo batetik ausaz aukeratzen dira galdetegia egitean.';
 $string['privacy:metadata'] = 'Galdera kalkulatu sinplea galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['setno'] = '{$a}. multzoa';
-$string['setwildcardvalues'] = 'Komodin(ar)en balioen ezarpena(k)';
+$string['setwildcardvalues'] = 'Aldagaien balioen ezarpenak';
 $string['showitems'] = 'Erakutsi';
-$string['updatewildcardvalues'] = 'Eguneratu komodin(ar)en balioak';
+$string['updatewildcardvalues'] = 'Eguneratu aldagaien balioak';
 $string['useadvance'] = 'Erabili botoi aurreratua erroreak ikusteko';
 $string['wildcard'] = 'Aldagaia: {<strong>{$a}</strong>}';
-$string['wildcardparam'] = 'Balioak sortzeko erabilitako komodinen parametroak';
-$string['wildcardrole'] = 'Komodinak <strong>{x..}</strong>sortutako balioetako zenbakizko balio batekin ordezkatuko dira.';
-$string['wildcardvalues'] = 'Komodin(ar)en balioak';
-$string['wildcardvaluesgenerated'] = 'Komodin(ar)en balioak sortu dira';
+$string['wildcardparam'] = 'Balioak sortzeko erabilitako aldagaien parametroak';
+$string['wildcardrole'] = 'Aldagaiak <strong>{x..}</strong>sortutako balioetako zenbakizko balio batekin ordezkatuko dira.';
+$string['wildcardvalues'] = 'Aldagaien balioak';
+$string['wildcardvaluesgenerated'] = 'Aldagaien balioak sortu dira';
 $string['willconverttocalculated'] = 'Markatuz gero, <strong>Gorde galdera berria bezala</strong> aukerak galdera kalkulatu berri gisa gordeko du.';
-$string['youmustaddatleastonevalue'] = 'Galdera hau gorde baino lehen, komodinetarako hainbat balio gehitu behar dituzu.';
+$string['youmustaddatleastonevalue'] = 'Galdera hau gorde baino lehen, aldagaietarako hainbat balio gehitu behar dituzu.';

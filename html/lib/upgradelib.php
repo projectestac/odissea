@@ -85,6 +85,32 @@ class upgrade_requires_exception extends moodle_exception {
 }
 
 /**
+ * Exception thrown when attempting to install a plugin that declares incompatibility with moodle version
+ *
+ * @package    core
+ * @subpackage upgrade
+ * @copyright  2019 Peter Burnett <peterburnett@catalyst-au.net>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class plugin_incompatible_exception extends moodle_exception {
+    /**
+     * Constructor function for exception
+     *
+     * @param \core\plugininfo\base $plugin The plugin causing the exception
+     * @param int $pluginversion The version of the plugin causing the exception
+     */
+    public function __construct($plugin, $pluginversion) {
+        global $CFG;
+        $a = new stdClass();
+        $a->pluginname      = $plugin;
+        $a->pluginversion   = $pluginversion;
+        $a->moodleversion   = $CFG->branch;
+
+        parent::__construct('pluginunsupported', 'error', "$CFG->wwwroot/$CFG->admin/index.php", $a);
+    }
+}
+
+/**
  * @package    core
  * @subpackage upgrade
  * @copyright  2009 Petr Skoda {@link http://skodak.org}
@@ -430,6 +456,24 @@ function upgrade_stale_php_files_present() {
     global $CFG;
 
     $someexamplesofremovedfiles = array(
+        // Removed in 3.11.
+        '/customfield/edit.php',
+        '/lib/phpunit/classes/autoloader.php',
+        '/lib/xhprof/README',
+        '/message/defaultoutputs.php',
+        '/user/files_form.php',
+        // Removed in 3.10.
+        '/grade/grading/classes/privacy/gradingform_provider.php',
+        '/lib/coursecatlib.php',
+        '/lib/form/htmleditor.php',
+        '/message/classes/output/messagearea/contact.php',
+        // Removed in 3.9.
+        '/course/classes/output/modchooser_item.php',
+        '/course/yui/build/moodle-course-modchooser/moodle-course-modchooser-min.js',
+        '/course/yui/src/modchooser/js/modchooser.js',
+        '/h5p/classes/autoloader.php',
+        '/lib/adodb/readme.txt',
+        '/lib/maxmind/GeoIp2/Compat/JsonSerializable.php',
         // Removed in 3.8.
         '/lib/amd/src/modal_confirm.js',
         '/lib/fonts/font-awesome-4.7.0/css/font-awesome.css',
@@ -576,6 +620,13 @@ function upgrade_plugins($type, $startcallback, $endcallback, $verbose) {
                 throw new upgrade_requires_exception($component, $plugin->version, $CFG->version, $plugin->requires);
             } else if ($plugin->requires < 2010000000) {
                 throw new plugin_defective_exception($component, 'Plugin is not compatible with Moodle 2.x or later.');
+            }
+        }
+
+        // Throw exception if plugin is incompatible with moodle version.
+        if (!empty($plugin->incompatible)) {
+            if ($CFG->branch <= $plugin->incompatible) {
+                throw new plugin_incompatible_exception($component, $plugin->version);
             }
         }
 
@@ -1166,6 +1217,7 @@ function external_update_descriptions($component) {
         $function = $functions[$dbfunction->name];
         unset($functions[$dbfunction->name]);
         $function['classpath'] = empty($function['classpath']) ? null : $function['classpath'];
+        $function['methodname'] = $function['methodname'] ?? 'execute';
 
         $update = false;
         if ($dbfunction->classname != $function['classname']) {
@@ -1215,7 +1267,7 @@ function external_update_descriptions($component) {
         $dbfunction = new stdClass();
         $dbfunction->name       = $fname;
         $dbfunction->classname  = $function['classname'];
-        $dbfunction->methodname = $function['methodname'];
+        $dbfunction->methodname = $function['methodname'] ?? 'execute';
         $dbfunction->classpath  = empty($function['classpath']) ? null : $function['classpath'];
         $dbfunction->component  = $component;
         $dbfunction->capabilities = array_key_exists('capabilities', $function)?$function['capabilities']:'';
@@ -2574,164 +2626,25 @@ function check_libcurl_version(environment_results $result) {
 }
 
 /**
- * Fix how auth plugins are called in the 'config_plugins' table.
+ * Environment check for the php setting max_input_vars
  *
- * For legacy reasons, the auth plugins did not always use their frankenstyle
- * component name in the 'plugin' column of the 'config_plugins' table. This is
- * a helper function to correctly migrate the legacy settings into the expected
- * and consistent way.
- *
- * @param string $plugin the auth plugin name such as 'cas', 'manual' or 'mnet'
+ * @param environment_results $result
+ * @return environment_results|null
  */
-function upgrade_fix_config_auth_plugin_names($plugin) {
-    global $CFG, $DB, $OUTPUT;
-
-    $legacy = (array) get_config('auth/'.$plugin);
-    $current = (array) get_config('auth_'.$plugin);
-
-    // I don't want to rely on array_merge() and friends here just in case
-    // there was some crazy setting with a numerical name.
-
-    if ($legacy) {
-        $new = $legacy;
-    } else {
-        $new = [];
-    }
-
-    if ($current) {
-        foreach ($current as $name => $value) {
-            if (isset($legacy[$name]) && ($legacy[$name] !== $value)) {
-                // No need to pollute the output during unit tests.
-                if (!empty($CFG->upgraderunning)) {
-                    $message = get_string('settingmigrationmismatch', 'core_auth', [
-                        'plugin' => 'auth_'.$plugin,
-                        'setting' => s($name),
-                        'legacy' => s($legacy[$name]),
-                        'current' => s($value),
-                    ]);
-                    echo $OUTPUT->notification($message, \core\output\notification::NOTIFY_ERROR);
-
-                    upgrade_log(UPGRADE_LOG_NOTICE, 'auth_'.$plugin, 'Setting values mismatch detected',
-                        'SETTING: '.$name. ' LEGACY: '.$legacy[$name].' CURRENT: '.$value);
-                }
-            }
-
-            $new[$name] = $value;
+function check_max_input_vars(environment_results $result) {
+    $max = (int)ini_get('max_input_vars');
+    if ($max < 5000) {
+        $result->setInfo('max_input_vars');
+        $result->setStatus(false);
+        if (PHP_VERSION_ID >= 80000) {
+            // For PHP8 this check is required.
+            $result->setLevel('required');
+            $result->setFeedbackStr('settingmaxinputvarsrequired');
+        } else {
+            // For PHP7 this check is optional (recommended).
+            $result->setFeedbackStr('settingmaxinputvars');
         }
+        return $result;
     }
-
-    foreach ($new as $name => $value) {
-        set_config($name, $value, 'auth_'.$plugin);
-        unset_config($name, 'auth/'.$plugin);
-    }
-}
-
-/**
- * Populate the auth plugin settings with defaults if needed.
- *
- * As a result of fixing the auth plugins config storage, many settings would
- * be falsely reported as new ones by admin/upgradesettings.php. We do not want
- * to confuse admins so we try to reduce the bewilderment by pre-populating the
- * config_plugins table with default values. This should be done only for
- * disabled auth methods. The enabled methods have their settings already
- * stored, so reporting actual new settings for them is valid.
- *
- * @param string $plugin the auth plugin name such as 'cas', 'manual' or 'mnet'
- */
-function upgrade_fix_config_auth_plugin_defaults($plugin) {
-    global $CFG;
-
-    $pluginman = core_plugin_manager::instance();
-    $enabled = $pluginman->get_enabled_plugins('auth');
-
-    if (isset($enabled[$plugin])) {
-        // Do not touch settings of enabled auth methods.
-        return;
-    }
-
-    // We can't directly use {@link core\plugininfo\auth::load_settings()} here
-    // because the plugins are not fully upgraded yet. Instead, we emulate what
-    // that method does. We fetch a temporary instance of the plugin's settings
-    // page to get access to the settings and their defaults. Note we are not
-    // adding that temporary instance into the admin tree. Yes, this is a hack.
-
-    $plugininfo = $pluginman->get_plugin_info('auth_'.$plugin);
-    $adminroot = admin_get_root();
-    $ADMIN = $adminroot;
-    $auth = $plugininfo;
-
-    $section = $plugininfo->get_settings_section_name();
-    $settingspath = $plugininfo->full_path('settings.php');
-
-    if (file_exists($settingspath)) {
-        $settings = new admin_settingpage($section, 'Emulated settings page for auth_'.$plugin, 'moodle/site:config');
-        include($settingspath);
-
-        if ($settings) {
-            admin_apply_default_settings($settings, false);
-        }
-    }
-}
-
-/**
- * Search for a given theme in any of the parent themes of a given theme.
- *
- * @param string $needle The name of the theme you want to search for
- * @param string $themename The name of the theme you want to search for
- * @param string $checkedthemeforparents The name of all the themes already checked
- * @return bool True if found, false if not.
- */
-function upgrade_theme_is_from_family($needle, $themename, $checkedthemeforparents = []) {
-    global $CFG;
-
-    // Once we've started checking a theme, don't start checking it again. Prevent recursion.
-    if (!empty($checkedthemeforparents[$themename])) {
-        return false;
-    }
-    $checkedthemeforparents[$themename] = true;
-
-    if ($themename == $needle) {
-        return true;
-    }
-
-    if ($themedir = upgrade_find_theme_location($themename)) {
-        $THEME = new stdClass();
-        require($themedir . '/config.php');
-        $theme = $THEME;
-    } else {
-        return false;
-    }
-
-    if (empty($theme->parents)) {
-        return false;
-    }
-
-    // Recursively search through each parent theme.
-    foreach ($theme->parents as $parent) {
-        if (upgrade_theme_is_from_family($needle, $parent, $checkedthemeforparents)) {
-            return true;
-        }
-    }
-    return false;
-}
-
-/**
- * Finds the theme location and verifies the theme has all needed files.
- *
- * @param string $themename The name of the theme you want to search for
- * @return string full dir path or null if not found
- * @see \theme_config::find_theme_location()
- */
-function upgrade_find_theme_location($themename) {
-    global $CFG;
-
-    if (file_exists("$CFG->dirroot/theme/$themename/config.php")) {
-        $dir = "$CFG->dirroot/theme/$themename";
-    } else if (!empty($CFG->themedir) and file_exists("$CFG->themedir/$themename/config.php")) {
-        $dir = "$CFG->themedir/$themename";
-    } else {
-        return null;
-    }
-
-    return $dir;
+    return null;
 }

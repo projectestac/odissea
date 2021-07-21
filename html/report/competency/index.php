@@ -22,6 +22,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use core\report_helper;
+
 require_once(__DIR__ . '/../../config.php');
 
 $id = required_param('id', PARAM_INT);
@@ -71,9 +73,14 @@ $PAGE->set_title($title);
 $PAGE->set_heading($coursename);
 $PAGE->set_pagelayout('incourse');
 
+report_helper::save_selected_report($id, $navurl);
+
 $output = $PAGE->get_renderer('report_competency');
 
 echo $output->header();
+$pluginname = get_string('pluginname', 'report_competency');
+report_helper::print_report_selector($pluginname);
+
 $baseurl = new moodle_url('/report/competency/index.php');
 $nav = new \report_competency\output\user_course_navigation($currentuser, $course->id, $baseurl, $currentmodule);
 $top = $output->render($nav);
@@ -81,7 +88,7 @@ if ($currentuser > 0) {
     $user = core_user::get_user($currentuser);
     $usercontext = context_user::instance($currentuser);
     $userheading = array(
-        'heading' => fullname($user),
+        'heading' => fullname($user, has_capability('moodle/site:viewfullnames', $context)),
         'user' => $user,
         'usercontext' => $usercontext
     );

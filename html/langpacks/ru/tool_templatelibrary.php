@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_templatelibrary', language 'ru', version '3.8'.
+ * Strings for component 'tool_templatelibrary', language 'ru', version '3.11'.
  *
  * @package     tool_templatelibrary
  * @category    string
@@ -27,12 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Все компоненты';
 $string['component'] = 'Компонент';
+$string['core'] = 'Ядро';
 $string['coresubsystem'] = 'Подсистема ({$a})';
 $string['documentation'] = 'Документация';
 $string['example'] = 'Пример';
 $string['noresults'] = 'Нет результатов';
 $string['notemplateselected'] = 'Шаблон не выбран';
 $string['pluginname'] = 'Библиотека шаблонов';
+$string['privacy:metadata'] = 'Плагин библиотеки шаблонов не хранит никаких личных данных.';
 $string['search'] = 'Найти';
 $string['searchtemplates'] = 'Поиск шаблонов';
 $string['templatehasnoexample'] = 'Этот шаблон не имеет примера контекста, поэтому он не может быть показан здесь. Чтобы добавить пример контекста для этого шаблона, вставьте в Mustache комментарий «Пример контекста (json):», за которым следует пример контекста для шаблона, закодированного json.';

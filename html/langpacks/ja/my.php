@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ja', version '3.8'.
+ * Strings for component 'my', language 'ja', version '3.11'.
  *
  * @package     my
  * @category    string
@@ -42,3 +42,4 @@ $string['reseterror'] = 'あなたのページのリセット中にエラーが�
 $string['reseteveryonesdashboard'] = 'すべてのユーザのダッシュボードをリセットする';
 $string['reseteveryonesprofile'] = 'すべてのユーザのプロファイルをリセットする';
 $string['resetpage'] = 'ページをデフォルトにリセットする';
+$string['resettingdashboards'] = 'ユーザダッシュボードをデフォルトにリセットする ...';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'es', version '3.8'.
+ * Strings for component 'role', language 'es', version '3.11'.
  *
  * @package     role
  * @category    string
@@ -126,6 +126,12 @@ $string['confirmunassign'] = '¿Está seguro de que quiere eliminar este rol a e
 $string['confirmunassignno'] = 'Cancelar';
 $string['confirmunassigntitle'] = 'Confirmar cambio de rol';
 $string['confirmunassignyes'] = 'Eliminar';
+$string['contentbank:access'] = 'Acceder al banco de contenido';
+$string['contentbank:deleteanycontent'] = 'Eliminar cualquier contenido del banco de contenido';
+$string['contentbank:deleteowncontent'] = 'Eliminar contenido del banco de contenido propio';
+$string['contentbank:manageanycontent'] = 'Gestionar cualquier contenido desde el banco de contenido';
+$string['contentbank:manageowncontent'] = 'Gestionar cualquier contenido desde su banco propio de contenido';
+$string['contentbank:upload'] = 'Subir nuevo contenido al banco de contenido';
 $string['context'] = 'Contexto';
 $string['course:activityvisibility'] = 'Ocultar/mostrar actividades';
 $string['course:bulkmessaging'] = 'Enviar un mensaje a mucha gente';
@@ -134,8 +140,10 @@ $string['course:changefullname'] = 'Cambiar el nombre completo del curso';
 $string['course:changeidnumber'] = 'Cambiar el número ID del curso';
 $string['course:changeshortname'] = 'Cambiar el nombre corto del curso';
 $string['course:changesummary'] = 'Cambiar el resumen del curso';
+$string['course:configuredownloadcontent'] = 'Configurar descargar contenido del curso';
 $string['course:create'] = 'Crear cursos';
 $string['course:delete'] = 'Eliminar cursos';
+$string['course:downloadcoursecontent'] = 'Descargar contenido del curso';
 $string['course:enrolconfig'] = 'Configurar ejemplos de matriculación en cursos';
 $string['course:enrolreview'] = 'Revisar matriculaciones del curso';
 $string['course:ignoreavailabilityrestrictions'] = 'Ignorar restricciones de acceso';
@@ -306,11 +314,10 @@ $string['question:useall'] = 'Usar todas las preguntas';
 $string['question:usemine'] = 'Usar sus propias preguntas';
 $string['question:viewall'] = 'Ver todas las preguntas';
 $string['question:viewmine'] = 'Ver sus propias preguntas';
-$string['rating:rate'] = 'Añada las calificaciones a los elementos';
-$string['rating:view'] = 'Ver la calificación total recibida';
-$string['rating:viewall'] = 'Ver todas las calificaciones emitidas por los usuarios
-';
-$string['rating:viewany'] = 'Ver el total de calificaciones que alguien recibió';
+$string['rating:rate'] = 'Añadir las calificaciones a los elementos';
+$string['rating:view'] = 'Ver la valoración total recibida';
+$string['rating:viewall'] = 'Ver todas las valoraciones emitidas por los usuarios';
+$string['rating:viewany'] = 'Ver el total de valoraciones que alguien recibió';
 $string['resetrole'] = 'Restablecer';
 $string['resettingrole'] = 'Restableciendo rol \'{$A}\'';
 $string['restore:configure'] = 'Configurar opciones de restauración';

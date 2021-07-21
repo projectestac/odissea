@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'eu', version '3.8'.
+ * Strings for component 'url', language 'eu', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -66,13 +66,13 @@ $string['modulenameplural'] = 'URLak';
 $string['page-mod-url-x'] = 'URL moduluaren edozein orria';
 $string['parameterinfo'] = '&amp;parametroa=aldagaia';
 $string['parametersheader'] = 'URL aldagaiak';
-$string['parametersheader_help'] = 'Moodle barruko aldagai batzuk URLera automatikoki gehitu daitezke. Idatzi zure aldagaiaren izena testu-kutxa bakoitzean eta ondoren aukeratu zein aldagairekin lotu behar den.';
+$string['parametersheader_help'] = 'Atal honek informazioa URLaren barruan bidaltzea ahalbidetzen dizu. Hau erabilgarria da URLa parametroak jasotzen dituen web-orri interaktibo batena bada eta esaterako oraingo erabiltzailearen izena bidali nahi baduzu. Idatzi zure URLko aldagaiaren izena testu-kutxan eta ondoren aukeratu guneko zein aldagairekin lotu behar den.';
 $string['pluginadministration'] = 'URLen kudeaketa';
 $string['pluginname'] = 'URLa';
 $string['popupheight'] = 'Pop-up-aren altuera (pixeletan)';
-$string['popupheightexplain'] = 'Zehaztu zabaltzen den leihoaren altuera lehenetsia.';
+$string['popupheightexplain'] = 'Zehaztu popup leihoaren altuera lehenetsia.';
 $string['popupwidth'] = 'Pop-up-aren zabalera (pixeletan)';
-$string['popupwidthexplain'] = 'Zehaztu zabaltzen den leihoaren zabalera lehenetsia.';
+$string['popupwidthexplain'] = 'Zehaztu popup leihoaren zabalera lehenetsia.';
 $string['printintro'] = 'Erakutsi URLaren deskribapena';
 $string['printintroexplain'] = 'Erakutsi URL deskribapena edukiaren azpian? Erakusteko hainbat motak ez dute erakusten URL izena nahiz eta gaituta egon.';
 $string['privacy:metadata'] = 'URLa baliabide-pluginak ez du datu pertsonalik biltzen.';

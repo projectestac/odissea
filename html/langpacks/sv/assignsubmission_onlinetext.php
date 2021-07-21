@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'sv', version '3.8'.
+ * Strings for component 'assignsubmission_onlinetext', language 'sv', version '3.11'.
  *
  * @package     assignsubmission_onlinetext
  * @category    string
@@ -39,8 +39,11 @@ $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = 'Tillåt online textinlämning';
 $string['pluginname'] = 'Online textinlämningar';
 $string['privacy:metadata:assignmentid'] = 'Uppgifts-ID';
+$string['privacy:metadata:filepurpose'] = 'Filer som är inbäddade i textinlämningen.';
+$string['privacy:metadata:submissionpurpose'] = 'Inlämnings-ID:t som länkar till inlämningar för användaren.';
+$string['privacy:metadata:tablepurpose'] = 'Lagrar textinlämningen för varje försök.';
 $string['privacy:metadata:textpurpose'] = 'Texten som har lämnats in i detta försök för denna uppgift.';
 $string['privacy:path'] = 'Inlämningstext';
-$string['wordlimit'] = 'Maxgräns för antalet ord';
+$string['wordlimit'] = 'Max antal ord';
 $string['wordlimit_help'] = 'Om Online text är aktiverat, är detta maxantalet ord som varje student kan lämna in.';
-$string['wordlimitexceeded'] = 'Maxgränsen för antalet ord i denna inlämningsuppgift är {$a->limit} och du försöker lämna in  {$a->count} ord. Vänligen granska din inlämningsuppgift och försök igen.';
+$string['wordlimitexceeded'] = 'Max antal ord i denna inlämningsuppgift är {$a->limit} och du försöker lämna in {$a->count} ord. Vänligen granska din inlämningsuppgift och försök igen.';

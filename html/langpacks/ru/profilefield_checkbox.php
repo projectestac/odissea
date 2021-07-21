@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_checkbox', language 'ru', version '3.8'.
+ * Strings for component 'profilefield_checkbox', language 'ru', version '3.11'.
  *
  * @package     profilefield_checkbox
  * @category    string
@@ -26,5 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Переключатель';
+$string['privacy:metadata:profilefield_checkbox:data'] = 'Пользовательские данные поля «Флажки» профиля пользователя';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = 'Формат пользовательских данных поля «Флажки» профиля пользователя';
 $string['privacy:metadata:profilefield_checkbox:fieldid'] = 'ID поля профиля';
+$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = 'Дополнительные данные профиля';
 $string['privacy:metadata:profilefield_checkbox:userid'] = 'ID пользователя, данные которого хранятся в поле «Переключатель» профиля пользователя';

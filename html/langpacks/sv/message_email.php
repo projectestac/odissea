@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'sv', version '3.8'.
+ * Strings for component 'message_email', language 'sv', version '3.11'.
  *
  * @package     message_email
  * @category    string
@@ -31,7 +31,20 @@ $string['emaildigestunreadmessages'] = 'Olästa meddelanden';
 $string['emaildigestviewallmessages'] = 'Visa alla meddelanden';
 $string['emailonlyfromnoreplyaddress'] = 'Vill du alltid skicka e-post från no-reply adressen?';
 $string['ifemailleftempty'] = 'Lämna tomt för att skicka notiser till {$a}';
+$string['messagedigestemailsubject'] = '{$a}: Meddelandesammandrag';
 $string['pluginname'] = 'E-post';
 $string['privacy:metadata:attachment'] = 'En fil i filsystemet.';
+$string['privacy:metadata:attachname'] = 'Namnet på den bifogade filen (tillägget anger MIME-typen).';
+$string['privacy:metadata:externalpurpose'] = 'Denna information skickas till en extern SMTP-server som slutligen levereras som ett e-postmeddelande till mottagaren.';
+$string['privacy:metadata:fullmessage'] = 'Det fullständiga meddelandet i ett givet format.';
+$string['privacy:metadata:fullmessagehtml'] = 'Den fullständiga versionen av meddelandet.';
+$string['privacy:metadata:message_email_messages'] = 'Listan över användare som registrerats via en LTI-leverantör';
+$string['privacy:metadata:message_email_messages:conversationid'] = 'ID:t för konversationen som skickas till';
+$string['privacy:metadata:message_email_messages:messageid'] = 'ID:t för meddelandet som skickas';
+$string['privacy:metadata:message_email_messages:useridto'] = 'ID:et för den användare som tar emot meddelandet';
 $string['privacy:metadata:recipient'] = 'Meddelandemottagaren';
+$string['privacy:metadata:replyto'] = 'E-postadressen att svara på.';
+$string['privacy:metadata:replytoname'] = 'Namn på svar till mottagaren.';
+$string['privacy:metadata:subject'] = 'Meddelandets ämnesrad.';
+$string['privacy:metadata:userfrom'] = 'Användaren som skickar meddelandet.';
 $string['tasksendemail'] = 'Skicka meddelandesammandrag';

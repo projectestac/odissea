@@ -55,20 +55,23 @@ $badgescache = cache::make('core', 'externalbadges');
 
 if ($disconnect && $backpack) {
     require_sesskey();
-    $sitebackpack = badges_get_site_backpack($backpack->externalbackpackid);
-    // If backpack is connected, need to select collections.
-    $bp = new \core_badges\backpack_api($sitebackpack, $backpack);
-    $bp->disconnect_backpack($USER->id, $backpack->id);
-    redirect(new moodle_url('/badges/mybackpack.php'));
+    $sitebackpack = badges_get_user_backpack();
+    if ($sitebackpack->apiversion == OPEN_BADGES_V2P1) {
+        $bp = new \core_badges\backpack_api2p1($sitebackpack);
+        $bp->disconnect_backpack($backpack);
+        redirect(new moodle_url('/badges/mybackpack.php'), get_string('backpackdisconnected', 'badges'), null,
+            \core\output\notification::NOTIFY_SUCCESS);
+    } else {
+        // If backpack is connected, need to select collections.
+        $bp = new \core_badges\backpack_api($sitebackpack, $backpack);
+        $bp->disconnect_backpack($USER->id, $backpack->id);
+        redirect(new moodle_url('/badges/mybackpack.php'));
+    }
 }
 $warning = '';
 if ($backpack) {
 
-    $sitebackpack = badges_get_site_backpack($backpack->externalbackpackid);
-
-    if ($sitebackpack->id != $CFG->badges_site_backpack) {
-        $warning = $OUTPUT->notification(get_string('backpackneedsupdate', 'badges'), 'warning');
-    }
+    $sitebackpack = badges_get_user_backpack();
 
     // If backpack is connected, need to select collections.
     $bp = new \core_badges\backpack_api($sitebackpack, $backpack);
@@ -117,25 +120,33 @@ if ($backpack) {
     $params['backpackid'] = get_user_preferences('badges_email_verify_backpackid');
 
     $form = new \core_badges\form\backpack(new moodle_url('/badges/mybackpack.php'), $params);
+    $data = $form->get_submitted_data();
     if ($form->is_cancelled()) {
         redirect(new moodle_url('/badges/mybadges.php'));
-    } else if ($data = $form->get_data()) {
-        // The form may have been submitted under one of the following circumstances:
-        // 1. After clicking 'Connect to backpack'. We'll have $data->email.
-        // 2. After clicking 'Resend verification email'. We'll have $data->email.
-        // 3. After clicking 'Connect using a different email' to cancel the verification process. We'll have $data->revertbutton.
+    } else if ($form->is_submitted()) {
+        if (badges_open_badges_backpack_api($data->externalbackpackid) == OPEN_BADGES_V2P1) {
+            // If backpack is version 2.1 to redirect on the backpack site to login.
+            // User input username/email/password on the backpack site
+            // After confirm the scopes.
+            redirect(new moodle_url('/badges/backpack-connect.php', ['backpackid' => $data->externalbackpackid]));
+        } else if ($data = $form->get_data()) {
+            // The form may have been submitted under one of the following circumstances:
+            // 1. After clicking 'Connect to backpack'. We'll have $data->email.
+            // 2. After clicking 'Resend verification email'. We'll have $data->email.
+            // 3. After clicking 'Connect using a different email' to cancel the verification process. We'll have $data->revertbutton.
 
-        if (isset($data->revertbutton)) {
-            badges_disconnect_user_backpack($USER->id);
-            redirect(new moodle_url('/badges/mybackpack.php'));
-        } else if (isset($data->email)) {
-            if (badges_send_verification_email($data->email, $data->backpackid, $data->backpackpassword)) {
-                $a = get_user_preferences('badges_email_verify_backpackid');
-                redirect(new moodle_url('/badges/mybackpack.php'),
-                    get_string('backpackemailverifypending', 'badges', $data->email),
-                    null, \core\output\notification::NOTIFY_INFO);
-            } else {
-                print_error ('backpackcannotsendverification', 'badges');
+            if (isset($data->revertbutton)) {
+                badges_disconnect_user_backpack($USER->id);
+                redirect(new moodle_url('/badges/mybackpack.php'));
+            } else if (isset($data->backpackemail)) {
+                if (badges_send_verification_email($data->backpackemail, $data->externalbackpackid, $data->password)) {
+                    $a = get_user_preferences('badges_email_verify_backpackid');
+                    redirect(new moodle_url('/badges/mybackpack.php'),
+                        get_string('backpackemailverifypending', 'badges', $data->backpackemail),
+                        null, \core\output\notification::NOTIFY_INFO);
+                } else {
+                    print_error ('backpackcannotsendverification', 'badges');
+                }
             }
         }
     }

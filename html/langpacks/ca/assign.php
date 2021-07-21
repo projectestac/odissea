@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ca', version '3.8'.
+ * Strings for component 'assign', language 'ca', version '3.11'.
  *
  * @package     assign
  * @category    string
@@ -277,6 +277,7 @@ $string['hideshow'] = 'Mostra/Oculta';
 $string['inactiveoverridehelp'] = '* L\'estudiant no té el grup o el rol correcte per realitzar la tramesa.';
 $string['indicator:cognitivedepth'] = 'Tasca cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva assolida per l\'estudiant en una activitat del tipus tasca.';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Tasca en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions, Comenaris a les retroalimentacions, Reenviament després de veure les retroalimentacions)';
 $string['indicator:socialbreadth'] = 'Tasca social';
 $string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en l\'abast social assolit per l\'estudiant en una activitat del tipus tasca.';
 $string['instructionfiles'] = 'Fitxers amb instruccions';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'pt', version '3.8'.
+ * Strings for component 'user', language 'pt', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,8 +25,27 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Adicionar condição';
+$string['adverbfor_and'] = 'e';
+$string['adverbfor_andnot'] = 'e';
+$string['adverbfor_or'] = 'ou';
+$string['applyfilters'] = 'Aplicar filtros';
+$string['clearfilterrow'] = 'Remover linha de filtro';
+$string['clearfilters'] = 'Limpar filtros';
+$string['clearfilterselection'] = 'Remover "{$a}" do filtro';
+$string['countparticipantsfound'] = '{$a} participantes encontrados';
+$string['filterbykeyword'] = 'Palavra-chave';
+$string['filterrowlegend'] = 'Filtro {$a}';
+$string['filtersetmatchdescription'] = 'Como devem ser combinados vários filtros';
+$string['filtertype'] = 'Tipo de filtro';
+$string['match'] = 'Corresponde a';
+$string['matchofthefollowing'] = 'dos seguintes:';
+$string['moodlenetprofile'] = 'Perfil MoodleNet';
+$string['moodlenetprofile_help'] = 'Este campo serve para vincular o seu perfil MoodleNet ao Moodle. O campo aceita URI compatível com WebFinger.';
+$string['placeholdertype'] = 'Tipo...';
+$string['placeholdertypeorselect'] = 'Digite ou selecione...';
 $string['privacy:courserequestpath'] = 'Solicitação de disciplinas';
-$string['privacy:descriptionpath'] = 'Descrição de perfil';
+$string['privacy:descriptionpath'] = 'Descrição do perfil';
 $string['privacy:devicespath'] = 'Dispositivos de utilizador';
 $string['privacy:draftfilespath'] = 'Ficheiros de rascunho';
 $string['privacy:lastaccesspath'] = 'Último acesso à disciplina';
@@ -43,7 +62,7 @@ $string['privacy:metadata:confirmed'] = 'Se é um utilizador ativo ou não.';
 $string['privacy:metadata:country'] = 'O país em que está o utilizador';
 $string['privacy:metadata:courseid'] = 'ID da disciplina';
 $string['privacy:metadata:currentlogin'] = 'A autenticação atual deste utilizador.';
-$string['privacy:metadata:data'] = 'Dados relacionados com o campo de perfil customizado deste utilizador.';
+$string['privacy:metadata:data'] = 'Dados relacionados com o campo de perfil personalizado deste utilizador.';
 $string['privacy:metadata:deleted'] = 'A marca para mostrar se o utilizador tem sido eliminado ou não.';
 $string['privacy:metadata:department'] = 'O departamento em que este utilizador pode ser encontrado.';
 $string['privacy:metadata:description'] = 'Detalhes gerais sobre este utilizador';
@@ -51,7 +70,7 @@ $string['privacy:metadata:devicename'] = 'Nome do dispositivo, occam ou iPhone, 
 $string['privacy:metadata:devicetablesummary'] = 'Esta tabela armazena informação do serviço móvel do utilizador para enviar notificações PUSH.';
 $string['privacy:metadata:email'] = 'Um endereço de e-mail para contacto';
 $string['privacy:metadata:emailstop'] = 'Uma preferência para desativar o envio de notificações para o utilizador.';
-$string['privacy:metadata:fieldid'] = 'O ID relacionado com o campo de perfil costumado.';
+$string['privacy:metadata:fieldid'] = 'O ID relacionado com o campo de perfil personalizado.';
 $string['privacy:metadata:filelink'] = 'Há múltiplos ficheiros diferentes do utilizador armazenados na tabela de ficheiros.';
 $string['privacy:metadata:firstaccess'] = 'A hora de quando este utilizador acedeu pela primeira vez ao site.';
 $string['privacy:metadata:firstip'] = 'O primeiro endereço IP registado';
@@ -77,6 +96,7 @@ $string['privacy:metadata:maildisplay'] = 'A preferência do utilizador sobre a 
 $string['privacy:metadata:middlename'] = 'O nome do meio do utilizador';
 $string['privacy:metadata:mnethostid'] = 'Um identificador para o anfitrião MNet, se usado';
 $string['privacy:metadata:model'] = 'O nome do dispositivo, occam ou iPhone, etc...';
+$string['privacy:metadata:moodlenetprofile'] = 'O perfil MoodleNet para o utilizador';
 $string['privacy:metadata:msn'] = 'O identificador MSN do utilizador';
 $string['privacy:metadata:my_pages'] = 'Páginas de utilizador - Painel do utilizador e perfil. Esta tabela não contém dados pessoais e é usada apenas para ligar blocos do painel do utilizador ao utilizador';
 $string['privacy:metadata:my_pages:name'] = 'Nome da página';
@@ -128,6 +148,7 @@ $string['privacy:passwordresetpath'] = 'Reposição de senhas';
 $string['privacy:privatefilespath'] = 'Ficheiros privados';
 $string['privacy:profileimagespath'] = 'Imagens de perfil';
 $string['privacy:sessionpath'] = 'Dados de sessão';
+$string['selectfiltertype'] = 'Selecione';
 $string['target:upcomingactivitiesdue'] = 'Atividades com data limite próxima';
 $string['target:upcomingactivitiesdue_help'] = 'Esta meta gera lembretes para as atividades com data limite próxima.';
 $string['target:upcomingactivitiesdueinfo'] = 'Todas as perceções sobre "atividades a terminar brevemente". Estes alunos receberam estas perceções diretamente.';

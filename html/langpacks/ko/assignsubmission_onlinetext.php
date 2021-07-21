@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'ko', version '3.8'.
+ * Strings for component 'assignsubmission_onlinetext', language 'ko', version '3.11'.
  *
  * @package     assignsubmission_onlinetext
  * @category    string
@@ -37,4 +37,5 @@ $string['onlinetext'] = '온라인 텍스트';
 $string['onlinetextfilename'] = 'onlinetext.html';
 $string['onlinetextsubmission'] = '온라인 텍스트 제출 허용';
 $string['pluginname'] = '온라인 텍스트 제출';
-$string['wordlimitexceeded'] = '과제의 글자수 제한은 {$a->limit}글자이고 현재 {$a->count}글자 작성하셨습니다. 검토 후 다시 시도해보세요.';
+$string['wordlimit'] = '글자수 제한';
+$string['wordlimitexceeded'] = '과제의 글자수 제한은 {$a->limit}글자이고 현재 {$a->count}글자 작성하셨습니다. 수정 후 다시 시도해보세요.';

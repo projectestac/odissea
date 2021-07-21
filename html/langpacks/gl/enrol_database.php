@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'gl', version '3.8'.
+ * Strings for component 'enrol_database', language 'gl', version '3.11'.
  *
  * @package     enrol_database
  * @category    string
@@ -34,20 +34,20 @@ $string['dbname'] = 'Nome da base de datos';
 $string['dbname_desc'] = 'Déixeo baleiro se usa un nome DSN na máquina da base de datos.';
 $string['dbpass'] = 'Contrasinal do servidor';
 $string['dbsetupsql'] = 'Orde de configuración da base de datos';
-$string['dbsetupsql_desc'] = 'Orde SQL para configuración especial da base de datos, que se adoita usar para configurar a codificación da comunicación - exemplo para MySQL e PostgreSQL: <em>SET NAMES \'utf8\'</em>';
+$string['dbsetupsql_desc'] = 'Orde SQL para configuración especial da base de datos, que se adoita usar para configurar a codificación da comunicación, exemplo para MySQL e PostgreSQL: <em>SET NAMES \'utf8\'</em>';
 $string['dbsybasequoting'] = 'Usar comiñas sybase';
-$string['dbsybasequoting_desc'] = 'O escapado do estilo de comiñas simple sybase - que necesita Oracle, MS SQL e algunhas outras bases de datos. Non o use con MySQL!';
+$string['dbsybasequoting_desc'] = 'O escapado do estilo de comiñas simple sybase, que necesita Oracle, MS SQL e algunhas outras bases de datos. Non o use con MySQL!';
 $string['dbtype'] = 'Tipo da base de datos';
 $string['dbtype_desc'] = 'Nome do controlador da base de datos ADOdb, tipo de base de datos externa.';
 $string['dbuser'] = 'Usuario do servidor';
 $string['debugdb'] = 'Depurar ADOdb';
-$string['debugdb_desc'] = 'Depurar a conexión ADOdb cunha base de datos externa - utilícea cando obteña unha páxina en branco durante o inición de sesión. Non é apropiado para sitios en produción!';
+$string['debugdb_desc'] = 'Depurar a conexión ADOdb cunha base de datos externa, utilícea cando obteña unha páxina en branco durante o inición de sesión. Non é apropiado para sitios en produción!';
 $string['defaultcategory'] = 'Nova categoría de curso predeterminada';
 $string['defaultcategory_desc'] = 'A categoría predeterminada para cursos autocreados. Utilízase cando non hai un identificador de nova categoría especificado ou non se atopa.';
 $string['defaultrole'] = 'Rol predeterminado';
 $string['defaultrole_desc'] = 'O rol que se lle asignará de modo predeterminado se non se especifica ningún outro na táboa externa.';
 $string['ignorehiddencourses'] = 'Ignorar cursos agochados';
-$string['ignorehiddencourses_desc'] = 'De estar activado, os usuarios non se poderán matricular en cursos que se confirguren para non estaren dispoñíbeis aos alumnos.';
+$string['ignorehiddencourses_desc'] = 'De estar activado, os usuarios non se poderán matricular en cursos que se configuren para non estaren dispoñíbeis aos alumnos.';
 $string['localcategoryfield'] = 'Campo de categoría local';
 $string['localcoursefield'] = 'Campo de curso local';
 $string['localrolefield'] = 'Campo de rol local';
@@ -55,11 +55,11 @@ $string['localuserfield'] = 'Campo de usuario local.';
 $string['newcoursecategory'] = 'Campo de categoría do novo curso';
 $string['newcoursefullname'] = 'Nome completo do campo do novo curso';
 $string['newcourseidnumber'] = 'Campo do número de ID do novo curso';
-$string['newcourseshortname'] = 'Campo do nome curto do novo curso';
+$string['newcourseshortname'] = 'Campo do nome abreviado do novo curso';
 $string['newcoursetable'] = 'Táboa remota dos novos cursos';
 $string['newcoursetable_desc'] = 'Especifique o nome da táboa que contén a lista de cursos que se deberían crear automaticamente. De estar baleiro significa que non se crearon cursos.';
 $string['pluginname'] = 'Base de datos externa';
-$string['pluginname_desc'] = 'Pode usar unha base de datos externa (de case que calquera clase) para controlar a matrícula. Asúmese que a súa base de datos externa contén cando menso un campo que contén un ID de curso e un curso que contén un ID de usuario. Compáranse contra campos que vostede escolla no curso local e nas táboas de usuarios.';
+$string['pluginname_desc'] = 'Pode usar unha base de datos externa (de case que calquera clase) para controlar a matrícula. Asúmese que a súa base de datos externa contén cando menos un campo que contén un ID de curso e un curso que contén un ID de usuario. Compáranse contra campos que vostede escolla no curso local e nas táboas de usuarios.';
 $string['privacy:metadata'] = 'O engadido de matriculación de base de datos externa non almacena ningún dato persoal.';
 $string['remotecoursefield'] = 'Campo do curso remoto';
 $string['remotecoursefield_desc'] = 'O nome do campo na táboa remota que estamos a usar para casar entradas na táboa do curso.';
@@ -75,6 +75,6 @@ $string['settingsheaderdb'] = 'Conexión coa base de datos externa';
 $string['settingsheaderlocal'] = 'Asignación de campo local';
 $string['settingsheadernewcourses'] = 'Creación de novos cursos';
 $string['settingsheaderremote'] = 'Sincronizar a matrícula remota';
-$string['syncenrolmentstask'] = 'Sincronizar a tarefa de inscricións de bases de datos externas';
+$string['syncenrolmentstask'] = 'Sincronizar a tarefa de matriculación na base de datos externa';
 $string['templatecourse'] = 'Modelo de novo curso';
-$string['templatecourse_desc'] = 'Opcional: cursos autocreados poden copiar a súa configuración do modelo de curso. Escriba aquí o nome curso do modelo de curso.';
+$string['templatecourse_desc'] = 'Opcional: cursos autocreados poden copiar os seus axustes do modelo de curso. Escriba aquí o nome curso do modelo de curso.';

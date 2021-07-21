@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'ar', version '3.8'.
+ * Strings for component 'theme_more', language 'ar', version '3.11'.
  *
  * @package     theme_more
  * @category    string
@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['backgroundimage'] = 'الصورة الخلفية';
+$string['backgroundposition_desc'] = 'موضع الصورة الخلفية.';
+$string['bodybackground'] = 'لون الخلفية';
+$string['contentbackground'] = 'لون خلفية المحتوى الرئيسي';
+$string['contentbackground_desc'] = 'لون خلفية المحتوى الرئيسي للموقع. أتركه خاليًا ليكون بلا لون.';
+$string['footnotedesc'] = 'سيتم عرض كل ما تضيفه إلى مربع النص هذا في تذييل الصفحة عبر موقع مودل الخاص بك.';
 $string['logo'] = 'الشعار';
 $string['privacy:metadata'] = 'مظهر More لا يخزن أي بيانات شخصية عن أيّ مستخدم.';
+$string['secondarybackground'] = 'لون الخلفية الثانوي';
+$string['secondarybackground_desc'] = 'لون الخلفية لأي محتوى ثانوي، مثل الكتل.';
 $string['sitelogo'] = 'شعار الموقع';
 $string['smalllogo'] = 'الشعار الصغير';
+$string['textcolor'] = 'لون النص';

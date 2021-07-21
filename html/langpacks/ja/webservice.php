@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'ja', version '3.8'.
+ * Strings for component 'webservice', language 'ja', version '3.11'.
  *
  * @package     webservice
  * @category    string
@@ -84,7 +84,7 @@ $string['errorcodes'] = 'エラーメッセージ';
 $string['errorcoursecontextnotvalid'] = 'あなたはコースコンテクスト (コースID:{$a->courseid}) 内で関数を実行できません。コンテクストエラーメッセージは次のとおりです: {$a->message}';
 $string['errorinvalidparam'] = 'パラメータ「 {$a} 」が有効ではありません。';
 $string['errornotemptydefaultparamarray'] = 'ウェブサービス記述パラメータ「 {$a} 」は単一または多重構造となっています。 デフォルトでは空の配列のみ使用できます。ウェブサービス記述を確認してください。';
-$string['erroroptionalparamarray'] = 'ウェブサービス記述パラメータ「 {$a} 」は単一または多重構造となっています。VALUE_OPTIONALとして設定することはできません。ウェブサービス記述を確認してください。';
+$string['erroroptionalparamarray'] = 'ウェブサービス記述パラメータ「 {$a} 」は単一または多重構造となっています。VALUE_OPTIONALとして設定できません。ウェブサービス記述を確認してください。';
 $string['eventwebservicefunctioncalled'] = 'ウェブサービス関数がコールされました。';
 $string['eventwebserviceloginfailed'] = 'ウェブサービスのログインに失敗しました。';
 $string['eventwebserviceservicecreated'] = 'ウェブサービスが作成されました。';
@@ -122,7 +122,7 @@ $string['loginrequired'] = 'ログイン済みユーザに制限する';
 $string['manageprotocols'] = 'プロトコルを管理する';
 $string['managetokens'] = 'トークンを管理する';
 $string['missingcaps'] = '不足したケイパビリティ';
-$string['missingcaps_help'] = '選択されたユーザに割り当てられていないサービスの必須ケイパビリティ一覧です。サービスを使用するには不足しているケイパビリティをユーザロールに追加する必要があります。';
+$string['missingcaps_help'] = 'サービスにより宣言されてユーザには割り当てられていないケイパビリティの一覧です。これらのケイパビリティがない場合、一部のサービス機能を利用できません。';
 $string['missingpassword'] = 'パスワードがありません。';
 $string['missingrequiredcapability'] = 'ケイパビリティ {$a} は必須です。';
 $string['missingusername'] = 'ユーザ名がありません。';
@@ -134,7 +134,7 @@ $string['norequiredcapability'] = '必須ケイパビリティなし';
 $string['notoken'] = 'トークンリストが空です。';
 $string['onesystemcontrolling'] = '外部システムによるMoodleのコントロールを許可する';
 $string['onesystemcontrollingdescription'] = '次のステップは外部システムによるMoodleとの相互連携を許可するためのMoodleウェブサービスをあなたが設定するための補助となります。これにはトークン (セキュリティキー) 認証方法のセットアップを含みます。';
-$string['onlyseecreatedtokens'] = 'すべてのトークンは削除できますが、あなたが作成したトークンのみ閲覧できます。';
+$string['onlyseecreatedtokens'] = 'あなたが作成したトークンのみ閲覧できます。';
 $string['operation'] = '操作';
 $string['optional'] = '任意';
 $string['passwordisexpired'] = 'パスワードの有効期限が切れました。';
@@ -212,6 +212,9 @@ $string['token'] = 'トークン';
 $string['tokenauthlog'] = 'トークン認証';
 $string['tokencreatedbyadmin'] = '管理者のみリセットできる (*)';
 $string['tokencreator'] = '作成者';
+$string['tokenfilter'] = 'トークンフィルタ';
+$string['tokenfilterreset'] = 'すべてのトークンを表示する';
+$string['tokenfiltersubmit'] = '合致するトークンのみ表示する';
 $string['unknownoptionkey'] = '不明なオプションキーです ({$a})';
 $string['unnamedstringparam'] = 'ストリングパラメータ名がありません。';
 $string['updateusersettings'] = '更新';

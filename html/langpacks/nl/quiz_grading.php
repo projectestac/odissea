@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'nl', version '3.8'.
+ * Strings for component 'quiz_grading', language 'nl', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(beoordeeld)';
 $string['gradenextungraded'] = 'Beoordeel de volgende {$a} pogingen';
 $string['gradeungraded'] = 'Beoordeel alle {$a} pogingen';
 $string['grading'] = 'Manuele beoordeling';
-$string['grading:componentname'] = 'Rapport manueel beoordelen';
 $string['grading:viewidnumber'] = 'ID-nummers zichtbaar tijdens beoordelen';
 $string['grading:viewstudentnames'] = 'Leerlingnamen zichtbaar tijdens beoordelen';
 $string['gradingall'] = 'Alle {$a} pogingen voor deze vraag.';
@@ -71,7 +70,8 @@ $string['nothingfound'] = 'Niets om te tonen';
 $string['options'] = 'Opties';
 $string['orderattempts'] = 'Rangschik pogingen';
 $string['pluginname'] = 'Manueel beoordelen';
-$string['privacy:metadata'] = 'De test manueel beoordelen-plugin bewaart geen persoonlijke gegevens. Het geeft een interface voor gebruikers om gegevens te kunnen bewaren zonder zelf gegevens te bewaren.';
+$string['privacy:preference:order'] = 'De volgorde waarin te beoordelen pogingen getoond worden.';
+$string['privacy:preference:pagesize'] = 'Het aantal te tonen pogingen per pagina van de beoordelingsinterface.';
 $string['qno'] = 'V#';
 $string['questionname'] = 'Vraagnaam';
 $string['questionsperpage'] = 'Vragen per pagina';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'eu', version '3.8'.
+ * Strings for component 'qtype_match', language 'eu', version '3.11'.
  *
  * @package     qtype_match
  * @category    string
@@ -42,6 +42,9 @@ $string['pluginname_help'] = 'Entzuntziatu lotu izeneko galderetan izen-zerrenda
 $string['pluginnameadding'] = 'Lotu galdera gehitzen';
 $string['pluginnameediting'] = 'Lotu galdera editatzen';
 $string['pluginnamesummary'] = 'Azpigaldera multzo bateko bakoitzeko erantzuna aukera-zerrenda batetik aukeratu behar da.';
-$string['privacy:metadata'] = 'Lotu galdera mota pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Lotu galdera mota pluginak egileari aukera lehenetsiak erabiltzaile hobespen gisa gordetzea baimentzen dio.';
+$string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
+$string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
+$string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu behar diren edo ez.';
 $string['shuffle'] = 'Nahastu';
 $string['shuffle_help'] = 'Gaituz gero, saiakera bakoitzean erantzunak ausaz ordenatzen dirak, betiere galdetegiaren ezarpenetako "Galderen barruan nahastu" ezarpenean "Bai" ezarrita badago.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_missing', language 'el', version '3.8'.
+ * Strings for component 'qbehaviour_missing', language 'el', version '3.11'.
  *
  * @package     qbehaviour_missing
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Έλλειψη συμπεριφοράς';
+$string['pluginname'] = 'Ελλείπουσα συμπεριφορά';
 $string['privacy:metadata'] = 'Το πρόσθετο συμπεριφοράς ερώτησης «Ελλείπουσα συμπεριφορά» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['questionusedunknownmodel'] = 'Αυτή η ερώτηση επιχειρήθηκε με μια συμπεριφορά που δεν είναι διαθέσιμη προς το παρόν. Η ερώτηση εμφανίζεται όσο το δυνατόν καλύτερα, αλλά ορισμένα τμήματα μπορεί να λείπουν ή να είναι λανθασμένα.';

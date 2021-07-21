@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'sv', version '3.8'.
+ * Strings for component 'availability_profile', language 'sv', version '3.11'.
  *
  * @package     availability_profile
  * @category    string
@@ -40,7 +40,7 @@ $string['op_isequalto'] = 'är lika med';
 $string['op_isnotempty'] = 'är inte tomt';
 $string['op_startswith'] = 'börjar med';
 $string['pluginname'] = 'Begränsning via profil';
-$string['privacy:metadata'] = 'Pluginmodulen Begränsning via profil lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Begränsning via profil lagrar ingen personinformation.';
 $string['requires_contains'] = 'Fältet <strong>{$a->field}</strong> innehåller <strong>{$a->value}</strong>';
 $string['requires_doesnotcontain'] = 'Fältet <strong>{$a->field}</strong> innehåller inte <strong>{$a->value}</strong>';
 $string['requires_endswith'] = 'Fältet <strong>{$a->field}</strong> slutar med <strong>{$a->value}</strong>';

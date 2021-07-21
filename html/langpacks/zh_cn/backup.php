@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'backup', language 'zh_cn', version '3.8'.
+ * Strings for component 'backup', language 'zh_cn', version '3.11'.
  *
  * @package     backup
  * @category    string
@@ -130,6 +130,7 @@ $string['configgeneralblocks'] = '缺省情况下，备份是否包含各个版�
 $string['configgeneralcalendarevents'] = '设置默认在备份中包括日历事件。';
 $string['configgeneralcomments'] = '缺省情况下，备份是否包含评论。';
 $string['configgeneralcompetencies'] = '设置默认在备份中包含能力。';
+$string['configgeneralcontentbankcontent'] = '设置在备份中包含内容库内容的默认值。';
 $string['configgeneralfiles'] = '设置备份中包含文件的默认值。请注意：禁用此设置将导致只包含对文件的引用的备份。如果备份在同一站点上还原，并且文件没有根据设置“清理垃圾桶文件”（filescanneupperiod）删除，则这不是问题。';
 $string['configgeneralfilters'] = '缺省情况下，备份是否包含过滤器。';
 $string['configgeneralgroups'] = '为包括在分组和备份中的分组设置默认值。';
@@ -147,6 +148,7 @@ $string['configrestoreblocks'] = '设置恢复版块的默认值。';
 $string['configrestorecalendarevents'] = '设置恢复日历事件的默认值。';
 $string['configrestorecomments'] = '设置恢复评论的默认值。';
 $string['configrestorecompetencies'] = '设置恢复能力的默认值。';
+$string['configrestorecontentbankcontent'] = '设置恢复内容库内容的默认值。';
 $string['configrestoreenrolments'] = '设置恢复选课方法的默认值。';
 $string['configrestorefilters'] = '设置恢复过滤器的默认值。';
 $string['configrestoregroups'] = '设置还原组和分组 (如果它们包含在备份中) 的默认值。';
@@ -164,6 +166,21 @@ $string['confirmcancelrestore'] = '取消恢复';
 $string['confirmcancelyes'] = '取消备份';
 $string['confirmnewcoursecontinue'] = '新课程警告';
 $string['confirmnewcoursecontinuequestion'] = '课程恢复过程中会创建一个临时（隐藏）课程。点击放弃按钮放弃恢复。恢复过程中不要关闭浏览器。';
+$string['copiesinprogress'] = '这门课的副本正在进行中。<a href=“{$a}”>查看正在进行的副本</a>';
+$string['copycoursedesc'] = '当前课程将被复制并放到选定的课程目录中';
+$string['copycourseheading'] = '复制课程';
+$string['copycoursetitle'] = '复制课程：{$a}';
+$string['copydest'] = '目的地';
+$string['copyformfail'] = '当然，AJAX提交副本表单失败了。';
+$string['copyingcourse'] = '正在复制课程';
+$string['copyingcourseshortname'] = '复制';
+$string['copyop'] = '当前操作';
+$string['copyprogressheading'] = '正在制作课程副本';
+$string['copyprogressheading_help'] = '此表显示所有未完成课程副本的状态。';
+$string['copyprogresstitle'] = '课程复制进度';
+$string['copyreturn'] = '复制并返回';
+$string['copysource'] = '来源';
+$string['copyview'] = '复制和查看';
 $string['coursecategory'] = '此课程要恢复到的分类';
 $string['courseid'] = '原ID';
 $string['coursesettings'] = '课程设置';
@@ -205,6 +222,7 @@ $string['generalblocks'] = '包括版块';
 $string['generalcalendarevents'] = '包括日历事件';
 $string['generalcomments'] = '包括评论';
 $string['generalcompetencies'] = '包括能力';
+$string['generalcontentbankcontent'] = '包括内容库内容';
 $string['generalenrolments'] = '包括选课方法';
 $string['generalfiles'] = '包括文件';
 $string['generalfilters'] = '包括过滤器';
@@ -248,6 +266,8 @@ $string['includeuserinfo'] = '用户数据';
 $string['inprogress'] = '正在备份';
 $string['jumptofinalstep'] = '跳到最后一步';
 $string['keep'] = '保留';
+$string['keptroles'] = '包括角色注册';
+$string['keptroles_help'] = '具有所选角色的用户将注册到新课程中。除非启用“包含用户数据”，否则不会复制任何用户数据。';
 $string['locked'] = '锁定';
 $string['lockedbyconfig'] = '此设置已被默认备份设置锁定';
 $string['lockedbyhierarchy'] = '因依赖关系而锁定';
@@ -329,6 +349,7 @@ $string['rootsettingblocks'] = '包括版块';
 $string['rootsettingcalendarevents'] = '包括日历事件';
 $string['rootsettingcomments'] = '包括评论';
 $string['rootsettingcompetencies'] = '包含能力';
+$string['rootsettingcontentbankcontent'] = '包括内容库内容';
 $string['rootsettingcustomfield'] = '包括自定义字段';
 $string['rootsettingenrolments'] = '包括选课方法';
 $string['rootsettingenrolments_always'] = '是的，总是这样';
@@ -374,6 +395,7 @@ $string['storagecourseandexternal'] = '课程备份文件区和指定的目录';
 $string['storagecourseonly'] = '课程备份文件区';
 $string['storageexternalonly'] = '指定自动备份的目录';
 $string['successful'] = '备份成功';
+$string['successfulcopy'] = '复制成功';
 $string['successfulrestore'] = '恢复成功';
 $string['timetaken'] = '耗时';
 $string['title'] = '标题';
@@ -381,4 +403,6 @@ $string['totalcategorysearchresults'] = '分类总数：{$a}';
 $string['totalcoursesearchresults'] = '课程总数：{$a}';
 $string['undefinedrolemapping'] = '未定义"{$A}" 结构原型的角色映射。';
 $string['unnamedsection'] = '未命名的小节';
+$string['userdata'] = '包含用户的数据';
+$string['userdata_help'] = '如果启用，论坛帖子、作业提交等数据将被复制到新课程中，供在“包括角色注册”中选择角色的任何用户使用。';
 $string['userinfo'] = '用户的信息';

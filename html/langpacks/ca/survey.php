@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ca', version '3.8'.
+ * Strings for component 'survey', language 'ca', version '3.11'.
  *
  * @package     survey
  * @category    string
@@ -199,6 +199,7 @@ $string['guestsnotallowed'] = 'Els visitants no poden participar en les enqueste
 $string['howlong'] = '¿Quant de temps t’ha portat completar aquest questionari?';
 $string['howlongoptions'] = 'menys de 1 <abbr title=minuto>min.</abbr>, 1-2 <abbr title=minuto>min.</abbr>,  2-3 <abbr title=minuto>min.</abbr>,  3-4 <abbr title=minuto>min.</abbr>,  4-5 <abbr title=minuto>min.</abbr>,  5-10 <abbr title=minuto>min.</abbr>, més de 10 minuts.';
 $string['ifoundthat'] = 'Trobat:';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats d\'Enquesta en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament)';
 $string['introtext'] = 'Text d’introducció';
 $string['invalidsurveyid'] = 'L\'ID de l\'enquesta és incorrecte';
 $string['invalidtmptid'] = 'L\'ID de la plantilla és invàlid';

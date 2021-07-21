@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'gl', version '3.8'.
+ * Strings for component 'report_eventlist', language 'gl', version '3.11'.
  *
  * @package     report_eventlist
  * @category    string
@@ -55,7 +55,7 @@ $string['pluginname'] = 'Lista de eventos';
 $string['privacy:metadata'] = 'O engadido de lista de eventos non almacena ningún dato persoal.';
 $string['read'] = 'ler';
 $string['relatedobservers'] = 'Engadidos que observan este evento';
-$string['since'] = 'Desde';
+$string['since'] = 'Dende';
 $string['teaching'] = 'Ensinando';
 $string['typedeclaration'] = 'Outros parámetros do evento';
 $string['update'] = 'actualizar';

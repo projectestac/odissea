@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'ca', version '3.8'.
+ * Strings for component 'atto_recordrtc', language 'ca', version '3.11'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -53,7 +53,7 @@ $string['insecurealert_title'] = 'Connexió no segura!';
 $string['nearingmaxsize'] = 'Heu adjuntat el nombre màxim d\'enregistraments';
 $string['nearingmaxsize_title'] = 'S\'ha aturat l\'enregistrament';
 $string['norecordingfound'] = 'Pareix que alguna cosa ha fallat, ja que no sembla que s\'hagi enregistrat res';
-$string['norecordingfound_title'] = 'No s\'ha trobat l\'enregistrament';
+$string['norecordingfound_title'] = 'No s\'ha trobat cap enregistrament';
 $string['nowebrtc'] = 'El vostre navegador és massa antic i no ofereix suport per a la tecnologia WebRTC. Utilitzeu un altre navegador (Opera, Chrome, Firefox...) o actualitzeu el vostre';
 $string['nowebrtc_title'] = 'No s\'admet la tecnologia WebRTC';
 $string['onlyaudio'] = 'Només àudio';

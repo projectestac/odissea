@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ru', version '3.8'.
+ * Strings for component 'gradereport_singleview', language 'ru', version '3.11'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -52,7 +52,9 @@ $string['override'] = 'Переопределить';
 $string['overrideall'] = 'Переопределить все оценки';
 $string['overridefor'] = 'Переопределить для {$a}';
 $string['overridenone'] = 'Не переопределять оценки';
+$string['overridenoneconfirm'] = 'Вы собираетесь отключить переопределение оценок. Это удалит все ранее переопределенные оценки. Вы уверены, что хотите продолжить?';
 $string['pluginname'] = 'Одиночный вид';
+$string['privacy:metadata'] = 'В отчете оценок «Одиночный вид» отображаются только данные, хранящиеся в других местах.';
 $string['save'] = 'Сохранить';
 $string['savegrades'] = 'Сохранить оценки';
 $string['savegradessuccess'] = 'Оценки были заданы для {$a} элементов';

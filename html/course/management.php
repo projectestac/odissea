@@ -107,6 +107,7 @@ $PAGE->set_url($url);
 $PAGE->set_pagelayout('admin');
 $PAGE->set_title($strmanagement);
 $PAGE->set_heading($pageheading);
+$PAGE->requires->js_call_amd('core_course/copy_modal', 'init', array($context->id));
 
 // This is a system level page that operates on other contexts.
 require_login();
@@ -454,7 +455,7 @@ if ($viewmode === 'default' || $viewmode === 'combined') {
     }
 }
 if ($viewmode === 'default' || $viewmode === 'combined') {
-    $class .= ' viewmode-cobmined';
+    $class .= ' viewmode-combined';
 } else {
     $class .= ' viewmode-'.$viewmode;
 }
@@ -486,6 +487,9 @@ if (count($notificationsfail) > 0) {
 }
 
 // Start the management form.
+
+echo $renderer->course_search_form($search);
+
 echo $renderer->management_form_start();
 
 echo $renderer->accessible_skipto_links($displaycategorylisting, $displaycourselisting, $displaycoursedetail);
@@ -517,6 +521,5 @@ echo $renderer->grid_end();
 
 // End of the management form.
 echo $renderer->management_form_end();
-echo $renderer->course_search_form($search);
 
 echo $renderer->footer();

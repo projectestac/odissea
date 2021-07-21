@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'es', version '3.8'.
+ * Strings for component 'enrol_database', language 'es', version '3.11'.
  *
  * @package     enrol_database
  * @category    string
@@ -45,7 +45,7 @@ $string['debugdb_desc'] = 'Depurar conexión ADOdb a base de datos externa - se 
 $string['defaultcategory'] = 'Categoría por defecto del nuevo curso';
 $string['defaultcategory_desc'] = 'Categoría por defecto para cursos de creación automática. Usada cuando no se ha especificado o no se ha encontrado el ID de una nueva categoría.';
 $string['defaultrole'] = 'Rol por defecto';
-$string['defaultrole_desc'] = 'Rol que se asigna por defecto si nigún otro rol se especifica en una tabla externa.';
+$string['defaultrole_desc'] = 'Rol que se asigna por defecto si ningún otro rol se especifica en una tabla externa.';
 $string['ignorehiddencourses'] = 'Pasar por alto cursos ocultos';
 $string['ignorehiddencourses_desc'] = 'Si se activa esta opción, los usuarios no serán matriculados en cursos configurados como no disponibles para los estudiantes.';
 $string['localcategoryfield'] = 'Campo de categoría local';
@@ -72,5 +72,6 @@ $string['settingsheaderdb'] = 'Conexión con la base de datos externa';
 $string['settingsheaderlocal'] = 'Asignación de campos locales';
 $string['settingsheadernewcourses'] = 'Creación de nuevos cursos';
 $string['settingsheaderremote'] = 'Sincronización de matriculación remota';
+$string['syncenrolmentstask'] = 'Tarea de sincronización de las  inscripciones por base de datos externa';
 $string['templatecourse'] = 'Nueva plantilla de curso';
 $string['templatecourse_desc'] = 'Opcional: Auto-crear cursos puede copiar su configuración de una plantilla de curso. Escriba aquí el nombre corto de la plantilla de curso.';

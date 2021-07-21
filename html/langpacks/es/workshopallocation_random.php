@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'es', version '3.8'.
+ * Strings for component 'workshopallocation_random', language 'es', version '3.11'.
  *
  * @package     workshopallocation_random
  * @category    string
@@ -35,7 +35,7 @@ $string['assesswosubmission'] = 'Los participantes pueden evaluar sin haber envi
 $string['confignumofreviews'] = 'Número por defecto de envíos para ser asignado al azar';
 $string['excludesamegroup'] = 'Impedir revisiones por pares del mismo grupo';
 $string['noallocationtoadd'] = 'No hay asignaciones que agregar';
-$string['nogroupusers'] = '<p>Advertencia: Si el taller está en el modo de  \'grupos visibles\' o en modo de  \'grupos separados\' , entonces, los usuarios DEBEN DE SER miembros de cuando menos un grupo para poder tener evaluación por pares que les sean asignados por esta herramienta. Los usuarios que no estén agrupados, todavía podrán tener nuevas auto-evaluaciones o que se les remuevan evaluaciones existentes.</p> <p>Estos usuarios actualmente no están en un grupo: {$a}</p>';
+$string['nogroupusers'] = '<p>Advertencia: Si el taller está en el modo de  \'grupos visibles\' o en modo de  \'grupos separados\' , entonces, los usuarios DEBEN SER miembros de cuando menos un grupo para poder tener evaluación por pares que les sean asignados por esta herramienta. Los usuarios que no estén agrupados, todavía podrán tener nuevas auto-evaluaciones o que se les remuevan evaluaciones existentes.</p> <p>Estos usuarios actualmente no están en un grupo: {$a}</p>';
 $string['numofdeallocatedassessment'] = 'Desasignando {$a} evaluación(es)';
 $string['numofrandomlyallocatedsubmissions'] = 'Asignación aleatoria de {$a} entregas';
 $string['numofreviews'] = 'Número de evaluaciones';
@@ -43,6 +43,7 @@ $string['numofselfallocatedsubmissions'] = 'Auto-asignando {$a} envíos(s)';
 $string['numperauthor'] = 'por envío';
 $string['numperreviewer'] = 'por revisor';
 $string['pluginname'] = 'Asignación aleatoria';
+$string['privacy:metadata'] = 'El complemento de asignación aleatoria no almacena ningún dato personal. Los datos personales reales sobre quién va a evaluar a quién son almacenados por el módulo de Taller y forman la base para exportar los detalles de las evaluaciones.';
 $string['randomallocationdone'] = 'Asignación aleatoria realizada';
 $string['removecurrentallocations'] = 'Eliminar asignaciones actuales';
 $string['resultnomorepeers'] = 'No hay más pares disponibles';

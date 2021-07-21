@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'el', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'el', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['authconfirm'] = 'Αυτή η ενέργεια θα παρέχει μόνιμη πρόσβαση API στο Moodle για τον αυθεντικοποιημένο λογαριασμό. Αυτός προορίζεται να χρησιμοποιηθεί ως λογαριασμός συστήματος για τη διαχείριση αρχείων που ανήκουν στο Moodle.';
 $string['authconnected'] = 'Ο λογαριασμός συστήματος είναι πλέον συνδεδεμένος για πρόσβαση εκτός σύνδεσης';
-$string['authnotconnected'] = 'Ο λογαριασμός συστήματος δεν συνδέθηκε για πρόσβαση χωρίς σύνδεση';
+$string['authnotconnected'] = 'Ο λογαριασμός συστήματος δεν συνδέθηκε για πρόσβαση εκτός σύνδεσης';
 $string['configured'] = 'Ρυθμισμένη';
 $string['configuredstatus'] = 'Ρυθμισμένη';
 $string['connectsystemaccount'] = 'Συνδεθείτε σε λογαριασμό συστήματος';
@@ -39,7 +39,9 @@ $string['createnewgoogleissuer'] = 'Δημιουργία νέας υπηρεσί
 $string['createnewissuer'] = 'Δημιουργία νέας προσαρμοσμένης υπηρεσίας';
 $string['createnewmicrosoftissuer'] = 'Δημιουργία νέας υπηρεσίας Microsoft';
 $string['createnewnextcloudissuer'] = 'Δημιουργία νέας υπηρεσίας Nextcloud';
+$string['createnewservice'] = 'Δημιουργία νέας υπηρεσίας:';
 $string['createnewuserfieldmapping'] = 'Δημιουργία νέας αντιστοίχισης πεδίων χρήστη για τον εκδότη «{$a}»';
+$string['custom_service'] = 'Προσαρμοσμένο';
 $string['deleteconfirm'] = 'Είστε σίγουροι ότι θέλετε να διαγράψετε τον εκδότη «{$a}» της ταυτότητας; Όσα πρόσθετα βασίζονται σε αυτόν τον εκδότη θα σταματήσουν να λειτουργούν.';
 $string['deleteendpointconfirm'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε το τελικό σημείο «{$a->endpoint}» για τον εκδότη «{$a->issuer}»; Οποιαδήποτε πρόσθετα εξαρτώνται από αυτό το τελικό σημείο θα σταματήσουν να λειτουργούν.';
 $string['deleteuserfieldmappingconfirm'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε τη χαρτογράφηση πεδίου χρήστη για τον εκδότη «{$a}»;';
@@ -57,6 +59,9 @@ $string['endpointname_help'] = 'Το κλειδί που χρησιμοποιε�
 $string['endpointsforissuer'] = 'Τελικά σημεία για τον εκδότη: {$a}';
 $string['endpointurl'] = 'Διεύθυνση URL';
 $string['endpointurl_help'] = 'Διεύθυνση URL για αυτό το τελικό σημείο. Χρειάζεται πρωτόκολλο https: //.';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Τομείς σύνδεσης';
 $string['issueralloweddomains_help'] = 'Αν οριστεί, αυτή η ρύθμιση είναι μια λίστα με τομείς που χωρίζονται με κόμματα και στους οποίους θα περιορίζονται οι συνδέσεις κατά τη χρήση αυτού του παρόχου.';
 $string['issueralloweddomains_link'] = 'OAuth_2_σύνδεση_τομείς';
@@ -71,6 +76,8 @@ $string['issuerdisabled'] = 'Ο εκδότης ταυτότητας απενερ
 $string['issuerenabled'] = 'Ο εκδότης ταυτότητας ενεργοποιήθηκε';
 $string['issuerimage'] = 'Διεύθυνση URL λογότυπου';
 $string['issuerimage_help'] = 'Μια διεύθυνση URL εικόνας που χρησιμοποιείται για την εμφάνιση ενός λογότυπου για αυτόν τον εκδότη. Μπορεί να εμφανιστεί στη σελίδα σύνδεσης.';
+$string['issuerloginpagename'] = 'Το όνομα που θα εμφανίζεται στη σελίδα σύνδεσης';
+$string['issuerloginpagename_help'] = 'Εάν καθοριστεί, αυτό το όνομα θα χρησιμοποιείται στη σελίδα σύνδεσης αντί για το όνομα της υπηρεσίας.';
 $string['issuerloginparams'] = 'Επιπρόσθετες παράμετροι που περιλαμβάνονται σε ένα αίτημα σύνδεσης.';
 $string['issuerloginparams_help'] = 'Ορισμένα συστήματα απαιτούν πρόσθετες παραμέτρους για ένα αίτημα σύνδεσης για να διαβάσουν το βασικό προφίλ του χρήστη.';
 $string['issuerloginparamsoffline'] = 'Επιπρόσθετες παράμετροι που περιλαμβάνονται σε ένα αίτημα σύνδεσης για πρόσβαση εκτός σύνδεσης.';
@@ -88,7 +95,20 @@ $string['issuersetup'] = 'Λεπτομερείς οδηγίες σχετικά �
 $string['issuersetuptype'] = 'Λεπτομερείς οδηγίες σχετικά με τη ρύθμιση του παρόχου {$a} OAuth 2';
 $string['issuershowonloginpage'] = 'Εμφάνιση στη σελίδα σύνδεσης';
 $string['issuershowonloginpage_help'] = 'Εάν είναι ενεργοποιημένο το πρόσθετο εξακρίβωσης ταυτότητας OAuth 2, αυτός ο εκδότης σύνδεσης θα εμφανίζεται στη σελίδα σύνδεσης για να επιτρέψει στους χρήστες να συνδεθούν με λογαριασμούς από αυτόν τον εκδότη.';
+$string['issuersservicesallow'] = 'Να επιτρέπονται οι υπηρεσίες';
+$string['issuersservicesnotallow'] = 'Να μην επιτρέπονται οι υπηρεσίες';
+$string['issuerusedforinternal'] = 'Εσωτερικές υπηρεσίες';
+$string['issuerusedforlogin'] = 'Σύνδεση';
+$string['issuerusein'] = 'Αυτή η υπηρεσία θα χρησιμοποιηθεί';
+$string['issuerusein_help'] = 'Οι υπηρεσίες OAuth 2 μπορούν να χρησιμοποιηθούν σε εσωτερικές υπηρεσίες, στη σελίδα σύνδεσης ή και στα δύο, εάν χρειάζεται.';
+$string['issueruseineverywhere'] = 'Σελίδα σύνδεσης και εσωτερικές υπηρεσίες';
+$string['issueruseininternalonly'] = 'Μόνο εσωτερικές υπηρεσίες';
+$string['issueruseinloginonly'] = 'Μόνο σελίδα σύνδεσης';
+$string['linkedin_service'] = 'LinkedIn';
+$string['logindisplay'] = 'Εμφάνιση στη σελίδα σύνδεσης ως';
 $string['loginissuer'] = 'Να επιτρέπεται η σύνδεση';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Δεν έχει ρυθμιστεί';
 $string['notdiscovered'] = 'Η ανακάλυψη υπηρεσίας δεν ήταν επιτυχής';
 $string['notloginissuer'] = 'Να μην επιτραπεί η σύνδεση';

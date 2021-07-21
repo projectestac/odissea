@@ -103,12 +103,14 @@ abstract class backup_factory {
         if (!$coursemodule = get_coursemodule_from_id(false, $moduleid)) {
             throw new backup_task_exception('activity_task_coursemodule_not_found', $moduleid);
         }
-        //XTEC ************ AFEGIT - Only enabled modules has to be backup
-        //2015.07.01  @pferre22
-        if (function_exists('is_enabled_in_agora') && !is_enabled_in_agora($coursemodule->modname) ){
+
+        // XTEC ************ AFEGIT - Only enabled modules must be included in backups
+        // 2015.07.01 @pferre22
+        if (function_exists('is_enabled_in_agora') && !is_enabled_in_agora($coursemodule->modname)) {
             throw new backup_task_exception('activity_task_coursemodule_not_found', $moduleid);
         }
-        //************ FI
+        // ************ FI
+
         $classname = 'backup_' . $coursemodule->modname . '_activity_task';
         return new $classname($coursemodule->name, $moduleid);
     }

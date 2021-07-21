@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'sv', version '3.8'.
+ * Strings for component 'qtype_ddmarker', language 'sv', version '3.11'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -64,11 +64,11 @@ $string['formerror_nosemicolons'] = 'Det saknas semikolon i din koordinatsträng
 $string['formerror_onlysometagsallowed'] = 'Endast "{$a}"-etiketter är tillåtna för en marköretikett.';
 $string['formerror_onlyusewholepositivenumbers'] = 'Vänligen använd endast positiva heltal för att ange x, y koordinater och/ eller bredd och höjd av former. Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
 $string['formerror_polygonmusthaveatleastthreepoints'] = 'För en polygon-form måste du specificera minst 3 punkter. Varje punkt måste vara unik.  Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
-$string['formerror_repeatedpoint'] = 'Du har angivit samma koordinater dubbelt. Varje punkt måste vara unik.  Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
+$string['formerror_repeatedpoint'] = 'Du har angivit samma koordinater dubbelt. Varje punkt måste vara unik. Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
 $string['formerror_shapeoutsideboundsofbgimage'] = 'Formen du definierat sträcker sig utanför området som utgörs av bakgrundsbilden.';
-$string['formerror_toomanysemicolons'] = 'Det är för många semikolonseparerade delar bland koordinaterna du angivit.  Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
-$string['formerror_unrecognisedwidthheightpart'] = 'Den angivna bredden och höjden går inte att känna igen.  Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
-$string['formerror_unrecognisedxypart'] = 'De x,y-koordinater du angivit går inte att känna igen.  Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
+$string['formerror_toomanysemicolons'] = 'Det är för många semikolonseparerade delar bland koordinaterna du angivit. Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
+$string['formerror_unrecognisedwidthheightpart'] = 'Den angivna bredden och höjden går inte att känna igen. Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
+$string['formerror_unrecognisedxypart'] = 'De x,y-koordinater du angivit går inte att känna igen. Koordinaterna för en {$a->shape} ska uttryckas som - {$a->coordsstring}.';
 $string['infinite'] = 'oändligt';
 $string['marker'] = 'Markör';
 $string['marker_n'] = 'Markör {no}';
@@ -83,7 +83,10 @@ $string['pluginnameediting'] = 'Redigerar dra och släpp-markörer';
 $string['pluginnamesummary'] = 'Markörer dras och släpps på bakgrundsbilden. Observera: Denna frågetyp är inte tillgänglig för användare med synnedsättning.';
 $string['previewareaheader'] = 'Förhandsgranska';
 $string['previewareamessage'] = 'Välj en fil med bakgrundsbilden, ange textetiketter som markörer och definiera släppzoner i vilka markörerna ska släppas.';
-$string['privacy:metadata'] = 'Dra och släpp markör-frågetypspluginen lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen för frågetypen Dra och släpp markör gör det möjligt för frågeförfattare att ange standardalternativ som användarinställningar.';
+$string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråga.';
+$string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
+$string['privacy:preference:shuffleanswers'] = 'Om svaren ska blandas automatiskt.';
 $string['refresh'] = 'Uppdatera förhandsgranskning';
 $string['shape'] = 'Form';
 $string['shape_circle'] = 'Cirkel';

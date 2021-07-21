@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'ur', version '3.8'.
+ * Strings for component 'hub', language 'ur', version '3.11'.
  *
  * @package     hub
  * @category    string

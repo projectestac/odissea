@@ -152,7 +152,7 @@ function useredit_load_preferences(&$user, $reload=true) {
  * Updates the user preferences for the given user
  *
  * Only preference that can be updated directly will be updated here. This method is called from various WS
- * updating users and should be used when updating user details. Plugins may whitelist preferences that can
+ * updating users and should be used when updating user details. Plugins may list preferences that can
  * be updated by defining 'user_preferences' callback, {@see core_user::fill_preferences_cache()}
  *
  * Some parts of code may use user preference table to store internal data, in these cases it is acceptable
@@ -300,6 +300,10 @@ function useredit_shared_definition(&$mform, $editoroptions, $filemanageroptions
     $mform->setDefault('maildisplay', core_user::get_property_default('maildisplay'));
     $mform->addHelpButton('maildisplay', 'emaildisplay');
 
+    $mform->addElement('text', 'moodlenetprofile', get_string('moodlenetprofile', 'user'));
+    $mform->setType('moodlenetprofile', PARAM_NOTAGS);
+    $mform->addHelpButton('moodlenetprofile', 'moodlenetprofile', 'user');
+
     $mform->addElement('text', 'city', get_string('city'), 'maxlength="120" size="21"');
     $mform->setType('city', PARAM_TEXT);
     if (!empty($CFG->defaultcity)) {
@@ -390,29 +394,6 @@ function useredit_shared_definition(&$mform, $editoroptions, $filemanageroptions
     // Moodle optional fields.
     $mform->addElement('header', 'moodle_optional', get_string('optional', 'form'));
 
-    $mform->addElement('text', 'url', get_string('webpage'), 'maxlength="255" size="50"');
-    $mform->setType('url', core_user::get_property_type('url'));
-
-    $mform->addElement('text', 'icq', get_string('icqnumber'), 'maxlength="15" size="25"');
-    $mform->setType('icq', core_user::get_property_type('icq'));
-    $mform->setForceLtr('icq');
-
-    $mform->addElement('text', 'skype', get_string('skypeid'), 'maxlength="50" size="25"');
-    $mform->setType('skype', core_user::get_property_type('skype'));
-    $mform->setForceLtr('skype');
-
-    $mform->addElement('text', 'aim', get_string('aimid'), 'maxlength="50" size="25"');
-    $mform->setType('aim', core_user::get_property_type('aim'));
-    $mform->setForceLtr('aim');
-
-    $mform->addElement('text', 'yahoo', get_string('yahooid'), 'maxlength="50" size="25"');
-    $mform->setType('yahoo', core_user::get_property_type('yahoo'));
-    $mform->setForceLtr('yahoo');
-
-    $mform->addElement('text', 'msn', get_string('msnid'), 'maxlength="50" size="25"');
-    $mform->setType('msn', core_user::get_property_type('msn'));
-    $mform->setForceLtr('msn');
-
     $mform->addElement('text', 'idnumber', get_string('idnumber'), 'maxlength="255" size="25"');
     $mform->setType('idnumber', core_user::get_property_type('idnumber'));
 
@@ -476,7 +457,7 @@ function useredit_get_enabled_name_fields() {
     global $CFG;
 
     // Get all of the other name fields which are not ranked as necessary.
-    $additionalusernamefields = array_diff(get_all_user_name_fields(), array('firstname', 'lastname'));
+    $additionalusernamefields = array_diff(\core_user\fields::get_name_fields(), array('firstname', 'lastname'));
     // Find out which additional name fields are actually being used from the fullnamedisplay setting.
     $enabledadditionalusernames = array();
     foreach ($additionalusernamefields as $enabledname) {
@@ -503,7 +484,14 @@ function useredit_get_disabled_name_fields($enabledadditionalusernames = null) {
     }
 
     // These are the additional fields that are not currently enabled.
-    $nonusednamefields = array_diff(get_all_user_name_fields(),
+    $nonusednamefields = array_diff(\core_user\fields::get_name_fields(),
             array_merge(array('firstname', 'lastname'), $enabledadditionalusernames));
-    return $nonusednamefields;
+
+    // It may not be significant anywhere, but for compatibility, this used to return an array
+    // with keys and values the same.
+    $result = [];
+    foreach ($nonusednamefields as $field) {
+        $result[$field] = $field;
+    }
+    return $result;
 }

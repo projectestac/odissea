@@ -343,15 +343,17 @@ if (($action == 'edit') || ($action == 'new')) {
                     $userinstancenumbertext = "";
                 }
 
-                //XTEC ************ AFEGIT - To let access only to xtecadmin user
-                //2012.06.25  @sarjona
+                // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+                // 2012.06.25 @sarjona
                 if ($typename != 'filesystem' || get_protected_agora() ) {
-                //************ FI    
+                // ************ FI
+
                 $settings .= '<a href="' . $sesskeyurl . '&amp;action=edit&amp;repos=' . $typename . '">' . $settingsstr .'</a>';
-                //XTEC ************ AFEGIT - To let access only to xtecadmin user
-                //2012.06.25  @sarjona
+
+                // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+                // 2012.06.25 @sarjona
                 }
-                //************ FI    
+                // ************ FI
 
                 $settings .= $OUTPUT->container_start('mdl-left');
                 $settings .= '<br/>';
@@ -371,13 +373,14 @@ if (($action == 'edit') || ($action == 'new')) {
 
             $select = new single_select(repository_action_url($typename, 'repos'), 'action', $actionchoicesforexisting, $currentaction, null, 'applyto' . basename($typename));
             $select->set_label(get_string('action'), array('class' => 'accesshide'));
-            //XTEC ************ AFEGIT - To let access only to xtecadmin user
-            //2012.06.25  @sarjona
-            if ($typename == 'filesystem' && !get_protected_agora() ) {
+
+            // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+            // 2012.06.25 @sarjona
+            if ($typename == 'filesystem' && !get_protected_agora()) {
                 $select->disabled = true;
             }
-            //************ FI    
-            
+            // ************ FI
+
             // Display up/down link
             $updown = '';
             $spacer = $OUTPUT->spacer(array('height'=>15, 'width'=>15)); // should be done with CSS instead

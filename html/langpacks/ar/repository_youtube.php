@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_youtube', language 'ar', version '3.8'.
+ * Strings for component 'repository_youtube', language 'ar', version '3.11'.
  *
  * @package     repository_youtube
  * @category    string
@@ -33,7 +33,7 @@ $string['pluginname'] = 'فيديوهات يوتيوب';
 $string['privacy:metadata:repository_youtube'] = 'إن ملحق مستودع فيديوهات يوتيوب لا يخزن أي بيانات شخصية، ولكنه ينقل بيانات المستخدمين من مودل إلى نظام خارجي';
 $string['privacy:metadata:repository_youtube:searchtext'] = 'استعلام البحث النصي للمستخدم في مستودع فيديوهات يوتيوب';
 $string['search'] = 'ابحث عن فيديو';
-$string['sortby'] = 'إفرز حسب';
+$string['sortby'] = 'الفرز حسب';
 $string['sortpublished'] = 'تاريخ النشر';
 $string['sortrating'] = 'التقييم';
 $string['sortrelevance'] = 'مدى الصلة';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'en', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'en', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -43,4 +43,7 @@ $string['pluginname_link'] = 'question/type/shortanswer';
 $string['pluginnameadding'] = 'Adding a short answer question';
 $string['pluginnameediting'] = 'Editing a Short answer question';
 $string['pluginnamesummary'] = 'Allows a response of one or a few words that is graded by comparing against various model answers, which may contain wildcards.';
-$string['privacy:metadata'] = 'The Short answer question type plugin does not store any personal data.';
+$string['privacy:metadata'] = 'Short answer question type plugin allows question authors to set default options as user preferences.';
+$string['privacy:preference:defaultmark'] = 'The default mark set for a given question.';
+$string['privacy:preference:penalty'] = 'The penalty for each incorrect try when questions are run using the \'Interactive with multiple tries\' or \'Adaptive mode\' behaviour.';
+$string['privacy:preference:usecase'] = 'Whether the answers should be case sensitive.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'pt', version '3.8'.
+ * Strings for component 'auth_db', language 'pt', version '3.11'.
  *
  * @package     auth_db
  * @category    string
@@ -37,7 +37,7 @@ $string['auth_dbdeleteusererror'] = 'Erro ao apagar o utilizador {$a}';
 $string['auth_dbdescription'] = 'Este método usa uma base de dados externa para verificar se um nome de utilizador e senha são válidos. Se for uma conta nova, a informação de outros campos pode ser também usada na criação da conta Moodle.';
 $string['auth_dbextencoding'] = 'Codificação da base de dados externa';
 $string['auth_dbextencodinghelp'] = 'Codificação usada na base de dados externa';
-$string['auth_dbextrafields'] = 'Estes campos são opcionais. Pode optar por preencher alguns campos do perfil do utilizador com informação da base de dados externa indicada aqui.<p>Se deixar estes campos em branco serão usados os valores predefinidos.</p><p>Em qualquer caso o utilizador poderá alterar estes dados depois de se autenticar no Moodle.</p>';
+$string['auth_dbextrafields'] = 'Estes campos são opcionais. Pode optar por preencher alguns campos do perfil do utilizador com informação da base de dados externa indicada aqui.<p>Se deixar estes campos vazios serão usados os valores predefinidos.</p><p>Em qualquer caso, o utilizador poderá alterar estes dados depois de autenticar-se no Moodle.</p>';
 $string['auth_dbfieldpass'] = 'Nome do campo que contém as senhas';
 $string['auth_dbfieldpass_key'] = 'Campo senha';
 $string['auth_dbfielduser'] = 'Nome do campo que contém os nomes de utilizador. Este campo deve ser do tipo de dados de carácter variável (varchar).';
@@ -53,7 +53,7 @@ $string['auth_dbnoexttable'] = 'Não foi especificada a tabela externa.';
 $string['auth_dbnouserfield'] = 'Não foi especificada o campo de utilizador externo.';
 $string['auth_dbpass'] = 'Senha do utilizador indicado acima';
 $string['auth_dbpass_key'] = 'Senha';
-$string['auth_dbpasstype'] = '<p>Especifique o formato do campo da senha que está em uso.</p> <p>Utilize \'interno\' se quiser que a base de dados externa faça a gestão dos nomes de utilizadores e endereços de e-mail, mas que seja o Moodle a gerir as senhas. Se usar o modo \'interno\', <i>deve</i> inserir um campo de endereço de e-mail na base de dados externa, e deve executar admin/cron.php e auth/db/cli/sync_users.php com regularidade. O Moodle enviará um e-mail aos novos utilizadores com uma senha temporária.</p>';
+$string['auth_dbpasstype'] = '<p>Especifique o formato do campo da senha que está em uso.</p> <p>Utilize \'interno\' se quiser que a base de dados externa faça a gestão dos nomes de utilizadores e endereços de e-mail, mas que seja o Moodle a gerir as senhas. Se usar o modo \'interno\', tem de inserir um campo de endereço de e-mail na base de dados externa e tem de ativar a tarefa agendada \'\\auth_db\\task\\sync_users\'. O Moodle enviará um e-mail aos novos utilizadores com uma senha temporária.</p>';
 $string['auth_dbpasstype_key'] = 'Formato da senha';
 $string['auth_dbreviveduser'] = 'O utilizador {$a->name} com ID {$a->id} foi reativado';
 $string['auth_dbrevivedusererror'] = 'Erro ao reativar o utilizador {$a}';

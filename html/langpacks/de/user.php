@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'de', version '3.8'.
+ * Strings for component 'user', language 'de', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Bedingung hinzufügen';
+$string['adverbfor_and'] = 'und';
+$string['adverbfor_andnot'] = 'und';
+$string['adverbfor_or'] = 'oder';
+$string['applyfilters'] = 'Filter anwenden';
+$string['clearfilterrow'] = 'Filterzeile entfernen';
+$string['clearfilters'] = 'Filter löschen';
+$string['clearfilterselection'] = '"{$a}" aus dem Filter entfernen';
+$string['countparticipantsfound'] = '{$a} Teilnehmer/innen gefunden';
+$string['filterbykeyword'] = 'Stichwort';
+$string['filterrowlegend'] = 'Filter {$a}';
+$string['filtersetmatchdescription'] = 'Wie mehrere Filter kombiniert werden sollten';
+$string['filtertype'] = 'Filter-Typ';
+$string['match'] = 'Finde';
+$string['matchofthefollowing'] = 'der folgenden Kriterien:';
+$string['moodlenetprofile'] = 'MoodleNet-Profil';
+$string['moodlenetprofile_help'] = 'Mit diesem Feld wird Ihr MoodleNet-Profil mit Moodle verknüpft. Es wird eine WebFinger-kompatible URL erwartet.';
+$string['placeholdertype'] = 'Eingeben...';
+$string['placeholdertypeorselect'] = 'Eingeben oder auswählen...';
 $string['privacy:courserequestpath'] = 'Angefragte Kurse';
 $string['privacy:descriptionpath'] = 'Profilbeschreibung';
 $string['privacy:devicespath'] = 'Nutzergeräte';
@@ -77,6 +96,7 @@ $string['privacy:metadata:maildisplay'] = 'Einstellung des Nutzers zur Anzeige s
 $string['privacy:metadata:middlename'] = 'Mittlerer Name des Nutzers';
 $string['privacy:metadata:mnethostid'] = 'ID für den MNet Host, falls genutzt';
 $string['privacy:metadata:model'] = 'Endgerätename';
+$string['privacy:metadata:moodlenetprofile'] = 'MoodleNet-Profil für Nutzer/in';
 $string['privacy:metadata:msn'] = 'MSN-ID des Nutzers';
 $string['privacy:metadata:my_pages'] = 'Nutzerseiten - Dashboard und Profil. DieTabelle enthält keine persönlichen Daten und wird nur genutzt, um Dashboard-Blöcke Nutzern zuzuordnen';
 $string['privacy:metadata:my_pages:name'] = 'Seitenbezeichnung';
@@ -128,6 +148,7 @@ $string['privacy:passwordresetpath'] = 'Kennwortzurücksetzungen';
 $string['privacy:privatefilespath'] = 'Persönliche Dateien';
 $string['privacy:profileimagespath'] = 'Profilbilder';
 $string['privacy:sessionpath'] = 'Sessiondaten';
+$string['selectfiltertype'] = 'Auswahl';
 $string['target:upcomingactivitiesdue'] = 'Fälligkeit für anstehende Aktivitäten';
 $string['target:upcomingactivitiesdue_help'] = 'Dieses Ziel generiert Erinnerungen für anstehende Aktivitäten.';
 $string['target:upcomingactivitiesdueinfo'] = 'Alle anstehenden Fälligkeiten für Aktivitäten sind hier aufgelistet. Folgende Teilnehmer/innen haben den Hinweis direkt erhalten.';

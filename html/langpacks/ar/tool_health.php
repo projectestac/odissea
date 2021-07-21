@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_health', language 'ar', version '3.8'.
+ * Strings for component 'tool_health', language 'ar', version '3.11'.
  *
  * @package     tool_health
  * @category    string
@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['healthnoproblemsfound'] = 'لم نجد أيّة مشكلة صحية !';
-$string['healthproblemsdetected'] = 'تم العثور على مشاكل صحية !';
+$string['healthnoproblemsfound'] = 'لم يتم العثور على أية مشاكل صحية!';
+$string['healthproblemsdetected'] = 'تم العثور على مشاكل صحية!';
 $string['healthproblemsolution'] = 'حل المشاكل الصحية';
 $string['healthreturntomain'] = 'استمر';
 $string['healthsolution'] = 'الحل';
 $string['pluginname'] = 'المركز الصحي';
-$string['privacy:metadata'] = 'لا يخزن المكون الإضافي لـ Health Center أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق المركز الصحي لا يخزن أي بيانات شخصية.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopeval_best', language 'ar', version '3.8'.
+ * Strings for component 'workshopeval_best', language 'ar', version '3.11'.
  *
  * @package     workshopeval_best
  * @category    string
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['comparison'] = 'مقارنة التقييمات';
-$string['comparison_help'] = 'يحدد هذا الإعداد كيف ينبغي أن تكون المقارنة للتقييمات صارمة. و الأكثر صرامة في المقارنة، الأكثر مماثلة في التقييمات حيث يجب أن تكون للحصول على الدرجة العالية التي يمكن الحصول عليها.';
-$string['comparisonlevel1'] = 'أوافق بشدة';
-$string['comparisonlevel3'] = 'أوافق';
-$string['comparisonlevel5'] = 'عادل';
-$string['comparisonlevel7'] = 'لا أوافق';
-$string['comparisonlevel9'] = 'لا أوافق بشدة';
-$string['configcomparison'] = 'القيمة الافتراضية للعامل التي تؤثر على تقييم الدرجات.';
-$string['pluginname'] = 'مقارنة مع أفضل تقييم';
-$string['privacy:metadata'] = 'البرنامج المساعد Comparison with the best لا يخزن أي بيانات شخصية.
-يتم تخزين درجات مستخدم البيانات الشخصية الفعلية بواسطة وحدة ورشة العمل نفسها و يتم إرفاقها ببيانات التقديمات و التقييمات الصادرة.';
+$string['comparison_help'] = 'يحدد هذا الإعداد درجة الصرامة التي ينبغي أن تكون عليها مقارنة التقييمات. كلما كانت المقارنة أكثر صرامة، كلما تطلب الحصول على درجة أعلى أن تكون التقييمات أكثر تقارباً.';
+$string['comparisonlevel1'] = 'صارمة جداً';
+$string['comparisonlevel3'] = 'صارمة';
+$string['comparisonlevel5'] = 'متوسطة';
+$string['comparisonlevel7'] = 'متراخية';
+$string['comparisonlevel9'] = 'متراخية جداً';
+$string['configcomparison'] = 'القيمة الافتراضية للعامل المؤثر على تقييم الدرجات.';
+$string['pluginname'] = 'المقارنة مع أفضل تقييم';
+$string['privacy:metadata'] = 'إن ملحق المقارنة مع أفضل تقييم لا يخزن أي بيانات شخصية.
+يتم تخزين درجات المستخدم الفعلية بواسطة وحدة ورشة العمل نفسها ويتم إرفاقها بالبيانات المصدرة للتسليمات والتقييمات.';

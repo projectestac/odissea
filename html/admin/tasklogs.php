@@ -32,6 +32,7 @@ $result = optional_param('result', null, PARAM_INT);
 
 $pageurl = new \moodle_url('/admin/tasklogs.php');
 $pageurl->param('filter', $filter);
+$pageurl->param('result', $result);
 
 $PAGE->set_url($pageurl);
 $PAGE->set_context(context_system::instance());
@@ -62,6 +63,8 @@ if (null !== $logid) {
 $renderer = $PAGE->get_renderer('tool_task');
 
 echo $OUTPUT->header();
+
+// Output the search form.
 echo $OUTPUT->render_from_template('core_admin/tasklogs', (object) [
     'action' => $pageurl->out(),
     'filter' => htmlentities($filter),
@@ -84,6 +87,7 @@ echo $OUTPUT->render_from_template('core_admin/tasklogs', (object) [
     ],
 ]);
 
+// Output any matching logs.
 $table = new \core_admin\task_log_table($filter, $result);
 $table->baseurl = $pageurl;
 $table->out(100, false);

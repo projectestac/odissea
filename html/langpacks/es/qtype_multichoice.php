@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'es', version '3.8'.
+ * Strings for component 'qtype_multichoice', language 'es', version '3.11'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -67,6 +67,8 @@ $string['pluginnameediting'] = 'Editando una pregunta de opción múltiple';
 $string['pluginnamesummary'] = 'Permite la selección de una o varias respuestas a partir de una lista predefinida.';
 $string['selectmulti'] = 'Seleccione una o más de una:';
 $string['selectone'] = 'Seleccione una:';
+$string['showstandardinstruction'] = 'Mostrar instrucciones estándar';
+$string['showstandardinstruction_help'] = 'Si se muestran las instrucciones "Seleccione una:" o "Seleccione una o más:" antes de las opciones de respuesta.';
 $string['shuffleanswers'] = '¿Barajar respuestas?';
 $string['shuffleanswers_desc'] = 'Si por defecto las opciones deben ser barajadas aleatoriamente para cada intento.';
 $string['shuffleanswers_help'] = 'Si está activado, el orden de las respuestas varía de forma aleatoria en cada intento, siempre que "Barajar dentro de las preguntas" en la configuración del cuestionario también esté habilitada.';

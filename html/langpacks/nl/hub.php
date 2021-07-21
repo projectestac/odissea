@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'nl', version '3.8'.
+ * Strings for component 'hub', language 'nl', version '3.11'.
  *
  * @package     hub
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activeparticipantnumberaverage'] = 'Gemiddeld aantal recent actieve deelnemers ({$a})';
+$string['activeusersnumber'] = 'Aantal recent actieve gebruikers ({$a})';
 $string['addscreenshots'] = 'Screenshot toevoegen';
 $string['advertise'] = 'Deel deze cursus zodat mensen kunnen deelnemen';
 $string['advertised'] = 'Mensen kunnen deelnemen';
@@ -149,7 +151,7 @@ $string['registerwithmoodleorginfo'] = 'We houden graag contact en voorzien je v
 $string['registerwithmoodleorginfoapp'] = 'Over de Moodle-app';
 $string['registerwithmoodleorginfosites'] = 'Andere sites in mijn land';
 $string['registerwithmoodleorginfostats'] = 'Moodle-statistieken';
-$string['registerwithmoodleorgremove'] = 'Je gaat je site afmelden. Als je doorgaat, heb je geen toegang meer tot belangrijke meldingen en beveiligingsmeldingen. Je gebruikers kunnen geen pushmeldingen van je site ontvangen naar hun mobiele Moodle-app. Weet je zeker dat je jouw site wilt afmelden?';
+$string['registerwithmoodleorgremove'] = 'Je gaat je site afmelden. Als je doorgaat, heb je geen toegang meer tot belangrijke meldingen en beveiligingsmeldingen. Je gebruikers kunnen geen pushmeldingen van je site ontvangen naar hun mobiele Moodle-app. Je kunt je wel op elk moment opnieuw registreren. Weet je zeker dat je jouw site wilt afmelden?';
 $string['registerwithmoodleorgupdate'] = 'Update je site-registratie';
 $string['registrationconfirmed'] = 'Site-registratie bevestigd';
 $string['registrationconfirmedon'] = 'Bedankt voor het registreren van je site. De registratie-informatie zal up-to-date gehouden worden door de geplande taak "site-registratie".';
@@ -163,7 +165,7 @@ $string['screenshots'] = 'Schermafdrukken';
 $string['screenshots_help'] = 'Alle schermafdrukken van de cursus zullen getoond worden in zoekresultaten.';
 $string['search'] = 'Zoek';
 $string['sendfollowinginfo'] = 'Meer informatie';
-$string['sendfollowinginfo_help'] = 'Volgende informatie zal verzonden worden om algemene statistieken op te bouwen. De informatie zal niet publiek gemaakt worden via een site lijst.';
+$string['sendfollowinginfo_help'] = 'Volgende informatie zal naar Moodle verzonden telkens je site-registratie aangepast wordt (standaard wekelijks wanneer de geplande taak \'Site registratie\' loopt).  De informatie wordt enkel gebruikt om algemene statistieken op te bouwen en wordt niet publiek gemaakt via een site lijst.';
 $string['sendingcourse'] = 'Cursus verzenden';
 $string['sendingsize'] = 'Wacht terwijl het cursusbestand verzonden wordt ({$a->total}Mb)...';
 $string['sent'] = '...klaar';

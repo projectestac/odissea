@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_configlog', language 'zh_cn', version '3.8'.
+ * Strings for component 'report_configlog', language 'zh_cn', version '3.11'.
  *
  * @package     report_configlog
  * @category    string
@@ -30,3 +30,5 @@ $string['plugin'] = '插件';
 $string['pluginname'] = '配置变化';
 $string['setting'] = '设置';
 $string['timemodified'] = '日期';
+$string['valuenew'] = '新值';
+$string['valueold'] = '原值';

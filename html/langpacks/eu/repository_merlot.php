@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_merlot', language 'eu', version '3.8'.
+ * Strings for component 'repository_merlot', language 'eu', version '3.11'.
  *
  * @package     repository_merlot
  * @category    string
@@ -30,7 +30,7 @@ $string['licensekey'] = 'Lizentzia gakoa';
 $string['merlot:view'] = 'Ikusi Merlot biltegia';
 $string['pluginname'] = 'Merlot.org';
 $string['pluginname_help'] = 'Merlot.org';
-$string['privacy:metadata:repository_merlot'] = 'Merlot.org biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_merlot'] = 'Merlot.org biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_merlot:author'] = 'Merlot.org biltegiko edukien egilea.';
 $string['privacy:metadata:repository_merlot:keywords'] = 'Merlot.org biltegiko erabiltzailearen bilaketaren testua.';
 $string['privacy:metadata:repository_merlot:licencekey'] = 'Merlot.org biltegiko lizentziaren giltza.';

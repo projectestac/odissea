@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'pt', version '3.8'.
+ * Strings for component 'enrol_paypal', language 'pt', version '3.11'.
  *
  * @package     enrol_paypal
  * @category    string
@@ -32,7 +32,7 @@ $string['cost'] = 'Preço da inscrição';
 $string['costerror'] = 'O preço da inscrição tem que ser um valor numérico';
 $string['costorkey'] = 'Selecione um dos seguintes métodos de inscrição.';
 $string['currency'] = 'Moeda';
-$string['defaultrole'] = 'Atribuição de papel predefinida';
+$string['defaultrole'] = 'Atribuição de papel predefinido';
 $string['defaultrole_desc'] = 'Selecione o papel que deve ser atribuído aos utilizadores nas inscrições PayPal';
 $string['enrolenddate'] = 'Data de fim';
 $string['enrolenddate_help'] = 'Se ativo, os utilizadores apenas podem ser inscritos até esta data.';
@@ -75,7 +75,7 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'E-mail p
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'ID exclusivo da conta PayPal do destinatário do pagamento (por exemplo, o vendedor).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:tax'] = 'Montante do imposto cobrado no pagamento.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:timeupdated'] = 'Data/hora da notificação do PayPal ao Moodle acerca do pagamento.';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:txn_id'] = 'Número de identificação da transação original do vendedor para o pagamento do comprador, com o qual foi registado';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:txn_id'] = 'Número de identificação (ID) da transação original do vendedor para o pagamento do comprador, com o qual foi registado';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:userid'] = 'O ID do utilizador que comprou a inscrição na disciplina.';
 $string['privacy:metadata:enrol_paypal:paypal_com'] = 'O módulo de inscrição PayPal transmite dados de utilizador do Moodle para o website PayPal.';
 $string['privacy:metadata:enrol_paypal:paypal_com:address'] = 'Morada do comprador.';

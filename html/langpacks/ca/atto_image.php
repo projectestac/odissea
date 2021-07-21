@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'ca', version '3.8'.
+ * Strings for component 'atto_image', language 'ca', version '3.11'.
  *
  * @package     atto_image
  * @category    string
@@ -40,7 +40,7 @@ $string['enterurl'] = 'Introdueix l\'URL';
 $string['height'] = 'Alçada';
 $string['imageproperties'] = 'Propietats de la imatge';
 $string['pluginname'] = 'Imatge';
-$string['presentation'] = 'La descripció no és necessària';
+$string['presentation'] = 'Aquesta imatge només és decorativa';
 $string['presentationoraltrequired'] = 'Les imatges han de tenir una descripció, tret que la descripció es marqui com a no necessària.';
 $string['preview'] = 'Previsualització';
 $string['privacy:metadata'] = 'El connector atto_image no emmagatzema cap dada personal.';

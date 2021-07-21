@@ -60,6 +60,11 @@ class tool_capability_settings_form extends moodleform {
         $form->addElement('select', 'roles', get_string('roleslabel', 'tool_capability'), $roles, $attributes);
         $form->setType('roles', PARAM_TEXT);
 
+        $filters = [];
+        $filters[] = $form->createElement('checkbox', 'onlydiff',  get_string('onlydiff', 'tool_capability'));
+        $form->setType('onlydiff', PARAM_BOOL);
+        $form->addGroup($filters, 'filters', get_string('filters', 'tool_capability'), array('<br>'), false);
+
         $form->addElement('submit', 'submitbutton', get_string('getreport', 'tool_capability'));
     }
 

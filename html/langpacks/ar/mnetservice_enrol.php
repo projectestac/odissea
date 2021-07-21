@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'ar', version '3.8'.
+ * Strings for component 'mnetservice_enrol', language 'ar', version '3.11'.
  *
  * @package     mnetservice_enrol
  * @category    string
@@ -29,7 +29,7 @@ $string['availablecourseson'] = 'المقررات الدراسية المتوا�
 $string['availablecoursesonnone'] = 'المضيف البعيد <a href="{$a->hosturl}">{$a->hostname}</a> لا يقدم أي مقررات دراسية لمستخدميك.';
 $string['clientname'] = 'عميل الانضمامات البعيد';
 $string['clientname_help'] = 'هذه الأداة تسمح لك بضم مستخدميك المحليين أو إلغاء انضمامهم في مضيفات بعيدة تسمح لك بإجراء ذلك عبر ملحق \'الانضمام البعيد لشبكة مودل\'.';
-$string['editenrolments'] = 'تحرير التسجيلات';
+$string['editenrolments'] = 'تحرير الانضمامات';
 $string['hostappname'] = 'التطبيق';
 $string['hostname'] = 'اسم المضيف';
 $string['hosturl'] = 'رابط المضيف البعيد';

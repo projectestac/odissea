@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ja', version '3.8'.
+ * Strings for component 'message', language 'ja', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -77,9 +77,7 @@ $string['errormessagetoolong'] = 'メッセージが最大許可長を超えて�
 $string['errortranslatingdefault'] = 'プラグインから提供されているデフォルト設定の変換にエラーが発生しました。代わりにシステムデフォルトを使用します。';
 $string['eventgroupmessagesent'] = 'グループメッセージが送信されました。';
 $string['eventmessagecontactadded'] = 'メッセージコンタクトが追加されました。';
-$string['eventmessagecontactblocked'] = 'メッセージコンタクトがブロックされました。';
 $string['eventmessagecontactremoved'] = 'メッセージコンタクトが削除されました。';
-$string['eventmessagecontactunblocked'] = 'メッセージコンタクトのブロックが解除されました。';
 $string['eventmessagedeleted'] = 'メッセージが削除されました。';
 $string['eventmessagesent'] = 'メッセージが送信されました。';
 $string['eventmessageuserblocked'] = 'ユーザがブロックされました。';
@@ -106,8 +104,10 @@ $string['loggedoff_help'] = 'あなたがMoodleにログインしていない場
 $string['loggedoffdescription'] = 'あなたがMoodleにログインしていない場合';
 $string['managemessageoutputs'] = 'デフォルト通知プリファレンス';
 $string['message'] = 'メッセージ';
+$string['messagecontactrequest'] = '{$a->user} がコンタクトに追加するようリクエストしています。リクエストに返答するにはあなたの<a href="{$a->url}">コンタクトリクエスト</a>ページにアクセスしてください。';
 $string['messagecontactrequestsnotification'] = '{$a} がコンタクトへの追加をリクエストしています。';
 $string['messagecontactrequestsnotificationsubject'] = '{$a} によるコンタクトリクエスト';
+$string['messagecontactrequestsubject'] = '{$a->sitename}: {$a->user} によるコンタクトリクエスト';
 $string['messagecontentaudio'] = 'オーディオ';
 $string['messagecontentimage'] = 'イメージ';
 $string['messagecontentmultimediageneral'] = 'その他のメディア';
@@ -123,8 +123,8 @@ $string['messageoutputs'] = '通知プラグイン';
 $string['messagepreferences'] = 'メッセージプリファレンス';
 $string['messages'] = 'メッセージ';
 $string['messagesselected:'] = '選択済みメッセージ:';
+$string['messagetextrequired'] = 'メッセージテキストを入力してください。';
 $string['messagingdatahasnotbeenmigrated'] = 'メッセージング機能のアップグレードのため、あなたのメッセージは一時的に利用できません。移行完了までお待ちください。';
-$string['messagingdisabled'] = 'このサイトではメッセージングが無効にされています。代わりにメールが送信されます。';
 $string['muteconversation'] = 'ミュート';
 $string['mutedconversation'] = 'ミュート済み会話';
 $string['newmessage'] = '新しいメッセージ';
@@ -161,6 +161,7 @@ $string['outputdoesnotexist'] = 'メッセージアウトプットはありま�
 $string['outputenabled'] = 'アウトプット有効';
 $string['outputnotavailable'] = '利用不可';
 $string['outputnotconfigured'] = '未設定';
+$string['page-message-x'] = 'すべてのメッセージページ';
 $string['participants'] = '参加者';
 $string['pendingcontactrequests'] = '{$a} 件の保留コンタクトリクエストがあります。';
 $string['permitted'] = '許可';
@@ -258,7 +259,7 @@ $string['shownotificationwindowwithcount'] = '{$a} 件の新しい通知のあ�
 $string['togglemessagemenu'] = 'メッセージドロワに切り替える';
 $string['togglenotificationmenu'] = '通知メニューに切り替える';
 $string['totalconversations'] = '{$a} 合計会話数';
-$string['touserdoesntexist'] = 'あなたは存在しないユーザID ({$a}) に対して、メッセージを送信することはできません。';
+$string['touserdoesntexist'] = 'あなたは存在しないユーザID ({$a}) にメッセージを送信できません。';
 $string['unabletomessage'] = 'あなたはこのユーザにメッセージを送信できません。';
 $string['unblock'] = 'ブロック解除';
 $string['unblockcontact'] = 'コンタクトの拒否を解除する';
@@ -274,8 +275,6 @@ $string['unreadnotification'] = '未読通知: {$a}';
 $string['unreadnotifications'] = '{$a} 件の未読通知があります。';
 $string['useentertosend'] = 'Enterで送信する';
 $string['usercantbemessaged'] = 'ユーザのメッセージプリファレンスのため、あなたは {$a} にメッセージを送信することはできません。そのユーザをコンタクトに追加してください。';
-$string['userisblockingyou'] = 'このユーザはあなたからのメッセージを受信拒否しています。';
-$string['userisblockingyounoncontact'] = '{$a} はコンタクトリストに登録されたユーザからのみメッセージを受信します。';
 $string['userwouldliketocontactyou'] = '{$a} があなたにコンタクトしたいようです。';
 $string['viewfullnotification'] = '通知詳細を表示する';
 $string['viewmessageswith'] = '{$a} のメッセージを表示する';

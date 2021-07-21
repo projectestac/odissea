@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_upload', language 'ru', version '3.8'.
+ * Strings for component 'repository_upload', language 'ru', version '3.11'.
  *
  * @package     repository_upload
  * @category    string
@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Конфигурация модуля загрузки';
 $string['pluginname'] = 'Загрузить файл';
 $string['pluginname_help'] = 'Загрузить файл в Moodle';
+$string['privacy:metadata'] = 'Плагин хранилище «Загрузить файл» не хранит и не передает какие-либо личные данные.';
 $string['upload:view'] = 'Использовать загрузку файлов в окне выбора файла';
 $string['upload_error_cant_write'] = 'Ошибка записи файла на диск.';
 $string['upload_error_extension'] = 'Расширение PHP остановило загрузку файла.';

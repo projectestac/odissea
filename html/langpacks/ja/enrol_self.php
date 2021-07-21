@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ja', version '3.8'.
+ * Strings for component 'enrol_self', language 'ja', version '3.11'.
  *
  * @package     enrol_self
  * @category    string
@@ -101,6 +101,7 @@ $string['requirepassword'] = '登録キーを要求する';
 $string['requirepassword_desc'] = '新しいコースに登録キーを要求します。また、既存のコースからの登録キーの削除を防ぎます。';
 $string['role'] = 'デフォルトに割り当てるロール';
 $string['self:config'] = '自己登録インスタンスを設定する';
+$string['self:enrolself'] = 'コースの自己登録';
 $string['self:holdkey'] = '自己登録キー所有者として表示する';
 $string['self:manage'] = '登録済みユーザを管理する';
 $string['self:unenrol'] = 'コースからユーザを登録解除する';

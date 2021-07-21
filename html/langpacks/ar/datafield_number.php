@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_number', language 'ar', version '3.8'.
+ * Strings for component 'datafield_number', language 'ar', version '3.11'.
  *
  * @package     datafield_number
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'حقل رقم';
 $string['pluginname'] = 'الرقم';
-$string['privacy:metadata'] = 'لا يخزن مكون Number field  أي بيانات شخصية ، فهو يستخدم الجداول المعرفة في mod_data.';
+$string['privacy:metadata'] = 'إن مكون حقل الرقم لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل الجداول المعرفة في mod_data.';

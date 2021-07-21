@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_private_files', language 'sv', version '3.8'.
+ * Strings for component 'block_private_files', language 'sv', version '3.11'.
  *
  * @package     block_private_files
  * @category    string
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Mina privata filer';
+$string['pluginname'] = 'Mina filer';
 $string['privacy:metadata'] = 'Blocket \'Private files\' visar enbart en vy och länkar till användarens privata filer.';
 $string['private_files:addinstance'] = 'Lägg till ett block för Privata filer';
-$string['private_files:myaddinstance'] = 'Lägg till ett nytt block för  privata filer på Mitt Moodle';
+$string['private_files:myaddinstance'] = 'Lägg till ett nytt block för privata filer till mitt Moodle';
 $string['privatefiles'] = 'Privata filer';

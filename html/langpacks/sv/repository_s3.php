@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_s3', language 'sv', version '3.8'.
+ * Strings for component 'repository_s3', language 'sv', version '3.11'.
  *
  * @package     repository_s3
  * @category    string
@@ -26,5 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['access_key'] = 'Åtkomstnyckel';
+$string['configplugin'] = 'Inställningar för Amazon S3';
+$string['endpoint'] = 'Amazon S3-ändpunkt';
 $string['needaccesskey'] = 'Åtkomstnyckel måste anges';
 $string['pluginname'] = 'Amazon S3';
+$string['privacy:metadata'] = 'Pluginmodulen Amazon S3 lagrar ingen personinformation, men överför användardata från Moodle till fjärrsystemet.';
+$string['s3:view'] = 'Visa innehåll i Amazon S3';
+$string['secret_key'] = 'Hemlig nyckel';

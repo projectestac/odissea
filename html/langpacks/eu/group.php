@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'eu', version '3.8'.
+ * Strings for component 'group', language 'eu', version '3.11'.
  *
  * @package     group
  * @category    string
@@ -43,7 +43,7 @@ $string['createautomaticgrouping'] = 'Sortu talde-multzo automatikoa';
 $string['creategroup'] = 'Sortu taldea';
 $string['creategrouping'] = 'Sortu talde-multzoa';
 $string['creategroupinselectedgrouping'] = 'Sortu taldea aukeratutako talde-multzoan';
-$string['createingrouping'] = 'Automatikoki sortutako taldeen taldekatzea';
+$string['createingrouping'] = 'Automatikoki sortutako taldeen talde-multzoa';
 $string['createorphangroup'] = 'Sortu talde umezurtza';
 $string['csvdelimiter'] = 'CSV bereizlea';
 $string['databaseupgradegroups'] = '{$a} da orain taldeen bertsioa';
@@ -118,7 +118,7 @@ $string['groupmode_help'] = 'Hiru aukera dago:
 * Taldeek ezin elkar ikusi - taldekide bakoitzak bere taldea baino ezin du ikusi; gainerakoak ezin ditu ikusi
 * Taldeek elkar ikusten dute - taldekide bakoitzak bere taldean egiten du lan baina gainerakoak ere ikusten ditu
 
-Ikastaro mailan definitutako taldea modua izango da lehenetsitako modua ikastaroko jarduera guztietan. Taldeak onartzen dituen jarduera bakoitzean ere taldea modua ezarri daiteke, baina ikastaro mailan taldea modua behartzen bada, ez zaio jaramonik egingo jarduera bakoitzaren taldea modua ezarpenari.';
+Ikastaro mailan definitutako talde-modua izango da lehenetsitako modua ikastaroko jarduera guztietan. Taldeak onartzen dituen jarduera bakoitzean ere talde-modua ezarri daiteke, baina ikastaro mailan talde-modua behartzen bada, ez zaio jaramonik egingo jarduera bakoitzaren talde-modua ezarpenari.';
 $string['groupmodeforce'] = 'Behartu talde-modua';
 $string['groupmodeforce_help'] = 'Talde-modua behartuta badago, ikastaroko talde-modua aplikatuko zaio ikastaroko edozein jarduerari. Jarduera bakoitzeko talde-modua ezarpenari ez zaio jaramonik egingo.';
 $string['groupmy'] = 'Neure taldea';
@@ -128,7 +128,7 @@ $string['groupnotamember'] = 'Sentitzen dugu, ez zara talde honetako kide';
 $string['groups'] = 'Taldeak';
 $string['groupscount'] = '({$a}) taldeak';
 $string['groupsettingsheader'] = 'Taldeak';
-$string['groupsgroupings'] = 'Taldeak eta taldekatzeak';
+$string['groupsgroupings'] = 'Taldeak eta talde-multzoak';
 $string['groupsinselectedgrouping'] = 'Aukeratutako talde-multzoan dauden taldeak:';
 $string['groupsnone'] = 'Talderik ez';
 $string['groupsonly'] = 'Taldeak baino ez';

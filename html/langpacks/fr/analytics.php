@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'fr', version '3.8'.
+ * Strings for component 'analytics', language 'fr', version '3.11'.
  *
  * @package     analytics
  * @category    string
@@ -34,6 +34,8 @@ $string['analyticslogstore'] = 'Stockage de journaux utilisé pour les analyses 
 $string['analyticslogstore_help'] = 'Le stockage de journaux qui sera utilisé par l\'API d\'analyse de données pour lire l\'activité des utilisateurs.';
 $string['analyticssettings'] = 'Réglages de l\'analyse des données';
 $string['analyticssiteinfo'] = 'Informations du site';
+$string['calclifetime'] = 'Conserver les calculs des analyses pendant';
+$string['configlcalclifetime'] = 'Ce réglage spécifie la durée de conservation des données de calcul. Aucune prédiction ne sera détruite après ce délai ; seules les données permettant de générer les prédictions seront supprimées. L\'utilisation de la valeur par défaut est la meilleure, car elle permet de maîtriser l\'espace disque utilisé. Cependant, si vous utilisez les données de calcul à d\'autres fins, il peut être utile d\'augmenter cette valeur.';
 $string['defaultpredictionsprocessor'] = 'Processeur de prédictions par défaut';
 $string['defaultpredictoroption'] = 'Processeur par défaut ({$a})';
 $string['defaulttimesplittingmethods'] = 'Intervalles d\'analyse par défaut pour l\'évaluation du modèle';
@@ -96,10 +98,11 @@ $string['modeinstructionfacetoface'] = 'Présentiel';
 $string['modeinstructionfullyonline'] = 'Complètement en ligne';
 $string['modeloutputdir'] = 'Dossier des sorties de modèles';
 $string['modeloutputdirinfo'] = 'Le dossier où les processeurs de prédictions enregistrent toutes les informations d\'évaluation. Utile pour le débogage et la recherche.';
-$string['modeloutputdirwithdefaultinfo'] = 'Dossier dans lequel les processeurs de prédictions enregistrent toutes les informations d\'évaluation. Si laissé vide, la valeur « <strong>{$a}</strong> » est utilisée par défaut.';
+$string['modeloutputdirwithdefaultinfo'] = 'Dossier dans lequel les processeurs de prédictions enregistrent toutes les informations d\'évaluation. Si laissé vide, {$a} sera utilisé par défaut.';
 $string['modeltimelimit'] = 'Limite de durée d\'analyse par modèle';
 $string['modeltimelimitinfo'] = 'Ce réglage limite la durée utilisée par chaque modèle lors de l\'analyse des contenus de la plateforme.';
 $string['neutral'] = 'Neutre';
+$string['neverdelete'] = 'Ne jamais supprimer les calculs';
 $string['nocourses'] = 'Aucun cours à analyser';
 $string['nodata'] = 'Aucune donnée à analyser';
 $string['noevaluationbasedassumptions'] = 'Les modèles basés sur des suppositions ne peuvent pas être évalués.';

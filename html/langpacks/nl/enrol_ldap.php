@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'nl', version '3.8'.
+ * Strings for component 'enrol_ldap', language 'nl', version '3.11'.
  *
  * @package     enrol_ldap
  * @category    string
@@ -103,7 +103,7 @@ $string['objectclass_key'] = 'Object klasse';
 $string['ok'] = 'OK!';
 $string['opt_deref'] = 'Indien onder de groepsleden prominente namen voorkomen, specificeer dan hoe aliassen behandeld worden tijdens het zoeken. Selecteer een van de volgende waarden: \'Nee\' (LDAP_DEREF_NEVER) of \'Ja\' (LDAP_DEREF_ALWAYS).';
 $string['opt_deref_key'] = 'Maak de referentie naar aliassen ongedaan';
-$string['phpldap_noextension'] = '<em>De PHP LDAP module lijkt niet aanwezig. Controleer of ze geïnstalleerd en ingeschakeld is indien je deze aanmeldingsplugin wil gebruiken.</em>';
+$string['phpldap_noextension'] = 'De PHP LDAP module lijkt niet aanwezig. Controleer of ze geïnstalleerd en ingeschakeld is indien je deze aanmeldingsplugin wil gebruiken.';
 $string['pluginname'] = 'LDAP aanmeldingen';
 $string['pluginname_desc'] = '<p>Je kunt een LDAP-server gebruiken om je cursusaanmeldingen te controleren. Er wordt vanuit gegaan dat je LDAP-structuur groepen bevat die verwijzen naar de cursussen en dat elk van die groepen/cursussen naar lidmaatschap van leerlingen verwijzen.</p>
 <p>Er wordt vanuit gegaan dat cursussen als groepen gedefinieerd zijn in LDAP waarbij elke groep meerdere lidmaatschapsvelden heeft (<em>member</em> of <em>memberUid</em> die een unieke identificatie van de gebruiker bevat.</p>

@@ -135,12 +135,15 @@ class core_calendar_renderer extends plugin_renderer_base {
     /**
      * Displays an event
      *
+     * @deprecated since 3.9
+     *
      * @param calendar_event $event
      * @param bool $showactions
      * @return string
      */
     public function event(calendar_event $event, $showactions=true) {
         global $CFG;
+        debugging('This function is no longer used', DEBUG_DEVELOPER);
 
         $event = calendar_add_event_metadata($event);
         $context = $event->context;
@@ -313,7 +316,7 @@ class core_calendar_renderer extends plugin_renderer_base {
      * @param string $importresults
      * @return string
      */
-    public function subscription_details($unused = null, $subscriptions, $importresults = '') {
+    public function subscription_details($unused, $subscriptions, $importresults = '') {
         $table = new html_table();
         $table->head  = array(
             get_string('colcalendar', 'calendar'),
@@ -371,7 +374,7 @@ class core_calendar_renderer extends plugin_renderer_base {
      */
     protected function subscription_action_form($subscription) {
         // Assemble form for the subscription row.
-        $html = html_writer::start_tag('form', array('action' => new moodle_url('/calendar/managesubscriptions.php'), 'method' => 'post'));
+        $html = html_writer::start_tag('form', ['action' => $this->page->url->out(false) , 'method' => 'post']);
         if (empty($subscription->url)) {
             // Don't update an iCal file, which has no URL.
             $html .= html_writer::empty_tag('input', array('type' => 'hidden', 'name' => 'pollinterval', 'value' => '0'));

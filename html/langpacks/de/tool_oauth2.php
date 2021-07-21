@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'de', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'de', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -39,7 +39,9 @@ $string['createnewgoogleissuer'] = 'Neuen Google-Service anlegen';
 $string['createnewissuer'] = 'Neuen eigenen Service anlegen';
 $string['createnewmicrosoftissuer'] = 'Neuen Microsoft-Service anlegen';
 $string['createnewnextcloudissuer'] = 'Neuen Nextcloud-Service anlegen';
+$string['createnewservice'] = 'Neuen Service anlegen:';
 $string['createnewuserfieldmapping'] = 'Neue Nutzerfeldzuordnung für Service/Identitätsaussteller \'{$a}\' erstellen';
+$string['custom_service'] = 'Nutzerdefiniert';
 $string['deleteconfirm'] = 'Möchten Sie wirklich den Service/Identitätsaussteller \'{$a}\' löschen? Alle darauf zurückgreifenden Plugins funktionieren dadurch nicht mehr.';
 $string['deleteendpointconfirm'] = 'Möchten Sie wirklich den Endpoint \'{$a->endpoint}\' für den Service/Identitätsaussteller \'{$a->issuer}\' löschen? Alle Plugins, die diesen Endpoint verwenden, werden dann nicht mehr funktionieren.';
 $string['deleteuserfieldmappingconfirm'] = 'Möchten Sie wirklich die Nutzerfeldzuordnung für den Aussteller \'{$a}\' löschen?';
@@ -57,6 +59,9 @@ $string['endpointname_help'] = 'Schlüssel für die Suche nach diesem Endpoint. 
 $string['endpointsforissuer'] = 'Endpoint für den Service/Identitätsaussteller: {$a}';
 $string['endpointurl'] = 'URL';
 $string['endpointurl_help'] = 'URL für diesen Endpoint. Die URL muss das Protokoll https:// verwenden.';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Login-Domains';
 $string['issueralloweddomains_help'] = 'Wenn diese Option aktiviert ist, wird eine kommagetrennte Liste von Domainnamen angegeben, auf die die Logins beschränken werden.';
 $string['issuerbaseurl'] = 'Service-Basis-URL';
@@ -70,6 +75,8 @@ $string['issuerdisabled'] = 'Service/Identitätsaussteller deaktiviert';
 $string['issuerenabled'] = 'Service/Identitätsaussteller aktiviert';
 $string['issuerimage'] = 'Logo-URL';
 $string['issuerimage_help'] = 'Die Logo-URL wird verwendet, um ein Logo des Service/Identitätsausstellers anzuzeigen. Das Logo kann auf der Anmeldeseite angezeigt werden.';
+$string['issuerloginpagename'] = 'Angezeigter Name auf der Anmeldeseite';
+$string['issuerloginpagename_help'] = 'Wenn ein Name angegeben ist, wird dieser auf der Anmeldeseite anstelle des oben genannten Dienstnamens verwendet.';
 $string['issuerloginparams'] = 'Zusätzliche Parameter für die Login-Anforderung';
 $string['issuerloginparams_help'] = 'Einige Systeme brauchen zusätzliche Parameter für eine Anmeldeanforderung, um ein Nutzergrundprofil zu lesen.';
 $string['issuerloginparamsoffline'] = 'Zusätzliche Parameter, die in einer Login-Anforderung für den Offline-Zugriff enthalten sind.';
@@ -87,7 +94,20 @@ $string['issuersetup'] = 'Detaillierte Anleitung zur Konfiguration der üblichen
 $string['issuersetuptype'] = 'Detaillierte Anleitung zur Konfiguration des OAuth 2-Providers {$a}';
 $string['issuershowonloginpage'] = 'Auf der Anmeldeseite anzeigen';
 $string['issuershowonloginpage_help'] = 'Wenn dieses Plugin zur OAuth 2-Authentifizierung aktiviert ist, wird dieser Identitätsausteller auf der Anmeldeseite aufgelistet, damit Nutzer/innen sich mit Konten des Identitätsausstellers bei Moodle anmelden können.';
+$string['issuersservicesallow'] = 'Services erlauben';
+$string['issuersservicesnotallow'] = 'Services nicht erlauben';
+$string['issuerusedforinternal'] = 'Interne Services';
+$string['issuerusedforlogin'] = 'Anmeldung';
+$string['issuerusein'] = 'Dieser Service wird verwendet.';
+$string['issuerusein_help'] = 'OAuth 2 Services können für interne Dienste, auf der Anmeldeseite oder bei Bedarf mit beiden verwendet werden.';
+$string['issueruseineverywhere'] = 'Anmeldeseite und interne Services';
+$string['issueruseininternalonly'] = 'Nur interne Services';
+$string['issueruseinloginonly'] = 'Nur Anmeldeseite';
+$string['linkedin_service'] = 'LinkedIn';
+$string['logindisplay'] = 'Auf der Anmeldeseite anzeigen als';
 $string['loginissuer'] = 'Login erlauben';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Nicht konfiguriert';
 $string['notdiscovered'] = 'Serviceerkennung war nicht erfolgreich';
 $string['notloginissuer'] = 'Login nicht erlauben';

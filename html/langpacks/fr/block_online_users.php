@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'fr', version '3.8'.
+ * Strings for component 'block_online_users', language 'fr', version '3.11'.
  *
  * @package     block_online_users
  * @category    string
@@ -36,6 +36,7 @@ $string['online_users:myaddinstance'] = 'Ajouter un bloc utilisateurs connecté 
 $string['online_users:viewlist'] = 'Accéder à la liste des utilisateurs connectés';
 $string['onlinestatushiding'] = 'Masquage du statut de connexion';
 $string['onlinestatushiding_desc'] = 'Si ce réglage est activé, les utilisateurs peuvent choisir de cacher leur statut de connexion.';
+$string['otherusers'] = 'Autres utilisateurs ({$a})';
 $string['periodnminutes'] = '{$a} dernières minutes';
 $string['pluginname'] = 'Utilisateurs en ligne';
 $string['privacy:metadata:preference:uservisibility'] = 'Statut en ligne visible des autres utilisateurs sans le bloc Utilisateurs en ligne.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'eu', version '3.8'.
+ * Strings for component 'plugin', language 'eu', version '3.11'.
  *
  * @package     plugin
  * @category    string
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Ezin izan da eskuragarri dauden egunerakete
 $string['filterall'] = 'Erakutsi guztiak';
 $string['filtercontribonly'] = 'Erakutsi plugin gehigarriak soilik';
 $string['filterupdatesonly'] = 'Erakutsi eguneratzeko modukoak soilik';
+$string['incompatibleversion'] = 'Bateragarria ez den Moodle bertsioa: {$a}';
 $string['isenabled'] = 'Gaituta?';
 $string['misdepinfoplugin'] = 'Pluginaren informazioa';
 $string['misdepinfoversion'] = 'Bertsioaren informazioa';
@@ -61,11 +62,13 @@ $string['misdepsavail'] = 'Falta diren menpekotasunak eskuragarri';
 $string['misdepsunavail'] = 'Falta diren menpekotasunak ez daude eskuragarri';
 $string['misdepsunavaillist'] = 'Ez da aurkitu mendekotasun baldintzak betetzen dituen bertsiorik: {$a}.';
 $string['misdepsunknownlist'] = 'Ez dago pluginen direktorioan: <strong>{$a}</strong>.';
+$string['moodlebranch'] = 'Moodle {$a->min} - {$a->max}';
 $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Honelako pluginak ez daude instalatuta';
 $string['notdownloadable'] = 'Ezin da paketea jaitsi';
-$string['notdownloadable_help'] = 'Eguneraketa duen ZIP paketea ezin da automatikoki jaitsi. Mesedez jo dokumentazio orrira laguntza gehiago eskuratzeko.';
+$string['notdownloadable_help'] = 'Eguneraketa duen ZIP paketea ezin da automatikoki jaitsi.';
 $string['notes'] = 'Oharrak';
+$string['notsupported'] = 'Plugina agian ez da bateragarria Moodleko bertsioarekin {$a}';
 $string['notwritable'] = 'Pluginaren fitxategiak ezin dira idatzi';
 $string['notwritable_help'] = 'Web-zerbitzariko pluginetako fitxategiak ezin dira idatzi. Web-zerbitzariaren prozesuak pluginaren karpetan eta bere edukietan idazteko baimenak izan behar ditu. Baliteke plugin mota horretako jatorrizko karpetan ere idazteko baimenak behar izatea.';
 $string['otherplugin'] = '{$a->component}';
@@ -81,7 +84,7 @@ $string['packagesvalidatingfailed'] = 'Instalazioa bertan behera utzi da baliozt
 $string['packagesvalidatingok'] = 'Balioztatze arrakastatsua, instalazioak aurrera egin dezake';
 $string['plugincheckall'] = 'Plugin guztiak';
 $string['plugincheckattention'] = 'Zure arreta eskatzen duten pluginak';
-$string['pluginchecknone'] = 'Orain pluginek ez dute zure arreta eskatzen';
+$string['pluginchecknone'] = 'Ez dago zure arreta eskatzen duen pluginik';
 $string['pluginchecknotice'] = 'Orri honek eguneraketa egin bitartean zure arreta eska dezaketen pluginak erakusten ditu, hala nola instalatuko diren pluginak, eguneratuko direnak, falta direnak... Eguneratu daitezkeen pluginak ere erakusten dira. Pluginen eguneraketak eskuragarri dauden konprobatzea gomendatzen da, eta halakorik egotekotan iturri-kodea eguneratzea gomendatzen da Moodle eguneratzen jarraitu aurretik.';
 $string['plugindisable'] = 'Desgaitu';
 $string['plugindisabled'] = 'Desgaituta';
@@ -120,6 +123,8 @@ $string['type_cachestore'] = 'Cache-biltegia';
 $string['type_cachestore_plural'] = 'Cache-biltegiak';
 $string['type_calendartype'] = 'Egutegi mota';
 $string['type_calendartype_plural'] = 'Egutegi motak';
+$string['type_contentbank'] = 'Eduki-bankua';
+$string['type_contentbank_plural'] = 'Eduki-bankuko pluginak';
 $string['type_coursereport'] = 'Ikastaroaren txostena';
 $string['type_coursereport_plural'] = 'Ikastaroaren txostenak';
 $string['type_customfield'] = 'Eremu pertsonalizatua';
@@ -145,6 +150,8 @@ $string['type_gradereport'] = 'Kalifikazio-liburuaren txostena';
 $string['type_gradereport_plural'] = 'Kalifikazio-liburuaren txostenak';
 $string['type_gradingform'] = 'Kalifikazio-metodo aurreratuak';
 $string['type_gradingform_plural'] = 'Kalifikazio-metodo aurreratuak';
+$string['type_h5plib'] = 'H5P testuingurua';
+$string['type_h5plib_plural'] = 'H5P testuinguruak';
 $string['type_local'] = 'Plugin lokala';
 $string['type_local_plural'] = 'Plugin lokalak';
 $string['type_media'] = 'Erreproduzigailua';
@@ -157,6 +164,9 @@ $string['type_mnetservice'] = 'MNet zerbitzua';
 $string['type_mnetservice_plural'] = 'MNet zerbitzuak';
 $string['type_mod'] = 'Jarduera-modulua';
 $string['type_mod_plural'] = 'Jarduera-moduluak';
+$string['type_paygw'] = 'Ordainketa ataria';
+$string['type_paygw_plural'] = 'Ordainketa atariak';
+$string['type_paygwmanage'] = 'Kudeatu ordainketa atariak';
 $string['type_plagiarism'] = 'Plagiorako plugina';
 $string['type_plagiarism_plural'] = 'Plagiorako pluginak';
 $string['type_portfolio'] = 'Portfolioa';
@@ -199,7 +209,7 @@ $string['updatepluginconfirminfo'] = '<strong>{$a->name}</strong> pluginaren ber
 $string['updatepluginconfirmwarning'] = 'Mesedez kontuan izan Moodlek ez duela automatikoki zure datu-basearen segurtasun-kopiarik egiten eguneratzea egin aurretik. Irmoki gomendatzen dizugu oraintxe bertan segurtasun-kopia oso bat egitea, kode berriak gunea ez erabilgarri utzi edo datu-basea kaltetuko lukeen arazo arraroren bat izango balu gainditzeko aukera izan dezazun. Aurrera arriskuaren jabe izanda egin ezazu.';
 $string['validationmsg_componentmatch'] = 'Osagaiaren izen osoa';
 $string['validationmsg_componentmismatchname'] = 'Pluginaren izena ez dator bat';
-$string['validationmsg_componentmismatchname_help'] = 'ZIP pakete batzuek, GitHub bidez sortutakoak adibidez, jatorrizko karpeta ezegokia izan dezakete. Jatorrizko karpetaren izena konpondu behar duzu pluginaren izenarekin bat etorri dadin.';
+$string['validationmsg_componentmismatchname_help'] = 'ZIP pakete batzuek, GitHub bidez sortutakoak adibidez, jatorrizko direktorioa ezegokia izan dezakete. Jatorrizko direktorioaren izena konpondu behar duzu pluginaren izenarekin bat etorri dadin.';
 $string['validationmsg_componentmismatchname_info'] = 'Pluginak bere izena \'{$a}\' dela dio baina ez dator bat bere jatorrizko direktorioaren izenarekin.';
 $string['validationmsg_componentmismatchtype'] = 'Plugin mota ez dator bat';
 $string['validationmsg_componentmismatchtype_info'] = '\'{$a->expected}\' espero zen baina pluginak bere mota \'{$a->found}\' dela dio.';
@@ -229,7 +239,7 @@ $string['validationmsg_requiresmoodle'] = 'Behar den Moodle bertsioa';
 $string['validationmsg_rootdir'] = 'Instalatuko den pluginaren izena';
 $string['validationmsg_rootdir_help'] = 'ZIP paketearen jatorrizko direktorioaren izena instalatuko den pluginaren izenarekin bat etorri behar da. Izena ondo ez badago, ZIP barruko jatorrizko direktorioaren izena aldatu beharko duzu gehigarria instalatu baino lehen.';
 $string['validationmsg_rootdirinvalid'] = 'Pluginaren izen baliogabea';
-$string['validationmsg_rootdirinvalid_help'] = 'ZIP paketearen jatorrizko karpetaren izenak sintaxi formalaren eskakizunak urratzen ditu. ZIP pakete batzuek, GitHub bidez sortutakoak adibidez, jatorrizko karpetaren izen ezegokia izan dezakete. Jatorrizko karpetaren izena konpondu behar duzu pluginaren izenarekin bat etor dadin.';
+$string['validationmsg_rootdirinvalid_help'] = 'ZIP paketearen jatorrizko direktorioaren izenak sintaxi formalaren eskakizunak urratzen ditu. ZIP pakete batzuek, GitHub bidez sortutakoak adibidez, jatorrizko direktorioaren izen ezegokia izan dezakete. Jatorrizko direktorioaren izena konpondu behar duzu pluginaren izenarekin bat etor dadin.';
 $string['validationmsg_targetexists'] = 'Helburuko kokapena dagoeneko existitzen da eta ezabatuko da';
 $string['validationmsg_targetexists_help'] = 'Pluginaren direktorioa dagoeneko existitzen da eta paketearen edukiekin ordezkatua izango da.';
 $string['validationmsg_targetnotdir'] = 'Helburuko kokapena fitxategi batekin okupatuta dago';

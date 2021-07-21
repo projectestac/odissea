@@ -16,7 +16,6 @@
 /**
  * Chart base.
  *
- * @package    core
  * @copyright  2016 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @module     core/chart_base
@@ -30,7 +29,6 @@ define(['core/chart_series', 'core/chart_axis'], function(Series, Axis) {
      *
      * {@link module:core/chart_base#_setDefault} to set the defaults on instantiation.
      *
-     * @alias module:core/chart_base
      * @class
      */
     function Base() {
@@ -57,6 +55,14 @@ define(['core/chart_series', 'core/chart_axis'], function(Series, Axis) {
      * @type {String[]}
      */
     Base.prototype._labels = null;
+
+    /**
+     * Options for chart legend display.
+     *
+     * @protected
+     * @type {Object}
+     */
+    Base.prototype._legendOptions = null;
 
     /**
      * The title of the chart.
@@ -144,6 +150,9 @@ define(['core/chart_series', 'core/chart_axis'], function(Series, Axis) {
         Chart.setConfigColorSet(data.config_colorset);
         Chart.setLabels(data.labels);
         Chart.setTitle(data.title);
+        if (data.legend_options) {
+            Chart.setLegendOptions(data.legend_options);
+        }
         data.series.forEach(function(seriesData) {
             Chart.addSeries(Series.prototype.create(seriesData));
         });
@@ -201,6 +210,15 @@ define(['core/chart_series', 'core/chart_axis'], function(Series, Axis) {
      */
     Base.prototype.getLabels = function() {
         return this._labels;
+    };
+
+    /**
+     * Get whether to display the chart legend.
+     *
+     * @return {Bool}
+     */
+    Base.prototype.getLegendOptions = function() {
+        return this._legendOptions;
     };
 
     /**
@@ -310,6 +328,18 @@ define(['core/chart_series', 'core/chart_axis'], function(Series, Axis) {
             throw new Error('Series must match label values.');
         }
         this._labels = labels;
+    };
+
+    /**
+     * Set options for chart legend display.
+     *
+     * @param {Object} legendOptions
+     */
+    Base.prototype.setLegendOptions = function(legendOptions) {
+        if (typeof legendOptions !== 'object') {
+            throw new Error('Setting legend with non-object value:' + legendOptions);
+        }
+        this._legendOptions = legendOptions;
     };
 
     /**

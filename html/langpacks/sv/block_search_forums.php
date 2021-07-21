@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_search_forums', language 'sv', version '3.8'.
+ * Strings for component 'block_search_forums', language 'sv', version '3.11'.
  *
  * @package     block_search_forums
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = 'Avancerad sökning';
 $string['pluginname'] = 'Sök i forum';
+$string['privacy:metadata'] = 'Blocket Sök i forum visar endast data som lagras på andra platser.';
 $string['search_forums:addinstance'] = 'Lägg till blocket Sök i forum';

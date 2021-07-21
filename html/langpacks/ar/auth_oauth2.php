@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'ar', version '3.8'.
+ * Strings for component 'auth_oauth2', language 'ar', version '3.11'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -31,7 +31,7 @@ $string['auth_oauth2description'] = 'مصادقة مبنية على معايير
 $string['auth_oauth2settings'] = 'إعدادات مصادقة OAuth 2.';
 $string['confirmaccountemail'] = 'مرحباً {$a->fullname}،
 
-لقد طُلب إنشاء حساب جديد في  \'{$a->sitename}\'
+لقد طُلب إنشاء حساب جديد في \'{$a->sitename}\'
 باستعمال بريدك الالكتروني.
 
 لتأكيد حسابك الجديد، لطفاً، إذهب إلى عنوان الويب أدناه:
@@ -39,7 +39,7 @@ $string['confirmaccountemail'] = 'مرحباً {$a->fullname}،
 {$a->link}
 
 في أغلب برامج البريد، هذا متوقع أن يظهر بشكل رابط أزرق
-بحيث يمكنك مجرد النقر عليه.  إذا كانت الأمور بشكل آخر،
+بحيث يمكنك مجرد النقر عليه. إذا لم يكن ذلك متأتِّياً،
 فقم بنسخ الرابط وإلصاقه في شريط العنوان أعلى
 نافذة المتصفح لديك.
 
@@ -74,7 +74,7 @@ $string['confirmlinkedloginemail'] = 'مرحباً {$a->fullname}،
 $string['confirmlinkedloginemailsubject'] = '{$a}: تأكيد الحساب المرتبط';
 $string['createaccountswarning'] = 'ملحق المصادقة هذا يسمح للمستخدمين بإنشاء حسابات في موقعك. قد ترغب بتمكين الإعداد "authpreventaccountcreation" إذا كنت تستعمل هذا الملحق.';
 $string['createnewlinkedlogin'] = 'أربط حساباً جديداً ({$a})';
-$string['emailconfirmlink'] = 'أربط حساباتك';
+$string['emailconfirmlink'] = 'إربط حساباتك';
 $string['emailconfirmlinksent'] = '<p>تم العثور على حساب بهذا العنوان البريدي، ولكنه غير مرتبط بعد.</p>
    <p>لا بد من ربط الحساب حتى تتمكن من تسجيل الدخول.</p>
    <p>رسالة بريد الكتروني ينبغي أن تكون قد أرسلت إلى عنوانك عند <b>{$a}</b>.</p>
@@ -109,12 +109,12 @@ $string['pluginname'] = 'OAuth 2';
 $string['privacy:metadata:auth_oauth2'] = 'مصادقة OAuth 2';
 $string['privacy:metadata:auth_oauth2:authsubsystem'] = 'هذا الملحق مرتبط بنظام المصادقة الفرعي.';
 $string['privacy:metadata:auth_oauth2:confirmtoken'] = 'ترميز التأكيد';
-$string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'البصمة الزمنية التي تنتهي عندها صلاحية ترميز التأكيد.';
-$string['privacy:metadata:auth_oauth2:email'] = 'البريد الالكتروني الخارجي الذي يتم تعيينه لهذا الحساب.';
-$string['privacy:metadata:auth_oauth2:issuerid'] = 'مُعرَّف الجهة المصدرة لـ OAuth 2 لدخول OAuth 2 هذا';
-$string['privacy:metadata:auth_oauth2:tableexplanation'] = 'حسابات OAuth 2 المرتبطة بحساب المستخدم في مودل.';
-$string['privacy:metadata:auth_oauth2:timecreated'] = 'البصمة الزمنية التي عندها ربط حساب المستخدم بدخول OAuth 2 هذا.';
-$string['privacy:metadata:auth_oauth2:timemodified'] = 'البصمة الزمنية التي عندها تم تعديل هذا السجل.';
-$string['privacy:metadata:auth_oauth2:userid'] = 'مُعرَّف حساب المستخدم الذي يرتبط به دخول OAuth 2.';
-$string['privacy:metadata:auth_oauth2:usermodified'] = 'مُعرَّف المستخدم الذي قام بتعديل هذا الحساب.';
-$string['privacy:metadata:auth_oauth2:username'] = 'حساب المستخدم الخارجي المعين لهذا الحساب.';
+$string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'البصمة الزمنية التي تنتهي عندها صلاحية ترميز التأكيد';
+$string['privacy:metadata:auth_oauth2:email'] = 'البريد الالكتروني الخارجي الذي يتم تعيينه لهذا الحساب';
+$string['privacy:metadata:auth_oauth2:issuerid'] = 'مُعرَّف الجهة المُصدرة لـ OAuth 2 لدخول OAuth 2 هذا';
+$string['privacy:metadata:auth_oauth2:tableexplanation'] = 'حسابات OAuth 2 المرتبطة بحساب المستخدم في مودل';
+$string['privacy:metadata:auth_oauth2:timecreated'] = 'البصمة الزمنية التي عندها تم ربط حساب المستخدم بدخول OAuth 2 هذا';
+$string['privacy:metadata:auth_oauth2:timemodified'] = 'البصمة الزمنية التي عندها تم تعديل هذا السجل';
+$string['privacy:metadata:auth_oauth2:userid'] = 'مُعرَّف حساب المستخدم الذي يرتبط به دخول OAuth 2';
+$string['privacy:metadata:auth_oauth2:usermodified'] = 'مُعرَّف المستخدم الذي قام بتعديل هذا الحساب';
+$string['privacy:metadata:auth_oauth2:username'] = 'حساب المستخدم الخارجي المعين لهذا الحساب';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'sv', version '3.8'.
+ * Strings for component 'tool_analytics', language 'sv', version '3.11'.
  *
  * @package     tool_analytics
  * @category    string
@@ -42,7 +42,7 @@ $string['classdoesnotexist'] = 'Klassen {$a} finns inte';
 $string['clearmodelpredictions'] = 'Är du säker på att du vill rensa alla "{$a}"-förutsägelser?';
 $string['clearpredictions'] = 'Rensa förutsägelser';
 $string['clienablemodel'] = 'Du kan aktivera modellen genom att välja ett analysintervall via dess ID. Observera att du också kan aktivera det senare med hjälp av webbgränssnittet (\'none\' för att avsluta).';
-$string['clievaluationandpredictions'] = 'En schemalagd uppgift itererar igenom aktiverade analyser och hämtar förutsägelser. Utvärdering av modeller via webbgränssnittet är inaktiverat. Du kan tillåta att dessa processer körs manuellt via webbgränssnittet genom att inaktivera <a href="{$a}">\'onlycli\'</a> i inställningarna för analysfunktionerna.';
+$string['clievaluationandpredictions'] = 'En schemalagd uppgift itererar genom aktiverade analyser och hämtar förutsägelser. Utvärdering av modeller via webbgränssnittet är inaktiverat. Du kan tillåta att dessa processer körs manuellt via webbgränssnittet genom att inaktivera <a href="{$a}">\'Analysfunktionens processer körs endast via kommandoraden\'</a> under <em>Hantera webbplats &#10132; Analysfunktioner &#10132; Analysinställningar</em>.';
 $string['clievaluationandpredictionsnoadmin'] = 'En schemalagd aktivitet itererar genom aktiverade modeller och hämtar förutsägelser. Utvärdering av modeller via webbgränssnittet är inaktiverad. Detta kan aktiveras av en webbplatsadministratör.';
 $string['component'] = 'Komponent';
 $string['componentcore'] = 'Kärna';
@@ -131,11 +131,11 @@ $string['predictionresults'] = 'Förutsägelseresultat';
 $string['predictmodels'] = 'Förutsäg modeller';
 $string['predictorresultsin'] = 'Prediktorloggad information i katalogen {$a}';
 $string['previouspage'] = 'Föregående sida';
-$string['privacy:metadata'] = 'Insticksmodulen för Analysmodeller lagrar inte några personuppgifter.';
-$string['restoredefault'] = 'Återställa standardmodeller';
+$string['privacy:metadata'] = 'Pluginmodulen för Analysmodeller lagrar inte några personuppgifter.';
+$string['restoredefault'] = 'Återställ standardmodeller';
 $string['restoredefaultempty'] = 'Vänligen välj modeller som ska återställas.';
 $string['restoredefaultinfo'] = 'Dessa standardmodeller saknas eller har ändrats sedan de installerades. Du kan återställa valda standardmodeller.';
-$string['restoredefaultnone'] = 'Alla standardmodeller som tillhandahålls av kärnsystemet samt installerade insticksprogram har skapats. Inga nya modeller hittades; det finns inget att återställa.';
+$string['restoredefaultnone'] = 'Alla standardmodeller som tillhandahålls av systemet och installerade pluginmoduler har skapats. Inga nya modeller hittades; det finns inget att återställa.';
 $string['restoredefaultsome'] = '{$a->count} nya modell(er) har framgångsrikt återskapats.';
 $string['restoredefaultsubmit'] = 'Återställ valda';
 $string['sameenddate'] = 'Aktuellt slutdatum är ok';

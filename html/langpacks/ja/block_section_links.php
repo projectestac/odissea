@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ja', version '3.8'.
+ * Strings for component 'block_section_links', language 'ja', version '3.11'.
  *
  * @package     block_section_links
  * @category    string
@@ -38,5 +38,7 @@ $string['numsections2_help'] = 'この値にコース内セクション数が到
 $string['pluginname'] = 'セクションリンク';
 $string['privacy:metadata'] = 'セクションリンクブロックは他の場所で保存されたデータのみ表示します。';
 $string['section_links:addinstance'] = '新しいセクションリンクブロックを追加する';
+$string['showsectionname'] = 'セクション名を表示する';
+$string['showsectionname_help'] = 'セクションナンバーに加えてセクション名を表示します。';
 $string['topics'] = 'トピック';
 $string['weeks'] = '週';

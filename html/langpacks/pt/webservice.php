@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'pt', version '3.8'.
+ * Strings for component 'webservice', language 'pt', version '3.11'.
  *
  * @package     webservice
  * @category    string
@@ -44,7 +44,7 @@ $string['arguments'] = 'Argumentos';
 $string['authmethod'] = 'Método de autenticação';
 $string['callablefromajax'] = 'Disponível para pedidos de de AJAX';
 $string['cannotcreatetoken'] = 'Não tem permissões para criar o token de web service para o serviço {$a}.';
-$string['cannotgetcoursecontents'] = 'Não é possível obter os conteúdos das disciplinas';
+$string['cannotgetcoursecontents'] = 'Não é possível obter os conteúdos da disciplina';
 $string['checkusercapability'] = 'Verificar permissões do utilizador';
 $string['checkusercapabilitydescription'] = 'O utilizador deve ter as permissões correspondentes aos protocolos que usar (Ex: webservice/rest:use, webservice/soap:use). Para ter acesso a esta configuração é necessário criar um papel "web services" com as permissões correspondentes aos protocolos e atribuir este papel, no contexto do site, ao utilizador que irá usar os web services.';
 $string['configwebserviceplugins'] = 'Por questões de segurança apenas os protocolos em utilização devem estar ativos.';
@@ -70,7 +70,7 @@ $string['downloadfiles'] = 'Pode descarregar ficheiros';
 $string['downloadfiles_help'] = 'Se ativar esta opção, qualquer utilizador pode descarregar ficheiros com chaves de segurança. É claro que eles estão limitados aos ficheiros que estão autorizados a descarregar no site.';
 $string['editaservice'] = 'Alterar serviço';
 $string['editservice'] = 'Alterar o serviço: {$a->name} (id: {$a->id})';
-$string['enabled'] = 'Ativo(a)';
+$string['enabled'] = 'Ativo';
 $string['enabledocumentation'] = 'Ativar documentação para programadores';
 $string['enabledocumentationdescription'] = 'Existe documentação detalhada sobre todos os web services cujos protocolos estão ativos.';
 $string['enableprotocols'] = 'Ativar protocolos';
@@ -84,7 +84,7 @@ $string['errorcodes'] = 'Mensagem de erro';
 $string['errorcoursecontextnotvalid'] = 'Não pode executar funções no contexto de uma disciplina (identificador da disciplina: {$a->courseid}). Mensagem do erro de contexto: {$a->message}';
 $string['errorinvalidparam'] = 'O parâmetro "{$a}" é inválido.';
 $string['errornotemptydefaultparamarray'] = 'O parâmetro de descrição do web service designado por "{$a}" é uma estrutura individual ou múltipla. O valor predefinido tem que ser um array vazio. Consulte a descrição do web service.';
-$string['erroroptionalparamarray'] = 'O parâmetro de descrição do web service designado por "{$a}" é uma estrutura indvidual ou múltipla. Não pode ser definido como VALUE_OPTIONAL. Consulte a descrição do web service.';
+$string['erroroptionalparamarray'] = 'O parâmetro de descrição do web service designado por \'{$a}\' é uma estrutura individual ou múltipla. Não pode ser definido como VALUE_OPTIONAL. Consulte a descrição do web service.';
 $string['eventwebservicefunctioncalled'] = 'Chamada a função do web service';
 $string['eventwebserviceloginfailed'] = 'A autenticação no web service falhou';
 $string['eventwebserviceservicecreated'] = 'Web service criado';
@@ -122,7 +122,7 @@ $string['loginrequired'] = 'Reservado aos utilizadores registados';
 $string['manageprotocols'] = 'Gerir protocolos';
 $string['managetokens'] = 'Gerir tokens';
 $string['missingcaps'] = 'Permissões em falta';
-$string['missingcaps_help'] = 'Lista de permissões necessárias para a utilização do web service que o utilizador não possui. As permissões em falta têm que ser adicionadas ao papel do utilizador para que este possa usar o serviço.';
+$string['missingcaps_help'] = 'Lista de permissões declaradas pelo web serviço que o utilizador não possui. Algumas funcionalidades do serviço podem não estar disponíveis sem estas permissões.';
 $string['missingpassword'] = 'Não indicou a senha';
 $string['missingrequiredcapability'] = 'É necessária a permissão {$a}.';
 $string['missingusername'] = 'Não indicou o nome de utilizador';
@@ -134,7 +134,7 @@ $string['norequiredcapability'] = 'Não é necessária nenhuma permissão';
 $string['notoken'] = 'A lista de tokens está vazia.';
 $string['onesystemcontrolling'] = 'Um sistema a controlar o Moodle com um token';
 $string['onesystemcontrollingdescription'] = 'Os passos seguintes mostram como configurar os web services para que um sistema possa controlar o Moodle. Estes passos também ajudam a configurar o método de autenticação com tokens (chaves de segurança).';
-$string['onlyseecreatedtokens'] = 'Qualquer token pode ser apagado, no entanto só pode ver tokens que criou.';
+$string['onlyseecreatedtokens'] = 'Só pode ver os tokens que criou.';
 $string['operation'] = 'Operação';
 $string['optional'] = 'Opcional';
 $string['passwordisexpired'] = 'A senha expirou';
@@ -209,6 +209,9 @@ $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Token de autenticação';
 $string['tokencreatedbyadmin'] = 'Apenas pode ser reiniciado(a) pelo administrador (*)';
 $string['tokencreator'] = 'Criador';
+$string['tokenfilter'] = 'Filtrar tokes';
+$string['tokenfilterreset'] = 'Mostrar todos os token';
+$string['tokenfiltersubmit'] = 'Mostrar apenas os tokens correspondentes';
 $string['unknownoptionkey'] = 'Opção da chave desconhecida ({$a})';
 $string['unnamedstringparam'] = 'Um parâmetro da string está anónimo.';
 $string['updateusersettings'] = 'Atualizar';

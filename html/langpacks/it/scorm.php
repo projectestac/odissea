@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'it', version '3.8'.
+ * Strings for component 'scorm', language 'it', version '3.11'.
  *
  * @package     scorm
  * @category    string
@@ -84,6 +84,11 @@ $string['collapsetocwinsize'] = 'Riduci TOC se la dimensione della finestra è m
 $string['collapsetocwinsizedesc'] = 'Consente di impostare la dimensione minima della finestra sotto la quale ridurre il TOC.';
 $string['compatibilitysettings'] = 'Impostazioni di compatibilità';
 $string['completed'] = 'Completato';
+$string['completiondetail:allscos'] = 'Svolgere tutte le parti dell’attività';
+$string['completiondetail:completionscore'] = 'Ottenere un punteggio pari a {$a} o superiore';
+$string['completiondetail:completionstatuscompleted'] = 'Completare l\'attività';
+$string['completiondetail:completionstatuscompletedandpassed'] = 'Completare e superare l\'attività';
+$string['completiondetail:completionstatuspassed'] = 'Superare l\'attività';
 $string['completionscorerequired'] = 'Punteggio minimo richiesto';
 $string['completionscorerequired_help'] = 'Un utente, oltre a soddisfare eventuali altri criteri di completamento, dovrà raggiungere il punteggio impostato per completare l\'attività SCORM.';
 $string['completionscorerequireddesc'] = 'Per completare l\'attività è necessario n punteggio minimo di {$a}';

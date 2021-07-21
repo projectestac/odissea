@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'fr', version '3.8'.
+ * Strings for component 'lti', language 'fr', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -42,6 +42,8 @@ $string['activate'] = 'Activer';
 $string['activatetoadddescription'] = 'Vous devez activer cet outil avant d\'ajouter une description.';
 $string['active'] = 'Actif';
 $string['activity'] = 'Activité';
+$string['add_ltiadv'] = 'Ajouter LTI Advantage';
+$string['add_ltilegacy'] = 'Ajouter LTI Legacy';
 $string['addnewapp'] = 'Activer l\'application externe';
 $string['addserver'] = 'Ajouter un serveur fiable';
 $string['addtype'] = 'Ajouter un outil préconfiguré';
@@ -62,6 +64,7 @@ $string['basicltifieldset'] = 'Jeu de champs personnalisés';
 $string['basicltiintro'] = 'Description de l\'activité';
 $string['basicltiname'] = 'Nom de l\'activité';
 $string['basicltisettings'] = 'Réglages LTI de base';
+$string['cachedef_keyset'] = 'Cache l\'information de jeu de clefs de l\'outil';
 $string['cancel'] = 'Annuler';
 $string['cancelled'] = 'Annulé';
 $string['cannot_delete'] = 'Vous ne pouvez pas supprimer la configuration de cet outil.';
@@ -84,7 +87,11 @@ $string['configtypes'] = 'Autoriser les applications LTI';
 $string['configured'] = 'Configuré';
 $string['confirmtoolactivation'] = 'Voulez-vous vraiment activer cet outil ?';
 $string['contentitem'] = 'Message Content-Item';
+$string['contentitem_deeplinking'] = 'Supporte les liens profond (Content-Item Message)';
+$string['contentitem_deeplinking_help'] = 'Si ce réglage est activé, l\'option « Sélectionner un contenu » sera disponible lors de l\'ajout d\'un outil externe.';
 $string['contentitem_help'] = 'Si ce réglage est activé, l\'option « Sélectionner un contenu » sera disponible lors de l\'ajout d\'un outil externe.';
+$string['contentitem_multiple_description'] = 'Les éléments suivants seront ajoutés à votre cours :';
+$string['contentitem_multiple_graded'] = 'Activité évaluée (note maximale : {$a})';
 $string['course_tool_types'] = 'Outils de cours';
 $string['courseactivitiesorresources'] = 'Activités ou ressources de cours';
 $string['courseid'] = 'Identifiant du cours';
@@ -111,6 +118,7 @@ $string['default_launch_container_help'] = 'Le conteneur de lancement détermine
 * **Intégré, sans les blocs** : l\'outil est affiché dans la fenêtre Moodle existante, uniquement avec la navigation en haut de la page.
 * **Nouvelle fenêtre** : l\'outil s\'ouvre dans une nouvelle fenêtre, occupant la totalité de l\'espace disponible. Suivant la configuration du navigateur, il peut s\'ouvrir dans un nouvel onglet. Certains navigateurs empêcheront l\'ouverture d\'une nouvelle fenêtre.';
 $string['delegate'] = 'Déléguer à l\'enseignant';
+$string['delegate_tool'] = 'Comme spécifié dans la définition de Liens profond ou déléguer à l\'enseignant';
 $string['delete'] = 'Supprimer';
 $string['delete_confirmation'] = 'Voulez-vous vraiment supprimer cet outil préconfiguré ?';
 $string['deletetype'] = 'Supprimer l\'outil préconfiguré';
@@ -131,6 +139,14 @@ $string['donot'] = 'Ne pas envoyer';
 $string['donotaccept'] = 'Ne pas accepter';
 $string['donotallow'] = 'Ne pas autoriser';
 $string['duplicateregurl'] = 'Cette URL d\'enregistrement est déjà utilisée';
+$string['dynreg_update_btn_new'] = 'Enregistrer comme nouvel outil externe';
+$string['dynreg_update_btn_update'] = 'Mettre à jour';
+$string['dynreg_update_name'] = 'Nom de l\'outil';
+$string['dynreg_update_notools'] = 'Aucun outil dans le contexte.';
+$string['dynreg_update_text'] = 'Des outils existants sont liés au domaine d\'enregistrement. Voulez-vous vraiment mettre à jour un outil externe déjà installé ou voulez-vous créer un nouvel outil externe ?';
+$string['dynreg_update_url'] = 'URL de base';
+$string['dynreg_update_version'] = 'Version LTI';
+$string['dynreg_update_warn_dupdomain'] = 'Il n\'est pas recommandé d\'avoir plusieurs outils externes sous le même domaine.';
 $string['editdescription'] = 'Cliquer ici pour donner une description à cet outil';
 $string['edittype'] = 'Modifier l\'outil préconfiguré';
 $string['embed'] = 'Intégré';
@@ -180,7 +196,7 @@ De plus, toutes les requêtes de services web de ce fournisseur d\'outil utilise
 Avant d’activer cette option, assurez-vous que ce site Moodle et que le fournisseur de l\'outil supportent le protocole SSL.';
 $string['forced_help'] = 'Ce réglage a été imposé au niveau de la configuration du cours ou du site. Vous ne pouvez pas le modifier depuis cette interface.';
 $string['generaltool'] = 'Outil générique';
-$string['global_tool_types'] = 'Outils préconfigurés globaux';
+$string['global_tool_types'] = 'Outils préconfigurés';
 $string['grading'] = 'Évaluation';
 $string['icon_url'] = 'URL de l\'icône';
 $string['icon_url_help'] = 'L\'URL de l\'icône permet de spécifier une icône différente à afficher pour cette activité dans la liste du cours. Au lieu d\'afficher l\'icône LTI par défaut, on peut spécifier une icône qui représente mieux le type de l\'activité.';
@@ -197,6 +213,10 @@ $string['initiatelogin'] = 'URL d\'initiation de connexion';
 $string['initiatelogin_help'] = 'L\'URL de l\'outil à laquelle sont envoyées les requêtes d\'initiation de connexion. Cette URL est nécessaire avant qu\'un message puisse être envoyé correctement à l\'outil.';
 $string['invalidid'] = 'L\'identifiant LTI est incorrect';
 $string['jwtsecurity'] = 'LTI 1.3';
+$string['keytype'] = 'Type de clef publique';
+$string['keytype_help'] = 'La méthode d\'authentification utilisée pour valider l\'outil.';
+$string['keytype_keyset'] = 'URL jeu de clefs';
+$string['keytype_rsa'] = 'Clef RSA';
 $string['launch_in_moodle'] = 'Lancer l\'outil dans Moodle';
 $string['launch_in_popup'] = 'Lancer l\'outil dans une fenêtre surgissante';
 $string['launch_url'] = 'URL de l\'outil';
@@ -217,6 +237,8 @@ $string['leaveblank'] = 'Laisser vide si vous n\'en avez pas besoin';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Ajouter des configurations d\'outils externes propres à un cours';
 $string['lti:addinstance'] = 'Ajouter un outil externe';
+$string['lti:addmanualinstance'] = 'Ajouter un outil configuré manuellement';
+$string['lti:addpreconfiguredinstance'] = 'Ajouter un outil préconfiguré';
 $string['lti:admin'] = 'Devenir un administrateur lorsque l\'outil est lancé';
 $string['lti:grade'] = 'Voir les notes retournées par un outil externe';
 $string['lti:manage'] = 'Être formateur lorsqu\'un outil externe est lancé';
@@ -287,9 +309,13 @@ $string['optionalsettings'] = 'Réglages optionnels';
 $string['organization'] = 'Informations sur l\'institution';
 $string['organizationdescr'] = 'Description de l\'institution';
 $string['organizationid'] = 'ID de l\'institution';
+$string['organizationid_default'] = 'ID par défaut de l\'institution';
+$string['organizationid_default_help'] = 'La valeur à utiliser par défaut pour l\'ID de l\'institution. L\'ID du site identifie cette installation de Moodle.';
 $string['organizationid_help'] = 'Un identifiant unique pour cette instance de Moodle. On utilise typiquement le nom DNS de l\'institution.
 
 Si le champ n\'est pas renseigné, le nom d\'hôte de ce site Moodle sera utilisé comme valeur par défaut.';
+$string['organizationidguid'] = 'ID de l\'institution';
+$string['organizationidguid_help'] = 'Une identifiant unique pour cette instance de Moodle, envoyé à l\'outil comme « Platform Instance GUID ».';
 $string['organizationurl'] = 'URL de l\'institution';
 $string['organizationurl_help'] = 'L\'URL de base de cette installation de Moodle.
 
@@ -345,6 +371,8 @@ $string['privacy:metadata:useridnumber'] = 'Le numéro de l\'utilisateur de l\'u
 $string['privacy:metadata:username'] = 'Le nom d\'utilisateur de l\'utilisateur qui accède au contenu LTI';
 $string['publickey'] = 'Clef publique';
 $string['publickey_help'] = 'La clef publique (en format PEM) fournie par l\'outil pour permettre la signature des messages entrant et la vérification des requêtes de service.';
+$string['publickeyset'] = 'Jeu de clefs public';
+$string['publickeyset_help'] = 'Le jeu de clefs public dans lequel ce site récupérera la clef publique de l\'outil pour permettre la vérification de la signature des messages entrants et des requêtes de service.';
 $string['quickgrade'] = 'Permettre l\'évaluation rapide';
 $string['quickgrade_help'] = 'Si ce réglage est activé, plusieurs outils peuvent être évalués sur une seule page. Ajoutez des notes et des commentaires, puis cliquez « Enregistrer mes feedbacks » pour enregistrer toutes les modifications.';
 $string['redirect'] = 'Vous allez être redirigé dans quelques secondes. Dans le cas contraire, cliquez sur le bouton.';
@@ -423,6 +451,8 @@ $string['show_in_course_lti2'] = 'Utilisation de la configuration de l\'outil';
 $string['show_in_course_lti2_help'] = 'Cet outil peut être affiché dans le sélecteur des activités qu\'un enseignant peut choisir d\'ajouter à un cours, ainsi que dans le menu déroulant des outils préconfigurés lors de l\'ajout d\'un outil externe à un cours.';
 $string['show_in_course_no'] = 'Ne pas afficher. N\'utiliser que lorsqu\'une URL d\'outil correspondante est saisie';
 $string['show_in_course_preconfigured'] = 'Afficher comme outil préconfiguré lors de l\'ajout comme outil externe';
+$string['sitehost'] = 'Nom d\'hôte du site';
+$string['siteid'] = 'ID du site';
 $string['size'] = 'Paramètres de taille';
 $string['submission'] = 'Remise';
 $string['submissions'] = 'Remises';

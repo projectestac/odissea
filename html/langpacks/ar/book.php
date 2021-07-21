@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ar', version '3.8'.
+ * Strings for component 'book', language 'ar', version '3.11'.
  *
  * @package     book
  * @category    string
@@ -51,12 +51,12 @@ $string['eventchapterdeleted'] = 'فصل تم حذفه';
 $string['eventchapterupdated'] = 'فصل تم تحديثه';
 $string['eventchapterviewed'] = 'فصل تمت معاينته';
 $string['hidechapter'] = 'اخف الفصل "{$a}"';
-$string['indicator:cognitivedepth'] = 'كتاب معرفي';
+$string['indicator:cognitivedepth'] = 'الكتاب معرفياً';
 $string['indicator:cognitivedepth_help'] = 'يعتمد هذا المؤشر على العمق المعرفي الذي وصل إليه الطالب في موارد كتاب.';
 $string['indicator:cognitivedepthdef'] = 'الكتاب معرفياً';
 $string['indicator:cognitivedepthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة المعرفية التي وفرتها موارد الكتاب خلال فترة التحليل هذه (المستويات = لا معاينة، معاينة)';
-$string['indicator:socialbreadth'] = 'كتاب اجتماعي';
-$string['indicator:socialbreadth_help'] = 'يستند هذا المؤشر إلى الاتساع الاجتماعي الذي تم التوصل إليه من قبل الطالب في مورد كتاب.';
+$string['indicator:socialbreadth'] = 'الكتاب إجتماعياً';
+$string['indicator:socialbreadth_help'] = 'هذا المؤشر مبني على عمق التوسع الاجتماعي الذي وصله الطالب في مورد الكتاب.';
 $string['indicator:socialbreadthdef'] = 'الكتاب إجتماعياً';
 $string['indicator:socialbreadthdef_help'] = 'لقد وصل المشارك إلى هذه النسبة المئوية من المشاركة الاجتماعية التي وفرتها موارد الكتاب خلال فترة التحليل هذه (المستويات = لا مشاركة، المشاركة منفرداً)';
 $string['modulename'] = 'كتاب';
@@ -83,7 +83,7 @@ $string['navstyle_help'] = '* الصور - تُستخدم الأيقونات ل�
 * نص - تُستخدم عناوين الفصل للتنقل';
 $string['navtext'] = 'النص';
 $string['navtoc'] = 'فقط جدول المحتويات';
-$string['nocontent'] = 'لم يتم إضافة أيّ محتوى إلى الكتاب';
+$string['nocontent'] = 'لم تتم إضافة أيّ محتوى إلى الكتاب';
 $string['numbering'] = 'تنسيق الفصل';
 $string['numbering0'] = 'لا يوجد';
 $string['numbering1'] = 'الأرقام';
@@ -96,12 +96,12 @@ $string['numbering_help'] = '* لا يوجد - بلا تنسيق لعناوين 
 $string['numberingoptions'] = 'الخيارات المُتاحة لتنسيق الفصل';
 $string['numberingoptions_desc'] = 'خيارات لعرض الفصول والفصول الفرعية في جدول المحتويات';
 $string['page-mod-book-x'] = 'أي صفحة لوحدة كتاب';
-$string['pluginadministration'] = 'إدارة الكتب';
+$string['pluginadministration'] = 'إدارة الكتاب';
 $string['pluginname'] = 'الكتاب';
 $string['previouschapter'] = 'الفصل السابق';
-$string['privacy:metadata'] = 'وحدة book activity module  لا تخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'وحدة مورد الكتاب لا تخزن أيّ بيانات شخصية.';
 $string['removeallbooktags'] = 'إزالة جميع علامات الكتاب';
-$string['search:activity'] = 'كتاب - مصادر للمعلومات';
+$string['search:activity'] = 'الكتاب - معلومات المورد';
 $string['search:chapter'] = 'الكتاب - الفصول';
 $string['showchapter'] = 'عرض فصل "{$a}"';
 $string['subchapter'] = 'قسم فرعي';

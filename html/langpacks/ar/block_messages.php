@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_messages', language 'ar', version '3.8'.
+ * Strings for component 'block_messages', language 'ar', version '3.11'.
  *
  * @package     block_messages
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['messages:addinstance'] = 'إضافة كتلة رسائل جديدة';
 $string['messages:myaddinstance'] = 'إضافة كتلة رسائل جديدة إلى دفة القيادة';
-$string['pluginname'] = 'رسائل';
+$string['pluginname'] = 'الرسائل';

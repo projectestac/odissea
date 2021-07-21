@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'nl', version '3.8'.
+ * Strings for component 'install', language 'nl', version '3.11'.
  *
  * @package     install
  * @category    string
@@ -136,6 +136,12 @@ Hierdoor kan Moodle zelf zijn geheugenlimiet instellen.
 <p>Opgelet: op sommige servers zal dit verhinderen dat <b>alle</b> PHP-bestanden uitgevoerd worden. (je zult foutmeldingen zien wanneer je naar php-pagina\'s kijkt) Je zult dan het .htaccess-bestand moeten verwijderen.</li>
 </ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP is niet goed geconfigureerd met de MySQLi-extentie om met MySQL te communiceren. Controleer je php.ini bestand of hercompileer PHP.';
+$string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
+$string['nativeauroramysqlhelp'] = '<p>De meeste Moodle-instellingen en gegevens worden in de databank bewaard en die moet hier geconfigureerd worden.</p>
+<p>De naam van de databank, de gebruikersnaam en wachtwoord zijn vereiste velden. De table prefix is optioneel.</p>
+<p>De naam van de databank mag enkel alfanumerieke tekens, dollar ($) en underscore (_) bevatten.</p>
+<p>Als de databank nog niet bestaat en de opgegeven gebruiker heeft de juiste rechten, dan zal Moodle proberen om een nieuwe databank met de juiste rechten en instellingen te maken.</p>
+<p>Deze driver is niet compatibel met de verouderde MyISAM engine.</p>';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>De databank is waar de meeste Moodle-instellingen en gegevens bewaard worden. Die moet hier geconfigureerd worden. </p>
 <p>De databanknaam, gebruikersnaam en wachtwoord zijn vereiste velden. het tabelprefix is optioneel.</p>

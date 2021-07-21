@@ -325,7 +325,8 @@ switch ($mode) {
                         JOIN ($esql) ue ON a.userid = ue.id
                         WHERE pageid $usql";
             if ($essayattempts = $DB->get_records_sql($sql, $parameters)) {
-                $ufields = user_picture::fields('u');
+                $userfieldsapi = \core_user\fields::for_userpic();
+                $ufields = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
                 // Get all the users who have taken this lesson.
                 list($sort, $sortparams) = users_order_by_sql('u');
 
@@ -406,12 +407,8 @@ switch ($mode) {
                     }
                     $count++;
 
-                    // Make sure they didn't answer it more than the max number of attmepts
-                    if (count($try) > $lesson->maxattempts) {
-                        $essay = $try[$lesson->maxattempts-1];
-                    } else {
-                        $essay = end($try);
-                    }
+                    // Make sure they didn't answer it more than the max number of attempts.
+                    $essay = $lesson->get_last_attempt($try);
 
                     // Start processing the attempt
                     $essayinfo = lesson_page_type_essay::extract_useranswer($essay->useranswer);

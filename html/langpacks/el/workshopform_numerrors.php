@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_numerrors', language 'el', version '3.8'.
+ * Strings for component 'workshopform_numerrors', language 'el', version '3.11'.
  *
  * @package     workshopform_numerrors
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Κενά για {$a} ακόμη ισχυρισμούς';
-$string['configgrade0'] = 'Η πρεοεπιλεγμένη λέξη που περιγράφει την αρνητική αξιολόγηση μιας δήλωσης.';
+$string['configgrade0'] = 'Η προεπιλεγμένη λέξη που περιγράφει την αρνητική αξιολόγηση μιας δήλωσης.';
 $string['configgrade1'] = 'Η προεπιλεγμένη λέξη που περιγράφει την θετική αξιολόγηση μιας δήλωσης.';
 $string['dimensioncommentfor'] = 'Σχόλιο για {$a}';
 $string['dimensiondescription'] = 'Περιγραφή';

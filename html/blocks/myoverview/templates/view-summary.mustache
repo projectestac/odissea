@@ -73,7 +73,7 @@
                     {{/showshortname}}
                 </div>
                 <div class="d-flex mb-1">
-                    <a href="{{viewurl}}" class="coursename">
+                    <a href="{{viewurl}}" class="aalink coursename">
                         {{> core_course/favouriteicon }}
                         <span class="sr-only">
                             {{#str}}aria:coursename, core_course{{/str}}
@@ -84,14 +84,14 @@
                 </div>
                 {{^visible}}
                     <div class="d-flex flex-wrap">
-                        <span class="tag tag-info">{{#str}} hiddenfromstudents {{/str}}</span>
+                        <span class="badge badge-info">{{#str}} hiddenfromstudents {{/str}}</span>
                     </div>
                 {{/visible}}
                 <div class="summary">
                     <span class="sr-only">{{#str}}aria:coursesummary, block_myoverview{{/str}}</span>
                     {{{summary}}}
                 </div>
-                <div class="ml-auto mt-auto w-50 p-t-1">
+                <div class="ml-auto mt-auto w-50 pt-3">
                     {{#hasprogress}}
                         {{> block_myoverview/progress-bar}}
                     {{/hasprogress}}

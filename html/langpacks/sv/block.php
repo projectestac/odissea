@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'sv', version '3.8'.
+ * Strings for component 'block', language 'sv', version '3.11'.
  *
  * @package     block
  * @category    string
@@ -43,7 +43,7 @@ $string['defaultregion_help'] = 'Teman kan definiera en eller flera blockregione
 $string['defaultweight'] = 'Standardinställd vikt';
 $string['defaultweight_help'] = 'Med en standardviktning kan du välja ungefär var du vill att blocket ska visas i den valda regionen; antingen överst eller längst ned. Den slutliga platsen beräknas utifrån alla block i den regionen (till exempel kan endast ett block faktiskt vara överst). Det här värdet kan åsidosättas på specifika sidor om det behövs.';
 $string['deleteblock'] = 'Ta bort {$a} block';
-$string['deleteblockcheck'] = 'Är du säker att du vill ta bort "{$a}"-blocket?';
+$string['deleteblockcheck'] = 'Är du säker att du vill ta bort blocket <b>{$a}</b>?';
 $string['deleteblockwarning'] = '<p> Du håller på att radera ett block som finns någon annanstans. </p><p> Original blocket plats: {$a->location} <br /> Visning på sidtyper: {$a->pagetype} </p><p> Är du säker på att du vill fortsätta? </p>';
 $string['deletecheck'] = 'Ta bort {$a} block?';
 $string['dockblock'] = 'Docka {$a} blocket';
@@ -69,8 +69,8 @@ $string['showblock'] = 'Visa {$a} block';
 $string['showoncontextandsubs'] = 'Visa på \'{$a}\' och alla sidor inom den';
 $string['showoncontextonly'] = 'Visa bara på \'{$a}\' ';
 $string['showonentiresite'] = 'Visa över hela webbplatsen';
-$string['showonfrontpageandsubs'] = 'Visa på hemsidan och på alla sidor som läggs till ingångssidan';
-$string['showonfrontpageonly'] = 'Visa bara på ingångssidan';
+$string['showonfrontpageandsubs'] = 'Visa på förstasidan och på alla sidor som läggs till på förstasidan.';
+$string['showonfrontpageonly'] = 'Visa bara på förstasidan';
 $string['subpages'] = 'Välj sidor';
 $string['thisspecificpage'] = 'Den här specifika sidan';
 $string['undockall'] = 'Frigör samtliga från dockning';

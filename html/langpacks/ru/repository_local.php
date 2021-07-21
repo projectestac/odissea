@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_local', language 'ru', version '3.8'.
+ * Strings for component 'repository_local', language 'ru', version '3.11'.
  *
  * @package     repository_local
  * @category    string
@@ -32,4 +32,5 @@ $string['local:view'] = 'Посматривать хранилище файло�
 $string['notitle'] = 'без названия';
 $string['pluginname'] = 'Файлы на сервере';
 $string['pluginname_help'] = 'Файлы, ранее загруженные на сервер Moodle';
+$string['privacy:metadata'] = 'Плагин хранилища «Файлы сервера» не хранит и не передает какие-либо личные данные.';
 $string['remember'] = 'Запомнить меня';

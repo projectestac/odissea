@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'gl', version '3.8'.
+ * Strings for component 'block_settings', language 'gl', version '3.11'.
  *
  * @package     block_settings
  * @category    string
@@ -29,4 +29,4 @@ $string['enabledock'] = 'Permitirlle ao usuario ancorar este bloque';
 $string['pluginname'] = 'Administración';
 $string['privacy:metadata'] = 'O bloque de administración só amosa datos almacenados noutros lugares.';
 $string['settings:addinstance'] = 'Engadir un novo bloque de administración';
-$string['settings:myaddinstance'] = 'Engadir un novo bloque de administración na área persoal';
+$string['settings:myaddinstance'] = 'Engadir un novo bloque de administración ao Taboleiro';

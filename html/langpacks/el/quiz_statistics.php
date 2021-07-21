@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'el', version '3.8'.
+ * Strings for component 'quiz_statistics', language 'el', version '3.11'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -111,7 +111,6 @@ $string['standarddeviation'] = 'Τυπική απόκλιση (για {$a})';
 $string['standarddeviationq'] = 'Τυπική απόκλιση';
 $string['standarderror'] = 'Τυπικό σφάλμα (για {$a})';
 $string['statistics'] = 'Στατιστικά';
-$string['statistics:componentname'] = 'Αναφορά στατιστικών κουίζ';
 $string['statistics:view'] = 'Εμφάνιση αναφοράς στατιστικών';
 $string['statisticsreport'] = 'Αναφορά στατιστικών';
 $string['statisticsreportgraph'] = 'Στατιστικά για τη θέση των ερωτήσεων';

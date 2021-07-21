@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'sv', version '3.8'.
+ * Strings for component 'license', language 'sv', version '3.11'.
  *
  * @package     license
  * @category    string
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allrightsreserved'] = 'Alla rättigheter reserverade';
+$string['cannotdeletecore'] = 'Kan inte ta bort en standardlicens';
+$string['cannotdeletelicenseinuse'] = 'Kan inte ta bort en licens som är för närvarande är tilldelad till en eller flera filer';
 $string['cc'] = 'Creative Commons
 ';
 $string['cc-nc'] = 'Creative Commons - No Commercial';
@@ -33,5 +35,7 @@ $string['cc-nc-nd'] = 'Creative Commons - No Commercial NoDerivs';
 $string['cc-nc-sa'] = 'Creative Commons - No Commercial ShareAlike';
 $string['cc-nd'] = 'Creative Commons - NoDerivs';
 $string['cc-sa'] = 'Creative Commons - ShareAlike';
+$string['licensenotfoundshortname'] = 'Kan inte hitta licens med kortnamnet \'{$a}\'';
+$string['missinglicensesortorder'] = 'Kan inte sortera licenserna. En eller flera licenser saknas i den nya sorteringsordningen.';
 $string['public'] = 'Public domain';
-$string['unknown'] = 'Övriga';
+$string['unknown'] = 'Licens ej specificerad';

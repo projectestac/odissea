@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'de', version '3.8'.
+ * Strings for component 'form', language 'de', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -41,13 +41,15 @@ $string['err_minlength'] = 'Sie müssen hier mindestens {$a->format} Buchstaben 
 $string['err_nonzero'] = 'Sie müssen hier eine Zahl eingeben, die nicht mit 0 beginnt.';
 $string['err_nopunctuation'] = 'Sie dürfen hier keine Satzseichen verwenden.';
 $string['err_numeric'] = 'Sie müssen hier eine Zahl eingeben.';
+$string['err_positiveint'] = 'Sie müssen hier eine Zahl eingeben, die größer als 0 ist.';
 $string['err_rangelength'] = 'Sie müssen hier zwischen {$a->format[0]} und {$a->format[1]} Buchstaben eingeben.';
 $string['err_required'] = 'Sie müssen hier einen Wert eingeben.';
 $string['err_wrappingwhitespace'] = 'Der Wert darf nicht mit einem Leerzeichen anfangen oder enden.';
-$string['err_wrongfileextension'] = 'Die Dateien ({$a->wrongfiles}) konnten nicht hochgeladen werden. Es sind nur die Dateitypen {$a->whitelist} zugelassen.';
+$string['err_wrongfileextension'] = 'Die Dateien ({$a->wrongfiles}) konnten nicht hochgeladen werden. Es sind nur die Dateitypen {$a->allowlist} zugelassen.';
 $string['filesofthesetypes'] = 'Akzeptierte Dateitypen:';
 $string['filetypesany'] = 'Alle Dateitypen';
 $string['filetypesnotall'] = 'Es ist nicht erlaubt, hier \'Alle Dateitypen\' auszuwählen';
+$string['filetypesnotallowed'] = 'Dieser Dateipyo ist hier nicht erlaubt: {$a}';
 $string['filetypesnotwhitelisted'] = 'Dieser Dateipyo ist hier nicht erlaubt: {$a}';
 $string['filetypesothers'] = 'Andere Dateien';
 $string['filetypesunknown'] = 'Unbekannte Dateitypen: {$a}';
@@ -62,6 +64,7 @@ $string['mustbeoverriden'] = 'Die Methode form_definition() in der Klasse {$a} m
 $string['newvaluefor'] = 'Neuer Wert für {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Es gibt keine Möglichkeit, einen Hilfebutton zum Formularelement {$a->name} (class {$a->classname}) hinzuzufügen.';
 $string['nonexistentformelements'] = 'Sie versuchen, Hilfebuttons zu nicht existierenden Formularelementen hinzuzufügen: {$a}';
+$string['nopermissionform'] = 'Sie haben kein Recht, dieses Formular anzuzeigen.';
 $string['noselection'] = 'Keine Auswahl';
 $string['nosuggestions'] = 'Keine Vorschläge';
 $string['novalue'] = 'Keine Eingabe';
@@ -82,6 +85,7 @@ $string['showadvanced'] = 'Optionale Felder anzeigen';
 $string['showless'] = 'Weniger anzeigen ...';
 $string['showmore'] = 'Mehr anzeigen ...';
 $string['somefieldsrequired'] = 'Pflichtfelder{$a}';
+$string['suggestions'] = 'Anregungen';
 $string['time'] = 'Zeit';
 $string['timeunit'] = 'Zeiteinheit';
 $string['timing'] = 'Zeitsteuerung';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'en', version '3.8'.
+ * Strings for component 'folder', language 'en', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -39,6 +39,8 @@ $string['folder:addinstance'] = 'Add a new folder';
 $string['folder:managefiles'] = 'Manage files in folder module';
 $string['folder:view'] = 'View folder content';
 $string['foldercontent'] = 'Files and subfolders';
+$string['forcedownload'] = 'Force download of files';
+$string['forcedownload_help'] = 'Whether certain files, such as images or HTML files, should be displayed in the browser rather than being downloaded. Note that for security reasons, the setting should only be unticked if all users with the capability to manage files in the folder are trusted users.';
 $string['indicator:cognitivedepth'] = 'Folder cognitive';
 $string['indicator:cognitivedepth_help'] = 'This indicator is based on the cognitive depth reached by the student in a Folder resource.';
 $string['indicator:cognitivedepthdef'] = 'Folder cognitive';

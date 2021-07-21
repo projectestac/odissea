@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_task', language 'ru', version '3.8'.
+ * Strings for component 'tool_task', language 'ru', version '3.11'.
  *
  * @package     tool_task
  * @category    string
@@ -25,31 +25,55 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adhoc'] = 'Разовая';
+$string['adhocempty'] = 'Очередь разовых задач пуста';
+$string['adhocqueueold'] = 'Самая старая задача {$a->age}, что превышает {$a->max}';
+$string['adhocqueuesize'] = 'В очереди разовых задач: {$a}';
+$string['adhoctaskid'] = 'ID специальной задачи: {$a}';
+$string['adhoctasks'] = 'Разовые задачи';
 $string['asap'] = 'При первой же возможности';
 $string['backtoscheduledtasks'] = 'Назад к запланированным задачам';
 $string['blocking'] = 'Блокирующая задача';
+$string['cannotfindthepathtothecli'] = 'Не удается найти путь к исполняемому файлу PHP CLI, поэтому выполнение задачи прервано. Установите параметр «Путь к PHP CLI» в разделе «Администрирование сайта / Сервер / Системные пути».';
+$string['checkadhocqueue'] = 'Очередь разовых задач';
+$string['checkcronrunning'] = 'Cron работает';
+$string['classname'] = 'Название класса';
 $string['clearfaildelay_confirm'] = 'Вы уверены что хотите очистить задержку для задачи «{$a}»? После очистки задача запустится в соответствии с обычным расписанием.';
 $string['component'] = 'Компонент';
 $string['corecomponent'] = 'Ядро';
+$string['crondisabled'] = 'Cron отключен. Никакие новые задачи запускаться не будут. Система не будет работать должным образом без включенного Cron\'а.';
+$string['cronok'] = 'Cron работает часто';
 $string['default'] = 'По умолчанию';
+$string['defaultx'] = 'По умолчанию: {$a}';
 $string['disabled'] = 'Отключена';
 $string['disabled_help'] = 'Отключенные задачи не будут запускаться при вызове cron. Тем не менее, вы можете запустить их выполнение вручную с помощью инструмента командной строки.';
 $string['edittaskschedule'] = 'Изменение расписания задачи «{$a}»';
 $string['enablerunnow'] = 'Разрешить команду «Запустить сейчас» в планировщике задач';
 $string['enablerunnow_desc'] = 'Позволяет администраторам запустить любую из задач в любой момент, а не ждать, пока она будет запущена по расписанию. Эта функция требует, чтобы «Путь к PHP CLI» (pathtophp) был установлен в разделе «Системные пути». Задачи выполняются на веб-сервере, поэтому на некоторых сайтах эта функция может быть отключена, чтобы избежать возможного снижения производительности.';
 $string['faildelay'] = 'Задержка после неудачного запуска';
+$string['fromcomponent'] = 'Из компонента: {$a}';
+$string['hostname'] = 'имя хоста';
 $string['lastruntime'] = 'Последний запуск';
+$string['lastupdated'] = 'Последнее обновление: {$a}.';
 $string['nextruntime'] = 'Следующий запуск';
+$string['pid'] = 'PID';
 $string['plugindisabled'] = 'Плагин отключен';
 $string['pluginname'] = 'Планировщик задач';
 $string['privacy:metadata'] = 'Плагин Планировщик задач не хранит персональные данные.';
 $string['resettasktodefaults'] = 'Установить расписание по умолчанию';
 $string['resettasktodefaults_help'] = 'При включении этого параметра расписание задачи будет сброшено к настройкам по умолчанию.';
+$string['runagain'] = 'Запустить снова';
+$string['runningtasks'] = 'Задача выполняется';
 $string['runnow'] = 'Запустить сейчас';
 $string['runnow_confirm'] = 'Вы действительно хотите запустить эту задачу «{$a}» сейчас? Задача будет выполняться на веб-сервере и может занять некоторое время.';
+$string['scheduled'] = 'Запланированная';
 $string['scheduledtaskchangesdisabled'] = 'Изменения в списке запланированных задач не разрешены в настройках Moodle';
 $string['scheduledtasks'] = 'Планировщик задач';
+$string['started'] = 'Запущена';
 $string['taskdisabled'] = 'Задача отключена';
+$string['taskfailures'] = 'Неудачных задач: {$a}';
+$string['tasklogs'] = 'Журнал задач';
+$string['tasknofailures'] = 'Нет неудачных задач';
 $string['taskscheduleday'] = 'День месяца';
 $string['taskscheduleday_help'] = 'Поле дня месяца для задачи расписания. Поле использует тот же формат, что и UNIX Cron. Некоторые примеры:
 
@@ -72,7 +96,17 @@ $string['taskschedulehour_help'] = 'Поле часа для задачи рас
 * <strong>2-10</strong> Каждый час с 2 ночи до 10 утра (включительно)
 * <strong>2,6,9</strong> В 2 часа ночи, в 6 и в 9 часов утра';
 $string['taskscheduleminute'] = 'Минута';
-$string['taskscheduleminute_help'] = 'Поле минут для задачи расписания. Поле использует тот же формат, что и UNIX Cron. Некоторые примеры: <br/><ul><li> <strong>*</strong> Каждую минуту </li><li> <strong>*/5</strong> Каждые 5 минут </li><li> <strong>2-10</strong> Каждую минуту со 2 до 10 минуты часа (включительно) </li><li> <strong>2,6,9</strong> 2, 6 и 9 минута часа </li></ul>';
+$string['taskscheduleminute_help'] = 'Поле минут для планирования задачи. Поле использует тот же формат, что и UNIX Cron. Некоторые примеры:
+
+* <strong>*</strong> Каждую минуту
+* <strong>*/5</strong> Каждые 5 минут
+* <strong>2-10</strong> Каждую минуту со 2 до 10 минуты часа (включительно)
+*  <strong>2,6,9</strong> 2, 6 и 9 минута часа';
 $string['taskschedulemonth'] = 'Месяц';
-$string['taskschedulemonth_help'] = 'Поле месяца для задачи расписания. Поле использует тот же формат, что и UNIX Cron. Некоторые примеры: <br/><ul><li> <strong>*</strong> Каждый месяц </li><li> <strong>*/2</strong> Каждый второй месяц </li><li> <strong>1</strong> Ежегодно в январе </li><li> <strong>1,5</strong> Ежегодно в январе и в мае </li></ul>';
+$string['taskschedulemonth_help'] = 'Поле месяца для планирования задачи. Поле использует тот же формат, что и UNIX Cron. Некоторые примеры:
+
+* <strong>*</strong> Каждый месяц
+* <strong>*/2</strong> Каждый второй месяц
+* <strong>1</strong> Ежегодно в январе
+* <strong>1,5</strong> Ежегодно в январе и в мае';
 $string['viewlogs'] = 'Смотреть журналы для {$a}';

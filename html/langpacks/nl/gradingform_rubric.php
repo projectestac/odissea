@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'nl', version '3.8'.
+ * Strings for component 'gradingform_rubric', language 'nl', version '3.11'.
  *
  * @package     gradingform_rubric
  * @category    string
@@ -56,7 +56,7 @@ $string['leveldelete'] = 'Verwijder niveau  {$a}';
 $string['levelempty'] = 'Klik om het niveau te bewerken';
 $string['levelsgroup'] = 'Groepniveaus';
 $string['lockzeropoints'] = 'Bereken cijfer gebaseerd op de minimale score op de minimaal mogelijke score van de rubric';
-$string['lockzeropoints_help'] = 'Deze instelling is enkel van toepassing wanneer de som van het minimale cijfer voor alle criteria groter is dan 0. Indien ingeschakeld zal het minimaal haalbare cijfer voor de rubric het minimaal haalbare cijfer voor de rubric zijn. Indien niet ingeschakeld zal het minimaal haalbare cijfer voor de rubric gemapt worden naar het minimaal haalbare cijfer voor de activiteit (dat 0 is tenzij er een schaal wordt gebruikt).';
+$string['lockzeropoints_help'] = 'Deze instelling is enkel van toepassing wanneer de som van het minimale cijfer voor alle criteria groter is dan 0. Indien ingeschakeld zal het minimaal haalbare cijfer voor de activiteit het minimaal haalbare cijfer voor de rubric zijn. Indien niet ingeschakeld zal het minimaal haalbare cijfer voor de rubric gemapt worden naar het minimaal haalbare cijfer voor de activiteit (dat 0 is tenzij er een schaal wordt gebruikt).';
 $string['name'] = 'Naam';
 $string['needregrademessage'] = 'De rubricdefinitie is gewijzigd nadat de leerling beoordeeld werd. De leerling kan zijn rubric niet zien tot je deze controleert en het cijfer aanpast.';
 $string['notset'] = 'Niet ingesteld';

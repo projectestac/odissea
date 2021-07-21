@@ -3,6 +3,10 @@ Release notes for JClic Module for Moodle (https://github.com/projectestac/moodl
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/moodle-mod_jclic
 
+Changes in 3.0.6 - 2021060100 (2021/06/01)
+---------------------------------------------------------------------------------------
+- Prepared version for Moodle 3.11
+
 Changes in 3.0.5 - 2020110400 (2020/11/04)
 ---------------------------------------------------------------------------------------
 - Increase size of the lang field to 30 chars (Closes #12)

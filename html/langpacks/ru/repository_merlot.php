@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_merlot', language 'ru', version '3.8'.
+ * Strings for component 'repository_merlot', language 'ru', version '3.11'.
  *
  * @package     repository_merlot
  * @category    string
@@ -30,3 +30,7 @@ $string['licensekey'] = 'Лицензионный ключ';
 $string['merlot:view'] = 'Просматривать хранилище файлов «Merlot»';
 $string['pluginname'] = 'Merlot.org';
 $string['pluginname_help'] = 'Merlot.org';
+$string['privacy:metadata:repository_merlot'] = 'Плагин хранилища Merlot.org не хранит никаких личных данных, но передает данные пользователя из Moodle в отдаленную систему.';
+$string['privacy:metadata:repository_merlot:author'] = 'Автор контента хранилища Merlot.org.';
+$string['privacy:metadata:repository_merlot:keywords'] = 'Текстовый поисковый запрос пользователя хранилища Merlot.org.';
+$string['privacy:metadata:repository_merlot:licencekey'] = 'Лицензионный ключ хранилища Merlot.org.';

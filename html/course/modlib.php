@@ -226,16 +226,14 @@ function edit_module_post_actions($moduleinfo, $course) {
         'courseid' => $course->id,
     ]);
 
-    //XTEC ************ AFEGIT - Added patch for course format "Simple" - REVIEW!
-    //2010.07.12 @aginard (patch provided by UPCnet)
-    //@PATCH SIMPLE: Actualitza la icona al sistema de fitxers
-    //Adds icon to filesystem
-    if(isset($moduleinfo->simple_image)){
-        require_once($CFG->dirroot.'/course/format/simple/lib.php');
+    // XTEC ************ AFEGIT - Added patch for course format "Simple"
+    // 2010.07.12 @aginard
+    // Adds icon to filesystem
+    if (isset($moduleinfo->simple_image)) {
+        require_once($CFG->dirroot . '/course/format/simple/lib.php');
         simple_update_module_image($moduleinfo);
     }
-    //************ FI
-
+    // ************ FI
 
     // Create parent category if requested and move to correct parent category.
     $component = "mod_{$moduleinfo->modulename}";
@@ -388,6 +386,8 @@ function edit_module_post_actions($moduleinfo, $course) {
     if ($hasgrades) {
         grade_regrade_final_grades($course->id);
     }
+
+    // To be removed (deprecated) with MDL-67526 (both lines).
     require_once($CFG->libdir.'/plagiarismlib.php');
     plagiarism_save_form_elements($moduleinfo);
 
@@ -663,7 +663,11 @@ function update_moduleinfo($cm, $moduleinfo, $course, $mform = null) {
     // Now that module is fully updated, also update completion data if required.
     // (this will wipe all user completion data and recalculate it)
     if ($completion->is_enabled() && !empty($moduleinfo->completionunlocked)) {
-        $completion->reset_all_state($cm);
+        // Rebuild course cache before resetting completion states to ensure that the cm_info attributes are up to date.
+        course_modinfo::build_course_cache($course);
+        // Fetch this course module's info.
+        $cminfo = cm_info::create($cm);
+        $completion->reset_all_state($cminfo);
     }
     $cm->name = $moduleinfo->name;
     \core\event\course_module_updated::create_from_cm($cm, $modcontext)->trigger();

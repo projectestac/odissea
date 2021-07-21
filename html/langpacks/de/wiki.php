@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'de', version '3.8'.
+ * Strings for component 'wiki', language 'de', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -152,7 +152,15 @@ $string['modified'] = 'Geändert';
 $string['modulename'] = 'Wiki';
 $string['modulename_help'] = 'Ein Wiki ist eine Sammlung von untereinander verlinkten Seiten. In einem gemeinsamen Wiki darf jeder alle Seiten ansehen und bearbeiten. Bei einem persönlichen Wiki hat jeder seine eigenen Seiten, die nur er sehen und bearbeiten kann.
 
-Im Verlauf werden alle Versionen eines Wikis gespeichert. Es ist nachvollziehbar, wer wann was im Wiki geändert hat. Frühere Versionen einer Seite können wiederhergestellt werden.';
+Im Verlauf werden alle Versionen eines Wikis gespeichert. Es ist nachvollziehbar, wer wann was im Wiki geändert hat. Frühere Versionen einer Seite können wiederhergestellt werden.
+
+Eine Wiki-Aktivität kann verwendet werden
+
+* Für Gruppenvorlesungsnotizen oder Studienführer
+* Für Mitglieder einer Fakultät, um gemeinsam einen Arbeitsplan oder eine Tagesordnung für ein Treffen zu planen
+* Um Teilnehmer/innen gemeinsam ein Online-Buch verfassen und Inhalte zu einem von ihrem Tutor festgelegten Thema erstellen lassen
+* Für das gemeinsame Erzählen von Geschichten oder das Verfassen von Gedichten, wobei jede/r Teilnehmer/in eine Zeile oder einen Vers schreibt
+* Als persönliches Tagebuch für Prüfungsnotizen oder für das Überarbeiten (unter Verwendung eines individuellen Wikis)';
 $string['modulenameplural'] = 'Wikis';
 $string['navigation'] = 'Navigation';
 $string['navigationfrom'] = 'Diese Seite kommt von';
@@ -253,7 +261,7 @@ $string['return'] = 'Zurück';
 $string['save'] = 'Speichern';
 $string['saving'] = 'Wikiseite wird gespeichert';
 $string['savingerror'] = 'Fehler beim Speichern';
-$string['search:activity'] = 'Wiki - Beschreibung';
+$string['search:activity'] = 'Wiki - Aktivitätsinfo';
 $string['search:collaborative_page'] = 'Wikiseiten - Gemeinsame Seiten';
 $string['searchcontent'] = 'Im Seiteninhalt suchen';
 $string['searchresult'] = 'Suchergebnisse:';
@@ -285,7 +293,7 @@ $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Neues Wiki hinzufügen';
 $string['wiki:createpage'] = 'Neue Wikiseiten erstellen';
 $string['wiki:editcomment'] = 'Kommentar zu Seiten hinzufügen';
-$string['wiki:editpage'] = 'Wikiseiten sichern';
+$string['wiki:editpage'] = 'Wikiseiten bearbeiten';
 $string['wiki:managecomment'] = 'Kommentare im Wiki verwalten';
 $string['wiki:managefiles'] = 'Dateien im Wiki verwalten';
 $string['wiki:managewiki'] = 'Einstellungen des Wikis verwalten';
@@ -316,5 +324,5 @@ $string['wikiorderedlist'] = 'Geordnete Liste';
 $string['wikipages'] = 'Wikiseiten';
 $string['wikisettings'] = 'Einstellungen des Wikis';
 $string['wikiunorderedlist'] = 'Ungeordnete Liste';
-$string['wrongversionlock'] = 'Jemand anderes hat die Seite aktualisiert, während Sie daran gearbeitet haben. Deswegen ist der von Ihnen verwendete Seiteninhalt veraltet.';
+$string['wrongversionlock'] = 'Eine andere Person hat die Seite aktualisiert, während Sie daran gearbeitet haben. Deswegen ist der von Ihnen verwendete Inhalt veraltet.';
 $string['wrongversionsave'] = 'Jemand hat eine neue Version der Seite gespeichert, während Sie daran gearbeitet haben. Sie haben diese neuen Inhalte überschrieben. Bitte prüfen Sie den Seitenverlauf.';

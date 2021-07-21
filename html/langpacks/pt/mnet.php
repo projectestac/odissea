@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'pt', version '3.8'.
+ * Strings for component 'mnet', language 'pt', version '3.11'.
  *
  * @package     mnet
  * @category    string
@@ -67,8 +67,8 @@ $string['duplicate_usernames'] = 'Não foi possível criar um índice nas coluna
 $string['enabled_for_all'] = '(Este serviço foi ativado para todos os servidores).';
 $string['enterausername'] = 'Introduza um nome de utilizador, ou uma lista de nomes do utilizador, separados por vírgulas.';
 $string['error7020'] = 'Este erro ocorre normalmente quando o site externo criou um registo para o seu site com o wwwroot errado; por exemplo, https://oseusite.com em vez de http://www.oseusite.com. Contacte o administrador do site externo, com o wwwroot correto (está definido em config.php) e peça-lhe para atualizar o registo do seu site.';
-$string['error7022'] = 'A mensagem que enviou para o site remoto está devidamente encriptada mas não está assinada. Isto não é previsto acontecer. É recomendável que submeta um ficheiro com a informação do bug, se tal voltar a acontecer (forneça o máximo de informação possível sobre as versões em questão, etc)';
-$string['error7023'] = 'O site externo tentou descodificar a sua mensagem recorrendo a todas as chaves que tem registadas para o seu site. Todas elas falharam. Pode tentar resolver este problema, redefinindo as chaves com o site remoto, manualmente. Este problema não deve acontecer excepto se esteve sem comunicar com o site externo durante alguns meses.';
+$string['error7022'] = 'A mensagem que enviou para o site remoto está devidamente encriptada, mas não está assinada, o que é muito surpreendente. Recomenda-se que submeta um ficheiro com informação do bug se tal voltar a acontecer (forneça o máximo de informação possível sobre as versões Moodle em questão, etc.)';
+$string['error7023'] = 'O site externo tentou descodificar a sua mensagem recorrendo a todas as chaves que tem registadas para o seu site. Todas elas falharam. Pode tentar resolver este problema, redefinindo as chaves com o site remoto, manualmente. Este problema não deve acontecer exceto se esteve sem comunicar com o site externo durante alguns meses.';
 $string['error7024'] = 'Enviou uma mensagem não encriptada para o site remoto, mas este não aceita mensagens não encriptadas do seu site, o que é surpreendente. Recomenda-se que submeta um ficheiro com informação do bug se tal voltar a acontecer (forneça o máximo de informação possível sobre as versões Moodle em questão, etc.)';
 $string['error7026'] = 'A chave utilizada para assinar a sua mensagem é diferente da chave que o servidor remoto tem registada para o seu site. Além disso, o servidor remoto tentou obter a sua chave atual e não conseguiu. Redefina as chaves com o servidor remoto, manualmente, e tente de novo.';
 $string['error709'] = 'O site externo falhou na tentativa de obter uma chave SSL do seu site.';
@@ -82,7 +82,7 @@ $string['exportfields'] = 'Campos a exportar';
 $string['failedaclwrite'] = 'Não foi possível escrever na lista de controlo de acessos da Rede Moodle para o utilizador "{$a}"';
 $string['findlogin'] = 'Encontrar conta de utilizador';
 $string['forbidden-function'] = 'Essa função não foi ativada para RPC.';
-$string['forbidden-transport'] = 'O método de transporte que está a usar não é permitido.';
+$string['forbidden-transport'] = 'Não é permitido usar o método de transporte pretendido.';
 $string['forcesavechanges'] = 'Forçar a gravação de alterações';
 $string['helpnetworksettings'] = 'Configurar comunicação na Rede Moodle';
 $string['hidelocal'] = 'Ocultar utilizadores locais';

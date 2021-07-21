@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_database', language 'ar', version '3.8'.
+ * Strings for component 'enrol_database', language 'ar', version '3.11'.
  *
  * @package     enrol_database
  * @category    string
@@ -32,37 +32,37 @@ $string['dbhost'] = 'مضيف قاعدة البيانات';
 $string['dbhost_desc'] = 'أدخل عنوان IP لمخدم قاعدة البيانات أو اسم المضيف. استعمل تسمية DSN للنظام إذا كنت تستعمل ODBC. استعمل PDO DSN إذا كنت تستعمل PDO.';
 $string['dbname'] = 'اسم قاعادة البيانات';
 $string['dbname_desc'] = 'أتركه فارغاً إذا كنت تستعمل تسمية DSN في مضيف قاعدة البيانات.';
-$string['dbpass'] = 'كلمة مرور الخادم';
+$string['dbpass'] = 'كلمة مرور قاعدة البيانات';
 $string['dbsetupsql'] = 'أمر تنصيب قاعدة البيانات';
 $string['dbsetupsql_desc'] = 'أمر SQL عند إجراء تنصيب خاص لقاعدة البيانات، عادة ما يستعمل لتهيئة ترميز الاتصال - مثلاً لـ MySQL و PostgreSQL: <em>SET NAMES \'utf8\'</em>';
 $string['dbsybasequoting'] = 'استعمل اقتباسات sybase';
 $string['dbsybasequoting_desc'] = 'نمط الاستبدال بعلامة اقتباس مفردة لـ Sybase - المطلوب لـ Oracle، MS SQL وبعض أنظمة قواعد البيانات الأخرى. لا تستعمله مع MySQL!';
-$string['dbtype'] = 'نوع قاعدة البيانات';
+$string['dbtype'] = 'مشغل قاعدة البيانات';
 $string['dbtype_desc'] = 'اسم مشغل قاعدة بيانات ADOdb، نوع محرك قاعدة البيانات الخارجي.';
-$string['dbuser'] = 'مستخدم الخادم';
+$string['dbuser'] = 'مستخدم قاعدة البيانات';
 $string['debugdb'] = 'اكتشاف أخطاء ADOdb';
 $string['debugdb_desc'] = 'اكتشاف أخطاء اتصال ADOdb مع قاعدة البيانات الخارجية - استعمله عند ظهور صفحة فارغة عند تسجيل الدخول. لا يتناسب مع المواقع قيد التشغيل الفعلي!';
-$string['defaultcategory'] = 'التصنيف الافتراضي للمساق الجديد';
-$string['defaultcategory_desc'] = 'التصنيف الافتراضي للمساقات المنشأة تلقائياً. استعمله عند عدم تحديد مُعرَّف التصنيف الجديد أو تعذر العثور عليه.';
+$string['defaultcategory'] = 'التصنيف الافتراضي للمقرر الجديد';
+$string['defaultcategory_desc'] = 'التصنيف الافتراضي للمقررات الدراسية المنشأة تلقائياً. استعمله عند عدم تحديد مُعرَّف التصنيف الجديد أو تعذر العثور عليه.';
 $string['defaultrole'] = 'الدور الافتراضي';
 $string['defaultrole_desc'] = 'الدور الذي سيتم منحه تلقائياً إذا لم يتم تحديد أي دور في الجدول الخارجي.';
-$string['ignorehiddencourses'] = 'تجاهل المساقات المخفية';
-$string['ignorehiddencourses_desc'] = 'عند تمكينه، لن يتم ضم المستخدمين إلى المساقات التي تم ضبطها غير متاحة للطلبة.';
+$string['ignorehiddencourses'] = 'تجاهل المقررات الدراسية المخفية';
+$string['ignorehiddencourses_desc'] = 'عند تمكينه، لن يتم ضم المستخدمين إلى المقررات الدراسية التي تم ضبطها غير متاحة للطلبة.';
 $string['localcategoryfield'] = 'حقل التصنيف المحلي';
-$string['localcoursefield'] = 'حقل المساق المحلي';
+$string['localcoursefield'] = 'حقل المقرر المحلي';
 $string['localrolefield'] = 'حقل الدور المحلي';
 $string['localuserfield'] = 'حقل المستخدم المحلي';
-$string['newcoursecategory'] = 'حقل تصنيف المساق الجديد';
-$string['newcoursefullname'] = 'حقل الاسم الكامل للمساق الجديد';
+$string['newcoursecategory'] = 'حقل تصنيف المقرر الدراسي الجديد';
+$string['newcoursefullname'] = 'حقل الاسم الكامل للمقرر الجديد';
 $string['newcourseidnumber'] = 'حقل مُعرَّف المساق الجديد';
-$string['newcourseshortname'] = 'حقل الاسم المختصر للمساق الجديد';
-$string['newcoursetable'] = 'جدول المساقات الجديدة البعيد';
-$string['newcoursetable_desc'] = 'حدد اسم الجدول الذي يضم قائمة بالمساقات التي ينبغي إنشاؤها تلقائياً. تركه فارغاً معناه لن يتم إنشاء أي مساق.';
+$string['newcourseshortname'] = 'حقل الاسم المختصر للمقرر الجديد';
+$string['newcoursetable'] = 'جدول المقررات الدراسية الجديدة البعيد';
+$string['newcoursetable_desc'] = 'حدد اسم الجدول الذي يضم قائمة بالمقررات الدراسية التي ينبغي إنشاؤها تلقائياً. تركه فارغاً معناه لن يتم إنشاء أي مقرر.';
 $string['pluginname'] = 'قاعدة البيانات الخارجية';
-$string['pluginname_desc'] = 'يمكنك استعمال قاعدة بيانات خارجية (تقريباً بأي نوع) للسيطرة على عمليات الانضمام. من المفترض أن قاعدة بياناتك تحتوي على الأقل على حقل يضم مُعرَّف المساق، وحقل آخر يحتوي على مُعرَّف المستخدم. ستتم مقارنتهما مع الحقول التي تختارها في جدولي المساقات والمستخدمين المحليين.';
+$string['pluginname_desc'] = 'يمكنك استعمال قاعدة بيانات خارجية (تقريباً بأي نوع) للسيطرة على عمليات الانضمام. من المفترض أن قاعدة بياناتك تحتوي على الأقل على حقل يضم مُعرَّف المقرر، وحقل آخر يحتوي على مُعرَّف المستخدم. ستتم مقارنتهما مع الحقول التي تختارها في جدولي المقررات الدراسية والمستخدمين المحليين.';
 $string['privacy:metadata'] = 'إن محلق انضمام قاعدة البيانات لا يخزن أي بيانات شخصية.';
-$string['remotecoursefield'] = 'حقل المساق البعيد';
-$string['remotecoursefield_desc'] = 'اسم الحقل في الجدول البعيد والذي سيتم استعماله للمقارنة من مدخلات جدول المساق.';
+$string['remotecoursefield'] = 'حقل المقرر عن بعد';
+$string['remotecoursefield_desc'] = 'اسم الحقل في الجدول البعيد والذي سيتم استعماله للمقارنة من مدخلات جدول المقرر الدراسي.';
 $string['remoteenroltable'] = 'جدول انضمام المستخدم البعيد';
 $string['remoteenroltable_desc'] = 'حدد اسم الجدول الذي يحتوي على قائمة انضمامات المستخدمين. تركه فارغاً معناه عدم إجراء مزامنة على انضمامات المستخدمين.';
 $string['remoteotheruserfield'] = 'حقل آخر للمستخدم البعيد';
@@ -73,8 +73,8 @@ $string['remoteuserfield'] = 'حقل المستخدم البعيد';
 $string['remoteuserfield_desc'] = 'اسم الحقل في الجدول البعيد والذي سيتم استعماله للمقارنة من مدخلات جدول المستخدمين.';
 $string['settingsheaderdb'] = 'اتصال قاعدة البيانات الخارجي';
 $string['settingsheaderlocal'] = 'تعيين الحقل المحلي';
-$string['settingsheadernewcourses'] = 'إنشاء مساقات جديدة';
+$string['settingsheadernewcourses'] = 'إنشاء مقررات دراسية جديدة';
 $string['settingsheaderremote'] = 'مزامنة الانضمام البعيد';
 $string['syncenrolmentstask'] = 'مهمة مزامنة انضمامات قاعدة البيانات الخارجية';
-$string['templatecourse'] = 'قالب المساق الجديد';
-$string['templatecourse_desc'] = 'إختياري: يمكن للمساقات المنشأة تلقائياً نسخ إعداداتها من قالب مساق. أدخل هنا الاسم المختصر للمساق الذي سيكون بمثابة قالب.';
+$string['templatecourse'] = 'قالب المقرر الدراسي الجديد';
+$string['templatecourse_desc'] = 'إختياري: يمكن للمقررات المنشأة تلقائياً نسخ إعداداتها من قالب مقرر. أدخل هنا الاسم المختصر للمقرر الذي سيكون بمثابة قالب.';

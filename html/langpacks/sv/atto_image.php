@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'sv', version '3.8'.
+ * Strings for component 'atto_image', language 'sv', version '3.11'.
  *
  * @package     atto_image
  * @category    string
@@ -40,10 +40,10 @@ $string['enterurl'] = 'Infoga URL';
 $string['height'] = 'Höjd';
 $string['imageproperties'] = 'Bildegenskaper';
 $string['pluginname'] = 'Infoga eller redigera bild';
-$string['presentation'] = 'Beskrivning inte obligatorisk';
-$string['presentationoraltrequired'] = 'Bilder måste ha en beskrivning förutom när det är markerat att den inte behövs.';
+$string['presentation'] = 'Enbart i illustrativt syfte';
+$string['presentationoraltrequired'] = 'En bild måste ha en beskrivning förutom när det är markerat att den inte behövs.';
 $string['preview'] = 'Förhandsgranska';
-$string['privacy:metadata'] = 'Plugin-modulen atto_image lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_image lagrar ingen personinformation.';
 $string['saveimage'] = 'Spara bild';
 $string['size'] = 'Storlek';
 $string['uploading'] = 'Uppladdning pågår, v.g. vänta.';

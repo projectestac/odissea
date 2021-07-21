@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_offlineattempts', language 'pt', version '3.8'.
+ * Strings for component 'quizaccess_offlineattempts', language 'pt', version '3.11'.
  *
  * @package     quizaccess_offlineattempts
  * @category    string
@@ -34,5 +34,5 @@ $string['mobileapp'] = 'Aplicação móvel';
 $string['offlineattemptserror'] = 'Não é possível responder offline a um teste caso este tenha sido configurado com um limite de tempo, tenha definido endereços de rede autorizados ou utilize outro modo de comportamento de perguntas que não seja o feedback diferido (com ou sem ABGC).';
 $string['offlinedatamessage'] = 'Já esteve nesta tentativa através de um dispositivo móvel. Os dados foram guardados pela última vez neste site há {$a} atrás.';
 $string['pleaseconfirm'] = 'Por favor, verifique e confirme que não tem qualquer trabalho por guardar.';
-$string['pluginname'] = 'Regra de acesso a tentativas offline';
+$string['pluginname'] = 'Regra de acesso baseada em tentativas offline';
 $string['privacy:metadata'] = 'O módulo Regra de acesso baseada em tentativas offline não armazena quaisquer dados pessoais.';

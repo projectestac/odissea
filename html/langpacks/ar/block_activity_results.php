@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'ar', version '3.8'.
+ * Strings for component 'block_activity_results', language 'ar', version '3.11'.
  *
  * @package     block_activity_results
  * @category    string
@@ -27,43 +27,43 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_results:addinstance'] = 'إضافة كتلة نتائج النشاط جديدة';
 $string['bestgrade'] = 'الدرجة القصوى';
-$string['bestgrades'] = 'الـ {$a}الدرجة القصوى:';
+$string['bestgrades'] = 'أعلى {$a} درجات';
 $string['bestgroupgrade'] = 'المجموعة ذات أعلى معدل:';
 $string['bestgroupgrades'] = '{$a} المجموعة ذات أعلى معدل:';
 $string['config_decimalplaces'] = 'عدد الأماكن لعرضها بعد الفاصلة';
 $string['config_format_absolute'] = 'عدد مطلق';
 $string['config_format_fraction'] = 'الكسور';
 $string['config_format_percentage'] = 'النسب المئوية';
-$string['config_grade_format'] = 'طريقة عرض الدرجات';
+$string['config_grade_format'] = 'إعرض الدرجات بشكل';
 $string['config_name_format'] = 'خصوصية النتائج';
 $string['config_names_anon'] = 'نتائج مجهولة';
-$string['config_names_full'] = 'أظهر الاسم كاملاً';
+$string['config_names_full'] = 'عرض الاسم كاملاً';
 $string['config_names_id'] = 'عرض أرقام المعرَّفات فقط';
 $string['config_no_activities_in_course'] = 'لا توجد حتى الآن أية أنشطة في هذا المقرر الدراسي.';
-$string['config_select_activity'] = 'ما النشاط الذي يجب أن يعرضه هذا الصندوق؟';
+$string['config_select_activity'] = 'ما النشاط الذي ينبغي أن تعرض هذه الكتلة نتائجه؟';
 $string['config_show_best'] = 'كم عدد الدرجات العليا التي يجب أن تعرض (0 للتعطيل)؟';
 $string['config_show_worst'] = 'كم عدد  الدرجات الدنيا التي  يجب أن تعرض (0 للتعطيل)؟';
-$string['config_use_groups'] = 'إظهار المجموعات بدلاً عن الطلاب (فقط إذا كان النشاط يدعم المجموعات) ؟';
-$string['configuredtoshownothing'] = 'خصائص الصندوق الحالية لا تسمح بإظهار أي نتائج.';
-$string['defaultdecimalplaces'] = 'منازل عشرية';
+$string['config_use_groups'] = 'إظهار المجموعات بدلاً عن الطلاب (فقط إذا كان النشاط يدعم المجموعات)؟';
+$string['configuredtoshownothing'] = 'إعدادات الكتلة لا تسمح حاليًا بإظهار أي نتائج.';
+$string['defaultdecimalplaces'] = 'المنازل العشرية';
 $string['defaultdecimalplaces_desc'] = 'عدد المنازل العشرية التي سيتم عرضها افتراضيًا';
-$string['defaultgradedisplay'] = 'طريقة عرض الدرجات';
-$string['defaultgradedisplay_desc'] = 'كيف يجب عرض الدرجات افتراضيًا؟';
-$string['defaulthighestgrades'] = 'طريقة عرض أعلى الدرجات افتراضيًا';
+$string['defaultgradedisplay'] = 'عرض الدرجات بشكل';
+$string['defaultgradedisplay_desc'] = 'كيف ينبغي عرض الدرجات إفتراضياً؟';
+$string['defaulthighestgrades'] = 'أعلى الدرجات الظاهرة إفتراضياً';
 $string['defaulthighestgrades_desc'] = 'كم عدد الدرجات العليا التي يجب أن تظهر بشكل افتراضي؟';
-$string['defaultlowestgrades'] = 'طريقة عرض اثل الدرجات افتراضيًا';
+$string['defaultlowestgrades'] = 'أدنى الدرجات الظاهرة إفتراضياً';
 $string['defaultlowestgrades_desc'] = 'كم عدد الدرجات الدنيا التي يجب أن تظهر بشكل افتراضي؟';
 $string['defaultnameoptions'] = 'خصوصية النتائج';
 $string['defaultnameoptions_desc'] = 'كيف ينبغي تحديد الطلاب بشكل افتراضي؟';
-$string['defaultshowgroups'] = 'عرض المجوعات افتراضيًا';
+$string['defaultshowgroups'] = 'إظهار المجموعات إفتراضياً';
 $string['defaultshowgroups_desc'] = 'إظهار المجموعات بدلاً من الطلاب بشكل افتراضي (فقط إذا كان النشاط يدعم المجموعات)';
-$string['error_emptyactivityid'] = 'يرجى تهيئة خصائص هذا الصندوق وتحديد النشاط الذي يجب أن تعرض منه النتائج .';
+$string['error_emptyactivityid'] = 'يرجى تهيئة هذه الكتلة وتحديد النشاط الذي ينبغي أن تعرض منه النتائج.';
 $string['error_emptyactivityrecord'] = 'خطأ: النشاط المحدد غير موجود في قاعدة البيانات.';
-$string['error_nogroupsexist'] = 'خطأ: تم تعيين الصندوق لعرض الدرجات في وضع المجموعة ، ولكن لا توجد مجموعات محددة.';
-$string['error_unsupportedgradetype'] = 'خطأ: يستخدم النشاط المحدد طريقة تقدير غير مدعومة من قبل هذا الصندوق.';
+$string['error_nogroupsexist'] = 'خطأ: تم تعيين الكتلة لعرض الدرجات في نمط المجموعة، ولكن لا توجد مجموعات محددة.';
+$string['error_unsupportedgradetype'] = 'خطأ: يستعمل النشاط المحدد طريقة تقييم غير مدعومة من قبل هذه الكتلة.';
 $string['notyetgraded'] = 'لا تقييم حتى الان';
 $string['pluginname'] = 'نتائج النشاط';
-$string['privacy:metadata'] = 'صندوق نتائج النشاط لا تعرض سوى البيانات المخزنة في مواقع أخرى.';
+$string['privacy:metadata'] = 'كتلة نتائج النشاط لا تظهر سوى البيانات المخزنة في مواضع أخرى.';
 $string['unknown'] = 'مقياس غير معروف';
 $string['worstgrade'] = 'أقل درجة';
 $string['worstgrades'] = '{$a} أقل درجة';

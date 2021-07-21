@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'pt', version '3.8'.
+ * Strings for component 'qtype_calculated', language 'pt', version '3.11'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -69,7 +69,7 @@ $string['functiontakesoneortwoargs'] = 'A função {$a} tem de ter um ou dois ar
 $string['functiontakestwoargs'] = 'A função {$a} tem de ter exatamente dois argumentos';
 $string['generatevalue'] = 'Gerar um novo valor entre';
 $string['getnextnow'] = 'Gerar novo \'Conjunto a adicionar\' sem adicionar o atual';
-$string['hexanotallowed'] = 'No conjunto de valores <strong>{$a->name}</strong> o formato hexadecimal {$a->value} não é permitido';
+$string['hexanotallowed'] = 'No conjunto de valores <strong>{$a->name}</strong> não é permitido o formato hexadecimal {$a->value}';
 $string['illegalformulasyntax'] = 'Síntaxe de fórmula inválida a começar com {$a}';
 $string['incorrectfeedback'] = 'Para qualquer resposta incorreta';
 $string['itemno'] = 'Conjunto {$a}';
@@ -100,7 +100,7 @@ $string['newlocal1'] = 'terá por base uma nova série numérica privada';
 $string['newlocal2'] = 'um ficheiro de um novo conjunto de ficheiros que só será usado nesta pergunta';
 $string['newlocal3'] = 'uma hiperligação de um novo conjunto de hiperligações que só será usada nesta pergunta';
 $string['newsetwildcardvalues'] = 'novo(s) conjunto(s) de valores das variáveis';
-$string['nextitemtoadd'] = 'Próximo \'Conjunto a adicionar';
+$string['nextitemtoadd'] = 'Próximo \'Conjunto a adicionar\'';
 $string['nextpage'] = 'Página seguinte';
 $string['nocoherencequestionsdatyasetcategory'] = 'Para a pergunta com o ID {$a->qid}, a categoria com o id {$a->qcat} não é idêntica à da variável partilhada {$a->name} da categoria com o id {$a->sharedcat}. Edite a pergunta.';
 $string['nocommaallowed'] = 'A , não pode ser usada, use o . como em 0.013 ou 1.3e-2';
@@ -115,7 +115,7 @@ $string['pluginname_help'] = 'A pergunta Numérica com variáveis permite criar 
 $string['pluginname_link'] = 'pergunta/tipo/numericacomvariaveis';
 $string['pluginnameadding'] = 'A adicionar pergunta numérica com variáveis';
 $string['pluginnameediting'] = 'A editar pergunta numérica com variáveis';
-$string['pluginnamesummary'] = 'As perguntas numéricas com variáveis são idênticas às perguntas numéricas mas em que os números apresentados são selecionados aleatoriamente de uma série de conjuntos de valores definida previamente.';
+$string['pluginnamesummary'] = 'As perguntas numéricas com variáveis são idênticas às perguntas numéricas mas os números apresentados são selecionados aleatoriamente de uma série de conjuntos de valores definida previamente.';
 $string['possiblehdr'] = 'Possíveis variáveis presentes apenas no texto da pergunta';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo numérica com variáveis não armazena dados pessoais.';
 $string['questiondatasets'] = 'Conjunto de valores da pergunta';

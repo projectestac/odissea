@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'sv', version '3.8'.
+ * Strings for component 'mnet', language 'sv', version '3.11'.
  *
  * @package     mnet
  * @category    string
@@ -57,7 +57,7 @@ $string['deleteaserver'] = 'Tar bort en server';
 $string['deletedhostinfo'] = 'Denna värd har tagits bort. Om du vill återställa den, ställ den borttagna statusen tillbaka till "Nej".';
 $string['deletedhosts'] = 'Borttagna värdar: {$a}';
 $string['deletehost'] = 'Ta bort värd';
-$string['deletekeycheck'] = 'Är Du helt säker på att Du vill ta bort den här nyckeln?';
+$string['deletekeycheck'] = 'Är du helt säker på att du vill ta bort den här nyckeln?';
 $string['deleteoutoftime'] = 'Tiden för Ditt 60-sekunders fönster för att ta bort den här nyckeln har gått ut. Vänligen börja om igen.';
 $string['deleteuserrecord'] = 'SSO ACL: ta bort post för användare \'{$a->user}\' från {$a->host}.';
 $string['deletewrongkeyvalue'] = 'Det har uppstått ett fel. Om Du inte höll på att försöka ta bort Din servers SSL-nyckel så är det möjligt att Du har blivit utsatt för en illasinnad attack. Ingen åtgärd har vidtagits.';
@@ -66,10 +66,10 @@ $string['description'] = 'Beskrivning';
 $string['duplicate_usernames'] = 'Vi misslyckades med att skapa ett index över kolumnerna "mnethostid" och "username" i Din användartabell.<br />Detta kan inträffa när Du har <a href="{$a}" target="_blank">dubbletter av användarnamn i Din användartabell</a>.<br />Din uppgradering bör ändå fullföljas  framgångsrikt. Klicka på länken ovan så kommer instruktioner om hur Du åtgärdar detta problem att visas i ett nytt fönster. Du kan ta itu med det i slutet av uppgraderingen.<br />';
 $string['enabled_for_all'] = '(Den här tjänsten har aktiverats för alla värdar)';
 $string['enterausername'] = 'Vänligen mata in ett användarnamn, eller en lista över användarnamn separerade med komman.';
-$string['error7020'] = 'Det felet inträffar normalt sett fjärrwebbplatsen har skapat en registrering för dig med felaktig wwwroot, t.ex. http://dinwebbplats.com istället för http://www.dinwebbplats.com. Du bör då kontakta administratören av fjärrwebbplatsen med din wwwroot (så som den har angivits i config.php) och be henne/honom uppdatera registreringen hos din värd.';
-$string['error7022'] = 'Det meddelande som du skickade till fjärrwebbplatsen krypterades korrekt med signerades inte. Detta var mycket oväntat; du bör förmodligen rapportera en bug om detta uppträder (glöm inte att lämna så mycket information som möjligt om den aktuella versionen av Moodle osv).';
+$string['error7020'] = 'Det här felet uppstår normalt sett om fjärrplatsen har skapat en post åt dig med fel wwwroot, till exempel https://yoursite.com i stället för https://www.yoursite.com. Kontakta administratören av fjärrwebbplatsen med din wwwroot (enligt vad som anges i config.php) och be dem att uppdatera posten för din värd.';
+$string['error7022'] = 'Meddelandet du skickade till fjärrplatsen krypterades korrekt, men signerades inte. Detta är mycket oväntat; du bör förmodligen lämna in en felrapport om detta inträffar (med så mycket information som möjligt om programversionerna i fråga, etc).';
 $string['error7023'] = 'Fjärrwebbplatsen har försökt att avläsa ditt krypterade meddelande med alla de nycklar som den har registrerat angående din webbplats. Ingen av nycklarna har fungerat. Du kanske kan ordna till detta genom att manuellt redigera nycklarna hos fjärrwebbplatsen. Det är osannolikt att detta ska hända om det inte är så att du inte har kommunicerat med webbplatsen på några månader.';
-$string['error7024'] = 'Du skickar ett okrypterat meddelande till den avlägsna webbplatsen med den accepterar inte okrypterad kommunikation från din webbplats. Detta är mycket oväntat; du borde antagligen rapportera en bug om detta inträffar. (lämna så mycket information som möjligt om den aktuella versionen av Moodle osv).';
+$string['error7024'] = 'Du skickar ett okrypterat meddelande till fjärrplatsen, men fjärrplatsen accepterar inte okrypterad kommunikation från din webbplats. Detta är mycket oväntat; du bör förmodligen lämna in en felrapport om detta inträffar (med så mycket information som möjligt om programversionerna i fråga, etc).';
 $string['error7026'] = 'Den nyckel som du har signerat ditt meddelande med skiljer sig ifrån den nyckel som fjärrvärden har registrerat på en fil för din server. Dessutom så har fjärvärden försökt att hämta din aktuella nyckel men misslyckats med detta. Vänligen skriv in nyckeln manuellt hos fjärrvärden och försök igen.';
 $string['error709'] = 'Fjärrwebbplatsen har misslyckats med att få en SSL-nyckel från dig.';
 $string['eventaccesscontrolcreated'] = 'Åtkomstkontroll skapad';
@@ -79,7 +79,7 @@ $string['expires'] = 'Giltig t.o.m.';
 $string['expireyourkey'] = 'Ta bort den här nyckeln';
 $string['expireyourkeyexplain'] = 'Moodle roterar dina nycklar automatiskt var 28:e dag (som förvald standardinställning) men du har alternativet att <em>manuellt</em> låta tiden för den här nyckeln löpa ut. En ersättande nyckel kommer omedelbart att skapas.<br />Om du tar bort den här nyckeln så blir det omöjligt för andra instanser av Moodle att kommunicera med dig fram till dess du manuellt kontaktar varje administratör och ger dem tillgång till din nya nyckel.';
 $string['exportfields'] = 'Fält att exportera';
-$string['failedaclwrite'] = 'Det gick inte att skriva till listan för kontroll av MNET-tillgänglighet för den här användaren.';
+$string['failedaclwrite'] = 'Det gick inte att skriva till MNet:s åtkomstkontroll-lista för användaren \'{$a}\'.';
 $string['findlogin'] = 'Sök login';
 $string['forbidden-function'] = 'Den funktionen har inte aktiverats för RPC.';
 $string['forbidden-transport'] = 'Den transportmetod som Du försöker använda är inte tillåten.';
@@ -97,9 +97,9 @@ $string['hostnamehelp'] = 'Det fullt kvalificerade domännamnet för fjärrvärd
 $string['hostnotconfiguredforsso'] = 'Den här servern är inte konfigurerad för fjärr-inloggning.';
 $string['hostsettings'] = 'Värdinställningar';
 $string['http_self_signed_help'] = 'Tillåt anslutningar genom att använda ett självsignerat DIY SSL-certifikat på fjärrvärden.';
-$string['http_verified_help'] = 'Tillåt anslutningar som använder ett verifierat SSL-certifikat i PHP hos fjärrvärden, men via http (inte https).';
+$string['http_verified_help'] = 'Tillåt anslutningar som använder ett verifierat SSL-certifikat i PHP på fjärrservern, men över http (inte https).';
 $string['https_self_signed_help'] = 'Tillåt anslutningar som använder ett själv-signerat DIY SSL i PHP hos fjärrvärden via http.';
-$string['https_verified_help'] = 'Tillåt anslutningar som använder ett verifierat SSL-certifikat hos fjärrvärden.';
+$string['https_verified_help'] = 'Tillåt anslutningar som använder ett verifierat SSL-certifikat på fjärrservern.';
 $string['id'] = 'ID';
 $string['idhelp'] = 'Det här värdet är tilldelat automatiskt och det går inte att ändra.';
 $string['importfields'] = 'Fält att importera';
@@ -114,7 +114,7 @@ $string['invalidhost'] = 'Du måste ange en giltig identifierare för värd.';
 $string['invalidpubkey'] = 'Nyckeln är inte en giltig SSL-nyckel. ({$a})';
 $string['invalidurl'] = 'Ogiltig parameter för URL';
 $string['ipaddress'] = 'IP-adress';
-$string['is_in_range'] = 'IP-adressen  <code>{$a}</code>  representerar en giltig tillförlitlig värd.';
+$string['is_in_range'] = 'IP-adressen <code>{$a}</code> representerar en giltig och betrodd värd.';
 $string['ispublished'] = '{$a} har aktiverat den här tjänsten för dig.';
 $string['issubscribed'] = ' {$a} prenumererar på den här tjänsten hos Din värd.';
 $string['keydeleted'] = 'Din nyckel har framgångsrikt tagits bort och ersatts.';
@@ -134,7 +134,7 @@ $string['methodsavailableonhostinservice'] = 'Metoder som är tillgängliga för
 $string['methodsignature'] = 'Metodsignatur för {$a}';
 $string['mnet'] = 'MNet';
 $string['mnet_concatenate_strings'] = 'Konkatenera (upp til) 3 strängar och returnera resultatet.';
-$string['mnet_session_prohibited'] = 'Användare från din hemserver har f.n. inte tillstånd att navigera vidare till {$a}.';
+$string['mnet_session_prohibited'] = 'Användare från din hemserver har f.n. inte behörighet att navigera vidare till {$a}.';
 $string['mnetdisabled'] = 'MNet är <strong>inaktiverad</strong>.';
 $string['mnetidprovider'] = 'Leverantör av ID för MNet';
 $string['mnetidproviderdesc'] = 'Du kan använda den här funktionen för att hämta en länk som du kan logga in med om du kan ange rätt e-postadress som matchar det användarnamn som du tidigare försökte logga in med.';
@@ -143,16 +143,16 @@ $string['mnetidprovidernotfound'] = 'Tyvärr, men ingen ytterligare information 
 $string['mnetpeers'] = '\'Peers\' jämbördiga partners';
 $string['mnetservices'] = 'Tjänster';
 $string['mnetsettings'] = 'MNET inställningar';
-$string['moodle_home_help'] = 'Sökvägen till ingångssidan (hem/första) för MNet-applikationen hos fjärrvärden, t.ex. /moodle/.';
+$string['moodle_home_help'] = 'Sökvägen till förstasidan för MNet-applikationen hos fjärrvärden, t.ex. /moodle/.';
 $string['name'] = 'Namn';
 $string['net'] = 'Nätverkande';
 $string['networksettings'] = 'Inställningar för nätverkande';
 $string['never'] = 'Aldrig';
 $string['noaclentries'] = 'Inga tillägg till listan över kontroll av SSO-tillgänglighet.';
 $string['noaddressforhost'] = 'Det gick tyvärr inte att tolka värdnamnet ({$a})';
-$string['nocurl'] = 'PHP Curl-biblioteket är inte installerat.';
+$string['nocurl'] = 'PHP cURL-biblioteket är inte installerat';
 $string['nolocaluser'] = 'Det finns ingen lokal post för fjärranvändaren och det gick inte att skapa någon eftersom den här värden inte skapar användare automatiskt. Vänligen kontakta din administratör!';
-$string['nomodifyacl'] = 'Du har inte tillstånd att modifiera listan för kontroll av MNET-tillgänglighet.';
+$string['nomodifyacl'] = 'Du har inte behörighet att modifiera listan för kontroll av MNET-tillgänglighet.';
 $string['nonmatchingcert'] = 'Ämnet för certifikatet: <br /><em>{$a->subject}</em><br /> matchar inte värden som det kom från:<br /><em>{$a->host}</em>.';
 $string['nopubkey'] = 'Det uppstod ett problem i samband med att den publika nyckeln skulle hämtas.<br />Det kan hända att värden inte tillåter MNET eller nyckeln är ogiltig.';
 $string['nosite'] = 'Det gick inte att hitta en kurs på webbplatsnivå';
@@ -162,15 +162,15 @@ $string['nosuchmodule'] = 'Funktionen var feladresserad och det gick inte att lo
 $string['nosuchpublickey'] = 'Det gick inte att få tillgång till en publik nyckel för verifiering av signatur.';
 $string['nosuchservice'] = 'Tjansten RPC körs inte på den här värden.';
 $string['nosuchtransport'] = 'Det finns inga transporter med det ID:t';
-$string['notBASE64'] = 'Den här strängen är inte i formatet Base64. Det kan inte vara en giltig nyckel.';
+$string['notBASE64'] = 'Den här strängen är inte i base64 format. Den kan inte vara en giltig nyckel.';
 $string['notPEM'] = 'Den här nyckeln är inte i PEM-format. Den kommer inte att fungera.';
-$string['not_in_range'] = 'IP-adressen  <code>{$a}</code>  representerar inte en giltig tillförlitlig värd.';
+$string['not_in_range'] = 'IP-adressen <code>{$a}</code> representerar inte en giltig och betrodd värd.';
 $string['notenoughidpinfo'] = 'Din leverantör av identiteter ger dig tyvärr inte tillräckligt med information för att skapa eller uppdatera ditt konto lokalt.';
 $string['notinxmlrpcserver'] = 'Försök att få tillgång till fjärrklienten för MNet, inte under körning av XMLRPC server.';
 $string['notmoodleapplication'] = 'OBS! Detta är inte en Moodle-applikation så en del av metoderna för inspektion kanske inte kommer att fungera som de ska.';
-$string['notpermittedtojump'] = 'Du har inte tillstånd att inleda en fjärrsession från den här Moodle-hubben.';
+$string['notpermittedtojump'] = 'Du har inte behörighet att inleda en fjärrsession från den här Moodle-servern.';
 $string['notpermittedtojumpas'] = 'Du kan inte starta en fjärrsession medan du är inloggad som en annan användare.';
-$string['notpermittedtoland'] = 'Du har inte tillstånd att inleda en fjärrsession.';
+$string['notpermittedtoland'] = 'Du har inte behörighet att inleda en fjärrsession.';
 $string['off'] = 'Av';
 $string['on'] = 'På';
 $string['options'] = 'Alternativ';
@@ -201,7 +201,7 @@ $string['remotecourses'] = 'Fjärrkurser';
 $string['remotehost'] = 'Fjärrvärd';
 $string['remotehosts'] = 'Fjärrvärdar';
 $string['remoteuser'] = 'Extern {$a->remotetype}-användare';
-$string['remoteuserinfo'] = 'Fjärr- {$a->remotetype} användare - profil hämtad från <a href="{$a->remoteurl}">{$a->remotename}</a>';
+$string['remoteuserinfo'] = 'Profil hämtad från <a href="{$a->remoteurl}">{$a->remotename}</a>';
 $string['requiresopenssl'] = 'Nätverkande kräver ett tillägg (extension) för OpenSSL.';
 $string['restore'] = 'Återställ';
 $string['returnvalue'] = 'Returvärde';
@@ -217,8 +217,8 @@ $string['serviceswesubscribeto'] = 'Tjänster hos {$a} som vi abonnerar på.';
 $string['settings'] = 'Inställningar';
 $string['showlocal'] = 'Visa lokala användare';
 $string['showremote'] = 'Visa fjärranvändare';
-$string['ssl_acl_allow'] = 'SSO ACL: Tillåt användare {$a->user} från {$a->host}';
-$string['ssl_acl_deny'] = 'SSO ACL: Avvisa användare {$a->user} från {$a-host}';
+$string['ssl_acl_allow'] = 'SSO ACL: Tillåt användare \'{$a->user}\' från \'{$a->host}\'';
+$string['ssl_acl_deny'] = 'SSO ACL: Avvisa användare \'{$a->user}\' från \'{$a-host}\'';
 $string['sslverification'] = 'SSL-verifiering';
 $string['sslverification_help'] = 'Med det här alternativet kan du konfigurera säkerhetsnivån när du ansluter till en server med HTTPS.
 
@@ -233,12 +233,15 @@ $string['subscribe'] = 'Prenumerera';
 $string['system'] = 'System';
 $string['testclient'] = 'Testklient för MNet';
 $string['testtrustedhosts'] = 'Testa en adress';
-$string['testtrustedhostsexplain'] = 'Mata in en IP-adress för att kontrollera om det är en tillförlitlig värd.';
+$string['testtrustedhostsexplain'] = 'Mata in en IP-adress för att kontrollera om det är en betrodd värd.';
 $string['theypublish'] = 'De publicerar';
 $string['theysubscribe'] = 'De prenumererar';
 $string['transport_help'] = 'De här alternativen är reciproka (ömsesidiga) så Du kan bara tvinga en fjärrvärd att använda ett signerat SSL-certifikat om Din egen server också har ett signerat SSL-certifikat';
 $string['trustedhosts'] = 'XML-RPC värdar';
-$string['trustedhostsexplain'] = '<p>Mekanismen för tillförlitliga värdar tillåter specifika maskiner att genomföra anrop via XML-RPC till valfri del av API för Moodle. Detta är tillgängligt för skript som kan kontrollera Moodles beteende och det kan vara mycket risktfyllt att aktivera detta alternativ. Om Du är tveksam, använd inte alternativet</p><p>Det är <strong>inte</strong> nödvändigt för användning av MNet.</p><p>För att aktivera alternativet så ska Du mata in en lista över IP-adresser, en på varje rad. Några exempel: </p> Din \'localhost\': <br />127.0.0.1<br /> Din \'localhost\'(med ett block för nätverk):<br />127.0.0.1/32<br />Endast värden med IP-adressen 192.168.0.7:<br />192.168.0.7/32<br />Vilken värd som helst med en IP-adress mellan 192.168.0.1 och 192.168.0.255:<br />192.168.0.0/24<br />Vilken värd som helst:<br />192.168.0.0/0<br />Det senaste exemplet rekommenderas givetvis <strong>inte</strong> som konfiguration.';
+$string['trustedhostsexplain'] = '<p>Systemet för betrodda värdar gör det möjligt för specifika datorer att köra anrop via XML-RPC till valfri del av Moodle-API:t. Detta är tillgängligt för skript för att kontrollera Moodles beteende och kan vara ett mycket farligt alternativ att aktivera. Om du är osäker, håll det inaktiverat.</p>
+<p><strong>Det här behövs inte för <em>någon</em> standard MNet-funktion!</strong> Slå bara på den om du vet vad du gör.</p>
+<p>För att aktivera det anger du en lista över IP-adresser eller nätverk - en på varje rad. Några exempel:</p>
+Din lokala värd:<br />127.0.0.1<br />Din lokal värd (med ett nätverksblock):<br />127.0.0.1/32<br />Endast värd med IP-adress 192.168.0.7:<br />192.168.0.7/32<br />En värd med en IP-adress mellan 192.168.0.1 och 192.168.0.255:<br />192.168.0.0/24<br />En godtycklig värd:<br />192.168.0.0/0<br />Det sista exemplet är <strong>inte</strong> en rekommenderad konfiguration.';
 $string['turnitoff'] = 'Inaktivera';
 $string['turniton'] = 'Aktivera det';
 $string['type'] = 'Typ';

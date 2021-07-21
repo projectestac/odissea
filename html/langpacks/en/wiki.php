@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'en', version '3.8'.
+ * Strings for component 'wiki', language 'en', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -296,7 +296,7 @@ $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Add a new wiki';
 $string['wiki:createpage'] = 'Create new wiki pages';
 $string['wiki:editcomment'] = 'Add comments to pages';
-$string['wiki:editpage'] = 'Save wiki pages';
+$string['wiki:editpage'] = 'Edit wiki pages';
 $string['wiki:managecomment'] = 'Manage wiki comments';
 $string['wiki:managefiles'] = 'Manage wiki files';
 $string['wiki:managewiki'] = 'Manage wiki settings';

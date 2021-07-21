@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_memberships', language 'ru', version '3.8'.
+ * Strings for component 'ltiservice_memberships', language 'ru', version '3.11'.
  *
  * @package     ltiservice_memberships
  * @category    string
@@ -26,4 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['ltiservice_memberships_help'] = 'Разрешить инструменту получать информацию об участнике из курса, используя службу членства IMS LTI. Настройки конфиденциальности будут применяться.';
+$string['notallow'] = 'Не использовать эту службу';
 $string['pluginname'] = 'LTI-служба «Членства»';
+$string['privacy:metadata:email'] = 'Электронная почта пользователя, использующего LTI.';
+$string['privacy:metadata:externalpurpose'] = 'Эта информация отправляется поставщику внешнего LTI.';
+$string['privacy:metadata:firstname'] = 'Имя пользователя, использующего LTI.';
+$string['privacy:metadata:fullname'] = 'Имя и фамилия пользователя, использующего LTI.';
+$string['privacy:metadata:lastname'] = 'Фамилия пользователя, использующего LTI.';
+$string['privacy:metadata:userid'] = 'ID пользователя, использующего LTI.';
+$string['privacy:metadata:useridnumber'] = 'ID-номер пользователя, использующего LTI.';

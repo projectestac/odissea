@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'pt', version '3.8'.
+ * Strings for component 'tool_langimport', language 'pt', version '3.11'.
  *
  * @package     tool_langimport
  * @category    string
@@ -28,6 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadnotavailable'] = 'Não é possível fazer a ligação ao servidor de descargas e, por isso, não é possível instalar ou atualizar automaticamente os pacotes linguísticos. Faça a descarga do(s) ficheiro(s) ZIP apropriado(s) desde <a href="{$a->src}">{$a->src}</a> e descompacte-o(s) manualmente para a pasta de dados <code>{$a->dest}</code>';
 $string['install'] = 'Instalar os pacotes linguísticos selecionados';
 $string['installedlangs'] = 'Pacotes linguísticos instalados';
+$string['installfailed'] = 'Ocorreu um erro ao instalar os pacotes linguísticos!';
+$string['installfinished'] = 'A instalação dos pacotes linguísticos está concluída.';
+$string['installpending'] = 'Os seguintes pacotes linguísticos serão instalados em breve: {$a}.';
+$string['installscheduled'] = 'Pacotes linguísticos agendados para instalação.';
 $string['langimport'] = 'Importação de pacote linguístico';
 $string['langimportdisabled'] = 'O recurso de importação de pacote linguístico foi desativado. Tem que atualizar os pacotes linguísticos manualmente no sistema de ficheiros. Não se esqueça de limpar as caches após a atualização.';
 $string['langpackinstalled'] = 'O pacote linguístico \'{$a}\' foi instalado com sucesso';
@@ -48,7 +52,9 @@ $string['nolangupdateneeded'] = 'Todos os pacotes linguísticos instalados estã
 $string['pluginname'] = 'Pacotes linguísticos';
 $string['privacy:metadata'] = 'O módulo Pacotes linguísticos não armazena dados pessoais.';
 $string['purgestringcaches'] = 'Limpar caches das strings';
+$string['search'] = 'Pesquisar os pacotes de idiomas disponíveis';
 $string['selectlangs'] = 'Selecione os pacotes linguísticos que pretende desinstalar';
 $string['uninstall'] = 'Desinstalar os pacotes linguísticos selecionados';
 $string['uninstallconfirm'] = 'Está prestes a desinstalar completamente o(s) pacote(s) linguístico(s): {$a}. Tem a certeza?';
 $string['updatelangs'] = 'Atualizar todos os pacotes linguísticos instalados';
+$string['updatelangsnote'] = 'Atualizar todos os pacotes linguísticos instalados (o clicar no botão) pode demorar muito tempo e esgotar o tempo limite. Em vez disso, é recomendado usar a tarefa agendada \'{$a->taskname}\' (que é executada todos os dias, por predefinição).';

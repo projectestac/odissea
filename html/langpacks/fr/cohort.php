@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'fr', version '3.8'.
+ * Strings for component 'cohort', language 'fr', version '3.11'.
  *
  * @package     cohort
  * @category    string
@@ -87,8 +87,8 @@ $string['uploadcohorts_help'] = 'Des cohortes peuvent être déposées au moyen 
 
 * chaque ligne du fichier contient un enregistrement ;
 * chaque enregistrement est une série de données séparées par une virgule ou un autre délimiteur ;
-* un seul champ est obligatoire, dénommé <i>name</i> ;
-* les autres champs sont optionnels, et sont dénommés <i>idnumber</i>, <i>description</i>, <i>descriptionformat</i>, <i>visible</i>, <i>context</i>, <i>category</i>, <i>category_id</i>, <i>category_idnumber</i>, <i>category_path</i>.';
+* un seul champ est obligatoire, dénommé <em>name</em> ;
+* les autres champs sont optionnels, et sont dénommés <em>idnumber</em>, <em>description</em>, <em>descriptionformat</em>, <em>visible</em>, <em>context</em>, <em>category</em>, <em>category_id</em>, <em>category_idnumber</em>, <em>category_path</em>.';
 $string['uploadedcohorts'] = '{$a} cohortes déposées';
 $string['useradded'] = 'Utilisateur ajouté à la cohorte « {$a} »';
 $string['visible'] = 'Visible';

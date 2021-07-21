@@ -36,7 +36,8 @@ function atto_cloze_strings_for_js() {
     $PAGE->requires->strings_for_js(array( 'multichoice', 'numerical', 'shortanswer' ), 'mod_quiz' );
     $PAGE->requires->strings_for_js(array( 'addmoreanswerblanks', 'tolerance' ), 'qtype_calculated' );
     $PAGE->requires->strings_for_js(array( 'add', 'cancel', 'delete',
-            'duplicate', 'down', 'grade', 'previous', 'up' ), 'core' );
+            'duplicate', 'down', 'previous', 'up' ), 'core' );
+    $PAGE->requires->strings_for_js(array( 'grade' ), 'grades' );
 }
 
 /**

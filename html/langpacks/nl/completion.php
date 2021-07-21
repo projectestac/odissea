@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'nl', version '3.8'.
+ * Strings for component 'completion', language 'nl', version '3.11'.
  *
  * @package     completion
  * @category    string
@@ -55,6 +55,7 @@ $string['bulkcompletiontracking_help'] = '<strong>Niet:</strong> Voltooide activ
 $string['checkactivity'] = 'Keuzevakje voor activiteit / bron: {$a}';
 $string['checkall'] = 'Alle activiteiten en bronnen aan- of uitvinken';
 $string['checkallsection'] = 'Alle activiteiten en bronnen in de volgende sectie aan- of uitvinken: {$a}';
+$string['completeactivity'] = 'Voltooi de activiteit';
 $string['completed'] = 'Voltooid';
 $string['completedunlocked'] = 'Opties voor voltooien niet geblokkeerd';
 $string['completedunlockedtext'] = 'Wanneer je wijzigingen bewaart, zal de status van voltooien voor alle gebruikers gewist worden. Als je twijfelt of je dit wel wil, bewaar dit formulier dan niet.';
@@ -123,6 +124,7 @@ $string['courseaggregation_any'] = 'EEN geselecteerde cursus moet voltooid zijn'
 $string['coursealreadycompleted'] = 'Je hebt deze cursus al voltooid';
 $string['coursecomplete'] = 'Cursus voltooid';
 $string['coursecompleted'] = 'Cursus voltooid';
+$string['coursecompletedmessage'] = '<p>Proficiat!</p><p>Je hebt net volgende cursus voltooid:<a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Cursus voltooien';
 $string['coursecompletioncondition'] = 'Voorwaarde:{$a}';
 $string['coursegrade'] = 'Cursuscijfer';
@@ -141,6 +143,8 @@ $string['defaultcompletionupdated'] = 'Wijzigingen opgeslagen';
 $string['deletecompletiondata'] = 'Verwijder voltooiingsgegevens';
 $string['dependencies'] = 'Voorwaarden';
 $string['dependenciescompleted'] = 'Voltooien van andere cursussen';
+$string['detail_desc:receivegrade'] = 'Krijg een cijfer';
+$string['detail_desc:view'] = 'Bekijk';
 $string['editcoursecompletionsettings'] = 'Bewerk instelling voor cursusvoltooiing';
 $string['enablecompletion'] = 'Bijhouden van voltooiing inschakelen';
 $string['enablecompletion_help'] = 'Indien ingeschakeld kunnen er in de activiteit en/of cursus voorwaarden voor voltooiing ingesteld worden.  Het wordt aangeraden dit in te schakelen, zodat het Cursusoverzicht op Mijn startpagina betekenisvolle gegevens toont.';
@@ -219,6 +223,8 @@ $string['seedetails'] = 'Zie detail';
 $string['select'] = 'Selecteer';
 $string['self'] = 'Zelf';
 $string['selfcompletion'] = 'Zelf voltooien';
+$string['showcompletionconditions'] = 'Toon voltooiingsvoorwaarden';
+$string['showcompletionconditions_help'] = 'De voltooiingsvoorwaarden worden altijd getoond op de activiteitenpagina. Deze instelling bepaalt of die ook getoond worden onder elke activiteit op de cursuspagina.';
 $string['showinguser'] = 'Gebruiker tonen';
 $string['unenrolingfromcourse'] = 'Afmelden van de cursus';
 $string['unenrolment'] = 'Afmelding';

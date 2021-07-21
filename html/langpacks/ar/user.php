@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ar', version '3.8'.
+ * Strings for component 'user', language 'ar', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'أضف شرطاً';
+$string['adverbfor_and'] = 'و';
+$string['adverbfor_andnot'] = 'و';
+$string['adverbfor_or'] = 'أو';
+$string['applyfilters'] = 'تطبيق المرشحات';
+$string['clearfilterrow'] = 'أزل سطر المرشح';
+$string['clearfilters'] = 'إخلاء المرشحات';
+$string['clearfilterselection'] = 'أزل "{$a}" من المرشح';
+$string['countparticipantsfound'] = 'تم العثور على {$a} مشترك';
+$string['filterbykeyword'] = 'كلمة مفتاحية';
+$string['filterrowlegend'] = 'ترشيح {$a}';
+$string['filtersetmatchdescription'] = 'كيفية الربط ما بين عدة مرشحات';
+$string['filtertype'] = 'نوع المنقح';
+$string['match'] = 'مطابق';
+$string['matchofthefollowing'] = 'من الآتي:';
+$string['moodlenetprofile'] = 'الملف الشخصي لشبكة مودل';
+$string['moodlenetprofile_help'] = 'هذا الحقل يعمل على ربط حسابك في شبكة مودل بموقع مودل. هو يتوقع عنوان رابط متوافق مع صيغة WebFinger';
+$string['placeholdertype'] = 'إطبع...';
+$string['placeholdertypeorselect'] = 'إطبع أو إختر...';
 $string['privacy:courserequestpath'] = 'المقررات الدراسية المطلوبة';
 $string['privacy:descriptionpath'] = 'وصف الملف الشخصي';
 $string['privacy:devicespath'] = 'أجهزة المستخدم';
@@ -47,7 +66,7 @@ $string['privacy:metadata:data'] = 'البيانات المتعلقة بحقل �
 $string['privacy:metadata:deleted'] = 'علم لبيان ما إذا تم حذف المستخدم أم لا';
 $string['privacy:metadata:department'] = 'القسم الذي يمكن فيه العثور على المستخدم';
 $string['privacy:metadata:description'] = 'تفاصيل عامة عن هذا المستخدم';
-$string['privacy:metadata:devicename'] = 'اسم الجهاز، تلفزيون ذكي أو أيفون... إلخ';
+$string['privacy:metadata:devicename'] = 'اسم الجهاز، تلفزيون ذكي أو آيفون... إلخ';
 $string['privacy:metadata:devicetablesummary'] = 'هذا الجدول يخزن معلومات عن الهواتف الذكية للمستخدم من أجل الدفع بالإشعارات إليه';
 $string['privacy:metadata:email'] = 'عنوان بريد الكتروني للاتصال';
 $string['privacy:metadata:emailstop'] = 'تفضيل لتعطيل ذهاب الإشعارات إلى المستخدم';
@@ -76,7 +95,8 @@ $string['privacy:metadata:maildigest'] = 'إعداد عن تلخيص الرسا�
 $string['privacy:metadata:maildisplay'] = 'تفضيل المستخدم عن عرض عنوان بريده الالكتروني للآخرين';
 $string['privacy:metadata:middlename'] = 'الاسم الأوسط للمستخدم';
 $string['privacy:metadata:mnethostid'] = 'مُعرَّف لمضيف شبكة مودل إن كان مستعملاً';
-$string['privacy:metadata:model'] = 'اسم الجهاز، تلفزيون ذكي أو أيفون... إلخ';
+$string['privacy:metadata:model'] = 'اسم الجهاز، تلفزيون ذكي أو آيفون... إلخ';
+$string['privacy:metadata:moodlenetprofile'] = 'الملف الشخصي لشبكة مودل العائد للمستخدم';
 $string['privacy:metadata:msn'] = 'مُعرَّف حساب MSN للمستخدم';
 $string['privacy:metadata:my_pages'] = 'صفحات المستخدم - لوحة التحكم والملف الشخصي. هذا الجدول لا يحتوي على بيانات شخصية ويستعمل فقط لربط كتل لوحة التحكم بالمستخدمين';
 $string['privacy:metadata:my_pages:name'] = 'اسم الصفحة';
@@ -128,6 +148,7 @@ $string['privacy:passwordresetpath'] = 'إعادة تعيينات كلمة ال�
 $string['privacy:privatefilespath'] = 'الملفات الخاصة';
 $string['privacy:profileimagespath'] = 'صور الملف الشخصي';
 $string['privacy:sessionpath'] = 'بيانات الجلسة';
+$string['selectfiltertype'] = 'اختر';
 $string['target:upcomingactivitiesdue'] = 'استحقاقات النشاطات القادمة';
 $string['target:upcomingactivitiesdue_help'] = 'هذا المقصد يقوم بتوليد رسائل تذكير بمواعيد استحقاق النشاطات القادمة.';
 $string['target:upcomingactivitiesdueinfo'] = 'كل رؤى مواعيد استحقاق النشاطات القادمة مدرجة هنا. هؤلاء الطلبة قد تلقوا تلك الرؤى مباشرة.';

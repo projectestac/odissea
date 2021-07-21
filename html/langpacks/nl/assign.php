@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'nl', version '3.8'.
+ * Strings for component 'assign', language 'nl', version '3.11'.
  *
  * @package     assign
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:submissionsdue'] = 'Tegen:';
+$string['activitydate:submissionsopen'] = 'Opent:';
+$string['activitydate:submissionsopened'] = 'Geopend:';
 $string['activityoverview'] = 'Je hebt opdrachten die nagekeken moeten worden';
 $string['addattempt'] = 'Nog een poging toestaan';
 $string['addnewattempt'] = 'Een nieuwe poging toevoegen';
@@ -61,8 +64,9 @@ $string['assign:reviewgrades'] = 'Bekijk cijfers';
 $string['assign:showhiddengrader'] = 'Zie de identiteit van een verborgen beoordeler';
 $string['assign:submit'] = 'Stuur opdracht in';
 $string['assign:view'] = 'Bekijk opdracht';
-$string['assign:viewblinddetails'] = 'Bekijk de identiteit van de leerling wanneer blind beoordelen is ingeschakeld';
+$string['assign:viewblinddetails'] = 'Bekijk de identiteit van de leerling wanneer anoniem insturen is ingeschakeld';
 $string['assign:viewgrades'] = 'Bekijk cijfers';
+$string['assign:viewownsubmissionsummary'] = 'Bekijk samenvatting van eigen inzending';
 $string['assignfeedback'] = 'Feedback plugin';
 $string['assignfeedbackpluginname'] = 'Feedback plugin';
 $string['assignmentisdue'] = 'Opdracht moet worden ingeleverd';
@@ -82,12 +86,13 @@ $string['assignsubmissionpluginname'] = 'Inzendingsplugin';
 $string['attemptheading'] = 'Poging {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Vorige pogingen';
 $string['attemptnumber'] = 'Pogingnummer';
-$string['attemptreopenmethod'] = 'Heropende pogingen';
-$string['attemptreopenmethod_help'] = 'Bepaalt hoe de inzendingen van leerlingen heropend kunnen worden. De beschikbare opties zijn:
+$string['attemptreopenmethod'] = 'Bijkomende pogingen';
+$string['attemptreopenmethod_help'] = 'Deze instelling bepaalt of een leerling bijkomende pogingen kan insturen voor de opdracht. Voor elke inzending wordt de poging, het cijfer en de feedback bewaard en die kan bekeken worden door leraar en leerling.
+De beschikbare opties zijn:
 
-* Nooit - de inzending van de leerling kan niet heropend worden.
-* Manueel - De inzending van de leerling kan worden heropend door een leraar.
-* Automatisch tot geslaagd - De inzending van de leerling wordt automatisch heropend tot de leerling een cijfer behaalt dat ingesteld is als cesuur in het cijferlijst voor deze opdracht.';
+* Nooit - slechts één inzending mogelijk.
+* Manueel - er kunnen bijkomende pogingen toegestaan worden door een leraar.
+* Automatisch tot geslaagd - de leerling kan automatisch meer pogingen insturen tot de leerling een cijfer behaalt dat ingesteld is als cesuur in het cijferlijst voor deze opdracht.';
 $string['attemptreopenmethod_manual'] = 'Manueel';
 $string['attemptreopenmethod_none'] = 'Nooit';
 $string['attemptreopenmethod_untilpass'] = 'Automatisch tot geslaagd';
@@ -109,9 +114,10 @@ $string['batchoperationsdescription'] = 'Met geselecteerde...';
 $string['batchoperationunlock'] = 'deblokkeer inzendingen';
 $string['batchsetallocatedmarker'] = 'Wijs een beoordelaar toe aan {$a} geselecteerde gebruiker(s).';
 $string['batchsetmarkingworkflowstateforusers'] = 'Stel de status van de beoordelings-workflow in voor {$a} geselecteerde gebruiker(s)';
-$string['blindmarking'] = 'Blind beoordelen';
-$string['blindmarking_help'] = 'Blind beoordelen verbergt de identiteit van leerlingen voor de beoordelaars. De blind beooordelen instellingen zullen geblokkeerd worden als er minstens één beoordeling is gebeurd voor deze opdracht.';
-$string['blindmarkingenabledwarning'] = 'Voor deze activiteit is blind beoordelen ingeschakeld.';
+$string['blindmarking'] = 'Anoniem insturen';
+$string['blindmarking_help'] = 'Anoniem insturen verbergt de identiteit van leerlingen voor de beoordelaars. De instellingen voor anoniem insturen zullen geblokkeerd worden als er minstens één inzending of één beoordeling is gebeurd voor deze opdracht.';
+$string['blindmarkingenabledwarning'] = 'Voor deze activiteit is anoniem insturen ingeschakeld. Cijfers zullen niet aan het cijferboek toegevoegd worden tot de identiteit van de leerlingen vrijgegeven is via het actiemenu van het beoordelen.';
+$string['cachedef_overrides'] = 'Informatie gebruiker- en groepsoverschrijving';
 $string['calendardue'] = '{$a} moet worden ingeleverd';
 $string['calendargradingdue'] = '{$a} moet worden beoordeeld';
 $string['changefilters'] = 'Wijzig filters';
@@ -123,6 +129,7 @@ $string['clickexpandreviewpanel'] = 'Klik om overzichtsscherm te openen';
 $string['collapsegradepanel'] = 'Beoordelingsscherm inklappen';
 $string['collapsereviewpanel'] = 'Overzichtsscherm inklappen';
 $string['comment'] = 'Commentaar';
+$string['completiondetail:submit'] = 'Stuur in';
 $string['completionsubmit'] = 'Leerling moet deze activiteit insturen om ze te voltooien';
 $string['configshowrecentsubmissions'] = 'Iedereen kan in rapportages over "Recente activiteit" zien dat er opdrachten zijn ingestuurd.';
 $string['confirmbatchgradingoperation'] = 'Weet je zeker dat je wil {$a->operation} voor {$a->count} leerlingen?';
@@ -235,6 +242,7 @@ $string['feedbacksettings'] = 'Feedback-instellingen';
 $string['feedbacktypes'] = 'Feedbacktypes';
 $string['filesubmissions'] = 'Ingestuurde bestanden';
 $string['filter'] = 'Filter';
+$string['filterdraft'] = 'Ontwerp';
 $string['filtergrantedextension'] = 'Verleen verlenging';
 $string['filternone'] = 'Geen filter';
 $string['filternotsubmitted'] = 'Niet ingestuurd';
@@ -407,7 +415,7 @@ $string['preventsubmissions'] = 'Verhinder de gebruiker om meer in te sturen voo
 $string['preventsubmissionsshort'] = 'Verhinder het wijzigen van ingestuurde opdrachten';
 $string['previous'] = 'Vorige';
 $string['privacy:attemptpath'] = 'poging {$a}';
-$string['privacy:blindmarkingidentifier'] = 'De identificatie, gebruikt voor blind beoordelen';
+$string['privacy:blindmarkingidentifier'] = 'De identificatie, gebruikt voor anoniem insturen';
 $string['privacy:gradepath'] = 'cijfer';
 $string['privacy:metadata:assigndownloadasfolders'] = 'Een gebruikersvoorkeur waarmee ingesteld wordt of meerdere inzendingen in mappen moeten gedownload worden';
 $string['privacy:metadata:assignfeedbackpluginsummary'] = 'Feedback voor de opdracht.';
@@ -422,7 +430,7 @@ $string['privacy:metadata:assignquickgrading'] = 'Om in te stellen of snel beoor
 $string['privacy:metadata:assignsubmissiondetail'] = 'Bewaart inzendingsinformatie van gebruikers';
 $string['privacy:metadata:assignsubmissionpluginsummary'] = 'Inzendingsgegevens voor de opdracht.';
 $string['privacy:metadata:assignuserflags'] = 'Bewaart metagegevens over gebruikers, zoals verlengde tijd';
-$string['privacy:metadata:assignusermapping'] = 'De koppeling voor blind beoordelen';
+$string['privacy:metadata:assignusermapping'] = 'De koppeling voor anoniem insturen';
 $string['privacy:metadata:assignworkflowfilter'] = 'Filter op de verschillende stadia van de workflow.';
 $string['privacy:metadata:grade'] = 'Het numerieke cijfer voor de inzending van de opdracht. Kan bepaald worden door schalen, geavanceerde beoordelingsformulieren enz., maar zal altijd terug geconverteerd worden naar een decimaal cijfer.';
 $string['privacy:metadata:grader'] = 'De gebruikersID van de beoordelende persoon.';
@@ -447,7 +455,7 @@ $string['removesubmission'] = 'Verwijder ingestuurde opdrachten';
 $string['removesubmissionconfirm'] = 'Weet je zeker dat u de indieningsgegevens wilt verwijderen?';
 $string['removesubmissionconfirmforstudent'] = 'Weet je zeker dat je de indieningsgegevens voor leerling {$a} wilt verwijderen?';
 $string['removesubmissionforstudent'] = 'Verwijder inzending voor leerling: (id={$a->id}, fullname={$a->fullname}).';
-$string['reopenuntilpassincompatiblewithblindmarking'] = 'De optie "Opnieuw openen tot geslaagd" is niet compatibel met de optie blind beoordelen, omdat de cijfers niet in de cijferlijst komen tot de identiteit van de leerling vrijgegeven wordt.';
+$string['reopenuntilpassincompatiblewithblindmarking'] = 'De optie "Opnieuw openen tot geslaagd" is niet compatibel met de optie anoniem insturen, omdat de cijfers niet in de cijferlijst komen tot de identiteit van de leerling vrijgegeven wordt.';
 $string['requireallteammemberssubmit'] = 'Eis dat alle groepsleden insturen';
 $string['requireallteammemberssubmit_help'] = 'Indien ingeschakeld moeten alle leden van de groep op de insturen-knop klikken voor de opdracht als ingestuurd beschouwd wordt. Indien uitgeschakeld zal de opdracht van de groep als ingestuurd beschouwd worden als één van de leden van de groep op de instuurknop klikt.';
 $string['requiresubmissionstatement'] = 'Eis dat leerlingen de voorwaarden voor insturen aanvaarden.';

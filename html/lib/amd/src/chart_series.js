@@ -16,7 +16,6 @@
 /**
  * Chart series.
  *
- * @package    core
  * @copyright  2016 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @module     core/chart_series
@@ -27,7 +26,6 @@ define([], function() {
      * Chart data series.
      *
      * @class
-     * @alias module:core/chart_series
      * @param {String} label The series label.
      * @param {Number[]} values The values.
      */
@@ -70,6 +68,14 @@ define([], function() {
      * @protected
      */
     Series.prototype._colors = null;
+
+    /**
+     * The fill mode of the series.
+     *
+     * @type {Object}
+     * @protected
+     */
+    Series.prototype._fill = false;
 
     /**
      * The label of the series.
@@ -149,6 +155,7 @@ define([], function() {
             s.setColor(obj.colors[0]);
         }
 
+        s.setFill(obj.fill);
         s.setSmooth(obj.smooth);
         return s;
     };
@@ -178,6 +185,15 @@ define([], function() {
      */
     Series.prototype.getCount = function() {
         return this._values.length;
+    };
+
+    /**
+     * Get the fill mode of the series.
+     *
+     * @return {Object}
+     */
+    Series.prototype.getFill = function() {
+      return this._fill;
     };
 
     /**
@@ -271,6 +287,15 @@ define([], function() {
             throw new Error('When setting multiple colors there must be one per value.');
         }
         this._colors = colors || [];
+    };
+
+    /**
+     * Set the fill mode for the series.
+     *
+     * @param {Object} fill
+     */
+    Series.prototype.setFill = function(fill) {
+      this._fill = typeof fill === 'undefined' ? null : fill;
     };
 
     /**

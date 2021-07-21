@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_upload', language 'gl', version '3.8'.
+ * Strings for component 'assignment_upload', language 'gl', version '3.11'.
  *
  * @package     assignment_upload
  * @category    string
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'Foi entregado un traballo enviado.';
 $string['event_assessable_uploaded'] = 'Foi enviado un ficheiro.';
 $string['pluginname'] = 'Enviar';
-$string['privacy:metadata'] = 'O engadido de envío de tarefas non almacena ningunha información persoal.';
+$string['privacy:metadata'] = 'O engadido de Envío de tarefas non almacena ningunha información persoal.';

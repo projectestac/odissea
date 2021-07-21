@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'ca', version '3.8'.
+ * Strings for component 'wiki', language 'ca', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -118,6 +118,7 @@ $string['incorrectdeleteversions'] = 'Les versions de la pàgina per suprimir s�
 $string['incorrectpageid'] = 'L\'ID de la pàgina no és correcte.';
 $string['incorrectsubwikiid'] = 'L\'ID del subwiki no és correcte.';
 $string['incorrectwikiid'] = 'L\'ID del wiki no és correcte.';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Wiki en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament)';
 $string['individualpagedoesnotexist'] = 'Aquesta pàgina wiki no existeix';
 $string['insertcomment'] = 'Insereix comentari';
 $string['insertimage'] = 'Insereix una imatge...';

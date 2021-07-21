@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'pt', version '3.8'.
+ * Strings for component 'debug', language 'pt', version '3.11'.
  *
  * @package     debug
  * @category    string
@@ -39,9 +39,9 @@ $string['erroroccur'] = 'Ocorreu um erro durante este processo';
 $string['invalidarraysize'] = 'Tamanho incorreto nos parâmetros de {$a}';
 $string['invalideventdata'] = 'Foi submetida uma data do evento incorreta: {$a}';
 $string['invalidparameter'] = 'Foi detetado um valor do parâmetro inválido, a execução não pode continuar.';
-$string['invalidresponse'] = 'Foi detetado um valor de resposta inválido, a execução não pode continuar.';
+$string['invalidresponse'] = 'Foi detetado um valor de resposta inválido. A execução não pode continuar.';
 $string['line'] = 'Linha';
-$string['missingconfigversion'] = 'A configuração da tabela não contém nenhuma versão, não pode continuar.';
+$string['missingconfigversion'] = 'A configuração da tabela não contém nenhuma versão. Não é possível continuar.';
 $string['modulenotexist'] = 'O módulo {$a} não existe';
 $string['morethanonerecordinfetch'] = 'Foram encontrados vários registos na pesquisa!';
 $string['mustbeoveride'] = 'O método {$a} abstrato deve ser substituido.';
@@ -56,7 +56,7 @@ $string['outputbuffer'] = 'Buffer de Output';
 $string['phpvaroff'] = 'A variável de servidor PHP \'{$a->name}\' deve estar Off - {$a->link}';
 $string['phpvaron'] = 'A variável de servidor PHP \'{$a->name}\' não está ligada - {$a->link}';
 $string['sessionmissing'] = '{$a} objetos em falta na sessão';
-$string['sqlrelyonobsoletetable'] = 'Este SQL baseia-se na tabela: {$a}! O seu código deverá ser reparado por um programador.';
+$string['sqlrelyonobsoletetable'] = 'Este SQL baseia-se na tabela obsoleta: {$a}! O seu código deverá ser reparado por um programador.';
 $string['stacktrace'] = 'Stack trace';
 $string['withoutversion'] = 'O ficheiro version.php principal está em falta, inacessível ou corrompido.';
 $string['xmlizeunavailable'] = 'as funções xmlize não estão disponíveis';

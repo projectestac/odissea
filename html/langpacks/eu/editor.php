@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'eu', version '3.8'.
+ * Strings for component 'editor', language 'eu', version '3.11'.
  *
  * @package     editor
  * @category    string
@@ -104,7 +104,7 @@ $string['middle'] = 'Erdian';
 $string['minimize'] = 'Minimizatu editorea';
 $string['move'] = 'Mugitu';
 $string['multi'] = 'Multi';
-$string['mustenterurl'] = 'URLa jarri behar duzu';
+$string['mustenterurl'] = 'URLa zehaztu behar duzu';
 $string['nolink'] = 'Galarazi estekatze automatikoa';
 $string['normal'] = 'Normala';
 $string['notimage'] = 'Hautatutako artxiboa ez da irudi bat. Mesedez, aukeratu ezazu irudi bat!';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'el', version '3.8'.
+ * Strings for component 'tool_capability', language 'el', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -30,9 +30,12 @@ $string['capabilityreport'] = 'Επισκόπηση δυνατότητας';
 $string['changeoverrides'] = 'Αλλάξτε τις παρακάμψεις σε αυτό το πλαίσιο';
 $string['changeroles'] = 'Αλλαγή ορισμού ρόλων';
 $string['eventreportviewed'] = 'Η αναφορά προβλήθηκε';
+$string['filters'] = 'Φιλτράρισμα αποτελεσμάτων';
 $string['forroles'] = 'Για τους ρόλους {$a}';
 $string['getreport'] = 'Πάρτε την επισκόπηση';
 $string['intro'] = 'Αυτή η αναφορά δείχνει, για μια συγκεκριμένη δυνατότητα, τι δικαίωμα έχει αυτή η δυνατότητα στον ορισμό κάθε ρόλου (ή ενός συνόλου ρόλων), και που σε όλο τον ιστότοπο αυτή η δυνατότητα παρακάμπτεται.';
+$string['nodifferences'] = 'Δεν υπάρχουν διαφορές προς εμφάνιση μεταξύ των επιλεγμένων ρόλων σε αυτό το πλαίσιο συμφραζομένων';
+$string['onlydiff'] = 'Εμφάνιση μόνο των διαφορών';
 $string['pluginname'] = 'Επισκόπηση δυνατοτήτων';
 $string['privacy:metadata'] = 'Το πρόσθετο «Επισκόπηση δυνατοτήτων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['reportforcapability'] = 'Αναφορά για την δυνατότητα «{$a}»';

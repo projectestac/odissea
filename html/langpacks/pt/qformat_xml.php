@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_xml', language 'pt', version '3.8'.
+ * Strings for component 'qformat_xml', language 'pt', version '3.11'.
  *
  * @package     qformat_xml
  * @category    string
@@ -34,4 +34,4 @@ $string['truefalseimporterror'] = '<b>Aviso</b>: A pergunta verdadeiro/falso \'{
 $string['unsupportedexport'] = 'O tipo de pergunta {$a} não é compatível com a exportação XML';
 $string['xmlimportnoname'] = 'Falta o nome da pergunta no ficheiro XML';
 $string['xmlimportnoquestion'] = 'Falta o texto da pergunta no ficheiro XML';
-$string['xmltypeunsupported'] = 'O tipo de pergunta {$a} não é suportada para importações em XML';
+$string['xmltypeunsupported'] = 'O tipo de pergunta \'{$a}\' não é suportada para importações em XML';

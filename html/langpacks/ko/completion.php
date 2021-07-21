@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ko', version '3.8'.
+ * Strings for component 'completion', language 'ko', version '3.11'.
  *
  * @package     completion
  * @category    string
@@ -45,14 +45,17 @@ $string['completedwarning'] = '이수 설정 잠금';
 $string['completedwarningtext'] = '여러 사람 ({$a}) 이 이 활동을 이수했다고 보고되었습니다. 이수 설정을 변경하게 되면 그들의 이수 상황이 지워질 것이며 혼선을 불러올 수도 있습니다. 꼭 필요하지 않고, 설정이 잠겨 있다면 굳이 이를 해제하지 마십시오.';
 $string['completion'] = '이수상황 추적';
 $string['completion-alt-auto-enabled'] = '시스템이  항목을 완료한 것으로 표시합니다. 근거 조건: {$a}';
-$string['completion-alt-auto-fail'] = '완료함: {$a} (통과 성적을 획득하지 못함)';
-$string['completion-alt-auto-n'] = '완료하지 못함: {$a}';
-$string['completion-alt-auto-n-override'] = '미이수: {$a-> modname} ({$a-> overrideuser}에 의해 설정됨)';
-$string['completion-alt-auto-pass'] = '완료함: {$a} (통과 성적 획득)';
-$string['completion-alt-auto-y'] = '완료함: {$a}';
+$string['completion-alt-auto-fail'] = '이수: {$ a} (합격 등급을 받지 못함)';
+$string['completion-alt-auto-n'] = '미이수: {$a}';
+$string['completion-alt-auto-n-override'] = '미이수: {$ a-> modname} ({$ a-> overrideuser}에 의해 설정됨)';
+$string['completion-alt-auto-pass'] = '이수: {$ a} (합격 등급 달성)';
+$string['completion-alt-auto-y'] = '이수: {$a}';
+$string['completion-alt-auto-y-override'] = '이수 : {$ a-> modname} ({$ a-> overrideuser}에 의해 설정됨)';
 $string['completion-alt-manual-enabled'] = '학생들이 이 항목을  완료한 것으로 수동으로 표시할 수 있습니다: {$a}';
-$string['completion-alt-manual-n'] = '완료하지 않음:  {$a}.  완료된것으로 표시하려면 선택하에요.';
-$string['completion-alt-manual-y'] = '완료함: {$a}.  완료되지 않은것으로 표시하려면 선택하에요.';
+$string['completion-alt-manual-n'] = '미이수 : {$ a}. 이수로 표시하려면 선택하십시오.';
+$string['completion-alt-manual-n-override'] = '미이수 : {$ a-> modname} ({$ a-> overrideuser}에 의해 설정됨). 이수로 표시하려면 선택하십시오.';
+$string['completion-alt-manual-y'] = '이수 : {$ a}. 미이수로 표시하려면 선택하십시오.';
+$string['completion-alt-manual-y-override'] = '이수 : {$ a-> modname} ({$ a-> overrideuser}에 의해 설정됨). 미이수로 표시하려면 선택하십시오.';
 $string['completion-fail'] = '완료 (통과 성적을 획득하지 못함)';
 $string['completion-n'] = '완료되지 않음';
 $string['completion-pass'] = '완료됨(통과 성적 얻음)';
@@ -136,7 +139,7 @@ $string['markingyourselfcomplete'] = '완료한 것을 스스로 표시';
 $string['moredetails'] = '세부사항';
 $string['nocriteriaset'] = '이 강좌에 대한 강좌 완료 기준이 설정되지 않았습니다.';
 $string['notcompleted'] = '완료하지 못함.';
-$string['notenroled'] = '이 강좌에 등록되지 않았습니다.';
+$string['notenroled'] = '이 과정에 등록하지 않았습니다.';
 $string['nottracked'] = '당신은 현재 이 강좌에서 완료에 의해 추적되고 있지 않습니다';
 $string['notyetstarted'] = '아직 시작 안했습니다.';
 $string['overallaggregation'] = '완료 조건';

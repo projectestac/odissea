@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'en', version '3.8'.
+ * Strings for component 'chat', language 'en', version '3.11'.
  *
  * @package     chat
  * @category    string
@@ -112,6 +112,7 @@ Chats are especially useful when the group chatting is not able to meet face-to-
 $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Never delete messages';
+$string['nextchattime'] = 'Next chat time:';
 $string['nextsession'] = 'Next scheduled session';
 $string['no_complete_sessions_found'] = 'No complete sessions found.';
 $string['nochat'] = 'No chat found';
@@ -161,6 +162,7 @@ $string['servermax'] = 'Max users';
 $string['serverport'] = 'Server port';
 $string['sessions'] = 'Chat sessions';
 $string['sessionstart'] = 'The next chat session will start on {$a->date}, ({$a->fromnow} from now)';
+$string['sessionstartsin'] = 'The next chat session will start {$a} from now.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Everyone can view past sessions';
 $string['studentseereports_help'] = 'If set to No, only users have mod/chat:readlog capability are able to see the chat logs';

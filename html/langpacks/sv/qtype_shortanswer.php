@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'sv', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'sv', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -38,7 +38,11 @@ $string['filloutoneanswer'] = 'Du måste avge åtminstone ett möjligt svar. Sva
 $string['notenoughanswers'] = 'Denna typ av fråga kräver minst {$a} svar';
 $string['pleaseenterananswer'] = 'Ange ett svar.';
 $string['pluginname'] = 'Kort svar';
-$string['pluginname_help'] = 'Som svar på en fråga (som kan innehålla en bild) skriver den som svarar ett ord eller en kort fras. Det kan finnas flera möjliga korrekta svar, alla med olika poäng. Om "Skiftlägeskänslig" är valt, kan du ha olika poäng för "Ord" eller "ord".';
+$string['pluginname_help'] = 'Som svar på en fråga (som kan innehålla en bild) skriver den som svarar ett ord eller en kort fras. Det kan finnas flera möjliga korrekta svar, alla med olika betyg. Om "Skiftlägeskänslig" är valt, kan du ha olika poäng för "Ord" eller "ord".';
 $string['pluginnameadding'] = 'Lägga en kortsvarsfråga';
 $string['pluginnameediting'] = 'Redigera en kortsvarsfråga';
 $string['pluginnamesummary'] = 'Tillåter ett svar på ett eller några få ord som rättas genom att jämföra mot olika modell svar, som kan innehålla jokertecken.';
+$string['privacy:metadata'] = 'Pluginmodulen för frågetypen Kort svar gör det möjligt för frågeförfattare att ange standardalternativ som användarinställningar.';
+$string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråga.';
+$string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
+$string['privacy:preference:usecase'] = 'Om svaren ska vara skiftlägeskänsliga.';

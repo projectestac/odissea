@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'de', version '3.8'.
+ * Strings for component 'gradereport_singleview', language 'de', version '3.11'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -52,6 +52,7 @@ $string['override'] = 'Überschreiben';
 $string['overrideall'] = 'Alle Bewertungen überschreiben';
 $string['overridefor'] = 'Überschreiben für {$a}';
 $string['overridenone'] = 'Keine Bewertungen überschreiben';
+$string['overridenoneconfirm'] = 'Sie sind im Begriff, das Überschreiben von Bewertungen zu deaktivieren. Dadurch werden alle zuvor überschriebenen Bewertungen entfernt. Wollen Sie das Überschreiben von Bewertungen wirklich deaktivieren?';
 $string['pluginname'] = 'Einzelansicht';
 $string['privacy:metadata'] = 'Der Bericht zu Einzelbewertungen zeigt nur Daten, die an anderer Stelle gespeichert sind.';
 $string['save'] = 'Sichern';

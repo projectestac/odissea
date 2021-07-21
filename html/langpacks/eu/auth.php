@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'eu', version '3.8'.
+ * Strings for component 'auth', language 'eu', version '3.11'.
  *
  * @package     auth
  * @category    string
@@ -146,13 +146,13 @@ $string['privacy:metadata:userpref:loginlockout'] = 'Huts egindako saio-hasiera 
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Erabiltzaile-kontu bat blokeatu ezin daitekela adierazten du';
 $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Blokeatuta dagoenean, erabiltzaileak bere kontua desblokeatzeko erabili beharreko sekretua';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'CAPTCHA programa automaten gehiegikeriak ekiditeko da. Jarraitu argibideei pertsona zarela egiaztatzeko. Klikatzeko botoia izan daiteke, edo azaldutako karaktereak idatzi beharra edo aukeratzeko irudi multzeoa.
+$string['recaptcha_help'] = 'CAPTCHA automatizatutako programen gehiegikeriak ekiditeko da. Jarraitu argibideei pertsona bat zarela egiaztatzeko. Klikatu beharreko laukitxo bat izan daiteke, azaldutako karaktereak idatzi beharra edo aukeratzeko irudi multzoa.
 
 Ziur ez bazaude zein irudi diren, beste CAPTCHA bat eska dezakezu edo audio CAPTCHA bat.';
 $string['security_question'] = 'Segurtasun-galdera';
 $string['selfregistration'] = 'Auto-erregistroa';
 $string['selfregistration_help'] = 'Autentifikazio-plugin bat, posta elektronikoan oinarritutako auto-erregistroa adibidez, aukeratzen bada aukera ematen die ustezko erabiltzaileei beren buruak erregistratu eta kontuak sortzeko. Horrela, spam sortzaileek kontuak sor ditzakete eta foroetako mezuak, blog sarrerak, e.a. spamerako erabili. Arrisku horri aurre egiteko, auto-erregistroa desgaitu edo mugatu egin behar da <em>Baimendutako posta elektronikoko domeinuak </em> ezarpena erabilita.';
-$string['settingmigrationmismatch'] = 'Pluginaren ezarpenen izenak zuzentzerakoan desadostasuna aurkitu da. \'{$a->plugin}\' autentikazio-pluginak \'{$a->setting}\' ezarpena dauka \'{$a->legacy}\'(e)rako terminologia zaharrarekin eta \'{$a->current}\'(e)rako terminologia berriarekin. Azken balioa mantendu da. Baieztatu horrela izan behar duela, mesedez.';
+$string['settingmigrationmismatch'] = 'Pluginaren ezarpenen izenak zuzentzerakoan desadostasuna aurkitu da. \'{$a->plugin}\' autentifikazio-pluginak \'{$a->setting}\' ezarpena dauka \'{$a->legacy}\'(e)rako terminologia zaharrarekin eta \'{$a->current}\'(e)rako terminologia berriarekin. Azken balioa mantendu da. Baieztatu horrela izan behar duela, mesedez.';
 $string['sha1'] = 'SHA-1 hash-a';
 $string['showguestlogin'] = 'Bisitariek saioa hasteko botoia erakuts edo ezkuta dezakezu sarbide-orrian.';
 $string['stdchangepassword'] = 'Erabili pasahitza aldatzeko orri estandarra';

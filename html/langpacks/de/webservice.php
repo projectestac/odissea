@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'de', version '3.8'.
+ * Strings for component 'webservice', language 'de', version '3.11'.
  *
  * @package     webservice
  * @category    string
@@ -122,8 +122,7 @@ $string['loginrequired'] = 'Nur für angemeldete Nutzer/innen';
 $string['manageprotocols'] = 'Protokolle verwalten';
 $string['managetokens'] = 'Token verwalten';
 $string['missingcaps'] = 'Fehlende Rechte';
-$string['missingcaps_help'] = 'Liste der notwendigen, aber bisher fehlenden Rechte für die Nutzung des Webservices. Sie müssen diese Rechte an den Nutzer vergeben, damit er den Webservice nutzen kann.
-';
+$string['missingcaps_help'] = 'Liste der durch den Webservice festgelegten Funktionen, über die diese Person nicht verfügt. Einige Funktionen könnten ohne die entsprechenden Rechte nicht verfügbar sein.';
 $string['missingpassword'] = 'Fehlendes Passwort';
 $string['missingrequiredcapability'] = 'Das Recht \'{$a}\' ist notwendig.';
 $string['missingusername'] = 'Anmeldename fehlt';
@@ -136,7 +135,7 @@ $string['norequiredcapability'] = 'Keine notwendige Rechte';
 $string['notoken'] = 'Die Token-Liste ist leer.';
 $string['onesystemcontrolling'] = 'Externem System die Kontrolle erlauben';
 $string['onesystemcontrollingdescription'] = 'Die folgenden Schritte helfen Ihnen, den Webservice für ein externes System zu konfigurieren, das mit Moodle Daten austauscht. Dabei wird auch das Erzeugen des Token (Sicherheitsschlüssel) zur Authentifizierung gezeigt.';
-$string['onlyseecreatedtokens'] = 'Nur die Token, die Ihnen gehören oder die von Ihnen erzeugt wurden, können gesehen werden. Sie können weiterhin andere Token löschen.';
+$string['onlyseecreatedtokens'] = 'Sie können ausschließlich Tokens anzeigen, die Sie selber erstellt haben.';
 $string['operation'] = 'Vorgang';
 $string['optional'] = 'Optional';
 $string['passwordisexpired'] = 'Das Kennwort ist abgelaufen';
@@ -150,13 +149,13 @@ $string['privacy:metadata:serviceusers'] = 'Liste von Nutzer/innen, die einen be
 $string['privacy:metadata:serviceusers:iprestriction'] = 'IPs, die Service nicht nutzen dürfen';
 $string['privacy:metadata:serviceusers:timecreated'] = 'Erstellungsdatum des Datensatzes';
 $string['privacy:metadata:serviceusers:userid'] = 'ID des Nutzers';
-$string['privacy:metadata:serviceusers:validuntil'] = 'Datum zu dem Autorisierung endet';
+$string['privacy:metadata:serviceusers:validuntil'] = 'Datum, zu dem Autorisierung endet';
 $string['privacy:metadata:tokens'] = 'Aufzeichnung von Tokens zur Interaktion mit Moodle über Webservices oder Mobile-Apps.';
 $string['privacy:metadata:tokens:creatorid'] = 'ID des Nutzers, der Token erstellt hat';
 $string['privacy:metadata:tokens:iprestriction'] = 'IP, für die die Nutzung des Tokens beschränkt ist';
-$string['privacy:metadata:tokens:lastaccess'] = 'Datum an dem Token zuletzt genutzt wurde';
+$string['privacy:metadata:tokens:lastaccess'] = 'Datum, an dem das Token zuletzt genutzt wurde';
 $string['privacy:metadata:tokens:privatetoken'] = 'Ein vertrauliches Token wird gelegentlich verwendet, um bestimmte Vorgänge wie z.B. SSO zu validieren.';
-$string['privacy:metadata:tokens:timecreated'] = 'Datum an dem Token erstellt wurde';
+$string['privacy:metadata:tokens:timecreated'] = 'Datum, zu dem das Token erstellt wurde';
 $string['privacy:metadata:tokens:token'] = 'Nutzertoken';
 $string['privacy:metadata:tokens:tokentype'] = 'Tokentyp';
 $string['privacy:metadata:tokens:userid'] = 'ID des Nutzers, dem Token gehört';
@@ -190,7 +189,7 @@ $string['selectspecificuserdescription'] = 'Den Webservice-Nutzer als autorisier
 $string['service'] = 'Service';
 $string['servicehelpexplanation'] = 'Ein Webservice ist ein Set von Funktionen. Er kann von allen oder ausschließlich von speziell ausgewählten Nutzern verwendet werden. ';
 $string['servicename'] = 'Name des Service';
-$string['servicenotavailable'] = 'WebService ist nicht verfügbar (er existiert nicht oder ist gesperrt).';
+$string['servicenotavailable'] = 'Der WebService ist nicht verfügbar (er existiert nicht oder ist gesperrt).';
 $string['servicerequireslogin'] = 'Der Webservice ist nicht verfügbar. Die Session wurde ausgeloggt oder ist ungültig.';
 $string['servicesbuiltin'] = 'Integrierte Services';
 $string['servicescustom'] = 'Spezifische Services';
@@ -209,11 +208,14 @@ $string['testclientdescription'] = '* Der Webservice-TestClient <strong>führt d
 * Um zu prüfen, dass ein Nutzer auf manche Funktionen nicht zugreifen kann, geben Sie auch einige Funktionen an, die Sie nicht zugelassen haben.<br />
 * Um aussagekräftigere Fehlermeldungen zu bekommen, setzen Sie den Debugmodus auf <strong>{$a->mode}</strong> unter {$a->atag}.';
 $string['testwithtestclient'] = 'Service testen';
-$string['testwithtestclientdescription'] = 'Simulation des externen Zugriffs mit dem Webservice Testclient. Verwenden Sie ein aktiviertes Protokoll mit Token-Authentifizierung. <strong>Warnung: Die Funktionen, die Sie testen, WERDEN AUSGEFÜHRT. Seien Sie also vorsichtig, mit dem, was Sie testen.</strong>';
+$string['testwithtestclientdescription'] = 'Simulation des externen Zugriffs mit dem Webservice-Testclient. Verwenden Sie ein aktiviertes Protokoll mit Token-Authentifizierung. <strong>Warnung: Die Funktionen, die Sie testen, WERDEN AUSGEFÜHRT. Seien Sie also vorsichtig, mit dem, was Sie testen.</strong>';
 $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Token Authentifizierung';
 $string['tokencreatedbyadmin'] = 'Kann ausschließlich von Administrator/innen zurückgesetzt werden (*)';
 $string['tokencreator'] = 'Ersteller';
+$string['tokenfilter'] = 'Tokenfilter';
+$string['tokenfilterreset'] = 'Alle Token anzeigen';
+$string['tokenfiltersubmit'] = 'Nur passende Token anzeigen';
 $string['unknownoptionkey'] = 'Unbekannter optionaler Schlüssel ({$a})';
 $string['unnamedstringparam'] = 'Unbenannter Textparameter';
 $string['updateusersettings'] = 'Update';

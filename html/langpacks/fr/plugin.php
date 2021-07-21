@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'fr', version '3.8'.
+ * Strings for component 'plugin', language 'fr', version '3.11'.
  *
  * @package     plugin
  * @category    string
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Impossible de récupérer les données de m
 $string['filterall'] = 'Tout afficher';
 $string['filtercontribonly'] = 'N\'afficher que les plugins additionnels';
 $string['filterupdatesonly'] = 'Afficher seulement les éléments susceptibles de mise à jour';
+$string['incompatibleversion'] = 'Version de Moodle incompatible : {$a}';
 $string['isenabled'] = 'Activé ?';
 $string['misdepinfoplugin'] = 'Infos du plugin';
 $string['misdepinfoversion'] = 'Infos de version';
@@ -61,11 +62,13 @@ $string['misdepsavail'] = 'Dépendances manquantes disponibles';
 $string['misdepsunavail'] = 'Dépendances manquantes non disponibles';
 $string['misdepsunavaillist'] = 'Aucune version n\'a été trouvée pour les dépendances requises : {$a}.';
 $string['misdepsunknownlist'] = 'Manquant du dossier « plugins » : <strong>{$a}</strong>.';
+$string['moodlebranch'] = 'Moodle {$a->min} à {$a->max}';
 $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Aucun plugin de ce type n\'est installé';
 $string['notdownloadable'] = 'Impossible de télécharger le paquetage';
-$string['notdownloadable_help'] = 'Le paquetage ZIP contenant la mise à jour ne peut pas être téléchargé automatiquement. Veuillez vous référer à la documentation pour plus d\'aide.';
+$string['notdownloadable_help'] = 'Le paquetage ZIP contenant la mise à jour ne peut pas être téléchargé automatiquement.';
 $string['notes'] = 'Annotations';
+$string['notsupported'] = 'Le plugin n\'est peut-être pas compatible avec Moodle version {$a}';
 $string['notwritable'] = 'Impossible d\'écrire les fichiers du plugin';
 $string['notwritable_help'] = 'Les fichiers de plugin ne sont pas accessibles en écriture par le serveur web. Le serveur web doit avoir accès en écriture au dossier des plugins et à tout son contenu. L\'accès en écriture au dossier racine du plugin concerné peut être également nécessaire.';
 $string['otherplugin'] = '{$a->component}';
@@ -120,6 +123,8 @@ $string['type_cachestore'] = 'Entrepôt du cache';
 $string['type_cachestore_plural'] = 'Entrepôts du cache';
 $string['type_calendartype'] = 'Type de calendrier';
 $string['type_calendartype_plural'] = 'Types de calendriers';
+$string['type_contentbank'] = 'Banque de contenus';
+$string['type_contentbank_plural'] = 'Plugins de la banque de contenus';
 $string['type_coursereport'] = 'Rapport de cours';
 $string['type_coursereport_plural'] = 'Rapports du cours';
 $string['type_customfield'] = 'Champ personnalisé';
@@ -145,6 +150,8 @@ $string['type_gradereport'] = 'Rapport de carnet de notes';
 $string['type_gradereport_plural'] = 'Rapports de carnet de notes';
 $string['type_gradingform'] = 'Méthode d\'évaluation avancée';
 $string['type_gradingform_plural'] = 'Méthodes d\'évaluation avancées';
+$string['type_h5plib'] = 'Bibliothèque H5P';
+$string['type_h5plib_plural'] = 'Bibliothèques H5P';
 $string['type_local'] = 'Plugin local';
 $string['type_local_plural'] = 'Plugins locaux';
 $string['type_media'] = 'Lecteur de média';
@@ -157,6 +164,9 @@ $string['type_mnetservice'] = 'Service MNet';
 $string['type_mnetservice_plural'] = 'Services MNet';
 $string['type_mod'] = 'Module d\'activité';
 $string['type_mod_plural'] = 'Modules d\'activité';
+$string['type_paygw'] = 'Passerelle de paiement';
+$string['type_paygw_plural'] = 'Passerelles de paiement';
+$string['type_paygwmanage'] = 'Gérer les passerelles de paiement';
 $string['type_plagiarism'] = 'Plugin plagiat';
 $string['type_plagiarism_plural'] = 'Plugins de plagiat';
 $string['type_portfolio'] = 'Portfolio';

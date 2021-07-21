@@ -92,7 +92,7 @@ class core_question_renderer extends plugin_renderer_base {
             'id' => $qa->get_outer_question_div_unique_id(),
             'class' => implode(' ', array(
                 'que',
-                $qa->get_question()->qtype->name(),
+                $qa->get_question(false)->get_type_name(),
                 $qa->get_behaviour_name(),
                 $qa->get_state_class($options->correctness && $qa->has_marks()),
             ))
@@ -118,7 +118,7 @@ class core_question_renderer extends plugin_renderer_base {
                 array('class' => 'comment clearfix'));
         $output .= html_writer::nonempty_tag('div',
                 $this->response_history($qa, $behaviouroutput, $qtoutput, $options),
-                array('class' => 'history clearfix'));
+                array('class' => 'history clearfix border p-2'));
 
         $output .= html_writer::end_tag('div');
         $output .= html_writer::end_tag('div');
@@ -355,7 +355,7 @@ class core_question_renderer extends plugin_renderer_base {
         if ($params['returnurl'] instanceof moodle_url) {
             $params['returnurl'] = $params['returnurl']->out_as_local_url(false);
         }
-        $params['id'] = $qa->get_question()->id;
+        $params['id'] = $qa->get_question_id();
         $editurl = new moodle_url('/question/question.php', $params);
 
         return html_writer::tag('div', html_writer::link(
@@ -471,14 +471,10 @@ class core_question_renderer extends plugin_renderer_base {
 
             $restrictedqa = new question_attempt_with_restricted_history($qa, $i, null);
 
-            $user = new stdClass();
-            $user->id = $step->get_user_id();
-            $row = array(
-                $stepno,
-                userdate($step->get_timecreated(), get_string('strftimedatetimeshort')),
-                s($qa->summarise_action($step)),
-                $restrictedqa->get_state_string($options->correctness),
-            );
+            $row = [$stepno,
+                    userdate($step->get_timecreated(), get_string('strftimedatetimeshort')),
+                    s($qa->summarise_action($step)) . $this->action_author($step, $options),
+                    $restrictedqa->get_state_string($options->correctness)];
 
             if ($options->marks >= question_display_options::MARK_AND_MAX) {
                 $row[] = $qa->format_fraction_as_mark($step->get_fraction(), $options->markdp);
@@ -495,4 +491,20 @@ class core_question_renderer extends plugin_renderer_base {
                         array('class' => 'responsehistoryheader'));
     }
 
+    /**
+     * Action author's profile link.
+     *
+     * @param question_attempt_step $step The step.
+     * @param question_display_options $options The display options.
+     * @return string The link to user's profile.
+     */
+    protected function action_author(question_attempt_step $step, question_display_options $options): string {
+        if ($options->userinfoinhistory && $step->get_user_id() != $options->userinfoinhistory) {
+            return html_writer::link(
+                    new moodle_url('/user/view.php', ['id' => $step->get_user_id(), 'course' => $this->page->course->id]),
+                    $step->get_user_fullname(), ['class' => 'd-table-cell']);
+        } else {
+            return '';
+        }
+    }
 }

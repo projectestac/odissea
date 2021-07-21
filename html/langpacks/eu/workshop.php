@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'eu', version '3.8'.
+ * Strings for component 'workshop', language 'eu', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'Ebaluazioaren amaiera-data:';
+$string['activitydate:assessmentsclosed'] = 'Ebaluazioa itxita:';
+$string['activitydate:assessmentsopen'] = 'Ebaluazioaren hasiera-data:';
+$string['activitydate:assessmentsopened'] = 'Ebaluazioa zabalik:';
+$string['activitydate:submissionsclose'] = 'Bidalketen amaiera-data:';
+$string['activitydate:submissionsclosed'] = 'Bidalketak itxita:';
+$string['activitydate:submissionsopen'] = 'Bidalketen hasiera-data:';
+$string['activitydate:submissionsopened'] = 'Bidalketak zabalik:';
 $string['aggregategrades'] = 'Birkalkulatu kalifikazioak';
 $string['aggregation'] = 'Kalifikazioen agregazioa';
 $string['allocate'] = 'Esleitu bidalketak';
@@ -85,7 +93,7 @@ $string['clearaggregatedgrades'] = 'Garbitu kalifikazio batura guztiak';
 $string['clearaggregatedgrades_help'] = 'Berrezarri egingo dira bidalketetan batutako kalifikazioak eta baita ebaluazioetakoak ere. Kalifikazio hauek hasieratik berriz kalkulatu ditzakezu, kalifikazioen ebaluazio-fasean.';
 $string['clearaggregatedgradesconfirm'] = 'Ziur zaude kalkulatutako kalifikazioak eta ebaluazioaren kalifikazioak ezabatu nahi dituzula?';
 $string['clearassessments'] = 'Garbitu ebaluazioak';
-$string['clearassessments_help'] = 'Bidalketen eta ebaluazioen kalifikazioak berrabiaraziko dira. Ebaluazio-formularioen informazioa gorde egingo da, baina aztertzaile guztiek ebaluazio-formularioa berriro zabaldu eta gorde beharko dute emandako kalifikazioak berriro kalkulatzeko.';
+$string['clearassessments_help'] = 'Bidalketen eta ebaluazioen kalifikazioak berrabiaraziko dira. Ebaluazio-formularioen informazioa gorde egingo da, baina ebaluatzaile guztiek ebaluazio-formularioa berriro zabaldu eta gorde beharko dute emandako kalifikazioak berriro kalkulatzeko.';
 $string['clearassessmentsconfirm'] = 'Ziur zaude ebaluazioaren kalifikazio guztiak ezabatu nahi dituzula? Ezin izango duzu berriz informazio hau eskuratu, ebaluatzaileek esleitutako lanak berriz kalifikatu beharko dituzte.';
 $string['conclusion'] = 'Ondorioak';
 $string['conclusion_help'] = 'Erabiltzaileari ondorioak agertuko zaizkio zeregina amaitutakoan.';
@@ -203,7 +211,7 @@ $string['modulename_help'] = 'Tailerra jarduerak ikasleen lanak jaso, berrikusi 
 
 Ikasleak edozein eduki digital bidal dezake (fitxategiak), hala nola testu-fitxategiak, eta Moodlen zuzenean ere idatz dezake testu editorea erabilita.
 
-Bidalitako lanak irakasleak zehazturiko irizpide anitzeko ebaluazio-formulario bat erabilita kalifikatzen dira. Aurretik parekoen arteko ebaluazio prozesua eta ebaluazio formularioa ulertzeko praktikak egin daitezke irakasleak emandako adibiderako bidalketak erabilita, ebaluazio-erreferentzia batekin batera. Ikasleek kide baten edo gehiagoren ebaluazioa egiteko aukera du. Bidalketak eta berrikusketak anonimoak izan daitezke nahi izanez gero.
+Bidalitako lanak irakasleak zehazturiko irizpide anitzeko ebaluazio-formulario bat erabilita kalifikatzen dira. Aurretik parekoen arteko ebaluazio prozesua eta ebaluazio formularioa ulertzeko praktikak egin daitezke irakasleak emandako adibiderako bidalketak erabilita, ebaluazio-erreferentzia batekin batera. Ikasleek kide baten edo gehiagoren ebaluazioa egiteko aukera du. Bidalketak eta ebaluatzaileak anonimoak izan daitezke nahi izanez gero.
 
 Ikasleak bi kalifikazio lortuko ditu tailerra jardueran, bat bere bidalketarena eta bestea beste kideei eginiko kalifikazioarena. Biak kalifikatzailean gordetzen dira.';
 $string['modulenameplural'] = 'Tailerrak';
@@ -246,7 +254,7 @@ $string['pluginname'] = 'Tailerra';
 $string['prepareexamples'] = 'Prestatu adibiderako bidalketak';
 $string['previewassessmentform'] = 'Aurreikusi';
 $string['privacy:metadata:aggregatedgradinggrade'] = 'Tailer-jardueran erabiltzaileak egindako ebaluazio guztien kalifikazioen batura';
-$string['privacy:metadata:assessmentgrade'] = 'Ebaluazio honetan bidalketa honetarako iradokitutako kalifikazioen batura';
+$string['privacy:metadata:assessmentgrade'] = 'Ebaluazio honetan bidalketa honetarako iradokitako kalifikazioen batura';
 $string['privacy:metadata:assessmentgradinggrade'] = 'Ebaluazio hau emateagatiko kalifikazioa';
 $string['privacy:metadata:assessmentgradinggradeover'] = 'Ebaluazio hau emateagatiko kalifikazioarentzat eskuz baliogabetutako balioa';
 $string['privacy:metadata:assessmentid'] = 'Ebaluazioaren IDa';
@@ -262,6 +270,22 @@ $string['privacy:metadata:late'] = 'Bidalketa amaiera-data baino beranduago bida
 $string['privacy:metadata:peercomment'] = 'Bidalketa egin zuen erabiltzaileak emandako kalifikazioari egindako iruzkina';
 $string['privacy:metadata:peercommentformat'] = 'Emandako kalifikazioari egindako iruzkinaren testu-formatua';
 $string['privacy:metadata:preference:perpage'] = 'Erabiltzileak orri bakarrean ikusi nahi duen bidalketa-kopurua';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = '\'Adibiderako bidalketak\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = '\'Tailerraren bidalketen txostena\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = '\'Ebaluazio formularioa\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = '\'Tailerraren bidalketa-txostena\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = '\'Tailerraren tresna-kutxa\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = '\'Ondorioak\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = '\'Ebaluatu beharreko adibiderako bidalketak\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = '\'Ebaluatu beharreko adibiderako bidalketak\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = '\'Tailerraren kalifikazio-txostena\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = '\'Bidalketarako argibideak\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = '\'Ebaluaziorako argibideak\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = '\'Intro\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = '\'Feedback orokorra\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = '\'Zure bidalketa\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = '\'Argitaratutako bidalketak\' atalaren zabaltze/toleste egoera.';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = '\'Zure kalifikazioak\' atalaren zabaltze/toleste egoera.';
 $string['privacy:metadata:published'] = 'Behin tailerra itxi ondoren bidalketa partaide guztiei argitaratu behar den edo ez';
 $string['privacy:metadata:reviewerid'] = 'Ebaluazioa eman zuen erabiltzailearen IDa';
 $string['privacy:metadata:strategy'] = 'Gordetako balioak interpretatuko dituen kalifikazio-estrategia pluginaren izena';
@@ -322,7 +346,7 @@ $string['submissionattachment'] = 'Eranskina';
 $string['submissionby'] = '{$a} -ren bidalketa';
 $string['submissioncontent'] = 'Bidalketaren edukia';
 $string['submissiondeleteconfirm'] = 'Ziur zaude hurrengo bidalketa ezabatu nahi duzula?';
-$string['submissiondeleteconfirmassess'] = 'Ziur zaude hurrengo bidalketa ezabatu nahi duzula? Kontuan izan honek bidalketarekin lotutako {$a->count} ebaluazio ere ezabatuko dituela, eta honek berrikuslearen kalifikazioan eragina izan dezakela.';
+$string['submissiondeleteconfirmassess'] = 'Ziur zaude hurrengo bidalketa ezabatu nahi duzula? Kontuan izan honek bidalketarekin lotutako {$a->count} ebaluazio ere ezabatuko dituela, eta honek ebaluatzailearen kalifikazioan eragina izan dezakeela.';
 $string['submissionend'] = 'Bidalketetarako amaiera-data';
 $string['submissionendbeforestart'] = 'Bidalketetarako amaiera-data ezin da bidalketak egiteko hasiera baino lehenagokoa izan';
 $string['submissionenddatetime'] = 'Bidalketetarako amaiera-data: {$a->daydatetime} ({$a->distanceday})';
@@ -427,3 +451,4 @@ $string['workshopname'] = 'Tailerraren izena';
 $string['yourassessmentfor'] = '{$a}-(r)ako zure ebaluazioa';
 $string['yourgrades'] = 'Zure kalifikazioak';
 $string['yoursubmission'] = 'Zure bidalketak';
+$string['yoursubmissionwithassessments'] = 'Zure bidalketak ebaluazioekin';

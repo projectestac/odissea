@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_guest', language 'sv', version '3.8'.
+ * Strings for component 'enrol_guest', language 'sv', version '3.11'.
  *
  * @package     enrol_guest
  * @category    string
@@ -36,6 +36,7 @@ $string['passwordinvalidhint'] = 'Felaktigt gästlösenord, vänligen prova igen
 (Ledtråd: det börjar med \'{$a}\')';
 $string['pluginname'] = 'Tillåt gäster';
 $string['pluginname_desc'] = '"Tillåt gäster" medger bara temporärt tillträde till kurs, användaren registreras inte i kursen.';
+$string['privacy:metadata'] = 'Pluginmodulen för gäståtkomstregistrering lagrar inga personuppgifter.';
 $string['requirepassword'] = 'Kräv gästlösenord';
 $string['requirepassword_desc'] = 'Kräv gästlösenord i nya kurser och förhindra borttagande av gästlösenord i existerande kurser.';
 $string['showhint'] = 'Ge en ledtråd till gästlösenordet';

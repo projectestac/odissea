@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'pt', version '3.8'.
+ * Strings for component 'tool_generator', language 'pt', version '3.11'.
  *
  * @package     tool_generator
  * @category    string
@@ -26,23 +26,23 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['bigfile'] = 'Ficheiros grandes {$a}';
-$string['courseexplanation'] = 'Esta ferramenta cria testes-padrão da disciplina que incluem muitas secções, atividades e ficheiros.
+$string['courseexplanation'] = 'Esta ferramenta cria disciplinas padrão de teste que incluem muitas secções, atividades e ficheiros.
 
-Com isto pretende-se fornecer uma medida-padrão para verificar o nível de fiabilidade e desempenho de vários componentes do sistema (tais como efetuar e restaurar cópias de segurança).
+Com isto pretende-se fornecer um método padrão para testar o nível de fiabilidade e desempenho de vários componentes do sistema (tais como efetuar e restaurar cópias de segurança).
 
-Este teste é importante na medida em que já houve casos em que o sistema não funcionou (p. ex. numa disciplina com 1000 atividades).
+Este teste é importante na medida em que já houve casos em que o sistema não funcionou (por exemplo, numa disciplina com 1000 atividades).
 
 As disciplinas criadas com base nesta funcionalidade podem ocupar muito espaço da base de dados e do sistema de ficheiros (dezenas de gigabytes). Terá de eliminar as disciplinas (e aguardar que sejam executados vários processos de limpeza) para libertar esse espaço novamente.
 
-**Não use esta funcionalidade em produção. Use apenas num servidor de desenvolvimento.
+**Não use esta funcionalidade em sites em produção. Use apenas num servidor de desenvolvimento.
 
-(Para evitar um uso acidental, esta funcionalidade encontra-se desativada, a não ser que tenha selecionado também o nível PROGRAMADOR em Mensagem de erro.)';
-$string['coursesize_0'] = 'XS (aprox. 10KB; criada em aprox. 1 segundos)';
+(Para evitar um uso acidental, esta funcionalidade encontra-se desativada, a não ser que selecione o nível PROGRAMADOR nas Mensagens de erro.)';
+$string['coursesize_0'] = 'XS (aprox. 10KB; criada em aprox. 1 segundo)';
 $string['coursesize_1'] = 'S (aprox. 10MB; criada em aprox. 30 segundos)';
-$string['coursesize_2'] = 'M (aprox. 100MB; criado em aprox. 2 minutos)';
-$string['coursesize_3'] = 'L (aprox. 1GB; criado em aprox. 30 minutos)';
-$string['coursesize_4'] = 'XL (aprox. 10GB; criado em aprox. 2 horas)';
-$string['coursesize_5'] = 'XXL (aprox. 20GB; criado em aprox. 4 horas)';
+$string['coursesize_2'] = 'M (aprox. 100MB; criada em aprox. 2 minutos)';
+$string['coursesize_3'] = 'L (aprox. 1GB; criada em aprox. 30 minutos)';
+$string['coursesize_4'] = 'XL (aprox. 10GB; criada em aprox. 2 horas)';
+$string['coursesize_5'] = 'XXL (aprox. 20GB; criada em aprox. 4 horas)';
 $string['coursewithoutusers'] = 'A disciplina selecionada não tem utilizadores';
 $string['createcourse'] = 'Criar disciplina';
 $string['createtestplan'] = 'Criar plano de teste';
@@ -56,7 +56,7 @@ $string['error_noforuminstances'] = 'A disciplina selecionada não contém inst�
 $string['error_noforumreplies'] = 'A disciplina selecionada não contém respostas do fórum';
 $string['error_nonexistingcourse'] = 'A disciplina especificada não existe';
 $string['error_nopageinstances'] = 'A disciplina selecionada não contém instâncias do módulo Página';
-$string['error_notdebugging'] = 'Não está disponível neste servidor porque a depuração (mensagens de erro) não está definido para o Programador.';
+$string['error_notdebugging'] = 'Não está disponível neste servidor porque a depuração (mensagens de erro) não está definida como PROGRAMADOR.';
 $string['error_nouserspassword'] = 'Tem de definir $CFG->tool_generator_users_password em \'config.php\' para gerar o plano de teste';
 $string['fullname'] = 'Testar disciplina: {$a->size}';
 $string['maketestcourse'] = 'Criar disciplina experimental';

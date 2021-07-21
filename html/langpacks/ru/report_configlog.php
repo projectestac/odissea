@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_configlog', language 'ru', version '3.8'.
+ * Strings for component 'report_configlog', language 'ru', version '3.11'.
  *
  * @package     report_configlog
  * @category    string
@@ -26,7 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configlog'] = 'Изменения конфигурации';
+$string['datefrom'] = 'Дата, с';
+$string['dateto'] = 'Дата, по';
 $string['plugin'] = 'Плагин';
 $string['pluginname'] = 'Изменения конфигурации';
+$string['privacy:metadata'] = 'Плагин изменений конфигурации не хранит никаких личных данных.';
 $string['setting'] = 'Параметр';
 $string['timemodified'] = 'Дата';
+$string['user'] = 'Пользователь';
+$string['user_help'] = 'Поиск по имени или фамилии пользователя';
+$string['value'] = 'Значение';
+$string['value_help'] = 'Поиск по новому или исходному значению конфигурации';
+$string['valuenew'] = 'Новое значение';
+$string['valueold'] = 'Исходное значение';

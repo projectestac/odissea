@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_recordrtc', language 'fr', version '3.8'.
+ * Strings for component 'atto_recordrtc', language 'fr', version '3.11'.
  *
  * @package     atto_recordrtc
  * @category    string
@@ -72,7 +72,7 @@ $string['timelimit_desc'] = 'Durée maximale permise pour les enregistrements au
 $string['uploadaborted'] = 'Dépôt annulé :';
 $string['uploadfailed'] = 'Échec du dépôt :';
 $string['uploadfailed404'] = 'Échec du dépôt : le fichier est trop volumineux';
-$string['uploadprogress'] = 'Dépôt terminé';
+$string['uploadprogress'] = 'terminé';
 $string['videobitrate'] = 'Débit vidéo';
 $string['videobitrate_desc'] = 'Qualité de l\'enregistrement vidéo (plus le nombre est grand, meilleure est la qualité)';
 $string['videortc'] = 'Enregistrer une vidéo';

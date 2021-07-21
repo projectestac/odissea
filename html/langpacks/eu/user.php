@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'eu', version '3.8'.
+ * Strings for component 'user', language 'eu', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Gehitu baldintza';
+$string['adverbfor_and'] = 'eta';
+$string['adverbfor_andnot'] = 'eta';
+$string['adverbfor_or'] = 'edo';
+$string['applyfilters'] = 'Aplikatu iragazkiak';
+$string['clearfilterrow'] = 'Kendu iragazki-errenkada';
+$string['clearfilters'] = 'Garbitu iragazkiak';
+$string['clearfilterselection'] = 'Kendu "{$a}" iragazkitik';
+$string['countparticipantsfound'] = '{$a} partaide aurkitu dira';
+$string['filterbykeyword'] = 'hitz-gakoa';
+$string['filterrowlegend'] = 'Iragazi {$a}';
+$string['filtersetmatchdescription'] = 'Nola erabili beharko lirateke iragazkien konbinazioak';
+$string['filtertype'] = 'Iragazki-mota';
+$string['match'] = 'Aurkitu';
+$string['matchofthefollowing'] = 'hurrengoetatik:';
+$string['moodlenetprofile'] = 'MoodleNet profila';
+$string['moodlenetprofile_help'] = 'Eremu hau zure MoodleNet profila Moodlekin lotzeko da. WebFinger-ekin bateragarria den URI bat espero da.';
+$string['placeholdertype'] = 'Idatzi...';
+$string['placeholdertypeorselect'] = 'Idatzi edo aukeratu...';
 $string['privacy:courserequestpath'] = 'Eskatutako ikastaroak';
 $string['privacy:descriptionpath'] = 'Profilaren deskribapena';
 $string['privacy:devicespath'] = 'Erabiltzailearen gailuak';
@@ -33,7 +52,7 @@ $string['privacy:lastaccesspath'] = 'Azken sarrerak ikastaroetara';
 $string['privacy:metadata:address'] = 'Erabiltzailearen helbidea.';
 $string['privacy:metadata:aim'] = 'Erabiltzailearen AIM identifikatzailea';
 $string['privacy:metadata:alternatename'] = 'Erabiltzailearentzako ordezko izena.';
-$string['privacy:metadata:appid'] = 'App-aren IDa, normalean com.moodle.moodlemobile moduko zerbait';
+$string['privacy:metadata:appid'] = 'Aplikazioaren IDa, normalean com.moodle.moodlemobile moduko zerbait';
 $string['privacy:metadata:auth'] = 'Erabiltzaile-erregistro honetarako erabilitako autentifikazio-plugina.';
 $string['privacy:metadata:autosubscribe'] = 'Erabiltzaileak idazten duen foroetara automatikoki harpidetu behar den adierazteko hobespena.';
 $string['privacy:metadata:calendartype'] = 'Erabili beharreko egutegi motaren erabiltzaile-hobespena.';
@@ -72,11 +91,12 @@ $string['privacy:metadata:lastip'] = 'Erabitzailearen azken IP helbidea.';
 $string['privacy:metadata:lastlogin'] = 'Erabiltzaile honen azken saio-hasiera.';
 $string['privacy:metadata:lastname'] = 'Erabiltzailearen abizena.';
 $string['privacy:metadata:lastnamephonetic'] = 'Erabiltzailearen abizenaren inguruko xehetasun fonetikoak.';
-$string['privacy:metadata:maildigest'] = 'Erabiltzaile honentzako posta elektroniko bidezko banaketa-aukeraren ezarpena.';
+$string['privacy:metadata:maildigest'] = 'Erabiltzaile honentzako posta elektroniko bidezko laburpen-mezuen ezarpena.';
 $string['privacy:metadata:maildisplay'] = 'Erabiltzailearen helbide elektronikoa beste erabiltzaileei erakustekoaren inguruko hobespena.';
 $string['privacy:metadata:middlename'] = 'Erabiltzailearen bigarren izena';
 $string['privacy:metadata:mnethostid'] = 'MNet ostalariaren identifikatzailea, erabiliz gero';
 $string['privacy:metadata:model'] = 'Gailuaren izena, occam edo iPhone...';
+$string['privacy:metadata:moodlenetprofile'] = 'Erabiltzailearen MoodleNet profila';
 $string['privacy:metadata:msn'] = 'Erabiltzailearen MSN identifikatzailea';
 $string['privacy:metadata:my_pages'] = 'Erabiltzailearen orriak - aginte-panela eta profila. Taula honetan ez da datu pertsonalik gordetzen eta soilik erabiltzaileen aginte-paneletako blokeak estekatzeko erabiltzen da.';
 $string['privacy:metadata:my_pages:name'] = 'Orriaren izena';
@@ -102,7 +122,7 @@ $string['privacy:metadata:skype'] = 'Erabiltzailearen Skype identifikatzailea';
 $string['privacy:metadata:state'] = 'Zerok saio normala adierazten du';
 $string['privacy:metadata:summary'] = 'Ikastaroaren deskribapena.';
 $string['privacy:metadata:suspended'] = 'Erabiltzailea etenda dagoen adierazteko marka.';
-$string['privacy:metadata:theme'] = 'Erakutsi beharreko itxuraren erabiltzaile-hobespena.';
+$string['privacy:metadata:theme'] = 'Erakutsi beharreko azalaren erabiltzaile-hobespena.';
 $string['privacy:metadata:timeaccess'] = 'Ikastaroaren sarrera-unea.';
 $string['privacy:metadata:timecreated'] = 'Erregistro hau sortu zeneko unea.';
 $string['privacy:metadata:timemodified'] = 'Erregistroa aldatu zeneko unea';
@@ -128,6 +148,7 @@ $string['privacy:passwordresetpath'] = 'Pasahitzaren berrezartze kopurua';
 $string['privacy:privatefilespath'] = 'Fitxategi pribatuak';
 $string['privacy:profileimagespath'] = 'Profileko irudiak';
 $string['privacy:sessionpath'] = 'Saioaren datuak';
+$string['selectfiltertype'] = 'Aukeratu';
 $string['target:upcomingactivitiesdue'] = 'Datozen jarduera-amaierak';
 $string['target:upcomingactivitiesdue_help'] = 'Helburu honek datozen jarduera-amaierentzako gogorarazpenak sortzen ditu.';
 $string['target:upcomingactivitiesdueinfo'] = 'Aurreikuspen guztietako programatutako jarduerak hemen erakusten dira. Ikasle hauek aurreikuspen hauek zuzenean jaso dituzte.';

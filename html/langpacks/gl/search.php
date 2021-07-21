@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'search', language 'gl', version '3.8'.
+ * Strings for component 'search', language 'gl', version '3.11'.
  *
  * @package     search
  * @category    string
@@ -79,9 +79,9 @@ $string['fromtime'] = 'Modificado após';
 $string['globalsearch'] = 'Busca global';
 $string['globalsearchdisabled'] = 'Non está activada a busca global.';
 $string['gradualreindex'] = 'Volver indexar {$a} de xeito gradual';
-$string['gradualreindex_confirm'] = 'Confirma que quere volver indexar {$a}? Isto pode levar moito tempo, aínda que os datos existentes permanecerán dispoñibles durante o reindexado.';
+$string['gradualreindex_confirm'] = 'Confirma que quere volver indexar {$a}? Isto pode levar moito tempo, aínda que os datos existentes permanecerán dispoñíbeis durante o reindexado.';
 $string['gradualreindex_queued'] = 'Solicitouse o reindexado para {$a->name} en ({$a->count} contextos). Este re-indexado será efectuada polo traballo programado «Indexado de busca global».';
-$string['incourse'] = 'en curso {$a}';
+$string['incourse'] = 'no curso {$a}';
 $string['index'] = 'Índice';
 $string['indexwhendisabledfullnotice'] = 'Actualmente non se permite a indexación cando a busca estea desactivada. Para activar isto, consulte o axuste <a href="{$a->url}">searchindexwhendisabled</a>.';
 $string['indexwhendisabledshortnotice'] = 'A indexación non está dispoñíbel.';
@@ -116,13 +116,13 @@ $string['score'] = 'Puntuación';
 $string['search'] = 'Buscar';
 $string['search:course'] = 'Cursos';
 $string['search:customfield'] = 'Campos personalizados do curso';
-$string['search:message_received'] = 'Mensaxes - recibidas';
-$string['search:message_sent'] = 'Mensaxes - enviadas';
+$string['search:message_received'] = 'Mensaxes, recibidas';
+$string['search:message_sent'] = 'Mensaxes, enviadas';
 $string['search:mycourse'] = 'Os meus cursos';
 $string['search:section'] = 'Seccións do curso';
 $string['search:user'] = 'Usuarios';
 $string['searcharea'] = 'Área de buscas';
-$string['searchareacategories'] = 'Categorías de área de buscas';
+$string['searchareacategories'] = 'Categorías da área de busca';
 $string['searching'] = 'Buscando en ...';
 $string['searchnotpermitted'] = 'Non está autorizado para facer unha busca';
 $string['searchsetupdescription'] = 'Os pasos seguintes axudaranlle a configurar a busca global en Moodle.';
@@ -140,6 +140,6 @@ $string['totalsize'] = 'Tamaño total';
 $string['totime'] = 'Modificado antes de';
 $string['type'] = 'Tipo';
 $string['uncompleteindexingerror'] = 'O indexado non foi satisfactorio, inícieo de novo.';
-$string['versiontoolow'] = 'Sentímolo, a busca global require PHP 5.0.0 ou posterior';
+$string['versiontoolow'] = 'Vaites, a busca global require PHP 5.0.0 ou posterior';
 $string['viewresultincontext'] = 'Ver este resultado en contexto';
 $string['wordsintitle'] = 'Palabras no título';

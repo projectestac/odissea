@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'nl', version '3.8'.
+ * Strings for component 'repository_googledocs', language 'nl', version '3.11'.
  *
  * @package     repository_googledocs
  * @category    string
@@ -38,6 +38,7 @@ $string['importformat'] = 'Configureer de standaard importformaten van Google';
 $string['internal'] = 'Intern (bestanden bewaard in Moodle)';
 $string['issuer'] = 'OAuth 2 service';
 $string['issuer_help'] = 'Selecteer de OAuth 2 service die geconfigureerd is om met de Google Drive API te communiceren. Als de service niet bestaat, dan zul je die moeten maken.';
+$string['mydrive'] = 'Mijn Drive';
 $string['oauth2serviceslink'] = '<a href="{$a}" title="Link naar OAuth 2 service configuratie">OAuth 2 service configuratie</a>';
 $string['owner'] = 'Eigenaar:  {$a}';
 $string['pluginname'] = 'Google Drive';
@@ -45,7 +46,8 @@ $string['presentationformat'] = 'Standaard importformaat presentaties';
 $string['privacy:metadata:repository_googledocs'] = 'De Google Drive opslagruimte-plugin bewaart geen persoonlijke gegevens, maar stuurt deze door van Moodle naar het externe systeem.';
 $string['privacy:metadata:repository_googledocs:email'] = 'Het e-mailadres van de gebruiker van de Google drive opslagruimte.';
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'De zoektekst van de gebruiker van de Google drive opslagruimte.';
-$string['searchfor'] = 'Zoek naar  {$a}';
+$string['searchfor'] = 'Zoekresultaten voor:';
 $string['servicenotenabled'] = 'Toegang niet geconfigureerd. Zorg ervoor dat de service \'Drive API\' ingeschakeld is.';
+$string['shareddrives'] = 'Gedeelde Drives';
 $string['spreadsheetformat'] = 'Standaard importformaat rekenblad';
 $string['supportedreturntypes'] = 'Ondersteunde bestanden';

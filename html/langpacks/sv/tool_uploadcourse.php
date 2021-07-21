@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'sv', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'sv', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -39,7 +39,7 @@ $string['cannotreadbackupfile'] = 'Kan inte läsa filen med säkerhetskopian';
 $string['cannotrenamecoursenotexist'] = 'Kan inte döpa om en kurs som inte finns';
 $string['cannotrenameidnumberconflict'] = 'Kan inte byta namn på kursen; ID-numret står i konflikt med en befintlig kurs';
 $string['cannotrenameshortnamealreadyinuse'] = 'Kan inte döpa om kursen; kortnamnet används redan';
-$string['cannotupdatefrontpage'] = 'Det är inte tillåtet att ändra framsidan';
+$string['cannotupdatefrontpage'] = 'Det är inte tillåtet att ändra förstasidan';
 $string['canonlyrenameinupdatemode'] = 'Kan endast döpa om en kurs när uppdateringar tillåts';
 $string['canonlyresetcourseinupdatemode'] = 'Kan bara återställa en kurs i uppdateringsläge';
 $string['couldnotresolvecatgorybyid'] = 'Kunde inte hitta kategorin via ID';
@@ -77,9 +77,15 @@ $string['csvdelimiter'] = 'CSV-avgränsare';
 $string['csvdelimiter_help'] = 'CSV-avgränsare som används i CSV-filen.';
 $string['csvfileerror'] = 'Det är problem med CSV-filens format. Vänligen kontrollera att antal rubriker och kolumner stämmer överens samt att filens CSV-avgränsare och teckenkodning är korrekt: {$a}';
 $string['csvline'] = 'Rad';
+$string['customfieldinvalid'] = 'Anpassat fält \'{$a}\' är tomt eller innehåller ogiltig data';
 $string['defaultvalues'] = 'Standardvärden för kurs';
+$string['defaultvaluescustomfieldcategory'] = 'Standardvärden för kurs \'{$a}\'';
+$string['downloadcontentnotallowed'] = 'Konfigurering av kursnedladdning ej tillåten';
 $string['encoding'] = 'Teckenkodning';
 $string['encoding_help'] = 'CSV-filens teckenkodning.';
+$string['errorcannotcreateorupdateenrolment'] = 'Kan inte skapa eller uppdatera registreringsmetod \'{$a}\'';
+$string['errorcannotdeleteenrolment'] = 'Kan inte ta bort registreringsmetod \'{$a}\'';
+$string['errorcannotdisableenrolment'] = 'Kan inte inaktivera registreringsmetod \'{$a}\'';
 $string['errorwhiledeletingcourse'] = 'Ett fel inträffade då kursen togs bort';
 $string['errorwhilerestoringcourse'] = 'Ett fel inträffade då kursen återställdes';
 $string['generatedshortnamealreadyinuse'] = 'Det genererade kortnamnet används redan';
@@ -90,6 +96,7 @@ $string['importoptions'] = 'Alternativ för import';
 $string['invalidbackupfile'] = 'Ogiltig fil för säkerhetskopia';
 $string['invalidcourseformat'] = 'Ogiltigt kursformat';
 $string['invalidcsvfile'] = 'Ogiltig CSV-fil';
+$string['invaliddownloadcontent'] = 'Ogiltigt värde för kursnedladdning';
 $string['invalidencoding'] = 'Ogiltig teckenkodning';
 $string['invalideupdatemode'] = 'Ogiltig uppdateringsmetod vald';
 $string['invalidfullnametoolong'] = 'Antalet tecken i fältet för fullständigt namn är begränsat till {$a}';
@@ -100,17 +107,17 @@ $string['invalidshortnametoolong'] = 'Antal tecken i fältet för kortnamn är b
 $string['invalidvisibilitymode'] = 'Ogiltigt läge för synlighet';
 $string['missingmandatoryfields'] = 'Saknade värden i obligatoriska fält: {$a}';
 $string['missingshortnamenotemplate'] = 'Kortnamn saknas och mall för kortnamn inte vald';
-$string['mode'] = 'Uppladningsläge';
+$string['mode'] = 'Uppladdningsläge';
 $string['mode_help'] = 'Detta tillåter att du kan ange om kurser kan skapas och/eller uppdateras.';
 $string['nochanges'] = 'Inga förändringar';
-$string['pluginname'] = 'Uppladning av kurs';
+$string['pluginname'] = 'Uppladdning av kurs';
 $string['preview'] = 'Förhandsgranskning';
-$string['privacy:metadata'] = 'Insticksmodulen för uppladdning av kurser sparar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen för uppladdning av kurser sparar ingen personlig information.';
 $string['reset'] = 'Återställ kurs efter uppladdning';
 $string['reset_help'] = 'Anger huruvida kursen ska återställas efter att den skapats/uppdaterats.';
 $string['restoreafterimport'] = 'Återställ efter import';
 $string['result'] = 'Resultat';
-$string['rowpreviewnum'] = 'Antal rader vid förhandsgranskning';
+$string['rowpreviewnum'] = 'Antal rader i förhandsgranskning';
 $string['rowpreviewnum_help'] = 'Antal rader från CSV-filen som ska visas på sidan för förhandsgranskning. Detta alternativ används för att begränsa storleken på sidan för förhandsgranskning.';
 $string['shortnametemplate'] = 'Mall för generering av kortnamn';
 $string['shortnametemplate_help'] = 'Kursens kortnamn syns i navigeringsmenyerna. Du kan använda mallsyntax (%f = fullname, %i = idnumber) eller ange ett startvärde som sedan räknas upp.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'ru', version '3.8'.
+ * Strings for component 'qtype_multianswer', language 'ru', version '3.11'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -30,6 +30,7 @@ $string['confirmsave'] = 'Подтверждение перед сохранен
 $string['correctanswer'] = 'Правильный ответ';
 $string['correctanswerandfeedback'] = 'Правильный ответ и отзыв';
 $string['decodeverifyquestiontext'] = 'Декодировать и проверить текст вопроса';
+$string['invalidmultianswerquestion'] = 'Неверные встроенные ответы в вопросе ({$a}).';
 $string['layout'] = 'Расположение';
 $string['layouthorizontal'] = 'Горизонтальный ряд переключателей';
 $string['layoutmultiple_horizontal'] = 'Горизонтальный ряд флажков';

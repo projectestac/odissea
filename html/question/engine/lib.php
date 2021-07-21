@@ -432,7 +432,7 @@ abstract class question_engine {
     public static function get_all_response_file_areas() {
         $variables = array();
         foreach (question_bank::get_all_qtypes() as $qtype) {
-            $variables += $qtype->response_file_areas();
+            $variables = array_merge($variables, $qtype->response_file_areas());
         }
 
         $areas = array();
@@ -476,7 +476,10 @@ abstract class question_engine {
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class question_display_options {
-    /**#@+ @var integer named constants for the values that most of the options take. */
+    /**#@+
+     * @var integer named constants for the values that most of the options take.
+     */
+    const SHOW_ALL = -1;
     const HIDDEN = 0;
     const VISIBLE = 1;
     const EDITABLE = 2;
@@ -632,6 +635,11 @@ class question_display_options {
     public $context;
 
     /**
+     * @var int The option to show the action author in the response history.
+     */
+    public $userinfoinhistory = self::HIDDEN;
+
+    /**
      * Set all the feedback-related fields {@link $feedback}, {@link generalfeedback},
      * {@link rightanswer} and {@link manualcomment} to
      * {@link question_display_options::HIDDEN}.
@@ -696,7 +704,7 @@ abstract class question_flags {
     public static function get_postdata(question_attempt $qa) {
         $qaid = $qa->get_database_id();
         $qubaid = $qa->get_usage_id();
-        $qid = $qa->get_question()->id;
+        $qid = $qa->get_question_id();
         $slot = $qa->get_slot();
         $checksum = self::get_toggle_checksum($qubaid, $qid, $qaid, $slot);
         return "qaid={$qaid}&qubaid={$qubaid}&qid={$qid}&slot={$slot}&checksum={$checksum}&sesskey=" .

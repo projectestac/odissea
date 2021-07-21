@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_health', language 'ru', version '3.8'.
+ * Strings for component 'tool_health', language 'ru', version '3.11'.
  *
  * @package     tool_health
  * @category    string
@@ -31,3 +31,4 @@ $string['healthproblemsolution'] = 'Решение проблемы с сост�
 $string['healthreturntomain'] = 'Продолжить';
 $string['healthsolution'] = 'Решение';
 $string['pluginname'] = 'Центр контроля состояния';
+$string['privacy:metadata'] = 'Плагин Центр контроля состояния не хранит никаких личных данных.';

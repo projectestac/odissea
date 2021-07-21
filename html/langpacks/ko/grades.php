@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ko', version '3.8'.
+ * Strings for component 'grades', language 'ko', version '3.11'.
  *
  * @package     grades
  * @category    string
@@ -115,6 +115,7 @@ $string['combo'] = '탭 및 펼침메뉴';
 $string['compact'] = '간결한';
 $string['componentcontrolsvisibility'] = '이 채점 항목이 숨겨지는 여부는 활동 설정에서 제어됩니다.';
 $string['contract'] = '계약 범주';
+$string['contributiontocoursetotal'] = '코스 전체에 대한 기여도';
 $string['controls'] = '제어';
 $string['courseavg'] = '강좌 평균';
 $string['coursegradecategory'] = '강좌 성적 범주';

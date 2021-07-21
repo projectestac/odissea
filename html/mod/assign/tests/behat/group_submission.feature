@@ -168,7 +168,7 @@ Feature: Group assignment submissions
       | assignsubmission_onlinetext_enabled | 1 |
       | assignsubmission_file_enabled | 0 |
       | Students submit in groups | Yes |
-      | Attempts reopened | Manually |
+      | Additional attempts | Manually |
       | Group mode | No groups |
       | Require group to make submission | No |
     And I log out
@@ -189,11 +189,9 @@ Feature: Group assignment submissions
       | Grade out of 100 | 50.0 |
       | Apply grades and feedback to entire group | 1 |
     And I press "Save changes"
-    And I press "Ok"
     And I set the following fields to these values:
       | Allow another attempt | 1 |
     And I press "Save changes"
-    And I press "Ok"
     When I am on "Course 1" course homepage
     And I follow "Test assignment name"
     And I navigate to "View all submissions" in current page administration
@@ -240,17 +238,25 @@ Feature: Group assignment submissions
       | grouping | group |
       | GG1      | G1    |
       | GG1      | G2    |
+    And the following "activity" exists:
+      | activity                            | assign                      |
+      | course                              | C1                          |
+      | idnumber                            | 0001                        |
+      | name                                | Test assignment name        |
+      | intro                               | Test assignment description |
+      | section                             | 1                           |
+      | assignsubmission_onlinetext_enabled | 1                           |
+      | assignsubmission_file_enabled       | 0                           |
     And I log in as "admin"
     And I am on "Course 1" course homepage with editing mode on
-    And I add a "Assignment" to section "1" and I fill the form with:
-      | Assignment name | Test assignment name |
-      | Description | Test assignment description |
-      | assignsubmission_onlinetext_enabled | 1 |
-      | assignsubmission_file_enabled | 0 |
+    And I follow "Test assignment name"
+    And I navigate to "Edit settings" in current page administration
+    And I set the following fields to these values:
       | Students submit in groups | Yes |
       | Grouping for student groups | Grouping 1 |
       | Group mode | Separate groups |
       | Require group to make submission | No |
+    And I press "Save and return to course"
     And I log out
     And I log in as "student1"
     And I am on "Course 1" course homepage
@@ -259,6 +265,8 @@ Feature: Group assignment submissions
     And I set the following fields to these values:
       | Online text | I'm the student's 1 submission |
     And I press "Save changes"
+    And I press "Submit assignment"
+    And I press "Continue"
     And I log out
     And I log in as "student3"
     And I am on "Course 1" course homepage
@@ -267,6 +275,8 @@ Feature: Group assignment submissions
     And I set the following fields to these values:
       | Online text | I'm the student's 3 submission |
     And I press "Save changes"
+    And I press "Submit assignment"
+    And I press "Continue"
     And I log out
     And I log in as "student5"
     And I am on "Course 1" course homepage
@@ -275,6 +285,8 @@ Feature: Group assignment submissions
     And I set the following fields to these values:
       | Online text | I'm the student's 5 submission |
     And I press "Save changes"
+    And I press "Submit assignment"
+    And I press "Continue"
     And I log out
     And I log in as "admin"
     And I am on "Course 1" course homepage
@@ -315,18 +327,26 @@ Feature: Group assignment submissions
       | user | group |
       | student1 | G1 |
       | student2 | G1 |
+    And the following "activity" exists:
+      | activity                            | assign                      |
+      | course                              | C1                          |
+      | idnumber                            | 0001                        |
+      | name                                | Test assignment name        |
+      | intro                               | Test assignment description |
+      | section                             | 1                           |
+      | assignsubmission_onlinetext_enabled | 1                           |
+      | assignsubmission_file_enabled       | 0                           |
     And I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
-    And I add a "Assignment" to section "1" and I fill the form with:
-      | Assignment name | Test assignment name |
-      | Description | Test assignment description |
-      | assignsubmission_onlinetext_enabled | 1 |
-      | assignsubmission_file_enabled | 0 |
+    And I follow "Test assignment name"
+    And I navigate to "Edit settings" in current page administration
+    And I set the following fields to these values:
       | Require students to click the submit button | Yes |
       | Students submit in groups | Yes |
       | Group mode | No groups |
       | Require group to make submission | No |
       | Require all group members submit | No |
+    And I press "Save and return to course"
     And I am on "Course 1" course homepage
     And I add the "Activities" block
     And I log out

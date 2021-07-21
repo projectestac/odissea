@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'el', version '3.8'.
+ * Strings for component 'folder', language 'el', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -32,13 +32,15 @@ $string['display_help'] = 'Εάν επιλέξετε να εμφανίσετε �
 $string['displayinline'] = 'Ένθετα (inline) σε μια σελίδα μαθημάτων';
 $string['displaypage'] = 'Σε ξεχωριστή σελίδα';
 $string['dnduploadmakefolder'] = 'Αποσυμπίεση αρχείων και δημιουργία φακέλου';
-$string['downloadfolder'] = 'Φάκελος λήψεων';
+$string['downloadfolder'] = 'Λήψη φακέλου';
 $string['eventallfilesdownloaded'] = 'Ολοκληρώθηκε η λήψη του φακέλου σε συμπιεσμένο (zip) αρχείο';
 $string['eventfolderupdated'] = 'Ο φάκελος ενημερώθηκε';
 $string['folder:addinstance'] = 'Προσθήκη νέου φακέλου';
 $string['folder:managefiles'] = 'Διαχείριση αρχείων στο άρθρωμα φακέλου';
 $string['folder:view'] = 'Εμφάνιση περιεχομένου φακέλου';
 $string['foldercontent'] = 'Αρχεία και υποφάκελοι';
+$string['forcedownload'] = 'Επιβολή λήψης αρχείων';
+$string['forcedownload_help'] = 'Εάν ορισμένα αρχεία, όπως εικόνες ή αρχεία HTML, θα πρέπει να εμφανίζονται στον περιηγητή αντί να γίνεται λήψη τους. Σημειώστε ότι για λόγους ασφαλείας, η ρύθμιση θα πρέπει να ξετικαριστεί μόνο εάν όλοι οι χρήστες με δυνατότητα διαχείρισης αρχείων στο φάκελο είναι αξιόπιστοι χρήστες.';
 $string['indicator:cognitivedepth'] = 'Βάθος κατανόησης Φακέλου';
 $string['indicator:cognitivedepth_help'] = 'Αυτός ο δείκτης βασίζεται στο βάθος κατανόησης που επιτεύχθηκε από τον μαθητή σε έναν πόρο Φακέλου.';
 $string['indicator:cognitivedepthdef'] = 'Βάθος κατανόησης Φακέλου';

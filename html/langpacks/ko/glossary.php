@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ko', version '3.8'.
+ * Strings for component 'glossary', language 'ko', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -302,6 +302,7 @@ $string['sortchronogically'] = '연대표 순으로 정렬';
 $string['special'] = '특집';
 $string['standardview'] = '철자순으로 보기';
 $string['studentcanpost'] = '학생들이 항목을 추가할 수 있음';
+$string['tagarea_glossary_entries'] = '용어집 항목';
 $string['totalentries'] = '전체 항목';
 $string['usedynalink'] = '용어집 입력항목으로 자동 링크';
 $string['usedynalink_help'] = '만일 관리자에 의해 전역 용어집 자동 링크가 활성화되고 이 설정이 활성화되면, "새 입력항목 추가" 양식에 강좌에서 개념 단어와 구문이 나타날 때마다 자동으로 항목을 링크 걸 수 있는 옵션이 포함됩니다.';

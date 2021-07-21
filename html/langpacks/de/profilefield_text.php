@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_text', language 'de', version '3.8'.
+ * Strings for component 'profilefield_text', language 'de', version '3.11'.
  *
  * @package     profilefield_text
  * @category    string
@@ -30,4 +30,4 @@ $string['privacy:metadata:profilefield_text:data'] = 'Texteingabe im Nutzerprofi
 $string['privacy:metadata:profilefield_text:dataformat'] = 'Format der Texteingabe der gespeicherten Nutzerdaten';
 $string['privacy:metadata:profilefield_text:fieldid'] = 'ID des Profilfelds';
 $string['privacy:metadata:profilefield_text:tableexplanation'] = 'Zusätzliche Nutzerinformationen';
-$string['privacy:metadata:profilefield_text:userid'] = 'ID des Nutzers, dessen Daten im Texteingabe-Plugin gespeichert werden';
+$string['privacy:metadata:profilefield_text:userid'] = 'Nutzer-ID der Person, deren Daten vom Texteingabe-Plugin gespeichert wurden';

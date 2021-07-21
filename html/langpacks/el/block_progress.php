@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_progress', language 'el', version '3.8'.
+ * Strings for component 'block_progress', language 'el', version '3.11'.
  *
  * @package     block_progress
  * @category    string
@@ -37,6 +37,7 @@ $string['attempted_colour'] = '#73A839';
 $string['attempted_colour_descr'] = 'Κωδικός χρώματος HTML για στοιχεία που έχουν επιχειρηθεί';
 $string['attempted_colour_title'] = 'Χρώμα αυτών που έχουν επιχειρηθεί';
 $string['awarded'] = 'απονεμήθηκε';
+$string['bigbluebuttonbn'] = 'Big Blue Button (Μεγάλο Μπλε Κουμπί)';
 $string['book'] = 'Βιβλίο';
 $string['cachedef_cachedlogs'] = 'Κρυφή μνήμη ερωτημάτων καταγραφών μπάρας προόδου';
 $string['certificate'] = 'Πιστοποιητικό';

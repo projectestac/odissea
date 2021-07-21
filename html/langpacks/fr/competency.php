@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'fr', version '3.8'.
+ * Strings for component 'competency', language 'fr', version '3.11'.
  *
  * @package     competency
  * @category    string
@@ -63,7 +63,7 @@ $string['eventcompetencyupdated'] = 'Compétence modifiée';
 $string['eventcompetencyviewed'] = 'Compétence consultée';
 $string['eventevidencecreated'] = 'Preuve de compétence créée';
 $string['eventplanapproved'] = 'Plan de formation approuvé';
-$string['eventplancompleted'] = 'Plan de formation terminé';
+$string['eventplancompleted'] = 'Plan de formation terminé.';
 $string['eventplancreated'] = 'Plan de formation créé';
 $string['eventplandeleted'] = 'Plan de formation supprimé';
 $string['eventplanreopened'] = 'Plan de formation rouvert';
@@ -94,7 +94,7 @@ $string['eventuserevidencecreated'] = 'Preuve d\'acquis créée';
 $string['eventuserevidencedeleted'] = 'Preuve d\'acquis supprimée';
 $string['eventuserevidenceupdated'] = 'Preuve d\'acquis modifiée';
 $string['evidence_competencyrule'] = 'La règle pour la compétence a été atteinte.';
-$string['evidence_coursecompleted'] = 'Le cours « {$a} » a été achevé.';
+$string['evidence_coursecompleted'] = 'Le cours « {$a} » a été achevée.';
 $string['evidence_coursemodulecompleted'] = 'L\'activité « {$a} » a été achevée.';
 $string['evidence_courserestored'] = 'L\'évaluation a été restaurée avec le cours « {$a} ».';
 $string['evidence_evidenceofpriorlearninglinked'] = 'La preuve d\'acquis « {$a} » a été liée.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'nl', version '3.8'.
+ * Strings for component 'qtype_match', language 'nl', version '3.11'.
  *
  * @package     qtype_match
  * @category    string
@@ -42,6 +42,9 @@ $string['pluginname_help'] = 'Koppelvragen vragen van de respondent om een lijst
 $string['pluginnameadding'] = 'Koppelvraag toevoegen';
 $string['pluginnameediting'] = 'Koppelvraag bewerken';
 $string['pluginnamesummary'] = 'Het antwoord op elk vraagonderdeel moet gekozen worden uit een lijst met mogelijke antwoorden.';
-$string['privacy:metadata'] = 'De koppelvraagtype-plugin bewaart geen persoonlijke gegevens.';
+$string['privacy:metadata'] = 'De koppelvraagtype-plugin  laat vraag-auteurs standaardopties en gebruikersvoorkeuren instellen.';
+$string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
+$string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
+$string['privacy:preference:shuffleanswers'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['shuffle'] = 'Vragen in willekeurige volgorde';
 $string['shuffle_help'] = 'Indien ingesteld, dan zal de volgorde van de verklaringen (antwoorden) bij elke poging willekeurig dooreengeschud worden, op voorwaarde dat ook de "Willekeurige volgorde in vragen" in de activiteitsinstellingen is ingeschakeld.';

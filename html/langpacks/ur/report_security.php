@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ur', version '3.8'.
+ * Strings for component 'report_security', language 'ur', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -26,4 +26,3 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['check_riskadmin_name'] = 'ایڈمنسٹریٹرز';
-$string['statusinfo'] = 'معلومات';

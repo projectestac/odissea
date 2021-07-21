@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_comments', language 'ar', version '3.8'.
+ * Strings for component 'workshopform_comments', language 'ar', version '3.11'.
  *
  * @package     workshopform_comments
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmoredimensions'] = 'الفراغات لـ {$a} جوانب أخرى';
+$string['addmoredimensions'] = 'إضافة {$a} جوانب أخرى';
 $string['dimensioncommentfor'] = 'تعليق لـ {$a}';
 $string['dimensiondescription'] = 'الوصف';
-$string['dimensionnumber'] = 'الجانب الآخر {$a}';
+$string['dimensionnumber'] = 'الجانب {$a}';
 $string['pluginname'] = 'التعليقات';
-$string['privacy:metadata'] = 'يقوم المكون الإضافي  Comments grading بتخزين تفاصيل نموذج التقييم فقط. يتم تخزين البيانات الشخصية الفعلية لكيفية ملىء النموذج بواسطة وحدة ورشة العمل نفسها ويتم إرفاقها بالتقييمات المصدرة.';
+$string['privacy:metadata'] = 'يخزن ملحق منح علامات التعليقات فقط تفاصيل نموذج التقييم. يتم تخزين البيانات الشخصية الفعلية لكيفية ملء النموذج بواسطة وحدة ورشة العمل نفسها ويتم إرفاقها بالتقييمات المصدرة.';

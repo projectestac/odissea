@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_legacy', language 'sv', version '3.8'.
+ * Strings for component 'logstore_legacy', language 'sv', version '3.11'.
  *
  * @package     logstore_legacy
  * @category    string
@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventlegacylogged'] = 'Gammaldags logghändelse loggad';
-$string['loglegacy'] = 'Data för logghändelse (gammalt format)';
+$string['eventlegacylogged'] = 'Äldre händelsetyp loggad';
+$string['loglegacy'] = 'Data för logghändelse (äldre format)';
 $string['loglegacy_help'] = 'Denna plugin registrerar loggdata i den äldre loggtabellen (mdl_log). Denna funktionalitet har ersatts av nyare, rikare och effektivare loggning, så du bör bara köra denna plugin om du har gamla anpassade rapporter som direkt frågar efter den gamla loggtabellen. Skrivning till de äldre loggarna kommer att öka belastningen, så det rekommenderas att du inaktiverar denna plugin av prestandaskäl om den inte behövs.';
-$string['pluginname'] = 'Gammaldags logg';
+$string['pluginname'] = 'Äldre logg';
 $string['pluginname_desc'] = 'En loggnings-plugin som lagrar loggposter i den ädre loggtabellen.';
 $string['privacy:metadata:log'] = 'En samling tidigare händelser';
 $string['privacy:metadata:log:action'] = 'En beskrivning av åtgärden';

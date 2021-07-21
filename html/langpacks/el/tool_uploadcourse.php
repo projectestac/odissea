@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'el', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'el', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -77,9 +77,15 @@ $string['csvdelimiter'] = 'Διαχωριστικό CSV';
 $string['csvdelimiter_help'] = 'Διαχωριστικό αρχείου CSV.';
 $string['csvfileerror'] = 'Υπάρχει κάποιο πρόβλημα με το μορφότυπο του αρχείου CSV. Ελέγξτε ότι ο αριθμός κεφαλίδων αντιστοιχεί στον αριθμό των στηλών, και ότι το διαχωριστικό και η κωδικοποίηση των αρχείων είναι εντάξει: {$a}';
 $string['csvline'] = 'Γραμμή';
+$string['customfieldinvalid'] = 'Το προσαρμοσμένο πεδίο «{$a}» είναι κενό ή περιέχει μη έγκυρα δεδομένα';
 $string['defaultvalues'] = 'Προεπιλεγμένες τιμές μαθημάτων';
+$string['defaultvaluescustomfieldcategory'] = 'Προεπιλεγμένες τιμές για «{$a}»';
+$string['downloadcontentnotallowed'] = 'Δεν επιτρέπεται η ρύθμιση της λήψης του περιεχομένου των μαθημάτων';
 $string['encoding'] = 'Κωδικοποίηση';
 $string['encoding_help'] = 'Κωδικοποίηση αρχείου CSV.';
+$string['errorcannotcreateorupdateenrolment'] = 'Δεν είναι δυνατή η δημιουργία ή η ενημέρωση της μεθόδου εγγραφής «{$a}»';
+$string['errorcannotdeleteenrolment'] = 'Δεν είναι δυνατή η διαγραφή της μεθόδου εγγραφής «{$a}»';
+$string['errorcannotdisableenrolment'] = 'Δεν είναι δυνατή η απενεργοποίηση της μεθόδου εγγραφής «{$a}»';
 $string['errorwhiledeletingcourse'] = 'Σφάλμα κατά τη διαγραφή του μαθήματος';
 $string['errorwhilerestoringcourse'] = 'Σφάλμα κατά την επαναφορά του μαθήματος';
 $string['generatedshortnamealreadyinuse'] = 'Το σύντομο όνομα που δημιουργήθηκε χρησιμοποιείται ήδη';
@@ -90,6 +96,7 @@ $string['importoptions'] = 'Επιλογές εισαγωγής';
 $string['invalidbackupfile'] = 'Μη έγκυρο αρχείο αντιγράφου ασφαλείας';
 $string['invalidcourseformat'] = 'Μη έγκυρος τύπος μαθήματος';
 $string['invalidcsvfile'] = 'Μη έγκυρο αρχείο CSV εισόδου';
+$string['invaliddownloadcontent'] = 'Μη έγκυρη λήψη της τιμής περιεχομένου του μαθήματος';
 $string['invalidencoding'] = 'Μη έγκυρη κωδικοποίηση';
 $string['invalideupdatemode'] = 'Έχει επιλεγεί μη έγκυρη λειτουργία ενημέρωσης';
 $string['invalidfullnametoolong'] = 'Το πεδίο πλήρους ονόματος περιορίζεται σε {$a} χαρακτήρες';

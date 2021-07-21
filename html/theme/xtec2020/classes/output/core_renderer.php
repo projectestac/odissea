@@ -367,9 +367,9 @@ class core_renderer extends \core_renderer {
         return "";
     }
 
-     public function blocks_for_region($region) {
+     public function blocks_for_region($region, $fakeblocksonly = false) {
         $output = $this->agora_alerts();
-        $output .= parent::blocks_for_region($region);
+        $output .= parent::blocks_for_region($region, $fakeblocksonly);
         return $output;
     }
 

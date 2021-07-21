@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'el', version '3.8'.
+ * Strings for component 'block_online_users', language 'el', version '3.11'.
  *
  * @package     block_online_users
  * @category    string
@@ -36,6 +36,7 @@ $string['online_users:myaddinstance'] = 'Προσθήκη νέου μπλοκ σ
 $string['online_users:viewlist'] = 'Δείτε τη λίστα όλων των συνδεδεμένων χρηστών';
 $string['onlinestatushiding'] = 'Απόκρυψη κατάστασης σύνδεσης';
 $string['onlinestatushiding_desc'] = 'Εάν ενεργοποιηθεί, οι χρήστες έχουν την επιλογή απόκρυψης της κατάστασης σύνδεσής τους από τους άλλους χρήστες.';
+$string['otherusers'] = 'Άλλοι χρήστες ({$a})';
 $string['periodnminutes'] = 'τα τελευταία {$a} λεπτά';
 $string['pluginname'] = 'Συνδεδεμένοι χρήστες';
 $string['privacy:metadata:preference:uservisibility'] = 'Κατάσταση σύνδεσης ορατή σε άλλους χρήστες στο μπλοκ Συνδεδεμένοι χρήστες.';

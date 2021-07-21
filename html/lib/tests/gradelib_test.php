@@ -83,6 +83,7 @@ class core_gradelib_testcase extends advanced_testcase {
         $letters = $cache->get($context->id);
         $this->assertFalse($letters);
 
+        // Call the function.
         grade_get_letters($context);
 
         $letters = $cache->get($context->id);
@@ -253,6 +254,7 @@ class core_gradelib_testcase extends advanced_testcase {
 
         $this->resetAfterTest();
 
+        // Setup some basics.
         $course = $this->getDataGenerator()->create_course();
         $context = context_course::instance($course->id);
 

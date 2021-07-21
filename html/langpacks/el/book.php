@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'el', version '3.8'.
+ * Strings for component 'book', language 'el', version '3.11'.
  *
  * @package     book
  * @category    string
@@ -99,7 +99,7 @@ $string['pluginadministration'] = 'Διαχείριση βιβλίου';
 $string['pluginname'] = 'Βιβλίο';
 $string['previouschapter'] = 'Προηγούμενο κεφάλαιο';
 $string['privacy:metadata'] = 'Το άρθρωμα «Δραστηριότητα βιβλίου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
-$string['removeallbooktags'] = 'Διαγραφή όλων των εττικετών βιβλίου';
+$string['removeallbooktags'] = 'Διαγραφή όλων των ετικετών βιβλίου';
 $string['search:activity'] = 'Βιβλίο - πληροφορίες πόρου';
 $string['search:chapter'] = 'Βιβλίο - κεφάλαια';
 $string['showchapter'] = 'Εμφάνιση κεφαλαίου «{$a}»';
@@ -108,6 +108,6 @@ $string['subchapternotice'] = '(Διατίθεται μόνο όταν έχει 
 $string['subplugintype_booktool'] = 'Εργαλείο βιβλίου';
 $string['subplugintype_booktool_plural'] = 'Εργαλεία βιβλίου';
 $string['tagarea_book_chapters'] = 'Κεφάλαια βιβλίου';
-$string['tagsdeleted'] = 'Οι εττικέτες βιβλίου διαγράφηκαν';
+$string['tagsdeleted'] = 'Οι ετικέτες βιβλίου διαγράφηκαν';
 $string['toc'] = 'Πίνακας περιεχομένων';
 $string['top'] = 'κορυφή';

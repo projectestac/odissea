@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_configlog', language 'ko', version '3.8'.
+ * Strings for component 'report_configlog', language 'ko', version '3.11'.
  *
  * @package     report_configlog
  * @category    string
@@ -30,3 +30,5 @@ $string['plugin'] = '플러그인';
 $string['pluginname'] = '설정 변경';
 $string['setting'] = '설정';
 $string['timemodified'] = '날짜';
+$string['valuenew'] = '새로운 값';
+$string['valueold'] = '원래의 값';

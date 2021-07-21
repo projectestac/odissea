@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice_rest', language 'fr', version '3.8'.
+ * Strings for component 'webservice_rest', language 'fr', version '3.11'.
  *
  * @package     webservice_rest
  * @category    string

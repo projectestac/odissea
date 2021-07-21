@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ko', version '3.8'.
+ * Strings for component 'form', language 'ko', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -41,6 +41,7 @@ $string['err_nopunctuation'] = '쉼표나 세미콜론 등이 없는 문자만 �
 $string['err_numeric'] = '숫자만 입력하시오.';
 $string['err_rangelength'] = '{$a->format[0]} 에서 {$a->format[1]} 글자의 문자만 입력하시오.';
 $string['err_required'] = '적당한 값을 입력하시오.';
+$string['filesofthesetypes'] = '허용되는 파일 유형 :';
 $string['general'] = '일반 설정';
 $string['hideadvanced'] = '고급 숨기기';
 $string['hour'] = '시';
@@ -51,6 +52,7 @@ $string['month'] = '월';
 $string['mustbeoverriden'] = '클래스 {$a} 에 있는 form_definition() 추상메쏘드가 재정의되어야 합니다. 코드를 고치기 바랍니다.';
 $string['nomethodforaddinghelpbutton'] = '양식 요소  {$a->name} (학급 {$a->classname})에 도움말 버튼을 추가할 방법이 없습니다.';
 $string['nonexistentformelements'] = '없는 서식 양식 요소 {$a} 에 도움말 버튼을 추가하려 함';
+$string['noselection'] = '선택하지 않음';
 $string['optional'] = '선택사항';
 $string['othersettings'] = '기타 설정';
 $string['passwordunmaskrevealhint'] = '암호노출';

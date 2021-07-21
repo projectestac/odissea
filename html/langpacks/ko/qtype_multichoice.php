@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ko', version '3.8'.
+ * Strings for component 'qtype_multichoice', language 'ko', version '3.11'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -37,6 +37,7 @@ $string['answersingleno'] = '다답 허용';
 $string['answersingleyes'] = '단답만';
 $string['choiceno'] = '{$a} 번 선택';
 $string['choices'] = '가능한 선택';
+$string['clearchoice'] = '선택 초기화하기';
 $string['clozeaid'] = '빠진 단어 채우기';
 $string['correctansweris'] = '정답은 {$a}.입니다.';
 $string['correctfeedback'] = '모든 정답에 대한 반응';

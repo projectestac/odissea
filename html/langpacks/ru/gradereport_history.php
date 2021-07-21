@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'ru', version '3.8'.
+ * Strings for component 'gradereport_history', language 'ru', version '3.11'.
  *
  * @package     gradereport_history
  * @category    string
@@ -48,6 +48,7 @@ $string['historyperpage_help'] = 'Этот параметр определяет
 $string['loadmoreusers'] = 'Загрузить больше пользователей...';
 $string['pluginname'] = 'История оценок';
 $string['preferences'] = 'Настройки истории оценок';
+$string['privacy:metadata'] = 'В отчете истории оценок отображаются только данные, хранящиеся в других местах.';
 $string['revisedonly'] = 'Только исправленные оценки';
 $string['revisedonly_help'] = 'Отображаются только исправленные оценки. Перечисляются только те записи, которые привели к изменению оценок.';
 $string['selectedusers'] = 'Выбранные пользователи';

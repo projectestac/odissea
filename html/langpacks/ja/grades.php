@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ja', version '3.8'.
+ * Strings for component 'grades', language 'ja', version '3.11'.
  *
  * @package     grades
  * @category    string
@@ -136,7 +136,7 @@ $string['coursegradesettings'] = 'コース評定設定';
 $string['coursename'] = 'コース名';
 $string['coursescales'] = 'コース評価尺度';
 $string['coursesettings'] = 'コース設定';
-$string['coursesettingsexplanation'] = 'コース設定ではすべてのユーザに対して評定表がどのように表示されるか決定します。';
+$string['coursesettingsexplanation'] = 'コース評定設定ではすべてのユーザに対して評定表がどのように表示されるか決定します。';
 $string['coursesiamtaking'] = '私が受講しているコース';
 $string['coursesiamteaching'] = '私が教えているコース';
 $string['coursetotal'] = 'コース合計';
@@ -165,6 +165,7 @@ $string['droplowestvalues'] = '{$a} 件の最低評点を除外する';
 $string['dropped'] = '件除外';
 $string['dropxlowest'] = '下位X件の除外';
 $string['dropxlowestwarning'] = '注意: 「下位X件の除外」を使用する場合、カテゴリ内のすべての評定項目は同じ最大評点を持つとみなされます。カテゴリ内のそれぞれの評定項目の最大評点が異なる場合、結果は保証されません。';
+$string['duplicatedgradeitem'] = '{$a} (コピー)';
 $string['duplicatescale'] = '尺度の複製';
 $string['edit'] = '編集';
 $string['editcalculation'] = '計算を編集する';
@@ -199,6 +200,7 @@ $string['errorupdatinggradecategoryaggregation'] = '評定カテゴリID {$a->id
 $string['errorupdatinggradeitemaggregationcoef'] = '評定カテゴリID {$a->id} の総計係数 (加重または追加点) 更新中にエラーが発生しました。';
 $string['eventgradedeleted'] = '評点が削除されました。';
 $string['eventgradeitemcreated'] = '評定項目が作成されました。';
+$string['eventgradeitemdeleted'] = '評定項目が削除されました。';
 $string['eventgradeitemupdated'] = '評定項目が更新されました。';
 $string['eventgradelettercreated'] = '評定文字が作成されました。';
 $string['eventgradeletterdeleted'] = '評定文字が削除されました。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_standard', language 'pt', version '3.8'.
+ * Strings for component 'logstore_standard', language 'pt', version '3.11'.
  *
  * @package     logstore_standard
  * @category    string
@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['buffersize'] = 'Escrever tamanho do buffer';
+$string['buffersize'] = 'Tamanho do buffer de escrita';
 $string['jsonformat'] = 'Formato JSON';
-$string['jsonformat_desc'] = 'Use o formato JSON padrão em vez de dados em série do PHP no campo \'outro\' da base de dados.';
+$string['jsonformat_desc'] = 'Se ativar esta opção, o formato JSON padrão será usado em vez de dados em série do PHP no campo \'outro\' da base de dados.';
 $string['pluginname'] = 'Registo de atividade padrão';
 $string['pluginname_desc'] = 'Um módulo de registo armazena entradas de registo de atividade numa tabela de base de dados Moodle.';
 $string['privacy:metadata:log'] = 'Uma coleção de eventos passados';
-$string['privacy:metadata:log:anonymous'] = 'Se o evento foi marcado como anónimo';
+$string['privacy:metadata:log:anonymous'] = 'Se o evento foi marcado, ou não, como anónimo';
 $string['privacy:metadata:log:eventname'] = 'O nome do evento';
 $string['privacy:metadata:log:ip'] = 'O endereço IP utilizado na altura do evento';
 $string['privacy:metadata:log:origin'] = 'A origem do evento';
@@ -40,4 +40,4 @@ $string['privacy:metadata:log:realuserid'] = 'O ID do utilizador real responsáv
 $string['privacy:metadata:log:relateduserid'] = 'O ID do utilizador relacionado com o evento';
 $string['privacy:metadata:log:timecreated'] = 'A data/hora em que o evento ocorreu';
 $string['privacy:metadata:log:userid'] = 'O ID do utilizador que desencadeou o evento';
-$string['taskcleanup'] = 'Limpeza da tabela de registos de atividade';
+$string['taskcleanup'] = 'Limpeza da tabela dos registos de atividade';

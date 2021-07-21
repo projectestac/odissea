@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'de', version '3.8'.
+ * Strings for component 'tool_usertours', language 'de', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -31,19 +31,19 @@ $string['appliesto'] = 'Gilt für';
 $string['backdrop'] = 'Mit Hervorhebung anzeigen';
 $string['backdrop_help'] = 'Sie können den Teil der Seite hervorheben, auf den Sie gerade verweisen.
 
-Hinweis: Hervorhebungen sind nicht kompatibel mit manchen Teilen der Seite, z.B. mit der Navigationsleiste.';
+Hinweis: Hervorhebungen sind manchmal nicht kompatibel mit bestimmten Teilen der Seite, z.B. mit der Navigationsleiste.';
 $string['below'] = 'Unterhalb';
 $string['block'] = 'Block';
 $string['block_named'] = 'Block \'{$a}\'';
 $string['cachedef_stepdata'] = 'Schritte der geführten Tour';
-$string['cachedef_tourdata'] = 'Die Liste von aktivierten Informationen für die geführte Tour wird auf jeder Seite gesammelt.';
+$string['cachedef_tourdata'] = 'Die Liste von aktivierten Infos für die geführte Tour wird auf jeder Seite gesammelt.';
 $string['confirmstepremovalquestion'] = 'Möchten Sie diesen Schritt wirklich entfernen?';
 $string['confirmstepremovaltitle'] = 'Entfernen von Schritten bestätigen';
-$string['confirmtourremovalquestion'] = 'Möchten Sie wirklich diese geführte Tour entfernen?';
+$string['confirmtourremovalquestion'] = 'Möchten Sie diese geführte Tour wirklich entfernen?';
 $string['confirmtourremovaltitle'] = 'Entfernen einer Tour bestätigen';
 $string['content'] = 'Inhalt';
 $string['content_heading'] = 'Inhalt';
-$string['content_help'] = 'Der Inhalt, der den Schritt beschreibt, kann als Klartext hinzugefügt werden und falls erforderlich auch Multilang-Tags einschließen (für die Verwendung mit dem Filter \'Mehrsprachiger Inhalt\').
+$string['content_help'] = 'Der Inhalt, der den Schritt beschreibt, kann als Klartext hinzugefügt werden. Falls erforderlich, kann der Text  auch Multilang-Tags beinhalten (Verwendung mit dem Filter \'Mehrsprachiger Inhalt\').
 
 Alternativ kann eine Text-ID in die Formatkennung eingegeben werden  (ohne Klammern oder Leerzeichen nach dem Komma).';
 $string['cssselector'] = 'CSS-Selector';
@@ -55,7 +55,7 @@ Die Wartezeit wird in Millisekunden angegeben.';
 $string['description'] = 'Beschreibung';
 $string['done'] = 'Erledigt';
 $string['duplicatetour'] = 'Tour kopieren';
-$string['duplicatetour_name'] = '{$a} (kopieren)';
+$string['duplicatetour_name'] = '{$a} (Kopie)';
 $string['editstep'] = '\'{$a}\' bearbeiten';
 $string['enabled'] = 'Aktiviert';
 $string['endtour'] = 'Tour-Ende';
@@ -64,21 +64,29 @@ $string['event_tour_ended'] = 'Tour beendet';
 $string['event_tour_reset'] = 'Tour zurückgesetzt';
 $string['event_tour_started'] = 'Tour begonnen';
 $string['exporttour'] = 'Tour exportieren';
+$string['filter_accessdate'] = 'Zugriffsdatum';
+$string['filter_accessdate_enabled'] = 'Filter für das Zugriffsdatum aktivieren';
+$string['filter_accessdate_enabled_help'] = 'Tour nur anzeigen für neue Nutzer/innen oder Nutzer/innen, die kürzlich auf die Website zugegriffen haben.';
 $string['filter_category'] = 'Kategorie';
 $string['filter_category_help'] = 'Tour in Kursen dieser Kategorie anzeigen.';
 $string['filter_course'] = 'Kurse';
 $string['filter_course_help'] = 'Tour in diesem Kurs anzeigen.';
 $string['filter_courseformat'] = 'Kursformat';
 $string['filter_courseformat_help'] = 'Tour in Kursen mit diesem Kursformat anzeigen.';
+$string['filter_cssselector'] = 'CSS-Selector';
+$string['filter_cssselector_help'] = 'Tour nur anzeigen, wenn der angegebene CSS-Selektor auf der Seite gefunden wird.';
+$string['filter_date_account_creation'] = 'Erstellungsdatum innerhalb von';
+$string['filter_date_first_login'] = 'Datum des erster Zugriffs innerhalb von';
+$string['filter_date_last_login'] = 'Datum des letztes Zugriffs innerhalb von';
 $string['filter_header'] = 'Tour-Filter';
 $string['filter_help'] = 'Wählen Sie die Bedingungen, unter denen die Tour angezeigt wird. Alle Filter müssen passen, damit die Tour für Nutzer/innen angezeigt wird.';
 $string['filter_role'] = 'Rolle';
-$string['filter_role_help'] = 'Eine Tour kann auf Nutzer/innen mit bestimmten Rollen in dem Kontext beschränkt sein, in dem die Tour angezeigt wird. Das Beschränken einer Dashboard-Tour auf Nutzer/innen mit der Rolle "Student" funktioniert besipielsweise nicht, wenn die Nutzer/innen die Rolle "Student" nur in einem Kurs haben (was normalerweise der Fall ist). Eine Dashboard-Tour kann nur auf Nutzer/innen mit einer globalen Rolle beschränkt werden.';
+$string['filter_role_help'] = 'Eine Tour kann auf Nutzer/innen mit bestimmten Rollen in dem Kontext beschränkt sein, in dem die Tour angezeigt wird. Das Beschränken einer Dashboard-Tour auf Nutzer/innen mit der Rolle "Teilnehmer/in" funktioniert besipielsweise nicht, wenn die Nutzer/innen die Rolle "Teilnehmer/in" nur in einem Kurs haben (was normalerweise der Fall ist). Eine Dashboard-Tour kann nur auf Nutzer/innen mit einer globalen Rolle beschränkt werden.';
 $string['filter_theme'] = 'Design';
 $string['filter_theme_help'] = 'Tour anzeigen, wenn eines der ausgewählte Designs verwendet wird.';
 $string['importtour'] = 'Tour importieren';
 $string['left'] = 'Links';
-$string['modifyshippedtourwarning'] = 'Diese geführte Tour wird mit Moodle ausgeliefert. Alle Veränderungen, die Sie in dieser Tour vornehmen, werden beim nächsten Update der Website überschrieben.';
+$string['modifyshippedtourwarning'] = 'Diese geführte Tour wurde mit Moodle ausgeliefert. Alle Veränderungen, die Sie in dieser Tour vornehmen, werden beim nächsten Update der Website überschrieben.';
 $string['movestepdown'] = 'Schritt nach unten bewegen';
 $string['movestepup'] = 'Schritt nach oben bewegen';
 $string['movetourdown'] = 'Tour nach unten bewegen';
@@ -87,6 +95,7 @@ $string['name'] = 'Name';
 $string['newstep'] = 'Neuer Schritt';
 $string['newtour'] = 'Neue Tour anlegen';
 $string['next'] = 'Nächstes';
+$string['nextstep'] = 'Weiter';
 $string['options_heading'] = 'Optionen';
 $string['orphan'] = 'Anzeigen, wenn Ziel nicht gefunden';
 $string['orphan_help'] = 'Schritt anzeigen, wenn das Ziel auf der Seite nicht gefunden werden kann.';
@@ -108,10 +117,11 @@ $string['placement_help'] = 'Ein Schritt kann oben, unten, links oder rechts des
 
 Wenn der Schritt nicht auf eine bestimmte Seite an der angegebenen Stelle passt, wird er automatisch an anderer Stelle platziert.';
 $string['pluginname'] = 'Geführte Touren';
-$string['privacy:metadata:preference:completed'] = 'Zeitpunkt, an dem eine Person die Nutzer-Tour zuletzt abgeschlossen hat.';
-$string['privacy:metadata:preference:requested'] = 'Zeitpunkt, zu dem eine Person die Nutzer-Tour zuletzt manuell angefordert hat.';
-$string['privacy:request:preference:completed'] = 'Sie haben die Nutzer-Tour \'{$a->name}\' zuletzt am {$a->time} als abgeschlossen markiert.';
-$string['privacy:request:preference:requested'] = 'Sie haben die Nutzer-Tour \'{$a->name}\' zuletzt am {$a->time} angefordert.';
+$string['previousstep'] = 'Zurück';
+$string['privacy:metadata:preference:completed'] = 'Zeitpunkt, an dem eine Person eine Tour zuletzt abgeschlossen hat.';
+$string['privacy:metadata:preference:requested'] = 'Zeitpunkt, zu dem eine Person  eine Tour zuletzt manuell angefordert hat.';
+$string['privacy:request:preference:completed'] = 'Sie haben die Tour \'{$a->name}\' zuletzt am {$a->time} als abgeschlossen markiert.';
+$string['privacy:request:preference:requested'] = 'Sie haben die Tour \'{$a->name}\' zuletzt am {$a->time} angefordert.';
 $string['reflex'] = 'Bei Klick fortfahren';
 $string['reflex_help'] = 'Der nächste Schritt wird ausgeführt, wenn auf das Ziel geklickt wird.';
 $string['resettouronpage'] = 'Tour erneut starten';
@@ -128,7 +138,7 @@ $string['target_block'] = 'Block';
 $string['target_heading'] = 'Schrittziel';
 $string['target_selector'] = 'Auswahl';
 $string['target_selector_targetvalue'] = 'CSS-Selektoren';
-$string['target_selector_targetvalue_help'] = 'Ein CSS-Selektor kann verwendet werden, um jedes beliebige Element auf der Seite zu erreichen. Der entsprechende Selektor kann mit den Entwickler-Tools für Ihren Webbrowser gefunden werden.';
+$string['target_selector_targetvalue_help'] = 'Ein CSS-Selektor kann verwendet werden, um jedes beliebige Element auf der Seite zu erreichen. Der entsprechende Selektor kann mit den Entwicklertools für Ihren Webbrowser gefunden werden.';
 $string['target_unattached'] = 'In der Seitenmitte anzeigen';
 $string['targettype'] = 'Zieltyp';
 $string['targettype_help'] = 'Jeder Schritt ist mit einem Teil der Seite verbunden - dem Ziel. Zieltypen sind:
@@ -155,9 +165,9 @@ $string['tour1_title_welcome'] = 'Willkommen';
 $string['tour2_content_addblock'] = 'Wenn Sie "Bearbeiten einschalten" aktivieren, können Sie Blöcke aus der Navigationsleiste hinzufügen. Seien Sie beim Hinzufügen von Blöcken jedoch zurückhaltend. Blöcke werden in der mobilen Moodle-App nicht angezeigt, daher sollten Sie im Sinne der Benutzerfreundlichkeit darauf achten, dass Ihre Kurse auch ohne Blöcke gut funktionieren.';
 $string['tour2_content_addingblocks'] = 'Sie können mit Hilfe dieses Buttons auf dieser Seite neue Blöcke hinzufügen. Bedenken Sie jedoch das Einfügen von Blöcken sorgfältig. Blöcke werden in der mobilen Moodle App nicht angezeigt. Sie sollten sicherstellen, dass Ihre Kurse auch ohne Blöcke funktionieren.';
 $string['tour2_content_customisation'] = 'Um Kurseinstellungen zu bearbeiten, nutzen Sie das Menü "Einstellungen" am Rand dieser Kopfzeile. Sie finden ein ähnliches Einstellungsmenü zudem auf der Startseite jeder Kursaktivität. Versuchen Sie nun "Bearbeiten einschalten" zu aktivieren.';
-$string['tour2_content_end'] = 'Dies war eine Nutzer-Tour. Sie wird nicht wieder angezeigt, es sei denn, Sie setzen die Tour zurück, indem Sie auf den Link in der Fußzeile klicken. Der Administrator der Seite kann zudem weitere Touren erstellen, falls notwendig.';
+$string['tour2_content_end'] = 'Dies war eine Nutzer-Tour. Sie wird nicht wieder angezeigt, es sei denn Sie setzen die Tour zurück, indem Sie auf den Link in der Fußzeile klicken. Die/der Administrator/in der Seite kann zudem weitere Touren erstellen, falls notwendig.';
 $string['tour2_content_navigation'] = 'Die Navigation findet nun über diese Navigationsleiste statt. Nutzen Sie den Button in der linken oberen Ecke, um die Navigationsleiste ein- oder auszublenden. Sie enthält Links zu Abschnitten Ihrer Kurse.';
-$string['tour2_content_opendrawer'] = 'Versuchen Sie jetzt, den Navigationsbereich zu öffnen.';
+$string['tour2_content_opendrawer'] = 'Versuchen Sie jetzt, die Navigationsleiste zu öffnen.';
 $string['tour2_content_participants'] = 'Zeigen Sie hier die Teilnehmer/innen an. An dieser Stelle werden auch die Teilnehmer/innen hinzugefügt oder entfernt.';
 $string['tour2_content_welcome'] = 'Willkommen zum Design Boost in Moodle. Wenn Sie Moodle bereits verwendet haben, könnten einige Dinge auf der Kursseite ein bisschen anders aussehen.';
 $string['tour2_title_addblock'] = 'Block hinzufügen';
@@ -165,11 +175,11 @@ $string['tour2_title_addingblocks'] = 'Blöcke hinzufügen ...';
 $string['tour2_title_customisation'] = 'Anpassungen';
 $string['tour2_title_end'] = 'Ende der Tour';
 $string['tour2_title_navigation'] = 'Navigation';
-$string['tour2_title_opendrawer'] = 'Navigation öffnen';
+$string['tour2_title_opendrawer'] = 'Navigationsleiste öffnen';
 $string['tour2_title_participants'] = 'Kursteilnehmer/innen';
 $string['tour2_title_welcome'] = 'Willkommen';
 $string['tour3_content_dashboard'] = 'Ihr neues Dashboard bietet viele Funktionen, mit denen Sie einfach auf die für Sie wichtigsten Infos zugreifen können.';
-$string['tour3_content_displayoptions'] = 'Die Kurse können nach Kursnamen oder dem letzten Zugriffszeitpunkt sortiert werden.
+$string['tour3_content_displayoptions'] = 'Die Kurse können nach Kursnamen, kurzen Kursnamen oder dem letzten Zugriffszeitpunkt sortiert werden.
 
 Sie können außerdem auswählen, ob die Kurse in einer Liste mit zusammenfassenden Infos oder in der Standardansicht "Karte" angezeigt werden.';
 $string['tour3_content_overview'] = 'Der Block \'Kursübersicht\' zeigt alle Kurse, bei denen Sie eingeschrieben sind.
@@ -208,6 +218,16 @@ $string['tour4_title_icon'] = 'Mitteilungen';
 $string['tour4_title_messaging'] = 'Mitteilungen: Verbesserte Nutzeroberfläche';
 $string['tour4_title_settings'] = 'Mitteilungseinstellungen';
 $string['tour4_title_starred'] = 'Favoriten';
+$string['tour_activityinfo_activity_student_content'] = 'Auf der Aktivitätsseite werden die Aktivitätsdaten sowie die erforderlichen Schritte zum Abschließen der Aktivität angezeigt.';
+$string['tour_activityinfo_activity_student_title'] = 'Neu: Aktivitätsinfo';
+$string['tour_activityinfo_activity_teacher_content'] = 'Aktivitätsdaten und Abschlussbedingungen werden jetzt für Teilnehmer auf jeder Aktivitätsseite (und optional auf der Kursseite) angezeigt.
+
+Für Aktivitäten, bei denen die Teilnehmer eine Aktivität manuell als abgeschlossen markieren müssen, wird auf der Aktivitätsseite eine Schaltfläche "Als erledigt markieren" angezeigt.';
+$string['tour_activityinfo_activity_teacher_title'] = 'Neu: Aktivitätsinfo';
+$string['tour_activityinfo_course_student_content'] = 'Aktivitätsdaten und/oder die erforderlichen Schritte zum Abschließen der Aktivität werden auf der Kursseite angezeigt.';
+$string['tour_activityinfo_course_student_title'] = 'Neu: Aktivitätsinfo';
+$string['tour_activityinfo_course_teacher_content'] = 'Mit den neuen Kurseinstellungen "Abschlussbedingungen anzeigen" und "Aktivitätsdaten anzeigen" können Sie wählen, ob die Bedingungen für den Abschluss von Aktivitäten (falls eingestellt) und/oder Termine für die Teilnehmer/innen auf der Kursseite angezeigt werden sollen.';
+$string['tour_activityinfo_course_teacher_title'] = 'Neu: Aktivitätsinfo';
 $string['tour_final_step_content'] = 'Sie sind am Ende Ihrer Nutzertour angekommen. Die Tour wird nur einmal angezeigt, es sei denn, Sie starten die Tour über den Link in der Fußzeile der Seite erneut.';
 $string['tour_final_step_title'] = 'Ende der Tour';
 $string['tour_resetforall'] = 'Der Status der Tour wurde zurückgesetzt. Die Tour wird allen Nutzer/innen erneut gezeigt.';

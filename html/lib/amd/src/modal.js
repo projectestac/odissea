@@ -16,9 +16,8 @@
 /**
  * Contain the logic for modals.
  *
- * @module     core/modal
- * @class      modal
- * @package    core
+ * @module core/modal
+ * @class core/modal
  * @copyright  2016 Ryan Wyllie <ryan@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -33,7 +32,22 @@ define([
     'core/modal_events',
     'core/local/aria/focuslock',
     'core/pending',
-], function($, Templates, Notification, KeyCodes, CustomEvents, ModalBackdrop, Event, ModalEvents, FocusLock, Pending) {
+    'core/aria',
+    'core/fullscreen'
+], function(
+    $,
+    Templates,
+    Notification,
+    KeyCodes,
+    CustomEvents,
+    ModalBackdrop,
+    Event,
+    ModalEvents,
+    FocusLock,
+    Pending,
+    Aria,
+    Fullscreen
+) {
 
     var SELECTORS = {
         CONTAINER: '[data-region="modal-container"]',
@@ -75,14 +89,20 @@ define([
         this.root = $(root);
         this.modal = this.root.find(SELECTORS.MODAL);
         this.header = this.modal.find(SELECTORS.HEADER);
+        this.headerPromise = $.Deferred();
         this.title = this.header.find(SELECTORS.TITLE);
+        this.titlePromise = $.Deferred();
         this.body = this.modal.find(SELECTORS.BODY);
+        this.bodyPromise = $.Deferred();
         this.footer = this.modal.find(SELECTORS.FOOTER);
+        this.footerPromise = $.Deferred();
         this.hiddenSiblings = [];
         this.isAttached = false;
         this.bodyJS = null;
         this.footerJS = null;
         this.modalCount = modalCounter++;
+        this.attachmentPoint = document.createElement('div');
+        document.body.append(this.attachmentPoint);
 
         if (!this.root.is(SELECTORS.CONTAINER)) {
             Notification.exception({message: 'Element is not a modal container'});
@@ -112,17 +132,20 @@ define([
     };
 
     /**
-     * Add the modal to the page, if it hasn't already been added. This includes running any
+     * Attach the modal to the correct part of the page.
+     *
+     * If it hasn't already been added it runs any
      * javascript that has been cached until now.
      *
      * @method attachToDOM
      */
     Modal.prototype.attachToDOM = function() {
+        this.getAttachmentPoint().append(this.root);
+
         if (this.isAttached) {
             return;
         }
 
-        $('body').append(this.root);
         FocusLock.trapFocus(this.root[0]);
 
         // If we'd cached any JS then we can run it how that the modal is
@@ -231,6 +254,36 @@ define([
     };
 
     /**
+     * Get a promise resolving to the title region.
+     *
+     * @method getTitlePromise
+     * @return {Promise}
+     */
+    Modal.prototype.getTitlePromise = function() {
+        return this.titlePromise;
+    };
+
+    /**
+     * Get a promise resolving to the body region.
+     *
+     * @method getBodyPromise
+     * @return {object} jQuery object
+     */
+    Modal.prototype.getBodyPromise = function() {
+        return this.bodyPromise;
+    };
+
+    /**
+     * Get a promise resolving to the footer region.
+     *
+     * @method getFooterPromise
+     * @return {object} jQuery object
+     */
+    Modal.prototype.getFooterPromise = function() {
+        return this.footerPromise;
+    };
+
+    /**
      * Get the unique modal count.
      *
      * @method getModalCount
@@ -251,8 +304,13 @@ define([
      */
     Modal.prototype.setTitle = function(value) {
         var title = this.getTitle();
+        this.titlePromise = $.Deferred();
 
-        this.asyncSet(value, title.html.bind(title));
+        this.asyncSet(value, title.html.bind(title))
+        .then(function() {
+            this.titlePromise.resolve(title);
+        }.bind(this))
+        .catch(Notification.exception);
     };
 
     /**
@@ -265,6 +323,8 @@ define([
      * @param {(string|object)} value The body string or jQuery promise which resolves to the body.
      */
     Modal.prototype.setBody = function(value) {
+        this.bodyPromise = $.Deferred();
+
         var body = this.getBody();
 
         if (typeof value === 'string') {
@@ -272,6 +332,7 @@ define([
             body.html(value);
             Event.notifyFilterContentUpdated(body);
             this.getRoot().trigger(ModalEvents.bodyRendered, this);
+            this.bodyPromise.resolve(body);
         } else {
             var jsPendingId = 'amd-modal-js-pending-id-' + this.getModalCount();
             M.util.js_pending(jsPendingId);
@@ -279,6 +340,9 @@ define([
             // html and javascript.
             var contentPromise = null;
             body.css('overflow', 'hidden');
+
+            // Ensure that the `value` is a jQuery Promise.
+            value = $.when(value);
 
             if (value.state() == 'pending') {
                 // We're still waiting for the body promise to resolve so
@@ -361,6 +425,10 @@ define([
                 this.getRoot().trigger(ModalEvents.bodyRendered, this);
                 return result;
             }.bind(this))
+            .then(function() {
+                this.bodyPromise.resolve(body);
+                return;
+            }.bind(this))
             .fail(Notification.exception)
             .always(function() {
                 // When we're done displaying all of the content we need
@@ -377,6 +445,24 @@ define([
     };
 
     /**
+     * Alternative to setBody() that can be used from non-Jquery modules
+     *
+     * @param {Promise} promise promise that returns {html, js} object
+     * @return {Promise}
+     */
+    Modal.prototype.setBodyContent = function(promise) {
+        // Call the leegacy API for now and pass it a jQuery Promise.
+        // This is a non-spec feature of jQuery and cannot be produced with spec promises.
+        // We can encourage people to migrate to this approach, and in future we can swap
+        // it so that setBody() calls setBodyPromise().
+        return promise.then(({html, js}) => this.setBody($.when(html, js)))
+            .catch(exception => {
+                this.hide();
+                throw exception;
+            });
+    };
+
+    /**
      * Set the modal footer element. The footer element is made visible, if it
      * isn't already.
      *
@@ -390,32 +476,43 @@ define([
     Modal.prototype.setFooter = function(value) {
         // Make sure the footer is visible.
         this.showFooter();
+        this.footerPromise = $.Deferred();
 
         var footer = this.getFooter();
 
         if (typeof value === 'string') {
             // Just set the value if it's a string.
             footer.html(value);
+            this.footerPromise.resolve(footer);
         } else {
             // Otherwise we assume it's a promise to be resolved with
             // html and javascript.
-            Templates.render(TEMPLATES.LOADING, {}).done(function(html) {
+            Templates.render(TEMPLATES.LOADING, {})
+            .then(function(html) {
                 footer.html(html);
 
-                value.done(function(html, js) {
-                    footer.html(html);
+                return value;
+            })
+            .then(function(html, js) {
+                footer.html(html);
 
-                    if (js) {
-                        if (this.isAttached) {
-                            // If we're in the DOM then run the JS immediately.
-                            Templates.runTemplateJS(js);
-                        } else {
-                            // Otherwise cache it to be run when we're attached.
-                            this.footerJS = js;
-                        }
+                if (js) {
+                    if (this.isAttached) {
+                        // If we're in the DOM then run the JS immediately.
+                        Templates.runTemplateJS(js);
+                    } else {
+                        // Otherwise cache it to be run when we're attached.
+                        this.footerJS = js;
                     }
-                }.bind(this));
-            }.bind(this));
+                }
+
+                return footer;
+            }.bind(this))
+            .then(function(footer) {
+                this.footerPromise.resolve(footer);
+                return;
+            }.bind(this))
+            .catch(Notification.exception);
         }
     };
 
@@ -494,6 +591,22 @@ define([
     };
 
     /**
+     * Set this modal to be scrollable or not.
+     *
+     * @method setScrollable
+     * @param {bool} value Whether the modal is scrollable or not
+     */
+    Modal.prototype.setScrollable = function(value) {
+        if (!value) {
+            this.getModal()[0].classList.remove('modal-dialog-scrollable');
+            return;
+        }
+
+        this.getModal()[0].classList.add('modal-dialog-scrollable');
+    };
+
+
+    /**
      * Determine the highest z-index value currently on the page.
      *
      * @method calculateZIndex
@@ -549,14 +662,24 @@ define([
     };
 
     /**
+     * Gets the jQuery wrapped node that the Modal should be attached to.
+     *
+     * @returns {jQuery}
+     */
+    Modal.prototype.getAttachmentPoint = function() {
+        return $(Fullscreen.getElement() || this.attachmentPoint);
+    };
+
+    /**
      * Display this modal. The modal will be attached to the DOM if it hasn't
      * already been.
      *
      * @method show
+     * @returns {Promise}
      */
     Modal.prototype.show = function() {
         if (this.isVisible()) {
-            return;
+            return $.Deferred().resolve();
         }
 
         var pendingPromise = new Pending('core/modal:show');
@@ -567,11 +690,9 @@ define([
             this.hideFooter();
         }
 
-        if (!this.isAttached) {
-            this.attachToDOM();
-        }
+        this.attachToDOM();
 
-        this.getBackdrop()
+        return this.getBackdrop()
         .then(function(backdrop) {
             var currentIndex = this.calculateZIndex();
             var newIndex = currentIndex + 2;
@@ -611,6 +732,7 @@ define([
     Modal.prototype.hide = function() {
         this.getBackdrop().done(function(backdrop) {
             FocusLock.untrapFocus();
+
             if (!this.countOtherVisibleModals()) {
                 // Hide the backdrop if we're the last open modal.
                 backdrop.hide();
@@ -632,6 +754,11 @@ define([
                 this.getRoot().removeClass('show').addClass('hide');
             }
 
+            // Ensure the modal is moved onto the body node if it is still attached to the DOM.
+            if ($(document.body).find(this.getRoot()).length) {
+                $(document.body).append(this.getRoot());
+            }
+
             this.root.trigger(ModalEvents.hidden, this);
         }.bind(this));
     };
@@ -642,8 +769,10 @@ define([
      * @method destroy
      */
     Modal.prototype.destroy = function() {
+        this.hide();
         this.root.remove();
         this.root.trigger(ModalEvents.destroyed, this);
+        this.attachmentPoint.remove();
     };
 
     /**
@@ -654,30 +783,11 @@ define([
      * @method accessibilityShow
      */
     Modal.prototype.accessibilityShow = function() {
-        // We need to get a list containing each sibling element and the shallowest
-        // non-ancestral nodes in the DOM. We can shortcut this a little by leveraging
-        // the fact that this dialogue is always appended to the document body therefore
-        // it's siblings are the shallowest non-ancestral nodes. If that changes then
-        // this code should also be updated.
-        $('body').children().each(function(index, child) {
-            // Skip the current modal.
-            if (!this.root.is(child)) {
-                child = $(child);
-                var hidden = child.attr('aria-hidden');
-                // If they are already hidden we can ignore them.
-                if (hidden !== 'true') {
-                    // Save their current state.
-                    child.data('previous-aria-hidden', hidden);
-                    this.hiddenSiblings.push(child);
-
-                    // Hide this node from screen readers.
-                    child.attr('aria-hidden', 'true');
-                }
-            }
-        }.bind(this));
-
         // Make us visible to screen readers.
-        this.root.attr('aria-hidden', 'false');
+        Aria.unhide(this.root.get());
+
+        // Hide siblings.
+        Aria.hideSiblings(this.root.get()[0]);
     };
 
     /**
@@ -688,24 +798,11 @@ define([
      * @method accessibilityHide
      */
     Modal.prototype.accessibilityHide = function() {
-        this.root.attr('aria-hidden', 'true');
+        // Unhide siblings.
+        Aria.unhideSiblings(this.root.get()[0]);
 
-        // Restore the sibling nodes back to their original values.
-        $.each(this.hiddenSiblings, function(index, sibling) {
-            sibling = $(sibling);
-            var previousValue = sibling.data('previous-aria-hidden');
-            // If the element didn't previously have an aria-hidden attribute
-            // then we can just remove the one we set.
-            if (typeof previousValue == 'undefined') {
-                sibling.removeAttr('aria-hidden');
-            } else {
-                // Otherwise set it back to the old value (which will be false).
-                sibling.attr('aria-hidden', previousValue);
-            }
-        });
-
-        // Clear the cache. No longer need to store these.
-        this.hiddenSiblings = [];
+        // Hide this modal.
+        Aria.hide(this.root.get());
     };
 
     /**
@@ -720,7 +817,11 @@ define([
             }
 
             if (e.keyCode == KeyCodes.escape) {
-                this.hide();
+                if (this.removeOnClose) {
+                    this.destroy();
+                } else {
+                    this.hide();
+                }
             }
         }.bind(this));
 
@@ -733,7 +834,12 @@ define([
                 // So, we check if we can still find the container element or not. If not, then the DOM tree is changed.
                 // It's best not to hide the modal in that case.
                 if ($(e.target).closest(SELECTORS.CONTAINER).length) {
-                    this.hideIfNotForm();
+                    var outsideClickEvent = $.Event(ModalEvents.outsideClick);
+                    this.getRoot().trigger(outsideClickEvent, this);
+
+                    if (!outsideClickEvent.isDefaultPrevented()) {
+                        this.hideIfNotForm();
+                    }
                 }
             }
         }.bind(this));
@@ -742,6 +848,52 @@ define([
         this.getModal().on(CustomEvents.events.activate, SELECTORS.HIDE, function(e, data) {
             this.hide();
             data.originalEvent.preventDefault();
+        }.bind(this));
+    };
+
+    /**
+     * Register a listener to close the dialogue when the cancel button is pressed.
+     *
+     * @method registerCloseOnCancel
+     */
+    Modal.prototype.registerCloseOnCancel = function() {
+        // Handle the clicking of the Cancel button.
+        this.getModal().on(CustomEvents.events.activate, this.getActionSelector('cancel'), function(e, data) {
+            var cancelEvent = $.Event(ModalEvents.cancel);
+            this.getRoot().trigger(cancelEvent, this);
+
+            if (!cancelEvent.isDefaultPrevented()) {
+                data.originalEvent.preventDefault();
+
+                if (this.removeOnClose) {
+                    this.destroy();
+                } else {
+                    this.hide();
+                }
+            }
+        }.bind(this));
+    };
+
+    /**
+     * Register a listener to close the dialogue when the save button is pressed.
+     *
+     * @method registerCloseOnSave
+     */
+    Modal.prototype.registerCloseOnSave = function() {
+        // Handle the clicking of the Cancel button.
+        this.getModal().on(CustomEvents.events.activate, this.getActionSelector('save'), function(e, data) {
+            var saveEvent = $.Event(ModalEvents.save);
+            this.getRoot().trigger(saveEvent, this);
+
+            if (!saveEvent.isDefaultPrevented()) {
+                data.originalEvent.preventDefault();
+
+                if (this.removeOnClose) {
+                    this.destroy();
+                } else {
+                    this.hide();
+                }
+            }
         }.bind(this));
     };
 
@@ -768,6 +920,45 @@ define([
         .fail(Notification.exception);
 
         return p;
+    };
+
+    /**
+     * Set the title text of a button.
+     *
+     * This method is overloaded to take either a string value for the button title or a jQuery promise that is resolved with
+     * text most commonly from a Str.get_string call.
+     *
+     * @param {DOMString} action The action of the button
+     * @param {(String|object)} value The button text, or a promise which will resolve to it
+     * @returns {Promise}
+     */
+    Modal.prototype.setButtonText = function(action, value) {
+        const button = this.getFooter().find(this.getActionSelector(action));
+
+        if (!button) {
+            throw new Error("Unable to find the '" + action + "' button");
+        }
+
+        return this.asyncSet(value, button.text.bind(button));
+    };
+
+    /**
+     * Get the Selector for an action.
+     *
+     * @param {String} action
+     * @returns {DOMString}
+     */
+    Modal.prototype.getActionSelector = function(action) {
+        return "[data-action='" + action + "']";
+    };
+
+    /**
+     * Set the flag to remove the modal from the DOM on close.
+     *
+     * @param {Boolean} remove
+     */
+    Modal.prototype.setRemoveOnClose = function(remove) {
+        this.removeOnClose = remove;
     };
 
     return Modal;

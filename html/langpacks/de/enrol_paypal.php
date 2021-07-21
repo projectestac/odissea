@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'de', version '3.8'.
+ * Strings for component 'enrol_paypal', language 'de', version '3.11'.
  *
  * @package     enrol_paypal
  * @category    string
@@ -39,7 +39,7 @@ $string['enrolenddate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/
 $string['enrolenddaterror'] = 'Das Einschreibungsende muss nach dem Einschreibungsbeginn liegen.';
 $string['enrolperiod'] = 'Teilnahmedauer';
 $string['enrolperiod_desc'] = 'Vorgabe zur Teilnahmedauer (in Sekunden). Falls dieser Wert auf Null gesetzt ist, ist die Teilnahmedauer unbegrenzt.';
-$string['enrolperiod_help'] = 'Teilnahmedauer (in Sekunden), beginnend mit dem Einschreibezeitpunkt. Falls dieser Wert auf Null gesetzt ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
+$string['enrolperiod_help'] = 'Teilnahmedauer (in Sekunden), beginnend mit dem Einschreibezeitpunkt. Falls dieser Wert auf Null gesetzt ist, ist die Teilnahmedauer unbegrenzt.';
 $string['enrolstartdate'] = 'Einschreibungsbeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen ab diesem Zeitpunkt eingeschrieben werden.';
 $string['errdisabled'] = 'Die Einschreibemethode \'PayPal\' ist deaktiviert und kann keine Zahlungsnachrichten verarbeiten.';
@@ -69,7 +69,7 @@ $string['privacy:metadata:enrol_paypal:enrol_paypal:option_selection1_x'] = 'Vol
 $string['privacy:metadata:enrol_paypal:enrol_paypal:parent_txn_id'] = 'Im Falle einer Erstattung, Stornierung, oder einer widerrufenen Stornierung ist dies die Transaktion der Original-Transaktion.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_status'] = 'Status der Zahlung';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = 'Enthält die Information mit welchem Zahlungsverfahren die Zahlung erfolgte';
-$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'Grund warum die Zahlung noch nicht abgeschlossen ist (falls dies der Fall ist)';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'Grund, warum die Zahlung noch nicht abgeschlossen ist (falls dies der Fall ist)';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:reason_code'] = 'Grund warum Status erstattet, Wiederrufen, Wiederruf_abgebrochen oder verweigert ist (falls dies einer der Stati ist).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'Primäre E-Mail-Adresse des Zahlungsempfängers';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'Eindeutige Paypal Account-ID des Zahlungsempfängers';

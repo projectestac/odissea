@@ -162,6 +162,13 @@ class qtype_wq extends question_type {
         return $this->base->extra_question_fields();
     }
 
+    public function response_file_areas() {
+        if ($this->base != null) {
+            return $this->base->response_file_areas();
+        }
+        return array();
+    }
+
     public function wrsqz_mathml_decode($input) {
         // @codingStandardsIgnoreLine
         $from = array('«', '»', '¨', '§', '`');

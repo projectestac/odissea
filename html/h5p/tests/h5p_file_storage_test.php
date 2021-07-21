@@ -26,8 +26,11 @@
 namespace core_h5p\local\tests;
 
 use core_h5p\file_storage;
-use core_h5p\autoloader;
+use core_h5p\local\library\autoloader;
+use core_h5p\helper;
 use file_archive;
+use moodle_exception;
+use ReflectionMethod;
 use zip_archive;
 
 defined('MOODLE_INTERNAL') || die();
@@ -57,7 +60,7 @@ class h5p_file_storage_testcase extends \advanced_testcase {
     /** @var int $libraryid an id for the library. */
     protected $libraryid = 1;
 
-    protected function setUp() {
+    protected function setUp(): void {
         parent::setUp();
         $this->resetAfterTest(true);
 
@@ -552,5 +555,305 @@ class h5p_file_storage_testcase extends \advanced_testcase {
         $files =  $this->h5p_fs_fs->get_area_files($this->h5p_fs_context->id, file_storage::COMPONENT,
                 file_storage::LIBRARY_FILEAREA);
         $this->assertCount(7, $files);
+    }
+
+    /**
+     * Test get_icon_url() function behaviour.
+     *
+     * @dataProvider get_icon_url_provider
+     * @param  string  $filename  The name of the H5P file to load.
+     * @param  bool    $expected  Whether the icon should exist or not.
+     */
+    public function test_get_icon_url(string $filename, bool $expected): void {
+        global $DB;
+
+        $this->resetAfterTest();
+        $factory = new \core_h5p\factory();
+
+        $admin = get_admin();
+
+        // Prepare a valid .H5P file.
+        $path = __DIR__ . '/fixtures/'.$filename;
+
+        // Libraries can be updated when the file has been created by admin, even when the current user is not the admin.
+        $this->setUser($admin);
+        $file = helper::create_fake_stored_file_from_path($path, (int)$admin->id);
+        $factory->get_framework()->set_file($file);
+        $config = (object)[
+            'frame' => 1,
+            'export' => 1,
+            'embed' => 0,
+            'copyright' => 0,
+        ];
+
+        $h5pid = helper::save_h5p($factory, $file, $config);
+        $h5p = $DB->get_record('h5p', ['id' => $h5pid]);
+        $h5plib = $DB->get_record('h5p_libraries', ['id' => $h5p->mainlibraryid]);
+        $iconurl = $this->h5p_file_storage->get_icon_url(
+            $h5plib->id,
+            $h5plib->machinename,
+            $h5plib->majorversion,
+            $h5plib->minorversion
+        );
+        if ($expected) {
+            $this->assertStringContainsString(file_storage::ICON_FILENAME, $iconurl);
+        } else {
+            $this->assertFalse($iconurl);
+        }
+    }
+
+    /**
+     * Data provider for test_get_icon_url().
+     *
+     * @return array
+     */
+    public function get_icon_url_provider(): array {
+        return [
+            'Icon included' => [
+                'filltheblanks.h5p',
+                true,
+            ],
+            'Icon not included' => [
+                'greeting-card-887.h5p',
+                false,
+            ],
+        ];
+    }
+
+    /**
+     * Test the private method get_file, a wrapper for getting an H5P content file.
+     */
+    public function test_get_file(): void {
+
+        $this->setAdminUser();
+        $file = 'img/fake.png';
+        $h5pcontentid = 3;
+
+        // Add a file to a H5P content.
+        $this->h5p_generator->create_content_file($file, file_storage::CONTENT_FILEAREA, $h5pcontentid);
+
+        // Set get_file method accessibility.
+        $method = new ReflectionMethod(file_storage::class, 'get_file');
+        $method->setAccessible(true);
+
+        $contentfile = $method->invoke(new file_storage(), file_storage::CONTENT_FILEAREA, $h5pcontentid, $file);
+
+        // Check that it returns an instance of store_file.
+        $this->assertInstanceOf('stored_file', $contentfile);
+
+        // Add a file to editor.
+        $this->h5p_generator->create_content_file($file, 'draft', $h5pcontentid);
+
+        $editorfile = $method->invoke(new file_storage(), 'draft', $h5pcontentid, $file);
+
+        // Check that it returns an instance of store_file.
+        $this->assertInstanceOf('stored_file', $editorfile);
+    }
+
+    /**
+     * Test that a single file is added to Moodle files.
+     */
+    public function test_move_file(): void {
+
+        // Create temp folder.
+        $tempfolder = make_request_directory(false);
+
+        // Create H5P content folder.
+        $filepath = '/img/';
+        $filename = 'fake.png';
+        $h5pcontentfolder = $tempfolder . '/fakeH5Pcontent/content' . $filepath;
+        if (!check_dir_exists($h5pcontentfolder, true, true)) {
+            throw new moodle_exception('error_creating_temp_dir', 'error', $h5pcontentfolder);
+        }
+
+        $file = $h5pcontentfolder . $filename;
+        touch($file);
+
+        $h5pcontentid = 3;
+
+        // Check the file doesn't exist in Moodle files.
+        $this->assertFalse($this->h5p_fs_fs->file_exists($this->h5p_fs_context->id, file_storage::COMPONENT,
+            file_storage::CONTENT_FILEAREA, $h5pcontentid, $filepath, $filename));
+
+        // Set get_file method accessibility.
+        $method = new ReflectionMethod(file_storage::class, 'move_file');
+        $method->setAccessible(true);
+
+        $method->invoke(new file_storage(), $file, $h5pcontentid);
+
+        // Check the file exist in Moodle files.
+        $this->assertTrue($this->h5p_fs_fs->file_exists($this->h5p_fs_context->id, file_storage::COMPONENT,
+            file_storage::CONTENT_FILEAREA, $h5pcontentid, $filepath, $filename));
+    }
+
+    /**
+     * Test that a file is copied from another H5P content or the H5P editor.
+     *
+     * @return void
+     */
+    public function test_cloneContentFile(): void {
+
+        $admin = get_admin();
+        $usercontext = \context_user::instance($admin->id);
+        $this->setUser($admin);
+        // Upload a file to the editor.
+        $file = 'images/fake.jpg';
+        $filepath = '/'.dirname($file).'/';
+        $filename = basename($file);
+
+        $content = 'abcd';
+
+        $filerecord = array(
+            'contextid' => $usercontext->id,
+            'component' => 'user',
+            'filearea'  => 'draft',
+            'itemid'    => 0,
+            'filepath'  => $filepath,
+            'filename'  => $filename,
+        );
+
+        $this->h5p_fs_fs->create_file_from_string($filerecord, $content);
+
+        // Target H5P content, where the file will be cloned.
+        $targetcontent = new \stdClass();
+        $targetcontent->id = 999;
+
+        // Check the file doesn't exists before cloning.
+        $this->assertFalse($this->h5p_fs_fs->get_file($this->h5p_fs_context->id, file_storage::COMPONENT,
+            file_storage::CONTENT_FILEAREA, $targetcontent->id, $filepath, $filename));
+
+        // Copy file from the editor.
+        $this->h5p_file_storage->cloneContentFile($file, 'editor', $targetcontent);
+
+        // Check the file exists after cloning.
+        $this->assertInstanceOf(\stored_file::class, $this->h5p_fs_fs->get_file($this->h5p_fs_context->id, file_storage::COMPONENT,
+            file_storage::CONTENT_FILEAREA, $targetcontent->id, $filepath, $filename));
+
+        // Simulate that an H5P content, with id $sourcecontentid, has a file.
+        $file = 'images/fake2.jpg';
+        $filepath = '/'.dirname($file).'/';
+        $filename = basename($file);
+
+        $sourcecontentid = 111;
+        $filerecord['contextid'] = $this->h5p_fs_context->id;
+        $filerecord['component'] = file_storage::COMPONENT;
+        $filerecord['filearea'] = file_storage::CONTENT_FILEAREA;
+        $filerecord['itemid'] = $sourcecontentid;
+        $filerecord['filepath'] = $filepath;
+        $filerecord['filename'] = $filename;
+
+        $this->h5p_fs_fs->create_file_from_string($filerecord, $content);
+
+        // Check the file doesn't exists before cloning.
+        $this->assertFalse($this->h5p_fs_fs->get_file($this->h5p_fs_context->id, file_storage::COMPONENT,
+            file_storage::CONTENT_FILEAREA, $targetcontent->id, $filepath, $filename));
+
+        // Copy file from another H5P content.
+        $this->h5p_file_storage->cloneContentFile($file, $sourcecontentid, $targetcontent);
+
+        // Check the file exists after cloning.
+        $this->assertInstanceOf(\stored_file::class, $this->h5p_fs_fs->get_file($this->h5p_fs_context->id, file_storage::COMPONENT,
+            file_storage::CONTENT_FILEAREA, $targetcontent->id, $filepath, $filename));
+    }
+
+    /**
+     * Test that a given file exists in an H5P content.
+     *
+     * @return void
+     */
+    public function test_getContentFile(): void {
+
+        $file = 'img/fake.png';
+        $contentid = 3;
+
+        // Add a file to a H5P content.
+        $this->h5p_generator->create_content_file($file, file_storage::CONTENT_FILEAREA, $contentid);
+
+        // Get an existing file id.
+        $fileid = $this->h5p_file_storage->getContentFile($file, $contentid);
+        $this->assertNotNull($fileid);
+
+        // Try to get a nonexistent file.
+        $fileid = $this->h5p_file_storage->getContentFile($file, 5);
+        $this->assertNull($fileid);
+    }
+
+    /**
+     * Tests that the content folder of an H5P content is imported in the Moodle filesystem.
+     */
+    public function test_moveContentDiretory(): void {
+        global $DB;
+
+        // Create temp folder.
+        $tempfolder = make_request_directory(false);
+
+        // Create H5P content folder.
+        $h5pcontentfolder = $tempfolder . '/fakeH5Pcontent';
+        $contentfolder = $h5pcontentfolder . '/content';
+        if (!check_dir_exists($contentfolder, true, true)) {
+            throw new moodle_exception('error_creating_temp_dir', 'error', $contentfolder);
+        }
+
+        // Add content.json file.
+        touch($contentfolder . 'content.json');
+
+        // Create several folders and files inside content folder.
+        $filesexpected = array();
+        $numfolders = random_int(2, 5);
+        for ($numfolder = 1; $numfolder < $numfolders; $numfolder++) {
+            $foldername = '/folder' . $numfolder;
+            $newfolder = $contentfolder . $foldername;
+            if (!check_dir_exists($newfolder, true, true)) {
+                throw new moodle_exception('error_creating_temp_dir', 'error', $newfolder);
+            }
+            $numfiles = random_int(2, 5);
+            for ($numfile = 1; $numfile < $numfiles; $numfile++) {
+                $filename = '/file' . $numfile . '.ext';
+                touch($newfolder . $filename);
+                $filesexpected[] = $foldername . $filename;
+            }
+        }
+
+        $targeth5pcontentid = 111;
+        $this->h5p_file_storage->moveContentDirectory($h5pcontentfolder, $targeth5pcontentid);
+
+        // Get database records.
+        $sql = "SELECT concat(filepath, filename)
+                  FROM {files}
+                 WHERE filearea = :filearea AND itemid = :itemid AND component = :component AND filename != '.'";
+        $params = [
+            'component' => file_storage::COMPONENT,
+            'filearea' => file_storage::CONTENT_FILEAREA,
+            'itemid' => $targeth5pcontentid
+        ];
+        $filesdb = $DB->get_fieldset_sql($sql, $params);
+        sort($filesdb);
+
+        // Check that created files match with database records.
+        $this->assertEquals($filesexpected, $filesdb);
+    }
+
+    /**
+     * Test that an H5P content file is removed.
+     */
+    public function test_removeContentFile(): void {
+
+        $file = 'img/fake.png';
+        $filepath = '/' . dirname($file) . '/';
+        $filename = basename($file);
+        $h5pcontentid = 3;
+
+        // Add a file to a H5P content.
+        $this->h5p_generator->create_content_file($file, file_storage::CONTENT_FILEAREA, $h5pcontentid);
+
+        // Check the file exists.
+        $this->assertTrue($this->h5p_fs_fs->file_exists($this->h5p_fs_context->id, file_storage::COMPONENT,
+            file_storage::CONTENT_FILEAREA, $h5pcontentid, $filepath, $filename));
+
+        $this->h5p_file_storage->removeContentFile($file, $h5pcontentid);
+
+        // Check the file doesn't exists.
+        $this->assertFalse($this->h5p_fs_fs->file_exists($this->h5p_fs_context->id, file_storage::COMPONENT,
+            file_storage::CONTENT_FILEAREA, $h5pcontentid, $filepath, $filename));
     }
 }

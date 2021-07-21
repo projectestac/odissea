@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_html', language 'sv', version '3.8'.
+ * Strings for component 'block_html', language 'sv', version '3.11'.
  *
  * @package     block_html
  * @category    string
@@ -35,4 +35,5 @@ $string['html:addinstance'] = 'Lägg till ett ny HTML block';
 $string['html:myaddinstance'] = 'Lägg till ett nytt HTML block på Mitt Moodle';
 $string['newhtmlblock'] = '(nytt HTML-block)';
 $string['pluginname'] = 'HTML';
+$string['privacy:metadata:block'] = 'HTML-blocket lagrar all sin information inom block-undersystemet.';
 $string['search:content'] = 'Innehåll i HTML-block';

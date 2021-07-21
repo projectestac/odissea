@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_picasa', language 'eu', version '3.8'.
+ * Strings for component 'repository_picasa', language 'eu', version '3.11'.
  *
  * @package     repository_picasa
  * @category    string
@@ -30,6 +30,6 @@ $string['configplugin'] = 'Picasa biltegiaren ezarpenak';
 $string['oauthinfo'] = '<p>Plugin hau erabiltzeko zure gunea Google-n erregistratu behar duzu, <a href="{$a->docsurl}">Google OAuth 2.0 setup</a> dokumentazioan azaltzen den moduan.</p><p>Erregistro-prozesuan hurrengo URLa \'Authorized Redirect URIs\' gisa zehaztu beharko duzu:</p><p>{$a->callbackurl}</p><p>Behin erregistroa eginda, bezeroaren ID eta sekretu bat jasoko dituzu, eta horiek erabili ahalko dituzu Google Drive eta Picasa pluginak konfiguratzeko.</p>';
 $string['picasa:view'] = 'ikusi Picasa biltegia';
 $string['pluginname'] = 'Picasa Web Albuma';
-$string['privacy:metadata:repository_picasa'] = 'Picasa Web Albuma biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_picasa'] = 'Picasa Web Albuma biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_picasa:searchtext'] = 'Picasa biltegiko erabiltzailearen bilaketaren testua.';
 $string['secret'] = 'Sekretua';

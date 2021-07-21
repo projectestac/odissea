@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpotreport_overview', language 'el', version '3.8'.
+ * Strings for component 'hotpotreport_overview', language 'el', version '3.11'.
  *
  * @package     hotpotreport_overview
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Αναφορά επισκόπησης';
+$string['privacy:metadata'] = 'Το άρθρωμα αναφοράς επισκόπησης δεν αποθηκεύει καθόλου προσωπικά δεδομένα.';

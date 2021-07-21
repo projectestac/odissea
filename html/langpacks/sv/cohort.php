@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'sv', version '3.8'.
+ * Strings for component 'cohort', language 'sv', version '3.11'.
  *
  * @package     cohort
  * @category    string
@@ -64,7 +64,7 @@ $string['idnumber'] = 'Kohort-ID';
 $string['invalidtheme'] = 'Kohorttemat finns inte';
 $string['memberscount'] = 'Kohortstorlek';
 $string['name'] = 'Namn';
-$string['namecolumnmissing'] = 'Det är något fel med formatet på CSV-filen. Vänligen kontrollera att den innehåller rätt kolumnnamn. Om du vill lägga till användare i en kohort går du till \'Ladda upp användare\' under <em>Administrera Webbplats -> Användare</em>.';
+$string['namecolumnmissing'] = 'Det är något fel med formatet på CSV-filen. Vänligen kontrollera att den innehåller rätt kolumnnamn. Om du vill lägga till användare i en kohort går du till \'Ladda upp användare\' under <em>Administrera Webbplats &#10132; Användare</em>.';
 $string['namefieldempty'] = 'Fältnamn får inte lämnas tomt';
 $string['newidnumberfor'] = 'Nytt ID för kohort {$a}';
 $string['newnamefor'] = 'Nytt namn för kohort {$a}';

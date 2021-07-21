@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_none', language 'eu', version '3.8'.
+ * Strings for component 'auth_none', language 'eu', version '3.11'.
  *
  * @package     auth_none
  * @category    string
@@ -26,5 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'Erabiltzaileek berehala eman dezakete izena eta baliozko kontuak sortu, kanpo-zerbitzari baten aurkako autentifikaziorik gabe eta posta elektroniko bidez berretsi gabe. Kontuz aukera hau erabiltzean - honek sor ditzakeen segurtasun eta kudeaketa-arazoak kontuan hartu.';
+$string['checknoauth'] = 'Autentifikaziorik ez';
+$string['checknoauthdetails'] = '<p><em>Autentifikatu gabe</em> plugina ez dago diseinatuta lanean dauden guneetarako. Mesedez, desgaitu aukera hori garapenerako proba-zerbitzaria ez bada.</p>';
+$string['checknoautherror'] = '\'Autentifikatu gabe\' plugina ezin da erabili lanean dauden guneetan.';
+$string['checknoauthok'] = '\'Autentifikatu gabe\' plugina desgaituta dago.';
 $string['pluginname'] = 'Autentifikatu gabe';
 $string['privacy:metadata'] = 'Autentifikatu gabe autentifikazio-pluginak ez du datu pertsonalik biltzen.';

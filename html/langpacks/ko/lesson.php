@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ko', version '3.8'.
+ * Strings for component 'lesson', language 'ko', version '3.11'.
  *
  * @package     lesson
  * @category    string
@@ -134,6 +134,7 @@ $string['description'] = '서술';
 $string['detailedstats'] = '자세한 통계';
 $string['didnotanswerquestion'] = '이 질문에 답하지 않았음';
 $string['didnotreceivecredit'] = '점수를 못 받음';
+$string['disabled'] = '사용불가';
 $string['displaydefaultfeedback'] = '기본 피드백 사용';
 $string['displaydefaultfeedback_help'] = '활성화되면 특정 질문에 대해 응답이 발견되지 않으면 "정답입니다" 혹은 "틀린 답입니다"라는 기본 응답이 보여질 것입니다.';
 $string['displayinleftmenu'] = '왼쪽 메뉴를 보일까요?';
@@ -281,6 +282,7 @@ $string['nodeadline'] = '무한정';
 $string['noessayquestionsfound'] = '이 완전학습에는 에세이 질문이 없음.';
 $string['nohighscores'] = '높은 점수 없음';
 $string['nolessonattempts'] = '이 학습에 대해 아무런 시도도 없었음.';
+$string['nolessonattemptsgroup'] = '이 강좌의 {$a} 그룹 멤버중 아무도 시도하지 않았습니다.';
 $string['nooneansweredcorrectly'] = '아무도 정답을 맞추지 못했음.';
 $string['nooneansweredthisquestion'] = '아무도 이 질문에 답하지 않았음.';
 $string['noonecheckedthis'] = '아무도 이것을 확인하지 않았음.';
@@ -391,7 +393,7 @@ $string['studentoneminwarning'] = '경고: 학습 종료 시간이 1분 정도 �
 $string['studentresponse'] = '{$a} 의 반응';
 $string['submit'] = '제출';
 $string['submitname'] = '이름 입력';
-$string['teacherjumpwarning'] = '이 학습에서는 {$a->cluster}나 {$a->unseen} 으로의 이동이 사용되고 있습니다. 하지만 다음 페이지 이동 기능을 사용할 수 있습니다. 이들 이동을 점검하기 위해서는 학생 자격으로 로그인 하십시오.';
+$string['teacherjumpwarning'] = '이 완전학습에서 {$a->cluster}나 {$a->unseen} 으로의 이동 과정이 사용되고 있습니다. 다음 페이지 이동이 대신 사용될 수 있습니다. 이들 이동을 점검하기 위해서는 학생으로 로그인하십시오.';
 $string['teacherongoingwarning'] = '현재 점수는 학생들에게만 보여집니다. 현재 점수를 확인하기 위해서는 학생으로 로그인하십시오.';
 $string['teachertimerwarning'] = '타이머는 학생들을 위해서만 작동됩니다. 학생으로 로그인 하여 타이머를 점검하세요.';
 $string['thatsthecorrectanswer'] = '올바른 답 입니다.';

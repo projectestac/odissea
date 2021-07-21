@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'gl', version '3.8'.
+ * Strings for component 'repository_flickr_public', language 'gl', version '3.11'.
  *
  * @package     repository_flickr_public
  * @category    string
@@ -42,10 +42,10 @@ $string['emailaddress'] = 'Enderezo de correo';
 $string['flickr_public:view'] = 'Empregar o repositorio público de Flickr no selector de ficheiros';
 $string['fulltext'] = 'Texto completo';
 $string['information'] = '<div>Obteña unha <a href="http://www.flickr.com/services/api/keys/">chave da APi de Flickr</a> para o seu sitio Moodle. </div>';
-$string['invalidemail'] = 'Conta de coreo para Flickr incorrecta';
+$string['invalidemail'] = 'Conta de correo para Flickr incorrecta';
 $string['license'] = 'Licenza';
 $string['modification'] = 'Quero ser quen de modificar as imaxes';
-$string['notitle'] = 'sen-título';
+$string['notitle'] = 'sen título';
 $string['nullphotolist'] = 'Non hai fotos nesta conta';
 $string['pluginname'] = 'Flickr público';
 $string['pluginname_help'] = 'Repositorio en flickr.com';

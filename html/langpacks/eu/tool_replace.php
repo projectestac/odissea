@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'eu', version '3.8'.
+ * Strings for component 'tool_replace', language 'eu', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = 'Saltatu beharreko taula gehigarriak';
+$string['additionalskiptables_desc'] = 'Datu-basean bilatu eta ordezkatzean alde batera utzi behar diren taulen zerrenda bat (komaz banatuta).';
 $string['cannotfit'] = 'Ordezkapena jatorrizkoa baino luzeagoa da eta laburtzea ez dago baimenduta, ezin da jarraitu.';
 $string['disclaimer'] = 'Eragiketaren arriskuak ulertzen ditut';
 $string['doit'] = 'Bai, egin!';

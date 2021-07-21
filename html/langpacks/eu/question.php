@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'eu', version '3.8'.
+ * Strings for component 'question', language 'eu', version '3.11'.
  *
  * @package     question
  * @category    string
@@ -86,7 +86,7 @@ $string['categorynamewithcount'] = '{$a->name} ({$a->questioncount})';
 $string['categorynamewithidnumber'] = '{$a->name} [{$a->idnumber}]';
 $string['categorynamewithidnumberandcount'] = '{$a->name} [{$a->idnumber}] ({$a->questioncount})';
 $string['changeoptions'] = 'Aldatu aukerak';
-$string['changepublishstatuscat'] = '<a href="{$a->caturl}"> "{$a->name}"</a> kategoriak, "{$a->coursename}" ikastarokoa, bere <strong>{$a->changefrom} truke egoera beste honetara aldatuko du {$a->changeto}</strong>.';
+$string['changepublishstatuscat'] = '"{$a->coursename}" ikastaroaren <a href="{$a->caturl}"> "{$a->name}"</a> kategoriak bere truke egoera {$a->changefrom} egoeratik {$a->changeto} egoerara aldatuko du.';
 $string['check'] = 'Egiaztatu';
 $string['chooseqtypetoadd'] = 'Aukeratu gehitu nahi duzun galdera mota';
 $string['clearwrongparts'] = 'Garbitu erantzun okerrak';
@@ -207,7 +207,7 @@ $string['flagthisquestion'] = 'Markatu galdera hau';
 $string['formquestionnotinids'] = 'Questionids-en ez dagoen galdera du fomularioak';
 $string['fractionsnomax'] = 'Erantzunetako batek %100 izan behar du galdera honetako gehienezko puntuazioa lortu ahal izateko.';
 $string['generalfeedback'] = 'Galderaren feedback orokorra';
-$string['generalfeedback_help'] = 'Galderaren feedback orokorra galdera erantzun ondoren erakusten zaio ikasleari. Feedback zehatzak ez bezala, galdera- mota eta ikasleak emandako erantzunaren araberakoa dena, feedback orokorra berdina da ikasle guztientzat.
+$string['generalfeedback_help'] = 'Galderaren feedback orokorra galdera erantzun ondoren erakusten zaio ikasleari. Erantzunaren feedback zehatzak ez bezala, galdera-mota eta ikasleak emandako erantzunaren araberakoa dena, feedback orokorra berdina da ikasle guztientzat.
 
 Galderaren feedback orokorra erantzun egokia erakusteko eta azaltzeko erabil dezakezu, eta agian informazio gehiago erakusten duen estekaren bat gehi dezakezu galdera ulertu ez duenarentzat.';
 $string['getcategoryfromfile'] = 'Hartu kategoria fitxategitik';
@@ -260,11 +260,11 @@ $string['makechildof'] = 'Bihurtu \'{$a}\'-ren ondorengo';
 $string['makecopy'] = 'Egin kopia';
 $string['maketoplevelitem'] = 'Mugitu goragoko mailara';
 $string['manualgradeinvalidformat'] = 'Hau ez da zenbaki baliagarria.';
-$string['manualgradeoutofrange'] = 'Kalifikazio hau ibilartetik kanpo dago.';
+$string['manualgradeoutofrange'] = 'Kalifikazio hau ibiltartetik kanpo dago.';
 $string['manuallygraded'] = 'Eskuz {$a->mark} kalifikazioa eman zaio eta hurrengo iruzkina du: {$a->comment}';
 $string['mark'] = 'Puntuazioa';
-$string['markedoutof'] = 'Honela puntuatu';
-$string['markedoutofmax'] = 'Honela puntuatu  {$a}';
+$string['markedoutof'] = 'Gehienezko kalifikazioa';
+$string['markedoutofmax'] = 'Gehienezko {$a}(e)tik kalifikatuta';
 $string['markoutofmax'] = '{$a->mark} gehienezko {$a->max}(e)tik';
 $string['marks'] = 'Puntuazioak';
 $string['matchgrades'] = 'Lotu kalifikazioak';
@@ -366,7 +366,7 @@ $string['privacy:metadata:database:question_attempts:flagged'] = 'Erabiltzaileak
 $string['privacy:metadata:database:question_attempts:responsesummary'] = 'Galderaren erantzunaren laburpena.';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'Galdera-saiakera eguneratu zeneko unea.';
 $string['privacy:metadata:link:qbehaviour'] = 'Galderen sistemak galdera-jokaera plugin motaren erabilera egiten du.';
-$string['privacy:metadata:link:qformat'] = 'Galderen sistemak galdera-formatua plugin motaren erabilera egiten du galderak formatu ezberdinetan inportatu eta esportatzeko.';
+$string['privacy:metadata:link:qformat'] = 'Galderen sistemak galderen inportatze/esportatze formatuko plugin motaren erabilera egiten du galderak formatu ezberdinetan inportatu eta esportatzeko.';
 $string['privacy:metadata:link:qtype'] = 'Galderen sistemak galdera mota plugin motarekin aritzen da, eta bertan galdera mota ezberdinak daude.';
 $string['published'] = 'partekatuta';
 $string['qtypeveryshort'] = 'T';

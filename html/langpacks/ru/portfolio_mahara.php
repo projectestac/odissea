@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_mahara', language 'ru', version '3.8'.
+ * Strings for component 'portfolio_mahara', language 'ru', version '3.11'.
  *
  * @package     portfolio_mahara
  * @category    string
@@ -47,5 +47,7 @@ $string['pf_description'] = 'Эта служба позволяет пользо
 <ul><li> <em>Зависимость:</em> Вы также должны <strong>опубликовать</strong> службу «Поставщик учетных данных SSO» для сайта «{$a}». </li><li> <em>Зависимость:</em> Вы также должны <strong>подписаться</strong> на службу «Поставщик услуг SSO» сайта «{$a}».</li><li> <em>Зависимость:</em> Вы также должны включить плагин аутентификации «Аутентификация  для пользователей сети MNet». </li></ul><br />';
 $string['pf_name'] = 'Портфолио Mahara';
 $string['pluginname'] = 'Портфолио Mahara';
+$string['privacy:metadata'] = 'Этот плагин отправляет внешние данные в связанное приложение Mahara. Он не хранит данные локально.';
+$string['privacy:metadata:data'] = 'Персональные данные, передаваемые из подсистемы портфолио.';
 $string['senddisallowed'] = 'Сейчас Вы не можете передать файлы на Mahara';
 $string['url'] = 'URL';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'ja', version '3.8'.
+ * Strings for component 'qtype_multichoice', language 'ja', version '3.11'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -41,7 +41,7 @@ $string['choiceno'] = '選択肢 {$a}';
 $string['choices'] = '利用可能な選択肢';
 $string['clearchoice'] = '私の選択をクリアする';
 $string['clozeaid'] = '足りない言葉を入力してください。';
-$string['correctansweris'] = '正答: {$a}';
+$string['correctansweris'] = '正解: {$a}';
 $string['correctanswersare'] = '正解は次のとおりです: {$a}';
 $string['correctfeedback'] = '正解すべてに対するフィードバック';
 $string['deletedchoice'] = '受験開始後、この選択肢は削除されました。';
@@ -66,9 +66,17 @@ $string['pluginname_help'] = '問題 (イメージを含む) に対して解答�
 $string['pluginnameadding'] = '多肢選択問題の追加';
 $string['pluginnameediting'] = '多肢選択問題の編集';
 $string['pluginnamesummary'] = '所定の一覧より単一または複数の解答を選択することができます。';
-$string['privacy:metadata'] = '多肢選択問題タイププラグインはいかなる個人データも保存しません。';
+$string['privacy:metadata'] = '多肢選択問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:preference:answernumbering'] = 'どのナンバリングスタイル (「1, 2, 3, ...」「a, b, c, ...」等) を使用しますか。';
+$string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
+$string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
+$string['privacy:preference:showstandardinstruction'] = '標準インストラクションを表示するかどうか指定します。';
+$string['privacy:preference:shuffleanswers'] = '解答を自動的にシャッフルするかどうか指定します。';
+$string['privacy:preference:single'] = 'ラジオボタンを使用した単一解答またはチェックボックスを使用した複数解答を指定します。';
 $string['selectmulti'] = '1つまたはそれ以上選択してください:';
 $string['selectone'] = '1つ選択してください:';
+$string['showstandardinstruction'] = '標準インストラクションを表示する';
+$string['showstandardinstruction_help'] = '多肢選択解答の前に「1つを選択する」または「1つまたはそれ以上を選択する」のインストラクションを表示するか選択してください。';
 $string['shuffleanswers'] = '選択肢をシャッフルしますか?';
 $string['shuffleanswers_desc'] = 'それぞれの受験時にデフォルトで答えをランダムにシャッフルするかどうか指定します。';
 $string['shuffleanswers_help'] = 'この設定を有効にした場合、それぞれの受験で答えの順番がランダムにシャッフルされます。小テスト設定の「問題内部をシャッフルする」を「Yes」にする必要があります。';

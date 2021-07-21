@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'nl', version '3.8'.
+ * Strings for component 'enrol', language 'nl', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -63,6 +63,7 @@ $string['enrolmentnew'] = 'Nieuwe aanmelding in {$a}';
 $string['enrolmentnewuser'] = '{$a->user} is aangemeld bij de cursus "{$a->course}"';
 $string['enrolmentoptions'] = 'Aanmeldingsopties';
 $string['enrolments'] = 'Aanmeldingen';
+$string['enrolmentupdatedforuser'] = 'De aanmelding voor gebruiker "{$a->fullname}" is aangepast';
 $string['enrolnotpermitted'] = 'Je hebt het recht niet om iemand aan te melden in deze cursus';
 $string['enrolperiod'] = 'Aanmeldingsperiode';
 $string['enroltimecreated'] = 'Aanmelding aangemaakt';
@@ -115,7 +116,7 @@ $string['noexistingparticipants'] = 'Er bestaan geen deelnemers';
 $string['nogroup'] = 'Geen groep';
 $string['noguestaccess'] = 'Gasten hebben geen toegang tot deze cursus. Probeer aan te melden.';
 $string['none'] = 'Geen';
-$string['notenrollable'] = 'Je kunt je nu niet aanmelden in deze cursus';
+$string['notenrollable'] = 'Je kunt je nu niet aanmelden in deze cursus.';
 $string['notenrolledusers'] = 'Andere gebruikers';
 $string['otheruserdesc'] = 'Volgende gebruikers zijn niet aangemeld in deze cursus, maar hebben er wel rollen geërfd of toegewezen.';
 $string['participationactive'] = 'Actief';
@@ -155,8 +156,9 @@ $string['totalunenrolledusers'] = '{$a} afgemelde gebruikers';
 $string['unassignnotpermitted'] = 'Je hebt het recht niet om rollen te verwijderen in deze cursus';
 $string['unenrol'] = 'Zeg lidmaatschap op';
 $string['unenrolconfirm'] = 'Wil je echt gebruiker "{$a->user}" van cursus "{$a->course}" afmelden (was aangemeld via "{$a->enrolinstancename}") ?';
+$string['unenrolleduser'] = 'De gebruiker "{$a->fullname}"  is uitgeschreven voor de cursus';
 $string['unenrolme'] = 'Zeg mijn lidmaatschap van {$a} op';
-$string['unenrolnotpermitted'] = 'Je hebt het recht niet of je kunt deze gebruiker niet afmelden van deze cursus.';
+$string['unenrolnotpermitted'] = 'Je hebt het recht niet om deze gebruiker af te melden uit deze cursus.';
 $string['unenrolroleusers'] = 'Gebruikers afmelden';
 $string['uninstallmigrating'] = 'Migreren van "{$a}" aanmeldingen';
 $string['unknowajaxaction'] = 'Onbekende actie gevraagd';

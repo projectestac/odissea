@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ar', version '3.8'.
+ * Strings for component 'enrol_paypal', language 'ar', version '3.11'.
  *
  * @package     enrol_paypal
  * @category    string
@@ -54,7 +54,7 @@ $string['messageprovider:paypal_enrolment'] = 'رسائل انضمام PayPal';
 $string['nocost'] = 'لا تكاليف مالية مفروضة على الانضمام إلى هذا المقرر الدراسي!';
 $string['paypal:config'] = 'تهيئة عينة انضمام PayPal';
 $string['paypal:manage'] = 'إدارة المستخدمين المنضمين';
-$string['paypal:unenrol'] = 'إلغاء تسجيل المستخدمين من مقرر';
+$string['paypal:unenrol'] = 'إلغاء انضمام المستخدمين إلى المقرر الدراسي';
 $string['paypal:unenrolself'] = 'إلغاء انضمامه إلى المقرر الدراسي';
 $string['paypalaccepted'] = 'تم قبول التبرع المدفوع';
 $string['pluginname'] = 'PayPal';

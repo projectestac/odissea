@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_direct', language 'gl', version '3.8'.
+ * Strings for component 'gradeimport_direct', language 'gl', version '3.11'.
  *
  * @package     gradeimport_direct
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['direct:view'] = 'Importar cualificacións dende CSV';
+$string['direct:view'] = 'Importar cualificacións dende follas de cálculo';
 $string['pluginname'] = 'Pegar dende folla de cálculo';
-$string['privacy:metadata'] = 'O engadido de importar cualificacións dende folla de cálculo non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O engadido de Importar cualificacións dende folla de cálculo non almacena ningún dato persoal.';
 $string['userdata'] = 'Axudar a copiar datos a este formato.';
-$string['userdata_help'] = 'As cualificacións poden copiarse e pegar dende unha folla de cálculo no libro de cualificacións. A folla de cálculo debe ter unha columna que contén datos de identidade do usuario: nome de usuario ou número de identificación ou enderezo de correo. Cada columna para a importación debería ter unha cabeceira de columna.';
+$string['userdata_help'] = 'As cualificacións pódense copiar e pegar dende unha folla de cálculo no libro de cualificacións. A folla de cálculo debe ter unha columna que contén datos de identidade do usuario: nome de usuario ou número de identificación ou enderezo de correo. Cada columna para a importación debería ter unha cabeceira de columna.';
 $string['userdata_link'] = 'grade/import/direct/index';

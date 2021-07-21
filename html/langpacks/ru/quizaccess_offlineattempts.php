@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_offlineattempts', language 'ru', version '3.8'.
+ * Strings for component 'quizaccess_offlineattempts', language 'ru', version '3.11'.
  *
  * @package     quizaccess_offlineattempts
  * @category    string
@@ -35,3 +35,4 @@ $string['offlineattemptserror'] = 'Невозможно выполнить по�
 $string['offlinedatamessage'] = 'Вы использовали эту попытку с помощью мобильного устройства. Данные были сохранены на этом сайте {$a} назад.';
 $string['pleaseconfirm'] = 'Проверьте и подтвердите, что у вас нет несохраненной работы.';
 $string['pluginname'] = 'Правило доступа к автономным попыткам';
+$string['privacy:metadata'] = 'Плагин правила доступа к тесту «Автономные попытки» не хранит никаких личных данных.';

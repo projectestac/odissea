@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'eu', version '3.8'.
+ * Strings for component 'editor_tinymce', language 'eu', version '3.11'.
  *
  * @package     editor_tinymce
  * @category    string
@@ -335,7 +335,7 @@ $string['common:invalid_data_number'] = '{#field}(e)k zenbakia izan behar du';
 $string['common:invalid_data_size'] = '{#field}(e)k zenbakia edo ehunekoa izan behar du';
 $string['common:more_colors'] = 'Kolore gehiago...';
 $string['common:not_set'] = '-- Ezarri gabea --';
-$string['common:popup_blocked'] = 'Sentitzen dugu baina zabaltzen diren leihoen blokeoak aplikazioaren funtzioak dakartzan leiho bat desgaitu du. Blokeo hori kendu egin behar duzu gune honetarako funtzio guztiak erabili ahal izateko.';
+$string['common:popup_blocked'] = 'Sentitzen dugu baina popup leihoen blokeoak aplikazioaren funtzioak dakartzan leiho bat desgaitu du. Popup leihoen blokeoa kendu behar duzu gune honetarako funtzio guztiak erabili ahal izateko.';
 $string['common:update'] = 'Eguneratu';
 $string['common:value'] = '(balioa)';
 $string['contextmenu:align'] = 'Lerrokatzea';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'eu', version '3.8'.
+ * Strings for component 'lti', language 'eu', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -42,6 +42,8 @@ $string['activate'] = 'Aktibatu';
 $string['activatetoadddescription'] = 'Tresna hau aktibatu behar duzu deskribapena gehitu baino lehen.';
 $string['active'] = 'Aktiboa';
 $string['activity'] = 'Jarduera';
+$string['add_ltiadv'] = 'Gehitu LTI Advantage';
+$string['add_ltilegacy'] = 'Gehitu Legacy LTI';
 $string['addnewapp'] = 'Gaitu kanpoko aplikazioa';
 $string['addserver'] = 'Gehitu konfiantzazko beste zerbitzari bat';
 $string['addtype'] = 'Gehitu aurretik konfiguratutako tresna';
@@ -62,6 +64,7 @@ $string['basicltifieldset'] = 'Eremu-multzo pertsonalizatuaren adibidea';
 $string['basicltiintro'] = 'Jardueraren deskribapena';
 $string['basicltiname'] = 'Jardueraren izena';
 $string['basicltisettings'] = 'Oinarrizko Ikasteko Tresnaren Elkarreragingarritasunaren (LTI) ezarpenak';
+$string['cachedef_keyset'] = 'Tresnen gako-multzoen informazioa gordetzen du';
 $string['cancel'] = 'Utzi';
 $string['cancelled'] = 'Bertan behera utzia';
 $string['cannot_delete'] = 'Ezin dituzu tresnaren ezarpenak ezabatu';
@@ -76,7 +79,7 @@ $string['clientidadmin_help'] = 'Bezeroaren IDa erreminta bat identifikatzeko ba
 $string['comment'] = 'Iruzkina';
 $string['configpassword'] = 'Urrutiko tresnan lehenetsitako pasahitza';
 $string['configpreferheight'] = 'Lehenetsitako altuera';
-$string['configpreferwidget'] = 'Lehenetsi gailuaren abiaraztea';
+$string['configpreferwidget'] = 'Gailuaren abiarazteko lehenetsitako widget-a';
 $string['configpreferwidth'] = 'Lehenetsitako zabalera';
 $string['configresourceurl'] = 'Baliabideen lehenetsitako URLa';
 $string['configtoolurl'] = 'Urrutiko tresnan lehenetsitako URLa';
@@ -84,7 +87,11 @@ $string['configtypes'] = 'Gaitu LTI aplikazioak';
 $string['configured'] = 'Konfiguratua';
 $string['confirmtoolactivation'] = 'Ziur zaude tresna hau aktibatu nahi duzula?';
 $string['contentitem'] = 'Eduki-Item Mezua';
+$string['contentitem_deeplinking'] = 'Estekatze Sakona (Deep Linking) onartzen du  (Content-Item Message)';
+$string['contentitem_deeplinking_help'] = 'Hautatuz gero, \'Aukeratu edukia\' aukera eskuragarri izango da kanpoko tresna bat gehitzean.';
 $string['contentitem_help'] = 'Hautatuz gero, \'Aukeratu edukia\' aukera eskuragarri izango da kanpoko tresna bat gehitzean.';
+$string['contentitem_multiple_description'] = 'Hurrengo elementuak zure ikastarora gehituko dira:';
+$string['contentitem_multiple_graded'] = 'Kalifikatutako jarduera (Gehienezko kalifikazioa: {$a})';
 $string['course_tool_types'] = 'Ikastaroko tresnak';
 $string['courseactivitiesorresources'] = 'Ikastaroko jarduerak edo baliabideak';
 $string['courseid'] = 'Ikastaroaren ID zenbakia';
@@ -108,11 +115,12 @@ $string['default_launch_container_help'] = 'Hasierako edukiontziak tresnaren itx
 
 * **Lehenetsi ** - Erabili tresnaren ezarpenek zehaztutako  hasierako edukiontzia.
 * **Enbotatu ** - Tresna Moodleren leihoan bertan agertzen da, jarduera-mota gehienek egiten duten antzeko moduan.
-* **Blokerik gabe enbotatu ** - resna Moodleren leihoan bertan agertzen da, orrialdearen goialdeko nabigazio-kontrolekin.
+* **Blokerik gabe enbotatu ** - Tresna Moodleren leihoan bertan agertzen da, orrialdearen goialdeko nabigazio-kontrolekin.
 * *Leiho berria ** - Tresna leiho berri batean irekitzen da, espazio osoa betez.
-Nabigatzailearen arabera, fitxa edo leiho berria batean irekiko da.
+Nabigatzailearen arabera, fitxa edo popup leiho berria batean irekiko da.
 Baliteke nabigatzaileak leiho berria irekiera eragoztea.';
 $string['delegate'] = 'Utzi irakaslearen esku';
+$string['delegate_tool'] = 'Estekatze Sakonean zehaztutakoa edo Utzi irakaslearen eskuetan';
 $string['delete'] = 'Ezabatu';
 $string['delete_confirmation'] = 'Ziur zaude aurretik konfiguratutako tresna ezabatu nahi duzula?';
 $string['deletetype'] = 'Ezabatu aurretik konfiguratutako tresna';
@@ -133,6 +141,14 @@ $string['donot'] = 'Ez bidali';
 $string['donotaccept'] = 'Ez onartu';
 $string['donotallow'] = 'Ez baimendu';
 $string['duplicateregurl'] = 'Erregistro URL hau jadanik erabiltzen ari da';
+$string['dynreg_update_btn_new'] = 'Erregistratu kanpoko tresna berri gisa';
+$string['dynreg_update_btn_update'] = 'Eguneratu';
+$string['dynreg_update_name'] = 'Tresnaren izena';
+$string['dynreg_update_notools'] = 'Ez dago tresnarik testuinguru honetan.';
+$string['dynreg_update_text'] = 'Erregistratutako domeinuarekin lotutako tresnak daude jada. Lehendik instalatutako kanpoko tresna eguneratu edo kanpoko tresna berri bat sortu nahi duzu?';
+$string['dynreg_update_url'] = 'URL oinarria';
+$string['dynreg_update_version'] = 'LTI bertsioa';
+$string['dynreg_update_warn_dupdomain'] = 'Ez da gomendagarria domeinu bereko kanpoko tresna anitz izatea.';
 $string['editdescription'] = 'Egin klik hemen tresna deskribatzeko';
 $string['edittype'] = 'Editatu aurretik konfiguratutako tresna';
 $string['embed'] = 'Enbotatu';
@@ -181,7 +197,7 @@ Gainera,  tresna honen hornitzailearen web-zerbitzuetako eskaera guztiek SSL era
 Aukera hau gaituz gero, baieztatu Moodle gune honek eta tresna-hornitzaileak SSL onartzen dutela.';
 $string['forced_help'] = 'Ezarpen hau ikastaro edo  gunearen mailan konfiguratu da. Litekeena da interfaz honetatik ezin aldatzea.';
 $string['generaltool'] = 'Tresna orokorra';
-$string['global_tool_types'] = 'Aurretik konfiguratutako tresna orokorrak';
+$string['global_tool_types'] = 'Aurretik konfiguratutako tresnak';
 $string['grading'] = 'Kalifikazio-ibilbidea';
 $string['icon_url'] = 'Ikonoaren URLa';
 $string['icon_url_help'] = 'Ikonoaren URLak jarduera honetarako ikastaro-zerrendan erakusten den ikonoa aldatzea ahalbidetzen du. Lehenetsitako LTI ikonoa erabili ordez, jarduera motari dagokion ikono bat zehaz daiteke.';
@@ -198,6 +214,10 @@ $string['initiatelogin'] = 'Saio-hasiera abiarazteko URLa';
 $string['initiatelogin_help'] = 'Saio-hasiera abiarazteko bidaliko diren eskaerak bidaliko diren erremintaren URLa. URL hau behar da erremintara mezu bat ondo bidali ahal izateko.';
 $string['invalidid'] = 'LTIren IDa ez zen egokia';
 $string['jwtsecurity'] = 'LTI 1.3';
+$string['keytype'] = 'Gako-publiko mota';
+$string['keytype_help'] = 'Tresna hau balidatzeko erabilitako autentifikazio-metodoa.';
+$string['keytype_keyset'] = 'Gako-multzoaren URLa';
+$string['keytype_rsa'] = 'RSA gakoa';
 $string['launch_in_moodle'] = 'Abiarazi tresna Moodlen';
 $string['launch_in_popup'] = 'Abiarazi tresna pop-up-ean';
 $string['launch_url'] = 'Tresnaren URLa';
@@ -211,15 +231,17 @@ $string['launchinpopup_help'] = 'Hasierako edukiontziak tresnaren itxurari eragi
 
 * **Lehenetsi ** - Erabili tresnaren ezarpenek zehaztutako  hasierako edukiontzia.
 * **Enbotatu ** - Tresna Moodleren leihoan bertan agertzen da, jarduera-mota gehienek egiten duten antzeko moduan.
-* **Blokerik gabe enbotatu ** - resna Moodleren leihoan bertan agertzen da, orrialdearen goialdeko nabigazio-kontrolekin.
+* **Blokerik gabe enbotatu ** - Tresna Moodleren leihoan bertan agertzen da, orrialdearen goialdeko nabigazio-kontrolekin.
 * *Leiho berria ** - Tresna leiho berri batean irekitzen da, espazio osoa betez.
-Nabigatzailearen arabera, fitxa edo leiho berria batean irekiko da.
+Nabigatzailearen arabera, fitxa edo popup leiho berri batean irekiko da.
 Baliteke nabigatzaileak leiho berria irekiera eragoztea.';
 $string['launchoptions'] = 'Abiarazte-aukerak';
 $string['leaveblank'] = 'Hutsik utzi behar ez badituzu';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Gehitu ikastaroaren araberako tresna ezarpenak';
 $string['lti:addinstance'] = 'Gehitu kanpoko beste tresna bat';
+$string['lti:addmanualinstance'] = 'Gehitu eskuz konfiguratutako tresna bat';
+$string['lti:addpreconfiguredinstance'] = 'Gehitu aurretik konfiguratutako tresna bat';
 $string['lti:admin'] = 'Tresna abiaraztean izan zaitez kudeatzailea';
 $string['lti:grade'] = 'Ikusi kanpoko tresnak itzuli dituen kalifikazioak';
 $string['lti:manage'] = 'Irakaslea izan erreminta abiarazten denean';
@@ -293,9 +315,15 @@ $string['optionalsettings'] = 'Aukerako ezarpenak';
 $string['organization'] = 'Erakundearen xehetasunak';
 $string['organizationdescr'] = 'Erakundearen deskribapena';
 $string['organizationid'] = 'Erakundearen IDa';
+$string['organizationid_default'] = 'Lehenetsitako erakundearen IDa';
+$string['organizationid_default_help'] = 'Erakundearen IDrako lehenetsitako balioa. Gunearen IDak Moodleko instalazio hau identifikatzen du.';
 $string['organizationid_help'] = 'Moodle instantzia honetarako identifikadore bakarra. Normalean, erakundearen DNS-izena erabiltzen da.
 
 Eremu hau hutsik utziz gero, lehenetsitako balioa Moodle gune honen zerbitzariaren izena izango da.';
+$string['organizationidguid'] = 'Erakundearen IDa';
+$string['organizationidguid_help'] = 'Moodle instantzia honen identifikatzaile bakarra tresnara bidali da Plataformako Instantziaren GUID gisa.
+
+Eremu hau hutsik utziz gero, lehenetsitako balioa erabiliko da.';
 $string['organizationurl'] = 'Erakundearen URLa';
 $string['organizationurl_help'] = 'Moodle instantzia honen oinarrizko URLa.
 
@@ -321,7 +349,7 @@ $string['pending'] = 'Zain';
 $string['pluginadministration'] = 'Kanpoko tresnaren kudeaketa';
 $string['pluginname'] = 'Kanpoko tresna';
 $string['preferheight'] = 'Hobetsitako altuera';
-$string['preferwidget'] = 'Hobetsitako gailua abiarazi';
+$string['preferwidget'] = 'Gailuaren abiarazteko hobetsitako widget-a';
 $string['preferwidth'] = 'Hobetsitako zabalera';
 $string['press_to_submit'] = 'Egin klik jarduera hau abiarazteko';
 $string['privacy'] = 'Pribatutasuna';
@@ -353,6 +381,8 @@ $string['privacy:metadata:useridnumber'] = 'LTI kontsumitzailera sartzen ari den
 $string['privacy:metadata:username'] = 'LTI kontsumitzailera sartzen ari den erabiltzailearen erabiltzaile-izena';
 $string['publickey'] = 'Gako publikoa';
 $string['publickey_help'] = 'Erremintak eskainitako gako publikoa (PEM formatuan), jasotako mezuen sinadurak baimendu eta zerbitzu eskaerak egiaztatzeko.';
+$string['publickeyset'] = 'Gako-multzo publikoa';
+$string['publickeyset_help'] = 'Egiaztatu beharreko tresnaren mezu eta zerbitzu-eskaeren sinadurak baimentzeko gako publikoak eskuratzeko gune honek erabiliko duen gako-multzo publikoa.';
 $string['quickgrade'] = 'Baimendu kalifikazio azkarra';
 $string['quickgrade_help'] = 'Gaituz gero, tresna asko orri batean kalifika daitezke. Gehitu kalifikazio eta iruzkinak. Gero, egin klik "Gorde nire feedback guztiak" botoian orri horretarako aldaketa guztiak gordetzeko.';
 $string['redirect'] = 'Berbidalketa segundo gutxitan gertatuko da. Horren ezean, egin klik botoian.';
@@ -432,6 +462,8 @@ $string['show_in_course_lti2'] = 'Tresnaren ezarpenen erabilera';
 $string['show_in_course_lti2_help'] = 'Tresna hau jarduera-hautatzailean erakutsi daiteke irakasleak ikastaro batean txertatzea aukera dezan edo aurrez konfiguratutako zerrenda zabalgarriko menuan kanpoko tresna bat ikastarora gehitzean.';
 $string['show_in_course_no'] = 'Ez erakutsi. Erabili soilik dagokion tresnaren URLa sartzen denean.';
 $string['show_in_course_preconfigured'] = 'Erakutsi aurrez konfiguratutako tresna bezala kanpoko tresna bat gehitzean';
+$string['sitehost'] = 'Gunearen hostalari-izena';
+$string['siteid'] = 'Gunearen IDa';
 $string['size'] = 'Tamainaren parametroak';
 $string['submission'] = 'Bidalketa';
 $string['submissions'] = 'Bidalketak';

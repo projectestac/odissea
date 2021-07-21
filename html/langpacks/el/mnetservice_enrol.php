@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'el', version '3.8'.
+ * Strings for component 'mnetservice_enrol', language 'el', version '3.11'.
  *
  * @package     mnetservice_enrol
  * @category    string
@@ -45,4 +45,4 @@ $string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'Το 
 $string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'Το όνομα του ρόλου στον απομακρυσμένο εξυπηρετητή';
 $string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Η υπηρεσία απομακρυσμένης εγγραφής αποθηκεύει πληροφορίες για εγγραφές τοπικών χρηστών σε μαθήματα σε απομακρυσμένους κεντρικούς Η/Υ.';
 $string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'Το αναγνωριστικό του τοπικού χρήστη σε αυτόν τον εξυπηρετητή';
-$string['refetch'] = 'Επαναλάβετε την ενημέρωση της κατάστασης από τους απομακρυσμένους Η/Υ δικτύου';
+$string['refetch'] = 'Ξανά κλήση/λήψη της ενημερωμένης κατάστασης από τους απομακρυσμένους Η/Υ δικτύου';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'ru', version '3.8'.
+ * Strings for component 'my', language 'ru', version '3.11'.
  *
  * @package     my
  * @category    string
@@ -42,3 +42,4 @@ $string['reseterror'] = 'При сбросе настроек страницы �
 $string['reseteveryonesdashboard'] = 'Сбросить страницу «Личный кабинет» для всех пользователей';
 $string['reseteveryonesprofile'] = 'Сбросить профиль для всех пользователей';
 $string['resetpage'] = 'Вернуть страницу по умолчанию';
+$string['resettingdashboards'] = 'Сброс «Личных кабинетов» пользователей к значениям по умолчанию ...';

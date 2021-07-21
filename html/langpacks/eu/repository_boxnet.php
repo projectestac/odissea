@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_boxnet', language 'eu', version '3.8'.
+ * Strings for component 'repository_boxnet', language 'eu', version '3.11'.
  *
  * @package     repository_boxnet
  * @category    string
@@ -38,7 +38,7 @@ $string['nullfilelist'] = 'Ez dago fitxategirik biltegian';
 $string['password'] = 'Pasahitza';
 $string['pluginname'] = 'Box';
 $string['pluginname_help'] = 'Biltegia Box-en';
-$string['privacy:metadata:repository_boxnet'] = 'Box biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_boxnet'] = 'Box biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_boxnet:query'] = 'Box biltegiko erabiltzailearen bilaketaren testua.';
 $string['saved'] = 'Box-en datuak gordeta';
 $string['shareurl'] = 'Partekatu URLa';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'ja', version '3.8'.
+ * Strings for component 'analytics', language 'ja', version '3.11'.
  *
  * @package     analytics
  * @category    string
@@ -34,6 +34,8 @@ $string['analyticslogstore'] = 'アナリティクスに使用されるログス
 $string['analyticslogstore_help'] = 'ユーザの活動を読むためアナリティクスAPIで使用されるログストアです。';
 $string['analyticssettings'] = 'アナリティクス設定';
 $string['analyticssiteinfo'] = 'サイト情報';
+$string['calclifetime'] = 'アナリティクス計算保持期間';
+$string['configlcalclifetime'] = 'ここではあなたが計算データを保持したい期間を指定します - これは予測を削除しませんが、予測の生成に使用されたデータを削除します。あなたのディスク利用を管理下に置くため、デフォルトオプションの使用が最良です。あなたが計算テーブルを他の目的で使用している場合、この値を増やした方が良いかもしれません。';
 $string['defaultpredictionsprocessor'] = 'デフォルト予測プロセッサ';
 $string['defaultpredictoroption'] = 'デフォルトプロセッサ ({$a})';
 $string['defaulttimesplittingmethods'] = 'モデル評価のデフォルト分析間隔';
@@ -97,10 +99,11 @@ $string['modeinstructionfacetoface'] = '対面';
 $string['modeinstructionfullyonline'] = 'フルオンライン';
 $string['modeloutputdir'] = 'モデルアウトプットディレクトリ';
 $string['modeloutputdirinfo'] = '予測プロセッサがすべての評価情報を保存するディレクトリです。デバッグおよび調査に有用です。';
-$string['modeloutputdirwithdefaultinfo'] = '予測プロセッサがすべての評価情報を保存するディレクトリです。デバックおよび調査に有用です。空白の場合、デフォルトとして「 <strong>{$a}</strong> 」が使用されます。';
+$string['modeloutputdirwithdefaultinfo'] = '予測プロセッサがすべての評価情報を保存するディレクトリです。デバックおよび調査に有用です。空白の場合、デフォルトとして {$a} が使用されます。';
 $string['modeltimelimit'] = 'モデルごとの分析制限時間';
 $string['modeltimelimitinfo'] = 'この設定ではそれぞれのモデルがサイトコンテンツの分析に費やすことのできる時間を制限します。';
 $string['neutral'] = '中立';
+$string['neverdelete'] = '計算を削除しない';
 $string['nocourses'] = '分析するコースはありません。';
 $string['nodata'] = '分析するデータはありません。';
 $string['noevaluationbasedassumptions'] = '仮定に基づくモデルを評価することはできません。';

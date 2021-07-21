@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'sv', version '3.8'.
+ * Strings for component 'blog', language 'sv', version '3.11'.
  *
  * @package     blog
  * @category    string
@@ -173,7 +173,7 @@ $string['publishtogroupassoc'] = 'Dina gruppmedlemmar i den kopplade kursen';
 $string['publishtogroupassocparam'] = 'Dina gruppmedlemmar i {$a}';
 $string['publishtonoone'] = 'Du själv (utkast)';
 $string['publishtosite'] = 'Alla på denna webbplats';
-$string['publishtoworld'] = 'Vem som helst (även för gäster)';
+$string['publishtoworld'] = 'Vem som helst (även gäster)';
 $string['readfirst'] = 'Läs detta först';
 $string['relatedblogentries'] = 'Relaterade inlägg i bloggar';
 $string['retrievedfrom'] = 'Hämtad från';
@@ -181,7 +181,7 @@ $string['rssfeed'] = 'RSS-flöde för Blogg';
 $string['searchterm'] = 'Sök: {$a}';
 $string['settingsupdatederror'] = 'Ett fel har hänt, blogginställningar kunde inte uppdateras';
 $string['siteblogdisable'] = 'Blogg på webbplatsnivå är inte aktiverad';
-$string['siteblogheading'] = 'Sajtblogg';
+$string['siteblogheading'] = 'Webbplatsblogg';
 $string['siteblogs'] = 'Användare på sajten kan se alla inlägg';
 $string['tagdatelastused'] = 'Datum för senaste användning av etikett';
 $string['tagparam'] = 'Etikett: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'fr', version '3.8'.
+ * Strings for component 'quiz_grading', language 'fr', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(évalué)';
 $string['gradenextungraded'] = 'Évaluer les {$a} tentatives non évaluées suivantes';
 $string['gradeungraded'] = 'Évaluer toutes les {$a} tentatives non évaluées';
 $string['grading'] = 'Évaluation manuelle';
-$string['grading:componentname'] = 'Rapport d\'évaluation manuelle';
 $string['grading:viewidnumber'] = 'Voir l\'identifiant de l\'étudiant durant l\'évaluation';
 $string['grading:viewstudentnames'] = 'Voir le nom des participants durant l\'évaluation';
 $string['gradingall'] = 'Toutes les {$a} tentatives pour cette question.';
@@ -71,7 +70,8 @@ $string['nothingfound'] = 'Rien à afficher';
 $string['options'] = 'Options';
 $string['orderattempts'] = 'Ordre des tentatives';
 $string['pluginname'] = 'Évaluation manuelle';
-$string['privacy:metadata'] = 'Le plugin d\'évaluation de test Évaluation manuelle n\'enregistre aucune donnée personnelle. Il fournit une interface permettant d\'enregistrer des données, sans en enregistrer lui-même.';
+$string['privacy:preference:order'] = 'L\'ordre dans lequel afficher les tentatives à évaluer';
+$string['privacy:preference:pagesize'] = 'Le nombre de tentatives par page à afficher dans l\'interface d\'évaluation';
 $string['qno'] = 'Q #';
 $string['questionname'] = 'Nom de la question';
 $string['questionsperpage'] = 'Questions par page';

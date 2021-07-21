@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_activitynames', language 'fr', version '3.8'.
+ * Strings for component 'filter_activitynames', language 'fr', version '3.11'.
  *
  * @package     filter_activitynames
  * @category    string

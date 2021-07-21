@@ -144,6 +144,7 @@ XPATH
 XPATH
         , 'dialogue' => <<<XPATH
 .//div[contains(concat(' ', normalize-space(@class), ' '), ' moodle-dialogue ') and
+    not(contains(concat(' ', normalize-space(@class), ' '), ' moodle-dialogue-hidden ')) and
     normalize-space(descendant::div[
         contains(concat(' ', normalize-space(@class), ' '), ' moodle-dialogue-hd ')
         ]) = %locator%] |
@@ -226,7 +227,7 @@ XPATH
     /ancestor::*[contains(concat(' ', @class, ' '), ' fitem ')]
 XPATH
         , 'autocomplete_selection' => <<<XPATH
-.//div[contains(concat(' ', normalize-space(@class), ' '), concat(' ', 'form-autocomplete-selection', ' '))]/span[@role='listitem'][contains(normalize-space(.), %locator%)]
+.//div[contains(concat(' ', normalize-space(@class), ' '), concat(' ', 'form-autocomplete-selection', ' '))]/span[@role='option'][contains(normalize-space(.), %locator%)]
 XPATH
         , 'autocomplete_suggestions' => <<<XPATH
 .//ul[contains(concat(' ', normalize-space(@class), ' '), concat(' ', 'form-autocomplete-suggestions', ' '))]/li[@role='option'][contains(normalize-space(.), %locator%)]
@@ -235,7 +236,7 @@ XPATH
 .//descendant::input[@id = //label[contains(normalize-space(string(.)), %locator%)]/@for]/ancestor::*[@data-fieldtype = 'autocomplete']
 XPATH
         , 'iframe' => <<<XPATH
-.//iframe[contains(concat(' ', normalize-space(@class), ' '), %locator% )]
+.//iframe[(%idOrNameMatch% or (contains(concat(' ', normalize-space(@class), ' '), %locator% )))]
 XPATH
     );
 
@@ -267,6 +268,9 @@ XPATH
 .//descendant::span[@data-inplaceeditable][descendant::a[%titleMatch%]]
 XPATH
         ,
+            'date_time' => <<<XPATH
+.//fieldset[(%idMatch% or ./legend[%exactTagTextMatch%]) and (@data-fieldtype='date' or @data-fieldtype='date_time')]
+XPATH
         ],
     ];
 
@@ -283,6 +287,12 @@ XPATH
         ],
         '%ariaLabelMatch%' => [
             'moodle' => 'contains(./@aria-label, %locator%)',
+        ],
+        '%exactTagTextMatch%' => [
+            // This is based upon the upstream tagTextMatch but performs an exact match rather than a loose match using
+            // contains().
+            // If possible we should only use exact matches for any new form fields that we add.
+            'moodle' => 'normalize-space(text())=%locator%',
         ],
     ];
 

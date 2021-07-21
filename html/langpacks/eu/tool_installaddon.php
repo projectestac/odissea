@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'eu', version '3.8'.
+ * Strings for component 'tool_installaddon', language 'eu', version '3.11'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -35,10 +35,10 @@ $string['installfromrepo_help'] = 'Moodleko plugin-bilgunera bideratuko zaizu be
 $string['installfromzip'] = 'Instalatu plugina ZIP fitxategitik';
 $string['installfromzip_help'] = 'Plugina zuzenean Moodleko plugin-biltegitik instalatzearen modu alternatibo bat plugina duen ZIP paketea igotzea da. ZIP paketeak Moodleko plugin-biltegitik jaitsitakoa paketearen egitura bera izan beharko du.';
 $string['installfromzipfile'] = 'ZIP paketea';
-$string['installfromzipfile_help'] = 'Pluginaren ZIP paketeak karpeta bakarra izan behar du, eta pluginaren izenarekin bat etorri behar da. ZIParen edukia plugin motari dagokion kokapenean erauziko da. Paketea Moodle-ko plugin-biltegitik jaitsi bada karpetak egitura hau izango du.';
+$string['installfromzipfile_help'] = 'Pluginaren ZIP paketeak direktorioa bakarra izan behar du, eta pluginaren izenarekin bat etorri behar da. ZIParen edukia plugin-motari dagokion kokapenean erauziko da. Paketea Moodleko plugin-biltegitik jaitsi bada direktorioak egitura hau izango du.';
 $string['installfromzipinvalid'] = 'Pluginaren ZIP paketeak direktorioa bakarra izan behar du, eta pluginaren izenarekin bat etorri behar da. Emandako fitxategia ez da ZIP pakete baliagarri bat.';
 $string['installfromziprootdir'] = 'Aldatu izena jatorrizko direktorioari';
-$string['installfromziprootdir_help'] = 'ZIP pakete batzuek, Github-ek sortutakoak adibidez, jatorrizko karpetaren izen ezegokia izan dezakete. Hala bada, sartu hemen izen egokia.';
+$string['installfromziprootdir_help'] = 'ZIP pakete batzuek, Github-ek sortutakoak adibidez, jatorrizko direktorioaren izen ezegokia izan dezakete. Hala bada, sartu hemen izen egokia.';
 $string['installfromzipsubmit'] = 'Instalatu plugina ZIP fitxategitik';
 $string['installfromziptype'] = 'Plugin mota';
 $string['installfromziptype_help'] = 'Euren osagaiaren izena ondo adierazten duten pluginen kasuan, instalatzailea pluginaren mota automatikoki antzemateko gai da. Antzemate-automatikoa huts egiten badu, aukeratu ezazu eskuz plugin mota egokia. Kontuz: instalatze-prozesuak larriki huts egin dezake plugin mota modu egokian zehazten ez bada.';

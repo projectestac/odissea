@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'fr', version '3.8'.
+ * Strings for component 'portfolio', language 'fr', version '3.11'.
  *
  * @package     portfolio
  * @category    string
@@ -37,7 +37,7 @@ $string['callbackclassinvalid'] = 'La classe de rappel (callback) indiquée n\'e
 $string['callercouldnotpackage'] = 'Échec de la préparation de vos données pour l\'exportation : l\'erreur originale est {$a}';
 $string['cannotsetvisible'] = 'Impossible de rendre visible ceci. Le plugin a été désactivé en raison d\'un problème de configuration';
 $string['commonportfoliosettings'] = 'Réglages communs de portfolio';
-$string['commonsettingsdesc'] = '<p>En indiquant si la durée d\'un transfert doit être considérée comme <i>Modérée</i> ou comme <i>Élevée</i>, vous spécifiez si les utilisateurs pourront attendre la fin du transfert ou non.</p><p>Les transferts jusqu\'à une taille <i>Modérée</i> ont lieu immédiatement sans intervention de l\'utilisateur. Les transferts de taille supérieure sont mis dans la file d\'attente, avec l\'option de commencer, avec un avertissement que le transfert pourra durer un certain temps.</p><p>Il est possible que certains plugins de portfolio ignorent ce réglage et imposent la mise en file d\'attente de tous les transferts.</p>';
+$string['commonsettingsdesc'] = '<p>En indiquant si la durée d\'un transfert doit être considérée comme <em>Modérée</em> ou comme <em>Élevée</em>, vous spécifiez si les utilisateurs pourront attendre la fin du transfert ou non.</p><p>Les transferts jusqu\'à une taille <em>Modérée</em> ont lieu immédiatement sans intervention de l\'utilisateur. Les transferts de taille supérieure sont mis dans la file d\'attente, avec l\'option de commencer, avec un avertissement que le transfert pourra durer un certain temps.</p><p>Il est possible que certains plugins de portfolio ignorent ce réglage et imposent la mise en file d\'attente de tous les transferts.</p>';
 $string['configexport'] = 'Configurer les données exportées';
 $string['configplugin'] = 'Configuration portfolio';
 $string['configure'] = 'Configurer';

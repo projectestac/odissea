@@ -44,6 +44,7 @@ $string['aria:list'] = 'Switch to list view';
 $string['aria:title'] = 'Sort courses by course name';
 $string['aria:past'] = 'Show past courses';
 $string['aria:removefromfavourites'] = 'Remove star for';
+$string['aria:shortname'] = 'Sort courses by course short name';
 $string['aria:summary'] = 'Switch to summary view';
 $string['aria:sortingdropdown'] = 'Sorting drop-down menu';
 $string['availablegroupings'] = 'Available filters';
@@ -73,6 +74,7 @@ $string['privacy:metadata:overviewviewpreference'] = 'The Course overview block 
 $string['privacy:metadata:overviewgroupingpreference'] = 'The Course overview block grouping preference.';
 $string['privacy:metadata:overviewpagingpreference'] = 'The Course overview block paging preference.';
 $string['removefromfavourites'] = 'Unstar this course';
+$string['shortname'] = 'Short name';
 $string['summary'] = 'Summary';
 $string['title'] = 'Course name';
 $string['aria:hidecourse'] = 'Remove {$a} from view';
@@ -83,24 +85,6 @@ $string['hidecourse'] = 'Remove from view';
 $string['hiddencourses'] = 'Removed from view';
 $string['show'] = 'Restore to view';
 $string['privacy:request:preference:set'] = 'The value of the setting \'{$a->name}\' was \'{$a->value}\'';
-
-// Deprecated since Moodle 3.6.
-$string['defaulttab'] = 'Default tab';
-$string['defaulttab_desc'] = 'The tab that will be displayed when a user first views their course overview. When returning to their course overview, the user\'s active tab is remembered.';
-$string['morecourses'] = 'More courses';
-$string['nocoursesinprogress'] = 'No in progress courses';
-$string['nocoursesfuture'] = 'No future courses';
-$string['nocoursespast'] = 'No past courses';
-$string['noevents'] = 'No upcoming activities due';
-$string['next30days'] = 'Next 30 days';
-$string['next7days'] = 'Next 7 days';
-$string['recentlyoverdue'] = 'Recently overdue';
-$string['sortbycourses'] = 'Sort by courses';
-$string['sortbydates'] = 'Sort by dates';
-$string['timeline'] = 'Timeline';
-$string['viewcoursename'] = 'View course {$a}';
-$string['privacy:metadata:overviewlasttab'] = 'This stores the last tab selected by the user on the overview block.';
-$string['viewcourse'] = 'View course';
 
 // Deprecated since Moodle 3.7.
 $string['complete'] = 'complete';

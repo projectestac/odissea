@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_importhtml', language 'ar', version '3.8'.
+ * Strings for component 'booktool_importhtml', language 'ar', version '3.11'.
  *
  * @package     booktool_importhtml
  * @category    string
@@ -28,15 +28,15 @@ defined('MOODLE_INTERNAL') || die();
 $string['doimport'] = 'استيراد';
 $string['errornochapters'] = 'لا يوجد فصول في الملف المختار';
 $string['import'] = 'استورد فصل';
-$string['importhtml:import'] = 'استورد فصول';
+$string['importhtml:import'] = 'استيراد الفصول';
 $string['importing'] = 'استيراد';
 $string['importingchapters'] = 'استيراد فصول للكتاب';
-$string['pluginname'] = 'استورد فصل من كتاب';
-$string['privacy:metadata'] = 'البرنامج المساعد Book chapter import  لا يخزن أيّ بيانات شخصية.';
+$string['pluginname'] = 'استيراد فصل الكتاب';
+$string['privacy:metadata'] = 'إن ملحق استيراد فصل الكتاب لا يخزن أيّ بيانات شخصية.';
 $string['relinking'] = 'إعادة الربط';
 $string['type'] = 'النوع';
-$string['typeonefile'] = 'ملف واحد من لغة توصيف النصوص المترابطة مع عناوين الفصول';
+$string['typeonefile'] = 'ملف واحد من HTML مع عناوين بمثابة فصول';
 $string['typezipdirs'] = 'كل مجلد يمثل فصلاً واحداً';
-$string['typezipfiles'] = 'كل ملف للغة توصيف النصوص المترابطة HTML يمثل فصلاً واحداً';
+$string['typezipfiles'] = 'كل ملف من نصوص HTML يمثل فصلاً واحداً';
 $string['ziparchive'] = 'ملف مضغوط';
-$string['ziparchive_help'] = 'حدد ملف مضغوط يحتوي على ملفات بلغة توصيف النصوص المترابطة و اختيارياً ملفات الوسائط المتعددة و المجلدات. لتحميل الفصول الفرعية، حيث تضاف عبارة "_sub" إلى نهاية ملف لغة توصيف النصوص المترابطة أو أسماء المجلد.';
+$string['ziparchive_help'] = 'إختر ملفاً مضغوطاً يحتوي على ملفات HTML واختيارياً ملفات الوسائط المتعددة والمجلدات. لتحميل الفصول الفرعية، أضف عبارة "_sub" إلى نهاية اسم ملف HTML أو اسم المجلد.';

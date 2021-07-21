@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'ru', version '3.8'.
+ * Strings for component 'tool_analytics', language 'ru', version '3.11'.
  *
  * @package     tool_analytics
  * @category    string
@@ -35,7 +35,7 @@ $string['alltimesplittingmethods'] = 'Анализ всех интервалов
 $string['analysingsitedata'] = 'Анализ сайта';
 $string['analysis'] = 'Анализ';
 $string['analyticmodels'] = 'Модели аналитики';
-$string['bettercli'] = 'Оценка моделей и создание прогнозов могут вызвать интенсивный процесс. Рекомендуется запускать эти действия из командной строки.';
+$string['bettercli'] = 'Оценка моделей и создание прогнозов могут включать длительные вычисления. Рекомендуется запускать эти действия из командной строки.';
 $string['cantguessenddate'] = 'Невозможно предположить дату окончания';
 $string['cantguessstartdate'] = 'Невозможно предположить дату начала';
 $string['classdoesnotexist'] = 'Класс {$a} не существует';
@@ -120,7 +120,7 @@ $string['newmodel'] = 'Новая модель';
 $string['nextpage'] = 'Следующая страница';
 $string['noactionsfound'] = 'Пользователи не выполняли никаких действий, учитываемых в прогнозе.';
 $string['nodatatoevaluate'] = 'Нет данных для оценки модели';
-$string['nodatatopredict'] = 'Нет новых элементов, чтобы получить прогнозы для';
+$string['nodatatopredict'] = 'Нет новых элементов для получения прогнозов.';
 $string['nodatatotrain'] = 'Нет новых данных, которые можно было бы использовать для обучения.';
 $string['noinvalidanalysables'] = 'Этот сайт не содержит непригодных для анализа элементов.';
 $string['notdefined'] = 'Еще не определено';

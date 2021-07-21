@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ca', version '3.8'.
+ * Strings for component 'questionnaire', language 'ca', version '3.11'.
  *
  * @package     questionnaire
  * @category    string
@@ -325,6 +325,7 @@ $string['printblank'] = 'Imprimeix en blanc';
 $string['printblanktooltip'] = 'Obre una finestra amb una enquesta en blanc i preparada per a la seva impressió';
 $string['printtooltip'] = 'Obre una finestra amb la resposta actual preparada per a la seva impressió';
 $string['private'] = 'Privat';
+$string['progressbar'] = 'Mostra la barra de progrés';
 $string['public'] = 'Públic';
 $string['publiccopy'] = 'Còpia:';
 $string['publicoriginal'] = 'Original:';
@@ -473,6 +474,7 @@ $string['title'] = 'Títol';
 $string['title_help'] = 'Títol de l\'enquesta, que apareixerà a la part superior de cada pàgina. Per defecte, aquest títol és el nom de l\'enquesta, però podeu editar-lo i deixar-lo com vulgueu.';
 $string['today'] = 'avui';
 $string['total'] = 'Total';
+$string['totalresponses'] = 'Respostes totals a la pregunta';
 $string['type'] = 'Tipus de pregunta';
 $string['undefinedquestiontype'] = 'Tipus de pregunta no definit!';
 $string['unknown'] = 'Desconegut';

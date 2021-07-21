@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_url', language 'sv', version '3.8'.
+ * Strings for component 'repository_url', language 'sv', version '3.11'.
  *
  * @package     repository_url
  * @category    string

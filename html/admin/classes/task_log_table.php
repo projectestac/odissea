@@ -57,6 +57,8 @@ class task_log_table extends \table_sql {
             'userid'     => get_string('user', 'admin'),
             'timestart'  => get_string('task_starttime', 'admin'),
             'duration'   => get_string('task_duration', 'admin'),
+            'hostname'   => get_string('hostname', 'tool_task'),
+            'pid'        => get_string('pid', 'tool_task'),
             'db'         => get_string('task_dbstats', 'admin'),
             'result'     => get_string('task_result', 'admin'),
             'actions'    => '',
@@ -122,8 +124,9 @@ class task_log_table extends \table_sql {
             $sort = "ORDER BY $sort";
         }
 
-        $extrafields = get_extra_user_fields(\context_system::instance());
-        $userfields = \user_picture::fields('u', $extrafields, 'userid2', 'user');
+        // TODO Does not support custom user profile fields (MDL-70456).
+        $userfieldsapi = \core_user\fields::for_identity(\context_system::instance(), false)->with_userpic();
+        $userfields = $userfieldsapi->get_sql('u', false, 'user', 'userid2', false)->selects;
 
         $where = '';
         if (!empty($this->sql->where)) {
@@ -132,6 +135,7 @@ class task_log_table extends \table_sql {
 
         $sql = "SELECT
                     tl.id, tl.type, tl.component, tl.classname, tl.userid, tl.timestart, tl.timeend,
+                    tl.hostname, tl.pid,
                     tl.dbreads, tl.dbwrites, tl.result,
                     tl.dbreads + tl.dbwrites AS db,
                     tl.timeend - tl.timestart AS duration,

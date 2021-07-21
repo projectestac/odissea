@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'de', version '3.8'.
+ * Strings for component 'assignsubmission_onlinetext', language 'de', version '3.11'.
  *
  * @package     assignsubmission_onlinetext
  * @category    string
@@ -46,4 +46,4 @@ $string['privacy:metadata:textpurpose'] = 'Übermittelter Text für diesen Versu
 $string['privacy:path'] = 'Abgabetext';
 $string['wordlimit'] = 'Wortbegrenzung';
 $string['wordlimit_help'] = 'Wenn Online-Texteingabe aktiviert wurde, legen Sie hier die Höchstzahl der Wörter fest, die eine Lösung enthalten darf.';
-$string['wordlimitexceeded'] = 'Die Höchstgrenze der Wörter für diese Aufgabenlösung ist {$a->limit}. Ihre Antwort enthält {$a->count} Wörter. Überarbeiten Sie bitte Ihre Lösung und speichern Sie sie dann erneut.';
+$string['wordlimitexceeded'] = 'Die maximale Anzahl von Wörtern für diese Aufgabenlösung ist {$a->limit}. Ihre Antwort hat aber {$a->count} Wörter. Verkürzen Sie Ihren Text und speichern Sie ihn erneut.';

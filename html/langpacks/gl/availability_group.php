@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'gl', version '3.8'.
+ * Strings for component 'availability_group', language 'gl', version '3.11'.
  *
  * @package     availability_group
  * @category    string
@@ -25,5 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['anygroup'] = '(Calquera grupo)';
+$string['description'] = 'Permitir só estudantes que pertenzan a un grupo específico, ou a todos os grupos.';
+$string['error_selectgroup'] = 'Debe seleccionar un grupo.';
+$string['missing'] = '(Sen grupo)';
+$string['pluginname'] = 'Restrición por grupo';
+$string['privacy:metadata'] = 'O engadido de restrición por grupo non garda ningún dato persoal.';
 $string['requires_anygroup'] = 'Pertences a calquera grupo';
 $string['requires_group'] = 'Pertences a <strong>{$a}</strong>';
+$string['requires_notanygroup'] = 'Non pertences a ningún grupo';
+$string['requires_notgroup'] = 'Non pertences a <strong>{$a}</strong>';
+$string['title'] = 'Grupo';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_wikimedia', language 'sv', version '3.8'.
+ * Strings for component 'repository_wikimedia', language 'sv', version '3.11'.
  *
  * @package     repository_wikimedia
  * @category    string
@@ -33,4 +33,5 @@ $string['pluginname'] = 'Wikimedia';
 $string['privacy:metadata:repository_wikimedia'] = 'Pluginmodulen för Wikimedia-lagringsplats lagrar ingen personlig information, men den flyttas från Moodle till fjärrsystemet.';
 $string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'Användarens föredragna maximala bildhöjd för Wikimedia-lagringsplatsen.';
 $string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'Användarens föredragna maximala bildbredd för Wikimedia-lagringsplatsen.';
+$string['privacy:metadata:repository_wikimedia:search_text'] = 'Sökfrågetexten i användarens sökning i WikiMedia.';
 $string['wikimedia:view'] = 'Visa Wikimedialagringsplats';

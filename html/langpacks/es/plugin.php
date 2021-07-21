@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'es', version '3.8'.
+ * Strings for component 'plugin', language 'es', version '3.11'.
  *
  * @package     plugin
  * @category    string
@@ -118,6 +118,8 @@ $string['type_cachestore'] = 'Almacén de caché';
 $string['type_cachestore_plural'] = 'Almacenes de caché';
 $string['type_calendartype'] = 'Tipo de calendario';
 $string['type_calendartype_plural'] = 'Tipos de calendario';
+$string['type_contentbank'] = 'Banco de contenido';
+$string['type_contentbank_plural'] = 'Plugins del banco de contenido';
 $string['type_coursereport'] = 'Informe de curso';
 $string['type_coursereport_plural'] = 'Informes del curso';
 $string['type_customfield_plural'] = 'Campos personalizados';
@@ -151,6 +153,9 @@ $string['type_mnetservice'] = 'Servicio MNet';
 $string['type_mnetservice_plural'] = 'Servicios MNet';
 $string['type_mod'] = 'Módulo';
 $string['type_mod_plural'] = 'Módulos de actividad';
+$string['type_paygw'] = 'Portal de pago';
+$string['type_paygw_plural'] = 'Portales de pago';
+$string['type_paygwmanage'] = 'Gestionar portales de pago';
 $string['type_plagiarism'] = 'Plugin de Prevención del plagio';
 $string['type_plagiarism_plural'] = 'Plugins para la prevención de plagio';
 $string['type_portfolio'] = 'Portafolio';

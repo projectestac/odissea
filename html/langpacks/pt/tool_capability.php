@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'pt', version '3.8'.
+ * Strings for component 'tool_capability', language 'pt', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -30,11 +30,14 @@ $string['capabilityreport'] = 'Lista das permissões';
 $string['changeoverrides'] = 'Alterar permissões neste contexto';
 $string['changeroles'] = 'Alterar definições dos papéis';
 $string['eventreportviewed'] = 'Relatório visualizado';
+$string['filters'] = 'Resultados do filtro';
 $string['forroles'] = 'Para os papéis {$a}';
 $string['getreport'] = 'Visão global';
-$string['intro'] = 'Este relatório mostra, para uma permissão específica, que permissões estão definidas para esta permissão em cada papel (ou uma seleção de papéis), e todos os lugares do site em que esta permissão está redefinida.';
+$string['intro'] = 'Este relatório mostra, para uma permissão específica, que permissões estão definidas em cada papel (ou uma seleção de papéis) e todos os lugares do site em que esta permissão está redefinida.';
+$string['nodifferences'] = 'Não existemá diferenças para mostrar entre os papeis selecionados neste contexto';
+$string['onlydiff'] = 'Mostrar apenas as diferenças';
 $string['pluginname'] = 'Análise das permissões';
-$string['privacy:metadata'] = 'O módulo Lista das permissões não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Lista das permissões não armazena quaisquer dados pessoais.';
 $string['reportforcapability'] = 'Relatório da permissão \'{$a}';
 $string['reportsettings'] = 'Configurações do relatório';
 $string['roleslabel'] = 'Papéis:';

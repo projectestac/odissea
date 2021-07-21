@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'en', version '3.8'.
+ * Strings for component 'enrol', language 'en', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -63,6 +63,7 @@ $string['enrolmentnew'] = 'New enrolment in {$a}';
 $string['enrolmentnewuser'] = '{$a->user} has enrolled in course "{$a->course}"';
 $string['enrolmentoptions'] = 'Enrolment options';
 $string['enrolments'] = 'Enrolments';
+$string['enrolmentupdatedforuser'] = 'The enrolment for user "{$a->fullname}" has been updated';
 $string['enrolnotpermitted'] = 'You do not have permission or are not allowed to enrol someone in this course';
 $string['enrolperiod'] = 'Enrolment duration';
 $string['enroltimecreated'] = 'Enrolment created';
@@ -115,7 +116,7 @@ $string['noexistingparticipants'] = 'No existing participants';
 $string['nogroup'] = 'No group';
 $string['noguestaccess'] = 'Guests cannot access this course. Please log in.';
 $string['none'] = 'None';
-$string['notenrollable'] = 'You can not enrol yourself in this course.';
+$string['notenrollable'] = 'You cannot enrol yourself in this course.';
 $string['notenrolledusers'] = 'Other users';
 $string['otheruserdesc'] = 'The following users are not enrolled in this course but do have roles, inherited or assigned within it.';
 $string['participationactive'] = 'Active';
@@ -155,8 +156,9 @@ $string['totalunenrolledusers'] = '{$a} unenrolled users';
 $string['unassignnotpermitted'] = 'You do not have permission to unassign roles in this course';
 $string['unenrol'] = 'Unenrol';
 $string['unenrolconfirm'] = 'Do you really want to unenrol "{$a->user}" (previously enrolled via "{$a->enrolinstancename}") from "{$a->course}"?';
+$string['unenrolleduser'] = 'The user "{$a->fullname}" was unenrolled from the course';
 $string['unenrolme'] = 'Unenrol me from {$a}';
-$string['unenrolnotpermitted'] = 'You do not have permission or can not unenrol this user from this course.';
+$string['unenrolnotpermitted'] = 'You do not have permission to unenrol this user from the course.';
 $string['unenrolroleusers'] = 'Unenrol users';
 $string['uninstallmigrating'] = 'Migrating "{$a}" enrolments';
 $string['unknowajaxaction'] = 'Unknown action requested';

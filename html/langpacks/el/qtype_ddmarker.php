@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'el', version '3.8'.
+ * Strings for component 'qtype_ddmarker', language 'el', version '3.11'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -86,7 +86,10 @@ $string['pluginnamesummary'] = 'Οι δείκτες θέσης μεταφέρο�
 Σημείωση: Αυτός ο τύπος ερώτησης δεν είναι προσβάσιμος σε χρήστες με προβλήματα όρασης.';
 $string['previewareaheader'] = 'Προεπισκόπηση';
 $string['previewareamessage'] = 'Επιλέξτε μια εικόνα υπόβαθρου, πληκτρολογήστε ταμπέλες κειμένου για δείκτες θέσης και ορίστε ζώνες απόθεσης στην εικόνα υπόβαθρου μέσα στις οποίες πρέπει να μεταφέρονται.';
-$string['privacy:metadata'] = 'Το πρόσθετο τύπου ερώτησης μεταφοράς & απόθεσης δεικτών θέσης δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο τύπου ερώτησης μεταφοράς & απόθεσης δεικτών θέσης επιτρέπει στους συγγραφείς ερωτήσεων να ορίζουν προεπιλεγμένες επιλογές ως προτιμήσεις χρήστη.';
+$string['privacy:preference:defaultmark'] = 'Ο προεπιλεγμένος βαθμός που έχει οριστεί για μια δεδομένη ερώτηση.';
+$string['privacy:preference:penalty'] = 'Η ποινή για κάθε λανθασμένη δοκιμή όταν εκτελούνται ερωτήσεις χρησιμοποιώντας τη συμπεριφορά «Διαδραστική με πολλαπλές προσπάθειες» ή «Κατάσταση προσαρμογής».';
+$string['privacy:preference:shuffleanswers'] = 'Εάν οι απαντήσεις πρέπει να ανακατεύονται αυτόματα.';
 $string['refresh'] = 'Ανανέωση προεπισκόπησης';
 $string['shape'] = 'Σχήμα';
 $string['shape_circle'] = 'Κύκλος';

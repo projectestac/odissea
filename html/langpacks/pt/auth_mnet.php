@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'pt', version '3.8'.
+ * Strings for component 'auth_mnet', language 'pt', version '3.11'.
  *
  * @package     auth_mnet
  * @category    string
@@ -71,7 +71,7 @@ $string['privacy:metadata:mnet_external:policyagreed'] = 'A marca para determina
 $string['privacy:metadata:mnet_external:skype'] = 'O identificador Skype do utilizador';
 $string['privacy:metadata:mnet_external:suspended'] = 'A marca para exibir se o utilizador foi suspenso deste sistema.';
 $string['privacy:metadata:mnet_external:timezone'] = 'O fuso horário do utilizador';
-$string['privacy:metadata:mnet_external:trackforums'] = 'A preferência por fóruns e sinalização de mensagens não lidas.';
+$string['privacy:metadata:mnet_external:trackforums'] = 'A preferência para fóruns e sinalização de mensagens não lidas.';
 $string['privacy:metadata:mnet_external:trustbitmask'] = 'Máscara de bits de confiança';
 $string['privacy:metadata:mnet_external:url'] = 'O URL relacionado com este utilizador.';
 $string['privacy:metadata:mnet_external:username'] = 'O nome de utilizador para este utilizador.';
@@ -99,7 +99,7 @@ $string['privacy:metadata:mnet_session:username'] = 'O nome de utilizador do uti
 $string['rpc_negotiation_timeout'] = 'Tempo limite para ligação RPC';
 $string['sso_idp_description'] = 'Publique este serviço para permitir aos seus utilizadores acederem ao site Moodle {$a} sem terem de voltar a autenticar-se lá.<ul><li><em> Dependência </em>: Tem também de <strong> subscrever </strong> o serviço SSO (Fornecedor de Serviço) em {$a}. </li></ul><br /> Subscreva este serviço para permitir que utilizadores autenticados em {$a} acedam ao site sem ter de repetir a autenticação. <ul><li><em> Dependência </em>: Também tem de <strong> publicar </strong> o serviço SSO (Fornecedor de Serviço) em {$a}. </li></ul><br />.';
 $string['sso_idp_name'] = 'SSO (Fornecedor de Identidade)';
-$string['sso_mnet_login_refused'] = 'Não é permitido ao utilizador  {$a->user} autenticar-se a partir do servidor {$a->host}.';
+$string['sso_mnet_login_refused'] = 'Não é permitido ao utilizador {$a->user} autenticar-se a partir do servidor {$a->host}.';
 $string['sso_sp_description'] = 'Publique este serviço para permitir aos utilizadores autenticados em {$a} aceder ao seu site sem ter de repetir a autenticação.<ul><li><em> Dependência </em>: tem também de <strong> subscrever </strong> o serviço SSO (Fornecedor de Identidade) em {$a}. </li></ul><br /> Subscreva este serviço para permitir aos seus utilizadores acederem ao site Moodle {$a}, sem terem de repetir a autenticação.<ul><li><em> Dependência </em>: Também tem de <strong> publicar </strong> o serviço SSO (Fornecedor de Identidade) em {$a}. </li></ul><br />.';
 $string['sso_sp_name'] = 'SSO (Fornecedor de Serviço)';
 $string['unknownhost'] = 'Convidado desconhecido';

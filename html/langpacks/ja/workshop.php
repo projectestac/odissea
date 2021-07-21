@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ja', version '3.8'.
+ * Strings for component 'workshop', language 'ja', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = '評価終了:';
+$string['activitydate:assessmentsclosed'] = '評価終了済み:';
+$string['activitydate:assessmentsopen'] = '評価開始予定:';
+$string['activitydate:assessmentsopened'] = '評価開始済み:';
+$string['activitydate:submissionsclose'] = '提出終了:';
+$string['activitydate:submissionsclosed'] = '提出終了済み:';
+$string['activitydate:submissionsopen'] = '提出開始予定:';
+$string['activitydate:submissionsopened'] = '提出開始済み:';
 $string['aggregategrades'] = '評定を再計算する';
 $string['aggregation'] = '評点総計';
 $string['allocate'] = '提出を割り当てる';
@@ -264,6 +272,22 @@ $string['privacy:metadata:late'] = '提出期限後に提出が送信された�
 $string['privacy:metadata:peercomment'] = '評価を提供したユーザにより与えられた評点のコメントです。';
 $string['privacy:metadata:peercommentformat'] = '所与の評点のコメントのテキストフォーマットです。';
 $string['privacy:metadata:preference:perpage'] = 'ユーザが1ページあたりに表示したい提出数です。';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = '「提出例」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = '「ワークショップ提出レポート」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = '「評価フォーム」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = '「評価する割り当て済み提出」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = '「ワークショップツールボックス」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = '「結論」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = '「評価する提出例」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = '「評価する提出例」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = '「ワークショップ評定レポート」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = '「提出のインストラクション」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = '「評価のインストラクション」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = '「説明」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = '「全体のフィードバック」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = '「あなたの提出」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = '「公開済み提出」ビュレットの折りたたみ/展開状態です。';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = '「あなたの評点」ビュレットの折りたたみ/展開状態です。';
 $string['privacy:metadata:published'] = 'ワークショップの終了後、提出をすべての参加者に公開すべきか示します。';
 $string['privacy:metadata:reviewerid'] = '評価を与えるユーザのIDです。';
 $string['privacy:metadata:strategy'] = 'レコード値を解釈する評定方法サブプラグイン名です。';
@@ -429,3 +453,4 @@ $string['workshopname'] = 'ワークショップ名';
 $string['yourassessmentfor'] = 'あなたの {$a} の評価';
 $string['yourgrades'] = 'あなたの評点';
 $string['yoursubmission'] = 'あなたの提出課題';
+$string['yoursubmissionwithassessments'] = 'あなたの評価済み提出';

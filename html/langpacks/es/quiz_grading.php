@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'es', version '3.8'.
+ * Strings for component 'quiz_grading', language 'es', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(calificado)';
 $string['gradenextungraded'] = 'Calificar los siguientes ??? intentos no calificados';
 $string['gradeungraded'] = 'Calificar todos los ??? intentos no calificados';
 $string['grading'] = 'Calificación manual';
-$string['grading:componentname'] = 'Informe de calificación manual';
 $string['grading:viewidnumber'] = 'Ver los números id de los estudiantes mientras se califica';
 $string['grading:viewstudentnames'] = 'Ver los nombres de los estudiantes mientras se califica';
 $string['gradingall'] = 'Todos los ??? intentos de contestar esta pregunta.';

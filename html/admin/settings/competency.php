@@ -27,10 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 // Save processing when the user will not be able to access anything.
 if (has_capability('moodle/site:config', $systemcontext)) {
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2016.08.12  @sarjona
-    if (get_protected_agora() ) {
-//************ FI
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2016.08.12 @sarjona
+    if (get_protected_agora()) {
+    // ************ FI
+
     $parentname = 'competencies';
 
     // Settings page.
@@ -51,8 +52,8 @@ if (has_capability('moodle/site:config', $systemcontext)) {
         $settings->add($setting);
     }
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2016.08.12  @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2016.08.12 @sarjona
     }
-//************ FI
+    // ************ FI
 }

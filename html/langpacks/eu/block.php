@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block', language 'eu', version '3.8'.
+ * Strings for component 'block', language 'eu', version '3.11'.
  *
  * @package     block
  * @category    string
@@ -35,7 +35,7 @@ $string['bracketfirst'] = '{$a} (lehenengoa)';
 $string['bracketlast'] = '{$a} (azkena)';
 $string['configureblock'] = 'Konfiguratu {$a} blokea';
 $string['contexts'] = 'Orriaren testuinguruak';
-$string['contexts_help'] = 'Testuinguruak orri mota bereziagoak dira zeinetan bloke hau blokearen jatorrizko kokapenarekin ager daitekeen. Hemen aukera ezberdinak izango dituzu blokearen jatorrizko kokapenaren eta oraingo kokapenaren arabera. Adibidez, bloke bat ikastaroan gehitzean (azpi-orri guztietan agertaraziz) mugatu egin dezakezu blokea ikastaroko foroetako orrietan bakarrik ager dadin, foro batera joan, blokearen ezarpenak editatu eta foroetako orrietan bakarrik erakusteko mugatuta';
+$string['contexts_help'] = 'Testuinguruak orri-mota bereziagoak dira zeinetan bloke hau blokearen jatorrizko kokapenarekin ager daitekeen. Hemen aukera ezberdinak izango dituzu blokearen jatorrizko kokapenaren eta oraingo kokapenaren arabera. Adibidez, bloke bat ikastaroan gehitzean (azpi-orri guztietan agertaraziz) mugatu egin dezakezu blokea soilik ikastaroko foroetako orrietan ager dadin, foro batera joan, blokearen ezarpenak editatu eta soilik foroetako orrietan erakusteko mugatuta.';
 $string['createdat'] = 'Blokearen jatorrizko kokapena';
 $string['createdat_help'] = 'Blokea sortu zeneko jatorrizko kokapena. Blokearen ezarpenen arabera bestelako kokapenetan (testuinguruak) ager daiteke blokea jatorrizko kokapenaz gain. Adibidez, ikastaro baten hasiera orrian sortutako bloke bat ikastaro horretako jardueretan erakus daiteke. Hasiera-orrian sortutako bloke bat gune osoan zehar erakus daiteke.';
 $string['defaultregion'] = 'Lehenetsitako kokapena';

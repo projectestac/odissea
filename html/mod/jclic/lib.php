@@ -588,25 +588,20 @@ function jclic_extend_settings_navigation(settings_navigation $settingsnav, navi
         $beforekey = $keys[$i + 1];
     }
     if (has_capability('moodle/grade:viewall', $PAGE->context)){
-        $node = navigation_node::create(get_string('preview_jclic', 'jclic'),
-                new moodle_url('/mod/jclic/view.php', array('id'=>$PAGE->cm->id, 'action' => 'preview')),
-                navigation_node::TYPE_SETTING, null, 'mod_preview_jclic_preview',
-                new pix_icon('i/preview', ''));
+        $node = navigation_node::create(get_string('preview_jclic', 'jclic'), new moodle_url('/mod/jclic/view.php', array('id'=>$PAGE->cm->id, 'action' => 'preview')), navigation_node::TYPE_SETTING, null, 'mod_preview_jclic_preview', new pix_icon('i/preview', ''));
         $jclicnode->add_node($node, $beforekey);
 
-        $url = new moodle_url('/mod/jclic/report.php',
-                array('id' => $PAGE->cm->id, 'mode'=> 'normal'));
-        $reportnode = $jclicnode->add_node(navigation_node::create(get_string('results', 'jclic'), $url,
-                navigation_node::TYPE_SETTING,
-                null, null, new pix_icon('i/report', '')), $beforekey);
-        $reportnode->add_node(navigation_node::create(get_string('report_normal', 'jclic'), $url,
-                navigation_node::TYPE_SETTING,
-                null, null, new pix_icon('i/report', '')));
-        $url = new moodle_url('/mod/jclic/report.php',
-                array('id' => $PAGE->cm->id, 'mode'=> 'details'));
-        $reportnode->add_node(navigation_node::create(get_string('report_details', 'jclic'), $url,
-                navigation_node::TYPE_SETTING,
-                null, null, new pix_icon('i/report', '')));
+        $url_normal = null;
+        $url_details = null;
+        if (!empty($PAGE->url->param('mode')) && $PAGE->url->param('mode') == 'details') {
+            $url_normal = new moodle_url('/mod/jclic/report.php', array('id' => $PAGE->cm->id, 'mode'=> 'normal'));
+        } else {
+            $url_details = new moodle_url('/mod/jclic/report.php', array('id' => $PAGE->cm->id, 'mode'=> 'details'));
+        }
+
+        $reportnode = $jclicnode->add_node(navigation_node::create(get_string('results', 'jclic'), $url_normal, navigation_node::TYPE_SETTING, null, null, new pix_icon('i/report', '')), $beforekey);
+        $reportnode->add_node(navigation_node::create(get_string('report_normal', 'jclic'), $url_normal, navigation_node::TYPE_SETTING, null, null, new pix_icon('i/report', '')));
+        $reportnode->add_node(navigation_node::create(get_string('report_details', 'jclic'), $url_details, navigation_node::TYPE_SETTING, null, null, new pix_icon('i/report', '')));
     }
 }
 

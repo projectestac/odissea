@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'zh_cn', version '3.8'.
+ * Strings for component 'question', language 'zh_cn', version '3.11'.
  *
  * @package     question
  * @category    string
@@ -143,7 +143,7 @@ $string['editingquestion'] = '编辑一道试题';
 $string['editquestion'] = '编辑试题';
 $string['editquestions'] = '编辑试题';
 $string['editthiscategory'] = '编辑此类别';
-$string['emptyxml'] = '未知错误 - 空的imsmanifest.xml文件';
+$string['emptyxml'] = '未知错误 - 空的 imsmanifest.xml 文件';
 $string['enabled'] = '启用';
 $string['erroraccessingcontext'] = '无法访问场景';
 $string['errordeletingquestionsfromcategory'] = '从类别{$a}中删除试题出错。';

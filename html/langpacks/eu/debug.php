@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'eu', version '3.8'.
+ * Strings for component 'debug', language 'eu', version '3.11'.
  *
  * @package     debug
  * @category    string
@@ -41,7 +41,7 @@ $string['invalideventdata'] = 'Ekitaldi-datu ezegokiak bidali dira: {$a}';
 $string['invalidparameter'] = 'Parametroaren balio ezegokia antzeman da';
 $string['invalidresponse'] = 'Erantzunaren balio ezegokia antzeman da';
 $string['line'] = 'Errenkada';
-$string['missingconfigversion'] = 'Config taulak ez dauka bertsiorik, ezin da jarraitu, sentitzen dugu.';
+$string['missingconfigversion'] = 'Config taulak ez dauka bertsiorik. Ezin duzu jarraitu.';
 $string['modulenotexist'] = '{$a} modulua ez da existitzen';
 $string['morethanonerecordinfetch'] = 'Erregistro bat baino gehiago aurkitu da fetch()-en!';
 $string['mustbeoveride'] = '{$a} metodo abstraktua baliogabetu behar da.';

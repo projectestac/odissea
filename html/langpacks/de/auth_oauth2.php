@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'de', version '3.8'.
+ * Strings for component 'auth_oauth2', language 'de', version '3.11'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -86,8 +86,8 @@ $string['linkedloginshelp'] = 'Hilfe für weitere Logins';
 $string['loginerror_authenticationfailed'] = 'Der Authentifizierungsvorgang ist fehlgeschlagen.';
 $string['loginerror_cannotcreateaccounts'] = 'Ein Nutzerkonto mit dieser E-Mail-Adresse konnte nicht gefunden werden.';
 $string['loginerror_invaliddomain'] = 'Die E-Mail-Adresse ist für diese Website nicht erlaubt.';
-$string['loginerror_nouserinfo'] = 'Es wurden keine Nutzerinformationen zurückgeliefert. Der OAth 2 Service ist möglicherweise falsch konfiguriert.';
-$string['loginerror_userincomplete'] = 'Die zurückgelieferte Nutzerinformation enthielt keinen Nutzernamen und keine E-Mail-Adresse. Der OAuth 2 Service ist möglicherweise falsch konfiguriert.';
+$string['loginerror_nouserinfo'] = 'Es wurden keine Nutzerinfos zurückgegeben. Der OAuth 2 Service ist möglicherweise falsch konfiguriert.';
+$string['loginerror_userincomplete'] = 'Die zurückgegebenen Nutzerinfos enthalten keinen Nutzernamen und keine E-Mail-Adresse. Der OAuth 2 Service ist möglicherweise falsch konfiguriert.';
 $string['noissuersavailable'] = 'Keiner der konfigurierten OAuth2 services erlaubt Ihnen die Verknüpfung von Login-Accounts.';
 $string['notenabled'] = 'Das Plugin zur OAuth 2 Authentifizierung ist leider nicht aktiviert.';
 $string['notloggedindebug'] = 'Der Login-Versuch ist fehlgeschlagen. {$a}';

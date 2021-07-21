@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'eu', version '3.8'.
+ * Strings for component 'form', language 'eu', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -41,13 +41,15 @@ $string['err_minlength'] = 'Hemen gutxienez {$a->format} karaktere idatzi behar 
 $string['err_nonzero'] = 'Hemen 0-rekin hasten ez den zenbaki bat idatzi behar duzu.';
 $string['err_nopunctuation'] = 'Hemen ezin duzu inongo puntuazio-markarik idatzi.';
 $string['err_numeric'] = 'Hemen zenbaki bat idatzi behar duzu.';
+$string['err_positiveint'] = '0 baino handiagoa den zenbaki bat idatzi behar duzu.';
 $string['err_rangelength'] = 'Hemen {$a->format[0]} eta {$a->format[1]}-ren arteko karaktere-kopurua idatzi behar duzu.';
 $string['err_required'] = 'Hemen balio bat eman behar duzu';
 $string['err_wrappingwhitespace'] = 'Balioak ezin du zuriune batekin hasi edo amaitu.';
-$string['err_wrongfileextension'] = 'Fitxategi batzuk ({$a->wrongfiles}) ezin dira igo. Soilik {$a->whitelist} fitxategi-luzapenak onartzen dira.';
+$string['err_wrongfileextension'] = 'Fitxategi batzuk ({$a->wrongfiles}) ezin dira igo. Soilik {$a->allowlist} fitxategi-luzapenak onartzen dira.';
 $string['filesofthesetypes'] = 'Onartutako fitxategi motak:';
 $string['filetypesany'] = 'Fitxategi mota guztiak';
 $string['filetypesnotall'] = 'Hemen ezin da \'Fitxategi mota guztiak\' aukeratu';
+$string['filetypesnotallowed'] = 'Hauek dira hemen onartzen ez diren fitxategi-motak: {$a}';
 $string['filetypesnotwhitelisted'] = 'Hauek dira hemen onartzen ez diren fitxategi motak: {$a}';
 $string['filetypesothers'] = 'Bestelako fitxategiak';
 $string['filetypesunknown'] = 'Fitxategi mota ezezagunak: {$a}';
@@ -62,6 +64,7 @@ $string['mustbeoverriden'] = '{$a} klaseko form_definition() metodo abstraktoak 
 $string['newvaluefor'] = 'Balio berria {$a}-(r)entzat';
 $string['nomethodforaddinghelpbutton'] = '{$a->name} (class {$a->classname}) formularioaren elementuari laguntza botoia gehitzeko metodorik ez dago';
 $string['nonexistentformelements'] = '{$a} formularioaren elementua ez dago eta ezin zaio laguntza-botoirik gehitu';
+$string['nopermissionform'] = 'Ez duzu formulario honetara sartzeko baimenik.';
 $string['noselection'] = 'Aukeratu gabe';
 $string['nosuggestions'] = 'Iradokizunik ez';
 $string['novalue'] = 'Ez duzu ezer sartu';
@@ -82,6 +85,7 @@ $string['showadvanced'] = 'Erakutsi aurreratuak';
 $string['showless'] = 'Erakutsi gutxiago...';
 $string['showmore'] = 'Erakutsi gehiago...';
 $string['somefieldsrequired'] = 'Formulario honetan {$a} marka dutenak derrigorrezko eremuak dira.';
+$string['suggestions'] = 'Iradokizunak';
 $string['time'] = 'Denbora';
 $string['timeunit'] = 'Denbora-unitatea';
 $string['timing'] = 'Denbora-tartea';

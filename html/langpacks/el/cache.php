@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'el', version '3.8'.
+ * Strings for component 'cache', language 'el', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -40,7 +40,10 @@ $string['cachedef_calendar_subscriptions'] = 'Συνδρομές ημερολο�
 $string['cachedef_capabilities'] = 'Λίστα δυνατοτήτων συστήματος';
 $string['cachedef_completion'] = 'Κατάσταση ολοκλήρωσης δραστηριότητας';
 $string['cachedef_config'] = 'Ρυθμίσεις διαμόρφωσης';
+$string['cachedef_contentbank_context_extensions'] = 'Επιτρεπόμενες επεκτάσεις και τα πρόσθετα υποστηριξής τους σε περιβάλλον τράπεζας περιεχομένου';
+$string['cachedef_contentbank_enabled_extensions'] = 'Επιτρεπόμενες επεκτάσεις και τα πρόσθετα υποστηριξής τους σε τράπεζα περιεχομένου';
 $string['cachedef_contextwithinsights'] = 'Πλαίσιο με ενοράσεις';
+$string['cachedef_course_image'] = 'Εικόνες μαθήματος';
 $string['cachedef_course_user_dates'] = 'Οι ημερομηνίες χρηστών για τα μαθήματα που έχουν ρυθμιστεί σε κατάσταση σχετικών ημερομηνιών';
 $string['cachedef_coursecat'] = 'Λίστες με κατηγορίες μαθημάτων για συγκεκριμένο χρήστη';
 $string['cachedef_coursecatrecords'] = 'Εγγραφές κατηγοριών μαθημάτων';
@@ -54,9 +57,13 @@ $string['cachedef_externalbadges'] = 'Εξωτερικά διακριτικά γ
 $string['cachedef_fontawesomeiconmapping'] = 'Αντιστοίχιση εικονιδίων για την γραμματοσειρά awesome (φοβερή)';
 $string['cachedef_grade_categories'] = 'Ερωτήματα κατηγορίας βαθμού';
 $string['cachedef_grade_letters'] = 'Ερωτήματα γραμμάτων βαθμού';
+$string['cachedef_gradesetting'] = 'Ρυθμίσεις βαθμού μαθήματος';
 $string['cachedef_groupdata'] = 'Πληροφορίες ομάδας μαθημάτων';
+$string['cachedef_h5p_content_type_translations'] = 'Μεταφράσεις βιβλιοθηκών τύπου-περιεχομένου H5P';
+$string['cachedef_h5p_library_files'] = 'Αρχεία βιβλιοθήκης H5P';
 $string['cachedef_htmlpurifier'] = 'Περιεχόμενο ξεκαθαρισμένο με τον HTML Purifier (Καθαριστής HTML)';
 $string['cachedef_langmenu'] = 'Κατάλογος διαθέσιμων γλωσσών';
+$string['cachedef_license'] = 'Λίστα αδειών χρήσης';
 $string['cachedef_locking'] = 'Κλείδωμα';
 $string['cachedef_message_processors_enabled'] = 'Κατάσταση ενεργοποίησης επεξεργαστών μηνυμάτων';
 $string['cachedef_message_time_last_message_between_users'] = 'Ο χρόνος δημιουργίας του πιο πρόσφατου μηνύματος σε μια συζήτηση';
@@ -67,15 +74,18 @@ $string['cachedef_plugin_functions'] = 'Διαθέσιμες συναρτήσε�
 $string['cachedef_plugin_manager'] = 'Διαχειριστής πληροφοριών πρόσθετων';
 $string['cachedef_portfolio_add_button_portfolio_instances'] = 'Στιγμιότυπα χαρτοφυλακίου για την κλάση portfolio_add_button';
 $string['cachedef_postprocessedcss'] = 'Κώδικας CSS προς επεξεργασία σε δεύτερη φάση (Post-processed)';
-$string['cachedef_presignup'] = 'Δεδομένα πριν την εγγραφή για συγκεκριμένο μη εγγεγραμμένο χρήστη';
+$string['cachedef_presignup'] = 'Δεδομένα πριν την εγγραφή για συγκεκριμένο μη καταχωρημένο χρήστη';
 $string['cachedef_questiondata'] = 'Ορισμοί ερωτημάτων';
-$string['cachedef_repositories'] = 'Δεδομένα στγμιοτύπου αποθετηρίου';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'Σύσταση/πρόταση στοιχείων περιεχομένου μαθήματος';
+$string['cachedef_repositories'] = 'Δεδομένα στιγμιότυπου αποθετηρίου';
 $string['cachedef_roledefs'] = 'Ορισμοί ρόλων';
 $string['cachedef_string'] = 'Κρυφή μνήμη συμβολοσειράς γλώσσας';
 $string['cachedef_suspended_userids'] = 'Λίστα χρηστών σε αναστολή ανά μάθημα';
 $string['cachedef_tagindexbuilder'] = 'Αποτελέσματα αναζήτησης για στοιχεία με ετικέτα';
 $string['cachedef_tags'] = 'Συλλογές και περιοχές ετικετών';
 $string['cachedef_temp_tables'] = 'Κρυφή μνήμη προσωρινών πινάκων';
+$string['cachedef_user_course_content_items'] = 'Στοιχεία περιεχομένου χρήστη (δραστηριότητες, πόροι και υποτύποι τους) ανά μάθημα';
+$string['cachedef_user_favourite_course_content_items'] = 'Στοιχεία με αστερίσκο του χρήστη';
 $string['cachedef_user_group_groupings'] = 'Ομαδοποιήσεις και ομάδες χρηστών ανά μάθημα';
 $string['cachedef_userselections'] = 'Δεδομένα που χρησιμοποιούνται για να παραμένουν οι επιλογές των χρηστών σε όλο το Moodle';
 $string['cachedef_yuimodules'] = 'Ορισμοί αρθρωμάτων YUI (Yahoo! User Interface Library παλιά βιβλιοθήκη JavaScript)';
@@ -97,7 +107,7 @@ $string['definitionsummaries'] = 'Γνωστοί ορισμοί κρυφής μ�
 $string['delete'] = 'Διαγραφή';
 $string['deletelock'] = 'Διαγραφή κλειδώματος';
 $string['deletelockconfirmation'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε το κλειδί {$a};';
-$string['deletelockhasuses'] = 'Δεν είναι δυνατή η διαγραφή αυτού του στιγμιοτύπου κλειδώματος επειδή χρησιμοποιείται από μία ή περισσότερες αποθηκεύσεις.';
+$string['deletelockhasuses'] = 'Δεν είναι δυνατή η διαγραφή αυτού του στιγμιότυπου κλειδώματος επειδή χρησιμοποιείται από μία ή περισσότερες αποθηκεύσεις.';
 $string['deletelocksuccess'] = 'Επιτυχής διαγραφή του κλειδώματος.';
 $string['deletestore'] = 'Διαγραφή αποθήκευσης';
 $string['deletestoreconfirmation'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε την αποθήκευση «{$a}»;';
@@ -110,7 +120,7 @@ $string['editsharing'] = 'Επεξεργασία διαμοιρασμού';
 $string['editstore'] = 'Επεξεργασία αποθήκευσης';
 $string['editstoresuccess'] = 'Επιτυχής επεξεργασία του χώρου κρυφής μνήμης';
 $string['ex_configcannotsave'] = 'Δεν ήταν δυνατή η αποθήκευση του αρχείου ρυθμίσεων κρυφής μνήμης σε αρχείο.';
-$string['ex_nodefaultlock'] = 'Δεν είναι δυνατή η εύρεση ενός προεπιλεγμένου στιγμιοτύπου κλειδώματος.';
+$string['ex_nodefaultlock'] = 'Δεν είναι δυνατή η εύρεση ενός προεπιλεγμένου στιγμιότυπου κλειδώματος.';
 $string['ex_unabletolock'] = 'Δεν είναι δυνατή η επίτευξη κλειδώματος για κρυφή αποθήκευση.';
 $string['ex_unmetstorerequirements'] = 'Δεν μπορείτε να χρησιμοποιήσετε αυτή την αποθήκευση αυτή τη στιγμή. Ανατρέξτε στην τεκμηρίωση για να καθορίσετε τις απαιτήσεις της.';
 $string['gethit'] = 'Get - Hit (φέρε - πέτυχε)';
@@ -126,7 +136,7 @@ $string['locking_help'] = 'Το κλείδωμα είναι ένας μηχαν�
 $string['lockname'] = 'Όνομα';
 $string['locknamedesc'] = 'Το όνομα πρέπει να είναι μοναδικό και μπορεί μόνο να αποτελείται από τους χαρακτήρες: a-zA-Z_';
 $string['locknamenotunique'] = 'Το όνομα που έχετε επιλέξει δεν είναι μοναδικό. Παρακαλούμε, επιλέξτε ένα μοναδικό όνομα.';
-$string['locksummary'] = 'Περίληψη κρυφών μνημών στιγμιοτύπων κλειδωμάτων.';
+$string['locksummary'] = 'Περίληψη στιγμιότυπων κλειδώματος κρυφών μνημών.';
 $string['locktype'] = 'Τύπος';
 $string['lockuses'] = 'Χρήσεις';
 $string['mappingdefault'] = '(προεπιλογή)';

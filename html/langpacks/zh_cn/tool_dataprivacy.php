@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'zh_cn', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'zh_cn', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -31,7 +31,12 @@ $string['addnewdefaults'] = '添加一个新的默认模块';
 $string['addpurpose'] = '‎添加用途‎';
 $string['addroleoverride'] = '‎添加角色覆盖‎';
 $string['approve'] = '‎批准‎';
+$string['approvedrequestsubmitted'] = '您的请求已提交，将很快处理。';
 $string['approverequest'] = '‎批准请求‎';
+$string['automaticdatadeletionapproval'] = '自动数据删除请求批准';
+$string['automaticdatadeletionapproval_desc'] = '如果启用，数据删除请求将自动批准。<br />注意，自动批准只适用于启用此设置的新数据删除请求。现有的数据删除请求仍需通过隐私官的手动批准。';
+$string['automaticdataexportapproval'] = '自动数据导出请求批准';
+$string['automaticdataexportapproval_desc'] = '如果启用，数据导出请求将自动获得批准。<br />请注意，自动批准只适用于启用此设置的新数据导出请求。现有的数据导出请求有待批准，仍然必须由隐私官手动批准。';
 $string['automaticdeletionrequests'] = '‎创建自动数据删除请求‎';
 $string['automaticdeletionrequests_desc'] = '如果启用，将为手动删除的任何用户帐户自动创建数据删除请求。';
 $string['bulkapproverequests'] = '批准请求';
@@ -311,7 +316,6 @@ $string['statusdeleted'] = '删除';
 $string['statusdetail'] = '状态：';
 $string['statusexpired'] = '已过期';
 $string['statuspending'] = '待定中';
-$string['statuspreprocessing'] = '预处理中';
 $string['statusprocessing'] = '处理中';
 $string['statusready'] = '下载好了';
 $string['statusrejected'] = '被拒绝';

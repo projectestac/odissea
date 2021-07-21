@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'pt', version '3.8'.
+ * Strings for component 'qtype_truefalse', language 'pt', version '3.11'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['correctanswer'] = 'Resposta correta';
-$string['correctanswerfalse'] = 'A resposta correta é \'Falso\'';
-$string['correctanswertrue'] = 'A resposta correta é \'Verdadeiro\'';
+$string['correctanswerfalse'] = 'Resposta correta: Falso';
+$string['correctanswertrue'] = 'Resposta correta: Verdadeiro';
 $string['false'] = 'Falso';
 $string['feedbackfalse'] = 'Feedback para a resposta \'Falso\'';
 $string['feedbacktrue'] = 'Feedback para a resposta \'Verdadeiro\'';

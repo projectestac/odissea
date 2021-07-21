@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_radiobutton', language 'ar', version '3.8'.
+ * Strings for component 'datafield_radiobutton', language 'ar', version '3.11'.
  *
  * @package     datafield_radiobutton
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'حقل زر اختيار';
 $string['pluginname'] = 'زر الاختيار';
-$string['privacy:metadata'] = 'لا يخزن Radio button field  أيّ بيانات شخصية ، بل يستخدم جداول معرفة في mod_data.';
+$string['privacy:metadata'] = 'إن مكون حقل أزرار الراديو لا يخزن أي بيانات شخصية بحد ذاته، بل يستعمل جداول معرفة في mod_data.';

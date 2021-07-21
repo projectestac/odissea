@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'gl', version '3.8'.
+ * Strings for component 'mnet', language 'gl', version '3.11'.
  *
  * @package     mnet
  * @category    string
@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (auto-asinado)';
+$string['RPC_HTTPS_SELF_SIGNED'] = 'HTTPS (autoasinado)';
 $string['RPC_HTTPS_VERIFIED'] = 'HTTPS (asinado)';
 $string['RPC_HTTP_PLAINTEXT'] = 'HTTP descifrado';
-$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (auto-asinado)';
+$string['RPC_HTTP_SELF_SIGNED'] = 'HTTP (autoasinado)';
 $string['RPC_HTTP_VERIFIED'] = 'HTTP (asinado)';
 $string['aboutyourhost'] = 'Sobre o seu servidor';
 $string['accesslevel'] = 'Nivel de acceso';
@@ -36,11 +36,11 @@ $string['addhost'] = 'Engadir servidor';
 $string['addnewhost'] = 'Engadir un novo servidor';
 $string['addtoacl'] = 'Engadir ao control de acceso';
 $string['allhosts'] = 'Todos os servidores';
-$string['allhosts_no_options'] = 'Non hai opcións dispoñíbeis cando se ven múltiples servidores';
+$string['allhosts_no_options'] = 'Non hai opcións dispoñíbeis cando se ven varios servidores';
 $string['allow'] = 'Permitir';
-$string['applicationtype'] = 'Tipo do aplicativo';
-$string['authfail_nosessionexists'] = 'Produciuse un fallo na autorización: A sesión mnet non existe.';
-$string['authfail_sessiontimedout'] = 'Produciuse un fallo na autorización: A sesión mnet rematou.';
+$string['applicationtype'] = 'Tipo de aplicación';
+$string['authfail_nosessionexists'] = 'Produciuse un fallo na autorización: A sesión MNet non existe.';
+$string['authfail_sessiontimedout'] = 'Produciuse un fallo na autorización: A sesión MNet rematou.';
 $string['authfail_usermismatch'] = 'Produciuse un fallo na autorización: O usuario non coincide.';
 $string['authmnetdisabled'] = 'O <em>engadido de autenticación</em> da rede de Moodle está <strong>desactivado</strong>.';
 $string['badcert'] = 'Este certificado non é correcto.';
@@ -60,16 +60,16 @@ $string['deletehost'] = 'Eliminar servidor';
 $string['deletekeycheck'] = 'Confirma que quere eliminar esta chave?';
 $string['deleteoutoftime'] = 'A súa xanela de 60 segundos para eliminar esta chave caducou. Comece de novo.';
 $string['deleteuserrecord'] = 'SSO ACL: eliminar rexistro do usuario «{$a}[0]» de {$a}[1].';
-$string['deletewrongkeyvalue'] = 'Produciuse un erro. Se non estaba a tentar eliminar a chave SSL do seu servidor, é posíbel que fose suxeito dun ataque malicioso. Non se executou ningunha acción.';
+$string['deletewrongkeyvalue'] = 'Ocorreu un erro. Se non estaba a tentar eliminar a chave SSL do seu servidor, é posíbel que fose suxeito dun ataque malicioso. Non se executou ningunha acción.';
 $string['deny'] = 'Denegar';
 $string['description'] = 'Descrición';
 $string['duplicate_usernames'] = 'Produciuse un erro ao crear un índice nas columnas «mnethostid» e »username» na súa táboa de usuarios.<br />Isto pode acontecer cando ten <a href="{$a}" target="_blank">nomes de usuarios duplicados na súa táboa de usuarios</a>.<br />A súa autorización aínda debería completarse satisfactoriamente. Prema na ligazón de arriba e logo aparecerá este problema nunha nova xanela en instrucións de arranxo. Vostede pode atendelo ao final da actualización.<br />';
 $string['enabled_for_all'] = '(Este servizo foi activado para todos os servidores).';
 $string['enterausername'] = 'Introduza un nome de usuario ou unha lista de nomes separados por comas.';
-$string['error7020'] = 'Este erro ocorre polo xeral se o sitio remoto creou un rexistro co wwwroot trabucado, por exemplo http://oseusitio.com en lugar de http://www.oseusitio.com. Debería contactar co administrador do sitio remoto co seu wwwroot (tal como se especifica en config.php) pedíndolle que actualice o rexistro do seu servidor.';
-$string['error7022'] = 'A mensaxe que enviou ao sitio remoto foi cifrado correctamente, mais non foi asinado. É moi estraño que ocorra isto e probabelmente Vostede debería informar sobre o erro (fornecendo toda a información posíbel sobre a versión do aplicativo, etc.';
+$string['error7020'] = 'Este erro ocorre polo xeral se o sitio remoto creou un rexistro co wwwroot trabucado, por exemplo https://oseusitio.com en lugar de https://www.oseusitio.com. Póñase en contaco co administrador do sitio remoto co seu wwwroot (tal como se especifica en config.php) e pídalle que actualice o rexistro do seu servidor.';
+$string['error7022'] = 'A mensaxe que enviou ao sitio remoto foi cifrado correctamente, mais non foi asinado. É moi estraño que ocorra isto e probabelmente Vostede debería informar sobre o erro (fornecendo toda a información posíbel sobre a versión da aplicación, etc.';
 $string['error7023'] = 'O sitio remoto tentou descifrar a súa mensaxe con todas as chaves que ten rexistradas para o seu sitio, mais fracasaron. Debería poder solucionar este problema introducindo a man as chaves do sitio remoto. É pouco probábel que ocorra isto a non ser que non teña mantido contacto co sitio remoto durante varios meses.';
-$string['error7024'] = 'Vostede envía unha mensaxe sen cifrar ao sitio remoto, mais este non acepta comunicacións sen cifrar dende o seu sitio. É moi estraño que ocorra isto e probabelmente Vostede debería informar sobre o erro (fornecendo toda a información posíbel sobre a versión do aplicativo, etc.';
+$string['error7024'] = 'Vostede envía unha mensaxe sen cifrar ao sitio remoto, mais este non acepta comunicacións sen cifrar dende o seu sitio. É moi estraño que ocorra isto e probabelmente Vostede debería informar sobre o erro (fornecendo toda a información posíbel sobre a versión da aplicación, etc.';
 $string['error7026'] = 'A chave coa que foi asinada a súa mensaxe é distinta da chave no servidor remoto. É máis, o servidor remoto tentou obter a súa clave actual e non foi quen de facelo. Tente introducir manualmente a chave e volva a probar de facelo.';
 $string['error709'] = 'O sitio remoto non foi quen de obter unha chave SSL para vostede.';
 $string['eventaccesscontrolcreated'] = 'Creouse o control de accesos';
@@ -89,14 +89,14 @@ $string['hidelocal'] = 'Agochar usuarios locais';
 $string['hideremote'] = 'Agochar usuarios remotos';
 $string['host'] = 'servidor';
 $string['hostcoursenotfound'] = 'Servidor ou curso non atopado';
-$string['hostdeleted'] = 'Aceptar - Servidor eliminado';
-$string['hostexists'] = 'Xa existe un rexistro para un servidor con ese nome (pode ser eliminado). <a href="{$a}">Prema aquí</a>para editar ese rexistro.';
+$string['hostdeleted'] = 'Servidor eliminado';
+$string['hostexists'] = 'Xa hai un rexistro para ese servidor e inclusión de Moodle co ID {$a}.<br />Prema en <em>Continuar</em> para editar ese rexistro.';
 $string['hostlist'] = 'Lista de servidores en rede';
 $string['hostname'] = 'Nome do servidor';
 $string['hostnamehelp'] = 'O nome do dominio plenamente cualificado do servidor remoto, como por exemplo: www.exemplo.com';
 $string['hostnotconfiguredforsso'] = 'Este servidor de Moodle remoto non está configurado para inicios de sesión remotos.';
 $string['hostsettings'] = 'Axustes do servidor';
-$string['http_self_signed_help'] = 'Permitir conexións utilizando un certificado DIY SSL auto-asinado no servidor remoto.';
+$string['http_self_signed_help'] = 'Permitir conexións utilizando un certificado DIY SSL autoasinado no servidor remoto.';
 $string['http_verified_help'] = 'Permitir conexións utilizando un certificado SSL verificado en PHP no servidor remoto, sobre http (non https).';
 $string['https_self_signed_help'] = 'Permitir conexións utilizando un DIY SSL autoasinado en PHP no servidor remoto sobre http.';
 $string['https_verified_help'] = 'Permitir conexións utilizando un certificado SSL verificado no servidor remoto.';
@@ -104,7 +104,7 @@ $string['id'] = 'ID';
 $string['idhelp'] = 'Este valor atribúese automaticamente e non se pode cambiar';
 $string['importfields'] = 'Campos que importar';
 $string['inspect'] = 'Inspeccionar';
-$string['installnosuchfunction'] = 'Produciuse un erro de codificación! Alguén está tentando instalar unha función mnet xmlrpc ({$a->method}) desde un ficheiro ({$a->file}) e non é posíbel atopalo!';
+$string['installnosuchfunction'] = 'Produciuse un erro de codificación! Alguén está tentando instalar unha función mnet xmlrpc ({$a->method}) dende un ficheiro ({$a->file}) e non é posíbel atopalo!';
 $string['installnosuchmethod'] = 'Produciuse un erro de codificación! Alguén está tentando instalar un método mnet xmlrpc ({$a->method}) nunha clase ({$a->class}) e non é posíbel atopala!';
 $string['installreflectionclasserror'] = 'Produciuse un erro de codificación! A introspección MNet fallou para o método «{$a->method}» na clase «{$a->class}». A mensaxe orixinal de erro, por se serve de axuda, é: «{$a->error}»';
 $string['installreflectionfunctionerror'] = 'Produciuse un erro de codificación! A introspección MNet fallou para a función «{$a->method}» no ficheiro «{$a->file}». A mensaxe orixinal de erro, por se serve de axuda, é: «{$a->error}»';
@@ -149,7 +149,7 @@ $string['net'] = 'Rede';
 $string['networksettings'] = 'Axustes da rede';
 $string['never'] = 'Nunca';
 $string['noaclentries'] = 'Non hai entradas na lista de control de acceso SSO';
-$string['noaddressforhost'] = 'Desculpe, mais non foi posíbel resolver o nome da máquina ({$a})!';
+$string['noaddressforhost'] = 'Vaites, non foi posíbel resolver o nome da máquina ({$a})!';
 $string['nocurl'] = 'A biblioteca PHP cURL non está instalada';
 $string['nolocaluser'] = 'Non existe ningún rexistro local para usuario remoto, e non é posíbel crealo xa esta máquina no crea usuarios automaticamente. Contacte co seu administrador.';
 $string['nomodifyacl'] = 'Non ten permiso para modificar a lista de control de acceso MNet.';
@@ -168,7 +168,7 @@ $string['notPEM'] = 'Esta chave non está en formato PEM. Non vai funcionar.';
 $string['not_in_range'] = 'O enderezo IP <code>{$a}</code> non constitúe un servidor de confianza válido.';
 $string['notenoughidpinfo'] = 'O seu provedor de identidade non está a darnos información abondo para crear ou actualizar localmente a súa conta. Desculpe!';
 $string['notinxmlrpcserver'] = 'Intento de acceso ao cliente remoto MNet, non é posíbel durante a execución do servidor XMLRPC';
-$string['notmoodleapplication'] = 'AVISO: Este non é una aplicativo Moodle, polo que é posíbel que algúns dos métodos de inspección non funcionen axeitadamente.';
+$string['notmoodleapplication'] = 'ADVERTENCIA: Esta non é unha aplicación Moodle, polo que é posíbel que algúns dos métodos de inspección non funcionen axeitadamente.';
 $string['notpermittedtojump'] = 'Non ten permiso para comezar unha sesión remota dende este servidor de Moodle.';
 $string['notpermittedtojumpas'] = 'Vostede non pode comezar unha sesión remota cando está conectado como outro usuario.';
 $string['notpermittedtoland'] = 'Non ten permiso para comezar unha sesión remota.';
@@ -191,9 +191,9 @@ $string['publickey_help'] = 'Esta chave pública obtense automaticamente do serv
 $string['publickeyrequired'] = 'Debe fornecer unha chave pública';
 $string['publish'] = 'Publicar';
 $string['reallydeleteserver'] = 'Confirma que quere eliminar o servidor?';
-$string['receivedwarnings'] = 'Recibíronse os seguintes avisos';
+$string['receivedwarnings'] = 'Recibíronse as seguintes advertencias';
 $string['recordnoexists'] = 'Ese rexistro non existe.';
-$string['reenableserver'] = 'Non - Seleccione esta opción para volver activar este servidor.';
+$string['reenableserver'] = 'Non, seleccione esta opción para volver activar este servidor.';
 $string['registerallhosts'] = 'Rexistrar todos os servidores (modo promiscuo)';
 $string['registerallhostsexplain'] = 'Pode escoller rexistrar todos os servidores que tentan conectarte automaticamente con vostede. Isto significa que na lista de servidores aparecerá o rexistro de calquera sitio MNet que se conecte con vostede e solicite a súa chave pública.<br /> Embaixo proporciónase a posibilidade de configurar servizos para «Todos os servidores». Os servizos aí activados pódense fornecer a calquera servidor remoto de xeito indiscriminado indiscriminadamente.';
 $string['registerhostsoff'] = 'Actualmente a función de rexistrar todos os servidores está <b>desactivada</b>';
@@ -215,7 +215,7 @@ $string['serviceid'] = 'ID do servizo';
 $string['servicesavailableonhost'] = 'Servizos dispoñíbeis en {$a}';
 $string['serviceswepublish'] = 'Servizos que publicamos para {$a}.';
 $string['serviceswesubscribeto'] = 'Servizos en {$a} aos que nos subscribimos.';
-$string['settings'] = 'Configuración';
+$string['settings'] = 'Axustes';
 $string['showlocal'] = 'Amosar usuarios locais';
 $string['showremote'] = 'Amosar usuarios remotos';
 $string['ssl_acl_allow'] = 'SSO ACL: Permitir usuario {$a}[0] de {$a}[1]';
@@ -252,14 +252,14 @@ $string['unknownerror'] = 'Produciuse un erro descoñecido durante a negociació
 $string['usercannotchangepassword'] = 'Non pode cambiar aquí o seu contrasinal, pois é un usuario remoto.';
 $string['userchangepasswordlink'] = '<br /> Talvez poida cambiar o seu contrasinal no seu fornecedor <a href="{$a->wwwroot}/login/change_password.php">{$a->description}</a>.';
 $string['usernotfullysetup'] = 'A súa conta de usuario está incompleta. Necesita ir <a href="{$a}">de volta ao seu provedor</a> e asegurarse de que completou alí o seu perfil. É probábel que sexa necesario saír do sitio e volver entrar para que teña efecto.';
-$string['usersareonline'] = 'Aviso: {$a} usuarios deste servidor teñen neste momento a sesión iniciada no seu sitio.';
+$string['usersareonline'] = 'Advertencia: {$a} usuarios deste servidor teñen neste momento a sesión iniciada no seu sitio.';
 $string['validated_by'] = 'Está validado pola rede: <code>{$a}</code>';
 $string['verifyhostandpeer'] = 'Verificar o servidor e o par';
 $string['verifyhostonly'] = 'Verificar só o servidor';
 $string['verifysignature-error'] = 'Fallou a verificación da sinatura. Produciuse un erro.';
 $string['verifysignature-invalid'] = 'Fallou a verificación da sinatura. Semella que estes datos non foron asinados por vostede.';
 $string['version'] = 'versión';
-$string['warning'] = 'Aviso';
+$string['warning'] = 'Advertencia';
 $string['wrong-ip'] = 'O seu enderezo IP non coincide co enderezo que consta no noso rexistro.';
 $string['xmlrpc-missing'] = 'Debe ter XML-RPC instalado na súa construción PHP para poder usar esta característica';
 $string['yourhost'] = 'O seu servidor';

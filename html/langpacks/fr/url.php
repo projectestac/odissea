@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'fr', version '3.8'.
+ * Strings for component 'url', language 'fr', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -35,7 +35,7 @@ $string['contentheader'] = 'Contenu';
 $string['createurl'] = 'Créer une URL';
 $string['displayoptions'] = 'Options d\'affichage disponibles';
 $string['displayselect'] = 'Affichage';
-$string['displayselect_help'] = 'Ce réglage, ainsi que le type de fichier de l\'URL et la capacité du navigateur à intégrer des objets (<i>embedding</i>), détermine la façon dont l\'URL est affichée. Les options peuvent être :
+$string['displayselect_help'] = 'Ce réglage, ainsi que le type de fichier de l\'URL et la capacité du navigateur à intégrer des objets (<em>embedding</em>), détermine la façon dont l\'URL est affichée. Les options peuvent être :
 
 * Automatique : la meilleure option d\'affichage pour l\'URL concernée est automatiquement sélectionnée
 * Intégrer : l\'URL est affichée dans la page au-dessous de la barre de navigation, avec la description de l\'URL et tous les blocs
@@ -64,7 +64,7 @@ $string['modulenameplural'] = 'URLs';
 $string['page-mod-url-x'] = 'Toute page du module URL';
 $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'Variables d\'URL';
-$string['parametersheader_help'] = 'Certaines variables internes de Moodle sont parfois ajoutées automatiquement à l\'URL. Saisissez le nom de votre paramètre dans chaque champ, puis sélectionnez la variable correspondante.';
+$string['parametersheader_help'] = 'Cette section permet de passer des informations internes comme parties de l\'URL. C\'est pratique si l\'URL est celle d\'une page interactive, avec des paramètres, et que vous voulez lui passer quelque chose, par exemple le nom de l\'utilisateur actuel. Saisissez le nom du paramètre de l\'URL dans le champ texte, puis sélectionnez la variable correspondante du site.';
 $string['pluginadministration'] = 'Administration URL';
 $string['pluginname'] = 'URL';
 $string['popupheight'] = 'Hauteur de la fenêtre (en pixels)';

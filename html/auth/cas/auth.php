@@ -295,24 +295,12 @@ class auth_plugin_cas extends auth_plugin_ldap {
      * @param string $username username
      * @return mixed array with no magic quotes or false on error
      */
-    //XTEC ************ MODIFICAT - To avoid 'Strict standards' warning
-    //2012.08.24 @sarjona
-    function get_userinfo($username, $password='') {
-        if (empty($this->config->host_url)) {
-            return array();
-        }
-        return parent::get_userinfo($username, $password);
-    }
-    //************ ORIGINAL
-    /*    
     function get_userinfo($username) {
         if (empty($this->config->host_url)) {
             return array();
         }
         return parent::get_userinfo($username);
     }
-    */
-    //************ FI
 
     /**
      * Syncronizes users from LDAP server to moodle user table.

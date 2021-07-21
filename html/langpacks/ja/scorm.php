@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'ja', version '3.8'.
+ * Strings for component 'scorm', language 'ja', version '3.11'.
  *
  * @package     scorm
  * @category    string
@@ -74,8 +74,8 @@ $string['browsed'] = '閲覧済み';
 $string['browsemode'] = 'プレビューモード';
 $string['browserepository'] = 'リポジトリを閲覧する';
 $string['calculatedweight'] = '計算加重';
-$string['calendarend'] = '{$a} 終了';
-$string['calendarstart'] = '{$a} 開始';
+$string['calendarend'] = '「{$a}」終了';
+$string['calendarstart'] = '「{$a}」開始';
 $string['cannotaccess'] = 'あなたはこのスクリプトをそのようにコールすることはできません。';
 $string['cannotfindsco'] = 'SCOを見つけることができませんでした。';
 $string['chooseapacket'] = 'パッケージを選択または更新する';
@@ -84,6 +84,11 @@ $string['collapsetocwinsize'] = '次のサイズ以下の場合、TOCを折り�
 $string['collapsetocwinsizedesc'] = 'ここではTOCを自動的に折りたたむウィンドウサイズを指定します。';
 $string['compatibilitysettings'] = '互換性設定';
 $string['completed'] = '完了';
+$string['completiondetail:allscos'] = 'この活動のすべての部分を実行する';
+$string['completiondetail:completionscore'] = '評点 {$a} またはそれ以上を獲得する';
+$string['completiondetail:completionstatuscompleted'] = '活動を完了する';
+$string['completiondetail:completionstatuscompletedandpassed'] = '活動を完了および合格する';
+$string['completiondetail:completionstatuspassed'] = '活動に合格する';
 $string['completionscorerequired'] = '必要最小点数';
 $string['completionscorerequired_help'] = 'この設定を有効にすることによりユーザがこのSCORM活動を完了するためには他の活動完了必要条件と同じく少なくとも設定された最小点数に到達する必要があります。';
 $string['completionscorerequireddesc'] = '完了するには最低でも {$a} 点必要です。';

@@ -79,15 +79,17 @@ class restore_controller extends base_controller {
      * @param int $userid
      * @param int $target backup::TARGET_[ NEW_COURSE | CURRENT_ADDING | CURRENT_DELETING | EXISTING_ADDING | EXISTING_DELETING ]
      * @param \core\progress\base $progress Optional progress monitor
+     * @param bool $releasesession Should release the session? backup::RELEASESESSION_YES or backup::RELEASESESSION_NO
      */
     public function __construct($tempdir, $courseid, $interactive, $mode, $userid, $target,
-            \core\progress\base $progress = null) {
+            \core\progress\base $progress = null, $releasesession = backup::RELEASESESSION_NO) {
         $this->tempdir = $tempdir;
         $this->courseid = $courseid;
         $this->interactive = $interactive;
         $this->mode = $mode;
         $this->userid = $userid;
         $this->target = $target;
+        $this->releasesession = $releasesession;
 
         // Apply some defaults
         $this->type = '';
@@ -114,7 +116,7 @@ class restore_controller extends base_controller {
         $this->logger = backup_factory::get_logger_chain($this->interactive, $this->execution, $this->restoreid);
 
         // Set execution based on backup mode.
-        if ($mode == backup::MODE_ASYNC) {
+        if ($mode == backup::MODE_ASYNC || $mode == backup::MODE_COPY) {
             $this->execution = backup::EXECUTION_DELAYED;
         } else {
             $this->execution = backup::EXECUTION_INMEDIATE;
@@ -357,6 +359,11 @@ class restore_controller extends base_controller {
         core_php_time_limit::raise(1 * 60 * 60); // 1 hour for 1 course initially granted
         raise_memory_limit(MEMORY_EXTRA);
 
+        // Release the session so other tabs in the same session are not blocked.
+        if ($this->get_releasesession() === backup::RELEASESESSION_YES) {
+            \core\session\manager::write_close();
+        }
+
         // Do course cleanup precheck, if required. This was originally in restore_ui. Moved to handle async backup/restore.
         if ($this->get_target() == backup::TARGET_CURRENT_DELETING || $this->get_target() == backup::TARGET_EXISTING_DELETING) {
             $options = array();
@@ -520,6 +527,30 @@ class restore_controller extends base_controller {
         } else {
             $this->set_status(backup::STATUS_NEED_PRECHECK);
         }
+        $this->progress->end_progress();
+    }
+
+    /**
+     * Do the necessary copy preparation actions.
+     * This method should only be called once the backup of a copy operation is completed.
+     *
+     * @throws restore_controller_exception
+     */
+    public function prepare_copy(): void {
+        // Check that we are in the correct mode.
+        if ($this->mode != backup::MODE_COPY) {
+            throw new restore_controller_exception('cannot_prepare_copy_wrong_mode');
+        }
+
+        $this->progress->start_progress('Prepare Copy');
+
+        // If no exceptions were thrown, then we are in the proper format.
+        $this->format = backup::FORMAT_MOODLE;
+
+        // Load plan, apply security and set status based on interactivity.
+        $this->load_plan();
+
+        $this->set_status(backup::STATUS_NEED_PRECHECK);
         $this->progress->end_progress();
     }
 

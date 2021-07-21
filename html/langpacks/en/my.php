@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'en', version '3.8'.
+ * Strings for component 'my', language 'en', version '3.11'.
  *
  * @package     my
  * @category    string
@@ -42,3 +42,4 @@ $string['reseterror'] = 'There was an error resetting your page';
 $string['reseteveryonesdashboard'] = 'Reset Dashboard for all users';
 $string['reseteveryonesprofile'] = 'Reset profile for all users';
 $string['resetpage'] = 'Reset page to default';
+$string['resettingdashboards'] = 'Resetting user dashboards to default...';

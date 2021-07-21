@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'nl', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'nl', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -42,4 +42,7 @@ $string['pluginname_help'] = 'Als antwoord op de vraag (waarin een afbeelding ka
 $string['pluginnameadding'] = 'Kort antwoordvraag toevoegen';
 $string['pluginnameediting'] = 'Kort antwoordvraag bewerken';
 $string['pluginnamesummary'] = 'Laat een antwoord toe dat bestaat uit één of enkele woorden en dat beoordeeld kan worden tegenover verschillende modelantwoorden waarin jokertekens kunnen voorkomen.';
-$string['privacy:metadata'] = 'De kort antwoord vraagtype-plugin bewaart geen persoonlijke gegevens.';
+$string['privacy:metadata'] = 'De kort antwoord vraagtype-plugin  laat vraag-auteurs standaardopties en gebruikersvoorkeuren instellen.';
+$string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
+$string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
+$string['privacy:preference:usecase'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';

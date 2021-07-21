@@ -1022,12 +1022,6 @@ class convert_path {
 
         // adding new fields
         foreach ($this->newfields as $name => $value) {
-            //XTEC ************ AFEGIT - To change default introformat (from AutoMoodle to HTML)
-            //2012.07.03  @sarjona
-            if ($name == 'introformat') {
-                $value = FORMAT_HTML;
-            }
-            //************ FI    
             $cooked[$name] = $value;
         }
 

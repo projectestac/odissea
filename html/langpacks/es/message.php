@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'es', version '3.8'.
+ * Strings for component 'message', language 'es', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -76,9 +76,7 @@ $string['errorconversationdoesnotexist'] = 'La conversación no existe';
 $string['errortranslatingdefault'] = 'Error al traducir configuración por defecto proporcionada por el plugin. Se usarán las configuraciones por defecto del sistema.';
 $string['eventgroupmessagesent'] = 'Mensaje de grupo enviado';
 $string['eventmessagecontactadded'] = 'Contacto de mensajería añadido';
-$string['eventmessagecontactblocked'] = 'Contacto de mensajería bloqueado';
 $string['eventmessagecontactremoved'] = 'Contacto de mensajería eliminado';
-$string['eventmessagecontactunblocked'] = 'Contacto de mensajería desbloqueado';
 $string['eventmessagedeleted'] = 'Mensaje eliminado';
 $string['eventmessagesent'] = 'Mensaje enviado';
 $string['eventmessageuserblocked'] = 'Usuario bloqueado';
@@ -117,7 +115,6 @@ $string['messagepreferences'] = 'Preferencias de mensajes';
 $string['messages'] = 'Mensajes';
 $string['messagesselected:'] = 'Mensajes seleccionados:';
 $string['messagingdatahasnotbeenmigrated'] = 'Sus notificaciones no están disponibles temporalmente por actualización de la infraestructura de mensajería. Por favor, espere a que sean migradas.';
-$string['messagingdisabled'] = 'El servicio de mensajería está deshabilitado en este sitio: se enviarán correos electrónicos en lugar de mensajes';
 $string['muteconversation'] = 'Silenciar';
 $string['mutedconversation'] = 'Silenciar conversación';
 $string['newmessage'] = 'Nuevo mensaje';
@@ -221,8 +218,6 @@ $string['unreadnewmessage'] = 'Mensaje nuevo de ({$a})';
 $string['unreadnotification'] = 'Notificación no leída: {$a}';
 $string['useentertosend'] = 'Usar "intro" para enviar';
 $string['usercantbemessaged'] = 'No puedes enviar un mensaje a {$a} debido a sus preferencias de mensajería. Intenta añadirlo como un contacto.';
-$string['userisblockingyou'] = 'Este usuario te ha bloqueado y no puedes enviarle mensajes.';
-$string['userisblockingyounoncontact'] = '{$a} sólo acepta mensajes de las personas que están en su lista de contactos.';
 $string['userwouldliketocontactyou'] = '{$a} quiere contactar contigo';
 $string['viewfullnotification'] = 'Ver notificación completa';
 $string['viewmessageswith'] = 'Mostrar mensajes con {$a}';

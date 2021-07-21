@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'eu', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'eu', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -39,7 +39,9 @@ $string['createnewgoogleissuer'] = 'Sortu Google zerbitzu berria';
 $string['createnewissuer'] = 'Sortu pertsonalizatutako zerbitzu berria';
 $string['createnewmicrosoftissuer'] = 'Sortu Microsoft zerbitzu berria';
 $string['createnewnextcloudissuer'] = 'Sortu nextcloud zerbitzu berria';
+$string['createnewservice'] = 'Sortu zerbitzu berria:';
 $string['createnewuserfieldmapping'] = 'Sortu erabiltzaile-eremu lotura berria "{$a}" emailearentzat';
+$string['custom_service'] = 'Pertsonalizatua';
 $string['deleteconfirm'] = 'Ziur zaude "{$a}" identitate-emailea ezabatu nahi duzula? Emaile honetan oinarritzen den edozein pluginek funtzionatzeari utziko dio.';
 $string['deleteendpointconfirm'] = 'Ziur zaude "{$a->issuer}" jaulkitzailearen "{$a->endpoint}" amaiera-puntua ezabatu nahi duzula? Amaiera-puntu honetan oinarritzen den edozein pluginek funtzionatzeari utziko dio.';
 $string['deleteuserfieldmappingconfirm'] = 'Ziur zaude "{$a}" jaulkitzailearen erabiltzaile-eremu lotura ezabatu nahi duzula?';
@@ -57,6 +59,9 @@ $string['endpointname_help'] = 'Amaiera-puntu hau bilatzeko erabilitako gakoa. A
 $string['endpointsforissuer'] = 'Emailearen amaiera-puntuak: {$a}';
 $string['endpointurl'] = 'URLa';
 $string['endpointurl_help'] = 'Amaiera-puntu honetarako URLa.  https:// protokoloa erabili behar du.';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Sarbidea duten domeinuak';
 $string['issueralloweddomains_help'] = 'Zehaztuz gero, ezarpen honetan hornitzaile hau erabili saioa hasi ahalko duten domeinuak mugatu daitezke komaz banatutako zerrendan zehaztuta.';
 $string['issuerbaseurl'] = 'Zerbitzuaren oinarrizko URLa';
@@ -70,6 +75,8 @@ $string['issuerdisabled'] = 'Identitate-jaulkitzailea desgaitu da';
 $string['issuerenabled'] = 'Identitate-jaulkitzailea gaitu da';
 $string['issuerimage'] = 'Logoaren URLa';
 $string['issuerimage_help'] = 'Emailearen logoa erakusteko erabiltzen den irudiaren URLa. Sarbide-orrian erakutsi daiteke.';
+$string['issuerloginpagename'] = 'Sarrera-orrian erakusten den izena';
+$string['issuerloginpagename_help'] = 'Zehaztuz gero, sarrera-orrian zerbitzuaren izenaren ordez izen hau erabiliko da';
 $string['issuerloginparams'] = 'Saio-hasiera eskaeran sartutako parametro gehigarriak.';
 $string['issuerloginparams_help'] = 'Sistema batzuk saio-hasiera eskaeran parametro gehigarriak behar dituzte erabiltzailearen oinarrizko profila irakurri ahal izateko.';
 $string['issuerloginparamsoffline'] = 'Saio-hasiera eskaeran lineaz kanpoko sarbiderako sartutako parametro gehigarriak.';
@@ -87,7 +94,20 @@ $string['issuersetup'] = 'OAuth 2 zerbitzu arruntak konfiguratzeko argibide xehe
 $string['issuersetuptype'] = '{$a} OAuth 2 hornitzailea konfiguratzeko argibide xeheak.';
 $string['issuershowonloginpage'] = 'Erakutsi sarbide-orrian.';
 $string['issuershowonloginpage_help'] = 'OAuth autentifikazio-plugina gaituta badago, saio-hasiera emaile hau sarbide-orrian zerrendatuko da erabiltzaileek emaile hau erabiliz saioa hasteko aukera izan dezaten.';
+$string['issuersservicesallow'] = 'Baimendu zerbitzuak';
+$string['issuersservicesnotallow'] = 'Ez baimendu zerbitzuak';
+$string['issuerusedforinternal'] = 'Barne-zerbitzuak';
+$string['issuerusedforlogin'] = 'Sarrera-orria';
+$string['issuerusein'] = 'Zerbitzu hau erabiliko da';
+$string['issuerusein_help'] = 'OAuth 2 zerbitzuak zenbait barne-zerbitzutan, sarrera-orrian edo bietan erabili daitezke, behar izanez gero.';
+$string['issueruseineverywhere'] = 'Sarrera-orria eta barne-zerbitzuak';
+$string['issueruseininternalonly'] = 'Barne-zerbitzuak soilik';
+$string['issueruseinloginonly'] = 'Sarrera-orria soilik';
+$string['linkedin_service'] = 'LinkedIn';
+$string['logindisplay'] = 'Erakutsi sarrera-orrian honela:';
 $string['loginissuer'] = 'Baimendu saioa hastea';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Konfiguratu gabe';
 $string['notdiscovered'] = 'Zerbitzu-aurkikuntza ez da ondo egin';
 $string['notloginissuer'] = 'Ez baimendu saioa hastea';

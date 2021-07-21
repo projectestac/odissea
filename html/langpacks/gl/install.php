@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'gl', version '3.8'.
+ * Strings for component 'install', language 'gl', version '3.11'.
  *
  * @package     install
  * @category    string
@@ -79,8 +79,8 @@ $string['dataroot'] = 'Directorio de datos';
 $string['datarooterror'] = 'Non foi posíbel atopar ou crear o «Directorio de datos» especificado. Corrixa a ruta ou cree o directorio manualmente.';
 $string['datarootpermission'] = 'Permisos dos directorios de datos';
 $string['datarootpublicerror'] = 'O «Directorio de datos» que especificou é accesíbel directamente a través do web; debe empregar un directorio diferente.';
-$string['dbconnectionerror'] = 'Non foi posíbel conectar coa base de datos que especificou. Comprobe a configuración da base de datos.';
-$string['dbcreationerror'] = 'Produciuse un erro ao crear a base de datos. Non foi posíbel crear o nome da base de datos coa configuración fornecida';
+$string['dbconnectionerror'] = 'Non foi posíbel conectar coa base de datos que especificou. Comprobe os axustes da base de datos.';
+$string['dbcreationerror'] = 'Produciuse un erro ao crear a base de datos. Non foi posíbel crear o nome da base de datos cos axustes fornecidos';
 $string['dbhost'] = 'Máquina servidor';
 $string['dbpass'] = 'Contrasinal';
 $string['dbport'] = 'Porto';
@@ -129,17 +129,18 @@ $string['downloadlanguagehead'] = 'Descargar o paquete de idioma';
 $string['downloadlanguagenotneeded'] = 'Pode continuar o proceso de instalación co idioma predeterminado «{$a}».';
 $string['downloadlanguagesub'] = 'Agora ten a opción de descargar o paquete do seu idioma e continuar co proceso de instalación nese idioma.<br /><br />De non ser posíbel a descarga o proceso de instalación continuará en inglés (una vez que remate a instalación terá a oportunidade de descargar e instalar outros idiomas adicionais).';
 $string['doyouagree'] = 'Está de acordo? (si/non):';
-$string['environmenthead'] = 'Comprobando o seu entorno ...';
+$string['environmenthead'] = 'Comprobando o seu contorno...';
 $string['environmentsub'] = 'Estase a comprobar se os diferentes compoñentes do seu servidor cumpren cos requisitos mínimos de sistema';
 $string['environmentsub2'] = 'Cada versión de Moodle ten algún requisito mínimo da versión de PHP e un número obrigatorio de extensións de PHP.
-Antes de cada instalación ou actualización faise unha comprobación completa do entorno. Póñase en contacto co administrador do servidor se non sabe como instalar a nova versión ou activar as extensións PHP.';
-$string['errorsinenvironment'] = 'A comprobación do entorno no foi satisfactoria!';
+Antes de cada instalación ou actualización faise unha comprobación completa do contorno. Póñase en contacto co administrador do servidor se non sabe como instalar a nova versión ou activar as extensións PHP.';
+$string['errorsinenvironment'] = 'A comprobación do contorno no foi satisfactoria!';
 $string['fail'] = 'Non superada';
 $string['fileuploads'] = 'Envío de ficheiros';
 $string['fileuploadserror'] = 'Debe estar activado';
 $string['fileuploadshelp'] = '<p>O envío de ficheiros semella estar desactivado no seu servidor.</p>
 
-<p>Moodle pode ser instalado, mais, sen esta funcionalidade, vostede non poderá enviar ficheiros para os cursos nin imaxes de perfil dos novos usuarios.</p>
+<p>Moodle pode ser instalado, mais, sen esta capacidade, vostede non poderá enviar
+   ficheiros para os cursos nin imaxes de perfil dos novos usuario.</p>
 
 <p>Para activar o envío de ficheiros, vostede (ou o administrador do sistema)
    necesita editar o ficheiro php.ini principal e cambiar o axuste de
@@ -206,13 +207,13 @@ $string['pathssubadmindir'] = 'Moi poucos enderezos web empregan /admin como URL
 permitirlle acceder a un panel de control ou semellante. Desafortunadamente, isto entra en conflito coa localización estándar das páxinas de administración de Moodle. Vostede pode corrixir isto
 renomeando o directorio admin na súa instalación, e poñendo aquí ese novo nome.  Por exemplo: <em>moodleadmin</em>. Iso corrixirá as ligazóns admin en Moodle.';
 $string['pathssubdataroot'] = '<p>Un directorio onde Moodle almacenará todo o contido de ficheiros enviados polos usuarios.</p>
-<p>Este directorio debería ser lexible e escribíbel polo usuario do servidor web (normalmente «www-data«» «ninguén» ou «apache»).</p>
+<p>Este directorio debería ser lexíbel e escribíbel polo usuario do servidor web (normalmente «www-data«» «ninguén» ou «apache»).</p>
 <p> Non debe ser accesíbel directamente na web. </p>
 <p> Se o directorio non existe actualmente, o proceso de instalación tentará crealo. </p>';
 $string['pathssubdirroot'] = '<p>Ruta completa do directorio de instalación de Moodle.</p>';
 $string['pathssubwwwroot'] = '<p>O enderezo completo onde se accederá a Moodle, é dicir, o enderezo que os usuarios introducirán na barra de enderezos do seu navegador para acceder a Moodle.</p>
-<p>Non é posible acceder a Moodle con varias direccións. Se o seu sitio é accesible a través de varios enderezos, escolla o máis sinxelo e configure unha redirección permanente para cada un dos outros enderezos.</p>
-<p Se o seu sitio é accesible tanto dende a Internet como dende unha rede interna (ás veces chamada Intranet), entón use o enderezo público aquí.</p>
+<p>Non é posíbel acceder a Moodle con varias direccións. Se o seu sitio é accesíbel a través de varios enderezos, escolla o máis sinxelo e configure unha redirección permanente para cada un dos outros enderezos.</p>
+<p Se o seu sitio é accesíbel tanto dende a Internet como dende unha rede interna (ás veces chamada Intranet), entón use o enderezo público aquí.</p>
 <p>Se o enderezo actual non é correcto, cambie o URL na barra de enderezos do seu navegador e reinicie a instalación.</p>';
 $string['pathsunsecuredataroot'] = 'A localización de «dataroot» non é segura';
 $string['pathswrongadmindir'] = 'Non existe o directorio Admin';
@@ -242,13 +243,10 @@ $string['upgradingqtypeplugin'] = 'Actualizando o engadido de pregunta/tipo';
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Se esta a ver esta páxina é porque puido instalar satisfactoriamente e
     executar o paquete <strong>{$a->packname} {$a->packversion}</strong> no seu computador. Parabéns!';
-$string['welcomep30'] = 'Esta versión de <strong>{$a->installername}</strong> inclúe os aplicativos
-    para crear un entorno no que <strong>Moodle</strong> funcione, nomeadamente:';
+$string['welcomep30'] = 'Esta versión de <strong>{$a->installername}</strong> inclúe as aplicacións
+    para crear un contorno no que <strong>Moodle</strong> funcione, nomeadamente:';
 $string['welcomep40'] = 'O paquete inclúe tamen <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
-$string['welcomep50'] = 'O uso de todos os aplicativos do paquete está rexido polas súas respectivas
-    licenzas. O paquete completo <strong>{$a->installername}</strong> é
-    <a href="http://www.opensource.org/docs/definition_plain.html">código aberto</a> e distribúese
-    baixo a licenza <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
+$string['welcomep50'] = 'O uso de todas as aplicacións deste paquete está rexido polas súas respectivas licenzas. O paquete completo <strong>{$a->installername}</strong> é de <a href="https://www.opensource.org/docs/definition_plain.html">código aberto</a> e distribúese baixo a licenza <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a>.';
 $string['welcomep60'] = 'As páxinas seguintes guiarano a través de algúns sinxelos pasos para configurar
     e axustar <strong>Moodle</strong> no seu computador. Pode empregar os axustes predeterminados
     ou, opcionalmente, modificalos para que se axusten ás súas necesidades.';

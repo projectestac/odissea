@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'fr', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'fr', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -47,6 +47,6 @@ $string['pluginname'] = 'Formulaire d\'évaluation hors ligne';
 $string['privacy:nullproviderreason'] = 'Ce plugin n\'enregistre aucune donnée personnelle. Il utilise seulement les APIs de mod_assign pour afficher l\'interface d\'évaluation.';
 $string['processgrades'] = 'Importer des notes';
 $string['skiprecord'] = 'Passer l\'enregistrement';
-$string['updatedgrades'] = '{$a} notes et feedbacks modifiés';
+$string['updatedgrades'] = '<strong>{$a->gradeupdatescount}</strong> notes et <strong>{$a->feedbackupdatescount}</strong> instances de feedbacks modifiées.';
 $string['updaterecord'] = 'Mettre à jour l\'enregistrement';
 $string['uploadgrades'] = 'Déposer un formulaire d\'évaluation';

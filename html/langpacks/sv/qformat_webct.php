@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_webct', language 'sv', version '3.8'.
+ * Strings for component 'qformat_webct', language 'sv', version '3.11'.
  *
  * @package     qformat_webct
  * @category    string
@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['errorsdetected'] = '{$a} fel upptäckt(a)';
-$string['missinganswer'] = 'Alltför få: SVAR,: Lx,: RX rapporterna för frågelinje {$a}. Du måste definiera minst 2 möjliga svar';
+$string['missinganswer'] = 'För få :ANSWER, :Lx, :Rx-satser för frågeraden {$a}. Du måste definiera minst 2 möjliga svar.';
 $string['missingquestion'] = 'Saknad fråga etikett efter linje {$a}';
 $string['pluginname'] = 'WebCT format';
 $string['pluginname_help'] = 'WebCT formatet möjliggör import av flervalsfrågor och korttext frågor sparade i WebCT:s text-baserade format.';
+$string['privacy:metadata'] = 'Pluginmodulen WebCT frågeformat lagrar ingen personinformation.';
 $string['questionnametoolong'] = 'Frågenamnet är för långt i rad {$a} (255 tecken. Max). Det har kortats.';
 $string['unknowntype'] = 'Okänd frågetyp efter rad {$a}';
 $string['warningsdetected'] = '{$a} varning (ar) upptäckta';

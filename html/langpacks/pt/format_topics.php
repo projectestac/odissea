@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'pt', version '3.8'.
+ * Strings for component 'format_topics', language 'pt', version '3.11'.
  *
  * @package     format_topics
  * @category    string
@@ -35,7 +35,7 @@ $string['newsectionname'] = 'Novo nome para o tópico {$a}';
 $string['page-course-view-topics'] = 'Qualquer página principal de disciplina no formato tópicos';
 $string['page-course-view-topics-x'] = 'Qualquer página de disciplina no formato tópicos';
 $string['pluginname'] = 'Formato Tópicos';
-$string['privacy:metadata'] = 'O módulo Formato Tópicos não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Formato Tópicos não armazena quaisquer dados pessoais.';
 $string['section0name'] = 'Geral';
 $string['sectionname'] = 'Tópico';
 $string['showfromothers'] = 'Mostrar tópico';

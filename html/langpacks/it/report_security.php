@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'it', version '3.8'.
+ * Strings for component 'report_security', language 'it', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -25,13 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p>Si raccomanda di modificare i permessi del file config.php subito dopo l\'installazione per evitare che il file possa essere modificato da processi del web server.
+$string['check_configrw_details'] = '<p>Si raccomanda di modificare i permessi del file <code>config.php</code> subito dopo l\'installazione per evitare che il file possa essere modificato da processi del web server.
 Questa impostazione non innalza significativamente la sicurezza del sito, tuttavia riduce e limita i pericoli provenienti dai più comuni exploit.</p>';
 $string['check_configrw_name'] = 'File config.php modificabile';
 $string['check_configrw_ok'] = 'Il file config.php non è modificabile da script PHP.';
 $string['check_configrw_warning'] = 'Il file config.php può essere modificato da script PHP.';
 $string['check_cookiesecure_details'] = '<p>Se si abilita la comunicazione https, si raccomanda anche di abilitare i cookie sicuri. Si raccomanda di configurare anche l\'indirizzamento permanente da http ad https.</p>';
 $string['check_cookiesecure_error'] = 'Per favore abilita i cookie sicuri';
+$string['check_cookiesecure_http'] = 'Per utilizzare cookie sicuri è necessario attivare https.';
 $string['check_cookiesecure_name'] = 'Cookie sicuri';
 $string['check_cookiesecure_ok'] = 'Cookie sicuri abilitati.';
 $string['check_crawlers_details'] = '<p>L\'impostazione Aperto a Google consente ai motori di ricerca di accedere ai corsi come ospite. E\' inutile consentire l\'accesso come ospite ai motori di ricerca se l\'accesso come ospite è disabilitato.</p>';
@@ -75,10 +76,6 @@ $string['check_mediafilterswf_details'] = '<p>L\'inserimento automatico di file 
 $string['check_mediafilterswf_error'] = 'Il filtro Plugin multimediali per file .swf è abilitato - impostazione molto pericolosa su qualsiasi server.';
 $string['check_mediafilterswf_name'] = 'Abilitazione filtro .swf';
 $string['check_mediafilterswf_ok'] = 'Il filtro Plugin multimediali per file .swf è disabilitato.';
-$string['check_noauth_details'] = '<p>Il plugin <em>Senza autenticazione</em> non è stato pensata per l\'uso su siti in produzione. Per favore disabilitalo a meno che questo non sia un sito di sviluppo.</p>';
-$string['check_noauth_error'] = 'Il plugin Senza autenticazione non deve essere usato su siti in produzione.';
-$string['check_noauth_name'] = 'Senza autenticazione';
-$string['check_noauth_ok'] = 'Il plugin Senza autenticazione è disabilitato.';
 $string['check_nodemodules_details'] = '<p>La cartella <em>{$a->path}</em> contiene i moduli Node.js e le relative dipendenze, generalmente installate dall\'utilià NPM. Possono essere essere necessari per lo sviluppo. La cartella non è necessario per siti in produzione e può anche contenere codice potenzialmente pericoloso esponendo il sito ad attacchi da remoto.</p><p>Si raccomanda caldamente di rimuovere la cartella qualora il sito sia accessibile pubblicamente oppure di impedirne l\'accesso pubblico.</p>';
 $string['check_nodemodules_info'] = 'La cartella node_modules non deve essere presente siti pubblici.';
 $string['check_nodemodules_name'] = 'Cartella del modulo Node.js';
@@ -90,10 +87,11 @@ $string['check_passwordpolicy_details'] = '<p>Si raccomanda di attivare le regol
 $string['check_passwordpolicy_error'] = 'Le regole password non sono attive.';
 $string['check_passwordpolicy_name'] = 'Regole password';
 $string['check_passwordpolicy_ok'] = 'Le regole password sono attive.';
-$string['check_preventexecpath_details'] = '<p>Consentire la configurazione degli eseguibili tramite GUI amministrative facilita il <i>privilege escalation</i>.</p>';
+$string['check_preventexecpath_details'] = '<p>Consentire la configurazione degli eseguibili tramite GUI amministrativa facilita il <i>privilege escalation</i>. E\' possibile forzare la configurazione nel config.php: </p><p><code>$CFG->preventexecpath = true;<code></p>';
 $string['check_preventexecpath_name'] = 'Percorsi degli eseguibili';
 $string['check_preventexecpath_ok'] = 'I percorsi degli eseguibili sono configurabili solamente nel file config.php';
 $string['check_preventexecpath_warning'] = 'I percorsi degli eseguibili sono configurabili tramite GUI amministrata.';
+$string['check_publicpaths_403'] = '(E\' stato restituito un 403, dovrebbe essere un 404)';
 $string['check_riskadmin_detailsok'] = '<p>Per favore verifica il seguente elenco di amministratori:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Per favore verifica il seguente elenco di amministratori:
 </p>{$a->admins}
@@ -132,14 +130,9 @@ $string['check_webcron_warning'] = 'Gli utenti anonimi possono accedere al cron.
 $string['configuration'] = 'Configurazione';
 $string['description'] = 'Descrizione';
 $string['details'] = 'Dettagli';
+$string['eventreportviewed'] = 'Visualizzato report delle verifiche di sicurezza';
 $string['issue'] = 'Problema';
-$string['pluginname'] = 'Sicurezza';
+$string['pluginname'] = 'Verifiche di sicurezza';
 $string['privacy:metadata'] = 'Il plugin \'Sicurezza\' non memorizza dati personali.';
 $string['security:view'] = 'Visualizzare il Report sulla sicurezza';
-$string['status'] = 'Stato';
-$string['statuscritical'] = 'Critico';
-$string['statusinfo'] = 'Info';
-$string['statusok'] = 'OK';
-$string['statusserious'] = 'Serio';
-$string['statuswarning'] = 'Attenzione';
 $string['timewarning'] = 'L\'elaborazione può richiedere molto tempo, vi preghiamo di attendere...';

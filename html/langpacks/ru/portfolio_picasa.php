@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_picasa', language 'ru', version '3.8'.
+ * Strings for component 'portfolio_picasa', language 'ru', version '3.11'.
  *
  * @package     portfolio_picasa
  * @category    string
@@ -31,5 +31,7 @@ $string['nooauthcredentials'] = 'Требуются учетные данные 
 $string['nooauthcredentials_help'] = 'Для использования плагина портфолио Picasa необходимо настроить учетные данные OAuth в настройках портфолио.';
 $string['oauthinfo'] = '<p>Для использования этого плагина Вы должны зарегистрировать свой сайт в Google, как описано в документации <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>В процессе регистрации Вам нужно будет ввести следующий URL в качестве «Authorized Redirect URIs»:</p><p>{$a->callbackurl} </p><p>После регистрации Вам будет предоставлен ID клиента и ключ, которые могут быть использованы для настройки всех плагинов Google Drive и Picasa.</p>';
 $string['pluginname'] = 'Picasa';
+$string['privacy:metadata'] = 'Этот плагин отправляет внешние данные в связанную учетную запись Picasa. Он не хранит данные локально.';
+$string['privacy:metadata:data'] = 'Персональные данные, передаваемые из подсистемы портфолио.';
 $string['secret'] = 'Секрет';
 $string['sendfailed'] = 'Файл {$a} не удалось передать в Picasa';

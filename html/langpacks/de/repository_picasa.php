@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_picasa', language 'de', version '3.8'.
+ * Strings for component 'repository_picasa', language 'de', version '3.11'.
  *
  * @package     repository_picasa
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Client ID';
 $string['configplugin'] = 'Einstellungen für Picasa';
-$string['oauthinfo'] = '<p>Um dieses Plugin nutzen zu können, ist eine Registrierung bei Google erforderlich. Entsprechende Informationen finden Sie auf <a href="{$a->docsurl}">Google OAuth 2.0 Setup</a>.</p><p>Während der Registrierung müssen Sie folgende URL als \'Authorized Redirect URIs\' eingeben: <br />{$a->callbackurl}</p>Sie erhalten eine Client ID und ein Secret, mit denen Sie alle Plugins für Google Drive und Picasa konfigurieren können.</p>';
+$string['oauthinfo'] = '<p>Um dieses Plugin nutzen zu können, ist eine Registrierung bei Google erforderlich. Entsprechende Infos finden Sie über <a href="{$a->docsurl}">Google OAuth 2.0 Setup</a>.</p><p>Während der Registrierung müssen Sie folgende URL als \'Authorized Redirect URIs\' eingeben: <br />{$a->callbackurl}</p>Sie erhalten eine Client ID und ein Secret, mit denen Sie alle Plugins für Google Drive und Picasa konfigurieren können.</p>';
 $string['picasa:view'] = 'Picasa Bildverwaltung anzeigen';
 $string['pluginname'] = 'Picasa';
 $string['privacy:metadata:repository_picasa'] = 'Picasa Webalbum Repository Plugin speichert keine personenbezogenen Daten. Es überträgt aber Nutzerdaten von Moodle an das externe System';

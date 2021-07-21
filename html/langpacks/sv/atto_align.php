@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_align', language 'sv', version '3.8'.
+ * Strings for component 'atto_align', language 'sv', version '3.11'.
  *
  * @package     atto_align
  * @category    string
@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['center'] = 'Centrera';
 $string['leftalign'] = 'Vänsterjustera';
 $string['pluginname'] = 'Textjustering';
-$string['privacy:metadata'] = 'Plugin-modulen atto_align lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_align lagrar ingen personinformation.';
 $string['rightalign'] = 'Högerjustera';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_collapse', language 'sv', version '3.8'.
+ * Strings for component 'atto_collapse', language 'sv', version '3.11'.
  *
  * @package     atto_collapse
  * @category    string
@@ -26,7 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Visa/Dölj knappar';
-$string['privacy:metadata'] = 'Pluginmodulen atto_collapse lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_collapse lagrar ingen personinformation.';
 $string['settings'] = 'Fäll ihop';
 $string['showfewer'] = 'Visa färre knappar';
+$string['showgroups'] = 'Visa de första (n) grupperna när ihopfälld';
+$string['showgroups_desc'] = 'När verktygsfältet är komprimerat (det är det som standard) visas bara så här många grupper samtidigt.';
 $string['showmore'] = 'Visa fler knappar';

@@ -64,7 +64,7 @@ class core_session_manager_testcase extends advanced_testcase {
         $this->assertSame($GLOBALS['SESSION'], $SESSION);
 
         $this->assertInstanceOf('stdClass', $USER);
-        $this->assertEquals(array('id' => 0, 'mnethostid' => 1), (array)$USER, '', 0, 10, true);
+        $this->assertEqualsCanonicalizing(array('id' => 0, 'mnethostid' => 1), (array)$USER);
         $this->assertSame($GLOBALS['USER'], $_SESSION['USER']);
         $this->assertSame($GLOBALS['USER'], $USER);
 
@@ -154,7 +154,7 @@ class core_session_manager_testcase extends advanced_testcase {
         $this->assertSame($GLOBALS['SESSION'], $SESSION);
 
         $this->assertInstanceOf('stdClass', $USER);
-        $this->assertEquals(array('id' => 0, 'mnethostid' => 1), (array)$USER, '', 0, 10, true);
+        $this->assertEqualsCanonicalizing(array('id' => 0, 'mnethostid' => 1), (array)$USER);
         $this->assertSame($GLOBALS['USER'], $_SESSION['USER']);
         $this->assertSame($GLOBALS['USER'], $USER);
     }
@@ -853,5 +853,62 @@ class core_session_manager_testcase extends advanced_testcase {
         // Make sure the session history has been cleaned up and only has the latest page.
         $this->assertCount(1, $SESSION->recentsessionlocks);
         $this->assertEquals('/good.php?id=4', $SESSION->recentsessionlocks[0]['url']);
+    }
+
+    public function test_array_session_diff_same_array() {
+        $a = [];
+        $a['c'] = new stdClass();
+        $a['c']->o = new stdClass();
+        $a['c']->o->o = new stdClass();
+        $a['c']->o->o->l = 'cool';
+
+        $class = new ReflectionClass('\core\session\manager');
+        $method = $class->getMethod('array_session_diff');
+        $method->setAccessible(true);
+
+        $result = $method->invokeArgs(null, [$a, $a]);
+
+        $this->assertEmpty($result);
+    }
+
+    public function test_array_session_diff_first_array_larger() {
+        $a = [];
+        $a['stdClass'] = new stdClass();
+        $a['stdClass']->attribute = 'This is an attribute';
+        $a['array'] = ['array', 'contents'];
+
+        $b = [];
+        $b['array'] = ['array', 'contents'];
+
+        $class = new ReflectionClass('\core\session\manager');
+        $method = $class->getMethod('array_session_diff');
+        $method->setAccessible(true);
+
+        $result = $method->invokeArgs(null, [$a, $b]);
+
+        $expected = [];
+        $expected['stdClass'] = new stdClass();
+        $expected['stdClass']->attribute = 'This is an attribute';
+        $this->assertEquals($expected, $result);
+    }
+
+    public function test_array_session_diff_second_array_larger() {
+        $a = [];
+        $a['array'] = ['array', 'contents'];
+
+        $b = [];
+        $b['stdClass'] = new stdClass();
+        $b['stdClass']->attribute = 'This is an attribute';
+        $b['array'] = ['array', 'contents'];
+
+        $class = new ReflectionClass('\core\session\manager');
+        $method = $class->getMethod('array_session_diff');
+        $method->setAccessible(true);
+
+        $result = $method->invokeArgs(null, [$a, $b]);
+
+        // It's empty because the first array contains all the contents of the second.
+        $expected = [];
+        $this->assertEquals($expected, $result);
     }
 }

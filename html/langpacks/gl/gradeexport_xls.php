@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_xls', language 'gl', version '3.8'.
+ * Strings for component 'gradeexport_xls', language 'gl', version '3.11'.
  *
  * @package     gradeexport_xls
  * @category    string
@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventgradeexported'] = 'Cualificación exportada a XLS';
 $string['pluginname'] = 'Folla de cálculo de Excel';
 $string['privacy:metadata'] = 'O engadido de folla de cálculo Excel non almacena ningún dato persoal.';
-$string['timeexported'] = 'Último descargado desde este curso';
+$string['timeexported'] = 'Último descargado dende este curso';
 $string['xls:publish'] = 'Publicar a exportación de cualificacións XLS';
 $string['xls:view'] = 'Empregar a exportación de cualificacións a Excel';

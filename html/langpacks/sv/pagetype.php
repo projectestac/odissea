@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'sv', version '3.8'.
+ * Strings for component 'pagetype', language 'sv', version '3.11'.
  *
  * @package     pagetype
  * @category    string
@@ -32,13 +32,13 @@ $string['page-course-index-category'] = 'Nuvarande sida för visning av kategori
 $string['page-course-index-x'] = 'Valfri sida för visning av kategorier';
 $string['page-course-report-x'] = 'Valfri kursrapport';
 $string['page-course-search'] = 'Söksida för kurser';
-$string['page-course-view-x'] = 'Vilken typ av kurs-startsida som helst';
+$string['page-course-view-x'] = 'Huvudsida för valfri kurs';
 $string['page-course-x'] = 'Valfri kurssida';
 $string['page-mod-x'] = 'Valfri sida i aktivitetsmodul';
-$string['page-mod-x-view'] = 'Vilken ingångssida som helst för aktivitetsmodul';
-$string['page-my-index'] = 'Användarnas *Min hem\' sida';
+$string['page-mod-x-view'] = 'Valfri förstasida i aktivitetsmodul';
+$string['page-my-index'] = 'Mitt Moodle';
 $string['page-report-x'] = 'Valfri rapportsida';
-$string['page-site-index'] = 'Endast ingångssidan';
+$string['page-site-index'] = 'Endast förstasidan';
 $string['page-site-x'] = 'Valfri toppnivåsida på webbplatsen';
 $string['page-user-profile'] = 'Endast användarprofilsidor';
 $string['page-user-view'] = 'Endast användarprofilsidor';

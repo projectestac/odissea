@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'sv', version '3.8'.
+ * Strings for component 'availability_date', language 'sv', version '3.11'.
  *
  * @package     availability_date
  * @category    string
@@ -28,17 +28,17 @@ defined('MOODLE_INTERNAL') || die();
 $string['ajaxerror'] = 'Ett fel inträffade då servern kontaktades för att konvertera tider';
 $string['description'] = 'Förhindra åtkomst till (eller från) ett visst datum och tid.';
 $string['direction_before'] = 'Datum';
-$string['direction_from'] = 'from';
+$string['direction_from'] = 'fr.o.m';
 $string['direction_label'] = 'Riktning';
-$string['direction_until'] = 'tom';
-$string['full_from'] = 'Det är efter <strong>{$a}</strong>';
+$string['direction_until'] = 't.o.m';
+$string['full_from'] = 'Det är <b>efter</b> den <b>{$a}</b>';
 $string['full_from_date'] = 'Det är på <strong>{$a}</strong> eller efter';
-$string['full_until'] = 'Det är före <strong>{$a}</strong>';
+$string['full_until'] = 'Det är <b>före</b> den <b>{$a}</b>';
 $string['full_until_date'] = 'Det är före utgången av <strong>{$a}</strong>';
 $string['pluginname'] = 'Begränsning via datum';
-$string['privacy:metadata'] = 'Pluginmodulen Begränsning via datum lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Begränsning via datum lagrar ingen personinformation.';
 $string['short_from'] = 'Tillgänglig från <strong>{$a}</strong>';
 $string['short_from_date'] = 'Tillgänglig från <strong>{$a}</strong>';
 $string['short_until'] = 'Tillgängligt till <strong>{$a}</strong>';
-$string['short_until_date'] = 'Tillgängligt till slutet av <strong>{$a}</strong>';
+$string['short_until_date'] = 'Tillgänglig till slutet av <strong>{$a}</strong>';
 $string['title'] = 'Datum';

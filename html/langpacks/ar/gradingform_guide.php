@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ar', version '3.8'.
+ * Strings for component 'gradingform_guide', language 'ar', version '3.11'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -95,8 +95,8 @@ $string['regradeoption1'] = 'ضع علامة لإعادة التقييم';
 $string['remark_help'] = 'أدخل أي تعليقات إضافية عن هذا المعيار.';
 $string['restoredfromdraft'] = 'ملاحظة: آخر محاولة لتقييم هذا الشخص لم يتم حفظها بشكل صحيح لذلك تمت استعادة مسودات العلامات. إذا أردت إلغاء هذه التغييرات استعمل زر \'إلغاء\' أدناه.';
 $string['save'] = 'احفظ';
-$string['saveguide'] = 'إحفظ دليل وضع العلامات واجعله جاهزاً';
-$string['saveguidedraft'] = 'إحفظ كمسودة';
+$string['saveguide'] = 'إحفظ دليل التصحيح واجعله جاهزاً';
+$string['saveguidedraft'] = 'حفظ كمسودة';
 $string['score'] = 'الدرجة';
 $string['score_help'] = 'أدخل درجة {$a->criterion} ما بين 0 و {$a->maxscore}.';
 $string['scoreforcriterion'] = 'درجة {$a}';

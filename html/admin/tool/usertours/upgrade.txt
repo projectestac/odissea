@@ -1,6 +1,6 @@
 This files describes API changes in the tool_usertours code.
 
-=== 3.8.4 ===
+=== 3.9 ===
 * The `tourconfig` property returned by the `tool_usertours_fetch_and_start_tour`
   external method is now optional, and will be omitted if the tour shouldn't be
   shown to the current user

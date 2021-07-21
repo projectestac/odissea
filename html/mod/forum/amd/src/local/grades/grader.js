@@ -17,7 +17,6 @@
  * This module will tie together all of the different calls the gradable module will make.
  *
  * @module     mod_forum/local/grades/grader
- * @package    mod_forum
  * @copyright  2019 Mathew May <mathew.solutions>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -65,7 +64,7 @@ const displayUserPicker = (root, html) => {
  *
  * @param {String} html
  * @param {String} js
- * @return {[*, *]}
+ * @returns {array} An array containing the HTML, and JS.
  */
 const fetchContentFromRender = (html, js) => {
     return [html, js];
@@ -117,6 +116,7 @@ const getUpdateUserContentFunction = (root, getContentForUser, getGradeForUser, 
         if (spinner) {
             spinner.resolve();
         }
+        return userGrade;
     };
 };
 
@@ -444,9 +444,10 @@ export const launch = async(getListOfUsers, getContentForUser, getGradeForUser, 
     // Fetch the userpicker for display.
     const userPicker = await getUserPicker(
         userList,
-        user => {
+        async(user) => {
+            const userGrade = await updateUserContent(user);
             const renderContext = {
-                status: null,
+                status: userGrade.hasgrade,
                 index: userIds.indexOf(user.id) + 1,
                 total: userList.length
             };
@@ -454,7 +455,6 @@ export const launch = async(getListOfUsers, getContentForUser, getGradeForUser, 
                 statusContainer.innerHTML = html;
                 return html;
             }).catch();
-            updateUserContent(user);
         },
         saveGradeFunction,
         {

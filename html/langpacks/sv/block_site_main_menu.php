@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_site_main_menu', language 'sv', version '3.8'.
+ * Strings for component 'block_site_main_menu', language 'sv', version '3.11'.
  *
  * @package     block_site_main_menu
  * @category    string
@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Huvudmeny';
+$string['privacy:metadata'] = 'Blocket Huvudmeny visar endast data som lagras på andra platser.';
 $string['site_main_menu:addinstance'] = 'Lägg till ett ny Huvudmeny block';

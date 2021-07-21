@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'sv', version '3.8'.
+ * Strings for component 'block_activity_results', language 'sv', version '3.11'.
  *
  * @package     block_activity_results
  * @category    string
@@ -62,7 +62,7 @@ $string['error_emptyactivityrecord'] = 'Fel: den valda aktiviteten finns inte i 
 $string['error_nogroupsexist'] = 'Fel: blocket är inställt på att visa resultat i gruppläge, men det finns inga grupper definierade.';
 $string['error_unsupportedgradetype'] = 'Fel: den aktivitet som valts använder en bedömningsmetod som inte stöds av det här blocket.';
 $string['notyetgraded'] = 'Ännu ej bedömd';
-$string['pluginname'] = 'Resultat från aktiviteter';
+$string['pluginname'] = 'Aktivitetsresultat';
 $string['privacy:metadata'] = 'I aktivitetsresultatblocket visas endast data som lagras på andra platser.';
 $string['unknown'] = 'Okänd skala';
 $string['worstgrade'] = 'Det lägsta betyget:';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'sv', version '3.8'.
+ * Strings for component 'tool_capability', language 'sv', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -30,11 +30,14 @@ $string['capabilityreport'] = 'Funktionsbehörigheter';
 $string['changeoverrides'] = 'Ändra åsidosättanden i detta kontext';
 $string['changeroles'] = 'Ändra rolldefinitioner';
 $string['eventreportviewed'] = 'Rapport visad';
+$string['filters'] = 'Filtrera';
 $string['forroles'] = 'För roller {$a}';
 $string['getreport'] = 'Hämta översikten';
 $string['intro'] = 'Denna rapport visar, för en särskild funktion, vilka rättigheter den funktionen har i definitionen för varje roll (eller ett urval av roller), samt överallt på webbplatsen där denna funktionsbehörighet är åsidosatt.';
-$string['pluginname'] = 'Översikt av funktionsbehörigheter';
-$string['privacy:metadata'] = 'Plugin-modulen för funktionsbehörigheter lagrar ingen användarinformation.';
+$string['nodifferences'] = 'Det finns inga skillnader att visa mellan valda roller i denna kontext';
+$string['onlydiff'] = 'Visa enbart skillnader';
+$string['pluginname'] = 'Kontrollera funktionsbehörigheter';
+$string['privacy:metadata'] = 'Pluginmodulen för funktionsbehörigheter lagrar ingen personinformation.';
 $string['reportforcapability'] = 'Rapport för funktion \'{$a}\'';
 $string['reportsettings'] = 'Rapportinställningar';
 $string['roleslabel'] = 'Roller:';

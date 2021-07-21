@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_skydrive', language 'pt', version '3.8'.
+ * Strings for component 'repository_skydrive', language 'pt', version '3.11'.
  *
  * @package     repository_skydrive
  * @category    string
@@ -29,7 +29,7 @@ $string['cachedef_foldername'] = 'Nome da pasta de cache';
 $string['clientid'] = 'ID do cliente';
 $string['configplugin'] = 'Configurar o Microsoft OneDrive (antigo)';
 $string['deprecatedwarning'] = 'Aviso: a API usada por este módulo de repositório foi descontinuado pela Microsoft e deixará eventualmente de funcionar. Migre para o repositório mais recente o "Microsoft OneDrive".';
-$string['oauthinfo'] = '<p> Para utilizar este módulo, tem de registar o seu site <a href="https://account.live.com/developers/applications">com a Microsoft</a>. <p> Durante o processo de registo, é necessário digitar o seguinte URL como \'Domínio de redirecionamento\': </p><p> {$a->callbackurl} </p>. Após o registo, ser-lhe-á atribuído um ID de cliente e uma senha que poderão ser inseridos aqui.</p>';
+$string['oauthinfo'] = '<p>Para utilizar este módulo, tem de registar o seu site com a <a href="https://account.live.com/developers/applications">Microsoft</a>.<p>Durante o processo de registo, é necessário digitar o seguinte URL como \'Domínio de redirecionamento\': </p><p>{$a->callbackurl}</p>Após o registo, ser-lhe-á atribuído um ID de cliente e uma Chave secreta que poderão ser inseridos aqui.</p>';
 $string['pluginname'] = 'Microsoft OneDrive (antigo)';
 $string['privacy:metadata'] = 'O módulo repositório Microsoft OneDrive (legacy) não armazena dados pessoais, mais transmite dados do utilizador do Moodle para o sistema remoto.';
 $string['secret'] = 'Senha';

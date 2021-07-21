@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr', language 'gl', version '3.8'.
+ * Strings for component 'repository_flickr', language 'gl', version '3.11'.
  *
  * @package     repository_flickr
  * @category    string
@@ -38,13 +38,13 @@ $string['configplugin'] = 'Configuración de Flickr';
 $string['emailaddress'] = 'Enderezo de correo';
 $string['flickr:view'] = 'Ver o repositorio de Flickr';
 $string['invalidemail'] = 'Conta de coreo para Flickr incorrecta';
-$string['notitle'] = 'sen-título';
+$string['notitle'] = 'sen título';
 $string['nullphotolist'] = 'Non hai fotos nesta conta';
 $string['pluginname'] = 'Flickr';
 $string['pluginname_help'] = 'Repositorio en flickr.com';
 $string['privacy:metadata:repository_flickr'] = 'O engadido de repositorio de Flickr almacena as preferencias do usuario e transmite os datos do usuario de Moodle ao sistema remoto.';
-$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token'] = 'A preferencia da marca OAuth do repositorio Flickr.';
-$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret'] = 'A preferencia da marca OAuth do repositorio Flickr.; isto está excluído das exportacións de datos de privacidade.';
+$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token'] = 'A preferencia do testemuño OAuth do repositorio Flickr.';
+$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret'] = 'A preferencia do segredo OAuth do repositorio Flickr; isto está excluído das exportacións de datos de privacidade.';
 $string['privacy:metadata:repository_flickr:text'] = 'A consulta de busca de texto de usuario do repositorio Flickr.';
 $string['remember'] = 'Lémbreme';
 $string['secret'] = 'Segredo';

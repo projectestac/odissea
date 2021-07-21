@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'ca', version '3.8'.
+ * Strings for component 'admin', language 'ca', version '3.11'.
  *
  * @package     admin
  * @category    string
@@ -83,6 +83,7 @@ $string['authpreventaccountcreation_help'] = 'Quan un usuari s\'autentica, es cr
 Els comptes nous s\'hauran de crear manualment o bé mitjançant la càrrega d\'usuaris. Tingueu en compte que aquest ajust no s\'aplica a l\'autenticació MNet.';
 $string['authsettings'] = 'Gestió de l\'autenticació';
 $string['autolang'] = 'Detecció automàtica d\'idioma';
+$string['autolangusercreation'] = 'En crear un compte, estableix l\'idioma del navegador com a idioma preferit';
 $string['autologinguests'] = 'Inici de sessió automàtic dels visitants';
 $string['availablelicenses'] = 'Tipus de llicències de materials disponibles';
 $string['availableto'] = 'Disponible per a ';
@@ -132,10 +133,13 @@ $string['cfgwwwrootwarning'] = 'Heu definit incorrectament $CFG->wwwroot en el f
 $string['change'] = 'Canvia';
 $string['checkboxno'] = 'No';
 $string['checkboxyes'] = 'Sí';
+$string['checkupgradepending'] = 'Actualitza';
 $string['choosefiletoedit'] = 'Trieu el fitxer que voleu editar';
 $string['cleanup'] = 'Neteja';
 $string['clianswerno'] = 'No';
 $string['cliansweryes'] = 'Sí';
+$string['cliexitgraceful'] = 'S\'està sortint de manera endreçada, espereu...';
+$string['cliexitnow'] = 'S\'està sortint ARA MATEIX';
 $string['cliincorrectvalueerror'] = 'Error, valor incorrecte "{$a->value}" per a "{$a->option}"';
 $string['cliincorrectvalueretry'] = 'Valor incorrecte; torneu-ho a provar.';
 $string['clistatusdisabled'] = 'Estat: desactivat';
@@ -170,13 +174,13 @@ $string['configallowcategorythemes'] = 'Si habiliteu aquesta opció, es podran d
 $string['configallowcohortthemes'] = 'Si ho habiliteu, aleshores es podran establir temes a nivell de cohort. Això afectarà tots els usuaris amb només una cohort, o més d\'una si tenen el mateix tema.';
 $string['configallowcoursethemes'] = 'Si habiliteu aquesta opció, cada curs podrà definir el seu tema. Els temes dels cursos tenen prioritat sobre qualsevol altre tema seleccionat: tema del lloc, de l\'usuari o de la sessió.';
 $string['configallowedemaildomains'] = 'Enumera els dominis de correu electrònic que es permeten al camp «De:» del correu sortint. Si ho deixeu buit (opció per defecte), tot el correu sortint apareixerà com a provinent de l\'adreça de No-resposta. S\'admet l\'ús de comodins; p. ex., «*.exemple.com» permetrà que els correus de qualsevol subdomini d\'«exemple.com» apareguin amb la seva adreça real al camp del remitent. Això exclou el domini «exemple.com» mateix, el qual requereix una entrada a part.';
-$string['configallowemailaddresses'] = 'Si voleu limitar les noves adreces de correu a certs dominis, especifiqueu-los aquí separats per espais. Tots els altres dominis seran rebutjats. Per a permetre subdominis, afegiu el domini precedit pel punt \'.\'. Per permetre alhora el domini principal i els seus subdominis cal afegir el domini dues vegades, una amb el \'.\' precedint i una altra sense. Per exemple <strong>.moodle.org moodle.org</strong>';
+$string['configallowemailaddresses'] = 'Si voleu limitar les noves adreces de correu a certs dominis, especifiqueu-los aquí separats per espais. Tots els altres dominis seran rebutjats. Per permetre subdominis, afegiu el domini precedit pel punt \'.\'. Per tal de permetre un domini arrel conjuntament amb els seus subdominis, afegiu el domini dues vegades, una precedit pel \'.\' i una altra sense. P. ex. <strong>xtec.cat edu.gva.es .uji.es .upc.edu upc.edu</strong>';
 $string['configallowemojipicker'] = 'El selector d\'emojis permet als usuaris d\'escollir emoticones, com ara somriures, per tal d\'afegir-los als missatges i altres àrees de text a través d\'un botó a la barra d\'eines de l\'Atto.';
 $string['configallowemojipickerincompatible'] = 'La configuració actual de la vostra base de dades no admet les emoticones. Per tal de poder habilitar el selector d\'emojis us caldrà <a href="https://docs.moodle.org/en/MySQL_full_unicode_support">actualitzar la vostra base de dades per tal de tenir suport d\'unicode complet</a>.';
 $string['configallowguestmymoodle'] = 'Si s\'habilita, els visitants podran accedir al Tauler. Si no, es redirigiran a la pàgina principal.';
 $string['configallowobjectembed'] = 'Com a mesura de seguretat per defecte, no es permet que els usuaris normals incrustin multimèdia (p. ex. Flash) dins dels textos usant explícitament etiquetes EMBED i OBJECT en l\'HTML (encara que poden fer-ho sense problemes de seguretat per mitjà del filtre multimèdia). Si voleu permetre aquestes etiquetes habiliteu aquesta opció.';
-$string['configallowoverride'] = 'Permet que la gent amb rols a l\'esquerra invalidi alguns rols en la columna de rols';
-$string['configallowoverride2'] = 'Seleccioneu quins rols poden ser redefinits per cada rol de la columna de l\'esquerra. <br /> Fixeu-vos que aquesta configuració només s\'aplica als usuaris que tinguin permeses les capacitats «moodle/rol: invalidar» o «moodle/rol: invalidar de forma segura».';
+$string['configallowoverride'] = 'Permet que la gent amb rols a l\'esquerra redefineixi alguns rols en la columna de rols';
+$string['configallowoverride2'] = 'Seleccioneu quins rols poden ser redefinits per cada rol de la columna de l\'esquerra. <br /> Fixeu-vos que aquesta configuració només s\'aplica als usuaris que tinguin permeses les capacitats «moodle/role:override» o «moodle/role:safeoverride».';
 $string['configallowswitch'] = 'Seleccioneu a quins rols pot canviar un usuari, basant-se en el rol que té definit. A més d\'això, un usuari ha de tenir la capacitat moodle/role:switchroles activa per poder canviar.<br/>Penseu que només es podrà canviar a rols que tenen concedida la capacitat moodle/course:view, i que no tenen la capacitat moodle/site:doanything. Per tant, algunes columnes d\'aquesta taula queden inhabilitades.';
 $string['configallowthemechangeonurl'] = 'Si està habilitat, el tema es pot canviar així:<br />afegint ?theme=themename a qualsevol URL de Moodle (p. ex. elmeumoodle.cat/?theme=afterburner) o<br />afegint &theme=themename a qualsevol URL intern de Moodle (elmeumoodle.cat/course/view.php?id=2&theme=afterburner).';
 $string['configallowuserblockhiding'] = 'Voleu que els usuaris puguin ocultar/mostrar els blocs laterals arreu d\'aquest lloc? Aquesta característica fa servir Javascript i galetes per recordar l\'estat de cada bloc. Només afecta la visualització de cada usuari.';
@@ -188,6 +192,7 @@ $string['configallowview'] = 'Selecciona quins rols poden veure els usuaris, per
 $string['configallusersaresitestudents'] = 'Cal considerar com a estudiants TOTS els usuaris en les activitats de la pàgina inicial d\'aquest lloc? Si la resposta és «Sí», llavors qualsevol usuari amb un compte confirmat podrà participar com a estudiant en aquestes activitats. Si la resposta és «No», llavors només els usuaris que ja siguin membres d\'almenys un curs podran participar en aquestes activitats de la pàgina inicial. Només els administradors i els professors que hi hagin estat assignats poden actuar com a professors d\'aquestes activitats.';
 $string['configauthenticationplugins'] = 'Trieu els connectors d\'autenticació que vulgueu utilitzar i disposeu-los per ordre de preferència.';
 $string['configautolang'] = 'Configura l\'idioma per defecte segons el del navegador. Si inhabiliteu aquest paràmetre s\'utilitzarà l\'idioma per defecte del lloc.';
+$string['configautolangusercreation'] = 'Si està activat, quan es crea automàticament el compte d\'un usuari en entrar per primera vegada (per exemple, mitjançant autenticació LDAP o OAuth 2), s\'estableix com al seu idioma preferit l\'idioma del navegador de l\'usuari. Altrament, s\'estableix com a idioma preferit de l\'usuari l\'idioma per defecte del lloc.';
 $string['configautologinguests'] = 'Cal que els visitants iniciïn sessió de manera automàtica com a convidats quan entren en un curs que permet l\'accés de visitants?';
 $string['configbloglevel'] = 'Aquest paràmetre us permet limitar l\'àmbit de visualització dels blogs d\'usuaris d\'aquest lloc. Fixeu-vos que aquest paràmetre determina el context més ampli en què es poden VISUALITZAR els blogs. No té res a veure amb tipus d\'autors o tipus de missatges. També podeu inhabilitar completament els blogs si no voleu que s\'utilitzin en absolut.';
 $string['configcalendarcustomexport'] = 'Habilita l\'exportació d\'intervals personalitzats de dates del calendari.';
@@ -237,7 +242,9 @@ $string['configdoctonewwindow'] = 'Si habiliteu aquesta opció, els enllaços a 
 $string['configeditordictionary'] = 'Aquest valor s\'utilitzarà si aspell no té un diccionari per a l\'idioma de l\'usuari.';
 $string['configeditorfontlist'] = 'Seleccioneu els tipus de lletra que haurien d\'aparèixer en la llista desplegable de l\'editor.';
 $string['configemailchangeconfirmation'] = 'Requereix un correu de confirmació quan els usuaris canviïn la seva adreça de correu al perfil.';
+$string['configemaildkimselector'] = 'El selector DKIM és arbitrari i ha de concordar amb el(s) vostre(s) registre(s) DNS.';
 $string['configemailfromvia'] = 'Afegeix la informació de «via» a la secció «De:» del correu sortint. Aquesta informació informa el destinatari d\'on prové el correu alhora que ajuda a impedir que el destinatari respongui accidentalment a adreces de No-resposta.';
+$string['configemailheaders'] = 'Capçaleres de correu electrònic en cru que s\'han d’afegir textualment a tot el correu de sortida.';
 $string['configemailsubjectprefix'] = 'Text que s\'ha de posar de prefix de l\'assumpte de tots els missatges de correu de sortida.';
 $string['configenableactivitychooser'] = 'El selector d\'activitat és un quadre de diàleg amb una breu descripció de cada activitat i recurs. Si està inhabilitat, apareixen dos menús desplegables separats per a recursos i activitats.';
 $string['configenableanalytics'] = 'Els models analítics, com ara "Estudiants en risc d\'abandonar" o "Properes activitats pendents", poden generar prediccions, enviar notificacions d\'introspeccions i oferir accions addicionals, com l\'enviament de missatges als usuaris.';
@@ -250,7 +257,6 @@ $string['configenablemobilewebservice'] = 'Habilita els serveis mòbils per a l\
 $string['configenablerssfeeds'] = 'Si s\'habilita, es generen canals de continguts RSS per a diverses funcionalitats a tot el lloc, com ara blogs, fòrums, activitats de base de dades i glossaris. Teniu en compte que també cal habilitar els canals de continguts RSS per als mòduls d\'activitat concrets.';
 $string['configenablerssfeedsdisabled'] = 'No està disponible perquè l\'RSS està inhabilitat per a tot el lloc. Per habilitar-lo, aneu a la pantalla de variables en Administració > Configuració.';
 $string['configenablerssfeedsdisabled2'] = 'Els canals RSS estan inhabilitats a tot el lloc. Poden ser habilitats des de les Característiques avançades de l\'Administració del lloc.';
-$string['configenablesafebrowserintegration'] = 'Això afegeix l\'opció «Requereix navegador segur» al camp «Seguretat del navegador» que hi ha al formulari de preguntes. Vegeu http://www.safeexambrowser.org/ per a més informació.';
 $string['configenablestats'] = 'Si trieu «sí», la tasca de cron de Moodle processarà els registres i recollirà algunes estadístiques. Això pot durar una estona, segons el tràfic del lloc. Si habiliteu aquesta opció, podreu veure algunes gràfiques i estadístiques interessants referents a cada curs i al lloc complet.';
 $string['configenabletrusttext'] = 'Per defecte, Moodle sempre netejarà a fons el text provinent dels usuaris a fi d\'eliminar tota mena de codi que suposi un risc de seguretat. El sistema de Contingut de Confiança és una manera de concedir, només a usuaris en els quals confieu, la capacitat d\'incloure sense interferències característiques avançades als seus continguts. Per habilitar aquest sistema, en primer lloc heu d\'habilitar aquest paràmetre i després atorgar el permís Contingut de Confiança a un rol específic de Moodle. Els textos creats o penjats per usuaris que tinguin aquest rol es marcaran com a fiables i no es netejaran abans de ser visualitzats.';
 $string['configenablewebservices'] = 'Els serveis web habiliten altres sistemes per iniciar sessió a Moodle i dur a terme operacions. Per raons de seguretat, és recomanable que aquesta característica estigui inhabilitada, llevat que realment l\'utilitzeu.';
@@ -390,7 +396,7 @@ $string['configtempdatafoldercleanup'] = 'Elimina fitxers temporals de dades de 
 $string['configthemedesignermode'] = 'Normalment totes les imatges i els fitxers d\'estils dels temes es mantenen a la memòria cau dels navegadors i del servidor durant molt de temps, amb l\'objectiu de millorar el rendiment. Si dissenyeu temes o desenvolupeu codi és probable que vulgueu activar aquest mode per no utilitzar les versions de la memòria cau.
 Avís: activar aquest paràmetre farà que la càrrega de les pàgines sigui més lenta per a tothom! Com a alternativa podeu buidar la memòria cau del tema manualment des de la pàgina de selecció de temes.';
 $string['configthemelist'] = 'Deixeu en blanc aquesta opció per permetre l\'ús de qualsevol tema vàlid. Si voleu abreujar el menú de temes, especifiqueu aquí una llista de noms separats per comes (no utilitzeu espais).
-Per exemple: standard,orangewhite.';
+Per exemple: standard,orangewhite';
 $string['configtimezone'] = 'Aquesta és la zona horària per defecte en què es mostren les dates. Cada usuari pot rectificar aquest paràmetre al seu perfil. Les tasques «cron» i altres paràmetres del servidor s\'especifiquen en relació amb aquesta zona horària. Hauríeu de canviar aquest paràmetre si es mostra com «Zona horària no vàlida».';
 $string['configuseblogassociations'] = 'Els usuaris podran organitzar el seu blog associant-ne les entrades amb cursos i mòduls de cursos?';
 $string['configuseexternalyui'] = 'En lloc d\'utilitzar fitxers locals, utilitzeu fitxers en línia disponibles als servidors de Yahoo. COMPTE: la connexió a Internet ha d\'estar establerta; si no, no treballaran les característiques d\'AJAX al vostre lloc. Aquest paràmetre no és compatible amb llocs que utilitzin https.';
@@ -434,10 +440,11 @@ $string['courseswithsummarieslimit'] = 'Límit de cursos amb resum';
 $string['creatornewroleid'] = 'Rol del creador en nous cursos';
 $string['creatornewroleid_help'] = 'Si l\'usuari no té el permís per gestionar el nou curs, l\'usuari s\'inscriurà utilitzant aquest rol.';
 $string['cron'] = 'Cron';
-$string['cron_help'] = 'L\'script de manteniment de cron ajuda en alguns mòduls de Moodle a fer tasques sobre una base programada, com l\'enviament de còpies de nous missatges a fòrums. Es requereix un mecanisme per executar l\'script cada 5 minuts.';
+$string['cron_help'] = 'L\'script cron.php executa una sèrie de tasques en intervals programats, com ara l\'enviament de notificacions de nous missatges a fòrums. L\'script s\'ha d\'executar regularment, idealment cada minut.';
 $string['cronclionly'] = 'Execució del cron només des de la línia d\'ordres';
 $string['cronerrorclionly'] = 'L\'administrador ha inhabilitat l\'accés a aquesta pàgina per Internet.';
 $string['cronerrorpassword'] = 'No heu proporcionat una contrasenya vàlida per accedir a aquesta pàgina';
+$string['croninfrequent'] = 'Han passat {$a->actual} entre les dues darreres execucions de la tasca cron de manteniment i hauria d\'executar-se cada {$a->expected}. Us recomanem que la configureu per tal que s\'executi més freqüentment.';
 $string['cronremotepassword'] = 'Contrasenya d\'accés remot al cron';
 $string['cronwarning'] = 'La <a href="{$a}">seqüència de manteniment cron.php</a> no s\'ha executat en les darreres 24 hores com a mínim.';
 $string['cronwarningcli'] = 'L\'script de manteniment cli/cron.php no s\'ha executat com a mínim durant les darreres 24 hores.';
@@ -502,6 +509,8 @@ $string['doctonewwindow'] = 'Obre en una finestra nova';
 $string['doesnotfit'] = 'Paràmetres de visualització del correu-e';
 $string['doesnotfitdetail'] = 'Paràmetres de visualització del correu electrònic que surt de Moodle.';
 $string['download'] = 'Baixa';
+$string['downloadcoursecontentallowed'] = 'Característica de baixada de contingut del curs disponible';
+$string['downloadcoursecontentallowed_desc'] = 'Estableix si la característica de baixada del contingut del curs està disponible o no per als cursos. Quan estigui disponible, es poden activar/desactivar les baixades de contingut del curs mitjançant l\'opció «Habilita la baixada del contingut del curs» al menú d\'edició del curs (el valor predeterminat es pot establir a <a href={$a} target="_blank"> Paràmetres per defecte del curs</a>).';
 $string['durationunits'] = 'unitats de durada';
 $string['edithelpdocs'] = 'Edita documents d\'ajuda';
 $string['editlang'] = '<b>Edita</b>';
@@ -544,10 +553,11 @@ $string['enablegravatar_help'] = 'Quan s\'habilita, Moodle intentarà trobar una
 $string['enablemobilewebservice'] = 'Habilita els serveis web per als dispositius mòbils';
 $string['enablerecordcache'] = 'Habilita la memòria cau de registres';
 $string['enablerssfeeds'] = 'Habilita canals RSS';
-$string['enablesafebrowserintegration'] = 'Habilita la integració de navegadors segurs.';
 $string['enablesearchareas'] = 'Habilita les àrees de cerca';
 $string['enablestats'] = 'Habilita estadístiques';
 $string['enabletrusttext'] = 'Habilita el contingut de confiança';
+$string['enableuserfeedback'] = 'Habilita la retroalimentació de l\'usuari sobre aquest programari';
+$string['enableuserfeedback_desc'] = 'Si s\'habilita, es mostrarà l\'enllaç «Proporcioneu retroalimentació sobre aquest programari» al peu de pàgina per tal que els usuaris puguin enviar opinions sobre el Moodle a Moodle HQ. Si l\'opció «Següent recordatori de retroalimentació» està marcada, es mostrarà també un recordatori al Tauler de l\'usuari en l\'interval especificat. Si establiu el «Següent recordatori de retroalimentació» a «Mai» se suprimirà el recordatori al Tauler però es mantindrà l\'enllaç del peu de pàgina.';
 $string['enablewebservices'] = 'Habilita els serveis web';
 $string['enablewsdocumentation'] = 'Documentació de serveis web';
 $string['enrolinstancedefaults'] = 'Instància d\'inscripció per defecte';
@@ -579,6 +589,7 @@ $string['experimentalsettings'] = 'Paràmetres experimentals';
 $string['extendedusernamechars'] = 'Permet caràcters estesos en els noms d\'usuari';
 $string['extramemorylimit'] = 'Memòria límit extra PHP';
 $string['fatalsessionautostart'] = '<p>S\'ha detectat un error greu de configuració, notifiqueu-ho a l\'administrador del servidor.</p><p> Per poder funcionar correctament, Moodle necessita que l\'administrador canviï la configuració del PHP.</p><p>Cal que el paràmetre <code>session.auto_start</code> estigui establert en <code>off</code>.</p><p>Aquest paràmetre es controla editant el fitxer <code>php.ini</code>, la configuració <br />de l\'Apache/IIS o el fitxer <code>.htaccess</code> del servidor.</p>';
+$string['feedbacksettings'] = 'Paràmetres de la retroalimentació';
 $string['fileconversioncleanuptask'] = 'Neteja de registres temporals per a conversions de fitxers.';
 $string['filecreated'] = 'S\'ha creat un nou fitxer';
 $string['filesizeunits'] = 'unitats de mida de fitxer';
@@ -668,7 +679,7 @@ $string['ipblocker'] = 'Blocatge d\'IP';
 $string['ipblockersyntax'] = 'Poseu cada entrada en una línia. Les entrades vàlides són o bé adreces IP completes (com ara <b>192.168.10.1</b>) que concorden amb un únic servidor; o adreces parcials (com ara <b>192.168.</b>) que concorden amb qualsevol adreça que comenci amb aquests números; o bé la notació CIDR (com ara <b>231.54.211.0/20</b>); o bé un interval d\'adreces IP (com ara <b>231.3.56.10-20</b>) on l\'interval s\'aplica a la part final de l\'adreça. Els noms de domini textuals (del tipus «xtec.cat») no s\'admeten. Les línies en blanc s\'ignoren.';
 $string['iplookup'] = 'Cerca d\'adreça IP';
 $string['iplookupgeoplugin'] = 'El servei <a href="http://www.geoplugin.com">geoPlugin</a> s\'està utilitzant actualment per cercar informació geogràfica. Per a resultats més detallats us recomanem instal·lar una còpia local de la base de dades MaxMind GeoLite.';
-$string['iplookupinfo'] = 'Per defecte, Moodle utilitza el servidor lliure NetGeo (The Internet Geographic Database) per cercar la ubicació geogràfica d\'adreces IP. Malauradament, aquesta base de dades ja no és mantinguda i pot tornar dades <em>totalment incorrectes</em>. Es recomana instal·lar una còpia local de la base de dades gratuïta GeoLite City de MaxMind.<br />La ubicació d\'adreces IP es mostra en un mapa simple o mitjançant Google Maps. Teniu en compte que Google Maps requereix tenir un compte de Google i demanar una clau de l\'API de Google Maps.';
+$string['iplookupinfo'] = 'Per defecte, Moodle utilitza el servidor lliure NetGeo (The Internet Geographic Database) per cercar la ubicació geogràfica d\'adreces IP. Malauradament, aquesta base de dades ja no és mantinguda i pot tornar dades <em>totalment incorrectes</em>. Es recomana que instal·leu una còpia local de la base de dades gratuïta GeoLite2 City de MaxMind.<br />La ubicació d\'adreces IP es mostra en un mapa simple o mitjançant Google Maps. Tingueu en compte que per tal d\'habilitar els mapes interactius de Google us caldrà tenir un compte de Google i demanar una clau de l\'API de Google Maps.';
 $string['iplookupmaxmindnote'] = 'Aquest producte inclou dades de GeoLite creades per MaxMind, disponibles en <a href="http://www.maxmind.com/">http://www.maxmind.com/</a>.';
 $string['ishttpswarning'] = 'S\'ha detectat que el vostre lloc no està protegit mitjançant HTTPS. Es recomana migrar el vostre lloc a HTTPS per obtenir una major seguretat i una integració millorada amb altres sistemes.';
 $string['keeptagnamecase'] = 'Conserva les majúscules i minúscules en les etiquetes';
@@ -754,6 +765,8 @@ Si això no és el que voleu, assegureu-vos d\'actualitzar a partir d\'una branc
 $string['maxbytes'] = 'Mida màxima de fitxer penjat';
 $string['maxconsecutiveidentchars'] = 'Caràcters consecutius idèntics';
 $string['maxeditingtime'] = 'Límit de temps per editar missatges';
+$string['maxsizeperdownloadcoursefile'] = 'Mida màxima per fitxer';
+$string['maxsizeperdownloadcoursefile_desc'] = 'La mida màxima de cada fitxer en baixar el contingut del curs. Els fitxers que superin aquesta mida s\'ometran de la baixada.';
 $string['maxtimelimit'] = 'Límit màxim de temps';
 $string['maxtimelimit_desc'] = 'Per restringir el temps màxim d\'execució de PHP que Moodle permetrà sense que es visualitzi cap sortida, introduïu aquí un valor en segons. 0 significa que s\'utilitzen les restriccions per defecte de Moodle. Si disposeu d\'un servidor amb el seu propi límit de temps, definiu un valor més baix per rebre els errors de PHP en els registres. No s\'aplica als scripts CLI.';
 $string['maxusersperpage'] = 'Nombre màxim d\'usuaris per pàgina';
@@ -948,8 +961,8 @@ $string['profileshortnamenotunique'] = 'Aquest nom curt ja existeix';
 $string['profilesignup'] = 'Cal visualitzar a la pàgina de registre?';
 $string['profilespecificsettings'] = 'Paràmetres específics';
 $string['profilevisible'] = 'Per a qui és visible aquest camp?';
-$string['profilevisible_help'] = '* No visible - Dades privades sols visibles per als administradors
-* Visible per a l\'usuari - Dades privades sols visibles per a l\'usuari i els administradors
+$string['profilevisible_help'] = '* No visible: dades privades sols visibles per als administradors
+* Visible per als usuaris: dades privades sols visibles per als usuaris i administradors
 * Visible per a tothom';
 $string['profilevisibleall'] = 'Visible per a tothom';
 $string['profilevisiblenone'] = 'Invisible';
@@ -1010,7 +1023,7 @@ $string['rememberusername_desc'] = 'Habiliteu aquesta opció si voleu emmagatzem
 $string['reportsmanage'] = 'Gestiona informes';
 $string['requestcategoryselection'] = 'Habilita la selecció de categories';
 $string['requiredentrieschanged'] = '<strong>IMPORTANT: LLEGIU-HO<br/>(Aquest avís sols es mostra durant aquesta actualització)</strong><br/> A causa de la correcció d\'un error, el comportament de les activitats quan s\'utilitzen els paràmetres «Entrades requerides» i «Entrades requerides abans de veure els paràmetres» han canviat. Podeu llegir una explicació més detallada dels canvis al <a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">mòdul fòrum de la base de dades</a>. El comportament esperat d\'aquests canvis pot llegir-se als <a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">documents de Moodle</a>. <br/><br/>Aquest canvi afecta les bases de dades següents del vostre sistema: (Anomeneu i deseu aquesta llista ara i, després de l\'actualització, comproveu que aquestes activitats encara funcionen de la forma en què els professors esperen.) <br/><strong>{$a->text}</strong><br/>';
-$string['requiremodintro'] = 'Requereix una descripció de l\'activitat';
+$string['requiremodintro'] = 'Demana una descripció de l\'activitat';
 $string['requiremodintro_desc'] = 'Si s\'habilita, els usuaris hauran d\'introduir una descripció per cada activitat.';
 $string['requires'] = 'Demana';
 $string['restorecourse'] = 'Restaura un curs';
@@ -1179,6 +1192,7 @@ $string['taskstatscron'] = 'Processament en segon pla de les estadístiques';
 $string['tasktagcron'] = 'Processament en segon pla de les etiquetes';
 $string['tasktempfilecleanup'] = 'Suprimeix els fitxers temporals obsolets';
 $string['tempdatafoldercleanup'] = 'Neteja els fitxers temporals més antics de';
+$string['templates'] = 'Plantilles';
 $string['testsiteupgradewarning'] = 'Esteu utilitzant el lloc de prova {$a}. Per actualitzar de forma correcta utilitzeu l\'eina d\'interfície de línia d\'ordres.';
 $string['themedesignermode'] = 'Mode de dissenyador de temes';
 $string['themedesignermodewarning'] = 'El mode de dissenyador de temes està habilitat. Això no s\'hauria d\'activar als llocs en producció ja que pot reduir significativament el rendiment.';
@@ -1285,6 +1299,9 @@ $string['user'] = 'Usuari';
 $string['userbulk'] = 'Accions amb usuaris en bloc';
 $string['userbulkdownload'] = 'Exporta els usuaris com a';
 $string['userdefaultpreferences'] = 'Preferències per defecte de l\'usuari';
+$string['userfeedbacknextreminder'] = 'Següent recordatori de retroalimentació';
+$string['userfeedbacknextreminder_desc'] = 'Quan hem de tornar a demanar a l\'usuari que proporcioni retroalimentació?';
+$string['userfeedbackremindafter_desc'] = 'Recorda als usuaris que tornin a proporcionar retroalimentació cada cert nombre de dies.';
 $string['userimagesdisabled'] = 'Les imatges d\'usuari del perfil estan inhabilitades';
 $string['userlist'] = 'Explora la llista d\'usuaris';
 $string['usermanagement'] = 'Gestió d\'usuaris';

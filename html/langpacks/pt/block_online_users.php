@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'pt', version '3.8'.
+ * Strings for component 'block_online_users', language 'pt', version '3.11'.
  *
  * @package     block_online_users
  * @category    string
@@ -36,6 +36,7 @@ $string['online_users:myaddinstance'] = 'Adicionar um novo bloco Participantes a
 $string['online_users:viewlist'] = 'Ver lista de utilizadores online';
 $string['onlinestatushiding'] = 'A ocultar estado online';
 $string['onlinestatushiding_desc'] = 'Se ativar esta opção, os utilizadores têm a opção de ocultar o seu estado online dos outros utilizadores.';
+$string['otherusers'] = 'Outros utilizadores ({$a})';
 $string['periodnminutes'] = 'nos últimos {$a} minutos';
 $string['pluginname'] = 'Utilizadores ativos';
 $string['privacy:metadata:preference:uservisibility'] = 'Estado ativo visível para os outros utilizadores no bloco Utilizadores ativos.';

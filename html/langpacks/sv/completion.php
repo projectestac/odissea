@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'sv', version '3.8'.
+ * Strings for component 'completion', language 'sv', version '3.11'.
  *
  * @package     completion
  * @category    string
@@ -55,23 +55,24 @@ $string['bulkcompletiontracking_help'] = '<strong>Ingen:</strong> Ange inte någ
 $string['checkactivity'] = 'Kryssruta för aktivitet / resurs: {$a}';
 $string['checkall'] = 'Markera eller avmarkera alla aktiviteter och resurser';
 $string['checkallsection'] = 'Markera eller avmarkera alla aktiviteter och resurser i följande sektion: {$a}';
-$string['completed'] = 'Slutfört';
+$string['completeactivity'] = 'Slutför aktiviteten';
+$string['completed'] = 'Slutförd';
 $string['completedunlocked'] = 'Alternativen för slutförande är upplåsta';
 $string['completedunlockedtext'] = 'När du sparar ändringarna nollställs markeringarna av slutförande för alla kursdeltagare. Om du inte är säker på att detta ska göras, välj att avbryta.';
 $string['completedwarning'] = 'Alternativen för slutförande är låsta';
 $string['completedwarningtext'] = 'Den här aktiviteten har redan markerats som slutförd för {$a} deltagare. Om du ändrar alternativet för slutförande av aktiviteten kommer deras slutförandestatus tas bort och det kan orsaka förvirring. Således bör inte alternativen låsas upp om det inte är absolut nödvändigt.';
 $string['completion'] = 'Bevaka slutförande';
 $string['completion-alt-auto-enabled'] = 'Systemet markerar automatiskt denna aktivitet som slutförd baserat på uppställda kriterier.';
-$string['completion-alt-auto-fail'] = 'Fullföljd (uppnådde inte godkänt resultat)';
-$string['completion-alt-auto-n'] = 'Inte avslutad: {$a}';
+$string['completion-alt-auto-fail'] = 'Slutförd: {$a} (uppnådde inte godkänt resultat)';
+$string['completion-alt-auto-n'] = 'Ej slutförd: {$a}';
 $string['completion-alt-auto-n-override'] = 'Ej slutförd: {$a->modname} (satt av {$a->overrideuser})';
-$string['completion-alt-auto-pass'] = 'Fullföljd (godkänt resultat)';
-$string['completion-alt-auto-y'] = 'Fullföljd';
+$string['completion-alt-auto-pass'] = 'Slutförd: {$a} (godkänt resultat)';
+$string['completion-alt-auto-y'] = 'Slutförd: {$a}';
 $string['completion-alt-auto-y-override'] = 'Slutförd: {$a->modname} (satt av {$a->overrideuser})';
 $string['completion-alt-manual-enabled'] = 'Kursdeltagare kan själv markera denna aktivitet som slutförd';
-$string['completion-alt-manual-n'] = 'Ej fullföljd; välj för att markera som fullföljd';
+$string['completion-alt-manual-n'] = 'Ej slutförd: {$a}. Välj för att markera som slutförd.';
 $string['completion-alt-manual-n-override'] = 'Ej slutförd: {$a->modname} (satt av {$a->overrideuser}). Välj för att markera som slutförd.';
-$string['completion-alt-manual-y'] = 'Fullföljd; välj för att markera som ej fullföljd';
+$string['completion-alt-manual-y'] = 'Slutförd: {$a}. Välj för att markera som ej slutförd.';
 $string['completion-alt-manual-y-override'] = 'Slutförd: {$a->modname} (satt av {$a->overrideuser}). Välj för att markera som ej slutförd.';
 $string['completion-fail'] = 'Slutförd (inte uppnått godkänt betyg)';
 $string['completion-n'] = 'Ej slutförd';
@@ -98,7 +99,7 @@ $string['completionicons_help'] = 'En markering bredvid ett aktivitetsnamn kan a
 Om en ruta med en prickad kantlinje visas kommer en markering automatiskt dyka upp när du har slutfört aktiviteten enligt de villkor som läraren har angett.
 
 Om en ruta med en fast kantlinje visas kan du klicka på den för att kryssa i rutan när du tror att du har slutfört aktiviteten. (Om du klickar på den igen tas markeringen bort, om du skulle ånga dig.)';
-$string['completionmenuitem'] = 'Fullföljande';
+$string['completionmenuitem'] = 'Slutförande';
 $string['completionnotenabled'] = 'Slutförande är inte aktiverat';
 $string['completionnotenabledforcourse'] = 'Slutförande är inte aktiverat för den här kursen';
 $string['completionnotenabledforsite'] = 'Slutförande är inte aktiverad för den här webbplatsen';
@@ -120,7 +121,8 @@ $string['courseaggregation_any'] = 'NÅGON vald kurs slutförs';
 $string['coursealreadycompleted'] = 'Du har redan slutfört denna kurs.';
 $string['coursecomplete'] = 'Kursen slutförd';
 $string['coursecompleted'] = 'Kursen slutförd';
-$string['coursecompletion'] = 'Fullgörande av kurs';
+$string['coursecompletedmessage'] = '<p>Gratulerar!</p><p>Du har slutfört kursen <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
+$string['coursecompletion'] = 'Kursslutförande';
 $string['coursecompletioncondition'] = 'Villkor: {$a}';
 $string['coursegrade'] = 'Kursbetyg';
 $string['coursesavailable'] = 'Tillgängliga kurser';
@@ -138,6 +140,8 @@ $string['defaultcompletionupdated'] = 'Ändringar sparade';
 $string['deletecompletiondata'] = 'Ta bort slutförandedata';
 $string['dependencies'] = 'Beroenden';
 $string['dependenciescompleted'] = 'Slutförande av andra kurser';
+$string['detail_desc:receivegrade'] = 'Få ett betyg';
+$string['detail_desc:view'] = 'Visa';
 $string['editcoursecompletionsettings'] = 'Redigera slutförandevillkor';
 $string['enablecompletion'] = 'Bevaka slutförande?';
 $string['enablecompletion_help'] = 'Om aktiverat kan villkor för kurs- och aktivitetsslutförande specificeras. Det rekommenderas att ha detta aktiverat så att meningsfulla data visas i kursöversikten på översiktssidan.';
@@ -163,8 +167,8 @@ $string['inprogress'] = 'Pågående';
 $string['manual'] = 'Manuellt';
 $string['manualcompletionby'] = 'Manuellt slutförande av andra';
 $string['manualcompletionbynote'] = 'OBS! Funktionsbehörigheten <code>moodle/course:markcomplete</code> måste tillåtas för att en roll ska synas i listan.';
-$string['manualselfcompletion'] = 'Studenten markerar själv som fullföljd';
-$string['manualselfcompletionnote'] = 'OBS! Blocket för eget slutförande måste läggas till i kursen om manuellt eget slutförande är aktiverat.';
+$string['manualselfcompletion'] = 'Manuellt eget slutförande';
+$string['manualselfcompletionnote'] = 'OBS! Blocket <em>Eget slutförande</em> måste läggas till i kursen om manuellt eget slutförande är aktiverat.';
 $string['markcomplete'] = 'Markera som slutförd';
 $string['markedcompleteby'] = 'Markerad som slutförd av {$a}';
 $string['markingyourselfcomplete'] = 'Markera dig själv som klar';
@@ -216,6 +220,8 @@ $string['seedetails'] = 'Se detaljer';
 $string['select'] = 'Välj';
 $string['self'] = 'Själv';
 $string['selfcompletion'] = 'Eget slutförande';
+$string['showcompletionconditions'] = 'Visa slutförandevillkor';
+$string['showcompletionconditions_help'] = 'Slutförandevillkor för aktiviteter visas alltid på aktivitetssidan. Den här inställningen avgör om slutförandevillkor för aktiviteter också visas under varje aktivitet på kurssidan.';
 $string['showinguser'] = 'Visar användare';
 $string['unenrolingfromcourse'] = 'Avregistrerar från kurs';
 $string['unenrolment'] = 'Avregistrering';

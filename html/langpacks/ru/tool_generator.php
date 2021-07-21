@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'ru', version '3.8'.
+ * Strings for component 'tool_generator', language 'ru', version '3.11'.
  *
  * @package     tool_generator
  * @category    string
@@ -61,6 +61,7 @@ $string['maketestcourse'] = 'Создать испытательный курс'
 $string['maketestplan'] = 'Создать план тестирования JMeter';
 $string['notenoughusers'] = 'В выбранном курсе недостаточно пользователей';
 $string['pluginname'] = 'Генератор тестовых данных для разработчиков';
+$string['privacy:metadata'] = 'Плагин генератора данных разработки не хранит никаких личных данных.';
 $string['progress_checkaccounts'] = 'Проверка учетных записей пользователей ({$a})';
 $string['progress_coursecompleted'] = 'Курс подготовлен ({$a} сек.)';
 $string['progress_createaccounts'] = 'Создание учетных записей пользователей ({$a->from} - {$a->to})';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'gl', version '3.8'.
+ * Strings for component 'repository_dropbox', language 'gl', version '3.11'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -32,7 +32,7 @@ $string['configplugin'] = 'Configuración de Dropbox';
 $string['crontask'] = 'Procesamento en segundo plano para o repositorio Dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Ver un cartafol de Dropbox';
-$string['instruction'] = 'Pode obter a súa chave de API e «secreto» dos <a href="http://www.dropbox.com/developers/apps">desenvolvedores de Dropbox</a>. Ao axustar a súa chave, seleccione «Todo Dropbox» como o «Nivel de acceso».';
+$string['instruction'] = 'Pode obter a súa chave de API  e «segredo» dos <a href="http://www.dropbox.com/developers/apps">desenvolvedores de Dropbox</a>. Ao axustar a súa chave, seleccione «Todo Dropbox» como o «Nivel de acceso».';
 $string['logoutdesc'] = '(Cerrar a sesión cando remate de usar Dropbox)';
 $string['notitle'] = 'sen-título';
 $string['oauth2redirecturi'] = 'URI de redirección OAuth 2';

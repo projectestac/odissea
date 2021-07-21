@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ru', version '3.8'.
+ * Strings for component 'user', language 'ru', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,24 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Добавить условие';
+$string['adverbfor_and'] = 'и';
+$string['adverbfor_andnot'] = 'и';
+$string['adverbfor_or'] = 'или';
+$string['applyfilters'] = 'Применить фильтры';
+$string['clearfilters'] = 'Сбросить фильтры';
+$string['clearfilterselection'] = 'Удалить «{$a}» из фильтра';
+$string['countparticipantsfound'] = 'Найдено участников: {$a}';
+$string['filterbykeyword'] = 'Ключевое слово';
+$string['filterrowlegend'] = 'Фильтр {$a}';
+$string['filtersetmatchdescription'] = 'Как следует комбинировать несколько фильтров';
+$string['filtertype'] = 'Тип фильтра';
+$string['match'] = 'Соответствие';
+$string['matchofthefollowing'] = 'из следующих:';
+$string['moodlenetprofile'] = 'Профиль MoodleNet';
+$string['moodlenetprofile_help'] = 'Это поле предназначено для привязки вашего профиля MoodleNet к Moodle. Ожидается URI, совместимый с WebFinger.';
+$string['placeholdertype'] = 'Введите...';
+$string['placeholdertypeorselect'] = 'Введите или выберите...';
 $string['privacy:courserequestpath'] = 'Запрошенные курсы';
 $string['privacy:descriptionpath'] = 'Описание профиля';
 $string['privacy:devicespath'] = 'Устройства пользователя';
@@ -41,7 +59,7 @@ $string['privacy:metadata:category'] = 'Идентификатор катего�
 $string['privacy:metadata:city'] = 'Город пользователя.';
 $string['privacy:metadata:confirmed'] = 'Является ли данный пользователь активным или нет.';
 $string['privacy:metadata:country'] = 'Страна, в которой находится пользователь.';
-$string['privacy:metadata:courseid'] = 'Идентификатор курса.';
+$string['privacy:metadata:courseid'] = 'ID курса.';
 $string['privacy:metadata:currentlogin'] = 'Текущий логин для этого пользователя.';
 $string['privacy:metadata:data'] = 'Данные, связанные с полем профиля пользователя.';
 $string['privacy:metadata:deleted'] = 'Отметка, показывающая удален пользователь или нет.';
@@ -60,7 +78,7 @@ $string['privacy:metadata:firstnamephonetic'] = 'Фонетические под
 $string['privacy:metadata:fullname'] = 'Полное название этого курса.';
 $string['privacy:metadata:hash'] = 'Хэш предыдущего пароля.';
 $string['privacy:metadata:icq'] = 'Номер ICQ пользователя.';
-$string['privacy:metadata:id'] = 'Идентификатор пользователя.';
+$string['privacy:metadata:id'] = 'ID пользователя.';
 $string['privacy:metadata:idnumber'] = 'Идентификационный номер, выданный организацией.';
 $string['privacy:metadata:imagealt'] = 'Альтернативный текст для изображения пользователя.';
 $string['privacy:metadata:infotablesummary'] = 'Хранит различную информацию о пользователе.';
@@ -77,6 +95,7 @@ $string['privacy:metadata:maildisplay'] = 'Настройка, показыва�
 $string['privacy:metadata:middlename'] = 'Отчество пользователя.';
 $string['privacy:metadata:mnethostid'] = 'Идентификатор для хоста MNet, если он используется.';
 $string['privacy:metadata:model'] = 'Название устройства, Оккам или iPhone и т.д.';
+$string['privacy:metadata:moodlenetprofile'] = 'Профиль MoodleNet для пользователя';
 $string['privacy:metadata:msn'] = 'Идентификатор MSN для пользователя.';
 $string['privacy:metadata:my_pages'] = 'Страницы пользователя — личный кабинет и профиль. Эта таблица не содержит персональных данных и используется только для связывания блоков личного кабинета с пользователями';
 $string['privacy:metadata:my_pages:name'] = 'Название страницы';
@@ -128,3 +147,7 @@ $string['privacy:passwordresetpath'] = 'Сбросы пароля';
 $string['privacy:privatefilespath'] = 'Личные файлы';
 $string['privacy:profileimagespath'] = 'Изображения профиля';
 $string['privacy:sessionpath'] = 'Данные сессии';
+$string['selectfiltertype'] = 'Выбрать';
+$string['target:upcomingactivitiesdue'] = 'Предстоящая деятельность';
+$string['target:upcomingactivitiesdue_help'] = 'Эта цель создаёт напоминания о предстоящей деятельности.';
+$string['target:upcomingactivitiesdueinfo'] = 'Здесь перечислена вся предстоящая деятельность согласно прогнозу. Эти студенты получили эти прогнозы напрямую.';

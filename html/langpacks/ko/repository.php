@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ko', version '3.8'.
+ * Strings for component 'repository', language 'ko', version '3.11'.
  *
  * @package     repository
  * @category    string
@@ -31,6 +31,7 @@ $string['activerepository'] = '가능한 저장소 플러그인';
 $string['activitybackup'] = '활동 백업';
 $string['add'] = '추가';
 $string['addfile'] = '추가 ...';
+$string['addfiletext'] = '파일 추가';
 $string['addplugin'] = '저장 플러그인 추가';
 $string['allowexternallinks'] = '외부 연결고리 허용';
 $string['areacategoryintro'] = '범주 소개';

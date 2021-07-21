@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ko', version '3.8'.
+ * Strings for component 'forum', language 'ko', version '3.11'.
  *
  * @package     forum
  * @category    string
@@ -29,6 +29,7 @@ $string['activityoverview'] = '새 포럼 게시글이 있습니다.';
 $string['addanewdiscussion'] = '새 토론 주제 추가';
 $string['addanewquestion'] = '새 질문 추가';
 $string['addanewtopic'] = '새로운 주제 추가';
+$string['addtofavourites'] = '이 토론에 별 표시하기';
 $string['advancedsearch'] = '상세 검색';
 $string['allforums'] = '모든 포럼';
 $string['allowdiscussions'] = '{$a} 가 이 포럼에 게시할 수 있도록 할까요?';
@@ -113,7 +114,7 @@ $string['couldnotadd'] = '알 수 없는 오류로 인해 게시할 수 없음';
 $string['couldnotdeletereplies'] = '죄송, 사람들이 벌써 답변하였기에 지울 수 없음';
 $string['couldnotupdate'] = '알 수 없는 오류로 인해 업데이트 할 수 없음';
 $string['cutoffdate'] = '최종 마감일';
-$string['cutoffdatereached'] = '게시 시한이 지나 이 포럼에 올릴 수 없습니다.';
+$string['cutoffdatereached'] = '이 포럼이 날짜에 도달해 게시할 수 없습니다.';
 $string['cutoffdatevalidation'] = '최종 마감일은 마감일 보다 먼저일 수 없습니다.';
 $string['delete'] = '삭제';
 $string['deleteddiscussion'] = '토론 주제가 삭제되었음';
@@ -129,13 +130,22 @@ $string['digestsentusers'] = '메일 요약문이 {$a} 사용자에게 성공적
 $string['disallowsubscribe'] = '구독이 허용되지 않음';
 $string['disallowsubscribeteacher'] = '(선생님을 제외하고는) 구독이 허용되지 않음';
 $string['discussion'] = '제목';
+$string['discussionlistsortbycreatedasc'] = '작성일 기준 오름차순 정렬';
+$string['discussionlistsortbycreateddesc'] = '작성일 기준 내림차순 정렬';
+$string['discussionlistsortbylastpostasc'] = '마지막 게시물 작성 날짜 기준 오름차순 정렬';
+$string['discussionlistsortbylastpostdesc'] = '마지막 게시물 작성 날짜 기준 내림차순 정렬';
+$string['discussionlistsortbyrepliesasc'] = '응답수 오름차순 기준으로 정렬';
+$string['discussionlistsortbyrepliesdesc'] = '응답수 내림차순 기준으로 정렬';
+$string['discussionlocked'] = '토론이 끝났습니다. 더 이상 답변할 수 없습니다.';
 $string['discussionmoved'] = '이 토론은 \'{$a}\'로 옮겨졌습니다.';
 $string['discussionmovedpost'] = '이 토론은 <a href="{$a->forumhref}">{$a->forumname}</a>에 있던 것이  <a href="{$a->discusshref}">이 곳</a>으로 옮겨진 것입니다.';
 $string['discussionname'] = '토론명';
+$string['discussionpinned'] = '고정됨';
 $string['discussions'] = '토론들';
 $string['discussionsstartedby'] = '{$a} 가 발의한 토론';
 $string['discussionsstartedbyrecent'] = '{$a} 가 최근 발의한 토론';
 $string['discussionsstartedbyuserincourse'] = '{$a->coursename}에서  {$a->fullname} 가 시작한 토론';
+$string['discussionsubscription'] = '토론 구독하기';
 $string['discussthistopic'] = '이 주제에 대해 토론하기';
 $string['displayend'] = '게시 종료일';
 $string['displayend_help'] = '<p>포럼의 게시물을 언제부터 언제까지 혹은 어느 일정 기간동안 게시할 것인지를 선택할 수 있다.</p>
@@ -184,6 +194,7 @@ $string['everyoneisnowsubscribed'] = '이제 모든 사람이 이 포럼을 구�
 $string['everyoneissubscribed'] = '모든 사람이 이 포럼을 구독함';
 $string['existingsubscribers'] = '구독자 존재';
 $string['exportdiscussion'] = '전체 토론을 내보내기';
+$string['favouriteupdated'] = '별표 옵션이 업데이트 되었습니다.';
 $string['forcedreadtracking'] = '강제 읽기 추적 허용';
 $string['forcesubscribed'] = '모든 사람이 포럼을 구독해야 함';
 $string['forum'] = '포럼';
@@ -251,6 +262,8 @@ $string['invalidparentpostid'] = '상위 게시판 ID가 바르지 않음';
 $string['invalidpostid'] = '잘못된 게시물 ID - {$a}';
 $string['lastpost'] = '최근 게시';
 $string['learningforums'] = '학습 포럼';
+$string['lockdiscussion'] = '토론 끝내기';
+$string['lockupdated'] = '잠금 옵션이 업데이트 되었습니다.';
 $string['longpost'] = '긴 게시물';
 $string['mailnow'] = '지금 메일보내기';
 $string['manydiscussions'] = '페이지당 토론';
@@ -338,12 +351,15 @@ $string['page-mod-forum-view'] = '포럼 모듈 메인 페이지';
 $string['page-mod-forum-x'] = '모든 포럼 모듈 페이지';
 $string['parent'] = '앞글 보기';
 $string['parentofthispost'] = '이 글의 앞글';
+$string['pindiscussion'] = '토론 고정하기';
+$string['pinupdated'] = '고정 옵션이 업데이트 되었습니다.';
 $string['pluginadministration'] = '포럼 관리';
 $string['pluginname'] = '포럼';
 $string['postadded'] = '<p> 성공적으로 글이 추가되었습니다.</p> <p> {$a} 내에는 글을 수정할 수 있습니다.</p>';
 $string['postaddedsuccess'] = '성공적으로 글이 추가되었습니다.';
 $string['postaddedtimeleft'] = '{$a} 내에는 글을 수정할 수 있습니다.';
 $string['postincontext'] = '문맥에서 이 글 보기';
+$string['postisprivatereply'] = '비공개 답변입니다. 다른 참여자에게는 보이지 않습니다.';
 $string['postmailnow'] = '<p>모든 포럼 사용자들에게 이 게시물이 즉시 발송될 것입니다.</p>';
 $string['postrating1'] = '대부분 분리된 배움';
 $string['postrating2'] = '분리와 연결';
@@ -352,8 +368,10 @@ $string['posts'] = '게시물';
 $string['postsmadebyuser'] = '{$a}가 올린 글';
 $string['postsmadebyuserincourse'] = '{$a->coursename}에서 {$a->fullname} 가 한 글';
 $string['posttoforum'] = '포럼에 올리기';
+$string['posttomygroups'] = '모든 그룹에게 사본 게시하기';
 $string['postupdated'] = '게시글이 업데이트됨';
 $string['potentialsubscribers'] = '잠재 구독자들';
+$string['privatereply'] = '비공개로 답변하기';
 $string['processingdigest'] = '{$a} 사용자를 위한 메일 요약 처리중';
 $string['processingpost'] = '게시물 {$a} 처리중';
 $string['prune'] = '분리';
@@ -363,11 +381,13 @@ $string['qandaforum'] = '질의 응답 포럼';
 $string['qandanotify'] = '여기는 질의 응답 포럼입니다. 이 질문에 대한 다른 응답을 보려면 먼저 당신의 답을 게시하여야만 합니다.';
 $string['re'] = '회신:';
 $string['readtherest'] = '이 주제의 나머지 글 읽기';
+$string['removefromfavourites'] = '토론 별표 취소하기';
 $string['replies'] = '답글들';
 $string['repliesmany'] = '올라온 답글들 {$a}';
 $string['repliesone'] = '올라온 답글 {$a}';
 $string['reply'] = '답글';
 $string['replyforum'] = '포럼에 답글 쓰기';
+$string['replyplaceholder'] = '답변을 작성하세요...';
 $string['replytouser'] = '답신에 이메일 사용';
 $string['resetforums'] = '포럼에서 모든 게시물 삭제';
 $string['resetforumsall'] = '모든 게시물 삭제';
@@ -439,6 +459,9 @@ $string['subscriptionmode_help'] = '참여자가 포럼을 구독하면 포럼�
 * 구독 비활성화 - 구독이 허용되지 않습니다.';
 $string['subscriptionoptional'] = '선택적 구독';
 $string['subscriptions'] = '이메일로 구독';
+$string['tagarea_forum_posts'] = '포럼 게시물';
+$string['thisforumhasduedate'] = '포럼 게시 마감일은 {$a}입니다.';
+$string['thisforumisdue'] = '포럼 게시는 {$a}에 마감되었습니다.';
 $string['thisforumisthrottled'] = '이 포럼은 주어진 기간안에 게시할 수 있는 포럼 게시물의 수에 한계가 있습니다. 현재 설정은 {$a->blockperiod} 기간동안 {$a->blockafter} 게시물 입니다.';
 $string['timedposts'] = '게시 시한 제한';
 $string['timestartenderror'] = '게시 종료일이 시작일보다 먼저일 수는 없습니다.';
@@ -455,6 +478,8 @@ $string['trackingtype_help'] = '활성화하면 참여자들은 포럼 혹은 �
 * 선택: 참여자가 추적 기능을 켜거나 끌 수 있다.
 * 켬: 추적 기능을 항상 켜둠.
 * 끔: 추적 기능을 항상 끔.';
+$string['unlockdiscussion'] = '토론 재개하기';
+$string['unpindiscussion'] = '토론 고정 해제하기';
 $string['unread'] = '읽지 않음';
 $string['unreadposts'] = '읽지 않은 글';
 $string['unreadpostsnumber'] = '{$a} 개의 읽지 않은 글';

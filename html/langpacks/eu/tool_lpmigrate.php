@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpmigrate', language 'eu', version '3.8'.
+ * Strings for component 'tool_lpmigrate', language 'eu', version '3.11'.
  *
  * @package     tool_lpmigrate
  * @category    string
@@ -68,6 +68,6 @@ $string['startdatefrom'] = 'Hasiera-data honetatik aurrera';
 $string['unmappedin'] = 'Parekatu gabekoa hemen: {$a}';
 $string['warningcouldnotremovecoursecompetency'] = 'Ikastaro-konpetentzia ezin izan da ezabatu.';
 $string['warningcouldnotremovemodulecompetency'] = 'Jarduera edo baliabidearen konpetentzia ezin izan da ezabatu.';
-$string['warningdestinationcoursecompetencyalreadyexists'] = 'Helburuko ikastaro-konpetentzia dagoeneko existitzen da.';
-$string['warningdestinationmodulecompetencyalreadyexists'] = 'Helburuko jarduera edo baliabidearen konpetentzia dagoeneko existitzen da.';
+$string['warningdestinationcoursecompetencyalreadyexists'] = 'Helmugako ikastaro-konpetentzia dagoeneko existitzen da.';
+$string['warningdestinationmodulecompetencyalreadyexists'] = 'Helmugako jarduera edo baliabidearen konpetentzia dagoeneko existitzen da.';
 $string['warnings'] = 'Abisuak';

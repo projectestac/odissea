@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'ja', version '3.8'.
+ * Strings for component 'auth_db', language 'ja', version '3.11'.
  *
  * @package     auth_db
  * @category    string
@@ -54,7 +54,7 @@ $string['auth_dbnouserfield'] = '外部ユーザフィールドが指定され�
 $string['auth_dbpass'] = '上記ユーザ名に合致するパスワード';
 $string['auth_dbpass_key'] = 'パスワード';
 $string['auth_dbpasstype'] = '<p>パスワードフィールドで使用するフォーマットを指定してください。</p>
-<p>あなたが外部データベースにユーザ名およびメールアドレスを管理させてMoodleにはパスワードを管理させたい場合、「内部」を使用してください。「内部」を使用する場合、外部データベースのメールアドレスフィールドを提供して定期的にadmin/cron.phpおよびauth/db/cli/sync_users.phpを実行してください。新しいユーザに仮パスワード記載したメールをMoodleが送信します。</p>';
+<p>あなたが外部データベースにユーザ名およびメールアドレスを管理させてMoodleにはパスワードを管理させたい場合、「内部」を使用してください。あなたが「内部」を使用する場合、外部データベースのメールアドレスフィールドを提供して「 \\auth_db\\task\\sync_users」スケジュールタスクを有効にする必要があります。新しいユーザに仮パスワード記載したメールをMoodleが送信します。</p>';
 $string['auth_dbpasstype_key'] = 'パスワードフォーマット';
 $string['auth_dbreviveduser'] = '回復済みユーザ {$a->name} id {$a->id}';
 $string['auth_dbrevivedusererror'] = 'ユーザ {$a} の回復中にエラーが発生しました。';

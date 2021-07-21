@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'sv', version '3.8'.
+ * Strings for component 'url', language 'sv', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -33,16 +33,21 @@ $string['configrolesinparams'] = 'Aktivera om du vill inkludera lokalanpassade n
 $string['configsecretphrase'] = 'Den hemliga frasen används för att skapa krypterad kod som kan skickas till vissa servrar som en parameter. Den krypterade koden skapas med ett md5 värde för nuvarande användares IP adress sammanfogad med din hemliga fras. Exvis kod = md5(IP.hemligfras). Notera att detta är inte pålitligt på grund av att IP adress kan ändras och delas ofta av olika datorer.';
 $string['contentheader'] = 'Innehåll';
 $string['createurl'] = 'Skapa en webbadress';
-$string['displayoptions'] = 'Tillgängliga alternativ för visning';
-$string['displayselect'] = 'Visa';
-$string['displayselect_help'] = 'Denna inställning bestämmer hur webblänken ska öppnas och visas.<BR>
-* Automatisk – systemet väljer, vilket vanligen innebär att en ny sida med en länk till webbadressen visas<BR>
-* Nytt fönster – webbadressen visas i ett nytt webbläsarfönster (rekommenderas!)<BR>
-* Öppna - webbadressen visas samma fönster som Moodle, dvs användaren flyttas från Moodle<BR>
-* Pop-up – Öppnar ett mindre fönster med webbadressen. Fönstrets storlek och andra egenskaper kan ställas in.';
+$string['displayoptions'] = 'Tillgängliga visningsalternativ';
+$string['displayselect'] = 'Visningsalternativ';
+$string['displayselect_help'] = 'Den här inställningen, tillsammans med URL-filtypen och om webbläsaren tillåter inbäddning, avgör hur en URL ska visas.
+
+Du kan välja mellan följande alternativ (beroende på egensklaperna hos URL:en är det inte säkert att alla alternativ visas):
+
+* Automatiskt - Det bästa visningsalternativet väljs automatiskt
+* Bädda in - URL:en visas på sidan under navigeringsfältet tillsammans med URL-beskrivningen och eventuella block
+* Öppna - Innehållet visas i webbläsarfönstret
+* I pop-up fönster - URL:en visas i ett nytt webbläsarfönster utan menyer eller ett adressfält
+* I en ram - URL:en visas i en ram under navigeringsfältet och URL-beskrivningen
+* Nytt fönster - URL:en visas i ett nytt webbläsarfönster med menyer och ett adressfält';
 $string['displayselectexplain'] = 'Välj visningstyp, tyvärr är inte alla typer lämpliga för alla URL:er.';
 $string['externalurl'] = 'Extern URL';
-$string['framesize'] = 'Ramstorlek';
+$string['framesize'] = 'Höjd på ram';
 $string['indicator:cognitivedepth'] = 'URL kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en URL-resurs.';
 $string['indicator:cognitivedepthdef'] = 'URL kognitiv';
@@ -54,16 +59,16 @@ $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procent
 $string['invalidstoredurl'] = 'Kan inte visa, angiven URL är ogiltig.';
 $string['invalidurl'] = 'Angiven URL är ogiltig';
 $string['modulename'] = 'URL';
-$string['modulename_help'] = 'URL-modulen gör det möjligt för en lärare att tillhandahålla en webblänk som kursresurs. Det går att länka till allt som är fritt tillgängligt online, till exempel dokument eller bilder.  Webbadressen behöver inte vara startsidan för en webbplats. Webbadressen till en viss webbsida kan kopieras och klistras in eller en lärare kan använda filväljaren och välja en länk från en lagringsplats som Flickr, YouTube eller Wikimedia (beroende på vilka lagringsplatser som är aktiverade på webbplatsen).
+$string['modulename_help'] = 'Modulen <em>URL</em> gör det möjligt för en lärare att tillhandahålla en webblänk som kursresurs. Det går att länka till allt som är fritt tillgängligt online, till exempel dokument eller bilder.  Webbadressen behöver inte vara startsidan för en webbplats. Webbadressen till en viss webbsida kan kopieras och klistras in eller en lärare kan använda filväljaren och välja en länk från en lagringsplats som Flickr, YouTube eller Wikimedia (beroende på vilka lagringsplatser som är aktiverade på webbplatsen).
 
 Det finns ett antal visningsalternativ för webbadressen, till exempel inbäddad eller att den öppnas i ett nytt fönster och avancerade alternativ för att skicka information, till exempel en deltagares namn, till webbadressen om det behövs.
 
 Observera att webbadresser även kan läggas till i någon annan resurs eller aktivitetstyp via textredigeraren.';
-$string['modulenameplural'] = 'URLer';
+$string['modulenameplural'] = 'URL:er';
 $string['page-mod-url-x'] = 'Valfri URL modulsida';
 $string['parameterinfo'] = '&amp;parameter=variabel';
 $string['parametersheader'] = 'URL-variabler';
-$string['parametersheader_help'] = 'Vissa interna Moodlevariabler kan bli automatiskt bifogade till URL:en. Skriv ditt namn för parametern i varje textruta(or) och välj sedan den nödvändiga matchande variabeln.';
+$string['parametersheader_help'] = 'I det här avsnittet kan du skicka intern information som en del av URL:en. Detta är användbart om URL:en är en interaktiv webbsida som tar parametrar och du till exempel vill skicka något som t.ex. namnet på den aktuella användaren. Ange namnet på URL:ns parameter i textrutan och välj sedan motsvarande webbplatsvariabel.';
 $string['pluginadministration'] = 'Administration av modulen URL';
 $string['pluginname'] = 'URL';
 $string['popupheight'] = 'Höjd på popup-fönster (i pixlar)';

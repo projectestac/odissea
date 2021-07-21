@@ -44,7 +44,7 @@ class framework_testcase extends \advanced_testcase {
     /**
      * Set up function for tests.
      */
-    public function setUp() {
+    public function setUp(): void {
         $factory = new \core_h5p\factory();
         $this->framework = $factory->get_framework();
     }
@@ -172,6 +172,55 @@ class framework_testcase extends \advanced_testcase {
 
         // The response should be empty.
         $this->assertEmpty($data);
+    }
+
+    /**
+     * Test the behaviour of setLibraryTutorialUrl().
+     */
+    public function test_setLibraryTutorialUrl() {
+        global $DB;
+
+        $this->resetAfterTest();
+
+        $generator = $this->getDataGenerator()->get_plugin_generator('core_h5p');
+
+        // Create several libraries records.
+        $lib1 = $generator->create_library_record('Library1', 'Lib1', 1, 0, 1, '', null, 'http://tutorial1.org',
+            'http://example.org');
+        $lib2 = $generator->create_library_record('Library2', 'Lib2', 2, 0, 1, '', null, 'http://tutorial2.org');
+        $lib3 = $generator->create_library_record('Library3', 'Lib3', 3, 0);
+
+        // Check only lib1 tutorial URL is updated.
+        $url = 'https://newtutorial.cat';
+        $this->framework->setLibraryTutorialUrl($lib1->machinename, $url);
+
+        $libraries = $DB->get_records('h5p_libraries');
+        $this->assertEquals($libraries[$lib1->id]->tutorial, $url);
+        $this->assertNotEquals($libraries[$lib2->id]->tutorial, $url);
+
+        // Check lib1 tutorial URL is set to null.
+        $this->framework->setLibraryTutorialUrl($lib1->machinename, null);
+
+        $libraries = $DB->get_records('h5p_libraries');
+        $this->assertCount(3, $libraries);
+        $this->assertNull($libraries[$lib1->id]->tutorial);
+
+        // Check no tutorial URL is set if library name doesn't exist.
+        $this->framework->setLibraryTutorialUrl('Unexisting library', $url);
+
+        $libraries = $DB->get_records('h5p_libraries');
+        $this->assertCount(3, $libraries);
+        $this->assertNull($libraries[$lib1->id]->tutorial);
+        $this->assertEquals($libraries[$lib2->id]->tutorial, 'http://tutorial2.org');
+        $this->assertNull($libraries[$lib3->id]->tutorial);
+
+        // Check tutorial is set as expected when it was null.
+        $this->framework->setLibraryTutorialUrl($lib3->machinename, $url);
+
+        $libraries = $DB->get_records('h5p_libraries');
+        $this->assertEquals($libraries[$lib3->id]->tutorial, $url);
+        $this->assertNull($libraries[$lib1->id]->tutorial);
+        $this->assertEquals($libraries[$lib2->id]->tutorial, 'http://tutorial2.org');
     }
 
     /**
@@ -1460,8 +1509,8 @@ class framework_testcase extends \advanced_testcase {
         // Get the semantics of 'Library1' from the DB.
         $currentsemantics = $DB->get_field('h5p_libraries', 'semantics', array('id' => $library1->id));
 
-        // The semantics for Library1 should be successfully updated.
-        $this->assertEquals(json_encode($updatedsemantics), $currentsemantics);
+        // The semantics for Library1 shouldn't be updated.
+        $this->assertEquals($semantics, $currentsemantics);
     }
 
     /**
@@ -1612,8 +1661,16 @@ class framework_testcase extends \advanced_testcase {
             'libraryMinorVersion' => $mainlibrary->minorversion,
             'libraryEmbedTypes' => $mainlibrary->embedtypes,
             'libraryFullscreen' => $mainlibrary->fullscreen,
-            'metadata' => ''
+            'metadata' => '',
+            'pathnamehash' => $h5p->pathnamehash
         );
+
+        $params = json_decode($h5p->jsoncontent);
+        if (empty($params->metadata)) {
+            $params->metadata = new \stdClass();
+        }
+        $expected['metadata'] = $params->metadata;
+        $expected['params'] = json_encode($params->params ?? $params);
 
         // The returned content should match the expected array.
         $this->assertEquals($expected, $content);

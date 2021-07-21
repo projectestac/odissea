@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'de', version '3.8'.
+ * Strings for component 'report_performance', language 'de', version '3.11'.
  *
  * @package     report_performance
  * @category    string
@@ -29,7 +29,7 @@ $string['check_backup'] = 'Automatische Sicherung';
 $string['check_backup_comment_disable'] = 'Die Leistung kann während des Sicherungsvorgangs beeinträchtigt sein. Wenn die Option aktiviert ist, sollten die Sicherungen in verkehrarmen Zeiten eingeplant werden.';
 $string['check_backup_comment_enable'] = 'Die Leistung kann während des Sicherungsvorgangs beeinträchtigt sein. Die Sicherungen sollten in verkehrarmen Zeiten eingeplant werden.';
 $string['check_backup_details'] = 'Wenn automatische Sicherungen aktiviert sind, werden zum angegebenen Zeitpunkt automatisch von allen Kursen Sicherungen angelegt. Während dieses Vorgangs werden Serverressourcen benötigt und die Leistung beeinträchtigt.';
-$string['check_cachejs_comment_disable'] = 'Wenn aktiviert, wird die Leistung zum Laden der Seite verbessert.';
+$string['check_cachejs_comment_disable'] = 'Wenn diese Option aktiviert ist, wird die Leistung zum Laden der Seite verbessert.';
 $string['check_cachejs_comment_enable'] = 'Wenn deaktiviert, kann die Seite langsam laden.';
 $string['check_cachejs_details'] = 'Javascript Caching und Kompression kann die Leistung beim Laden der Seite positiv beeinflussen. Für produktive Seiten wird dies empfohlen.';
 $string['check_debugmsg_comment_developer'] = 'Bei einem anderen Wert als DEVELOPER kann die Leistung geringfügig verbessert werden.';
@@ -38,8 +38,8 @@ $string['check_debugmsg_details'] = 'Wenn Sie kein Entwickler sind, gibt es eige
 $string['check_enablestats_comment_disable'] = 'Statistische Berechnungen können die Leistung beeinflussen. Die Einstellungen sollten daher mit Vorsicht vorgenommen werden.';
 $string['check_enablestats_comment_enable'] = 'Statistische Berechnungen können die Leistung beeinflussen. Die Einstellungen sollten daher mit Vorsicht vorgenommen werden.';
 $string['check_enablestats_details'] = 'Die Aktivierung dieser Option führt dazu, dass bei der Abarbeitung des Cron-Jobs die Logdaten ausgewertet werden, um statistische Auswertungen zu erstellen.Je nachdem wie viel Betrieb auf Ihrer Plattform ist, kann dies einige Zeit in Ansprucch nehmen.<p>Während des Prozesses werden mehr Serverressourcen in Anspruch genommen. Dies kann die Leistung beeinflussen.</p>';
-$string['check_themedesignermode_comment_disable'] = 'Wenn aktiviert, werden Bilder und Style Sheets nicht gecacht. Das führt zu spürbaren Leistungseinbussen.';
-$string['check_themedesignermode_comment_enable'] = 'Wenn aktiviert, werden Bilder und Style Sheets gecacht. Das führt zu spürbaren Leistungsverbesserungen.';
+$string['check_themedesignermode_comment_disable'] = 'Wenn diese Option aktiviert ist, werden Bilder und Style Sheets nicht gecacht. Das führt zu spürbaren Leistungseinbußen.';
+$string['check_themedesignermode_comment_enable'] = 'Wenn diese Option aktiviert ist, werden Bilder und Style Sheets gecacht. Das führt zu spürbaren Leistungsverbesserungen.';
 $string['check_themedesignermode_details'] = 'Dies ist bei langsamen Moodle-Sites oft der Fall.<p>Durchschnittlich erfordert die Aktivierung des Designer-Modus die doppelte CPU-Kraft wie der sonstige Betrieb.</p>';
 $string['comments'] = 'Kommentare';
 $string['disabled'] = 'Deaktiviert';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'ru', version '3.8'.
+ * Strings for component 'tool_lp', language 'ru', version '3.11'.
  *
  * @package     tool_lp
  * @category    string
@@ -146,9 +146,11 @@ $string['myplans'] = 'Мои учебные планы';
 $string['nfiles'] = 'файлов - {$a}';
 $string['noactivities'] = 'Нет элементов';
 $string['nocompetencies'] = 'Нет компетенций, созданных в этом фреймворке.';
+$string['nocompetenciesinactivity'] = 'Никакие компетентности не  связаны с этим активным элементом или ресурсом.';
 $string['nocompetenciesincourse'] = 'Нет компетенций, связанных с этим курсом.';
 $string['nocompetenciesinevidence'] = 'Нет компетенций, связанных с этим доказательством.';
 $string['nocompetenciesinlearningplan'] = 'Нет компетенций, связанных с этим учебным планом.';
+$string['nocompetenciesinlist'] = 'Компетентности не выбраны.';
 $string['nocompetenciesintemplate'] = 'Нет компетенций, связанных с этим шаблоном учебного плана.';
 $string['nocompetencyframeworks'] = 'Пока нет созданных фреймворков компетенций.';
 $string['nocompetencyselected'] = 'Нет выбранных компетенций';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_jabber', language 'ru', version '3.8'.
+ * Strings for component 'message_jabber', language 'ru', version '3.11'.
  *
  * @package     message_jabber
  * @category    string
@@ -38,3 +38,8 @@ $string['jabberserver'] = 'Имя сервера Jabber';
 $string['jabberusername'] = 'Логин Jabber';
 $string['notconfigured'] = 'Сервер Jabber не был настроен, поэтому невозможно отправлять сообщения через Jabber';
 $string['pluginname'] = 'Сообщение Jabber';
+$string['privacy:metadata:contexturl'] = 'URL-адрес просмотра события.';
+$string['privacy:metadata:externalpurpose'] = 'Эта информация отправляется на внешний сервер Jabber для последующей доставки получателю в виде уведомления.';
+$string['privacy:metadata:smallmessage'] = 'Раздел сообщения.';
+$string['privacy:metadata:userfrom'] = 'Пользователь, отправивший уведомление.';
+$string['privacy:metadata:userto'] = 'Получатель уведомления.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ca', version '3.8'.
+ * Strings for component 'availability', language 'ca', version '3.11'.
  *
  * @package     availability
  * @category    string
@@ -46,10 +46,10 @@ $string['list_and'] = 'Totes:';
 $string['list_and_hidden'] = 'Totes (altrament queda ocult):';
 $string['list_or'] = 'Qualsevol:';
 $string['list_or_hidden'] = 'Qualsevol (altrament queda ocult):';
-$string['list_root_and'] = 'No disponible llevat que:';
-$string['list_root_and_hidden'] = 'No disponible (ocult) llevat que:';
-$string['list_root_or'] = 'No disponible llevat que qualsevol de:';
-$string['list_root_or_hidden'] = 'No disponible (ocult) llevat que qualsevol de:';
+$string['list_root_and'] = 'No disponible llevat que es donin totes les condicions següents:';
+$string['list_root_and_hidden'] = 'No disponible (i ocult) llevat que es donin totes les condicions següents:';
+$string['list_root_or'] = 'No disponible llevat que es doni qualsevol de les condicions següents:';
+$string['list_root_or_hidden'] = 'No disponible (i ocult) llevat que es doni qualsevol de les condicions següents:';
 $string['listheader_multi_after'] = 'les següents';
 $string['listheader_multi_and'] = 'totes';
 $string['listheader_multi_before'] = 'concordi amb';

@@ -24,13 +24,12 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2015.06.05 @pferre22
+// XTEC ************ AFEGIT - Allow access only to xtecadmin user
+// 2015.06.05 @pferre22
 if (!get_protected_agora()) {
     return;
 }
-//************ FI
-
+// ************ FI
 
 if ($ADMIN->fulltree) {
     $item = new admin_setting_heading('filter_mathjaxloader/localinstall',
@@ -41,7 +40,7 @@ if ($ADMIN->fulltree) {
     $item = new admin_setting_configtext('filter_mathjaxloader/httpsurl',
                                          new lang_string('httpsurl', 'filter_mathjaxloader'),
                                          new lang_string('httpsurl_help', 'filter_mathjaxloader'),
-                                         'https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js',
+                                         'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
                                          PARAM_RAW);
     $settings->add($item);
 

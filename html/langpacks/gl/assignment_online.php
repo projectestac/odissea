@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_online', language 'gl', version '3.8'.
+ * Strings for component 'assignment_online', language 'gl', version '3.11'.
  *
  * @package     assignment_online
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = 'Foi enviado un texto en liña.';
 $string['pluginname'] = 'En liña';
-$string['privacy:metadata'] = 'O engadido de tarefas en liña non almacena ningunha información persoal.';
+$string['privacy:metadata'] = 'O engadido de Tarefas en liña non almacena ningunha información persoal.';

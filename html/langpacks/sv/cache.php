@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'sv', version '3.8'.
+ * Strings for component 'cache', language 'sv', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -34,13 +34,16 @@ $string['addstoresuccess'] = 'Lade till nytt {$a}-arkiv.';
 $string['area'] = 'Område';
 $string['cacheadmin'] = 'Hantera cachning';
 $string['cacheconfig'] = 'Konfiguration';
-$string['cachedef_calculablesinfo'] = 'Beräkningsbar information';
+$string['cachedef_calculablesinfo'] = 'Beräkningsbar information för analysfunktioner';
 $string['cachedef_calendar_categories'] = 'Kalenderkurskategorier en användare kan komma åt';
 $string['cachedef_calendar_subscriptions'] = 'Kalenderprenumerationer';
 $string['cachedef_capabilities'] = 'Funktionsbehörigheter';
 $string['cachedef_completion'] = 'Status för aktivitetsslutförande';
 $string['cachedef_config'] = 'Konfigurationsinställningar';
+$string['cachedef_contentbank_context_extensions'] = 'Tillåtna tillägg samt deras stödpluginmoduler i ett innehållsbankskontext';
+$string['cachedef_contentbank_enabled_extensions'] = 'Tillåtna tillägg samt deras stödpluginmoduler i innehållsbanken';
 $string['cachedef_contextwithinsights'] = 'Kontext med insikter';
+$string['cachedef_course_image'] = 'Kursbilder';
 $string['cachedef_course_user_dates'] = 'Användardatum i kurser som använder relativa datum';
 $string['cachedef_coursecat'] = 'Kurskategorilistor för specifik användare';
 $string['cachedef_coursecatrecords'] = 'Kurskategoriposter';
@@ -54,9 +57,13 @@ $string['cachedef_externalbadges'] = 'Externa märken för en särskild använda
 $string['cachedef_fontawesomeiconmapping'] = 'Ikonmappning för awesome-fonter';
 $string['cachedef_grade_categories'] = 'Betygskategori-frågor';
 $string['cachedef_grade_letters'] = 'Betygbokstavs-frågor';
+$string['cachedef_gradesetting'] = 'Kursbetygsinställning';
 $string['cachedef_groupdata'] = 'Kursgruppsinformation';
+$string['cachedef_h5p_content_type_translations'] = 'H5P-innehållsbibliotek översättningar';
+$string['cachedef_h5p_library_files'] = 'H5P-biblioteksfiler';
 $string['cachedef_htmlpurifier'] = 'HTML-rensare, rensat innehåll';
 $string['cachedef_langmenu'] = 'Lista med tillgängliga språk';
+$string['cachedef_license'] = 'Licenser';
 $string['cachedef_locking'] = 'Låsning';
 $string['cachedef_message_processors_enabled'] = 'Aktiveringsstatus för meddelandehanterare';
 $string['cachedef_message_time_last_message_between_users'] = 'Tidpunkt för senast skapade meddelandet i en konversation';
@@ -69,6 +76,7 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'Portföljinstans
 $string['cachedef_postprocessedcss'] = 'Efterbearbetad CSS';
 $string['cachedef_presignup'] = 'Förhandsregistreringsdata för specifik oregistrerad användare';
 $string['cachedef_questiondata'] = 'Frågedefinitioner';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'Rekommendation av kursinnehållsobjekt';
 $string['cachedef_repositories'] = 'Instansdata på lagringsplatser';
 $string['cachedef_roledefs'] = 'Rolldefinitioner';
 $string['cachedef_string'] = 'Språksträngscache';
@@ -76,6 +84,8 @@ $string['cachedef_suspended_userids'] = 'Avstängda användare per kurs';
 $string['cachedef_tagindexbuilder'] = 'Sökresultat för etiketterade objekt';
 $string['cachedef_tags'] = 'Etikettsamlingar och områden';
 $string['cachedef_temp_tables'] = 'Temporär tabellcache';
+$string['cachedef_user_course_content_items'] = 'Användarens innehållsobjekt (aktiviteter, resurser samt deras undertyper) per kurs';
+$string['cachedef_user_favourite_course_content_items'] = 'Användarens favoritmärkta objekt';
 $string['cachedef_user_group_groupings'] = 'Användarens gruppindelningar och grupper per kurs';
 $string['cachedef_userselections'] = 'Data som används för att lagra användarval över hela Moodle';
 $string['cachedef_yuimodules'] = 'Definitioner för YUI modul';
@@ -195,4 +205,4 @@ $string['testperformance'] = 'Testa prestanda';
 $string['unsupportedmode'] = 'Läget stöds inte';
 $string['untestable'] = 'Går inte att testa';
 $string['userinputsharingkey'] = 'Anpassad delningsnyckel';
-$string['userinputsharingkey_help'] = 'Ange din egen privata nyckel här. När du ställer in andra lagringsplatser på andra webbplatser du vill dela data med se till att du ställer in exakt samma nyckel där.';
+$string['userinputsharingkey_help'] = 'Ange din egen privata nyckel här. När du ställer in andra lagringsplatser på andra webbplatser du vill dela data med, se till att du ställer in exakt samma nyckel där.';

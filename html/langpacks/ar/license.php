@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'ar', version '3.8'.
+ * Strings for component 'license', language 'ar', version '3.11'.
  *
  * @package     license
  * @category    string
@@ -26,11 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allrightsreserved'] = 'جميع الحقوق محفوظة';
+$string['cannotdeletecore'] = 'يتعذر حذف رخصة قياسية';
+$string['cannotdeletelicenseinuse'] = 'يتعذر حذف الرخصة كونها معينة حالياً إلى ملف واحد أو أكثر';
 $string['cc'] = 'مشاع إبداعي';
 $string['cc-nc'] = 'مشاع إبداعي - غير تجاري';
 $string['cc-nc-nd'] = 'مشاع إبداعي - غير تجاري طبق الأصل';
 $string['cc-nc-sa'] = 'مشاع إبداعي - غير تجاري نفس الشروط';
 $string['cc-nd'] = 'مشاع إبداعي - طبق الأصل';
 $string['cc-sa'] = 'مشاع إبداعي - نفس الشروط';
+$string['licensenotfoundshortname'] = 'يتعذر العثور على رخصة بالاسم المختصر \'{$a}\'';
+$string['missinglicensesortorder'] = 'تعذر تحديد ترتيب الرخصة؛ هناك رخصة منصبة أو أكثر مفقودة من الترتيب الجديد.';
 $string['public'] = 'مجال عمومي';
-$string['unknown'] = 'غير ذلك';
+$string['unknown'] = 'الرخصة غير محددة';

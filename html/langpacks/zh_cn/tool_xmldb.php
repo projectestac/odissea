@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'zh_cn', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'zh_cn', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -145,7 +145,6 @@ $string['newtable'] = '创建新表';
 $string['newtablefrommysql'] = '从 MySQL 建新表';
 $string['nofieldsspecified'] = '未指定任何字段';
 $string['nomasterprimaryuniquefound'] = '您的外键对应的字段必须是对应表中的主键或唯一键。注意，字段只是UNIQUE INDEX是不够的。';
-$string['nomissingindexesfound'] = '未发现缺失的索引，您的数据库不需要做任何操作。';
 $string['noreffieldsspecified'] = '为指定任何对应字段';
 $string['noreftablespecified'] = '未找到对应字段';
 $string['noviolatedforeignkeysfound'] = '未发现无效的外键';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'nl', version '3.8'.
+ * Strings for component 'enrol_self', language 'nl', version '3.11'.
  *
  * @package     enrol_self
  * @category    string
@@ -102,6 +102,7 @@ $string['requirepassword'] = 'Aanmeldingssleutel vereist';
 $string['requirepassword_desc'] = 'Vereis aanmeldingssleutel voor nieuwe cursussen en verhinder het verwijderen van de sleutel bij bestaande cursussen';
 $string['role'] = 'Standaard toegewezen rol';
 $string['self:config'] = 'Beheer zelf aanmeldingsexemplaren';
+$string['self:enrolself'] = 'Zelf inschrijven in de cursus';
 $string['self:holdkey'] = 'Verschijnt als de houder van de aanmeldingssleutel';
 $string['self:manage'] = 'Beheer aangemelde gebruikers';
 $string['self:unenrol'] = 'Gebruikers afmelden van de cursus';

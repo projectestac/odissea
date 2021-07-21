@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ar', version '3.8'.
+ * Strings for component 'install', language 'ar', version '3.11'.
  *
  * @package     install
  * @category    string
@@ -80,7 +80,7 @@ $string['datarooterror'] = 'تعذر العثور على \'مجلد البيان
 $string['datarootpermission'] = 'صلاحيات مجلدات البيانات';
 $string['datarootpublicerror'] = 'إن \'مجلد البيانات\' الذي حددته يمكن الوصول إليه مباشرة عبر الويب. عليك استعمال مجلد آخر.';
 $string['dbconnectionerror'] = 'لم يتم التوصيل بقاعدة البيانات المحددة. تأكد من إعدادات قاعدة البيانات.';
-$string['dbcreationerror'] = 'خطأ في إنشاء قاعدة البيانات. لم يتم إنشاء قاعدة البيانات المسماه في الإعدادات المعطاه.';
+$string['dbcreationerror'] = 'خطأ عند إنشاء قاعدة البيانات. تعذر إنشاء قاعدة البيانات بالاسم المحدد بالإعدادات المعطاة.';
 $string['dbhost'] = 'المخدم المضيف';
 $string['dbpass'] = 'كلمة المرور';
 $string['dbport'] = 'المنفذ';
@@ -175,6 +175,12 @@ $string['memorylimithelp'] = '<p>إن حد استعمال الذاكرة لـ PH
     (ستشاهد أخطاءً عند النظر إلى الصفحات) مما يحتم عليك إزالة ملف .htaccess.</p></li>
 </ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'لم يتم تعريف PHP بشكل صحيح مع امتداد MySQLi للعمل معه على الاتصال مع MySQL. لطفاً، تحقق من ملف php.ini عندك أو أعد تجميع PHP.';
+$string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
+$string['nativeauroramysqlhelp'] = '<p>إن قاعدة البيانات هي الموضع الذي تخزن فيه معظم إعدادات مودل وبياناته وينبغي تهيئتها هنا.</p>
+<p>إن حقول: اسم قاعدة البيانات، اسم المستخدم، وكلمة المرور هي حقول إجبارية؛ بادئة الجداول هو حقل إختياري.</p>
+<p>اسم قاعدة البيانات له أن يتضمن حروفاً وأرقاماً لاتينية، علامة الدولار ($)، والخطوط التحتانية (_).</p>
+<p>إن كانت قاعدة البيانات غير موجودة حالياً، والمستخدم الذي حددته يمتلك الصلاحية، سيحاول مودل إنشاء قاعدة بيانات جديدة ذات صلاحيات وإعدادات صحيحة.</p>
+<p>إن المشغل غير متوافق مع محرك MyISAM القديم.</p>';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>إن قاعدة البيانات هي الموضع الذي تخزن فيه معظم إعدادات مودل وبياناته وينبغي تهيئتها هنا.</p>
 <p>إن حقول: اسم قاعدة البيانات، اسم المستخدم، وكلمة المرور هي حقول إجبارية؛ بادئة الجداول هو حقل إختياري.</p>

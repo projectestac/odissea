@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_configlog', language 'ca', version '3.8'.
+ * Strings for component 'report_configlog', language 'ca', version '3.11'.
  *
  * @package     report_configlog
  * @category    string
@@ -30,3 +30,5 @@ $string['plugin'] = 'Connector';
 $string['pluginname'] = 'Canvis de la configuració';
 $string['setting'] = 'Paràmetre';
 $string['timemodified'] = 'Data';
+$string['valuenew'] = 'Valor nou';
+$string['valueold'] = 'Valor originals';

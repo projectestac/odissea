@@ -18,16 +18,17 @@
  * submitted, unless that submission results in an error/cancelling the submit.
  *
  * @module core_form/submit
- * @package core_form
  * @copyright 2019 The Open University
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since 3.8
  */
 
-/** @type {number} ID for setInterval used when polling for download cookie */
+import {types} from 'core_form/events';
+
+/** @property {number} ID for setInterval used when polling for download cookie */
 let cookieListener = 0;
 
-/** @type {Array} Array of buttons that need re-enabling if we get a download cookie */
+/** @property {Array} Array of buttons that need re-enabling if we get a download cookie */
 const cookieListeningButtons = [];
 
 /**
@@ -85,6 +86,19 @@ const clearDownloadCookie = () => {
  */
 export const init = (elementId) => {
     const button = document.getElementById(elementId);
+
+    // Add event listener for file upload start.
+    document.addEventListener(types.uploadStarted, e => {
+        window.console.log(e.target); // This will be the element/section where the file is uploaded to.
+        button.disabled = true;
+    });
+
+    // Add event listener for file upload complete.
+    document.addEventListener(types.uploadCompleted, e => {
+        window.console.log(e.target); // This will be the element/section where the file is uploaded to.
+        button.disabled = false;
+    });
+
     // If the form has double submit protection disabled, do nothing.
     if (button.form.dataset.doubleSubmitProtection === 'off') {
         return;

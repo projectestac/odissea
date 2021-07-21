@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'eu', version '3.8'.
+ * Strings for component 'auth_ldap', language 'eu', version '3.11'.
  *
  * @package     auth_ldap
  * @category    string
@@ -64,7 +64,7 @@ $string['auth_ldap_memberattribute_key'] = 'Partaide-atributua';
 $string['auth_ldap_no_mbstring'] = 'mbstring hedapena behar duzu Active Directory-n erabiltzaileak sortzeko.';
 $string['auth_ldap_noconnect'] = 'LDAP modulua ezin da ondoko zerbitzariarekin konektatu: {$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAP modulua ezin da zerbitzarietako batekin ere konektatu: {$a}';
-$string['auth_ldap_noextension'] = '<em>Dirudienez PHPko LDAP modulua ez dago gaituta. Mesedez ziurtatu instalatuta eta gaituta dagoela autentifikazio plugin hau erabili nahi izanez gero.</em>';
+$string['auth_ldap_noextension'] = 'Dirudienez PHPko LDAP modulua ez dago gaituta. Mesedez ziurtatu autentifikazio plugin hau instalatuta eta gaituta dagoela erabili nahi izanez gero.';
 $string['auth_ldap_objectclass'] = 'Aukerakoa: ldap_user_type-n erabiltzaileak izendatzeko/bilatzeko erabilitako objectClass baliogabetzen du. Normalean ez duzu hau aldatu beharko.';
 $string['auth_ldap_objectclass_key'] = 'Objektu mota';
 $string['auth_ldap_opt_deref'] = 'Bilaketan zehar aliasak nola maneiatu zehazten du. Aukeratu balio hauetako bat: "Ez" (LDAP_DEREF_NEVER) edo "Bai" (LDAP_DEREF_ALWAYS)';
@@ -75,7 +75,7 @@ $string['auth_ldap_passwdexpire_settings'] = 'LDAP pasahitzaren iraungitze-ezarp
 $string['auth_ldap_preventpassindb'] = '\'Bai\' aukeratu pasahitzak Moodleko datu-basean ez gordetzeko.';
 $string['auth_ldap_preventpassindb_key'] = 'Galarazi pasahitzak cacheatzea';
 $string['auth_ldap_rolecontext'] = '{$a->localname} testuingurua';
-$string['auth_ldap_rolecontext_help'] = '<i>{$a->localname}</i> parekatzeko erabilitako LDAP testuingurua. Talde anitz badago \';\' erabili banatzeko. Normalean honen moduko zerbait: "cn={$a->shortname},ou=langileak,o=erakundea".';
+$string['auth_ldap_rolecontext_help'] = '<i>{$a->localname}</i> parekatzeko erabilitako LDAP testuingurua. Talde anitz badago \';\' erabili banatzeko. Normalean honen moduko zerbait: "cn={$a->shortname},ou=lehen-oua-rol-taldeekin,o=nireerakundea; cn={$a->shortname},ou=bigarren-oua-rol-taldeekin,o=nireerakundea".';
 $string['auth_ldap_search_sub'] = 'Bilatu erabiltzaileak azpitestuinguruetan.';
 $string['auth_ldap_search_sub_key'] = 'Bilatu azpitestuinguruetan';
 $string['auth_ldap_server_settings'] = 'LDAP zerbitzariaren ezarpenak';
@@ -157,7 +157,7 @@ $string['updatepasserrorexpire'] = 'Errorea gertatu da user_update_password() fu
 $string['updatepasserrorexpiregrace'] = 'Errorea user_update_password()-en pasahitzaren iraungitze-data edota graziazko sarrerak aldatzean. Errore-kodea: {$a->errno}; Errorearen mezua: {$a->errstring}';
 $string['updateremfail'] = 'Errorea LDAP erregistroa eguneratzean. Errore-kodea: {$a->errno}; Errorearen mezua: {$a->errstring}<br/>({$a->key}) giltza - Moodleko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';
 $string['updateremfailamb'] = 'Errorea gertatu da LDAP eguneratzean {$a->key} eremu anbiguoarekin; Moodleko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';
-$string['updateremfailfield'] = 'LDAP existitzen ez den eremuarekin eguneratzeak huts egin du (\'{$a->ldapkey}\'). Gakoa ({$a->key}) - Moodle-ko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';
+$string['updateremfailfield'] = 'LDAP existitzen ez den eremuarekin eguneratzeak huts egin du (\'{$a->ldapkey}\'). Gakoa ({$a->key}) - Moodleko balio zaharra: \'{$a->ouvalue}\' balio berria: \'{$a->nuvalue}\'';
 $string['updateusernotfound'] = 'Ezin da erabiltzailea aurkitu kanpotik eguneratzean. Xehetasunak jarraian: bilaketaren oinarria: \'{$a->userdn}\'; bilaketa-iragazkia \'(objectClass=*)\'; bilaketa-atributuak: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: LDAPeko user_activate()-ek ez du erabiltzaile mota hau onartzen: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: LDAPeko user_activate()-ek ez du erabiltzaile mota hau onartzen: {$a}';

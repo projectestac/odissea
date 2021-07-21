@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ja', version '3.8'.
+ * Strings for component 'quiz', language 'ja', version '3.11'.
  *
  * @package     quiz
  * @category    string
@@ -133,6 +133,7 @@ $string['browsersecurity_help'] = 'JavaScriptセキュリティ対策を含む�
 * 学生がJavaScriptの利用を有効にしているブラウザのみ小テスト受験を開始することができます。
 * 小テストはフルスクリーンのポップアップウィンドウ上に表示されナビゲーションコントロールはありません。
 * 可能な範囲でコピー&ペーストのような機能を学生が使用できないようにします。';
+$string['cachedef_overrides'] = 'ユーザおよびグループオーバーライド情報';
 $string['calculated'] = '計算問題';
 $string['calculatedquestion'] = '{$a} 行の計算問題はサポートされていません。問題は無視されます。';
 $string['cannotcreatepath'] = 'パス ({$a}) を作成できません。';
@@ -184,9 +185,17 @@ $string['completedon'] = '完了日時';
 $string['completionattemptsexhausted'] = 'または利用可能な受験すべてが完了した場合';
 $string['completionattemptsexhausted_help'] = '学生が最大受験数を満たした場合、小テストを完了したとマークします。';
 $string['completionattemptsexhausteddesc'] = 'すべての利用可能な受験を利用した場合、完了にする';
+$string['completiondetail:minattempts'] = '受験する: {$a}';
+$string['completiondetail:passgrade'] = '合格点を獲得する';
+$string['completiondetail:passorexhaust'] = '合格点を獲得するか、受験可能なすべての受験を完了する';
+$string['completionminattempts'] = '最少受験数:';
+$string['completionminattemptsdesc'] = '必要最低受験回数: {$a}';
+$string['completionminattemptserror'] = '最小受験数は受験可能回数と等しいか少なくする必要があります。';
+$string['completionminattemptsgroup'] = '受験を必要とする';
 $string['completionpass'] = '合格点を必要とする';
 $string['completionpass_help'] = 'この設定を有効にした場合、学生が合格点 (小テスト設定の評点セクションで指定) またはそれ以上を取得することによりこの活動は完了したとみなされます。';
 $string['completionpassdesc'] = 'この活動を完了するには学生は合格点に到達する必要があります。';
+$string['completionpassorattemptsexhausteddesc'] = '学生は合格点に達するか、この活動を完了するための利用可能なすべての受験回数を使い切る必要があります。';
 $string['configadaptive'] = 'あなたがこのオプションを有効にした場合、同じ小テスト内の受験であっても学生は問題の複数回解答を許可されます。';
 $string['configattemptsallowed'] = '小テストで学生が許可される受験回数の制限です。';
 $string['configdecimaldigits'] = '評定を表示する場合、小数点以下に表示される評点の桁数を設定します。';
@@ -405,6 +414,7 @@ $string['gradesdeleted'] = '小テストの評定が削除されました。';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}';
 $string['gradetopassmustbeset'] = 'この小テストには完了方法に「合格点を必要とする」が設定されているため合格点をゼロにすることはできません。ゼロ以外の値を設定してください。';
 $string['gradetopassnotset'] = 'この小テストには合格点が設定されていません。小テスト設定の評点セクションで設定することができます。';
+$string['gradetopassoutof'] = '合格点: {$a->grade} / {$a->maxgrade}';
 $string['gradingdetails'] = 'この解答の評点: {$a->raw}/{$a->max}';
 $string['gradingdetailsadjustment'] = '前のペナルティにより <strong>{$a->cur}/{$a->max}</strong> に調整されます。';
 $string['gradingdetailspenalty'] = 'この解答のペナルティ: {$a}';
@@ -486,7 +496,7 @@ $string['max'] = '最大';
 $string['maxmark'] = '最大評点';
 $string['messageprovider:attempt_overdue'] = 'あなたの小テスト受験が期限切れとなった場合の警告';
 $string['messageprovider:confirmation'] = 'あなた自身の小テスト送信確認';
-$string['messageprovider:submission'] = '小テスト送信通知';
+$string['messageprovider:submission'] = 'あなたの学生の小テスト送信の通知';
 $string['min'] = '最小';
 $string['minutes'] = '分';
 $string['missingcorrectanswer'] = '正しい答えを指定してください。';
@@ -607,6 +617,14 @@ $string['overridedeleteusersure'] = '本当にユーザ {$a} のオーバーラ�
 $string['overridegroup'] = 'グループをオーバーライドする';
 $string['overridegroupeventname'] = '{$a->quiz} - {$a->group}';
 $string['overrides'] = 'オーバーライド';
+$string['overridesforquiz'] = '設定オーバーライド: {$a}';
+$string['overridesnoneforgroups'] = 'この小テストのグループ設定オーバーライドは作成されていません。';
+$string['overridesnoneforusers'] = 'この小テストのユーザ設定オーバーライドは作成されていません。';
+$string['overridessummary'] = '既存の設定オーバーライド ({$a})';
+$string['overridessummarygroup'] = 'グループ: {$a}';
+$string['overridessummarythisgroup'] = 'このグループの設定オーバーライド ({$a}) が存在します。';
+$string['overridessummaryuser'] = 'ユーザ: {$a}';
+$string['overridessummaryyourgroups'] = 'あなたのグループの設定オーバーライド ({$a}) が存在します。';
 $string['overrideuser'] = 'ユーザをオーバーライドする';
 $string['overrideusereventname'] = '{$a->quiz} - オーバーライド';
 $string['page-mod-quiz-attempt'] = '小テスト受験ページ';
@@ -702,39 +720,41 @@ $string['questiontypesetupoptions'] = '問題タイプのオプション設定:'
 $string['quiz:addinstance'] = '新しい小テストを追加する';
 $string['quiz:attempt'] = '小テストを受験する';
 $string['quiz:deleteattempts'] = '小テストの受験結果を削除する';
-$string['quiz:emailconfirmsubmission'] = '解答を送信した旨の確認メールを受信する';
-$string['quiz:emailnotifysubmission'] = '解答が送信された旨の通知メールを受信する';
-$string['quiz:emailwarnoverdue'] = '受験が制限時間に達して送信する必要がある場合、通知メッセージを取得します。';
+$string['quiz:emailconfirmsubmission'] = '自分の小テスト送信の確認を受信する';
+$string['quiz:emailnotifysubmission'] = 'あなたの学生の小テスト送信の通知を受信する';
+$string['quiz:emailwarnoverdue'] = 'あなたの小テスト受験が期限切れになった場合に警告を受信する';
 $string['quiz:grade'] = '小テストを手動評定する';
 $string['quiz:ignoretimelimits'] = '小テストの制限時間を無視する';
 $string['quiz:manage'] = '小テストを管理する';
-$string['quiz:manageoverrides'] = '小テストのオーバーライドを管理する';
+$string['quiz:manageoverrides'] = '小テスト設定オーバーライドを管理する';
 $string['quiz:preview'] = '小テストをプレビューする';
 $string['quiz:regrade'] = '小テストの受験を再評定する';
 $string['quiz:reviewmyattempts'] = 'あなた自身の受験をレビューする';
 $string['quiz:view'] = '小テスト情報を表示する';
+$string['quiz:viewoverrides'] = '小テスト設定オーバーライドを表示する';
 $string['quiz:viewreports'] = '小テストレポートを表示する';
 $string['quizavailable'] = '小テストは {$a} まで利用できます。';
-$string['quizclose'] = '小テスト終了日時';
-$string['quizclosed'] = 'この小テストは {$a} に終了しました。';
-$string['quizcloses'] = '終了日時';
-$string['quizcloseson'] = 'この小テストは {$a} に終了します。';
-$string['quizeventcloses'] = '{$a} 終了';
-$string['quizeventopens'] = '{$a} 開始';
+$string['quizclose'] = '小テスト受験可能期間の終了日時';
+$string['quizclosed'] = 'この小テストは {$a} に受験可能期間が終了しました。';
+$string['quizcloses'] = '受験可能期間の終了日時';
+$string['quizcloseson'] = 'この小テストの受験可能期間は {$a} に終了します。';
+$string['quizeventcloses'] = '{$a} の受験可能期間の終了';
+$string['quizeventopens'] = '{$a} の受験可能期間の開始';
 $string['quizisclosed'] = 'この小テストは終了しています。';
 $string['quizisclosedwillopen'] = '小テスト終了 (公開 {$a})';
 $string['quizisopen'] = 'この小テストは公開されています。';
 $string['quizisopenwillclose'] = '小テスト公開中 (終了 {$a})';
 $string['quiznavigation'] = '小テストナビゲーション';
-$string['quizopen'] = '小テスト公開日時';
-$string['quizopenclose'] = '公開および終了日時';
-$string['quizopenclose_help'] = '学生は公開日時以後のみ受験を開始することができます。また、終了日時の前に受験を完了する必要があります。';
-$string['quizopened'] = 'この小テストは公開されています。';
-$string['quizopenedon'] = 'この小テストは {$a} に公開されます。';
-$string['quizopens'] = '公開日時';
-$string['quizopenwillclose'] = 'この小テストは公開中です。{$a} に終了します。';
+$string['quizopen'] = '小テスト受験可能期間の開始日時';
+$string['quizopenclose'] = '受験可能期間の開始および終了日時';
+$string['quizopenclose_help'] = '学生は受験可能期間の開始後のみ受験を開始することができます。また、受験可能期間の終了日時の前に受験を完了する必要があります。';
+$string['quizopened'] = 'この小テストは受験可能です。';
+$string['quizopenedon'] = 'この小テストは {$a} から受験可能となりました。';
+$string['quizopens'] = '受験可能期間の開始日時';
+$string['quizopenwillclose'] = 'この小テストは受験可能です。{$a} に受験可能期間が終了します。';
 $string['quizordernotrandom'] = '小テスト順はシャッフルされません。';
 $string['quizorderrandom'] = '* 小テスト順はシャッフルされます。';
+$string['quizreport'] = '小テストレポート';
 $string['quizsettings'] = '小テスト設定';
 $string['quiztimer'] = '小テストタイマー';
 $string['quizwillopen'] = 'この小テストは {$a} に公開されます。';

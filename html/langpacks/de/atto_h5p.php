@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'de', version '3.8'.
+ * Strings for component 'atto_h5p', language 'de', version '3.11'.
  *
  * @package     atto_h5p
  * @category    string
@@ -37,7 +37,7 @@ $string['h5pfileorurl'] = 'H5P-URL oder H5P-Datei hochladen';
 $string['h5poptions'] = 'H5P-Optionen';
 $string['h5pproperties'] = 'H5P-Eigenschaften';
 $string['h5purl'] = 'H5P-URL';
-$string['instructions'] = 'Sie können H5P-Inhalte einfügen, indem Sie <strong>entweder</strong> eine H5P-URL angeben <strong>oder</strong> indem Sie eine H5P-Datei hochladen.';
+$string['instructions'] = 'Sie können H5P-Inhalte einfügen, indem Sie <strong>entweder</strong> eine H5P-URL angeben oder <strong>oder</strong> indem Sie eine H5P-Datei hochladen.';
 $string['invalidh5purl'] = 'Ungültige H5P-URL';
 $string['noh5pcontent'] = 'Kein H5P-Inhalt hinzugefügt';
 $string['or'] = 'oder';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ja', version '3.8'.
+ * Strings for component 'feedback', language 'ja', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -41,8 +41,8 @@ $string['autonumbering'] = '問題の自動番号付け';
 $string['autonumbering_help'] = 'それぞれの質問の自動ナンバリングを有効または無効にします。';
 $string['average'] = '平均';
 $string['bold'] = '太字';
-$string['calendarend'] = '{$a} 終了';
-$string['calendarstart'] = '{$a} 開始';
+$string['calendarend'] = '「{$a}」終了';
+$string['calendarstart'] = '「{$a}」開始';
 $string['cannotaccess'] = 'あなたはこのフィードバックにコースからのみアクセスすることができます。';
 $string['cannotsavetempl'] = 'テンプレートの保存は許可されていません。';
 $string['captcha'] = 'Captcha';
@@ -57,6 +57,7 @@ $string['complete_the_form'] = '質問に回答する';
 $string['completed'] = '完了';
 $string['completed_feedbacks'] = '送信済み回答';
 $string['completedon'] = '終了日時: {$a}';
+$string['completiondetail:submit'] = 'フィードバックを送信する';
 $string['completionsubmit'] = 'フィードバックが送信された場合、完了として表示する';
 $string['configallowfullanonymous'] = 'この設定を有効にした場合、ログインを要求されせずにフィードバックを完了することができます。';
 $string['confirmdeleteentry'] = '本当にこのエントリを削除してもよろしいですか?';
@@ -263,7 +264,7 @@ $string['searchcourses'] = 'コースを検索する';
 $string['searchcourses_help'] = 'あなたがこのフィードバックに関連付けたいコースのコードまたは名称を検索してください。';
 $string['selected_dump'] = '選択された$SESSION変数のインデックスは以下にダンプされます:';
 $string['send'] = '送信';
-$string['send_message'] = 'メッセージを送信する';
+$string['send_message'] = '通知を送信する';
 $string['show_all'] = 'すべてを表示する';
 $string['show_analysepage_after_submit'] = '分析ページを表示する';
 $string['show_entries'] = '回答を表示する';

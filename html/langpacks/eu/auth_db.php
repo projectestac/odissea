@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'eu', version '3.8'.
+ * Strings for component 'auth_db', language 'eu', version '3.11'.
  *
  * @package     auth_db
  * @category    string
@@ -53,7 +53,7 @@ $string['auth_dbnoexttable'] = 'Ez da zehaztu kanpoko taula.';
 $string['auth_dbnouserfield'] = 'Ez da zehaztu erabiltzaile-eremua.';
 $string['auth_dbpass'] = 'Goiko erabiltzaile-izenarekin bat datorren pasahitza';
 $string['auth_dbpass_key'] = 'Pasahitza';
-$string['auth_dbpasstype'] = '<p>Pasahitzaren eremuak erabiltzen duen formatua zehaztu.</p> <p>Erabili \'barrukoa\' kanpo datu-baseak erabiltzaile eta helbide elektronikoak kudeatzea baina pasahitzak Moodlek kudeatzea nahi baduzu. \'Barrukoa\' erabiliz gero kanpo datu-baseko helbide elektronikoaren eremuan betetako helbide elektronikoa eman <i>beharko</i> duzu, eta admin/cron.php eta auth/db/cli/sync_users.php maiz exekutatu beharko dituzu. Moodlek erabiltzaile berriei e-mail bat bidaliko die behin-behineko pasahitz batekin.</p>';
+$string['auth_dbpasstype'] = '<p>Pasahitzaren eremuak erabiltzen duen formatua zehaztu.</p> <p>Erabili \'barrukoa\' kanpo datu-baseak erabiltzaile eta helbide elektronikoak kudeatzea baina pasahitzak Moodlek kudeatzea nahi baduzu. \'Barrukoa\' erabiliz gero kanpo datu-baseko helbide elektronikoaren eremuan betetako helbide elektronikoa eman beharko duzu, eta \\auth_db\\task\\sync_users programatutako ataza gaitu beharko duzu. Moodlek erabiltzaile berriei e-mail bat bidaliko die behin-behineko pasahitz batekin.</p>';
 $string['auth_dbpasstype_key'] = 'Pasahitzaren formatua';
 $string['auth_dbreviveduser'] = '{$a->name} id {$a->id} erabiltzailea berreskuratuta';
 $string['auth_dbrevivedusererror'] = 'Errorea {$a} erabiltzailea berreskuratzean';

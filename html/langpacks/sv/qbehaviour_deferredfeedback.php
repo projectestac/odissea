@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredfeedback', language 'sv', version '3.8'.
+ * Strings for component 'qbehaviour_deferredfeedback', language 'sv', version '3.11'.
  *
  * @package     qbehaviour_deferredfeedback
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fördröjd återkoppling';
+$string['privacy:metadata'] = 'Pluginmodulen Fördröjd återkoppling frågebeteende lagrar ingen personinformation.';

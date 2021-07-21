@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'fr', version '3.8'.
+ * Strings for component 'scorm', language 'fr', version '3.11'.
  *
  * @package     scorm
  * @category    string
@@ -84,6 +84,11 @@ $string['collapsetocwinsize'] = 'Replier la table des matières quand la taille 
 $string['collapsetocwinsizedesc'] = 'Ce réglage vous permet de spécifier la taille de fenêtre en dessous de laquelle la table des matières sera automatiquement repliée.';
 $string['compatibilitysettings'] = 'Réglages de compatibilité';
 $string['completed'] = 'Terminé';
+$string['completiondetail:allscos'] = 'Faire toutes les parties de cette activité';
+$string['completiondetail:completionscore'] = 'Obtenir un score minimal de {$a}';
+$string['completiondetail:completionstatuscompleted'] = 'Terminer l\'activité';
+$string['completiondetail:completionstatuscompletedandpassed'] = 'Terminer et réussir l\'activité';
+$string['completiondetail:completionstatuspassed'] = 'Réussir l\'activité';
 $string['completionscorerequired'] = 'Requiert un score minimal';
 $string['completionscorerequired_help'] = 'Si ce réglage est activé, le participant devra obtenir au moins le score indiqué pour que cette activité SCORM soit marquée comme terminée, en plus des autres conditions de complétion.';
 $string['completionscorerequireddesc'] = 'Un score minimum de {$a} est requis pour l\'achèvement';
@@ -377,7 +382,7 @@ $string['skipview_help'] = 'Ce réglage détermine si la structure du contenu es
 
 Notez que ce réglage n\'a d\'effet que pour les étudiants.';
 $string['skipviewdesc'] = 'Ce réglage détermine si la structure du contenu est par défaut cachée aux étudiants';
-$string['slashargs'] = 'ATTENTION ! Le réglage <i>slasharguments</i> est désactivé. Les objets SCORM ne fonctionneront pas correctement !';
+$string['slashargs'] = 'ATTENTION ! Le réglage <em>slasharguments</em> est désactivé. Les objets SCORM ne fonctionneront pas correctement !';
 $string['stagesize'] = 'Taille cadre/fenêtre';
 $string['stagesize_help'] = 'Ces deux paramètres déterminent les dimensions (hauteur et largeur) du cadre ou de la fenêtre de l\'objet d\'apprentissage.';
 $string['started'] = 'Démarré le';

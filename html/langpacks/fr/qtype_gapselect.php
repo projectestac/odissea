@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'fr', version '3.8'.
+ * Strings for component 'qtype_gapselect', language 'fr', version '3.11'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -44,7 +44,10 @@ $string['pluginname_link'] = 'question/type/gapselect';
 $string['pluginnameadding'] = 'Ajout d\'une question permettant de sélectionner le mot manquant';
 $string['pluginnameediting'] = 'Modification d\'une question permettant de sélectionner le mot manquant';
 $string['pluginnamesummary'] = 'Les mots manquants dans le texte de la question sont remplis par des menus déroulants.';
-$string['privacy:metadata'] = 'Le plugin de type de question Sélectionner les mots manquants n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de type de question Sélectionner les mots manquants permet aux auteurs de questions d\'enregistrer des préférences par défaut.';
+$string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pour une question.';
+$string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
+$string['privacy:preference:shuffleanswers'] = 'Si les réponses doivent être mélangées automatiquement.';
 $string['shuffle'] = 'Mélanger';
 $string['tagsnotallowed'] = '{$a->tag} n\'est pas permis (seulement {$a->allowed} sont permis).';
 $string['tagsnotallowedatall'] = '{$a->tag} n\'est pas permis (aucun code HTML n\'est permis ici).';

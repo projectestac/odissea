@@ -26,6 +26,10 @@ require_once(__DIR__ . '/../config.php');
 
 require_login(null, false);
 
+$deletelibrary = optional_param('deletelibrary', null, PARAM_INT);
+$confirm = optional_param('confirm', false, PARAM_BOOL);
+$action = optional_param('action', null, PARAM_ALPHANUMEXT);
+
 $context = context_system::instance();
 require_capability('moodle/h5p:updatelibraries', $context);
 
@@ -38,12 +42,43 @@ $PAGE->set_pagelayout('admin');
 $PAGE->set_title("$SITE->shortname: " . $pagetitle);
 $PAGE->set_heading($SITE->fullname);
 
+$h5pfactory = new \core_h5p\factory();
+if ($deletelibrary) {
+    $library = \core_h5p\api::get_library($deletelibrary);
+    if ($confirm) {
+        require_sesskey();
+        \core_h5p\api::delete_library($h5pfactory, $library);
+        redirect(new moodle_url('/h5p/libraries.php'));
+    }
+
+    echo $OUTPUT->header();
+    echo $OUTPUT->heading(get_string('deleting', 'core_h5p'));
+    echo $OUTPUT->confirm(
+        get_string('deletelibraryconfirm', 'core_h5p', [
+            'name' => format_string($library->title),
+            'version' => format_string($library->majorversion . '.' . $library->minorversion . '.' . $library->patchversion),
+        ]),
+        new moodle_url($PAGE->url, ['deletelibrary' => $deletelibrary, 'confirm' => 1]),
+        new moodle_url('/h5p/libraries.php')
+    );
+    echo $OUTPUT->footer();
+    die();
+}
+
+if (!is_null($action)) {
+    if ($action == 'enable' || $action == 'disable') {
+        // If action is enable or disable, library id is required too.
+        $libraryid = required_param('id', PARAM_INT);
+
+        \core_h5p\api::set_library_enabled($libraryid, ($action == 'enable'));
+    }
+}
+
 echo $OUTPUT->header();
 echo $OUTPUT->heading($pagetitle);
 echo $OUTPUT->box(get_string('librariesmanagerdescription', 'core_h5p'));
 
 $form = new \core_h5p\form\uploadlibraries_form();
-$h5pfactory = new \core_h5p\factory();
 if ($data = $form->get_data()) {
     require_sesskey();
 
@@ -55,7 +90,7 @@ if ($data = $form->get_data()) {
     $file = reset($files);
 
     // Validate and save the H5P package.
-    // Because we are passing skipcontent = true to save_h5p function, the returning value is false in an error
+    // Because we are passing skipcontent = true to save_h5p function, the returning value is false if an error
     // is encountered, null when successfully saving the package without creating the content.
     if (\core_h5p\helper::save_h5p($h5pfactory, $file, new stdClass(), false, true) === false) {
         echo $OUTPUT->notification(get_string('invalidpackage', 'core_h5p'), 'error');
@@ -68,15 +103,10 @@ $form->display();
 // Load installed Libraries.
 $framework = $h5pfactory->get_framework();
 $libraries = $framework->loadLibraries();
-$installed = [];
-foreach ($libraries as $libraryname => $versions) {
-    foreach ($versions as $version) {
-        $installed[] = $version;
-    }
-}
 
-if (count($installed)) {
-    echo $OUTPUT->render_from_template('core_h5p/h5plibraries', (object)['contenttypes' => $installed]);
+if (!empty($libraries)) {
+    $libs = new \core_h5p\output\libraries($h5pfactory, $libraries);
+    echo $OUTPUT->render_from_template('core_h5p/h5plibraries', $libs->export_for_template($OUTPUT));
 }
 
 echo $OUTPUT->footer();

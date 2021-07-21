@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ar', version '3.8'.
+ * Strings for component 'gradereport_singleview', language 'ar', version '3.11'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -45,13 +45,14 @@ $string['gradefor'] = 'علامة {$a}';
 $string['gradeitem'] = 'مفردة التقييم: {$a}';
 $string['gradeitemcannotbeoverridden'] = 'مفردة التقييم هذه لا يمكن تجاوزها';
 $string['gradeuser'] = 'منح العلامات للمستخدم: {$a}';
-$string['itemsperpage'] = 'فقرات لكل صفحة';
+$string['itemsperpage'] = 'الفقرات لكل صفحة';
 $string['noscreens'] = 'تعذر العثور على شاشة معاينة منفردة مناسبة.';
 $string['notvalid'] = 'ليست شاشة معاينة منفردة مناسبة: {$a}';
 $string['override'] = 'تجاوز';
 $string['overrideall'] = 'تجاوز كل العلامات';
 $string['overridefor'] = 'تجاوز لـ {$a}';
 $string['overridenone'] = 'لا تتجاوز أي علامة';
+$string['overridenoneconfirm'] = 'أنت تحاول تعطيل تجاوزات العلامات. هذا سيؤدي إلى فقدان كل العلامات التي تم تجاوزها سابقاً. هل أنت متأكد من رغبتك في المتابعة؟';
 $string['pluginname'] = 'معاينة منفردة';
 $string['privacy:metadata'] = 'تقرير معاينة العلامة المنفردة يظهر فقط البيانات المخزونة في مواضع أخرى.';
 $string['save'] = 'احفظ';

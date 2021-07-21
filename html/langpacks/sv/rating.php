@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'sv', version '3.8'.
+ * Strings for component 'rating', language 'sv', version '3.11'.
  *
  * @package     rating
  * @category    string
@@ -32,24 +32,34 @@ $string['aggregatemin'] = 'Lägsta betyg';
 $string['aggregatenone'] = 'Inga betyg';
 $string['aggregatesum'] = 'Summa av betyg';
 $string['aggregatetype'] = 'Typ av aggregation';
-$string['aggregatetype_help'] = 'Aggregationstypen (sammanställningstypen) bestämmer hur bedömningar/poäng samlas ihop till modulens betyg i Betygsrapporten.<BR>
-* Betyg/omdömen i genomsnitt - Medelresultatet av alla satta poäng<BR>
-* Räkning av betyg/omdömen - Antalet poängsatta inlägg blir det slutliga betyget (observera att detta inte kan överstiga aktivitetens inställda maximala betyg)<BR>
-* Maximalt betyg/omdöme - Det högst poängsatta inlägget sätter slutbetyget<BR>
-* Minimalt betyg/omdöme - Det lägst poängsatta inlägget sätter slutbetyget<BR>
-* Sammanlagda betyg/omdömen - Summan av poängen för de bedömda inläggen (observera att detta inte kan överstiga aktivitetens inställda maximala betyg). <BR>
-Om "Inga betyg/omdömen" är vald kommer inte aktiviteten att visas i Betygsrapporten.';
+$string['aggregatetype_help'] = 'Aggregeringstypen definierar hur betyg kombineras för att bilda slutbetyget i betygsboken.
+
+* Genomsnitt av betyg - Medelvärdet av alla betyg
+* Antal betyg - Antalet betygssatta objekt blir slutresultatet. Observera att summan inte kan överstiga maxbetyget för aktiviteten.
+* Maximum - Högsta betyg blir slutbetyget
+* Minimum - Det minsta betyget blir slutbetyget
+* Summa - Alla betyg läggs ihop. Observera att summan inte kan överstiga maxbetyget för aktiviteten.
+
+Om "Inga betyg" är markerat visas inte aktiviteten i betygsboken.';
+$string['allowratings'] = 'Tillåt att objekt betygsätts?';
 $string['allratingsforitem'] = 'Alla inskickade betyg';
 $string['capabilitychecknotavailable'] = 'Rolltillstånd kan inte visas innan aktiviteten sparats';
 $string['couldnotdeleteratings'] = 'Tyvärr, det kan inte tas bort eftersom personer redan har betygsatt/gett omdömen om det.';
+$string['norate'] = 'Betygsättning av objekt är inte tillåtet!';
 $string['noratings'] = 'Det finns inga inskickade betyg';
 $string['noviewanyrate'] = 'Du kan bara titta på resultaten för objekt som du har gjort';
 $string['noviewrate'] = 'Du har inte funktionsbehörigheten som krävs att se betyg';
+$string['privacy:metadata:rating'] = 'Det användarinmatade betyget lagras tillsammans med en mappning av objektet som har betygsatts.';
+$string['privacy:metadata:rating:rating'] = 'Det numeriska betyget som användaren angav.';
+$string['privacy:metadata:rating:timecreated'] = 'Den tid då betygsättningen först gjordes.';
+$string['privacy:metadata:rating:timemodified'] = 'Den tid då betygsättningen senast uppdaterades.';
+$string['privacy:metadata:rating:userid'] = 'Användaren som betygsatte.';
 $string['rate'] = 'Betygssätt/avge omdömen';
-$string['ratepermissiondenied'] = 'Du har inte tillstånd att betygssätta/avge omdöme om det här ';
+$string['ratepermissiondenied'] = 'Du har inte behörighet att betygssätta/avge omdöme om det här';
 $string['rating'] = 'Betyg';
 $string['ratinginvalid'] = 'Betyget/omdömet är ogiltigt';
 $string['ratings'] = 'Betyg';
 $string['ratingtime'] = 'Begränsa betygsättning till inlägg gjorda inom följande period:';
-$string['rolewarning'] = 'Roller som har tillstånd att sätta betyg/avge omdömen';
-$string['rolewarning_help'] = 'För att lämna betyg/omdömen så måste användare ha förmågan moodle/rating:rate samt alla eventuella modulspecifika förmågor. Användare som är tilldelade de följande rollerna bör kunna betygsätta/ge omdömen om objekt. Listan av roller kan ändras via rättighetslänken i administrationsblocket.';
+$string['rolewarning'] = 'Roller som har behörighet att sätta betyg';
+$string['rolewarning_help'] = 'För att skicka in betyg krävs funktionsbehörigheten  <code>moodle/rating:rate</code> samt alla modulspecifika funktionsbehörigheter. Användare som tilldelas följande roller bör kunna betygsätta objekt. Listan över roller kan ändras via behörighetslänken i åtgärdsmenyn eller administrationsblocket, beroende på temat.';
+$string['scaleselectionrequired'] = 'När du väljer en betygsättnings-aggregattyp måste du också välja att använda antingen en skala eller ange en maxpoäng.';

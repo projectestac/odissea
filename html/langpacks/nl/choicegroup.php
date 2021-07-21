@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'nl', version '3.8'.
+ * Strings for component 'choicegroup', language 'nl', version '3.11'.
  *
  * @package     choicegroup
  * @category    string
@@ -53,9 +53,13 @@ $string['choicegroupfull'] = 'Deze groepskeuze is vol; er zijn geen plaatsen mee
 $string['choicegroupname'] = 'Naam van de groepskeuze';
 $string['choicegroupopen'] = 'Open';
 $string['choicegroupoptions'] = 'Keuzemogelijkheden';
-$string['choicegroupoptions_help'] = 'Hier bepaal je de keuzes waar de deelnemers een keuze uit moeten maken.
+$string['choicegroupoptions_help'] = 'Hier bepaal je uit welke groepen de deelnemers kunnen kiezen.
 
-Hier kun naar eigen inzicht het aantal keuze bepalen. Keuzes die je leeg laat, zullen niet worden weergegeven, wil je de deelnemers meer keuze geven dan er staan, klik dan op "Voeg 3 keuzevelden toe" knop.';
+De lijst aan de linkerkant toont de beschikbare groepen en groeperingen. Om een of meerdere groepen toe te voegen selecteer je ze in de lijst en klik je op "Toevoegen"". Om alle groepen in een groepering toe te voegen, selecteer je de groepering en klik je op "Toevoegen".
+
+De geselecteerde groepen verschijnen in de lijst aan de rechterkant.
+
+Om groepen uit de selectie te verwijderen, selecteer je deze in de rechterlijst en klik je op "Verwijderen".';
 $string['choicegroupsaved'] = 'Jouw keuze is opgeslagen';
 $string['choicetext'] = 'Keuze tekst';
 $string['chooseaction'] = 'Selecteer een actie...';
@@ -89,21 +93,23 @@ $string['groupmembers'] = 'Groepsleden';
 $string['groupsheader'] = 'Groepen';
 $string['havetologin'] = 'Je moet ingelogd zijn om jouw keuze te maken';
 $string['hidedescription'] = 'Verberg de beschrijvingen';
+$string['hidegroupmembers'] = 'Verberg groepsleden';
 $string['limit'] = 'Limiet';
 $string['limitanswers'] = 'Beperk het aantal deelnemers voor deze groep';
 $string['limitanswers_help'] = 'Deze optie maakt het mogelijk om het aantal deelnemers van een elke groep te beperken tot een bepaald maximum. Wanneer de limiet bereikt is, dan is die groep niet meer te kiezen.
 
 Als er niet voor beperkende limieten is gekozen, kunnen er zoveel studenten voor een groep kiezen ze willen.';
-$string['members/'] = 'Bezetting';
-$string['members/max'] = 'Bezetting / Capaciteit';
+$string['members/'] = 'Leden';
+$string['members/max'] = 'Leden / Capaciteit';
 $string['modulename'] = 'Groepkeuze';
-$string['modulename_help'] = 'De groepkeuze module geeft de leraar de mogelijkheid om de student een keuze te laten maken tussen verschillende groepen.';
+$string['modulename_help'] = 'Met de module Groepkeuze kunnen leerlingen zichzelf inschrijven voor een groep binnen een cursus. De leraar kan instellen welke groepen er gekozen kunnen worden en wat het maximum aantal leerlingen in iedere groep is.';
 $string['modulenameplural'] = 'Groepkeuzes';
 $string['moveselectedusersto'] = 'Verplaats de geselecteerde gebruikers naar...';
 $string['multipleenrollmentspossible'] = 'Sta toe om voor meerdere groepen te kiezen.';
 $string['mustchooseone'] = 'Je moet een keuze hebben gemaakt voordat er iets kan worden opgeslagen. Er is niets opgeslagen.';
 $string['name'] = 'Naam';
 $string['neverresultsviewable'] = 'De gemaakte keuzes kunnen niet worden ingezien.';
+$string['nogroupincourse'] = 'Er zijn geen groepen gedefinieerd in deze cursus.';
 $string['noguestchoose'] = 'Helaas, het is niet toegestaan voor gasten om een keuze te maken.';
 $string['noresultsviewable'] = 'De gemaakte keuzes kunnen op dit moment niet worden ingezien.';
 $string['notanswered'] = 'Nog geen keuze gemaakt';
@@ -113,10 +119,17 @@ $string['notyetresultsviewable'] = 'De gemaakte keuzes worden getoond nadat de a
 $string['numberofuser'] = 'Het aantal gebruikers';
 $string['option'] = 'Groep';
 $string['page-mod-choice-x'] = 'Willekeurige Groepkeuze module pagina';
-$string['pleasesetgroups'] = 'Maak a.u.b. tenminste twee groepen binnen deze cursus.';
+$string['pleaseselectonegroup'] = 'Selecteer ten minst een groep om uit te kunnen kiezen.';
+$string['pleasesetgroups'] = 'Maak ten minste twee groepen binnen deze cursus.';
+$string['pleasesetonegroupor'] = 'Maak ten minste een groep aan in deze cursus.<br /><br />
+<ul>
+<li><a href="{$a->linkgroups}">Beheer groepen</a></li>
+<li><a href="{$a->linkcourse}">Terug naar de cursus</a></li>
+</ul>';
 $string['pluginadministration'] = 'Groepkeuze beheer';
 $string['pluginname'] = 'Groepkeuze';
 $string['privacy'] = 'Privacy bij de gemaakte keuzes';
+$string['privacy:metadata'] = 'De plugin Groepskeuze slaat geen persoonlijke gegevens op. Alle gebruikersgegevens worden opgeslagen door het groepscomponent van de Moodle core-code (core_group).';
 $string['publish'] = 'Zichtbaarheid van de keuzes';
 $string['publishafteranswer'] = 'Laat de studenten de gemaakte keuzes zien nadat ze een keuze hebben gemaakt';
 $string['publishafterclose'] = 'Laat de studenten de gemaakte keuze pas zien nadat de groepkeuze gesloten is';
@@ -133,6 +146,7 @@ $string['savemychoicegroup'] = 'Sla mijn keuze op';
 $string['selected_groups'] = 'Geselecteerde groepen';
 $string['set_limit_for_group'] = 'Limiet voor';
 $string['showdescription'] = 'Laat de beschrijvingen zien';
+$string['showgroupmembers'] = 'Toon groepsleden';
 $string['showunanswered'] = 'Laat een kolom voor onbeantwoord zien';
 $string['skipresultgraph'] = 'Sla de grafiek van de gemaakte keuzes over';
 $string['sortgroupsby'] = 'Sorteer groepen op';

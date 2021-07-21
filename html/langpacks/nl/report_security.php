@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'nl', version '3.8'.
+ * Strings for component 'report_security', language 'nl', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -25,13 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p>We raden aan om de rechten op het bestand config.php te wijzigen na installatie, zodat het bestand niet door de webserver gewijzigd kan worden.
+$string['check_configrw_details'] = '<p>We raden aan om de rechten op het bestand <code>config.php</code> te wijzigen na installatie, zodat het bestand niet door de webserver gewijzigd kan worden.
 Merk op dat dit de veiligheid van de server niet enorm gaat verhogen, maar het kan inbraken vertragen of beperken.</p>';
 $string['check_configrw_name'] = 'config.php beschrijfbaar';
 $string['check_configrw_ok'] = 'config.php kan niet gewijzigd worden door PHP-scripts';
 $string['check_configrw_warning'] = 'PHP-scripts kunnen config.php wijzigen';
 $string['check_cookiesecure_details'] = '<p>Als je https inschakelt, dan kun je ook best secure cookies inschakelen. Je zou ook een permanente omleiding van http naar https moeten maken. Best schakel je ook HSTS headers in op je webserver.</p>';
 $string['check_cookiesecure_error'] = 'Schakel secure cookies in';
+$string['check_cookiesecure_http'] = 'Je moet https inschakelen om veilige cookies te kunnen gebruiken';
 $string['check_cookiesecure_name'] = 'Secure cookies';
 $string['check_cookiesecure_ok'] = 'Secure cookies ingeschakeld.';
 $string['check_crawlers_details'] = '<p>De instelling Open voor Google maakt het voor zoekrobots mogelijk cursussen te doorzoeken met de gastrol. Het is nutteloos deze instelling in te schakelen als aanmelden als gast niet toegelaten is.</p>';
@@ -45,10 +46,12 @@ $string['check_defaultuserrole_error'] = 'Fout gedefinieerde standaard rol "{$a}
 $string['check_defaultuserrole_name'] = 'Standaard rol voor alle gebruikers';
 $string['check_defaultuserrole_notset'] = 'Standaardrol niet ingeschakeld';
 $string['check_defaultuserrole_ok'] = 'Definitie van de standaard rol voor alle gebruikers is OK';
+$string['check_dirindex_info'] = 'Directoryindex mag niet zijn ingeschakeld';
 $string['check_displayerrors_details'] = '<p>Het inschakelen van de PHP-instelling <code>display_errors</code> wordt afgeraken op productiesites omdat een foutmelding gevoelige informatie over je server kan vrijgeven.';
 $string['check_displayerrors_error'] = 'De PHP-instelling voor het tonen van fouten is ingeschakeld. Je kunt dit beter uitschakelen.';
 $string['check_displayerrors_name'] = 'Tonen van PHP-fouten';
 $string['check_displayerrors_ok'] = 'Tonen van PHP-fouten uitgeschakeld';
+$string['check_dotfiles_info'] = 'Alle dotfiles behalve /.well-known/* mogen niet openbaar zijn';
 $string['check_emailchangeconfirmation_details'] = '<p>Er wordt aangeraden gebruikers hun e-mailadres te laten bevestigen wanneer ze dat wijzigen in hun profiel. Indien uitgeschakeld kunnen spammers proberen de server te misbruiken om spam te versturen.</p><p>Het e-mailveld kan ook geblokkeerd worden voor authenticatieplugins, deze mogelijkheid is hier niet overwogen.</p>';
 $string['check_emailchangeconfirmation_error'] = 'Gebruikers kunnen gelijk welk e-mailadres ingeven';
 $string['check_emailchangeconfirmation_info'] = 'Gebruikers kunnen alleen e-mailadressen gebruiken van toegelaten domeinen.';
@@ -74,10 +77,6 @@ $string['check_mediafilterswf_details'] = '<p>Automatisch embedden van swf is he
 $string['check_mediafilterswf_error'] = 'Flash mediafilter is ingeschakeld - dit is erg gevaarlijk voor de meeste servers';
 $string['check_mediafilterswf_name'] = '.swf media filter ingeschakeld';
 $string['check_mediafilterswf_ok'] = 'Flash mediafilter is niet ingeschakeld';
-$string['check_noauth_details'] = '<p>De <em>Geen authenticatie</em>-plugin is niet bedoeld voor gebruik op productiesites. Schakel het uit tenzij dit een test-site voor ontwikkeling is.';
-$string['check_noauth_error'] = 'De Geen authenticatie-plugin mag niet gebruikt worden op productie-sites.';
-$string['check_noauth_name'] = 'Geen authenticatie';
-$string['check_noauth_ok'] = 'Geen authenticatie-plugin is uitgeschakeld';
 $string['check_nodemodules_details'] = '<p>De map <em>{$a->path}</em> bevat Node.js modules en hun afhankelijkheden, typisch geïnstalleerd door NPM. Deze modules kunnen nodig zijn voor lokale Moodle-ontwikkeling, zoals voor het gebruik van het grunt framework. Ze zijn niet nodig om een Moodle-site in productie te gebruiken en kunnen mogelijk gevaarlijke code bevatten die je site kwetsbaar maakt voor aanvallen.</p><p>Het is sterk aangeraden om deze map te verwijderen als je site bereikbaar is via een publieke URL of om om minstens de toegang ertoe te beveiligen via de configuratie van je webserver.</p>';
 $string['check_nodemodules_info'] = 'De map node_modules zou niet mogen aanwezig zijn op publieke sites';
 $string['check_nodemodules_name'] = 'Map voor node_modules';
@@ -89,10 +88,13 @@ $string['check_passwordpolicy_details'] = '<p>Aangeraden wordt om een wachtwoord
 $string['check_passwordpolicy_error'] = 'Wachtwoordbeleid niet ingesteld';
 $string['check_passwordpolicy_name'] = 'Wachtwoordbeleid';
 $string['check_passwordpolicy_ok'] = 'Wachtwoordbeleid ingeschakeld';
-$string['check_preventexecpath_details'] = '<p>Het toestaan van het instellen van uitvoerbare programma\'s via de administratiepagina\'s is een bijkomend risico voor escalatie van privileges.</p>';
+$string['check_preventexecpath_details'] = '<p>Het instellen van uitvoerbare paden via de administratiepagina\'s is een bijkomend risico voor escalatie van privileges. Dit moet afgedwongen worden in config.php: </p><p><code>$CFG->preventexecpath = true;<code></p></p>';
 $string['check_preventexecpath_name'] = 'Paden voor uitvoerbare programma\'s';
 $string['check_preventexecpath_ok'] = 'Paden voor uitvoerbare programma\'s kunnen enkel in config.php ingesteld worden.';
 $string['check_preventexecpath_warning'] = 'Paden voor uitvoerbare programma\'s kunnen in de beheerdersinterface ingesteld worden.';
+$string['check_publicpaths_403'] = '(Retourneerde een 403, idealiter zou 404 moeten zijn)';
+$string['check_publicpaths_generic'] = '{$a} -bestanden mogen niet openbaar zijn';
+$string['check_publicpaths_name'] = 'Controleer alle openbare / privépaden';
 $string['check_riskadmin_detailsok'] = '<p>Controleer aub volgende lijst beheerders:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Controleer onderstaande lijst beheerders::</p>{$a->admins}
 <p>Aangeraden wordt om de beheerdersrol enkel toe te wijzen in de systeemcontext. Volgende gebruikers hebben een niet-ondersteunde beheerdersrol:</p>{$a->unsupported}';
@@ -130,14 +132,9 @@ $string['check_webcron_warning'] = 'Anonieme gebruikers hebben toegang tot cron.
 $string['configuration'] = 'Configuratie';
 $string['description'] = 'Beschrijving';
 $string['details'] = 'Details';
+$string['eventreportviewed'] = 'Rapport beveiligingscontrole bekeken';
 $string['issue'] = 'Probleem';
-$string['pluginname'] = 'Veiligheidsoverzicht';
+$string['pluginname'] = 'Beveiligingscontrole';
 $string['privacy:metadata'] = 'De beveiligingsoverzichtsplugin bewaart geen persoonlijke gegevens.';
 $string['security:view'] = 'Bekijk veiligheidsrapport';
-$string['status'] = 'Status';
-$string['statuscritical'] = 'Kritiek';
-$string['statusinfo'] = 'Informatie';
-$string['statusok'] = 'OK';
-$string['statusserious'] = 'Ernstig';
-$string['statuswarning'] = 'Waarschuwing';
 $string['timewarning'] = 'Deze bewerking kan lang duren, wees geduldig.';

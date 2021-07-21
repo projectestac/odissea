@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'ja', version '3.8'.
+ * Strings for component 'qtype_gapselect', language 'ja', version '3.11'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -43,7 +43,10 @@ $string['pluginname_help'] = 'ミッシングワード選択問題ではドロ�
 $string['pluginnameadding'] = 'ミッシングワード選択問題の追加';
 $string['pluginnameediting'] = 'ミッシングワード選択問題の編集';
 $string['pluginnamesummary'] = 'ドロップダウンメニューを使って問題テキスト内の足りない言葉を埋めます。';
-$string['privacy:metadata'] = 'ミッシングワード選択問題タイププラグインはいかなる個人データも保存しません。';
+$string['privacy:metadata'] = 'ミッシングワード選択問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
+$string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
+$string['privacy:preference:shuffleanswers'] = '解答を自動的にシャッフルするかどうか指定します。';
 $string['shuffle'] = 'シャッフル';
 $string['tagsnotallowed'] = '{$a->tag} は許可されません ({$a->allowed} のみ許可されます)。';
 $string['tagsnotallowedatall'] = '{$a->tag} は許可されません (ここでHTMLは許可されません)。';

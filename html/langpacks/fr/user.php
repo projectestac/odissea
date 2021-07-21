@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'fr', version '3.8'.
+ * Strings for component 'user', language 'fr', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Ajouter une condition';
+$string['adverbfor_and'] = 'et';
+$string['adverbfor_andnot'] = 'et';
+$string['adverbfor_or'] = 'ou';
+$string['applyfilters'] = 'Appliquer les filtres';
+$string['clearfilterrow'] = 'Supprimer la rangée de filtre';
+$string['clearfilters'] = 'Réinitialiser les filtres';
+$string['clearfilterselection'] = 'Retirer « {$a} » du filtre';
+$string['countparticipantsfound'] = '{$a} participants trouvés';
+$string['filterbykeyword'] = 'Mot-clef';
+$string['filterrowlegend'] = 'Filtre {$a}';
+$string['filtersetmatchdescription'] = 'Comment les filtres multiples doivent être combinés';
+$string['filtertype'] = 'Type de filtre';
+$string['match'] = 'Correspondance';
+$string['matchofthefollowing'] = 'un des éléments suivants :';
+$string['moodlenetprofile'] = 'Profil MoodleNet';
+$string['moodlenetprofile_help'] = 'Ce champ permet de lier votre profil MoodleNet à Moodle. Une URI conforme à WebFinger est requise.';
+$string['placeholdertype'] = 'Taper…';
+$string['placeholdertypeorselect'] = 'Taper ou sélectionner…';
 $string['privacy:courserequestpath'] = 'Cours demandés';
 $string['privacy:descriptionpath'] = 'Description de profil';
 $string['privacy:devicespath'] = 'Appareils de l\'utilisateur';
@@ -46,13 +65,13 @@ $string['privacy:metadata:currentlogin'] = 'Le nom du compte de l\'utilisateur.'
 $string['privacy:metadata:data'] = 'Données de l\'utilisateur en lien avec le champ personnalisé du profil.';
 $string['privacy:metadata:deleted'] = 'Une valeur indiquant si le compte de l\'utilisateur a été supprimé ou non.';
 $string['privacy:metadata:department'] = 'Le département où l\'utilisateur peut être trouvé.';
-$string['privacy:metadata:description'] = 'Informations générale sur cet utilisateur.';
+$string['privacy:metadata:description'] = 'Informations générales sur cet utilisateur.';
 $string['privacy:metadata:devicename'] = 'Le nom de l\'appareil, Occam ou iPhone, etc.';
 $string['privacy:metadata:devicetablesummary'] = 'Cette table enregistre des informations sur les appareils mobiles de l\'utilisateur, dans le but de lui envoyer des notifications PUSH';
 $string['privacy:metadata:email'] = 'Une adresse de courriel de contact.';
 $string['privacy:metadata:emailstop'] = 'Un réglage pour désactiver l\'envoi de notifications à l\'utilisateur.';
 $string['privacy:metadata:fieldid'] = 'L\'identifiant du champ personnalisé.';
-$string['privacy:metadata:filelink'] = 'Plusieurs fichiers différentes sont enregistrés dans la table des fichiers pour cet utilisateur.';
+$string['privacy:metadata:filelink'] = 'Plusieurs fichiers différents sont enregistrés dans la table des fichiers pour cet utilisateur.';
 $string['privacy:metadata:firstaccess'] = 'La date et l\'heure à laquelle l\'utilisateur a accédé au site pour la première fois.';
 $string['privacy:metadata:firstip'] = 'La première adresse IP enregistrée';
 $string['privacy:metadata:firstname'] = 'Le prénom de l\'utilisateur.';
@@ -77,6 +96,7 @@ $string['privacy:metadata:maildisplay'] = 'Un réglage indiquant si l\'adresse d
 $string['privacy:metadata:middlename'] = 'Le deuxième prénom de l\'utilisateur';
 $string['privacy:metadata:mnethostid'] = 'Un identifiant du serveur MNet, le cas échéant';
 $string['privacy:metadata:model'] = 'Le nom de l\'appareil, Occam ou iPhone, etc.';
+$string['privacy:metadata:moodlenetprofile'] = 'Le profil MoodleNet de l\'utilisateur';
 $string['privacy:metadata:msn'] = 'L\'identifiant MSN de l\'utilisateur';
 $string['privacy:metadata:my_pages'] = 'Page utilisateur (tableau de bord et profil). Cette table ne contient pas de données personnelles et n\'est utilisée que pour des liens des blocs des tableaux de bord des utilisateurs';
 $string['privacy:metadata:my_pages:name'] = 'Nom de page';
@@ -128,6 +148,7 @@ $string['privacy:passwordresetpath'] = 'Réinitialisation de mots de passe';
 $string['privacy:privatefilespath'] = 'Fichiers personnels';
 $string['privacy:profileimagespath'] = 'Avatars (images des profils)';
 $string['privacy:sessionpath'] = 'Données de session';
+$string['selectfiltertype'] = 'Sélectionner';
 $string['target:upcomingactivitiesdue'] = 'Activités à venir à effectuer';
 $string['target:upcomingactivitiesdue_help'] = 'Cette cible génère des rappels pour les activités à venir à effectuer.';
 $string['target:upcomingactivitiesdueinfo'] = 'Toutes les indications concernant les « activités à venir » sont affichées ici. Ces étudiants ont reçu directement ces indications.';

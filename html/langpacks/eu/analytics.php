@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'eu', version '3.8'.
+ * Strings for component 'analytics', language 'eu', version '3.11'.
  *
  * @package     analytics
  * @category    string
@@ -34,6 +34,8 @@ $string['analyticslogstore'] = 'Analitiketarako erabilitako erregistroen biltegi
 $string['analyticslogstore_help'] = 'Analitiken APIak erabiltzaileen aktibitatea irakurtzeko erabiliko den agerraldi-biltegia.';
 $string['analyticssettings'] = 'Analitiken ezarpenak';
 $string['analyticssiteinfo'] = 'Gune-informazioa';
+$string['calclifetime'] = 'Mantendu analitiken kalkuluak epe honetan:';
+$string['configlcalclifetime'] = 'Ezarpen honek kalkuluen datuak mantendu beharreko epea zehazten du - honek ez ditu aurreikuspenak ezabatuko, aurreikuspenak sortzeko erabilitako datuak baizik. Hemen lehenetsitako aukera erabiltzea gomendatzen da disko-erabilera kontrolpean mantentzen duelako, baina kalkuluen taulak beste erabilera batzuetarako ere erabiltzen ari bazara agian balio hau handitzea nahiko duzu.';
 $string['defaultpredictionsprocessor'] = 'Lehenetsitako aurreikuspen-prozesatzailea';
 $string['defaultpredictoroption'] = 'Lehenetsitako prozesadorea ({$a})';
 $string['defaulttimesplittingmethods'] = 'Ereduen ebaluazioen analisi-tarte lehenetsiak';
@@ -100,6 +102,7 @@ $string['modeloutputdirwithdefaultinfo'] = 'Aurreikuspen-prozesatzaileak egindak
 $string['modeltimelimit'] = 'Analizatzeko denbora-muga modeloko';
 $string['modeltimelimitinfo'] = 'Ezarpen honek modelo bakoitzak guneko edukiak analizatzen ematen duen denbora mugatzen du.';
 $string['neutral'] = 'Neutrala';
+$string['neverdelete'] = 'Ez ezabatu kalkuluak inoiz';
 $string['nocourses'] = 'Ez dago analizatzeko ikastarorik';
 $string['nodata'] = 'Ez dago analizatzeko daturik';
 $string['noevaluationbasedassumptions'] = 'Usteetan oinarritutako modeloak ezin dira ebaluatu.';

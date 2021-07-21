@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'de', version '3.8'.
+ * Strings for component 'lesson', language 'de', version '3.11'.
  *
  * @package     lesson
  * @category    string
@@ -87,6 +87,7 @@ $string['averagescore'] = 'Durchschnittliche Bewertung';
 $string['averagetime'] = 'Durchschnittliche Zeit';
 $string['branch'] = 'Inhalt';
 $string['branchtable'] = 'Inhaltsseite';
+$string['cachedef_overrides'] = 'Informationen zu Nutzer- und Gruppenänderungen';
 $string['cancel'] = 'Abbrechen';
 $string['cannotfindanswer'] = 'Fehler: Antwort konnte nicht gefunden werden';
 $string['cannotfindattempt'] = 'Fehler: Versuch konnte nicht gefunden werden';
@@ -121,11 +122,13 @@ $string['comments'] = 'Ihr Feedback';
 $string['completed'] = 'Abgeschlossen';
 $string['completederror'] = 'Lektion abschließen';
 $string['completethefollowingconditions'] = 'Sie müssen die folgende(n) Bedingung(en) in der Lektion <b>{$a}</b> erfüllen, um fortfahren zu dürfen:';
+$string['completiondetail:reachend'] = 'Das Ende der Lektion erreichen';
+$string['completiondetail:timespent'] = 'Mindestens {$a} in dieser Lektion verbringen';
 $string['completionendreached'] = 'Ende der Lektion muss erreicht sein';
 $string['completionendreached_desc'] = 'Zum Abschluss der Lektion muss das Ende der Lektion erreicht worden sein';
-$string['completiontimespent'] = 'Teilnehmer/in muss diese Aktivität erledigen bis';
+$string['completiontimespent'] = 'Teilnehmer/in muss diese Zeit mit dieser Aktivität verbringen';
 $string['completiontimespentdesc'] = 'Teilnehmer muss diese Aktivität für mindestens {$a} ausführen';
-$string['completiontimespentgroup'] = 'Geforderte Zeit erbracht';
+$string['completiontimespentgroup'] = 'Verbrachte Zeit erforderlich';
 $string['conditionsfordependency'] = 'Bedingungen für Abhängigkeit';
 $string['configintro'] = 'Die hier festgelegten Werte werden als Vorgaben beim Anlegen einer neuen Lektion verwendet. Einstellungen, die als erweitert bezeichnet sind, sind nur dann sichtbar, wenn der Link \'Mehr anzeigen ...\' angeklickt wird.';
 $string['configmaxanswers'] = 'Maximalzahl von Antworten pro Seite';
@@ -176,11 +179,11 @@ $string['displayleftmenu'] = 'Inhaltsverzeichnis anzeigen';
 $string['displayleftmenu_help'] = 'Diese Option legt fest, ob ein Menü zur Navigation zwischen den Seiten angezeigt wird.';
 $string['displayofgrade'] = 'Anzeige der Bewertungen (für Teilnehmer/innen)';
 $string['displayreview'] = 'Wiederholung bei falscher Antwort';
-$string['displayreview_help'] = 'Diese Option zeigt nach einer falsch beantworteten Frage eine Taste, mit der die Teilnehmer/innen zur Frage zurückgehen und diese noch einmal antworten können.';
-$string['displayscorewithessays'] = '<p>Sie haben bisher die Bewertung {$a->score} von {$a->tempmaxgrade} für die automatisch bewerteten Fragen erzielt.</p>
+$string['displayreview_help'] = 'Wenn diese Option aktiviert ist und eine Frage falsch beantwortet wird, haben Teilnehmer/innen die Möglichkeit, die Frage erneut ohne Punkte zu wiederholen oder weiter mit der Lektion fortzufahren. Wenn Teilnehmer/innen klicken, zu einer anderen Frage zu gehen, wird die bereits gewählte (falsche) Antwort berücksichtigt. Standardmäßig sind Sprünge bei falscher Antwort auf "diese Seite" gesetzt und haben eine Punktzahl 0. Daher wird empfohlen, den Sprung bei falscher Antwort auf eine andere Seite zu setzen, um Konfusion bei den Teilnehmer/innen zu vermeiden.';
+$string['displayscorewithessays'] = '<p>Sie haben bisher für die automatisch bewerteten Fragen die Bewertung {$a->score} von {$a->tempmaxgrade} erzielt.</p>
 <p>Ihre Freitext-Aufgaben ({$a->essayquestions}) werden später bewertet und zur Gesamtbewertung hinzugefügt.</p>
-<p>Ihre derzeitige Bewertung ohne Freitextaufgaben ist {$a->score} von {$a->grade}.</p>';
-$string['displayscorewithoutessays'] = 'Ihre Bewertung:  {$a->score} von {$a->grade} Punkten';
+<p>Ihre derzeitige Bewertung ohne die Freitextaufgaben ist {$a->score} von {$a->grade}.</p>';
+$string['displayscorewithoutessays'] = 'Ihre Bewertung: {$a->score} von {$a->grade}';
 $string['duplicatepagenamed'] = 'Seite duplizieren: {$a}';
 $string['edit'] = 'Bearbeiten';
 $string['editbranchtable'] = 'Inhaltsseite bearbeiten';
@@ -210,9 +213,9 @@ $string['endofcluster'] = 'Clusterende';
 $string['endofclustertitle'] = 'Clusterende';
 $string['endoflesson'] = 'Ende der Lektion';
 $string['enteredthis'] = 'der Antworten';
-$string['enterpassword'] = 'Bitte geben Sie das Kennwort ein:';
+$string['enterpassword'] = 'Geben Sie bitte das Kennwort ein:';
 $string['eolstudentoutoftime'] = 'Achtung: Die verfügbare Zeit ist abgelaufen. Die letzte Frage wird nicht bewertet, wenn die Antwort nach Zeitablauf abgegeben wurde.';
-$string['eolstudentoutoftimenoanswers'] = 'Sie haben keine Fragen beantwortet. Sie erhalten daher 0 Punkte für die Lektion.';
+$string['eolstudentoutoftimenoanswers'] = 'Sie haben keine Fragen beantwortet. Sie erhalten deswegen 0 Punkte für die Lektion.';
 $string['essay'] = 'Freitext';
 $string['essayemailmessage2'] = '<p>Freitextfrage: {$a->question}</p><p>Ihre Antwort: <em>{$a->response}</em></p><p>Trainerfeedback: <em>{$a->comment}</em></p><p>Sie haben {$a->earned} von {$a->outof} Punkten bei dieser Frage erhalten.</p><p>Ihre aktuelle Bewertung für die Lektion \'{$a->lesson}\' ist nun {$a->newgrade}%.</p>';
 $string['essayemailmessagesmall'] = '<p>Sie haben {$a->earned} von {$a->outof} für diese Freitextfrage erhalten.</p><p>Ihre Bewertung für die Lektion {$a->lesson} wurde zu {$a->newgrade}% geändert.</p>';
@@ -242,7 +245,7 @@ $string['fileformat'] = 'Dateiformat';
 $string['finalwrong'] = 'Nicht ganz.';
 $string['finish'] = 'Fertigstellen';
 $string['firstanswershould'] = 'Die erste Antwort sollte zur Seite mit der Antwort "richtig" verzweigen';
-$string['firstwrong'] = 'Ihre Antwort ist falsch. Wollen Sie noch einmal (ohne Bewertung) wiederholen?';
+$string['firstwrong'] = 'Ihre Antwort ist falsch. Möchten Sie es noch einmal (ohne Bewertung) versuchen?';
 $string['flowcontrol'] = 'Ablaufkontrolle';
 $string['fractionsaddwrong'] = 'Die positiven Bewertungen, die Sie gewählt haben, ergeben keine 100%.
 <br />Statt dessen ergeben sie {$a}%.
@@ -294,7 +297,7 @@ $string['jumps'] = 'Sprünge';
 $string['jumps_help'] = 'Jede Antwort (bei Fragen) oder jede Beschreibung (bei Inhaltsseiten) besitzt einen zugehörigen Sprung. Der Sprung kann relative sein, z.B. zu dieser Seite oder zur nächsten Seite führen. Oder der Sprung kann absolut sein, wobei dann jede Seite in der Lektion angesteuert werden kann';
 $string['jumpsto'] = 'Sprung zu <em>{$a}</em>';
 $string['leftduringtimed'] = 'Sie haben die Lektion abgebrochen. Die Bearbeitung der Lektion ist zeitlich begrenzt. <br />Klicken Sie auf Fortsetzen, um die Lektion erneut zu beginnen.';
-$string['leftduringtimednoretake'] = 'Sie haben die Lektion abgebrochen. Die Bearbeitung der Lektion ist zeitlich begrenzt. <br />Sie können diese Lektion nicht mehr bearbeiten.';
+$string['leftduringtimednoretake'] = 'Sie haben die Lektion abgebrochen. Die Bearbeitung der Lektion ist zeitlich begrenzt. <br />Sie können diese Lektion nicht weiter bearbeiten.';
 $string['leftduringtimedsession'] = 'Sie haben eine zeitbegrenzte Lektion abgebrochen.';
 $string['lesson:addinstance'] = 'Neue Lektion hinzufügen';
 $string['lesson:edit'] = 'Lektion bearbeiten';
@@ -318,7 +321,7 @@ $string['lessonopens'] = 'Lektion verfügbar';
 $string['lessonpagelinkingbroken'] = 'Die erste Seite wurde nicht gefunden. Die Verlinkung der Seite weist einen Fehler auf. Sprechen Sie die Administrator/innen an.';
 $string['lessonstats'] = 'Statistik';
 $string['linkedmedia'] = 'Verlinkte Medien';
-$string['loginfail'] = 'Der Login ist gescheitert. Bitte versuchen Sie es noch einmal.';
+$string['loginfail'] = 'Der Login ist gescheitert. Versuchen Sie es bitte noch einmal.';
 $string['lowscore'] = 'Schlechteste Bewertung';
 $string['lowtime'] = 'Niedrigste Zeit';
 $string['manualgrading'] = 'Freitext-Bewertung';
@@ -329,8 +332,8 @@ $string['maxgrade'] = 'Maximale Bewertung';
 $string['maxgrade_help'] = 'Dieser Wert bestimmt die maximale Bewertung für die Lektion. Wenn Sie diesen Wert auf 0 setzen, erscheint die Lektion in der Bewertungsübersicht.';
 $string['maximumnumberofanswersbranches'] = 'Höchstzahl der Antworten
 ';
-$string['maximumnumberofanswersbranches_help'] = 'Dieser Wert legt fest, wie viele Antworten bzw. Verzweigungen in der Lektion pro Frage benutzt werden dürfen. Wenn ausschließlich Wahr/Falsch-Fragen vorkommen, kann der Wert auf 2 gesetzt werden. Die Einstellung kann jederzeit geändert werden. Eingegebene Daten werden bei der Änderung nicht berührt.';
-$string['maximumnumberofattempts'] = 'Höchstzahl der Versuche';
+$string['maximumnumberofanswersbranches_help'] = 'Diese Einstellung gibt die maximale Anzahl von Antworten an, die in der Lektion verwendet werden dürfen. Wenn ausschließlich Wahr/falsch-Fragen vorkommen, kann der Wert auf 2 gesetzt werden. Die Einstellung kann jederzeit geändert werden, da sie nur das betrifft, was die Trainer/innen sehen, aber nicht die Daten.';
+$string['maximumnumberofattempts'] = 'Höchstzahl der Versuche pro Frage';
 $string['maximumnumberofattempts_help'] = 'Dieser Wert legt die Zahl der maximal zulässigen Versuche für jede einzelne Frage fest. Wenn die Höchstzahl der zulässigen Versuche erreicht ist, wird automatisch die nächste Seite der Lektion angezeigt.';
 $string['maximumnumberofattemptsreached'] = 'Sie haben die Höchstzahl der Versuche erreicht - weiter zur nächsten Seite';
 $string['mediaclose'] = 'Taste \'Schließen\' anzeigen';
@@ -347,11 +350,17 @@ $string['modattempts'] = 'Wiederholung erlauben';
 $string['modattempts_help'] = 'Wenn diese Option aktiviert ist, können Teilnehmer/innen erneut durch die Lektion navigieren.';
 $string['modattemptsnoteacher'] = 'Navigation nur für Teilnehmer/innen möglich';
 $string['modulename'] = 'Lektion';
-$string['modulename_help'] = 'Lektionen bestehen aus einer Reihe von Seiten und Verlinkungen zwischen den Seiten. Führen Sie die Teilnehmer/innen stringent von Seite zu Seite oder bieten Sie ihnen Auswahlmöglichkeiten.
+$string['modulename_help'] = 'Lektionen bestehen aus einer Reihe von Seiten und Verlinkungen zwischen den Seiten. Führen Sie die Teilnehmer/innen stringent von Seite zu Seite oder bieten Sie ihnen Auswahlmöglichkeiten. Je nach der Antwort der Teilnehmer/innen und der Art und Weise, wie die/der Trainer/in die Lektion entwickelt, können die Teilnehmer/innen auf die nächste Seite weitergehen, auf eine vorherige Seite zurückgeführt oder auf einen ganz anderen Weg umgeleitet werden.
 
-Bei Testfrageseiten können Folgeseiten von der abgegebenen Antwort abhängig gemacht werden.
+Eine Lektion kann bewertet werden, wobei die Endnote in den Bewertungen festgehalten wird.
 
-Alle Inhalte der Lektion können im Unterschied zu Lernpaketen oder IMS-Content direkt in Moodle erstellt werden.';
+Alle Inhalte der Lektion können im Unterschied zu Lernpaketen oder IMS-Content direkt in Moodle erstellt werden.
+
+Eine Lektions-Aktivität kann verwendet werden
+
+* Zum selbstgesteuerten Lernen eines neuen Themas
+* Für Szenarien oder Simulationen/Entscheidungsübungen
+* Für differenzierte Repetitionen, mit verschiedenen Sätzen von Repetitionfragen, je nach den Antworten auf die ersten Fragen';
 $string['modulenameplural'] = 'Lektionen';
 $string['move'] = 'Seite verschieben';
 $string['movedpage'] = 'Seite verschoben';
@@ -366,7 +375,7 @@ $string['nameapproved'] = 'Name akzeptiert';
 $string['namereject'] = 'Der eingegebene Name wurde zurückgewiesen.<br />Bitte versuchen Sie es mit einem anderem Namen noch einmal.';
 $string['new'] = 'Neu';
 $string['nextpage'] = 'Nächste Seite';
-$string['noanswer'] = 'Eine oder mehrere Fragen wurden nicht beantwortet. Gehen Sie zurück und geben Sie die Antworten ein.';
+$string['noanswer'] = 'Eine oder mehrere Fragen wurden nicht beantwortet. Gehen Sie zurück und geben Sie Antworten ein.';
 $string['noattemptrecordsfound'] = 'Keine aufgezeichneten Daten gefunden: Keine Bewertung vorgenommen';
 $string['nobranchtablefound'] = 'Keine Inhaltsseite gefunden';
 $string['noclose'] = 'Keine Endzeit';
@@ -409,7 +418,7 @@ $string['numberofpagesviewedheader'] = 'Anzahl beantworteter Fragen';
 $string['numberofpagesviewednotice'] = 'Zahl der beantworteten Fragen: {$a->nquestions} (mindestens zu beantworten: {$a->minquestions})';
 $string['numerical'] = 'Numerisch';
 $string['numericanswer'] = 'Numerische Antwort';
-$string['numericanswer_help'] = 'Sie können eine Zahl oder einen Zahlenbereich mit einem Doppelpunkt angeben. Beispielsweise bedeutet 2:5, dass jede Antwort zwischen 2 und 5 einschließlich dieser richtig ist.';
+$string['numericanswer_help'] = 'Sie können eine Zahl oder einen Zahlenbereich zwischen zwei Zahlen mit Doppelpunkt angeben. Beispielsweise bedeutet 2:5, dass jede Antwort zwischen 2 und 5 einschließlich dieser richtig ist.';
 $string['offlinedatamessage'] = 'Sie haben an diesem Versuch mit einem mobilen Gerät gearbeitet. Die Daten wurden gespeichert, und zwar auf der Website zuletzt vor {$a}. Prüfen Sie, dass Sie keine ungespeicherten Arbeiten mehr auf dem mobilen Gerät haben.';
 $string['ongoing'] = 'Aktuelle Bewertung anzeigen';
 $string['ongoing_help'] = 'Wenn diese Option aktiviert ist, wird den Teilnehmer/innen auf jeder Seite ihre aktuelle Bewertung zusammen mit der maximal erreichbaren Bewertung angezeigt.';
@@ -507,8 +516,8 @@ $string['processerror'] = 'Fehler während der Verarbeitung aufgetreten!';
 $string['progressbar'] = 'Fortschrittsbalken';
 $string['progressbar_help'] = 'Wenn diese Option aktiviert ist, wird ein Fortschrittsbalken unten auf den Lektionsseiten angezeigt, der einen ungefähren Prozentwert der Bearbeitung darstellt.';
 $string['progressbarteacherwarning'] = 'Fortschrittsbalken wird für {$a} nicht anzeigen';
-$string['progressbarteacherwarning2'] = 'Die Fortschrittsanzeige wird Ihnen nicht angezeigt, da Sie diese Lektion als Trainer/in bearbeiten können.';
-$string['progresscompleted'] = 'Sie haben {$a}% der Lektion erledigt';
+$string['progressbarteacherwarning2'] = 'Die Fortschrittsanzeige wird Ihnen nicht angezeigt, weil Sie diese Lektion als Trainer/in bearbeiten können.';
+$string['progresscompleted'] = 'Sie haben {$a}% der Lektion erledigt.';
 $string['qtype'] = 'Seitentyp';
 $string['question'] = 'Frage';
 $string['questionoption'] = 'Zusatzoption';
@@ -542,7 +551,7 @@ $string['savepage'] = 'Seite speichern';
 $string['score'] = 'Bewertung';
 $string['score_help'] = 'Punkte werden nur verwendet, wenn eine benutzerdefinierte Bewertung aktiviert ist. Jeder Antwort kann einen (positiver oder negativer) Zahlenwert gegeben werden.';
 $string['scores'] = 'Bewertung';
-$string['search:activity'] = 'Lektion - Beschreibung';
+$string['search:activity'] = 'Lektion - Aktivitätsinfo';
 $string['secondpluswrong'] = 'Nicht ganz. Möchten Sie es noch einmal versuchen?';
 $string['selectallattempts'] = 'Alle Versuche auswählen';
 $string['selectaqtype'] = 'Fragetyp auswählen';
@@ -609,7 +618,7 @@ $string['wronganswerjump'] = 'Sprung bei falscher Antwort';
 $string['wronganswerscore'] = 'Bewertung bei falscher Antwort';
 $string['wrongresponse'] = 'Feedback bei falscher Antwort';
 $string['xattempts'] = '{$a} Versuche';
-$string['youhaveseen'] = 'Sie haben einige Seiten der Lektion schon einmal bearbeitet. <br />Wollen Sie an der Stelle fortsetzen, an der Sie damals aufgehört haben?';
+$string['youhaveseen'] = 'Sie haben einige Seiten der Lektion schon einmal bearbeitet. <br />Möchten Sie an der Stelle weitermachen, an der Sie damals aufgehört haben?';
 $string['youranswer'] = 'Ihre Antwort';
 $string['yourcurrentgradeis'] = 'Derzeitige Bewertung: {$a}';
 $string['yourcurrentgradeisoutof'] = 'Ihre derzeitige Bewertung ist {$a->grade} von {$a->total}';

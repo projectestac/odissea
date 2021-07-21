@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'zh_cn', version '3.8'.
+ * Strings for component 'langconfig', language 'zh_cn', version '3.11'.
  *
  * @package     langconfig
  * @category    string
@@ -51,6 +51,8 @@ $string['strftimemonthyear'] = '%Y年%m月';
 $string['strftimerecent'] = '%m月%d日 %H:%M';
 $string['strftimerecentfull'] = '%Y年%m月%d日 %A %H:%M';
 $string['strftimetime'] = '%H:%M';
+$string['strftimetime12'] = '%I:%M %p';
+$string['strftimetime24'] = '%H:%M';
 $string['thisdirection'] = 'ltr';
 $string['thisdirectionvertical'] = 'btt';
 $string['thislanguage'] = '简体中文';

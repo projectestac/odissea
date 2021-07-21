@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'fr', version '3.8'.
+ * Strings for component 'message', language 'fr', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -77,9 +77,7 @@ $string['errormessagetoolong'] = 'Le message est plus long que le maximum autori
 $string['errortranslatingdefault'] = 'Erreur lors de la conversion d\'un réglage par défaut fourni par le plugin. Utilisation des réglages par défaut du système.';
 $string['eventgroupmessagesent'] = 'Message de groupe envoyé';
 $string['eventmessagecontactadded'] = 'Contact de messagerie personnelle ajouté';
-$string['eventmessagecontactblocked'] = 'Contact de messagerie personnelle bloqué';
 $string['eventmessagecontactremoved'] = 'Contact de messagerie personnelle supprimé';
-$string['eventmessagecontactunblocked'] = 'Contact de messagerie personnelle débloqué';
 $string['eventmessagedeleted'] = 'Message supprimé';
 $string['eventmessagesent'] = 'Message personnel envoyé';
 $string['eventmessageuserblocked'] = 'Utilisateur bloqué';
@@ -106,8 +104,10 @@ $string['loggedoff_help'] = 'Configurez comment vous désirez recevoir les notif
 $string['loggedoffdescription'] = 'Quand je ne suis pas connecté à Moodle';
 $string['managemessageoutputs'] = 'Préférences de notification par défaut';
 $string['message'] = 'Message personnel';
+$string['messagecontactrequest'] = '{$a->user} demande à être ajouté comme contact. Veuillez visiter la page des <a href="{$a->url}">demandes de contact</a> pour répondre à la demande';
 $string['messagecontactrequestsnotification'] = '{$a} demande à être ajouté à vos contacts.';
 $string['messagecontactrequestsnotificationsubject'] = 'Demande de contact de {$a}';
+$string['messagecontactrequestsubject'] = '{$a->sitename} : demande de contact de {$a->user}';
 $string['messagecontentaudio'] = 'Audio';
 $string['messagecontentimage'] = 'Image';
 $string['messagecontentmultimediageneral'] = 'Autre média';
@@ -123,8 +123,8 @@ $string['messageoutputs'] = 'Plugins de notification';
 $string['messagepreferences'] = 'Préférences des messages';
 $string['messages'] = 'Messages personnels';
 $string['messagesselected:'] = 'Messages sélectionnés :';
+$string['messagetextrequired'] = 'Veuillez saisir un message';
 $string['messagingdatahasnotbeenmigrated'] = 'Vos messages sont temporairement non disponibles en raison de la mise à jour de l\'infrastructure de messagerie. Veuillez attendre la mise à jour des données de messagerie.';
-$string['messagingdisabled'] = 'La messagerie personnelle est désactivée. Ce message sera envoyé par courriel à ses destinataires';
 $string['muteconversation'] = 'Mettre en sourdine';
 $string['mutedconversation'] = 'Conversation en sourdine';
 $string['newmessage'] = 'Nouveau message';
@@ -161,6 +161,7 @@ $string['outputdoesnotexist'] = 'L\'output du message n\'existe pas';
 $string['outputenabled'] = 'Output activé';
 $string['outputnotavailable'] = 'Non disponible';
 $string['outputnotconfigured'] = 'Non configuré';
+$string['page-message-x'] = 'Toute page de messagerie';
 $string['participants'] = 'Participants';
 $string['pendingcontactrequests'] = 'Il y a {$a} demandes de contact en attente';
 $string['permitted'] = 'Autorisé';
@@ -258,7 +259,7 @@ $string['shownotificationwindowwithcount'] = 'Afficher la fenêtre des notificat
 $string['togglemessagemenu'] = 'Ouvrir/fermer le tiroir des messages';
 $string['togglenotificationmenu'] = 'Ouvrir/fermer le menu notifications';
 $string['totalconversations'] = '{$a} conversations';
-$string['touserdoesntexist'] = 'Vous ne pouvez pas envoyer de message à un utilisateur ({$a}) qui n\'existe pas';
+$string['touserdoesntexist'] = 'Vous ne pouvez pas envoyer de message à un utilisateur (ID {$a}) qui n\'existe pas.';
 $string['unabletomessage'] = 'Vous ne pouvez pas envoyer un message à cet utilisateur';
 $string['unblock'] = 'Débloquer';
 $string['unblockcontact'] = 'Débloquer ce contact';
@@ -274,8 +275,6 @@ $string['unreadnotification'] = 'Notifications non lues : {$a}';
 $string['unreadnotifications'] = 'Il y a {$a} notifications non lues';
 $string['useentertosend'] = 'Taper entrée pour envoyer';
 $string['usercantbemessaged'] = 'Vous ne pouvez pas envoyer de message à {$a} en raison de leurs préférences de messagerie personnelle. Essayez de les ajouter à vos contacts.';
-$string['userisblockingyou'] = 'Cet utilisateur vous a retiré la permission de lui envoyer des messages personnels.';
-$string['userisblockingyounoncontact'] = '{$a} n\'accepte de messages personnels que de personnes de sa liste de contacts.';
 $string['userwouldliketocontactyou'] = '{$a} aimerait vous contacter';
 $string['viewfullnotification'] = 'Afficher la notification complète';
 $string['viewmessageswith'] = 'Consulter les messages avec {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'pt', version '3.8'.
+ * Strings for component 'message', language 'pt', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -77,9 +77,7 @@ $string['errormessagetoolong'] = 'A mensagem é mais longa do que o máximo perm
 $string['errortranslatingdefault'] = 'Ocorreu um erro na tradução dada pelo módulo, irá usar as configurações predefinidas do site.';
 $string['eventgroupmessagesent'] = 'Enviada mensagem para grupo';
 $string['eventmessagecontactadded'] = 'Contacto de mensagem adicionado';
-$string['eventmessagecontactblocked'] = 'Contacto de mensagem bloqueado';
 $string['eventmessagecontactremoved'] = 'Contacto de mensagem removido';
-$string['eventmessagecontactunblocked'] = 'Contacto de mensagem desbloqueado';
 $string['eventmessagedeleted'] = 'Mensagem apagada';
 $string['eventmessagesent'] = 'Mensagem enviada';
 $string['eventmessageuserblocked'] = 'Utilizador bloqueado';
@@ -106,8 +104,10 @@ $string['loggedoff_help'] = 'Configurar o modo de receber as notificações quan
 $string['loggedoffdescription'] = 'Quando está offline';
 $string['managemessageoutputs'] = 'Predefinições da notificação';
 $string['message'] = 'Mensagem';
+$string['messagecontactrequest'] = '{$a->user} está a solicitar que adicione como seu contacto. Visite a sua <a href="{$a->url}">página de solicitações de contacto</a> para responder à solicitação';
 $string['messagecontactrequestsnotification'] = '{$a} está a solicitar para ser adicionado como contacto.';
 $string['messagecontactrequestsnotificationsubject'] = 'Solicitação de contacto de {$a}';
+$string['messagecontactrequestsubject'] = '{$a->sitename}: Solicitação de contacto de {$a->user}';
 $string['messagecontentaudio'] = 'Áudio';
 $string['messagecontentimage'] = 'Imagem';
 $string['messagecontentmultimediageneral'] = 'Outra media';
@@ -123,8 +123,8 @@ $string['messageoutputs'] = 'Módulos de notificação';
 $string['messagepreferences'] = 'Preferências das mensagens';
 $string['messages'] = 'Mensagens';
 $string['messagesselected:'] = 'Mensagens selecionadas:';
+$string['messagetextrequired'] = 'Insira o texto da mensagem';
 $string['messagingdatahasnotbeenmigrated'] = 'As suas mensagens estão temporariamente indisponíveis devido a atualizações na infraestrutura de mensagens. Por favor, aguarde que termine a migração.';
-$string['messagingdisabled'] = 'O sistema de mensagens encontra-se desativado neste site, em alternativa, serão enviados e-mails.';
 $string['muteconversation'] = 'Ignorar';
 $string['mutedconversation'] = 'Conversação ignorada';
 $string['newmessage'] = 'Nova mensagem';
@@ -148,7 +148,7 @@ $string['notificationimage'] = 'Imagem de notificação';
 $string['notificationpreferences'] = 'Preferências das notificações';
 $string['notifications'] = 'Notificações';
 $string['notificationwindow'] = 'Janela de notificação';
-$string['notincontacts'] = 'Precisa de adicionar {$a} aos seus contactos para poder enviar mensagens.';
+$string['notincontacts'] = 'Tem de adicionar {$a} aos seus contactos para poder enviar mensagens.';
 $string['notincontactsheading'] = '{$a} não pertence aos seus contactos';
 $string['numparticipants'] = '{$a} participantes';
 $string['off'] = 'Off';
@@ -161,6 +161,7 @@ $string['outputdoesnotexist'] = 'Método de envio de mensagens não existente';
 $string['outputenabled'] = 'Enviadas ativo';
 $string['outputnotavailable'] = 'Não está disponível';
 $string['outputnotconfigured'] = 'Não está configurado';
+$string['page-message-x'] = 'Qualquer página de mensagens';
 $string['participants'] = 'Participantes';
 $string['pendingcontactrequests'] = 'Tem {$a} solicitações de contacto pendentes';
 $string['permitted'] = 'Permitido';
@@ -239,10 +240,10 @@ $string['selectnotificationtoview'] = 'Selecione da lista de notificações ao l
 $string['selfconversation'] = 'Área pessoal';
 $string['selfconversationdefaultmessage'] = 'Guarde rascunhos de mensagens, hiperligações, notas, etc. para aceder mais tarde.';
 $string['send'] = 'Enviar';
-$string['sendbulkmessage'] = 'Enviar mensagem para {$a} pessoas';
+$string['sendbulkmessage'] = 'Enviar mensagem para {$a} participantes';
 $string['sendbulkmessagesent'] = 'Mensagem enviada para {$a} pessoas';
 $string['sendbulkmessagesentsingle'] = 'Mensagem enviada para 1 pessoa';
-$string['sendbulkmessagesingle'] = 'Enviar mensagem para 1 pessoa';
+$string['sendbulkmessagesingle'] = 'Enviar mensagem para 1 participante';
 $string['sendcontactrequest'] = 'Enviar pedido de contacto';
 $string['sender'] = '{$a}:';
 $string['sendingvia'] = 'A enviar "{$a->provider}" via "{$a->processor}"';
@@ -258,7 +259,7 @@ $string['shownotificationwindowwithcount'] = 'Mostrar janela de notificação co
 $string['togglemessagemenu'] = 'Alternar a caixa de mensagens';
 $string['togglenotificationmenu'] = 'Alternar o menu de notificações';
 $string['totalconversations'] = '{$a} conversações';
-$string['touserdoesntexist'] = 'Não pode enviar uma mensagem ao utilizador com id ({$a}) que não existe';
+$string['touserdoesntexist'] = 'Não pode enviar uma mensagem ao utilizador com ID ({$a}) que não existe.';
 $string['unabletomessage'] = 'Não é permitido enviar mensagens para este utilizador';
 $string['unblock'] = 'Desbloquear';
 $string['unblockcontact'] = 'Desbloquear contacto';
@@ -274,8 +275,6 @@ $string['unreadnotification'] = 'Notificação não lida: {$a}';
 $string['unreadnotifications'] = 'Tem {$a} notificações não lidas';
 $string['useentertosend'] = 'Usar \'Enter\' para enviar';
 $string['usercantbemessaged'] = 'Não pode enviar mensagens a {$a} devido às suas preferências de mensagem. Tente adicioná-lo(s) como contacto.';
-$string['userisblockingyou'] = 'Este utilizador bloqueou-lhe o envio de mensagens para ele';
-$string['userisblockingyounoncontact'] = '{$a} só aceita mensagens de pessoas que estejam na sua lista de contactos.';
 $string['userwouldliketocontactyou'] = '{$a} gostaria de entrar em contacto consigo';
 $string['viewfullnotification'] = 'Ver notificação completa';
 $string['viewmessageswith'] = 'Visualizar mensagens com {$a}';

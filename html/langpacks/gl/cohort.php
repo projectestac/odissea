@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'gl', version '3.8'.
+ * Strings for component 'cohort', language 'gl', version '3.11'.
  *
  * @package     cohort
  * @category    string
@@ -64,7 +64,7 @@ $string['idnumber'] = 'ID do círculo';
 $string['invalidtheme'] = 'Non existe o tema do círculo';
 $string['memberscount'] = 'Tamaño do círculo';
 $string['name'] = 'Nome';
-$string['namecolumnmissing'] = 'Algo está mal co formato do ficheiro CSV. Revise que inclúa os nomes das columnas. Teña en conta  que o envío de círculos soamente lle permite engadir novos usuarios a un círculo existente e non permite retiralos dun círculo existente.';
+$string['namecolumnmissing'] = 'Algo está mal co formato do ficheiro CSV. Revise que inclúa os nomes das columnas. Teña en conta que o envío de círculos soamente lle permite engadirlle novos usuarios a un círculo existente e non permite retiralos dun círculo existente.';
 $string['namefieldempty'] = 'O nome do campo non pode estar baleiro.';
 $string['newidnumberfor'] = 'Novo número ID para o círculo {$a}';
 $string['newnamefor'] = 'Novo nome para o círculo {$a}';
@@ -76,7 +76,7 @@ $string['privacy:metadata:cohort_members'] = 'Información sobre o círculo do u
 $string['privacy:metadata:cohort_members:cohortid'] = 'O ID do círculo';
 $string['privacy:metadata:cohort_members:timeadded'] = 'A marca de tempo que indica cando foi engadido o usuario ao círculo';
 $string['privacy:metadata:cohort_members:userid'] = 'O ID do usuario que está asociado ao círculo';
-$string['removeuserwarning'] = 'A retirada dos usuarios dun círculo pode resultar nunha desmatriculación de usuarios de múltiples cursos, o que inclúe a eliminación dos axustes do usuario, as cualificacións, a pertenza a grupos e outra información dos usuarios dos cursos afectados.';
+$string['removeuserwarning'] = 'A retirada dos usuarios dun círculo pode resultar nunha desmatriculación de usuarios de varios cursos, o que inclúe a eliminación dos axustes do usuario, as cualificacións, a pertenza a grupos e outra información dos usuarios dos cursos afectados.';
 $string['search'] = 'Buscar';
 $string['searchcohort'] = 'Buscar un círculo';
 $string['selectfromcohort'] = 'Seleccionar os membros do círculo';

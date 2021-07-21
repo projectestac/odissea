@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_securewindow', language 'ru', version '3.8'.
+ * Strings for component 'quizaccess_securewindow', language 'ru', version '3.11'.
  *
  * @package     quizaccess_securewindow
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Правило доступа к тесту: JavaScript-защита';
 $string['popupwithjavascriptsupport'] = 'Полноэкранное всплывающее окно с защитой JavaScript';
+$string['privacy:metadata'] = 'Плагин правила доступа к тесту с безопасным JavaScript не хранит никаких личных данных.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'sv', version '3.8'.
+ * Strings for component 'enrol_self', language 'sv', version '3.11'.
  *
  * @package     enrol_self
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'Registrering är stängd eller inaktiverad';
-$string['canntenrolearly'] = 'Kursen är öppnar för registrering den {$a}.';
-$string['canntenrollate'] = 'Kursen är stängd för registrering sedan den {$a}.';
+$string['canntenrolearly'] = 'Du kan inte registrera dig ännu. Kursen öppnar börjar {$a}.';
+$string['canntenrollate'] = 'Kursen är stängd för registrering sedan {$a}.';
 $string['cohortnonmemberinfo'] = 'Endast medlemmar av kohort {$a} kan självregistrera.';
 $string['cohortonly'] = 'Endast kohortmedlemmarna';
 $string['cohortonly_help'] = 'Självregistrering kan begränsas till medlemmar av en viss kohort. Observera att om du ändrar den här inställningen har detta ingen effekt på befintliga registreringar.';
@@ -70,7 +70,7 @@ För att förlänga deras inskrivning, gå till {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Meddelande vid förfallen registrering';
 $string['expirynotifyall'] = 'Lärare och registrerad användare';
 $string['expirynotifyenroller'] = 'Endast lärare';
-$string['groupkey'] = 'Använd grupp-kursnycklar.';
+$string['groupkey'] = 'Använd grupp-registreringsnycklar.';
 $string['groupkey_desc'] = 'Använd grupp-registreringsnycklar som standard.';
 $string['groupkey_help'] = 'Förutom att begränsa åtkomsten till kursen till endast de som känner till nyckeln, innebär användning av gruppregistreringsnycklar att användare automatiskt läggs till i grupper när de registrerar sig i kursen.
 
@@ -79,7 +79,7 @@ $string['keyholder'] = 'Du bör ha fått denna registreringsnyckel från:';
 $string['longtimenosee'] = 'Avregistrera inaktiva användare efter';
 $string['longtimenosee_help'] = 'Om användare inte har besökt kurssidan inom angiven tid avregistreras de automatiskt.';
 $string['maxenrolled'] = 'Maximalt antal registrerade användare';
-$string['maxenrolled_help'] = 'Det maximala antal användare som kan registrera sig själva. Värdet 0 innebär ett obegränsat antal.';
+$string['maxenrolled_help'] = 'Det maximala antal användare som kan registrera sig själva. 0 = obegränsat antal.';
 $string['maxenrolledreached'] = 'Det maximala antalet användare som kan självregistrera sig har redan uppnåtts.';
 $string['messageprovider:expiry_notification'] = 'Meddelande vid förfallen registrering';
 $string['newenrols'] = 'Tillåt nya registreringar';
@@ -96,12 +96,13 @@ $string['passwordinvalid'] = 'Felaktig registreringsnyckel, vänligen försök i
 $string['passwordinvalidhint'] = 'Den angivna registreringsnyckeln var felaktig. Vänligen försök igen.<br />
 (Här är ett tips - det börjar med \'{$a}\')';
 $string['pluginname'] = 'Självregistrering';
-$string['pluginname_desc'] = 'Pluginmodulen <em>Självregistrering</em> gör det möjligt för användare att välja vilka kurser de vill delta i. Kurserna kan vara skyddade med en inskrivningsnyckel. Internt sker registreringen med hjälp av pluginmodulen <em>Manuell registrering</em> varför även denna måste vara aktiverad i kursen.';
+$string['pluginname_desc'] = 'Pluginmodulen <em>Självregistrering</em> gör det möjligt för användare att välja vilka kurser de vill delta i. Kurserna kan vara skyddade med en registreringsnyckel. Internt sker registreringen med hjälp av pluginmodulen <em>Manuell registrering</em> varför även denna måste vara aktiverad i kursen.';
 $string['privacy:metadata'] = 'Pluginmodulen Självregistrering lagrar ingen personlig information.';
 $string['requirepassword'] = 'Kräv registreringsnyckel';
 $string['requirepassword_desc'] = 'Kräv registreringsnyckel i nya kurser och förhindra borttagande av registreringsnyckel från befintliga kurser.';
 $string['role'] = 'Standardtilldelad roll';
-$string['self:config'] = 'Konfigurera självregistrerings instanser';
+$string['self:config'] = 'Konfigurera självregistreringsinstanser';
+$string['self:enrolself'] = 'Registrera dig på en kurs';
 $string['self:holdkey'] = 'Visas som nyckelinnehavaren vid självregistrering';
 $string['self:manage'] = 'Hantera registrerade användare';
 $string['self:unenrol'] = 'Avregistrera användare från kursen';
@@ -110,7 +111,7 @@ $string['sendcoursewelcomemessage'] = 'Skicka välkomstmeddelande';
 $string['sendcoursewelcomemessage_help'] = 'När en användare själv registrerar sig på kursen kan hen få ett välkomstmeddelande via e-post. Om det skickas från kurskontakten (som standard, läraren), och fler än en användare har den här rollen, skickas e-postmeddelandet från den första användaren som tilldelats rollen.';
 $string['sendexpirynotificationstask'] = 'Skicka meddelande om självregistreringar som förfallit';
 $string['showhint'] = 'Visa ledtråd';
-$string['showhint_desc'] = 'Visa första bokstaven i gäst-nyckeln.';
+$string['showhint_desc'] = 'Visa första bokstaven i registreringsnyckeln.';
 $string['status'] = 'Tillåt befintliga registreringar';
 $string['status_desc'] = 'Aktivera sjävregistreringsmetod i nya kurser.';
 $string['status_help'] = 'Om aktiverad och \'Tillåt nya inskrivningar\' samtidigt är inaktiverad kan endast användare som själv anmält sig tidigare komma åt kursen. Om inaktiverad är denna självinskrivningsmetod de facto inaktiverad, eftersom alla befintliga självinskrivningar är avstängda och nya användare kan registrera sig själva.';

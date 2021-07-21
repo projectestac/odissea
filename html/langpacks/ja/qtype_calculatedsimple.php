@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'ja', version '3.8'.
+ * Strings for component 'qtype_calculatedsimple', language 'ja', version '3.11'.
  *
  * @package     qtype_calculatedsimple
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'pt', version '3.8'.
+ * Strings for component 'my', language 'pt', version '3.11'.
  *
  * @package     my
  * @category    string
@@ -36,9 +36,10 @@ $string['mymoodle'] = 'Painel do utilizador';
 $string['nocourses'] = 'Sem informação das suas disciplinas para mostrar.';
 $string['noguest'] = 'O Painel do utilizador não está disponível para visitantes';
 $string['pinblocks'] = 'Configurar blocos fixos para a \'Minha página principal\'';
-$string['pinblocksexplan'] = 'Quaisquer definições de blocos que aqui sejam configuradas serão disponibilizadas (sem possibilidade de edição) a qualquer utilizador do Moodle na sua página \'Minha página principal\'';
+$string['pinblocksexplan'] = 'Quaisquer configurações do bloco que aqui sejam definidas serão disponibilizadas (sem possibilidade de edição) a todos os utilizadores do Moodle na sua página \'Painel do utilizador\'';
 $string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'Preferência da página principal do utilizador.';
 $string['reseterror'] = 'Houve um erro ao redefinir a sua página';
 $string['reseteveryonesdashboard'] = 'Restaurar as páginas de Painel do utilizador de todos os utilizadores';
 $string['reseteveryonesprofile'] = 'Restaurar as páginas de Perfil de todos os utilizadores';
 $string['resetpage'] = 'Restaurar página para os valores predefinidos';
+$string['resettingdashboards'] = 'Restaurar o Painel do utilizador para os valores predefinidos';

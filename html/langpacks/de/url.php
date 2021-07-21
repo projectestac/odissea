@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'de', version '3.8'.
+ * Strings for component 'url', language 'de', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -62,16 +62,16 @@ $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz 
 $string['invalidstoredurl'] = 'Das Material kann nicht angezeigt werden, weil die URL ungültig ist';
 $string['invalidurl'] = 'Ungültige URL';
 $string['modulename'] = 'Link/URL';
-$string['modulename_help'] = 'Mit einer URL verlinken Sie auf vorhandene Seiten im Internet. Damit lenken Sie Ihre Teilnehmer/innen direkt zu geeigneten Informationsquellen und Lernmaterialien. Die Verlinkung vermeidet urheberrechtliche Probleme beim Kopieren von Inhalten.
+$string['modulename_help'] = 'Mit einer URL verlinken Sie auf vorhandene Seiten im Internet. Damit lenken Sie Ihre Teilnehmer/innen direkt zu geeigneten Informationsquellen und Lernmaterialien. Die URL einer bestimmten Webseite kann kopiert und eingefügt werden, oder ein/e Trainer/in kann die Dateiauswahl verwenden und einen Link aus einem Repository wie Flickr, YouTube oder Wikimedia auswählen (je nachdem, welche Repositories für die Website aktiviert sind). Die Verlinkung vermeidet urheberrechtliche Probleme beim Kopieren von Inhalten.
 
 Legen Sie fest, ob die verlinkte Seite in einem neuen Fenster geöffnet oder in die Kursumgebung eingebettet werden soll.
 
-Hinweis: Verlinkungen und URLs können mit dem Texteditor auch in jede andere Seite oder Aktivität integriert werden.';
+Hinweis: Verlinkungen und URLs können mit dem Texteditor auch in jede andere Ressource oder Aktivität integriert werden.';
 $string['modulenameplural'] = 'Links/URLs';
 $string['page-mod-url-x'] = 'Jede URL-Seite';
 $string['parameterinfo'] = '&amp;parameter=variable';
 $string['parametersheader'] = 'URL Variablen';
-$string['parametersheader_help'] = 'Einige interne Moodle-Variablen können automatisch an die URL angehängt werden. Tragen Sie den Parameternamen ein Textfeld ein und wählen Sie anschließend die entsprechend zu verknüpfende Variable.';
+$string['parametersheader_help'] = 'In diesem Abschnitt können Sie interne Informationen als Teil der URL übergeben. Dies ist nützlich, wenn die URL eine interaktive Webseite ist, die Parameter akzeptiert und der Sie z.B. den aktuellen Nutzernamen übergeben möchten. Geben Sie den Namen des URL-Parameters in das Textfeld ein und wählen Sie die entsprechende Website-Variable aus.';
 $string['pluginadministration'] = 'URL-Administration';
 $string['pluginname'] = 'Link/URL';
 $string['popupheight'] = 'Popup-Höhe (Pixel)';

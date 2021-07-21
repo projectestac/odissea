@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_backcolor', language 'sv', version '3.8'.
+ * Strings for component 'atto_backcolor', language 'sv', version '3.11'.
  *
  * @package     atto_backcolor
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Bakgrundsfärg';
+$string['privacy:metadata'] = 'Pluginmodulen atto_backcolor lagrar ingen personinformation.';

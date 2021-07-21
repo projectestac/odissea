@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_backups', language 'ru', version '3.8'.
+ * Strings for component 'report_backups', language 'ru', version '3.11'.
  *
  * @package     report_backups
  * @category    string
@@ -25,10 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backupofcourselogs'] = 'Резервное копирование журналов для {$a}';
+$string['backupofcourselogs'] = 'Журналы резервного копирования для {$a}';
 $string['logsofbackupexecutedon'] = 'Журналы резервного копирования {$a}';
 $string['nobackupsfound'] = 'Резервные копии не найдены.';
 $string['nologsfound'] = 'Журналы для этой резервной копии не найдены.';
 $string['pluginname'] = 'Отчет о резервных копиях';
+$string['privacy:metadata'] = 'Плагин отчетов о резервных копиях не хранит никаких личных данных.';
 $string['strftimetime'] = '%H:%M:%S';
 $string['viewlogs'] = 'Показать журналы';

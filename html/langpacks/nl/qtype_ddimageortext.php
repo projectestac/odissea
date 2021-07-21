@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'nl', version '3.8'.
+ * Strings for component 'qtype_ddimageortext', language 'nl', version '3.11'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -57,7 +57,7 @@ $string['infinite'] = 'Onbeperkt';
 $string['label'] = 'Tekst';
 $string['nolabel'] = 'Geen labeltekst';
 $string['pleasedraganimagetoeachdropregion'] = 'Je antwoord is niet volledig; sleep een item naar elke doelzone.';
-$string['pluginname'] = 'Sleep en neerzetten op afbeelding';
+$string['pluginname'] = 'Slepen en neerzetten op afbeelding';
 $string['pluginname_help'] = 'Vragen met slepen en neerzetten op afbeelding vragen van de respondent dat die afbeeldingen of tekst labels sleept en neerzet op een bepaalde zone van een achtergrondafbeelding. Sleepbare items kunnen gegroepeerd worden zodat alle items in een bepaalde groep gekleurd worden zoals de doelzones. Versleepbare items die als onbeperkt gemarkeerd zijn, kunnen op meer dan één zone neergezet worden.';
 $string['pluginnameadding'] = 'Voeg slepen en neerzetten op afbeelding toe';
 $string['pluginnameediting'] = 'Bewerk slepen en neerzetten op afbeelding';
@@ -66,7 +66,10 @@ $string['pluginnamesummary'] = 'Afbeeldingen of tekstlabels worden gesleept en n
 Merk op: dit vraagtype is niet toegankelijk slechtzienden.';
 $string['previewareaheader'] = 'Voorbeeld';
 $string['previewareamessage'] = 'Selecteer een achtergrondafbeelding, bepaal versleepbare items en bepaal neerzetzones op de achtergrondafbeelding waarin ze gesleept moeten worden.';
-$string['privacy:metadata'] = 'De plug-in Drag and drop to image question type slaat geen persoonlijke gegevens op.';
+$string['privacy:metadata'] = 'Slepen en neerzetten op afbeelding vraagtype laat vraag-auteurs standaardopties en gebruikersvoorkeuren instellen.';
+$string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
+$string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
+$string['privacy:preference:shuffleanswers'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['refresh'] = 'Voorbeeld verversen';
 $string['shuffleimages'] = 'Schud de versleepbare items door elkaar, telkens wanneer de vraag getoond wordt.';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

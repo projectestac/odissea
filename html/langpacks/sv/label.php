@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'sv', version '3.8'.
+ * Strings for component 'label', language 'sv', version '3.11'.
  *
  * @package     label
  * @category    string
@@ -45,7 +45,7 @@ $string['label:addinstance'] = 'Ny etikett';
 $string['label:view'] = 'Visa etikett';
 $string['labeltext'] = 'Text på etikett';
 $string['modulename'] = 'Etikett';
-$string['modulename_help'] = 'Etikettmodulen gör det möjligt att infoga text och multimedia på kurssidan ibland länkar till andra resurser och aktiviteter. Etiketter är mycket användbara och kan bidra till att förbättra utseendet på en kurs om de används eftertänksamt.
+$string['modulename_help'] = 'Modulen <em>Etikett</em> gör det möjligt att infoga text och multimedia på kurssidan bland länkar till andra resurser och aktiviteter. Etiketter är mycket användbara och kan bidra till att förbättra utseendet på en kurs om de används eftertänksamt.
 
 Etiketter kan användas för att
 

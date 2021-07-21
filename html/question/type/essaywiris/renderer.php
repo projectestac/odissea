@@ -28,8 +28,7 @@ class qtype_essaywiris_renderer extends qtype_wq_renderer  {
         $result = $this->base->formulation_and_controls($qa, $options);
 
         // Auxiliar text.
-        $showauxiliartextinput = $qa->get_question()->wirisquestion->question->getProperty(
-            com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_AUXILIAR_TEXT_INPUT); // @codingStandardsIgnoreLine
+        $showauxiliartextinput = $qa->get_question()->wirisquestion->question->getProperty(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_AUXILIAR_TEXT_INPUT); // @codingStandardsIgnoreLine
         if ($showauxiliartextinput) {
             $result .= $this->auxiliar_text($qa, $options);
         }

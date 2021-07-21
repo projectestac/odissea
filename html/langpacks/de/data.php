@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'de', version '3.8'.
+ * Strings for component 'data', language 'de', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -59,14 +59,14 @@ $string['bynameondate'] = 'von {$a->name} - {$a->date}';
 $string['calendarend'] = '{$a} endet';
 $string['calendarstart'] = '{$a} beginnt';
 $string['cancel'] = 'Abbrechen';
-$string['cannotaccesspresentsother'] = 'Sie können nicht auf Vorlagen anderer Nutzer/innen zugreifen.';
-$string['cannotadd'] = 'Kann keine Einträge hinzufügen!';
+$string['cannotaccesspresentsother'] = 'Sie können nicht auf die Vorlagen anderer Nutzer/innen zugreifen.';
+$string['cannotadd'] = 'Einträge können nicht hinzugefügt werden!';
 $string['cannotdeletepreset'] = 'Fehler beim Löschen der Vorlage';
 $string['cannotoverwritepreset'] = 'Fehler beim Überschreiben der Vorgabe';
 $string['cannotunziptopreset'] = 'Fehler beim Entpacken im Vorlagenverzeichnis';
 $string['checkbox'] = 'Mehrfachauswahl';
-$string['chooseexportfields'] = 'Felder für Export auswählen:';
-$string['chooseexportformat'] = 'Exportformat auswählen:';
+$string['chooseexportfields'] = 'Felder für Export auswählen';
+$string['chooseexportformat'] = 'Exportformat auswählen';
 $string['chooseorupload'] = 'Datei wählen';
 $string['closebeforeopen'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
 $string['columns'] = 'Spalten';
@@ -77,11 +77,12 @@ $string['comments'] = 'Kommentare';
 $string['commentsaved'] = 'Kommentare gesichert';
 $string['commentsn'] = '{$a} Kommentare';
 $string['commentsoff'] = 'Kommentare sind nicht aktiviert';
+$string['completiondetail:entries'] = 'Einträge hinzufügen: {$a}';
 $string['completionentries'] = 'Einträge notwendig';
 $string['completionentriescount'] = 'Anzahl der Einträge';
-$string['completionentriesdesc'] = 'Minimale Anzahl von Einträgen erforderlich: {$a}';
+$string['completionentriesdesc'] = 'Minimale Anzahl von erforderlichen Einträgen: {$a}';
 $string['configenablerssfeeds'] = 'Mit dieser Funktion aktivieren Sie RSS-Feeds für alle Datenbanken. Nach der Aktivierung an dieser Stelle ist zusätzlich die Aktivierung in jeder einzelnen Datenbank innerhalb der Kursräume erforderlich.';
-$string['confirmdeletefield'] = 'Möchten Sie dieses Feld wirklich in der Datenbank löschen?';
+$string['confirmdeletefield'] = 'Möchten Sie dieses Feld in der Datenbank wirklich löschen?';
 $string['confirmdeleterecord'] = 'Möchten Sie diesen Datensatz in der Datenbank wirklich löschen?';
 $string['confirmdeleterecords'] = 'Möchten Sie diese Einträge wirklich löschen?';
 $string['csstemplate'] = 'CSS-Vorlage';
@@ -89,7 +90,7 @@ $string['csvfailed'] = 'Aus der CSV-Datei konnten keine Daten gelesen werden';
 $string['csvfile'] = 'CSV-Datei';
 $string['csvimport'] = 'CSV-Dateiimport';
 $string['csvimport_help'] = 'Daten können über eine CSV-Datei importiert werden, wobei die erste Zeile eine Liste von Feldnamen enthalten muss, gefolgt von den Daten mit jeweils einem Datensatz pro Zeile.';
-$string['csvwithselecteddelimiter'] = '<acronym title="Komma getrennte Werte">CSV</acronym> mit diesem Trennzeichen:';
+$string['csvwithselecteddelimiter'] = '<abbr title="Kommagetrennte Werte">CSV</abbr>';
 $string['data:addinstance'] = 'Neue Datenbank hinzufügen';
 $string['data:approve'] = 'Einträge freigeben oder sperren';
 $string['data:comment'] = 'Kommentare schreiben';
@@ -134,13 +135,13 @@ $string['editordisable'] = 'Editor ausschalten';
 $string['editorenable'] = 'Editor einschalten';
 $string['emptyadd'] = 'Eine Vorlage für das Eintragen neuer Daten ist noch nicht vorhanden. Es wird ein Basisformular erstellt...';
 $string['emptyaddform'] = 'Sie haben keine Einträge vorgenommen!';
-$string['enabletemplateeditorcheck'] = 'Sind Sie sicher, dass Sie den Bearbeitungsmodus aktivieren wollen? Dies könnte dazu führen, dass Inhalt verändert wird, wenn das Template gespeichert wird.';
+$string['enabletemplateeditorcheck'] = 'Möchten Sie den Bearbeitungsmodus wirklich aktivieren? Dies könnte dazu führen, dass Inhalte beim Speichern der Vorlage verändert werden.';
 $string['entries'] = 'Einträge';
-$string['entrieslefttoadd'] = 'Sie müssen {$a->entriesleft} (weitere) Einträge vornehmen, um diese Aktivität zu beenden.';
-$string['entrieslefttoaddtoview'] = 'Sie müssen {$a->entrieslefttoview} (weitere) Einträge vornehmen, bevor Sie andere Teilnehmerbeiträge betrachten können.';
+$string['entrieslefttoadd'] = 'Sie müssen {$a->entriesleft} weitere Einträge vornehmen, um diese Aktivität zu beenden.';
+$string['entrieslefttoaddtoview'] = 'Sie müssen {$a->entrieslefttoview} weitere Einträge vornehmen, bevor Sie Beiträge von anderen Teilnehmer/innen sehen können.';
 $string['entry'] = 'Eintrag';
 $string['entrysaved'] = 'Ihr Eintrag wurde gesichert';
-$string['errormustbeteacher'] = 'Diese Seite dürfen nur Trainer/innen benutzen!';
+$string['errormustbeteacher'] = 'Diese Seite können nur Trainer/innen verwenden!';
 $string['errormustsupplyvalue'] = 'Sie müssen hier einen Wert eintragen.';
 $string['errorpresetexists'] = 'Es gibt bereits eine Vorlage mit dem gewählten Namen';
 $string['eventfieldcreated'] = 'Feld angelegt';
@@ -156,9 +157,11 @@ $string['excel'] = 'Excel';
 $string['expired'] = 'Die Aktivität wurde am {$a} abgeschlossen und ist nicht mehr verfügbar.';
 $string['export'] = 'Export';
 $string['exportaszip'] = 'Export als ZIP-Datei';
-$string['exportaszip_help'] = 'Mit dem Export als ZIP-Datei können Sie den Vorlagensatz auf Ihren Computer herunterladen, um ihn später als "Import aus einer ZIP-Datei" in einem anderen Kurs hochzuladen und zu nutzen.';
+$string['exportaszip_help'] = 'Mit dem Export als ZIP-Datei können Sie einen Vorlagensatz herunterladen, der Felder und Vorlagen enthält. Die ZIP-Datei kann in einem anderen Kurs wieder importiert werden.';
 $string['exportedtozip'] = 'In eine temporäre ZIP-Datei exportiert...';
 $string['exportentries'] = 'Einträge exportieren';
+$string['exportformat'] = 'Exportformat';
+$string['exportoptions'] = 'Exportoptionen';
 $string['exportownentries'] = 'Nur eigene Einträge exportieren? ({$a->mine}/{$a->all})';
 $string['failedpresetdelete'] = 'Fehler beim Löschen eines Vorlagensatzes';
 $string['fieldadded'] = 'Feld hinzugefügt';
@@ -172,10 +175,11 @@ $string['fieldheightlistview'] = 'Höhe in Listenansicht';
 $string['fieldheightsingleview'] = 'Höhe in Einzelansicht';
 $string['fieldids'] = 'Feldnummern';
 $string['fieldmappings'] = 'Feldzuordnungen';
-$string['fieldmappings_help'] = 'Dieses Menü ermöglicht es, die Daten aus der bestehenden Datenbank zu behalten. Um die Daten in einem Feld zu behalten, müssen Sie das Feld in ein neues Feld übertragen ("mappen"), in dem die Daten dann erscheinen. Felder können dabei auch leer gelassen werden.  Jedes alte Feld, das keinem neuen Feld zugeordnet ist, geht verloren und alle Daten werden entfernt.
-Sie können nur Felder desselben Typs zuordnen, sodass jedes Dropdown-Menü unterschiedliche Felder enthält. Versuchen Sie bitte auch nicht, ein altes Feld mehr als einem neuen Feld zuzuordnen.';
+$string['fieldmappings_help'] = 'Dieses Menü erlaubt Ihnen, die Daten einer bestehenden Datenbank zu erhalten. Um die Daten in einem Feld zu behalten, müssen Sie das alte Feld einem neuen Feld zuordnen ("mappen"), in dem die Daten dann erscheinen. Felder können dabei auch leer gelassen werden.  Jedes alte Feld, das keinem neuen Feld zugeordnet ist, geht verloren und die enthaltenen Daten werden gelöscht.
+Sie können nur Felder gleichen Typs einander zuordnen, sodass jedes Dropdown-Menü unterschiedlich aussieht. Versuchen Sie bitte auch nicht, ein altes Feld mehr als einem neuen Feld zuzuordnen.';
 $string['fieldname'] = 'Feldname';
-$string['fieldnotmatched'] = 'Die folgenden Felder in Ihrer Datei sind in der Datenbank unbekannt: {$a}';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
+$string['fieldnotmatched'] = 'Die folgenden Felder in Ihrer Datei sind in der Datenbank nicht bekannt: {$a}';
 $string['fieldoptions'] = 'Optionen (eine pro Zeile)';
 $string['fields'] = 'Felder';
 $string['fieldupdated'] = 'Feld wurde aktualisiert';
@@ -191,7 +195,7 @@ $string['forcelinkname'] = 'Vorgegebener Anzeigename für den Link';
 $string['foundnorecords'] = 'Keine Einträge gefunden (<a href="{$a->reseturl}">Filter zurücksetzen</a>)';
 $string['foundrecords'] = 'Einträge gefunden: {$a->num}/{$a->max} (<a href="{$a->reseturl}">Filter zurücksetzen</a>)';
 $string['fromfile'] = 'Import aus ZIP-Datei';
-$string['fromfile_help'] = 'Mit dem Import aus einer ZIP-Datei können Sie Vorlagensätze hochladen, die Vorlagen und Felder enthalten.';
+$string['fromfile_help'] = 'Mit dem Import aus einer ZIP-Datei können Sie einen Vorlagensatz hochladen, der Felder Vorlagen enthält.';
 $string['generateerror'] = 'Mehrere Dateien wurden nicht angelegt!';
 $string['header'] = 'Kopfzeile';
 $string['headeraddtemplate'] = 'Formular zum Anlegen neuer Einträge erstellen';
@@ -254,7 +258,16 @@ $string['modulename_help'] = 'Sammeln Sie mit Ihren Teilnehmer/innen Information
 
 Wählen Sie flexibel zwischen verschiedenen Feldtypen wie Checkbox, Radiobutton, Dropdownmenü, Texteintrag, Link, Bild und hochgeladenen Dateien.
 
-Sie können die Datenbank so einstellen, dass Einträge zuerst geprüft werden müssen. Außerdem können Sie Kommentare zu den Einträgen zulassen.';
+Das visuelle Layout der Informationen beim Auflisten, Anzeigen oder Bearbeiten von Datenbankeinträgen kann durch Datenbankvorlagen gesteuert werden. Die Datenbank-Aktivitäten können als Voreinstellungen zwischen den Kursen gemeinsam genutzt werden, und ein/e Trainer/in kann auch Datenbankeinträge importieren und exportieren.
+
+Wenn der Filter für die automatische Verknüpfung von Datenbanken aktiviert ist, werden alle Einträge in einer Datenbank automatisch an den Stellen verknüpft, an denen die Wörter oder Sätze innerhalb des Kurses erscheinen.
+
+Sie können die Datenbank so einstellen, dass Einträge zuerst geprüft werden müssen. Außerdem können Sie Kommentare zu den Einträgen zulassen. Einträge können auch von Trainer/innen oder Teilnehmer/innen bewertet werden (Peer-Bewertung). Die Bewertungen können zu einer Endnote aggregiert werden, die in den Bewertungen festgehalten wird.
+
+Die Datenbank-Aktivität hat viele Verwendungsmöglichkeiten, wie z.B.
+
+* Eine gemeinschaftliche, kollaborative Sammlung von Weblinks, Büchern, Buchbesprechungen, Zeitschriftenreferenzen usw.
+* Für die Anzeige von Fotos, Postern, Websites oder Gedichten, die von Teilnehmer/innen erstellt wurden, um sie zu kommentieren und zu überprüfen';
 $string['modulenameplural'] = 'Datenbanken';
 $string['more'] = 'Einzelansicht';
 $string['moreurl'] = 'Weitere URL';
@@ -270,7 +283,7 @@ Jedes Feld muss einen eindeutigen Feldnamen haben. Die Feldbeschreibung ist opti
 $string['noaccess'] = 'Sie haben keinen Zugriff auf diese Seite.';
 $string['nodefinedfields'] = 'Neuer Vorlagensatz besitzt keine definierten Felder!';
 $string['nofieldcontent'] = 'Feldinhalt nicht gefunden';
-$string['nofieldindatabase'] = 'In dieser Datenbank sind noch keine Felder definiert';
+$string['nofieldindatabase'] = 'In dieser Datenbank sind noch keine Felder definiert.';
 $string['nolisttemplate'] = 'Die Listenansicht wurde noch nicht definiert';
 $string['nomatch'] = 'Keine passenden Einträge gefunden';
 $string['nomaximum'] = 'Keine Höchstzahl';
@@ -283,7 +296,7 @@ $string['number'] = 'Zahl';
 $string['numberrssarticles'] = 'RSS Beiträge';
 $string['numnotapproved'] = 'Wartend';
 $string['numrecords'] = '{$a} Datensätze';
-$string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<abbr title="OpenDocument Tabelle">ODS</abbr>&nbsp;(OpenOffice)';
 $string['openafterclose'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
 $string['optionaldescription'] = 'Beschreibung (optional)';
 $string['optionalfilename'] = 'Dateiname (optional)';
@@ -295,7 +308,7 @@ $string['page-mod-data-x'] = 'Jede Datenbankseite';
 $string['pagesize'] = 'Einträge pro Seite';
 $string['participants'] = 'Teilnehmer/innen';
 $string['picture'] = 'Bild';
-$string['pleaseaddsome'] = 'Bitte erzeugen Sie ein Feld oder <a href="{$a}">wählen Sie einen Vorlagensatz</a>, um zu beginnen';
+$string['pleaseaddsome'] = 'Bitte erzeugen Sie ein Feld oder <a href="{$a}">wählen Sie einen Vorlagensatz</a>, um zu beginnen.';
 $string['pluginadministration'] = 'Datenbank-Administration';
 $string['pluginname'] = 'Datenbank';
 $string['portfolionotfile'] = 'In ein Portfolio und nicht als Datei exportieren (nur csv und leap2a)';
@@ -347,6 +360,7 @@ $string['rows'] = 'Zeilen';
 $string['rssglobaldisabled'] = 'Deaktiviert. Beachten Sie die Einstellungsseite für die Variablen.';
 $string['rsstemplate'] = 'Vorlage für RSS-Feed';
 $string['rsstitletemplate'] = 'Vorlage für RSS-Titelzeile';
+$string['rsstype'] = 'RSS Feed für diese Aktivität';
 $string['save'] = 'Sichern';
 $string['saveandadd'] = 'Sichern und weitere hinzufügen';
 $string['saveandview'] = 'Sichern und anzeigen';
@@ -356,9 +370,11 @@ $string['savesettings'] = 'Einstellungen speichern';
 $string['savesuccess'] = 'Erfolgreich gespeichert. Ihr Vorlagensatz wird ab sofort überall in diesem Moodle nutzbar sein.';
 $string['savetemplate'] = 'Vorlage speichern';
 $string['search'] = 'Suche';
-$string['search:activity'] = 'Datenbank - Beschreibung';
+$string['search:activity'] = 'Datenbank - Aktivitätsinfo';
 $string['search:entry'] = 'Datenbank - Einträge';
 $string['selectedrequired'] = 'Gesamte Auswahl ist erforderlich';
+$string['selectexportoptions'] = 'Exportoptionen auswählen';
+$string['selectfields'] = 'Felder auswählen';
 $string['showall'] = 'Alle Einträge anzeigen';
 $string['single'] = 'Einzelansicht';
 $string['singletemplate'] = 'Vorlage für Einzelansicht';
@@ -380,6 +396,8 @@ $string['todatabase'] = 'in diese Datenbank';
 $string['type'] = 'Feld-Typ';
 $string['undefinedprocessactionmethod'] = 'In Data_Preset wurde keine Verarbeitungsmethode definiert für: "{$a}".';
 $string['unsupportedexport'] = '({$a->fieldtype}) kann nicht exportiert werden';
+$string['unsupportedfields'] = 'Nichtunterstützte Felder';
+$string['unsupportedfieldslist'] = 'Folgenden Felder können nicht exportiert werden:';
 $string['updatefield'] = 'Bestehendes Feld aktualisieren';
 $string['uploadfile'] = 'Datei hochladen';
 $string['uploadrecords'] = 'Datensätze als Datei hochladen';

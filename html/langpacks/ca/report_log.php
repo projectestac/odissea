@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ca', version '3.8'.
+ * Strings for component 'report_log', language 'ca', version '3.11'.
  *
  * @package     report_log
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allsources'] = 'Totes les fonts';
 $string['eventcomponent'] = 'Component';
 $string['eventcontext'] = 'Context de l\'esdeveniment';
 $string['eventloggedas'] = '{$a->realusername} com a {$a->asusername}';

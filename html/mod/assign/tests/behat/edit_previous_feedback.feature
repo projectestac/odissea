@@ -26,7 +26,7 @@ Feature: In an assignment, teachers can edit feedback for a students previous su
       | Description | Submit your online text |
       | assignsubmission_onlinetext_enabled | 1 |
       | assignfeedback_comments_enabled | 1 |
-      | Attempts reopened | Manually |
+      | Additional attempts | Manually |
     And I log out
     And I log in as "student2"
     And I am on "Course 1" course homepage
@@ -46,7 +46,6 @@ Feature: In an assignment, teachers can edit feedback for a students previous su
       | Feedback comments | I'm the teacher first feedback |
       | Allow another attempt | Yes |
     And I press "Save changes"
-    And I click on "Ok" "button"
     And I click on "Edit settings" "link"
     And I log out
     And I log in as "student2"
@@ -60,13 +59,12 @@ Feature: In an assignment, teachers can edit feedback for a students previous su
     And I navigate to "View all submissions" in current page administration
     And I click on "Grade" "link" in the "Student 2" "table_row"
     And I click on "View a different attempt" "link"
-    And I click on "//div[contains(concat(' ', normalize-space(@class), ' '), ' confirmation-dialogue ')]//input[@value='0']" "xpath_element"
+    And I click on "Attempt 1" "radio" in the "View a different attempt" "dialogue"
     And I click on "View" "button"
     And I set the following fields to these values:
       | Grade | 50 |
       | Feedback comments | I'm the teacher second feedback |
     And I press "Save changes"
-    And I click on "Ok" "button"
     And I click on "Edit settings" "link"
     And I log out
     Then I log in as "student2"

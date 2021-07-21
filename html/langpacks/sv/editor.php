@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'sv', version '3.8'.
+ * Strings for component 'editor', language 'sv', version '3.11'.
  *
  * @package     editor
  * @category    string
@@ -48,13 +48,13 @@ $string['chooseicon'] = 'Välj en ikon som du vill lägga in';
 $string['close'] = 'Stäng';
 $string['closeafterreplace'] = 'Stäng efter att ha ersatt';
 $string['cols'] = 'Kolumner';
-$string['configeditorplugins'] = 'Var snäll och välj de redigerare som du vill använda och ordna enligt rekommendationen.';
+$string['configeditorplugins'] = 'Välj de redigerare som du vill använda och ordna dem enligt rekommendationen.';
 $string['copy'] = 'Kopiera markerat';
 $string['createanchor'] = 'Skapa ankare';
 $string['createfolder'] = 'Skapa mapp';
 $string['createlink'] = 'Infoga en webblänk';
 $string['cut'] = 'Klipp ut markerat';
-$string['cutpastemozilla'] = 'Tyvärr så kan du f.n. inte använda de vanliga genvägarna (tangentbordskommandona)(eller ens knappen "Klistra in") för att klistra in med den här online redigeraren. Det beror på en funktion för säkerhet som är inbyggd i vissa versioner av Mozilla och Firefox webbläsare. Det finns några kända knep som du kan använda<br />1. Istället för Ctrl-v, kan du använda Shift+Insert<br />2. Använd menyalternativet Redigera->Klistra in i din webbläsare.<br />3. Ändra inställningarna i din webbläsare genom att redigera filen user.js.<br /><br />Klicka på knappen "OK" här nedan för mer hjälp eller på "Avbryt" för att återgå till redigeraren.';
+$string['cutpastemozilla'] = 'Tyvärr kan du för närvarande inte använda vanliga kortkommandon (eller ens klistra in-knappen) för att klistra in text i den här onlineredigeraren.  Detta beror på en säkerhetsfunktion som är inbyggd i vissa versioner av Mozilla och Firefox webbläsare. Det finns tre kända lösningar du kan prova:  (1) Istället för CTRL+V, använd SKIFT+Insert  (2) Använd menyn Redigera->Klistra in i webbläsaren  (3) Ändra inställningarna i webbläsaren genom att redigera .js-filen. Klicka på OK-knappen nedan för mer hjälp eller Avbryt för att återgå till redigeraren';
 $string['delete'] = 'Ta bort';
 $string['editors'] = 'Textredigerare';
 $string['editorsettings'] = 'Hantera redigerare';
@@ -106,7 +106,7 @@ $string['multi'] = 'Multi';
 $string['mustenterurl'] = 'Du måste ange URLen';
 $string['nolink'] = 'Förhindra automatisk länkning';
 $string['normal'] = 'Normal';
-$string['notimage'] = 'Vald fil är inte en bild. Var snäll och välj en bild!';
+$string['notimage'] = 'Vald fil är inte en bild. Vänligen välj en bild!';
 $string['notset'] = 'Ej angivet';
 $string['ok'] = 'OK';
 $string['options'] = 'Alternativ';
@@ -116,7 +116,7 @@ $string['paste'] = 'Klistra in';
 $string['path'] = 'Sökväg';
 $string['percent'] = 'Procent';
 $string['pixels'] = 'Pixlar';
-$string['pleaseenteralt'] = 'Var snäll och mata in den alternativa texten.';
+$string['pleaseenteralt'] = 'Mata in den alternativa texten.';
 $string['popupeditor'] = 'Förstora redigeraren';
 $string['preformatted'] = 'Förformaterad';
 $string['preview'] = 'Förhandsgranska';

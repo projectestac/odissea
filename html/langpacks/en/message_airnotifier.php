@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'en', version '3.8'.
+ * Strings for component 'message_airnotifier', language 'en', version '3.11'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -28,23 +28,30 @@ defined('MOODLE_INTERNAL') || die();
 $string['airnotifier:managedevice'] = 'Manage devices';
 $string['airnotifieraccesskey'] = 'Airnotifier access key';
 $string['airnotifierappname'] = 'Airnotifier app name';
+$string['airnotifierfielderror'] = 'Please remove any empty spaces or unnecessary characters from the following field: {$a}';
 $string['airnotifiermobileappname'] = 'Mobile app name';
 $string['airnotifierport'] = 'Airnotifier port';
 $string['airnotifierurl'] = 'Airnotifier URL';
+$string['checkconfiguration'] = 'Check and test push notification configuration';
 $string['configairnotifieraccesskey'] = 'The access key for connecting to the Airnotifier server. You can obtain an access key by clicking the "Request access key" link below (registered sites only) or by creating an account on the <a href="https://apps.moodle.com">Moodle Apps Portal</a>.';
 $string['configairnotifierappname'] = 'The app name identifier in Airnotifier.';
 $string['configairnotifiermobileappname'] = 'The Mobile app unique identifier (usually something like com.moodle.moodlemobile).';
 $string['configairnotifierport'] = 'The port to use when connecting to the airnotifier server.';
 $string['configairnotifierurl'] = 'The server URL to connect to for sending push notifications.';
+$string['configured'] = 'Configured';
 $string['deletecheckdevicename'] = 'Delete your device: {$a->name}';
 $string['deletedevice'] = 'Delete the device. Note that an app can register the device again. If the device keeps reappearing, disable it.';
 $string['devicetoken'] = 'Device token';
+$string['enableprocessor'] = 'Enable mobile notifications';
 $string['errorretrievingkey'] = 'An error occurred while retrieving the access key. Your site must be registered to use this service. If your site is already registered, please try updating your registration. Alternatively, you can obtain an access key by creating an account on the <a href="https://apps.moodle.com">Moodle Apps Portal</a>.';
 $string['keyretrievedsuccessfully'] = 'The access key was retrieved successfully. To access Moodle app usage statistics, please create an account on the <a href="https://apps.moodle.com">Moodle Apps Portal</a>.';
+$string['messageprovidersempty'] = 'There are no mobile notifications enabled in default notification preferences.';
+$string['messageproviderslow'] = 'Only a few mobile notifications are enabled in default notification preferences.';
 $string['moodleappsportallimitswarning'] = 'Please note that the number of user devices allowed to receive notifications depends on your Moodle app subscription. For details, visit the <a href="{$a}" target="_blank">Moodle Apps Portal</a>.';
 $string['nodevices'] = 'No registered devices. Devices will automatically appear after you install the Moodle app and add this site.';
 $string['nopermissiontomanagedevices'] = 'You don\'t have permission to manage devices.';
 $string['notconfigured'] = 'The Airnotifier server has not been configured so push notifications cannot be sent.';
+$string['notificationsserverconfiguration'] = 'Notifications server (Airnotifier) configuration';
 $string['pluginname'] = 'Mobile';
 $string['privacy:appiddescription'] = 'This is an identifier to the application being used.';
 $string['privacy:enableddescription'] = 'If this device is enabled for airnotifier.';
@@ -64,6 +71,10 @@ $string['privacy:metadata:username'] = 'The username of the user.';
 $string['privacy:metadata:usersubsystem'] = 'This plugin is connected to the user subsystem.';
 $string['privacy:subcontext'] = 'Message Airnotifier';
 $string['requestaccesskey'] = 'Request access key';
+$string['sendtest'] = 'Send test push notification to my devices';
+$string['sendtestconfirmation'] = 'A test push notification will be sent to the devices you use to connect to this site. Please ensure that your devices are connected to the Internet and that the mobile app is not open (since push notifications are only displayed when received in the background).';
+$string['serverconnectivityerror'] = 'This site is not able to connect to the notifications server {$a}';
 $string['showhide'] = 'Enable/disable the device.';
 $string['sitemustberegistered'] = 'In order to use the public Airnotifier instance, your site must be registered. Alternatively, you can obtain an access key by creating an account on the <a href="https://apps.moodle.com">Moodle Apps Portal</a>.';
 $string['unknowndevice'] = 'Unknown device';
+$string['userdevices'] = 'User devices';

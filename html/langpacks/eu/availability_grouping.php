@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grouping', language 'eu', version '3.8'.
+ * Strings for component 'availability_grouping', language 'eu', version '3.11'.
  *
  * @package     availability_grouping
  * @category    string
@@ -29,7 +29,7 @@ $string['description'] = 'Baimendu soilik talde-multzo zehatz bateko taldeetako 
 $string['error_selectgrouping'] = 'Talde-multzoa aukeratu behar duzu.';
 $string['missing'] = '(Talde-multzoa falta da)';
 $string['pluginname'] = 'Talde-multzoaren araberako baldintza';
-$string['privacy:metadata'] = 'Taldekatzearen araberako baldintza pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Talde-multzoaren araberako baldintza pluginak ez du datu pertsonalik biltzen.';
 $string['requires_grouping'] = '<strong>{$a}</strong> talde-multzoko talde bateko kide zara';
 $string['requires_notgrouping'] = 'Ez zara <strong>{$a}</strong> talde-multzoko talde bateko kide';
 $string['title'] = 'Talde-multzoa';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_toolsettings', language 'ru', version '3.8'.
+ * Strings for component 'ltiservice_toolsettings', language 'ru', version '3.11'.
  *
  * @package     ltiservice_toolsettings
  * @category    string
@@ -25,4 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allow'] = 'Использовать эту службу';
+$string['ltiservice_toolsettings'] = 'Настройки инструмента';
+$string['ltiservice_toolsettings_help'] = 'Разрешить инструменту сохранять и восстанавливать значения настроек.';
+$string['notallow'] = 'Не использовать эту службу';
 $string['pluginname'] = 'Служба настройки инструмента';
+$string['privacy:metadata'] = 'Плагин Tool Settings Service не хранит никаких личных данных.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'ca', version '3.8'.
+ * Strings for component 'tool_lp', language 'ca', version '3.11'.
  *
  * @package     tool_lp
  * @category    string
@@ -76,7 +76,7 @@ $string['configurecoursecompetencysettings'] = 'Configura les competències del 
 $string['configurescale'] = 'Configura les escales';
 $string['coursecompetencies'] = 'Competències del curs';
 $string['coursecompetencyratingsarenotpushedtouserplans'] = 'Les qualificacions per competències d\'aquest curs no afecten els plans d\'aprenentatge.';
-$string['coursecompetencyratingsarepushedtouserplans'] = 'Les qualificacions per competències d\'aquest curs s\'actualitzem als plans d\'aprenentatge al moment.';
+$string['coursecompetencyratingsarepushedtouserplans'] = 'Les qualificacions per competències d\'aquest curs s\'actualitzen als plans d\'aprenentatge al moment.';
 $string['coursesusingthiscompetency'] = 'Cursos enllaçats a aquesta competència';
 $string['createlearningplans'] = 'Crea plans d\'aprenentatge';
 $string['createplans'] = 'Crea plans d\'aprenentatge';
@@ -103,6 +103,7 @@ $string['editthisplan'] = 'Edita aquest pla d\'aprenentatge';
 $string['editthisuserevidence'] = 'Edita aquesta evidència';
 $string['edituserevidence'] = 'Edita l\'evidència';
 $string['evidence'] = 'Evidència';
+$string['filterbyactivity'] = 'Filtra les competències per recurs o activitat';
 $string['findcourses'] = 'Troba cursos';
 $string['frameworkcannotbedeleted'] = 'No es pot esborrar el marc de competències «{$a}»';
 $string['hidden'] = 'Amagat';
@@ -128,7 +129,7 @@ $string['loading'] = 'S\'està carregant...';
 $string['locatecompetency'] = 'Ubica la competència';
 $string['managecompetenciesandframeworks'] = 'Gestiona competències i marcs';
 $string['modcompetencies'] = 'Competències del curs';
-$string['modcompetencies_help'] = 'Competències del curs enllaçades a aquesta activitat.';
+$string['modcompetencies_help'] = 'Competències del curs associades a aquesta activitat.';
 $string['move'] = 'Mou';
 $string['movecompetency'] = 'Mou la competència';
 $string['movecompetencyafter'] = 'Mou la competència després de «{$a}»';
@@ -283,6 +284,7 @@ $string['viewdetails'] = 'Visualitza els detalls';
 $string['visible'] = 'Visible';
 $string['visible_help'] = 'Un marc de competències pot ocultar-se mentre s\'està establint o s\'està actualitzant a una nova versió.';
 $string['when'] = 'Quan';
+$string['xcompetencieslinkedoutofy'] = '{$a->x} de {$a->y} competències associades als cursos';
 $string['xcompetenciesproficientoutofy'] = '{$a->x} de {$a->y} competències superades';
 $string['xcompetenciesproficientoutofyincourse'] = 'Heu superat {$a->x} de {$a->y} competències en aquest curs.';
 $string['xplanscompletedoutofy'] = 'S\'han completat {$a->x} de {$a->y} plans d\'aprenentatge d\'aquesta plantilla';

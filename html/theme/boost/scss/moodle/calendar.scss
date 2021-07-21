@@ -6,6 +6,7 @@ $calendarEventCourseColor: #ffd3bd !default; // Pale red.
 $calendarEventGlobalColor: #d6f8cd !default; // Pale green.
 $calendarEventGroupColor: #fee7ae !default; // Pale yellow.
 $calendarEventUserColor: #dce7ec !default; // Pale blue.
+$calendarEventOtherColor: #ced4da !default; // Pale gray.
 
 // Border colours for the event colour indicators.
 $calendarEventCategoryBorder: 2px solid #9e619f !default; // Purple.
@@ -53,6 +54,13 @@ $calendarEventColor: #0d5ca1 !default;
     }
 }
 
+.calendar_event_other {
+    background-color: $calendarEventOtherColor;
+    .commands a {
+        color: $calendarEventColor;
+    }
+}
+
 // Calendar restyling.
 .path-calendar {
     .calendartable {
@@ -94,7 +102,7 @@ $calendarEventColor: #0d5ca1 !default;
 
         .drop-target {
             box-sizing: border-box;
-            border: 1px dashed $brand-primary;
+            border: 1px dashed $primary;
         }
     }
 
@@ -181,6 +189,11 @@ $calendarEventColor: #0d5ca1 !default;
                             background-color: $calendarEventUserColor;
                             border: $calendarEventUserBorder;
                         }
+
+                        &.calendar_event_other {
+                            background-color: $calendarEventOtherColor;
+                            border: $calendarEventOtherBorder;
+                        }
                     }
                 }
             }
@@ -243,10 +256,8 @@ $calendarEventColor: #0d5ca1 !default;
             border-color: $calendarEventUserColor;
         }
 
-        .calendar-controls {
-            .current {
-                @extend .h2;
-            }
+        .calendar_event_other {
+            border-color: $calendarEventOtherColor;
         }
 
         .calendartable {
@@ -305,7 +316,7 @@ $calendarEventColor: #0d5ca1 !default;
 
         td {
             &.weekend {
-                @extend .text-muted;
+                color: $text-muted;
             }
 
             a {
@@ -357,6 +368,15 @@ $calendarEventColor: #0d5ca1 !default;
 
                 &.duration_finish {
                     background-color: $calendarEventUserColor;
+                }
+            }
+
+            &.duration_other {
+                border-top: 1px solid $calendarEventOtherColor;
+                border-bottom: 1px solid $calendarEventOtherColor;
+
+                &.duration_finish {
+                    background-color: $calendarEventOtherColor;
                 }
             }
         }

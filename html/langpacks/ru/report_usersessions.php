@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_usersessions', language 'ru', version '3.8'.
+ * Strings for component 'report_usersessions', language 'ru', version '3.11'.
  *
  * @package     report_usersessions
  * @category    string
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['mysessions'] = 'Мои активные сессии';
 $string['navigationlink'] = 'Сессии браузера';
 $string['pluginname'] = 'Отчет по сессиям пользователя';
+$string['privacy:metadata'] = 'Плагин отчетов о сеансах пользователей не хранит никаких личных данных.';
 $string['thissession'] = 'Текущая сессия';
 $string['usersessions:manageownsessions'] = 'Управлять своими сессиями браузера';

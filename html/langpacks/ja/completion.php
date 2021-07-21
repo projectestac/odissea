@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'ja', version '3.8'.
+ * Strings for component 'completion', language 'ja', version '3.11'.
  *
  * @package     completion
  * @category    string
@@ -52,6 +52,7 @@ $string['bulkcompletiontracking_help'] = '<strong>なし:</strong> 活動完了�
 $string['checkactivity'] = '活動/リソースのチェックボックス: {$a}';
 $string['checkall'] = 'すべての活動およびリソースをチェックまたはチェック解除する';
 $string['checkallsection'] = '次のセクションの活動およびリソースをチェックまたはチェック解除する: {$a}';
+$string['completeactivity'] = '活動を完了する';
 $string['completed'] = '完了';
 $string['completedunlocked'] = '完了オプションがロック解除されました。';
 $string['completedunlockedtext'] = 'あなたが変更を保存した場合、すべてのユーザの完了状態が消去されます。完了ステータスの消去に関してあなたが方針を変更した場合、フォームを保存しないでください。';
@@ -119,6 +120,7 @@ $string['courseaggregation_any'] = '選択されたコースどれでも完了�
 $string['coursealreadycompleted'] = 'あなたはすでにこのコースを完了しています。';
 $string['coursecomplete'] = 'コース完了';
 $string['coursecompleted'] = 'コース完了';
+$string['coursecompletedmessage'] = '<p>おめでとうございます!</p><p>あなたはコース <a href="{$a->courselink}">{$a->coursename}</a> を完了しました。</p>';
 $string['coursecompletion'] = 'コース完了';
 $string['coursecompletioncondition'] = 'コンディション: {$a}';
 $string['coursegrade'] = 'コース評定';
@@ -137,6 +139,8 @@ $string['defaultcompletionupdated'] = '変更が保存されました。';
 $string['deletecompletiondata'] = '完了データを削除する';
 $string['dependencies'] = '依存関係';
 $string['dependenciescompleted'] = '他のコースの完了';
+$string['detail_desc:receivegrade'] = '評定を受ける';
+$string['detail_desc:view'] = '表示';
 $string['editcoursecompletionsettings'] = 'コース完了設定を編集する';
 $string['enablecompletion'] = '完了トラッキングを有効にする';
 $string['enablecompletion_help'] = 'この設定を有効にした場合、活動完了コンディションが活動設定内に設定されます。また、コース完了コンディションも設定されます。ダッシュボードのコース概要に意味のあるデータを表示するため、この設定を有効にすることをお勧めします。';
@@ -215,6 +219,8 @@ $string['seedetails'] = '詳細を表示する';
 $string['select'] = '選択';
 $string['self'] = '自己';
 $string['selfcompletion'] = '自己完了';
+$string['showcompletionconditions'] = '活動完了コンディションを表示する';
+$string['showcompletionconditions_help'] = '活動完了コンディションは常に活動ページに表示されます。この設定ではコースページのそれぞれの活動の下にも活動完了コンディションを表示するかどうか決定します';
 $string['showinguser'] = 'ユーザの表示';
 $string['unenrolingfromcourse'] = 'コースから登録解除する';
 $string['unenrolment'] = '登録解除';

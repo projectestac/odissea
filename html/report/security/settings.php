@@ -17,21 +17,22 @@
 /**
  * Settings and links
  *
- * @package    report
- * @subpackage security
+ * @package    report_security
  * @copyright  2008 petr Skoda
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2015.05.19 @pferre22
+// XTEC ************ AFEGIT - Allow access only to xtecadmin user
+// 2015.05.19 @pferre22
 if (!get_protected_agora()) {
     return;
 }
-//************ FI
-$ADMIN->add('reports', new admin_externalpage('reportsecurity', get_string('pluginname', 'report_security'), "$CFG->wwwroot/report/security/index.php",'report/security:view'));
+// ************ FI
 
-// no report settings
+$ADMIN->add('reports', new admin_externalpage('reportsecurity', get_string('pluginname', 'report_security'),
+    "$CFG->wwwroot/report/security/index.php", 'report/security:view'));
+
+// No report settings.
 $settings = null;

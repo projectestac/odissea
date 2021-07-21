@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'ja', version '3.8'.
+ * Strings for component 'qtype_ddwtos', language 'ja', version '3.11'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -36,4 +36,7 @@ $string['pluginname_help'] = 'ドラッグ＆ドロップテキストは問題�
 $string['pluginnameadding'] = 'ドラッグ＆ドロップテキストの追加';
 $string['pluginnameediting'] = 'ドラッグ＆ドロップテキストの編集';
 $string['pluginnamesummary'] = 'ドロップダウンメニューを使用して問題テキスト内の足りない言葉を埋めます。';
-$string['privacy:metadata'] = 'ドラッグ＆ドロップテキスト問題タイププラグインはいかなる個人データも保存しません。';
+$string['privacy:metadata'] = 'ドラッグ＆ドロップテキスト問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
+$string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
+$string['privacy:preference:shuffleanswers'] = '解答を自動的にシャッフルするかどうか指定します。';

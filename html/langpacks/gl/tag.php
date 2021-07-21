@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'gl', version '3.8'.
+ * Strings for component 'tag', language 'gl', version '3.11'.
  *
  * @package     tag
  * @category    string
@@ -47,7 +47,7 @@ $string['coursetags'] = 'Etiquetas do curso';
 $string['defautltagcoll'] = 'Colección predeterminada';
 $string['delete'] = 'Eliminar';
 $string['deleted'] = 'Etiqueta(s) eliminada(s)';
-$string['deletedcoursetags'] = 'Eliminadas - etiquetas do curso';
+$string['deletedcoursetags'] = 'Eliminadas, etiquetas do curso';
 $string['deleteselected'] = 'Eliminar o seleccionado';
 $string['description'] = 'Descrición';
 $string['editcollname'] = 'Editar o nome da colección de etiquetas';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'fr', version '3.8'.
+ * Strings for component 'tool_capability', language 'fr', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -30,9 +30,12 @@ $string['capabilityreport'] = 'Rapport de capacité';
 $string['changeoverrides'] = 'Modifications des dérogations dans ce contexte';
 $string['changeroles'] = 'Modifications des définitions de rôle';
 $string['eventreportviewed'] = 'Rapport consulté';
+$string['filters'] = 'Filtrer les résultats';
 $string['forroles'] = 'Pour les rôles {$a}';
 $string['getreport'] = 'Afficher le rapport';
 $string['intro'] = 'Ce rapport indique, pour une capacité donnée, la permission définie pour cette capacité dans chaque rôle (ou une sélection de rôles). Il indique également toutes les dérogations définies dans le site pour cette capacité.';
+$string['nodifferences'] = 'Dans ce contexte, il n\'y a pas de différence entre les rôles sélectionnés';
+$string['onlydiff'] = 'N\'afficher que les différences';
 $string['pluginname'] = 'Rapport de capacité';
 $string['privacy:metadata'] = 'Le plugin Rapport de capacité n\'enregistre aucune donnée personnelle.';
 $string['reportforcapability'] = 'Report pour la capacité « {$a} »';

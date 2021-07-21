@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'group', language 'ko', version '3.8'.
+ * Strings for component 'group', language 'ko', version '3.11'.
  *
  * @package     group
  * @category    string
@@ -142,6 +142,7 @@ $string['importgroups_help'] = '모둠은 텍스트 파일로 가져오기 할 �
 $string['javascriptrequired'] = '이 페이지는 자바스크립트가 활성되는 것이 필요합니다.';
 $string['members'] = '모둠당 구성원들';
 $string['membersofselectedgroup'] = '다음 모둠의 구성원';
+$string['mygroups'] = '내 그룹';
 $string['namingscheme'] = '이름만들기 규칙';
 $string['namingscheme_help'] = '모둠 이름에서 @ 기호는 거기에 문자를 치환하여 모둠의 이름을 만들 수 있다. 예를 들어 모둠 @ 처럼 쓰면, 모둠 A, 모둠 B, 모둠 C 가 만들어 진다.
 
@@ -160,6 +161,7 @@ $string['nousersinrole'] = '선택된 역할에 대한 적절한 사용자가 �
 $string['number'] = '모둠/구성원 수';
 $string['numgroups'] = '모둠의 수';
 $string['nummembers'] = '모둠당 구성원 수';
+$string['othergroups'] = '다른 그룹';
 $string['overview'] = '개요';
 $string['potentialmembers'] = '예비 회원수 : {$a}';
 $string['potentialmembs'] = '예비 회원';

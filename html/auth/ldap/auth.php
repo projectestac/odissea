@@ -190,15 +190,7 @@ class auth_plugin_ldap extends auth_plugin_base {
         } // End SSO processing
         unset($key);
 
-	//XTEC ************ MODIFICAT - To retrive ldap data
-	//2012.06.04 @sarjona
-	$bind_dn = "cn=".$username.",".$this->config->bind_dn;
-	$ldapconnection = $this->ldap_connect($bind_dn, $password);
-	//************ ORIGINAL
-        /*
         $ldapconnection = $this->ldap_connect();
-        */
-	//************ FI
         $ldap_user_dn = $this->ldap_find_userdn($ldapconnection, $extusername);
 
         // If ldap_user_dn is empty, user does not exist
@@ -243,25 +235,10 @@ class auth_plugin_ldap extends auth_plugin_base {
      *
      * @return mixed array with no magic quotes or false on error
      */
-    //XTEC ************ MODIFICAT - To retrive ldap data
-    //2010.06.30 @fcasanell
-    function get_userinfo($username, $password='') {
-    //************ ORIGINAL
-    /*
     function get_userinfo($username) {
-    */
-    //************ FI
         $extusername = core_text::convert($username, 'utf-8', $this->config->ldapencoding);
 
-        //XTEC ************ MODIFICAT - To retrive data from XTEC LDAP
-        //2012.06.20 @sarjona
-        $bind_dn = "cn=".$username.",".$this->config->bind_dn;
-        $ldapconnection = $this->ldap_connect($bind_dn, $password);
-        //************ ORIGINAL
-        /*
         $ldapconnection = $this->ldap_connect();
-        */
-        //************ FI
         if(!($user_dn = $this->ldap_find_userdn($ldapconnection, $extusername))) {
             $this->ldap_close();
             return false;
@@ -621,10 +598,10 @@ class auth_plugin_ldap extends auth_plugin_base {
             if ($user->auth != $this->authtype) {
                 return AUTH_CONFIRM_ERROR;
 
-            } else if ($user->secret == $confirmsecret && $user->confirmed) {
+            } else if ($user->secret === $confirmsecret && $user->confirmed) {
                 return AUTH_CONFIRM_ALREADY;
 
-            } else if ($user->secret == $confirmsecret) {   // They have provided the secret key to get in
+            } else if ($user->secret === $confirmsecret) {   // They have provided the secret key to get in
                 if (!$this->user_activate($username)) {
                     return AUTH_CONFIRM_FAIL;
                 }
@@ -732,7 +709,7 @@ class auth_plugin_ldap extends auth_plugin_base {
 
             do {
                 if ($ldappagedresults) {
-                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 4.1).
+                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 3.11).
                     if (version_compare(PHP_VERSION, '7.3.0', '<')) {
                         // Before 7.3, use this function that was deprecated in PHP 7.4.
                         ldap_control_paged_result($ldapconnection, $this->config->pagesize, true, $ldapcookie);
@@ -745,7 +722,7 @@ class auth_plugin_ldap extends auth_plugin_base {
                 }
                 if ($this->config->search_sub) {
                     // Use ldap_search to find first user from subtree.
-                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 4.1).
+                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 3.11).
                     if (version_compare(PHP_VERSION, '7.3.0', '<')) {
                         $ldapresult = ldap_search($ldapconnection, $context, $filter, array($this->config->user_attribute));
                     } else {
@@ -754,7 +731,7 @@ class auth_plugin_ldap extends auth_plugin_base {
                     }
                 } else {
                     // Search only in this context.
-                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 4.1).
+                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 3.11).
                     if (version_compare(PHP_VERSION, '7.3.0', '<')) {
                         $ldapresult = ldap_list($ldapconnection, $context, $filter, array($this->config->user_attribute));
                     } else {
@@ -768,7 +745,7 @@ class auth_plugin_ldap extends auth_plugin_base {
                 if ($ldappagedresults) {
                     // Get next server cookie to know if we'll need to continue searching.
                     $ldapcookie = '';
-                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 4.1).
+                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 3.11).
                     if (version_compare(PHP_VERSION, '7.3.0', '<')) {
                         // Before 7.3, use this function that was deprecated in PHP 7.4.
                         $pagedresp = ldap_control_paged_result_response($ldapconnection, $ldapresult, $ldapcookie);
@@ -972,9 +949,7 @@ class auth_plugin_ldap extends auth_plugin_base {
                 //
                 // The cast to int is a workaround for MDL-53959.
                 $user->suspended = (int)$this->is_user_suspended($user);
-                if (empty($user->lang)) {
-                    $user->lang = $CFG->lang;
-                }
+
                 if (empty($user->calendartype)) {
                     $user->calendartype = $CFG->calendartype;
                 }
@@ -1579,7 +1554,7 @@ class auth_plugin_ldap extends auth_plugin_base {
 
             do {
                 if ($ldap_pagedresults) {
-                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 4.1).
+                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 3.11).
                     if (version_compare(PHP_VERSION, '7.3.0', '<')) {
                         // Before 7.3, use this function that was deprecated in PHP 7.4.
                         ldap_control_paged_result($ldapconnection, $this->config->pagesize, true, $ldap_cookie);
@@ -1592,7 +1567,7 @@ class auth_plugin_ldap extends auth_plugin_base {
                 }
                 if ($this->config->search_sub) {
                     // Use ldap_search to find first user from subtree.
-                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 4.1).
+                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 3.11).
                     if (version_compare(PHP_VERSION, '7.3.0', '<')) {
                         $ldap_result = ldap_search($ldapconnection, $context, $filter, array($this->config->user_attribute));
                     } else {
@@ -1601,7 +1576,7 @@ class auth_plugin_ldap extends auth_plugin_base {
                     }
                 } else {
                     // Search only in this context.
-                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 4.1).
+                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 3.11).
                     if (version_compare(PHP_VERSION, '7.3.0', '<')) {
                         $ldap_result = ldap_list($ldapconnection, $context, $filter, array($this->config->user_attribute));
                     } else {
@@ -1615,7 +1590,7 @@ class auth_plugin_ldap extends auth_plugin_base {
                 if ($ldap_pagedresults) {
                     // Get next server cookie to know if we'll need to continue searching.
                     $ldap_cookie = '';
-                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 4.1).
+                    // TODO: Remove the old branch of code once PHP 7.3.0 becomes required (Moodle 3.11).
                     if (version_compare(PHP_VERSION, '7.3.0', '<')) {
                         // Before 7.3, use this function that was deprecated in PHP 7.4.
                         ldap_control_paged_result_response($ldapconnection, $ldap_result, $ldap_cookie);
@@ -2041,14 +2016,7 @@ class auth_plugin_ldap extends auth_plugin_base {
      *
      * @return resource A valid LDAP connection (or dies if it can't connect)
      */
-    //XTEC ************ MODIFICAT - To retrive ldap data
-    //2012.06.26 @sarjona
-    function ldap_connect($binddn='', $bindpwd='') {
-    //************ ORIGINAL
-    /*
     function ldap_connect() {
-    */
-    //************ FI
         // Cache ldap connections. They are expensive to set up
         // and can drain the TCP/IP ressources on the server if we
         // are syncing a lot of users (as we try to open a new connection
@@ -2059,47 +2027,16 @@ class auth_plugin_ldap extends auth_plugin_base {
             return $this->ldapconnection;
         }
 
-	//XTEC ************ MODIFICAT - To retrive ldap data
-	//2012.06.26 @sarjona
-        //Select bind password, With empty values use
-        //ldap_bind_* variables or anonymous bind if ldap_bind_* are empty
-        if ($binddn == '' and $bindpwd == '') {
-            if (!empty($this->config->bind_dn)) {
-               $binddn = $this->config->bind_dn;
-            }
-            if (!empty($this->config->bind_pw)) {
-               $bindpwd = $this->config->bind_pw;
-            }
-        }
-
-        if($ldapconnection = ldap_connect_moodle($this->config->host_url, $this->config->ldap_version,
-                                                 $this->config->user_type, $binddn,
-                                                 $bindpwd, $this->config->opt_deref,
-                                                 $debuginfo, $this->config->start_tls)) {
-        //************ ORIGINAL
-        /*
         if($ldapconnection = ldap_connect_moodle($this->config->host_url, $this->config->ldap_version,
                                                  $this->config->user_type, $this->config->bind_dn,
                                                  $this->config->bind_pw, $this->config->opt_deref,
                                                  $debuginfo, $this->config->start_tls)) {
-        */
-	//************ FI
             $this->ldapconns = 1;
             $this->ldapconnection = $ldapconnection;
             return $ldapconnection;
         }
 
-        //XTEC ************ MODIFICAT - To avoid show errors if debugdisplay is not enabled
-        //2012.06.06 @sarjona
-        global $CFG;
-        if ($bindpwd != '' && $CFG->debugdisplay) {
-            print_error('auth_ldap_noconnect_all', 'auth_ldap', '', $debuginfo);
-        }
-        //************ ORIGINAL
-        /*
         print_error('auth_ldap_noconnect_all', 'auth_ldap', '', $debuginfo);
-        */
-        //************ FI
     }
 
     /**

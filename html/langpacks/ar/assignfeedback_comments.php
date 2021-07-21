@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'ar', version '3.8'.
+ * Strings for component 'assignfeedback_comments', language 'ar', version '3.11'.
  *
  * @package     assignfeedback_comments
  * @category    string
@@ -30,13 +30,13 @@ $string['commentinline_help'] = 'إذا تم تفعيل هذا الخيار فإ
 $string['commentinlinedefault'] = 'التعليق ضمني إفتراضياً';
 $string['commentinlinedefault_help'] = 'إذا تم تفعيله فإن وظيفة التعليق الضمني ستكون مفعّلة تلقائياً لكل الواجبات الجديدة';
 $string['default'] = 'مُفعّل تلقائياً';
-$string['default_help'] = 'إذا تم تفعيل هذا الخيار فإن طريقة اتغذية الراجعة هذه ستكون مفُعّلة افتراضياً لكل المهمات الجديدة.';
+$string['default_help'] = 'إذا تم ضبطه، سيتم تمكين طريقة الإفادة هذه إفتراضياً لكل الواجبات الجديدة.';
 $string['enabled'] = 'تعليقات الإفادة';
 $string['enabled_help'] = 'إذا تم تفعيل هذا الخيار فإن المُصحح يستطيع ترك تعليقات الإفادة لكل مهمة مرسلة';
 $string['pluginname'] = 'تعليقات الإفادة';
-$string['privacy:commentpath'] = 'تعليقات ردود الفعل';
+$string['privacy:commentpath'] = 'تعليقات الإفادة';
 $string['privacy:metadata:assignmentid'] = 'معرّف الواجب';
-$string['privacy:metadata:commentpurpose'] = 'نص التعليق.';
-$string['privacy:metadata:filepurpose'] = 'ملفات الملاحظات من المعلم للطالب.';
-$string['privacy:metadata:gradepurpose'] = 'معرّف الدرجة المرتبط بالتعليق.';
-$string['privacy:metadata:tablesummary'] = 'هذا يخزن التعليقات التي أدلى بها طلاب الصف كملاحظات للطالب على تقديمه.';
+$string['privacy:metadata:commentpurpose'] = 'نص التعليق';
+$string['privacy:metadata:filepurpose'] = 'ملفات الإفادة من المعلم للطالب';
+$string['privacy:metadata:gradepurpose'] = 'معرّف الدرجة المرتبط بالتعليق';
+$string['privacy:metadata:tablesummary'] = 'هذا يخزن التعليقات التي أدلى بها طلاب الصف كملاحظات للطالب على تقديمه';

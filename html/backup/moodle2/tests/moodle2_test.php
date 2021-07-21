@@ -990,7 +990,7 @@ class core_backup_moodle2_testcase extends advanced_testcase {
         // Restore it on top of course2 (should duplicate the forum).
         $rc = new restore_controller($backupid, $course2->id,
             backup::INTERACTIVE_NO, backup::MODE_IMPORT, $USER->id,
-            backup::TARGET_EXISTING_ADDING, null);
+            backup::TARGET_EXISTING_ADDING, null, backup::RELEASESESSION_NO);
         $this->assertTrue($rc->execute_precheck());
         $rc->execute_plan();
         $rc->destroy();
@@ -1062,5 +1062,33 @@ class core_backup_moodle2_testcase extends advanced_testcase {
                 }
             }
         }
+    }
+
+    /**
+     * Test the content bank content through a backup and restore.
+     */
+    public function test_contentbank_content_backup() {
+        global $DB, $USER, $CFG;
+        $this->resetAfterTest();
+
+        $this->setAdminUser();
+        $generator = $this->getDataGenerator();
+        $cbgenerator = $this->getDataGenerator()->get_plugin_generator('core_contentbank');
+
+        // Create course and add content bank content.
+        $course = $generator->create_course();
+        $context = context_course::instance($course->id);
+        $filepath = $CFG->dirroot . '/h5p/tests/fixtures/filltheblanks.h5p';
+        $contents = $cbgenerator->generate_contentbank_data('contenttype_h5p', 2, $USER->id, $context, true, $filepath);
+        $this->assertEquals(2, $DB->count_records('contentbank_content'));
+
+        // Do backup and restore.
+        $newcourseid = $this->backup_and_restore($course);
+
+        // Confirm that values were transferred correctly into content bank on new course.
+        $newcontext = context_course::instance($newcourseid);
+
+        $this->assertEquals(4, $DB->count_records('contentbank_content'));
+        $this->assertEquals(2, $DB->count_records('contentbank_content', ['contextid' => $newcontext->id]));
     }
 }

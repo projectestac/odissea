@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'table', language 'ar', version '3.8'.
+ * Strings for component 'table', language 'ar', version '3.11'.
  *
  * @package     table
  * @category    string
@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadas'] = 'تحميل بيانات الجدول كـ  {$a->formatsmenu} {$a->downloadbutton}';
+$string['downloadas'] = 'تنزيل بيانات الجدول بصيغة';
+$string['missingrequiredfields'] = 'واحد أو أكثر من المنقحات المطلوبة مفقود ({$a})';
+$string['privacy:metadata'] = 'واجهة برمجة التطبيق للجدول لا تخزن حالياً أي بيانات للمستخدمين';

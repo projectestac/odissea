@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'sv', version '3.8'.
+ * Strings for component 'qtype_gapselect', language 'sv', version '3.11'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -43,7 +43,10 @@ $string['pluginname_help'] = 'Välj saknade ord-frågor kräver att användaren 
 $string['pluginnameadding'] = 'Lägger till en Välj de saknade orden-fråga';
 $string['pluginnameediting'] = 'Redigerar en Välj de saknade orden-fråga';
 $string['pluginnamesummary'] = 'Saknade ord i texten fylls i via rullgardinsmenyer.';
-$string['privacy:metadata'] = 'Välj saknade ord-frågeplugintypen lagrar ingen personlig data.';
+$string['privacy:metadata'] = 'Pluginmodulen för frågetypen Saknade ord gör det möjligt för frågeförfattare att ange standardalternativ som användarinställningar.';
+$string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråga.';
+$string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
+$string['privacy:preference:shuffleanswers'] = 'Om svaren ska blandas automatiskt.';
 $string['shuffle'] = 'Blanda';
 $string['tagsnotallowed'] = '{$a->tag} är inte tillåtet. (Enbart {$a->allowed} är tillåtna.)';
-$string['tagsnotallowedatall'] = '{$a->tag} är inte tillåtet. (Ingen HTML är tillåten här.)';
+$string['tagsnotallowedatall'] = '{$a->tag} är inte tillåten. (Ingen HTML är tillåten här.)';

@@ -25,10 +25,11 @@
  */
 defined('MOODLE_INTERNAL') || die;
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2016.08.16 @sarjona
+// XTEC ************ AFEGIT - Allow access only to xtecadmin user
+// 2016.08.16 @sarjona
 if (get_protected_agora()) {
-//************ FI
+// ************ FI
+
 // Template library page.
 $temp = new admin_externalpage(
     'tooltemplatelibrary',
@@ -36,7 +37,8 @@ $temp = new admin_externalpage(
     new moodle_url('/admin/tool/templatelibrary/index.php')
 );
 $ADMIN->add('development', $temp);
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2016.08.16 @sarjona
+
+// XTEC ************ AFEGIT - Allow access only to xtecadmin user
+// 2016.08.16 @sarjona
 }
-//************ FI
+// ************ FI

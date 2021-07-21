@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_selfcompletion', language 'ca', version '3.8'.
+ * Strings for component 'block_selfcompletion', language 'ca', version '3.11'.
  *
  * @package     block_selfcompletion
  * @category    string
@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['alreadyselfcompleted'] = 'Ja heu marcat aquest curs com a completat';
 $string['completecourse'] = 'Curs completat';
 $string['pluginname'] = 'Compleció automàtica';
+$string['privacy:metadata'] = 'El bloc d\'autocompleció només mostra dades emmagatzemades en altres ubicacions.';
 $string['selfcompletion:addinstance'] = 'Afegir un bloc nou d\'autocompleció';
 $string['selfcompletionnotenabled'] = 'L\'autocompletat no està activat per aquest curs';

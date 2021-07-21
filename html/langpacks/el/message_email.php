@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'el', version '3.8'.
+ * Strings for component 'message_email', language 'el', version '3.11'.
  *
  * @package     message_email
  * @category    string
@@ -25,12 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['email'] = 'Αποστολη ειδοποιήσεων μέσω ηλε.ταχυδρομείου προς';
+$string['email'] = 'Αποστολή ειδοποιήσεων μέσω ηλε.ταχυδρομείου προς';
 $string['emaildigestsubject'] = 'Σύνοψη μηνυμάτων';
 $string['emaildigestunreadmessages'] = 'Μη αναγνωσμένα μηνύματα';
 $string['emaildigestviewallmessages'] = 'Εμφάνιση όλων των μηνυμάτων';
 $string['emailonlyfromnoreplyaddress'] = 'Πάντα αποστολή μηνυμάτων ηλε.ταχυδρομείου από την διεύθυνση μη-απάντησης;';
 $string['ifemailleftempty'] = 'Αφήστε κενό για αποστολή ειδοποιήσεων προς {$a}';
+$string['messagedigestemailsubject'] = '{$a}: Σύνοψη μηνυμάτων';
 $string['pluginname'] = 'Ηλε.ταχυδρομείο';
 $string['privacy:metadata:attachment'] = 'Ένα αρχείο στο σύστημα αρχείων.';
 $string['privacy:metadata:attachname'] = 'Το όνομα του συνημμένου αρχείου (η επέκταση υποδηλώνει MIME).';

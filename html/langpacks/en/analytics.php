@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'en', version '3.8'.
+ * Strings for component 'analytics', language 'en', version '3.11'.
  *
  * @package     analytics
  * @category    string
@@ -34,6 +34,8 @@ $string['analyticslogstore'] = 'Log store used for analytics';
 $string['analyticslogstore_help'] = 'The log store that will be used by the analytics API to read users\' activity.';
 $string['analyticssettings'] = 'Analytics settings';
 $string['analyticssiteinfo'] = 'Site information';
+$string['calclifetime'] = 'Keep analytics calculations for';
+$string['configlcalclifetime'] = 'This specifies the length of time you want to keep calculation data - this will not delete predictions, but deletes the data used to generate the predictions. Using the default option here is best as it keeps your disk usage under control, however if you are using calculation tables for other purposes you may want to increase this value.';
 $string['defaultpredictionsprocessor'] = 'Default predictions processor';
 $string['defaultpredictoroption'] = 'Default processor ({$a})';
 $string['defaulttimesplittingmethods'] = 'Default analysis intervals for model\'s evaluation';
@@ -96,10 +98,11 @@ $string['modeinstructionfacetoface'] = 'Face to face';
 $string['modeinstructionfullyonline'] = 'Fully online';
 $string['modeloutputdir'] = 'Models output directory';
 $string['modeloutputdirinfo'] = 'Directory where prediction processors store all evaluation info. Useful for debugging and research.';
-$string['modeloutputdirwithdefaultinfo'] = 'Directory where prediction processors store all evaluation info. Useful for debugging and research. If empty, then \'<strong>{$a}</strong>\' will be used as default.';
+$string['modeloutputdirwithdefaultinfo'] = 'Directory where prediction processors store all evaluation info. Useful for debugging and research. If empty, then {$a} will be used as default.';
 $string['modeltimelimit'] = 'Analysis time limit per model';
 $string['modeltimelimitinfo'] = 'This setting limits the time each model spends analysing the site contents.';
 $string['neutral'] = 'Neutral';
+$string['neverdelete'] = 'Never delete calculations';
 $string['nocourses'] = 'No courses to analyse';
 $string['nodata'] = 'No data to analyse';
 $string['noevaluationbasedassumptions'] = 'Models based on assumptions cannot be evaluated.';

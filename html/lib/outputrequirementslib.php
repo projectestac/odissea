@@ -319,20 +319,21 @@ class page_requirements_manager {
             }
 
             $this->M_cfg = array(
-                'wwwroot'             => $CFG->wwwroot,
-                'sesskey'             => sesskey(),
-                'sessiontimeout'      => $CFG->sessiontimeout,
-                'themerev'            => theme_get_revision(),
-                'slasharguments'      => (int)(!empty($CFG->slasharguments)),
-                'theme'               => $page->theme->name,
-                'iconsystemmodule'    => $iconsystem->get_amd_name(),
-                'jsrev'               => $this->get_jsrev(),
-                'admin'               => $CFG->admin,
-                'svgicons'            => $page->theme->use_svg_icons(),
-                'usertimezone'        => usertimezone(),
-                'contextid'           => $contextid,
-                'langrev'             => get_string_manager()->get_revision(),
-                'templaterev'         => $this->get_templaterev()
+                'wwwroot'               => $CFG->wwwroot,
+                'sesskey'               => sesskey(),
+                'sessiontimeout'        => $CFG->sessiontimeout,
+                'sessiontimeoutwarning' => $CFG->sessiontimeoutwarning,
+                'themerev'              => theme_get_revision(),
+                'slasharguments'        => (int)(!empty($CFG->slasharguments)),
+                'theme'                 => $page->theme->name,
+                'iconsystemmodule'      => $iconsystem->get_amd_name(),
+                'jsrev'                 => $this->get_jsrev(),
+                'admin'                 => $CFG->admin,
+                'svgicons'              => $page->theme->use_svg_icons(),
+                'usertimezone'          => usertimezone(),
+                'contextid'             => $contextid,
+                'langrev'               => get_string_manager()->get_revision(),
+                'templaterev'           => $this->get_templaterev()
             );
             if ($CFG->debugdeveloper) {
                 $this->M_cfg['developerdebug'] = true;
@@ -400,7 +401,7 @@ class page_requirements_manager {
      *
      * @return int the jsrev to use.
      */
-    protected function get_jsrev() {
+    public function get_jsrev() {
         global $CFG;
 
         if (empty($CFG->cachejs)) {
@@ -786,8 +787,6 @@ class page_requirements_manager {
                                     'requires' => array('node', 'cookie'));
                     break;
                 case 'core_completion':
-                    $module = array('name'     => 'core_completion',
-                                    'fullpath' => '/course/completion.js');
                     break;
                 case 'core_message':
                     $module = array('name'     => 'core_message',
@@ -1388,11 +1387,26 @@ class page_requirements_manager {
         }
 
         // First include must be to a module with no dependencies, this prevents multiple requests.
-        $prefix = 'M.util.js_pending("core/first");';
-        $prefix .= "require(['core/first'], function() {\n";
-        $suffix = 'M.util.js_complete("core/first");';
-        $suffix .= "\n});";
-        $output .= html_writer::script($prefix . implode(";\n", $this->amdjscode) . $suffix);
+        $prefix = <<<EOF
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+
+EOF;
+
+        if (during_initial_install()) {
+            // Do not run a prefetch during initial install as the DB is not available to service WS calls.
+            $prefetch = '';
+        } else {
+            $prefetch = "require(['core/prefetch'])\n";
+        }
+
+        $suffix = <<<EOF
+
+    M.util.js_complete("core/first");
+});
+EOF;
+
+        $output .= html_writer::script($prefix . $prefetch . implode(";\n", $this->amdjscode) . $suffix);
         return $output;
     }
 
@@ -1608,8 +1622,8 @@ class page_requirements_manager {
             $output .= html_writer::script('', $this->js_fix_url('/lib/babel-polyfill/polyfill.min.js'));
         }
 
-        // Include the MDN Polyfill.
-        $output .= html_writer::script('', $this->js_fix_url('/lib/mdn-polyfills/polyfill.js'));
+        // Include the Polyfills.
+        $output .= html_writer::script('', $this->js_fix_url('/lib/polyfills/polyfill.js'));
 
         // YUI3 JS needs to be loaded early in the body. It should be cached well by the browser.
         $output .= $this->get_yui3lib_headcode();
@@ -1682,6 +1696,9 @@ class page_requirements_manager {
             'error',
             'file',
             'url',
+            // TODO MDL-70830 shortforms should preload the collapseall/expandall strings properly.
+            'collapseall',
+            'expandall',
         ), 'moodle');
         $this->strings_for_js(array(
             'debuginfo',

@@ -207,7 +207,7 @@ abstract class service_base {
     abstract public function get_resources();
 
     /**
-     * Get the scope(s) permitted for this service.
+     * Get the scope(s) permitted for this service in the context of a particular tool type.
      *
      * A null value indicates that no scopes are required to access the service.
      *
@@ -218,11 +218,58 @@ abstract class service_base {
     }
 
     /**
+     * Get the scope(s) permitted for this service.
+     *
+     * A null value indicates that no scopes are required to access the service.
+     *
+     * @return array|null
+     */
+    public function get_scopes() {
+        return null;
+    }
+
+    /**
      * Returns the configuration options for this service.
      *
      * @param \MoodleQuickForm $mform Moodle quickform object definition
      */
     public function get_configuration_options(&$mform) {
+
+    }
+
+    /**
+     * Called when a new LTI Instance is added.
+     *
+     * @param object $lti LTI Instance.
+     */
+    public function instance_added(object $lti): void {
+
+    }
+
+    /**
+     * Called when a new LTI Instance is updated.
+     *
+     * @param object $lti LTI Instance.
+     */
+    public function instance_updated(object $lti): void {
+
+    }
+
+    /**
+     * Called when a new LTI Instance is deleted.
+     *
+     * @param int $id LTI Instance.
+     */
+    public function instance_deleted(int $id): void {
+
+    }
+
+    /**
+     * Set the form data when displaying the LTI Instance form.
+     *
+     * @param object $defaultvalues Default form values.
+     */
+    public function set_instance_form_values(object $defaultvalues): void {
 
     }
 
@@ -471,5 +518,4 @@ abstract class service_base {
         return $ok;
 
     }
-
 }

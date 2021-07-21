@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_site_main_menu', language 'de', version '3.8'.
+ * Strings for component 'block_site_main_menu', language 'de', version '3.11'.
  *
  * @package     block_site_main_menu
  * @category    string

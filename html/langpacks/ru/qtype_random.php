@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_random', language 'ru', version '3.8'.
+ * Strings for component 'qtype_random', language 'ru', version '3.11'.
  *
  * @package     qtype_random
  * @category    string
@@ -32,12 +32,19 @@ $string['pluginname_help'] = 'Случайный вопрос — это не в
 $string['pluginnameediting'] = 'Редактирование случайного вопроса';
 $string['privacy:metadata'] = 'Плагин «Тип вопроса Случайный» не хранит никаких персональных данных';
 $string['randomqname'] = 'Случайный ({$a})';
+$string['randomqnamefromtop'] = 'Негодный случайный вопрос! Удалите этот вопрос.';
+$string['randomqnamefromtoptags'] = 'Негодный случайный вопрос! Удалите этот вопрос.';
 $string['randomqnametags'] = 'Случайный ({$a->category}, теги: {$a->tags})';
 $string['randomqplusname'] = 'Случайный ({$a} и подкатегории)';
+$string['randomqplusnamecourse'] = 'Случайный (из любой категории в этом курсе)';
+$string['randomqplusnamecoursecat'] = 'Случайный (из любой категории внутри категорий курса {$a})';
 $string['randomqplusnamecoursecattags'] = 'Случайный (Любая категория внутри категории курса{$a->category}, теги: {$a->tags})';
 $string['randomqplusnamecoursetags'] = 'Случайный (Любая категория в этом курсе, теги: {$a->tags})';
+$string['randomqplusnamemodule'] = 'Случайный (из любой категории теста)';
 $string['randomqplusnamemoduletags'] = 'Случайный (Любая категория этого теста, теги: {$a->tags})';
+$string['randomqplusnamesystem'] = 'Случайный ( из любой категории уровня сайта)';
 $string['randomqplusnamesystemtags'] = 'Случайный (Любая категория уровня системы (сайта), теги: {$a->tags})';
 $string['randomqplusnametags'] = 'Случайный ({$a->category} и подкатегории, теги: {$a->tags})';
 $string['selectedby'] = '{$a->questionname} выбран из {$a->randomname}';
 $string['selectmanualquestions'] = 'Для случайных вопросов могут использоваться вручную оцениваемые вопросы';
+$string['taskunusedrandomscleanup'] = 'Удалить неиспользуемые случайные вопросы';

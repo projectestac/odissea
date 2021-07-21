@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'gl', version '3.8'.
+ * Strings for component 'gradeimport_xml', language 'gl', version '3.11'.
  *
  * @package     gradeimport_xml
  * @category    string
@@ -25,20 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['errbadxmlformat'] = 'Erro - formato XML incorrecto';
-$string['errduplicategradeidnumber'] = 'Erro - hai dous elementos de cualificación co número ID «{$a}» neste curso. Isto debería ser imposíbel.';
-$string['errduplicateidnumber'] = 'Erro - número ID duplicado';
-$string['errincorrectgradeidnumber'] = 'Erro - o número ID «{$a}» no ficheiro de importación non coincide con ningún elemento de cualificación.';
-$string['errincorrectidnumber'] = 'Erro - número ID incorrecto';
-$string['errincorrectuseridnumber'] = 'Erro - o número ID «{$a}» no ficheiro de importación non coincide con ningún usuario.';
+$string['errbadxmlformat'] = 'Erro: formato XML incorrecto';
+$string['errduplicategradeidnumber'] = 'Erro: hai dous elementos de cualificación co número ID «{$a}» neste curso. Isto debería ser imposíbel.';
+$string['errduplicateidnumber'] = 'Erro: número ID duplicado';
+$string['errincorrectgradeidnumber'] = 'Erro: o número ID «{$a}» no ficheiro de importación non coincide con ningún elemento de cualificación.';
+$string['errincorrectidnumber'] = 'Erro: número ID incorrecto';
+$string['errincorrectuseridnumber'] = 'Erro: o número ID «{$a}» no ficheiro de importación non coincide con ningún usuario.';
 $string['error'] = 'Produciuse un erro';
 $string['errorduringimport'] = 'Produciuse un erro ao tentar importar: {$a}';
 $string['fileurl'] = 'URL remoto do ficheiro';
 $string['fileurl_help'] = 'O campo URL remoto é para obter datos dun servidor remoto, como un sistema de información do alumno.';
 $string['importxml'] = 'Importar XML';
-$string['importxml_help'] = 'As cualificacións poden ser importadas a través dun ficheiro XML que conteña números de ID de usuario e números de ID de actividade. Para obter o formato correcto, primeiro exporte algunhas cualificacións a un ficheiro XML e despois vexa o ficheiro.';
+$string['importxml_help'] = 'As cualificacións poden ser importadas a través dun ficheiro XML que conteña números de ID de usuario e números de ID de actividade. Para obter o formato correcto, primeiro exporte algunhas cualificacións a un ficheiro XML e após vexa o ficheiro.';
 $string['importxml_link'] = 'grade/import/xml/index';
 $string['pluginname'] = 'Ficheiro XML';
 $string['privacy:metadata'] = 'O engadido de importar cualificacións dende XML non almacena ningún dato persoal.';
-$string['xml:publish'] = 'Publicar as cualificacións importadas desde XML';
+$string['xml:publish'] = 'Publicar as cualificacións importadas dende XML';
 $string['xml:view'] = 'Importar cualificacións dende XML';

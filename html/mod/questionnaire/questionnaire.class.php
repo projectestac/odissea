@@ -1110,6 +1110,7 @@ class questionnaire {
             if (empty($msg)) {
                 return;
             }
+            $formdata->rid = $this->existing_response_action($formdata, $userid);
         }
 
         if (!empty($formdata->resume) && ($this->resume)) {
@@ -1124,6 +1125,7 @@ class questionnaire {
             $msg = $this->response_check_format($formdata->sec, $formdata);
             if ($msg) {
                 $formdata->next = '';
+                $formdata->rid = $this->existing_response_action($formdata, $userid);
             } else {
                 $nextsec = $this->next_page_action($formdata, $userid);
                 if ($nextsec === false) {
@@ -1147,6 +1149,7 @@ class questionnaire {
             $msg = $this->response_check_format($formdata->sec, $formdata, false, true);
             if ($msg) {
                 $formdata->prev = '';
+                $formdata->rid = $this->existing_response_action($formdata, $userid);
             } else {
                 $prevsec = $this->previous_page_action($formdata, $userid);
                 if ($prevsec === false) {
@@ -1235,6 +1238,11 @@ class questionnaire {
         }
 
         $this->print_survey_start($message, $section, $numsections, $hasrequired, '', 1);
+        // Only show progress bar on questionnaires with more than one page.
+        if ($this->progressbar && isset($this->questionsbysec) && count($this->questionsbysec) > 1) {
+            $this->page->add_to_page('progressbar',
+                    $this->renderer->render_progress_bar($section, $this->questionsbysec));
+        }
         foreach ($this->questionsbysec[$section] as $questionid) {
             if ($this->questions[$questionid]->type_id != QUESSECTIONTEXT) {
                 $i++;
@@ -1327,7 +1335,14 @@ class questionnaire {
                 if (false) {
                     $linkname = get_string('downloadpdf', 'mod_questionnaire');
                     $link = new moodle_url('/mod/questionnaire/report.php',
-                        ['action' => 'vresp', 'instance' => $this->id, 'target' => 'pdf', 'individualresponse' => 1, 'rid' => $rid]);
+                        [
+                            'action' => 'vresp',
+                            'instance' => $this->id,
+                            'target' => 'pdf',
+                            'individualresponse' => 1,
+                            'rid' => $rid
+                        ]
+                    );
                     $downpdficon = new pix_icon('b/pdfdown', $linkname, 'mod_questionnaire');
                     $respinfo .= $this->renderer->action_link($link, null, null, null, $downpdficon);
                 }
@@ -1380,11 +1395,11 @@ class questionnaire {
         if ($section == 1) {
             if (!empty($this->survey->title)) {
                 $this->survey->title = format_string($this->survey->title);
-                $this->page->add_to_page('title', clean_text($this->survey->title, FORMAT_HTML));
+                $this->page->add_to_page('title', $this->survey->title);
             }
             if (!empty($this->survey->subtitle)) {
                 $this->survey->subtitle = format_string($this->survey->subtitle);
-                $this->page->add_to_page('subtitle', clean_text($this->survey->subtitle, FORMAT_HTML));
+                $this->page->add_to_page('subtitle', $this->survey->subtitle);
             }
             if ($this->survey->info) {
                 $infotext = file_rewrite_pluginfile_urls($this->survey->info, 'pluginfile.php',
@@ -1417,7 +1432,7 @@ class questionnaire {
         global $DB, $CFG;
 
         if (! $course = $DB->get_record("course", array("id" => $courseid))) {
-            print_error('incorrectcourseid', 'questionnaire');
+            throw new \moodle_exception('incorrectcourseid', 'mod_questionnaire');
         }
 
         $this->course = $course;
@@ -1559,7 +1574,7 @@ class questionnaire {
             $name = $DB->get_field('questionnaire_survey', 'name', array('id' => $this->survey->id));
 
             // Trying to change survey name.
-            if (trim($name) != trim(stripslashes($sdata->name))) {  // $sdata will already have slashes added to it.
+            if (trim($name) != trim(stripslashes($sdata->name))) {  // Var $sdata will already have slashes added to it.
                 $count = $DB->count_records('questionnaire_survey', array('name' => $sdata->name));
                 if ($count != 0) {
                     $errstr = get_string('errnewname', 'questionnaire');  // TODO: notused!
@@ -2353,6 +2368,11 @@ class questionnaire {
         if (empty($thankhead)) {
             $thankhead = get_string('thank_head', 'questionnaire');
         }
+        if ($this->progressbar && isset($this->questionsbysec) && count($this->questionsbysec) > 1) {
+            // Show 100% full progress bar on completion.
+            $this->page->add_to_page('progressbar',
+                    $this->renderer->render_progress_bar(count($this->questionsbysec) + 1, $this->questionsbysec));
+        }
         $this->page->add_to_page('title', $thankhead);
         $this->page->add_to_page('addinfo',
             format_text(file_rewrite_pluginfile_urls($thankbody, 'pluginfile.php',
@@ -2531,6 +2551,7 @@ class questionnaire {
             $respcols = new stdClass();
             for ($i = 0; $i < $colnumber; $i++) {
                 $colname = 'respondentscolumn'.$i;
+                $respcols->$colname = (object)['respondentlink' => []];
                 for ($j = 0; $j < $lines; $j++) {
                     $respcols->{$colname}->respondentlink[] = $resparr[$a];
                     $a++;
@@ -2699,9 +2720,9 @@ class questionnaire {
             $this->survey_results_navbar($rid);
         }
 
-        $this->page->add_to_page('title', clean_text($this->survey->title));
+        $this->page->add_to_page('title', format_string($this->survey->title));
         if ($this->survey->subtitle) {
-            $this->page->add_to_page('subtitle', clean_text($this->survey->subtitle));
+            $this->page->add_to_page('subtitle', format_string($this->survey->subtitle));
         }
         if ($this->survey->info) {
             $infotext = file_rewrite_pluginfile_urls($this->survey->info, 'pluginfile.php',
@@ -2804,7 +2825,11 @@ class questionnaire {
      * @return array|string
      */
     protected function user_fields() {
-        $userfieldsarr = get_all_user_name_fields();
+        if (class_exists('\core_user\fields')) {
+            $userfieldsarr = \core_user\fields::get_name_fields();
+        } else {
+            $userfieldsarr = get_all_user_name_fields();
+        }
         $userfieldsarr = array_merge($userfieldsarr, ['username', 'department', 'institution']);
         return $userfieldsarr;
     }
@@ -3058,7 +3083,7 @@ class questionnaire {
         );
 
         if (!$survey = $DB->get_record('questionnaire_survey', array('id' => $this->survey->id))) {
-            print_error ('surveynotexists', 'questionnaire');
+            throw new \moodle_exception('surveynotexists', 'mod_questionnaire');
         }
 
         // Get all responses for this survey in one go.
@@ -3124,7 +3149,7 @@ class questionnaire {
                         foreach ($choices as $choice) {
                             $content = $choice->content;
                             // If "Other" add a column for the actual "other" text entered.
-                            if (\mod_questionnaire\question\choice\choice::content_is_other_choice($content)) {
+                            if (\mod_questionnaire\question\choice::content_is_other_choice($content)) {
                                 $col = $choice->name.'_'.$stringother;
                                 $columns[][$qpos] = $col;
                                 $questionidcols[][$qpos] = null;
@@ -3152,7 +3177,7 @@ class questionnaire {
                             array_push($types, '0');
                             // If "Other" add a column for the "other" checkbox.
                             // Then add a column for the actual "other" text entered.
-                            if (\mod_questionnaire\question\choice\choice::content_is_other_choice($content)) {
+                            if (\mod_questionnaire\question\choice::content_is_other_choice($content)) {
                                 $content = $stringother;
                                 $col = $choice->name.'->['.$content.']';
                                 $columns[][$qpos] = $col;
@@ -3309,7 +3334,7 @@ class questionnaire {
                     }
                 } else {
                     $content = $choicesbyqid[$qid][$responserow->choice_id]->content;
-                    if (\mod_questionnaire\question\choice\choice::content_is_other_choice($content)) {
+                    if (\mod_questionnaire\question\choice::content_is_other_choice($content)) {
                         // If this is an "other" column, put the text entered in the next position.
                         $row[$position + 1] = $responserow->response;
                         $choicetxt = empty($responserow->choice_id) ? '0' : '1';
@@ -3338,9 +3363,9 @@ class questionnaire {
                     }
 
                     $content = $choicesbyqid[$qid][$responserow->choice_id]->content;
-                    if (\mod_questionnaire\question\choice\choice::content_is_other_choice($content)) {
+                    if (\mod_questionnaire\question\choice::content_is_other_choice($content)) {
                         // If this has an "other" text, use it.
-                        $responsetxt = \mod_questionnaire\question\choice\choice::content_other_choice_display($content);
+                        $responsetxt = \mod_questionnaire\question\choice::content_other_choice_display($content);
                         $responsetxt1 = $responserow->response;
                     } else if (($choicecodes == 1) && ($choicetext == 1)) {
                         $responsetxt = $c.' : '.$content;
@@ -3821,7 +3846,7 @@ class questionnaire {
      * @throws moodle_exception
      */
     public function save_mobile_data($userid, $sec, $completed, $rid, $submit, $action, array $responses) {
-        global $DB, $CFG; // Do not delete $CFG!!!
+        global $DB, $CFG; // Do not delete "$CFG".
 
         $ret = [];
         $response = $this->build_response_from_appdata($responses, $sec);
@@ -3853,5 +3878,41 @@ class questionnaire {
             $this->commit_submission_response($rid, $userid);
         }
         return $ret;
+    }
+
+    public function get_all_file_areas() {
+        global $DB;
+
+        $areas = [];
+        $areas['info'] = $this->sid;
+        $areas['thankbody'] = $this->sid;
+
+        // Add question areas.
+        if (empty($this->questions)) {
+            $this->add_questions();
+        }
+        $areas['question'] = [];
+        foreach ($this->questions as $question) {
+            $areas['question'][] = $question->id;
+        }
+
+        // Add feedback areas.
+        $areas['feedbacknotes'] = $this->sid;
+        $fbsections = $DB->get_records('questionnaire_fb_sections', ['surveyid' => $this->sid]);
+        if (!empty($fbsections)) {
+            $areas['sectionheading'] = [];
+            foreach ($fbsections as $section) {
+                $areas['sectionheading'][] = $section->id;
+                $feedbacks = $DB->get_records('questionnaire_feedback', ['sectionid' => $section->id]);
+                if (!empty($feedbacks)) {
+                    $areas['feedback'] = [];
+                    foreach ($feedbacks as $feedback) {
+                        $areas['feedback'][] = $feedback->id;
+                    }
+                }
+            }
+        }
+
+        return $areas;
     }
 }

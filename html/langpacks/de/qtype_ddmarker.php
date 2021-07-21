@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'de', version '3.8'.
+ * Strings for component 'qtype_ddmarker', language 'de', version '3.11'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -47,7 +47,7 @@ Wenn Sie zunächst eine Form auswählen (Kreis, Rechteck oder Polygon), wird obe
 
 Das Bearbeiten einer Form beginnt mit einem Klick auf die Form in der Vorschau, um die Bearbeitungsziehpunkte anzuzeigen. Sie können die Form verschieben oder die Abmessungen der Form mit den Stützpunkten anpassen.
 
-Nur für Polygone: wenn Sie die Taste Crtl (bzw. Cmd auf einem Mac) gedrückt halten, während Sie auf einen Stützpunkt klicken, wird dem Polygon ein neuer Stützpunkt hinzugefügt. Halten Sie ein Polygon so einfach wie möglich, ohne dass sich Linien kreuzen.
+Nur für Polygone: wenn Sie die Taste Ctrl (bzw. Cmd auf einem Mac) gedrückt halten, während Sie auf einen Stützpunkt klicken, wird dem Polygon ein neuer Stützpunkt hinzugefügt. Halten Sie ein Polygon so einfach wie möglich, ohne dass sich Linien kreuzen.
 
 Die drei Formen verwenden die Koordinaten auf folgende Weise:
 
@@ -84,8 +84,11 @@ $string['pluginnamesummary'] = 'Markierungen werden per Drag-and-drop auf ein Hi
 
 Hinweis: Dieser Fragetyp ist für sehbehinderte Benutzer nicht barrierefrei.';
 $string['previewareaheader'] = 'Vorschau';
-$string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, geben Sie Beschriftungstexte für die Markierungen ein und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Markierungen gezogen werden müssen.';
-$string['privacy:metadata'] = 'Das Drag-and-Drop Markierungen Frageformat Plugin speichert keine personenbezogenen Daten.';
+$string['previewareamessage'] = 'Wählen Sie ein Hintergrundbild, geben Sie Texte für die Markierungen ein und legen Sie die Ablagebereiche auf dem Hintergrundbild fest, auf welche die Markierungen gezogen werden müssen.';
+$string['privacy:metadata'] = 'Das Plugin "Drag-and-Drop Markierungen Frageformat" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
+$string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
+$string['privacy:preference:shuffleanswers'] = 'Gibt an, ob die Antworten automatisch gemischt werden sollen.';
 $string['refresh'] = 'Vorschau erneuern';
 $string['shape'] = 'Umriss';
 $string['shape_circle'] = 'Kreis';
@@ -98,7 +101,7 @@ $string['shape_rectangle'] = 'Rechteck';
 $string['shape_rectangle_coords'] = 'x,y;b,h - In dieser Liste sind x,y die Koordinaten der linken oberen Ecke des Rechtecks und b und h dessen Breite und Höhe.';
 $string['shape_rectangle_lowercase'] = 'rectangle';
 $string['showmisplaced'] = 'Kennzeichnen Sie die Ablegebereiche auf welche nicht die richtige Markierung gelegt wurde.';
-$string['shuffleimages'] = 'Ziehbare Objekte bei jedem Versuch zufällig anordnen';
+$string['shuffleimages'] = 'Verschiebbare Elemente bei jedem Versuch zufällig anordnen';
 $string['stateincorrectlyplaced'] = 'Zeige, welche Markierungen falsch plaziert wurden.';
 $string['summariseplace'] = '{$a->no}. {$a->text}';
 $string['summariseplaceno'] = 'Dropzone {$a}';

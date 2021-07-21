@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'eu', version '3.8'.
+ * Strings for component 'tool_usertours', language 'eu', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -64,12 +64,20 @@ $string['event_tour_ended'] = 'Ibilaldia amaitu da';
 $string['event_tour_reset'] = 'Berrabiarazi ibilaldia';
 $string['event_tour_started'] = 'Ibilaldia hasi da';
 $string['exporttour'] = 'Esportatu ibilaldia';
+$string['filter_accessdate'] = 'Sarbide-data';
+$string['filter_accessdate_enabled'] = 'Gaitu sarbide-dataren iragazkia';
+$string['filter_accessdate_enabled_help'] = 'Erakutsi ibilbidea soilik erabiltzaile berriei edo aspaldian gunera sartu ez diren erabiltzaileei.';
 $string['filter_category'] = 'Kategoria';
 $string['filter_category_help'] = 'Erakutsi ibilaldia aukeratutako kategorian dagoen ikastaro batekin lotuta dagoen orri batean.';
 $string['filter_course'] = 'Ikastaroak';
 $string['filter_course_help'] = 'Erakutsi ibilaldia aukeratutako ikastaroarekin lotuta dagoen orri batean.';
 $string['filter_courseformat'] = 'Ikastaro-formatua';
 $string['filter_courseformat_help'] = 'Erakutsi ibilaldia aukeratutako ikastaro-formatua erabiltzen duen ikastaro batekin lotuta dagoen orri batean.';
+$string['filter_cssselector'] = 'CSS hautatzailea';
+$string['filter_cssselector_help'] = 'Erakutsi ibilbidea soilik orrian CSS hautatzailea aurkitzen bada.';
+$string['filter_date_account_creation'] = 'Erabiltzaile-kontuaren sorrera-data tarte honen barruan';
+$string['filter_date_first_login'] = 'Erabiltzailearen lehen sarrera tarte honen barruan';
+$string['filter_date_last_login'] = 'Erabiltzailearen azken sarrera tarte honen barruan';
 $string['filter_header'] = 'Ibilaldiaren iragazkiak';
 $string['filter_help'] = 'Aukeratu ibilaldia erakusteko bete beharreko baldintzak. Iragazki guztiak bete behar dira ibilaldi bat erabiltzaile bati erakusteko.';
 $string['filter_role'] = 'Rola';
@@ -87,6 +95,7 @@ $string['name'] = 'Izena';
 $string['newstep'] = 'Urrats berria';
 $string['newtour'] = 'Sortu beste ibilaldi bat';
 $string['next'] = 'Hurrengoa';
+$string['nextstep'] = 'Hurrengoa';
 $string['options_heading'] = 'Aukerak';
 $string['orphan'] = 'Erakutsi, jomuga aurkitu ez bada';
 $string['orphan_help'] = 'Erakutsi urratsa, jomuga orrian aurkitzen ez bada.';
@@ -108,6 +117,7 @@ $string['placement_help'] = 'Urrats bakoitza jomugaren gainean, azpian, ezkerrea
 
 Urratsa orri zehatz batean ezin bada zehaztutako kokapenean erakutsi, automatikoki beste nonbait erakutsiko da.';
 $string['pluginname'] = 'Erabiltzaile-ibilaldiak';
+$string['previousstep'] = 'Aurrekoa';
 $string['privacy:metadata:preference:completed'] = 'Erabiltzaile batek azkenengo aldiz erabiltzaile-ibilaldia osatu zueneko data.';
 $string['privacy:metadata:preference:requested'] = 'Erabiltzaile batek azkenengo aldiz erabiltzaile-ibilaldia eskuz eskatu zueneko data.';
 $string['privacy:request:preference:completed'] = '"{$a->name}" erabiltzaile-ibilaldia azkenengoz osatutzat eman zenuen {$a->time}';
@@ -169,7 +179,7 @@ $string['tour2_title_opendrawer'] = 'Ireki nabigazio-kutxa';
 $string['tour2_title_participants'] = 'Ikastaroko partaideak';
 $string['tour2_title_welcome'] = 'Ongi etorri';
 $string['tour3_content_dashboard'] = 'Aginte-panel berriak zuretzat garrantzitsua den informazioa modu errazean eskuratzen laguntzeko ezaugarri asko ditu.';
-$string['tour3_content_displayoptions'] = 'Ikastaroak izenaren arabera edo azken sarbide-dataren arabera ordena daitezke.
+$string['tour3_content_displayoptions'] = 'Ikastaroak izenaren, izen laburraren edo azken sarbide-dataren arabera ordena daitezke.
 
 Ikastaroak zerrenda batean erakustea ere aukera dezakezu, informazio laburpenaz lagundua edo lehenetsitako \'txartel\' ikuspegiaz.';
 $string['tour3_content_overview'] = 'Ikastaroa gainbegiratzeko blokeak matrikulatuta zaudenteneko ikastaro guztiak erakusten ditu.
@@ -208,6 +218,16 @@ $string['tour4_title_icon'] = 'Mezularitza';
 $string['tour4_title_messaging'] = 'Mezularitza-interfaze berria';
 $string['tour4_title_settings'] = 'Mezularitzaren ezarpenak';
 $string['tour4_title_starred'] = 'Nabarmenduta';
+$string['tour_activityinfo_activity_student_content'] = 'Jarduera datak eta jardueraren osaketa-baldintzak jarduera-orrian erakusten dira.';
+$string['tour_activityinfo_activity_student_title'] = 'Berria: Jardueraren informazioa';
+$string['tour_activityinfo_activity_teacher_content'] = 'Orain ikasleei jarduera datak eta jardueraren osaketa-baldintzak jarduera bakoitzaren orrian erakusten zaizkie (eta ikastaro-orrian erakusteko aukera dago).
+
+Ikasleek osatu gisa eskuz markatu dezaketen jardueretan, jarduera-orrian \'Markatu egindako gisa\' botoia erakusten zaie.';
+$string['tour_activityinfo_activity_teacher_title'] = 'Berria: Jardueraren informazioa';
+$string['tour_activityinfo_course_student_content'] = 'Orain ikasleei jarduera datak eta jardueraren osaketa-baldintzak ikastaro-orrian erakusten zaizkie.';
+$string['tour_activityinfo_course_student_title'] = 'Berria: Jardueraren informazioa';
+$string['tour_activityinfo_course_teacher_content'] = '\'Erakutsi jardueren osaketa-baldintzak\' eta \'Erakutsi jardueraren datak\' ikastaroko ezarpen berriek jardueren osaketa-baldintzak (zehaztuta badaude) edota datak ikasleek ikastaro-orrian erakusteko aukera ematen dute.';
+$string['tour_activityinfo_course_teacher_title'] = 'Berria: Jardueraren informazioa';
 $string['tour_final_step_content'] = 'Zure erabiltzaile-ibilbidearen amaiera duzu hau. Ez da berriro abiatuko behealdeko estekan klik egin ezean.';
 $string['tour_final_step_title'] = 'Ibilbidearen amaiera';
 $string['tour_resetforall'] = 'Erabiltzaile-ibilaldiaren egoera berrabiarazi da. Erabiltzaile guztiei berriz erakutsiko zaie.';

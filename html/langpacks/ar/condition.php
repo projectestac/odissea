@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'condition', language 'ar', version '3.8'.
+ * Strings for component 'condition', language 'ar', version '3.11'.
  *
  * @package     condition
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcompletions'] = 'أضف {no} شروط نشاط للنموذج';
-$string['addgrades'] = 'أضف {no} شروط علامات للنموذج';
+$string['addgrades'] = 'أضف {no} شروط تقديرات للنموذج';
 $string['adduserfields'] = '{لا} تضف شروطاً إلى حقل المستخدم في النموذج';
 $string['availabilityconditions'] = 'تقييد الوصول';
 $string['availablefrom'] = 'يمكن الوصول له من';

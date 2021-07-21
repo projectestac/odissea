@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'pt', version '3.8'.
+ * Strings for component 'report_performance', language 'pt', version '3.11'.
  *
  * @package     report_performance
  * @category    string
@@ -50,5 +50,5 @@ $string['morehelp'] = 'mais ajuda';
 $string['performance:view'] = 'Ver relatório de desempenho';
 $string['performancereportdesc'] = 'Este relatório exibe uma listagem de problemas que podem afetar o desempenho do site {$a}';
 $string['pluginname'] = 'Visão global do desempenho';
-$string['privacy:metadata'] = 'O módulo Visão global do desempenho não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Visão global do desempenho não armazena quaisquer dados pessoais.';
 $string['value'] = 'Valor';

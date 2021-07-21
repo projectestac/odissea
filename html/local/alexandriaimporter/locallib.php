@@ -35,7 +35,7 @@ function render_alexandria_searchform($db, $searchurl, $selected = false) {
 
     $searched = array();
 
-    echo '<div class="row-fluid">';
+    echo '<div class="row-fluid clearfix">';
     echo '<div class="span8"><h3 class="pull-left">'.core_text::strtotitle($db->searching).'</h3></div>';
 
     echo '<div class="span4 text-right">';
@@ -100,29 +100,29 @@ function render_alexandria_searchform($db, $searchurl, $selected = false) {
     echo '<div class="simple control-group form-horizontal">
             <label class="control-label" for="f_search"> '. get_string('search').'</label>
             <div class="controls">
-                <input type="text" size="16" id="f_search" name="f_search" value="'.s($value).'" />
+                <input type="text" size="30" id="f_search" name="f_search" value="' . s($value) . '" />
             </div>
         </div>
         <div class="simple control-group form-horizontal">
             <div class="controls">
-              <input type="submit" value="'.get_string('search').'"/>
+                <input type="submit" class="btn btn-primary" value="'.get_string('search').'"/>
             </div>
-          </div>';
+        </div>';
 
     // Actual replacement of the tags.
     echo '<div class="advanced">';
     echo preg_replace($patterns, $replacement, $db->searchtemplate);
-    echo '<div class="text-center"><input type="submit" class="btn btn-active" value="'.get_string('search').'"/></div>';
+    echo '<div class="text-center"><input class="btn btn-primary" type="submit" class="btn btn-active" value="'.get_string('search').'"/></div>';
     echo '</div>';
 
     echo '</form>';
 
     echo '<div id="dbmodal'.$db->id.'" class="modal hide fade">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3>'.$db->name.'</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h3>' . $db->name . '</h3>
       </div>
-      <div class="modal-body">'.$db->intro.'</div>
+      <div class="modal-body">' . $db->intro . '</div>
     </div>';
 
     return $searched;
@@ -219,6 +219,11 @@ function alexandria_get_databases() {
     global $DB;
     $dbs = call_alexandria_ws('local_alexandria_get_databases');
     $return = array();
+
+    if (empty($dbs) || !count($dbs)) {
+        return $return;
+    }
+
     // Return only course and scorm databases.
     foreach ($dbs as $data) {
         switch ($data->type) {

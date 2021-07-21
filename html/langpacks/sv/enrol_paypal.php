@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'sv', version '3.8'.
+ * Strings for component 'enrol_paypal', language 'sv', version '3.11'.
  *
  * @package     enrol_paypal
  * @category    string
@@ -30,7 +30,7 @@ $string['businessemail'] = 'PayPal för företag e-post';
 $string['businessemail_desc'] = 'E-postadressen till ditt PayPal för företag-konto.';
 $string['cost'] = 'Registreringsavgift';
 $string['costerror'] = 'Anmälningsavgiften är inte numerisk';
-$string['costorkey'] = 'Var snäll och välj ett av de följande sätten att registrera sig.';
+$string['costorkey'] = 'Välj ett av de följande sätten att registrera sig.';
 $string['currency'] = 'Valuta';
 $string['defaultrole'] = 'Standardroll';
 $string['defaultrole_desc'] = 'Välj standardrollen som ska tilldelas vid registrering.';
@@ -57,7 +57,7 @@ $string['paypal:manage'] = 'Hantera registrerade användare';
 $string['paypal:unenrol'] = 'Avregistrera användare från kurs';
 $string['paypal:unenrolself'] = 'Avrigistrera dig själv från kurs';
 $string['paypalaccepted'] = 'Betalningar via Paypal accepterade';
-$string['pluginname'] = 'PayPal';
+$string['pluginname'] = 'Kursregistrering via PayPal';
 $string['pluginname_desc'] = 'Med PayPal-modulen kan du konfigurera betalda kurser. Om kostnaden för en kurs är noll ombeds studenterna inte att betala vid registreringen. Det finns en webbplatsövergripande kostnad som du anger här som standard för hela webbplatsen och sedan en kursinställning som du kan ställa in för varje enskild kurs. Kurskostnaden åsidosätter den övergripande kostnaden.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'Information om PayPal-transaktioner för PayPal registreringar.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = 'Betalningsmottagarens PayPal eller konto-ID (det vill säga handlaren).';
@@ -87,7 +87,7 @@ $string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'Förnamn på a
 $string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'Efternamn för användaren som köper kursen.';
 $string['privacy:metadata:enrol_paypal:paypal_com:os0'] = 'Köparens fullständiga namn.';
 $string['processexpirationstask'] = 'Skicka meddelande om förfallna PayPal-registreringar.';
-$string['sendpaymentbutton'] = 'Skicka betalning via Paypal';
+$string['sendpaymentbutton'] = 'Betala med PayPal';
 $string['status'] = 'Tillåt registrering via PayPal';
 $string['status_desc'] = 'Tillåter som standard användare att registrera sig till en kurs via PayPal.';
 $string['transactions'] = 'PayPal-transaktioner';

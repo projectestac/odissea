@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'pt', version '3.8'.
+ * Strings for component 'quiz_overview', language 'pt', version '3.11'.
  *
  * @package     quiz_overview
  * @category    string
@@ -38,7 +38,7 @@ $string['highlightinggraded'] = 'A tentativa do utilizador que conta para a nota
 $string['needed'] = 'Necessário';
 $string['noattemptsonly'] = 'Mostrar/descarregar só os {$a} sem tentativas realizadas';
 $string['noattemptstoregrade'] = 'Nenhuma tentativa necessita de ser recalculada';
-$string['nogradepermission'] = 'Não possui permissões para avaliar este teste';
+$string['nogradepermission'] = 'Não tem permissão para avaliar este teste.';
 $string['onlyoneattemptallowed'] = 'Apenas é permitida uma tentativa por utilizador';
 $string['optallattempts'] = 'todas as tentativas';
 $string['optallstudents'] = 'todos os {$a} que tentaram ou não resolver o teste';
@@ -76,6 +76,6 @@ $string['show'] = 'Mostrar';
 $string['showattempts'] = 'Incluir tentativas';
 $string['showdetailedmarks'] = 'Notas de cada pergunta';
 $string['showinggraded'] = 'A mostrar apenas as tentativas que contam para a nota final de cada aluno';
-$string['showinggradedandungraded'] = 'A mostrar tentativas que contam, ou não, para a nota final de cada aluno. A tentativa do aluno que conta para a nota final está assinalada. O método de avaliação deste Teste é {$a}.';
+$string['showinggradedandungraded'] = 'A mostrar tentativas que contam, ou não, para a nota final de cada aluno. A tentativa do aluno que conta para a nota final está destacada. O método de avaliação deste teste é {$a}.';
 $string['studentingroup'] = '\'{$a->coursestudent}\' no grupo \'{$a->groupname}';
 $string['studentingrouplong'] = '\'{$a->coursestudent}\' neste grupo';

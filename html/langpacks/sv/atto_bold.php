@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_bold', language 'sv', version '3.8'.
+ * Strings for component 'atto_bold', language 'sv', version '3.11'.
  *
  * @package     atto_bold
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fet';
+$string['privacy:metadata'] = 'Pluginmodulen atto_bold lagrar ingen personinformation.';

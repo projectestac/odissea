@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'ja', version '3.8'.
+ * Strings for component 'grading', language 'ja', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -29,6 +29,7 @@ $string['activemethodinfo'] = '「 {$a->area} 」エリアのアクティブ評�
 $string['activemethodinfonone'] = '「 {$a->area} 」エリアに高度な評定方法はありません。シンプル直接評定が使用されます。';
 $string['changeactivemethod'] = 'アクティブ評定方法を変更する';
 $string['clicktoclose'] = '閉じるにはクリックしてください。';
+$string['error:gradingunavailable'] = '高度な評定方法が正しく設定されていません。フォーラム設定内のフォーラム評定オプション全体を確認してください。';
 $string['error:notinrange'] = '無効な評点「 {$a->grade} 」が提供されました。評点は 0 から {$a->maxgrade} の間にしてください。';
 $string['exc_gradingformelement'] = '評定フォームエレメントを例示できません。';
 $string['formnotavailable'] = '高度な評定方法が選択されましたが、現在のところ評定フォームを利用できません。アクションメニューまたは管理ブロック内のリンクを使用して最初に評定フォームを定義してください。';

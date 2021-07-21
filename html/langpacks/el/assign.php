@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'el', version '3.8'.
+ * Strings for component 'assign', language 'el', version '3.11'.
  *
  * @package     assign
  * @category    string
@@ -25,9 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:submissionsdue'] = 'Λήξη:';
+$string['activitydate:submissionsopen'] = 'Ανοίγει:';
+$string['activitydate:submissionsopened'] = 'Άνοιξε:';
 $string['activityoverview'] = 'Έχετε εργασίες που πρέπει να δείτε';
-$string['addattempt'] = 'Επέτρεψε και άλλη προσπάθεια';
-$string['addnewattempt'] = 'Πρόσθεσε μία νέα προσπάθεια';
+$string['addattempt'] = 'Να επιτρέπεται και άλλη προσπάθεια';
+$string['addnewattempt'] = 'Προσθήκη μίας νέας προσπάθειας';
 $string['addnewattempt_help'] = 'Αυτό θα δημιουργήσει μια νέα κενή υποβολή για να εργαστείτε.';
 $string['addnewattemptfromprevious'] = 'Προσθήκη νέας προσπάθειας βασισμένη σε προηγούμενη υποβολή';
 $string['addnewattemptfromprevious_help'] = 'Αυτό θα αντιγράψει τα περιεχόμενα της προηγούμενης υποβολής σας σε μια νέα υποβολή για να εργαστείτε σε αντίγραφο.';
@@ -39,7 +42,7 @@ $string['allocatedmarker'] = 'Βαθμολογητής που εκχωρήθηκ
 $string['allocatedmarker_help'] = 'Βαθμολογητής που εκχωρήθηκε για αυτή την υποβολή.';
 $string['allowsubmissions'] = 'Επέτρεψε στο χρήστη να συνεχίζει να προσθέτει υποβολές σε αυτή την εργασία.';
 $string['allowsubmissionsanddescriptionfromdatesummary'] = 'Τα στοιχεία της εργασίας και η φόρμα υποβολής θα είναι διαθέσιμα από το <strong>{$a}</strong>';
-$string['allowsubmissionsfromdate'] = 'Hμερομηνία έναρξης υποβολών';
+$string['allowsubmissionsfromdate'] = 'Ημερομηνία έναρξης υποβολών';
 $string['allowsubmissionsfromdate_help'] = 'Εάν ενεργοποιηθεί, οι μαθητές δεν θα μπορούν να υποβάλουν πριν από αυτήν την ημερομηνία. Εάν απενεργοποιηθεί, οι μαθητές θα μπορούν να ξεκινήσουν αμέσως την υποβολή τους.';
 $string['allowsubmissionsfromdatesummary'] = 'Για αυτή την ανάθεση θα γίνουν δεκτές υποβολές από <strong>{$a}</strong>';
 $string['allowsubmissionsshort'] = 'Να επιτρέπονται αλλαγές στην υποβολή';
@@ -61,13 +64,14 @@ $string['assign:reviewgrades'] = 'Εξέταση βαθμολογιών';
 $string['assign:showhiddengrader'] = 'Δείτε την ταυτότητα ενός κρυμμένου βαθμολογητή';
 $string['assign:submit'] = 'Υποβολή εργασίας';
 $string['assign:view'] = 'Εμφάνιση εργασίας';
-$string['assign:viewblinddetails'] = 'Εμφάνιση των ταυτοτήτων μαθητών όταν είναι ενεργοποιημένη η τυφλή βαθμολόγηση';
+$string['assign:viewblinddetails'] = 'Δείτε τα αναγνωριστικά των μαθητών όταν είναι ενεργοποιημένες οι ανώνυμες υποβολές';
 $string['assign:viewgrades'] = 'Εμφάνιση Βαθμών';
+$string['assign:viewownsubmissionsummary'] = 'Προβολή σύνοψης υποβολής';
 $string['assignfeedback'] = 'Πρόσθετο ανατροφοδότησης';
 $string['assignfeedbackpluginname'] = 'Πρόσθετο ανατροφοδότησης';
 $string['assignmentisdue'] = 'Η προθεσμία έχει λήξει';
 $string['assignmentmail'] = 'Ο/Η βαθμολογητής {$a->grader} έχει αναρτήσει κάποια ανατροφοδότηση για την υποβολή της εργασίας σας για την ανάθεση «{$a->assignment}». Μπορείτε να την δείτε προσαρτημένη στην εργασία που υποβάλατε: {$a->url}.';
-$string['assignmentmailhtml'] = '<p>Ο/Η βαθμολογητής {$a->grader} έχει αναρτήσει κάποια ανατροφοδότηση για την υποβολή της εργασίας σας για την ανάθεση <i>«{$a->assignment}»</i>.</p> <p>Μπορείτε να την δείτε προσαρτημένη στην <a href="{$a->url}">εργασία που υποβάλατε</a>.</p>';
+$string['assignmentmailhtml'] = '<p>Ο/Η βαθμολογητής {$a->grader} έχει αναρτήσει κάποια ανατροφοδότηση για την υποβολή της εργασίας σας για την ανάθεση <i>«{$a->assignment}»</i>.</p><p>Μπορείτε να την δείτε προσαρτημένη στην <a href="{$a->url}">εργασία που υποβάλατε</a>.</p>';
 $string['assignmentmailsmall'] = 'Ο/Η βαθμολογητής {$a->grader} έχει αναρτήσει κάποια ανατροφοδότηση για την υποβολή της εργασίας σας για την ανάθεση <i>«{$a->assignment}»</i>. Μπορείτε να την δείτε προσαρτημένη στην εργασία που υποβάλατε.';
 $string['assignmentname'] = 'Όνομα εργασίας';
 $string['assignmentplugins'] = 'Πρόσθετα εργασιών';
@@ -77,12 +81,12 @@ $string['assignsubmissionpluginname'] = 'Πρόσθετο υποβολής';
 $string['attemptheading'] = 'Προσπάθεια {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Προηγούμενες προσπάθειες';
 $string['attemptnumber'] = 'Αριθμός προσπάθειας';
-$string['attemptreopenmethod'] = 'Να ξανανοίξουν οι προσπάθειες';
-$string['attemptreopenmethod_help'] = 'Καθορίζει τον τρόπο ξανα-ανοίγματος των προσπαθειών υποβολής μαθητών. Οι διαθέσιμες επιλογές είναι:
+$string['attemptreopenmethod'] = 'Πρόσθετες προσπάθειες';
+$string['attemptreopenmethod_help'] = 'Αυτή η ρύθμιση καθορίζει εάν ένας μαθητής μπορεί να κάνει επιπλέον προσπάθειες για την εργασία. Για κάθε προσπάθεια, ο βαθμός και οι ανατροφοδοτήσεις αποθηκεύονται και μπορούν να προβληθούν από τον διδάσκοντα και τον μαθητή. Οι διαθέσιμες επιλογές είναι:
 
-* Ποτέ - Η υποβολή δεν μπορεί να ξανανοίξει.
-* Χειροκίνητα - Η υποβολή μπορεί να ανοίξει ξανά από έναν διδάσκοντα.
-* Αυτόματα μέχρι να περάσει - Η υποβολή ανοίγει ξανά αυτόματα μέχρι να πετύχει ο μαθητής την βαθμολογία που έχει οριστεί στο βαθμολόγιο για αυτήν την ανάθεση.';
+* Ποτέ - Μόνο μία προσπάθεια είναι δυνατή.
+* Χειροκίνητα - Πρόσθετες προσπάθειες μπορεί να επιτρέπονται από έναν εκπαιδευτικό
+* Αυτόματα έως την επιτυχία - Επιπρόσθετες προσπάθειες επιτρέπονται αυτόματα έως ότου ο μαθητής επιτύχει τον βαθμό επιτυχίας που έχει οριστεί στο βαθμολόγιο για αυτήν την εργασία.';
 $string['attemptreopenmethod_manual'] = 'Χειροκίνητα';
 $string['attemptreopenmethod_none'] = 'Ποτέ';
 $string['attemptreopenmethod_untilpass'] = 'Αυτόματα μέχρι να επιτύχει';
@@ -104,9 +108,10 @@ $string['batchoperationsdescription'] = 'Με τα επιλεγμένα...';
 $string['batchoperationunlock'] = 'ξεκλείδωμα υποβολών';
 $string['batchsetallocatedmarker'] = 'Ορίστε τον βαθμολογητή που εκχωρείται για τους {$a} επιλεγμένους χρήστες.';
 $string['batchsetmarkingworkflowstateforusers'] = 'Ορίστε την κατάσταση ροής εργασίας βαθμολόγησης για {$a} επιλεγμένους(-ο) χρήστες(-η).';
-$string['blindmarking'] = 'Τυφλή βαθμολόγηση';
-$string['blindmarking_help'] = 'Η τυφλή βαθμολόγηση αποκρύπτει την ταυτότητα των μαθητών από τους βαθμολογητές. Οι ρυθμίσεις τυφλής βαθμολόγησης θα κλειδώνονται μόλις γίνει υποβολή ή βαθμολόγηση σε σχέση με αυτή την ανάθεση (εργ.).';
-$string['blindmarkingenabledwarning'] = 'Η τυφλή βαθμολόγηση είναι ενεργοποιημένη για αυτήν τη δραστηριότητα.';
+$string['blindmarking'] = 'Ανώνυμες υποβολές';
+$string['blindmarking_help'] = 'Οι ανώνυμες υποβολές αποκρύπτουν την ταυτότητα των μαθητών από τους βαθμολογητές. Οι ρυθμίσεις ανώνυμης υποβολής θα κλειδώνονται μόλις γίνει υποβολή ή βαθμολόγηση σε σχέση με αυτή την ανάθεση εργασίας.';
+$string['blindmarkingenabledwarning'] = 'Οι ανώνυμες υποβολές είναι ενεργοποιημένες για αυτήν τη δραστηριότητα. Οι βαθμοί δεν θα προστεθούν στο βαθμολόγιο έως ότου αποκαλυφθούν οι ταυτότητες των μαθητών μέσω του μενού ενεργειών βαθμολόγησης.';
+$string['cachedef_overrides'] = 'Πληροφορίες παράκαμψης χρήστη και ομάδας';
 $string['calendardue'] = '{$a} οφείλεται';
 $string['calendargradingdue'] = '{$a} οφείλεται για βαθμολόγηση';
 $string['changefilters'] = 'Αλλαγή φίλτρων';
@@ -118,6 +123,7 @@ $string['clickexpandreviewpanel'] = 'Κάντε κλικ για να αναπτ�
 $string['collapsegradepanel'] = 'Σύμπτυξη πίνακα βαθμών';
 $string['collapsereviewpanel'] = 'Σύμπτυξη πίνακα εξέτασης';
 $string['comment'] = 'Σχόλιο';
+$string['completiondetail:submit'] = 'Κάντε μια υποβολή';
 $string['completionsubmit'] = 'Ο μαθητής πρέπει να υποβάλλει στη δραστηριότητα για να την ολοκληρώσει';
 $string['configshowrecentsubmissions'] = 'Όλοι μπορούν να δουν ειδοποιήσεις υποβολών σε πρόσφατες αναφορές δραστηριοτήτων.';
 $string['confirmbatchgradingoperation'] = 'Είστε βέβαιοι ότι θέλετε {$a->operation} για {$a->count} μαθητές;';
@@ -172,8 +178,8 @@ $string['errorquickgradingvsadvancedgrading'] = 'Οι βαθμοί δεν απο
 $string['errorrecordmodified'] = 'Οι βαθμοί δεν αποθηκεύτηκαν επειδή κάποιος τροποποίησε μία ή περισσότερες εγγραφές πιο πρόσφατα από όταν φορτώσατε τη σελίδα.';
 $string['eventallsubmissionsdownloaded'] = 'Γίνεται λήψη όλων των υποβολών.';
 $string['eventassessablesubmitted'] = 'Έχει γίνει υποβολή εργασίας.';
-$string['eventbatchsetmarkerallocationviewed'] = 'Ο μαζικός ορισμός βαθμολογητών που εκχωρούνται εμφανίστηκε';
-$string['eventbatchsetworkflowstateviewed'] = 'Η κατάσταση ροής εργασίας δέσμης ορισμών προβλήθηκε.';
+$string['eventbatchsetmarkerallocationviewed'] = 'Η δέσμη ορισμών βαθμολογητών που εκχωρούνται εμφανίστηκε';
+$string['eventbatchsetworkflowstateviewed'] = 'Η δέσμη ορισμών καταστάσεων ροής εργασίας εμφανίστηκε.';
 $string['eventextensiongranted'] = 'Έχει χορηγηθεί παράταση.';
 $string['eventfeedbackupdated'] = 'Η ανατροφοδότηση ενημερώθηκε';
 $string['eventfeedbackviewed'] = 'Η ανατροφοδότηση εμφανίστηκε';
@@ -224,6 +230,7 @@ $string['feedbacksettings'] = 'Ρυθμίσεις ανατροφοδότησης
 $string['feedbacktypes'] = 'Τύποι ανατροφοδότησης';
 $string['filesubmissions'] = 'Υποβολές αρχείων';
 $string['filter'] = 'Φίλτρο';
+$string['filterdraft'] = 'Προσχέδιο';
 $string['filtergrantedextension'] = 'Χορηγήθηκε παράταση';
 $string['filternone'] = 'Κανένα φίλτρο';
 $string['filternotsubmitted'] = 'Δεν υποβλήθηκαν';
@@ -391,7 +398,7 @@ $string['preventsubmissions'] = 'Παρεμπόδιση του χρήστη να
 $string['preventsubmissionsshort'] = 'Αποτρέψτε τις αλλαγές υποβολής';
 $string['previous'] = 'Προηγούμενο';
 $string['privacy:attemptpath'] = 'προσπάθεια {$a}';
-$string['privacy:blindmarkingidentifier'] = 'Το αναγνωριστικό που χρησιμοποιείται για την τυφλή βαθμολόγηση.';
+$string['privacy:blindmarkingidentifier'] = 'Το αναγνωριστικό που χρησιμοποιείται για ανώνυμες υποβολές';
 $string['privacy:gradepath'] = 'βαθμός';
 $string['privacy:metadata:assigndownloadasfolders'] = 'Μια προτίμηση χρήστη για το αν πρέπει να λαμβάνονται πολλαπλά αρχεία υποβολής σε φακέλους';
 $string['privacy:metadata:assignfeedbackpluginsummary'] = 'Δεδομένα ανατροφοδότησης για την ανάθεση.';
@@ -406,7 +413,7 @@ $string['privacy:metadata:assignquickgrading'] = 'Προτίμηση χρήση�
 $string['privacy:metadata:assignsubmissiondetail'] = 'Αποθηκεύει πληροφορίες υποβολής χρηστών';
 $string['privacy:metadata:assignsubmissionpluginsummary'] = 'Δεδομένα υποβολής για την ανάθεση.';
 $string['privacy:metadata:assignuserflags'] = 'Αποθηκεύει μεταδεδομένα χρηστών, όπως παρατάσεις προθεσμιών';
-$string['privacy:metadata:assignusermapping'] = 'Η αντιστοίχιση για τυφλή βαθμολόγηση';
+$string['privacy:metadata:assignusermapping'] = 'Η αντιστοίχιση για ανώνυμες υποβολές';
 $string['privacy:metadata:assignworkflowfilter'] = 'Φιλτράρισμα ανά διαφορετικό στάδιο ροής εργασίας.';
 $string['privacy:metadata:grade'] = 'Ο αριθμητικός βαθμός για αυτήν την υποβολή εργασίας. Μπορεί να προσδιοριστεί με κλίμακες/προχωρημένες φόρμες βαθμολόγησης κλπ. αλλά θα μετατρέπεται πάντοτε τελικά σε έναν αριθμό κινητής υποδιαστολής.';
 $string['privacy:metadata:grader'] = 'Το αναγνωριστικό χρήστη του προσώπου που βαθμολογεί.';
@@ -431,7 +438,7 @@ $string['removesubmission'] = 'Διαγραφή υποβολής';
 $string['removesubmissionconfirm'] = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε τα δεδομένα υποβολής;';
 $string['removesubmissionconfirmforstudent'] = 'Είστε βέβαιοι ότι θέλετε να καταργήσετε τα δεδομένα υποβολής για μαθητές {$a};';
 $string['removesubmissionforstudent'] = 'Διαγραφή υποβολής για μαθητή: (id={$a->id}, fullname={$a->fullname}).';
-$string['reopenuntilpassincompatiblewithblindmarking'] = 'Η επιλογή ξανα-ανοίγματος μέχρι να σημειωθεί επιτυχία δεν είναι συμβατή με την τυφλή βαθμολόγηση, επειδή οι βαθμοί δεν εμφανίζονται στο βαθμολόγιο μέχρι να αποκαλυφθούν οι ταυτότητες των μαθητών.';
+$string['reopenuntilpassincompatiblewithblindmarking'] = 'Η επιλογή ξανα-ανοίγματος μέχρι να επιτευχθεί επιτυχία δεν είναι συμβατή με τις ανώνυμες υποβολές, επειδή οι βαθμοί δεν εμφανίζονται στο βαθμολόγιο μέχρι να αποκαλυφθούν οι ταυτότητες των μαθητών.';
 $string['requireallteammemberssubmit'] = 'Απαιτείται η υποβολή όλων των μελών της ομάδας';
 $string['requireallteammemberssubmit_help'] = 'Εάν ενεργοποιηθεί, όλα τα μέλη της ομάδας μαθητών πρέπει να κάνουν κλικ στο κουμπί αποστολής για αυτήν την εργασία πριν να ολοκληρωθεί η υποβολή ομάδας. Εάν είναι απενεργοποιηθεί, η υποβολή ομάδας θα θεωρείται ότι ολοκληρώθηκε μόλις ένα οποιοδήποτε μέλος της ομάδας μαθητών κάνει κλικ στο κουμπί αποστολής.';
 $string['requiresubmissionstatement'] = 'Να απαιτείται οι μαθητές να αποδεχθούν τη δήλωση υποβολής';
@@ -439,7 +446,7 @@ $string['requiresubmissionstatement_help'] = 'Να απαιτείται οι μ�
 $string['revealidentities'] = 'Αποκάλυψη των ταυτοτήτων των μαθητών';
 $string['revealidentitiesconfirm'] = 'Είστε βέβαιοι ότι θέλετε να αποκαλύψετε ταυτότητες μαθητών για αυτή την εργασία; Αυτή η λειτουργία δεν μπορεί να ανακληθεί. Μόλις αποκαλυφθούν οι ταυτότητες των μαθητών, οι βαθμολογίες θα εμφανιστούν στο βαθμολόγιο.';
 $string['reverttodefaults'] = 'Επαναφορά στις προεπιλογές ανάθεσης (εργασίας)';
-$string['reverttodraft'] = 'Επαναφορά υποβολής σε κατάσταση προσχεδίου.';
+$string['reverttodraft'] = 'Επαναφορά της υποβολής σε κατάσταση προσχεδίου';
 $string['reverttodraftforstudent'] = 'Επαναφορά υποβολής σε προσχέδιο για τον μαθητή: (αναγνωριστικό={$a->id}, πλήρες όνομα={$a->fullname}).';
 $string['reverttodraftshort'] = 'Επαναφορά υποβολής σε προσχέδιο';
 $string['reviewed'] = 'Εξετάστηκε';
@@ -489,7 +496,7 @@ $string['submissionnotcopiedinvalidstatus'] = 'Η υποβολή δεν αντι
 $string['submissionnoteditable'] = 'Ο μαθητής δεν μπορεί να επεξεργαστεί αυτήν την υποβολή';
 $string['submissionnotready'] = 'Αυτή η εργασία δεν είναι έτοιμη να υποβληθεί:';
 $string['submissionplugins'] = 'Πρόσθετα υποβολής';
-$string['submissionreceipthtml'] = '<p>Έχετε υποβάλλει την εργασία σας για «<i>{$a->assignment}</i>».</p> <p>Μπορείτε να δείτε την κατάσταση της <a href="{$a->url}">υποβολής σας</a>.</p>';
+$string['submissionreceipthtml'] = '<p>Έχετε υποβάλλει την εργασία σας για «<i>{$a->assignment}</i>».</p><p>Μπορείτε να δείτε την κατάσταση της <a href="{$a->url}">υποβολής σας</a>.</p>';
 $string['submissionreceiptotherhtml'] = 'Η υποβολή της εργασίας σας για «<i>{$a->assignment}</i>» έχει ολοκληρωθεί.<br /><br />
 Μπορείτε να δείτε την κατάσταση για την <a href="{$a->url}">υποβολή εργασίας</a> σας.';
 $string['submissionreceiptothersmall'] = 'Η υποβολή της εργασίας σας για «{$a->assignment}» έχει ολοκληρωθεί.';
@@ -544,7 +551,7 @@ $string['teamsubmissiongroupingid'] = 'Ομαδοποίηση για ομάδε�
 $string['teamsubmissiongroupingid_help'] = 'Αυτή είναι η ομαδοποίηση που θα χρησιμοποιήσει η εργασία για την εύρεση ομάδων για ομάδες μαθητών. Εάν δεν έχει οριστεί, θα χρησιμοποιηθεί το προεπιλεγμένο σύνολο ομάδων.';
 $string['textinstructions'] = 'Οδηγίες ανάθεσης';
 $string['timemodified'] = 'Τελευταία τροποποίηση';
-$string['timeremaining'] = 'Υπολειπόμενος χρόνος';
+$string['timeremaining'] = 'Χρόνος που απομένει';
 $string['timeremainingcolon'] = 'Χρόνος που απομένει: {$a}';
 $string['togglezoom'] = 'Μεγέθυνση/σμίκρυνση περιοχής';
 $string['ungroupedusers'] = 'Η ρύθμιση «Απαίτηση για υποβολή ανά ομάδες» είναι ενεργοποιημένη και ορισμένοι χρήστες είτε δεν είναι μέλη κάποιας ομάδας, είτε είναι μέλη περισσότερων από μία ομάδων, οπότε δεν μπορούν να υποβάλουν εργασίες.';
@@ -570,8 +577,8 @@ $string['usersubmissioncannotberemoved'] = 'Η υποβολή του {$a} δεν
 $string['userswhoneedtosubmit'] = 'Χρήστες που πρέπει να υποβάλουν: {$a}';
 $string['validmarkingworkflowstates'] = 'Έγκυρες καταστάσεις ροής εργασίας βαθμολόγησης';
 $string['viewadifferentattempt'] = 'Εμφάνιση μιας διαφορετικής προσπάθειας';
-$string['viewbatchmarkingallocation'] = 'Εμφάνιση σελίδας μαζικών ορισμών βαθμολογητών που εκχωρούνται.';
-$string['viewbatchsetmarkingworkflowstate'] = 'Εμφάνιση σελίδας μαζικών ορισμών κατάστασης ροής εργασίας βαθμολόγησης.';
+$string['viewbatchmarkingallocation'] = 'Εμφάνιση σελίδας δέσμης ορισμών βαθμολογητών που εκχωρούνται.';
+$string['viewbatchsetmarkingworkflowstate'] = 'Εμφάνιση σελίδας δέσμης ορισμών κατάστασης ροής εργασίας βαθμολόγησης.';
 $string['viewfeedback'] = 'Εμφάνιση ανατροφοδότησης';
 $string['viewfeedbackforuser'] = 'Εμφάνιση ανατροφοδότησης για τον χρήστη: {$a}';
 $string['viewfull'] = 'Πλήρης προβολή';

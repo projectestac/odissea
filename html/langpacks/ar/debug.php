@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ar', version '3.8'.
+ * Strings for component 'debug', language 'ar', version '3.11'.
  *
  * @package     debug
  * @category    string
@@ -37,16 +37,16 @@ $string['configmoodle'] = 'لم يتم إعداد مودل بعد . يجب أن 
 $string['debuginfo'] = 'معلومات التصحيح';
 $string['erroroccur'] = 'لقد حدث خطأ أثناء هذه العملية';
 $string['invalidarraysize'] = 'حجم المصفوفة غير صحيح في معاملات {$a}';
-$string['invalideventdata'] = 'تم تسليم بيانات أحداث غير صحيحة : {$a}';
+$string['invalideventdata'] = 'تم تسليم بيانات أحداث غير صحيحة: {$a}';
 $string['invalidparameter'] = 'تم الكشف عن قيمة معامل غير صالحة';
 $string['invalidresponse'] = 'تم الكشف عن قيمة إجابة غير صالحة';
 $string['line'] = 'خط';
-$string['missingconfigversion'] = 'جدول الإعدادات لا يحتوي رقم الإصدار ، لا يمكن الاستمرار ، آسف .';
+$string['missingconfigversion'] = 'جدول التهيئة لا يحتوي على رقم الإصدار. لا يمكنك المتابعة.';
 $string['modulenotexist'] = 'الوحدة {$a} غير موجودة';
 $string['morethanonerecordinfetch'] = 'تم إيجاد أكثر من سجل في fetch() !';
 $string['mustbeoveride'] = 'طريقة المستخلص {$a} يجب تجاوزها .';
 $string['noadminrole'] = 'لا يمكن إيجاد دور مسؤول';
-$string['noblocks'] = 'لا يوجد كتل مركبة !';
+$string['noblocks'] = 'لا توجد كتل منصبة!';
 $string['nocate'] = 'لا يوجد فئات !';
 $string['nomodules'] = 'لا يوجد وحدات !';
 $string['nopageclass'] = 'تم استيراد {$a} لكن لم يوجد أي مقاطع صفحات';
@@ -59,4 +59,4 @@ $string['sessionmissing'] = 'الغرض {$a} مفقود من الجلسة';
 $string['sqlrelyonobsoletetable'] = 'هذه الـ SQL تعتمد على جداول متقادمة : {$a} ! يجب إصلاح النص البرمجي من قبل مبرمج .';
 $string['stacktrace'] = 'تتبع المكدس';
 $string['withoutversion'] = 'ملف version.php الرئيسي مفقود أو غير مقروء أو تم نقله .';
-$string['xmlizeunavailable'] = 'توابع التحويل إلى xml غير متوافرة';
+$string['xmlizeunavailable'] = 'وظائف xmlize غير متوافرة';

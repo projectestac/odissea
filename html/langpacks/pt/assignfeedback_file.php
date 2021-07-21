@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_file', language 'pt', version '3.8'.
+ * Strings for component 'assignfeedback_file', language 'pt', version '3.11'.
  *
  * @package     assignfeedback_file
  * @category    string
@@ -38,7 +38,7 @@ $string['enabled_help'] = 'Se ativar esta opção, o professor poderá adicionar
 $string['feedbackfileadded'] = 'Novo ficheiro de feedback "{$a->filename}" para o aluno "{$a->student}"';
 $string['feedbackfileupdated'] = 'Ficheiro de feedback modificado "{$a->filename}" para o aluno "{$a->student}"';
 $string['feedbackzip'] = 'Ficheiro zip com ficheiros de feedback';
-$string['feedbackzip_help'] = 'Ficheiro zip que contém uma lista de ficheiros de feedback para um ou mais alunos. Os ficheiros de comentários serão atribuídos aos respetivos alunos com base no número de identificação do participante e que deverá corresponder à segunda parte do nome de cada ficheiro, imediatamente após o nome completo do utilizador. Esta convenção de nomenclatura é utilizada quando descarrega as submissões, pelo que pode descarregar todas as submissões, adicionar comentários a alguns ficheiros e voltar a compactar num ficheiro zip para carregar todos os ficheiros. Os ficheiros que não tiverem sido alterados serão ignorados.';
+$string['feedbackzip_help'] = 'Ficheiro zip que contém uma lista de ficheiros de feedback para um ou mais alunos. Os ficheiros de comentários serão atribuídos aos respetivos alunos com base no número de identificação (ID) do participante e que deverá corresponder à segunda parte do nome de cada ficheiro, imediatamente após o nome completo do utilizador. Esta convenção de nomenclatura é utilizada quando descarrega as submissões, pelo que pode descarregar todas as submissões, adicionar comentários a alguns ficheiros e voltar a compactar num ficheiro zip para carregar todos os ficheiros. Os ficheiros que não tiverem sido alterados serão ignorados.';
 $string['file'] = 'Ficheiros de feedback';
 $string['filesadded'] = 'Ficheiros de feedback adicionados: {$a}';
 $string['filesupdated'] = 'Ficheiros de feedback atualizados: {$a}';

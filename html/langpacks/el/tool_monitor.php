@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'el', version '3.8'.
+ * Strings for component 'tool_monitor', language 'el', version '3.11'.
  *
  * @package     tool_monitor
  * @category    string
@@ -108,7 +108,7 @@ $string['ruleareyousureextra'] = 'Υπάρχουν {$a} εγγραφές σε α
 $string['rulecopysuccess'] = 'Ο κανόνας αντιγράφηκε με επιτυχία';
 $string['ruledeletesuccess'] = 'Ο κανόνας διαγράφηκε με επιτυχία';
 $string['rulehelp'] = 'Λεπτομέρειες κανόνα';
-$string['rulehelp_help'] = 'Αυτός ο κανόνας παρακολουθεί πότε το γεγονός «{$a->eventname}» στο «{$a->eventcomponent}» έχει ενεργοποιηθεί {$a->frequency} φορές(ά) σε {$a->minutes} λεπτά(ό).';
+$string['rulehelp_help'] = 'Αυτός ο κανόνας παρακολουθεί πότε το γεγονός «{$a->eventname}» στο «{$a->eventcomponent}» έχει προκληθεί {$a->frequency} φορές/-ά σε {$a->minutes} λεπτά/-ό.';
 $string['rulename'] = 'Όνομα κανόνα';
 $string['rulenopermission'] = 'Δεν έχετε δικαίωμα να εγγραφείτε σε κανένα γεγονός.';
 $string['rulenopermissions'] = 'Δεν έχετε δικαιώματα για «{$a} ενός κανόνα»';
@@ -119,8 +119,8 @@ $string['subareyousure'] = 'Είστε βέβαιοι ότι θέλετε να �
 $string['subcreatesuccess'] = 'Η εγγραφή δημιουργήθηκε με επιτυχία';
 $string['subdeletesuccess'] = 'Η εγγραφή διαγράφηκε με επιτυχία';
 $string['subhelp'] = 'Στοιχεία εγγραφής';
-$string['subhelp_help'] = 'Αυτή η συνδρομή παρακολουθεί πότε το γεγονός «{$a->eventname}» έχει ενεργοποιηθεί στο «{$a->moduleinstance}» {$a->frequency} φορές(ά) σε {$a->minutes} λεπτά(ό).';
+$string['subhelp_help'] = 'Αυτή η εγγραφή παρακολουθεί πότε το γεγονός «{$a->eventname}» έχει προκληθεί στο «{$a->moduleinstance}» {$a->frequency} φορές/-ά σε {$a->minutes} λεπτά/-ό.';
 $string['subscribeto'] = 'Εγγραφείτε στον κανόνα «{$a}»';
-$string['taskchecksubscriptions'] = 'Ενεργοποίηση/απενεργοποίηση των μη έγκυρων εγγραφών κανόνα';
+$string['taskchecksubscriptions'] = 'Ενεργοποίηση/απενεργοποίηση εγγραφών μη έγκυρων κανόνων';
 $string['taskcleanevents'] = 'Εκκαθάριση γεγονότων της παρακολούθησης γεγονότων';
 $string['unsubscribe'] = 'Απεγγραφή';

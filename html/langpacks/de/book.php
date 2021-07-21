@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'de', version '3.8'.
+ * Strings for component 'book', language 'de', version '3.11'.
  *
  * @package     book
  * @category    string
@@ -60,20 +60,26 @@ $string['indicator:socialbreadth_help'] = 'Dieser Indikator basiert auf der sozi
 $string['indicator:socialbreadthdef'] = 'Buch sozial';
 $string['indicator:socialbreadthdef_help'] = 'Die Person hat diesen Prozentsatz des soziale Engagements erreicht, das die Buchaktivitäten während dieses Analyseintervalls aufzeigen (Ebenen = Keine Teilnahme, Teilnahme allein).';
 $string['modulename'] = 'Buch';
-$string['modulename_help'] = 'Statt endlos durch lange Texte am Bildschirm zu scrollen, teilen Sie Ihre Lerninhalte auf kurze Seiten innerhalb des Buchs auf.
+$string['modulename_help'] = 'Statt endlos durch lange Texte am Bildschirm zu scrollen, teilen Sie Ihre Lerninhalte auf kurze Seiten innerhalb eines Buchs in einem buchähnlichen Format mit Kapiteln und Unterkapiteln auf.
 
-Ergänzen Sie die Texte um Grafiken, Bilder oder multimediale Inhalte, um den Inhalt verständlich zu gestalten.';
+Ergänzen Sie die Texte mit Grafiken, Bildern oder multimedialen Elementen, um den Inhalt ansprechend zu gestalten. Inhalte können in Abschnitte unterteilt werden.
+
+Ein Buch kann verwendet werden
+
+* Um Lesematerial für individuelle Studienmodule anzuzeigen
+* Als Abteilungshandbuch für Mitarbeiter/innen
+* Als Schaukasten für Portfolios von studentischen Arbeiten';
 $string['modulenameplural'] = 'Bücher';
 $string['movechapterdown'] = 'Kapitel "{$a}"nach unten verschieben';
 $string['movechapterup'] = 'Kapitel "{$a}" nach oben verschieben';
 $string['navexit'] = 'Buch schließen';
 $string['navimages'] = 'Navigationsicons';
 $string['navnext'] = 'Weiter';
-$string['navnexttitle'] = 'Nächster: {$a}';
+$string['navnexttitle'] = 'Nächster Titel: {$a}';
 $string['navoptions'] = 'Optionen für Navigationslinks';
 $string['navoptions_desc'] = 'Optionen zur Navigationsanzeige auf den Buchseiten';
 $string['navprev'] = 'Zurück';
-$string['navprevtitle'] = 'Vorheriger: {$a}';
+$string['navprevtitle'] = 'Vorheriger Titel: {$a}';
 $string['navstyle'] = 'Stil der Navigation';
 $string['navstyle_help'] = '* Bilder - Icons zur Navigation verwenden
 * Text - Kapitelüberschriften zur Navigation verwenden';
