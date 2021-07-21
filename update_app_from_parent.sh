@@ -10,7 +10,6 @@ git clone https://github.com/projectestac/agora_moodle2.git
 git clone https://github.com/projectestac/odissea.git
 
 pushd agora_moodle2
-git checkout -b aws origin/aws
 git submodule update --init --recursive
 find . -name '\.git*' -exec rm -rf {} \; 2>/dev/null
 popd
