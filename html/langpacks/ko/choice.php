@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'ko', version '3.8'.
+ * Strings for component 'choice', language 'ko', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -29,6 +29,7 @@ $string['addmorechoices'] = '선택사항을 더 추가하시오';
 $string['allowupdate'] = '설문 응답 수정 허용';
 $string['answered'] = '응답함';
 $string['atleastoneoption'] = '최소 한개 이상의 답을 해야 합니다.';
+$string['cannotsubmit'] = '죄송합니다, 선택을 제출하는데 문제가 발생했습니다. 다시 시도해주세요.';
 $string['choice'] = '선택문';
 $string['choice:addinstance'] = '새 간편선택 추가';
 $string['choice:choose'] = '설문 기록';
@@ -54,10 +55,11 @@ $string['displayvertical'] = '수직으로 배치';
 $string['eventanswercreated'] = '선택됨';
 $string['eventanswerupdated'] = '선택이 업데이트 됨';
 $string['eventreportviewed'] = '선택 보고서 봄';
-$string['expired'] = '죄송합니다. 이 활동은 {$a} 에 종료되어서 더 이상 사용할 수 없습니다.';
+$string['expired'] = '이 활동은 {$a}에 종료되었습니다.';
 $string['full'] = '(마감됨)';
 $string['havetologin'] = '설문에 응하려면 로그인해야 합니다.';
 $string['limit'] = '한도';
+$string['limita'] = '마감: {$a}';
 $string['limitanswers'] = '응답 인원 제한';
 $string['limitanswers_help'] = '<p>이 옵션은 개별적 항목을 선택할 수 있는 참여자 수를 제한할 수 있도록 합니다.</p>
 
@@ -76,26 +78,33 @@ $string['noguestchoose'] = '죄송합니다. 손님계정으로는 설문에 응
 $string['noresultsviewable'] = '지금은 결과를 볼 수 없습니다.';
 $string['notanswered'] = '아직 응답하지 않았습니다';
 $string['notenrolledchoose'] = '좌송합니다만, 등록된 사용자만 설문에 응할 수 있습니다.';
-$string['notopenyet'] = '죄송합니다만, {$a} 까지는 이용할 수 없습니다.';
-$string['numberofuser'] = '참가자 수';
-$string['numberofuserinpercentage'] = '참가자 퍼센트';
+$string['notopenyet'] = '이 활동은 {$a}까지 사용불가 합니다.';
+$string['numberofuser'] = '응답수';
+$string['numberofuserinpercentage'] = '응답률';
 $string['option'] = '선택사항';
 $string['optionno'] = '옵션 {no}';
 $string['options'] = '옵션';
 $string['page-mod-choice-x'] = '모든 간편 설문 모듈 페이지';
 $string['pluginadministration'] = '설문 관리';
 $string['pluginname'] = '간편설문';
+$string['previewonly'] = '이것은 이 활동에 대한 미리보기입니다. 당신의 선택을 {$a}까지 제출할 수 없습니다.';
 $string['privacy'] = '결과의 정보보호';
 $string['publish'] = '결과 공개';
 $string['publishafteranswer'] = '응답한 학생들에게 결과 공개';
 $string['publishafterclose'] = '설문이 종료된 후에 학생들에게 결과 공개';
 $string['publishalways'] = '언제나 학생들에게 결과 공개';
 $string['publishanonymous'] = '익명으로 결과 공개';
+$string['publishinfoanonafter'] = '답변 후 익명 결과가 게시됩니다.';
+$string['publishinfoanonclose'] = '활동이 종료 된 후 익명의 결과가 게시됩니다.';
+$string['publishinfofullafter'] = '모든 사람의 선택을 보여주는 전체 결과는 답변 후 게시됩니다.';
+$string['publishinfofullclose'] = '모든 사람의 선택을 보여주는 전체 결과는 활동이 종료된 후 게시됩니다.';
+$string['publishinfonever'] = '이 활동의 결과는 답변 후 게시되지 않습니다.';
 $string['publishnames'] = '실명으로 선택내용까지 완전히 공개';
 $string['publishnot'] = '학생들에게는 결과를 공개하지 않음';
 $string['removemychoice'] = '기존 응답 취소';
 $string['removeresponses'] = '모든 응답 제거';
 $string['responses'] = '응답';
+$string['responsesa'] = '답변: {$a}';
 $string['responsesresultgraphheader'] = '그래프 표시';
 $string['responsesto'] = '{$a} 에 대한 응답';
 $string['results'] = '결과';

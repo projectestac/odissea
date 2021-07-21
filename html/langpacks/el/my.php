@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'el', version '3.8'.
+ * Strings for component 'my', language 'el', version '3.11'.
  *
  * @package     my
  * @category    string
@@ -36,9 +36,10 @@ $string['mymoodle'] = 'Ταμπλό';
 $string['nocourses'] = 'Δεν υπάρχει πληροφορία του μαθήματος για προβολή.';
 $string['noguest'] = 'Η σελίδα του Ταμπλό δεν είναι διαθέσιμη στους επισκέπτες';
 $string['pinblocks'] = 'Διαμόρφωση καρφιτσωμένων μπλοκ για «Το Moodle μου»';
-$string['pinblocksexplan'] = 'Οι ρυθμίσεις των μπλοκ που θα κάνετε εδώ θα είναι εμφανείς (και μη επεξεργάσιμες) σε κάθε χρήστη του Moodle στην επισκόπηση της σελίδας «Το Moodle μου».';
+$string['pinblocksexplan'] = 'Οι ρυθμίσεις των μπλοκ που θα κάνετε εδώ θα είναι εμφανείς (και μη τροποποιήσιμες) για κάθε χρήστη του Moodle στην επισκόπηση της σελίδας «Το Moodle μου».';
 $string['privacy:metadata:core_my:preference:user_home_page_preference'] = 'Η προτίμηση χρήστη για αρχική σελίδα.';
 $string['reseterror'] = 'Προέκυψε σφάλμα κατά την επαναφορά της σελίδας';
 $string['reseteveryonesdashboard'] = 'Επαναρχικοποίηση Ταμπλό για όλους τους χρήστες';
 $string['reseteveryonesprofile'] = 'Επαναρχικοποίηση προφίλ για όλους τους χρήστες';
 $string['resetpage'] = 'Επαναρχικοποίηση σελίδας σε προεπιλογή';
+$string['resettingdashboards'] = 'Επαναφορά των ταμπλό χρήστη στις προεπιλογές...';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'pt', version '3.8'.
+ * Strings for component 'geogebra', language 'pt', version '3.11'.
  *
  * @package     geogebra
  * @category    string
@@ -70,7 +70,7 @@ $string['geogebra:view'] = 'Visualizar GeoGebra';
 $string['geogebrafile'] = 'Ficheiro GeoGebra';
 $string['geogebrafile_help'] = 'ficheiro .gbb';
 $string['geogebraurl'] = 'URL';
-$string['geogebraurl_help'] = 'Esta configuração permite que seja especificado um URL para o ficheiro GeoGebra, em vez de escolher um ficheiro através do seletor de ficheiros.';
+$string['geogebraurl_help'] = 'Encontre a construção em <a href="https://www.geogebra.org/" target="_blank">geogebra.org</a>, depois clique em <strong>Detalhes</strong>, clique com o lado direito em <strong>Descarregar</strong> e selecione <strong>Copiar endereço</strong>. Por fim, vá para o campo URL e cole a hiperligação com <strong>Ctrl+V</strong>.<br/>Veja um exemplo passo a passo em: <a href="https://youtu.be/qbp-RuM4NpU" target="_blank">https://youtu.be/qbp-RuM4NpU</a>.';
 $string['grade'] = 'Nota';
 $string['gradeit'] = 'Avaliar';
 $string['grademethod'] = 'Método de avaliação';

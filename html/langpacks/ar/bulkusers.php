@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bulkusers', language 'ar', version '3.8'.
+ * Strings for component 'bulkusers', language 'ar', version '3.11'.
  *
  * @package     bulkusers
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addall'] = 'إضافة الكل';
 $string['addsel'] = 'إضافة إلى التحديد';
-$string['allfilteredusers'] = 'الكل بعد الترشيح({$a->count}/{$a->total})';
+$string['allfilteredusers'] = 'الكل بعد الترشيح ({$a->count}/{$a->total})';
 $string['allselectedusers'] = 'كل المحدد ({$a->count}/{$a->total})';
 $string['allusers'] = 'كل المستخدمين ({$a})';
 $string['available'] = 'متوافر';
@@ -41,7 +41,7 @@ $string['selected'] = 'المحدد';
 $string['selectedlist'] = 'قائمة المستخدمين المحددين...';
 $string['selectedlist_help'] = 'يمكن إضافة أو إزالة المستخدمين من قائمة المستخدمين المحددين بالنقر على أسماء المستخدمين ثم النقر على الزر المناسب. يمكن تحديد العديد من المستخدمين بالضغط على زر Apple أو Ctrl أثناء النقر على أسماء المستخدمين.';
 $string['users'] = 'المستخدمين';
-$string['users_help'] = 'كل المستخدمين الذين اجتازوا المرشحات المطبقة موجودين في القائمة. إن لم يتم تحديد مرشح، سيتم عرض جميع المستخدمين.';
+$string['users_help'] = 'كل المستخدمين الذين توافقت بياناتهم مع المرشحات المطبقة مدرجون في القائمة. عند عدم تحديد أي مرشح، سيتم إدراج كل المستخدمين.';
 $string['usersfound'] = 'تم إيجاد {$a} مستخدمين.';
 $string['usersinlist'] = 'المستخدمون في القائمة';
 $string['usersselected'] = 'تم تحديد {$a} مستخدم.';

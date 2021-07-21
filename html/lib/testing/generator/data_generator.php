@@ -142,6 +142,7 @@ EOD;
      */
     public function create_user($record=null, array $options=null) {
         global $DB, $CFG;
+        require_once($CFG->dirroot.'/user/lib.php');
 
         $this->usercounter++;
         $i = $this->usercounter;
@@ -206,10 +207,6 @@ EOD;
 
         if (isset($record['password'])) {
             $record['password'] = hash_internal_user_password($record['password']);
-        } else {
-            // The auth plugin may not fully support this,
-            // but it is still better/faster than hashing random stuff.
-            $record['password'] = AUTH_PASSWORD_NOT_CACHED;
         }
 
         if (!isset($record['email'])) {
@@ -220,71 +217,41 @@ EOD;
             $record['confirmed'] = 1;
         }
 
-        if (!isset($record['lang'])) {
-            $record['lang'] = 'en';
-        }
-
-        if (!isset($record['maildisplay'])) {
-            $record['maildisplay'] = $CFG->defaultpreference_maildisplay;
-        }
-
-        if (!isset($record['mailformat'])) {
-            $record['mailformat'] = $CFG->defaultpreference_mailformat;
-        }
-
-        if (!isset($record['maildigest'])) {
-            $record['maildigest'] = $CFG->defaultpreference_maildigest;
-        }
-
-        if (!isset($record['autosubscribe'])) {
-            $record['autosubscribe'] = $CFG->defaultpreference_autosubscribe;
-        }
-
-        if (!isset($record['trackforums'])) {
-            $record['trackforums'] = $CFG->defaultpreference_trackforums;
-        }
-
-        if (!isset($record['deleted'])) {
-            $record['deleted'] = 0;
-        }
-
-        if (!isset($record['timecreated'])) {
-            $record['timecreated'] = time();
-        }
-
-        $record['timemodified'] = $record['timecreated'];
-
         if (!isset($record['lastip'])) {
             $record['lastip'] = '0.0.0.0';
         }
 
-        if ($record['deleted']) {
-            $delname = $record['email'].'.'.time();
-            while ($DB->record_exists('user', array('username'=>$delname))) {
-                $delname++;
-            }
-            $record['idnumber'] = '';
-            $record['email']    = md5($record['username']);
-            $record['username'] = $delname;
-            $record['picture']  = 0;
+        $tobedeleted = !empty($record['deleted']);
+        unset($record['deleted']);
+
+        $userid = user_create_user($record, false, false);
+
+        if ($extrafields = array_intersect_key($record, ['password' => 1, 'timecreated' => 1])) {
+            $DB->update_record('user', ['id' => $userid] + $extrafields);
         }
 
-        $userid = $DB->insert_record('user', $record);
-
-        if (!$record['deleted']) {
-            context_user::instance($userid);
-
+        if (!$tobedeleted) {
             // All new not deleted users must have a favourite self-conversation.
             $selfconversation = \core_message\api::create_conversation(
                 \core_message\api::MESSAGE_CONVERSATION_TYPE_SELF,
                 [$userid]
             );
             \core_message\api::set_favourite_conversation($selfconversation->id, $userid);
+
+            // Save custom profile fields data.
+            $hasprofilefields = array_filter($record, function($key){
+                return strpos($key, 'profile_field_') === 0;
+            }, ARRAY_FILTER_USE_KEY);
+            if ($hasprofilefields) {
+                require_once($CFG->dirroot.'/user/profile/lib.php');
+                $usernew = (object)(['id' => $userid] + $record);
+                profile_save_data($usernew);
+            }
         }
 
         $user = $DB->get_record('user', array('id' => $userid), '*', MUST_EXIST);
 
-        if (!$record['deleted'] && isset($record['interests'])) {
+        if (!$tobedeleted && isset($record['interests'])) {
             require_once($CFG->dirroot . '/user/editlib.php');
             if (!is_array($record['interests'])) {
                 $record['interests'] = preg_split('/\s*,\s*/', trim($record['interests']), -1, PREG_SPLIT_NO_EMPTY);
@@ -292,6 +259,12 @@ EOD;
             useredit_update_interests($user, $record['interests']);
         }
 
+        \core\event\user_created::create_from_userid($userid)->trigger();
+
+        if ($tobedeleted) {
+            delete_user($user);
+            $user = $DB->get_record('user', array('id' => $userid));
+        }
         return $user;
     }
 
@@ -536,7 +509,7 @@ EOD;
         require_once($CFG->dirroot . '/group/lib.php');
 
         $this->groupcount++;
-        $i = $this->groupcount;
+        $i = str_pad($this->groupcount, 4, '0', STR_PAD_LEFT);
 
         $record = (array)$record;
 
@@ -1214,6 +1187,123 @@ EOD;
     }
 
     /**
+     * Create a new category for custom profile fields.
+     *
+     * @param array $data Array with 'name' and optionally 'sortorder'
+     * @return \stdClass New category object
+     */
+    public function create_custom_profile_field_category(array $data): \stdClass {
+        global $DB;
+
+        // Pick next sortorder if not defined.
+        if (!array_key_exists('sortorder', $data)) {
+            $data['sortorder'] = (int)$DB->get_field_sql('SELECT MAX(sortorder) FROM {user_info_category}') + 1;
+        }
+
+        $category = (object)[
+            'name' => $data['name'],
+            'sortorder' => $data['sortorder']
+        ];
+        $category->id = $DB->insert_record('user_info_category', $category);
+
+        return $category;
+    }
+
+    /**
+     * Creates a new custom profile field.
+     *
+     * Optional fields are:
+     *
+     * categoryid (or use 'category' to specify by name). If you don't specify
+     * either, it will add the field to a 'Testing' category, which will be created for you if
+     * necessary.
+     *
+     * sortorder (if you don't specify this, it will pick the next one in the category).
+     *
+     * all the other database fields (if you don't specify this, it will pick sensible defaults
+     * based on the data type).
+     *
+     * @param array $data Array with 'datatype', 'shortname', and 'name'
+     * @return \stdClass Database object from the user_info_field table
+     */
+    public function create_custom_profile_field(array $data): \stdClass {
+        global $DB, $CFG;
+        require_once($CFG->dirroot . '/user/profile/lib.php');
+
+        // Set up category if necessary.
+        if (!array_key_exists('categoryid', $data)) {
+            if (array_key_exists('category', $data)) {
+                $data['categoryid'] = $DB->get_field('user_info_category', 'id',
+                        ['name' => $data['category']], MUST_EXIST);
+            } else {
+                // Make up a 'Testing' category or use existing.
+                $data['categoryid'] = $DB->get_field('user_info_category', 'id', ['name' => 'Testing']);
+                if (!$data['categoryid']) {
+                    $created = $this->create_custom_profile_field_category(['name' => 'Testing']);
+                    $data['categoryid'] = $created->id;
+                }
+            }
+        }
+
+        // Pick sort order if necessary.
+        if (!array_key_exists('sortorder', $data)) {
+            $data['sortorder'] = (int)$DB->get_field_sql(
+                    'SELECT MAX(sortorder) FROM {user_info_field} WHERE categoryid = ?',
+                    [$data['categoryid']]) + 1;
+        }
+
+        // Defaults for other values.
+        $defaults = [
+            'description' => '',
+            'descriptionformat' => 0,
+            'required' => 0,
+            'locked' => 0,
+            'visible' => PROFILE_VISIBLE_ALL,
+            'forceunique' => 0,
+            'signup' => 0,
+            'defaultdata' => '',
+            'defaultdataformat' => 0,
+            'param1' => '',
+            'param2' => '',
+            'param3' => '',
+            'param4' => '',
+            'param5' => ''
+        ];
+
+        // Type-specific defaults for other values.
+        $typedefaults = [
+            'text' => [
+                'param1' => 30,
+                'param2' => 2048
+            ],
+            'menu' => [
+                'param1' => "Yes\nNo",
+                'defaultdata' => 'No'
+            ],
+            'datetime' => [
+                'param1' => '2010',
+                'param2' => '2015',
+                'param3' => 1
+            ],
+            'checkbox' => [
+                'defaultdata' => 0
+            ]
+        ];
+        foreach ($typedefaults[$data['datatype']] ?? [] as $field => $value) {
+            $defaults[$field] = $value;
+        }
+
+        foreach ($defaults as $field => $value) {
+            if (!array_key_exists($field, $data)) {
+                $data[$field] = $value;
+            }
+        }
+
+        $data['id'] = $DB->insert_record('user_info_field', $data);
+        return (object)$data;
+    }
+
+    /**
      * Create a new user, and enrol them in the specified course as the supplied role.
      *
      * @param   \stdClass   $course The course to enrol in
@@ -1231,5 +1321,27 @@ EOD;
         $this->enrol_user($user->id, $course->id, $roleid, $enrol, $timestart, $timeend, $status);
 
         return $user;
+    }
+
+    /**
+     * Create a new last access record for a given user in a course.
+     *
+     * @param   \stdClass   $user The user
+     * @param   \stdClass   $course The course the user accessed
+     * @param   int         $timestamp The timestamp for when the user last accessed the course
+     * @return  \stdClass   The user_lastaccess record
+     */
+    public function create_user_course_lastaccess(\stdClass $user, \stdClass $course, int $timestamp): \stdClass {
+        global $DB;
+
+        $record = [
+            'userid' => $user->id,
+            'courseid' => $course->id,
+            'timeaccess' => $timestamp,
+        ];
+
+        $recordid = $DB->insert_record('user_lastaccess', $record);
+
+        return $DB->get_record('user_lastaccess', ['id' => $recordid], '*', MUST_EXIST);
     }
 }

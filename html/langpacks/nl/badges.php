@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'nl', version '3.8'.
+ * Strings for component 'badges', language 'nl', version '3.11'.
  *
  * @package     badges
  * @category    string
@@ -98,11 +98,10 @@ Je moet dit oplossen op een productie-site als je van plan bent om badges uit te
 **Wat als ik mijn hele site niet kan publiek beschikbaar maken?**
 
 De enige URL die nodig is voor verificatie is [your-site-url]/badges/assertion.php. Als je je firewall wijzigt zodat die URL toegankelijk is, dan zal badge verificatie werken.';
-$string['backpackbadges'] = 'Je hebt {$a->totalbadges} badge(s) van {$a->totalcollections} collecties.
-<a href="mybackpack.php">Wijzig backpack-instellingen</a>.';
 $string['backpackbadgessettings'] = 'Verander de backpack instellingen';
 $string['backpackbadgessummary'] = 'Je hebt {$a->totalbadges} badge (s) weergegeven in de verzameling (en) van {$a->totalcollections} collection(s)';
 $string['backpackcannotsendverification'] = 'Kan e-mail voor verificatie niet versturen';
+$string['backpackconnected'] = 'Backpack is verbonden';
 $string['backpackconnection'] = 'Backpack connectie';
 $string['backpackconnection_help'] = 'Door te verbinden met een backpack kun je externe badges van deze site delen en kun je publieke badges uit je backpack tonen op je profielpagina van deze site.';
 $string['backpackconnectioncancelattempt'] = 'Verbind door een ander e-mailadres te gebruiken';
@@ -113,6 +112,7 @@ $string['backpackconnectionresendemail'] = 'Stuur de e-mail voor verificatie opn
 $string['backpackconnectionunexpectedmessage'] = 'De backpack retourneerde de fout: "{$a}".';
 $string['backpackconnectionunexpectedresult'] = 'Er was een probleem met het verbinden met Backpack. Controleer je gebruikersnaam en wachtwoord en probeer opnieuw.';
 $string['backpackdetails'] = 'Backpack instellingen';
+$string['backpackdisconnected'] = 'Backpack verbinding is verbroken';
 $string['backpackemail'] = 'E-mailadres';
 $string['backpackemail_help'] = 'E-mailadres dat met je backpack geassocieerd is.
 Als je verbindt worden alle badges die je op deze site verdient gekoppeld aan dit e-mailadres.';
@@ -133,11 +133,13 @@ $string['backpackemailverifyemailsubject'] = '{$a}: Badges Backpack e-mailverifi
 $string['backpackemailverifypending'] = 'Er is een e-mail verstuurd naar <strong>{$a}</strong>. Klik op de verificatielink in de e-mail om je Backpack-verbinding te activeren.';
 $string['backpackemailverifysuccess'] = 'Bedankt voor het verifiëren van je e-mailadres. Je bent nu verbonden met jouw Backpack.';
 $string['backpackemailverifytokenmismatch'] = 'Het token in de link waarop je geklikt hebt, komt niet overeen met het opgeslagen token. Zorg ervoor dat je klikt op de link van de meest recente e-mail die je ontvangen hebt.';
+$string['backpackexporterror'] = 'Kan de badge niet exporteren naar backpack';
 $string['backpackimport'] = 'Badge import instellingen';
 $string['backpackimport_help'] = 'Nadat de backpack-verbinding gelukt is, kunnen badges uit je backpack getoond worden op jouw badges-pagina en je profielpagina.
 
 In deze zone kun je collecties van badges kiezen uit je backpack de je wil tonen op je profiel.';
 $string['backpackneedsupdate'] = 'De backpack die op dit profiel is aangesloten, komt niet overeen met de backpack voor de site. Je moet de backpack loskoppelen en weer aansluiten';
+$string['backpackprovider'] = 'Backpack Provider';
 $string['backpacksettings'] = 'Backpack-instellingen';
 $string['backpackweburl'] = 'Backpack-URL';
 $string['badgedetails'] = 'Badgedetails';
@@ -210,7 +212,7 @@ $string['criteria_5_help'] = 'Maakt het mogelijk een badge toe te kennen aan geb
 $string['criteria_6'] = 'Profiel vervolledigen';
 $string['criteria_6_help'] = 'Hiermee kan een badge aan gebruikers worden toegekend voor het invullen van bepaalde velden in hun profiel. U kunt kiezen uit standaard en aangepaste profiel velden die beschikbaar zijn voor gebruikers.';
 $string['criteria_7'] = 'Toegekende badges';
-$string['criteria_7_help'] = 'Hiermee kan een badge worden toegekend aan gebruikers op basis van de andere badges die zijn verdiend.';
+$string['criteria_7_help'] = 'Hiermee kan een badge worden toegekend aan gebruikers op basis van de andere badges die zij hebben verdiend.';
 $string['criteria_8'] = 'Site-groep lidmaatschap';
 $string['criteria_8_help'] = 'Staat toe om een badge uit te reiken, gebaseerd op lidmaatschap van een site-groep';
 $string['criteria_9'] = 'Competenties';
@@ -276,6 +278,7 @@ $string['delconfirm'] = 'Verwijder alle bestaande uitgegeven badges';
 $string['delcritconfirm'] = 'Weet je zeker dat je dit criterium wil verwijderen?';
 $string['deletehelp'] = '<p>Een badge volledig verwijderen betekent dat alle gegevens met informatie en criteria voor altijd verwijderd worden. Gebruikers die deze badge verdiend hebben, zullen er niet langer toegang toe hebben en hem niet meer kunnen tonen op hun profielpagina\'s.</p>
 <p>Opmerking: gebruikers die deze badge hebben verdiend en hem al naar hun externe backpack hebben gestuurd, zullen hem daar nog wel kunnen tonen. Ze zullen echter de criteria en pagina\'s met bewijs die aan deze website zijn gelinkt, niet meer kunnen bereiken.</p>';
+$string['delexternalbackpack'] = 'Verwijderd site backpack';
 $string['delexternalbackpackconfirm'] = 'Website backpack \'{$a}\' verwijderen?';
 $string['delparamconfirm'] = 'Weet je zeker dat je deze parameter wil verwijderen?';
 $string['description'] = 'Beschrijving';
@@ -299,18 +302,15 @@ $string['error:connectionunknownreason'] = 'De connectie is mislukt, maar er is 
 $string['error:duplicatename'] = 'Er bestaat al een badge met die naam in het systeem.';
 $string['error:externalbadgedoesntexist'] = 'Badge niet gevonden';
 $string['error:guestuseraccess'] = 'Je gebruikt nu de gastaccount. Om badges te kunnen zien, moet je aangemeld zijn met je gebruikersaccount.';
-$string['error:invalidbadgeurl'] = 'Ongeldig URL-formaat van de badge-uitgever. De URL moet http:// of https:// als prefix hebben.';
 $string['error:invalidcriteriatype'] = 'Ongeldig criterium type';
 $string['error:invalidexpiredate'] = 'Vervaldag moet in de toekomst liggen.';
 $string['error:invalidexpireperiod'] = 'Vervalperiode kan nooit negatief of 0 zijn.';
 $string['error:invalidparambadge'] = 'Badge bestaat niet.';
 $string['error:invalidparamcohort'] = 'Site-groep bestaat niet.';
 $string['error:noactivities'] = 'Er zijn geen activiteiten met voltooiingscriteria in deze cursus.';
-$string['error:nobadges'] = 'Er zijn geen cursus- of sitebadges waarvan de toegang is ingeschakeld om als criterium te worden toegevoegd.';
+$string['error:nobadges'] = 'Er zijn geen badges waarvan de toegang is ingeschakeld om als criterium te worden toegevoegd. Een site-badge kan alleen andere site-badges als criterium hebben. Een cursus-badge kan andere cursus-badges of site-badges als criterium hebben.';
 $string['error:nocohorts'] = 'Geen site-groepen';
 $string['error:nocourses'] = 'Cursus voltooien is voor geen enkele cursus op deze site  ingeschakeld. Er kunnen er dus geen getoond worden. Cursus voltooien kan ingeschakeld worden in de cursusinstellingen.';
-$string['error:nogroups'] = '<p>Er zijn geen publieke collecties van badges beschikbaar in jouw backpack.</p>
-<p>Alleen publieke collecties worden getoond.  <a href="https://backpack.openbadges.org">Bezoek je backpack</a> om publieke collecties te maken.';
 $string['error:nogroupslink'] = '<p>Alleen publieke verzamelingen worden getoond. <a href="{$a}" target="_blank" rel="nofollow">Bezoek je backpack </a> om openbare collecties te maken.';
 $string['error:nogroupssummary'] = '<p> Er zijn geen publieke verzamelingen met badges beschikbaar in je backpack. </ P>';
 $string['error:nopermissiontoview'] = 'Je hebt het recht niet om badge ontvangers te bekijken.';
@@ -369,6 +369,7 @@ $string['imageauthorurl'] = 'URL van afbeelding auteur';
 $string['imageauthorurl_help'] = 'Indien opgegeven, wordt een link naar de website van de auteur van de badge-afbeelding op de badge pagina weergegeven. De URL moet een voorvoegsel http: // of https: // bevatten.';
 $string['imagecaption'] = 'Afbeeldingsbijschrift';
 $string['imagecaption_help'] = 'Indien opgegeven, wordt een afbeeldingsbijschrift weergegeven op de badge-pagina.';
+$string['includeauthdetails'] = 'Authenticatiedetails bij het backpack voegen';
 $string['invalidurl'] = 'Ongeldige URL';
 $string['issuancedetails'] = 'Badge verloopt';
 $string['issuedbadge'] = 'Badge informatie';
@@ -408,14 +409,13 @@ $string['month'] = 'Maand(en)';
 $string['mybackpack'] = 'Mijn backpack instellingen';
 $string['mybadges'] = 'Mijn badges';
 $string['never'] = 'Nooit';
+$string['newbackpack'] = 'Voeg een nieuwe backpack toe';
 $string['newbadge'] = 'Voeg een nieuwe badge toe';
 $string['newimage'] = 'Nieuwe afbeelding';
 $string['noalignment'] = 'Deze badge heeft geen externe vaardigheden of standaarden opgegeven.';
 $string['noawards'] = 'Deze badge is nog niet verdiend.';
 $string['nobackpack'] = 'Er is geen backpack-service gekoppeld aan deze account.<br />';
-$string['nobackpackbadges'] = 'Er zijn geen badges in de collecties die je geselecteerd hebt. <a href="mybackpack.php">Voeg meer collecties toe</a>.';
 $string['nobackpackbadgessummary'] = 'Er zijn geen badges in de collecties die u hebt geselecteerd.';
-$string['nobackpackcollections'] = 'Er is geen badge-collectie geselecteerd. <a href="mybackpack.php">Voeg collecties toe</a>.';
 $string['nobackpackcollectionssummary'] = 'Geen badge collecties zijn geselecteerd.';
 $string['nobackpacks'] = 'Er zijn geen backpacks beschikbaar';
 $string['nobadges'] = 'Er zijn geen badges beschikbaar.';
@@ -452,8 +452,10 @@ $string['notifymonthly'] = 'Maandelijks';
 $string['notifyweekly'] = 'Wekelijks';
 $string['numawards'] = 'Deze badge is uitgereikt aan <a href="{$a->link}">{$a->count}</a> gebruiker(s).';
 $string['numawardstat'] = 'Deze badge is uitgereikt aan {$a} gebruiker(s)';
+$string['oauth2issuer'] = 'OAuth 2 services';
 $string['openbadgesv1'] = 'Open badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
+$string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['overallcrit'] = 'van de geselecteerde criteria zijn voltooid.';
 $string['potentialrecipients'] = 'Mogelijke badge-ontvangers';
 $string['preferences'] = 'Badge voorkeuren';
@@ -462,6 +464,12 @@ $string['privacy:metadata:backpack:backpackuid'] = 'De unieke identificatie van 
 $string['privacy:metadata:backpack:email'] = 'De e-mail die met de backpack geassocieerd is';
 $string['privacy:metadata:backpack:externalbackpackid'] = 'De ID van de backpack';
 $string['privacy:metadata:backpack:userid'] = 'De ID van de gebruiker van wie de backpack is';
+$string['privacy:metadata:backpackoauth2'] = 'OAuth 2 informatie wanneer de gebruiker verbinding maakt met een externe backpack';
+$string['privacy:metadata:backpackoauth2:issuerid'] = 'De ID van de OAuth2 service';
+$string['privacy:metadata:backpackoauth2:scope'] = 'Toon bereik van backpack connect';
+$string['privacy:metadata:backpackoauth2:token'] = 'Het token van de backpackverbinding';
+$string['privacy:metadata:backpackoauth2:userid'] = 'De ID van de gebruiker verbonden met backpack';
+$string['privacy:metadata:backpackoauth2:usermodified'] = 'De ID van de gebruiker die de verbinding wijzigt';
 $string['privacy:metadata:badge'] = 'Een collectie badges';
 $string['privacy:metadata:badge:timecreated'] = 'Het tijdstip waarop de badge gemaakt is';
 $string['privacy:metadata:badge:timemodified'] = 'Het tijdstip waarop de badge laatst is aangepast';
@@ -513,6 +521,8 @@ $string['selecting'] = 'Met geselecteerde badges...';
 $string['setup'] = 'Maak verbinding';
 $string['sitebackpack'] = 'Actief extern backpack.';
 $string['sitebackpack_help'] = 'Het externe backpack waarmee gebruikers vanuit deze site kunnen verbinden. Het wijzigen van deze instelling nadat gebruikers hun backpacks hebben verbonden, zal vereisen dat iedere gebruiker de verbinding opnieuw moet instellen.';
+$string['sitebackpackdeleted'] = 'De site backpack is verwijderd.';
+$string['sitebackpacknotdeleted'] = 'De backpack kon niet verwijderd worden omdat het een site standaard backpack is.';
 $string['sitebackpackverify'] = 'Backpack-verbinding';
 $string['sitebackpackwarning'] = 'Kon geen verbinding maken met backpack. <br/><br/> Controleer of de beheerdersinstelling \'Badge-uitgever\' de geldige e-mail is voor een account op de website van de backpack. <br/><br/> Controleer of het wachtwoord voor de "Badge-uitgever" op de <ahref="{$a->url} "> site-instellingenpagina van de backpack</a> het juiste wachtwoord is voor de account op de backpack website. <br/><br/> De backpack antwoorde: "{$a-> waarschuwing}"';
 $string['sitebadges'] = 'Site-badges';

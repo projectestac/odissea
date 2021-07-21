@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_h5p', language 'sv', version '3.8'.
+ * Strings for component 'atto_h5p', language 'sv', version '3.11'.
  *
  * @package     atto_h5p
  * @category    string
@@ -42,4 +42,4 @@ $string['invalidh5purl'] = 'Ogiltig URL';
 $string['noh5pcontent'] = 'Inget H5P-innehåll tillagt';
 $string['or'] = 'eller';
 $string['pluginname'] = 'Infoga H5P';
-$string['privacy:metadata'] = 'Pluginmodulen atto_h5p lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_h5p lagrar ingen personinformation.';

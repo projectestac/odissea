@@ -178,7 +178,7 @@ if ($id) {
     if ($makecopy) {
         // If we are duplicating a question, add some indication to the question name.
         $question->name = get_string('questionnamecopy', 'question', $question->name);
-        $question->idnumber = null;
+        $question->idnumber = core_question_find_next_unused_idnumber($question->idnumber, $category->id);
         $question->beingcopied = true;
     }
 
@@ -271,6 +271,10 @@ if ($mform->is_cancelled()) {
         }
     }
 
+    // If this is a new question, save defaults for user in user_preferences table.
+    if (empty($question->id)) {
+        $qtypeobj->save_defaults_for_new_questions($fromform);
+    }
     $question = $qtypeobj->save_question($question, $fromform);
     if (isset($fromform->tags)) {
         // If we have any question context level tags then set those tags now.

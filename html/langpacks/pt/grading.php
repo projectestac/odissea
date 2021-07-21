@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'pt', version '3.8'.
+ * Strings for component 'grading', language 'pt', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -29,6 +29,7 @@ $string['activemethodinfo'] = '\'{$a->method}\'é selecionado como o método de 
 $string['activemethodinfonone'] = 'Não existe um método de avaliação avançado selecionado para a area \'{$a->area}\' . Será usada a avaliação direta simples.';
 $string['changeactivemethod'] = 'Alterar o método de avaliação ativo para';
 $string['clicktoclose'] = 'clique para fechar';
+$string['error:gradingunavailable'] = 'O método de avaliação avançada não está definido corretamente. Verifique todas as opções da avaliação do fórum nas configurações do fórum.';
 $string['error:notinrange'] = 'Nota atribuída inválida: {$a->grade}. As notas devem ser entre 0 e {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Não é possível instanciar o elemento da grelha de avaliação';
 $string['formnotavailable'] = 'Foi selecionado um método de avaliação avançado para ser usado mas a grelha de avaliação ainda não está disponível. Poderá ser necessário criá-la primeiro a partir da hiperligação no menu de ações ou no bloco de administração.';
@@ -79,7 +80,7 @@ $string['privacy:metadata:grading_instances:rawgrade'] = 'A avaliação para a i
 $string['privacy:metadata:grading_instances:status'] = 'O estado desta instância de avaliação';
 $string['privacy:metadata:grading_instances:timemodified'] = 'A hora em que a instância de avaliação foi modificada pela última vez.';
 $string['privacy:metadata:gradingformpluginsummary'] = 'Dados do método de avaliação.';
-$string['searchownforms'] = 'incluir as minhas grelhas';
+$string['searchownforms'] = 'Incluir as minhas grelhas&nbsp;';
 $string['searchtemplate'] = 'Pesquisar grelhas de avaliação';
 $string['searchtemplate_help'] = 'Pode pesquisar por uma grelha de avaliação e usá-la aqui como modelo a partir da nova grelha de avaliação. Basta inserir as palavras que devem aparecer em algum lugar no nome da grelha, na sua descrição ou no próprio corpo da grelha. Para pesquisar uma frase, insira a expressão inteira entre aspas.
 

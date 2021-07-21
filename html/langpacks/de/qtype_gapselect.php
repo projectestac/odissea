@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'de', version '3.8'.
+ * Strings for component 'qtype_gapselect', language 'de', version '3.11'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -39,11 +39,14 @@ $string['errorquestiontextblank'] = 'Sie müssen einen Fragetext eingeben.';
 $string['group'] = 'Gruppe';
 $string['pleaseputananswerineachbox'] = 'Bitte tragen Sie in jedes Feld eine Antwort ein.';
 $string['pluginname'] = 'Lückentextauswahl';
-$string['pluginname_help'] = 'Fragetexte mit Auswahlantworten benötigen Platzhalter, um die richtigen Antworten über Dropdown-Menüs auswählen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext benutzt, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Zusätzliche Antworttexte können hinzugefügt werden, um die Beantwortung der Frage schwieriger zu machen. Auswahlantworten können gruppiert werden, um Antworten in den Dropdown-Menüs zu beschränken.';
+$string['pluginname_help'] = 'Fragetexte mit Auswahlantworten benötigen Platzhalter, um die richtigen Antworten über Dropdown-Menüs auswählen zu können. [[1]], [[2]], [[3]], ... werden als Platzhalter im Fragetext verwendet, wobei die richtigen Antworten als Auswahlantworten 1, 2, 3, ... angegeben sind. Zusätzliche Auswahlantworten können hinzugefügt werden, um die Beantwortung der Frage schwieriger zu machen. Auswahlantworten können gruppiert werden, um Antworten in den Dropdown-Menüs zu beschränken.';
 $string['pluginnameadding'] = '"Lückentextauswahl"-Frage hinzufügen';
 $string['pluginnameediting'] = '"Lückentextauswahl"-Frage bearbeiten';
 $string['pluginnamesummary'] = 'Fehlende Wörter im Fragetext werden über Dropdown-Menüs ausgefüllt.';
-$string['privacy:metadata'] = 'Das Lückentext Frageformat Plugin speichert keine personenbezogenen Daten';
+$string['privacy:metadata'] = 'Das Plugin "Lückentext-Frageformat" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
+$string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
+$string['privacy:preference:shuffleanswers'] = 'Gibt an, ob die Antworten automatisch gemischt werden sollen.';
 $string['shuffle'] = 'Zufallsanordnung';
 $string['tagsnotallowed'] = '{$a->tag} ist unzulässig. (Nur {$a->allowed} sind zulässig.)';
 $string['tagsnotallowedatall'] = '{$a->tag} ist unzulässig. (HTML ist hier nicht zulässig.)';

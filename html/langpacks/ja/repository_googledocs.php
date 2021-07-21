@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'ja', version '3.8'.
+ * Strings for component 'repository_googledocs', language 'ja', version '3.11'.
  *
  * @package     repository_googledocs
  * @category    string
@@ -38,6 +38,7 @@ $string['importformat'] = 'Googleからのデフォルトのインポートフ�
 $string['internal'] = '内部 (Moodle内に保存されているファイル)';
 $string['issuer'] = 'OAuth 2サービス';
 $string['issuer_help'] = 'Google Drive APIと通信するため設定するOAuth 2サービスを選択してください。まだサービスが存在していない場合、あなたは作成する必要があります。';
+$string['mydrive'] = 'マイドライブ';
 $string['oauth2serviceslink'] = '<a href="{$a}" title="OAuth 2サービス設定へのリンク">OAuth 2サービス設定</a>';
 $string['owner'] = 'オーナー: {$a}';
 $string['pluginname'] = 'Google Drive';
@@ -45,7 +46,8 @@ $string['presentationformat'] = 'デフォルトのプレゼンテーション�
 $string['privacy:metadata:repository_googledocs'] = 'Google Driveリポジトリプラグインはいかなる個人データも保存しません。しかし、ユーザデータをMoodleからリモートシステムに転送します。';
 $string['privacy:metadata:repository_googledocs:email'] = 'Google Driveリポジトリユーザのメールアドレスです。';
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'Google Driveリポジトリユーザ検索テキストクエリです。';
-$string['searchfor'] = '{$a} を探す';
+$string['searchfor'] = '検索結果:';
 $string['servicenotenabled'] = 'アクセスが設定されていません。「Drive API」が有効にされているか確認してください。';
+$string['shareddrives'] = '共有ドライブ';
 $string['spreadsheetformat'] = 'デフォルトのスプレッドシートインポートフォーマット';
 $string['supportedreturntypes'] = 'サポートされるファイル';

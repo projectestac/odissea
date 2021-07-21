@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'de', version '3.8'.
+ * Strings for component 'report_security', language 'de', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -25,12 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p>Nach der Installation sollten die Zugriffsrechte für die Datei config.php so gesetzt werden, dass der Webserver diese Datei nicht mehr verändern kann. Bitte beachten Sie, dass dieser Schritt die Server-Sicherheit nicht entscheidend verbessert, aber dass  generelle Angriffe behindert und in ihrer Wirkung begrenzt werden könnten.</p>';
+$string['check_configrw_details'] = '<p>Nach der Installation sollten die Zugriffsrechte für die Datei config.php so gesetzt werden, dass der Webserver diese Datei nicht mehr verändern kann. Bitte beachten Sie, dass dieser Schritt die Server-Sicherheit nicht entscheidend verbessert, aber dass generelle Angriffe behindert und in ihrer Wirkung begrenzt werden könnten.</p>';
 $string['check_configrw_name'] = ' config.php';
 $string['check_configrw_ok'] = 'PHP-Skripte können die config.php nicht verändern';
 $string['check_configrw_warning'] = 'PHP-Skripte könnten die Datei config.php verändern';
 $string['check_cookiesecure_details'] = '<p> Wenn die Kommunikation über https aktiviert ist, sollte auch das Senden sicherer Cookies aktiviert sein. Sie sollten eine Weiterleitung von http zu https haben und idealerweise auch HSTS-Header bedienen.</p>';
 $string['check_cookiesecure_error'] = 'Bitte aktivieren Sie sichere Cookies';
+$string['check_cookiesecure_http'] = 'Sie müssen HTTPS aktivieren um sichere Cookies nutzen zu können';
 $string['check_cookiesecure_name'] = 'Sichere Cookies';
 $string['check_cookiesecure_ok'] = 'Sichere Cookies aktiviert';
 $string['check_crawlers_details'] = '<p>Die Einstellung \'Offen für Google\' erlaubt es Google und anderen Suchmaschinen, alle für Gäste ohne Gastschlüssel offenen Kurse zu durchsuchen. Es ist nicht sinnvoll, diese Funktion zu aktivieren, wenn der Gastzugang deaktiviert ist.</p>';
@@ -44,10 +45,12 @@ $string['check_defaultuserrole_error'] = 'Eine falsche Definition der Standardro
 $string['check_defaultuserrole_name'] = 'Standardrolle für alle Nutzer';
 $string['check_defaultuserrole_notset'] = 'Die Standardrolle ist nicht gesetzt';
 $string['check_defaultuserrole_ok'] = 'Standardrolle für alle Nutzer/innen sind richtig definiert.';
+$string['check_dirindex_info'] = 'Der Verzeichnisindex sollte nicht aktiviert sein';
 $string['check_displayerrors_details'] = '<p>Die Aktivierung der PHP-Einstellung <code>display_errors</code> wird auf produktiven Websites nicht empfohlen, weil die Fehlermeldungen u. U. sensible Informationen zu Ihrem Server preisgeben könnten. Setzen Sie also <code>display_errors=off</code>.</p>';
 $string['check_displayerrors_error'] = 'Die PHP-Einstellung für die Anzeige von Fehlern ist aktiviert. Es wird empfohlen, dies zu deaktivieren';
 $string['check_displayerrors_name'] = 'Anzeige von PHP-Fehlern';
 $string['check_displayerrors_ok'] = 'Die Anzeige von PHP-Fehlern ist deaktiviert';
+$string['check_dotfiles_info'] = 'Keine Punktdatei außer /.well-known/* sollte öffentlich sein';
 $string['check_emailchangeconfirmation_details'] = '<p>Es wird empfohlen, eine E-Mail-Bestätigung einzufordern, wenn Nutzer/innen ihre E-Mail-Adresse im Nutzerprofil ändern. Falls diese Einstellung deaktiviert ist, könnten Spammer versuchen, den Webserver zum Versenden von Spam zu missbrauchen.</p>
 <p></p>';
 $string['check_emailchangeconfirmation_error'] = 'Es dürfen beliebige E-Mail-Adressen eingetragen werden';
@@ -74,11 +77,7 @@ $string['check_mediafilterswf_details'] = '<p>Die automatische Einbindung von Fl
 $string['check_mediafilterswf_error'] = 'Der Flash-Mediafilter (.swf) ist aktiviert - dies ist für die meisten Webserver sehr gefährlich.';
 $string['check_mediafilterswf_name'] = 'Mediafilter (.swf)';
 $string['check_mediafilterswf_ok'] = 'Der Flash-Mediafilter (.swf) ist nicht aktiv.';
-$string['check_noauth_details'] = '<p>Das Plugin "Ohne Authentifizierung" ist nicht für produktive Seiten gedacht. Deaktivieren Sie diese Funktion unbedingt, es sei denn, Sie betreiben eine Testseite zu Entwicklungszwecken.</p>';
-$string['check_noauth_error'] = 'Das Plugin "Ohne Authentifizierung" darf auf produktiven Seiten nicht verwendet werden';
-$string['check_noauth_name'] = 'Ohne Authentifizierung';
-$string['check_noauth_ok'] = 'Das Plugin "Ohne Authentifizierung" ist ausgeschaltet.';
-$string['check_nodemodules_details'] = '<p> Das Verzeichnis <em>{$a- path}</em> enthält Node.js-Module und deren Abhängigkeiten, die normalerweise vom NPM-Dienstprogramm installiert werden. Diese Module werden möglicherweise für die lokale Moodle-Entwicklung benötigt, zum Beispiel für die Verwendung des Grunt-Frameworks. Sie werden nicht benötigt, um eine Moodle-Seite in der Produktion auszuführen, und sie können potenziell gefährliche Codes enthalten, die Ihre Website externen Angriffen aussetzen. Es wird dringend empfohlen, das Verzeichnis zu entfernen, wenn die Seite über eine öffentliche URL verfügbar ist, oder zumindest den Webzugriff darauf in Ihrer Webserver-Konfiguration zu verbieten. </p>';
+$string['check_nodemodules_details'] = '<p>Das Verzeichnis <em>{$a- path}</em> enthält Node.js-Module und deren Abhängigkeiten, die normalerweise vom NPM-Dienstprogramm installiert werden. Diese Module werden möglicherweise für die lokale Moodle-Entwicklung benötigt, zum Beispiel für die Verwendung des Grunt-Frameworks. Sie werden nicht benötigt, um eine Moodle-Seite in der Produktion auszuführen, und sie können potenziell gefährliche Codes enthalten, die Ihre Website externen Angriffen aussetzen. Es wird dringend empfohlen, das Verzeichnis zu entfernen, wenn die Seite über eine öffentliche URL verfügbar ist, oder zumindest den Webzugriff darauf in Ihrer Webserver-Konfiguration zu verbieten.</p>';
 $string['check_nodemodules_info'] = 'Das Verzeichnis node_modules sollte nicht auf öffentlichen Websites vorhanden sein.';
 $string['check_nodemodules_name'] = 'Node.js-Modulverzeichnis';
 $string['check_openprofiles_details'] = 'Öffentlich sichtbare Nutzerprofile können von Spammern missbraucht werden. Aktivieren Sie am besten die Einstellung \'Anmeldung notwendig\'  bzw. \'Anmeldung notwendig, um Profile zu sehen\'.';
@@ -89,13 +88,16 @@ $string['check_passwordpolicy_details'] = '<p>Kennwortregeln sollten unbedingt f
 $string['check_passwordpolicy_error'] = 'Die Kennwortregeln sind nicht eingerichtet.';
 $string['check_passwordpolicy_name'] = 'Kennwortregeln';
 $string['check_passwordpolicy_ok'] = 'Die Kennwortregeln sind aktiviert.';
-$string['check_preventexecpath_details'] = '<p> Wenn Sie zulassen, dass ausführbare Verzeichnisse über die Admin-Oberfläche angepasst werden können, handelt es sich um ein Risiko. </p>';
+$string['check_preventexecpath_details'] = '<p>Wenn Sie zulassen, dass ausführbare Verzeichnisse über die Admin-Oberfläche angepasst werden können, handelt es sich um ein Risiko.</p>';
 $string['check_preventexecpath_name'] = 'Pfade zu ausführbaren Programmen';
 $string['check_preventexecpath_ok'] = 'Pfade zu ausführbaren Programmen einstellbar über config.php';
 $string['check_preventexecpath_warning'] = 'Pfade zu ausführbaren Programmen einstellbar über Admin GUI';
+$string['check_publicpaths_403'] = '(Rückgabe 403 - dies sollte besser 404 sein)';
+$string['check_publicpaths_generic'] = '{$a} Dateien sollten nicht öffentlich sein';
+$string['check_publicpaths_name'] = 'Alle öffentlichen / privaten Pfade prüfen';
 $string['check_riskadmin_detailsok'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator(en):</p>{$a}';
-$string['check_riskadmin_detailswarning'] = '<p>Bitte prüfen Sie die folgende Liste von Serveradministrator/innen:</p>{$a->admins}
-<p>Es wird empfohlen, die Administrator/innennrolle nur auf Systemebene zu vergeben. Die folgenden Nutzer verfügen über nicht unterstützte Zuweisungen zur Administrator/innenrolle:</p>{$a->unsupported}';
+$string['check_riskadmin_detailswarning'] = '<p>Prüfen Sie bitte die folgende Liste von Serveradministrator/innen:</p>{$a->admins}
+<p>Es wird empfohlen, die Rolle "Administrator/innen" nur auf Systemebene zu vergeben. Die folgenden Nutzer verfügen über nicht unterstützte Zuweisungen zur Rolle "Administrator/innen":</p>{$a->unsupported}';
 $string['check_riskadmin_name'] = 'Administrator/innen';
 $string['check_riskadmin_ok'] = '{$a} Serveradministrator(en) gefunden';
 $string['check_riskadmin_unassign'] = 'Rollenzuweisung überprüfen bei <a href="{$a->url}">{$a->fullname} ({$a->email})</a>';
@@ -110,7 +112,7 @@ $string['check_riskbackup_name'] = 'Sicherung von Nutzerdaten';
 $string['check_riskbackup_ok'] = 'Keine Rolle erlaubt das Sichern von Nutzerdaten';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->contextname})</a>';
 $string['check_riskbackup_warning'] = '{$a->rolecount} Rolle(n), {$a->overridecount} Rollenänderung(en) und {$a->usercount} Nutzer mit der Möglichkeit zur Sicherung von Nutzerdaten gefunden.';
-$string['check_riskxss_details'] = '<p>RISK_XSS bezeichnet alle bedenklichen Berechtigungen, die ausschließlich absolut vertrauenswürdige Nutzer ausführen dürfen.</p>
+$string['check_riskxss_details'] = '<p>RISK_XSS bezeichnet alle bedenklichen Berechtigungen, die ausschließlich absolut vertrauenswürdige Nutzer/innen ausführen dürfen.</p>
 <p>Bitte prüfen Sie die folgende Nutzerliste und stellen Sie sicher, dass Sie ihnen völlig trauen können:</p><p>{$a}</p>';
 $string['check_riskxss_name'] = 'XSS-vertrauenswürdige Nutzer';
 $string['check_riskxss_warning'] = '{$a} Nutzer gefunden, denen bezüglich XSS vertraut werden muss!';
@@ -120,7 +122,7 @@ $string['check_unsecuredataroot_error'] = 'Ihr Verzeichnis \'dataroot\'  liegt a
 $string['check_unsecuredataroot_name'] = 'dataroot';
 $string['check_unsecuredataroot_ok'] = 'Das Verzeichnis \'dataroot\' ist nicht aus dem Web erreichbar.';
 $string['check_unsecuredataroot_warning'] = 'Ihr moodledata-Verzeichnis <code>{$a}</code> liegt an der falschen Stelle. Es sollte nicht aus dem Web aufrufbar sein.';
-$string['check_vendordir_details'] = '<p> Das Verzeichnis <em>{$a->path}</em> enthält verschiedene Bibliotheken von Drittanbietern und deren Abhängigkeiten, die normalerweise vom PHP Composer installiert werden. Diese Bibliotheken werden möglicherweise für die lokale Moodle-Entwicklung benötigt, zum Beispiel für die Installation des PHPUnit-Frameworks. Sie werden nicht benötigt, um eine Moodle-Seite in der Produktion auszuführen und sie können potenziell gefährliche Codes enthalten, die Ihre Website externen Angriffen aussetzen. Es wird dringend empfohlen, das Verzeichnis zu entfernen, wenn die Seite über eine öffentliche URL verfügbar ist, oder zumindest den Webzugriff darauf in Ihrer Webserver-Konfiguration zu verbieten. </p>';
+$string['check_vendordir_details'] = '<p>Das Verzeichnis <em>{$a->path}</em> enthält verschiedene Bibliotheken von Drittanbietern und deren Abhängigkeiten, die normalerweise vom PHP Composer installiert werden. Diese Bibliotheken werden möglicherweise für die lokale Moodle-Entwicklung benötigt, zum Beispiel für die Installation des PHPUnit-Frameworks. Sie werden nicht benötigt, um eine Moodle-Seite in der Produktion auszuführen und sie können potenziell gefährliche Codes enthalten, die Ihre Website externen Angriffen aussetzen. Es wird dringend empfohlen, das Verzeichnis zu entfernen, wenn die Seite über eine öffentliche URL verfügbar ist, oder zumindest den Webzugriff darauf in Ihrer Webserver-Konfiguration zu verbieten.</p>';
 $string['check_vendordir_info'] = 'Das externe Verzeichnis darf nicht auf öffentlichen Seiten vertreten sein.';
 $string['check_vendordir_name'] = 'Externes Verzeichnis';
 $string['check_webcron_details'] = '<p>Die Ausführung von Cron im Webbrowser könnte vertrauliche Informationen anzeigen. Die Ausführung von Cron im Webbrowser könnte vertrauliche Informationen anzeigen. Sie sollten deswegen Cron ausschließlich über die Befehlszeile erlauben oder im Webbrowser zusätzlich ein Cron-Kennwort zu verlangen.</p>';
@@ -130,14 +132,9 @@ $string['check_webcron_warning'] = 'Beliebige Personen können auf cron zugreife
 $string['configuration'] = 'Konfiguration';
 $string['description'] = 'Beschreibung';
 $string['details'] = 'Details';
+$string['eventreportviewed'] = 'Sicherheitsbericht angezeigt';
 $string['issue'] = 'Ausgabe';
-$string['pluginname'] = 'Sicherheit';
+$string['pluginname'] = 'Sicherheitsprüfung';
 $string['privacy:metadata'] = 'Das Sicherheits-Übersichts-Plugin speichert keine personenbezogenen Daten.';
 $string['security:view'] = 'Sicherheitsbericht ansehen';
-$string['status'] = 'Status';
-$string['statuscritical'] = 'Kritisch';
-$string['statusinfo'] = 'Information';
-$string['statusok'] = 'OK';
-$string['statusserious'] = 'Schwerwiegend';
-$string['statuswarning'] = 'Warnung';
 $string['timewarning'] = 'Haben Sie bitte Geduld, denn die Bearbeitung kann etwas länger dauern ...';

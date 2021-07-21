@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_pam', language 'de', version '3.8'.
+ * Strings for component 'auth_pam', language 'de', version '3.11'.
  *
  * @package     auth_pam
  * @category    string

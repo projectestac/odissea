@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'ja', version '3.8'.
+ * Strings for component 'gradereport_singleview', language 'ja', version '3.11'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -52,6 +52,7 @@ $string['override'] = 'オーバーライド';
 $string['overrideall'] = 'すべての評点をオーバーライドする';
 $string['overridefor'] = '{$a} のオーバーライド';
 $string['overridenone'] = 'どの評点もオーバーライドしない';
+$string['overridenoneconfirm'] = 'あなたは評点オーバーライドを無効にしようとしています。これにより前のすべてのオーバーライド済み評点が削除されます。本当に続けてもよろしいですか?';
 $string['pluginname'] = 'シングルビュー';
 $string['privacy:metadata'] = '評定シングルビューレポートは他の場所に保存されたデータのみ表示します。';
 $string['save'] = '保存';

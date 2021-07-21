@@ -47,7 +47,7 @@ class core_session_redis_testcase extends advanced_testcase {
     /** @var $redis The current testing redis connection */
     protected $redis = null;
 
-    public function setUp() {
+    public function setUp(): void {
         global $CFG;
 
         if (!extension_loaded('redis')) {
@@ -79,7 +79,7 @@ class core_session_redis_testcase extends advanced_testcase {
         $this->redis->connect(TEST_SESSION_REDIS_HOST);
     }
 
-    public function tearDown() {
+    public function tearDown(): void {
         if (!extension_loaded('redis') || !defined('TEST_SESSION_REDIS_HOST')) {
             return;
         }
@@ -91,9 +91,18 @@ class core_session_redis_testcase extends advanced_testcase {
         $this->redis->close();
     }
 
+    public function test_normal_session_read_only() {
+        $sess = new \core\session\redis();
+        $sess->set_requires_write_lock(false);
+        $sess->init();
+        $this->assertSame('', $sess->handler_read('sess1'));
+        $this->assertTrue($sess->handler_close());
+    }
+
     public function test_normal_session_start_stop_works() {
         $sess = new \core\session\redis();
         $sess->init();
+        $sess->set_requires_write_lock(true);
         $this->assertTrue($sess->handler_open('Not used', 'Not used'));
         $this->assertSame('', $sess->handler_read('sess1'));
         $this->assertTrue($sess->handler_write('sess1', 'DATA'));
@@ -107,9 +116,34 @@ class core_session_redis_testcase extends advanced_testcase {
         $this->assertSessionNoLocks();
     }
 
+    public function test_compression_read_and_write_works() {
+        global $CFG;
+
+        $CFG->session_redis_compressor = \core\session\redis::COMPRESSION_GZIP;
+
+        $sess = new \core\session\redis();
+        $sess->init();
+        $this->assertTrue($sess->handler_write('sess1', 'DATA'));
+        $this->assertSame('DATA', $sess->handler_read('sess1'));
+        $this->assertTrue($sess->handler_close());
+
+        if (extension_loaded('zstd')) {
+            $CFG->session_redis_compressor = \core\session\redis::COMPRESSION_ZSTD;
+
+            $sess = new \core\session\redis();
+            $sess->init();
+            $this->assertTrue($sess->handler_write('sess2', 'DATA'));
+            $this->assertSame('DATA', $sess->handler_read('sess2'));
+            $this->assertTrue($sess->handler_close());
+        }
+
+        $CFG->session_redis_compressor = \core\session\redis::COMPRESSION_NONE;
+    }
+
     public function test_session_blocks_with_existing_session() {
         $sess = new \core\session\redis();
         $sess->init();
+        $sess->set_requires_write_lock(true);
         $this->assertTrue($sess->handler_open('Not used', 'Not used'));
         $this->assertSame('', $sess->handler_read('sess1'));
         $this->assertTrue($sess->handler_write('sess1', 'DATA'));
@@ -121,6 +155,7 @@ class core_session_redis_testcase extends advanced_testcase {
 
         $sessblocked = new \core\session\redis();
         $sessblocked->init();
+        $sessblocked->set_requires_write_lock(true);
         $this->assertTrue($sessblocked->handler_open('Not used', 'Not used'));
 
         // Trap the error log and send it to stdOut so we can expect output at the right times.
@@ -130,8 +165,8 @@ class core_session_redis_testcase extends advanced_testcase {
             $sessblocked->handler_read('sess1');
             $this->fail('Session lock must fail to be obtained.');
         } catch (\core\session\exception $e) {
-            $this->assertContains("Unable to obtain session lock", $e->getMessage());
-            $this->assertContains('Cannot obtain session lock for sid: sess1', file_get_contents($errorlog));
+            $this->assertStringContainsString("Unable to obtain session lock", $e->getMessage());
+            $this->assertStringContainsString('Cannot obtain session lock for sid: sess1', file_get_contents($errorlog));
         }
 
         $this->assertTrue($sessblocked->handler_close());
@@ -143,6 +178,7 @@ class core_session_redis_testcase extends advanced_testcase {
     public function test_session_is_destroyed_when_it_does_not_exist() {
         $sess = new \core\session\redis();
         $sess->init();
+        $sess->set_requires_write_lock(true);
         $this->assertTrue($sess->handler_open('Not used', 'Not used'));
         $this->assertTrue($sess->handler_destroy('sess-destroy'));
         $this->assertSessionNoLocks();
@@ -151,6 +187,7 @@ class core_session_redis_testcase extends advanced_testcase {
     public function test_session_is_destroyed_when_we_have_it_open() {
         $sess = new \core\session\redis();
         $sess->init();
+        $sess->set_requires_write_lock(true);
         $this->assertTrue($sess->handler_open('Not used', 'Not used'));
         $this->assertSame('', $sess->handler_read('sess-destroy'));
         $this->assertTrue($sess->handler_destroy('sess-destroy'));
@@ -160,8 +197,10 @@ class core_session_redis_testcase extends advanced_testcase {
 
     public function test_multiple_sessions_do_not_interfere_with_each_other() {
         $sess1 = new \core\session\redis();
+        $sess1->set_requires_write_lock(true);
         $sess1->init();
         $sess2 = new \core\session\redis();
+        $sess2->set_requires_write_lock(true);
         $sess2->init();
 
         // Initialize session 1.
@@ -203,6 +242,7 @@ class core_session_redis_testcase extends advanced_testcase {
     public function test_multiple_sessions_work_with_a_single_instance() {
         $sess = new \core\session\redis();
         $sess->init();
+        $sess->set_requires_write_lock(true);
 
         // Initialize session 1.
         $this->assertTrue($sess->handler_open('Not used', 'Not used'));
@@ -223,6 +263,7 @@ class core_session_redis_testcase extends advanced_testcase {
     public function test_session_exists_returns_valid_values() {
         $sess = new \core\session\redis();
         $sess->init();
+        $sess->set_requires_write_lock(true);
 
         $this->assertTrue($sess->handler_open('Not used', 'Not used'));
         $this->assertSame('', $sess->handler_read('sess1'));
@@ -285,7 +326,7 @@ class core_session_redis_testcase extends advanced_testcase {
 
         $expected = 'Failed to connect (try 5 out of 5) to redis at ' . TEST_SESSION_REDIS_HOST . ':111111';
         $this->assertDebuggingCalledCount(5);
-        $this->assertContains($expected, $actual);
+        $this->assertStringContainsString($expected, $actual);
     }
 
     /**

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plagiarism', language 'pt', version '3.8'.
+ * Strings for component 'plagiarism', language 'pt', version '3.11'.
  *
  * @package     plagiarism
  * @category    string
@@ -30,6 +30,6 @@ $string['configenableplagiarism'] = 'Esta opção permite aos administradores co
 $string['configplagiarismplugins'] = 'Escolha o módulo antiplágio que pretende configurar';
 $string['enableplagiarism'] = 'Ativar módulos antiplágio';
 $string['manageplagiarism'] = 'Gerir módulos antiplágio';
-$string['nopluginsinstalled'] = 'Não há nenhum módulo antiplágio instalado';
+$string['nopluginsinstalled'] = 'Não há nenhum módulo antiplágio instalado.';
 $string['plagiarism'] = 'Plágio';
 $string['privacy:metadata:plagiarism'] = 'O subsistema antiplágio funciona como um canal, transmite pedidos dos módulos a vários módulos de antiplágio.';

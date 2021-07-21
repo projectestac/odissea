@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'zh_cn', version '3.8'.
+ * Strings for component 'quiz', language 'zh_cn', version '3.11'.
  *
  * @package     quiz
  * @category    string
@@ -184,6 +184,9 @@ $string['completedon'] = '完成于';
 $string['completionattemptsexhausted'] = '或所有可用的试答已用尽';
 $string['completionattemptsexhausted_help'] = '当学生用尽所有的试答次数时，标记测验完成。';
 $string['completionattemptsexhausteddesc'] = '如果所有可用的试答已用尽，则完成';
+$string['completionminattempts'] = '学生必须发送试答：';
+$string['completionminattemptserror'] = '最少试答次数必须小于或等于允许的试答次数。';
+$string['completionminattemptsgroup'] = '需要试答';
 $string['completionpass'] = '需要及格成绩';
 $string['completionpass_help'] = '如果启用，则当学生获得及格成绩(在测验设置的成绩部分指定)或更高成绩时，此活动视为完成。';
 $string['completionpassdesc'] = '学生必须获得及格成绩才能完成此活动';
@@ -731,6 +734,7 @@ $string['quizopens'] = '测验开启';
 $string['quizopenwillclose'] = '此测验已开启，将于{$a}关闭';
 $string['quizordernotrandom'] = '测验顺序没有打乱';
 $string['quizorderrandom'] = '*测验顺序已打乱';
+$string['quizreport'] = '测验报表';
 $string['quizsettings'] = '测验设置';
 $string['quiztimer'] = '测验计时器';
 $string['quizwillopen'] = '此测验将开启{$a}';

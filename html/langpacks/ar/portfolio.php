@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio', language 'ar', version '3.8'.
+ * Strings for component 'portfolio', language 'ar', version '3.11'.
  *
  * @package     portfolio
  * @category    string
@@ -28,18 +28,18 @@ defined('MOODLE_INTERNAL') || die();
 $string['activeexport'] = 'تفصيل التصدير النشط';
 $string['activeportfolios'] = 'المحفظات المتوفرة';
 $string['addalltoportfolio'] = 'تصدير الكل إلى المحفظة';
-$string['addnewportfolio'] = 'أضف محفظة جديدة';
+$string['addnewportfolio'] = 'إضافة محفظة جديدة';
 $string['addtoportfolio'] = 'التصدير إلى محفظة';
 $string['alreadyalt'] = 'قيد التصدير حالياً - لطفاً، أنقر هنا لتفصيل هذا النقل';
 $string['alreadyexporting'] = 'لديك سلفاً محفظة تصدير نشطة في هذه الجلسة. قبل المتابعة، إما أن تُكمل هذا التصدير، أو تلغيه. هل ترغب في متابعته؟ (لا معناها إلغاؤه)';
 $string['availableformats'] = 'تنسيقات التصدير المتوفرة';
 $string['callbackclassinvalid'] = 'طبقة رد النداء المحددة غير صالحة أو ليست جزءا من التسلسل الهرمي portfolio_caller';
-$string['callercouldnotpackage'] = 'فشل لحزم البيانات احتياطيا للتصدير: كان الخطأ الأصلي {$a}';
-$string['cannotsetvisible'] = 'لا يمكن  تغيير هذا الخيار إلى مرئي - البرنامج المساعد تم تعطيله تماماً بسبب الإعدادت الخاطئة';
+$string['callercouldnotpackage'] = 'فشل في رزم بياناتك للتصدير: كان الخطأ الأصلي {$a}';
+$string['cannotsetvisible'] = 'لا يمكن تغيير هذا الخيار إلى مرئي - الملحق تم تعطيله تماماً بسبب الإعدادت الخاطئة.';
 $string['commonportfoliosettings'] = 'الإعدادات العامة للمحفظة';
 $string['commonsettingsdesc'] = '<p>تغير مدة النقل فيما إذا كانت \'معتدلة\' أو \'عالية\' على مدى قدرة المستخدم على الانتظار لاستكمالها أم لا. </P> <P> الأحجام حتى عتبة مدة النقل \'معتدلة\' ستحدث على الفور دون السؤال من المستخدم، أما إذا كانت المدة \'عالية\' فمعناها أن المستخدم سيُمنح الخيار لكن مع تنبيهه بأن الأمر قد يستغرق بعض الوقت. </P><P> فضلاً عن ذلك، بعض ملاحق المحافظ قد تتجاهل هذا الخيار تماماً، وتفرض وضع كل عمليات النقل في طابور الانتظار. </P>';
 $string['configexport'] = 'تهيئة البيانات التي تم تصديرها';
-$string['configplugin'] = 'تهيئة البرنامج المساعد الحافظة';
+$string['configplugin'] = 'تهيئة ملحق الحافظة';
 $string['configure'] = 'تهيئة';
 $string['confirmcancel'] = 'هل أنت متأكد من رغبتك بإلغاء هذا التصدير؟';
 $string['confirmexport'] = 'الرجاء تأكيد هذا التصدير';
@@ -79,7 +79,7 @@ $string['format_image'] = 'صورة';
 $string['format_leap2a'] = 'تصميم المحفظة هو  Leap2A';
 $string['format_mbkp'] = 'تنسيق الحفظ الاحتياطي لمودل';
 $string['format_pdf'] = 'PDF';
-$string['format_plainhtml'] = 'أتش تي إم إل HTML';
+$string['format_plainhtml'] = 'HTML';
 $string['format_presentation'] = 'عرض';
 $string['format_richhtml'] = 'HTML مع المرفقات';
 $string['format_spreadsheet'] = 'جداول';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'it', version '3.8'.
+ * Strings for component 'form', language 'it', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -48,6 +48,7 @@ $string['err_wrongfileextension'] = 'Non è stato possibile caricare alcuni file
 $string['filesofthesetypes'] = 'Tipi di file accettati:';
 $string['filetypesany'] = 'Tutti i tipi di file';
 $string['filetypesnotall'] = 'Non è consentito selezionare \'Tutti i tipi di file\'.';
+$string['filetypesnotallowed'] = 'I seguenti tipi di file non sono consentiti: {$a}';
 $string['filetypesnotwhitelisted'] = 'I seguenti tipi di file non sono consentiti: {$a}';
 $string['filetypesothers'] = 'Altri file';
 $string['filetypesunknown'] = 'Tipo di file sconosciuto: {$a}';
@@ -82,6 +83,7 @@ $string['showadvanced'] = 'Visualizza impostazioni avanzate';
 $string['showless'] = 'Visualizza meno elementi...';
 $string['showmore'] = 'Visualizza più elementi...';
 $string['somefieldsrequired'] = '{$a} = campi a compilazione obbligatoria';
+$string['suggestions'] = 'Suggerimenti';
 $string['time'] = 'Ora';
 $string['timeunit'] = 'Unità di tempo';
 $string['timing'] = 'Orario';

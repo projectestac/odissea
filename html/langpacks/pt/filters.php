@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filters', language 'pt', version '3.8'.
+ * Strings for component 'filters', language 'pt', version '3.11'.
  *
  * @package     filters
  * @category    string
@@ -40,7 +40,7 @@ $string['content'] = 'Conteúdo';
 $string['contentandheadings'] = 'Conteúdo e cabeçalhos';
 $string['coursecategory'] = 'Categoria da disciplina';
 $string['courserole'] = 'Papel na disciplina';
-$string['courserolelabel'] = '{$a->label} é {$a->rolename} na {$a->coursename} desde {$a->categoryname}';
+$string['courserolelabel'] = '{$a->label} é {$a->rolename} em {$a->coursename} de {$a->categoryname}';
 $string['courserolelabelerror'] = '{$a->label} erro: a disciplina {$a->coursename} não existe';
 $string['coursevalue'] = 'Designação da disciplina';
 $string['datelabelisafter'] = '{$a->label} é posterior a {$a->after}';
@@ -52,8 +52,8 @@ $string['doesnotcontain'] = 'não contém';
 $string['endswith'] = 'termina em';
 $string['filterallwarning'] = 'Aplicar filtros aos cabeçalhos e ao conteúdo pode aumentar significativamente a carga no servidor. Pondere a necessidade da sua utilização. A maior ocupação é do filtro multilingue.';
 $string['filtersettings'] = 'Configuração do filtro';
-$string['filtersettings_help'] = 'Nesta página pode ativar ou desativar os filtros numa área específica do site. Alguns filtros permitem definições locais, nesses casos, existirá uma hiperligação ao lado do nome do filtro.';
-$string['filtersettingsforin'] = 'Definições do filtro  {$a->filter} em {$a->context}';
+$string['filtersettings_help'] = 'Nesta página pode ativar ou desativar os filtros numa área específica do site. Alguns filtros permitem configurações locais, e nesses casos, existirá uma hiperligação ao lado do nome do filtro.';
+$string['filtersettingsforin'] = 'Definições do filtro {$a->filter} em {$a->context}';
 $string['filtersettingsin'] = 'Definições de filtros no contexto: {$a}';
 $string['firstaccess'] = 'Primeiro acesso';
 $string['globalrolelabel'] = '{$a->label} é {$a->value}';
@@ -67,20 +67,21 @@ $string['isequalto'] = 'é igual a';
 $string['isnotdefined'] = 'não está definido';
 $string['isnotequalto'] = 'não é igual a';
 $string['limiterfor'] = 'limitador do campo {$a}';
-$string['neveraccessed'] = 'Nunca acedido';
+$string['neveraccessed'] = 'Nunca acedeu';
 $string['nevermodified'] = 'Nunca alterado';
 $string['newfilter'] = 'Novo filtro';
 $string['nofiltersenabled'] = 'Nenhum módulo de filtro está ativo neste site.';
-$string['off'] = 'Desligado';
-$string['offbutavailable'] = 'Desligado, mas disponível';
-$string['on'] = 'Ligado';
+$string['off'] = 'Inativo';
+$string['offbutavailable'] = 'Inativo, mas disponível';
+$string['on'] = 'Ativo';
 $string['privacy:reason'] = 'O subsistema Filtros não armazena quaisquer dados pessoais.';
 $string['profilefilterfield'] = 'Nome do campo de perfil';
 $string['profilefilterlimiter'] = 'Condição do campo de perfil';
 $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}';
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Remover todos os filtros';
-$string['removeselected'] = 'Remover os selecionados';
+$string['removeselected'] = 'Remover filtros selecionados';
+$string['replacefilters'] = 'Substituir filtros';
 $string['selectlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['startswith'] = 'começa com';
 $string['tablenosave'] = 'As alterações na tabela acima são guardadas automaticamente.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'nl', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'nl', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -47,6 +47,6 @@ $string['pluginname'] = 'Offline beoordelingswerkblad';
 $string['privacy:nullproviderreason'] = 'Deze plugin heeft geen databank om gebruikersinformatie te bewaren. Er worden enkel API\'s gebruikt in mod_assign om te helpen met het tonen van de beoordelingsinterface.';
 $string['processgrades'] = 'Importeer cijfers';
 $string['skiprecord'] = 'Record overslaan';
-$string['updatedgrades'] = '{$a} cijfers en feedback aangepast';
+$string['updatedgrades'] = '<strong>{$a->gradeupdatescount}</strong> cijfers en <strong>{$a->feedbackupdatescount}</strong> feedback-items aangepast.';
 $string['updaterecord'] = 'Record aanpassen';
 $string['uploadgrades'] = 'Upload beoordelingswerkblad';

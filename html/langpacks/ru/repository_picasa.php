@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_picasa', language 'ru', version '3.8'.
+ * Strings for component 'repository_picasa', language 'ru', version '3.11'.
  *
  * @package     repository_picasa
  * @category    string
@@ -30,4 +30,6 @@ $string['configplugin'] = 'Конфигурация хранилища Picasa';
 $string['oauthinfo'] = '<p>Для использования этого плагина Вы должны зарегистрировать свой сайт в Google, как описано в документации <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>В процессе регистрации Вам нужно будет ввести следующий URL в качестве «Authorized Redirect URIs»:</p><p>{$a->callbackurl} </p><p>После регистрации Вам будет предоставлен ID клиента и ключ, которые могут быть использованы для настройки всех плагинов Google Drive и Picasa.</p>';
 $string['picasa:view'] = 'Просматривать хранилище файлов «Picasa»';
 $string['pluginname'] = 'Веб-альбомы Picasa';
+$string['privacy:metadata:repository_picasa'] = 'Плагин хранилища веб-альбомов Picasa не хранит никаких личных данных, но передает данные пользователя из Moodle в отдаленную систему.';
+$string['privacy:metadata:repository_picasa:searchtext'] = 'Текстовый поисковый запрос пользователя хранилища Picasa.';
 $string['secret'] = 'Ключ';

@@ -135,7 +135,7 @@ class behat_util extends testing_util {
     /**
      * Build theme CSS.
      */
-    public static function build_themes() {
+    public static function build_themes($mtraceprogress = false) {
         global $CFG;
         require_once("{$CFG->libdir}/outputlib.php");
 
@@ -147,7 +147,7 @@ class behat_util extends testing_util {
         }, $themenames);
 
         // Build the list of themes and cache them in local cache.
-        $themes = theme_build_css_for_themes($themeconfigs, ['ltr'], true);
+        $themes = theme_build_css_for_themes($themeconfigs, ['ltr'], true, $mtraceprogress);
 
         $framework = self::get_framework();
         $storageroot = self::get_dataroot() . "/{$framework}/themedata";
@@ -278,7 +278,6 @@ class behat_util extends testing_util {
      * @return void
      */
     public static function start_test_mode($themesuitewithallfeatures = false, $tags = '', $parallelruns = 0, $run = 0) {
-        global $CFG;
 
         if (!defined('BEHAT_UTIL')) {
             throw new coding_exception('This method can be only used by Behat CLI tool');
@@ -490,5 +489,24 @@ class behat_util extends testing_util {
         // Add any extra lines back if the provided message was spread over multiple lines.
         $linecount = count(explode("\n", $formattedmessage));
         fwrite(STDOUT, str_repeat(cli_ansi_format("<cursor:down>"), $linecount - 1));
+    }
+
+    /**
+     * Gets a text-based site version description.
+     *
+     * @return string The site info
+     */
+    public static function get_site_info() {
+        $siteinfo = parent::get_site_info();
+
+        $accessibility = empty(behat_config_manager::get_behat_run_config_value('axe')) ? 'No' : 'Yes';
+
+        $siteinfo .= <<<EOF
+Run optional tests:
+- Accessibility: {$accessibility}
+
+EOF;
+
+        return $siteinfo;
     }
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'en', version '3.8'.
+ * Strings for component 'message', language 'en', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -77,9 +77,7 @@ $string['errormessagetoolong'] = 'The message is longer than the maximum allowed
 $string['errortranslatingdefault'] = 'Error translating default setting provided by plugin, using system defaults instead.';
 $string['eventgroupmessagesent'] = 'Group message sent';
 $string['eventmessagecontactadded'] = 'Message contact added';
-$string['eventmessagecontactblocked'] = 'Message contact blocked';
 $string['eventmessagecontactremoved'] = 'Message contact removed';
-$string['eventmessagecontactunblocked'] = 'Message contact unblocked';
 $string['eventmessagedeleted'] = 'Message deleted';
 $string['eventmessagesent'] = 'Message sent';
 $string['eventmessageuserblocked'] = 'User blocked';
@@ -106,8 +104,10 @@ $string['loggedoff_help'] = 'Configure how you would like to receive notificatio
 $string['loggedoffdescription'] = 'When you are not logged into Moodle';
 $string['managemessageoutputs'] = 'Default notification preferences';
 $string['message'] = 'Message';
+$string['messagecontactrequest'] = '{$a->user} is requesting to be added as a contact. Visit your <a href="{$a->url}">contact requests</a> page to respond to the request';
 $string['messagecontactrequestsnotification'] = '{$a} is requesting to be added as a contact.';
 $string['messagecontactrequestsnotificationsubject'] = 'Contact request from {$a}';
+$string['messagecontactrequestsubject'] = '{$a->sitename}: Contact request from {$a->user}';
 $string['messagecontentaudio'] = 'Audio';
 $string['messagecontentimage'] = 'Image';
 $string['messagecontentmultimediageneral'] = 'Other media';
@@ -123,8 +123,8 @@ $string['messageoutputs'] = 'Notification plugins';
 $string['messagepreferences'] = 'Message preferences';
 $string['messages'] = 'Messages';
 $string['messagesselected:'] = 'Messages selected:';
+$string['messagetextrequired'] = 'Please enter message text';
 $string['messagingdatahasnotbeenmigrated'] = 'Your messages are temporarily unavailable due to upgrades in the messaging infrastructure. Please wait for them to be migrated.';
-$string['messagingdisabled'] = 'Messaging is disabled on this site, emails will be sent instead';
 $string['muteconversation'] = 'Mute';
 $string['mutedconversation'] = 'Muted conversation';
 $string['newmessage'] = 'New message';
@@ -161,6 +161,7 @@ $string['outputdoesnotexist'] = 'Message output does not exist';
 $string['outputenabled'] = 'Output enabled';
 $string['outputnotavailable'] = 'Not available';
 $string['outputnotconfigured'] = 'Not configured';
+$string['page-message-x'] = 'Any message pages';
 $string['participants'] = 'Participants';
 $string['pendingcontactrequests'] = 'There are {$a} pending contact requests';
 $string['permitted'] = 'Permitted';
@@ -258,7 +259,7 @@ $string['shownotificationwindowwithcount'] = 'Show notification window with {$a}
 $string['togglemessagemenu'] = 'Toggle messaging drawer';
 $string['togglenotificationmenu'] = 'Toggle notifications menu';
 $string['totalconversations'] = '{$a} total conversations';
-$string['touserdoesntexist'] = 'You can not send a message to a user id ({$a}) that doesn\'t exist';
+$string['touserdoesntexist'] = 'You cannot send a message to a user ID ({$a}) that doesn\'t exist.';
 $string['unabletomessage'] = 'You are unable to message this user';
 $string['unblock'] = 'Unblock';
 $string['unblockcontact'] = 'Unblock contact';
@@ -274,8 +275,6 @@ $string['unreadnotification'] = 'Unread notification: {$a}';
 $string['unreadnotifications'] = 'There are {$a} unread notifications';
 $string['useentertosend'] = 'Use enter to send';
 $string['usercantbemessaged'] = 'You can\'t message {$a} due to their message preferences. Try adding them as a contact.';
-$string['userisblockingyou'] = 'This user has blocked you from sending messages to them.';
-$string['userisblockingyounoncontact'] = '{$a} only accepts messages from their contacts.';
 $string['userwouldliketocontactyou'] = '{$a} would like to contact you';
 $string['viewfullnotification'] = 'View full notification';
 $string['viewmessageswith'] = 'View messages with {$a}';

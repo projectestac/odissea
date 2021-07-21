@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_insights', language 'ru', version '3.8'.
+ * Strings for component 'report_insights', language 'ru', version '3.11'.
  *
  * @package     report_insights
  * @category    string
@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actionsaved'] = 'Ваш отзыв о "{$a}" сохранен.';
 $string['confirmbulkaction'] = 'Вы действительно хотите отметить выбранные прогнозы ({$a->nitems}) как «{$a->action}»?';
-$string['disabledmodel'] = 'Извините, эта модель была отключена администратором';
+$string['disabledmodel'] = 'Эта модель была отключена администратором';
 $string['insight'] = 'Инсайт';
 $string['insights'] = 'Инсайты';
 $string['justpredictions'] = 'Обратите внимание, что следующие идеи являются только предположениями. Невозможно с уверенностью предсказать будущее. Информация предоставляется для того, чтобы можно было предпринять необходимые действия, чтобы любые негативные прогнозы не стали реальностью.';
@@ -41,5 +42,9 @@ $string['outcomeverypositive'] = 'Очень положительный резу
 $string['pluginname'] = 'Инсайты';
 $string['prediction'] = 'Прогноз';
 $string['predictiondetails'] = 'Данные прогноза';
+$string['privacy:metadata'] = 'Плагин Прогнозы не хранит никаких личных данных.';
+$string['selectotherinsights'] = 'Выбрать другие прогнозы...';
+$string['selectprediction'] = 'Выберите {$a} для массового действия';
 $string['timecreated'] = 'Время создания прогноза';
-$string['timerange'] = 'Временной интервал';
+$string['timerange'] = 'Интервал анализа';
+$string['timerangewithdata'] = 'с {$a->timestart} до {$a->timeend}';

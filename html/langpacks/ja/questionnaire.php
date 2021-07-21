@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'ja', version '3.8'.
+ * Strings for component 'questionnaire', language 'ja', version '3.11'.
  *
  * @package     questionnaire
  * @category    string
@@ -266,7 +266,7 @@ $string['notapplicablecolumn'] = 'N/A カラム';
 $string['notavail'] = 'この質問はまだ利用できません。後でお試しください。';
 $string['noteligible'] = 'あなたはこのアンケートに回答できません。';
 $string['notemplatesurveys'] = 'テンプレート型のアンケートはありません。';
-$string['notenoughscaleitems'] = 'あなたは2つの尺度の最小値を入力する必要があります！';
+$string['notenoughscaleitems'] = 'スケール項目の個数は，最小でも2である必要があります！';
 $string['notificationfull'] = '全ての送信';
 $string['notifications'] = '送信を通知';
 $string['notifications_help'] = '回答が送信された際に"mod/questionnaire:submissionnotification"ケイパビリティを持つロールに通知します';
@@ -279,8 +279,9 @@ $string['num'] = '#';
 $string['numattemptsmade'] = 'このアンケートで行われた試み {$a}';
 $string['numberfloat'] = 'あなたは入力した値<strong>{$a->number}</strong>は，小数点<strong>{$a->precision}</strong>で変換/四捨五入されます。';
 $string['numberofdecimaldigits'] = '小数点以下の桁数';
-$string['numberscaleitems'] = 'スケール値';
-$string['numberscaleitems_help'] = 'スケール項目のNbは，あなたのレートスケールで使用される「項目の個数」である。通常は3から5の間の値を使用すべきです。デフォルト値は**5**。';
+$string['numberofdecimaldigits_help'] = '結果のページで表示する平均値の小数点以下の桁数を指定してください。';
+$string['numberscaleitems'] = 'スケール項目の個数';
+$string['numberscaleitems_help'] = 'スケール項目の個数は，あなたのレートスケールで使用される「項目の個数」である。通常は3から5の間の値を使用すべきです。デフォルト値は**5**。';
 $string['numeric'] = '数値形式';
 $string['numeric_help'] = '回答が正しくフォーマットされた数値であることが予想される場合、この質問タイプを使用してください。';
 $string['of'] = '／';
@@ -437,7 +438,7 @@ $string['show_nonrespondents'] = '非回答者';
 $string['started'] = '開始';
 $string['strfdate'] = '%Y/%m/%d';
 $string['strfdateformatcsv'] = 'Y/m/d H:i:s';
-$string['strictdateformatting'] = '日付ピッカを使用して日付を指定するか、もしくは\\\'YYYY-MM-DD\\\'書式で日付を入力してくだ>さい。';
+$string['strictdateformatting'] = '日付選択表で日付を指定するか、または日付入力欄へ「YYYY-MM-DD」という書式で日付を直接入力してください。';
 $string['subject'] = '題目';
 $string['submitoptions'] = '回答確認の設定';
 $string['submitpreview'] = 'プレビューを送信する';

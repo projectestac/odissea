@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ru', version '3.8'.
+ * Strings for component 'assign', language 'ru', version '3.11'.
  *
  * @package     assign
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:submissionsdue'] = 'Срок сдачи:';
+$string['activitydate:submissionsopen'] = 'Открывается:';
+$string['activitydate:submissionsopened'] = 'Открыто:';
 $string['activityoverview'] = 'У Вас есть задания, требующие внимания';
 $string['addattempt'] = 'Разрешить еще одну попытку';
 $string['addnewattempt'] = 'Добавить новую попытку';
@@ -63,6 +66,7 @@ $string['assign:submit'] = 'Отправлять ответ на задание'
 $string['assign:view'] = 'Просматривать задание';
 $string['assign:viewblinddetails'] = 'Видеть личности студентов при оценивании вслепую';
 $string['assign:viewgrades'] = 'Просматривать оценки';
+$string['assign:viewownsubmissionsummary'] = 'Видеть сводку своего ответа на задание.';
 $string['assignfeedback'] = 'Модуль отзыва';
 $string['assignfeedbackpluginname'] = 'Модуль отзыва';
 $string['assignmentisdue'] = 'Задание сдано';
@@ -83,10 +87,10 @@ $string['attemptheading'] = 'Попытка {$a->attemptnumber}: {$a->submission
 $string['attempthistory'] = 'Предыдущие попытки';
 $string['attemptnumber'] = 'Номер попытки';
 $string['attemptreopenmethod'] = 'Разрешать новые попытки';
-$string['attemptreopenmethod_help'] = 'Определяет, каким образом будут разрешены новые попытки представления студентом своей работы. Возможны следующие варианты:
+$string['attemptreopenmethod_help'] = 'Этот параметр определяет, может ли студент предпринять дополнительные попытки выполнить задание. Для каждой попытки оценка и отзывы сохраняются и могут быть просмотрены учителем и учеником. Возможны следующие варианты:
 
-* Никогда — студент не может повторно представить работу.
-* Вручную — преподаватель сам может разрешить студенту повторно представить работу.
+* Никогда - возможна только одна попытка.
+* Вручную - учитель может разрешить дополнительные попытки.
 * Автоматически (до проходной оценки) — повторное представление студентом работы разрешается автоматически до тех пор, пока студент не достигнет значения проходной оценки, установленного для этого задания в Журнале оценок.';
 $string['attemptreopenmethod_manual'] = 'Вручную';
 $string['attemptreopenmethod_none'] = 'Никогда';
@@ -111,7 +115,8 @@ $string['batchsetallocatedmarker'] = 'Оценщики закреплены за
 $string['batchsetmarkingworkflowstateforusers'] = 'Задано состояние этапа оценивания для выбранных пользователей - ({$a}).';
 $string['blindmarking'] = 'Оценивание вслепую';
 $string['blindmarking_help'] = 'Оценивание вслепую скрывает личности студентов от оценщиков. Настройки оценивания вслепую будут заблокированы после того, как будет представлен ответ или выставлена оценка по этому заданию.';
-$string['blindmarkingenabledwarning'] = 'Для этого элемента используется оценивание вслепую.';
+$string['blindmarkingenabledwarning'] = 'Для этого элемента разрешен анонимный ответ. Оценки не будут добавлены в журнал успеваемости до тех пор, пока личности учащихся не будут раскрыты через меню действий по выставлению оценок.';
+$string['cachedef_overrides'] = 'Информация о переопределении пользователя и группы';
 $string['calendardue'] = '{$a} - надо сдать';
 $string['calendargradingdue'] = '{$a} - должно быть оценено';
 $string['changefilters'] = 'Изменить фильтры';
@@ -123,6 +128,7 @@ $string['clickexpandreviewpanel'] = 'Нажмите, чтобы разверну
 $string['collapsegradepanel'] = 'Свернуть панель оценок';
 $string['collapsereviewpanel'] = 'Свернуть панель обзора';
 $string['comment'] = 'Отзыв';
+$string['completiondetail:submit'] = 'Давать ответ на задание';
 $string['completionsubmit'] = 'Студент должен представить ответ на задание, чтобы завершить его';
 $string['configshowrecentsubmissions'] = 'Все могут видеть уведомления об отправках в отчетах о последних действиях.';
 $string['confirmbatchgradingoperation'] = 'Вы уверены, что хотите применить {$a->operation} для студентов - {$a->count}?';
@@ -139,7 +145,7 @@ $string['currentassigngrade'] = 'Текущая оценка в задании';
 $string['currentattempt'] = 'Попытка {$a}.';
 $string['currentattemptof'] = 'Номер этой попытки -  {$a->attemptnumber}. (Разрешено попыток - {$a->maxattempts})';
 $string['currentgrade'] = 'Текущая оценка в журнале';
-$string['cutoffdate'] = 'Запретить отправку с';
+$string['cutoffdate'] = 'Запретить отправку после';
 $string['cutoffdate_help'] = 'Если задано, то ответы не будут приниматься  после этой даты с отсрочкой.';
 $string['cutoffdatecolon'] = 'Запрет отправки: {$a}';
 $string['cutoffdatefromdatevalidation'] = 'Дата запрета отправки ответа должна быть установлена позже даты доступности задания';
@@ -232,6 +238,7 @@ $string['feedbacksettings'] = 'Настройки отзыва';
 $string['feedbacktypes'] = 'Типы отзывов';
 $string['filesubmissions'] = 'Ответ в виде файла';
 $string['filter'] = 'Фильтр';
+$string['filterdraft'] = 'Черновик';
 $string['filtergrantedextension'] = 'Разрешенное расширение';
 $string['filternone'] = 'Без фильтра';
 $string['filternotsubmitted'] = 'Не представлено';
@@ -248,6 +255,7 @@ $string['graded'] = 'Оценено';
 $string['gradedby'] = 'Оценено';
 $string['gradedfollowupsubmit'] = 'Оценено - получен исправленный ответ';
 $string['gradedon'] = 'Оценено в';
+$string['gradeitem:submissions'] = 'Ответы на задание';
 $string['gradelocked'] = 'Эта оценка заблокирована или изменена в журнале оценок.';
 $string['gradeoutof'] = 'Оценка из {$a}';
 $string['gradeoutofhelp'] = 'Оценка';
@@ -443,7 +451,7 @@ $string['removesubmission'] = 'Удалить ответ';
 $string['removesubmissionconfirm'] = 'Вы уверены, что хотите удалить представленный ответ на задание?';
 $string['removesubmissionconfirmforstudent'] = 'Вы уверены, что хотите удалить ответ на задание, представленный студентом {$a}?';
 $string['removesubmissionforstudent'] = 'Удалить ответ студента: (id={$a->id}, полное имя={$a->fullname}).';
-$string['reopenuntilpassincompatiblewithblindmarking'] = 'Режим «Автоматически (до проходной оценки)» не совместим с оцениванеим вслепую, так как оценки не публикуются в журнале оценки до тех пор, пока не будут раскрыты личности студентов.';
+$string['reopenuntilpassincompatiblewithblindmarking'] = 'Режим «Автоматически (до проходной оценки)» не совместим с оцениванием вслепую, так как оценки не публикуются в журнале оценки до тех пор, пока не будут раскрыты личности студентов.';
 $string['requireallteammemberssubmit'] = 'Требовать, чтобы все члены группы представили ответы';
 $string['requireallteammemberssubmit_help'] = 'Если «Да», то все члены группы студентов должны нажать кнопку «Отправить» для того, чтобы ответ группы считался отправленным. Если «Нет», то ответ группы будет считаться представленным, как только любой член группы студентов нажмет на кнопку «Отправить».';
 $string['requiresubmissionstatement'] = 'Требовать, чтобы студенты принимали условия представления ответов';
@@ -591,6 +599,7 @@ $string['useridlistnotcached'] = 'Изменения оценок НЕ БЫЛИ 
 $string['useroverrides'] = 'Переопределения пользователя';
 $string['useroverridesdeleted'] = 'Переопределения пользователя удалены';
 $string['usersnone'] = 'У студентов нет доступа к этому заданию.';
+$string['usersubmissioncannotberemoved'] = 'Ответ {$a} не может быть удален.';
 $string['userswhoneedtosubmit'] = 'Пользователи, которые должны представить ответ: {$a}';
 $string['validmarkingworkflowstates'] = 'Допустимые этапы процесса оценивания';
 $string['viewadifferentattempt'] = 'Посмотреть другую попытку';

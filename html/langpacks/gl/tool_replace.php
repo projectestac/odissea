@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'gl', version '3.8'.
+ * Strings for component 'tool_replace', language 'gl', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cannotfit'] = 'A substitución é  máis longa que o orixinal e non se permite acurtalo, non é posíbel continuar.';
+$string['cannotfit'] = 'A substitución é máis longa que o orixinal e non se permite o acurtamento; non pode continuar.';
 $string['disclaimer'] = 'Entendo os riscos desta operación';
 $string['doit'] = 'Si, facelo!';
 $string['excludedtables'] = 'Varias táboas non son actualizadas como parte da substitución do texto. Estas inclúen configuración, rexistro, actividades e táboas de sesións.';
 $string['invalidcharacter'] = 'Atopáronse caracteres non admitidos no texto para buscar ou substituír.';
 $string['notifyfinished'] = '...rematada';
 $string['notifyrebuilding'] = 'Reconstruíndo a caché do curso...';
-$string['notimplemented'] = 'Esta característica non está incorporada no seu controlador de bases de datos.';
+$string['notimplemented'] = 'Vaites, esta característica non está incorporada no seu controlador de bases de datos.';
 $string['notsupported'] = 'Este script debería de ser considerado como experimental. Os cambios que faga non poden ser revertidos, polo que debería de facerse unha copia de seguridade completa antes de executar o script!';
 $string['pageheader'] = 'Buscar e substituír texto dentro de toda a base de datos';
 $string['pluginname'] = 'Buscar e substituír en bases de datos';

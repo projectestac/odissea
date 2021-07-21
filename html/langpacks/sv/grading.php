@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'sv', version '3.8'.
+ * Strings for component 'grading', language 'sv', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -29,6 +29,7 @@ $string['activemethodinfo'] = '\'{$a->method}\' är vald som den aktiva betygsme
 $string['activemethodinfonone'] = 'Ingen avancerad betygssättningsmetod är vald för området \'{$a->area}\'. Enkel betygssättning kommer att användas.';
 $string['changeactivemethod'] = 'Ändra betygssättningsmetod till';
 $string['clicktoclose'] = 'klicka för att välja';
+$string['error:gradingunavailable'] = 'Den avancerade betygsättningsmetoden är inte korrekt inställd. Kontrollera hela forumets betygsättningsalternativ i foruminställningarna.';
 $string['error:notinrange'] = 'Ogiltigt betyg \'{$a->grade}\' angavs. Betyg måste vara mellan 0 och {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Kunde inte instansiera betygsformulärselement';
 $string['formnotavailable'] = 'En avancerad bedömningsmetod valdes men bedömningsformuläret är inte tillgängligt ännu. Du kan behöva definiera det först via en länk i åtgärdsmenyn eller administrationsblocket.';
@@ -53,7 +54,26 @@ $string['manageactionsharedone'] = 'Formuläret sparades som en mall.';
 $string['noitemid'] = 'Betygssättning är inte möjligt. Den betygssatta delen existerar inte.';
 $string['nosharedformfound'] = 'Ingen mall hittades';
 $string['privacy:metadata:grading_definitions'] = 'Grundläggande information om ett avancerat bedömningsformulär som definierats i ett bedömningsbart område.';
+$string['privacy:metadata:grading_definitions:areaid'] = 'Det områdes-ID där det avancerade bedömningsformuläret definieras.';
+$string['privacy:metadata:grading_definitions:copiedfromid'] = 'Det bedömningsdefinitions-ID från vilket detta kopierades.';
+$string['privacy:metadata:grading_definitions:description'] = 'Beskrivningen av den avancerade bedömningsmetoden.';
+$string['privacy:metadata:grading_definitions:method'] = 'Den klassificeringsmetod som är ansvarig för definitionen.';
+$string['privacy:metadata:grading_definitions:name'] = 'Namnet på den avancerade bedömningsdefinitionen.';
+$string['privacy:metadata:grading_definitions:options'] = 'Vissa inställningar för den här bedömningsdefinitionen.';
+$string['privacy:metadata:grading_definitions:status'] = 'Status för den här avancerade bedömningsdefinitionen.';
+$string['privacy:metadata:grading_definitions:timecopied'] = 'Den tidpunkt då bedömningsdefinitionen kopierades.';
+$string['privacy:metadata:grading_definitions:timecreated'] = 'Den tidpunkt då bedömningsdefinitionen skapades.';
+$string['privacy:metadata:grading_definitions:timemodified'] = 'Den tidpunkt då bedömningsdefinitionen senast ändrades.';
+$string['privacy:metadata:grading_definitions:usercreated'] = 'ID:t för den användare som skapade bedömningsdefinitionen.';
+$string['privacy:metadata:grading_definitions:usermodified'] = 'ID:t för den användare som senast ändrade bedömningsdefinitionen.';
+$string['privacy:metadata:grading_instances'] = 'Bedömningspost för en bedömningsbar post som bedöms av en bedömare.';
 $string['privacy:metadata:grading_instances:feedback'] = 'Återkoppling från användaren';
+$string['privacy:metadata:grading_instances:feedbackformat'] = 'Textformatet för den återkoppling som användaren ger.';
+$string['privacy:metadata:grading_instances:raterid'] = 'ID:t för den användare som betygsatte bedömningsinstansen.';
+$string['privacy:metadata:grading_instances:rawgrade'] = 'Betyget för bedömningsinstansen.';
+$string['privacy:metadata:grading_instances:status'] = 'Status för den här bedömningsinstansen.';
+$string['privacy:metadata:grading_instances:timemodified'] = 'Den tidpunkt då bedömningsinstansen senast ändrades.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Data för bedömningsmetoden.';
 $string['searchownforms'] = 'inkludera mina egna formulär';
 $string['searchtemplate'] = 'Sök betygssättningsfomulär';
 $string['searchtemplate_help'] = 'Du kan söka efter ett bedömningsformulär och använda det som en mall för det nya bedömningsformuläret här. Skriv helt enkelt ord som ska förekomma någonstans i formulärsnamnet, dess beskrivning eller i själva innehållet. Om du vill söka efter en fras, radbryt hela frågan med dubbla citationstecken.

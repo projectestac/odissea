@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scorm', language 'en', version '3.8'.
+ * Strings for component 'scorm', language 'en', version '3.11'.
  *
  * @package     scorm
  * @category    string
@@ -84,6 +84,11 @@ $string['collapsetocwinsize'] = 'Collapse TOC when window size below';
 $string['collapsetocwinsizedesc'] = 'This setting lets you specify the window size below which the TOC should automatically collapse.';
 $string['compatibilitysettings'] = 'Compatibility settings';
 $string['completed'] = 'Completed';
+$string['completiondetail:allscos'] = 'Do all parts of this activity';
+$string['completiondetail:completionscore'] = 'Receive a score of {$a} or more';
+$string['completiondetail:completionstatuscompleted'] = 'Complete the activity';
+$string['completiondetail:completionstatuscompletedandpassed'] = 'Complete and pass the activity';
+$string['completiondetail:completionstatuspassed'] = 'Pass the activity';
 $string['completionscorerequired'] = 'Require minimum score';
 $string['completionscorerequired_help'] = 'Enabling this setting will require a user to have at least the minimum score entered to be marked complete in this SCORM activity, as well as any other Activity Completion requirements.';
 $string['completionscorerequireddesc'] = 'Minimum score of {$a} is required for completion';

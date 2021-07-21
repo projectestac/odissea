@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_modules', language 'ar', version '3.8'.
+ * Strings for component 'block_activity_modules', language 'ar', version '3.11'.
  *
  * @package     block_activity_modules
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activity_modules:addinstance'] = 'إضافة كتلة أنشطة جديدة';
 $string['pluginname'] = 'الأنشطة';
-$string['privacy:metadata'] = 'يظهر صندوق الأنشطة فقط البيانات المخزنة في مواقع أخرى';
+$string['privacy:metadata'] = 'كتلة النشاطات تُظهر فقط بيانات مخزنة في مواضع أخرى.';

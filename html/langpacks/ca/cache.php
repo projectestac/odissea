@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'ca', version '3.8'.
+ * Strings for component 'cache', language 'ca', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -38,6 +38,8 @@ $string['cachedef_calendar_subscriptions'] = 'Subscripcions al calendari';
 $string['cachedef_capabilities'] = 'Llista de capacitats del sistema';
 $string['cachedef_completion'] = 'Estat de compleció de la tasca';
 $string['cachedef_config'] = 'Paràmetres de configuració';
+$string['cachedef_contentbank_context_extensions'] = 'Extensions permeses i els seus connectors admesos en un context del banc de continguts';
+$string['cachedef_contentbank_enabled_extensions'] = 'Extensions permeses i els seus connectors admesos al banc de continguts';
 $string['cachedef_contextwithinsights'] = 'Context amb prediccions';
 $string['cachedef_coursecat'] = 'Llista de categories del curs per a l\'usuari particular';
 $string['cachedef_coursecatrecords'] = 'Registres de les categories del curs';

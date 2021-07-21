@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_file', language 'ar', version '3.8'.
+ * Strings for component 'assignsubmission_file', language 'ar', version '3.11'.
  *
  * @package     assignsubmission_file
  * @category    string
@@ -34,17 +34,17 @@ $string['default_help'] = 'إذا اخترتها، سيتم تمكين طريق�
 $string['defaultacceptedfiletypes'] = 'أنواع الملفات المقبولة الافتراضية';
 $string['enabled'] = 'ملف التقديمات';
 $string['enabled_help'] = 'إذا مكّن فالطلاب قادرون على تحميل ملف واحد أو أكثر لتقديمها.';
-$string['eventassessableuploaded'] = 'تم تحميل الملف بنجاح';
-$string['file'] = 'ملف التقديمات';
+$string['eventassessableuploaded'] = 'ملف تم رفعه';
+$string['file'] = 'التسليمات بالملفات';
 $string['maxbytes'] = 'أعلى حجم للملف';
 $string['maxfiles'] = 'الحد الأقصى لعدد الملفات للتقديم الواحد';
-$string['maxfiles_help'] = 'إذا تم تفعيل تقديم الملفات، فلكل تكليف /مهمة ، يمكن تعيين هذا العدد من الملفات لتسليمها.';
+$string['maxfiles_help'] = 'إذا تم تفعيل تسليم الملفات، فكل واجب يمكن ضبطه لقبول هذا العدد من تسليم الملفات.';
 $string['maxfilessubmission'] = 'أقصى عدد من الملفات المرفوعة';
-$string['maxfilessubmission_help'] = 'إذا تم تمكين تقديم الملفات، سيكون كل طالب قادر على تحميل هذا العدد من الملفات لتقديمها.';
+$string['maxfilessubmission_help'] = 'إذا تم تمكين تقديم الملفات، سيكون كل طالب قادر على رفع هذا العدد من الملفات للتسليم الخاص به.';
 $string['maximumsubmissionsize'] = 'أعلى حجم للتقديم';
 $string['maximumsubmissionsize_help'] = 'الملفات المرفوعة من قبل الطلاب تصل لهذا الحجم.';
 $string['numfilesforlog'] = 'عدد الملفات : {$a} ملف.';
-$string['pluginname'] = 'ملف التقديمات';
-$string['privacy:metadata:filepurpose'] = 'الملفات المحملة لتقديم المهمة هذه';
-$string['siteuploadlimit'] = 'حد تحميل الموقع';
-$string['submissionfilearea'] = 'ملفات التقديم المرفوعة';
+$string['pluginname'] = 'تسليمات الملف';
+$string['privacy:metadata:filepurpose'] = 'الملفات المحملة لتسليم الواجب هذا';
+$string['siteuploadlimit'] = 'حد الرفع في الموقع';
+$string['submissionfilearea'] = 'ملفات التسليم المرفوعة';

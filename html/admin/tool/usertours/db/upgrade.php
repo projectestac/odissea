@@ -36,31 +36,8 @@ use tool_usertours\tour;
 function xmldb_tool_usertours_upgrade($oldversion) {
     global $CFG, $DB;
 
-    // Automatically generated Moodle v3.3.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.4.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.5.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2018113002) {
-        // Update the tours shipped with Moodle.
-        manager::update_shipped_tours();
-
-        upgrade_plugin_savepoint(true, 2018113002, 'tool', 'usertours');
-    }
-
     // Automatically generated Moodle v3.6.0 release upgrade line.
     // Put any upgrade step following this.
-
-    if ($oldversion < 2019030600) {
-        // Update the tours shipped with Moodle.
-        manager::update_shipped_tours();
-
-        upgrade_plugin_savepoint(true, 2019030600, 'tool', 'usertours');
-    }
 
     // Automatically generated Moodle v3.7.0 release upgrade line.
     // Put any upgrade step following this.
@@ -68,14 +45,17 @@ function xmldb_tool_usertours_upgrade($oldversion) {
     // Automatically generated Moodle v3.8.0 release upgrade line.
     // Put any upgrade step following this.
 
-    if ($oldversion < 2019111801) {
+    if ($oldversion < 2020061501) {
         // Updating shipped tours will fix broken sortorder records in existing tours.
         manager::update_shipped_tours();
 
-        upgrade_plugin_savepoint(true, 2019111801, 'tool', 'usertours');
+        upgrade_plugin_savepoint(true, 2020061501, 'tool', 'usertours');
     }
 
-    if ($oldversion < 2019111802) {
+    // Automatically generated Moodle v3.9.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2020082700) {
         // Clean up user preferences of deleted tours.
         $select = $DB->sql_like('name', ':lastcompleted') . ' OR ' . $DB->sql_like('name', ':requested');
         $params = [
@@ -93,8 +73,21 @@ function xmldb_tool_usertours_upgrade($oldversion) {
             }
         }
 
-        upgrade_plugin_savepoint(true, 2019111802, 'tool', 'usertours');
+        upgrade_plugin_savepoint(true, 2020082700, 'tool', 'usertours');
     }
+
+    // Automatically generated Moodle v3.10.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2021051700) {
+        // Updating shipped tours.
+        manager::update_shipped_tours();
+
+        upgrade_plugin_savepoint(true, 2021051700, 'tool', 'usertours');
+    }
+
+    // Automatically generated Moodle v3.11.0 release upgrade line.
+    // Put any upgrade step following this.
 
     return true;
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_spamcleaner', language 'ru', version '3.8'.
+ * Strings for component 'tool_spamcleaner', language 'ru', version '3.11'.
  *
  * @package     tool_spamcleaner
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Очистка от спама';
+$string['privacy:metadata'] = 'Плагин для очистки спама не хранит никаких личных данных.';
 $string['spamauto'] = 'Автоматическое определение распространенных образцов спама.';
 $string['spamcannotdelete'] = 'Невозможно удалить этого пользователя';
 $string['spamcannotfinduser'] = 'Нет пользователей, соответствующих указанным критериям поиска';

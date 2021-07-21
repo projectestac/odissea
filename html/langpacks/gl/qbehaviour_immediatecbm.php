@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_immediatecbm', language 'gl', version '3.8'.
+ * Strings for component 'qbehaviour_immediatecbm', language 'gl', version '3.11'.
  *
  * @package     qbehaviour_immediatecbm
  * @category    string
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Seleccione unha certeza.';
-$string['pluginname'] = 'Comentario inmediato con CBM';
+$string['pluginname'] = 'Comentario inmediato con PCB';
 $string['privacy:metadata'] = 'O engadido de comentario inmediato con PCB non almacena ningún dato persoal.';

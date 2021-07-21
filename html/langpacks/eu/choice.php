@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'eu', version '3.8'.
+ * Strings for component 'choice', language 'eu', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -55,6 +55,7 @@ $string['choicetext'] = 'Kontsultaren testua';
 $string['chooseaction'] = 'Aukeratu ekintza bat...';
 $string['chooseoption'] = 'Aukeratu: {$a}';
 $string['closebeforeopen'] = 'Ezarri duzun itxiera-data hasiera-data baino lehenagokoa da.';
+$string['completiondetail:submit'] = 'Aukera bat egin';
 $string['completionsubmit'] = 'Erakutsi osatu gisa erabiltzaileak aukera bat hautatzen duenean';
 $string['description'] = 'Deskribapena';
 $string['deselectalloption'] = 'Desmarkatu "{$a}" guztiak';
@@ -80,6 +81,7 @@ $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Kontsulta motako
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala kontsultetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Kontsulta jarduerak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea, parte-hartzea besteekin)';
 $string['limit'] = 'Muga';
+$string['limita'] = 'Muga: {$a}';
 $string['limitanswers'] = 'Onar daitezkeen erantzunen kopurua mugatu';
 $string['limitanswers_help'] = 'Aukera honek aukera posible bakoitza zenbat partaidek aukeratu ahal duen mugatzea ahalbidetzen dizu. Muga iristerakoan inork gehiagok ezingo du aukera hori hautatu.
 
@@ -115,6 +117,7 @@ $string['options'] = 'Aukerak';
 $string['page-mod-choice-x'] = 'Kontsulta moduluaren edozein orri';
 $string['pluginadministration'] = 'Kontsultaren kudeaketa';
 $string['pluginname'] = 'Kontsulta';
+$string['previewing'] = 'Hau jarduerarentzako eskuragarri dauden aukeren aurrebista baino ez da. Irekitzen denean aukeratu ahalko duzu.';
 $string['previewonly'] = 'Hau jarduera honetan eskuragarri dauden aukeren aurrebista besterik ez da. Ezingo duzu zure erantzuna bidali {$a}(e)ra arte.';
 $string['privacy'] = 'Emaitzen pribatutasuna';
 $string['privacy:metadata:choice_answers'] = 'Emandako kontsulta-jardueran erabiltzaileak aukeratutako erantzunen inguruko informazioa';
@@ -124,7 +127,7 @@ $string['privacy:metadata:choice_answers:timemodified'] = 'Erabiltzaileak kontsu
 $string['privacy:metadata:choice_answers:userid'] = 'Kontsulta-jarduera hau erantzuten ari den erabiltzailearen IDa';
 $string['publish'] = 'Emaitzak argitaratu';
 $string['publishafteranswer'] = 'Erakutsi emaitzak ikasleari erantzun ondoren';
-$string['publishafterclose'] = 'Erakutsi emaitzak ikasleari bakarrik kontsulta itxi ondoren.';
+$string['publishafterclose'] = 'Erakutsi emaitzak ikasleari soilik kontsulta itxi ondoren.';
 $string['publishalways'] = 'Beti erakutsi emaitzak ikasleari';
 $string['publishanonymous'] = 'Emaitzak anonimoki argitaratu. Ez erakutsi ikasleen izenak.';
 $string['publishinfoanonafter'] = 'Zuk erantzun ondoren erantzun anonimoak publikatuko dira.';
@@ -137,12 +140,15 @@ $string['publishnot'] = 'Ez argitaratu emaitzak ikasleei';
 $string['removemychoice'] = 'Ezabatu nire aukera';
 $string['removeresponses'] = 'Ezabatu erantzun guztiak';
 $string['responses'] = 'Erantzunak';
+$string['responsesa'] = 'Erantzunak: {$a}';
 $string['responsesresultgraphheader'] = 'Erakutsi grafikoa';
 $string['responsesto'] = 'Erantzunak {$a}-(r)entzat';
 $string['results'] = 'Emaitzak';
 $string['savemychoice'] = 'Gorde nire aukera';
 $string['search:activity'] = 'Kontsulta - jardueraren informazioa';
 $string['selectalloption'] = 'Aukeratu "{$a}" guztiak';
+$string['showavailable'] = 'Erakutsi erabilgarri dauden hutsuneak';
+$string['showavailable_help'] = 'Erakutsi partaideei aukera bakoitzaren muga eta une bakoitzean erabilgarri dauden hutsuneak.';
 $string['showpreview'] = 'Erakutsi aurrebista';
 $string['showpreview_help'] = 'Baimendu ikasleek aukeren aurrebista ikustea bidalketak egiteko epea zabalik egon aurretik.';
 $string['showunanswered'] = 'Erakutsi erantzun gabekoen zutabea';

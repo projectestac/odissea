@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'fr', version '3.8'.
+ * Strings for component 'hub', language 'fr', version '3.11'.
  *
  * @package     hub
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activeparticipantnumberaverage'] = 'Nombre moyen de participants récemment actifs ({$a})';
+$string['activeusersnumber'] = 'Nombre d\'utilisateurs récemment actifs ({$a})';
 $string['addscreenshots'] = 'Ajouter des copies d\'écran';
 $string['advertise'] = 'Partager ce cours à l\'inscription de personnes';
 $string['advertised'] = 'Pour que des personnes participent';
@@ -143,13 +145,13 @@ $string['registerwithmoodleorgcomplete'] = 'Terminer l\'enregistrement de votre 
 $string['registerwithmoodleorginfo'] = 'Nous serions heureux de garder le contact et de vous donner des informations importantes au sujet de votre plateforme Moodle ! En enregistrant votre site,
 
 * vous pouvez vous inscrire pour recevoir la notification des nouvelles versions de Moodle, des alertes de sécurité et d\'autres informations importantes ;
-* vous pouvez avoir accès et activer les notifications <i>push</i> pour mobiles à partir de votre site Moodle au moyen de notre app Moodle gratuite ;
+* vous pouvez avoir accès et activer les notifications <em>push</em> pour mobiles à partir de votre site Moodle au moyen de notre app Moodle gratuite ;
 * vous contribuez aux statistiques Moodle de la communauté mondiale, ce qui nous aide à améliorer Moodle et nos sites communautaires ;
 * si vous le désirez, votre site peut être inclus dans la liste des sites Moodle enregistrés de votre pays.';
 $string['registerwithmoodleorginfoapp'] = 'À propos de l\'app Moodle';
 $string['registerwithmoodleorginfosites'] = 'Autres site dans mon pays';
 $string['registerwithmoodleorginfostats'] = 'Statistiques Moodle';
-$string['registerwithmoodleorgremove'] = 'Vous êtes sur le point de retirer l\'enregistrement de votre site. Si vous continuez, vous n\'aurez plus accès aux notifications des nouvelles versions de Moodle, des alertes de sécurité et d\'autres informations importantes. Vos utilisateurs ne pourront plus recevoir de notifications <i>push</i> de votre site sur leur app Moodle. Voulez-vous vraiment retirer l\'enregistrement de votre site ?';
+$string['registerwithmoodleorgremove'] = 'Vous êtes sur le point de retirer l\'enregistrement de votre site. Vous ne recevrez plus les notifications des alertes de sécurité et vos utilisateurs ne recevront plus de notifications <em>push</em> de votre site sur leur app Moodle. Vous pourrez toutefois ré-enregistrer votre site à tout moment. Voulez-vous vraiment retirer l\'enregistrement de votre site ?';
 $string['registerwithmoodleorgupdate'] = 'Mettre à jour l\'enregistrement de votre site';
 $string['registrationconfirmed'] = 'Enregistrement du site confirmé';
 $string['registrationconfirmedon'] = 'Merci pour l\'enregistrement de votre plateforme. Les informations d\'enregistrement sont tenues à jour par la tâche programmée « Enregistrement du site ».';
@@ -163,7 +165,7 @@ $string['screenshots'] = 'Copies d\'écran';
 $string['screenshots_help'] = 'Les copies d\'écran du cours seront affichées dans les résultats de recherche.';
 $string['search'] = 'Recherche';
 $string['sendfollowinginfo'] = 'Plus d\'informations';
-$string['sendfollowinginfo_help'] = 'Les informations suivantes seront envoyées uniquement pour contribuer aux statistiques globales. Aucune de ces informations ne sera rendue publique.';
+$string['sendfollowinginfo_help'] = 'Les informations suivantes seront envoyées à Moodle à chaque fois que l\'enregistrement de votre site sera actualisé (par défaut, chaque semaine, lorsque la tâche programmée « Enregistrement du site » est lancée). Ces informations ne sont utilisées que pour constituer des statistiques globales, et aucune d\'entre elles ne sont rendues publiques.';
 $string['sendingcourse'] = 'Envoi du cours';
 $string['sendingsize'] = 'Veuillez patienter durant l\'envoi du fichier de cours ({$a->total} Mo)…';
 $string['sent'] = '… terminé';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grouping', language 'de', version '3.8'.
+ * Strings for component 'availability_grouping', language 'de', version '3.11'.
  *
  * @package     availability_grouping
  * @category    string
@@ -30,6 +30,6 @@ $string['error_selectgrouping'] = 'Sie müssen eine Gruppierung auswählen.';
 $string['missing'] = '(Fehlende Gruppierung)';
 $string['pluginname'] = 'Voraussetzung: Gruppierung';
 $string['privacy:metadata'] = 'Das Plugin \'Voraussetzung: Gruppierung\' speichert keine personenbezogenen Daten.';
-$string['requires_grouping'] = 'Sie gehören zu einer Gruppe in <strong>{$a}</strong>.';
-$string['requires_notgrouping'] = 'Sie gehören nicht zu einer Gruppe in <strong>{$a}</strong>.';
+$string['requires_grouping'] = 'Sie sind in einer Gruppe in <strong>{$a}</strong>.';
+$string['requires_notgrouping'] = 'Sie sind nicht in einer Gruppe in <strong>{$a}</strong>.';
 $string['title'] = 'Gruppierung';

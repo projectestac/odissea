@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'ca', version '3.8'.
+ * Strings for component 'media', language 'ca', version '3.11'.
  *
  * @package     media
  * @category    string

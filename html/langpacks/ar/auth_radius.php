@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_radius', language 'ar', version '3.8'.
+ * Strings for component 'auth_radius', language 'ar', version '3.11'.
  *
  * @package     auth_radius
  * @category    string
@@ -33,4 +33,4 @@ $string['auth_radiusnasport_key'] = 'منفذ';
 $string['auth_radiussecret'] = 'سر مشترك';
 $string['auth_radiussecret_key'] = 'سر';
 $string['auth_radiustype_key'] = 'التوثيق';
-$string['pluginname'] = 'استخدم خادم ريديص';
+$string['pluginname'] = 'مخدم RADIUS';

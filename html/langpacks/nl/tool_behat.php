@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'nl', version '3.8'.
+ * Strings for component 'tool_behat', language 'nl', version '3.11'.
  *
  * @package     tool_behat
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Deze beheertool helpt ontwikkelaars en testers om .feature-bestanden te maken die de functionaliteit van Moodle beschrijft en ze automatisch laat lopen. De beschikbare definities om in .feature-bestanden te gebruiken zijn hieronder opgelijst.';
 $string['allavailablesteps'] = 'Alle beschikbare stappendefinities';
-$string['errorapproot'] = '$ CFG-> behat_ionic_dirroot verwijst niet naar een geldige Moodle Mobile developer-installatie.';
+$string['errorapproot'] = '$ CFG-> behat_ionic_dirroot verwijst niet naar een geldige Moodle app developer-installatie.';
 $string['errorbehatcommand'] = 'Fout bij het lopen van het behat CLI commando. Probeer manueel "{$a} --help" op de command line te laten lopen om meer informatie over het probleem te verkrijgen.';
 $string['errorcomposer'] = 'Composer dependencies zijn niet geïnstalleerd.';
 $string['errordataroot'] = '$CFG->behat_dataroot is niet ingesteld of is ongeldig.';
@@ -50,5 +50,6 @@ $string['stepsdefinitionstype'] = 'Type';
 $string['theninfo'] = 'Then. Controles die er voor zorgen dat de resultaten zijn wat verwacht wordt.';
 $string['unknownexceptioninfo'] = 'Er was een probleem met Selenium of de browser. Update Selenium tot de laatste versie: Fout:';
 $string['viewsteps'] = 'Filter';
+$string['warndirrootconfigfound'] = 'Er is een configuratiebestand gevonden op {$a}. Dit bestand wordt niet automatisch bijgewerkt en kan oud worden. We raden u aan dit bestand te verwijderen.';
 $string['wheninfo'] = 'Wanneer. Acties die een gebeurtenis veroorzaken';
 $string['wrongbehatsetup'] = 'Er is iets mis met de Behat setup. Daarom kunnen stap-definities niet worden getoond: <b>{$a->errormsg}</b> <br/><br/> Kijk na: <ul><li> $CFG->behat_dataroot, $CFG->behat_prefix en $CFG->behat_wwwroot worden ingesteld in config.php met waarden anders dan die van $CFG->dataroot, $CFG->prefix en $CFG->wwwroot. </li><li> Je liet "{$a->behatinit}" lopen vanuit je Moodlerootmap. </li><li> Dependencies worden geïnstalleerd in vendor / en het {$a->behatcommand} bestand heeft uitvoerrechten. </li></ul>';

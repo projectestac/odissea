@@ -289,7 +289,7 @@ class badge {
 
             // Copy badge image.
             $fs = get_file_storage();
-            if ($file = $fs->get_file($this->get_context()->id, 'badges', 'badgeimage', $this->id, '/', 'f1.png')) {
+            if ($file = $fs->get_file($this->get_context()->id, 'badges', 'badgeimage', $this->id, '/', 'f3.png')) {
                 if ($imagefile = $file->copy_content_to_temp()) {
                     badges_process_badge_image($newbadge, $imagefile);
                 }
@@ -925,17 +925,28 @@ class badge {
     /**
      * Define issuer information by format Open Badges specification version 2.
      *
+     * @param int $obversion OB version to use.
      * @return array Issuer informations of the badge.
      */
-    public function get_badge_issuer() {
-        $issuer = array();
-        $issuer['name'] = $this->issuername;
-        $issuer['url'] = $this->issuerurl;
-        $issuer['email'] = $this->issuercontact;
-        $issuer['@context'] = OPEN_BADGES_V2_CONTEXT;
-        $issueridurl = new moodle_url('/badges/issuer_json.php', array('id' => $this->id));
-        $issuer['id'] = $issueridurl->out(false);
-        $issuer['type'] = OPEN_BADGES_V2_TYPE_ISSUER;
+    public function get_badge_issuer(?int $obversion = null) {
+        global $DB;
+
+        $issuer = [];
+        if ($obversion == OPEN_BADGES_V1) {
+            $data = $DB->get_record('badge', ['id' => $this->id]);
+            $issuer['name'] = $data->issuername;
+            $issuer['url'] = $data->issuerurl;
+            $issuer['email'] = $data->issuercontact;
+        } else {
+            $issuer['name'] = $this->issuername;
+            $issuer['url'] = $this->issuerurl;
+            $issuer['email'] = $this->issuercontact;
+            $issuer['@context'] = OPEN_BADGES_V2_CONTEXT;
+            $issueridurl = new moodle_url('/badges/issuer_json.php', array('id' => $this->id));
+            $issuer['id'] = $issueridurl->out(false);
+            $issuer['type'] = OPEN_BADGES_V2_TYPE_ISSUER;
+        }
+
         return $issuer;
     }
 }

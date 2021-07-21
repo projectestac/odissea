@@ -47,7 +47,7 @@ class question_engine_unit_of_work_test extends data_loading_method_test_base {
     /** @var testable_question_engine_unit_of_work the unit of work we are testing. */
     protected $observer;
 
-    protected function setUp() {
+    protected function setUp(): void {
         // Create a usage in an initial state, with one shortanswer question added,
         // and attempted in interactive mode submitted responses 'toad' then 'frog'.
         // Then set it to use a new unit of work for any subsequent changes.
@@ -64,7 +64,7 @@ class question_engine_unit_of_work_test extends data_loading_method_test_base {
         $this->setup_initial_test_state($this->get_test_data());
      }
 
-    public function tearDown() {
+    public function tearDown(): void {
         question_bank::end_unit_test();
     }
 
@@ -173,7 +173,7 @@ class question_engine_unit_of_work_test extends data_loading_method_test_base {
     public function test_regrade_same_steps() {
 
         // Change the question in a minor way and regrade.
-        $this->quba->get_question($this->slot)->answers[14]->fraction = 0.5;
+        $this->quba->get_question($this->slot, false)->answers[14]->fraction = 0.5;
         $this->quba->regrade_all_questions();
 
         // Here, the qa, and all the steps, should be marked as updated.
@@ -205,7 +205,7 @@ class question_engine_unit_of_work_test extends data_loading_method_test_base {
         // Change the question so that 'toad' is also right, and regrade. This
         // will mean that the try again, and second try states are no longer
         // needed, so they should be dropped.
-        $this->quba->get_question($this->slot)->answers[14]->fraction = 1;
+        $this->quba->get_question($this->slot, false)->answers[14]->fraction = 1;
         $this->quba->regrade_all_questions();
 
         $this->assertEquals(0, count($this->observer->get_attempts_added()));
@@ -253,7 +253,7 @@ class question_engine_unit_of_work_test extends data_loading_method_test_base {
         $this->quba->process_action($this->slot, array('answer' => 'frog', '-submit' => 1));
         $this->quba->finish_all_questions();
 
-        $this->quba->get_question($this->slot)->answers[14]->fraction = 1;
+        $this->quba->get_question($this->slot, false)->answers[14]->fraction = 1;
         $this->quba->regrade_all_questions();
 
         $this->assertEquals(0, count($this->observer->get_attempts_added()));
@@ -363,7 +363,7 @@ class question_engine_unit_of_work_test extends data_loading_method_test_base {
 
     public function test_set_max_mark() {
         $this->quba->set_max_mark($this->slot, 6.0);
-        $this->assertEquals(4.0, $this->quba->get_total_mark(), '', 0.0000005);
+        $this->assertEqualsWithDelta(4.0, $this->quba->get_total_mark(), 0.0000005);
 
         $this->assertEquals(0, count($this->observer->get_attempts_added()));
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'de', version '3.8'.
+ * Strings for component 'quiz_grading', language 'de', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(bewertet)';
 $string['gradenextungraded'] = 'Die nächsten {$a} unbewerten Versuche bewerten';
 $string['gradeungraded'] = 'Unbewertete Versuche ({$a}) jetzt bewerten';
 $string['grading'] = 'Manuelle Bewertung';
-$string['grading:componentname'] = 'Bericht zur manuellen Bewertung';
 $string['grading:viewidnumber'] = 'Teilnehmer-ID beim Bewerten anzeigen';
 $string['grading:viewstudentnames'] = 'Teilnehmername beim Bewerten anzeigen';
 $string['gradingall'] = 'Alle Bewertungen ({$a}) für diese Frage';
@@ -71,7 +70,8 @@ $string['nothingfound'] = 'Nichts anzuzeigen';
 $string['options'] = 'Optionen';
 $string['orderattempts'] = 'Versuche ordnen';
 $string['pluginname'] = 'Manuelle Bewertung';
-$string['privacy:metadata'] = 'Das Plugin für die manuelle Bewertung von Testfragen speichert keine personenbezogenen Daten. Es ist eine Nutzerschnittstelle zur Ansicht von Daten.';
+$string['privacy:preference:order'] = 'In welcher Sortierung sollen die Versuche angezeigt werden, die auf eine Bewertung warten?';
+$string['privacy:preference:pagesize'] = 'Wie viele Versuche sollen auf jeder Seite in der Bewertungsoberfläche angezeigt werden?';
 $string['qno'] = 'F #';
 $string['questionname'] = 'Fragename';
 $string['questionsperpage'] = 'Fragen pro Seite';

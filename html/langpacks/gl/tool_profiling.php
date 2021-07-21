@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'gl', version '3.8'.
+ * Strings for component 'tool_profiling', language 'gl', version '3.11'.
  *
  * @package     tool_profiling
  * @category    string
@@ -26,14 +26,14 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calls'] = 'Chamadas a funcións';
-$string['cannotfindanyrunforrunid'] = 'Non é posíbel atopar a execución de perfilado «{$a}»';
-$string['cannotfindanyrunforurl'] = 'Non é posíbel atopar a execución de perfilado para o URL «{$a}»';
+$string['cannotfindanyrunforrunid'] = 'Vaites, non é posíbel atopar a execución de perfilado «{$a}»';
+$string['cannotfindanyrunforurl'] = 'Vaites, non é posíbel atopar a execución de perfilado para o URL «{$a}»';
 $string['comment'] = 'Comentario';
 $string['cputime'] = 'Tempo de CPU';
 $string['differencesbetween2runsof'] = 'Diferencias entre dúas execucións de {$a}';
 $string['executiontime'] = 'Tempo de execución';
 $string['export'] = 'Exportar';
-$string['exportproblem'] = 'Xurdiron algúns problemas ao exportar a execución de perfilado «{$a->runid}» correspondente  á petición «{$a->listurl}».';
+$string['exportproblem'] = 'Xurdiron algúns problemas ao exportar a execución de perfilado «{$a->runid}» correspondente ao pedimento «{$a->listurl}».';
 $string['exportthis'] = 'Exportar esta execución de perfilado';
 $string['import'] = 'Importar';
 $string['importok'] = 'O ficheiro «{$a}» foi exportado correctamente';

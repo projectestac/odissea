@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'ja', version '3.8'.
+ * Strings for component 'quizaccess_timelimit', language 'ja', version '3.11'.
  *
  * @package     quizaccess_timelimit
  * @category    string

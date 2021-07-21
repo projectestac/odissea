@@ -47,60 +47,6 @@ function xmldb_forum_upgrade($oldversion) {
 
     $dbman = $DB->get_manager(); // Loads ddl manager and xmldb classes.
 
-    // Automatically generated Moodle v3.3.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2017092200) {
-
-        // Remove duplicate entries from forum_subscriptions.
-        // Find records with multiple userid/forum combinations and find the highest ID.
-        // Later we will remove all those entries.
-        $sql = "
-            SELECT MIN(id) as minid, userid, forum
-            FROM {forum_subscriptions}
-            GROUP BY userid, forum
-            HAVING COUNT(id) > 1";
-
-        if ($duplicatedrows = $DB->get_recordset_sql($sql)) {
-            foreach ($duplicatedrows as $row) {
-                $DB->delete_records_select('forum_subscriptions',
-                    'userid = :userid AND forum = :forum AND id <> :minid', (array)$row);
-            }
-        }
-        $duplicatedrows->close();
-
-        // Define key useridforum (primary) to be added to forum_subscriptions.
-        $table = new xmldb_table('forum_subscriptions');
-        $key = new xmldb_key('useridforum', XMLDB_KEY_UNIQUE, array('userid', 'forum'));
-
-        // Launch add key useridforum.
-        $dbman->add_key($table, $key);
-
-        // Forum savepoint reached.
-        upgrade_mod_savepoint(true, 2017092200, 'forum');
-    }
-
-    // Automatically generated Moodle v3.4.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2018032900) {
-
-        // Define field deleted to be added to forum_posts.
-        $table = new xmldb_table('forum_posts');
-        $field = new xmldb_field('deleted', XMLDB_TYPE_INTEGER, '1', null, XMLDB_NOTNULL, null, '0', 'mailnow');
-
-        // Conditionally launch add field deleted.
-        if (!$dbman->field_exists($table, $field)) {
-            $dbman->add_field($table, $field);
-        }
-
-        // Forum savepoint reached.
-        upgrade_mod_savepoint(true, 2018032900, 'forum');
-    }
-
-    // Automatically generated Moodle v3.5.0 release upgrade line.
-    // Put any upgrade step following this.
-
     // Automatically generated Moodle v3.6.0 release upgrade line.
     // Put any upgrade step following this.
 
@@ -294,7 +240,10 @@ function xmldb_forum_upgrade($oldversion) {
         upgrade_mod_savepoint(true, 2019111801, 'forum');
     }
 
-    if ($oldversion < 2019111802) {
+    // Automatically generated Moodle v3.9.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2020072100) {
         // Add index privatereplyto (not unique) to the forum_posts table.
         $table = new xmldb_table('forum_posts');
         $index = new xmldb_index('privatereplyto', XMLDB_INDEX_NOTUNIQUE, ['privatereplyto']);
@@ -303,8 +252,14 @@ function xmldb_forum_upgrade($oldversion) {
             $dbman->add_index($table, $index);
         }
 
-        upgrade_mod_savepoint(true, 2019111802, 'forum');
+        upgrade_mod_savepoint(true, 2020072100, 'forum');
     }
+
+    // Automatically generated Moodle v3.10.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.11.0 release upgrade line.
+    // Put any upgrade step following this.
 
     return true;
 }

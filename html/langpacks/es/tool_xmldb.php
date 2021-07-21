@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'es', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'es', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -132,7 +132,6 @@ $string['newtable'] = 'Nueva tabla';
 $string['newtablefrommysql'] = 'Nueva tabla desde MySQL';
 $string['nofieldsspecified'] = 'No se ha especificado ningún campo';
 $string['nomasterprimaryuniquefound'] = 'La(s) columna(s) a las que hace referencia su clave externa deben ser incluidas en una clave principal o única en la tabla de referencia. Tenga en cuenta que la columna que está en un índice único no es suficientemente buena.';
-$string['nomissingindexesfound'] = 'No se han encontrado índices ausentes: su BD no requiere acciones adicionales.';
 $string['noreffieldsspecified'] = 'No se han especificado campos de referencia';
 $string['noreftablespecified'] = 'La tabla de referencia especificada no se encontró';
 $string['noviolatedforeignkeysfound'] = 'No se han encontrado claves externas violadas';

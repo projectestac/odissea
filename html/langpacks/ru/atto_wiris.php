@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_wiris', language 'ru', version '3.8'.
+ * Strings for component 'atto_wiris', language 'ru', version '3.11'.
  *
  * @package     atto_wiris
  * @category    string
@@ -26,6 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'WIRIS-плагин для Atto';
-$string['wiris_cas_title'] = 'Калькулятор';
 $string['wiris_chem_editor_title'] = 'Редактор химических формул';
 $string['wiris_editor_title'] = 'Математический редактор';

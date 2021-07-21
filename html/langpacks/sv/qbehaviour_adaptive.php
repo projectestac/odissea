@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_adaptive', language 'sv', version '3.8'.
+ * Strings for component 'qbehaviour_adaptive', language 'sv', version '3.11'.
  *
  * @package     qbehaviour_adaptive
  * @category    string
@@ -37,3 +37,4 @@ $string['gradingdetailswithpenalty'] = 'Betyg för den här inlämningen: {$a->r
 $string['gradingdetailswithtotalpenalty'] = 'Betyg för den här inlämningen: {$a->raw}/{$a->max}. Denna inlämning ledde till ett avdrag på {$a->penalty}. Totalt avdrag hittills: {$a->totalpenalty}.';
 $string['notcomplete'] = 'Ofullständig';
 $string['pluginname'] = 'Adaptivt läge';
+$string['privacy:metadata'] = 'Pluginmodulen Adaptivt läge-frågebeteende lagrar ingen personinformation.';

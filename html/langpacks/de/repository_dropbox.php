@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_dropbox', language 'de', version '3.8'.
+ * Strings for component 'repository_dropbox', language 'de', version '3.11'.
  *
  * @package     repository_dropbox
  * @category    string
@@ -32,7 +32,7 @@ $string['configplugin'] = 'Einstellungen für Dropbox';
 $string['crontask'] = 'Hintergrundprozess für Dropbox Repository';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Dropbox-Dateien anzeigen';
-$string['instruction'] = 'Sie erhalten API Key und Secret von: <a href="http://www.dropbox.com/developers/apps">Dropbox Developers</a>. Bei der Beantragung wählen Sie bitte "Full Dropbox" als "Access level".';
+$string['instruction'] = 'Sie erhalten API Key und Secret von <a href="https://www.dropbox.com/developers/apps">Dropbox Developers</a>. Bei der Beantragung wählen Sie bitte "Full Dropbox" als "Access level" aus.';
 $string['logoutdesc'] = '(Ausloggen wenn die Nutzung von Dropbox abgeschlossen wird)';
 $string['notitle'] = 'unbenannt';
 $string['oauth2redirecturi'] = 'OAuth2  Redirect URI';

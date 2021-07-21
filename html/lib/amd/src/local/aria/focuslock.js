@@ -20,14 +20,10 @@
  * https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html
  *
  * @module     core/tablock
- * @class      tablock
- * @package    core
  * @copyright  2019 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-const selectors = {
-    focusable: 'input:not([type="hidden"]), a[href], button, textarea, select, [tabindex]',
-};
+import Selectors from './selectors';
 
 const lockRegionStack = [];
 const initialFocusElementStack = [];
@@ -50,6 +46,7 @@ let isLocked = false;
  * This gives us a solution which supports focus locking of any kind, which loops in both directions, and which
  * prevents the lock from escaping the modal entirely.
  *
+ * @method
  * @param {Event} event The event from the focus change
  */
 const lockHandler = event => {
@@ -80,6 +77,7 @@ const lockHandler = event => {
 /**
  * Focus the first descendant of the current lock region.
  *
+ * @method
  * @returns {Bool} Whether a node was focused
  */
 const focusFirstDescendant = () => {
@@ -90,7 +88,7 @@ const focusFirstDescendant = () => {
     // For example, a disabled text area cannot be focused, and it becomes difficult to provide a decent query selector
     // to capture this.
     // The use of Array.some just ensures that we stop as soon as we have a successful focus.
-    const focusableElements = Array.from(lockRegion.querySelectorAll(selectors.focusable));
+    const focusableElements = Array.from(lockRegion.querySelectorAll(Selectors.elements.focusable));
 
     // The lock region itself may be focusable. This is particularly true on Moodle's older dialogues.
     // We must include it in the calculation of descendants to ensure that looping works correctly.
@@ -101,6 +99,7 @@ const focusFirstDescendant = () => {
 /**
  * Focus the last descendant of the current lock region.
  *
+ * @method
  * @returns {Bool} Whether a node was focused
  */
 const focusLastDescendant = () => {
@@ -111,7 +110,7 @@ const focusLastDescendant = () => {
     // For example, a disabled text area cannot be focused, and it becomes difficult to provide a decent query selector
     // to capture this.
     // The use of Array.some just ensures that we stop as soon as we have a successful focus.
-    const focusableElements = Array.from(lockRegion.querySelectorAll(selectors.focusable)).reverse();
+    const focusableElements = Array.from(lockRegion.querySelectorAll(Selectors.elements.focusable)).reverse();
 
     // The lock region itself may be focusable. This is particularly true on Moodle's older dialogues.
     // We must include it in the calculation of descendants to ensure that looping works correctly.
@@ -125,6 +124,7 @@ const focusLastDescendant = () => {
  *
  * Note: This example is a wholesale copy of the WCAG example.
  *
+ * @method
  * @param {HTMLElement} focusTarget
  * @returns {Bool}
  */
@@ -156,6 +156,7 @@ const isFocusable = focusTarget => {
  *
  * Note: This example is a heavily inspired by the WCAG example.
  *
+ * @method
  * @param {HTMLElement} focusTarget
  * @returns {Bool} Whether focus was successful o rnot.
  */
@@ -183,6 +184,7 @@ const attemptFocus = focusTarget => {
 /**
  * Get the current lock region from the top of the stack.
  *
+ * @method
  * @returns {HTMLElement}
  */
 const getCurrentLockRegion = () => {
@@ -192,6 +194,7 @@ const getCurrentLockRegion = () => {
 /**
  * Add a new lock region to the stack.
  *
+ * @method
  * @param {HTMLElement} newLockRegion
  */
 const addLockRegionToStack = newLockRegion => {
@@ -223,6 +226,8 @@ const addLockRegionToStack = newLockRegion => {
 
 /**
  * Remove the top lock region from the stack.
+ *
+ * @method
  */
 const removeLastLockRegionFromStack = () => {
     // Take the top element off the stack, and replce the current lockRegion value.
@@ -253,6 +258,7 @@ const hasTrappedRegionsInStack = () => {
 /**
  * Start trapping the focus and lock it to the specified newLockRegion.
  *
+ * @method
  * @param {HTMLElement} newLockRegion The container to lock focus to
  */
 export const trapFocus = newLockRegion => {
@@ -286,6 +292,8 @@ export const trapFocus = newLockRegion => {
 
 /**
  * Stop trapping the focus.
+ *
+ * @method
  */
 export const untrapFocus = () => {
     // Remove the top region from the stack.

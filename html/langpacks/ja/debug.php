@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ja', version '3.8'.
+ * Strings for component 'debug', language 'ja', version '3.11'.
  *
  * @package     debug
  * @category    string
@@ -41,7 +41,7 @@ $string['invalideventdata'] = '正しくないイベントデータが送信さ�
 $string['invalidparameter'] = '無効なパラメータ値が検出されました。';
 $string['invalidresponse'] = '無効なレスポンス値が検知されました。';
 $string['line'] = '行';
-$string['missingconfigversion'] = 'configテーブルにバージョンが含まれていません。申し訳ございません、続けることはできません。';
+$string['missingconfigversion'] = 'configテーブルにバージョンが含まれていません。あなたは続けることはできません。';
 $string['modulenotexist'] = '{$a} モジュールがありません。';
 $string['morethanonerecordinfetch'] = 'fetch() で2レコード以上のレコードが見つかりました!';
 $string['mustbeoveride'] = '抽象メソッド {$a} はオーバーライドする必要があります。';

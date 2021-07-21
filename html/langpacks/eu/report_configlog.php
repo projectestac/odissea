@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_configlog', language 'eu', version '3.8'.
+ * Strings for component 'report_configlog', language 'eu', version '3.11'.
  *
  * @package     report_configlog
  * @category    string
@@ -26,10 +26,17 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configlog'] = 'Aldaketak ezarpenetan';
-$string['oldvalue'] = 'Jatorrizko balioa';
+$string['datefrom'] = 'Hasiera-data';
+$string['dateto'] = 'Amaiera-data';
 $string['plugin'] = 'Plugina';
 $string['pluginname'] = 'Konfigurazio-aldaketak';
 $string['privacy:metadata'] = 'Konfigurazio-aldaketak pluginak ez du datu pertsonalik biltzen.';
 $string['setting'] = 'Ezarpenak';
 $string['timemodified'] = 'Data';
-$string['value'] = 'Balio berria';
+$string['user'] = 'Erabiltzailea';
+$string['user_help'] = 'Bilatu erabiltzailearen izena edo abizenaren arabera';
+$string['usernone'] = 'CLI edo instalazioa';
+$string['value'] = 'Balioa';
+$string['value_help'] = 'Bilatu konfigurazioko balio original edo berriaren arabera';
+$string['valuenew'] = 'Balio berria';
+$string['valueold'] = 'Jatorrizko balioa';

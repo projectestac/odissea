@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'de', version '3.8'.
+ * Strings for component 'block_myoverview', language 'de', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addtofavourites'] = 'Diesen Kurs als Favorit markieren';
+$string['addtofavourites'] = 'Kurs als Favorit markieren';
 $string['all'] = 'Alle (außer aus Ansicht entfernte)';
 $string['allincludinghidden'] = 'Alle';
 $string['aria:addtofavourites'] = 'Markierung für';
@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = 'Kurse nach letztem Zugriffsdatum anzeigen';
 $string['aria:list'] = 'Zur Listenansicht wechseln';
 $string['aria:past'] = 'Vergangene Kurse anzeigen';
 $string['aria:removefromfavourites'] = 'Markierung als favorisierten Kurs entfernen';
+$string['aria:shortname'] = 'Kurse nach Kurznamen sortieren';
 $string['aria:showcourse'] = '{$a} anzeigen';
 $string['aria:sortingdropdown'] = 'Dropdown-Menü für die Sortierung';
 $string['aria:summary'] = 'Zur Beschreibungsansicht wechseln';
@@ -62,45 +63,30 @@ $string['courseprogress'] = 'Kursfortschritt:';
 $string['customfield'] = 'Kursfeld';
 $string['customfiltergrouping'] = 'Kursfeld';
 $string['customfiltergrouping_nofields'] = 'Für diese Option muss ein benutzerdefiniertes Kursfeld eingerichtet und für alle sichtbar sein.';
-$string['defaulttab'] = 'Standard-Tab';
-$string['defaulttab_desc'] = 'Der ausgewählte Tab wird Nutzer/innen standardmäßig angezeigt, wenn sie zum ersten Mal ihre Kursübersicht sehen. Der zuletzt geöffnete Tab wird angezeigt, wenn Nutzer/innen zu ihrer Kursüberricht zurückkehren.';
 $string['displaycategories'] = 'Kursbereiche anzeigen';
 $string['displaycategories_help'] = 'Zeige die Kurskategorie auf den Kurspositionen des Dashboards, einschließlich Karten, Listen- und Übersichteinträgen an.';
 $string['favourites'] = 'Favoriten';
 $string['future'] = 'Künftige';
 $string['hidden'] = 'Aus der Ansicht entfernte Kurse';
 $string['hiddencourses'] = 'Aus Ansicht entfernte';
-$string['hidecourse'] = 'Aus Darstellung entfernen';
+$string['hidecourse'] = 'Kurs aus Ansicht entfernen';
 $string['inprogress'] = 'Laufende';
 $string['lastaccessed'] = 'Letzter Zugriff';
 $string['layouts'] = 'Verfügbare Layouts';
 $string['layouts_help'] = 'Layouts für die Kursübersicht, die den Benutzern zur Auswahl stehen. Wenn keine ausgewählt sind, wird das Kartenlayout verwendet.';
 $string['list'] = 'Liste';
-$string['morecourses'] = 'Weitere Kurse';
 $string['myoverview:myaddinstance'] = 'Neuen Block \'Kursübersicht\' zum Dashboard hinzufügen';
-$string['next30days'] = 'Nächste 30 Tage';
-$string['next7days'] = 'Nächste 7 Tage';
 $string['nocourses'] = 'Keine Kurse';
-$string['nocoursesfuture'] = 'Keine künftigen Kurse';
-$string['nocoursesinprogress'] = 'Keine laufenden Kurse';
-$string['nocoursespast'] = 'Keine vergangenen Kurse';
 $string['nocustomvalue'] = 'Kein {$a}';
-$string['noevents'] = 'Keine anstehenden Aktivitäten fällig';
 $string['past'] = 'Vergangene';
 $string['pluginname'] = 'Kursübersicht';
 $string['privacy:metadata:overviewgroupingpreference'] = 'Präferenz zur Gruppierung in Kursübersicht';
-$string['privacy:metadata:overviewlasttab'] = 'Speichert den letzten ausgewählten Tab des Nutzers im Übersichtsblock';
 $string['privacy:metadata:overviewpagingpreference'] = 'Einstellung für die Nummerierung im Block \'Kursübersicht\'';
 $string['privacy:metadata:overviewsortpreference'] = 'Präferenz zur Sortierung in Kursübersicht';
 $string['privacy:metadata:overviewviewpreference'] = 'Präferenz zur Anzeige in Kursübersicht';
 $string['privacy:request:preference:set'] = 'Der Wert der Einstellung \'{$a->name}\' war \'{$a->value}\'';
-$string['recentlyoverdue'] = 'Kürzlich überfällig';
 $string['removefromfavourites'] = 'Kurs aus den Favoriten entfernen';
-$string['show'] = 'Erneut anzeigen';
-$string['sortbycourses'] = 'Nach Kursen sortieren';
-$string['sortbydates'] = 'Nach Datum sortieren';
+$string['shortname'] = 'Kurzname';
+$string['show'] = 'Kurs in Ansicht anzeigen';
 $string['summary'] = 'Beschreibung';
-$string['timeline'] = 'Zeitliche Übersicht';
 $string['title'] = 'Kursname';
-$string['viewcourse'] = 'Kurs anzeigen';
-$string['viewcoursename'] = 'Zum Kurs {$a}';

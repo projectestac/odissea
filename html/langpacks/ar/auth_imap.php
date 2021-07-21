@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_imap', language 'ar', version '3.8'.
+ * Strings for component 'auth_imap', language 'ar', version '3.11'.
  *
  * @package     auth_imap
  * @category    string
@@ -33,5 +33,5 @@ $string['auth_imapport'] = 'رقم منفذ مزود IMAP . يكون في الغ
 $string['auth_imapport_key'] = 'منفذ';
 $string['auth_imaptype'] = 'نوع مزود IMAP . من الممكن لمزودات IMAP أن تكون لديها أنواع مختلفة من التوثيق والتفاوض.';
 $string['auth_imaptype_key'] = 'نوع';
-$string['pluginname'] = 'استخدم مزود IMAP';
+$string['pluginname'] = 'مخدم IMAP';
 $string['privacy:metadata'] = 'إن ملحق مصادقة مخدم IMAP لا يخزن أي بيانات شخصية.';

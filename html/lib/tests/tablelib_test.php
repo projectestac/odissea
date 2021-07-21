@@ -142,7 +142,7 @@ class core_tablelib_testcase extends advanced_testcase {
         $headers = $this->generate_headers(2);
 
         // Search for pagination controls containing 'page-link"\saria-label="Next"'.
-        $this->expectOutputRegex('/page-link"\saria-label="Next"/');
+        $this->expectOutputRegex('/page-link"\saria-label="Next page"/');
 
         $this->run_table_test(
             $columns,
@@ -198,7 +198,7 @@ class core_tablelib_testcase extends advanced_testcase {
         );
         $output = ob_get_contents();
         ob_end_clean();
-        $this->assertNotContains(get_string('hide'), $output);
+        $this->assertStringNotContainsString(get_string('hide'), $output);
     }
 
     public function test_has_sort() {
@@ -243,7 +243,7 @@ class core_tablelib_testcase extends advanced_testcase {
         );
         $output = ob_get_contents();
         ob_end_clean();
-        $this->assertNotContains(get_string('sortby'), $output);
+        $this->assertStringNotContainsString(get_string('sortby'), $output);
     }
 
     public function test_has_not_next_pagination() {
@@ -268,7 +268,7 @@ class core_tablelib_testcase extends advanced_testcase {
 
         $output = ob_get_contents();
         ob_end_clean();
-        $this->assertNotContains(get_string('next'), $output);
+        $this->assertStringNotContainsString(get_string('next'), $output);
     }
 
     public function test_1_col() {
@@ -382,7 +382,7 @@ class core_tablelib_testcase extends advanced_testcase {
         $user = $this->getDataGenerator()->create_user();
 
         $table = $this->create_and_setup_table(['fullname'], [], true, false, [], []);
-        $this->assertContains(fullname($user, true), $table->format_row($user)['fullname']);
+        $this->assertStringContainsString(fullname($user, true), $table->format_row($user)['fullname']);
     }
 
     /**
@@ -410,7 +410,7 @@ class core_tablelib_testcase extends advanced_testcase {
         $user = $this->getDataGenerator()->create_user();
 
         $table = $this->create_and_setup_table(['fullname'], [], true, false, [], []);
-        $this->assertContains(fullname($user, false), $table->format_row($user)['fullname']);
+        $this->assertStringContainsString(fullname($user, false), $table->format_row($user)['fullname']);
     }
 
     public function test_get_row_html() {
@@ -425,9 +425,9 @@ class core_tablelib_testcase extends advanced_testcase {
         $table->define_baseurl('/invalid.php');
 
         $row = $table->get_row_html($data);
-        $this->assertRegExp('/row 0 col 0/', $row);
-        $this->assertRegExp('/<tr class=""/', $row);
-        $this->assertRegExp('/<td class="cell c0"/', $row);
+        $this->assertMatchesRegularExpression('/row 0 col 0/', $row);
+        $this->assertMatchesRegularExpression('/<tr class=""/', $row);
+        $this->assertMatchesRegularExpression('/<td class="cell c0"/', $row);
     }
 
     public function test_persistent_table() {
@@ -699,6 +699,93 @@ class core_tablelib_testcase extends advanced_testcase {
         ob_end_clean();
 
         $this->assertEquals("Col1,Col2,Col3\na,b,c\n", substr($output, 3));
+    }
+
+    /**
+     * Test the initials functionality.
+     *
+     * @dataProvider initials_provider
+     * @param string|null $getvalue
+     * @param string|null $setvalue
+     * @param string|null $finalvalue
+     */
+    public function test_initials_first_set(?string $getvalue, ?string $setvalue, ?string $finalvalue): void {
+        global $_GET;
+
+        $this->resetAfterTest(true);
+
+        $table = new flexible_table('tablelib_test');
+
+        $user = $this->getDataGenerator()->create_user();
+
+        $table->define_columns(['fullname']);
+        $table->define_headers(['Fullname']);
+        $table->define_baseurl('/invalid.php');
+        $table->initialbars(true);
+
+        if ($getvalue !== null) {
+            $_GET['tifirst'] = $getvalue;
+        }
+
+        if ($setvalue !== null) {
+            $table->set_first_initial($setvalue);
+        }
+
+        $table->setup();
+
+        $this->assertEquals($finalvalue, $table->get_initial_first());
+    }
+
+    /**
+     * Test the initials functionality.
+     *
+     * @dataProvider initials_provider
+     * @param string|null $getvalue
+     * @param string|null $setvalue
+     * @param string|null $finalvalue
+     */
+    public function test_initials_last_set(?string $getvalue, ?string $setvalue, ?string $finalvalue): void {
+        global $_GET;
+
+        $this->resetAfterTest(true);
+
+        $table = new flexible_table('tablelib_test');
+
+        $user = $this->getDataGenerator()->create_user();
+
+        $table->define_columns(['fullname']);
+        $table->define_headers(['Fullname']);
+        $table->define_baseurl('/invalid.php');
+        $table->initialbars(true);
+
+        if ($getvalue !== null) {
+            $_GET['tilast'] = $getvalue;
+        }
+
+        if ($setvalue !== null) {
+            $table->set_last_initial($setvalue);
+        }
+
+        $table->setup();
+
+        $this->assertEquals($finalvalue, $table->get_initial_last());
+    }
+
+    /**
+     * Data for testing initials providers.
+     *
+     * @return array
+     */
+    public function initials_provider(): array {
+        return [
+            [null, null, null],
+            ['A', null, 'A'],
+            ['Z', null, 'Z'],
+            [null, 'A', 'A'],
+            [null, 'Z', 'Z'],
+            ['A', 'Z', 'Z'],
+            ['Z', 'A', 'A'],
+        ];
     }
 
 }

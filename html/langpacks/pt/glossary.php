@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'pt', version '3.8'.
+ * Strings for component 'glossary', language 'pt', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -90,6 +90,7 @@ $string['commentdeleted'] = 'O comentário foi apagado';
 $string['comments'] = 'Comentários';
 $string['commentson'] = 'Comentários sobre';
 $string['commentupdated'] = 'O comentário foi atualizado';
+$string['completiondetail:entries'] = 'Adicionar entradas: {$a}';
 $string['completionentries'] = 'Número de termos que os alunos têm de criar:';
 $string['completionentriesdesc'] = 'O aluno deve criar pelo menos {$a} entrada(s)';
 $string['completionentriesgroup'] = 'Número de termos exigido';
@@ -312,7 +313,7 @@ $string['showall_help'] = 'Se ativar esta opção, os participantes podem consul
 $string['showalphabet'] = 'Mostrar hiperligações para o alfabeto';
 $string['showalphabet_help'] = 'Se ativar esta opção, os participantes podem consultar os termos por letra inicial.';
 $string['showspecial'] = 'Mostrar a hiperligação Especial';
-$string['showspecial_help'] = 'Se ativar esta opção, os participantes podem pesquisar os termos iniciados por carateres especiais como @ e #.';
+$string['showspecial_help'] = 'Se ativar esta opção, os participantes podem pesquisar os termos iniciados por caracteres especiais, tais como @ e #.';
 $string['sortby'] = 'Ordenar por';
 $string['sortbycreation'] = 'Por data de criação';
 $string['sortbylastupdate'] = 'Por última atualização';

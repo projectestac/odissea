@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'sv', version '3.8'.
+ * Strings for component 'course', language 'sv', version '3.11'.
  *
  * @package     course
  * @category    string
@@ -25,11 +25,42 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitychooseractivefooter'] = 'Sidfot i aktivitetsväljaren';
+$string['activitychooseractivefooter_desc'] = 'Aktivitetsväljaren har stöd för pluginmoduler som lägger till objekt i sidfoten.';
+$string['activitychoosercategory'] = 'Aktivitetsväljare';
+$string['activitychooserhidefooter'] = 'Ingen sidfot';
+$string['activitychooserrecommendations'] = 'Rekommenderade aktiviteter';
+$string['activitychoosersettings'] = 'Inställningar för aktivitetsväljaren';
+$string['activitychoosertabmode'] = 'Flikar i aktivitetsväljaren';
+$string['activitychoosertabmode_desc'] = 'Aktivitetsväljaren gör det möjligt för lärare att enkelt välja de aktiviteter och resurser de vill lägga till i deras kurs. Denna inställning avgör vilka flikar som ska visas i aktivitetsväljaren. Tänk på att fliken för favoritmärkta aktiviteter är synlig för en användare enbart om användaren favoritmärkt en eller flera aktiviteter. Likaså är fliken som visar rekommenderade aktiviteter enbart synlig om sajtens administratör angivit några rekommenderade aktiviteter.';
+$string['activitychoosertabmodeone'] = 'Favoritmärkta, Alla, Aktiviteter, Resurser, Rekommenderade';
+$string['activitychoosertabmodethree'] = 'Favoritmärkta, Aktiviteter, Resurser, Rekommenderade';
+$string['activitychoosertabmodetwo'] = 'Favoritmärkta, Alla, Rekommenderade';
+$string['activitydate:closed'] = 'Stängdes:';
+$string['activitydate:closes'] = 'Stänger:';
+$string['activitydate:opened'] = 'Öppnades:';
+$string['activitydate:opens'] = 'Öppnar:';
 $string['aria:coursecategory'] = 'Kurskategori';
 $string['aria:courseimage'] = 'Kursbild';
 $string['aria:coursename'] = 'Kursnamn';
 $string['aria:courseshortname'] = 'Kortnamn för kurs';
+$string['aria:defaulttab'] = 'Förvalda aktiviteter';
 $string['aria:favourite'] = 'Kursen är favoritmärkt';
+$string['aria:favouritestab'] = 'Favoritmärkta aktiviteter';
+$string['aria:modulefavourite'] = 'Markera aktiviteten {$a} som favorit';
+$string['aria:recommendedtab'] = 'Rekommenderade aktiviteter';
+$string['completion_automatic:done'] = 'Slutförd:';
+$string['completion_automatic:failed'] = 'Underkänd:';
+$string['completion_automatic:todo'] = 'Att göra:';
+$string['completion_manual:aria:done'] = '{$a} är markerad som slutförd. Tryck för att ångra.';
+$string['completion_manual:aria:markdone'] = 'Markera {$a} som slutförd';
+$string['completion_manual:done'] = 'Slutförd';
+$string['completion_manual:markdone'] = 'Markera som slutförd';
+$string['completion_setby:auto:done'] = 'Klar: {$a->condition} (satt av {$a->setby})';
+$string['completion_setby:auto:todo'] = 'Att göra: {$a->condition} (satt av {$a->setby})';
+$string['completion_setby:manual:done'] = '{$a->activityname} har markerats som slutförd av {$a->setby}. Tryck för att ångra.';
+$string['completion_setby:manual:markdone'] = '{$a->activityname} har markerats som ej slutförd av {$a->setby}. Tryck för att ångra.';
+$string['completionrequirements'] = 'Slutförandevillkor för <b>{$a}</b>';
 $string['coursealreadyfinished'] = 'Kursen är redan avslutad';
 $string['coursenotyetfinished'] = 'Kursen har inte avslutats ännu';
 $string['coursenotyetstarted'] = 'Kursen har inte börjat';
@@ -41,27 +72,43 @@ $string['customfield_visibility'] = 'Synlig för';
 $string['customfield_visibility_help'] = 'Denna inställning bestämmer vem som kan se namnet på det anpassade fältet i listan över kurser eller i filtret för anpassade fält i översikten.';
 $string['customfield_visibletoall'] = 'Alla';
 $string['customfield_visibletoteachers'] = 'Lärare';
-$string['customfieldsettings'] = 'Gemensamma inställningar för anpassade fält';
+$string['customfieldsettings'] = 'Grundläggande inställningar för anpassade fält';
+$string['downloadcourseconfirmation'] = 'Du håller på att ladda ned en ZIP-fil med kursinnehåll (exklusive objekt som inte går att ladda ned samt filer större än {$a}).';
+$string['downloadcoursecontent'] = 'Ladda ned kursinnehåll';
+$string['downloadcoursecontent_help'] = 'Den här inställningen avgör om kursinnehållet får hämtas av användare med behörighet att ladda ned kursinnehåll (som standard användare med rollen student eller lärare).';
+$string['enabledownloadcoursecontent'] = 'Tillåt nedladdning av kursinnehåll';
 $string['errorendbeforestart'] = 'Kursens slutdatum ({$a}) inträffar före kursens startdatum.';
 $string['favourite'] = 'Favoritmärkt kurs';
-$string['gradetopassnotset'] = 'För denna kurs finns ingen inställning gjord för vilka betyg som krävs för att bli godkänd. Detta kan ställas in i betygskomponenten för kursen (Inställningar för betygsbok).';
+$string['gradetopassnotset'] = 'För denna kurs finns ingen inställning gjord för vilka betyg som krävs för att bli godkänd. Detta kan ställas in i betygsobjektet i kursen (Inställningar för betygsbok).';
+$string['informationformodule'] = 'Information om {$a}-aktiviteten';
+$string['module'] = 'Aktivitet';
 $string['noaccesssincestartinfomessage'] = 'Hej {$a->userfirstname},
-
-</br><br/>några deltagare i {$a->coursename} har aldrig varit inne i kursen.';
+<p>Några av deltagarna i {$a->coursename} har aldrig varit inne i kursen.</p>';
 $string['nocourseactivity'] = 'Otillräcklig kursaktivitet mellan kursens början och slut';
 $string['nocourseendtime'] = 'Kursen har ingen sluttid';
-$string['nocoursesections'] = 'Inga sektioner i kursen';
+$string['nocoursesections'] = 'Inga kurssektioner';
 $string['nocoursestudents'] = 'Inga studenter';
 $string['norecentaccessesinfomessage'] = 'Hej {$a->userfirstname},
-
-</br><br/>några deltagare i {$a->coursename} har inte varit inne i kursen på ett tag.';
-$string['privacy:completionpath'] = 'Fullföljande av kurs';
+<p>Några av deltagarna i {$a->coursename} har inte besökt kursen på ett tag.</p>';
+$string['noteachinginfomessage'] = 'Hej {$a->userfirstname},
+<p>Kurser med startdatum i nästa vecka har konstaterats sakna lärare eller registrerade studenter.<p>';
+$string['privacy:completionpath'] = 'Slutförande av kurs';
 $string['privacy:favouritespath'] = 'Favoritmärkt kursinformation';
-$string['privacy:metadata:completionsummary'] = 'Kursen innehåller information om användarens fullföljande av kursen.';
+$string['privacy:metadata:activityfavouritessummary'] = 'Kurssystemet innehåller information om vilka aktiviteter från aktivitetsväljaren som märkts som favoriter av användaren.';
+$string['privacy:metadata:completionsummary'] = 'Kursen innehåller information om användarens slutförande av kursen.';
 $string['privacy:metadata:favouritessummary'] = 'Kursen innehåller information som relaterar till att användaren favoritmärkt kursen.';
 $string['privacy:perpage'] = 'Antalet kurser som ska visas per sida.';
+$string['recommend'] = 'Rekommendera';
+$string['recommendcheckbox'] = 'Rekommendera aktiviteten \'{$a}\'';
+$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} efter kursstart';
+$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} innan kursstart';
+$string['searchactivitiesbyname'] = 'Sök efter aktiviteter via namn';
+$string['searchresults'] = 'Sökresultat: {$a}';
 $string['studentsatriskincourse'] = 'Deltagare i riskzonen i kursen {$a}';
-$string['target:coursecompetencies'] = 'Deltagare som är i riskzonen för att inte uppnå de kompetenser som ingår i kursen.';
+$string['studentsatriskinfomessage'] = 'Hej {$a->userfirstname},
+<p>Studenter i kursen {$a->coursename} har identifierats löpa risk.<p>';
+$string['submitsearch'] = 'Sök';
+$string['target:coursecompetencies'] = 'Deltagare som löper risk att inte uppnå de kompetenser som kopplats till kursen.';
 $string['target:coursecompetencies_help'] = 'Detta mål beskriver huruvida en deltagare löper risk att inte uppnå de kompetenser som kopplats till en kurs. Detta mål antar att alla kompetenser som kopplats till kursen måste uppnås innan kursens slut.';
 $string['target:coursecompletion'] = 'Deltagare som är i riskzonen för att inte uppfylla villkoren för slutförande av kursen.';
 $string['target:coursecompletion_help'] = 'Detta mål beskriver huruvida deltagaren anses löpa risk att inte uppnå villkoren som angivits för att anses ha slutfört kursen.';

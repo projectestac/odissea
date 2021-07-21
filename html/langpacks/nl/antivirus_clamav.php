@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'nl', version '3.8'.
+ * Strings for component 'antivirus_clamav', language 'nl', version '3.11'.
  *
  * @package     antivirus_clamav
  * @category    string
@@ -25,11 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['antivirusfailed'] = 'Er is momenteel een probleem met het scannen met AntiVirus. Uw bestand {$a->item}  is niet geüpload. Probeer het later opnieuw.';
 $string['clamfailed'] = 'ClamAV is vastgelopen. De foutmelding was {$a}. Hier is de melding van Clam:';
 $string['clamfailureonupload'] = 'Als ClamAV faalt';
 $string['configclamactlikevirus'] = 'Behandel bestanden als virussen';
 $string['configclamdonothing'] = 'Behandel bestanden als OK';
-$string['configclamfailureonupload'] = 'Als je Clam hebt geconfigureerd om geüploade bestanden te scannen, maar het is fout geconfigureerd of het faalt om een onbekende reden, hoe moet het zich dan gedragen? Als je kiest voor "behandel bestanden als virussen", dan zullen ze naar de quarantainezone verplaatst worden of verwijderd worden. Als je kiest voor "behandel bestanden als OK", dan zullen de bestanden zoals normaal naar de bestemmingsmap verplaatst worden. In beide gevallen zal de beheerder gemeld worden dat Clam fout loopt. Als je er kiest voor "behandel alle bestanden als virussen," dan zullen alle geüploade bestanden naar de quarantainezone verplaatst worden of verwijderd worden. Wees voorzichtig met deze instelling.';
+$string['configclamfailureonupload'] = 'Als je \'Behandel bestanden als OK\' hebt ingesteld, dan zullen de bestanden zoals normaal naar de bestemmingsmap verplaatst worden. Als je \'Weiger upload, probeer opnieuw\' hebt ingesteld, dan wordt er een \'probeer opnieuw-melding\' aan de gebruiker getoond. . Als je Behandel alle bestanden als virussen\' hebt geselecteerd, dan zullen alle geüploade bestanden naar de quarantaine-zone verplaatst of verwijderd worden als clam niet werkt (bijvoorbeeld door een foute instelling van  pathtoclam).';
+$string['configclamtryagain'] = 'Geweigerde upload. Probeer opnieuw.';
 $string['errorcantopensocket'] = 'Verbinden met een Unix domain socket gaf als fout {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV antwoordt niet; controleer of de status van de daemon';
 $string['errornounixsocketssupported'] = 'Unix domain socket transport wordt niet ondersteund op dit systeem. Gebruik de command line optie.';
@@ -44,5 +46,14 @@ $string['quarantinedir'] = 'Quarantaine-map';
 $string['runningmethod'] = 'Gebruiksmethode';
 $string['runningmethodcommandline'] = 'Command line';
 $string['runningmethoddesc'] = 'Methode om ClamAV te gebruiken. Command line is de standaard, hoewel je op Unix-systemen betere performantie kunt krijgen door systeem-sockets te gebruiken.';
+$string['runningmethodtcpsocket'] = 'TCP-socket';
 $string['runningmethodunixsocket'] = 'Unix domain socket';
+$string['tcpsockethost'] = 'TCP-socket hostname';
+$string['tcpsockethostdesc'] = 'Domeinnaam van de ClamAV-server';
+$string['tcpsocketport'] = 'TCP-socketpoort';
+$string['tcpsocketportdesc'] = 'De poort voor de verbinding met ClamAV';
+$string['tries'] = 'Scanpogingen';
+$string['tries_desc'] = 'Aantal pogingen dat ClamAV zal proberen wanneer er een fout optreedt tijdens het scanproces.';
+$string['tries_notice'] = 'Clamav-scannen heeft {$a->tries} keer geprobeerd.
+{$a->notice}';
 $string['unknownerror'] = 'Er was een onbekende fout met clam.';

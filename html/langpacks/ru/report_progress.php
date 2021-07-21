@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_progress', language 'ru', version '3.8'.
+ * Strings for component 'report_progress', language 'ru', version '3.11'.
  *
  * @package     report_progress
  * @category    string
@@ -25,8 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityorder'] = 'Порядок элементов';
+$string['allactivitiesandresources'] = 'Все элементы и ресурсы';
+$string['alphabetical'] = 'По алфавиту';
+$string['include'] = 'Включить';
+$string['orderincourse'] = 'По порядку в курсе';
 $string['page-report-progress-index'] = 'Отчет о завершении элементов курса';
 $string['page-report-progress-user'] = 'Отчет о завершении элементов курса по пользователю';
 $string['page-report-progress-x'] = 'Отчет о завершении любых элементов курса';
 $string['pluginname'] = 'Завершение элементов курса';
+$string['privacy:metadata'] = 'В отчете о выполнении активных элементов только отображаются данные, хранящиеся в других местах.';
 $string['progress:view'] = 'Просматривать отчет «Завершение элементов курса»';

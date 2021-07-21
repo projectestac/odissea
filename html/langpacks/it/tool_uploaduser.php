@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'it', version '3.8'.
+ * Strings for component 'tool_uploaduser', language 'it', version '3.11'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -29,16 +29,26 @@ $string['allowdeletes'] = 'Consenti eliminazione utenti';
 $string['allowrenames'] = 'Consenti la modifica degli username';
 $string['allowsuspends'] = 'Consente la sospensione e riattivazione di account.';
 $string['assignedsysrole'] = 'Ruolo globale {$a} assegnato';
+$string['clidefault'] = 'Default:';
+$string['clierrorargument'] = 'Il valore dell\'argomento --{$a->name} non è valido. Valori validi: {$a->values}';
+$string['clifile'] = 'Percorso del file CSV che contiene i dati utenti. Obbligatorio.';
+$string['clifilenotreadable'] = 'Il file {$a} non esiste o non è leggibile';
+$string['clihelp'] = 'Stampa questo aiuto.';
+$string['climissingargument'] = 'L\'argomento  --{$a} è obbligatorio';
+$string['clivalidationerror'] = 'Errore di validazione:';
 $string['csvdelimiter'] = 'Delimitatore CSV';
 $string['defaultvalues'] = 'Valori di default';
 $string['deleteerrors'] = 'Elimina errori';
 $string['encoding'] = 'Codifica';
 $string['errormnetadd'] = 'Non è possibile aggiungere utenti remoti';
+$string['errorprefix'] = 'Errore:';
 $string['errors'] = 'Errori';
 $string['examplecsv'] = 'File di testo di esempio';
+$string['infoprefix'] = 'Informazioni:';
 $string['invalidtheme'] = 'Il tema "{$a}" non è instalalto e sarà ignorato.';
 $string['invalidupdatetype'] = 'Non è possibile utilizzare questa opzione con il \'Tipo di caricamento\' selezionato.';
 $string['invaliduserdata'] = 'Sono stati individuati dati non validi per l\'utente {$a} e sono stati puliti automaticamente.';
+$string['linex'] = 'Linea {$a}';
 $string['nochanges'] = 'Nessuna modifica';
 $string['notheme'] = 'L\'utente non ha nessun tema impostato.';
 $string['pluginname'] = 'Caricamento utenti';
@@ -108,3 +118,4 @@ $string['uuupdatefromfile'] = 'Utilizza i valori contenuti nel file';
 $string['uuupdatemissing'] = 'Utilizza i valori contenuti nel file ed i valori di default se i campi sono vuoti';
 $string['uuupdatetype'] = 'Impostazione campi del profilo utente';
 $string['uuusernametemplate'] = 'Modello per gli username';
+$string['warningprefix'] = 'Attenzione:';

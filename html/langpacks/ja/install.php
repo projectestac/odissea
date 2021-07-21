@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'ja', version '3.8'.
+ * Strings for component 'install', language 'ja', version '3.11'.
  *
  * @package     install
  * @category    string
@@ -139,6 +139,12 @@ $string['memorylimithelp'] = '<p>現在、サーバのPHPメモリ制限が {$a}
 <p>しかし、この設定が<b>すべての</b>PHPページの動作を妨げる場合もあります。ページ閲覧中にエラーが表示される場合、.htaccessファイルを削除してください。</p></li>
 </ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'PHPのMySQLi拡張モジュールが適切に設定されていないため、MySQLと通信できません。あなたのphp.iniファイルをチェックするか、PHPを再コンパイルしてください。';
+$string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
+$string['nativeauroramysqlhelp'] = '<p>データベースにはほとんどのMoodle設定およびデータが保存され、ここで設定する必要があります。</p>
+<p>データベース名、ユーザ名およびパスワードは必須入力フィールドです。また、テーブル接頭辞は任意です。</p>
+<p>データベース名には半角英数字、ドル記号 ($) およびアンダースコア (_) のみ含むことができます。</p>
+<p>データベースが存在せず、あなたが指定したユーザにパーミッションがある場合、Moodleは正しいパーミッションおよび設定の新しいデータベースの作成を試みます。</p>
+<p>このドライバに関してレガシーMyISAMエンジンに対する互換性はありません。</p>';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>データベースにはほとんどのMoodle設定およびデータが保存され、ここで設定する必要があります。</p>
 <p>データベース名、ユーザ名およびパスワードは必須入力フィールドです。また、テーブル接頭辞は任意です。</p>

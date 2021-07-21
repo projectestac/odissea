@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'pt', version '3.8'.
+ * Strings for component 'page', language 'pt', version '3.11'.
  *
  * @package     page
  * @category    string
@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Prima a tecla CTRL para selecionar múltiplas opções.';
+$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis. As configurações existentes não serão alteradas. Pressiona a tecla CTRL para selecionar múltiplas opções.';
 $string['content'] = 'Conteúdo da página';
 $string['contentheader'] = 'Conteúdo';
 $string['createpage'] = 'Criar um novo recurso do tipo Página';
 $string['displayoptions'] = 'Opções de visualização disponíveis';
-$string['displayselect'] = 'Exibir em';
+$string['displayselect'] = 'Modo de exibição';
 $string['displayselectexplain'] = 'Escolha a forma de exibição.';
 $string['indicator:cognitivedepth'] = 'Compreensão da Página';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recursos Página.';
@@ -61,9 +61,9 @@ $string['page:view'] = 'Ver conteúdo da página';
 $string['pluginadministration'] = 'Administração da Página';
 $string['pluginname'] = 'Página';
 $string['popupheight'] = 'Altura da janela pop-up (em pixeis)';
-$string['popupheightexplain'] = 'Especifique a altura predefinida da janela de pop-up';
+$string['popupheightexplain'] = 'Especifique a altura predefinida da janela pop-up';
 $string['popupwidth'] = 'Largura da janela pop-up (em pixeis)';
-$string['popupwidthexplain'] = 'Especifique a largura predefinida quando abre numa janela de pop-up';
+$string['popupwidthexplain'] = 'Especifique a largura predefinida quando abre numa janela pop-up';
 $string['printheading'] = 'Mostrar nome da página';
 $string['printheadingexplain'] = 'Exibir nome da página acima do conteúdo?';
 $string['printintro'] = 'Mostrar descrição da página';

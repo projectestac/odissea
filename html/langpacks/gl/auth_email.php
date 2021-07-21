@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_email', language 'gl', version '3.8'.
+ * Strings for component 'auth_email', language 'gl', version '3.11'.
  *
  * @package     auth_email
  * @category    string
@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_emaildescription'] = '<p>O autorexistro baseado no correo permítelle ao usuario crear a súa propia conta a través do botón «Crear unha nova conta» na páxina de acceso. A seguir, o usuario recibe un correo cunha ligazón segura a unha páxina na que pode confirmar a súa conta. Os futuros accesos comprobarán o nome de usuario e o contrasinal contra os valores almacenados na base de datos de Moodle.</p><p>Nota: ademais de activar o engadido de autorexistro baseado no correo debe seleccionalo desde o menú despregábel autorexistro de  «Administrar a autenticación»';
+$string['auth_emaildescription'] = '<p>O autorexistro baseado no correo permítelle ao usuario crear a súa propia conta a través do botón «Crear unha nova conta» na páxina de acceso. A seguir, o usuario recibe un correo cunha ligazón segura a unha páxina na que pode confirmar a súa conta. Os futuros accesos comprobarán o nome de usuario e o contrasinal contra os valores almacenados na base de datos de Moodle.</p><p>Nota: ademais de activar o engadido de autorexistro baseado no correo debe seleccionalo dende o menú despregábel autorexistro de  «Administrar a autenticación»';
 $string['auth_emailnoemail'] = 'Tentouse enviar un correo mais non foi posíbel.';
-$string['auth_emailrecaptcha'] = 'Engade un formulario de confirmación visual ou auditiva a páxina de acceso para os usuarios autorexistrados a través do corre. Esta opción protexe o seu sitio contra os creadores de correo lixo e colabora cunha boa causa. Vexa http://www.google.com/recaptcha/learnmore para obter máis detalles. <br /><em>Require ter instalada a extensión cURL de PHP.</em>';
+$string['auth_emailrecaptcha'] = 'Engade un elemento de formulario de confirmación visual/sonoro á páxina de rexistro para os usuarios que se rexistran mediante correo electrónico. Isto protexe o seu sitio contra os «spammers» e colabora cunha causa digna. Consulte https://www.google.com/recaptcha para obter máis detalles.';
 $string['auth_emailrecaptcha_key'] = 'Activar o elemento reCAPTCHA';
 $string['auth_emailsettings'] = 'Axustes';
 $string['pluginname'] = 'Autorexistro baseado no correo';
-$string['privacy:metadata'] = 'O engadido de autenticación no autorexistro baseado no correo non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O engadido de autenticación no Autorexistro baseado no correo non almacena ningún dato persoal.';

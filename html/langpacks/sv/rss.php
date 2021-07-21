@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rss', language 'sv', version '3.8'.
+ * Strings for component 'rss', language 'sv', version '3.11'.
  *
  * @package     rss
  * @category    string
@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata:core_userkey'] = 'Användarens nycklar som används för att komma åt RSS från en URL';
 $string['rss'] = 'RSS';

@@ -50,12 +50,12 @@
     <hr />
     <div class="row">
         {{#compliant}}
-            <a class="component-expand p-l-2" data-component="{{raw_component}}" href='#'>
-            <h4 class=" d-inline p-l-2 " id="{{raw_component}}">{{#pix}}t/collapsed, moodle, {{#str}}expandplugin, tool_dataprivacy{{/str}}{{/pix}}{{component}}</h4>
+            <a class="component-expand pl-5" data-component="{{raw_component}}" href='#'>
+            <h4 class=" d-inline pl-5 " id="{{raw_component}}">{{#pix}}t/collapsed, moodle, {{#str}}expandplugin, tool_dataprivacy{{/str}}{{/pix}}{{component}}</h4>
             </a>
         {{/compliant}}
         {{^compliant}}
-            <h4 class="d-inline p-l-3 " id="{{raw_component}}">{{component}}</h4>
+            <h4 class="d-inline pl-6 " id="{{raw_component}}">{{component}}</h4>
             <span>{{#pix}}i/risk_xss, moodle, {{#str}}requiresattention, tool_dataprivacy{{/str}}{{/pix}}</span>
         {{/compliant}}
         {{#external}}
@@ -73,9 +73,9 @@
         <div class="hide" data-section="{{raw_component}}" aria-expanded="false" role="contentinfo">
             {{#metadata}}
                 <hr />
-                <div class="p-l-3">
+                <div class="pl-6">
                     <dl class="row">
-                        <dt class="col-xs-3">
+                        <dt class="col-3">
                             {{#link}}
                                 <a href="#{{name}}"><strong style="word-wrap:break-word">{{name}}</strong></a>
                             {{/link}}
@@ -84,13 +84,13 @@
                             {{/link}}
                             <div class="small text-muted" style="word-wrap:break-word">{{type}}</div>
                         </dt>
-                        <dd class="col-xs-9">{{summary}}</dd>
+                        <dd class="col-9">{{summary}}</dd>
                     </dl>
                     <dl>
                         {{#fields}}
                         <div class="row">
-                            <dt class="col-xs-3 font-weight-normal" style="word-wrap:break-word">{{field_name}}</dt>
-                            <dd class="col-xs-9">{{field_summary}}</dd>
+                            <dt class="col-3 font-weight-normal" style="word-wrap:break-word">{{field_name}}</dt>
+                            <dd class="col-9">{{field_summary}}</dd>
                         </div>
                         {{/fields}}
                     </dl>
@@ -98,9 +98,9 @@
             {{/metadata}}
             {{#nullprovider}}
                 <hr />
-                <div class="p-l-3">
+                <div class="pl-6">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-12">
                             {{nullprovider}}
                         </div>
                     </div>

@@ -49,7 +49,7 @@ class core_badges_assertion {
     private $_url;
 
     /** @var int $obversion to control version JSON-LD. */
-    private $_obversion = OPEN_BADGES_V1;
+    private $_obversion = OPEN_BADGES_V2;
 
     /**
      * Constructs with issued badge unique hash.
@@ -57,7 +57,7 @@ class core_badges_assertion {
      * @param string $hash Badge unique hash from badge_issued table.
      * @param int $obversion to control version JSON-LD.
      */
-    public function __construct($hash, $obversion = OPEN_BADGES_V1) {
+    public function __construct($hash, $obversion = OPEN_BADGES_V2) {
         global $DB;
 
         $this->_data = $DB->get_record_sql('
@@ -128,7 +128,7 @@ class core_badges_assertion {
             $email = empty($this->_data->backpackemail) ? $this->_data->email : $this->_data->backpackemail;
             $assertionurl = new moodle_url('/badges/assertion.php', array('b' => $hash, 'obversion' => $this->_obversion));
 
-            if ($this->_obversion == OPEN_BADGES_V2) {
+            if ($this->_obversion >= OPEN_BADGES_V2) {
                 $classurl = new moodle_url('/badges/badge_json.php', array('id' => $this->get_badge_id()));
             } else {
                 $classurl = new moodle_url('/badges/assertion.php', array('b' => $hash, 'action' => 1));
@@ -198,11 +198,8 @@ class core_badges_assertion {
             $class['image'] = 'data:image/png;base64,' . $imagedata;
             $class['criteria'] = $this->_url->out(false); // Currently issued badge URL.
             if ($issued) {
-                if ($this->_obversion == OPEN_BADGES_V2) {
-                    $issuerurl = new moodle_url('/badges/issuer_json.php', array('id' => $this->get_badge_id()));
-                } else {
-                    $issuerurl = new moodle_url('/badges/assertion.php', array('b' => $this->_data->uniquehash, 'action' => 0));
-                }
+                $params = ['id' => $this->get_badge_id(), 'obversion' => $this->_obversion];
+                $issuerurl = new moodle_url('/badges/issuer_json.php', $params);
                 $class['issuer'] = $issuerurl->out(false);
             }
             $this->embed_data_badge_version2($class, OPEN_BADGES_V2_TYPE_BADGE);
@@ -223,7 +220,7 @@ class core_badges_assertion {
         $issuer = array();
         if ($this->_data) {
             // Required.
-            if (badges_open_badges_backpack_api() == OPEN_BADGES_V1) {
+            if ($this->_obversion == OPEN_BADGES_V1) {
                 $issuer['name'] = $this->_data->issuername;
                 $issuer['url'] = $this->_data->issuerurl;
                 // Optional.
@@ -328,7 +325,7 @@ class core_badges_assertion {
      */
     protected function embed_data_badge_version2 (&$json, $type = OPEN_BADGES_V2_TYPE_ASSERTION) {
         // Specification Version 2.0.
-        if ($this->_obversion == OPEN_BADGES_V2) {
+        if ($this->_obversion >= OPEN_BADGES_V2) {
             $badge = new badge($this->_data->id);
             if (empty($this->_data->courseid)) {
                 $context = context_system::instance();
@@ -379,7 +376,7 @@ class core_badges_assertion {
                         $this->_data->imageauthorurl ||
                         $this->_data->imagecaption) {
                     $storage = get_file_storage();
-                    $imagefile = $storage->get_file($context->id, 'badges', 'badgeimage', $this->_data->id, '/', 'f1.png');
+                    $imagefile = $storage->get_file($context->id, 'badges', 'badgeimage', $this->_data->id, '/', 'f3.png');
                     if ($imagefile) {
                         $imagedata = base64_encode($imagefile->get_content());
                     } else {

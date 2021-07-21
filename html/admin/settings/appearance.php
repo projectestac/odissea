@@ -13,10 +13,10 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) { // sp
     // "themesettings" settingpage
     $temp = new admin_settingpage('themesettings', new lang_string('themesettings', 'admin'));
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     if (get_protected_agora()) {
-    //************ FI
+    // ************ FI
 
     $setting = new admin_setting_configtext('themelist', new lang_string('themelist', 'admin'),
         new lang_string('configthemelist', 'admin'), '', PARAM_NOTAGS);
@@ -31,19 +31,25 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) { // sp
     $temp->add(new admin_setting_configcheckbox('allowcohortthemes',  new lang_string('allowcohortthemes', 'admin'), new lang_string('configallowcohortthemes', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('allowthemechangeonurl',  new lang_string('allowthemechangeonurl', 'admin'), new lang_string('configallowthemechangeonurl', 'admin'), 0));
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     }
-    //************ FI
+    // ************ FI
 
     $temp->add(new admin_setting_configcheckbox('allowuserblockhiding', new lang_string('allowuserblockhiding', 'admin'), new lang_string('configallowuserblockhiding', 'admin'), 1));
+    $temp->add(new admin_setting_configcheckbox('langmenuinsecurelayout',
+        new lang_string('langmenuinsecurelayout', 'admin'),
+        new lang_string('langmenuinsecurelayout_desc', 'admin'), 0));
+    $temp->add(new admin_setting_configcheckbox('logininfoinsecurelayout',
+        new lang_string('logininfoinsecurelayout', 'admin'),
+        new lang_string('logininfoinsecurelayout_desc', 'admin'), 0));
     $temp->add(new admin_setting_configtextarea('custommenuitems', new lang_string('custommenuitems', 'admin'),
         new lang_string('configcustommenuitems', 'admin'), '', PARAM_RAW, '50', '10'));
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     if (get_protected_agora()) {
-    //************ FI
+    // ************ FI
 
     $temp->add(new admin_setting_configtextarea(
         'customusermenuitems',
@@ -59,21 +65,24 @@ preferences,moodle|/user/preferences.php|t/preferences',
     $temp->add(new admin_setting_configcheckbox('enabledevicedetection', new lang_string('enabledevicedetection', 'admin'), new lang_string('configenabledevicedetection', 'admin'), 1));
     $temp->add(new admin_setting_devicedetectregex('devicedetectregex', new lang_string('devicedetectregex', 'admin'), new lang_string('devicedetectregex_desc', 'admin'), ''));
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     }
-    //************ FI
+    // ************ FI
 
     $ADMIN->add('themes', $temp);
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     if (get_protected_agora()) {
-    //************ FI
+    // ************ FI
+
     $ADMIN->add('themes', new admin_externalpage('themeselector', new lang_string('themeselector','admin'), $CFG->wwwroot . '/theme/index.php'));
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     }
-    //************ FI
+    // ************ FI
 
     // settings for each theme
     foreach (core_component::get_plugin_list('theme') as $theme => $themedir) {
@@ -295,7 +304,6 @@ preferences,moodle|/user/preferences.php|t/preferences',
     $setting = new admin_setting_configcheckbox('cachejs', new lang_string('cachejs', 'admin'), new lang_string('cachejs_help', 'admin'), 1);
     $setting->set_updatedcallback('js_reset_all_caches');
     $temp->add($setting);
-    $temp->add(new admin_setting_configcheckbox('modchooserdefault', new lang_string('modchooserdefault', 'admin'), new lang_string('configmodchooserdefault', 'admin'), 1));
     $ADMIN->add('appearance', $temp);
 
     // Link to tag management interface.
@@ -304,20 +312,22 @@ preferences,moodle|/user/preferences.php|t/preferences',
     $page = new admin_externalpage('managetags', new lang_string('managetags', 'tag'), $url, 'moodle/tag:manage', $hidden);
     $ADMIN->add('appearance', $page);
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2012.06.20  @sarjona
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2012.06.20 @sarjona
     if (get_protected_agora() ) {
-    //************ FI
+    // ************ FI
+
     $temp = new admin_settingpage('additionalhtml', new lang_string('additionalhtml', 'admin'));
     $temp->add(new admin_setting_heading('additionalhtml_heading', new lang_string('additionalhtml_heading', 'admin'), new lang_string('additionalhtml_desc', 'admin')));
     $temp->add(new admin_setting_configtextarea('additionalhtmlhead', new lang_string('additionalhtmlhead', 'admin'), new lang_string('additionalhtmlhead_desc', 'admin'), '', PARAM_RAW));
     $temp->add(new admin_setting_configtextarea('additionalhtmltopofbody', new lang_string('additionalhtmltopofbody', 'admin'), new lang_string('additionalhtmltopofbody_desc', 'admin'), '', PARAM_RAW));
     $temp->add(new admin_setting_configtextarea('additionalhtmlfooter', new lang_string('additionalhtmlfooter', 'admin'), new lang_string('additionalhtmlfooter_desc', 'admin'), '', PARAM_RAW));
     $ADMIN->add('appearance', $temp);
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2012.06.20  @sarjona
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2012.06.20 @sarjona
     }
-    //************ FI
+    // ************ FI
 
     $setting = new admin_setting_configcheckbox('cachetemplates', new lang_string('cachetemplates', 'admin'),
         new lang_string('cachetemplates_help', 'admin'), 1);

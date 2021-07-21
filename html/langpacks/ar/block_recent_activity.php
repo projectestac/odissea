@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_recent_activity', language 'ar', version '3.8'.
+ * Strings for component 'block_recent_activity', language 'ar', version '3.11'.
  *
  * @package     block_recent_activity
  * @category    string
@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cleanuptask'] = 'مهمة التنظيف لكتلة النشاط الأخير';
-$string['pluginname'] = 'الأنشطة الحديثة';
+$string['pluginname'] = 'النشاط الأخير';
 $string['privacy:metadata'] = 'كتلة النشاطات الأخيرة تحتوي على بيانات مخبأة مخزونة في موضع آخر من مودل.';
 $string['privacy:metadata:block_recent_activity'] = 'سجل وقوعات مؤقت لنشاطات المعلم الأخيرة. يُزال بعد يومين.';
 $string['privacy:metadata:block_recent_activity:action'] = 'الإجراء: منشأة، محدثة، أو محذوفة';
-$string['privacy:metadata:block_recent_activity:cmid'] = 'مُعرَّف نشاط المساق';
-$string['privacy:metadata:block_recent_activity:courseid'] = 'مُعرَّف المساق';
+$string['privacy:metadata:block_recent_activity:cmid'] = 'مُعرَّف نشاط المقرر الدراسي';
+$string['privacy:metadata:block_recent_activity:courseid'] = 'مُعرَّف المقرر الدراسي';
 $string['privacy:metadata:block_recent_activity:modname'] = 'اسم نوع الوحدة (لإجراء الحذف)';
 $string['privacy:metadata:block_recent_activity:timecreated'] = 'وقت تنفيذ الإجراء';
 $string['privacy:metadata:block_recent_activity:userid'] = 'المستخدم المنفذ للإجراء';

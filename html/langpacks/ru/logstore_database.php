@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_database', language 'ru', version '3.8'.
+ * Strings for component 'logstore_database', language 'ru', version '3.11'.
  *
  * @package     logstore_database
  * @category    string
@@ -42,12 +42,22 @@ $string['filters'] = 'Фильтровать события';
 $string['filters_help'] = 'Включить фильтры, которые предотвратят запись в журнал некоторых действий.';
 $string['includeactions'] = 'Записывать в журнал события этих типов';
 $string['includelevels'] = 'Записывать в журнал события этих образовательных уровней';
+$string['jsonformat'] = 'Формат JSON';
+$string['jsonformat_desc'] = 'Использовать стандартный формат JSON вместо сериализованных данных PHP в поле «other» базы данных.';
 $string['logguests'] = 'Записывать в журнал действия гостей';
 $string['other'] = 'Другие';
 $string['participating'] = 'Участие';
 $string['pluginname'] = 'Журнал событий во внешней базе данных';
 $string['pluginname_desc'] = 'Способ хранения журнала событий, при котором данные сохраняются в таблице внешней базы данных.';
+$string['privacy:metadata:log'] = 'Коллекция прошлых событий';
+$string['privacy:metadata:log:anonymous'] = 'Было ли событие помечено как анонимное';
+$string['privacy:metadata:log:eventname'] = 'Название события';
+$string['privacy:metadata:log:ip'] = 'IP-адрес, использованный при событии';
+$string['privacy:metadata:log:origin'] = 'Происхождение события.';
+$string['privacy:metadata:log:other'] = 'Дополнительная информация о событии';
 $string['privacy:metadata:log:realuserid'] = 'ID реального пользователя в случае, когда он действует от имени другого пользователя.';
+$string['privacy:metadata:log:relateduserid'] = 'ID пользователя, связанного с этим событием';
+$string['privacy:metadata:log:timecreated'] = 'Время, когда произошло событие';
 $string['privacy:metadata:log:userid'] = 'ID пользователя, который вызвал это событие';
 $string['read'] = 'Чтение';
 $string['tablenotfound'] = 'Указанная таблица не найдена';

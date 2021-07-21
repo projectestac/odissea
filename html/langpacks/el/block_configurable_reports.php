@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'el', version '3.8'.
+ * Strings for component 'block_configurable_reports', language 'el', version '3.11'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -29,6 +29,7 @@ $string['activitypost'] = 'Αναρτήσεις δραστηριότητας';
 $string['activityview'] = 'Εμφανίσεις δραστηριότητας';
 $string['addreport'] = 'Προσθήκη αναφοράς';
 $string['anyone'] = 'Οποιοσδήποτε';
+$string['anyone_summary'] = 'Οποιοσδήποτε χρήστης στην Πανεπιστημιούπολη θα μπορεί να βλέπει αυτή την αναφορά';
 $string['availablemarks'] = 'Διαθέσιμοι βαθμοί';
 $string['average'] = 'Μέσος όρος';
 $string['badconditionexpr'] = 'Λανθασμένη έκφραση συνθήκης';
@@ -177,6 +178,9 @@ $string['forcemidnight'] = 'Επιβολή για μεσάνυχτα';
 $string['fsearchuserfield'] = 'Πλαίσιο/κουτάκι αναζήτησης πεδίου χρήστη';
 $string['fuserfield'] = 'Φίλτρο πεδίου χρήστη';
 $string['global'] = 'Καθολική αναφορά';
+$string['globalstatsshouldbeenabled'] = 'Τα στατιστικά ιστοτόπου πρέπει να είναι ενεργοποιημένα. Δείτε εδώ: Διαχειριστής -> Εξυπηρετητής -> Στατιστικά';
+$string['groupseries'] = 'Ομαδική σειρά';
+$string['groupvalues'] = 'Ομαδοποίηση ίδιων τιμών (άθροισμα)';
 $string['head_color'] = 'Χρώμα υπόβαθρου γραφήματος';
 $string['head_data'] = 'Δεδομένα γραφήματος';
 $string['head_size'] = 'Μέγεθος γραφήματος';
@@ -234,11 +238,15 @@ $string['printreport'] = 'Εκτύπωση αναφοράς';
 $string['privacy:metadata:block_configurable_reports'] = 'Το μπλοκ προσαρμόσιμων αναφορών περιέχει προσαρμόσιμες αναφορές για μαθήματα.';
 $string['privacy:metadata:block_configurable_reports:components'] = 'Οι ρυθμίσεις της αναφοράς. Περιέχει το ερώτημα, τα φίλτρα...';
 $string['privacy:metadata:block_configurable_reports:courseid'] = 'Αναγνωριστικό μαθήματος';
+$string['privacy:metadata:block_configurable_reports:global'] = 'Εάν η έκθεση θα είναι προσβάσιμη από όλα τα μαθήματα ή όχι';
 $string['privacy:metadata:block_configurable_reports:name'] = 'Το όνομα της αναφοράς';
 $string['privacy:metadata:block_configurable_reports:ownerid'] = 'Το αναγνωριστικό του χρήστη που δημιούργησε την αναφορά';
 $string['privacy:metadata:block_configurable_reports:summary'] = 'Η περιγραφή της αναφοράς';
 $string['privacy:metadata:block_configurable_reports:type'] = 'Ο τύπος της αναφοράς';
+$string['privacy:metadata:block_configurable_reports:visible'] = 'Εάν η αναφορά θα είναι ορατή ή όχι';
 $string['puserfield'] = 'Τιμή πεδίου χρήστη';
+$string['puserfield_summary'] = 'Χρήστης με την επιλεγμένη τιμή στο επιλεγμένο πεδίο';
+$string['queryfailed'] = 'Το ερώτημα απέτυχε <code><pre>{$a}</pre></code>';
 $string['querysql'] = 'Ερώτημα SQL';
 $string['remote'] = 'Εκτέλεση σε απομακρυσμένη βάση δεδομένων';
 $string['remote_help'] = 'Θέλετε να τρέξει αυτό το ερώτημα στην απομακρυσμένη βάση δεδομένων;';
@@ -250,6 +258,7 @@ $string['report_courses'] = 'Αναφορά μαθημάτων';
 $string['report_sql'] = 'Αναφορά SQL';
 $string['report_timeline'] = 'Αναφορά χρονολογίου';
 $string['report_users'] = 'Αναφορά χρηστών';
+$string['reportcategories'] = '1) Επιλέξτε απομακρυσμένες κατηγορίες αναφορών';
 $string['reportcolumn'] = 'Άλλη στήλη αναφοράς';
 $string['reportcreated'] = 'Η αναφορά δημιουργήθηκε με επιτυχία';
 $string['reportlimit'] = 'Όριο γραμμών αναφοράς';
@@ -261,9 +270,11 @@ $string['repository'] = 'Αποθετήριο αναφορών';
 $string['role'] = 'Ρόλος';
 $string['roleusersn'] = 'Αριθμός χρηστών με ρόλο...';
 $string['searchtext'] = 'Κείμενο αναζήτησης';
+$string['semester'] = 'Εξάμηνο (Εβραϊκά)';
 $string['sessionlimittime'] = 'Όριο μεταξύ κλικ (σε λεπτά)';
 $string['sessionlimittime_help'] = 'Το όριο μεταξύ κλικ ορίζει αν δύο κλικ είναι μέρος της ίδιας συνόδου ή όχι';
 $string['setcourseid'] = 'Ορισμός αναγνωριστικού μαθήματος';
+$string['sharedsqlrepository'] = 'Κοινόχρηστο αποθετήριο SQL';
 $string['sqlsecurity'] = 'Ασφάλεια SQL';
 $string['sqlsyntaxhighlight'] = 'Φωτο-επισήμανση SQL σύνταξης';
 $string['sqlsyntaxhighlightinfo'] = 'Φωτο-επισήμανση SQL σύνταξης στον επεξεργαστή κώδικα (βιβλιοθήκη JS CodeMirror)';
@@ -274,6 +285,7 @@ $string['statsactiveenrolments'] = 'Ενεργές (τελευταίας εβδ�
 $string['statslogins'] = 'Συνδέσεις στην πλατφόρμα';
 $string['statstotalenrolments'] = 'Συνολικές εγγραφές';
 $string['student'] = 'Μαθητής';
+$string['subcategories'] = 'Κατηγορία (Συμπερίληψη υποκατηγοριών)';
 $string['sum'] = 'Άθροισμα';
 $string['tablealign'] = 'Στοίχιση πίνακα';
 $string['tablecellpadding'] = 'Γέμισμα κελιού πίνακα';
@@ -282,6 +294,7 @@ $string['tableclass'] = 'Κλάση πίνακα';
 $string['tablewidth'] = 'Πλάτος πίνακα';
 $string['template'] = 'Υπόδειγμα';
 $string['template_marks'] = 'Βαθμοί υποδείγματος';
+$string['templaterecord'] = 'Υπόδειγμα εγγραφής';
 $string['timeinterval'] = 'Χρονικό διάστημα';
 $string['timeline'] = 'Χρονολόγιο';
 $string['timemode'] = 'Κατάσταση χρόνου';

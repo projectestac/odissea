@@ -248,6 +248,11 @@ class enrol_self_plugin extends enrol_plugin {
             return get_string('canntenrol', 'enrol_self');
         }
 
+        // Check if user has the capability to enrol in this context.
+        if (!has_capability('enrol/self:enrolself', context_course::instance($instance->courseid))) {
+            return get_string('canntenrol', 'enrol_self');
+        }
+
         if ($instance->enrolstartdate != 0 and $instance->enrolstartdate > time()) {
             return get_string('canntenrolearly', 'enrol_self', userdate($instance->enrolstartdate));
         }
@@ -1016,7 +1021,8 @@ class enrol_self_plugin extends enrol_plugin {
                 // We only use the first user.
                 $i = 0;
                 do {
-                    $allnames = get_all_user_name_fields(true, 'u');
+                    $userfieldsapi = \core_user\fields::for_name();
+                    $allnames = $userfieldsapi->get_sql('u', false, '', '', false)->selects;
                     $rusers = get_role_users($croles[$i], $context, true, 'u.id,  u.confirmed, u.username, '. $allnames . ',
                     u.email, r.sortorder, ra.id', 'r.sortorder, ra.id ASC, ' . $sort, null, '', '', '', '', $sortparams);
                     $i++;

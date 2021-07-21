@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_analytics', language 'de', version '3.8'.
+ * Strings for component 'tool_analytics', language 'de', version '3.11'.
  *
  * @package     tool_analytics
  * @category    string
@@ -31,7 +31,7 @@ $string['actions'] = 'Aktionen';
 $string['actionsexecutedbyusers'] = 'Aktionen, die von Nutzer/innen ausgeführt wurden';
 $string['actionsexecutedbyusersfor'] = 'Aktionen, die von Nutzer/innen für das Modell "{$a}" ausgeführt wurden';
 $string['allpredictions'] = 'Alle Vorhersagen';
-$string['alltimesplittingmethods'] = 'Alle Zeitaufteilungsmethoden';
+$string['alltimesplittingmethods'] = 'Alle Analyseintervalle';
 $string['analysingsitedata'] = 'Die Website wird analysiert.';
 $string['analysis'] = 'Analysis';
 $string['analyticmodels'] = 'Analytics-Modelle';
@@ -41,7 +41,7 @@ $string['cantguessstartdate'] = 'Der Kursbeginn kann nicht abgeschätzt werden.'
 $string['classdoesnotexist'] = 'Die Class {$a} existiert nicht.';
 $string['clearmodelpredictions'] = 'Möchten Sie wirklich alle "{$a}" Vorhersagen löschen?';
 $string['clearpredictions'] = 'Vorhersagen löschen';
-$string['clienablemodel'] = 'Sie können das Modell aktivieren, indem Sie über die ID eine Zeitaufteilungsmethode auswählen. Beachten Sie, dass sie diese auch später aktivieren können, indem Sie die Weboberfläche nutzen (\'keine\' zum Beenden).';
+$string['clienablemodel'] = 'Sie können das Modell aktivieren, indem Sie ein Analyseintervall über die ID auswählen. Beachten Sie, dass Sie dies auch später aktivieren können, indem Sie die Weboberfläche nutzen (\'keine\' zum Beenden).';
 $string['clievaluationandpredictions'] = 'Ein regelmäßiger Task arbeitet sich durch die aktivierten Modelle und erzeugt Vorhersagen. Die Modellauswertung über die Weboberfläche ist deaktiviert. Sie können die Prozesse manuell über die Weboberfläche anstoßen, indem Sie die Analytics-Einstellung <a href="{$a}">\'onlycli\'</a> deaktivieren.';
 $string['clievaluationandpredictionsnoadmin'] = 'Ein regelmäßiger Task arbeitet sich durch die aktivierten Modelle und erzeugt Vorhersagen. Der Start der Evaluation über die Weboberfläche ist deaktiviert und kann von Administrator/innen aktiviert werden.';
 $string['component'] = 'Komponente';
@@ -51,16 +51,16 @@ $string['componentselectnone'] = 'Alle abwählen';
 $string['contexts'] = 'Kontexte';
 $string['contexts_help'] = 'Das Modell wird auf diese Reihe von Kontexten beschränkt sein. Es werden keine Kontextbeschränkungen angewendet, wenn keine Kontexte ausgewählt werden.';
 $string['createmodel'] = 'Modell anlegen';
-$string['currenttimesplitting'] = 'Aktuelle Zeitaufteilungsmethode';
+$string['currenttimesplitting'] = 'Momentanes Analyseintervall';
 $string['delete'] = 'Löschen';
 $string['deletemodelconfirmation'] = 'Möchten Sie wirklich "{$a}" löschen? Diese Änderungen können nicht zurückgenommen werden.';
 $string['disabled'] = 'Deaktiviert';
 $string['editmodel'] = 'Modell "{$a}" bearbeiten';
-$string['edittrainedwarning'] = 'Dieses Modell wurde bereits trainiert. Beachten Sie, dass die Veränderung seiner Indikatoren oder seiner Zeitaufteilungsmethode seine bisherigen Vorhersagen löschen wird und damit beginnen wird neue Vorhersagen zu erstellen.';
+$string['edittrainedwarning'] = 'Dieses Modell wurde bereits trainiert. Beachten Sie, dass die Veränderung seiner Indikatoren oder seinem Analyseintervall die bisherigen Vorhersagen löscht und neu mit dem Erstellen von Vorhersagen beginnen muss.';
 $string['enabled'] = 'Aktiviert';
-$string['errorcantenablenotimesplitting'] = 'Sie müssen eine Zeitaufteilungsmethode auswählen, bevor Sie das Modell aktivieren.';
+$string['errorcantenablenotimesplitting'] = 'Sie müssen ein Analyseintervall auswählen, bevor Sie das Modell aktivieren.';
 $string['errornoenabledandtrainedmodels'] = 'Es gibt keine aktivierten und trainierten Modelle, die vorhergesagt werden können.';
-$string['errornoenabledmodels'] = 'Es gibt keine aktivierten Modelle zu trainieren.';
+$string['errornoenabledmodels'] = 'Es gibt keine aktivierten Modelle zum Trainieren.';
 $string['errornoexport'] = 'Nur trainierte Modelle können exportiert werden.';
 $string['errornostaticevaluated'] = 'Auf Annahmen basierende Modelle können nicht bewertet werden, laut ihrer Definition sind sie immer 100% korrekt';
 $string['errornostaticlog'] = 'Auf Annahmen basierende Modelle können nicht bewertet werden, da es kein performance log gibt';
@@ -103,11 +103,11 @@ $string['insightsreport'] = 'Einschätzungsberichte';
 $string['invalidanalysables'] = 'Ungültige Elemente';
 $string['invalidanalysablesinfo'] = 'Diese Seite listet Elemente der Website auf, die für das Vorhersagemodell nicht verwendet werden können. Die aufgeführten Elemente können weder für das Training des Vorhersagemodells noch zur Erstellung von Vorhersagen genutzt werden.';
 $string['invalidanalysablestable'] = 'Tabelle der zur Analyse nicht nutzbaren Elemente';
-$string['invalidcurrenttimesplitting'] = 'Das aktuelle Zeitaufteilungsmethode ist für das Ziel dieses Modells ungültig. Bitte wählen Sie eine andere Zeitaufteilungsmethode.';
+$string['invalidcurrenttimesplitting'] = 'Das aktuelle Analyseintervall ist für das Ziel dieses Modells ungültig. Bitte wählen Sie ein anderes Analyseintervall.';
 $string['invalidindicatorsremoved'] = 'Ein neues Modell wurde hinzugefügt. Indikatoren, die mit dem ausgewählten Ziel nicht funktionieren, wurden automatisch entfernt.';
 $string['invalidprediction'] = 'Ungültig zum Erstellen von Vorhersagen';
-$string['invalidtimesplitting'] = 'Die ausgewählte Zeitaufteilungsmethode ist für das ausgewählte Ziel ungültig.';
-$string['invalidtimesplittinginmodels'] = 'Die von einigen der Modelle verwendete Zeitaufteilungsmethode ist ungültig. Bitte wählen Sie für die folgenden Modelle eine andere Zeitaufteilungsmethode aus: {$a}';
+$string['invalidtimesplitting'] = 'Das ausgewählte Analyseintervall ist für das ausgewählte Ziel ungültig.';
+$string['invalidtimesplittinginmodels'] = 'Das von einigen der Modelle verwendete Analyseintervall ist ungültig. Bitte wählen Sie für die folgenden Modelle ein anderes Analyseintervall aus: {$a}';
 $string['invalidtraining'] = 'Ungültig zum Trainieren des Modells';
 $string['loginfo'] = 'Zusätzliche Log-Information';
 $string['missingmoodleversion'] = 'Die importierte Datei definiert keine Version';
@@ -115,13 +115,13 @@ $string['modelid'] = 'Modell ID';
 $string['modelinvalidanalysables'] = 'Nicht nutzbare Elemente für das Modell "{$a}"';
 $string['modelname'] = 'Name des Modells';
 $string['modelresults'] = '{$a} Ergebnisse';
-$string['modeltimesplitting'] = 'Zeitaufteilungsmethode';
+$string['modeltimesplitting'] = 'Analyseintervall';
 $string['newmodel'] = 'Neues Modell';
 $string['nextpage'] = 'Nächste Seite';
 $string['noactionsfound'] = 'Nutzer/innen haben keine Aktionen auf den generierten Einschätzungen ausgeführt.';
 $string['nodatatoevaluate'] = 'Keine Daten zur Evaluierung des Modells';
-$string['nodatatopredict'] = 'Keine neuen Elemente zur Erstellung von Vorhersagen';
-$string['nodatatotrain'] = 'Keine neuen Daten zum Training des Modells';
+$string['nodatatopredict'] = 'Keine neuen Elemente, für die Vorhersagen erstellt werden müssen.';
+$string['nodatatotrain'] = 'Keine neuen Daten, die zum Training verwendet werden können.';
 $string['noinvalidanalysables'] = 'Auf dieser Seite befindet sich kein ungültiges Analyseelement';
 $string['notdefined'] = 'Noch nicht definiert';
 $string['pluginname'] = 'Analytics-Modelle';
@@ -139,13 +139,13 @@ $string['restoredefaultsome'] = '{$a->count} neue(s) Modell(e) wurden erfolgreic
 $string['restoredefaultsubmit'] = 'Ausgewählte wiederherstellen';
 $string['sameenddate'] = 'Das derzeitige Enddatum ist gültig.';
 $string['samestartdate'] = 'Das derzeitige Startdatum ist gültig.';
-$string['scheduledanalysisresults'] = 'Ergebnisse mit der Zeitaufteilungsmethode {$a->name}';
-$string['scheduledanalysisresultscli'] = 'Ergebnisse mit der Zeitaufteilungsmethode {$a->name} (id: {$a->id})';
-$string['selecttimesplittingforevaluation'] = 'Wählen Sie das Zeitaufteilungsmethode, die Sie zur Auswertung der Modellkonfiguration verwenden möchten.';
+$string['scheduledanalysisresults'] = 'Ergebnisse mit dem Analyseintervall {$a->name}';
+$string['scheduledanalysisresultscli'] = 'Ergebnisse mit dem Analyseintervall {$a->name} (id: {$a->id})';
+$string['selecttimesplittingforevaluation'] = 'Wählen Sie das Analyseintervall, das Sie zur Auswertung der Modellkonfiguration verwenden möchten.';
 $string['target'] = 'Ziel';
 $string['target_help'] = 'Das Ziel ist das, was das Modell vorhersagen wird.';
-$string['timesplittingnotdefined'] = 'Es ist keine Zeitaufteilungsmethode definiert.';
-$string['timesplittingnotdefined_help'] = 'Sie müssen eine Zeitaufteilungsmethode wählen, bevor Sie das Modell aktivieren können.';
+$string['timesplittingnotdefined'] = 'Es ist kein Analyseintervall definiert.';
+$string['timesplittingnotdefined_help'] = 'Sie müssen ein Analyseintervall wählen, bevor Sie das Modell aktivieren können.';
 $string['trainandpredictmodel'] = 'Modell trainieren und Vorhersagen berechnen';
 $string['trainingprocessfinished'] = 'Trainingsprozess beendet';
 $string['trainingresults'] = 'Trainingsergebnisse';

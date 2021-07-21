@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'sv', version '3.8'.
+ * Strings for component 'mimetypes', language 'sv', version '3.11'.
  *
  * @package     mimetypes
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['application/dash_xml'] = 'Dynamic Adaptive Streaming över HTTP (MPEG-DASH)';
 $string['application/epub_zip'] = 'EPUB-bok';
 $string['application/json'] = '{$a->MIMETYPE2} text';
 $string['application/msword'] = 'Word-dokument';
@@ -63,7 +64,7 @@ $string['group:html_track'] = 'HTML track files';
 $string['group:html_video'] = 'Videofiler med inbyggt stöd i webbläsare';
 $string['group:image'] = 'Bildfiler';
 $string['group:media_source'] = 'Strömmande media';
-$string['group:optimised_image'] = 'Bildfiler som ska optimeras, som badges';
+$string['group:optimised_image'] = 'Bildfiler som ska optimeras, så som märken';
 $string['group:presentation'] = 'Presentationsfiler';
 $string['group:sourcecode'] = 'Källkod';
 $string['group:spreadsheet'] = 'Kalkylblad';

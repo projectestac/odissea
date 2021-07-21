@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_generator', language 'sv', version '3.8'.
+ * Strings for component 'tool_generator', language 'sv', version '3.11'.
  *
  * @package     tool_generator
  * @category    string
@@ -94,6 +94,22 @@ $string['sitesize_5'] = 'XXL (~20GB; 4177 kurser, skapade på ~10 timmar)';
 $string['size'] = 'Kursstorlek';
 $string['smallfiles'] = 'Små filer';
 $string['targetcourse'] = 'Testa målkurs';
+$string['testplanexplanation'] = 'Det här verktyget skapar en JMeter-testplanfil tillsammans med filen med användarautentiseringsuppgifter.
+
+Den här testplanen är utformad för att fungera tillsammans med {$a}, vilket gör det enklare att köra testplanen i en specifik Moodle-miljö. Den samlar in information om körningarna och jämför resultaten. Du måste ladda ner den och använda <code>test_runner.sh</code>-skriptet eller följa installations- och användningsanvisningarna.
+
+Du måste ställa in ett lösenord för kursanvändarna i <code>config.php</code> (t.ex. <code>$CFG->tool_generator_users_password = \'moodle\';</code>). Det finns inget standardvärde för det här lösenordet för att förhindra oavsiktlig användning av verktyget. Du måste använda alternativet <em>uppdatera lösenord</em> om dina kursanvändare har andra lösenord eller om de genererades av tool_generator men utan att ange ett $CFG->tool_generator_users_password-värde.
+
+Det är en del av tool_generator så det fungerar bra tillsammans med kurserna som genereras av kurserna och webbplatsgeneratorerna. Det kan
+också användas för alla kurser som innehåller minst:
+
+* Tillräckligt många registrerade användare (beror på testplanens storlek) med lösenordet återställt till "moodle"
+* En sidmodulinstans
+* En forummodulinstans med minst en diskussion och ett svar
+
+Du kanske vill överväga servrarnas kapacitet när du kör stora testplaner eftersom mängden data som ska läsas in av JMeter kan vara stor. Uppvarvningsperioden har justerats efter antalet trådar (användare) för att minska denna typ av problem, men belastningen kan fortfarande vara mycket stor.
+
+**Kör inte testplanen på ett live-system**. Den här funktionen skapar bara skripten som i sin tur ska användas av JMeter och är i sig inte farlig att köra. Du bör dock **ALDRIG** köra den här testplanen på en webbplats i produktion.';
 $string['testplansize_0'] = 'XS ({$a->users} användare, {$a->loops} loopar och {$a->rampup} ökningsperiod)';
 $string['testplansize_1'] = 'S ({$a->users} användare, {$a->loops} loopar och {$a->rampup} ökningsperiod)';
 $string['testplansize_2'] = 'M ({$a->users} användare, {$a->loops} loopar och {$a->rampup} ökningsperiod)';
@@ -101,3 +117,4 @@ $string['testplansize_3'] = 'L ({$a->users} användare, {$a->loops} loopar och {
 $string['testplansize_4'] = 'XL ({$a->users} användare, {$a->loops} loopar och {$a->rampup} ökningsperiod)';
 $string['testplansize_5'] = 'XXL ({$a->users} användare, {$a->loops} loopar och {$a->rampup} ökningsperiod)';
 $string['updateuserspassword'] = 'Uppdatera användarlösenord';
+$string['updateuserspassword_help'] = 'JMeter måste logga in som kursanvändare. Du kan ställa in användarnas lösenord under <code>$CFG->tool_generator_users_password</code> i <em>config.php</em>. Den här inställningen uppdaterar kursanvändarens lösenord enligt $CFG->tool_generator_users_password. Detta kan vara användbart om du använder en kurs som inte genereras av tool_generator eller $CFG->tool_generator_users_password inte har angetts när du skapade testkurserna.';

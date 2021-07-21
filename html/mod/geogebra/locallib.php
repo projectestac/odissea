@@ -309,7 +309,8 @@ function geogebra_print_content($geogebra, $context) {
         return false;
     }
 
-    echo '<script type="text/javascript" src="//www.geogebratube.org/scripts/deployggb.js"></script>';
+    echo '<script type="text/javascript" src="//unpkg.com/fflate"></script>';
+    echo '<script type="text/javascript" src="//www.geogebra.org/apps/deployggb.js"></script>';
     echo '<script>window.onload = function() {
         var applet = new GGBApplet({';
     foreach ($attribnames as $name) {
@@ -1121,7 +1122,7 @@ function geogebra_update_attributes(&$geogebra) {
         'showToolBarHelp' => isset($geogebra->showToolBarHelp) && $geogebra->showToolBarHelp,
         'showAlgebraInput' => isset($geogebra->showAlgebraInput) && $geogebra->showAlgebraInput,
         'useBrowserForJS' => isset($geogebra->useBrowserForJS) && $geogebra->useBrowserForJS,
-        'language' => isset($geogebra->language) && $geogebra->language
+        'language' => isset($geogebra->language) && $geogebra->language ? $geogebra->language : false
             ), '', '&');
 
     $geogebra->showsubmit = isset($geogebra->showsubmit);

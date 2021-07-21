@@ -17,7 +17,6 @@
  * Module for the list of discussions on when viewing a forum.
  *
  * @module     mod_forum/discussion_list
- * @package    mod_forum
  * @copyright  2019 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -133,7 +132,7 @@ define([
                 var stringKey = context.userstate.subscribed ? 'unsubscribediscussion' : 'subscribediscussion';
                 return Str.get_string(stringKey, 'mod_forum')
                     .then(function(string) {
-                        toggleElement.closest('td').find('label[for="' + toggleId + '"]').text(string);
+                        toggleElement.closest('td').find('label[for="' + toggleId + '"]').find('span').text(string);
                         return string;
                     });
             });

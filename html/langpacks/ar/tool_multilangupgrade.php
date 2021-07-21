@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_multilangupgrade', language 'ar', version '3.8'.
+ * Strings for component 'tool_multilangupgrade', language 'ar', version '3.11'.
  *
  * @package     tool_multilangupgrade
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['multilangupgradeinfo'] = 'تم تغيير بناء جملة مرشح متعدد اللغات في 1.8، &lt;lang&gt;لا يتم اعتماد البطاقات بعد الآن. <br /><br />مثال : &lt;span lang="en" class="multilang">Hello!&lt;/span&gt;&lt;span lang="es" class="multilang">Hola!&lt;/span&gt;<br /><br /><strong>هل تريد ترقية بناء الجملة في جميع النصوص الموجودة الآن؟ </strong>';
-$string['pluginname'] = 'ترقية عدة لغات';
-$string['privacy:metadata'] = 'لا يقوم الملحق ترقية Multilang upgrade  يخزن أيّ بيانات شخصية.';
+$string['multilangupgradeinfo'] = '<p>لقد تم تغيير بناء الجملة للمرشح متعدد اللغات في الإصدار 1.8 ولذلك لم يعد الوسم <lang> مدعوماً بعد الآن.</p>
+<p>مثال: <span lang="en" class="multilang">Hello!</span><span lang="es" class="multilang">Hola!</span></p>
+<p>هل تريد ترقية بناء الجملة في جميع النصوص الموجودة الآن؟</p>';
+$string['pluginname'] = 'ترقية متعدد اللغات';
+$string['privacy:metadata'] = 'إن ملحق ترقية متعدد اللغات لا يخزن أي بيانات شخصية.';

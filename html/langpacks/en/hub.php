@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'en', version '3.8'.
+ * Strings for component 'hub', language 'en', version '3.11'.
  *
  * @package     hub
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activeparticipantnumberaverage'] = 'Average number of recently active participants ({$a})';
+$string['activeusersnumber'] = 'Number of recently active users ({$a})';
 $string['addscreenshots'] = 'Add screenshots';
 $string['advertise'] = 'Share this course for people to join';
 $string['advertised'] = 'For people to join';
@@ -150,7 +152,7 @@ $string['registerwithmoodleorginfo'] = 'We\'d love to stay in touch and provide 
 $string['registerwithmoodleorginfoapp'] = 'About the Moodle app';
 $string['registerwithmoodleorginfosites'] = 'Other sites in my country';
 $string['registerwithmoodleorginfostats'] = 'Moodle statistics';
-$string['registerwithmoodleorgremove'] = 'You are going to unregister your site. If you continue, you will no longer have access to important notifications and security alerts. Your users will not be able to receive push notifications from your site to their Moodle mobile app. Are you sure you want to unregister your site?';
+$string['registerwithmoodleorgremove'] = 'You are about to unregister your site. You will no longer receive security alert notifications and users will not be able to receive push notifications from your site to their Moodle app. However, you will be able to re-register at any time! Are you sure you want to continue?';
 $string['registerwithmoodleorgupdate'] = 'Update your site registration';
 $string['registrationconfirmed'] = 'Site registration confirmed';
 $string['registrationconfirmedon'] = 'Thank you for registering your site. Registration information will be kept up to date by the \'Site registration\' scheduled task.';
@@ -164,7 +166,7 @@ $string['screenshots'] = 'Screenshots';
 $string['screenshots_help'] = 'Any screenshots of the course will be displayed in search results.';
 $string['search'] = 'Search';
 $string['sendfollowinginfo'] = 'More information';
-$string['sendfollowinginfo_help'] = 'The following information will be sent to contribute to overall statistics only.  It will not be made public on any site listing.';
+$string['sendfollowinginfo_help'] = 'The following information will be sent to Moodle each time your site registration is updated (by default weekly, when the \'Site registration\' scheduled task is run). The information contributes to overall statistics only and will not be made public on any site listing.';
 $string['sendingcourse'] = 'Sending course';
 $string['sendingsize'] = 'Please wait the course file is uploading ({$a->total}Mb)...';
 $string['sent'] = '...finished';

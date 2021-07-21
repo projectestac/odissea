@@ -105,19 +105,19 @@ switch ($type) {
         print_error('unknownbackuptype');
 }
 
-//XTEC ************ AFEGIT - Control backup hours
-//2012.06.04 @aginard
+// XTEC ************ AFEGIT - Control backup hours
+// 2012.06.04 @aginard
 if (!get_protected_agora() && is_rush_hour()) {
     print_error('rush_hour', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $id);
 }
-//************ FI
+// ************ FI
 
-//XTEC ************ AFEGIT - Check if there's enough disk space quota
-//2012.06.04 @aginard
+// XTEC ************ AFEGIT - Check if there's enough disk space quota
+// 2012.06.04 @aginard
 if (($CFG->diskPercent) && ($CFG->diskPercent >= 100)) {
     print_error('diskquotaerror', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $id);
 }
-//************ FI
+// ************ FI
 
 $PAGE->set_title($heading);
 $PAGE->set_heading($heading);
@@ -136,7 +136,7 @@ if (!async_helper::is_async_pending($id, 'course', 'backup')) {
 
     if (!($bc = backup_ui::load_controller($backupid))) {
         $bc = new backup_controller($type, $id, backup::FORMAT_MOODLE,
-                backup::INTERACTIVE_YES, $backupmode, $USER->id);
+                backup::INTERACTIVE_YES, $backupmode, $USER->id, backup::RELEASESESSION_YES);
         // The backup id did not relate to a valid controller so we made a new controller.
         // Now we need to reset the backup id to match the new controller.
         $backupid = $bc->get_backupid();

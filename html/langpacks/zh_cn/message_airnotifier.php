@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'zh_cn', version '3.8'.
+ * Strings for component 'message_airnotifier', language 'zh_cn', version '3.11'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -39,6 +39,7 @@ $string['configairnotifierurl'] = '连接到发送推送通知的服务器url。
 $string['deletecheckdevicename'] = '删除您的设备：{$a->name}';
 $string['deletedevice'] = '删除该设备。请注意，应用程序可以再次注册该设备。如果该设备继续出现，请禁用它。';
 $string['devicetoken'] = '设备令牌';
+$string['enableprocessor'] = '启用移动设备通知';
 $string['errorretrievingkey'] = '检索访问密钥时出错。您的网站必须注册才能使用这项服务。如果您的网站已经注册，请更新您的注册。';
 $string['keyretrievedsuccessfully'] = '访问密钥检索成功。要访问Moodle应用程序使用情况统计信息，请在<a href="https://apps.moodle.com"> Moodle应用程序门户网站</a>上创建一个帐户。';
 $string['moodleappsportallimitswarning'] = '请注意，允许接收通知的用户设备数量取决于您的Moodle应用程序订阅。有关详细信息，请访问<a href="{$a}" target="_blank"> Moodle 应用程序门户网站</a>。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bulkusers', language 'ko', version '3.8'.
+ * Strings for component 'bulkusers', language 'ko', version '3.11'.
  *
  * @package     bulkusers
  * @category    string
@@ -32,6 +32,7 @@ $string['allselectedusers'] = '선택된 모두({$a->count}/{$a->total})';
 $string['allusers'] = '모든 사용자 ({$a})';
 $string['available'] = '사용가능';
 $string['confirmmessage'] = '다음의 모든 사용자에게 쪽지를 보내겠습니까?<br/> {$a}';
+$string['deleteduser'] = '삭제된 사용자';
 $string['nofilteredusers'] = '찾을 수 없음 (0/{$a})';
 $string['noselectedusers'] = '선택한 사용자 없음';
 $string['removeall'] = '모두 제외';

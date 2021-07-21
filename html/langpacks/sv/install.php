@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'sv', version '3.8'.
+ * Strings for component 'install', language 'sv', version '3.11'.
  *
  * @package     install
  * @category    string
@@ -27,9 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['admindirerror'] = 'Den katalog för administration som är angiven är felaktig';
 $string['admindirname'] = 'Admin-katalog';
-$string['admindirsetting'] = 'Ett litet fåtal webbvärdar (t ex hotell) använder /admin som en speciell URL som Du får tillgång till för att kunna använda en kontrollpanel e d. Tyvärr så stämmer detta inte så bra överens med standardplaceringen av Moodles sidor för administration. Du kan ordna till det genom att döpa om admin katalogen i Din installation och skriva in detta nya namn här. Till exempel: <br/> <br /><b>moodleadmin</b><br /> <br /> Detta kommer att rätta till länkarna till admin i Moodle';
+$string['admindirsetting'] = 'Ett fåtal webbhotell använder <b>/admin</b> som en speciell URL för att t.ex. ge åtkomst till en
+    kontrollpanel eller liknande. Tyvärr står detta i konflikt med standardplatsen för Moodle-administratörssidorna. Du kan åtgärda detta genom att byta namn på administratörskatalogen i installationen och ange det nya namnet här. Till exempel: <br> <br><b>moodleadmin</b><br><br>Detta kommer att korrigera administratörslänkarna i Moodle.';
 $string['admindirsettinghead'] = 'Gör inställningar för katalogen admin...';
-$string['admindirsettingsub'] = 'Ett litet fåtal webbvärdar använder /admin som en speciell URL som Du kan använda för att få tillgång till en kontrollpanel eller något dylikt. Detta stämmer tyvärr inte överens med standardplaceringen av Moodles admin-sidor. Du kan rätta till detta genom att byta namn på Din admin-katalog i samband med Din installation, och placera detta nya namn här. T ex <br /> <br /><b>moodleadmin</b><br /> <br /> Detta rättar till admin-länkarna i Moodle';
+$string['admindirsettingsub'] = 'Ett fåtal webbhotell använder <b>/admin</b> som en speciell URL för att t.ex. ge åtkomst till en
+    kontrollpanel eller liknande. Tyvärr står detta i konflikt med standardplatsen för Moodle-administratörssidorna. Du kan åtgärda detta genom att byta namn på administratörskatalogen i installationen och ange det nya namnet här. Till exempel: <br> <br><b>moodleadmin</b><br><br>Detta kommer att korrigera administratörslänkarna i Moodle.';
 $string['availablelangs'] = 'Tillgängliga språkpaket';
 $string['caution'] = 'Varning';
 $string['chooselanguage'] = 'Välj ett språk';
@@ -44,7 +46,7 @@ $string['cliinstallfinished'] = 'Installationen fullföljde framgångsrikt. ';
 $string['cliinstallheader'] = 'Kommandoradsbaserat installationsprogram för Moodle {$a}';
 $string['climustagreelicense'] = 'I oövervakat läge måste du godkänna licensvillkoren genom att ange <code>--agree-license</code> växeln.';
 $string['cliskipdatabase'] = 'Hoppar över databasinstallation.';
-$string['clitablesexist'] = 'Databastabellerna är redan på plats, cli-installationen kan inte fortsätta.';
+$string['clitablesexist'] = 'Databastabellerna finns redan. CLI-installationen kan inte fortsätta.';
 $string['compatibilitysettings'] = 'Kontrollerar Dina PHP-inställningar...';
 $string['compatibilitysettingshead'] = 'Kontrollerar Dina PHP-inställningar...';
 $string['compatibilitysettingssub'] = 'Den server bör klara alla dessa test för att Moodle ska fungera friktionsfritt.';
@@ -64,10 +66,12 @@ $string['databasetypehead'] = 'Välj drivrutin för databasen';
 $string['databasetypesub'] = 'Moodle stödjer ett flertal typer av databasservrar. Vänligen kontakta serveradministratören om du inte vet vilken typ du ska använda.';
 $string['databaseuser'] = 'Databasanvändare';
 $string['dataroot'] = 'Datakatalog';
-$string['datarooterror'] = 'Den "katalog för data" som Du har angivit gick inte att hitta eller skapa. Du får antingen korrigera sökvägen eller skapa katalogen manuellt.';
+$string['datarooterror'] = 'Datakatalogen du angav kunde inte hittas eller skapas. Ändra sökvägen eller skapa katalogen manuellt.';
+$string['datarootpermission'] = 'Behörigheter för datakataloger';
+$string['datarootpublicerror'] = 'Den "datakatalog" du angav är direkt tillgänglig via webben. Använd en annan katalog.';
 $string['dbconnectionerror'] = 'Det gick inte att ansluta till den databas som du har angivit. Vänligen kontrollera inställningarna till din databas.';
 $string['dbcreationerror'] = 'Fel (error) när databasen skulle skapas. Det gick tyvärr inte att skapa det namn (och med de inställningar) på databasen som Du har angivit';
-$string['dbhost'] = 'Värdserver';
+$string['dbhost'] = 'Värd';
 $string['dbpass'] = 'Lösenord';
 $string['dbport'] = 'Port';
 $string['dbprefix'] = 'Prefix för tabeller';
@@ -86,7 +90,7 @@ $string['directorysettingshead'] = 'Vänligen bekräfta platsen för denna Moodl
 $string['directorysettingssub'] = '<b>Webbadress:</b> Ange den fullständiga webbadressen till Moodle. Om det går att nå Din via flerfaldiga URLer så ska Du välja den som det ligger närmast till hands för Dina studenter att använda. Ta inte med något högerlutat snedstreck. <br /> <br /> <b>Katalogen för Moodle:</b> Ange den fullständiga sökvägen till den här installationen. Se till att hänsyn tas till stor/liten bokstav. <br /> <br /> <b>Katalogen för data:</b> Du behöver en plats där Moodle kan lagra de filer som laddas upp till systemet. Denna katalog bör vara läs- och SKRIVBAR för användaren av webbservern (vanligen \'nobody\' eller \'apache\'), men denna katalog bör inte vara tillgänglig direkt via webben.';
 $string['dirroot'] = 'Moodle-katalog';
 $string['dirrooterror'] = 'Inställningarna för "Moodle-katalog" tycks vara felaktiga - det går inte att hitta någon installation av Moodle där. Värdet här nedan har återställts.';
-$string['download'] = 'Ladda ner';
+$string['download'] = 'Ladda ned';
 $string['downloadlanguagebutton'] = 'Ladda ner språkpaketet "{$a}"';
 $string['downloadlanguagehead'] = 'Ladda ner språkpaket';
 $string['downloadlanguagenotneeded'] = 'Du kan fullfölja installationsprocessen samtidigt som Du använder standardpaketet för språk, "{$a}".';
@@ -94,9 +98,11 @@ $string['downloadlanguagesub'] = 'Du har nu möjligheten att ladda ner ett språ
 $string['doyouagree'] = 'Accepterar Du? (ja/nej)';
 $string['environmenthead'] = 'Kontrollerar miljön...';
 $string['environmentsub'] = 'Vi kontrollerar om de olika komponenterna i Ditt system svarar upp mot systemkraven.';
+$string['environmentsub2'] = 'Varje Moodle-utgåva har ett lägsta PHP-versionskrav samt krav på ett antal obligatoriska PHP-tillägg.
+Fullständig miljökontroll görs före varje installation och uppgradering. Kontakta serveradministratören om du inte vet hur du installerar en ny version eller aktiverar PHP-tillägg.';
 $string['errorsinenvironment'] = 'Kontrollen av miljön misslyckades';
 $string['fail'] = 'Misslyckas';
-$string['fileuploads'] = 'Uppladdningar av filer';
+$string['fileuploads'] = 'Filuppladdningar';
 $string['fileuploadserror'] = 'Detta bör vara aktiverat (on)';
 $string['fileuploadshelp'] = '<p>Uppladdning av filer verkar vara inaktiverat på din server.</p>
 <p>Det kan fortfarande vara så att Moodle är installerat, men utan denna funktionalitet så kommer du inte att kunna ladda upp kursfiler eller nya bilder till användarprofilerna. </p>
@@ -105,6 +111,7 @@ $string['inputdatadirectory'] = 'Datakatalog:';
 $string['inputwebadress'] = 'Webbadress:';
 $string['inputwebdirectory'] = 'Moodle-katalog:';
 $string['installation'] = 'Installation';
+$string['invaliddbprefix'] = 'Ogiltigt prefix. Prefixet kan bara bestå av gemener och understreck.';
 $string['langdownloaderror'] = 'Språket "{$a}" gick tyvärr inte att ladda ner. Installationen kommer att fullföljas på engelska.';
 $string['langdownloadok'] = 'Språket "{$a}" installerades framgångsrikt. Installationen kommer att fullföljas på detta språk.';
 $string['memorylimit'] = 'Minnesgräns';
@@ -126,6 +133,12 @@ $string['memorylimithelp'] = '<p>PHP-minnesgränsen för servern är för närva
 <p>Dock kan detta för vissa servrar resultera i att <b>alla</b> PHP-sidor slutar fungera (du får felmeddelande då du försöker visa dem). I dessa fall behöver du ta bort .htaccess-filen.</p></li>
 </ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP har inte blivit korrekt konfigurerat tillsammans med MySQLi-tillägget för att det ska kommunicera med MySQL. Vänligen kontrollera din php.ini fil eller kompilera om PHP.';
+$string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
+$string['nativeauroramysqlhelp'] = '<p>Databasen är där de flesta av Moodles inställningar och data lagras och den måste konfigureras här.</p>
+<p>Databasens namn, användarnamn och lösenord är obligatoriska fält; tabellprefixet är valfritt.</p>
+<p>Databasens namn får endast innehålla alfanumeriska tecken, dollar ($) och understreck (_).</p>
+<p>Om databasen för närvarande inte finns, och användaren du anger har behörighet, kommer Moodle att försöka skapa en ny databas med rätt behörigheter och inställningar.</p>
+<p>Denna drivrutin är inte kompatibel med äldre versioner av MyISAM.</p>';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Databasen är där de flesta av Moodles inställningar och data lagras och den måste konfigureras här.</p>
 <p>Databasens namn, användarnamn och lösenord är obligatoriska fält; tabellprefixet är valfritt.</p>
@@ -145,14 +158,26 @@ $string['nativepgsqlhelp'] = '<p>Databasen är där de flesta av Moodles instäl
 <p>Databasen måste redan finnas och användaren måste ha behörighet att både läsa, och skriva till den.</p>';
 $string['nativesqlsrv'] = 'SQL*Server Microsoft (native/sqlsrv)';
 $string['nativesqlsrvhelp'] = 'Nu måste Du konfigurera databasen där större delen av Moodles data kommer att lagras. Du måste först skapa databasen liksom ett användarnamn och ett lösenord för att få tillgång till den. Ett prefix för tabeller är obligatoriskt. ';
+$string['nativesqlsrvnodriver'] = 'Microsoft-drivrutiner för SQL Server för PHP är inte installerade eller inte korrekt konfigurerade.';
 $string['ociextensionisnotpresentinphp'] = 'PHP har inte konfigurerats på rätt sätt med tillägget OCI8. Därför kan det inte kommunicera med Oracle. Vänligen kontrollera din php.ini-fil eller kompilera om PHP.';
 $string['pass'] = 'Pass';
 $string['paths'] = 'Sökvägar';
-$string['pathserrcreatedataroot'] = 'Datakatalogen ({$a->dataroot}) går inte att skapa med hjälp av installeraren.';
+$string['pathserrcreatedataroot'] = 'Installationsprogrammet kan inte skapa datakatalogen <code>{$a->dataroot}</code>.';
 $string['pathshead'] = 'Bekräfta sökvägar';
 $string['pathsrodataroot'] = 'Det går inte att skriva till dataroot-katalogen.';
 $string['pathsroparentdataroot'] = 'Överliggande katalog ({$a->parent}) är inte skrivbar. Installationsprogrammet kan inte skapa dataroot-katalogen ({$a->dataroot}).';
+$string['pathssubadmindir'] = 'Ett fåtal webbhotell använder <var>/admin</var> som en speciell URL för att ge möjlighet att komma åt en
+kontrollpanel eller liknande. Tyvärr står detta i konflikt med standardplatsen för Moodle-administratörssidorna.  Du kan åtgärda detta genom att
+byta namn på administratörskatalogen i installationen och ange det nya namnet här. Till exempel: <var>moodleadmin</var>. Detta kommer att korrigera administratörslänkarna i Moodle.';
+$string['pathssubdataroot'] = '<p>En katalog där Moodle lagrar allt filinnehåll som laddas upp av användare.</p>
+<p>Den här katalogen ska vara både skriv- och läsbar av webbserveranvändaren (vanligtvis "www-data", "nobody" eller "apache").</p>
+<p>Den får inte vara direkt tillgängligt över internet.</p>
+<p>Om katalogen inte finns kommer installationsprogrammet försöka skapa den.</p>';
 $string['pathssubdirroot'] = '<p>Fullständig sökväg till katalogen som innehåller Moodle-koden.</p>';
+$string['pathssubwwwroot'] = '<p>Den fullständiga webadressen där Moodle finns, dvs. adressen som användarna kommer att ange i adressfältet i sin webbläsare för att komma åt Moodle.</p>
+<p>Det går inte att komma åt Moodle med flera adresser. Om din webbplats är tillgänglig via flera adresser väljer du den enklaste och ställer in en permanent omdirigering för var och en av de andra adresserna.</p>
+<p>Om webbplatsen är tillgänglig både från Internet och från ett internt nätverk (kallas ibland intranät) använder du den publika adressen här.</p>
+<p>Om den aktuella adressen inte är korrekt ändrar du URL:en i webbläsarens adressfält och startar om installationen.</p>';
 $string['pathsunsecuredataroot'] = 'Platsen för dataroot är inte säker';
 $string['pathswrongadmindir'] = 'Admin-katalogen saknas';
 $string['pgsqlextensionisnotpresentinphp'] = 'PHP har inte konfigurerats på rätt sätt med tillägget PGSQL. Därför kan det inte kommunicera med PostgreSQL. Vänligen kontrollera din php.ini-fil eller kompilera om PHP.';
@@ -162,13 +187,13 @@ $string['phpversionhelp'] = '<p>Moodle kräver minst PHP-version 5.6.5 eller 7.1
 <p>Du använder för närvarande version {$a}.</p>
 <p>Du måste uppgradera PHP eller flytta till en server med en nyare version av PHP.</p>';
 $string['releasenoteslink'] = 'För information om den här versionen av Moodle, läs viktig information vid {$a}';
-$string['safemode'] = 'Säkert läge';
+$string['safemode'] = 'Felsäkert läge';
 $string['safemodeerror'] = 'Moodle kan få problem om \'säkert läge\' (safe mode) är aktiverat';
 $string['safemodehelp'] = '<p>Moodle kan få ett antal problem om \'säkert
 läge\' är aktiverat. Systemet kommer t ex troligtvis inte att kunna skapa nya filer.</p>
 <p>Säkert läge är normalt sett bara aktiverat hos mycket försiktiga webbvärdar(t ex webbhotell) så Du kanske helt enkelt måste hitta ett annat webbhotell för Din webbplats med Moodle.</p>
 <p>Du kan försöka att fortsätta installationen om Du vill, men bli inte förvånad om det dyker upp ett och annat problem längre fram.</p>';
-$string['sessionautostart'] = 'Automatisk start av session';
+$string['sessionautostart'] = 'Automatisk sessionsstart';
 $string['sessionautostarterror'] = 'De här bör vara inställt till \'off\'.';
 $string['sessionautostarthelp'] = '<p>Moodle kräver stöd för sessioner och kommer inte att fungera utan det.</p>
 <p>Sessioner kan vara aktiverade i php.ini-filen... kontrollera parametern för session.auto_start. </p>';

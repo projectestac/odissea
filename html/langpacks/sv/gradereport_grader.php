@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'sv', version '3.8'.
+ * Strings for component 'gradereport_grader', language 'sv', version '3.11'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -38,13 +38,26 @@ $string['pluginname'] = 'Betygsrapport';
 $string['preferences'] = 'Inställningar för rapporter från betygsättare';
 $string['privacy:metadata:preference:grade_report_aggregationposition'] = 'Om kolumnerna för kategori och kurssumma visas först eller sist i betygsboksrapporterna';
 $string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'Antalet decimaler som ska visas för varje genomsnitt eller om den övergripande decimalinställningen för kategori- eller betygsobjekten används (ärv).';
+$string['privacy:metadata:preference:grade_report_averagesdisplaytype'] = 'Om genomsnittsbetygen (medelvärdet) visas som verkliga betyg, procentsatser eller bokstäver, eller om visningstypen för kategorin eller betygsobjekten används (ärv).';
+$string['privacy:metadata:preference:grade_report_enableajax'] = 'Om du vill lägga till ett lager av AJAX-funktioner i betygsrapporten för att förenkla och snabba upp vanliga operationer';
 $string['privacy:metadata:preference:grade_report_grader_collapsed_categories'] = 'Lista över betygsbokskategorier som ska fällas ihop';
+$string['privacy:metadata:preference:grade_report_meanselection'] = 'Om celler utan betyg ska inkluderas vid beräkning av medelvärdet för varje kategori eller betygsobjekt';
+$string['privacy:metadata:preference:grade_report_quickgrading'] = 'Om en textinmatningsruta ska visas för varje betyg, så att många resultat kan redigeras samtidigt';
+$string['privacy:metadata:preference:grade_report_rangesdecimalpoints'] = 'Antalet decimaler som ska visas för varje intervall eller om den totala decimalinställningen för kategorin eller betygsobjektet används (ärv)';
 $string['privacy:metadata:preference:grade_report_rangesdisplaytype'] = 'Om intervallet visas som verkliga betyg, procenttal eller bokstäver eller om visningstypen för kategori- eller betygsobjekten används (ärv)';
 $string['privacy:metadata:preference:grade_report_showactivityicons'] = 'Om aktivitetsikonerna bredvid aktivitetsnamnen ska visas';
+$string['privacy:metadata:preference:grade_report_showanalysisicon'] = 'Om ikonen för resultatanalys ska visas som standard. Om aktivitetsmodulen stöder det länkar ikonen för resultatanalys till en sida med mer detaljerad förklaring av resultatet och hur det erhölls.';
+$string['privacy:metadata:preference:grade_report_showaverages'] = 'Om en ytterligare rad ska visas med medelvärdet för varje kategori och betygsobjekt';
+$string['privacy:metadata:preference:grade_report_showcalculations'] = 'Om en kalkylatorikon för varje betygsobjekt och kategori med en visuell indikator på att ett betygsobjekt beräknas visas eller inte när redigeringen är aktiverad';
+$string['privacy:metadata:preference:grade_report_showeyecons'] = 'Om ikonen visa/dölj för varje betyg ska visas för att styra dess synlighet för deltagaren';
 $string['privacy:metadata:preference:grade_report_showlocks'] = 'Om en lås-/upplåsningsikon ska visas för varje resultat för styrning av om betyget automatiskt kan uppdateras av den relaterade aktiviteten när redigering slås på';
 $string['privacy:metadata:preference:grade_report_shownumberofgrades'] = 'Om antalet betyg som används vid beräkning av medelvärde ska visas inom hakparenteser efter varje medelvärde';
 $string['privacy:metadata:preference:grade_report_showonlyactiveenrol'] = 'Om endast aktiva registrerade användare ska visas (inte avstängda) i betygsboksrapporten eller om alla registrerade användare ska visas';
 $string['privacy:metadata:preference:grade_report_showquickfeedback'] = 'Om en inmatningsruta för feedbacktext ska visas med en prickad kantlinje för varje resultat, vilket gör att återkopplingen för många betyg kan redigeras samtidigt';
 $string['privacy:metadata:preference:grade_report_showranges'] = 'Om en ytterligare rad ska visas med intervallet för varje kategori och betygsobjekt';
+$string['privacy:metadata:preference:grade_report_showuserimage'] = 'Om användarens profilbild ska visas bredvid namnet';
+$string['privacy:metadata:preference:grade_report_studentsperpage'] = 'Antalet deltagare som visas per sida i bedömarrapporten';
+$string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Vissa betygsbokskategorier har komprimerats i kursen "{$a->name}"';
+$string['summarygrader'] = 'En tabell med namnen på deltagarna i den första kolumnen, med bedömningsbara aktiviteter grupperade efter kurs och kategori överst.';
 $string['useractivityfeedback'] = '{$a} återkoppling';
 $string['useractivitygrade'] = '{$a} betyg';

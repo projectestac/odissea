@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_mnet_hosts', language 'gl', version '3.8'.
+ * Strings for component 'block_mnet_hosts', language 'gl', version '3.11'.
  *
  * @package     block_mnet_hosts
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['error_authmnetneeded'] = 'O engadido de autenticación de MNet debe estar activado para ver a lista de servidores da rede MNet';
 $string['error_localusersonly'] = 'Os usuarios remotos non poden saltar a outros servidores da rede MNet dende esta máquina';
-$string['error_roamcapabilityneeded'] = 'Os usuarios necesitan o permiso «Pasar a un aplicativo remoto mediante MNet» para ver a lista de servidores da rede MNet';
+$string['error_roamcapabilityneeded'] = 'Os usuarios necesitan o permiso «Pasar a unha aplicación remota mediante MNet» para ver a lista de servidores da rede MNet';
 $string['mnet_hosts:addinstance'] = 'Engadir un novo bloque de servidores de rede';
 $string['mnet_hosts:myaddinstance'] = 'Engadir un novo bloque de servidores de rede ao Taboleiro';
 $string['pluginname'] = 'Servidores de rede';

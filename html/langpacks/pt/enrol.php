@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'pt', version '3.8'.
+ * Strings for component 'enrol', language 'pt', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -36,9 +36,9 @@ $string['assignnotpermitted'] = 'Não tem permissões para atribuir papéis nest
 $string['bulkuseroperation'] = 'Operações de utilizadores em massa';
 $string['configenrolplugins'] = 'Selecione todos os módulos necessários e coloque-os pela ordem correta.';
 $string['custominstancename'] = 'Nome personalizado da instância';
-$string['defaultenrol'] = 'Adicionar a instância a novas disciplinas';
-$string['defaultenrol_desc'] = 'Se esta configuração estiver ativa, este módulo estará ativo por predefinição nas novas disciplinas criadas.';
-$string['deleteinstanceconfirm'] = 'Está prestes a apagar o método de inscrição "{$a->name}". Todos os {$a->users} utilizadores atualmente inscritos através deste método deixarão de estar inscritos e quaisquer informações relacionadas com a disciplina, tais como notas, participação em grupos ou subscrições de fórum, serão apagadas. Tem a certeza de ue pretende continuar?';
+$string['defaultenrol'] = 'Adicionar instância às novas disciplinas';
+$string['defaultenrol_desc'] = 'Se ativar esta opção, este módulo estará ativo por predefinição nas novas disciplinas criadas.';
+$string['deleteinstanceconfirm'] = 'Está prestes a apagar o método de inscrição "{$a->name}". Todos os {$a->users} utilizadores atualmente inscritos através deste método deixarão de estar inscritos e quaisquer informações relacionadas com a disciplina, tais como notas, participação em grupos ou subscrições de fórum, serão apagadas. Tem a certeza de que pretende continuar?';
 $string['deleteinstanceconfirmself'] = 'Tem a certeza absoluta de que pretende eliminar a instância "{$a->name}" que lhe dá acesso a esta disciplina? Se continuar, é possível que deixe de poder aceder a esta disciplina.';
 $string['deleteinstancenousersconfirm'] = 'Está prestes a apagar o método de inscrição "{$a->name}". Tem a certeza de que pretende continuar?';
 $string['disableinstanceconfirmself'] = 'Tem a certeza absoluta de que pretende desativar a instância "{$a->name}" que lhe dá acesso a esta disciplina? Se continuar, é possível que deixe de poder aceder a esta disciplina.';
@@ -61,6 +61,7 @@ $string['enrolmentnew'] = 'Nova inscrição em {$a}';
 $string['enrolmentnewuser'] = 'O utilizador "{$a->user}" inscreveu-se na disciplina "{$a->course}"';
 $string['enrolmentoptions'] = 'Opções de inscrição';
 $string['enrolments'] = 'Inscrições';
+$string['enrolmentupdatedforuser'] = 'A inscrição do utilizador "{$a->fullname}" foi atualizada';
 $string['enrolnotpermitted'] = 'Não tem permissões para inscrever utilizadores nesta disciplina';
 $string['enrolperiod'] = 'Duração da inscrição';
 $string['enroltimecreated'] = 'Data da inscrição';
@@ -83,18 +84,18 @@ $string['eventenrolinstanceupdated'] = 'Método de inscrição atualizado';
 $string['eventuserenrolmentcreated'] = 'Utilizador inscrito na disciplina';
 $string['eventuserenrolmentdeleted'] = 'Utilizador excluído da disciplina';
 $string['eventuserenrolmentupdated'] = 'Atualização de exclusão do utilizador';
-$string['expirynotify'] = 'Notificar antes de a inscrição expirar';
+$string['expirynotify'] = 'Notificar antes da inscrição expirar';
 $string['expirynotify_help'] = 'Esta configuração determina se são enviadas, ou não, as mensagens de notificação de fim da inscrição.';
 $string['expirynotifyall'] = 'Responsável pela inscrição e utilizador inscrito';
 $string['expirynotifyenroller'] = 'Apenas o responsável pela inscrição';
-$string['expirynotifyhour'] = 'Hora de envio das notificações de fim da inscrição';
+$string['expirynotifyhour'] = 'Hora de envio das notificações de expiração da inscrição';
 $string['expirythreshold'] = 'Limite de notificação';
 $string['expirythreshold_help'] = 'Os utilizadores devem ser notificados quanto tempo antes de expirar a inscrição?';
 $string['extremovedaction'] = 'Ação de cancelamento de inscrição externa';
 $string['extremovedaction_help'] = 'Selecione a ação a realizar quando a inscrição de um utilizador desaparece da fonte externa de inscrições. De notar que alguma informação do utilizador e respetivas configurações são apagadas quando a inscrição é cancelada.';
-$string['extremovedkeep'] = 'Manter os utilizadores inscritos';
-$string['extremovedsuspend'] = 'Desativar inscrições na disciplina';
-$string['extremovedsuspendnoroles'] = 'Desativar inscrições na disciplina e remover atribuições de papéis';
+$string['extremovedkeep'] = 'Manter o utilizador inscrito';
+$string['extremovedsuspend'] = 'Desativar inscrição na disciplina';
+$string['extremovedsuspendnoroles'] = 'Desativar inscrição na disciplina e remover atribuições de papéis';
 $string['extremovedunenrol'] = 'Cancelar inscrição do utilizador na disciplina';
 $string['finishenrollingusers'] = 'Terminar inscrições';
 $string['foundxcohorts'] = 'Foram encontrados {$a} Grupos globais';
@@ -113,7 +114,7 @@ $string['noexistingparticipants'] = 'Não existem participantes';
 $string['nogroup'] = 'Sem grupo';
 $string['noguestaccess'] = 'Os visitantes não têm acesso a esta disciplina. Por favor, autentique-se.';
 $string['none'] = 'Nenhum';
-$string['notenrollable'] = 'Esta disciplina não aceita inscrições neste momento.';
+$string['notenrollable'] = 'De momento, esta disciplina não aceita inscrições.';
 $string['notenrolledusers'] = 'Outros utilizadores';
 $string['otheruserdesc'] = 'Estes utilizadores não estão inscritos nesta disciplina mas têm papéis atribuídos (herdados ou atribuídos diretamente).';
 $string['participationactive'] = 'Ativo(a)';
@@ -153,8 +154,9 @@ $string['totalunenrolledusers'] = 'Cancelada a inscrição de {$a} utilizadores'
 $string['unassignnotpermitted'] = 'Não tem permissões para remover atribuições de papéis nesta disciplina';
 $string['unenrol'] = 'Cancelar inscrição';
 $string['unenrolconfirm'] = 'Tem a certeza de que pretende cancelar a inscrição do utilizador "{$a->user}" na disciplina "{$a->course}" (anteriormente inscrito pelo método "{$a->enrolinstancename}")?';
+$string['unenrolleduser'] = 'Foi cancelada a inscrição do utilizador "{$a->fullname}" na disciplina';
 $string['unenrolme'] = 'Cancelar a minha inscrição em {$a}';
-$string['unenrolnotpermitted'] = 'Não tem permissões para cancelar a inscrição deste utilizador nesta disciplina';
+$string['unenrolnotpermitted'] = 'Não tem permissões para cancelar a inscrição deste utilizador nesta disciplina.';
 $string['unenrolroleusers'] = 'Cancelar a inscrição de utilizadores';
 $string['uninstallmigrating'] = 'Migrar "{$a}" inscrições';
 $string['unknowajaxaction'] = 'A ação pedida é desconhecida';

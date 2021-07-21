@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'nl', version '3.8'.
+ * Strings for component 'question', language 'nl', version '3.11'.
  *
  * @package     question
  * @category    string
@@ -86,7 +86,7 @@ $string['categorynamewithcount'] = '{$a->name} ({$a->questioncount})';
 $string['categorynamewithidnumber'] = '{$a->name} [{$a->idnumber}]';
 $string['categorynamewithidnumberandcount'] = '{$a->name} [{$a->idnumber}] ({$a->questioncount})';
 $string['changeoptions'] = 'Wijzig opties';
-$string['changepublishstatuscat'] = 'De instelling voor het delen van <a href="{$a->caturl}">categorie "{$a->name}"</a> in cursus "{$a->coursename}" zal gewijzigd worden van <strong>{$a->changefrom} naar {$a->changeto}</strong>.';
+$string['changepublishstatuscat'] = 'De status voor het delen van <a href="{$a->caturl}">categorie "{$a->name}"</a> in cursus "{$a->coursename}" zal gewijzigd worden van {$a->changefrom} naar {$a->changeto}.';
 $string['check'] = 'Controleer';
 $string['chooseqtypetoadd'] = 'Kies een vraagtype om toe te voegen';
 $string['clearwrongparts'] = 'Verwijder de foute antwoorden';
@@ -360,9 +360,9 @@ $string['privacy:metadata:database:question_attempts'] = 'De informatie over een
 $string['privacy:metadata:database:question_attempts:flagged'] = 'Een indicatie dat de gebruiker deze vraag heeft gemarkeerd tijdens de poging.';
 $string['privacy:metadata:database:question_attempts:responsesummary'] = 'Een samenvatting van het antwoord op de vraag.';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'De tijd dat de vraagpoging werd geüpdatet.';
-$string['privacy:metadata:link:qbehaviour'] = 'Het vraag subsysteem maakt gebruik van het vraaggedrag plugintype';
-$string['privacy:metadata:link:qformat'] = 'Het Vraag subsysteem maakt gebruik van het plugintype Vraagformat om vragen in verschillende formats te importeren en exporteren.';
-$string['privacy:metadata:link:qtype'] = 'Het Vraag subsysteem maakt gebruik van het plugintype Vraagtype dat de verschillende types vragen bevat.';
+$string['privacy:metadata:link:qbehaviour'] = 'Het vraag subsysteem maakt gebruik van het vraaggedrag plugintype.';
+$string['privacy:metadata:link:qformat'] = 'Het vraag subsysteem maakt gebruik van de vraag import/export opmaak plugin-type om vragen in verschillende opmaak te kunnen importeren en exporteren.';
+$string['privacy:metadata:link:qtype'] = 'Het vraag subsysteem maakt gebruik van het plugin type vraag type dat de verschillende types vragen bevat.';
 $string['published'] = 'gepubliceerd';
 $string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = '<a href="{$a->qurl}">Vraag "{$a->name}" ({$a->qtype})</a> is in deze vragencategorie, maar is ook gebruikt in <a href="{$a->qurl}">de test "{$a->quizname}"</a> in een andere cursus: "{$a->coursename}".';
@@ -384,7 +384,7 @@ $string['questionpreviewdefaults'] = 'Standaardinstellingen vraagvoorbeeld';
 $string['questionpreviewdefaults_desc'] = 'Deze standaardwaarden worden gebruikt wanneer een gebruiker vragen bekijkt in de vragenpool. Wanneer een gebruiker een vraag bekeken heeft, worden deze instellingen bewaard als persoonlijke gebruikersvoorkeuren.';
 $string['questions'] = 'Vragen';
 $string['questionsaveerror'] = 'Fouten opgetreden tijdens het bewaren van de vraag - ({$a})';
-$string['questionsinuse'] = '(* Vragen, gemerkt met een asterisk zijn al in gebruik in sommige testen. Deze vragen zullen niet uit de testen gewist worden, enkel uit de categorielijst.)';
+$string['questionsinuse'] = '(* Vragen, gemerkt met een asterisk zijn al in gebruik, bijvoorbeeld in een test. Daarom zullen deze vragen niet verwijderd worden, enkel verborgen.)';
 $string['questionsmovedto'] = 'De nog gebruikte vragen zijn verplaatst naar "{$a}" in de bovenliggende cursuscategorie.';
 $string['questionsrescuedfrom'] = 'Vragen bewaard vanuit context {$a}.';
 $string['questionsrescuedfrominfo'] = 'Deze vragen (waarvan sommigen verborgen kunnen zijn) werden bewaard wanneer context {$a} is verwijderd omdat ze nog gebruikt worden door sommige testen of andere activiteiten.';
@@ -412,7 +412,7 @@ $string['selectcategoryabove'] = 'Selecteer één van de bovenstaande categorie�
 $string['selectquestionsforbulk'] = 'Selecteer vragen voor bulkoperaties';
 $string['settingsformultipletries'] = 'Meerdere pogingen';
 $string['shareincontext'] = 'Deel in context voor {$a}';
-$string['showhidden'] = 'Toon ook oude vragen';
+$string['showhidden'] = 'Toon ook verborgen vragen';
 $string['showmarkandmax'] = 'Toon cijfer en maximum';
 $string['showmaxmarkonly'] = 'Toon alleen maximum';
 $string['shown'] = 'Getoond';

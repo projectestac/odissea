@@ -7,15 +7,15 @@ var DIALOGUE_PREFIX,
     CONFIRMNO,
     TITLE,
     QUESTION,
-    CSS;
+    CSS_CLASSES;
 
-DIALOGUE_PREFIX = 'moodle-dialogue',
-BASE = 'notificationBase',
-CONFIRMYES = 'yesLabel',
-CONFIRMNO = 'noLabel',
-TITLE = 'title',
-QUESTION = 'question',
-CSS = {
+DIALOGUE_PREFIX = 'moodle-dialogue';
+BASE = 'notificationBase';
+CONFIRMYES = 'yesLabel';
+CONFIRMNO = 'noLabel';
+TITLE = 'title';
+QUESTION = 'question';
+CSS_CLASSES = {
     BASE: 'moodle-dialogue-base',
     WRAP: 'moodle-dialogue-wrap',
     HEADER: 'moodle-dialogue-hd',
@@ -28,8 +28,6 @@ CSS = {
 
 // Set up the namespace once.
 M.core = M.core || {};
-/* global BASE, DIALOGUE_PREFIX */
-
 /**
  * A dialogue type designed to display an appropriate error when a generic
  * javascript error was thrown and caught.
@@ -54,16 +52,16 @@ EXCEPTION = function(c) {
     config.width = config.width || (M.cfg.developerdebug) ? Math.floor(Y.one(document.body).get('winWidth') / 3) + 'px' : null;
     config.closeButton = true;
 
-    // We need to whitelist some properties which are part of the exception
+    // We need to allow some properties which are part of the exception
     // prototype, otherwise AttributeCore filters them during value normalisation.
-    var whitelist = [
+    var allowlist = [
         'message',
         'name',
         'fileName',
         'lineNumber',
         'stack'
     ];
-    Y.Array.each(whitelist, function(k) {
+    Y.Array.each(allowlist, function(k) {
         config[k] = c[k];
     });
 

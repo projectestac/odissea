@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'ar', version '3.8'.
+ * Strings for component 'auth_cas', language 'ar', version '3.11'.
  *
  * @package     auth_cas
  * @category    string
@@ -46,7 +46,7 @@ $string['auth_cas_certificate_path_empty'] = 'إذا قمت بتمكين الت�
 $string['auth_cas_certificate_path_key'] = 'مسار الشهادة';
 $string['auth_cas_changepasswordurl'] = 'عنوان تغير كلمة المرور';
 $string['auth_cas_create_user'] = 'فعل هذا لو كنت ترغب في إدراج خدمة التوثيق المركزية لتوثيق للمستخدمين في قاعدة بيانات مودل. في حالة عدم الرغبة فقط المستخدمين المثبتين في قاعدة بيانات مودل يستطيعون الدخول إلى الموقع.';
-$string['auth_cas_create_user_key'] = 'إنشاء مستخدم';
+$string['auth_cas_create_user_key'] = 'إنشاء المستخدم';
 $string['auth_cas_curl_ssl_version'] = 'إصدار SSL (2 أو 3) ليتم استعماله. إفتراضياً، سيحاول PHP تقرير ذلك بنفسه، مع ذلك وفي بعض الحالات، لا بد من ضبطه يدوياً.';
 $string['auth_cas_curl_ssl_version_SSLv2'] = 'SSLv2';
 $string['auth_cas_curl_ssl_version_SSLv3'] = 'SSLv3';
@@ -57,7 +57,7 @@ $string['auth_cas_curl_ssl_version_TLSv1x'] = 'TLSv1.x';
 $string['auth_cas_curl_ssl_version_default'] = 'إفتراضي';
 $string['auth_cas_curl_ssl_version_key'] = 'إصدار cURL SSL';
 $string['auth_cas_enabled'] = 'في حالة رغبتك في استخدام توثيق  CAS قم نشغيل هذا.';
-$string['auth_cas_hostname'] = 'اسم المستضيف لخادم CAS <br />على سبيل المثال: host.domain.fr';
+$string['auth_cas_hostname'] = 'اسم المستضيف لمخدم المصادقة المركزي <br />على سبيل المثال: host.domain.fr';
 $string['auth_cas_hostname_key'] = 'اسم المضيف';
 $string['auth_cas_invalidcaslogin'] = 'عذراَ، لقد أخفقت محاولت دخولك - بربما أنت غير مخول للقيام بذلك.';
 $string['auth_cas_language'] = 'حدد لغة صفحات المصادقة';

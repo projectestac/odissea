@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_memberships', language 'fr', version '3.8'.
+ * Strings for component 'ltiservice_memberships', language 'fr', version '3.11'.
  *
  * @package     ltiservice_memberships
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allow'] = 'Utiliser ce service pour obtenir des information sur les membres, en conformité avec les réglages de confidentialité.';
+$string['allow'] = 'Utiliser ce service pour obtenir des informations sur les membres, en conformité avec les réglages de confidentialité.';
 $string['ltiservice_memberships'] = 'Noms et approvisionnement de rôles IMS LTI';
 $string['ltiservice_memberships_help'] = 'Permettre à l\'outil d\'obtenir les informations des membres à partir du cours, en utilisant le service de noms et d\'approvisionnement de rôles IMS LTI. Les requêtes au niveau du cours seront basées sur les réglages de l\'outil. Si vous voulez que ces informations soient systématiquement envoyées, ne déléguez pas le choix aux enseignants. Les requêtes au niveau des liens respecteront toujours les réglages de confidentialité s\'appliquant au lien.';
 $string['notallow'] = 'Ne pas utiliser ce service';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_mnet', language 'sv', version '3.8'.
+ * Strings for component 'enrol_mnet', language 'sv', version '3.11'.
  *
  * @package     enrol_mnet
  * @category    string
@@ -31,7 +31,7 @@ $string['instancename_help'] = 'Du kan också byta namn på den här instansen a
 $string['mnet:config'] = 'Konfigurera MNet-registreringsinstanser';
 $string['mnet_enrol_description'] = 'Offentliggör den här tjänsten för att tillåta administratörer hos {$a} att registrera sina studenter på kurser som Du har skapat på Din server. <br/><ul><li><em>Beroende</em>: Du måste även <strong>offentliggöra</strong> SSO (tillhandahållare av tjänster) tjänsten hos {$a}.</li><li><em>Beroende</em>: Du måste även <strong>abonnera</strong> på SSO (tillhandahållare av identiteter) tjänsten hos {$a}.</li></ul><br/>Abonnera på den här tjänsten för att det ska vara möjligt att registrera Dina studenter på kurser hos {$a}.<br/><ul><li><em>Beroende</em>: Du måste även <strong>abonnera</strong> på SSO (tillhandahållare av tjänster) tjänsten hos {$a}.</li><li><em>Beroende</em>: Du måste även <strong>offentliggöra</strong> SSO (tillhandahållare av identiteter) tjänsten hos {$a}.</li></ul><br/>';
 $string['mnet_enrol_name'] = 'Fjärregistrerings-tjänst';
-$string['pluginname'] = 'MNet fjärregistreringar';
+$string['pluginname'] = 'Kursregistrering via MNet';
 $string['pluginname_desc'] = 'Tillåter en fjärr MNet-värd att registrera sina användare i våra kurser.';
 $string['privacy:metadata'] = 'Pluginmodulen MNet-fjärregistrering lagrar ingen personlig information.';
 $string['remotesubscriber'] = 'Fjärrvärd';

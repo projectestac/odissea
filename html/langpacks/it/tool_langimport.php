@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'it', version '3.8'.
+ * Strings for component 'tool_langimport', language 'it', version '3.11'.
  *
  * @package     tool_langimport
  * @category    string
@@ -27,6 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['install'] = 'Installa i Language Pack selezionati';
 $string['installedlangs'] = 'Language pack installati';
+$string['installfailed'] = 'L\'installazione dei language pack non è andata a buon fine.';
+$string['installfinished'] = 'L\'installazione dei language pack è terminata.';
+$string['installpending'] = 'Saranno installati i seguenti language pack: {$a}.';
 $string['langimport'] = 'Utility di importazione lingua';
 $string['langimportdisabled'] = 'La funzione di importazione dei language pack è stata disabilitata. I tuoi language pack devono essere aggiornati manualmente a livello di file system. Ricordare di svuotare la cache della stringhe dopo l\'aggiornamento del language pack.';
 $string['langpackinstalled'] = 'Il language pack \'{$a}\' è stato installato correttamente';

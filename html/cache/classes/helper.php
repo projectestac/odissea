@@ -361,20 +361,23 @@ class cache_helper {
     /**
      * Ensure that the stats array is ready to collect information for the given store and definition.
      * @param string $store
+     * @param string $storeclass
      * @param string $definition A string that identifies the definition.
      * @param int $mode One of cache_store::MODE_*. Since 2.9.
      */
-    protected static function ensure_ready_for_stats($store, $definition, $mode = cache_store::MODE_APPLICATION) {
+    protected static function ensure_ready_for_stats($store, $storeclass, $definition, $mode = cache_store::MODE_APPLICATION) {
         // This function is performance-sensitive, so exit as quickly as possible
         // if we do not need to do anything.
         if (isset(self::$stats[$definition]['stores'][$store])) {
             return;
         }
+
         if (!array_key_exists($definition, self::$stats)) {
             self::$stats[$definition] = array(
                 'mode' => $mode,
                 'stores' => array(
                     $store => array(
+                        'class' => $storeclass,
                         'hits' => 0,
                         'misses' => 0,
                         'sets' => 0,
@@ -383,6 +386,7 @@ class cache_helper {
             );
         } else if (!array_key_exists($store, self::$stats[$definition]['stores'])) {
             self::$stats[$definition]['stores'][$store] = array(
+                'class' => $storeclass,
                 'hits' => 0,
                 'misses' => 0,
                 'sets' => 0,
@@ -418,15 +422,22 @@ class cache_helper {
      * In Moodle 2.9 the $definition argument changed from accepting only a string to accepting a string or a
      * cache_definition instance. It is preferable to pass a cache definition instance.
      *
+     * In Moodle 3.9 the first argument changed to also accept a cache_store.
+     *
      * @internal
-     * @param cache_definition $store
+     * @param string|cache_store $store
      * @param cache_definition $definition You used to be able to pass a string here, however that is deprecated please pass the
      *      actual cache_definition object now.
      * @param int $hits The number of hits to record (by default 1)
      */
     public static function record_cache_hit($store, $definition, $hits = 1) {
+        $storeclass = '';
+        if ($store instanceof cache_store) {
+            $storeclass = get_class($store);
+            $store = $store->my_name();
+        }
         list($definitionstr, $mode) = self::get_definition_stat_id_and_mode($definition);
-        self::ensure_ready_for_stats($store, $definitionstr, $mode);
+        self::ensure_ready_for_stats($store, $storeclass, $definitionstr, $mode);
         self::$stats[$definitionstr]['stores'][$store]['hits'] += $hits;
     }
 
@@ -436,15 +447,22 @@ class cache_helper {
      * In Moodle 2.9 the $definition argument changed from accepting only a string to accepting a string or a
      * cache_definition instance. It is preferable to pass a cache definition instance.
      *
+     * In Moodle 3.9 the first argument changed to also accept a cache_store.
+     *
      * @internal
-     * @param string $store
+     * @param string|cache_store $store
      * @param cache_definition $definition You used to be able to pass a string here, however that is deprecated please pass the
      *      actual cache_definition object now.
      * @param int $misses The number of misses to record (by default 1)
      */
     public static function record_cache_miss($store, $definition, $misses = 1) {
+        $storeclass = '';
+        if ($store instanceof cache_store) {
+            $storeclass = get_class($store);
+            $store = $store->my_name();
+        }
         list($definitionstr, $mode) = self::get_definition_stat_id_and_mode($definition);
-        self::ensure_ready_for_stats($store, $definitionstr, $mode);
+        self::ensure_ready_for_stats($store, $storeclass, $definitionstr, $mode);
         self::$stats[$definitionstr]['stores'][$store]['misses'] += $misses;
     }
 
@@ -454,15 +472,22 @@ class cache_helper {
      * In Moodle 2.9 the $definition argument changed from accepting only a string to accepting a string or a
      * cache_definition instance. It is preferable to pass a cache definition instance.
      *
+     * In Moodle 3.9 the first argument changed to also accept a cache_store.
+     *
      * @internal
-     * @param string $store
+     * @param string|cache_store $store
      * @param cache_definition $definition You used to be able to pass a string here, however that is deprecated please pass the
      *      actual cache_definition object now.
      * @param int $sets The number of sets to record (by default 1)
      */
     public static function record_cache_set($store, $definition, $sets = 1) {
+        $storeclass = '';
+        if ($store instanceof cache_store) {
+            $storeclass = get_class($store);
+            $store = $store->my_name();
+        }
         list($definitionstr, $mode) = self::get_definition_stat_id_and_mode($definition);
-        self::ensure_ready_for_stats($store, $definitionstr, $mode);
+        self::ensure_ready_for_stats($store, $storeclass, $definitionstr, $mode);
         self::$stats[$definitionstr]['stores'][$store]['sets'] += $sets;
     }
 
@@ -626,13 +651,15 @@ class cache_helper {
         $factory = cache_factory::instance();
         $factory->updating_started();
         $config = $factory->create_config_instance(true);
-        //XTEC ************ ELIMINAT - To have MUC configured
+
+        //XTEC ************ ELIMINAT - Ensure MUC is configured
         // Never update siteidentifier
         // 2014.08.12 @pferre22
         /*
         $siteidentifier = $config->update_site_identifier($siteidentifier);
         */
         //************ FI
+
         $factory->updating_finished();
         cache_factory::reset();
         return $siteidentifier;
@@ -645,13 +672,15 @@ class cache_helper {
      */
     public static function get_site_identifier() {
         global $CFG;
-        //XTEC ************ ELIMINAT - To have MUC configured
-        // DO not calculate siteidentifier if it is set
-        //2014.08.12 @pferre22
-        if(isset($CFG->siteidentifier) && ! empty($CFG->siteidentifier)){
+
+        // XTEC ************ ELIMINAT - Ensure MUC is configured
+        // Do not calculate siteidentifier if it is set
+        // 2014.08.12 @pferre22
+        if (isset($CFG->siteidentifier) && !empty($CFG->siteidentifier)) {
             return md5((string)$CFG->siteidentifier);
         }
-        //************ FI
+        // ************ FI
+
         if (!is_null(self::$siteidentifier)) {
             return self::$siteidentifier;
         }
@@ -817,7 +846,7 @@ class cache_helper {
         global $CFG;
         if ($stores === null) {
             require_once($CFG->dirroot.'/cache/locallib.php');
-            $stores = cache_administration_helper::get_store_instance_summaries();
+            $stores = core_cache\administration_helper::get_store_instance_summaries();
         }
         $warnings = array();
         foreach ($stores as $store) {

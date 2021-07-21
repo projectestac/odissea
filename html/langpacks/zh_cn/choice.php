@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'zh_cn', version '3.8'.
+ * Strings for component 'choice', language 'zh_cn', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addmorechoices'] = '添加更多选项';
 $string['allowmultiple'] = '允许多选';
 $string['allowupdate'] = '允许修改投票';
-$string['answered'] = '已答';
+$string['answered'] = '已投';
 $string['atleastoneoption'] = '您至少要提供一个可能的选项';
 $string['calendarend'] = '{$a} 结束';
 $string['calendarstart'] = '{$a} 开始';
@@ -53,11 +53,11 @@ $string['choiceoptions_help'] = '在这里您可以指定参与人可以选择�
 $string['choicesaved'] = '您的投票已保存';
 $string['choicetext'] = '投票文本';
 $string['chooseaction'] = '选择一个操作...';
-$string['chooseoption'] = '选择: {$a}';
+$string['chooseoption'] = '选择：{$a}';
 $string['closebeforeopen'] = '您指定的结束日期早于开始日期。';
 $string['completionsubmit'] = '用户投票后显示为完成';
 $string['description'] = '描述';
-$string['deselectalloption'] = '取消选择所有 "{$a}"';
+$string['deselectalloption'] = '取消选择所有"{$a}"';
 $string['displayhorizontal'] = '水平显示';
 $string['displaymode'] = '选项的显示模式';
 $string['displayvertical'] = '垂直显示';
@@ -80,6 +80,7 @@ $string['indicator:socialbreadth_help'] = '这个指标是基于学生在投票�
 $string['indicator:socialbreadthdef'] = '投票活动社会广度';
 $string['indicator:socialbreadthdef_help'] = '在这个分析间隔内，参与人已经达到了投票活动所提供的社会参与度(级别=没有参与，单独参与，和他人一起参与)';
 $string['limit'] = '限制';
+$string['limita'] = '限制：{$a}';
 $string['limitanswers'] = '限制可投的票数';
 $string['limitanswers_help'] = '此选项允许您限制某个选项的可投票数。当达到限制时，投票人无法再投该选项。
 
@@ -141,12 +142,15 @@ $string['publishnot'] = '不向学生公布结果';
 $string['removemychoice'] = '删除我的投票';
 $string['removeresponses'] = '删除所有投票';
 $string['responses'] = '得票数';
+$string['responsesa'] = '得票数：{$a}';
 $string['responsesresultgraphheader'] = '图形显示';
 $string['responsesto'] = '投票给 {$a}';
 $string['results'] = '结果';
 $string['savemychoice'] = '保存我的投票';
 $string['search:activity'] = '投票-活动信息';
 $string['selectalloption'] = '选择所有 "{$a}"';
+$string['showavailable'] = '显示可用空间';
+$string['showavailable_help'] = '允许学生查看每个选项有多少可用空间。';
 $string['showpreview'] = '显示预览';
 $string['showpreview_help'] = '在投票开始之前，允许学生预览可用选项。';
 $string['showunanswered'] = '显示未投票的列';

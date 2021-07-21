@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ko', version '3.8'.
+ * Strings for component 'feedback', language 'ko', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -33,7 +33,7 @@ $string['allowfullanonymous'] = '완전 익명화 허용';
 $string['analysis'] = '분석';
 $string['anonymous'] = '익명';
 $string['anonymous_edit'] = '사용자 이름 기록';
-$string['anonymous_entries'] = '익명 항목 ({$a})';
+$string['anonymous_entries'] = '익명 항목 ({$ a})';
 $string['anonymous_user'] = '익명 사용자';
 $string['append_new_items'] = '새 항목 추가';
 $string['autonumbering'] = '자동 번호 질문';
@@ -48,7 +48,7 @@ $string['check_values'] = '가능한 응답';
 $string['checkbox'] = '선다형-복수답허용(체크박스)';
 $string['choosefile'] = '파일 선택';
 $string['chosen_feedback_response'] = '선택된 피드백 응답';
-$string['complete_the_form'] = '질문에 답하세요';
+$string['complete_the_form'] = '질문에 답하세요.';
 $string['completed'] = '완료';
 $string['completed_feedbacks'] = '제출된 답';
 $string['completionsubmit'] = '피드백이 제출되면 완료된 것으로 보기';
@@ -57,7 +57,7 @@ $string['confirmdeleteentry'] = '이 항목을 삭제하는 것이 확실합니�
 $string['confirmdeleteitem'] = '이 요소를 삭제하는 것이 확실합니까?';
 $string['confirmdeletetemplate'] = '이 템플릿을 삭제하는 것이 확실합니까?';
 $string['confirmusetemplate'] = '이 템플릿을 사용하는 것이 확실합니까?';
-$string['continue_the_form'] = '양식입력 계속';
+$string['continue_the_form'] = '질문에 계속 답하세요';
 $string['count_of_nums'] = '숫자의 갯수';
 $string['courseid'] = '강좌id';
 $string['creating_templates'] = '이 질문들을 새로운 템플릿으로 저장';
@@ -146,9 +146,10 @@ $string['mapcourseinfo'] = '이것은 피드백 블록을 사용하는 모든 �
 $string['mapcoursenone'] = '아무 강좌도 연결되지 않았습니다. 피드백은 모든 강좌에서 사용가능합니다.';
 $string['mapcourses'] = '피드백을 강좌에 매핑';
 $string['mappedcourses'] = '매핑된 강좌';
-$string['maximal'] = '최대의';
+$string['maximal'] = '최대';
 $string['messageprovider:message'] = '피드백 알림';
 $string['messageprovider:submission'] = '피드백 통지';
+$string['minimal'] = '최소';
 $string['mode'] = '모드';
 $string['modulename'] = '피드백(설문)';
 $string['modulename_help'] = '피드백 활동 모듈은 선생님이 선다형, 예 / 아니오 또는 텍스트 입력과 같은 다양한 질문 유형을 사용하여 참가자들로부터 피드백을 수집하기 위해 사용자 정의 설문 조사 하는 것을 가능하게 합니다.
@@ -178,11 +179,12 @@ $string['no_itemname'] = '아이템의 이름 없음';
 $string['no_items_available_yet'] = '아직 어떤 질문도 설정되지 않았음.';
 $string['no_templates_available_yet'] = '아직 아무런 템플릿이 없음';
 $string['non_anonymous'] = '기명, 응답내용 공개';
-$string['non_anonymous_entries'] = '익명이 아닌 항목 ({$a})';
-$string['non_respondents_students'] = '응답 안 한 학생 ({$a})';
+$string['non_anonymous_entries'] = '익명이 아닌 항목 ({$ a})';
+$string['non_respondents_students'] = '응답 학생 없음 ({$ a})';
 $string['not_completed_yet'] = '아직 완료되지 않았음';
 $string['not_selected'] = '선택되지 않았음';
 $string['not_started'] = '개시하지 않음';
+$string['numberoutofrange'] = '초과 인원';
 $string['numeric'] = '숫자 답';
 $string['numeric_range_from'] = '범위시작';
 $string['numeric_range_to'] = '범위끝';

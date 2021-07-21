@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_tex', language 'gl', version '3.8'.
+ * Strings for component 'filter_tex', language 'gl', version '3.11'.
  *
  * @package     filter_tex
  * @category    string
@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configconvertformat'] = 'Se están dispoñíbeis <i>látex</i>, <i>dvips</i> e <i>convert</i>, as imaxes crease empregando o formato especificado. De non ser así, empregarase mimeTeX e crearanse imaxes GIF.';
-$string['convertformat'] = '<i>converter</i> o formato de saída';
+$string['configconvertformat'] = 'Se <i>latex</i> e <i>dvips</i> están presentes ademais de <i>convert</i> ou <i>dvisvgm</i>, seleccione o tipo de imaxe preferido (<i>convert</i> produce GIF ou PNG; <i>dvisvgm</i> produce SVG) De non ser así, empregarase <i>mimeTeX</i> para crear imaxes GIF.';
+$string['convertformat'] = 'Formato da imaxe de saída';
 $string['filtername'] = 'Notación en TeX';
 $string['latexpreamble'] = 'Preámbulo LaTeX';
-$string['latexsettings'] = 'Configuración do procesador de LaTeX';
+$string['latexsettings'] = 'Axustes do procesador de LaTeX';
 $string['pathconvert'] = 'Ruta ao binario <i>convert</i>';
 $string['pathdvips'] = 'Ruta ao binario <i>dvips</i>';
 $string['pathdvisvgm'] = 'Ruta ao binario <i>dvisvgm</i>';

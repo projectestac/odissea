@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_log', language 'pt', version '3.8'.
+ * Strings for component 'tool_log', language 'pt', version '3.11'.
  *
  * @package     tool_log
  * @category    string
@@ -26,18 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Unidades de armazenamento de registo disponíveis';
-$string['configlogplugins'] = 'Por favor, ative todos os módulos necessários e disponha-os pela ordem adequada.';
-$string['exportlog'] = 'Incluir registos de atividade ao realizar a exportação.';
+$string['configlogplugins'] = 'Ative todos os módulos necessários e disponha-os pela ordem adequada.';
+$string['exportlog'] = 'Incluir registos de atividade a quando da exportação.';
 $string['exportlogdetail'] = 'Incluir relatórios relacionados com o utilizador a quando da exportação.';
 $string['logging'] = 'Ferramenta de registo';
-$string['managelogging'] = 'Gerir unidades de armazenamento de registo';
+$string['managelogging'] = 'Gerir armazenamento do registo de atividade';
 $string['pluginname'] = 'Gestor do armazenamento do registo de atividade';
 $string['privacy:metadata:logstore'] = 'As unidade de armazenamento';
-$string['privacy:path:logs'] = 'Autenticações';
-$string['privacy:request:origin:cli'] = 'Linha de comando';
-$string['privacy:request:origin:restore'] = 'Backup a ser restaurado';
+$string['privacy:path:logs'] = 'Registos';
+$string['privacy:request:origin:cli'] = 'Ferramenta Linha de comando';
+$string['privacy:request:origin:restore'] = 'Cópia de segurança a ser restaurada';
 $string['privacy:request:origin:web'] = 'Solicitação standard';
 $string['privacy:request:origin:ws'] = 'Aplicação móvel ou web service';
 $string['reportssupported'] = 'Relatórios suportados';
-$string['subplugintype_logstore'] = 'Unidade de armazenamento de registo';
-$string['subplugintype_logstore_plural'] = 'Unidades de armazenamento de registo';
+$string['subplugintype_logstore'] = 'Unidade de armazenamento do registo de atividade';
+$string['subplugintype_logstore_plural'] = 'Unidades de armazenamento do registo de atividade';

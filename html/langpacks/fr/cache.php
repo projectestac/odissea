@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'fr', version '3.8'.
+ * Strings for component 'cache', language 'fr', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -40,7 +40,10 @@ $string['cachedef_calendar_subscriptions'] = 'Abonnements de calendrier';
 $string['cachedef_capabilities'] = 'Liste des capacités système';
 $string['cachedef_completion'] = 'État de complétude d\'activité';
 $string['cachedef_config'] = 'Réglages';
+$string['cachedef_contentbank_context_extensions'] = 'Extensions autorisées et plugins les supportants dans le contexte de la banque de contenus';
+$string['cachedef_contentbank_enabled_extensions'] = 'Extensions autorisées et plugins les supportants dans la banque de contenus';
 $string['cachedef_contextwithinsights'] = 'Contexte avec indications';
+$string['cachedef_course_image'] = 'Images de cours';
 $string['cachedef_course_user_dates'] = 'Les dates utilisateurs pour les cours configurés en mode dates relatives';
 $string['cachedef_coursecat'] = 'Listes des catégories de cours pour chaque utilisateur';
 $string['cachedef_coursecatrecords'] = 'Enregistrements des catégories de cours';
@@ -54,9 +57,13 @@ $string['cachedef_externalbadges'] = 'Badges externes pour un utilisateur déter
 $string['cachedef_fontawesomeiconmapping'] = 'Correspondance des icônes pour font awesome';
 $string['cachedef_grade_categories'] = 'Requêtes des catégories de notes';
 $string['cachedef_grade_letters'] = 'Requêtes de notes lettre';
+$string['cachedef_gradesetting'] = 'Réglage de note de cours';
 $string['cachedef_groupdata'] = 'Information du groupe de cours';
+$string['cachedef_h5p_content_type_translations'] = 'Traductions des bibliothèques de types de contenu H5P';
+$string['cachedef_h5p_library_files'] = 'Fichiers des bibliothèques H5P';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - contenu nettoyé';
 $string['cachedef_langmenu'] = 'Liste des langues disponibles';
+$string['cachedef_license'] = 'Liste des licences';
 $string['cachedef_locking'] = 'Verrouillage';
 $string['cachedef_message_processors_enabled'] = 'État d\'activation des processeurs de message';
 $string['cachedef_message_time_last_message_between_users'] = 'Durée entre messages les plus récents d\'une conversation';
@@ -69,6 +76,7 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'Instances de por
 $string['cachedef_postprocessedcss'] = 'CSS post-traité';
 $string['cachedef_presignup'] = 'Données avant inscription pour un utilisateur particulier sans compte.';
 $string['cachedef_questiondata'] = 'Définitions des questions';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'Recommandation d\'éléments de contenu de cours';
 $string['cachedef_repositories'] = 'Données d\'instances des dépôts';
 $string['cachedef_roledefs'] = 'Définition des rôles';
 $string['cachedef_string'] = 'Cache des chaînes de caractères traduites';
@@ -76,6 +84,8 @@ $string['cachedef_suspended_userids'] = 'Liste des utilisateurs suspendus, par c
 $string['cachedef_tagindexbuilder'] = 'Résultats de recherche pour les éléments taggés';
 $string['cachedef_tags'] = 'Collections et zones de tags';
 $string['cachedef_temp_tables'] = 'Cache des tables temporaires';
+$string['cachedef_user_course_content_items'] = 'Éléments de contenu de l\'utilisateur (activités, ressources et leurs sous-types) par cours';
+$string['cachedef_user_favourite_course_content_items'] = 'Éléments favoris de l\'utilisateur';
 $string['cachedef_user_group_groupings'] = 'Groupements et groupes d\'utilisateurs par cours';
 $string['cachedef_userselections'] = 'Données utilisées pour conserver les sélections utilisateurs dans Moodle';
 $string['cachedef_yuimodules'] = 'Modules YUI';

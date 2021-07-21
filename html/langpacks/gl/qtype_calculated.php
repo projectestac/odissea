@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'gl', version '3.8'.
+ * Strings for component 'qtype_calculated', language 'gl', version '3.11'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -104,10 +104,10 @@ $string['nextitemtoadd'] = 'Seguinte «Elemento para engadir»';
 $string['nextpage'] = 'Páxina seguinte';
 $string['nocoherencequestionsdatyasetcategory'] = 'Para a pregunta co ID {$a->qid}, o ID da categoría {$a->qcat} non é idéntico ao ID da categoría {$a->sharedcat} do comodín compartido {$a->name}. Edite a pregunta.';
 $string['nocommaallowed'] = 'Non pode usarse a «,»; use o «.» como en 0.013 ou 1.3e-2';
-$string['nodataset'] = 'nada - non é un comodín';
+$string['nodataset'] = 'nada, non é un comodín';
 $string['nosharedwildcard'] = 'Ningún comodín compartido nesta categoría';
 $string['notvalidnumber'] = 'O valor do comodín non é un número admitido';
-$string['oneanswertrueansweroutsidelimits'] = 'Polo menos unha resposta correcta fora dos límites de valor verdadeiro.<br />Modifique os valores dos axustes da tolerancia nas respostas dispoñíbeis en Parámetros avanzados';
+$string['oneanswertrueansweroutsidelimits'] = 'Polo menos unha resposta correcta fóra dos límites de valor verdadeiro.<br />Modifique os valores dos axustes da tolerancia nas respostas dispoñíbeis en Parámetros avanzados';
 $string['param'] = 'Parámetro {<strong> {$a} </strong>}';
 $string['partiallycorrectfeedback'] = 'Para calquera resposta parcialmente correcta';
 $string['pluginname'] = 'Calculada';
@@ -138,7 +138,7 @@ $string['synchronizeyesdisplay'] = 'Sincronizar e amosar o nome dos conxuntos de
 $string['tolerance'] = 'Tolerancia &plusmn;';
 $string['tolerancetype'] = 'Tipo';
 $string['trueanswerinsidelimits'] = 'Resposta correcta: {$a->correct} dentro dos límites de valor verdadeiro {$a->true}';
-$string['trueansweroutsidelimits'] = '<span class="error">ERRO Resposta correcta: {$a->correct} fora dos límites de valor verdadeiro {$a->true}</span>';
+$string['trueansweroutsidelimits'] = '<span class="error">ERRO Resposta correcta: {$a->correct} fóra dos límites de valor verdadeiro {$a->true}</span>';
 $string['uniform'] = 'Uniforme';
 $string['uniformbit'] = 'decimais, dunha distribución uniforme';
 $string['unsupportedformulafunction'] = 'A función {$a} non está admitida';

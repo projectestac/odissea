@@ -9,7 +9,7 @@
     $delete       = optional_param('delete', 0, PARAM_INT);
     $confirm      = optional_param('confirm', '', PARAM_ALPHANUM);   //md5 confirmation hash
     $confirmuser  = optional_param('confirmuser', 0, PARAM_INT);
-    $sort         = optional_param('sort', 'name', PARAM_ALPHANUM);
+    $sort         = optional_param('sort', 'name', PARAM_ALPHANUMEXT);
     $dir          = optional_param('dir', 'ASC', PARAM_ALPHA);
     $page         = optional_param('page', 0, PARAM_INT);
     $perpage      = optional_param('perpage', 30, PARAM_INT);        // how many per page
@@ -183,13 +183,14 @@
     // These columns are always shown in the users list.
     $requiredcolumns = array('city', 'country', 'lastaccess');
     // Extra columns containing the extra user fields, excluding the required columns (city and country, to be specific).
-    $extracolumns = get_extra_user_fields($context, $requiredcolumns);
-    // Get all user name fields as an array.
-    $allusernamefields = get_all_user_name_fields(false, null, null, null, true);
+    $userfields = \core_user\fields::for_identity($context, true)->excluding(...$requiredcolumns);
+    $extracolumns = $userfields->get_required_fields();
+    // Get all user name fields as an array, but with firstname and lastname first.
+    $allusernamefields = \core_user\fields::get_name_fields(true);
     $columns = array_merge($allusernamefields, $extracolumns, $requiredcolumns);
 
     foreach ($columns as $column) {
-        $string[$column] = get_user_field_name($column);
+        $string[$column] = \core_user\fields::get_display_name($column);
         if ($sort != $column) {
             $columnicon = "";
             if ($column == "lastaccess") {
@@ -300,7 +301,7 @@
         $table->head = array ();
         $table->colclasses = array();
         $table->head[] = $fullnamedisplay;
-        $table->attributes['class'] = 'admintable generaltable';
+        $table->attributes['class'] = 'admintable generaltable table-sm';
         foreach ($extracolumns as $field) {
             $table->head[] = ${$field};
         }
@@ -361,14 +362,15 @@
             // edit button
             if (has_capability('moodle/user:update', $sitecontext)) {
                 // prevent editing of admins by non-admins
-                //XTEC ************ MODIFICAT - To let access only to xtecadmin user
-                //2012.07.17 @sarjona
-                //2018.05.26 @svallde2
-                if ((is_siteadmin($USER) or !is_siteadmin($user)) && (is_xtecadmin($USER) or !is_xtecadmin($user)) ) {
+
+                // XTEC ************ MODIFICAT - Allow access only to xtecadmin user
+                // 2012.07.17 @sarjona
+                // 2018.05.26 @svallde2
+                if ((is_siteadmin($USER) or !is_siteadmin($user)) && (is_xtecadmin($USER) or !is_xtecadmin($user))) {
                 /*
                 if (is_siteadmin($USER) or !is_siteadmin($user)) {
                 */
-                //************ FI    
+                // ************ FI
 
                     $url = new moodle_url('/user/editadvanced.php', array('id'=>$user->id, 'course'=>$site->id));
                     $buttons[] = html_writer::link($url, $OUTPUT->pix_icon('t/edit', $stredit));

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_unsuproles', language 'ru', version '3.8'.
+ * Strings for component 'tool_unsuproles', language 'ru', version '3.11'.
  *
  * @package     tool_unsuproles
  * @category    string
@@ -30,3 +30,4 @@ $string['contextlevel'] = 'Уровень контекста';
 $string['count'] = 'Количество';
 $string['noprolbems'] = 'Неподдерживаемые назначения ролей не найдены.';
 $string['pluginname'] = 'Неподдерживаемые назначения ролей';
+$string['privacy:metadata'] = 'Плагин не поддерживаемых назначений ролей не хранит никаких личных данных.';

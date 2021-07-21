@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'eu', version '3.8'.
+ * Strings for component 'qtype_ddimageortext', language 'eu', version '3.11'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -48,7 +48,7 @@ $string['formerror_noallowedtags'] = 'HTML etiketak ez dira onartzen testu honet
 $string['formerror_nobgimage'] = 'Atzeko planoko irudi bat aukeratu behar duzu hartu eta eramateko eremurako.';
 $string['formerror_nofile'] = 'Fitxategi bat igo edo aukeratu behar duzu hemen erabiltzeko.';
 $string['formerror_nofile3'] = 'Hemen irudi-fitxategi bat aukeratu behar duzu, edo bestela ezabatu elementuari lotutako testua eta \'Mugarik gabe\' laukitxoa.';
-$string['formerror_noimageselected'] = 'Eramateko elementu bat aukeratu behar duzu aukera zuzen gisa askatze-eremu honetarako.';
+$string['formerror_noimageselected'] = 'Eramateko toki honetarako eramateko elementu bat aukera zuzen gisa aukeratu behar duzu.';
 $string['formerror_notintxleft'] = 'X koordenatua zenbaki oso bat izan behar da.';
 $string['formerror_notintytop'] = 'Y koordenatua zenbaki oso bat izan behar da.';
 $string['formerror_noxleft'] = 'Eramateko toki honen goiko ezkerreko ertzaren X koordenatuaren balio bat eman behar duzu. Eramateko tokia hartu eta eramana dezakezu koordenatuak automatikoki zehazteko edo bestela eskuz sartu ditzakezu hemen.';
@@ -65,8 +65,11 @@ $string['pluginnamesummary'] = 'Irudiak edo testu-etiketak hartu eta eraman dira
 
 Oharra: Galdera-mota hau ez dago ikuspen urritasuna duten erabiltzaileentzako eskuragarri.';
 $string['previewareaheader'] = 'Aurrebista';
-$string['previewareamessage'] = 'Aukeratu atzeko planoaren irudia, zehaztu elementu eramangarriak eta kokatu elementuak irudiaren gainean kokatzeko eramateko tokiak.';
-$string['privacy:metadata'] = 'Hartu eta eraman irudira galdera mota pluginak ez du datu pertsonalik biltzen.';
+$string['previewareamessage'] = 'Aukeratu atzeko planoko irudia, zehaztu elementu eramangarriak eta kokatu elementuak irudiaren gainean kokatzeko eramateko tokiak.';
+$string['privacy:metadata'] = 'Hartu eta eraman irudira galdera mota pluginak egileari aukera lehenetsiak erabiltzaile hobespen gisa gordetzea baimentzen dio.';
+$string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
+$string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
+$string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu behar diren edo ez.';
 $string['refresh'] = 'Freskatu aurrebista';
 $string['shuffleimages'] = 'Nahastu elementu eramangarriak galderari erantzuten zaion bakoitzean';
 $string['summarisechoice'] = '{$a->no}. {$a->text}';

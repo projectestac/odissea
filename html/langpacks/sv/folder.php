@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'sv', version '3.8'.
+ * Strings for component 'folder', language 'sv', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -28,9 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['bynameondate'] = 'av {$a->name} - {$a->date}';
 $string['contentheader'] = 'Innehåll';
 $string['display'] = 'Visa mappinnehåll';
-$string['display_help'] = 'Om du väljer att visa mappinnehållet på kurssidan så kommer det inte finnas någon länk till en separat sida. Beskrivningen visas enbart om "Visa beskrivning på kurssidan" är ikryssad.
-
-Notera också att deltagarnas visningar inte kan loggas i det här fallet."';
+$string['display_help'] = 'Om du väljer att visa mappinnehållet på kurssidan kommer det inte finnas någon länk till en separat sida. Beskrivningen visas enbart om <em>"Visa beskrivning på kurssidan"</em> är markerad. Observera att i det fallet kan inte deltagarnas visningsåtgärder loggas.';
 $string['displayinline'] = 'På kurssidan';
 $string['displaypage'] = 'På en separat sida';
 $string['dnduploadmakefolder'] = 'Packa upp filer och skapa mapp';
@@ -41,6 +39,8 @@ $string['folder:addinstance'] = 'Lägg till en ny mapp';
 $string['folder:managefiles'] = 'Hantera filer i modulen för mappar';
 $string['folder:view'] = 'Visa mappinnehåll';
 $string['foldercontent'] = 'Filer och undermappar';
+$string['forcedownload'] = 'Tvinga nedladdning av filer';
+$string['forcedownload_help'] = 'Om vissa filer, till exempel bilder eller HTML-filer, ska visas i webbläsaren i stället för att laddas ned. Observera att inställningen av säkerhetsskäl endast bör avmarkeras om alla användare med möjlighet att hantera filer i mappen är betrodda användare.';
 $string['indicator:cognitivedepth'] = 'Mapp kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Mappresurs.';
 $string['indicator:cognitivedepthdef'] = 'Folder kognitivt';
@@ -52,12 +52,12 @@ $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procent
 $string['maxsizetodownload'] = 'Maximal nedladdningsstorlek (MB)';
 $string['maxsizetodownload_help'] = 'Den maximala mappstorleken som kan laddas ner som en zip-fil. Om den är inställd på noll är mappstorleken obegränsad.';
 $string['modulename'] = 'Mapp';
-$string['modulename_help'] = 'Med modulen för mappar kan en lärare visa ett antal relaterade filer i en enda mapp, vilket minskar scrollande och långa listor på kurssidan. En packad mapp kan laddas upp och packas upp för visning eller så kan en tom mapp skapas och filer laddas upp till den.
+$string['modulename_help'] = 'Aktiviteten <em>Mapp</em> gör det möjligt för en lärare att visa ett antal relaterade filer i en enda mapp, vilket minskar behovet av att skrolla på kurssidan. En komprimerad mapp (i form av en ZIP-fil) kan laddas upp och packas upp för visning, eller så kan en tom mapp skapas och filer laddas upp till den.
 
-En mapp kan t.ex. användas
+En mapp kan användas
 
-* För en serie filer inom ett ämne, till exempel en uppsättning åhörarkopior i pdf-format eller en samling bildfiler för användning i studentprojekt
-* För att tillhandahålla ett gemensamt uppladdningsutrymme för lärare på kurssidan (förutsatt att mappen hålls dold så att endast lärare kan se den)';
+* För en serie filer inom ett ämne, till exempel en uppsättning tidigare examenshandlingar i pdf-format eller en samling bildfiler för användning i studentprojekt
+* För att tillhandahålla ett delat uppladdningsutrymme för lärare på kurssidan (mappen hålls dold så att enbart lärare kan se den)';
 $string['modulenameplural'] = 'Mappar';
 $string['newfoldercontent'] = 'Nytt innehåll i mappen';
 $string['noautocompletioninline'] = 'Automatiskt slutförande vid visning av aktivitet kan inte väljas tillsammans med alternativet "Visa på kurssidan"';
@@ -70,4 +70,4 @@ $string['search:activity'] = 'Mapp';
 $string['showdownloadfolder'] = 'Visa knappen "Ladda ned mapp"';
 $string['showdownloadfolder_help'] = '"Ladda ned mapp" tillåter användaren att ladda ned allt innehåll i mappen som en zip-fil.';
 $string['showexpanded'] = 'Visa undermappar expanderade';
-$string['showexpanded_help'] = 'Om aktiverat så visas undermappar expanderade som standard. Om inte visas undermappar ihopfällda.';
+$string['showexpanded_help'] = 'Om inställt på "ja" visas underkataloger expanderade som standard. Annars visas de ihopfällda.';

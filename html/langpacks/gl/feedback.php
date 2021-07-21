@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'gl', version '3.8'.
+ * Strings for component 'feedback', language 'gl', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add_item'] = 'Engadir pregunta á actividade';
-$string['add_pagebreak'] = 'Engadir unha quebra de páxina';
+$string['add_pagebreak'] = 'Engadir unha creba de páxina';
 $string['adjustment'] = 'Axuste';
-$string['after_submit'] = 'Despois de entrega';
+$string['after_submit'] = 'Após a entrega';
 $string['allowfullanonymous'] = 'Permitir anonimato completo';
 $string['analysis'] = 'Análise';
 $string['anonymous'] = 'Anónimo';
@@ -40,16 +40,16 @@ $string['append_new_items'] = 'Anexar elementos novos';
 $string['autonumbering'] = 'Numeración automática de preguntas';
 $string['autonumbering_help'] = 'Activa ou desactiva a numeración automática para cada pregunta';
 $string['average'] = 'Media';
-$string['bold'] = 'Negra';
+$string['bold'] = 'Grosa';
 $string['calendarend'] = 'Péchanse os comentarios {$a}';
 $string['calendarstart'] = 'Ábrense os comentarios {$a}';
 $string['cannotaccess'] = 'Só pode acceder a este comentarios dende un curso';
 $string['cannotsavetempl'] = 'Non se permite gardar modelos';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Non se estabeleceu o captcha.';
-$string['check'] = 'Escolla múltiple - respostas múltiples';
+$string['check'] = 'Escolla múltiple, respostas múltiples';
 $string['check_values'] = 'Posíbeis respostas';
-$string['checkbox'] = 'Escolla múltiple - permítense respostas múltiples (caixas de selección)';
+$string['checkbox'] = 'Escolla múltiple, permítense respostas múltiples (caixas de selección)';
 $string['choosefile'] = 'Escolla un ficheiro';
 $string['chosen_feedback_response'] = 'Escolleuse o comentario de resposta';
 $string['closebeforeopen'] = 'Especificou unha data de remate anterior á do inicio.';
@@ -78,7 +78,7 @@ $string['depending_help'] = 'É posíbel amosar un elemento en función do valor
 <strong>Vexa aquí un exemplo.</strong><br />
 <ul>
 <li>Primeiro, crear un elemento do que dependa outro elemento.</li>
-<li>Logo, engada unha quebra de páxina.</li>
+<li>Logo, engada unha creba de páxina.</li>
 <li>Logo, engada os elementos dependentes do valora do elemento creado antes. Escolla o elemento da lista etiquetado como «Elemento dependente» e escriba o valor requirido na caixa de texto etiquetada como «Valor da dependencia».</li>
 </ul>
 <strong>A estrutura do elemento debería parecerse a isto.</strong>
@@ -97,9 +97,9 @@ $string['description'] = 'Descrición';
 $string['do_not_analyse_empty_submits'] = 'Non analizar as entregas baleiras';
 $string['downloadresponseas'] = 'Descargar tódalas respostas como:';
 $string['drop_feedback'] = 'Retirar deste curso';
-$string['dropdown'] = 'Escolla múltiple - permítese a resposta única (menú despregábel)';
+$string['dropdown'] = 'Escolla múltiple, permítese a resposta única (menú despregábel)';
 $string['dropdown_values'] = 'Respostas';
-$string['dropdownlist'] = 'Escolla múltiple - resposta única (menú despregábel)';
+$string['dropdownlist'] = 'Escolla múltiple, resposta única (menú despregábel)';
 $string['dropdownrated'] = 'Menú despregábel (puntuado)';
 $string['edit_item'] = 'Editar a pregunta';
 $string['edit_items'] = 'Editar as preguntas';
@@ -127,7 +127,7 @@ $string['feedback:edititems'] = 'Editar elementos';
 $string['feedback:mapcourse'] = 'Asignar cursos para comentarios globais';
 $string['feedback:receivemail'] = 'Recibir notificación por correo';
 $string['feedback:view'] = 'Ver un comentario';
-$string['feedback:viewanalysepage'] = 'Ver a páxina de análise despois da entrega';
+$string['feedback:viewanalysepage'] = 'Ver a páxina de análise após a entrega';
 $string['feedback:viewreports'] = 'Ver informes';
 $string['feedback_is_not_for_anonymous'] = 'Non é posíbel comentar como anónimo';
 $string['feedback_is_not_open'] = 'Os comentarios non están abertos';
@@ -185,7 +185,7 @@ As actividades de comentario pódense utilizar
 * Para avaliacións do curso, axudando a mellorar o contido para os posteriores participantes
 * Para permitirlles aos participantes rexistrarte nos módulos de cursos, actividades, etc
 * Para enquisas de convidados sobre opcións de cursos, normas escolares, etc.
-* Para enquisas antiabuso nas que os alumnos poden informar sobre incidentes anonimamente';
+* Para enquisas antiacoso nas que os alumnos poden informar sobre incidentes anonimamente';
 $string['modulename_link'] = 'mod/feedback/ver';
 $string['modulenameplural'] = 'Comentarios';
 $string['move_item'] = 'Mover esta pregunta';
@@ -206,11 +206,11 @@ $string['no_items_available_yet'] = 'Aínda non se engadiron preguntas';
 $string['no_templates_available_yet'] = 'Aínda non hai modelos dispoñíbeis';
 $string['non_anonymous'] = 'Rexistrarase o nome de usuario e amosarase xunto coas respostas';
 $string['non_anonymous_entries'] = 'Sen entradas anónimas ({$a})';
-$string['non_respondents_students'] = 'Non respondeu ningún alumno ({$a})';
+$string['non_respondents_students'] = 'Alumnos que non responden ({$a})';
 $string['not_completed_yet'] = 'Aínda sen completar';
 $string['not_selected'] = 'Non seleccionado';
 $string['not_started'] = 'Sen iniciar';
-$string['numberoutofrange'] = 'Número fora do intervalo';
+$string['numberoutofrange'] = 'Número fóra do intervalo';
 $string['numeric'] = 'Resposta numérica';
 $string['numeric_range_from'] = 'Intervalo de';
 $string['numeric_range_to'] = 'Intervalo ata';
@@ -241,7 +241,7 @@ $string['question'] = 'Pregunta';
 $string['questionandsubmission'] = 'Axustes da pregunta e da entrega';
 $string['questions'] = 'Preguntas';
 $string['questionslimited'] = 'Amosando só as primeiras preguntas de {$a}, ver as respostas individuais ou descargar datos de táboas para ver todo.';
-$string['radio'] = 'Escolla múltiple - resposta única';
+$string['radio'] = 'Escolla múltiple, resposta única';
 $string['radio_values'] = 'Respostas';
 $string['ready_feedbacks'] = 'Comentarios listos';
 $string['required'] = 'Requirido';

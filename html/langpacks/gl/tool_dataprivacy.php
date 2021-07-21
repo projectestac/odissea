@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'gl', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'gl', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -61,7 +61,7 @@ $string['confirmdenial'] = 'Confirma que quere denegar esta solicitude de datos?
 $string['confirmrequestresubmit'] = 'Confirma que quere eliminar a actual solicitude {$a->type} para {$a->username} e reenviala?';
 $string['contactdataprotectionofficer'] = 'Contacte co responsábel da privacidade';
 $string['contactdataprotectionofficer_desc'] = 'Se está activado, os usuarios poderán contactar co responsábel da privacidade e realizar unha solicitude de datos a través dunha ligazón na páxina de perfil.';
-$string['contactdpoviaprivacypolicy'] = 'Póñase en contacto co responsábel da privacidade tal e como se describe na política de privacidade.';
+$string['contactdpoviaprivacypolicy'] = 'Póñase en contacto co responsábel da privacidade tal e como se describe na directiva de privacidade.';
 $string['contextlevelname10'] = 'Sitio';
 $string['contextlevelname30'] = 'Usuarios';
 $string['contextlevelname40'] = 'Categorías de curso';
@@ -86,7 +86,7 @@ $string['dataprivacy:managedatarequests'] = 'Xestionar as solicitudes de datos';
 $string['dataprivacy:requestdelete'] = 'Solicitar a eliminación de datos para vostede mesmo';
 $string['dataprivacy:requestdeleteforotheruser'] = 'Solicitar a eliminación de datos en nome doutro usuario';
 $string['dataregistry'] = 'Rexistro de datos';
-$string['dataregistryinfo'] = 'O rexistro de datos permite estabelecer categorías (tipos de datos) e propósitos (os motivos do tratamento de datos) para todo o contido do sitio - desde usuarios e cursos ata actividades e bloques. Para cada propósito, pódese estabelecer un período de retención. Cando un período de retención caduca, os datos son marcados e listados para eliminalos, agardando a confirmación do administrador.';
+$string['dataregistryinfo'] = 'O rexistro de datos permite estabelecer categorías (tipos de datos) e propósitos (os motivos do tratamento de datos) para todo o contido do sitio, dende usuarios e cursos ata actividades e bloques. Para cada propósito, pódese estabelecer un período de retención. Cando un período de retención caduca, os datos son marcados e listados para eliminalos, agardando a confirmación do administrador.';
 $string['datarequestcreatedforuser'] = 'Solicitude de datos creada para {$a}';
 $string['datarequestcreatedfromscheduledtask'] = 'Creado automaticamente dende unha tarefa programada (usuario preexistente eliminado).';
 $string['datarequestcreatedupondelete'] = 'Creada automaticamente ao eliminar o usuario.';
@@ -103,7 +103,7 @@ $string['defaultexpiredexcept'] = 'Datos para todos os usuarios, agás aqueles q
 {$a->unexpired}';
 $string['defaultsinfo'] = 'As categorías e os propósitos predeterminados aplícanse a todas as instancias creadas recentemente.';
 $string['defaultssaved'] = 'Gardados os valores predeterminados';
-$string['defaultswarninginfo'] = 'Aviso: o cambio destes valores predeterminados pode afectar o período de retención de instancias existentes.';
+$string['defaultswarninginfo'] = 'Advertencia: o cambio destes valores predeterminados pode afectar o período de retención de instancias existentes.';
 $string['defaultunexpired'] = 'Só datos para usuarios con calquera dos seguintes roles:<br>
 {$a->expired}';
 $string['defaultunexpiredwithexceptions'] = 'Só datos para usuarios que teñan algún dos seguintes roles:<br>
@@ -187,7 +187,7 @@ $string['gdpr_art_9_2_d_name'] = 'Actividades lexítimas respecto dos membros/co
 $string['gdpr_art_9_2_e_description'] = 'O tratamento corresponde a datos de carácter persoal manifestados polo interesado';
 $string['gdpr_art_9_2_e_name'] = 'Datos feitos públicos polo interesado (RXPD Art. 9.2(e))';
 $string['gdpr_art_9_2_f_description'] = 'O tratamento é necesario para o estabelecemento, o exercicio ou a defensa das reclamacións legais ou sempre que os tribunais de xustiza actúen na súa capacidade xudicial';
-$string['gdpr_art_9_2_f_name'] = 'Requirimentos legais e accións dos tribunais de xustiza (RXPD Art. 9.2(f))';
+$string['gdpr_art_9_2_f_name'] = 'Requisitos legais e accións dos tribunais de xustiza (RXPD Art. 9.2(f))';
 $string['gdpr_art_9_2_g_description'] = 'O tratamento é necesario por razóns de interese público substancial, en función da lei da Unión Europea ou dos Estados membro que sexa proporcional ao obxectivo perseguido, respectar a esencia do dereito á protección de datos e estabelecer medidas adecuadas e específicas para salvagardar os dereitos fundamentais e os intereses do suxeito de datos';
 $string['gdpr_art_9_2_g_name'] = 'Interese público substancial (RXPD Art. 9.2(g))';
 $string['gdpr_art_9_2_h_description'] = 'O tratamento é necesario para fins de medicina preventiva ou ocupacional, para a avaliación da capacidade de traballo do empregado, o diagnóstico médico, a prestación de asistencia sanitaria ou social ou o tratamento ou a xestión dos sistemas e servizos sanitarios ou sociais en base a lei da Unión Europea ou dos Estados membro ou de acordo co contrato cun profesional da saúde e suxeito ás condicións e salvagardas a que se refire o parágrafo 3 do Artigo 9 do RXPD';
@@ -228,7 +228,7 @@ $string['nosubjectaccessrequests'] = 'Non hai solicitudes de datos que requiran 
 $string['nosystemdefaults'] = 'O propósito e a categoría do sitio aínda non foron definidos.';
 $string['notset'] = 'Sen estabelecer (use o valor predeterminado)';
 $string['notyetexpired'] = '{$a} (aínda non caducou)';
-$string['overrideinstances'] = 'Restablecer as instancias con valores personalizados';
+$string['overrideinstances'] = 'Restabelecer as instancias con valores personalizados';
 $string['pluginname'] = 'Privacidade de datos';
 $string['pluginname_help'] = 'Engadido de privacidade de datos';
 $string['pluginregistry'] = 'Rexistro do engadido de privacidade';
@@ -252,7 +252,7 @@ $string['purpose_help'] = 'O propósito describe o motivo do tratamento dos dato
 $string['purposecreated'] = 'Creado o propósito';
 $string['purposedefault'] = 'Propósito predeterminado';
 $string['purposedefault_help'] = 'O propósito predeterminado é o propósito que se aplica a todas as novas instancias. Se se selecciona «herdado», aplícase o propósito dun contexto máis elevado. Os contexto son (de baixo a alto): Bloques > Módulos de actividade > Cursos > Categorías de curso > Usuario > Sitio.';
-$string['purposeoverview'] = 'Un propósito describe o uso ao que está destinado e a política de retención para datos almacenados. A base para almacenar e reter eses datos está tamén descrita no propósito.';
+$string['purposeoverview'] = 'Un propósito describe o uso ao que está destinado e a directiva de retención para datos almacenados. A base para almacenar e reter eses datos está tamén descrita no propósito.';
 $string['purposes'] = 'Propósitos';
 $string['purposeslist'] = 'Lista de propósitos de datos';
 $string['purposeupdated'] = 'Actualizado o propósito';
@@ -288,11 +288,11 @@ $string['requireallenddatesforuserdeletion_desc'] = 'Cando se calcula a caducida
 * a hora do último acceso do usuario comparase co período de retención para usuarios; y
 * se é que o usuario está matriculado activamente nalgún curso.
 
-Ao revisar as matriculacións activas dun curso, se o curso non ten data de remate, entón esta configuración usase para determinar se ese curso considerase activo ou non.
+Ao revisar as matriculacións activas dun curso, se o curso non ten data de remate, entón este axuste usase para determinar se ese curso se considera activo ou non.
 
-Se o curso non ten data de remate, e esta configuración está activada, entón o usuario non pode ser eliminado';
+Se o curso non ten data de remate, e este axuste está activado, entón o usuario non pode ser eliminado';
 $string['requiresattention'] = 'Require atención.';
-$string['requiresattentionexplanation'] = 'Este engadido non implementa a API de privacidade de Moodle. Se este engadido almacena datos persoais non se poderán exportar nin eliminar mediante o sistema de privacidade de Moodle.';
+$string['requiresattentionexplanation'] = 'Este engadido non inclúe a API de privacidade de Moodle. Se este engadido almacena datos persoais non se poderán exportar nin eliminar mediante o sistema de privacidade de Moodle.';
 $string['resubmitrequest'] = 'Reenviar a solicitude {$a->type} para {$a->username}';
 $string['resubmitrequestasnew'] = 'Reenviar como solicitude nova';
 $string['resubmittedrequest'] = 'A solicitude actual {$a->type} para {$a->username} foi cancelada e reenviada';
@@ -306,10 +306,10 @@ $string['reviewdata'] = 'Revisar os datos';
 $string['role'] = 'Rol';
 $string['role_help'] = 'O rol ao que debería aplicárselle a anulación.';
 $string['roleoverride'] = 'Anulación de rol';
-$string['roleoverrideoverview'] = 'A política de retención predeterminada pode ser anulada para roles específicos de usuarios, permitíndolle a vostede especificar unha política de retención máis longa ou máis curta. Un usuario soamente está caducado cando todos os seus roles caducaron.';
+$string['roleoverrideoverview'] = 'A directiva de retención predeterminada pode ser anulada para roles específicos de usuarios, permitíndolle a vostede especificar unha directiva de retención máis longa ou máis curta. Un usuario soamente está caducado cando todos os seus roles caducaron.';
 $string['roleoverrides'] = 'Anulacións de roles';
 $string['selectbulkaction'] = 'Seleccione unha acción masiva';
-$string['selectdatarequests'] = 'Selectool_dataprivacy.phpcione as solicitudes de datos.';
+$string['selectdatarequests'] = 'Seleccione as solicitudes de datos.';
 $string['selectuserdatarequest'] = 'Seleccionar solicitudes de datos {$a->requesttype} de {$a->username}.';
 $string['send'] = 'Enviar';
 $string['sensitivedatareasons'] = 'Motivos de procesamento de datos persoais sensíbeis';
@@ -325,11 +325,10 @@ $string['statusdeleted'] = 'Eliminado';
 $string['statusdetail'] = 'Estado:';
 $string['statusexpired'] = 'Caducado';
 $string['statuspending'] = 'Pendente';
-$string['statuspreprocessing'] = 'Pre-procesamento';
 $string['statusprocessing'] = 'Procesando';
 $string['statusready'] = 'Descarga preparada';
 $string['statusrejected'] = 'Rexeitado';
-$string['subjectscope'] = 'Alcance do asunto';
+$string['subjectscope'] = 'Alcance del asunto';
 $string['subjectscope_help'] = 'O alcance do asunto enumera as funcións que poden asignarse neste contexto.';
 $string['summary'] = 'Resumo da configuración do rexistro';
 $string['systemconfignotsetwarning'] = 'Non foron definidos unha categoría e un propósito do sitio. Cando iso non está definido, tódolos datos serán retirados cando se procesen as solicitudes de eliminación.';

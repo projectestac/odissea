@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'ja', version '3.8'.
+ * Strings for component 'lti', language 'ja', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -42,6 +42,8 @@ $string['activate'] = 'アクティブ';
 $string['activatetoadddescription'] = 'あなたは説明を追加する前にこのツールを有効化する必要があります。';
 $string['active'] = 'アクティブ';
 $string['activity'] = '活動';
+$string['add_ltiadv'] = 'LTIアドバンテージを追加する';
+$string['add_ltilegacy'] = 'レガシーLTIを追加する';
 $string['addnewapp'] = '外部アプリケーションを有効にする';
 $string['addserver'] = '新しい信頼できるサーバを追加する';
 $string['addtype'] = '事前設定ツールを追加する';
@@ -62,6 +64,7 @@ $string['basicltifieldset'] = 'カスタムテンプレートフィールド';
 $string['basicltiintro'] = '活動説明';
 $string['basicltiname'] = '活動名';
 $string['basicltisettings'] = '基本学習ツール相互運用 (Learning Tool Interoperability) 設定';
+$string['cachedef_keyset'] = 'ツールの鍵セット情報をキャッシュする';
 $string['cancel'] = 'キャンセル';
 $string['cancelled'] = 'キャンセル';
 $string['cannot_delete'] = 'あなたはこのツール設定を削除できません。';
@@ -84,7 +87,11 @@ $string['configtypes'] = 'LTIアプリケーションを有効にする';
 $string['configured'] = '設定';
 $string['confirmtoolactivation'] = '本当にこのツールを有効にしてもよろしいですか?';
 $string['contentitem'] = 'Content-Itemメッセージ';
+$string['contentitem_deeplinking'] = 'ディープリンクをサポートする (Content-Item Message)';
+$string['contentitem_deeplinking_help'] = 'この設定を有効にした場合、外部ツール追加時にオプション「コンテンツを選択する」が利用可能となります。';
 $string['contentitem_help'] = 'この設定を有効にした場合、外部ツール追加時にオプション「コンテンツを選択する」が利用可能となります。';
+$string['contentitem_multiple_description'] = '次のアイテムがあなたのコースに追加されます:';
+$string['contentitem_multiple_graded'] = '評定済み活動 (最大評点: {$a})';
 $string['course_tool_types'] = 'コースツール';
 $string['courseactivitiesorresources'] = 'コース活動またはリソース';
 $string['courseid'] = 'コースIDナンバー';
@@ -114,6 +121,7 @@ $string['default_launch_container_help'] = '起動コンテナはコースから
 
 * **新しいウィンドウ** - ツールは利用可能なスペースすべてを占有して新しいウィンドウに表示されます。ブラウザにより新しいタブまたはポップアップウィンドウが使用されます。ブラウザでは新しいウィンドウのオープンを抑制することができます。';
 $string['delegate'] = '教師に委任する';
+$string['delegate_tool'] = 'ディープリンク定義で指定または教師を代表する';
 $string['delete'] = '削除';
 $string['delete_confirmation'] = '本当にこの事前設定ツールを削除してもよろしいですか?';
 $string['deletetype'] = '事前設定ツールを削除する';
@@ -134,6 +142,14 @@ $string['donot'] = '送信しない';
 $string['donotaccept'] = '承認しない';
 $string['donotallow'] = '許可しない';
 $string['duplicateregurl'] = 'この登録URLはすでに使用されています。';
+$string['dynreg_update_btn_new'] = '新しい外部ツールとして登録する';
+$string['dynreg_update_btn_update'] = '更新';
+$string['dynreg_update_name'] = 'ツール名';
+$string['dynreg_update_notools'] = 'コンテクスト内にツールはありません。';
+$string['dynreg_update_text'] = '登録ドメインに接続されている既存のツールがあります。既存のインストール済み外部ツールを更新しますか、それとも新しい外部ツールを作成しますか?';
+$string['dynreg_update_url'] = 'ベースURL';
+$string['dynreg_update_version'] = 'LTIバージョン';
+$string['dynreg_update_warn_dupdomain'] = '同一ドメイン下での複数の外部ツールの存在はお勧めできません。';
 $string['editdescription'] = 'このツールに説明を追加するにはここをクリックしてください。';
 $string['edittype'] = '事前設定ツールを編集する';
 $string['embed'] = '埋め込み';
@@ -187,7 +203,7 @@ $string['force_ssl_help'] = 'このオプションを有効にすることによ
 このオプションを使用する場合、MoodleサイトおよびツールプロバイダがSSLをサポートしていることを確認してください。';
 $string['forced_help'] = 'この設定はコースまたはサイトレベルのツール設定で強制されています。あなたはこのインターフェースで設定内容を変更することはできません。';
 $string['generaltool'] = '一般ツール';
-$string['global_tool_types'] = 'グローバル事前設定ツール';
+$string['global_tool_types'] = '事前設定ツール';
 $string['grading'] = '評定ルーティング';
 $string['icon_url'] = 'アイコンURL';
 $string['icon_url_help'] = 'アイコンURLではこの活動がコース一覧に表示される時に表示されるアイコンを変更します。デフォルトのLTIアイコンを使用する代わりに活動のタイプで使用されるアイコンを指定することができます。';
@@ -204,6 +220,10 @@ $string['initiatelogin'] = 'ログインURLを開始する';
 $string['initiatelogin_help'] = 'ログインの開始をリクエストするためのツールURLが送信されます。メッセージをツールに正常に送信するにはこのURLが必要です。';
 $string['invalidid'] = 'LTI IDが正しくありません。';
 $string['jwtsecurity'] = 'LTI 1.3';
+$string['keytype'] = '公開鍵タイプ';
+$string['keytype_help'] = 'ツール認証に使用される認証方法です。';
+$string['keytype_keyset'] = '鍵セットURL';
+$string['keytype_rsa'] = 'RSAキー';
 $string['launch_in_moodle'] = 'Moodle内でツールを起動する';
 $string['launch_in_popup'] = 'ツールをポップアップに起動する';
 $string['launch_url'] = 'ツールURL';
@@ -227,6 +247,8 @@ $string['leaveblank'] = '必要でない場合、空白にしてください。'
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'コース個別ツール設定を追加する';
 $string['lti:addinstance'] = '新しい外部ツール活動を追加する';
+$string['lti:addmanualinstance'] = '手動設定ツールを追加する';
+$string['lti:addpreconfiguredinstance'] = '事前設定ツールを追加する';
 $string['lti:admin'] = 'ツール起動時に管理者になる';
 $string['lti:grade'] = '外部ツールから戻された評点を表示する';
 $string['lti:manage'] = 'ツール起動時、インストラクタになる';
@@ -299,9 +321,15 @@ $string['optionalsettings'] = 'オプション設定';
 $string['organization'] = '組織詳細';
 $string['organizationdescr'] = '組織説明';
 $string['organizationid'] = '組織ID';
+$string['organizationid_default'] = 'デフォルト組織ID';
+$string['organizationid_default_help'] = '組織IDに使用されるデフォルト値です。サイトIDはこのMoodleインストレーションを識別します。';
 $string['organizationid_help'] = 'このMoodleインスタンスの固有IDです。一般的に組織で使用されているDNS名です。
 
 このフィールドを空白にした場合、このMoodleサイトのホスト名がデフォルト値として使用されます。';
+$string['organizationidguid'] = '組織ID';
+$string['organizationidguid_help'] = 'プラットフォームインスタンスGUIDとしてツールに渡されるこのMoodleインスタンスのユニークIDです。
+
+このフィールドを空白のままにした場合、デフォルト値が使用されます。';
 $string['organizationurl'] = '組織URL';
 $string['organizationurl_help'] = 'このMoodleインスタンスのベースURLです。
 
@@ -357,6 +385,8 @@ $string['privacy:metadata:useridnumber'] = 'LTIコンシューマにアクセス
 $string['privacy:metadata:username'] = 'LTIコンシューマにアクセスするユーザのユーザ名です。';
 $string['publickey'] = '公開鍵';
 $string['publickey_help'] = '受信メッセージおよびサービスリクエストの承認に関して署名するためツールによって提供される公開鍵 (PEMフォーマット) です。';
+$string['publickeyset'] = '公開鍵セット';
+$string['publickeyset_help'] = 'このサイトが受信メッセージおよびリクエストサービスの署名を検証するためのツールの公開鍵を検索できる場所からの公開鍵セットです。';
 $string['quickgrade'] = 'クイック評定を有効にする';
 $string['quickgrade_help'] = 'この設定を有効にした場合、1ページで複数のツールを評定することができます。ページ内のすべての変更を同時に保存するには評点とコメントを変更して画面下部にある「すべてのフィードバックを保存する」ボタンをクリックしてください。';
 $string['redirect'] = 'あなたは数秒以内にリダイレクトされます。リダイレクトされない場合、ボタンをクリックしてください。';
@@ -433,6 +463,8 @@ $string['show_in_course_lti2'] = 'ツール設定使用';
 $string['show_in_course_lti2_help'] = 'コースへの追加時の選択のため、このツールを活動チューザ内で教師に表示することができます。またはコースへの外部ツール追加時に事前設定ツールドロップダウンメニュー内に表示することができます。';
 $string['show_in_course_no'] = '表示しない、合致するツールURLが入力された場合のみ使用する';
 $string['show_in_course_preconfigured'] = '外部ツール追加時に事前設定ツールとして表示する';
+$string['sitehost'] = 'サイトホスト名';
+$string['siteid'] = 'サイトD';
 $string['size'] = 'サイズパラメータ';
 $string['submission'] = '送信';
 $string['submissions'] = '提出';

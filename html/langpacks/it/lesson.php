@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'it', version '3.8'.
+ * Strings for component 'lesson', language 'it', version '3.11'.
  *
  * @package     lesson
  * @category    string
@@ -118,6 +118,8 @@ $string['comments'] = 'I tuoi commenti';
 $string['completed'] = 'Completata';
 $string['completederror'] = 'Completa la lezione';
 $string['completethefollowingconditions'] = 'Devi soddisfare le seguenti condizioni nella lezione <b>{$a}</b> prima di poter procedere.';
+$string['completiondetail:reachend'] = 'Raggiungere la fine dell\'attività';
+$string['completiondetail:timespent'] = 'Trascorrere almeno {$a} nell’attività';
 $string['completionendreached'] = 'Raggiungimento della fine';
 $string['completionendreached_desc'] = 'Lo studente deve raggiungere la fine della lezione per completare l\'attività';
 $string['completiontimespent'] = 'Lo studente deve stare nell\'attività per almeno';
@@ -319,7 +321,7 @@ $string['maxgrade'] = 'Voto massimo';
 $string['maxgrade_help'] = 'L\'impostazione determina il voto massima che può essere ottenuta nella lezione. Se il valore è impostato a 0, la lezione non apparirà nelle valutazioni.';
 $string['maximumnumberofanswersbranches'] = 'Numero massimo di risposte';
 $string['maximumnumberofanswersbranches_help'] = 'Specifica il numero max. di risposte utilizzabili nella lezione. Se la lezione usa solamente domande del tipo Vero/Falso questo valore può essere impostato a 2. E\' possibile cambiare l\'impostazione in qualsiasi momento in quanto influisce solo la vista docente, senza alterare i dati.';
-$string['maximumnumberofattempts'] = 'Numero massimo di tentativi';
+$string['maximumnumberofattempts'] = 'Numero massimo di tentativi per domanda';
 $string['maximumnumberofattempts_help'] = 'Il massimo numero di tentativi concesso per rispondere a ciascuna domanda. Rispondendo correttamente in modo ripetuto, al termine dei tentativi consentiti verrà visualizzata la pagina successiva della lezione.';
 $string['maximumnumberofattemptsreached'] = 'E\' stato raggiunto il massimo numero di tentativi - Passaggio alla pagina successiva';
 $string['mediaclose'] = 'Visualizza il pulsante chiudi';

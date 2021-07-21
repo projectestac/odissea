@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_manual', language 'ru', version '3.8'.
+ * Strings for component 'workshopallocation_manual', language 'ru', version '3.11'.
  *
  * @package     workshopallocation_manual
  * @category    string
@@ -32,4 +32,5 @@ $string['allocationexists'] = 'Распределение уже сделано'
 $string['areyousuretodeallocate'] = 'Вы уверены, что хотите удалить выбранное оценивание?';
 $string['areyousuretodeallocategraded'] = 'Вы собираетесь удалить оценивание, которое уже было оценено. Вы действительно уверены, что хотите это сделать?';
 $string['pluginname'] = 'Ручное распределение';
+$string['privacy:metadata:preference:perpage'] = 'Количество распределенных оценок, которые пользователь предпочитает видеть на одной странице.';
 $string['showallparticipants'] = 'Показать всех участников';

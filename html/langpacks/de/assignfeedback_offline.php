@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'de', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'de', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -48,6 +48,6 @@ $string['pluginname'] = 'Offline-Bewertungstabelle';
 $string['privacy:nullproviderreason'] = 'Dieses Plugin verfügt über keine Datenbank zur Speicherung von Nutzerdaten. Es ist eine API in mood_assign zur Unterstützung bei der Bewertungsanzeige';
 $string['processgrades'] = 'Bewertungen importieren';
 $string['skiprecord'] = 'Datensatz überspringen';
-$string['updatedgrades'] = 'Aktualisierte Bewertungen: {$a}';
+$string['updatedgrades'] = '{$a} Bewertungen und Feedbacks aktualisiert.';
 $string['updaterecord'] = 'Datensatz aktualisieren';
 $string['uploadgrades'] = 'Bewertungstabelle hochladen';

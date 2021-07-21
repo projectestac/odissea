@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ja', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'ja', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -42,4 +42,7 @@ $string['pluginname_help'] = '問題 (イメージを含む) に対して解答�
 $string['pluginnameadding'] = '記述問題の追加';
 $string['pluginnameediting'] = '記述問題の編集';
 $string['pluginnamesummary'] = '様々な答えのモデルと比較して評定される1つまたは少数の言葉を入力することができます。答えにはワイルドカードを含むことができます。';
-$string['privacy:metadata'] = '記述問題タイププラグインはいかなる個人データも保存しません。';
+$string['privacy:metadata'] = '記述問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
+$string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
+$string['privacy:preference:usecase'] = '解答の大文字小文字を区別するかどうか指定します。';

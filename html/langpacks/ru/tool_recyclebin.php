@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_recyclebin', language 'ru', version '3.8'.
+ * Strings for component 'tool_recyclebin', language 'ru', version '3.11'.
  *
  * @package     tool_recyclebin
  * @category    string
@@ -51,6 +51,7 @@ $string['invalidcontext'] = 'Задан неправильный контекс�
 $string['noitemsinbin'] = 'Нет объектов в корзине.';
 $string['notenabled'] = 'Извините, но корзина была отключена администратором.';
 $string['pluginname'] = 'Корзина';
+$string['privacy:metadata'] = 'Плагин Корзина не хранит никаких личных данных.';
 $string['recyclebin:deleteitems'] = 'Удалять объекты из корзины';
 $string['recyclebin:restoreitems'] = 'Восстанавливать объекты из корзины';
 $string['recyclebin:viewitems'] = 'Просматривать объекты в корзине';

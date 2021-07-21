@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr', language 'sv', version '3.8'.
+ * Strings for component 'repository_flickr', language 'sv', version '3.11'.
  *
  * @package     repository_flickr
  * @category    string
@@ -27,6 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'API-nyckel';
 $string['callbackurl'] = 'Callback-URL';
+$string['callbackurltext'] = '<ol>
+<li>Gå till <a href="http://www.flickr.com/services/api/keys/">Flickr API Keys</a> igen.</li>
+<li>Försäkra dig om att callback-adressen för den här Flickr-nyckeln är <strong>{$a}</strong></li></ol>';
+$string['callbackwarning'] = '<ol>
+<li>Hämta en <a href="http://www.flickr.com/services/api/keys/">Flickr API-nyckel och hemlighet</a> från Flickr för denna Moodle-webbplats.</li>
+<li>Ange dessa uppgifter här, klicka därefter på <kbd>Spara</kbd> och sedan <kbd>Inställningar</kbd> för att komma tillbaka till den här sidan. Du kommer då att se att Moodle genererat en callback-URL åt dig.</li>
+<li>Redigera inställningarna för dina <a href="http://www.flickr.com/services/api/keys/">Flickr-nycklar</a> igen och ställ in callback-URL:en.</li></ol>';
 $string['configplugin'] = 'Flickr-konfiguration';
 $string['emailaddress'] = 'E-post';
 $string['flickr:view'] = 'Visa Flickr-filer';
@@ -35,6 +42,10 @@ $string['notitle'] = 'utantitel';
 $string['nullphotolist'] = 'Det finns inga foton i detta kontot';
 $string['pluginname'] = 'Flickr';
 $string['pluginname_help'] = 'Lagring på flickr.com';
+$string['privacy:metadata:repository_flickr'] = 'Pluginmodulen Flickr lagrar ingen personinformation, men överför användardata från Moodle till fjärrsystemet.';
+$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token'] = 'Inställningen för Flickr-lagringsplatsens OAuth token.';
+$string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret'] = 'Flickr-lagringsplatsen OAuth hemlighet. Denna exkluderas vid export av sekretessdata.';
+$string['privacy:metadata:repository_flickr:text'] = 'Användarens sökfråga för Flickr.';
 $string['remember'] = 'Kom ihåg mig';
 $string['secret'] = 'Hemlighet';
 $string['username'] = 'Flickr e-postadress';

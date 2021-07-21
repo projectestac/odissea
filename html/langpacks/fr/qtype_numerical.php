@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'fr', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'fr', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -70,7 +70,14 @@ $string['pluginname_help'] = 'Du point de vue du participant, une question numé
 $string['pluginnameadding'] = 'Ajout d\'une question numérique';
 $string['pluginnameediting'] = 'Modification d\'une question numérique';
 $string['pluginnamesummary'] = 'Permet une réponse numérique, le cas échéant avec des unités, qui est évaluée en comparant divers modèles de réponses, comprenant une tolérance.';
-$string['privacy:metadata'] = 'Le plugin de type de question Numérique n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de type de question Numérique permet aux auteurs de questions d\'enregistrer des préférences par défaut.';
+$string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pour une question.';
+$string['privacy:preference:multichoicedisplay'] = 'Si les unités sont affichées comme champ de texte, sélection multiple ou menu déroulant.';
+$string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
+$string['privacy:preference:unitgradingtypes'] = 'Si la pénalité pour unités s\'applique comme fraction (0-1) des points de la réponse ou des points de la question.';
+$string['privacy:preference:unitpenalty'] = 'La fraction (0-1) des points de la réponse ou des points de la question à appliquer.';
+$string['privacy:preference:unitrole'] = 'Si l\'unité est requise, optionnelle ou pas attendue.';
+$string['privacy:preference:unitsleft'] = 'Si l\'unité s\'affiche à gauche (p.ex. $, £) à droite (p.ex. kg, km, cm).';
 $string['relative'] = 'Relatif';
 $string['rightexample'] = 'À droite, comme 2.5 cm ou 12.5 km';
 $string['selectunit'] = 'Sélectionnez une unité';

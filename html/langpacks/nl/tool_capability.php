@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'nl', version '3.8'.
+ * Strings for component 'tool_capability', language 'nl', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -30,9 +30,12 @@ $string['capabilityreport'] = 'Mogelijkhedenrapport';
 $string['changeoverrides'] = 'Wijzig overschrijvingen in deze context';
 $string['changeroles'] = 'Wijzig roldefinities';
 $string['eventreportviewed'] = 'Rapport bekeken';
+$string['filters'] = 'Filter resultaten';
 $string['forroles'] = 'Voor rollen {$a}';
 $string['getreport'] = 'Maak rapport';
 $string['intro'] = 'Dit rapport toont, voor een bepaalde mogelijkheid, welke rechten deze mogelijkheid heeft in de definitie van elke rol (of een selectie van rollen) en waar op de site deze mogelijkheid is overschreven';
+$string['nodifferences'] = 'Er zijn in dit verband geen verschillen tussen de geselecteerde rollen';
+$string['onlydiff'] = 'Toon alleen verschillen';
 $string['pluginname'] = 'Mogelijkhedenrapport';
 $string['privacy:metadata'] = 'De mogelijkheden overzichts-plugin bewaart geen persoonlijke gegevens.';
 $string['reportforcapability'] = 'Rapport voor mogelijkheid \'{$a}\'';

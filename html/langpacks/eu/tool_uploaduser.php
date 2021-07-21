@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'eu', version '3.8'.
+ * Strings for component 'tool_uploaduser', language 'eu', version '3.11'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -29,19 +29,30 @@ $string['allowdeletes'] = 'Baimendu ezabatzea';
 $string['allowrenames'] = 'Baimendu izena aldatzea';
 $string['allowsuspends'] = 'Baimendu kontuak eten eta aktibatzea';
 $string['assignedsysrole'] = 'Sistemako {$a} rola esleitu zaio';
+$string['clidefault'] = 'Lehenetsitakoa:';
+$string['clierrorargument'] = '--{$a->name} parametroarentzako balioa ez da onargarria. Onartutako balioak: {$a->values}';
+$string['clifile'] = 'Erabiltzaile-datuak dituen CSV fitxategirako bidea. Beharrezkoa.';
+$string['clifilenotreadable'] = '{$a} fitxategia ez da existitzen edo ezin da irakurri';
+$string['clihelp'] = 'Inprimatu laguntza hau.';
+$string['climissingargument'] = '--{$a} parametroa beharrezkoa da';
+$string['clititle'] = 'Komando lerro bidezko Igo erabiltzaileak tresna.';
+$string['clivalidationerror'] = 'Balioztatze-errorea:';
 $string['csvdelimiter'] = 'CSV bereizlea';
 $string['defaultvalues'] = 'Lehenetsitako balioak';
 $string['deleteerrors'] = 'Ezabatu erroreak';
 $string['encoding'] = 'Kodifikazioa';
 $string['errormnetadd'] = 'Ezin da urrutiko erabiltzailerik gehitu';
+$string['errorprefix'] = 'Errorea:';
 $string['errors'] = 'Erroreak';
 $string['examplecsv'] = 'Adibidezko testu-fitxategia';
 $string['examplecsv_help'] = 'Adibidezko testu-fitxategia erabiltzeko, jaitsi eta testuen edo kalkulu-orrien editore batekin ireki ezazu. Utzi lehen errenkada dagoen moduan, eta editatu hurrengoak zure erabiltzaileen datuak gehitzeko, errenkada gehiago gehituta behar izanez gero. Amaitzean fitxategia CSV gisa gorde ezazu eta ondoren igo ezazu.
 
 Adibidezko testu-fitxategia probetarako ere erabili daiteke, erabiltzaile-kontuak sortu aurretik erabiltzaileen datuak aurreikusi eta ekintza bertan behera utz daitekeelako.';
+$string['infoprefix'] = 'Informazioa:';
 $string['invalidtheme'] = '"{$a}" azala ez dago instalatuta eta baztertua izango da.';
-$string['invalidupdatetype'] = 'Igoera mota honetan ezin da aukera hau aukeratu.';
+$string['invalidupdatetype'] = 'Igoera-mota honetan ezin da aukera hau hautatu.';
 $string['invaliduserdata'] = '{$a} erabiltzailearen datu baliogabea antzeman da eta automatikoki garbitu da.';
+$string['linex'] = '{$a} lerroa';
 $string['nochanges'] = 'Aldaketarik ez';
 $string['notheme'] = 'Ez dago azalik zehaztuta erabiltzaile honentzat.';
 $string['pluginname'] = 'Igo erabiltzailea';
@@ -58,13 +69,11 @@ $string['uploadpicture_cannotunzip'] = 'Ezin da irudi-fitxategia deskonprimatu.'
 $string['uploadpicture_invalidfilename'] = '{$a} irudi-fitxategiaren izenak balio ez duten karaktereak ditu. Alde batera utzi da.';
 $string['uploadpicture_overwrite'] = 'Gainidatzi erabiltzaileek dagoeneko dituzten irudiak?';
 $string['uploadpicture_userfield'] = 'Irudiak lotzean erabilitako erabiltzailearen atributua:';
-$string['uploadpicture_usernotfound'] = '\'{$a->uservalue}\'-n \'{$a->userfield}\' balioa duen erabiltzailea ez dago. Alde batera utzi da.';
+$string['uploadpicture_usernotfound'] = '\'{$a->uservalue}\'-n \'{$a->userfield}\' balioa duen erabiltzailea ez da existitzen. Alde batera utzi da.';
 $string['uploadpicture_userskipped'] = '{$a} erabiltzailea alde batera utzi da (dagoeneko badu irudia).';
 $string['uploadpicture_userupdated'] = '{$a} erabiltzailearen irudia eguneratu da.';
 $string['uploadpictures'] = 'Igo erabiltzaileen irudiak';
-$string['uploadpictures_help'] = '<p>Erabiltzailearen irudiak zip fitxategia edo irudi-fitxategi gisa igo daitezke. Irudi-fitxategiei <i>aukeratutako-erabiltzaile-ezaugarria.luzapena</i> izena eman behar zaie. Adibidez, irudiak egokitzeko aukeratutako erabiltzaile-ezaugarria erabiltzaile-izena bada eta izen hori erabil1234 bada, orduan fitxategiaren izena erabil1234.jpg izango da.</p>
-<p>Onartutako irudi motak gif, jpg, eta png dira.</p>
-<p>Irudi-fitxategien izenetan ez ditu letra larriak eta xeheak bereizten .</p>';
+$string['uploadpictures_help'] = 'Erabiltzailearen irudiak zip fitxategia edo irudi-fitxategi gisa igo daitezke. Irudi-fitxategiei aukeratutako-erabiltzaile-ezaugarria.luzapena izena eman behar zaie. Adibidez, erabiltzaile-izena erabil1234 bada fitxategiaren izena erabil1234.jpg izango da.';
 $string['uploaduser:uploaduserpictures'] = 'Igo erabiltzailearen irudiak';
 $string['uploadusers'] = 'Igo erabiltzaileak';
 $string['uploadusers_help'] = 'Erabiltzaileak testu-fitxategi bidez igo (eta aukeran ikastaroetan matrikulatu) daitezke. Fitxategiak hurrengo formatua izan behar du:
@@ -101,11 +110,12 @@ $string['uuoptype_addnew'] = 'Gehitu soilik berriak, lehendik existitzen diren e
 $string['uuoptype_addupdate'] = 'Gehitu berriak eta eguneratu lehendik dauden erabiltzaileak';
 $string['uuoptype_update'] = 'Eguneratu soilik lehendik dauden erabiltzaileak';
 $string['uupasswordcron'] = 'Cron bidez sortuko da';
-$string['uupasswordnew'] = 'Erabiltzaile berriaren pasahitza';
+$string['uupasswordnew'] = 'Erabiltzaile berrien pasahitza';
 $string['uupasswordold'] = 'Lehendik dagoen erabiltzailearen pasahitza';
 $string['uustandardusernames'] = 'Estandarizatu erabiltzaile-izenak';
 $string['uuupdateall'] = 'Gainidatzi fitxategiaren edukiarekin eta lehenetsitako balioekin';
 $string['uuupdatefromfile'] = 'Gainidatzi fitxategiaren edukiarekin';
 $string['uuupdatemissing'] = 'Bete fitxategian falta diren datuak eta lehenetsitako balioak';
-$string['uuupdatetype'] = 'Lehendik dagoen erabiltzailearen xehetasunak';
+$string['uuupdatetype'] = 'Lehendik dagoen erabiltzaileen xehetasunak';
 $string['uuusernametemplate'] = 'Erabiltzaile-izenetarako txantiloia';
+$string['warningprefix'] = 'Oharra:';

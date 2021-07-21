@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ja', version '3.8'.
+ * Strings for component 'lesson', language 'ja', version '3.11'.
  *
  * @package     lesson
  * @category    string
@@ -86,6 +86,7 @@ $string['averagescore'] = '平均評点';
 $string['averagetime'] = '平均時間';
 $string['branch'] = 'コンテンツ';
 $string['branchtable'] = 'コンテンツ';
+$string['cachedef_overrides'] = 'ユーザおよびグループオーバーライド情報';
 $string['cancel'] = 'キャンセル';
 $string['cannotfindanswer'] = 'エラー: 答えが見つかりませんでした。';
 $string['cannotfindattempt'] = 'エラー: 受験が見つかりませんでした。';
@@ -120,6 +121,8 @@ $string['comments'] = 'あなたのコメント';
 $string['completed'] = '完了';
 $string['completederror'] = 'レッスンを完了する';
 $string['completethefollowingconditions'] = '先へ進むにはあなたは<b>{$a}</b>レッスンの次のコンディションを完了する必要があります。';
+$string['completiondetail:reachend'] = '活動を最後まで続ける';
+$string['completiondetail:timespent'] = 'この活動に少なくとも {$a} を費やす';
 $string['completionendreached'] = '最終到達必須';
 $string['completionendreached_desc'] = 'この活動を完了するには学生はレッスンの最終ページに到達する必要があります。';
 $string['completiontimespent'] = '学生は少なくとも次の時間この活動を実施する必要があります:';
@@ -325,7 +328,7 @@ $string['maxgrade'] = '最大評点';
 $string['maxgrade_help'] = 'ここではレッスンの最大評点を設定します。ゼロが設定された場合、そのレッスンは評定ページに表示されません。';
 $string['maximumnumberofanswersbranches'] = '答えの最大数';
 $string['maximumnumberofanswersbranches_help'] = 'ここでは小テストで使用される解答の最大数を指定します。○/×問題のみを使用する場合、設定値として2を設定することができます。データではなく教師の見え方にのみ影響するため、設定内容はいつでも変更することができます。';
-$string['maximumnumberofattempts'] = '最大受験回数';
+$string['maximumnumberofattempts'] = '問題ごとの最大受験回数';
 $string['maximumnumberofattempts_help'] = 'この設定ではそれぞれの問題に許可される最大受験回数を指定します。繰り返し答えが正しくない場合、最大受験回数に到達した時点で次のレッスンページが表示されます。';
 $string['maximumnumberofattemptsreached'] = '最大受験回数に達しました - 次のページに移動しています。';
 $string['mediaclose'] = '「ウィンドウを閉じる」ボタンを表示する';

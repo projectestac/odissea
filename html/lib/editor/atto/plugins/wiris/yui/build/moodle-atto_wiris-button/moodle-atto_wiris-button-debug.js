@@ -44,7 +44,7 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
 
         Y.Get.js(M.cfg.wwwroot + '/lib/editor/atto/plugins/wiris/core.js?v=' + config.version, function(err) {
             if (err) {
-                Y.log('Could not load core.js');
+                Y.log('Could not load core.js', 'error', 'moodle-atto_wiris');
             } else {
                 // Once the core is loaded we can extend the IntegrationModel class.
 
@@ -52,7 +52,7 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                  * AttoIntegration constructor. Extends from IntegrationModel class.
                  * @param {object} integrationModelProperties - Integration model properties.
                  */
-                AttoIntegration = function(integrationModelProperties) {
+                var AttoIntegration = function(integrationModelProperties) {
                     WirisPlugin.IntegrationModel.call(this, integrationModelProperties);
                     this.config = integrationModelProperties.config;
                 };
@@ -125,7 +125,7 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                 AttoIntegration.prototype.parseContent = function() {
                     var host = this.editorObject.get('host');
                     var html = host.editor.get('innerHTML');
-                    // html = this._convertSafeMath(html);
+                    // Html = this._convertSafeMath(html);
                     html = WirisPlugin.Parser.initParse(html, this.config.lang);
                     host.editor.set('innerHTML', html);
                     this.editorObject.markUpdated();
@@ -167,7 +167,6 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                    var mathTagEnd = '«/math»';
                    var start = content.indexOf(mathTagBegin);
                    var end = 0;
-
                    while (start != -1) {
                        output += content.substring(end, start);
                        // Avoid WIRIS images to be parsed.
@@ -180,22 +179,19 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                            // First close tag of img attribute
                            // If a mathmlAttribute exists should be inside a img tag.
                            end += content.indexOf("/>", start);
-                       }
-                       else {
+                       } else {
                            end += mathTagEnd.length;
                        }
 
                        if (!WirisPlugin.MathML.isMathmlInAttribute(content, start) && imageMathmlAttribute == -1) {
                            var mathml = content.substring(start, end);
                            output += WirisPlugin.MathML.safeXmlDecode(mathml);
-                       }
-                       else {
+                       } else {
                            output += content.substring(start, end);
                        }
 
                        start = content.indexOf(mathTagBegin, end);
                    }
-
                    output += content.substring(end, content.length);
                    return output;
                 };
@@ -245,28 +241,43 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
             }
         });
 
-        // Override updateFromTextArea to update the content editable element.
+        // Override 'updateFromTextArea' to update the content editable element.
+        // Inspired by: https://stackoverflow.com/a/16580937
+        // Added error handling since it conflicts with multilang2 for Atto plugin
+        // that uses this very same technique, https://moodle.org/plugins/atto_multilang2).
         host._wirisUpdateFromTextArea = host.updateFromTextArea;
         host.updateFromTextArea = function() {
             host._wirisUpdateFromTextArea();
             var html = host.editor.get('innerHTML');
-            html = WirisPlugin.Parser.initParse(html, WirisPlugin.currentInstance.config.lang);
+            try {
+                html = WirisPlugin.Parser.initParse(html, WirisPlugin.currentInstance.config.lang);
+            } catch (error) {
+                Y.log('MathType and Multilang2 plugins conflict: "updateFromTextArea" function', 'debug', 'moodle-atto_wiris');
+            }
             host.editor.set('innerHTML', html);
         };
-        // Override updateOriginal to update the content of the text area element.
+
+        // Override 'updateOriginal' to update the content of the text area element.
+        // Inspired by: https://stackoverflow.com/a/16580937
+        // Added error handling since it conflicts with multilang2 for Atto plugin
+        // that uses this very same technique, https://moodle.org/plugins/atto_multilang2).
         host._wirisupdateOriginal = host.updateOriginal;
-        host.updateOriginal = function() {
+        host.updateOriginal = function(mathtypeplugin) {
             host._wirisupdateOriginal();
-            var html = host.textarea.get('value');
-            var value = WirisPlugin.Parser.endParse(html);
-            value = _convertSafeMathML(value);
+            var value = host.textarea.get('value');
+            try {
+                value = WirisPlugin.Parser.endParse(value);
+                value = mathtypeplugin._convertSafeMathML(value);
+            } catch (error) {
+                Y.log('MathType and Multilang2 conflict: "updateOriginal" function on ' + value, 'debug', 'moodle-atto_wiris');
+            }
             host.textarea.set('value', value);
         };
 
         /**
          * Converts all the occurrences of a safeMathml
          * with standard MathML.
-         * @type {string} - content content to be filtered.
+         * @param {string} content content to be filtered.
          * @returns {string} the original content with MathML instead of safeMathML.
          */
         _convertSafeMathML = function(content) {
@@ -279,7 +290,7 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
             while (start != -1) {
                 output += content.substring(end, start);
                 // Avoid WIRIS images to be parsed.
-                imageMathmlAttribute = content.indexOf(WirisPlugin.Configuration.get('imageMathmlAttribute'));
+               imageMathmlAttribute = content.indexOf(WirisPlugin.Configuration.get('imageMathmlAttribute'));
                 end = content.indexOf(mathTagEnd, start);
 
                 if (end == -1) {
@@ -288,16 +299,14 @@ Y.namespace('M.atto_wiris').Button = Y.Base.create('button', Y.M.editor_atto.Edi
                     // First close tag of img attribute
                     // If a mathmlAttribute exists should be inside a img tag.
                     end += content.indexOf("/>", start);
-                }
-                else {
+                } else {
                     end += mathTagEnd.length;
                 }
 
                 if (!WirisPlugin.MathML.isMathmlInAttribute(content, start) && imageMathmlAttribute == -1) {
                     var mathml = content.substring(start, end);
                     output += WirisPlugin.MathML.safeXmlDecode(mathml);
-                }
-                else {
+                } else {
                     output += content.substring(start, end);
                 }
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ca', version '3.8'.
+ * Strings for component 'message', language 'ca', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -69,16 +69,14 @@ $string['disableall'] = 'Inhabilita les notificacions';
 $string['disabled'] = 'La missatgeria està inhabilitada en aquest lloc';
 $string['disallowed'] = 'Inhabilitat';
 $string['editmessages'] = 'Edita els missatges';
-$string['emailtagline'] = 'Aquest correu és una còpia d\'un missatge que se us ha enviat des de "{$a->sitename}". Aneu a {$a->url} per a contestar.';
+$string['emailtagline'] = 'Això és una còpia d\'un missatge que us han enviat a "{$a->sitename}". Aneu a {$a->url} per respondre.';
 $string['enabled'] = 'Habilitat';
 $string['errorcallingprocessor'] = 'S\'ha produït un error en cridar a la sortida definida';
 $string['errorconversationdoesnotexist'] = 'La conversa no existeix';
 $string['errortranslatingdefault'] = 'S\'ha produït un error en traduir els paràmetres per defecte del connector. S\'utilitzaran els paràmetres per defecte del sistema.';
 $string['eventgroupmessagesent'] = 'S\'ha enviat el missatge al grup';
 $string['eventmessagecontactadded'] = 'Afegit el contacte del missatge';
-$string['eventmessagecontactblocked'] = 'Blocat el contacte del missatge';
 $string['eventmessagecontactremoved'] = 'Suprimit el contacte del missatge';
-$string['eventmessagecontactunblocked'] = 'Desblocat el contacte del missatge';
 $string['eventmessagedeleted'] = 'S\'ha suprimit el missatge';
 $string['eventmessagesent'] = 'Missatge enviat';
 $string['eventmessageuserblocked'] = 'Usuari blocat';
@@ -105,8 +103,10 @@ $string['loggedoff_help'] = 'Configureu com voleu rebre notificacions quan no es
 $string['loggedoffdescription'] = 'Quan no esteu connectat a Moodle';
 $string['managemessageoutputs'] = 'Preferències de notificació per defecte';
 $string['message'] = 'Missatge';
+$string['messagecontactrequest'] = '{$a->user} demana que l\'afegiu com a contacte. Aneu a la pàgina de <a href="{$a->url}">peticions de contacte</a> per respondre-li';
 $string['messagecontactrequestsnotification'] = '{$a} sol·licita ésser afegit com a contacte.';
 $string['messagecontactrequestsnotificationsubject'] = 'Sol·licitud de contacte de {$a}';
+$string['messagecontactrequestsubject'] = '{$a->sitename}: Petició de contacte de {$a->user}';
 $string['messagedrawerviewcontact'] = 'Detalls de l\'usuari per a {$a}';
 $string['messagedrawerviewconversation'] = 'Conversa amb {$a}';
 $string['messagedrawerviewgroupinfo'] = 'Detalls de grup per a {$a}';
@@ -118,7 +118,6 @@ $string['messagepreferences'] = 'Preferències dels missatges';
 $string['messages'] = 'Missatges';
 $string['messagesselected:'] = 'Missatges seleccionats:';
 $string['messagingdatahasnotbeenmigrated'] = 'Els vostres missatges no estan disponibles temporalment a causa de l\'actualització de la infraestructura de missatgeria. Espereu fins que estiguin migrats.';
-$string['messagingdisabled'] = 'La missatgeria està inhabilitada en aquest lloc. Els missatges s\'enviaran per correu electrònic.';
 $string['muteconversation'] = 'Silencia';
 $string['mutedconversation'] = 'Conversa silenciada';
 $string['newmessage'] = 'Missatge nou';
@@ -155,6 +154,7 @@ $string['outputdoesnotexist'] = 'La sortida de missatges no existeix';
 $string['outputenabled'] = 'S\'ha habilitat la sortida';
 $string['outputnotavailable'] = 'No disponible';
 $string['outputnotconfigured'] = 'No configurat';
+$string['page-message-x'] = 'Qualsevol pàgina de missatges';
 $string['participants'] = 'Participants';
 $string['pendingcontactrequests'] = 'Hi ha {$a} sol·licituds de contacte pendents';
 $string['permitted'] = 'Permès';
@@ -244,8 +244,6 @@ $string['unreadnotification'] = 'Notificació sense llegir: {$a}';
 $string['unreadnotifications'] = 'Hi ha {$a} notificacions sense llegir';
 $string['useentertosend'] = 'Prem la tecla de retorn per enviar';
 $string['usercantbemessaged'] = 'No podeu enviar cap missatge a {$a} degut a les seves preferències de missatge. Proveu d\'afegir-lo com a contacte.';
-$string['userisblockingyou'] = 'Aquest usuari us ha blocat; no podeu enviar-li missatges.';
-$string['userisblockingyounoncontact'] = '{$a} només accepta missatges de persones que siguin a la seva llista de contactes.';
 $string['userwouldliketocontactyou'] = '{$a} vol contactar-vos';
 $string['viewfullnotification'] = 'Visualitza la notificació completa';
 $string['viewmessageswith'] = 'Visualitza missatges amb {$a}';

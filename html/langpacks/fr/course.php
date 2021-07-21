@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'fr', version '3.8'.
+ * Strings for component 'course', language 'fr', version '3.11'.
  *
  * @package     course
  * @category    string
@@ -25,11 +25,42 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitychooseractivefooter'] = 'Pied de page du sélecteur d\'activités';
+$string['activitychooseractivefooter_desc'] = 'Le sélecteur d\'activités prend en charge des plugins qui ajoutent des éléments à son pied de page';
+$string['activitychoosercategory'] = 'Sélecteur d\'activité';
+$string['activitychooserhidefooter'] = 'Pas de pied de page';
+$string['activitychooserrecommendations'] = 'Activités recommandées';
+$string['activitychoosersettings'] = 'Réglages du sélecteur d\'activités';
+$string['activitychoosertabmode'] = 'Onglets du sélecteur d\'activités';
+$string['activitychoosertabmode_desc'] = 'Le sélecteur d\'activité permet à l\'enseignant de choisir facilement les activités et ressources à ajouter à leur cours. Ce réglage détermine les onglets à y afficher. L\'onglet « Favoris » n\'est affiché que si l\'utilisateur a marqué une ou plusieurs activités comme favorites et l\'onglet « Recommandés » n\'est affiché que si l\'administrateur du site a défini certaines activités comme recommandées.';
+$string['activitychoosertabmodeone'] = 'Favoris, Tout, Activités, Ressources, Recommandés';
+$string['activitychoosertabmodethree'] = 'Favoris, Activités, Ressources, Recommandés';
+$string['activitychoosertabmodetwo'] = 'Favoris, Tout, Recommandés';
+$string['activitydate:closed'] = 'Terminé :';
+$string['activitydate:closes'] = 'Se termine :';
+$string['activitydate:opened'] = 'Ouvert :';
+$string['activitydate:opens'] = 'S\'ouvre :';
 $string['aria:coursecategory'] = 'Catégorie de cours';
 $string['aria:courseimage'] = 'Image du cours';
 $string['aria:coursename'] = 'Nom du cours';
 $string['aria:courseshortname'] = 'Nom abrégé du cours';
+$string['aria:defaulttab'] = 'Activités par défaut';
 $string['aria:favourite'] = 'Le cours est marqué comme favori';
+$string['aria:favouritestab'] = 'Activités favorites';
+$string['aria:modulefavourite'] = 'Marquer l\'activité {$a} comme favorite';
+$string['aria:recommendedtab'] = 'Les activités recommandées';
+$string['completion_automatic:done'] = 'Terminé :';
+$string['completion_automatic:failed'] = 'Échec :';
+$string['completion_automatic:todo'] = 'À faire :';
+$string['completion_manual:aria:done'] = '{$a} est marqué comme terminé. Cliquer pour annuler.';
+$string['completion_manual:aria:markdone'] = 'Marquer {$a} comme terminé';
+$string['completion_manual:done'] = 'Terminé';
+$string['completion_manual:markdone'] = 'Marquer comme terminé';
+$string['completion_setby:auto:done'] = 'Terminé : {$a->condition} (fixée par {$a->setby})';
+$string['completion_setby:auto:todo'] = 'À faire : {$a->condition} (fixée par {$a->setby})';
+$string['completion_setby:manual:done'] = '{$a->activityname} est marqué comme terminé par {$a->setby}. Cliquer pour annuler.';
+$string['completion_setby:manual:markdone'] = '{$a->activityname} est marqué comme non terminé par {$a->setby}. Cliquer pour marquer comme terminé.';
+$string['completionrequirements'] = 'Conditions d\'achèvement pour {$a}';
 $string['coursealreadyfinished'] = 'Cours déjà terminé';
 $string['coursenotyetfinished'] = 'Le cours n\'est pas encore terminé';
 $string['coursenotyetstarted'] = 'Le cours n\'a pas encore commencé';
@@ -42,31 +73,41 @@ $string['customfield_visibility_help'] = 'Ce réglage détermine qui peut voir l
 $string['customfield_visibletoall'] = 'Tout le monde';
 $string['customfield_visibletoteachers'] = 'Enseignants';
 $string['customfieldsettings'] = 'Réglages des champs personnalisés de cours communs';
+$string['downloadcourseconfirmation'] = 'Vous allez télécharger un fichier ZIP des contenus du cours (à l\'exclusion des éléments ne pouvant pas être téléchargés et des fichiers dont la taille dépasse {$a}).';
+$string['downloadcoursecontent'] = 'Télécharger les contenus du cours';
+$string['downloadcoursecontent_help'] = 'Ce réglage détermine si les contenus de cours peuvent être téléchargés par les utilisateurs disposant de la capacité adéquate (par défaut ceux qui ont le rôle d\'étudiant ou d\'enseignant).';
+$string['enabledownloadcoursecontent'] = 'Activer le téléchargement de contenus de cours';
 $string['errorendbeforestart'] = 'La date de fin ({$a}) est antérieure à la date du début du cours.';
 $string['favourite'] = 'Cours marqué comme favori';
 $string['gradetopassnotset'] = 'Ce cours n\'a pas de note pour passer. Une telle note peut être indiquée dans l\'élément d\'évaluation du cours (configuration du carnet de notes).';
+$string['informationformodule'] = 'Information sur l\'activité {$a}';
+$string['module'] = 'Activité';
 $string['noaccesssincestartinfomessage'] = 'Bonjour {$a->userfirstname},
-
-</br><br/>Certains étudiants du cours {$a->coursename} n\'ont jamais accédé au cours.';
+<p>Certains étudiants du cours {$a->coursename} n\'ont jamais accédé au cours.</p>';
 $string['nocourseactivity'] = 'Pas assez d\'activités de cours entre le début et la fin du cours';
 $string['nocourseendtime'] = 'Le cours n\'a pas de date de fin';
 $string['nocoursesections'] = 'Aucune section de cours';
 $string['nocoursestudents'] = 'Aucun étudiant';
 $string['norecentaccessesinfomessage'] = 'Bonjour {$a->userfirstname},
-
-</br><br/>Certains étudiants du cours {$a->coursename} n\'ont pas accédé récemment au cours.';
+<p>Certains étudiants du cours {$a->coursename} n\'ont pas accédé récemment au cours.</p>';
 $string['noteachinginfomessage'] = 'Bonjour {$a->userfirstname},
-
-<br/><br/>Des cours dont la date de début est fixé la semaine prochaine ont été identifiés comme sans enseignant ou sans inscription d\'étudiant.';
+<p>Des cours dont la date de début est fixé la semaine prochaine ont été identifiés comme sans enseignant ou sans inscription d\'étudiant.</p>';
 $string['privacy:completionpath'] = 'Achèvement de cours';
 $string['privacy:favouritespath'] = 'Information sur le marquage comme favori du cours';
+$string['privacy:metadata:activityfavouritessummary'] = 'Le système des cours contient des informations sur les éléments du sélecteur d\'activités qui ont été marqués comme favoris par l\'utilisateur.';
 $string['privacy:metadata:completionsummary'] = 'Le cours contient des informations d\'achèvement concernant l\'utilisateur.';
 $string['privacy:metadata:favouritessummary'] = 'Le cours contient des informations en lien avec son marquage comme cours favori par l\'utilisateur.';
 $string['privacy:perpage'] = 'Le nombre de cours à afficher par page.';
+$string['recommend'] = 'Recommander';
+$string['recommendcheckbox'] = 'Recommander l\'activité {$a}';
+$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} après le début du cours';
+$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} avant le début du cours';
+$string['searchactivitiesbyname'] = 'Rechercher des activités par nom';
+$string['searchresults'] = 'Résultats de la recherche : {$a}';
 $string['studentsatriskincourse'] = 'Étudiants à risque dans le cours {$a}';
 $string['studentsatriskinfomessage'] = 'Bonjour {$a->userfirstname},
-
-<br/><br/>Des étudiants dans le cours {$a->coursename} ont été identifiés comme en risque de décrochage.';
+<p>Des étudiants dans le cours {$a->coursename} ont été identifiés comme en risque de décrochage.</p>';
+$string['submitsearch'] = 'Rechercher';
 $string['target:coursecompetencies'] = 'Étudiants risquant de ne pas atteindre les compétences attribuées à un cours';
 $string['target:coursecompetencies_help'] = 'Cette cible décrit si un étudiant est considéré comme risquant de ne pas atteindre les compétences attribuées à un cours. Elle considère que toutes les compétences attribuées au cours doivent être atteintes avant la fin du cours.';
 $string['target:coursecompletion'] = 'Étudiants risquant de ne pas remplir les conditions d\'achèvement du cours';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'eu', version '3.8'.
+ * Strings for component 'tool_capability', language 'eu', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -30,9 +30,12 @@ $string['capabilityreport'] = 'Gaitasunen txostena';
 $string['changeoverrides'] = 'Aldatu baimenak kentzea testuinguru honetan';
 $string['changeroles'] = 'Aldatu rolen definizioak';
 $string['eventreportviewed'] = 'Txostena ikusi da';
+$string['filters'] = 'Iragazkiaren emaitzak';
 $string['forroles'] = '{$a} roletarako';
 $string['getreport'] = 'Eskuratu txostena';
 $string['intro'] = 'Txosten honek erakusten du gaitasun jakin baterako, zein baimen duen gaitasunaren definizioak rol bakoitzerako (edo aukeratutako rolek), eta gaitasuna anulatuta dagoen guneko leku guztietan.';
+$string['nodifferences'] = 'Aukeratutako rolen arten ez dago erakusteko ezberdintasunik testuinguru honetan';
+$string['onlydiff'] = 'Erakutsi soilik ezberdintasunak';
 $string['pluginname'] = 'Gaitasunen txostena';
 $string['privacy:metadata'] = 'Gaitasunen txostena pluginak ez du datu pertsonalik biltzen.';
 $string['reportforcapability'] = '\'{$a}\' gaitasunerako txostena';

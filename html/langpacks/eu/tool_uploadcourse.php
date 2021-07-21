@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'eu', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'eu', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -77,9 +77,15 @@ $string['csvdelimiter'] = 'CSV bereizlea';
 $string['csvdelimiter_help'] = 'CSV fitxategiaren CSV bereizlea';
 $string['csvfileerror'] = 'CSV fitxategiaren formatuan zerbait gaizki dago. Mesedez egiaztatu zutabe-izenburu eta zutabe kopurua bat datozela, eta bereizlea zein fitxategiaren kodifikazioa egokiak direla: {$a}';
 $string['csvline'] = 'Errenkada';
+$string['customfieldinvalid'] = '\'{$a}\' eremu pertsonalizatua hutsik dago edo eduki baliogabea du';
 $string['defaultvalues'] = 'Lehenetsitako ikastaro-balioak';
+$string['defaultvaluescustomfieldcategory'] = '\'{$a}\'(e)rako balio lehenetsiak';
+$string['downloadcontentnotallowed'] = 'Ikastaroko edukiaren deskargaren konfigurazioa ez dago baimenduta';
 $string['encoding'] = 'Kodifikazioa';
 $string['encoding_help'] = 'CSV fitxategiaren kodifikazioa';
+$string['errorcannotcreateorupdateenrolment'] = 'Ezin da \'{$a}\' matrikulazio-metodoa sortu edo eguneratu';
+$string['errorcannotdeleteenrolment'] = 'Ezin da \'{$a}\' matrikulazio-metodoa ezabatu';
+$string['errorcannotdisableenrolment'] = 'Ezin da \'{$a}\' matrikulazio-metodoa desgaitu';
 $string['errorwhiledeletingcourse'] = 'Errorea gertatu da ikastaroa ezabatu bitartean';
 $string['errorwhilerestoringcourse'] = 'Errorea gertatu da ikastaroa berreskuratu bitartean';
 $string['generatedshortnamealreadyinuse'] = 'Sortutako izen laburra dagoeneko erabiltzen ari da';
@@ -90,6 +96,7 @@ $string['importoptions'] = 'Inportatze-aukerak';
 $string['invalidbackupfile'] = 'Segurtasun-kopiaren fitxategi baliogabea';
 $string['invalidcourseformat'] = 'Ikastaro-formatu baliogabea';
 $string['invalidcsvfile'] = 'CSV fitxategi baliogabea';
+$string['invaliddownloadcontent'] = 'Ikastaroko edukiaren deskargaren balioa ez da egokia';
 $string['invalidencoding'] = 'Kodifikazioa ez da baliagarria';
 $string['invalideupdatemode'] = 'Eguneratze-modu baliogabea aukeratu da';
 $string['invalidfullnametoolong'] = 'Izen osoaren eremuak {$a} karaktereko muga dauka';

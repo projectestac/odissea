@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'ar', version '3.8'.
+ * Strings for component 'grading', language 'ar', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -29,26 +29,27 @@ $string['activemethodinfo'] = 'تم اختيار الطريقة \'{$a->method}\'
 $string['activemethodinfonone'] = 'لم يتم اختيار الطريقة المتقدمة لمنح العلامات لمنطقة \'{$a->area}\' بعد. منح العلامات البسيط والمباشر سيكون هو المتبع.';
 $string['changeactivemethod'] = 'غيِّر الطريقة النشطة لمنح العلامات إلى';
 $string['clicktoclose'] = 'انقر للإغلاق';
+$string['error:gradingunavailable'] = 'طريقة التقييم المتقدم غير مهيأة بعد. يرجى التحقق من خيارات تقييم المنتدى ككل في إعداداته.';
 $string['error:notinrange'] = 'علامة غير صحيحة \'{$a->grade}\' تم تقديمها. العلامات ينبغي أن تتراوح ما بين 0 و {$a->maxgrade}.';
-$string['exc_gradingformelement'] = 'غير قادر على إنشاء نموذج الدرجات';
-$string['formnotavailable'] = 'تم اختيار طريقة التقييم المتقدم لاستخدامها ولكن نموذج التقييم غير مُتاح حتى الان. تحتاج إلى تعريف النموذج أولاً من خلال الرابط الموجود في كتلة الإعدادات';
+$string['exc_gradingformelement'] = 'غير قادر على إنشاء نموذج العلامات';
+$string['formnotavailable'] = 'تم اختيار طريقة متقدمة لمنح العلامات، ولكن نموذجها غير متوافر حتى الآن. ينبغي عليك تعريف النموذج أولاً من خلال الرابط الموجود في قائمة الإجراءات أو كتلة الإشراف.';
 $string['gradingformunavailable'] = 'الرجاء الانتباه: نموذج التقييم المُتقدم غيرجاهز حتى الان.سيتم استخدام طريقة التقييم البسيطة حتى يكون النموذج جاهز.';
 $string['gradingmanagement'] = 'تقييم متقدم';
 $string['gradingmanagementtitle'] = 'منح العلامات المتقدم: {$a->component} ({$a->area})';
 $string['gradingmethod'] = 'طريقة التقييم';
-$string['gradingmethod_help'] = 'اختر طريقة التقييم المتقدمة التي ستستخدم لاحتساب العلامات في هذا السياق.
+$string['gradingmethod_help'] = 'إختر طريقة التقييم المتقدمة التي ستستخدم لاحتساب العلامات في هذا السياق.
 
-لإلغاء التقييم المتقدم والعودة لطريقة التقييم الافتراضية، اختر "تقييم بسيط ومباشر".';
+لإلغاء التقييم المتقدم والعودة إلى طريقة التقييم الافتراضية، إختر \'تقييم بسيط ومباشر\'.';
 $string['gradingmethodnone'] = 'تقييم بسيط ومباشر';
 $string['gradingmethods'] = 'طرق التقييم';
 $string['manageactionclone'] = 'إنشاء نموذج تقييم جديد من القالب';
 $string['manageactiondelete'] = 'حذف النموذج المحدد حالياً';
-$string['manageactiondeleteconfirm'] = 'أنت بصدد حذف العلامات من \'{$a->formname}\' وكل المعلومات ذات الصلة من \'{$a->component} ({$a->area})\'. لطفاً، تأكد من أنك تفهم التبعات الآتية:
+$string['manageactiondeleteconfirm'] = 'أنت بصدد حذف التقديرات من \'{$a->formname}\' وكل المعلومات ذات الصلة من \'{$a->component} ({$a->area})\'. لطفاً، تأكد من أنك تفهم التبعات الآتية:
 
 * لاسبيل إلى التراجع عن هذه العملية.
-* يمكنك التبديل إلى طريقة منح علامات أخرى بضمنها "منح العلامات البسيط والمباشر" دون الحاجة إلى حذف هذا النموذج.
-* كل المعلومات التي تشرح كيفية عمل نموذج منح العلامات سيتم فقدانها.
-* العلامات المحسوبة والناتجة من استعماله والمخزونة في سجل العلامات لن تتأثر. مع ذلك، التوضيحات بشأن كيفية احتسابها لن تكون متوافرة.
+* يمكنك التبديل إلى طريقة منح التقديرات أخرى بضمنها "منح الدرجات البسيط والمباشر" دون الحاجة إلى حذف هذا النموذج.
+* كل المعلومات التي تشرح كيفية عمل نموذج منح الدرجت سيتم فقدانها.
+* العلامات المحسوبة والناتجة من استعماله والمخزونة في سجل التقديرات لن تتأثر. مع ذلك، التوضيحات بشأن كيفية احتسابها لن تكون متوافرة.
 * هذه العملية لا تؤثر على النسخ النهائية الأخرى من هذا النموذج في النشاطات الأخرى.';
 $string['manageactiondeletedone'] = 'تم حذف النموذج بنجاح';
 $string['manageactionedit'] = 'تعديل إعدادات النموذج الحالي';
@@ -58,10 +59,10 @@ $string['manageactionshareconfirm'] = 'أنت بصدد حفظ نسخة من نم
 $string['manageactionsharedone'] = 'تم حفظ النموذج بنجاح كقالب';
 $string['noitemid'] = 'التقييم غير ممكن. عنصر التقييم غير موجود';
 $string['nosharedformfound'] = 'لم يتم إيجاد القالب';
-$string['privacy:metadata:grading_definitions'] = 'معلومات أساسية عن نموذج منح علامات متقدم والمعرفة في منطقة قابلة لمنح العلامات.';
-$string['privacy:metadata:grading_definitions:areaid'] = 'مُعرَّف المنطقة التي تم فيها تعريف نموذج منح العلامات المتقدم.';
-$string['privacy:metadata:grading_definitions:copiedfromid'] = 'مُعرَّف تعريف منح العلامات من حيث تم نسخ هذا.';
-$string['privacy:metadata:grading_definitions:description'] = 'وصف طريقة منح العلامات المتقدمة.';
+$string['privacy:metadata:grading_definitions'] = 'معلومات أساسية عن نموذج منح علامات متقدم والمعرفة في منطقة قابلة لمنح العلامات';
+$string['privacy:metadata:grading_definitions:areaid'] = 'مُعرَّف المنطقة التي تم فيها تعريف نموذج منح العلامات المتقدم';
+$string['privacy:metadata:grading_definitions:copiedfromid'] = 'مُعرَّف تعريف منح العلامات من حيث تم نسخ هذا';
+$string['privacy:metadata:grading_definitions:description'] = 'وصف طريقة منح العلامات المتقدمة';
 $string['privacy:metadata:grading_definitions:method'] = 'طريقة منح العلامات المسؤولة عن التعريف';
 $string['privacy:metadata:grading_definitions:name'] = 'اسم تعريف طريقة منح العلامات المتقدمة';
 $string['privacy:metadata:grading_definitions:options'] = 'بعض إعدادت تعريف منح العلامات هذا';

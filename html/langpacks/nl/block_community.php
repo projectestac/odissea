@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'nl', version '3.8'.
+ * Strings for component 'block_community', language 'nl', version '3.11'.
  *
  * @package     block_community
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'zh_cn', version '3.8'.
+ * Strings for component 'forum', language 'zh_cn', version '3.11'.
  *
  * @package     forum
  * @category    string
@@ -348,6 +348,7 @@ $string['grade_forum_name'] = '整个讨论区';
 $string['grade_forum_title'] = '成绩';
 $string['grade_rating_name'] = '评价';
 $string['graded'] = '已评分';
+$string['gradedby'] = '评分人';
 $string['gradeforrating'] = '评价成绩：{$a->str_long_grade}';
 $string['gradeforratinghidden'] = '隐藏的评价成绩';
 $string['gradeforwholeforum'] = '讨论区成绩：{$a->str_long_grade}';
@@ -591,7 +592,7 @@ $string['privacy:metadata:forum_queue:timemodified'] = '原帖子的修改时间
 $string['privacy:metadata:forum_queue:userid'] = '此帖子需要通知的用户';
 $string['privacy:metadata:forum_read'] = '有关用户已阅读哪些帖子的信息。';
 $string['privacy:metadata:forum_read:discussionid'] = '帖子所在的话题。';
-$string['privacy:metadata:forum_read:firstread'] = '‎第一次阅读该帖子。';
+$string['privacy:metadata:forum_read:firstread'] = '‎第一次阅读此帖。';
 $string['privacy:metadata:forum_read:lastread'] = '‎最近一次阅读此帖。 ‎‎';
 $string['privacy:metadata:forum_read:postid'] = '读过的帖子。';
 $string['privacy:metadata:forum_read:userid'] = '此记录所关联的用户的 ID。';

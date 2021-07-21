@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'eu', version '3.8'.
+ * Strings for component 'completion', language 'eu', version '3.11'.
  *
  * @package     completion
  * @category    string
@@ -55,6 +55,7 @@ $string['bulkcompletiontracking_help'] = '<strong>Bat ere ez:</strong> Ez adiera
 $string['checkactivity'] = '{$a} jarduera / baliabidearen laukitxoa:';
 $string['checkall'] = 'Markatu edo desmarkatu jarduera eta baliabide guztiak';
 $string['checkallsection'] = 'Markatu edo desmarkatu hurrengo ataleko jarduera eta baliabide guztiak: {$a}';
+$string['completeactivity'] = 'Osatu jarduera';
 $string['completed'] = 'Osatuta';
 $string['completedunlocked'] = 'Osaketa-aukerak desblokeatuta';
 $string['completedunlockedtext'] = 'Aldaketak gordetzen badituzu, osaketa-egoera ezabatu egingo da erabiltzaile guztientzat. Iritziz aldatzen baduzu, ez ezazu formularioa gorde.';
@@ -111,7 +112,7 @@ $string['completionsettingslocked'] = 'Osaketa-ezarpenak blokeatuta';
 $string['completionupdated'] = '<b>{$a}</b> jardueraren osatze-informazioa eguneratu da';
 $string['completionusegrade'] = 'Kalifikazioa behar du';
 $string['completionusegrade_desc'] = 'Ikasleak kalifikazioa jaso behar du jarduera hau osatzeko';
-$string['completionusegrade_help'] = 'Gaituz gero, ikasleak kalifikazioa jasotzen duenean hartuko da jarduera hau osatutzat. Aurrera egin ahal izateko eta gutxiegi ikonoak erakutsi ahal izango dra jarduera honetarako aurrera egin ahal izateko kalifikazioa ezarri bada.';
+$string['completionusegrade_help'] = 'Gaituz gero, jarduera hau osatutzat hartuko da ikasleak kalifikazioa jasotzen duenean. Jarduera gainditzeko kalifikazioa zehaztu bada gainditu izanaren edo huts egin izanaren ikonoak erakutsi daitezke.';
 $string['completionview'] = 'Ikusi beharra dago';
 $string['completionview_desc'] = 'Ikasleak jarduera hau ikusi egin behar du osatzeko';
 $string['configcompletiondefault'] = 'Lehenetsitako osaketaren jarraipena jarduera berriak sortzean.';
@@ -123,6 +124,7 @@ $string['courseaggregation_any'] = 'Aukeratutako EDOZEIN ikastaro osatu behar da
 $string['coursealreadycompleted'] = 'Dagoeneko ikastaro hau osatu duzu';
 $string['coursecomplete'] = 'Ikastaro-osaketa';
 $string['coursecompleted'] = 'Ikastaroa osatuta';
+$string['coursecompletedmessage'] = '<p>Zorionak!</p><p><a href="{$a->courselink}">{$a->coursename}</a> ikastaroa osatu duzu.</p>';
 $string['coursecompletion'] = 'Ikastaro-osaketa';
 $string['coursecompletioncondition'] = 'Baldintza: {$a}';
 $string['coursegrade'] = 'Ikastaroaren kalifikazioa';
@@ -141,6 +143,8 @@ $string['defaultcompletionupdated'] = 'Aldaketak gorde dira';
 $string['deletecompletiondata'] = 'Ezabatu osaketaren datuak';
 $string['dependencies'] = 'Mendekotasunak';
 $string['dependenciescompleted'] = 'Beste ikastaro batzuen osaketa';
+$string['detail_desc:receivegrade'] = 'Kalifikazio bat jasotzea';
+$string['detail_desc:view'] = 'Ikustea';
 $string['editcoursecompletionsettings'] = 'Editatu ikastaro-osaketaren ezarpenak';
 $string['enablecompletion'] = 'Gaitu osaketaren jarraipena';
 $string['enablecompletion_help'] = 'Gaituz gero, jardueraren ezarpenetan jardueren osaketaren baldintzak edo/eta ikastaroaren osaketaren baldintzak zehaztu daitezke. Aukera hau gaituta izatea gomendatzen da Aginte-panelean ikastaroaren aurrebistan datu esanguratsuak agertu daitezen.';
@@ -219,6 +223,8 @@ $string['seedetails'] = 'Ikusi xehetasunak';
 $string['select'] = 'Aukeratu';
 $string['self'] = 'Automatikoa';
 $string['selfcompletion'] = 'Auto-osaketa';
+$string['showcompletionconditions'] = 'Erakutsi jardueren osaketa-baldintzak';
+$string['showcompletionconditions_help'] = 'Jardueraren osaketa-baldintzak beti erakusten dira jarduera-orrian. Ezarpen honek jardueraren osaketa-baldintzak ikastaro-orriko jarduera-zerrendan ere jarduera bakoitzaren azpian erakutsiko diren zehazten du.';
 $string['showinguser'] = 'Erabiltzailea erakusten';
 $string['unenrolingfromcourse'] = 'Ikastarotik desmatrikulatzen';
 $string['unenrolment'] = 'Desmatrikulazioa';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_datetime', language 'gl', version '3.8'.
+ * Strings for component 'profilefield_datetime', language 'gl', version '3.11'.
  *
  * @package     profilefield_datetime
  * @category    string
@@ -37,5 +37,5 @@ $string['privacy:metadata:profilefield_datetime:tableexplanation'] = 'Datos adic
 $string['privacy:metadata:profilefield_datetime:userid'] = 'O ID do usuario cuxos datos están gardados no campo de perfil de usuario data/hora';
 $string['specifydatedefault'] = 'ou especifique unha data';
 $string['startyear'] = 'Ano de inicio';
-$string['startyearafterend'] = 'Non é posíbel que o ano de inicio sexa posterior ao ano de finalización';
+$string['startyearafterend'] = 'Non é posíbel que o ano de inicio ocorra após o ano de finalización';
 $string['wanttime'] = 'Incluír a hora?';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'pt', version '3.8'.
+ * Strings for component 'cachestore_file', language 'pt', version '3.11'.
  *
  * @package     cachestore_file
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['autocreate'] = 'Criar diretoria automaticamernte';
 $string['autocreate_help'] = 'Se ativado, e caso ainda não exista, o diretório especificado no caminho será automaticamente criado.';
 $string['path'] = 'Caminho da cache';
-$string['path_help'] = 'Pasta que deverá ser usada para armazenar ficheiros para esta cache. Se deixar em branco (configurado por predefinição), uma sub-pasta será criada automaticamente na na pasta moodledata. Pode ser usado para apontar para um armazenamento de ficheiros numa pasta com melhor desempenho da unidade (tal como se fosse na memória).';
+$string['path_help'] = 'Pasta que deverá ser usada para armazenar ficheiros para esta cache. Se deixar o campo vazio (predefinição), será criada automaticamente uma sub-pasta na pasta moodledata. Pode ser usado para apontar para um armazenamento de ficheiros numa pasta com melhor desempenho da unidade (tal como se fosse na memória).';
 $string['pluginname'] = 'Ficheiro da cache';
 $string['prescan'] = 'Pré-verificação da diretoria';
 $string['prescan_help'] = 'Se ativado, a diretoria é verificada quando a cache é usada pela primeira vez e os pedidos de ficheiros são verificados primeiro contra os dados de verificação. Isto pode ser útil se tiver um sistema de ficheiros lento e constatar que as operações de ficheiros estão a causar um congestionamento.';

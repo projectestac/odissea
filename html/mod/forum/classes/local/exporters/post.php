@@ -105,7 +105,16 @@ class post extends exporter {
                 'default' => null,
                 'null' => NULL_ALLOWED
             ],
-            'timecreated' => ['type' => PARAM_INT],
+            'timecreated' => [
+                'type' => PARAM_INT,
+                'default' => null,
+                'null' => NULL_ALLOWED
+            ],
+            'timemodified' => [
+                'type' => PARAM_INT,
+                'default' => null,
+                'null' => NULL_ALLOWED
+            ],
             'unread' => [
                 'type' => PARAM_BOOL,
                 'optional' => true,
@@ -437,6 +446,7 @@ class post extends exporter {
             'hasparent' => $post->has_parent(),
             'parentid' => $post->has_parent() ? $post->get_parent_id() : null,
             'timecreated' => $timecreated,
+            'timemodified' => $post->get_time_modified(),
             'unread' => ($loadcontent && $readreceiptcollection) ? !$readreceiptcollection->has_user_read_post($user, $post) : null,
             'isdeleted' => $isdeleted,
             'isprivatereply' => $isprivatereply,

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'gl', version '3.8'.
+ * Strings for component 'enrol_flatfile', language 'gl', version '3.11'.
  *
  * @package     enrol_flatfile
  * @category    string
@@ -28,14 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['encoding'] = 'Codificación do ficheiro';
 $string['expiredaction'] = 'Acción de expiración da matrícula';
 $string['expiredaction_help'] = 'Seleccione a acción que se realizará cando expire a matrícula do usuario. Vexa que algúns datos de usuario e opcións se depuran do curso durante a matriculación no curso.';
-$string['filelockedmail'] = 'O ficheiro de texto que está a utilizar para as inscricións baseadas no ficheiro({$a}) non poderá ser eliminado polo proceso cron.  Normalmente, isto significa que os permisos non son apropiados.  Sinale os permisos para que Moodle poida eliminar o ficheiro, no caso contrario poderá ser procesado repetidamente.';
-$string['filelockedmailsubject'] = 'Erro importante: Ficheiro de inscrición';
+$string['filelockedmail'] = 'O ficheiro de texto que está a utilizar para as matriculacións baseadas no ficheiro({$a}) non poderá ser eliminado polo proceso cron.  Normalmente, isto significa que os permisos non son apropiados.  Sinale os permisos para que Moodle poida eliminar o ficheiro, no caso contrario poderá ser procesado repetidamente.';
+$string['filelockedmailsubject'] = 'Erro importante: Ficheiro de matriculación';
 $string['flatfile:manage'] = 'Xestionar manualmente a matriculación dos usuarios';
 $string['flatfile:unenrol'] = 'Desmatricular manualmente os usuarios do curso';
 $string['flatfileenrolments'] = 'Matriculacións por ficheiro simple (CSV)';
 $string['flatfilesync'] = 'Sincronización do ficheiro simple de matrícula';
 $string['location'] = 'Localización do ficheiro';
-$string['location_desc'] = 'Especifique a ruta completa ao ficheiro de matriculación. Este ficheiro elimínase automaticamente despois do procesamento.';
+$string['location_desc'] = 'Especifique a ruta completa ao ficheiro de matriculación. Este ficheiro elimínase automaticamente após o procesamento.';
 $string['mapping'] = 'Asignación do ficheiro simple de matrícula';
 $string['messageprovider:flatfile_enrolment'] = 'Mensaxes do ficheiro simple de matrícula';
 $string['notifyadmin'] = 'Notificarlle ao administrador';
@@ -53,8 +53,8 @@ onde:
 * role - student | teacher | teacheredit
 * user idnumber - idnumber na táboa de usuarios MAIS NON É Id
 * course idnumber - idnumber na táboa do curso MAIS NON É Id
-* starttime - hora de inicio (en segundos dende epoch) - opcional
-* endtime - hora de término (en segundos dende epoch) - opcional
+* starttime - hora de inicio (en segundos após o 1.1.1970 ás 0 h UTC) - opcional
+* endtime - hora de término (en segundos após o 1.1.1970 ás 0 h UTC) - opcional
 
 Podería resultar algo así:
 

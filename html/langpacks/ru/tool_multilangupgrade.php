@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_multilangupgrade', language 'ru', version '3.8'.
+ * Strings for component 'tool_multilangupgrade', language 'ru', version '3.11'.
  *
  * @package     tool_multilangupgrade
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['multilangupgradeinfo'] = '<p>Синтаксис многоязыкового фильтра был изменен в версии 1.8. Тег <lang> больше не поддерживается.</p><p>Пример: <span lang="en" class="multilang">Hello!</span><span lang="ru" class="multilang">Привет!</span></p><p>Хотите сейчас обновить синтаксис во всех существующих текстах?</p>';
 $string['pluginname'] = 'Обновление многоязычности';
+$string['privacy:metadata'] = 'Плагин Обновления многоязычной поддержки не хранит никаких личных данных.';

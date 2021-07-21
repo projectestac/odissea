@@ -17,16 +17,13 @@
  * Autocomplete wrapper for select2 library.
  *
  * @module     core/form-autocomplete
- * @class      autocomplete
- * @package    core
  * @copyright  2015 Damyon Wiese <damyon@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since      3.0
  */
-/* globals require: false */
 define(
-    ['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification', 'core/loadingicon'],
-function($, log, str, templates, notification, LoadingIcon) {
+    ['jquery', 'core/log', 'core/str', 'core/templates', 'core/notification', 'core/loadingicon', 'core/aria'],
+function($, log, str, templates, notification, LoadingIcon, Aria) {
 
     // Private functions and variables.
     /** @var {Object} KEYS - List of keycode constants. */
@@ -69,13 +66,63 @@ function($, log, str, templates, notification, LoadingIcon) {
         var itemId = state.selectionId + '-' + index;
 
         // Deselect all the selections.
-        selectionElement.children().attr('data-active-selection', false).attr('id', '');
+        selectionElement.children().attr('data-active-selection', null).attr('id', '');
+
         // Select only this suggestion and assign it the id.
         element.attr('data-active-selection', true).attr('id', itemId);
+
         // Tell the input field it has a new active descendant so the item is announced.
         selectionElement.attr('aria-activedescendant', itemId);
+        selectionElement.attr('data-active-value', element.attr('data-value'));
 
         return $.Deferred().resolve();
+    };
+
+    /**
+     * Get the actively selected element from the state object.
+     *
+     * @param   {Object} state
+     * @returns {jQuery}
+     */
+    var getActiveElementFromState = function(state) {
+        var selectionRegion = $(document.getElementById(state.selectionId));
+        var activeId = selectionRegion.attr('aria-activedescendant');
+
+        if (activeId) {
+            var activeElement = $(document.getElementById(activeId));
+            if (activeElement.length) {
+                // The active descendent still exists.
+                return activeElement;
+            }
+        }
+
+        var activeValue = selectionRegion.attr('data-active-value');
+        return selectionRegion.find('[data-value="' + activeValue + '"]');
+    };
+
+    /**
+     * Update the active selection from the given state object.
+     *
+     * @param   {Object} state
+     */
+    var updateActiveSelectionFromState = function(state) {
+        var activeElement = getActiveElementFromState(state);
+        var activeValue = activeElement.attr('data-value');
+
+        var selectionRegion = $(document.getElementById(state.selectionId));
+        if (activeValue) {
+            // Find the index of the currently selected index.
+            var activeIndex = selectionRegion.find('[aria-selected=true]').index(activeElement);
+
+            if (activeIndex !== -1) {
+                activateSelection(activeIndex, state);
+                return;
+            }
+        }
+
+        // Either the active index was not set, or it could not be found.
+        // Select the first value instead.
+        activateSelection(0, state);
     };
 
     /**
@@ -95,12 +142,6 @@ function($, log, str, templates, notification, LoadingIcon) {
         // Build up a valid context to re-render the template.
         var items = [];
         var newSelection = $(document.getElementById(state.selectionId));
-        var activeId = newSelection.attr('aria-activedescendant');
-        var activeValue = false;
-
-        if (activeId) {
-            activeValue = $(document.getElementById(activeId)).attr('data-value');
-        }
         originalSelect.children('option').each(function(index, ele) {
             if ($(ele).prop('selected')) {
                 var label;
@@ -114,28 +155,45 @@ function($, log, str, templates, notification, LoadingIcon) {
                 }
             }
         });
-        var context = $.extend({items: items}, options, state);
+
+        if (!hasItemListChanged(state, items)) {
+            M.util.js_complete(pendingKey);
+            return Promise.resolve();
+        }
+
+        state.items = items;
+
+        var context = $.extend(options, state);
         // Render the template.
-        return templates.render('core/form_autocomplete_selection_items', context)
+        return templates.render(options.templates.items, context)
         .then(function(html, js) {
             // Add it to the page.
             templates.replaceNodeContents(newSelection, html, js);
 
-            if (activeValue !== false) {
-                // Reselect any previously selected item.
-                newSelection.children('[aria-selected=true]').each(function(index, ele) {
-                    if ($(ele).attr('data-value') === activeValue) {
-                        activateSelection(index, state);
-                    }
-                });
-            }
+            updateActiveSelectionFromState(state);
 
-            return activeValue;
+            return;
         })
         .then(function() {
             return M.util.js_complete(pendingKey);
         })
         .catch(notification.exception);
+    };
+
+    /**
+     * Check whether the list of items stored in the state has changed.
+     *
+     * @param   {Object} state
+     * @param   {Array} items
+     * @returns {Boolean}
+     */
+    var hasItemListChanged = function(state, items) {
+        if (state.items.length !== items.length) {
+            return true;
+        }
+
+        // Check for any items in the state items which are not present in the new items list.
+        return state.items.filter(item => items.indexOf(item) === -1).length > 0;
     };
 
     /**
@@ -148,16 +206,9 @@ function($, log, str, templates, notification, LoadingIcon) {
             M.core_formchangechecker.set_form_changed();
         }
 
-        // Note, jQuery .change() was not working here.
-        var event;
-        if (typeof Event === 'function') {
-            event = new Event('change');
-        } else {
-            // Support IE.
-            event = document.createEvent('Event');
-            event.initEvent('change', true, true);
-        }
-        originalSelect[0].dispatchEvent(event);
+        // Note, jQuery .change() was not working here. Better to
+        // use plain JavaScript anyway.
+        originalSelect[0].dispatchEvent(new Event('change'));
     };
 
     /**
@@ -209,14 +260,14 @@ function($, log, str, templates, notification, LoadingIcon) {
         var suggestionsElement = $(document.getElementById(state.suggestionsId));
 
         // Count the visible items.
-        var length = suggestionsElement.children('[aria-hidden=false]').length;
+        var length = suggestionsElement.children(':not([aria-hidden])').length;
         // Limit the index to the upper/lower bounds of the list (wrap in both directions).
         index = index % length;
         while (index < 0) {
             index += length;
         }
         // Find the specified element.
-        var element = $(suggestionsElement.children('[aria-hidden=false]').get(index));
+        var element = $(suggestionsElement.children(':not([aria-hidden])').get(index));
         // Find the index of this item in the full list of suggestions (including hidden).
         var globalIndex = $(suggestionsElement.children('[role=option]')).index(element);
         // Create an id we can assign to this element.
@@ -253,7 +304,7 @@ function($, log, str, templates, notification, LoadingIcon) {
         // Find the active one.
         var element = suggestionsElement.children('[aria-selected=true]');
         // Find it's index.
-        var current = suggestionsElement.children('[aria-hidden=false]').index(element);
+        var current = suggestionsElement.children(':not([aria-hidden])').index(element);
         // Activate the next one.
         return activateItem(current + 1, state);
     };
@@ -270,7 +321,7 @@ function($, log, str, templates, notification, LoadingIcon) {
         // Find the list of selections.
         var selectionsElement = $(document.getElementById(state.selectionId));
         // Find the active one.
-        var element = selectionsElement.children('[data-active-selection=true]');
+        var element = selectionsElement.children('[data-active-selection]');
         if (!element) {
             return activateSelection(0, state);
         }
@@ -293,7 +344,7 @@ function($, log, str, templates, notification, LoadingIcon) {
         var selectionsElement = $(document.getElementById(state.selectionId));
 
         // Find the active one.
-        var element = selectionsElement.children('[data-active-selection=true]');
+        var element = selectionsElement.children('[data-active-selection]');
         var current = 0;
 
         if (element) {
@@ -324,7 +375,7 @@ function($, log, str, templates, notification, LoadingIcon) {
         var element = suggestionsElement.children('[aria-selected=true]');
 
         // Find it's index.
-        var current = suggestionsElement.children('[aria-hidden=false]').index(element);
+        var current = suggestionsElement.children(':not([aria-hidden])').index(element);
 
         // Activate the previous one.
         return activateItem(current - 1, state);
@@ -343,11 +394,16 @@ function($, log, str, templates, notification, LoadingIcon) {
         var inputElement = $(document.getElementById(state.inputId));
         var suggestionsElement = $(document.getElementById(state.suggestionsId));
 
-        // Announce the list of suggestions was closed, and read the current list of selections.
-        inputElement.attr('aria-expanded', false).attr('aria-activedescendant', state.selectionId);
+        if (inputElement.attr('aria-expanded') === "true") {
+            // Announce the list of suggestions was closed.
+            inputElement.attr('aria-expanded', false);
+        }
+        // Read the current list of selections.
+        inputElement.attr('aria-activedescendant', state.selectionId);
 
         // Hide the suggestions list (from screen readers too).
-        suggestionsElement.hide().attr('aria-hidden', true);
+        Aria.hide(suggestionsElement.get());
+        suggestionsElement.hide();
 
         return $.Deferred().resolve();
     };
@@ -394,17 +450,22 @@ function($, log, str, templates, notification, LoadingIcon) {
 
             // Get the element again.
             suggestionsElement = $(document.getElementById(state.suggestionsId));
+
             // Show it if it is hidden.
-            suggestionsElement.show().attr('aria-hidden', false);
+            Aria.unhide(suggestionsElement.get());
+            suggestionsElement.show();
+
             // For each option in the list, hide it if it doesn't match the query.
             suggestionsElement.children().each(function(index, node) {
                 node = $(node);
                 if ((options.caseSensitive && node.text().indexOf(searchquery) > -1) ||
                         (!options.caseSensitive && node.text().toLocaleLowerCase().indexOf(searchquery) > -1)) {
-                    node.show().attr('aria-hidden', false);
+                    Aria.unhide(node.get());
+                    node.show();
                     matchingElements = true;
                 } else {
-                    node.hide().attr('aria-hidden', true);
+                    node.hide();
+                    Aria.hide(node.get());
                 }
             });
             // If we found any matches, show the list.
@@ -782,13 +843,13 @@ function($, log, str, templates, notification, LoadingIcon) {
         var suggestionsElement = $(document.getElementById(state.suggestionsId));
         // Remove any click handler first.
         suggestionsElement.parent().prop("onclick", null).off("click");
-        suggestionsElement.parent().on('click', '[role=option]', function(e) {
+        suggestionsElement.parent().on('click', `#${state.suggestionsId} [role=option]`, function(e) {
             var pendingPromise = addPendingJSPromise('form-autocomplete-parent');
             // Handle clicks on suggestions.
             var element = $(e.currentTarget).closest('[role=option]');
             var suggestionsElement = $(document.getElementById(state.suggestionsId));
             // Find the index of the clicked on suggestion.
-            var current = suggestionsElement.children('[aria-hidden=false]').index(element);
+            var current = suggestionsElement.children(':not([aria-hidden])').index(element);
 
             // Activate it.
             activateItem(current, state)
@@ -802,26 +863,20 @@ function($, log, str, templates, notification, LoadingIcon) {
             .catch();
         });
         var selectionElement = $(document.getElementById(state.selectionId));
+
         // Handle clicks on the selected items (will unselect an item).
-        selectionElement.on('click', '[role=listitem]', function(e) {
+        selectionElement.on('click', '[role=option]', function(e) {
             var pendingPromise = addPendingJSPromise('form-autocomplete-clicks');
 
             // Remove it from the selection.
             pendingPromise.resolve(deselectItem(options, state, $(e.currentTarget), originalSelect));
         });
-        // Remove the highlight of items when user tabs out the tag list.
-        selectionElement.on('blur', function(e) {
-            e.preventDefault();
-            $(this).children().attr('data-active-selection', false).attr('id', '');
+
+        // When listbox is focused, focus on the first option if there is no focused option.
+        selectionElement.on('focus', function() {
+            updateActiveSelectionFromState(state);
         });
-        // When tag list is focused, highlight the first item.
-        selectionElement.on('focus', function(e) {
-            e.preventDefault();
-            var element = $(this).children('[data-active-selection=true]');
-            if (element && element.length === 0) {
-                activateNextSelection(state);
-            }
-        });
+
         // Keyboard navigation for the selection list.
         selectionElement.on('keydown', function(e) {
             var pendingPromise = addPendingJSPromise('form-autocomplete-keydown-' + e.keyCode);
@@ -833,7 +888,7 @@ function($, log, str, templates, notification, LoadingIcon) {
 
                     // Choose the next selection item.
                     pendingPromise.resolve(activateNextSelection(state));
-                    return false;
+                    return;
                 case KEYS.LEFT:
                 case KEYS.UP:
                     // We handled this event, so prevent it.
@@ -841,23 +896,22 @@ function($, log, str, templates, notification, LoadingIcon) {
 
                     // Choose the previous selection item.
                     pendingPromise.resolve(activatePreviousSelection(state));
-                    return false;
+                    return;
                 case KEYS.SPACE:
                 case KEYS.ENTER:
                     // Get the item that is currently selected.
-                    var selectedItem = $(document.getElementById(state.selectionId)).children('[data-active-selection=true]');
+                    var selectedItem = $(document.getElementById(state.selectionId)).children('[data-active-selection]');
                     if (selectedItem) {
                         e.preventDefault();
 
                         // Unselect this item.
                         pendingPromise.resolve(deselectItem(options, state, selectedItem, originalSelect));
                     }
-                    return false;
+                    return;
             }
 
             // Not handled. Resolve the promise.
             pendingPromise.resolve();
-            return true;
         });
         // Whenever the input field changes, update the suggestion list.
         if (options.showSuggestions) {
@@ -978,7 +1032,7 @@ function($, log, str, templates, notification, LoadingIcon) {
             return pendingPromise;
     };
 
-    return /** @alias module:core/form-autocomplete */ {
+    return {
         // Public variables and functions.
         /**
          * Turn a boring select box into an auto-complete beast.
@@ -994,10 +1048,11 @@ function($, log, str, templates, notification, LoadingIcon) {
          * @param {Boolean} showSuggestions - If suggestions should be shown
          * @param {String} noSelectionString - Text to display when there is no selection
          * @param {Boolean} closeSuggestionsOnSelect - Whether to close the suggestions immediately after making a selection.
+         * @param {Object} templateOverrides A set of templates to use instead of the standard templates
          * @return {Promise}
          */
         enhance: function(selector, tags, ajax, placeholder, caseSensitive, showSuggestions, noSelectionString,
-                          closeSuggestionsOnSelect) {
+                          closeSuggestionsOnSelect, templateOverrides) {
             // Set some default values.
             var options = {
                 selector: selector,
@@ -1006,7 +1061,14 @@ function($, log, str, templates, notification, LoadingIcon) {
                 placeholder: placeholder,
                 caseSensitive: false,
                 showSuggestions: true,
-                noSelectionString: noSelectionString
+                noSelectionString: noSelectionString,
+                templates: $.extend({
+                        input: 'core/form_autocomplete_input',
+                        items: 'core/form_autocomplete_selection_items',
+                        layout: 'core/form_autocomplete_layout',
+                        selection: 'core/form_autocomplete_selection',
+                        suggestions: 'core/form_autocomplete_suggestions',
+                    }, templateOverrides),
             };
             var pendingKey = 'autocomplete-setup-' + selector;
             M.util.js_pending(pendingKey);
@@ -1036,7 +1098,8 @@ function($, log, str, templates, notification, LoadingIcon) {
                 return false;
             }
 
-            originalSelect.css('visibility', 'hidden').attr('aria-hidden', true);
+            Aria.hide(originalSelect.get());
+            originalSelect.css('visibility', 'hidden');
 
             // Hide the original select.
 
@@ -1046,7 +1109,8 @@ function($, log, str, templates, notification, LoadingIcon) {
                 inputId: 'form_autocomplete_input-' + uniqueId,
                 suggestionsId: 'form_autocomplete_suggestions-' + uniqueId,
                 selectionId: 'form_autocomplete_selection-' + uniqueId,
-                downArrowId: 'form_autocomplete_downarrow-' + uniqueId
+                downArrowId: 'form_autocomplete_downarrow-' + uniqueId,
+                items: [],
             };
 
             // Increment the unique counter so we don't get duplicates ever.
@@ -1082,31 +1146,38 @@ function($, log, str, templates, notification, LoadingIcon) {
             // Collect rendered inline JS to be executed once the HTML is shown.
             var collectedjs = '';
 
-            var renderInput = templates.render('core/form_autocomplete_input', context).then(function(html, js) {
-                collectedjs += js;
-                return html;
+            var renderLayout = templates.render(options.templates.layout, {})
+            .then(function(html) {
+                return $(html);
             });
 
-            var renderDatalist = templates.render('core/form_autocomplete_suggestions', context).then(function(html, js) {
+            var renderInput = templates.render(options.templates.input, context).then(function(html, js) {
                 collectedjs += js;
-                return html;
+                return $(html);
             });
 
-            var renderSelection = templates.render('core/form_autocomplete_selection', context).then(function(html, js) {
+            var renderDatalist = templates.render(options.templates.suggestions, context).then(function(html, js) {
                 collectedjs += js;
-                return html;
+                return $(html);
             });
 
-            return $.when(renderInput, renderDatalist, renderSelection)
-            .then(function(input, suggestions, selection) {
+            var renderSelection = templates.render(options.templates.selection, context).then(function(html, js) {
+                collectedjs += js;
+                return $(html);
+            });
+
+            return $.when(renderLayout, renderInput, renderDatalist, renderSelection)
+            .then(function(layout, input, suggestions, selection) {
                 originalSelect.hide();
+                var container = originalSelect.parent();
 
                 // Ensure that the data-fieldtype is set for behat.
-                $(input).find('input').attr('data-fieldtype', 'autocomplete');
+                input.find('input').attr('data-fieldtype', 'autocomplete');
 
-                originalSelect.after(suggestions);
-                originalSelect.after(input);
-                originalSelect.after(selection);
+                container.append(layout);
+                container.find('[data-region="form_autocomplete-input"]').replaceWith(input);
+                container.find('[data-region="form_autocomplete-suggestions"]').replaceWith(suggestions);
+                container.find('[data-region="form_autocomplete-selection"]').replaceWith(selection);
 
                 templates.runTemplateJS(collectedjs);
 
@@ -1117,7 +1188,8 @@ function($, log, str, templates, notification, LoadingIcon) {
 
                 var suggestionsElement = $(document.getElementById(state.suggestionsId));
                 // Hide the suggestions by default.
-                suggestionsElement.hide().attr('aria-hidden', true);
+                suggestionsElement.hide();
+                Aria.hide(suggestionsElement.get());
 
                 return;
             })

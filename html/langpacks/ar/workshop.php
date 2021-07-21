@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ar', version '3.8'.
+ * Strings for component 'workshop', language 'ar', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'التقييمات تغلق:';
+$string['activitydate:assessmentsclosed'] = 'التقييمات أغلقت:';
+$string['activitydate:assessmentsopen'] = 'التقييمات تفتح:';
+$string['activitydate:assessmentsopened'] = 'التقييمات فتحت:';
+$string['activitydate:submissionsclose'] = 'التسليمات تغلق:';
+$string['activitydate:submissionsclosed'] = 'التسليمات أغلقت:';
+$string['activitydate:submissionsopen'] = 'التسليمات تفتح:';
+$string['activitydate:submissionsopened'] = 'التسليمات فتحت:';
 $string['aggregategrades'] = 'أعد احتساب العلامات';
 $string['aggregation'] = 'تجميع العلامات';
 $string['allocate'] = 'وزِّع التسليمات';
@@ -116,18 +124,18 @@ $string['evaluation'] = 'تقييم منح العلامة';
 $string['evaluationmethod'] = 'طريقة تقييم منح العلامة';
 $string['evaluationmethod_help'] = 'طريقة تقييم منح العلامات تحدد كيفية إحتساب علامة التقييم. يمكنك جعلها تعيد إحتساب العلامات مراراً مع إعدادات مختلفة ما لم تكن راضياً عن النتائج.';
 $string['evaluationsettings'] = 'إعدادات تقييم منح العلامات';
-$string['eventassessableuploaded'] = 'لقد تم رفع تسليم.';
-$string['eventassessmentevaluated'] = 'تم تقييم التقييم';
-$string['eventassessmentevaluationsreset'] = 'إعادة تعيين تقييمات التقييم';
-$string['eventassessmentreevaluated'] = 'تمت إعادة تقييم التقييم';
-$string['eventphaseswitched'] = 'تم تحويل الطور';
-$string['eventsubmissionassessed'] = 'تم تقييم التسليم';
-$string['eventsubmissionassessmentsreset'] = 'تم إخلاء تقييمات التسليم';
-$string['eventsubmissioncreated'] = 'تم إنشاء التسليم';
-$string['eventsubmissiondeleted'] = 'تم حذف التسليم';
-$string['eventsubmissionreassessed'] = 'تمت إعادة تقييم التسليم';
-$string['eventsubmissionupdated'] = 'تم تحديث التسليم';
-$string['eventsubmissionviewed'] = 'تمت معاينة التسليم';
+$string['eventassessableuploaded'] = 'تسليم تم رفعه';
+$string['eventassessmentevaluated'] = 'تقييم تم تقييمه';
+$string['eventassessmentevaluationsreset'] = 'تقييمات تقييم تمت إعادة تعيينها';
+$string['eventassessmentreevaluated'] = 'تقييم تمت إعادة تقييمه';
+$string['eventphaseswitched'] = 'طور تم تحويله';
+$string['eventsubmissionassessed'] = 'تسليم تم تقييمه';
+$string['eventsubmissionassessmentsreset'] = 'تقييمات تسليم تم إخلاؤها';
+$string['eventsubmissioncreated'] = 'تسليم تم إنشاؤه';
+$string['eventsubmissiondeleted'] = 'تسليم تم حذفه';
+$string['eventsubmissionreassessed'] = 'تسليم تمت إعادة تقييمه';
+$string['eventsubmissionupdated'] = 'تسليم تم تحديثه';
+$string['eventsubmissionviewed'] = 'تسليم تمت معاينته';
 $string['example'] = 'التسليم النموذجي';
 $string['exampleadd'] = 'أضف تسليماً نموذجياً';
 $string['exampleassess'] = 'قيِّم التسليم النموذجي';
@@ -144,14 +152,14 @@ $string['exampleneedsubmission'] = 'عليك أولاً تسليم عملك وت
 $string['examplesbeforeassessment'] = 'النماذج تتاح للمرء بعد تسليمه وينبغي تقييمها قبل التقييم المناظر';
 $string['examplesbeforesubmission'] = 'ينبغي تقييم النماذج قبل قيام المرء بالتسليم';
 $string['examplesmode'] = 'نمط تقييم النماذج';
-$string['examplesubmissions'] = 'مثال للتسليمات';
+$string['examplesubmissions'] = 'تسليمات النموذج';
 $string['examplesvoluntary'] = 'تقييم التسليم النموذجي أمر طوعي';
 $string['exportsubmission'] = 'تصدير هذه الصفحة';
 $string['feedbackauthor'] = 'إفادة موجهة إلى الكاتب';
 $string['feedbackauthorattachment'] = 'المرفق';
 $string['feedbackby'] = 'إفادة {$a}';
 $string['feedbackreviewer'] = 'إفادة موجهة إلى المقيِّم';
-$string['feedbacksettings'] = 'اجابة تقييمية';
+$string['feedbacksettings'] = 'الإفادة';
 $string['formataggregatedgrade'] = '{$a->grade}';
 $string['formataggregatedgradeover'] = '<del>{$a->grade}</del><br /><ins>{$a->over}</ins>';
 $string['formatpeergrade'] = '';
@@ -192,11 +200,11 @@ $string['info'] = 'المعلومة';
 $string['instructauthors'] = 'تعليمات التسليم';
 $string['instructreviewers'] = 'تعليمات التقييم';
 $string['introduction'] = 'الوصف';
-$string['latesubmissions'] = 'التقديمات المتأخرة';
+$string['latesubmissions'] = 'التسليمات المتأخرة';
 $string['latesubmissions_desc'] = 'إسمح بالتسليمات بعد الموعد النهائي';
 $string['latesubmissions_help'] = 'عند تمكينه، يمكن للكاتب تسليم عمله بعد الموعد النهائي للتسليم أو خلال طور التقييم. مع ذلك، التسليمات المتأخرة لا يمكن تحريرها.';
 $string['latesubmissionsallowed'] = 'التسليمات المتأخرة مسموح بها';
-$string['legacyallocationplugincron'] = 'تعيين مشغل الوظائف المجدولة الموروث لورشة العمل';
+$string['legacyallocationplugincron'] = 'التعيين السابق لمشغل الوظائف الدورية لورشة العمل';
 $string['maxbytes'] = 'أقصى حجم لمرفقات التسليم';
 $string['modulename'] = 'ورشة عمل';
 $string['modulename_help'] = 'وحدة نشاط ورشة العمل تُمكِّن تجميع، مراجعة وتقييم أعمال الطلاب تقييماً مناظراً.
@@ -205,7 +213,7 @@ $string['modulename_help'] = 'وحدة نشاط ورشة العمل تُمكِّ
 
 يتم تقييم التسليمات باستعمال نموذج تقييم متعدد المعايير يُعرَّف من قبل المعلم. عملية التقييم المناظر وفهم نموذج التقييم يمكن التمرن عليها مقدماً بواسطة تسليمات نموذجية مقدمة من قبل المعلم يصاحبها تقييم مرجعي. الطلبة تعطى لهم فرصة تقييم واحد أو أكثر من تسليمات نظرائهم. يمكن إخفاء هويات أصحاب التسليمات وكذلك التقييمات إن تطلب الأمر.
 
-يحصل الطلبة على علامتين في نشاط ورشة العمل - علامة على تسليمهم وعلامة أخرى على تقييمهم لتسليمات نظرائهم. العلامتان كلاهما تسجلان في سجل العلامات.';
+يحصل الطلبة على علامتين في نشاط ورشة العمل - علامة على تسليمهم وعلامة أخرى على تقييمهم لتسليمات نظرائهم. العلامتان كلاهما تسجلان في سجل التقديرات.';
 $string['modulenameplural'] = 'ورش عمل';
 $string['myassessments'] = 'تقييماتي';
 $string['mysubmission'] = 'تسليمي';
@@ -220,7 +228,7 @@ $string['notassessed'] = 'غير مقيَّم بعد';
 $string['nothingfound'] = 'لا شيء لعرضه';
 $string['nothingtoreview'] = 'لا شيء لمراجعته';
 $string['notoverridden'] = 'غير متجاوز';
-$string['noworkshops'] = 'لا توجد ورش عمل في هذا المساق';
+$string['noworkshops'] = 'لا توجد ورش عمل في هذا المقرر الدراسي';
 $string['noyoursubmission'] = 'لم تقم بتسليم عملك بعد';
 $string['nullgrade'] = '-';
 $string['overallfeedback'] = 'الإفادة الشاملة';
@@ -262,6 +270,22 @@ $string['privacy:metadata:late'] = 'فيما إذا كان التسليم حاص
 $string['privacy:metadata:peercomment'] = 'التعليق على العلامة المعطاة من قبل المستخدم المقدم للتقييم';
 $string['privacy:metadata:peercommentformat'] = 'تنسيق النص للتعليق على العلامة المعطاة';
 $string['privacy:metadata:preference:perpage'] = 'عدد التسليمات التي يفضل المستخدم مشاهدتها في صفحة واحدة';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = 'حالة الطي/التوسع لمنظر \'التسليمات النموذجية\'';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = 'حالة الطي/التوسع لمنظر \'تقرير تسليمات ورشة العمل\'';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = 'حالة الطي/التوسع لمنظر \'نموذج التقييم\'';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = 'حالة الطي/التوسع لمنظر \'التسليمات الموزعة لغرض التقييم\'';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = 'حالة الطي/التوسع لمنظر \'شريط أدوات ورشة العمل\'';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = 'حالة الطي/التوسع لمنظر \'الاستنتاج\'';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = 'حالة الطي/التوسع لمنظر \'التسليمات النموذجية لغرض التقييم\'';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = 'حالة الطي/التوسع لمنظر \'التسليمات النموذجية لغرض التقييم\'';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = 'حالة الطي/التوسع لمنظر \'تقرير علامات ورشة العمل\'';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = 'حالة الطي/التوسع لمنظر \'تعليمات التسليم\'';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = 'حالة الطي/التوسع لمنظر \'تعليمات التقييم\'';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = 'حالة الطي/التوسع لمنظر \'المقدمة\'';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = 'حالة الطي/التوسع لمنظر \'الإفادة الشاملة\'';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = 'حالة الطي/التوسع لمنظر \'تسليمك\'';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = 'حالة الطي/التوسع لمنظر \'التسليمات المنشورة\'';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = 'حالة الطي/التوسع لمنظر \'علاماتك\'';
 $string['privacy:metadata:published'] = 'فيما إذا كان ينبغي نشر التسليم إلى كل المشاركين بمجرد إغلاق ورشة العمل';
 $string['privacy:metadata:reviewerid'] = 'مُعرَّف المستخدم المقدم للتقييم';
 $string['privacy:metadata:strategy'] = 'اسم الملحق الفرعي لاستراتيجية منح العلامات الذي يقوم بترجمة قيم السجل';
@@ -298,13 +322,13 @@ $string['resetphase'] = 'التبديل إلى طور الإعداد';
 $string['resetphase_help'] = 'عند تمكينه، فكل ورش العمل سيتم وضعها في طور الإعداد الأولي.';
 $string['resetsubmissions'] = 'حذف كل التسليمات';
 $string['resetsubmissions_help'] = 'كل التسليمات وتقييماتها سيتم حذفها. هذا لا يؤثر على التسليمات النموذجية.';
-$string['saveandclose'] = 'إحفظ وأغلق';
+$string['saveandclose'] = 'حفظ وإغلاق';
 $string['saveandcontinue'] = 'حفظ ومتابعة التحرير';
-$string['saveandpreview'] = 'إحفظ واستعرض';
+$string['saveandpreview'] = 'حفظ واستعراض';
 $string['saveandshownext'] = 'إحفظ وأظهر التالي';
 $string['search:activity'] = 'ورشة العمل - معلومات النشاط';
 $string['selfassessmentdisabled'] = 'تم تعطيل التقييم الذاتي';
-$string['showingperpage'] = 'يجري إظهار {$a} عنصر في الصفحة';
+$string['showingperpage'] = 'إظهار {$a} من العناصر لكل صفحة';
 $string['showingperpagechange'] = 'غيِّر ...';
 $string['someuserswosubmission'] = 'هناك كاتب واحد على الأقل لم يسلم عمله بعد';
 $string['sortasc'] = 'فرز تصاعدي';
@@ -427,3 +451,4 @@ $string['workshopname'] = 'اسم ورشة العمل';
 $string['yourassessmentfor'] = 'تقييمك لـ {$a}';
 $string['yourgrades'] = 'علاماتك';
 $string['yoursubmission'] = 'تسليمك';
+$string['yoursubmissionwithassessments'] = 'تسليمك مع التقييمات';

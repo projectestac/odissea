@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'gl', version '3.8'.
+ * Strings for component 'enrol', language 'gl', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -101,7 +101,7 @@ $string['extremovedunenrol'] = 'Desmatricular un usuario do curso';
 $string['finishenrollingusers'] = 'Rematar a matriculación de usuarios';
 $string['foundxcohorts'] = 'Atopáronse {$a} grupos';
 $string['instanceadded'] = 'O método foi engadido';
-$string['instanceeditselfwarning'] = 'Aviso:';
+$string['instanceeditselfwarning'] = 'Advertencia:';
 $string['instanceeditselfwarningtext'] = 'Vostede está matriculado neste curso mediante este método de matriculación, os cambios poden afectar ao seu acceso a este curso.';
 $string['invalidenrolduration'] = 'Duración de matriculación incorrecta';
 $string['invalidenrolinstance'] = 'Instancia de matriculación incorrecta';
@@ -109,7 +109,7 @@ $string['invalidrequest'] = 'Solicitude incorrecta';
 $string['invalidrole'] = 'Rol incorrecto';
 $string['manageenrols'] = 'Xestionar os engadidos de matriculación';
 $string['manageinstance'] = 'Xestionar';
-$string['migratetomanual'] = 'Migrar cara a matriculación manual';
+$string['migratetomanual'] = 'Migrar cara á matriculación manual';
 $string['nochange'] = 'Sen cambios';
 $string['noexistingparticipants'] = 'Participantes inexistentes';
 $string['nogroup'] = 'Sen grupo';
@@ -147,7 +147,7 @@ $string['sendfromkeyholder'] = 'Do chaveiro';
 $string['sendfromnoreply'] = 'Do enderezo «sen resposta»';
 $string['startdatetoday'] = 'Hoxe';
 $string['synced'] = 'Sincronizado';
-$string['testsettings'] = 'Proba das configuracións';
+$string['testsettings'] = 'Proba dos axustes';
 $string['testsettingsheading'] = 'Probar os axustes de matriculación - {$a}';
 $string['totalenrolledusers'] = '{$a} usuarios matriculados';
 $string['totalotherusers'] = '{$a} outros usuarios';
@@ -158,7 +158,7 @@ $string['unenrolconfirm'] = 'Confirma que quere desmatricular o usuario «{$a->u
 $string['unenrolme'] = 'Desmatricularme de {$a}';
 $string['unenrolnotpermitted'] = 'Non ten permiso ou non pode desmatricular este usuario do curso.';
 $string['unenrolroleusers'] = 'Desmatricular usuarios';
-$string['uninstallmigrating'] = 'Migrando «{$a}» inscricións';
+$string['uninstallmigrating'] = 'Migrando «{$a}» matriculacións';
 $string['unknowajaxaction'] = 'A acción solicitada é descoñecida';
 $string['unlimitedduration'] = 'Sen límite';
 $string['userremovedfromselectiona'] = 'O usuario «{$a}» foi retirado da selección.';

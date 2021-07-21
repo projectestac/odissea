@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'en', version '3.8'.
+ * Strings for component 'quiz_grading', language 'en', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(graded)';
 $string['gradenextungraded'] = 'Grade next {$a} ungraded attempts';
 $string['gradeungraded'] = 'Grade all {$a} ungraded attempts';
 $string['grading'] = 'Manual grading';
-$string['grading:componentname'] = 'Manual grading report';
 $string['grading:viewidnumber'] = 'See student ID numbers while grading';
 $string['grading:viewstudentnames'] = 'See student names while grading';
 $string['gradingall'] = 'All {$a} attempts on this question.';
@@ -71,7 +70,8 @@ $string['nothingfound'] = 'Nothing to display';
 $string['options'] = 'Options';
 $string['orderattempts'] = 'Order attempts';
 $string['pluginname'] = 'Manual grading';
-$string['privacy:metadata'] = 'The Quiz Manual grading plugin does not store any personal data. It provides an interface for users to store data without storing any data itself.';
+$string['privacy:preference:order'] = 'What order to show the attempts that need grading.';
+$string['privacy:preference:pagesize'] = 'How many attempts to show on each page of the grading interface.';
 $string['qno'] = 'Q #';
 $string['questionname'] = 'Question name';
 $string['questionsperpage'] = 'Questions per page';

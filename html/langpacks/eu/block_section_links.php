@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'eu', version '3.8'.
+ * Strings for component 'block_section_links', language 'eu', version '3.11'.
  *
  * @package     block_section_links
  * @category    string
@@ -38,5 +38,7 @@ $string['numsections2_help'] = 'Ikastaroko atal-kopurua kantitate honetara irist
 $string['pluginname'] = 'Ataletarako estekak';
 $string['privacy:metadata'] = 'Ataletarako esteka blokeak soilik beste kokapenetan gordetako datuak erakusten ditu.';
 $string['section_links:addinstance'] = 'Gehitu ataletarako estekak bloke berria';
+$string['showsectionname'] = 'Erakutsi atalaren izena';
+$string['showsectionname_help'] = 'Erakutsi atalaren izena atalaren zenbakiarekin batera';
 $string['topics'] = 'Gaiak';
 $string['weeks'] = 'Asteak';

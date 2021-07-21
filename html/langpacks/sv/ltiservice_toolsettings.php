@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_toolsettings', language 'sv', version '3.8'.
+ * Strings for component 'ltiservice_toolsettings', language 'sv', version '3.11'.
  *
  * @package     ltiservice_toolsettings
  * @category    string
@@ -29,5 +29,5 @@ $string['allow'] = 'Använd denna tjänst';
 $string['ltiservice_toolsettings'] = 'Verktygsinställningar';
 $string['ltiservice_toolsettings_help'] = 'Tillåt att verktyget sparar och hämtar inställningsvärden.';
 $string['notallow'] = 'Använd inte denna tjänst';
-$string['pluginname'] = 'Tjänst för verktygsinställningar';
-$string['privacy:metadata'] = 'Pluginmodulen Tjänst för verktygsinställningar lagrar ingen personlig information.';
+$string['pluginname'] = 'Verktygsinställningar';
+$string['privacy:metadata'] = 'Pluginmodulen Verktygsinställningar lagrar ingen personinformation.';

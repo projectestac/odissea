@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_csv', language 'gl', version '3.8'.
+ * Strings for component 'gradeimport_csv', language 'gl', version '3.11'.
  *
  * @package     gradeimport_csv
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['csv:view'] = 'Importar cualificacións desde CSV';
+$string['csv:view'] = 'Importar cualificacións dende CSV';
 $string['pluginname'] = 'ficheiro CSV';
-$string['privacy:metadata'] = 'O engadido de importar cualificacións desde CSV non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O engadido de Importar cualificacións dende CSV non almacena ningún dato persoal.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'ar', version '3.8'.
+ * Strings for component 'block_section_links', language 'ar', version '3.11'.
  *
  * @package     block_section_links
  * @category    string
@@ -38,5 +38,7 @@ $string['numsections2_help'] = 'بمجرد وصول عدد المقاطع في �
 $string['pluginname'] = 'روابط المقطع';
 $string['privacy:metadata'] = 'كتلة روابط المقاطع تظهر فقط البيانات المخزونة في مواضع أخرى.';
 $string['section_links:addinstance'] = 'إضافة كتلة جديدة لروابط المقاطع';
+$string['showsectionname'] = 'عرض اسم المقطع';
+$string['showsectionname_help'] = 'عرض اسم المقطع فضلاً عن رقمه';
 $string['topics'] = 'مواضيع';
 $string['weeks'] = 'أسابيع';

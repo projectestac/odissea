@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'en', version '3.8'.
+ * Strings for component 'role', language 'en', version '3.11'.
  *
  * @package     role
  * @category    string
@@ -104,7 +104,7 @@ $string['category:create'] = 'Create categories';
 $string['category:delete'] = 'Delete categories';
 $string['category:manage'] = 'Manage categories';
 $string['category:update'] = 'Update categories';
-$string['category:viewcourselist'] = 'View list of courses you are not enrolled in';
+$string['category:viewcourselist'] = 'View course category and courses within it';
 $string['category:viewhiddencategories'] = 'See hidden categories';
 $string['category:visibility'] = 'See hidden categories';
 $string['checkglobalpermissions'] = 'Check system permissions';
@@ -159,6 +159,15 @@ $string['confirmunassign'] = 'Are you sure you wish to remove this role from thi
 $string['confirmunassignno'] = 'Cancel';
 $string['confirmunassigntitle'] = 'Confirm role change';
 $string['confirmunassignyes'] = 'Remove';
+$string['contentbank:access'] = 'Access the content bank';
+$string['contentbank:deleteanycontent'] = 'Delete any content from the content bank';
+$string['contentbank:deleteowncontent'] = 'Delete content from own content bank';
+$string['contentbank:downloadcontent'] = 'Download content from the content bank';
+$string['contentbank:manageanycontent'] = 'Manage any content from the content bank';
+$string['contentbank:manageowncontent'] = 'Manage content from own content bank';
+$string['contentbank:upload'] = 'Upload new content to the content bank';
+$string['contentbank:useeditor'] = 'Create or edit content using a content type editor';
+$string['contentbank:viewunlistedcontent'] = 'View unlisted content from the content bank';
 $string['context'] = 'Context';
 $string['course:activityvisibility'] = 'Hide/show activities';
 $string['course:bulkmessaging'] = 'Send a message to many people';
@@ -169,9 +178,11 @@ $string['course:changelockedcustomfields'] = 'Change locked custom fields';
 $string['course:changeshortname'] = 'Change course short name';
 $string['course:changesummary'] = 'Change course summary';
 $string['course:configurecustomfields'] = 'Configure custom fields';
+$string['course:configuredownloadcontent'] = 'Configure download course content';
 $string['course:create'] = 'Create courses';
 $string['course:creategroupconversations'] = 'Create group conversations';
 $string['course:delete'] = 'Delete courses';
+$string['course:downloadcoursecontent'] = 'Download course content';
 $string['course:enrolconfig'] = 'Configure enrol instances in courses';
 $string['course:enrolreview'] = 'Review course enrolments';
 $string['course:ignoreavailabilityrestrictions'] = 'Ignore availability restrictions';
@@ -185,6 +196,7 @@ $string['course:managescales'] = 'Manage scales';
 $string['course:markcomplete'] = 'Mark users as complete in course completion';
 $string['course:movesections'] = 'Move sections';
 $string['course:overridecompletion'] = 'Override activity completion status';
+$string['course:recommendactivity'] = 'Recommend activities in the activity chooser';
 $string['course:renameroles'] = 'Rename roles';
 $string['course:request'] = 'Request new courses';
 $string['course:reset'] = 'Reset course';
@@ -325,6 +337,8 @@ $string['overrideroles'] = 'Override roles';
 $string['overriderolesin'] = 'Override roles in {$a}';
 $string['overrides'] = 'Overrides';
 $string['overridesbycontext'] = 'Overrides (by context)';
+$string['payment:manageaccounts'] = 'Manage accounts';
+$string['payment:viewpayments'] = 'View payments';
 $string['permission'] = 'Permission';
 $string['permission_help'] = 'Permissions are capability settings. There are 4 options:
 
@@ -444,9 +458,11 @@ $string['site:mnetloginfromremote'] = 'Login from a remote application via MNet'
 $string['site:mnetlogintoremote'] = 'Roam to a remote application via MNet';
 $string['site:readallmessages'] = 'Read all messages on site';
 $string['site:restore'] = 'Restore courses';
+$string['site:senderrormessage'] = 'Send a message to the support user from the error page';
 $string['site:sendmessage'] = 'Send messages to any user';
 $string['site:trustcontent'] = 'Trust submitted content';
 $string['site:uploadusers'] = 'Upload new users from file';
+$string['site:viewanonymousevents'] = 'View anonymous events in reports';
 $string['site:viewfullnames'] = 'Always see full names of users';
 $string['site:viewparticipants'] = 'View participants';
 $string['site:viewreports'] = 'View reports';

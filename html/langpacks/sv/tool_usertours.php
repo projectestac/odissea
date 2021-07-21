@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'sv', version '3.8'.
+ * Strings for component 'tool_usertours', language 'sv', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -64,12 +64,20 @@ $string['event_tour_ended'] = 'Den guidade turen avslutades';
 $string['event_tour_reset'] = 'Återställ den guidade turen';
 $string['event_tour_started'] = 'Guidad tur startad';
 $string['exporttour'] = 'Exportera guide';
+$string['filter_accessdate'] = 'Åtkomstdatum';
+$string['filter_accessdate_enabled'] = 'Aktivera filter för åtkomstdatum';
+$string['filter_accessdate_enabled_help'] = 'Visa enbart guiden för nya användare eller användare som nyligen besökt webbplatsen.';
 $string['filter_category'] = 'Kategori';
 $string['filter_category_help'] = 'Visa guiden på en sida som är associerad med en kurs i den valda kategorin.';
 $string['filter_course'] = 'Kurser';
 $string['filter_course_help'] = 'Visa guiden på en sida som är associerad med den valda kursen.';
 $string['filter_courseformat'] = 'Kursformat';
 $string['filter_courseformat_help'] = 'Visa guiden på en sida som är associerad med en kurs i det valda kursformatet.';
+$string['filter_cssselector'] = 'CSS-selektor';
+$string['filter_cssselector_help'] = 'Visa endast guiden när den angivna CSS-selektorn hittas i sidan.';
+$string['filter_date_account_creation'] = 'Kontoskapandedatum inom';
+$string['filter_date_first_login'] = 'Användarens första åtkomstdatum inom';
+$string['filter_date_last_login'] = 'Användarens senaste åtkomstdatum inom';
 $string['filter_header'] = 'Guidefilter';
 $string['filter_help'] = 'Välj villkor för vilka guiden kommer att visas. Alla villkor måste uppfyllas för att guiden ska visas för användaren.';
 $string['filter_role'] = 'Roll';
@@ -87,6 +95,7 @@ $string['name'] = 'Namn';
 $string['newstep'] = 'Nytt steg';
 $string['newtour'] = 'Ny guide';
 $string['next'] = 'Nästa';
+$string['nextstep'] = 'Nästa';
 $string['options_heading'] = 'Alternativ';
 $string['orphan'] = 'Visa om målet inte hittas';
 $string['orphan_help'] = 'Visa steget om målet inte hittas på sidan.';
@@ -108,6 +117,7 @@ $string['placement_help'] = 'Ett steg kan placeras ovanför, under, vänster ell
 
 Om steget inte får plats på en viss sida på angivet ställe, placeras det automatiskt någon annanstans.';
 $string['pluginname'] = 'Guidade turer för användare';
+$string['previousstep'] = 'Föregående';
 $string['privacy:metadata:preference:completed'] = 'Tidpunkten då en användare senast slutförde en guidad tur.';
 $string['privacy:metadata:preference:requested'] = 'Tidpunkten då en användare senast manuellt begärde en guidad tur.';
 $string['privacy:request:preference:completed'] = 'Senast markerade du den guidade turen för "{$a->name}" som slutförd  {$a->time}';
@@ -173,16 +183,18 @@ $string['tour2_title_opendrawer'] = 'Öppna navigeringspanelen';
 $string['tour2_title_participants'] = 'Kursdeltagare';
 $string['tour2_title_welcome'] = 'Välkommen';
 $string['tour3_content_dashboard'] = 'Sidan "Mitt Moodle" har många funktioner som gör det lätt för dig att hitta den information som är viktig.';
-$string['tour3_content_displayoptions'] = 'Kurser kan sorteras efter kursnamn eller datum för senaste besök.
+$string['tour3_content_displayoptions'] = 'Kurserna kan sorteras efter kursnamn, kortnamn eller senaste åtkomstdatum.
 
-Du kan även välja om du vill se kurserna som lista, med kurssammanfattningen eller som kort.';
+Du kan också välja att visa kurserna i en lista, med sammanfattningsinformation eller i standardvyn \'Kort\'.';
 $string['tour3_content_overview'] = 'Blocket Kursöversikt visar alla kurser som du är registrerad på.
 
 Du kan välja om du vill visa alla kurser eller bara dem som pågår just nu, dem som är avslutade eller kommande, eller kurser som du har markerat som favoriter.';
 $string['tour3_content_recentcourses'] = 'Blocket Senast besökta kurser visar de kurser som du senast varit aktiv i så att du kan hoppa rätt in i dem igen.';
-$string['tour3_content_starring'] = 'Du kan stjärnmarkera en kurs för att lägga den till dina favoriter eller dölja en kurs som inte längre är viktig för dig.
+$string['tour3_content_starring'] = 'Du kan välja att favoritmarkera en kurs för att framhäva den, eller dölja en kurs som inte längre är viktig för dig.
 
-Dessa inställningar syns bara på din egen Mitt Moodle-sida.';
+Dessa åtgärder påverkar bara din vy.
+
+Du kan också välja att visa kurserna i en lista eller med sammanfattande information eller standardvyn "kort".';
 $string['tour3_content_timeline'] = 'Blocket Tidslinje visar viktiga kommande händelser.
 
 Du kan välja att visa aktiviteter för nästa vecka, nästa månad eller ännu längre fram.
@@ -208,8 +220,18 @@ $string['tour4_content_starred'] = 'Du kan markera konversationer som favoriter 
 $string['tour4_title_groupconvo'] = 'Gruppmeddelanden';
 $string['tour4_title_icon'] = 'Att använda "Meddelanden"';
 $string['tour4_title_messaging'] = 'Nytt gränssnitt för Meddelanden';
-$string['tour4_title_settings'] = 'Inställningar för "Meddelanden"';
+$string['tour4_title_settings'] = 'Meddelandeinställningar';
 $string['tour4_title_starred'] = 'Favoriter';
+$string['tour_activityinfo_activity_student_content'] = 'Aktivitetsdatum samt vad som måste göras för att slutföra aktiviteten visas på aktivitetssidan.';
+$string['tour_activityinfo_activity_student_title'] = 'Nytt: Aktivitetsinformation';
+$string['tour_activityinfo_activity_teacher_content'] = 'Aktivitetsdatum och slutförandevillkor visas nu för deltagare på varje aktivitetssida (och eventuellt på kurssidan).
+
+För aktiviteter som kräver att deltagarna manuellt markerar en aktivitet som slutförd visas knappen <em>"Markera som klar"</em> på aktivitetssidan.';
+$string['tour_activityinfo_activity_teacher_title'] = 'Nytt: Aktivitetsinformation';
+$string['tour_activityinfo_course_student_content'] = 'Aktivitetsdatum och/eller vad som måste göras för att slutföra aktiviteten visas på kurssidan.';
+$string['tour_activityinfo_course_student_title'] = 'Nytt: Aktivitetsinformation';
+$string['tour_activityinfo_course_teacher_content'] = 'Med de nya kursinställningarna "Visa slutförandevillkor" och "Visa aktivitetsdatum" kan du välja om villkor för aktivitetsslutförande (om angivet) och/eller datum visas för deltagare på kurssidan.';
+$string['tour_activityinfo_course_teacher_title'] = 'Nytt: Aktivitetsinformation';
 $string['tour_final_step_content'] = 'Din guidade tur är avslutad. Om du vill se den igen kan du klicka länken längst nere på sidan för att återställa den.';
 $string['tour_final_step_title'] = 'Slut på den guidade turen';
 $string['tour_resetforall'] = 'Tillståndet hos den guidade turen har återställts. Det kommer åter att visas för alla användare.';

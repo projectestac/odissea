@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnetservice_enrol', language 'gl', version '3.8'.
+ * Strings for component 'mnetservice_enrol', language 'gl', version '3.11'.
  *
  * @package     mnetservice_enrol
  * @category    string
@@ -30,7 +30,7 @@ $string['availablecoursesonnone'] = 'A máquina remota <a href="{$a->hosturl}">{
 $string['clientname'] = 'Cliente remoto de matriculacións';
 $string['clientname_help'] = 'Esta ferramenta permítelle matricular e dar de baixa aos seus usuarios locais en máquinas remotas que permitan facelo a través do engadido «MNet de matriculacións remotas»';
 $string['editenrolments'] = 'Editar as matriculacións';
-$string['hostappname'] = 'Aplicativo';
+$string['hostappname'] = 'Aplicación';
 $string['hostname'] = 'Nome da máquina';
 $string['hosturl'] = 'URL da máquina remota';
 $string['nopublishers'] = 'Non hai dispoñíbeis pares remotos.';
@@ -44,5 +44,5 @@ $string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'O ID da máqu
 $string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'ID do curso no servidor remoto.';
 $string['privacy:metadata:mnetservice_enrol_enrolments:rolename'] = 'O nome do rol no servidor remoto.';
 $string['privacy:metadata:mnetservice_enrol_enrolments:tableexplanation'] = 'Esta táboa almacena información sobre matriculacións dos nosos usuarios locais en cursos sobre servidores remotos.';
-$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'O ID ID do noso usuario local neste servidor';
-$string['refetch'] = 'Volver a buscar o estado actualizado desde máquinas remotas';
+$string['privacy:metadata:mnetservice_enrol_enrolments:userid'] = 'O ID do noso usuario local neste servidor';
+$string['refetch'] = 'Volver a buscar o estado actualizado dende máquinas remotas';

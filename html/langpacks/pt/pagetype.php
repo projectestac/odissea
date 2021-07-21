@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'pagetype', language 'pt', version '3.8'.
+ * Strings for component 'pagetype', language 'pt', version '3.11'.
  *
  * @package     pagetype
  * @category    string
@@ -41,6 +41,6 @@ $string['page-report-x'] = 'Qualquer página de relatório';
 $string['page-site-index'] = 'Apenas a página principal do site';
 $string['page-site-x'] = 'Qualquer página de nível superior do site';
 $string['page-user-profile'] = 'Apenas páginas de perfil do utilizador';
-$string['page-user-view'] = 'Apenas as páginas de perfil de utilizador';
+$string['page-user-view'] = 'Apenas as páginas de perfil do utilizador';
 $string['page-user-x'] = 'Todas as páginas do utilizador';
 $string['page-x'] = 'Qualquer página';

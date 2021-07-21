@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'zh_cn', version '3.8'.
+ * Strings for component 'message', language 'zh_cn', version '3.11'.
  *
  * @package     message
  * @category    string
@@ -75,9 +75,7 @@ $string['errorconversationdoesnotexist'] = '会话不存在';
 $string['errortranslatingdefault'] = '转化插件的缺省设置出错，改为使用系统缺省设置。';
 $string['eventgroupmessagesent'] = '群组消息已发送';
 $string['eventmessagecontactadded'] = '联系人消息已添加';
-$string['eventmessagecontactblocked'] = '联系人消息已屏蔽';
 $string['eventmessagecontactremoved'] = '联系人消息已移除';
-$string['eventmessagecontactunblocked'] = '解决屏蔽的消息联系人';
 $string['eventmessagedeleted'] = '信息已删除';
 $string['eventmessagesent'] = '发送了消息';
 $string['eventmessageuserblocked'] = '被屏蔽的用户';
@@ -117,7 +115,6 @@ $string['messageoutputs'] = '消息输出';
 $string['messagepreferences'] = '消息偏好';
 $string['messages'] = '消息';
 $string['messagesselected:'] = '选择的消息';
-$string['messagingdisabled'] = '网站已禁用消息功能，将以email代替';
 $string['muteconversation'] = '静音';
 $string['mutedconversation'] = '静音对话';
 $string['newmessage'] = '新消息';
@@ -166,7 +163,7 @@ $string['removecontactconfirm'] = '您确定要从联系人中移除{$a}吗?';
 $string['removefromfavourites'] = '取消标星对话';
 $string['removefromyourcontacts'] = '移除联系人';
 $string['requirecontacttomessage'] = '您需要请求{$a}将您添加为联系人，才能给他们发消息。';
-$string['searchcombined'] = '搜索用户和消息';
+$string['searchcombined'] = '搜索人员和消息';
 $string['searchforuserorcourse'] = '搜索用户或课程';
 $string['searchmessages'] = '搜索消息';
 $string['seeall'] = '查看所有';
@@ -200,8 +197,6 @@ $string['unreadmessages'] = '未读消息（{$a}）';
 $string['unreadnewmessage'] = '来自{$a}的新消息';
 $string['useentertosend'] = '按回车键发送';
 $string['usercantbemessaged'] = '由于消息偏好设置你不能给{$a}发消息。请尝试加为联系人。';
-$string['userisblockingyou'] = '此用户屏蔽了您的消息';
-$string['userisblockingyounoncontact'] = '{$a}只接受来自联系人的消息。';
 $string['userwouldliketocontactyou'] = '{$a}想与您联系';
 $string['viewfullnotification'] = '查看完整通知';
 $string['wouldliketocontactyou'] = '想和您联系';

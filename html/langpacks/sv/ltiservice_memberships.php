@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_memberships', language 'sv', version '3.8'.
+ * Strings for component 'ltiservice_memberships', language 'sv', version '3.11'.
  *
  * @package     ltiservice_memberships
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allow'] = 'Använd den här tjänsten för att hämta medlemsinformation i enlighet med integritetsinställningarna.';
-$string['ltiservice_memberships'] = 'IMS LTI Namn- och rolletablering';
+$string['ltiservice_memberships'] = 'IMS LTI Namn- och rolletableringar';
 $string['ltiservice_memberships_help'] = 'Tillåt att verktyget hämtar medlemsinformation från kursen med hjälp av tjänsten för IMS LTI Namn- och rolletablering. Sekretessinställningarna gäller. För begäranden på kursnivå kommer dessa att baseras på verktygsinställningarna. Om du alltid vill skicka sådana uppgifter, delegera inte detta val till lärare. Begäranden på länknivå använder alltid de sekretessinställningar som gäller för länken.';
 $string['notallow'] = 'Använd inte den här tjänsten';
-$string['pluginname'] = 'LTI-tjänst för Namn- och rolletablering';
+$string['pluginname'] = 'LTI Namn- och rolletableringar';
 $string['privacy:metadata:email'] = 'E-post för användaren av LTI-konsumenten.';
 $string['privacy:metadata:externalpurpose'] = 'Denna information skickas till en extern LTI-leverantör.';
 $string['privacy:metadata:firstname'] = 'Förnamnet på användaren av LTI-konsumenten.';

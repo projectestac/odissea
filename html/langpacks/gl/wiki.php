@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'gl', version '3.8'.
+ * Strings for component 'wiki', language 'gl', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -102,7 +102,7 @@ $string['format'] = 'Formato';
 $string['format_help'] = '* HTML - O editor HTML está dispoñíbel
 * Creole - Linguaxe común de marcas wiki que ten dispoñíbel unha pequena barra de ferramentas de edición
 * Nwiki - Linguaxe de marcas semellante ao Mediawiki usado no módulo Nwiki';
-$string['formatcreole'] = 'Formato Creoulo';
+$string['formatcreole'] = 'Formato Creole';
 $string['formatcreole_help'] = 'Creole é unha linguaxe común para editar wiki cunha barra de ferramentas de edición para a inserción das marcas apropiadas.
 
 Para crear unha páxina nova, escriba o nome da nova páxina encerrada entre  dobres corchetes, por exemplo [[Páxina 2]].';
@@ -119,7 +119,7 @@ $string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Historia';
 $string['history_help'] = 'O historial lista as ligazóns ás versións anteriores da páxina.';
 $string['html'] = 'HTML';
-$string['incorrectdeleteversions'] = 'As versións de páxina que forneceu para seren eliminadas son incorrectas';
+$string['incorrectdeleteversions'] = 'As versións de páxina que forneceu para ser eliminadas son incorrectas';
 $string['incorrectpageid'] = 'O ID da páxina non é correcto.';
 $string['incorrectsubwikiid'] = 'O ID do subwiki non é correcto.';
 $string['incorrectwikiid'] = 'O ID do wiki non é correcto.';
@@ -140,13 +140,13 @@ $string['insertimage_help'] = 'Este menú despregábel inserirá unha imaxe no e
 $string['invalidlock'] = 'Esta páxina xa está bloqueada por outro usuario.';
 $string['invalidparameters'] = 'Fornecéronse parámetros incorrectos.';
 $string['invalidsection'] = 'Sección incorrecta.';
-$string['invalidsesskey'] = 'A chave de sesión (sesskey) fornecida non é correcta. Envíe de novo os datos.';
-$string['javascriptdisabledlocks'] = 'Javascript está desactivado no seu navegador e os bloqueos no están funcionando. Ŕ probábel que os cambios que faga non se garden correctamente.';
+$string['invalidsesskey'] = 'O máis probábel é que a súa sesión rematara. Tome nota da súa edición e volva iniciar a sesión.';
+$string['javascriptdisabledlocks'] = 'Javascript está desactivado no seu navegador e os bloqueos no están funcionando. É probábel que os cambios que faga non se garden correctamente.';
 $string['links'] = 'Ligazóns';
 $string['listall'] = 'Listar todo';
 $string['listorphan'] = 'Listar as orfas';
-$string['lockingajaxtimeout'] = 'Editar o tempo de actualización do bloqueo da edición da páxina';
-$string['lockingtimeout'] = 'Tempo límite para o bloqueo';
+$string['lockingajaxtimeout'] = 'Editar o tempo de actualización do bloqueo da páxina';
+$string['lockingtimeout'] = 'Límite de tempo para o bloqueo';
 $string['map'] = 'Mapa';
 $string['mapmenu'] = 'Menú Mapa';
 $string['migrationfinished'] = 'A migración rematou satisfactoriamente';
@@ -161,7 +161,7 @@ Conservase un historial das versións anteriores de cada páxina do wiki, que li
 Os Wikis teñen moitos usos, tales como
 
 * Para os apuntes de clase para o grupo
-* Para  os profesores dun centro que preparan unha estratexia ou reunión de traballo en equipo
+* Para  os profesores dun centro que preparan unha estratexia ou xuntanza de traballo en equipo
 * Para alumnos que traballarán en equipo nun libro en liña, creando contidos dun tema escollido polo seu titor
 * Para a narración colaborativa ou a creación de poesía grupal, onde cada participante escribe unha liña ou un verso
 * Como un diario persoal de apuntes para exame ou revisión (usando un wiki individual)';
@@ -188,7 +188,7 @@ $string['nomanagecommentpermission'] = 'Necesita permiso para administrar coment
 $string['nomanagewikipermission'] = 'Necesita permiso para administrar a wiki';
 $string['noorphanedpages'] = 'Non hai páxinas orfas';
 $string['nooverridelockpermission'] = 'Necesita permiso para anular o bloqueo';
-$string['norated'] = 'Sexa o primeiro en puntuar esta páxina!';
+$string['norated'] = 'Sexa o primeiro en cualificar esta páxina!';
 $string['norating'] = 'Sen puntuar';
 $string['nosearchresults'] = 'Sen resultados';
 $string['noteditblocks'] = 'Desactivar a edición de bloques';
@@ -201,7 +201,7 @@ $string['noviewpagepermission'] = 'Necesita permiso para ver a páxina';
 $string['nwiki'] = 'NWiki';
 $string['oldversion'] = 'Versión antiga';
 $string['orphaned'] = 'Páxinas orfas';
-$string['orphaned_help'] = 'Lista de páxinas que non están ligadas desde outras páxinas';
+$string['orphaned_help'] = 'Lista de páxinas que non están ligadas dende outras páxinas';
 $string['overridelocks'] = 'Anular bloqueos';
 $string['overridinglocks'] = 'Anulando bloqueos...';
 $string['page-mod-wiki-comments'] = 'Páxina de comentarios do módulo wiki';
@@ -252,7 +252,7 @@ $string['rating'] = 'Puntuación';
 $string['ratingmode'] = 'Modo de puntuación';
 $string['removeallwikitags'] = 'Retirar todas as etiquetas wiki';
 $string['removepages'] = 'Retirar páxinas';
-$string['reparsetimeout'] = 'Analizando de novo o tempo límite predeterminado';
+$string['reparsetimeout'] = 'Analizando de novo o límite de tempo predeterminado';
 $string['repeatedsection'] = 'Erro no wiki: Non pode repetir o nome da sección «{$a}»';
 $string['restore'] = 'Restaurar';
 $string['restoreconfirm'] = 'Confirma que quere restaurar a versión nº {$a}?';
@@ -264,8 +264,8 @@ $string['return'] = 'Volver atrás';
 $string['save'] = 'Gardar';
 $string['saving'] = 'Gardando a páxina wiki';
 $string['savingerror'] = 'Produciuse un erro ao gardar';
-$string['search:activity'] = 'Wiki - información de actividade';
-$string['search:collaborative_page'] = 'Wiki - páxinas colaborativas';
+$string['search:activity'] = 'Wiki, información de actividade';
+$string['search:collaborative_page'] = 'Wiki, páxinas colaborativas';
 $string['searchcontent'] = 'Buscar no contido da páxina';
 $string['searchresult'] = 'Resultados da busca:';
 $string['searchterms'] = 'Termos da busca';
@@ -304,7 +304,7 @@ $string['wiki:overridelock'] = 'Ignorar páxinas bloqueadas';
 $string['wiki:viewcomment'] = 'Ver os comentarios da páxina';
 $string['wiki:viewpage'] = 'Ver as páxinas wiki';
 $string['wikiattachments'] = 'Anexos wiki';
-$string['wikiboldtext'] = 'Texto en negra';
+$string['wikiboldtext'] = 'Texto en grosa';
 $string['wikiexternalurl'] = 'URL externo';
 $string['wikifiles'] = 'Ficheiros do wiki';
 $string['wikifiletable'] = 'Lista de ficheiros enviados';
@@ -314,7 +314,7 @@ $string['wikiimage'] = 'Imaxe';
 $string['wikiinternalurl'] = 'Ligazón interna';
 $string['wikiintro'] = 'Descrición';
 $string['wikiitalictext'] = 'Texto en cursiva';
-$string['wikilockingsettings'] = 'Bloqueando e analizando de novo o tempo límite';
+$string['wikilockingsettings'] = 'Bloqueando e analizando de novo o límite de tempo';
 $string['wikimode'] = 'Modo wiki';
 $string['wikimode_help'] = 'O modo wiki determina se calquera pode editar a wiki (wiki colaborativa) ou se cada quen ten a súa propia wiki, que só esa persoa pode editar (wiki individual).';
 $string['wikimodecollaborative'] = 'Wiki colaborativa';
@@ -324,6 +324,6 @@ $string['wikinowikitext'] = 'Non hai texto no wiki';
 $string['wikiorderedlist'] = 'Lista ordenada';
 $string['wikipages'] = 'Páxinas do wiki';
 $string['wikisettings'] = 'Axustes do wiki';
-$string['wikiunorderedlist'] = 'Lista sen ordenadar';
+$string['wikiunorderedlist'] = 'Lista sen ordenar';
 $string['wrongversionlock'] = 'Outro usuario editou esta páxina mentres vostede estaba editando, o seu contido é obsoleto.';
 $string['wrongversionsave'] = 'Outro usuario creou unha versión mentres vostede estaba editando e vostede sobrescribiu os seus cambios. Comprobe o historial da páxina.';

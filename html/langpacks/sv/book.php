@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'sv', version '3.8'.
+ * Strings for component 'book', language 'sv', version '3.11'.
  *
  * @package     book
  * @category    string
@@ -44,7 +44,7 @@ En annan titel (kanske längre än kapitelrubriken) kan anges som en del av inne
 $string['deletechapter'] = 'Ta bort kapitel "{$a}"';
 $string['editchapter'] = 'Redigera kapitel "{$a}"';
 $string['editingchapter'] = 'Redigerar kapitel';
-$string['errorchapter'] = 'Fel vid läsning av kapitel';
+$string['errorchapter'] = 'Fel vid läsning av kapitel.';
 $string['eventchaptercreated'] = 'Kapitel skapat';
 $string['eventchapterdeleted'] = 'Kapitel borttaget';
 $string['eventchapterupdated'] = 'Kapitel uppdaterat';
@@ -59,7 +59,10 @@ $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den socia
 $string['indicator:socialbreadthdef'] = 'Bok socialt';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Bokaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
 $string['modulename'] = 'Bok';
-$string['modulename_help'] = 'Bok-modulen möjliggör för en lärare att skapa en flersidig resurs i ett bok-liknande format inklusive kapitel och underkapitel. Böcker kan innehålla media och text och är användbara för att visa långa passager av information som kan delas in i sektioner. En bok kan t.ex. användas
+$string['modulename_help'] = 'Aktiviteten <em>Bok</em> gör det möjligt för en lärare att skapa en flersidig resurs i ett bokliknande format, inklusive kapitel och underkapitel. Böcker kan innehålla media och text och är användbara för att visa långa passager av information som kan delas in i sektioner.
+
+En bok kan t.ex. användas
+
 * För att visa litteratur för enskilda studiemoment
 * Som en personalhandbok
 * Som en portfölj/presentation av studentarbeten';

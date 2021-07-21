@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'sv', version '3.8'.
+ * Strings for component 'qtype_match', language 'sv', version '3.11'.
  *
  * @package     qtype_match
  * @category    string
@@ -30,6 +30,7 @@ $string['availablechoices'] = 'Tillgängliga val';
 $string['blanksforxmorequestions'] = '{no}  fler uppsättningar av tomma';
 $string['correctansweris'] = 'Det rätta svaret är: {$a}';
 $string['deletedchoice'] = '[Borttaget alternativ]';
+$string['deletedsubquestion'] = 'Den här delen av frågan togs bort efter det att försöket påbörjades.';
 $string['filloutthreeqsandtwoas'] = 'Du måste ange minst två frågor och tre svar. Du kan ange ytterligare fel svar genom att ge ett svar med en tom fråga. Poster där både fråga och svar är tomma kommer att ignoreras.';
 $string['nomatchinganswer'] = 'Du måste ange ett svar som matchar frågan \'{$a}\'.';
 $string['nomatchinganswerforq'] = 'Du måste ange ett svar på den här frågan.';
@@ -41,5 +42,9 @@ $string['pluginname_help'] = 'Matchningsfrågor kräver att den som svarar på e
 $string['pluginnameadding'] = 'Lägga till en matchningsfråga';
 $string['pluginnameediting'] = 'Redigera en matchningsfråga';
 $string['pluginnamesummary'] = 'Svaret på var och en av ett antal underfrågor måste väljas från en lista över möjliga svar.';
+$string['privacy:metadata'] = 'Pluginmodulen för frågetypen Matchande frågor gör det möjligt för frågeförfattare att ange standardalternativ som användarinställningar.';
+$string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråga.';
+$string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
+$string['privacy:preference:shuffleanswers'] = 'Om svaren ska blandas automatiskt.';
 $string['shuffle'] = 'Blanda';
 $string['shuffle_help'] = 'Om det är aktiverat kommer ordningen på påståenden (svar) blandas slumpmässigt vid varje försök, förutsatt att "Blanda inom frågor" i aktivitetsinställningarna också är aktiverad.';

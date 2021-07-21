@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'sv', version '3.8'.
+ * Strings for component 'workshopform_accumulative', language 'sv', version '3.11'.
  *
  * @package     workshopform_accumulative
  * @category    string
@@ -38,7 +38,7 @@ $string['excellent'] = 'Utmärkt';
 $string['good'] = 'Bra';
 $string['incorrect'] = 'Fel';
 $string['mustchoosegrade'] = 'Du måste välja ett betyg för denna aspekt';
-$string['pluginname'] = 'Ackumulerande betygssättning';
+$string['pluginname'] = 'Ackumulerad betygssättning';
 $string['poor'] = 'Dålig';
 $string['present'] = 'Närvarande';
 $string['privacy:metadata'] = 'Pluginmodulen Ackumulerad betygsättning lagrar bara detaljerna från bedömningsformuläret. Faktiska personuppgifter om hur blanketten har fyllts lagras av själva workshopmodulen och bifogas exporterade bedömningar.';

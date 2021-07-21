@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_none', language 'ar', version '3.8'.
+ * Strings for component 'auth_none', language 'ar', version '3.11'.
  *
  * @package     auth_none
  * @category    string
@@ -26,5 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'يمكن للمستخدمين التوقيع ثم إنشاء حسابات صحيحة على الفور، دون حاجة للتوثيق في مقابل مزود خارجي أو إلى التوكيد من خلال البريد الإلكتروني. ينصح بالحرص عن استخدام هذا الخيار - وتدير عواقب مشاكل الحماية والإدارة التي قد تنتج عنه.';
+$string['checknoauth'] = 'لا مصادقة';
+$string['checknoauthdetails'] = '<p>إن ملحق<em>لا مصادقة</em> غير مخصص للمواقع ذات التشغيل الفعلي. لطفاً، قم بتعطيله ما لم يكن هذا الموقع اختبارياً لأغراض التطوير.</p>';
+$string['checknoautherror'] = 'إن ملحق "لا مصادقة" لا يمكن استعماله في المواقع الإنتاجية.';
+$string['checknoauthok'] = 'إن ملحق "لا مصادقة" مُعطل.';
 $string['pluginname'] = 'بلا مصادقة';
 $string['privacy:metadata'] = 'إن ملحق "لا مصادقة" لا يخزن أي بيانات شخصية.';

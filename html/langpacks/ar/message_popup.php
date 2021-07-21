@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_popup', language 'ar', version '3.8'.
+ * Strings for component 'message_popup', language 'ar', version '3.11'.
  *
  * @package     message_popup
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'إعلام بإطار منبثق';
-$string['privacy:metadata'] = 'المكوّن الإضافي Web messaging Web لا يخزن أي بيانات شخصية.';
+$string['pluginname'] = 'الويب';
+$string['privacy:metadata'] = 'إن ملحق مراسلة الويب لا يخزن أي بيانات شخصية.';

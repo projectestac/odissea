@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'admin', language 'nl', version '3.8'.
+ * Strings for component 'admin', language 'nl', version '3.11'.
  *
  * @package     admin
  * @category    string
@@ -59,7 +59,7 @@ $string['allowediplist'] = 'Lijst met toegelaten IP\'s';
 $string['allowemailaddresses'] = 'E-maildomeinen toestaan';
 $string['allowemojipicker'] = 'Emoji-kiezer inschakelen';
 $string['allowframembedding'] = 'Frame-embedding toestaan';
-$string['allowframembedding_help'] = 'Indien ingeschakeld mag deze site ingebed worden in frames op een andere site. Dit wordt aangeraden wanneer je de "Publiceer als LTI"-aanmeldings-plugin gebruikt. In alle andere gevallen wordt het inschakelen van deze functie afgeraden om beveiligingsredenen.<br />Merk op dat voor de mobiele app deze instelling altijd genegeerd wordt en inbedden in frame altijd toegestaan is.';
+$string['allowframembedding_help'] = 'Indien ingeschakeld mag deze site ingebed worden in frames op een andere site. Dit wordt aangeraden wanneer je de "Publiceer als LTI"-aanmeldings-plugin gebruikt. In alle andere gevallen wordt het inschakelen van deze functie afgeraden om beveiligingsredenen. Merk op dat voor de mobiele app deze instelling altijd genegeerd wordt en inbedden in frame altijd toegestaan is.';
 $string['allowguestmymoodle'] = 'Gasttoegang tot Mijn startpagina toestaan';
 $string['allowindexing'] = 'Indexering door zoekrobots toestaan';
 $string['allowindexing_desc'] = 'Dit bepaalt of zoekrobots toegang hebben tot je site. "Overal" zal zoekrobots toestaan overal te zoeken, inclusief login en aanmeldingspagina\'s. Dit betekent dat sites met Aanmelden verplicht toch nog zullen geïndexeerd worden. Om het risico op spam dat voortvloeit uit het doorzoekbaar zijn van de aanmeldpagina te verminderen, kun je best "Overal, behalve login en aanmeldpagina\'s" aanduiden. "Nergens" zal zoekrobots zeggen om geen enkele pagina te indexeren. Merk op dat het enkel gaat om een tag in de header van de site. Het is aan de zoekrobots om deze tag te respecteren.';
@@ -82,6 +82,7 @@ $string['authpreventaccountcreation'] = 'Verhinder het aanmaken van een account 
 $string['authpreventaccountcreation_help'] = 'Wanneer een gebruiker authenticeert, wordt er automatisch een gebruikersaccount aangemaakt als die nog niet bestaat. Als je een externe databank gebruikt, zoals LDAP, en je wil het aanmelden beperken tot gebruikers die al een account hebben, dan moet je deze optie inschakelen. Nieuwe accounts zullen dan manueel of via gebruikers uploaden moeten aangemaakt worden. Merk op dat deze instelling niet van toepassing is op MNET authenticatie. ';
 $string['authsettings'] = 'Beheer authenticatie';
 $string['autolang'] = 'Taal automatisch detecteren';
+$string['autolangusercreation'] = 'Gebruik de taalinstelling van de browser tijdens het aanmaken van een gebruiker.';
 $string['autologinguests'] = 'Gasten automatisch inloggen';
 $string['availablelicenses'] = 'Beschikbare licenties';
 $string['availableto'] = 'Beschikbaar voor';
@@ -131,10 +132,13 @@ $string['cfgwwwrootwarning'] = 'Je hebt $CFG->wwwroot fout ingesteld in het best
 $string['change'] = 'wijzig';
 $string['checkboxno'] = 'Nee';
 $string['checkboxyes'] = 'Ja';
+$string['checkupgradepending'] = 'Upgrade';
 $string['choosefiletoedit'] = 'Kies te bewerken bestanden';
 $string['cleanup'] = 'Opschonen';
 $string['clianswerno'] = 'n';
 $string['cliansweryes'] = 'j';
+$string['cliexitgraceful'] = 'Even afsluiten, wacht alstublieft ...';
+$string['cliexitnow'] = 'Sluit NU af';
 $string['cliincorrectvalueerror'] = 'Fout, waarde "{$a->value}" voor de optie "{$a->option}" is niet juist';
 $string['cliincorrectvalueretry'] = 'Foute waarde. Probeer opnieuw';
 $string['clistatusdisabled'] = 'Status: uitgeschakeld';
@@ -166,7 +170,7 @@ $string['configallowattachments'] = 'Door deze instelling in te schakelen sta je
 $string['configallowblockstodock'] = 'Indien dit ingeschakeld is en ondersteund wordt door het gekozen thema, dan kunnen gebruikers blokken verplaatsen naar een speciaal paneel.';
 $string['configallowcategorythemes'] = 'Als je dit inschakelt, dan kunnen thema\'s op categorieniveau gekozen worden. Die keuze wordt dan doorgetrokken naar alle onderliggende categorieën en cursussen, tenzij daar een eigen thema ingesteld is. WAARSCHUWING: het inschakelen van categoriethema\'s kan de performantie negatief beïnvloeden.';
 $string['configallowcohortthemes'] = 'Als je dit inschakelt, dan kunnen thema\'s best ingesteld worden op site-groepniveau. Dit heeft gevolgen voor alle gebruikers met slechts één site-groep of meer dan één maar met hetzelfde thema.';
-$string['configallowcoursethemes'] = 'Als je dit inschakelt, dan kan elke cursus zijn eigen thema instellen. De thema\'s van de cursussen zullen alle andere thema\'s overschrijven (site, gebruiker of sessiethema\'s)';
+$string['configallowcoursethemes'] = 'Als je dit inschakelt, dan kan elke cursus zijn eigen thema instellen. De thema\'s van de cursussen zullen alle andere thema\'s overschrijven (site, gebruiker, site-groep  of URL-gedefinieerde thema\'s)';
 $string['configallowedemaildomains'] = 'Maak een lijst van alle e-maildomeinen die getoond mogen worden in het "van"-gedeelte van verzonden mail. De standaardinstelling "leeg" zal het niet-beantwoordenadres gebruiken voor alle uitgaande mail. Het gebruik van jokertekens is toegestaan, bv *.voorbeeld.com zal alle e-mails verstuurd vanaf een subdomein van voorbeeld.com toestaan, maar niet voorbeeld.com. Daarvoor is een aparte regel nodig.';
 $string['configallowemailaddresses'] = 'Als je nieuwe e-mailadressen wil beperken tot bepaalde domeinen, zet ze dan hier in een lijst met een spatie als scheidingsteken. Alle andere domeinen zullen niet geaccepteerd worden. Om subdomeinen toe te staan, kun je de domeinnaam laten vooraf gaan door een ".".bv .onzeschool.be onzeschool.be.';
 $string['configallowemojipicker'] = 'De Emoji-kiezer maakt het mogelijk om emoji\'s, zoals smilies aan berichten en andere teksten toe te voegen via een knop in de Atto werkbalk.';
@@ -186,6 +190,7 @@ $string['configallowview'] = 'Selecteer de rollen die een gebruiker te zien krij
 $string['configallusersaresitestudents'] = 'Moeten ALLE gebruikers als leerlingen beschouwd worden voor activiteiten op de startpagina van de site? Als je hier "Ja" kiest, dan zullen alle bevestigde accounts hier als leerling kunnen meedoen aan alle activiteiten. Als je hier "Nee" kiest, dan zullen alleen gebruikers die minstens van één cursus lid zijn kunnen meedoen aan die startpagina-activiteiten.';
 $string['configauthenticationplugins'] = 'Kies de authenticatieplugins die je wenst te gebruiken en rangschik ze in volgorde, zodat diegene met het meeste kans op succes heeft, bovenaan staat.';
 $string['configautolang'] = 'Detecteer de standaardtaal uit de browserinstelling. Indien uitgeschakeld, wordt de standaardtaal van de site gebruikt.';
+$string['configautolangusercreation'] = 'Indien ingeschakeld zal de taalinstelling van de browser gebruikt worden als voorkeurtaal bij een eerste aanmelding (vb bij gebruik van LDAP of OAuth-authenticatie). Anders zal de standaardtaal van de site als voorkeurtaal van de gebruiker ingesteld worden.';
 $string['configautologinguests'] = 'Moeten bezoekers automatisch als gast aangemeld worden als ze cursussen met toegangsrecht voor gasten binnengaan ?';
 $string['configbloglevel'] = 'Met deze instelling kun je het niveau beperken waarop gebruikers blogs op deze site kunnen zien. Merk op dat ze een maximum zetten voor wie KIJKT, niet voor wie berichten post of de mogelijke types berichten die gepost kunnen worden. Blogs kunnen ook uitgeschakeld worden als je ze niet wil.';
 $string['configcalendarcustomexport'] = 'Aangepast datumbereik inschakelen voor het exporteren van de kalender';
@@ -205,16 +210,18 @@ $string['configcronclionly'] = 'Cron via het web laten lopen kan beveiligde info
 $string['configcronremotepassword'] = 'Dit betekent dat het script cron.php niet vanuit een webbrowser gestart kan worden zonder het wachtwoord te geven via volgende URL: <pre>
 https://site.voorbeeld.com/admin/cron.php?password=opensesame
 </pre> Als dit leeg gelaten wordt, is er geen wachtwoord nodig.';
-$string['configcurlcache'] = 'Levenduur van cURL-cache in sekonden.';
-$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu laten tonen door thema\'s. Elke lijn bestaat uit wat menu tekst, een URL (optioneel), een tooltip titel (optioneel) en een taalcode of komma-gescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ). Je kunt de structuur opgeven met liggende streepjes en scheidingen kunnen gemaakt worden door een lijn met één of meer #-tekens in te voegen waar je dit wenst. Bijvoorbeeld:
+$string['configcurlcache'] = 'Levenduur van cURL-cache in seconden.';
+$string['configcustommenuitems'] = 'Je kunt hier een aangepast menu laten tonen door thema\'s. Zet elk menu-item op een nieuwe regel met volgende opmaak: menu tekst, een URL (optioneel - niet voor een topmenu met sub-items), een tooltip titel (optioneel) en een taalcode of komma-gescheiden lijst met codes (optioneel, om de lijn aan gebruikers van een bepaalde taal te tonen), gescheiden door pipe tekens ( | ).
+Regels die beginnen met een liggend streepje zullen als menu-items verschijnen in het vorige top-menu en ###-tekens maken een scheiding.
+Bijvoorbeeld:
 <pre>
-Moodle community|https://moodle.org
--Moodle free support|https://moodle.org/support
--Moodle Docs|https://docs.moodle.org|Moodle Docs
--German Moodle Docs|https://docs.moodle.org/de|Documentation in German|de
+Cursussen
+-Alle cursussen|/course/
+-Cursussen zoeken|/course/search.php
 -###
--Moodle development|https://moodle.org/development
-Moodle.com|https://moodle.com/
+-FAQ|https://voorbeeld.com/faq
+-Preguntas más frecuentes|https://vooorbeeld.com/faq|es
+-Moble app|https://voorbeeld.com/app|Download onze app
 </pre>';
 $string['configcustomusermenuitems'] = 'Je kunt de inhoud van het gebruikersmenu configureren (uitgezonderd de link om af te melden, die wordt automatisch toegevoegd). Elke lijn wordt gescheiden door een verticale lijn of pipe (|)  en bestaat uit 1) een string in het formaat "taalstringnaam, componentnaam" of als platte tekst, 2) een URL en 3) een icoontje als een pix-icoon (in de pix-map met als structuur  [subfoldername]/[iconname], vb. i/publish) of als URL.
 Je kunt scheidingen maken waar je wil door een regel met één of meer #-tekens in te voegen.';
@@ -241,7 +248,9 @@ $string['configdoctonewwindow'] = 'Als je dit aanzet zullen links naar Moodle Do
 $string['configeditordictionary'] = 'Deze waarde zal gebruikt worden als aspell geen woordenlijst heeft voor de eigen taal van een gebruiker.';
 $string['configeditorfontlist'] = 'Kies de lettertypes die in het dropdownmenu van de editor zouden moeten verschijnen';
 $string['configemailchangeconfirmation'] = 'Als een gebruiker zijn e-mailadres wil wijzigen, moet die dat dan bevestigen via een bevestigingsmail? Deze optie inschakelen is nuttig op sites waar gebruikers zelf accounts kunnen aanmaken en wijzigen en waarbij die accounts gebruikt kunnen worden voor het versturen van spam.';
+$string['configemaildkimselector'] = 'De DKIM selector is willekeurig en je DNS-record (s) moeten hiermee overeenkomen.';
 $string['configemailfromvia'] = 'Voeg informatie toe in het "van"-gedeelte van een uitgaande e-mail. Deze informeert de ontvanger van waaruit deze e-mail vandaan kwam en helpt ook tegen ontvangers die per ongeluk antwoorden op een  niet-beantwoorden e-mailadres.';
+$string['configemailheaders'] = 'RAW e-mailkopteksten die aan alle uitgaande e-mail moeten worden toegevoegd.';
 $string['configemailsubjectprefix'] = 'Alle uitgaande e-mail is een tekst die moet worden voorafgegaan aan de onderwerpregel.';
 $string['configenableactivitychooser'] = 'De activiteitskiezer is een dialoogvenster met een korte beschrijving van elke activiteit en bron. Indien uitgeschakeld worden afzonderlijke bron- en activiteitsrolmenu\'s  getoond.';
 $string['configenableanalytics'] = 'Analysemodellen, zoals \'Leerlingen die afhaken\' of \'Geplande activiteiten die moeten worden uitgevoerd\', kunnen voorspellingen genereren, kennismeldingen verzenden en verdere acties aanbieden, zoals gebruikers van berichten.';
@@ -254,15 +263,14 @@ $string['configenablemobilewebservice'] = 'Schakel de mobiele service in voor de
 $string['configenablerssfeeds'] = 'Met deze instelling maak je RSS-feeds mogelijk voor functies over de hele site, zoals blogs, databanken, forums en woordenlijsten. Merk op dat RSS ook moet ingeschakeld worden op het niveau van de activiteitsmodule.';
 $string['configenablerssfeedsdisabled'] = 'Dit is niet beschikbaar omdat RSS voor heel de site is uitgeschakeld. Om RSS in te schakelen ga je naar Configureer variabelen onder Beheer Configuratie.';
 $string['configenablerssfeedsdisabled2'] = 'RSS-feeds zijn uitgeschakeld op site-niveau. Je moet ze inschakelen bij geavanceerd in het site-beheer.';
-$string['configenablesafebrowserintegration'] = 'Hiermee voeg je de keuze "Safe exam browser vereist\' toe aan het browserbeveiligingsveld op de instellingenpagina van een test. Kijk op https://www.safeexambrowser.org/ voor meer informatie.';
 $string['configenablestats'] = 'Als je hier \'ja\' kiest, zal de cron van Moodle de logbestanden verwerken en statistieken aanmaken. Afhankelijk van de hoeveelheid verkeer op je site, kan dit wel even duren. Als je dit inschakelt kun je interessante grafieken en statistieken zien over elke cursus of over de hele site.';
 $string['configenabletrusttext'] = 'Moodle zal altijd tekst, afkomstig van gebruikers, grondig opschonen. Zo worden gevaarlijke scripts, media enz., die een beveiligingsrisico kunnen zijn, verwijderd. Het vertrouwde inhoudsysteem is een manier om het voor bepaalde gebruikers toch mogelijk te maken om geavanceerde functies in hun cursusmateriaal te gebruiken. Om dit systeem in te schakelen, moet je eerst hier de instelling inschakelen en dan het Vertrouwde Inhoud-recht toekennen aan een specifieke Moodle rol. Teksten die gemaakt of geüpload worden door gebruikers met die rol, zullen als vertrouwd gemarkeerd worden en zullen niet opgeschoond worden voor ze getoond worden.';
-$string['configenablewebservices'] = 'Webservices maken het mogelijk dat andere systemen aanmelden in deze Moodle-installatie en acties uitvoeren. Voor extra veiligheid moet dit uitgeschakeld worden tenzij je het echt gebruikt.';
+$string['configenablewebservices'] = 'Webservices maken het mogelijk dat andere systemen, zoals de Mobile app, aanmelden in deze Moodle-installatie en acties uitvoeren. Voor extra veiligheid moet dit uitgeschakeld worden tenzij je de Moodle app gebruikt of een externe tool/service die integratie via webservices vereist.';
 $string['configenablewsdocumentation'] = 'Schakel het automatisch genereren van web services documentatie in. Een gebruiker kan toegang krijgen tot zijn eigen documentatie op zijn beveiligingssleutelpagina {$a}. Dit toont enkel de documentatie voor de ingeschakelde protocols.';
 $string['configerrorlevel'] = 'Kies hoeveel PHP-waarschuwingen je wilt dat Moodle laat zien. \'Normaal\' is meestal de beste keuze.';
 $string['configexportlookahead'] = 'Aantal dagen vooruit kijken tijdens export';
 $string['configexportlookback'] = 'Aantal dagen terug kijken tijdens export';
-$string['configextendedusernamechars'] = 'Schakel deze optie in om het mogelijk te maken dat gelijk welke karakters in de gebruikersnaam gebruikt kunnen worden. Anders zijn alleen  alfanumerieke met kleine letters, underscore (_), liggend streepje (-), punt (.) en het at-symbool (@) toegestaan.';
+$string['configextendedusernamechars'] = 'Indien ingeschakeld mogen gebruikersnamen ieder teken bevatten behalve hoofdletters. Anders zijn enkel alfanumerieke tekens met kleine letters, underscore (_), koppelteken (-), punt (.) en apenstaartje (@) toegestaan.';
 $string['configextramemorylimit'] = 'Sommige scripts, zoals zoeken, back-up en terugzetten en crom hebben meer geheugen nodig. Zet dit hoger voor grote sites.';
 $string['configfilterall'] = 'Filter alle strings: koppen, titels, navigatiebalk enz. inbegrepen. Dit is meestal slechts nuttig wanneer je de multilang-filter gebruikt. Anders zal het alleen maar een extra belasting op je server veroorzaken zonder meerwaarde.';
 $string['configfiltermatchoneperpage'] = 'Automatische link-filters zullen slechts één link per pagina genereren, namelijk de eerste overeenkomst die gevonden wordt op de hele pagina. Alle andere overeenkomsten worden genegeerd.';
@@ -278,7 +286,7 @@ $string['configfrontpageloggedin'] = 'De hierboven gekozen items zullen op de st
 $string['configfullnamedisplay'] = 'Deze instelling bepaalt hoe de volledige namen getoond worden. De standaardwaarde, "Taal", laat het over aan de string "fullnamedisplay" in het huidige taalpakket. Sommige talen hebben verschillende conventies voor het tonen van namen.
 
 Voor de meeste eentalige sites is de beste instelling de standaardinstelling, nl "voornaam + achternaam", maar je kunt ervoor kiezen de achternaam te verbergen. Er kunnen plaatshouders gebruikt worden, zoals firstname, lastname, firstnamephonetic, lastnamephonetic, middlename en alternatename.';
-$string['configgeoipfile'] = 'Plaats van het GeoLite2 City binair data bestand. Dit bestand is geen deel van de Moodle-distributie en moet apart verkregen worden van  <a href="https://www.maxmind.com/">MaxMind</a>. Je kunt ofwel een commerciële versie bekomen of de gratis versie gebruiken. Download  <a href="https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" >https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz</a> en unzip het in de map "{$a}" op je server.';
+$string['configgeoipfile'] = 'Plaats van het GeoLite2 City binair data bestand. Dit bestand is geen deel van de Moodle-distributie en moet apart verkregen worden van  <a href="https://www.maxmind.com/">MaxMind</a>. Je kunt ofwel een commerciële versie bekomen of de gratis versie gebruiken. Je zult moeten registreren om het City databankbestand te kunnen downloaden, wat je kan doen op <a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" >https://dev.maxmind.com/geoip/geoip2/geolite2/</a>. Eens je geregistreerd hebt en heb bestand gedownload hebt, kun je het unzippen in de map "{$a}" op je server.';
 $string['configgetremoteaddrconf'] = 'Als je server zich achter een reverse proxy bevindt, dan kun je deze instelling gebruiken om te specifiëren welke HTTP headers vertrouwd kunnen worden dat ze het IP-adres van de client bevatten. De headers worden in volgorde gelezen. De eerste die gevonden wordt, word gebruikt.';
 $string['configgradebookroles'] = 'Deze instelling bepaalt wie er in de cijferlijsten verschijnt. Gebruikers moeten minstens één van deze rollen hebben om in de cijferlijsten voor die cursus te verschijnen.';
 $string['configgradeexport'] = 'Kies welke formaten je wil om je punten te exporteren. De gekozen plugins worden dan ingesteld en gebruiken een "laatst geëxporteerd veld" voor elk cijfer. Dit kan er bijvoorbeeld voor zorgen dat geëxporteerde records geïdentificeerd worden als nieuw of aangepast. Als je niet zeker bent van deze instelling, laat dan alles staan zonder vinkje.';
@@ -331,6 +339,8 @@ Gast is meestal wat je hier wil, maar het is mogelijlk dat je hier een rol wil c
 $string['configopentowebcrawlers'] = 'Als je deze instelling inschakelt, dan zal Google als gast toegelaten worden tot je site. Mensen die jouw site binnenkomen via Google zullen automatisch als gast aangemeld zijn. Merk op dat dit alleen toegang zal geven tot cursussen waar toegang voor gasten toegelaten is.';
 $string['configoverride'] = 'Gedefinieerd in config.php';
 $string['configpasswordpolicy'] = 'Deze instelling maakt dat Moodle controleert of wachtwoorden voldoen aan een wachtwoordenbeleid.Gebruik onderstaande instellingen om je beleid op te maken. Het inschakelen van deze instelling heeft geen invloed op bestaande gebruikers tot zij hun wachtwoord (al dan niet gedwongen) wijzigen.';
+$string['configpasswordpolicycheckonlogin'] = 'Indien ingeschakeld, worden gebruikerswachtwoorden gecontroleerd aan de hand van het wachtwoordbeleid telkens wanneer gebruikers inloggen. Als de controle mislukt, moet de gebruiker zijn wachtwoord wijzigen voordat hij doorgaat.
+Het is handig om deze instelling in te schakelen na het bijwerken van het wachtwoordbeleid.';
 $string['configpasswordresettime'] = 'Dit bepaalt hoeveel tijd gebruikers hebben om te klikken op de link in de reset wachtwoord e-mail voor die verloopt.
 30 minuten is gewoonlijk een goede waarde.';
 $string['configpathtodu'] = 'Pad naar du. Waarschijnlijk iets als /usr/bin/du. Als je dit invult, dan zullen pagina\'s die mapinhoud tonen veel sneller openen bij mappen met veel bestanden in.';
@@ -368,6 +378,8 @@ $string['configsessioncookie'] = 'Met deze instelling kun je de naam van de cook
 $string['configsessioncookiedomain'] = 'Hiermee kun je het domein wijzigen waarvan de Moodle-cookies afkomstig zijn. Dit is nuttig voor aanpassingen van Moodle die sessie-informatie van Moodle moeten delen met een webapplicatie op een ander subdomein (v.b. authenticatie of aanmeldingsplugins). <strong> WAARSCHUWING: laat deze instelling leeg (= standaardinstelling) - een verkeerde waarde zal aanmelding op de site onmogelijk maken.</strong>';
 $string['configsessioncookiepath'] = 'Als het nodig is dat je de standaardlocatie naar waar browsers de Moodle cookies sturen wijzigt, dan kun je hier een subdirectory van je website instellen. Normaal gezien is de standaard \'/\' goed.';
 $string['configsessiontimeout'] = 'Als mensen die ingelogd zijn op deze site voor een lange tijd niets doen (ze laden geen nieuwe pagina\'s) worden ze automatisch uitgelogd (hun sessie is beëindigd). Deze variabele geeft aan hoe lang deze tijd moet zijn.';
+$string['configsessiontimeoutwarning'] = 'Als ingelogde gebruikers op deze site lange tijd inactief zijn (zonder pagina\'s te laden), worden ze gewaarschuwd dat hun sessie op het punt staat te eindigen. Deze variabele geeft aan hoe lang deze tijd moet zijn.';
+$string['configsessiontimeoutwarningcheck'] = 'De waarschuwing voor de time-out van de sessie moet korter zijn dan de time-out van de sessie';
 $string['configshowcommentscount'] = 'Toon aantal commentaren. Het zal één extra query kosten om commentaarlinks te tonen';
 $string['configshowicalsource'] = 'Toon broninformatie voor iCal-gebeurtenissen.';
 $string['configshowsiteparticipantslist'] = 'Al deze site leerlingen en site leraren zullen op de site deelnemerslijst getoond worden. Wie heeft het recht om deze lijs te zien?';
@@ -416,6 +428,7 @@ $string['confirmcontextlock'] = '{$a->contextname} is momenteel niet vergrendeld
 $string['confirmcontextunlock'] = '{$a->contextname} is momenteel vergrendeld. Als je het niet vergrendelt, kunnen gebruikers wijzigingen aanbrengen. Weet je zeker dat je wilt doorgaan ??';
 $string['confirmdeletecomments'] = 'Je gaat notities verwijderen. Ben je zeker?';
 $string['confirmed'] = 'Bevestigd';
+$string['contenttypeuninstalling'] = 'Er wordt inhoud van {$a->count}  ondersteund door {$a->type}. Ze worden verwijderd. Weet je zeker dat je verder wilt gaan?';
 $string['contextlockappliestoadmin'] = 'Context vergrendelen is van toepassing op beheerders';
 $string['contextlockappliestoadmin_desc'] = 'Met deze instelling kunnen beheerders wijzigingen aanbrengen in elke context die is vergrendeld.';
 $string['contextlocking'] = 'Context vergrendelen';
@@ -447,14 +460,18 @@ $string['courseswithsummarieslimit'] = 'Limiet van cursussen met samenvatting';
 $string['creatornewroleid'] = 'De rol van de cursusaanmaker in nieuwe cursussen';
 $string['creatornewroleid_help'] = 'Als de gebruiker het recht nog niet heeft om de nieuwe cursus te beheren, dan zal de gebruiker automatisch aangemeld worden met deze rol.';
 $string['cron'] = 'Cron';
+$string['cron_enabled'] = 'Cron inschakelen';
+$string['cron_enabled_desc'] = 'Cron moet in normale omstandigheden ingeschakeld zijn, maar met deze instelling kun je het tijdelijk uitschakelen, bijvoorbeeld voor het herstarten van een server. Indien uitgeschakeld zal het systeem geen achtergrondtaken meer starten. Merk op dat cron uitgeschakeld laten gedurende lange tijd er voor zal zorgen dat belangrijke functionaliteit niet werkt.';
 $string['cron_help'] = 'Het cron.php onderhoudsscript helpt sommige Moodle modules om taken te doen volgens een planning, zoals het versturen van forumberichten. Er is een mechanisme vereist om er voor te zorgen dat het script regelmatig loopt - bij voorkeur elke minuut.';
 $string['cronclionly'] = 'Cron enkel via command prompt';
 $string['cronerrorclionly'] = 'Sorry, internettoegang tot deze pagina is door de beheerder uitgeschakeld.';
 $string['cronerrorpassword'] = 'Sorry, maar je kon geen geldig wachtwoord ingeven om deze pagina te bezoeken.';
-$string['croninfrequent'] = 'De tijd tussen de laatste twee runs van het cron-onderhoudsscript bedroeg meer dan {$a} seconden. We raden aan dit te configureren om vaker te worden uitgevoerd.';
+$string['croninfrequent'] = 'De tijd tussen de laatste twee runs van het cron-onderhoudsscript bedroeg {$a->actual} en het zou dat elke {$a->expected} moeten doen. We raden aan de configuratie aan te passen om vaker te worden uitgevoerd.';
 $string['cronremotepassword'] = 'Cron wachtwoord voor toegang op afstand';
-$string['cronwarning'] = 'Het onderhoudsscript <a href="cron.php">cron.php</a> heeft minstens 24 uur niet gelopen.';
-$string['cronwarningcli'] = 'Het cli/cron.php onderhoudsscript heeft minstens 24 uur niet gelopen.';
+$string['cronwarning'] = 'Het <code>admin/cron.php</code> script heeft de laatste {$a->actual} niet gelopen en zou elke {$a->expected} moeten lopen.';
+$string['cronwarningcli'] = 'Het <code>admin/cli/cron.php</code> script heeft de laatste {$a->actual} niet gelopen en zou elke {$a->expected} moeten lopen.';
+$string['cronwarningnever'] = 'Het <code>admin/cli/cron.php</code> script heeft nog nooit gelopen en zou elke {$a->expected} moeten lopen.';
+$string['cronwarningneverweb'] = 'Het script <a href="{$a->url}">admin/cron.php</a> heeft nog nooit gelopen en zou iedere {$a->expected} moeten lopen.';
 $string['ctyperequired'] = 'De ctype PHP-extentie is nu vereist in Moodle om de performantie te verhogen en om multi-talencompatibiliteit mogelijk te maken.';
 $string['curlcache'] = 'cURL cache TTL';
 $string['curlrequired'] = 'De cURL PHP-extentie is nu vereist in Moodle om te kunnen communiceren met Moodle bewaarplaats';
@@ -483,6 +500,11 @@ $string['debugminimal'] = 'MINIMAL: toon enkel fatale fouten';
 $string['debugnone'] = 'GEEN: toon geen foutopsporingsmeldingen';
 $string['debugnormal'] = 'NORMAAL: toon fouten, waarschuwingen en opmerkingen';
 $string['debugpageinfo'] = 'Toon paginainformatie';
+$string['debugsqltrace'] = 'Toon de oorsprong van SQL-aanroepen';
+$string['debugsqltrace1'] = 'Toon slechts één oproepende lijn';
+$string['debugsqltrace100'] = 'Toon volledige stacktracering';
+$string['debugsqltrace2'] = 'Toon 2 regels stacktracering';
+$string['debugsqltrace_desc'] = 'Indien ingeschakeld, wordt een gedeeltelijke of volledige PHP-stacktrace als commentaar toegevoegd aan de SQL als opmerking.';
 $string['debugstringids'] = 'Toon oorsprong van taalstrings';
 $string['debugstringids_desc'] = 'Wanneer deze optie is ingeschakeld, dan zal de string-component en de string-id naast elke string getoond worden wanneer je de parameter ?strings=1 toevoegt aan de URL.';
 $string['debugvalidators'] = 'Toon validatorlinks';
@@ -505,9 +527,19 @@ $string['devicedetectregexexpression'] = 'Regular expressions';
 $string['devicedetectregexvalue'] = 'Teruggegeven waarde';
 $string['devicetype'] = 'Toesteltype';
 $string['devlibdirpresent'] = 'Mappen met ontwikkelbibliotheken, vooral  <em>/vendor</em> en <em>/node_modules</em>, mogen niet op publieke sites staan. Zie het <a href="{$a->moreinfourl}">beveiligingsrapport</a> voor meer details.';
+$string['disabled'] = 'Uitgezet';
 $string['disableuserimages'] = 'Schakel gebruikersfoto\'s uit';
 $string['displayerrorswarning'] = 'Het inschakelen van de PHP-instelling <em>display_errors</em> is niet aangewezen op productie-sites omdat sommige foutmeldingen gevoelige informatie over de server kunnen vrijgeven.';
 $string['displayloginfailures'] = 'Toon loginfouten';
+$string['divertallemails'] = 'E-mail omleiden';
+$string['divertallemailsdetail'] = 'Gebruikt als beveiliging in ontwikkelomgevingen bij het testen van e-mails. Niet gebruiken in productie-omgeving.';
+$string['divertallemailsexcept'] = 'Uitzonderingen op e-mail omleidingen';
+$string['divertallemailsexcept_desc'] = 'Een lijst van e-mail uitzonderingsregels, komma of nieuwe-regel gescheiden. Elke regel wordt geïnterpreteerd als reguliere expressie. vb <pre>simone@acme.com
+.*@acme.com
+fred(\\+.*)?@acme.com
+</pre>';
+$string['divertallemailsto'] = 'Alle e-mails omleiden';
+$string['divertallemailsto_desc'] = 'Indien ingeschakeld zullen alle e-mails omgeleid worden naar dit adres.';
 $string['dndallowtextandlinks'] = 'Slepen en neerzetten';
 $string['doclang'] = 'Taal voor docs';
 $string['docroot'] = 'Startpagina Moodle Docs';
@@ -515,6 +547,8 @@ $string['doctonewwindow'] = 'Open in nieuw venster';
 $string['doesnotfit'] = 'Instellingen tonen e-mails';
 $string['doesnotfitdetail'] = 'Toon instellingen voor e-mail die Moodle verlaat.';
 $string['download'] = 'Download';
+$string['downloadcoursecontentallowed'] = 'Cursusinhoud downloaden is mogelijk';
+$string['downloadcoursecontentallowed_desc'] = 'Of de download cursus-mogelijkheid beschikbaar is voor cursussen. Wanneer beschikbaar dan kan het downloaden van cursusinhoud ingeschakeld en uitgeschakeld worden met de "Cursusinhoud downloaden inschakelen"  -instelling in het Bewerk instellingen-menu van de cursus. (de standaard hiervoor kan in <a href={$a} target="_blank">Cursus standaardinstellingen</a> ingesteld worden).';
 $string['durationunits'] = 'duur units';
 $string['edithelpdocs'] = 'Bewerk helpbestanden';
 $string['editlang'] = '<b>Bewerk</b>';
@@ -529,7 +563,11 @@ $string['editorspelling'] = 'Editor spelling';
 $string['editorspellinghelp'] = 'Inschakelen of uitschakelen van spellingscontrole. Wanneer je dit inschakelt, moet <strong>aspell</strong> op de server geïnstalleerd zijn.';
 $string['editstrings'] = 'Bewerk woorden en zinnen';
 $string['emailchangeconfirmation'] = 'Bevestiging van wijziging e-mailadres';
+$string['emaildkim'] = 'DomainKeys Identified Mail (DKIM)  E-mail ondertekening';
+$string['emaildkiminfo'] = 'Als zowel de DKIM selector is ingesteld als een privécertificaatbestand wordt gevonden dat overeenkomt met het e-mailadressen "Van" adresdomein in $CFG->dataroot/dkim/[domein]/[selector].private, dan wordt de e-mail ondertekend. In de meeste gevallen (bijv. Als toegestane e-maildomeinen leeg zijn) is slechts één certificaat nodig in: <code>{$a->pad}</code>. Lees de documentatie over <a href="{$a->docs}">e-mailconfiguratie</a> voor meer details.';
+$string['emaildkimselector'] = 'DKIM Selector';
 $string['emailfromvia'] = 'E-mail via-informatie';
+$string['emailheaders'] = 'E-mailkopteksten';
 $string['emailsubjectprefix'] = 'Tekst als voorvoegsel bij e-mailonderwerp';
 $string['emoticonalt'] = 'Alternatieve tekst';
 $string['emoticoncomponent'] = 'Afbeeldingscomponent';
@@ -561,12 +599,15 @@ $string['enablegravatar_help'] = 'Als je dit inschakelt, zal Moodle proberen een
 $string['enablemobilewebservice'] = 'Webservices voor mobiele toestellen inschakelen';
 $string['enablerecordcache'] = 'Record cache inschakelen';
 $string['enablerssfeeds'] = 'RSS-feeds inschakelen';
-$string['enablesafebrowserintegration'] = 'Schakel Safe Exam Browser integratie in';
 $string['enablesearchareas'] = 'Zoekgebied inschakelen';
 $string['enablestats'] = 'Statistieken inschakelen';
 $string['enabletrusttext'] = 'Vertrouwde Inhoud inschakelen';
+$string['enableuserfeedback'] = 'Feedback over deze software inschakelen.';
+$string['enableuserfeedback_desc'] = 'Wanneer ingeschakeld, zal de "Geef feedback over deze software"-link aan gebruikers in voettekst getoond worden om feedback te geven over de Moodle software aan HQ. Als de \'Volgende feedback-herinnering\'-optie is ingeschakeld, dan zal de gebruiker op het opgegeven interval een herinnering getoond worden. Het instellen van de "Volgende feedback-herinnering" op "nooit" schakelt de herinnering op Mijn startpagina uit, maar laat de "Geef feedback over deze software"-link in de voettekst staan.';
 $string['enablewebservices'] = 'Webservices inschakelen';
 $string['enablewsdocumentation'] = 'Documentatie Webservices';
+$string['encryptedpassword_edit'] = 'Voer een nieuwe waarde in';
+$string['encryptedpassword_set'] = '(Ingesteld en versleuteld)';
 $string['enrolinstancedefaults'] = 'Aanmeldingsstandaarden';
 $string['enrolinstancedefaults_desc'] = 'Standaard aanmeldingsinstellingen in nieuwe cursussen.';
 $string['enrolmultipleusers'] = 'Gebruikers aanmelden';
@@ -598,6 +639,7 @@ $string['experimentalsettings'] = 'Experimentele instellingen';
 $string['extendedusernamechars'] = 'Uitgebreide tekenset in gebruikersnamen toestaan';
 $string['extramemorylimit'] = 'Extra PHP memory limit';
 $string['fatalsessionautostart'] = '<p>Ernstige configuratiefout gevonden. Waarschuw je serverbeheerder.</p><p>Om goed te functioneren moet de beheerder de PHP-instellingen aanpassen.</p><p><code>session.auto_start</code> moet op<code>off</code> gezet worden.</p><p>Deze instelling kan gewijzigd worden door het bestand <code>php.ini</code>, Apache/IIS <br />-configuratie of het bestand <code>.htaccess</code> op de server aan te passen.</p>';
+$string['feedbacksettings'] = 'Feedback-instellingen';
 $string['fileconversioncleanuptask'] = 'Verwijder tijdelijke records van bestandsconversies.';
 $string['filecreated'] = 'Nieuw bestand aangemaakt';
 $string['filescleanupperiod'] = 'Schoon prullenbak bestanden op';
@@ -685,6 +727,7 @@ $string['intlrequired'] = 'De intl-extentie is vereist om internationaliseringso
 $string['invalidagedigitalconsent'] = 'De digitale meerderjarigheid is ongeldig: {$a}';
 $string['invalidforgottenpasswordurl'] = 'De URL voor vergeten wachtwoord is geen geldige URL.';
 $string['invalidsection'] = 'Ongeldige sectie';
+$string['invalidthemepreset'] = 'Het gekozen vooraf ingestelde bestand is niet compatibel met dit thema. De SCSS compileerfout was: "{$a}"';
 $string['invaliduserchangeme'] = 'De gebruikersnaam "changeme" kan niet als gebruikersnaam gebruikt worden. Kies een andere.';
 $string['ipblocked'] = 'Deze site is nu niet beschikbaar.';
 $string['ipblocker'] = 'IP blokkeren';
@@ -702,6 +745,8 @@ $string['langcache'] = 'Cache taalmenu';
 $string['langcache_desc'] = 'Cache het taalmenu. Indien ingeschakeld wordt de lijst met beschikbare talen gecached. De cache wordt automatisch ververst wanneer je een taalpakket installeert of verwijderd met de ingebouwde taalbeheerfuncties. Als je manueel een nieuw taalpakket installeert, dan moet je de functie cache leegmaken gebruiken om de cache lijst te verversen.';
 $string['langlist'] = 'Talen in taalmenu';
 $string['langmenu'] = 'Toon taalmenu';
+$string['langmenuinsecurelayout'] = 'Toon taalmenu in veilige lay-out';
+$string['langmenuinsecurelayout_desc'] = 'Indien ingeschakeld zal een gebruiker de taal kunnen wijzigen tijdens een test of andere activiteit tijdens het gebruiken van veilige lay-out.';
 $string['langpackwillbeupdated'] = 'Opmerking: tijdens de upgrade zal Moodle proberen updates te downloaden voor je geïnstalleerde taalpakketten.';
 $string['langstringcache'] = 'Cache alle taalstrings';
 $string['languagesettings'] = 'Instellingen';
@@ -743,6 +788,8 @@ $string['lockrequestcategory'] = 'Blokkeer het selecteren van een categorie';
 $string['log'] = 'Logs';
 $string['logguests'] = 'Log gasttoegang';
 $string['logguests_help'] = 'Deze instelling maakt het mogelijk om activiteiten van de gast account en van niet aangemelde gebruikers te loggen. Voor sites met hoge belasting kan het nodig zijn deze instelling uit te schakelen voor om performantieredenen. Anders is het goed om dit ingeschakeld te laten op productiesites.';
+$string['logininfoinsecurelayout'] = 'Toon aangemelde gebruiker in veilige lay-out';
+$string['logininfoinsecurelayout_desc'] = 'Indien ingeschakeld zal de volledige naam van de gebruiker getoond worden in de navigatiebalk wanneer een test of een andere activiteit met veilige layout gebruikt wordt.';
 $string['loginpageautofocus'] = 'Autofocus loginformulier';
 $string['loginpageautofocus_help'] = 'Deze functie inschakelen verhoogt het gebruiksgemak op de loginpagina, maar het automatisch focussen van velden wordt gezien als een toegankelijkheidsprobleem.';
 $string['loglifetime'] = 'Logs bijhouden';
@@ -781,6 +828,8 @@ $string['maturitycorewarning'] = 'De Moodleversie die je gaat installeren of upg
 $string['maxbytes'] = 'Maximale grootte voor bestandsupload';
 $string['maxconsecutiveidentchars'] = 'Opeenvolgende identieke tekens';
 $string['maxeditingtime'] = 'Maximale tijd om berichten te bewerken';
+$string['maxsizeperdownloadcoursefile'] = 'Maximum grootte per bestand';
+$string['maxsizeperdownloadcoursefile_desc'] = 'De maximale bestandsgrootte van elk bestand wanneer cursus-inhoud gedownload wordt. Grotere bestanden zullen niet gedownload worden.';
 $string['maxtimelimit'] = 'Maximum tijdslimiet';
 $string['maxtimelimit_desc'] = 'Geef hier een waarde in seconden om de PHP uitvoertijd die Moodle toestaat zonder dat er iets getoond wordt op het scherm. 0 betekent dat de standaardbeperkingen gebruikt worden. Als je een front-endserver hebt met zijn eigen tijdslimiet, zet deze waarde dan lager, zodat je PHP-fouten in de logs krijgt. Niet van toepassing op CLI-scripts.';
 $string['maxusersperpage'] = 'Maximaal aantal gebruikers per pagina';
@@ -860,7 +909,7 @@ $string['navshowfrontpagemods_help'] = 'Indien ingeschakeld worden activiteiten 
 $string['navshowfullcoursenames'] = 'Toon volledige cursusnamen';
 $string['navshowfullcoursenames_help'] = 'Indien dit is ingeschakeld zullen cursussen met hun volledige naam, eerder dan met hun korte naam, in het navigatieblok getoond worden.';
 $string['navshowmycoursecategories'] = 'Toon mijn cursuscategorieën';
-$string['navshowmycoursecategories_help'] = 'Indien ingeschakeld worden cursus in de Mijn cursussen vertakking in categorieën getoond.';
+$string['navshowmycoursecategories_help'] = 'Indien ingeschakeld worden cursus in de Mijn cursussen vertakking in categorieën getoond in het navigatieblok (Enkel voor thema\'s gebaseerd op Classic).';
 $string['navsortmycourseshiddenlast'] = 'Sorteer mijn verborgen cursussen als laatste';
 $string['navsortmycourseshiddenlast_help'] = 'Indien ingeschakeld, worden verborgen cursussen weergegeven na zichtbare cursussen (voor gebruikers die verborgen cursussen kunnen bekijken). Anders worden alle cursussen, ongeacht hun zichtbaarheid, weergegeven volgens de instelling \'Mijn cursussen sorteren\'.';
 $string['navsortmycoursessort'] = 'Sorteer mijn cursussen';
@@ -907,6 +956,7 @@ $string['passwordchangelogout_desc'] = 'Indien ingeschakeld zullen na het wijzig
 $string['passwordchangetokendeletion'] = 'Verwijder toegangstokens van webservice na wijzigen wachtwoord';
 $string['passwordchangetokendeletion_desc'] = 'Indien ingeschakeld worden alle webservicetokens van de gebruiker verwijderd bij het wijzigen van een wachtwoord.';
 $string['passwordpolicy'] = 'Wachtwoordbeleid';
+$string['passwordpolicycheckonlogin'] = 'Controleer wachtwoord bij inloggen';
 $string['passwordresettime'] = 'Maximumtijd om een wachtwoordreset te valideren';
 $string['passwordreuselimit'] = 'Wachtwoord rotatielimiet';
 $string['passwordreuselimit_desc'] = 'Aantal keer dat een gebruiker zijn wachtwoord moet wijzigen voor ze eenzelfde wachtwoord opnieuw mogen gebruiken. Versleutelde versies van de oude wachtwoorden worden bewaard in de lokale databank. Deze functie kan niet compatibel zijn met externe authenticatieplugins.';
@@ -915,6 +965,8 @@ $string['pathtodot_help'] = 'Pad naar dot. Waarschijnlijk iets als /usr/bin/dot.
 $string['pathtodu'] = 'Pad naar du';
 $string['pathtogs'] = 'Pad naar ghostscript';
 $string['pathtogs_help'] = 'Op de meeste Linux-servers mag dit blijven staan als \'/usr/bin/gs\'. Op een Windows-server zal het eerder iets zijn als \'c:\\gs\\bin\\gswin32c.exe\' (zorg er voor dat er geen spaties voorkomen in het pad - kopieer indien nodig de bestanden \'gswin32c.exe\' en \'gsdll32.dll\' naar een nieuwe map zonder spatie in het pad)';
+$string['pathtopdftoppm'] = 'Pad naar pdftoppm';
+$string['pathtopdftoppm_help'] = '<a href="https://poppler.freedesktop.org/">Poppler</a> is een bibliotheek met de tool pdftoppm die PDF-pagina\'s converteert naar PNG. De performantie is over het algemeen beter dan Ghostscript, zeker voor grote bestanden. Indien aanwezig, wordt \'pdftoppm\' gebruikt in plaats van Ghostscript voor deze taak. Bij de meeste Linux-installaties kan dit worden gelaten als \'/usr/bin/pdftoppm\'. Indien niet aanwezig, installeer dan het poppler-utils of poppler-pakket, afhankelijk van de Linux-distributie. Op Windows wordt het geleverd door Cygwin-installaties.';
 $string['pathtopgdump'] = 'Pad naar pg_dump';
 $string['pathtopgdumpdesc'] = 'Je moet dit enkel ingeven als je meer dan één pg_dump op je systeem hebt (bijvoorbeeld als je meer dan één versie van postgresql geïnstalleerd hebt)';
 $string['pathtopgdumpinvalid'] = 'Ongeldig pad naar pg_dump - ofwel verkeerd pad of niet uitvoerbaar';
@@ -994,10 +1046,14 @@ $string['profileshortnamenotunique'] = 'Deze korte naam is al in gebruik';
 $string['profilesignup'] = 'Tonen op inschrijvingspagina?';
 $string['profilespecificsettings'] = 'Specifieke instellingen';
 $string['profilevisible'] = 'Voor wie is dit veld zichtbaar?';
-$string['profilevisible_help'] = '<p>Elk eigen profielveld kan drie mogelijke instellingen hebben voor wie het veld kan zien: onzichtbaar, iedereen of gebruiker. Deze keuze wordt gemaakt door een beheerder die privégegevens van de gebruikers wil bewaren. \'Gebruiker\' wordt meestal gekozen wanneer dat veld gevoelige informatie bevat, terwijl \'iedereen\' gekozen wordt voor andere informatie.</p>';
+$string['profilevisible_help'] = '* Niet zichtbaar - voor privé-gegevens, enkel zichtbaar voor beheerders
+* Zichtbaar voor gebruiker - voor privé-gegevens, enkel zichtbaar voor de gebruiker en beheerders
+* Zichtbaar voor gebruiker, leraren en beheerders - voor privé-gegevens, enkel zichtbaar voor de gebruiker, leraren en beheerders (op cursusprofielpagina)
+* Zichtbaar voor iedereen';
 $string['profilevisibleall'] = 'Zichtbaar voor iedereen';
 $string['profilevisiblenone'] = 'Niet zichtbaar';
 $string['profilevisibleprivate'] = 'Zichtbaar voor gebruiker';
+$string['profilevisibleteachers'] = 'Zichtbaar voor de gebruiker, leraren en beheerders';
 $string['profiling'] = 'Profiling';
 $string['profilingallowall'] = 'Continu profilen';
 $string['profilingallowall_help'] = 'Als je deze instelling inschakelt, dan kun je altijd gebruik maken van de PROFILEALL parameter (PGC) om profiling in te schakelen voor alle uitgevoerde scripts tijdens de duur van je Moodlesessie. Analoog kun je de PROFILEALLSTOP parameter gebruiken om het te stoppen';
@@ -1041,13 +1097,16 @@ $string['purgethemecache'] = 'Thema\'s';
 $string['query'] = 'Zoekopdracht';
 $string['question'] = 'Vragen';
 $string['questionbehaviours'] = 'Gedrag vragen';
-$string['questioncwqpfscheck'] = 'Eén of meer willekeurige vragen in een test zijn insgesteld om vragen te kiezen uit gedeelde en niet gedeelde vragencategorieën. Er is een meer gedetailleerd rapport <a href="{$a->reporturl}">hier</a> en je kunt de Moodle Docs-pagina <a href="{$a->docsurl}">hier</a> bekijken.';
+$string['questioncwqpfscheck'] = 'Eén of meer willekeurige vragen in een test zijn ingesteld om vragen te kiezen uit gedeelde en niet gedeelde vragencategorieën. Zie <a href="{$a->reporturl}">willekeurige vragenrapport</a> en <a href="{$a->docsurl}">de Moodle Docs-pagina</a>.';
 $string['questioncwqpfsok'] = 'Goed. Er zijn geen willekeurige vragen in je testen die opgemaakt zijn om vragen uit zowel gedeelde als niet gedeelde vragencategorieën te kiezen.';
 $string['questiontype'] = 'Vraagtype';
 $string['questiontypes'] = 'Vraagtypes';
 $string['quizattemptsupgradedmessage'] = 'In Moodle 2.1 was eer een grote upgrade van de vragen. Het was toen mogelijk om delen van de databankupgrade uit te stellen tot later. Voor je kunt upgraden naar Moodle 2.7 moet deze upgrade volledig uitgevoerd zijn.';
 $string['recaptchaprivatekey'] = 'ReCAPTCHA geheime sleutel';
 $string['recaptchapublickey'] = 'ReCAPTCHA site-sleutel';
+$string['referrernone'] = 'Standaardbrowser';
+$string['referrerpolicy'] = 'Verwijzingsbeleid';
+$string['referrerpolicydesc'] = 'Stel de verwijzende beleidskop in zodat deze wordt opgenomen in de reacties van je site.';
 $string['register'] = 'Registreer je site';
 $string['registermoodlenet'] = '<p>We zouden graag contact met je kunnen opnemen als er belangrijke zaken te melden zijn over jouw Moodle site! </p>Door te registreren</p><ul><li>kun je inschrijvingen om belangrijke berichten zoals beveiligingswaarschuwingen, nieuwe Moodle releases en ander belangrijk nieuws te krijgen</li><li>krijg je toegang tot ons systeem om push-meldingen te activeren vanaf jouw Moodle-site via de gratis<a href="https://download.moodle.org/mobile/">Moodle Mobile app</a>.</li><li>draag je bij aan onze <a href="https://stats.moodle.org">Moodle statistics</a> van de internationale community, die ons helpt om Moodle en onze community sites te verbeteren</li><li>kan je optioneel je site laten opnemen op de  <a href="https://stats.moodle.org/sites/">lijst met geregistreerde sites</a> in jouw land.</li></ul>';
 $string['registermoodleorg'] = 'Wanneer je je site registreert';
@@ -1062,10 +1121,13 @@ $string['registration_help'] = 'Door te registreren:
 $string['registrationwarning'] = 'Je site is nog niet geregistreerd.';
 $string['registrationwarningcontactadmin'] = 'Je site is nog niet geregistreerd. Gelieve contact op te nemen met je sitebeheerder.';
 $string['releasenoteslink'] = 'Bekijk de online <a target="_new" href="{$a}">Release Notes</a> voor informatie over deze versie van Moodle.';
+$string['rememberuserlicensepref'] = 'Onthoud de voorkeur van de gebruikerslicentie';
+$string['rememberuserlicensepref_help'] = 'Indien ingeschakeld, wordt de laatst door de gebruiker geselecteerde licentie vooraf geselecteerd bij het uploaden van een bestand in de bestandskiezer. Anders wordt de standaard sitelicentie vooraf geselecteerd.';
 $string['rememberusername'] = 'Gebruikersnaam onthouden';
 $string['rememberusername_desc'] = 'Schakel dit in als je permanente cookies wil bewaren met de gebruikersnaam tijdens het aanmelden. Permanente cookies kunnen een privacyprobleem stellen als ze niet met zorg gebruikt worden.';
 $string['reportsmanage'] = 'Beheer rapporten';
 $string['requestcategoryselection'] = 'Categorieselectie inschakelen';
+$string['required'] = 'Verplicht';
 $string['requiredentrieschanged'] = 'Opmerking: na het upgraden zal de instelling \'Items vereist voor bekijken\' ingeschakeld worden voor volgende databank-activiteiten:<br/>{$a->text}<br/>';
 $string['requiremodintro'] = 'Beschrijving van de activiteit vereist';
 $string['requiremodintro_desc'] = 'Schakel deze optie in als je je gebruikers wil dwingen om een beschrijving te geven bij elke activiteit.';
@@ -1101,9 +1163,14 @@ $string['searchallavailablecourses_off'] = 'Zoek alleen binnen aangemelde cursus
 $string['searchallavailablecourses_on'] = 'Zoek binnen alle cursussen waartoe de gebruiker toegang heeft';
 $string['searchallavailablecoursesdesc'] = 'Indien ingesteld om alleen binnen ingeschreven cursussen te zoeken, worden cursusinformatie en cursusinhoud alleen doorzocht in cursussen waarin de gebruiker is aangemeld. Anders worden cursusinformatie en cursusinhoud doorzocht in alle cursussen waartoe de gebruiker toegang heeft, zoals cursussen waarvoor gasttoegang is ingeschakeld.';
 $string['searchalldeleted'] = 'Alle geïndexeerde inhoud is verwijderd';
+$string['searchalternatesettings'] = 'Alternatieve instellingen enkel voor query\'s';
+$string['searchalternatesettings_desc'] = 'Als je deze instellingen voltooit, kun je \'alternatieve instellingen\' voor deze zoekmachine selecteren in de optie voor alleen zoekopdrachten op de pagina \'Algemene zoekopdracht beheren\'. Dit is alleen handig wanneer je tussen twee zoekmachines van hetzelfde type wisselt.';
 $string['searchareadisabled'] = 'Zoekzone uitgeschakeld';
 $string['searchareaenabled'] = 'Zoekzone ingeschakeld';
 $string['searchareas'] = 'Zoekzones';
+$string['searchbanner'] = 'Zoek informatie';
+$string['searchbannerenable'] = 'Zoekinformatie weergeven';
+$string['searchbannerenable_desc'] = 'Indien ingeschakeld, wordt de onderstaande tekst boven aan het zoekscherm getoond aan alle gebruikers. Dit kan worden gebruikt om gebruikers op de hoogte te houden tijdens het uitvoeren van onderhoud aan het zoeksysteem.';
 $string['searchdefaultcategory'] = 'Standaard zoek categorieën';
 $string['searchdefaultcategory_desc'] = 'Resultaten van de geselecteerde zoekgebiedcategorie worden standaard weergegeven.';
 $string['searchdeleteindex'] = 'Verwijder alle geïndexeerde inhoud';
@@ -1111,6 +1178,11 @@ $string['searchdisplay'] = 'Weergave-opties voor zoekresultaten';
 $string['searchenablecategories'] = 'Resultaten tonen in gescheiden categorieën';
 $string['searchenablecategories_desc'] = 'Indien ingeschakeld worden zoekresultaten in gescheiden categorieën getoond.';
 $string['searchengine'] = 'Zoekmachine';
+$string['searchenginealternatesettings'] = '{$a} (alternatieve instellingen)';
+$string['searchenginequeryonly'] = 'Zoekmachine enkel voor zoekopdrachten';
+$string['searchenginequeryonly_desc'] = 'Deze zoekmachine wordt alleen gebruikt voor het maken van zoekopdrachten, niet voor indexering. Door deze functie te gebruiken, kun je opnieuw indexeren in een andere zoekmachine, terwijl zoekopdrachten van gebruikers vanuit deze blijven werken.';
+$string['searchenginequeryonly_none'] = 'Geen (gebruik de hoofdzoekmachine voor zoekopdrachten)';
+$string['searchenginequeryonlysame'] = 'De zoekmachine voor alleen zoekopdrachten en de hoofdzoekmachine kunnen niet op dezelfde waarde worden ingesteld.';
 $string['searchhideallcategory'] = 'Verberg categorie Alle resultaten';
 $string['searchhideallcategory_desc'] = 'Indien aangevinkt, zal de categorie met alle resultaten worden verborgen op het scherm met zoekresultaten.';
 $string['searchincludeallcourses'] = 'Voeg alle zichtbare cursussen toe';
@@ -1124,6 +1196,8 @@ $string['searchindexwhendisabled'] = 'Indexeer wanneer uitgeschakeld';
 $string['searchindexwhendisabled_desc'] = 'Staat de geplande taak toe om een zoekindex op te bouwen zelfs wanneer zoeken is uitgeschakeld. Dit is nuttig als de de index wil opbouwen voor die zoekmogelijkheden verschijnen voor de leerlingen.';
 $string['searchinsettings'] = 'Zoek in instellingen';
 $string['searchlastrun'] = 'Laatst gelopen (keren; # docs,  # records, # genegeerd)';
+$string['searchmanagement'] = 'Zoekbeheer';
+$string['searchmanagement_desc'] = 'Deze opties zijn handig bij het aanbrengen van wijzigingen op sites met zeer grote zoekindexen die veel tijd nodig hebben om opnieuw te worden opgebouwd.';
 $string['searchnotavailable'] = 'Zoeken is niet beschikbaar';
 $string['searchoptions'] = 'Zoekopties';
 $string['searchpartial'] = '(nog niet volledig geïndexeerd)';
@@ -1147,15 +1221,18 @@ $string['sessioncookiedomain'] = 'Cookie domein';
 $string['sessioncookiepath'] = 'Cookie pad';
 $string['sessionhandling'] = 'Sessie afhandeling';
 $string['sessiontimeout'] = 'Timeout';
+$string['sessiontimeoutwarning'] = 'Time-out waarschuwing';
 $string['settingdependenton'] = 'Deze instelling is mogelijk verborgen, dit is vanwege de waarde bij <strong>{$a}</strong>.';
 $string['settingfileuploads'] = 'Het uploaden van bestanden is vereist voor het normaal functioneren van Moodle. Schakel het in in je PHP-configuratie.';
+$string['settingmaxinputvars'] = 'De PHP instelling max_input_vars wordt aangeraden om minstens op 5000 in te stellen.';
+$string['settingmaxinputvarsrequired'] = 'De PHP instelling max_input_vars zou minstens 5000 moeten zijn.';
 $string['settingmemorylimit'] = 'Onvoldoende geheugen gedetecteerd. Zet de geheugenlimiet hoger in je PHP-instellingen.';
 $string['settingsafemode'] = 'Moodle is niet volledig compatibel met safe mode. Vraag je serverbeheerder om het uit te schakelen. Moodle draaien met safe mode ingeschakeld wordt niet ondersteund - je kunt je aan verschillende problemen verwachten.';
 $string['setupsearchengine'] = 'Zoekmachine instellen';
 $string['showcommentscount'] = 'Toon aantal commentaren';
 $string['showdetails'] = 'Toon details';
 $string['showuseridentity'] = 'Toon de identiteit van de gebruiker';
-$string['showuseridentity_desc'] = 'Bij het selecteren of het zoeken naar gebruikers, en bij het tonen van lijsten van gebruikers, kunnen deze velden getoond worden in aanvulling op hun naam. De velden worden alleen getoond aan gebruikers die beschikken over de moodle/site:viewuseridentity capability; normaal gezien leraren en managers. (Deze optie is het meest zinvol als u één of twee velden kiest die verplicht zijn in uw instelling.)';
+$string['showuseridentity_desc'] = 'Bij het selecteren of het zoeken naar gebruikers, en bij het tonen van lijsten van gebruikers, kunnen deze velden getoond worden in aanvulling op hun naam. De velden worden alleen getoond aan gebruikers die beschikken over de moodle/site:viewuseridentity capability; standaard zijn dat leraren en managers. (Deze optie is het meest zinvol als je één of twee velden kiest die verplicht zijn in uw instelling.)';
 $string['simplexmlrequired'] = 'De SimpleXML PHP-extentie is nu vereist voor Moodle.';
 $string['sitemailcharset'] = 'Tekenset';
 $string['sitemaintenance'] = 'De site is in onderhoud en is op dit ogenblik niet beschikbaar';
@@ -1163,6 +1240,7 @@ $string['sitemaintenancemode'] = 'Onderhoudsmodus';
 $string['sitemaintenanceoff'] = 'De onderhoudsmodus is uitgeschakeld en de site loopt nu terug normaal';
 $string['sitemaintenanceon'] = 'Je site is nu in onderhoudsmodus (alleen beheerders kunnen inloggen of gebruik maken van de site)';
 $string['sitemaintenanceoncli'] = 'Je site loopt in CLI onderhoudsmodus. Toegang via de webinterface is niet mogelijk.';
+$string['sitemaintenancetitle'] = '{$a} in onderhoud';
 $string['sitemaintenancewarning'] = 'Je site is nu in onderhoudsmodus (alleen beheerders kunnen inloggen of gebruik maken van de site). Om terug te keren naar normale werking: <a href="maintenance.php">onderhoudsmodus uitschakelen</a>';
 $string['sitemaintenancewarning2'] = 'Je site is in onderhoudsmodus (enkel beheerders kunnen inloggen). <a href="{$a}">Schakel onderhoudsmodus uit</a> om de site terug normaal te laten werken';
 $string['sitemenubar'] = 'Site-navigatie';
@@ -1252,7 +1330,7 @@ $string['task_type:scheduled'] = 'Gepland';
 $string['taskadmintitle'] = 'Taken';
 $string['taskanalyticscleanup'] = 'Analytics opruimen';
 $string['taskautomatedbackup'] = 'Automatische backups';
-$string['taskbackupcleanup'] = 'Backuptabellen en logs leeg maken';
+$string['taskbackupcleanup'] = 'Backuptabellen, logs en bestanden leeg maken';
 $string['taskbadgescron'] = 'Badges toekennen';
 $string['taskbadgesmessagecron'] = 'Achtergrond proces voor het sturen van badge notificaties';
 $string['taskblogcron'] = 'Externe blogs synchroniseren';
@@ -1273,6 +1351,7 @@ $string['taskglobalsearchindex'] = 'Globaal zoeken indexeren';
 $string['taskglobalsearchoptimize'] = 'Globaal zoeken index optimalisatie';
 $string['taskgradecron'] = 'Achtergrondprocessen voor cijferlijst';
 $string['taskgradehistorycleanup'] = 'Achtergrond proces voor het opschonen van cijferlijst historische tabellen';
+$string['taskh5pcleanup'] = 'Opschonen van ongebruikte H5P-bestanden';
 $string['tasklegacycron'] = 'Verouderde cronverwerking voor plugins';
 $string['tasklogcleanup'] = 'Taaklogs opruimen';
 $string['tasklogging'] = 'Taaklog configuratie';
@@ -1347,6 +1426,7 @@ $string['unsupportedphpversion71'] = 'PHP-versie 7.1 wordt niet ondersteund.';
 $string['unsupportedphpversion72'] = 'PHP-versie 7.2 wordt niet ondersteund.';
 $string['unsupportedphpversion73'] = 'PHP-versie 7.3 wordt niet ondersteund.';
 $string['unsupportedphpversion74'] = 'PHP versie 7.4 wordt niet ondersteund.';
+$string['unsupportedphpversion80'] = 'PHP-versie 8.0 wordt niet ondersteund.';
 $string['unsuspenduser'] = 'Activeer gebruikersaccount';
 $string['updateaccounts'] = 'Update bestaande accounts';
 $string['updateautocheck'] = 'Automatisch controleren op beschikbare updates';
@@ -1416,6 +1496,15 @@ $string['user'] = 'Gebruiker';
 $string['userbulk'] = 'Gebruikers in bulk beheren';
 $string['userbulkdownload'] = 'Exporteer gebruikers als';
 $string['userdefaultpreferences'] = 'Standaardvoorkeuren gebruiker';
+$string['userfeedbackafterupgrade'] = 'Na elke grote upgrade';
+$string['userfeedbackencouragement'] = '<p> Moodle 3.9 bevat een nieuwe functie waarmee gebruikers feedback kunnen geven over de Moodle-software aan Moodle HQ via een externe enquête-site die wordt gehost door Moodle HQ. Er wordt geen door de gebruiker identificeerbare informatie doorgestuurd naar de enquête-site. </p>
+<p> Moodle HQ streeft ernaar open en transparant te zijn over de manier waarop gegevens worden verzameld. Daarom willen we ervoor zorgen dat je op de hoogte bent van en controle heeft over deze functionaliteit. </p>
+<p> Feedback van gebruikers zal Moodle HQ enorm helpen bij het verbeteren van de Moodle-software. Ga naar <a href="{$a}"> Feedback-instellingen </a> om deze functie in te schakelen. </p>';
+$string['userfeedbacknextreminder'] = 'Volgende feedback-herinnering';
+$string['userfeedbacknextreminder_desc'] = 'Wanneer vragen de gebruiker weer feedback?';
+$string['userfeedbackperiodically'] = 'Periodiek';
+$string['userfeedbackremindafter'] = 'Toon herinnering na';
+$string['userfeedbackremindafter_desc'] = 'Herinner gebruikers om feedback te geven na het opgegeven aantal dagen.';
 $string['userfiltersdefault'] = 'Standaard gebruikersfilters';
 $string['userfiltersdefault_desc'] = 'Selecteer de filters die moeten worden weergegeven op de pagina \'Bladeren door gebruikers\' en op de pagina \'Bulkgebruikersacties\'. Houd de Ctrl-toets ingedrukt om meerdere items te selecteren. Alle niet-geselecteerde filters zijn beschikbaar door op de link \'Meer weergeven\' te klikken.';
 $string['userimagesdisabled'] = 'Afbeeldingen voor gebruikersprofielen uitgeschakeld';

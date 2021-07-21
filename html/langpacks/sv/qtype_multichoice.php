@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'sv', version '3.8'.
+ * Strings for component 'qtype_multichoice', language 'sv', version '3.11'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -31,7 +31,7 @@ $string['answernumbering'] = 'Numrera svarsalternativen?';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
-$string['answernumbering_desc'] = 'Standardinställningen för numreringsstilen.';
+$string['answernumbering_desc'] = 'Standardformatet för numrering.';
 $string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingiii'] = 'I., II., III., ...';
 $string['answernumberingnone'] = 'Ingen numrering';
@@ -41,7 +41,7 @@ $string['choiceno'] = 'Val {$a}';
 $string['choices'] = 'Tillgängliga val';
 $string['clearchoice'] = 'Rensa mitt val';
 $string['clozeaid'] = 'Mata in det saknade ordet';
-$string['correctansweris'] = 'Det rätta svaret är: {$a}';
+$string['correctansweris'] = 'Rätta svaret är: {$a}';
 $string['correctanswersare'] = 'Det rätta svaren är: {$a}';
 $string['correctfeedback'] = 'För vilket korrekt svar som helst';
 $string['deletedchoice'] = 'Valet togs bort efter att försöket påbörjades.';
@@ -49,7 +49,7 @@ $string['errfractionsaddwrong'] = 'De positiva poängen du har valt uppgår inte
 $string['errfractionsnomax'] = 'Ett av alternativen bör vara 100% så att det är<br />möjligt att få full poäng på den här frågan.';
 $string['errgradesetanswerblank'] = 'Betyg satt, men Svaret är tomt';
 $string['feedback'] = 'Återkoppling';
-$string['fillouttwochoices'] = 'Du måste fylla i åtminstone två val. Val som har lämnats tomma kommer inte att användas.';
+$string['fillouttwochoices'] = 'Du måste fylla i åtminstone två alternativ. Alternativ som lämnats tomma kommer inte att användas.';
 $string['fractionsaddwrong'] = 'De positiva poängen du har valt uppgår inte till 100%<br />Istället uppgår de till {$a}%<br />Vill du gå tillbaka och korrigera den här frågan?';
 $string['fractionsnomax'] = 'Ett av alternativen bör vara 100% så att det är<br />möjligt att få full poäng på den här frågan.<br />Vill du gå tillbaka och korrigera den?';
 $string['incorrectfeedback'] = 'För något felaktigt svar';
@@ -62,13 +62,21 @@ $string['partiallycorrectfeedback'] = 'För delvis rätta svar';
 $string['pleaseselectananswer'] = 'Välj ett svar.';
 $string['pleaseselectatleastoneanswer'] = 'Välj ett eller flera svar.';
 $string['pluginname'] = 'Flerval';
-$string['pluginname_help'] = 'Man väljer från olika svaralternativ när man svarar på frågan (som kan innehålla också en bild). Det finns två olika typer av flervalsfrågor - med ett rätt svar och med några rätta svar.';
+$string['pluginname_help'] = 'Man väljer från olika svaralternativ när man svarar på frågan (som även kan innehålla en bild). En flervalsfråga kan ha ett eller flera korrekta svar.';
 $string['pluginnameadding'] = 'Lägger till en flervalsfråga';
 $string['pluginnameediting'] = 'Redigerar en flervalsfråga';
 $string['pluginnamesummary'] = 'Tillåter val av ett eller flera svar från en fördefinierad lista.';
-$string['privacy:metadata'] = 'Pluginmodulen för flervals-frågetypen lagrar ingen personinformation.';
+$string['privacy:metadata'] = 'Pluginmodulen för frågetypen Flerval gör det möjligt för frågeförfattare att ange standardalternativ som användarinställningar.';
+$string['privacy:preference:answernumbering'] = 'Vilken numreringsstil som ska användas (1., 2., 3., .../a., b., c., ... etc.)';
+$string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråga.';
+$string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
+$string['privacy:preference:showstandardinstruction'] = 'Om standardinstruktionen visas.';
+$string['privacy:preference:shuffleanswers'] = 'Om svaren ska blandas automatiskt.';
+$string['privacy:preference:single'] = 'Om svaret är enskilt med alternativknappar eller flera med kryssrutor.';
 $string['selectmulti'] = 'Välj ett eller flera alternativ:';
 $string['selectone'] = 'Välj ett av alternativen:';
+$string['showstandardinstruction'] = 'Visa svarsinstruktioner?';
+$string['showstandardinstruction_help'] = 'Om instruktionen ”Välj en:” eller ”Välj en eller flera:” ska visas före svarsalternativen';
 $string['shuffleanswers'] = 'Blanda svaren?';
 $string['shuffleanswers_desc'] = 'Om alternativen som standard ska blandas om slumpmässigt för varje försök.';
 $string['shuffleanswers_help'] = 'Om aktiverat kommer ordningen på svaren blandas slumpmässigt för varje försök, förutsatt att "blanda inom frågor" i aktivitetsinställningarna också är aktiverat.';

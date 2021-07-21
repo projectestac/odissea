@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'es', version '3.8'.
+ * Strings for component 'questionnaire', language 'es', version '3.11'.
  *
  * @package     questionnaire
  * @category    string
@@ -85,7 +85,7 @@ $string['checkstarted'] = 'Seleccione iniciado';
 $string['clicktoswitch'] = '(Haga click para activar)';
 $string['closebeforeopen'] = 'Usted ha especificado una fecha de cierre anterior a la fecha de apertura.';
 $string['closed'] = 'La encuesta se cerró el {$a}. Gracias.';
-$string['closedate'] = 'Fecha de cierre';
+$string['closedate'] = 'Permitir respuestas hasta';
 $string['closeson'] = 'El Cuestionario se cierra el {$a}';
 $string['completionsubmit'] = 'El participante tiene que enviar la encuesta para completarla';
 $string['condition'] = 'Condición';
@@ -285,8 +285,10 @@ $string['notapplicablecolumn'] = 'Columna NS/NC';
 $string['notavail'] = 'Esta encuesta no esta aún disponible. Inténtelo más tarde.';
 $string['noteligible'] = 'Usted no ha sido seleccionado para responder a esta encuesta';
 $string['notemplatesurveys'] = 'No hay plantillas de encuesta';
+$string['notificationfull'] = 'Respuesta completa';
 $string['notifications'] = 'Enviar notificaciones de entrega';
 $string['notifications_help'] = 'Avisa a los roles con el permiso "mod/questionnaire:submissionnotification" cuando se realiza una entrega.';
+$string['notificationsimple'] = 'Solo notificación';
 $string['notopen'] = 'Esta encuesta no se abrirá hasta {$a}.';
 $string['notrequired'] = 'Respuesta no obligatoria';
 $string['nousersselected'] = 'Ningún usuario seleccionado';
@@ -464,7 +466,7 @@ $string['subtitle_help'] = 'Subtítulo de esta encuesta. Se muestra solo debajo 
 $string['summary'] = 'Resumen';
 $string['surveynotexists'] = 'la encuesta no existe';
 $string['surveyowner'] = 'Debe ser propietario de la encuesta para realizar esta operación';
-$string['surveyresponse'] = 'Respueta a la encuesta';
+$string['surveyresponse'] = 'Respuesta a la encuesta';
 $string['template'] = 'Plantilla';
 $string['templatenotviewable'] = 'No se pueden mostrar las plantillas de encuesta';
 $string['text'] = 'Texto';

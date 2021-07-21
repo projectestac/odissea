@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'pt', version '3.8'.
+ * Strings for component 'feedback', language 'pt', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -57,6 +57,7 @@ $string['complete_the_form'] = 'Responder às perguntas';
 $string['completed'] = 'Concluído';
 $string['completed_feedbacks'] = 'Respostas submetidas';
 $string['completedon'] = 'Concluído em {$a}';
+$string['completiondetail:submit'] = 'Dar feedback';
 $string['completionsubmit'] = 'Ver como concluído se o inquérito tiver sido submetido';
 $string['configallowfullanonymous'] = 'Se selecionar \'Sim\', os utilizadores poderão concluir uma atividade inquérito na página principal sem estar autenticado.';
 $string['confirmdeleteentry'] = 'Tem a certeza de que pretende apagar esta resposta?';
@@ -74,7 +75,7 @@ $string['delete_pagebreak'] = 'Eliminar a quebra de página';
 $string['delete_template'] = 'Apagar modelo';
 $string['delete_templates'] = 'Apagar modelo…';
 $string['depending'] = 'Dependências';
-$string['depending_help'] = 'Esta opção permite que uma questão  só seja exibida se tiver sido dada uma determinada resposta a uma questão prévia.<br />
+$string['depending_help'] = 'Esta opção permite que uma questão só seja exibida se tiver sido dada uma determinada resposta a uma questão prévia.<br />
 <strong>Siga os passos seguintes para criar uma dependência:</strong><br />
 <ol>
     <li>Crie uma pergunta que condicionará a exibição de outras perguntas.</li>
@@ -112,7 +113,7 @@ $string['emailteachermail'] = 'O utilizador {$a->username} respondeu ao inquéri
 Pode visuazilar as suas respostas em:
 {$a->url}';
 $string['emailteachermailhtml'] = 'O utilizador {$a->username} completou o inquérito: <i>\'{$a->feedback}\'</i> disponível em <a href="{$a->url}"></a>.';
-$string['entries_saved'] = 'As suas respostas foram gravadas. Obrigado';
+$string['entries_saved'] = 'As suas respostas foram guardadas. Obrigado';
 $string['eventresponsedeleted'] = 'Resposta apagada';
 $string['eventresponsesubmitted'] = 'Resposta submetida';
 $string['export_questions'] = 'Exportar questões';
@@ -259,7 +260,7 @@ $string['searchcourses'] = 'Procurar disciplinas';
 $string['searchcourses_help'] = 'Procurar pelo código ou nome da(s) disciplina(s) que pretende associar a este inquérito.';
 $string['selected_dump'] = 'Os índices selecionados da variável <b>$SESSION</b> são apresentados na lista seguinte:';
 $string['send'] = 'Enviar';
-$string['send_message'] = 'Enviar mensagem';
+$string['send_message'] = 'Enviar notificação';
 $string['show_all'] = 'Mostrar todos';
 $string['show_analysepage_after_submit'] = 'Mostrar página de análise de respostas';
 $string['show_entries'] = 'Respostas';
@@ -286,7 +287,7 @@ $string['there_are_no_settings_for_recaptcha'] = 'O Captcha não foi configurado
 $string['this_feedback_is_already_submitted'] = 'Já concluiu esta atividade';
 $string['typemissing'] = 'Não foi indicado o valor "tipo"';
 $string['update_item'] = 'Guardar alterações';
-$string['url_for_continue'] = 'Hiperligação para a próxima atividade';
+$string['url_for_continue'] = 'Hiperligação para a atividade seguinte';
 $string['url_for_continue_help'] = 'Após submeter o inquérito, é exibido um botão \'Continuar\' que remete para a página da disciplina. Em alternativa, esse botão poderá remeter para a atividade seguinte se o URL da atividade for inserido aqui.';
 $string['use_one_line_for_each_value'] = 'Utilize uma linha para cada resposta!';
 $string['use_this_template'] = 'Usar este modelo';

@@ -579,9 +579,9 @@ M.util.init_block_hider = function(Y, config) {
                         hide,
                         show;
                     if (t && (a = t.one('.block_action'))) {
-                        //XTEC ************ MODIFICAT - Change image in blocks to use HTML entity instead
-                        //2012.07.31 @aginard (code developed by @abachill)
-                        //************ ORIGINAL
+
+                        // XTEC ************ MODIFICAT - Change image in blocks to use HTML entity instead
+                        // 2012.07.31 @aginard (code developed by @abachill)
                         hide = Y.Node.create('<span>&#9650;</span>')
                             .addClass('block-hider-hide')
                             .setAttrs({
@@ -590,6 +590,7 @@ M.util.init_block_hider = function(Y, config) {
                                 tabindex:   0,
                                 'title':    config.tooltipVisible
                             });
+                        // ************ ORIGINAL
                         /*
                         hide = Y.Node.create('<img />')
                             .addClass('block-hider-hide')
@@ -600,12 +601,13 @@ M.util.init_block_hider = function(Y, config) {
                                 'title':    config.tooltipVisible
                             });
                         */
-                        //************ FI
+                        // ************ FI
+
                         hide.on('keypress', this.updateStateKey, this, true);
                         hide.on('click', this.updateState, this, true);
 
-                        //XTEC ************ MODIFICAT - Change image in blocks to use HTML entity instead
-                        //2012.07.31 @aginard (code developed by @abachill)
+                        // XTEC ************ MODIFICAT - Change image in blocks to use HTML entity instead
+                        // 2012.07.31 @aginard (code developed by @abachill)
                         show = Y.Node.create('<span>&#9660;</span>')
                             .addClass('block-hider-show')
                             .setAttrs({
@@ -614,7 +616,7 @@ M.util.init_block_hider = function(Y, config) {
                                 tabindex:   0,
                                 'title':    config.tooltipHidden
                             });
-                        //************ ORIGINAL
+                        // ************ ORIGINAL
                         /*
                         show = Y.Node.create('<img />')
                             .addClass('block-hider-show')
@@ -625,7 +627,8 @@ M.util.init_block_hider = function(Y, config) {
                                 'title':    config.tooltipHidden
                             });
                         */
-                        //************ FI
+                        // ************ FI
+
                         show.on('keypress', this.updateStateKey, this, false);
                         show.on('click', this.updateState, this, false);
 

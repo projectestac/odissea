@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ja', version '3.8'.
+ * Strings for component 'calendar', language 'ja', version '3.11'.
  *
  * @package     calendar
  * @category    string
@@ -143,6 +143,7 @@ $string['eventtypecourse'] = 'コース';
 $string['eventtypeglobal'] = 'グローバル';
 $string['eventtypegroup'] = 'グループ';
 $string['eventtypemodule'] = 'モジュール';
+$string['eventtypeother'] = 'その他';
 $string['eventtypesite'] = 'サイト';
 $string['eventtypeuser'] = 'ユーザ';
 $string['eventview'] = 'イベント詳細';

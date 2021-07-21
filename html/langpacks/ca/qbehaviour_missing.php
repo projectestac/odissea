@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_missing', language 'ca', version '3.8'.
+ * Strings for component 'qbehaviour_missing', language 'ca', version '3.11'.
  *
  * @package     qbehaviour_missing
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Falta el comportament';
+$string['pluginname'] = 'Manca el comportament';
 $string['questionusedunknownmodel'] = 'Aquesta pregunta es va intentar respondre amb un comportament que ara no es troba disponible. Es mostra la pregunta de la millor manera possible, però algunes parts poden haver quedat perdudes o ser errònies.';

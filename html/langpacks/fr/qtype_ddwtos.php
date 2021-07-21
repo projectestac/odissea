@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'fr', version '3.8'.
+ * Strings for component 'qtype_ddwtos', language 'fr', version '3.11'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -37,4 +37,7 @@ $string['pluginname_link'] = 'question/type/ddwtos';
 $string['pluginnameadding'] = 'Ajouter un glisser-déposer sur texte';
 $string['pluginnameediting'] = 'Modifier un glisser-déposer sur texte';
 $string['pluginnamesummary'] = 'Les mots manquants dans le texte de la question sont comblés par glisser-déposer.';
-$string['privacy:metadata'] = 'Le plugin de type de question Glisser-déposer sur texte n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de type de question Glisser-déposer sur texte permet aux auteurs de questions d\'enregistrer des préférences par défaut.';
+$string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pour une question.';
+$string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
+$string['privacy:preference:shuffleanswers'] = 'Si les réponses doivent être mélangées automatiquement.';

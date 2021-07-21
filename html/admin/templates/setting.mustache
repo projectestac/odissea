@@ -53,10 +53,10 @@
             <p {{#labelfor}}id="{{labelfor}}_label"{{/labelfor}}>
                 {{{title}}}
                 {{#override}}
-                    <div class="form-overridden">{{override}}</div>
+                    <div class="alert alert-info">{{override}}</div>
                 {{/override}}
                 {{#warning}}
-                    <div class="form-warning">{{warning}}</div>
+                    <div class="alert alert-warning">{{warning}}</div>
                 {{/warning}}
             </p>
         {{/customcontrol}}
@@ -64,10 +64,10 @@
             <label {{#labelfor}}for="{{labelfor}}"{{/labelfor}}>
                 {{{title}}}
                 {{#override}}
-                    <div class="form-overridden">{{override}}</div>
+                    <div class="alert alert-info">{{override}}</div>
                 {{/override}}
                 {{#warning}}
-                    <div class="form-warning">{{warning}}</div>
+                    <div class="alert alert-warning">{{warning}}</div>
                 {{/warning}}
             </label>
         {{/customcontrol}}

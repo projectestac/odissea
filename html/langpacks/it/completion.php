@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'it', version '3.8'.
+ * Strings for component 'completion', language 'it', version '3.11'.
  *
  * @package     completion
  * @category    string
@@ -55,6 +55,7 @@ $string['bulkcompletiontracking_help'] = '<strong>Nessuno:</strong> Non tracciar
 $string['checkactivity'] = 'Casella di spunta dell\'attività / risorsa: {$a}';
 $string['checkall'] = 'Seleziona/deseleziona tutte le attività e risorse';
 $string['checkallsection'] = 'Seleziona/deseleziona tutte le attività e risorse della sezione {$a}';
+$string['completeactivity'] = 'Completare l’attività';
 $string['completed'] = 'Completato';
 $string['completedunlocked'] = 'Opzioni di completamento sbloccate';
 $string['completedunlockedtext'] = 'Salvando le modifiche, sarà eliminato lo stato di completamento di tutti gli studenti. Se cambi idea, non salvare questo form.';
@@ -121,6 +122,7 @@ $string['courseaggregation_any'] = 'Deve essere completato ALMENO UNO dei corsi 
 $string['coursealreadycompleted'] = 'Hai già completato questo corso';
 $string['coursecomplete'] = 'Criteri di completamento';
 $string['coursecompleted'] = 'Corso completato';
+$string['coursecompletedmessage'] = '<p>Congratulazioni!</p><p>Hai appena completato il corso <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Criteri di completamento';
 $string['coursecompletioncondition'] = 'Criterio: {$a}';
 $string['coursegrade'] = 'Valutazione del corso';
@@ -139,6 +141,8 @@ $string['defaultcompletionupdated'] = 'Le modifiche sono state salvate';
 $string['deletecompletiondata'] = 'Elimina dati di completamento';
 $string['dependencies'] = 'Prerequisiti';
 $string['dependenciescompleted'] = 'Completamento di altri corsi';
+$string['detail_desc:receivegrade'] = 'Ricevere una valutazione';
+$string['detail_desc:view'] = 'Visualizzare';
 $string['editcoursecompletionsettings'] = 'Modifica criteri di completamento del corso';
 $string['enablecompletion'] = 'Traccia il completamento';
 $string['enablecompletion_help'] = 'Abilita la funzionalità di tracciamento del completamento dei corsi e delle attività. Si consiglia di abilitare questa opzione in modo che vengano visualizzati dati significativi nella panoramica del corso sulla Dashboard.';
@@ -217,6 +221,8 @@ $string['seedetails'] = 'Visualizza dettagli';
 $string['select'] = 'Seleziona';
 $string['self'] = 'Auto';
 $string['selfcompletion'] = 'Auto completamento';
+$string['showcompletionconditions'] = 'Visualizza criteri di completamento attività';
+$string['showcompletionconditions_help'] = 'I criteri di completamento attività vengono sempre visualizzati nelle pagina delle attività. L\'impostazione consente di visualizzare i criteri di completamento anche nella pagina home del corso sotto ciascuna attività.';
 $string['showinguser'] = 'Stato utente';
 $string['unenrolingfromcourse'] = 'Disiscrizione dal corso';
 $string['unenrolment'] = 'Disiscrizione';

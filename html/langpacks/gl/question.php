@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'gl', version '3.8'.
+ * Strings for component 'question', language 'gl', version '3.11'.
  *
  * @package     question
  * @category    string
@@ -44,7 +44,7 @@ $string['behaviour'] = 'Comportamento';
 $string['behaviourbeingused'] = 'Comportamento utilizado: {$a}';
 $string['broken'] = 'Isto é unha «ligazón rachada», apunta cara a un ficheiro inexistente.';
 $string['byandon'] = 'por <em>{$a->user}</em> en <em>{$a->time}</em>';
-$string['cannotcopybackup'] = 'Non é posíbel copiar o ficheiro da copia de seguranza';
+$string['cannotcopybackup'] = 'Non é posíbel copiar o ficheiro da copia de seguridade';
 $string['cannotcreate'] = 'Non é posíbel crear unha nova entrada na táboa question_attempts';
 $string['cannotcreatepath'] = 'Non é posíbel crear a ruta: {$a}';
 $string['cannotdeletebehaviourinuse'] = 'Non pode eliminar o comportamento «{$a}». Úsase para intentos de preguntas.';
@@ -61,7 +61,7 @@ $string['cannotfindquestionfile'] = 'Non foi posíbel atopar o ficheiro de datos
 $string['cannotgetdsfordependent'] = 'Non se pode obter o conxunto de datos especificado para un conxunto de datos dependente da pregunta! (pregunta: {$a->id}, datasetitem: {$a->item})';
 $string['cannotgetdsforquestion'] = 'Non se pode obter o conxunto de datos especificado para unha pregunta calculada! (pregunta: {$a})';
 $string['cannothidequestion'] = 'Non foi quen de agochar a pregunta';
-$string['cannotimportformat'] = 'Mágoa, a importación deste formato aínda non está implementada!';
+$string['cannotimportformat'] = 'Vaites, a importación deste formato aínda non está incluída!';
 $string['cannotinsertquestion'] = 'Non foi posíbel inserir unha nova pregunta!';
 $string['cannotinsertquestioncatecontext'] = 'Non foi posíbel inserir a nova categoría da pregunta {$a->cat} por ter id de contexto anormal {$a->ctx}';
 $string['cannotloadquestion'] = 'Non foi posíbel cargar a pregunta';
@@ -156,21 +156,21 @@ $string['editingquestion'] = 'Edición dunha pregunta';
 $string['editquestion'] = 'Editar a pregunta';
 $string['editquestions'] = 'Edición de preguntas';
 $string['editthiscategory'] = 'Editar esta categoría';
-$string['emptyxml'] = 'Erro descoñecido - imsmanifest.xml está baleiro';
+$string['emptyxml'] = 'Erro descoñecido, imsmanifest.xml está baleiro';
 $string['enabled'] = 'Activado';
 $string['erroraccessingcontext'] = 'Non é posíbel acceder ao contexto';
 $string['errordeletingquestionsfromcategory'] = 'Produciuse un erro ao eliminar preguntas da categoría {$a}.';
-$string['errorduringpost'] = 'Produciuse un erro durante o post-procesamento!';
+$string['errorduringpost'] = 'Produciuse un erro durante o postprocesamento!';
 $string['errorduringpre'] = 'Produciuse un erro durante o pre-procesamento!';
 $string['errorduringproc'] = 'Produciuse un erro durante o procesamento!';
-$string['errorduringregrade'] = 'Non se pode recualificar a pregunta {$a->qid}, estabelecendo o estado {$a->stateid}.';
+$string['errorduringregrade'] = 'Non foi posíbel recualificar a pregunta {$a->qid}, estabelecendo o estado {$a->stateid}.';
 $string['errorfilecannotbecopied'] = 'Erro: non é posíbel copiar o ficheiro {$a}.';
 $string['errorfilecannotbemoved'] = 'Erro: non é posíbel mover o ficheiro {$a}.';
 $string['errorfileschanged'] = 'Erro: os ficheiros están ligados a preguntas que cambiaron dende que se presentou o formulario.';
 $string['erroritemappearsmorethanoncewithdifferentweight'] = 'A pregunta ({$a}) aparece máis dunha vez con diferentes ponderacións en diferentes posición da proba. Actualmente isto no está admitido no informe de estatísticas e pode facer que as estatísticas para esta pregunta non sexan fiábeis.';
 $string['errormanualgradeoutofrange'] = 'A cualificación {$a->grade} non está entre 0 e {$a->maxgrade} para a pregunta {$a->name}. A puntuación e o comentario non se gardaron.';
 $string['errormovingquestions'] = 'Produciuse un erro ao mover preguntas con estes id {$a}.';
-$string['errorpostprocess'] = 'Produciuse un erro durante o post-procesamento!';
+$string['errorpostprocess'] = 'Produciuse un erro durante o postprocesamento!';
 $string['errorpreprocess'] = 'Produciuse un erro durante o pre-procesamento!';
 $string['errorprocess'] = 'Produciuse un erro durante o procesamento!';
 $string['errorprocessingresponses'] = 'Produciuse un erro ao procesar as súas respostas ({$a}). Prema en continuar para volver á páxina onde estivo e intentalo outra vez.';
@@ -194,11 +194,11 @@ $string['exportasxml'] = 'Exportar como XML de Moodle';
 $string['exportcategory'] = 'Exportar categoría';
 $string['exportcategory_help'] = 'Este axuste determina a categoría da que se tomarán as preguntas para exportar.
 
-Certos formatos de importación, tales como GIFT e Moodle XML, permiten que se inclúan a categoría e os datos de contexto no ficheiro de exportación, activándoos para (opcionalmente) seren recreados ou importados. De se requirir, as caixas de selección apropiadas deberían ser marcadas.';
+Certos formatos de importación, tales como GIFT e XML de Moodle, permiten que se inclúan a categoría e os datos de contexto no ficheiro de exportación, activándoos para (opcionalmente) ser recreados ou importados. De se requirir, as caixas de selección apropiadas deberían ser marcadas.';
 $string['exporterror'] = 'Producíronse erros na exportación!';
 $string['exportfilename'] = 'preguntas';
 $string['exportnameformat'] = '%d/%m/%Y-%H:%M';
-$string['exportonequestion'] = 'Descargar esta pregunta no formato Moodle XML';
+$string['exportonequestion'] = 'Descargar esta pregunta no formato XML de Moodle';
 $string['exportquestions'] = 'Exportar preguntas no ficheiro';
 $string['exportquestions_help'] = 'Esta función activa a exportación dunha categoría completa (e calquera subcategoría) de preguntas no ficheiro. Note que, consonte o formato de ficheiro seleccionado, algúns datos de preguntas e certos tipos de preguntas pode ser que non se exporten.';
 $string['exportquestions_link'] = 'question/export';
@@ -217,7 +217,7 @@ $string['flagthisquestion'] = 'Marcar esta pregunta';
 $string['formquestionnotinids'] = 'Formulario contido en pregunta que non está nos id de preguntas';
 $string['fractionsnomax'] = 'Unha das respostas debería ter unha puntuación de 100% de modo que sexa posíbel obter puntuacións completas nesta pregunta.';
 $string['generalfeedback'] = 'Comentarios xerais';
-$string['generalfeedback_help'] = 'Os comentarios xerais amósanselle ao alumno despois de eles completaren a pregunta. Ao contrario do comentario específico, que depende do tipo de pregunta e da resposta que o alumno dese, amósase o mesmo texto de comentario xeral a todos os alumnos.
+$string['generalfeedback_help'] = 'Os comentarios xerais amósanselle ao alumno após que eles completaren a pregunta. Ao contrario do comentario específico, que depende do tipo de pregunta e da resposta que o alumno dese, amósase o mesmo texto de comentario xeral a todos os alumnos.
 
 Pode usar o comentario xeral para darlles aos alumnos unha resposta totalmente traballada e quizais unha ligazón para obteren máis información que poidan usar se non comprenden as preguntas.';
 $string['getcategoryfromfile'] = 'Obter a categoría do ficheiro';
@@ -275,8 +275,8 @@ $string['manualgradeinvalidformat'] = 'Isto non é un número válido.';
 $string['manualgradeoutofrange'] = 'Esta cualificación está alén do intervalo correcto.';
 $string['manuallygraded'] = 'Cualificado manualmente {$a->mark} co comentario: {$a->comment}';
 $string['mark'] = 'Puntuación';
-$string['markedoutof'] = 'Puntuado fóra de';
-$string['markedoutofmax'] = 'Puntuado fóra de {$a}';
+$string['markedoutof'] = 'Puntuado sobre';
+$string['markedoutofmax'] = 'Puntuado sobre {$a}';
 $string['markoutofmax'] = 'Puntuación: {$a->mark} sobre {$a->max}';
 $string['marks'] = 'Puntuacións';
 $string['matchgrades'] = 'Coincidir cualificacións';
@@ -307,7 +307,7 @@ $string['movingquestionsnofiles'] = 'Confirma que quere mover as pregunta(s) {$a
 $string['needtochoosecat'] = 'É necesario escoller unha categoría a onde mover esta pregunta ou prema «Cancelar».';
 $string['nocate'] = 'Non hai tal categoría {$a}!';
 $string['nopermissionadd'] = 'Non ten permiso para engadir preguntas aquí.';
-$string['nopermissionmove'] = 'Non ten permiso para mover preguntas desde aquí. Debe gardar a pregunta nesta categoría ou gardala como unha pregunta nova.';
+$string['nopermissionmove'] = 'Non ten permiso para mover preguntas dende aquí. Debe gardar a pregunta nesta categoría ou gardala como unha pregunta nova.';
 $string['noprobs'] = 'Non se atoparon problemas na súa base de datos de preguntas.';
 $string['noquestions'] = 'Non se atoparon preguntas que poidan exportarse. Asegúrese de ter seleccionada unha categoría que exportar que conteña as preguntas.';
 $string['noquestionsinfile'] = 'Non hai preguntas no ficheiro de importación';
@@ -384,7 +384,7 @@ $string['privacy:metadata:link:qtype'] = 'O subsistema de preguntas interactúa 
 $string['published'] = 'compartido';
 $string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = '<a href="{$a->qurl}">A pregunta «{$a->name}» ({$a->qtype})</a> está nesta categoría mais tamén se usa na <a href="{$a->qurl}">proba «{$a->quizname}»</a> destoutro curso «{$a->coursename}».';
-$string['questionbank'] = 'Banco da pregunta';
+$string['questionbank'] = 'Banco de preguntas';
 $string['questionbehaviouradminsetting'] = 'Axustes do comportamento da pregunta';
 $string['questionbehavioursdisabled'] = 'Comportamentos da pregunta que desactivar';
 $string['questionbehavioursdisabledexplained'] = 'Introducir unha lista separada por comas de comportamentos que non queira que aparezan no menú despregábel.';
@@ -399,10 +399,10 @@ $string['questionname'] = 'Nome da pregunta';
 $string['questionnamecopy'] = '{$a} (copia)';
 $string['questionno'] = 'Pregunta {$a}';
 $string['questionpreviewdefaults'] = 'Axustes predeterminados da vista previa da pregunta';
-$string['questionpreviewdefaults_desc'] = 'Estas configuracións predeterminadas úsanse cando un usuario fai unha vista previa por primeira vez dunha pregunta no banco de preguntas. Unha vez que un usuario teña feito a vista previa dunha pregunta, gárdanse a súas preferencias persoais como preferencias do usuario.';
+$string['questionpreviewdefaults_desc'] = 'Estes valores predeterminados úsanse cando un usuario fai unha vista previa por primeira vez dunha pregunta no banco de preguntas. Unha vez que un usuario teña feito a vista previa dunha pregunta, gárdanse a súas preferencias persoais como preferencias do usuario.';
 $string['questions'] = 'Preguntas';
 $string['questionsaveerror'] = 'Producíronse erros durante o proceso de gardar a pregunta - ({$a})';
-$string['questionsinuse'] = '(* As preguntas marcadas cun asterisco xa se usan nalgunhas probas. Estas preguntas non se eliminarán destas probas, soamente da lista da categoría.)';
+$string['questionsinuse'] = '(* As preguntas marcadas cun asterisco empréganse nalgún lugar, por exemplo nunha proba. Por iso, se continúa, estas preguntas non se eliminarán realmente, só quedarán agochadas.)';
 $string['questionsmovedto'] = 'As preguntas que aínda se usan que se moveron a «{$a}» na categoría pai do curso.';
 $string['questionsrescuedfrom'] = 'As preguntas gardadas dende o contexto {$a}.';
 $string['questionsrescuedfrominfo'] = 'Estas preguntas (algunha das cales poden estar agochadas) gardáronse cando se eliminou o contexto {$a} porque aínda se usan nalgunhas probas ou outras actividades.';
@@ -473,7 +473,7 @@ $string['unknownquestioncatregory'] = 'Categoría de pregunta descoñecida: {$a}
 $string['unknownquestiontype'] = 'Tipo de pregunta descoñecida: {$a}.';
 $string['unknowntolerance'] = 'Tipo de tolerancia descoñecida {$a}';
 $string['unpublished'] = 'descompartido';
-$string['unusedcategorydeleted'] = 'Esta categoría eliminouse porque, despois de eliminar o curso, as súas preguntas non se usaron máis.';
+$string['unusedcategorydeleted'] = 'Esta categoría eliminouse porque, após eliminar o curso, as súas preguntas non se usaron máis.';
 $string['updatedisplayoptions'] = 'Actualizar as opcións de presentación';
 $string['upgradeproblemcategoryloop'] = 'Detectouse un problema ao actualizar as categorías de preguntas. Hai un bucle na árbore de categorías. Os id das categoría afectadas son {$a}.';
 $string['upgradeproblemcouldnotupdatecategory'] = 'Non foi posíbel actualizar a categoría da pregunta {$a->name} ({$a->id}).';

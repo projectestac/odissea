@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'eu', version '3.8'.
+ * Strings for component 'tool_lp', language 'eu', version '3.11'.
  *
  * @package     tool_lp
  * @category    string
@@ -78,7 +78,7 @@ $string['configurescale'] = 'Konfiguratu eskalak';
 $string['coursecompetencies'] = 'Ikastaroko konpetentziak';
 $string['coursecompetencyratingsarenotpushedtouserplans'] = 'Ikastaro honetako konpetentzien kalifikazioek ez dute ikasketa-planean eragiten.';
 $string['coursecompetencyratingsarepushedtouserplans'] = 'Ikastaro honetan konpetentzien kalifikazioek ikasketa-planak berehala eguneratzen dituzte.';
-$string['coursecompetencyratingsquestion'] = 'Konpetentzia bat kalifikatzen denean, kalifikazioak ikasketa-planeko konpetentzia eguneratzen du edo ikastaroan bakarrik dauka eragina?';
+$string['coursecompetencyratingsquestion'] = 'Konpetentzia bat kalifikatzen denean, kalifikazioak ikasketa-planeko konpetentzia eguneratzen du edo soilik ikastaroan dauka eragina?';
 $string['coursesusingthiscompetency'] = 'Konpetentzia honetara estekatutako ikastaroak';
 $string['coveragesummary'] = '{$a->competenciescount} konpetentziatik {$a->competenciescoveredcount} lantzen dira (% {$a->coveragepercentage})';
 $string['createlearningplans'] = 'Sortu ikasketa-planak';
@@ -138,8 +138,8 @@ $string['move'] = 'Mugitu';
 $string['movecompetency'] = 'Mugitu konpetentzia';
 $string['movecompetencyafter'] = 'Mugitu konpetentzia \'{$a}\'-(r)en ondorengora.';
 $string['movecompetencyframework'] = 'Mugitu konpetentzia-markoa';
-$string['movecompetencytochildofselfwillresetrules'] = 'Konpetentzia mugitzeak bere baitako arauak ezabatuko ditu, baita goragoko eta helburukoak ere. Jarraitu nahi duzu?';
-$string['movecompetencywillresetrules'] = 'Konpetentzia mugitzeak goragoko eta helburuko arauak ezabatuko ditu. Jarraitu nahi duzu?';
+$string['movecompetencytochildofselfwillresetrules'] = 'Konpetentzia mugitzeak bere baitako arauak ezabatuko ditu, baita goragoko eta helmugakoak ere. Jarraitu nahi duzu?';
+$string['movecompetencywillresetrules'] = 'Konpetentzia mugitzeak goragoko eta helmugako arauak ezabatuko ditu. Jarraitu nahi duzu?';
 $string['moveframeworkafter'] = 'Mugitu konpetentzia-markoa \'{$a}\'-(r)en ondorengora.';
 $string['movetonewparent'] = 'Mugitu';
 $string['myplans'] = 'Nire ikasketa-planak';

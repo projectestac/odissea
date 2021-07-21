@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'el', version '3.8'.
+ * Strings for component 'editor', language 'el', version '3.11'.
  *
  * @package     editor
  * @category    string
@@ -48,7 +48,7 @@ $string['chooseicon'] = 'Επιλέξτε εικονίδιο για να εισ�
 $string['close'] = 'Κλείσιμο';
 $string['closeafterreplace'] = 'Κλείσιμο μετά την αντικατάσταση';
 $string['cols'] = 'Στήλες';
-$string['configeditorplugins'] = 'Παρακαλούμε επιλέξτε τα πρόσθετα επεξεργαστή κειμένου που θέλετε να χρησιμοποιήσετε και κατατάξτε τα σε προτεινόμενη σειρά.';
+$string['configeditorplugins'] = 'Παρακαλούμε επιλέξτε τα πρόσθετα επεξεργαστή κειμένου που θέλετε να χρησιμοποιήσετε και κατατάξτε τα σε σειρά προτίμησης.';
 $string['copy'] = 'Αντιγραφή επιλογής';
 $string['createanchor'] = 'Δημιουργία άγκυρας';
 $string['createfolder'] = 'Δημιουργία φακέλου';

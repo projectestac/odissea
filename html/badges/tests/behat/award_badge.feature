@@ -25,7 +25,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Course Badge 1 |
       | Description | Course badge 1 description |
-      | issuername | Tester of course badge |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Manual issue by role"
@@ -43,7 +42,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Course Badge 2 |
       | Description | Course badge 2 description |
-      | issuername | Tester of course badge |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     # Set "course badge 1" as criteria
@@ -102,8 +100,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Profile Badge |
       | Description | Test badge description |
-      | issuername | Test Badge Site |
-      | issuercontact | testuser@example.com |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Profile completion"
@@ -140,7 +136,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Site Badge |
       | Description | Site badge description |
-      | issuername | Tester of site badge |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Manual issue by role"
@@ -183,7 +178,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Course Badge |
       | Description | Course badge description |
-      | issuername | Tester of course badge |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Manual issue by role"
@@ -235,7 +229,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Course Badge |
       | Description | Course badge description |
-      | issuername | Tester of course badge |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Activity completion"
@@ -249,7 +242,7 @@ Feature: Award badges
     And I click on "Course 1" "link" in the "region-main" "region"
     Then I should not see "badges"
     And I am on "Course 1" course homepage
-    And I click on "Not completed: Test assignment name" "icon"
+    And I toggle the manual completion state of "Test assignment name"
     And I follow "Profile" in the user menu
     And I click on "Course 1" "link" in the "region-main" "region"
     Then I should see "Course Badge"
@@ -290,7 +283,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Course Badge |
       | Description | Course badge description |
-      | issuername | Tester of course badge |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Course completion"
@@ -304,7 +296,7 @@ Feature: Award badges
     And I click on "Course 1" "link" in the "region-main" "region"
     Then I should not see "badges"
     And I am on "Course 1" course homepage
-    And I click on "Not completed: Test assignment name" "icon"
+    And I toggle the manual completion state of "Test assignment name"
     And I log out
     # Completion cron won't mark the whole course completed unless the
     # individual criteria was marked completed more than a second ago. So
@@ -340,7 +332,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Course Badge 1 |
       | Description | Course badge description |
-      | issuername | Tester of course badge |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Manual issue by role"
@@ -366,7 +357,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Course Badge 2 |
       | Description | Course badge description |
-      | issuername | Tester of course badge |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Manual issue by role"
@@ -423,7 +413,6 @@ Feature: Award badges
     And I set the following fields to these values:
       | Name | Course Badge |
       | Description | Course badge description |
-      | issuername | Tester of course badge |
     And I upload "badges/tests/behat/badge.png" file to "Image" filemanager
     And I press "Create badge"
     And I set the field "type" to "Manual issue by role"

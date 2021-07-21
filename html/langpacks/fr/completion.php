@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'fr', version '3.8'.
+ * Strings for component 'completion', language 'fr', version '3.11'.
  *
  * @package     completion
  * @category    string
@@ -55,6 +55,7 @@ $string['bulkcompletiontracking_help'] = '<strong>Aucun :</strong> ne pas indiq
 $string['checkactivity'] = 'Case à cocher pour l\'activité/ressource : {$a}';
 $string['checkall'] = 'Cocher ou décocher toutes les activités et ressources';
 $string['checkallsection'] = 'Cocher ou décocher toutes les activités et ressources de la section suivante : {$a}';
+$string['completeactivity'] = 'Terminer l\'activité';
 $string['completed'] = 'Terminé';
 $string['completedunlocked'] = 'Options d\'achèvement déverrouillées';
 $string['completedunlockedtext'] = 'Lors de l\'enregistrement, l\'état d\'achèvement des activités de tous les participants sera supprimé. Si ce n\'est pas ce que vous voulez, n\'enregistrez pas.';
@@ -122,6 +123,7 @@ $string['courseaggregation_any'] = 'UN des cours sélectionnés doit être achev
 $string['coursealreadycompleted'] = 'Vous avez déjà terminé ce cours';
 $string['coursecomplete'] = 'Cours terminé';
 $string['coursecompleted'] = 'Cours terminé';
+$string['coursecompletedmessage'] = '<p>Félicitations !</p><p>Vous avez terminé le cours <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Achèvement de cours';
 $string['coursecompletioncondition'] = 'Condition : {$a}';
 $string['coursegrade'] = 'Note du cours';
@@ -140,6 +142,8 @@ $string['defaultcompletionupdated'] = 'Modifications enregistrées';
 $string['deletecompletiondata'] = 'Supprimer les données d\'achèvement';
 $string['dependencies'] = 'Dépendances';
 $string['dependenciescompleted'] = 'Achèvement d\'autres cours';
+$string['detail_desc:receivegrade'] = 'Recevoir une note';
+$string['detail_desc:view'] = 'Consulter';
 $string['editcoursecompletionsettings'] = 'Modifier les réglages d\'achèvement du cours';
 $string['enablecompletion'] = 'Activer le suivi de l\'achèvement des activités';
 $string['enablecompletion_help'] = 'Si ce réglage est activé, des conditions d\'achèvement peuvent être définies dans les réglages des activités et/ou dans les conditions d\'achèvement de cours. Il est recommandé d\'activer ce réglage afin que le tableau de bord de progression du cours puisse afficher des données significatives.';
@@ -218,6 +222,8 @@ $string['seedetails'] = 'Voir les détails';
 $string['select'] = 'Sélectionner';
 $string['self'] = 'Soi-même';
 $string['selfcompletion'] = 'Auto achèvement';
+$string['showcompletionconditions'] = 'Afficher les conditions d\'achèvement des activités';
+$string['showcompletionconditions_help'] = 'Les conditions d\'achèvement d\'une activité sont toujours affichées dans la page de l\'activité. Ce réglage détermine si les conditions sont également affichées au-dessous de chaque activité sur la page de cours.';
 $string['showinguser'] = 'Affichage de l\'utilisateur';
 $string['unenrolingfromcourse'] = 'Désinscription du cours';
 $string['unenrolment'] = 'Désinscription';

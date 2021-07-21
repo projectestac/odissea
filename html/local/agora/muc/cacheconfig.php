@@ -1,8 +1,6 @@
 <?php defined('MOODLE_INTERNAL') || die();
 
 global $CFG;
-// If $CFG->agora_muc_path is not set, use default cache directories
-$path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->agora_muc_path . '/cache' : '';
 
  $configuration = array (
   'siteidentifier' => $CFG->siteidentifier,
@@ -14,7 +12,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'plugin' => 'file',
       'configuration' => 
       array (
-        'path' => $path,
+        'path' => $CFG->cachedir ? : '',
         'autocreate' => true,
       ),
       'features' => 14,
@@ -72,7 +70,6 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'default' => false,
       'lock' => 'cachelock_file_default',
     ),
-/*
     'redisservers' =>
     array (
       'name' => 'redisservers',
@@ -89,14 +86,14 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'mappingsonly' => false,
       'class' => 'cachestore_redis',
       'default' => false,
+      'lock' => 'cachelock_file_default',
     ),
-*/
   ),
   'modemappings' => 
   array (
     0 => 
     array (
-      'store' => 'memcachedservers',
+      'store' => 'redisservers',
       'mode' => 1,
       'sort' => 0,
     ),
@@ -127,6 +124,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'string',
       'selectedsharingoption' => 1,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/langmenu' => 
     array (
@@ -139,6 +137,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'langmenu',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/databasemeta' => 
     array (
@@ -154,6 +153,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'databasemeta',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/eventinvalidation' => 
     array (
@@ -165,6 +165,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'eventinvalidation',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/questiondata' => 
     array (
@@ -177,6 +178,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'questiondata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/htmlpurifier' => 
     array (
@@ -186,6 +188,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'htmlpurifier',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/config' => 
     array (
@@ -196,6 +199,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'config',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/groupdata' => 
     array (
@@ -208,6 +212,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'groupdata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/calendar_subscriptions' => 
     array (
@@ -219,6 +224,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'calendar_subscriptions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/calendar_categories' => 
     array (
@@ -235,6 +241,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'calendar_categories',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/capabilities' => 
     array (
@@ -248,6 +255,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'capabilities',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/yuimodules' => 
     array (
@@ -256,6 +264,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'yuimodules',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/observers' => 
     array (
@@ -268,6 +277,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'observers',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/plugin_manager' => 
     array (
@@ -278,6 +288,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'plugin_manager',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/coursecattree' => 
     array (
@@ -291,6 +302,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'coursecattree',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/coursecat' => 
     array (
@@ -305,6 +317,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'coursecat',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/coursecatrecords' => 
     array (
@@ -318,6 +331,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'coursecatrecords',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/coursecontacts' => 
     array (
@@ -329,6 +343,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'coursecontacts',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/repositories' => 
     array (
@@ -337,6 +352,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'repositories',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/externalbadges' => 
     array (
@@ -347,6 +363,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'externalbadges',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/coursemodinfo' => 
     array (
@@ -357,6 +374,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'coursemodinfo',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/userselections' => 
     array (
@@ -367,6 +385,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'userselections',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/completion' => 
     array (
@@ -380,6 +399,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'completion',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/coursecompletion' => 
     array (
@@ -393,6 +413,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'coursecompletion',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/navigation_expandcourse' => 
     array (
@@ -403,6 +424,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'navigation_expandcourse',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/suspended_userids' => 
     array (
@@ -413,6 +435,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'suspended_userids',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/roledefs' => 
     array (
@@ -425,6 +448,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'roledefs',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/plugin_functions' => 
     array (
@@ -437,6 +461,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'plugin_functions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/tags' => 
     array (
@@ -447,6 +472,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'tags',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/grade_categories' => 
     array (
@@ -460,6 +486,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'grade_categories',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/temp_tables' => 
     array (
@@ -470,6 +497,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'temp_tables',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/tagindexbuilder' => 
     array (
@@ -487,6 +515,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'tagindexbuilder',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/contextwithinsights' => 
     array (
@@ -499,6 +528,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'contextwithinsights',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/message_processors_enabled' => 
     array (
@@ -511,6 +541,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'message_processors_enabled',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/message_time_last_message_between_users' => 
     array (
@@ -522,6 +553,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'message_time_last_message_between_users',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/fontawesomeiconmapping' => 
     array (
@@ -534,6 +566,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'fontawesomeiconmapping',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/postprocessedcss' => 
     array (
@@ -545,6 +578,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'postprocessedcss',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/user_group_groupings' => 
     array (
@@ -556,6 +590,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'user_group_groupings',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/presignup' => 
     array (
@@ -567,6 +602,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'presignup',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/modelfirstanalyses' => 
     array (
@@ -575,6 +611,9 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'simpledata' => true,
       'component' => 'core',
       'area' => 'modelfirstanalyses',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/portfolio_add_button_portfolio_instances' => 
     array (
@@ -583,6 +622,9 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'staticacceleration' => true,
       'component' => 'core',
       'area' => 'portfolio_add_button_portfolio_instances',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/course_user_dates' => 
     array (
@@ -592,6 +634,9 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'staticacceleration' => true,
       'component' => 'core',
       'area' => 'course_user_dates',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'core/calculablesinfo' => 
     array (
@@ -600,6 +645,84 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'simpledata' => false,
       'component' => 'core',
       'area' => 'calculablesinfo',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
+    ),
+    'core/user_course_content_items' => 
+    array (
+      'mode' => 4,
+      'simplekeys' => true,
+      'component' => 'core',
+      'area' => 'user_course_content_items',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
+    ),
+    'core/user_favourite_course_content_items' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'component' => 'core',
+      'area' => 'user_favourite_course_content_items',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'core/recommendation_favourite_course_content_items' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'component' => 'core',
+      'area' => 'recommendation_favourite_course_content_items',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'core/contentbank_enabled_extensions' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'component' => 'core',
+      'area' => 'contentbank_enabled_extensions',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'core/contentbank_context_extensions' => 
+    array (
+      'mode' => 4,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'component' => 'core',
+      'area' => 'contentbank_context_extensions',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
+    ),
+    'core/h5p_content_type_translations' => 
+    array (
+      'mode' => 1,
+      'simpledata' => true,
+      'component' => 'core',
+      'area' => 'h5p_content_type_translations',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'core/h5p_library_files' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'canuselocalstore' => true,
+      'component' => 'core',
+      'area' => 'h5p_library_files',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'core/grade_letters' => 
     array (
@@ -609,6 +732,57 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'staticaccelerationsize' => 100,
       'component' => 'core',
       'area' => 'grade_letters',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
+    ),
+    'core/license' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'component' => 'core',
+      'area' => 'license',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'core/gradesetting' => 
+    array (
+      'mode' => 4,
+      'simplekeys' => true,
+      'staticacceleration' => true,
+      'staticaccelerationsize' => 100,
+      'component' => 'core',
+      'area' => 'gradesetting',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
+    ),
+    'core/course_image' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'datasource' => '\\core_course\\cache\\course_image',
+      'component' => 'core',
+      'area' => 'course_image',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'availability_completion/previous_cache' => 
+    array (
+      'mode' => 4,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'component' => 'availability_completion',
+      'area' => 'previous_cache',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'availability_grade/scores' => 
     array (
@@ -620,6 +794,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'scores',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'availability_grade/items' => 
     array (
@@ -631,6 +806,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'items',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'qtype_wq/images' => 
     array (
@@ -639,6 +815,18 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'images',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'mod_assign/overrides' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'datasource' => '\\mod_assign\\cache\\overrides',
+      'component' => 'mod_assign',
+      'area' => 'overrides',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'mod_forum/forum_is_tracked' => 
     array (
@@ -648,6 +836,9 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'staticacceleration' => true,
       'component' => 'mod_forum',
       'area' => 'forum_is_tracked',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'mod_glossary/concepts' => 
     array (
@@ -660,6 +851,38 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'concepts',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'mod_lesson/overrides' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'datasource' => '\\mod_lesson\\cache\\overrides',
+      'component' => 'mod_lesson',
+      'area' => 'overrides',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'mod_lti/keyset' => 
+    array (
+      'mode' => 1,
+      'component' => 'mod_lti',
+      'area' => 'keyset',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'mod_quiz/overrides' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'datasource' => '\\mod_quiz\\cache\\overrides',
+      'component' => 'mod_quiz',
+      'area' => 'overrides',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'filter_wiris/images' => 
     array (
@@ -668,6 +891,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'images',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'filter_wiris/formulas' => 
     array (
@@ -676,6 +900,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'formulas',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'repository_googledocs/folder' => 
     array (
@@ -689,6 +914,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'folder',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'repository_onedrive/folder' => 
     array (
@@ -702,6 +928,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'folder',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'repository_skydrive/foldername' => 
     array (
@@ -710,6 +937,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'foldername',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'tool_dataprivacy/purpose' => 
     array (
@@ -722,6 +950,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'purpose',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'tool_dataprivacy/purpose_overrides' => 
     array (
@@ -734,6 +963,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'purpose_overrides',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'tool_dataprivacy/contextlevel' => 
     array (
@@ -746,6 +976,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'contextlevel',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'tool_mobile/plugininfo' => 
     array (
@@ -757,6 +988,18 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'plugininfo',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'tool_mobile/subscriptiondata' => 
+    array (
+      'mode' => 2,
+      'simplekeys' => true,
+      'simpledata' => false,
+      'component' => 'tool_mobile',
+      'area' => 'subscriptiondata',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'tool_monitor/eventsubscriptions' => 
     array (
@@ -769,6 +1012,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'eventsubscriptions',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'tool_policy/policy_optional' => 
     array (
@@ -777,6 +1021,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'policy_optional',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'tool_uploadcourse/helper' => 
     array (
@@ -785,6 +1030,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'helper',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 2,
     ),
     'tool_usertours/tourdata' => 
     array (
@@ -797,6 +1043,7 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'tourdata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
     'tool_usertours/stepdata' => 
     array (
@@ -809,40 +1056,47 @@ $path = (isset($CFG->agora_muc_path) && !empty($CFG->agora_muc_path)) ? $CFG->ag
       'area' => 'stepdata',
       'selectedsharingoption' => 2,
       'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'quizaccess_seb/quizsettings' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'component' => 'quizaccess_seb',
+      'area' => 'quizsettings',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'quizaccess_seb/config' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'component' => 'quizaccess_seb',
+      'area' => 'config',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
+    ),
+    'quizaccess_seb/configkey' => 
+    array (
+      'mode' => 1,
+      'simplekeys' => true,
+      'simpledata' => true,
+      'staticacceleration' => true,
+      'component' => 'quizaccess_seb',
+      'area' => 'configkey',
+      'selectedsharingoption' => 2,
+      'userinputsharingkey' => '',
+      'sharingoptions' => 15,
     ),
   ),
   'definitionmappings' => 
   array (
-    0 => 
-    array (
-      'store' => 'default_application',
-      'definition' => 'core/string',
-      'sort' => 1,
-    ),
-    1 =>
-    array (
-      'store' => 'default_application',
-      'definition' => 'core/coursemodinfo',
-      'sort' => 1,
-    ),
-    2 =>
-    array (
-      'store' => 'default_application',
-      'definition' => 'core/yuimodules',
-      'sort' => 1,
-    ),
-    3 =>
-    array (
-      'store' => 'default_application',
-      'definition' => 'core/fontawesomeiconmapping',
-      'sort' => 1,
-    ),
-    4 =>
-    array (
-      'store' => 'default_application',
-      'definition' => 'core/plugin_functions',
-      'sort' => 1,
-    ),
   ),
   'locks' => 
   array (

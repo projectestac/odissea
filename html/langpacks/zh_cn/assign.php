@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'zh_cn', version '3.8'.
+ * Strings for component 'assign', language 'zh_cn', version '3.11'.
  *
  * @package     assign
  * @category    string
@@ -174,7 +174,7 @@ $string['enabled'] = '已启用';
 $string['errornosubmissions'] = '没有可下载的作业';
 $string['errorquickgradingvsadvancedgrading'] = '未保存成绩，因为此作业当前正在使用高级评分方法';
 $string['errorrecordmodified'] = '未保存成绩，因为在您加载此页面之前有人修改了一条或多条记录。';
-$string['eventallsubmissionsdownloaded'] = '提交的作业已经全部下载';
+$string['eventallsubmissionsdownloaded'] = '所有作业均已下载。';
 $string['eventassessablesubmitted'] = '一个作业已提交。';
 $string['eventbatchsetmarkerallocationviewed'] = '批量设置批改人分配已查看';
 $string['eventbatchsetworkflowstateviewed'] = '批量设置工作流程状态已查看。';
@@ -348,8 +348,8 @@ $string['noclose'] = '没有关闭日期';
 $string['nofiles'] = '没有文件。';
 $string['nofilters'] = '没有过滤器';
 $string['nograde'] = '没有成绩。';
-$string['nolatesubmissions'] = '没有再收到迟交的作业';
-$string['nomoresubmissionsaccepted'] = '只允许已获准延期的参与人';
+$string['nolatesubmissions'] = '不接受迟交。 ‎';
+$string['nomoresubmissionsaccepted'] = '只允许获准延期的参与人';
 $string['none'] = '没有';
 $string['noonlinesubmissions'] = '此作业不需要您在线提交任何东西';
 $string['noopen'] = '没有开启日期';
@@ -494,8 +494,8 @@ $string['submissionnotcopiedinvalidstatus'] = '该作业未被复制，因为它
 $string['submissionnoteditable'] = '学生不能编辑此作业';
 $string['submissionnotready'] = '此作业还没有准备提交：';
 $string['submissionplugins'] = '提交插件';
-$string['submissionreceipthtml'] = '<p>您已经向“<i>{$a->assignment}</i>”提交了作业。</p>
-<p>您可以查看<a href="{$a->url}">作业</a>状态。</p>';
+$string['submissionreceipthtml'] = '<p>您已经提交了作业“<i>{$a->assignment}</i>”。</p>
+ <p>您可以看到您的<a href="{$a->url}">作业</a>状态。</p>';
 $string['submissionreceiptotherhtml'] = '您已经提交了作业“<i>{$a->assignment}</i>”。<br />
 您可以看到您的<a href="{$a->url}">作业</a>状态。';
 $string['submissionreceiptothersmall'] = '您已经提交了作业{$a->assignment}。';

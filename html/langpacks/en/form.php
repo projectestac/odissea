@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'en', version '3.8'.
+ * Strings for component 'form', language 'en', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -41,13 +41,15 @@ $string['err_minlength'] = 'You must enter at least {$a->format} characters here
 $string['err_nonzero'] = 'You must enter a number not starting with a 0 here.';
 $string['err_nopunctuation'] = 'You must enter no punctuation characters here.';
 $string['err_numeric'] = 'You must enter a number here.';
+$string['err_positiveint'] = 'You must enter a number that is greater than 0.';
 $string['err_rangelength'] = 'You must enter between {$a->format[0]} and {$a->format[1]} characters here.';
 $string['err_required'] = 'You must supply a value here.';
 $string['err_wrappingwhitespace'] = 'The value must not start or end with whitespace.';
-$string['err_wrongfileextension'] = 'Some files ({$a->wrongfiles}) cannot be uploaded. Only file types {$a->whitelist} are allowed.';
+$string['err_wrongfileextension'] = 'Some files ({$a->wrongfiles}) cannot be uploaded. Only file types {$a->allowlist} are allowed.';
 $string['filesofthesetypes'] = 'Accepted file types:';
 $string['filetypesany'] = 'All file types';
 $string['filetypesnotall'] = 'It is not allowed to select \'All file types\' here';
+$string['filetypesnotallowed'] = 'These file types are not allowed here: {$a}';
 $string['filetypesnotwhitelisted'] = 'These file types are not allowed here: {$a}';
 $string['filetypesothers'] = 'Other files';
 $string['filetypesunknown'] = 'Unknown file types: {$a}';
@@ -62,6 +64,7 @@ $string['mustbeoverriden'] = 'Abstract form_definition() method in class {$a} mu
 $string['newvaluefor'] = 'New value for {$a}';
 $string['nomethodforaddinghelpbutton'] = 'There is no method for adding a help button to form element {$a->name} (class {$a->classname})';
 $string['nonexistentformelements'] = 'Trying to add help buttons to non-existent form elements : {$a}';
+$string['nopermissionform'] = 'You don\'t have permission to access this form.';
 $string['noselection'] = 'No selection';
 $string['nosuggestions'] = 'No suggestions';
 $string['novalue'] = 'Nothing entered';
@@ -82,6 +85,7 @@ $string['showadvanced'] = 'Show advanced';
 $string['showless'] = 'Show less...';
 $string['showmore'] = 'Show more...';
 $string['somefieldsrequired'] = 'There are required fields in this form marked {$a}.';
+$string['suggestions'] = 'Suggestions';
 $string['time'] = 'Time';
 $string['timeunit'] = 'Time unit';
 $string['timing'] = 'Timing';

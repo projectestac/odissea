@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_monitor', language 'sv', version '3.8'.
+ * Strings for component 'tool_monitor', language 'sv', version '3.11'.
  *
  * @package     tool_monitor
  * @category    string
@@ -59,8 +59,8 @@ $string['inminutes'] = 'i minuter';
 $string['invalidmodule'] = 'Ogiltig modul';
 $string['manage'] = 'Hantera';
 $string['managerules'] = 'Övervakningsregler';
-$string['manageruleslink'] = 'Du kan hantera regler på {$a}-sidan.';
-$string['managesubscriptions'] = 'Hantera händelseövervakning';
+$string['manageruleslink'] = 'Du kan hantera regler på sidan för {$a}.';
+$string['managesubscriptions'] = 'Händelseövervakning';
 $string['managesubscriptionslink'] = 'Du kan skapa bevakningar på {$a}-sidan.';
 $string['messageprovider:notification'] = 'Notiser för bevakningar';
 $string['messagetemplate'] = 'Notis';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_skydrive', language 'ru', version '3.8'.
+ * Strings for component 'repository_skydrive', language 'ru', version '3.11'.
  *
  * @package     repository_skydrive
  * @category    string
@@ -31,5 +31,6 @@ $string['configplugin'] = 'Настройка Microsoft OneDrive (устарел
 $string['deprecatedwarning'] = 'Предупреждение: API, используемый этим плагином хранилища, устарел и он в конечном итоге перестанет работать. Используйте новое хранилище Microsoft OneDrive.';
 $string['oauthinfo'] = '<p> Для использования этого плагина необходимо зарегистрировать свой сайт <a href="https://account.live.com/developers/applications"> в Microsoft</a>.<p> В процессе регистрации Вам нужно будет ввести следующий URL-адрес в качестве «Домена перенаправления»:</p><p>{$a->callbackurl}</p> После регистрации Вам будет предоставлен идентификатор (ID) клиента и секретный ключ, который может быть введен здесь.</p>';
 $string['pluginname'] = 'Microsoft OneDrive (устарело)';
+$string['privacy:metadata'] = 'Плагин хранилище Microsoft OneDrive (устаревшее) не хранит никаких личных данных, но передает данные пользователя из Moodle в отдаленную систему.';
 $string['secret'] = 'Секретный ключ';
 $string['skydrive:view'] = 'Просматривать хранилище файлов «OneDrive»';

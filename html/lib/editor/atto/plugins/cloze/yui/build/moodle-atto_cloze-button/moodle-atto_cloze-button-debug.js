@@ -56,63 +56,86 @@ var CSS = {
 };
 var TEMPLATE = {
     FORM: '<div class="atto_cloze">' +
+             '<p class="ml-2">{{qtype}}</p>' +
              '<form class="atto_form">' +
-             '<p>{{qtype}}' +
-                 '<label for="{{elementid}}_mark">{{get_string "defaultmark" "question"}}</label>' +
-                 '<input id="{{elementid}}_mark" type="text" class="{{CSS.MARKS}}" value="{{marks}}" />' +
-                 '<img class="{{CSS.ADD}}" title="{{get_string "addmoreanswerblanks" "qtype_calculated"}}" src="' +
-                     M.util.image_url('t/add', 'core') + '">' +
-             '<div class="{{CSS.ANSWERS}}">' +
-             '<ol>{{#answerdata}}' +
-             '<li><div><div class="{{../CSS.LEFT}}">' +
-                 '<a class="{{../CSS.ADD}}" title="{{get_string "addmoreanswerblanks" "qtype_calculated"}}">' +
-                 '<img class="icon_smallicon" src="' +
+             '<div class="row ml-0">' +
+                '<div class="form-group">' +
+                     '<label for="{{elementid}}_mark">{{get_string "defaultmark" "question"}}</label>' +
+                     '<input id="{{elementid}}_mark" type="text" value="{{marks}}" ' +
+                     'class="{{CSS.MARKS}} form-control d-inline mx-1" />' +
+                     '<a class="{{CSS.ADD}}" title="{{get_string "addmoreanswerblanks" "qtype_calculated"}}">' +
+                     '<img class="icon_smallicon" src="' +
                      M.util.image_url('t/add', 'core') + '"></a>' +
-                 '<a class="{{../CSS.DELETE}}" title="{{get_string "delete" "core"}}">' +
-                 '<img class="icon_smallicon" src="' +
-                     M.util.image_url('t/delete', 'core') + '"></a>' +
-                 '<a class="{{../CSS.RAISE}}" title="{{get_string "up" "core"}}">' +
-                 '<img class="icon_smallicon" src="' +
-                     M.util.image_url('t/up', 'core') + '"></a>' +
-                 '<a class="{{../CSS.LOWER}}" title="{{get_string "down" "core"}}">' +
-                 '<img class="icon_smallicon" src="' +
-                     M.util.image_url('t/down', 'core') + '"></a>' +
-                 '<br /><label id="{{id}}_grade">{{get_string "grade" "core"}}</label>' +
-                 '<select id="{{id}}_grade" value="{{fraction}}" class="{{../CSS.FRACTION}}" selected>' +
-                     '{{#if fraction}}' +
-                         '<option value="{{../fraction}}">{{../fraction}}%</option>' +
-                     '{{/if}}' +
-                     '<option value="">{{get_string "incorrect" "question"}}</option>' +
-                     '{{#../fractions}}' +
-                     '<option value="{{fraction}}">{{fraction}}%</option>' +
-                     '{{/../fractions}}' +
-                 '</select></div>' +
-                 '<div class="{{../CSS.RIGHT}}">' +
-                 '<label for="{{id}}_answer">{{get_string "answer" "question"}}</label>' +
-                 '<input id="{{id}}_answer" type="text" class="{{../CSS.ANSWER}}" value="{{answer}}" />' +
-                 '{{#if ../numerical}}' +
-                 '<label for="{{id}}_tolerance">{{{get_string "tolerance" "qtype_calculated"}}}</label>' +
-                 '<input id="{{id}}_tolerance" type="text" class="{{../../CSS.TOLERANCE}}" value="{{tolerance}}" />' +
-                 '{{/if}}' +
-                 '<label for="{{id}}_feedback">{{get_string "feedback" "question"}}</label>' +
-                 '<input id="{{id}}_feedback" type="text" class="{{../CSS.FEEDBACK}}" value="{{feedback}}" />' +
-             '</div></div></li>' +
+                '</div>' +
+             '</div>' +
+             '<div class="{{CSS.ANSWERS}} mb-3">' +
+             '<ol class="pl-3">{{#answerdata}}' +
+             '<li class="mt-3"><div class="row ml-0">' +
+                '<div class="{{../CSS.LEFT}} form-group">' +
+                    '<label for="{{id}}_answer">{{get_string "answer" "question"}}</label>' +
+                    '<input id="{{id}}_answer" type="text" value="{{answer}}" ' +
+                    'class="{{../CSS.ANSWER}} form-control d-inline mx-2" />' +
+                '</div>' +
+                '<div class="{{../CSS.LEFT}} form-group">' +
+                     '<a class="{{../CSS.ADD}}" title="{{get_string "addmoreanswerblanks" "qtype_calculated"}}">' +
+                     '<img class="icon_smallicon" src="' +
+                         M.util.image_url('t/add', 'core') + '"></a>' +
+                     '<a class="{{../CSS.DELETE}}" title="{{get_string "delete" "core"}}">' +
+                     '<img class="icon_smallicon" src="' +
+                         M.util.image_url('t/delete', 'core') + '"></a>' +
+                     '<a class="{{../CSS.RAISE}}" title="{{get_string "up" "core"}}">' +
+                     '<img class="icon_smallicon" src="' +
+                         M.util.image_url('t/up', 'core') + '"></a>' +
+                     '<a class="{{../CSS.LOWER}}" title="{{get_string "down" "core"}}">' +
+                     '<img class="icon_smallicon" src="' +
+                         M.util.image_url('t/down', 'core') + '"></a>' +
+                '</div>' +
+             '</div>' +
+             '{{#if ../numerical}}' +
+             '<div class="row">' +
+                 '<div class="{{../CSS.RIGHT}} form-group">' +
+                     '<label for="{{id}}_tolerance">{{{get_string "tolerance" "qtype_calculated"}}}</label>' +
+                     '<input id="{{id}}_tolerance" type="text" value="{{tolerance}}" ' +
+                             'class="{{../../CSS.TOLERANCE}} form-control d-inline mx-2" />' +
+                '</div>' +
+             '</div>' +
+             '{{/if}}' +
+             '<div class="row">' +
+                '<div class="{{../CSS.RIGHT}} form-group">' +
+                    '<label for="{{id}}_feedback">{{get_string "feedback" "question"}}</label>' +
+                    '<input id="{{id}}_feedback" type="text" value="{{feedback}}" ' +
+                            'class="{{../CSS.FEEDBACK}} form-control d-inline mx-2" />' +
+                '</div>' +
+                '<div class="{{../CSS.RIGHT}} form-group">' +
+                    '<label id="{{id}}_grade">{{get_string "grade" "grades"}}</label>' +
+                    '<select id="{{id}}_grade" value="{{fraction}}" class="{{../CSS.FRACTION}} custom-select mx-2" selected>' +
+                    '{{#if fraction}}' +
+                    '<option value="{{../fraction}}">{{../fraction}}%</option>' +
+                    '{{/if}}' +
+                    '<option value="">{{get_string "incorrect" "question"}}</option>' +
+                    '{{#../fractions}}' +
+                    '<option value="{{fraction}}">{{fraction}}%</option>' +
+                    '{{/../fractions}}' +
+                    '</select>' +
+                '</div>' +
+             '</div></li>' +
              '{{/answerdata}}</ol></div>' +
-                 '<p><button type="submit" class="{{CSS.SUBMIT}}" ' +
+                 '<p class="mb-0"><button type="submit" class="{{CSS.SUBMIT}} btn btn-primary mr-1" ' +
                      'title="{{get_string "common:insert" "editor_tinymce"}}">' +
                      '{{get_string "common:insert" "editor_tinymce"}}</button>' +
-                 '<button type="submit" class="{{CSS.CANCEL}}">{{get_string "cancel" "core"}}</button></p>' +
+                 '<button type="submit" class="{{CSS.CANCEL}} btn btn-secondary">{{get_string "cancel" "core"}}</button></p>' +
              '</form>' +
           '</div>',
     OUTPUT: '&#123;{{marks}}:{{qtype}}:{{#answerdata}}~{{#if fraction}}%{{../fraction}}%{{/if}}{{answer}}' +
           '{{#if tolerance}}:{{tolerance}}{{/if}}' +
           '{{#if feedback}}#{{feedback}}{{/if}}{{/answerdata}}&#125;',
-    TYPE: '<div class="atto_cloze">{{get_string "chooseqtypetoadd" "question"}}' +
+    TYPE: '<div class="atto_cloze mt-0 mx-2 mb-2">' +
+             '<p>{{get_string "chooseqtypetoadd" "question"}}</p>' +
              '<form ="atto_form">' +
-             '<div class="{{CSS.TYPE}}">' +
+             '<div class="{{CSS.TYPE}} form-check">' +
              '{{#types}}' +
              '<div class="option">' +
-                 '<input name="qtype" id="qtype_qtype_{{type}}" value="{{type}}" type="radio">' +
+                 '<input name="qtype" id="qtype_qtype_{{type}}" value="{{type}}" type="radio" class="form-check-input">' +
                  '<label for="qtype_qtype_{{type}}">' +
                  '<span class="typename">{{type}}</span>' +
                  '<span class="{{../CSS.SUMMARY}}"><h6>{{name}}</h6><p>{{summary}}</p>' +
@@ -122,11 +145,11 @@ var TEMPLATE = {
                  '</span>' +
                  '</label></div>' +
              '{{/types}}</div>' +
-                 '<p><button type="submit" class="{{CSS.SUBMIT}}" ' +
+                 '<p class="mb-0"><button type="submit" class="{{CSS.SUBMIT}} btn btn-primary mr-1" ' +
                      'title="{{get_string "add" "core"}}">{{get_string "add" "core"}}</button>' +
-                 '{{#qtype}}<button type="submit" class="{{../CSS.DUPLICATE}}">' +
+                 '{{#qtype}}<button type="submit" class="{{../CSS.DUPLICATE}} btn btn-secondary mr-1">' +
                      '{{get_string "duplicate" "core"}}</button>{{/qtype}}' +
-                 '<button type="submit" class="{{CSS.CANCEL}}">{{get_string "cancel" "core"}}</button></p>' +
+                 '<button type="submit" class="{{CSS.CANCEL}} btn btn-secondary">{{get_string "cancel" "core"}}</button></p>' +
           '</form></div>'
     },
     FRACTIONS = [{fraction: 100},

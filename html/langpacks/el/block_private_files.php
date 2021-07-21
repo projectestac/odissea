@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_private_files', language 'el', version '3.8'.
+ * Strings for component 'block_private_files', language 'el', version '3.11'.
  *
  * @package     block_private_files
  * @category    string
@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Προσωπικά αρχεία';
 $string['privacy:metadata'] = 'Το μπλοκ Ιδιωτικά αρχεία παρέχει μόνο μια προβολή και ένα σύνδεσμο προς τα ιδιωτικά αρχεία του χρήστη.';
-$string['private_files:addinstance'] = 'Προσθήκη νέου μπλοκ προσωπικά αρχεία';
-$string['private_files:myaddinstance'] = 'Προσθήκη νέου μπλοκ προσωπικά αρχεία στο Ταμπλό';
+$string['private_files:addinstance'] = 'Προσθήκη νέου μπλοκ Ιδιωτικά αρχεία';
+$string['private_files:myaddinstance'] = 'Προσθήκη νέου μπλοκ Ιδιωτικά αρχεία στο Ταμπλό';
 $string['privatefiles'] = 'Προσωπικά αρχεία';

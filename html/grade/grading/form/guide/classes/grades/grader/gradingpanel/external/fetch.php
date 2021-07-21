@@ -100,8 +100,8 @@ class fetch extends external_api {
      * @since Moodle 3.8
      */
     public static function execute(string $component, int $contextid, string $itemname, int $gradeduserid): array {
-        global $USER;
-
+        global $CFG, $USER;
+        require_once("{$CFG->libdir}/gradelib.php");
         [
             'component' => $component,
             'contextid' => $contextid,
@@ -156,11 +156,18 @@ class fetch extends external_api {
         $hasgrade = $gradeitem->user_has_grade($gradeduser);
         $grade = $gradeitem->get_grade_for_user($gradeduser, $USER);
         $instance = $gradeitem->get_advanced_grading_instance($USER, $grade);
+        if (!$instance) {
+            throw new moodle_exception('error:gradingunavailable', 'grading');
+        }
         $controller = $instance->get_controller();
         $definition = $controller->get_definition();
         $fillings = $instance->get_guide_filling();
         $context = $controller->get_context();
         $definitionid = (int) $definition->id;
+
+        // Set up some items we need to return on other interfaces.
+        $gradegrade = \grade_grade::fetch(['itemid' => $gradeitem->get_grade_item()->id, 'userid' => $gradeduser->id]);
+        $gradername = $gradegrade ? fullname(\core_user::get_user($gradegrade->usermodified)) : null;
         $maxgrade = max(array_keys($controller->get_grade_range()));
 
         $criterion = [];
@@ -232,6 +239,7 @@ class fetch extends external_api {
                 'comments' => $comments,
                 'usergrade' => $grade->grade,
                 'maxgrade' => $maxgrade,
+                'gradedby' => $gradername,
                 'timecreated' => $grade->timecreated,
                 'timemodified' => $grade->timemodified,
             ],
@@ -274,6 +282,7 @@ class fetch extends external_api {
                 ),
                 'usergrade' => new external_value(PARAM_RAW, 'Current user grade'),
                 'maxgrade' => new external_value(PARAM_RAW, 'Max possible grade'),
+                'gradedby' => new external_value(PARAM_RAW, 'The assumed grader of this grading instance'),
                 'timecreated' => new external_value(PARAM_INT, 'The time that the grade was created'),
                 'timemodified' => new external_value(PARAM_INT, 'The time that the grade was last updated'),
             ]),

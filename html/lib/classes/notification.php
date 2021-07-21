@@ -58,7 +58,8 @@ class notification {
     public static function add($message, $level = null) {
         global $PAGE, $SESSION;
 
-        if ($PAGE && $PAGE->state === \moodle_page::STATE_IN_BODY) {
+        if ($PAGE && ($PAGE->state === \moodle_page::STATE_IN_BODY
+           || $PAGE->state === \moodle_page::STATE_DONE)) {
             // Currently in the page body - just render and exit immediately.
             // We insert some code to immediately insert this into the user-notifications created by the header.
             $id = uniqid();
@@ -94,6 +95,51 @@ class notification {
             'message'   => $message,
             'type'      => $level,
         );
+    }
+
+    /**
+     * @param string[] $icon The icon to use. Required keys are 'pix' and 'component'.
+     * @param string $message The message to display.
+     * @param array $actions An array of action links
+     * @param string $region Optional region name
+     * @throws \coding_exception
+     */
+    public static function add_call_to_action(array $icon, string $message, array $actions, string $region = ''): void {
+        global $OUTPUT, $PAGE;
+
+        $context = new stdClass();
+        $context->icon = $icon;
+        $context->message = $message;
+        $context->region = $region;
+
+        $context->actions = array_map(function($action) {
+            $data = [];
+            foreach ($action['data'] as $name => $value) {
+                $data[] = ['name' => $name, 'value' => $value];
+            }
+            $action['data'] = $data;
+
+            return $action;
+        }, $actions);
+
+        $notification = $OUTPUT->render_from_template('core/local/notification/cta', $context);
+
+        if ($PAGE && $PAGE->state === \moodle_page::STATE_IN_BODY) {
+            $id = uniqid();
+            echo \html_writer::span($notification, '', ['id' => $id]);
+            echo \html_writer::script(
+                    "(function() {" .
+                    "var notificationHolder = document.getElementById('user-notifications');" .
+                    "if (!notificationHolder) { return; }" .
+                    "var thisNotification = document.getElementById('{$id}');" .
+                    "if (!thisNotification) { return; }" .
+                    "notificationHolder.insertBefore(thisNotification.firstChild, notificationHolder.firstChild);" .
+                    "thisNotification.remove();" .
+                    "})();"
+            );
+        } else {
+            throw new \coding_exception('You are calling add_call_to_action() either too early or too late.');
+        }
     }
 
     /**

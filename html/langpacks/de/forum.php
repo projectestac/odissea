@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'de', version '3.8'.
+ * Strings for component 'forum', language 'de', version '3.11'.
  *
  * @package     forum
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actionsforgraderinterface'] = 'Aktionen für die Bewertungsoberfläche';
 $string['actionsforpost'] = 'Aktionen für Beiträge';
+$string['activitydate:due'] = 'Fällig:';
 $string['activityoverview'] = 'Neue Forenbeiträge';
 $string['addanewdiscussion'] = 'Neues Thema hinzufügen';
 $string['addanewquestion'] = 'Neue Frage hinzufügen';
@@ -67,7 +68,7 @@ $string['calendardue'] = '{$a} ist fällig.';
 $string['cancelreply'] = 'Antwort abbrechen';
 $string['cannotadd'] = 'Der Beitrag konnte nicht zum Forum hingefügt werden';
 $string['cannotadddiscussion'] = 'Nur Gruppenmitglieder dürfen Beiträge zum Forum hinzufügen.';
-$string['cannotadddiscussionall'] = 'Sie dürfen kein neues Thema für alle Teilnehmer/innen hinzufügen.';
+$string['cannotadddiscussionall'] = 'Sie dürfen kein neues Thema für alle Teilnehmer/innen anlegen.';
 $string['cannotadddiscussiongroup'] = 'Da Sie keiner Gruppe angehören, können Sie kein neues Thema beginnen.';
 $string['cannotaddsubscriber'] = 'Die ID {$a} konnte nicht zur Abonnentenliste hinzugefügt werden!';
 $string['cannotaddteacherforumto'] = 'Das konvertierte Trainerforum konnte nicht im Kursabschnitt 0 eingefügt werden.';
@@ -107,6 +108,9 @@ $string['clicktounlockdiscussion'] = 'Klicken, um dieses Thema zu entsperren.';
 $string['clicktounsubscribe'] = 'Abonniert. Klicken, um das Forum abzubestellen.';
 $string['close'] = 'Schließen';
 $string['closegrader'] = 'Bewertung schließen';
+$string['completiondetail:discussions'] = 'Themen hinzufügen: {$a}';
+$string['completiondetail:posts'] = 'Beiträge verfassen: {$a}';
+$string['completiondetail:replies'] = 'Antworten senden: {$a}';
 $string['completiondiscussions'] = 'Teilnehmer/in muss ein Thema neu beginnen:';
 $string['completiondiscussionsdesc'] = 'Teilnehmer/in muss mindestens {$a} Themen anlegen';
 $string['completiondiscussionsgroup'] = 'Themen erforderlich';
@@ -148,7 +152,7 @@ $string['created'] = 'Erstellt';
 $string['crontask'] = 'E-Mail-Versand aus Foren';
 $string['cutoffdate'] = 'Letzter Eingabetermin';
 $string['cutoffdate_help'] = 'Wenn diese Option aktiviert ist, akzeptiert das Forum keine Beiträge mehr nach diesem Zeitpunkt.';
-$string['cutoffdatereached'] = 'Der Termin der letzten Abgabemöglichkeit für dieses Forum ist erreicht und Sie können nicht mehr hineinschreiben.';
+$string['cutoffdatereached'] = 'Der letzte Eingabetermin für dieses Forum ist erreicht. Sie können keinen Beitrag mehr schreiben.';
 $string['cutoffdatevalidation'] = 'Der letzte Eingabetermin kann nicht früher liegen als das Fälligkeitsdatum.';
 $string['delete'] = 'Löschen';
 $string['deleteddiscussion'] = 'Das Thema wurde gelöscht.';
@@ -185,7 +189,7 @@ $string['discussionlistsortbyrepliesasc'] = 'Nach Anzahl der Antworten aufsteige
 $string['discussionlistsortbyrepliesdesc'] = 'Nach Anzahl der Antworten absteigend sortieren';
 $string['discussionlistsortbystarterasc'] = 'Sortieren nach Themenstarter/in in aufsteigender Reihenfolge';
 $string['discussionlistsortbystarterdesc'] = 'Sortieren nach Themenstarter/in in absteigender Reihenfolge';
-$string['discussionlocked'] = 'Dieses Thema wurde gesperrt, so dass Sie hier nicht weiter antworten können.';
+$string['discussionlocked'] = 'Dieses Thema wurde gesperrt. Sie können hier nicht weiter antworten.';
 $string['discussionlockingdisabled'] = 'Nicht sperren';
 $string['discussionlockingheader'] = 'Themensperrung';
 $string['discussionmoved'] = 'Dieses Thema wurde verschoben nach \'{$a}\'.';
@@ -325,7 +329,7 @@ $string['forum:viewsubscribers'] = 'Abonnentenliste sehen';
 $string['forumauthorhidden'] = 'Autor/in (verborgen)';
 $string['forumblockingalmosttoomanyposts'] = 'Sie erreichen bald die Höchstzahl der zulässigen Beiträge. Sie haben {$a->numposts} Beiträge im Zeitraum {$a->blockperiod} veröffentlicht. Die Grenze ist bei {$a->blockafter} Beiträgen erreicht.';
 $string['forumbodydeleted'] = 'Der Inhalt des Forumsbeitrags wurde gelöscht und kann nicht weiter angezeigt werden.';
-$string['forumbodyhidden'] = 'Sie können diesen Beitrag nicht ansehen. Entweder haben Sie selbst in dieser Diskussion noch nichts geschrieben oder die Bearbeitungszeit für den Beitrag läuft noch. Eventuell ist die Diskussion auch noch nicht begonnen oder bereits vorbei.';
+$string['forumbodyhidden'] = 'Sie können diesen Beitrag momentan nicht anzeigen. Entweder haben Sie selber in dieser Diskussion noch nichts geschrieben oder die Bearbeitungszeit für den Beitrag läuft noch. Möglicherweise ist die aktuelle Zeit auch außerhalb der eingestellten Zeitspanne, während der der Beitrag angezeigt werden kann.';
 $string['forumgrader'] = 'Bewertet/in für Forum';
 $string['forumgradingnavigation'] = 'Navigation zur Forenbewertung';
 $string['forumgradingpanel'] = 'Panel zur Forenbewertung';
@@ -352,13 +356,14 @@ $string['grade_forum_name'] = 'Ganzes Forum';
 $string['grade_forum_title'] = 'Note';
 $string['grade_rating_name'] = 'Bewerten ...';
 $string['graded'] = 'Bewertet';
+$string['gradedby'] = 'Bewertet von';
 $string['gradeforrating'] = 'Note für Bewertung: {$a->str_long_grade}';
 $string['gradeforratinghidden'] = 'Note für Bewertung verborgen';
 $string['gradeforwholeforum'] = 'Note für Forum: {$a->str_long_grade}';
 $string['gradeforwholeforumhidden'] = 'Note für Forum verborgen';
 $string['gradeitem:forum'] = 'Forum';
-$string['gradeitemnameforrating'] = 'Benotung für {$a->name}';
-$string['gradeitemnameforwholeforum'] = 'Benotung des gesamten Forums für {$a->name}';
+$string['gradeitemnameforrating'] = '{$a->name} Bewertung';
+$string['gradeitemnameforwholeforum'] = '{$a->name} ganzes Forum';
 $string['grades:gradesavedfor'] = 'Note gespeichert für {$a->fullname}';
 $string['grades:gradesavefailed'] = 'Note für {$a->fullname} konnte nicht gespeichert werden: {$a->error}';
 $string['gradeusers'] = 'Nutzer/innen bewerten';
@@ -437,17 +442,24 @@ $string['modenested'] = 'Anzeige in geschachtelter Form';
 $string['modenestedv2'] = 'Antworten in experimentell verschachtelter Form';
 $string['modethreaded'] = 'Anzeige in hierarchischer Form';
 $string['modulename'] = 'Forum';
-$string['modulename_help'] = 'Richten Sie ein Forum ein, um den Teilnehmer/innen Ihres Kurses die Gelegenheit zur Diskussion zu geben.
+$string['modulename_help'] = 'Richten Sie ein Forum ein, um den Personen in Ihrem Kurs die Gelegenheit zu geben, asynchrone Diskussionen zu führen, die über einen längeren Zeitraum stattfinden.
 
-Weitere Möglichkeiten:
-* Verschiedene Forentypen
-* Dateianhänge
-* Bilder einbinden
-* Foren abonnieren
-* Forumsbeiträge bewerten
-* Gruppenarbeit.
+Es stehen verschiedene Forentypen zur Auswahl, z.B. ein Standardforum, in dem alle jederzeit eine neue Diskussion beginnen können; ein Forum, in dem jede/r Teilnehmer/in genau eine Diskussion posten kann; oder ein Frage-und-Antwort-Forum, in dem die Teilnehmer/innen zuerst Beiträge verfassen müssen, bevor sie die Beiträge anderer Teilnehmer/innen anzeigen können. Ein/e Trainer/in kann zulassen, dass Dateien an Forenbeiträge angehängt werden. Angehängte Bilder werden im Forumsbeitrag angezeigt.
 
-Hinweis: Im Nachrichtenforum können ausschließlich Trainer/innen des Kurse Beiträge schreiben. Teilnehmer/innen dürfen im Nachrichtenforum weder eigene Beiträge schreiben noch andere beantworten.';
+Teilnehmer/innen können ein Forum abonnieren, um Benachrichtigungen über neue Forenbeiträge zu erhalten. Ein/e Trainer/in kann den Abonnementmodus auf optional, verbindlich oder automatisch einstellen oder das Abonnement vollständig verhindern. Bei Bedarf können Teilnehmer/innen daran gehindert werden, in einem bestimmten Zeitraum mehr als eine bestimmte Anzahl von Beiträgen zu veröffentlichen. Dies kann verhindern, dass Einzelpersonen Diskussionen dominieren.
+
+Forenbeiträge können von Trainer/innen oder Teilnehmer/innen bewertet werden (Peer-Bewertung). Die Bewertungen können zu einer Endnote zusammengefasst werden, die in den Bewertungen festgehalten wird.
+
+Die Aktivität Forum hat viele Verwendungsmöglichkeiten, wie z.B.
+
+* Ein sozialer Raum für Teilnehmer/innen, um sich kennenzulernen
+* Für Kursankündigungen (über ein Ankündigungen-Forum mit Zwangsabonnement)
+* Zum Besprechen von Kursinhalten oder zum Lesen von Materialien
+* Für die Fortsetzung einer Diskussion, die in einer persönlichen Sitzung begonnen wurde
+* Für Diskussionen nur für Trainer/innen (über ein verborgenes Forum)
+* Ein Hilfezentrum, in dem Tutoren/innen und Teilnehmer/innen Ratschläge geben können
+* Als Bereich für eine 1:1-Unterstützung zwischen Teilnehmer/in und Trainer/in (über ein Forum mit separaten Gruppen und mit 1 Teilnehmer/in pro Gruppe)
+* Für Erweiterungsaktivitäten, z.B. „Denksportaufgaben“, über die die Teilnehmer/innen nachdenken und Lösungen vorschlagen können';
 $string['modulenameplural'] = 'Foren';
 $string['more'] = 'weiter';
 $string['movedmarker'] = '(Verschoben)';
@@ -648,7 +660,7 @@ $string['rsstype'] = 'RSS Feed für diese Aktivität';
 $string['rsstype_help'] = 'Um RSS Feeds für diese Aktivität zu aktivieren, wählen Sie entweder Themen oder Beiträge für diesen Feed aus.';
 $string['rsstypedefault'] = 'RSS Feed Typ';
 $string['search'] = 'Suche';
-$string['search:activity'] = 'Forum - Beschreibung';
+$string['search:activity'] = 'Forum - Aktivitätsinfo';
 $string['search:post'] = 'Forum - Beiträge';
 $string['searchdatefrom'] = 'Beiträge müssen neuer sein als';
 $string['searchdateto'] = 'Beiträge müssen älter sein als';
@@ -734,8 +746,8 @@ $string['trackingoptional'] = 'Optional';
 $string['trackingtype'] = 'Forumstracking';
 $string['trackingtype_help'] = 'Mithilfe der Leseverfolgung können Teilnehmer/innen sehen, welche Beiträge sie noch nicht gesehen haben.
 
-* Optional - Die Markierung ist ein- und ausschaltbar. Teilnehmer/innen finden dafür eine Einstellung in der Forumsadministration, wenn sie vorher das Forumstracking in ihren persönlichen Einstellungen aktiviert haben.
-* Verbindlich - Wenn in der Website-Administration die Option "Verbindliches Forumstracking erlauben" aktiviert ist, ist eine weitere Option "Verbindlich" verfügbar. Hierbei ist das Forumstracking immer aktiviert, unabhängig von den Nutzereinstellungen.';
+* Optional - Die Markierung ist ein- und ausschaltbar. Teilnehmer/innen finden dafür eine Einstellung im Aktionsmenü oder in der Forumsadministration. Sie müssen vorher das Forumstracking in den persönlichen Einstellungen aktiviert haben.
+* Verbindlich - Wenn in der Website-Administration die Option \'Verbindliches Forumstracking erlauben\' aktiviert ist, ist eine weitere Option \'Verbindlich\' verfügbar. Hierbei ist das Forumstracking immer aktiviert, unabhängig von den persönlichen Nutzereinstellungen.';
 $string['trackreadposts_header'] = 'Forumstracking';
 $string['unlockdiscussion'] = 'Dieses Thema entsperren';
 $string['unpindiscussion'] = 'Dieses Thema abpinnen';

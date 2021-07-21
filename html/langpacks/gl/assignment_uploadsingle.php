@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_uploadsingle', language 'gl', version '3.8'.
+ * Strings for component 'assignment_uploadsingle', language 'gl', version '3.11'.
  *
  * @package     assignment_uploadsingle
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Envío único';
-$string['privacy:metadata'] = 'O engadido de envío único de tarefas non almacena ningunha información persoal.';
+$string['privacy:metadata'] = 'O engadido de Envío único de tarefas non almacena ningunha información persoal.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'ja', version '3.8'.
+ * Strings for component 'form', language 'ja', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -41,13 +41,15 @@ $string['err_minlength'] = 'あなたはここに少なくとも {$a->format} �
 $string['err_nonzero'] = 'あなたはここにゼロから開始されない数字を入力する必要があります。';
 $string['err_nopunctuation'] = 'あなたはここに句読点以外の文字を入力する必要があります。';
 $string['err_numeric'] = 'あなたはここに数字を入力する必要があります。';
+$string['err_positiveint'] = 'あなたはここにゼロより大きな数字を入力する必要があります。';
 $string['err_rangelength'] = 'あなたはここに {$a->format[0]} から {$a->format[1]} の文字を入力する必要があります。';
 $string['err_required'] = 'あなたはここに値を入力する必要があります。';
 $string['err_wrappingwhitespace'] = '値を空白で開始または終了しないでください。';
-$string['err_wrongfileextension'] = 'いくつかのファイル ({$a->wrongfiles}) はアップロードすることができません。ファイルタイプ {$a->whitelist} のみ許可されます。';
+$string['err_wrongfileextension'] = 'いくつかのファイル ({$a->wrongfiles}) はアップロードすることができません。ファイルタイプ {$a->allowlist} のみ許可されます。';
 $string['filesofthesetypes'] = '許可されるファイルタイプ:';
 $string['filetypesany'] = 'すべてのファイルタイプ';
 $string['filetypesnotall'] = 'ここでは「すべてのファイルタイプ」を選択することはできません。';
+$string['filetypesnotallowed'] = 'これらのファイルタイプはここでは許可されていません: {$a}';
 $string['filetypesnotwhitelisted'] = 'これらのファイルタイプはここでは許可されていません: {$a}';
 $string['filetypesothers'] = 'その他ファイル';
 $string['filetypesunknown'] = '不明なファイルタイプ: {$a}';
@@ -62,6 +64,7 @@ $string['mustbeoverriden'] = 'クラス {$a} のabstract form_definition() メ�
 $string['newvaluefor'] = '{$a} の新しい値';
 $string['nomethodforaddinghelpbutton'] = 'フォームエレメント {$a->name} (クラス{$a->classname}) にヘルプボタンを追加する方法がありません。';
 $string['nonexistentformelements'] = '存在しないフォームエレメント {$a} にヘルプボタンを追加しようとしています。';
+$string['nopermissionform'] = 'あなたにはこのフォーラムにアクセスできるパーミッションがありません。';
 $string['noselection'] = '選択なし';
 $string['nosuggestions'] = '候補なし';
 $string['novalue'] = '未入力';
@@ -82,6 +85,7 @@ $string['showadvanced'] = '拡張要素を表示する';
 $string['showless'] = '表示を減らす ...';
 $string['showmore'] = 'さらに表示する ...';
 $string['somefieldsrequired'] = '{$a} マークが付けられたフィールドは必須入力フィールドです。';
+$string['suggestions'] = 'サジェスチョン';
 $string['time'] = '時間';
 $string['timeunit'] = '時間単位';
 $string['timing'] = 'タイミング';

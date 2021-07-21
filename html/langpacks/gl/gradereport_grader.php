@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'gl', version '3.8'.
+ * Strings for component 'gradereport_grader', language 'gl', version '3.11'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['ajaxchoosescale'] = 'Escoller';
 $string['ajaxclicktoclose'] = 'Escolla esta caixa para retirala';
 $string['ajaxerror'] = 'Erro';
-$string['ajaxfailedupdate'] = 'Non foi posíbel actualizar [1] cara [2]';
+$string['ajaxfailedupdate'] = 'Non foi posíbel actualizar [1] cara a [2]';
 $string['ajaxfieldchanged'] = 'O campo que está a editar actualmente cambiou. Quere usar o valor actualizado?';
 $string['eventgradereportviewed'] = 'Visto o informe do cualificador';
 $string['grader:manage'] = 'Administrar o informe do cualificador';
@@ -37,7 +37,7 @@ $string['overriddengrade'] = 'Anular a cualificación';
 $string['pluginname'] = 'Informe do cualificador';
 $string['preferences'] = 'Preferencias de informe do cualificador';
 $string['privacy:metadata:preference:grade_report_aggregationposition'] = 'Indica se as columnas de totais das categorías e cursos preséntanse no principio ou na fin nos informes do libro de cualificacións.';
-$string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'O número de decimais que se amosarán para cada media ou se se emprega a configuración de posicións decimais totais para a categoría ou o elemento de cualificación (herdanza).';
+$string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'O número de decimais que se amosarán para cada media ou se se emprega o axuste de posicións decimais totais para a categoría ou o elemento de cualificación (herdanza).';
 $string['privacy:metadata:preference:grade_report_averagesdisplaytype'] = 'Indica se a media presentase como cualificacións reais, porcentaxes ou letras ou se emprega o tipo de presentación pola categoría ou elemento de cualificación (herdanza).';
 $string['privacy:metadata:preference:grade_report_enableajax'] = 'Indica se se engade unha capa de funcionalidade AJAX ao informe do cualificador, simplificando e acelerando as operacións comúns';
 $string['privacy:metadata:preference:grade_report_grader_collapsed_categories'] = 'Lista de categorías de libro de cualificacións para contraer';
@@ -58,6 +58,6 @@ $string['privacy:metadata:preference:grade_report_showranges'] = 'Indica se se a
 $string['privacy:metadata:preference:grade_report_showuserimage'] = 'Indica se se amosa a imaxe de perfil do usuario a carón do nome';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'O número de alumnos que presentar por páxina no informe do cualificador.';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Ten algunhas categorías de libro de cualificacións no curso «{$a->name}»';
-$string['summarygrader'] = 'Unha táboa cos nomes dos alumnos na primeira columna, con actividades avaliables agrupadas por curso e categoría no alto.';
+$string['summarygrader'] = 'Unha táboa cos nomes dos alumnos na primeira columna, con actividades avaliábeis agrupadas por curso e categoría no alto.';
 $string['useractivityfeedback'] = 'Comentario {$a}';
 $string['useractivitygrade'] = 'Cualificación de {$a}';

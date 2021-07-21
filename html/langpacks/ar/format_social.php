@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'ar', version '3.8'.
+ * Strings for component 'format_social', language 'ar', version '3.11'.
  *
  * @package     format_social
  * @category    string
@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = 'عدد المناقشات';
 $string['numberdiscussions_help'] = 'يحدد هذا الإعداد عدد المناقشات التي ينبغي أن يتم عرضها.';
 $string['pluginname'] = 'التنسيق الإجتماعي';
-$string['privacy:metadata'] = 'لا يخزن المكون الإضافي Social format  أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق التنسيق الاجتماعي لا يخزن أي بيانات شخصية.';
 $string['sectionname'] = 'القسم';

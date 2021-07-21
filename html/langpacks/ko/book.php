@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ko', version '3.8'.
+ * Strings for component 'book', language 'ko', version '3.11'.
  *
  * @package     book
  * @category    string
@@ -38,7 +38,7 @@ $string['content'] = '내용';
 $string['customtitles'] = '맞춤 제목';
 $string['customtitles_help'] = '보통 장의 제목은 목차와 내용의 위해 헤딩으로 표시됩니다. 만일 맞춤 제움 테크박스가 체크되면 장은 내용 위에 헤딩으로 표시되지 않습니다. 다른 제목(장으 제목보다 길 수 있는) 이 내용의 일부로서 입력될 수도 있습니다.';
 $string['editingchapter'] = '장 편집';
-$string['errorchapter'] = '전자 책의 장을 읽는데 오류';
+$string['errorchapter'] = '책의 장을 읽는데 오류가 발생했습니다.';
 $string['eventchaptercreated'] = '장이 만들어짐';
 $string['eventchapterdeleted'] = '장이 삭제됨';
 $string['eventchapterupdated'] = '장이 업데이트됨';
@@ -48,7 +48,9 @@ $string['modulename_help'] = '';
 $string['modulenameplural'] = '전자 책';
 $string['navexit'] = '책에서 나가기';
 $string['navnext'] = '다음';
+$string['navnexttitle'] = '다음: {$a}';
 $string['navprev'] = '이전';
+$string['navprevtitle'] = '이전: {$a}';
 $string['nocontent'] = '이 책에 아직 내용이 추가되지 않았습니다.';
 $string['numbering'] = '장 형식맞춤';
 $string['numbering0'] = '없음';
@@ -63,5 +65,6 @@ $string['subchapter'] = '서브 챕터';
 $string['subchapternotice'] = '(첫 장이 생성된 후에만 사용가능)';
 $string['subplugintype_booktool'] = '전자 책 도구';
 $string['subplugintype_booktool_plural'] = '전자 책 도구';
+$string['tagarea_book_chapters'] = '장';
 $string['toc'] = '목차';
 $string['top'] = '상단';

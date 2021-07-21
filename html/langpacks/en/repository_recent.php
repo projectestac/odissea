@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'en', version '3.8'.
+ * Strings for component 'repository_recent', language 'en', version '3.11'.
  *
  * @package     repository_recent
  * @category    string
@@ -33,3 +33,5 @@ $string['pluginname_help'] = 'Files recently used by current user';
 $string['privacy:metadata'] = 'The Recent files repository plugin does not store or transmit any personal data.';
 $string['recent:view'] = 'View recent files repository plugin';
 $string['recentfilesnumber'] = 'Number of recent files';
+$string['timelimit'] = 'Time limit';
+$string['timelimit_help'] = 'Only retrieve recent files within the time limit';

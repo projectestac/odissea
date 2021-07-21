@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'de', version '3.8'.
+ * Strings for component 'grading', language 'de', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -29,9 +29,10 @@ $string['activemethodinfo'] = '\'{$a->method}\' ist als Bewertungsmethode für d
 $string['activemethodinfonone'] = 'Es wurde für den \'{$a->area}\'-Bereich keine erweiterte Bewertungsmethode ausgewählt.';
 $string['changeactivemethod'] = 'Aktive Bewertungsmethode wechseln nach';
 $string['clicktoclose'] = 'anklicken zum Schließen';
+$string['error:gradingunavailable'] = 'Die erweiterte Bewertungsmethode ist nicht richtig eingestellt. Überprüfen Sie bitte die gesamten Forumsbewertungsoptionen in den Einstellungen.';
 $string['error:notinrange'] = 'Ungültige Bewertung \'{$a->grade}\' vorhanden. Die Bewertung muss zwischen 0 und {$a->maxgrade} liegen.';
 $string['exc_gradingformelement'] = 'Bewertungsformular konnte nicht angelegt werden';
-$string['formnotavailable'] = 'Erweiterte Bewertungsmethode wurde ausgewählt, aber das Bewertungsformular steht noch nicht zur Verfügung. Es muss zuerst über den Link im Block \'Einstellungen\' angelegt werden.';
+$string['formnotavailable'] = 'Für die Verwendung wurde eine erweiterte Bewertungsmethode ausgewählt, das Bewertungsformular ist jedoch noch nicht verfügbar. Möglicherweise müssen Sie es zuerst über einen Link im Aktionsmenü oder im Administrationsblock definieren.';
 $string['gradingformunavailable'] = 'Hinweis: Das erweiterte Bewertungsformular steht noch nicht zur Verfügung. Bis zu seiner Erstellung wird die einfache Bewertung verwendet.';
 $string['gradingmanagement'] = 'Erweiterte Bewertung';
 $string['gradingmanagementtitle'] = 'Erweiterte Bewertung: {$a->component} ({$a->area})';
@@ -81,9 +82,9 @@ $string['privacy:metadata:grading_instances:timemodified'] = 'Zeitpunkt der letz
 $string['privacy:metadata:gradingformpluginsummary'] = 'Daten aus der Bewertungsmethode';
 $string['searchownforms'] = 'einschl. meine eigenen Formulare';
 $string['searchtemplate'] = 'Suche nach Bewertungsformularen';
-$string['searchtemplate_help'] = 'Sie können ein Bewertungsformular suchen und es als Vorlage zur weiteren Bearbeitung verwenden. Geben Sie Begriffe ein, die im Titel, dem Formular oder der Beschreibung vermutlich vorkommen. Sie können auch komplexe Begriffe suchen wenn Sie diese in Anführungszeichen (") setzen.
+$string['searchtemplate_help'] = 'Hier können Sie nach einem Bewertungsformular suchen und es als Vorlage für das neue Bewertungsformular verwenden. Geben Sie einfach Wörter ein, die irgendwo im Formularnamen, seiner Beschreibung oder im Formularkörper selbst erscheinen sollen. Um nach einer Phrase zu suchen, schließen Sie die gesamte Abfrage in doppelte Anführungszeichen ein.
 
-Die Grundeinstellung erlaubt die Suche in veröffentlichten Formularen. Sie können zusätzlich Ihre eigenen Formulare in die Suche einbeziehen. Somit können Sie ihre eigenen Formulare wiederverwenden, ohne sie veröffentlichen zu müssen. Nur Formulare, die als \'Fertig zum Gebrauch\' gekennzeichnet wurden, können verwandt werden.';
+Standardmäßig werden nur die Bewertungsformulare in die Suchergebnisse aufgenommen, die als freigegebene Vorlagen gespeichert wurden. Sie können auch alle Ihre eigenen Bewertungsformulare in die Suchergebnisse aufnehmen. Auf diese Weise können Sie Ihre Bewertungsformulare einfach wiederverwenden, ohne sie freizugeben. Auf diese Weise können nur Formulare wiederverwendet werden, die als "Fertig zum Gebrauch" gekennzeichnet sind.';
 $string['statusdraft'] = 'Entwurf';
 $string['statusready'] = 'Bereit für den Einsatz';
 $string['templatedelete'] = 'Löschen';

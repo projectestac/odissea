@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'en', version '3.8'.
+ * Strings for component 'choice', language 'en', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -55,6 +55,7 @@ $string['choicetext'] = 'Choice text';
 $string['chooseaction'] = 'Choose an action ...';
 $string['chooseoption'] = 'Choose: {$a}';
 $string['closebeforeopen'] = 'You have specified a close date before the open date.';
+$string['completiondetail:submit'] = 'Make a choice';
 $string['completionsubmit'] = 'Show as complete when user makes a choice';
 $string['description'] = 'Description';
 $string['deselectalloption'] = 'Deselect all "{$a}"';
@@ -82,6 +83,7 @@ $string['indicator:socialbreadthdef'] = 'Choice social';
 $string['indicator:socialbreadthdef_help'] = 'The participant has reached this percentage of the social engagement offered by the Choice activities during this analysis interval (Levels = No participation, Participant alone, Participant with others)';
 $string['indicator:socialbreadthdef_link'] = 'Learning_analytics_indicators#Social_breadth';
 $string['limit'] = 'Limit';
+$string['limita'] = 'Limit: {$a}';
 $string['limitanswers'] = 'Limit the number of responses allowed';
 $string['limitanswers_help'] = 'This option allows you to limit the number of participants that can select each choice option. When the limit is reached then no-one else can select that option.
 
@@ -118,6 +120,7 @@ $string['options'] = 'Options';
 $string['page-mod-choice-x'] = 'Any choice module page';
 $string['pluginadministration'] = 'Choice administration';
 $string['pluginname'] = 'Choice';
+$string['previewing'] = 'This is just a preview of the available options for this activity. You will be able to make a choice when it opens.';
 $string['previewonly'] = 'This is just a preview of the available options for this activity. You will not be able to submit your choice until {$a}.';
 $string['privacy'] = 'Privacy of results';
 $string['privacy:metadata:choice_answers'] = 'Information about the user\'s chosen answer(s) for a given choice activity';
@@ -140,12 +143,15 @@ $string['publishnot'] = 'Do not publish results to students';
 $string['removemychoice'] = 'Remove my choice';
 $string['removeresponses'] = 'Remove all responses';
 $string['responses'] = 'Responses';
+$string['responsesa'] = 'Responses: {$a}';
 $string['responsesresultgraphheader'] = 'Graph display';
 $string['responsesto'] = 'Responses to {$a}';
 $string['results'] = 'Results';
 $string['savemychoice'] = 'Save my choice';
 $string['search:activity'] = 'Choice - activity information';
 $string['selectalloption'] = 'Select all "{$a}"';
+$string['showavailable'] = 'Show available spaces';
+$string['showavailable_help'] = 'Show participants the limit for each option and the number of responses for it so far.';
 $string['showpreview'] = 'Show preview';
 $string['showpreview_help'] = 'Allow students to preview the available options before the choice is opened for submission.';
 $string['showunanswered'] = 'Show column for unanswered';

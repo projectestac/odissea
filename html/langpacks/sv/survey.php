@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'sv', version '3.8'.
+ * Strings for component 'survey', language 'sv', version '3.11'.
  *
  * @package     survey
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actual'] = 'Faktisk';
 $string['actualclass'] = 'Faktisk klass';
 $string['actualstudent'] = '{$a} faktisk';
-$string['allquestionrequireanswer'] = 'Alla frågor är obligatoriska och måste besvaras';
+$string['allquestionrequireanswer'] = 'Alla frågor är obligatoriska och måste besvaras.';
 $string['allquestions'] = 'Alla frågor i ordning, alla studenter';
 $string['allscales'] = 'Alla skalor, alla studenter';
 $string['alreadysubmitted'] = 'Du har redan skickat in denna enkät';
@@ -76,8 +76,8 @@ $string['attls9'] = 'jag märker ofta att jag argumenterar mot författarna till
 $string['attls9short'] = 'diskutera med författare';
 $string['attlsintro'] = 'Syftet med detta frågeformulär är att hjälpa oss utvärdera din inställning till tänkande och lärande. Det finns inga \'rätta\' eller \'felaktiga\' svar; vi är bara intresserade av din åsikt. Dina svar kommer att behandlas med högsta sekretess och kommer inte att påverka dina betyg eller andra värderingar.';
 $string['attlsm1'] = 'Attityder till tänkande och lärande';
-$string['attlsm2'] = 'Socialt (empatiskt) lärande';
-$string['attlsm3'] = 'Enskilt (rationellt) lärande';
+$string['attlsm2'] = 'Anslutet lärande';
+$string['attlsm3'] = 'Separat lärande';
 $string['attlsmintro'] = 'I diskussioner fungerar jag så att...';
 $string['attlsname'] = 'Attityder kring tänkande och lärande (20 punkters version)';
 $string['cannotfindanswer'] = 'Det finns inga avgivna svar på den här enkäten ännu. ';
@@ -158,8 +158,8 @@ Tack så mycket för din medverkan.';
 $string['collesapname'] = 'Konstruktivistiskt inriktad enkät ang en nätbaserad läromiljö (Önskad och faktisk)';
 $string['collesm1'] = 'Relevans';
 $string['collesm1short'] = 'Relevans';
-$string['collesm2'] = 'Reflekterande tänkande';
-$string['collesm2short'] = 'Reflekterande tänkande';
+$string['collesm2'] = 'Reflekterande';
+$string['collesm2short'] = 'Reflekterande';
 $string['collesm3'] = 'Interaktivitet';
 $string['collesm3short'] = 'Interaktivitet';
 $string['collesm4'] = 'Handledarstöd';
@@ -176,16 +176,17 @@ Dina väl genomtänkta svar kommer att hjälpa oss förbättra funktionerna i de
 
 Tack så mycket för din medverkan.';
 $string['collespname'] = 'Konstruktivistiskt inriktad enkät angående en nätbaserad läromiljö (Önskad)';
+$string['completiondetail:submit'] = 'Skicka in svar';
 $string['completionsubmit'] = 'Studenten måste lämna in till denna aktivitet för att slutföra den';
 $string['customintro'] = 'Beskrivning';
 $string['deleteallanswers'] = 'Ta bort alla svar på enkäten';
 $string['deleteanalysis'] = 'Ta bort analyserna av svar';
 $string['done'] = 'Färdig';
 $string['download'] = 'Ladda ner';
-$string['downloadexcel'] = 'Ladda ner data som kalkylark i Excel';
+$string['downloadexcel'] = 'Ladda ner data i Excel-format';
 $string['downloadinfo'] = 'Du kan ladda ner fullständiga rådata för denna enkät i en form lämplig för analys i Excel, SPSS eller annat paket.';
 $string['downloadresults'] = 'Ladda ner resultat';
-$string['downloadtext'] = 'Ladda ner data som en vanlig textfil';
+$string['downloadtext'] = 'Ladda ner data som ren text';
 $string['editingasurvey'] = 'Redigerar en enkät';
 $string['errorunabletosavenotes'] = 'Ett fel inträffade då dina anteckningar sparades.';
 $string['eventreportdownloaded'] = 'Undersökningsrapport nedladdad';
@@ -208,7 +209,9 @@ $string['invalidsurveyid'] = 'ID för enkäten var inte korrekt';
 $string['invalidtmptid'] = 'Ogiltigt ID för mall';
 $string['ipreferthat'] = 'Jag föredrar att';
 $string['modulename'] = 'Enkät';
-$string['modulename_help'] = 'I enkätaktivitetsmodulen finns ett antal verifierade enkätinstrument som visat sig användbara i bedömning och stimulerande av inlärning i onlinemiljöer. En lärare kan använda dessa för att samla in data från sina elever som hjälper dem att lära sig om sin klass och reflektera över sin egen undervisning. Observera att dessa undersökningsverktyg är förifyllda med frågor. Lärare som önskar skapa en egen enkät bör använda modulen återkoppling.';
+$string['modulename_help'] = 'Aktiviteten <em>Enkät</em> innehåller ett antal vedertagna enkätinstrument som visat sig användbara vid bedömning och stimulerande av inlärning i onlinemiljöer. En lärare kan använda dessa för att samla in data från sina elever som hjälper dem att lära sig om sin klass och reflektera över sin egen undervisning.
+
+Observera att dessa undersökningsverktyg är förifyllda med frågor. Lärare som önskar skapa en egen enkät bör använda aktiviteten <em>Återkoppling</em>.';
 $string['modulenameplural'] = 'Undersökningar';
 $string['name'] = 'Namn';
 $string['newsurveyresponses'] = 'Nya enkätsvar';
@@ -224,9 +227,15 @@ $string['pluginname'] = 'Undersökning';
 $string['preferred'] = 'Bästa val';
 $string['preferredclass'] = 'Den klass som är mest önskad';
 $string['preferredstudent'] = '{$a} bästa val';
+$string['privacy:metadata:analysis'] = 'En post med analys av svar på undersökningar.';
+$string['privacy:metadata:analysis:notes'] = 'Anteckningar sparade för en användares svar.';
+$string['privacy:metadata:analysis:userid'] = 'ID för användaren som besvarar undersökningen.';
 $string['privacy:metadata:answers'] = 'En samling undersökningssvar.';
 $string['privacy:metadata:answers:answer1'] = 'Fält för att lagra svaret på en fråga.';
+$string['privacy:metadata:answers:answer2'] = 'Ett ytterligare fält för att lagra svar på en fråga.';
 $string['privacy:metadata:answers:question'] = 'Frågan';
+$string['privacy:metadata:answers:time'] = 'Tidpunkten då svaret sparades.';
+$string['privacy:metadata:answers:userid'] = 'ID för användaren som skickade in svaret.';
 $string['question'] = 'Fråga';
 $string['questions'] = 'Frågor';
 $string['questionsnotanswered'] = 'Några av flervalsfrågorna har inte besvarats.';
@@ -251,6 +260,11 @@ $string['surveygraph'] = 'Graf över enkät';
 $string['surveyname'] = 'Enkätnamn';
 $string['surveysaved'] = 'Enkät sparad';
 $string['surveytype'] = 'Enkättyp';
+$string['surveytype_help'] = 'Det finns 3 tillgängliga undersökningstyper:
+
+* Attityder till tänkande och lärande undersökning (eng. <em>Attitudes to Thinking and Learning Survey</em> - ATTLS) - För att mäta i vilken utsträckning en person är en "ansluten lärande" (tenderar att tycka att lärande roligare, och är ofta mer samarbetsvillig, kongenial och mer villig att bygga på andras idéer) eller en "separat lärande" (tenderar att ha en mer kritisk och argumenterande inställning till lärande)
+* Undersökning av kritiska incidenter
+* Konstruktivistisk online-lärmiljö undersökning (eng.  <em>Constructivist On-line Learning Environment Survey</em> - COLLES) - För att övervaka i vilken utsträckning den interaktiva kapaciteten på webben kan utnyttjas för att engagera studenter i dynamiska inlärningsmetoder';
 $string['thanksforanswers'] = 'Stort tack för att du besvarade denna enkät, {$a}';
 $string['time'] = 'Tid';
 $string['viewsurveyresponses'] = 'Se {$a} enkätsvar';

@@ -172,7 +172,7 @@ foreach ($sortedqtypes as $qtypename => $localname) {
     if ($version) {
         $row[] = $version;
     } else {
-        $row[] = html_writer::tag('span', get_string('nodatabase', 'admin'), array('class' => 'disabled'));
+        $row[] = html_writer::tag('span', get_string('nodatabase', 'admin'), array('class' => 'text-muted'));
     }
 
     // Other question types required by this one.
@@ -217,14 +217,16 @@ foreach ($sortedqtypes as $qtypename => $localname) {
     }
 
     // Uninstall link, if available.
-    //XTEC ************ MODIFICAT - To let access only to xtecadmin user
-    //2012.08.20 @sarjona
+
+    // XTEC ************ MODIFICAT - Allow access only to xtecadmin user
+    // 2012.08.20 @sarjona
     if ($needed[$qtypename] || !get_protected_agora()) {
-    //************ ORIGINAL
+    // ************ ORIGINAL
     /*
     if ($needed[$qtypename]) {
     */
-    //************ FI
+    // ************ FI
+
         $row[] = '';
     } else {
         $uninstallurl = core_plugin_manager::instance()->get_uninstall_url('qtype_'.$qtypename, 'manage');

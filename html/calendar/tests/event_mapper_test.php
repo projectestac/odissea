@@ -255,6 +255,14 @@ class event_mapper_test_action_event implements action_event_interface {
             true
         );
     }
+
+    /**
+     * Component
+     * @return string|null
+     */
+    public function get_component() {
+        return $this->event->get_component();
+    }
 }
 
 /**
@@ -359,7 +367,8 @@ class event_mapper_test_event implements event_interface {
             (new \DateTimeImmutable())->setTimestamp(-386380800),
             (new \DateTimeImmutable())->setTimestamp(115776000),
             (new \DateTimeImmutable())->setTimestamp(115776000),
-            (new \DateTimeImmutable())->setTimestamp(time())
+            (new \DateTimeImmutable())->setTimestamp(time()),
+            (new \DateTimeImmutable())->setTimestamp(115776000)
         );
     }
 
@@ -373,6 +382,14 @@ class event_mapper_test_event implements event_interface {
 
     public function is_visible() {
         return true;
+    }
+
+    /**
+     * Component
+     * @return string|null
+     */
+    public function get_component() {
+        return null;
     }
 }
 

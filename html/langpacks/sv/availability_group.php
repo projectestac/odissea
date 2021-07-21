@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'sv', version '3.8'.
+ * Strings for component 'availability_group', language 'sv', version '3.11'.
  *
  * @package     availability_group
  * @category    string
@@ -30,7 +30,7 @@ $string['description'] = 'Tillåt endast studenter som tillhör en specifik grup
 $string['error_selectgroup'] = 'Du måste välja en grupp';
 $string['missing'] = '(Grupp saknas)';
 $string['pluginname'] = 'Begränsning via grupp';
-$string['privacy:metadata'] = 'Pluginmodulen Begränsning via grupp lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Begränsning via grupp lagrar ingen personinformation.';
 $string['requires_anygroup'] = 'Du <strong>tillhör</strong> någon grupp';
 $string['requires_group'] = 'Du <strong>tillhör</strong> gruppen <strong>{$a}</strong>';
 $string['requires_notanygroup'] = 'Du <strong>tillhör inte</strong> någon grupp';

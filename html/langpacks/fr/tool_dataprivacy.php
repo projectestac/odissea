@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'fr', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'fr', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -31,7 +31,12 @@ $string['addnewdefaults'] = 'Ajouter une nouvelle valeur par défaut pour le mod
 $string['addpurpose'] = 'Ajouter une finalité';
 $string['addroleoverride'] = 'Ajouter une dérogation de rôle';
 $string['approve'] = 'Approuver';
+$string['approvedrequestsubmitted'] = 'Votre demande a été envoyée et sera traitée prochainement.';
 $string['approverequest'] = 'Approuver la demande';
+$string['automaticdatadeletionapproval'] = 'Approbation automatique des demandes de suppression de données';
+$string['automaticdatadeletionapproval_desc'] = 'Si ce réglage est activé, les demandes de suppression de données sont approuvées automatiquement.<br />L\'approbation automatique ne s\'appliquera qu\'aux nouvelles demandes de suppression, après l\'activation du réglage. Les demandes de suppression existantes en attente d\'approbation devront être approuvées manuellement par le délégué à la protection des données.';
+$string['automaticdataexportapproval'] = 'Approbation automatique des demandes d\'exportation de données';
+$string['automaticdataexportapproval_desc'] = 'Si ce réglage est activé, les demandes d\'exportation de données sont approuvées automatiquement.<br />L\'approbation automatique ne s\'appliquera qu\'aux nouvelles demandes d\'exportation, après l\'activation du réglage. Les demandes d\'exportation existantes en attente d\'approbation devront être approuvées manuellement par le délégué à la protection des données.';
 $string['automaticdeletionrequests'] = 'Créer automatiquement des demandes de suppression de données';
 $string['automaticdeletionrequests_desc'] = 'Si ce réglage est activé, une demande de suppression de données sera créée automatiquement pour chaque utilisateur supprimé manuellement.';
 $string['bulkapproverequests'] = 'Approuver les demandes';
@@ -127,7 +132,7 @@ $string['deprecatedexplanation'] = 'Ce plugin utilise une ancienne version des i
 $string['download'] = 'Télécharger';
 $string['downloadexpireduser'] = 'Le téléchargement est échu. Veuillez effectuer une nouvelle demande si vous voulez exporter vos données personnelles.';
 $string['dporolemapping'] = 'Correspondance du rôle de Délégué à la protection des données';
-$string['dporolemapping_desc'] = 'Le délégué à la protection des données peut gérer les demandes de données. La capacité tool/dataprivacy:managedatarequests doit être autorisée pour un rôle afin de pouvoir le mettre en correspondance avec le rôle de Délégué à la protection des données.';
+$string['dporolemapping_desc'] = 'Le délégué à la protection des données peut gérer les demandes de données. La capacité tool/dataprivacy:managedatarequests doit être permise pour un rôle afin de pouvoir le mettre en correspondance avec le rôle de Délégué à la protection des données.';
 $string['duplicaterole'] = 'Rôle déjà indiqué';
 $string['editcategories'] = 'Modifier les catégories';
 $string['editcategory'] = 'Modifier la catégorie';
@@ -140,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} (depuis le dernier accès de l\'
 $string['emailsalutation'] = 'Cher {$a},';
 $string['errorcannotrequestdeleteforother'] = 'Vous n\'avez pas les permissions requises pour créer une demande de suppression de données pour cet utilisateur.';
 $string['errorcannotrequestdeleteforself'] = 'Vous n\'avez pas les permissions requises pour créer une demande de suppression de données pour vous-même.';
+$string['errorcontactdpodisabled'] = 'Le réglage permettant de contacter le délégué à la protection des données est désactivé.';
 $string['errorcontexthasunexpiredchildren'] = 'Le contexte « {$a} » comporte des sous-contextes qui ne sont pas encore échus. Aucun contexte n\'a été confirmé pour suppression.';
 $string['errorinvalidrequestcomments'] = 'Le champ commentaires ne peut contenir que du texte pur.';
 $string['errorinvalidrequestcreationmethod'] = 'Méthode de création de demande non valide !';
@@ -240,7 +246,7 @@ $string['privacy:metadata:preference:tool_dataprivacy_request-filters'] = 'Les f
 $string['privacy:metadata:preference:tool_dataprivacy_request-perpage'] = 'Le nombre de demandes de données que l\'utilisateur préfère voir affichées sur une page';
 $string['privacy:metadata:request'] = 'Informations sur les demandes de données personnelles (demandes d\'accès et de suppression) faites sur ce site.';
 $string['privacy:metadata:request:comments'] = 'Tous les commentaires de l\'utilisateur accompagnant sa demande.';
-$string['privacy:metadata:request:dpocomment'] = 'Tous les commentaires fait par le délégué à la protection des données du site au sujet de la demande.';
+$string['privacy:metadata:request:dpocomment'] = 'Tous les commentaires effectués par le délégué à la protection des données du site au sujet de la demande.';
 $string['privacy:metadata:request:requestedby'] = 'L\'identifiant de l\'utilisateur faisant la demande, si elle est effectuée au nom d\'un autre utilisateur.';
 $string['privacy:metadata:request:timecreated'] = 'L\'horodatage de la demande faite par l\'utilisateur.';
 $string['privacy:metadata:request:userid'] = 'L\'identifiant de l\'utilisateur concerné par la demande';
@@ -327,7 +333,6 @@ $string['statusdeleted'] = 'Supprimée';
 $string['statusdetail'] = 'Statut :';
 $string['statusexpired'] = 'Échue';
 $string['statuspending'] = 'En suspens';
-$string['statuspreprocessing'] = 'En cours de pré-traitement';
 $string['statusprocessing'] = 'En cours de traitement';
 $string['statusready'] = 'Téléchargement prêt';
 $string['statusrejected'] = 'Rejetée';
@@ -338,7 +343,7 @@ $string['systemconfignotsetwarning'] = 'Une finalité et une catégorie de site 
 $string['tobedeleted'] = 'Données à supprimer';
 $string['unexpiredrolewithretention'] = '{$a->retention} (pas échue)';
 $string['user'] = 'Utilisateur';
-$string['userlistexplanation'] = 'Ce plugin possède le <i>provider</i> de base, mais devrait également implémenter le <i>provider</i> user list pour offrir le support complet de la fonctionnalité de protection des données.';
+$string['userlistexplanation'] = 'Ce plugin possède le <em>provider</em> de base, mais devrait également implémenter le <em>provider</em> user list pour offrir le support complet de la fonctionnalité de protection des données.';
 $string['userlistnoncompliant'] = 'Provider userlist manquant';
 $string['viewrequest'] = 'Consulter la demande';
 $string['visible'] = 'Tout déplier';

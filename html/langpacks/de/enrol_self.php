@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'de', version '3.8'.
+ * Strings for component 'enrol_self', language 'de', version '3.11'.
  *
  * @package     enrol_self
  * @category    string
@@ -49,9 +49,9 @@ $string['enrolenddate'] = 'Einschreibungsende';
 $string['enrolenddate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen sich bis zum angegebenen Zeitpunkt selbst einschreiben.';
 $string['enrolenddaterror'] = 'Das Einschreibungsende muss nach dem Einschreibungsbeginn liegen.';
 $string['enrolme'] = 'Einschreiben';
-$string['enrolperiod'] = 'Einschreibedauer';
-$string['enrolperiod_desc'] = 'Die Einschreibedauer ist die Zeitdauer, in der die Einschreibung gültig ist. Wenn diese Option deaktiviert wird, ist die Einschreibedauer unbegrenzt.';
-$string['enrolperiod_help'] = 'Die Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
+$string['enrolperiod'] = 'Teilnahmedauer';
+$string['enrolperiod_desc'] = 'Die Teilnahmedauer ist die Zeitdauer, in der die Einschreibung gültig ist. Wenn diese Option deaktiviert wird, ist die Teilnahme unbefristet.';
+$string['enrolperiod_help'] = 'Die Teilnahmedauer ist die Zeitdauer, in der die Einschreibung gültig ist, beginnend mit dem Moment der Einschreibung. Wenn diese Option deaktiviert wird, ist die Teilnahmedauer unbegrenzt.';
 $string['enrolstartdate'] = 'Einschreibungsbeginn';
 $string['enrolstartdate_help'] = 'Wenn diese Option aktiviert ist, können Nutzer/innen sich ab diesem Zeitpunkt selbst in den Kurs einschreiben.';
 $string['expiredaction'] = 'Aktion bei Ablauf der Kurseinschreibung';
@@ -70,9 +70,9 @@ im Kurs \'{$a->course}\' läuft für folgende Nutzer/in/nen innerhalb der nächs
 
 {$a->users}
 
-Sie können auf der folgenden Seite die Einschreibedauer verlängern: {$a->extendurl}
+Sie können auf der folgenden Seite die Teilnahmedauer indivduell verlängern oder entfristen (jeweils über das Zahnrad): {$a->extendurl}
 
-Ihr E-Learning Team';
+Ihr E-Learning-Team';
 $string['expirymessageenrollersubject'] = 'In Kürze endet Ihr Kurs';
 $string['expirynotifyall'] = 'Trainer/in und eingeschriebene Nutzer/innen';
 $string['expirynotifyenroller'] = 'Nur Trainer/in';
@@ -104,11 +104,12 @@ $string['passwordinvalid'] = 'Falscher Einschreibeschlüssel';
 $string['passwordinvalidhint'] = 'Falscher Einschreibeschlüssel. Das erste Zeichen ist \'{$a}\'.';
 $string['pluginname'] = 'Selbsteinschreibung';
 $string['pluginname_desc'] = 'Das Plugin \'Selbsteinschreibung\' erlaubt es Nutzer/innen, selber einen Kurs zur Teilnahme auszuwählen. Kurse können mit einem Einschreibeschlüssel gesichert oder ohne Einschreibeschlüssel offen sein. Intern nutzt die Selbsteinschreibung das Plugin \'Manuelle Einschreibung\', welches deswegen im Kurs ebenfalls aktiviert sein muss.';
-$string['privacy:metadata'] = 'Das Selbsteinschreibungs-Plugin speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin Selbsteinschreibung speichert keine personenbezogenen Daten.';
 $string['requirepassword'] = 'Einschreibeschlüssel notwendig';
 $string['requirepassword_desc'] = 'Die Verwendung eines Einschreibeschlüssels ist in neuen Kursen notwendig. In bestehenden Kursen wird das Löschen eines Einschreibeschlüssels verhindert.';
 $string['role'] = 'Rolle im Kurs';
 $string['self:config'] = 'Selbsteinschreibung konfigurieren';
+$string['self:enrolself'] = 'Selbsteinschreibung im Kurs';
 $string['self:holdkey'] = 'Person wird als Halter des Zugangsschlüssels angezeigt';
 $string['self:manage'] = 'Eingeschriebene Nutzer/innen verwalten';
 $string['self:unenrol'] = 'Nutzer/innen aus dem Kurs abmelden';

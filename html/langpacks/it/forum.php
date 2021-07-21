@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'it', version '3.8'.
+ * Strings for component 'forum', language 'it', version '3.11'.
  *
  * @package     forum
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actionsforgraderinterface'] = 'Azioni per l\'interfaccia del valutatore';
 $string['actionsforpost'] = 'Azioni per l\'intervento';
+$string['activitydate:due'] = 'Data limite:';
 $string['activityoverview'] = 'Ci sono nuovi interventi nei forum';
 $string['addanewdiscussion'] = 'Aggiungi un argomento di discussione';
 $string['addanewquestion'] = 'Aggiungi nuova domanda';
@@ -107,6 +108,9 @@ $string['clicktounlockdiscussion'] = 'Click per sbloccare la discussione';
 $string['clicktounsubscribe'] = 'Hai sottoscritto la discussione. Click per revocare la sottoscrizione.';
 $string['close'] = 'Chiudi';
 $string['closegrader'] = 'Chiudi valutazioni';
+$string['completiondetail:discussions'] = 'Avviare discussioni : {$a}';
+$string['completiondetail:posts'] = 'Effettuare interventi: {$a}';
+$string['completiondetail:replies'] = 'Dare risposte: {$a}';
 $string['completiondiscussions'] = 'Lo studente deve avviare il seguente numero di discussioni:';
 $string['completiondiscussionsdesc'] = 'Lo studente deve avviare almeno il seguente numero di discussioni: {$a}';
 $string['completiondiscussionsgroup'] = 'Numero minimo discussioni';
@@ -348,6 +352,7 @@ $string['grade_forum_name'] = 'Valutazione del forum';
 $string['grade_forum_title'] = 'Valutazione';
 $string['grade_rating_name'] = 'Valutazione intervento/discussione';
 $string['graded'] = 'Valutato';
+$string['gradedby'] = 'Valutato da';
 $string['gradeitem:forum'] = 'Forum';
 $string['gradeitemnameforwholeforum'] = 'Valutazione del forum per {$a->name}';
 $string['grades:gradesavedfor'] = 'La valutazione di {$a->fullname} è stata salvata';

@@ -39,7 +39,7 @@ require_once("$CFG->dirroot/mod/url/lib.php");
 function url_appears_valid_url($url) {
     if (preg_match('/^(\/|https?:|ftp:)/i', $url)) {
         // note: this is not exact validation, we look for severely malformed URLs only
-        return (bool)preg_match('/^[a-z]+:\/\/([^:@\s]+:[^@\s]+@)?[a-z0-9_\.\-]+(:[0-9]+)?(\/[^#]*)?(#.*)?$/i', $url);
+        return (bool) preg_match('/^[a-z]+:\/\/([^:@\s]+:[^@\s]+@)?[^ @]+(:[0-9]+)?(\/[^#]*)?(#.*)?$/i', $url);
     } else {
         return (bool)preg_match('/^[a-z]+:\/\/...*$/i', $url);
     }
@@ -88,10 +88,23 @@ function url_get_full_url($url, $cm, $course, $config=null) {
     // make sure there are no encoded entities, it is ok to do this twice
     $fullurl = html_entity_decode($url->externalurl, ENT_QUOTES, 'UTF-8');
 
+    $letters = '\pL';
+    $latin = 'a-zA-Z';
+    $digits = '0-9';
+    $symbols = '\x{20E3}\x{00AE}\x{00A9}\x{203C}\x{2047}\x{2048}\x{2049}\x{3030}\x{303D}\x{2139}\x{2122}\x{3297}\x{3299}' .
+               '\x{2300}-\x{23FF}\x{2600}-\x{27BF}\x{2B00}-\x{2BF0}';
+    $arabic = '\x{FE00}-\x{FEFF}';
+    $math = '\x{2190}-\x{21FF}\x{2900}-\x{297F}';
+    $othernumbers = '\x{2460}-\x{24FF}';
+    $geometric = '\x{25A0}-\x{25FF}';
+    $emojis = '\x{1F000}-\x{1F6FF}';
+
     if (preg_match('/^(\/|https?:|ftp:)/i', $fullurl) or preg_match('|^/|', $fullurl)) {
         // encode extra chars in URLs - this does not make it always valid, but it helps with some UTF-8 problems
-        $allowed = "a-zA-Z0-9".preg_quote(';/?:@=&$_.+!*(),-#%', '/');
-        $fullurl = preg_replace_callback("/[^$allowed]/", 'url_filter_callback', $fullurl);
+        // Thanks to 💩.la emojis count as valid, too.
+        $allowed = "[" . $letters . $latin . $digits . $symbols . $arabic . $math . $othernumbers . $geometric .
+            $emojis . "]" . preg_quote(';/?:@=&$_.+!*(),-#%', '/');
+        $fullurl = preg_replace_callback("/[^$allowed]/u", 'url_filter_callback', $fullurl);
     } else {
         // encode special chars only
         $fullurl = str_replace('"', '%22', $fullurl);
@@ -253,10 +266,17 @@ EOF;
  * @return does not return
  */
 function url_print_workaround($url, $cm, $course) {
-    global $OUTPUT;
+    global $OUTPUT, $USER;
 
     url_print_header($url, $cm, $course);
     url_print_heading($url, $cm, $course, true);
+
+    // Display any activity information (eg completion requirements / dates).
+    $cminfo = cm_info::create($cm);
+    $completiondetails = \core_completion\cm_completion_details::get_instance($cminfo, $USER->id);
+    $activitydates = \core\activity_dates::get_dates_for_module($cminfo, $USER->id);
+    echo $OUTPUT->activity_information($cminfo, $completiondetails, $activitydates);
+
     url_print_intro($url, $cm, $course, true);
 
     $fullurl = url_get_full_url($url, $cm, $course);
@@ -293,7 +313,7 @@ function url_print_workaround($url, $cm, $course) {
  * @return does not return
  */
 function url_display_embed($url, $cm, $course) {
-    global $CFG, $PAGE, $OUTPUT;
+    global $PAGE, $OUTPUT, $USER;
 
     $mimetype = resourcelib_guess_url_mimetype($url->externalurl);
     $fullurl  = url_get_full_url($url, $cm, $course);
@@ -325,6 +345,12 @@ function url_display_embed($url, $cm, $course) {
 
     url_print_header($url, $cm, $course);
     url_print_heading($url, $cm, $course);
+
+    // Display any activity information (eg completion requirements / dates).
+    $cminfo = cm_info::create($cm);
+    $completiondetails = \core_completion\cm_completion_details::get_instance($cminfo, $USER->id);
+    $activitydates = \core\activity_dates::get_dates_for_module($cminfo, $USER->id);
+    echo $OUTPUT->activity_information($cminfo, $completiondetails, $activitydates);
 
     echo $code;
 
@@ -420,7 +446,6 @@ function url_get_variable_options($config) {
         'userlastname'    => get_string('lastname'),
         'userfullname'    => get_string('fullnameuser'),
         'useremail'       => get_string('email'),
-        'usericq'         => get_string('icqnumber'),
         'userphone1'      => get_string('phone1'),
         'userphone2'      => get_string('phone2'),
         'userinstitution' => get_string('institution'),
@@ -428,7 +453,6 @@ function url_get_variable_options($config) {
         'useraddress'     => get_string('address'),
         'usercity'        => get_string('city'),
         'usertimezone'    => get_string('timezone'),
-        'userurl'         => get_string('webpage'),
     );
 
     if ($config->rolesinparams) {
@@ -483,7 +507,6 @@ function url_get_variable_values($url, $cm, $course, $config) {
         $values['userlastname']    = $USER->lastname;
         $values['userfullname']    = fullname($USER);
         $values['useremail']       = $USER->email;
-        $values['usericq']         = $USER->icq;
         $values['userphone1']      = $USER->phone1;
         $values['userphone2']      = $USER->phone2;
         $values['userinstitution'] = $USER->institution;
@@ -492,7 +515,6 @@ function url_get_variable_values($url, $cm, $course, $config) {
         $values['usercity']        = $USER->city;
         $now = new DateTime('now', core_date::get_user_timezone_object());
         $values['usertimezone']    = $now->getOffset() / 3600.0; // Value in hours for BC.
-        $values['userurl']         = $USER->url;
     }
 
     // weak imitation of Single-Sign-On, for backwards compatibility only

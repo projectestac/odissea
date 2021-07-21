@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_activity_results', language 'gl', version '3.8'.
+ * Strings for component 'block_activity_results', language 'gl', version '3.11'.
  *
  * @package     block_activity_results
  * @category    string
@@ -35,7 +35,7 @@ $string['config_format_absolute'] = 'Números absolutos';
 $string['config_format_fraction'] = 'Fraccións';
 $string['config_format_percentage'] = 'Porcentaxes';
 $string['config_grade_format'] = 'Amosar as cualificacións como:';
-$string['config_name_format'] = 'Privacidade de resultados';
+$string['config_name_format'] = 'Privacidade dos resultados';
 $string['config_names_anon'] = 'Resultados anónimos';
 $string['config_names_full'] = 'Amosar nomes completos';
 $string['config_names_id'] = 'Amosar só números ID';
@@ -53,7 +53,7 @@ $string['defaulthighestgrades'] = 'Amosar as cualificacións máis altas como pr
 $string['defaulthighestgrades_desc'] = 'Cantas cualificacións das máis altas deberán amosarse?';
 $string['defaultlowestgrades'] = 'Amosar as cualificacións máis baixas como predeterminado';
 $string['defaultlowestgrades_desc'] = 'Cantas cualificacións das máis baixas deberán amosarse?';
-$string['defaultnameoptions'] = 'Privacidade de resultados';
+$string['defaultnameoptions'] = 'Privacidade dos resultados';
 $string['defaultnameoptions_desc'] = 'Como se deberían identificar os alumnos de xeito predeterminado?';
 $string['defaultshowgroups'] = 'Amosar os grupos de xeito predeterminado';
 $string['defaultshowgroups_desc'] = 'Amosar grupos en vez de alumnos como predeterminado (só se a actividade permite os grupos)?';

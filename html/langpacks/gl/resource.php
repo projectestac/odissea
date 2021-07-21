@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'gl', version '3.8'.
+ * Strings for component 'resource', language 'gl', version '3.11'.
  *
  * @package     resource
  * @category    string
@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clicktodownload'] = 'Prema na ligazón {$a} para descargar o ficheiro.';
 $string['clicktoopen2'] = 'Prema na ligazón {$a} para ver o ficheiro.';
-$string['configdisplayoptions'] = 'Seleccione todas as opcións que deben estar dispoñíbeis, a configuración existente non se modifica. Manteña premida a tecla CTRL para seleccionar varios campos.';
+$string['configdisplayoptions'] = 'Seleccione todas as opcións que deben estar dispoñíbeis, os axustes existentes non se modifican. Manteña premida a tecla CTRL para seleccionar varios campos.';
 $string['configframesize'] = 'Cando se presenta unha páxina web ou un ficheiro cargado dentro dun marco, este valor é o tamaño en píxeles do marco superior (o que contén a navegación).';
-$string['configparametersettings'] = 'Isto estabelece o valor predeterminado do panel de Configuración de parámetros no formulario cando se engaden novos recursos. Tras esta primeira vez, convertese nunha preferencia do usuario individual.';
+$string['configparametersettings'] = 'Isto estabelece o valor predeterminado do panel de Axuste de parámetros no formulario cando se engaden novos recursos. Tras esta primeira vez, convertese nunha preferencia do usuario individual.';
 $string['configpopup'] = 'Cando se engade un recurso que pode amosarse nunha xanela emerxente, debe activarse como predeterminada esta opción?';
 $string['configpopupdirectories'] = 'As xanelas emerxentes, deben amosar de xeito predeterminado as ligazóns do directorio?';
 $string['configpopupheight'] = 'Que altura predeterminada deben ter as xanelas emerxentes?';
@@ -58,7 +58,7 @@ $string['dnduploadresource'] = 'Crear ficheiro de recurso';
 $string['encryptedcode'] = 'Código de cifrado';
 $string['filenotfound'] = 'Non se atopou o ficheiro';
 $string['filterfiles'] = 'Use filtros no contido do ficheiro';
-$string['filterfilesexplain'] = 'Seleccione o tipo de filtrado do contido do ficheiro, teña en conta que isto pode causar problemas para algúns miniaplicativos de Flash e Java. Asegúrese de que todos os ficheiros de texto están codificados con UTF-8.';
+$string['filterfilesexplain'] = 'Seleccione o tipo de filtrado do contido do ficheiro, teña en conta que isto pode causar problemas para algunhas miniaplicacións de Flash e Java. Asegúrese de que todos os ficheiros de texto están codificados con UTF-8.';
 $string['filtername'] = 'Autoligado de nomes de recursos';
 $string['forcedownload'] = 'Forzar a descarga';
 $string['framesize'] = 'Altura do marco';
@@ -77,7 +77,7 @@ $string['legacyfilesactive'] = 'Activo';
 $string['legacyfilesdone'] = 'Finalizada';
 $string['modifieddate'] = 'Modificado {$a}';
 $string['modulename'] = 'Ficheiro';
-$string['modulename_help'] = 'O módulo Ficheiro permítelle aos profesores fornecer un ficheiro como un recurso do curso. Cando sexa posíbel, o ficheiro presentarase dentro da interface do curso; se non é o caso, preguntaráselle aos alumnos se queren descargalo. O ficheiro pode incluír ficheiros auxiliares, por exemplo, unha páxina HTML pode ter integradas imaxes ou obxectos Flash.
+$string['modulename_help'] = 'O módulo Ficheiro permítelle aos profesores fornecer un ficheiro como un recurso do curso. Cando sexa posíbel, o ficheiro presentarase dentro da interface do curso; se non é o caso, preguntaráselle aos alumnos se queren descargalo. O ficheiro pode incluír ficheiros auxiliares, por exemplo, unha páxina HTML pode ter imaxes integradas.
 
 Vexa que os alumnos precisan dispor do software axeitado nos seus computadores persoais para poder abrir os ficheiros.
 
@@ -85,11 +85,11 @@ Un ficheiro pode utilizarse para
 
 * Compartir presentacións dadas na clase
 * Incluír un minisitio web como recurso do curso
-* Fornecer os alumnos con ficheiros en borrador de certos programas de software (p.ex. Photoshop .psd) para que os alumnos poidan editalos e envialos para avaliación';
+* Fornecer ficheiros de programas de software para que os alumnos poidan editalos e envialos para avaliación';
 $string['modulename_link'] = 'mod/resource/view';
 $string['modulenameplural'] = 'Ficheiros';
 $string['notmigrated'] = 'Este tipo de recurso legado ({$a}) aínda non foi migrado.';
-$string['optionsheader'] = 'Opcións';
+$string['optionsheader'] = 'Opcións de presentación:';
 $string['page-mod-resource-x'] = 'Calquera páxina do módulo ficheiro';
 $string['pluginadministration'] = 'Administración do módulo ficheiro';
 $string['pluginname'] = 'Ficheiro';

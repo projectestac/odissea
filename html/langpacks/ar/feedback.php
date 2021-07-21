@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ar', version '3.8'.
+ * Strings for component 'feedback', language 'ar', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add_item'] = 'أضف سؤالاً';
-$string['add_pagebreak'] = 'اضف فاصل صفحة';
+$string['add_pagebreak'] = 'إضافة فاصل صفحات';
 $string['adjustment'] = 'تعديلات';
 $string['after_submit'] = 'بعد التسليم';
 $string['allowfullanonymous'] = 'إسمح بإخفاء الهوية الكامل';
@@ -57,6 +57,7 @@ $string['complete_the_form'] = 'أجب على الأسئلة';
 $string['completed'] = 'مكتمل';
 $string['completed_feedbacks'] = 'الاجابات المسلمة';
 $string['completedon'] = 'مكتمل في {$a}';
+$string['completiondetail:submit'] = 'تقديم الإفادة';
 $string['completionsubmit'] = 'المعاينة بمثابة مكتمل إذا تم تسليم الإفادة';
 $string['configallowfullanonymous'] = 'عند ضبطه على \'نعم\'، يمكن للمستخدمين إكمال نشاط الإفادة من الصفحة الرئيسية دون الحاجة إلى تسجيل دخولهم.';
 $string['confirmdeleteentry'] = 'هل أنت متأكد من رغبتك في حذف هذا الادخال؟';
@@ -70,7 +71,7 @@ $string['creating_templates'] = 'أحفظ هذه الأسئلة كقالب جد�
 $string['delete_entry'] = 'احذف المدخل';
 $string['delete_item'] = 'احذف سؤال';
 $string['delete_old_items'] = 'احذف العناصر القديمة';
-$string['delete_pagebreak'] = 'إحذف فاصل الصفحات';
+$string['delete_pagebreak'] = 'حذف فاصل الصفحات';
 $string['delete_template'] = 'احذف قالب';
 $string['delete_templates'] = 'إحذف القالب...';
 $string['depending'] = 'التبِعات';
@@ -105,17 +106,21 @@ $string['edit_item'] = 'تحرير السؤال';
 $string['edit_items'] = 'تحرير الأسئلة';
 $string['email_notification'] = 'تمكين إشعارات التسليم';
 $string['email_notification_help'] = 'عند تمكينه، سيتلقى المعلمون إشعاراً بشأن تسليمات الإفادة.';
-$string['emailteachermail'] = 'أتم {$a->username} الإفادة: \'{$a->feedback}\' يمكنك مشاهدتها هنا: {$a->url}';
+$string['emailteachermail'] = 'لقد أكمل {$a->username} نشاط الإفادة: \'{$a->feedback}\'
+
+يمكنك مشاهدتها هنا:
+
+ {$a->url}';
 $string['emailteachermailhtml'] = '<p>لقد أكمل {$a->username} نشاط الإفادة: <i>\'{$a->feedback}\'</i>.
 </p>
 <p>إنه <a href="{$a->url}">متاح في الموقع</a>.</p>';
 $string['entries_saved'] = 'شكراً، لقد تم حفظ إجاباتك';
-$string['eventresponsedeleted'] = 'تم حذف الإجابة';
-$string['eventresponsesubmitted'] = 'تم تقديم الإجابة';
+$string['eventresponsedeleted'] = 'إجابة تم حذفها';
+$string['eventresponsesubmitted'] = 'إجابة تم تقديمها';
 $string['export_questions'] = 'تصدير الأسئلة';
 $string['export_to_excel'] = 'تصدير إلى Excel';
 $string['feedback:addinstance'] = 'إضافة إفادة جديدة';
-$string['feedback:complete'] = 'إكمال إفادة';
+$string['feedback:complete'] = 'إكمال الإفادة';
 $string['feedback:createprivatetemplate'] = 'إنشاء قالب خاص';
 $string['feedback:createpublictemplate'] = 'إنشاء قالب عام';
 $string['feedback:deletesubmissions'] = 'حذف التسليمات المكتملة';
@@ -124,8 +129,8 @@ $string['feedback:edititems'] = 'تحرير العناصر';
 $string['feedback:mapcourse'] = 'تعيين المقررات الدراسية للإفادات العمومية';
 $string['feedback:receivemail'] = 'تلقي إشعار البريد الالكتروني';
 $string['feedback:view'] = 'معاينة الإفادة';
-$string['feedback:viewanalysepage'] = 'شاهد صفحة التحليل بعد الإرسال';
-$string['feedback:viewreports'] = 'عاين التقارير';
+$string['feedback:viewanalysepage'] = 'معاينة صفحة التحليل بعد التسليم';
+$string['feedback:viewreports'] = 'معاينة التقارير';
 $string['feedback_is_not_for_anonymous'] = 'الإفادة ليست لمجهولي الهوية';
 $string['feedback_is_not_open'] = 'الإفادة ليست مفتوحة';
 $string['feedbackclose'] = 'السماح بالإجابات إلى';
@@ -165,7 +170,7 @@ $string['mapcourses'] = 'قم بتعيين الإفادة إلى المقررا�
 $string['mappedcourses'] = 'المقررات الدراسية المعينة';
 $string['mappingchanged'] = 'تعيين المقررات الدراسية قد تغير';
 $string['maximal'] = 'الأقصى';
-$string['messageprovider:message'] = 'تذكير إفادة';
+$string['messageprovider:message'] = 'تذكير بتقديم الإفادة';
 $string['messageprovider:submission'] = 'إعلامات الإفادة';
 $string['minimal'] = 'الأدنى';
 $string['mode'] = 'نمط';
@@ -217,11 +222,11 @@ $string['overview'] = 'نظرة عامة';
 $string['page'] = 'صفحة';
 $string['page-mod-feedback-x'] = 'أي صفحة لوحدة نشاط الإفادة';
 $string['page_after_submit'] = 'رسالة الإكمال';
-$string['pagebreak'] = 'فاصل صفحات';
+$string['pagebreak'] = 'فاصل الصفحات';
 $string['pluginadministration'] = 'إدارة الإفادة';
 $string['pluginname'] = 'الإفادة';
 $string['position'] = 'موضع';
-$string['previous_page'] = 'صفحة سابقة';
+$string['previous_page'] = 'الصفحة السابقة';
 $string['privacy:metadata:completed'] = 'سِجل بالتسليمات المقدمة إلى الإفادة';
 $string['privacy:metadata:completed:anonymousresponse'] = 'فيما إذا كان التسليم معداً لإخفاء هوية صاحبه';
 $string['privacy:metadata:completed:timemodified'] = 'وقت آخر تعديل في التسليم';
@@ -255,7 +260,7 @@ $string['searchcourses'] = 'البحث في المقررات الدراسية';
 $string['searchcourses_help'] = 'إبحث عن رمز أو اسم المقرر/المقررات التي تريد ربطها مع هذه الإفادة.';
 $string['selected_dump'] = 'الفهارس المختارة لمتغير $SESSION مطروحة أدناه:';
 $string['send'] = 'أرسل';
-$string['send_message'] = 'أرسل الرسالة';
+$string['send_message'] = 'أرسل الإشعار';
 $string['show_all'] = 'إظهار الكل';
 $string['show_analysepage_after_submit'] = 'إظهار صفحة التحليل';
 $string['show_entries'] = 'عرض الردود';
@@ -281,8 +286,8 @@ $string['textfield_size'] = 'عرض حقل النص';
 $string['there_are_no_settings_for_recaptcha'] = 'ليست هناك إعدادات لكلمة التحقق';
 $string['this_feedback_is_already_submitted'] = 'لقد قمت مسبقاً بإكمال هذا النشاط.';
 $string['typemissing'] = 'قيمة مفقودة "النوع"';
-$string['update_item'] = 'إحفظ تغييرات السؤال';
-$string['url_for_continue'] = 'إربطه مع النشاط الآتي';
+$string['update_item'] = 'حفظ تغييرات السؤال';
+$string['url_for_continue'] = 'إربطه مع النشاط التالي';
 $string['url_for_continue_help'] = 'بعد تقديم الإفادة، سيتم عرض زر الاستمرار، والذي يذهب إلى صفحة المقرر الدراسي. كبديل عن ذلك، قد يرتبط بالنشاط الآتي إذا تم وضع رابطه هنا.';
 $string['use_one_line_for_each_value'] = 'استعمل سطراً واحداً لكل إجابة!';
 $string['use_this_template'] = 'استخدم هذا القالب';

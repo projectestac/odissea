@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'zh_cn', version '3.8'.
+ * Strings for component 'block_myoverview', language 'zh_cn', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -58,25 +58,13 @@ $string['hidecourse'] = '隐藏';
 $string['inprogress'] = '进行中';
 $string['lastaccessed'] = '最后访问';
 $string['list'] = '列表';
-$string['morecourses'] = '更多课程';
 $string['myoverview:myaddinstance'] = '增加一个新的课程概览区块到仪表板';
-$string['next30days'] = '未来30天';
-$string['next7days'] = '未来7天';
 $string['nocourses'] = '没有课程';
-$string['nocoursesfuture'] = '没有未来的课程';
-$string['nocoursesinprogress'] = '没有进行中的课程';
-$string['nocoursespast'] = '没有过期的课程';
-$string['noevents'] = '没有即将到期的活动';
 $string['past'] = '过去的';
 $string['pluginname'] = '课程概览';
 $string['privacy:request:preference:set'] = '设置 \'{$a->name}\' 的值是 \'{$a->value}\'';
-$string['recentlyoverdue'] = '最近逾期的';
 $string['removefromfavourites'] = '撤销标星此课程';
+$string['shortname'] = '简称';
 $string['show'] = '恢复';
-$string['sortbycourses'] = '按课程排序';
-$string['sortbydates'] = '按日期排序';
 $string['summary'] = '摘要';
-$string['timeline'] = '时间轴';
 $string['title'] = '课程名称';
-$string['viewcourse'] = '查看课程';
-$string['viewcoursename'] = '检视课程{$a}';

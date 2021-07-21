@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'table', language 'ja', version '3.8'.
+ * Strings for component 'table', language 'ja', version '3.11'.
  *
  * @package     table
  * @category    string
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadas'] = 'テーブルデータをダウンロードする:';
+$string['missingrequiredfields'] = '1つまたはそれ以上の必須フィルタがありませんでした ({$a})。';
+$string['privacy:metadata'] = '現在、テーブルAPIはどのようなユーザデータも保存しません。';

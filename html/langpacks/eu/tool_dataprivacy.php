@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'eu', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'eu', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -31,7 +31,12 @@ $string['addnewdefaults'] = 'Gehitu modulu-lehenespen berri bat';
 $string['addpurpose'] = 'Gehitu helburua';
 $string['addroleoverride'] = 'Gehitu rol-baliogabetzea';
 $string['approve'] = 'Onartu';
+$string['approvedrequestsubmitted'] = 'Zure eskaera bidali da eta laster prozesatuko da.';
 $string['approverequest'] = 'Onartu eskaera';
+$string['automaticdatadeletionapproval'] = 'Datu-ezabatze eskaeren onarpen automatikoa';
+$string['automaticdatadeletionapproval_desc'] = 'Gaituz gero, datu-ezabatze eskaerak automatikoki onartuko dira.<br/>Kontuan izan onarpen automatikoak soilik eragingo diela ezarpen hau gaituta dagoen bitartean egindako datu-ezabatze eskaera berriei. Lehendik zain dauden datu-ezabatze eskaerak oraindik ere pribatutasunerako ordezkariak eskuz onartuko beharko ditu.';
+$string['automaticdataexportapproval'] = 'Datu-esportatze eskaeren onarpen automatikoa';
+$string['automaticdataexportapproval_desc'] = 'Gaituz gero, datu-esportatze eskaerak automatikoki onartuko dira.<br/>Kontuan izan onarpen automatikoak soilik eragingo diela ezarpen hau gaituta dagoen bitartean egindako datu-esportatze eskaera berriei. Lehendik zain dauden datu-esportatze eskaerak oraindik ere pribatutasunerako ordezkariak eskuz onartuko beharko ditu.';
 $string['automaticdeletionrequests'] = 'Sortu datu-ezabaketa automatikoen eskaerak';
 $string['automaticdeletionrequests_desc'] = 'Gaituz gero, datu-ezabaketa eskaerak automatikoki sortuko dira eskuz ezabatutako edozein erabiltzaile-konturako.';
 $string['bulkapproverequests'] = 'Onartu eskerak';
@@ -76,7 +81,7 @@ $string['createpurpose'] = 'Sortu datu-helburua';
 $string['creationauto'] = 'Automatikoki';
 $string['creationmanual'] = 'Eskuz';
 $string['datadeletion'] = 'Datu-ezabapena';
-$string['datadeletionpagehelp'] = 'Hemen atxikipen-epea iraungita duten datuak zerrendatzen dira. Mesedez berrikusi eta konfirmatu datu-ezabatzea, "Ezabatu iraungitako testuinguruak" programatutako zereginean exekutatuko dena.';
+$string['datadeletionpagehelp'] = 'Hemen atxikipen-epea iraungita duten datuak zerrendatzen dira. Mesedez berrikusi eta baieztatu datu-ezabatzea, "Ezabatu iraungitako testuinguruak" programatutako atazan exekutatuko dena.';
 $string['dataprivacy:downloadallrequests'] = 'Jaitsi erabiltzaile guztien datu esportatuak';
 $string['dataprivacy:downloadownrequest'] = 'Jaitsi zure datu esportatuak';
 $string['dataprivacy:makedatadeletionrequestsforchildren'] = 'Eskatu adingabeen datu-ezabatzea';
@@ -140,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} (erabiltzailea gunean azkenengoz
 $string['emailsalutation'] = '{$a} agurgarria,';
 $string['errorcannotrequestdeleteforother'] = 'Ez duzu erabiltzaile honentzako ezabatze-eskaera egiteko baimenik.';
 $string['errorcannotrequestdeleteforself'] = 'Ez duzu zuretzako ezabatze-eskaera egiteko baimenik.';
+$string['errorcontactdpodisabled'] = 'Pribatutasunerako ordezkariarekin harremanetan jartzeko aukera desgaituta dago';
 $string['errorcontexthasunexpiredchildren'] = '"{$a}" testuinguruak oraindik ditu iraungi ez diren azpi-testuinguruak. Ez da ezabatzeko testuingururik markatu.';
 $string['errorinvalidrequestcomments'] = 'Iruzkinen eremuan testu-soila baino ezin da gehitu.';
 $string['errorinvalidrequestcreationmethod'] = 'Sorrera-metodoaren eskaera baliogabea!';
@@ -265,13 +271,13 @@ $string['requestbydetail'] = 'Eskatzailea:';
 $string['requestcomments'] = 'Iruzkinak';
 $string['requestcomments_help'] = 'Eremu honek zure datu-eskaeraren inguruko xehetasun gehiago emateko aukera ematen dizu.';
 $string['requestcreation'] = 'Sorrera';
-$string['requestdenied'] = 'Eskaera gaitzetsi da';
+$string['requestdenied'] = 'Eskaera ukatu da';
 $string['requestemailintro'] = 'Datu-eskaera bat jaso duzu:';
 $string['requestfor'] = 'Erabiltzailea';
 $string['requestmarkedcomplete'] = 'Eskaera osatutzat markatu da';
 $string['requestorigin'] = 'Gunea';
 $string['requestsapproved'] = 'Eskaerak onartu dira';
-$string['requestsdenied'] = 'Eskaerak baztertu dira';
+$string['requestsdenied'] = 'Eskaerak ukatu dira';
 $string['requeststatus'] = 'Egoera';
 $string['requestsubmitted'] = 'Zure eskaera guneko pribatutasunerako ordezkariari bidali zaio';
 $string['requesttype'] = 'Mota';
@@ -326,7 +332,6 @@ $string['statusdeleted'] = 'Ezabatuta';
 $string['statusdetail'] = 'Egoera:';
 $string['statusexpired'] = 'Iraungita';
 $string['statuspending'] = 'Onartu gabe';
-$string['statuspreprocessing'] = 'Aurre-prozesatzen';
 $string['statusprocessing'] = 'Prozesatzen';
 $string['statusready'] = 'Jaisteko prest';
 $string['statusrejected'] = 'Ukatuta';

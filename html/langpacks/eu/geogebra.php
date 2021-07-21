@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'eu', version '3.8'.
+ * Strings for component 'geogebra', language 'eu', version '3.11'.
  *
  * @package     geogebra
  * @category    string
@@ -74,7 +74,6 @@ $string['geogebraurl_help'] = 'Ezarpen honek GeoGebra jarduera zehazteko URL bat
 $string['grade'] = 'Kalifikatu';
 $string['gradeit'] = 'Kalifikatu';
 $string['grademethod'] = 'Kalifikazio-metodoa';
-$string['header_geogebra'] = 'GeoGebra-ren ezarpenak';
 $string['height'] = 'Altuera';
 $string['highestattempt'] = 'Saiakera altuena';
 $string['httpnotallowed'] = 'Une honetan ez dago baimenduta kanpoko fitxategiak erabiltzea';

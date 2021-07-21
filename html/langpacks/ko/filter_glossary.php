@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_glossary', language 'ko', version '3.8'.
+ * Strings for component 'filter_glossary', language 'ko', version '3.11'.
  *
  * @package     filter_glossary
  * @category    string

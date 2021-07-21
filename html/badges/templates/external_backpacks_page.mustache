@@ -25,32 +25,58 @@
     Example context (json):
     {
         "backpacks": [
-            {"backpackweburl": "http://localhost/", "sitebackpack": true, "canedit": false, "cantest": true}
+            {
+                "backpackweburl": "http://localhost/",
+                "sitebackpack": true,
+                "cantest": true,
+                "canmoveup": true,
+                "canmovedown": false
+            }
         ]
     }
 }}
-<table class="generaltable fullwidth">
+
+<form action="{{baseurl}}" method="get" id="createbackpack">
+   <input type="hidden" name="action" value="edit"/>
+   <button type="submit" class="btn btn-secondary">{{#str}}newbackpack, core_badges{{/str}}</button>
+</form>
+
+<table class="generaltable fullwidth" id="backpacklist">
     <caption>{{#str}}listbackpacks, core_badges{{/str}}</caption>
     <thead>
         <tr>
             <th scope="col">{{#str}}backpackweburl, core_badges{{/str}}</th>
-            <th scope="col">{{#str}}sitebackpack, core_badges{{/str}}</th>
+            <th scope="col">{{#str}}order{{/str}}</th>
             <th scope="col">{{#str}}actions, core_badges{{/str}}</th>
         </tr>
     </thead>
     <tbody>
         {{#backpacks}}
-        <tr>
+        <tr data-backpackurl="{{{backpackweburl}}}">
             <td> {{{backpackweburl}}} </td>
-            <td> {{#sitebackpack}}Yes{{/sitebackpack}} </td>
             <td>
-            {{#canedit}}
+                {{#canmoveup}}
+                    <a href="{{baseurl}}?id={{id}}&action=moveup">{{#pix}}t/up, core,{{#str}}moveup{{/str}}{{/pix}}</a>
+                {{/canmoveup}}
+                {{^canmoveup}}
+                    {{#pix}}spacer, moodle{{/pix}}
+                {{/canmoveup}}
+                {{#canmovedown}}
+                    <a href="{{baseurl}}?id={{id}}&action=movedown">{{#pix}}t/down, core,{{#str}}movedown{{/str}}{{/pix}}</a>
+                {{/canmovedown}}
+                {{^canmovedown}}
+                    {{#pix}}spacer, moodle{{/pix}}
+                {{/canmovedown}}
+            </td>
+            <td>
                 <a href="{{baseurl}}?id={{id}}&action=edit">{{#pix}}t/edit, core,{{#str}}editsettings{{/str}}{{/pix}}</a>
-            {{/canedit}}
-            {{#cantest}}
-                <a href="{{baseurl}}?id={{id}}&action=test">
-                    {{#pix}}t/check, core,{{#str}}testsettings, core_badges{{/str}}{{/pix}}
+            {{^sitebackpack}}
+                <a href="{{baseurl}}?id={{id}}&action=delete" role="button" data-action="deletebackpack">
+                    {{#pix}}t/delete, core,{{#str}}delete{{/str}}{{/pix}}
                 </a>
+            {{/sitebackpack}}
+            {{#cantest}}
+                <a href="{{baseurl}}?id={{id}}&action=test">{{#pix}}t/check, core,{{#str}}testsettings, core_badges{{/str}}{{/pix}}</a>
             {{/cantest}}
             </td>
         </tr>

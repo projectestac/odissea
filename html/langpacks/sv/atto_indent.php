@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_indent', language 'sv', version '3.8'.
+ * Strings for component 'atto_indent', language 'sv', version '3.11'.
  *
  * @package     atto_indent
  * @category    string
@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['indent'] = 'Indrag';
 $string['outdent'] = 'Minska indrag';
 $string['pluginname'] = 'Indrag';
-$string['privacy:metadata'] = 'Plugin-modulen atto_indent lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_indent lagrar ingen personinformation.';

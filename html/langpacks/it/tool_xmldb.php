@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'it', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'it', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -114,6 +114,7 @@ $string['edit_xml_file'] = 'Modifica file XML';
 $string['enumvaluesincorrect'] = 'Valori non corretti per un campo enum';
 $string['expected'] = 'Attesi';
 $string['extensionrequired'] = 'Spiacente - per svolgere questa azione è necessaria l\'estensione PHP \'{$a}\'. Se vuoi usare questa funzionalità per favore installa l\'estensione.';
+$string['extraindexesfound'] = 'Indici extra individuati';
 $string['field'] = 'Campo';
 $string['fieldnameempty'] = 'Il nome campo è vuoto';
 $string['fields'] = 'Campi';
@@ -159,7 +160,6 @@ $string['newtable'] = 'Nuova tabella';
 $string['newtablefrommysql'] = 'Nuova tabella da MySQL';
 $string['nofieldsspecified'] = 'Non sono stati specificati campi';
 $string['nomasterprimaryuniquefound'] = 'Le colonnae referenziata dalla foreign key devonoe essere incluse in una primary o unique KEY della tabella referenziata. Da notare che la colonna in UNIQUE INDEX non è sufficiente.';
-$string['nomissingindexesfound'] = 'Non sono stati individuati indici mancanti. Il tuo DB non ha bisogno di altre azioni.';
 $string['noreffieldsspecified'] = 'Non sono stati specificati campi di riferimento';
 $string['noreftablespecified'] = 'La tabella di riferimento specificata non è stata trovata';
 $string['noviolatedforeignkeysfound'] = 'Non sono state trovate violazioni di Foreign key';
@@ -216,6 +216,7 @@ $string['wronglengthforenum'] = 'Lunghezza errata di un campo enum';
 $string['wrongnumberofreffields'] = 'Numero errato di campi di riferimento';
 $string['wrongoraclesemantics'] = 'Sono state trovate semantiche Oracle  BYTE non valide.';
 $string['wrongreservedwords'] = 'Parole riservate in uso<br/>(da notare che il nomi delle tabelle non sono importanti se si utilizza $CFG->prefix)';
+$string['yesextraindexesfound'] = 'Sono stati trovati i seguenti indici aggiuntivi.';
 $string['yesmissingindexesfound'] = '<p>Nel tuo DB sono stati individuati alcuni indici mancanti. Di seguito vengono riportati i dettagli e il codice SQL necessario per crearli (non dimenticare di effettuare un backup del database prima di eseguire il codice SQL.</p>
 <p>Dopo aver eseguito il codice SQL utilizza di nuovo questa funzione per verificare che non manchino altri indici.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Nel tuo DB sono stati individuati valori di default inconsistenti. Di seguito vengono riportati i dettagli e il codice SQL necessario per sistemarli (non dimenticare di effettuare un backup del database prima di eseguire il codice SQL.</p>

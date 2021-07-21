@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_rss_client', language 'gl', version '3.8'.
+ * Strings for component 'block_rss_client', language 'gl', version '3.11'.
  *
  * @package     block_rss_client
  * @category    string
@@ -47,7 +47,7 @@ $string['editfeeds'] = 'Editar, subscribir ou darse de baixa das fontes de notic
 $string['editnewsfeeds'] = 'Editar fontes de noticias';
 $string['editrssblock'] = 'Editar bloque de cabeceira RSS';
 $string['enableautodiscovery'] = 'Activar a autodescuberta de fontes?';
-$string['enableautodiscovery_help'] = 'De estaren activadas, as fontes das páxinas atópanse automaticamente. Por exemplo, de se introducir http://docs.moodle.org, entón atoparíase http://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss';
+$string['enableautodiscovery_help'] = 'De estaren activadas, as fontes das páxinas atópanse automaticamente. Por exemplo, de se introducir https://docs.moodle.org, entón atoparíase https://docs.moodle.org/en/index.php?title=Special:RecentChanges&feed=rss';
 $string['failedfeed'] = 'Non foi posíbel descargar a fonte; volverase tentar após {$a}';
 $string['failedfeeds'] = 'Fallou unha ou máis fontes RSS';
 $string['feed'] = 'Fontes';
@@ -74,7 +74,7 @@ $string['privacy:metadata:block_rss_client:tableexplanation'] = 'A información 
 $string['privacy:metadata:block_rss_client:title'] = 'O título da fonte RSS.';
 $string['privacy:metadata:block_rss_client:url'] = 'O URL da fonte RSS.';
 $string['privacy:metadata:block_rss_client:userid'] = 'O ID do usuario que engadiu a fonte RSS.';
-$string['refreshfeedstask'] = 'Actualizar a tarefa de fontes RSS';
+$string['refreshfeedstask'] = 'Actualizar a tarefa de fonts RSS';
 $string['remotenewsfeed'] = 'Fonte de novas remota';
 $string['rss_client:addinstance'] = 'Engadir un novo bloque de fontes RSS remotas';
 $string['rss_client:createprivatefeeds'] = 'Crear fontes RSS privadas';
@@ -87,7 +87,7 @@ $string['sharedfeed'] = 'Fontes compartidas';
 $string['shownumentrieslabel'] = 'Número máximo de entradas para amosar por bloque.';
 $string['submitters'] = 'A quen se lle permitirá definir novas fontes RSS? As fontes definidas están dispoñíbeis para calquera páxina do seu sitio.';
 $string['submitters2'] = 'Remisores';
-$string['timeout'] = 'Tempo en minutos antes de que unha fonte RSS expire na caché. Vexa que este tempo define o mínimo antes da expiración; a fonte actualizarase na caché na vindeira execución do cron despois de expirar. Os valores recomendados son de 30 minutos ou máis.';
+$string['timeout'] = 'Tempo en minutos antes de que unha fonte RSS expire na caché. Vexa que este tempo define o mínimo antes da expiración; a fonte actualizarase na caché na vindeira execución do cron após expirar. Os valores recomendados son de 30 minutos ou máis.';
 $string['timeout2'] = 'Tempo esgotado';
 $string['timeoutdesc'] = 'Tempo de vida que ten unha fonte RSS en caché (en minutos).';
 $string['updatefeed'] = 'Actualizar un URL de fonte de noticias:';

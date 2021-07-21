@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'ca', version '3.8'.
+ * Strings for component 'availability_group', language 'ca', version '3.11'.
  *
  * @package     availability_group
  * @category    string
@@ -31,7 +31,7 @@ $string['error_selectgroup'] = 'Cal que seleccioneu un grup.';
 $string['missing'] = '(Manca el grup)';
 $string['pluginname'] = 'Restriccions per grup';
 $string['requires_anygroup'] = 'Pertanyeu a qualsevol grup';
-$string['requires_group'] = 'Pertanyeu a <strong>{$a}</strong>';
+$string['requires_group'] = 'Pertanyeu al grup <strong>{$a}</strong>';
 $string['requires_notanygroup'] = 'No pertanyeu a cap grup';
 $string['requires_notgroup'] = 'No pertanyeu a <strong>{$a}</strong>';
 $string['title'] = 'Grup';

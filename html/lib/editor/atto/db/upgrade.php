@@ -32,71 +32,6 @@ defined('MOODLE_INTERNAL') || die();
 function xmldb_editor_atto_upgrade($oldversion) {
     global $CFG;
 
-    // Automatically generated Moodle v3.3.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    // Automatically generated Moodle v3.4.0 release upgrade line.
-    // Put any upgrade step following this.
-
-    if ($oldversion < 2018041100) {
-        $toolbar = get_config('editor_atto', 'toolbar');
-
-        if (strpos($toolbar, 'recordrtc') === false) {
-            $glue = "\r\n";
-            if (strpos($toolbar, $glue) === false) {
-                $glue = "\n";
-            }
-            $groups = explode($glue, $toolbar);
-            // Try to put recordrtc in files group.
-            foreach ($groups as $i => $group) {
-                $parts = explode('=', $group);
-                if (trim($parts[0]) == 'files') {
-                    $groups[$i] = 'files = ' . trim($parts[1]) . ', recordrtc';
-                    // Update config variable.
-                    $toolbar = implode($glue, $groups);
-                    set_config('toolbar', $toolbar, 'editor_atto');
-                }
-            }
-        }
-
-        // Atto editor savepoint reached.
-        upgrade_plugin_savepoint(true, 2018041100, 'editor', 'atto');
-    }
-
-    if ($oldversion < 2018051401) {
-        $toolbar = get_config('editor_atto', 'toolbar');
-        $glue = "\r\n";
-        $iconorderold = 'image, media, managefiles, recordrtc';
-        $iconordernew = 'image, media, recordrtc, managefiles';
-
-        if (strpos($toolbar, $glue) === false) {
-            $glue = "\n";
-        }
-
-        $groups = explode($glue, $toolbar);
-
-        // Reorder atto media icons if in default configuration.
-        foreach ($groups as $i => $group) {
-            $parts = explode('=', $group);
-
-            if (trim($parts[0]) == 'files') {
-                if (trim(preg_replace('/,\s*/', ', ', $parts[1])) == $iconorderold) {
-                    $groups[$i] = 'files = ' . $iconordernew;
-
-                    // Update config variable.
-                    $toolbar = implode($glue, $groups);
-                    set_config('toolbar', $toolbar, 'editor_atto');
-                }
-            }
-        }
-
-        // Atto editor savepoint reached.
-        upgrade_plugin_savepoint(true, 2018051401, 'editor', 'atto');
-    }
-
-    // Automatically generated Moodle v3.5.0 release upgrade line.
-    // Put any upgrade step following this.
-
     // Automatically generated Moodle v3.6.0 release upgrade line.
     // Put any upgrade step following this.
 
@@ -127,6 +62,50 @@ function xmldb_editor_atto_upgrade($oldversion) {
         upgrade_plugin_savepoint(true, 2019090900, 'editor', 'atto');
     }
     // Automatically generated Moodle v3.8.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    if ($oldversion < 2020052100) {
+        // The old default toolbar config for 38 and below.
+        $oldtoolbar = 'collapse = collapse
+style1 = title, bold, italic
+list = unorderedlist, orderedlist
+links = link
+files = image, media, recordrtc, managefiles, h5p
+style2 = underline, strike, subscript, superscript
+align = align
+indent = indent
+insert = equation, charmap, table, clear
+undo = undo
+accessibility = accessibilitychecker, accessibilityhelper
+other = html';
+
+        // Check if the current toolbar config matches the old toolbar config.
+        if (get_config('editor_atto', 'toolbar') === $oldtoolbar) {
+            // If the site is still using the old defaults, upgrade to the new default.
+            $newtoolbar = 'collapse = collapse
+style1 = title, bold, italic
+list = unorderedlist, orderedlist, indent
+links = link
+files = emojipicker, image, media, recordrtc, managefiles, h5p
+style2 = underline, strike, subscript, superscript
+align = align
+insert = equation, charmap, table, clear
+undo = undo
+accessibility = accessibilitychecker, accessibilityhelper
+other = html';
+            set_config('toolbar', $newtoolbar, 'editor_atto');
+        }
+
+        upgrade_plugin_savepoint(true, 2020052100, 'editor', 'atto');
+    }
+
+    // Automatically generated Moodle v3.9.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.10.0 release upgrade line.
+    // Put any upgrade step following this.
+
+    // Automatically generated Moodle v3.11.0 release upgrade line.
     // Put any upgrade step following this.
 
     return true;

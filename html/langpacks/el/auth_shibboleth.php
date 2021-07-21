@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'el', version '3.8'.
+ * Strings for component 'auth_shibboleth', language 'el', version '3.11'.
  *
  * @package     auth_shibboleth
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_shib_auth_logo'] = 'Λογότυπο μεθόδου αυθεντικοποίησης';
 $string['auth_shib_auth_logo_description'] = 'Εισαγάγετε ένα λογότυπο για τη μέθοδο αυθεντικοποίησης Shibboleth που είναι οικεία στους χρήστες σας. Αυτό θα μπορούσε να είναι το λογότυπο της ομοσπονδίας σας Shibboleth, π.χ. <tt>SWITCHaai Login</tt> ή <tt>InCommon Login</tt> ή παρόμοιο.';
 $string['auth_shib_auth_method'] = 'Όνομα Μεθόδου Αυθεντικοποίησης';
-$string['auth_shib_auth_method_description'] = 'Δώστε ένα όνομα για τη μέθοδο αυθεντικοποίησης Shibboleth που να είναι οικείο στους χρήστες σας. Αυτό θα μπορούσε να είναι το όνομα της Shibboleth ομοσπονδίας σας, π.χ. <tt>Σύνδεση SWITCHaai</ tt> ή <tt>Σύνδεση InCommon</ tt> ή παρόμοια.';
+$string['auth_shib_auth_method_description'] = 'Δώστε ένα όνομα για τη μέθοδο αυθεντικοποίησης Shibboleth που να είναι οικείο στους χρήστες σας. Αυτό θα μπορούσε να είναι το όνομα της Shibboleth ομοσπονδίας σας, π.χ. <tt>Σύνδεση SWITCHaai</tt> ή <tt>Σύνδεση InCommon</tt> ή παρόμοια.';
 $string['auth_shib_changepasswordurl'] = 'URL αλλαγής κωδικού πρόσβασης';
 $string['auth_shib_contact_administrator'] = 'Σε περίπτωση που δεν έχετε σχέση με τους δοσμένους οργανισμούς και χρειάζεστε πρόσβαση σε κάποιο μάθημα σε αυτόν τον εξυπηρετητή, παρακαλούμε <a href="mailto:{$a}">επικοινωνήστε με τον διαχειριστή του Moodle</a>.';
 $string['auth_shib_convert_data'] = 'API τροποποίησης δεδομένων';

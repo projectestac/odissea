@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'zh_cn', version '3.8'.
+ * Strings for component 'workshop', language 'zh_cn', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -48,7 +48,7 @@ $string['areasubmissionattachment'] = '提交附件';
 $string['areasubmissioncontent'] = '提交文本';
 $string['assess'] = '评价';
 $string['assessedexample'] = '已评价的示例提交';
-$string['assessedsubmission'] = '评价提交';
+$string['assessedsubmission'] = '已评价提交';
 $string['assessingexample'] = '评价示例提交';
 $string['assessingsubmission'] = '评价提交';
 $string['assessment'] = '评价';
@@ -161,7 +161,7 @@ $string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <sp
 $string['givengrades'] = '给出的分数';
 $string['grade_grading_name'] = '评价';
 $string['grade_submission_name'] = '提交';
-$string['gradecalculated'] = '计算提交成绩';
+$string['gradecalculated'] = '已计算的提交成绩';
 $string['gradedecimals'] = '成绩的小数位数';
 $string['gradegivento'] = '&gt;';
 $string['gradeinfo'] = '成绩：{$a->received}/{$a->max}';
@@ -256,6 +256,22 @@ $string['privacy:metadata:late'] = '提交是否在截止日期后提交';
 $string['privacy:metadata:peercomment'] = '由提供评价的用户对给定的成绩进行的评论';
 $string['privacy:metadata:peercommentformat'] = '对给定成绩的评论的文本格式';
 $string['privacy:metadata:preference:perpage'] = '用户希望在一个页面上看到的提交数量';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = '"示例提交"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = '"互动评价提交报表"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = '"评价表单"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = '"分配提交以评价"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = '"互动评价工具箱"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = '"总结"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = '"示例提交以评价"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = '"示例提交以评价"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = '"互动评价成绩报表"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = '"提交说明"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = '"评价说明"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = '"简介"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = '"总体反馈"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = '"提交"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = '"已发布提交"视图的折叠/展开状态。';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = '"您的成绩"视图的折叠/展开状态。';
 $string['privacy:metadata:published'] = '互动评价关闭后，是否向所有参加者公布所有提交';
 $string['privacy:metadata:reviewerid'] = '提供评价的用户的ID';
 $string['privacy:metadata:strategy'] = '解释记录值的评分策略子插件的名称';

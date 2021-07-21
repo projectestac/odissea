@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_settings', language 'sv', version '3.8'.
+ * Strings for component 'block_settings', language 'sv', version '3.11'.
  *
  * @package     block_settings
  * @category    string
@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['enabledock'] = 'Tillåt användare att docka det här blocket';
 $string['pluginname'] = 'Administration';
+$string['privacy:metadata'] = 'Blocket Administration visar endast data som lagras på andra platser.';
 $string['settings:addinstance'] = 'Lägg till blocket Inställningar';
 $string['settings:myaddinstance'] = 'Lägg till ett nytt block för Inställningar på Mitt Moodle';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'it', version '3.8'.
+ * Strings for component 'geogebra', language 'it', version '3.11'.
  *
  * @package     geogebra
  * @category    string
@@ -75,16 +75,12 @@ Questo <a href="https://youtu.be/qbp-RuM4NpU" target="_blank">video</a> spiega c
 $string['grade'] = 'Valutazione';
 $string['gradeit'] = 'Valutazione';
 $string['grademethod'] = 'Metodo di valutazione';
-$string['header_geogebra'] = 'Impostazioni GeoGebra';
-$string['header_score'] = 'Impostazioni valutazione';
 $string['height'] = 'Altezza';
 $string['highestattempt'] = 'Miglior tentativo';
 $string['httpnotallowed'] = 'Al momento non è consentito l\'uso di file esterni';
 $string['interfaceoptionsgrp'] = 'Interfaccia utente';
 $string['invalidgeogebrafile'] = 'File GeoGebra non valido. Deve avere l\'estensione ".ggb".';
 $string['invalidurl'] = 'URL non valida. Deve iniziare con http(s) e deve essere un file ".ggb" valido.';
-$string['javacodebase'] = 'Codice base GeoGebra';
-$string['javacodebase_help'] = 'URL dei file .jar di GeoGebra';
 $string['language'] = 'Lingua';
 $string['lastattempt'] = 'Ultimo tentativo';
 $string['lastattemptremaining'] = 'Questo è il tuo ultimo tentativo per questa attività';
@@ -158,6 +154,5 @@ $string['viewattempt'] = 'Visualizza';
 $string['viewattempts'] = 'Visualizza tentativi';
 $string['viewattempttab'] = 'Visualizza tentativo';
 $string['viewtab'] = 'Visualizza';
-$string['warningnojava'] = 'Questo è un applet Java creato utilizzando GeoGebra (www.geogebra.org) - sembra che Java non sia installato, visitate www.java.com';
 $string['weight'] = 'Peso';
 $string['width'] = 'Larghezza';

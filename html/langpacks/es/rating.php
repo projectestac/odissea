@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'es', version '3.8'.
+ * Strings for component 'rating', language 'es', version '3.11'.
  *
  * @package     rating
  * @category    string
@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['aggregateavg'] = 'Promedio de calificaciones';
-$string['aggregatecount'] = 'Número de Calificaciones';
+$string['aggregateavg'] = 'Promedio de valoraciones';
+$string['aggregatecount'] = 'Número de valoraciones';
 $string['aggregatemax'] = 'Calificación máxima';
 $string['aggregatemin'] = 'Calificación mínima';
-$string['aggregatenone'] = 'No hay calificaciones';
-$string['aggregatesum'] = 'Suma de calificaciones';
+$string['aggregatenone'] = 'No hay valoraciones';
+$string['aggregatesum'] = 'Suma de valoraciones';
 $string['aggregatetype'] = 'Tipo de consolidación';
 $string['aggregatetype_help'] = 'El tipo de consolidación define cómo se combinan las puntuaciones para formar la nota final en el libro de calificaciones.
 
@@ -42,13 +42,13 @@ $string['aggregatetype_help'] = 'El tipo de consolidación define cómo se combi
 
 Si "No hay valoraciones" está seleccionado, entonces la actividad no aparece en el libro de calificaciones.';
 $string['allowratings'] = '¿Permitir que los ítems sean calificados?';
-$string['allratingsforitem'] = 'Todas las clasificaciones emitidas';
+$string['allratingsforitem'] = 'Todas las valoraciones emitidas';
 $string['capabilitychecknotavailable'] = 'La comprobación de capacidades no está disponible hasta que se guarde la actividad';
 $string['couldnotdeleteratings'] = 'Lo sentimos, no se puede eliminar, puesto que alguien lo ha calificado';
 $string['norate'] = 'No se permite calificar ítems.';
-$string['noratings'] = 'No se han emitido calificaciones';
+$string['noratings'] = 'No se han emitido valoraciones';
 $string['noviewanyrate'] = 'Sólo puede consultar los resultados de elementos realizados por usted';
-$string['noviewrate'] = 'No tiene permiso para ver las calificaciones de los ítems';
+$string['noviewrate'] = 'No tiene permiso para ver las valoraciones de los ítems';
 $string['privacy:metadata:rating'] = 'La valoración ingresada por el usuario se almacena junto con una identificación del ítem que fue valorado.';
 $string['privacy:metadata:rating:rating'] = 'La valoración numérica que el usuario ingresó.';
 $string['privacy:metadata:rating:timecreated'] = 'La hora en la cual la primera valoración fue realizada.';
@@ -58,7 +58,7 @@ $string['ratepermissiondenied'] = 'No tiene permiso para calificar este ítem';
 $string['rating'] = 'Calificación';
 $string['ratinginvalid'] = 'La calificación no es correcta';
 $string['ratings'] = 'Calificaciones';
-$string['ratingtime'] = 'Limitar las calificaciones a los elementos con fechas en este rango:';
+$string['ratingtime'] = 'Limitar las valoraciones a los elementos con fechas en este rango:';
 $string['rolewarning'] = 'Roles con permiso para calificar';
-$string['rolewarning_help'] = 'Para enviar valoraciones de usuarios se requiere el permiso \'moodle/rating:rate\'  y cualquier permiso específico sobre el módulo. Los usuarios asignados a los roles siguientes deberían poder calificar ítems. La lista de roles puede ser modificada a través del enlace a permisos en el bloque de configuración.';
+$string['rolewarning_help'] = 'Para enviar valoraciones los usuarios necesitan el permiso \'moodle/rating:rate\'  y cualquier capacidad adicional específica del módulo. Los usuarios asignados a los roles siguientes deberían poder valorar ítems. La lista de roles puede ser modificada a través del enlace a permisos en el bloque de configuración o en el menú de acciones, dependiendo del tema vigente.';
 $string['scaleselectionrequired'] = 'Cuando seleccione un tipo de agregación de valoraciones también debe elegir si usar una escala o establecer una puntuación máxima.';

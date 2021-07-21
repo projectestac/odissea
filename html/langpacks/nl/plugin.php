@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'nl', version '3.8'.
+ * Strings for component 'plugin', language 'nl', version '3.11'.
  *
  * @package     plugin
  * @category    string
@@ -54,6 +54,7 @@ $string['err_response_http_code'] = 'Kon beschikbare updategegevens niet ophalen
 $string['filterall'] = 'Toon alles';
 $string['filtercontribonly'] = 'Toon enkel contributiecode';
 $string['filterupdatesonly'] = 'Toon enkel geüpdated';
+$string['incompatibleversion'] = 'Niet-compatibele Moodle-versie: {$a}';
 $string['isenabled'] = 'Ingeschakeld?';
 $string['misdepinfoplugin'] = 'Plugin info';
 $string['misdepinfoversion'] = 'Versie info';
@@ -61,11 +62,13 @@ $string['misdepsavail'] = 'Beschikbare ontbrekende afhankelijkheden';
 $string['misdepsunavail'] = 'Niet beschikbare ontbrekende afhankelijkheden';
 $string['misdepsunavaillist'] = 'Er is geen versie gevonden om aan de afhankelijkheidsvereisten te voldoen: {$a}.';
 $string['misdepsunknownlist'] = 'Niet in de plugin-map: <strong>{$a}</strong>.';
+$string['moodlebranch'] = 'Moodle {$a->min} - {$a->max}';
 $string['moodleversion'] = 'Moodle {$a}';
 $string['noneinstalled'] = 'Er zijn geen plugins van dit type geïnstalleerd';
 $string['notdownloadable'] = 'Kan pakket niet downloaden';
-$string['notdownloadable_help'] = 'ZIP-pakket met de update kan niet automatisch gedownload worden. Bekijk de documentatiepagina voor meer hulp.';
+$string['notdownloadable_help'] = 'Het ZIP-pakket met de update kan niet automatisch gedownload worden.';
 $string['notes'] = 'Notities';
+$string['notsupported'] = 'Plugin zou niet-compatibel kunnen zijn met Moodle versie {$a}';
 $string['notwritable'] = 'Pluginbestanden niet beschrijfbaar';
 $string['notwritable_help'] = 'Plugin-bestanden kunnen niet geschreven worden door de webserver. Het webserverproces moet schrijfrechten hebben in de plugin-map en alle inhoud ervan. Schrijfrechten op de root-map van een bepaald plugintype kan ook nodig zijn.';
 $string['otherplugin'] = '{$a->component}';
@@ -120,6 +123,8 @@ $string['type_cachestore'] = 'Cache opslag';
 $string['type_cachestore_plural'] = 'Cache opslag';
 $string['type_calendartype'] = 'Kalendertype';
 $string['type_calendartype_plural'] = 'Kalendertypes';
+$string['type_contentbank'] = 'Inhoudsbank';
+$string['type_contentbank_plural'] = 'Inhoudsbank plugins';
 $string['type_coursereport'] = 'Cursusrapport';
 $string['type_coursereport_plural'] = 'Cursusrapporten';
 $string['type_customfield'] = 'Aangepast veld';
@@ -145,6 +150,8 @@ $string['type_gradereport'] = 'Cijferlijstrapport';
 $string['type_gradereport_plural'] = 'Cijferlijstrapporten';
 $string['type_gradingform'] = 'Geavanceerde beoordelingsmethode';
 $string['type_gradingform_plural'] = 'Geavanceerde beoordelingsmethodes';
+$string['type_h5plib'] = 'H5P framework';
+$string['type_h5plib_plural'] = 'H5P frameworks';
 $string['type_local'] = 'Lokale plugin';
 $string['type_local_plural'] = 'lokale plugins';
 $string['type_media'] = 'Media-speler';
@@ -157,6 +164,9 @@ $string['type_mnetservice'] = 'MNet service';
 $string['type_mnetservice_plural'] = 'MNet services';
 $string['type_mod'] = 'Activiteitenmodule';
 $string['type_mod_plural'] = 'Activiteitenmodules';
+$string['type_paygw'] = 'Betaal-gateway';
+$string['type_paygw_plural'] = 'Betaal-gateways';
+$string['type_paygwmanage'] = 'Beheer betaal-gateways';
 $string['type_plagiarism'] = 'Plagiaatspreventieplugin';
 $string['type_plagiarism_plural'] = 'Plagiaatspreventieplugins';
 $string['type_portfolio'] = 'Portfolio';

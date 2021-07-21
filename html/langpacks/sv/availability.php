@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'sv', version '3.8'.
+ * Strings for component 'availability', language 'sv', version '3.11'.
  *
  * @package     availability
  * @category    string
@@ -61,7 +61,7 @@ $string['listheader_single'] = 'matcha följande';
 $string['manageplugins'] = 'Hantera begränsningar';
 $string['missingplugin'] = 'Plugin för begränsningar saknas';
 $string['or'] = 'eller';
-$string['privacy:metadata'] = 'Undersystemet för åtkomstbegränsning lagrar ingen personlig information';
+$string['privacy:metadata'] = 'Undersystemet för åtkomstbegränsning lagrar ingen personinformation.';
 $string['restrictaccess'] = 'Begränsa åtkomst';
 $string['restrictbygroup'] = 'Lägg till åtkomstbegränsning för grupp/gruppindelning';
 $string['setheading'] = '{$a->number} Består av {$a->count} begränsning(ar)';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'logstore_standard', language 'el', version '3.8'.
+ * Strings for component 'logstore_standard', language 'el', version '3.11'.
  *
  * @package     logstore_standard
  * @category    string
@@ -39,5 +39,5 @@ $string['privacy:metadata:log:other'] = 'Επιπρόσθετες πληροφο
 $string['privacy:metadata:log:realuserid'] = 'Το αναγνωριστικό του πραγματικού χρήστη πίσω από το γεγονός, κατά την απόκρυψη ενός χρήστη (με IP masquerading, NAT, etc).';
 $string['privacy:metadata:log:relateduserid'] = 'Το αναγνωριστικό χρήστη που σχετίζεται με αυτό το γεγονός';
 $string['privacy:metadata:log:timecreated'] = 'Πότε συνέβη το γεγονός';
-$string['privacy:metadata:log:userid'] = 'Το αναγνωριστικό του χρήστη που ενεργοποίησε αυτό το γεγονός';
+$string['privacy:metadata:log:userid'] = 'Το αναγνωριστικό του χρήστη που προκάλεσε αυτό το γεγονός';
 $string['taskcleanup'] = 'Καθαρισμός πίνακα καταγραφών';

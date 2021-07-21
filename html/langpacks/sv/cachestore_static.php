@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_static', language 'sv', version '3.8'.
+ * Strings for component 'cachestore_static', language 'sv', version '3.11'.
  *
  * @package     cachestore_static
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Statisk förfrågningscache';
-$string['privacy:metadata'] = 'Plugin-modulen Statisk förfrågningscache lagra vissa data, men dessa lagras bara under tiden den enskilda HTTP-förfrågningen pågår.';
+$string['privacy:metadata'] = 'Pluginmodulen Statisk förfrågningscache lagra vissa data, men dessa lagras bara under tiden den enskilda HTTP-förfrågningen pågår.';

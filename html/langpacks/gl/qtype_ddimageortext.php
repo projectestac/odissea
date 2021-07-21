@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddimageortext', language 'gl', version '3.8'.
+ * Strings for component 'qtype_ddimageortext', language 'gl', version '3.11'.
  *
  * @package     qtype_ddimageortext
  * @category    string
@@ -38,7 +38,7 @@ $string['draggableitemheader'] = 'Elemento arrastrábel {$a}';
 $string['draggableitems'] = 'Elementos arrastrábeis';
 $string['draggableitemtype'] = 'Tipo';
 $string['draggableword'] = 'Texto arrastrábel';
-$string['dropbackground'] = 'Imaxe de fondo cara onde arrastrar os marcadores';
+$string['dropbackground'] = 'Imaxe de fondo a onde arrastrar os marcadores';
 $string['dropzone'] = 'Zona de solta {$a}';
 $string['dropzoneheader'] = 'Zonas de solta';
 $string['formerror_disallowedtags'] = 'Neste texto arrastrábel só están permitidas as etiquetas «{$a}».';
@@ -56,13 +56,15 @@ $string['formerror_noytop'] = 'Debe fornecer un valor para a coordenada y para o
 $string['infinite'] = 'Sen límite';
 $string['label'] = 'Texto';
 $string['nolabel'] = 'Sen etiqueta de texto';
-$string['pleasedraganimagetoeachdropregion'] = 'A súa resposta non está completa; arrastre un elemento a cada rexión de solta.';
+$string['pleasedraganimagetoeachdropregion'] = 'A súa resposta non está completa; arrastre un elemento a cada área de solta.';
 $string['pluginname'] = 'Arrastrar e soltar sobre a imaxe';
 $string['pluginname_help'] = 'As preguntas de arrastrar e soltar sobre unha imaxe requiren que o que responde arrastre imaxes ou etiquetas de texto sobre zonas de solta definidas nunha imaxe de fondo. Os elementos arrastrábeis poden agruparse de maneira que todos os elementos dun grupo determinado teñan as mesmas cores como as zonas de solta. Os elementos dobres marcados como ilimitados poden soltarse en máis dunha zona.';
 $string['pluginname_link'] = 'question/type/ddimageortext';
 $string['pluginnameadding'] = 'Engadindo arrastrar e soltar sobre a imaxe';
 $string['pluginnameediting'] = 'Editando arrastrar e soltar sobre a imaxe';
-$string['pluginnamesummary'] = 'As imaxes ou as etiquetas de texto arrástranse e sóltanse en zonas de arrastre nunha imaxe de fondo.';
+$string['pluginnamesummary'] = 'As imaxes ou as etiquetas de texto arrástranse e sóltanse en zonas de arrastre nunha imaxe de fondo.
+
+Nota: Este tipo de pregunta non é accesíbel para usuarios con deficiencias visuais.';
 $string['previewareaheader'] = 'Vista previa';
 $string['previewareamessage'] = 'Seleccione unha imaxe de fondo, especifique elementos arrastrábeis e defina zonas de solta na imaxe de fondo sobre a que se deben soltar.';
 $string['privacy:metadata'] = 'O engadido de preguntas de arrastrar e soltar sobre unha imaxe non almacena ningún dato persoal.';

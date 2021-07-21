@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'gl', version '3.8'.
+ * Strings for component 'cache', language 'gl', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -40,7 +40,7 @@ $string['cachedef_calendar_subscriptions'] = 'Subscricións ao calendario';
 $string['cachedef_capabilities'] = 'Listado de prestacións do sistema';
 $string['cachedef_completion'] = 'Estado do completado da actividade';
 $string['cachedef_config'] = 'Axustes de configuración';
-$string['cachedef_contextwithinsights'] = 'Contexto con ideas';
+$string['cachedef_contextwithinsights'] = 'Contexto con estimacións';
 $string['cachedef_course_user_dates'] = 'As datas do usuario dos cursos definidas no modo de datas relativas';
 $string['cachedef_coursecat'] = 'Listas de categorías de cursos para un usuario en particular';
 $string['cachedef_coursecatrecords'] = 'Rexistros de categorías de cursos';
@@ -51,10 +51,10 @@ $string['cachedef_coursemodinfo'] = 'Información acumulada sobre os módulos e 
 $string['cachedef_databasemeta'] = 'Meta Información da base de datos';
 $string['cachedef_eventinvalidation'] = 'Invalidación de evento';
 $string['cachedef_externalbadges'] = 'Insignias externas dun usuario concreto';
-$string['cachedef_fontawesomeiconmapping'] = 'Asignación de iconas para o tipo de letra «awesome»';
+$string['cachedef_fontawesomeiconmapping'] = 'Asignación de iconas para a familia Awesome';
 $string['cachedef_grade_categories'] = 'Consulta de categoría de cualificación';
 $string['cachedef_groupdata'] = 'Información de grupo de curso';
-$string['cachedef_htmlpurifier'] = 'Purificador de HTML - contido limpado';
+$string['cachedef_htmlpurifier'] = 'Purificador de HTML, contido limpado';
 $string['cachedef_langmenu'] = 'Lista de idiomas dispoñíbeis';
 $string['cachedef_locking'] = 'Bloqueo';
 $string['cachedef_message_processors_enabled'] = 'Estado activado dos procesadores de mensaxes';
@@ -64,7 +64,7 @@ $string['cachedef_navigation_expandcourse'] = 'Cursos expansíbeis na navegació
 $string['cachedef_observers'] = 'Observadores do evento';
 $string['cachedef_plugin_functions'] = 'Chamadas de retorno de engadidos dispoñíbeis';
 $string['cachedef_plugin_manager'] = 'Xestor de información de engadido';
-$string['cachedef_portfolio_add_button_portfolio_instances'] = 'Instancias de portafolios para a clase «portfolio_add_button»';
+$string['cachedef_portfolio_add_button_portfolio_instances'] = 'Instancias de portafolios para a clase portfolio_add_button';
 $string['cachedef_postprocessedcss'] = 'CSS postprocesado';
 $string['cachedef_presignup'] = 'Datos de prerexistro para usuario particular non rexistrado';
 $string['cachedef_questiondata'] = 'Definicións de preguntas';
@@ -80,7 +80,7 @@ $string['cachedef_userselections'] = 'Datos usados para persistencia de selecci�
 $string['cachedef_yuimodules'] = 'Definicións do Módulo YUI';
 $string['cachelock_file_default'] = 'Bloqueo predeterminado de ficheiro';
 $string['cachestores'] = 'Almacéns de caché';
-$string['caching'] = 'Almacenamento na caché';
+$string['caching'] = 'Almacenamento na memoria caché';
 $string['canuselocalstore'] = 'Pode usar o almacén local';
 $string['component'] = 'Compoñente';
 $string['confirmlockdeletion'] = 'Confirmar a eliminación do bloqueo';
@@ -111,10 +111,10 @@ $string['editstoresuccess'] = 'Editouse satisfactoriamente o almacén da caché.
 $string['ex_configcannotsave'] = 'Non foi posíbel gardar a configuración da caché no ficheiro.';
 $string['ex_nodefaultlock'] = 'Non foi posíbel atopar unha instancia predeterminada de bloqueo.';
 $string['ex_unabletolock'] = 'Non foi posíbel obter un bloqueo para a caché.';
-$string['ex_unmetstorerequirements'] = 'Actualmente non pode usar este almacén. Vexa a documentación para determinar os requirimentos.';
+$string['ex_unmetstorerequirements'] = 'Actualmente non pode usar este almacén. Vexa a documentación para determinar os requisitos.';
 $string['gethit'] = 'Obter - Acerto';
 $string['getmiss'] = 'Obter - Fallo';
-$string['inadequatestoreformapping'] = 'Este almacén non cumpre cos requirimentos para todas as definicións coñecidas. Ás definicións para as que este almacén non é axeitado, daráselle o almacén orixinal predeterminado, no canto do almacén seleccionado.';
+$string['inadequatestoreformapping'] = 'Este almacén non cumpre cos requisitos para todas as definicións coñecidas. Ás definicións para as que este almacén non é axeitado, daráselle o almacén orixinal predeterminado, no canto do almacén seleccionado.';
 $string['invalidlock'] = 'Bloqueo incorrecto';
 $string['invalidplugin'] = 'Engadido incorrecto';
 $string['invalidstore'] = 'O almacén de caché fornecido é incorrecto';
@@ -173,10 +173,10 @@ $string['storename_help'] = 'Isto estabelece o nome do almacén. Usase para iden
 $string['storenamealreadyused'] = 'Ten que escoller un nome único para este almacén.';
 $string['storenameinvalid'] = 'Nome de almacén incorrecto. Só pode empregar a-z A-Z 0-9 - _ e espazos.';
 $string['storenotready'] = 'Almacenamento sen preparar';
-$string['storeperformance'] = 'Informe sobre o rendemento do almacén de caché - {$a} solicitudes únicas por operación.';
+$string['storeperformance'] = 'Informe sobre o rendemento do almacén de caché, {$a} solicitudes únicas por operación.';
 $string['storeready'] = 'Preparado';
 $string['storerequiresattention'] = 'Require atención.';
-$string['storerequiresattention_help'] = 'Esta instancia de almacén no está preparada para ser utilizada, mais ten asignacións. Resolver este problema mellorará o rendemento do seu sistema. Comprobe que a configuración do almacén está preparada para o seu uso e que se cumpren os requisitos de PHP.';
+$string['storerequiresattention_help'] = 'Esta instancia de almacén no está preparada para ser utilizada, mais ten asignacións. Resolver este problema mellorará o rendemento do seu sistema. Comprobe que a infraestrutura do almacén está preparada para o seu uso e que se cumpren os requisitos de PHP.';
 $string['storeresults_application'] = 'Solicitudes de almacén cando se usa como caché de aplicación.';
 $string['storeresults_request'] = 'Solicitudes de almacén cando se usa como caché de solicitudes.';
 $string['storeresults_session'] = 'Solicitudes de almacén cando se usa como caché de sesión.';

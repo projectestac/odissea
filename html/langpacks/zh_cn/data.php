@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'zh_cn', version '3.8'.
+ * Strings for component 'data', language 'zh_cn', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -127,8 +127,8 @@ $string['editorenable'] = '可编辑';
 $string['emptyadd'] = '模板为空，按缺省模板生成...';
 $string['emptyaddform'] = '您没有填写任何字段!';
 $string['entries'] = '条目';
-$string['entrieslefttoadd'] = '您必须添加{$a-> entriesleft}个以上条目才能完成此活动';
-$string['entrieslefttoaddtoview'] = '您必须添加{$a-> entrieslefttoview}个以上条目，才能查看其他参与人的条目。';
+$string['entrieslefttoadd'] = '您必须添加{$a->entriesleft}个以上条目才能完成此活动';
+$string['entrieslefttoaddtoview'] = '您必须添加{$a->entrieslefttoview}个以上条目，才能查看其他参与人的条目。';
 $string['entry'] = '条目';
 $string['entrysaved'] = '您的条目已保存';
 $string['errormustbeteacher'] = '只有教师能使用此页';
@@ -304,6 +304,7 @@ $string['rows'] = '列';
 $string['rssglobaldisabled'] = '已禁用。请参看站点变量配置。';
 $string['rsstemplate'] = 'RSS 模板';
 $string['rsstitletemplate'] = 'RSS 标题模板';
+$string['rsstype'] = '此活动的RSS种子';
 $string['save'] = '保存';
 $string['saveandadd'] = '保存并添加另一个';
 $string['saveandview'] = '保存并浏览';

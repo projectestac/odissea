@@ -53,7 +53,7 @@ class agora_script_base{
 
 		$starttime = microtime();
 
-		mtrace($this->title);
+		mtrace($this->title . "\n");
 
 		list($params, $unrecognized) = cli_get_params($this->params());
 		try {

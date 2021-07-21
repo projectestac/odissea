@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'zh_cn', version '3.8'.
+ * Strings for component 'role', language 'zh_cn', version '3.11'.
  *
  * @package     role
  * @category    string
@@ -156,6 +156,12 @@ $string['confirmunassign'] = '您确定要从此用户身上删除此角色吗�
 $string['confirmunassignno'] = '放弃';
 $string['confirmunassigntitle'] = '确认角色改变';
 $string['confirmunassignyes'] = '删除';
+$string['contentbank:access'] = '访问内容库';
+$string['contentbank:deleteanycontent'] = '从内容库中删除任何内容';
+$string['contentbank:deleteowncontent'] = '从自己的内容库删除内容';
+$string['contentbank:manageanycontent'] = '管理内容库中的任何内容';
+$string['contentbank:manageowncontent'] = '管理自己内容库的内容';
+$string['contentbank:upload'] = '上传新内容到内容库';
 $string['context'] = '场景';
 $string['course:activityvisibility'] = '隐藏/显示活动';
 $string['course:bulkmessaging'] = '给多人发送信息';

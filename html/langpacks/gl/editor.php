@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor', language 'gl', version '3.8'.
+ * Strings for component 'editor', language 'gl', version '3.11'.
  *
  * @package     editor
  * @category    string
@@ -36,12 +36,12 @@ $string['anchorhelp'] = 'Esta acción só crea unha ancora. Deberá crear manual
 $string['anchorname'] = 'Nome da ancora';
 $string['anchors'] = 'Ancoras';
 $string['baseline'] = 'Liña base';
-$string['bold'] = 'Negra';
+$string['bold'] = 'Grosa';
 $string['borderthickness'] = 'Grosor dos bordos';
 $string['bottom'] = 'Abaixo';
 $string['browse'] = 'Examinar';
 $string['cancel'] = 'Cancelar';
-$string['cellpadding'] = 'Espazado do bordo';
+$string['cellpadding'] = 'Marxe da cela';
 $string['cellspacing'] = 'Espazado da cela';
 $string['choosechar'] = 'Escolla o carácter';
 $string['chooseicon'] = 'Escolla unha icona para inserir';
@@ -54,7 +54,7 @@ $string['createanchor'] = 'Crear unha ancora';
 $string['createfolder'] = 'Crear un cartafol';
 $string['createlink'] = 'Inserir unha ligazón web';
 $string['cut'] = 'Cortar a selección';
-$string['cutpastemozilla'] = 'Desafortunadamente, non pode usar os atallos normais do teclado (nin tampouco o botón Pegar) para pegar texto neste editor. Isto debese a certa característica de seguranza incorporada a algunhas versións dos navegadores Mozilla e Firefox.<br /><br />Pode tentar unha destas tres cousas: <br /> (1) No canto de CTRL-v, use MAIÚSCULAS-Insert <br /> (2) Use o menú Edición->Pegar do seu navegador <br /> (3) Modifique as preferencias no seu navegador editando o ficheiro user.js. <br /><br />Prema no botón Aceptar de embaixo se precisa máis axuda, ou en Cancelar para volver ao editor.';
+$string['cutpastemozilla'] = 'Desafortunadamente, non pode usar os atallos normais do teclado (nin tampouco o botón Pegar) para pegar texto neste editor. Isto debese a certa característica de seguridade incorporada a algunhas versións dos navegadores Mozilla e Firefox.<br /><br />Pode tentar unha destas tres cousas: <br /> (1) No canto de CTRL-v, use MAIÚSCULAS-Insert <br /> (2) Use o menú Edición->Pegar do seu navegador <br /> (3) Modifique as preferencias no seu navegador editando o ficheiro user.js. <br /><br />Prema no botón Aceptar de embaixo se precisa máis axuda, ou en Cancelar para volver ao editor.';
 $string['delete'] = 'Eliminar';
 $string['editors'] = 'Editores de texto';
 $string['editorsettings'] = 'Administrar os editores';
@@ -93,7 +93,7 @@ $string['linkproperties'] = 'Propiedades da ligazón';
 $string['linktarget'] = 'Destino';
 $string['linktargetblank'] = 'Nova xanela';
 $string['linktargetnone'] = 'Ningún';
-$string['linktargetother'] = 'Outro (fora de servizo)';
+$string['linktargetother'] = 'Outro (fóra de servizo)';
 $string['linktargetself'] = 'O mesmo marco';
 $string['linktargettop'] = 'A mesma xanela';
 $string['linktitle'] = 'Título';

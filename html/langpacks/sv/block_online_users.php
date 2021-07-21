@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'sv', version '3.8'.
+ * Strings for component 'block_online_users', language 'sv', version '3.11'.
  *
  * @package     block_online_users
  * @category    string
@@ -31,11 +31,12 @@ $string['numuser'] = '{$a} inloggad användare';
 $string['numusers'] = '{$a} inloggade användare';
 $string['online_status:hide'] = 'Dölj min inloggningsstatus för andra användare.';
 $string['online_status:show'] = 'Visa min onlinestatus för andra användare';
-$string['online_users:addinstance'] = 'Lägg till blocket Inloggad användare';
-$string['online_users:myaddinstance'] = 'Lägg till blocket Inloggad användare på Mitt Moodle';
+$string['online_users:addinstance'] = 'Lägg till blocket Inloggade användare';
+$string['online_users:myaddinstance'] = 'Lägg till blocket Inloggade användare på Mitt Moodle';
 $string['online_users:viewlist'] = 'Visa en lista över inloggade användare';
 $string['onlinestatushiding'] = 'Tillåt dold status';
 $string['onlinestatushiding_desc'] = 'Om aktiverad har användarna möjlighet att dölja sin onlinestatus för andra användare.';
+$string['otherusers'] = 'Övriga användare ({$a})';
 $string['periodnminutes'] = 'De senaste {$a} minuterna';
 $string['pluginname'] = 'Inloggade användare';
 $string['privacy:metadata:preference:uservisibility'] = 'Inloggningsstatus synlig för andra användare i blocket Inloggade användare';

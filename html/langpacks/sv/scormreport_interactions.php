@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_interactions', language 'sv', version '3.8'.
+ * Strings for component 'scormreport_interactions', language 'sv', version '3.11'.
  *
  * @package     scormreport_interactions
  * @category    string
@@ -26,9 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interaktionsrapport';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'Om sammanfattningen av frågorna ska visas i SCORM:s interaktionsrapport';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'Om sammanfattningen av svaren ska visas i SCORM:s interaktionsrapport';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'Om sammanfattningen av resultaten ska visas i SCORM:s interaktionsrapport';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'Om sammanfattningen av de korrekta svaren ska visas i SCORM:s interaktionsrapport';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Antal användare som visas i SCORM-rapporter';
 $string['questionx'] = 'Fråga {$a}';
 $string['responsex'] = 'Svar {$a}';
+$string['resultx'] = 'Resultat {$a}';
 $string['rightanswerx'] = 'Rätt svar {$a}';
 $string['summaryofquestiontext'] = 'Sammanfattning för fråga';
 $string['summaryofresponse'] = 'Sammanfattning av svar';
+$string['summaryofresult'] = 'Sammanfattning av resultat';
 $string['summaryofrightanswer'] = 'Sammanfattning av rätt svar';

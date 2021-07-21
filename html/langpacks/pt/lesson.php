@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'pt', version '3.8'.
+ * Strings for component 'lesson', language 'pt', version '3.11'.
  *
  * @package     lesson
  * @category    string
@@ -33,7 +33,7 @@ $string['actionaftercorrectanswer_help'] = 'Após responder corretamente a uma p
 * Mostrar página não vista - As páginas são exibidas de forma aleatória sem que a mesma página seja exibida duas vezes
 * Mostrar página não respondida - As páginas são exibidas de forma aleatória, sendo as perguntas não respondidas exibidas novamente';
 $string['actions'] = 'Ações';
-$string['activitylink'] = 'Hiperligação para a próxima atividade';
+$string['activitylink'] = 'Hiperligação para a atividade seguinte';
 $string['activitylink_help'] = 'Mostra, no final duma lição, uma hiperligação para outra atividade da disciplina. Selecione a atividade na lista pendente.';
 $string['activitylinkname'] = 'Ir para: {$a}';
 $string['activityoverview'] = 'Atenção às suas Lições! Clique aqui para mais informações.';
@@ -85,6 +85,7 @@ $string['averagescore'] = 'Pontuação média';
 $string['averagetime'] = 'Tempo médio';
 $string['branch'] = 'Botão';
 $string['branchtable'] = 'Página de conteúdo';
+$string['cachedef_overrides'] = 'Informações da exceção para utilizador e para grupo';
 $string['cancel'] = 'Cancelar';
 $string['cannotfindanswer'] = 'Erro: não foi possível encontrar a resposta';
 $string['cannotfindattempt'] = 'Erro: não foi possível encontrar a tentativa';
@@ -105,7 +106,7 @@ $string['canretake'] = '{$a} pode repetir';
 $string['casesensitive'] = 'Usar regular expressions';
 $string['casesensitive_help'] = 'Se ativar esta opção, pode definir as respostas possíveis usando \'regular expressions\' para maior flexibilidade na análise das respostas dos alunos';
 $string['checkbranchtable'] = 'Assinalar página de conteúdo';
-$string['checkedthisone'] = 'Assinalou este.';
+$string['checkedthisone'] = 'Assinalou esta opção.';
 $string['checknavigation'] = 'Assinalar navegação';
 $string['checkquestion'] = 'Assinalar pergunta';
 $string['classstats'] = 'Estatísticas da turma';
@@ -119,6 +120,8 @@ $string['comments'] = 'Os seus comentários';
 $string['completed'] = 'Completou';
 $string['completederror'] = 'Concluir a lição';
 $string['completethefollowingconditions'] = 'Tem de cumprir as seguintes condições na lição <b>{$a}</b> antes de poder continuar.';
+$string['completiondetail:reachend'] = 'Visualizar a atividade até ao fim';
+$string['completiondetail:timespent'] = 'Dispender pelo menos {$a} nesta atividade';
 $string['completionendreached'] = 'Exigir conclusão';
 $string['completionendreached_desc'] = 'O aluno terá de chegar ao final da lição para concluir esta atividade';
 $string['completiontimespent'] = 'Os alunos deverão realizar esta atividade em pelo menos';
@@ -171,9 +174,9 @@ $string['displayleftif'] = 'Exibir menu apenas se a nota for superior a';
 $string['displayleftif_help'] = 'Esta opção determina se um aluno deve obter uma determinada nota para poder visualizar o menu à esquerda. Isso obriga o aluno a percorrer toda a lição na primeira tentativa e depois de obter a nota exigida, pode usar o menu à esquerda para rever a lição.';
 $string['displayleftmenu'] = 'Exibir menu';
 $string['displayleftmenu_help'] = 'Se ativar esta opção, será exibido um menu que permite aos utilizadores navegar pela lista de páginas da Lição.';
-$string['displayofgrade'] = 'Exibição da nota (apenas para alunos)';
+$string['displayofgrade'] = 'Exibição da nota (disponível apenas para os alunos)';
 $string['displayreview'] = 'Mostrar botão de \'Voltar a responder\'';
-$string['displayreview_help'] = 'Se ativar esta opção, quando uma pergunta é respondida de forma incorreta, é dado a escolher ao aluno se quer responder de novo sem obter a pontuação ou continuar a lição. Se o aluno clicar para passar para outra pergunta, a resposta selecionada (errada) será seguida. Por predefinição, os saltos de respostas erradas são definidos para "esta página" e têm uma pontuação de 0, por isso é recomendado que defina o salto de resposta errado para uma página diferente para evitar confusão aos seus alunos.';
+$string['displayreview_help'] = 'Se ativar esta opção, quando uma pergunta é respondida de forma incorreta, é dado a escolher ao aluno se quer responder de novo sem obter a pontuação ou continuar a lição. Se o aluno clicar para passar para outra pergunta, a resposta selecionada (errada) será seguida. Por predefinição, os saltos de respostas erradas são definidos para "esta página" e têm uma pontuação de 0 e, por isso, é recomendado que defina o salto de resposta errado para uma página diferente para evitar confusão aos seus alunos.';
 $string['displayscorewithessays'] = '<p>Obteve {$a->score} num máximo de {$a->tempmaxgrade} nas respostas avaliadas automaticamente.</p>
 <p>As suas respostas às perguntas de desenvolvimento ({$a->essayquestions}) serão avaliadas posteriormente e a pontuação correspondente será adicionada à pontuação final.</p>
 <p>A sua nota atual, sem as perguntas que faltam avaliar, é de  {$a->score} num máximo de {$a->grade}.</p>';
@@ -238,7 +241,7 @@ $string['false'] = 'Falso';
 $string['fileformat'] = 'Formato de ficheiro';
 $string['finalwrong'] = 'Não está bem.';
 $string['finish'] = 'Terminar';
-$string['firstanswershould'] = 'A primeira resposta deverá seguir para a página "correta".';
+$string['firstanswershould'] = '&nbsp;A primeira resposta deverá seguir para a página "correta".';
 $string['firstwrong'] = 'Não respondeu corretamente. Gostaria de tentar responder novamente? (se responder corretamente não contará para a sua nota final.)';
 $string['flowcontrol'] = 'Opções de controlo';
 $string['fractionsaddwrong'] = 'As notas positivas que selecionou não prefazem 100%.<br />A soma é de {$a}%.<br /> Pretende voltar atrás e corrigir esta pergunta?';
@@ -285,7 +288,7 @@ $string['jumps'] = 'Segue para';
 $string['jumps_help'] = 'Cada resposta (para as perguntas) ou descrição (para as páginas de conteúdo) seguem para uma página específica. A página seguinte pode ser definida de forma relativa, como \'Esta página\' ou \'Página seguinte\', ou absoluta, especificando uma das páginas da lição.';
 $string['jumpsto'] = 'Segue para <em>{$a}</em>';
 $string['leftduringtimed'] = 'Interrompeu uma lição com tempo limite.<br />Clique em Continuar para reiniciar à lição.';
-$string['leftduringtimednoretake'] = 'Interrompeu uma lição com tempo limite<br />e não é permitido repetir ou continuar a lição.';
+$string['leftduringtimednoretake'] = 'Interrompeu uma lição com tempo limite<br />e não lhe é permitido repetir ou continuar a lição.';
 $string['leftduringtimedsession'] = 'Saiu durante uma lição com tempo limite';
 $string['lesson:addinstance'] = 'Adicionar nova Lição';
 $string['lesson:edit'] = 'Editar uma lição';
@@ -320,7 +323,7 @@ $string['maxgrade'] = 'Nota máxima';
 $string['maxgrade_help'] = 'Esta opção define a nota máxima para a lição. Se o valor for 0, a lição não aparece no relatório de avaliação.';
 $string['maximumnumberofanswersbranches'] = 'Número máximo de opções de resposta';
 $string['maximumnumberofanswersbranches_help'] = 'Esta opção define o número máximo de opções de resposta que podem ser definidas nas perguntas da Lição. Se forem usadas apenas perguntas do tipo Verdadeiro/Falso, o número máximo de opções de resposta pode ser configurado para 2. Pode alterar esta opção a qualquer momento uma vez que afeta apenas o que o professor vê, e não a informação já guardada.';
-$string['maximumnumberofattempts'] = 'Número máximo de tentativas';
+$string['maximumnumberofattempts'] = 'Número máximo de tentativas por pergunta';
 $string['maximumnumberofattempts_help'] = 'Esta opção define o número máximo de tentativas permitidas para responder a uma pergunta. Se responder repetidamente de forma incorreta, quando o máximo de tentativas é atingido a lição passa automaticamente para a página seguinte.';
 $string['maximumnumberofattemptsreached'] = 'Atingiu o número máximo de tentativas permitido - A lição vai avançar para a página seguinte';
 $string['mediaclose'] = 'Mostrar botão de fechar';
@@ -406,7 +409,7 @@ $string['numberofpagesviewednotice'] = 'Número de questões respondidas: {$a->n
 $string['numerical'] = 'Numérica';
 $string['numericanswer'] = 'Resposta numérica';
 $string['numericanswer_help'] = 'Pode especificar um número apenas ou intervalo de números usando dois pontos. Por exemplo, 2:5 significa que qualquer resposta entre 2 e 5, incluindo-os, está correta.';
-$string['offlinedatamessage'] = 'Já trabalhou nesta tentativa usando um dispositivo móvel. Os dados foram guardados pela última vez neste site há {$a} atrás. Verifique que não possui trabalhos por guardar.';
+$string['offlinedatamessage'] = 'Já trabalhou nesta tentativa usando um dispositivo móvel. Os dados foram guardados pela última vez neste site há {$a} atrás. Verifique que não existem trabalhos por guardar.';
 $string['ongoing'] = 'Exibir avaliação no decorrer da lição';
 $string['ongoing_help'] = 'Se ativar esta opção, cada página da lição exibirá a pontuação obtida pelo aluno e a máxima possível de obter na lição.';
 $string['ongoingcustom'] = 'Até agora obteve {$a->score} num máximo de {$a->currenthigh} pontos.';
@@ -466,7 +469,7 @@ $string['privacy:metadata:attempts:timeseen'] = 'A data/hora em que a tentativa 
 $string['privacy:metadata:attempts:useranswer'] = 'Detalhes sobre a resposta do utilizador';
 $string['privacy:metadata:attempts:userid'] = 'O ID do utilizador';
 $string['privacy:metadata:branch'] = 'O registo das visualizações de página';
-$string['privacy:metadata:branch:flag'] = 'Se a próxima página deve ser calculado de forma aleatória';
+$string['privacy:metadata:branch:flag'] = 'Se a próxima página deve, ou não, ser calculada de forma aleatória';
 $string['privacy:metadata:branch:nextpageid'] = 'O ID da próxima página';
 $string['privacy:metadata:branch:pageid'] = 'O ID da página';
 $string['privacy:metadata:branch:retry'] = 'O número da tentativa';
@@ -499,7 +502,7 @@ $string['processerror'] = 'Ocorreu um erro durante o processo!';
 $string['progressbar'] = 'Barra de progresso';
 $string['progressbar_help'] = 'Se ativar esta opção, é exibida uma barra de progresso no fim da página da lição mostrando a percentagem aproximada de conclusão.';
 $string['progressbarteacherwarning'] = 'A barra de progresso não é exibida para {$a}';
-$string['progressbarteacherwarning2'] = 'Não vê a barra de progresso porque pode editar esta lição';
+$string['progressbarteacherwarning2'] = 'Não está a visualizar a barra de progresso porque pode editar esta lição';
 $string['progresscompleted'] = 'Completou {$a}% da lição';
 $string['qtype'] = 'Tipo de Página';
 $string['question'] = 'Inserir página de pergunta';
@@ -562,7 +565,7 @@ $string['teacherongoingwarning'] = 'A exibição da pontuação no decorrer da l
 $string['teachertimerwarning'] = 'O cronómetro só é visível para os alunos. Para testar esta funcionalidade, entre como aluno.';
 $string['thatsthecorrectanswer'] = 'A sua resposta está correta.';
 $string['thatsthewronganswer'] = 'A sua resposta <strong>não</strong> está correta.';
-$string['thefollowingpagesjumptothispage'] = 'As páginas seguintes seguem para esta';
+$string['thefollowingpagesjumptothispage'] = 'As páginas seguintes seguem para esta página';
 $string['thispage'] = 'Esta página';
 $string['timeisup'] = 'Terminou o tempo';
 $string['timelimit'] = 'Tempo limite';

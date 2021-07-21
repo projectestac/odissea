@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'error', language 'ko', version '3.8'.
+ * Strings for component 'error', language 'ko', version '3.11'.
  *
  * @package     error
  * @category    string
@@ -396,7 +396,7 @@ $string['nologinas'] = '현재 사용자 ID로는 로그인 할 수 없음';
 $string['nonmeaningfulcontent'] = '의미없는 내용';
 $string['noparticipants'] = '강좌에 참여자가 아무도 없음';
 $string['noparticipatorycms'] = '죄송하지만, 보고할만한 참여했던 강좌 모듈이 없습니다.';
-$string['nopermissions'] = '죄송합니다. 현재 ({$a})에 대한 권한이 없습니다.';
+$string['nopermissions'] = '죄송합니다. 현재 해당 권한이 없습니다 ({$ a}).';
 $string['nopermissiontocomment'] = '본 어휘집에 덧글을 추가할 수 없음!';
 $string['nopermissiontodelentry'] = '타인의 입력사항을 삭제할 수 없음!';
 $string['nopermissiontoeditcomment'] = '타인의 덧글을 수정할 수 없음!';
@@ -407,7 +407,7 @@ $string['nopermissiontomanagegroup'] = '모둠을 관리할 수 있는 권한이
 $string['nopermissiontorate'] = '항목 순위를 매길 수 없음!';
 $string['nopermissiontoshow'] = '볼 권한이 없음!';
 $string['nopermissiontounlock'] = '잠김 해제할 권한이 없음!';
-$string['nopermissiontoupdatecalendar'] = '죄송합니다. 달력 일정을 업데이트 할 권한을 가지고 있지 않습니다.';
+$string['nopermissiontoupdatecalendar'] = '죄송합니다. 달력 일정을 업데이트 할 권한이 없습니다.';
 $string['nopermissiontoviewgrades'] = '성적을 볼 수 없음';
 $string['nopermissiontoviewletergrade'] = '문자 성적을 볼 권한이 없음';
 $string['nopermissiontoviewpage'] = '이  페이지를 보도록 허용되지 않았습니다.';
@@ -527,6 +527,7 @@ $string['usernotdeletedadmin'] = '사용자 삭제 실패 - 관리자 계정은 
 $string['usernotdeletederror'] = '사용자 삭제 실패 - 알 수 없는 오류';
 $string['usernotdeletedmissing'] = '사용자 삭제 실패 - 사용자명이 없음';
 $string['usernotdeletedoff'] = '사용자 삭제 실패 - 삭제가 허용되지 않음';
+$string['usernotfullysetup'] = '사용자가 완전히 설정되지 않았습니다.';
 $string['usernotincourse'] = '이 사용자는 본 강좌에 입장할 수 없음!';
 $string['usernotrenamedadmin'] = '관리자의 계정명은 바꿀 수 없음';
 $string['usernotrenamedexists'] = '사용자 아이디 변경 못함 - 이미 사용중';

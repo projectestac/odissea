@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'ar', version '3.8'.
+ * Strings for component 'langconfig', language 'ar', version '3.11'.
  *
  * @package     langconfig
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['alphabet'] = 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,أ,إ,آ,ا,ب,ت,ث,ج,ح,خ,د,ذ,ر,ز,س,ش,ص,ض,ط,ظ,ع,غ,ف,ق,ك,ل,م,ن,ه,و,ي';
-$string['backupnameformat'] = '%Y-%m-%d-%H-%M';
+$string['backupnameformat'] = '%Y%m%d-%H%M';
 $string['dateintervaldayshoursmins'] = '%ad %hh %im';
 $string['decsep'] = '.';
 $string['firstdayofweek'] = '1';
@@ -34,7 +34,8 @@ $string['iso6391'] = 'ar';
 $string['iso6392'] = 'ara';
 $string['labelsep'] = ':';
 $string['listsep'] = '،';
-$string['locale'] = 'ar_SA.UTF-8';
+$string['locale'] = 'ar_SA.utf8';
+$string['localecldr'] = 'en-AU';
 $string['localewin'] = 'Arabic_Saudi Arabia.1256';
 $string['localewincharset'] = 'WINDOWS-1256';
 $string['oldcharset'] = 'WINDOWS-1256';

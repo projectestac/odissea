@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'ar', version '3.8'.
+ * Strings for component 'repository_recent', language 'ar', version '3.11'.
  *
  * @package     repository_recent
  * @category    string
@@ -31,5 +31,7 @@ $string['notitle'] = 'بلا عنوان';
 $string['pluginname'] = 'الملفات الأخيرة';
 $string['pluginname_help'] = 'الملفات المستعملة مؤخراً من قبل المستخدم الحالي';
 $string['privacy:metadata'] = 'إن ملحق مستودع الملفات المستعملة مؤخراً لا يخزن أو يرسل أي بيانات شخصية.';
-$string['recent:view'] = 'مشاهدة إضافة الملفات الأخيرة';
+$string['recent:view'] = 'معاينة ملحق الملفات الأخيرة في المستودع';
 $string['recentfilesnumber'] = 'عدد الملفات الأخيرة';
+$string['timelimit'] = 'حد الوقت';
+$string['timelimit_help'] = 'فقط استرجع الملفات المستعملة مؤخراً ضمن الحد الزمني';

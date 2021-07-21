@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hotpotreport_overview', language 'ar', version '3.8'.
+ * Strings for component 'hotpotreport_overview', language 'ar', version '3.11'.
  *
  * @package     hotpotreport_overview
  * @category    string

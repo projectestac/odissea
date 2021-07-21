@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'gl', version '3.8'.
+ * Strings for component 'auth_mnet', language 'gl', version '3.11'.
  *
  * @package     auth_mnet
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['auth_mnet_auto_add_remote_users'] = 'Cando se estabelece a «Si», crease automaticamente un rexistro local de usuario cando un usuario remoto accede por primeira vez.';
 $string['auth_mnet_roamin'] = 'Estes usuarios deste enderezo/máquina poden percorrer o seu sitio.';
 $string['auth_mnet_roamout'] = 'Os seus usuarios poden saír a percorrer estes enderezos/máquinas';
-$string['auth_mnet_rpc_negotiation_timeout'] = 'O tempo límite en segundos para autenticarse a través de transporte XMLRPC.';
+$string['auth_mnet_rpc_negotiation_timeout'] = 'O límite de tempo en segundos para autenticarse a través de transporte XMLRPC.';
 $string['auth_mnetdescription'] = 'Os usuarios son autenticados conforme a web de confianza definida nos axustes da Rede Moodle.';
 $string['auto_add_remote_users'] = 'Engadir automaticamente usuarios remotos';
 $string['crontask'] = 'Procesamento en segundo plano para a autenticación MNET';
@@ -67,7 +67,7 @@ $string['privacy:metadata:mnet_external:msn'] = 'O identificador MSN do usuario'
 $string['privacy:metadata:mnet_external:phone1'] = 'Un número de teléfono para o usuario.';
 $string['privacy:metadata:mnet_external:phone2'] = 'Un número adicional de teléfono para o usuario.';
 $string['privacy:metadata:mnet_external:picture'] = 'Os detalles da imaxe asociada con este usuario.';
-$string['privacy:metadata:mnet_external:policyagreed'] = 'Unha sinalización para determinar se o usuario aceptou a política do sitio.';
+$string['privacy:metadata:mnet_external:policyagreed'] = 'Unha sinalización para determinar se o usuario aceptou as normas do sitio.';
 $string['privacy:metadata:mnet_external:skype'] = 'O identificador Skype do usuario';
 $string['privacy:metadata:mnet_external:suspended'] = 'Unha sinalización para amosar se o usuario foi suspendido neste sistema';
 $string['privacy:metadata:mnet_external:timezone'] = 'O fuso horario do usuario.';
@@ -96,7 +96,7 @@ $string['privacy:metadata:mnet_session:token'] = 'Identificador único da sesió
 $string['privacy:metadata:mnet_session:useragent'] = 'Axente de usuario usado para acceder ao sistema remoto';
 $string['privacy:metadata:mnet_session:userid'] = 'ID do usuario saltando ao sistema remoto.';
 $string['privacy:metadata:mnet_session:username'] = 'Nome de usuario do usuario saltando ao sistema remoto.';
-$string['rpc_negotiation_timeout'] = 'Tempo límite de negociación RPC';
+$string['rpc_negotiation_timeout'] = 'Límite de tempo de negociación RPC';
 $string['sso_idp_description'] = 'Publique este servizo para permitirlle aos seus usuarios percorrer o sitio Moodle {$a} sen ter que volver identificarse alí. <ul><li><em>Dependencia</em>: vostede debe <strong>subscribirse</strong> tamén ao servizo SSO (provedor de servizos) en {$a}.</li></ul><br />Subscríbase a este servizo para permitirlle aos usuarios autenticados de {$a} acceder ao seu sitio sen tener que volver identificarse. <ul><li><em>Dependencia</em>: vostede debe <strong>publicar</strong> tamén o servizo SSO (provedor de servizos) a {$a}.</li></ul><br />';
 $string['sso_idp_name'] = 'SSO (provedor de identidade)';
 $string['sso_mnet_login_refused'] = 'Ao nome de usuario {$a->user} non lle está permitido acceder dende {$a->host}.';

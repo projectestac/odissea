@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'sv', version '3.8'.
+ * Strings for component 'resource', language 'sv', version '3.11'.
  *
  * @package     resource
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['clicktodownload'] = 'Klicka på länken {$a} för att ladda ner filen.';
 $string['clicktoopen2'] = 'Klicka på länken {$a} för att visa filen.';
 $string['configdisplayoptions'] = 'Välj alla alternativ som ska vara tillgängliga, de befintliga inställningarna påverkas inte. Håll nere CTRL-tangenten för att välja flera fält. ';
-$string['configframesize'] = 'Det här värdet är storleken (i pixlar)på den översta ramen (som innehåller navigationsverktygen)  när en webbsida eller en uppladdad fil visas i en ram.';
+$string['configframesize'] = 'När en webbsida eller en uppladdad fil visas i en ram är det här värdet höjden (i bildpunkter) i den övre ramen (som innehåller navigeringen).';
 $string['configparametersettings'] = 'Det här ställer in standardvärdet för rutan för inställningar av parametrar i formuläret när Du vill lägga till nya resurser. Efter det att Du har gjort detta en första gång så blir detta en individuell inställning för varje användare.';
 $string['configpopup'] = 'När Du lägger till en ny resurs som går att visa i ett \'popup\'-fönster, vill Du då att detta alternativ ska vara det förinställda standardvalet?';
 $string['configpopupdirectories'] = 'Ska \'popup\'-fönster som förinställt standardval visa kataloglänkar?';
@@ -57,10 +57,10 @@ $string['dnduploadresource'] = 'Skapa filresurs';
 $string['encryptedcode'] = 'Krypterad kod';
 $string['filenotfound'] = 'Det gick tyvärr inte att hitta filen.';
 $string['filterfiles'] = 'Filtrera filinnehåll';
-$string['filterfilesexplain'] = 'Välj typ av filter för filinnehåll. Notera att det kan orsaka problem för vissa flash- och javaapplets. Var god kontrollera att alla textfiler är UTF-8-kodade.';
+$string['filterfilesexplain'] = 'Välj typ av filinnehållsfiltrering. Observera att detta kan orsaka problem för vissa Flash- och Java-appletar. Säkerställ att alla textfiler är UTF-8 kodade.';
 $string['filtername'] = 'Automatisk länkning av namn på resurs';
 $string['forcedownload'] = 'Framtvinga nedladdning';
-$string['framesize'] = 'Ramstorlek';
+$string['framesize'] = 'Höjd på ram';
 $string['indicator:cognitivedepth'] = 'Fil kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Filresurs.';
 $string['indicator:cognitivedepthdef'] = 'Fil kognitiv';
@@ -69,23 +69,24 @@ $string['indicator:socialbreadth'] = 'Fil social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Filresurs.';
 $string['indicator:socialbreadthdef'] = 'Fil social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Filresurserna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
-$string['legacyfiles'] = 'Migration av gammal kursfil';
+$string['legacyfiles'] = 'Migrering av gammal kursfil';
 $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Avslutad';
 $string['modifieddate'] = 'Ändrad {$a}';
 $string['modulename'] = 'Fil';
-$string['modulename_help'] = 'Filmodulen möjliggör läraren att tillhandahålla en fil som en resurs för kursen. Där det är möjligt kommer filen att visas inom gränssnittet för kursen, annars kommer eleverna uppmanas att ladda ner filen. Filen kan inkludera stödfiler, till exempel kan en HTML-sida ha inbäddade bilder eller flashobjekt.
+$string['modulename_help'] = 'Modulen <em>Fil</em> gör det möjligt för en lärare att tillhandahålla en fil som kursresurs. Om möjligt visas filen i kursgränssnittet. I annat fall uppmanas eleverna att ladda ner den. Filen kan innehålla stödfiler, till exempel kan en HTML-sida ha inbäddade bilder.
 
-Observera att eleverna måste ha lämplig programvara på deras datorer för att kunna öppna filen.
+Observera att eleverna måste ha lämplig programvara på sina datorer för att öppna filen.
 
-En fil kan användas för
+En fil kan användas
 
-* Att dela presentationer som givits i klassrummet
-* Att inkludera en miniwebbplats som en kursresurs
-* Att tillhandahålla utkast för program (t.ex. Photoshop .psd) så att eleverna kan redigera och skicka in dem för bedömning';
+* För att dela presentationer som ges i klassen
+* Att inkludera en miniwebbplats som kursresurs
+* För att tillhandahålla utkast till filer skapade för olika mjukvaror (som t.ex. Word, Photoshop eller programkod) så att deltagarna kan redigera och skicka in dem för bedömning';
 $string['modulenameplural'] = 'Filer';
 $string['notmigrated'] = 'Den här "legacy"-typen av resurs ({$a}) har tyvärr ännu inte migrerats. ';
 $string['optionsheader'] = 'Visa alternativ';
+$string['page-mod-resource-x'] = 'Valfri filmodul-sida';
 $string['pluginadministration'] = 'Administration av modul för filer';
 $string['pluginname'] = 'Fil';
 $string['popupheight'] = 'Höjd på popup-fönster (i pixlar)';
@@ -95,16 +96,23 @@ $string['popupresourcelink'] = 'Om den inte gjorde det, klicka här: {$a}';
 $string['popupwidth'] = 'Bredd på popup-fönster (i pixlar)';
 $string['popupwidthexplain'] = 'Anger standardbredden på popup-fönster.';
 $string['printintro'] = 'Visa kursbeskrivning';
-$string['printintroexplain'] = 'Vill Du visa beskrivningen av resursen under innehållet? En del visningstyper kommer inte att visa beskrivningen även om detta är aktiverat.';
+$string['printintroexplain'] = 'Vill du visa beskrivningen av resursen under innehållet? En del visningstyper kommer inte att visa beskrivningen även om detta är aktiverat.';
+$string['privacy:metadata'] = 'Pluginmodulen Filresurs lagrar ingen personinformation.';
 $string['resource:addinstance'] = 'Lägg till en ny resurs';
 $string['resource:exportresource'] = 'Exportera resurs';
 $string['resource:view'] = 'Visa resurs';
 $string['resourcecontent'] = 'Filer och undermappar';
+$string['resourcedetails_sizedate'] = '{$a->size} {$a->date}';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resourcedetails_sizetypedate'] = '{$a->size} {$a->type} {$a->date}';
+$string['resourcedetails_typedate'] = '{$a->type} {$a->date}';
 $string['search:activity'] = 'Fil';
 $string['selectmainfile'] = 'Vänligen välj huvudfilen genom att klicka på ikonen bredvid filnamnet.';
 $string['showdate'] = 'Visa uppladdnings-/ändringsdatum';
 $string['showdate_desc'] = 'Visa uppladdnings-/ändringsdatum på kurssidan?';
+$string['showdate_help'] = 'Visar uppladdningsdatumet/det ändrade datumet bredvid länkar till filen.
+
+Om det finns flera filer i den här resursen visas startfilens uppladdnings-/ändringsdatum.';
 $string['showsize'] = 'Visa storlek';
 $string['showsize_desc'] = 'Visa filstorleken på kurssidan?';
 $string['showsize_help'] = 'Visar filstorleken, t.ex. "3.1 MB ", bredvid länkar till filen. Om det finns flera filer i denna resurs, är den totala storleken på alla filer som visas';

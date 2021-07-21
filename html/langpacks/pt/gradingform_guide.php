@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'pt', version '3.8'.
+ * Strings for component 'gradingform_guide', language 'pt', version '3.11'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -92,6 +92,7 @@ $string['regrademessage1'] = 'Está prestes a guardar alterações numa grelha d
 $string['regrademessage5'] = 'Está prestes a guardar significantes alterações numa grelha de avaliação que já foi anteriormente usada. O valor na pauta não será alterado, mas a grelha ficará oculta para os alunos enquanto decorrer a reavaliação das notas.';
 $string['regradeoption0'] = 'Não marcar para reavaliar';
 $string['regradeoption1'] = 'Marcar para reavaliar';
+$string['remark_help'] = 'Adicione comentários adicionais sobre este critério.';
 $string['restoredfromdraft'] = 'NOTA: A última tentativa para avaliar este aluno não foi guardado e as notas foram restauradas. Se deseja cancelar essas alterações clique no botão abaixo \'Cancelar\'.';
 $string['save'] = 'Guardar';
 $string['saveguide'] = 'Guardar grelha';

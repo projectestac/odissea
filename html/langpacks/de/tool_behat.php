@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'de', version '3.8'.
+ * Strings for component 'tool_behat', language 'de', version '3.11'.
  *
  * @package     tool_behat
  * @category    string
@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Dieses Administrationstool unterstützt Entwickler und Softwaretestautoren bei der Erstellung und Ausführung von .feature-Dateien, die neue Moodle-Funktionalitäten beschreiben. Die einzelnen Schritte zur Verwendung von .feature Dateien sind unten aufgeführt.';
-$string['allavailablesteps'] = 'Alle verfügbaren Schritte zur Definition';
-$string['errorapproot'] = '$CFG->behat_ionic_dirroot zeigt nicht auf eine gültige Entwicklerinstallation für Moodle Mobile.';
+$string['allavailablesteps'] = 'Alle verfügbaren Schrittdefinitionen';
+$string['errorapproot'] = '$CFG->behat_ionic_dirroot zeigt nicht auf eine gültige Moodle-App-Entwicklerinstallation.';
 $string['errorbehatcommand'] = 'Fehler beim Ausführen des behat-CLI-Kommandos. Versuchen Sie {$a} --help" manuell von der CLI Konsole auszuführen, um mehr über das Problem herauszufinden.';
 $string['errorcomposer'] = 'Composer-Abhängigkeiten sind nicht installiert';
 $string['errordataroot'] = '$CFG->behat_dataroot ist nicht gesetzt oder ungültig.';
@@ -38,9 +38,9 @@ $string['fieldvalueargument_help'] = 'Dieses Argument sollte durch einen Feldwer
 $string['giveninfo'] = 'Vorgefunden (given). Prozesse zum Anlegen der Umgebung.';
 $string['infoheading'] = 'Info';
 $string['installinfo'] = 'Lesen {$a} Information für Installation und Testdurchlauf';
-$string['newstepsinfo'] = 'Lesen {$a} von Informationen wie neue Schritte definiert werden.';
+$string['newstepsinfo'] = 'Lesen Sie für Infos bitte {$a}, um neue Schrittdefinitionen hinzuzufügen.';
 $string['newtestsinfo'] = 'Lesen {$a} von Informationen zum Schreiben neuer Softwaretests.';
-$string['nostepsdefinitions'] = 'Es gibt keine Schritt-Definition, die zu diesen Filtern passt.';
+$string['nostepsdefinitions'] = 'Es gibt keine Schrittdefinition, die zu diesem Filter passt.';
 $string['pluginname'] = 'Akzeptanztest';
 $string['privacy:metadata'] = 'Das Behat-Akzeptanztest-Plugin speichert keine personenbezogenen Daten';
 $string['stepsdefinitionscomponent'] = 'Bereich';
@@ -48,8 +48,9 @@ $string['stepsdefinitionscontains'] = 'Enthält';
 $string['stepsdefinitionsfilters'] = 'Definition der Schritte';
 $string['stepsdefinitionstype'] = 'Type';
 $string['theninfo'] = 'Dann. Prüfung, damit die Ergebnisse der Erwartung entsprechen';
-$string['unknownexceptioninfo'] = 'Es gab ein Problem mit Selenium oder dem Browser. Versuchen Sie Selenium auf die letzte Version zu aktualisieren. Fehler:';
+$string['unknownexceptioninfo'] = 'Es gab ein Problem mit <a href="https://de.wikipedia.org/wiki/Selenium" target="_blank">Selenium</a> oder mit Ihrem Browser. Versuchen Sie Selenium, auf die letzte Version zu aktualisieren. Fehler:';
 $string['viewsteps'] = 'Filter';
+$string['warndirrootconfigfound'] = 'Eine Konfigurationsdatei wurde gefunden {$a}. Diese Datei wird nicht automatisch aktualisiert und könnte ungültig werden. Wir empfehlen, diese Datei zu entfernen.';
 $string['wheninfo'] = 'Wenn. Aktion, die einen Event auslöst.';
 $string['wrongbehatsetup'] = 'Mit dem Behat Setup ist ein Problem aufgetreten. Die Definitionsschritte können nicht aufgelistet werden: <b>{$a->errormsg}</b><br/><br/>Prüfen Sie bitte:<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix und $CFG->behat_wwwroot, die in der  config.php  angelegt sein müssen und deren Werte sich von den Werten für $CFG->dataroot, $CFG->prefix und $CFG->wwwroot unterscheiden müssen.</li>

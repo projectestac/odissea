@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_community', language 'ar', version '3.8'.
+ * Strings for component 'block_community', language 'ar', version '3.11'.
  *
  * @package     block_community
  * @category    string
@@ -33,9 +33,11 @@ $string['addedtoblock'] = 'تم أضافة رابط لهذا المقرر الد
 $string['addtocommunityblock'] = 'احفط الربط لهذا المقرر الدراسي';
 $string['audience'] = 'صمم لـ';
 $string['audience_help'] = 'ما هو نوع المقرر الدراسي الذي تبحث عنه؟ مع العم أن جميع المقررات الدراسية التقليدية معدة للطلاب، من الممكن البحث في مجتمعات المعلمين أو مدراء مودل';
-$string['blocks'] = 'كتل';
+$string['blocks'] = 'الكتل';
 $string['cannotselecttopsubject'] = 'لا يمكن اختيار مستوى أعلى للموضوع';
 $string['comments'] = 'تعليقات ({$a})';
+$string['community:addinstance'] = 'إضافة كتلة جديدة من مكتشف المجتمعات';
+$string['community:myaddinstance'] = 'إضافة كتلة جديدة من مكتشف المجتمعات إلى دفة القيادة';
 $string['contentinfo'] = 'الموضوع: {$a->subject} - المستفدون: {$a->audience} - المستوى التعليمي: {$a->educationallevel}';
 $string['continue'] = 'استمر';
 $string['contributors'] = '- المساهمون: {$a}';
@@ -70,7 +72,7 @@ $string['nocomments'] = 'لا يوجد تعليقات';
 $string['nocourse'] = 'لا يوجد مقررات دراسية';
 $string['noratings'] = 'لا يوجد ترتيب';
 $string['operation'] = 'عملية';
-$string['orderby'] = 'أفرز بـ';
+$string['orderby'] = 'الفرز حسب';
 $string['orderbyeldest'] = 'الأقدم';
 $string['orderbyname'] = 'اسم';
 $string['orderbynewest'] = 'الأحدث';

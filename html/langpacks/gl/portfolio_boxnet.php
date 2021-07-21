@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'gl', version '3.8'.
+ * Strings for component 'portfolio_boxnet', language 'gl', version '3.11'.
  *
  * @package     portfolio_boxnet
  * @category    string
@@ -26,26 +26,26 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'ID do cliente';
-$string['clientsecret'] = 'Secreto do cliente';
+$string['clientsecret'] = 'Segredo do cliente';
 $string['existingfolder'] = 'Cartafol existente para incluír ficheiros';
 $string['folderclash'] = 'O cartafol que tenta crear xa existe';
 $string['foldercreatefailed'] = 'Non foi posíbel crear o cartafol de destino en Box';
 $string['folderlistfailed'] = 'Non foi posíbel crear o cartafol destino en Box';
-$string['missinghttps'] = 'Require HTTPS';
+$string['missinghttps'] = 'Requírese HTTPS';
 $string['missinghttps_help'] = 'Box soamente traballará cun sitio que teña activado HTTPS.';
-$string['missingoauthkeys'] = 'Faltan o ID e o secreto do cliente';
-$string['missingoauthkeys_help'] = 'Non hai un ID ou secreto do cliente configurado para este engadido. Pode obter un destes da páxina de desenvolvemento de Box.';
+$string['missingoauthkeys'] = 'Faltan o ID e o segredo do cliente';
+$string['missingoauthkeys_help'] = 'Non hai un ID ou segredo do cliente configurado para este engadido. Pode obter un destes da páxina de desenvolvemento de Box.';
 $string['newfolder'] = 'Cartafol novo para incluír ficheiros';
-$string['noauthtoken'] = 'Non foi posíbel obter unha credencial de autenticación para empregar nesta sesión';
+$string['noauthtoken'] = 'Non foi posíbel obter un testemuño de autenticación para empregar nesta sesión';
 $string['notarget'] = 'Ten que especificar se se enviará a un cartafol existente ou a un novo';
-$string['noticket'] = 'Non foi posíbel recibir un ticket desde Box para comezar coa sesión de autenticación';
+$string['noticket'] = 'Non foi posíbel recibir un ticket dende Box para comezar coa sesión de autenticación';
 $string['password'] = 'O seu contrasinal de Box (non se gardará)';
-$string['pluginname'] = 'Box';
+$string['pluginname'] = 'Caixa';
 $string['privacy:metadata'] = 'Este engadido envía datos externamente a unha conta de Box ligada. Non almacena datos localmente.';
 $string['privacy:metadata:data'] = 'Datos persoais pasados a mediante o subsistema portafolios.';
 $string['sendfailed'] = 'Non foi posíbel enviar contido a Box: {$a}';
 $string['setupinfo'] = 'Instrucións de configuración';
-$string['setupinfodetails'] = 'Para obter un secreto e un ID de cliente, entre en Box e visite a <a href="{$a->servicesurl}">Páxina de desenvolvedores de Box(Box developers page)</a>. Siga «Crear unha nova aplicación (Create new application» e cree unha nova aplicación para o seu sitio Moodle. O ID do cliente e o secreto amósanse na sección de «OAuth2 parameters» do formulario de edición da aplicación. Opcionalmente, tamén pode  fornecer outra información sobre o seu sitio Moodle';
+$string['setupinfodetails'] = 'Para obter un segredo e un ID de cliente, entre en Box e visite a <a href="{$a->servicesurl}">Páxina de desenvolvedores de Box(Box developers page)</a>. Siga «Crear unha nova aplicación (Create new application» e cree unha nova aplicación para o seu sitio Moodle. O ID do cliente e o segredo amósanse na sección de «OAuth2 parameters» do formulario de edición da aplicación. Opcionalmente, tamén pode  fornecer outra información sobre o seu sitio Moodle';
 $string['sharedfolder'] = 'Compartido';
 $string['sharefile'] = 'Compartir este ficheiro?';
 $string['sharefolder'] = 'Compartir este cartafol novo?';

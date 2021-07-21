@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_datetime', language 'sv', version '3.8'.
+ * Strings for component 'profilefield_datetime', language 'sv', version '3.11'.
  *
  * @package     profilefield_datetime
  * @category    string
@@ -30,7 +30,11 @@ $string['defaultdate'] = 'Förvalt datum';
 $string['endyear'] = 'Slutår';
 $string['notset'] = 'Inte satt';
 $string['pluginname'] = 'Datum/Tid';
+$string['privacy:metadata:profilefield_datetime:data'] = 'Användardata för användarprofilfält för datum/tid';
+$string['privacy:metadata:profilefield_datetime:dataformat'] = 'Formatet för användarprofilfältdata för datum/tid';
+$string['privacy:metadata:profilefield_datetime:fieldid'] = 'Profilfältets ID';
 $string['privacy:metadata:profilefield_datetime:tableexplanation'] = 'Ytterligare profildata';
+$string['privacy:metadata:profilefield_datetime:userid'] = 'ID:et för den användare vars data lagras i Datum/tid-användarprofilfältet';
 $string['specifydatedefault'] = 'eller specificera ett datum';
 $string['startyear'] = 'Startår';
 $string['startyearafterend'] = 'Startåret kan inte inträffa efter slutåret';

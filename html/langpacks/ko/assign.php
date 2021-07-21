@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'ko', version '3.8'.
+ * Strings for component 'assign', language 'ko', version '3.11'.
  *
  * @package     assign
  * @category    string
@@ -165,7 +165,7 @@ $string['invalidgradeforscale'] = '입력한 성적은 현재 척도에 맞지 �
 $string['lastmodifiedgrade'] = '마지막 수정됨(성적)';
 $string['lastmodifiedsubmission'] = '마지막 수정됨(제출)';
 $string['latesubmissions'] = '늦은 제출';
-$string['latesubmissionsaccepted'] = '연장 허가를 받은 학생들만 아직 과제를 제출할 수 있습니다';
+$string['latesubmissionsaccepted'] = '{$a}까지만 제출 가능합니다.';
 $string['locksubmissionforstudent'] = '다음 학생에 대해 추가 제출을 못하도록 합니다:  (아이디={$a->id}, 전체이름={$a->fullname})';
 $string['locksubmissions'] = '제출 잠금';
 $string['manageassignfeedbackplugins'] = '과제 피드백 플러그인 관리';
@@ -189,16 +189,16 @@ $string['maxattempts'] = '최대 시도';
 $string['maxgrade'] = '최대 성적';
 $string['messageprovider:assign_notification'] = '과제 통지';
 $string['modulename'] = '과제';
-$string['modulenameplural'] = '과제';
+$string['modulenameplural'] = '과제물들';
 $string['multipleteams'] = '한 그룹 이상의 회원';
 $string['multipleteams_desc'] = '본 과제는 그룹 제출 과제입니다. 당신은 두 그룹 이상의 회원입니다. 과제 제출을 위해서는 반드시 한 곳에만 속해 있어야 합니다.  가입된 그룹을 변경 하려면 담당 선생님께 문의하시기 바랍니다.';
 $string['mysubmission'] = '내 제출';
 $string['newsubmissions'] = '제출된 과제들';
-$string['noattempt'] = '시도 없음';
+$string['noattempt'] = '시도 하지 않음';
 $string['nofiles'] = '파일 없음';
 $string['nograde'] = '성적 없음';
 $string['nolatesubmissions'] = '늦은 제출은 받지 않습니다.';
-$string['nomoresubmissionsaccepted'] = '더 이상 제출을 받지 않습니다';
+$string['nomoresubmissionsaccepted'] = '기한 연장이 인정된 참가자들에게만 허용됨';
 $string['noonlinesubmissions'] = '이 과제는 온라인으로 제출하는 것을 요구하지 않습니다.';
 $string['nosavebutnext'] = '다음';
 $string['nosubmission'] = '이 과제에 대해 제출된 것이 없습니다.';
@@ -211,10 +211,10 @@ $string['notifications'] = '통지';
 $string['notsubmittedyet'] = '아직 제출되지 않음';
 $string['nousersselected'] = '선택된 사용자가 없습니다.';
 $string['numberofdraftsubmissions'] = '초안';
-$string['numberofparticipants'] = '참가자';
+$string['numberofparticipants'] = '참가자들';
 $string['numberofsubmissionsneedgrading'] = '채점이 필요합니다.';
 $string['numberofsubmittedassignments'] = '제출함';
-$string['numberofteams'] = '모둠';
+$string['numberofteams'] = '그룹들';
 $string['offline'] = '온라인 제출이 필요하지 않습니다.';
 $string['open'] = '열기';
 $string['outlinegrade'] = '성적 {$a}';
@@ -257,13 +257,13 @@ $string['sendsubmissionreceipts'] = '학생들에게 제출 확인증을 보냅�
 $string['settings'] = '과제 설정';
 $string['showrecentsubmissions'] = '최근 제출물 보기';
 $string['status'] = '상태';
-$string['submission'] = '제출';
+$string['submission'] = '제출물';
 $string['submissiondrafts'] = '학생들이 제출 버튼 클릭 필요';
-$string['submissioneditable'] = '학생들은 이 제출을 편집할 수 있습니다.';
+$string['submissioneditable'] = '학생들은 이 제출물을 편집할 수 있습니다.';
 $string['submissionempty'] = '아무것도 제출되지 않았습니다.';
 $string['submissionlog'] = '학생: {$a->fullname}, 상태: {$a->status}';
 $string['submissionnotcopiedinvalidstatus'] = '제출물이 다시 열린 후에 편집되어 제출물이 복사되지 않았습니다.';
-$string['submissionnoteditable'] = '학생들은 이 제출을 편집할 수 없습니다.';
+$string['submissionnoteditable'] = '학생들은 이 제출물을 편집할 수 없습니다.';
 $string['submissionnotready'] = '이 과제는 제출할  준비가 안되어 있습니다.';
 $string['submissionplugins'] = '제출 플러그인';
 $string['submissionreceipts'] = '제출 확인증 보내기';
@@ -284,12 +284,12 @@ $string['submissionstatus'] = '제출 상태';
 $string['submissionstatus_'] = '제출이 없습니다.';
 $string['submissionstatus_draft'] = '초안(제출 되지 않았음)';
 $string['submissionstatus_marked'] = '채점됨';
-$string['submissionstatus_new'] = '새 제출';
+$string['submissionstatus_new'] = '제출물 없음';
 $string['submissionstatus_reopened'] = '다시 오픈됨';
 $string['submissionstatus_submitted'] = '채점을 위해 제출되었습니다.';
 $string['submissionstatusheading'] = '제출 상태';
 $string['submissionsummary'] = '{$a->status}. {$a->timemodified}에  마지막 수정';
-$string['submissionteam'] = '모둠';
+$string['submissionteam'] = '그룹';
 $string['submissiontypes'] = '제출 유형';
 $string['submitaction'] = '제출';
 $string['submitassignment'] = '과제 제출';

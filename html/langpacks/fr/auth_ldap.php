@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'fr', version '3.8'.
+ * Strings for component 'auth_ldap', language 'fr', version '3.11'.
  *
  * @package     auth_ldap
  * @category    string
@@ -64,7 +64,7 @@ $string['auth_ldap_memberattribute_key'] = 'Attribut appartenance';
 $string['auth_ldap_no_mbstring'] = 'L\'extension mbstring est nécessaire pour créer des utilisateurs dans Active Directory.';
 $string['auth_ldap_noconnect'] = 'Le module LDAP ne peut pas se connecter au serveur {$a}';
 $string['auth_ldap_noconnect_all'] = 'Le module LDAP ne peut pas se connecter à aucun des serveurs {$a}';
-$string['auth_ldap_noextension'] = '<em>Le module LDAP de PHP ne semble pas être installé. Veuillez vous assurer qu\'il est bien installé et activé si vous voulez utiliser ce plugin d\'authentification.</em>';
+$string['auth_ldap_noextension'] = 'L\'extension LDAP de PHP ne semble pas être présente. Veuillez vous assurer qu\'elle est installée et activée si vous voulez utiliser ce plugin d\'authentification.';
 $string['auth_ldap_objectclass'] = 'Facultatif : court-circuite la classe objectClass utilisée pour rechercher/renommer des utilisateurs sur ldap_user_type. Il n\'est habituellement pas nécessaire de modifier ce réglage.';
 $string['auth_ldap_objectclass_key'] = 'Classe objet';
 $string['auth_ldap_opt_deref'] = 'Détermine le traitement des alias durant la recherche. Veuillez sélectionner une des valeurs suivantes : « Non » (LDAP_DEREF_NEVER) ou « Oui » (LDAP_DEREF_ALWAYS)';
@@ -75,7 +75,7 @@ $string['auth_ldap_passwdexpire_settings'] = 'Réglages de l\'échéance du mot 
 $string['auth_ldap_preventpassindb'] = 'Choisissez « Oui » pour empêcher le stockage des mots de passe dans la base de données de Moodle.';
 $string['auth_ldap_preventpassindb_key'] = 'Empêcher la mise en cache des mots de passe';
 $string['auth_ldap_rolecontext'] = 'Contexte {$a->localname}';
-$string['auth_ldap_rolecontext_help'] = 'Le contexte LDAP utilisé pour la sélection de la correspondance <i>{$a->localname}</i>. Séparez les groupes multiples par des points-virgules (;). Un exemple possible : cn={$a->shortname},ou=staff,o=monorganisation.';
+$string['auth_ldap_rolecontext_help'] = 'Le contexte LDAP utilisé pour la sélection de la correspondance <em>{$a->localname}</em>. Séparer les groupes multiples par des points-virgules (;). Un exemple possible : "cn={$a->shortname},first-ou-with-role-groups,o=monorganisation; cn={$a->shortname},ou=second-ou-with-role-groups,o=monorganisation.';
 $string['auth_ldap_search_sub'] = 'Rechercher les utilisateurs dans les sous-contextes.';
 $string['auth_ldap_search_sub_key'] = 'Recherche sous-contextes';
 $string['auth_ldap_server_settings'] = 'Configuration du serveur LDAP';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment', language 'gl', version '3.8'.
+ * Strings for component 'assignment', language 'gl', version '3.11'.
  *
  * @package     assignment
  * @category    string
@@ -34,8 +34,8 @@ $string['assignment:view'] = 'Ver tarefa';
 $string['assignmentdisabled'] = 'A antiga actividade «Tarefa 2.2» está desactivada';
 $string['assignmentneedsupgrade'] = 'A antiga actividade «Tarefa 2.2» foi desactivada. Solicitelle ao administrador do sitio que execute a ferramenta para anovar tarefas para todas as tarefas antigas deste sitio.';
 $string['messageprovider:assignment_updates'] = 'Notificación de tarefas (2.2)';
-$string['modulename'] = 'Tarefa 2.2 (desactivado)';
-$string['modulename_help'] = 'Módulo de actividade herdado que se eliminou de Moodle.';
+$string['modulename'] = 'Tarefa 2.2 (desactivada)';
+$string['modulename_help'] = 'Módulo de actividade herdado que se eliminou do Moodle.';
 $string['modulenameplural'] = 'Tarefas 2.2 (desactivado)';
 $string['page-mod-assignment-submissions'] = 'Páxina de entregas do módulo de tarefas';
 $string['page-mod-assignment-view'] = 'Páxina principal do módulo de tarefas';

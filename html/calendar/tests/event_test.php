@@ -59,16 +59,18 @@ class core_calendar_event_testcase extends advanced_testcase {
             $constructorparams['times'],
             $constructorparams['visible'],
             $constructorparams['subscription'],
-            $constructorparams['location']
+            $constructorparams['location'],
+            $constructorparams['component']
         );
 
         foreach ($constructorparams as $name => $value) {
-            if ($name !== 'visible') {
+            if ($name !== 'visible' && $name !== 'component') {
                 $this->assertEquals($event->{'get_' . $name}(), $value);
             }
         }
 
         $this->assertEquals($event->is_visible(), $constructorparams['visible']);
+        $this->assertEquals('mod_' . $event->get_course_module()->get('modname'), $event->get_component());
     }
 
     /**
@@ -76,7 +78,7 @@ class core_calendar_event_testcase extends advanced_testcase {
      */
     public function getters_testcases() {
         $lamecallable = function($id) {
-            return (object)['id' => $id];
+            return (object)['id' => $id, 'modname' => 'assign'];
         };
 
         return [
@@ -96,11 +98,13 @@ class core_calendar_event_testcase extends advanced_testcase {
                         (new \DateTimeImmutable())->setTimestamp(-386380800),
                         (new \DateTimeImmutable())->setTimestamp(115776000),
                         (new \DateTimeImmutable())->setTimestamp(115776000),
-                        (new \DateTimeImmutable())->setTimestamp(time())
+                        (new \DateTimeImmutable())->setTimestamp(time()),
+                        (new \DateTimeImmutable())->setTimestamp(115776000)
                     ),
                     'visible' => true,
                     'subscription' => new std_proxy(1, $lamecallable),
                     'location' => 'Test',
+                    'component' => null
                 ]
             ],
         ];

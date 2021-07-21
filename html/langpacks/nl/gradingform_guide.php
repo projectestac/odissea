@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'nl', version '3.8'.
+ * Strings for component 'gradingform_guide', language 'nl', version '3.11'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -92,6 +92,7 @@ $string['regrademessage1'] = 'Je gaat wijzigingen aanbrengen in een boordelingsh
 $string['regrademessage5'] = 'Je gaat grote wijzigingen aanbrengen aan een beoordelingshulp die al gebruikt geweest is om mee te beoordelen. Het cijfer in de cijferlijst zal niet wijzigen, maar de beoordelingshulp zal voor de leerlingen verborgen blijven tot hun werk opnieuw nagekeken is.';
 $string['regradeoption0'] = 'Niet markeren voor opnieuw beoordelen';
 $string['regradeoption1'] = 'Markeer om opnieuw te boordelen';
+$string['remark_help'] = 'Voer eventuele aanvullende opmerkingen over dit criterium in.';
 $string['restoredfromdraft'] = 'OPMERKING: de laatste poging om deze leerling te beoordelen is niet behoorlijk bewaard, dus zijn de als klad bewaarde punten teruggezet. Als je deze wijzigingen wil annuleren, klik dan op \'annuleren\' onderaan';
 $string['save'] = 'Bewaar';
 $string['saveguide'] = 'Bewaar de beoordelingshulp en maak die klaar voor gebruik';

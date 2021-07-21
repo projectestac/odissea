@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'nl', version '3.8'.
+ * Strings for component 'block_tag_youtube', language 'nl', version '3.11'.
  *
  * @package     block_tag_youtube
  * @category    string
@@ -31,6 +31,7 @@ $string['apikey'] = 'API sleutel';
 $string['apikeyinfo'] = 'Haal een <a href="https://developers.google.com/youtube/v3/getting-started">Google API key</a> voor jouw Moodle site.';
 $string['autosvehicles'] = 'Auto\'s en voertuigen';
 $string['category'] = 'Categorie';
+$string['categoryerror'] = 'Lijst met categorieën ophalen mislukt.<br> {$a}';
 $string['comedy'] = 'Humor';
 $string['configtitle'] = 'Youtube bloktitel';
 $string['education'] = 'Onderwijs';
@@ -41,6 +42,7 @@ $string['howtodiy'] = 'Doe-het-zelf';
 $string['includeonlyvideosfromplaylist'] = 'Enkel filmpjes invoegen vanuit de playlist met id';
 $string['music'] = 'Muziek';
 $string['newspolitics'] = 'Nieuws en politiek';
+$string['nonprofitactivism'] = 'Non-profit & Activisme';
 $string['numberofvideos'] = 'Aantal filmpjes';
 $string['peopleblogs'] = 'Mensen en blogs';
 $string['petsanimals'] = 'Huisdieren';

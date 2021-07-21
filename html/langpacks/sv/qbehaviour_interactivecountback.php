@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactivecountback', language 'sv', version '3.8'.
+ * Strings for component 'qbehaviour_interactivecountback', language 'sv', version '3.11'.
  *
  * @package     qbehaviour_interactivecountback
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interaktivt med flera försök (poäng för tidigare försök)';
+$string['privacy:metadata'] = 'Pluginmodulen Interaktivt med flera försök (bonus för tidigare försök)  frågebeteende lagrar ingen personinformation.';

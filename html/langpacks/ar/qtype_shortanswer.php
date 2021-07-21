@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'ar', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'ar', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -42,4 +42,7 @@ $string['pluginname_help'] = 'جواباً على سؤال (قد يتضمن صو
 $string['pluginnameadding'] = 'تجري إضافة سؤال إجابة قصيرة';
 $string['pluginnameediting'] = 'يجري تحرير سؤال إجابة قصيرة';
 $string['pluginnamesummary'] = 'يسمح بوضع إجابة من كلمة واحدة أو أكثر يتم منح علامتها عبر المقارنة مع نماذج إجابات مختلفة، وتلك الأخيرة قد تتضمن رموز بديلة عن الحروف.';
-$string['privacy:metadata'] = 'إن ملحق نوع السؤال، الإجابة القصيرة لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق نوع السؤال، الإجابة القصيرة يسمح لمنشئي السؤال بتعيين الخيارات الافتراضية بشكل تفضيلات للمستخدم.';
+$string['privacy:preference:defaultmark'] = 'الدرجة الافتراضية المعدة لسؤال معين';
+$string['privacy:preference:penalty'] = 'الغرامة المفروضة على كل محاولة خاطئة عند تشغيل الأسئلة باستعمال السلوك \'تفاعلي مع محاولات متعددة\' أو \'النمط المتكيف\'';
+$string['privacy:preference:usecase'] = 'فيما إذا كانت الإجابات تميز ما بين الحروف الكبيرة والصغيرة';

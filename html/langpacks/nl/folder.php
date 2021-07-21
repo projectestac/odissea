@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'nl', version '3.8'.
+ * Strings for component 'folder', language 'nl', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['bynameondate'] = 'op {$a->name} - {$a->date}';
 $string['contentheader'] = 'Inhoud';
 $string['display'] = 'Toon mapinhoud';
-$string['display_help'] = 'Als je de mapinhoud op een cursuspagina wil tonen, dan zal er geen link naar een aparte pagina zijn.';
+$string['display_help'] = 'Als je de mapinhoud op een cursuspagina wil tonen, dan zal er geen link naar een aparte pagina zijn. De beschrijving zal enkel getoond worden als \'Toon beschrijving op cursuspagina\' is aangevinkt. Merk op dat het niet kan gelogd worden dat deelnemers de beschrijving gezien hebben in dat geval.';
 $string['displayinline'] = 'Inline op een cursuspagina';
 $string['displaypage'] = 'Op een aparte pagina';
 $string['dnduploadmakefolder'] = 'Bestanden unzippen en map maken';
@@ -39,6 +39,8 @@ $string['folder:addinstance'] = 'Voeg een nieuwe map toe';
 $string['folder:managefiles'] = 'Beheer bestanden in mappenmodule';
 $string['folder:view'] = 'Bekijk mapinhoud';
 $string['foldercontent'] = 'Bestanden en submappen';
+$string['forcedownload'] = 'Verplicht download van bestanden';
+$string['forcedownload_help'] = 'Of bepaalde bestanden, zoals afbeeldingen of HTML, getoond moeten worden in de browser, eerder dan gedownload worden. Merk op dat om veiligheidsredenen deze instelling enkel mag uitgeschakeld worden als alle gebruikers met de mogelijkheid om bestanden te beheren vertrouwde gebruikers zijn.';
 $string['indicator:cognitivedepth'] = 'Map cognitief';
 $string['indicator:cognitivedepth_help'] = 'Deze indicator is gebaseerd op de door de leerling bereikte cognitieve diepte in een Map bron.';
 $string['indicator:cognitivedepthdef'] = 'Map cognitief';

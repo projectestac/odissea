@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'it', version '3.8'.
+ * Strings for component 'enrol', language 'it', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -63,6 +63,7 @@ $string['enrolmentnew'] = 'Nuova iscrizione a {$a}';
 $string['enrolmentnewuser'] = '{$a->user} si è iscritto al corso "{$a->course}"';
 $string['enrolmentoptions'] = 'Opzioni di iscrizione';
 $string['enrolments'] = 'Iscrizione';
+$string['enrolmentupdatedforuser'] = 'L\'iscrizione dell\'utente "{$a->fullname}" è stata aggiornata';
 $string['enrolnotpermitted'] = 'Non hai i privilegi o non sei autorizzato ad iscrivere persone nel corso.';
 $string['enrolperiod'] = 'Durata iscrizione';
 $string['enroltimecreated'] = 'Iscrizione creata';
@@ -156,6 +157,7 @@ $string['totalunenrolledusers'] = '{$a} utenti disiscritti';
 $string['unassignnotpermitted'] = 'Non hai i privilegi per togliere ruoli da questo corso';
 $string['unenrol'] = 'Disiscrivi';
 $string['unenrolconfirm'] = 'Sei certo di disiscrivere l\'utente "{$a->user}"  (già iscritto tramite "{$a->enrolinstancename}") dal corso "{$a->course}"?';
+$string['unenrolleduser'] = 'L\'utente "{$a->fullname}"è stato disiscritto dal corso';
 $string['unenrolme'] = 'Disiscrivimi da {$a}';
 $string['unenrolnotpermitted'] = 'Non hai i privilegi o non sei autorizzato ad disiscrivere persone dal corso.';
 $string['unenrolroleusers'] = 'Disiscrivi utenti';

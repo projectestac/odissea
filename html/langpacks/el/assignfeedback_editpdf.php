@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'el', version '3.8'.
+ * Strings for component 'assignfeedback_editpdf', language 'el', version '3.11'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,7 +74,7 @@ $string['oval'] = 'Οβάλ';
 $string['pagenumber'] = 'Σελίδα {$a}';
 $string['pagexofy'] = 'Σελίδα {$a->page} από {$a->total}';
 $string['partialwarning'] = 'Ορισμένα από τα αρχεία αυτής της υποβολής μπορούν να προσπελαστούν μόνο με άμεση λήψη.';
-$string['pathtogspathdesc'] = 'Παρακαλούμε έχετε υπόψη ότι για επισημειώσεις PDF απαιτείται η διαδρομή του ghostscript να τίθεται σε {$a}.';
+$string['pathtogspathdesc'] = 'Παρακαλούμε έχετε υπόψη ότι για επισημειώσεις PDF απαιτείται το μονοπάτι του ghostscript να τίθεται σε {$a}.';
 $string['pen'] = 'Πένα';
 $string['pluginname'] = 'Επισημείωση PDF';
 $string['preparesubmissionsforannotation'] = 'Προετοιμασία υποβολών για επισημειώσεις';
@@ -95,7 +95,7 @@ $string['select'] = 'Επιλογή';
 $string['stamp'] = 'Στάμπα';
 $string['stamppicker'] = 'Επιλογέας στάμπας';
 $string['stamps'] = 'Στάμπες';
-$string['stampsdesc'] = 'Οι σφραγίδες πρέπει να είναι αρχεία εικόνας (προτεινόμενο μέγεθος: 40x40). Αυτές οι εικόνες μπορούν να χρησιμοποιηθούν με το εργαλείο σφραγίδας για επισημειώσεις πάνω στο PDF.';
+$string['stampsdesc'] = 'Οι σφραγίδες πρέπει να είναι αρχεία εικόνας (συνιστώμενο μέγεθος: 40x40). Αυτές οι εικόνες μπορούν να χρησιμοποιηθούν με το εργαλείο σφραγίδας για επισημειώσεις πάνω στο PDF.';
 $string['test_doesnotexist'] = 'Το μονοπάτι του ghostscript οδηγεί σε ένα ανύπαρκτο αρχείο';
 $string['test_empty'] = 'Το μονοπάτι του ghostscript είναι κενό. Παρακαλούμε, δώστε το σωστό μονοπάτι.';
 $string['test_isdir'] = 'Το μονοπάτι του ghostscript οδηγεί σε ένα φάκελο. Παρακαλούμε, στο μονοπάτι που καθορίζετε, να συμπεριλάβετε και το αρχείο του προγράμματος ghostscript.';

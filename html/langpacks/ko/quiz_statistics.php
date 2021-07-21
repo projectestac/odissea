@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'ko', version '3.8'.
+ * Strings for component 'quiz_statistics', language 'ko', version '3.11'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -106,7 +106,6 @@ $string['standarddeviation'] = '({$a})표준편차';
 $string['standarddeviationq'] = '표준편차';
 $string['standarderror'] = '({$a})표준오차';
 $string['statistics'] = '통계';
-$string['statistics:componentname'] = '퀴즈 통계 보고서';
 $string['statistics:view'] = '통계 보고서 보기';
 $string['statisticsreport'] = '통계 보고';
 $string['statisticsreportgraph'] = '질문 위치에 대한 통계';

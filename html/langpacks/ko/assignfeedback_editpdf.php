@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ko', version '3.8'.
+ * Strings for component 'assignfeedback_editpdf', language 'ko', version '3.11'.
  *
  * @package     assignfeedback_editpdf
  * @category    string

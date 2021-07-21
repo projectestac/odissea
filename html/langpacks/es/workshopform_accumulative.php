@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'es', version '3.8'.
+ * Strings for component 'workshopform_accumulative', language 'es', version '3.11'.
  *
  * @package     workshopform_accumulative
  * @category    string
@@ -41,6 +41,7 @@ $string['mustchoosegrade'] = 'Tiene que seleccionar una calificación para este 
 $string['pluginname'] = 'Calificación acumulativa';
 $string['poor'] = 'Pobre';
 $string['present'] = 'Presente';
+$string['privacy:metadata'] = 'El complemento de calificación acumulativa solo almacena los detalles del formulario de evaluación. Los datos personales reales de cómo se llenó el formulario se almacenan en el módulo de Taller y se adjuntan a las evaluaciones exportadas.';
 $string['scalename0'] = 'Sí/No (2 puntos)';
 $string['scalename1'] = 'Presente/Ausente (2 puntos)';
 $string['scalename2'] = 'Correcto/Incorrecto (2 puntos)';

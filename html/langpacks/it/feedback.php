@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'it', version '3.8'.
+ * Strings for component 'feedback', language 'it', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -57,6 +57,7 @@ $string['complete_the_form'] = 'Compila il feedback';
 $string['completed'] = 'Completato';
 $string['completed_feedbacks'] = 'Risposte inviate';
 $string['completedon'] = 'Completato il {$a}';
+$string['completiondetail:submit'] = 'Inviare feedback';
 $string['completionsubmit'] = 'Completato all\'atto della consegna del feedback';
 $string['configallowfullanonymous'] = 'L\'impostazione consente di completare un feedback senza  autenticarsi. E\' valida solo per feedback presenti nella pagina home.';
 $string['confirmdeleteentry'] = 'Confermi l\'eliminazione di questo elemento?';
@@ -250,7 +251,7 @@ $string['searchcourses'] = 'Cerca corsi';
 $string['searchcourses_help'] = 'E\' possibile cercare il codice  o il titolo del corso o dei corsi che intendi associare al feedback.';
 $string['selected_dump'] = 'Gli indici selezionati della variabile $SESSION sono visualizzati di seguito:';
 $string['send'] = 'Invia';
-$string['send_message'] = 'Invia messaggio';
+$string['send_message'] = 'Invia notifica';
 $string['show_all'] = 'Visualizza tutto';
 $string['show_analysepage_after_submit'] = 'Visualizza la pagina di analisi';
 $string['show_entries'] = 'Risposte';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'eu', version '3.8'.
+ * Strings for component 'rating', language 'eu', version '3.11'.
  *
  * @package     rating
  * @category    string
@@ -47,7 +47,7 @@ $string['capabilitychecknotavailable'] = 'Gaitasunen egiaztatzea ez dago eskurag
 $string['couldnotdeleteratings'] = 'Sentitzen dugu, ezin da ezabatu zeren norbaitek kalifikatu baitu';
 $string['norate'] = 'Elementuak sailkatzea ez dago gaituta!';
 $string['noratings'] = 'Ez da puntuaziorik bidali';
-$string['noviewanyrate'] = 'Zeure elementuen emaitzak bakarrik ikus ditzakezu';
+$string['noviewanyrate'] = 'Zeure elementuen emaitzak baino ezin ditzakezu ikusi';
 $string['noviewrate'] = 'Ez duzu elementuen puntuazioa ikusteko gaitasunik';
 $string['privacy:metadata:rating'] = 'Erabiltzaileak emandako puntuazioa puntuatutako elementuaren loturarekin batera gordetzen da.';
 $string['privacy:metadata:rating:rating'] = 'Erabiltzaileak emandako puntuazio numerikoa.';
@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'Puntuazioak ez du balio';
 $string['ratings'] = 'Puntuazioak';
 $string['ratingtime'] = 'Mugatu puntuazioak tarte honetako elementuetara';
 $string['rolewarning'] = 'Puntuatzeko baimena duten rolak';
-$string['rolewarning_help'] = 'Kalifikazioak bidaltzeko, beharrezkoa da \'moodle/rating:rate\' gaitasuna, bai eta moduluari buruzko edozein gaitasun espezifiko ere. Ondoko rolak dituzten erabiltzaileek kalifikazioak emateko modua izan behar dute. Rol-zerrenda alda daiteke ekintza-menu edo kudeaketa blokean (itxuraren arabera) dagoen gaitasunetarako estekaren bidez.';
+$string['rolewarning_help'] = 'Kalifikazioak bidaltzeko, beharrezkoa da \'moodle/rating:rate\' gaitasuna, bai eta moduluari buruzko edozein gaitasun espezifiko ere. Ondoko rolak dituzten erabiltzaileek kalifikazioak emateko modua izan behar dute. Rol-zerrenda alda daiteke ekintza-menu edo kudeaketa blokean (azalaren arabera) dagoen gaitasunetarako estekaren bidez.';
 $string['scaleselectionrequired'] = 'Puntuazioen agregazio motak aukeratzean eskala edo gehienezko puntuazioak ere aukeratu behar dituzu.';

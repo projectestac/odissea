@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'ca', version '3.8'.
+ * Strings for component 'page', language 'ca', version '3.11'.
  *
  * @package     page
  * @category    string
@@ -32,6 +32,7 @@ $string['createpage'] = 'Crea una pàgina nova';
 $string['displayoptions'] = 'Opcions de visualització disponibles';
 $string['displayselect'] = 'Visualització';
 $string['displayselectexplain'] = 'Selecciona el tipus de visualització';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Pàgina en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
 $string['legacyfiles'] = 'Migració d\'un fitxer antic';
 $string['legacyfilesactive'] = 'Actiu';
 $string['legacyfilesdone'] = 'Acabat';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_offlineattempts', language 'ar', version '3.8'.
+ * Strings for component 'quizaccess_offlineattempts', language 'ar', version '3.11'.
  *
  * @package     quizaccess_offlineattempts
  * @category    string
@@ -25,13 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowofflineattempts'] = 'السماح لمحاولة الاختبار في وضع عدم الاتصال باستخدام تطبيق الجوّال';
-$string['allowofflineattempts_help'] = 'في حالة التمكين ، يمكن لمستخدم تطبيق الجوال تنزيل الاختبار و تجربته في وضع عدم الاتصال.
-ملاحظة: لا يمكن إجراء اختبار دون اتصال إذا كان له حد زمني ، أو يتطلب عنوان شبكة ، أو يستخدم أي سلوك للأسئلة بخلاف التعليقات المؤجلة (مع أو بدون CBM).';
+$string['allowofflineattempts'] = 'إسمح بمحاولة الاختبار في وضع عدم الاتصال باستخدام تطبيق الجوّال';
+$string['allowofflineattempts_help'] = 'عند تمكينه، يمكن لمستخدم تطبيق الجوال تنزيل الاختبار وتجربته في وضع عدم الاتصال.
+
+ملاحظة: لا يمكن محاولة اختبار دون اتصال إذا كان محدداً بوقت، أو يتطلب عنوان شبكة، أو يستعمل أي سلوك للأسئلة بخلاف الإفادة المؤجلة (مع أو بدون منح العلامات المبني على اليقين).';
 $string['confirmdatasaved'] = 'أؤكد أنني لا أملك أيّ عمل غير محفوظ على الجهاز المحمول.';
 $string['mobileapp'] = 'تطبيق الجوال';
-$string['offlineattemptserror'] = 'لا يمكن إجراء اختبار دون اتصال إذا كان له حد زمني ، أو يتطلب عنوان شبكة، أو يستخدم أي سلوك للسؤال بخلاف التعليقات المؤجلة (مع أو بدون CBM).';
-$string['offlinedatamessage'] = 'لقد عملت على هذه المحاولة باستخدام جهاز محمول. تم حفظ البيانات آخر مرة في هذا الموقع {$a} من قبل.';
-$string['pleaseconfirm'] = 'يرجى التحقق و التأكيد من أنه ليس لديك أيّ عمل غير محفوظ.';
+$string['offlineattemptserror'] = 'لا يمكن محاولة اختبار دون اتصال إذا كان له حد زمني، أو يتطلب عنوان شبكة، أو يستعمل أي سلوك للسؤال بخلاف الإفادة المؤجلة (مع أو بدون منح العلامات المبني على اليقين).';
+$string['offlinedatamessage'] = 'لقد عملتَ على هذه المحاولة باستعمال جهاز جوال. تم حفظ البيانات آخر مرة في هذا الموقع قبل {$a}.';
+$string['pleaseconfirm'] = 'يرجى التحقق ثم التأكيد من أنه ليس لديك أيّ عمل غير محفوظ.';
 $string['pluginname'] = 'نظام محاولات الوصول بدون اتصال';
-$string['privacy:metadata'] = 'المكون الإضافيOffline attempts quiz access rule لا يخزين أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق قاعدة الوصول للمحاولات بدون الاتصال بالانترنت لا يخزن أي بيانات شخصية.';

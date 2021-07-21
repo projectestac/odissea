@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_airnotifier', language 'ja', version '3.8'.
+ * Strings for component 'message_airnotifier', language 'ja', version '3.11'.
  *
  * @package     message_airnotifier
  * @category    string
@@ -28,23 +28,30 @@ defined('MOODLE_INTERNAL') || die();
 $string['airnotifier:managedevice'] = 'デバイス管理';
 $string['airnotifieraccesskey'] = 'Airnotifierアクセスキー';
 $string['airnotifierappname'] = 'Airnotifierアプリ名';
+$string['airnotifierfielderror'] = '次のフィールドからスペースまたは不要な文字を取り除いてください: {$a}';
 $string['airnotifiermobileappname'] = 'モバイルアプリ名';
 $string['airnotifierport'] = 'Airnotifierポート';
 $string['airnotifierurl'] = 'Airnotifier URL';
+$string['checkconfiguration'] = 'プッシュ通知設定をチェックおよびテストする';
 $string['configairnotifieraccesskey'] = 'AirNotifierサーバに接続するためのアクセスキーです。あなたは以下の「アクセスキーをリクエストする」リンク (登録済みサイトのみ) または<a href="https://apps.moodle.com">Moodleアプリポータル</a>でアカウントを作成してアクセスキーを取得できます。';
 $string['configairnotifierappname'] = 'AirNotifierで識別するためのアプリ名です。';
 $string['configairnotifiermobileappname'] = 'モバイルアプリのユニークIDです (通常、次のようになります:  com.moodle.moodlemobile)。';
 $string['configairnotifierport'] = 'AirNotifierサーバへのアクセス時に使用するポートです。';
 $string['configairnotifierurl'] = 'ブッシュ通知を送信するために接続するサーバのURLです。';
+$string['configured'] = '設定済み';
 $string['deletecheckdevicename'] = 'あなたのデバイスを削除する: {$a->name}';
 $string['deletedevice'] = 'デバイスを削除します。再度アプリにデバイスを追加できることに留意してください。デバイスが再度表示され続ける場合、無効にしてください。';
 $string['devicetoken'] = 'デバイストークン';
+$string['enableprocessor'] = 'モバイル通知を有効にします。';
 $string['errorretrievingkey'] = 'アクセスキーの検索中にエラーが発生しました。このサービスを使用するにはあなたのサイトの登録が必要です。あなたのサイトがすでに登録されている場合、登録の更新をお試しください。代わりにあなたは<a href="https://apps.moodle.com">Moodleアプリポータル</a>でアカウントを作成してアクセスキーを取得できます。';
 $string['keyretrievedsuccessfully'] = 'アクセスキーが正常に検索されました。Moodleアプリ利用統計にアクセスするには<a href="https://apps.moodle.com">Moodle Apps Portal</a>でアカウントを作成してください。';
+$string['messageprovidersempty'] = 'デフォルト通知プリファレンスで有効にされたモバイル通知はありません。';
+$string['messageproviderslow'] = 'デフォルト通知プリファレンスでは一部のモバイル通知のみ有効にされています。';
 $string['moodleappsportallimitswarning'] = '通知を受信できるユーザデバイス数はあなたのMoodleアプリサブスクリプションに依存する点に留意してください。詳細は<a href="{$a}" target="_blank">Moodleアプリポータル</a>にアクセスしてください。';
 $string['nodevices'] = '登録されたデバイスはありません。あなたがMoodleアプリをインストールした後、デバイスが自動的に表示されます。このサイトを登録してください。';
 $string['nopermissiontomanagedevices'] = 'あなたにはデバイスを管理するためのパーミッションがありません。';
 $string['notconfigured'] = 'AirNotifierサーバが設定されていないため、プッシュ通知を送信できません。';
+$string['notificationsserverconfiguration'] = '通知サーバ (Airnotifier) 設定';
 $string['pluginname'] = 'モバイル';
 $string['privacy:appiddescription'] = 'これは使用されるアプリケーションのIDです。';
 $string['privacy:enableddescription'] = 'このデバイスがAirNotifierで有効にされた場合';
@@ -64,6 +71,10 @@ $string['privacy:metadata:username'] = 'ユーザのユーザ名です。';
 $string['privacy:metadata:usersubsystem'] = 'このプラグインはユーザサブシステムに接続されます。';
 $string['privacy:subcontext'] = 'メッセージAirNotifier';
 $string['requestaccesskey'] = 'アクセスキーをリクエストする';
+$string['sendtest'] = '私のデバイスにテストプッシュ通知を送信する';
+$string['sendtestconfirmation'] = 'あなたがこのサイトへの接続に使用しているデバイスにテストプッシュ通知が送信されます。あなたのデバイスがインターネットに接続およびモバイルアプリが開いていないことを確認してください (プッシュ通知はバックグラウンドで受信した場合のみ表示されるため)。';
+$string['serverconnectivityerror'] = 'このサイトは通知サーバ {$a} に接続できません。';
 $string['showhide'] = 'デバイスを有効/無効にします。';
 $string['sitemustberegistered'] = 'パブリックAirNotifierインスタンスを使用するにはあなたのサイトの登録が必要です。代わりにあなたは<a href="https://apps.moodle.com">Moodleアプリポータル</a>でアカウントを作成してアクセスキーを取得できます。';
 $string['unknowndevice'] = '不明なデバイス';
+$string['userdevices'] = 'ユーザデバイス';

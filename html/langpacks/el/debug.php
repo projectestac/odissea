@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'el', version '3.8'.
+ * Strings for component 'debug', language 'el', version '3.11'.
  *
  * @package     debug
  * @category    string
@@ -41,7 +41,7 @@ $string['invalideventdata'] = 'Έχουν υποβληθεί λανθασμέν�
 $string['invalidparameter'] = 'Εντοπίστηκε μη έγκυρη τιμή παραμέτρου';
 $string['invalidresponse'] = 'Εντοπίστηκε μη έγκυρη τιμή απόκρισης';
 $string['line'] = 'Γραμμή';
-$string['missingconfigversion'] = 'Ο πίνακας ρυθμίσεων δεν περιέχει την έκδοση. Λυπούμαστε αλλά είναι αδύνατη η συνέχεια.';
+$string['missingconfigversion'] = 'Ο πίνακας ρυθμίσεων δεν περιέχει την έκδοση. Αδυναμία συνέχισης.';
 $string['modulenotexist'] = 'Το άρθρωμα {$a} δεν υπάρχει';
 $string['morethanonerecordinfetch'] = 'Βρέθηκαν περισσότερες από μία εγγραφές στη fetch() !';
 $string['mustbeoveride'] = 'Πρέπει να γίνει παράκαμψη (override) της αφηρημένης (abstract) μεθόδου {$a}.';

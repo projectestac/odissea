@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'el', version '3.8'.
+ * Strings for component 'auth_mnet', language 'el', version '3.11'.
  *
  * @package     auth_mnet
  * @category    string
@@ -32,7 +32,7 @@ $string['auth_mnet_rpc_negotiation_timeout'] = 'Το χρονικό όριο σ�
 $string['auth_mnetdescription'] = 'Οι χρήστες αυθεντικοποιούνται σύμφωνα με τον ιστό εμπιστοσύνης που ορίζεται στις ρυθμίσεις του δικτύου Moodle. ((MNet = Moodle Network))';
 $string['auto_add_remote_users'] = 'Αυτόματη προσθήκη απομακρυσμένων χρηστών';
 $string['crontask'] = 'Επεξεργασία παρασκηνίου για την αυθεντικοποίηση MNet';
-$string['pluginname'] = 'Αυθεντικοποίηση στο MNet (Moodle Network)';
+$string['pluginname'] = 'Αυθεντικοποίηση στο MNet';
 $string['privacy:metadata:external:mahara'] = 'Αυτό το πρόσθετο μπορεί να στείλει δεδομένα εξωτερικά σε μια συνδεδεμένη εφαρμογή Mahara.';
 $string['privacy:metadata:external:moodle'] = 'Αυτό το πρόσθετο μπορεί να στείλει δεδομένα εξωτερικά σε μια συνδεδεμένη εφαρμογή Mahara.';
 $string['privacy:metadata:mnet_external:address'] = 'Η διεύθυνση του χρήστη.';

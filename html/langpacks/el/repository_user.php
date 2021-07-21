@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_user', language 'el', version '3.8'.
+ * Strings for component 'repository_user', language 'el', version '3.11'.
  *
  * @package     repository_user
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configplugin'] = 'Ρυθμίσεις για το αποθετήριο προσωπικών αρχείων χρήστη';
+$string['configplugin'] = 'Ρυθμίσεις για το αποθετήριο ιδιωτικών αρχείων χρήστη';
 $string['emptyfilelist'] = 'Δεν υπάρχουν αρχεία για εμφάνιση';
-$string['pluginname'] = 'Προσωπικά αρχεία';
+$string['pluginname'] = 'Ιδιωτικά αρχεία';
 $string['pluginname_help'] = 'Αρχεία σε ιδιωτική περιοχή χρηστών';
 $string['privacy:metadata'] = 'Το πρόσθετο αποθετηρίου «Ιδιωτικά αρχεία» δεν αποθηκεύει ούτε μεταβιβάζει κανένα προσωπικό δεδομένο.';
-$string['user:view'] = 'Εμφάνιση προσωπικών αρχείων χρήστη';
+$string['user:view'] = 'Εμφάνιση ιδιωτικών αρχείων χρήστη';

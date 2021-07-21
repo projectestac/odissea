@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_adaptive', language 'gl', version '3.8'.
+ * Strings for component 'qbehaviour_adaptive', language 'gl', version '3.11'.
  *
  * @package     qbehaviour_adaptive
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['disregardedwithoutpenalty'] = 'A entrega non foi correcta e ignorada sen penalización.';
 $string['gradingdetails'] = 'Marcas para esta entrega: {$a->raw}/{$a->max}.';
-$string['gradingdetailsadjustment'] = 'A contabilización de intentos anteriores, dános <strong>{$a->cur}/{$a->max}> </strong>.';
+$string['gradingdetailsadjustment'] = 'A contabilización de intentos anteriores, dános <strong>{$a->cur}/{$a->max}></strong>.';
 $string['gradingdetailspenalty'] = 'Esta entrega recibiu unha penalización de {$a}.';
 $string['gradingdetailspenaltytotal'] = 'Total de penalizacións ata agora: {$a}.';
 $string['gradingdetailswithadjustment'] = 'Puntuacións para esta entrega: {$a->raw}/{$a->max}. A contabilización de intentos anteriores, dános <strong>{$a->cur}/{$a->max}></strong>.';

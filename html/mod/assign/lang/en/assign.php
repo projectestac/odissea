@@ -22,6 +22,9 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['activitydate:submissionsdue'] = 'Due:';
+$string['activitydate:submissionsopen'] = 'Opens:';
+$string['activitydate:submissionsopened'] = 'Opened:';
 $string['activityoverview'] = 'You have assignments that need attention';
 $string['addsubmission'] = 'Add submission';
 $string['addsubmission_help'] = 'You have not made a submission yet.';
@@ -38,8 +41,6 @@ $string['allowsubmissions'] = 'Allow the user to continue making submissions to 
 $string['allowsubmissionsshort'] = 'Allow submission changes';
 $string['allowsubmissionsfromdate'] = 'Allow submissions from';
 $string['allowsubmissionsfromdate_help'] = 'If enabled, students will not be able to submit before this date. If disabled, students will be able to start submitting right away.';
-$string['allowsubmissionsfromdatesummary'] = 'This assignment will accept submissions from <strong>{$a}</strong>';
-$string['allowsubmissionsanddescriptionfromdatesummary'] = 'The assignment details and submission form will be available from <strong>{$a}</strong>';
 $string['alwaysshowdescription'] = 'Always show description';
 $string['alwaysshowdescription_help'] = 'If disabled, the assignment description above will only become visible to students on the "Allow submissions from" date.';
 $string['applytoteam'] = 'Apply grades and feedback to entire group';
@@ -55,11 +56,12 @@ $string['assign:receivegradernotifications'] = 'Receive grader submission notifi
 $string['assign:releasegrades'] = 'Release grades';
 $string['assign:revealidentities'] = 'Reveal student identities';
 $string['assign:reviewgrades'] = 'Review grades';
-$string['assign:viewblinddetails'] = 'View student identities when blind marking is enabled';
+$string['assign:viewblinddetails'] = 'View student identities when anonymous submissions are enabled';
 $string['assign:viewgrades'] = 'View grades';
 $string['assign:showhiddengrader'] = 'See the identity of a hidden grader';
 $string['assign:submit'] = 'Submit assignment';
 $string['assign:view'] = 'View assignment';
+$string['assign:viewownsubmissionsummary'] = 'View own submission summary';
 $string['assignfeedback'] = 'Feedback plugin';
 $string['assignfeedbackpluginname'] = 'Feedback plugin';
 $string['assignmentisdue'] = 'Assignment is due';
@@ -83,12 +85,12 @@ $string['attemptheading'] = 'Attempt {$a->attemptnumber}: {$a->submissionsummary
 $string['attempthistory'] = 'Previous attempts';
 $string['attemptnumber'] = 'Attempt number';
 $string['attemptsettings'] = 'Attempt settings';
-$string['attemptreopenmethod'] = 'Attempts reopened';
-$string['attemptreopenmethod_help'] = 'Determines how student submission attempts are reopened. The available options are:
+$string['attemptreopenmethod'] = 'Additional attempts';
+$string['attemptreopenmethod_help'] = 'This setting determines whether a student can make additional attempts at the assignment. For each attempt, the grade and feedback are saved, and can be viewed by the teacher and the student. The available options are:
 
-* Never - The submission cannot be reopened.
-* Manually - The submission can be reopened by a teacher.
-* Automatically until pass - The submission is automatically reopened until the student achieves the grade to pass set in the gradebook for this assignment.';
+* Never - Only one attempt is possible.
+* Manually - Additional attempts may be allowed by a teacher.
+* Automatically until pass - Additional attempts are allowed automatically until the student achieves the grade to pass set in the gradebook for this assignment.';
 $string['attemptreopenmethod_manual'] = 'Manually';
 $string['attemptreopenmethod_none'] = 'Never';
 $string['attemptreopenmethod_untilpass'] = 'Automatically until pass';
@@ -109,9 +111,10 @@ $string['batchoperationunlock'] = 'unlock submissions';
 $string['batchoperationreverttodraft'] = 'revert submissions to draft';
 $string['batchsetallocatedmarker'] = 'Set allocated marker for {$a} selected user(s).';
 $string['batchsetmarkingworkflowstateforusers'] = 'Set marking workflow state for {$a} selected user(s).';
-$string['blindmarking'] = 'Blind marking';
-$string['blindmarkingenabledwarning'] = 'Blind marking is enabled for this activity.';
-$string['blindmarking_help'] = 'Blind marking hides the identity of students from markers. Blind marking settings will be locked once a submission or grade has been made in relation to this assignment.';
+$string['blindmarking'] = 'Anonymous submissions';
+$string['blindmarkingenabledwarning'] = 'Anonymous submissions are enabled for this activity. Grades will not be added to the gradebook until student identities are revealed via the grading action menu.';
+$string['blindmarking_help'] = 'Anonymous submissions hide the identity of students from markers. Anonymous submission settings will be locked once a submission or grade has been made in relation to this assignment.';
+$string['cachedef_overrides'] = 'User and group override information';
 $string['calendardue'] = '{$a} is due';
 $string['calendargradingdue'] = '{$a} is due to be graded';
 $string['changeuser'] = 'Change user';
@@ -123,6 +126,7 @@ $string['clickexpandreviewpanel'] = 'Click to expand review panel';
 $string['collapsegradepanel'] = 'Collapse grade panel';
 $string['collapsereviewpanel'] = 'Collapse review panel';
 $string['comment'] = 'Comment';
+$string['completiondetail:submit'] = 'Make a submission';
 $string['completionsubmit'] = 'Student must submit to this activity to complete it';
 $string['conversionexception'] = 'Could not convert assignment. Exception was: {$a}.';
 $string['configshowrecentsubmissions'] = 'Everyone can see notifications of submissions in recent activity reports.';
@@ -259,6 +263,7 @@ $string['feedbacksettings'] = 'Feedback settings';
 $string['feedbacktypes'] = 'Feedback types';
 $string['filesubmissions'] = 'File submissions';
 $string['filter'] = 'Filter';
+$string['filterdraft'] = 'Draft';
 $string['filtergrantedextension'] = 'Granted extension';
 $string['filternone'] = 'No filter';
 $string['filternotsubmitted'] = 'Not submitted';
@@ -266,7 +271,7 @@ $string['filterrequiregrading'] = 'Requires grading';
 $string['filtersubmitted'] = 'Submitted';
 $string['graded'] = 'Graded';
 $string['gradedby'] = 'Graded by';
-$string['gradedfollowupsubmit'] = 'Graded - follow up submission received';
+$string['gradedfollowupsubmit'] = 'Graded - follow-up submission received';
 $string['gradedon'] = 'Graded on';
 $string['gradebelowzero'] = 'Grade must be greater than or equal to zero.';
 $string['gradeabovemaximum'] = 'Grade must be less than or equal to {$a}.';
@@ -414,7 +419,7 @@ $string['preventsubmissions'] = 'Prevent the user from making any more submissio
 $string['preventsubmissionsshort'] = 'Prevent submission changes';
 $string['previous'] = 'Previous';
 $string['privacy:attemptpath'] = 'attempt {$a}';
-$string['privacy:blindmarkingidentifier'] = 'The identifier used for blind marking';
+$string['privacy:blindmarkingidentifier'] = 'The identifier used for anonymous submissions';
 $string['privacy:gradepath'] = 'grade';
 $string['privacy:metadata:assigndownloadasfolders'] = 'A user preference for whether multiple file submissions should be downloaded into folders';
 $string['privacy:metadata:assignfeedbackpluginsummary'] = 'Feedback data for the assignment.';
@@ -429,7 +434,7 @@ $string['privacy:metadata:assignquickgrading'] = 'A preference as to whether qui
 $string['privacy:metadata:assignsubmissiondetail'] = 'Stores user submission information';
 $string['privacy:metadata:assignsubmissionpluginsummary'] = 'Submission data for the assignment.';
 $string['privacy:metadata:assignuserflags'] = 'Stores user meta data such as extension dates';
-$string['privacy:metadata:assignusermapping'] = 'The mapping for blind marking';
+$string['privacy:metadata:assignusermapping'] = 'The mapping for anonymous submissions';
 $string['privacy:metadata:assignworkflowfilter'] = 'Filter by the different workflow stages.';
 $string['privacy:metadata:grade'] = 'The numerical grade for this assignment submission. Can be determined by scales/advancedgradingforms etc but will always be converted back to a floating point number.';
 $string['privacy:metadata:grader'] = 'The user ID of the person grading.';
@@ -444,11 +449,9 @@ $string['quickgradingresult'] = 'Quick grading';
 $string['quickgradingchangessaved'] = 'The grade changes were saved';
 $string['quickgrading_help'] = 'Quick grading allows you to assign grades (and outcomes) directly in the submissions table. Quick grading is not compatible with advanced grading and is not recommended when there are multiple markers.';
 $string['relativedatessubmissiontimeleft'] = 'Calculated for each student';
-$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} after course start';
-$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} before course start';
 $string['removeallgroupoverrides'] = 'Delete all group overrides';
 $string['removealluseroverrides'] = 'Delete all user overrides';
-$string['reopenuntilpassincompatiblewithblindmarking'] = 'Reopen until pass option is incompatible with blind marking, because the grades are not released to the gradebook until the student identities are revealed.';
+$string['reopenuntilpassincompatiblewithblindmarking'] = 'Reopen until pass option is incompatible with anonymous submissions, because the grades are not released to the gradebook until the student identities are revealed.';
 $string['requiresubmissionstatement'] = 'Require that students accept the submission statement';
 $string['requiresubmissionstatement_help'] = 'Require that students accept the submission statement for all submissions to this assignment.';
 $string['requireallteammemberssubmit'] = 'Require all group members submit';
@@ -462,7 +465,7 @@ $string['revealidentities'] = 'Reveal student identities';
 $string['revealidentitiesconfirm'] = 'Are you sure you want to reveal student identities for this assignment? This operation cannot be undone. Once the student identities have been revealed, the marks will be released to the gradebook.';
 $string['reverttodefaults'] = 'Revert to assignment defaults';
 $string['reverttodraftforstudent'] = 'Revert submission to draft for student: (id={$a->id}, fullname={$a->fullname}).';
-$string['reverttodraft'] = 'Revert the submission to draft status.';
+$string['reverttodraft'] = 'Revert the submission to draft status';
 $string['reverttodraftshort'] = 'Revert the submission to draft';
 $string['reviewed'] = 'Reviewed';
 $string['save'] = 'Save';
@@ -634,3 +637,9 @@ $string['nolatesubmissions'] = 'No late submissions accepted. ';
 $string['nosubmissionsacceptedafter'] = 'No submissions accepted after ';
 $string['notsubmittedyet'] = 'Not submitted yet';
 $string['submissionsnotgraded'] = 'Submissions not graded: {$a}';
+
+// Deprecated since Moodle 3.11.
+$string['allowsubmissionsfromdatesummary'] = 'This assignment will accept submissions from <strong>{$a}</strong>';
+$string['allowsubmissionsanddescriptionfromdatesummary'] = 'The assignment details and submission form will be available from <strong>{$a}</strong>';
+$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} after course start';
+$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} before course start';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'pt', version '3.8'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'pt', version '3.11'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -44,15 +44,13 @@ $string['certainty-1'] = 'Não faço ideia';
 $string['certainty1'] = 'C=1 (Grau de certeza Baixo: <67%)';
 $string['certainty2'] = 'C=2 (Grau de certeza Médio: >67%)';
 $string['certainty3'] = 'C=3 (Grau de certeza Alto: >80%)';
-$string['certainty_help'] = 'A Avaliação com Base no Grau de Certeza (ABGC) requer que indique o quão certa acha que a sua resposta está. Os níveis disponíveis são:
+$string['certainty_help'] = 'A Avaliação com Base no Grau de Certeza (ABGC) requer que indique o quão certa acha que está a sua resposta. Os níveis disponíveis são: C=1 (Baixo), C=2 (Médio) e C=3 (Alto).
 
-Grau de certeza | C=1 (Baixo) | C=2 (Médio) | C=3 (Alto)
-------------------- | ------------ | --------- | ----------------
-Nota se correto |     1     |       2      |     3
-Nota se errado  |     0     |       -2     |    -6
-Probabilidade    | <67% | 67-80% | >80%
+Se responder corretamente a sua nota será multiplicada por 1, 2 ou 3, consoante o grau de certeza escolhido C foi igual a 1, 2 ou 3.
 
-As respostas sem certeza obterão melhores notas se for reconhecido um grau de certeza baixo. Por exemplo, se houver mais do que 1 em 3 hipóteses da resposta estar errada, deverá ser indicado C=1 e evitar o risco de ter uma nota negativa.';
+Se responder incorretamente, a sua nota será multiplicada por 0, -2 ou -6, consoante o grau de certeza escolhido C foi igual a 1, 2 ou 3.
+
+As respostas sem certeza obterão melhores notas se for reconhecido um grau de certeza baixo. Por exemplo, se houver mais do que 1 em 3 hipóteses da resposta estar errada, deverá indicar C=1 para evitar o risco de ter uma nota negativa.';
 $string['certaintyshort-1'] = 'Não faço ideia';
 $string['certaintyshort1'] = 'C=1';
 $string['certaintyshort2'] = 'C=2';

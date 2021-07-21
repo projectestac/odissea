@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'fr', version '3.8'.
+ * Strings for component 'report_performance', language 'fr', version '3.11'.
  *
  * @package     report_performance
  * @category    string
@@ -36,7 +36,7 @@ $string['check_debugmsg_comment_developer'] = 'Si le réglage est placé sur aut
 $string['check_debugmsg_comment_nodeveloper'] = 'Si le réglage est placé sur Développeur, la performance sera légèrement moins bonne.';
 $string['check_debugmsg_details'] = 'Il ne sert généralement à rien de régler le niveau à Développeur, à moins qu\'un développeur ne le demande.<p>Une fois le message d\'erreur obtenu, copié et collé quelque part, il est <b>fortement recommandé</b> de remettre le niveau de débogage sur Aucun. Les messages de débogage pourrait donner des indices à un éventuel pirate sur la configuration de votre site et peuvent en outre dégrader la performance.</p>';
 $string['check_enablestats_comment_disable'] = 'La performance peut être dégradée par le traitement des statistiques. Si les statistiques sont activées, leurs réglages doivent être choisis avec soin.';
-$string['check_enablestats_comment_enable'] = 'La performance peut être dégradée par le traitement des statistiques. Les réglages de statistique doivent être choisis avec soin.';
+$string['check_enablestats_comment_enable'] = 'La performance peut être dégradée par le traitement des statistiques. Les réglages de statistiques doivent être choisis avec soin.';
 $string['check_enablestats_details'] = 'L\'activation de ce réglage aura pour effet le traitement des journaux et la récolte de statistiques. Suivant la quantité de trafic sur votre site, ceci peut prendre du temps.<p>Durant cette opération, des ressources serveur supplémentaires seront utilisées, qui pourraient dégrader la performance.</p>';
 $string['check_themedesignermode_comment_disable'] = 'Si ce réglage est activé, les images et feuilles de style ne seront pas mises en cache, et la performance sera dégradée de manière sensible.';
 $string['check_themedesignermode_comment_enable'] = 'Si ce réglage est désactivé, les images et feuilles de style sont mise ne cache, et la performance sera améliorée de manière sensible.';

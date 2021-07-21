@@ -95,9 +95,9 @@
         $plugininfo = $pluginmanager->get_plugin_info('mod_'.$module->name);
         $status = $plugininfo->get_status();
 
-        //XTEC ************ AFEGIT - Only enabled modules has to be showed
-        //2012.11.06  @sarjona
-        if (function_exists('is_enabled_in_agora') && !is_enabled_in_agora($module->name) ){
+        // XTEC ************ AFEGIT - Only enabled modules must be shown
+        // 2012.11.06 @sarjona
+        if (function_exists('is_enabled_in_agora') && !is_enabled_in_agora($module->name)) {
             continue;
         }
         //************ FI

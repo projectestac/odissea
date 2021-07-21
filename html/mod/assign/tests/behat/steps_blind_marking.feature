@@ -26,7 +26,7 @@ Feature: Assignments correctly add feedback to the grade report when workflow an
       | Online text | 1 |
       | File submissions | 0 |
       | Use marking workflow | Yes |
-      | Blind marking | Yes |
+      | Anonymous submissions | Yes |
     And I log out
     # Add a submission.
     And I log in as "student1"
@@ -51,7 +51,6 @@ Feature: Assignments correctly add feedback to the grade report when workflow an
     And I set the field "Feedback comments" to "Great job! Lol, not really."
     And I set the field "Notify students" to "0"
     And I press "Save changes"
-    And I press "Ok"
     And I click on "Edit settings" "link"
     And I follow "Test assignment name"
     And I navigate to "View all submissions" in current page administration
@@ -63,7 +62,6 @@ Feature: Assignments correctly add feedback to the grade report when workflow an
     And I set the field "Marking workflow state" to "Ready for release"
     And I set the field "Notify students" to "0"
     And I press "Save changes"
-    And I press "Ok"
     And I click on "Edit settings" "link"
     And I follow "Test assignment name"
     And I navigate to "View all submissions" in current page administration
@@ -71,7 +69,6 @@ Feature: Assignments correctly add feedback to the grade report when workflow an
     And I click on "Grade" "link" in the "I'm the student's first submission" "table_row"
     And I set the field "Marking workflow state" to "Released"
     And I press "Save changes"
-    And I press "Ok"
     And I click on "Edit settings" "link"
     And I follow "Test assignment name"
     And I navigate to "View all submissions" in current page administration
@@ -91,7 +88,6 @@ Feature: Assignments correctly add feedback to the grade report when workflow an
     And I set the field "Marking workflow state" to "Ready for release"
     And I set the field "Notify students" to "0"
     And I press "Save changes"
-    And I press "Ok"
     And I click on "Edit settings" "link"
     And I follow "Test assignment name"
     And I navigate to "View all submissions" in current page administration
@@ -101,7 +97,6 @@ Feature: Assignments correctly add feedback to the grade report when workflow an
     And I click on "Grade" "link" in the "Student 1" "table_row"
     And I set the field "Marking workflow state" to "Released"
     And I press "Save changes"
-    And I press "Ok"
     And I click on "Edit settings" "link"
     And I follow "Test assignment name"
     And I navigate to "View all submissions" in current page administration
@@ -119,13 +114,8 @@ Feature: Assignments correctly add feedback to the grade report when workflow an
     And I navigate to "User overrides" in current page administration
     And I press "Add user override"
     And I set the following fields to these values:
-      | Override user      | Student |
-      | id_duedate_enabled | 1 |
-      | duedate[day]       | 1 |
-      | duedate[month]     | January |
-      | duedate[year]      | 2030 |
-      | duedate[hour]      | 08 |
-      | duedate[minute]    | 00 |
+      | Override user | Student              |
+      | Due date      | ##2030-01-01 08:00## |
     And I press "Save"
     And I should see "Tuesday, 1 January 2030, 8:00"
     And I follow "Test assignment name"

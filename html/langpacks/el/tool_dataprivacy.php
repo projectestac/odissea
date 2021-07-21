@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'el', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'el', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -31,7 +31,12 @@ $string['addnewdefaults'] = 'Προσθήκη μιας νέας προεπιλο
 $string['addpurpose'] = 'Προσθήκη σκοπού';
 $string['addroleoverride'] = 'Προσθήκη παράκαμψης ρόλου';
 $string['approve'] = 'Έγκριση';
+$string['approvedrequestsubmitted'] = 'Το αίτημά σας έχει υποβληθεί και θα γίνει επεξεργασία του σύντομα.';
 $string['approverequest'] = 'Έγκριση αιτήματος';
+$string['automaticdatadeletionapproval'] = 'Αυτόματη έγκριση αιτήματος διαγραφής δεδομένων';
+$string['automaticdatadeletionapproval_desc'] = 'Εάν ενεργοποιηθεί, οι αιτήσεις διαγραφής δεδομένων εγκρίνονται αυτόματα.<br/>Σημειώστε ότι η αυτόματη έγκριση ισχύει μόνο για νέα αιτήματα διαγραφής δεδομένων με ενεργοποιημένη αυτή τη ρύθμιση. Τα ήδη υπάρχοντα αιτήματα διαγραφής δεδομένων σε αναμονή έγκρισης θα πρέπει να εγκριθούν χειροκίνητα από τον υπεύθυνο προστασίας προσωπικών δεδομένων.';
+$string['automaticdataexportapproval'] = 'Αυτόματη έγκριση εξαγωγής δεδομένων';
+$string['automaticdataexportapproval_desc'] = 'Εάν ενεργοποιηθεί, οι αιτήσεις εξαγωγής δεδομένων εγκρίνονται αυτόματα.<br/>Σημειώστε ότι η αυτόματη έγκριση ισχύει μόνο για νέα αιτήματα διαγραφής δεδομένων με ενεργοποιημένη αυτή τη ρύθμιση. Τα ήδη υπάρχοντα αιτήματα διαγραφής δεδομένων σε αναμονή έγκρισης θα πρέπει να εγκριθούν χειροκίνητα από τον υπεύθυνο προστασίας προσωπικών δεδομένων.';
 $string['automaticdeletionrequests'] = 'Δημιουργία αιτημάτων αυτόματης διαγραφής δεδομένων';
 $string['automaticdeletionrequests_desc'] = 'Εάν ενεργοποιηθεί, θα δημιουργηθεί αυτόματα ένα αίτημα διαγραφής δεδομένων για οποιονδήποτε χειροκίνητα διαγραμμένο λογαριασμό χρήστη.';
 $string['bulkapproverequests'] = 'Έγκριση αιτημάτων';
@@ -140,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} (από την τελευταί�
 $string['emailsalutation'] = 'Αγαπητέ/ή {$a},';
 $string['errorcannotrequestdeleteforother'] = 'Δεν έχετε δικαίωμα δημιουργίας αίτησης διαγραφής για αυτόν τον χρήστη.';
 $string['errorcannotrequestdeleteforself'] = 'Δεν έχετε δικαίωμα δημιουργίας αιτήματος διαγραφής για τον εαυτό σας.';
+$string['errorcontactdpodisabled'] = 'Η επιλογή επικοινωνίας με τον υπεύθυνο απορρήτου έχει απενεργοποιηθεί.';
 $string['errorcontexthasunexpiredchildren'] = 'Το πλαίσιο «{$a}» εξακολουθεί να έχει υπο-πλαίσια που δεν έχουν ακόμη λήξει. Δεν έχουν σημαιοδοτηθεί πλαίσια για διαγραφή.';
 $string['errorinvalidrequestcomments'] = 'Το πεδίο σχολίων μπορεί να περιέχει μόνο απλό κείμενο.';
 $string['errorinvalidrequestcreationmethod'] = 'Μη έγκυρη μέθοδος δημιουργίας αιτήματος!';
@@ -326,7 +332,6 @@ $string['statusdeleted'] = 'Διαγράφηκε';
 $string['statusdetail'] = 'Κατάσταση:';
 $string['statusexpired'] = 'Έληξε';
 $string['statuspending'] = 'Εκκρεμεί';
-$string['statuspreprocessing'] = 'Προ-επεξεργασία';
 $string['statusprocessing'] = 'Επεξεργασία';
 $string['statusready'] = 'Λήψη έτοιμη';
 $string['statusrejected'] = 'Απορρίφθηκε';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'eu', version '3.8'.
+ * Strings for component 'block_configurable_reports', language 'eu', version '3.11'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -51,19 +51,72 @@ $string['columnandcellproperties'] = 'Zutabe eta gelaxkaren ezaugarriak';
 $string['columncalculations'] = 'Zutabeen gaineko kalkuluak';
 $string['columns'] = 'Zutabeak';
 $string['comp_calcs'] = 'Kalkuluak';
+$string['comp_calcs_help'] = '<p>Hemen zutabeetarako kalkuluak gehitu ditzakezu, adibidez: ikastaroetan matrikulatutako batez besteko erabiltzaile kopurua.</p>
+
+<p>Laguntza gehiago: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Pluginaren dokumentazioa (ingelesez)</a>.</p>';
 $string['comp_calculations'] = 'Kalkuluak';
+$string['comp_calculations_help'] = '<p>Hemen zutabeetarako kalkuluak gehitu ditzakezu, adibidez: ikastaroetan matrikulatutako batez besteko erabiltzaile kopurua.</p>';
 $string['comp_columns'] = 'Zutabeak';
+$string['comp_columns_help'] = '<p>Hemen txosten motaren arabera zure txostenaren zutabeak aukeratu ditzakezu.</p>
+
+<p>Laguntza gehiago: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Pluginaren dokumentazioa (ingelesez)</a>.</p>';
 $string['comp_conditions'] = 'Baldintzak';
+$string['comp_conditions_help'] = '<p>Hemen baldintzak zehaztu ditzakezu, adibidez: soilik kategoria honetako ikastaroak, soilik Euskal Herriko erabiltzaileak, etab.</p>
+
+<p>Baldintza bat baino gehiago erabiliz gero adierazpen logikoa gehitu dezakezu.</p>
+
+<p>Laguntza gehiago: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Pluginaren dokumentazioa (ingelesez)</a>.</p>';
 $string['comp_customsql'] = 'Neurrira egindako SQLa';
+$string['comp_customsql_help'] = '<p>Gehitu funtzionatzen duen SQL kontsulta bat. Ez ezazu erabili Moodleko datu-baseko $CFG->prefix aurrizkia, horren ordez "prefix_" erabili ezazu (kakotxik gabe).</p>
+<p>Adibidez: SELECT * FROM prefix_course</p>
+
+<p>Hemen SQL txsoten asko topatu ditzakezu: <a href="http://docs.moodle.org/en/ad-hoc_contributed_reports" target="_blank">ekarpenetako ad-hoc txostenak</a>.</p>
+
+<p>Moodleko taulen eta euren arteko erlazioen diseinu eguneratua: <a href="https://docs.moodle.org/dev/Database_Schema" target="_blank">Datu-base eskema</a>.</p>
+
+<p>Bloke honek Tim Hunt-en Datu-baseko kontsulta pertsonalizatuak onartzen duenez, bertako edozein kontsulta erabili dezakezu.</p>
+
+<p>Gogoratu ezazu "Time filter" gehitzea txostenean denbora-tokenak erabiliko badituzu.</p>
+
+<p>Iragazkiak erabiltzeko ikusi hurrengoa: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">SQL Txosten bat sortzeko Tutoriala (ingelesez)</a>.</p>';
 $string['comp_filters'] = 'Iragazkiak';
+$string['comp_filters_help'] = '<p>Hemen erakutsiko diren iragazkiak aukeratu ditzakezu.</p>
+
+<p>Iragazki batek erabiltzaileari txosteneko zutabeak aukeratu eta emaitzak iragazteko aukera ematen dio.</p>
+
+<p>Zure txostena SQL motakoa bada iragazkiak erabiltzeko ikusi hurrengoa: <a href="http://docs.moodle.org/en/blocks/configurable_reports/#Creating_a_SQL_Report" target="_blank">SQL Txosten bat sortzeko Tutoriala (ingelesez)</a>.</p>
+
+<p>Laguntza gehiago: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Pluginaren dokumentazioa (ingelesez)</a>.</p>';
 $string['comp_ordering'] = 'Ordena';
+$string['comp_ordering_help'] = '<p>Hemen txostena eremuak eta helbideak nola ordenatu aukeratu dezakezu.</p>
+
+<p>Laguntza gehiago: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Pluginaren dokumentazioa (ingelesez)</a></p>';
 $string['comp_permissions'] = 'Baimenak';
+$string['comp_permissions_help'] = '<p>Hemen txostena nola ikusi aukeratu dezakezu.</p>
+
+<p>Baimenak zehazteko baldintza bat baino gehiago erabiltzen ari bazara adierazpen logikoa gehitu dezakezu.</p>
+
+<p>Laguntza gehiago: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Pluginaren dokumentazioa (ingelesez)</a></p>';
 $string['comp_plot'] = 'Marraztu';
+$string['comp_plot_help'] = '<p>Hemen zure txosteneko zutabe eta balioetan oinarritutako grafikoak gehitu ditzakezu.</p>
+
+<p>Laguntza gehiago: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Pluginaren dokumentazioa (ingelesez)</a></p>';
 $string['comp_template'] = 'Txantiloia';
+$string['comp_template_help'] = '<p>Txosteneko diseinua aldatu dezakezu txantiloi bat erabiliz.</p>
+
+<p>Txantiloi bat sortzeko goiburuan, oinean eta txostenaren erregistro bakoitzean ordezkapen-markak erabili ditzakezun markak ikusteko orri bereko laguntza eta informazio-botoiak erabili ditzakezu.</p>
+
+<p>Laguntza gehiago: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Pluginaren dokumentazioa (ingelesez)</a></p>';
 $string['componenthelp'] = 'Osagaiaren laguntza';
 $string['conditionexpr'] = 'Baldintza';
 $string['conditionexpr_conditions'] = 'Baldintza';
+$string['conditionexpr_conditions_help'] = '<p>Baldintzak konbinatu ditzakezu adierazpen logiko bat erabiliz.</p>
+
+<p>Idatzi adierazpen logiko baliagarri bat hurrengo operatzaileekin: and, or.</p>';
 $string['conditionexpr_permissions'] = 'Baldintza';
+$string['conditionexpr_permissions_help'] = '<p>Baldintzak konbinatu ditzakezu adierazpen logiko bat erabiliz.</p>
+
+<p>Idatzi adierazpen logiko baliagarri bat hurrengo operatzaileekin: and, or.</p>';
 $string['conditionexprhelp'] = 'Idatzi baldintza baliagarri bat, esaterako hurrengoa: (c1 and c2) or (c4 and c3)';
 $string['conditions'] = 'Baldintzak';
 $string['configurable_reports:addinstance'] = 'Gehitu neurrira egindako txosten berria';
@@ -113,6 +166,8 @@ $string['datatables_next'] = 'Hurrengoa';
 $string['datatables_previous'] = 'Aurrekoa';
 $string['datatables_processing'] = 'Prozesatzen...';
 $string['datatables_search'] = 'Bilatu:';
+$string['datatables_sortascending'] = ': aktibatu ezazu zutabea goraka ordenatzeko';
+$string['datatables_sortdescending'] = ': aktibatu ezazu zutabea beheraka ordenatzeko';
 $string['datatables_zerorecords'] = 'Ez da aurkitu bilaketarekin bat datorren erregistrorik';
 $string['datatablesinfo'] = 'DataTables JS liburutegia (zutabe-ordenatzea, finkatutako goiburua, bilatzea, orrikatzea...)';
 $string['date'] = 'Data';
@@ -143,7 +198,7 @@ $string['enablejspagination'] = 'Gaitu JavaScript bidezko orrikatzea';
 $string['endtime'] = 'Amaiera-data';
 $string['enrolledstudents'] = 'Matrikulatutako ikasleak';
 $string['error_field'] = 'Eremu ez baimendua';
-$string['error_operator'] = 'Eragiketa-ikur baliogabea';
+$string['error_operator'] = 'Operatzaile baliogabea';
 $string['error_value_expected_integer'] = 'Zenbakizko balioa espero zen';
 $string['excludedeletedusers'] = 'Alde batera utzi ezabatutako erabiltzaileak (SQL txostenetarako soilik)';
 $string['executeat'] = 'Exekutatu une honetan:';
@@ -242,7 +297,7 @@ $string['noreportsavailable'] = 'Ez dago txostenik eskuragarri';
 $string['norowsreturned'] = 'Ez da errenkadarik bueltatu';
 $string['nosemicolon'] = 'Ez dira puntu eta komak onartzen';
 $string['notallowedwords'] = 'Adierazpen ez baimenduak';
-$string['operator'] = 'Eragiketa';
+$string['operator'] = 'Operatzailea';
 $string['ordering'] = 'Ordenatzea';
 $string['others'] = 'Beste batzuk';
 $string['pagination'] = 'Orrikatzea';
@@ -260,6 +315,16 @@ $string['previousdays'] = 'Aurreko egunak';
 $string['previousend'] = 'Aurreko egunen amaiera';
 $string['previousstart'] = 'Aurreko egunen hasiera';
 $string['printreport'] = 'Inprimatu txostena';
+$string['privacy:metadata:block_configurable_reports'] = 'Neurrira egindako txostenak blokeak ikastaro-txosten pertsonalizatuak ditu.';
+$string['privacy:metadata:block_configurable_reports:components'] = 'Txostenaren konfigurazioa. Kontsulta, iragazkiak, etab. ditu.';
+$string['privacy:metadata:block_configurable_reports:courseid'] = 'Ikastaroaren IDa';
+$string['privacy:metadata:block_configurable_reports:global'] = 'Txostena ikastaro guztietan eskuragarri dagoen ala ez';
+$string['privacy:metadata:block_configurable_reports:lastexecutiontime'] = 'Txosten hau azkenengoz exekutatu zenean behar izan zuen denbora, milisegundoetan.';
+$string['privacy:metadata:block_configurable_reports:name'] = 'Txostenaren izena';
+$string['privacy:metadata:block_configurable_reports:ownerid'] = 'Txostena sortu zuen erabiltzailearen IDa';
+$string['privacy:metadata:block_configurable_reports:summary'] = 'Txostenaren deskribapena';
+$string['privacy:metadata:block_configurable_reports:type'] = 'Txosten-mota';
+$string['privacy:metadata:block_configurable_reports:visible'] = 'Txostena ikusgai dagoen ala ez';
 $string['puserfield'] = 'Erabiltzaile-profilaren balioa';
 $string['puserfield_summary'] = 'Erabiltzaile-profileko eremu batean aukeratutako balioa duten erabiltzaileak';
 $string['queryfailed'] = 'Kontsultak huts egin du <code><pre>{$a}</pre></code>';
@@ -284,9 +349,17 @@ $string['reportscapabilities'] = 'Txostenak ikusteko baimenak';
 $string['reportscapabilities_summary'] = 'moodle/site:viewreports baimena gaituta duten erabiltzaileak';
 $string['reportsincategory'] = '2) Aukeratu txosten bat zerrendatik';
 $string['reporttable'] = 'Txostenaren taula';
+$string['reporttable_help'] = '<p>Hau txostenaren erregistroak erakusten dituen taularen zabalera da.</p>
+
+<p>Txantiloia erabiltzen baduzu aukera honek ez du efekturik.</p>';
 $string['reporttableui'] = 'Txosten-taularen interfazea';
 $string['reporttableuiinfo'] = 'Erakutsi txosten-taula honela: HTML taula sinplea korritze-barrarekin, jQuery zutabe-ordenatzearekin edo DataTables JS liburutegia (zutabe-ordenatzea, finkatutako goiburua, bilatzea, orrikatzea...)';
 $string['repository'] = 'Txostenen biltegia';
+$string['repository_help'] = 'Partekatutako biltegi publiko batetik adibidezko txostenak inportatu ditzakezu.
+
+Mesedez, kontuan izan biltegira egindako eskaeren eguneko muga bat dagoela.
+
+Biltegirako konexioak funtzionatzen ez badu, <a href="https://github.com/jleyva/moodle-configurable_reports_repository" target="_blank">hemendik (https://github.com/jleyva/moodle-configurable_reports_repository)</a>txosten bat eskuz deskargatu dezakezu eta ondoren azpiko "Inportatu txostena" aukeratik inportatu dezakezu.';
 $string['role'] = 'Rola';
 $string['roleincourse'] = 'Aukeratutako rola/k txostenaren ikastaroan duen/dituen erabiltzailea';
 $string['roleusersn'] = 'Hurrengo rola duen erabiltzaile-kopurua';
@@ -318,6 +391,17 @@ $string['tableclass'] = 'Taularen klasea';
 $string['tablewidth'] = 'Taularen zabalera';
 $string['template'] = 'Txantiloia';
 $string['template_marks'] = 'Txantiloiaren markak';
+$string['template_marks_help'] = '<p>Hurrengo ordezkapen-markak erabili ditzakezu:</p>
+
+<ul>
+<li>##reportname## - Txostenaren izena gehitzeko</li>
+<li>##reportsummary## - Txostenaren laburpena gehitzeko</li>
+<li>##graphs## - Grafikoak gehitzeko</li>
+<li>##exportoptions## - Esportatzen-aukerak gehitzeko</li>
+<li>##calculationstable## - Kalkulatze-taulak gehitzeko</li>
+<li>##pagination## - Orrikatzea gehitzeko</li>
+
+</ul>';
 $string['templaterecord'] = 'Gorde txantiloia';
 $string['timeinterval'] = 'Denbora-tartea';
 $string['timeline'] = 'Denbora-lerroa';

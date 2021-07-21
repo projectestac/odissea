@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_flatfile', language 'ko', version '3.8'.
+ * Strings for component 'enrol_flatfile', language 'ko', version '3.11'.
  *
  * @package     enrol_flatfile
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'iso6392', language 'el', version '3.8'.
+ * Strings for component 'iso6392', language 'el', version '3.11'.
  *
  * @package     iso6392
  * @category    string
@@ -357,7 +357,7 @@ $string['ori'] = 'Ορίγια';
 $string['orm'] = 'Ορόμο';
 $string['osa'] = 'Οσάζ';
 $string['oss'] = 'Οσσετικά';
-$string['ota'] = 'Τουρκικά (οθωμ.)';
+$string['ota'] = 'Τουρκικά, Οθωμαν. (1500-1928)';
 $string['oto'] = 'Οθωμανικές γλώσσες';
 $string['paa'] = 'Παπούα γλώσσες';
 $string['pag'] = 'Πανγκασινάν';

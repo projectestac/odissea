@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'ja', version '3.8'.
+ * Strings for component 'tool_langimport', language 'ja', version '3.11'.
  *
  * @package     tool_langimport
  * @category    string
@@ -28,6 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadnotavailable'] = 'ダウンロードサーバに接続できません。言語パックをインストールまたは自動更新することができません。適切なZIPファイルを「 <a href="{$a->src}">{$a->src}</a> 」からダウンロードした後、あなたのデータディレクトリ「 <code>{$a->dest}</code> 」に手動で展開してください。';
 $string['install'] = '選択された言語パックをインストールする';
 $string['installedlangs'] = 'インストール済み言語パック';
+$string['installfailed'] = '言語パックのインストールに失敗しました!';
+$string['installfinished'] = '言語パックが正常にインストールされました。';
+$string['installpending'] = '次の言語パックがインストールされます: {$a}';
+$string['installscheduled'] = 'インストールが予定された言語パックです。';
 $string['langimport'] = '言語インポートユーティリティ';
 $string['langimportdisabled'] = '言語インポート機能は無効にされています。あなたはファイルシステムレベルで言語パックを手動更新する必要があります。手動更新の後、忘れずにストリングキャッシュを消去してください。';
 $string['langpackinstalled'] = '言語パック「 {$a} 」が正常にインストールされました。';
@@ -48,7 +52,9 @@ $string['nolangupdateneeded'] = 'すべての言語パックは最新版です�
 $string['pluginname'] = '言語パック';
 $string['privacy:metadata'] = '言語パックプラグインはいかなる個人データも保存しません。';
 $string['purgestringcaches'] = 'ストリングキャッシュを削除する';
+$string['search'] = '利用可能な言語パックを検索する';
 $string['selectlangs'] = 'アンインストールする言語を選択してください。';
 $string['uninstall'] = '選択された言語パックをアンインストールする';
 $string['uninstallconfirm'] = 'あなたは言語パック <strong>{$a}</strong> を完全にアンインストールしようとしています。本当によろしいですか?';
 $string['updatelangs'] = 'すべてのインストール済み言語パックを更新する';
+$string['updatelangsnote'] = 'ボタンをクリックしてインストール済みのすべての言語パックを更新する場合、長時間を要してタイムアウトする場合があります。代わりにスケジュールタスク「 {$a->taskname} 」(デフォルトでは毎日実行) の利用をお勧めします。';

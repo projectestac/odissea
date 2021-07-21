@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'fr', version '3.8'.
+ * Strings for component 'auth_db', language 'fr', version '3.11'.
  *
  * @package     auth_db
  * @category    string
@@ -53,7 +53,7 @@ $string['auth_dbnoexttable'] = 'Table externe non spécifiée.';
 $string['auth_dbnouserfield'] = 'Champ utilisateur externe non spécifié.';
 $string['auth_dbpass'] = 'Mot de passe pour ce compte';
 $string['auth_dbpass_key'] = 'Mot de passe';
-$string['auth_dbpasstype'] = '<p>Indiquez le type de hachage utilisé pour le champ mot de passe.</p> <p>Utilisez « Interne » si vous voulez que la base de données externe gère les noms d\'utilisateur et les adresses de courriel, mais que Moodle gère les mots de passe. Dans ce cas, la base de données externe <i>doit</i> comprendre un champ contenant une adresse de courriel, et vous devez lancer régulièrement les scripts admin/cron.php et auth/db/cli/sync_users.php. Moodle enverra alors par courriel un mot de passe temporaire aux nouveaux utilisateurs.</p>';
+$string['auth_dbpasstype'] = '<p>Indiquez le type de hachage utilisé pour le champ mot de passe.</p> <p>Utilisez « Interne » si vous voulez que la base de données externe gère les noms d\'utilisateur et les adresses de courriel, mais que Moodle gère les mots de passe. Dans ce cas, la base de données externe doit comprendre un champ contenant une adresse de courriel, et vous devez activer la tâche programmée \\auth_db\\task\\sync_users. Moodle enverra alors par courriel un mot de passe temporaire aux nouveaux utilisateurs.</p>';
 $string['auth_dbpasstype_key'] = 'Format du mot de passe';
 $string['auth_dbreviveduser'] = 'Utilisateur {$a->name} id {$a->id} réactivé';
 $string['auth_dbrevivedusererror'] = 'Erreur lors de la réactivation de l\'utilisateur {$a}';

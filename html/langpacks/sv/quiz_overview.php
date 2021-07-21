@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'sv', version '3.8'.
+ * Strings for component 'quiz_overview', language 'sv', version '3.11'.
  *
  * @package     quiz_overview
  * @category    string
@@ -36,7 +36,7 @@ $string['err_failedtodeleteregrades'] = 'Kunde inte radera beräknade försöksb
 $string['err_failedtorecalculateattemptgrades'] = 'Kunde inte omberäkna försöksbetyg';
 $string['highlightinggraded'] = 'Användarens försök som bidrar till slutbetyget är markerat.';
 $string['needed'] = 'Behövs';
-$string['noattemptsonly'] = 'Visa bara  {$a}  utan  försök';
+$string['noattemptsonly'] = 'Visa bara {$a} utan  försök';
 $string['noattemptstoregrade'] = 'Inga försök behöver bedömas om';
 $string['nogradepermission'] = 'Du har inte behörighet att bedöma det här testet';
 $string['onlyoneattemptallowed'] = 'Detta test tillåter endast ett försök per deltagare.';
@@ -44,7 +44,7 @@ $string['optallattempts'] = 'alla försök';
 $string['optallstudents'] = 'Alla {$a}';
 $string['optattemptsonly'] = '{$a} som har försökt på testet';
 $string['optnoattemptsonly'] = '{$a} som inte har försökt på testet';
-$string['optonlyregradedattempts'] = 'som blivit ompoängsatta / är markerade för ompoängsättning';
+$string['optonlyregradedattempts'] = 'som poängsatts på nytt / är markerade för ny poängsättning';
 $string['overview'] = 'Betyg';
 $string['overviewdownload'] = 'Nedladdning av översikt';
 $string['overviewfilename'] = 'betyg';
@@ -62,7 +62,7 @@ $string['privacy:preference:slotmarks:yes'] = 'Poängen visas bredvid frågan.';
 $string['regrade'] = 'Gör om bedömning';
 $string['regradeall'] = 'Gör om bedömning på alla';
 $string['regradealldry'] = 'Testkör fullständig ombedömning';
-$string['regradealldrydo'] = 'Bedöm om försök som angetts behöva ombedömning ({$a})';
+$string['regradealldrydo'] = 'Gör om betygsättningen för försök som markerats för att betygsättas på nytt ({$a})';
 $string['regradealldrydogroup'] = 'Bedöm om försök ({$a->countregradeneeded}) som angetts behöva ombedömning i grupp \'{$a->groupname}\\';
 $string['regradealldrygroup'] = 'Provkör en fullständig ombedömning för gruppen \'{$a->groupname}\'';
 $string['regradeallgroup'] = 'Full ombedömning för gruppen \'{$a->groupname}\'';

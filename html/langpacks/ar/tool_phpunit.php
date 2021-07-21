@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_phpunit', language 'ar', version '3.8'.
+ * Strings for component 'tool_phpunit', language 'ar', version '3.11'.
  *
  * @package     tool_phpunit
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'آلية اختبار وحدة PHP';
-$string['privacy:metadata'] = 'لا يخزن البرنامج المساعد لاختبارات PHPUnit أي بيانات شخصية.';
+$string['pluginname'] = 'إختبارات PHPUnit';
+$string['privacy:metadata'] = 'إن ملحق اختبارات PHPUnit لا يخزن أي بيانات شخصية.';

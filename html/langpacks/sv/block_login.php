@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_login', language 'sv', version '3.8'.
+ * Strings for component 'block_login', language 'sv', version '3.11'.
  *
  * @package     block_login
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['login:addinstance'] = 'Lägg till nytt inloggningsblock';
 $string['pluginname'] = 'Logga in';
+$string['privacy:metadata'] = 'Login-blocket tillhandahåller enbart en metod för inloggning och lagrar i sig självt ingen data.';

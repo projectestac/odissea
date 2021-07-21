@@ -46,6 +46,12 @@ define('TABLE_P_TOP',    1);
 define('TABLE_P_BOTTOM', 2);
 /**#@-*/
 
+/**
+ * Constant that defines the 'Show all' page size.
+ */
+define('TABLE_SHOW_ALL_PAGE_SIZE', 5000);
+
+use core_table\local\filter\filterset;
 
 /**
  * @package   moodlecore
@@ -84,6 +90,18 @@ class flexible_table {
     private $persistent = false;
     var $is_collapsible = false;
     var $is_sortable    = false;
+
+    /**
+     * @var array The fields to sort.
+     */
+    protected $sortdata;
+
+    /** @var string The manually set first name initial preference */
+    protected $ifirst;
+
+    /** @var string The manually set last name initial preference */
+    protected $ilast;
+
     var $use_pages      = false;
     var $use_initials   = false;
 
@@ -94,6 +112,9 @@ class flexible_table {
     var $currentrow  = 0;
     var $sort_default_column = NULL;
     var $sort_default_order  = SORT_ASC;
+
+    /** @var integer The defeult per page size for the table. */
+    private $defaultperpage = 30;
 
     /**
      * Array of positions in which to display download controls.
@@ -136,6 +157,18 @@ class flexible_table {
 
     /** @var $filename */
     protected $filename;
+
+    /** @var array $hiddencolumns List of hidden columns. */
+    protected $hiddencolumns;
+
+    /** @var $resetting bool Whether the table preferences is resetting. */
+    protected $resetting;
+
+    /**
+     * @var filterset The currently applied filerset
+     * This is required for dynamic tables, but can be used by other tables too if desired.
+     */
+    protected $filterset = null;
 
     /**
      * Constructor
@@ -459,109 +492,37 @@ class flexible_table {
     }
 
     /**
+     * Mark the table preferences to be reset.
+     */
+    public function mark_table_to_reset(): void {
+        $this->resetting = true;
+    }
+
+    /**
+     * Is the table marked for reset preferences?
+     *
+     * @return bool True if the table is marked to reset, false otherwise.
+     */
+    protected function is_resetting_preferences(): bool {
+        if ($this->resetting === null) {
+            $this->resetting = optional_param($this->request[TABLE_VAR_RESET], false, PARAM_BOOL);
+        }
+
+        return $this->resetting;
+}
+
+    /**
      * Must be called after table is defined. Use methods above first. Cannot
      * use functions below till after calling this method.
      * @return type?
      */
     function setup() {
-        global $SESSION;
 
         if (empty($this->columns) || empty($this->uniqueid)) {
             return false;
         }
 
-        // Load any existing user preferences.
-        if ($this->persistent) {
-            $this->prefs = json_decode(get_user_preferences('flextable_' . $this->uniqueid), true);
-            $oldprefs = $this->prefs;
-        } else if (isset($SESSION->flextable[$this->uniqueid])) {
-            $this->prefs = $SESSION->flextable[$this->uniqueid];
-            $oldprefs = $this->prefs;
-        }
-
-        // Set up default preferences if needed.
-        if (!$this->prefs or optional_param($this->request[TABLE_VAR_RESET], false, PARAM_BOOL)) {
-            $this->prefs = array(
-                'collapse' => array(),
-                'sortby'   => array(),
-                'i_first'  => '',
-                'i_last'   => '',
-                'textsort' => $this->column_textsort,
-            );
-        }
-
-        if (!isset($oldprefs)) {
-            $oldprefs = $this->prefs;
-        }
-
-        if (($showcol = optional_param($this->request[TABLE_VAR_SHOW], '', PARAM_ALPHANUMEXT)) &&
-                isset($this->columns[$showcol])) {
-            $this->prefs['collapse'][$showcol] = false;
-
-        } else if (($hidecol = optional_param($this->request[TABLE_VAR_HIDE], '', PARAM_ALPHANUMEXT)) &&
-                isset($this->columns[$hidecol])) {
-            $this->prefs['collapse'][$hidecol] = true;
-            if (array_key_exists($hidecol, $this->prefs['sortby'])) {
-                unset($this->prefs['sortby'][$hidecol]);
-            }
-        }
-
-        // Now, update the column attributes for collapsed columns
-        foreach (array_keys($this->columns) as $column) {
-            if (!empty($this->prefs['collapse'][$column])) {
-                $this->column_style[$column]['width'] = '10px';
-            }
-        }
-
-        if (($sortcol = optional_param($this->request[TABLE_VAR_SORT], '', PARAM_ALPHANUMEXT)) &&
-                $this->is_sortable($sortcol) && empty($this->prefs['collapse'][$sortcol]) &&
-                (isset($this->columns[$sortcol]) || in_array($sortcol, get_all_user_name_fields())
-                && isset($this->columns['fullname']))) {
-
-            $sortdir = optional_param($this->request[TABLE_VAR_DIR], $this->sort_default_order, PARAM_INT);
-
-            if (array_key_exists($sortcol, $this->prefs['sortby'])) {
-                // This key already exists somewhere. Change its sortorder and bring it to the top.
-                $sortorder = $this->prefs['sortby'][$sortcol] = $sortdir;
-                unset($this->prefs['sortby'][$sortcol]);
-                $this->prefs['sortby'] = array_merge(array($sortcol => $sortorder), $this->prefs['sortby']);
-            } else {
-                // Key doesn't exist, so just add it to the beginning of the array, ascending order
-                $this->prefs['sortby'] = array_merge(array($sortcol => $sortdir), $this->prefs['sortby']);
-            }
-
-            // Finally, make sure that no more than $this->maxsortkeys are present into the array
-            $this->prefs['sortby'] = array_slice($this->prefs['sortby'], 0, $this->maxsortkeys);
-        }
-
-        // MDL-35375 - If a default order is defined and it is not in the current list of order by columns, add it at the end.
-        // This prevents results from being returned in a random order if the only order by column contains equal values.
-        if (!empty($this->sort_default_column))  {
-            if (!array_key_exists($this->sort_default_column, $this->prefs['sortby'])) {
-                $defaultsort = array($this->sort_default_column => $this->sort_default_order);
-                $this->prefs['sortby'] = array_merge($this->prefs['sortby'], $defaultsort);
-            }
-        }
-
-        $ilast = optional_param($this->request[TABLE_VAR_ILAST], null, PARAM_RAW);
-        if (!is_null($ilast) && ($ilast ==='' || strpos(get_string('alphabet', 'langconfig'), $ilast) !== false)) {
-            $this->prefs['i_last'] = $ilast;
-        }
-
-        $ifirst = optional_param($this->request[TABLE_VAR_IFIRST], null, PARAM_RAW);
-        if (!is_null($ifirst) && ($ifirst === '' || strpos(get_string('alphabet', 'langconfig'), $ifirst) !== false)) {
-            $this->prefs['i_first'] = $ifirst;
-        }
-
-        // Save user preferences if they have changed.
-        if ($this->prefs != $oldprefs) {
-            if ($this->persistent) {
-                set_user_preference('flextable_' . $this->uniqueid, json_encode($this->prefs));
-            } else {
-                $SESSION->flextable[$this->uniqueid] = $this->prefs;
-            }
-        }
-        unset($oldprefs);
+        $this->initialise_table_preferences();
 
         if (empty($this->baseurl)) {
             debugging('You should set baseurl when using flexible_table.');
@@ -569,16 +530,19 @@ class flexible_table {
             $this->baseurl = $PAGE->url;
         }
 
-        $this->currpage = optional_param($this->request[TABLE_VAR_PAGE], 0, PARAM_INT);
+        if ($this->currpage == null) {
+            $this->currpage = optional_param($this->request[TABLE_VAR_PAGE], 0, PARAM_INT);
+        }
+
         $this->setup = true;
 
         // Always introduce the "flexible" class for the table if not specified
         if (empty($this->attributes)) {
-            $this->attributes['class'] = 'flexible';
+            $this->attributes['class'] = 'flexible table table-striped table-hover';
         } else if (!isset($this->attributes['class'])) {
-            $this->attributes['class'] = 'flexible';
+            $this->attributes['class'] = 'flexible table table-striped table-hover';
         } else if (!in_array('flexible', explode(' ', $this->attributes['class']))) {
-            $this->attributes['class'] = trim('flexible ' . $this->attributes['class']);
+            $this->attributes['class'] = trim('flexible table table-striped table-hover ' . $this->attributes['class']);
         }
     }
 
@@ -652,7 +616,7 @@ class flexible_table {
             if (isset($this->columns[$column])) {
                 continue; // This column is OK.
             }
-            if (in_array($column, get_all_user_name_fields()) &&
+            if (in_array($column, \core_user\fields::get_name_fields()) &&
                     isset($this->columns['fullname'])) {
                 continue; // This column is OK.
             }
@@ -863,9 +827,9 @@ class flexible_table {
      * @return string contents of cell in column 'fullname', for this row.
      */
     function col_fullname($row) {
-        global $PAGE, $COURSE;
+        global $COURSE;
 
-        $name = fullname($row, has_capability('moodle/site:viewfullnames', $PAGE->context));
+        $name = fullname($row, has_capability('moodle/site:viewfullnames', $this->get_context()));
         if ($this->download) {
             return $name;
         }
@@ -885,6 +849,12 @@ class flexible_table {
      * build_table which calls this method.
      */
     function other_cols($column, $row) {
+        if (isset($row->$column) && ($column === 'email' || $column === 'idnumber') &&
+                (!$this->is_downloading() || $this->export_class_instance()->supports_html())) {
+            // Columns email and idnumber may potentially contain malicious characters, escape them by default.
+            // This function will not be executed if the child class implements col_email() or col_idnumber().
+            return s($row->$column);
+        }
         return NULL;
     }
 
@@ -1019,12 +989,18 @@ class flexible_table {
     function print_nothing_to_display() {
         global $OUTPUT;
 
+        // Render the dynamic table header.
+        echo $this->get_dynamic_table_html_start();
+
         // Render button to allow user to reset table preferences.
         echo $this->render_reset_button();
 
         $this->print_initials_bar();
 
         echo $OUTPUT->heading(get_string('nothingtodisplay'));
+
+        // Render the dynamic table footer.
+        echo $this->get_dynamic_table_html_end();
     }
 
     /**
@@ -1158,7 +1134,8 @@ class flexible_table {
      * This function is not part of the public api.
      */
     function finish_html() {
-        global $OUTPUT;
+        global $OUTPUT, $PAGE;
+
         if (!$this->started_output) {
             //no data has been added to the table.
             $this->print_nothing_to_display();
@@ -1187,6 +1164,9 @@ class flexible_table {
                 $pagingbar->pagevar = $this->request[TABLE_VAR_PAGE];
                 echo $OUTPUT->render($pagingbar);
             }
+
+            // Render the dynamic table footer.
+            echo $this->get_dynamic_table_html_end();
         }
     }
 
@@ -1212,14 +1192,18 @@ class flexible_table {
         if (!empty($this->prefs['collapse'][$column])) {
             $linkattributes = array('title' => get_string('show') . ' ' . strip_tags($this->headers[$index]),
                                     'aria-expanded' => 'false',
-                                    'aria-controls' => $ariacontrols);
+                                    'aria-controls' => $ariacontrols,
+                                    'data-action' => 'show',
+                                    'data-column' => $column);
             return html_writer::link($this->baseurl->out(false, array($this->request[TABLE_VAR_SHOW] => $column)),
                     $OUTPUT->pix_icon('t/switch_plus', get_string('show')), $linkattributes);
 
         } else if ($this->headers[$index] !== NULL) {
             $linkattributes = array('title' => get_string('hide') . ' ' . strip_tags($this->headers[$index]),
                                     'aria-expanded' => 'true',
-                                    'aria-controls' => $ariacontrols);
+                                    'aria-controls' => $ariacontrols,
+                                    'data-action' => 'hide',
+                                    'data-column' => $column);
             return html_writer::link($this->baseurl->out(false, array($this->request[TABLE_VAR_HIDE] => $column)),
                     $OUTPUT->pix_icon('t/switch_minus', get_string('hide')), $linkattributes);
         }
@@ -1229,7 +1213,13 @@ class flexible_table {
      * This function is not part of the public api.
      */
     function print_headers() {
-        global $CFG, $OUTPUT, $PAGE;
+        global $CFG, $OUTPUT;
+
+        // Set the primary sort column/order where possible, so that sort links/icons are correct.
+        [
+            'sortby' => $primarysortcolumn,
+            'sortorder' => $primarysortorder,
+        ] = $this->get_primary_sort_order();
 
         echo html_writer::start_tag('thead');
         echo html_writer::start_tag('tr');
@@ -1239,19 +1229,11 @@ class flexible_table {
             if ($this->is_collapsible) {
                 $icon_hide = $this->show_hide_link($column, $index);
             }
-
-            $primarysortcolumn = '';
-            $primarysortorder  = '';
-            if (reset($this->prefs['sortby'])) {
-                $primarysortcolumn = key($this->prefs['sortby']);
-                $primarysortorder  = current($this->prefs['sortby']);
-            }
-
             switch ($column) {
 
                 case 'fullname':
                     // Check the full name display for sortable fields.
-                    if (has_capability('moodle/site:viewfullnames', $PAGE->context)) {
+                    if (has_capability('moodle/site:viewfullnames', $this->get_context())) {
                         $nameformat = $CFG->alternativefullnameformat;
                     } else {
                         $nameformat = $CFG->fullnamedisplay;
@@ -1261,7 +1243,7 @@ class flexible_table {
                         $nameformat = get_string('fullnamedisplay');
                     }
 
-                    $requirednames = order_in_string(get_all_user_name_fields(), $nameformat);
+                    $requirednames = order_in_string(\core_user\fields::get_name_fields(), $nameformat);
 
                     if (!empty($requirednames)) {
                         if ($this->is_sortable($column)) {
@@ -1323,6 +1305,262 @@ class flexible_table {
     }
 
     /**
+     * Calculate the preferences for sort order based on user-supplied values and get params.
+     */
+    protected function set_sorting_preferences(): void {
+        $sortdata = $this->sortdata;
+
+        if ($sortdata === null) {
+            $sortdata = $this->prefs['sortby'];
+
+            $sortorder = optional_param($this->request[TABLE_VAR_DIR], $this->sort_default_order, PARAM_INT);
+            $sortby = optional_param($this->request[TABLE_VAR_SORT], '', PARAM_ALPHANUMEXT);
+
+            if (array_key_exists($sortby, $sortdata)) {
+                // This key already exists somewhere. Change its sortorder and bring it to the top.
+                unset($sortdata[$sortby]);
+            }
+            $sortdata = array_merge([$sortby => $sortorder], $sortdata);
+        }
+
+        $usernamefields = \core_user\fields::get_name_fields();
+        $sortdata = array_filter($sortdata, function($sortby) use ($usernamefields) {
+            $isvalidsort = $sortby && $this->is_sortable($sortby);
+            $isvalidsort = $isvalidsort && empty($this->prefs['collapse'][$sortby]);
+            $isrealcolumn = isset($this->columns[$sortby]);
+            $isfullnamefield = isset($this->columns['fullname']) && in_array($sortby, $usernamefields);
+
+            return $isvalidsort && ($isrealcolumn || $isfullnamefield);
+        }, ARRAY_FILTER_USE_KEY);
+
+        // Finally, make sure that no more than $this->maxsortkeys are present into the array.
+        $sortdata = array_slice($sortdata, 0, $this->maxsortkeys);
+
+        // If a default order is defined and it is not in the current list of order by columns, add it at the end.
+        // This prevents results from being returned in a random order if the only order by column contains equal values.
+        if (!empty($this->sort_default_column) && !array_key_exists($this->sort_default_column, $sortdata)) {
+            $sortdata = array_merge($sortdata, [$this->sort_default_column => $this->sort_default_order]);
+        }
+
+        // Apply the sortdata to the preference.
+        $this->prefs['sortby'] = $sortdata;
+    }
+
+    /**
+     * Fill in the preferences for the initials bar.
+     */
+    protected function set_initials_preferences(): void {
+        $ifirst = $this->ifirst;
+        $ilast = $this->ilast;
+
+        if ($ifirst === null) {
+            $ifirst = optional_param($this->request[TABLE_VAR_IFIRST], null, PARAM_RAW);
+        }
+
+        if ($ilast === null) {
+            $ilast = optional_param($this->request[TABLE_VAR_ILAST], null, PARAM_RAW);
+        }
+
+        if (!is_null($ifirst) && ($ifirst === '' || strpos(get_string('alphabet', 'langconfig'), $ifirst) !== false)) {
+            $this->prefs['i_first'] = $ifirst;
+        }
+
+        if (!is_null($ilast) && ($ilast === '' || strpos(get_string('alphabet', 'langconfig'), $ilast) !== false)) {
+            $this->prefs['i_last'] = $ilast;
+        }
+
+    }
+
+    /**
+     * Set hide and show preferences.
+     */
+    protected function set_hide_show_preferences(): void {
+
+        if ($this->hiddencolumns !== null) {
+            $this->prefs['collapse'] = array_fill_keys(array_filter($this->hiddencolumns, function($column) {
+                return array_key_exists($column, $this->columns);
+            }), true);
+        } else {
+            if ($column = optional_param($this->request[TABLE_VAR_HIDE], '', PARAM_ALPHANUMEXT)) {
+                if (isset($this->columns[$column])) {
+                    $this->prefs['collapse'][$column] = true;
+                }
+            }
+        }
+
+        if ($column = optional_param($this->request[TABLE_VAR_SHOW], '', PARAM_ALPHANUMEXT)) {
+            unset($this->prefs['collapse'][$column]);
+        }
+
+        foreach (array_keys($this->prefs['collapse']) as $column) {
+            if (array_key_exists($column, $this->prefs['sortby'])) {
+                unset($this->prefs['sortby'][$column]);
+            }
+        }
+    }
+
+    /**
+     * Set the list of hidden columns.
+     *
+     * @param array $columns The list of hidden columns.
+     */
+    public function set_hidden_columns(array $columns): void {
+        $this->hiddencolumns = $columns;
+    }
+
+    /**
+     * Initialise table preferences.
+     */
+    protected function initialise_table_preferences(): void {
+        global $SESSION;
+
+        // Load any existing user preferences.
+        if ($this->persistent) {
+            $this->prefs = json_decode(get_user_preferences('flextable_' . $this->uniqueid), true);
+            $oldprefs = $this->prefs;
+        } else if (isset($SESSION->flextable[$this->uniqueid])) {
+            $this->prefs = $SESSION->flextable[$this->uniqueid];
+            $oldprefs = $this->prefs;
+        }
+
+        // Set up default preferences if needed.
+        if (!$this->prefs || $this->is_resetting_preferences()) {
+            $this->prefs = [
+                'collapse' => [],
+                'sortby'   => [],
+                'i_first'  => '',
+                'i_last'   => '',
+                'textsort' => $this->column_textsort,
+            ];
+        }
+
+        if (!isset($oldprefs)) {
+            $oldprefs = $this->prefs;
+        }
+
+        // Save user preferences if they have changed.
+        if ($this->is_resetting_preferences()) {
+            $this->sortdata = null;
+            $this->ifirst = null;
+            $this->ilast = null;
+        }
+
+        if (($showcol = optional_param($this->request[TABLE_VAR_SHOW], '', PARAM_ALPHANUMEXT)) &&
+            isset($this->columns[$showcol])) {
+            $this->prefs['collapse'][$showcol] = false;
+        } else if (($hidecol = optional_param($this->request[TABLE_VAR_HIDE], '', PARAM_ALPHANUMEXT)) &&
+            isset($this->columns[$hidecol])) {
+            $this->prefs['collapse'][$hidecol] = true;
+            if (array_key_exists($hidecol, $this->prefs['sortby'])) {
+                unset($this->prefs['sortby'][$hidecol]);
+            }
+        }
+
+        $this->set_hide_show_preferences();
+        $this->set_sorting_preferences();
+        $this->set_initials_preferences();
+
+        // Now, reduce the width of collapsed columns and remove the width from columns that should be expanded.
+        foreach (array_keys($this->columns) as $column) {
+            if (!empty($this->prefs['collapse'][$column])) {
+                $this->column_style[$column]['width'] = '10px';
+            } else {
+                unset($this->column_style[$column]['width']);
+            }
+        }
+
+        if (empty($this->baseurl)) {
+            debugging('You should set baseurl when using flexible_table.');
+            global $PAGE;
+            $this->baseurl = $PAGE->url;
+        }
+
+        if ($this->currpage == null) {
+            $this->currpage = optional_param($this->request[TABLE_VAR_PAGE], 0, PARAM_INT);
+        }
+
+        $this->save_preferences($oldprefs);
+    }
+
+    /**
+     * Save preferences.
+     *
+     * @param array $oldprefs Old preferences to compare against.
+     */
+    protected function save_preferences($oldprefs): void {
+        global $SESSION;
+
+        if ($this->prefs != $oldprefs) {
+            if ($this->persistent) {
+                set_user_preference('flextable_' . $this->uniqueid, json_encode($this->prefs));
+            } else {
+                $SESSION->flextable[$this->uniqueid] = $this->prefs;
+            }
+        }
+        unset($oldprefs);
+    }
+
+    /**
+     * Set the preferred table sorting attributes.
+     *
+     * @param string $sortby The field to sort by.
+     * @param int $sortorder The sort order.
+     */
+    public function set_sortdata(array $sortdata): void {
+        $this->sortdata = [];
+        foreach ($sortdata as $sortitem) {
+            if (!array_key_exists($sortitem['sortby'], $this->sortdata)) {
+                $this->sortdata[$sortitem['sortby']] = (int) $sortitem['sortorder'];
+            }
+        }
+    }
+
+    /**
+     * Get the default per page.
+     *
+     * @return int
+     */
+    public function get_default_per_page(): int {
+        return $this->defaultperpage;
+    }
+
+    /**
+     * Set the default per page.
+     *
+     * @param int $defaultperpage
+     */
+    public function set_default_per_page(int $defaultperpage): void {
+        $this->defaultperpage = $defaultperpage;
+    }
+
+    /**
+     * Set the preferred first name initial in an initials bar.
+     *
+     * @param string $initial The character to set
+     */
+    public function set_first_initial(string $initial): void {
+        $this->ifirst = $initial;
+    }
+
+    /**
+     * Set the preferred last name initial in an initials bar.
+     *
+     * @param string $initial The character to set
+     */
+    public function set_last_initial(string $initial): void {
+        $this->ilast = $initial;
+    }
+
+    /**
+     * Set the page number.
+     *
+     * @param int $pagenumber The page number.
+     */
+    public function set_page_number(int $pagenumber): void {
+        $this->currpage = $pagenumber - 1;
+    }
+
+    /**
      * Generate the HTML for the sort icon. This is a helper method used by {@link sort_link()}.
      * @param bool $isprimary whether an icon is needed (it is only needed for the primary sort column.)
      * @param int $order SORT_ASC or SORT_DESC
@@ -1380,8 +1618,141 @@ class flexible_table {
 
         return html_writer::link($this->baseurl->out(false, $params),
                 $text . get_accesshide(get_string('sortby') . ' ' .
-                $text . ' ' . $this->sort_order_name($isprimary, $order))) . ' ' .
-                $this->sort_icon($isprimary, $order);
+                $text . ' ' . $this->sort_order_name($isprimary, $order)),
+                [
+                    'data-sortable' => $this->is_sortable($column),
+                    'data-sortby' => $column,
+                    'data-sortorder' => $sortorder,
+                ]) . ' ' . $this->sort_icon($isprimary, $order);
+    }
+
+    /**
+     * Return primary sorting column/order, either the first preferred "sortby" value or defaults defined for the table
+     *
+     * @return array
+     */
+    protected function get_primary_sort_order(): array {
+        if (reset($this->prefs['sortby'])) {
+            return $this->get_sort_order();
+        }
+
+        return [
+            'sortby' => $this->sort_default_column,
+            'sortorder' => $this->sort_default_order,
+        ];
+    }
+
+    /**
+     * Return sorting attributes values.
+     *
+     * @return array
+     */
+    protected function get_sort_order(): array {
+        $sortbys = $this->prefs['sortby'];
+        $sortby = key($sortbys);
+
+        return [
+            'sortby' => $sortby,
+            'sortorder' => $sortbys[$sortby],
+        ];
+    }
+
+    /**
+     * Get dynamic class component.
+     *
+     * @return string
+     */
+    protected function get_component() {
+        $tableclass = explode("\\", get_class($this));
+        return reset($tableclass);
+    }
+
+    /**
+     * Get dynamic class handler.
+     *
+     * @return string
+     */
+    protected function get_handler() {
+        $tableclass = explode("\\", get_class($this));
+        return end($tableclass);
+    }
+
+    /**
+     * Get the dynamic table start wrapper.
+     * If this is not a dynamic table, then an empty string is returned making this safe to blindly call.
+     *
+     * @return string
+     */
+    protected function get_dynamic_table_html_start(): string {
+        if (is_a($this, \core_table\dynamic::class)) {
+            $sortdata = array_map(function($sortby, $sortorder) {
+                return [
+                    'sortby' => $sortby,
+                    'sortorder' => $sortorder,
+                ];
+            }, array_keys($this->prefs['sortby']), array_values($this->prefs['sortby']));;
+
+            return html_writer::start_tag('div', [
+                'class' => 'table-dynamic position-relative',
+                'data-region' => 'core_table/dynamic',
+                'data-table-handler' => $this->get_handler(),
+                'data-table-component' => $this->get_component(),
+                'data-table-uniqueid' => $this->uniqueid,
+                'data-table-filters' => json_encode($this->get_filterset()),
+                'data-table-sort-data' => json_encode($sortdata),
+                'data-table-first-initial' => $this->prefs['i_first'],
+                'data-table-last-initial' => $this->prefs['i_last'],
+                'data-table-page-number' => $this->currpage + 1,
+                'data-table-page-size' => $this->pagesize,
+                'data-table-default-per-page' => $this->get_default_per_page(),
+                'data-table-hidden-columns' => json_encode(array_keys($this->prefs['collapse'])),
+                'data-table-total-rows' => $this->totalrows,
+            ]);
+        }
+
+        return '';
+    }
+
+    /**
+     * Get the dynamic table end wrapper.
+     * If this is not a dynamic table, then an empty string is returned making this safe to blindly call.
+     *
+     * @return string
+     */
+    protected function get_dynamic_table_html_end(): string {
+        global $PAGE;
+
+        if (is_a($this, \core_table\dynamic::class)) {
+            $output = '';
+
+            $perpageurl = new moodle_url($PAGE->url);
+
+            // Generate "Show all/Show per page" link.
+            if ($this->pagesize == TABLE_SHOW_ALL_PAGE_SIZE && $this->totalrows > $this->get_default_per_page()) {
+                $perpagesize = $this->get_default_per_page();
+                $perpagestring = get_string('showperpage', '', $this->get_default_per_page());
+            } else if ($this->pagesize < $this->totalrows) {
+                $perpagesize = TABLE_SHOW_ALL_PAGE_SIZE;
+                $perpagestring = get_string('showall', '', $this->totalrows);
+            }
+            if (isset($perpagesize) && isset($perpagestring)) {
+                $perpageurl->param('perpage', $perpagesize);
+                $output .= html_writer::link(
+                    $perpageurl,
+                    $perpagestring,
+                    [
+                        'data-action' => 'showcount',
+                        'data-target-page-size' => $perpagesize,
+                    ]
+                );
+            }
+
+            $PAGE->requires->js_call_amd('core_table/dynamic', 'init');
+            $output .= html_writer::end_tag('div');
+            return $output;
+        }
+
+        return '';
     }
 
     /**
@@ -1389,6 +1760,9 @@ class flexible_table {
      */
     function start_html() {
         global $OUTPUT;
+
+        // Render the dynamic table header.
+        echo $this->get_dynamic_table_html_start();
 
         // Render button to allow user to reset table preferences.
         echo $this->render_reset_button();
@@ -1460,10 +1834,8 @@ class flexible_table {
      * @return bool
      */
     protected function can_be_reset() {
-
         // Loop through preferences and make sure they are empty or set to the default value.
         foreach ($this->prefs as $prefname => $prefval) {
-
             if ($prefname === 'sortby' and !empty($this->sort_default_column)) {
                 // Check if the actual sorting differs from the default one.
                 if (empty($prefval) or $prefval !== array($this->sort_default_column => $this->sort_default_order)) {
@@ -1485,6 +1857,55 @@ class flexible_table {
         }
 
         return false;
+    }
+
+    /**
+     * Get the context for the table.
+     *
+     * Note: This function _must_ be overridden by dynamic tables to ensure that the context is correctly determined
+     * from the filterset parameters.
+     *
+     * @return context
+     */
+    public function get_context(): context {
+        global $PAGE;
+
+        if (is_a($this, \core_table\dynamic::class)) {
+            throw new coding_exception('The get_context function must be defined for a dynamic table');
+        }
+
+        return $PAGE->context;
+    }
+
+    /**
+     * Set the filterset in the table class.
+     *
+     * The use of filtersets is a requirement for dynamic tables, but can be used by other tables too if desired.
+     *
+     * @param filterset $filterset The filterset object to get filters and table parameters from
+     */
+    public function set_filterset(filterset $filterset): void {
+        $this->filterset = $filterset;
+
+        $this->guess_base_url();
+    }
+
+    /**
+     * Get the currently defined filterset.
+     *
+     * @return filterset
+     */
+    public function get_filterset(): ?filterset {
+        return $this->filterset;
+    }
+
+    /**
+     * Attempt to guess the base URL.
+     */
+    public function guess_base_url(): void {
+        if (is_a($this, \core_table\dynamic::class)) {
+            throw new coding_exception('The guess_base_url function must be defined for a dynamic table');
+        }
     }
 }
 
@@ -1665,6 +2086,7 @@ class table_sql extends flexible_table {
             $this->define_columns(array_keys((array)$onerow));
             $this->define_headers(array_keys((array)$onerow));
         }
+        $this->pagesize = $pagesize;
         $this->setup();
         $this->query_db($pagesize, $useinitialsbar);
         $this->build_table();
@@ -1748,7 +2170,7 @@ class table_default_export_format_parent {
  */
 class table_dataformat_export_format extends table_default_export_format_parent {
 
-    /** @var $dataformat */
+    /** @var \core\dataformat\base $dataformat */
     protected $dataformat;
 
     /** @var $rownum */
@@ -1781,6 +2203,15 @@ class table_dataformat_export_format extends table_default_export_format_parent 
 
         // Close the session so that the users other tabs in the same session are not blocked.
         \core\session\manager::write_close();
+    }
+
+    /**
+     * Whether the current dataformat supports export of HTML
+     *
+     * @return bool
+     */
+    public function supports_html(): bool {
+        return $this->dataformat->supports_html();
     }
 
     /**

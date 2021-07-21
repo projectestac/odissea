@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'de', version '3.8'.
+ * Strings for component 'auth_mnet', language 'de', version '3.11'.
  *
  * @package     auth_mnet
  * @category    string
@@ -82,7 +82,7 @@ $string['privacy:metadata:mnet_log:cmid'] = 'ID des Kursmoduls';
 $string['privacy:metadata:mnet_log:course'] = 'Remote System Kurs-ID in der die Aktion erfolgte';
 $string['privacy:metadata:mnet_log:coursename'] = 'Remote System Langname des Kurses in der die Aktion erfolgte';
 $string['privacy:metadata:mnet_log:hostid'] = 'Remote System MNet ID';
-$string['privacy:metadata:mnet_log:info'] = 'Zusätzliche Information zur Aktion';
+$string['privacy:metadata:mnet_log:info'] = 'Zusätzliche Infos zur Aktion';
 $string['privacy:metadata:mnet_log:ip'] = 'IP-Adresse zum Zeitpunkt der Aktion';
 $string['privacy:metadata:mnet_log:module'] = 'Remote System Modul in dem Aktion stattfand';
 $string['privacy:metadata:mnet_log:remoteid'] = 'Remote-ID des Nutzers der Aktion in Remote-System auslöste';

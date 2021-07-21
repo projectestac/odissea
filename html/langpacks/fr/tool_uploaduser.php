@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'fr', version '3.8'.
+ * Strings for component 'tool_uploaduser', language 'fr', version '3.11'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -29,19 +29,30 @@ $string['allowdeletes'] = 'Autoriser les suppressions';
 $string['allowrenames'] = 'Autoriser le changement des noms';
 $string['allowsuspends'] = 'Permettre la suspension et l\'activation de comptes';
 $string['assignedsysrole'] = 'Attribuer le rôle système {$a}';
+$string['clidefault'] = 'Réglages par défaut :';
+$string['clierrorargument'] = 'La valeur de l\'argument --{$a->name} n\'est pas valide. Valeurs permises : {$a->values}';
+$string['clifile'] = 'Chemin d\'accès au fichier CSV contenant les données des utilisateurs. Requis.';
+$string['clifilenotreadable'] = 'Le fichier {$a} n\'existe pas ou n\'est pas lisible';
+$string['clihelp'] = 'Affiche cette aide.';
+$string['climissingargument'] = 'L\'argument --{$a} est requis';
+$string['clititle'] = 'Outil de dépôt d\'utilisateurs en ligne de commande.';
+$string['clivalidationerror'] = 'Erreur de validation :';
 $string['csvdelimiter'] = 'Séparateur CSV';
 $string['defaultvalues'] = 'Valeurs par défaut';
 $string['deleteerrors'] = 'Erreurs lors de suppressions';
 $string['encoding'] = 'Encodage';
 $string['errormnetadd'] = 'Impossible d\'ajouter des utilisateurs distants';
+$string['errorprefix'] = 'Erreur :';
 $string['errors'] = 'Erreurs';
 $string['examplecsv'] = 'Fichier texte exemple';
 $string['examplecsv_help'] = 'Pour utiliser le fichier texte exemple, le télécharger, puis l\'ouvrir avec un éditeur de texte ou de feuille de calcul. Laisser inchangée la première ligne et modifier les lignes suivantes (enregistrements) en ajoutant vos données utilisateurs, en ajoutant autant de lignes que nécessaire. Enregistrer le fichier comme fichier CSV, puis le déposer ici.
 
 Le fichier texte exemple peut aussi être utilisé pour des tests, puisqu\'il est possible de prévisualiser les données utilisateur et de choisir d\'annuler l\'action avant que les comptes utilisateurs soient créés.';
+$string['infoprefix'] = 'Info :';
 $string['invalidtheme'] = 'Le thème « {$a} » n\'est pas installé et sera ignoré.';
 $string['invalidupdatetype'] = 'Cette option ne peut pas être sélectionnée avec le type de dépôt choisi.';
 $string['invaliduserdata'] = 'Données invalides détectées pour l\'utilisateur {$a}. Nettoyage automatique effectué.';
+$string['linex'] = 'Ligne {$a}';
 $string['nochanges'] = 'Aucune modification';
 $string['notheme'] = 'Aucun thème défini pour cet utilisateur.';
 $string['pluginname'] = 'Déposer des comptes utilisateurs';
@@ -62,7 +73,7 @@ $string['uploadpicture_usernotfound'] = 'Il n\'y a pas d\'utilisateur dont l\'at
 $string['uploadpicture_userskipped'] = 'Utilisateur {$a} ignoré (il possède déjà un avatar).';
 $string['uploadpicture_userupdated'] = 'Avatar de l\'utilisateur {$a} modifié.';
 $string['uploadpictures'] = 'Déposer des avatars';
-$string['uploadpictures_help'] = 'Les avatars des utilisateurs peuvent être déposés sous la forme d\'un fichier compressé (zip) de fichiers images. Le nom des fichiers images doit être de la forme <i>attribut-choisi.extension</i>. Par exemple, si vous choisissez pour la correspondance des images l\'attribut « nom d\'utilisateur » et que le nom d\'utilisateur de l\'utilisateur concerné est « user1234 », le nom de fichier devrait être « user1234.jpg ».';
+$string['uploadpictures_help'] = 'Les avatars des utilisateurs peuvent être déposés sous la forme d\'un fichier compressé (zip) de fichiers images. Le nom des fichiers images doit être de la forme <em>attribut-choisi.extension</em>. Par exemple, si vous choisissez pour la correspondance des images l\'attribut « nom d\'utilisateur » et que le nom d\'utilisateur de l\'utilisateur concerné est « user1234 », le nom de fichier devrait être « user1234.jpg ».';
 $string['uploaduser:uploaduserpictures'] = 'Déposer des avatars';
 $string['uploadusers'] = 'Importation d\'utilisateurs';
 $string['uploadusers_help'] = 'Il est possible d\'importer manuellement des comptes utilisateurs (et optionnellement inscrits à des cours) à partir d\'un fichier texte, ce fichier doit être formaté de la façon suivante :
@@ -103,9 +114,10 @@ $string['uuoptype_update'] = 'Modifier les utilisateurs existants seulement';
 $string['uupasswordcron'] = 'Généré dans le cron';
 $string['uupasswordnew'] = 'Mot de passe nouvel utilisateur';
 $string['uupasswordold'] = 'Mot de passe utilisateur existant';
-$string['uustandardusernames'] = 'Standardiser les nom d\'utilisateur';
+$string['uustandardusernames'] = 'Standardiser les noms d\'utilisateur';
 $string['uuupdateall'] = 'Remplacer avec le fichier et les réglages par défaut';
 $string['uuupdatefromfile'] = 'Remplacer avec le fichier';
 $string['uuupdatemissing'] = 'Remplir les manquants avec le fichier et les réglages par défaut';
 $string['uuupdatetype'] = 'Détails de l\'utilisateur existant';
 $string['uuusernametemplate'] = 'Modèle de nom d\'utilisateur';
+$string['warningprefix'] = 'Avertissement :';

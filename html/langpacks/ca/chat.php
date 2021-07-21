@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'ca', version '3.8'.
+ * Strings for component 'chat', language 'ca', version '3.11'.
  *
  * @package     chat
  * @category    string
@@ -69,6 +69,7 @@ $string['explainmethoddaemon'] = 'Aquests paràmetres <strong>només</strong> co
 $string['explainmethodnormal'] = 'Aquests paràmetres <strong>només</strong> compten si heu seleccionat "Mètode normal" en chat_method';
 $string['generalconfig'] = 'Configuració normal';
 $string['idle'] = 'Inactiu';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Xat en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions, Comenaris a les retroalimentacions)';
 $string['inputarea'] = 'Àrea d\'entrada de text';
 $string['invalidid'] = 'No s\'ha pogut trobar aquesta sala de xat';
 $string['list_all_sessions'] = 'Llista totes les sessions';

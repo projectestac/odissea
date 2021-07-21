@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'geogebra', language 'ca', version '3.8'.
+ * Strings for component 'geogebra', language 'ca', version '3.11'.
  *
  * @package     geogebra
  * @category    string
@@ -71,16 +71,12 @@ $string['geogebraurl_help'] = 'Localitzeu la construcció a <a href="https://www
 $string['grade'] = 'Qualificació';
 $string['gradeit'] = 'Qualificació';
 $string['grademethod'] = 'Mètode de qualificació';
-$string['header_geogebra'] = 'Paràmetres del GeoGebra';
-$string['header_score'] = 'Paràmetres d\'avaluació del GeoGebra';
 $string['height'] = 'Alçada';
 $string['highestattempt'] = 'Millor intent';
 $string['httpnotallowed'] = 'De moment no és possible utilitzar fitxers externs';
 $string['interfaceoptionsgrp'] = 'Interfície d\'usuari';
 $string['invalidgeogebrafile'] = 'S\'ha especificat un fitxer GeoGebra no vàlid. El fitxer ha de tenir l\'extensió .GGB.';
 $string['invalidurl'] = 'S\'ha especificat un URL no vàlid. L\'URL ha de començar amb http(s) i ha d\'enllaçar a un fitxer .GGB vàlid.';
-$string['javacodebase'] = 'Base de codi de GeoGebra';
-$string['javacodebase_help'] = 'URL dels fitxers .JAR de GeoGebra';
 $string['language'] = 'Idioma';
 $string['lastattempt'] = 'Darrer intent';
 $string['lastattemptremaining'] = 'Aquest és el teu darrer intent en aquesta activitat';
@@ -138,6 +134,5 @@ $string['viewattempt'] = 'Visualitza';
 $string['viewattempts'] = 'Visualitza els intents';
 $string['viewattempttab'] = 'Visualitza l\'intent';
 $string['viewtab'] = 'Mostra';
-$string['warningnojava'] = 'Aquest Applet de Java s\'ha creat utilitzant GeoGebra (www.geogebra.org) - possiblement no tingueu el Java correctament instal·lat, comproveu-ho a www.java.com';
 $string['weight'] = 'Pes';
 $string['width'] = 'Amplada';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'gl', version '3.8'.
+ * Strings for component 'enrol_self', language 'gl', version '3.11'.
  *
  * @package     enrol_self
  * @category    string
@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['canntenrol'] = 'A matriculación está desactivada ou inactiva';
 $string['canntenrolearly'] = 'Aínda non pode matricularse; a matriculación comeza o {$a}.';
-$string['canntenrollate'] = 'Xa non pode matricularse, a matriculación rematou o  {$a}.';
+$string['canntenrollate'] = 'Xa non pode matricularse, a matriculación rematou o {$a}.';
 $string['cohortnonmemberinfo'] = 'Soamente os membros do círculo «{$a}» poden automatricularse.';
 $string['cohortonly'] = 'Soamente os membros do círculo';
-$string['cohortonly_help'] = 'A automatriculación pódese restrinxir aos membros dun único círculo especifico. Vexa que o cambio desta configuración non ten efecto sobre as matriculacións existentes.';
+$string['cohortonly_help'] = 'A automatriculación pódese restrinxir aos membros dun único círculo especifico. Teña en conta que o cambio deste axuste non ten efecto sobre as matriculacións existentes.';
 $string['confirmbulkdeleteenrolment'] = 'Confirma que quere eliminar estas matriculacións de usuarios?';
 $string['customwelcomemessage'] = 'Mensaxe de benvida personalizada';
 $string['customwelcomemessage_help'] = 'Pode engadirse unha mensaxe personalizada de benvida, en formato simple ou en formato automático do Moodle, incluídas as etiquetas HTML e as etiquetas multi-idioma.
@@ -48,14 +48,14 @@ $string['editselectedusers'] = 'Editar as matriculacións dos usuarios seleccion
 $string['enrolenddate'] = 'Data final';
 $string['enrolenddate_help'] = 'De estar activado, os usuarios poden matricularse por si mesmos soamente ata esta data.';
 $string['enrolenddaterror'] = 'A data final de matriculación non pode ser anterior á data inicial';
-$string['enrolme'] = 'Matricúlame';
+$string['enrolme'] = 'Matricularme';
 $string['enrolperiod'] = 'Duración da matrícula';
 $string['enrolperiod_desc'] = 'Duración de tempo predeterminada durante o que a matriculación é válida. De estabelecerse como cero, a duración será ilimitada de modo predeterminado.';
-$string['enrolperiod_help'] = 'Duración de tempo predeterminada durante a que a matriculación é válida, comezando desde o momento en que o usuario se matricula por si mesmo. De estar desactivada, a duración da matrícula é ilimitada.';
+$string['enrolperiod_help'] = 'Duración de tempo predeterminada durante a que a matriculación é válida, comezando dende o momento en que o usuario se matricula por si mesmo. De estar desactivada, a duración da matrícula é ilimitada.';
 $string['enrolstartdate'] = 'Data de inicio';
 $string['enrolstartdate_help'] = 'De estar activado, os usuarios poden matricularse a si mesmos soamente a partir desta data en diante.';
 $string['expiredaction'] = 'Acción na expiración da matriculación';
-$string['expiredaction_help'] = 'Seleccionar unha acción para realizar cando a matriculación dun usuario expire. Vexa que algúns datos de usuario e configuracións se purgan do curso durante a desmatriculación do curso.';
+$string['expiredaction_help'] = 'Seleccionar unha acción para realizar cando a matriculación dun usuario expire. Teña en conta que algúns datos de usuario e axustes púrganse do curso durante a desmatriculación do curso.';
 $string['expirymessageenrolledbody'] = 'Prezado/a {$a->user}:
 
 Esta é unha notificación de que a súa matriculación no curso «{$a->course}» está próxima a expirar o {$a->timeend}.
@@ -74,10 +74,10 @@ $string['groupkey'] = 'Utilice chaves de matriculación de grupo';
 $string['groupkey_desc'] = 'Utilice chaves de matriculación de grupo de modo predeterminado.';
 $string['groupkey_help'] = 'Ademais de restrinxir o acceso ao curso soamente para aqueles que coñezan a chave, utilizar unha chave de matriculación de grupo significa que os usuarios se engadirán automaticamente ao grupo cando se matriculen no curso.
 
-Nota: Debe especificar unha chave de matriculación no curso na configuración de automatriculación así como as chaves de matriculación de grupo na configuración dos grupos.';
+Nota: Debe especificar unha chave de matriculación no curso nos axustes de automatriculación así como as chaves de matriculación de grupo na configuración dos grupos.';
 $string['keyholder'] = 'Vostede debería ter recibida esta chave de matriculación de:';
 $string['longtimenosee'] = 'Desmatricular os inactivos tras';
-$string['longtimenosee_help'] = 'Se os usuarios non accederon a un curso durante un longo período, entón son desmatriculados automaticamente. Este parámetro especifica ese tempo límite.';
+$string['longtimenosee_help'] = 'Se os usuarios non accederon a un curso durante un longo período, entón son desmatriculados automaticamente. Este parámetro especifica ese límite de tempo.';
 $string['maxenrolled'] = 'Máximo de usuarios matriculados';
 $string['maxenrolled_help'] = 'Especifica o número máximo de usuarios que se poden matricular por si mesmos. 0 significa sen límite.';
 $string['maxenrolledreached'] = 'Xa se acadou o número máximo de usuarios aos que se lles permite matricularse por si mesmos.';
@@ -107,7 +107,7 @@ $string['self:manage'] = 'Xestionar os usuarios matriculados';
 $string['self:unenrol'] = 'Desmatricular usuarios do curso';
 $string['self:unenrolself'] = 'Desmatricularse do curso';
 $string['sendcoursewelcomemessage'] = 'Enviar mensaxe de benvida do curso';
-$string['sendcoursewelcomemessage_help'] = 'Cando un usuario se matricula nun curso, pode enviarse un correo de mensaxe de benvida. Se se envía desde o contacto do curso (como predeterminado o profesor) e máis dun usuario ten este rol, o correo será enviado desde o primeiro usuario para asignarlle o rol.';
+$string['sendcoursewelcomemessage_help'] = 'Cando un usuario se matricula nun curso, pode enviarse un correo de mensaxe de benvida. Se se envía dende o contacto do curso (como predeterminado o profesor) e máis dun usuario ten este rol, o correo será enviado dende o primeiro usuario para asignarlle o rol.';
 $string['sendexpirynotificationstask'] = 'Tarefas de enviar notificacións de expiración da automatrículación';
 $string['showhint'] = 'Amosar un consello';
 $string['showhint_desc'] = 'Amosar a primeira letra da chave de acceso como convidado';

@@ -48,7 +48,7 @@ class customfield_select_plugin_testcase extends advanced_testcase {
     /**
      * Tests set up.
      */
-    public function setUp() {
+    public function setUp(): void {
         $this->resetAfterTest();
 
         $this->cfcat = $this->get_generator()->create_category();
@@ -104,15 +104,16 @@ class customfield_select_plugin_testcase extends advanced_testcase {
      * Create a configuration form and submit it with the same values as in the field
      */
     public function test_config_form() {
+        $this->setAdminUser();
         $submitdata = (array)$this->cfields[1]->to_record();
         $submitdata['configdata'] = $this->cfields[1]->get('configdata');
 
-        \core_customfield\field_config_form::mock_submit($submitdata, []);
-        $handler = $this->cfcat->get_handler();
-        $form = $handler->get_field_config_form($this->cfields[1]);
+        $submitdata = \core_customfield\field_config_form::mock_ajax_submit($submitdata);
+        $form = new \core_customfield\field_config_form(null, null, 'post', '', null, true,
+            $submitdata, true);
+        $form->set_data_for_dynamic_submission();
         $this->assertTrue($form->is_validated());
-        $data = $form->get_data();
-        $handler->save_field_configuration($this->cfields[1], $data);
+        $form->process_dynamic_submission();
     }
 
     /**
@@ -155,6 +156,42 @@ class customfield_select_plugin_testcase extends advanced_testcase {
         $d = core_customfield\data_controller::create(0, null, $this->cfields[3]);
         $this->assertEquals(2, $d->get_value());
         $this->assertEquals('b', $d->export_value());
+    }
+
+    /**
+     * Data provider for {@see test_parse_value}
+     *
+     * @return array
+     */
+    public function parse_value_provider() : array {
+        return [
+            ['Red', 1],
+            ['Blue', 2],
+            ['Green', 3],
+            ['Mauve', 0],
+        ];
+    }
+
+    /**
+     * Test field parse_value method
+     *
+     * @param string $value
+     * @param int $expected
+     * @return void
+     *
+     * @dataProvider parse_value_provider
+     */
+    public function test_parse_value(string $value, int $expected) {
+        $field = $this->get_generator()->create_field([
+            'categoryid' => $this->cfcat->get('id'),
+            'type' => 'select',
+            'shortname' => 'myselect',
+            'configdata' => [
+                'options' => "Red\nBlue\nGreen",
+            ],
+        ]);
+
+        $this->assertSame($expected, $field->parse_value($value));
     }
 
     /**

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ru', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'ru', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -69,7 +69,14 @@ $string['pluginname_help'] = 'Для студента вопрос с число
 $string['pluginnameadding'] = 'Добавление вопроса с числовым ответом';
 $string['pluginnameediting'] = 'Редактирование вопроса с числовым ответом';
 $string['pluginnamesummary'] = 'Позволяет сравнивать числовые ответы с несколькими заданными вариантами с учетом единиц измерения. Возможен и учет допустимых погрешностей.';
-$string['privacy:metadata'] = 'Плагин «Тип вопроса Числовой» не хранит никаких персональных данных';
+$string['privacy:metadata'] = 'Плагин «Тип вопроса Числовой» позволяет авторам вопросов устанавливать параметры по умолчанию как пользовательские настройки.';
+$string['privacy:preference:defaultmark'] = 'Оценка по умолчанию, установленная для данного вопроса.';
+$string['privacy:preference:multichoicedisplay'] = 'Отображаются ли единицы измерения в виде элемента ввода текста, множественного выбора или выпадающего меню.';
+$string['privacy:preference:penalty'] = 'Штраф за каждую неправильную попытку, когда вопросы задаются с использованием режимов поведения «Интерактивный с несколькими попытками» или «Адаптивный».';
+$string['privacy:preference:unitgradingtypes'] = 'Применяется ли штраф за единицы измерения в виде доли (0-1) оценки за ответ или оценки за вопрос.';
+$string['privacy:preference:unitpenalty'] = 'Какая доля (0–1) оценки за ответ или оценки за вопрос должна применяться при штрафе?';
+$string['privacy:preference:unitrole'] = 'Являются ли единицы измерения необходимыми, необязательными или не нужны.';
+$string['privacy:preference:unitsleft'] = 'Отображается ли единица измерения слева (например: $, £) или справа (например: кг, км, см).';
 $string['relative'] = 'Относительная';
 $string['rightexample'] = 'справа, как 1,00см или 1,00км';
 $string['selectunit'] = 'Выберите единицу измерения';

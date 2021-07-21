@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ru', version '3.8'.
+ * Strings for component 'auth_shibboleth', language 'ru', version '3.11'.
  *
  * @package     auth_shibboleth
  * @category    string
@@ -32,7 +32,8 @@ $string['auth_shib_auth_method_description'] = 'Укажите название 
 $string['auth_shib_changepasswordurl'] = 'Адрес страницы смены пароля';
 $string['auth_shib_contact_administrator'] = 'В случае, если Вы не связаны с указанными организациями, а Вам нужен доступ к курсу на этом сервере, свяжитесь с <a href="mailto:{$a}">администратором сайта Moodle</a>.';
 $string['auth_shib_convert_data'] = 'API модификации данных';
-$string['auth_shib_convert_data_description'] = 'Вы можете использовать этот API для дальнейшей модификации данных, предоставленных Shibboleth. Прочитайте в файле <a href="../auth/shibboleth/README.txt">README (на английском языке)</a> более подробные инструкции.';
+$string['auth_shib_convert_data_description'] = 'Вы можете использовать этот API для дальнейшей модификации данных, предоставленных Shibboleth. Прочитайте в файле <a href="{$a}">README (на английском языке)</a> более подробные инструкции.';
+$string['auth_shib_convert_data_filepath_warning'] = 'Вы не можете использовать файл, расположенный в текущем каталоге данных сайта ($CFG->dataroot) в качестве API изменения данных.';
 $string['auth_shib_convert_data_warning'] = 'Этот файл не существует или не доступен для чтения веб-сервером!';
 $string['auth_shib_idp_list'] = 'Поставщики удостоверений';
 $string['auth_shib_idp_list_description'] = 'Введите перечень поставщиков удостоверений, чтобы пользователь мог выбирать из него на странице входа. <br /> В каждой строке должны быть разделенные запятыми записи entityID поставщика удостоверений (см. файл метаданных Shibboleth) и его название. Они будут отображаться в выпадающем списке.<br /> В качестве необязательного третьего параметра Вы можете добавить расположение инициатора сессии Shibboleth, который используется в случае, если система Moodle является частью объединения.';
@@ -55,10 +56,11 @@ $string['auth_shibboleth_login_long'] = 'Войти в Moodle через Shibbol
 $string['auth_shibboleth_manual_login'] = 'Ручной вход';
 $string['auth_shibboleth_select_member'] = 'Я являюсь членом ...';
 $string['auth_shibboleth_select_organization'] = 'Для аутентификации через Shibboleth, выберите организацию из выпадающего списка:';
-$string['auth_shibbolethdescription'] = 'При использовании этого метода пользователи создаются и аутентифицируются с использованием <a href="http://shibboleth.internet2.edu/">Shibboleth</a>.<br />Обязательно прочтите в файле <a href="../auth/shibboleth/README.txt">README (на английском языке)</a> о том, как настроить Moodle с Shibboleth.';
+$string['auth_shibbolethdescription'] = 'При использовании этого метода пользователи создаются и аутентифицируются с использованием Shibboleth.
+Подробности см. в <a href="{$a}">README (на английском языке)</a>.';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'Плагин аутентификации «Shibboleth» не хранит никаких персональных данных.';
 $string['shib_invalid_account_error'] = 'Вы представляетесь как пользователь Shibboleth, но в Moodle нет действующей учетной записи с этим логином. Ваша учетная запись не существует или, возможно, была приостановлена.';
 $string['shib_no_attributes_error'] = 'Вы представляетесь как пользователь Shibboleth, но система Moodle не получила никаких атрибутов пользователя. Пожалуйста, проверьте, что Ваш поставщик удостоверений представляет необходимые атрибуты ({$a}) для работы с Moodle или свяжитесь с администратором этого сайта Moodle.';
 $string['shib_not_all_attributes_error'] = 'Системе Moodle требуются определенные атрибуты Shibboleth, которых не были предоставлены в Вашем случае. Эти атрибуты: {$a}<br />Пожалуйста, свяжитесь с администратором этого сайта Moodle или Вашим поставщиком удостоверений Shibboleth.';
-$string['shib_not_set_up_error'] = 'Аутентификация Shibboleth, вероятно, не была настроена корректно, потому что никакие переменные среды Shibboleth не были переданы на эту страницу. Пожалуйста, обратитесь к файлу <a href="README.txt">README</a> для более подробных инструкций о том, как настроить аутентификацию Shibboleth или свяжитесь с администратором этого сайта Moodle.';
+$string['shib_not_set_up_error'] = 'Аутентификация Shibboleth, вероятно, не была настроена корректно, потому что никакие переменные среды Shibboleth не были переданы на эту страницу. Пожалуйста, обратитесь к <a href="{$a}">README</a> для более подробных инструкций о том, как настроить аутентификацию Shibboleth или свяжитесь с администратором этого сайта Moodle.';

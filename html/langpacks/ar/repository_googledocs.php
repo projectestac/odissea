@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'ar', version '3.8'.
+ * Strings for component 'repository_googledocs', language 'ar', version '3.11'.
  *
  * @package     repository_googledocs
  * @category    string
@@ -38,6 +38,7 @@ $string['importformat'] = 'تهيئة صيغ الاستيراد الافتراض
 $string['internal'] = 'داخلي (الملفات المخزونة في مودل)';
 $string['issuer'] = 'خدمة OAuth 2';
 $string['issuer_help'] = 'إختر خدمة OAuth 2 التي تمت تهيئتها للاتصال مع مفتاح برمجة واجهة التطبيق لـ Google Drive. إن لم تكن الخدمة موجودة بعد، عليك إنشاؤها.';
+$string['mydrive'] = 'ملفاتي';
 $string['oauth2serviceslink'] = '<a href="{$a}" title="رابط تهيئة خدمات OAuth 2">تهيئة خدمات OAuth 2</a>';
 $string['owner'] = 'مملوكة من قبل: {$a}';
 $string['pluginname'] = 'Google Drive';
@@ -45,7 +46,8 @@ $string['presentationformat'] = 'الصيغة الافتراضية لاستير�
 $string['privacy:metadata:repository_googledocs'] = 'إن ملحق مستودع Google Drive لا يخزن أي بيانات شخصية، ولكنه ينقل بيانات المستخدمين من مودل إلى نظام خارجي';
 $string['privacy:metadata:repository_googledocs:email'] = 'عنوان البريد الالكتروني لمستخدم مستودع Google Drive';
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'استعلام البحث النصي للمستخدم في مستودع Google Drive';
-$string['searchfor'] = 'إبحث عن {$a}';
+$string['searchfor'] = 'إبحث في النتائج عن {$a}';
 $string['servicenotenabled'] = 'لم تتم تهيئة الوصول. تحقق من كون الخدمة \'Drive API\' مُمَكَّنة.';
+$string['shareddrives'] = 'الملفات المشاركة معي';
 $string['spreadsheetformat'] = 'الصيغة الافتراضية لاستيراد الجداول';
 $string['supportedreturntypes'] = 'الملفات المدعومة';

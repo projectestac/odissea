@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'fr', version '3.8'.
+ * Strings for component 'grading', language 'fr', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -29,6 +29,7 @@ $string['activemethodinfo'] = 'La méthode « {$a->method} » est sélectionn�
 $string['activemethodinfonone'] = 'Aucune méthode d\'évaluation avancée n\'est sélectionnée pour la zone « {$a->area} ». L\'évaluation simple directe sera utilisée.';
 $string['changeactivemethod'] = 'Changer la méthode d\'évaluation courante à';
 $string['clicktoclose'] = 'Cliquer pour fermer';
+$string['error:gradingunavailable'] = 'La méthode d\'évaluation avancée n\'est pas configurée correctement. Veuillez vérifier la totalité des options d\'évaluation dans les réglages du forum.';
 $string['error:notinrange'] = 'Note fournie « {$a->grade} » non valide. Les notes doivent être comprises entre 0 et {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Impossible d\'instancier l\'élément de formulaire d\'évaluation';
 $string['formnotavailable'] = 'Une méthode d\'évaluation avancée a été choisie, mais le formulaire d\'évaluation n\'est pas encore disponible. Veuillez le définir au moyen du lien dans le menu des action ou le bloc d\'administration.';

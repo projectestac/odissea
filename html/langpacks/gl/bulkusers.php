@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'bulkusers', language 'gl', version '3.8'.
+ * Strings for component 'bulkusers', language 'gl', version '3.11'.
  *
  * @package     bulkusers
  * @category    string
@@ -39,7 +39,7 @@ $string['removeall'] = 'Retirar todo';
 $string['removesel'] = 'Retirar da selección';
 $string['selected'] = 'Seleccionado';
 $string['selectedlist'] = 'Lista de usuarios seleccionados....';
-$string['selectedlist_help'] = 'Pode engadir ou retirar usuarios da lista de usuarios seleccionados premendo sobre os nomes dos usuarios e a seguir premer no botón apropiado. Pode seleccionar a múltiples usuarios mantendo premida a tecla Apple ou Ctrl mentres preme nos nomes dos usuarios.';
+$string['selectedlist_help'] = 'Pode engadir ou retirar usuarios da lista de usuarios seleccionados premendo sobre os nomes dos usuarios e a seguir premer no botón apropiado. Pode seleccionar a varios usuarios mantendo premida a tecla Apple ou Ctrl mentres preme nos nomes dos usuarios.';
 $string['users'] = 'Usuarios';
 $string['users_help'] = 'Todos os usuarios que pasaron os filtros activos lístanse no recadro dispoñíbel. Se non se define o filtro, listaranse todos os usuarios do sitio.';
 $string['usersfound'] = 'Atopáronse {$a} usuarios.';

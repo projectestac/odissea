@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'table', language 'eu', version '3.8'.
+ * Strings for component 'table', language 'eu', version '3.11'.
  *
  * @package     table
  * @category    string
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadas'] = 'Jaitsi honela datu-taula';
+$string['missingrequiredfields'] = 'Beharrezkoa den iragazkiren bat falta da ({$a})';
+$string['privacy:metadata'] = 'Taula APIak ez du datu pertsonalik biltzen';

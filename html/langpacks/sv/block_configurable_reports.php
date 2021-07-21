@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_configurable_reports', language 'sv', version '3.8'.
+ * Strings for component 'block_configurable_reports', language 'sv', version '3.11'.
  *
  * @package     block_configurable_reports
  * @category    string
@@ -155,12 +155,12 @@ $string['customdateformat'] = 'Anpassat datumformat';
 $string['customsql'] = 'Anpassad SQL';
 $string['datatables'] = 'Aktivera DataTables JS-biblioteket';
 $string['datatables_emptytable'] = 'Tabellen innehåller inga data';
-$string['datatables_first'] = 'Först';
-$string['datatables_info'] = 'Visar _START_ to _END_ of _TOTAL_ poster';
+$string['datatables_first'] = 'Första';
+$string['datatables_info'] = 'Visar _START_ till _END_ av _TOTAL_ poster';
 $string['datatables_infoempty'] = 'Visar 0 till 0 av 0 poster';
-$string['datatables_infofiltered'] = '(filtrerat på _MAX_total poster)';
-$string['datatables_last'] = 'Sist';
-$string['datatables_lengthmenu'] = 'Visa _MENU_entries';
+$string['datatables_infofiltered'] = '(filtrerat från totalt _MAX_ poster)';
+$string['datatables_last'] = 'Sista';
+$string['datatables_lengthmenu'] = 'Visa _MENU_ poster';
 $string['datatables_loadingrecords'] = 'Laddar...';
 $string['datatables_next'] = 'Nästa';
 $string['datatables_previous'] = 'Föregående';
@@ -173,9 +173,9 @@ $string['datatablesinfo'] = 'DataTables JS-bibliotek (Kolumnsortering, fasta rub
 $string['date'] = 'Datum';
 $string['dateformat'] = 'Datumformat';
 $string['dbhost'] = 'Databasserver';
-$string['dbhostinfo'] = 'Databasserver-namn (på vilken, vi kommer att köra våra SQL-frågor)';
+$string['dbhostinfo'] = 'Databasserver-namn (på vilken vi kommer att köra våra SQL-frågor)';
 $string['dbname'] = 'Databasnamn';
-$string['dbnameinfo'] = 'Databasnamn (på vilken, vi kommer att köra våra SQL-frågor)';
+$string['dbnameinfo'] = 'Databasnamn (på vilken vi kommer att köra våra SQL-frågor)';
 $string['dbpass'] = 'Lösenord';
 $string['dbpassinfo'] = 'Lösenord (för ovanstående användarnamn)';
 $string['dbuser'] = 'Användarnamn';
@@ -243,10 +243,10 @@ $string['filteryearhebrew'] = 'År (hebreiska)';
 $string['filteryearhebrew_list'] = 'תשע,תשעא,תשעב,תשעג,תשעד,תשעה';
 $string['filteryearhebrew_summary'] = 'Filtret använder Hebreiska år (תשעג,...)';
 $string['filteryearnumeric'] = 'År (numeriskt)';
-$string['filteryearnumeric_summary'] = 'Filtret använder numeriska år (2013, ...)';
+$string['filteryearnumeric_summary'] = 'Filtret använder numeriska år (2021, ...)';
 $string['filteryears'] = 'År (numeriskt)';
-$string['filteryears_list'] = '2010,2011,2012,2013,2014,2015';
-$string['filteryears_summary'] = 'Filtrera på år (numerisk representation, 2012, ...)';
+$string['filteryears_list'] = '2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022';
+$string['filteryears_summary'] = 'Filtrera på år (numerisk representation, 2021, ...)';
 $string['finalgradeincurrentcourse'] = 'Slutbetyg i aktuell kurs';
 $string['fixeddate'] = 'Fast datum';
 $string['footer'] = 'Sidfot';
@@ -255,7 +255,7 @@ $string['fsearchuserfield'] = 'Sökruta för användarfält';
 $string['fuserfield'] = 'Filter för användarfält';
 $string['global'] = 'Global rapport';
 $string['global_help'] = 'Globala rapporter kan nås från alla kurser på webbplatsen genom att lägga till <code>&courseid=KURS_ID</code> till rapport-URL:en.';
-$string['globalstatsshouldbeenabled'] = 'Webbplatsstatistik måste vara aktiverad. Gå till Administrera webbplats -> Server -> Statistik';
+$string['globalstatsshouldbeenabled'] = 'Webbplatsstatistik måste vara aktiverad. Gå till <em>Administrera webbplats &#10132; Server &#10132; Statistik</em>';
 $string['groupseries'] = 'Gruppera serier';
 $string['groupvalues'] = 'Gruppera lika värde (summa)';
 $string['head_color'] = 'Bakgrundsfärg för graf';
@@ -271,7 +271,7 @@ $string['jsordering_help'] = 'JavaScript-sortering låter dig sortera rapporttab
 $string['label_field'] = 'Ettikettfält';
 $string['label_field_help'] = 'Fältet som namnger objekt i grafen';
 $string['lastexecutiontime'] = 'Körningstid = {$a} (sek)';
-$string['legacylognotenabled'] = 'Loggning i det gamla formatet måste vara aktiverad. Gå till Administrera webbplats -> Pluginmoduler -> Loggning -> Gammalt loggformat -> Logga i gammalt format';
+$string['legacylognotenabled'] = 'Loggning i det gamla formatet måste vara aktiverad. Gå till <em>Administrera webbplats &#10132; Pluginmoduler &#10132; Loggning &#10132; Äldre loggformat &#10132; Logga i äldre format</em>';
 $string['limitcategories'] = 'Begränsa antalet kategorier i en graf';
 $string['line'] = 'Linjegraf';
 $string['linesummary'] = 'En linjegraf med flera dataserier';
@@ -304,10 +304,10 @@ $string['pagination_help'] = 'Antal poster att visa på varje sida. Noll innebä
 $string['parentcategory'] = 'Överliggande kategori';
 $string['percent'] = 'Procent';
 $string['permissions'] = 'Behörigheter';
-$string['pie'] = 'Paj';
+$string['pie'] = 'Tårtbit';
 $string['pieareaname'] = 'Namn';
 $string['pieareavalue'] = 'Värde';
-$string['piesummary'] = 'Pajdiagram';
+$string['piesummary'] = 'Tårtbitsdiagram';
 $string['plot'] = 'Plottar - Grafer';
 $string['pluginname'] = 'Konfigurerbara rapporter';
 $string['previousdays'] = 'Föregående dagar';
@@ -345,7 +345,7 @@ $string['reportlimit'] = 'Begränsning av antalet rader i rapporten';
 $string['reportlimitinfo'] = 'Begränsa antalet rader som visas i rapporttabellen (Standard är 5000 rader. Det rekommenderas att sätta en begränsning så att inte databasservern riskerar att överbelastas)';
 $string['reports'] = 'Rapporter';
 $string['reportscapabilities'] = 'Funktionsbehörigheter för rapport';
-$string['reportscapabilities_summary'] = 'Användare med funktionsbehörigheten moodle/site:viewreports';
+$string['reportscapabilities_summary'] = 'Användare med funktionsbehörigheten <code>moodle/site:viewreports</code>';
 $string['reportsincategory'] = '2) Välj en rapport i listan';
 $string['reporttable'] = 'Rapporttabell';
 $string['reporttable_help'] = '<p>Detta är bredden på tabellen som ska visa rapportposterna.</p>
@@ -354,7 +354,7 @@ $string['reporttable_help'] = '<p>Detta är bredden på tabellen som ska visa ra
 $string['reporttableui'] = 'Användargränssnitt för rapporttabell';
 $string['reporttableuiinfo'] = 'Visa rapporttabellen som: Enkel rullningsbar HTML-tabell, jQuery med kolumnsortering eller DataTables JS-bibliotek (Kolumnsortering, fast sidhuvud, sökning, personsökning...)';
 $string['repository'] = 'Lagringsplats för rapporter';
-$string['repository_help'] = 'Du kan importera exempelrapporter från ett offentligt delad lagringsplats.
+$string['repository_help'] = 'Du kan importera exempelrapporter från en publikt delad lagringsplats.
 
 Vänligen lägg märke till att det finns en daglig gräns för antalet anrop till lagringsplatsen.
 

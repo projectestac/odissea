@@ -27,10 +27,11 @@ use core_admin\local\settings\filesize;
 
 if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2012.06.20  @sarjona
-    if (get_protected_agora() ) {
-    //************ FI    
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2012.06.20 @sarjona
+    if (get_protected_agora()) {
+    // ************ FI
+
     // "ip blocker" settingpage
     $temp = new admin_settingpage('ipblocker', new lang_string('ipblocker', 'admin'));
     $temp->add(new admin_setting_configcheckbox('allowbeforeblock', new lang_string('allowbeforeblock', 'admin'), new lang_string('allowbeforeblockdesc', 'admin'), 0));
@@ -39,10 +40,11 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
     $temp->add(new admin_setting_configiplist('blockedip', new lang_string('blockediplist', 'admin'),
                                                 new lang_string('ipblockersyntax', 'admin'), ''));
     $ADMIN->add('security', $temp);
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2012.06.20  @sarjona
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2012.06.20 @sarjona
     }
-    //************ FI    
+    // ************ FI
 
     // "sitepolicies" settingpage
     $temp = new admin_settingpage('sitepolicies', new lang_string('sitepolicies', 'admin'));
@@ -108,6 +110,9 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
     $temp->add(new admin_setting_configtext('minpasswordupper', new lang_string('minpasswordupper', 'admin'), new lang_string('configminpasswordupper', 'admin'), 1, PARAM_INT));
     $temp->add(new admin_setting_configtext('minpasswordnonalphanum', new lang_string('minpasswordnonalphanum', 'admin'), new lang_string('configminpasswordnonalphanum', 'admin'), 1, PARAM_INT));
     $temp->add(new admin_setting_configtext('maxconsecutiveidentchars', new lang_string('maxconsecutiveidentchars', 'admin'), new lang_string('configmaxconsecutiveidentchars', 'admin'), 0, PARAM_INT));
+    $temp->add(new admin_setting_configcheckbox('passwordpolicycheckonlogin',
+        new lang_string('passwordpolicycheckonlogin', 'admin'),
+        new lang_string('configpasswordpolicycheckonlogin', 'admin'), 0));
 
     $temp->add(new admin_setting_configtext('passwordreuselimit',
         new lang_string('passwordreuselimit', 'admin'),
@@ -151,10 +156,11 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
 
 
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2012.06.20  @sarjona
-    if (get_protected_agora() ) {
-    //************ FI    
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2012.06.20 @sarjona
+    if (get_protected_agora()) {
+    // ************ FI
+
     // "httpsecurity" settingpage
     $temp = new admin_settingpage('httpsecurity', new lang_string('httpsecurity', 'admin'));
 
@@ -169,12 +175,29 @@ if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
     $temp->add(new admin_setting_configportlist('curlsecurityallowedport',
                new lang_string('curlsecurityallowedport', 'admin'),
                new lang_string('curlsecurityallowedportsyntax', 'admin'), ""));
-    $ADMIN->add('security', $temp);
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2012.06.20  @sarjona
-    }
-    //************ FI
 
+    // HTTP Header referrer policy settings.
+    $referreroptions = [
+        'default' => get_string('referrernone', 'admin'),
+        'no-referrer' => 'no-referrer',
+        'no-referrer-when-downgrade' => 'no-referrer-when-downgrade',
+        'origin' => 'origin',
+        'origin-when-cross-origin' => 'origin-when-cross-origin',
+        'same-origin' => 'same-origin',
+        'strict-origin' => 'strict-origin',
+        'strict-origin-when-cross-origin' => 'strict-origin-when-cross-origin',
+        'unsafe-url' => 'unsafe-url',
+    ];
+    $temp->add(new admin_setting_configselect('referrerpolicy',
+            new lang_string('referrerpolicy', 'admin'),
+            new lang_string('referrerpolicydesc', 'admin'), 'default', $referreroptions));
+
+    $ADMIN->add('security', $temp);
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2012.06.20 @sarjona
+    }
+    // ************ FI
 
     // "notifications" settingpage
     $temp = new admin_settingpage('notifications', new lang_string('notifications', 'admin'));

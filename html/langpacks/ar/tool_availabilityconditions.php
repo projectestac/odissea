@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_availabilityconditions', language 'ar', version '3.8'.
+ * Strings for component 'tool_availabilityconditions', language 'ar', version '3.11'.
  *
  * @package     tool_availabilityconditions
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['manageplugins'] = 'إدارة القيود';
-$string['pluginname'] = 'إدارة حالة التوفر';
-$string['privacy:metadata'] = 'لا يقوم المكون الإضافي Availability condition management  بتخزين أيّ بيانات شخصية.';
+$string['manageplugins'] = 'إدارة التقييدات';
+$string['pluginname'] = 'إدارة حالة التوافر';
+$string['privacy:metadata'] = 'إن ملحق إدارة حالة التوافر لا يخزن أي بيانات شخصية.';

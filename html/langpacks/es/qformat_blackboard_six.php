@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_blackboard_six', language 'es', version '3.8'.
+ * Strings for component 'qformat_blackboard_six', language 'es', version '3.11'.
  *
  * @package     qformat_blackboard_six
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'ar', version '3.8'.
+ * Strings for component 'tool_replace', language 'ar', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,18 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = 'جداول التخطي الإضافية';
+$string['additionalskiptables_desc'] = 'قائمة بالجداول (مفصولة بفوارز) التي ينبغي تخطيها عند تشغيل البحث والاستبدال في قاعدة البيانات.';
 $string['cannotfit'] = 'البديل أطول من الأصل ولا يُسمح بالاختصار؛ لا يمكن الاستمرار.';
 $string['disclaimer'] = 'أنا أفهم أخطار هذه العملية:';
 $string['doit'] = 'نعم افعلها!';
 $string['excludedtables'] = 'لا يتم تحديث عدة جداول كجزء من استبدال النص. يشمل هذا التهيئة، سجل الوقوعات، الأحداث وجداول الجلسات.';
 $string['invalidcharacter'] = 'تم العثور على أحرف غير صالحة في البحث أو استبدال النص.';
 $string['notifyfinished'] = 'منتهية ...';
-$string['notifyrebuilding'] = 'إعادة بناء ذاكرة التخزين المؤقت بالمقرر ...';
+$string['notifyrebuilding'] = 'إعادة بناء النسخة المخبأة للمقرر الدراسي...';
 $string['notimplemented'] = 'عذراً،هذه الميزة غير مطبقة في مشغل قاعدة بياناتك.';
 $string['notsupported'] = 'يجب اعتبار هذا النص البرمجي تجريبيًا. لا يمكن التراجع عن التغييرات التي يتم إجراؤها، وبالتالي ينبغي أخذ نسخة احتياطية كاملة قبل تشغيل النص البرمجي!';
 $string['pageheader'] = 'البحث عن نص واستبداله خلال قاعدة البيانات بأكملها';
-$string['pluginname'] = 'البحث في قاعدة البيانات و استبدالها';
-$string['privacy:metadata'] = 'البرنامج المساعد DB search and replace لا يخزن أيّ بيانات شخصية.';
+$string['pluginname'] = 'البحث والاستبدال في قاعدة البيانات';
+$string['privacy:metadata'] = 'إن ملحق البحث والاستبدال في قاعدة البيانات لا يخزن أيّ بيانات شخصية.';
 $string['replacewith'] = 'استبدل بهذه الكلمة :';
 $string['replacewithhelp'] = 'عادةً رابط خادم  جديد';
 $string['searchwholedb'] = 'ابحث في قاعدة البيانات كاملة عن ـ:';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'nl', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'nl', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -77,9 +77,15 @@ $string['csvdelimiter'] = 'CSV scheidingsteken';
 $string['csvdelimiter_help'] = 'CSV scheidingsteken van het CSV-bestand.';
 $string['csvfileerror'] = 'Er is iets mis met de opmaak van het CSV-bestand. Controleer of het aantal titels en kolommen overeenkomen en dat het scheidingsteken en de bestands-encoding juist zijn: {$a}';
 $string['csvline'] = 'Lijn';
+$string['customfieldinvalid'] = 'Aangepast veld \'{$a}\' is leeg of bevat ongeldige gegevens';
 $string['defaultvalues'] = 'Standaard cursuswaarden';
+$string['defaultvaluescustomfieldcategory'] = 'Standaard waarden voor  \'{$a}\'';
+$string['downloadcontentnotallowed'] = 'Het configureren van het downloaden van cursusinhoud is niet toegestaan';
 $string['encoding'] = 'Encodering';
 $string['encoding_help'] = 'Encodering van het CSV-bestand.';
+$string['errorcannotcreateorupdateenrolment'] = 'Kan inschrijvingsmethode \'{$a}\' niet maken of bijwerken';
+$string['errorcannotdeleteenrolment'] = 'Kan inschrijvingsmethode \'{$a}\' niet verwijderen';
+$string['errorcannotdisableenrolment'] = 'Kan inschrijvingsmethode \'{$a}\' niet uitschakelen';
 $string['errorwhiledeletingcourse'] = 'Fout tijdens het verwijderen van de cursus';
 $string['errorwhilerestoringcourse'] = 'Fout tijdens het terugzetten van de cursus';
 $string['generatedshortnamealreadyinuse'] = 'De gegenereerde korte naam is al in gebruik';
@@ -90,6 +96,7 @@ $string['importoptions'] = 'Import-opties';
 $string['invalidbackupfile'] = 'Ongeldig backupbestand';
 $string['invalidcourseformat'] = 'Ongeldig cursusformaat';
 $string['invalidcsvfile'] = 'Ongeldig input CSV-bestand';
+$string['invaliddownloadcontent'] = 'Ongeldige download van cursusinhoud';
 $string['invalidencoding'] = 'Ongeldige encoding';
 $string['invalideupdatemode'] = 'Ongeldige aanpasmodus geselecteerd';
 $string['invalidfullnametoolong'] = 'Het veld voor de volledige naam is beperkt tot {$a} tekens';

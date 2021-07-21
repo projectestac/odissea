@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grouping', language 'gl', version '3.8'.
+ * Strings for component 'availability_grouping', language 'gl', version '3.11'.
  *
  * @package     availability_grouping
  * @category    string
@@ -25,4 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['description'] = 'Permitir só estudantes que pertenzan a un grupo dentro dun agrupamento específico.';
+$string['error_selectgrouping'] = 'Debe seleccionar un agrupammento.';
+$string['missing'] = '(Falta agrupamento)';
+$string['pluginname'] = 'Restrición por agrupamento';
+$string['privacy:metadata'] = 'O engadido de restrición por agrupamento non garda ningún dato persoal.';
 $string['requires_grouping'] = 'Pertences a un grupo en <strong>{$a}</strong>';
+$string['requires_notgrouping'] = 'Non pertences a un grupo en <strong>{$a}</strong>';
+$string['title'] = 'Agrupamento';

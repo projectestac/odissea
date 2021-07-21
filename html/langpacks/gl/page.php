@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'gl', version '3.8'.
+ * Strings for component 'page', language 'gl', version '3.11'.
  *
  * @package     page
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdisplayoptions'] = 'Seleccione todas as opcións que deben estar dispoñíbeis, a configuración existente non se modifica. Manteña premida a tecla CTRL para seleccionar varios campos.';
+$string['configdisplayoptions'] = 'Seleccione todas as opcións que deben estar dispoñíbeis, os axustes existentes non se modifican. Manteña premida a tecla CTRL para seleccionar varios campos.';
 $string['content'] = 'Contido da páxina';
 $string['contentheader'] = 'Contido';
 $string['createpage'] = 'Crear un recurso de páxina nova';
@@ -58,7 +58,7 @@ Unha páxina pode empregarse
 * Para incluír varios vídeos ou ficheiros de son xunto cun texto explicativo';
 $string['modulename_link'] = 'mod/page/view';
 $string['modulenameplural'] = 'Páxinas';
-$string['optionsheader'] = 'Presentar as opcións';
+$string['optionsheader'] = 'Opcións de presentación:';
 $string['page-mod-page-x'] = 'Calquera páxina do módulo páxina';
 $string['page:addinstance'] = 'Engadir un novo recurso de páxina';
 $string['page:view'] = 'Ver contido da páxina';

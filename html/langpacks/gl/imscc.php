@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'imscc', language 'gl', version '3.8'.
+ * Strings for component 'imscc', language 'gl', version '3.11'.
  *
  * @package     imscc
  * @category    string
@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cc2moodle_checking_schema'] = 'Formato CC! Comprobando o esquema...';
-$string['cc2moodle_invalid_schema'] = 'O esquema non é correcto.';
+$string['cc2moodle_invalid_schema'] = 'O esquema non é válido.';
 $string['cc2moodle_manifest_dont_load'] = 'Non é posíbel cargar o manifesto XML';
 $string['cc2moodle_req_auth'] = 'ERRO: O paquete de Cartucho Común require autorización.';
-$string['cc2moodle_valid_schema'] = 'Esquema correcto!';
+$string['cc2moodle_valid_schema'] = 'Esquema valido!';
 $string['cc_import_req_dom'] = 'ERRO: A importación do Cartucho Común require a extensión DOM.';
 $string['cc_import_req_libxml'] = 'ERRO: A importación do Cartucho Común require a extensión LIBXML.';
 $string['cc_import_req_libxmlminversion'] = 'ERRO: A importación do Cartucho Común require LIBXML versión 2.6.30 ou posterior.';

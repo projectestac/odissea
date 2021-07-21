@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'eu', version '3.8'.
+ * Strings for component 'survey', language 'eu', version '3.11'.
  *
  * @package     survey
  * @category    string
@@ -189,6 +189,7 @@ Zure erantzunek unitate hau etorkizunean hobetzen lagunduko digute.
 
 Eskerrik asko.';
 $string['collespname'] = 'COLLES (Nahia)';
+$string['completiondetail:submit'] = 'Erantzunak bidaltzea';
 $string['completionsubmit'] = 'Ikasleak jarduera honetara bidalketa egin behar du osatutzat emateko.';
 $string['customintro'] = 'Deskribapena';
 $string['deleteallanswers'] = 'Ezabatu hausnarketen erantzun guztiak';
@@ -272,11 +273,11 @@ $string['surveygraph'] = 'Hausnarketaren grafikoa';
 $string['surveyname'] = 'Hausnarketaren izena';
 $string['surveysaved'] = 'Hausnarketa gordeta';
 $string['surveytype'] = 'Hausnarketa mota';
-$string['surveytype_help'] = '3 inkesta mota daude eskuragarri:
+$string['surveytype_help'] = '3 hausnarketa mota daude eskuragarri:
 
-* Pentsatzeko eta Ikasteko Jarrerarako Inkesta (ATTS inglesezko hitzetatik) - pertsona bat zein neurrira arte \'konektatutako ikaslea\' den (ikastea gustagarriago aurkitzen du, eta askotan lagunkoiagoa, atseginagoa eta besteekin ideiak eraikitzeko prestutasun handiagoa izaten du) edo \'ikasle bereizia\' den (ikastean kritikoagoa eta jarrera eztabaidatsuagoa izateko joera du) neurtzeko.
+* Pentsatzeko eta Ikasteko Jarrerarako Inkesta (ATTS ingelesezko hitzetatik) - pertsona bat zein neurrira arte \'konektatutako ikaslea\' den (ikastea gustagarriago aurkitzen du, eta askotan lagunkoiagoa, atseginagoa eta besteekin ideiak eraikitzeko prestutasun handiagoa izaten du) edo \'ikasle bereizia\' den (ikastean kritikoagoa eta jarrera eztabaidatsuagoa izateko joera du) neurtzeko.
 * Gertakari kritikoetarako inkesta
-* On-line-ko Ikaste Ingurune Konstruktibistarako Inkesta (COLLES inglesezko hitzetatik) - World Wide Web-eko gaitasun interaktiboa ikasteko praktika dinamikoetan ikasleen parte-hartzea areagotzeko esplotatzeko gaitasuna monitorizatzeko.';
+* On-line-ko Ikaste Ingurune Konstruktibistarako Inkesta (COLLES ingelesezko hitzetatik) - World Wide Web-eko gaitasun interaktiboa ikasteko praktika dinamikoetan ikasleen parte-hartzea areagotzeko esplotatzeko gaitasuna monitorizatzeko.';
 $string['thanksforanswers'] = 'Eskerrik asko erantzuteagatik, {$a}';
 $string['time'] = 'Denbora';
 $string['viewsurveyresponses'] = 'Ikusi hausnarketaren {$a} erantzun';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_none', language 'nl', version '3.8'.
+ * Strings for component 'auth_none', language 'nl', version '3.11'.
  *
  * @package     auth_none
  * @category    string
@@ -26,5 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'De gebruikers kunnen meteen inloggen en een geldige account aanmaken, zonder authenticatie door middel van een externe server en zonder bevestiging via e-mail. Wees voorzichtig met het gebruiken van deze mogelijkheid - denk aan de beveiligings- en beheerproblemen die hieruit zouden kunnen ontstaan.';
+$string['checknoauth'] = 'Geen authenticatie';
+$string['checknoauthdetails'] = '<p>De <em>Geen authenticatie</em>-plugin is niet bedoeld voor gebruik op productiesites. Schakel het uit tenzij dit een test-site voor ontwikkeling is.';
+$string['checknoautherror'] = 'De Geen authenticatie-plugin mag niet gebruikt worden op productie-sites.';
+$string['checknoauthok'] = 'Geen authenticatie-plugin is uitgeschakeld';
 $string['pluginname'] = 'Geen authenticatie';
 $string['privacy:metadata'] = 'De geen authenticatie-plugin bewaart geen persoonlijke gegevens.';

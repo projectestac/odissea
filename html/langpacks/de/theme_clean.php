@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_clean', language 'de', version '3.8'.
+ * Strings for component 'theme_clean', language 'de', version '3.11'.
  *
  * @package     theme_clean
  * @category    string

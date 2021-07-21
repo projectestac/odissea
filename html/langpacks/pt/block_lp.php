@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_lp', language 'pt', version '3.8'.
+ * Strings for component 'block_lp', language 'pt', version '3.11'.
  *
  * @package     block_lp
  * @category    string
@@ -29,7 +29,7 @@ $string['competenciestoreview'] = 'Competências para avaliar';
 $string['lp:addinstance'] = 'Adicionar um novo bloco de planos de aprendizagem';
 $string['lp:myaddinstance'] = 'Adicionar um novo bloco de planos de aprendizagem ao Painel do utilizador';
 $string['myplans'] = 'Os meus planos de aprendizagem';
-$string['noactiveplans'] = 'De momento não existem planos de aprendizagem ativos.';
+$string['noactiveplans'] = 'De momento, não existem planos de aprendizagem ativos.';
 $string['planstoreview'] = 'Planos para avaliar';
 $string['pluginname'] = 'Planos de aprendizagem';
 $string['privacy:metadata'] = 'O bloco Planos de aprendizagem apenas mostra dados armazenados noutros locais.';

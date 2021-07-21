@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'ja', version '3.8'.
+ * Strings for component 'tool_uploaduser', language 'ja', version '3.11'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -29,19 +29,30 @@ $string['allowdeletes'] = '削除を許可する';
 $string['allowrenames'] = 'リネームを許可する';
 $string['allowsuspends'] = 'アカウントの利用停止および利用停止解除を許可する';
 $string['assignedsysrole'] = '割り当て済みシステムロール {$a}';
+$string['clidefault'] = 'デフォルト:';
+$string['clierrorargument'] = '引数の値 --{$a->name} が有効ではありません。許可される値は次のとおりです: {$a->values}';
+$string['clifile'] = 'ユーザデータのCSVファイルのパスです。必須です。';
+$string['clifilenotreadable'] = 'ファイル {$a} が存在しないか読み込めません。';
+$string['clihelp'] = 'このヘルプをプリントアウトします。';
+$string['climissingargument'] = '引数 --{$a} は必須です。';
+$string['clititle'] = 'コマンドラインアップロードユーザツールです。';
+$string['clivalidationerror'] = '確認エラー:';
 $string['csvdelimiter'] = 'CSVデリミタ';
 $string['defaultvalues'] = 'デフォルト値';
 $string['deleteerrors'] = '削除エラー';
 $string['encoding'] = 'エンコーディング';
 $string['errormnetadd'] = 'リモートユーザを追加できません。';
+$string['errorprefix'] = 'エラー:';
 $string['errors'] = 'エラー';
 $string['examplecsv'] = 'テキストファイル例';
 $string['examplecsv_help'] = 'テキストファイル例を使用するにはダウンロードしてテキストまたはスプレッドシートエディタで開いてください。先頭行は変更しないままにしてください。そして、次の行 (レコード) から編集してあなたのユーザデータ、また、必要に応じてさらに行を追加してください。ファイルをCSVとして保存してアップロードしてください。
 
 ユーザデータをプレビューしてユーザアカウント作成前に処理をキャンセルできるため、あなたはテキストファイル例をテスト用にも使用できます。';
+$string['infoprefix'] = '情報:';
 $string['invalidtheme'] = 'テーマ「 {$a} 」はインストールされていないため無視されます。';
 $string['invalidupdatetype'] = '選択されたアップロードタイプでこのオプションは選択できません。';
 $string['invaliduserdata'] = 'ユーザ {$a} に無効なデータが検出されたため自動的に削除されました。';
+$string['linex'] = '行 {$a}';
 $string['nochanges'] = '変更なし';
 $string['notheme'] = 'このユーザに定義されたテーマはありません。';
 $string['pluginname'] = 'ユーザアップロード';
@@ -107,3 +118,4 @@ $string['uuupdatefromfile'] = 'ファイルでオーバライドする';
 $string['uuupdatemissing'] = '不足しているデータをファイルおよびデフォルトで補填する';
 $string['uuupdatetype'] = '既存のユーザ詳細';
 $string['uuusernametemplate'] = 'ユーザ名テンプレート';
+$string['warningprefix'] = '警告:';

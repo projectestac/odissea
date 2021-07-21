@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'ja', version '3.8'.
+ * Strings for component 'gradingform_guide', language 'ja', version '3.11'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -91,6 +91,7 @@ $string['regrademessage1'] = 'あなたはすでに評定で使用されてい�
 $string['regrademessage5'] = 'あなたはすでに評定で使用されている評定ガイドの大幅な変更を保存しようとしています。評定表の値は変更されませんが、学生のアイテムが再評定されるまで、評定ガイドは学生から非表示にされます。';
 $string['regradeoption0'] = '再評定対象としてマークしない';
 $string['regradeoption1'] = '再評定対象としてマークする';
+$string['remark_help'] = 'このクライテリアに関する追加コメントを入力してください。';
 $string['restoredfromdraft'] = '注意: このユーザの前回の受験に関する評点が適切に保存されなかったため、下書きの評点がリストアされました。これらの変更をキャンセルしたい場合、下の「キャンセル」ボタンを使用してください。';
 $string['save'] = '保存';
 $string['saveguide'] = '評定ガイドを保存して利用可能な状態にする';

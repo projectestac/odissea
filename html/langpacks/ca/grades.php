@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'ca', version '3.8'.
+ * Strings for component 'grades', language 'ca', version '3.11'.
  *
  * @package     grades
  * @category    string
@@ -173,7 +173,7 @@ $string['editfeedback'] = 'Edita la retroacció';
 $string['editgrade'] = 'Edita la qualificació';
 $string['editgradeletters'] = 'Edita les qualificacions alfabètiques';
 $string['editoutcome'] = 'Edita la competència';
-$string['editoutcomes'] = 'Edita els resultats';
+$string['editoutcomes'] = 'Edita les competències';
 $string['editscale'] = 'Edita l\'escala';
 $string['edittree'] = 'Arranjament';
 $string['editverbose'] = 'Edita {$a->category} {$a->itemmodule} {$a->itemname}';
@@ -412,7 +412,7 @@ $string['importfile'] = 'Importa un fitxer';
 $string['importfilemissing'] = 'No s\'ha rebut cap fitxer. Torneu enrere al formulari i assegureu-vos de penjar un fitxer vàlid.';
 $string['importfrom'] = 'Importa de';
 $string['importoutcomenofile'] = 'El fitxer que heu penjat està buit o corrupte. Comproveu que sigui un fitxer vàlid. El problema s\'ha detectat a la línia {$a}. Això passa quan una línia de dades no té el mateix nombre de columnes que la primera línia del fitxer (la línia de capçalera) o quan falten les capçaleres. Com a exemple de fitxer amb una capçalera vàlida, podeu examinar el fitxer exportat.';
-$string['importoutcomes'] = 'Importa resultats';
+$string['importoutcomes'] = 'Importa competències';
 $string['importoutcomes_help'] = 'Es poden importar competències mitjançant un fitxer csv amb format o un fitxer csv d\'exportació de competències.';
 $string['importoutcomesuccess'] = 'S\'ha importat la competència "{$a->name}" amb el núm. ID {$a->id}';
 $string['importplugins'] = 'Connectors d\'importació';

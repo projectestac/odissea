@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'ar', version '3.8'.
+ * Strings for component 'choicegroup', language 'ar', version '3.11'.
  *
  * @package     choicegroup
  * @category    string
@@ -25,11 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmorechoices'] = 'أضف خيارات أكثر';
+$string['addmorechoices'] = 'إضافة المزيد من الخيارات';
 $string['afterresultsviewable'] = 'النتائج ستكون ظاهرة بعد أن تقوم بتحديد اختيارك';
 $string['allowupdate'] = 'السماح بتغيير الخيارات';
 $string['answered'] = 'أجيب عنه';
 $string['choice'] = 'اختيار';
+$string['choicegroup:addinstance'] = 'إضافة نشاط جديد من خيار المجموعة';
 $string['choicegroupclose'] = 'حتى';
 $string['choicegroupfull'] = 'هذا الاختيار مكتمل، ولا أماكن شاغرة.';
 $string['choicegroupname'] = 'اسم اختيار المجموعة';
@@ -57,25 +58,27 @@ $string['groupmembers'] = 'أعضاء المجموعة';
 $string['havetologin'] = 'يجب عليك الدخول قبل أن تتمكن من تسليم خياراتك';
 $string['hidedescription'] = 'إخفاء الأوصاف';
 $string['limit'] = 'محدد';
-$string['limitanswers'] = 'حدد عدد الأجابات المسموح بها';
+$string['limitanswers'] = 'حدد عدد الاستجابات المسموح بها';
 $string['members/max'] = 'الأعضاء/السعة';
 $string['modulename'] = 'اختيار مجموعة';
 $string['modulename_help'] = 'يسمح هذا النشاط للطلاب باختيار مجموعة للانضمام لها.';
 $string['modulenameplural'] = 'الاختيارات';
 $string['moveselectedusersto'] = 'أنقل المستخدمين الذين تم اختيارهم إلى';
-$string['mustchooseone'] = 'يجب عليك اختيار إجابة قبل أن تحفظ. لم حفظ أي شيئ';
+$string['mustchooseone'] = 'ينبغي عليك اختيار الإجابة قبل الحفظ. لم يُحفظ شيء.';
+$string['name'] = 'الاسم';
 $string['noguestchoose'] = 'عذراً، لا يحق للضيوف القيام بإختيارات';
 $string['noresultsviewable'] = 'حالياً لا يمكن معاينة النتائج';
-$string['notanswered'] = 'لم تتم الأجابة بعد';
+$string['notanswered'] = 'غير مجاب بعد';
 $string['notenrolledchoose'] = 'عذراً، فقط المستخدمون المسجلون بإمكانهم الاختيار.';
 $string['notopenyet'] = 'عذرا، هذا النشاط سيكون متوفر في {$a}';
 $string['numberofuser'] = 'عدد المستخدمين';
 $string['option'] = 'خيار';
+$string['page-mod-choice-x'] = 'أي صفحة لوحدة خيار المجموعة';
 $string['pluginadministration'] = 'إدارة الخيارات';
 $string['pluginname'] = 'اختيار مجموعة';
 $string['privacy'] = 'نتائج الخصوصية';
 $string['publish'] = 'أنشر النتائج';
-$string['publishafteranswer'] = 'اظهر النتائج للطالب بعد اللاجابة';
+$string['publishafteranswer'] = 'إظهار النتائج للطلاب بعد إجابتهم';
 $string['publishafterclose'] = 'اظهر النتائج للطلاب بعد إغلاق الاختيار';
 $string['publishalways'] = 'دائما اظهر النتائج للطلاب';
 $string['publishanonymous'] = 'أنشر النتائج مبهمه ولا تعرض اسماء الطلاب';
@@ -88,12 +91,13 @@ $string['responsesto'] = 'إجابات لـ  {$a}';
 $string['samegroupused'] = 'لا يمكن استعمال نفس المجموعة عدة مرات.';
 $string['savemychoicegroup'] = 'احفظ خياري';
 $string['showdescription'] = 'إظهار الأوصاف';
-$string['showunanswered'] = 'إظهار عمود لغير المجيبين';
+$string['showunanswered'] = 'إظهار عمود لغير المجاب عليه';
 $string['skipresultgraph'] = 'تخطي رسم النتائج';
 $string['spaceleft'] = 'المساحة المتاحة';
 $string['spacesleft'] = 'المساحات المتاحة';
 $string['taken'] = 'استخدم';
-$string['timerestrict'] = 'حدد الاجابة حسب هذه الفترة الزمنية';
+$string['the_value_you_entered_is_not_a_number'] = 'القيمة التي أعطيتها ليست رقمًا.';
+$string['timerestrict'] = 'تقييد الإجابة بهذه الفترة الزمنية';
 $string['viewallresponses'] = 'معاينة {$a}  إجابة';
 $string['withselected'] = 'مع ما تم اختياره';
 $string['yourselection'] = 'اختيارك';

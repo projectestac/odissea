@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_participation', language 'sv', version '3.8'.
+ * Strings for component 'report_participation', language 'sv', version '3.11'.
  *
  * @package     report_participation
  * @category    string
@@ -29,6 +29,6 @@ $string['eventreportviewed'] = 'Deltagarrapport visad';
 $string['nologreaderenabled'] = 'Ingen aktiv loggläsare';
 $string['page-report-participation-index'] = 'Kursdeltaganderapport';
 $string['page-report-participation-x'] = 'Valfri deltaganderapport';
-$string['participation:view'] = 'Visa rapport över deltagande i kurs';
+$string['participation:view'] = 'Visa närvarorapport';
 $string['pluginname'] = 'Deltagande i kurs';
 $string['privacy:metadata'] = 'Pluginmodulen Kursdeltagande lagrar ingen personlig information.';

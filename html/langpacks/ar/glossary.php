@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ar', version '3.8'.
+ * Strings for component 'glossary', language 'ar', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcategory'] = 'إضافة تصنيف';
 $string['addcomment'] = 'إضافة تعليق';
-$string['addentry'] = 'إضافة مصطلح';
+$string['addentry'] = 'إضافة مصطلح جديد';
 $string['addingcomment'] = 'أضف تعليق';
 $string['alias'] = 'كلمة مفتاحية';
 $string['aliases'] = 'الكلمة/الكلمات المفتاحية';
@@ -60,8 +60,8 @@ $string['authorview'] = 'الاستعراض حسب الكاتب';
 $string['back'] = 'عودة';
 $string['cachedef_concepts'] = 'ربط المفهوم';
 $string['cantinsertcat'] = 'لا يمكن إدراج التصنيف';
-$string['cantinsertrec'] = 'لم نتمكن من ادراج السجل';
-$string['cantinsertrel'] = 'لم نتمكن من ادراج علاقة الفئة - مصطلح';
+$string['cantinsertrec'] = 'تعذر إدراج السجل';
+$string['cantinsertrel'] = 'تعذر إدراج العلاقة الفئة-المصطلح';
 $string['casesensitive'] = 'هذا المصطلح يتحسس حالة الأحرف';
 $string['casesensitive_help'] = 'هذا الإعداد يحدد فيما إذا كان ضرورياً مطابقة حالة الأحرف الصغيرة والكبيرة عند الربط التلقائي مع المصطلح.';
 $string['cat'] = 'التصنيف';
@@ -90,6 +90,7 @@ $string['commentdeleted'] = 'تم حذف التعليق.';
 $string['comments'] = 'التعليقات';
 $string['commentson'] = 'التعليقات على';
 $string['commentupdated'] = 'تم تحديث التعليق';
+$string['completiondetail:entries'] = 'تقديم المصطلحات: {$a}';
 $string['completionentries'] = 'ينبغي على الطلبة إنشاء المصطلحات:';
 $string['completionentriesdesc'] = 'ينبغي على الطلبة إنشاء {$a} مصطلح/مصطلحات على الأقل';
 $string['completionentriesgroup'] = 'يتطلب مصطلحات';
@@ -137,7 +138,7 @@ $string['displayformatfaq'] = 'أسئلة متكررة';
 $string['displayformatfullwithauthor'] = 'كامل مع الكاتب';
 $string['displayformatfullwithoutauthor'] = 'كامل بدون الكاتب';
 $string['displayformats'] = 'تنسيقات العرض';
-$string['displayformatssetup'] = 'عرض إعدادات صيغ العرض';
+$string['displayformatssetup'] = 'إعداد تنسيقات العرض';
 $string['duplicatecategory'] = 'تكرار التصنيف';
 $string['duplicateentry'] = 'تكرار المصطلح';
 $string['editalways'] = 'إسمح دائماً بالتحرير';
@@ -168,14 +169,14 @@ $string['errconceptalreadyexists'] = 'هذا المصطلح موجود مسبق�
 $string['errdeltimeexpired'] = 'لا يمكنك حذفه. الوقت انتهى!';
 $string['erredittimeexpired'] = 'لقد انتهت مهلة تحرير هذا المصطلح.';
 $string['errorparsingxml'] = '‏‏وقع خطأ أثناء تحليل الملف. تأكد أنه بصياغة XML صحيحة.';
-$string['eventcategorycreated'] = 'تم إنشاء التصنيف';
-$string['eventcategorydeleted'] = 'تم حذف التصنيف';
-$string['eventcategoryupdated'] = 'تم تحديث التصنيف';
-$string['evententryapproved'] = 'تمت المصادقة على المصطلح';
-$string['evententrycreated'] = 'تم إنشاء المصطلح';
-$string['evententrydeleted'] = 'تم حذف المصطلح';
-$string['evententrydisapproved'] = 'تم إلغاء المصادقة على المصطلح';
-$string['evententryupdated'] = 'تم تحديث المصطلح';
+$string['eventcategorycreated'] = 'تصنيف تم إنشاؤه';
+$string['eventcategorydeleted'] = 'تصنيف تم حذفه';
+$string['eventcategoryupdated'] = 'تصنيف تم تحديثه';
+$string['evententryapproved'] = 'مصطلح تمت المصادقة عليه';
+$string['evententrycreated'] = 'مصطلح تم إنشاؤه';
+$string['evententrydeleted'] = 'مصطلح تم حذفه';
+$string['evententrydisapproved'] = 'مصطلح تم إلغاء المصادقة عليه';
+$string['evententryupdated'] = 'مصطلح تم تحديثه';
 $string['evententryviewed'] = 'مصطلح تمت معاينته';
 $string['explainaddentry'] = 'أضف مصطلحًا جديدًا إلى المسرد الحالي.<br /> حقلا المفهوم والتعريف إجباريان.';
 $string['explainall'] = 'عرض كل المصطلحات في صفحة واحدة';
@@ -313,7 +314,7 @@ $string['showalphabet'] = 'أظهر الروابط الهجائية';
 $string['showalphabet_help'] = 'عند تمكينه، سيتمكن المشاركون من استعراض المسرد حسب الأحرف الهجائية.';
 $string['showspecial'] = 'أظهر رابط \'الخاص\'';
 $string['showspecial_help'] = 'عند تمكينه، سيتمكن المشاركون من استعراض المسرد حسب الرموز الخاصة، مثل @ و #.';
-$string['sortby'] = 'إفرز حسب';
+$string['sortby'] = 'الفرز حسب';
 $string['sortbycreation'] = 'حسب تاريخ الانشاء';
 $string['sortbylastupdate'] = 'حسب آخر تحديث';
 $string['sortchronogically'] = 'رتب تاريخياً';

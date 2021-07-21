@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_securewindow', language 'sv', version '3.8'.
+ * Strings for component 'quizaccess_securewindow', language 'sv', version '3.11'.
  *
  * @package     quizaccess_securewindow
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regel som kräver att JavaScript används.';
 $string['popupwithjavascriptsupport'] = 'Fullskärms-popup med viss JavaScript-säkerhet';
+$string['privacy:metadata'] = 'Pluginmodulen JavaScript-säkerhet åtkomstregel för Test lagrar ingen personinformation.';

@@ -69,10 +69,10 @@ echo $OUTPUT->container_start('', 'alexandria_restore');
 echo '<ul  class="nav nav-tabs">';
 foreach ($dbs as $db) {
     if (!$dataid || $db->id == $dataid) {
-        echo '<li class="active">';
+        echo '<li class="tab-dbsel active">';
         $dataid = $db->id;
     } else {
-        echo '<li>';
+        echo '<li class="tab-dbsel">';
     }
     echo '<a href="#dbsel' . $db->id . '" data-toggle="tab">' . core_text::strtotitle($db->searching) . '</a></li>';
 }
@@ -132,6 +132,9 @@ echo '</div>
                 }
             }
             toggle_advanced('.$showadvanced.');
+            $(".tab-dbsel").click(function() {
+                $(".tab-dbsel").toggleClass("active");
+            });
         });
     </script>';
 

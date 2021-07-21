@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_availabilityconditions', language 'ru', version '3.8'.
+ * Strings for component 'tool_availabilityconditions', language 'ru', version '3.11'.
  *
  * @package     tool_availabilityconditions
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = 'Управление ограничениями';
 $string['pluginname'] = 'Управление доступностью';
+$string['privacy:metadata'] = 'Плагин Управление условиями доступности не хранит никаких личных данных.';

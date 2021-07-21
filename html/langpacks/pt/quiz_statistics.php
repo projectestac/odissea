@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'pt', version '3.8'.
+ * Strings for component 'quiz_statistics', language 'pt', version '3.11'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -55,11 +55,11 @@ $string['duration'] = 'Aberto para';
 $string['effective_weight'] = 'Peso efetivo';
 $string['errordeleting'] = 'Erro ao apagar registos antigos {$a}';
 $string['errormedian'] = 'Ocorreu um erro ao calcular a mediana';
-$string['errorpowerquestions'] = 'Ocorreu um erro ao procurar os dados para calcular a variância das notas da pergunta';
-$string['errorpowers'] = 'Ocorreu um erro ao procurar os dados para calcular a variância das notas do teste';
+$string['errorpowerquestions'] = 'Ocorreu um erro ao tentar obter os dados para calcular a variância das notas da pergunta';
+$string['errorpowers'] = 'Ocorreu um erro ao tentar obter os dados para calcular a variância das notas do teste';
 $string['errorrandom'] = 'Ocorreu um erro ao obter dados dos sub itens';
 $string['errorratio'] = 'Ocorreu um erro no rácio (em {$a})';
-$string['errorstatisticsquestions'] = 'Ocorreu um erro ao procurar os dados para calcular as estatísticas para as notas das perguntas';
+$string['errorstatisticsquestions'] = 'Ocorreu um erro ao tentar obter os dados para calcular as estatísticas das notas da pergunta';
 $string['facility'] = 'Índice de Facilidade';
 $string['firstattempts'] = 'primeiras tentativas';
 $string['firstattemptsavg'] = 'Nota média das primeiras tentativas';
@@ -71,7 +71,7 @@ $string['intended_weight'] = 'Peso pretendido';
 $string['kurtosis'] = 'Kurtosis da distribuição da pontuação (para {$a})';
 $string['lastattempts'] = 'última tentativa';
 $string['lastattemptsavg'] = 'nota média das últimas tentativas';
-$string['lastcalculated'] = 'Foram realizadas {$a->count} tentativas desde a último cálculo há {$a->lastcalculated}.';
+$string['lastcalculated'] = 'Foram realizadas {$a->count} tentativas desde o último cálculo há {$a->lastcalculated}.';
 $string['maximumfacility'] = 'Facilidade máxima';
 $string['median'] = 'Mediana da Nota (para {$a})';
 $string['medianfacility'] = 'Facilidade média';
@@ -84,7 +84,7 @@ $string['negcovar_help'] = 'A nota desta pergunta para este conjunto de tentativ
 A nossa equação para o peso efetivo da pergunta não pode ser calculada neste caso. Os cálculos do peso efetivo para as outras perguntas deste teste são o peso efetivo para estas perguntas se for atribuído uma nota máxima de zero às perguntas assinaladas com covariância negativa.
 
 Se editar um teste e atribuir a estas perguntas com covariância negativa a nota máxima de zero, o peso efetivo destas perguntas será zero e o peso real efetivo das outras perguntas será como o calculado agora.';
-$string['nogradedattempts'] = 'Não existem tentativas de resposta a este teste, ou em todas as tentativas existem questões que precisam de avaliação manual.';
+$string['nogradedattempts'] = 'Não existem tentativas de resposta a este teste, ou em todas as tentativas existem perguntas que precisam de avaliação manual.';
 $string['nostudentsingroup'] = 'Ainda não existem alunos neste grupo';
 $string['optiongrade'] = 'Crédito parcial';
 $string['partofquestion'] = 'Parte da pergunta';
@@ -115,7 +115,6 @@ $string['standarddeviation'] = 'Desvio Padrão (para {$a})';
 $string['standarddeviationq'] = 'Desvio Padrão';
 $string['standarderror'] = 'Erro padrão (para {$a})';
 $string['statistics'] = 'Estatísticas';
-$string['statistics:componentname'] = 'Relatório de Estatísticas do teste';
 $string['statistics:view'] = 'Ver relatório de estatísticas';
 $string['statisticsreport'] = 'Relatório de estatísticas';
 $string['statisticsreportgraph'] = 'Estatística para as posições da pergunta';

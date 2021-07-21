@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'it', version '3.8'.
+ * Strings for component 'block_myoverview', language 'it', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = 'Ordina corsi per ultima data di accesso';
 $string['aria:list'] = 'Passa alla vista elenco';
 $string['aria:past'] = 'Visualizza corsi conclusi';
 $string['aria:removefromfavourites'] = 'Rimuovi dai preferiti';
+$string['aria:shortname'] = 'Ordina corsi in base al titolo abbreviato';
 $string['aria:showcourse'] = 'Riporta {$a} nella visualizzazione';
 $string['aria:sortingdropdown'] = 'Ordinamento menu a discesa';
 $string['aria:summary'] = 'Passa alla vista sommario';
@@ -62,8 +63,6 @@ $string['courseprogress'] = 'Stato avanzamento corso:';
 $string['customfield'] = 'Campo personalizzato';
 $string['customfiltergrouping'] = 'Campo da utilizzare';
 $string['customfiltergrouping_nofields'] = 'Per utilizzare l\'impostazione devono essere disponibili campi personalizzati del corso visibili a tutti.';
-$string['defaulttab'] = 'Scheda di default';
-$string['defaulttab_desc'] = 'La scheda da visualizzare quando si accede la prima volta alla panoramica corsi. La scheda attiva verrà mantenuta quando l\'utente tornerà nella panoramica corsi.';
 $string['displaycategories'] = 'Visualizza categorie';
 $string['displaycategories_help'] = 'Visualizza la categoria dei corsi nella varie viste della dashboard, matrice, elenco e sommario,';
 $string['favourites'] = 'Preferiti';
@@ -75,31 +74,18 @@ $string['inprogress'] = 'In svolgimento';
 $string['lastaccessed'] = 'Ultima visita';
 $string['layouts'] = 'Impaginazioni disponibili';
 $string['list'] = 'Elenco';
-$string['morecourses'] = 'Altri corsi';
 $string['myoverview:myaddinstance'] = 'Aggiungere blocco Panoramica corsi alla dashboard';
-$string['next30days'] = 'Prossimi 30 giorni';
-$string['next7days'] = 'Prossimi 7 giorni';
 $string['nocourses'] = 'Non ci sono corsi';
-$string['nocoursesfuture'] = 'Non ci sono corsi di prossima attivazione';
-$string['nocoursesinprogress'] = 'Non ci sono corsi in svolgimento';
-$string['nocoursespast'] = 'Non ci sono corsi conclusi';
 $string['nocustomvalue'] = 'Nessun {$a}';
-$string['noevents'] = 'Non ci sono attività con date di svolgimento e/o di scadenza programmate in questo periodo.';
 $string['past'] = 'Conclusi';
 $string['pluginname'] = 'Panoramica corsi';
 $string['privacy:metadata:overviewgroupingpreference'] = 'Preferenze di raggruppamento del blocco Panoramica corsi.';
-$string['privacy:metadata:overviewlasttab'] = 'Memorizza l\'ultima scheda selezionata dall\'utente nel blocco Panoramica corsi.';
 $string['privacy:metadata:overviewpagingpreference'] = 'Preferenza sulla paginazione del blocco Panoramica corsi.';
 $string['privacy:metadata:overviewsortpreference'] = 'Preferenza sull\'ordinamento del blocco Panoramica corsi.';
 $string['privacy:metadata:overviewviewpreference'] = 'Preferenza sulla vista del blocco Panoramica corsi.';
 $string['privacy:request:preference:set'] = 'Il valore dell\'impostazione \'{$a->name}\' era \'{$a->value}\'';
-$string['recentlyoverdue'] = 'Scadute di recente';
 $string['removefromfavourites'] = 'Rimuovi dai preferiti';
+$string['shortname'] = 'Titolo abbreviato';
 $string['show'] = 'Ripristina visualizzazione';
-$string['sortbycourses'] = 'Ordina per corsi';
-$string['sortbydates'] = 'Ordina per date';
 $string['summary'] = 'Sommario';
-$string['timeline'] = 'Cronologia';
 $string['title'] = 'Titolo del corso';
-$string['viewcourse'] = 'Visualizza corso';
-$string['viewcoursename'] = 'Visualizza corso {$a}';

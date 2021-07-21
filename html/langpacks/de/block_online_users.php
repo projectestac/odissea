@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'de', version '3.8'.
+ * Strings for component 'block_online_users', language 'de', version '3.11'.
  *
  * @package     block_online_users
  * @category    string
@@ -36,6 +36,7 @@ $string['online_users:myaddinstance'] = 'Neuen Block \'Personen online\' zum Das
 $string['online_users:viewlist'] = 'Liste der Personen online sehen';
 $string['onlinestatushiding'] = 'Online-Status verbergen';
 $string['onlinestatushiding_desc'] = 'Diese Option legt fest, dass Nutzer/innen ihren Online-Status vor anderen verbergen können.';
+$string['otherusers'] = 'Weitere Nutzer/innen ({$a})';
 $string['periodnminutes'] = 'in den letzten {$a} Minuten';
 $string['pluginname'] = 'Personen online';
 $string['privacy:metadata:preference:uservisibility'] = 'Online-Status sichtbar für andere im Block \'Personen online\'';

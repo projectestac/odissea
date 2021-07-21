@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_boxnet', language 'el', version '3.8'.
+ * Strings for component 'repository_boxnet', language 'el', version '3.11'.
  *
  * @package     repository_boxnet
  * @category    string
@@ -32,7 +32,7 @@ $string['clientid'] = 'Αναγνωριστικό πελάτη';
 $string['clientsecret'] = 'Μυστικό πελάτη';
 $string['configplugin'] = 'Ρυθμίσεις Box.net';
 $string['filesourceinfo'] = 'Box ({$a->fullname}): {$a->filename}';
-$string['information'] = 'Λάβετε ένα αναγνωριστικό πελάτη και μυστικό κωδικό από την<a href="https://app.box.com/developers/services">σελίδα ανάπτυξης του Box</a> για τον Moodle ιστότοπό σας.';
+$string['information'] = 'Λάβετε ένα αναγνωριστικό πελάτη και μυστικό κωδικό από την <a href="https://app.box.com/developers/services">σελίδα ανάπτυξης του Box</a> για τον Moodle ιστότοπό σας.';
 $string['invalidpassword'] = 'Μη έγκυρος κωδικός πρόσβασης';
 $string['nullfilelist'] = 'Δεν υπάρχουν αρχεία σε αυτό το αποθετήριο';
 $string['password'] = 'Κωδικός πρόσβασης';

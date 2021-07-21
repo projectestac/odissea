@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_subscript', language 'ar', version '3.8'.
+ * Strings for component 'atto_subscript', language 'ar', version '3.11'.
  *
  * @package     atto_subscript
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'منخفض';
-$string['privacy:metadata'] = 'لا يقوم الملحق الإضافي atto_subscript بتخزين أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق atto_subscript لا يخزن أيّ بيانات شخصية.';

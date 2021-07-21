@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_mobile', language 'it', version '3.8'.
+ * Strings for component 'tool_mobile', language 'it', version '3.11'.
  *
  * @package     tool_mobile
  * @category    string
@@ -34,6 +34,7 @@ $string['apprequired'] = 'La funzionalità è disponibile solamente quando si ac
 $string['autologinkeygenerationlockout'] = 'La generazione della chiave di accesso automatico è stata bloccata. È necessario attendere 6 minuti prima di effettuare una nuova richiesta.';
 $string['autologinnotallowedtoadmins'] = 'Gli amministratori del sito non posso autenticarsi automaticamente.';
 $string['cachedef_plugininfo'] = 'Elenco dei plugin con funzionalità aggiuntive mobile';
+$string['cachedef_subscriptiondata'] = 'Informazioni sulla sottoscrizione della Moodle App';
 $string['clickheretolaunchtheapp'] = 'Clicca qui se l\'app non si apre automaticamente.';
 $string['configmobilecssurl'] = 'Un file CSS per personalizzare l\'interfaccia della tua app mobille.';
 $string['customlangstrings'] = 'Stringhe di lingua personalizzate';
@@ -61,6 +62,9 @@ $string['downloadcourse'] = 'Scarica corso';
 $string['downloadcourses'] = 'Scarica corsi';
 $string['enablesmartappbanners'] = 'Abilita App banner';
 $string['enablesmartappbanners_desc'] = 'Visitando il sito con un browser mobile sarà visualizzato un banner promozionale della app mobile.';
+$string['filetypeexclusionlist'] = 'Elenco dei tipi di file esclusi';
+$string['filetypeexclusionlist_desc'] = 'L\'elenco dei tipi di file che non si desidera gli utenti aprano nell\'app. Tali file saranno comunque elencati tramite app nella pagina dei corsi ma tentando di aprirli sarà visualizzato un avviso dove si informerà l\'utente che non è previsto l\'utilizzo di quei tipi di file nella app mobile. Gli utenti avranno la facoltà di annullare l\'apertura oppure ignorare l\'avviso e aprire comunque il file.';
+$string['filetypeexclusionlistplaceholder'] = 'Elenco dei tipi di file esclusi nella app mobile';
 $string['forcedurlscheme'] = 'Se si desidera consentire esclusivamente l\'apertura della propria app personalizzata da una finestra browser, è allora necessario impostare il relativo schema URL. Per utilizzare l\'app ufficiale, impostare il valore di default. Per utilizzare qualsiasi app lasciare il campo vuoto.';
 $string['forcedurlscheme_key'] = 'Schema URL';
 $string['forcelogout'] = 'Forza disconnessione';
@@ -80,27 +84,46 @@ $string['loginintheapp'] = 'Via app';
 $string['logininthebrowser'] = 'Via finestra browser (per plugin SSO)';
 $string['loginintheembeddedbrowser'] = 'Via browser incorporato (per plugin SSO)';
 $string['mainmenu'] = 'Menu principale';
+$string['managefiletypes'] = 'Gestione tipi di file';
 $string['minimumversion'] = 'Indicando una versione dell\'app (3.8.0 o superiore), gli utenti che utilizzano versioni più vecchie verranno invitati ad aggiornare l\'app prima di poter accedere al sito.';
 $string['minimumversion_key'] = 'Versione minima dell\'app';
 $string['mobileapp'] = 'App mobile';
 $string['mobileappconnected'] = 'App mobile connessa';
 $string['mobileappearance'] = 'Aspetto mobile';
 $string['mobileappenabled'] = 'Il sito ha l\'accesso all\'app mobile abilitato. <br /> <a href="{$a}"> Scarica l\'app per dispositivi mobili</a>.';
+$string['mobileappsubscription'] = 'Sottoscrizione Moodle app';
 $string['mobileauthentication'] = 'Autenticazione mobile';
 $string['mobilecssurl'] = 'CSS';
 $string['mobilefeatures'] = 'Funzionalità mobile';
 $string['mobilenotificationsdisabledwarning'] = 'Le notifiche per dispositivi mobili non sono abilitate. Possono essere abilitate nelle impostazioni delle notifiche.';
 $string['mobilesettings'] = 'Impostazioni mobile';
+$string['notifications'] = 'Notifiche';
+$string['notificationsactivedevices'] = 'Dispositivi attivi';
+$string['notificationsignorednotifications'] = 'Notifiche non inviate';
+$string['notificationsnewdevices'] = 'Nuovi dispositivi';
+$string['notificationssentnotifications'] = 'Notifiche inviate';
 $string['oauth2identityproviders'] = 'Identity provider OAuth 2';
 $string['offlineuse'] = 'Uso offline';
+$string['openusingembeddedbrowser'] = 'Apri utilizzando il browser incorporato';
 $string['pluginname'] = 'Strumenti Moodle App';
 $string['pluginnotenabledorconfigured'] = 'Il plugin non è abilitato o non è configurato';
 $string['privacy:metadata:core_userkey'] = 'Le chiavi utente utilizzate per creare la chiave d\'accesso automatico.';
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'La data della più recente richiesta della chiave d\'accesso automatico. Tra due richeste devono trascorre almeno 6 minuti.';
+$string['qrcodedisabled'] = 'L\'accesso via QR code è disabilitato';
+$string['qrcodeformobileappaccess'] = 'QR code per accesso mobile';
+$string['qrcodetype'] = 'Accesso QR code';
+$string['qrcodetypelogin'] = 'QR code con login automatico';
+$string['qrcodetypeurl'] = 'QR code con URL del sito';
 $string['remoteaddons'] = 'Componenti remoti aggiuntivi';
+$string['scanqrcode'] = 'Scansione QR code';
 $string['selfsignedoruntrustedcertificatewarning'] = 'Il certificato HTTPS risulta auto firmato oppure non attendibile. L\'app mobile funziona solo con siti attendibili.';
 $string['setuplink'] = 'Pagina di scaricamento app';
 $string['setuplink_desc'] = 'URL della pagina contenente i link per scaricare l\'app mobile dall\'App Store e Google Play.';
 $string['smartappbanners'] = 'App Banner';
+$string['subscription'] = 'Sottoscrizione';
+$string['subscriptioncreated'] = 'Data di inizio';
+$string['subscriptionexpiration'] = 'Data di scadenza';
+$string['subscriptionfeatures'] = 'Caratteristiche della sottoscrizione';
 $string['typeoflogin'] = 'Tipo di autenticazione';
 $string['typeoflogin_desc'] = 'Se un sito utilizza un\'autenticazione SSO, selezionare finestra browser o browser incorporato. Un browser incorporato fornisce un\'esperienza utente migliore sebbene non funzioni con tutti i tipi di plugin SSO.';
+$string['viewqrcode'] = 'Visualizza codice QR';

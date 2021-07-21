@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'zh_cn', version '3.8'.
+ * Strings for component 'lti', language 'zh_cn', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -56,6 +56,7 @@ $string['basicltifieldset'] = '自定义示例字段';
 $string['basicltiintro'] = '活动描述';
 $string['basicltiname'] = '活动名称';
 $string['basicltisettings'] = '基本学习工具互操作性(LTI)设置';
+$string['cachedef_keyset'] = '缓存工具的密钥集信息';
 $string['cancel'] = '取消';
 $string['cancelled'] = '已取消';
 $string['cannot_delete'] = '您不能删除这个工具的配置。';
@@ -78,6 +79,7 @@ $string['configtypes'] = '激活 LTI 应用';
 $string['configured'] = '已配置';
 $string['confirmtoolactivation'] = '您确定要激活此工具吗?';
 $string['contentitem'] = '内容项目消息‎';
+$string['contentitem_deeplinking_help'] = '如果勾选，在添加外部工具的时候，“选择内容”一项将有效。';
 $string['contentitem_help'] = '如果勾选，在添加外部工具的时候，“选择内容”一项将有效。';
 $string['course_tool_types'] = '课程工具';
 $string['courseactivitiesorresources'] = '课程活动或资源';
@@ -172,7 +174,7 @@ $string['force_ssl'] = '强制使用 SSL';
 $string['force_ssl_help'] = '选择此选项将强制此工具的所有启动者都使用SSL。此外，来自工具的所有web服务请求都将使用SSL。如果使用此选项，请确认此Moodle站点和工具提供者支持SSL。';
 $string['forced_help'] = '该项设置已经在一个课程或者站点级别配置中强制生效。您在本界面中不能改变它。';
 $string['generaltool'] = '普通工具';
-$string['global_tool_types'] = '全局工具类型';
+$string['global_tool_types'] = '全局预配置工具';
 $string['grading'] = '成绩路由';
 $string['icon_url'] = '图标的网址';
 $string['icon_url_help'] = 'icon URL允许修改在课程列表中显示的用于此活动的图标。可以指定一个表示活动类型的图标，而不是使用默认的LTI图标。';
@@ -189,6 +191,10 @@ $string['initiatelogin'] = '初始化登录网址';
 $string['initiatelogin_help'] = '要将启动登录的请求发送到的工具URL。在将消息成功发送到工具之前，需要此URL。';
 $string['invalidid'] = 'LTI ID 不正确';
 $string['jwtsecurity'] = 'LTI 1.3';
+$string['keytype'] = '公钥类型';
+$string['keytype_help'] = '用于验证工具的身份验证方法。';
+$string['keytype_keyset'] = '密钥集 URL';
+$string['keytype_rsa'] = 'RSA 密钥';
 $string['launch_in_moodle'] = '在 moodle 中启动工具';
 $string['launch_in_popup'] = '在弹出窗口中启动工具';
 $string['launch_url'] = '启动 URL';
@@ -200,6 +206,8 @@ $string['leaveblank'] = '如果不需要，就留空';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = '添加特定于课程的工具配置';
 $string['lti:addinstance'] = '添加一个新的外部工具';
+$string['lti:addmanualinstance'] = '添加手动配置的工具';
+$string['lti:addpreconfiguredinstance'] = '添加预配置的工具';
 $string['lti:admin'] = '该工具启动时成为管理员';
 $string['lti:grade'] = '查看外部工具返回的成绩';
 $string['lti:manage'] = '当工具启动时成为指导员';
@@ -263,7 +271,12 @@ $string['optionalsettings'] = '可选设置';
 $string['organization'] = '机构详情';
 $string['organizationdescr'] = '组织描述';
 $string['organizationid'] = '机构 ID';
+$string['organizationid_default'] = '默认组织 ID';
+$string['organizationid_default_help'] = '组织ID的默认值。站点ID标识这个Moodle安装。';
 $string['organizationid_help'] = '这个Moodle实例的唯一标识符。通常使用组织的DNS（域名）名称。如果此字段留空，则此Moodle站点的主机名将用作默认值。';
+$string['organizationidguid'] = '组织ID';
+$string['organizationidguid_help'] = '这个Moodle实例的唯一标识符作为平台实例GUID传递给工具。
+如果该字段为空，则使用默认值。';
 $string['organizationurl'] = '机构 URL';
 $string['organizationurl_help'] = '这个Moodle实例的基本URL。如果此字段为空，则将根据站点配置使用默认值。';
 $string['pagesize'] = '每页显示的提交';
@@ -319,6 +332,8 @@ $string['privacy:metadata:useridnumber'] = '访问LTI使用者的用户的ID号'
 $string['privacy:metadata:username'] = '访问LTI使用者的用户的用户名';
 $string['publickey'] = '公钥';
 $string['publickey_help'] = '该工具提供的公钥(PEM格式)，用于验证传入消息和服务请求的签名。';
+$string['publickeyset'] = '公钥集';
+$string['publickeyset_help'] = '此站点将从其中检索工具的公钥集，以允许对传入消息和服务请求的签名进行验证。';
 $string['quickgrade'] = '允许快速评分';
 $string['quickgrade_help'] = '如果启用，多个工具可以在一个页面上评分。添加分数和评论，然后点击“保存所有我的反馈”按钮，保存该页面的所有更改。';
 $string['redirect'] = '您将在几秒钟内被重定向。如果没有，就按这个按钮。';
@@ -371,6 +386,8 @@ $string['show_in_course_lti2'] = '工具配置使用';
 $string['show_in_course_lti2_help'] = '这个工具可以在活动选择器中显示，供老师选择添加到课程中，或者在向课程添加外部工具时，在预先配置的工具下拉菜单中显示。';
 $string['show_in_course_no'] = '不显示；仅在输入匹配的工具URL时使用';
 $string['show_in_course_preconfigured'] = '在添加外部工具时显示为预配置的工具';
+$string['sitehost'] = '站点主机名';
+$string['siteid'] = '站点 ID';
 $string['size'] = '尺寸参数';
 $string['submission'] = '提交';
 $string['submissions'] = '提交';

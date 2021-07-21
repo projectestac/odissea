@@ -146,12 +146,11 @@ class core_user_privacy_testcase extends provider_testcase {
         $user = $this->getDataGenerator()->create_user([
             'idnumber' => 'A0023',
             'emailstop' => 1,
-            'icq' => 'aksdjf98',
             'phone1' => '555 3257',
             'institution' => 'test',
             'department' => 'Science',
             'city' => 'Perth',
-            'country' => 'au'
+            'country' => 'AU'
         ]);
         $user2 = $this->getDataGenerator()->create_user();
         $course = $this->getDataGenerator()->create_course();
@@ -187,7 +186,6 @@ class core_user_privacy_testcase extends provider_testcase {
         $record = $DB->get_record('user', ['id' => $user->id]);
         $this->assertEmpty($record->idnumber);
         $this->assertEmpty($record->emailstop);
-        $this->assertEmpty($record->icq);
         $this->assertEmpty($record->phone1);
         $this->assertEmpty($record->institution);
         $this->assertEmpty($record->department);
@@ -217,12 +215,11 @@ class core_user_privacy_testcase extends provider_testcase {
         $user = $this->getDataGenerator()->create_user([
             'idnumber' => 'A0023',
             'emailstop' => 1,
-            'icq' => 'aksdjf98',
             'phone1' => '555 3257',
             'institution' => 'test',
             'department' => 'Science',
             'city' => 'Perth',
-            'country' => 'au'
+            'country' => 'AU'
         ]);
         $user2 = $this->getDataGenerator()->create_user();
         $course = $this->getDataGenerator()->create_course();
@@ -262,7 +259,6 @@ class core_user_privacy_testcase extends provider_testcase {
         $record = $DB->get_record('user', ['id' => $user->id]);
         $this->assertEmpty($record->idnumber);
         $this->assertEmpty($record->emailstop);
-        $this->assertEmpty($record->icq);
         $this->assertEmpty($record->phone1);
         $this->assertEmpty($record->institution);
         $this->assertEmpty($record->department);
@@ -323,12 +319,11 @@ class core_user_privacy_testcase extends provider_testcase {
         $user1 = $this->getDataGenerator()->create_user([
             'idnumber' => 'A0023',
             'emailstop' => 1,
-            'icq' => 'aksdjf98',
             'phone1' => '555 3257',
             'institution' => 'test',
             'department' => 'Science',
             'city' => 'Perth',
-            'country' => 'au'
+            'country' => 'AU'
         ]);
         $usercontext1 = \context_user::instance($user1->id);
         $userlist1 = new \core_privacy\local\request\userlist($usercontext1, $component);
@@ -337,12 +332,11 @@ class core_user_privacy_testcase extends provider_testcase {
         $user2 = $this->getDataGenerator()->create_user([
             'idnumber' => 'A0024',
             'emailstop' => 1,
-            'icq' => 'aksdjf981',
             'phone1' => '555 3258',
             'institution' => 'test',
             'department' => 'Science',
             'city' => 'Perth',
-            'country' => 'au'
+            'country' => 'AU'
         ]);
         $usercontext2 = \context_user::instance($user2->id);
         $userlist2 = new \core_privacy\local\request\userlist($usercontext2, $component);
@@ -363,7 +357,6 @@ class core_user_privacy_testcase extends provider_testcase {
         $record = $DB->get_record('user', ['id' => $user1->id]);
         $this->assertEmpty($record->idnumber);
         $this->assertEmpty($record->emailstop);
-        $this->assertEmpty($record->icq);
         $this->assertEmpty($record->phone1);
         $this->assertEmpty($record->institution);
         $this->assertEmpty($record->department);
@@ -387,7 +380,6 @@ class core_user_privacy_testcase extends provider_testcase {
         $record = $DB->get_record('user', ['id' => $user2->id]);
         $this->assertNotEmpty($record->idnumber);
         $this->assertNotEmpty($record->emailstop);
-        $this->assertNotEmpty($record->icq);
         $this->assertNotEmpty($record->phone1);
         $this->assertNotEmpty($record->institution);
         $this->assertNotEmpty($record->department);

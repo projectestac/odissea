@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_areafiles', language 'sv', version '3.8'.
+ * Strings for component 'repository_areafiles', language 'sv', version '3.11'.
  *
  * @package     repository_areafiles
  * @category    string
@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['areafiles:view'] = 'Visa Inbäddade filer';
+$string['configplugin'] = 'Konfiguration för lagringstypen Inbäddade filer';
 $string['pluginname'] = 'Inbäddade filer';
+$string['pluginname_help'] = 'Filer inbäddade i den aktuella textredigeraren';
+$string['privacy:metadata'] = 'Pluginmodulen Inbäddade filer lagrar eller överför ingen personinformation.';

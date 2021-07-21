@@ -2845,8 +2845,8 @@ class global_navigation extends navigation_node {
             return true;
         }
 
-        $sitecontext = context_system::instance();
-        $navoptions = course_get_user_navigation_options($sitecontext, $course);
+        $systemcontext = context_system::instance();
+        $navoptions = course_get_user_navigation_options($systemcontext, $course);
 
         // Hidden node that we use to determine if the front page navigation is loaded.
         // This required as there are not other guaranteed nodes that may be loaded.
@@ -2912,6 +2912,49 @@ class global_navigation extends navigation_node {
                 $node->display = false;
                 $node->showinflatnavigation = true;
             }
+        }
+
+        if (isloggedin()) {
+            $context = $this->page->context;
+            switch ($context->contextlevel) {
+                case CONTEXT_COURSECAT:
+                    // OK, expected context level.
+                    break;
+                case CONTEXT_COURSE:
+                    // OK, expected context level if not on frontpage.
+                    if ($COURSE->id != $SITE->id) {
+                        break;
+                    }
+                default:
+                    // If this context is part of a course (excluding frontpage), use the course context.
+                    // Otherwise, use the system context.
+                    $coursecontext = $context->get_course_context(false);
+                    if ($coursecontext && $coursecontext->instanceid !== $SITE->id) {
+                        $context = $coursecontext;
+                    } else {
+                        $context = $systemcontext;
+                    }
+            }
+
+            $params = ['contextid' => $context->id];
+
+            // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+            // 2021.06.23 @aginard
+            if (get_protected_agora()) {
+            // ************ FI
+
+            if (has_capability('moodle/contentbank:access', $context)) {
+                $url = new moodle_url('/contentbank/index.php', $params);
+                $node = $coursenode->add(get_string('contentbank'), $url,
+                    self::TYPE_CUSTOM, null, 'contentbank', new pix_icon('i/contentbank', ''));
+                $node->showinflatnavigation = true;
+            }
+
+            // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+            // 2021.06.23 @aginard
+            }
+            // ************ FI
+
         }
 
         return true;
@@ -3639,7 +3682,8 @@ class navbar extends navigation_node {
         }
 
         // Don't show the 'course' node if enrolled in this course.
-        if (!is_enrolled(context_course::instance($this->page->course->id, null, '', true))) {
+        $coursecontext = context_course::instance($this->page->course->id);
+        if (!is_enrolled($coursecontext, null, '', true)) {
             $courses = $this->page->navigation->get('courses');
             if (!$courses) {
                 // Courses node may not be present.
@@ -4034,8 +4078,7 @@ class flat_navigation extends navigation_node_collection {
         // Add-a-block in editing mode.
         if (isset($this->page->theme->addblockposition) &&
                 $this->page->theme->addblockposition == BLOCK_ADDBLOCK_POSITION_FLATNAV &&
-                $PAGE->user_is_editing() && $PAGE->user_can_edit_blocks() &&
-                ($addable = $PAGE->blocks->get_addable_blocks())) {
+                $PAGE->user_is_editing() && $PAGE->user_can_edit_blocks()) {
             $url = new moodle_url($PAGE->url, ['bui_addblock' => '', 'sesskey' => sesskey()]);
             $addablock = navigation_node::create(get_string('addblock'), $url);
             $flat = new flat_navigation_node($addablock, 0);
@@ -4043,12 +4086,11 @@ class flat_navigation extends navigation_node_collection {
             $flat->key = 'addblock';
             $flat->icon = new pix_icon('i/addblock', '');
             $this->add($flat);
-            $blocks = [];
-            foreach ($addable as $block) {
-                $blocks[] = $block->name;
-            }
-            $params = array('blocks' => $blocks, 'url' => '?' . $url->get_query_string(false));
-            $PAGE->requires->js_call_amd('core/addblockmodal', 'init', array($params));
+
+            $addblockurl = "?{$url->get_query_string(false)}";
+
+            $PAGE->requires->js_call_amd('core/addblockmodal', 'init',
+                [$PAGE->pagetype, $PAGE->pagelayout, $addblockurl]);
         }
     }
 
@@ -4417,7 +4459,7 @@ class settings_navigation extends navigation_node {
      * @return navigation_node|false
      */
     protected function load_course_settings($forceopen = false) {
-        global $CFG;
+        global $CFG, $USER;
         require_once($CFG->dirroot . '/course/lib.php');
 
         $course = $this->page->course;
@@ -4436,29 +4478,6 @@ class settings_navigation extends navigation_node {
             // Add the course settings link
             $url = new moodle_url('/course/edit.php', array('id'=>$course->id));
             $coursenode->add(get_string('editsettings'), $url, self::TYPE_SETTING, null, 'editsettings', new pix_icon('i/settings', ''));
-        }
-
-        if ($this->page->user_allowed_editing()) {
-            // Add the turn on/off settings
-
-            if ($this->page->url->compare(new moodle_url('/course/view.php'), URL_MATCH_BASE)) {
-                // We are on the course page, retain the current page params e.g. section.
-                $baseurl = clone($this->page->url);
-                $baseurl->param('sesskey', sesskey());
-            } else {
-                // Edit on the main course page.
-                $baseurl = new moodle_url('/course/view.php', array('id'=>$course->id, 'return'=>$this->page->url->out_as_local_url(false), 'sesskey'=>sesskey()));
-            }
-
-            $editurl = clone($baseurl);
-            if ($this->page->user_is_editing()) {
-                $editurl->param('edit', 'off');
-                $editstring = get_string('turneditingoff');
-            } else {
-                $editurl->param('edit', 'on');
-                $editstring = get_string('turneditingon');
-            }
-            $coursenode->add($editstring, $editurl, self::TYPE_SETTING, null, 'turneditingonoff', new pix_icon('i/edit', ''));
         }
 
         if ($adminoptions->editcompletion) {
@@ -4484,8 +4503,9 @@ class settings_navigation extends navigation_node {
 
         // View course reports.
         if ($adminoptions->reports) {
-            $reportnav = $coursenode->add(get_string('reports'), null, self::TYPE_CONTAINER, null, 'coursereports',
-                    new pix_icon('i/stats', ''));
+            $reportnav = $coursenode->add(get_string('reports'),
+                new moodle_url('/report/view.php', ['courseid' => $coursecontext->instanceid]),
+                self::TYPE_CONTAINER, null, 'coursereports', new pix_icon('i/stats', ''));
             $coursereports = core_component::get_plugin_list('coursereport');
             foreach ($coursereports as $report => $dir) {
                 $libfile = $CFG->dirroot.'/course/report/'.$report.'/lib.php';
@@ -4544,6 +4564,12 @@ class settings_navigation extends navigation_node {
             $coursenode->add(get_string('import'), $url, self::TYPE_SETTING, null, 'import', new pix_icon('i/import', ''));
         }
 
+        // Copy this course.
+        if ($adminoptions->copy) {
+            $url = new moodle_url('/backup/copy.php', array('id' => $course->id));
+            $coursenode->add(get_string('copycourse'), $url, self::TYPE_SETTING, null, 'copy', new pix_icon('t/copy', ''));
+        }
+
         // Reset this course
         if ($adminoptions->reset) {
             $url = new moodle_url('/course/reset.php', array('id'=>$course->id));
@@ -4589,6 +4615,16 @@ class settings_navigation extends navigation_node {
             foreach ($plugins as $pluginfunction) {
                 $pluginfunction($coursenode, $course, $coursecontext);
             }
+        }
+
+        // Prepare data for course content download functionality if it is enabled.
+        // Will only be included here if the action menu is already in use, otherwise a button will be added to the UI elsewhere.
+        if (\core\content::can_export_context($coursecontext, $USER) && !empty($coursenode->get_children_key_list())) {
+            $linkattr = \core_course\output\content_export_link::get_attributes($coursecontext);
+            $actionlink = new action_link($linkattr->url, $linkattr->displaystring, null, $linkattr->elementattributes);
+
+            $coursenode->add($linkattr->displaystring, $actionlink, self::TYPE_SETTING, null, 'download',
+                    new pix_icon('t/download', ''));
         }
 
         // Return we are done
@@ -5064,15 +5100,6 @@ class settings_navigation extends navigation_node {
             }
         }
 
-        // Add "Course preferences" link.
-        if (isloggedin() && !isguestuser($user)) {
-            if ($currentuser && has_capability('moodle/user:editownprofile', $systemcontext) ||
-                has_capability('moodle/user:editprofile', $usercontext)) {
-                $url = new moodle_url('/user/course.php', array('id' => $user->id, 'course' => $course->id));
-                $useraccount->add(get_string('coursepreferences'), $url, self::TYPE_SETTING, null, 'coursepreferences');
-            }
-        }
-
         // Add "Calendar preferences" link.
         if (isloggedin() && !isguestuser($user)) {
             if ($currentuser && has_capability('moodle/user:editownprofile', $systemcontext) ||
@@ -5082,12 +5109,22 @@ class settings_navigation extends navigation_node {
             }
         }
 
+        // Add "Content bank preferences" link.
+        if (isloggedin() && !isguestuser($user)) {
+            if ($currentuser && has_capability('moodle/user:editownprofile', $systemcontext) ||
+                has_capability('moodle/user:editprofile', $usercontext)) {
+                $url = new moodle_url('/user/contentbank.php', ['id' => $user->id]);
+                $useraccount->add(get_string('contentbankpreferences', 'core_contentbank'), $url, self::TYPE_SETTING,
+                        null, 'contentbankpreferences');
+            }
+        }
+
         // View the roles settings.
-        if (has_any_capability(array('moodle/role:assign', 'moodle/role:safeoverride', 'moodle/role:override',
-                'moodle/role:manage'), $usercontext)) {
+        if (has_any_capability(['moodle/role:assign', 'moodle/role:safeoverride', 'moodle/role:override',
+                'moodle/role:manage'], $usercontext)) {
             $roles = $usersetting->add(get_string('roles'), null, self::TYPE_SETTING);
 
-            $url = new moodle_url('/admin/roles/usersroles.php', array('userid'=>$user->id, 'courseid'=>$course->id));
+            $url = new moodle_url('/admin/roles/usersroles.php', ['userid' => $user->id, 'courseid' => $course->id]);
             $roles->add(get_string('thisusersroles', 'role'), $url, self::TYPE_SETTING);
 
             $assignableroles = get_assignable_roles($usercontext, ROLENAME_BOTH);

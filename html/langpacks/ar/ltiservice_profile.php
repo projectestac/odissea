@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'ltiservice_profile', language 'ar', version '3.8'.
+ * Strings for component 'ltiservice_profile', language 'ar', version '3.11'.
  *
  * @package     ltiservice_profile
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'أداة ملف المستفيد من خدمة  أدوات التعلم المشترك (LTI)';
-$string['privacy:metadata'] = 'المكون الإضافي  Tool Consumer Profile LTI Service  لا يخزن  أيّ بيانات شخصية.';
+$string['pluginname'] = 'أداة ملف المستفيد من خدمة أدوات التعلم المشترك (LTI)';
+$string['privacy:metadata'] = 'إن ملحق خدمة الملف التعريفي لمستهلك أداة LTI لا يخزن أي بيانات شخصية.';

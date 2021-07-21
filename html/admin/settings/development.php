@@ -4,17 +4,17 @@
 
 if ($hassiteconfig) { // speedup for non-admins, add all caps used on this page
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-if (get_protected_agora()) { 
-//************ FI
+// XTEC ************ AFEGIT - Allow access only to xtecadmin user
+// 2012.05.23 @sarjona
+if (get_protected_agora()) {
+// ************ FI
+
     // Experimental settings page
     $ADMIN->add('development', new admin_category('experimental', new lang_string('experimental','admin')));
 
     $temp = new admin_settingpage('experimentalsettings', new lang_string('experimentalsettings', 'admin'));
     //TODO: Re-enable cc-import once re-implemented in 2.0.x
     //$temp->add(new admin_setting_configcheckbox('enableimsccimport', new lang_string('enable_cc_import', 'imscc'), new lang_string('enable_cc_import_description', 'imscc'), 0));
-    $temp->add(new admin_setting_configcheckbox('enablesafebrowserintegration', new lang_string('enablesafebrowserintegration', 'admin'), new lang_string('configenablesafebrowserintegration', 'admin'), 0));
 
     $temp->add(new admin_setting_configcheckbox('dndallowtextandlinks', new lang_string('dndallowtextandlinks', 'admin'), new lang_string('configdndallowtextandlinks', 'admin'), 0));
 
@@ -43,9 +43,17 @@ if (get_protected_agora()) {
     // "debugging" settingpage
     $temp = new admin_settingpage('debugging', new lang_string('debugging', 'admin'));
     $temp->add(new admin_setting_special_debug());
-    $temp->add(new admin_setting_configcheckbox('debugdisplay', new lang_string('debugdisplay', 'admin'), new lang_string('configdebugdisplay', 'admin'), ini_get_bool('display_errors')));
+    $temp->add(new admin_setting_configcheckbox('debugdisplay', new lang_string('debugdisplay', 'admin'),
+        new lang_string('configdebugdisplay', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('perfdebug', new lang_string('perfdebug', 'admin'), new lang_string('configperfdebug', 'admin'), '7', '15', '7'));
     $temp->add(new admin_setting_configcheckbox('debugstringids', new lang_string('debugstringids', 'admin'), new lang_string('debugstringids_desc', 'admin'), 0));
+    $temp->add(new admin_setting_configselect('debugsqltrace',
+            new lang_string('debugsqltrace', 'admin'),
+            new lang_string('debugsqltrace_desc', 'admin'), 0, array(
+               0 => new lang_string('disabled', 'admin'),
+               1 => new lang_string('debugsqltrace1', 'admin'),
+               2 => new lang_string('debugsqltrace2', 'admin'),
+             100 => new lang_string('debugsqltrace100', 'admin'))));
     $temp->add(new admin_setting_configcheckbox('debugvalidators', new lang_string('debugvalidators', 'admin'), new lang_string('configdebugvalidators', 'admin'), 0));
     $temp->add(new admin_setting_configcheckbox('debugpageinfo', new lang_string('debugpageinfo', 'admin'), new lang_string('configdebugpageinfo', 'admin'), 0));
     $ADMIN->add('development', $temp);
@@ -107,10 +115,12 @@ if (get_protected_agora()) {
             "$CFG->wwwroot/$CFG->admin/purgecaches.php"));
 
     $ADMIN->add('development', new admin_externalpage('thirdpartylibs', new lang_string('thirdpartylibs','admin'), "$CFG->wwwroot/$CFG->admin/thirdpartylibs.php"));
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.05.23  @sarjona
-} else {
-    $ADMIN->add('development', new admin_externalpage('purgecaches', get_string('purgecaches','admin'), "$CFG->wwwroot/$CFG->admin/purgecaches.php"));
-} 
-//************ FI
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2012.05.23 @sarjona
+    } else {
+        $ADMIN->add('development', new admin_externalpage('purgecaches', get_string('purgecaches','admin'), "$CFG->wwwroot/$CFG->admin/purgecaches.php"));
+    }
+    // ************ FI
+
 } // end of speedup

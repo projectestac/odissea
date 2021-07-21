@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_responses', language 'ru', version '3.8'.
+ * Strings for component 'quiz_responses', language 'ru', version '3.11'.
  *
  * @package     quiz_responses
  * @category    string
@@ -30,6 +30,13 @@ $string['include'] = 'Включить';
 $string['mustselectcols'] = 'Вы должны что-нибудь включить.';
 $string['pagesize'] = 'Попыток на одной странице:';
 $string['pluginname'] = 'Ответы';
+$string['privacy:preference:qtext'] = 'Показывать ли столбцы с текстом вопроса.';
+$string['privacy:preference:resp'] = 'Показывать ли столбцы с ответами студентов.';
+$string['privacy:preference:right'] = 'Показывать ли столбцы правильных ответов.';
+$string['privacy:preference:which_tries'] = 'Какие попытки ответа пользователем на вопрос показывать';
+$string['privacy:preference:which_tries:all'] = 'Все попытки ответа пользователем на вопрос.';
+$string['privacy:preference:which_tries:first'] = 'Первая попытка ответа пользователем на вопрос.';
+$string['privacy:preference:which_tries:last'] = 'Последняя попытка ответа пользователем на вопрос.';
 $string['questiontext'] = 'текст вопроса';
 $string['reportresponses'] = 'Ответы';
 $string['response'] = 'ответ';

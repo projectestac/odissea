@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_glossary_random', language 'ar', version '3.8'.
+ * Strings for component 'block_glossary_random', language 'ar', version '3.11'.
  *
  * @package     block_glossary_random
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addentry'] = 'أضف مصطلحاً جديداً';
+$string['addentry'] = 'إضافة مصطلح جديد';
 $string['askaddentry'] = 'عندما يستطيع المستخدمون من إضافة مدخلاتهم إلى المسرد، أظهر الرابط مع هذا النص.';
 $string['askinvisible'] = 'عندما لا يستطيع المستخدمون من تحرير أو مشاهدة المسرد، أظهر هذا النص. (بدون رابط)';
 $string['askviewglossary'] = 'عندما يستطيع المستخدمون مشاهدة المسرد بدون أن يستطيعوا إضافة مدخلاتهم إلى المسرد، أظهر الرابط مع هذا النص.';

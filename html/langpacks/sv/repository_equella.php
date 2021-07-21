@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_equella', language 'sv', version '3.8'.
+ * Strings for component 'repository_equella', language 'sv', version '3.11'.
  *
  * @package     repository_equella
  * @category    string
@@ -25,7 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['breadcrumb'] = 'EQUELLA';
+$string['configplugin'] = 'Konfiguration av EQUELLA-lagring';
+$string['equella:view'] = 'Visa innehåll i EQUELLA';
+$string['equellaaction'] = 'EQUELLA-åtgärd';
+$string['equellaoptions'] = 'EQUELLA-alternativ';
+$string['equellaurl'] = 'EQUELLA URL';
+$string['group'] = '{$a} rollinställningar';
+$string['groupdefault'] = 'Standard';
 $string['pluginname'] = 'EQUELLA-lagring';
+$string['privacy:metadata'] = 'Pluginmodulen EQUELLA lagrar ingen personinformation, men överför användardata från Moodle till fjärrsystemet.';
 $string['restrictionattachmentsonly'] = 'Enbart bifogad resurs';
 $string['restrictionitemsonly'] = 'Enbart filsammanfattning';
 $string['restrictionnone'] = 'Ingen begränsning';
@@ -36,4 +45,5 @@ $string['sharedid'] = 'Delat hemligt ID';
 $string['sharedidtitle'] = 'Delat hemligt ID';
 $string['sharedsecrets'] = 'Delad hemlighet';
 $string['sharedsecretsheading'] = 'Inställningar för delad hemlighet';
+$string['sharedsecretshelp'] = '<p>Det är möjligt att ange en standard-EQUELLA-delad hemlighet för användare med enkel inloggning.  Du kan konfigurera olika delade hemligheter för allmän (läs) användning och en specialiserad rollbaserad delad hemlighet för varje <em>skriv</em>-roll på moodle-webbplatsen. Om ett delat hemligt ID inte är konfigurerat för en roll används det hemliga standard-ID:t och den delade standardhemligheten.</p><p>Alla delade hemliga ID:n och delade hemligheter måste också konfigureras i EQUELLA. Dessutom behöver modulen för delad hemlighet vara aktiverad. Den här konfigurationen finns i administrationskonsolen för EQUELLA under <em>Användarhantering &#10140; Delade hemligheter</em>.</p>';
 $string['sharedsecrettitle'] = 'Delad hemlighet';

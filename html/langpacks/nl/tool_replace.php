@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'nl', version '3.8'.
+ * Strings for component 'tool_replace', language 'nl', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = 'Volgende tabellen overslaan';
+$string['additionalskiptables_desc'] = 'Een lijst met  tabellen (komma-gescheiden) die je wil overslaan tijdens het lopen van een zoeken en vervangen in de database.';
 $string['cannotfit'] = 'Het nieuwe is langer dan het origineel en korter maken is niet toegestaan. Kan niet verder gaan.';
 $string['disclaimer'] = 'Ik begrijp de risico\'s van deze opertatie';
 $string['doit'] = 'Ja, doe maar!';

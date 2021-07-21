@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_graphs', language 'sv', version '3.8'.
+ * Strings for component 'scormreport_graphs', language 'sv', version '3.11'.
  *
  * @package     scormreport_graphs
  * @category    string
@@ -27,3 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['invaliddata'] = 'Inte tillräckligt med data';
 $string['participants'] = 'Deltagarantal';
+$string['percent'] = 'Procent(%) säkrat';
+$string['pluginname'] = 'Graf';
+$string['privacy:metadata'] = 'Grafrapporten visar endast data som lagras på andra platser.';

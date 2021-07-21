@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_meta', language 'gl', version '3.8'.
+ * Strings for component 'enrol_meta', language 'gl', version '3.11'.
  *
  * @package     enrol_meta
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addgroup'] = 'Engadir ao grupo';
 $string['coursesort'] = 'Ordenar a lista do curso';
-$string['coursesort_help'] = 'Isto determina se a lista de cursos que poden ser ligados se ordenan segundo a orde (p. ex. na orde configurada en Administración do sitio > Cursos > Administrar de cursos) ou alfabeticamente polo axuste do curso.';
+$string['coursesort_help'] = 'Isto determina se a lista de cursos que poden ser ligados están ordenados por orde de ordenación (é dicir, na orde configurada en Administración do sitio > Cursos > Administrar cursos e categorías) ou alfabeticamente polo axuste do curso.';
 $string['creategroup'] = 'Crear un grupo novo';
 $string['defaultgroupnametext'] = '{$a->name} curso {$a->increment}';
 $string['enrolmetasynctask'] = 'Tarefa de sincronización de meta matriculación';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'fr', version '3.8'.
+ * Strings for component 'webservice', language 'fr', version '3.11'.
  *
  * @package     webservice
  * @category    string
@@ -43,7 +43,7 @@ $string['apiexplorernotavalaible'] = 'L\'explorateur API n\'est pas encore dispo
 $string['arguments'] = 'Paramètres';
 $string['authmethod'] = 'Méthode d\'authentification';
 $string['callablefromajax'] = 'Appelable depuis AJAX';
-$string['cannotcreatetoken'] = 'Pas de droit d\'accès pour créer un jeton de service web pour le service {$a}.';
+$string['cannotcreatetoken'] = 'Pas les permissions requises pour créer un jeton de service web pour le service {$a}.';
 $string['cannotgetcoursecontents'] = 'Impossible d\'obtenir le contenu du cours';
 $string['checkusercapability'] = 'Vérifier la capacité utilisateur';
 $string['checkusercapabilitydescription'] = 'L\'utilisateur doit avoir les capacités correspondant aux protocoles utilisé, par exemple webservice/rest:use ou webservice/soap:use. Pour ce faire, veuillez créer un rôle « Web services » avec les capacités adéquates et l\'attribuer à l\'utilisateur web services comme rôle système.';
@@ -84,7 +84,7 @@ $string['errorcodes'] = 'Message d\'erreur';
 $string['errorcoursecontextnotvalid'] = 'Vous ne pouvez pas exécuter de fonctions dans le contexte du cours (identifiant du cours : {$a->courseid}). Le message d\'erreur du contexte est : {$a->message}.';
 $string['errorinvalidparam'] = 'Le paramètre « {$a} » n\'est pas valide.';
 $string['errornotemptydefaultparamarray'] = 'Le paramètre de description « {$a} » du service web est une structure simple ou multiple. Le défaut ne peut être qu\'un tableau vide. Veuillez vérifier la description du service web.';
-$string['erroroptionalparamarray'] = 'Le paramètre de description « {$a} » du service web est une structure simple ou multiple. Il ne peut pas être défini comme VALUE_OPTIONAL. Veuillez vérifier la description du service web.';
+$string['erroroptionalparamarray'] = 'Le paramètre de description « {$a} » du service web est une structure simple ou multiple. Il ne peut pas être défini comme VALUE_OPTIONAL. Veuillez consulter la description du service web.';
 $string['eventwebservicefunctioncalled'] = 'Fonction service web appelée';
 $string['eventwebserviceloginfailed'] = 'Connexion service web échouée';
 $string['eventwebserviceservicecreated'] = 'Service web créé';
@@ -122,7 +122,7 @@ $string['loginrequired'] = 'Restreint aux utilisateurs connectés';
 $string['manageprotocols'] = 'Gérer les protocoles';
 $string['managetokens'] = 'Gérer les jetons';
 $string['missingcaps'] = 'Capacités manquantes';
-$string['missingcaps_help'] = 'La liste des capacités requises pour le service et que l\'utilisateur sélectionné ne possède pas. Les capacités manquantes doivent être attribuées au rôle de l\'utilisateur pour qu\'il puisse utiliser le service.';
+$string['missingcaps_help'] = 'La liste des capacités déclarées par le service et que l\'utilisateur ne possède pas. Certaines fonctionnalités du service ne seront pas disponibles sans ces capacités.';
 $string['missingpassword'] = 'Mot de passe manquant';
 $string['missingrequiredcapability'] = 'La capacité {$a} est requise.';
 $string['missingusername'] = 'Nom d\'utilisateur manquant';
@@ -134,7 +134,7 @@ $string['norequiredcapability'] = 'Aucune capacité requise';
 $string['notoken'] = 'La liste des jetons est vide.';
 $string['onesystemcontrolling'] = 'Autoriser un système externe à contrôler Moodle';
 $string['onesystemcontrollingdescription'] = 'Les étapes suivantes vous aident à configurer les services web de Moodle pour permettre à un système d\'interagir avec Moodle. Cela inclut la configuration de la méthode d\'authentification par jeton (clefs de sécurité).';
-$string['onlyseecreatedtokens'] = 'Tous les jetons peuvent être supprimés, même si vous ne pouvez voir que les jetons que vous avez créés.';
+$string['onlyseecreatedtokens'] = 'Vous ne pouvez voir que les jetons que vous avez créés.';
 $string['operation'] = 'Opération';
 $string['optional'] = 'Optionnel';
 $string['passwordisexpired'] = 'Le mot de passe est échu.';
@@ -212,6 +212,9 @@ $string['token'] = 'Jeton';
 $string['tokenauthlog'] = 'Authentification jeton';
 $string['tokencreatedbyadmin'] = 'Ne peut être réinitialisé que par un administrateur (*)';
 $string['tokencreator'] = 'Créateur';
+$string['tokenfilter'] = 'Filtre des jetons';
+$string['tokenfilterreset'] = 'Afficher tous les jetons';
+$string['tokenfiltersubmit'] = 'N\'afficher que les jetons correspondant';
 $string['unknownoptionkey'] = 'Clef d\'option inconnue ({$a})';
 $string['unnamedstringparam'] = 'Un paramètre chaîne de caractère n\'a pas de nom.';
 $string['updateusersettings'] = 'Modifier';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_basic', language 'sv', version '3.8'.
+ * Strings for component 'scormreport_basic', language 'sv', version '3.11'.
  *
  * @package     scormreport_basic
  * @category    string
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Grundläggande rapport';
+$string['privacy:metadata:preference:scorm_report_detailed'] = 'Om detaljer ska spåras i SCORM:s grundrapport';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'Antal användare att visa i SCORM-rapporter';

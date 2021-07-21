@@ -83,7 +83,7 @@ class tool_uploadcourse_step2_form extends tool_uploadcourse_base_form {
         $mform->setExpanded('defaultheader', true);
 
         $displaylist = core_course_category::make_categories_list('moodle/course:create');
-        $mform->addElement('select', 'defaults[category]', get_string('coursecategory'), $displaylist);
+        $mform->addElement('autocomplete', 'defaults[category]', get_string('coursecategory'), $displaylist);
         $mform->addHelpButton('defaults[category]', 'coursecategory');
 
         $choices = array();
@@ -92,6 +92,24 @@ class tool_uploadcourse_step2_form extends tool_uploadcourse_base_form {
         $mform->addElement('select', 'defaults[visible]', get_string('coursevisibility'), $choices);
         $mform->addHelpButton('defaults[visible]', 'coursevisibility');
         $mform->setDefault('defaults[visible]', $courseconfig->visible);
+
+        if ($CFG->downloadcoursecontentallowed &&
+                has_capability('moodle/course:configuredownloadcontent', context::instance_by_id($contextid))) {
+
+            $downloadchoices = [
+                DOWNLOAD_COURSE_CONTENT_DISABLED => get_string('no'),
+                DOWNLOAD_COURSE_CONTENT_ENABLED => get_string('yes'),
+            ];
+
+            $sitedefaultstring = $downloadchoices[$courseconfig->downloadcontentsitedefault];
+            $downloadchoices[DOWNLOAD_COURSE_CONTENT_SITE_DEFAULT] = get_string('sitedefaultspecified', '', $sitedefaultstring);
+            $downloadselectdefault = $courseconfig->downloadcontent ?? DOWNLOAD_COURSE_CONTENT_SITE_DEFAULT;
+
+            $mform->addElement('select', 'defaults[downloadcontent]', get_string('enabledownloadcoursecontent', 'course'),
+                $downloadchoices);
+            $mform->addHelpButton('defaults[downloadcontent]', 'downloadcoursecontent', 'course');
+            $mform->setDefault('defaults[downloadcontent]', $downloadselectdefault);
+        }
 
         $mform->addElement('date_time_selector', 'defaults[startdate]', get_string('startdate'));
         $mform->addHelpButton('defaults[startdate]', 'startdate');
@@ -173,6 +191,10 @@ class tool_uploadcourse_step2_form extends tool_uploadcourse_base_form {
             $mform->addHelpButton('defaults[enablecompletion]', 'enablecompletion', 'completion');
         }
 
+        // Add custom fields to the form.
+        $handler = \core_course\customfield\course_handler::create();
+        $handler->instance_form_definition($mform, 0, 'defaultvaluescustomfieldcategory', 'tool_uploadcourse');
+
         // Hidden fields.
         $mform->addElement('hidden', 'importid');
         $mform->setType('importid', PARAM_INT);
@@ -181,6 +203,10 @@ class tool_uploadcourse_step2_form extends tool_uploadcourse_base_form {
         $mform->setType('previewrows', PARAM_INT);
 
         $this->add_action_buttons(true, get_string('uploadcourses', 'tool_uploadcourse'));
+
+        // Prepare custom fields data.
+        $data = (object) $data;
+        $handler->instance_form_before_set_data($data);
 
         $this->set_data($data);
     }
@@ -219,6 +245,9 @@ class tool_uploadcourse_step2_form extends tool_uploadcourse_base_form {
             $enddate = $format->get_default_course_enddate($mform, array('startdate' => 'defaults[startdate]'));
             $mform->setDefault('defaults[enddate]', $enddate);
         }
+
+        // Tweak the form with values provided by custom fields in use.
+        \core_course\customfield\course_handler::create()->instance_form_definition_after_data($mform);
     }
 
     /**
@@ -236,6 +265,9 @@ class tool_uploadcourse_step2_form extends tool_uploadcourse_base_form {
         if ($errorcode = course_validate_dates($data['defaults'])) {
             $errors['defaults[enddate]'] = get_string($errorcode, 'error');
         }
+
+        // Custom fields validation.
+        array_merge($errors, \core_course\customfield\course_handler::create()->instance_form_validation($data, $files));
 
         return $errors;
     }

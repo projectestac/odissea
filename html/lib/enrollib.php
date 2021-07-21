@@ -567,6 +567,11 @@ function enrol_get_my_courses($fields = null, $sort = null, $limit = 0, $coursei
     $offset = 0, $excludecourses = []) {
     global $DB, $USER, $CFG;
 
+    // Allowed prefixes and field names.
+    $allowedprefixesandfields = ['c' => array_keys($DB->get_columns('course')),
+                                'ul' => array_keys($DB->get_columns('user_lastaccess')),
+                                'ue' => array_keys($DB->get_columns('user_enrolments'))];
+
     // Re-Arrange the course sorting according to the admin settings.
     $sort = enrol_get_courses_sortingsql($sort);
 
@@ -575,10 +580,13 @@ function enrol_get_my_courses($fields = null, $sort = null, $limit = 0, $coursei
         return array();
     }
 
-    $basefields = array('id', 'category', 'sortorder',
-                        'shortname', 'fullname', 'idnumber',
-                        'startdate', 'visible',
-                        'groupmode', 'groupmodeforce', 'cacherev');
+    $basefields = [
+        'id', 'category', 'sortorder',
+        'shortname', 'fullname', 'idnumber',
+        'startdate', 'visible',
+        'groupmode', 'groupmodeforce', 'cacherev',
+        'showactivitydates', 'showcompletionconditions',
+    ];
 
     if (empty($fields)) {
         $fields = $basefields;
@@ -599,28 +607,63 @@ function enrol_get_my_courses($fields = null, $sort = null, $limit = 0, $coursei
     $orderby = "";
     $sort    = trim($sort);
     $sorttimeaccess = false;
-    $allowedsortprefixes = array('c', 'ul', 'ue');
     if (!empty($sort)) {
         $rawsorts = explode(',', $sort);
         $sorts = array();
         foreach ($rawsorts as $rawsort) {
             $rawsort = trim($rawsort);
-            if (preg_match('/^ul\.(\S*)\s(asc|desc)/i', $rawsort, $matches)) {
-                if (strcasecmp($matches[2], 'asc') == 0) {
-                    $sorts[] = 'COALESCE(ul.' . $matches[1] . ', 0) ASC';
-                } else {
-                    $sorts[] = 'COALESCE(ul.' . $matches[1] . ', 0) DESC';
+            // Make sure that there are no more white spaces in sortparams after explode.
+            $sortparams = array_values(array_filter(explode(' ', $rawsort)));
+            // If more than 2 values present then throw coding_exception.
+            if (isset($sortparams[2])) {
+                throw new coding_exception('Invalid $sort parameter in enrol_get_my_courses()');
+            }
+            // Check the sort ordering if present, at the beginning.
+            if (isset($sortparams[1]) && (preg_match("/^(asc|desc)$/i", $sortparams[1]) === 0)) {
+                throw new coding_exception('Invalid sort direction in $sort parameter in enrol_get_my_courses()');
+            }
+
+            $sortfield = $sortparams[0];
+            $sortdirection = $sortparams[1] ?? 'asc';
+            if (strpos($sortfield, '.') !== false) {
+                $sortfieldparams = explode('.', $sortfield);
+                // Check if more than one dots present in the prefix field.
+                if (isset($sortfieldparams[2])) {
+                    throw new coding_exception('Invalid $sort parameter in enrol_get_my_courses()');
                 }
-                $sorttimeaccess = true;
-            } else if (strpos($rawsort, '.') !== false) {
-                $prefix = explode('.', $rawsort);
-                if (in_array($prefix[0], $allowedsortprefixes)) {
-                    $sorts[] = trim($rawsort);
+                list($prefix, $fieldname) = [$sortfieldparams[0], $sortfieldparams[1]];
+                // Check if the field name matches with the allowed prefix.
+                if (array_key_exists($prefix, $allowedprefixesandfields) &&
+                    (in_array($fieldname, $allowedprefixesandfields[$prefix]))) {
+                    if ($prefix === 'ul') {
+                        $sorts[] = "COALESCE({$prefix}.{$fieldname}, 0) {$sortdirection}";
+                        $sorttimeaccess = true;
+                    } else {
+                        // Check if the field name that matches with the prefix and just append to sorts.
+                        $sorts[] = $rawsort;
+                    }
                 } else {
                     throw new coding_exception('Invalid $sort parameter in enrol_get_my_courses()');
                 }
             } else {
-                $sorts[] = 'c.'.trim($rawsort);
+                // Check if the field name matches with $allowedprefixesandfields.
+                $found = false;
+                foreach (array_keys($allowedprefixesandfields) as $prefix) {
+                    if (in_array($sortfield, $allowedprefixesandfields[$prefix])) {
+                        if ($prefix === 'ul') {
+                            $sorts[] = "COALESCE({$prefix}.{$sortfield}, 0) {$sortdirection}";
+                            $sorttimeaccess = true;
+                        } else {
+                            $sorts[] = "{$prefix}.{$sortfield} {$sortdirection}";
+                        }
+                        $found = true;
+                        break;
+                    }
+                }
+                if (!$found) {
+                    // The param is not found in $allowedprefixesandfields.
+                    throw new coding_exception('Invalid $sort parameter in enrol_get_my_courses()');
+                }
             }
         }
         $sort = implode(',', $sorts);
@@ -664,13 +707,12 @@ function enrol_get_my_courses($fields = null, $sort = null, $limit = 0, $coursei
                 SELECT DISTINCT e.courseid
                   FROM {enrol} e
                   JOIN {user_enrolments} ue ON (ue.enrolid = e.id AND ue.userid = :userid1)
-                 WHERE ue.status = :active AND e.status = :enabled AND ue.timestart < :now1
+                 WHERE ue.status = :active AND e.status = :enabled AND ue.timestart <= :now1
                        AND (ue.timeend = 0 OR ue.timeend > :now2)";
         $params['userid1'] = $USER->id;
         $params['active'] = ENROL_USER_ACTIVE;
         $params['enabled'] = ENROL_INSTANCE_ENABLED;
-        $params['now1'] = round(time(), -2); // Improves db caching.
-        $params['now2'] = $params['now1'];
+        $params['now1'] = $params['now2'] = time();
 
         if ($sorttimeaccess) {
             $params['userid2'] = $USER->id;
@@ -1173,7 +1215,6 @@ function enrol_selfenrol_available($courseid) {
             continue;
         }
         if ($instance->enrol === 'guest') {
-            // blacklist known temporary guest plugins
             continue;
         }
         if ($plugins[$instance->enrol]->show_enrolme_link($instance)) {
@@ -1385,6 +1426,10 @@ function is_enrolled(context $context, $user = null, $withcapability = '', $only
  * several times (e.g. as manual enrolment, and as self enrolment). You may
  * need to use a SELECT DISTINCT in your query (see get_enrolled_sql for example).
  *
+ * In case is guaranteed some of the joins never match any rows, the resulting
+ * join_sql->cannotmatchanyrows will be true. This happens when the capability
+ * is prohibited.
+ *
  * @param context $context
  * @param string $prefix optional, a prefix to the user id column
  * @param string|array $capability optional, may include a capability name, or array of names.
@@ -1394,24 +1439,27 @@ function is_enrolled(context $context, $user = null, $withcapability = '', $only
  * @param bool $onlyactive consider only active enrolments in enabled plugins and time restrictions
  * @param bool $onlysuspended inverse of onlyactive, consider only suspended enrolments
  * @param int $enrolid The enrolment ID. If not 0, only users enrolled using this enrolment method will be returned.
- * @return \core\dml\sql_join Contains joins, wheres, params
+ * @return \core\dml\sql_join Contains joins, wheres, params and cannotmatchanyrows
  */
 function get_enrolled_with_capabilities_join(context $context, $prefix = '', $capability = '', $group = 0,
         $onlyactive = false, $onlysuspended = false, $enrolid = 0) {
     $uid = $prefix . 'u.id';
     $joins = array();
     $wheres = array();
+    $cannotmatchanyrows = false;
 
     $enrolledjoin = get_enrolled_join($context, $uid, $onlyactive, $onlysuspended, $enrolid);
     $joins[] = $enrolledjoin->joins;
     $wheres[] = $enrolledjoin->wheres;
     $params = $enrolledjoin->params;
+    $cannotmatchanyrows = $cannotmatchanyrows || $enrolledjoin->cannotmatchanyrows;
 
     if (!empty($capability)) {
         $capjoin = get_with_capability_join($context, $capability, $uid);
         $joins[] = $capjoin->joins;
         $wheres[] = $capjoin->wheres;
         $params = array_merge($params, $capjoin->params);
+        $cannotmatchanyrows = $cannotmatchanyrows || $capjoin->cannotmatchanyrows;
     }
 
     if ($group) {
@@ -1421,13 +1469,14 @@ function get_enrolled_with_capabilities_join(context $context, $prefix = '', $ca
         if (!empty($groupjoin->wheres)) {
             $wheres[] = $groupjoin->wheres;
         }
+        $cannotmatchanyrows = $cannotmatchanyrows || $groupjoin->cannotmatchanyrows;
     }
 
     $joins = implode("\n", $joins);
     $wheres[] = "{$prefix}u.deleted = 0";
     $wheres = implode(" AND ", $wheres);
 
-    return new \core\dml\sql_join($joins, $wheres, $params);
+    return new \core\dml\sql_join($joins, $wheres, $params, $cannotmatchanyrows);
 }
 
 /**

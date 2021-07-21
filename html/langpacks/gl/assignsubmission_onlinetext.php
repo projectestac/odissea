@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignsubmission_onlinetext', language 'gl', version '3.8'.
+ * Strings for component 'assignsubmission_onlinetext', language 'gl', version '3.11'.
  *
  * @package     assignsubmission_onlinetext
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowonlinetextsubmissions'] = 'Activado';
 $string['default'] = 'Activado de xeito predeterminado';
-$string['default_help'] = 'Se establece, este método de comentarios será activado como predeterminado para todas as novas tarefas.';
+$string['default_help'] = 'Se estabelece, este método de comentarios será activado como predeterminado para todas as novas tarefas.';
 $string['enabled'] = 'Texto en liña';
 $string['enabled_help'] = 'Se está activado, os alumnos son quen de escribir texto enriquecido directamente nun campo do editor para a súa entrega.';
 $string['eventassessableuploaded'] = 'Foi enviado un texto en liña.';
@@ -35,7 +35,7 @@ $string['nosubmission'] = 'Non foi enviado nada para esta tarefa';
 $string['numwords'] = '({$a} palabras)';
 $string['numwordsforlog'] = 'Contador de palabras da entrega: {$a} palabras';
 $string['onlinetext'] = 'Texto en liña';
-$string['onlinetextfilename'] = 'onlinetext.html';
+$string['onlinetextfilename'] = 'textoenliña.html';
 $string['onlinetextsubmission'] = 'Permitir a entrega de texto en liña';
 $string['pluginname'] = 'Entregas de texto en liña';
 $string['privacy:metadata:assignmentid'] = 'ID da tarefa';

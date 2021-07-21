@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'edufields', language 'gl', version '3.8'.
+ * Strings for component 'edufields', language 'gl', version '3.11'.
  *
  * @package     edufields
  * @category    string
@@ -207,9 +207,9 @@ $string['field1050799'] = 'Estudos Pesqueiros (outra)';
 $string['field10509'] = 'Estudos Ambientais';
 $string['field1050901'] = 'Xestión de Terra, Parques e Vida Salvaxe';
 $string['field1050999'] = 'Estudos Ambientais (outro)';
-$string['field10599'] = 'Outros Estudos de Agricultura, Ambiente e Relacionados';
+$string['field10599'] = 'Outros Estudos de Agricultura, Ambiental e Relacionados';
 $string['field1059901'] = 'Control de Pragas Malas Herbas';
-$string['field1059999'] = 'Estudos de Agricultura, Ambiente e Relacionados (outra)';
+$string['field1059999'] = 'Estudos de Agricultura, Ambiental e Relacionados (outra)';
 $string['field106'] = 'Saúde';
 $string['field10601'] = 'Estudos Médicos';
 $string['field1060101'] = 'Medicina Xeral';

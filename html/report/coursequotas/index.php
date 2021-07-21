@@ -19,7 +19,7 @@
  *
  * @package    report
  * @subpackage coursequotas
- * @copyright  2012 Agora Development Team (https://github.com/projectestac/agora)
+ * @copyright  2012 onwards Agora Development Team (https://github.com/projectestac/agora)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -59,20 +59,20 @@ if ($chartinfo['backup']->bytes > 0) {
         get_string('manage_backup_files', REPORT_COMPONENTNAME,$CFG->wwwroot . '/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC'),
         'info'
     );
-    $backuptab = '<li><a href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC">' . get_string('backups', REPORT_COMPONENTNAME) . '</a></li>';
+    $backuptab = REPORT_COURSEQUOTAS_LI_OPEN_HTML.'<a href="' . $CFG->wwwroot . '/report/coursequotas/filemanager.php?backups=true&sort=filesize&dir=DESC">' . get_string('backups', REPORT_COMPONENTNAME) . '</a>'.REPORT_COURSEQUOTAS_LI_CLOSE_HTML;
 } else {
     $backuptab = '';
 }
 
 $content .= '
     <ul style="width: 800px; margin: auto auto 20px;">' .
-        '<li>' . get_string('disk_consume_courses', REPORT_COMPONENTNAME, $chartinfo['course']) . '</li>' .
-        '<li>' . get_string('disk_consume_backups', REPORT_COMPONENTNAME, $chartinfo['backup']) . '</li>' .
-        '<li>' . get_string('disk_consume_user', REPORT_COMPONENTNAME, $chartinfo['user']) . '</li>' .
-        '<li>' . get_string('disk_consume_h5plib', REPORT_COMPONENTNAME, $chartinfo['h5plib']) . '</li>' .
-        '<li>' . get_string('disk_consume_repofiles', REPORT_COMPONENTNAME, $chartinfo['repository']) . '</li>' .
-        '<li>' . get_string('disk_consume_temp', REPORT_COMPONENTNAME, $chartinfo['temp']) . '</li>' .
-        '<li>' . get_string('disk_consume_trash', REPORT_COMPONENTNAME, $chartinfo['trash']) . '</li>' .
+        REPORT_COURSEQUOTAS_LI_OPEN_HTML . get_string('disk_consume_courses', REPORT_COMPONENTNAME, $chartinfo['course']) . REPORT_COURSEQUOTAS_LI_CLOSE_HTML .
+        REPORT_COURSEQUOTAS_LI_OPEN_HTML . get_string('disk_consume_backups', REPORT_COMPONENTNAME, $chartinfo['backup']) . REPORT_COURSEQUOTAS_LI_CLOSE_HTML .
+        REPORT_COURSEQUOTAS_LI_OPEN_HTML . get_string('disk_consume_user', REPORT_COMPONENTNAME, $chartinfo['user']) . REPORT_COURSEQUOTAS_LI_CLOSE_HTML .
+        REPORT_COURSEQUOTAS_LI_OPEN_HTML . get_string('disk_consume_h5plib', REPORT_COMPONENTNAME, $chartinfo['h5plib']) . REPORT_COURSEQUOTAS_LI_CLOSE_HTML .
+        REPORT_COURSEQUOTAS_LI_OPEN_HTML . get_string('disk_consume_repofiles', REPORT_COMPONENTNAME, $chartinfo['repository']) . REPORT_COURSEQUOTAS_LI_CLOSE_HTML .
+        REPORT_COURSEQUOTAS_LI_OPEN_HTML . get_string('disk_consume_temp', REPORT_COMPONENTNAME, $chartinfo['temp']) . REPORT_COURSEQUOTAS_LI_CLOSE_HTML .
+        REPORT_COURSEQUOTAS_LI_OPEN_HTML . get_string('disk_consume_trash', REPORT_COMPONENTNAME, $chartinfo['trash']) . REPORT_COURSEQUOTAS_LI_CLOSE_HTML .
     '</ul>
     ';
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_log', language 'fr', version '3.8'.
+ * Strings for component 'tool_log', language 'fr', version '3.11'.
  *
  * @package     tool_log
  * @category    string
@@ -32,7 +32,7 @@ $string['exportlogdetail'] = 'Inclure les journaux en lien avec l\'utilisateur l
 $string['logging'] = 'Journaux';
 $string['managelogging'] = 'Gérer les stockages des journaux';
 $string['pluginname'] = 'Gestion des stockages de journaux';
-$string['privacy:metadata:logstore'] = 'Les enregistrement de journaux';
+$string['privacy:metadata:logstore'] = 'Les enregistrements de journaux';
 $string['privacy:path:logs'] = 'Journaux';
 $string['privacy:request:origin:cli'] = 'Outil ligne de commande';
 $string['privacy:request:origin:restore'] = 'Sauvegarde restaurée';

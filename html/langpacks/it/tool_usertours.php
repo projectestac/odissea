@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'it', version '3.8'.
+ * Strings for component 'tool_usertours', language 'it', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -64,12 +64,20 @@ $string['event_tour_ended'] = 'Terminato tour';
 $string['event_tour_reset'] = 'Reimpostato tour';
 $string['event_tour_started'] = 'Avviato tour';
 $string['exporttour'] = 'Esporta tour';
+$string['filter_accessdate'] = 'Data di accesso';
+$string['filter_accessdate_enabled'] = 'Abilita filtro data di accesso';
+$string['filter_accessdate_enabled_help'] = 'Consente di visualizzare tour solo ai nuovi utenti o agli utenti che hanno acceduto recentemente.';
 $string['filter_category'] = 'Categoria';
 $string['filter_category_help'] = 'Visualizza il tour in una pagina che è associata a un corso nella categoria selezionata.';
 $string['filter_course'] = 'Corsi';
 $string['filter_course_help'] = 'Visualizza il tour su una pagina che è associata al corso selezionato.';
 $string['filter_courseformat'] = 'Formato di corso';
 $string['filter_courseformat_help'] = 'Visualizza il tour in una pagina che è associata a un corso utilizzando il formato del corso selezionato.';
+$string['filter_cssselector'] = 'Selettore CSS';
+$string['filter_cssselector_help'] = 'Visualizza il tour solo se la pagina contiene il selettore CSS';
+$string['filter_date_account_creation'] = 'Creazione account utente entro';
+$string['filter_date_first_login'] = 'Primo accesso dell\'utente entro';
+$string['filter_date_last_login'] = 'Ultimo accesso dell\'utente entro';
 $string['filter_header'] = 'Filtri tour';
 $string['filter_help'] = 'Imposta le condizioni di visualizzazione del tour. I filtri devono corrispondere ad un tour da visualizzare all\'utente.';
 $string['filter_role'] = 'Ruolo';
@@ -87,6 +95,7 @@ $string['name'] = 'Nome';
 $string['newstep'] = 'Aggiungi passo';
 $string['newtour'] = 'Crea tour';
 $string['next'] = 'Successivo';
+$string['nextstep'] = 'Successivo';
 $string['options_heading'] = 'Opzioni';
 $string['orphan'] = 'Visualizza';
 $string['orphan_help'] = 'Visualizza il passo se l\'obiettivo non è presente nella pagina';
@@ -107,6 +116,7 @@ $string['placement_help'] = 'E\' possibile posizionare un passo sopra, sotto, a 
 
 Qualora il passo non si adatti ad essere visualizzato nella posizione impostata, sarà posizionato altrove automaticamente.';
 $string['pluginname'] = 'Tour utente';
+$string['previousstep'] = 'Precedente';
 $string['privacy:metadata:preference:completed'] = 'L\'orario nel quale un utente ha più recentemente completato il tour.';
 $string['privacy:metadata:preference:requested'] = 'L\'orario nel quale un utente ha più recentemente resettato manualmente il tour.';
 $string['privacy:request:preference:completed'] = 'Il {$a->time} hai contrassegnato come completato il tour utente "{$a->name}"';
@@ -168,9 +178,9 @@ $string['tour2_title_opendrawer'] = 'Apri il cassetto di navigazione';
 $string['tour2_title_participants'] = 'Partecipanti al corso';
 $string['tour2_title_welcome'] = 'Benvenuto';
 $string['tour3_content_dashboard'] = 'La nuova dashboard ha tante funzionalità che ti faciliteranno l\'accesso alle informazioni più rilevanti.';
-$string['tour3_content_displayoptions'] = 'Puoi ordinare i corsi per nome o per data di accesso.
+$string['tour3_content_displayoptions'] = 'E\' possibile ordinare i corsi per nome o per data di accesso.
 
-Puoi anche visualizzarli come elenco, elenco con sommario oppure come matrice.';
+E\' anche visualizzarli come elenco, elenco con sommario oppure come matrice.';
 $string['tour3_content_overview'] = 'Il blocco Panoramica corsi visualizza tutti i corsi nei quali sei iscritto.
 
 Puoi scegliere di visualizzare i corsi in svolgimento, quelli passati, quelli futuri oppure i corsi preferiti.';

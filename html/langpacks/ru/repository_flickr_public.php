@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'ru', version '3.8'.
+ * Strings for component 'repository_flickr_public', language 'ru', version '3.11'.
  *
  * @package     repository_flickr_public
  * @category    string
@@ -49,6 +49,11 @@ $string['notitle'] = 'без названия';
 $string['nullphotolist'] = 'У этой учетной записи нет фотографий';
 $string['pluginname'] = 'Публичный Flickr';
 $string['pluginname_help'] = 'Хранилище Flickr.com';
+$string['privacy:metadata:repository_flickr_public'] = 'Плагин публичного хранилища Flickr не хранит никаких личных данных, но передает данные пользователя из Moodle в отдаленную систему.';
+$string['privacy:metadata:repository_flickr_public:author'] = 'Автор контента публичного хранилища Flickr.';
+$string['privacy:metadata:repository_flickr_public:email_address'] = 'Адрес электронной почты пользователя публичного хранилища Flickr.';
+$string['privacy:metadata:repository_flickr_public:text'] = 'Текстовый поисковый запрос пользователя публичного хранилища Flickr.';
+$string['privacy:metadata:repository_flickr_public:user_id'] = 'ID пользователя публичного хранилища Flickr.';
 $string['remember'] = 'Запомнить меня';
 $string['secret'] = 'Секретный ключ';
 $string['sharealike'] = 'Да, пока остальные сохраняют условия';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ko', version '3.8'.
+ * Strings for component 'report_security', language 'ko', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -74,10 +74,6 @@ $string['check_mediafilterswf_details'] = '<p>자동 swf 엠베딩은 매우 위
 $string['check_mediafilterswf_error'] = '플래시 미디어 필터 켜짐 - 이는 대다수 서버에게 매우 위함할 수 있습니다.';
 $string['check_mediafilterswf_name'] = '.swf 필터 켬';
 $string['check_mediafilterswf_ok'] = '플래시 미디어 필터 끔';
-$string['check_noauth_details'] = '<p><em>인증 없음</em>플러그인은 실제 운영 서버에서는 추천하지 않습니다. 서버가 개발 사이트가 아니면 비 활성화 하십시요</p>';
-$string['check_noauth_error'] = '실제 운영 사이트에서는 인증 플러그인 없음이 사용될 수 없습니다.';
-$string['check_noauth_name'] = '인증절차 생략';
-$string['check_noauth_ok'] = '인증절차 생략 플러그인 끔';
 $string['check_openprofiles_details'] = '<p>공개된 사용자 개인정보는 간혹 스패머에 의해 오용될 소지가 있습니다. 개인정보를 보기 위해서는 <code>개인정보 보려면 로그인 필수</code> 나 <code>로그인 필수</code>를 활성화 시키는 것을 추천합니다.</p>';
 $string['check_openprofiles_error'] = '로그인 없이 사용자 개인정보 볼 수 있음';
 $string['check_openprofiles_name'] = '사용자 개인정보 공개';
@@ -119,10 +115,4 @@ $string['details'] = '세부사항';
 $string['issue'] = '이슈';
 $string['pluginname'] = '보안 개요';
 $string['security:view'] = '보안 보고 보기';
-$string['status'] = '상태';
-$string['statuscritical'] = '치명적';
-$string['statusinfo'] = '알림';
-$string['statusok'] = '통과';
-$string['statusserious'] = '심각';
-$string['statuswarning'] = '경고';
 $string['timewarning'] = '자료처리에 시간이 좀 걸립니다. 기다려 주십시오...';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'sv', version '3.8'.
+ * Strings for component 'auth', language 'sv', version '3.11'.
  *
  * @package     auth
  * @category    string
@@ -74,8 +74,9 @@ $string['authinstructions'] = 'Här kan du ge instruktioner för dina användare
 $string['authloginviaemail'] = 'Tillåt inloggning via E-post';
 $string['authloginviaemail_desc'] = 'Tillåt användare att använda både användarnamn och e-postadress (om unik) för att logga in.';
 $string['auto_add_remote_users'] = 'Lägg till externa användare automatiskt';
+$string['cannotmapfield'] = 'Det går inte att mappa fältet "{$a->fieldname}" eftersom dess kortnamn "{$a->shortname}" är för långt. Om du vill att det ska kunna mappas måste du korta ned det till {$a->charlimit}-tecken. <a href="{$a->link}">Profilfält</a>';
 $string['changepassword'] = 'URL   till sida för att ändra lösenord';
-$string['changepasswordhelp'] = 'Här kan du specificera en plats där dina användare kan återställa eller ändra sina användarnamn/lösenord om de har glömt det. Detta kommer att visas för användarna som en knapp på sidan för inloggning och på deras användarsidor. Om du lämnar detta tomt kommer inte knappen att visas.';
+$string['changepasswordhelp'] = 'URL till sidan för återställning av förlorade lösenord, vilka skickas till användare i ett e-postmeddelande. Observera att den här inställningen inte har någon effekt om en bortglömd lösenordsadress anges i autentiseringsinställningarna.';
 $string['chooseauthmethod'] = 'Välj en autentiseringsmetod';
 $string['chooseauthmethod_help'] = '<p>Den här menyn låter dig ändra metoden för autentisering
    för den här specifika användaren.</p>
@@ -88,11 +89,13 @@ $string['emailchangecancel'] = 'Avbryt ändring av e-postadress';
 $string['emailchangepending'] = 'Aktivera ändringen av din e-postadress. Öppna länken som du har fått i {$a->preference_newemail}.';
 $string['emailnowexists'] = 'Den e-postadress som du försökte lägga till till din profil har tilldelats någon annan efter din ursprungliga begäran. Denna begäran har härmed avbrutits men du kan pröva igen med en annan adress.';
 $string['emailupdate'] = 'Uppdatering av e-postadress';
-$string['emailupdatemessage'] = 'Käre/a  {$a->fullname},
-Du har begärt en ändring av din e-postadress för ditt användarkonto på  {$a->site}. Var snäll och öppna länken nedan i din webbläsare för att bekräfta den här ändringen.
+$string['emailupdatemessage'] = 'Hej {$a->fullname},
+du har begärt en ändring av din e-postadress för ditt användarkonto på {$a->site}. För att ändringen ska gälla behöver du bekräfta den genom att öppna länken nedan i din webbläsare.
 
- {$a->url},';
-$string['emailupdatesuccess'] = 'Användaren <em>{$a->fullname}</em>s e-postadress har framgångsrikt uppdaterats till <em>{$a->email}</em>.';
+{$a->url}
+
+{$a->supportemail}';
+$string['emailupdatesuccess'] = 'Användaren <em>{$a->fullname}</em>s e-postadress har uppdaterats till <em>{$a->email}</em>.';
 $string['emailupdatetitle'] = 'Bekräftelse av uppdatering av e-postadress vid {$a->site}';
 $string['errormaxconsecutiveidentchars'] = 'Lösenord måste ha som mest {$a} på varandra följande identiska tecken.';
 $string['errorminpassworddigits'] = 'Lösenord måste innehålla minst {$a} siff/ror';
@@ -108,11 +111,11 @@ $string['eventuserloginfailed'] = 'Inloggning misslyckades';
 $string['forcechangepassword'] = 'Tvinga fram ändring av lösenord';
 $string['forcechangepassword_help'] = 'Tvinga användare att byta lösenord nästa gång de loggar in på Moodle.';
 $string['forcechangepasswordfirst_help'] = 'Tvinga användare att byta lösenord första gången som de loggar in på Moodle.';
-$string['forgottenpassword'] = 'Om du matar in en URL här så kommer den att användas som sidan för att återvinna förlorade lösenord på den här webbplatsen. Detta är avsett för webbplatser där lösenord hanteras helt och hållet utanför Moodle. Låt detta vara tomt om du vill använda den förvalda standardmetoden för att återvinna lösenord.';
+$string['forgottenpassword'] = 'Om du anger en URL här kommer den att användas som återställningssida för förlorade lösenord för den här webbplatsen. Detta är avsett för webbplatser där lösenord hanteras helt utanför Moodle. Lämna detta tomt om du vill använda standardfunktionen för återställning av lösenord.';
 $string['forgottenpasswordurl'] = 'URL för förlorade lösenord';
 $string['getrecaptchaapi'] = 'För att använda reCAPTCHA måste du hämta en API-nyckel från <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Knapp för gästinloggning';
-$string['incorrectpleasetryagain'] = 'Felaktigt. Var snäll och försök igen.';
+$string['incorrectpleasetryagain'] = 'Fel. Vänligen försök igen.';
 $string['infilefield'] = 'Det måste finnas ett fält i filen';
 $string['informminpassworddigits'] = 'minst {$a} siffra/or';
 $string['informminpasswordlength'] = 'minst {$a} tecken';
@@ -128,16 +131,16 @@ $string['limitconcurrentlogins_desc'] = 'Om aktiverat är antalet samtidiga webb
 $string['locked'] = 'Låst';
 $string['md5'] = 'MD5-hash';
 $string['nopasswordchange'] = 'Det går inte att ändra lösenordet';
-$string['nopasswordchangeforced'] = 'Du kan inte gå vidare utan att ändra ditt lösenord, men det finns inte någon sida tillgänglig för att ändra det. Var snäll och kontakta din administratör för Moodle.';
+$string['nopasswordchangeforced'] = 'Du kan inte gå vidare utan att ändra ditt lösenord, men det finns inte någon sida tillgänglig för att ändra det. V.g. kontakta din Moodle-administratör.';
 $string['noprofileedit'] = 'Det går inte att redigera profilen';
 $string['ntlmsso_attempting'] = 'Försöker med single sign-on via NTLM...';
 $string['ntlmsso_failed'] = 'Den automatiska inloggningen misslyckades. Försök med den vanliga inloggningssidan...';
 $string['ntlmsso_isdisabled'] = 'NTLM SSO är inaktiverat';
 $string['passwordhandling'] = 'Administration av fält för lösenord';
 $string['plaintext'] = 'Ren text';
-$string['pluginnotenabled'] = 'Plugin-programmet för autentisering \'{$a}\' är inte aktiverat.';
-$string['pluginnotinstalled'] = 'Plugin-programmet för autentisering \'{$a}\' är inte installerat.';
-$string['potentialidps'] = 'Logga in på ditt konto med:';
+$string['pluginnotenabled'] = 'Pluginmodulen "{$a}" för autentisering är inte aktiverad.';
+$string['pluginnotinstalled'] = 'Plugin "{$a}" för autentisering är inte installerad.';
+$string['potentialidps'] = 'Logga in med:';
 $string['privacy:metadata:userpref:createpassword'] = 'Indikerar att ett lösenord ska genereras för användaren';
 $string['privacy:metadata:userpref:forcepasswordchange'] = 'Indikerar om användaren behöver byta lösenord vid inloggning';
 $string['privacy:metadata:userpref:loginfailedcount'] = 'Antalet misslyckade inloggningar';
@@ -147,17 +150,18 @@ $string['privacy:metadata:userpref:loginlockout'] = 'Om användarens konto är l
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Indikerar att användarens konto aldrig får låsas';
 $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Om låst är detta hemligheten användaren måste använda för att låsa upp sitt konto';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'CAPATCHA är till för att förhindra missbruk av automatiserade program. Ange orden i rutan i rätt ordning och separerade med ett mellanslag.
+$string['recaptcha_help'] = 'CAPTCHA används för att förhindra missbruk av automatiserade program. Följ anvisningarna för att verifiera att du är en person. Det kan vara en ruta att markera, tecken som visas i en bild som du måste ange eller en uppsättning bilder att välja mellan.
 
-Om du inte är säker på vilka ord det är kan du försöka med att få en ny CAPATCHA eller en audio CAPATCHA.';
+Om du inte är säker på vad bilderna föreställer kan du prova att få en annan CAPTCHA eller en ljud-CAPTCHA.';
 $string['security_question'] = 'Säkerhetsfråga';
 $string['selfregistration'] = 'Själv-registrering';
-$string['selfregistration_help'] = 'Välj vilket plugin-program för autentisering som ska hantera själv-registrering.';
+$string['selfregistration_help'] = 'Om en pluginmodul för autentisering, till exempel e-postbaserad självregistrering, väljs, blir det möjligt för potentiella användare att registrera sig och skapa konton. Detta resulterar i möjligheten att spammare skapar konton för att använda foruminlägg, blogginlägg etc. för skräppost. För att undvika denna risk bör självregistrering inaktiveras eller begränsas via inställningen <em>Tillåtna e-postdomäner</em>.';
+$string['settingmigrationmismatch'] = 'Värden som inte matchar upptäcktes då plugin-inställningsnamnen korrigerades! Autentiseringsmodulen \'{$a->plugin}\' hade inställningen \'{$a->setting}\' satt till \'{$a->legacy}\' under det äldre namnet och till \'{$a->current}\' under det aktuella namnet. Det senare värdet har angetts som det giltiga, men du bör kontrollera och bekräfta att detta är det som förväntas.';
 $string['sha1'] = 'SHA-1 grind (hash)';
 $string['showguestlogin'] = 'Du kan gömma eller visa knappen för inloggning för gäster på sidan för inloggning.';
 $string['stdchangepassword'] = 'Använd standardsidan för att byta lösenord';
-$string['stdchangepassword_expl'] = 'Om det externa systemet för autentisering tillåter ändring av lösenord via Moodle så ska du ändra detta till \'Yes\' (Ja). Den här inställningen har förträde över inställningen \'URL till sida för att ändra lösenord\'.';
-$string['stdchangepassword_explldap'] = 'OBS! Vi rekommenderar att du använder LDAP via en SSL-krypterad kanal (ldaps://) om du använder en fjärrserver för LDAP.';
+$string['stdchangepassword_expl'] = 'Om det externa autentiseringssystemet tillåter lösenordsändringar via Moodle anger du den här inställningen till "Ja". Den här inställningen åsidosätter inställningen under "URL till sida för att ändra lösenord".';
+$string['stdchangepassword_explldap'] = 'OBS! Det är rekommenderat att använda LDAP över en SSL-krypterad tunnel (ldaps://) om LDAP-servern är extern.';
 $string['suspended'] = 'Avstängt konto';
 $string['suspended_help'] = 'Avstängda användarkonton kan inte användas för inloggning eller för att använda webbplatsen samt att alla utgående meddelanden förkastas.';
 $string['testsettings'] = 'Testa inställningar';
@@ -171,4 +175,4 @@ $string['update_onupdate'] = 'Vid uppdatering';
 $string['user_activatenotsupportusertype'] = 'auth: ldap user_activate() stödjer inte vald användartyp: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: ldap user_disable() stödjer inte vald användartyp (..ännu)';
 $string['username'] = 'Användarnamn';
-$string['username_help'] = 'OBS att några plugin-program för autentisering inte tillåter att du byter lösenord.';
+$string['username_help'] = 'Tänk på att vissa autentiseringsplugin inte tillåter att du ändrar användarnamnet.';

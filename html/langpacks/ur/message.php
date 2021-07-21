@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message', language 'ur', version '3.8'.
+ * Strings for component 'message', language 'ur', version '3.11'.
  *
  * @package     message
  * @category    string

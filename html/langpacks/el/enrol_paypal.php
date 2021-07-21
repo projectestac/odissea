@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'el', version '3.8'.
+ * Strings for component 'enrol_paypal', language 'el', version '3.11'.
  *
  * @package     enrol_paypal
  * @category    string
@@ -53,7 +53,7 @@ $string['mailteachers'] = 'Ενημέρωση καθηγητών';
 $string['messageprovider:paypal_enrolment'] = 'Μηνύματα εγγραφής PayPal';
 $string['nocost'] = 'Δεν υπάρχει κόστος που σχετικό με την εγγραφή σε αυτό το μάθημα!';
 $string['paypal:config'] = 'Παραμετροποίηση περιπτώσεων εγγραφής μέσω PayPal';
-$string['paypal:manage'] = 'Διαχείριση εγγεγραμένων χρηστών';
+$string['paypal:manage'] = 'Διαχείριση εγγεγραμμένων χρηστών';
 $string['paypal:unenrol'] = 'Ακύρωση εγγραφής χρηστών στο μάθημα';
 $string['paypal:unenrolself'] = 'Ακύρωση εγγραφής στο μάθημα από τον ίδιο';
 $string['paypalaccepted'] = 'Αποδεκτές οι πληρωμές μέσω PayPal';
@@ -91,4 +91,4 @@ $string['sendpaymentbutton'] = 'Αποστολή πληρωμής με Paypal';
 $string['status'] = 'Επιτρέπονται εγγραφές PayPal';
 $string['status_desc'] = 'Επιτρέπεται στους χρήστες να χρησιμοποιούν PayPal για να εγγραφούν στο μάθημα από προεπιλογή.';
 $string['transactions'] = 'Συναλλαγές PayPal';
-$string['unenrolselfconfirm'] = 'Είστε βεβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας στο μάθημα «{$a}»;';
+$string['unenrolselfconfirm'] = 'Είστε βέβαιοι ότι θέλετε να ακυρώσετε την εγγραφή σας στο μάθημα «{$a}»;';

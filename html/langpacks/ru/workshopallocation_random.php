@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'ru', version '3.8'.
+ * Strings for component 'workshopallocation_random', language 'ru', version '3.11'.
  *
  * @package     workshopallocation_random
  * @category    string
@@ -43,6 +43,7 @@ $string['numofselfallocatedsubmissions'] = 'Самооцениваемых ра�
 $string['numperauthor'] = 'по авторам';
 $string['numperreviewer'] = 'по рецензентам';
 $string['pluginname'] = 'Случайное распределение';
+$string['privacy:metadata'] = 'Плагин случайного распределения не хранит никаких личных данных. Актуальные персональные данные о том, кто кого будет оценивать, хранятся в самом модуле Семинара, и они составляют основу для экспорта деталей оценок.';
 $string['randomallocationdone'] = 'Случайное распределение сделано';
 $string['removecurrentallocations'] = 'Удалить текущие распределения';
 $string['resultnomorepeers'] = 'Более нет доступных рецензентов';

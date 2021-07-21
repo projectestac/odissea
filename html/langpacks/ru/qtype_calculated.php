@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculated', language 'ru', version '3.8'.
+ * Strings for component 'qtype_calculated', language 'ru', version '3.11'.
  *
  * @package     qtype_calculated
  * @category    string
@@ -133,7 +133,7 @@ $string['synchronize'] = 'Синхронизировать данные из о�
 $string['synchronizeno'] = 'Не синхронизировать';
 $string['synchronizeyes'] = 'Синхронизировать';
 $string['synchronizeyesdisplay'] = 'Синхронизировать и отобразить названия общих наборов данных как префикс названия вопроса';
-$string['tolerance'] = 'Погрешность &plusmn;';
+$string['tolerance'] = 'Погрешность ±';
 $string['tolerancetype'] = 'Тип';
 $string['trueanswerinsidelimits'] = 'Правильный ответ: {$a->correct} в пределах диапазона правильного значения {$a->true}';
 $string['trueansweroutsidelimits'] = '<span class="error">ОШИБКА! Правильный ответ: {$a->correct} вне пределов диапазона правильного значения {$a->true}</span>';

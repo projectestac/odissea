@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'pt', version '3.8'.
+ * Strings for component 'block_section_links', language 'pt', version '3.11'.
  *
  * @package     block_section_links
  * @category    string
@@ -38,5 +38,7 @@ $string['numsections2_help'] = 'Quando o número de secções na disciplina atin
 $string['pluginname'] = 'Hiperligações de secção';
 $string['privacy:metadata'] = 'O bloco Hiperligações de secção apenas mostra dados armazenados noutros locais.';
 $string['section_links:addinstance'] = 'Adicionar um novo bloco Hiperligações de secção';
+$string['showsectionname'] = 'Mostrar nome da secção';
+$string['showsectionname_help'] = 'Mostrar nome e o número da secção';
 $string['topics'] = 'Tópicos';
 $string['weeks'] = 'Semanas';

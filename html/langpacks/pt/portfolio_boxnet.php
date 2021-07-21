@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'pt', version '3.8'.
+ * Strings for component 'portfolio_boxnet', language 'pt', version '3.11'.
  *
  * @package     portfolio_boxnet
  * @category    string
@@ -34,7 +34,7 @@ $string['folderlistfailed'] = 'Não foi possível obter a lista de pastas do sit
 $string['missinghttps'] = 'HTTPS necessários';
 $string['missinghttps_help'] = 'O Box só irá funcionar com um site HTTPS ativado.';
 $string['missingoauthkeys'] = 'Falta ID e senha do cliente';
-$string['missingoauthkeys_help'] = 'Não há ID nem senha de cliente configurado para este módulo. Poderá obtê-los a partir da página de desenvolvimento Box.';
+$string['missingoauthkeys_help'] = 'Não há ID nem senha de cliente configurados para este módulo. Poderá obtê-los a partir da página de desenvolvimento Box.';
 $string['newfolder'] = 'Novo ficheiro onde devem ser colocados os ficheiros';
 $string['noauthtoken'] = 'Não foi possível obter um token de autenticação para esta sessão';
 $string['notarget'] = 'Deve indicar uma pasta que já exista ou um novo onde possam ser colocados os ficheiros';

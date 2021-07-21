@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'gl', version '3.8'.
+ * Strings for component 'workshopform_rubric', language 'gl', version '3.11'.
  *
  * @package     workshopform_rubric
  * @category    string
@@ -37,6 +37,6 @@ $string['levelgroup'] = 'Cualificación de nivel e definición';
 $string['levels'] = 'Niveis';
 $string['mustbeunique'] = 'As cualificacións do nivel deben ser únicas dentro dun criterio';
 $string['mustchooseone'] = 'Ten que seleccionar un destes elementos';
-$string['mustdefinelevel'] = 'Requírese cando menos un nivel';
-$string['pluginname'] = 'Rubrica';
-$string['privacy:metadata'] = 'O engadido Rúbrica só almacena os detalles do formulario de avaliación. Os datos persoais reais de como se encheu o formulario almacénanse no propio módulo Workshop (Obradoiro), e engádense ás avaliacións exportadas.';
+$string['mustdefinelevel'] = 'É obrigatorio polo menos un nivel';
+$string['pluginname'] = 'Rúbrica';
+$string['privacy:metadata'] = 'O engadido de Rúbrica só almacena os detalles do formulario de avaliación. O propio módulo de Obradoiro almacena os datos persoais auténticos do cumprimento do formulario e están anexados ás avaliacións exportadas.';

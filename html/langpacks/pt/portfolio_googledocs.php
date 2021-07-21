@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'pt', version '3.8'.
+ * Strings for component 'portfolio_googledocs', language 'pt', version '3.11'.
  *
  * @package     portfolio_googledocs
  * @category    string
@@ -30,7 +30,7 @@ $string['noauthtoken'] = 'Um token de autenticação não foi recebido pelo Goog
 $string['nooauthcredentials'] = 'Credencias OAuth necessárias.';
 $string['nooauthcredentials_help'] = 'Para utilizar o módulo do portefólio do Google Drive tem de configurar as credenciais OAuth nas configurações do portefólio.';
 $string['nosessiontoken'] = 'Não existe uma sessão token de prevenção de exportação para o google.';
-$string['oauthinfo'] = '<p>Para utilizar este módulo, tem de registar o seu site com o Google, tal como indicado na documentação <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p> Como parte do processo de registo, terá de introduzir o seguinte URL como \'URLs Redirecionados Autorizados\':</p><p>{$a->callbackurl}</p><p>Uma vez registado, ser-lhe-á atribuída uma identidade de cliente e senha que podem ser usadas para configurar todos os módulos do Google Drive e do Picasa.</p>';
+$string['oauthinfo'] = '<p>Para utilizar este modulo, tem de registar o seu site com a Google, tal como descrito na documentação <a href="{$a->docsurl}">Configuração Google OAuth 2.0</a>.</p><p>Como parte do processo de registo, terá de indicar o seguinte URL como \'URIs de redirecionamento autorizados\':</p><p>{$a->callbackurl}</p><p>Uma vez registado, ser-lhe-á atribuído um  ID de cliente e uma Chave secreta que podem ser utilizados para configurar todos os módulos Google Drive e Picasa.</p>';
 $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'Este módulo envia dados externamente para uma conta Google. Não armazena dados localmente.';
 $string['privacy:metadata:data'] = 'Dados pessoais transmitidos através do subsistema portefólio.';

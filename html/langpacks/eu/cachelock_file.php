@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachelock_file', language 'eu', version '3.8'.
+ * Strings for component 'cachelock_file', language 'eu', version '3.11'.
  *
  * @package     cachelock_file
  * @category    string

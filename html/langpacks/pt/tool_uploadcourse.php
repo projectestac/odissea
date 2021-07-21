@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploadcourse', language 'pt', version '3.8'.
+ * Strings for component 'tool_uploadcourse', language 'pt', version '3.11'.
  *
  * @package     tool_uploadcourse
  * @category    string
@@ -53,33 +53,39 @@ $string['courseexistsanduploadnotallowed'] = 'A  disciplina existe e não é per
 $string['coursefile'] = 'Ficheiro';
 $string['coursefile_help'] = 'O ficheiro tem de ser um ficheiro CSV.';
 $string['courseidnumberincremented'] = 'Número ID da disciplina incrementado {$a->from} -> {$a->to}';
-$string['courseprocess'] = 'Processo da disciplina';
+$string['courseprocess'] = 'Processamento da disciplina';
 $string['courserenamed'] = 'Disciplina renomeada';
 $string['courserenamingnotallowed'] = 'Não é permitido renomear disciplina';
 $string['coursereset'] = 'Disciplina reiniciada';
 $string['courseresetnotallowed'] = 'Não é permitido reiniciar disciplina';
 $string['courserestored'] = 'Disciplina restaurada';
 $string['coursescreated'] = 'Disciplinas criadas: {$a}';
-$string['coursesdeleted'] = 'Disciplinas eliminadas: {$a}';
-$string['courseserrors'] = 'Erros das disciplinas: {$a}';
+$string['coursesdeleted'] = 'Disciplinas apagadas: {$a}';
+$string['courseserrors'] = 'Disciplinas com erros: {$a}';
 $string['courseshortnamegenerated'] = 'Nomes curtos de disciplinas gerados: {$a}';
 $string['courseshortnameincremented'] = 'Nomes curtos de disciplinas incrementados {$a->from} -> {$a->to}';
 $string['coursestotal'] = 'Total de disciplinas: {$a}';
-$string['coursesupdated'] = 'Disciplina atualizada: {$a}';
+$string['coursesupdated'] = 'Disciplinas atualizadas: {$a}';
 $string['coursetemplatename'] = 'Restaurar a partir desta disciplina depois do carregamento';
 $string['coursetemplatename_help'] = 'Indique o nome curto de uma disciplina existente para usar como um modelo na criação de todas as disciplinas';
 $string['coursetorestorefromdoesnotexist'] = 'A disciplina a partir da qual pretende fazer o restauro não existe';
 $string['courseupdated'] = 'Disciplina atualizada';
-$string['createall'] = 'Criar todas e incrementar o nome curto, se necessário.';
-$string['createnew'] = 'Criar apenas disciplinas novas, ignorar as existentes';
-$string['createorupdate'] = 'Criar novas disciplinas ou atualizar as existentes';
+$string['createall'] = 'Criar todas e incrementar o nome curto, se necessário';
+$string['createnew'] = 'Criar apenas as novas disciplinas, ignorar as existentes';
+$string['createorupdate'] = 'Criar as novas disciplinas ou atualizar as existentes';
 $string['csvdelimiter'] = 'Delimitador CSV';
 $string['csvdelimiter_help'] = 'Delimitador CSV do ficheiro CSV (Comma Separated Values, valores separados por vírgulas).';
 $string['csvfileerror'] = 'Algo de errado se passa com o formato do ficheiro CSV. Por favor, verifique a correspondência entre o número de cabeçalhos e colunas, e que o delimitador e ficheiro de codificação estão corretos: {$a}';
 $string['csvline'] = 'Linha';
+$string['customfieldinvalid'] = 'O campo personalizado \'{$a}\' está em branco ou contém dados inválidos';
 $string['defaultvalues'] = 'Valores predefinidos da disciplina';
+$string['defaultvaluescustomfieldcategory'] = 'Valores predefinidos para \'{$a}\'';
+$string['downloadcontentnotallowed'] = 'Não é permitido configurar o descarregamento do conteúdo da disciplina';
 $string['encoding'] = 'Codificação';
 $string['encoding_help'] = 'Codificação do ficheiro CSV.';
+$string['errorcannotcreateorupdateenrolment'] = 'Não é possível criar ou atualizar o método de inscrição \'{$a}\'';
+$string['errorcannotdeleteenrolment'] = 'Não é possível apagar o método de inscrição \'{$a}\'';
+$string['errorcannotdisableenrolment'] = 'Não é possível desativar o método de inscrição \'{$a}\'';
 $string['errorwhiledeletingcourse'] = 'Erro ao eliminar a disciplina';
 $string['errorwhilerestoringcourse'] = 'Erro ao restaurar a disciplina';
 $string['generatedshortnamealreadyinuse'] = 'O nome curto gerado já está a ser usado';
@@ -90,6 +96,7 @@ $string['importoptions'] = 'Opções de importar disciplina';
 $string['invalidbackupfile'] = 'Ficheiro de cópia de segurança inválido';
 $string['invalidcourseformat'] = 'Formato de disciplina inválido';
 $string['invalidcsvfile'] = 'Entrada inválida de ficheiro CSV';
+$string['invaliddownloadcontent'] = 'Descarregamento inválido do valor do conteúdo da disciplina';
 $string['invalidencoding'] = 'Codificação inválida';
 $string['invalideupdatemode'] = 'O modo de atualização selecionado é inválido';
 $string['invalidfullnametoolong'] = 'O campo \'Nome completo da disciplina\' está limitado a {$a} caracteres';
@@ -103,7 +110,7 @@ $string['missingshortnamenotemplate'] = 'Não foram definidos o nome curto e o m
 $string['mode'] = 'Modo de carregamento';
 $string['mode_help'] = 'Esta opção especifica se as disciplinas podem ser criadas e/ou atualizadas.';
 $string['nochanges'] = 'Sem alterações';
-$string['pluginname'] = 'Carregamento de Disciplina';
+$string['pluginname'] = 'Carregar disciplina';
 $string['preview'] = 'Pré-visualização';
 $string['privacy:metadata'] = 'O módulo Carregar Disciplina não armazena dados pessoais.';
 $string['reset'] = 'Reiniciar disciplina depois do carregamento';
@@ -117,13 +124,13 @@ $string['shortnametemplate_help'] = 'O nome curto da disciplina é exibido na na
 $string['templatefile'] = 'Restaurar a partir deste ficheiro depois do carregamento';
 $string['templatefile_help'] = 'Selecione um ficheiro para ser usado como modelo para a criação de todas as disciplinas.';
 $string['unknownimportmode'] = 'Modo de importação desconhecido';
-$string['updatemissing'] = 'Preencha os itens em falta a partir dos dados do CSV e das predefinições';
+$string['updatemissing'] = 'Preencher os itens em falta a partir dos dados do CSV e dos predefinidos';
 $string['updatemode'] = 'Modo de atualização';
 $string['updatemode_help'] = 'Se permitir que as disciplinas sejam atualizadas, é necessário indicar com o que é que será feita a atualização das disciplinas';
 $string['updatemodedoessettonothing'] = 'O modo de atualização não permite que nada seja atualizado';
 $string['updateonly'] = 'Apenas atualizar disciplinas existentes';
-$string['updatewithdataonly'] = 'Atualizar apenas com dados CSV';
-$string['updatewithdataordefaults'] = 'Atualizar com dados CSV e predefinições';
+$string['updatewithdataonly'] = 'Atualizar apenas com os dados do CSV';
+$string['updatewithdataordefaults'] = 'Atualizar com os dados do CSV e dos predefinidos';
 $string['uploadcourses'] = 'Carregar disciplinas';
 $string['uploadcourses_help'] = 'O carregamento das disciplinas pode ser feito via ficheiro de texto. O formato deste ficheiro deve estar de acordo com as seguintes indicações:
 

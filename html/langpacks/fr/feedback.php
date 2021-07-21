@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'fr', version '3.8'.
+ * Strings for component 'feedback', language 'fr', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -57,6 +57,7 @@ $string['complete_the_form'] = 'Répondre aux questions';
 $string['completed'] = 'Terminé';
 $string['completed_feedbacks'] = 'Réponses envoyées';
 $string['completedon'] = 'Terminé le {$a}';
+$string['completiondetail:submit'] = 'Envoyer un feedback';
 $string['completionsubmit'] = 'Afficher comme terminé quand l\'utilisateur a envoyé le feedback';
 $string['configallowfullanonymous'] = 'Si ce réglage est activé, les activités feedback sur la page d\'accueil pourront être effectuées par les utilisateurs sans nécessiter d\'authentification.';
 $string['confirmdeleteentry'] = 'Voulez-vous vraiment supprimer cette saisie ?';
@@ -108,7 +109,7 @@ $string['emailteachermail'] = '{$a->username} a terminé l\'activité feedback �
 Vous pouvez la voir ici :
 
 {$a->url}';
-$string['emailteachermailhtml'] = '<p>{$a->username} a effectué l\'activité feedback « <i>{$a->feedback}</i> ».</p>
+$string['emailteachermailhtml'] = '<p>{$a->username} a effectué l\'activité feedback « <em>{$a->feedback}</em> ».</p>
 <p>Vous pouvez la consulter <a href="{$a->url}">sur le site</a>.</p>';
 $string['entries_saved'] = 'Vos réponses ont été enregistrées. Merci.';
 $string['eventresponsedeleted'] = 'Réponse supprimée';
@@ -256,7 +257,7 @@ $string['searchcourses'] = 'Rechercher les cours';
 $string['searchcourses_help'] = 'Rechercher le code ou le nom du(des) cours que vous voulez associer à ce feedback';
 $string['selected_dump'] = 'Les index sélectionnés de la variable $SESSION sont indiqués ci-dessous :';
 $string['send'] = 'Envoyer';
-$string['send_message'] = 'Envoyer message';
+$string['send_message'] = 'Envoyer une notification';
 $string['show_all'] = 'Tout afficher';
 $string['show_analysepage_after_submit'] = 'Afficher la page d\'analyse';
 $string['show_entries'] = 'Afficher les réponses';

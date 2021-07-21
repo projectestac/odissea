@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'nl', version '3.8'.
+ * Strings for component 'lti', language 'nl', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -42,6 +42,8 @@ $string['activate'] = 'Activeer';
 $string['activatetoadddescription'] = 'Je moet deze tool activeren voor je een beschrijving kan toevoegen.';
 $string['active'] = 'Actief';
 $string['activity'] = 'Activiteit';
+$string['add_ltiadv'] = 'Voeg toe LTI Advantage';
+$string['add_ltilegacy'] = 'Voeg verouderde LTI toe';
 $string['addnewapp'] = 'Schakel de externe applicatie in';
 $string['addserver'] = 'Voeg een vertrouwde server toe';
 $string['addtype'] = 'Voeg voorgeconfigureerde tool toe';
@@ -62,6 +64,7 @@ $string['basicltifieldset'] = 'Aangepast voorbeeld veldset';
 $string['basicltiintro'] = 'Activiteitsbeschrijving';
 $string['basicltiname'] = 'Naam activiteit';
 $string['basicltisettings'] = 'Basis Learning Tool Interoperability (LTI) instellingen';
+$string['cachedef_keyset'] = 'Caches de sleutelset-informatie van tools';
 $string['cancel'] = 'Annuleer';
 $string['cancelled'] = 'Geannuleerd';
 $string['cannot_delete'] = 'Je mag deze tool configuratie niet verwijderen.';
@@ -85,7 +88,11 @@ $string['configtypes'] = 'LTI applicaties inschakelen';
 $string['configured'] = 'Geconfigureerd';
 $string['confirmtoolactivation'] = 'Bent je er zeker van dat je deze tool wilt activeren?';
 $string['contentitem'] = 'Inhoud-item bericht';
+$string['contentitem_deeplinking'] = 'Ondersteunt Deep Linking (Content-Item-Message)';
+$string['contentitem_deeplinking_help'] = 'Indien ingeschakeld zal de optie "Selecteer inhoud" beschikbaar zijn bij het toevoegen van een externe tool.';
 $string['contentitem_help'] = 'Indien ingeschakeld zal de optie "Selecteer inhoud" beschikbaar zijn bij het toevoegen van een externe tool.';
+$string['contentitem_multiple_description'] = 'Volgende items zullen aan je cursus toegevoegd worden:';
+$string['contentitem_multiple_graded'] = 'Beoordeelde activiteit (Maximumcijfer: {$a})';
 $string['course_tool_types'] = 'Cursus tools';
 $string['courseactivitiesorresources'] = 'Cursusactiviteiten en bronnen';
 $string['courseid'] = 'Cursus ID nummer';
@@ -112,6 +119,7 @@ $string['default_launch_container_help'] = 'De lanceringscontainer beïnvloedt d
 * **Embed, zonder blokken** - De tool wordt getoond binnen het bestaande Moodle venster, met enkel de navigatie bediening bovenaan de pagina.
 * **Nieuw venster** - De tool opent in een nieuw venster, en neemt de volledige ruimte in. Afhankelijk van de browser zal het openen in een nieuwe tab of in een pop-upvenster. De kans bestaat dat browsers het openen van een nieuw venster zullen verhinderen.';
 $string['delegate'] = 'Delegeer aan leraar';
+$string['delegate_tool'] = 'Zoals opgegeven in Deep Linking definitie of delegeer naar leraar';
 $string['delete'] = 'Verwijder';
 $string['delete_confirmation'] = 'Ben je zeker dat je deze voorgeconfigureerde tool wil verwijderen?';
 $string['deletetype'] = 'Verwijder de voorgeconfigureerde tool';
@@ -132,6 +140,14 @@ $string['donot'] = 'Verstuur dit niet';
 $string['donotaccept'] = 'Aanvaard dit niet';
 $string['donotallow'] = 'Sta dit niet toe';
 $string['duplicateregurl'] = 'De registratie-URL is al in gebruik';
+$string['dynreg_update_btn_new'] = 'Registreer als nieuwe externe tool';
+$string['dynreg_update_btn_update'] = 'Aanpassen';
+$string['dynreg_update_name'] = 'Tool naam';
+$string['dynreg_update_notools'] = 'Geen tools in context.';
+$string['dynreg_update_text'] = 'Er zijn bestaande tools verbonden aah het registratiedomein. Wil je bestaande geïnstalleerde tools aanpassen of een nieuwe externe tool maken?';
+$string['dynreg_update_url'] = 'Basis-URL';
+$string['dynreg_update_version'] = 'LTI-versie';
+$string['dynreg_update_warn_dupdomain'] = 'Het wordt afgeraden om meerdere externe tools onder hetzelfde domein te hebben.';
 $string['editdescription'] = 'Klik hier om deze tool een beschijving te geven';
 $string['edittype'] = 'Bewerk voorgeconfigureerde tool';
 $string['embed'] = 'Embed';
@@ -182,7 +198,7 @@ Bijkomend zullen ook alle web service verzoeken van de tool provider gebruik mak
 Indien je voor deze optie kiest, ga dan eerst na of de Moodle site en de tool provider SSL ondersteunen.';
 $string['forced_help'] = 'Deze instelling werd opgelegd in een tool configuratie op niveau van de cursus of de site. Je kunt dit niet veranderen vanuit deze interface.';
 $string['generaltool'] = 'Algemene tool';
-$string['global_tool_types'] = 'Globale voorgeconfigureerde tools';
+$string['global_tool_types'] = 'Voorgeconfigureerde tools';
 $string['grading'] = 'Cijferlijst routing';
 $string['icon_url'] = 'URL icoontje';
 $string['icon_url_help'] = 'Deze icoon-URL maakt het mogelijk om het icoontje dat deze activiteit aanduidt in de cursuslijst te wijzigen. In plaats van gebruik te maken van het standaard LTI icoon, kan een icoontje worden gespecifieerd dat het type activiteit aanduidt.';
@@ -199,6 +215,10 @@ $string['initiatelogin'] = 'Inlog-URL initiëren';
 $string['initiatelogin_help'] = 'De tool-URL waarnaar aanvragen voor het starten van een login moeten worden verzonden. Deze URL is vereist voordat een bericht met succes naar de tool kan worden verzonden.';
 $string['invalidid'] = 'LTI ID was foutief';
 $string['jwtsecurity'] = 'LTI 1.3';
+$string['keytype'] = 'Type openbare sleutel';
+$string['keytype_help'] = 'De authenticatiemethode die wordt gebruikt om de tool te valideren.';
+$string['keytype_keyset'] = 'Sleutelset-URL';
+$string['keytype_rsa'] = 'RSA-sleutel';
 $string['launch_in_moodle'] = 'Starttool in Moodle';
 $string['launch_in_popup'] = 'Tool voor lancering in een pop-up';
 $string['launch_url'] = 'Tool-URL';
@@ -220,6 +240,8 @@ $string['leaveblank'] = 'Laat leeg als je ze niet nodig hebt';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Voeg cursusspecifieke tool-configuraties toe';
 $string['lti:addinstance'] = 'Voeg een nieuwe externe tool-activiteit toe';
+$string['lti:addmanualinstance'] = 'Voeg manueel voorgeconfigureerde tool toe';
+$string['lti:addpreconfiguredinstance'] = 'Voeg voorgeconfigureerde tool toe';
 $string['lti:admin'] = 'Wordt beheerder wanneer de tool wordt gestart';
 $string['lti:grade'] = 'Bekijk cijfers die door de externe tool gegeven zijn';
 $string['lti:manage'] = 'Wordt leraar wanneer de tool wordt gestart';
@@ -294,9 +316,15 @@ $string['optionalsettings'] = 'Optionele instellingen';
 $string['organization'] = 'Details van de organisatie';
 $string['organizationdescr'] = 'Beschrijving van de organisatie';
 $string['organizationid'] = 'ID van de organisatie';
+$string['organizationid_default'] = 'Standaard organisatie-ID';
+$string['organizationid_default_help'] = 'Te gebruiken standaardwaarde voor de organisatie-ID. Website-ID identificeert deze installatie van Moodle.';
 $string['organizationid_help'] = 'Een unieke identificatie voor deze Moodle instantie. Gewoonlijk wordt de DNS naam van de organisatie gebruikt.
 
 Indien je dit veld leeg laat, zal  de hostnaam van de Moodle site worden gebruikt als standaardwaarde.';
+$string['organizationidguid'] = 'Organisatie-ID';
+$string['organizationidguid_help'] = 'Een unieke ID voor deze Moodle-instantie die aan de tool is doorgegeven als de GUID van de platforminstantie.
+
+Als dit veld leeg wordt gelaten, wordt de standaardwaarde gebruikt.';
 $string['organizationurl'] = 'Organisatie-URL';
 $string['organizationurl_help'] = 'De basis URL van deze Moodle instantie.
 
@@ -352,6 +380,8 @@ $string['privacy:metadata:useridnumber'] = 'D ID-nummer van de gebruiker die toe
 $string['privacy:metadata:username'] = 'De gebruikersnaam van de gebruiker die toegang kreeg tot de LTI-Consumer';
 $string['publickey'] = 'Publieke sleutel';
 $string['publickey_help'] = 'De openbare sleutel (in PEM-indeling) die de tool biedt om handtekeningen van inkomende berichten en serviceverzoeken te verifiëren.';
+$string['publickeyset'] = 'Openbare sleutelset';
+$string['publickeyset_help'] = 'Openbare sleutelset van waaruit Moodle de openbare sleutel van de tool ophaalt om handtekeningen van inkomende berichten en serviceverzoeken te verifiëren.';
 $string['quickgrade'] = 'Snel beoordelen toestaan';
 $string['quickgrade_help'] = 'Indien ingeschakeld kunnen meerdere tools beoordeeld worden op één pagina. Voeg cijfers en commentaren toe en klik dan op de "Bewaar al mijn feedback"-knop om alle wijzigingen voor die pagina te bewaren.';
 $string['redirect'] = 'Je zult binnen enkele seconden doorverwezen worden. Indien niet, klik dan op de knop.';
@@ -429,6 +459,8 @@ $string['show_in_course_lti2'] = 'Tool-configuratie gebruik';
 $string['show_in_course_lti2_help'] = 'Deze tool kan getoond worden in de activiteitenkiezer zodat een leraar die kan kiezen om aan een cursus toe te voegen in een rolmenu voor voorgeconfigureerde tools.';
 $string['show_in_course_no'] = 'Niet weergeven, alleen gebruiken wanneer een juiste tool-URL wordt ingegeven';
 $string['show_in_course_preconfigured'] = 'Toon als voorgeconfigureerde tool wanneer een externe tool toegevoegd wordt.';
+$string['sitehost'] = 'Hostnaam van de website';
+$string['siteid'] = 'Website ID';
 $string['size'] = 'Parameters afmetingen';
 $string['submission'] = 'Inzending';
 $string['submissions'] = 'Inzendingen';

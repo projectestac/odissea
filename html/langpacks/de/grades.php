@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'de', version '3.8'.
+ * Strings for component 'grades', language 'de', version '3.11'.
  *
  * @package     grades
  * @category    string
@@ -190,6 +190,7 @@ $string['droplowestvalues'] = '{$a} niedrigste Werte entfernen';
 $string['dropped'] = 'herausgenommen';
 $string['dropxlowest'] = 'Die X niedrigsten <br />herausnehmen';
 $string['dropxlowestwarning'] = 'Anmerkung: Wenn Sie die Option "die X niedrigsten herausnehmen" verwenden, wird angenommen, dass alle Elemente der Kategorie die gleiche Punktzahl haben. Wenn die Punktwerte differieren, werden die Ergebnisse unkalkulierbar.';
+$string['duplicatedgradeitem'] = '{$a} (Kopie)';
 $string['duplicatescale'] = 'Skala duplizieren';
 $string['edit'] = 'Bearbeiten';
 $string['editcalculation'] = 'Berechnung bearbeiten';
@@ -224,6 +225,7 @@ $string['errorupdatinggradecategoryaggregation'] = 'Es ist ein Fehler beim Aktua
 $string['errorupdatinggradeitemaggregationcoef'] = 'Es ist ein Fehler beim Aktualisieren des Summenkoeffizients (Gewichtung oder Zusatzpunkte) des Bewertungselements mit der ID {$a->id} aufgetreten.';
 $string['eventgradedeleted'] = 'Bewertung gelöscht';
 $string['eventgradeitemcreated'] = 'Bewertungselement angelegt';
+$string['eventgradeitemdeleted'] = 'Bewertungselement gelöscht';
 $string['eventgradeitemupdated'] = 'Bewertungselement geändert';
 $string['eventgradelettercreated'] = 'Bewertungschreiben erstellt';
 $string['eventgradeletterdeleted'] = 'Bewerbungsschreiben gelöscht';
@@ -515,7 +517,7 @@ $string['missingitemtypeoreid'] = 'Der Array-Schlüssel (itemtype oder eid) des 
 $string['missingscale'] = 'Skala auswählen';
 $string['mode'] = 'Modus';
 $string['modgrade'] = 'Bewertung';
-$string['modgrade_help'] = 'Wählen Sie die Art der Bewertung für diese Aktivität aus. Wenn Sie z.B. Skala auswählen, steht ein DropDown-Feld mit einer Skala zur Auswahl zur Verfügung. Wenn Sie Punkt-Bewertung auswählen, so können Sie die Höchstpunktzahl für diese Aktivität auswählen.';
+$string['modgrade_help'] = 'Wählen Sie die Art der Bewertung aus, die für diese Aktivität verwendet wird. Wenn \'Skala\' ausgewählt ist, können Sie die Skala aus dem Dropdown-Menü auswählen. Wenn die Punktbewertung ausgewählt ist, können Sie die maximale Note eingeben, die für diese Aktivität verfügbar ist.';
 $string['modgradecantchangegradetype'] = 'Sie können den Typ nicht verändern, wenn bereits Bewertungen für dieses Element existieren.';
 $string['modgradecantchangegradetypemsg'] = 'Einige Bewertungen wurden bereits vergeben, so dass der Bewertungstyp nicht mehr verändert werden kann. Wenn Sie den Maximalwert ändern möchten, müssen Sie zuerst auswählen, ob vorhandene Bewertungen neu vergeben werden sollen oder nicht.';
 $string['modgradecantchangegradetyporscalemsg'] = 'Einige Bewertungen wurden bereits vergeben, so dass Bewertungstyp und -skala nicht mehr verändert werden können.';

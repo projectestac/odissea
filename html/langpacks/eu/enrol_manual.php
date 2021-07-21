@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'eu', version '3.8'.
+ * Strings for component 'enrol_manual', language 'eu', version '3.11'.
  *
  * @package     enrol_manual
  * @category    string
@@ -77,7 +77,7 @@ $string['status_desc'] = 'Baimendu ikastarorako sarbidea barruan matrikulatutako
 $string['status_help'] = 'Ezarpen honek erabiltzaileak eskuz matrikulatu ahalko diren zehazten du, baimenak dituen erabiltzaile batek ikastaroaren kudeaketa-ezarpenetan duen esteka baten bitartez.';
 $string['statusdisabled'] = 'Desgaituta';
 $string['statusenabled'] = 'Gaituta';
-$string['syncenrolmentstask'] = 'Eskuzko matrikulazioen sinkronizazio-zeregina';
+$string['syncenrolmentstask'] = 'Eskuzko matrikulazioen sinkronizazio ataza';
 $string['unenrol'] = 'Desmatrikulatu erabiltzailea';
 $string['unenrolselectedusers'] = 'Desmatrikulatu aukeratutako erabiltzaileak';
 $string['unenrolselfconfirm'] = 'Ziur al zaude "{$a}" ikastarotik desmatrikulatu nahi duzula?';

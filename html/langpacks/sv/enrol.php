@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'sv', version '3.8'.
+ * Strings for component 'enrol', language 'sv', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actenrolshhdr'] = 'Tillgängliga plugin-program för registrering';
+$string['actenrolshhdr'] = 'Tillgängliga pluginmoduler för registrering';
 $string['addinstance'] = 'Lägg till metod';
 $string['addinstanceanother'] = 'Lägg till metod och skapa en ny';
 $string['ajaxnext25'] = 'Nästa 25...';
 $string['ajaxoneuserfound'] = '1 användare hittades';
 $string['ajaxxmoreusersfound'] = 'Det hittades fler än {$a} användare.';
 $string['ajaxxusersfound'] = '{$a} användare hittades';
-$string['assignnotpermitted'] = 'Du har inte tillstånd eller kan inte tilldela roller i den här kursen';
+$string['assignnotpermitted'] = 'Du har inte behörighet, eller kan inte tilldela roller i den här kursen';
 $string['bulkuseroperation'] = 'Bulk användarhantering';
-$string['configenrolplugins'] = 'Var snäll och välj alla de obligatoriska plugin-programmen och arrangera dem sedan i lämplig ordning.';
+$string['configenrolplugins'] = 'Välj alla de obligatoriska pluginmodulerna och arrangera dem sedan i lämplig ordning.';
 $string['custominstancename'] = 'Anpassat namn på instans';
 $string['defaultenrol'] = 'Lägg till instans till nya kurser';
 $string['defaultenrol_desc'] = 'Det är möjligt att lägga till den här pluginmodulen till alla nya kurser som standard.';
@@ -63,7 +63,8 @@ $string['enrolmentnew'] = 'Ny registrering på {$a}';
 $string['enrolmentnewuser'] = '{$a->user} har registrerat sig på kursen "{$a->course}"';
 $string['enrolmentoptions'] = 'Registreringsalternativ';
 $string['enrolments'] = 'Registreringar';
-$string['enrolnotpermitted'] = 'Du har inte tillstånd eller har inte rätt att registrera någon på den här kursen.';
+$string['enrolmentupdatedforuser'] = 'Registreringen för användaren "{$a->fullname}" har uppdaterats';
+$string['enrolnotpermitted'] = 'Du har inte behörighet, eller har inte rätt att registrera någon på den här kursen.';
 $string['enrolperiod'] = 'Registreringens varaktighet';
 $string['enroltimecreated'] = 'Registrering skapad';
 $string['enroltimeend'] = 'Registrering avslutas';
@@ -93,7 +94,7 @@ $string['expirynotifyhour'] = 'Timme för att sända meddelande om registrering 
 $string['expirythreshold'] = 'Meddelandetröskel';
 $string['expirythreshold_help'] = 'Hur långt innan registreringens förfallande ska användare meddelas?';
 $string['extremovedaction'] = 'Extern avregistreringsåtgärd';
-$string['extremovedaction_help'] = 'Välj åtgärd att vidta då användarregistrering försvinner från extern källa för registrering. Notera att vissa användardata och inställningar rensas från kurs under avregistreringen.';
+$string['extremovedaction_help'] = 'Välj åtgärd att vidta då användarregistreringen försvinner från den extern källan för registreringen. Observera att vissa användardata och inställningar rensas från kursen vid avregistreringen.';
 $string['extremovedkeep'] = 'Behåll användare registrerad';
 $string['extremovedsuspend'] = 'Inaktivera kursregistrering';
 $string['extremovedsuspendnoroles'] = 'Inaktivera kursregistrering och ta bort roller';
@@ -115,7 +116,7 @@ $string['noexistingparticipants'] = 'Inga befintliga deltagare';
 $string['nogroup'] = 'Ingen grupp';
 $string['noguestaccess'] = 'Gäster inte kan komma i denna kurs, försök att logga in';
 $string['none'] = 'Inga';
-$string['notenrollable'] = 'Du kan inte registrera dig själv på denna kurs';
+$string['notenrollable'] = 'Du kan inte registrera dig själv på denna kurs.';
 $string['notenrolledusers'] = 'Övriga användare';
 $string['otheruserdesc'] = 'Följande användare är inte registrerade i kursen men har roller, ärvda eller tilldelade.';
 $string['participationactive'] = 'Aktiv';
@@ -152,11 +153,12 @@ $string['testsettingsheading'] = 'Testa registreringsinställningar - {$a}';
 $string['totalenrolledusers'] = '{$a} registrerade användare';
 $string['totalotherusers'] = '{$a} övriga användare';
 $string['totalunenrolledusers'] = '{$a} avregistrerade användare';
-$string['unassignnotpermitted'] = 'Du har inte tillstånd att frånta roller i denna kurs';
+$string['unassignnotpermitted'] = 'Du har inte behörighet att frånta roller i denna kurs';
 $string['unenrol'] = 'Avregistrera';
-$string['unenrolconfirm'] = 'Vill du verkligen avregistrera "{$a->user}" (tidigare inskriven via "{$a->enrolinstancename}") från "{$a->course}"?';
+$string['unenrolconfirm'] = 'Vill du verkligen avregistrera <b>{$a->user}</b> (tidigare registrerad via "{$a->enrolinstancename}") från "{$a->course}" ?';
+$string['unenrolleduser'] = 'Användare ”{$a->fullname}” avregistrerades från kursen';
 $string['unenrolme'] = 'Avregistrera mig från {$a}';
-$string['unenrolnotpermitted'] = 'Du har inte tillstånd eller kan inte avregistrera denna användare från denna kurs.';
+$string['unenrolnotpermitted'] = 'Du har inte behörighet, eller kan inte avregistrera denna användare från kursen.';
 $string['unenrolroleusers'] = 'Avregistrera användare';
 $string['uninstallmigrating'] = 'Migrerar "{$a}" registreringar';
 $string['unknowajaxaction'] = 'Okänd åtgärd begärdes';

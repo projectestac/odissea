@@ -4,17 +4,30 @@ require_once('agora_script_base.class.php');
 
 class script_restore_xtecadmin extends agora_script_base{
 
-    public $title = 'Restaura XTECadmin';
-    public $info = "Restaura l'usuari XTECadmin de la plataforma";
+    public $title = 'Restaura xtecadmin';
+    public $info = "Restaura l'usuari xtecadmin de la plataforma";
     public $cron = false;
     protected $test = true;
     public $cli = true;
     public $api = true;
-    protected $category = "Check and repair";
+    protected $category = 'Check and repair';
+
+    public function params(): array {
+        $params = [];
+        $params['password'] = optional_param('password', false, PARAM_TEXT);
+
+        return $params;
+    }
 
     protected function _execute($params = array(), $execute = true) {
         global $CFG, $DB, $OUTPUT, $agora;
-        $return = false;
+
+        if (empty($params['password'])) {
+            $this->output('Missing password. Restore of xtecadmin aborted', 'ERROR');
+            return false;
+        } else {
+            $password = (strlen($params['password']) == 32) ? $params['password'] : md5($params['password']);
+        }
 
         $xtecadmin = $DB->get_record('user', array('username' => 'xtecadmin', 'deleted' => 0));
         if (!$execute) {
@@ -39,14 +52,14 @@ class script_restore_xtecadmin extends agora_script_base{
 
         if (!$xtecadmin) {
             // Create xtecadmin
-            $xtecadmin = create_user_record('xtecadmin', $agora['xtecadmin']['password'], 'manual');
+            $xtecadmin = create_user_record('xtecadmin', $password, 'manual');
             mtrace('Xtecadmin created', '<br>');
         } else {
             mtrace('Xtecadmin exists', '<br>');
         }
 
         // Restore to its original settings
-        $xtecadmin->password = $agora['xtecadmin']['password'];
+        $xtecadmin->password = $password;
         $xtecadmin->firstname = 'Administrador/a';
         $xtecadmin->lastname = 'XTEC';
         $xtecadmin->email = $agora['xtecadmin']['mail'];

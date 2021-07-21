@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'de', version '3.8'.
+ * Strings for component 'workshop', language 'de', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'Beurteilungen schließen:';
+$string['activitydate:assessmentsclosed'] = 'Beurteilungen geschlossen:';
+$string['activitydate:assessmentsopen'] = 'Beurteilungen öffnen:';
+$string['activitydate:assessmentsopened'] = 'Beurteilungen geöffnet:';
+$string['activitydate:submissionsclose'] = 'Abgaben schließen:';
+$string['activitydate:submissionsclosed'] = 'Abgaben geschlossen:';
+$string['activitydate:submissionsopen'] = 'Abgaben öffnen:';
+$string['activitydate:submissionsopened'] = 'Abgaben geöffnet:';
 $string['aggregategrades'] = 'Bewertungen neu berechnen';
 $string['aggregation'] = 'Punkteberechnung';
 $string['allocate'] = 'Einreichungen zuordnen';
@@ -93,7 +101,7 @@ $string['configexamplesmode'] = 'Standardmodus für Beispielbeurteilungen in geg
 $string['configgrade'] = 'Standardwert max. Einreichungspunktzahl in gegenseitigen Beurteilungen';
 $string['configgradedecimals'] = 'Standardanzahl von Nachkommastellen bei der Anzeige von Punkten.';
 $string['configgradinggrade'] = 'Standardwert für max. Bewertungspunktzahl für Beurteilungen in gegenseitigen Beurteilungen';
-$string['configmaxbytes'] = 'Standardwert für die Größe von Dateianhängen an Einreichungen für alle gegenseitigen Beurteilungen dieser Website (Kurseinstellungen und andere lokale Einstellungen gelten weiter)';
+$string['configmaxbytes'] = 'Standardwert für die maximale Dateigröße bei Einreichungen für alle gegenseitigen Beurteilungen dieser Website (vorbehaltlich Kurseinstellungen und anderen lokale Einstellungen)';
 $string['configstrategy'] = 'Standardwert für Beurteilungsart für gegenseitige Beurteilungen';
 $string['createsubmission'] = 'Einreichung hinzufügen';
 $string['crontask'] = 'Hintergrundprozess für gegenseitige Beurteilung';
@@ -169,9 +177,9 @@ $string['gradeitemassessment'] = '{$a->workshopname} (Beurteilung)';
 $string['gradeitemsubmission'] = '{$a->workshopname} (Einreichung)';
 $string['gradeover'] = 'Bewertung für die Einreichung überschreiben';
 $string['gradereceivedfrom'] = '&lt;';
-$string['gradesreport'] = 'Punktebericht für gegenseitige Beurteilung';
-$string['gradetopassgrading'] = 'Erforderliche Beurteilungsbewertung zum Bestehen';
-$string['gradetopasssubmission'] = 'Erforderliche Bewertung zum Bestehen';
+$string['gradesreport'] = 'Bewertungsbericht für gegenseitige Beurteilung';
+$string['gradetopassgrading'] = 'Bestehensgrenze für die Beurteilung';
+$string['gradetopasssubmission'] = 'Bestehensgrenze für die Einreichung';
 $string['gradinggrade'] = 'Bewertung für die Beurteilung';
 $string['gradinggrade_help'] = 'Diese Einstellung gibt an, wie viele Punkte maximal für die Einreichungsbeurteilung vergeben werden.';
 $string['gradinggradecalculated'] = 'Berechnete Bewertung für die Beurteilung';
@@ -248,12 +256,12 @@ $string['pluginname'] = 'Gegenseitige Beurteilung';
 $string['prepareexamples'] = 'Beispieleinreichungen erstellen';
 $string['previewassessmentform'] = 'Vorschau';
 $string['privacy:metadata:aggregatedgradinggrade'] = 'Zusammengefasste Bewertung aller Beurteilungen des Nutzers in der Aktivität gegenseitige Beurteilung';
-$string['privacy:metadata:assessmentgrade'] = 'Zusammengefasste Bewertung für die Lösungen dieser Aufgabe';
+$string['privacy:metadata:assessmentgrade'] = 'Zusammengefasste Bewertung für die Einreichung dieser Beurteilung';
 $string['privacy:metadata:assessmentgradinggrade'] = 'Bewertung für die Abgabe dieser Beurteilung';
-$string['privacy:metadata:assessmentgradinggradeover'] = 'Manuell überschriebene Bewertungart für die Aufgabe';
+$string['privacy:metadata:assessmentgradinggradeover'] = 'Manuell überschriebener Wert für die Bewertung für die Abgabe dieser Beurteilung';
 $string['privacy:metadata:assessmentid'] = 'ID der Beurteilung';
 $string['privacy:metadata:authorid'] = 'ID der Person, die die Einreichung abgibt';
-$string['privacy:metadata:dimensiongrade'] = 'Bewertung in der festgelegten Aufgabendimension';
+$string['privacy:metadata:dimensiongrade'] = 'Bewertung in der festgelegten Beurteilungsdimension';
 $string['privacy:metadata:dimensionid'] = 'ID der Beurteilungsdimension';
 $string['privacy:metadata:example'] = 'Ob der Datensatz zu einer Beispieleinreichung gehört';
 $string['privacy:metadata:feedbackauthor'] = 'Feedback für den Verfasser';
@@ -263,8 +271,24 @@ $string['privacy:metadata:feedbackreviewerformat'] = 'Textformat des Feedbacks a
 $string['privacy:metadata:late'] = 'Ob die Einreichunge nach dem Abgabetermin eingereicht wurde';
 $string['privacy:metadata:peercomment'] = 'Kommentar zur vergebenen Bewertung des Nutzer, der die Beurteilung abgegeben hat';
 $string['privacy:metadata:peercommentformat'] = 'Textformat des Kommentars';
-$string['privacy:metadata:preference:perpage'] = 'Anzahl der Lösungen auf einer Seite für den Nutzer';
-$string['privacy:metadata:published'] = 'Ob die Lösungen für alle Nutzer angezeigt werden sollen, wenn die \'gegenseitige Beurteilung\' abgeschlossen wurde';
+$string['privacy:metadata:preference:perpage'] = 'Anzahl der Einreichungen auf einer Seite für den Nutzer';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Beispieleinreichungen\'';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Übersicht über Einreichungen\'';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Beurteilungsformular\'';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Zugewiesene Einreichungen zur Beurteilung\'';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Toolbox zur gegenseitigen Beurteilung\'';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Schlussfolgerung\'';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Beispieleinreichungen zur Beurteilung\'';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Beispieleinreichungen zur Beurteilung\'';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Übersicht über Beurteilungeinstufungen\'';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Anleitung zur Einreichung\'';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Anleitung zur Beurteilung\'';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Einleitung\'';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Gesamtrückmeldung\'';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Meine Einreichung\'';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Veröffentlichte Einreichungen\'';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = 'Der Status eingeklappt/aufgeklappt für das Viewlet \'Meine Bewertungen\'';
+$string['privacy:metadata:published'] = 'Ob die Einreichungen für alle Nutzer angezeigt werden sollen wenn die \'gegenseitige Beurteilung\' abgeschlossen wurde';
 $string['privacy:metadata:reviewerid'] = 'ID der Person, die die Beurteilung abgibt';
 $string['privacy:metadata:strategy'] = 'Name des Bewertungsstratgieplugins, das Datensätze auswertet';
 $string['privacy:metadata:submissioncontent'] = 'Inhalt der Einreichung';
@@ -273,7 +297,7 @@ $string['privacy:metadata:submissiongrade'] = 'Zusammengefasste Bewertung der Ei
 $string['privacy:metadata:submissiongradeover'] = 'Manuell angepasster Wert der zusammengefassten Bewertung';
 $string['privacy:metadata:submissionid'] = 'ID der Einreichung';
 $string['privacy:metadata:submissiontitle'] = 'Titel der Einreichung';
-$string['privacy:metadata:subsystem:corefiles'] = 'Das Modul \'gegenseitige Beurteilung\' speichert Dateien, die in den Lösungstext eingebunden oder an diesen angehängt wurden';
+$string['privacy:metadata:subsystem:corefiles'] = 'Das Modul \'gegenseitige Beurteilung\' speichert Dateien, die in den Einreichungstext eingebunden oder an diesen angehängt wurden';
 $string['privacy:metadata:subsystem:coreplagiarism'] = 'Das Modul \'gegenseitige Beurteilung\' verfügt über ein integriertes Plagiatssystem.';
 $string['privacy:metadata:timeaggregated'] = 'Wann die aggregrierte Bewertung zuletzt berechnet wurde';
 $string['privacy:metadata:timecreated'] = 'Wann der Datensatz in der Datenbank angelegt wurde';
@@ -281,7 +305,7 @@ $string['privacy:metadata:timemodified'] = 'Wann der Datensatz zuletzt veränder
 $string['privacy:metadata:userid'] = 'Identifier des Nutzers, für den aggregierte Bewertung erstellt wird';
 $string['privacy:metadata:weight'] = 'Gewichtung der Beurteilung';
 $string['privacy:metadata:workshopaggregations'] = 'Enthält aggregierte Bewertung für Beurteilungen';
-$string['privacy:metadata:workshopassessments'] = 'Enthält Informationen über zugwiesene Aufgabeneinreichungen im Modul \'gegenseitige Beurteilung\'.';
+$string['privacy:metadata:workshopassessments'] = 'Enthält Informationen über zugwiesene Beurteilungen im Modul \'gegenseitige Beurteilung\'.';
 $string['privacy:metadata:workshopgrades'] = 'Enthält Informationen wie die Beurteilungsbögen mit Bewertungen und Kommentaren befüllt wurden';
 $string['privacy:metadata:workshopid'] = 'ID der Workshop-Aktivität';
 $string['privacy:metadata:workshopsubmissions'] = 'Enthält Informationen über Einreichungen in der Aktivität \'gegenseitige Beurteilung\'.';
@@ -304,7 +328,7 @@ $string['saveandclose'] = 'Speichern und schließen';
 $string['saveandcontinue'] = 'Speichern und weiter bearbeiten';
 $string['saveandpreview'] = 'Speichern und Vorschau';
 $string['saveandshownext'] = 'Sichern und weiter';
-$string['search:activity'] = 'Gegenseitige Beurteilung - Beschreibung';
+$string['search:activity'] = 'Gegenseitige Beurteilung - Aktivitätsinfo';
 $string['selfassessmentdisabled'] = 'Selbstbeurteilung deaktiviert';
 $string['showingperpage'] = '{$a} Einträge pro Seite';
 $string['showingperpagechange'] = 'Ändern...';
@@ -430,3 +454,4 @@ $string['workshopname'] = 'Name für gegenseitige Beurteilung';
 $string['yourassessmentfor'] = 'Ihre Beurteilung für {$a}';
 $string['yourgrades'] = 'Ihre Bewertungen';
 $string['yoursubmission'] = 'Ihre Einreichung';
+$string['yoursubmissionwithassessments'] = 'Ihre Einreichung mit erhaltenen Beurteilungen';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'fr', version '3.8'.
+ * Strings for component 'gradereport_singleview', language 'fr', version '3.11'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -52,6 +52,7 @@ $string['override'] = 'Modifier';
 $string['overrideall'] = 'Modifier toutes les notes';
 $string['overridefor'] = 'Modifier pour {$a}';
 $string['overridenone'] = 'Ne modifier aucune note';
+$string['overridenoneconfirm'] = 'Vous êtes sur le point de désactiver les dérogations des notes. Cette opération  supprimera toutes les notes avec dérogation. Voulez-vous vraiment continuer ?';
 $string['pluginname'] = 'Affichage simplifié';
 $string['privacy:metadata'] = 'Le Rapport d\'évaluation simplifié affiche seulement des données enregistrées à d\'autres endroits.';
 $string['save'] = 'Enregistrer';

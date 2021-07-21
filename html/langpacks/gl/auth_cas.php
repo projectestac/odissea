@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_cas', language 'gl', version '3.8'.
+ * Strings for component 'auth_cas', language 'gl', version '3.11'.
  *
  * @package     auth_cas
  * @category    string
@@ -29,9 +29,9 @@ $string['CASform'] = 'Opción de autenticación';
 $string['accesCAS'] = 'Usuarios CAS';
 $string['accesNOCAS'] = 'outros usuarios';
 $string['auth_cas_auth_logo'] = 'Logotipo do método de autenticación';
-$string['auth_cas_auth_logo_description'] = 'Forneza un logotipo para o método de autenticación CAS que sexa familiar para os teus usuarios.';
+$string['auth_cas_auth_logo_description'] = 'Forneza un logotipo para o método de autenticación CAS que sexa familiar para os seus usuarios.';
 $string['auth_cas_auth_name'] = 'Nome do método de autenticación';
-$string['auth_cas_auth_name_description'] = 'Forneza un nome para o método de autenticación CAS que sexa familiar para os teus usuarios.';
+$string['auth_cas_auth_name_description'] = 'Forneza un nome para o método de autenticación CAS que sexa familiar para os seus usuarios.';
 $string['auth_cas_auth_service'] = 'CAS';
 $string['auth_cas_auth_user_create'] = 'Crear usuarios externos';
 $string['auth_cas_baseuri'] = 'URI do servidor (en branco se non hai baseUri)<br />Por exemplo, se o servidor CAS responde a host.domaine.fr/CAS/ entón<br />cas_baseuri = CAS/';
@@ -63,7 +63,7 @@ $string['auth_cas_invalidcaslogin'] = 'Non foi posíbel autorizar o seu acceso';
 $string['auth_cas_language'] = 'Seleccione o idioma para as páxinas de autenticación';
 $string['auth_cas_language_key'] = 'Idioma';
 $string['auth_cas_logincas'] = 'Acceso de conexión segura';
-$string['auth_cas_logout_return_url'] = 'Forneza o URL a onde serán redireccionados os usarios de CAS despois de saír.<br />Se o deixa baleiro, os usuarios serán redireccionados ao lugar ao que Moodle redirecciona aos seus usuarios';
+$string['auth_cas_logout_return_url'] = 'Forneza o URL a onde serán redireccionados os usuarios de CAS após saír.<br />Se o deixa baleiro, os usuarios serán redireccionados ao lugar ao que Moodle redirecciona aos seus usuarios';
 $string['auth_cas_logout_return_url_key'] = 'URL alternativo de saída da conta';
 $string['auth_cas_logoutcas'] = 'Seleccione «Si» se quere saír do CAS cando se desconecte de Moodle';
 $string['auth_cas_logoutcas_key'] = 'Saír do CAS';
@@ -77,9 +77,9 @@ $string['auth_cas_server_settings'] = 'Configuración do servidor CAS';
 $string['auth_cas_text'] = 'Conexión segura';
 $string['auth_cas_use_cas'] = 'Usar CAS';
 $string['auth_cas_version'] = 'Versión do protocolo CAS queempregar';
-$string['auth_casdescription'] = 'Este método emprega un servidor CAS (Central Authentication Service) para autenticar aos usuarios nun entorno SSO (Single Sign On). Tamén se pode empregar unha autenticación simple LDAP. Se o nome de usuario e o contrasinal son correctos conforme con CAS, Moodle crea unha entrada de novo usuario na súa base de datos, tomando de LDAP os atributos do usuario se for preciso. Nos seguintes accesos só se comproba o nome de usuario e o contrasinal.';
+$string['auth_casdescription'] = 'Este método emprega un servidor CAS (Central Authentication Service) para autenticar aos usuarios nun contorno SSO (Single Sign On). Tamén se pode empregar unha autenticación simple LDAP. Se o nome de usuario e o contrasinal son correctos conforme con CAS, Moodle crea unha entrada de novo usuario na súa base de datos, tomando de LDAP os atributos do usuario se for preciso. Nos seguintes accesos só se comproba o nome de usuario e o contrasinal.';
 $string['auth_casnotinstalled'] = 'Non é posíbel empregar a autenticación CAS. Non está instalado o módulo PHP LDAP.';
 $string['noldapserver'] = 'Non hai ningún servidor LDAP configurado para CAS. a sincronización foi desactivada.';
 $string['pluginname'] = 'Servidor CAS (SSO)';
-$string['privacy:metadata'] = 'O engadido de autenticación do servidor CAS (SSO) non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O engadido de Autenticación do servidor CAS (SSO) non almacena ningún dato persoal.';
 $string['synctask'] = 'Traballo de sincronización de usuarios CAS';

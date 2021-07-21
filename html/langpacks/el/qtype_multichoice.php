@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multichoice', language 'el', version '3.8'.
+ * Strings for component 'qtype_multichoice', language 'el', version '3.11'.
  *
  * @package     qtype_multichoice
  * @category    string
@@ -67,9 +67,17 @@ $string['pluginname_link'] = 'ερώτηση/τύπος/πολλαπλήεπιλ
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης Πολλαπλής Επιλογής';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης Πολλαπλής Επιλογής';
 $string['pluginnamesummary'] = 'Επιτρέπει την επιλογή μιας ή περισσοτέρων αποκρίσεων από μια προ-καθορισμένη λίστα.';
-$string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις τύπου πολλαπλής επιλογής» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο τύπου ερωτήσεων πολλαπλής επιλογής επιτρέπει στους συγγραφείς ερωτήσεων να ορίζουν προεπιλεγμένες επιλογές ως προτιμήσεις χρήστη.';
+$string['privacy:preference:answernumbering'] = 'Ποιό στυλ αρίθμησης πρέπει να χρησιμοποιείται («1, 2, 3, ...», «α, β, γ, ...» κ.λπ.).';
+$string['privacy:preference:defaultmark'] = 'Εάν οι απαντήσεις πρέπει να ανακατεύονται αυτόματα.';
+$string['privacy:preference:penalty'] = 'Η ποινή για κάθε λανθασμένη δοκιμή όταν εκτελούνται ερωτήσεις χρησιμοποιώντας τη συμπεριφορά «Διαδραστική με πολλαπλές προσπάθειες» ή «Κατάσταση προσαρμογής».';
+$string['privacy:preference:showstandardinstruction'] = 'Εάν θα εμφανίζονται τυπικές οδηγίες.';
+$string['privacy:preference:shuffleanswers'] = 'Εάν οι απαντήσεις πρέπει να ανακατεύονται αυτόματα.';
+$string['privacy:preference:single'] = 'Εάν η απάντηση είναι απλή με κουμπιά μοναδικής επιλογής ή πολλαπλή με πλαίσια επιλογής.';
 $string['selectmulti'] = 'Επιλέξτε ένα ή περισσότερα:';
 $string['selectone'] = 'Επιλέξτε ένα:';
+$string['showstandardinstruction'] = 'Εμφάνιση τυπικών οδηγιών';
+$string['showstandardinstruction_help'] = 'Εάν θα εμφανίζονται οι οδηγίες «Επιλογή ενός:» ή «Επιλογή ενός ή περισσοτέρων:» πριν από απαντήσεις πολλαπλής επιλογής.';
 $string['shuffleanswers'] = 'Ανακάτεμα απαντήσεων;';
 $string['shuffleanswers_desc'] = 'Εάν οι επιλογές πρέπει να ανακατεύονται τυχαία για κάθε προσπάθεια από προεπιλογή.';
 $string['shuffleanswers_help'] = 'Εάν ενεργοποιηθεί, η σειρά των απαντήσεων ανακατεύεται τυχαία για κάθε προσπάθεια, με την προϋπόθεση ότι το «Ανακάτεμα εντός των ερωτήσεων» στις ρυθμίσεις δραστηριοτήτων είναι επίσης ενεργοποιημένο.';

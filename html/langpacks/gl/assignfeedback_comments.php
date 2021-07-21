@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_comments', language 'gl', version '3.8'.
+ * Strings for component 'assignfeedback_comments', language 'gl', version '3.11'.
  *
  * @package     assignfeedback_comments
  * @category    string
@@ -28,11 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['commentinline'] = 'Comentar en liña';
 $string['commentinline_help'] = 'Se se activa, o texto da entrega será copiado ao campo do comentario durante a cualificación, facendo máis doado comentar en liña (talvez utilizando unha cor diferente), ou editar o texto orixinal.';
 $string['commentinlinedefault'] = 'Comentar en liña como predeterminado';
-$string['commentinlinedefault_help'] = 'Se establece, este método de comentarios en liña será activado como predeterminado para todas as novas tarefas.';
+$string['commentinlinedefault_help'] = 'Se se estabelece, este método de comentarios en liña será activado como predeterminado para todas as novas tarefas.';
 $string['default'] = 'Activado de xeito predeterminado';
-$string['default_help'] = 'Se estabelece, este método de comentarios será activado como predeterminado para todas as novas asignacións.';
+$string['default_help'] = 'Se se establece, este método de comentarios será activado como predeterminado para todas as novas tarefas.';
 $string['enabled'] = 'Comentarios';
-$string['enabled_help'] = 'Se se activa, o marcador pode deixar comentarios para cada envío.';
+$string['enabled_help'] = 'Se se activa, o marcador pode deixar comentarios para cada entrega.';
 $string['pluginname'] = 'Comentarios';
 $string['privacy:commentpath'] = 'Comentarios';
 $string['privacy:metadata:assignmentid'] = 'ID da tarefa';

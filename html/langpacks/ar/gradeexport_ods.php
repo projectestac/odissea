@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_ods', language 'ar', version '3.8'.
+ * Strings for component 'gradeexport_ods', language 'ar', version '3.11'.
  *
  * @package     gradeexport_ods
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['eventgradeexported'] = 'تصدير العلامات بصيغة OpenDocument';
+$string['eventgradeexported'] = 'تقديرات بصيغة OpenDocument تم تصديرها';
 $string['ods:publish'] = 'نشر علامات OpenDocument المصدرة';
-$string['ods:view'] = 'استخد تصدير العلامات لـOpenDocument';
+$string['ods:view'] = 'استعمال تصدير العلامات لـ OpenDocument';
 $string['pluginname'] = 'جدول OpenDocument';
 $string['privacy:metadata'] = 'إن ملحق تصدير العلامات بشكل جداول OpenDocument لا يخزن أي بيانات شخصية.';
 $string['timeexported'] = 'آخر ما تم تنزيله من هذا المقرر الدراسي';

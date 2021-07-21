@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'ru', version '3.8'.
+ * Strings for component 'workshopallocation_scheduled', language 'ru', version '3.11'.
  *
  * @package     workshopallocation_scheduled
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['crontask'] = 'Фоновая обработка для запланированного распределения';
 $string['currentstatus'] = 'Текущее состояние';
 $string['currentstatusexecution'] = 'Состояние';
 $string['currentstatusexecution1'] = 'Выполнено {$a->datetime}';
@@ -40,6 +41,7 @@ $string['currentstatusresult'] = 'Новый результат выполнен
 $string['enablescheduled'] = 'Включить плановое распределение';
 $string['enablescheduledinfo'] = 'Автоматически распределять работы в конце фазы представления';
 $string['pluginname'] = 'Плановое распределение';
+$string['privacy:metadata'] = 'Плагин запланированного распределения не хранит никаких личных данных. Актуальные персональные данные о том, кто кого будет оценивать, хранятся в самом модуле Семинара, и они составляют основу для экспорта деталей оценок.';
 $string['randomallocationsettings'] = 'Параметры распределения';
 $string['randomallocationsettings_help'] = 'Здесь задаются параметры метода случайного распределения, использующегося для фактического распределения представленных работ.';
 $string['resultdisabled'] = 'Плановое распределение отключено';

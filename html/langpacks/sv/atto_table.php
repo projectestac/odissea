@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_table', language 'sv', version '3.8'.
+ * Strings for component 'atto_table', language 'sv', version '3.11'.
  *
  * @package     atto_table
  * @category    string
@@ -59,7 +59,7 @@ $string['numberofcolumns'] = 'Antal kolumner';
 $string['numberofrows'] = 'Antal rader';
 $string['outer'] = 'Runt tabellen';
 $string['pluginname'] = 'Tabell';
-$string['privacy:metadata'] = 'Pluginmodulen atto_table lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_table lagrar ingen personinformation.';
 $string['rows'] = 'Rader';
 $string['settings'] = 'Tabellformat';
 $string['solid'] = 'Heldragen';

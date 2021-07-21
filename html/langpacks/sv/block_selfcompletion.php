@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_selfcompletion', language 'sv', version '3.8'.
+ * Strings for component 'block_selfcompletion', language 'sv', version '3.11'.
  *
  * @package     block_selfcompletion
  * @category    string
@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['alreadyselfcompleted'] = 'Du har redan markerat dig själv som slutförd i denna kurs';
-$string['completecourse'] = 'Fullföljd kurs';
-$string['pluginname'] = 'Eget fullföljande';
+$string['completecourse'] = 'Slutför kurs';
+$string['pluginname'] = 'Eget slutförande';
+$string['privacy:metadata'] = 'Blocket Eget slutförande visar endast data som lagras på andra platser.';
 $string['selfcompletion:addinstance'] = 'Lägg till nytt block för självregistrering';
+$string['selfcompletionnotenabled'] = 'Villkoret <em>Eget slutförande</em> har inte aktiverats i denna kurs.';

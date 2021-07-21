@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'it', version '3.8'.
+ * Strings for component 'lti', language 'it', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -42,6 +42,8 @@ $string['activate'] = 'Abilita';
 $string['activatetoadddescription'] = 'Devi abilitare questo tool prima di poter aggiungere una descrizione';
 $string['active'] = 'Attivi';
 $string['activity'] = 'Attivtà';
+$string['add_ltiadv'] = 'Aggiungi LTI Advantage';
+$string['add_ltilegacy'] = 'Aggiungi LTI (versione obsoleta)';
 $string['addnewapp'] = 'Abilita applicazioni esterna';
 $string['addserver'] = 'Aggiungi nuovo server affidabile';
 $string['addtype'] = 'Aggiungi tool preconfigurato';
@@ -62,6 +64,7 @@ $string['basicltifieldset'] = 'Esempio personalizzato di campi';
 $string['basicltiintro'] = 'Descrizione';
 $string['basicltiname'] = 'Nome attività';
 $string['basicltisettings'] = 'Impostazioni di base Learning Tool Interoperability (LTI)';
+$string['cachedef_keyset'] = 'Informazioni sui set di chiavi dei tool';
 $string['cancel'] = 'Annulla';
 $string['cancelled'] = 'Annullato';
 $string['cannot_delete'] = 'Non dovresti eliminare la configurazione di questo tool.';
@@ -83,7 +86,9 @@ $string['configtypes'] = 'Abilita applicazioni LTI';
 $string['configured'] = 'Configurati';
 $string['confirmtoolactivation'] = 'Sei sicuro di attivare questo tool?';
 $string['contentitem'] = 'Messaggio Content-Item';
+$string['contentitem_deeplinking_help'] = 'Consente di rendere disponibile l\'impostazione \'Seleziona contenuto\' quando si aggiunge un tool esterno.';
 $string['contentitem_help'] = 'Consente di rendere disponibile l\'impostazione \'Seleziona contenuto\' quando si aggiunge un tool esterno.';
+$string['contentitem_multiple_description'] = 'I seguenti elementi saranno aggiunti al corso:';
 $string['course_tool_types'] = 'Tool del corso';
 $string['courseactivitiesorresources'] = 'Attività e risorse del cofso';
 $string['courseid'] = 'Codice identificativo del corso';
@@ -130,6 +135,10 @@ $string['donot'] = 'Non inviare';
 $string['donotaccept'] = 'Non accettare';
 $string['donotallow'] = 'Non consentire';
 $string['duplicateregurl'] = 'L\'URL di registrazione è già stata utilizzata';
+$string['dynreg_update_btn_update'] = 'Aggiorna';
+$string['dynreg_update_name'] = 'Nome del tool';
+$string['dynreg_update_url'] = 'URL base';
+$string['dynreg_update_version'] = 'Versione LTI';
 $string['editdescription'] = 'Fai click qui per impostare una descrizione del tool';
 $string['edittype'] = 'Modifica tool preconfigurato';
 $string['embed'] = 'Incorpora';
@@ -179,7 +188,7 @@ Inoltre, SSL sarà utilizzato anche per richieste web service provenienti dal to
 Per usare questa opzione, accertatevi che sia Moodle sia il tool provider supportino SSL.';
 $string['forced_help'] = 'L\'impostazione è stata forzato in un corso o in una configurazione a livello di siti. Non puoi modificarla da questa interfaccia.';
 $string['generaltool'] = 'Tool generale';
-$string['global_tool_types'] = 'Tool preconfigurati globali';
+$string['global_tool_types'] = 'Tool preconfigurati';
 $string['grading'] = 'Instradamento valutazioni';
 $string['icon_url'] = 'URL dell\'icona';
 $string['icon_url_help'] = 'L\'URL dell\'icona consente di visualizzare nella pagina home del corso l\'icona specifica del tool al posto dell\'icona LTI default';
@@ -194,6 +203,10 @@ $string['indicator:socialbreadthdef'] = 'LTI sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività LTI (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
 $string['invalidid'] = 'L\'ID LTI era errata';
 $string['jwtsecurity'] = 'LTI 1.3';
+$string['keytype'] = 'Tipo di chiave pubblica';
+$string['keytype_help'] = 'Il metodo di autenticazione utilizzato per validare il tool.';
+$string['keytype_keyset'] = 'URL del set di chiavi';
+$string['keytype_rsa'] = 'Chiave RSA';
 $string['launch_in_moodle'] = 'Lancia il tool in Moodle';
 $string['launch_in_popup'] = 'Lancia il tool in una finestra pop-up';
 $string['launch_url'] = 'URL tool';
@@ -215,6 +228,8 @@ $string['leaveblank'] = 'Lascia vuoto se non ti servono';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Aggiungere configurazioni Tool esterno a livello di corso';
 $string['lti:addinstance'] = 'Aggiungere attività Tool esterno';
+$string['lti:addmanualinstance'] = 'Aggiungi un tool configurato manualmente';
+$string['lti:addpreconfiguredinstance'] = 'un tool preconfigurato';
 $string['lti:admin'] = 'Diventa amministratore al lancio del tool';
 $string['lti:grade'] = 'Visualizzare valutazioni riportate da Tool esterni';
 $string['lti:manage'] = 'Diventare docente al lancio del tool esterno';
@@ -287,9 +302,11 @@ $string['optionalsettings'] = 'Impostazioni opzionali';
 $string['organization'] = 'Dettagli dell\'organizzazione';
 $string['organizationdescr'] = 'Descrizione dell\'organizzazione';
 $string['organizationid'] = 'ID dell\'organizzazione';
+$string['organizationid_default'] = 'ID di default dell\'organizzazione';
 $string['organizationid_help'] = 'Un identificativo univoco di questa istanza Moodle. Di solito si utilizza il nome DNS della organizzazione.
 
 Lasciando vuoto il campo, di default verrà utilizzato il nome del sito Moodle.';
+$string['organizationidguid'] = 'ID dell\'organizzazione';
 $string['organizationurl'] = 'URL dell\'organizzazione';
 $string['organizationurl_help'] = 'l\'URL di questa istanza Moodle.
 
@@ -345,6 +362,7 @@ $string['privacy:metadata:userid'] = 'ID dell\'utente che accede a LTI Consumer.
 $string['privacy:metadata:useridnumber'] = 'Codice identificativo dell\'utente che accede a LTI Consumer.';
 $string['privacy:metadata:username'] = 'Username dell\'utente che accede a LTI Consumer.';
 $string['publickey'] = 'Chiave pubblica';
+$string['publickeyset'] = 'Set di chiavi pubbliche';
 $string['quickgrade'] = 'Consenti valutazione rapida';
 $string['quickgrade_help'] = 'Consente la valutazione di più tool nella stessa pagina. E\' possibile aggiungere valutazioni e commenti e poi fare click su "Salva tutti i miei feedback" per salvare tutte le modifiche apportate nella pagina.';
 $string['redirect'] = 'Tra pochi secondi verrai reindirizzato, in caso contrario premi il pulsante.';
@@ -425,6 +443,8 @@ $string['show_in_course_lti2'] = 'Utilizzo della configurazione del tool';
 $string['show_in_course_lti2_help'] = 'Questo tool può essere visualizzato nel selettore attività consentendo ai docenti di aggiungerlo ai corsi oppure può essere visualizzato nel menù a discesa dei tool preconfigurati quando si aggiunge un tool al corso.';
 $string['show_in_course_no'] = 'Non visualizzare; da utilizzare solo se viene inserita un URL corretta del tool';
 $string['show_in_course_preconfigured'] = 'Visualizza come tool preconfigurato quando si aggiunge un tool esterno';
+$string['sitehost'] = 'Nome host del sito';
+$string['siteid'] = 'ID del sito';
 $string['size'] = 'Dimensione parametri';
 $string['submission'] = 'Invii';
 $string['submissions'] = 'Invii';

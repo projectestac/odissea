@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_behat', language 'gl', version '3.8'.
+ * Strings for component 'tool_behat', language 'gl', version '3.11'.
  *
  * @package     tool_behat
  * @category    string
@@ -28,14 +28,14 @@ defined('MOODLE_INTERNAL') || die();
 $string['aim'] = 'Esta ferramenta de administración permítelle aos desenvolvedores e creadores de probas xerar ficheiros .feature que describen as funcionalidades de Moodle e execútanse automaticamente. As definicións dispoñíbeis dos pasos para o seu uso nos ficheiros .feature enuméranse a seguir.';
 $string['allavailablesteps'] = 'Todas as definicións de pasos dispoñíbeis';
 $string['errorapproot'] = '$CFG->behat_ionic_dirroot non está apuntando a unha instalación de desenvolvedores Moodle Mobile válida.';
-$string['errorbehatcommand'] = 'Produciuse un erro durante a execución da orde behat na liña de ordes. Execute manualmente «{$a} --help» desde a liña de ordes para saber máis sobre este erro.';
+$string['errorbehatcommand'] = 'Produciuse un erro durante a execución da orde behat na liña de ordes. Execute manualmente «{$a} --help» dende a liña de ordes para saber máis sobre este erro.';
 $string['errorcomposer'] = 'Non están instaladas as dependencias do compositor (composer).';
 $string['errordataroot'] = '$CFG->behat_datarootno non está estabelecido ou é incorrecto.';
 $string['errorsetconfig'] = '$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot necesitan estabelecerse en config.php.';
 $string['erroruniqueconfig'] = 'Os valores de $CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot necesitan ser diferentes aos valores de $CFG->dataroot, $CFG->prefix, $CFG->wwwroot, $CFG->phpunit_dataroot e $CFG->phpunit_prefix.';
 $string['fieldvalueargument'] = 'Argumentos de valor do campo';
-$string['fieldvalueargument_help'] = 'Este argumento debería de completarse por un valor de campo; hai moitos tipos de campos: os sinxelos como as caixas de verificación, seleccións ou áreas de texto; ou campos complexos como os selectores de datos. Pode revisar <a href="http://docs.moodle.org/dev/Acceptance_testing#Providing_values_to_steps" target="_blank">Field values (Valores de campos)</a> para ver os valores de campo agardados dependendo do tipo de campo que forneza.';
-$string['giveninfo'] = 'Dado. Procesos para configurar o entorno';
+$string['fieldvalueargument_help'] = 'Este argumento debería completarse cun valor de campo. Hai moitos tipos de campo, incluídos os sinxelos como caixas de selección, seleccións ou áreas de texto ou complexos como os seleccionadores de datas. Consulte a documentación dev <a href="https://docs.moodle.org/dev/Acceptance_testing" target="_blank">Probas de aceptación</a> para detalles sobre os valores de campo agardados.';
+$string['giveninfo'] = 'Dado. Procesos para configurar o contorno';
 $string['infoheading'] = 'Información';
 $string['installinfo'] = 'Lea {$a} para ver información sobre a instalación e execución de probas';
 $string['newstepsinfo'] = 'Lea {$a} para ver información sobre como engadir novas definicións de pasos';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'scormreport_objectives', language 'ar', version '3.8'.
+ * Strings for component 'scormreport_objectives', language 'ar', version '3.11'.
  *
  * @package     scormreport_objectives
  * @category    string
@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['objectivescore'] = 'إظهار النتيجة الموضوعية';
+$string['objectivescore'] = 'إظهار الدرجة الموضوعية';
 $string['objectivex'] = 'الهدف {$a}';
 $string['pluginname'] = 'تقرير الأهداف';
 $string['privacy:metadata:preference:scorm_report_objectives_score'] = 'ما إذا كان سيتم عرض النتيجة الموضوعية في تقرير سكورم';
 $string['privacy:metadata:preference:scorm_report_pagesize'] = 'عدد المستخدمين المراد عرضها في تقارير سكورم';
-$string['score'] = 'النتيجة';
+$string['score'] = 'الدرجة';
 $string['status'] = 'الحالة';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_upload', language 'pt', version '3.8'.
+ * Strings for component 'repository_upload', language 'pt', version '3.11'.
  *
  * @package     repository_upload
  * @category    string
@@ -34,7 +34,7 @@ $string['upload_error_cant_write'] = 'Erro ao guardar ficheiro no servidor.';
 $string['upload_error_extension'] = 'Uma extensão PHP interrompeu o envio do ficheiro.';
 $string['upload_error_form_size'] = 'O tamanho do ficheiro enviado ultrapassa o valor definido no parâmetro MAX_FILE_SIZE que foi especificado no código HTML do formulário.';
 $string['upload_error_ini_size'] = 'O tamanho do ficheiro enviado ultrapassa o valor definido no parâmetro upload_max_filesize que foi especificado na configuração do PHP (ficheiro php.ini).';
-$string['upload_error_invalid_file'] = 'O ficheiro \'{$a}\' está vazio ou é uma pasta. Para carregar pastas crie primeiro um zip com estas.';
+$string['upload_error_invalid_file'] = 'O ficheiro \'{$a}\' está vazio ou é uma pasta. Para carregar pastas, crie primeiro um ficheiro zip com as pastas organizadas.';
 $string['upload_error_no_file'] = 'Não foi enviado nenhum ficheiro.';
 $string['upload_error_no_tmp_dir'] = 'O PHP detetou a falta de uma pasta temporária.';
 $string['upload_error_partial'] = 'O envio do ficheiro não foi completamente concluído.';

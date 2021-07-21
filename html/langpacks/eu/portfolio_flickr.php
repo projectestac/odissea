@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_flickr', language 'eu', version '3.8'.
+ * Strings for component 'portfolio_flickr', language 'eu', version '3.11'.
  *
  * @package     portfolio_flickr
  * @category    string
@@ -34,7 +34,7 @@ $string['isfamily'] = 'Ikusgai familiarentzat';
 $string['isfriend'] = 'Ikusgai lagunentzat';
 $string['ispublic'] = 'Publikoa (edonork ikus dezake)';
 $string['moderate'] = 'Moderatua';
-$string['noauthtoken'] = 'Ezi izan da autentifikazio-token-ik berreskuratu saio honetan erabiltzeko';
+$string['noauthtoken'] = 'Ezi izan da autentifikazio-tokenik berreskuratu saio honetan erabiltzeko';
 $string['other'] = 'Irudi artistikoak, ilustrazioak, CGI edota fotografikoak ez diren bestelako irudiak';
 $string['photo'] = 'Argazkiak';
 $string['pluginname'] = 'Flickr.com';

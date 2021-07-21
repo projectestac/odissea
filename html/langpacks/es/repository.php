@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'es', version '3.8'.
+ * Strings for component 'repository', language 'es', version '3.11'.
  *
  * @package     repository
  * @category    string
@@ -72,7 +72,8 @@ $string['confirmdelete'] = '¿Está seguro de que desea eliminar este repositori
 Si selecciona "Continuar y descargar", los archivos referidos a contenidos externos se descargaran a Moodle, pero este proceso llevará tiempo.';
 $string['confirmdeletefile'] = '¿Está seguro de que desea eliminar este archivo?';
 $string['confirmdeletefilewithhref'] = '¿Está seguro de que desea eliminar este archivo? Hay {$a} alias/atajos a archivos que usan este archivo como origen. Si continua, estos alias se transformarán en copias reales.';
-$string['confirmdeletefolder'] = '¿Está seguro que quiere eliminar esta carpeta? Todoas loas archivos y las subcarpetas se eliminarán?';
+$string['confirmdeletefolder'] = '¿Está seguro que quiere eliminar esta carpeta? Todos los archivos y las subcarpetas se eliminarán.';
+$string['confirmdeleteselectedfile'] = '¿Está seguro de que quiere eliminar {$a} archivo/s seleccionado/s?';
 $string['confirmremove'] = '¿Está seguro de que desea eliminar esta extensión de repositorio, sus opciones y <strong>todas sus instancias</strong> - {$a}?
 
 Si selecciona "Continuar y descargar", los archivos refereridos a contenidos externos se descargaran a Moodle, pero este proceso llevará tiempo.';

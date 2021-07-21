@@ -63,13 +63,6 @@ class block_settings_renderer extends plugin_renderer_base {
         $lis = array();
         $number = 0;
         foreach ($items as $item) {
-            //XTEC ************ AFEGIT - To delete some settings
-            //2014.05.22 @pferrer
-            static $delete_items = array('usercurrentsettings' => '');
-            if(isset($delete_items[$item->key])){
-                continue;
-            }
-            //********* FI
             $number++;
             if (!$item->display) {
                 continue;
@@ -84,8 +77,8 @@ class block_settings_renderer extends plugin_renderer_base {
             $content = $this->output->render($item);
             $id = $item->id ? $item->id : html_writer::random_id();
             $ulattr = ['id' => $id . '_group', 'role' => 'group'];
-            $liattr = ['class' => [$item->get_css_type(), 'depth_'.$depth], 'tabindex' => '-1'];
-            $pattr = ['class' => ['tree_item'], 'role' => 'treeitem'];
+            $liattr = ['class' => [$item->get_css_type(), 'depth_'.$depth], 'tabindex' => '-1', 'role' => 'treeitem'];
+            $pattr = ['class' => ['tree_item']];
             $pattr += !empty($item->id) ? ['id' => $item->id] : [];
             $hasicon = (!$isbranch && $item->icon instanceof renderable);
 
@@ -93,15 +86,15 @@ class block_settings_renderer extends plugin_renderer_base {
                 $liattr['class'][] = 'contains_branch';
                 if (!$item->forceopen || (!$item->forceopen && $item->collapse) || ($item->children->count() == 0
                         && $item->nodetype == navigation_node::NODETYPE_BRANCH)) {
-                    $pattr += ['aria-expanded' => 'false'];
+                    $liattr += ['aria-expanded' => 'false'];
                 } else {
-                    $pattr += ['aria-expanded' => 'true'];
+                    $liattr += ['aria-expanded' => 'true'];
                 }
                 if ($item->requiresajaxloading) {
-                    $pattr['data-requires-ajax'] = 'true';
-                    $pattr['data-loaded'] = 'false';
+                    $liattr['data-requires-ajax'] = 'true';
+                    $liattr['data-loaded'] = 'false';
                 } else {
-                    $pattr += ['aria-owns' => $id . '_group'];
+                    $liattr += ['aria-owns' => $id . '_group'];
                 }
             } else if ($hasicon) {
                 $liattr['class'][] = 'item_with_icon';
@@ -113,7 +106,6 @@ class block_settings_renderer extends plugin_renderer_base {
             if (!empty($item->classes) && count($item->classes) > 0) {
                 $pattr['class'] = array_merge($pattr['class'], $item->classes);
             }
-            $nodetextid = 'label_' . $depth . '_' . $number;
 
             // class attribute on the div item which only contains the item content
             $pattr['class'][] = 'tree_item';
@@ -126,7 +118,7 @@ class block_settings_renderer extends plugin_renderer_base {
             $liattr['class'] = join(' ', $liattr['class']);
             $pattr['class'] = join(' ', $pattr['class']);
 
-            if (isset($pattr['aria-expanded']) && $pattr['aria-expanded'] === 'false') {
+            if (isset($liattr['aria-expanded']) && $liattr['aria-expanded'] === 'false') {
                 $ulattr += ['aria-hidden' => 'true'];
             }
 
@@ -134,7 +126,6 @@ class block_settings_renderer extends plugin_renderer_base {
             if (!empty($item->preceedwithhr) && $item->preceedwithhr===true) {
                 $content = html_writer::empty_tag('hr') . $content;
             }
-            $liattr['aria-labelledby'] = $nodetextid;
             $content = html_writer::tag('li', $content, $liattr);
             $lis[] = $content;
         }
@@ -151,11 +142,12 @@ class block_settings_renderer extends plugin_renderer_base {
 
     public function search_form(moodle_url $formtarget, $searchvalue) {
         $data = [
-                'action' => $formtarget->out(false),
-                'label' => get_string('searchinsettings', 'admin'),
-                'searchvalue' => $searchvalue
+            'action' => $formtarget,
+            'inputname' => 'query',
+            'searchstring' => get_string('searchinsettings', 'admin'),
+            'query' => $searchvalue
         ];
-        return $this->render_from_template('block_settings/search_form', $data);
+        return $this->render_from_template('core/search_input', $data);
     }
 
 }

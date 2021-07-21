@@ -34,12 +34,11 @@ if ($ADMIN->fulltree) {
     $desc = new lang_string('toolbarconfig_desc', 'editor_atto');
     $default = 'collapse = collapse
 style1 = title, bold, italic
-list = unorderedlist, orderedlist
+list = unorderedlist, orderedlist, indent
 links = link
-files = image, media, recordrtc, managefiles, h5p
+files = emojipicker, image, media, recordrtc, managefiles, h5p
 style2 = underline, strike, subscript, superscript
 align = align
-indent = indent
 insert = equation, charmap, table, clear
 undo = undo
 accessibility = accessibilitychecker, accessibilityhelper
@@ -49,19 +48,21 @@ other = html';
     $settings->add($setting);
 }
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2015.06.05 @pferre22
+// XTEC ************ AFEGIT - Allow access only to xtecadmin user
+// 2015.06.05 @pferre22
 if (get_protected_agora()) {
-//************ FI
+// ************ FI
+
 $name = new lang_string('autosavefrequency', 'editor_atto');
 $desc = new lang_string('autosavefrequency_desc', 'editor_atto');
 $default = 60;
 $setting = new admin_setting_configduration('editor_atto/autosavefrequency', $name, $desc, $default);
 $settings->add($setting);
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2015.06.05 @pferre22
+
+// XTEC ************ AFEGIT - Allow access only to xtecadmin user
+// 2015.06.05 @pferre22
 }
-//************ FI
+// ************ FI
 
 $ADMIN->add('editoratto', $settings);
 

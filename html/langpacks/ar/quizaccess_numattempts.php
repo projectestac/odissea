@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_numattempts', language 'ar', version '3.8'.
+ * Strings for component 'quizaccess_numattempts', language 'ar', version '3.11'.
  *
  * @package     quizaccess_numattempts
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'المحاولات المسموح بها: {$a}';
 $string['pluginname'] = 'نظام عدد محاولات الدخول للاختبار';
-$string['privacy:metadata'] = 'المكون الإضافي Number of attempts quiz access rule لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق قاعدة الوصول للاختبار حسب عدد المحاولات لا يخزن أي بيانات شخصية.';

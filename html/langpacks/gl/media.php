@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'gl', version '3.8'.
+ * Strings for component 'media', language 'gl', version '3.11'.
  *
  * @package     media
  * @category    string
@@ -33,9 +33,9 @@ $string['defaultwidthdesc'] = 'Largura do reprodutor multimedia se non se especi
 $string['extensions'] = 'Extensións: {$a}';
 $string['managemediaplayers'] = 'Xestionar reprodutores multimedia';
 $string['mediaformats'] = 'Reprodutores dispoñíbeis';
-$string['mediaformats_desc'] = 'Cando están activados os reprodutores nesta configuración, Os ficheiros poden integrarse empregando o filtro de multimedia (se está activado) ou empregando un recurso de ficheiro ou URL coa opción de integrar. Cando non está activado, estes formatos no se poden integrar e os usuarios terán que descargar ou seguir as ligazóns a estes recursos.
+$string['mediaformats_desc'] = 'Cando están activados os reprodutores, os ficheiros multimedia poden incrustarse empregando o filtro de multimedia (se está activado) ou empregando un recurso de ficheiro ou URL coa opción de integrar. Cando non está activado, estes formatos non se poden incrustar e os usuarios terán que descargar ou seguir as ligazóns a estes recursos.
 
-As veces dous reprodutores aceptan o mesmo formato, o que aumenta a compatibilidade con diferentes dispositivos tales como teléfonos móbiles. É posible aumentar aínda máis a compatibilidade fornecendo ficheiros en diferentes formatos para o son ou para fragmentos de vídeo.';
+As veces dous reprodutores aceptan o mesmo formato, o que aumenta a compatibilidade con diferentes dispositivos tales como teléfonos móbiles. É posíbel aumentar aínda máis a compatibilidade fornecendo ficheiros en diferentes formatos para o son ou para fragmentos de vídeo.';
 $string['privacy:metadata'] = 'A incrustación de medios non almacena ningún dato persoal.';
 $string['supports'] = 'Compatibilidade';
 $string['videoextensions'] = 'Vídeo: {$a}';

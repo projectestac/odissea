@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'de', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'de', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -68,7 +68,14 @@ $string['pluginname_help'] = 'Aus Nutzersicht sehen numerische Fragen wie gewöh
 $string['pluginnameadding'] = 'Numerische Frage hinzufügen';
 $string['pluginnameediting'] = 'Numerische Frage ändern';
 $string['pluginnamesummary'] = 'Erlaubt eine numerische Antwort (auch mit Maßeinheiten), die gegen einige Modellantworten, ggf. mit Toleranzen, bewertet wird.';
-$string['privacy:metadata'] = 'Der Numerische Fragentyp speichert keine personenbezogenen Daten';
+$string['privacy:metadata'] = 'Das Plugin "Numerischer Fragentyp" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
+$string['privacy:preference:multichoicedisplay'] = 'Gibt an, ob Einheiten angezeigt werden als Texteingabe, als Multiple-Choice-Auswahl oder als Drop-Down-Menü.';
+$string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
+$string['privacy:preference:unitgradingtypes'] = 'Gibt an, ob der Abzug als Bruchteil (0-1) der Antwortnote oder der Fragennote gilt.';
+$string['privacy:preference:unitpenalty'] = 'Welcher Bruchteil (0-1) der Antwortnote oder Fragennote sollte zutreffen?';
+$string['privacy:preference:unitrole'] = 'Gibt an, ob die Einheit wichtig ist, optional oder nicht erwartet.';
+$string['privacy:preference:unitsleft'] = 'Gibt an, ob die Einheit links angezeigt wird (wie $, £) oder rechts (wie kg, km, cm)';
 $string['relative'] = 'Relative';
 $string['rightexample'] = 'Rechts, z.B. 1.00cm oder 1.000km';
 $string['selectunit'] = 'Maßeinheit wählen';
@@ -93,19 +100,18 @@ $string['unitoptional_help'] = '* Wenn das Einheitenfeld nicht leer ist, wird di
 
 * Wenn die Einheit falsch geschrieben oder unbekannt ist, wird die Antwort zusammen mit der Einheit als ungültig gewertet. ';
 $string['unitpenalty'] = 'Abzug wegen falscher Einheit';
-$string['unitpenalty_help'] = 'Der Abzug wird berechnet, wenn
+$string['unitpenalty_help'] = 'Der Abzug wird angewendet, wenn
 
-* eine undefinierte Einheit in das Einheitenfeld eingetragen ist oder
-
+* eine falsche Einheit in das Einheitenfeld eingetragen ist oder
 * eine Einheit in das Zahlenfeld eingetragen ist';
 $string['unitposition'] = 'Position der Einheit';
 $string['units'] = 'Maßeinheiten';
 $string['unitselect'] = 'ein Drop-Down-menu';
 $string['unitx'] = 'Maßeinheit {no}';
 $string['validnumberformats'] = 'Gültige Zahlenformate';
-$string['validnumberformats_help'] = '* Normale Zahlenschreibweise 13500,67 ; 13 500,67 : 13500,67 ; 13 500,67
-* Bei Verwendung des Tausendertrennzeichens muss IMMER das Dezimalkomma gesetzt sein  13,500.67. 13.500
-* Die Exponentschreibweise 1,350067 * 10 <sup> 4 </ sup> wird so notiert 1,350067 E4 : 1,350067 E04';
+$string['validnumberformats_help'] = '* Normale Zahlenschreibweise 13500.67; 13 500.67: 13500,67; 13 500,67
+* Bei Verwendung des Tausendertrennzeichens muss IMMER das Dezimalkomma gesetzt sein wie in 13.500,67, also 13.500,
+* Die Exponentenschreibweise 1,350067 * 10<sup>4</sup> wird so notiert 1,350067 E4; 1,350067 E04';
 $string['validnumbers'] = '13500.67 : 13 500.67 : 13500,67: 13 500,67 : 1.350067 E4 : 1.350067 E04';
 $string['xmustbenumeric'] = '{$a} muss eine Zahl sein';
 $string['xmustnotbenumeric'] = '{$a} kann keine Zahl sein';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'de', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'de', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -42,4 +42,7 @@ $string['pluginname_help'] = 'Als Antwort auf eine Frage (welche auch ein Bild e
 $string['pluginnameadding'] = 'Kurzantwort hinzufügen';
 $string['pluginnameediting'] = 'Kurztextfrage bearbeiten';
 $string['pluginnamesummary'] = 'Die Antwort wird von Teilnehmer/innen eingetippt. Zur automatischen Bewertung wird der Eintrag mit Musterantworten verglichen. Wildcards (Platzhalter) sind möglich.';
-$string['privacy:metadata'] = 'Der Fragentyp \'Kurzantwort\' speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin "Kurzantwort" erlaubt es Frageautor/innen, standardmäßige Optionen als Nutzereinstellungen zu setzen.';
+$string['privacy:preference:defaultmark'] = 'Die Standardmarkierung wird für eine bestimmte Frage gesetzt.';
+$string['privacy:preference:penalty'] = 'Abzug für jeden falschen Versuch, wenn Fragen mit dem Verhalten "Interaktiv mit mehreren Versuchen" oder "Adaptiver Modus" ausgeführt werden.';
+$string['privacy:preference:usecase'] = 'Gibt an, ob die Antwort die Groß-/Kleinschreibung berücksichtigen soll.';

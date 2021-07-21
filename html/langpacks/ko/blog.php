@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'ko', version '3.8'.
+ * Strings for component 'blog', language 'ko', version '3.11'.
  *
  * @package     blog
  * @category    string
@@ -149,6 +149,7 @@ $string['rssfeed'] = 'Blog RSS 피드';
 $string['searchterm'] = '검색: {$a}';
 $string['settingsupdatederror'] = '오류발생. 블로그 사용자 설정을 업데이트할 수 없습니다.';
 $string['siteblogdisable'] = '사이트 블로그가 활성화되어 있지 않음';
+$string['siteblogheading'] = '사이트 블로그';
 $string['siteblogs'] = '모든 사이트 사용자가 블로그 게시물을 볼수 있습니다.';
 $string['tagdatelastused'] = '태그가 사용된 마지막 날';
 $string['tagparam'] = '태그: {$a}';

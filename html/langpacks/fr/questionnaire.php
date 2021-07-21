@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'fr', version '3.8'.
+ * Strings for component 'questionnaire', language 'fr', version '3.11'.
  *
  * @package     questionnaire
  * @category    string
@@ -545,7 +545,7 @@ $string['show_nonrespondents'] = 'Utilisateurs n\'ayant pas répondu';
 $string['started'] = 'commencé';
 $string['strfdate'] = '%d-%m-%Y';
 $string['strfdateformatcsv'] = 'd/m/Y H:i:s';
-$string['strictdateformatting'] = 'Entrez la date en utilisant le sélecteur de date ci-dessous ou en utilisant le format « AAAA-MM-JJ ».';
+$string['strictdateformatting'] = 'Saisir la date en utilisant le sélecteur de date ci-dessous ou en utilisant le format « AAAA / MM / JJ ».';
 $string['subject'] = 'Sujet';
 $string['submissionnotificationhtmlanon'] = 'Il y a un <a href="{$a->submissionurl}">nouvel envoi</a> du questionnaire « {$a->name} ».';
 $string['submissionnotificationhtmluser'] = '<a href="{$a->profileurl}">{$a->username}</a>  a modifié sa <a href="{$a->submissionurl}">réponse</a> au questionnaire « {$a->name} » dans le cours « {$a->coursename} ».';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'sv', version '3.8'.
+ * Strings for component 'debug', language 'sv', version '3.11'.
  *
  * @package     debug
  * @category    string
@@ -41,7 +41,7 @@ $string['invalideventdata'] = 'Felaktiga händelsedata har angivits: {$a}';
 $string['invalidparameter'] = 'Ett felaktigt värde för en parameter har upptäckts';
 $string['invalidresponse'] = 'Ett felaktigt värde för en respons har upptäckts';
 $string['line'] = 'Rad';
-$string['missingconfigversion'] = 'Det går tyvärr inte att fortsätta eftersom tabellen för konfiguration inte innehåller version.';
+$string['missingconfigversion'] = 'Config-tabellen innehåller inte versionen. Du kan inte fortsätta.';
 $string['modulenotexist'] = 'Det finns ingen modul {$a}';
 $string['morethanonerecordinfetch'] = 'Det fanns mer än en post i fetch()!';
 $string['mustbeoveride'] = 'Metoden för abstraktion {$a} måste åsidosättas.';
@@ -54,7 +54,7 @@ $string['noreports'] = 'Det finns inga tillgängliga rapporter';
 $string['notables'] = 'Inga tabeller!';
 $string['outputbuffer'] = 'Utmatningsbuffert';
 $string['phpvaroff'] = 'PHP-server-variabeln \'{$a->name}\' bör vara inställd som Off - {$a->link}';
-$string['phpvaron'] = 'PHP-server-variabeln \'{$a->name}\' är inte inställd som On - {$a->link}';
+$string['phpvaron'] = 'PHP-servervariabeln <code>{$a->name}</em> är inte satt till <em>"On"</em> - {$a->link}';
 $string['sessionmissing'] = '{$a} objekt saknas i sessionen';
 $string['sqlrelyonobsoletetable'] = 'Denna SQL förlitar sig på tabeller \'{$a}\' som inte längre används! Koden behöver korrigeras av en utvecklare.';
 $string['stacktrace'] = 'Stackspårning';

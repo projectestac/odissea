@@ -596,7 +596,7 @@ class core_event_testcase extends advanced_testcase {
         events_update_definition('unittest');
 
         $DB->delete_records_select('events_handlers', "component <> 'unittest'");
-        events_get_handlers('reset');
+
         $this->assertDebuggingCalled(self::DEBUGGING_MSG, DEBUG_DEVELOPER);
         $this->assertEquals(3, $DB->count_records('events_handlers'));
         set_config('loglifetime', 60*60*24*5);
@@ -849,10 +849,19 @@ class core_event_testcase extends advanced_testcase {
         $this->assertSame($event->get_data(), $data);
     }
 
-    /**
-     * @expectedException PHPUnit\Framework\Error\Notice
-     */
     public function test_context_not_used() {
+        // TODO: MDL-69688 - This test is far away from my understanding. It throws a
+        // "Trying to get property 'instanceid' of non-object" notice, so
+        // it's not clear for me what the test is doing. This was detected
+        // when preparing tests for PHPUnit 8 (MDL-67673) and, at the end
+        // all that was done is to move the annotation (deprecated) to
+        // explicit expectation. Still try commenting it out and you'll see
+        // the notice.
+        if (PHP_VERSION_ID >= 80000) {
+            $this->expectWarning();
+        } else {
+            $this->expectNotice();
+        }
         $event = \core_tests\event\context_used_in_event::create(array('other' => array('sample' => 1, 'xx' => 10)));
         $this->assertEventContextNotUsed($event);
 

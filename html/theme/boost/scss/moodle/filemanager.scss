@@ -119,12 +119,15 @@
 }
 
 .fp-viewbar:not(.disabled) a.checked {
-    @extend .btn-secondary.active;
+    background-color: darken(map-get($theme-colors, 'secondary'), 10%);
+    color: color-yiq(darken(map-get($theme-colors, 'secondary'), 10%));
+    border-color: darken(map-get($theme-colors, 'secondary'), 12.5%);
 }
 
 .fp-viewbar.disabled a {
-    @extend .btn.disabled;
-    @extend .btn-secondary.disabled;
+    pointer-events: none;
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
 }
 
 .file-picker .fp-clear-left {
@@ -185,6 +188,7 @@
 
 .fp-iconview .fp-filename-field {
     height: 33px;
+    margin-top: 3px;
     word-wrap: break-word;
     overflow: hidden;
     position: absolute;
@@ -554,6 +558,7 @@ a.ygtvspacer:hover {
 .filemanager.fm-maxfiles .fp-btn-add,
 .filemanager.fm-maxfiles .dndupload-message,
 .filemanager.fm-noitems .fp-btn-download,
+.filemanager.fm-noitems .fp-btn-delete,
 .filemanager .fm-empty-container,
 .filemanager.fm-noitems .filemanager-container .fp-content {
     display: none;
@@ -616,6 +621,9 @@ a.ygtvspacer:hover {
 }
 
 .file-picker .yui3-datatable-header {
+    /*rtl:raw:
+    text-align: right;
+    */
     background: initial;
 }
 
@@ -625,7 +633,7 @@ a.ygtvspacer:hover {
 }
 
 .fitem.disabled .fp-btn-choose {
-    @extend .text-muted;
+    color: $text-muted;
 }
 
 .fitem.disabled .filepicker-filelist .filepicker-filename {
@@ -687,6 +695,9 @@ a.ygtvspacer:hover {
 .filemanager {
 
     .yui3-datatable-header {
+        /*rtl:raw:
+        text-align: right;
+        */
         background: #fff !important;
         border-bottom: 1px solid #ccc !important;
         border-left: 0 solid #fff !important;
@@ -736,10 +747,12 @@ a.ygtvspacer:hover {
 }
 
 .filemanager .fp-iconview .fp-folder.fp-hascontextmenu .fp-contextmenu {
-    display: block;
     position: absolute;
-    right: 7px;
-    bottom: 5px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filemanager .fp-treeview .fp-folder.fp-hascontextmenu .fp-contextmenu,

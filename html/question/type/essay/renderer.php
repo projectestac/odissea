@@ -36,7 +36,7 @@ defined('MOODLE_INTERNAL') || die();
 class qtype_essay_renderer extends qtype_renderer {
     public function formulation_and_controls(question_attempt $qa,
             question_display_options $options) {
-
+        global $CFG;
         $question = $qa->get_question();
         $responseoutput = $question->get_format_renderer($this->page);
 
@@ -45,7 +45,7 @@ class qtype_essay_renderer extends qtype_renderer {
 
         if (!$step->has_qt_var('answer') && empty($options->readonly)) {
             // Question has never been answered, fill it with response template.
-            $step = new question_attempt_step(array('answer'=>$question->responsetemplate));
+            $step = new question_attempt_step(array('answer' => $question->responsetemplate));
         }
 
         if (empty($options->readonly)) {
@@ -55,6 +55,19 @@ class qtype_essay_renderer extends qtype_renderer {
         } else {
             $answer = $responseoutput->response_area_read_only('answer', $qa,
                     $step, $question->responsefieldlines, $options->context);
+            $answer .= html_writer::nonempty_tag('p', $question->get_word_count_message_for_review($step->get_qt_data()));
+
+            if (!empty($CFG->enableplagiarism)) {
+                require_once($CFG->libdir . '/plagiarismlib.php');
+
+                $answer .= plagiarism_get_links([
+                    'context' => $options->context->id,
+                    'component' => $qa->get_question()->qtype->plugin_name(),
+                    'area' => $qa->get_usage_id(),
+                    'itemid' => $qa->get_slot(),
+                    'userid' => $step->get_user_id(),
+                    'content' => $qa->get_response_summary()]);
+            }
         }
 
         $files = '';
@@ -73,6 +86,12 @@ class qtype_essay_renderer extends qtype_renderer {
 
         $result .= html_writer::start_tag('div', array('class' => 'ablock'));
         $result .= html_writer::tag('div', $answer, array('class' => 'answer'));
+
+        // If there is a response and min/max word limit is set in the form then check the response word count.
+        if ($qa->get_state() == question_state::$invalid) {
+            $result .= html_writer::nonempty_tag('div',
+                $question->get_validation_error($step->get_qt_data()), ['class' => 'validationerror']);
+        }
         $result .= html_writer::tag('div', $files, array('class' => 'attachments'));
         $result .= html_writer::end_tag('div');
 
@@ -86,13 +105,28 @@ class qtype_essay_renderer extends qtype_renderer {
      *      not be displayed. Used to get the context.
      */
     public function files_read_only(question_attempt $qa, question_display_options $options) {
+        global $CFG;
         $files = $qa->get_last_qt_files('attachments', $options->context->id);
         $output = array();
 
+        $step = $qa->get_last_step_with_qt_var('attachments');
+
         foreach ($files as $file) {
-            $output[] = html_writer::tag('p', html_writer::link($qa->get_response_file_url($file),
-                    $this->output->pix_icon(file_file_icon($file), get_mimetype_description($file),
-                    'moodle', array('class' => 'icon')) . ' ' . s($file->get_filename())));
+            $out = html_writer::link($qa->get_response_file_url($file),
+                $this->output->pix_icon(file_file_icon($file), get_mimetype_description($file),
+                    'moodle', array('class' => 'icon')) . ' ' . s($file->get_filename()));
+            if (!empty($CFG->enableplagiarism)) {
+                require_once($CFG->libdir . '/plagiarismlib.php');
+
+                $out .= plagiarism_get_links([
+                    'context' => $options->context->id,
+                    'component' => $qa->get_question()->qtype->plugin_name(),
+                    'area' => $qa->get_usage_id(),
+                    'itemid' => $qa->get_slot(),
+                    'userid' => $step->get_user_id(),
+                    'file' => $file]);
+            }
+            $output[] = html_writer::tag('p', $out);
         }
         return implode($output);
     }
@@ -106,7 +140,7 @@ class qtype_essay_renderer extends qtype_renderer {
      */
     public function files_input(question_attempt $qa, $numallowed,
             question_display_options $options) {
-        global $CFG;
+        global $CFG, $COURSE;
         require_once($CFG->dirroot . '/lib/form/filemanager.php');
 
         $pickeroptions = new stdClass();
@@ -122,6 +156,12 @@ class qtype_essay_renderer extends qtype_renderer {
         $pickeroptions->accepted_types = $qa->get_question()->filetypeslist;
 
         $fm = new form_filemanager($pickeroptions);
+        $fm->options->maxbytes = get_user_max_upload_file_size(
+            $this->page->context,
+            $CFG->maxbytes,
+            $COURSE->maxbytes,
+            $qa->get_question()->maxbytes
+        );
         $filesrenderer = $this->page->get_renderer('core', 'files');
 
         $text = '';
@@ -258,7 +298,7 @@ class qtype_essay_format_editor_renderer extends plugin_renderer_base {
                 $this->class_name() . ' qtype_essay_response'));
 
         $output .= html_writer::tag('div', html_writer::tag('textarea', s($response),
-                array('id' => $id, 'name' => $inputname, 'rows' => $lines, 'cols' => 60)));
+                array('id' => $id, 'name' => $inputname, 'rows' => $lines, 'cols' => 60, 'class' => 'form-control')));
 
         $output .= html_writer::start_tag('div');
         if (count($formats) == 1) {
@@ -449,7 +489,7 @@ class qtype_essay_format_plain_renderer extends plugin_renderer_base {
      * @return string the HTML for the textarea.
      */
     protected function textarea($response, $lines, $attributes) {
-        $attributes['class'] = $this->class_name() . ' qtype_essay_response';
+        $attributes['class'] = $this->class_name() . ' qtype_essay_response form-control';
         $attributes['rows'] = $lines;
         $attributes['cols'] = 60;
         return html_writer::tag('textarea', s($response), $attributes);

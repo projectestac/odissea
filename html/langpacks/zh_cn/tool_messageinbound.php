@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_messageinbound', language 'zh_cn', version '3.8'.
+ * Strings for component 'tool_messageinbound', language 'zh_cn', version '3.11'.
  *
  * @package     tool_messageinbound
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'it', version '3.8'.
+ * Strings for component 'quiz', language 'it', version '3.11'.
  *
  * @package     quiz
  * @category    string
@@ -182,6 +182,11 @@ $string['completedon'] = 'Terminato';
 $string['completionattemptsexhausted'] = 'oppure all\'esaurimento dei tentativi consentiti';
 $string['completionattemptsexhausted_help'] = 'L\'attività sarà considerata completata quando lo studente avrà esaurito il massimo numero di tentativi consentiti';
 $string['completionattemptsexhausteddesc'] = 'Esaurimento dei tentativi';
+$string['completiondetail:minattempts'] = 'Svolgere tentativi: {$a}';
+$string['completiondetail:passgrade'] = 'Ottenere la sufficienza';
+$string['completiondetail:passorexhaust'] = 'Ottenere la sufficienza o esaurire tutti i tentativi';
+$string['completionminattempts'] = 'Numero minimo di tentativi:';
+$string['completionminattemptsdesc'] = 'Numero minimo di tentativi obbligatori: {$a}';
 $string['completionpass'] = 'Valutazione sufficiente';
 $string['completionpass_help'] = 'L\'attività sarà considerata completata quando lo studente avrà ottenuto un punteggio pari o superiore alla sufficienza impostata nella registro valutatore.';
 $string['completionpassdesc'] = 'Lo studente deve raggiungere la sufficienza per completare l\'attività';
@@ -342,6 +347,7 @@ $string['eventoverridedeleted'] = 'Eliminata personalizzazione quiz';
 $string['eventoverrideupdated'] = 'Eliminata personalizzazione quiz';
 $string['eventquestionmanuallygraded'] = 'Valutata domanda manualmente';
 $string['eventquizattemptabandoned'] = 'Abbandonato tentativo quiz';
+$string['eventquizattemptregraded'] = 'Rivalutato tentativo quiz';
 $string['eventquizattemptstarted'] = 'Avviato tentativo quiz';
 $string['eventquizattemptsubmitted'] = 'Inviato tentativo quiz';
 $string['eventquizattempttimelimitexceeded'] = 'Superato tempo limite tentativo quiz';
@@ -404,6 +410,7 @@ $string['gradesdeleted'] = 'Valutazioni quiz cancellate';
 $string['gradesofar'] = '<b>{$a->method}: {$a->mygrade} / {$a->quizgrade}</b>.';
 $string['gradetopassmustbeset'] = 'La sufficienza non può essere zero poiché il completamento del quiz è impostato per richiedere la sufficienza. Per favore imposta un valore diverso da zero.';
 $string['gradetopassnotset'] = 'Il quiz non ha una sufficienza impostata. E\' possibile impostarla nella sezione "Valutazione" delle impostazioni del quiz.';
+$string['gradetopassoutof'] = 'Sufficienza: {$a->grade} su {$a->maxgrade}';
 $string['gradingdetails'] = 'Punteggi di questo invio: {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Tenendo conto delle penalità  precedenti, questo dà  <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Questo invio ha ricevuto una penalità  di {$a}.';
@@ -605,6 +612,8 @@ $string['overridedeleteusersure'] = 'Sei sicuro di eliminare la personalizzazion
 $string['overridegroup'] = 'Personalizzazione per il gruppo';
 $string['overridegroupeventname'] = '{$a->quiz} - {$a->group}';
 $string['overrides'] = 'Personalizzazioni';
+$string['overridessummarygroup'] = 'Gruppi: {$a}';
+$string['overridessummaryuser'] = 'Utenti: {$a}';
 $string['overrideuser'] = 'Personalizzazione per l\'utente';
 $string['overrideusereventname'] = '{$a->quiz} - Personalzizzazione';
 $string['page-mod-quiz-attempt'] = 'Pagina del tentativo del quiz';
@@ -709,6 +718,7 @@ $string['quiz:preview'] = 'Visualizzare anteprima quiz';
 $string['quiz:regrade'] = 'Rivalutare i tentativi dei quiz';
 $string['quiz:reviewmyattempts'] = 'Rivedere i propri tentativi';
 $string['quiz:view'] = 'Visualizzare informazioni sui quiz';
+$string['quiz:viewoverrides'] = 'Visualizzare personalizzazioni quiz';
 $string['quiz:viewreports'] = 'Visualizzare report sui quiz';
 $string['quizavailable'] = 'Il quiz è disponibile fino a: {$a}';
 $string['quizclose'] = 'Chiusura';
@@ -731,6 +741,7 @@ $string['quizopens'] = 'Quiz disponibile';
 $string['quizopenwillclose'] = 'Questo quiz è aperto, sarà chiuso il {$a} alle';
 $string['quizordernotrandom'] = 'Ordinamento del quiz non casuale';
 $string['quizorderrandom'] = '* Ordinamento del quiz casuale';
+$string['quizreport'] = 'Report del quiz';
 $string['quizsettings'] = 'Impostazioni quiz';
 $string['quiztimer'] = 'Quiz Timer';
 $string['quizwillopen'] = 'Questo quiz sarà aperto il {$a}';

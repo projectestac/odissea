@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'pt', version '3.8'.
+ * Strings for component 'qtype_ddmarker', language 'pt', version '3.11'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -31,7 +31,7 @@ $string['answer'] = 'Resposta';
 $string['bgimage'] = 'Imagem de fundo';
 $string['clearwrongparts'] = 'Mover os marcadores arrastados incorretamente para a sua posição inicial na imagem abaixo';
 $string['coords'] = 'Coordenadas';
-$string['correctansweris'] = 'A resposta correta é: {$a}';
+$string['correctansweris'] = 'Resposta correta: {$a}';
 $string['draggableimage'] = 'Imagem arrastável';
 $string['draggableitem'] = 'Item arrastável';
 $string['draggableitemheader'] = 'Item arrastável {$a}';
@@ -84,7 +84,10 @@ $string['pluginnamesummary'] = 'Os marcadores podem ser arrastados e largados em
 Nota: este tipo de pergunta não é acessível a utilizadores com deficiência visual.';
 $string['previewareaheader'] = 'Pré-visualização';
 $string['previewareamessage'] = 'Selecione um ficheiro de imagem de fundo, insira os seus quadros de texto para marcadores e defina as áreas para largar, na imagem de fundo, onde estes deverão ser largados.';
-$string['privacy:metadata'] = 'O módulo Pergunta do tipo Arrastar e largar numa área não armazena quaisquer dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Arrastar e largar numa área permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
+$string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
+$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das é o \'Interativo com várias tentativas\' ou \'Modo adaptável \'.';
+$string['privacy:preference:shuffleanswers'] = 'Se as respostas devem, ou não, ser baralhadas automaticamente.';
 $string['refresh'] = 'Atualizar a pré-visualização';
 $string['shape'] = 'Forma';
 $string['shape_circle'] = 'Círculo';

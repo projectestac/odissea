@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_menu', language 'it', version '3.8'.
+ * Strings for component 'profilefield_menu', language 'it', version '3.11'.
  *
  * @package     profilefield_menu
  * @category    string

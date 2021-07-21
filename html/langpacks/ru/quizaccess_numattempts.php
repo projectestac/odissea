@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_numattempts', language 'ru', version '3.8'.
+ * Strings for component 'quizaccess_numattempts', language 'ru', version '3.11'.
  *
  * @package     quizaccess_numattempts
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'Разрешено попыток: {$a}';
 $string['pluginname'] = 'Правило доступа к тесту: количество попыток';
+$string['privacy:metadata'] = 'Плагин правила доступа к тесту «Количество попыток» не хранит никаких личных данных.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'gl', version '3.8'.
+ * Strings for component 'gradingform_guide', language 'gl', version '3.11'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -51,7 +51,7 @@ $string['criterionremark'] = 'Comentario de criterio {$a}';
 $string['definemarkingguide'] = 'Definir a guía de corrección';
 $string['description'] = 'Descrición';
 $string['descriptionmarkers'] = 'Descrición para correctores';
-$string['descriptionstudents'] = 'Descrición para alumnos';
+$string['descriptionstudents'] = 'Descrición para os alumnos';
 $string['err_maxscoreisnegative'] = 'A puntuación máxima non é válida, non se permiten valores negativos';
 $string['err_maxscorenotnumeric'] = 'A puntuación máxima do criterio ten que ser numérica';
 $string['err_nocomment'] = 'O comentario non pode estar baleiro';
@@ -64,7 +64,7 @@ $string['err_scoreisnegative'] = 'A puntuación dada a «{$a->criterianame}» no
 $string['err_shortnametoolong'] = 'O nome do criterio debe ter menos de 256 caracteres';
 $string['gradingof'] = 'Cualificando {$a}';
 $string['guide'] = 'Guía de corrección';
-$string['guidemappingexplained'] = 'AVISO: A súa guía de corrección ten unha cualificación máxima de <b>{$a->maxscore} puntos</b>, mais cualificación máxima estabelecida é de {$a->modulegrade}. A puntuación máxima estabelecida na guía de corrección será modificada a cualificación máxima no módulo.<br />
+$string['guidemappingexplained'] = 'ADVERTENCIA: A súa guía de corrección ten unha cualificación máxima de <b>{$a->maxscore} puntos</b>, mais cualificación máxima estabelecida é de {$a->modulegrade}. A puntuación máxima estabelecida na guía de corrección será modificada a cualificación máxima no módulo.<br />
      As puntuacións intermedias converteranse respectivamente e redondearanse a cualificación máis próxima dispoñíbel.';
 $string['guidenotcompleted'] = 'Forneza unha cualificación correcta para cada criterio';
 $string['guideoptions'] = 'Opcións da guía de correccións';
@@ -74,7 +74,7 @@ $string['hidestudentdesc'] = 'Agochar as descricións dos criterios para os alum
 $string['insertcomment'] = 'Inserir comentarios empregados con frecuencia';
 $string['maxscore'] = 'Corrección máxima';
 $string['name'] = 'Nome';
-$string['needregrademessage'] = 'A definición da guía de corrección foi cambiada despois de que este alumno fose cualificado. O alumno non pode ver esta guía de corrección ata que vostede comprobe a guía de corrección e actualice a cualificación.';
+$string['needregrademessage'] = 'A definición da guía de corrección foi cambiada após que este alumno fose cualificado. O alumno non pode ver esta guía de corrección ata que vostede comprobe a guía de corrección e actualice a cualificación.';
 $string['outof'] = 'Puntuación de {$a}';
 $string['pluginname'] = 'Guía de corrección';
 $string['previewmarkingguide'] = 'Vista previa da guía de corrección';

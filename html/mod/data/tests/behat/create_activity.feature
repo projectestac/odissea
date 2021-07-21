@@ -16,8 +16,10 @@ Feature: Teachers can enable comments only if comments are enabled at site level
       | user | course | role |
       | teacher1 | C1 | editingteacher |
     When I log in as "teacher1"
-    And I am on "Course 1" course homepage with editing mode on
-    And I add a "Database" to section "1"
+    And I am on "Course 1" course homepage
+    And I press "Turn editing on"
+    And I press "Add an activity or resource"
+    And I click on "Add a new Database" "link" in the "Add an activity or resource" "dialogue"
     And I expand all fieldsets
     And "Allow comments on entries" "field" should exist
     And I set the field "Name" to "Test Database name"
@@ -26,7 +28,8 @@ Feature: Teachers can enable comments only if comments are enabled at site level
     # Disable comments in site config.
     And the following config values are set as admin:
       | usecomments | 0 |
-    And I add a "Database" to section "1"
+    And I press "Add an activity or resource"
+    And I click on "Add a new Database" "link" in the "Add an activity or resource" "dialogue"
     And I expand all fieldsets
     And I set the field "Name" to "Test Database name 2"
     And "Allow comments on entries" "field" should not exist

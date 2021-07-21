@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_importhtml', language 'sv', version '3.8'.
+ * Strings for component 'booktool_importhtml', language 'sv', version '3.11'.
  *
  * @package     booktool_importhtml
  * @category    string
@@ -31,7 +31,8 @@ $string['import'] = 'Importera kapitel';
 $string['importhtml:import'] = 'Importera kapitel';
 $string['importing'] = 'Importerar';
 $string['importingchapters'] = 'Importerar kapitel till bok';
-$string['pluginname'] = 'Bok kapitelimport';
+$string['pluginname'] = 'Bokkapitelimport';
+$string['privacy:metadata'] = 'Pluginmodulen Kapitelimport lagrar ingen personinformation.';
 $string['relinking'] = 'Länkar tillbaka';
 $string['type'] = 'Typ';
 $string['typeonefile'] = 'En HTML fil med rubriker som kapitel';

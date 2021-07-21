@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'ja', version '3.8'.
+ * Strings for component 'message_email', language 'ja', version '3.11'.
  *
  * @package     message_email
  * @category    string
@@ -31,6 +31,7 @@ $string['emaildigestunreadmessages'] = '未読メッセージ';
 $string['emaildigestviewallmessages'] = 'すべてのメッセージを表示する';
 $string['emailonlyfromnoreplyaddress'] = '常にno-replyアドレスからメールを送信する';
 $string['ifemailleftempty'] = '{$a} に通知を送信するには空白にしてください。';
+$string['messagedigestemailsubject'] = '{$a}: メッセージダイジェスト';
 $string['pluginname'] = 'メール';
 $string['privacy:metadata:attachment'] = 'ファイルシステムのファイルです。';
 $string['privacy:metadata:attachname'] = '添付ファイル名です (拡張子はMIMEを示します)。';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'ja', version '3.8'.
+ * Strings for component 'tool_replace', language 'ja', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = '追加スキップテーブル';
+$string['additionalskiptables_desc'] = 'データベース検索および置換時にスキップするテーブルリスト (カンマ区切り) です。';
 $string['cannotfit'] = '置換がオリジナルより長く短縮できないため、継続できません。';
 $string['disclaimer'] = '私はこの処理のリスクを理解しています。';
 $string['doit'] = 'はい、実行してください!';

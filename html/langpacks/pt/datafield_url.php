@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datafield_url', language 'pt', version '3.8'.
+ * Strings for component 'datafield_url', language 'pt', version '3.11'.
  *
  * @package     datafield_url
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'ar', version '3.8'.
+ * Strings for component 'quizaccess_timelimit', language 'ar', version '3.11'.
  *
  * @package     quizaccess_timelimit
  * @category    string
@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['confirmstart'] = 'محاولتك ستكون محددة بوقت مقداره {$a}. عندما تبدأ، سيبدأ عداد الوقت التنازلي بالحساب ولا يمكن إيقافه. عليك إنهاء المحاولة قبل انتهاء الوقت المحدد لها. هل أنت متأكد من رغبتك بالبدء الآن؟';
 $string['confirmstartheader'] = 'محدد الوقت';
 $string['pluginname'] = 'نظام الوصول للاختبار بوقت محدد';
-$string['privacy:metadata'] = 'البرنامج المساعد Time limit quiz access rule لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق قاعدة الوصول للاختبار ذو محدد الوقت لا يخزن أي بيانات شخصية.';
 $string['quiztimelimit'] = 'الحد الزمني: {$a}';

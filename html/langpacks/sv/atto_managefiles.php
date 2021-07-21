@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_managefiles', language 'sv', version '3.8'.
+ * Strings for component 'atto_managefiles', language 'sv', version '3.11'.
  *
  * @package     atto_managefiles
  * @category    string
@@ -27,10 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['deleteselected'] = 'Radera valda filer';
 $string['filemanager'] = 'Filhanteraren';
+$string['hasmissingfiles'] = 'Varning! Följande filer som refereras till i textområdet verkar saknas:';
 $string['managefiles'] = 'Hantera filer';
 $string['missingfiles'] = 'Saknade filer';
 $string['pluginname'] = 'Hantera filer';
-$string['privacy:metadata'] = 'Plugin-modulen atto_managefiles lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_managefiles lagrar ingen personinformation.';
 $string['unusedfilesdesc'] = 'Följande filer används inte i textområdet';
 $string['unusedfilesheader'] = 'Oanvända filer';
 $string['unusedfilesremovalnotice'] = 'Eventuella oanvända filer tas bort då ändringarna sparas.';

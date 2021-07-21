@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_immediatefeedback', language 'sv', version '3.8'.
+ * Strings for component 'qbehaviour_immediatefeedback', language 'sv', version '3.11'.
  *
  * @package     qbehaviour_immediatefeedback
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Ofullständig';
 $string['pluginname'] = 'Omedelbar återkoppling';
+$string['privacy:metadata'] = 'Pluginmodulen Omedelbar återkoppling frågebeteende lagrar ingen personinformation.';

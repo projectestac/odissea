@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'eu', version '3.8'.
+ * Strings for component 'auth_mnet', language 'eu', version '3.11'.
  *
  * @package     auth_mnet
  * @category    string
@@ -60,7 +60,7 @@ $string['privacy:metadata:mnet_external:lastaccess'] = 'Erabiltzailea gunean azk
 $string['privacy:metadata:mnet_external:lastlogin'] = 'Erabiltzaile honen azken saio-hasiera.';
 $string['privacy:metadata:mnet_external:lastname'] = 'Erabiltzailearen abizena.';
 $string['privacy:metadata:mnet_external:lastnamephonetic'] = 'Erabiltzailearen abizenaren inguruko xehetasun fonetikoak.';
-$string['privacy:metadata:mnet_external:maildigest'] = 'Erabiltzaile honentzako posta elektroniko bidezko banaketa-aukeraren ezarpena.';
+$string['privacy:metadata:mnet_external:maildigest'] = 'Erabiltzaile honentzako posta elektroniko bidezko laburpen-motarentzako ezarpena.';
 $string['privacy:metadata:mnet_external:maildisplay'] = 'Erabiltzailearen helbide elektronikoa beste erabiltzaileei erakustekoaren inguruko hobespena.';
 $string['privacy:metadata:mnet_external:middlename'] = 'Erabiltzailearen bigarren izena';
 $string['privacy:metadata:mnet_external:msn'] = 'Erabiltzailearen MSN identifikatzailea';

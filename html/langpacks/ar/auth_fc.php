@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_fc', language 'ar', version '3.8'.
+ * Strings for component 'auth_fc', language 'ar', version '3.11'.
  *
  * @package     auth_fc
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_fcchangepasswordurl'] = 'عنوان تغير كلمة المرور';
+$string['auth_fcconnfail'] = 'فشل الاتصال مع Errno: {$a->no} وعبارة الخطأ: {$a->str}';
 $string['auth_fccreators'] = 'قائمة المجموعاتِ التي أعضائهم يَسْمح لهم انشاء مناهج دراسية جديدة. قم بفصل المجموعات المتعدّدة باستخدام \'؛ \'. يجب أن تكون الأسماء مكتوبة بالضبط  كما هي على الخادمِ FirstClass. النظام حساس لحجم الحروفُ.';
 $string['auth_fccreators_key'] = 'منشؤن';
 $string['auth_fcdescription'] = 'هذه الطريقة تستعمل مخدم FisrtClass للتأكد من مدى صحة اسم المستخدم وكلمة المرور المعطاة.';
@@ -37,5 +38,5 @@ $string['auth_fcpasswd'] = 'كلمة مرور للحساب السابق';
 $string['auth_fcpasswd_key'] = 'كلمة مرور';
 $string['auth_fcuserid'] = 'تعريف مستخدم لحساب FisrtClass بصلاحيات حزمة نائب مدير.';
 $string['auth_fcuserid_key'] = 'اسم مستخدم';
-$string['pluginname'] = 'استخدم خادم درجة أولى';
+$string['pluginname'] = 'مخدم الدرجة الأولى';
 $string['privacy:metadata'] = 'إن ملحق المصادقة مخدم FirstClass لا يخزن أي بيانات شخصية.';

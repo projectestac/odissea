@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'sv', version '3.8'.
+ * Strings for component 'form', language 'sv', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addfields'] = 'Lägg till {$a} fält till formuläret';
+$string['addfields'] = 'Lägg till {$a} fält till formulär';
 $string['advancedelement'] = 'Avancerat element';
 $string['close'] = 'Stäng';
 $string['custom'] = 'Anpassat';
@@ -41,16 +41,19 @@ $string['err_minlength'] = 'Du behöver ange minst {$a->format} tecken här.';
 $string['err_nonzero'] = 'Du måste mata in ett tal som inte inleds med 0 här.';
 $string['err_nopunctuation'] = 'Du får inte mata in några stora skiljetecken (. ! ? etc) här.';
 $string['err_numeric'] = 'Du måste ange ett tal här.';
+$string['err_positiveint'] = 'Här måste du ange ett tal som är större än 0.';
 $string['err_rangelength'] = 'Du måste mata in mellan {$a->format[0]} och {$a->format[1]} tecken här.';
 $string['err_required'] = 'Du måste ange ett värde här.';
 $string['err_wrappingwhitespace'] = 'Värdet får inte börja eller sluta med blanksteg eller radmatning';
+$string['err_wrongfileextension'] = 'Några av filerna ({$a->wrongfiles}) kan inte laddas upp. Tillåtna filtyper är {$a->allowlist}';
 $string['filesofthesetypes'] = 'Accepterade filtyper:';
 $string['filetypesany'] = 'Alla filtyper';
 $string['filetypesnotall'] = 'Det är inte tillåtet att välja \'Alla filtyper\' här';
+$string['filetypesnotallowed'] = 'Dessa filtyper är inte tillåtna här: {$a}';
 $string['filetypesnotwhitelisted'] = 'Dessa filtyper är inte tillåtna här: {$a}';
 $string['filetypesothers'] = 'Övriga filer';
 $string['filetypesunknown'] = 'Okända filtyper: {$a}';
-$string['general'] = 'Allmänna data';
+$string['general'] = 'Allmänt';
 $string['hideadvanced'] = 'Dölj avancerade egenskaper';
 $string['hour'] = 'Timme';
 $string['minute'] = 'Minut';
@@ -61,6 +64,7 @@ $string['mustbeoverriden'] = 'Den abstrakta <code>form_definition()</code>-metod
 $string['newvaluefor'] = 'Nytt värde för {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Det finns ingen metod för att lägga till en hjälpknapp till en komponent i ett formulär {$a->name} (klass {$a->classname})';
 $string['nonexistentformelements'] = 'Försöker lägga till hjälpknappar till icke-existerande formulärelement: {$a}';
+$string['nopermissionform'] = 'Du har inte behörighet till detta formulär.';
 $string['noselection'] = 'Inga val gjorda';
 $string['nosuggestions'] = 'Inga förslag';
 $string['novalue'] = 'Inget angivet';
@@ -77,10 +81,11 @@ $string['security'] = 'Säkerhet';
 $string['selectallornone'] = 'Välj alla/ingen';
 $string['selected'] = 'Vald';
 $string['selecteditems'] = 'Valda objekt:';
-$string['showadvanced'] = 'Visa avancerad';
+$string['showadvanced'] = 'Visa avancerade egenskaper';
 $string['showless'] = 'Visa mindre...';
 $string['showmore'] = 'Visa mer...';
 $string['somefieldsrequired'] = '{$a} = obligatoriskt fält';
+$string['suggestions'] = 'Förslag';
 $string['time'] = 'Tid ';
 $string['timeunit'] = 'Tidsenhet';
 $string['timing'] = 'Timing';

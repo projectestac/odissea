@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'fr', version '3.8'.
+ * Strings for component 'gradingform_guide', language 'fr', version '3.11'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -91,6 +91,7 @@ $string['regrademessage1'] = 'Vous allez enregistrer des modifications d\'un gui
 $string['regrademessage5'] = 'Vous allez enregistrer d\'importantes modifications d\'un guide d\'évaluation qui a déjà été utilisé pour donner des notes. Les notes ne seront pas modifiées dans le carnet de notes, mais le guide ne sera visible pour les participants que lorsque vous aurez réévalué leur travail.';
 $string['regradeoption0'] = 'Ne pas marquer pour réévaluation';
 $string['regradeoption1'] = 'Marquer pour réévaluation';
+$string['remark_help'] = 'Saisir des commentaires supplémentaires sur ce critère.';
 $string['restoredfromdraft'] = 'Remarque : l\'enregistrement de la dernière évaluation de cette personne n\'a pas été pris en compte de manière correcte. Les notes temporaires ont été restaurées. Si vous voulez annuler ces modifications, veuillez cliquer sur le bouton « Annuler » ci-dessous.';
 $string['save'] = 'Enregistrer';
 $string['saveguide'] = 'Enregistrer le guide d\'évaluation et le rendre disponible';

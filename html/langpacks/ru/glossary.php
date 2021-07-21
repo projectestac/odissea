@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ru', version '3.8'.
+ * Strings for component 'glossary', language 'ru', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -110,6 +110,7 @@ $string['commentdeleted'] = 'Комментарий был удален.';
 $string['comments'] = 'Комментарии';
 $string['commentson'] = 'Комментарии о';
 $string['commentupdated'] = 'Комментарий был изменен';
+$string['completiondetail:entries'] = 'Внести записи: {$a}';
 $string['completionentries'] = 'Студент должен создать записей:';
 $string['completionentriesdesc'] = 'Студент должен создать не менее {$a} записи(ей)';
 $string['completionentriesgroup'] = 'Требуется записей';
@@ -194,6 +195,7 @@ $string['entryexported'] = 'Запись успешно экспортирова
 $string['entryishidden'] = '(эта запись сейчас спрятана)';
 $string['entryleveldefaultsettings'] = 'Настройки уровня записи по умолчанию';
 $string['entrylink'] = 'Ссылка на запись: {$a}';
+$string['entrynotapproved'] = 'Запись не одобрена';
 $string['entrysaved'] = 'Запись сохранена';
 $string['entryupdated'] = 'Запись обновлена';
 $string['entryusedynalink'] = 'Эта запись должна автоматически связываться';
@@ -272,6 +274,8 @@ $string['importentriesfromxml'] = 'Импорт записей из XML-файл
 $string['includegroupbreaks'] = 'Включить разделение на группы';
 $string['indicator:cognitivedepth'] = 'Глоссарий: познавательный аспект';
 $string['indicator:cognitivedepth_help'] = 'Этот показатель основан на глубине познания, достигнутой студентом при работе с элементом курса «Глоссарий».';
+$string['indicator:cognitivedepthdef'] = 'Глоссарий: познавательный аспект';
+$string['indicator:cognitivedepthdef_help'] = 'Участник достиг этого процента познавательного взаимодействия, предлагаемого элементом курса «Глоссарий» в течение этого интервала анализа (Уровни = Нет просмотра, Просмотр, Отправка)';
 $string['indicator:socialbreadth'] = 'Глоссарий: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с элементом Глоссарий.';
 $string['indicator:socialbreadthdef'] = 'Глоссарий: социальный аспект';

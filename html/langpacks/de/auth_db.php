@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'de', version '3.8'.
+ * Strings for component 'auth_db', language 'de', version '3.11'.
  *
  * @package     auth_db
  * @category    string
@@ -55,7 +55,8 @@ $string['auth_dbnoexttable'] = 'Externe Tabelle ist nicht spezifiziert.';
 $string['auth_dbnouserfield'] = 'Externes Nutzer-Datenfeld  ist nicht spezifiziert.';
 $string['auth_dbpass'] = 'Kennwort, das zum Nutzernamen gehört';
 $string['auth_dbpass_key'] = 'Kennwort';
-$string['auth_dbpasstype'] = '<p>Geben Sie an, welches Format das Kennwortfeld benutzt.</p><p>Verwenden Sie \'internal\', falls die externe Datenbank die Anmeldenamen und E-Mail-Adresse verwalten soll, aber Moodle für die Kennwörter zuständig ist. In diesem Fall <i>müssen</i> Sie ein E-Mail-Feld in der externen Datenbank bereitstellen und die beiden Scripte admin/cron.php und auth/db/cli/sync_users.php regelmäßig ausführen! Moodle sendet an neue Nutzer/innen eine E-Mail mit einem temporären Kennwort.</p>';
+$string['auth_dbpasstype'] = '<p>Geben Sie das Format an, das im Kennwortfeld verwendet wird.</p>
+<p>Verwenden Sie \'intern\', wenn die externe Datenbank Nutzernamen und E-Mail-Adressen verwalten soll, aber Moodle für die Kennwörter zuständig ist. In diesem Fall müssen Sie ein ausgefülltes E-Mail-Adressfeld in der externen Datenbank angeben und die geplante Task \\auth_db\\task\\sync_users aktivieren. Moodle sendet automatisch eine E-Mail mit einem temporären Kennwort an neue Nutzer/innen.</p>';
 $string['auth_dbpasstype_key'] = 'Kennwortformat';
 $string['auth_dbreviveduser'] = 'Entsperrte Nutzer/in {$a->name} ID {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Fehler beim Entsperren von Nutzer/in {$a}';

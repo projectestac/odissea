@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ru', version '3.8'.
+ * Strings for component 'label', language 'ru', version '3.11'.
  *
  * @package     label
  * @category    string
@@ -31,10 +31,12 @@ $string['configdndresizewidth'] = 'Если Пояснение создано п
 $string['dndmedia'] = 'Перетаскивание медиа-файла';
 $string['dndresizeheight'] = 'Изменить высоту при перетаскивании';
 $string['dndresizewidth'] = 'Изменить ширину при перетаскивании';
-$string['dnduploadlabel'] = 'Добавить изображение на страницу курса';
+$string['dnduploadlabel'] = 'Добавить медиа на страницу курса';
 $string['dnduploadlabeltext'] = 'Добавить пояснение на страницу курса';
 $string['indicator:cognitivedepth'] = 'Пояснение: познавательный аспект';
 $string['indicator:cognitivedepth_help'] = 'Этот показатель основан на  глубине познания, достигнутой студентом при работе с ресурсом Пояснение.';
+$string['indicator:cognitivedepthdef'] = 'Пояснение: познавательный аспект';
+$string['indicator:cognitivedepthdef_help'] = 'Участник достиг этого процента познавательного взаимодействия, предлагаемого ресурсом «Пояснение» в течение этого интервала анализа (Уровни = Нет просмотра, Просмотр)';
 $string['indicator:socialbreadth'] = 'Пояснение: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Пояснение.';
 $string['indicator:socialbreadthdef'] = 'Пояснение: социальный аспект';

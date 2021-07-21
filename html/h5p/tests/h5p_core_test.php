@@ -25,6 +25,8 @@
 
 namespace core_h5p;
 
+use core_h5p\local\library\autoloader;
+
 defined('MOODLE_INTERNAL') || die();
 
 /**
@@ -36,9 +38,9 @@ defined('MOODLE_INTERNAL') || die();
  *
  * @runTestsInSeparateProcesses
  */
-class h5p_core_test extends \advanced_testcase {
+class h5p_core_testcase extends \advanced_testcase {
 
-    protected function setup() {
+    protected function setUp(): void {
         global $CFG;
         parent::setUp();
 
@@ -66,8 +68,14 @@ class h5p_core_test extends \advanced_testcase {
 
         // Get info of latest content types versions.
         $contenttypes = $this->core->get_latest_content_types()->contentTypes;
-        // We are installing the first content type.
+        // We are installing the first content type with tutorial and example fields (or the first one if none has them).
         $librarydata = $contenttypes[0];
+        foreach ($contenttypes as $contentype) {
+            if (isset($contenttype->tutorial) && isset($contenttype->example)) {
+                $librarydata = $contenttype;
+                break;
+            }
+        }
 
         $library = [
                 'machineName' => $librarydata->id,
@@ -75,6 +83,13 @@ class h5p_core_test extends \advanced_testcase {
                 'minorVersion' => $librarydata->version->minor,
                 'patchVersion' => $librarydata->version->patch,
         ];
+        // Add example and tutorial to the library.
+        if (isset($librarydata->example)) {
+            $library['example'] = $librarydata->example;
+        }
+        if (isset($librarydata->tutorial)) {
+            $library['tutorial'] = $librarydata->tutorial;
+        }
 
         // Verify that the content type is not yet installed.
         $conditions['machinename'] = $library['machineName'];
@@ -90,6 +105,10 @@ class h5p_core_test extends \advanced_testcase {
         $this->assertEquals($librarydata->id, $typeinstalled->machinename);
         $this->assertEquals($librarydata->coreApiVersionNeeded->major, $typeinstalled->coremajor);
         $this->assertEquals($librarydata->coreApiVersionNeeded->minor, $typeinstalled->coreminor);
+        if (isset($librarydata->tutorial)) {
+            $this->assertEquals($librarydata->tutorial, $typeinstalled->tutorial);
+            $this->assertEquals($librarydata->example, $typeinstalled->example);
+        }
     }
 
     /**
@@ -146,5 +165,49 @@ class h5p_core_test extends \advanced_testcase {
 
         $this->assertEquals($numcontenttypes, count($contentfiles));
         $this->assertCount(0, $result->typesinstalled);
+    }
+
+    /**
+     * Test that if site_uuid is not set, the site is registered and site_uuid is set.
+     *
+     */
+    public function test_get_site_uuid(): void {
+        $this->resetAfterTest(true);
+
+        if (!PHPUNIT_LONGTEST) {
+            $this->markTestSkipped('PHPUNIT_LONGTEST is not defined');
+        }
+
+        // Check that site_uuid does not have a value.
+        $this->assertFalse(get_config('core_h5p', 'site_uuid'));
+
+        $siteuuid = $this->core->get_site_uuid();
+
+        $this->assertSame($siteuuid, get_config('core_h5p', 'site_uuid'));
+
+        // Check that after a new request the site_uuid remains the same.
+        $siteuuid2 = $this->core->get_site_uuid();
+        $this->assertEquals( $siteuuid, $siteuuid2);
+    }
+
+    /**
+     * Test if no handler has been defined.
+     */
+    public function test_get_default_handler() {
+        global $CFG;
+
+        $this->resetAfterTest(true);
+        // Emtpy the h5plibraryhandler setting.
+        $CFG->h5plibraryhandler = '';
+
+        // Get the default habdler library to use in the settings h5p page.
+        // For instance, h5plib_v124.
+        $handlerlib = autoloader::get_default_handler_library();
+        $this->assertNotNull($handlerlib);
+        $this->assertStringNotContainsString($handlerlib, '\local\library\handler');
+        // Get the default handler class.
+        // For instance, \h5plib_v124\local\library\handler.
+        $handlerclass = autoloader::get_default_handler();
+        $this->assertStringEndsWith('\local\library\handler', $handlerclass);
     }
 }

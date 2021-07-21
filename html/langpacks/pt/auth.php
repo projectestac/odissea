@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'pt', version '3.8'.
+ * Strings for component 'auth', language 'pt', version '3.11'.
  *
  * @package     auth
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actauthhdr'] = 'Módulos de autenticação disponíveis';
 $string['allowaccountssameemail'] = 'Contas de utilizador com o mesmo e-mail';
 $string['allowaccountssameemail_desc'] = 'Se ativar esta opção, o mesmo endereço de e-mail poderá ser utilizado em várias contas de utilizador. Esta ação poderá levantar alguns problemas de privacidade e de segurança em determinadas situações, como por exemplo, no envio de e-mails para alteração de senha.';
-$string['alternatelogin'] = 'Se inserir um URL, será utilizado como página de autenticação para este site. A página deverá conter um formulário que tenha a propriedade \'action\' definida para \'<strong>{$a}</strong>\' e os campos de retorno <strong>username</strong> e <strong>password</strong>.<br />Tenha cuidado para não inserir um URL incorreto porque pode bloquear a si mesmo o acesso a este site.<br /> Deixe esta definição em branco para utilizar a página de autenticação predefinida do Moodle.';
+$string['alternatelogin'] = 'Se inserir um URL, será utilizado como página de autenticação para este site. A página deverá conter um formulário que tenha a propriedade \'action\' definida para \'<strong>{$a}</strong>\' e os campos de retorno <strong>username</strong> e <strong>password</strong>.<br />Tenha cuidado para não inserir um URL incorreto porque pode bloquear a si mesmo o acesso a este site.<br />Deixe esta definição vazia para utilizar a página de autenticação predefinida do Moodle.';
 $string['alternateloginurl'] = 'Endereço alternativo para autenticação';
 $string['auth_changepasswordhelp'] = 'Ajuda para alteraração de senha';
 $string['auth_changepasswordhelp_expl'] = 'Mostrar ajuda aos utilizadores que perderam a sua senha {$a}. Será mostrada também ou em vez de <strong>URL para alterar senha</strong> ou a mudança de senha interna do Moodle.';
@@ -69,7 +69,7 @@ $string['auth_user_creation'] = 'Novos utilizadores (anónimos) podem criar cont
 $string['auth_usernameexists'] = 'O nome escolhido já existe. Escolha outro.';
 $string['auth_usernotexist'] = 'Não é possível atualizar o utilizador \'{$a}\' porque não existe na base de dados';
 $string['authenticationoptions'] = 'Opções da autenticação';
-$string['authinstructions'] = 'Deixe este campo em branco para que as instruções de autenticação predefinidas sejam mostradas na página de autenticação. Se pretender disponibilizar instruções personalizadas, introduza-as aqui.';
+$string['authinstructions'] = 'Deixe este campo vazio para que as instruções de autenticação predefinidas sejam mostradas na página de autenticação. Se pretender disponibilizar instruções personalizadas, indique-as aqui.';
 $string['authloginviaemail'] = 'Permitir autenticação por e-mail';
 $string['authloginviaemail_desc'] = 'Permitir que os utilizadores usem o nome de utilizador ou endereço de e-mail (se for único) para se autenticarem no site.';
 $string['auto_add_remote_users'] = 'Adicionar automaticamente utilizadores remotos';
@@ -108,9 +108,9 @@ $string['eventuserloginfailed'] = 'Falhou a autenticação do utilizador';
 $string['forcechangepassword'] = 'Obrigar alteração da senha';
 $string['forcechangepassword_help'] = 'Obrigar os utilizadores a alterar a senha na sua próxima autenticação no Moodle.';
 $string['forcechangepasswordfirst_help'] = 'Obrigar os utilizadores a alterar a senha na sua primeira autenticação no Moodle.';
-$string['forgottenpassword'] = 'Se inserir um URL aqui, será usado neste site como página para recuperação de senha. Este campo foi criado para sites onde a totalidade das senhas é gerida externamente e não pelo Moodle. Deixe em branco se pretende usar a página de recuperação de senha predefinida do Moodle.';
+$string['forgottenpassword'] = 'Se inserir um URL aqui, será usado neste site como página para recuperação de senha. Este campo foi criado para sites onde a totalidade das senhas é gerida externamente e não pelo Moodle. Deixe vazio se pretende usar a página de recuperação de senha predefinida do Moodle.';
 $string['forgottenpasswordurl'] = 'URL para recuperação de senha';
-$string['getrecaptchaapi'] = 'Para poder usar o reCAPTCHA, tem de obter uma chave de API em <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
+$string['getrecaptchaapi'] = 'Para usar o reCAPTCHA, tem de obter uma chave da API em <a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>';
 $string['guestloginbutton'] = 'Botão de entrada como visitante';
 $string['incorrectpleasetryagain'] = 'Incorreto. Por favor, tente novamente.';
 $string['infilefield'] = 'Campo necessário no ficheiro';
@@ -124,7 +124,7 @@ $string['informpasswordpolicy'] = 'A senha tem que ter {$a}';
 $string['instructions'] = 'Instruções';
 $string['internal'] = 'Interno';
 $string['limitconcurrentlogins'] = 'Limitar sessões simultâneas';
-$string['limitconcurrentlogins_desc'] = 'Se ativar esta opção, o número de sessões iniciadas em simultâneo por cada utilizador passará a ser limitado. A sessão iniciada há mais tempo será terminada após o limite de tempo ser atingido. Por favor, tenha em atenção que os utilizadores poderão perder toda a informação ainda não guardada. Esta configuração não é compatível com módulos de autenticação \'Single Sign On\' (SSO).';
+$string['limitconcurrentlogins_desc'] = 'Se ativar esta opção, o número de sessões iniciadas em simultâneo por cada utilizador passará a ser limitado. A sessão iniciada há mais tempo será terminada após o limite de tempo ser atingido. Tenha em atenção que os utilizadores poderão perder toda a informação ainda não guardada. Esta configuração não é compatível com módulos de autenticação \'Single Sign On\' (SSO).';
 $string['locked'] = 'Bloqueado';
 $string['md5'] = 'Criptografia MD5';
 $string['nopasswordchange'] = 'A senha não pode ser modificada.';

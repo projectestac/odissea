@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'eu', version '3.8'.
+ * Strings for component 'license', language 'eu', version '3.11'.
  *
  * @package     license
  * @category    string
@@ -26,11 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allrightsreserved'] = 'Eskubide guztiak erreserbatuta';
+$string['cannotdeletecore'] = 'Ezin da ezabatu lizentzia estandar bat';
+$string['cannotdeletelicenseinuse'] = 'Ezin da ezabatu fitxategiren bati esleituta dagoen lizentzia bat';
 $string['cc'] = 'Creative Commons';
 $string['cc-nc'] = 'Creative Commons - EzKomertziala';
 $string['cc-nc-nd'] = 'Creative Commons - Aitortu-EzKomertziala-LanEratorririkGabe';
 $string['cc-nc-sa'] = 'Creative Commons - Aitortu-EzKomertziala-PartekatuBerdin';
 $string['cc-nd'] = 'Creative Commons - Aitortu-LanEratorririkGabe';
 $string['cc-sa'] = 'Creative Commons - PartekatuBerdin';
+$string['licensenotfoundshortname'] = 'Ezin da aurkitu \'{$a}\' izen laburra duen lizentziarik';
+$string['missinglicensesortorder'] = 'Ezin da lizentzien ordena zehaztu, ordena berrian instalatutako lizentziaren bat ez delako agertzen.';
 $string['public'] = 'Domeinu publikoa';
-$string['unknown'] = 'Bestelako bat';
+$string['unknown'] = 'Zehaztu gabeko lizentzia';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'gl', version '3.8'.
+ * Strings for component 'repository', language 'gl', version '3.11'.
  *
  * @package     repository
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['accessiblefilepicker'] = 'Selector de ficheiros accesíbeis';
 $string['activaterep'] = 'Repositorios activos';
 $string['activerepository'] = 'Engadidos de repositorio dispoñíbeis';
-$string['activitybackup'] = 'Copia de seguranza da actividade';
+$string['activitybackup'] = 'Copia de seguridade da actividade';
 $string['add'] = 'Engadir';
 $string['addfile'] = 'Engadir...';
 $string['addfiletext'] = 'Engadir ficheiro';
@@ -39,14 +39,14 @@ $string['areacourseintro'] = 'Introdución do curso';
 $string['areacourseoverviewfiles'] = 'Imaxe do curso';
 $string['areamainfile'] = 'Ficheiro principal';
 $string['arearoot'] = 'Sistema';
-$string['areauserbackup'] = 'Copia de seguranza do usuario';
+$string['areauserbackup'] = 'Copia de seguridade do usuario';
 $string['areauserdraft'] = 'Versións preliminares';
 $string['areauserpersonal'] = 'Ficheiros privados';
 $string['areauserprofile'] = 'Perfil';
 $string['attachedfiles'] = 'Ficheiros anexos';
 $string['attachment'] = 'Anexo';
 $string['author'] = 'Autor';
-$string['automatedbackup'] = 'Copias de seguranza automatizadas';
+$string['automatedbackup'] = 'Copias de seguridade automatizadas';
 $string['back'] = '&laquo; Atrás';
 $string['backtodraftfiles'] = '&laquo; Volver ao xestor de ficheiros en versión preliminar';
 $string['cachecleared'] = 'Os ficheiros da caché son retirados';
@@ -61,23 +61,23 @@ $string['chooselicense'] = 'Escolla a licenza';
 $string['cleancache'] = 'Limpar os meus ficheiros na caché';
 $string['close'] = 'Pechar';
 $string['commonrepositorysettings'] = 'Axustes comúns do repositorio';
-$string['configallowexternallinks'] = 'Esta opción activa que os usuarios escollan se os elementos multimedia externos se copien ou non en Moodle. Se está desactivada, os medios copiaranse sempre en Moodle (isto é o mellor para a integridade xeral dos datos e da seguranza). Se está activada, os usuarios poderran escoller cada vez que engadan elementos multimedia a un texto.';
+$string['configallowexternallinks'] = 'Esta opción activa que os usuarios escollan se os elementos multimedia externos se copien ou non en Moodle. Se está desactivada, os medios copiaranse sempre en Moodle (isto é o mellor para a integridade xeral dos datos e da seguridade). Se está activada, os usuarios poderran escoller cada vez que engadan elementos multimedia a un texto.';
 $string['configcacheexpire'] = 'Tempo total (en segundos) durante o que os listados de ficheiros están na caché local cando se navega por repositorios externos.';
 $string['configgetfiletimeout'] = 'Tempo de espera en segundos, para descargar un ficheiro externo dentro de Moodle.';
 $string['configsaved'] = 'Configuración gardada.';
-$string['configsyncfiletimeout'] = 'Tempo de espera en segundos, para sincronizar o tamaño do ficheiro externo.';
-$string['configsyncimagetimeout'] = 'Tempo de espera en segundos, para descargar un ficheiro de imaxe dende un repositorio externo durante a sincronización.';
+$string['configsyncfiletimeout'] = 'Tempo de espera en segundos para a sincronización do tamaño do ficheiro externo.';
+$string['configsyncimagetimeout'] = 'Tempo de espera en segundos para descargar un ficheiro de imaxe dende un repositorio externo durante a sincronización.';
 $string['confirmdelete'] = 'Confirma que quere eliminar o repositorio {$a}? Se escolle «Continuar e descargar», os ficheiros referidos a contidos externos descargaranse a Moodle, mais a este proceso levaralle bastante tempo.';
 $string['confirmdeletefile'] = 'Confirma que quere eliminar este ficheiro?';
-$string['confirmdeletefilewithhref'] = 'Confirma que quere eliminar este ficheiro? Hai {$a} alcumes/atallos a ficheiros que usan este ficheiro como orixe. Se continua, estes alcumes converteranse en copias reais.';
+$string['confirmdeletefilewithhref'] = 'Confirma que quere eliminar este ficheiro? Hai {$a} alcumes/atallos a ficheiros que usan este ficheiro como orixe. Se continua, estes alcumes converteranse en copias auténticas.';
 $string['confirmdeletefolder'] = 'Confirma que quere eliminar este cartafol? Eliminaranse todos os ficheiros e subcartafoles.';
 $string['confirmremove'] = 'Confirma que quere retirar o engadido de repositorio {$a}, as súas opcións e <strong>todas as súas instancias</strong>? Se escolle «Continuar e descargar», os ficheiros referidos a contidos externos descargaranse a Moodle, mais a este proceso levaralle bastante tempo.';
-$string['confirmrenamefile'] = 'Confirma que quere renomear/mover este ficheiro? Hai {$a} alcumes/atallos a ficheiros que usan este ficheiro como orixe. Se continua, estes alcumes converteranse en copias reais.';
+$string['confirmrenamefile'] = 'Confirma que quere renomear/mover este ficheiro? Hai {$a} alcumes/atallos a ficheiros que usan este ficheiro como orixe. Se continua, estes alcumes converteranse en copias auténticas.';
 $string['confirmrenamefolder'] = 'Confirma que quere renomear/mover este cartafol? calquera alcume/atallo a ficheiros que fagan referencia a este cartafol converteranse en copias reais.';
 $string['continueuninstall'] = 'Continuar';
 $string['continueuninstallanddownload'] = 'Continuar e descargar';
 $string['copying'] = 'Copiando';
-$string['coursebackup'] = 'Copia de seguranza do curso';
+$string['coursebackup'] = 'Copia de seguridade do curso';
 $string['create'] = 'Crear';
 $string['createfolder'] = 'Crear un cartafol';
 $string['createfolderfail'] = 'Non foi posíbel crear este cartafol';
@@ -179,7 +179,7 @@ $string['nomorefiles'] = 'Non se permiten máis anexos';
 $string['nopathselected'] = 'Aínda non foi seleccionada unha ruta de destino (prema dúas veces no nodo da árbore para seleccionar)';
 $string['nopermissiontoaccess'] = 'Sen permiso para acceder a este repositorio';
 $string['norepositoriesavailable'] = 'Ningún dos seus repositorios actuais pode devolver ficheiros no formato solicitado.';
-$string['norepositoriesexternalavailable'] = 'Ningún dos seus repositorios actuais pode devolver ficheiros externos.';
+$string['norepositoriesexternalavailable'] = 'Vaites, ningún dos seus repositorios actuais pode devolver ficheiros externos.';
 $string['noresult'] = 'No hai resultados da busca';
 $string['notyourinstances'] = 'Non pode ver nin editar instancias do repositorio doutro usuario';
 $string['off'] = 'Activado mais agochado';
@@ -227,10 +227,10 @@ $string['saving'] = 'Gardando';
 $string['search'] = 'Buscar';
 $string['searching'] = 'Buscar en';
 $string['searchrepo'] = 'Buscar repositorio';
-$string['sectionbackup'] = 'Copias de seguranza da sección';
+$string['sectionbackup'] = 'Copias de seguridade da sección';
 $string['select'] = 'Seleccionar';
 $string['setmainfile'] = 'Estabelecer como ficheiro principal';
-$string['setmainfile_help'] = 'Se houber múltiples ficheiros no cartafol, o ficheiro principal é o que aparece ao ver a páxina. Outros ficheiros, coma as imaxes ou vídeos, poden incrustarse dentro deste. No xestor de ficheiros, o ficheiro principal está indicado co seu título resaltado en negriñas.';
+$string['setmainfile_help'] = 'Se houber múltiples ficheiros no cartafol, o ficheiro principal é o que aparece ao ver a páxina. Outros ficheiros, coma as imaxes ou vídeos, poden incrustarse dentro deste. No xestor de ficheiros, o ficheiro principal está indicado co seu título resaltado en grosa.';
 $string['settings'] = 'Axustes';
 $string['setupdefaultplugins'] = 'Axuste dos engadidos predeterminados de repositorio';
 $string['siteinstances'] = 'Instancias de repositorios do sitio';

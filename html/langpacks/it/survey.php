@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'it', version '3.8'.
+ * Strings for component 'survey', language 'it', version '3.11'.
  *
  * @package     survey
  * @category    string
@@ -190,6 +190,7 @@ Le tue risposte saranno considerate con attenzione e ci aiuteranno a migliorare 
 
 Grazie.';
 $string['collespname'] = 'COLLES (Ideale)';
+$string['completiondetail:submit'] = 'Inviare risposte';
 $string['completionsubmit'] = 'Lo studente deve rispondere al sondaggio per completarlo';
 $string['customintro'] = 'Descrizione';
 $string['deleteallanswers'] = 'Cancella tutte le risposte al sondaggio';

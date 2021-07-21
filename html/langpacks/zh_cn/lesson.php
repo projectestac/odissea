@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'zh_cn', version '3.8'.
+ * Strings for component 'lesson', language 'zh_cn', version '3.11'.
  *
  * @package     lesson
  * @category    string
@@ -201,7 +201,7 @@ $string['endoflesson'] = '练习结束';
 $string['enteredthis'] = '输入这个';
 $string['enterpassword'] = '请输入密码：';
 $string['eolstudentoutoftime'] = '注意：您已经超过了本程序教学规定的时间。您最后回答的题目如果是在时限之后作答，那么可能不会被算分。';
-$string['eolstudentoutoftimenoanswers'] = '您没有回答任何题目。您在本程序教学中获得 0 分。';
+$string['eolstudentoutoftimenoanswers'] = '您没有回答任何题目。您在此程序教学中获得 0 分。';
 $string['essay'] = '问答题';
 $string['essayemailmessage2'] = '<p>问答题：<blockquote>{$a->question}</blockquote></p><p>您的回答：<blockquote><em>{$a->response}</em></blockquote></p><p>评分人评论：<blockquote><em>{$a->comment}</em></blockquote></p><p>此问答题您得到了{$a->earned}分（满分{$a->outof}）。</p><p>您此程序教学的成绩已经变为{$a->newgrade}%。</p>';
 $string['essayemailsubject'] = '题目{$a}的成绩';
@@ -221,7 +221,7 @@ $string['false'] = '错误';
 $string['fileformat'] = '文件格式';
 $string['finish'] = '结束';
 $string['firstanswershould'] = '第一个选项应当跳转到"正确"页';
-$string['firstwrong'] = '您答错了。您想再试一次这个题目吗?(即使您现在正确地回答了这个题目，它也不计入您的最终得分。)';
+$string['firstwrong'] = '您的回答不正确。 您想再次尝试此题目吗？(即使您现在正确回答了此题目，它也不会计入您的最终得分。)';
 $string['flowcontrol'] = '流程控制';
 $string['fractionsaddwrong'] = '您选的得分总和不等于 100%<br />而是等于 {$a}%<br />您想回去改正这个问题吗？';
 $string['fractionsnomax'] = '答案中应该有一个是 100%，
@@ -281,7 +281,7 @@ $string['lessonstats'] = '程序教学统计';
 $string['linkedmedia'] = '链接的媒体';
 $string['loginfail'] = '登录错误，请重试…';
 $string['lowscore'] = '低分';
-$string['lowtime'] = '短用时';
+$string['lowtime'] = '低用时';
 $string['manualgrading'] = '问答题评分';
 $string['matchesanswer'] = '答案匹配';
 $string['matching'] = '匹配题';

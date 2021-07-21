@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'sv', version '3.8'.
+ * Strings for component 'choicegroup', language 'sv', version '3.11'.
  *
  * @package     choicegroup
  * @category    string
@@ -77,11 +77,11 @@ $string['displayvertical'] = 'Visa lodrätt';
 $string['double_click_group_legend'] = 'Dubbelklicka på en grupp för att lägga till den i listan.';
 $string['double_click_grouping_legend'] = 'Dubbelklicka på en gruppering för att expandera/stänga den individuellt.';
 $string['event:answered'] = 'Valet är gjort';
-$string['event:answered_desc'] = 'Användare \'{$a→userid}\' har valt en grupp i gruppvalet i modulen \'{$a->contextinstanceid}\'.';
+$string['event:answered_desc'] = 'Användare \'{$a->userid}\' har valt en grupp i gruppvalet i modulen \'{$a->contextinstanceid}\'.';
 $string['event:removed'] = 'Valet är raderat';
-$string['event:removed_desc'] = 'Användare \'{$a→userid}\' har raderat sitt val i gruppvalet i modulen \'{$a->contextinstanceid}\'.';
+$string['event:removed_desc'] = 'Användare \'{$a->userid}\' har raderat sitt val i gruppvalet i modulen \'{$a->contextinstanceid}\'.';
 $string['event:reportviewed'] = 'Rapporten granskad';
-$string['event:reportviewed_desc'] = 'Användare \'{$a→userid}\' har granskat gruppvalsrapporten i modulen \'{$a->contextinstanceid}\'.';
+$string['event:reportviewed_desc'] = 'Användare \'{$a->userid}\' har granskat gruppvalsrapporten i modulen \'{$a->contextinstanceid}\'.';
 $string['expand_all_groupings'] = 'Öppna alla grupperingar';
 $string['expired'] = 'Aktiviteten stängdes tyvärr {$a} och är inte längre tillgänglig';
 $string['fillinatleastoneoption'] = 'Du måste ge åtminstone ett möjligt svar.';
@@ -124,8 +124,8 @@ $string['pleasesetgroups'] = 'Skapa minst en grupp för den här kursen.';
 $string['pleasesetonegroupor'] = 'Skapa minst en grupp för den här kursen.
 <br /><br />
 <ul>
-<li><a href="{$a→linkgroups}">administrera kursens grupper</a></li>
-<li><a href="{$a→linkcourse}">återvänd till kursens framsida</a></li>
+<li><a href="{$a->linkgroups}">administrera kursens grupper</a></li>
+<li><a href="{$a->linkcourse}">återvänd till kursens framsida</a></li>
 </ul>';
 $string['pluginadministration'] = 'Administrera val';
 $string['pluginname'] = 'Gruppval';
@@ -136,7 +136,7 @@ $string['publishafteranswer'] = 'Visa resultaten för studenterna efter att de h
 $string['publishafterclose'] = 'Visa inte resultaten för studenterna förrän gruppen är stängd';
 $string['publishalways'] = 'Visa alltid resultaten för studenterna';
 $string['publishanonymous'] = 'Publisera resultaten anonymt, visa inte studenternas namn';
-$string['publishnames'] = 'Publisera fullständiga resultat, visa studenternas namn';
+$string['publishnames'] = 'Publicera fullständiga resultat, visa studenternas namn';
 $string['publishnot'] = 'Visa inte resultaten för studenterna';
 $string['removemychoicegroup'] = 'Radera mitt val';
 $string['removeresponses'] = 'Radera alla svar';

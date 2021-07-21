@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'eu', version '3.8'.
+ * Strings for component 'grades', language 'eu', version '3.11'.
  *
  * @package     grades
  * @category    string
@@ -140,7 +140,7 @@ $string['coursegradesettings'] = 'Ikastaroaren kalifikazioen ezarpenak';
 $string['coursename'] = 'Ikastaroaren izena';
 $string['coursescales'] = 'Ikastaroaren eskalak';
 $string['coursesettings'] = 'Ikastaroaren ezarpenak';
-$string['coursesettingsexplanation'] = 'Ikastaroen ezarpenetan zehazten da kalifikazio-liburua nola agertuko zaien partaide guztiei ikastaroan.';
+$string['coursesettingsexplanation'] = 'Ikastaro-kalifikazioen ezarpenetan zehazten da kalifikazio-liburua nola agertuko zaien partaide guztiei ikastaroan.';
 $string['coursesiamtaking'] = 'Ikasle naizen ikastaroak';
 $string['coursesiamteaching'] = 'Irakasle naizen ikastaroak';
 $string['coursetotal'] = 'Ikastaroan guztira';
@@ -169,6 +169,7 @@ $string['droplowestvalues'] = 'Baztertu balio txikienak {$a}';
 $string['dropped'] = 'Baztertuta';
 $string['dropxlowest'] = 'Baztertu X baino baxuagoak';
 $string['dropxlowestwarning'] = 'Oharra: \'X baino baxuagorik kontuan ez hartu\' erabiltzen baduzu, kalifikazioak kategoriako item guztiak gehienezko zenbakizko kalifikazio bera dutela suposatzen du. Zenbakizko kalifikazio horiek ezberdinak badira, emaitzak edonolakoak izango dira.';
+$string['duplicatedgradeitem'] = '{$a} (kopia)';
 $string['duplicatescale'] = 'Bikoiztu eskala';
 $string['edit'] = 'Editatu';
 $string['editcalculation'] = 'Editatu kalkulua';
@@ -203,6 +204,7 @@ $string['errorupdatinggradecategoryaggregation'] = 'Errorea {$a->id} IDdun kalif
 $string['errorupdatinggradeitemaggregationcoef'] = 'Errorea {$a->id} IDdun kalifikazio-elementuaren agregazio-koefizientea eguneratzean (pisua edo aparteko kreditua)';
 $string['eventgradedeleted'] = 'Kalifikazioa ezabatu da';
 $string['eventgradeitemcreated'] = 'Kalifikazio-elementua sortu da';
+$string['eventgradeitemdeleted'] = 'Kalifikazio-elementua ezabatu da';
 $string['eventgradeitemupdated'] = 'Kalifikazio-elementua eguneratu da';
 $string['eventgradelettercreated'] = 'Kalifikazio-letra sortu da';
 $string['eventgradeletterdeleted'] = 'Kalifikazio-letra ezabatu da';
@@ -357,7 +359,7 @@ $string['gradetype_help'] = '4 kalifikazio mota daude:
 * Bat ere ez - Ezin da kalifikatu
 * Balioa - Zenbakizko balio bat, gehieneko eta gutxienekoarekin
 * Eskala - Zerrenda bateko elementu bat
-* Testua - Feedback-a bakarrik
+* Testua - Feedback-a soilik
 
 Soilik balioa eta eskala motako kalifikazioak batu daitezke. Jarduera baten kalifikaziorako kalifikazio-mota jardueraren ezarpenek orrian aukeratzen da.';
 $string['gradevaluetoobig'] = 'Kalifikazioren batek gehienez baimendutako {$a} balioa baino balio handiagoa du.';
@@ -443,7 +445,7 @@ $string['itemnamehelp'] = 'Elementu honen izena, moduluak emandakoa';
 $string['items'] = 'Elementuak';
 $string['itemsedit'] = 'Editatu kalifikazio-elementua';
 $string['keephigh'] = 'Mantendu altuena';
-$string['keephigh_help'] = '<p>Ezarriz gero, X kalifikazio altuenak bakarrik gordeko dira, eta X izango da aukera honetarako ezarritako balioa.</p>';
+$string['keephigh_help'] = '<p>Ezarriz gero, soilik X kalifikazio altuenak gordeko dira, eta X izango da aukera honetarako ezarritako balioa.</p>';
 $string['keephighestvalues'] = 'Mantendu baliorik altuenak: {$a}';
 $string['keymanager'] = 'Giltzen kudeatzailea';
 $string['lessthanmin'] = '{$a->itemname}-n {$a->username}-ri emandako kalifikazioa baimendutako txikiena baino baxuagoa da';
@@ -497,7 +499,7 @@ $string['modgradecantchangegradetypemsg'] = 'Kalifikazio batzuk dagoeneko esleit
 $string['modgradecantchangegradetyporscalemsg'] = 'Kalifikazio batzuk dagoeneko esleitu dira, eta ondorioz ezin dira mota eta eskala aldatu.';
 $string['modgradecantchangeratingmaxgrade'] = 'Ezin duzu gehienezko kalifikazioa aldatu puntuazioak dituen jarduerarentzat dagoeneko kalifikazioak daudenean.';
 $string['modgradecantchangescale'] = 'Ezin duzu eskala aldatu, elementu honentzat dagoeneko kalifikazioak daudelako.';
-$string['modgradecategorycantchangegradetypemsg'] = 'Kategoria honekin lotuta dauden kalifikazioa baliogabetuak izan dira. Dagoeneko kalifikazio batzuk esleitu direnez, kalifikazio mota ezin da aldatu. Gehienezko kalifikazioa aldatu nahi baduzu, aurretik existitzen diren kalifikazioak berriz eskalatu nahi dituzun aukeratu behar duzu.';
+$string['modgradecategorycantchangegradetypemsg'] = 'Kategoria honek baliogabetuak izan diren kalifikazio-elementu batzuk ditu. Dagoeneko kalifikazio batzuk esleitu direnez, kalifikazio-mota ezin da aldatu. Gehienezko kalifikazioa aldatu nahi baduzu, aurretik existitzen diren kalifikazioak berriz eskalatu nahi dituzun aukeratu behar duzu.';
 $string['modgradecategorycantchangegradetyporscalemsg'] = 'Kategoria honekin lotuta dauden kalifikazioak baliogabetuak izan dira. Dagoeneko kalifikazio batzuk esleitu direnez, kalifikazio mota ezin da aldatu.';
 $string['modgradecategoryrescalegrades'] = 'Berriz eskalatu baliogabetutako kalifikazioak';
 $string['modgradecategoryrescalegrades_help'] = 'Kalifikazio-liburuko elementu baten gehienezko kalifikazioa aldatzean zehaztu behar duzu dagoeneko existitzen diren ehunekoak ere aldatu beharko diren edo ez.
@@ -702,7 +704,7 @@ $string['resetweights'] = 'Berrabiarazi {$a->itemname}-ren pisuak';
 $string['resetweightsshort'] = 'Berrabiarazi pisuak';
 $string['respectingcurrentdata'] = 'Egungo ezarpenak ez dira aldatu';
 $string['rowpreviewnum'] = 'Aurreikusi zutabeak';
-$string['rowpreviewnum_help'] = 'Inportatzera doazen datuak aurreikusi daitezke inportazioa konfirmatu aurretik. Ezarpen honek zenbat errenkada aurreikusiko diren zehazten du.';
+$string['rowpreviewnum_help'] = 'Inportatzera doazen datuak aurreikusi daitezke inportazioa berretsi aurretik. Ezarpen honek zenbat errenkada aurreikusiko diren zehazten du.';
 $string['savechanges'] = 'Gorde aldaketak';
 $string['savepreferences'] = 'Gorde hobespenak';
 $string['scaleconfirmdelete'] = 'Ziur zaude "{$a}" eskala ezabatu nahi duzula?';
@@ -773,8 +775,8 @@ $string['showquickfeedback'] = 'Erakutsi feedback azkarra';
 $string['showquickfeedback_help'] = 'Gaituz gero, edizioa aktibatuta dagoenean kalifikazio bakoitzarekin batera feedbackaren testurako puntutxoak dituen testu-eremu kutxa bat agertuko da, eta horrela hainbat kalifikazioren feedbackak batera editatzea ahalbidetzen da. Egindako aldaketak gorde eta nabarmentzen dira gorde botoian klik egitean.
 
 Kontuan izan feedbacka kalifikatzaile-txostenean editatzen denean baliogabetu marka jartzen zaiola, eta horrek esan nahi du ondoren ezingo dela feedback hori dagokion jardueratik aldatu.';
-$string['showrange'] = 'Erakutsi ibilarteak';
-$string['showrange_help'] = 'Ibilarteen zutabea erakutsi ala ez';
+$string['showrange'] = 'Erakutsi ibiltarteak';
+$string['showrange_help'] = 'Ibiltarteen zutabea erakutsi ala ez';
 $string['showranges'] = 'Erakutsi ibiltarteak';
 $string['showranges_help'] = 'Gaituz gero, kalifikatzaile-txostenean kategoria eta elementu bakoitzerako kalifikazio-mailak erakusten dituen beste lerro bat erakusten du.';
 $string['showrank'] = 'Erakutsi sailkapena';

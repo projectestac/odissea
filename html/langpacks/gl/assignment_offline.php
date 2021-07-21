@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_offline', language 'gl', version '3.8'.
+ * Strings for component 'assignment_offline', language 'gl', version '3.11'.
  *
  * @package     assignment_offline
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Desconectado';
-$string['privacy:metadata'] = 'O engadido de tarefas sen conexión non almacena ningunha información persoal.';
+$string['pluginname'] = 'Sen conexión';
+$string['privacy:metadata'] = 'O engadido de Tarefas sen conexión non almacena ningunha información persoal.';

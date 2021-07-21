@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_list', language 'ur', version '3.8'.
+ * Strings for component 'block_course_list', language 'ur', version '3.11'.
  *
  * @package     block_course_list
  * @category    string

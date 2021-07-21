@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopeval_best', language 'ru', version '3.8'.
+ * Strings for component 'workshopeval_best', language 'ru', version '3.11'.
  *
  * @package     workshopeval_best
  * @category    string
@@ -34,3 +34,4 @@ $string['comparisonlevel7'] = 'небрежно';
 $string['comparisonlevel9'] = 'очень небрежно';
 $string['configcomparison'] = 'Значение критерия по умолчанию, которое влияет на оценку.';
 $string['pluginname'] = 'Сравнение с лучшей оценкой';
+$string['privacy:metadata'] = 'Плагин сравнения с лучшей оценкой не хранит никаких личных данных. Актуальные   персональные данные об оценках пользователей хранятся в самом модуле Семинара и прилагаются к экспортируемым данным о работах и оценках.';

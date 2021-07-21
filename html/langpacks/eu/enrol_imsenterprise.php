@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_imsenterprise', language 'eu', version '3.8'.
+ * Strings for component 'enrol_imsenterprise', language 'eu', version '3.11'.
  *
  * @package     enrol_imsenterprise
  * @category    string
@@ -74,7 +74,7 @@ $string['processphotowarning'] = 'Kontuz: Irudiak prozesatzeak zerbitzariari lan
 $string['restricttarget'] = 'Prozesatu datuak soilik ondorengo helburua zehaztu bada';
 $string['restricttarget_desc'] = 'IMS Enterprise-ko datu-fitxategi bat "helburu" anitzetarako erabil daiteke - LMS ezberdinak, edota eskola/unibertsitateko sistema ezberdinak. Fitxategian helburuko sistemarako datuak zeintzuk diren zehazteko aukera dago, hauek <properties> etiketaren barruan <target> etiketekin izendatuz.
 
-Orokorrean ez duzu honengatik arduratu behar. Hutsik utzi ezarpen hau eta Moodle-k datuak beti prozesatuko ditu, helburua zehaztuta egon edo ez. Bestela, zehaztu <target> etiketaren barruan erabilitako izen zehatza.';
+Orokorrean ez duzu honengatik arduratu behar. Hutsik utzi ezarpen hau eta Moodlek datuak beti prozesatuko ditu, helburua zehaztuta egon edo ez. Bestela, zehaztu <target> etiketaren barruan erabilitako izen zehatza.';
 $string['roles'] = 'Rolak';
 $string['settingfullname'] = 'IMS deskribapen-etiketa ikastaroaren izen luzerako';
 $string['settingfullnamedescription'] = 'Izen osoa ikastaroaren beharrezko eremua da eta beraz zure IMS Enterprise fitxategiko description etiketan definitu behar duzu';

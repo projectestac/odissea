@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_calculatedsimple', language 'sv', version '3.8'.
+ * Strings for component 'qtype_calculatedsimple', language 'sv', version '3.11'.
  *
  * @package     qtype_calculatedsimple
  * @category    string
@@ -35,6 +35,7 @@ $string['pluginname_help'] = 'Enkla beräkningsfrågor möjliggör individuella 
 $string['pluginnameadding'] = 'Lägg till en enkel beräkning';
 $string['pluginnameediting'] = 'Redigera en enkel beräkningsfråga';
 $string['pluginnamesummary'] = 'En enklare version av beräknade frågor är som numeriska frågor fast med tal som genereras slumpmässigt från en datamängd när testet tas.';
+$string['privacy:metadata'] = 'Pluginmodulen Beräknad enkel frågetyp lagrar ingen personinformation.';
 $string['setno'] = 'Uppsättning {$a}';
 $string['setwildcardvalues'] = 'Uppsättning(ar) av wildcard(s) värden';
 $string['showitems'] = 'Visa';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'notes', language 'sv', version '3.8'.
+ * Strings for component 'notes', language 'sv', version '3.11'.
  *
  * @package     notes
  * @category    string
@@ -54,7 +54,7 @@ $string['nopermissiontodelete'] = 'Du kan inte ta bort den här anteckningen';
 $string['note'] = 'Anteckning';
 $string['notes'] = 'Anteckningar';
 $string['notesdisabled'] = 'Anteckningar är tyvärr inaktiverade';
-$string['notesnotvisible'] = 'Du har inte tillstånd att se anteckningarna';
+$string['notesnotvisible'] = 'Du har inte behörighet att visa anteckningarna';
 $string['nouser'] = 'Du måste välja en användare';
 $string['page-notes-index'] = 'Anteckningar';
 $string['page-notes-x'] = 'Valfri anteckningssida';

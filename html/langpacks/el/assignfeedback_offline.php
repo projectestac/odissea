@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'el', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'el', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -47,6 +47,6 @@ $string['pluginname'] = 'Φύλλο εργασίας βαθμολόγησης ε
 $string['privacy:nullproviderreason'] = 'Αυτό το πρόσθετο δεν διαθέτει βάση δεδομένων για την αποθήκευση πληροφοριών χρήστη. Χρησιμοποιεί μόνο τα API στο mod_assign για να βοηθήσει στην εμφάνιση της διεπαφής βαθμολόγησης.';
 $string['processgrades'] = 'Εισαγωγή βαθμών';
 $string['skiprecord'] = 'Παράλειψη εγγραφής';
-$string['updatedgrades'] = 'Ενημερώθηκαν {$a} βαθμοί και ανατροφοδοτήσεις';
+$string['updatedgrades'] = 'Ενημερώθηκαν <strong>{$a->gradeupdatescount}</strong> βαθμοί  και <strong>{$a->feedbackupdatescount}</strong> στιγμιότυπα ανατροφοδοτήσεων.';
 $string['updaterecord'] = 'Ενημέρωση εγγραφής';
 $string['uploadgrades'] = 'Ανέβασμα φύλλου εργασίας βαθμολόγησης';

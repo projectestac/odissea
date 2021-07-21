@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'es', version '3.8'.
+ * Strings for component 'block_myoverview', language 'es', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -56,42 +56,27 @@ $string['cards'] = 'Tarjetas';
 $string['complete'] = 'Completo';
 $string['completepercent'] = '{$a}% completado';
 $string['courseprogress'] = 'Progreso del curso:';
-$string['defaulttab'] = 'Pestaña por defecto';
-$string['defaulttab_desc'] = 'La pestaña que será mostrada cuando un usuario vea por primera vez su vista general del curso. Al regresar a su vista general del curso, la pestaña activa del usuario es recordada.';
 $string['displaycategories'] = 'Mostrar categorías';
 $string['displaycategories_help'] = 'Mostrar la Categoría del curso en ítems del curso del Área personal incluyendo tarjetas, ítems de la lista e ítems de resumen.';
 $string['favourites'] = 'Destacados';
 $string['future'] = 'Futuros';
 $string['hidden'] = 'Cursos ocultos';
 $string['hiddencourses'] = 'Eliminados de la vista';
-$string['hidecourse'] = 'Eliminados de la vista';
+$string['hidecourse'] = 'Quitar de la vista';
 $string['inprogress'] = 'En progreso';
 $string['lastaccessed'] = 'Último accedido';
 $string['list'] = 'Lista';
-$string['morecourses'] = 'Más cursos';
 $string['myoverview:myaddinstance'] = 'Añadir un nuevo bloque de vista general de cursos al Área personal';
-$string['next30days'] = 'Próximos 30 días';
-$string['next7days'] = 'Próximos 7 días';
 $string['nocourses'] = 'Sin cursos';
-$string['nocoursesfuture'] = 'Sin cursos futuros';
-$string['nocoursesinprogress'] = 'Sin cursos en progreso';
-$string['nocoursespast'] = 'Sin cursos pasados';
-$string['noevents'] = 'No hay actividades próximas pendientes';
 $string['past'] = 'Pasados';
 $string['pluginname'] = 'Vista general de curso';
 $string['privacy:metadata:overviewgroupingpreference'] = 'La preferencia de agrupamiento del bloque Vista general del curso.';
-$string['privacy:metadata:overviewlasttab'] = 'Esto almacena la última pestaña seleccionada por el usuario en el bloque de vista general.';
 $string['privacy:metadata:overviewpagingpreference'] = 'La preferencia de paginado del bloque de Vista general del curso.';
 $string['privacy:metadata:overviewsortpreference'] = 'La preferencia de ordenamiento del bloque Vista general del curso.';
 $string['privacy:metadata:overviewviewpreference'] = 'La preferencia de vista del bloque Vista general del curso.';
 $string['privacy:request:preference:set'] = 'El valor de la configuración \'{$a->name}\' era \'{$a->value}\'';
-$string['recentlyoverdue'] = 'Recientemente vencidas';
 $string['removefromfavourites'] = 'Quitar estrella a este curso';
+$string['shortname'] = 'Nombre corto';
 $string['show'] = 'Mostrar vista';
-$string['sortbycourses'] = 'Ordenar por curso';
-$string['sortbydates'] = 'Ordenar por fecha';
 $string['summary'] = 'Resumen';
-$string['timeline'] = 'Línea de tiempo';
 $string['title'] = 'Nombre del curso';
-$string['viewcourse'] = 'Ver curso';
-$string['viewcoursename'] = 'Ver curso {$a}';

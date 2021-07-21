@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'de', version '3.8'.
+ * Strings for component 'tool_lp', language 'de', version '3.11'.
  *
  * @package     tool_lp
  * @category    string
@@ -116,7 +116,7 @@ $string['idnumber'] = 'ID-Nummer';
 $string['inheritfromframework'] = 'Vom Kompetenzrahmen übernehmen (Standard)';
 $string['itemstoadd'] = 'Hinzuzufügende Werte';
 $string['jumptocompetency'] = 'Zur Kompetenz';
-$string['jumptouser'] = 'Zu Nutzer springen';
+$string['jumptouser'] = 'Zu Nutzer/in springen';
 $string['learningplancompetencies'] = 'Kompetenzen des Lernplans';
 $string['learningplans'] = 'Lernpläne';
 $string['levela'] = 'Level {$a}';

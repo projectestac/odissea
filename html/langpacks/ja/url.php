@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ja', version '3.8'.
+ * Strings for component 'url', language 'ja', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -66,7 +66,7 @@ $string['modulenameplural'] = 'URL';
 $string['page-mod-url-x'] = 'すべてのURLモジュールページ';
 $string['parameterinfo'] = '&amp;parameter=変数';
 $string['parametersheader'] = 'URL変数';
-$string['parametersheader_help'] = 'いくつかの内部Moodle変数が自動的にURLに付加されます。あなたの変数名をテキストボックスに入力した後、必要なマッチング変数を選択してください。';
+$string['parametersheader_help'] = 'このセクションでは内部情報をURLの一部として渡せます。これはURLでパラメータを取得するインタラクティブなWebページで現在のユーザ名等を渡したい場合に有用です。テキストボックスにURLのパラメータ名を入力して対応するサイト変数を選択してください。';
 $string['pluginadministration'] = 'URLモジュール管理';
 $string['pluginname'] = 'URL';
 $string['popupheight'] = 'ポップアップ高 (ピクセル)';

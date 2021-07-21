@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_atto', language 'ar', version '3.8'.
+ * Strings for component 'editor_atto', language 'ar', version '3.11'.
  *
  * @package     editor_atto
  * @category    string
@@ -41,15 +41,15 @@ $string['errortextrecovery'] = 'للأسف، تعذر استرجاع النسخ�
 $string['infostatus'] = 'المعلومات';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
 $string['pluginname'] = 'محرر Atto HTML';
-$string['privacy:metadata:database:atto_autosave'] = 'مسودات محرر النصوص المحفوظة تلقائياً.';
-$string['privacy:metadata:database:atto_autosave:drafttext'] = 'النص الذي تم حفظه.';
-$string['privacy:metadata:database:atto_autosave:timemodified'] = 'وقت تعديل هذا المحتوى.';
-$string['privacy:metadata:database:atto_autosave:userid'] = 'مُعرَّف المستخدم الذي تم حفظ بياناته.';
+$string['privacy:metadata:database:atto_autosave'] = 'مسودات محرر النصوص المحفوظة تلقائياً';
+$string['privacy:metadata:database:atto_autosave:drafttext'] = 'النص الذي تم حفظه';
+$string['privacy:metadata:database:atto_autosave:timemodified'] = 'وقت تعديل هذا المحتوى';
+$string['privacy:metadata:database:atto_autosave:userid'] = 'مُعرَّف المستخدم الذي تم حفظ بياناته';
 $string['recover'] = 'استعد';
 $string['settings'] = 'إعدادات شريط أدوات Atto';
 $string['subplugintype_atto'] = 'ملحق Atto';
 $string['subplugintype_atto_plural'] = 'ملاحق Atto';
-$string['taskautosavecleanup'] = 'إحذف مسودات الحفظ التلقائي منتهية الصلاحية';
+$string['taskautosavecleanup'] = 'حذف مسودات الحفظ التلقائي منتهية الصلاحية';
 $string['textrecovered'] = 'تمت الاستعادة التلقائية لهذا النص من نسخة مسودة.';
 $string['toolbarconfig'] = 'تهيئة شريط الأدوات';
 $string['toolbarconfig_desc'] = 'يمكن تهيئة قائمة الملاحق والترتيب الذي تظهر به هنا. التهيئة تتضمن مجموعات (واحدة لكل سطر) متبوعة بقائمة مرتبة من الملاحق لتلك المجموعة. المجموعة مفصولة عن الملاحق بعلامة المساواة والملاحق مفصولة بعضها عن بعض بفوارز. أسماء المجموعات ينبغي أن تكون فريدة وعليها أن تشير إلى أزرار بوظائف ذات صلة. لا ينبغي تكرار أسماء الأزرار والمجموعات، ويمكن أن تحتوي الأسماء فقط على حروف وأرقام لاتينية.';

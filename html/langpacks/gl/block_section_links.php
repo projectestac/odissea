@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'gl', version '3.8'.
+ * Strings for component 'block_section_links', language 'gl', version '3.11'.
  *
  * @package     block_section_links
  * @category    string
@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['incby1'] = 'Incremento de';
-$string['incby1_help'] = 'Este valor da sección increméntase cada vez que unha ligazón de sección se presenta comezando desde 1.';
+$string['incby1_help'] = 'Este valor da sección increméntase cada vez que se presenta unha ligazón da sección comezando dende 1.';
 $string['incby2'] = 'Incremento alternativo de';
-$string['incby2_help'] = 'Este valor da seccion increméntase cada vez que se presenta unha ligazón da sección comezando desde 1.';
+$string['incby2_help'] = 'Este valor da sección increméntase cada vez que se presenta unha ligazón da sección comezando dende 1.';
 $string['jumptocurrenttopic'] = 'Salta ao tema actual';
 $string['jumptocurrentweek'] = 'Salta á semana actual';
 $string['numsections1'] = 'Número de seccións';

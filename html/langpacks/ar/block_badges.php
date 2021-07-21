@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_badges', language 'ar', version '3.8'.
+ * Strings for component 'block_badges', language 'ar', version '3.11'.
  *
  * @package     block_badges
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badges:addinstance'] = 'إضافة كتلة لأحدث الشارات الجديدة';
 $string['badges:myaddinstance'] = 'إضافة كتلة لأحدث الشارات الجديدة إلى لوحة المعلومات';
-$string['nothingtodisplay'] = 'لا يوجد لديك شارات لعرضها';
+$string['nothingtodisplay'] = 'لا توجد لديك شارات لعرضها';
 $string['numbadgestodisplay'] = 'عرض عدد الشارات الحديثة';
 $string['pluginname'] = 'أحدث الشارات';
-$string['privacy:metadata'] = 'كتلة عرض أحدث الشارات , يظهر بها البيانات المخزنة في مواقع أخري فقط';
+$string['privacy:metadata'] = 'كتلة عرض أحدث الشارات تظهر فقط البيانات المخزنة في مواضع أخرى.';

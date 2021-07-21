@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'fr', version '3.8'.
+ * Strings for component 'badges', language 'fr', version '3.11'.
  *
  * @package     badges
  * @category    string
@@ -96,10 +96,10 @@ Vous devez régler ce problème si votre site et en production et que vous plani
 **Que faire si je ne peux pas rendre le site publiquement accessible ?**
 
 La seule URL requise pour la vérification est <votre-URL-de-site>/badges/assertion.php. Si vous pouvez donc modifier les réglages de votre pare-feu pour permettre l\'accès externe à ce fichier, la vérification des badges fonctionnera.';
-$string['backpackbadges'] = 'Vous avez {$a->totalbadges} badge(s) affichés de {$a->totalcollections} collection(s). <a href="mybackpack.php">Modifier les réglages du sac à badges</a>.';
 $string['backpackbadgessettings'] = 'Modifier les réglages du sac à badges';
 $string['backpackbadgessummary'] = 'Vous avez {$a->totalbadges} badge(s) affichés, tirés de {$a->totalcollections} collection(s).';
 $string['backpackcannotsendverification'] = 'Impossible d\'envoyer le courriel de vérification';
+$string['backpackconnected'] = 'Le sac a badges est connecté';
 $string['backpackconnection'] = 'Connexion sac à badges';
 $string['backpackconnection_help'] = 'La connexion à un sac à badge vous permet de partager vos badges obtenus sur ce site et d\'afficher des badges externes sur votre page de profil de ce site.';
 $string['backpackconnectioncancelattempt'] = 'Se connecter avec une adresse de courriel différente';
@@ -110,6 +110,7 @@ $string['backpackconnectionresendemail'] = 'Envoyer à nouveau le courriel de v�
 $string['backpackconnectionunexpectedmessage'] = 'Le sac à badges a renvoyé l\'erreur : « {$a} ».';
 $string['backpackconnectionunexpectedresult'] = 'Un problème est survenu lors de la connexion à votre sac à badges. Veuillez vérifiez vos identifiants et essayer à nouveau.';
 $string['backpackdetails'] = 'Réglages du sac à badges';
+$string['backpackdisconnected'] = 'Le sac a badges est déconnecté';
 $string['backpackemail'] = 'Adresse de courriel';
 $string['backpackemail_help'] = 'Adresse de courriel associée à votre sac à badges. Lorsque vous êtes connecté, tous les badges reçus sur ce site seront associés à cette adresse de courriel.';
 $string['backpackemailverificationpending'] = 'Vérification en attente';
@@ -129,11 +130,13 @@ $string['backpackemailverifyemailsubject'] = '{$a} : vérification de courriel 
 $string['backpackemailverifypending'] = 'Un message de vérification a été envoyé à l\'adresse <strong>{$a}</strong>. Cliquez sur le lien de vérification de ce message pour activer la connexion à votre sac à badge.';
 $string['backpackemailverifysuccess'] = 'Votre adresse de courriel a été vérifiée. Vous êtes désormais connecté à votre sac à badges.';
 $string['backpackemailverifytokenmismatch'] = 'Le jeton dans le lien que vous avez cliqué ne correspond pas au jeton enregistré. Assurez-vous de cliquer sur le lien indiqué dans le courriel le plus récent que vous avez reçu.';
+$string['backpackexporterror'] = 'Impossible d\'exporter le badge dans le sac à badges';
 $string['backpackimport'] = 'Réglages d\'importation de badges';
 $string['backpackimport_help'] = 'Une fois établie la connexion à votre sac à badges, les badges de votre sac à badges peuvent être affichés sur votre page de badges et sur votre page de profil.
 
 Vous pouvez sélectionner ici les collections de badges de votre sac à badges que vous désirez afficher dans votre profil.';
 $string['backpackneedsupdate'] = 'Le sac à badges connecté à ce profil ne correspond pas au sac à badges du site. Veuillez déconnecter, puis re-connecter le sac à badges.';
+$string['backpackprovider'] = 'Fournisseur de sac à badges';
 $string['backpacksettings'] = 'Réglages sac à badges';
 $string['backpackweburl'] = 'URL sac à badges';
 $string['badgedetails'] = 'Description du badge';
@@ -190,7 +193,7 @@ $string['coursebadgesdisabled'] = 'Les badges de cours ne sont pas activés sur 
 $string['coursecompletion'] = 'Les participants doivent achever ce cours.';
 $string['create'] = 'Nouveau badge';
 $string['createbutton'] = 'Créer un badge';
-$string['creatorbody'] = '<p>{$a->user} a satisfait tous les critères requis pour obtenir le badge, qui lui a été décerné. Le badge décerné peut être consulté ici {$a->link}.</p>';
+$string['creatorbody'] = '<p>{$a->user} a satisfait tous les critères requis pour obtenir le badge, qui lui a été décerné. Le badge décerné peut être consulté ici {$a->link}</p>';
 $string['creatorsubject'] = '« {$a} » a été décerné !';
 $string['criteria_0'] = 'Ce badge est décerné lorsque…';
 $string['criteria_1'] = 'Achèvement d\'activité';
@@ -213,7 +216,7 @@ $string['criteria_9'] = 'Compétences';
 $string['criteria_9_help'] = 'Permet de décerner un badge à des utilisateurs sur la base de compétences qu\'ils ont acquises.';
 $string['criteria_descr'] = 'Les participants se voient décerner ce badge lorsqu\'ils satisfont les critères suivants :';
 $string['criteria_descr_0'] = 'Les participants se voient décerner ce badge lorsqu\'ils satisfont <strong>{$a}</strong> des critères listés.';
-$string['criteria_descr_1'] = '<strong>{$a}</strong> des activités suivantes sont achevées :';
+$string['criteria_descr_1'] = '<strong>{$a}</strong> des activités suivantes sont terminées :';
 $string['criteria_descr_2'] = 'Ce badge doit être décerné par les utilisateurs ayant <strong>{$a}</strong> des rôles suivants :';
 $string['criteria_descr_4'] = 'Les participants doivent achever le cours';
 $string['criteria_descr_5'] = '<strong>{$a}</strong> des cours suivants doivent être terminés :';
@@ -272,6 +275,7 @@ $string['delconfirm'] = 'Supprimer et supprimer les badges délivrés';
 $string['delcritconfirm'] = 'Voulez-vous vraiment supprimer ce critère ?';
 $string['deletehelp'] = '<p>La suppression complète d\'un badge effacera tous ses éléments (informations, critères, etc.). Les utilisateurs ayant reçu le badge ne pourront plus y accéder, ni l\'afficher sur leur page de profil.</p>
 <p>Remarque : les utilisateurs ayant reçu ce badge et l\'ayant enregistré sur leur sac à badges externe conserveront le badge dans leur sac à badges. Ils ne pourront cependant plus accéder aux critères, ni aux preuves renvoyant vers ce site web.<p>';
+$string['delexternalbackpack'] = 'Supprimer le sac à badge de site';
 $string['delexternalbackpackconfirm'] = 'Supprimer le site de sac à badges « {$a} » ?';
 $string['delparamconfirm'] = 'Voulez-vous vraiment supprimer ce paramètre ?';
 $string['description'] = 'Description';
@@ -295,7 +299,6 @@ $string['error:connectionunknownreason'] = 'La connexion a échoué sans qu\'auc
 $string['error:duplicatename'] = 'Un badge de ce nom existe déjà dans le système.';
 $string['error:externalbadgedoesntexist'] = 'Badge introuvable';
 $string['error:guestuseraccess'] = 'Vous consultez ce site comme utilisateur anonyme. Pour consulter les badges, veuillez vous connecter avec votre compte utilisateur.';
-$string['error:invalidbadgeurl'] = 'Format incorrect de l\'URL de l\'émetteur. L\'URL doit avoir un préfixe http:// ou https://.';
 $string['error:invalidcriteriatype'] = 'Type de critère non valide';
 $string['error:invalidexpiredate'] = 'La date d\'échéance doit se situer dans le futur.';
 $string['error:invalidexpireperiod'] = 'La période avant échéance ne peut pas être nulle ou négative.';
@@ -305,7 +308,6 @@ $string['error:noactivities'] = 'Il n\'y a pas d\'activité avec des critères d
 $string['error:nobadges'] = 'Il n\'y a actuellement pas de badge à ajouter comme critère. Un badge de site ne peut avoir comme critère que d\'autres badges de site. Un badge de cours peut avoir comme critère des badges d\'autres cours ou du site.';
 $string['error:nocohorts'] = 'Aucune cohorte.';
 $string['error:nocourses'] = 'L\'achèvement de cours n\'est activé pour aucun cours de ce site. Aucun cours n\'est donc affiché ici. L\'achèvement de cours peut être activé dans les réglages du cours.';
-$string['error:nogroups'] = '<p>Il n\'y a pas de collection publique de badges dans votre sac à badges.</p> <p>Seules les collections publiques sont affichées. Veuillez <a href="https://backpack.openbadges.org">visiter votre sac à badges</a> pour créer une collection publique.</p>';
 $string['error:nogroupslink'] = '<p>Seules les collections publiques sont affichées. Veuillez <a href="{$a}" target="_blank" rel="nofollow">visiter votre sac à badges</a> pour créer une collection publique.</p>';
 $string['error:nogroupssummary'] = '<p>Il n\'y a pas de collection publique de badges disponible dans votre sac à badges.</p>';
 $string['error:nopermissiontoview'] = 'Vous n\'avez pas les permissions requises pour voir les détenteurs du badge';
@@ -364,6 +366,7 @@ $string['imageauthorurl'] = 'URL de l\'auteur de l\'image';
 $string['imageauthorurl_help'] = 'Si spécifié, un lien vers le site web de l\'auteur de l\'image est affiché sur la page du badge. L\'URL doit avoir un préfixe http:// ou https://.';
 $string['imagecaption'] = 'Légende de l\'image';
 $string['imagecaption_help'] = 'Si spécifié, une légende d\'image est affichée sur la page du badge.';
+$string['includeauthdetails'] = 'Inclure les information d\'authentification avec le sac à badges';
 $string['invalidurl'] = 'URL non valide';
 $string['issuancedetails'] = 'Échéance du badge';
 $string['issuedbadge'] = 'Information de remise du badge';
@@ -403,14 +406,13 @@ $string['month'] = 'Mois';
 $string['mybackpack'] = 'Mes réglages de badge';
 $string['mybadges'] = 'Mes badges';
 $string['never'] = 'Jamais';
+$string['newbackpack'] = 'Ajouter un nouveau sac à badges';
 $string['newbadge'] = 'Ajouter un badge';
 $string['newimage'] = 'Nouvelle image';
 $string['noalignment'] = 'Ce badge n\'a pas d\'aptitude externe ni de standard spécifié.';
 $string['noawards'] = 'Ce badge n\'a pas encore été décerné';
 $string['nobackpack'] = 'Il n\'y a pas de service de sac à badges connecté à ce compte.<br />';
-$string['nobackpackbadges'] = 'Il n\'y a pas de badge dans les collections que vous avez indiquées. <a href="mybackpack.php">Ajouter d\'autres collections</a>.';
 $string['nobackpackbadgessummary'] = 'Il n\'y a pas de badge dans les collections que vous avez sélectionnées.';
-$string['nobackpackcollections'] = 'Aucune collection n\'est indiquée. <a href="mybackpack.php">Ajouter des collections</a>.';
 $string['nobackpackcollectionssummary'] = 'Aucune collection de badge n\'a été sélectionnée.';
 $string['nobackpacks'] = 'Il n\'y a pas de sac à badges disponible';
 $string['nobadges'] = 'Il n\'y a pas de badge disponible.';
@@ -442,8 +444,10 @@ $string['notifymonthly'] = 'Une fois par mois';
 $string['notifyweekly'] = 'Une fois par semaine';
 $string['numawards'] = 'Ce badge a été décerné à <a href="{$a->link}">{$a->count}</a> utilisateur(s).';
 $string['numawardstat'] = 'Ce badge a été décerné à {$a} utilisateur(s).';
+$string['oauth2issuer'] = 'Services OAuth 2';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
+$string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['overallcrit'] = 'des critères sélectionnés sont remplis.';
 $string['potentialrecipients'] = 'Détenteurs potentiels du badge';
 $string['preferences'] = 'Préférences des badges';
@@ -452,6 +456,12 @@ $string['privacy:metadata:backpack:backpackuid'] = 'L\'identifiant unique du sac
 $string['privacy:metadata:backpack:email'] = 'L\'adresse de courriel associé au sac à badges';
 $string['privacy:metadata:backpack:externalbackpackid'] = 'L\'identifiant du sac à badges';
 $string['privacy:metadata:backpack:userid'] = 'L\'identifiant de l\'utilisateur à qui appartient le sac à badges';
+$string['privacy:metadata:backpackoauth2'] = 'Informations OAuth 2 lors de la connexion d\'un utilisateur à un sac à badges externe';
+$string['privacy:metadata:backpackoauth2:issuerid'] = 'Identifiant du service OAuth 2';
+$string['privacy:metadata:backpackoauth2:scope'] = 'Liste des champs d\'application de la connexion au sac à badges';
+$string['privacy:metadata:backpackoauth2:token'] = 'Jeton de connexion au sac à badges';
+$string['privacy:metadata:backpackoauth2:userid'] = 'L\'identifiant de connexion utilisateur au sac à badges';
+$string['privacy:metadata:backpackoauth2:usermodified'] = 'L\'identifiant de connexion utilisateur modifié au sac à badges';
 $string['privacy:metadata:badge'] = 'Une collection de badges';
 $string['privacy:metadata:badge:timecreated'] = 'La date et l\'heure à laquelle le badge a été créé';
 $string['privacy:metadata:badge:timemodified'] = 'La date et l\'heure à laquelle le badge a été modifié pour la dernière fois';
@@ -503,6 +513,8 @@ $string['selecting'] = 'Avec les badges sélectionnés…';
 $string['setup'] = 'Mettre en place la connexion';
 $string['sitebackpack'] = 'Sac à badges externe actif';
 $string['sitebackpack_help'] = 'Le sac à badges externe auquel les utilisateurs peuvent se connecter à partir de ce site. La modification de ce réglage après que des utilisateurs ont connecté leur sac à badges nécessitera que chacun des utilisateurs visite ses réglages de sac à badges et se déconnecte, puis se reconnecte.';
+$string['sitebackpackdeleted'] = 'Le sac à badge de site a été supprimé.';
+$string['sitebackpacknotdeleted'] = 'Ce sac à badge n\'a pas pu être supprimé, car c\'est le sac à badges par défaut du site.';
 $string['sitebackpackverify'] = 'Connexion sac à badges';
 $string['sitebackpackwarning'] = 'Impossible de se connecter au sac à badges.<br /><br />Vérifiez que le réglage « Adresse de courriel de l\'émetteur de badge » est bien une adresse de courriel valide d\'un compte sur le site web de sac à badges.<br /><br />Vérifiez encore que le réglage « Mot de passe de l\'émetteur de badge » sur la <a href="{$a->url}">page des réglages du site de sac à badges</a> est le mot de passe correct pour le compte sur le site de sac à badges.<br /><br />Le sac à badges à répondu : « {$a->warning} ».';
 $string['sitebadges'] = 'Badges de site';

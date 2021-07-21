@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'pt', version '3.8'.
+ * Strings for component 'qtype_gapselect', language 'pt', version '3.11'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -43,7 +43,10 @@ $string['pluginname_help'] = 'As perguntas do tipo Selecionar palavras em falta 
 $string['pluginnameadding'] = 'Adicionar pergunta do tipo selecionar palavras em falta';
 $string['pluginnameediting'] = 'Editar pergunta do tipo selecionar palavras em falta';
 $string['pluginnamesummary'] = 'As palavras em falta no texto de uma pergunta são preenchidas através de listas pendentes.';
-$string['privacy:metadata'] = 'O módulo Pergunta do tipo Selecionar palavras em falta não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Selecionar palavras em falta permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
+$string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
+$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das é o \'Interativo com múltiplas tentativas\' ou \'Modo adaptável \'.';
+$string['privacy:preference:shuffleanswers'] = 'Se as respostas devem, ou não, ser baralhadas automaticamente.';
 $string['shuffle'] = 'Baralhar';
-$string['tagsnotallowed'] = '{$a->tag} não é permitido. (Apenas {$a->allowed} é permitido.)';
-$string['tagsnotallowedatall'] = '{$a->tag} não é permitido. (Aqui não é permitida a utilização de HTML.)';
+$string['tagsnotallowed'] = '\'{$a->tag}\' não é permitida. (Apenas é permitida \'{$a->allowed}\')';
+$string['tagsnotallowedatall'] = '\'{$a->tag\'} não é permitida. (Não é permitida a utilização de HTML)';

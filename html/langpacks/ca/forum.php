@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'ca', version '3.8'.
+ * Strings for component 'forum', language 'ca', version '3.11'.
  *
  * @package     forum
  * @category    string
@@ -269,7 +269,7 @@ $string['everyoneissubscribed'] = 'Tothom està subscrit a aquest fòrum';
 $string['existingsubscribers'] = 'Subscriptors actuals';
 $string['export'] = 'Exporta';
 $string['exportattachmentname'] = 'Exporta el fitxer adjunt {$a} al portafolis';
-$string['exportdiscussion'] = 'Exporta el debat sencer al dossier';
+$string['exportdiscussion'] = 'Exporta el debat sencer al portafolis';
 $string['exporthumandates'] = 'Dates intel·ligibles per a humans';
 $string['exporthumandates_help'] = 'Estableix si les dates s\'haurien d\'exportar en un format llegible per humans o com a marca de temps (seqüència de nombres).';
 $string['exportoptions'] = 'Exporta les opcions';
@@ -348,6 +348,7 @@ $string['grade_forum_name'] = 'Fòrum sencer';
 $string['grade_forum_title'] = 'Qualificació';
 $string['grade_rating_name'] = 'Valoració';
 $string['graded'] = 'Qualificat';
+$string['gradedby'] = 'Qualificat per';
 $string['gradeforrating'] = 'Qualificació per la valoració: {$a->str_long_grade}';
 $string['gradeforratinghidden'] = 'Qualificació per la valoració oculta';
 $string['gradeforwholeforum'] = 'Qualificació per al fòrum: {$a->str_long_grade}';
@@ -365,10 +366,10 @@ $string['hidegraderpanel'] = 'Amaga el panell del qualificador';
 $string['hidepreviousrepliescount'] = 'Oculta les respostes prèvies ({$a})';
 $string['hideusersearch'] = 'Amaga la cerca d\'usuaris';
 $string['indexoutoftotal'] = '{$a->index} de {$a->total}';
-$string['indicator:cognitivedepth'] = 'Fòrum cognitiu';
+$string['indicator:cognitivedepth'] = 'Fòrum: aspecte cognitiu';
 $string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en la profunditat cognitiva que ha assolit l\'estudiant en una activitat de fòrum.';
-$string['indicator:cognitivedepthdef'] = 'Fòrum cognitiu';
-$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats del fòrum en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions, Comenaris a les retroalimentacions, Reenviament després de veure les retroalimentacions)';
+$string['indicator:cognitivedepthdef'] = 'Fòrum: aspecte cognitiu';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Fòrum en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions, Comenaris a les retroalimentacions, Reenviament després de veure les retroalimentacions)';
 $string['indicator:socialbreadth'] = 'Fòrum social';
 $string['indicator:socialbreadth_help'] = 'Aquest indicador es basa en l\'abast social assolit per l\'estudiant en una activitat de fòrum.';
 $string['indicator:socialbreadthdef'] = 'Fòrum social';
@@ -460,7 +461,7 @@ $string['mustprovidediscussionorpost'] = 'Per a l\'exportació, heu de especific
 $string['myprofileotherdis'] = 'Debats del fòrum';
 $string['myprofileowndis'] = 'Els meus debats del fòrum';
 $string['myprofileownpost'] = 'Els meus missatges del fòrum';
-$string['namenews'] = 'Taulell d\'avisos i notícies';
+$string['namenews'] = 'Anuncis';
 $string['namenews_help'] = 'El fòrum d\'anuncis és un fòrum especial que es crea automàticament amb el curs. Cada curs pot tenir només un fòrum d\'anuncis. Els administradors i els professors són els únics que poden escriure anuncis en aquest fòrum. El bloc «Darrers anuncis» mostrarà els anuncis recents.';
 $string['namesocial'] = 'Fòrum social';
 $string['nameteacher'] = 'Fòrum del professor';

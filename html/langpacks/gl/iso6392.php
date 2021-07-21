@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'iso6392', language 'gl', version '3.8'.
+ * Strings for component 'iso6392', language 'gl', version '3.11'.
  *
  * @package     iso6392
  * @category    string
@@ -148,7 +148,7 @@ $string['elx'] = 'Elamite';
 $string['eng'] = 'Galego';
 $string['enm'] = 'Anglo Saxón Medio (1100-1500)';
 $string['epo'] = 'Esperanto';
-$string['est'] = 'Estonio';
+$string['est'] = 'Estoniano';
 $string['eus'] = 'Éuscaro';
 $string['ewe'] = 'Ewe';
 $string['ewo'] = 'Ewondo';

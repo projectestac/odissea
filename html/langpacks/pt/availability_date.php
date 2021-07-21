@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'pt', version '3.8'.
+ * Strings for component 'availability_date', language 'pt', version '3.11'.
  *
  * @package     availability_date
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['ajaxerror'] = 'Erro ao contactar servidor para converter tempos';
+$string['ajaxerror'] = 'Erro ao contactar o servidor para converter tempos';
 $string['description'] = 'Impedir o acesso até (ou a partir de) uma data e hora específicas.';
 $string['direction_before'] = 'Data';
 $string['direction_from'] = 'a partir de';
@@ -33,8 +33,8 @@ $string['direction_label'] = 'Direção';
 $string['direction_until'] = 'até';
 $string['full_from'] = 'Data e hora posterior a <strong>{$a}</strong>';
 $string['full_from_date'] = 'Data igual ou posterior a <strong>{$a}</strong>';
-$string['full_until'] = 'Data anterior <strong>{$a}</strong>';
-$string['full_until_date'] = 'Data anterior ou igual a <strong>{$a}</strong>';
+$string['full_until'] = 'Data e hora anterior a <strong>{$a}</strong>';
+$string['full_until_date'] = 'Data e hora anterior a <strong>{$a}</strong>';
 $string['pluginname'] = 'Condição de acesso com base em data';
 $string['privacy:metadata'] = 'O módulo Condição de acesso com base em data não armazena dados pessoais.';
 $string['short_from'] = 'Disponível a partir de <strong>{$a}</strong>';

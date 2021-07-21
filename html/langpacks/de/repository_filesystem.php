@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_filesystem', language 'de', version '3.8'.
+ * Strings for component 'repository_filesystem', language 'de', version '3.11'.
  *
  * @package     repository_filesystem
  * @category    string
@@ -30,7 +30,7 @@ $string['configplugin'] = 'Einstellungen für \'Dateisystem\'';
 $string['crontask'] = 'Hintergrundprozess für System-Repository';
 $string['donotusesysdir'] = 'Verwenden Sie nicht das Systemverzeichnis als Repository, einschließlich';
 $string['enablecourseinstances'] = 'Administrator/innen erlauben, ein Repository \'Dateisystem\' zu einem Kurs hinzuzufügen (kann nur von Administrator/innen konfiguriert werden)';
-$string['enableuserinstances'] = 'Admins erlauben, ein Dateisystem-Repository im Nutzerkontext hinzuzufügen (kann nur von Admins konfiguriert werden)';
+$string['enableuserinstances'] = 'Administrator/innen erlauben, ein Dateisystem-Repository im Nutzerkontext hinzuzufügen (kann nur von Administrator/innen konfiguriert werden)';
 $string['filesystem:view'] = 'Repository \'Dateisystem\'  sehen';
 $string['information'] = 'Diese Verzeichnisse liegen innerhalb von <b>{$a}</b>';
 $string['invalidpath'] = 'Ungültiger Rootpfad';

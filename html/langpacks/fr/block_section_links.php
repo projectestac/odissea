@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'fr', version '3.8'.
+ * Strings for component 'block_section_links', language 'fr', version '3.11'.
  *
  * @package     block_section_links
  * @category    string
@@ -38,5 +38,7 @@ $string['numsections2_help'] = 'Lorsque le nombre de section d\'un cours atteint
 $string['pluginname'] = 'Liens vers sections';
 $string['privacy:metadata'] = 'Le bloc Liens vers sections affiche seulement des données enregistrées à d\'autres endroits.';
 $string['section_links:addinstance'] = 'Ajouter un bloc liens vers sections';
+$string['showsectionname'] = 'Afficher le nom de section';
+$string['showsectionname_help'] = 'Afficher le nom de section en plus de son numéro';
 $string['topics'] = 'Sections';
 $string['weeks'] = 'Semaines';

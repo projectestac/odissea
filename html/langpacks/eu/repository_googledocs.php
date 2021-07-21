@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'eu', version '3.8'.
+ * Strings for component 'repository_googledocs', language 'eu', version '3.11'.
  *
  * @package     repository_googledocs
  * @category    string
@@ -32,20 +32,22 @@ $string['defaultreturntype'] = 'Lehenetsitako itzulera-mota';
 $string['docsformat'] = 'Dokumentuen inportatze-formatu lehenetsia';
 $string['drawingformat'] = 'Marrazkien inportatze-formatu lehenetsia';
 $string['external'] = 'Kanpokoa (Moodlen estekak baino ez dira gordetzen)';
-$string['fileoptions'] = 'Hemen bueltatzen diren fitxategi-motak eta lehenetsitako balioak konfiguratzen dira. Kontuan izan kanpotik estekatutako dokumentu guztiak eguneratuko direla jabea Moodle-ko sistemako kontua izan dadin.';
+$string['fileoptions'] = 'Hemen bueltatzen diren fitxategi-motak eta lehenetsitako balioak konfiguratzen dira. Kontuan izan kanpotik estekatutako dokumentu guztiak eguneratuko direla jabea Moodleko sistemako kontua izan dadin.';
 $string['googledocs:view'] = 'Ikusi Google Drive biltegia';
 $string['importformat'] = 'Konfiguratu lehenetsitako formatuak Google-tik inportatzerakoan';
 $string['internal'] = 'Barrukoa (fitxategiak Moodlen gordeko dira)';
 $string['issuer'] = 'OAuth 2 zerbitzua';
 $string['issuer_help'] = 'Aukeratu Google Drive API-arekin konektatzeko OAuth 2 zerbitzua. Zerbitzua oraindik existitzen ez bada sortu beharko duzu.';
+$string['mydrive'] = 'Nire unitatea';
 $string['oauth2serviceslink'] = '<a href="{$a}" title="OAuth 2 zerbitzuaren konfiguraziorako esteka">OAuth 2 zerbitzuaren konfigurazioa</a>';
 $string['owner'] = 'Jabea: {$a}';
 $string['pluginname'] = 'Google Drive';
 $string['presentationformat'] = 'Aurkezpenen inportatze-formatu lehenetsia';
-$string['privacy:metadata:repository_googledocs'] = 'Google Drive biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata:repository_googledocs'] = 'Google Drive biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['privacy:metadata:repository_googledocs:email'] = 'Google Drive biltegiko erabiltzailearen helbide elektronikoa.';
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'Google Drive biltegiko erabiltzailearen bilaketaren testua.';
-$string['searchfor'] = 'Bilatu {$a}';
+$string['searchfor'] = 'Bilaketa-emaitzak honentzako: {$a}';
 $string['servicenotenabled'] = 'Sarbidea ez dago konfiguratuta. Ziurtatu ezazu \'Drive API\' zerbitzua gaituta dagoela.';
+$string['shareddrives'] = 'Unitate partekatuak';
 $string['spreadsheetformat'] = 'Kalkulu-orrien inportatze-formatu lehenetsia';
 $string['supportedreturntypes'] = 'Onartutako fitxategiak';

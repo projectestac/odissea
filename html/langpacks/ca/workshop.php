@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ca', version '3.8'.
+ * Strings for component 'workshop', language 'ca', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'Final de les avaluacions:';
+$string['activitydate:assessmentsopen'] = 'Inici de les avaluacions:';
+$string['activitydate:submissionsclose'] = 'Final de les trameses:';
+$string['activitydate:submissionsopen'] = 'Inici de les trameses:';
 $string['aggregategrades'] = 'Torna a calcular les qualificacions';
 $string['aggregation'] = 'Agregació de les qualificacions';
 $string['allocate'] = 'Assigneu les trameses';
@@ -75,6 +79,7 @@ $string['assignedassessments'] = 'Trameses assignades per avaluar';
 $string['assignedassessmentsnone'] = 'No teniu cap tramesa per avaluar';
 $string['backtoeditform'] = 'Torna al formulari d\'edició';
 $string['byfullname'] = 'per <a href="{$a->url}">{$a->name}</a>';
+$string['byfullnamewithoutlink'] = 'per {$a}';
 $string['calculategradinggrades'] = 'Calculeu les qualificacions de l\'avaluació';
 $string['calculategradinggradesdetails'] = 'esperades: {$a->expected}<br />calculades: {$a->calculated}';
 $string['calculatesubmissiongrades'] = 'Calculeu les qualificacions de la tramesa';
@@ -157,6 +162,8 @@ $string['formatpeergradeover'] = '<span class="grade">{$a->grade}</span> <span c
 $string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span> @ <span class="weight">{$a->weight}</span>';
 $string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
 $string['givengrades'] = 'Qualificacions donades';
+$string['grade_grading_name'] = 'Avaluació';
+$string['grade_submission_name'] = 'Tramesa';
 $string['gradecalculated'] = 'Qualificació calculada per la tramesa';
 $string['gradedecimals'] = 'Xifres decimals en les qualificacions';
 $string['gradegivento'] = '&gt;';
@@ -176,6 +183,12 @@ $string['gradinggradeover'] = 'Rectifica la qualificació de l\'avaluació';
 $string['gradingsettings'] = 'Paràmetres de qualificació';
 $string['groupnoallowed'] = 'No teniu permís per accedir a cap grup en aquest taller';
 $string['iamsure'] = 'Sí, n\'estic segur(a)';
+$string['indicator:cognitivedepth'] = 'Taller: Aspecte cognitiu';
+$string['indicator:cognitivedepth_help'] = 'Aquest indicador es basa en l\'aprofundiment cognitiu assolit per l\'estudiant en una activitat de taller.';
+$string['indicator:cognitivedepthdef'] = 'Taller: Aspecte cognitiu';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Taller en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions, Comenaris a les retroalimentacions, Reenviament després de veure les retroalimentacions)';
+$string['indicator:socialbreadth'] = 'Taller: Aspecte social';
+$string['indicator:socialbreadthdef'] = 'Taller: Aspecte social';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Instruccions per a la tramesa';
 $string['instructreviewers'] = 'Instruccions per a l\'avaluació';
@@ -184,7 +197,7 @@ $string['latesubmissions'] = 'Trameses fora de termini';
 $string['latesubmissions_desc'] = 'Permet les trameses fora de termini';
 $string['latesubmissions_help'] = 'Si s\'habilita, un autor podrà enviar la seva feina després del termini establert, o durant la fase d\'avaluació. Tanmateix, les trameses fora de termini no poden editar-se.';
 $string['latesubmissionsallowed'] = 'Es permeten les trameses fora de termini';
-$string['maxbytes'] = 'Mida màxima de fitxer';
+$string['maxbytes'] = 'Mida màxima de l\'adjunt a la tramesa';
 $string['modulename'] = 'Taller';
 $string['modulename_help'] = 'El mòdul d\'activitat del taller permet la recollida, l\'anàlisi i l\'avaluació entre iguals del treball dels estudiants.
 Els estudiants poden presentar qualsevol contingut digital (fitxers), com ara documents de processador de textos o fulls de càlcul, i també poden escriure text directament en un camp utilitzant l\'editor de text.
@@ -193,6 +206,7 @@ Les contribucions seran avaluades mitjançant un formulari d\'avaluació de múl
 
 Els estudiants obtenen dues notes en una activitat de taller: una qualificació per la seva tramesa i una qualificació per la seva tasca d\'avaluació de les trameses dels seus companys. Ambdues qualificacions es registren en el llibre de qualificacions.';
 $string['modulenameplural'] = 'Tallers';
+$string['myassessments'] = 'Les meves avaluacions';
 $string['mysubmission'] = 'La meva tramesa';
 $string['nattachments'] = 'Nombre màxim d\'adjuncions a la tramesa';
 $string['noexamples'] = 'Aquest taller encara no té exemples';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'pt', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'pt', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -30,7 +30,7 @@ $string['addmoreanswerblanks'] = 'Adicionar mais {no} opções de resposta';
 $string['addmoreunitblanks'] = 'Adicionar mais {no} campos para unidades';
 $string['answercolon'] = 'Resposta:';
 $string['answererror'] = 'Erro';
-$string['answermustbenumberorstar'] = 'A resposta deve ser um número, por exemplo -1234 or 3e8,ou \'*\'.';
+$string['answermustbenumberorstar'] = 'A resposta deve ser um número. Por exemplo: -1234 ou 3e8 ou \'*\'.';
 $string['answerno'] = 'Resposta {$a}';
 $string['decfractionofquestiongrade'] = 'como parte decimal (0 a 1) da nota da pergunta';
 $string['decfractionofresponsegrade'] = 'como parte decimal (0 a 1) da nota obtida na resposta';
@@ -56,28 +56,37 @@ $string['numericalmultiplier_help'] = 'O multiplicador é o fator pelo qual a re
 
 A primeira unidade (Unidade 1) tem um multiplicador predefinido de 1. Assim, se a resposta correta for 5500 e configurar W como unidade na Unidade 1, que tem 1 como multiplicador predefinido, a resposta correta é 5500 W.
 
-Se adicionar a unidade kW com o multiplicador de  0.001, isto irá tornar igualmente correta a resposta 5.5 kW. Significa assim, que a resposta 5500W ou 5.5kW são ambas consideradas corretas.
+Se adicionar a unidade kW com o multiplicador de 0.001, isto irá tornar igualmente correta a resposta 5.5 kW. Significa assim, que a resposta 5500 W ou 5.5 kW são ambas consideradas corretas.
 
-Tenha em conta que o erro aceite é também multiplicado, um erro aceite de 100W equivale a um erro de 0.1kW.';
+Tenha em atenção que o erro aceite é também multiplicado. Um erro aceite de 100 W equivale a um erro de 0.1 kW.';
 $string['oneunitshown'] = 'A Unidade 1 será exibida automaticamente junto da caixa destinada à resposta numérica.';
 $string['onlynumerical'] = 'Não se usam as unidades. Apenas é pedida e avaliada a resposta numérica.';
-$string['pleaseenterananswer'] = 'Por favor, introduza uma resposta.';
+$string['pleaseenterananswer'] = 'Por favor, insira uma resposta.';
 $string['pleaseenteranswerwithoutthousandssep'] = 'Por favor, insira a sua resposta sem usar o separador dos milhares ({$a}).';
 $string['pluginname'] = 'Numérica';
-$string['pluginname_help'] = 'Da perspetiva do aluno a pergunta numérica é idêntica a uma pergunta de resposta curta, no entanto as numéricas permitem definir uma margem de erro. Isto permite que uma opção de resposta enquadre um conjunto de respostas possíveis. Por exemplo, se a resposta for 10 com um erro aceite de 2, os números entre 8 e 12 serão aceites como corretos.';
+$string['pluginname_help'] = 'Da perspetiva do aluno a pergunta numérica é idêntica a uma pergunta de resposta curta, no entanto as numéricas permitem definir uma margem de erro. Isto permite que uma opção de resposta contemple um conjunto de respostas possíveis. Por exemplo, se a resposta for 10 com um erro aceite de 2, os números entre 8 e 12 serão aceites como corretos.';
 $string['pluginname_link'] = 'pergunta/tipo/numérica';
 $string['pluginnameadding'] = 'A adicionar pergunta numérica';
 $string['pluginnameediting'] = 'A editar pergunta numérica';
 $string['pluginnamesummary'] = 'Aceita uma resposta numérica, eventualmente com unidades, a qual é avaliada comparando com várias respostas modelo, com eventuais margens de erro.';
-$string['privacy:metadata'] = 'O módulo Pergunta do tipo Numérica não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Numérica não armazena dados pessoais.
+
+O módulo Pergunta do tipo Resposta curta permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
+$string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
+$string['privacy:preference:multichoicedisplay'] = 'Se as unidades são exibidas como o elemento de entrada de texto, seleção de múltipla escolha ou um menu pendente.';
+$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das é o \'Interativo com múltiplas tentativas\' ou \'Modo adaptável \'.';
+$string['privacy:preference:unitgradingtypes'] = 'Se a penalização da unidade aplica-se como uma fração (0-1) da nota da resposta ou da nota da pergunta.';
+$string['privacy:preference:unitpenalty'] = 'Qual fração (0-1) da nota da resposta ou da nota da pergunta que deve ser aplicada?';
+$string['privacy:preference:unitrole'] = 'Se a unidade é obrigatória, opcional ou não esperada.';
+$string['privacy:preference:unitsleft'] = 'Se a unidade é mostrada à esquerda (ex. $, £) ou à direita (ex. kg, km, cm).';
 $string['relative'] = 'Relativa';
-$string['rightexample'] = 'Direita (exemplo: 1.00cm)';
+$string['rightexample'] = 'Direita (exemplo: 1.00 km)';
 $string['selectunit'] = 'Selecione uma unidade';
 $string['selectunits'] = 'Selecione unidades';
 $string['studentunitanswer'] = 'Unidade da resposta é introduzida';
 $string['tolerancetype'] = 'Tipo de tolerância';
 $string['unit'] = 'Unidade';
-$string['unitappliedpenalty'] = 'Estas notas incluem penalização de {$a} porque a unidade não foi introduzida ou está incorreta.';
+$string['unitappliedpenalty'] = 'Estas notas incluem penalização de {$a} porque a unidade não foi indicada ou está incorreta.';
 $string['unitchoice'] = 'Escolha múltipla';
 $string['unitedit'] = 'Editar unidade';
 $string['unitgraded'] = 'A unidade deve ser introduzida e será avaliada.';
@@ -95,14 +104,14 @@ $string['unitoptional_help'] = '* Se o campo da unidade não está vazio, a resp
 
 * Se a unidade estiver escrita incorretamente ou for desconhecida, a resposta será considerada como inválida.';
 $string['unitpenalty'] = 'Penalização da unidade';
-$string['unitpenalty_help'] = 'A penalização é aplicada se
+$string['unitpenalty_help'] = 'A penalização é aplicada se:
 
 * Uma unidade inválida for inserida no campo de resposta da unidade ou
 * Um nome para a unidade for inserido no campo para o elemento numérico da resposta';
 $string['unitposition'] = 'Posição da unidade';
 $string['units'] = 'Unidades';
 $string['unitselect'] = 'Caixa de seleção';
-$string['unitx'] = 'Unidade  {no}';
+$string['unitx'] = 'Unidade {no}';
 $string['validnumberformats'] = 'Formatos numéricos válidos';
 $string['validnumberformats_help'] = '* números regulares  13500.67 : 13 500.67 : 13500,67: 13 500,67
 

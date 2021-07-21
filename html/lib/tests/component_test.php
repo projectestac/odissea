@@ -36,9 +36,9 @@ class core_component_testcase extends advanced_testcase {
      * this is defined here to annoy devs that try to add more without any thinking,
      * always verify that it does not collide with any existing add-on modules and subplugins!!!
      */
-    const SUBSYSTEMCOUNT = 69;
+    const SUBSYSTEMCOUNT = 72;
 
-    public function setUp() {
+    public function setUp(): void {
         $psr0namespaces = new ReflectionProperty('core_component', 'psr0namespaces');
         $psr0namespaces->setAccessible(true);
         $this->oldpsr0namespaces = $psr0namespaces->getValue(null);
@@ -47,7 +47,7 @@ class core_component_testcase extends advanced_testcase {
         $psr4namespaces->setAccessible(true);
         $this->oldpsr4namespaces = $psr4namespaces->getValue(null);
     }
-    public function tearDown() {
+    public function tearDown(): void {
         $psr0namespaces = new ReflectionProperty('core_component', 'psr0namespaces');
         $psr0namespaces->setAccessible(true);
         $psr0namespaces->setValue(null, $this->oldpsr0namespaces);
@@ -419,7 +419,7 @@ class core_component_testcase extends advanced_testcase {
 
         // Any plugin without subtypes is ok here.
         $this->assertFileExists("$CFG->dirroot/mod/choice");
-        $this->assertFileNotExists("$CFG->dirroot/mod/choice/db/subplugins.json");
+        $this->assertFileDoesNotExist("$CFG->dirroot/mod/choice/db/subplugins.json");
 
         $this->assertNull(core_component::get_subplugins('mod_choice'));
 
@@ -505,7 +505,7 @@ class core_component_testcase extends advanced_testcase {
         $this->assertCount(5, core_component::get_component_classes_in_namespace('core_user', 'output\\myprofile'));
 
         // Without namespace it returns classes/ classes.
-        $this->assertCount(3, core_component::get_component_classes_in_namespace('tool_mobile', ''));
+        $this->assertCount(5, core_component::get_component_classes_in_namespace('tool_mobile', ''));
         $this->assertCount(2, core_component::get_component_classes_in_namespace('tool_filetypes'));
 
         // When no component is specified, classes are returned for the namespace in all components.

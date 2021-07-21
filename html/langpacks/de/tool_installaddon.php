@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_installaddon', language 'de', version '3.8'.
+ * Strings for component 'tool_installaddon', language 'de', version '3.11'.
  *
  * @package     tool_installaddon
  * @category    string
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acknowledgement'] = 'Bestätigung';
 $string['acknowledgementtext'] = 'Ich habe verstanden, dass ich dafür verantwortlich bin, eine vollständige Sicherung der Website zu erstellen, bevor Plugins installiert  werden. Plugin (besonders wenn Sie aus inoffiziellen Quellen stammen) könnten Programmcode enthalten, der die Website unbrauchbar macht, Datenprobleme schafft oder zu Datenverlust führt.';
-$string['featuredisabled'] = 'Der Plugin-Installer ist deaktiviert.';
+$string['featuredisabled'] = 'Der Plugin-Installer ist für diese Website deaktiviert.';
 $string['installaddon'] = 'Plugin installieren';
 $string['installaddons'] = 'Plugin installieren';
 $string['installfromrepo'] = 'Plugin aus der Plugin-Datenbank installieren';
@@ -49,7 +49,7 @@ $string['permcheckrepeat'] = 'Erneut prüfen';
 $string['permcheckresultno'] = 'Das Plugin-Verzeichnis <em>{$a->path}</em> ist schreibgeschützt.';
 $string['permcheckresultyes'] = 'Das Plugin-Verzeichnis <em>{$a->path}</em> ist beschreibbar.';
 $string['pluginname'] = 'Plugin Installer';
-$string['privacy:metadata'] = 'Das Plugin \'Installer\' speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Der \'Plugin Installer\' speichert keine personenbezogenen Daten.';
 $string['remoterequestalreadyinstalled'] = 'Das Plugin {$a->name} ({$a->component}) ({$a->version}) soll aus der Plugin-Datenbank von Moodle installiert werden. Dieses Plugin ist <strong>bereits installiert</strong>.';
 $string['remoterequestconfirm'] = 'Das Plugin {$a->name} ({$a->component}) ({$a->version}) soll aus der Plugin-Datenbank von Moodle installiert werden. Wenn Sie fortsetzen, wird das ZIP-Paket heruntergeladen und geprüft. Es erfolgt aber noch keine Installation.';
 $string['remoterequestinvalid'] = 'Ein Plugin soll aus der Plugin-Datenbank von Moodle installiert werden. Die Anfrage ist ungültig, eine Installation ist nicht möglich.';

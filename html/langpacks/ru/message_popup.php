@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_popup', language 'ru', version '3.8'.
+ * Strings for component 'message_popup', language 'ru', version '3.11'.
  *
  * @package     message_popup
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Уведомление во всплывающем окне';
+$string['privacy:metadata'] = 'Плагин для обмена сообщениями не хранит никаких личных данных.';

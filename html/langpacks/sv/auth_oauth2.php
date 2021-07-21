@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'sv', version '3.8'.
+ * Strings for component 'auth_oauth2', language 'sv', version '3.11'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accountexists'] = 'Det finns redan en användare på denna webbplats med detta användarnamn. Om detta är ditt konto, logga in genom att ange ditt användarnamn och lösenord och lägg till det som en kopplad inloggning via din profilsida.';
 $string['alreadylinked'] = 'Det externa kontot är redan kopplat till ett konto på denna webbplats';
-$string['auth_oauth2description'] = 'OAuth 2-baserad autenticering';
-$string['auth_oauth2settings'] = 'Inställningar för OAuth 2-baserad autenticering';
+$string['auth_oauth2description'] = 'OAuth 2-baserad autentisering';
+$string['auth_oauth2settings'] = 'Inställningar för OAuth 2-baserad autentisering';
 $string['confirmaccountemail'] = 'Hej {$a->fullname},
 
 En förfrågan om nytt konto har gjorts på \'{$a->sitename}\'
@@ -62,7 +62,7 @@ Om du behöver hjälp kan du kontakta administratören,
 
 Om det inte är du som begärt detta konto kan det vara så att någon annan än du försöker logga in på ditt konto. Kontakta i så fall administratören omedelbart.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: bekräftade länkad inloggningsinformation';
-$string['createaccountswarning'] = 'Denna autentisering plugin tillåter användare att skapa konton på din webbplats. Du kanske vill aktivera inställningen "authpreventaccountcreation" om du använder denna plugin.';
+$string['createaccountswarning'] = 'Denna pluginmodul gör det möjligt för användare att skapa konton på din webbplats. Du kanske vill aktivera inställningen "Förhindra att konto skapas vid autentisering" om du använder den här pluginmodulen.';
 $string['createnewlinkedlogin'] = 'Länka ett nytt konto ({$a})';
 $string['emailconfirmlink'] = 'Länka dina konton';
 $string['emailconfirmlinksent'] = '<p>An existing account was found with this email address but it is not linked yet.</p>
@@ -97,7 +97,7 @@ $string['notwhileloggedinas'] = 'Länkade konton kan inte hanteras när du är i
 $string['oauth2:managelinkedlogins'] = 'Hantera dina länkade konton';
 $string['plugindescription'] = 'Denna plugin för autentisering visar en lista över de konfigurerade identitetsleverantörerna på inloggningssidan. Om du väljer en identitetsleverantör kan användare logga in med sina autentiseringsuppgifter från en OAuth 2-leverantör.';
 $string['pluginname'] = 'OAuth 2';
-$string['privacy:metadata:auth_oauth2'] = 'OAuth 2-autenticering';
+$string['privacy:metadata:auth_oauth2'] = 'OAuth 2-autentisering';
 $string['privacy:metadata:auth_oauth2:authsubsystem'] = 'Denna pluginmodul är kopplad till autentiseringssystemet';
 $string['privacy:metadata:auth_oauth2:confirmtoken'] = 'Bekräftelsetoken';
 $string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'Tidstämpel för när bekräftelsetoken löper ut';

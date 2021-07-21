@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'ja', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'ja', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -39,7 +39,9 @@ $string['createnewgoogleissuer'] = '新しいGoogleサービスを作成する';
 $string['createnewissuer'] = '新しいカスタムサービスを作成する';
 $string['createnewmicrosoftissuer'] = '新しいMicrosoftサービスを作成する';
 $string['createnewnextcloudissuer'] = '新しいNextcloudサービスを作成する';
+$string['createnewservice'] = '新しいサービスを作成する:';
 $string['createnewuserfieldmapping'] = '発行者「 {$a} 」の新しいユーザフィールドマッピングを作成する';
+$string['custom_service'] = 'カスタム';
 $string['deleteconfirm'] = '本当にアイデンティティ発行者「 {$a} 」を削除してもよろしいですか? この発行者に関わるすべてのプラグインは動作しなくなります。';
 $string['deleteendpointconfirm'] = '本当に発行者「 {$a->issuer} 」のエンドポイント「 {$a->endpoint} 」を削除してもよろしいですか? このエンドポイントに関わるすべてのプラグインは動作しなくなります。';
 $string['deleteuserfieldmappingconfirm'] = '本当に発行者「 $a} 」のユーザフィールドマッピングを削除してもよろしいですか?';
@@ -57,6 +59,9 @@ $string['endpointname_help'] = 'このエンドポイントを探すために使
 $string['endpointsforissuer'] = '発行者のエンドポイント: {$a}';
 $string['endpointurl'] = 'URL';
 $string['endpointurl_help'] = 'このエンドポイントのURLです。「https://」プロトコルを使用する必要があります。';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'ログインドメイン';
 $string['issueralloweddomains_help'] = '入力する場合、この設定はこのプロバイダを使用してログインする場合に制限されるカンマ区切りのドメイン一覧です。';
 $string['issuerbaseurl'] = 'サービスベースURL';
@@ -70,13 +75,15 @@ $string['issuerdisabled'] = 'アイデンティティ発行者が無効にされ
 $string['issuerenabled'] = 'アイデンティティ発行者が有効にされました。';
 $string['issuerimage'] = 'ロゴURL';
 $string['issuerimage_help'] = 'この発行者に表示するため使用されるイメージURLです。ログインページに表示することができます。';
-$string['issuerloginparams'] = 'ログインリクエストに含まれる追加パラメータです。';
+$string['issuerloginpagename'] = 'ログインページの表示名';
+$string['issuerloginpagename_help'] = '指定された場合、この名称がサービス名の代わりにログインページで使用されます。';
+$string['issuerloginparams'] = 'ログインリクエストに含まれる追加パラメータ';
 $string['issuerloginparams_help'] = 'いくつかのシステムではユーザ基本プロファイルを読むためログインリクエストに追加パラメータを必要とします。';
-$string['issuerloginparamsoffline'] = 'オフラインアクセスのログインリクエストに含まれる追加パラメータです。';
+$string['issuerloginparamsoffline'] = 'オフラインアクセスのログインリクエストに含まれる追加パラメータ';
 $string['issuerloginparamsoffline_help'] = 'それぞれのOAuthでは異なるオフラインアクセスのリクエスト方法が定義されています。例) Googleでは追加パラメータが必要です: 「access_type=offline&prompt=consent」。これらのパラメータはURLクエリパラメータ形式にする必要があります。';
-$string['issuerloginscopes'] = 'ログインリクエストに含まれるスコープです。';
+$string['issuerloginscopes'] = 'ログインリクエストに含まれるスコープ';
 $string['issuerloginscopes_help'] = 'いくつかのシステムではユーザ基本プロファイルを読むためログインリクエストに追加スコープを必要とします。OpenID接続準拠システムの標準スコープは「openid profile email」です。';
-$string['issuerloginscopesoffline'] = 'オフラインアクセスのログインリクエストに含まれるスコープです。';
+$string['issuerloginscopesoffline'] = 'オフラインアクセスのログインリクエストに含まれるスコープ';
 $string['issuerloginscopesoffline_help'] = 'それぞれのOAuthシステムでは異なるオフラインアクセスのリクエスト方法が定義されています。例) Microsoftでは追加スコープ「offline_access」が必要です。';
 $string['issuername'] = '名称';
 $string['issuername_help'] = 'アイデンティティ発行者名です。ログインページに表示することができます。';
@@ -87,7 +94,20 @@ $string['issuersetup'] = '一般的なOAuth 2サービス設定に関する詳�
 $string['issuersetuptype'] = '{$a} OAuth 2プロバイダ設定に関する詳細インストラクション';
 $string['issuershowonloginpage'] = 'ログインページに表示する';
 $string['issuershowonloginpage_help'] = 'OAuth 2認証プラグインが有効にされた場合、この発行者のアカウントでユーザがログインできるようログインページにこのログイン発行者が表示されます。';
+$string['issuersservicesallow'] = 'サービスを許可する';
+$string['issuersservicesnotallow'] = 'サービスを許可しない';
+$string['issuerusedforinternal'] = '内部サービス';
+$string['issuerusedforlogin'] = 'ログイン';
+$string['issuerusein'] = 'このサービスが使用されます。';
+$string['issuerusein_help'] = 'OAuth 2サービスは必要であれば内部サービス、ログインページまたは両方で使用できます。';
+$string['issueruseineverywhere'] = 'ログインページおよび内部サービス';
+$string['issueruseininternalonly'] = '内部サービスのみ';
+$string['issueruseinloginonly'] = 'ログインページのみ';
+$string['linkedin_service'] = 'LinkedIn';
+$string['logindisplay'] = '以下のログインページに表示する';
 $string['loginissuer'] = 'ログイン許可';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = '未設定';
 $string['notdiscovered'] = 'サービスディスカバリ不成功';
 $string['notloginissuer'] = 'ログインを許可しない';

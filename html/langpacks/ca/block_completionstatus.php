@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completionstatus', language 'ca', version '3.8'.
+ * Strings for component 'block_completionstatus', language 'ca', version '3.11'.
  *
  * @package     block_completionstatus
  * @category    string
@@ -30,5 +30,6 @@ $string['completionstatus:addinstance'] = 'Afegeix un bloc nou d\'estat de compl
 $string['criteriagroup'] = 'Criteri del grup';
 $string['firstofsecond'] = '{$a->first} de {$a->second}';
 $string['pluginname'] = 'Estat de compleció del curs';
+$string['privacy:metadata'] = 'El bloc d\'estat de compleció del curs mostra únicament la informació sobre la compleció del curs i no emmagatzema cap dada pròpia.';
 $string['requirement'] = 'Requisit';
 $string['returntocourse'] = 'Torna al curs';

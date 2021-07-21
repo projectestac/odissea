@@ -36,6 +36,7 @@ $string['chooselanguagesub'] = 'Escolla un idioma para o proceso de instalación
 $string['clialreadyconfigured'] = 'Xa existe o ficheiro config.php. Empregue admin/cli/install_database.php se quere actualizar o seu sitio web.';
 $string['clialreadyinstalled'] = 'Xa existe o ficheiro config.php. Empregue admin/cli/upgrade.php se quere actualizar o seu sitio web.';
 $string['cliinstallheader'] = 'Programa de instalación de Moodle en liña de ordes {$a}';
+$string['clitablesexist'] = 'Xa existen táboas de base de datos, a instalación CLI non pode continuar.';
 $string['databasehost'] = 'Enderezo/máquina da base de datos';
 $string['databasename'] = 'Nome de base de datos';
 $string['databasetypehead'] = 'Escolla o controlador da base de datos';
@@ -43,10 +44,10 @@ $string['dataroot'] = 'Directorio de datos';
 $string['datarootpermission'] = 'Permisos dos directorios de datos';
 $string['dbprefix'] = 'Prefixo das táboas';
 $string['dirroot'] = 'Directorio de Moodle';
-$string['environmenthead'] = 'Comprobando o seu entorno ...';
+$string['environmenthead'] = 'Comprobando o seu contorno...';
 $string['environmentsub2'] = 'Cada versión de Moodle ten algún requisito mínimo da versión de PHP e un número obrigatorio de extensións de PHP.
-Antes de cada instalación ou actualización faise unha comprobación completa do entorno. Póñase en contacto co administrador do servidor se non sabe como instalar a nova versión ou activar as extensións PHP.';
-$string['errorsinenvironment'] = 'A comprobación do entorno no foi satisfactoria!';
+Antes de cada instalación ou actualización faise unha comprobación completa do contorno. Póñase en contacto co administrador do servidor se non sabe como instalar a nova versión ou activar as extensións PHP.';
+$string['errorsinenvironment'] = 'A comprobación do contorno no foi satisfactoria!';
 $string['installation'] = 'Instalación';
 $string['langdownloaderror'] = 'Non foi posíbel descargar o idioma «{$a}». O proceso de instalación continuará en inglés.';
 $string['memorylimithelp'] = '<p>O límite de memoria PHP no seu servidor está estabelecido en {$a}.</p>
@@ -77,13 +78,13 @@ $string['pathssubadmindir'] = 'Moi poucos enderezos web empregan /admin como URL
 permitirlle acceder a un panel de control ou semellante. Desafortunadamente, isto entra en conflito coa localización estándar das páxinas de administración de Moodle. Vostede pode corrixir isto
 renomeando o directorio admin na súa instalación, e poñendo aquí ese novo nome.  Por exemplo: <em>moodleadmin</em>. Iso corrixirá as ligazóns admin en Moodle.';
 $string['pathssubdataroot'] = '<p>Un directorio onde Moodle almacenará todo o contido de ficheiros enviados polos usuarios.</p>
-<p>Este directorio debería ser lexible e escribíbel polo usuario do servidor web (normalmente «www-data«» «ninguén» ou «apache»).</p>
+<p>Este directorio debería ser lexíbel e escribíbel polo usuario do servidor web (normalmente «www-data«» «ninguén» ou «apache»).</p>
 <p> Non debe ser accesíbel directamente na web. </p>
 <p> Se o directorio non existe actualmente, o proceso de instalación tentará crealo. </p>';
 $string['pathssubdirroot'] = '<p>Ruta completa do directorio de instalación de Moodle.</p>';
 $string['pathssubwwwroot'] = '<p>O enderezo completo onde se accederá a Moodle, é dicir, o enderezo que os usuarios introducirán na barra de enderezos do seu navegador para acceder a Moodle.</p>
-<p>Non é posible acceder a Moodle con varias direccións. Se o seu sitio é accesible a través de varios enderezos, escolla o máis sinxelo e configure unha redirección permanente para cada un dos outros enderezos.</p>
-<p Se o seu sitio é accesible tanto dende a Internet como dende unha rede interna (ás veces chamada Intranet), entón use o enderezo público aquí.</p>
+<p>Non é posíbel acceder a Moodle con varias direccións. Se o seu sitio é accesíbel a través de varios enderezos, escolla o máis sinxelo e configure unha redirección permanente para cada un dos outros enderezos.</p>
+<p Se o seu sitio é accesíbel tanto dende a Internet como dende unha rede interna (ás veces chamada Intranet), entón use o enderezo público aquí.</p>
 <p>Se o enderezo actual non é correcto, cambie o URL na barra de enderezos do seu navegador e reinicie a instalación.</p>';
 $string['pathsunsecuredataroot'] = 'A localización de «dataroot» non é segura';
 $string['pathswrongadmindir'] = 'Non existe o directorio Admin';
@@ -95,13 +96,10 @@ $string['phpversionhelp'] = '<p>Moodle require polo menos unha das versións de 
 $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Se esta a ver esta páxina é porque puido instalar satisfactoriamente e
     executar o paquete <strong>{$a->packname} {$a->packversion}</strong> no seu computador. Parabéns!';
-$string['welcomep30'] = 'Esta versión de <strong>{$a->installername}</strong> inclúe os aplicativos
-    para crear un entorno no que <strong>Moodle</strong> funcione, nomeadamente:';
+$string['welcomep30'] = 'Esta versión de <strong>{$a->installername}</strong> inclúe as aplicacións
+    para crear un contorno no que <strong>Moodle</strong> funcione, nomeadamente:';
 $string['welcomep40'] = 'O paquete inclúe tamen <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
-$string['welcomep50'] = 'O uso de todos os aplicativos do paquete está rexido polas súas respectivas
-    licenzas. O paquete completo <strong>{$a->installername}</strong> é
-    <a href="http://www.opensource.org/docs/definition_plain.html">código aberto</a> e distribúese
-    baixo a licenza <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
+$string['welcomep50'] = 'O uso de todas as aplicacións deste paquete está rexido polas súas respectivas licenzas. O paquete completo <strong>{$a->installername}</strong> é de <a href="https://www.opensource.org/docs/definition_plain.html">código aberto</a> e distribúese baixo a licenza <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a>.';
 $string['welcomep60'] = 'As páxinas seguintes guiarano a través de algúns sinxelos pasos para configurar
     e axustar <strong>Moodle</strong> no seu computador. Pode empregar os axustes predeterminados
     ou, opcionalmente, modificalos para que se axusten ás súas necesidades.';

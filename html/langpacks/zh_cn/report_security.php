@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'zh_cn', version '3.8'.
+ * Strings for component 'report_security', language 'zh_cn', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -75,10 +75,6 @@ $string['check_mediafilterswf_details'] = '<p>自动嵌入swf非常危险——�
 $string['check_mediafilterswf_error'] = 'Flash 媒体过滤器已经激活——对于大多数服务器而言，这是非常危险的。';
 $string['check_mediafilterswf_name'] = '激活的 .swf 媒体过滤器';
 $string['check_mediafilterswf_ok'] = 'Flash 媒体过滤器未激活。';
-$string['check_noauth_details'] = '<p><em>不认证身份</em>插件不是给正式网站设计的。除非这是一个开发测试网站，否则请禁用它。</p>';
-$string['check_noauth_error'] = '不认证身份插件不能在正式网站使用。';
-$string['check_noauth_name'] = '不认证身份';
-$string['check_noauth_ok'] = '不认证身份插件已禁用。';
 $string['check_openprofiles_details'] = '<p>开放用户个人信息可能会被不良用户滥用。建议启用<code>强制用户登录后才能访问个人资料</code>或者<code>强制用户登录</code>。</p>';
 $string['check_openprofiles_error'] = '任何人无须登录就可以查看用户的个人信息。';
 $string['check_openprofiles_name'] = '开放用户个人信息';
@@ -120,10 +116,4 @@ $string['details'] = '详情';
 $string['issue'] = '问题';
 $string['pluginname'] = '安全性概览';
 $string['security:view'] = '查看安全报表';
-$string['status'] = '状态';
-$string['statuscritical'] = '危险';
-$string['statusinfo'] = '信息';
-$string['statusok'] = '正常';
-$string['statusserious'] = '严重';
-$string['statuswarning'] = '警告';
 $string['timewarning'] = '处理数据可能会需要很长时间，请耐心等待...';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'fr', version '3.8'.
+ * Strings for component 'question', language 'fr', version '3.11'.
  *
  * @package     question
  * @category    string
@@ -86,7 +86,7 @@ $string['categorynamewithcount'] = '{$a->name} ({$a->questioncount})';
 $string['categorynamewithidnumber'] = '{$a->name} [{$a->idnumber}]';
 $string['categorynamewithidnumberandcount'] = '{$a->name} [{$a->idnumber}] ({$a->questioncount})';
 $string['changeoptions'] = 'Modifier les options';
-$string['changepublishstatuscat'] = 'La <a href="{$a->caturl}">catégorie « {$a->name} »</a> du cours « {$a->coursename} » verra son état modifié de <strong>{$a->changefrom} à {$a->changeto}</strong>.';
+$string['changepublishstatuscat'] = 'La <a href="{$a->caturl}">catégorie « {$a->name} »</a> du cours « {$a->coursename} » verra son état modifié de {$a->changefrom} à {$a->changeto}.';
 $string['check'] = 'Vérifier';
 $string['chooseqtypetoadd'] = 'Choisir un type de question à ajouter';
 $string['clearwrongparts'] = 'Effacer les réponses incorrectes';
@@ -157,7 +157,7 @@ $string['errorduringregrade'] = 'Impossible de ré-évaluer la question {$a->qid
 $string['errorfilecannotbecopied'] = 'Impossible de copier le fichier {$a}.';
 $string['errorfilecannotbemoved'] = 'Impossible de déplacer le fichier {$a}.';
 $string['errorfileschanged'] = 'Erreur : certains fichiers liés dans des questions ont été modifiés depuis l\'affichage du formulaire.';
-$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La question ({$a}) apparaît plusieurs fois avec des coefficients différents en divers endroits du test. Une telle fonctionnalité n\'est pas supportée par le rapport statistique et pourrait rendre des statistiques de cette question incorrectes.';
+$string['erroritemappearsmorethanoncewithdifferentweight'] = 'La question ({$a}) apparaît plusieurs fois avec des coefficients différents en divers endroits du test. Une telle fonctionnalité n\'est pas supportée par le rapport de statistiques et pourrait rendre des statistiques de cette question incorrectes.';
 $string['errormanualgradeoutofrange'] = 'La note {$a->grade} n\'est pas entre 0 et {$a->maxgrade} pour la question {$a->name}. Le score et le commentaire n\'ont pas été enregistrés.';
 $string['errormovingquestions'] = 'Erreur lors du déplacement des questions d\'identifiants {$a}.';
 $string['errorpostprocess'] = 'Erreur lors du post-traitement !';
@@ -364,9 +364,9 @@ $string['privacy:metadata:database:question_attempts'] = 'Les informations sur u
 $string['privacy:metadata:database:question_attempts:flagged'] = 'Une indication que l\'utilisateur a signalé cette question durant la tentative.';
 $string['privacy:metadata:database:question_attempts:responsesummary'] = 'Un résumé de la réponse.';
 $string['privacy:metadata:database:question_attempts:timemodified'] = 'La date et l\'heure de la modification de la tentative de la question.';
-$string['privacy:metadata:link:qbehaviour'] = 'Le sous-système Question utilise le type de plugin Comportement de question.';
-$string['privacy:metadata:link:qformat'] = 'Le sous-système Question utilise le type de plugin format de question pour importer et exporter les questions dans différents formats.';
-$string['privacy:metadata:link:qtype'] = 'Le sous-système Question interagit avec le type de plugin Type de question, qui contient les différentes types de question.';
+$string['privacy:metadata:link:qbehaviour'] = 'Le sous-système question utilise le type de plugin Comportement de question.';
+$string['privacy:metadata:link:qformat'] = 'Le sous-système question utilise le type de plugin Format d\'importation/exportation de questions afin d\'importer/exporter des questions dans différents formats.';
+$string['privacy:metadata:link:qtype'] = 'Le sous-système question interagit avec le type de plugin Type de question, qui contient les différentes types de question.';
 $string['published'] = 'partagée';
 $string['qtypeveryshort'] = 'T';
 $string['questionaffected'] = '<a href="{$a->qurl}">La question « {$a->name} » ({$a->qtype})</a> est dans cette catégorie, mais est aussi utilisée dans le <a href="{$a->qurl}">test « {$a->quizname} »</a> dans le cours « {$a->coursename} ».';

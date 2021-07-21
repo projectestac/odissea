@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'ru', version '3.8'.
+ * Strings for component 'tool_lpimportcsv', language 'ru', version '3.11'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -39,11 +39,13 @@ $string['exportnavlink'] = 'Экспорт набора компетентнос
 $string['idnumber'] = 'Номер ID';
 $string['import'] = 'Импорт';
 $string['importfile'] = 'CSV-файл описания набора';
+$string['importfile_help'] = 'Структуру компетентностей можно импортировать через текстовый файл. Формат файла можно определить, создав новую структуру компетентностей на сайте и затем экспортировав ее.';
 $string['importingfile'] = 'Импорт данных файла';
 $string['invalidimportfile'] = 'Недопустимый формат файла.';
 $string['noframeworks'] = 'Пока нет созданных наборов компетентностей.';
 $string['parentidnumber'] = 'Родительский номер ID';
 $string['pluginname'] = 'Импорт набора компетентностей';
+$string['privacy:metadata'] = 'Плагин Импорт структуры компетентностей не хранит никаких личных данных.';
 $string['processingfile'] = 'Обработка файла';
 $string['relatedidnumbers'] = 'ID номера компетенций с перекрестными ссылками';
 $string['ruleconfig'] = 'Конфигурация правила  (необязательно)';

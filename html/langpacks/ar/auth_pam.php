@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_pam', language 'ar', version '3.8'.
+ * Strings for component 'auth_pam', language 'ar', version '3.11'.
  *
  * @package     auth_pam
  * @category    string
@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_passwordisexpired'] = 'انتهت صلاحية كلمة مرورك. هل ترغب في تغيرهاالآن؟';
 $string['auth_passwordwillexpire'] = 'ستنتهي صلاحية كلمة مرورك خلال {$a} أيام. هل ترغب في تغييرها الآن؟';
-$string['pluginname'] = 'بام (وحدات توثيق قابلة لتوصيل)';
+$string['pluginname'] = 'PAM (وحدات التوثيق القابلة للتوصيل)';
 $string['privacy:metadata'] = 'إن ملحق PAM (Pluggable Authentication Modules وحدات المصادقة القابلة للتوصيل) لا يخزن أي بيانات شخصية.';

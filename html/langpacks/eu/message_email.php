@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'eu', version '3.8'.
+ * Strings for component 'message_email', language 'eu', version '3.11'.
  *
  * @package     message_email
  * @category    string
@@ -31,6 +31,7 @@ $string['emaildigestunreadmessages'] = 'Irakurri gabeko mezuak';
 $string['emaildigestviewallmessages'] = 'Ikusi mezu guztiak';
 $string['emailonlyfromnoreplyaddress'] = 'E-mailak beti ez-erantzun moduko helbide batetik bidali nahi duzu?';
 $string['ifemailleftempty'] = 'Hutsik utzi jakinarazpenak {$a} helbidera bidaltzeko';
+$string['messagedigestemailsubject'] = '{$a}: Laburpen-mezuak';
 $string['pluginname'] = 'Posta elektronikoa';
 $string['privacy:metadata:attachment'] = 'Fitxategi-sistemako fitxategi bat.';
 $string['privacy:metadata:attachname'] = 'Erantsitako fitxategiaren izena (luzapenak MIME mota adierazten du).';

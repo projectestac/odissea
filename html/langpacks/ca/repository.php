@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository', language 'ca', version '3.8'.
+ * Strings for component 'repository', language 'ca', version '3.11'.
  *
  * @package     repository
  * @category    string
@@ -33,6 +33,7 @@ $string['add'] = 'Afegeix';
 $string['addfile'] = 'Afegeix...';
 $string['addfiletext'] = 'Afegeix un fitxer';
 $string['addplugin'] = 'Afegeix un connector de repositori';
+$string['aliaseschange'] = 'Hi ha {$a} fitxers d\'àlies/dreceres que empren aquest fitxer com a font. Si prosseguiu, aquests àlies es convertiran en còpies veritables.';
 $string['allowexternallinks'] = 'Permet enllaços externs';
 $string['areacategoryintro'] = 'Introducció a la categoria';
 $string['areacourseintro'] = 'Introducció al curs';
@@ -44,7 +45,7 @@ $string['areauserdraft'] = 'Esborrany';
 $string['areauserpersonal'] = 'Fitxers privats';
 $string['areauserprofile'] = 'Perfil';
 $string['attachedfiles'] = 'Fitxers adjunts';
-$string['attachment'] = 'Adjunt';
+$string['attachment'] = 'Adjunció';
 $string['author'] = 'Autor';
 $string['automatedbackup'] = 'Còpies de seguretat automatitzades';
 $string['back'] = 'Enrere';
@@ -59,7 +60,8 @@ $string['cannotinitplugin'] = 'Crida a plugin_init fallada';
 $string['cannotunzipcontentunreadable'] = 'No s\'ha pogut descomprimir aquest arxiu atès que no se\'n pot llegir el contingut.';
 $string['cannotunzipquotaexceeded'] = 'No s\'ha pogut descomprimir aquest arxiu atès que s\'ultrapassaria la capacitat màxima permesa en aquesta àrea d\'esborranys.';
 $string['choosealink'] = 'Escull un enllaç...';
-$string['chooselicense'] = 'Tria una llicència';
+$string['chooselicense'] = 'Trieu una llicència';
+$string['chooselicense_help'] = 'Seguiu aquests enllaços per obtenir més informació sobre les opcions de llicències disponibles:';
 $string['cleancache'] = 'Esborra els fitxers de la memòria cau';
 $string['close'] = 'Tanca';
 $string['commonrepositorysettings'] = 'Paràmetres comuns dels repositoris';
@@ -73,8 +75,9 @@ $string['confirmdelete'] = 'Confirmeu que voleu suprimir aquest repositori: {$a}
 $string['confirmdeletefile'] = 'Esteu segur que voleu suprimir el fitxer?';
 $string['confirmdeletefilewithhref'] = 'Confirmeu que voleu suprimir el fitxer? Hi ha {$a} àlies o accessos directes de fitxer que utilitzen aquest fitxer com a font. Si procediu a fer-ho, aquests àlies es convertiran en còpies autèntiques.';
 $string['confirmdeletefolder'] = 'Esteu segur que voleu suprimir la carpeta? Es suprimiran tots els fitxers i les subcarpetes.';
+$string['confirmdeleteselectedfile'] = 'Segur que voleu esborrar el(s) {$a} fitxer(s) seleccionat(s)?';
 $string['confirmremove'] = 'Confirmeu que voleu suprimir aquest connector de repositori, les seves opcions i <strong>totes les seves instàncies</strong>: {$a}? Si trieu «Continua i descarrega», les referències del fitxer a continguts externs es descarregaran a Moodle, però podria ser molt llarg de processar.';
-$string['confirmrenamefile'] = 'Confirmeu que voleu moure el fitxer o canviar-li el nom? Hi ha {$a} àlies o accessos directes de fitxer que utilitzen aquest fitxer com a font. Si procediu a fer-ho, aquests àlies es convertiran en còpies autèntiques.';
+$string['confirmrenamefile'] = 'Confirmeu que voleu moure el fitxer o canviar-li el nom?';
 $string['confirmrenamefolder'] = 'Confirmeu que voleu moure la carpeta o canviar-li el nom? Qualsevol àlies o accés directe de fitxers que faci referència a fitxers d\'aquesta carpeta es convertiran en còpies autèntiques.';
 $string['continueuninstall'] = 'Continua';
 $string['continueuninstallanddownload'] = 'Continua i descarrega';
@@ -86,7 +89,7 @@ $string['createfolderfail'] = 'Error en crear aquesta carpeta';
 $string['createfoldersuccess'] = 'S\'ha creat la carpeta amb èxit';
 $string['createinstance'] = 'Crea una instància de repositori';
 $string['createrepository'] = 'Crea la instància del repositori';
-$string['createxxinstance'] = 'Crea la instància "{$a}"';
+$string['createxxinstance'] = 'Crea una instància del tipus "{$a}"';
 $string['date'] = 'Data';
 $string['datecreated'] = 'Creat';
 $string['deleted'] = 'S\'ha esborrat el repositori';
@@ -177,6 +180,8 @@ $string['newfoldername'] = 'Nom de la nova carpeta';
 $string['noenter'] = 'No s\'ha introduït res';
 $string['nofilesattached'] = 'No s\'ha adjuntat cap fitxer';
 $string['nofilesavailable'] = 'Cap fitxer disponible';
+$string['nofilesselected'] = 'No heu seleccionat cap fitxer';
+$string['nolicenses'] = 'No hi ha cap llicència disponible';
 $string['nomorefiles'] = 'No es permeten més adjuncions';
 $string['nopathselected'] = 'No s\'ha seleccionat cap camí a la destinació (feu doble clic al node per seleccionar-lo)';
 $string['nopermissiontoaccess'] = 'No teniu permís per accedir a aquest repositori';
@@ -189,6 +194,8 @@ $string['on'] = 'Habilitat i visible';
 $string['openpicker'] = 'Tria un fitxer...';
 $string['operation'] = 'Operació';
 $string['original'] = 'Original';
+$string['originalextensionchange'] = 'L\'extensió del fitxer original s\'ha modificat com a part del canvi de nom del fitxer. Si canvieu l\'extensió de ".{$a->originalextension}" a ".{$a->newextension}" us podeu trobar amb un fitxer que no es pugui obrir.';
+$string['originalextensionremove'] = 'L\'extensió del fitxer original s\'ha suprimit com a part del canvi de nom del fitxer. Si esborreu l\'extensió {$a} probablement no podreu obrir el fitxer més endavant.';
 $string['overwrite'] = 'Sobreescriu';
 $string['overwriteall'] = 'Sobreescriu tot';
 $string['path'] = 'Camí';

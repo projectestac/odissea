@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'it', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'it', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -31,6 +31,7 @@ $string['addnewdefaults'] = 'Aggiungi un default del modulo';
 $string['addpurpose'] = 'Aggiungi finalità';
 $string['addroleoverride'] = 'Aggiungi eccezione sul ruolo';
 $string['approve'] = 'Approva';
+$string['approvedrequestsubmitted'] = 'La richiesta è stata inviata è sarà elaborata appena possibile.';
 $string['approverequest'] = 'Approva richiesta';
 $string['automaticdeletionrequests'] = 'Crea automaticamente richieste di eliminazione dati';
 $string['automaticdeletionrequests_desc'] = 'Le richieste di eliminazione dati saranno create automaticamente in presenza di utenti eliminati manualmente.';
@@ -322,7 +323,6 @@ $string['statusdeleted'] = 'Eliminata';
 $string['statusdetail'] = 'Stato:';
 $string['statusexpired'] = 'Scaduta';
 $string['statuspending'] = 'In attesa';
-$string['statuspreprocessing'] = 'Pre-elaborazione';
 $string['statusprocessing'] = 'In elaborazione';
 $string['statusready'] = 'Pronto per lo scaricamento';
 $string['statusrejected'] = 'Respinta';

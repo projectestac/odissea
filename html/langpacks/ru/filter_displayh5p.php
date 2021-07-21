@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_displayh5p', language 'ru', version '3.8'.
+ * Strings for component 'filter_displayh5p', language 'ru', version '3.11'.
  *
  * @package     filter_displayh5p
  * @category    string
@@ -33,4 +33,5 @@ $string['allowedsourceslistdesc'] = 'Список URL-адресов, с кот�
 
 - H5P.com: https://[xxxxxx].h5p.com/content/[id]
 - Wordpress: http://myserver/wp-admin/admin-ajax.php?action=h5p_embed&id=[id]';
+$string['filtername'] = 'Отображать H5P';
 $string['privacy:metadata'] = 'Фильтр H5P не хранит никаких личных данных.';

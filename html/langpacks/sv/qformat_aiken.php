@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_aiken', language 'sv', version '3.8'.
+ * Strings for component 'qformat_aiken', language 'sv', version '3.11'.
  *
  * @package     qformat_aiken
  * @category    string
@@ -27,3 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Aiken format';
 $string['pluginname_help'] = 'Detta är ett enkelt format för att importera flervalsfrågor från en textfil.';
+$string['privacy:metadata'] = 'Pluginmodulen Aiken frågeformat lagrar ingen personinformation.';
+$string['questionmissinganswers'] = 'Frågan måste ha minst 2 svar på rad {$a}';
+$string['questionnotcomplete'] = 'Frågan har inte slutförts innan nästa fråga börjar på rad {$a}';
+$string['questionnotstarted'] = 'Fråga ej påbörjad på rad {$a}';

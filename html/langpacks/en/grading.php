@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'en', version '3.8'.
+ * Strings for component 'grading', language 'en', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -29,6 +29,7 @@ $string['activemethodinfo'] = '\'{$a->method}\' is selected as the active gradin
 $string['activemethodinfonone'] = 'There is no advanced grading method selected for the \'{$a->area}\' area. Simple direct grading will be used.';
 $string['changeactivemethod'] = 'Change active grading method to';
 $string['clicktoclose'] = 'click to close';
+$string['error:gradingunavailable'] = 'The advanced grading method is not correctly set. Please check the whole forum grading options in the forum settings.';
 $string['error:notinrange'] = 'Invalid grade \'{$a->grade}\' provided. Grades must be between 0 and {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Unable to instantiate grading form element';
 $string['formnotavailable'] = 'An advanced grading method was selected to use but the grading form is not available yet. You may need to define it first via a link in the actions menu or administration block.';

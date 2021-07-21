@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'en', version '3.8'.
+ * Strings for component 'data', language 'en', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -65,8 +65,8 @@ $string['cannotdeletepreset'] = 'Error deleting a preset!';
 $string['cannotoverwritepreset'] = 'Error overwriting preset';
 $string['cannotunziptopreset'] = 'Cannot unzip to the preset directory';
 $string['checkbox'] = 'Checkbox';
-$string['chooseexportfields'] = 'Choose the fields you wish to export:';
-$string['chooseexportformat'] = 'Choose the format you wish to export to:';
+$string['chooseexportfields'] = 'Choose the fields you wish to export';
+$string['chooseexportformat'] = 'Choose the format you wish to export to';
 $string['chooseorupload'] = 'Choose file';
 $string['closebeforeopen'] = 'You have specified an end date before the start date.';
 $string['columns'] = 'columns';
@@ -77,6 +77,7 @@ $string['comments'] = 'Comments';
 $string['commentsaved'] = 'Comment saved';
 $string['commentsn'] = '{$a} comment(s)';
 $string['commentsoff'] = 'Comments feature is not enabled';
+$string['completiondetail:entries'] = 'Make entries: {$a}';
 $string['completionentries'] = 'Require entries';
 $string['completionentriescount'] = 'Count of entries';
 $string['completionentriesdesc'] = 'Minimum number of entries required: {$a}';
@@ -89,7 +90,7 @@ $string['csvfailed'] = 'Unable to read the raw data from the CSV file';
 $string['csvfile'] = 'CSV file';
 $string['csvimport'] = 'CSV file import';
 $string['csvimport_help'] = 'Entries may be imported via a plain text file with a list of field names as the first line, then the data, with one record per line.';
-$string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">CSV</acronym> text with selected delimiter:';
+$string['csvwithselecteddelimiter'] = '<abbr title="Comma Separated Values">CSV</abbr>';
 $string['data:addinstance'] = 'Add a new database';
 $string['data:approve'] = 'Approve and undo approved entries';
 $string['data:comment'] = 'Write comments';
@@ -159,6 +160,8 @@ $string['exportaszip'] = 'Export as zip';
 $string['exportaszip_help'] = 'The export as zip feature allows you to save the templates and fields as a preset zip for download. The zip may then be imported to another course.';
 $string['exportedtozip'] = 'Exported to temporary zip...';
 $string['exportentries'] = 'Export entries';
+$string['exportformat'] = 'Export format';
+$string['exportoptions'] = 'Export options';
 $string['exportownentries'] = 'Export your own entries only? ({$a->mine}/{$a->all})';
 $string['failedpresetdelete'] = 'Error deleting a preset!';
 $string['fieldadded'] = 'Field added';
@@ -175,6 +178,7 @@ $string['fieldmappings'] = 'Field mappings';
 $string['fieldmappings_help'] = 'This menu allows you to keep the data from the existing database. To preserve the data in a field, you must map it to a new field, where the data will appear. Any field can also be left blank, with no information copied into it. Any old field not mapped to a new one will be lost and all its data removed.
 You can only map fields of the same type, so each drop-down menu will have different fields in it. Also, you must be careful not to try and map one old field to more than one new field.';
 $string['fieldname'] = 'Field name';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'The following fields in your file are not known in this database: {$a}';
 $string['fieldoptions'] = 'Options (one per line)';
 $string['fields'] = 'Fields';
@@ -292,7 +296,7 @@ $string['number'] = 'Number';
 $string['numberrssarticles'] = 'Entries in the RSS feed';
 $string['numnotapproved'] = 'Pending';
 $string['numrecords'] = '{$a} entries';
-$string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<abbr title="OpenDocument Spreadsheet">ODS</abbr>&nbsp;(OpenOffice)';
 $string['openafterclose'] = 'You have specified an open date after the close date';
 $string['optionaldescription'] = 'Short description (optional)';
 $string['optionalfilename'] = 'Filename (optional)';
@@ -356,6 +360,7 @@ $string['rows'] = 'rows';
 $string['rssglobaldisabled'] = 'Disabled. See site configuration variables.';
 $string['rsstemplate'] = 'RSS template';
 $string['rsstitletemplate'] = 'RSS title template';
+$string['rsstype'] = 'RSS feed for this activity';
 $string['save'] = 'Save';
 $string['saveandadd'] = 'Save and add another';
 $string['saveandview'] = 'Save and view';
@@ -368,6 +373,8 @@ $string['search'] = 'Search';
 $string['search:activity'] = 'Database - activity information';
 $string['search:entry'] = 'Database - entries';
 $string['selectedrequired'] = 'All selected required';
+$string['selectexportoptions'] = 'Select export options';
+$string['selectfields'] = 'Select fields';
 $string['showall'] = 'Show all entries';
 $string['single'] = 'View single';
 $string['singletemplate'] = 'Single template';
@@ -389,6 +396,8 @@ $string['todatabase'] = 'to this database.';
 $string['type'] = 'Field type';
 $string['undefinedprocessactionmethod'] = 'No action method defined in Data_Preset to handle action "{$a}".';
 $string['unsupportedexport'] = '({$a->fieldtype}) cannot be exported.';
+$string['unsupportedfields'] = 'Unsupported fields';
+$string['unsupportedfieldslist'] = 'The following fields cannot be exported:';
 $string['updatefield'] = 'Update an existing field';
 $string['uploadfile'] = 'Upload file';
 $string['uploadrecords'] = 'Upload entries from a file';

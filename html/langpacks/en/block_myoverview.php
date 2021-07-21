@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'en', version '3.8'.
+ * Strings for component 'block_myoverview', language 'en', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = 'Sort courses by last accessed date';
 $string['aria:list'] = 'Switch to list view';
 $string['aria:past'] = 'Show past courses';
 $string['aria:removefromfavourites'] = 'Remove star for';
+$string['aria:shortname'] = 'Sort courses by course short name';
 $string['aria:showcourse'] = 'Restore {$a} to view';
 $string['aria:sortingdropdown'] = 'Sorting drop-down menu';
 $string['aria:summary'] = 'Switch to summary view';
@@ -62,8 +63,6 @@ $string['courseprogress'] = 'Course progress:';
 $string['customfield'] = 'Custom field';
 $string['customfiltergrouping'] = 'Field to use';
 $string['customfiltergrouping_nofields'] = 'This option requires a course custom field to be set up and visible to everyone.';
-$string['defaulttab'] = 'Default tab';
-$string['defaulttab_desc'] = 'The tab that will be displayed when a user first views their course overview. When returning to their course overview, the user\'s active tab is remembered.';
 $string['displaycategories'] = 'Display categories';
 $string['displaycategories_help'] = 'Display the course category on dashboard course items including cards, list items and summary items.';
 $string['favourites'] = 'Starred';
@@ -76,31 +75,18 @@ $string['lastaccessed'] = 'Last accessed';
 $string['layouts'] = 'Available layouts';
 $string['layouts_help'] = 'Course overview layouts which are available for selection by users. If none are selected, the card layout will be used.';
 $string['list'] = 'List';
-$string['morecourses'] = 'More courses';
 $string['myoverview:myaddinstance'] = 'Add a new course overview block to Dashboard';
-$string['next30days'] = 'Next 30 days';
-$string['next7days'] = 'Next 7 days';
 $string['nocourses'] = 'No courses';
-$string['nocoursesfuture'] = 'No future courses';
-$string['nocoursesinprogress'] = 'No in progress courses';
-$string['nocoursespast'] = 'No past courses';
 $string['nocustomvalue'] = 'No {$a}';
-$string['noevents'] = 'No upcoming activities due';
 $string['past'] = 'Past';
 $string['pluginname'] = 'Course overview';
 $string['privacy:metadata:overviewgroupingpreference'] = 'The Course overview block grouping preference.';
-$string['privacy:metadata:overviewlasttab'] = 'This stores the last tab selected by the user on the overview block.';
 $string['privacy:metadata:overviewpagingpreference'] = 'The Course overview block paging preference.';
 $string['privacy:metadata:overviewsortpreference'] = 'The Course overview block sort preference.';
 $string['privacy:metadata:overviewviewpreference'] = 'The Course overview block view preference.';
 $string['privacy:request:preference:set'] = 'The value of the setting \'{$a->name}\' was \'{$a->value}\'';
-$string['recentlyoverdue'] = 'Recently overdue';
 $string['removefromfavourites'] = 'Unstar this course';
+$string['shortname'] = 'Short name';
 $string['show'] = 'Restore to view';
-$string['sortbycourses'] = 'Sort by courses';
-$string['sortbydates'] = 'Sort by dates';
 $string['summary'] = 'Summary';
-$string['timeline'] = 'Timeline';
 $string['title'] = 'Course name';
-$string['viewcourse'] = 'View course';
-$string['viewcoursename'] = 'View course {$a}';

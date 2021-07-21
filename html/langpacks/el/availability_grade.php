@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grade', language 'el', version '3.8'.
+ * Strings for component 'availability_grade', language 'el', version '3.11'.
  *
  * @package     availability_grade
  * @category    string

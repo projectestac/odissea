@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_online', language 'ar', version '3.8'.
+ * Strings for component 'assignment_online', language 'ar', version '3.11'.
  *
  * @package     assignment_online
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['event_assessable_uploaded'] = 'قد تم تحميل نص عبر الانترنت.';
+$string['event_assessable_uploaded'] = 'نص عبر الإنترنت تم رفعه';
 $string['pluginname'] = 'عبر الإنترنت';
-$string['privacy:metadata'] = 'لا يقوم المكون الإضافي Online assignment  بتخزين أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق الواجب مع الاتصال لا يخزن أي بيانات شخصية.';

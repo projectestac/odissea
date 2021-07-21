@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_ldap', language 'it', version '3.8'.
+ * Strings for component 'enrol_ldap', language 'it', version '3.11'.
  *
  * @package     enrol_ldap
  * @category    string
@@ -104,7 +104,7 @@ $string['objectclass_key'] = 'Object class';
 $string['ok'] = 'OK!';
 $string['opt_deref'] = 'Se l\'appartenenza al gruppo contiene <i>distinguished names</i>, specificare come gestire gli alias durante la ricerca. E\' possibile selezionare uno dei seguenti valori: \'No\' (LDAP_DEREF_NEVER) oppure \'Si\' (LDAP_DEREF_ALWAYS).';
 $string['opt_deref_key'] = 'Dereference alias';
-$string['phpldap_noextension'] = '<em>Il modulo PHP LDAP non sembra essere presente. Per usare questo plugin per favore accertati che il modulo sia installato ed abilitato.</em>';
+$string['phpldap_noextension'] = 'Il modulo PHP LDAP non risulta installato. Per usare questo plugin è necessario accertarsi che il modulo sia installato ed abilitato.';
 $string['pluginname'] = 'Iscrizioni LDAP';
 $string['pluginname_desc'] = '<p>E\' possibile usare un server LDAP per gestire le iscrizioni ai corsi. Per funzionare l\'albero LDAP deve contenere i gruppi corrispondenti ai corsi e all\'interno di ciascun gruppo devono essere elencati gli utenti da iscrivere.</p>
 <p>All\'interno dei gruppi LDAP, ciascuno dei quali rappresenta un corso,  gli utenti da iscrivere saranno elencati tramite un campo contenente l\'identificativo univoco dell\'utente (es. <em>member</em> o <em>memberUid</em>).</p>

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'de', version '3.8'.
+ * Strings for component 'auth', language 'de', version '3.11'.
  *
  * @package     auth
  * @category    string
@@ -58,7 +58,7 @@ $string['auth_sync_script'] = 'Synchronisierung von Nutzerkonten';
 $string['auth_sync_suspended'] = 'Die Option legt fest, dass das Ausblendemerkmal bei der Synchronisation von lokalen Nutzerkonten verwendet wird.';
 $string['auth_sync_suspended_key'] = 'Status von lokalen Nutzerkonten synchronisieren';
 $string['auth_updatelocal'] = 'Lokal aktualisieren';
-$string['auth_updatelocal_expl'] = '<p><b>Lokal aktualisieren:</b> Wenn diese Option aktiviert ist, wird das Feld jedes Mal von extern (external auth) aktualisiert, wenn der Teilnehmer sich einloggt oder eine Nutzersynchronisation erfolgt. Dateneinträge sollten gesperrt sein, wenn sie lokal aktualisiert werden.</p>';
+$string['auth_updatelocal_expl'] = '<p><b>Lokal aktualisieren:</b> Wenn diese Option aktiviert ist, wird das Feld jedes Mal von extern (external auth) aktualisiert, wenn sich die Nutzer/innen einloggen oder eine Nutzersynchronisation erfolgt. Dateneinträge sollten gesperrt sein, wenn sie lokal aktualisiert werden.</p>';
 $string['auth_updatelocalfield'] = 'Lokal aktualisieren ({$a})';
 $string['auth_updateremote'] = 'Extern aktualisieren';
 $string['auth_updateremote_expl'] = '<p><b>Extern aktualisieren:</b> Wenn diese Option aktiviert ist, wird die externe Datenbank aktualisiert, sobald der Nutzerdatensatz aktualisiert wird. Die Felder sollten bearbeitbar bleiben, um Datenänderungen zuzulassen.</p>';
@@ -75,9 +75,9 @@ $string['authloginviaemail_desc'] = 'Nutzer/innen erlauben, sich mit dem Anmelde
 $string['auto_add_remote_users'] = 'Automatisches Hinzufügen externer Nutzer/innen';
 $string['cannotmapfield'] = 'Das Profilfeld \'{$a->fieldname}\' kann nicht zugeordnet werden, da sein Kurzname \'{$a->shortname}\' zu lang ist. Um die Zuordnung aktivieren zu können, darf der Kurzname des Profilfelds nur {$a->charlimit} Zeichen haben. <a href="{$a->link}">Profilfelder bearbeiten</a>';
 $string['changepassword'] = 'URL zur Kennwortänderung';
-$string['changepasswordhelp'] = 'Hier können Sie eine Adresse angeben, über die die Nutzer/innen ihren Anmeldenamen erfahren und ihr Kennwort zurücksetzen können, wenn sie ihre Daten vergessen haben. Diese Option wird auf der Anmeldungsseite angezeigt. Wenn Sie dieses Feld leer lassen, wird die Option nicht angeboten.';
+$string['changepasswordhelp'] = 'URL zur Wiederherstellung verlorener Kennwörter. Per E-Mail wird ein Link an die hinterlegte E-Mail-Adresse der Person gesendet. Beachten Sie, dass diese Option keine Wirkung hat, wenn in den Einstellungen für die Authentifizierung eine entsprechende URL festgelegt ist.';
 $string['chooseauthmethod'] = 'Authentifizierung';
-$string['chooseauthmethod_help'] = 'Diese Einstellung legt die Authentifizierung für das Nutzerkonto fest. Falls Sie hier eine deaktivierte Authentifizierung auswählen, kann sich diese Person nicht mehr anmelden. Um ein Nutzerkonto vorübergehend zu sperren, wählen Sie die Authentifizierung "Kein Login".';
+$string['chooseauthmethod_help'] = 'Diese Option legt die Authentifizierung für das Nutzerkonto fest. Hier sollten nur aktive Authentifizierungen angegeben werden, denn sonst kann sich diese Person nicht mehr anmelden. Um ein Nutzerkonto vorübergehend zu sperren, wählen Sie die Authentifizierung "Kein Login".';
 $string['createpassword'] = 'Kennwort erzeugen und Nutzer/in benachrichtigen';
 $string['createpasswordifneeded'] = 'Kennwort erzeugen und per E-Mail zusenden, falls erforderlich';
 $string['emailchangecancel'] = 'E-Mail-Änderung abbrechen';
@@ -86,11 +86,11 @@ $string['emailnowexists'] = 'Die E-Mail-Adresse, die Sie in Ihrem Nutzerprofil e
 $string['emailupdate'] = 'Änderung der E-Mail-Adresse';
 $string['emailupdatemessage'] = 'Guten Tag {$a->fullname},
 
-Sie möchten die E-Mail-Adresse für Ihr Nutzerkonto auf {$a->site} ändern. Bitte öffnen Sie die folgende URL in Ihrem Browser, um die Änderung zu bestätigen.
-
-Wenn Sie Fragen haben, kontaktieren Sie den Support: {$a->supportemail}
+Sie möchten die E-Mail-Adresse für Ihr Nutzerkonto bei {$a->site} ändern. Öffnen Sie bitte die folgende URL in Ihrem Browser, um die Änderung zu bestätigen.
 
 {$a->url}
+
+Wenn Sie Fragen haben, kontaktieren Sie den Support: {$a->supportemail}
 
 Ihr E-Learning-Team';
 $string['emailupdatesuccess'] = 'Die E-Mail-Adresse von <em>{$a->fullname}</em> wurde erfolgreich aktualisiert: <em>{$a->email}</em>.';

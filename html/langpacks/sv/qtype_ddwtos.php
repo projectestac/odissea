@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'sv', version '3.8'.
+ * Strings for component 'qtype_ddwtos', language 'sv', version '3.11'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -36,4 +36,7 @@ $string['pluginname_help'] = 'Dra och släpp i text-frågor kräver att använda
 $string['pluginnameadding'] = 'Lägger till dra och släpp i texten';
 $string['pluginnameediting'] = 'Redigerar dra och släpp i texten';
 $string['pluginnamesummary'] = 'Saknade ord i frågetexten fylls i genom att dra och släppa svar på den tomma platsen.';
-$string['privacy:metadata'] = 'Dra och släpp-frågeplugintypen lagrar ingen personlig data.';
+$string['privacy:metadata'] = 'Pluginmodulen för frågetypen Dra och släpp i text gör det möjligt för frågeförfattare att ange standardalternativ som användarinställningar.';
+$string['privacy:preference:defaultmark'] = 'Standardpoängen för en viss fråga.';
+$string['privacy:preference:penalty'] = 'Avdraget för varje felaktigt försök när frågor körs med beteendet "Interaktivt med flera försök" eller "Adaptivt läge".';
+$string['privacy:preference:shuffleanswers'] = 'Om svaren ska blandas automatiskt.';

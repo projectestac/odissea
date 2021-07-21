@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'en', version '3.8'.
+ * Strings for component 'auth_db', language 'en', version '3.11'.
  *
  * @package     auth_db
  * @category    string
@@ -53,7 +53,7 @@ $string['auth_dbnoexttable'] = 'External table not specified.';
 $string['auth_dbnouserfield'] = 'External user field not specified.';
 $string['auth_dbpass'] = 'Password matching the above username';
 $string['auth_dbpass_key'] = 'Password';
-$string['auth_dbpasstype'] = '<p>Specify the format that the password field is using.</p> <p>Use \'internal\' if you want the external database to manage usernames and email addresses, but Moodle to manage passwords. If you use \'internal\', you <i>must</i> provide a populated email address field in the external database, and you must execute both admin/cron.php and auth/db/cli/sync_users.php regularly. Moodle will send an email to new users with a temporary password.</p>';
+$string['auth_dbpasstype'] = '<p>Specify the format that the password field is using.</p> <p>Use \'internal\' if you want the external database to manage usernames and email addresses, but Moodle to manage passwords. If you use \'internal\', you must provide a populated email address field in the external database, and you must enable the \\auth_db\\task\\sync_users scheduled task. Moodle will send an email to new users with a temporary password.</p>';
 $string['auth_dbpasstype_key'] = 'Password format';
 $string['auth_dbreviveduser'] = 'Revived user {$a->name} id {$a->id}';
 $string['auth_dbrevivedusererror'] = 'Error reviving user {$a}';

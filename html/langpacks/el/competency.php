@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'el', version '3.8'.
+ * Strings for component 'competency', language 'el', version '3.11'.
  *
  * @package     competency
  * @category    string
@@ -166,7 +166,7 @@ $string['privacy:path:relatedtome'] = 'Σε σχέση με εμένα';
 $string['privacy:path:userevidence'] = 'Αποδεικτικό προηγούμενης μάθησης';
 $string['pushcourseratingstouserplans'] = 'Προώθηση εκτιμήσεων μαθήματος σε ατομικά σχέδια μάθησης';
 $string['pushcourseratingstouserplans_desc'] = 'Προεπιλεγμένη τιμή για τη ρύθμιση μαθήματος κατά την ενημέρωση προσωπικών σχεδίων μάθησης όταν εκτιμώνται προσόντα μαθήματος.';
-$string['syncplanscohorts'] = 'Συγχρονισμός σχεδίων μέσω προτύπων σχεδίων μάθησης συνόλων χρηστών';
+$string['syncplanscohorts'] = 'Συγχρονισμός σχεδίων μέσω υποδειγμάτων σχεδίων μάθησης συνόλων χρηστών';
 $string['taxonomy_behaviour'] = 'Συμπεριφορά';
 $string['taxonomy_competency'] = 'Προσόν';
 $string['taxonomy_concept'] = 'Έννοια';
@@ -193,7 +193,8 @@ $string['usercommentedonaplan'] = 'Ο/Η {$a->fullname} σχολίασε για 
 {$a->comment}
 
 Δείτε: {$a->url}';
-$string['usercommentedonaplanhtml'] = '<p>Ο/Η {$a->fullname} σχολίασε για το σχέδιο μάθησης «{$a->plan}»:</p> <div>{$a->comment}</div>
+$string['usercommentedonaplanhtml'] = '<p>Ο/Η {$a->fullname} σχολίασε για το σχέδιο μάθησης «{$a->plan}»:</p>
+<div>{$a->comment}</div>
 <p>Δείτε: <a href="{$a->url}">{$a->urlname}</a>.</p>';
 $string['usercommentedonaplansmall'] = 'Ο/Η {$a->fullname} σχολίασε το σχέδιο μάθησης «{$a->plan}».';
 $string['usercommentedonaplansubject'] = 'Ο/Η {$a} σχολίασε για ένα σχέδιο μάθησης.';

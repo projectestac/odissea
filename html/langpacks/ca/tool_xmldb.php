@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'ca', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'ca', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -145,7 +145,6 @@ $string['newtable'] = 'Taula nova';
 $string['newtablefrommysql'] = 'Taula nova des de MySQL';
 $string['nofieldsspecified'] = 'No heu especificat camps';
 $string['nomasterprimaryuniquefound'] = 'La columna o columnes referenciades per la vostra clau forana han d\'estar incloses com a CLAU primària o única en la taula referenciada. Fixeu-vos que no és suficient que la columna estigui en un ÍNDEX ÚNIC.';
-$string['nomissingindexesfound'] = 'No s\'han detectat índexs desapareguts. La vostra base de dades no necessita cap acció.';
 $string['noreffieldsspecified'] = 'No heu especificat camps de referència';
 $string['noreftablespecified'] = 'No s\'ha trobat la taula de referència especificada';
 $string['noviolatedforeignkeysfound'] = 'No s\'han trobat clau foranes violades';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'it', version '3.8'.
+ * Strings for component 'data', language 'it', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -65,8 +65,8 @@ $string['cannotdeletepreset'] = 'Errore nella eliminazione di una preimpostazion
 $string['cannotoverwritepreset'] = 'Si è verificato un errore durante la sovrascrittura dei preset';
 $string['cannotunziptopreset'] = 'Non è stato possibile decomprimere nella cartella dei preset';
 $string['checkbox'] = 'Casella di spunta';
-$string['chooseexportfields'] = 'Scegli i campi da esportare:';
-$string['chooseexportformat'] = 'Scegli il formato di esportazione:';
+$string['chooseexportfields'] = 'Seleziona i campi da esportare:';
+$string['chooseexportformat'] = 'Seleziona il formato di esportazione:';
 $string['chooseorupload'] = 'Scegli un file';
 $string['closebeforeopen'] = 'La data di aperture è antecedente alla data di chiusura';
 $string['columns'] = 'colonne';
@@ -77,6 +77,7 @@ $string['comments'] = 'Commenti ai record';
 $string['commentsaved'] = 'Il commento è stato salvato';
 $string['commentsn'] = '{$a} commento(i)';
 $string['commentsoff'] = 'I commenti non sono abilitati';
+$string['completiondetail:entries'] = 'Inserire record: {$a}';
 $string['completionentries'] = 'Record  richiesti';
 $string['completionentriescount'] = 'Numero di record';
 $string['completionentriesdesc'] = 'Numero minimo di record da inserire: {$a}';
@@ -89,7 +90,7 @@ $string['csvfailed'] = 'Non è possibile leggere i dati grezzi dal file CSV';
 $string['csvfile'] = 'File CSV';
 $string['csvimport'] = 'Importa un file CSV';
 $string['csvimport_help'] = 'I record possono essere importati tramite un file di testo che abbia il nome del campo come intestazione di colonna ed un record per riga.';
-$string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">CSV</acronym> testo delimitato da:';
+$string['csvwithselecteddelimiter'] = '<abbr title="Comma Separated Values">CSV</abbr>';
 $string['data:addinstance'] = 'Aggiungere attività database';
 $string['data:approve'] = 'Approvare i record in attesa o disapprovare record già approvati';
 $string['data:comment'] = 'Scrivere i commenti';
@@ -159,6 +160,8 @@ $string['exportaszip'] = 'Esporta come .zip';
 $string['exportaszip_help'] = 'L\'esportazione come .zip consente di scaricare le preimpostazioni. Le preimpostazioni possono essere caricate ed utilizzate in altri corsi.';
 $string['exportedtozip'] = 'Preimpostazione esportata su un file .zip temporaneo';
 $string['exportentries'] = 'Esporta contenuti';
+$string['exportformat'] = 'Formato di esportazione';
+$string['exportoptions'] = 'Opzioni di esportazione';
 $string['exportownentries'] = 'Esportare solo i tuoi record? ({$a->mine}/{$a->all})';
 $string['failedpresetdelete'] = 'Errore durante l\'eliminazione di una preimpostazione!';
 $string['fieldadded'] = 'Il campo è stato aggiunto.';
@@ -176,6 +179,7 @@ $string['fieldmappings_help'] = 'Questo menu ti consente di mantenere i dati del
 
 E\' possibile mappare campi tra loro solo se appartengono allo stesso tipo, pertanto ogni menu a discesa potrà visualizzare campi con nomi diversi. Devi anche evitare di mappare un campo su più di un campo della preimpostazione.';
 $string['fieldname'] = 'Nome del campo';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'I seguenti campi presenti nel tuo file non sono noti in questo database: {$a}';
 $string['fieldoptions'] = 'Opzioni (scrivete una sola opzione per ciascuna riga)';
 $string['fields'] = 'Campi';
@@ -290,7 +294,7 @@ $string['number'] = 'Numero';
 $string['numberrssarticles'] = 'Numero di record da visualizzare nel feed RSS';
 $string['numnotapproved'] = 'In attesa di approvazione';
 $string['numrecords'] = '{$a} record';
-$string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<abbr title="OpenDocument Spreadsheet">ODS</abbr>&nbsp;(OpenOffice)';
 $string['openafterclose'] = 'La data di chiusura è successiva alla data di apertura';
 $string['optionaldescription'] = 'Descrizione abbreviata (opzionale)';
 $string['optionalfilename'] = 'Nome del file (opzionale)';
@@ -351,6 +355,7 @@ $string['rows'] = 'righe';
 $string['rssglobaldisabled'] = 'Disabilitato. Controlla configurazione delle variabili del sito.';
 $string['rsstemplate'] = 'Modello RSS feed';
 $string['rsstitletemplate'] = 'Titolo del feed RSS';
+$string['rsstype'] = 'RSS per questa attività';
 $string['save'] = 'Salva';
 $string['saveandadd'] = 'Salva ed inserisci un altro record';
 $string['saveandview'] = 'Salva e visualizza il record';
@@ -363,6 +368,8 @@ $string['search'] = 'Cerca';
 $string['search:activity'] = 'Database - Informazioni sull\'attività';
 $string['search:entry'] = 'Database - record';
 $string['selectedrequired'] = 'Necessari tutti i selezionati';
+$string['selectexportoptions'] = 'Seleziona opzioni di esportazione';
+$string['selectfields'] = 'Seleziona campi';
 $string['showall'] = 'Visualizza tutti i record';
 $string['single'] = 'Dettagli';
 $string['singletemplate'] = 'Modello Dettagli';
@@ -384,6 +391,8 @@ $string['todatabase'] = 'in questo Database';
 $string['type'] = 'Tipo di campo';
 $string['undefinedprocessactionmethod'] = 'Nessuna metodo definito in Data_Preset per gestire l\'azione "{$a}".';
 $string['unsupportedexport'] = '({$a->fieldtype}) non è esportabile';
+$string['unsupportedfields'] = 'Campi non supportati';
+$string['unsupportedfieldslist'] = 'I seguenti campi non possono essere esportati:';
 $string['updatefield'] = 'Aggiorna un campo già esistente';
 $string['uploadfile'] = 'Carica file';
 $string['uploadrecords'] = 'Carica i record da un file';

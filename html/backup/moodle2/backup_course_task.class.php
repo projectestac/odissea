@@ -125,6 +125,8 @@ class backup_course_task extends backup_task {
             $this->add_step(new backup_course_logs_structure_step('course_logs', 'logs.xml'));
             // New log stores.
             $this->add_step(new backup_course_logstores_structure_step('course_logstores', 'logstores.xml'));
+            // Last access to course logs.
+            $this->add_step(new backup_course_loglastaccess_structure_step('course_loglastaccess', 'loglastaccess.xml'));
         }
 
         // Generate the course competencies.
@@ -138,6 +140,11 @@ class backup_course_task extends backup_task {
 
         // Migrate the already exported inforef entries to final ones
         $this->add_step(new move_inforef_annotations_to_final('migrate_inforef'));
+
+        // Generate the content bank file (conditionally).
+        if ($this->get_setting_value('contentbankcontent')) {
+            $this->add_step(new backup_contentbankcontent_structure_step('course_contentbank', 'contentbank.xml'));
+        }
 
         // At the end, mark it as built
         $this->built = true;

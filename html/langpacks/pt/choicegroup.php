@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choicegroup', language 'pt', version '3.8'.
+ * Strings for component 'choicegroup', language 'pt', version '3.11'.
  *
  * @package     choicegroup
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:hasopened'] = 'Abriu:';
+$string['activitydate:willclose'] = 'Fecha:';
+$string['activitydate:willopen'] = 'Abre:';
 $string['add'] = 'Adicionar';
 $string['add_group'] = 'Adicionar grupo';
 $string['add_grouping'] = 'Adicionar agrupamento';
@@ -141,7 +144,7 @@ $string['savemychoicegroup'] = 'Guardar a minha escolha';
 $string['selected_groups'] = 'Grupos selecionados';
 $string['set_limit_for_group'] = 'Limite para';
 $string['showdescription'] = 'Mostrar descrição do grupo';
-$string['showgroupmembers'] = 'Ocultar membros do grupo';
+$string['showgroupmembers'] = 'Mostrar membros do grupo';
 $string['showunanswered'] = 'Mostrar coluna para não respondida';
 $string['skipresultgraph'] = 'Ignorar gráfico do resultado';
 $string['sortgroupsby'] = 'Ordenar grupos por';

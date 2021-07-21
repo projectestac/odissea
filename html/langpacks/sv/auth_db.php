@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_db', language 'sv', version '3.8'.
+ * Strings for component 'auth_db', language 'sv', version '3.11'.
  *
  * @package     auth_db
  * @category    string
@@ -75,8 +75,8 @@ $string['auth_dbupdateusers'] = 'Uppdatera användare';
 $string['auth_dbupdateusers_description'] = 'Infoga nya och uppdatera befintliga användare.';
 $string['auth_dbupdatinguser'] = 'Uppdaterar användare {$a->name} id {$a->id}';
 $string['auth_dbuser'] = 'Användarnamn med läsbehörighet till databasen';
-$string['auth_dbuser_key'] = 'DB-användare';
+$string['auth_dbuser_key'] = 'Databasanvändare';
 $string['auth_dbuserstoadd'] = 'Inmatningar från användare som ska läggas till: {$a}';
 $string['auth_dbuserstoremove'] = 'Inmatningar från användare som ska tas bort:: {$a}';
 $string['pluginname'] = 'Extern databas';
-$string['privacy:metadata'] = 'Pluginmodulen Extern autentisering lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Extern autentisering lagrar ingen personinformation.';

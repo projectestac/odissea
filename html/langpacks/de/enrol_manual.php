@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'de', version '3.8'.
+ * Strings for component 'enrol_manual', language 'de', version '3.11'.
  *
  * @package     enrol_manual
  * @category    string
@@ -36,7 +36,7 @@ $string['browseusers'] = 'Nutzer/innen anzeigen';
 $string['confirmbulkdeleteenrolment'] = 'Möchten Sie diese Nutzereinschreibungen wirklich löschen?';
 $string['defaultperiod'] = 'Teilnahmedauer';
 $string['defaultperiod_desc'] = 'Die Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt. Wenn dieser Wert 0 ist, ist die Teilnahmedauer unbegrenzt.';
-$string['defaultperiod_help'] = 'Die standardmäßige Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer standardmäßig unbegrenzt.';
+$string['defaultperiod_help'] = 'Die Teilnahmedauer ist die Zeitdauer, während der die Einschreibung gültig bleibt, beginnend mit dem Moment der Nutzereinschreibung. Wenn diese Option deaktiviert ist, ist die Teilnahmedauer unbegrenzt.';
 $string['defaultstart'] = 'Einschreibebeginn (Standardwert)';
 $string['deleteselectedusers'] = 'Ausgewählte manuelle Einschreibungen löschen';
 $string['editselectedusers'] = 'Ausgewählte manuelle Einschreibungen bearbeiten';

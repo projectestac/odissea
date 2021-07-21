@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ca', version '3.8'.
+ * Strings for component 'book', language 'ca', version '3.11'.
  *
  * @package     book
  * @category    string
@@ -49,6 +49,7 @@ $string['eventchapterdeleted'] = 'S\'ha suprimit el capítol.';
 $string['eventchapterupdated'] = 'S\'ha actualitzat el capítol.';
 $string['eventchapterviewed'] = 'S\'ha visualitzat el capítol.';
 $string['hidechapter'] = 'Amaga el capítol «{$a}»';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Llibre en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització)';
 $string['modulename'] = 'Llibre';
 $string['modulename_help'] = 'El mòdul de llibre permet al professor crear un recurs de diverses pàgines en un format de llibre, amb capítols i subcapítols. Els llibres poden contenir fitxers multimèdia, així com text, i són útils per a mostrar llargs passatges d\'informació que es poden dividir en seccions.
 

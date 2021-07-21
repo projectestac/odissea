@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'ca', version '3.8'.
+ * Strings for component 'report_eventlist', language 'ca', version '3.11'.
  *
  * @package     report_eventlist
  * @category    string
@@ -31,9 +31,9 @@ $string['affectedtable'] = 'Taula afectada';
 $string['all'] = 'Tots';
 $string['clear'] = 'Neteja';
 $string['component'] = 'Component';
-$string['create'] = 'crea';
-$string['crud'] = 'Tipus de consulta a la base de dades';
-$string['delete'] = 'suprimeix';
+$string['create'] = 'Creació';
+$string['crud'] = 'Tipus de consulta a base de dades';
+$string['delete'] = 'Supressió';
 $string['details'] = 'Detalls';
 $string['dname'] = 'Nom';
 $string['edulevel'] = 'Nivell educatiu';
@@ -42,7 +42,7 @@ $string['errorinvalidevent'] = 'L\'esdeveniment proporcionat no és un esdevenim
 $string['eventcode'] = 'Codi de l\'esdeveniment';
 $string['eventexplanation'] = 'Explicació de l\'esdeveniment';
 $string['eventname'] = 'Nom de l\'esdeveniment';
-$string['filter'] = 'Filtre';
+$string['filter'] = 'Filtra';
 $string['legacyevent'] = 'Esdeveniment antic';
 $string['name'] = 'Nom';
 $string['objecttable'] = 'Taula d\'objectes';
@@ -50,13 +50,13 @@ $string['other'] = 'Altre';
 $string['othereventparameters'] = 'Altres paràmetres d\'esdeveniments';
 $string['otherinformation'] = 'Altra informació:';
 $string['parentevent'] = 'Esdeveniment pare';
-$string['participating'] = 'Participen';
+$string['participating'] = 'Participació';
 $string['pluginname'] = 'Llista d\'esdeveniments';
 $string['privacy:metadata'] = 'El connector de llista d\'esdeveniments no emmagatzema dades personals.';
-$string['read'] = 'llegeix';
+$string['read'] = 'Lectura';
 $string['relatedobservers'] = 'Connectors que observen aquest esdeveniment';
 $string['since'] = 'Des de';
 $string['teaching'] = 'Ensenyament';
-$string['typedeclaration'] = 'Altres paràmetres d\'esdeveniments';
-$string['update'] = 'actualitza';
+$string['typedeclaration'] = 'Altres paràmetres d\'esdeveniment';
+$string['update'] = 'Actualització';
 $string['yes'] = 'sí';

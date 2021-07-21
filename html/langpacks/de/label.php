@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'de', version '3.8'.
+ * Strings for component 'label', language 'de', version '3.11'.
  *
  * @package     label
  * @category    string
@@ -31,7 +31,7 @@ $string['configdndresizewidth'] = 'Wenn ein Titel für eine Bilddatei angelegt w
 $string['dndmedia'] = 'Drag-and-drop für Medien';
 $string['dndresizeheight'] = 'Drag-and-drop Höhe anpassen';
 $string['dndresizewidth'] = 'Drag-and-drop Beite anpassen';
-$string['dnduploadlabel'] = 'Mediendatei zur Kursseite hinzufügen';
+$string['dnduploadlabel'] = 'In Textfeld einbinden';
 $string['dnduploadlabeltext'] = 'Textfeld zur Kursseite hinzufügen';
 $string['indicator:cognitivedepth'] = 'Textfeld kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Dieser Indikator basiert auf der kognitiven Tiefe, die eine Person bei einem Textfeld erreicht hat.';
@@ -45,7 +45,13 @@ $string['label:addinstance'] = 'Neues Textfeld hinzufügen';
 $string['label:view'] = 'Textfeld anzeigen';
 $string['labeltext'] = 'Textfeld';
 $string['modulename'] = 'Textfeld';
-$string['modulename_help'] = 'Ein Textfeld wird auf der Kursseite angezeigt, z.B. als Überschrift, als Hinweis, als kurzer Lerninhalt oder zur Orientierung. Ein Textfeld kann auch multimediale Elemente beinhalten, z.B. Video oder Audio.';
+$string['modulename_help'] = 'Ein Textfeld wird auf der Kursseite angezeigt, z.B. als Überschrift, als Hinweis, als kurzer Lerninhalt oder zur Orientierung. Ein Textfeld kann auch multimediale Elemente beinhalten, z.B. Video oder Audio. Textfelder sind sehr vielseitig und können, wenn sie sinnvoll eingesetzt werden, das Erscheinungsbild eines Kurses verbessern.
+
+Ein Textfeld kann verwendet werden
+
+* Um eine lange Liste von Aktivitäten mit einem Zwischentitel oder einem Bild zu unterteilen
+* Um eine eingebettete Sounddatei oder ein Video direkt auf der Kursseite anzuzeigen
+* Um eine kurze Beschreibung zu einem Kursabschnitt hinzuzufügen';
 $string['modulenameplural'] = 'Textfelder';
 $string['pluginadministration'] = 'Textfeld-Administration';
 $string['pluginname'] = 'Textfeld';

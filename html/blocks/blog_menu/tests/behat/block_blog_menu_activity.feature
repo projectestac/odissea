@@ -18,12 +18,16 @@ Feature: Enable Block blog menu in an activity
       | teacher1 | C1 | editingteacher |
       | student1 | C1 | student |
       | student2 | C1 | student |
+    Given the following "activity" exists:
+      | activity                      | assign                          |
+      | name                          | Test assignment 1               |
+      | intro                         | Offline text                    |
+      | course                        | C1                              |
+      | idnumber                      | 0001                            |
+      | section                       | 1                               |
+      | assignsubmission_file_enabled | 0                               |
     And I log in as "teacher1"
     And I am on "Course 1" course homepage with editing mode on
-    And I add a "Assignment" to section "1" and I fill the form with:
-      | Assignment name | Test assignment 1 |
-      | Description | Offline text |
-      | assignsubmission_file_enabled | 0 |
     And I follow "Test assignment 1"
     And I add the "Blog menu" block
     And I log out
@@ -206,7 +210,7 @@ Feature: Enable Block blog menu in an activity
     When I log in as "teacher1"
     And I am on "Course 1" course homepage
     And I follow "Test assignment 1"
-    And I set the field "blogsearchquery" to "First"
+    And I set the field "Search" to "First"
     And I press "Search"
     Then I should see "S1 First Blog"
     And I should see "S2 First Blog"

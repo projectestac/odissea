@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_wq', language 'el', version '3.8'.
+ * Strings for component 'qtype_wq', language 'el', version '3.11'.
  *
  * @package     qtype_wq
  * @category    string
@@ -34,7 +34,18 @@ $string['info_test3_rt3'] = 'Αδυναμία εύρεσης αρχείου έκ
 $string['info_test4_name'] = 'Πρόσθετα';
 $string['info_test4_pluginname5'] = 'Τύπος ερώτησης αντιστοίχισης';
 $string['info_test4_pluginname6'] = 'Τύπος ερώτησης έκθεσης';
+$string['info_test4_pluginname7'] = 'Τύπος ερώτησης Commons';
+$string['info_test4_rt1'] = 'Είναι εγκαταστημένοι οι ακόλουθοι τύποι ερωτήσεων για τα κουίζ Wiris:';
+$string['info_test4_rt2'] = 'Λείπουν οι ακόλουθοι τύποι ερωτήσεων για τα κουίζ Wiris:';
 $string['info_test4_rt3'] = 'Εγκατάσταση';
 $string['info_test5_name'] = 'Βάση δεδομένων';
+$string['info_test5_rt1'] = 'Όλοι οι πίνακες είναι παρόντες.';
+$string['info_test5_rt2'] = 'Λείπει ένας ή περισσότεροι πίνακες.';
+$string['info_test6_name'] = 'Κουίζ Wiris';
+$string['info_test7_name'] = 'Έλεγχος διαμόρφωσης';
+$string['info_test8_name'] = 'Έλεγχος εάν ο εξυπηρετητής είναι προσβάσιμος';
+$string['info_test8_rt1'] = 'Σύνδεση στο %s στη θύρα %s';
+$string['info_test9_name'] = 'Υπηρεσία Κουίζ Wiris';
 $string['ok'] = 'ΟΚ';
+$string['pluginname'] = 'Κουίζ Wiris';
 $string['pluginnamesummary'] = '';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_social', language 'sv', version '3.8'.
+ * Strings for component 'format_social', language 'sv', version '3.11'.
  *
  * @package     format_social
  * @category    string
@@ -26,5 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['numberdiscussions'] = 'Antal diskussioner';
-$string['pluginname'] = 'Gemenskaps- format';
+$string['numberdiscussions_help'] = 'Den här inställningen anger hur många diskussioner som ska visas.';
+$string['pluginname'] = 'Socialt format';
+$string['privacy:metadata'] = 'Pluginmodulen Socialt format lagrar ingen personinformation.';
 $string['sectionname'] = 'Sektion';

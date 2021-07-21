@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_rubric', language 'eu', version '3.8'.
+ * Strings for component 'workshopform_rubric', language 'eu', version '3.11'.
  *
  * @package     workshopform_rubric
  * @category    string
@@ -31,7 +31,7 @@ $string['criteria'] = 'Irizpidea';
 $string['dimensiondescription'] = 'Deskribapena';
 $string['dimensionnumber'] = '{$a}. irizpidea';
 $string['layout'] = 'Errubrikaren diseinua';
-$string['layoutgrid'] = 'Laukia';
+$string['layoutgrid'] = 'Lauki-sarea';
 $string['layoutlist'] = 'Zerrenda';
 $string['levelgroup'] = 'Mailarako kalifikazioa eta definizioa';
 $string['levels'] = 'Mailak';

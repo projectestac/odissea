@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_orderedlist', language 'sv', version '3.8'.
+ * Strings for component 'atto_orderedlist', language 'sv', version '3.11'.
  *
  * @package     atto_orderedlist
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Sorterad lista';
-$string['privacy:metadata'] = 'Pluginmodulen atto_orderedlist lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_orderedlist lagrar ingen personinformation.';

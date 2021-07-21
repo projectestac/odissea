@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'de', version '3.8'.
+ * Strings for component 'langconfig', language 'de', version '3.11'.
  *
  * @package     langconfig
  * @category    string
@@ -35,6 +35,7 @@ $string['iso6392'] = 'deu';
 $string['labelsep'] = ': ';
 $string['listsep'] = ';';
 $string['locale'] = 'de_DE.UTF-8';
+$string['localecldr'] = 'de-DE';
 $string['localewin'] = 'German_Germany.1252';
 $string['localewincharset'] = 'WINDOWS-1252';
 $string['oldcharset'] = 'ISO-8859-1';

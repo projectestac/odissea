@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'it', version '3.8'.
+ * Strings for component 'analytics', language 'it', version '3.11'.
  *
  * @package     analytics
  * @category    string
@@ -34,6 +34,8 @@ $string['analyticslogstore'] = 'Log store da utilizzare per l\'analitica';
 $string['analyticslogstore_help'] = 'Il log store che sarà utilizzato dalle API dell\'analitica per leggere l\'attività degli utenti.';
 $string['analyticssettings'] = 'Impostazioni analitica';
 $string['analyticssiteinfo'] = 'Informazioni sul sito';
+$string['calclifetime'] = 'Mantieni i calcoli dell\'analitica per';
+$string['configlcalclifetime'] = 'Imposta il tempo di mantenimento dei calcoli dell\'analitica. Da notare che eventuali pronostici non saranno eliminati, saranno eliminati solamente i dati utilizzati per generarli. L\'impostazione di default rappresenta una buon scelta, tuttavia se le tabelle dei calcoli vengono utilizzate anche per altri scopi è possibile aumentare tali valori.';
 $string['defaultpredictionsprocessor'] = 'Elaboratore di pronostici di default';
 $string['defaultpredictoroption'] = 'Elaboratore di default ({$a})';
 $string['defaulttimesplittingmethods'] = 'Intervalli di analisi di default per la valutazione del modello';
@@ -96,10 +98,11 @@ $string['modeinstructionfacetoface'] = 'In presenza';
 $string['modeinstructionfullyonline'] = 'Interamente online';
 $string['modeloutputdir'] = 'Cartella di output del modello';
 $string['modeloutputdirinfo'] = 'La cartella dove l\'elaboratore di pronostici salverà le informazioni da valutare. E\' utile per scopi di debugging e ricerca.';
-$string['modeloutputdirwithdefaultinfo'] = 'La cartella dove l\'elaboratore di pronostici salverà le informazioni da valutare. E\' utile per scopi di debugging e ricerca. Non compilando il campo, di default sarà utilizzato \'<strong>{$a}</strong>\'.';
+$string['modeloutputdirwithdefaultinfo'] = 'La cartella dove l\'elaboratore di pronostici salverà le informazioni da valutare. E\' utile per scopi di debugging e ricerca. Non compilando il campo, di default sarà utilizzato {$a}.';
 $string['modeltimelimit'] = 'Limite temporale per l\'analisi del modello';
 $string['modeltimelimitinfo'] = 'Limita il tempo impiegato da ogni modello per analizzare i contenuti del sito.';
 $string['neutral'] = 'Neutre';
+$string['neverdelete'] = 'Non eliminare i calcoli';
 $string['nocourses'] = 'Non ci sono corsi da analizzare';
 $string['nodata'] = 'Non ci sono dati da analizzare';
 $string['noevaluationbasedassumptions'] = 'I modelli basati sulle ipotesi non possono essere valutati.';

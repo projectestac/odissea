@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'gl', version '3.8'.
+ * Strings for component 'quiz_overview', language 'gl', version '3.11'.
  *
  * @package     quiz_overview
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allattempts'] = 'Amosar todos os intentos';
 $string['allattemptscontributetograde'] = 'Todos os intentos contribúen á cualificación final do usuario.';
 $string['allstudents'] = 'Amosar todo {$a}';
-$string['attemptsonly'] = 'Amosar só {$a} con intentos';
+$string['attemptsonly'] = 'Amosar {$a} con tentativas unicamente';
 $string['attemptsprepage'] = 'Intentos amosados por páxina';
 $string['deleteselected'] = 'Eliminar os intentos seleccionados';
 $string['done'] = 'Feito';
@@ -36,7 +36,7 @@ $string['err_failedtodeleteregrades'] = 'Non foi posíbel eliminar as cualificac
 $string['err_failedtorecalculateattemptgrades'] = 'Non foi posíbel recalcular as cualificacións do intento';
 $string['highlightinggraded'] = 'O intento do usuario que contribúe á cualificación final está resaltado.';
 $string['needed'] = 'Necesario';
-$string['noattemptsonly'] = 'Amosar / descargar só {$a} sen intentos';
+$string['noattemptsonly'] = 'Amosar {$a} sen tentativas unicamente';
 $string['noattemptstoregrade'] = 'Ningún intento necesita recualificación';
 $string['nogradepermission'] = 'Non ten permiso para cualificar esta proba.';
 $string['onlyoneattemptallowed'] = 'Só se permite un intento por usuario nesta proba.';
@@ -56,7 +56,7 @@ $string['pluginname'] = 'Cualificacións';
 $string['preferencespage'] = 'Preferencias só para esta páxina';
 $string['preferencessave'] = 'Amosar informe';
 $string['preferencesuser'] = 'As súas preferencias para este informe';
-$string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Indica se se mostran as puntuacións para cada intervalo de preguntas.';
+$string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'Indica se se amosan as puntuacións para cada intervalo de preguntas.';
 $string['privacy:preference:slotmarks:no'] = 'As puntuacións non se amosan xunto co intervalo de preguntas.';
 $string['privacy:preference:slotmarks:yes'] = 'As puntuacións amósanse xunto co intervalo de preguntas.';
 $string['regrade'] = 'Volver cualificar';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_mnet', language 'fr', version '3.8'.
+ * Strings for component 'auth_mnet', language 'fr', version '3.11'.
  *
  * @package     auth_mnet
  * @category    string
@@ -44,7 +44,7 @@ $string['privacy:metadata:mnet_external:city'] = 'La ville de l\'utilisateur.';
 $string['privacy:metadata:mnet_external:country'] = 'Le pays de l\'utilisateur.';
 $string['privacy:metadata:mnet_external:currentlogin'] = 'Le nom d\'utilisateur de cet utilisateur.';
 $string['privacy:metadata:mnet_external:department'] = 'Le département où l\'utilisateur peut être trouvé.';
-$string['privacy:metadata:mnet_external:description'] = 'Les infos générales sur cet utilisateur.';
+$string['privacy:metadata:mnet_external:description'] = 'Les informations générales sur cet utilisateur.';
 $string['privacy:metadata:mnet_external:email'] = 'Une adresse de courriel pour contact.';
 $string['privacy:metadata:mnet_external:emailstop'] = 'Une préférence indiquant d\'arrêter d\'envoyer des courriels à l\'utilisateur.';
 $string['privacy:metadata:mnet_external:firstaccess'] = 'La date et l\'heure à laquelle cet utilisateur a accédé au site pour la première fois.';

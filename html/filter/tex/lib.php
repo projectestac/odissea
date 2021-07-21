@@ -51,29 +51,42 @@ function filter_tex_get_executable($debug=false) {
     }
 
     switch (PHP_OS) {
-        case "Linux":   return "$CFG->dirroot/filter/tex/mimetex.linux";
         case "Darwin":  return "$CFG->dirroot/filter/tex/mimetex.darwin";
         case "FreeBSD": return "$CFG->dirroot/filter/tex/mimetex.freebsd";
+        case "Linux":
+            if (php_uname('m') == 'aarch64') {
+                return "$CFG->dirroot/filter/tex/mimetex.linux.aarch64";
+            }
+
+            return "$CFG->dirroot/filter/tex/mimetex.linux";
     }
 
     print_error('mimetexisnotexist', 'error');
 }
 
-function filter_tex_sanitize_formula($texexp) {
-    /// Check $texexp against blacklist (whitelisting could be more complete but also harder to maintain)
-    $tex_blacklist = array(
-        'include','command','loop','repeat','open','toks','output',
-        'input','catcode','name','^^',
-        '\def','\edef','\gdef','\xdef',
-        '\every','\errhelp','\errorstopmode','\scrollmode','\nonstopmode',
-        '\batchmode','\read','\write','csname','\newhelp','\uppercase',
-        '\lowercase','\relax','\aftergroup',
-        '\afterassignment','\expandafter','\noexpand','\special',
-        '\let', '\futurelet','\else','\fi','\chardef','\makeatletter','\afterground',
-        '\noexpand','\line','\mathcode','\item','\section','\mbox','\declarerobustcommand'
-    );
+/**
+ * Check the formula expression against the list of denied keywords.
+ *
+ * List of allowed could be more complete but also harder to maintain.
+ *
+ * @param string $texexp Formula expression to check.
+ * @return string Formula expression with denied keywords replaced with 'forbiddenkeyword'.
+ */
+function filter_tex_sanitize_formula(string $texexp): string {
 
-    return  str_ireplace($tex_blacklist, 'forbiddenkeyword', $texexp);
+    $denylist = [
+        'include', 'command', 'loop', 'repeat', 'open', 'toks', 'output',
+        'input', 'catcode', 'name', '^^',
+        '\def', '\edef', '\gdef', '\xdef',
+        '\every', '\errhelp', '\errorstopmode', '\scrollmode', '\nonstopmode',
+        '\batchmode', '\read', '\write', 'csname', '\newhelp', '\uppercase',
+        '\lowercase', '\relax', '\aftergroup',
+        '\afterassignment', '\expandafter', '\noexpand', '\special',
+        '\let', '\futurelet', '\else', '\fi', '\chardef', '\makeatletter', '\afterground',
+        '\noexpand', '\line', '\mathcode', '\item', '\section', '\mbox', '\declarerobustcommand',
+    ];
+
+    return str_ireplace($denylist, 'forbiddenkeyword', $texexp);
 }
 
 function filter_tex_get_cmd($pathname, $texexp) {

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'nl', version '3.8'.
+ * Strings for component 'user', language 'nl', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Voorwaarde toevoegen';
+$string['adverbfor_and'] = 'en';
+$string['adverbfor_andnot'] = 'en';
+$string['adverbfor_or'] = 'of';
+$string['applyfilters'] = 'Filters toepassen';
+$string['clearfilterrow'] = 'Verwijder filterrij';
+$string['clearfilters'] = 'Filter wissen';
+$string['clearfilterselection'] = 'Verwijder "{$a}" van filter';
+$string['countparticipantsfound'] = '{$a} deelnemers gevonden';
+$string['filterbykeyword'] = 'Sleutelwoord';
+$string['filterrowlegend'] = 'Filter {$a}';
+$string['filtersetmatchdescription'] = 'Hoe meerdere filters gecombineerd moeten worden';
+$string['filtertype'] = 'Filtertype';
+$string['match'] = 'Komt overeen met';
+$string['matchofthefollowing'] = 'van volgende:';
+$string['moodlenetprofile'] = 'MoodleNet profiel';
+$string['moodlenetprofile_help'] = 'Dit veld is bedoeld om je MoodleNet-profiel aan Moodle te koppelen. Het verwacht een WebFinger-compatibele URI.';
+$string['placeholdertype'] = 'Typ ...';
+$string['placeholdertypeorselect'] = 'Typ of selecteer...';
 $string['privacy:courserequestpath'] = 'Aangevraagde cursussen';
 $string['privacy:descriptionpath'] = 'Profielbeschrijving';
 $string['privacy:devicespath'] = 'Gebruikerstoestellen';
@@ -77,6 +96,7 @@ $string['privacy:metadata:maildisplay'] = 'Een voorkeur voor de gebruiker over h
 $string['privacy:metadata:middlename'] = 'De middelnaam van de gebruiker';
 $string['privacy:metadata:mnethostid'] = 'Een identificatie voor de MNet-host indien gebruikt';
 $string['privacy:metadata:model'] = 'De toestelnaam.';
+$string['privacy:metadata:moodlenetprofile'] = 'Het MoodleNetprofiel van de gebruiker';
 $string['privacy:metadata:msn'] = 'De MSN-identificatie voor de gebruiker';
 $string['privacy:metadata:my_pages'] = 'Gebruikerspagina\'s - startpagina en profiel. Deze tabel bevat geen persoonlijke gegevens en is enkel gebruikt om startpaginablokken te linken aan gebruikers';
 $string['privacy:metadata:my_pages:name'] = 'Paginanaam';
@@ -128,6 +148,7 @@ $string['privacy:passwordresetpath'] = 'Wachtwoord opnieuw instellen';
 $string['privacy:privatefilespath'] = 'Privébestanden';
 $string['privacy:profileimagespath'] = 'Profielafbeeldingen';
 $string['privacy:sessionpath'] = 'Sessiegegevens';
+$string['selectfiltertype'] = 'Kies';
 $string['target:upcomingactivitiesdue'] = 'Aankomende activiteiten die klaar moeten zijn';
 $string['target:upcomingactivitiesdue_help'] = 'Dit doel genereert herinneringen voor geplande activiteiten.';
 $string['target:upcomingactivitiesdueinfo'] = 'Alle aankomende activiteiten als gevolg van inzichten staan hier opgelijst. Leerlingen  hebben deze inzichten rechtstreeks ontvangen.';

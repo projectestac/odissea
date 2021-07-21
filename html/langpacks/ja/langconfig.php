@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'ja', version '3.8'.
+ * Strings for component 'langconfig', language 'ja', version '3.11'.
  *
  * @package     langconfig
  * @category    string
@@ -35,6 +35,7 @@ $string['iso6392'] = 'jpn';
 $string['labelsep'] = ':';
 $string['listsep'] = ',';
 $string['locale'] = 'ja_JP.UTF-8';
+$string['localecldr'] = 'en-AU';
 $string['localewin'] = 'Japanese_Japan.932';
 $string['localewincharset'] = 'CP932';
 $string['oldcharset'] = 'EUC-JP';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_urltolink', language 'it', version '3.8'.
+ * Strings for component 'filter_urltolink', language 'it', version '3.11'.
  *
  * @package     filter_urltolink
  * @category    string

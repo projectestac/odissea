@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'it', version '3.8'.
+ * Strings for component 'choice', language 'it', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -55,6 +55,7 @@ $string['choicetext'] = 'Testo della domanda';
 $string['chooseaction'] = 'Scegli un\'azione...';
 $string['chooseoption'] = 'Scegli: {$a}';
 $string['closebeforeopen'] = 'Hai specificato una data di chiusura successiva alla data di apertura.';
+$string['completiondetail:submit'] = 'Effettuare una scelta';
 $string['completionsubmit'] = 'Completata all\'atto della scelta';
 $string['description'] = 'Descrizione';
 $string['deselectalloption'] = 'Deseleziona tutti "{$a}"';
@@ -80,6 +81,7 @@ $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensi
 $string['indicator:socialbreadthdef'] = 'Scelta sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività Scelta (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
 $string['limit'] = 'Limite';
+$string['limita'] = 'Limite: {$a}';
 $string['limitanswers'] = 'Limita il numero di scelte';
 $string['limitanswers_help'] = 'Limita il numero di partecipanti che possono operare la medesima scelta.
 
@@ -135,12 +137,15 @@ $string['publishnot'] = 'Non rendere pubblici i risultati agli studenti';
 $string['removemychoice'] = 'Elimina la mia scelta';
 $string['removeresponses'] = 'Elimina tutte le risposte';
 $string['responses'] = 'Scelte';
+$string['responsesa'] = 'Risposte: {$a}';
 $string['responsesresultgraphheader'] = 'Visualizzazione grafico';
 $string['responsesto'] = 'Scelte su {$a}';
 $string['results'] = 'Risultati';
 $string['savemychoice'] = 'Salva la mia scelta';
 $string['search:activity'] = 'Scelta - Informazioni sull\'attività';
 $string['selectalloption'] = 'Seleziona tutti "{$a}"';
+$string['showavailable'] = 'Visualizza opzioni disponibili';
+$string['showavailable_help'] = 'Gli studenti potranno visualizzare il limite impostato per ciascuna opzione e le relative scelte già effettuate.';
 $string['showpreview'] = 'Visualizza anteprima';
 $string['showpreview_help'] = 'Gli studenti potranno visualizzare l\'anteprima della scelta prima della data di apertura.';
 $string['showunanswered'] = 'Visualizza colonna di chi non ha scelto';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'pt', version '3.8'.
+ * Strings for component 'license', language 'pt', version '3.11'.
  *
  * @package     license
  * @category    string
@@ -25,12 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allrightsreserved'] = 'Todos os direitos reservados.';
+$string['allrightsreserved'] = 'Todos os direitos reservados';
+$string['cannotdeletecore'] = 'Não é possível apagar uma licença padrão';
+$string['cannotdeletelicenseinuse'] = 'Não é possível apagar uma licença atualmente atribuída a um ou mais ficheiros';
 $string['cc'] = 'Creative Commons';
 $string['cc-nc'] = 'Creative Commons - No Commercial';
 $string['cc-nc-nd'] = 'Creative Commons - No Commercial NoDerivs';
 $string['cc-nc-sa'] = 'Creative Commons - No Commercial ShareAlike';
 $string['cc-nd'] = 'Creative Commons - NoDerivs';
 $string['cc-sa'] = 'Creative Commons - ShareAlike';
+$string['licensenotfoundshortname'] = 'Não foi possível encontrar uma licença com o nome abreviado \'{$a}\'';
+$string['missinglicensesortorder'] = 'Não é possível definir a ordem da licença. Uma ou mais licenças instaladas estão em falta na nova ordem';
 $string['public'] = 'Domínio público';
-$string['unknown'] = 'Outra';
+$string['unknown'] = 'Licença não especificada';

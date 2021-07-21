@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'filter_mathjaxloader', language 'gl', version '3.8'.
+ * Strings for component 'filter_mathjaxloader', language 'gl', version '3.11'.
  *
  * @package     filter_mathjaxloader
  * @category    string
@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['additionaldelimiters'] = 'Delimitadores de ecuación adicionais';
 $string['additionaldelimiters_help'] = 'O filtro MathJax analiza o texto para ecuacións contidas entre os caracteres delimitadores.
 
-Aquí pódese engadir a lista de caracteres delimitadores recoñecidos (por exemplo, AsciiMath usa `). Os delimitadores poden conter múltiples caracteres e múltiples delimitadores poden ser separados por comas.';
+Aquí pódese engadir a lista de caracteres delimitadores recoñecidos (por exemplo, AsciiMath usa `). Os delimitadores poden conter varios caracteres e varios delimitadores poden ser separados por comas.';
 $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'URL de MathJax';
 $string['httpsurl_help'] = 'URL completo á biblioteca MathJax.';
@@ -37,7 +37,7 @@ $string['localinstall_help'] = 'A configuración predeterminada de MathJax usa a
 
 Isto pode ser útil para aforrar no largo de banda ou por restricións de proxy local.
 
-Para usar unha instalación local de MathJax, primeiro descargue a biblioteca MathJax completa desde http://www.mathjax.org/. Logo instáleo nun servidor web. Finalmente, actualice as opcións de filtro MathJax httpurl e/ou httpsurl para apuntar o URL MathJax.js local.';
+Para usar unha instalación local de MathJax, primeiro descargue a biblioteca MathJax completa dende https://www.mathjax.org/. Logo instáleo nun servidor web. Finalmente, actualice as opcións de filtro MathJax httpurl e/ou httpsurl para apuntar ao URL local MathJax.js local.';
 $string['mathjaxsettings'] = 'Configuración de MathJax';
 $string['mathjaxsettings_desc'] = 'A configuración predeterminada de MathJax debería ser axeitada para a maioría dos usuarios, pero MathJax é altamente configurábel e aquí pode engadirse algunha das opcións de configuración MathJax.';
 $string['privacy:metadata'] = 'O engadido MathJax non almacena ningún dato persoal.';

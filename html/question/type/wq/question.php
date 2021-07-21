@@ -153,7 +153,7 @@ class qtype_wq_question extends question_graded_automatically {
         $expected = $this->base->get_expected_data();
         $expected['_sqi'] = PARAM_RAW_TRIMMED;
         $expected['auxiliar_text'] = question_attempt::PARAM_RAW_FILES;
-        $expecteddata['attachments'] = question_attempt::PARAM_FILES;
+        $expected['attachments'] = question_attempt::PARAM_FILES;
         return $expected;
     }
 

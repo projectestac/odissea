@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dbtransfer', language 'gl', version '3.8'.
+ * Strings for component 'tool_dbtransfer', language 'gl', version '3.11'.
  *
  * @package     tool_dbtransfer
  * @category    string
@@ -32,7 +32,7 @@ $string['convertinglogdisplay'] = 'Convertendo accións de amosar rexistro';
 $string['dbexport'] = 'Exportar a base de datos';
 $string['dbtransfer'] = 'Migración da base de datos';
 $string['enablemaintenance'] = 'Activar o modo de mantemento';
-$string['enablemaintenance_help'] = 'Esta opción posibilita o modo de mantemento durante e despois da migración da base de datos. Impide o acceso de todos os usuarios ata que a migración teña rematado. Teña en conta que o administrador debe eliminar manualmente o ficheiro $CFG->dataroot/climaintenance.html após actualizar os axustes de config.php para retomar a operación normal.';
+$string['enablemaintenance_help'] = 'Esta opción posibilita o modo de mantemento durante e após a migración da base de datos. Impide o acceso de todos os usuarios ata que a migración teña rematado. Teña en conta que o administrador debe eliminar manualmente o ficheiro $CFG->dataroot/climaintenance.html após actualizar os axustes de config.php para retomar a operación normal.';
 $string['exportdata'] = 'Exportar datos';
 $string['notargetconectexception'] = 'Non é posíbel conectar coa base de datos de destino.';
 $string['options'] = 'Opcións';
@@ -41,6 +41,6 @@ $string['privacy:metadata'] = 'O engadido de Transferencia de base de datos non 
 $string['targetdatabase'] = 'Base de datos de destino';
 $string['targetdatabasenotempty'] = 'A base de datos de destino non pode conter ningunha táboa co prefixo dado!';
 $string['transferdata'] = 'Transferir datos';
-$string['transferdbintro'] = 'Este script transferirá todo o contido desta base de datos cara outro servidor de bases de datos. Adoita usarse para a migración dos datos a un tipo diferente de bases de datos.';
-$string['transferdbtoserver'] = 'Transferir esta base de datos do Moodle cara outro servidor';
+$string['transferdbintro'] = 'Este script transferirá todo o contido desta base de datos cara a outro servidor de bases de datos. Adoita usarse para a migración dos datos a un tipo diferente de bases de datos.';
+$string['transferdbtoserver'] = 'Transferir esta base de datos do Moodle cara a outro servidor';
 $string['transferringdbto'] = 'Transferindo esta {$a->dbtypefrom} base de datos a {$a->dbtype} base de datos {$a->dbname} en «{$a->dbhost}»';

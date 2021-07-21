@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lp', language 'es', version '3.8'.
+ * Strings for component 'tool_lp', language 'es', version '3.11'.
  *
  * @package     tool_lp
  * @category    string
@@ -75,9 +75,9 @@ $string['completeplanconfirm'] = '¿Marcar el plan de aprendizaje \'{$a}\' como 
 $string['configurecoursecompetencysettings'] = 'Configurar competencias del curso';
 $string['configurescale'] = 'Configurar escalas';
 $string['coursecompetencies'] = 'Competencias del curso';
-$string['coursecompetencyratingsarenotpushedtouserplans'] = 'Las calificaciones de competencias de este curso no afectan los planes de aprendizaje.';
-$string['coursecompetencyratingsarepushedtouserplans'] = 'Las calificaciones de competencias en este curso actualizan de inmediato los planes de aprendizaje.';
-$string['coursecompetencyratingsquestion'] = 'Cuando se califica una competencia de curso, ¿aplica también al plan de aprendizaje o únicamente al curso?';
+$string['coursecompetencyratingsarenotpushedtouserplans'] = 'Las valoraciones de competencias de este curso no afectan los planes de aprendizaje.';
+$string['coursecompetencyratingsarepushedtouserplans'] = 'Las valoraciones de competencias en este curso actualizan de inmediato los planes de aprendizaje.';
+$string['coursecompetencyratingsquestion'] = 'Cuando se valora una competencia de curso, ¿aplica también al plan de aprendizaje o únicamente al curso?';
 $string['coursesusingthiscompetency'] = 'Cursos vinculados a esta competencia';
 $string['coveragesummary'] = '{$a->competenciescoveredcount} de {$a->competenciescount} competencias están completas ( {$a->coveragepercentage} % )';
 $string['createlearningplans'] = 'Crear planes de aprendizaje';

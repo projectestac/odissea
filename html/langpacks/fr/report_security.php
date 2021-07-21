@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'fr', version '3.8'.
+ * Strings for component 'report_security', language 'fr', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -25,12 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p>Il est recommandé de modifier les droits d\'accès au fichier config.php après installation, afin qu\'il ne soit pas modifié par le serveur web. Veuillez noter que cette mesure n\'améliore pas de façon significative la sécurité du serveur, bien qu\'elle puisse ralentir ou limiter des attaques générales.</p>';
+$string['check_configrw_details'] = '<p>Il est recommandé de modifier les droits d\'accès au fichier <code>config.php</code> après installation, afin qu\'il ne soit pas modifié par le serveur web. Veuillez noter que cette mesure n\'améliore pas de façon significative la sécurité du serveur, bien qu\'elle puisse ralentir ou limiter des attaques générales.</p>';
 $string['check_configrw_name'] = 'Fichier config.php accessible en écriture';
 $string['check_configrw_ok'] = 'Le fichier config.php ne peut pas être modifié par les scripts PHP.';
 $string['check_configrw_warning'] = 'Les scripts PHP pourraient modifier le fichier config.php.';
 $string['check_cookiesecure_details'] = '<p>Si la communication https est activée, il est recommandé d\'activer également les cookies sécurisés. Veuillez aussi ajouter une redirection permanente de http vers https et fournissez des entêtes HSTS.</p>';
 $string['check_cookiesecure_error'] = 'Veuillez activer les cookies sécurisés';
+$string['check_cookiesecure_http'] = 'Vous devez activer https pour utiliser des cookies sécurisés';
 $string['check_cookiesecure_name'] = 'Cookies sécurisés';
 $string['check_cookiesecure_ok'] = 'Cookies sécurisés activés.';
 $string['check_crawlers_details'] = '<p>L\'activation du réglage « Ouvert à Google » autorise les moteurs de recherche à accéder aux cours en tant que visiteur anonyme. Il n\'y a aucune raison d\'activer ce réglage si l\'accès aux visiteurs anonymes n\'est pas autorisé.</p>';
@@ -43,10 +44,12 @@ $string['check_defaultuserrole_error'] = 'Rôle par défaut des utilisateurs «�
 $string['check_defaultuserrole_name'] = 'Rôle par défaut des utilisateurs';
 $string['check_defaultuserrole_notset'] = 'Le rôle par défaut n\'est pas défini.';
 $string['check_defaultuserrole_ok'] = 'Définition adéquate du rôle par défaut des utilisateurs.';
+$string['check_dirindex_info'] = 'L\'index de dossier ne doit pas être activé';
 $string['check_displayerrors_details'] = '<p>L\'activation du réglage PHP <code>display_errors</code> n\'est pas recommandée sur les sites en production, car les messages d\'erreur peuvent révéler des informations sensibles au sujet de votre serveur.</p>';
 $string['check_displayerrors_error'] = 'Le réglage PHP permettant l\'affichage des erreurs est activé. Il est recommandé de le désactiver.';
 $string['check_displayerrors_name'] = 'Affichage des erreurs PHP';
 $string['check_displayerrors_ok'] = 'Affichage des erreurs PHP désactivé.';
+$string['check_dotfiles_info'] = 'Excepté le fichier /.well-known/*, les fichiers commençant par un point ne doivent pas être publics';
 $string['check_emailchangeconfirmation_details'] = '<p>Il est recommandé qu\'un courriel de confirmation soit requis lorsque les utilisateurs modifient leur adresse de courriel dans leur profil. Si cette vérification est désactivée, des spammeurs pourraient utiliser votre serveur pour l\'envoi de pourriels.</p><p>Le champ du courriel peut par ailleurs être verrouillé par les plugins d\'authentification. Cette possibilité n\'est pas considérée ici.</p>';
 $string['check_emailchangeconfirmation_error'] = 'Les utilisateurs peuvent saisir n\'importe quelle adresse.';
 $string['check_emailchangeconfirmation_info'] = 'Les utilisateurs peuvent saisir que des adresses de courriel des domaines autorisés.';
@@ -70,11 +73,7 @@ $string['check_mediafilterswf_details'] = '<p>L\'intégration automatique de fic
 $string['check_mediafilterswf_error'] = 'Le filtre média Flash est activé. Ceci est très dangereux dans la plupart des cas.';
 $string['check_mediafilterswf_name'] = 'Filtre .swf activé';
 $string['check_mediafilterswf_ok'] = 'Le filtre média Flash n\'est pas activé.';
-$string['check_noauth_details'] = '<p>Le plugin d\'authentification <em>Pas d\'authentification</em> n\'est pas destiné à être utilisé sur des serveurs en production. Veuillez le désactiver à moins que ce site soit un site de test ou de développement.</p>';
-$string['check_noauth_error'] = 'Le plugin d\'authentification <em>Pas d\'authentification</em> ne doit pas être utilisé sur des sites en production.';
-$string['check_noauth_name'] = 'Pas d\'authentification';
-$string['check_noauth_ok'] = 'Le plugin d\'authentification <em>Pas d\'authentification</em> est désactivé.';
-$string['check_nodemodules_details'] = '<p>Le dossier <em>{$a->path}</em> contient des modules Node.js et leur dépendances, installés typiquement par l\'utilitaire NPM. Ces modules peuvent être requis pour le développement de Moodle en local, par exemple pour utiliser grunt. Ils ne sont pas nécessaires pour le fonctionnement d\'un site Moodle en production et peuvent comporter du code potentiellement dangereux, qui expose votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si le site est accessible au moyen d\'une URL publique ou au moins d\'en empêcher l\'accès par le web dans la configuration de votre serveur web.</p>';
+$string['check_nodemodules_details'] = '<p>Le dossier <code>{$a->path}</code> contient des modules Node.js et leur dépendances, installés typiquement par l\'utilitaire NPM. Ces modules peuvent être requis pour le développement de Moodle en local, par exemple pour utiliser grunt. Ils ne sont pas nécessaires pour le fonctionnement d\'un site Moodle en production et peuvent comporter du code potentiellement dangereux, qui expose votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si le site est accessible au moyen d\'une URL publique ou au moins d\'en empêcher l\'accès par le web dans la configuration de votre serveur web.</p>';
 $string['check_nodemodules_info'] = 'Le dossier <em>node_modules</em> ne devrait pas être présent sur des sites publics.';
 $string['check_nodemodules_name'] = 'Dossier des modules Node.js';
 $string['check_openprofiles_details'] = 'Les profils utilisateurs ouverts peuvent être pollués par des spammeurs. Il est recommandé d\'activer soit le réglage <code>Imposer la connexion pour voir les profils</code>, soit <code>Imposer la connexion</code>.';
@@ -85,10 +84,13 @@ $string['check_passwordpolicy_details'] = '<p>Il est recommandé de définir une
 $string['check_passwordpolicy_error'] = 'Politique de mots de passe non définie.';
 $string['check_passwordpolicy_name'] = 'Politique de mots de passe';
 $string['check_passwordpolicy_ok'] = 'Politique de mots de passe active.';
-$string['check_preventexecpath_details'] = '<p>L\'autorisation de configurer les chemins des programmes exécutables dans l\'interface graphique d\'administration est un vecteur d\'escalade de privilège.</p>';
+$string['check_preventexecpath_details'] = '<p>Permettre la configuration des chemins des programmes exécutables dans l\'interface graphique d\'administration est un vecteur d\'escalade de privilèges. Le réglage suivant doit être imposé dans le fichier config.php :</p><p><code>$CFG->preventexecpath = true;<code></p>';
 $string['check_preventexecpath_name'] = 'Chemins des programmes exécutables';
 $string['check_preventexecpath_ok'] = 'Les chemins des exécutables ne peuvent être configurés que dans config.php.';
 $string['check_preventexecpath_warning'] = 'Les chemins des exécutables peuvent être configurés dans l\'interface graphique d\'administration.';
+$string['check_publicpaths_403'] = '(une erreur 403 est retournée ; idéalement une erreur 404 doit être retournée)';
+$string['check_publicpaths_generic'] = 'Les fichiers {$a} ne doivent pas être publics';
+$string['check_publicpaths_name'] = 'Vérifier tous les chemins publics/privés';
 $string['check_riskadmin_detailsok'] = '<p>Veuillez vérifier la liste ci-dessous des administrateurs du système :</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Veuillez vérifier la liste ci-dessous des administrateurs du système :</p>{$a->admins}<p>Il est recommandé de n\'attribuer le rôle d\'administrateur que dans le contexte Système. Les utilisateurs ci-dessous ont des attributions (non supportées) du rôle d\'administrateur dans d\'autres contextes :</p><p>{$a->unsupported}</p>';
 $string['check_riskadmin_name'] = 'Administrateurs';
@@ -113,7 +115,7 @@ $string['check_unsecuredataroot_error'] = 'Votre dossier de données <code>{$a}<
 $string['check_unsecuredataroot_name'] = 'Dossier de données non sûr';
 $string['check_unsecuredataroot_ok'] = 'Le dossier de données n\'est pas accessible via le web.';
 $string['check_unsecuredataroot_warning'] = 'Votre dossier de données <code>{$a}</code> est dans un emplacement où il pourrait être accessible directement via le web.';
-$string['check_vendordir_details'] = '<p>Le dossier <em>{$a->path}</em> contient diverses bibliothèques de tierces parties et leur dépendances, installées typiquement par l\'utilitaire PHP Composer. Ces bibliothèques peuvent être requises pour le développement de Moodle en local, par exemple pour installer PHPUnit. Elles ne sont pas nécessaires pour le fonctionnement d\'un site Moodle en production et peuvent comporter du code potentiellement dangereux, qui expose votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si le site est accessible au moyen d\'une URL publique ou au moins d\'en empêcher l\'accès par le web dans la configuration de votre serveur web.</p>';
+$string['check_vendordir_details'] = '<p>Le dossier <code>{$a->path}</code> contient diverses bibliothèques de tierces parties et leur dépendances, installées typiquement par l\'utilitaire PHP Composer. Ces bibliothèques peuvent être requises pour le développement de Moodle en local, par exemple pour installer PHPUnit. Elles ne sont pas nécessaires pour le fonctionnement d\'un site Moodle en production et peuvent comporter du code potentiellement dangereux, qui expose votre site à des attaques à distance.</p><p>Il est vivement recommandé de supprimer ce dossier si le site est accessible au moyen d\'une URL publique ou au moins d\'en empêcher l\'accès par le web dans la configuration de votre serveur web.</p>';
 $string['check_vendordir_info'] = 'Le dossier <em>vendor</em> ne devrait pas être présent sur des sites publics.';
 $string['check_vendordir_name'] = 'Dossier <em>vendor</em>';
 $string['check_webcron_details'] = '<p>Le lancement du cron par l\'intermédiaire d\'un navigateur web peut exposer des informations sensibles à des utilisateurs anonymes. Il est donc recommandé de ne lancer le cron qu\'en ligne de commande ou de définir un mot de passe pour l\'accès distant au cron.</p>';
@@ -123,14 +125,9 @@ $string['check_webcron_warning'] = 'Les utilisateurs anonymes peuvent accéder a
 $string['configuration'] = 'Configuration';
 $string['description'] = 'Description';
 $string['details'] = 'Détails';
+$string['eventreportviewed'] = 'Rapport de vérifications de sécurité consulté';
 $string['issue'] = 'Problème';
-$string['pluginname'] = 'Panorama de sécurité';
+$string['pluginname'] = 'Vérifications de sécurité';
 $string['privacy:metadata'] = 'Le plugin Panorama de sécurité n\'enregistre aucune donnée personnelle.';
 $string['security:view'] = 'Consulter le rapport de sécurité';
-$string['status'] = 'Statut';
-$string['statuscritical'] = 'Critique';
-$string['statusinfo'] = 'Information';
-$string['statusok'] = 'OK';
-$string['statusserious'] = 'Sérieux';
-$string['statuswarning'] = 'Avertissement';
 $string['timewarning'] = 'Le traitement des données peut prendre beaucoup de temps. Veuillez prendre patience…';

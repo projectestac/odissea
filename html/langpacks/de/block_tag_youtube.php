@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'de', version '3.8'.
+ * Strings for component 'block_tag_youtube', language 'de', version '3.11'.
  *
  * @package     block_tag_youtube
  * @category    string
@@ -31,6 +31,7 @@ $string['apikey'] = 'API Key';
 $string['apikeyinfo'] = 'Holen Sie sich einen <a href="https://developers.google.com/youtube/v3/getting-started">Google API key</a> für Ihre Website.';
 $string['autosvehicles'] = 'Autos & Fahrzeuge';
 $string['category'] = 'Kategorie';
+$string['categoryerror'] = 'Die Liste der Kategorien konnte nicht abgerufen werden. <br> {$a}';
 $string['comedy'] = 'Comedy';
 $string['configtitle'] = 'Titel für YouTube-Block';
 $string['education'] = 'Schule & Bildung';
@@ -41,12 +42,13 @@ $string['howtodiy'] = 'Anleitung & Selbermachen';
 $string['includeonlyvideosfromplaylist'] = 'Nur Videos aus Playlist mit ID';
 $string['music'] = 'Musik';
 $string['newspolitics'] = 'Nachrichten & Politik';
+$string['nonprofitactivism'] = 'Gemeinnützigkeit & Beteiligung';
 $string['numberofvideos'] = 'Anzahl der Videos';
 $string['peopleblogs'] = 'Personen & Blogs';
 $string['petsanimals'] = '(Haus-)Tiere';
 $string['pluginname'] = 'YouTube';
 $string['privacy:metadata'] = 'Der YouTube-Block zeigt ausschließlich Daten an, die woanders gespeichert sind.';
-$string['requesterror'] = 'Daten konnten nicht vom Server abgerufen werden. Informieren Sie den Administrator, wenn das Problem weiter auftritt.';
+$string['requesterror'] = 'Daten konnten nicht vom Server abgerufen werden. Informieren Sie die Administrator/innen, wenn das Problem weiter auftritt.';
 $string['scienceandtech'] = 'Wissenschaft & Technik';
 $string['sports'] = 'Sport';
 $string['tag_youtube:addinstance'] = 'Neuen YouTube-Block hinzufügen';

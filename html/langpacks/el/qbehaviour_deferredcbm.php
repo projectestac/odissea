@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredcbm', language 'el', version '3.8'.
+ * Strings for component 'qbehaviour_deferredcbm', language 'el', version '3.11'.
  *
  * @package     qbehaviour_deferredcbm
  * @category    string
@@ -45,7 +45,7 @@ $string['certainty-1'] = 'Δεν έχω ιδέα';
 $string['certainty1'] = 'C=1 (Αβέβαιος: <67%)';
 $string['certainty2'] = 'C=2 (Μέση βεβαιότητα: >67%)';
 $string['certainty3'] = 'C=3 (Αρκετή βεβαιότητα: >80%)';
-$string['certainty_help'] = 'Η βαθμολόγηση βάσει βεβαιότητας (Certainty Based Marking, για την αποφυγή τυχερών απαντήσεων) απαιτεί να υποδείξετε πόσο αξιόπιστη νομίζετε ότι είναι η απάντησή σας. Τα διαθέσιμα επίπεδα είναι:
+$string['certainty_help'] = 'Η βαθμολόγηση βάσει βεβαιότητας (Certainty Based Marking, για την αποφυγή τυχερών απαντήσεων) απαιτεί να δηλώσετε πόσο αξιόπιστη νομίζετε εσείς ότι είναι η απάντησή σας. Τα διαθέσιμα επίπεδα είναι:
 
 Επίπεδο βεβαιότητας         | Β = 1 (Αβέβαιη) | Β = 2 (Mid) | Β = 3 (αρκετά σίγουρο)
 --------------------------- | --------------- | ----------- | ----------------------

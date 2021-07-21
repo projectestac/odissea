@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ja', version '3.8'.
+ * Strings for component 'glossary', language 'ja', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -90,6 +90,7 @@ $string['commentdeleted'] = 'コメントが削除されました。';
 $string['comments'] = 'コメント';
 $string['commentson'] = 'コメント';
 $string['commentupdated'] = 'コメントが更新されました。';
+$string['completiondetail:entries'] = 'エントリを作成する: {$a}';
 $string['completionentries'] = '学生はエントリを作成する必要がある:';
 $string['completionentriesdesc'] = '学生は少なくとも {$a} 件のエントリを作成する必要があります。';
 $string['completionentriesgroup'] = '必須エントリ';

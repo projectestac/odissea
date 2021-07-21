@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeexport_txt', language 'sv', version '3.8'.
+ * Strings for component 'gradeexport_txt', language 'sv', version '3.11'.
  *
  * @package     gradeexport_txt
  * @category    string
@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Ren textfil';
+$string['eventgradeexported'] = 'Betygsexport (TXT)';
+$string['pluginname'] = 'Oformaterad textfil';
+$string['privacy:metadata'] = 'Pluginmodulen Oformaterad text lagrar inga personuppgifter.';
 $string['timeexported'] = 'Senast nedladdad från denna kurs';
 $string['txt:publish'] = 'Publicera export av betyg i formatet TXT';
 $string['txt:view'] = 'Använd en ren textfil för export av betyg';

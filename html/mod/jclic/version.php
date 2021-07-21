@@ -23,16 +23,17 @@
  *
  * @package    mod
  * @subpackage jclic
- * @copyright  2011 onwards Departament d'Ensenyament de la Generalitat de Catalunya
+ * @copyright  2011 onwards Departament d'Educacio de la Generalitat de Catalunya
  * @author     Sara Arjona Téllez <sarjona@xtec.cat>
+ * @author     TICxCAT <info@ticxcat.cat>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020110400;      // The current module version (Date: YYYYMMDDXX)
-$plugin->requires  = 2015111600;      // Requires this Moodle version (2.7)
+$plugin->version   = 2021060100;      // The current module version (Date: YYYYMMDDXX)
+$plugin->requires  = 2021051700;      // Requires this Moodle version (3.11)
 $plugin->cron      = 0;               // Period for cron to check this module (secs)
 $plugin->component = 'mod_jclic';     // To check on upgrade, that module sits in correct place
-$plugin->release   = 'v3.0.5';        // Human-readable version name
-$plugin->maturity = MATURITY_STABLE;  // How stable the plugin is
+$plugin->release   = 'v3.0.6';        // Human-readable version name
+$plugin->maturity  = MATURITY_STABLE;  // How stable the plugin is

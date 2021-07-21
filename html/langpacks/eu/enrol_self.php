@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'eu', version '3.8'.
+ * Strings for component 'enrol_self', language 'eu', version '3.11'.
  *
  * @package     enrol_self
  * @category    string
@@ -102,6 +102,7 @@ $string['requirepassword'] = 'Matrikulazio-giltza behar du';
 $string['requirepassword_desc'] = 'Behartu ikastaro berrietan matrikulazio-giltza izatea eta galarazi matrikulazio-giltza ezabatzea existitzen diren ikastaroetan.';
 $string['role'] = 'Modu lehenetsian esleitutako rola';
 $string['self:config'] = 'Konfiguratu matrikulazio automatikorako instantziak';
+$string['self:enrolself'] = 'Norbera ikastaroan matrikulatzea';
 $string['self:holdkey'] = 'Agertu matrikulazio automatikoaren giltzain gisa';
 $string['self:manage'] = 'Kudeatu matrikulatutako erabiltzaileak';
 $string['self:unenrol'] = 'Desmatrikulatu erabiltzaileak ikastarotik';
@@ -110,7 +111,7 @@ $string['sendcoursewelcomemessage'] = 'Bidali ikastarorako harrera-mezua';
 $string['sendcoursewelcomemessage_help'] = 'Erabiltzaileek beren burua ikastaro batean matrikulatzen dutenean ongi etorri e-maila jasoko dute. Ikastaroko kontaktuak bidaltzen badu (modu lehenetsian irakasleak) eta erabiltzaile batek baino gehiagok badute rol hori, e-maila rol hori daukan lehen erabiltzailearen izenean bidaliko da.';
 $string['sendexpirynotificationstask'] = 'Matrikulazio automatikoen iraungitze-jakinarazpenen bidalketa ataza';
 $string['showhint'] = 'Erakutsi argibidea';
-$string['showhint_desc'] = 'Erakutsi bisitarien sarbide-giltzaren lehenbiziko letra';
+$string['showhint_desc'] = 'Erakutsi bisitarien sarbide-gakoaren lehenbiziko letra';
 $string['status'] = 'Baimendu existitzen diren matrikulazioak';
 $string['status_desc'] = 'Gaitu matrikulazio automatikoa ikastaro berrietan';
 $string['status_help'] = '\'Baimendu matrikula berriak\' aukerarekin batera gaituz gero, soilik aurretik auto-matrikulatutako erabiltzaileek izango dute ikastarorako sarbidea. Desgaituz gero matrikulazio automatikoki gehigarria desgaituko da, existitzen diren matrikulazioak etengo direlako eta erabiltzaile berriek ezingo dutelako bere burua matrikulatu.';

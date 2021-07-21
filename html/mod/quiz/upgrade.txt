@@ -1,5 +1,22 @@
 This files describes API changes in the quiz code.
 
+=== 3.11 ===
+
+* External function mod_quiz_external::get_user_best_grade now returns and additional optional field:
+  - gradetopass: The grade to pass the quiz (if set)
+
+=== 3.10.1 ===
+
+* External functions mod_quiz_external::get_attempt_data, mod_quiz_external::get_attempt_summary
+  and mod_quiz_external::get_attempt_review now return a new additional optional field:
+   - settings: Containing the question definition settings for displaying the question in an external system.
+
+=== 3.10 ===
+
+* External functions mod_quiz_external::get_attempt_data, mod_quiz_external::get_attempt_summary
+  and mod_quiz_external::get_attempt_review now return a new additional optional field:
+   - responsefileareas: Containing the user responses to questions file area names including files.
+
 === 3.7 ===
 
 * Quiz_cron() has been removed. Sub-plugins should implemented scheduled tasks, however legacy cron in subplugins are

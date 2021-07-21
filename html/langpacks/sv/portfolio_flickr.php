@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_flickr', language 'sv', version '3.8'.
+ * Strings for component 'portfolio_flickr', language 'sv', version '3.11'.
  *
  * @package     portfolio_flickr
  * @category    string
@@ -38,12 +38,15 @@ $string['noauthtoken'] = 'Det gick inte att hämta någon "token" för autentise
 $string['other'] = 'Konst, illustration, CGI eller andra icke-fotografiska bilder';
 $string['photo'] = 'Foton';
 $string['pluginname'] = 'Flickr.com';
+$string['privacy:metadata'] = 'Den här pluginmodulen skickar data externt till ett länkat Flickr-konto. Den lagrar inte data lokalt.';
+$string['privacy:metadata:data'] = 'Personuppgifter som överförs från portföljens undersystem.';
 $string['restricted'] = 'Avgränsad';
 $string['safe'] = 'Säker';
 $string['safetylevel'] = 'Säkerhetsnivå';
 $string['screenshot'] = 'Skärmbilder';
 $string['set'] = 'Ställ in';
 $string['setupinfo'] = 'Instruktioner för inställningar';
+$string['setupinfodetails'] = 'Om du vill hämta API-nyckeln och den hemliga strängen, gå till <a href="{$a->applyurl}">ansök om en ny nyckel</a>. När ny nyckel och hemlighet har genererats åt dig följer du länken "Redigera autentiserings-flöde för den här appen" på sidan. Välj \'Apptyp\' till \'Webbprogram\'. I fältet "Callback-URL" anger du värdet: <br /><code>{$a->callbackurl}</code>.<br />Du kan även ange din Moodle-webbplatsbeskrivning och logotyp. Dessa värden kan ställas in senare på <a href="{$a->keysurl}">sidan</a> som visar dina Flickr-program.';
 $string['sharedsecret'] = 'Hemlig sträng';
 $string['title'] = 'Titel';
 $string['uploadfailed'] = 'Det gick inte att ladda upp bild/er till flickr.com:	 {$a}';

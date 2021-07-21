@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_upload', language 'ar', version '3.8'.
+ * Strings for component 'repository_upload', language 'ar', version '3.11'.
  *
  * @package     repository_upload
  * @category    string
@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'تهيئة ملحق الرفع';
-$string['pluginname'] = 'رفع ملف';
+$string['pluginname'] = 'رفع الملف';
 $string['pluginname_help'] = 'رفع ملف لمودل';
 $string['privacy:metadata'] = 'إن ملحق مستودع رفع الملف لا يخزن أو يرسل أي بيانات شخصية.';
 $string['upload:view'] = 'استعمال الرفع في منتقي الملفات';

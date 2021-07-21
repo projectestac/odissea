@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'nl', version '3.8'.
+ * Strings for component 'lesson', language 'nl', version '3.11'.
  *
  * @package     lesson
  * @category    string
@@ -86,6 +86,7 @@ $string['averagescore'] = 'Gemiddelde score';
 $string['averagetime'] = 'Gemiddelde tijd';
 $string['branch'] = 'Inhoud';
 $string['branchtable'] = 'Inhoud';
+$string['cachedef_overrides'] = 'Informatie gebruiker- en groepsoverschrijving';
 $string['cancel'] = 'Annuleer';
 $string['cannotfindanswer'] = 'Fout: kon antwoord niet vinden';
 $string['cannotfindattempt'] = 'Fout: kon poging niet vinden';
@@ -120,6 +121,8 @@ $string['comments'] = 'Jouw commentaar';
 $string['completed'] = 'Voltooid';
 $string['completederror'] = 'Voltooi de les';
 $string['completethefollowingconditions'] = 'Je moet volgende voorwaarde(n) voltooien in les <b>{$a}</b> voor je verder kan gaan.';
+$string['completiondetail:reachend'] = 'Ga door de activiteit tot het einde';
+$string['completiondetail:timespent'] = 'Spendeer minstens {$a} aan deze activiteit';
 $string['completionendreached'] = 'Vereis lezen tot het einde';
 $string['completionendreached_desc'] = 'De leerling moet het einde van de lespagina bereiken voor deze activiteit voltooid is';
 $string['completiontimespent'] = 'Leerling moet deze activiteit doen gedurende minstens';
@@ -327,7 +330,7 @@ $string['maxgrade_help'] = 'Deze waarde bepaalt het maximumcijfer dat gegeven ka
 $string['maximumnumberofanswersbranches'] = 'Maximale aantal antwoorden';
 $string['maximumnumberofanswersbranches_help'] = 'Deze waarde bepaalt het maximale aantal antwoorden dat kan worden gebruikt in de les. Als de les enkel waar/onwaar-vragen gebruikt, dan kun je deze optie beter op 2 zetten.
 De waarde kan op ieder moment worden gewijzigd; een nieuwe instelling heeft immers enkel effect op wat de leraar ziet, en niet op de data.';
-$string['maximumnumberofattempts'] = 'Maximale aantal pogingen';
+$string['maximumnumberofattempts'] = 'Maximale aantal pogingen per vraag';
 $string['maximumnumberofattempts_help'] = 'Deze waarde bepaalt het maximale aantal pogingen die een leerling krijgt om een vraag te beantwoorden. Indien het maximum wordt bereikt na telkens opnieuw een foutief antwoord, dan wordt de volgende pagina van de les getoond.';
 $string['maximumnumberofattemptsreached'] = 'Maximum aantal pogingen bereikt - we gaan verder naar de volgende pagina.';
 $string['mediaclose'] = 'Toon sluit-knop';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'ar', version '3.8'.
+ * Strings for component 'assignfeedback_editpdf', language 'ar', version '3.11'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -29,11 +29,11 @@ $string['addtoquicklist'] = 'أضف إلى القائمة السريعة';
 $string['annotationcolour'] = 'لون التعليق';
 $string['black'] = 'أسود';
 $string['blue'] = 'أزرق';
-$string['cannotopenpdf'] = 'لا يمكن فتح ملف PDF. قد يكون الملف تالفًا أو بتنسيق غير مدعوم.';
+$string['cannotopenpdf'] = 'لا يمكن فتح ملف PDF. قد يكون الملف تالفاً أو بتنسيق غير مدعوم.';
 $string['clear'] = 'واضح';
 $string['colourpicker'] = 'منتقي الألوان';
 $string['command'] = 'أمر:';
-$string['comment'] = 'تعليقات';
+$string['comment'] = 'التعليقات';
 $string['commentcolour'] = 'لون التعليق';
 $string['commentcontextmenu'] = 'قائمة سياق التعليق';
 $string['commentindex'] = 'فهرس التعليقات';
@@ -41,58 +41,57 @@ $string['commentlabel'] = '{$a->pnum}.{$a->cnum}';
 $string['couldnotsavepage'] = 'لا يمكن حفظ الصفحة {$a}';
 $string['currentstamp'] = 'ختم';
 $string['default'] = 'مُفعّل تلقائياً';
-$string['default_help'] = 'إذا تم تفعيل هذا الخيار فإن طريقة الإفادة هذه ستكون مفُعّلة إفتراضياً لكل الواجبات الجديدة.';
+$string['default_help'] = 'إذا تم ضبطه، سيتم تمكين طريقة الإفادة هذه إفتراضياً لكل الواجبات الجديدة.';
 $string['deleteannotation'] = 'حذف التعليق التوضيحي';
 $string['deletecomment'] = 'امسح التعليق';
-$string['deletefeedback'] = 'حذف ردود الفعل بصيغة  PDF';
-$string['downloadablefilename'] = 'feedback.pdf';
-$string['downloadfeedback'] = 'تحميل الملاحظات بصيغة PDF';
+$string['deletefeedback'] = 'حذف PDF الإفادة';
+$string['downloadablefilename'] = 'الإفادة.pdf';
+$string['downloadfeedback'] = 'تنزيل الإفادة بصيغة PDF';
 $string['draftchangessaved'] = 'تم حفظ مشروع التعليقات التوضيحية';
 $string['drag'] = 'اسحب';
 $string['editpdf'] = 'التعليق على PDF';
 $string['editpdf_help'] = 'قم بالتعليق على تسليمات الطلاب مباشرة عبر المستعرض وتوليد ملف PDF مُحرر قابل للتنزيل.';
 $string['enabled'] = 'التعليق على PDF';
-$string['enabled_help'] = 'في حالة التمكين ، سيكون المعلم قادرًا على إنشاء ملفات PDF مشروحة عند تحديد المهام. يتيح ذلك للمعلم إضافة التعليقات و الرسم و الأختام مباشرة فوق عمل الطلاب.
-يتم التعليق التوضيحي في المستعرض و لا يلزم وجود برامج إضافية.';
-$string['errorgenerateimage'] = 'حدث خطأ أثناء إنشاء صورة باستخدام ghostscript .. و معلومات تصحيح الأخطاء: {$a}';
+$string['enabled_help'] = 'في حالة التمكين، سيكون المعلم قادراً على إنشاء ملفات PDF مشروحة عند تصحيح تسليمات الواجب. يتيح ذلك للمعلم إضافة التعليقات ، الرسوم والأختام مباشرة فوق عمل الطلاب. التأشيرات تتم عبر المستعرض ولا تتطلب وجود برامج إضافية.';
+$string['errorgenerateimage'] = 'وقع خطأ عند توليد الصورة باستعمال ghostscript .. ومعلومات تصحيح الأخطاء: {$a}';
 $string['errorpdfpage'] = 'حدث خطأ أثناء إنشاء هذه الصفحة.';
 $string['expcolcomments'] = 'توسيع / طي جميع التعليقات';
-$string['filter'] = 'تصفية التعليقات ...';
-$string['generatefeedback'] = 'توليد التعليقات بصيغة  PDF';
+$string['filter'] = 'ترشيح التعليقات...';
+$string['generatefeedback'] = 'توليد الإفادة بصيغة PDF';
 $string['generatingpdf'] = 'توليد ملف PDF ...';
-$string['gotopage'] = 'اذهب لصفحة';
+$string['gotopage'] = 'إذهب إلى صفحة';
 $string['green'] = 'أخضر';
 $string['gsimage'] = 'اختبار الصورة بصيغة Ghostscript';
 $string['highlight'] = 'تسليط الضوء';
-$string['jsrequired'] = 'جافا سكريبت مطلوبة للتعليق على  PDF. يرجى تمكين JavaScript في متصفحك لاستخدام هذه الميزة.';
+$string['jsrequired'] = 'إن JavaScript مطلوبة للتعليق على PDF. يرجى تمكين JavaScript في متصفحك لاستخدام هذه الميزة.';
 $string['launcheditor'] = 'بدء تشغيل محرر PDF ...';
 $string['line'] = 'خط';
 $string['loadingeditor'] = 'تحميل محرر PDF';
-$string['navigatenext'] = 'الصفحة التالية (Alt / Shift-Alt / Ctrl-Option + {$a})';
-$string['navigateprevious'] = 'الصفحة السابقة (Alt / Shift-Alt / Ctrl-Option + {$a})';
+$string['navigatenext'] = 'الصفحة التالية (Alt/Shift-Alt/Ctrl-الخيار+ {$a})';
+$string['navigateprevious'] = 'الصفحة السابقة (Alt/Shift-Alt/Ctrl-الخيار+ {$a})';
 $string['output'] = 'انتاج:';
 $string['oval'] = 'بيضاوي';
-$string['pagenumber'] = 'صفحة رقم {$a}';
-$string['pagexofy'] = 'صفحة رقم {$a} من {$a->total}';
+$string['pagenumber'] = 'صفحة {$a}';
+$string['pagexofy'] = 'صفحة {$a->page} من {$a->total}';
 $string['partialwarning'] = 'لا يمكن الوصول إلى بعض الملفات الموجودة في هذا التقديم إلا عن طريق التنزيل المباشر.';
 $string['pathtogspathdesc'] = 'يرجى ملاحظة أن التعليقات التوضيحية بتنسيق PDF تتطلب تعيين المسار إلى ghostscript في {$a}.';
 $string['pen'] = 'القلم';
 $string['pluginname'] = 'التعليق على PDF';
 $string['preparesubmissionsforannotation'] = 'إعداد التقديمات للتعليق';
-$string['privacy:metadata:colourpurpose'] = 'لوّن التعليق أو الشرح';
-$string['privacy:metadata:conversionpurpose'] = 'يتم تحويل الملفات إلى ملفات PDF للسماح بالتعليقات التوضيحية.';
-$string['privacy:metadata:filepurpose'] = 'يخزن PDF المشروح مع ردود الفعل للمستخدم.';
-$string['privacy:metadata:rawtextpurpose'] = 'يخزن النص الأصلي في البيانات السريعة.';
-$string['privacy:metadata:tablepurpose'] = 'يخزّن المعلمين المحددين تعليقات قائمة سريعة';
-$string['privacy:metadata:userid'] = 'معرف المستخدم';
-$string['privacy:path'] = 'ردود الفعل الشعبي';
+$string['privacy:metadata:colourpurpose'] = 'لون التعليق أو الشرح';
+$string['privacy:metadata:conversionpurpose'] = 'يتم تحويل الملفات إلى ملفات PDF للسماح بالتعليقات التوضيحية';
+$string['privacy:metadata:filepurpose'] = 'يخزن ملف PDF ذي شروح مع الإفادات للمستخدم';
+$string['privacy:metadata:rawtextpurpose'] = 'يخزن النص الأصلي في البيانات السريعة';
+$string['privacy:metadata:tablepurpose'] = 'يخزن التعليقات المحددة في القائمة السريعة للمعلم';
+$string['privacy:metadata:userid'] = 'مُعرَّف المستخدم';
+$string['privacy:path'] = 'إفادة PDF';
 $string['rectangle'] = 'مستطيل';
 $string['red'] = 'أحمر';
 $string['result'] = 'النتيجة:';
 $string['rotateleft'] = 'در 90 درجة إلى اليسار';
 $string['rotateright'] = 'در 90 درجة إلى اليمين';
 $string['searchcomments'] = 'البحث في التعليقات';
-$string['select'] = 'اختر';
+$string['select'] = 'إختر';
 $string['stamp'] = 'الختم';
 $string['stamppicker'] = 'منتقي الطوابع';
 $string['stamps'] = 'طوابع بريدية';

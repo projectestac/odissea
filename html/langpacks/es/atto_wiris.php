@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_wiris', language 'es', version '3.8'.
+ * Strings for component 'atto_wiris', language 'es', version '3.11'.
  *
  * @package     atto_wiris
  * @category    string
@@ -26,6 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Plugin WIRIS para Atto';
-$string['wiris_cas_title'] = 'cas WIRIS';
 $string['wiris_chem_editor_title'] = 'Insertar una fórmula química - ChemType';
 $string['wiris_editor_title'] = 'Insertar una ecuación matemática - MathType';

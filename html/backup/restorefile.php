@@ -116,12 +116,12 @@ $PAGE->set_heading($heading);
 $PAGE->set_pagelayout('admin');
 $PAGE->requires->js_call_amd('core_backup/async_backup', 'asyncBackupAllStatus', array($context->id));
 
-//XTEC ************ AFEGIT - Control backup hours
-//2013.04.24 @aginard
+// XTEC ************ AFEGIT - Control backup hours
+// 2013.04.24 @aginard
 if (!get_protected_agora() && is_rush_hour()) {
     print_error('rush_hour', 'local_agora', $CFG->wwwroot . '/course/view.php?id=' . $course->id);
 }
-//************ FI
+// ************ FI
 
 $form = new course_restore_form(null, array('contextid'=>$contextid));
 $data = $form->get_data();

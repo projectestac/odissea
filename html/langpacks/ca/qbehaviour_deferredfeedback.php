@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_deferredfeedback', language 'ca', version '3.8'.
+ * Strings for component 'qbehaviour_deferredfeedback', language 'ca', version '3.11'.
  *
  * @package     qbehaviour_deferredfeedback
  * @category    string
@@ -25,4 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Retroacció diferida';
+$string['pluginname'] = 'Retroalimentació diferida';

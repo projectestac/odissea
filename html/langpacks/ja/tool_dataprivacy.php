@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'ja', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'ja', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -31,7 +31,12 @@ $string['addnewdefaults'] = '新しいモジュールデフォルトを追加す
 $string['addpurpose'] = '目的を追加する';
 $string['addroleoverride'] = 'ロールオーバーライドを追加する';
 $string['approve'] = '承認';
+$string['approvedrequestsubmitted'] = 'あなたのリクエストが送信されました。まもなく処理されます。';
 $string['approverequest'] = 'リクエストを承認する';
+$string['automaticdatadeletionapproval'] = '自動データ削除リクエスト承認';
+$string['automaticdatadeletionapproval_desc'] = 'この設定を有効にした場合、データ削除リクエストは自動的に承認されます。<br/>自動承認はこの設定が有効にされた後の新しいデータ削除リクエストにのみ適用されることに留意してください。既存の承認待ちのデータ削除リクエストはプライバシー責任者による手動承認が必要です。';
+$string['automaticdataexportapproval'] = '自動データエクスポートリクエスト承認';
+$string['automaticdataexportapproval_desc'] = 'この設定を有効にした場合、データエクスポートリクエストは自動的に承認されます。<br/>自動承認はこの設定が有効にされた後の新しいデータエクスポートリクエストにのみ適用されることに留意してください。既存の承認待ちのデータエクスポートリクエストはプライバシー責任者による手動承認が必要です。';
 $string['automaticdeletionrequests'] = '自動データ削除リクエストを作成する';
 $string['automaticdeletionrequests_desc'] = 'この設定を有効にした場合、手動でアカウント削除されたユーザすべてのデータ削除リクエストが自動的に作成されます。';
 $string['bulkapproverequests'] = 'リクエストを承認する';
@@ -140,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} (最後にユーザがサイト�
 $string['emailsalutation'] = '{$a} さん';
 $string['errorcannotrequestdeleteforother'] = 'あなたにはこのユーザの削除リクエストを作成するパーミッションはありません。';
 $string['errorcannotrequestdeleteforself'] = 'あなたにはあなた自身の削除リクエストを作成するパーミッションはありません。';
+$string['errorcontactdpodisabled'] = 'プライバシー責任者への連絡のオプションは無効にされています。';
 $string['errorcontexthasunexpiredchildren'] = 'コンテクスト「 {$a} 」にはまだ有効期限切れではないサブコンテクストがあります。コンテクストには削除のための削除フラグは付けられませんでした。';
 $string['errorinvalidrequestcomments'] = 'コメントフィールドにはプレインテキストのみ含めます。';
 $string['errorinvalidrequestcreationmethod'] = '無効なリクエスト作成方法です!';
@@ -326,7 +332,6 @@ $string['statusdeleted'] = '削除済み';
 $string['statusdetail'] = 'ステータス:';
 $string['statusexpired'] = '有効期限切れ';
 $string['statuspending'] = '保留';
-$string['statuspreprocessing'] = '前処理';
 $string['statusprocessing'] = '処理';
 $string['statusready'] = 'ダウンロード準備完了';
 $string['statusrejected'] = '拒否';

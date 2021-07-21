@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_grouping', language 'ar', version '3.8'.
+ * Strings for component 'availability_grouping', language 'ar', version '3.11'.
  *
  * @package     availability_grouping
  * @category    string
@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'السماح فقط للطلاب الذين ينتمون إلى مجموعة داخل مجموعة محددة.';
+$string['description'] = 'السماح فقط للطلاب الذين ينتمون إلى مجموعة تقع ضمن تجميع محدد.';
 $string['error_selectgrouping'] = 'يجب عليك اختيار مجموعة.';
 $string['missing'] = '(تجمع مفقود)';
-$string['pluginname'] = 'القيود عن طريق التجميع';
-$string['privacy:metadata'] = 'البرنامج المساعد Restriction by grouping لا يخزن أيّ بيانات شخصية.';
-$string['requires_grouping'] = 'أنت تنتمي إلى مجموعة في {$a}';
-$string['requires_notgrouping'] = 'أنت لا تنتمي إلى مجموعة في {$a}';
+$string['pluginname'] = 'التقييد حسب التجميع';
+$string['privacy:metadata'] = 'إن ملحق التقييد حسب التجميع لا يخزن أيّ بيانات شخصية.';
+$string['requires_grouping'] = 'كنتَ منتمياً إلى مجموعة ضمن {$a}';
+$string['requires_notgrouping'] = 'كنتَ لا تنتمي إلى مجموعة ضمن {$a}';
 $string['title'] = 'تجمع';

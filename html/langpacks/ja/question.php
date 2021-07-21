@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'question', language 'ja', version '3.8'.
+ * Strings for component 'question', language 'ja', version '3.11'.
  *
  * @package     question
  * @category    string
@@ -86,7 +86,7 @@ $string['categorynamewithcount'] = '{$a->name} ({$a->questioncount})';
 $string['categorynamewithidnumber'] = '{$a->name} [{$a->idnumber}]';
 $string['categorynamewithidnumberandcount'] = '{$a->name} [{$a->idnumber}] ({$a->questioncount})';
 $string['changeoptions'] = 'オプションを変更する';
-$string['changepublishstatuscat'] = 'コース内<a href="{$a->caturl}">カテゴリ「 {$a->name} 」</a>の共有ステータスが<strong>{$a->changefrom}から{$a->changeto}</strong>に変更されます。';
+$string['changepublishstatuscat'] = 'コース内<a href="{$a->caturl}">カテゴリ「 {$a->name} 」</a>の共有ステータスが{$a->changefrom}から{$a->changeto}に変更されます。';
 $string['check'] = 'チェック';
 $string['chooseqtypetoadd'] = '追加する問題タイプを選択する';
 $string['clearwrongparts'] = '正しくない解答をクリアする';
@@ -424,7 +424,7 @@ $string['shown'] = '表示';
 $string['shownumpartscorrect'] = '正答数を表示する';
 $string['shownumpartscorrectwhenfinished'] = '問題終了後、正答数を表示する';
 $string['showquestiontext'] = '問題リスト内に問題テキストを表示する';
-$string['specificfeedback'] = '特定フィードバック';
+$string['specificfeedback'] = '個別フィードバック';
 $string['specificfeedback_help'] = '学生の解答に応じて与えられるフィードバックです。';
 $string['started'] = '開始';
 $string['state'] = '状態';

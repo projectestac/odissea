@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'editor_tinymce', language 'it', version '3.8'.
+ * Strings for component 'editor_tinymce', language 'it', version '3.11'.
  *
  * @package     editor_tinymce
  * @category    string

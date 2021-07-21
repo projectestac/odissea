@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_capability', language 'gl', version '3.8'.
+ * Strings for component 'tool_capability', language 'gl', version '3.11'.
  *
  * @package     tool_capability
  * @category    string
@@ -25,16 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['capabilitylabel'] = 'Permiso:';
-$string['capabilityreport'] = 'Vista xeral do permiso';
+$string['capabilitylabel'] = 'Capacidade:';
+$string['capabilityreport'] = 'Vista xeral da capacidade';
 $string['changeoverrides'] = 'Cambiar as anulacións neste contexto';
 $string['changeroles'] = 'Cambiar as definicións de roles';
 $string['eventreportviewed'] = 'Informe visto';
 $string['forroles'] = 'Para os roles {$a}';
 $string['getreport'] = 'Obter a vista xeral';
-$string['intro'] = 'Este informe amosa, para un permiso en particular, que permisos ten ese permiso dentro da definición de cada rol (ou grupo de roles), e en que parte do sistema foi sobrescrito (anulado) o permiso.';
-$string['pluginname'] = 'Vista xeral do permiso';
-$string['privacy:metadata'] = 'O engadido de vista xeral do permiso non almacena ningún dato persoal.';
-$string['reportforcapability'] = 'Informe para o permiso «{$a}»';
+$string['intro'] = 'Este informe amosa, para unha capacidade en particular, que permisos ten ese permiso dentro da definición de cada rol (ou grupo de roles), e en que parte do sistema foi sobrescrito (anulado) o permiso.';
+$string['pluginname'] = 'Vista xeral da capacidade';
+$string['privacy:metadata'] = 'O engadido de vista xeral da capacidade non almacena ningún dato persoal.';
+$string['reportforcapability'] = 'Informe para a capacidade «{$a}»';
 $string['reportsettings'] = 'Axustes de informe';
 $string['roleslabel'] = 'Roles:';

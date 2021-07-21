@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'ja', version '3.8'.
+ * Strings for component 'auth_ldap', language 'ja', version '3.11'.
  *
  * @package     auth_ldap
  * @category    string
@@ -64,7 +64,7 @@ $string['auth_ldap_memberattribute_key'] = 'メンバー属性';
 $string['auth_ldap_no_mbstring'] = 'Active Directoryにアカウントを作成するにはmbstring拡張モジュールが必要です。';
 $string['auth_ldap_noconnect'] = 'LDAPモジュールがサーバに接続できません: {$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAPモジュールがすべてのサーバに接続できません: {$a}';
-$string['auth_ldap_noextension'] = '<em>警告: PHP LDAPモジュールがインストールされていないようです。あなたがこの認証プラグインを使用したい場合、インストールおよび有効にされているか確認してください。</em>';
+$string['auth_ldap_noextension'] = '警告: PHP LDAPモジュールがインストールされていないようです。あなたがこの認証プラグインを使用したい場合、インストールおよび有効にされているか確認してください。';
 $string['auth_ldap_objectclass'] = '任意: ldap_user_typeのname/searchユーザで使用されるオブジェクトクラスをオーバーライドします。通常、この設定を変更する必要はありません。';
 $string['auth_ldap_objectclass_key'] = 'オブジェクトクラス';
 $string['auth_ldap_opt_deref'] = '検索時、エイリアスをどのように扱うか次の値から選択してください: 「No」 (LDAP_DEREF_NEVER) または 「Yes」 (LDAP_DEREF_ALWAYS)';
@@ -75,7 +75,7 @@ $string['auth_ldap_passwdexpire_settings'] = 'LDAPパスワード有効期限設
 $string['auth_ldap_preventpassindb'] = 'Moodleデータベースにパスワードが保存されることを防ぐには「Yes」を選択してください。';
 $string['auth_ldap_preventpassindb_key'] = 'パスワードをキャッシュしない';
 $string['auth_ldap_rolecontext'] = '{$a->localname} コンテクスト';
-$string['auth_ldap_rolecontext_help'] = '「 {$a->localname} 」のマッピングの選択に使用されるLDAPコンテクストです。複数グループは「;]で分けてください。通常「cn={$a->shortname},ou=staff,o=myorg」のようになります。';
+$string['auth_ldap_rolecontext_help'] = '「 {$a->localname} 」のマッピングの選択に使用されるLDAPコンテクストです。複数グループは「;]で分けてください。通常「cn={$a->shortname},ou=first-ou-with-role-groups,o=myorg; cn={$a->shortname},ou=second-ou-with-role-groups,o=myorg」のようになります。';
 $string['auth_ldap_search_sub'] = 'サブコンテクストからユーザを検索します。';
 $string['auth_ldap_search_sub_key'] = 'サブコンテクストを検索する';
 $string['auth_ldap_server_settings'] = 'LDAPサーバ設定';

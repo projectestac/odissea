@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'media', language 'sv', version '3.8'.
+ * Strings for component 'media', language 'sv', version '3.11'.
  *
  * @package     media
  * @category    string
@@ -33,8 +33,9 @@ $string['defaultwidthdesc'] = 'Mediaspelarens bredd om en bredd inte anges och d
 $string['extensions'] = 'Tillägg: {$a}';
 $string['managemediaplayers'] = 'Hantera mediaspelare';
 $string['mediaformats'] = 'Tillgängliga spelare';
-$string['mediaformats_desc'] = '<p>När spelare aktiveras i dessa inställningar kan filer bäddas in med mediafiltret (om aktiverat) eller genom att använda fil eller URL resurser med embed. Om ej aktiverat bäddas dessa format inte in och användarna kan manuellt ladda ner eller följa länkar till dessa resurser.</p><br />
-<p>När två spelare stödjer samma format kommer aktivering av båda att öka kompatibliteten för olika apparater som mobiltelefoner. Om det är möjligt att öka kompatibliteten ytterligare genom att tillhandahålla flera filer med olika format för samma videoklipp.</p>';
+$string['mediaformats_desc'] = 'När mediaspelare är aktiverade kan mediefiler bäddas in med hjälp av multimediepluginfiltren (om de är aktiverade) eller med hjälp av en fil- eller URL-resurs. När de inte är aktiverade bäddas dessa format inte in och användare kan hämta eller följa länkar till dessa resurser.
+
+Om två mediaspelare stöder samma format ökar kompatibiliteten mellan olika enheter, som t.ex. mobiltelefoner. Det är möjligt att öka kompatibiliteten ytterligare genom att tillhandahålla flera filer i olika format för samma ljud- eller videoklipp.';
 $string['privacy:metadata'] = 'Mediainbäddning lagrar ingen personlig information.';
 $string['supports'] = 'Stödjer';
 $string['videoextensions'] = 'Video: {$a}';

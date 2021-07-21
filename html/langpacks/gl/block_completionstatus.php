@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completionstatus', language 'gl', version '3.8'.
+ * Strings for component 'block_completionstatus', language 'gl', version '3.11'.
  *
  * @package     block_completionstatus
  * @category    string
@@ -31,5 +31,5 @@ $string['criteriagroup'] = 'Grupo de criterios';
 $string['firstofsecond'] = '{$a->first} de {$a->second}';
 $string['pluginname'] = 'Estado do completado do curso';
 $string['privacy:metadata'] = 'O bloque de estado de completado do curso só amosa información sobre o completado do curso e non almacena ningún dato propio.';
-$string['requirement'] = 'Requirimentos';
+$string['requirement'] = 'Requisitos';
 $string['returntocourse'] = 'Volver ao curso';

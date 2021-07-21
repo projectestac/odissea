@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'gl', version '3.8'.
+ * Strings for component 'block_tag_youtube', language 'gl', version '3.11'.
  *
  * @package     block_tag_youtube
  * @category    string
@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['anycategory'] = 'Calquera categoría';
 $string['apierror'] = 'Non está estabelecida a chave da API de YouTube. Póñase en contacto co administrador.';
-$string['apikey'] = 'Chave API';
-$string['apikeyinfo'] = 'Obteña unha <a href="https://developers.google.com/youtube/v3/getting-started">Chave API de Google</a> para o seu sitio Moodle.';
+$string['apikey'] = 'Chave da API';
+$string['apikeyinfo'] = 'Obteña unha <a href="https://developers.google.com/youtube/v3/getting-started">Chave da API de Google</a> para o seu sitio Moodle.';
 $string['autosvehicles'] = 'Autos e vehículos';
 $string['category'] = 'Categoría';
 $string['comedy'] = 'Comedia';

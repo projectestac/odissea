@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'ar', version '3.8'.
+ * Strings for component 'availability_date', language 'ar', version '3.11'.
  *
  * @package     availability_date
  * @category    string
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['ajaxerror'] = 'خطأ في الاتصال بالخادم لتحويل الأوقات';
-$string['description'] = 'منع الوصول حتى (أو من) تاريخ و وقت محددين.';
+$string['ajaxerror'] = 'خطأ عند الاتصال بالمخدم لتحويل الأوقات';
+$string['description'] = 'منع الوصول حتى (أو من) تاريخ ووقت محددين.';
 $string['direction_before'] = 'التاريخ';
 $string['direction_from'] = 'من عند';
 $string['direction_label'] = 'الاتجاه';
@@ -35,8 +35,8 @@ $string['full_from'] = 'بعد {$a}';
 $string['full_from_date'] = 'إنه من أو بعد {$a}';
 $string['full_until'] = 'إنه قبل {$a}';
 $string['full_until_date'] = 'إنه قبل نهاية {$a}';
-$string['pluginname'] = 'تقييد حسب التاريخ';
-$string['privacy:metadata'] = 'لا يقوم البرنامج المساعد Restriction by date بتخزين أيّ بيانات شخصية.';
+$string['pluginname'] = 'التقييد حسب التاريخ';
+$string['privacy:metadata'] = 'إن ملحق التقييد حسب التاريخ لا يخزن أيّ بيانات شخصية.';
 $string['short_from'] = 'متاح من {$a}';
 $string['short_from_date'] = 'متاح من {$a}';
 $string['short_until'] = 'متاح حتى {$a}';

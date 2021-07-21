@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'pt', version '3.8'.
+ * Strings for component 'lti', language 'pt', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -42,6 +42,8 @@ $string['activate'] = 'Ativar';
 $string['activatetoadddescription'] = 'É necessário ativar esta ferramenta antes de adicionar uma descrição.';
 $string['active'] = 'Ativo';
 $string['activity'] = 'Atividade';
+$string['add_ltiadv'] = 'Adicionar LTI Advantage';
+$string['add_ltilegacy'] = 'Adicionar Legacy LTI';
 $string['addnewapp'] = 'Ativar aplicação externa';
 $string['addserver'] = 'Adicionar novo servidor seguro';
 $string['addtype'] = 'Adicionar ferramenta pré-configurada';
@@ -62,6 +64,7 @@ $string['basicltifieldset'] = 'Exemplo de fieldset personalisado';
 $string['basicltiintro'] = 'Descrição da atividade';
 $string['basicltiname'] = 'Nome da atividade';
 $string['basicltisettings'] = 'Configurações básicas da Learning Tool Interoperability (LTI)';
+$string['cachedef_keyset'] = 'Armazena em cache a informação do conjunto de chaves das ferramentas';
 $string['cancel'] = 'Cancelar';
 $string['cancelled'] = 'Cancelado';
 $string['cannot_delete'] = 'Não pode apagar a configuração desta ferramenta';
@@ -85,7 +88,11 @@ $string['configtypes'] = 'Ativar aplicações LTI';
 $string['configured'] = 'Configurado';
 $string['confirmtoolactivation'] = 'Tem a certeza de que pretende ativar esta ferramenta?';
 $string['contentitem'] = 'Content-Item Message';
+$string['contentitem_deeplinking'] = 'Suporta Deep Linking (Content-Item Message)';
+$string['contentitem_deeplinking_help'] = 'Se marcada, a opção \'Selecionar conteúdo\' estará disponível ao adicionar uma ferramenta externa.';
 $string['contentitem_help'] = 'Se marcada, a opção \'Selecionar conteúdo\' estará disponível ao adicionar uma ferramenta externa.';
+$string['contentitem_multiple_description'] = 'Os seguintes itens serão adicionados à sua disciplina:';
+$string['contentitem_multiple_graded'] = 'Atividade avaliada (nota máxima: {$a})';
 $string['course_tool_types'] = 'Ferramentas da disciplina';
 $string['courseactivitiesorresources'] = 'Atividades ou recursos da disciplina';
 $string['courseid'] = 'Número ID da disciplina';
@@ -116,6 +123,7 @@ Dependendo do navegador, esta vai abrir num novo separador ou numa janela de pop
 
 É possível que alguns navegadores impeçam a abertura numa nova janela.';
 $string['delegate'] = 'Delegar ao professor';
+$string['delegate_tool'] = 'Conforme especificado na configuração Deep Linking ou Delegar ao professor';
 $string['delete'] = 'Apagar';
 $string['delete_confirmation'] = 'Tem a certeza de que pretende apagar esta ferramenta pré-configurada?';
 $string['deletetype'] = 'Apagar ferramenta pré-configurada';
@@ -137,6 +145,14 @@ $string['donot'] = 'Não enviar';
 $string['donotaccept'] = 'Não aceitar';
 $string['donotallow'] = 'Não permitir';
 $string['duplicateregurl'] = 'Este URL de registo já está a ser usado';
+$string['dynreg_update_btn_new'] = 'Registar como uma nova ferramenta externa';
+$string['dynreg_update_btn_update'] = 'Atualizar';
+$string['dynreg_update_name'] = 'Nome da ferramenta';
+$string['dynreg_update_notools'] = 'Nenhuma ferramenta no contexto.';
+$string['dynreg_update_text'] = 'Existem ferramentas anexadas ao domínio do registo. Quer atualizar uma ferramenta externa já instalada ou criar uma nova ferramenta externa?';
+$string['dynreg_update_url'] = 'URL base';
+$string['dynreg_update_version'] = 'Versão LTI';
+$string['dynreg_update_warn_dupdomain'] = 'Não é recomendado ter várias ferramentas externas no mesmo domínio.';
 $string['editdescription'] = 'Clique para adicionar uma descrição a esta ferramenta';
 $string['edittype'] = 'Editar ferramenta pré-configurada';
 $string['embed'] = 'Incorporar';
@@ -186,7 +202,7 @@ Além disso, todas as solicitações de web services do fornecedor de ferramenta
 Se usar esta opção, confirme que este site Moodle e o fornecedor da ferramenta suportam SSL.';
 $string['forced_help'] = 'Esta configuração foi forçada numa disciplina ou a nível da ferramenta. Não pode mudá-la a partir desta interface.';
 $string['generaltool'] = 'Ferramenta geral';
-$string['global_tool_types'] = 'Ferramentas pré-configuradas globais';
+$string['global_tool_types'] = 'Ferramentas pré-configuradas';
 $string['grading'] = 'Encaminhamento de notas';
 $string['icon_url'] = 'URL do Ícone';
 $string['icon_url_help'] = 'O URL do ícone  permite que o ícone que aparece na lista de disciplinas para essa atividade seja alterado. Em vez de usar o ícone LTI predefinido, o ícone que representa este tipo de atividade pode ser especificado.';
@@ -203,6 +219,10 @@ $string['initiatelogin'] = 'URL para iniciar sessão';
 $string['initiatelogin_help'] = 'O URL da ferramenta para o qual devem ser enviadas as solicitações de início de sessão. Este URL é necessário antes que uma mensagem possa ser enviada com sucesso para a ferramenta.';
 $string['invalidid'] = 'O ID do LTI está incorreto';
 $string['jwtsecurity'] = 'LTI 1.3';
+$string['keytype'] = 'Tipo de chave pública';
+$string['keytype_help'] = 'O método de autenticação usado para validar a ferramenta.';
+$string['keytype_keyset'] = 'URL do conjunto de chaves';
+$string['keytype_rsa'] = 'Chave RSA';
 $string['launch_in_moodle'] = 'Arrancar ferramenta no Moodle';
 $string['launch_in_popup'] = 'Arrancar ferramenta em pop-up';
 $string['launch_url'] = 'URL da ferramenta';
@@ -228,6 +248,8 @@ $string['leaveblank'] = 'Deixe em branco se não necessitar';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Adicionar configurações específicas da Ferramenta LTI';
 $string['lti:addinstance'] = 'Adicionar nova ferramenta externa';
+$string['lti:addmanualinstance'] = 'Adicionar uma ferramenta configurada manualmente';
+$string['lti:addpreconfiguredinstance'] = 'Adicionar uma ferramentas pré-configurada';
 $string['lti:admin'] = 'Tornar-se um administrador quando a ferramenta for iniciada';
 $string['lti:grade'] = 'Ver notas devolvidas pela Ferramenta LTI';
 $string['lti:manage'] = 'Ser um Instrutor quando a Ferramenta LTI arranca';
@@ -294,7 +316,7 @@ $string['noattempts'] = 'Não foram realizadas tentativas nesta ferramenta';
 $string['noltis'] = 'Não existem instâncias de ferramentas LTI';
 $string['noprofileservice'] = 'Serviço de Perfil não encontrado';
 $string['noservers'] = 'Não foram encontrados servidores';
-$string['notypes'] = 'De momento não existem ferramentas LTI configuradas no Moodle. Clique na hiperligação acima para adicionar algumas.';
+$string['notypes'] = 'De momento, não existem ferramentas LTI configuradas no Moodle. Clique na hiperligação acima para adicionar algumas.';
 $string['noviewusers'] = 'Não foram encontrados utilizadores com permissões para usar esta ferramenta';
 $string['oauthsecurity'] = 'LTI 1.0/1.1';
 $string['opensslconfiginvalid'] = 'O LTI 1.3 requer um \'openssl.cnf\' válido para ser configurado e disponibilizado para o seu servidor web. Entre em contacto com o administrador do site para ativar e configurar o openssl para este site.';
@@ -302,13 +324,19 @@ $string['optionalsettings'] = 'Configurações opcionais';
 $string['organization'] = 'Detalhes da organização';
 $string['organizationdescr'] = 'Descrição da organização';
 $string['organizationid'] = 'ID da organização';
+$string['organizationid_default'] = 'ID predefinido da organização';
+$string['organizationid_default_help'] = 'O valor predefinido a ser usado para o ID da organização. O ID do site identifica esta instalação do Moodle.';
 $string['organizationid_help'] = 'Identificador exclusivo para esta instância Moodle. Normalmente, o nome DNS da organização é o usado.
 
-Se este campo for deixado em branco, o nome do servidor deste site Moodle será utilizado como o valor predefinido.';
+Se deixar este campo em branco, o nome do servidor deste site Moodle será utilizado como o valor predefinido.';
+$string['organizationidguid'] = 'ID da organização';
+$string['organizationidguid_help'] = 'Identificador exclusivo para esta instância do Moodle que passou para a ferramenta como o GUID da instância da plataforma.
+
+Se deixar este campo em branco, será usado o valor predefinido.';
 $string['organizationurl'] = 'URL da organização';
 $string['organizationurl_help'] = 'O URL de base desta instância Moodle.
 
-Se este campo for deixado em branco, um valor predefinido será utilizado com base na configuração do site.';
+Se este campo for deixado vazio, o valor predefinido será utilizado com base na configuração do site.';
 $string['pagesize'] = 'Submissões por página';
 $string['parameter'] = 'Parâmetros da ferramenta';
 $string['parameter_help'] = 'Os parâmetros da ferramenta são configurações que requerem a aprovação do fornecedor da ferramenta LTI no proxy de ferramenta aceite.';
@@ -362,6 +390,8 @@ $string['privacy:metadata:useridnumber'] = 'O ID do número de utilizador a aced
 $string['privacy:metadata:username'] = 'O nome de utilizador do utilizador a aceder ao sistema LTI';
 $string['publickey'] = 'Chave pública';
 $string['publickey_help'] = 'A chave pública (no formato PEM) fornecida pela ferramenta para permitir que sejam verificadas as assinaturas de mensagens recebidas e solicitações de serviço.';
+$string['publickeyset'] = 'Conjunto de chaves público';
+$string['publickeyset_help'] = 'Conjunto de chaves público de onde este site recuperará a chave pública da ferramenta para permitir a verificação de assinaturas de mensagens recebidas e solicitações de serviço.';
 $string['quickgrade'] = 'Permitir avaliação rápida';
 $string['quickgrade_help'] = 'Se ativar esta opção, várias ferramentas podem ser avaliadas apenas numa página. Adicione notas e comentários e clique no botão "Guardar todas as alterações" para guardar as alterações.';
 $string['redirect'] = 'Será redirecionado dentro de instantes. Se tal não ocorrer prima o botão.';
@@ -403,9 +433,9 @@ $string['search:activity'] = 'Ferramenta externa - informações da atividade';
 $string['secure_icon_url'] = 'URL do Ícone seguro';
 $string['secure_icon_url_help'] = 'Similar ao URL do ícone, mas usado quando o acesso ao site é feito de forma segura através de SSL. Este campo serve para impedir que o navegador exiba um aviso acerca de uma imagem insegura.';
 $string['secure_launch_url'] = 'URL da ferramenta segura';
-$string['secure_launch_url_help'] = 'Similar ao URL de arranque, mas usado caso seja necessária uma segurança elevada. O Moodle irá usar o URL de arranque seguro invés do URL de arranque se o Moodle for acedido partir de SSL, ou se as configurações da ferramenta estão definidas para iniciar sempre com SSL.
+$string['secure_launch_url_help'] = 'Similar ao URL de arranque mas usado caso seja necessária uma segurança elevada. O Moodle irá usar o URL de arranque seguro ao invés do URL de arranque se o Moodle for acedido partir de SSL, ou se as configurações da ferramenta estão definidas para iniciar sempre com SSL.
 
-O URL de arranque também pode ser definido para um endereço https que force a entrada através de SSL, e este campo pode ser deixado em branco.';
+O URL de arranque também pode ser definido para um endereço https que force a entrada através de SSL, e este campo pode ficar em branco.';
 $string['selectcontent'] = 'Selecionar conteúdo';
 $string['send'] = 'Enviar';
 $string['services'] = 'Serviços';
@@ -442,6 +472,8 @@ $string['show_in_course_lti2'] = 'O uso da configuração de ferramentas';
 $string['show_in_course_lti2_help'] = 'Esta ferramenta pode ser mostrada ao professor quando seleciona uma atividade ou recurso para adicionar a uma disciplina ou na lista pendente da ferramenta pré-configurada ao adicionar uma ferramenta externa a uma disciplina.';
 $string['show_in_course_no'] = 'Não mostrar, usar apenas quando um URL de ferramenta correspondente é inserido';
 $string['show_in_course_preconfigured'] = 'Mostrar como ferramenta pré-configurada quando adicionar uma ferramenta externa';
+$string['sitehost'] = 'Nome do servidor do site';
+$string['siteid'] = 'ID do Site';
 $string['size'] = 'Parâmetros de tamanho';
 $string['submission'] = 'Submissão';
 $string['submissions'] = 'Submissões';

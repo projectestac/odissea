@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_essay', language 'gl', version '3.8'.
+ * Strings for component 'qtype_essay', language 'gl', version '3.11'.
  *
  * @package     qtype_essay
  * @category    string
@@ -38,18 +38,18 @@ $string['formatnoinline'] = 'Sen texto en liña';
 $string['formatplain'] = 'Texto simple';
 $string['graderinfo'] = 'Información para cualificadores';
 $string['graderinfoheader'] = 'Información para cualificadores';
-$string['mustattach'] = 'Cando se selecciona «sen texto en liña», ou as respostas son opcionais, Vostede debe permitir polo menos un anexo.';
-$string['mustrequire'] = 'Cando se selecciona «sen texto en liña», ou as respostas son opcionais, Vostede debe requirir polo menos un anexo.';
+$string['mustattach'] = 'Cando se selecciona «Sen texto en liña», ou as respostas son opcionais, Vostede debe permitir polo menos un anexo.';
+$string['mustrequire'] = 'Cando se selecciona «Sen texto en liña», ou as respostas son opcionais, Vostede debe requirir polo menos un anexo.';
 $string['mustrequirefewer'] = 'Non pode requirir máis anexos dos que permite.';
 $string['nlines'] = '{$a} liñas';
 $string['nonexistentfiletypes'] = 'Non se recoñeceron os seguintes tipos de ficheiro: {$a}';
-$string['pluginname'] = 'Ensaio';
-$string['pluginname_help'] = 'En resposta a unha pregunta (que pode incluír unha imaxe) o que responde escribe unha resposta dun parágrafo ou dous. A pregunta de ensaio non terá unha cualificación asignada ata que sexa revisada por un profesor e manualmente cualificada.';
+$string['pluginname'] = 'Práctica';
+$string['pluginname_help'] = 'En resposta a unha pregunta, quen responde pode enviar un ou varios ficheiros e/ou introducir texto en liña. Pode incluírse un modelo de resposta. As respostas deben cualificarse manualmente.';
 $string['pluginname_link'] = 'question/type/essay';
-$string['pluginnameadding'] = 'Engadir unha pregunta de ensaio';
-$string['pluginnameediting'] = 'Engadir unha pregunta de ensaio';
+$string['pluginnameadding'] = 'Engadir unha pregunta de práctica';
+$string['pluginnameediting'] = 'Engadir unha pregunta de práctica';
 $string['pluginnamesummary'] = 'Permitir unha resposta dunhas poucas frases ou parágrafos. Daquela debe ser cualificada manualmente.';
-$string['privacy:metadata'] = 'O engadido de pregunta de ensaio non almacena ningún dato persoal.';
+$string['privacy:metadata'] = 'O engadido de pregunta de práctica non almacena ningún dato persoal.';
 $string['responsefieldlines'] = 'Tamaño da caixa de entrada';
 $string['responseformat'] = 'Formato da resposta';
 $string['responseisrequired'] = 'Requirir que os alumnos escriban texto';

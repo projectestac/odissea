@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_truefalse', language 'eu', version '3.8'.
+ * Strings for component 'qtype_truefalse', language 'eu', version '3.11'.
  *
  * @package     qtype_truefalse
  * @category    string
@@ -37,6 +37,6 @@ $string['pluginname_help'] = 'Irudi bat izan dezakeen galdera bati erantzuteko i
 $string['pluginnameadding'] = 'Egia/gezurreko galdera gehitzen';
 $string['pluginnameediting'] = 'Egia/gezurra motako galdera bat editatzen';
 $string['pluginnamesummary'] = '\'Egia\' eta \'Gezurra\' aukera baino ez dituen Aukera anitzeko galdera baten formularioa';
-$string['privacy:metadata'] = 'Egia/Gezurra galdera mota pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Egia/gezurra galdera-mota pluginak ez du datu pertsonalik biltzen.';
 $string['selectone'] = 'Aukeratu bat:';
 $string['true'] = 'Egia';

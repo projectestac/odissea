@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'pt', version '3.8'.
+ * Strings for component 'wiki', language 'pt', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -117,7 +117,7 @@ $string['formatnwiki_help'] = 'Nwiki é a linguagem de markup Mediawiki utilizad
 Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo [[Página 2]].';
 $string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Histórico';
-$string['history_help'] = 'Histórico de ligações de versões anteriores da página';
+$string['history_help'] = 'O histórico lista as hiperligações para versões anteriores da página';
 $string['html'] = 'HTML';
 $string['incorrectdeleteversions'] = 'As versões a apagar estão incorretas';
 $string['incorrectpageid'] = 'O ID da página está errado.';
@@ -225,7 +225,7 @@ $string['privacy:metadata:core_files'] = 'Ficheiros anexados a subpáginas';
 $string['privacy:metadata:core_tag'] = 'Palavras-chave associadas a páginas wiki';
 $string['privacy:metadata:wiki_locks'] = 'Armazenamento temporário para bloqueios de edição wiki';
 $string['privacy:metadata:wiki_locks:lockedat'] = 'Data de bloqueio';
-$string['privacy:metadata:wiki_locks:sectionname'] = 'Nome da secção de página bloqueada';
+$string['privacy:metadata:wiki_locks:sectionname'] = 'Nome da secção da página bloqueada';
 $string['privacy:metadata:wiki_locks:userid'] = 'Utilizador que bloqueou uma página';
 $string['privacy:metadata:wiki_pages'] = 'Informação sobre páginas wiki';
 $string['privacy:metadata:wiki_pages:cachedcontent'] = 'Conteúdo em cache no formato HTML';
@@ -294,7 +294,7 @@ $string['wiki'] = 'Wiki';
 $string['wiki:addinstance'] = 'Adicionar novo Wiki';
 $string['wiki:createpage'] = 'Criar novas páginas wiki';
 $string['wiki:editcomment'] = 'Adicionar comentários às páginas';
-$string['wiki:editpage'] = 'Guardar páginas wiki';
+$string['wiki:editpage'] = 'Editar páginas wiki';
 $string['wiki:managecomment'] = 'Gerir comentários do wiki';
 $string['wiki:managefiles'] = 'Gerir anexos do wiki';
 $string['wiki:managewiki'] = 'Gerir configurações do wiki';

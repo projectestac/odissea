@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_email', language 'nl', version '3.8'.
+ * Strings for component 'message_email', language 'nl', version '3.11'.
  *
  * @package     message_email
  * @category    string
@@ -31,6 +31,7 @@ $string['emaildigestunreadmessages'] = 'Ongelezen berichten';
 $string['emaildigestviewallmessages'] = 'Bekijk alle berichten';
 $string['emailonlyfromnoreplyaddress'] = 'E-mail altijd verzenden vanaf niet-beantwoorden adres?';
 $string['ifemailleftempty'] = 'Laat leeg om notificaties te sturen naar {$a}';
+$string['messagedigestemailsubject'] = '{$a}: Verzamelde berichten';
 $string['pluginname'] = 'E-mail';
 $string['privacy:metadata:attachment'] = 'En bestand op het bestandssysteem.';
 $string['privacy:metadata:attachname'] = 'De naam van de bijlage (extensie geeft MIME aan).';

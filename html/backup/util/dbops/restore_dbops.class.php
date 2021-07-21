@@ -1078,8 +1078,8 @@ abstract class restore_dbops {
                                 $localpath = $filesystem->get_local_path_from_storedfile($storedfile);
                                 $fs->create_file_from_pathname($file, $localpath);
                             } else if ($filesystem->is_file_readable_remotely_by_storedfile($storedfile)) {
-                                $url = $filesystem->get_remote_path_from_storedfile($storedfile);
-                                $fs->create_file_from_url($file, $url);
+                                $remotepath = $filesystem->get_remote_path_from_storedfile($storedfile);
+                                $fs->create_file_from_pathname($file, $remotepath);
                             } else if ($filesystem->is_file_readable_locally_by_storedfile($storedfile, true)) {
                                 $localpath = $filesystem->get_local_path_from_storedfile($storedfile, true);
                                 $fs->create_file_from_pathname($file, $localpath);
@@ -1151,6 +1151,7 @@ abstract class restore_dbops {
     public static function create_included_users($basepath, $restoreid, $userid,
             \core\progress\base $progress) {
         global $CFG, $DB;
+        require_once($CFG->dirroot.'/user/profile/lib.php');
         $progress->start_progress('Creating included users');
 
         $authcache = array(); // Cache to get some bits from authentication plugins
@@ -1165,7 +1166,7 @@ abstract class restore_dbops {
 
             // if user lang doesn't exist here, use site default
             if (!array_key_exists($user->lang, $languages)) {
-                $user->lang = $CFG->lang;
+                $user->lang = get_newuser_language();
             }
 
             // if user theme isn't available on target site or they are disabled, reset theme
@@ -1257,8 +1258,9 @@ abstract class restore_dbops {
                         $udata = (object)$udata;
                         // If the profile field has data and the profile shortname-datatype is defined in server
                         if ($udata->field_data) {
-                            if ($field = $DB->get_record('user_info_field', array('shortname'=>$udata->field_name, 'datatype'=>$udata->field_type))) {
-                            /// Insert the user_custom_profile_field
+                            $field = profile_get_custom_field_data_by_shortname($udata->field_name);
+                            if ($field && $field->datatype === $udata->field_type) {
+                                // Insert the user_custom_profile_field.
                                 $rec = new stdClass();
                                 $rec->userid  = $newuserid;
                                 $rec->fieldid = $field->id;

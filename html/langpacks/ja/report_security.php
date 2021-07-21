@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_security', language 'ja', version '3.8'.
+ * Strings for component 'report_security', language 'ja', version '3.11'.
  *
  * @package     report_security
  * @category    string
@@ -25,12 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p>ウェブサーバからファイルが修正されないようインストール後にconfig.phpのファイルパーミッションを変更することをお勧めします。この方法はサーバのセキュリティを著しく向上させるものではありませんが一般的なセキュリティ上の弱点を抑制したり制限することはできます。</p>';
+$string['check_configrw_details'] = '<p>ウェブサーバからファイルが修正されないようインストール後に<code>config.php</code>のファイルパーミッションを変更することをお勧めします。この方法はサーバのセキュリティを著しく向上させるものではありませんが一般的なセキュリティ上の弱点を抑制したり制限することはできます。</p>';
 $string['check_configrw_name'] = '書き込み可能なconfig.php';
 $string['check_configrw_ok'] = 'PHPスクリプトはconfig.phpを修正することができません。';
 $string['check_configrw_warning'] = 'PHPスクリプトはconfig.phpを修正することができます。';
 $string['check_cookiesecure_details'] = '<p>https通信が有効にされた場合、セキュアクッキーの送信を有効にすることをお勧めします。また、httpからhttpsへのパーマネントリダイレクトを設定してください。理想的には同時にHSTSヘッダも送信してください。</p>';
 $string['check_cookiesecure_error'] = 'セキュアクッキーを有効にしてください。';
+$string['check_cookiesecure_http'] = 'あなたがセキュアクッキーを使用するにはhttpsを有効にする必要があります。';
 $string['check_cookiesecure_name'] = 'セキュアクッキー';
 $string['check_cookiesecure_ok'] = 'セキュアクッキーは有効にされています。';
 $string['check_crawlers_details'] = '<p>Googleに公開する設定ではサーチエンジンがコースにゲストとしてログインできるようにします。ゲストログインが許可されていない場合、この設定の有効化は意味を持ちません。</p>';
@@ -44,10 +45,12 @@ $string['check_defaultuserrole_error'] = 'デフォルトユーザロール「 {
 $string['check_defaultuserrole_name'] = 'すべてのユーザのデフォルトロール';
 $string['check_defaultuserrole_notset'] = 'デフォルトロールが設定されていません。';
 $string['check_defaultuserrole_ok'] = 'すべてのユーザのデフォルトロール定義はOKです。';
+$string['check_dirindex_info'] = 'ディレクトリインデックスは有効にしないでください。';
 $string['check_displayerrors_details'] = '<p>いくつかのエラーメッセージはあなたのサーバに関する機密情報を漏洩する可能性があるためPHP設定<code>display_errors</code>の有効化は実運用サイトではお勧めできません。</p>';
 $string['check_displayerrors_error'] = 'PHPエラー表示設定が有効にされています。この設置を無効にすることをお勧めします。';
 $string['check_displayerrors_name'] = 'PHPエラーを表示する';
 $string['check_displayerrors_ok'] = 'PHPエラー表示は無効にされています。';
+$string['check_dotfiles_info'] = '/.well-known/*を除くすべてのドットファイルは公開しないでください。';
 $string['check_emailchangeconfirmation_details'] = '<p>ユーザがプロファイルでメールアドレスを変更する場合、メール確認ステップが推奨されています。無効にされている場合、スパム送信者がサーバをスパム送信に悪用する恐れがあります。</p>
 <p>メールアドレスフィールドが認証プラグインからロックされている場合、この可能性をここで考える必要はありません。</p>';
 $string['check_emailchangeconfirmation_error'] = 'ユーザはどのようなメールアドレスでも入力することができます。';
@@ -74,11 +77,7 @@ $string['check_mediafilterswf_details'] = '<p>自動swf埋め込みは非常に�
 $string['check_mediafilterswf_error'] = 'Flashメディアフィルタが許可されています - これは大部分のサーバで非常に危険な設定です。';
 $string['check_mediafilterswf_name'] = '.swfメディアフィルタ有効化';
 $string['check_mediafilterswf_ok'] = 'Flashメディアフィルタが有効にされていません。';
-$string['check_noauth_details'] = '<p>「認証なし」プラグインは実運用サイト向けではありません。このサイトが開発テストサイトではない限りこのプラグインを無効にしてください。</p>';
-$string['check_noauth_error'] = '「認証なし」プラグインは実運用サイトでは使用できません。';
-$string['check_noauth_name'] = '認証なし';
-$string['check_noauth_ok'] = '無効にされた認証プラグインはありません。';
-$string['check_nodemodules_details'] = '<p>ディレクトリ「 {$a->path} 」はNode.jsモジュールおよび一般的にNPMユーティリティによってインストールされる依存関係を含みます。これらのモジュールはgruntフレームワークを使用するようなローカルのMoodleの開発に必要です。これらのためにMoodleサイトを実運用する必要はありません。また、あなたのサイトをリモート攻撃にさらす潜在的に危険なコードを含むことができてしまいます。</p><p>サイトにパブリックURLからアクセスできる場合、ディレクトリを削除することを強くお勧めします。またはあなたのウェブサーバ設定で少なくともディレクトリへのウェブアクセスを禁止してください。</p>';
+$string['check_nodemodules_details'] = '<p>ディレクトリ「 <code>{$a->path}</code> 」はNode.jsモジュールおよび一般的にNPMユーティリティによってインストールされる依存関係を含みます。これらのモジュールはgruntフレームワークを使用するようなローカルのMoodleの開発に必要です。これらのためにMoodleサイトを実運用する必要はありません。また、あなたのサイトをリモート攻撃にさらす潜在的に危険なコードを含むことができてしまいます。</p><p>サイトにパブリックURLからアクセスできる場合、ディレクトリを削除することを強くお勧めします。またはあなたのウェブサーバ設定で少なくともディレクトリへのウェブアクセスを禁止してください。</p>';
 $string['check_nodemodules_info'] = 'node_modulesディレクトリはパブリックサイトに存在すべきではありません。';
 $string['check_nodemodules_name'] = 'Node.jsモジュールディレクトリ';
 $string['check_openprofiles_details'] = 'ユーザプロファイルを公開した場合、スパム送信者が不正利用することができます。「プロファイル閲覧時にユーザのログインを強制する」または「ユーザのログインを強制する」を有効にすることをお勧めします。';
@@ -89,10 +88,13 @@ $string['check_passwordpolicy_details'] = '<p>パスワードの推測は不正�
 $string['check_passwordpolicy_error'] = 'パスワードポリシーが設定されていません。';
 $string['check_passwordpolicy_name'] = 'パスワードポリシー';
 $string['check_passwordpolicy_ok'] = 'パスワードポリシーが有効にされています。';
-$string['check_preventexecpath_details'] = '<p>管理画面による実行可能パスの設定を許可することにより権限昇格の可能性が生じます。</p>';
+$string['check_preventexecpath_details'] = '<p>管理画面による実行可能パス設定を許可することにより権限昇格の可能性が生じます。</p>これはconfig.phpで次のように強制されるべきです:</p><p><code>$CFG->preventexecpath = true;<code></p>';
 $string['check_preventexecpath_name'] = '実行可能パス';
 $string['check_preventexecpath_ok'] = '実行可能パスはconfig.phpのみで設定することができます。';
 $string['check_preventexecpath_warning'] = '実行可能パスは管理画面で設定することができます。';
+$string['check_publicpaths_403'] = '(戻り値403は理想的には404であるべきです)';
+$string['check_publicpaths_generic'] = '{$a} ファイルは公開しないでください。';
+$string['check_publicpaths_name'] = 'すべての公開およびプライベートパスをチェックする';
 $string['check_riskadmin_detailsok'] = '<p>次のシステム管理者一覧を確認してください:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>次のシステム管理者一覧を確認してください。:</p>{$a->admins}
 <p>システムコンテクストのみへの管理者ロール割り当てをお勧めします。次のユーザはサポートされない管理者ロールが他のコンテクストで割り当てられています:</p>{$a->unsupported}';
@@ -120,7 +122,7 @@ $string['check_unsecuredataroot_error'] = 'あなたのdatarootディレクト�
 $string['check_unsecuredataroot_name'] = '安全ではないdataroot';
 $string['check_unsecuredataroot_ok'] = 'datarootディレクトリはウェブからアクセスできないようにしてください。';
 $string['check_unsecuredataroot_warning'] = 'あなたのdatarootディレクトリ「 <code>{$a}</code> 」は正しくない場所に配置されウェブに晒された状態です。';
-$string['check_vendordir_details'] = '<p>ディレクトリ「 {$a->path} 」は様々なサードパーティライブラリおよび一般的にPHPコンポーザによってインストールされる依存関係を含みます。PHPUnitフレームワークのインストールのようなローカルのMoodle開発に必要であると思われます。これらのためにMoodleサイトを実運用する必要はありません。また、あなたのサイトをリモート攻撃にさらす潜在的に危険なコードを含むことができてしまいます。</p><p>サイトにパブリックURLからアクセスできる場合、ディレクトリを削除することを強くお勧めします。またはあなたのウェブサーバ設定で少なくともディレクトリへのウェブアクセスを禁止してください。</p>';
+$string['check_vendordir_details'] = '<p>ディレクトリ「 <code>{$a->path}</code> 」は様々なサードパーティライブラリおよび一般的にPHPコンポーザによってインストールされる依存関係を含みます。PHPUnitフレームワークのインストールのようなローカルのMoodle開発に必要であると思われます。これらのためにMoodleサイトを実運用する必要はありません。また、あなたのサイトをリモート攻撃にさらす潜在的に危険なコードを含むことができてしまいます。</p><p>サイトにパブリックURLからアクセスできる場合、ディレクトリを削除することを強くお勧めします。またはあなたのウェブサーバ設定で少なくともディレクトリへのウェブアクセスを禁止してください。</p>';
 $string['check_vendordir_info'] = 'vendorディレクトリはパブリックサイトに存在すべきではありません。';
 $string['check_vendordir_name'] = 'ベンダディレクトリ';
 $string['check_webcron_details'] = '<p>ウェブブラウザでcronを実行することにより匿名ユーザに機密情報を晒すことができてしまいます。そのため、コマンドラインによるcronを実行するか、リモートアクセスにcronにパスワードを設定することをお勧めします。</p>';
@@ -130,14 +132,9 @@ $string['check_webcron_warning'] = '匿名ユーザはcronにアクセスでき�
 $string['configuration'] = '設定';
 $string['description'] = '説明';
 $string['details'] = '詳細';
+$string['eventreportviewed'] = '閲覧済みセキュリティチェックレポート';
 $string['issue'] = '問題';
-$string['pluginname'] = 'セキュリティ概要';
+$string['pluginname'] = 'セキュリティチェック';
 $string['privacy:metadata'] = 'セキュリティ概要プラグインはいかなる個人データも保存しません。';
 $string['security:view'] = 'セキュリティレポートを表示する';
-$string['status'] = 'ステータス';
-$string['statuscritical'] = 'クリティカル';
-$string['statusinfo'] = '情報';
-$string['statusok'] = 'OK';
-$string['statusserious'] = 'シリアス';
-$string['statuswarning'] = '警告';
 $string['timewarning'] = 'データ処理には長時間を要します。しばらくお待ちください ...';

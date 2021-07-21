@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'langconfig', language 'ru', version '3.8'.
+ * Strings for component 'langconfig', language 'ru', version '3.11'.
  *
  * @package     langconfig
  * @category    string
@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['alphabet'] = 'А,Б,В,Г,Д,Е,Ё,Ж,З,И,К,Л,М,Н,О,П,Р,С,Т,У,Ф,Х,Ц,Ч,Ш,Щ,Э,Ю,Я';
 $string['backupnameformat'] = '%Y%m%d-%H%M';
+$string['dateintervaldayshoursmins'] = '%ad %hh %im';
 $string['decsep'] = ',';
 $string['firstdayofweek'] = '1';
 $string['iso6391'] = 'ru';
@@ -34,12 +35,15 @@ $string['iso6392'] = 'rus';
 $string['labelsep'] = ':';
 $string['listsep'] = ';';
 $string['locale'] = 'ru_RU.UTF-8';
+$string['localecldr'] = 'ru-RU';
 $string['localewin'] = 'Russian_Russia.1251';
 $string['localewincharset'] = 'WINDOWS-1251';
 $string['oldcharset'] = 'WINDOWS-1251';
 $string['strftimedate'] = '%d %B %Y';
 $string['strftimedatefullshort'] = '%d/%m/%y';
+$string['strftimedatemonthabbr'] = '%d %b %Y';
 $string['strftimedateshort'] = '%d %B';
+$string['strftimedateshortmonthabbr'] = '%d %b';
 $string['strftimedatetime'] = '%d %B %Y, %H:%M';
 $string['strftimedatetimeshort'] = '%d/%m/%y, %H:%M';
 $string['strftimedaydate'] = '%A %d %B %Y';

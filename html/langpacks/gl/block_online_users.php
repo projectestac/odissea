@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'gl', version '3.8'.
+ * Strings for component 'block_online_users', language 'gl', version '3.11'.
  *
  * @package     block_online_users
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtimetosee'] = 'Número de minutos determinados para detectar que un usuario está en liña.';
+$string['configtimetosee'] = 'Número de minutos que determinan o período de inactividade após o cal un usuario xa non se considera conectado.';
 $string['nouser'] = 'Non hai usuarios conectados';
 $string['numuser'] = '{$a} usuario conectado';
 $string['numusers'] = '{$a} usuarios conectados';

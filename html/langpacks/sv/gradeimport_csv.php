@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_csv', language 'sv', version '3.8'.
+ * Strings for component 'gradeimport_csv', language 'sv', version '3.11'.
  *
  * @package     gradeimport_csv
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['csv:view'] = 'Importera betyg från CVS';
 $string['pluginname'] = 'CVS-fil';
+$string['privacy:metadata'] = 'Pluginmodulen CSV-fil betygsimport lagrar ingen personinformation.';

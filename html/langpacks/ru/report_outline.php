@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_outline', language 'ru', version '3.8'.
+ * Strings for component 'report_outline', language 'ru', version '3.11'.
  *
  * @package     report_outline
  * @category    string
@@ -31,7 +31,9 @@ $string['neverseen'] = 'Не просмотрена ни разу';
 $string['nologreaderenabled'] = 'ПО для чтения журналов не включено';
 $string['numviews'] = 'Просмотрено {$a->numviews} раз(а) {$a->distinctusers} пользователем(ями)';
 $string['outline:view'] = 'Просматривать отчет «Отчет о деятельности»';
+$string['outline:viewuserreport'] = 'Просматривать отчет об активности пользователей';
 $string['page-report-outline-index'] = 'Обзорный отчет по курсу';
 $string['page-report-outline-user'] = 'Обзорный отчет по пользователю курса';
 $string['page-report-outline-x'] = 'Любой обзорный отчет';
 $string['pluginname'] = 'Отчет о деятельности';
+$string['privacy:metadata'] = 'Плагин отчета об активности не хранит никаких личных данных.';

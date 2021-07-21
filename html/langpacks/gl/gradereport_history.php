@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_history', language 'gl', version '3.8'.
+ * Strings for component 'gradereport_history', language 'gl', version '3.11'.
  *
  * @package     gradereport_history
  * @category    string
@@ -44,7 +44,7 @@ $string['gradeold'] = 'Cualificación orixinal';
 $string['grader'] = 'Cualificador';
 $string['history:view'] = 'Ver o historial de cualificacións';
 $string['historyperpage'] = 'Entradas do historial por páxina';
-$string['historyperpage_help'] = 'Esta configuración determina o número de entradas do historial que aparecen por páxina no informe do historial.';
+$string['historyperpage_help'] = 'Este axuste determina o número de entradas do historial que aparecen por páxina no informe do historial.';
 $string['loadmoreusers'] = 'Cargar máis usuarios...';
 $string['pluginname'] = 'Historial de cualificacións';
 $string['preferences'] = 'Preferencias do historial de cualificacións';

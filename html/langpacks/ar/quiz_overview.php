@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_overview', language 'ar', version '3.8'.
+ * Strings for component 'quiz_overview', language 'ar', version '3.11'.
  *
  * @package     quiz_overview
  * @category    string
@@ -28,18 +28,18 @@ defined('MOODLE_INTERNAL') || die();
 $string['allattempts'] = 'أظهر جميع المحاولات';
 $string['allattemptscontributetograde'] = 'كل المحاولات ساهمت في الدرجة النهائية للمستخدم.';
 $string['allstudents'] = 'أظهر الكل {$a}';
-$string['attemptsonly'] = 'أظهر {$a} لمن لديهم محاولات فقط';
-$string['attemptsprepage'] = 'المحاولات المعروضة / صفحة';
+$string['attemptsonly'] = 'إظهار {$a} مع المحاولات فقط';
+$string['attemptsprepage'] = 'المحاولات المعروضة لكل صفحة';
 $string['deleteselected'] = 'احذف المحاولات المحددة';
 $string['done'] = 'تم';
 $string['err_failedtodeleteregrades'] = 'فشل في حذف درجات محاولة محسوبة';
 $string['err_failedtorecalculateattemptgrades'] = 'فشل في إعادة حساب درجات المحاولة';
 $string['highlightinggraded'] = 'محاولة المستخدم التي تسهم في التقدير النهائي يتم تمييزها.';
 $string['needed'] = 'الحاجة';
-$string['noattemptsonly'] = 'اظهر/ حمّل {$a} بدون المحاولات فقط';
+$string['noattemptsonly'] = 'إظهار / تنزيل {$a} فقط الذين بلا محاولات';
 $string['noattemptstoregrade'] = 'لا توجد محاولات تحتاج إعادة تقييم';
-$string['nogradepermission'] = 'ليست من صلاحياتك تقييم هذا الاختبار.';
-$string['onlyoneattemptallowed'] = 'يسمح لكل مستخدم بمحاولة واحدة في هذا الاختبار.';
+$string['nogradepermission'] = 'ليست لديك صلاحية تقييم هذا الاختبار.';
+$string['onlyoneattemptallowed'] = 'يُسمح لكل مستخدم بمحاولة واحدة في هذا الاختبار.';
 $string['optallattempts'] = 'كل المحاولات';
 $string['optallstudents'] = 'كل {$a} حاول أو لم يحاول في الاختبار';
 $string['optattemptsonly'] = '{$a} حاول في الاختبار';
@@ -52,11 +52,11 @@ $string['overviewreport'] = 'تقرير الدرجات';
 $string['overviewreportgraph'] = 'عدد الطلاب الكلي الذي حقق نطاقات الدرجة';
 $string['overviewreportgraphgroup'] = 'عدد الطلاب في المجموعة \'{$a}\' الذين حققوا درجة في النطاقات';
 $string['pagesize'] = 'حجم الصفحة';
-$string['pluginname'] = 'الدرجات';
+$string['pluginname'] = 'العلامات';
 $string['preferencespage'] = 'تفضيلات فقط لهذه الصفحة';
 $string['preferencessave'] = 'اظهر التقرير';
 $string['preferencesuser'] = 'التفضيلات الخاصة بك لهذا التقرير';
-$string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'سواء إظهار علامات لكل خانة سؤال.';
+$string['privacy:metadata:preference:quiz_overview_slotmarks'] = 'ما إذا يتم إظهار علامات لكل خانة سؤال.';
 $string['privacy:preference:slotmarks:no'] = 'لا تظهر العلامات بجانب خانة السؤال.';
 $string['privacy:preference:slotmarks:yes'] = 'تظهر العلامات بجانب خانة السؤال.';
 $string['regrade'] = 'إعادة التقييم';

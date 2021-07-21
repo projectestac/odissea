@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'el', version '3.8'.
+ * Strings for component 'access', language 'el', version '3.11'.
  *
  * @package     access
  * @category    string
@@ -34,8 +34,8 @@ $string['activityprev'] = 'Προηγούμενη δραστηριότητα';
 $string['breadcrumb'] = 'Μπάρα πλοήγησης';
 $string['eventcontextlocked'] = 'Πλαίσιο παγωμένο';
 $string['eventcontextunlocked'] = 'Πλαίσιο ξεπαγωμένο';
-$string['hideblocka'] = 'Σύμπτυξη μπλοκ {$a}';
-$string['showblocka'] = 'Ανάπτυξη μπλοκ {$a}';
+$string['hideblocka'] = 'Απόκρυψη μπλοκ {$a}';
+$string['showblocka'] = 'Εμφάνιση μπλοκ {$a}';
 $string['sitemap'] = 'Χάρτης ιστοτόπου';
 $string['skipa'] = 'Παράλειψη {$a}';
 $string['skipblock'] = 'Παράλειψη μπλοκ';

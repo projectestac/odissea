@@ -104,7 +104,7 @@ class core_filelib_testcase extends advanced_testcase {
         $this->assertInstanceOf('stdClass', $response);
         $this->assertSame('200', $response->status);
         $this->assertTrue(is_array($response->headers));
-        $this->assertRegExp('|^HTTP/1\.[01] 200 OK$|', rtrim($response->response_code));
+        $this->assertMatchesRegularExpression('|^HTTP/1\.[01] 200 OK$|', rtrim($response->response_code));
         $this->assertSame($contents, $response->results);
         $this->assertSame('', $response->error);
 
@@ -128,7 +128,7 @@ class core_filelib_testcase extends advanced_testcase {
         $this->assertInstanceOf('stdClass', $response);
         $this->assertSame('404', $response->status);
         $this->assertTrue(is_array($response->headers));
-        $this->assertRegExp('|^HTTP/1\.[01] 404 Not Found$|', rtrim($response->response_code));
+        $this->assertMatchesRegularExpression('|^HTTP/1\.[01] 404 Not Found$|', rtrim($response->response_code));
         // Do not test the response starts with DOCTYPE here because some servers may return different headers.
         $this->assertSame('', $response->error);
 
@@ -149,7 +149,7 @@ class core_filelib_testcase extends advanced_testcase {
         $this->assertInstanceOf('stdClass', $response);
         $this->assertSame('200', $response->status);
         $this->assertTrue(is_array($response->headers));
-        $this->assertRegExp('|^HTTP/1\.[01] 200 OK$|', rtrim($response->response_code));
+        $this->assertMatchesRegularExpression('|^HTTP/1\.[01] 200 OK$|', rtrim($response->response_code));
         $this->assertSame('done', $response->results);
         $this->assertSame('', $response->error);
 
@@ -691,7 +691,7 @@ class core_filelib_testcase extends advanced_testcase {
         $this->assertEquals($userrepository->id, $fileref->get_repository_id());
         $this->assertSame($userfile->get_contenthash(), $fileref->get_contenthash());
         $this->assertEquals($userfile->get_filesize(), $fileref->get_filesize());
-        $this->assertRegExp('#' . $userfile->get_filename(). '$#', $fileref->get_reference_details());
+        $this->assertMatchesRegularExpression('#' . $userfile->get_filename(). '$#', $fileref->get_reference_details());
 
         $draftitemid = 0;
         file_prepare_draft_area($draftitemid, $syscontext->id, $component, $filearea, $itemid);
@@ -789,7 +789,7 @@ class core_filelib_testcase extends advanced_testcase {
         $this->assertEquals($userrepository->id, $fileref->get_repository_id());
         $this->assertSame($userfile->get_contenthash(), $fileref->get_contenthash());
         $this->assertEquals($userfile->get_filesize(), $fileref->get_filesize());
-        $this->assertRegExp('#' . $userfile->get_filename(). '$#', $fileref->get_reference_details());
+        $this->assertMatchesRegularExpression('#' . $userfile->get_filename(). '$#', $fileref->get_reference_details());
 
         $draftitemid = 0;
         file_prepare_draft_area($draftitemid, $usercontext->id, 'user', 'private', 0);
@@ -1113,7 +1113,7 @@ EOF;
 
         // Do the rewrite.
         $finaltext = file_rewrite_pluginfile_urls($originaltext, 'pluginfile.php', $syscontext->id, 'user', 'private', 0);
-        $this->assertContains("pluginfile.php", $finaltext);
+        $this->assertStringContainsString("pluginfile.php", $finaltext);
 
         // Now undo.
         $options = array('reverse' => true);
@@ -1666,6 +1666,65 @@ EOF;
         $this->assertCount(2, $draftfiles);
         $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $file2->get_itemid(), 'itemid', 0);
         $this->assertCount(1, $draftfiles);
+    }
+
+    /**
+     * Test file_is_draft_areas_limit_reached
+     */
+    public function test_file_is_draft_areas_limit_reached() {
+        global $CFG;
+        $this->resetAfterTest(true);
+
+        $capacity = $CFG->draft_area_bucket_capacity = 5;
+        $leak = $CFG->draft_area_bucket_leak = 0.2; // Leaks every 5 seconds.
+
+        $generator = $this->getDataGenerator();
+        $user = $generator->create_user();
+
+        $this->setUser($user);
+
+        $itemids = [];
+        for ($i = 0; $i < $capacity; $i++) {
+            $itemids[$i] = file_get_unused_draft_itemid();
+        }
+
+        // This test highly depends on time. We try to make sure that the test starts at the early moments on the second.
+        // This was not needed if MDL-37327 was implemented.
+        $after = time();
+        while (time() === $after) {
+            usleep(100000);
+        }
+
+        // Burst up to the capacity and make sure that the bucket allows it.
+        for ($i = 0; $i < $capacity; $i++) {
+            if ($i) {
+                sleep(1); // A little delay so we have different timemodified value for files.
+            }
+            $this->assertFalse(file_is_draft_areas_limit_reached($user->id));
+            self::create_draft_file([
+                'filename' => 'file1.png',
+                'itemid' => $itemids[$i],
+            ]);
+        }
+
+        // The bucket should be full after bursting.
+        $this->assertTrue(file_is_draft_areas_limit_reached($user->id));
+
+        // The bucket leaks so it shouldn't be full after a certain time.
+        // Reiterating that this test could have been faster if MDL-37327 was implemented.
+        sleep(ceil(1 / $leak) - ($capacity - 1));
+        $this->assertFalse(file_is_draft_areas_limit_reached($user->id));
+
+        // Only one item was leaked from the bucket. So the bucket should become full again if we add a single item to it.
+        self::create_draft_file([
+            'filename' => 'file2.png',
+            'itemid' => $itemids[0],
+        ]);
+        $this->assertTrue(file_is_draft_areas_limit_reached($user->id));
+
+        // The bucket leaks at a constant rate. It doesn't matter if it is filled as the result of bursting or not.
+        sleep(ceil(1 / $leak));
+        $this->assertFalse(file_is_draft_areas_limit_reached($user->id));
     }
 }
 

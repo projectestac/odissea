@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_media', language 'el', version '3.8'.
+ * Strings for component 'atto_media', language 'el', version '3.11'.
  *
  * @package     atto_media
  * @category    string
@@ -31,7 +31,7 @@ $string['addchapterstrack'] = 'Προσθήκη πολυμεσικού κομμ�
 $string['adddescriptionstrack'] = 'Προσθήκη πολυμεσικού κομματιού περιγραφής';
 $string['addmetadatatrack'] = 'Προσθήκη πολυμεσικού κομματιού μεταδεδομένων';
 $string['addsource'] = 'Προσθήκη εναλλακτικής πηγής';
-$string['addsource_help'] = 'Προτείνεται η παροχή και εναλλακτικής πηγής πολυμέσου, καθώς οι περιηγητές υπολογιστών & κινητών ποικίλουν στην υποστήριξη μορφότυπων αρχείων.';
+$string['addsource_help'] = 'Συνιστάται η παροχή, και εναλλακτικής πηγής πολυμέσου, καθώς οι περιηγητές σε υπολογιστές & κινητά ποικίλουν στην υποστήριξη μορφότυπων αρχείων.';
 $string['addsubtitlestrack'] = 'Προσθήκη πολυμεσικού κομματιού υποτίτλου';
 $string['addtrack'] = 'Προσθήκη πολυμεσικού κομματιού';
 $string['advancedsettings'] = 'Προχωρημένες ρυθμίσεις';

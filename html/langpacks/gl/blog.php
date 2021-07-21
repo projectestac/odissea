@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'blog', language 'gl', version '3.8'.
+ * Strings for component 'blog', language 'gl', version '3.11'.
  *
  * @package     blog
  * @category    string
@@ -36,7 +36,7 @@ $string['associations'] = 'Asociacións';
 $string['associationunviewable'] = 'Este artigo non pode ser visto por outros ata que se asocie un curso con el ou se cambie o campo «Publicar en»';
 $string['autotags'] = 'Engadir estas etiquetas';
 $string['autotags_help'] = 'Escriba unha ou máis etiquetas locais (separadas por comas) que queira engadir automaticamente a cada artigo do blog copiado dun blog externo ao seu blog local.';
-$string['backupblogshelp'] = 'Se está activada esta opción, os blogs incluiranse nas copias de seguranza automatizadas do SITIO';
+$string['backupblogshelp'] = 'Se está activada esta opción, os blogs incluiranse nas copias de seguridade automatizadas do SITIO';
 $string['blockexternalstitle'] = 'Blogs externos';
 $string['blog'] = 'Blog';
 $string['blogaboutthis'] = 'Blog sobre {$a->type}';
@@ -105,7 +105,7 @@ $string['feedisinvalid'] = 'Esta fonte de novas non é correcta';
 $string['feedisvalid'] = 'Esta fonte de novas é correcta';
 $string['filterblogsby'] = 'Filtrar os artigos por...';
 $string['filtertags'] = 'Etiquetas de filtro';
-$string['filtertags_help'] = 'Pode empregar esta opción para filtrar os artigos que quere usar. Se especifica aquí as etiquetas (separadas por comas), unicamente os artigos con esas etiquetas marcas serán copiados desde o blog externo.';
+$string['filtertags_help'] = 'Pode empregar esta opción para filtrar os artigos que quere usar. Se especifica aquí as etiquetas (separadas por comas), unicamente os artigos con esas etiquetas marcas serán copiados dende o blog externo.';
 $string['groupblog'] = 'Blog do grupo: {$a}';
 $string['groupblogdisable'] = 'O blog de grupo non está activado';
 $string['groupblogentries'] = 'Artigos do blog asociados con {$a->coursename} polo grupo {$a->groupname}';
@@ -152,7 +152,7 @@ $string['privacy:metadata:post:lastmodified'] = 'A data na que foi modificada po
 $string['privacy:metadata:post:publishstate'] = 'Se o artigo é visíbel ou non para outros';
 $string['privacy:metadata:post:subject'] = 'Título da entrada do blog';
 $string['privacy:metadata:post:summary'] = 'Entrada do blog';
-$string['privacy:metadata:post:uniquehash'] = 'Un identificador único para un artigo externo, xeralmente un URL';
+$string['privacy:metadata:post:uniquehash'] = 'Un identificador único para unha artigo externo, xeralmente un URL';
 $string['privacy:metadata:post:userid'] = 'O ID do usuario que engadiu a entrada de blog.';
 $string['privacy:metadata:post:usermodified'] = 'O usuario que modificou o artigo por última vez';
 $string['privacy:path:blogassociations'] = 'Publicacións asociadas ao blog';
@@ -169,7 +169,7 @@ $string['publishtocourseassocparam'] = 'Membros de {$a}';
 $string['publishtogroup'] = 'Usuarios que comparten grupo con vostede';
 $string['publishtogroupassoc'] = 'Membros do seu grupo no curso asociado';
 $string['publishtogroupassocparam'] = 'Membros do seu grupo en {$a}';
-$string['publishtonoone'] = 'Vostede (borrador)';
+$string['publishtonoone'] = 'Vostede (versión preliminar)';
 $string['publishtosite'] = 'Todos neste sitio';
 $string['publishtoworld'] = 'Todo o mundo';
 $string['readfirst'] = 'Lea isto antes';

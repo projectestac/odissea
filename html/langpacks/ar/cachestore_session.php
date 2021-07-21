@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_session', language 'ar', version '3.8'.
+ * Strings for component 'cachestore_session', language 'ar', version '3.11'.
  *
  * @package     cachestore_session
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'ذاكرة الجلسة';
-$string['privacy:metadata:core_user'] = 'يخزن البرنامج المساعد Session cachestore البيانات لفترة وجيزة كجزء من وظائف التخزين المؤقت. يتم تخزين هذه البيانات في جلسة المستخدم قصيرة الأجل.';
+$string['pluginname'] = 'خبء الجلسة';
+$string['privacy:metadata:core_user'] = 'يخزن ملحق مخزن خبء الجلسة؛ البيانات لفترة وجيزة كجزء من وظائف التخزين المؤقت. يتم تخزين هذه البيانات في جلسة المستخدم قصيرة الأجل.';

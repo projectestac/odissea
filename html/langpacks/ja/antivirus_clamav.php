@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'ja', version '3.8'.
+ * Strings for component 'antivirus_clamav', language 'ja', version '3.11'.
  *
  * @package     antivirus_clamav
  * @category    string
@@ -25,11 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['antivirusfailed'] = '現在、アンチウイルススキャニングに問題が発生しています。あなたのファイル {$a->item} はアップロードされませんでした。後ほど再度お試しください。';
 $string['clamfailed'] = 'ClamAVの起動に失敗しました。 エラーメッセージは {$a} です。Clamからの出力結果は次のとおりです:';
 $string['clamfailureonupload'] = 'ClamAV失敗時';
 $string['configclamactlikevirus'] = 'ファイルをウイルスとして扱う';
 $string['configclamdonothing'] = 'ファイルをOKとして扱う';
-$string['configclamfailureonupload'] = 'あなたがアップロードファイルをスキャンするようClamを設定しているにもかかわらず設定が正しくない場合、または不明な理由で実行に失敗した場合、どのように処理しますか? あなたが「ファイルをウイルスとして扱う」を選択した場合、ファイルは隔離エリアに移動されるか削除されます。あなたが「ファイルをOKとして扱う」を選択した場合、ファイルは宛先ディレクトリに移動されます。どちらにしても、管理者にはClamが失敗した旨が通知されます。あなたが「ファイルをウイルスとして扱う」を選択したにもかかわらず何らかの理由によりClamの実行に失敗した場合 (通常、あなたが無効なpathtoclamを入力した場合)、アップロードされたファイルすべては隔離エリアに移動されるか削除されます。この設定には注意してください。';
+$string['configclamfailureonupload'] = '「ファイルをOKとして扱う」が選択された場合、ファイルは指定されたディレクトリに移動されます。「アップロードを拒否する、もう一度」が選択された場合、ユーザには後で再度アップロードするようメッセージが表示されます。「ファイルをウイルスとして扱う」が選択された場合、ファイルは隔離エリアに移動されるか削除されます。警告: 何らかの理由によりClamの実行に失敗した場合 (通常、あなたが無効なpathtoclamを入力した場合)、すべてのアップロードされたファイルは指定された隔離エリアに移動されるか削除されます。';
+$string['configclamtryagain'] = 'アップロードを拒否する、もう一度';
 $string['errorcantopensocket'] = 'Unixドメインソケット接続エラー {$a}';
 $string['errorclamavnoresponse'] = 'ClamAVが応答しません。デーモンの動作状況を確認してください。';
 $string['errornounixsocketssupported'] = 'このシステムではUnixドメインソケットトランスポートがサポートされていません。代わりにコマンドラインオプションを使用してください。';
@@ -44,5 +46,14 @@ $string['quarantinedir'] = '隔離ディレクトリ';
 $string['runningmethod'] = '実行方法';
 $string['runningmethodcommandline'] = 'コマンドライン';
 $string['runningmethoddesc'] = 'ClamAVの実行方法です。デフォルトでコマンドラインが使用されます。Unixシステムの場合、システムソケットを使用した方が良いパフォーマンスを得ることができます。';
+$string['runningmethodtcpsocket'] = 'TCPソケット';
 $string['runningmethodunixsocket'] = 'Unixドメインソケット';
+$string['tcpsockethost'] = 'TCPソケットホスト名';
+$string['tcpsockethostdesc'] = 'ClamAVサーバのドメイン名';
+$string['tcpsocketport'] = 'TCPソケットポート';
+$string['tcpsocketportdesc'] = 'ClamAVへの接続時に使用するポートです。';
+$string['tries'] = 'スキャニング試行';
+$string['tries_desc'] = 'スキャニング処理中にエラーが発生した場合のClamAVの試行回数です。';
+$string['tries_notice'] = 'ClamAVスキャニングが {$a->tries} 回実行されました。
+{$a->notice}';
 $string['unknownerror'] = 'Calmに不明なエラーが発生しました。';

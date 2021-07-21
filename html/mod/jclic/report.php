@@ -94,17 +94,13 @@ if ($users and !empty($CFG->enablegroupmembersonly) and $cm->groupmembersonly) {
 }
 
 // Create results table
-if (function_exists('get_extra_user_fields') ) {
-    $extrafields = get_extra_user_fields($context);
-} else {
-    $extrafields = array();
-}
+$extrafields = \core_user\fields::for_identity($context, false)->excluding(...array())->get_required_fields();
 $tablecolumns = array_merge(array('picture', 'fullname'), $extrafields,
         array('starttime', 'attempts', 'solveddone', 'totaltime', 'grade'));
 
 $extrafieldnames = array();
 foreach ($extrafields as $field) {
-    $extrafieldnames[] = get_user_field_name($field);
+    $extrafieldnames[] = \core_user\fields::get_display_name($field);
 }
 
 $strstarttime = ($mode=='details') ? get_string('starttime', 'jclic') : get_string('lastaccess', 'jclic');
@@ -117,7 +113,7 @@ $tableheaders = array_merge(
             get_string('attempts', 'jclic'),
             get_string('solveddone', 'jclic'),
             get_string('totaltime', 'jclic'),
-            get_string('grade'),
+            get_string('grade', 'grades'),
         ));
 
 require_once($CFG->libdir.'/tablelib.php');
@@ -164,7 +160,12 @@ if ($sort = $table->get_sql_sort()) {
     $sort = ' ORDER BY '.$sort;
 }
 
-$ufields = user_picture::fields('u', $extrafields);
+$userfields = \core_user\fields::for_userpic();
+if ($extrafields) {
+    $userfields->including(...$extrafields);
+}
+$selects = $userfields->get_sql('u', false, '', 'id', false)->selects;
+$ufields = str_replace(', ', ',', $selects);
 if (!empty($users)) {
     $select = "SELECT $ufields ";
 
@@ -174,7 +175,6 @@ if (!empty($users)) {
     $ausers = $DB->get_records_sql($select.$sql.$sort, $params, $table->get_page_start(), $table->get_page_size());
 
     if ($ausers !== false) {
-        //$grading_info = grade_get_grades($course->id, 'mod', 'jclic', $jclic->id, array_keys($ausers));
         $countusers = 0;
         foreach ($ausers as $auser) {
 
@@ -246,14 +246,6 @@ if (!empty($users)) {
         if (!$countusers) {
             echo $OUTPUT->notification(get_string('msg_nosessions', 'jclic'), 'notifymessage');
         }
-        /*
-        if ($countusers) {
-            $table->pagesize($perpage, $countusers);
-            $table->print_html();  // Print the whole table
-        } else {
-            echo $OUTPUT->notification(get_string('msg_nosessions', 'jclic'), 'notifymessage');
-        }
-        */
     }
 } else {
     echo $OUTPUT->notification(get_string('msg_nosessions', 'jclic'), 'notifymessage');

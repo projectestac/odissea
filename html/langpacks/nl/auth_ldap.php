@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'nl', version '3.8'.
+ * Strings for component 'auth_ldap', language 'nl', version '3.11'.
  *
  * @package     auth_ldap
  * @category    string
@@ -64,7 +64,7 @@ $string['auth_ldap_memberattribute_key'] = 'Lidmaatschapsattribuut';
 $string['auth_ldap_no_mbstring'] = 'Je hebt de mbstring-extentie nodig in Active Directory om gebruikers te kunnen aanmaken.';
 $string['auth_ldap_noconnect'] = 'LDAP-module kan niet met de server verbinden: {$a}';
 $string['auth_ldap_noconnect_all'] = 'LDAP-module kan met geen enkele server verbinden: {$a}';
-$string['auth_ldap_noextension'] = 'Waarschuwing: De PHP LDAP module is blijkbaar niet geïnstalleerd. Zorg er voor dat ze geïnstalleerd en ingeschakeld is.';
+$string['auth_ldap_noextension'] = 'Waarschuwing: De PHP LDAP module is blijkbaar niet geïnstalleerd. Zorg er voor dat ze geïnstalleerd en ingeschakeld is als je deze authenticatie-plugin wil gebruiken.';
 $string['auth_ldap_objectclass'] = 'Optioneel: Overschrijft objectClass, gebruikt om gebruikers te noemen/zoeken op ldap_user_type. Gewoonlijk moet je dit niet wijzigen.';
 $string['auth_ldap_objectclass_key'] = 'Object klasse';
 $string['auth_ldap_opt_deref'] = 'Bepaalt hoe aliassen tijdens het zoeken behandeld worden. Kies één van volgende waarden: "Nee" (LDAP_DEREF_NEVER) of "Ja" (LDAP_DEREF_ALWAYS)';
@@ -76,7 +76,7 @@ $string['auth_ldap_passwdexpire_settings'] = 'Instellingen voor het vervallen va
 $string['auth_ldap_preventpassindb'] = 'Kies ja om te verhinderen dat wachtwoorden in de Moodle databank bewaard worden.';
 $string['auth_ldap_preventpassindb_key'] = 'Wachtwoorden niet in cache zetten';
 $string['auth_ldap_rolecontext'] = '{$a->localname} context';
-$string['auth_ldap_rolecontext_help'] = 'De gebruikte LDAP context om te selecterne voor  <i>{$a->localname}</i>  koppeling. Scheidt meerdere groepen met \';\'. Gewooonlijk wordt het iets als "cn={$a->shortname},ou=staff,o=myorg".';
+$string['auth_ldap_rolecontext_help'] = 'De gebruikte LDAP context om te selecteren voor  de <i>{$a->localname}</i>  koppeling. Scheidt meerdere groepen met \';\'. Gewoonlijk wordt het iets als "cn={$a->shortname},ou=first-ou-with-role-groups,o=myorg; cn={$a->shortname},ou=second-ou-with-role-groups,o=myorg".';
 $string['auth_ldap_search_sub'] = 'Zet waarde <> 0 als je gebruikers wilt kunnen zoeken in subcontexten.';
 $string['auth_ldap_search_sub_key'] = 'Zoek subcontexten';
 $string['auth_ldap_server_settings'] = 'LDAP-server instellingen';

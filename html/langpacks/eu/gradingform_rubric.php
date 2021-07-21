@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'eu', version '3.8'.
+ * Strings for component 'gradingform_rubric', language 'eu', version '3.11'.
  *
  * @package     gradingform_rubric
  * @category    string
@@ -93,7 +93,7 @@ $string['showdescriptionteacher'] = 'Erakutsi errubrikaren deskribapena ebaluatu
 $string['showremarksstudent'] = 'Erakutsi iruzkinak ikasleei';
 $string['showscorestudent'] = 'Erakutsi maila bakoitzaren puntuak ikasleei';
 $string['showscoreteacher'] = 'Erakutsi maila bakoitzeko puntuak ebaluatu bitartean';
-$string['sortlevelsasc'] = 'Mailentzako sailkatze-ordena:';
+$string['sortlevelsasc'] = 'Mailentzako ordenatze-irizpidea:';
 $string['sortlevelsasc0'] = 'Goitik behera puntu-kopuruaren arabera';
 $string['sortlevelsasc1'] = 'Behetik gora puntu-kopuruaren arabera';
 $string['zerolevelsabsent'] = 'Kontuz: errubrikaren gutxieneko puntuazioa ez da 0; honek aktibitatean ezusteko puntuazioak eragin ditzake. Hau ekiditeko, irizpide bakoitzaren lehen mailak 0 puntu izan behar du.<br>

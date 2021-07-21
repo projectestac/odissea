@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'fr', version '3.8'.
+ * Strings for component 'qtype_ddmarker', language 'fr', version '3.11'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -85,7 +85,10 @@ $string['pluginnamesummary'] = 'Des marqueurs sont glissés et déposés sur une
 À noter : ce type de question n\'est pas accessible pour les personnes malvoyantes.';
 $string['previewareaheader'] = 'Prévisualiser';
 $string['previewareamessage'] = 'Sélectionner un fichier pour l\'image de fond, entrez des labels pour les marqueurs et définissez des zones de dépôt pour ces marqueurs sur l\'image de fond.';
-$string['privacy:metadata'] = 'Le plugin de type de question Marqueurs à glisser-déposer n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de type de question Marqueurs à glisser-déposer permet aux auteurs de questions d\'enregistrer des préférences par défaut.';
+$string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pour une question.';
+$string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
+$string['privacy:preference:shuffleanswers'] = 'Si les réponses doivent être mélangées automatiquement.';
 $string['refresh'] = 'Rafraîchir l\'aperçu';
 $string['shape'] = 'Forme';
 $string['shape_circle'] = 'Cercle';

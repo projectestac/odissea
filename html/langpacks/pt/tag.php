@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'pt', version '3.8'.
+ * Strings for component 'tag', language 'pt', version '3.11'.
  *
  * @package     tag
  * @category    string
@@ -58,7 +58,7 @@ $string['edittag'] = 'Editar esta palavra-chave';
 $string['edittagcoll'] = 'Editar a coleção de palavras-chave {$a}';
 $string['edittagcollection'] = 'Alterar a coleção de palavras-chave';
 $string['entertags'] = 'Insira palavras-chave...';
-$string['errortagfrontpage'] = 'Criar palavras-chave para a página principal do site não é permitido';
+$string['errortagfrontpage'] = 'Vão é permitido criar palavras-chave para a página principal do site';
 $string['errorupdatingrecord'] = 'Ocorreu um erro ao atualizar a palavra-chave';
 $string['eventtagadded'] = 'Palavra-chave adicionada a um item';
 $string['eventtagcollcreated'] = 'Coleção de palavras-chave criada';

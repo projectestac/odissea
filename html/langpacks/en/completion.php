@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'completion', language 'en', version '3.8'.
+ * Strings for component 'completion', language 'en', version '3.11'.
  *
  * @package     completion
  * @category    string
@@ -55,6 +55,7 @@ $string['bulkcompletiontracking_help'] = '<strong>None:</strong> Do not indicate
 $string['checkactivity'] = 'Checkbox for activity / resource: {$a}';
 $string['checkall'] = 'Check or uncheck all activities and resources';
 $string['checkallsection'] = 'Check or uncheck all activities and resources in the following section: {$a}';
+$string['completeactivity'] = 'Complete the activity';
 $string['completed'] = 'Completed';
 $string['completedunlocked'] = 'Completion options unlocked';
 $string['completedunlockedtext'] = 'When you save changes, completion state for all students will be erased. If you change your mind about this, do not save the form.';
@@ -123,6 +124,7 @@ $string['courseaggregation_any'] = 'ANY selected courses to be completed';
 $string['coursealreadycompleted'] = 'You have already completed this course';
 $string['coursecomplete'] = 'Course complete';
 $string['coursecompleted'] = 'Course completed';
+$string['coursecompletedmessage'] = '<p>Congratulations!</p><p>You have completed the course <a href="{$a->courselink}">{$a->coursename}</a>.</p>';
 $string['coursecompletion'] = 'Course completion';
 $string['coursecompletioncondition'] = 'Condition: {$a}';
 $string['coursegrade'] = 'Course grade';
@@ -141,6 +143,8 @@ $string['defaultcompletionupdated'] = 'Changes saved';
 $string['deletecompletiondata'] = 'Delete completion data';
 $string['dependencies'] = 'Dependencies';
 $string['dependenciescompleted'] = 'Completion of other courses';
+$string['detail_desc:receivegrade'] = 'Receive a grade';
+$string['detail_desc:view'] = 'View';
 $string['editcoursecompletionsettings'] = 'Edit course completion settings';
 $string['enablecompletion'] = 'Enable completion tracking';
 $string['enablecompletion_help'] = 'If enabled, activity completion conditions may be set in the activity settings and/or course completion conditions may be set. It is recommended to have this enabled so that meaningful data is displayed in the course overview on the Dashboard.';
@@ -219,6 +223,8 @@ $string['seedetails'] = 'See details';
 $string['select'] = 'Select';
 $string['self'] = 'Self';
 $string['selfcompletion'] = 'Self completion';
+$string['showcompletionconditions'] = 'Show activity completion conditions';
+$string['showcompletionconditions_help'] = 'Activity completion conditions are always shown on the activity page. This setting determines whether activity completion conditions are also shown below each activity on the course page.';
 $string['showinguser'] = 'Showing user';
 $string['unenrolingfromcourse'] = 'Unenrolling from course';
 $string['unenrolment'] = 'Unenrolment';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_participation', language 'ru', version '3.8'.
+ * Strings for component 'report_participation', language 'ru', version '3.11'.
  *
  * @package     report_participation
  * @category    string
@@ -31,3 +31,4 @@ $string['page-report-participation-index'] = 'Отчет об участии в 
 $string['page-report-participation-x'] = 'Любой отчет об участии';
 $string['participation:view'] = 'Просматривать отчет «Участие в курсе»';
 $string['pluginname'] = 'Участие в курсе';
+$string['privacy:metadata'] = 'Плагин участия в курсе не хранит никаких личных данных.';

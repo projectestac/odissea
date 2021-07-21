@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'zh_cn', version '3.8'.
+ * Strings for component 'feedback', language 'zh_cn', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -48,7 +48,7 @@ $string['check_values'] = '可能的回答';
 $string['checkbox'] = '多选项 - 允许多选（复选框）';
 $string['choosefile'] = '选择一个文件';
 $string['chosen_feedback_response'] = '选择反馈答复';
-$string['complete_the_form'] = '回答问题';
+$string['complete_the_form'] = '回答此问题';
 $string['completed'] = '已完成';
 $string['completed_feedbacks'] = '提交的回答';
 $string['completionsubmit'] = '提交反馈后显示为已完成';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_delaybetweenattempts', language 'sv', version '3.8'.
+ * Strings for component 'quizaccess_delaybetweenattempts', language 'sv', version '3.11'.
  *
  * @package     quizaccess_delaybetweenattempts
  * @category    string
@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Åtkomstregel för fördröjning mellan testförsöken';
+$string['privacy:metadata'] = 'Pluginmodulen Fördröjning mellan försök-åtkomstregel för Test lagrar inga personuppgifter.';
 $string['youcannotwait'] = 'Det här testet stängs innan du tillåts att påbörja ett nytt försök.';
 $string['youmustwait'] = 'Du måste vänta innan du gör om det här testet. Du tillåts påbörja ett nytt försök efter {$a}';

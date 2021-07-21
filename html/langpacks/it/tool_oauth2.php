@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'it', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'it', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -39,8 +39,9 @@ $string['createnewgoogleissuer'] = 'Crea servizio Google';
 $string['createnewissuer'] = 'Crea servizio personalizzato';
 $string['createnewmicrosoftissuer'] = 'Crea servizio Microsoft';
 $string['createnewnextcloudissuer'] = 'Crea servizio Nextcloud';
+$string['createnewservice'] = 'Crea nuovo servizio:';
 $string['createnewuserfieldmapping'] = 'Crea mappatura di campo per il fornitore "{$a}"';
-$string['deleteconfirm'] = 'Sei sicuro di eliminare l\'identity provider {$a}"? Tutti i plugin che utilizzano questo provider smetteranno di funzionare.';
+$string['deleteconfirm'] = 'Sei sicuro di eliminare l\'identity provider "{$a}"? Tutti i plugin che utilizzano questo provider smetteranno di funzionare.';
 $string['deleteendpointconfirm'] = 'Sei sicuro di eliminare l\'endpoint "{$a->endpoint}" del fornitore "{$a->issuer}"? Tutti i plugin che utilizzano questo endpoint smetteranno di funzionare.';
 $string['deleteuserfieldmappingconfirm'] = 'Sei sicuro di eliminare la mappatura di campo del fornitore "{$a}"?';
 $string['discovered'] = 'L\'individuazione del servizio è andata a buon fine.';
@@ -57,6 +58,9 @@ $string['endpointname_help'] = 'Chiave da utilizzare per la ricerca dell\'endpoi
 $string['endpointsforissuer'] = 'Endpoint del fornitore {$a}';
 $string['endpointurl'] = 'URL';
 $string['endpointurl_help'] = 'L\'URL dell\'endpoint. E\' obbligatorio l\'utilizzo del protoccolo https://.';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Domini di autenticazione';
 $string['issueralloweddomains_help'] = 'Un elenco separato da virgola contenete i domini dai quali consentire l\'autenticazione.';
 $string['issuerbaseurl'] = 'URL base del del servizio';
@@ -87,7 +91,10 @@ $string['issuersetup'] = 'Istruzioni dettagliate per configurare i servizi comun
 $string['issuersetuptype'] = 'Istruzioni dettagliate per configurare il formitore Oauth 2 {$a}';
 $string['issuershowonloginpage'] = 'Visualizza nella pagina di autenticazione';
 $string['issuershowonloginpage_help'] = 'Se è abilitato il plugin di autenticazione OAuth2, il fornitore di  identità sarà elencato nella pagina di autenticazione e gli  utenti potranno autenticarsi con l\'account del fornitore.';
+$string['linkedin_service'] = 'LinkedIn';
 $string['loginissuer'] = 'Autenticazione consentita';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Non configurato';
 $string['notdiscovered'] = 'L\'individuazione del servizio non è andata a buon fine.';
 $string['notloginissuer'] = 'Autenticazione non consentita';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'ru', version '3.8'.
+ * Strings for component 'report_completion', language 'ru', version '3.11'.
  *
  * @package     report_completion
  * @category    string
@@ -37,3 +37,4 @@ $string['page-report-completion-index'] = 'Отчет о завершении к
 $string['page-report-completion-user'] = 'Отчет о завершении курса пользователями';
 $string['page-report-completion-x'] = 'Отчет о любом завершении';
 $string['pluginname'] = 'Завершение курса';
+$string['privacy:metadata'] = 'В отчете о завершении курса только отображаются данные, хранящиеся в других местах.';

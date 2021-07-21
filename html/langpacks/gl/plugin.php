@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'plugin', language 'gl', version '3.8'.
+ * Strings for component 'plugin', language 'gl', version '3.11'.
  *
  * @package     plugin
  * @category    string
@@ -48,9 +48,9 @@ $string['dependencyupload'] = 'Enviar';
 $string['dependencyuploadmissing'] = 'Enviar ficheiros ZIP';
 $string['detectedmisplacedplugin'] = 'O engadido «{$a->component}» está instalado nunha localización incorrecta «{$a->current}», a localización agardada é «{$a->expected}»';
 $string['displayname'] = 'Nome do engadido';
-$string['err_response_curl'] = 'Non foi posíbel obter as actualizacións dispoñíbeis - produciuse un erro non agardado de cURL.';
+$string['err_response_curl'] = 'Non foi posíbel obter as actualizacións dispoñíbeis, produciuse un erro non agardado de cURL.';
 $string['err_response_format_version'] = 'Formato de resposta con versión non agardada. Comprobe de novo as actualizacións dispoñíbeis.';
-$string['err_response_http_code'] = 'Non foi posíbel obter as actualizacións dispoñíbeis - código de resposta HTTP non agardado.';
+$string['err_response_http_code'] = 'Non foi posíbel obter as actualizacións dispoñíbeis, código de resposta HTTP non agardado.';
 $string['filterall'] = 'Amosar todo';
 $string['filtercontribonly'] = 'Amosar só os engadidos adicionais';
 $string['filterupdatesonly'] = 'Amosar só os actualizábeis';
@@ -83,7 +83,7 @@ $string['packagesvalidatingok'] = 'Validación correcta, a instalación pode con
 $string['plugincheckall'] = 'Todos os engadidos';
 $string['plugincheckattention'] = 'Engadidos que requiren atención';
 $string['pluginchecknone'] = 'Ningún engadido require da súa atención agora';
-$string['pluginchecknotice'] = 'Esta páxina presenta os engadidos que poden requirir a súa atención durante a actualización. Os elementos resaltados inclúen novos engadidos que están a piques de seren instalados, os que van ser actualizados e os engadidos anteriores que agora faltan. Os engadidos adicionais tamén se destacan se existe unha actualización para eles. Recomendase que comprobe se existen versións máis recentes dos engadidos e que lles actualice o seu código fonte antes de continuar con esta actualización de Moodle.';
+$string['pluginchecknotice'] = 'Esta páxina presenta os engadidos que poden requirir a súa atención durante a actualización. Os elementos resaltados inclúen novos engadidos que están a piques de ser instalados, os que van ser actualizados e os engadidos anteriores que agora faltan. Os engadidos adicionais tamén se destacan se existe unha actualización para eles. Recomendase que comprobe se existen versións máis recentes dos engadidos e que lles actualice o seu código fonte antes de continuar con esta actualización de Moodle.';
 $string['plugindisable'] = 'Desactivar';
 $string['plugindisabled'] = 'Desactivado';
 $string['pluginenable'] = 'Activar';
@@ -97,7 +97,7 @@ $string['source'] = 'Orixe';
 $string['sourceext'] = 'Adicional';
 $string['sourcestd'] = 'Estándar';
 $string['status'] = 'Estado';
-$string['status_delete'] = 'Para ser borrado';
+$string['status_delete'] = 'Para ser eliminado';
 $string['status_downgrade'] = 'Xa está instalada unha versión superior!';
 $string['status_missing'] = 'Ausente do disco';
 $string['status_new'] = 'Para ser instalado';
@@ -151,7 +151,7 @@ $string['type_local_plural'] = 'Engadidos locais';
 $string['type_media'] = 'Reprodutor multimedia';
 $string['type_media_plural'] = 'Reprodutores multimedia';
 $string['type_message'] = 'Engadido de notificación';
-$string['type_message_plural'] = 'Engadidos de notificación';
+$string['type_message_plural'] = 'Engadido sde notificación';
 $string['type_mlbackend'] = 'Infraestrutura da máquina de aprendizaxe';
 $string['type_mlbackend_plural'] = 'Infraestruturas da máquina de aprendizaxe';
 $string['type_mnetservice'] = 'Servizo MNet';
@@ -160,7 +160,7 @@ $string['type_mod'] = 'Módulo de actividade';
 $string['type_mod_plural'] = 'Módulos de actividade';
 $string['type_plagiarism'] = 'Engadido de plaxio';
 $string['type_plagiarism_plural'] = 'Engadidos de plaxio';
-$string['type_portfolio'] = 'Portafolio';
+$string['type_portfolio'] = 'Portafolios';
 $string['type_portfolio_plural'] = 'Portafolios';
 $string['type_profilefield'] = 'Tipo do campo de perfil';
 $string['type_profilefield_plural'] = 'Tipos de campo de perfil';
@@ -183,7 +183,7 @@ $string['type_tool_plural'] = 'Ferramentas de administración';
 $string['type_webservice'] = 'Protocolo de servizo web';
 $string['type_webservice_plural'] = 'Protocolos de servizo web';
 $string['uninstall'] = 'Desinstalar';
-$string['uninstallconfirm'] = 'Está a piques de desinstalar o engadido <em>{$a->name}</em>. Isto borrará completamente todo o asociado a este engadido na base de datos, incluíndo a súa configuración, rexistros, ficheiros do usuario xestionados polo engadido, etc. No hai volta atrás e Moodle por si mesmo non crea ningunha copia de seguranza para recuperación. Confirma que quere continuar?';
+$string['uninstallconfirm'] = 'Está a piques de desinstalar o engadido <em>{$a->name}</em>. Isto eliminará completamente todo o asociado a este engadido na base de datos, incluíndo a súa configuración, rexistros, ficheiros do usuario xestionados polo engadido, etc. No hai volta atrás e Moodle por si mesmo non crea ningunha copia de seguridade para recuperación. Confirma que quere continuar?';
 $string['uninstalldelete'] = 'Todos os datos asociados co engadido <em>{$a->name}</em> foron eliminados da base de datos. Para impedir que o engadido se reinstale a si mesmo, debe retirar manualmente o seu cartafol <em>{$a->rootdir}</em> do servidor agora. O propio Moodle non pode retirar o cartafol por mor dos permisos de escritura.';
 $string['uninstalldeleteconfirm'] = 'Todos os datos asociados co engadido <em>{$a->name}</em> foron eliminados da base de datos. Para impedir que o engadido se reinstale a si mesmo, debe retirar o seu cartafol <em>{$a->rootdir}</em> do servidor. Quere retirar o cartafol do engadido agora?';
 $string['uninstalldeleteconfirmexternal'] = 'Semella que a versión actual do engadido foi obtida mediante o sistema de xestión de código fonte ({$a}) de pago. Se vostede retira o cartafol do engadido, pode perder modificacións locais importantes do código. Asegúrese de que quere, definitivamente, retirar o cartafol do engadido antes de continuar.';
@@ -195,9 +195,9 @@ $string['updateavailable'] = 'Hai unha nova versión de {$a} dispoñíbel!';
 $string['updateavailable_moreinfo'] = 'Máis información...';
 $string['updateavailable_release'] = 'Versión {$a}';
 $string['updatepluginconfirm'] = 'Confirmación de actualización do engadido';
-$string['updatepluginconfirmexternal'] = 'Semella que a versión actual do engadido foi obtida mediante o sistema de xestión de código fonte ({$a}) de pago. Se vostede instala esta actualización, xa non poderá posteriormente obter actualizacións de engadidos desde o sistema de xestión de código fonte. Asegúrese de que quere, definitivamente, actualizar o engadido antes de continuar.';
+$string['updatepluginconfirmexternal'] = 'Semella que a versión actual do engadido foi obtida mediante o sistema de xestión de código fonte ({$a}) de pago. Se vostede instala esta actualización, xa non poderá posteriormente obter actualizacións de engadidos dende o sistema de xestión de código fonte. Asegúrese de que quere, definitivamente, actualizar o engadido antes de continuar.';
 $string['updatepluginconfirminfo'] = 'Está a piques de instalar unha nova versión do engadido <strong>{$a->name}</strong>. Vai descargarse un paquete ZIP coa versión {$a->version} do engadido dende <a href="{$a->url}">{$a->url}</a> e será extraído á súa instalación de Moodle, para que poida actualizar a súa instalación.';
-$string['updatepluginconfirmwarning'] = 'Teña en conta que Moodle non fará automaticamente unha copia de seguranza da súa base de datos antes da actualización. Recomendámoslle encarecidamente que faga unha copia de seguranza completa (instantánea) agora, para poder solucionar calquera problema que poida xurdir se o novo código tivese algún fallo que faga o seu sitio inoperante ou incluso que estragara a base de datos. Proceda baixo a súa responsabilidade.';
+$string['updatepluginconfirmwarning'] = 'Teña en conta que Moodle non fará automaticamente unha copia de seguridade da súa base de datos antes da actualización. Recomendámoslle encarecidamente que faga unha copia de seguridade completa (instantánea) agora, para poder solucionar calquera problema que poida xurdir se o novo código tivese algún fallo que faga o seu sitio inoperante ou incluso que estragara a base de datos. Proceda baixo a súa responsabilidade.';
 $string['validationmsg_componentmatch'] = 'Nome completo do compoñente';
 $string['validationmsg_componentmismatchname'] = 'Non coincide o nome do engadido';
 $string['validationmsg_componentmismatchname_help'] = 'Algúns paquetes ZIP, como os xerados por Github, poden conter un nome de directorio raíz incorrecto. É necesario corrixir o nome do directorio raíz para que coincida co nome declara do engadido.';
@@ -220,9 +220,9 @@ $string['validationmsg_missinglangenfile'] = 'Non se atopou o ficheiro de idioma
 $string['validationmsg_missinglangenfolder'] = 'Falta o cartafol do idioma inglés';
 $string['validationmsg_missingversion'] = 'O engadido non declara a súa versión';
 $string['validationmsg_missingversionphp'] = 'Non se atopa o ficheiro version.php';
-$string['validationmsg_multiplelangenfiles'] = 'Atopáronse múltiples ficheiros de idioma inglés';
+$string['validationmsg_multiplelangenfiles'] = 'Atopáronse varios ficheiros de idioma inglés';
 $string['validationmsg_onedir'] = 'Estrutura incorrecta do paquete ZIP.';
-$string['validationmsg_onedir_help'] = 'O paquete ZIP debe conter exactamente un directorio raíz que conten o código do engadido. O nome dese directorio raíz debe coincidir co nome do engadido.';
+$string['validationmsg_onedir_help'] = 'O paquete ZIP debe conter exactamente un directorio raíz que contén o código do engadido. O nome dese directorio raíz debe coincidir co nome do engadido.';
 $string['validationmsg_pathwritable'] = 'Comprobación de acceso de escritura';
 $string['validationmsg_pluginversion'] = 'Versión do engadido';
 $string['validationmsg_release'] = 'Publicación do engadido';
@@ -239,7 +239,7 @@ $string['validationmsg_versionphpsyntax'] = 'Sintaxe non compatíbel no ficheiro
 $string['validationmsglevel_debug'] = 'Depuración';
 $string['validationmsglevel_error'] = 'Erro';
 $string['validationmsglevel_info'] = 'Aceptar';
-$string['validationmsglevel_warning'] = 'Aviso';
+$string['validationmsglevel_warning'] = 'Advertencia';
 $string['version'] = 'Versión';
 $string['versiondb'] = 'Versión actual';
 $string['versiondisk'] = 'Nova versión';

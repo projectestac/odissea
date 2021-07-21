@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_questioninstances', language 'gl', version '3.8'.
+ * Strings for component 'report_questioninstances', language 'gl', version '3.11'.
  *
  * @package     report_questioninstances
  * @category    string
@@ -36,6 +36,6 @@ $string['questioninstances:view'] = 'Ver o informe das instancias da pregunta';
 $string['reportforallqtypes'] = 'Informe para todos os tipos de pregunta';
 $string['reportformissingqtypes'] = 'Informe para as preguntas de tipo descoñecido';
 $string['reportforqtype'] = 'Informe para o tipo de pregunta «{$a}»';
-$string['reportsettings'] = 'Configuración de informe';
+$string['reportsettings'] = 'Axustes de informe';
 $string['totalquestions'] = 'Total';
 $string['visiblequestions'] = 'Visíbel';

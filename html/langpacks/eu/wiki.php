@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'eu', version '3.8'.
+ * Strings for component 'wiki', language 'eu', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -227,7 +227,7 @@ $string['privacy:metadata:wiki_locks:userid'] = 'Orria blokeatu zuen erabiltzail
 $string['privacy:metadata:wiki_pages'] = 'Wiki-orrien inguruko informazioa';
 $string['privacy:metadata:wiki_pages:cachedcontent'] = 'HTML formatuan cacheatutako edukiak';
 $string['privacy:metadata:wiki_pages:pageviews'] = 'Orria ikusi den aldi kopurua';
-$string['privacy:metadata:wiki_pages:readonly'] = 'Orria irakurtzekoa-bakarrik den edo ez';
+$string['privacy:metadata:wiki_pages:readonly'] = 'Orria soilik-irakurtzekoa den edo ez';
 $string['privacy:metadata:wiki_pages:timecreated'] = 'Orria sortu zeneko unea';
 $string['privacy:metadata:wiki_pages:timemodified'] = 'Orria azkenengoz eguneratu zeneko unea';
 $string['privacy:metadata:wiki_pages:timerendered'] = 'Orria azkenengoz erakutsi zeneko unea';
@@ -291,7 +291,7 @@ $string['wiki'] = 'Wikia';
 $string['wiki:addinstance'] = 'Gehitu wiki berria';
 $string['wiki:createpage'] = 'Sortu wiki-orri berriak';
 $string['wiki:editcomment'] = 'Gehitu iruzkinak orriei';
-$string['wiki:editpage'] = 'Gorde wiki-orriak';
+$string['wiki:editpage'] = 'Editatu wiki-orriak';
 $string['wiki:managecomment'] = 'Kudeatu wikiaren iruzkinak';
 $string['wiki:managefiles'] = 'Kudeatu wikiaren fitxategiak';
 $string['wiki:managewiki'] = 'Kudeatu wikiaren ezarpenak';

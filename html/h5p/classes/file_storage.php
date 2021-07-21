@@ -24,7 +24,8 @@
 
 namespace core_h5p;
 
-defined('MOODLE_INTERNAL') || die();
+use H5peditorFile;
+use stored_file;
 
 /**
  * Class to handle storage and export of H5P Content.
@@ -45,6 +46,15 @@ class file_storage implements \H5PFileStorage {
     public const CACHED_ASSETS_FILEAREA = 'cachedassets';
     /** The export file area */
     public const EXPORT_FILEAREA = 'export';
+    /** The icon filename */
+    public const ICON_FILENAME = 'icon.svg';
+
+    /**
+     * The editor file area.
+     * @deprecated since Moodle 3.10 MDL-68909. Please do not use this constant any more.
+     * @todo MDL-69530 This will be deleted in Moodle 4.2.
+     */
+    public const EDITOR_FILEAREA = 'editor';
 
     /**
      * @var \context $context Currently we use the system context everywhere.
@@ -162,13 +172,19 @@ class file_storage implements \H5PFileStorage {
      * @param string $filename Name of export file.
      */
     public function saveExport($source, $filename) {
+        global $USER;
+
+        // Remove old export.
+        $this->deleteExport($filename);
+
         $filerecord = [
             'contextid' => $this->context->id,
             'component' => self::COMPONENT,
             'filearea' => self::EXPORT_FILEAREA,
             'itemid' => 0,
             'filepath' => '/',
-            'filename' => $filename
+            'filename' => $filename,
+            'userid' => $USER->id
         ];
         $this->fs->create_file_from_pathname($filerecord, $source);
     }
@@ -313,13 +329,37 @@ class file_storage implements \H5PFileStorage {
 
     /**
      * Save files uploaded through the editor.
-     * The files must be marked as temporary until the content form is saved.
      *
-     * @param \H5peditorFile $file
+     * @param H5peditorFile $file
      * @param int $contentid
+     *
+     * @return int The id of the saved file.
      */
     public function saveFile($file, $contentid) {
-        // This is to be implemented when the h5p editor is introduced / created.
+        global $USER;
+
+        $context = $this->context->id;
+        $component = self::COMPONENT;
+        $filearea = self::CONTENT_FILEAREA;
+        if ($contentid === 0) {
+            $usercontext = \context_user::instance($USER->id);
+            $context = $usercontext->id;
+            $component = 'user';
+            $filearea = 'draft';
+        }
+
+        $record = array(
+            'contextid' => $context,
+            'component' => $component,
+            'filearea' => $filearea,
+            'itemid' => $contentid,
+            'filepath' => '/' . $file->getType() . 's/',
+            'filename' => $file->getName()
+        );
+
+        $storedfile = $this->fs->create_file_from_pathname($record, $_FILES['file']['tmp_name']);
+
+        return $storedfile->get_id();
     }
 
     /**
@@ -328,46 +368,153 @@ class file_storage implements \H5PFileStorage {
      *
      * @param string $file path + name
      * @param string|int $fromid Content ID or 'editor' string
-     * @param int $toid Target Content ID
+     * @param \stdClass $tocontent Target Content
+     *
+     * @return void
      */
-    public function cloneContentFile($file, $fromid, $toid) {
-        // This is to be implemented when the h5p editor is introduced / created.
+    public function cloneContentFile($file, $fromid, $tocontent): void {
+        // Determine source filearea and itemid.
+        if ($fromid === 'editor') {
+            $sourcefilearea = 'draft';
+            $sourceitemid = 0;
+        } else {
+            $sourcefilearea = self::CONTENT_FILEAREA;
+            $sourceitemid = (int)$fromid;
+        }
+
+        $filepath = '/' . dirname($file) . '/';
+        $filename = basename($file);
+
+        // Check to see if source exists.
+        $sourcefile = $this->get_file($sourcefilearea, $sourceitemid, $file);
+        if ($sourcefile === null) {
+            return; // Nothing to copy from.
+        }
+
+        // Check to make sure that file doesn't exist already in target.
+        $targetfile = $this->get_file(self::CONTENT_FILEAREA, $tocontent->id, $file);
+        if ( $targetfile !== null) {
+            return; // File exists, no need to copy.
+        }
+
+        // Create new file record.
+        $record = [
+            'contextid' => $this->context->id,
+            'component' => self::COMPONENT,
+            'filearea' => self::CONTENT_FILEAREA,
+            'itemid' => $tocontent->id,
+            'filepath' => $filepath,
+            'filename' => $filename,
+        ];
+
+        $this->fs->create_file_from_storedfile($record, $sourcefile);
     }
 
     /**
-     * Copy content from one directory to another. Defaults to cloning
-     * content from the current temporary upload folder to the editor path.
+     * Copy content from one directory to another.
+     * Defaults to cloning content from the current temporary upload folder to the editor path.
      *
      * @param string $source path to source directory
      * @param string $contentid Id of content
      *
-     * @return object Object containing h5p json and content json data
      */
     public function moveContentDirectory($source, $contentid = null) {
-        // This is to be implemented when the h5p editor is introduced / created.
+        $contentidint = (int)$contentid;
+
+        if ($source === null) {
+            return;
+        }
+
+        // Get H5P and content json.
+        $contentsource = $source . '/content';
+
+        // Move all temporary content files to editor.
+        $it = new \RecursiveIteratorIterator(
+            new \RecursiveDirectoryIterator($contentsource,\RecursiveDirectoryIterator::SKIP_DOTS),
+            \RecursiveIteratorIterator::SELF_FIRST
+        );
+
+        $it->rewind();
+        while ($it->valid()) {
+            $item = $it->current();
+            $pathname = $it->getPathname();
+            if (!$item->isDir() && !($item->getFilename() === 'content.json')) {
+                $this->move_file($pathname, $contentidint);
+            }
+            $it->next();
+        }
     }
 
     /**
-     * Checks to see if content has the given file.
-     * Used when saving content.
+     * Get the file URL or given library and then return it.
      *
-     * @param string $file path + name
-     * @param int $contentid
-     * @return string|int File ID or NULL if not found
+     * @param int $itemid
+     * @param string $machinename
+     * @param int $majorversion
+     * @param int $minorversion
+     * @return string url or false if the file doesn't exist
      */
-    public function getContentFile($file, $contentid) {
-        // This is to be implemented when the h5p editor is introduced / created.
+    public function get_icon_url(int $itemid, string $machinename, int $majorversion, int $minorversion) {
+        $filepath = '/' . "{$machinename}-{$majorversion}.{$minorversion}" . '/';
+        if ($file = $this->fs->get_file(
+            $this->context->id,
+            self::COMPONENT,
+            self::LIBRARY_FILEAREA,
+            $itemid,
+            $filepath,
+            self::ICON_FILENAME)
+        ) {
+            $iconurl  = \moodle_url::make_pluginfile_url(
+                $this->context->id,
+                self::COMPONENT,
+                self::LIBRARY_FILEAREA,
+                $itemid,
+                $filepath,
+                $file->get_filename());
+
+            // Return image URL.
+            return $iconurl->out();
+        }
+
+        return false;
+    }
+
+    /**
+     * Checks to see if an H5P content has the given file.
+     *
+     * @param string $file File path and name.
+     * @param int $content Content id.
+     *
+     * @return int|null File ID or NULL if not found
+     */
+    public function getContentFile($file, $content): ?int {
+        if (is_object($content)) {
+            $content = $content->id;
+        }
+        $contentfile = $this->get_file(self::CONTENT_FILEAREA, $content, $file);
+
+        return ($contentfile === null ? null : $contentfile->get_id());
     }
 
     /**
      * Remove content files that are no longer used.
+     *
      * Used when saving content.
      *
-     * @param string $file path + name
-     * @param int $contentid
+     * @param string $file File path and name.
+     * @param int $contentid Content id.
+     *
+     * @return void
      */
-    public function removeContentFile($file, $contentid) {
-        // This is to be implemented when the h5p editor is introduced / created.
+    public function removeContentFile($file, $contentid): void {
+        // Although the interface defines $contentid as int, object given in \H5peditor::processParameters.
+        if (is_object($contentid)) {
+            $contentid = $contentid->id;
+        }
+        $existingfile = $this->get_file(self::CONTENT_FILEAREA, $contentid, $file);
+        if ($existingfile !== null) {
+            $existingfile->delete();
+        }
     }
 
     /**
@@ -431,13 +578,23 @@ class file_storage implements \H5PFileStorage {
      * @param  array $library Library details
      */
     public function delete_library(array $library): void {
+        global $DB;
 
         // A library ID of false would result in all library files being deleted, which we don't want. Return instead.
         if ($library['libraryId'] === false) {
             return;
         }
 
+        $areafiles = $this->fs->get_area_files($this->context->id, self::COMPONENT, self::LIBRARY_FILEAREA, $library['libraryId']);
         $this->delete_directory($this->context->id, self::COMPONENT, self::LIBRARY_FILEAREA, $library['libraryId']);
+        $librarycache = \cache::make('core', 'h5p_library_files');
+        foreach ($areafiles as $file) {
+            if (!$DB->record_exists('files', array('contenthash' => $file->get_contenthash(),
+                                                   'component' => self::COMPONENT,
+                                                   'filearea' => self::LIBRARY_FILEAREA))) {
+                $librarycache->delete($file->get_contenthash());
+            }
+        }
     }
 
     /**
@@ -460,6 +617,7 @@ class file_storage implements \H5PFileStorage {
      * @param  array  $options File system information.
      */
     private function copy_directory(string $source, array $options): void {
+        $librarycache = \cache::make('core', 'h5p_library_files');
         $it = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($source, \RecursiveDirectoryIterator::SKIP_DOTS),
                 \RecursiveIteratorIterator::SELF_FIRST);
 
@@ -477,7 +635,13 @@ class file_storage implements \H5PFileStorage {
                     $options['filepath'] = $root;
                 }
 
-                $this->fs->create_file_from_pathname($options, $item->getPathName());
+                $file = $this->fs->create_file_from_pathname($options, $item->getPathName());
+
+                if ($options['filearea'] == self::LIBRARY_FILEAREA) {
+                    if (!$librarycache->has($file->get_contenthash())) {
+                        $librarycache->set($file->get_contenthash(), file_get_contents($item->getPathName()));
+                    }
+                }
             }
             $it->next();
         }
@@ -499,12 +663,24 @@ class file_storage implements \H5PFileStorage {
         // Read source files.
         $files = $this->fs->get_directory_files($contextid, self::COMPONENT, $filearea, $itemid, $filepath, true);
 
+        $librarycache = \cache::make('core', 'h5p_library_files');
+
         foreach ($files as $file) {
             $path = $target . str_replace($filepath, DIRECTORY_SEPARATOR, $file->get_filepath());
             if ($file->is_directory()) {
                 check_dir_exists(rtrim($path));
             } else {
-                $file->copy_content_to($path . $file->get_filename());
+                if ($filearea == self::LIBRARY_FILEAREA) {
+                    $cachedfile = $librarycache->get($file->get_contenthash());
+                    if (empty($cachedfile)) {
+                        $file->copy_content_to($path . $file->get_filename());
+                        $librarycache->set($file->get_contenthash(), file_get_contents($path . $file->get_filename()));
+                    } else {
+                        file_put_contents($path . $file->get_filename(), $cachedfile);
+                    }
+                } else {
+                    $file->copy_content_to($path . $file->get_filename());
+                }
             }
         }
     }
@@ -580,7 +756,7 @@ class file_storage implements \H5PFileStorage {
      * @param  string $filename File name to retrieve.
      * @return bool|\stored_file Stored file instance if exists, false if not
      */
-    private function get_export_file(string $filename) {
+    public function get_export_file(string $filename) {
         return $this->fs->get_file($this->context->id, self::COMPONENT, self::EXPORT_FILEAREA, 0, '/', $filename);
     }
 
@@ -620,5 +796,76 @@ class file_storage implements \H5PFileStorage {
         global $DB;
         return $DB->get_field('files', 'itemid', ['component' => self::COMPONENT, 'filearea' => $filearea, 'filepath' => $filepath,
                 'filename' => $filename]);
+    }
+
+    /**
+     * Helper to make it easy to load content files.
+     *
+     * @param string $filearea File area where the file is saved.
+     * @param int $itemid Content instance or content id.
+     * @param string $file File path and name.
+     *
+     * @return stored_file|null
+     */
+    private function get_file(string $filearea, int $itemid, string $file): ?stored_file {
+        global $USER;
+
+        $component = self::COMPONENT;
+        $context = $this->context->id;
+        if ($filearea === 'draft') {
+            $itemid = 0;
+            $component = 'user';
+            $usercontext = \context_user::instance($USER->id);
+            $context = $usercontext->id;
+        }
+
+        $filepath = '/'. dirname($file). '/';
+        $filename = basename($file);
+
+        // Load file.
+        $existingfile = $this->fs->get_file($context, $component, $filearea, $itemid, $filepath, $filename);
+        if (!$existingfile) {
+            return null;
+        }
+
+        return $existingfile;
+    }
+
+    /**
+     * Move a single file
+     *
+     * @param string $sourcefile Path to source file
+     * @param int $contentid Content id or 0 if the file is in the editor file area
+     *
+     * @return void
+     */
+    private function move_file(string $sourcefile, int $contentid): void {
+        $pathparts = pathinfo($sourcefile);
+        $filename  = $pathparts['basename'];
+        $filepath  = $pathparts['dirname'];
+        $foldername = basename($filepath);
+
+        // Create file record for content.
+        $record = array(
+            'contextid' => $this->context->id,
+            'component' => $contentid > 0 ? self::COMPONENT : 'user',
+            'filearea' => $contentid > 0 ? self::CONTENT_FILEAREA : 'draft',
+            'itemid' => $contentid > 0 ? $contentid : 0,
+            'filepath' => '/' . $foldername . '/',
+            'filename' => $filename
+        );
+
+        $file = $this->fs->get_file(
+            $record['contextid'], $record['component'],
+            $record['filearea'], $record['itemid'], $record['filepath'],
+            $record['filename']
+        );
+
+        if ($file) {
+            // Delete it to make sure that it is replaced with correct content.
+            $file->delete();
+        }
+
+        $this->fs->create_file_from_pathname($record, $sourcefile);
     }
 }

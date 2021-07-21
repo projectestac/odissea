@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ko', version '3.8'.
+ * Strings for component 'resource', language 'ko', version '3.11'.
  *
  * @package     resource
  * @category    string
@@ -67,6 +67,7 @@ $string['framesize'] = '프레임 높이';
 $string['legacyfiles'] = '오래된 파일 전환';
 $string['legacyfilesactive'] = '활성화';
 $string['legacyfilesdone'] = '종료됨';
+$string['modifieddate'] = '{$a} 수정됨';
 $string['modulename'] = '파일';
 $string['modulenameplural'] = '파일';
 $string['notmigrated'] = '정규자료 형식 ({$a}) 은 아직 전환되지 않았습니다. ';
@@ -93,3 +94,4 @@ $string['showsize'] = '크기 보기';
 $string['showsize_desc'] = '강좌 페이지에 파일 크기 표시';
 $string['showtype'] = '유형 보기';
 $string['showtype_desc'] = '강좌 페이지에 파일 유형(예: \'워드문서\') 표시';
+$string['uploadeddate'] = '{$a} 업로드됨';

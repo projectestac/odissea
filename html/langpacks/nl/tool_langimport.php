@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_langimport', language 'nl', version '3.8'.
+ * Strings for component 'tool_langimport', language 'nl', version '3.11'.
  *
  * @package     tool_langimport
  * @category    string
@@ -28,6 +28,10 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadnotavailable'] = 'Kon niet verbinden met de downloadserver. Het is niet mogelijk om de taalpakketten te installeren of updaten. Download de juiste zip-bestanden van<a href="{$a->src}">{$a->src}</a> en unzip ze manueel in je datamap  <code>{$a->dest}</code>';
 $string['install'] = 'Installeer geselecteerde taalpakket(ten)';
 $string['installedlangs'] = 'Geïnstalleerde taalpakketten';
+$string['installfailed'] = 'Installatie van taalpakketten is mislukt!';
+$string['installfinished'] = 'De installatie van taalpakketten is voltooid.';
+$string['installpending'] = 'De volgende taalpakketten worden binnenkort geïnstalleerd: {$a}.';
+$string['installscheduled'] = 'Taalpakketten gepland voor installatie.';
 $string['langimport'] = 'Taalpakkettenbeheer';
 $string['langimportdisabled'] = 'De interface voor het importeren van taalpakketten is uitgeschakeld. Je moet je taalpakketten manueel updaten via het bestandssysteem. Vergeet niet de taalcache leeg te maken nadat je dit gedaan hebt.';
 $string['langpackinstalled'] = 'Taalpakket {$a} is geïnstalleerd';
@@ -48,7 +52,9 @@ $string['nolangupdateneeded'] = 'Al je geïnstalleerde taalpakketten zijn up-to-
 $string['pluginname'] = 'Pakketten';
 $string['privacy:metadata'] = 'De taalpakket-plugin bewaart geen persoonlijke gegevens.';
 $string['purgestringcaches'] = 'Taalcache leegmaken';
+$string['search'] = 'Zoek beschikbare taalpakketten';
 $string['selectlangs'] = 'Selecteer te verwijderen taalpakketten';
 $string['uninstall'] = 'Verwijder geselecteerde taalpakketten';
 $string['uninstallconfirm'] = 'Je gaat zodadelijk taalpakketten verwijderen:<strong>{$a}</strong>.  Verder gaan?';
 $string['updatelangs'] = 'Update alle geïnstalleerde taalpakketten';
+$string['updatelangsnote'] = 'Het updaten van alle geïnstalleerde taalpakketten door op de knop te klikken kan lang duren en tot time-outs leiden. Het wordt in plaats daarvan aanbevolen om gebruik te maken van de geplande taak \'{$a->taskname}\' (die standaard elke dag wordt uitgevoerd).';

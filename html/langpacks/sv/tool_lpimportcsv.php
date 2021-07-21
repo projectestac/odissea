@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_lpimportcsv', language 'sv', version '3.8'.
+ * Strings for component 'tool_lpimportcsv', language 'sv', version '3.11'.
  *
  * @package     tool_lpimportcsv
  * @category    string
@@ -28,13 +28,13 @@ defined('MOODLE_INTERNAL') || die();
 $string['competencyscale'] = 'Kompetensskala: {$a}';
 $string['competencyscaledescription'] = 'Kompetensskala skapad vid import';
 $string['confirm'] = 'Bekräfta';
-$string['confirmcolumnmappings'] = 'Bekräfta inställningar för kolumner';
+$string['confirmcolumnmappings'] = 'Bekräfta kolumnmappningen';
 $string['csvdelimiter'] = 'CSV-avgränsare';
 $string['description'] = 'Beskrivning';
 $string['descriptionformat'] = 'Beskrivningsformat';
 $string['encoding'] = 'Teckenkodning';
 $string['export'] = 'Exportera';
-$string['exportid'] = 'Export-ID (Valfritt)';
+$string['exportid'] = 'Exporterat ID (Valfritt)';
 $string['exportnavlink'] = 'Exportera kompetensramverk';
 $string['idnumber'] = 'ID-nummer';
 $string['import'] = 'Importera';

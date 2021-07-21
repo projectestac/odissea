@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_ldap', language 'it', version '3.8'.
+ * Strings for component 'auth_ldap', language 'it', version '3.11'.
  *
  * @package     auth_ldap
  * @category    string
@@ -65,7 +65,7 @@ $string['auth_ldap_memberattribute_key'] = 'Attributo member';
 $string['auth_ldap_no_mbstring'] = 'Per creare utenti in Active Directory  è necessaria l\'estensione mbstring';
 $string['auth_ldap_noconnect'] = 'Il modulo LDAP non può collegarsi al server: {$a}';
 $string['auth_ldap_noconnect_all'] = 'Il modulo LDAP non può collegarsi a nessun server: {$a}';
-$string['auth_ldap_noextension'] = '<em>Il modulo PHP LDAP non sembra essere disponibile. Per usare l\'autenticazione LDAP assicurarti che sia installato ed abilitato.</em>';
+$string['auth_ldap_noextension'] = 'Il modulo PHP LDAP non sembra essere disponibile. Per usare l\'autenticazione LDAP assicurarsi che sia installato ed abilitato.';
 $string['auth_ldap_objectclass'] = 'Opzionale: l\'objectClass da utilizzare per la ricerca degli utenti. Di solito non è necessario modificare questa impostazione.';
 $string['auth_ldap_objectclass_key'] = 'Object class';
 $string['auth_ldap_opt_deref'] = 'Imposta il modo con cui vengono trattati gli alias durante una ricerca. Selezionare uno dei seguenti valori:<br/>

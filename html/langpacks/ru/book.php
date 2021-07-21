@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ru', version '3.8'.
+ * Strings for component 'book', language 'ru', version '3.11'.
  *
  * @package     book
  * @category    string
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addafter'] = 'Добавить главу';
+$string['addafterchapter'] = 'Добавить новую главу после «{$a->title}»';
 $string['book:addinstance'] = 'Добавлять новую книгу';
 $string['book:edit'] = 'Редактировать главы книги';
 $string['book:read'] = 'Просматривать книгу';
@@ -100,6 +101,7 @@ $string['numberingoptions_desc'] = 'Выберите параметры нуме
 $string['page-mod-book-x'] = 'Страница любого модуля Книга';
 $string['pluginadministration'] = 'Управление книгой';
 $string['pluginname'] = 'Книга';
+$string['previouschapter'] = 'Предыдущая глава';
 $string['privacy:metadata'] = 'Элемент курса «Книга» не хранит никаких персональных данных.';
 $string['removeallbooktags'] = 'Удалить все теги книги';
 $string['search:activity'] = 'Книга — информация о ресурсе';

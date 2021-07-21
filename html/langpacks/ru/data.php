@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ru', version '3.8'.
+ * Strings for component 'data', language 'ru', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -89,7 +89,7 @@ $string['csvfailed'] = 'Невозможно прочитать исходные
 $string['csvfile'] = 'CSV файл';
 $string['csvimport'] = 'Импорт CSV файла';
 $string['csvimport_help'] = 'Записи могут быть импортированы в простой текстовый файл со списком имен полей в первой строке. Данные размещаются в последующих строках, одна запись на строку.';
-$string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">CSV</acronym> текст с выбранным разделителем:';
+$string['csvwithselecteddelimiter'] = '<abbr title="Comma Separated Values">CSV</abbr>';
 $string['data:addinstance'] = 'Добавлять новую базу данных';
 $string['data:approve'] = 'Одобрять записи и отменять одобрение';
 $string['data:comment'] = 'Добавлять комментарии';
@@ -159,6 +159,8 @@ $string['exportaszip'] = 'Экспортировать в ZIP';
 $string['exportaszip_help'] = 'Экспорт в zip позволяет Вам сохранить шаблоны и поля в виде заготовки для скачивания. Этот архив может быть импортирован в другой курс.';
 $string['exportedtozip'] = 'Экспортировано во временный ZIP...';
 $string['exportentries'] = 'Экспорт записей';
+$string['exportformat'] = 'Формат экспорта';
+$string['exportoptions'] = 'Параметры экспорта';
 $string['exportownentries'] = 'Экспортировать только свои собственные записи?({$a->mine}/{$a->all})';
 $string['failedpresetdelete'] = 'Ошибка удаления заготовки!';
 $string['fieldadded'] = 'Поле добавлено';
@@ -176,6 +178,7 @@ $string['fieldmappings_help'] = 'Это меню позволяет сохран
 
 Вы можете сопоставлять поля только того же самого типа, т.е. каждый раз из выпадающего списка выбираются различные поля. Не пытайтесь сопоставлять одно старое поле к более, чем одному новому полю.';
 $string['fieldname'] = 'Название поля';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'Следующие поля из файла не известны в этой базе данных: {$a}';
 $string['fieldoptions'] = 'Варианты (по одному на строку)';
 $string['fields'] = 'Поля';
@@ -198,7 +201,7 @@ $string['header'] = 'Заголовок';
 $string['headeraddtemplate'] = 'Определение интерфейса добавления и редактирования записей';
 $string['headerasearchtemplate'] = 'Определение интерфейса Расширенного поиска';
 $string['headercsstemplate'] = 'Определение локальных CSS стилей для других шаблонов';
-$string['headerjstemplate'] = 'Определение функций Javascript, которые будут использоваться для других шаблонов';
+$string['headerjstemplate'] = 'Определяет пользовательский Javascript для управления способом отображения элементов в шаблонах Списка, Одиночной записи или Добавления записи.';
 $string['headerlisttemplate'] = 'Определение интерфейса просмотра списка записей';
 $string['headerrsstemplate'] = 'Определение структуры RSS-ленты';
 $string['headersingletemplate'] = 'Определение интерфейса просмотра по одной записи';
@@ -290,7 +293,7 @@ $string['number'] = 'Число';
 $string['numberrssarticles'] = 'Записей в RSS-ленте';
 $string['numnotapproved'] = 'Ожидают одобрения';
 $string['numrecords'] = 'записей: <strong>{$a}</strong>';
-$string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<abbr title="OpenDocument Spreadsheet">ODS</abbr>&nbsp;(OpenOffice)';
 $string['openafterclose'] = 'Вы указали дату открытия после даты закрытия';
 $string['optionaldescription'] = 'Краткое описание (необязательно)';
 $string['optionalfilename'] = 'Имя файла (необязательно)';
@@ -351,6 +354,7 @@ $string['rows'] = 'строк';
 $string['rssglobaldisabled'] = 'Отключено. Смотрите переменные в конфигурации сайта.';
 $string['rsstemplate'] = 'Шаблон RSS';
 $string['rsstitletemplate'] = 'Шаблон заголовка RSS';
+$string['rsstype'] = 'RSS-лента для этого элемента курса';
 $string['save'] = 'Сохранить';
 $string['saveandadd'] = 'Сохранить и добавить еще';
 $string['saveandview'] = 'Сохранить и просмотреть';
@@ -363,6 +367,8 @@ $string['search'] = 'Поиск';
 $string['search:activity'] = 'База данных — информация об элементе курса';
 $string['search:entry'] = 'База данных - записи';
 $string['selectedrequired'] = 'Все выбранные требуются';
+$string['selectexportoptions'] = 'Выберите параметры экспорта';
+$string['selectfields'] = 'Выберите поля';
 $string['showall'] = 'Показать все записи';
 $string['single'] = 'Просмотр по одной записи';
 $string['singletemplate'] = 'Шаблон одиночной записи';
@@ -384,6 +390,8 @@ $string['todatabase'] = 'в эту Базу данных';
 $string['type'] = 'Тип поля';
 $string['undefinedprocessactionmethod'] = 'Никакой метод не определен в Data_Preset по обработке действия «{$a}».';
 $string['unsupportedexport'] = '{$a->fieldtype} не может быть экспортировано';
+$string['unsupportedfields'] = 'Неподдерживаемые поля';
+$string['unsupportedfieldslist'] = 'Следующие поля нельзя экспортировать:';
 $string['updatefield'] = 'Обновить существующее поле';
 $string['uploadfile'] = 'Загрузить файл';
 $string['uploadrecords'] = 'Загрузить записи из файла';

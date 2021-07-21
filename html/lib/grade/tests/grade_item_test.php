@@ -427,14 +427,14 @@ class core_grade_item_testcase extends grade_base_testcase {
 
         // Check that the grades were updated to match the grade item.
         $grade = $DB->get_record('grade_grades', array('id' => $gradeids[0]));
-        $this->assertEquals($gradeitem->grademax, $grade->rawgrademax, 'Max grade mismatch', 0.0001);
-        $this->assertEquals($gradeitem->grademin, $grade->rawgrademin, 'Min grade mismatch', 0.0001);
-        $this->assertEquals(6, $grade->finalgrade, 'Min grade mismatch', 0.0001);
+        $this->assertEqualsWithDelta($gradeitem->grademax, $grade->rawgrademax, 0.0001, 'Max grade mismatch');
+        $this->assertEqualsWithDelta($gradeitem->grademin, $grade->rawgrademin, 0.0001, 'Min grade mismatch');
+        $this->assertEqualsWithDelta(6, $grade->finalgrade, 0.0001, 'Min grade mismatch');
 
         $grade = $DB->get_record('grade_grades', array('id' => $gradeids[1]));
-        $this->assertEquals($gradeitem->grademax, $grade->rawgrademax, 'Max grade mismatch', 0.0001);
-        $this->assertEquals($gradeitem->grademin, $grade->rawgrademin, 'Min grade mismatch', 0.0001);
-        $this->assertEquals(18, $grade->finalgrade, 'Min grade mismatch', 0.0001);
+        $this->assertEqualsWithDelta($gradeitem->grademax, $grade->rawgrademax, 0.0001, 'Max grade mismatch');
+        $this->assertEqualsWithDelta($gradeitem->grademin, $grade->rawgrademin, 0.0001, 'Min grade mismatch');
+        $this->assertEqualsWithDelta(18, $grade->finalgrade, 0.0001, 'Min grade mismatch');
     }
 
     protected function sub_test_grade_item_set_locked() {
@@ -1049,5 +1049,79 @@ class core_grade_item_testcase extends grade_base_testcase {
         $this->assertEquals($gradeitem->itemtype, $event->other['itemtype']);
         $this->assertEquals($gradeitem->itemmodule, $event->other['itemmodule']);
         $this->assertEquals('updatedname', $event->other['itemname']);
+    }
+
+
+    /**
+     * Test grade item duplication expecting success.
+     */
+    public function test_grade_duplicate_grade_item_success() {
+        $cat = new grade_category();
+        $cat->courseid = $this->courseid;
+        $cat->fullname = 'Grade category';
+        $cat->insert();
+
+        // Method exists.
+        $gi = new grade_item();
+        $this->assertTrue(method_exists($gi, 'duplicate'));
+
+        // Grade item is inserted and valid for duplication.
+        $gi->courseid = $this->courseid;
+        $gi->categoryid = $cat->id;
+        $gi->itemtype = 'manual';
+        $gi->itemname = 'Grade Item 1';
+        $gi->idnumber = '1000';
+        $gi->insert();
+        $gi2 = $gi->duplicate();
+
+        $this->assertEquals($gi->courseid, $gi2->courseid);
+        $this->assertEquals($gi->categoryid, $gi2->categoryid);
+        $this->assertEquals($gi->itemtype, $gi2->itemtype);
+        $this->assertEquals($gi->gradetype, $gi2->gradetype);
+        $this->assertEquals($gi->grademax, $gi2->grademax);
+        $this->assertEquals($gi->grademin, $gi2->grademin);
+        $this->assertEquals($gi->gradepass, $gi2->gradepass);
+        $this->assertEquals($gi->display, $gi2->display);
+        $this->assertEquals($gi->decimals, $gi2->decimals);
+        $this->assertEquals($gi->hidden, $gi2->hidden);
+        $this->assertEquals($gi->weightoverride, $gi2->weightoverride);
+
+        $this->assertNotEquals($gi->id, $gi2->id);
+        $this->assertNotEquals($gi->idnumber, $gi2->idnumber);
+        $this->assertNotEquals($gi->sortorder, $gi2->sortorder);
+        $this->assertNotEquals($gi->itemname, $gi2->itemname);
+    }
+
+    /**
+     * Test grade item duplication exception expected with incomplete grade item.
+     */
+    public function test_grade_duplicate_grade_item_incomplete() {
+        // Grade item is not valid because it is empty.
+        $gi = new grade_item();
+        $gi->courseid = $this->courseid;
+        $this->expectException("moodle_exception");
+        $gi2 = $gi->duplicate();
+    }
+
+    /**
+     * Test grade item duplication exception expected because item must be in db.
+     */
+    public function test_grade_duplicate_grade_item_not_in_db() {
+        $cat = new grade_category();
+        $cat->courseid = $this->courseid;
+        $cat->fullname = 'Grade category';
+        $cat->insert();
+
+        // Grade item is valid for insertion but is not inserted into db.
+        // Duplicate method throws an exception.
+        $gi = new grade_item();
+        $gi->courseid = $this->courseid;
+        $gi->categoryid = $cat->id;
+        $gi->itemtype = 'manual';
+        $gi->itemname = 'Grade Item 1';
+        $gi->idnumber = '1000';
+
+        $this->expectException("moodle_exception");
+        $gi2 = $gi->duplicate();
     }
 }

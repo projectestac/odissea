@@ -25,12 +25,14 @@
 defined('MOODLE_INTERNAL') || die;
 
 if ($hassiteconfig) {
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     if (!get_protected_agora()) {
         return;
     }
-    //************ FI
+    // ************ FI
+
     // Create a settings page for all of the mail server settings.
     $settings = new admin_settingpage('messageinbound_mailsettings',
             new lang_string('incomingmailconfiguration', 'tool_messageinbound'));

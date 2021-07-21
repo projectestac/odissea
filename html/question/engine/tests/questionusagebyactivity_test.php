@@ -92,10 +92,10 @@ class question_usage_by_activity_test extends advanced_testcase {
         $slot = $quba->add_question($tf);
 
         // Exercise SUT and verify.
-        $this->assertSame($tf, $quba->get_question($slot));
+        $this->assertSame($tf, $quba->get_question($slot, false));
 
         $this->expectException('moodle_exception');
-        $quba->get_question($slot + 1);
+        $quba->get_question($slot + 1, false);
     }
 
     public function test_extract_responses() {
@@ -157,5 +157,37 @@ class question_usage_by_activity_test extends advanced_testcase {
         // Exercise SUT - now it should fail.
         $this->expectException('question_out_of_sequence_exception');
         $quba->process_all_actions($slot, $postdata);
+    }
+
+    /**
+     * Test function preload all step users.
+     */
+    public function test_preload_all_step_users() {
+        $this->resetAfterTest();
+        $this->setAdminUser();
+        // Set up.
+        $quba = question_engine::make_questions_usage_by_activity('unit_test',
+                context_system::instance());
+
+        // Create an essay question in the DB.
+        $generator = $this->getDataGenerator()->get_plugin_generator('core_question');
+        $cat = $generator->create_question_category();
+        $essay = $generator->create_question('essay', 'editorfilepicker', ['category' => $cat->id]);
+
+        // Start attempt at the question.
+        $q = question_bank::load_question($essay->id);
+        $quba->set_preferred_behaviour('deferredfeedback');
+        $slot = $quba->add_question($q, 10);
+        $quba->start_question($slot, 1);
+
+        // Finish the attempt.
+        $quba->finish_all_questions();
+        question_engine::save_questions_usage_by_activity($quba);
+
+        // The user information of question attempt step should be loaded.
+        $quba->preload_all_step_users();
+        $qa = $quba->get_attempt_iterator()->current();
+        $steps = $qa->get_full_step_iterator();
+        $this->assertEquals('Admin User', $steps[0]->get_user_fullname());
     }
 }

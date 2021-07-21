@@ -517,6 +517,7 @@ class grade_report_user extends grade_report {
                 $gradeitemdata['itemmodule'] = $grade_object->itemmodule;
                 $gradeitemdata['iteminstance'] = $grade_object->iteminstance;
                 $gradeitemdata['itemnumber'] = $grade_object->itemnumber;
+                $gradeitemdata['idnumber'] = $grade_object->idnumber;
                 $gradeitemdata['categoryid'] = $grade_object->categoryid;
                 $gradeitemdata['outcomeid'] = $grade_object->outcomeid;
                 $gradeitemdata['scaleid'] = $grade_object->outcomeid;
@@ -1289,7 +1290,7 @@ function gradereport_user_myprofile_navigation(core_user\output\myprofile\tree $
         }
         if ($gradeaccess) {
             $url = new moodle_url('/course/user.php', array('mode' => 'grade', 'id' => $course->id, 'user' => $user->id));
-            $node = new core_user\output\myprofile\node('reports', 'grade', get_string('grade'), null, $url);
+            $node = new core_user\output\myprofile\node('reports', 'grade', get_string('grades'), null, $url);
             $tree->add_node($node);
         }
     }

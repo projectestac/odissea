@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus', language 'ar', version '3.8'.
+ * Strings for component 'antivirus', language 'ar', version '3.11'.
  *
  * @package     antivirus
  * @category    string
@@ -26,11 +26,40 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actantivirushdr'] = 'برامج مضادات الفيروسات المتاحة';
+$string['antiviruscommonsettings'] = 'الإعدادات الشائعة لمضاد الفيروسات';
 $string['antiviruses'] = 'برامج مضادات الفيروسات';
 $string['antivirussettings'] = 'إدارة برامج مضادات الفيروسات';
 $string['configantivirusplugins'] = 'الرجاء اختيار برامج مكافحة الفيروسات التي ترغب في استخدامها وترتيبها ليتم تطبيقها.';
+$string['datainfecteddesc'] = 'تم الكشف عن بيانات مصابة.';
+$string['datainfectedname'] = 'بيانات مصابة';
 $string['datastream'] = 'البيانات';
+$string['emailadditionalinfo'] = 'تفاصيل إضافية أعطاها محرك الفيروس:';
+$string['emailauthor'] = 'تم رفعه من قِبَل:';
+$string['emailcontenthash'] = 'الترميز الرقمي للمحتوى:';
+$string['emailcontenttype'] = 'نوع المحتوى:';
+$string['emaildate'] = 'تاريخ رفعه:';
+$string['emailfilename'] = 'اسم الملف:';
+$string['emailfilesize'] = 'حجم الملف:';
+$string['emailgeoinfo'] = 'الموقع الجغرافي:';
+$string['emailinfectedfiledetected'] = 'تم الكشف عن ملف مصاب';
+$string['emailipaddress'] = 'عنوان IP:';
+$string['emailreferer'] = 'المُحيل';
+$string['emailreport'] = 'التقرير:';
+$string['emailscanner'] = 'الماسح:';
+$string['emailscannererrordetected'] = 'وقع خطأ في الماسح';
 $string['emailsubject'] = '{$a}:: إشعار مضاد الفيروسات';
-$string['privacy:metadata'] = 'نظام مكافح الفيروسات لا يخزن أي بيانات شخصية.';
+$string['enablequarantine'] = 'تمكين الحجر';
+$string['enablequarantine_help'] = 'عند تمكين، سيتم الإبقاء على أي ملفات تُكتشف كفيروسات في مجلد الحجر ([dataroot]/{$a}) لأغراض الفحص اللاحق.
+الرفع إلى مودل سيعتبر فاشلاً. إذا كان لديك أي مضاد للفيروسات عاملاً على مستوى نظام الملفات، فمجلد الحجر ينبغي استثناؤه من جولات فحص ذلك البرنامج لتجنب قيامه بكشف تلك الملفات المحجورة من جانبه.';
+$string['fileinfecteddesc'] = 'تم الكشف عن ملف مصاب.';
+$string['fileinfectedname'] = 'الملف مصاب';
+$string['notifyemail'] = 'رسالة التنبيه بالبريد الالكتروني لمضاد الفيروسات';
+$string['notifyemail_help'] = 'عنوان البريد الالكتروني المطلوب إشعاره عند الكشف عن وجود فيروس. عند تركه فارغاً، سيتم الإشعار إلى كل مشرفي الموقع.';
+$string['privacy:metadata'] = 'نظام مضاد الفيروسات لا يخزن أي بيانات شخصية.';
+$string['quarantinedfiles'] = 'الملفات المحجورة لمضاد الفيروسات';
+$string['quarantinedisabled'] = 'تم تعطيل الحجر. لم يتم خزن الملف.';
+$string['quarantinetime'] = 'أقصى مدة للحجر';
+$string['quarantinetime_desc'] = 'ستتم إزالة الملفات المحجورة التي تزيد مدة حجرها عن الفترة المحددة.';
+$string['taskcleanup'] = 'إخلاء الملفات المحجورة.';
+$string['unknown'] = 'مجهول';
 $string['virusfound'] = 'تم فحص {$a->item} بواسطة مدقق الفيروسات ووجد مصاباً!';
-$string['virusfounduser'] = 'تم اكتشاف أن الملف الذي قمت بتحميله، {$a->filename}، يحتوي على فيروس! لذا لم يتم تحميل ملفك.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ko', version '3.8'.
+ * Strings for component 'tag', language 'ko', version '3.11'.
  *
  * @package     tag
  * @category    string
@@ -50,10 +50,12 @@ $string['flag'] = '표식';
 $string['flagasinappropriate'] = '부적절 표시';
 $string['helprelatedtags'] = '관련 태그를 컴마로 분리';
 $string['id'] = 'id';
+$string['itemstaggedwith'] = '{$a->tagarea}이 "{$a->tag}"와 태그됨';
 $string['managetags'] = '태그 관리';
 $string['name'] = '태그 명칭';
 $string['namesalreadybeeingused'] = '이미 있는 태그명칭';
 $string['noresultsfor'] = '"{$a}"에 대한 결과 없음';
+$string['notagsfound'] = '"{$a}"와 매칭되는 태그를 찾을 수 없습니다.';
 $string['owner'] = '소유자';
 $string['page-tag-index'] = '단일 태그 페이지';
 $string['page-tag-manage'] = '태그 페이지 관리';
@@ -75,6 +77,7 @@ $string['seeallblogs'] = '"{$a}" 태그를 사용한 모든 블로그 보기';
 $string['select'] = '선택';
 $string['tag'] = '태그';
 $string['tagarea_course'] = '강좌';
+$string['tagarea_post'] = '블로그 포스트';
 $string['tagdescription'] = '태그 설명';
 $string['tags'] = '태그';
 $string['tagsaredisabled'] = '태그를 사용할 수 없음';

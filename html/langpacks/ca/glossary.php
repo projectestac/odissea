@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'ca', version '3.8'.
+ * Strings for component 'glossary', language 'ca', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -255,6 +255,7 @@ $string['importedentries'] = 'Entrades importades';
 $string['importentries'] = 'Importa entrades';
 $string['importentriesfromxml'] = 'Importa entrades d\'un fitxer XML';
 $string['includegroupbreaks'] = 'Inclou marcador de grup';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Glossari en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament)';
 $string['isglobal'] = 'Aquest glossari és global?';
 $string['isglobal_help'] = 'Les entrades d\'un glossari global s\'enllacen des de tot el lloc, no sols des del curs al qual pertany el glossari. Només els administradors poden fer que un glossari sigui global.';
 $string['letter'] = 'lletra';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_manualgraded', language 'el', version '3.8'.
+ * Strings for component 'qbehaviour_manualgraded', language 'el', version '3.11'.
  *
  * @package     qbehaviour_manualgraded
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Βαθμολογείται μη-αυτόματα';
+$string['pluginname'] = 'Χειροκίνητης βαθμολόγησης';
 $string['privacy:metadata'] = 'Το πρόσθετο συμπεριφοράς ερώτησης «Χειροκίνητης βαθμολόγησης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

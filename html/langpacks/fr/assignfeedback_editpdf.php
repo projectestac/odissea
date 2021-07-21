@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_editpdf', language 'fr', version '3.8'.
+ * Strings for component 'assignfeedback_editpdf', language 'fr', version '3.11'.
  *
  * @package     assignfeedback_editpdf
  * @category    string
@@ -74,7 +74,7 @@ $string['oval'] = 'Ovale';
 $string['pagenumber'] = 'Page {$a}';
 $string['pagexofy'] = 'Page {$a->page} sur {$a->total}';
 $string['partialwarning'] = 'Certains des fichiers du travail remis ne peuvent être consultés qu\'après téléchargement direct.';
-$string['pathtogspathdesc'] = 'L\'annotation des PDF requiert la définition du chemin d\'accès à <i>ghostscript</i> dans {$a}.';
+$string['pathtogspathdesc'] = 'L\'annotation des PDF requiert la définition du chemin d\'accès à <em>ghostscript</em> dans {$a}.';
 $string['pen'] = 'Plume';
 $string['pluginname'] = 'Annotation PDF';
 $string['preparesubmissionsforannotation'] = 'Préparer les travaux remis pour annotation';
@@ -102,7 +102,7 @@ $string['test_isdir'] = 'Le chemin d\'accès à l\'exécutable GhostScript point
 $string['test_notestfile'] = 'Le PDF de test est manquant';
 $string['test_notexecutable'] = 'Le chemin d\'accès à l\'exécutable GhostScript pointe vers un fichier qui n\'est pas exécutable';
 $string['test_ok'] = 'Le chemin d\'accès à l\'exécutable GhostScript semble correct. Veuillez vérifier que vous voyez le message dans l\'image ci-dessous';
-$string['testgs'] = 'Tester le chemin d\'accès à <i>ghostscript</i>';
+$string['testgs'] = 'Tester le chemin d\'accès à <em>ghostscript</em>';
 $string['tool'] = 'Outil';
 $string['toolbarbutton'] = '{$a->tool} {$a->shortcut}';
 $string['viewfeedbackonline'] = 'Afficher le PDF annoté…';

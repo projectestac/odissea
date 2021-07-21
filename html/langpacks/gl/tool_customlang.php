@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_customlang', language 'gl', version '3.8'.
+ * Strings for component 'tool_customlang', language 'gl', version '3.11'.
  *
  * @package     tool_customlang
  * @category    string
@@ -29,7 +29,7 @@ $string['checkin'] = 'Gardar as cadeas no paquete de idioma';
 $string['checkout'] = 'Abrir o paquete de idioma para editalo';
 $string['checkoutdone'] = 'O paquete de idioma foi cargado';
 $string['checkoutinprogress'] = 'Cargando o paquete de idioma';
-$string['confirmcheckin'] = 'Está a piques de gardar modificacións ao seu paquete de idioma local. Este proceso exportará as cadeas de texto personalizadas desde o tradutor ata o directorio de datos e Moodle comezará a utilizar as cadeas modificadas. Prema o botón «Continuar» para comezar.';
+$string['confirmcheckin'] = 'Está a piques de gardar modificacións ao seu paquete de idioma local. Este proceso exportará as cadeas de texto personalizadas dende o tradutor ata o directorio de datos e Moodle comezará a utilizar as cadeas modificadas. Prema o botón «Continuar» para comezar.';
 $string['customlang:edit'] = 'Editar a tradución local';
 $string['customlang:view'] = 'Ver a tradución local';
 $string['filter'] = 'Filtrar cadeas';
@@ -50,11 +50,11 @@ $string['markuptodate'] = 'marcar como actualizada';
 $string['modifiedno'] = 'Non hai cadeas modificadas para gardar.';
 $string['modifiednum'] = 'Hai {$a} cadeas modificadas. Quere gardar estes cambios no seu paquete de idioma local?';
 $string['nostringsfound'] = 'Non se atoparon cadeas, modifique os axustes do filtro';
-$string['placeholder'] = 'Intraducíbeis';
-$string['placeholder_help'] = 'Os intraducíbeis son instrucións especiais, como «{$a}» ou «{$a->algo}» dentro dunha cadea de texto. Substitúense cun valor cando se imprime a cadea de texto.
+$string['placeholder'] = 'Marcadores de posición';
+$string['placeholder_help'] = 'Os marcadores de posición son instrucións especiais, como «{$a}» ou «{$a->algo}» dentro dunha cadea de texto. Substitúense cun valor cando se imprime a cadea de texto.
 
 É importante copialos exactamente igual a como están na cadea orixinal. NON OS TRADUZA NIN CAMBIE A SÚA ESTRUTURA INTERNA.';
-$string['placeholderwarning'] = 'cadeas contendo elementos intraducíbeis';
+$string['placeholderwarning'] = 'cadeas contendo marcadores de posición';
 $string['pluginname'] = 'Personalización do idioma';
 $string['privacy:metadata'] = 'O engadido de personalización do idioma non almacena ningún dato persoal.';
 $string['savecheckin'] = 'Gardar os cambio no paquete de idioma';

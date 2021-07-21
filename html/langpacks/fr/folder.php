@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'fr', version '3.8'.
+ * Strings for component 'folder', language 'fr', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -40,6 +40,8 @@ $string['folder:addinstance'] = 'Ajouter un dossier';
 $string['folder:managefiles'] = 'Gérer les fichiers dans le module dossier';
 $string['folder:view'] = 'Accéder au contenu des dossiers';
 $string['foldercontent'] = 'fichiers et sous-dossiers';
+$string['forcedownload'] = 'Imposer le téléchargement des fichiers';
+$string['forcedownload_help'] = 'Ce réglage détermine si certains fichiers, comme les images ou les fichiers HTML, doivent être affichés dans le navigateur au lieu d\'être téléchargés. Pour des raisons de sécurité, ce réglage ne doit être désactivé que si tous les utilisateurs qui ont les droits requis pour gérer les fichiers du dossier sont fiables.';
 $string['indicator:cognitivedepth'] = 'Dossier : aspect cognitif';
 $string['indicator:cognitivedepth_help'] = 'Cet indicateur est basé sur la profondeur cognitive atteinte par l\'étudiant dans une ressource Dossier.';
 $string['indicator:cognitivedepthdef'] = 'Dossier : aspect cognitif';

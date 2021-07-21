@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'eu', version '3.8'.
+ * Strings for component 'mnet', language 'eu', version '3.11'.
  *
  * @package     mnet
  * @category    string
@@ -77,7 +77,7 @@ $string['eventaccesscontrolupdated'] = 'Sarbide-kontrola eguneratu da';
 $string['expired'] = 'Gako hau ondoko datan iraungi zen:';
 $string['expires'] = 'Noiz arte indarrean';
 $string['expireyourkey'] = 'Ezabatu giltza hau';
-$string['expireyourkeyexplain'] = 'Moodle-k zure gakoak 28 egunean behin (modu lehenetsian) automatikoki biratzen ditu baina edozein unetan gako hau <em>eskuz</em> iraungi dezakezu. Hau soilik gakoa arriskuan egon bada izan daiteke erabilgarria. Ordezkoa automatikoki sortuko da.<br />Gakoa ezabatuta beste aplikazioek ez dute zurekin komunikatzeko aukera izango, zuk kudeatzaile bakoitzarekin eskuz harremanetan jarri eta zure gako berria helarazi ezean.';
+$string['expireyourkeyexplain'] = 'Moodlek zure gakoak 28 egunean behin (modu lehenetsian) automatikoki biratzen ditu baina edozein unetan gako hau <em>eskuz</em> iraungi dezakezu. Hau soilik gakoa arriskuan egon bada izan daiteke erabilgarria. Ordezkoa automatikoki sortuko da.<br />Gakoa ezabatuta beste aplikazioek ez dute zurekin komunikatzeko aukera izango, zuk kudeatzaile bakoitzarekin eskuz harremanetan jarri eta zure gako berria helarazi ezean.';
 $string['exportfields'] = 'Esportatzeko eremuak';
 $string['failedaclwrite'] = 'MNet sarbide-kontrolaren zerrenda \'{$a}\' erabiltzailea idazteak huts egin du.';
 $string['findlogin'] = 'Bilatu sarbidea';

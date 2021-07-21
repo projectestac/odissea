@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_noautolink', language 'ar', version '3.8'.
+ * Strings for component 'atto_noautolink', language 'ar', version '3.11'.
  *
  * @package     atto_noautolink
  * @category    string
@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'امنع الارتباط التلقائي';
-$string['privacy:metadata'] = 'البرنامج المساعد atto_noautolink لا يخزن أي بيانات شخصية.';
+$string['pluginname'] = 'مانع الارتباط التلقائي';
+$string['privacy:metadata'] = 'إن ملحق atto_noautolink لا يخزن أي بيانات شخصية.';

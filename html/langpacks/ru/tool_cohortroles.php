@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_cohortroles', language 'ru', version '3.8'.
+ * Strings for component 'tool_cohortroles', language 'ru', version '3.11'.
  *
  * @package     tool_cohortroles
  * @category    string
@@ -42,6 +42,8 @@ $string['privacy:metadata:tool_cohortroles'] = 'Плагин управлени�
 $string['privacy:metadata:tool_cohortroles:cohortid'] = 'ID глобальной группы';
 $string['privacy:metadata:tool_cohortroles:id'] = 'ID записи сопоставления ролей глобальной группы';
 $string['privacy:metadata:tool_cohortroles:roleid'] = 'ID роли';
+$string['privacy:metadata:tool_cohortroles:timecreated'] = 'Время создания сопоставления ролей глобальной группы';
+$string['privacy:metadata:tool_cohortroles:timemodified'] = 'Время изменения сопоставления ролей глобальной группы';
 $string['privacy:metadata:tool_cohortroles:userid'] = 'ID пользователя';
 $string['privacy:metadata:tool_cohortroles:usermodified'] = 'ID пользователя, который последним изменил сопоставление ролей глобальной группы';
 $string['removecohortroleassignment'] = 'Удалить назначение роли глобальной группе';

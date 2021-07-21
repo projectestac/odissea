@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_innodb', language 'sv', version '3.8'.
+ * Strings for component 'tool_innodb', language 'sv', version '3.11'.
  *
  * @package     tool_innodb
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Konvertera till InnoDB';
+$string['privacy:metadata'] = 'Pluginmodulen Konvertera till InnoDB lagrar inga personuppgifter.';

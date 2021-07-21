@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'ca', version '3.8'.
+ * Strings for component 'tool_usertours', language 'ca', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -64,12 +64,20 @@ $string['event_tour_ended'] = 'Visita guiada finalitzada';
 $string['event_tour_reset'] = 'Visita guiada restaurada';
 $string['event_tour_started'] = 'S\'ha iniciat la visita guiada';
 $string['exporttour'] = 'Exporta la visita guiada';
+$string['filter_accessdate'] = 'Data d\'accés';
+$string['filter_accessdate_enabled'] = 'Habilita el filtre de data d\'accés';
+$string['filter_accessdate_enabled_help'] = 'Mostra la visita guiada només als usuaris nous i als usuaris que han accedit al lloc recentment.';
 $string['filter_category'] = 'Categoria';
 $string['filter_category_help'] = 'Mostra la visita guiada en una pàgina associada a un curs de la categoria seleccionada.';
 $string['filter_course'] = 'Cursos';
 $string['filter_course_help'] = 'Mostra la visita guiada en una pàgina associada al curs seleccionat.';
 $string['filter_courseformat'] = 'Format de curs';
 $string['filter_courseformat_help'] = 'Mostra la visita guiada en una pàgina associada a un curs utilitzant el format de curs seleccionat.';
+$string['filter_cssselector'] = 'Selector CSS';
+$string['filter_cssselector_help'] = 'Mostra la visita guiada només quan s\'ha trobat el selector CSS especificat a la pàgina.';
+$string['filter_date_account_creation'] = 'Data de creació del compte de l\'usuari en els darrers';
+$string['filter_date_first_login'] = 'Data del primer accés de l\'usuari en els darrers';
+$string['filter_date_last_login'] = 'Data del darrer accés de l\'usuari en els darrers';
 $string['filter_header'] = 'Filtres de la visita guiada';
 $string['filter_help'] = 'Selecciona les condicions sota les quals es mostrarà la visita guiada. Cal que tots els filtres coincideixin amb una visita guiada per mostrar a un usuari.';
 $string['filter_role'] = 'Rol';
@@ -87,6 +95,7 @@ $string['name'] = 'Nom';
 $string['newstep'] = 'Pas nou';
 $string['newtour'] = 'Crea una visita guiada nova';
 $string['next'] = 'Següent';
+$string['nextstep'] = 'Següent';
 $string['options_heading'] = 'Opcions';
 $string['orphan'] = 'Mostra si no es troba la part de la pàgina associada amb el pas';
 $string['orphan_help'] = 'Es mostra el pas quan no es pugui trobar la part de la pàgina associada amb aquest pas.';
@@ -107,6 +116,7 @@ $string['placement_help'] = 'Un pas es pot posar a la part superior, inferior, e
 
 Si el pas no encaixa al lloc determinat d\'una pàgina concreta, es mostrarà de manera automàtica a una altra banda.';
 $string['pluginname'] = 'Visites guiades';
+$string['previousstep'] = 'Anterior';
 $string['privacy:metadata:preference:completed'] = 'El temps que un usuari tarda a completar una visita guiada d\'usuari.';
 $string['privacy:metadata:preference:requested'] = 'El temps que un usuari va demanar manualment per darrera vegada una visita guiada d\'usuari.';
 $string['privacy:request:preference:completed'] = 'Vau marcar la visita guiada d\'usuari "{$a->name}" com a completada l\'última vegada el {$a->time}';

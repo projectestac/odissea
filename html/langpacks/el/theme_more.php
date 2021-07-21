@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_more', language 'el', version '3.8'.
+ * Strings for component 'theme_more', language 'el', version '3.11'.
  *
  * @package     theme_more
  * @category    string

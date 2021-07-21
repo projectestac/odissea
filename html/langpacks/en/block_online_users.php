@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'en', version '3.8'.
+ * Strings for component 'block_online_users', language 'en', version '3.11'.
  *
  * @package     block_online_users
  * @category    string
@@ -36,6 +36,7 @@ $string['online_users:myaddinstance'] = 'Add a new online users block to Dashboa
 $string['online_users:viewlist'] = 'View list of online users';
 $string['onlinestatushiding'] = 'Online status hiding';
 $string['onlinestatushiding_desc'] = 'If enabled, users have the option to hide their online status from other users.';
+$string['otherusers'] = 'Other users ({$a})';
 $string['periodnminutes'] = 'last {$a} minutes';
 $string['pluginname'] = 'Online users';
 $string['privacy:metadata:preference:uservisibility'] = 'Online status visible to other users in the Online users block.';

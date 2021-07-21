@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'nl', version '3.8'.
+ * Strings for component 'repository_recent', language 'nl', version '3.11'.
  *
  * @package     repository_recent
  * @category    string
@@ -33,3 +33,5 @@ $string['pluginname_help'] = 'Bestanden, recent gebruikt door de huidige gebruik
 $string['privacy:metadata'] = 'De recente bestanden opslagruimte-plugin bewaart geen persoonlijke gegevens.';
 $string['recent:view'] = 'Bekijk de recente bestanden opslagruimte-plugin';
 $string['recentfilesnumber'] = 'Aantal te tonen recente bestanden';
+$string['timelimit'] = 'Tijdslimiet';
+$string['timelimit_help'] = 'Enkel bestanden ontvangen binnen de tijdslimiet';

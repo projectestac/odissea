@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'de', version '3.8'.
+ * Strings for component 'tool_uploaduser', language 'de', version '3.11'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -29,19 +29,30 @@ $string['allowdeletes'] = 'Löschen erlauben';
 $string['allowrenames'] = 'Umbenennen erlauben';
 $string['allowsuspends'] = 'Nutzersperrung und -aktivierung erlauben';
 $string['assignedsysrole'] = 'Zugewiesene Systemrolle \'{$a}\'';
+$string['clidefault'] = 'Standard:';
+$string['clierrorargument'] = 'Wert für Argument --{$a->name} ist ungültig. Zulässige Werte: {$a->values}';
+$string['clifile'] = 'Pfad zur CSV-Datei mit den Nutzerdaten. Erforderlich.';
+$string['clifilenotreadable'] = 'Die Datei {$a} existiert nicht oder ist nicht lesbar';
+$string['clihelp'] = 'Diese Hilfe ausgeben.';
+$string['climissingargument'] = 'Argument --{$a} ist erforderlich';
+$string['clititle'] = 'Command line Nutzerupload-Tool.';
+$string['clivalidationerror'] = 'Validierungsfehler:';
 $string['csvdelimiter'] = 'CSV Trennzeichen';
 $string['defaultvalues'] = 'Standardwerte';
 $string['deleteerrors'] = 'Fehler löschen';
 $string['encoding'] = 'Encoding';
 $string['errormnetadd'] = 'Remote-Nutzer/innen können nicht hinzugefügt werden';
+$string['errorprefix'] = 'Fehler:';
 $string['errors'] = 'Fehler';
 $string['examplecsv'] = 'Beispiel-Textdatei';
 $string['examplecsv_help'] = 'Um die Beispiel-Textdatei zu verwenden, laden Sie sie herunter und öffnen Sie sie dann mit einem Text- oder Tabellenkalkulationsprogramm. Lassen Sie die erste Zeile unverändert, bearbeiten Sie dann die folgenden Zeilen (Datensätze) und fügen Sie Ihre Nutzerdaten hinzu, indem Sie bei Bedarf weitere Zeilen hinzufügen. Speichern Sie die Datei im CSV-Format und laden Sie sie hoch.
 
 Die Beispiel-Textdatei kann auch zum Testen verwendet werden, da Sie eine Vorschau der Nutzerdaten erhalten und die Aktion abbrechen können, bevor Nutzerkonten erstellt werden.';
+$string['infoprefix'] = 'Info:';
 $string['invalidtheme'] = 'Das Design "{$a}" ist nicht installiert und wird ignoriert.';
 $string['invalidupdatetype'] = 'Diese Option kann mit dem ausgesuchten \'Upload Typ\' nicht ausgewählt werden.';
 $string['invaliduserdata'] = 'Für den Nutzer {$a} wurden ungültige Daten entdeckt und automatisch bereinigt.';
+$string['linex'] = 'Zeile {$a}';
 $string['nochanges'] = 'Keine Änderungen';
 $string['notheme'] = 'Für diese Person ist kein Design definiert.';
 $string['pluginname'] = 'Nutzerupload';
@@ -107,3 +118,4 @@ $string['uuupdatefromfile'] = 'Mit Dateiwerten überschreiben';
 $string['uuupdatemissing'] = 'Fehlendes aus Datei- und Standardwerten übernehmen';
 $string['uuupdatetype'] = 'Vorhandene Nutzerdetails';
 $string['uuusernametemplate'] = 'Vorlage für Anmeldenamen';
+$string['warningprefix'] = 'Warnung:';

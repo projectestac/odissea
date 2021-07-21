@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'eu', version '3.8'.
+ * Strings for component 'qtype_ddmarker', language 'eu', version '3.11'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -77,15 +77,18 @@ $string['nolabel'] = 'Ez dago testurik etiketan';
 $string['noofdrags'] = 'Kopurua';
 $string['pleasedragatleastonemarker'] = 'Zure erantzuna osatu gabe dago; gutxienez markatzaile bat eraman behar duzu irudira.';
 $string['pluginname'] = 'Hartu eta eraman markatzaileak';
-$string['pluginname_help'] = 'Hartu eta eraman markatzaileak motako galderek ikasleei testu-etiketak hartu eta irudi batean zehaztutako eramateko tokietara eramatea eskatzen diete.';
+$string['pluginname_help'] = 'Hartu eta eraman markatzaileak motako galderek ikasleei testu-etiketak hartu eta atzeko planoko irudi batean zehaztutako eramateko tokietara eramatea eskatzen diete.';
 $string['pluginnameadding'] = 'Hartu eta eraman markatzaileak motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman markatzaileak motako galdera editatzen';
 $string['pluginnamesummary'] = 'Markatzaileak hartu eta eraman dira atzeko planoko irudira.
 
 Oharra: Galdera-mota hau ez dago ikuspen urritasuna duten erabiltzaileentzako eskuragarri.';
 $string['previewareaheader'] = 'Aurrebista';
-$string['previewareamessage'] = 'Aukeratu atzeko planoaren irudia, zehaztu markatzaileen testu-etiketak eta zehaztu testu-etiketa hauek irudiaren gainean kokatzeko eramateko tokiak.';
-$string['privacy:metadata'] = 'Hartu eta eraman markatzaileak galdera mota pluginak ez du datu pertsonalik biltzen.';
+$string['previewareamessage'] = 'Aukeratu atzeko planoko irudia, zehaztu markatzaileen testu-etiketak eta zehaztu testu-etiketa hauek irudiaren gainean kokatzeko eramateko tokiak.';
+$string['privacy:metadata'] = 'Hartu eta eraman markatzaileak galdera mota pluginak egileari aukera lehenetsiak erabiltzaile hobespen gisa gordetzea baimentzen dio.';
+$string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
+$string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
+$string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu behar diren edo ez.';
 $string['refresh'] = 'Freskatu aurrebista';
 $string['shape'] = 'Forma';
 $string['shape_circle'] = 'Zirkulua';

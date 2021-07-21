@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'zh_cn', version '3.8'.
+ * Strings for component 'badges', language 'zh_cn', version '3.11'.
  *
  * @package     badges
  * @category    string
@@ -83,10 +83,10 @@ $string['awards'] = '获得人';
 $string['backpackapiurl'] = '背包API URL';
 $string['backpackavailability'] = '外部勋章验证';
 $string['backpackavailability_help'] = '为了让勋章获得者能够证明他们从您这里获得了他们的勋章，外部的背包服务应该能够访问您的站点并验证从它那里颁发的勋章。您的网站目前似乎无法访问，这意味着您已经颁发或将在未来颁发的勋章无法验证。我为什么看到这个信息?**可能是您的防火墙阻止网络外的用户访问您的站点，您的站点受密码保护，或者您在Internet上无法访问的计算机(例如本地开发机器)上运行该站点。这有问题吗?**您应该修正这个问题，在任何您打算颁发勋章的网站上，否则勋章获得者将无法证明他们从您那里获得了他们的勋章。如果您的网站还没有上线，您可以创建并发布测试勋章，只要在上线之前该站点是可访问的。**如果我无法让我的整个站点被公开访问，该怎么办？**验证所需的唯一URL是[your-site-url]/badges/assertion.php，因此如果您能够修改防火墙以允许外部访问该文件，那么勋章验证仍然有效。';
-$string['backpackbadges'] = '您有{$a->totalbadges}从{$a->totalcollections} 集合中显示的勋章。< a href = " mybackpack.php " >更改背包设置</a>。';
 $string['backpackbadgessettings'] = '更改背包设置';
 $string['backpackbadgessummary'] = '您有 {$a->totalbadges}从{$a->totalcollections}集合中显示的勋章。';
 $string['backpackcannotsendverification'] = '无法发送验证邮件';
+$string['backpackconnected'] = '背包已连接';
 $string['backpackconnection'] = '背包连接';
 $string['backpackconnection_help'] = '本页允许你设置一个访问外部背包服务的链接。背包链接让你显示外部勋章到自己的站点，也可以推送本地获得的勋章到你的外部背包。
 
@@ -99,6 +99,7 @@ $string['backpackconnectionresendemail'] = '重发验证邮件';
 $string['backpackconnectionunexpectedmessage'] = '背包返回错误："{$a}"。';
 $string['backpackconnectionunexpectedresult'] = '连接背包出现问题。请再次尝试。<br><br>如果该问题继续发生，请联系管理员。';
 $string['backpackdetails'] = '背包设置';
+$string['backpackdisconnected'] = '背包已断开连接';
 $string['backpackemail'] = '电子邮件地址';
 $string['backpackemail_help'] = '与您的背包相关的电子邮件地址。当您被连接，任何在本网站获得的勋章将与此电子邮件地址相关联。';
 $string['backpackemailverificationpending'] = '验证等待中';
@@ -108,6 +109,7 @@ $string['backpackemailverifyemailsubject'] = '{$a}：勋章背包邮件验证';
 $string['backpackemailverifypending'] = '一封验证邮件已经发送到<strong>{$a}</strong>。点击邮件中的验证连接来激活您的背包连接。';
 $string['backpackemailverifysuccess'] = '感谢您的邮箱验证。您现在已经连接到了您的背包。';
 $string['backpackemailverifytokenmismatch'] = '您单击的链接中的令牌与存储的令牌不匹配。确保您在最近收到的邮件中点击了链接。';
+$string['backpackexporterror'] = '无法将勋章导出到背包';
 $string['backpackimport'] = '勋章导入设置';
 $string['backpackimport_help'] = '成功建立背包连接后，来自背包的勋章可以显示在勋章页面和个人档案页面上。在这个区域，您可以从您的背包中选择您想要显示在您的个人档案中的勋章集合。';
 $string['backpackneedsupdate'] = '连接到此个人档案的背包与该站点的背包不匹配。您需要断开并重新连接背包。';
@@ -192,7 +194,7 @@ $string['criteria_descr_2'] = '此勋章必须由以下角色<strong>{$a}</stron
 $string['criteria_descr_4'] = '用户必须完成课程';
 $string['criteria_descr_5'] = '<strong>{$a}</strong>以下课程必须完成：';
 $string['criteria_descr_6'] = '<strong>{$a}</strong>必须填写以下用户个人档案字段：';
-$string['criteria_descr_7'] = '<strong>{$a}</strong>必须获得下列勋章：';
+$string['criteria_descr_7'] = '<strong>{$a}</strong>必须获得下列徽章:';
 $string['criteria_descr_8'] = '<strong>{$a}</strong>需要下列群组的成员：';
 $string['criteria_descr_9'] = '<strong>{$a}</strong>必须完成下列能力：';
 $string['criteria_descr_bydate'] = '由<em>{$a}</em>';
@@ -245,6 +247,7 @@ $string['delbadge'] = '您是否要删除勋章“{$a}”并删除所有已颁�
 $string['delconfirm'] = '删除和删除已颁发的勋章';
 $string['delcritconfirm'] = '您确定需要删除这条授勋规则吗？';
 $string['deletehelp'] = '完全删除一个勋章意味着它的所有信息和规则记录将被永久删除。获得此勋章的用户将不再能够访问它并在其个人档案页面上显示它。注：已获得此勋章并已将其推入外置背包的用户，其外置背包内仍有此勋章。然而，他们将无法访问规则和证书页面链接回本网站。';
+$string['delexternalbackpack'] = '删除网站背包';
 $string['delexternalbackpackconfirm'] = '删除网站背包”{$a}“吗?';
 $string['delparamconfirm'] = '您确定要删除此参数？';
 $string['description'] = '描述';
@@ -268,7 +271,6 @@ $string['error:connectionunknownreason'] = '连接不成功，但没有给出原
 $string['error:duplicatename'] = '系统中已经存在具有此类名称的勋章。';
 $string['error:externalbadgedoesntexist'] = '‎未找到勋章';
 $string['error:guestuseraccess'] = '您当前正在使用访客访问。要查看勋章，您需要登录您的帐户。';
-$string['error:invalidbadgeurl'] = '无效的授勋机构 URL格式。URL应该有一个前缀http://或https://。';
 $string['error:invalidcriteriatype'] = '无效的规则类型。';
 $string['error:invalidexpiredate'] = '‎到期日期必须在未来。';
 $string['error:invalidexpireperiod'] = '有效期不能为负或等于0。';
@@ -278,8 +280,7 @@ $string['error:noactivities'] = '本课程没有启用进度规则的活动。';
 $string['error:nobadges'] = '没有允许将访问权限添加为规则的课程或站点勋章。';
 $string['error:nocohorts'] = '无群组';
 $string['error:nocourses'] = '当前站点所有课程均未启用进度跟踪，故没能显示。课程进度跟踪特性可以在课程设置里面启用。';
-$string['error:nogroups'] = '<p>在您的背包里没有公开收集的勋章。</p><p>只显示公开集合。 <a href="https://backpack.openbadges.org">访问您的背包</a>创建一些公开集合。</p>';
-$string['error:nogroupslink'] = '<p>只显示公开集合。<a href="{$a}" target="_blank" rel="nofollow">访问您的背包</a>创建一些公开集合。</p>';
+$string['error:nogroupslink'] = '<p>只显示公共集合。<a href="{$a}" target="_blank" rel="nofollow">访问您的背包</a>创建一些公开集合。</p>';
 $string['error:nogroupssummary'] = '<p>您的背包里没有可用的公共集合的勋章。</p>';
 $string['error:nopermissiontoview'] = '您没有查看勋章获得者的权限';
 $string['error:nosuchbadge'] = '勋章ID: {$a} 不存在';
@@ -370,14 +371,13 @@ $string['month'] = '月';
 $string['mybackpack'] = '我的背包设置';
 $string['mybadges'] = '我的勋章';
 $string['never'] = '从不';
+$string['newbackpack'] = '添加一个新背包';
 $string['newbadge'] = '添加一个新勋章';
 $string['newimage'] = '新图片';
 $string['noalignment'] = '此勋章没有指定任何外部技能或标准。';
 $string['noawards'] = '还没有人获得此勋章。';
 $string['nobackpack'] = '没有背包服务连接到这个帐户。<br />';
-$string['nobackpackbadges'] = '您选择的集合中没有勋章。<a href="mybackpack.php">添加更多的集合</a>。';
 $string['nobackpackbadgessummary'] = '您选择的集合中没有勋章。';
-$string['nobackpackcollections'] = '没有勋章集合被选择。<a href="mybackpack.php">添加集合</a>。';
 $string['nobackpackcollectionssummary'] = '没有选择勋章集合。';
 $string['nobackpacks'] = '没有可用的背包';
 $string['nobadges'] = '没有可用的勋章。';
@@ -414,8 +414,10 @@ $string['notifymonthly'] = '每月';
 $string['notifyweekly'] = '每周';
 $string['numawards'] = '此勋章已经颁发给 <a href="{$a->link}">{$a->count}</a> 用户。';
 $string['numawardstat'] = '此勋章已经颁发给{$a}用户。';
+$string['oauth2issuer'] = 'OAuth 2 服务';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
+$string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['overallcrit'] = '所选规则中的一个是完整的。';
 $string['potentialrecipients'] = '潜在的勋章获得者';
 $string['preferences'] = '勋章偏好';
@@ -424,6 +426,12 @@ $string['privacy:metadata:backpack:backpackuid'] = '背包唯一标识符';
 $string['privacy:metadata:backpack:email'] = '与背包关联的电子邮件';
 $string['privacy:metadata:backpack:externalbackpackid'] = '背包的ID';
 $string['privacy:metadata:backpack:userid'] = '背包所在用户的ID';
+$string['privacy:metadata:backpackoauth2'] = '当用户连接到外部背包时，OAuth 2 信息';
+$string['privacy:metadata:backpackoauth2:issuerid'] = 'OAuth 2 服务 ID';
+$string['privacy:metadata:backpackoauth2:scope'] = '背包连接列表范围';
+$string['privacy:metadata:backpackoauth2:token'] = '背包连接令牌';
+$string['privacy:metadata:backpackoauth2:userid'] = '连接到背包的用户的 ID';
+$string['privacy:metadata:backpackoauth2:usermodified'] = '修改连接的用户的 ID';
 $string['privacy:metadata:badge'] = '勋章集合';
 $string['privacy:metadata:badge:timecreated'] = '创建勋章的时间';
 $string['privacy:metadata:badge:timemodified'] = '上次修改勋章的时间';
@@ -469,6 +477,8 @@ $string['selecting'] = '选定的勋章…';
 $string['setup'] = '建立连接';
 $string['sitebackpack'] = '可用的外部背包';
 $string['sitebackpack_help'] = '用户可以从这个网站连接到的外部背包。请注意，在用户连接背包后更改此设置将要求每个用户进入背包设置页面，断开连接然后重新连接。';
+$string['sitebackpackdeleted'] = '网站背包已被删除。';
+$string['sitebackpacknotdeleted'] = '无法删除此背包，因为它当前是站点默认值。';
 $string['sitebackpackverify'] = '背包连接';
 $string['sitebackpackwarning'] = '无法连接到背包。<br/><br/>检查“勋章发行者电子邮件地址”管理设置是否为背包网站账户的有效电子邮件。<br/><br/>在 <a href="{$a->url}">站点背包设置页面</a>检查 "勋章发行人密码", 背包网站上的账号密码是否正确.。<br/><br/>背包返回："{$a->warning}"';
 $string['sitebadges'] = '站点勋章';

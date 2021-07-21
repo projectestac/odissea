@@ -50,7 +50,7 @@ class mod_choice_renderer extends plugin_renderer_base {
         $choicecount = 0;
         foreach ($options['options'] as $option) {
             $choicecount++;
-            $html .= html_writer::start_tag('li', array('class'=>'option'));
+            $html .= html_writer::start_tag('li', array('class' => 'option mr-3'));
             if ($multiple) {
                 $option->attributes->name = 'answer[]';
                 $option->attributes->type = 'checkbox';
@@ -65,6 +65,13 @@ class mod_choice_renderer extends plugin_renderer_base {
             if (!empty($option->attributes->disabled)) {
                 $labeltext .= ' ' . get_string('full', 'choice');
                 $availableoption--;
+            }
+
+            if (!empty($options['limitanswers']) && !empty($options['showavailable'])) {
+                $labeltext .= html_writer::empty_tag('br');
+                $labeltext .= get_string("responsesa", "choice", $option->countanswers);
+                $labeltext .= html_writer::empty_tag('br');
+                $labeltext .= get_string("limita", "choice", $option->maxanswers);
             }
 
             $html .= html_writer::empty_tag('input', (array)$option->attributes + $disabled);
@@ -129,16 +136,14 @@ class mod_choice_renderer extends plugin_renderer_base {
     /**
      * Returns HTML to display choices result
      * @param object $choices
-     * @param bool $forcepublish
      * @return string
      */
     public function display_publish_name_vertical($choices) {
-        global $PAGE, $OUTPUT;
         $html ='';
         $html .= html_writer::tag('h3',format_string(get_string("responses", "choice")));
 
         $attributes = array('method'=>'POST');
-        $attributes['action'] = new moodle_url($PAGE->url);
+        $attributes['action'] = new moodle_url($this->page->url);
         $attributes['id'] = 'attemptsform';
 
         if ($choices->viewresponsecapability) {
@@ -184,6 +189,11 @@ class mod_choice_renderer extends plugin_renderer_base {
                 $headertitle = get_string('notanswered', 'choice');
             } else if ($optionid > 0) {
                 $headertitle = format_string($choices->options[$optionid]->text);
+                if (!empty($choices->options[$optionid]->user) && count($choices->options[$optionid]->user) > 0) {
+                    if ((count($choices->options[$optionid]->user)) == ($choices->options[$optionid]->maxanswer)) {
+                        $headertitle .= ' ' . get_string('full', 'choice');
+                    }
+                }
             }
             $celltext = $headertitle;
 
@@ -205,13 +215,16 @@ class mod_choice_renderer extends plugin_renderer_base {
                     'labelclasses' => 'accesshide',
                 ]);
 
-                $celltext .= html_writer::div($OUTPUT->render($mastercheckbox));
+                $celltext .= html_writer::div($this->output->render($mastercheckbox));
             }
             $numberofuser = 0;
             if (!empty($options->user) && count($options->user) > 0) {
                 $numberofuser = count($options->user);
             }
-
+            if (($choices->limitanswers) && ($choices->showavailable)) {
+                $numberofuser .= html_writer::empty_tag('br');
+                $numberofuser .= get_string("limita", "choice", $options->maxanswer);
+            }
             $celloption->text = html_writer::div($celltext, 'text-center');
             $optionsnames[$optionid] = $celltext;
             $cellusernumber->text = html_writer::div($numberofuser, 'text-center');
@@ -267,7 +280,7 @@ class mod_choice_renderer extends plugin_renderer_base {
                                 'label' => $userfullname . ' ' . $options->text,
                                 'labelclasses' => 'accesshide',
                             ]);
-                            $checkbox = $OUTPUT->render($slavecheckbox);
+                            $checkbox = $this->output->render($slavecheckbox);
                         }
                         $userimage = $this->output->user_picture($user, array('courseid' => $choices->courseid, 'link' => false));
                         $profileurl = new moodle_url('/user/view.php', array('id' => $user->id, 'course' => $choices->courseid));
@@ -299,9 +312,10 @@ class mod_choice_renderer extends plugin_renderer_base {
                 'label' => get_string('selectall'),
                 'classes' => 'btn-secondary mr-1'
             ], true);
-            $actiondata .= $OUTPUT->render($selectallcheckbox);
+            $actiondata .= $this->output->render($selectallcheckbox);
 
-            $actionurl = new moodle_url($PAGE->url, array('sesskey'=>sesskey(), 'action'=>'delete_confirmation()'));
+            $actionurl = new moodle_url($this->page->url,
+                    ['sesskey' => sesskey(), 'action' => 'delete_confirmation()']);
             $actionoptions = array('delete' => get_string('delete'));
             foreach ($choices->options as $optionid => $option) {
                 if ($optionid > 0) {
@@ -338,7 +352,6 @@ class mod_choice_renderer extends plugin_renderer_base {
      * @return string
      */
     public function display_publish_anonymous_horizontal($choices) {
-        global $CHOICE_COLUMN_HEIGHT;
         debugging(__FUNCTION__.'() is deprecated. Please use mod_choice_renderer::display_publish_anonymous() instead.',
                 DEBUG_DEVELOPER);
         return $this->display_publish_anonymous($choices, CHOICE_DISPLAY_VERTICAL);
@@ -351,7 +364,6 @@ class mod_choice_renderer extends plugin_renderer_base {
      * @return string
      */
     public function display_publish_anonymous_vertical($choices) {
-        global $CHOICE_COLUMN_WIDTH;
         debugging(__FUNCTION__.'() is deprecated. Please use mod_choice_renderer::display_publish_anonymous() instead.',
                 DEBUG_DEVELOPER);
         return $this->display_publish_anonymous($choices, CHOICE_DISPLAY_HORIZONTAL);
@@ -367,7 +379,6 @@ class mod_choice_renderer extends plugin_renderer_base {
      * @return string the rendered chart.
      */
     public function display_publish_anonymous($choices, $displaylayout) {
-        global $OUTPUT;
         $count = 0;
         $data = [];
         $numberofuser = 0;
@@ -396,7 +407,7 @@ class mod_choice_renderer extends plugin_renderer_base {
         $chart->set_labels($data['labels']);
         $yaxis = $chart->get_yaxis(0, true);
         $yaxis->set_stepsize(max(1, round(max($data['series']) / 10)));
-        return $OUTPUT->render($chart);
+        return $this->output->render($chart);
     }
 }
 

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'pt', version '3.8'.
+ * Strings for component 'calendar', language 'pt', version '3.11'.
  *
  * @package     calendar
  * @category    string
@@ -143,6 +143,7 @@ $string['eventtypecourse'] = 'da disciplina';
 $string['eventtypeglobal'] = 'globais';
 $string['eventtypegroup'] = 'do grupo';
 $string['eventtypemodule'] = 'do módulo';
+$string['eventtypeother'] = 'outro';
 $string['eventtypesite'] = 'site';
 $string['eventtypeuser'] = 'do utilizador';
 $string['eventview'] = 'Detalhes do evento';
@@ -210,10 +211,10 @@ $string['preferences'] = 'Preferências';
 $string['preferences_available'] = 'As suas preferências pessoais';
 $string['preferredcalendar'] = 'Calendário preferido';
 $string['privacy:metadata:calendar:event'] = 'A componente calendário pode armazenar detalhes de eventos do utilizador no subsistema principal.';
-$string['privacy:metadata:calendar:event:description'] = 'A descrição do evento.';
-$string['privacy:metadata:calendar:event:eventtype'] = 'O tipo de evento.';
-$string['privacy:metadata:calendar:event:name'] = 'O nome do evento.';
-$string['privacy:metadata:calendar:event:timeduration'] = 'A duração do evento.';
+$string['privacy:metadata:calendar:event:description'] = 'A descrição do evento de calendário.';
+$string['privacy:metadata:calendar:event:eventtype'] = 'O tipo de evento de calendário.';
+$string['privacy:metadata:calendar:event:name'] = 'O nome do evento de calendário.';
+$string['privacy:metadata:calendar:event:timeduration'] = 'A duração do evento de calendário.';
 $string['privacy:metadata:calendar:event:timestart'] = 'A data e hora de início do evento.';
 $string['privacy:metadata:calendar:event_subscriptions'] = 'A componente calendário pode armazenar detalhes de subscrições de calendário do utilizador no subsistema principal.';
 $string['privacy:metadata:calendar:event_subscriptions:eventtype'] = 'O tipo de evento da subscrição do calendário.';

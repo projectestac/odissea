@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'gl', version '3.8'.
+ * Strings for component 'quiz_grading', language 'gl', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(cualificado)';
 $string['gradenextungraded'] = 'Cualificar o(s) seguinte(s) {$a} intento(s) sen cualificar';
 $string['gradeungraded'] = 'Cualificar todos os {$a} intentos sen cualificar';
 $string['grading'] = 'Cualificación manual';
-$string['grading:componentname'] = 'Informe da cualificación manual';
 $string['grading:viewidnumber'] = 'Ver os números ID dos alumnos mentres son cualificados';
 $string['grading:viewstudentnames'] = 'Ver os nomes dos alumnos mentres son cualificados';
 $string['gradingall'] = 'Todos {$a} os intentos nesta pregunta.';
@@ -57,7 +56,7 @@ $string['gradingattempt'] = 'Intento número {$a->attempt} de {$a->fullname}';
 $string['gradingattemptsxtoyofz'] = 'Cualificación de intentos de {$a->from} a {$a->to} de {$a->of}';
 $string['gradingattemptwithidnumber'] = 'Intento número {$a->attempt} de {$a->fullname} ({$a->idnumber})';
 $string['gradingnextungraded'] = 'Seguinte(s) {$a} intentos sen cualificar';
-$string['gradingnotallowed'] = 'Non ten permiso para cualificar manualmente as respostas neste exame';
+$string['gradingnotallowed'] = 'Non ten permiso para cualificar manualmente as respostas nesta proba';
 $string['gradingquestionx'] = 'Cualificando a pregunta {$a->number}: {$a->questionname}';
 $string['gradingreport'] = 'Informe de cualificación manual';
 $string['gradingungraded'] = '{$a} intentos sen cualificar';
@@ -71,7 +70,6 @@ $string['nothingfound'] = 'Nada para presentar';
 $string['options'] = 'Opcións';
 $string['orderattempts'] = 'Ordenar intentos';
 $string['pluginname'] = 'Cualificación manual';
-$string['privacy:metadata'] = 'O engadido de cualificación manual de proba non almacena ningún dato persoal. Proporciona unha interface para que os usuarios almacenen datos sen almacenar datos.';
 $string['qno'] = 'Q núm.';
 $string['questionname'] = 'Nome da pregunta';
 $string['questionsperpage'] = 'Preguntas por páxina';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'competency', language 'ar', version '3.8'.
+ * Strings for component 'competency', language 'ar', version '3.11'.
  *
  * @package     competency
  * @category    string
@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allchildrenarecomplete'] = 'كل الفروع قد اكتملت';
-$string['competencies'] = 'الكفايات';
+$string['competencies'] = 'الكفاءات';
 $string['competenciesarenotenabled'] = 'الكفاءات معطلة.';
-$string['competenciessettings'] = 'إعدادات الكفايات';
+$string['competenciessettings'] = 'إعدادات الكفاءات';
 $string['completeplanstask'] = 'إكمال خطط التعلم المستحقة';
 $string['coursecompetencyoutcome_complete'] = 'أكمل الكفاءة';
 $string['coursecompetencyoutcome_evidence'] = 'إرفق دليلاً';
@@ -199,6 +199,6 @@ $string['usercommentedonaplanhtml'] = '<p>{$a->fullname} أعطى تعليقاً
 $string['usercommentedonaplansmall'] = '{$a->fullname} أعطى تعليقاً عن خطة التعلم "{$a->plan}".';
 $string['usercommentedonaplansubject'] = '{$a} أعطى تعليقاً عن خطة تعلم.';
 $string['usercompetencystatus_idle'] = 'خاملة';
-$string['usercompetencystatus_inreview'] = 'في المراجعة';
-$string['usercompetencystatus_waitingforreview'] = 'في انتظار المراجعة';
+$string['usercompetencystatus_inreview'] = 'قيد التقييم';
+$string['usercompetencystatus_waitingforreview'] = 'بانتظار التقييم';
 $string['userplans'] = 'خطط التعلم';

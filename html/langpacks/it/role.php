@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'it', version '3.8'.
+ * Strings for component 'role', language 'it', version '3.11'.
  *
  * @package     role
  * @category    string
@@ -104,7 +104,7 @@ $string['category:create'] = 'Creare categorie';
 $string['category:delete'] = 'Eliminare categorie';
 $string['category:manage'] = 'Gestire categorie';
 $string['category:update'] = 'Modificare categorie';
-$string['category:viewcourselist'] = 'Visualizzare elenco dei corsi dove l\'utente non è iscirtto';
+$string['category:viewcourselist'] = 'Visualizzare categorie di corsi e i corsi';
 $string['category:viewhiddencategories'] = 'Visualizzare categorie nascoste';
 $string['category:visibility'] = 'Visualizzare categorie nascoste';
 $string['checkglobalpermissions'] = 'Verifica autorizzazioni';
@@ -159,6 +159,15 @@ $string['confirmunassign'] = 'Sei sicuro di togliere questo ruolo all\'utente?';
 $string['confirmunassignno'] = 'Annulla';
 $string['confirmunassigntitle'] = 'Conferma cambiamento di ruolo';
 $string['confirmunassignyes'] = 'Rimuovi';
+$string['contentbank:access'] = 'Accedere al deposito dei contenuti';
+$string['contentbank:deleteanycontent'] = 'Eliminare qualsiasi contenuto dal deposito dei contenuti';
+$string['contentbank:deleteowncontent'] = 'Eliminare propri contenuti dal deposito dei contenuti';
+$string['contentbank:downloadcontent'] = 'Scaricare contenuti dal deposito dei contenuti';
+$string['contentbank:manageanycontent'] = 'Gestire contenuti nel deposito';
+$string['contentbank:manageowncontent'] = 'Gestire contenuti nel proprio deposito';
+$string['contentbank:upload'] = 'Caricare contenuti nel deposito';
+$string['contentbank:useeditor'] = 'Creare o modificare contenuti con un editor di tipi di contenuti';
+$string['contentbank:viewunlistedcontent'] = 'Visualizzare contenuti non elencati nel deposito dei contenuti';
 $string['context'] = 'Contesto';
 $string['course:activityvisibility'] = 'Nascondere/visualizzare attività';
 $string['course:bulkmessaging'] = 'Inviare un messaggio a più persone';
@@ -169,9 +178,11 @@ $string['course:changelockedcustomfields'] = 'Modificare campi personalizzati bl
 $string['course:changeshortname'] = 'Modificare il titolo abbreviato del corso';
 $string['course:changesummary'] = 'Modificare l\'introduzione al corso';
 $string['course:configurecustomfields'] = 'Configurare campi personalizzati';
+$string['course:configuredownloadcontent'] = 'Configurare scaricamento dei contenuti dei corso';
 $string['course:create'] = 'Creare corsi';
 $string['course:creategroupconversations'] = 'Creare conversazioni di gruppo';
 $string['course:delete'] = 'Eliminare corsi';
+$string['course:downloadcoursecontent'] = 'Scaricare contenuti dei corsi';
 $string['course:enrolconfig'] = 'Configurare istanze di plugin di iscrizione nei corsi';
 $string['course:enrolreview'] = 'Rivedere le iscrizioni al corso';
 $string['course:ignoreavailabilityrestrictions'] = 'Ignorare disponibilità condizionata';
@@ -185,6 +196,7 @@ $string['course:managescales'] = 'Gestire scale di valutazione';
 $string['course:markcomplete'] = 'Approvare manualmente il completamento del corso';
 $string['course:movesections'] = 'Spostare sezioni';
 $string['course:overridecompletion'] = 'Modificare lo stato di completamento delle attività';
+$string['course:recommendactivity'] = 'Suggerire attività nel selettore attività';
 $string['course:renameroles'] = 'Personalizzare nomi dei ruoli';
 $string['course:request'] = 'Richiedere corsi';
 $string['course:reset'] = 'Eseguire reset del corso';
@@ -324,6 +336,8 @@ $string['overrideroles'] = 'Modifica ruoli';
 $string['overriderolesin'] = 'Modifica ruoli in {$a}';
 $string['overrides'] = 'Modifiche';
 $string['overridesbycontext'] = 'Modifiche (per contesto)';
+$string['payment:manageaccounts'] = 'Gestire account';
+$string['payment:viewpayments'] = 'Visualizzare pagamenti';
 $string['permission'] = 'Autorizzazione';
 $string['permission_help'] = 'I privilegi hanno 4 opzioni disponibili:
 
@@ -440,9 +454,11 @@ $string['site:mnetloginfromremote'] = 'Effettuare login da un Moodle remoto';
 $string['site:mnetlogintoremote'] = 'Roaming verso un\'applicazione remota tramite MNet';
 $string['site:readallmessages'] = 'Leggere qualsiasi messaggio sul sito';
 $string['site:restore'] = 'Ripristinare corsi';
+$string['site:senderrormessage'] = 'Inviare messaggi al supporto dalle pagine di errore';
 $string['site:sendmessage'] = 'Inviare messaggi a qualsiasi utente';
 $string['site:trustcontent'] = 'Fidarsi dei contenuti inviati';
 $string['site:uploadusers'] = 'Caricare nuovi utenti da file';
+$string['site:viewanonymousevents'] = 'Visualizzare nel report eventi anonimi';
 $string['site:viewfullnames'] = 'Visualizzare sempre nome e cognome degli utenti';
 $string['site:viewparticipants'] = 'Visualizzare i partecipanti';
 $string['site:viewreports'] = 'Visualizzare i report';

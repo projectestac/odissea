@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'license', language 'el', version '3.8'.
+ * Strings for component 'license', language 'el', version '3.11'.
  *
  * @package     license
  * @category    string
@@ -26,11 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allrightsreserved'] = 'Με επιφύλαξη παντός δικαιώματος';
+$string['cannotdeletecore'] = 'Αδυναμία διαγραφής μιας τυπικής άδειας';
+$string['cannotdeletelicenseinuse'] = 'Αδυναμία διαγραφής μιας άδειας που είναι εκχωρημένη αυτή τη στιγμή σε ένα ή περισσότερα αρχεία';
 $string['cc'] = 'Creative Commons';
 $string['cc-nc'] = 'Creative Commons - Μη Εμπορική Χρήση';
 $string['cc-nc-nd'] = 'Creative Commons - Μη Εμπορική Χρήση - Όχι Παράγωγα Έργα';
 $string['cc-nc-sa'] = 'Creative Commons - Μη Εμπορική Χρήση - Παρόμοια Διανομή';
 $string['cc-nd'] = 'Creative Commons - Όχι Παράγωγα Έργα';
 $string['cc-sa'] = 'Creative Commons - Παρόμοια Διανομή';
+$string['licensenotfoundshortname'] = 'Αδυναμία εύρεσης άδειας χρήσης με το σύντομο όνομα «{$a}»';
+$string['missinglicensesortorder'] = 'Αδυναμία ορισμού σειράς αδειών. Μία ή περισσότερες εγκατεστημένες άδειες λείπουν από την νέα σειρά';
 $string['public'] = 'Κοινό Κτήμα (Public domain)';
-$string['unknown'] = 'Άλλο';
+$string['unknown'] = 'Μη καθορισμένη άδεια χρήσης';

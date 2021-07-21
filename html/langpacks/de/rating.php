@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'de', version '3.8'.
+ * Strings for component 'rating', language 'de', version '3.11'.
  *
  * @package     rating
  * @category    string
@@ -61,5 +61,5 @@ $string['ratinginvalid'] = 'Ungültige Bewertung';
 $string['ratings'] = 'Bewertungen';
 $string['ratingtime'] = 'Bewertungen auf Beiträge beschränken, die im Zeitraum erstellt wurden';
 $string['rolewarning'] = 'Rollen, die Bewertungen vornehmen dürfen';
-$string['rolewarning_help'] = 'Nutzer/innen benötigen das generelle Recht moodle/rating:rate und modulspezifische Rechte, um Bewertungen durchführen zu können. Nutzer mit folgenden Rollen sollten Beiträge bewerten können. Eine Anpassung ist über den Link \'Rechte ändern\' im Block Einstellungen möglich.';
+$string['rolewarning_help'] = 'Nutzer/innen benötigen das Recht moodle/rating:rate und modulspezifische Rechte, um Bewertungen durchführen zu können. Nutzer/innen mit folgenden Rollen sollten Beiträge bewerten können. Eine Anpassung ist über \'Rechte ändern\' im Aktionsmenü oder im Block \'Administration\' möglich.';
 $string['scaleselectionrequired'] = 'Wenn Sie die Aggregation von Bewertungen verwenden, müssen Sie zusätzlich eine Skala oder einen Höchstwert festlegen.';

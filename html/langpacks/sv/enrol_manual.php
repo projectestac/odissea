@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_manual', language 'sv', version '3.8'.
+ * Strings for component 'enrol_manual', language 'sv', version '3.11'.
  *
  * @package     enrol_manual
  * @category    string
@@ -85,4 +85,4 @@ $string['unenroluser'] = 'Vill du verkligen avregistrera "{$a->user}" från kurs
 $string['unenrolusers'] = 'Avregistrera användare';
 $string['wscannotenrol'] = 'Det gick inte att manuellt registrera en användare i kursen med id = {$a->courseid}';
 $string['wsnoinstance'] = 'Instansen för manuella kursregistreringar finns inte eller är inaktiverad i kursen (id = {$a->courseid})';
-$string['wsusercannotassign'] = 'Du har inte tillstånd att tilldela rollen ({$a->roleid}) till användaren ({$a->userid}) i den här kursen ({$a->courseid}).';
+$string['wsusercannotassign'] = 'Du har inte behörighet att tilldela rollen ({$a->roleid}) till användaren ({$a->userid}) i den här kursen ({$a->courseid}).';

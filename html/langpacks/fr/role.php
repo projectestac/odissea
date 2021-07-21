@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'role', language 'fr', version '3.8'.
+ * Strings for component 'role', language 'fr', version '3.11'.
  *
  * @package     role
  * @category    string
@@ -103,7 +103,7 @@ $string['category:create'] = 'Créer les catégories de cours';
 $string['category:delete'] = 'Supprimer les catégories de cours';
 $string['category:manage'] = 'Gérer les catégories';
 $string['category:update'] = 'Modifier les catégories de cours';
-$string['category:viewcourselist'] = 'Consulter la liste des cours dans lesquels on n\'est pas inscrit';
+$string['category:viewcourselist'] = 'Consulter la catégorie et les cours qui y appartiennent';
 $string['category:viewhiddencategories'] = 'Voir les catégories cachées';
 $string['category:visibility'] = 'Voir les catégories de cours cachées';
 $string['checkglobalpermissions'] = 'Vérifier les permissions système';
@@ -158,6 +158,15 @@ $string['confirmunassign'] = 'Voulez-vous vraiment retirer ce rôle à cet utili
 $string['confirmunassignno'] = 'Annuler';
 $string['confirmunassigntitle'] = 'Confirmer le changement de rôle';
 $string['confirmunassignyes'] = 'Retirer';
+$string['contentbank:access'] = 'Accéder à la banque de contenus';
+$string['contentbank:deleteanycontent'] = 'Supprimer tout contenu de la banque de contenus';
+$string['contentbank:deleteowncontent'] = 'Supprimer du contenu de sa propre banque de contenus';
+$string['contentbank:downloadcontent'] = 'Télécharger du contenu depuis la banque de contenus';
+$string['contentbank:manageanycontent'] = 'Gérer tout contenu de la banque de contenus';
+$string['contentbank:manageowncontent'] = 'Gérer le contenu de sa propre banque de contenus';
+$string['contentbank:upload'] = 'Déposer un nouveau contenu dans la banque de contenus';
+$string['contentbank:useeditor'] = 'Créer ou modifier du contenu avec un éditeur de type de contenu';
+$string['contentbank:viewunlistedcontent'] = 'Consulter les contenus non listés de la banque de contenus';
 $string['context'] = 'Contexte';
 $string['course:activityvisibility'] = 'Cacher/afficher les activités';
 $string['course:bulkmessaging'] = 'Envoyer des messages à plusieurs utilisateurs';
@@ -168,9 +177,11 @@ $string['course:changelockedcustomfields'] = 'Modifier les champs personnalisés
 $string['course:changeshortname'] = 'Modifier le nom abrégé du cours';
 $string['course:changesummary'] = 'Modifier le résumé du cours';
 $string['course:configurecustomfields'] = 'Configurer les champs personnalisés';
+$string['course:configuredownloadcontent'] = 'Configurer le téléchargement de contenus de cours';
 $string['course:create'] = 'Créer des cours';
 $string['course:creategroupconversations'] = 'Créer des conversations de groupe';
 $string['course:delete'] = 'Supprimer des cours';
+$string['course:downloadcoursecontent'] = 'Télécharger les contenus du cours';
 $string['course:enrolconfig'] = 'Configurer les instances d\'inscription dans les cours';
 $string['course:enrolreview'] = 'Vérifier les inscriptions aux cours';
 $string['course:ignoreavailabilityrestrictions'] = 'Ignorer les restrictions de disponibilité';
@@ -184,6 +195,7 @@ $string['course:managescales'] = 'Gérer les barèmes';
 $string['course:markcomplete'] = 'Marquer les utilisateurs comme ayant terminé un cours';
 $string['course:movesections'] = 'Déplacer les sections';
 $string['course:overridecompletion'] = 'Écraser le statut d\'achèvement de l\'activité';
+$string['course:recommendactivity'] = 'Recommander des activités dans le sélecteur d\'activités';
 $string['course:renameroles'] = 'Renommer les rôles';
 $string['course:request'] = 'Demander de nouveaux cours';
 $string['course:reset'] = 'Réinitialiser les cours';
@@ -273,7 +285,7 @@ $string['grade:viewhidden'] = 'Voir ses propres notes cachées';
 $string['h5p:deploy'] = 'Déployer contenu H5P';
 $string['h5p:setdisplayoptions'] = 'Options d\'affichage H5P';
 $string['h5p:updatelibraries'] = 'Gérer les types de contenus H5P';
-$string['highlightedcellsshowdefault'] = 'Les cellules en surbrillance dans le tableau ci-dessous indiquent la permission par défaut pour le rôle modèle spécifié ci-dessus.';
+$string['highlightedcellsshowdefault'] = 'Les cellules en surbrillance dans le tableau ci-dessous indiquent les permissions par défaut pour le modèle de rôle spécifié ci-dessus.';
 $string['highlightedcellsshowinherit'] = 'Les cellules en surbrillance dans le tableau ci-dessous indiquent s\'il y a lieu la permission qui sera héritée. À part les capacités dont vous voulez modifier les permissions, il est suggéré de laisser le tout sur Hériter.';
 $string['inactiveformorethan'] = 'inactif depuis plus de {$a->timeperiod}';
 $string['ingroup'] = 'dans le groupe « {$a->group} »';
@@ -323,6 +335,8 @@ $string['overrideroles'] = 'Définir des dérogations aux rôles';
 $string['overriderolesin'] = 'Définir des dérogations aux rôles dans {$a}';
 $string['overrides'] = 'Dérogations';
 $string['overridesbycontext'] = 'Dérogations (par contexte)';
+$string['payment:manageaccounts'] = 'Gérer les comptes';
+$string['payment:viewpayments'] = 'Consulter les paiements';
 $string['permission'] = 'Permission';
 $string['permission_help'] = 'Les permissions sont les réglages que vous accordez pour des capacités spécifiques. Il y a quatre possibilités pour les permissions :
 
@@ -441,9 +455,11 @@ $string['site:mnetloginfromremote'] = 'Se connecter depuis une application dista
 $string['site:mnetlogintoremote'] = 'Accéder à une application distante via MNet';
 $string['site:readallmessages'] = 'Lire tous les messages sur le site';
 $string['site:restore'] = 'Restaurer les cours';
+$string['site:senderrormessage'] = 'Envoyer un message à l\'assistance utilisateur depuis la page d\'erreur';
 $string['site:sendmessage'] = 'Envoyer des messages aux utilisateurs';
 $string['site:trustcontent'] = 'Utiliser des contenus potentiellement dangereux';
 $string['site:uploadusers'] = 'Importer de nouveaux utilisateurs à partir d\'un fichier';
+$string['site:viewanonymousevents'] = 'Consulter les événements anonymes dans les rapports';
 $string['site:viewfullnames'] = 'Toujours voir les noms complets des utilisateurs';
 $string['site:viewparticipants'] = 'Voir les participants';
 $string['site:viewreports'] = 'Consulter les rapports';

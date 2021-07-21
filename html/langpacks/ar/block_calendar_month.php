@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_calendar_month', language 'ar', version '3.8'.
+ * Strings for component 'block_calendar_month', language 'ar', version '3.11'.
  *
  * @package     block_calendar_month
  * @category    string
@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_month:addinstance'] = 'إضافة كتلة تقويم جديدة';
-$string['calendar_month:myaddinstance'] = 'إضافة كتلة تقويم جديدة إلى الصفحة الشخصية';
+$string['calendar_month:myaddinstance'] = 'إضافة كتلة تقويم جديدة إلى لوحة التحكم';
 $string['pluginname'] = 'التقويم';
 $string['privacy:metadata'] = 'كتلة التقويم تظهر فقط بيانات التقويم الموجودة.';

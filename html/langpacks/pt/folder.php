@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'pt', version '3.8'.
+ * Strings for component 'folder', language 'pt', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -43,6 +43,8 @@ $string['folder:addinstance'] = 'Adicionar nova pasta';
 $string['folder:managefiles'] = 'Gerir ficheiros no recurso pasta';
 $string['folder:view'] = 'Ver conteúdo da pasta';
 $string['foldercontent'] = 'Ficheiros e subpastas';
+$string['forcedownload'] = 'Forçar o descarregamento do ficheiro';
+$string['forcedownload_help'] = 'Se determinados ficheiros, como por exemplo, imagens ou ficheiros HTML, devem ser exibidos, ou não, no navegador em vez de serem descarregados. Tenha em atenção que, por motivos de segurança, a configuração só deve ser desmarcada se todos os utilizadores com a capacidade de gerir ficheiros na pasta forem utilizadores confiáveis.';
 $string['indicator:cognitivedepth'] = 'Compreensão da Pasta';
 $string['indicator:cognitivedepth_help'] = 'Este indicador é baseado na capacidade cognitiva alcançada pelo aluno no recurso Pasta.';
 $string['indicator:cognitivedepthdef'] = 'Compreensão da Pasta';

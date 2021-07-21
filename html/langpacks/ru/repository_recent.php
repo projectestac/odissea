@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'ru', version '3.8'.
+ * Strings for component 'repository_recent', language 'ru', version '3.11'.
  *
  * @package     repository_recent
  * @category    string
@@ -30,5 +30,8 @@ $string['emptyfilelist'] = 'Нет файлов для отображения';
 $string['notitle'] = 'без названия';
 $string['pluginname'] = 'Недавно использованные файлы';
 $string['pluginname_help'] = 'Файлы, недавно использованные текущим пользователем';
+$string['privacy:metadata'] = 'Плагин хранилища «Недавно использованные файлы» не хранит и не передает какие-либо личные данные.';
 $string['recent:view'] = 'Просматривать хранилище файлов «Недавно использованные файлы»';
 $string['recentfilesnumber'] = 'Количество недавно использованных файлов';
+$string['timelimit'] = 'Ограничение по времени';
+$string['timelimit_help'] = 'Получать только файлы, недавно использованные в пределах указанного времени.';

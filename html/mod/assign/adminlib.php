@@ -178,24 +178,26 @@ class assign_plugin_manager {
         $table->define_baseurl($this->pageurl);
         $table->define_columns(array('pluginname', 'version', 'hideshow', 'order',
                 'settings', 'uninstall'));
-        //XTEC ************ MODIFICAT - To let access only to xtecadmin user
-        //2012.08.20 @sarjona
+
+        // XTEC ************ MODIFICAT - Allow access only to xtecadmin user
+        // 2012.08.20 @sarjona
         if (get_protected_agora()) {
-	        $table->define_headers(array(get_string($this->subtype . 'pluginname', 'assign'),
+            $table->define_headers(array(get_string($this->subtype . 'pluginname', 'assign'),
                 get_string('version'), get_string('hideshow', 'assign'),
                 get_string('order'), get_string('settings'), get_string('uninstallplugin', 'core_admin')));
-        } else{
-	        $table->define_headers(array(get_string($this->subtype . 'pluginname', 'assign'),
+        } else {
+            $table->define_headers(array(get_string($this->subtype . 'pluginname', 'assign'),
                 get_string('version'), get_string('hideshow', 'assign'),
                 get_string('order'), get_string('settings'), ""));
         }
-        //************ ORIGINAL
+        // ************ ORIGINAL
         /*
         $table->define_headers(array(get_string($this->subtype . 'pluginname', 'assign'),
                 get_string('version'), get_string('hideshow', 'assign'),
                 get_string('order'), get_string('settings'), get_string('uninstallplugin', 'core_admin')));
         */
-        //************ FI
+        // ************ FI
+
         $table->set_attribute('id', $this->subtype . 'plugins');
         $table->set_attribute('class', 'admintable generaltable');
         $table->setup();
@@ -238,15 +240,17 @@ class assign_plugin_manager {
                 $row[] = '&nbsp;';
             }
 
-            //XTEC ************ MODIFICAT - To let access only to xtecadmin user
-            //2012.08.20 @sarjona
+            // XTEC ************ MODIFICAT - Allow access only to xtecadmin user
+            // 2012.08.20 @sarjona
             if (get_protected_agora()) {
-            //************ FI
+            // ************ FI
+
             $row[] = $this->format_icon_link('delete', $plugin, 't/delete', get_string('uninstallplugin', 'core_admin'));
-            //XTEC ************ MODIFICAT - To let access only to xtecadmin user
-            //2012.08.20 @sarjona
+
+            // XTEC ************ MODIFICAT - Allow access only to xtecadmin user
+            // 2012.08.20 @sarjona
             }
-            //************ FI
+            // ************ FI
 
             $table->add_data($row, $class);
         }

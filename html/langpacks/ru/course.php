@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'ru', version '3.8'.
+ * Strings for component 'course', language 'ru', version '3.11'.
  *
  * @package     course
  * @category    string
@@ -25,11 +25,37 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitychooseractivefooter'] = 'Нижний колонтитул выбора элементов';
+$string['activitychooseractivefooter_desc'] = 'Средство выбора элементов может поддерживать плагины, которые добавляют элементы в нижний колонтитул.';
+$string['activitychoosercategory'] = 'Выбор элементов';
+$string['activitychooserhidefooter'] = 'Без нижнего колонтитула';
+$string['activitychooserrecommendations'] = 'Рекомендованные элементы';
+$string['activitychoosersettings'] = 'Настройки выбора элементов';
+$string['activitychoosertabmode'] = 'Вкладки выбора элементов';
+$string['activitychoosertabmode_desc'] = 'Средство выбора позволяет учителю легко выбирать активные элементы и ресурсы для добавления в свой курс. Этот параметр определяет, какие вкладки в нем должны отображаться.
+Обратите внимание, что вкладка «Помеченные» отображается пользователю только если он пометил один или несколько элементов, а вкладка «Рекомендуемые» отображается только в том случае, если администратор сайта указал некоторые рекомендуемые элементы.';
+$string['activitychoosertabmodeone'] = 'Помеченные, Все, Активные элементы, Ресурсы, Рекомендуемые';
+$string['activitychoosertabmodethree'] = 'Помеченные, Активные элементы, Ресурсы, Рекомендуемые';
+$string['activitychoosertabmodetwo'] = 'Помеченные, Все, Рекомендуемые';
+$string['activitydate:closed'] = 'Закрыто:';
+$string['activitydate:closes'] = 'Закрывается:';
+$string['activitydate:opened'] = 'Открыто:';
+$string['activitydate:opens'] = 'Открывается:';
 $string['aria:coursecategory'] = 'Категория курса';
 $string['aria:courseimage'] = 'Изображение курса';
 $string['aria:coursename'] = 'Название курса';
 $string['aria:courseshortname'] = 'Краткое название курса';
+$string['aria:defaulttab'] = 'Элементы по умолчанию';
 $string['aria:favourite'] = 'Курс является избранным';
+$string['aria:favouritestab'] = 'Помеченные элементы';
+$string['aria:modulefavourite'] = 'Помечено элементов: {$a}';
+$string['aria:recommendedtab'] = 'Рекомендуемые элементы';
+$string['completion_manual:aria:done'] = '{$a} отмечен как пройденный. Нажмите, чтобы отменить.';
+$string['completion_manual:aria:markdone'] = 'Отметить {$a} как пройденный';
+$string['completion_manual:done'] = 'Пройден';
+$string['completion_manual:markdone'] = 'Отметить как пройденный';
+$string['completion_setby:manual:done'] = '{$a->activityname} помечено {$ ->setby} как выполненное. Нажмите, чтобы отменить.';
+$string['completion_setby:manual:markdone'] = '{$a->activityname} помечено {$a->setby} как невыполненное. Нажмите, чтобы отметить как выполненное.';
 $string['coursealreadyfinished'] = 'Курс уже завершен';
 $string['coursenotyetfinished'] = 'Курс еще не завершен';
 $string['coursenotyetstarted'] = 'Курс еще не начат';
@@ -42,17 +68,40 @@ $string['customfield_visibility_help'] = 'Этот параметр опреде
 $string['customfield_visibletoall'] = 'Все';
 $string['customfield_visibletoteachers'] = 'Преподаватели';
 $string['customfieldsettings'] = 'Общие настройки пользовательских полей курса';
+$string['downloadcourseconfirmation'] = 'Вы собираетесь загрузить zip-файл с контентом курса (за исключением элементов, которые нельзя загрузить, и любых файлов, размер которых превышает {$a}).';
+$string['downloadcoursecontent'] = 'Скачивать материалы курса';
+$string['downloadcoursecontent_help'] = 'Этот параметр определяет, может ли контент курса быть скачан пользователями с правом скачивания контента курса (по умолчанию пользователи с ролью студента или учителя).';
+$string['enabledownloadcoursecontent'] = 'Разрешить скачивание материалов курса.';
 $string['errorendbeforestart'] = 'Дата окончания ({$a}) раньше даты начала курса.';
 $string['favourite'] = 'Избранный курс';
+$string['gradetopassnotset'] = 'В этом курсе нет проходных оценок. Их можно задать в элементах оценок курса (настройка Журнала уоценок).';
+$string['informationformodule'] = 'Информация о модуле {$a}';
+$string['module'] = 'Элемент';
+$string['noaccesssincestartinfomessage'] = 'Здравствуйте, {$a->userfirstname}!
+<p> Некоторые студенты никогда не посещали курс  «{$a->Coursename}». </p>';
+$string['nocourseactivity'] = 'Недостаточная активность между началом и концом курса';
 $string['nocourseendtime'] = 'Курс не имеет времени окончания';
 $string['nocoursesections'] = 'Нет разделов курса';
 $string['nocoursestudents'] = 'Нет студентов';
+$string['norecentaccessesinfomessage'] = 'Здравствуйте, {$a->userfirstname}!
+<p> Некоторые студенты в последнее время не посещали курс «{$a->coursename}». </p>';
+$string['noteachinginfomessage'] = 'Здравствуйте, {$a->userfirstname}!!
+<p> В курсах, которые начинаются на следующей неделе, не зарегистрированы учителя или студенты. </p>';
 $string['privacy:completionpath'] = 'Завершение курса';
 $string['privacy:favouritespath'] = 'Информация помеченного курса';
+$string['privacy:metadata:activityfavouritessummary'] = 'В курсе содержится информация о том, какие активные элементы были помечены пользователем.';
 $string['privacy:metadata:completionsummary'] = 'Курс содержит информацию о завершении его пользователем.';
 $string['privacy:metadata:favouritessummary'] = 'Курс содержит информацию, относящуюся к курсу, отмеченному пользователем.';
 $string['privacy:perpage'] = 'Число курсов, показываемых на странице.';
+$string['recommend'] = 'Рекомендовать';
+$string['recommendcheckbox'] = 'Рекомендуемые элементы: {$a}';
+$string['relativedatessubmissionduedateafter'] = '{$a->datediffstr} после начала курса';
+$string['relativedatessubmissionduedatebefore'] = '{$a->datediffstr} перед началом курса';
+$string['searchactivitiesbyname'] = 'Поиск активных элементов по названию';
+$string['searchresults'] = 'Результаты поиска: {$a}';
 $string['studentsatriskincourse'] = 'Студенты с проблемами в курсе {$a}';
+$string['studentsatriskinfomessage'] = 'Здравствуйте, {$a->userfirstname}.
+<p>В курсе {$a->coursename} у студентов есть проблемы.</p>';
 $string['target:coursecompetencies'] = 'Студенты рискуют не достичь компетентностей, обеспечиваемых курсом';
 $string['target:coursecompetencies_help'] = 'Эта цель характеризует, рискует ли студент не достичь компетентностей, обеспечиваемых курсом. Эта цель предполагает, что все компетентности, обеспечиваемые курсом, должны быть достигнуты к концу курса.';
 $string['target:coursecompletion'] = 'Студенты с риском не выполнить условия завершения курса';

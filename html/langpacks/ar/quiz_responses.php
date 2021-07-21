@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_responses', language 'ar', version '3.8'.
+ * Strings for component 'quiz_responses', language 'ar', version '3.11'.
  *
  * @package     quiz_responses
  * @category    string
@@ -28,11 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['cannotloadoptions'] = 'لا يمكن تحميل خيارات السؤال';
 $string['include'] = 'و تشمل';
 $string['mustselectcols'] = 'يجب عليك إدخال شيء.';
-$string['pagesize'] = 'مقاس الصفحة';
+$string['pagesize'] = 'حجم الصفحة';
 $string['pluginname'] = 'الاستجابات';
-$string['privacy:preference:qtext'] = 'سواء لإظهار أعمدة نصّ السؤال.';
-$string['privacy:preference:resp'] = 'سواء لإظهار أعمدة استجابة الطلاب.';
-$string['privacy:preference:right'] = 'سواء لإظهار أعمدة الاستجابة الصحيحة.';
+$string['privacy:preference:qtext'] = 'فيما إذا كان ينبغي إظهار أعمدة نصّ السؤال.';
+$string['privacy:preference:resp'] = 'فيما إذا كان ينبغي إظهار أعمدة استجابة الطلاب.';
+$string['privacy:preference:right'] = 'فيما إذا كان ينبغي إظهار أعمدة الاستجابة الصحيحة.';
 $string['privacy:preference:which_tries'] = 'الذي يحاول إظهار الردود من.';
 $string['privacy:preference:which_tries:all'] = 'جميع المحاولات على السؤال أثناء المحاولة من قبل المستخدم.';
 $string['privacy:preference:which_tries:first'] = 'أول محاولة على سؤال أثناء المحاولة من قبل المستخدم.';
@@ -45,12 +45,12 @@ $string['responsesdownload'] = 'تنزيل الاستجابات';
 $string['responsesfilename'] = 'استجابات';
 $string['responsesoptions'] = 'خيارات الاستجابات';
 $string['responsesreport'] = 'تقرير الاستجابات';
-$string['responsestitle'] = 'الاستجابات';
+$string['responsestitle'] = 'الإجابات';
 $string['responsex'] = 'الاستجابة {$a}';
 $string['rightanswer'] = 'إجابات صحيحة';
 $string['rightanswerx'] = 'الإجابة الصحيحة {$a}';
-$string['showattempts'] = 'فقط اعرض/ حمّل  المحاولات';
-$string['showthe'] = 'أعرض الـ';
+$string['showattempts'] = 'فقط إعرض / حمّل المحاولات';
+$string['showthe'] = 'أظهر الـ';
 $string['summaryofquestiontext'] = 'ملخص السؤال';
 $string['summaryofresponse'] = 'ملخص الاستجابة الفعلية';
 $string['summaryofrightanswer'] = 'ملخص الإجابة الصحيحة';

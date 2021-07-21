@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'pt', version '3.8'.
+ * Strings for component 'workshop', language 'pt', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'Trabalhos fecham:';
+$string['activitydate:assessmentsclosed'] = 'Trabalhos fecharam:';
+$string['activitydate:assessmentsopen'] = 'Trabalhos abrem:';
+$string['activitydate:assessmentsopened'] = 'Trabalhos abriram:';
+$string['activitydate:submissionsclose'] = 'Submissões fecham:';
+$string['activitydate:submissionsclosed'] = 'Submissões fecharam:';
+$string['activitydate:submissionsopen'] = 'Submissões abrem:';
+$string['activitydate:submissionsopened'] = 'Submissões abriram:';
 $string['aggregategrades'] = 'Recalcular notas';
 $string['aggregation'] = 'Método de avaliação';
 $string['allocate'] = 'Atribuir trabalhos para avaliação';
@@ -33,10 +41,10 @@ $string['allocation'] = 'Atribuição de trabalhos';
 $string['allocationconfigured'] = 'Atribuição de trabalhos configurada';
 $string['allocationdone'] = 'Atribuição de trabalhos realizada com sucesso';
 $string['allocationerror'] = 'Erro na atribuição de trabalhos';
-$string['allowedfiletypesforoverallfeedback'] = 'Tipos de ficheiros que são permitidos anexar ao feedback global';
-$string['allowedfiletypesforoverallfeedback_help'] = 'Os tipos de ficheiros que podem ser anexados ao feedback podem ser restringidos se fornecer uma lista dos tipos de ficheiros permitidos. Se o campo for deixado em branco, todos os tipos de ficheiros são permitidos.';
-$string['allowedfiletypesforsubmission'] = 'Tipos de ficheiros que são permitidos anexar à submissão';
-$string['allowedfiletypesforsubmission_help'] = 'Os tipos de ficheiros que podem ser anexados à submissão podem ser restringidos se fornecer uma lista dos tipos de ficheiros permitidos. Se o campo for deixado em branco, todos os tipos de ficheiros são permitidos.';
+$string['allowedfiletypesforoverallfeedback'] = 'Tipos de ficheiro que são permitidos anexar ao feedback global';
+$string['allowedfiletypesforoverallfeedback_help'] = 'Os tipos de ficheiro que podem ser anexados ao feedback podem ser restringidos se fornecer uma lista dos tipos de ficheiro permitidos. Se o campo ficar em branco, todos os tipos de ficheiro são permitidos.';
+$string['allowedfiletypesforsubmission'] = 'Tipos de ficheiro que são permitidos anexar à submissão';
+$string['allowedfiletypesforsubmission_help'] = 'Os tipos de ficheiro que podem ser anexados à submissão podem ser restringidos se indicar uma lista dos tipos de ficheiro permitidos. Se o campo ficar em branco, todos os tipos de ficheiro são permitidos.';
 $string['allsubmissions'] = 'Todos os trabalhos submetidos ({$a})';
 $string['alreadygraded'] = 'Já avaliado';
 $string['areaconclusion'] = 'Texto de conclusão';
@@ -83,7 +91,7 @@ $string['calculatesubmissiongradesdetails'] = 'esperados: {$a->expected}<br />ca
 $string['chooseuser'] = 'Escolher utilizador…';
 $string['clearaggregatedgrades'] = 'Apagar todas as notas calculadas';
 $string['clearaggregatedgrades_help'] = 'As notas calculadas para os trabalhos e avaliações serão apagadas. Pode recalcular estas notas novamente na fase de avaliação.';
-$string['clearaggregatedgradesconfirm'] = 'Tem a certeza que pretende apagar notas calculadas para os trabalhos e avaliações?';
+$string['clearaggregatedgradesconfirm'] = 'Tem a certeza de que pretende apagar notas calculadas para os trabalhos e avaliações?';
 $string['clearassessments'] = 'Limpar avaliações';
 $string['clearassessments_help'] = 'As notas calculadas para os trabalhos e avaliações serão apagadas. As informações introduzidas nas grelhas de avaliação serão guardadas, mas todos os avaliadores devem abrir a grelha de avaliação e submeter a mesma novamente para que as notas sejam calculadas de novo.';
 $string['clearassessmentsconfirm'] = 'Tem a certeza de que pretende apagar todas notas das avaliações? Não consegurá reverter esta ação por si próprio pois os avaliadores terão de reavaliar os trabalhos alocados.';
@@ -263,6 +271,22 @@ $string['privacy:metadata:late'] = 'Se a submissão tem sido submetida após o p
 $string['privacy:metadata:peercomment'] = 'Comentário na nota atribuída pelo utilizador que fornece a avaliação';
 $string['privacy:metadata:peercommentformat'] = 'Formato de texto do comentário na avaliação atribuída';
 $string['privacy:metadata:preference:perpage'] = 'Número de submissões que o utilizador prefere ver numa página';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = 'O estado contraído/expandido do visualizador \'Submissões exemplo\'.';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = 'O estado contraído/expandido do visualizador \'Relatório de submissões no workshop\'.';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = 'O estado contraído/expandido do visualizador \'Formulário de avaliação\'.';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = 'O estado contraído/expandido do visualizador \'Submissões atribuídas para avaliação\'.';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = 'O estado contraído/expandido do visualizador \'Caixa de ferramentas do workshop\'.';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = 'O estado contraído/expandido do visualizador \'Conclusão\'.';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = 'O estado contraído/expandido do visualizador \'Submissões exemplo para avaliar\'.';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = 'O estado contraído/expandido do visualizador \'Submissões exemplo para avaliar\'.';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = 'O estado contraído/expandido do visualizador \'Relatório das notas no workshop\'.';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = 'O estado contraído/expandido do visualizador \'Instruções da submissão\'.';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = 'O estado contraído/expandido do visualizador \'Instruções da avaliação\'.';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = 'O estado contraído/expandido do visualizador \'Introdução\'.';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = 'O estado contraído/expandido do visualizador \'Feedback geral\'.';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = 'O estado contraído/expandido do visualizador \'A sua submissão\'.';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = 'O estado contraído/expandido do visualizador \'Submissões publicadas\'.';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = 'O estado contraído/expandido do visualizador \'As suas notas\'.';
 $string['privacy:metadata:published'] = 'Se a submissão deve ser publicada a todos os participantes de uma vez depois do workshop fechar';
 $string['privacy:metadata:reviewerid'] = 'ID do utilizador que fornece a avaliação';
 $string['privacy:metadata:strategy'] = 'Nome do submódulo estratégia de avaliação a interpretar os valores registados';
@@ -428,3 +452,4 @@ $string['workshopname'] = 'Designação';
 $string['yourassessmentfor'] = 'Avaliação para {$a}';
 $string['yourgrades'] = 'As suas notas';
 $string['yoursubmission'] = 'O seu trabalho';
+$string['yoursubmissionwithassessments'] = 'A sua submissão com avaliações';

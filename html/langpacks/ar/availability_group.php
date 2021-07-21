@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_group', language 'ar', version '3.8'.
+ * Strings for component 'availability_group', language 'ar', version '3.11'.
  *
  * @package     availability_group
  * @category    string
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['anygroup'] = '(أيّ مجموعة)';
-$string['description'] = 'السماح فقط للطلاب الذين ينتمون إلى مجموعة محددة ، أو جميع المجموعات.';
+$string['description'] = 'السماح فقط للطلاب الذين ينتمون إلى مجموعة محددة، أو كل المجموعات.';
 $string['error_selectgroup'] = 'يجب عليك اختيار مجموعة.';
 $string['missing'] = '(مجموعة مفقودة)';
-$string['pluginname'] = 'القيود حسب المجموعة';
-$string['privacy:metadata'] = 'لا يقوم البرنامج المساعد Restriction by group بتخزين أيّ بيانات شخصية.';
-$string['requires_anygroup'] = 'أنت تنتمي إلى أي مجموعة';
-$string['requires_group'] = 'أنت تنتمي إلى {$a}';
-$string['requires_notanygroup'] = 'أنت لا تنتمي إلى أيّ مجموعة';
-$string['requires_notgroup'] = 'أنت لا تنتمي إلى {$a}';
+$string['pluginname'] = 'التقييد حسب المجموعة';
+$string['privacy:metadata'] = 'إن ملحق التقييد حسب المجموعة لا يخزن أيّ بيانات شخصية.';
+$string['requires_anygroup'] = 'كنتَ منتمياً إلى أي مجموعة';
+$string['requires_group'] = 'كنتَ منتمياً إلى <strong>{$a}</strong>';
+$string['requires_notanygroup'] = 'كنتَ لا تنتمي إلى أيّ مجموعة';
+$string['requires_notgroup'] = 'كنتَ لا تنتمي إلى {$a}';
 $string['title'] = 'المجموعة';

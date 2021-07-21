@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignfeedback_offline', language 'ja', version '3.8'.
+ * Strings for component 'assignfeedback_offline', language 'ja', version '3.11'.
  *
  * @package     assignfeedback_offline
  * @category    string
@@ -47,6 +47,6 @@ $string['pluginname'] = 'オフライン評定ワークシート';
 $string['privacy:nullproviderreason'] = 'このプラグインにはユーザ情報を保存するデータベースがありません。評定インターフェースを表示するためmod_assignのAPIのみ使用します。';
 $string['processgrades'] = '評定をインポートする';
 $string['skiprecord'] = 'レコードをスキップする';
-$string['updatedgrades'] = '{$a} 件の評定およびフィードバックを更新しました。';
+$string['updatedgrades'] = '<strong>{$a->gradeupdatescount}</strong> 件の評定および <strong>{$a->feedbackupdatescount}</strong> 件のフィードバックインスタンスを更新しました。';
 $string['updaterecord'] = 'レコードを更新する';
 $string['uploadgrades'] = '評定ワークシートをアップロードする';

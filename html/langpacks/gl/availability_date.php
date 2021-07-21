@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'gl', version '3.8'.
+ * Strings for component 'availability_date', language 'gl', version '3.11'.
  *
  * @package     availability_date
  * @category    string
@@ -25,5 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['ajaxerror'] = 'Erro conectando co servidor para converter horas';
+$string['description'] = 'Impedir o acceso até (ou dende) unha determinada hora e data.';
+$string['direction_before'] = 'Data';
+$string['direction_from'] = 'dende';
+$string['direction_label'] = 'Dirección';
+$string['direction_until'] = 'ata';
+$string['full_from'] = 'É despois de <strong>{$a}</strong>';
+$string['full_from_date'] = 'É en ou despois de <strong>{$a}</strong>';
+$string['full_until'] = 'É antes de <strong>{$a}</strong>';
+$string['full_until_date'] = 'É antes do fin de <strong>{$a}</strong>';
+$string['pluginname'] = 'Restrición por data';
+$string['privacy:metadata'] = 'O engadido de restrición por data non garda ningún dato persoal.';
 $string['short_from'] = 'Dispoñíbel a partir do <strong>{$a}</strong>';
 $string['short_from_date'] = 'Dispoñíbel a partir do <strong>{$a}</strong>';
+$string['short_until'] = 'Dispoñíbel ata <strong>{$a}</strong>';
+$string['short_until_date'] = 'Dispoñíbel ata o fin de <strong>{$a}</strong>';
+$string['title'] = 'Data';

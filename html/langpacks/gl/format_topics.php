@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_topics', language 'gl', version '3.8'.
+ * Strings for component 'format_topics', language 'gl', version '3.11'.
  *
  * @package     format_topics
  * @category    string
@@ -32,8 +32,8 @@ $string['editsection'] = 'Editar o tema';
 $string['editsectionname'] = 'Editar o nome do tema';
 $string['hidefromothers'] = 'Agochar o tema';
 $string['newsectionname'] = 'Novo nome para o tema {$a}';
-$string['page-course-view-topics'] = 'Calquera páxina principal de curso en formato temas';
-$string['page-course-view-topics-x'] = 'Calquera páxina de curso en formato temas';
+$string['page-course-view-topics'] = 'Calquera páxina principal de curso no formato dos temas';
+$string['page-course-view-topics-x'] = 'Calquera páxina de curso no formato dos temas';
 $string['pluginname'] = 'Formato dos temas';
 $string['privacy:metadata'] = 'O engadido de formato dos temas non almacena ningún dato persoal.';
 $string['section0name'] = 'Xeral';

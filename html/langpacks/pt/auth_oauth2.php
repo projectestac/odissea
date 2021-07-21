@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'pt', version '3.8'.
+ * Strings for component 'auth_oauth2', language 'pt', version '3.11'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -63,7 +63,7 @@ Se precisar de ajuda, entre em contacto com o administrador do site:
 Se não fez este pedido, outra pessoa pode estar a tentar aceder à sua conta.
 Entre em contacto com o(a) administrador(a) da plataforma imediatamente.';
 $string['confirmlinkedloginemailsubject'] = '{$a}: confirmação da vinculação de autenticação';
-$string['createaccountswarning'] = 'Este módulo de autenticação permite aos utilizadores criarem contas no seu site. É importante ativar a configuração "authpreventaccountcreation" se pretende usar esta funcionalidade.';
+$string['createaccountswarning'] = 'Este módulo de autenticação permite aos utilizadores criarem contas no seu site. Se pretende usar esta funcionalidade, é importante ativar a configuração "authpreventaccountcreation".';
 $string['createnewlinkedlogin'] = 'Vincular uma nova conta ({$a})';
 $string['emailconfirmlink'] = 'Vincular as suas contas';
 $string['emailconfirmlinksent'] = '<p>Foi encontrada uma conta existente com este endereço de e-mail mas ainda não está vinculada.</p>
@@ -87,7 +87,7 @@ $string['linkedlogins'] = 'Autenticações vinculadas';
 $string['linkedloginshelp'] = 'Ajuda com autenticações vinculadas';
 $string['loginerror_authenticationfailed'] = 'O processo de autenticação falhou.';
 $string['loginerror_cannotcreateaccounts'] = 'Não foi possível encontrar uma conta com o seu endereço de e-mail.';
-$string['loginerror_invaliddomain'] = 'O endereço de e-mail não é permitido neste site.';
+$string['loginerror_invaliddomain'] = 'Não é permitido o uso de endereço de e-mail neste site.';
 $string['loginerror_nouserinfo'] = 'Nenhuma informação de utilizador foi devolvida. O serviço OAuth 2 pode estar configurado incorretamente.';
 $string['loginerror_userincomplete'] = 'As informações do utilizador devolvidas não continham um nome de utilizador e um endereço de e-mail. O serviço OAuth 2 pode estar configurado incorretamente.';
 $string['noissuersavailable'] = 'Nenhum dos serviços OAuth 2  configurados permite que vincule contas de autenticação';

@@ -24,7 +24,7 @@ Feature: In an assignment, students start a new attempt based on their previous 
       | Description | Submit your online text |
       | assignsubmission_onlinetext_enabled | 1 |
       | assignsubmission_file_enabled | 0 |
-      | Attempts reopened | Manually |
+      | Additional attempts | Manually |
       | Hide grader identity from students | Yes |
     And I log out
     And I log in as "student1"
@@ -43,7 +43,6 @@ Feature: In an assignment, students start a new attempt based on their previous 
     And I set the following fields to these values:
       | Allow another attempt | 1 |
     And I press "Save changes"
-    And I press "Ok"
     And I click on "Edit settings" "link"
     And I log out
     Then I log in as "student1"
@@ -97,7 +96,7 @@ Feature: In an assignment, students start a new attempt based on their previous 
       | assignsubmission_onlinetext_enabled | 1 |
       | assignsubmission_file_enabled | 0 |
       | Students submit in groups | Yes |
-      | Attempts reopened | Manually |
+      | Additional attempts | Manually |
       | Maximum attempts | 3 |
       | Group mode | Separate groups |
     And I log out
@@ -150,7 +149,6 @@ Feature: In an assignment, students start a new attempt based on their previous 
     And I set the following fields to these values:
       | Allow another attempt | 1 |
     And I press "Save changes"
-    And I press "Ok"
     And I follow "Assignment: Test assignment name"
     And I log out
     And I log in as "student4"

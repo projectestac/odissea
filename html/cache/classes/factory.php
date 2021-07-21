@@ -112,7 +112,13 @@ class cache_factory {
     protected $state = 0;
 
     /**
-     * Returns an instance of the cache_factor method.
+     * The current cache display helper.
+     * @var core_cache\local\administration_display_helper
+     */
+    protected static $displayhelper = null;
+
+    /**
+     * Returns an instance of the cache_factory class.
      *
      * @param bool $forcereload If set to true a new cache_factory instance will be created and used.
      * @return cache_factory
@@ -134,6 +140,10 @@ class cache_factory {
                     // The cache stores have been disabled.
                     self::$instance->set_state(self::STATE_STORES_DISABLED);
                 }
+
+            } else if (!empty($CFG->alternative_cache_factory_class)) {
+                $factoryclass = $CFG->alternative_cache_factory_class;
+                self::$instance = new $factoryclass();
             } else {
                 // We're using the regular factory.
                 self::$instance = new cache_factory();
@@ -635,5 +645,49 @@ class cache_factory {
         $factory = self::instance();
         $factory->reset_cache_instances();
         $factory->set_state(self::STATE_STORES_DISABLED);
+    }
+
+    /**
+     * Returns an instance of the current display_helper.
+     *
+     * @return core_cache\administration_helper
+     */
+    public static function get_administration_display_helper() : core_cache\administration_helper {
+        if (is_null(self::$displayhelper)) {
+            self::$displayhelper = new \core_cache\local\administration_display_helper();
+        }
+        return self::$displayhelper;
+    }
+
+    /**
+     * Gets the cache_config_writer to use when caching is disabled.
+     * This should only be called from cache_factory_disabled.
+     *
+     * @return cache_config_writer
+     */
+    public static function get_disabled_writer(): cache_config_writer {
+        global $CFG;
+
+        // Figure out if we are in a recursive loop using late static binding.
+        // This happens when get_disabled_writer is not overridden. We just want the default.
+        $loop = false;
+        if (!empty($CFG->alternative_cache_factory_class)) {
+            $loop = get_called_class() === $CFG->alternative_cache_factory_class;
+        }
+
+        if (!$loop && !empty($CFG->alternative_cache_factory_class)) {
+            // Get the class to use from the alternative factory.
+            $factoryinstance = new $CFG->alternative_cache_factory_class();
+            return $factoryinstance::get_disabled_writer();
+        } else {
+            // We got here from cache_factory_disabled.
+            // We should use the default writer here.
+            // Make sure we have a default config if needed.
+            if (!cache_config::config_file_exists()) {
+                cache_config_writer::create_default_configuration(true);
+            }
+
+            return new cache_config_writer();
+        }
     }
 }

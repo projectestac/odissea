@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'nl', version '3.8'.
+ * Strings for component 'qtype_ddmarker', language 'nl', version '3.11'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -85,7 +85,10 @@ $string['pluginnamesummary'] = 'Woorden worden gesleept en neergezet op de achte
 Merk op: dit vraagtype is niet toegankelijk slechtzienden.';
 $string['previewareaheader'] = 'Voorbeeld';
 $string['previewareamessage'] = 'Selecteer een bestand als achtergrondafbeelding, maak labels met woorden en bepaal zones op de achtergrondafbeelding waar die naartoe gesleept moeten worden.';
-$string['privacy:metadata'] = 'De plug-in Drag and drop markers question type slaat geen persoonlijke gegevens op.';
+$string['privacy:metadata'] = 'Het woorden slepen en neerzetten vraag-type laat vraag-auteurs standaardopties en gebruikersvoorkeuren instellen.';
+$string['privacy:preference:defaultmark'] = 'De standaardbeoordeling voor een bepaalde vraag.';
+$string['privacy:preference:penalty'] = 'Het strafpunt voor elke foute poging wanneer vragen gebruikt worden die het vraaggedrag \'interactief met meerdere pogingen\' of \'Adaptieve modus\' gebruiken.';
+$string['privacy:preference:shuffleanswers'] = 'Of antwoorden automatisch door elkaar moeten gehaald worden.';
 $string['refresh'] = 'Voorbeeld verversen';
 $string['shape'] = 'Vorm';
 $string['shape_circle'] = 'Cirkel';

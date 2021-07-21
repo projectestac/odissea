@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_alfresco', language 'ar', version '3.8'.
+ * Strings for component 'repository_alfresco', language 'ar', version '3.11'.
  *
  * @package     repository_alfresco
  * @category    string
@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['notitle'] = 'بلا عنوان';
+$string['username'] = 'اسم المستخدم';

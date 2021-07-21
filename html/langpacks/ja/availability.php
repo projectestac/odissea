@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'ja', version '3.8'.
+ * Strings for component 'availability', language 'ja', version '3.11'.
  *
  * @package     availability
  * @category    string
@@ -38,7 +38,7 @@ $string['hidden_individual'] = 'ユーザがこの条件に合致しない場合
 $string['hidden_marker'] = '(そうでない場合は非表示)';
 $string['hide_verb'] = '非表示にするにはクリックしてください。';
 $string['invalid'] = '設定してください';
-$string['item_unknowntype'] = 'これらの制限はすでに利用できないプラグインを使用しています (当該制限を削除しても良い場合、以下で削除してください)。';
+$string['item_unknowntype'] = 'これらの制限ではすでに利用できないプラグインを使用しています (当該制限を削除しても良い場合、以下で削除してください)。';
 $string['itemheading'] = '{$a->number} {$a->type} 制限';
 $string['label_multi'] = '必須制限';
 $string['label_sign'] = '制限タイプ';
@@ -48,8 +48,8 @@ $string['list_or'] = 'どれか:';
 $string['list_or_hidden'] = 'どれか (そうでない場合は非表示):';
 $string['list_root_and'] = '次の条件に合致しない限り利用できません:';
 $string['list_root_and_hidden'] = '次の条件に合致しない限り利用できません (非表示):';
-$string['list_root_or'] = '以下のどれかに合致しない限り利用できません:';
-$string['list_root_or_hidden'] = '以下のどれかに合致しない限り利用できません (非表示):';
+$string['list_root_or'] = '次のどれかに合致しない限り利用できません:';
+$string['list_root_or_hidden'] = '次のどれかに合致しない限り利用できません (非表示):';
 $string['listheader_multi_after'] = 'の条件に対して';
 $string['listheader_multi_and'] = 'すべて';
 $string['listheader_multi_before'] = '> 以下の';

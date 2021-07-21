@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'en', version '3.8'.
+ * Strings for component 'badges', language 'en', version '3.11'.
  *
  * @package     badges
  * @category    string
@@ -96,10 +96,10 @@ You should fix this issue on any production site where you are planning to issue
 **What if I can\'t make my whole site publicly accessible?**
 
 The only URL required for verification is [your-site-url]/badges/assertion.php so if you are able to modify your firewall to allow external access to that file, badge verification will still work.';
-$string['backpackbadges'] = 'You have {$a->totalbadges} badge(s) displayed from {$a->totalcollections} collection(s). <a href="mybackpack.php">Change backpack settings</a>.';
 $string['backpackbadgessettings'] = 'Change backpack settings';
 $string['backpackbadgessummary'] = 'You have {$a->totalbadges} badge(s) displayed from {$a->totalcollections} collection(s).';
 $string['backpackcannotsendverification'] = 'Cannot send verification email';
+$string['backpackconnected'] = 'Backpack is connected';
 $string['backpackconnection'] = 'Backpack connection';
 $string['backpackconnection_help'] = 'Connecting to a backpack enables you to share your badges from this site, and display public badge collections from your backpack on your profile page on this site.';
 $string['backpackconnectioncancelattempt'] = 'Connect using a different email address';
@@ -110,6 +110,7 @@ $string['backpackconnectionresendemail'] = 'Resend verification email';
 $string['backpackconnectionunexpectedmessage'] = 'The backpack returned the error: "{$a}".';
 $string['backpackconnectionunexpectedresult'] = 'There was a problem connecting to your backpack. Please check the credentials and try again.';
 $string['backpackdetails'] = 'Backpack settings';
+$string['backpackdisconnected'] = 'Backpack is disconnected';
 $string['backpackemail'] = 'Email address';
 $string['backpackemail_help'] = 'The email address associated with your backpack. While you are connected, any badges earned on this site will be associated with this email address.';
 $string['backpackemailverificationpending'] = 'Verification pending';
@@ -129,11 +130,13 @@ $string['backpackemailverifyemailsubject'] = '{$a}: Badges backpack email verifi
 $string['backpackemailverifypending'] = 'A verification email has been sent to <strong>{$a}</strong>. Click on the verification link in the email to activate your Backpack connection.';
 $string['backpackemailverifysuccess'] = 'Thanks for verifying your email address. You are now connected to your backpack.';
 $string['backpackemailverifytokenmismatch'] = 'The token in the link you clicked does not match the stored token. Make sure you clicked the link in most recent email you received.';
+$string['backpackexporterror'] = 'Can\'t export the badge to backpack';
 $string['backpackimport'] = 'Badge import settings';
 $string['backpackimport_help'] = 'After the backpack connection is successfully established, badges from your backpack can be displayed on your badges page and your profile page.
 
 In this area, you can select collections of badges from your backpack that you would like to display in your profile.';
 $string['backpackneedsupdate'] = 'The backpack connected to this profile does not match the backpack for the site. You need to disconnect and reconnect the backpack.';
+$string['backpackprovider'] = 'Backpack provider';
 $string['backpacksettings'] = 'Backpack settings';
 $string['backpackweburl'] = 'Backpack URL';
 $string['badgedetails'] = 'Badge details';
@@ -272,6 +275,7 @@ $string['delconfirm'] = 'Delete and remove existing issued badges';
 $string['delcritconfirm'] = 'Are you sure that you want to delete this criterion?';
 $string['deletehelp'] = '<p>Fully deleting a badge means that all its information and criteria records will be permanently removed. Users who have earned this badge will no longer be able to access it and display it on their profile pages.</p>
 <p>Note: Users who have earned this badge and have already pushed it to their external backpack, will still have this badge in their external backpack. However, they will not be able to access criteria and evidence pages linking back to this web site.</p>';
+$string['delexternalbackpack'] = 'Delete site backpack';
 $string['delexternalbackpackconfirm'] = 'Delete site backpack \'{$a}\'?';
 $string['delparamconfirm'] = 'Are you sure that you want to delete this parameter?';
 $string['description'] = 'Description';
@@ -295,7 +299,6 @@ $string['error:connectionunknownreason'] = 'The connection was unsuccessful but 
 $string['error:duplicatename'] = 'Badge with such name already exists in the system.';
 $string['error:externalbadgedoesntexist'] = 'Badge not found';
 $string['error:guestuseraccess'] = 'You are currently using guest access. To see badges you need to log in with your user account.';
-$string['error:invalidbadgeurl'] = 'Invalid issuer URL format. The URL should have a prefix http:// or https://.';
 $string['error:invalidcriteriatype'] = 'Invalid criteria type.';
 $string['error:invalidexpiredate'] = 'Expiry date has to be in the future.';
 $string['error:invalidexpireperiod'] = 'Expiry period cannot be negative or equal 0.';
@@ -305,7 +308,6 @@ $string['error:noactivities'] = 'There are no activities with completion criteri
 $string['error:nobadges'] = 'There are currently no badges with access enabled to be added as criteria. A site badge can only have other site badges as criteria. A course badge can have other course badges or site badges as criteria.';
 $string['error:nocohorts'] = 'No cohorts';
 $string['error:nocourses'] = 'Course completion is not enabled for any of the courses in this site, so none can be displayed. Course completion may be enabled in the course settings.';
-$string['error:nogroups'] = '<p>There are no public collections of badges available in your backpack. </p> <p>Only public collections are shown. <a href="https://backpack.openbadges.org">Visit your backpack</a> to create some public collections.</p>';
 $string['error:nogroupslink'] = '<p>Only public collections are shown. <a href="{$a}" target="_blank" rel="nofollow">Visit your backpack</a> to create some public collections.</p>';
 $string['error:nogroupssummary'] = '<p>There are no public collections of badges available in your backpack. </p>';
 $string['error:nopermissiontoview'] = 'You have no permissions to view badge recipients';
@@ -364,6 +366,7 @@ $string['imageauthorurl'] = 'Image author\'s URL';
 $string['imageauthorurl_help'] = 'If specified, a link to the badge image author\'s website is displayed on the badge page. The URL should have a prefix http:// or https://.';
 $string['imagecaption'] = 'Image caption';
 $string['imagecaption_help'] = 'If specified, an image caption is displayed on the badge page.';
+$string['includeauthdetails'] = 'Include authentication details with the backpack';
 $string['invalidurl'] = 'Invalid URL';
 $string['issuancedetails'] = 'Badge expiry';
 $string['issuedbadge'] = 'Issued badge information';
@@ -403,14 +406,13 @@ $string['month'] = 'Month(s)';
 $string['mybackpack'] = 'My backpack settings';
 $string['mybadges'] = 'My badges';
 $string['never'] = 'Never';
+$string['newbackpack'] = 'Add a new backpack';
 $string['newbadge'] = 'Add a new badge';
 $string['newimage'] = 'New image';
 $string['noalignment'] = 'This badge does not have any external skills or standards specified.';
 $string['noawards'] = 'This badge has not been earned yet.';
 $string['nobackpack'] = 'There is no backpack service connected to this account.<br/>';
-$string['nobackpackbadges'] = 'There are no badges in the collections you have selected. <a href="mybackpack.php">Add more collections</a>.';
 $string['nobackpackbadgessummary'] = 'There are no badges in the collections you have selected.';
-$string['nobackpackcollections'] = 'No badge collections have been selected. <a href="mybackpack.php">Add collections</a>.';
 $string['nobackpackcollectionssummary'] = 'No badge collections have been selected.';
 $string['nobackpacks'] = 'There are no backpacks available';
 $string['nobadges'] = 'There are no badges available.';
@@ -447,8 +449,10 @@ $string['notifymonthly'] = 'Monthly';
 $string['notifyweekly'] = 'Weekly';
 $string['numawards'] = 'This badge has been issued to <a href="{$a->link}">{$a->count}</a> user(s).';
 $string['numawardstat'] = 'This badge has been issued {$a} user(s).';
+$string['oauth2issuer'] = 'OAuth 2 services';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
+$string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['overallcrit'] = 'of the selected criteria are complete.';
 $string['potentialrecipients'] = 'Potential badge recipients';
 $string['preferences'] = 'Badge preferences';
@@ -457,6 +461,12 @@ $string['privacy:metadata:backpack:backpackuid'] = 'The backpack unique identifi
 $string['privacy:metadata:backpack:email'] = 'The email associated with the backpack';
 $string['privacy:metadata:backpack:externalbackpackid'] = 'The ID of the backpack';
 $string['privacy:metadata:backpack:userid'] = 'The ID of the user whose backpack it is';
+$string['privacy:metadata:backpackoauth2'] = 'OAuth 2 information when user connects to an external backpack';
+$string['privacy:metadata:backpackoauth2:issuerid'] = 'OAuth 2 service ID';
+$string['privacy:metadata:backpackoauth2:scope'] = 'List scope of backpack connect';
+$string['privacy:metadata:backpackoauth2:token'] = 'Backpack connection token';
+$string['privacy:metadata:backpackoauth2:userid'] = 'The ID of the user connect to backpack';
+$string['privacy:metadata:backpackoauth2:usermodified'] = 'The ID of the user modified connect';
 $string['privacy:metadata:badge'] = 'A collection of badges';
 $string['privacy:metadata:badge:timecreated'] = 'The time when the badge was created';
 $string['privacy:metadata:badge:timemodified'] = 'The time when the badge was last modified';
@@ -508,6 +518,8 @@ $string['selecting'] = 'With selected badges...';
 $string['setup'] = 'Set up connection';
 $string['sitebackpack'] = 'Active external backpack';
 $string['sitebackpack_help'] = 'The external backpack that users can connect to from this site. Note that changing this setting after users have connected their backpacks will require each user to go to their backpack settings page and disconnect then reconnect.';
+$string['sitebackpackdeleted'] = 'The site backpack has been deleted.';
+$string['sitebackpacknotdeleted'] = 'This backpack couldn\'t be deleted because it\'s currently the site default.';
 $string['sitebackpackverify'] = 'Backpack connection';
 $string['sitebackpackwarning'] = 'Could not connect to backpack. <br/><br/>Check that the "Badge issuer email address" admin setting is the valid email for an account on the backpack website. <br/><br/>Check that the "Badge issuer password" on the <a href="{$a->url}">site backpack settings page</a>, is the correct password for the account on the backpack website. <br/><br/>The backpack returned: "{$a->warning}"';
 $string['sitebadges'] = 'Site badges';

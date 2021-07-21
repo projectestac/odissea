@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'el', version '3.8'.
+ * Strings for component 'block_myoverview', language 'el', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = 'Ταξινόμηση μαθημάτων κατά
 $string['aria:list'] = 'Μεταβείτε στην προβολή λίστας';
 $string['aria:past'] = 'Εμφάνιση περασμένων μαθημάτων';
 $string['aria:removefromfavourites'] = 'Αφαίρεση αστερίσκου από';
+$string['aria:shortname'] = 'Ταξινόμηση μαθημάτων κατά σύντομο όνομα μαθήματος';
 $string['aria:showcourse'] = 'Επαναφορά {$a} στην εμφάνιση';
 $string['aria:sortingdropdown'] = 'Αναπτυσσόμενο μενού ταξινόμησης';
 $string['aria:summary'] = 'Μεταβείτε στη συνοπτική προβολή';
@@ -62,8 +63,6 @@ $string['courseprogress'] = 'Πρόοδος μαθήματος:';
 $string['customfield'] = 'Προσαρμοσμένο πεδίο';
 $string['customfiltergrouping'] = 'Πεδίο προς χρήση';
 $string['customfiltergrouping_nofields'] = 'Αυτή η επιλογή απαιτεί (τουλάχιστον) ένα προσαρμοσμένο πεδίο μαθήματος να υπάρχει και να είναι ορατό σε όλους.';
-$string['defaulttab'] = 'Προεπιλεγμένη καρτέλα';
-$string['defaulttab_desc'] = 'Η καρτέλα που θα εμφανίζεται όταν ο χρήστης δει πρώτη φορά την επισκόπηση των μαθημάτων του. Όταν επιστρέφει στην επισκόπηση των μαθημάτων του, θα επανέρχεται στην ενεργή καρτέλα του χρήστη.';
 $string['displaycategories'] = 'Εμφάνιση κατηγοριών';
 $string['displaycategories_help'] = 'Εμφάνιση της κατηγορίας του μαθήματος στα στοιχεία του μαθήματος του ταμπλό, συμπεριλαμβανομένων των καρτών, των στοιχείων της λίστας και των στοιχείων περίληψης';
 $string['favourites'] = 'Με αστερίσκο';
@@ -76,31 +75,18 @@ $string['lastaccessed'] = 'Τελευταία πρόσβαση';
 $string['layouts'] = 'Διαθέσιμες διατάξεις';
 $string['layouts_help'] = 'Οι διατάξεις προεπισκόπησης μαθήματος οι οποίες είναι διαθέσιμες προς επιλογή από τους χρήστες. Αν δεν επιλεγεί καμία, θα χρησιμοποιηθεί η διάταξη καρτέλας.';
 $string['list'] = 'Λίστα';
-$string['morecourses'] = 'Περισσότερα μαθήματα';
 $string['myoverview:myaddinstance'] = 'Προσθήκη νέου μπλοκ επισκόπηση μαθημάτων στο Ταμπλό';
-$string['next30days'] = 'Επόμενες 30 ημέρες';
-$string['next7days'] = 'Επόμενες 7 ημέρες';
 $string['nocourses'] = 'Κανένα μάθημα';
-$string['nocoursesfuture'] = 'Κανένα μελλοντικό μάθημα';
-$string['nocoursesinprogress'] = 'Κανένα μάθημα σε εξέλιξη';
-$string['nocoursespast'] = 'Κανένα προηγούμενο μάθημα';
 $string['nocustomvalue'] = 'Καμία {$a}';
-$string['noevents'] = 'Καμία δραστηριότητα προσεχώς';
 $string['past'] = 'Προηγούμενα';
 $string['pluginname'] = 'Επισκόπηση μαθημάτων';
 $string['privacy:metadata:overviewgroupingpreference'] = 'Η προτίμηση ομαδοποίησης του μπλοκ επισκόπησης μαθημάτων.';
-$string['privacy:metadata:overviewlasttab'] = 'Αυτό αποθηκεύει την τελευταία καρτέλα που έχει επιλέξει ο χρήστης στο μπλοκ επισκόπησης.';
 $string['privacy:metadata:overviewpagingpreference'] = 'Η προτίμηση σελιδοποίησης του μπλοκ επισκόπησης μαθημάτων.';
 $string['privacy:metadata:overviewsortpreference'] = 'Η προτίμηση ταξινόμησης του μπλοκ επισκόπησης μαθημάτων.';
 $string['privacy:metadata:overviewviewpreference'] = 'Η προτίμηση προβολής του μπλοκ επισκόπησης μαθημάτων.';
 $string['privacy:request:preference:set'] = 'Η τιμή της ρύθμισης «{$a->name}» ήταν «{$a->value}»';
-$string['recentlyoverdue'] = 'Προσφάτως εκπρόθεσμα';
 $string['removefromfavourites'] = 'Αφαίρεση της επισήμανσης με αστερίσκο από το μάθημα';
+$string['shortname'] = 'Σύντομο μήνυμα';
 $string['show'] = 'Επαναφορά στην εμφάνιση';
-$string['sortbycourses'] = 'Ταξινόμηση κατά μάθημα';
-$string['sortbydates'] = 'Ταξινόμηση κατά ημερομηνία';
 $string['summary'] = 'Περίληψη';
-$string['timeline'] = 'Χρονοδιάγραμμα';
 $string['title'] = 'Όνομα μαθήματος';
-$string['viewcourse'] = 'Εμφάνιση μαθήματος';
-$string['viewcoursename'] = 'Εμφάνιση μαθήματος {$a}';

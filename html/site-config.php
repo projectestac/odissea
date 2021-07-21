@@ -1,27 +1,36 @@
 <?php
 
-require_once(INSTALL_BASE . '/html/config/dblib-mysql.php');
+require_once $agora['server']['root'] . '/html/config/dblib-mysql.php';
 
 global $school_info;
 
 $centre = getSchoolInfo('moodle2');
 
-if (isset($school_info['state_moodle2']) && ($school_info['state_moodle2'] == '-5')) {
-    setcookie($agora['server']['cookie'], '', time(), '/'); // Force cookie to expire
-    header('Location: ' . WWWROOT . 'error.php?s=moodle&migrating=' . $centre);
-    exit();
-}
+// Check for special status of the services
+if (isset($school_info['state_moodle2']) && ($school_info['state_moodle2'] != '1')) {
 
-if (isset($school_info['state_moodle2']) && ($school_info['state_moodle2'] == '-6')) {
-    setcookie($agora['server']['cookie'], '', time(), '/'); // Force cookie to expire
-    header('Location: ' . WWWROOT . 'error.php?s=moodle&migrated=' . $centre);
-    exit();
-}
+    // Force cookie to expire
+    setcookie($agora['server']['cookie'], '', time(), '/');
 
-if (isset($school_info['state_moodle2']) && ($school_info['state_moodle2'] == '-7') && ($school_info['id_moodle2'] != '1')) {
-    setcookie($agora['server']['cookie'], '', time(), '/'); // Force cookie to expire
-    header('Location: ' . WWWROOT . 'error.php?s=moodle&saturated=' . $centre);
-    exit();
+    switch ($school_info['state_moodle2']) {
+        case '-5':
+            $status = 'migrating';
+            break;
+        case '-6':
+            $status = 'migrated';
+            break;
+        case '-7':
+            $status = ($school_info['id_moodle2'] != '1') ? 'saturated' : 'active';
+            break;
+        default:
+            $status = '';
+            exit();
+    }
+
+    if ($status != 'active') {
+        header('Location: ' . WWWROOT . 'error.php?s=moodle&' . $status . '=' . $centre);
+        exit();
+    }
 }
 
 $CFG->dbhost = $school_info['dbhost_moodle2'];
@@ -46,9 +55,10 @@ if (isset($_SERVER['HTTP_HOST']) && isset($_SERVER['REQUEST_URI'])) {
     }
 }
 
-$CFG->dataroot = INSTALL_BASE . '/' . get_filepath_moodle();
+$CFG->dataroot = $agora['server']['root'] . '/' . $agora['moodle2']['datadir'] . $agora['moodle2']['userprefix'] . $school_info['id_moodle2'];
+
 if (!empty($agora['server']['temp'])) {
-    $CFG->tempdir = $agora['server']['temp'] . '/' . get_filepath_moodle();
+    $CFG->tempdir = $agora['server']['temp'] . '/' . $agora['moodle2']['datadir'] . $agora['moodle2']['userprefix'] . $school_info['id_moodle2'];;
 }
 
 $CFG->dnscentre = $centre;

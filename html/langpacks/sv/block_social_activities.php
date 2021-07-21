@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_social_activities', language 'sv', version '3.8'.
+ * Strings for component 'block_social_activities', language 'sv', version '3.11'.
  *
  * @package     block_social_activities
  * @category    string
@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Sociala aktiviteter';
+$string['privacy:metadata'] = 'Blocket Sociala aktiviteter visar endast data som lagras på andra platser.';
+$string['social_activities:addinstance'] = 'Lägg till nytt Sociala aktiviteter-block';

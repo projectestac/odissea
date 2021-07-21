@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'eu', version '3.8'.
+ * Strings for component 'assign', language 'eu', version '3.11'.
  *
  * @package     assign
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:submissionsdue'] = 'Entregatze-data:';
+$string['activitydate:submissionsopen'] = 'Hasiera-data:';
+$string['activitydate:submissionsopened'] = 'Hasiera-data:';
 $string['activityoverview'] = 'Zain dituzu hainbat zeregin';
 $string['addattempt'] = 'Baimendu beste saiakera bat';
 $string['addnewattempt'] = 'Gehitu saiakera berria';
@@ -61,8 +64,9 @@ $string['assign:reviewgrades'] = 'Berrikusi kalifikazioak';
 $string['assign:showhiddengrader'] = 'Ikusi ezkutuko kalifikatzailearen identitatea';
 $string['assign:submit'] = 'Bidali zeregina';
 $string['assign:view'] = 'Ikusi zeregina';
-$string['assign:viewblinddetails'] = 'Ikusi ikasleen identitateak kalifikazio itsua gaituta dagoenean';
+$string['assign:viewblinddetails'] = 'Ikusi ikasleen identitateak bidalketa anonimoak gaituta daudeunean';
 $string['assign:viewgrades'] = 'Ikusi kalifikazioak';
+$string['assign:viewownsubmissionsummary'] = 'Ikusi norbere bidalketaren laburpena';
 $string['assignfeedback'] = 'Feedbackaren plugina';
 $string['assignfeedbackpluginname'] = 'Feedbackaren plugina';
 $string['assignmentisdue'] = 'Epea amaitu da';
@@ -82,13 +86,12 @@ $string['assignsubmissionpluginname'] = 'Bidalketaren plugina';
 $string['attemptheading'] = '{$a->attemptnumber} saiakera: {$a->submissionsummary}';
 $string['attempthistory'] = 'Aurreko saiakerak';
 $string['attemptnumber'] = 'Saiakera-kopurua';
-$string['attemptreopenmethod'] = 'Saiakerak berriro ireki dira';
-$string['attemptreopenmethod_help'] = 'Ikasleen bidalketa-saiakerak nola berrirekitzen diren zehazten du. Aukera hauek
-daude:
+$string['attemptreopenmethod'] = 'Saiakera gehigarriak';
+$string['attemptreopenmethod_help'] = 'Ezarpen honek ikasle batek zereginean saiakera gehigarriak egin ditzakeen zehazten du. Saiakera bakoitzaren kalifikazioa eta feedbacka gordetzen dira, eta irakasleek zein ikasleak ikusi ditzakete. Hauek dira eskuragarri dauden aukerak:
 
-* Inoiz ez - Bidalketa ezin da berrireki.
-* Eskuz - Irakasle batek ikaslearen bidalketa berrireki ahal izango du.
-* Automatikoki gainditu arte - Bidalketa automatikoki berrirekiko da ikasleak kalifikazio liburuan zeregin hau gainditzeko zehaztutako kalifikazioa lortu arte.';
+* Inoiz ez - Bidalketa bakarra onartzen da.
+* Eskuz - Irakasle batek ikaslearen saiakera gehigarriak baimendu ditzake.
+* Automatikoki gainditu arte - Saiakera gehigarriak automatikoki baimenduko dira ikasleak kalifikazio liburuan zeregin hau gainditzeko zehaztutako kalifikazioa lortu arte.';
 $string['attemptreopenmethod_manual'] = 'Eskuz';
 $string['attemptreopenmethod_none'] = 'Inoiz ere ez';
 $string['attemptreopenmethod_untilpass'] = 'Automatikoki gainditu arte';
@@ -110,9 +113,10 @@ $string['batchoperationsdescription'] = 'Aukeratutakoekin...';
 $string['batchoperationunlock'] = 'desblokeatu bidalketak';
 $string['batchsetallocatedmarker'] = 'Esleitu kalifikatzailea aukeratutako {$a} erabiltzaileri.';
 $string['batchsetmarkingworkflowstateforusers'] = 'Aukeratutako {$a} erabiltzaileri kalifikazio lan-fluxu egoera esleitu zaie.';
-$string['blindmarking'] = 'Kalifikazio itsua';
-$string['blindmarking_help'] = 'Kalifikazio itsuak kalifikatzaileei ikasleen identitatea ezkutatzen die. Kalifikazio itsuaren ezarpenak blokeatuko dira zeregin horretan bidalketa edo kalifikazio bat eginez gero.';
-$string['blindmarkingenabledwarning'] = 'Kalifikazio itsua gaituta dago jarduera honetan.';
+$string['blindmarking'] = 'Bidalketa anonimoak';
+$string['blindmarking_help'] = 'Bidalketa anonimoak kalifikatzaileei ikasleen identitatea ezkutatzen die. Bidalketa anonimoen ezarpenak blokeatuko dira zeregin horretan bidalketa edo kalifikazio bat egiterakoan.';
+$string['blindmarkingenabledwarning'] = 'Bidalketa anonimoak gaituta daude jarduera honetan. Kalifikazio-ekintzen menutik ikasleen identitatea ezagutarazi arte kalifikazioak ez dira kalifikazio-liburura gehituko.';
+$string['cachedef_overrides'] = 'Erabiltzaile eta talde-salbuespenen informazioa';
 $string['calendardue'] = '{$a}-(r)en entregatze-data';
 $string['calendargradingdue'] = '{$a}-(r)en kalifikazio-data';
 $string['changefilters'] = 'Aldatu iragazkiak';
@@ -124,6 +128,7 @@ $string['clickexpandreviewpanel'] = 'Egin klik berrikusketa-panela zabaltzeko';
 $string['collapsegradepanel'] = 'Tolestu kalifikazio-panela';
 $string['collapsereviewpanel'] = 'Tolestu berrikusketa-panela';
 $string['comment'] = 'Iruzkina';
+$string['completiondetail:submit'] = 'Bidalketa bat egitea';
 $string['completionsubmit'] = 'Ikasleak bidalketa egin behar du jarduera honetan osatutzat emateko';
 $string['configshowrecentsubmissions'] = 'Duela gutxiko aktibitatearen txostenetan guztiek ikus ditzakete bidalketen jakinarazpenak';
 $string['confirmbatchgradingoperation'] = 'Ziur zaude {$a->operation} nahi duzula {$a->count} ikaslerentzat?';
@@ -134,7 +139,7 @@ $string['couldnotconvertgrade'] = 'Ezin izan da bihurtu zereginaren kalifikazioa
 $string['couldnotconvertsubmission'] = 'Ezin izan da bihurtu zereginaren bidalketa {$a} erabiltzailearentzat.';
 $string['couldnotcreatecoursemodule'] = 'Ezin izan da ikastaroaren modulua sortu.';
 $string['couldnotcreatenewassignmentinstance'] = 'Ezin izan da sortu zeregin berria.';
-$string['couldnotfindassignmenttoupgrade'] = 'Ez da aurkitu zeregin zaharra bertsio-berritzeko.';
+$string['couldnotfindassignmenttoupgrade'] = 'Ez da aurkitu zeregin zaharra eguneratzeko.';
 $string['crontask'] = 'Zeregin-moduluaren atzeko planoko prozesatzea';
 $string['currentassigngrade'] = 'Zereginaren kalifikazioa';
 $string['currentattempt'] = 'Hau da {$a} saiakera.';
@@ -154,7 +159,7 @@ $string['description'] = 'Deskribapena';
 $string['disabled'] = 'Desgaituta';
 $string['downloadall'] = 'Jaitsi bidalketa guztiak';
 $string['downloadasfolders'] = 'Jaitsi bidalketak karpetetan';
-$string['downloadasfolders_help'] = 'Zereginaren bidalketak karpetetan deskargatu daitezke. Bidalketa bakoitza karpeta ezberdin batean sartzen da, azpikarpeten egitura mantenduta, eta fitxategia berrizendatu gabe.';
+$string['downloadasfolders_help'] = 'Zereginaren bidalketak karpetetan deskargatu daitezke. Bidalketa bakoitza karpeta ezberdin batean sartzen da, azpikarpeten egitura mantenduta, eta fitxategiaren izena aldatu gabe.';
 $string['downloadselectedsubmissions'] = 'Jaitsi aukeratutako bidalketak';
 $string['duedate'] = 'Entregatze-data';
 $string['duedate_help'] = 'Hau zereginaren entregatze-epea da. Bidalketak onartuko dira data hau baino beranduago, baina bidalketa atzeratuen seinalea jarriko zaio. Ezarri zereginaren itxiera-data une horren ondorengo bidalketak saihesteko.';
@@ -233,6 +238,7 @@ $string['feedbacksettings'] = 'Feedbackaren ezarpenak';
 $string['feedbacktypes'] = 'Feedback motak';
 $string['filesubmissions'] = 'Fitxategi-bidalketak';
 $string['filter'] = 'Iragazkia';
+$string['filterdraft'] = 'Zirriborroa';
 $string['filtergrantedextension'] = 'Baimendutako luzapena';
 $string['filternone'] = 'Iragazkirik ez';
 $string['filternotsubmitted'] = 'Bidali gabea';
@@ -254,10 +260,10 @@ $string['gradelocked'] = 'Kalifikazio hau blokeatu edo aldatu da kalifikazio-lib
 $string['gradeoutof'] = 'Kalifikazioa (gehienezko {$a}(e)tik)';
 $string['gradeoutofhelp'] = 'Kalifikazioa';
 $string['gradeoutofhelp_help'] = 'Idatzi hemen ikasleak egindako bidalketaren kalifikazioa. Hamartarrak ere sar ditzakezu.';
-$string['gradersubmissionupdatedhtml'] = '{$a->username}(e)k bidalketa eguneratu du ondorengo zereginean: <i>\'{$a->assignment}\'</i><br/><br/>
-Web-gune honetan ikusgai: <a href="{$a->url}"></a>.';
-$string['gradersubmissionupdatedsmall'] = '{$a->username}(e)k bidalketa eguneratu du  zeregin honetan: {$a->assignment}.';
-$string['gradersubmissionupdatedtext'] = '{$a->username}(e)k bidalketa eguneratu du zeregin honetan: \'{$a->assignment}\'  {$a->timeupdated} orduan
+$string['gradersubmissionupdatedhtml'] = '{$a->username}(e)k bidalketa eguneratu du <i>\'{$a->assignment}\' zereginean ({$a->timeupdated})</i><br/><br/>
+Ikusgai dago <a href="{$a->url}">webgune honetan</a>.';
+$string['gradersubmissionupdatedsmall'] = '{$a->username}(e)k bidalketa eguneratu du {$a->assignment} zereginean.';
+$string['gradersubmissionupdatedtext'] = '{$a->username}(e)k bidalketa eguneratu du z{$a->assignment} zereginean ({$a->timeupdated})
 
 Hemen ikusgai:
 
@@ -287,7 +293,7 @@ $string['hidegrader_help'] = 'Gaituz gero, zereginaren bidalketen kalifikazioak 
 
 Kontuan izan ezarpen honek ez duela eraginik ebaluazio-orriko iruzkinen kutxan.';
 $string['hideshow'] = 'Ezkutatu/Erakutsi';
-$string['inactiveoverridehelp'] = '* Baliogabetze hau ez-aktibo dago erabiltzailearen jarduerarako sarbidea murriztuta dagoelako. Honen arrazoia taldeko edo rol-esleipena izan daiteke, bestelako eskuragarritasun baldintzak edo jarduera ezkutuan egotea.';
+$string['inactiveoverridehelp'] = '* Salbuespen hau ez-aktibo dago erabiltzailearen jarduerarako sarbidea murriztuta dagoelako. Honen arrazoia taldeko edo rol-esleipena izan daiteke, bestelako eskuragarritasun baldintzak edo jarduera ezkutuan egotea.';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa zereginetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak zeregina motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa zereginetan';
@@ -340,7 +346,7 @@ $string['maxperpage'] = 'Gehienezko zereginak orriko';
 $string['maxperpage_help'] = 'Kalifikatzaile batek kalifikazio orrian gehienez erakutsi ditzakeen zeregin kopurua. Ezarpen hau erabilgarria da partaide asko dituzten ikastaroetan kargatzeko gehienezko denbora-atalasea ekiditeko.';
 $string['messageprovider:assign_notification'] = 'Zereginaren jakinarazpenak';
 $string['modulename'] = 'Zeregina';
-$string['modulename_help'] = 'Zeregin jarduera moduluaren bidez irakasleak komunikatu ditzake atazak, jaso ditzake ikasleen lanak eta eman ditzake kalifikazioak eta feedbackak.
+$string['modulename_help'] = 'Zeregina jarduera moduluaren bidez irakasleak komunikatu ditzake atazak, jaso ditzake ikasleen lanak eta eman ditzake kalifikazioak eta feedbackak.
 
 Ikasleek eduki digitalak bidal ditzakete (fitxategiak), testu-dokumentuak kalkulu orriak, irudiak, audio-klipak edo bideo-klipak. Halaber, ikasleek zeregina egiteko garaian, idatz dezakete testu bat zuzenean testu-editorean. Zereginaren beste erabilera posible bat da \'mundu errealeko\' ataza bat ikasleei gogoraraztea, adibidez, arte-lan bat edo eduki digitalik eskatzen ez duen edozein lan. Ikasleek lana bidal dezakete banaka edo talde baten izenean.
 
@@ -405,7 +411,7 @@ $string['preventsubmissions'] = 'Galarazi erabiltzaileari zeregin honetan bidalk
 $string['preventsubmissionsshort'] = 'Galarazi bidalketan aldaketak egitea';
 $string['previous'] = 'Aurrekoa';
 $string['privacy:attemptpath'] = 'saiakera {$a}';
-$string['privacy:blindmarkingidentifier'] = 'Kalifikazio itsurako erabilitako identifikatzailea';
+$string['privacy:blindmarkingidentifier'] = 'Bidalketa anonimorako erabilitako identifikatzailea';
 $string['privacy:gradepath'] = 'kalifikazioa';
 $string['privacy:metadata:assigndownloadasfolders'] = 'Erabiltzailearen lehenespena fitxategi anitzeko bidalketak karpetatan jaisteko.';
 $string['privacy:metadata:assignfeedbackpluginsummary'] = 'Zereginaretarako feedback-data';
@@ -420,7 +426,7 @@ $string['privacy:metadata:assignquickgrading'] = 'Kalifikazio azkarra erakustear
 $string['privacy:metadata:assignsubmissiondetail'] = 'Erabiltzailearen bidalketez informazioa gordetzen du.';
 $string['privacy:metadata:assignsubmissionpluginsummary'] = 'Zereginaren bidalketa-data';
 $string['privacy:metadata:assignuserflags'] = 'Erabitzailearen metadatuak gordetzen ditu, hala nola, luzapen-datak';
-$string['privacy:metadata:assignusermapping'] = 'Kalifikazio itsuetarako loturak';
+$string['privacy:metadata:assignusermapping'] = 'Bidalketa anonimoetarako loturak';
 $string['privacy:metadata:assignworkflowfilter'] = 'Laneko fluxu mailen araberako iragazkia';
 $string['privacy:metadata:grade'] = 'Zereginaren bidalketa honetarako zenbakizko kalifikazioa. Adibidez, scales/advancedgradingforms direlakoen arabera ezar daitezke, baina beti koma higikorreko zenbakitara berriro pasako da.';
 $string['privacy:metadata:grader'] = 'Kalifikatzailearen erabiltzailearen IDa.';
@@ -445,7 +451,7 @@ $string['removesubmission'] = 'Ezabatu bidalketa';
 $string['removesubmissionconfirm'] = 'Ziur zaude bidalketaren datuak ezabatu nahi dituzula?';
 $string['removesubmissionconfirmforstudent'] = 'Ziur zaude {$a} ikaslearen bidalketaren datuak ezabatu nahi dituzula?';
 $string['removesubmissionforstudent'] = 'Ezabatu ikaslearen bidalketa:  (IDa={$a->id}, izen osoa={$a->fullname}).';
-$string['reopenuntilpassincompatiblewithblindmarking'] = 'Gainditu arte berrireki aukera ez da bategarria kalifikazio itsuarekin, kalifikazioak ez direlako kalifikatzailera bidaltzen ikasleen identitateak ezagutarazi arte.';
+$string['reopenuntilpassincompatiblewithblindmarking'] = 'Gainditu arte berrireki aukera ez da bateragarria bidalketa anonimekin, kalifikazioak ez direlako kalifikatzailera bidaltzen ikasleen identitateak ezagutarazi arte.';
 $string['requireallteammemberssubmit'] = 'Behartu taldekide guztiak bidalketa egitera';
 $string['requireallteammemberssubmit_help'] = 'Gaituz gero, bidalketa amaitutzat emateko taldekide guztiek bidalketa-botoian klik egin behar dute. Desgaituz gero, bidalketa egina egongo da taldekide bakar batek bidalketa egin bezain laster.';
 $string['requiresubmissionstatement'] = 'Behartu ikasleak bidalketa-adierazpena onartzera';
@@ -453,7 +459,7 @@ $string['requiresubmissionstatement_help'] = 'Behartu ikasleak bidalketa-adieraz
 $string['revealidentities'] = 'Ezagutarazi ikasleen identitatea';
 $string['revealidentitiesconfirm'] = 'Ziur zaude ikasleen identitatea jakinarazi nahi duzula zeregin honetan? Eragiketa hau ezin da desegin. Behin ikasleen identitateak jakinarazi direla, kalifikazioak kalifikazio liburura bidaliko dira.';
 $string['reverttodefaults'] = 'Itzuli zereginaren balio lehenetsietara';
-$string['reverttodraft'] = 'Itzuli bidalketa zirriborro egoerara.';
+$string['reverttodraft'] = 'Itzuli bidalketa zirriborro egoerara';
 $string['reverttodraftforstudent'] = 'Itzuli ikasle honen bidalketa zirriborro egoerara: (id={$a->id}, izen osoa={$a->fullname}).';
 $string['reverttodraftshort'] = 'Itzuli bidalketa zirriborrora';
 $string['reviewed'] = 'Berrikusia';
@@ -567,7 +573,7 @@ $string['subplugintype_assignsubmission'] = 'Bidalketa-plugina';
 $string['subplugintype_assignsubmission_plural'] = 'Bidalketa-pluginak';
 $string['teamname'] = 'Taldea: {$a}';
 $string['teamsubmission'] = 'Ikasleek taldeka bidaliko dute';
-$string['teamsubmission_help'] = 'Gaituz gero, ikasleak lehenetsitako talde-multzoaren arabera edo taldekatze jakin baten arabera banatuko dira. Taldeko bidalketa bat taldeko kide guztien artean partekatuko da eta taldekide guztiek ikusiko dute bidalketari beste taldekideek egindako aldaketak.';
+$string['teamsubmission_help'] = 'Gaituz gero, ikasleak lehenetsitako talde-multzoaren arabera edo talde-multzo jakin baten arabera banatuko dira. Taldeko bidalketa bat taldeko kide guztien artean partekatuko da eta taldekide guztiek ikusiko dute bidalketari beste taldekideek egindako aldaketak.';
 $string['teamsubmissiongroupingid'] = 'Ikasle-taldeen talde-multzoa';
 $string['teamsubmissiongroupingid_help'] = 'Zereginak talde-multzo hau erabiliko du ikasle-taldeak aurkitzeko. Zehazten ez bada, lehenetsitako talde multzoa erabiliko da.';
 $string['textinstructions'] = 'Zereginerako argibideak';

@@ -1241,9 +1241,10 @@ class moodle_page {
      * This is normally used as the main heading at the top of the content.
      *
      * @param string $heading the main heading that should be displayed at the top of the <body>.
+     * @param bool $applyformatting apply format_string() - by default true.
      */
-    public function set_heading($heading) {
-        $this->_heading = format_string($heading);
+    public function set_heading($heading, bool $applyformatting = true) {
+        $this->_heading = $applyformatting ? format_string($heading) : clean_text($heading);
     }
 
     /**
@@ -1570,6 +1571,15 @@ class moodle_page {
         }
 
         $this->_wherethemewasinitialised = debug_backtrace();
+    }
+
+    /**
+     * For diagnostic/debugging purposes, find where the theme setup was triggered.
+     *
+     * @return null|array null if theme not yet setup. Stacktrace if it was.
+     */
+    public function get_where_theme_was_initialised() {
+        return $this->_wherethemewasinitialised;
     }
 
     /**

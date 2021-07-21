@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_usertours', language 'pt', version '3.8'.
+ * Strings for component 'tool_usertours', language 'pt', version '3.11'.
  *
  * @package     tool_usertours
  * @category    string
@@ -64,12 +64,20 @@ $string['event_tour_ended'] = 'Demonstração terminada';
 $string['event_tour_reset'] = 'Reiniciar demonstração';
 $string['event_tour_started'] = 'Demonstração iniciada';
 $string['exporttour'] = 'Exportar demonstração';
+$string['filter_accessdate'] = 'Data de acesso';
+$string['filter_accessdate_enabled'] = 'Ativar filtro de data de acesso';
+$string['filter_accessdate_enabled_help'] = 'Mostrar a demonstração apenas aos novos utilizadores ou aos que acederam o site recentemente.';
 $string['filter_category'] = 'Categoria';
 $string['filter_category_help'] = 'Mostrar o tour numa página que está associada com a categoria selecionada.';
 $string['filter_course'] = 'Disciplinas';
 $string['filter_course_help'] = 'Mostrar a demontração numa página que está associada à disciplina selecionada.';
 $string['filter_courseformat'] = 'Formato de disciplina';
 $string['filter_courseformat_help'] = 'Mostrar a demonstração numa página que está associada à disciplina selecionada usando o formato da disciplina selecionada.';
+$string['filter_cssselector'] = 'Seletor CSS';
+$string['filter_cssselector_help'] = 'Mostrar a demonstração ao utilizador apenas quando o seletor CSS especificado for encontrado na página.';
+$string['filter_date_account_creation'] = 'Data de criação da conta do utilizador entre';
+$string['filter_date_first_login'] = 'Data do primeiro acesso do utilizador entre';
+$string['filter_date_last_login'] = 'Data do primeiro acesso do utilizador entre';
 $string['filter_header'] = 'Filtros da demonstração';
 $string['filter_help'] = 'Selecione as condições sob as quais a demonstração será mostrada. Todos os filtros devem corresponder a uma demonstração a ser mostrada a um utilizador.';
 $string['filter_role'] = 'Papel';
@@ -87,13 +95,14 @@ $string['name'] = 'Nome';
 $string['newstep'] = 'Nova etapa';
 $string['newtour'] = 'Criar nova demonstração';
 $string['next'] = 'Seguinte';
+$string['nextstep'] = 'Seguinte';
 $string['options_heading'] = 'Opções';
 $string['orphan'] = 'Mostrar se o destino não for encontrado';
 $string['orphan_help'] = 'Mostre a etapa se o destino não for encontrado na página.';
 $string['pathmatch'] = 'Aplicar à correspondência do URL';
 $string['pathmatch_help'] = 'As demonstrações serão mostradas em qualquer página cujo URL corresponda a este valor.
 
-Pode usar % como carácter universal para dar significado a qualquer coisa.
+Pode usar % como caráter universal para dar significado a qualquer coisa.
 Alguns exemplos de valores:
 
 * /my/% - para corresponder ao Painel do utilizador
@@ -104,10 +113,11 @@ Alguns exemplos de valores:
 Se pretender mostrar uma demonstração na Página inicial do site, pode usar o valor: "FRONTPAGE".';
 $string['pausetour'] = 'Pausa';
 $string['placement'] = 'Posicionamento';
-$string['placement_help'] = 'Uma etapa pode ser colocada acima, abaixo, à esquerda ou à direita do destino. Acima ou abaixo é recomendado, uma vez que se ajustam melhor em dispositivos móveis.
+$string['placement_help'] = 'Uma etapa pode ser colocada acima, abaixo, à esquerda ou à direita do destino. É recomendado acima ou abaixo, uma vez que se ajustam melhor em dispositivos móveis.
 
 Se não for possível ajustar a etapa no local especificado de uma determinada página, ela será automaticamente colocada noutro lugar.';
 $string['pluginname'] = 'Demonstrações ao utilizador';
+$string['previousstep'] = 'Anterior';
 $string['privacy:metadata:preference:completed'] = 'A data/hora em que um utilizador completou pela última vez uma demonstração de utilizador.';
 $string['privacy:metadata:preference:requested'] = 'A data/hora em que um utilizador solicitou pela última vez uma demonstração de utilizador.';
 $string['privacy:request:preference:completed'] = 'A última vez que marcou como concluída a demonstração de utilizador "{$a->name}" foi em {$a->time}';
@@ -169,10 +179,10 @@ $string['tour2_title_opendrawer'] = 'Abrir o menu de navegação';
 $string['tour2_title_participants'] = 'Participantes da disciplina';
 $string['tour2_title_welcome'] = 'Bem-vindo';
 $string['tour3_content_dashboard'] = 'O novo Painel do utilizador tem muitas funcionalidades para facilitar o fácil acesso às informações mais importantes.';
-$string['tour3_content_displayoptions'] = 'As disciplinas podem ser ordenadas por nome da disciplina ou pela data do último acesso.
+$string['tour3_content_displayoptions'] = 'As disciplinas podem ser ordenadas por nome da disciplina, nome curto ou pela data do último acesso.
 
 Também pode optar por mostrar as disciplinas numa lista, com descrição, ou a exibição predefinida de \'cartões\'.';
-$string['tour3_content_overview'] = 'O bloco Minhas disciplinas mostra todas as disciplinas em que está inscrito.
+$string['tour3_content_overview'] = 'O bloco \'Minhas disciplinas\' mostra todas as disciplinas em que está inscrito.
 
 Pode optar por mostrar as disciplinas atualmente em progresso, as já terminadas, as a iniciar ou as disciplinas que marcou com estrela.';
 $string['tour3_content_recentcourses'] = 'O bloco Disciplinas acedidas recentemente mostra as últimas disciplinas que visitou, o que permite uma navegação rápida para as disciplinas visitadas.';
@@ -188,7 +198,7 @@ Pode optar por mostrar atividades da próxima semana, mês ou no futuro.
 Também pode mostrar itens que já terminaram.';
 $string['tour3_title_dashboard'] = 'Painel do utilizador';
 $string['tour3_title_displayoptions'] = 'Opções de visualização';
-$string['tour3_title_overview'] = 'Visão geral da disciplina';
+$string['tour3_title_overview'] = 'Visão global da disciplina';
 $string['tour3_title_recentcourses'] = 'Disciplinas acedidas recentemente';
 $string['tour3_title_starring'] = 'Marcar com estrela e ocultar disciplinas';
 $string['tour3_title_timeline'] = 'Bloco Cronograma';
@@ -208,6 +218,16 @@ $string['tour4_title_icon'] = 'Enviar mensagens';
 $string['tour4_title_messaging'] = 'Nova interface do envio de mensagens';
 $string['tour4_title_settings'] = 'Configurações do envio de mensagens';
 $string['tour4_title_starred'] = 'Com estrela';
+$string['tour_activityinfo_activity_student_content'] = 'As datas e as condições de conclusão da atividade são mostrados na página da atividade.';
+$string['tour_activityinfo_activity_student_title'] = 'Novo: Informação da atividade';
+$string['tour_activityinfo_activity_teacher_content'] = 'As datas e as condições de conclusão da atividade são mostrada aos alunos em cada página da atividade (e opcionalmente na página da disciplina).
+
+Para atividades que requerem que os alunos marquem manualmente uma atividade como concluída, é mostrado na página da atividade o botão \'Marcar como concluída\'.';
+$string['tour_activityinfo_activity_teacher_title'] = 'Novo: Informação da atividade';
+$string['tour_activityinfo_course_student_content'] = 'As datas e/ou as condições de conclusão da atividade são mostrados na página da disciplina.';
+$string['tour_activityinfo_course_student_title'] = 'Novo: Informação da atividade';
+$string['tour_activityinfo_course_teacher_content'] = 'As novas configurações da disciplina \'Mostrar condições de conclusão da atividade\' e \'Mostrar datas das atividades\' permitem que escolha se as condições de conclusão da atividade (se definidas) e/ou as datas são exibidas, ou não, para os alunos na página da disciplina.';
+$string['tour_activityinfo_course_teacher_title'] = 'Novo: Informação da atividade';
 $string['tour_final_step_content'] = 'Chegou ao fim da demonstração ao utilizador. Não será mostrada novamente a menos que a reponha através da hiperligação existente no rodapé.';
 $string['tour_final_step_title'] = 'Fim da demonstração';
 $string['tour_resetforall'] = 'O estado da demonstração foi redefinido. Será mostrada novamente a todos os utilizadores.';

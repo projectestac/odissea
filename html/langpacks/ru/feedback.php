@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ru', version '3.8'.
+ * Strings for component 'feedback', language 'ru', version '3.11'.
  *
  * @package     feedback
  * @category    string
@@ -147,6 +147,8 @@ $string['importfromthisfile'] = 'импорт из файла';
 $string['includeuserinrecipientslist'] = 'Включить {$a} в список получателей';
 $string['indicator:cognitivedepth'] = 'Обратная связь: познавательный аспект';
 $string['indicator:cognitivedepth_help'] = 'Этот показатель основан на глубине познания, достигнутой студентом при работе с элементом курса «Обратная связь».';
+$string['indicator:cognitivedepthdef'] = 'Обратная связь: познавательный аспект';
+$string['indicator:cognitivedepthdef_help'] = 'Участник достиг этого процента познавательного взаимодействия, предлагаемого элементом курса «Обратная связь» в течение этого интервала анализа (Уровни = Нет просмотра, Просмотр, Отправка)';
 $string['indicator:socialbreadth'] = 'Обратная связь: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с элементом Обратная связь.';
 $string['indicator:socialbreadthdef'] = 'Обратная связь: социальный аспект';

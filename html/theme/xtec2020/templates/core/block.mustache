@@ -16,7 +16,7 @@
 }}
 {{! Block Skip Link }}
 {{#showskiplink}}
-  <a href="#sb-{{skipid}}" class="sr-only sr-only-focusable">{{#str}}skipa, access, {{title}}{{/str}}</a>
+  <a href="#sb-{{skipid}}" class="sr-only sr-only-focusable">{{#str}}skipa, access, {{{title}}}{{/str}}</a>
 {{/showskiplink}}
 
 {{! Start Block Container }}
@@ -41,7 +41,7 @@
           <div class="block-header p-3">
             <h5 id="instance-{{blockinstanceid}}-header" class="card-title d-inline">{{{title}}}</h5>
             {{#hascontrols}}
-                <div class="block-controls float-right">
+                <div class="block-controls float-right header">
                     {{{controls}}}
                 </div>
             {{/hascontrols}}

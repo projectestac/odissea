@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'wiki', language 'es', version '3.8'.
+ * Strings for component 'wiki', language 'es', version '3.11'.
  *
  * @package     wiki
  * @category    string
@@ -121,8 +121,12 @@ $string['incorrectsubwikiid'] = 'El ID de subwiki es incorrecto';
 $string['incorrectwikiid'] = 'El ID de la wiki es incorrecto.';
 $string['indicator:cognitivedepth'] = 'Wiki cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Wiki.';
+$string['indicator:cognitivedepthdef'] = 'Wiki cognitivo';
+$string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades de Wiki durante este intervalo de análisis (Niveles = Sin vista, Vista, Enviar)';
 $string['indicator:socialbreadth'] = 'Wiki social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad de Wiki.';
+$string['indicator:socialbreadthdef'] = 'Wiki social';
+$string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje de compromiso social ofrecido por las actividades de Wiki durante este intervalo de análisis (Niveles = Sin participación, Participante solo, Participante con otros)';
 $string['individualpagedoesnotexist'] = 'La página individual wiki no existe';
 $string['insertcomment'] = 'Insertar comentario';
 $string['insertimage'] = 'Inserta una imagen...';

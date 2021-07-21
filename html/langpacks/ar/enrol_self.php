@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'ar', version '3.8'.
+ * Strings for component 'enrol_self', language 'ar', version '3.11'.
  *
  * @package     enrol_self
  * @category    string
@@ -95,16 +95,17 @@ $string['password_help'] = 'مفتاح الانضمام يسمح بحصر الو
 $string['passwordinvalid'] = 'مفتاح الانضمام غير صحيح، لطفاً، حاول مجدداً';
 $string['passwordinvalidhint'] = 'مفتاح التسجيل غير صحيح. يرجى إعادة المحاولة<br />
 (هذا تلميح - إنه يبدأ بـ \'{$a}\'';
-$string['pluginname'] = 'التسجيل الذاتي';
+$string['pluginname'] = 'الانضمام الذاتي';
 $string['pluginname_desc'] = 'ملحق الانضمام الذاتي يسمح للمستخدمين باختيار المقررات الدراسية التي يريدون المشاركة فيها. قد تكون المقررات الدراسية محمية بمفاتيح انضمام. داخلياً، يتم تنفيذ الانضمام من قبل ملحق الانضمام اليدوي والذي ينبغي تمكينه في نفس المقرر.';
 $string['privacy:metadata'] = 'ملحق الانضمام الذاتي لا يخزن أي بيانات شخصية.';
 $string['requirepassword'] = 'يتطلب مفتاح الانضمام';
 $string['requirepassword_desc'] = 'يتطلب وجود مفتاح الانضمام في المقررات الدراسية الجديدة ويمنع إزالة مفاتيح الانضمام من المقررات الدراسية الموجودة.';
 $string['role'] = 'تعيين الدور الافتراضي';
 $string['self:config'] = 'تهيئة عينات الانضمام الذاتي';
+$string['self:enrolself'] = 'ضم نفسه إلى المقرر الدراسي';
 $string['self:holdkey'] = 'الظهور بمثابة حامل مفتاح الانضمام الذاتي';
 $string['self:manage'] = 'إدارة المستخدمين المنضمين';
-$string['self:unenrol'] = 'إلغاء تسجيل المستخدمين من مقرر';
+$string['self:unenrol'] = 'إلغاء انضمام المستخدمين إلى المقرر الدراسي';
 $string['self:unenrolself'] = 'إلغاء انضمامه إلى المقرر الدراسي';
 $string['sendcoursewelcomemessage'] = 'أرسل رسالة ترحيب المقرر الدراسي';
 $string['sendcoursewelcomemessage_help'] = 'عند انضمام المستخدم ذاتياً إلى مقرر، قد ترسل له رسالة ترحيبية عبر البريد الالكتروني. إذا تم إرسالها من عنوان اتصال المقرر الدراسي (إفتراضياً هو المعلم)، وكان هناك أكثر من مستخدم واحد يحملون هذا الدور، فالرسالة ستُرسل من قبل المستخدم الذي حصل على الدور أولاً.';

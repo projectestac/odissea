@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_clamav', language 'de', version '3.8'.
+ * Strings for component 'antivirus_clamav', language 'de', version '3.11'.
  *
  * @package     antivirus_clamav
  * @category    string
@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['antivirusfailed'] = 'Derzeit liegt ein Problem beim Scannen von AntiVirus vor. Ihre Datei {$a->item} wurde nicht hochgeladen. Versuchen Sie es später noch einmal.';
 $string['clamfailed'] = 'ClamAV wurde nicht vollständig ausgeführt. Die Fehlermeldung lautet: {$a}. Die Ausgabe von ClamAV ist:';
 $string['clamfailureonupload'] = 'Bei einem ClamAV-Fehler';
 $string['configclamactlikevirus'] = 'Dateien wie Viren behandeln';
 $string['configclamdonothing'] = 'Dateien als in Ordnung behandeln';
-$string['configclamfailureonupload'] = '<p>Was soll mit hochgeladenen Dateien passieren, wenn ClamAV falsch konfiguriert ist oder wegen eines Fehler nicht richtig funktioniert?</p>
-<p>Wenn Dateien \'wie Viren\' behandelt werden sollen, werden sie gelöscht oder in den Quarantänebereich verschoben. Wenn die Dateien \'als in Ordnung\' behandelt werden sollen, werden sie an der vorgesehenen Stelle gespeichert. Bei einem Fehler wird der Administrator über das Problem informiert.</p>
-<p>Falls Sie die Einstellung \'Dateien wie Viren behandeln\' wählen und gleichzeitig ClamAV nicht richtig ausgeführt wird, können keine Dateien mehr hochgeladen werden. Dies passiert z.B. bei einer ungültigen Pfadangabe zu ClamAV. Seien Sie mit dieser Einstellung vorsichtig.</p>';
+$string['configclamfailureonupload'] = 'Wenn "Dateien als OK behandeln" ausgewählt ist, werden die Dateien in das Zielverzeichnis verschoben. Wenn "Hochladen ablehnen, erneut versuchen" ausgewählt ist, werden Nutzer/innen aufgefordert, es später erneut zu versuchen.
+<br />Wenn "Dateien wie Viren behandeln" ausgewählt ist, werden Dateien in den Quarantänebereich verschoben oder gelöscht.
+<br />Warnung: Wenn mit dieser Option aus irgendeinem Grund die clam nicht ausgeführt werden kann (z.B. aufgrund eines ungültigen pathtoclam), werden ALLE hochgeladenen Dateien in den angegebenen Quarantänebereich verschoben oder gelöscht.';
+$string['configclamtryagain'] = 'Hochladen abgelehnt. Versuchen Sie es noch einmal-';
 $string['errorcantopensocket'] = 'Die Verbindung zum Unix Domain Socket führte zu einem Fehler: {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV reagiert nicht. Prüfen Sie den Ausführungsstatus des Deamons.';
 $string['errornounixsocketssupported'] = 'Die Verbindung über Unix Domain Sockets wird auf diesem System nicht unterstützt. Verwenden Sie stattdessen die Option \'Befehlszeile\'.';
@@ -46,5 +48,14 @@ $string['quarantinedir'] = 'Quarantäne-Verzeichnis';
 $string['runningmethod'] = 'Ausführungsmethode';
 $string['runningmethodcommandline'] = 'Befehlszeile';
 $string['runningmethoddesc'] = 'Methode zum Ausführen von ClamAV. Die Befehlszeile wird üblicherweise verwendet, aber auf Unix-Systemen könnte eine bessere Leistung durch die Verwendung von System-Sockets erreicht werden.';
+$string['runningmethodtcpsocket'] = 'TCP Socket';
 $string['runningmethodunixsocket'] = 'Unix Domain Socket';
+$string['tcpsockethost'] = 'TCP Socket Hostname';
+$string['tcpsockethostdesc'] = 'Domainname des ClamAV-Servers';
+$string['tcpsocketport'] = 'TCP Socket Port';
+$string['tcpsocketportdesc'] = 'Port, der für die Verbindung mit dem ClamAV-Server verwendet werden soll';
+$string['tries'] = 'Scanversuche';
+$string['tries_desc'] = 'Anzahl der Versuche, die ClamAV unternimmt, wenn während des Scanvorgangs ein Fehler auftritt.';
+$string['tries_notice'] = 'ClamAV Scan wurde {$a->tries}-mal versucht.
+{$a->notice}';
 $string['unknownerror'] = 'Ein unbekannter Fehler ist bei ClamAV aufgetreten.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'folder', language 'ja', version '3.8'.
+ * Strings for component 'folder', language 'ja', version '3.11'.
  *
  * @package     folder
  * @category    string
@@ -39,6 +39,8 @@ $string['folder:addinstance'] = '新しいフォルダを追加する';
 $string['folder:managefiles'] = 'フォルダモジュールのファイルを管理する';
 $string['folder:view'] = 'フォルダコンテンツを表示する';
 $string['foldercontent'] = 'ファイルおよびサブフォルダ';
+$string['forcedownload'] = 'ファイルのダウンロードを強制する';
+$string['forcedownload_help'] = 'イメージまたはHTMLファイル等の特定のファイルをダウンロードせずにブラウザで表示するかどうか決定します。セキュリティ上の理由から、フォルダ内のファイルを管理するケイパビリティを持ったユーザすべてを信頼できる場合のみ設定を無効にするよう留意してください。';
 $string['indicator:cognitivedepth'] = 'フォルダ認知的';
 $string['indicator:cognitivedepth_help'] = 'この指標はフォルダリソースで学生が到達した認識深度に基づきます。';
 $string['indicator:cognitivedepthdef'] = 'フォルダ認知的';

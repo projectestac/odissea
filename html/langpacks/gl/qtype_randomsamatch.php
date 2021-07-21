@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'gl', version '3.8'.
+ * Strings for component 'qtype_randomsamatch', language 'gl', version '3.11'.
  *
  * @package     qtype_randomsamatch
  * @category    string
@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['insufficientoptions'] = 'Non hai opcións abondo que escoller para esta pregunta; polo tanto, non está dispoñíbel nesta proba. Informe ao seu profesor.';
 $string['nosaincategory'] = 'Non hai preguntas de resposta breve na categoría «{$a->catname}» que escolleu. Escolla unha categoría diferente, faga algunhas preguntas nesta categoría.';
-$string['notenoughsaincategory'] = 'Hai só {$a->nosaquestions} preguntas de resposta curta na categoría {$a->catname} que escolleu. Escolla unha categoría diferente, faga algunhas preguntas máis nesa mesma categoría ou reduza a cantidade de preguntas seleccionadas.';
+$string['notenoughsaincategory'] = 'Hai só {$a->nosaquestions} preguntas de resposta breve na categoría «{$a->catname}» que escolleu. Escolla unha categoría diferente, faga algunhas preguntas máis nesa mesma categoría ou reduza a cantidade de preguntas seleccionadas.';
 $string['pluginname'] = 'Emparellamento ao chou de respostas curtas';
-$string['pluginname_help'] = 'Desde a perspectiva do alumno, é moi semellante a unha pregunta de emparellamento. A diferenza é que a lista de nomes ou enunciados (preguntas) para o emparellamento son seleccionados ao chou de entre as preguntas de resposta curta da categoría escollida. Deben ter un número suficiente de preguntas de resposta curta sen usar na categoría, do contrario amosarase unha mensaxe de erro.';
+$string['pluginname_help'] = 'Dende a perspectiva do alumno, é moi semellante a unha pregunta de emparellamento. A diferenza é que a lista de nomes ou enunciados (preguntas) para o emparellamento son seleccionados ao chou de entre as preguntas de resposta curta da categoría escollida. Deben ter un número suficiente de preguntas de resposta curta sen usar na categoría, do contrario amosarase unha mensaxe de erro.';
 $string['pluginname_link'] = 'question/type/randomsamatch';
 $string['pluginnameadding'] = 'Engadir unha pregunta do tipo Emparellamento ao chou de respostas curtas';
 $string['pluginnameediting'] = 'Editar unha pregunta do tipo Emparellamento ao chou de respostas curtas';

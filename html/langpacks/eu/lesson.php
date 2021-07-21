@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'eu', version '3.8'.
+ * Strings for component 'lesson', language 'eu', version '3.11'.
  *
  * @package     lesson
  * @category    string
@@ -84,6 +84,7 @@ $string['averagescore'] = 'Batez besteko puntuazioa';
 $string['averagetime'] = 'Batez besteko denbora';
 $string['branch'] = 'Edukia';
 $string['branchtable'] = 'Edukia';
+$string['cachedef_overrides'] = 'Erabiltzaile eta talde-salbuespenen informazioa';
 $string['cancel'] = 'Utzi';
 $string['cannotfindanswer'] = 'Errorea: ezin da erantzuna aurkitu';
 $string['cannotfindattempt'] = 'Errorea: ezin da saiakera aurkitu';
@@ -118,6 +119,8 @@ $string['comments'] = 'Zure iruzkinak';
 $string['completed'] = 'Osatuta';
 $string['completederror'] = 'Osatu ikasgaia';
 $string['completethefollowingconditions'] = 'Jarraitzeko, baldintza hauek bete beharko dituzu <b>{$a}</b> ikasgaian.';
+$string['completiondetail:reachend'] = 'Jardueraren amaierara arte igarotzea';
+$string['completiondetail:timespent'] = 'Jardueran gutxienez {$a} ematea';
 $string['completionendreached'] = 'Derrigorrezkoa da amaierara heltzea';
 $string['completionendreached_desc'] = 'Ikasleak ikasgaiaren amaierara heldu behar du jarduera hau osatutzat emateko';
 $string['completiontimespent'] = 'Ikasleak jarduera hau egin du gutxienez ondoko denbora-tartean';
@@ -266,7 +269,7 @@ $string['hightime'] = 'Denbora altua';
 $string['importcount'] = '{$a} galderak inportatzen';
 $string['importquestions'] = 'Inportatu galderak';
 $string['importquestions_help'] = 'Funtzio honek testu-fitxategietatik hainbat formatutako galderak inportatzeko aukera ematen du.';
-$string['inactiveoverridehelp'] = '* Baliogabetze hau ez-aktibo dago erabiltzailearen jarduerarako sarbidea murriztuta dagoelako. Honen arrazoia taldeko edo rol-esleipena izan daiteke, bestelako eskuragarritasun baldintzak edo jarduera ezkutuan egotea.';
+$string['inactiveoverridehelp'] = '* Salbuespen hau ez-aktibo dago erabiltzailearen jarduerarako sarbidea murriztuta dagoelako. Honen arrazoia taldeko edo rol-esleipena izan daiteke, bestelako eskuragarritasun baldintzak edo jarduera ezkutuan egotea.';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa ikasgaietan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Ikasgaia motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa ikasgaietan';
@@ -320,8 +323,8 @@ $string['matchingpair'] = 'Lotzeko {$a}. bikotea';
 $string['maxgrade'] = 'Gehienezko kalifikazioa';
 $string['maxgrade_help'] = 'Balio honek ikasgai batean lor daitekeen gehienezko kalifikazioa adierazten du. 0 ezarriz gero, ikasgaia ez da kalifikazio-orrietan agertuko.';
 $string['maximumnumberofanswersbranches'] = 'Gehienezko erantzun-kopurua';
-$string['maximumnumberofanswersbranches_help'] = 'Ezarpen honek ikasgaian erabili ahalko den gehienezko erantzun-kopurua zehazten du. Egia/gezurra galderak soilik erabiltzen badira, 2 ezar daiteke. Edonoiz alda daiteke ezarpen hau, irakasleak ikusten duenari bakarrik eragiten diolako eta ez datuei.';
-$string['maximumnumberofattempts'] = 'Gehienezko saiakera-kopurua';
+$string['maximumnumberofanswersbranches_help'] = 'Ezarpen honek ikasgaian erabili ahalko den gehienezko erantzun-kopurua zehazten du. Egia/gezurra galderak soilik erabiltzen badira, 2 ezar daiteke. Edonoiz alda daiteke ezarpen hau, soilik irakasleak ikusten duenari eragiten diolako eta ez datuei.';
+$string['maximumnumberofattempts'] = 'Gehienezko saiakera-kopurua galderako';
 $string['maximumnumberofattempts_help'] = 'Ezarpen honek zehazten du galdera bakoitzeko gehienezko saiakera-kopurua. Hainbat aldiz oker erantzunda gehienezko hori gainditzen denean, ikasgaiko hurrengo orria erakutsiko da.';
 $string['maximumnumberofattemptsreached'] = 'Gehienezko saiakera-kopurura iritsi zara. Hurrengo orrira jauzi';
 $string['mediaclose'] = 'Erakutsi ixteko botoia';
@@ -486,7 +489,7 @@ $string['privacy:metadata:timer'] = 'Ikasgai-saiakeraren erregistroa';
 $string['privacy:metadata:timer:completed'] = 'Saiakera osatu den edo ez';
 $string['privacy:metadata:timer:lessontime'] = 'Jarduera jaso zen azken unea';
 $string['privacy:metadata:timer:starttime'] = 'Saiakera hasi zeneko unea';
-$string['privacy:metadata:timer:timemodifiedoffline'] = 'Mobile app-tik jarduera jaso zen azken unea';
+$string['privacy:metadata:timer:timemodifiedoffline'] = 'Mobile aplikaziotik jarduera jaso zen azken unea';
 $string['privacy:metadata:timer:userid'] = 'Erabiltzailearen IDa';
 $string['privacy:metadata:userpref:lessonview'] = 'Hobetsitako ikasgaiak editatzeko erakusketa-modua';
 $string['privacy:path:essayanswers'] = 'Entseguaren erantzunak';

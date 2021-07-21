@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'glossary', language 'es', version '3.8'.
+ * Strings for component 'glossary', language 'es', version '3.11'.
  *
  * @package     glossary
  * @category    string
@@ -251,9 +251,9 @@ $string['glossary:managecomments'] = 'Gestionar comentarios';
 $string['glossary:manageentries'] = 'Gestionar entradas';
 $string['glossary:rate'] = 'Calificar entradas';
 $string['glossary:view'] = 'Ver glosario';
-$string['glossary:viewallratings'] = 'Ver todas las calificaciones emitidas por las usuarios';
-$string['glossary:viewanyrating'] = 'Ver el total de calificaciones que alguien recibió';
-$string['glossary:viewrating'] = 'Ver calificación total recibida';
+$string['glossary:viewallratings'] = 'Ver todas las valoraciones emitidas por las usuarios';
+$string['glossary:viewanyrating'] = 'Ver el total de valoraciones que alguien recibió';
+$string['glossary:viewrating'] = 'Ver la valoración total recibida';
 $string['glossary:write'] = 'Crear nuevas entradas';
 $string['glossaryleveldefaultsettings'] = 'Ajustes por defecto del nivel de glosario';
 $string['glossarytype'] = 'Tipo de glosario';

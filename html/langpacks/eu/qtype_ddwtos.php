@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'eu', version '3.8'.
+ * Strings for component 'qtype_ddwtos', language 'eu', version '3.11'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -36,4 +36,7 @@ $string['pluginname_help'] = 'Hartu eta eraman testura motako galderek ikasleei 
 $string['pluginnameadding'] = 'Hartu eta eraman testura motako galdera gehitzen';
 $string['pluginnameediting'] = 'Hartu eta eraman testura motako galdera editatzen';
 $string['pluginnamesummary'] = 'Galderaren testuko hutsuneak hartu eta eramanda betetzen dira.';
-$string['privacy:metadata'] = 'Hartu eta eraman testura galdera mota pluginak ez du datu pertsonalik biltzen.';
+$string['privacy:metadata'] = 'Hartu eta eraman testura galdera mota pluginak egileari aukera lehenetsiak erabiltzaile hobespen gisa gordetzea baimentzen dio.';
+$string['privacy:preference:defaultmark'] = 'Emandako galderarentzako puntuazio lehenetsia.';
+$string['privacy:preference:penalty'] = 'Saiakera ez-zuzen bakoitzaren penalizazioa galderek \'Interaktiboa hainbat saiakerarekin\' ala \'Egokitze modua\' jokaera erabiltzen dutenean.';
+$string['privacy:preference:shuffleanswers'] = 'Erantzunak automatikoki nahastu behar diren edo ez.';

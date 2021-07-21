@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_date', language 'ca', version '3.8'.
+ * Strings for component 'availability_date', language 'ca', version '3.11'.
  *
  * @package     availability_date
  * @category    string
@@ -31,10 +31,10 @@ $string['direction_before'] = 'Data';
 $string['direction_from'] = 'des de';
 $string['direction_label'] = 'Direcció';
 $string['direction_until'] = 'fins a';
-$string['full_from'] = 'És després de <strong>{$a}</strong>';
-$string['full_from_date'] = 'Avui sigui dia <strong>{$a}</strong> o un dia posterior.';
+$string['full_from'] = 'Avui sigui posterior al <strong>{$a}</strong>';
+$string['full_from_date'] = 'Avui sigui <strong>{$a}</strong> o posterior.';
 $string['full_until'] = 'És abans de <strong>{$a}</strong>';
-$string['full_until_date'] = 'És abans del final de <strong>{$a}</strong>';
+$string['full_until_date'] = 'Avui sigui anterior al <strong>{$a}</strong>';
 $string['pluginname'] = 'Restricció per data';
 $string['short_from'] = 'Disponible des de <strong>{$a}</strong>';
 $string['short_from_date'] = 'Disponible des de <strong>{$a}</strong>';

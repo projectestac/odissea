@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'nl', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'nl', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -39,7 +39,9 @@ $string['createnewgoogleissuer'] = 'Maak een nieuwe Google service';
 $string['createnewissuer'] = 'Maak een nieuwe aangepaste service';
 $string['createnewmicrosoftissuer'] = 'Maak een nieuwe Microsoft service';
 $string['createnewnextcloudissuer'] = 'Maak een nieuwe Nextcloud-service';
+$string['createnewservice'] = 'Nieuwe dienst aanmaken:';
 $string['createnewuserfieldmapping'] = 'Maak een nieuwe koppeling voor gebruikersvelden voor uitgever "{$a}"';
+$string['custom_service'] = 'Op maat';
 $string['deleteconfirm'] = 'Weet je zeker dat je identiteitsuitgever "{$a}" wil verwijderen? Alle plugins die daarop steunen zullen niet meer werken.';
 $string['deleteendpointconfirm'] = 'Weet je zeker dat je eindpunt "{$a->endpoint}" voor uitgever "{$a->issuer}" wil verwijderen? Alle plugins dit eindpunt nodig hebben zullen stoppen met werken.';
 $string['deleteuserfieldmappingconfirm'] = 'Weet je zeker dat je de koppeling naar gebruikersvelden voor uitgever "{$a}" wil verwijderen?';
@@ -57,6 +59,9 @@ $string['endpointname_help'] = 'Sleutel, gebruikt om te zoeken naar dit eindpunt
 $string['endpointsforissuer'] = 'Eindpunten voor uitgever: {$a}';
 $string['endpointurl'] = 'URL';
 $string['endpointurl_help'] = 'URL voor dit eindpunt. Moet https://-protocol gebruiken.';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Logindomeinen';
 $string['issueralloweddomains_help'] = 'Indien ingesteld dan is deze instelling een komma gescheiden lijst met domeinen waartoe aanmelden beperkt is bij het gebruik van deze provider.';
 $string['issuerbaseurl'] = 'Service basis-URL';
@@ -70,6 +75,8 @@ $string['issuerdisabled'] = 'Identiteitsuitgever uitgeschakeld';
 $string['issuerenabled'] = 'Identiteitsuitgever ingeschakeld';
 $string['issuerimage'] = 'Logo URL';
 $string['issuerimage_help'] = 'Een afbeeldings-URL die gebruikt wordt om een logo voor deze uitgever te tonen. Kan getoond worden op de login-pagina.';
+$string['issuerloginpagename'] = 'Getoonde naam op de login-pagina';
+$string['issuerloginpagename_help'] = 'Als je hier een naam geeft, zal die gebruikt worden op de login-pagina in plaats van de service-naam.';
 $string['issuerloginparams'] = 'Bijkomende parameters in een login-aanvraag.';
 $string['issuerloginparams_help'] = 'Sommige systemen vereisen bijkomende parameters voor een login-aanvraag om het basisprofiel van de gebruiker te lezen.';
 $string['issuerloginparamsoffline'] = 'Bijkomende parameters die opgenomen worden in een login-aanvraag voor offline toegang.';
@@ -87,7 +94,20 @@ $string['issuersetup'] = 'Gedetailleerde instructies bij het configureren van de
 $string['issuersetuptype'] = 'Gedetailleerde instructies bij het configureren van de {$a} OAuth 2 services.';
 $string['issuershowonloginpage'] = 'Toon op loginpagina';
 $string['issuershowonloginpage_help'] = 'Als de OAuth 2 Authenticatieplugin ingeschakeld is, dan zal deze login-uitgever opgelijst worden op de login-pagina zodat gebruikers met de account van deze uitgever kunnen aanmelden.';
+$string['issuersservicesallow'] = 'Services toestaan';
+$string['issuersservicesnotallow'] = 'Services niet toestaan';
+$string['issuerusedforinternal'] = 'Interne services';
+$string['issuerusedforlogin'] = 'Login';
+$string['issuerusein'] = 'Deze service zal gebruikt worden';
+$string['issuerusein_help'] = 'OAuth 2 services kunnen voor interne services gebruikt worden, op de login-pagina of beide als nodig.';
+$string['issueruseineverywhere'] = 'Login-pagina en interne services';
+$string['issueruseininternalonly'] = 'Enkel interne services';
+$string['issueruseinloginonly'] = 'Enkel login-pagina';
+$string['linkedin_service'] = 'LinkedIn';
+$string['logindisplay'] = 'Toon login-pagina als';
 $string['loginissuer'] = 'Login toestaan';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Niet geconfigureerd';
 $string['notdiscovered'] = 'Service opzoeken niet gelukt';
 $string['notloginissuer'] = 'Login niet toestaan';

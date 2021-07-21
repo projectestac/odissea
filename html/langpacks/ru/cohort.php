@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'ru', version '3.8'.
+ * Strings for component 'cohort', language 'ru', version '3.11'.
  *
  * @package     cohort
  * @category    string
@@ -88,7 +88,7 @@ $string['uploadcohorts_help'] = 'Глобальные группы могут б
 * Каждая строка файла содержит одну запись
 * Каждая запись - ряд данных, разделенных запятыми (или другим разделителем)
 * Первая запись содержит список имен полей, определяющий формат остального файла
-* Обязательным именем поля является name (название поля)
+* Обязательным именем поля является name (название глобальной группы)
 * Дополнительными именами полей являются  idnumber (id-номер), description (описание), descriptionformat (формат описания), visible (видимость), context (контекст), category (категория), category_id (id категории), category_idnumber (id-номер категории), category_path (путь к категории)';
 $string['uploadedcohorts'] = 'Загруженные глобальные группы {$a}';
 $string['useradded'] = 'Пользователь добавлен в группу «{$a}»';

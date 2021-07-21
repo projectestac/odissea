@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_flickr', language 'ar', version '3.8'.
+ * Strings for component 'block_tag_flickr', language 'ar', version '3.11'.
  *
  * @package     block_tag_flickr
  * @category    string
@@ -30,15 +30,15 @@ $string['date-posted-asc'] = 'تاريخ النشر تصاعدياً';
 $string['date-posted-desc'] = 'تاريخ النشر تنازلياً';
 $string['date-taken-asc'] = 'تاريخ الالتقاط تصاعدياً';
 $string['date-taken-desc'] = 'تاريخ الالتقاط تنازلياً';
-$string['defaulttile'] = 'فليكر';
+$string['defaulttile'] = 'Flickr';
 $string['getfromphotoset'] = 'إجلب الصور من مجموعة الصور ذات المُعرَّف';
 $string['includerelatedtags'] = 'تضمين الوسوم ذات الصلة بالاستعلام';
 $string['interestingness-asc'] = 'الإثارة تصاعدياً';
 $string['interestingness-desc'] = 'الإثارة تنازلياً';
 $string['numberofphotos'] = 'عدد الصور';
 $string['pluginname'] = 'Flickr';
-$string['privacy:metadata:block_tag_flickr'] = 'ملحق كتلة فليكر لا يخزن أي بيانات شخصية، ولكنه يبث بيانات المستخدم من مودل إلى نظام بعيد.';
-$string['privacy:metadata:block_tag_flickr:tags'] = 'قيم الوسوم المرسلة بصيغة CSV للبحث عن صور فليكر.';
+$string['privacy:metadata:block_tag_flickr'] = 'ملحق كتلة Flickr لا يخزن أي بيانات شخصية، ولكنه يبث بيانات المستخدم من مودل إلى نظام بعيد.';
+$string['privacy:metadata:block_tag_flickr:tags'] = 'قيم الوسوم المرسلة بصيغة CSV للبحث عن صور Flickr';
 $string['relevance'] = 'الملاءمة';
-$string['sortby'] = 'أفرز بـ';
+$string['sortby'] = 'الفرز حسب';
 $string['tag_flickr:addinstance'] = 'إضافة كتلة جديدة من Flickr';

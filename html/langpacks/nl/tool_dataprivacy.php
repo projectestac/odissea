@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_dataprivacy', language 'nl', version '3.8'.
+ * Strings for component 'tool_dataprivacy', language 'nl', version '3.11'.
  *
  * @package     tool_dataprivacy
  * @category    string
@@ -31,7 +31,12 @@ $string['addnewdefaults'] = 'Voeg een nieuwe module-standaard toe';
 $string['addpurpose'] = 'Voeg doel toe';
 $string['addroleoverride'] = 'Rol overschrijven toevoegen';
 $string['approve'] = 'Goedkeuren';
+$string['approvedrequestsubmitted'] = 'Je vraag is ingestuurd en zal snel behandeld worden.';
 $string['approverequest'] = 'Aanvraag goedkeuren';
+$string['automaticdatadeletionapproval'] = 'Goedkeuring voor aanvraag voor automatische gegevensverwijdering';
+$string['automaticdatadeletionapproval_desc'] = 'Indien ingeschakeld zullen aanvragen voor gegevensverwijdering automatisch goedgekeurd worden. <br />Merk op dat de automatische goedkeuring enkel van toepassing is op nieuwe aanvragen voor het verwijderen van gegevens sinds deze instelling ingeschakeld is. Bestaande aanvragen voor gegevensverwijdering blijven in de wachtrij tot ze manueel goedgekeurd zijn door de privacy-officer.';
+$string['automaticdataexportapproval'] = 'Automatisch goedkeuren van gegevensexport';
+$string['automaticdataexportapproval_desc'] = 'Indien ingeschakeld zullen gegevensexports automatisch goedgekeurd worden.<br />Merk op dat de automatische goedkeuring enkel van toepassing is op nieuwe aanvragen voor het exporteren van gegevens sinds deze instelling ingeschakeld is. Bestaande aanvragen voor het exporteren van gegevens blijven in de wachtrij tot ze manueel goedgekeurd zijn door de privacy-officer.';
 $string['automaticdeletionrequests'] = 'Maak automatische gegevens verwijder verzoeken aan';
 $string['automaticdeletionrequests_desc'] = 'Indien ingeschakeld, wordt er automatisch een aanvraag tot verwijderen van gebruikersgegevens gemaakt voor elke gebruiker die manueel verwijderd wordt.';
 $string['bulkapproverequests'] = 'Aanvragen goedkeuren';
@@ -140,6 +145,7 @@ $string['effectiveretentionperioduser'] = '{$a} sinds de laatste keer dat de geb
 $string['emailsalutation'] = 'Beste {$a},';
 $string['errorcannotrequestdeleteforother'] = 'Je bent niet gemachtigd om verwijderingsverzoeken voor deze gebruiker te maken.';
 $string['errorcannotrequestdeleteforself'] = 'Je bent niet gemachtigd om een verwijderingsverzoek voor jezelf te maken.';
+$string['errorcontactdpodisabled'] = 'De optie om contact op te nemen met de privacy-verantwoordelijke is uitgeschakeld.';
 $string['errorcontexthasunexpiredchildren'] = 'De context "{$a}" heeft subcontexten die nog niet vervallen zijn. Er zijn geen contexten gemarkeerd voor verwijdering.';
 $string['errorinvalidrequestcomments'] = 'Het opmerkingenveld mag alleen platte tekst bevatten.';
 $string['errorinvalidrequestcreationmethod'] = 'Ongeldige methode voor het maken van aanvragen!';
@@ -326,7 +332,6 @@ $string['statusdeleted'] = 'Verwijderd';
 $string['statusdetail'] = 'Status:';
 $string['statusexpired'] = 'Verlopen';
 $string['statuspending'] = 'In afwachting';
-$string['statuspreprocessing'] = 'In behandeling';
 $string['statusprocessing'] = 'Verwerken';
 $string['statusready'] = 'Klaar om te downloaden';
 $string['statusrejected'] = 'Afgekeurd';

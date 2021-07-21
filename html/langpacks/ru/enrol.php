@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol', language 'ru', version '3.8'.
+ * Strings for component 'enrol', language 'ru', version '3.11'.
  *
  * @package     enrol
  * @category    string
@@ -64,6 +64,7 @@ $string['enrolmentnew'] = 'Новое зачисление в {$a}';
 $string['enrolmentnewuser'] = '{$a->user} зарегистрирован на курсе «{$a->course}»';
 $string['enrolmentoptions'] = 'Настройка зачисления на курс';
 $string['enrolments'] = 'Зачисления на курсы';
+$string['enrolmentupdatedforuser'] = 'Обновлено зачисление пользователя "{$a->fullname}"';
 $string['enrolnotpermitted'] = 'Вы не можете записать никого в этот курс';
 $string['enrolperiod'] = 'Продолжительность обучения';
 $string['enroltimecreated'] = 'Дата зачисления';
@@ -156,8 +157,9 @@ $string['totalunenrolledusers'] = 'Отчислено пользователей
 $string['unassignnotpermitted'] = 'Вы не можете отменить назначение ролей в этом курсе';
 $string['unenrol'] = 'Исключить';
 $string['unenrolconfirm'] = 'Вы действительно хотите исключить пользователя «{$a->user}» (ранее зачисленного посредством «{$a->enrolinstancename}») из курса «{$a->course}»?';
+$string['unenrolleduser'] = 'Пользователь «{$a->fullname}» был отчислен из курса';
 $string['unenrolme'] = 'Исключить себя из курса «{$a}»';
-$string['unenrolnotpermitted'] = 'Вы не можете исключить этого пользователя из этого курса.';
+$string['unenrolnotpermitted'] = 'Вы не можете исключить этого пользователя из курса.';
 $string['unenrolroleusers'] = 'Исключить пользователей';
 $string['uninstallmigrating'] = 'Сохранено учащихся - «{$a}»';
 $string['unknowajaxaction'] = 'Запрошено неизвестное действие';

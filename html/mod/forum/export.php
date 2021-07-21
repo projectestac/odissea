@@ -25,7 +25,6 @@ define('NO_OUTPUT_BUFFERING', true);
 
 require_once(__DIR__ . '/../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
-require_once($CFG->libdir . '/dataformatlib.php');
 require_once($CFG->dirroot . '/calendar/externallib.php');
 
 $forumid = required_param('id', PARAM_INT);
@@ -90,7 +89,6 @@ if ($form->is_cancelled()) {
     raise_memory_limit(MEMORY_HUGE);
 
     $discussionvault = $vaultfactory->get_discussion_vault();
-    $postvault = $vaultfactory->get_post_vault();
     if ($data->discussionids) {
         $discussionids = $data->discussionids;
     } else if (empty($discussionids)) {
@@ -111,47 +109,68 @@ if ($form->is_cancelled()) {
         $filters['to'] = $data->to;
     }
 
-    // Retrieve posts based on the selected filters.
-    $posts = $postvault->get_from_filters($USER, $filters, $capabilitymanager->can_view_any_private_reply($USER));
+    // Retrieve posts based on the selected filters, note if forum has no discussions then there is nothing to export.
+    if (!empty($filters['discussionids'])) {
+        $postvault = $vaultfactory->get_post_vault();
+        $posts = $postvault->get_from_filters($USER, $filters, $capabilitymanager->can_view_any_private_reply($USER));
+    } else {
+        $posts = [];
+    }
 
     $striphtml = !empty($data->striphtml);
     $humandates = !empty($data->humandates);
 
-    $fields = ['id', 'discussion', 'parent', 'userid', 'created', 'modified', 'mailed', 'subject', 'message',
+    $fields = ['id', 'discussion', 'parent', 'userid', 'userfullname', 'created', 'modified', 'mailed', 'subject', 'message',
                 'messageformat', 'messagetrust', 'attachment', 'totalscore', 'mailnow', 'deleted', 'privatereplyto',
-                'wordcount', 'charcount'];
+                'privatereplytofullname', 'wordcount', 'charcount'];
+
+    $canviewfullname = has_capability('moodle/site:viewfullnames', $context);
 
     $datamapper = $legacydatamapperfactory->get_post_data_mapper();
     $exportdata = new ArrayObject($datamapper->to_legacy_objects($posts));
     $iterator = $exportdata->getIterator();
 
-    require_once($CFG->libdir . '/dataformatlib.php');
     $filename = clean_filename('discussion');
-    download_as_dataformat(
+    \core\dataformat::download_data(
         $filename,
         $dataformat,
         $fields,
         $iterator,
-        function($exportdata) use ($fields, $striphtml, $humandates) {
-            $data = $exportdata;
+        function($exportdata) use ($fields, $striphtml, $humandates, $canviewfullname, $context) {
+            $data = new stdClass();
+
+            foreach ($fields as $field) {
+                // Set data field's value from the export data's equivalent field by default.
+                $data->$field = $exportdata->$field ?? null;
+
+                if ($field == 'userfullname') {
+                    $user = \core_user::get_user($data->userid);
+                    $data->userfullname = fullname($user, $canviewfullname);
+                }
+
+                if ($field == 'privatereplytofullname' && !empty($data->privatereplyto)) {
+                    $user = \core_user::get_user($data->privatereplyto);
+                    $data->privatereplytofullname = fullname($user, $canviewfullname);
+                }
+
+                if ($field == 'message') {
+                    $data->message = file_rewrite_pluginfile_urls($data->message, 'pluginfile.php', $context->id, 'mod_forum',
+                        'post', $data->id);
+                }
+
+                // Convert any boolean fields to their integer equivalent for output.
+                if (is_bool($data->$field)) {
+                    $data->$field = (int) $data->$field;
+                }
+            }
+
             if ($striphtml) {
-                // The following call to html_to_text uses the option that strips out
-                // all URLs, but format_text complains if it finds @@PLUGINFILE@@ tokens.
-                // So, we need to replace @@PLUGINFILE@@ with a real URL, but it doesn't
-                // matter what. We use http://example.com/.
-                $data->message = str_replace('@@PLUGINFILE@@/', 'http://example.com/', $data->message);
                 $data->message = html_to_text(format_text($data->message, $data->messageformat), 0, false);
                 $data->messageformat = FORMAT_PLAIN;
             }
             if ($humandates) {
                 $data->created = userdate($data->created);
                 $data->modified = userdate($data->modified);
-            }
-            foreach ($fields as $field) {
-                // Convert any boolean fields to their integer equivalent for output.
-                if (is_bool($data->$field)) {
-                    $data->$field = (int) $data->$field;
-                }
             }
             return $data;
         });

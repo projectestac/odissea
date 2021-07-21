@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_news_items', language 'sv', version '3.8'.
+ * Strings for component 'block_news_items', language 'sv', version '3.11'.
  *
  * @package     block_news_items
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['news_items:addinstance'] = 'Lägg till ett nytt block för senaste nyheter';
+$string['news_items:addinstance'] = 'Lägg till ett nytt block för senaste nytt';
 $string['news_items:myaddinstance'] = 'Lägg till ett nytt block för senaste nyheter på Mitt Moodle';
-$string['pluginname'] = 'Senaste meddelandena';
+$string['pluginname'] = 'Senaste nytt';
 $string['privacy:metadata'] = 'Blocket Senaste nytt visar enbart data lagrad i själva forumet och lagrar i sig ingen data.';

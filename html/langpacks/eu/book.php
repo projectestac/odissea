@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'eu', version '3.8'.
+ * Strings for component 'book', language 'eu', version '3.11'.
  *
  * @package     book
  * @category    string
@@ -105,7 +105,7 @@ $string['search:activity'] = 'Blokea - baliabidearen informazioa';
 $string['search:chapter'] = 'Liburua - atalak';
 $string['showchapter'] = 'Erakutsi "{$a}" atala';
 $string['subchapter'] = 'Azpiatala';
-$string['subchapternotice'] = '(Lehen atala sortutakoan bakarrik egongo da erabilgarri)';
+$string['subchapternotice'] = '(Soilik lehen atala sortutakoan egongo da erabilgarri)';
 $string['subplugintype_booktool'] = 'Libururako tresna';
 $string['subplugintype_booktool_plural'] = 'Libururako tresnak';
 $string['tagarea_book_chapters'] = 'Liburu-atalak';

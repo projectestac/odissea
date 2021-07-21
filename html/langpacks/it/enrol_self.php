@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_self', language 'it', version '3.8'.
+ * Strings for component 'enrol_self', language 'it', version '3.11'.
  *
  * @package     enrol_self
  * @category    string
@@ -102,6 +102,7 @@ $string['requirepassword'] = 'Chiave d\'iscrizione obbligatoria';
 $string['requirepassword_desc'] = 'Rende obbligatoria la chiave d\'iscrizione nei nuovi corsi ed evita l\'eliminazione di chiavi d\'iscrizione già esistenti.';
 $string['role'] = 'Ruolo assegnato di default';
 $string['self:config'] = 'Configurare istanze plugin Iscrizione spontanea';
+$string['self:enrolself'] = 'Iscriversi spontaneamente nei corsi';
 $string['self:holdkey'] = 'Risultare come gestore della chiave di iscrizione';
 $string['self:manage'] = 'Gestire utenti iscritti';
 $string['self:unenrol'] = 'Disiscrivere utenti dal corso';

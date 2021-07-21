@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_charmap', language 'ar', version '3.8'.
+ * Strings for component 'atto_charmap', language 'ar', version '3.11'.
  *
  * @package     atto_charmap
  * @category    string
@@ -57,7 +57,7 @@ $string['blackheartsuit'] = 'مجموعة القلب السوداء';
 $string['blackspadesuit'] = 'مجموعة السبيد السوداء';
 $string['brokenbar'] = 'شريط مكسور';
 $string['bullet'] = 'علامة التنقيط';
-$string['carriagereturn'] = 'إرجاع';
+$string['carriagereturn'] = 'مفتاح الإرجاع';
 $string['ccedilla'] = 'c - سيديلا';
 $string['ccedilla_caps'] = 'C - سيديلا';
 $string['cedilla'] = 'سيديلا';

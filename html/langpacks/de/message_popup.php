@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'message_popup', language 'de', version '3.8'.
+ * Strings for component 'message_popup', language 'de', version '3.11'.
  *
  * @package     message_popup
  * @category    string

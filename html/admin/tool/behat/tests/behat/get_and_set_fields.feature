@@ -115,15 +115,24 @@ Feature: Verify that all form fields values can be get and set
       | Wiki name | Test this one baby |
       | Default format | HTML |
     And I press "Cancel"
-    And I am on "Course 1" course homepage
     # Radio - Checking "I set the field" and "the field matches value".
-    And I add a "Choice" to section "1" and I fill the form with:
-      | Choice name | Test choice name |
-      | Description | Test choice description |
-      | Allow choice to be updated | Yes |
-      | Option 1 | one |
-      | Option 2 | two |
-      | Option 3 | three |
+    And the following "activity" exists:
+      | activity         | choice                       |
+      | course           | C1                           |
+      | idnumber         | choice1                      |
+      | intro            | Test choice description      |
+      | name             | Test choice name             |
+      | choice1          | Option 1, Option 2, Option 3 |
+      | section          | 1                            |
+      | allowupdate      | 1                            |
+    And I am on "Course 1" course homepage
+    And I follow "Test choice name"
+    And I navigate to "Edit settings" in current page administration
+    And I set the field "Option 1" to "one"
+    And I set the field "Option 2" to "two"
+    And I set the field "Option 3" to "three"
+    And I press "Save and return to course"
+    And I am on "Course 1" course homepage
     And I follow "Test choice name"
     And I set the field "one" to "1"
     And I press "Save my choice"
@@ -147,13 +156,13 @@ Feature: Verify that all form fields values can be get and set
     And I navigate to "Users > Groups" in current page administration
     # Select (multi-select & AJAX) - Checking "I set the field" and "select box should contain".
     And I set the field "groups" to "Group 2"
-    And the "members" select box should contain "Student 2"
-    And the "members" select box should contain "Student 3"
-    And the "members" select box should not contain "Student 1"
+    And the "members" select box should contain "Student 2 (s2@example.com)"
+    And the "members" select box should contain "Student 3 (s3@example.com)"
+    And the "members" select box should not contain "Student 1 (s1@example.com)"
     And I set the field "groups" to "Group 1"
-    And the "members" select box should contain "Student 1"
-    And the "members" select box should contain "Student 2"
-    And the "members" select box should not contain "Student 3"
+    And the "members" select box should contain "Student 1 (s1@example.com)"
+    And the "members" select box should contain "Student 2 (s2@example.com)"
+    And the "members" select box should not contain "Student 3 (s3@example.com)"
     # Checkbox (AJAX) - Checking "I set the field" and "I set the following fields to these values".
     And I am on "Course 1" course homepage
     And I add a "Lesson" to section "1"

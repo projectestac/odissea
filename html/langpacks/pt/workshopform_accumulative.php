@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'pt', version '3.8'.
+ * Strings for component 'workshopform_accumulative', language 'pt', version '3.11'.
  *
  * @package     workshopform_accumulative
  * @category    string

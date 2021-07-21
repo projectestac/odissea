@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_webdav', language 'eu', version '3.8'.
+ * Strings for component 'repository_webdav', language 'eu', version '3.11'.
  *
  * @package     repository_webdav
  * @category    string
@@ -29,7 +29,7 @@ $string['configplugin'] = 'WebDav-en ezarpenak';
 $string['http'] = 'HTTP';
 $string['https'] = 'HTTPS';
 $string['pluginname'] = 'WebDAV biltegia';
-$string['privacy:metadata'] = 'WebDAV biltegi-pluginak ez du datu pertsonalik biltzen, baina erabitlzaile-datuak Moodle-tik urruneko sistemara bidaltzen ditu.';
+$string['privacy:metadata'] = 'WebDAV biltegi-pluginak ez du datu pertsonalik biltzen, baina erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
 $string['webdav'] = 'WebDAV';
 $string['webdav:view'] = 'Ikusi WebDAV biltegia';
 $string['webdav_password'] = 'WebDAV zerbitzariaren pasahitza';

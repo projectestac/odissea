@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'it', version '3.8'.
+ * Strings for component 'install', language 'it', version '3.11'.
  *
  * @package     install
  * @category    string
@@ -46,7 +46,7 @@ $string['clialreadyinstalled'] = 'Il file config.php è già presente.
 Utilizzare admin/cli/install_database.php per aggiornare Moodle.';
 $string['cliinstallfinished'] = 'L\'installazione è stata completata correttamente';
 $string['cliinstallheader'] = 'Programma di installazione Moodle {$a} via linea di comando';
-$string['climustagreelicense'] = 'In modalità non interattiva + necessario accettare la licenza specificando il parametro --agree-license';
+$string['climustagreelicense'] = 'In modalità non interattiva è necessario accettare la licenza specificando il parametro --agree-license';
 $string['cliskipdatabase'] = 'Salto dell\'installazione del database.';
 $string['clitablesexist'] = 'Le tabelle del database sono già presenti, l\'installazione via linea di comando non può proseguire.';
 $string['compatibilitysettings'] = 'Verifica impostazioni PHP...';
@@ -80,12 +80,12 @@ $string['dbprefix'] = 'Prefisso tabelle';
 $string['dbtype'] = 'Tipo';
 $string['directorysettings'] = '<p>Verifica e conferma la correttezza degli indirizzi web e dei percorsi assoluti di installazione.</p>
 
-<p><b>Indirizzo web:</b> Specifica l\'indirizzo web per raggiungere l\'installazione di Moodle. Se l\'installazione è raggiungibile da più di una URL, allora indicare l\'URL che sarà utilizzato dagli utenti senza aggiungete uno slash alla fine.</p>
+<p><b>Indirizzo web:</b> Specifica l\'indirizzo web per raggiungere l\'installazione di Moodle. Se l\'installazione è raggiungibile da più di una URL, allora indicare l\'URL che sarà utilizzato dagli utenti senza aggiungere uno slash alla fine.</p>
 
-<p><b>Cartella di Moodle:</b> Specifica il percorso assoluto della cartella dove verrà installato Moodle. Accertarsii che il nome della cartella tenga conto di eventuali lettere maiuscole o minuscole.</p>
+<p><b>Cartella di Moodle:</b> Specifica il percorso assoluto della cartella dove verrà installato Moodle. Accertarsi che il nome della cartella tenga conto di eventuali lettere maiuscole o minuscole.</p>
 
-<p><b>Cartella dati:</b> E\' la cartella dove Moodle inserirà i file caricati dagli utenti. Il web server (in genere \'nobody\' o \'apache\') DEVE avere i permessi di lettura e di scrittura su questa cartella. In aggiunta, la cartella dei dati non deve essere direttamente accessibile via web. L\'installer cercherà di creare la cartella se non esistente</p>';
-$string['directorysettingshead'] = 'Verifica e confermate la correttezza degli indirizzi web e dei percorsi assoluti di installazione';
+<p><b>Cartella dati:</b> E\' la cartella dove Moodle inserirà i file caricati dagli utenti. Il web server (in genere \'nobody\' o \'apache\') DEVE avere i permessi di lettura e di scrittura su questa cartella. In aggiunta, la cartella dei dati non deve essere direttamente accessibile via web. L\'installer cercherà di creare la cartella se non esistente.</p>';
+$string['directorysettingshead'] = 'Verifica e conferma la correttezza degli indirizzi web e dei percorsi assoluti di installazione';
 $string['directorysettingssub'] = '<b>Indirizzo web:</b>
 Specifica l\'indirizzo web per raggiungere la tua installazione Moodle. Se l\'installazione è raggiungibile da più di una URL, allora specifica la URL che sarà utilizzata dagli studenti senza aggiungere uno slash al termine della URL.
 <br/>
@@ -118,7 +118,7 @@ $string['inputdatadirectory'] = 'Cartella dati:';
 $string['inputwebadress'] = 'Indirizzo Web:';
 $string['inputwebdirectory'] = 'Cartella di Moodle:';
 $string['installation'] = 'Installazione';
-$string['invaliddbprefix'] = 'Il prefisso non è valido. Può contenere solamente lettere minuscole d il trattino basso.';
+$string['invaliddbprefix'] = 'Il prefisso non è valido. Può contenere solamente lettere minuscole ed il trattino basso.';
 $string['langdownloaderror'] = 'Purtroppo non è stato possibile scaricare la lingua "{$a}". L\'installazione proseguirà in lingua Inglese.';
 $string['langdownloadok'] = 'La lingua "{$a}" è stata installata. L\'installazione proseguirà in questa lingua.';
 $string['memorylimit'] = 'Limite di memoria';
@@ -136,6 +136,12 @@ Questo consentirà a Moodle di impostare in autonomia il limite di memoria.</li>
 <blockquote>php_value memory_limit 40M</blockquote>
 <p>Tuttavia, su alcuni server la direttiva potrebbe impedire a <b>tutte</b> le pagine PHP di funzionare (appariranno degli errori durante la visualizzazione delle pagine), in tal caso si dovrà rimuovere il file .htaccess.</li></ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'Il PHP non è stato configurato correttamente con l\'estensione MySQLi e non può comunicare con MySQL. Controllare il file php.ini o ricompilare il PHP.';
+$string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
+$string['nativeauroramysqlhelp'] = '<p>Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati e delle impostazioni.</p>
+<p>Il nome del database, il nome utente e la password sono campi obbligatori, il prefisso delle tabelle è facoltativo.</p>
+<p>Il nome del database può contenere solamente caratteri alfanumerici, il simbolo del dollaro ($) e il trattino basso (_).</p>
+<p>Se il database non esiste e se l\'utente fornito ha i permessi necessari, Moodle tenterà di creare il proprio database con le necessarie impostazioni.</p>
+<p>Questo driver non è compatibile con il vecchio motore MyISAM.</p>';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Devi ora configurare il database dove Moodle memorizzerà la maggior parte dei dati e delle impostazioni.</p>
 <p>Il nome del database, il nome utente e la password sono campi obbligatori, il prefisso delle tabelle è facoltativo.</p>
@@ -166,12 +172,12 @@ $string['pathsroparentdataroot'] = 'La cartella genitore ({$a->parent}) non è s
 $string['pathssubadmindir'] = 'Alcuni web host utilizzano la cartella /admin come URL di accesso a pannelli di controllo od altre funzioni particolari. Tuttavia questo nome coincide con il nome della cartella che Moodle utilizza per i propri file di amministrazione. Per evitare conflitti, è possibile specificare un nome alternativo per la cartella Admin di Moodle. Ad esempio:<p><b>moodleadmin</b></p>
 Tutti i link che puntano ai file di amministrazione di Moodle terranno conto di questa variazione.';
 $string['pathssubdataroot'] = '<p>La cartella dove Moodle memorizzerà i file caricati dagli utenti.</p>
-<p>L\'utente con il qule gira il processo del web server (in genere \'www-data\' o \'apache\') deve avere i permessi di lettura e di scrittura su questa cartella.</p>
+<p>L\'utente con il quale gira il processo del web server (in genere \'www-data\' o \'apache\') deve avere i permessi di lettura e di scrittura su questa cartella.</p>
 <p>La cartella inoltre non deve essere direttamente accessibile via web.</p>
 <p>Qualora la cartella non esista, lo script di installazione tenterà di crearla.</p>';
 $string['pathssubdirroot'] = '<p>Percorso assoluto della cartella dove si trova il codice di Moodle.</p>';
-$string['pathssubwwwroot'] = '<p>L\'iIndirizzo web per raggiungere a Moodle, in altre parole l\'indirizzo che gli utenti inseriranno nella barra degli indirizzi del proprio browser per accedere a questa installazione.</p>
-<p>Non è possibile accedere alla stessa installazione Moodle usando più di un indirizzi web. Se il tuo sito usa più indirizzi web, devi configurare dei re-indirizzamenti permanenti per tutti gli altri indirizzi web.</p>
+$string['pathssubwwwroot'] = '<p>L\'indirizzo web per raggiungere a Moodle, in altre parole l\'indirizzo che gli utenti inseriranno nella barra degli indirizzi del proprio browser per accedere a questa installazione.</p>
+<p>Non è possibile accedere alla stessa installazione Moodle usando più di un indirizzo web. Se il tuo sito usa più indirizzi web, devi configurare dei re-indirizzamenti permanenti per tutti gli altri indirizzi web.</p>
 <p>Se il tuo sito è raggiungibile sia dalla Internet sia dalla rete interna (a volte chiamata Intranet), allora usa l\'indirizzo Internet pubblico.</p>
 <p>Se l\'indirizzo utilizzato è errato, per favore correggilo nella barra degli indirizzi del browser e avvia nuovamente l\'installazione.</p>';
 $string['pathsunsecuredataroot'] = 'La posizione della Cartella dati non è sicura';
@@ -185,9 +191,9 @@ $string['phpversionhelp'] = '<p>Moodle necessita come minimo della versione 5.6.
 $string['releasenoteslink'] = 'Per informazioni su questa versione di Moodle, fai riferimento alle Note di Rilascio su {$a}';
 $string['safemode'] = 'Safe mode';
 $string['safemodeerror'] = 'Moodle può avere problemi con il safe mode impostato a on';
-$string['safemodehelp'] = '<p>Moodle può avere diversi problemi con safe mode impostato ad on, tra cui l\'impossibilità  di creare nuovi file.</p>
+$string['safemodehelp'] = '<p>Moodle può avere diversi problemi con safe mode impostato ad on, tra cui l\'impossibilità di creare nuovi file.</p>
 
-<p>Safe modedi solito  è abilitato su paranoici web server pubblici, se è cosi l\'unica soluzione è trovare un nuovo web server per il tuo sito Moodle.</p>
+<p>Safe mode di solito è abilitato su paranoici web server pubblici, se è cosi l\'unica soluzione è trovare un nuovo web server per il tuo sito Moodle.</p>
 
 <p>È possibile continuare l\'installazione se si vuole, ma aspettati una serie di problemi in seguito.</p>';
 $string['sessionautostart'] = 'Session Auto Start';
@@ -200,7 +206,7 @@ $string['welcomep10'] = '{$a->installername} ({$a->installerversion})';
 $string['welcomep20'] = 'Se vedi questa pagina hai installato correttamente e lanciato il pacchetto <strong>{$a->packname} {$a->packversion}</strong>. Complimenti!';
 $string['welcomep30'] = 'La release di <strong>{$a->installername}</strong> include l\'applicazione per creare l\'ambiente necessario a far girare <strong>Moodle</strong>:';
 $string['welcomep40'] = 'Il pacchetto include anche <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
-$string['welcomep50'] = 'L\'utilizzo delle applicazioni incluse in questo pacchetto è regolato dalle rispettive licenze. L\'intero pacchetto <strong>{$a->installername}</strong> è <a href="http://www.opensource.org/docs/definition_plain.html">open source</a> ed è distribuito in accordo alla licenza <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
+$string['welcomep50'] = 'L\'utilizzo delle applicazioni incluse in questo pacchetto è regolato dalle rispettive licenze. L\'intero pacchetto <strong>{$a->installername}</strong> è <a href="https://www.opensource.org/docs/definition_plain.html">open source</a> ed è distribuito in accordo alla licenza <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a>.';
 $string['welcomep60'] = 'Le prossime pagine ti guideranno attraverso semplici passi per installare e configurare <strong>Moodle</strong> nel tuo computer. Puoi utilizzare le impostazioni di default oppure modificarle per adeguarle alle tue esigenze.';
 $string['welcomep70'] = 'Fai click sul pulsante "Avanti" per continuare l\'installazione di <strong>Moodle</strong>.';
 $string['wwwroot'] = 'Indirizzo web';

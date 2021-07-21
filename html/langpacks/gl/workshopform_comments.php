@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_comments', language 'gl', version '3.8'.
+ * Strings for component 'workshopform_comments', language 'gl', version '3.11'.
  *
  * @package     workshopform_comments
  * @category    string
@@ -30,4 +30,4 @@ $string['dimensioncommentfor'] = 'Comentario para {$a}';
 $string['dimensiondescription'] = 'Descrición';
 $string['dimensionnumber'] = 'Aspecto {$a}';
 $string['pluginname'] = 'Comentarios';
-$string['privacy:metadata'] = 'O engadido de cualificación Comentarios só almacena os detalles do formulario de avaliación. Os datos persoais reais de como se encheu o formulario almacénanse no propio módulo Workshop (Obradoiro), e engádense ás avaliacións exportadas.';
+$string['privacy:metadata'] = 'O engadido de Cualificación de comentarios só almacena os detalles do formulario de avaliación. O propio módulo de Obradoiro almacena os datos persoais auténticos do cumprimento do formulario e están anexados ás avaliacións exportadas.';

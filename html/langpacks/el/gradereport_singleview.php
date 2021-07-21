@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_singleview', language 'el', version '3.8'.
+ * Strings for component 'gradereport_singleview', language 'el', version '3.11'.
  *
  * @package     gradereport_singleview
  * @category    string
@@ -52,6 +52,7 @@ $string['override'] = 'Παράκαμψη';
 $string['overrideall'] = 'Παράκαμψη όλων των βαθμών';
 $string['overridefor'] = 'Παράκαμψη για {$a}';
 $string['overridenone'] = 'Χωρίς παράκαμψη κανενός βαθμού';
+$string['overridenoneconfirm'] = 'Πρόκειται να απενεργοποιήσετε τις παρακάμψεις βαθμού. Αυτό θα αφαιρέσει όλες τις μέχρι στιγμής χειροκίνητες τροποποιήσεις βαθμών. Είστε βέβαιοι ότι θέλετε να συνεχίσετε;';
 $string['pluginname'] = 'Ατομική προβολή';
 $string['privacy:metadata'] = 'Η αναφορά ατομικής προβολής βαθμών εμφανίζει μόνο δεδομένα που είναι αποθηκευμένα σε άλλες τοποθεσίες.';
 $string['save'] = 'Αποθήκευση';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'profilefield_textarea', language 'de', version '3.8'.
+ * Strings for component 'profilefield_textarea', language 'de', version '3.11'.
  *
  * @package     profilefield_textarea
  * @category    string
@@ -30,4 +30,4 @@ $string['privacy:metadata:profile_field_textarea:data'] = 'Gespeicherte Nutzerda
 $string['privacy:metadata:profile_field_textarea:dataformat'] = 'Format der gespeicherten Nutzerdaten';
 $string['privacy:metadata:profile_field_textarea:fieldid'] = 'ID des Profilfeldes';
 $string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Zusätzliche Profildaten';
-$string['privacy:metadata:profile_field_textarea:userid'] = 'ID des Nutzers dessen Daten im Textbereichs-Plugin gespeichert werden';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'Nutzer-ID der Person, deren Daten vom Textbereichs-Plugin gespeichert werden';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_guide', language 'eu', version '3.8'.
+ * Strings for component 'gradingform_guide', language 'eu', version '3.11'.
  *
  * @package     gradingform_guide
  * @category    string
@@ -35,7 +35,7 @@ $string['clicktocopy'] = 'Egin klik testu hau irizpidearen feedbackean kopiatzek
 $string['clicktoedit'] = 'Egin klik editatzeko';
 $string['clicktoeditname'] = 'Egin klik irizpidearen izena editatzeko';
 $string['comment'] = 'Iruzkina';
-$string['commentpickerforcriterion'] = '{$a}-(e)ko iruzkin gehigarrietarako maiz erabilitako iruzkinen hautatzailea';
+$string['commentpickerforcriterion'] = '{$a}(e)ko iruzkin gehigarrietarako maiz erabilitako iruzkinen hautatzailea';
 $string['comments'] = 'Maiz erabiltako iruzkinak';
 $string['commentsdelete'] = 'Ezabatu iruzkina';
 $string['commentsempty'] = 'Egin klik iruzkina editatzeko';
@@ -92,6 +92,7 @@ $string['regrademessage1'] = 'Kalifikatzeko erabili den ebaluazio-gida batean al
 $string['regrademessage5'] = 'Kalifikatzeko erabilia izan den ebaluazio-gida batean aldaketa nabarmenak egitera zoaz. Kalifikazio liburuaren balioa ez da aldatuko, baina kalifikazio-gida ikasleei ezkutatuko zaie euren elementua berriz kalifikatu arte.';
 $string['regradeoption0'] = 'Ez markatu berriz kalifikatzeko';
 $string['regradeoption1'] = 'Markatu berriz kalifikatzeko';
+$string['remark_help'] = 'Idatzi hemen irizpide honi buruzko iruzkin gehigarriak';
 $string['restoredfromdraft'] = 'OHARRA: pertsona hau kalifikatzeko azken saiakera ez da ondo gorde, beraz, zirriborro-kalifikazioak berreskuratu dira. Aldaketa hauek bertan behera utzi nahi badituzu, erabili azpiko \'Utzi\' botoia.';
 $string['save'] = 'Gorde';
 $string['saveguide'] = 'Gorde ebaluazio-gida eta utzi erabiltzeko prest';

@@ -43,25 +43,25 @@ course_create_sections_if_missing($course, 0);
 
 $renderer = $PAGE->get_renderer('format_weeks');
 
-//XTEC ************ AFEGIT - To show current section if none is selected
-//2012.08.20  @sarjona
-//2013.11.26 @mespinosa - Fixed for weeks format
-if ($course->coursedisplay == COURSE_DISPLAY_MULTIPAGE){
+// XTEC ************ AFEGIT - Show current section if none is selected
+// 2012.08.20 @sarjona
+// 2013.11.26 @mespinosa - Fixed for weeks format
+if ($course->coursedisplay == COURSE_DISPLAY_MULTIPAGE) {
     $notifyeditingon = optional_param('notifyeditingon', -1, PARAM_BOOL);
     if ($edit < 0 && $notifyeditingon < 0 && empty($displaysection)) {
-    	$format = course_get_format($course);
-    	$sections = $DB->get_records('course_sections',array('course' => $course->id));
-    	foreach($sections as $section_aux) {
-    		if($format->is_section_current($section_aux) && $section_aux->section <= $course->numsections) {
-    			$displaysection = $section_aux->section;
-    			break;
-    		}
-    	}
-    } else if ($displaysection == -1){
+        $format = course_get_format($course);
+        $sections = $DB->get_records('course_sections', array('course' => $course->id));
+        foreach ($sections as $section_aux) {
+            if ($format->is_section_current($section_aux) && $section_aux->section <= $course->numsections) {
+                $displaysection = $section_aux->section;
+                break;
+            }
+        }
+    } else if ($displaysection == -1) {
         $displaysection = 0;
     }
 }
-//************ FI
+// ************ FI
 
 if (!empty($displaysection)) {
     $renderer->print_single_section_page($course, null, null, null, null, $displaysection);
@@ -70,4 +70,3 @@ if (!empty($displaysection)) {
 }
 
 $PAGE->requires->js('/course/format/weeks/format.js');
-$PAGE->requires->js_call_amd('core_course/sectionlistener');

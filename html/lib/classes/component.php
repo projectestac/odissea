@@ -86,6 +86,7 @@ class core_component {
     protected static $psr0namespaces = array(
         'Horde' => 'lib/horde/framework/Horde',
         'Mustache' => 'lib/mustache/src/Mustache',
+        'CFPropertyList' => 'lib/plist/classes/CFPropertyList',
     );
     /** @var array associative array of PRS-4 namespaces and corresponding paths. */
     protected static $psr4namespaces = array(
@@ -95,6 +96,7 @@ class core_component {
         'MoodleHQ\\RTLCSS' => 'lib/rtlcss',
         'ScssPhp\\ScssPhp' => 'lib/scssphp',
         'Box\\Spout' => 'lib/spout/src/Spout',
+        'BirknerAlex\\XMPPHP' => 'lib/jabber/XMPP',
         'MatthiasMullie\\Minify' => 'lib/minify/matthiasmullie-minify/src/',
         'MatthiasMullie\\PathConverter' => 'lib/minify/matthiasmullie-pathconverter/src/',
         'IMSGlobal\LTI' => 'lib/ltiprovider/src',
@@ -103,6 +105,9 @@ class core_component {
         'RedeyeVentures\\GeoPattern' => 'lib/geopattern-php/GeoPattern',
         'MongoDB' => 'cache/stores/mongodb/MongoDB',
         'Firebase\\JWT' => 'lib/php-jwt/src',
+        'ZipStream' => 'lib/zipstream/src/',
+        'MyCLabs\\Enum' => 'lib/php-enum/src',
+        'Psr\\Http\\Message' => 'lib/http-message/src',
     );
 
     /**
@@ -615,12 +620,14 @@ $cache = '.var_export($cache, true).';
                     // Always ignore plugins with problematic names here.
                     continue;
                 }
-                //XTEC ************ AFEGIT - Only enabled modules has to be showed
-                //2012.11.06  @sarjona
-                if (function_exists('is_enabled_in_agora') && !is_enabled_in_agora($pluginname) ){
+
+                // XTEC ************ AFEGIT - Only enabled modules must be shown
+                // 2012.11.06 @sarjona
+                if (function_exists('is_enabled_in_agora') && !is_enabled_in_agora($pluginname)) {
                     continue;
                 }
-                //************ FI
+                // ************ FI
+
                 $result[$pluginname] = $fulldir.'/'.$pluginname;
                 unset($item);
             }
@@ -735,7 +742,7 @@ $cache = '.var_export($cache, true).';
     /**
      * List all core subsystems and their location
      *
-     * This is a whitelist of components that are part of the core and their
+     * This is a list of components that are part of the core and their
      * language strings are defined in /lang/en/<<subsystem>>.php. If a given
      * plugin is not listed here and it does not have proper plugintype prefix,
      * then it is considered as course activity module.

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_shibboleth', language 'ar', version '3.8'.
+ * Strings for component 'auth_shibboleth', language 'ar', version '3.11'.
  *
  * @package     auth_shibboleth
  * @category    string
@@ -55,10 +55,10 @@ $string['auth_shibboleth_login'] = 'دخول Shibboleth';
 $string['auth_shibboleth_login_long'] = 'الدخول إلى مودل عن طريق شيبولث';
 $string['auth_shibboleth_manual_login'] = 'الدخول اليدوي';
 $string['auth_shibboleth_select_member'] = 'أنا عضو في...';
-$string['auth_shibboleth_select_organization'] = 'أنا عضو في';
+$string['auth_shibboleth_select_organization'] = 'بغرض المصادقة بواسطة Shibboleth، لطفاً، إختر منظمتك من القائمة المنسدلة:';
 $string['auth_shibbolethdescription'] = 'باستعمال هذه الطريقة يتم إنشاء حسابات المستخدمين والمصادقة عليها بواسطة Shibboleth. لمعرفة تفاصيل التنصيب، أنظر <a href="{$a}">Shibboleth README</a>.';
 $string['pluginname'] = 'Shibboleth';
-$string['privacy:metadata'] = 'إن ملحق مصادقة Shibboleth لا يخزن أي بيانات شخصية';
+$string['privacy:metadata'] = 'إن ملحق مصادقة Shibboleth لا يخزن أي بيانات شخصية.';
 $string['shib_invalid_account_error'] = 'يبدو أنك مصادق من قبل Shibboleth ولكن ليس لمودل حساب صحيح باسم دخولك. حسابك قد لا يكون موجوداً أو تم تعليقه.';
 $string['shib_no_attributes_error'] = 'يبدو أنك مصادق من قبل Shibboleth ولكن مودل لم يتلقَ أي سمات مستخدم. لطفاً، تحقق من كون مزود هويتك يطلق السمات المطلوبة ({$a}) لمزود الخدمة الذي يقوم مودل بتشغيله، أو قم بإبلاغ مدير الويب في هذا المخدم.';
 $string['shib_not_all_attributes_error'] = 'مودل بحاجة إلى سمات Shibboleth معينة والتي ليست موجودة عندك. السمات هي: {$a}<br />لطفاً، تواصل مع مشرف الويب لهذا المخدم أو مع مزود الهوية العائد لك.';

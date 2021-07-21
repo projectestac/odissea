@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'access', language 'ar', version '3.8'.
+ * Strings for component 'access', language 'ar', version '3.11'.
  *
  * @package     access
  * @category    string
@@ -27,20 +27,20 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['access'] = 'إمكانية الوصول';
 $string['accesshelp'] = 'مساعدة حول إمكانية الوصول';
-$string['accesskey'] = 'زر التمكين، {$a}';
-$string['accessstatement'] = 'بيان إمكانية الوصول';
+$string['accesskey'] = 'مفتاح الدخول، {$a}';
+$string['accessstatement'] = 'تصريح الدخول';
 $string['activitynext'] = 'النشاط التالي';
 $string['activityprev'] = 'النشاط السابق';
 $string['breadcrumb'] = 'مسار التنقل';
 $string['eventcontextlocked'] = 'سياق تم تجميده';
 $string['eventcontextunlocked'] = 'سياق ألغي تجميده';
 $string['hideblocka'] = 'إخفاء كتلة {$a}';
-$string['showblocka'] = 'اظهر الكتلة {$a}';
+$string['showblocka'] = 'إظهار كتلة {$a}';
 $string['sitemap'] = 'خارطة الموقع';
 $string['skipa'] = 'تجاوز {$a}';
 $string['skipblock'] = 'تجاوز الكتلة';
 $string['skipnavigation'] = 'تجاوز التنقل';
 $string['skipto'] = 'تجاوز إلى {$a}';
-$string['tocontent'] = 'تجاوز إلى المحتوى الرئيسي';
+$string['tocontent'] = 'تخطى إلى المحتوى الرئيسي';
 $string['tonavigation'] = 'اذهب إلى التصفح';
 $string['youarehere'] = 'أنت هنا !!';

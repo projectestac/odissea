@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mnet', language 'ca', version '3.8'.
+ * Strings for component 'mnet', language 'ca', version '3.11'.
  *
  * @package     mnet
  * @category    string
@@ -194,7 +194,7 @@ $string['receivedwarnings'] = 'S\'han rebut els següents avisos';
 $string['recordnoexists'] = 'No existeix el registre.';
 $string['reenableserver'] = 'No - Seleccioneu aquesta opció per tornar a habilitar aquest servidor.';
 $string['registerallhosts'] = 'Registra tots els servidors (mode promiscu)';
-$string['registerallhostsexplain'] = 'Podeu optar per registrar tots els servidors que intenten connectar-se-vos de forma automàtica. Això significa que apareixerà un registre a la vostra llista de servidors per a qualsevol lloc web MNet que se us connecti i sol·liciti la vostra clau pública. <br /> Teniu l\'opció de sota per configurar els serveis per a \'Tots els servidors\' i, habilitant alguns dels serveis allí, podreu proporcionar serveis a qualsevol servidor remot de manera indiscriminada.';
+$string['registerallhostsexplain'] = 'Podeu optar per registrar tots els servidors que intenten connectar-se amb vós de forma automàtica. Això significa que apareixerà un registre a la vostra llista de servidors per a qualsevol lloc web MNet que es connecti amb vós i sol·liciti la vostra clau pública. <br /> Teniu l\'opció de sota per configurar els serveis per a «Tots els servidors» i, habilitant alguns dels serveis allà, podreu proporcionar serveis a qualsevol servidor remot de manera indiscriminada.';
 $string['registerhostsoff'] = 'El registre de tots els servidors està actualment <b>inhabilitat</b>';
 $string['registerhostson'] = 'Registrar tots els servidor és actualment <b>habilitat</b>';
 $string['remotecourses'] = 'Cursos remots';
@@ -246,7 +246,7 @@ $string['unknown'] = 'Desconegut';
 $string['unknownerror'] = 'Ha succeït un error durant la negociació';
 $string['usercannotchangepassword'] = 'No podeu canviar la contrasenya aquí doncs esteu a un servidor remot.';
 $string['userchangepasswordlink'] = '<br /> Podeu habilitar el canvi de la contrasenya al  vostre<a href="{$a->wwwroot}/login/change_password.php">{$a->description}</a> subministrador.';
-$string['usernotfullysetup'] = 'El vostre compte d\'usuari està incomplet. Us cal tornar <a href="{$a}">al vostre subministrador</a> i comprovar que el vostre perfil s\'ha completat allí. Pot ser us calgui sortir i tornar a entrar per assegurar-vos que els canvis tenen efecte.';
+$string['usernotfullysetup'] = 'El vostre compte d\'usuari està incomplet. Us cal tornar <a href="{$a}">al vostre subministrador</a> i comprovar que el vostre perfil s\'ha completat allà. Potser us calgui finalitzar la sessió i tornar a iniciar-la per assegurar-vos que els canvis tenen efecte.';
 $string['usersareonline'] = 'AVÍS: {$a} usuaris d\'aquest servidor han entrat al vostre lloc.';
 $string['validated_by'] = 'Això està validat per la xarxa: <code>{$a}</code>';
 $string['verifyhostandpeer'] = 'Verifica el servidor i l\'igual';

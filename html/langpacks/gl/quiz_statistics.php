@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_statistics', language 'gl', version '3.8'.
+ * Strings for component 'quiz_statistics', language 'gl', version '3.11'.
  *
  * @package     quiz_statistics
  * @category    string
@@ -42,7 +42,7 @@ $string['backtoquizreport'] = 'Volver á páxina principal do informe de estatí
 $string['calculatefrom'] = 'Calcular as estatísticas de';
 $string['calculatingallstats'] = 'Calculando as estatísticas para as probas, preguntas e análise de datos de respostas';
 $string['cic'] = 'Coeficiente de consistencia interna (para {$a})';
-$string['completestatsfilename'] = 'completestats';
+$string['completestatsfilename'] = 'estat.completas';
 $string['count'] = 'Número';
 $string['counttryno'] = 'Número de intentos {$a}';
 $string['coursename'] = 'Nome do curso';
@@ -53,7 +53,7 @@ $string['discriminative_efficiency'] = 'Eficiencia discriminatoria';
 $string['downloadeverything'] = 'Descargar o informe completo como';
 $string['duration'] = 'Aberto para';
 $string['effective_weight'] = 'Ponderación efectiva';
-$string['errordeleting'] = 'Produciuse un erro ao borrar {$a} rexistros antigos.';
+$string['errordeleting'] = 'Produciuse un erro ao eliminar {$a} rexistros antigos.';
 $string['errormedian'] = 'Produciuse un erro ao obter a media';
 $string['errorpowerquestions'] = 'Produciuse un erro ao obter os datos para calcular a varianza para a cualificación de preguntas';
 $string['errorpowers'] = 'Produciuse un erro ao obter os datos para calcular a varianza para a cualificación de probas';
@@ -65,7 +65,7 @@ $string['firstattempts'] = 'primeiros intentos';
 $string['firstattemptsavg'] = 'Cualificación media dos primeiros intentos';
 $string['firstattemptscount'] = 'Número de primeiros intentos completos cualificados';
 $string['frequency'] = 'Frecuencia';
-$string['highestattempts'] = 'intento con máxima calificación';
+$string['highestattempts'] = 'intento con máxima cualificación';
 $string['highestattemptsavg'] = 'Cualificación media dos intentos con mellores cualificacións';
 $string['intended_weight'] = 'Ponderación desexada';
 $string['kurtosis'] = 'Curtose da distribución de puntuacións (para {$a})';
@@ -96,7 +96,7 @@ $string['questioninformation'] = 'Información da pregunta';
 $string['questionname'] = 'Nome da pregunta';
 $string['questionnumber'] = 'P núm.';
 $string['questionstatistics'] = 'Estatísticas da pregunta';
-$string['questionstatsfilename'] = 'questionstats';
+$string['questionstatsfilename'] = 'estat.preguntas';
 $string['questiontype'] = 'Tipo de pregunta';
 $string['quizinformation'] = 'Información da proba';
 $string['quizname'] = 'Nome da proba';
@@ -115,7 +115,6 @@ $string['standarddeviation'] = 'Desviación tipo (para {$a})';
 $string['standarddeviationq'] = 'Desviación tipo';
 $string['standarderror'] = 'Erro tipo (para {$a})';
 $string['statistics'] = 'Estatísticas';
-$string['statistics:componentname'] = 'Informe estatístico da proba';
 $string['statistics:view'] = 'Ver informe estatístico';
 $string['statisticsreport'] = 'Informe estatístico';
 $string['statisticsreportgraph'] = 'Estatísticas para posicións de pregunta';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'chat', language 'pt', version '3.8'.
+ * Strings for component 'chat', language 'pt', version '3.11'.
  *
  * @package     chat
  * @category    string
@@ -109,6 +109,7 @@ O Chat é uma ferramenta particularmente útil em situações em que as pessoas 
 $string['modulename_link'] = 'mod/chat/view';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Nunca apagar mensagens';
+$string['nextchattime'] = 'Próxima sessão de chat:';
 $string['nextsession'] = 'Próxima sessão';
 $string['no_complete_sessions_found'] = 'Não foram encontradas sessões concluídas.';
 $string['nochat'] = 'Chat não encontrado';
@@ -154,10 +155,11 @@ $string['send'] = 'Enviar';
 $string['sending'] = 'A enviar';
 $string['serverhost'] = 'Nome do servidor';
 $string['serverip'] = 'IP do servidor';
-$string['servermax'] = 'Num. máx. utilizadores';
+$string['servermax'] = 'Máximo de utilizadores';
 $string['serverport'] = 'Porta do servidor';
 $string['sessions'] = 'Sessões de chat';
 $string['sessionstart'] = 'A próxima sessão de chat será {$a->date} (daqui a {$a->fromnow})';
+$string['sessionstartsin'] = 'A próxima sessão de chat começará {$a} a partir de agora.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Todos podem ver as sessões anteriores';
 $string['studentseereports_help'] = 'Se definir como Não, apenas os utilizadores com a permissão mod/chat:readlog podem ver as gravações das sessões';

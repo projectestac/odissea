@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'fr', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'fr', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -115,6 +115,7 @@ $string['edit_xml_file'] = 'Modifier le fichier XML';
 $string['enumvaluesincorrect'] = 'Valeur incorrecte du champ énumération';
 $string['expected'] = 'Valeur attendue';
 $string['extensionrequired'] = 'L\'extension PHP « {$a} » est requise pour cette action. Veuillez l\'installer si vous voulez utiliser cette fonctionnalité.';
+$string['extraindexesfound'] = 'Index supplémentaires trouvés';
 $string['field'] = 'Champ';
 $string['fieldnameempty'] = 'Nom du champ vide';
 $string['fields'] = 'Champs';
@@ -159,8 +160,8 @@ $string['newkey'] = 'Nouvelle clef';
 $string['newtable'] = 'Nouvelle table';
 $string['newtablefrommysql'] = 'Nouvelle table depuis MySQL';
 $string['nofieldsspecified'] = 'Aucun champ spécifié';
-$string['nomasterprimaryuniquefound'] = 'La (les) colonne(s) référencées par votre clef étrangère doit(vent) être inclues dans une clef (KEY) primaire ou unique de la table référencée. Il ne suffit pas que la colonne soit dans un UNIQUE INDEX.';
-$string['nomissingindexesfound'] = 'Aucun index manquant n\'a été trouvé. Votre base de données ne nécessite aucune manipulation.';
+$string['nomasterprimaryuniquefound'] = 'La (les) colonne(s) référencées par votre clef étrangère doit(vent) être incluses dans une clef (KEY) primaire ou unique de la table référencée. Il ne suffit pas que la colonne soit dans un UNIQUE INDEX.';
+$string['nomissingorextraindexesfound'] = 'Aucun index manquant ou supplémentaire n\'a été trouvé. Aucune action n\'est requise.';
 $string['noreffieldsspecified'] = 'Aucun champ de référence spécifié';
 $string['noreftablespecified'] = 'Table de référence spécifiée non trouvée';
 $string['noviolatedforeignkeysfound'] = 'Aucune violation de clef étrangère n\'a été trouvée.';
@@ -219,6 +220,7 @@ $string['wronglengthforenum'] = 'Longueur incorrecte du champ énumération';
 $string['wrongnumberofreffields'] = 'Nombre incorrect de champs de référence';
 $string['wrongoraclesemantics'] = 'Sémantiques Oracle BYTE incorrectes trouvées';
 $string['wrongreservedwords'] = 'Mots réservés utilisés actuellement<br />(les noms des tables ne sont pas importants si vous utilisez $CFG->prefix)';
+$string['yesextraindexesfound'] = 'Les index supplémentaires suivants ont été trouvés.';
 $string['yesmissingindexesfound'] = '<p>Des index manquants ont été trouvés dans votre base de données. Voici les détails et instructions SQL à exécuter avec votre interface SQL préférée pour les créer. N\'oubliez pas d\'effectuer une sauvegarde de la base de données avant de lancer ces commandes.</p>
 <p>Après les avoir exécutés, il vous est vivement recommandé de lancer cet utilitaire une nouvelle fois afin de vérifier qu\'il ne reste plus d\'index manquant.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Certaines valeurs par défaut incohérentes ont été trouvées dans votre base de données. Voici les détails et instructions SQL à exécuter avec votre interface SQL préférée pour les corriger. N\'oubliez pas d\'effectuer une sauvegarde de la base de données avant de lancer ces commandes.</p>

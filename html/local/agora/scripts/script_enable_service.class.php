@@ -13,18 +13,20 @@ class script_enable_service extends agora_script_base{
     protected $category = "Upgrade";
 
     public function params(){
-        $params = array();
+        $params = [];
         $params['password'] = optional_param('password', false, PARAM_TEXT);
+        $params['xtecadminPassword'] = optional_param('xtecadminPassword', false, PARAM_TEXT);
         $params['clientName'] = optional_param('clientName', false, PARAM_TEXT);
         $params['clientCode'] = optional_param('clientCode', false, PARAM_TEXT);
         $params['clientAddress'] = optional_param('clientAddress', false, PARAM_TEXT);
         $params['clientCity'] = optional_param('clientCity', false, PARAM_TEXT);
         $params['clientDNS'] = optional_param('clientDNS', false, PARAM_TEXT);
+
         return $params;
     }
 
     protected function _execute($params = array(), $execute = true) {
-        global $CFG, $DB, $OUTPUT;
+        global $CFG, $DB;
 
         if (empty($params['password'])) {
             mtrace('El password no pot ser buit', '<br/>');
@@ -36,6 +38,7 @@ class script_enable_service extends agora_script_base{
             mtrace('No s\'ha trobat l\'usuari admin', '<br/>');
             return false;
         }
+
         $adminuser->password = $params['password'];
         $adminuser->firstname = 'Administrador/a';
         $adminuser->lastname = $params['clientName'];
@@ -44,8 +47,10 @@ class script_enable_service extends agora_script_base{
         $adminuser->address = $params['clientAddress'];
         $adminuser->city = $params['clientCity'];
         $DB->update_record('user', $adminuser);
+
         // Force change of password of user admin
         set_user_preference('auth_forcepasswordchange', 1, $adminuser);
+
         if (!is_siteadmin($adminuser)) {
             $admins = explode(',', $CFG->siteadmins);
             $admins[] = $adminuser->id;
@@ -53,11 +58,10 @@ class script_enable_service extends agora_script_base{
             mtrace('Set admin as siteadmin', '<br>');
         }
 
-
         mtrace('Usuari admin configurat', '<br/>');
 
         // Upgrade Moodle
-        $success = $this->execute_suboperation('restore_xtecadmin');
+        $success = $this->execute_suboperation('restore_xtecadmin', ['password' => $params['xtecadminPassword']]);
 
         // Update site name and site description
         $maincourse = $DB->get_record('course', array('id' => SITEID));
@@ -70,8 +74,6 @@ class script_enable_service extends agora_script_base{
         $maincourse->summary = 'Moodle del centre ' . $params['clientName'];
         $DB->update_record('course', $maincourse);
         mtrace('Curs principal configurat', '<br/>');
-
-        mtrace('Canviat barra de l\'editor HMTL', '<br/>');
 
         filter_set_global_state('filter/tex', TEXTFILTER_ON);
         mtrace('Activat filtre TEX', '<br/>');

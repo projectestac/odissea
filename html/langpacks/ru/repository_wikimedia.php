@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_wikimedia', language 'ru', version '3.8'.
+ * Strings for component 'repository_wikimedia', language 'ru', version '3.11'.
  *
  * @package     repository_wikimedia
  * @category    string
@@ -30,4 +30,8 @@ $string['keyword'] = 'Искать';
 $string['maxheight'] = 'Максимальная высота изображения (пикселей)';
 $string['maxwidth'] = 'Максимальная ширина изображения (пикселей)';
 $string['pluginname'] = 'Wikimedia';
+$string['privacy:metadata:repository_wikimedia'] = 'Плагин хранилище Wikimedia не хранит никаких личных данных, но передает данные пользователя из Moodle в отдаленную систему.';
+$string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'В настройках пользователя настроена максимальная высота для хранилища Wikimedia.';
+$string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'В настройках пользователя настроена максимальная ширина для хранилища Wikimedia.';
+$string['privacy:metadata:repository_wikimedia:search_text'] = 'Текстовый поисковый запрос пользователя хранилища Wikimedia.';
 $string['wikimedia:view'] = 'Просматривать хранилище файлов «Wikimedia»';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'fr', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'fr', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -42,4 +42,7 @@ $string['pluginname_help'] = 'Pour répondre à la question (qui peut contenir u
 $string['pluginnameadding'] = 'Ajout d\'une question à réponse courte';
 $string['pluginnameediting'] = 'Modification d\'une question à réponse courte';
 $string['pluginnamesummary'] = 'Permet une réponse d\'un ou quelques mots, évaluée en comparant divers modèles de réponses, pouvant contenir des jokers.';
-$string['privacy:metadata'] = 'Le plugin de type de question Réponse courte n\'enregistre aucune donnée personnelle.';
+$string['privacy:metadata'] = 'Le plugin de type de question Réponse courte permet aux auteurs de questions d\'enregistrer des préférences par défaut.';
+$string['privacy:preference:defaultmark'] = 'Le nombre de points par défaut pour une question.';
+$string['privacy:preference:penalty'] = 'La pénalité pour chaque tentative incorrecte lorsque les questions sont utilisées dans le comportement « Interactif avec essais multiples » ou « Adaptatif ».';
+$string['privacy:preference:usecase'] = 'Si les réponses sont sensibles à la casse.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_grader', language 'pt', version '3.8'.
+ * Strings for component 'gradereport_grader', language 'pt', version '3.11'.
  *
  * @package     gradereport_grader
  * @category    string
@@ -34,8 +34,8 @@ $string['eventgradereportviewed'] = 'Relatório de avaliador visualizado';
 $string['grader:manage'] = 'Gerir relatório de avaliação';
 $string['grader:view'] = 'Ver o relatório de avaliação';
 $string['overriddengrade'] = 'Nota ajustada';
-$string['pluginname'] = 'Pauta do avaliador';
-$string['preferences'] = 'Preferências da pauta do avaliador';
+$string['pluginname'] = 'Relatório do avaliador';
+$string['preferences'] = 'Preferências do relatório do avaliador';
 $string['privacy:metadata:preference:grade_report_aggregationposition'] = 'Se as colunas total da categoria e a disciplina são exibidas em primeiro ou último lugar na pauta';
 $string['privacy:metadata:preference:grade_report_averagesdecimalpoints'] = 'O número de casas decimais a mostrar em cada média ou se é usado o total de casas decimais configurado para a categoria ou item da pauta (herdar)';
 $string['privacy:metadata:preference:grade_report_averagesdisplaytype'] = 'Se a média (média) é exibida como nota simples, percentagem ou letras, ou se é usado o tipo de exibição configurado para a categoria ou item da pauta (herdar)';
@@ -55,7 +55,7 @@ $string['privacy:metadata:preference:grade_report_shownumberofgrades'] = 'Se dev
 $string['privacy:metadata:preference:grade_report_showonlyactiveenrol'] = 'Se exibe apenas utilizadores inscritos ativos (não suspensos) no relatório da pauta ou todos os utilizadores inscritos';
 $string['privacy:metadata:preference:grade_report_showquickfeedback'] = 'Se deve exibir a caixa de texto de feedback com limite pontilhado em cada avaliação, permitindo a edição do feedback de várias notas ao mesmo tempo';
 $string['privacy:metadata:preference:grade_report_showranges'] = 'Se deve exibir uma linha adicional com a média de cada categoria e item da pauta';
-$string['privacy:metadata:preference:grade_report_showuserimage'] = 'Se deve exibir a imagem de perfil do utilizador ao lado do nome';
+$string['privacy:metadata:preference:grade_report_showuserimage'] = 'Se deve, ou não, exibir a imagem de perfil do utilizador ao lado do nome';
 $string['privacy:metadata:preference:grade_report_studentsperpage'] = 'O número de alunos exibidos por página no relatório da pauta';
 $string['privacy:request:preference:grade_report_grader_collapsed_categories'] = 'Tem algumas categorias de pauta contraídas na disciplina "{$a->name}"';
 $string['summarygrader'] = 'Uma tabela com os nomes dos alunos na primeira coluna, com atividades para avaliação agrupadas por categoria e disciplina na parte superior.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'zh_cn', version '3.8'.
+ * Strings for component 'grades', language 'zh_cn', version '3.11'.
  *
  * @package     grades
  * @category    string
@@ -165,6 +165,7 @@ $string['droplowestvalues'] = '去掉{$a}个最低分值';
 $string['dropped'] = '去掉';
 $string['dropxlowest'] = '去掉X个最低分';
 $string['dropxlowestwarning'] = '注意：如果您使用“去掉X个最低分”，则评分将假定类别中的所有成绩项都具有相同的分值。 如果分值不同，结果将不可预测';
+$string['duplicatedgradeitem'] = '{$a} (复制)';
 $string['duplicatescale'] = '复制量表';
 $string['edit'] = '编辑';
 $string['editcalculation'] = '编辑计算方法';

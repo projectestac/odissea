@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_completion_progress', language 'it', version '3.8'.
+ * Strings for component 'block_completion_progress', language 'it', version '3.11'.
  *
  * @package     block_completion_progress
  * @category    string

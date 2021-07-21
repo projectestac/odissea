@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_none', language 'sv', version '3.8'.
+ * Strings for component 'auth_none', language 'sv', version '3.11'.
  *
  * @package     auth_none
  * @category    string
@@ -26,5 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'Användare kan logga in och skapa giltiga konton omedelbart, utan autentisering mot extern server och heller ingen bekräftelse via e-post.  Var försiktig med användning av detta val - tänk på säkerheten och de administrativa problem som detta kan orsaka.';
+$string['checknoauth'] = 'Ingen autentisering';
+$string['checknoauthdetails'] = '<p><em>Ingen autentisering</em>-pluginmodulen är inte avsedd för produktionswebbplatser. Vänligen inaktivera den såvida detta inte är en utvecklingswebbplats.</p>';
+$string['checknoautherror'] = 'Pluginmodulen Ingen autentisering får inte användas på produktionswebbplatser.';
+$string['checknoauthok'] = 'Pluginmodulen Ingen autentisering är inaktiverad';
 $string['pluginname'] = 'Ingen autentisering';
-$string['privacy:metadata'] = 'Pluginmodulen Ingen autentisering lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Ingen autentisering lagrar ingen personinformation.';

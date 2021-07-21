@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_selfcompletion', language 'ar', version '3.8'.
+ * Strings for component 'block_selfcompletion', language 'ar', version '3.11'.
  *
  * @package     block_selfcompletion
  * @category    string

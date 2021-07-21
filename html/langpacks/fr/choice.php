@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'fr', version '3.8'.
+ * Strings for component 'choice', language 'fr', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -55,6 +55,7 @@ $string['choicetext'] = 'Texte de la question';
 $string['chooseaction'] = 'Choisir une action…';
 $string['chooseoption'] = 'Choisir : {$a}';
 $string['closebeforeopen'] = 'La date de fermeture indiquée est antérieure à la date d\'ouverture.';
+$string['completiondetail:submit'] = 'Faire un choix';
 $string['completionsubmit'] = 'Afficher comme terminé quand l\'utilisateur a rempli le sondage';
 $string['description'] = 'Description';
 $string['deselectalloption'] = 'Désélectionner tous les « {$a} »';
@@ -80,6 +81,7 @@ $string['indicator:socialbreadth_help'] = 'Cet indicateur se base sur l\'interac
 $string['indicator:socialbreadthdef'] = 'Sondage : aspect social';
 $string['indicator:socialbreadthdef_help'] = 'Le participant a atteint durant cet intervalle d\'analyse ce pourcentage d\'engagement social offert par les activités « Sondage » (niveaux : pas de participation, participant seul, participant avec d\'autres).';
 $string['limit'] = 'Limite';
+$string['limita'] = 'Limite : {$a}';
 $string['limitanswers'] = 'Limiter le nombre de réponses permises';
 $string['limitanswers_help'] = 'Ce réglage vous permet de limiter le nombre de personnes pouvant sélectionner une option d\'un sondage. Lorsque cette limite est atteinte, personne d\'autre ne pourra plus choisir cette option.
 
@@ -115,6 +117,7 @@ $string['options'] = 'Options';
 $string['page-mod-choice-x'] = 'Toute page du module sondage';
 $string['pluginadministration'] = 'Administration du sondage';
 $string['pluginname'] = 'Sondage';
+$string['previewing'] = 'il s\'agit d\'une prévisualisation des options disponibles pour cette activité. Vous pourrez choisir une option lorsqu\'elle sera ouverte.';
 $string['previewonly'] = 'Cet affichage est une prévisualisation des options disponibles pour cette activité. Vous ne pourrez pas enregistrer votre choix avant le {$a}.';
 $string['privacy'] = 'Confidentialité des résultats';
 $string['privacy:metadata:choice_answers'] = 'Informations sur les réponses données par l\'utilisateur à un sondage.';
@@ -124,7 +127,7 @@ $string['privacy:metadata:choice_answers:timemodified'] = 'L\'horodatage de la m
 $string['privacy:metadata:choice_answers:userid'] = 'Identifiant de l\'utilisateur répondant au sondage.';
 $string['publish'] = 'Publication des résultats';
 $string['publishafteranswer'] = 'Afficher les résultats aux étudiants après leur réponse';
-$string['publishafterclose'] = 'N\'afficher les résultats aux étudiants qu\'une fois le sondage fermé';
+$string['publishafterclose'] = 'N\'afficher les résultats aux étudiants qu\'une fois le sondage terminé';
 $string['publishalways'] = 'Toujours afficher les résultats aux étudiants';
 $string['publishanonymous'] = 'Publier les résultats anonymement, sans afficher le nom des étudiants';
 $string['publishinfoanonafter'] = 'Les résultats seront publiés de façon anonyme après votre réponse.';
@@ -137,12 +140,15 @@ $string['publishnot'] = 'Ne pas publier les résultats pour les étudiants';
 $string['removemychoice'] = 'Retirer mon vote';
 $string['removeresponses'] = 'Supprimer toutes les réponses';
 $string['responses'] = 'Réponses';
+$string['responsesa'] = 'Réponses : {$a}';
 $string['responsesresultgraphheader'] = 'Affichage graphique';
 $string['responsesto'] = 'Réponses à {$a}';
 $string['results'] = 'Résultats';
 $string['savemychoice'] = 'Enregistrer mon choix';
 $string['search:activity'] = 'Sondage – information sur l\'activité';
 $string['selectalloption'] = 'Sélectionner tous les « {$a} »';
+$string['showavailable'] = 'Afficher les places disponibles';
+$string['showavailable_help'] = 'Afficher aux étudiants le nombre de places disponibles pour chaque option et le nombre de réponses déjà reçues.';
 $string['showpreview'] = 'Afficher la prévisualisation';
 $string['showpreview_help'] = 'Permettre aux étudiants de prévisualiser les options disponibles avant l\'ouverture de l\'enregistrement des choix du sondage.';
 $string['showunanswered'] = 'Afficher la colonne des « sans réponse »';

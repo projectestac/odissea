@@ -103,7 +103,7 @@ class core_weblib_testcase extends advanced_testcase {
         // This time we want to apply the filters.
         $options['filter'] = true;
         $filterresult = format_string($rawstring, $striplinks, $options);
-        $this->assertRegExp("/$expectedfilter/", $filterresult);
+        $this->assertMatchesRegularExpression("/$expectedfilter/", $filterresult);
 
         filter_set_local_state('censor', $context->id, TEXTFILTER_OFF);
 
@@ -111,7 +111,7 @@ class core_weblib_testcase extends advanced_testcase {
         // the same as the filtered text above even though we've disabled the
         // censor filter in between.
         $cachedresult = format_string($rawstring, $striplinks, $options);
-        $this->assertRegExp("/$expectedfilter/", $cachedresult);
+        $this->assertMatchesRegularExpression("/$expectedfilter/", $cachedresult);
     }
 
     public function test_s() {
@@ -806,7 +806,7 @@ EXPECTED;
 
         $html = "<p>This is a test.</p><p><img src=\"${url1}\" alt=\"\" role=\"presentation\"></p>
                 <br>Test content.<p></p><p><img src=\"{$url2}\" alt=\"\" width=\"2048\" height=\"1536\"
-                role=\"presentation\" class=\"img-responsive atto_image_button_text-bottom\"><br></p>";
+                role=\"presentation\" class=\"img-fluid atto_image_button_text-bottom\"><br></p>";
         $draftareas = array(
             array(
                 'urlbase' => 'draftfile.php',

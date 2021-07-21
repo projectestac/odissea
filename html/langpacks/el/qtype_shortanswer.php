@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'el', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'el', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -43,4 +43,7 @@ $string['pluginname_link'] = 'ερώτηση/τύπος/σύντομηαπάντ
 $string['pluginnameadding'] = 'Προσθήκη μιας ερώτησης Σύντομης Απάντησης';
 $string['pluginnameediting'] = 'Τροποποίηση μιας ερώτησης Σύντομης Απάντησης';
 $string['pluginnamesummary'] = 'Επιτρέπει μια απόκριση η οποία αποτελείται από μία ή λίγες λέξεις και η οποία βαθμολογείται σε σύγκριση με διάφορες πρότυπες απαντήσεις, οι οποίες μπορούν να περιέχουν μπαλαντέρ.';
-$string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις τύπου σύντομης απάντησης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο τύπου ερωτήσεων σύντομης απάντησης επιτρέπει στους συγγραφείς ερωτήσεων να ορίζουν προεπιλεγμένες επιλογές ως προτιμήσεις χρήστη.';
+$string['privacy:preference:defaultmark'] = 'Ο προεπιλεγμένος βαθμός που έχει οριστεί για μια δεδομένη ερώτηση.';
+$string['privacy:preference:penalty'] = 'Η ποινή για κάθε λανθασμένη δοκιμή όταν εκτελούνται ερωτήσεις χρησιμοποιώντας τη συμπεριφορά «Διαδραστική με πολλαπλές προσπάθειες» ή «Κατάσταση προσαρμογής».';
+$string['privacy:preference:usecase'] = 'Εάν στις απαντήσεις πρέπει να γίνεται διάκριση κεφαλαίων/πεζών.';

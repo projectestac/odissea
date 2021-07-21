@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'sv', version '3.8'.
+ * Strings for component 'workshop', language 'sv', version '3.11'.
  *
  * @package     workshop
  * @category    string
@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'Bedömningarna avslutas:';
+$string['activitydate:assessmentsclosed'] = 'Bedömningarna avslutades:';
+$string['activitydate:assessmentsopen'] = 'Bedömningarna påbörjas:';
+$string['activitydate:assessmentsopened'] = 'Bedömningarna påbörjades:';
+$string['activitydate:submissionsclose'] = 'Inlämningarna stänger:';
+$string['activitydate:submissionsclosed'] = 'Inlämningar stängdes:';
+$string['activitydate:submissionsopen'] = 'Inlämningar öppnas:';
+$string['activitydate:submissionsopened'] = 'Inlämningar öppnades:';
 $string['aggregategrades'] = 'Räkna om betygen';
 $string['aggregation'] = 'Betygsaggregering';
 $string['allocate'] = 'Fördela inlämningar';
@@ -170,9 +178,9 @@ $string['gradeitemsubmission'] = '{$a->workshopname} (inlämning)';
 $string['gradeover'] = 'Åsidosätt betyg för inlämning';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Betygsrapport för workshop';
-$string['gradetopassgrading'] = 'Beömningsbetyg för godkänt';
-$string['gradetopasssubmission'] = 'Inlämningsbetyg för godkänt';
-$string['gradinggrade'] = 'Betyg för bedömning';
+$string['gradetopassgrading'] = 'Betygsgräns för godkänd bedömning';
+$string['gradetopasssubmission'] = 'Betygsgräns för godkänd inlämning';
+$string['gradinggrade'] = 'Maxbetyg för bedömning';
 $string['gradinggrade_help'] = 'Denna inställning anger maximalt betyg som kan uppnås för bedömning av inlämningar.';
 $string['gradinggradecalculated'] = 'Beräknat betyg för bedömning';
 $string['gradinggradeof'] = 'Betyg för bedömning (av {$a})';
@@ -196,10 +204,10 @@ $string['latesubmissions'] = 'Sent inskickade uppgifter';
 $string['latesubmissions_desc'] = 'Tillåt inskickning av uppgifter efter sluttiden.';
 $string['latesubmissions_help'] = 'Om aktiverat kan en workshopdeltagare lämna in sitt arbete efter tidsfristen för inlämning eller under bedömningsfasen. För sent inlämnade arbeten kan däremot inte redigeras.';
 $string['latesubmissionsallowed'] = 'Sent inskickade uppgifter accepteras';
-$string['legacyallocationplugincron'] = 'Gammal typ av crontilldelning av workshop';
+$string['legacyallocationplugincron'] = 'Äldre typ av crontilldelning av workshop';
 $string['maxbytes'] = 'Maximal filstorlek för inlämningsbilagor';
 $string['modulename'] = 'Workshop';
-$string['modulename_help'] = 'Aktiviteten Workshop möjliggör insamling, granskning och medarbetarbedömning av elevernas arbeten.
+$string['modulename_help'] = 'Aktiviteten <em>Workshop</em> möjliggör insamling, granskning och medarbetarbedömning av elevernas arbeten.
 
 Eleverna kan lämna digitalt innehåll (filer), som dokument från ordbehandlingsprogram eller kalkylark och kan även skriva text direkt i ett fält med hjälp av textredigeraren.
 
@@ -211,8 +219,8 @@ $string['myassessments'] = 'Mina bedömningar';
 $string['mysubmission'] = 'Min inskickade uppgift';
 $string['nattachments'] = 'Maximalt antal bilagor till inlämningsuppgift';
 $string['noexamples'] = 'Det finns inga exempel i denna workshop än';
-$string['noexamplesformready'] = 'Du måste definiera bedömningsformuläret innan du ger exempel på inlämningsuppgift';
-$string['nogradeyet'] = 'Inget betyg än';
+$string['noexamplesformready'] = 'Du måste definiera bedömningsformuläret innan du ger exempel på inlämningsuppgifter';
+$string['nogradeyet'] = 'Inget betyg ännu';
 $string['nosubmissionfound'] = 'Ingen inlämnad uppgift hittades för denna användare';
 $string['nosubmissions'] = 'Inga inlämnade uppgifter finns än i denna workshop';
 $string['nosubmissiontype'] = 'Minst en inlämningstyp måste finnas';
@@ -262,6 +270,22 @@ $string['privacy:metadata:late'] = 'Om inlämningen lämnats in efter sluttiden'
 $string['privacy:metadata:peercomment'] = 'Kommentar på betyget från användaren som tillhandahöll bedömningen';
 $string['privacy:metadata:peercommentformat'] = 'Textformat på kommentar på det utdelade betyget';
 $string['privacy:metadata:preference:perpage'] = 'Antal inlämningar användaren föredrar att se per sida';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = 'Komprimerad/expanderad-status för \'Exempelinlämning\'-panelen.';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = 'Komprimerad/expanderad-status för \'Inlämningstapport\'-panelen.';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = 'Komprimerad/expanderad-status för \'Bedömningsformulär\'-sektionen.';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Tilldelade inlämningar att bedöma.';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Workshopverktyg.';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Slutsats.';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Exempelinlämningar att bedöma.';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Exempelinlämningar att bedöma.';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Betygsrapporten i workshopmodulen.';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Inlämningsinstruktioner.';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Bedömningsinstruktioner.';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Introduktion.';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Övergripande återkoppling.';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Dina inlämningar.';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn Publicerade inlämningar.';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = 'Det komprimerade/expanderade tillståndet för vyn "Dina betyg".';
 $string['privacy:metadata:published'] = 'Om inlämningen ska offentliggöras för alla deltagare när workshopen stängs';
 $string['privacy:metadata:reviewerid'] = 'ID för användaren som tillhandahåller utvärderingen';
 $string['privacy:metadata:strategy'] = 'Namn på delplugin för bedömningsstrategin som tolkar postvärdena';
@@ -310,12 +334,12 @@ $string['someuserswosubmission'] = 'Det finns minst en deltagare som ännu inte 
 $string['sortasc'] = 'Stigande sortering';
 $string['sortdesc'] = 'Fallande sortering';
 $string['strategy'] = 'Betygsstrategi';
-$string['strategy_help'] = 'Betygsstrategin avgör vilket bedömningsformulär som ska användas och metoden för betygssättning av inlämnade uppgifter. Det finns 4 möjligheter:
+$string['strategy_help'] = 'Bedömningsstrategin bestämmer vilket bedömningsformulär som används och metoden för att bedöma inlämningar. Det finns 4 alternativ:
 
-* Ackumulerad betygssättning - Kommentarer och betyg ges om specificerade aspekter
-* Kommentarer - Kommentarer ges om specificerade aspekter, men inget betyg kan ges
-* Antal fel - Kommentarer och ja / nej bedömning ges beträffande specificerade påståenden
-* Bedömningsmatris - En nivåbedömning ges beträffande angivna kriterier';
+* Ackumulerad betygssättning - Kommentarer och betyg ges avseende specificerade aspekter
+* Kommentarer - Kommentarer ges om angivna aspekter men inget betyg kan ges
+* Antal fel - Kommentarer och en ja/nej-bedömning ges avseende angivna påståenden
+* Bedömningsmatris - En nivåbedömning görs avseende angivna kriterier';
 $string['strategyhaschanged'] = 'Workshopens betygsstrategi har ändrats sedan formuläret öppnades för redigering.';
 $string['submission'] = 'Inlämning';
 $string['submissionattachment'] = 'Bilaga';
@@ -331,9 +355,9 @@ $string['submissionendswitch'] = 'Byt till nästa fas efter tidsgränsen för in
 $string['submissionendswitch_help'] = 'Om en tidsfrist för inlämningar anges och denna ruta är markerad, kommer Workshopen automatiskt växla till bedömningsfasen efter det att tidsfristen för inlämningar inträffat.
 
 Om du aktiverar den här funktionen rekommenderas du även att ställa in en schemalagd allokering. Om inlämningarna inte allokeras kan ingen bedömning göras även om själva Workshopen befinner sig i bedömningsfasen.';
-$string['submissiongrade'] = 'Bedömning/värdering/betygssättning av en inlämning';
+$string['submissiongrade'] = 'Maxbetyg för inlämning';
 $string['submissiongrade_help'] = 'Denna inställning anger maximalt betyg som kan erhållas för inlämnat arbete.';
-$string['submissiongradeof'] = 'Betyg för inlämning (från {$a})';
+$string['submissiongradeof'] = 'Betyg för inlämning (av {$a})';
 $string['submissionlastmodified'] = 'Senast ändrad';
 $string['submissionrequiredcontent'] = 'Du måste skriva något eller lägga till en fil.';
 $string['submissionrequiredfile'] = 'Du måste lägga till en fil eller ange text';
@@ -358,7 +382,7 @@ $string['subplugintype_workshopform'] = 'Betygsstrategi';
 $string['subplugintype_workshopform_plural'] = 'Betygsstrategier';
 $string['switchingphase'] = 'Byter fas';
 $string['switchphase'] = 'Byt fas';
-$string['switchphase10'] = 'Växla till inställningsfasen';
+$string['switchphase10'] = 'Växla till uppsättningsfasen';
 $string['switchphase10info'] = 'Du håller på att byta fas för workshopen till <strong>Förberedelsefas</strong>. I denna fas kan användare inte ändra sina inlämningar eller deras bedömningar. Lärare kan använda denna fas för att ändra inställningar för workshopen, ändra betygsstrategi eller justera bedömningsformerna.';
 $string['switchphase20'] = 'Växla till inlämningsfasen';
 $string['switchphase20info'] = 'Du håller på att byta fas för workshopen till <strong>Inlämningsfas</strong>. Eleverna kan lämna in sitt arbete under denna fas (inom givna datum, om dessa är inställda). Lärare kan fördela bidrag för kollegial granskning.';
@@ -423,7 +447,8 @@ $string['workshop:viewauthornames'] = 'Visa författarnamn';
 $string['workshop:viewauthorpublished'] = 'Visa författare för publicerade inlämningar';
 $string['workshop:viewpublishedsubmissions'] = 'Visa publicerade inlämningar';
 $string['workshop:viewreviewernames'] = 'Visa granskares namn';
-$string['workshopname'] = 'Namn för Workshop';
+$string['workshopname'] = 'Namn';
 $string['yourassessmentfor'] = 'Din bedömning av {$a}';
 $string['yourgrades'] = 'Dina betyg';
 $string['yoursubmission'] = 'Din inlämning';
+$string['yoursubmissionwithassessments'] = 'Din inlämning med utvärderingar';

@@ -25,15 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.06.20  @sarjona
-if (get_protected_agora() ) {
-//************ FI
+// XTEC ************ AFEGIT - Allow access only to xtecadmin user
+// 2012.06.20 @sarjona
+if (get_protected_agora()) {
+// ************ FI
+
 $ADMIN->add('reports', new admin_externalpage('reportconfiglog', get_string('configlog', 'report_configlog'), "$CFG->wwwroot/report/configlog/index.php"));
-//XTEC ************ AFEGIT - To let access only to xtecadmin user
-//2012.06.20  @sarjona
+
+// XTEC ************ AFEGIT - Allow access only to xtecadmin user
+// 2012.06.20 @sarjona
 }
-//************ FI 
+// ************ FI
 
 // no report settings
 $settings = null;

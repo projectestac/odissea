@@ -18,10 +18,11 @@ Feature: Edit activities in social activities block
       | student1 | C1 | student |
 
   @javascript
-  Scenario: Edit name of acitivity in-place in social activities block
+  Scenario: Edit name of activity in-place in social activities block
     Given I log in as "user1"
     And I am on "Course 1" course homepage with editing mode on
-    And I set the field "Add an activity to section 'section 0'" to "Forum"
+    And I press "Add an activity or resource"
+    And I click on "Add a new Forum" "link" in the "Add an activity or resource" "dialogue"
     And I set the field "Forum name" to "My forum name"
     And I press "Save and return to course"
     When I set the field "Edit title" in the "My forum name" "block_social_activities > Activity" to "New forum name"
@@ -40,7 +41,8 @@ Feature: Edit activities in social activities block
     And I log in as "user1"
     And I am on "Course 1" course homepage with editing mode on
     And I add the "Recent activity" block
-    And I set the field "Add an activity to section 'section 0'" to "Forum"
+    And I press "Add an activity or resource"
+    And I click on "Add a new Forum" "link" in the "Add an activity or resource" "dialogue"
     And I set the field "Forum name" to "My forum name"
     And I press "Save and return to course"
     And "My forum name" activity in social activities block should have "Hide" editing icon

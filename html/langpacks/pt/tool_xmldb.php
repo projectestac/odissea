@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_xmldb', language 'pt', version '3.8'.
+ * Strings for component 'tool_xmldb', language 'pt', version '3.11'.
  *
  * @package     tool_xmldb
  * @category    string
@@ -115,6 +115,7 @@ $string['edit_xml_file'] = 'Editar ficheiro XML';
 $string['enumvaluesincorrect'] = 'Valores incorretos para o campo enum';
 $string['expected'] = 'Esperado';
 $string['extensionrequired'] = 'Lamentamos - a extensão PHP \'{$a}\' é necessária para esta ação. Instale esta extensão se pretende usar esta funcionalidade.';
+$string['extraindexesfound'] = 'Índices extras encontrados';
 $string['field'] = 'Campo';
 $string['fieldnameempty'] = 'Nome do campo vazio';
 $string['fields'] = 'Campos';
@@ -160,13 +161,13 @@ $string['newtable'] = 'Nova tabela';
 $string['newtablefrommysql'] = 'Nova tabela do MySQL';
 $string['nofieldsspecified'] = 'Não foram especificados campos';
 $string['nomasterprimaryuniquefound'] = 'A(s) coluna(s) que a chave externa referencia devem estar incluídas numa chave primária ou única na tabela referenciada. Tenha em atenção que, a coluna estar num índice único não é suficiente.';
-$string['nomissingindexesfound'] = 'Não foram encontrados índices em falta, a sua BD não necessita de ações subsequentes.';
+$string['nomissingorextraindexesfound'] = 'Nenhum índice extra ou em falta foi encontrado, por isso, não são necessárias mais ações.';
 $string['noreffieldsspecified'] = 'Não existem campos de referência especificados';
 $string['noreftablespecified'] = 'Tabela de referência especificada não encontrada';
 $string['noviolatedforeignkeysfound'] = 'Não foram encontradas violações de chaves estrangeiras';
 $string['nowrongdefaultsfound'] = 'Não foram encontradas predefinições inconsistentes. A sua BD não necessita de ações subsequentes.';
 $string['nowrongintsfound'] = 'Não foram encontrados inteiros errados. A sua BD não necessita de ações subsequentes.';
-$string['nowrongoraclesemanticsfound'] = 'Não foram encontradas colunas Oracle usando semânticas BYTE, a sua BD não necessita de ações subsequentes.';
+$string['nowrongoraclesemanticsfound'] = 'Não foram encontradas colunas Oracle usando semânticas BYTE. A sua BD não necessita de ações subsequentes.';
 $string['numberincorrectdecimals'] = 'Número incorreto de decimais para campo numérico';
 $string['numberincorrectlength'] = 'Tamanho incorreto para campo numérico';
 $string['numberincorrectwholepart'] = 'Parte de número inteiro muito grande para o campo de número';
@@ -219,6 +220,7 @@ $string['wronglengthforenum'] = 'Tamanho incorreto para campo enum';
 $string['wrongnumberofreffields'] = 'Número errado de campos de referência';
 $string['wrongoraclesemantics'] = 'Semânticas BYTE do Oracle encontradas';
 $string['wrongreservedwords'] = 'Palavras reservadas utilizadas<br />(note que os nomes das tabelas não são importantes se usarem $CFG->prefix)';
+$string['yesextraindexesfound'] = 'Foram encontrados os seguintes índices adicionais.';
 $string['yesmissingindexesfound'] = '<p>Foram encontrados índices em falta na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os criar todos (não se esqueça de fazer primeiro uma cópia de segurança dos seus dados).</p>
 <p>Depois de executar os comandos é altamente recomendado que execute esta funcionalidade novamente para verificar que não existem mais índices em falta.</p>';
 $string['yeswrongdefaultsfound'] = '<p>Foram encontradas predefinições erradas na sua BD. Aqui estão os detalhes e os comandos SQL de execução necessária com a sua interface SQL favorita para os criar todos (não se esqueça de fazer primeiro uma cópia de segurança dos seus dados).</p>

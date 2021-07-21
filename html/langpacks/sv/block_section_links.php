@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_section_links', language 'sv', version '3.8'.
+ * Strings for component 'block_section_links', language 'sv', version '3.11'.
  *
  * @package     block_section_links
  * @category    string
@@ -38,5 +38,7 @@ $string['numsections2_help'] = 'När antalet avsnitt i kursen når detta antal a
 $string['pluginname'] = 'Sektionslänkar';
 $string['privacy:metadata'] = 'Blocket Sektionslänkar visar enbart data som lagrats på andra platser.';
 $string['section_links:addinstance'] = 'Lägg till nytt Sektionslänkar-block';
+$string['showsectionname'] = 'Visa sektionsnamn';
+$string['showsectionname_help'] = 'Visa förutom sektionsnumret även namnet på sektionen';
 $string['topics'] = 'Ämnen';
 $string['weeks'] = 'Veckor';

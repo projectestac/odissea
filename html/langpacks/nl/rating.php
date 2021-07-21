@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'rating', language 'nl', version '3.8'.
+ * Strings for component 'rating', language 'nl', version '3.11'.
  *
  * @package     rating
  * @category    string
@@ -31,7 +31,7 @@ $string['aggregatemax'] = 'Maximum beoordeling';
 $string['aggregatemin'] = 'Minimumbeoordeling';
 $string['aggregatenone'] = 'Geen beoordelingen';
 $string['aggregatesum'] = 'Som van beoordelingen';
-$string['aggregatetype'] = 'Aggregatieype';
+$string['aggregatetype'] = 'Aggregatietype';
 $string['aggregatetype_help'] = 'Het aggregatietype bepaalt hoe beoordelingen gecombineerd worden om tot het uiteindelijke cijfer in de cijferlijst te komen.
 
 * Gemiddelde van de beoordelingen - Het gemiddelde van alle beoordelingen

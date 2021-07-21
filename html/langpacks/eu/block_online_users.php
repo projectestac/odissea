@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_online_users', language 'eu', version '3.8'.
+ * Strings for component 'block_online_users', language 'eu', version '3.11'.
  *
  * @package     block_online_users
  * @category    string
@@ -36,6 +36,7 @@ $string['online_users:myaddinstance'] = 'Gehitu on-line erabiltzaileak bloke ber
 $string['online_users:viewlist'] = 'Ikusi on-line erabiltzaileen zerrenda';
 $string['onlinestatushiding'] = 'Ezkutatu online egoera';
 $string['onlinestatushiding_desc'] = 'Gaituz gero, erabiltzaileek euren online egoera beste erabiltzaileei ezkutatzeko aukera izango dute.';
+$string['otherusers'] = 'Beste erabiltzaileak ({$a})';
 $string['periodnminutes'] = 'azken {$a} minutuetan';
 $string['pluginname'] = 'On-line erabiltzaileak';
 $string['privacy:metadata:preference:uservisibility'] = 'On-line egoera beste erabiltzaileentzat ikusgai dago On-line erabiltzaileen blokean.';

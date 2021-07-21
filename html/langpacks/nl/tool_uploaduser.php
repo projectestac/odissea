@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_uploaduser', language 'nl', version '3.8'.
+ * Strings for component 'tool_uploaduser', language 'nl', version '3.11'.
  *
  * @package     tool_uploaduser
  * @category    string
@@ -29,19 +29,30 @@ $string['allowdeletes'] = 'Verwijderen toestaan';
 $string['allowrenames'] = 'Gebruikersnamen bijwerken toestaan';
 $string['allowsuspends'] = 'Sta het schorsen en activeren van accounts toe';
 $string['assignedsysrole'] = 'Toegewezen systeemrol {$a}';
+$string['clidefault'] = 'Standaard:';
+$string['clierrorargument'] = 'Waarde voor argument --{$a->name} is niet geldig. Toegestane waarden zijn: {$a->values}';
+$string['clifile'] = 'Pad naar CSV-bestand met de gebruikersgegevens. Vereist.';
+$string['clifilenotreadable'] = 'Bestand {$a} bestaat niet of is niet leesbaar';
+$string['clihelp'] = 'Print deze hulp uit.';
+$string['climissingargument'] = 'Argument - {$a} is vereist';
+$string['clititle'] = 'Commandoregel Upload gebruikerstool.';
+$string['clivalidationerror'] = 'Validatiefout:';
 $string['csvdelimiter'] = 'Scheidingsteken voor CSV';
 $string['defaultvalues'] = 'Standaardwaarden';
 $string['deleteerrors'] = 'Verwijder fouten';
 $string['encoding'] = 'Codering';
 $string['errormnetadd'] = 'Kan externe gebruikers niet toevoegen';
+$string['errorprefix'] = 'Fout:';
 $string['errors'] = 'Fouten';
 $string['examplecsv'] = 'Voorbeeld tekstbestand';
 $string['examplecsv_help'] = 'Download dit voorbeeld tekstbestand om het te kunnen gebruiken en open het met een teksteditor of met rekenblad-software. Laat de eerste regel onveranderd en bewerk dan de volgende regels (records) and voeg jouw gebruikersgegevens toe. Voeg meer lijnen toe als nodig. Bewaar het bestand als CSV en upload het dan.
 
 Het voorbeeld tekst-bestand kan ook gebruikt worden om te testen omdat je een voorbeeld van de gebruikersgegevens kunt bekijken en dan kunt annuleren voor de accounts gemaakt worden.';
+$string['infoprefix'] = 'Informatie:';
 $string['invalidtheme'] = 'Thema "{$a}" is niet geïnstalleerd en zal worden genegeerd.';
 $string['invalidupdatetype'] = 'Je kunt deze optie niet selecteren met het gekozen upload-type.';
 $string['invaliduserdata'] = 'Ongeldige gegevens ontdekt voor gebruiker {$a} en automatisch opgeschoond.';
+$string['linex'] = 'Lijn {$a}';
 $string['nochanges'] = 'Geen wijzigingen';
 $string['notheme'] = 'Er is geen thema gedefinieerd voor deze gebruiker.';
 $string['pluginname'] = 'Gebruiker upload';
@@ -109,3 +120,4 @@ $string['uuupdatefromfile'] = 'Overschrijven met bestand';
 $string['uuupdatemissing'] = 'Ontbrekende waarden invullen vanuit bestand en standaardwaarden';
 $string['uuupdatetype'] = 'Details van bestaande gebruikers';
 $string['uuusernametemplate'] = 'Sjabloon gebruikersnaam';
+$string['warningprefix'] = 'Waarschuwing:';

@@ -31,6 +31,8 @@ use moodle_url;
 use moodle_exception;
 use lang_string;
 use curl;
+use core_qrcode;
+use stdClass;
 
 /**
  * API exposed by tool_mobile, to be used mostly by external functions and the plugin settings.
@@ -51,6 +53,18 @@ class api {
     const LOGIN_KEY_TTL = 60;
     /** @var string URL of the Moodle Apps Portal */
     const MOODLE_APPS_PORTAL_URL = 'https://apps.moodle.com';
+    /** @var int seconds a QR login key will expire. */
+    const LOGIN_QR_KEY_TTL = 600;
+    /** @var int QR code disabled value */
+    const QR_CODE_DISABLED = 0;
+    /** @var int QR code type URL value */
+    const QR_CODE_URL = 1;
+    /** @var int QR code type login value */
+    const QR_CODE_LOGIN = 2;
+    /** @var string Default Android app id */
+    const DEFAULT_ANDROID_APP_ID = 'com.moodle.moodlemobile';
+    /** @var string Default iOS app id */
+    const DEFAULT_IOS_APP_ID = '633359593';
 
     /**
      * Returns a list of Moodle plugins supporting the mobile app.
@@ -207,7 +221,7 @@ class api {
         }
 
         // Identity providers.
-        $authsequence = get_enabled_auth_plugins(true);
+        $authsequence = get_enabled_auth_plugins();
         $identityproviders = \auth_plugin_base::get_identity_providers($authsequence);
         $identityprovidersdata = \auth_plugin_base::prepare_identity_providers_for_output($identityproviders, $OUTPUT);
         if (!empty($identityprovidersdata)) {
@@ -288,6 +302,7 @@ class api {
             $settings->tool_mobile_forcelogout = get_config('tool_mobile', 'forcelogout');
             $settings->tool_mobile_customlangstrings = get_config('tool_mobile', 'customlangstrings');
             $settings->tool_mobile_disabledfeatures = get_config('tool_mobile', 'disabledfeatures');
+            $settings->tool_mobile_filetypeexclusionlist = get_config('tool_mobile', 'filetypeexclusionlist');
             $settings->tool_mobile_custommenuitems = get_config('tool_mobile', 'custommenuitems');
             $settings->tool_mobile_apppolicy = get_config('tool_mobile', 'apppolicy');
         }
@@ -306,6 +321,12 @@ class api {
             foreach ($colornumbers as $number) {
                 $settings->{'core_admin_coursecolor' . $number} = get_config('core_admin', 'coursecolor' . $number);
             }
+        }
+
+        if (empty($section) or $section == 'supportcontact') {
+            $settings->supportname = $CFG->supportname;
+            $settings->supportemail = $CFG->supportemail;
+            $settings->supportpage = $CFG->supportpage;
         }
 
         return $settings;
@@ -336,6 +357,7 @@ class api {
 
     /**
      * Creates an auto-login key for the current user, this key is restricted by time and ip address.
+     * This key is used for automatically login the user in the site when the Moodle app opens the site in a mobile browser.
      *
      * @return string the key
      * @since Moodle 3.2
@@ -348,6 +370,24 @@ class api {
         // Create a new key.
         $iprestriction = getremoteaddr();
         $validuntil = time() + self::LOGIN_KEY_TTL;
+        return create_user_key('tool_mobile', $USER->id, null, $iprestriction, $validuntil);
+    }
+
+    /**
+     * Creates a QR login key for the current user, this key is restricted by time and ip address.
+     * This key is used for automatically login the user in the site when the user scans a QR code in the Moodle app.
+     *
+     * @return string the key
+     * @since Moodle 3.9
+     */
+    public static function get_qrlogin_key() {
+        global $USER;
+        // Delete previous keys.
+        delete_user_key('tool_mobile', $USER->id);
+
+        // Create a new key.
+        $iprestriction = getremoteaddr(null);
+        $validuntil = time() + self::LOGIN_QR_KEY_TTL;
         return create_user_key('tool_mobile', $USER->id, null, $iprestriction, $validuntil);
     }
 
@@ -373,7 +413,8 @@ class api {
 
         $availablemods = core_plugin_manager::instance()->get_plugins_of_type('mod');
         $coursemodules = array();
-        $appsupportedmodules = array('assign', 'book', 'chat', 'choice', 'data', 'feedback', 'folder', 'forum', 'glossary', 'imscp',
+        $appsupportedmodules = array(
+            'assign', 'book', 'chat', 'choice', 'data', 'feedback', 'folder', 'forum', 'glossary', 'h5pactivity', 'imscp',
             'label', 'lesson', 'lti', 'page', 'quiz', 'resource', 'scorm', 'survey', 'url', 'wiki', 'workshop');
 
         foreach ($availablemods as $mod) {
@@ -396,6 +437,7 @@ class api {
         $courseblocks = array();
         $appsupportedblocks = array(
             'activity_modules' => 'CoreBlockDelegate_AddonBlockActivityModules',
+            'activity_results' => 'CoreBlockDelegate_AddonBlockActivityResults',
             'site_main_menu' => 'CoreBlockDelegate_AddonBlockSiteMainMenu',
             'myoverview' => 'CoreBlockDelegate_AddonBlockMyOverview',
             'timeline' => 'CoreBlockDelegate_AddonBlockTimeline',
@@ -439,6 +481,7 @@ class api {
                 'NoDelegate_ResponsiveMainMenuItems' => new lang_string('responsivemainmenuitems', 'tool_mobile'),
                 'NoDelegate_H5POffline' => new lang_string('h5poffline', 'tool_mobile'),
                 'NoDelegate_DarkMode' => new lang_string('darkmode', 'tool_mobile'),
+                'CoreFilterDelegate' => new lang_string('type_filter_plural', 'plugin'),
             ),
             "$mainmenu" => array(
                 '$mmSideMenuDelegate_mmaFrontpage' => new lang_string('sitehome'),
@@ -454,6 +497,7 @@ class api {
                 'CoreMainMenuDelegate_CoreTag' => new lang_string('tags'),
                 '$mmSideMenuDelegate_website' => new lang_string('webpage'),
                 '$mmSideMenuDelegate_help' => new lang_string('help'),
+                'CoreMainMenuDelegate_QrReader' => new lang_string('scanqrcode', 'tool_mobile'),
             ),
             "$course" => array(
                 'NoDelegate_CourseBlocks' => new lang_string('blocks'),
@@ -490,6 +534,12 @@ class api {
 
         if (!empty($remoteaddonslist)) {
             $features["$remoteaddons"] = $remoteaddonslist;
+        }
+
+        if (!empty($availablemods['lti'])) {
+            $ltidisplayname = $availablemods['lti']->displayname;
+            $features["$ltidisplayname"]['CoreCourseModuleDelegate_AddonModLti:launchViaSite'] =
+                new lang_string('launchviasiteinbrowser', 'tool_mobile');
         }
 
         // Display OAuth 2 identity providers.
@@ -614,5 +664,113 @@ class api {
         }
 
         return $warnings;
+    }
+
+    /**
+     * Generates a QR code with the site URL or for automatic login from the mobile app.
+     *
+     * @param  stdClass $mobilesettings tool_mobile settings
+     * @return string base64 data image contents, null if qr disabled
+     */
+    public static function generate_login_qrcode(stdClass $mobilesettings) {
+        global $CFG, $USER;
+
+        if ($mobilesettings->qrcodetype == static::QR_CODE_DISABLED) {
+            return null;
+        }
+
+        $urlscheme = !empty($mobilesettings->forcedurlscheme) ? $mobilesettings->forcedurlscheme : 'moodlemobile';
+        $data = $urlscheme . '://' . $CFG->wwwroot;
+
+        if ($mobilesettings->qrcodetype == static::QR_CODE_LOGIN) {
+            $qrloginkey = static::get_qrlogin_key();
+            $data .= '?qrlogin=' . $qrloginkey . '&userid=' . $USER->id;
+        }
+
+        $qrcode = new core_qrcode($data);
+        $imagedata = 'data:image/png;base64,' . base64_encode($qrcode->getBarcodePngData(5, 5));
+
+        return $imagedata;
+    }
+
+    /**
+     * Gets Moodle app plan subscription information for the current site as it is returned by the Apps Portal.
+     *
+     * @return array Subscription information
+     */
+    public static function get_subscription_information() : ?array {
+        global $CFG;
+
+        // Use session cache to prevent multiple requests.
+        $cache = \cache::make('tool_mobile', 'subscriptiondata');
+        $subscriptiondata = $cache->get(0);
+        if ($subscriptiondata !== false) {
+            return $subscriptiondata;
+        }
+
+        $mobilesettings = get_config('tool_mobile');
+
+        // To validate that the requests come from this site we need to send some private information that only is known by the
+        // Moodle Apps portal or the Sites registration database.
+        $credentials = [];
+
+        if (!empty($CFG->airnotifieraccesskey)) {
+            $credentials[] = ['type' => 'airnotifieraccesskey', 'value' => $CFG->airnotifieraccesskey];
+        }
+        if (\core\hub\registration::is_registered()) {
+            $credentials[] = ['type' => 'siteid', 'value' => $CFG->siteidentifier];
+        }
+        // Generate a hash key for validating that the request is coming from this site via WS.
+        $key = complex_random_string(32);
+        $sitesubscriptionkey = json_encode(['validuntil' => time() + 10 * MINSECS, 'key' => $key]);
+        set_config('sitesubscriptionkey', $sitesubscriptionkey, 'tool_mobile');
+        $credentials[] = ['type' => 'sitesubscriptionkey', 'value' => $key];
+
+        // Parameters for the WebService returning site information.
+        $androidappid = empty($mobilesettings->androidappid) ? static::DEFAULT_ANDROID_APP_ID : $mobilesettings->androidappid;
+        $iosappid = empty($mobilesettings->iosappid) ? static::DEFAULT_IOS_APP_ID : $mobilesettings->iosappid;
+        $fnparams = (object) [
+            'siteurl' => $CFG->wwwroot,
+            'appids' => [$androidappid, $iosappid],
+            'credentials' => $credentials,
+        ];
+        // Prepare the arguments for a request to the AJAX nologin endpoint.
+        $args = [
+            (object) [
+                'index' => 0,
+                'methodname' => 'local_apps_get_site_info',
+                'args' => $fnparams,
+            ]
+        ];
+
+        // Ask the Moodle Apps Portal for the subscription information.
+        $curl = new curl();
+        $curl->setopt(array('CURLOPT_TIMEOUT' => 10, 'CURLOPT_CONNECTTIMEOUT' => 10));
+
+        $serverurl = static::MOODLE_APPS_PORTAL_URL . "/lib/ajax/service-nologin.php";
+        $query = 'args=' . urlencode(json_encode($args));
+        $wsresponse = @json_decode($curl->post($serverurl, $query), true);
+
+        $info = $curl->get_info();
+        if ($curlerrno = $curl->get_errno()) {
+            // CURL connection error.
+            debugging("Unexpected response from the Moodle Apps Portal server, CURL error number: $curlerrno");
+            return null;
+        } else if ($info['http_code'] != 200) {
+            // Unexpected error from server.
+            debugging('Unexpected response from the Moodle Apps Portal server, HTTP code:' . $info['httpcode']);
+            return null;
+        } else if (!empty($wsresponse[0]['error'])) {
+            // Unexpected error from Moodle Apps Portal.
+            debugging('Unexpected response from the Moodle Apps Portal server:' . json_encode($wsresponse[0]));
+            return null;
+        } else if (empty($wsresponse[0]['data'])) {
+            debugging('Unexpected response from the Moodle Apps Portal server:' . json_encode($wsresponse));
+            return null;
+        }
+
+        $cache->set(0, $wsresponse[0]['data']);
+
+        return $wsresponse[0]['data'];
     }
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_myoverview', language 'eu', version '3.8'.
+ * Strings for component 'block_myoverview', language 'eu', version '3.11'.
  *
  * @package     block_myoverview
  * @category    string
@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = 'Ordenatu ikastaroak azken sarreraren dataren ara
 $string['aria:list'] = 'Aldatu zerrenda-ikuspegira';
 $string['aria:past'] = 'Erakutsi iraganeko ikastaroak';
 $string['aria:removefromfavourites'] = 'Ez nabarmendu ondokoa';
+$string['aria:shortname'] = 'Ordenatu ikastaroak ikastaroaren izen laburraren arabera';
 $string['aria:showcourse'] = 'Berriz erakutsi {$a} ikuspegian';
 $string['aria:sortingdropdown'] = 'Zabaltzen den menua ordenatzen';
 $string['aria:summary'] = 'Aldatu laburpen-ikuspegira';
@@ -62,8 +63,6 @@ $string['courseprogress'] = 'Ikastaro-aurrerapena:';
 $string['customfield'] = 'Eremu pertsonalizatua';
 $string['customfiltergrouping'] = 'Erabili beharreko eremua';
 $string['customfiltergrouping_nofields'] = 'Ezarpen honek gutxienez edozeinentzako ikusgai dagoen ikastaroko eremu pertsonalizatu bat izatea behar du.';
-$string['defaulttab'] = 'Lehenetsitako fitxa';
-$string['defaulttab_desc'] = 'Hau da erabiltzaileari ikastaroen ikuspegi orokorra ikusten duen lehen aldian modu lehenetsian erakutsiko zaion fitxa. Bere ikastaroen ikuspegi orokorrera bueltatzean, erabiltzailearen fitxa aktiboa gogoratzen da.';
 $string['displaycategories'] = 'Erakutsi kategoriak';
 $string['displaycategories_help'] = 'Erakutsi ikastaro-kategoria aginte-paneleko ikastaro-elementuetan, txartelak, zerrenda-elementuak eta laburpen-elementuak barne.';
 $string['favourites'] = 'Nabarmenduta';
@@ -76,31 +75,18 @@ $string['lastaccessed'] = 'Azken sarrera';
 $string['layouts'] = 'Eskuragarri dauden diseinuak';
 $string['layouts_help'] = 'Erabiltzaileek aukeratzeko eskuragarri dituzten ikastaroen aurrebistarako diseinuak. Bat ere ez badago aukeratuta, Txartelak diseinua erabiliko da.';
 $string['list'] = 'Zerrenda';
-$string['morecourses'] = 'Ikastaro gehiago';
 $string['myoverview:myaddinstance'] = 'Gehitu ikastaroaren ikuspegi orokorra blokea Aginte-panelera';
-$string['next30days'] = 'Datozen 30 egunetan';
-$string['next7days'] = 'Datozen 7 egunetan';
 $string['nocourses'] = 'Ez dago ikastarorik';
-$string['nocoursesfuture'] = 'Ez dago ikastarorik etorkizunean';
-$string['nocoursesinprogress'] = 'Ez dago martxan dagoen ikastarorik';
-$string['nocoursespast'] = 'Ez dago ikastarorik iraganean';
 $string['nocustomvalue'] = '{$a}.a';
-$string['noevents'] = 'Ez dago jardueren muga-egunik laster';
 $string['past'] = 'Iraganean';
 $string['pluginname'] = 'Ikuspegi orokorra';
 $string['privacy:metadata:overviewgroupingpreference'] = 'Ikastaroaren ikuspegi orokorra blokearen talde-multzorako hobespena.';
-$string['privacy:metadata:overviewlasttab'] = 'Hemen erabiltzaileak Ikuspegi orokorra blokean aukeratutako azken fitxa gordetzen da.';
 $string['privacy:metadata:overviewpagingpreference'] = 'Ikastaroaren ikuspegi orokorra blokearen orrikatzerako hobespena.';
 $string['privacy:metadata:overviewsortpreference'] = 'Ikastaroaren ikuspegi orokorra blokearen ordenamendurako ezarpena.';
 $string['privacy:metadata:overviewviewpreference'] = 'Ikastaroaren ikuspegi orokorra blokearen ikuspegirako hobespena.';
 $string['privacy:request:preference:set'] = '\'{$a->name}\' ezarpenaren balorea \'{$a->value}\' zen';
-$string['recentlyoverdue'] = 'Orain dela gutxi igarota';
 $string['removefromfavourites'] = 'Ez nabarmendu ikastaro hau';
+$string['shortname'] = 'Izen laburra';
 $string['show'] = 'Berriz erakutsi ikastaro hau ikuspegian';
-$string['sortbycourses'] = 'Ordenatu ikastaroen arabera';
-$string['sortbydates'] = 'Ordenatu dataren arabera';
 $string['summary'] = 'Laburpena';
-$string['timeline'] = 'Kronologia';
 $string['title'] = 'Ikastaroaren izena';
-$string['viewcourse'] = 'Ikusi ikastaroa';
-$string['viewcoursename'] = 'Ikusi {$a} ikastaroa';

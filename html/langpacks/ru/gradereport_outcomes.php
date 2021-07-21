@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradereport_outcomes', language 'ru', version '3.8'.
+ * Strings for component 'gradereport_outcomes', language 'ru', version '3.11'.
  *
  * @package     gradereport_outcomes
  * @category    string
@@ -31,4 +31,5 @@ $string['coursespecoutcome'] = 'Показатели курса';
 $string['eventgradereportviewed'] = 'Отчет «Отчет по показателям» просмотрен';
 $string['outcomes:view'] = 'Просматривать отчет по показателям';
 $string['pluginname'] = 'Отчет по показателям';
+$string['privacy:metadata'] = 'В отчете о результатах оценки отображаются только данные, хранящиеся в других местах.';
 $string['usedgradeitem'] = 'Количество оценок';

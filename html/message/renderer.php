@@ -108,12 +108,12 @@ class core_message_renderer extends plugin_renderer_base {
                 $settingsurl = new moodle_url('/admin/settings.php', array('section' => 'messagesetting'.$processor->name));
                 $settings->text = html_writer::link($settingsurl, get_string('settings', 'message'));
 
-                // XTEC ************ AFEGIT - Let access only to xtecadmin user
+                // XTEC ************ AFEGIT - Allow access only to xtecadmin user
                 // 2020.08.08 @aginard
                 if (($processor->name == 'airnotifier') && !get_protected_agora()) {
                     $settings->text = '';
                 }
-                //************ FI
+                // ************ FI
             }
 
             $row->cells = array($name, $enable, $settings);

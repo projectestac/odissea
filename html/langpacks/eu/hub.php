@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hub', language 'eu', version '3.8'.
+ * Strings for component 'hub', language 'eu', version '3.11'.
  *
  * @package     hub
  * @category    string
@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activeparticipantnumberaverage'] = 'Orain dela gutxiko parte-hartzaileen batezbesteko kopurua ({$a})';
+$string['activeusersnumber'] = 'Orain dela gutxiko parte-hartzaile kopurua ({$a})';
 $string['addscreenshots'] = 'Gehitu pantaila-argazkia';
 $string['advertise'] = 'Partekatu ikastaro hau jendea matrikulatzeko';
 $string['advertised'] = 'Jendea matrikulatzeko iragarrita';
@@ -149,10 +151,10 @@ $string['registerwithmoodleorginfo'] = 'Zurekin harremanetan egotea eta zure Moo
 $string['registerwithmoodleorginfoapp'] = 'Moodle aplikazioari buruz';
 $string['registerwithmoodleorginfosites'] = 'Nire herrialdeko beste gune batzuk';
 $string['registerwithmoodleorginfostats'] = 'Moodle estatistikak';
-$string['registerwithmoodleorgremove'] = 'Zure gunearen erregistroa ezabatzera zoaz. Jarraituz gero, aurrerantzean ez duzu jakinarazpen garrantzitsuetara eta segurtasun-alertetara sarbiderik izango, eta zure erabiltzaileek ezingo dute euren Moodle mobile aplikazioan zure guneko push jakinarazpenik jaso. Ziur zaude zure gunearen erregistroa ezabatu nahi duzula?';
+$string['registerwithmoodleorgremove'] = 'Zure gunearen erregistroa ezabatzear zaude. Aurrerantzean ez duzu segurtasun-alerten jakinarazpenik jasoko eta erabiltzaileek ezingo dute euren Moodle aplikazioan zure guneko push jakinarazpenik jasoko. Edonola ere, edozein unetan zure gunea berriz erregistratu ahalko duzu. Ziur zaude aurrera nahi duzula?';
 $string['registerwithmoodleorgupdate'] = 'Eguneratu zure gunearen erregistroa';
 $string['registrationconfirmed'] = 'Gunearen erregistroa baieztatuta';
-$string['registrationconfirmedon'] = 'Eskerrik asko zure gunea erregistratzeagatik. Erregistroaren informazioa eguneratuta mantenduko da \'Gunearen erregistroa\' programatutako zereginaren bitartez.';
+$string['registrationconfirmedon'] = 'Eskerrik asko zure gunea erregistratzeagatik. Erregistroaren informazioa eguneratuta mantenduko da \'Gunearen erregistroa\' programatutako atazaren bitartez.';
 $string['registrationinfo'] = 'Erregistroaren informazioa';
 $string['removefromhub'] = 'Ezabatu Moodle.net-etik';
 $string['renewregistration'] = 'Berriztu erregistroa';
@@ -163,7 +165,7 @@ $string['screenshots'] = 'Pantaila-argazkiak';
 $string['screenshots_help'] = 'Ikastaroaren edozein pantaila-argazki bilaketaren emaitzetan erakutsiko da.';
 $string['search'] = 'Bilatu';
 $string['sendfollowinginfo'] = 'Informazio gehiago';
-$string['sendfollowinginfo_help'] = 'Informazio hau estatistika orokorrak hornitzeko baino ez da erabiliko. Ez da gunearen inongo zerrendatan argitaratuko.';
+$string['sendfollowinginfo_help'] = 'Hurrengo informazioa Moodlera bidaliko da zure gunearen erregistroa eguneratzen den aldiro (modu lehenetsian astero, \'Gunearen erregistroa\' programatutako ataza exekutatzen denean). Informazio hau estatistika orokorrak hornitzeko baino ez da erabiliko, eta ez da gunearen inongo zerrendatan argitaratuko.';
 $string['sendingcourse'] = 'Ikastaroa bidaltzen';
 $string['sendingsize'] = 'Mesedez, itxaron; ikastaroa igotzen ari da ({$a->total}Mb)...';
 $string['sent'] = '...amaituta';

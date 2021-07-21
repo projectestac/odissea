@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability', language 'el', version '3.8'.
+ * Strings for component 'availability', language 'el', version '3.11'.
  *
  * @package     availability
  * @category    string
@@ -64,7 +64,7 @@ $string['or'] = 'ή';
 $string['privacy:metadata'] = 'Το υποσύστημα «Περιορισμός πρόσβασης» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
 $string['restrictaccess'] = 'Περιορισμός διαθεσιμότητας';
 $string['restrictbygroup'] = 'Προσθέστε περιορισμό πρόσβασης ομάδας/ομαδοποίησης';
-$string['setheading'] = '{$a->number} Σετ από {$a->count} περιορισμό(ούς)';
+$string['setheading'] = '{$a->number} Σετ από {$a->count} περιορισμό/-ούς';
 $string['show_verb'] = 'Πατήστε για εμφάνιση σκιασμένων';
 $string['shown_all'] = 'Εμφανίζεται σκιασμένο εάν ο χρήστης δεν ικανοποιεί τις συνθήκες';
 $string['shown_individual'] = 'Εμφανίζεται σκιασμένο εάν ο χρήστης δεν ικανοποιεί αυτή την συνθήκη';

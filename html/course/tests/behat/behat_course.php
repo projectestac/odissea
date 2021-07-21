@@ -43,6 +43,46 @@ use Behat\Gherkin\Node\TableNode as TableNode,
 class behat_course extends behat_base {
 
     /**
+     * Return the list of partial named selectors.
+     *
+     * @return array
+     */
+    public static function get_partial_named_selectors(): array {
+        return [
+            new behat_component_named_selector(
+                'Activity chooser screen', [
+                    "%core_course/activityChooser%//*[@data-region=%locator%][contains(concat(' ', @class, ' '), ' carousel-item ')]"
+                ]
+            ),
+            new behat_component_named_selector(
+                'Activity chooser tab', [
+                    "%core_course/activityChooser%//*[@data-region=%locator%][contains(concat(' ', @class, ' '), ' tab-pane ')]"
+                ]
+            ),
+        ];
+    }
+
+    /**
+     * Return a list of the Mink named replacements for the component.
+     *
+     * Named replacements allow you to define parts of an xpath that can be reused multiple times, or in multiple
+     * xpaths.
+     *
+     * This method should return a list of {@link behat_component_named_replacement} and the docs on that class explain
+     * how it works.
+     *
+     * @return behat_component_named_replacement[]
+     */
+    public static function get_named_replacements(): array {
+        return [
+            new behat_component_named_replacement(
+                'activityChooser',
+                ".//*[contains(concat(' ', @class, ' '), ' modchooser ')][contains(concat(' ', @class, ' '), ' modal-dialog ')]"
+            ),
+        ];
+    }
+
+    /**
      * Turns editing mode on.
      * @Given /^I turn editing mode on$/
      */
@@ -203,17 +243,18 @@ class behat_course extends behat_base {
 
             // Clicks add activity or resource section link.
             $sectionxpath = $sectionxpath . "/descendant::div" .
-                    "[contains(concat(' ', normalize-space(@class) , ' '), ' section-modchooser ')]/span/a";
-            $sectionnode = $this->find('xpath', $sectionxpath);
-            $sectionnode->click();
+                    "[contains(concat(' ', normalize-space(@class) , ' '), ' section-modchooser ')]/button";
+
+            $this->execute('behat_general::i_click_on', [$sectionxpath, 'xpath']);
 
             // Clicks the selected activity if it exists.
-            $activityxpath = "//div[@id='chooseform']/descendant::label" .
-                    "/descendant::span[contains(concat(' ', normalize-space(@class), ' '), ' typename ')]" .
+            $activityxpath = "//div[contains(concat(' ', normalize-space(@class), ' '), ' modchooser ')]" .
+                    "/descendant::div[contains(concat(' ', normalize-space(@class), ' '), ' optioninfo ')]" .
+                    "/descendant::div[contains(concat(' ', normalize-space(@class), ' '), ' optionname ')]" .
                     "[normalize-space(.)=$activityliteral]" .
-                    "/parent::label/child::input";
-            $activitynode = $this->find('xpath', $activityxpath);
-            $activitynode->doubleClick();
+                    "/parent::a";
+
+            $this->execute('behat_general::i_click_on', [$activityxpath, 'xpath']);
 
         } else {
             // Without Javascript.
@@ -1288,8 +1329,8 @@ class behat_course extends behat_base {
     protected function is_course_editor() {
 
         // We don't need to behat_base::spin() here as all is already loaded.
-        if (!$this->getSession()->getPage()->findLink(get_string('turneditingoff')) &&
-                !$this->getSession()->getPage()->findLink(get_string('turneditingon'))) {
+        if (!$this->getSession()->getPage()->findButton(get_string('turneditingoff')) &&
+                !$this->getSession()->getPage()->findButton(get_string('turneditingon'))) {
             return false;
         }
 
@@ -1319,7 +1360,8 @@ class behat_course extends behat_base {
         try {
             return $DB->get_field('course_categories', 'id', array('idnumber' => $idnumber), MUST_EXIST);
         } catch (dml_missing_record_exception $ex) {
-            throw new ExpectationException(sprintf("There is no category in the database with the idnumber '%s'", $idnumber));
+            throw new ExpectationException(sprintf("There is no category in the database with the idnumber '%s'", $idnumber),
+                $this->getSession());
         }
     }
 
@@ -1337,7 +1379,8 @@ class behat_course extends behat_base {
         try {
             return $DB->get_field('course', 'id', array('idnumber' => $idnumber), MUST_EXIST);
         } catch (dml_missing_record_exception $ex) {
-            throw new ExpectationException(sprintf("There is no course in the database with the idnumber '%s'", $idnumber));
+            throw new ExpectationException(sprintf("There is no course in the database with the idnumber '%s'", $idnumber),
+                $this->getSession());
         }
     }
 
@@ -1832,7 +1875,8 @@ class behat_course extends behat_base {
 
         $exception = new ExpectationException('"' . $categoryname . '" category can not be found', $this->getSession());
         $categoryliteral = behat_context_helper::escape($categoryname);
-        $xpath = "//div[@class='info']/descendant::*[" . implode(' or ', $headingtags) . "][@class='categoryname'][./descendant::a[.=$categoryliteral]]";
+        $xpath = "//div[@class='info']/descendant::*[" . implode(' or ', $headingtags) .
+            "][contains(@class,'categoryname')][./descendant::a[.=$categoryliteral]]";
         $node = $this->find('xpath', $xpath, $exception);
         $node->click();
 
@@ -1874,6 +1918,56 @@ class behat_course extends behat_base {
     public function i_click_on_category_in_the_management_category_listing($name) {
         $node = $this->get_management_category_listing_node_by_name($name);
         $node->find('css', 'a.categoryname')->click();
+    }
+
+    /**
+     * Locates a category in the course category management interface and then opens action menu for it.
+     *
+     * @Given /^I open the action menu for "(?P<name_string>(?:[^"]|\\")*)" in management category listing$/
+     *
+     * @param string $name The name of the category as it is displayed in the management interface.
+     */
+    public function i_open_the_action_menu_for_item_in_management_category_listing($name) {
+        $node = $this->get_management_category_listing_node_by_name($name);
+        $node->find('xpath', "//*[contains(@class, 'category-item-actions')]//a[@data-toggle='dropdown']")->click();
+    }
+
+    /**
+     * Checks that the specified category actions menu contains an item.
+     *
+     * @Then /^"(?P<name_string>(?:[^"]|\\")*)" category actions menu should have "(?P<menu_item_string>(?:[^"]|\\")*)" item$/
+     *
+     * @param string $name
+     * @param string $menuitem
+     * @throws Behat\Mink\Exception\ExpectationException
+     */
+    public function category_actions_menu_should_have_item($name, $menuitem) {
+        $node = $this->get_management_category_listing_node_by_name($name);
+
+        $notfoundexception = new ExpectationException('"' . $name . '" doesn\'t have a "' .
+            $menuitem . '" item', $this->getSession());
+        $this->find('named_partial', ['link', $menuitem], $notfoundexception, $node);
+    }
+
+    /**
+     * Checks that the specified category actions menu does not contain an item.
+     *
+     * @Then /^"(?P<name_string>(?:[^"]|\\")*)" category actions menu should not have "(?P<menu_item_string>(?:[^"]|\\")*)" item$/
+     *
+     * @param string $name
+     * @param string $menuitem
+     * @throws Behat\Mink\Exception\ExpectationException
+     */
+    public function category_actions_menu_should_not_have_item($name, $menuitem) {
+        $node = $this->get_management_category_listing_node_by_name($name);
+
+        try {
+            $this->find('named_partial', ['link', $menuitem], false, $node);
+            throw new ExpectationException('"' . $name . '" has a "' . $menuitem .
+                '" item when it should not', $this->getSession());
+        } catch (ElementNotFoundException $e) {
+            // This is good, the menu item should not be there.
+        }
     }
 
     /**
@@ -1927,5 +2021,67 @@ class behat_course extends behat_base {
         if ($this->getSession()->getDriver()->find($xpath)) {
             throw new ExpectationException($msg, $this->getSession());
         }
+    }
+
+    /**
+     * Open the activity chooser in a course.
+     *
+     * @Given /^I open the activity chooser$/
+     */
+    public function i_open_the_activity_chooser() {
+        $this->execute('behat_general::i_click_on',
+            array('//button[@data-action="open-chooser"]', 'xpath_element'));
+
+        $node = $this->get_selected_node('xpath_element', '//div[@data-region="modules"]');
+        $this->ensure_node_is_visible($node);
+    }
+
+    /**
+     * Checks the presence of the given text in the activity's displayed dates.
+     *
+     * @Given /^the activity date in "(?P<activityname>(?:[^"]|\\")*)" should contain "(?P<text>(?:[^"]|\\")*)"$/
+     * @param string $activityname The activity name.
+     * @param string $text The text to be searched in the activity date.
+     */
+    public function activity_date_in_activity_should_contain_text(string $activityname, string $text): void {
+        $containerselector = "//div[@data-region='activity-information'][@data-activityname='$activityname']";
+        $containerselector .= " /div[@data-region='activity-dates']";
+
+        $params = [$text, $containerselector, 'xpath_element'];
+        $this->execute("behat_general::assert_element_contains_text", $params);
+    }
+
+    /**
+     * Checks the presence of activity dates information in the activity information output component.
+     *
+     * @Given /^the activity date information in "(?P<activityname>(?:[^"]|\\")*)" should exist$/
+     * @param string $activityname The activity name.
+     */
+    public function activity_dates_information_in_activity_should_exist(string $activityname): void {
+        $containerselector = "//div[@data-region='activity-information'][@data-activityname='$activityname']";
+        $elementselector = "/div[@data-region='activity-dates']";
+        $params = [$elementselector, "xpath_element", $containerselector, "xpath_element"];
+        $this->execute("behat_general::should_exist_in_the", $params);
+    }
+
+    /**
+     * Checks the absence of activity dates information in the activity information output component.
+     *
+     * @Given /^the activity date information in "(?P<activityname>(?:[^"]|\\")*)" should not exist$/
+     * @param string $activityname The activity name.
+     */
+    public function activity_dates_information_in_activity_should_not_exist(string $activityname): void {
+        $containerselector = "//div[@data-region='activity-information'][@data-activityname='$activityname']";
+        try {
+            $this->find('xpath_element', $containerselector);
+        } catch (ElementNotFoundException $e) {
+            // If activity information container does not exist (activity dates not shown, completion info not shown), all good.
+            return;
+        }
+
+        // Otherwise, ensure that the completion information does not exist.
+        $elementselector = "//div[@data-region='activity-dates']";
+        $params = [$elementselector, "xpath_element", $containerselector, "xpath_element"];
+        $this->execute("behat_general::should_not_exist_in_the", $params);
     }
 }

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'user', language 'ja', version '3.8'.
+ * Strings for component 'user', language 'ja', version '3.11'.
  *
  * @package     user
  * @category    string
@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = '条件を追加する';
+$string['adverbfor_and'] = 'and';
+$string['adverbfor_andnot'] = 'and';
+$string['adverbfor_or'] = 'or';
+$string['applyfilters'] = 'フィルタを適用する';
+$string['clearfilterrow'] = 'フィルタを削除する';
+$string['clearfilters'] = 'フィルタをクリアする';
+$string['clearfilterselection'] = 'フィルタから「 {$a} 」を削除する';
+$string['countparticipantsfound'] = '{$a} 名の参加者が見つかりました。';
+$string['filterbykeyword'] = 'キーワード';
+$string['filterrowlegend'] = 'フィルタ {$a}';
+$string['filtersetmatchdescription'] = 'フィルタ結合数';
+$string['filtertype'] = 'フィルタタイプ';
+$string['match'] = '合致';
+$string['matchofthefollowing'] = '合致:';
+$string['moodlenetprofile'] = 'MoodleNetプロファイル';
+$string['moodlenetprofile_help'] = 'このフィールドはあなたのMoodleNetプロファイルをMoodleにリンクするためのものです。WebFinger準拠URIにしてください。';
+$string['placeholdertype'] = 'タイプ ...';
+$string['placeholdertypeorselect'] = 'タイプまたは選択 ...';
 $string['privacy:courserequestpath'] = 'リクエストされたコースです。';
 $string['privacy:descriptionpath'] = 'プロファイル説明です。';
 $string['privacy:devicespath'] = 'ユーザデバイスです。';
@@ -77,6 +96,7 @@ $string['privacy:metadata:maildisplay'] = 'ユーザが他のユーザにメー�
 $string['privacy:metadata:middlename'] = 'ユーザのミドルネームです。';
 $string['privacy:metadata:mnethostid'] = 'MNetホストのIDです (使用されている場合)。';
 $string['privacy:metadata:model'] = 'occamまたはiPhoneのようなデバイス名です。';
+$string['privacy:metadata:moodlenetprofile'] = 'ユーザのMoodleNetプロファイル';
 $string['privacy:metadata:msn'] = 'ユーザのMSN IDです。';
 $string['privacy:metadata:my_pages'] = 'ユーザページ - ダッシュボードおよびプロファイルです。このテーブルは個人データを含みません。ダッシュボードブロックをユーザにリンクするためだけに使用されます。';
 $string['privacy:metadata:my_pages:name'] = 'ページ名です。';
@@ -128,6 +148,7 @@ $string['privacy:passwordresetpath'] = 'パスワードリセットです。';
 $string['privacy:privatefilespath'] = 'プライベートファイルです。';
 $string['privacy:profileimagespath'] = 'プロファイルイメージです。';
 $string['privacy:sessionpath'] = 'セッションデータです。';
+$string['selectfiltertype'] = '選択';
 $string['target:upcomingactivitiesdue'] = '直近の活動期限';
 $string['target:upcomingactivitiesdue_help'] = 'このターゲットは直近の活動期限のリマインダを生成します。';
 $string['target:upcomingactivitiesdueinfo'] = 'すべての到来する活動期限洞察がここに一覧表示されます。これらの学生はこれらの洞察を直接受信しています。';

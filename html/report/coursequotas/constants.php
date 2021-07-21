@@ -14,7 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle. If not, see <http://www.gnu.org/licenses/>.
 
-define('REPORT_COURSEQUOTAS_VERSION', 2021020100);
+define('REPORT_COURSEQUOTAS_VERSION', 2021062300);
+define('REPORT_COURSEQUOTAS_VERSION_CREATETABLE', 2021020100);
 define('REPORT_COMPONENTNAME', 'report_coursequotas');
 define('REPORT_COURSEQUOTAS_NAME', 'coursequotas');
 define('REPORT_COURSEQUOTAS_REPORTSTRING', 'report');
@@ -30,3 +31,16 @@ define('CATEGORYSIZE_FIELDQUOTA', 'quota');
 
 define('REPORT_COURSEQUOTAS_BYTES_STRING', 'bytes');
 define('REPORT_COURSEQUOTAS_ACTIONS_STRING', 'actions');
+define('REPORT_COURSEQUOTAS_WHERE_STRING', 'where');
+define('REPORT_COURSEQUOTAS_TABLES_STRING', 'tables');
+define('REPORT_COURSEQUOTAS_CONFIGNAME_STRING', 'config_name');
+define('REPORT_COURSEQUOTAS_DIRECTORY_STRING', 'directory');
+define('REPORT_COURSEQUOTAS_CLASS_STRING', 'class');
+define('REPORT_COURSEQUOTAS_INLINE_STRING', 'inline');
+define('REPORT_COURSEQUOTAS_OWNER_STRING', 'owner');
+define('REPORT_COURSEQUOTAS_CENTER_STRING', 'center');
+define('REPORT_COURSEQUOTAS_TEXTRIGHT_STRING', 'text-right');
+define('REPORT_COURSEQUOTAS_REPOSITORY_STRING', 'repository');
+
+define('REPORT_COURSEQUOTAS_LI_OPEN_HTML', '<li>');
+define('REPORT_COURSEQUOTAS_LI_CLOSE_HTML', '</li>');

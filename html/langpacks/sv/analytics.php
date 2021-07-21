@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'analytics', language 'sv', version '3.8'.
+ * Strings for component 'analytics', language 'sv', version '3.11'.
  *
  * @package     analytics
  * @category    string
@@ -29,11 +29,13 @@ $string['analysablenotused'] = 'Analyserbara {$a->analysableid} användes inte: 
 $string['analysablenotvalidfortarget'] = 'Analyserbara {$a->analysableid} är inte giltig för detta mål: {$a->result}';
 $string['analysisinprogress'] = 'Analyseras fortfarande av en tidigare körning';
 $string['analytics'] = 'Analysfunktioner';
-$string['analyticsdisabled'] = 'Analysfunktionerna är inaktiverade. Du kan aktivera dem under ”Administration av webbplats > Avancerade inställningar”.';
-$string['analyticslogstore'] = 'Lagringsplats för log som används av analysfunktionerna';
+$string['analyticsdisabled'] = 'Analysfunktionerna är inaktiverade. Du kan aktivera dem under ”Administration av webbplats > Avancerade egenskaper”.';
+$string['analyticslogstore'] = 'Lagringsplats för logg som används av analysfunktionerna';
 $string['analyticslogstore_help'] = 'Lagringsplatsen som kommer användas av analysfunktionens API för att läsa användaraktiviteter.';
-$string['analyticssettings'] = 'Inställningar för analysfunktionen';
+$string['analyticssettings'] = 'Analysinställningar';
 $string['analyticssiteinfo'] = 'Webbplatsinställningar';
+$string['calclifetime'] = 'Behåll analysberäkningar i';
+$string['configlcalclifetime'] = 'Detta anger hur lång tid du vill behålla beräkningsdata - detta kommer inte att ta bort förutsägelser, men tar bort de data som används för att generera förutsägelserna. Standardalternativet här är bäst eftersom det håller din diskanvändning under kontroll. Men, om du använder beräkningstabeller för andra ändamål, kanske du vill öka detta värde.';
 $string['defaultpredictionsprocessor'] = 'Standardmotor för generering av förutsägelser';
 $string['defaultpredictoroption'] = 'Standardmotor ({$a})';
 $string['defaulttimesplittingmethods'] = 'Standardintervall för modellutvärdering';
@@ -96,9 +98,11 @@ $string['modeinstructionfacetoface'] = 'Ansikte mot ansikte';
 $string['modeinstructionfullyonline'] = 'Uteslutande on-line';
 $string['modeloutputdir'] = 'Katalog för modellresultat';
 $string['modeloutputdirinfo'] = 'Katalog där förutsägelsemotorer lagrar all utvärderingsdata. Denna kan vara användbar vid felsökningar och forskning.';
+$string['modeloutputdirwithdefaultinfo'] = 'Katalog där förutsägelsemotorer lagrar all utvärderingsdata. Denna kan vara användbar vid felsökningar och forskning. Om fältet lämnats tomt används {$a} som standard.';
 $string['modeltimelimit'] = 'Tidsgräns för analys per modell';
-$string['modeltimelimitinfo'] = 'Denna inställning anger en tidsbegränsning för hur länge varje enskild modell utvärderar webbplatsinnehållet.';
+$string['modeltimelimitinfo'] = 'Den här inställningen begränsar den tid som varje modell ägnar åt att analysera webbplatsinnehållet.';
 $string['neutral'] = 'Neutral';
+$string['neverdelete'] = 'Ta aldrig bort beräkningar';
 $string['nocourses'] = 'Inga kurser att analysera';
 $string['nodata'] = 'Inga data att analysera';
 $string['noevaluationbasedassumptions'] = 'Modeller baserade på antaganden kan inte utvärderas.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_file', language 'nl', version '3.8'.
+ * Strings for component 'cachestore_file', language 'nl', version '3.11'.
  *
  * @package     cachestore_file
  * @category    string
@@ -34,5 +34,11 @@ $string['prescan'] = 'Map vooraf lezen';
 $string['prescan_help'] = 'Indien ingeschakeld wordt de map bij eerste gebruikt en aanvragen voor bestanden worden naast de scangegevens gelegd. Dit kan helpen op een traag bestandssysteem wanneer je merkt dat bestandsoperaties een vertraging veroorzaken.';
 $string['privacy:metadata'] = 'De bestandscache bewaart gegevens kort als deel van zijn cachingsfunctie, maar deze gegevens worden regelmatig gewist.';
 $string['singledirectory'] = 'Opslag in één map';
-$string['singledirectory_help'] = 'Indien ingeschakeld worden de bestanden (gecachede items) opgeslagen in één enklee map, eerder dan opgesplitst in meerdere mappen;<br />Dit inschakelen zal de snelheid van acties met bestanden doen toenemen, maar het risico vergroten om aan de limieten van het bestandssysteem te raken.<br />
-Het wordt je aangeraden dit enkel in te schakelen als het volgende waar is:<br>- als je weet dat het aantal items in je cache klein genoeg is, zodat je geen problemen krijgt op het bestandssysteem dat je gebruikt.<br />- De gecachede gegevens zijn niet zwaar om te genereren. Als dat wel een probleem is, dan is het beter de standaardinstelling te laten staan omdat de kans op problemen hiermee verkleint.';
+$string['singledirectory_help'] = 'Indien ingeschakeld worden de bestanden (items in cache) opgeslagen in één enkele map, eerder dan opgesplitst in meerdere mappen.
+
+Dit inschakelen zal de snelheid van acties met bestanden doen toenemen, maar het risico vergroten om aan de limieten van het bestandssysteem te raken.
+
+Het wordt je aangeraden dit enkel in te schakelen als het volgende waar is:
+
+* als je weet dat het aantal items in je cache klein genoeg is, zodat je geen problemen krijgt op het bestandssysteem dat je gebruikt.
+* De gecachede gegevens zijn niet zwaar om te genereren. Als dat wel een probleem is, dan is het beter de standaardinstelling te laten staan omdat de kans op problemen hiermee verkleint.';

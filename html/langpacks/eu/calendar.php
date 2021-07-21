@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'eu', version '3.8'.
+ * Strings for component 'calendar', language 'eu', version '3.11'.
  *
  * @package     calendar
  * @category    string
@@ -143,6 +143,7 @@ $string['eventtypecourse'] = 'ikastaroa';
 $string['eventtypeglobal'] = 'orokorra';
 $string['eventtypegroup'] = 'taldea';
 $string['eventtypemodule'] = 'modulua';
+$string['eventtypeother'] = 'bestelakoa';
 $string['eventtypesite'] = 'gunea';
 $string['eventtypeuser'] = 'erabiltzailea';
 $string['eventview'] = 'Ekitaldiaren xehetasunak';

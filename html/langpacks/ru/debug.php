@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'debug', language 'ru', version '3.8'.
+ * Strings for component 'debug', language 'ru', version '3.11'.
  *
  * @package     debug
  * @category    string
@@ -41,7 +41,7 @@ $string['invalidarraysize'] = 'Неправильный размер масси�
 $string['invalideventdata'] = 'Представлены некорректные данные: {$a}';
 $string['invalidparameter'] = 'Обнаружено неверное значение параметра.';
 $string['invalidresponse'] = 'Обнаружено неверное значение ответа.';
-$string['missingconfigversion'] = 'Таблица «config» не содержит версии, продолжение невозможно.';
+$string['missingconfigversion'] = 'Таблица «config» не содержит версии. Продолжение невозможно.';
 $string['modulenotexist'] = 'Модуль {$a} не существует';
 $string['morethanonerecordinfetch'] = 'Найдено более одной записи в fetch()!';
 $string['mustbeoveride'] = 'Абстрактный метод «{$a}» должен быть переопределен.';

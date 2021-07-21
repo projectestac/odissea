@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'el', version '3.8'.
+ * Strings for component 'quiz_grading', language 'el', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(βαθμολογημένο)';
 $string['gradenextungraded'] = 'Βαθμολόγηση των επόμενων {$a} μη βαθμολογημένων προσπαθειών';
 $string['gradeungraded'] = 'Βαθμολόγηση και των {$a} μη βαθμολογημένων προσπαθειών';
 $string['grading'] = 'Χειροκίνητη βαθμολόγηση';
-$string['grading:componentname'] = 'Αναφορά χειροκίνητης βαθμολόγησης';
 $string['grading:viewidnumber'] = 'Εμφάνιση των αναγνωριστικών αριθμών των μαθητών κατά τη διάρκεια της βαθμολόγησης';
 $string['grading:viewstudentnames'] = 'Εμφάνιση των ονομάτων των μαθητών κατά τη διάρκεια της βαθμολόγησης';
 $string['gradingall'] = 'Και οι {$a} προσπάθειες σε αυτή την ερώτηση.';
@@ -71,7 +70,8 @@ $string['nothingfound'] = 'Τίποτα για εμφάνιση';
 $string['options'] = 'Επιλογές';
 $string['orderattempts'] = 'Προσπάθειες ταξινόμησης';
 $string['pluginname'] = 'Μη αυτόματη βαθμολόγηση';
-$string['privacy:metadata'] = 'Το πρόσθετο «Μη αυτόματη βαθμολόγηση κουίζ» δεν αποθηκεύει προσωπικά δεδομένα. Παρέχει μια διεπαφή στους χρήστες για να αποθηκεύουν δεδομένα, χωρίς το ίδιο το πρόσθετο να αποθηκεύει οτιδήποτε.';
+$string['privacy:preference:order'] = 'Με ποιά σειρά να εμφανιστούν οι προσπάθειες που χρειάζονται βαθμολόγηση.';
+$string['privacy:preference:pagesize'] = 'Πόσες προσπάθειες να εμφανίζονται σε κάθε σελίδα της διεπαφής βαθμολόγησης.';
 $string['qno'] = 'Ερ. #';
 $string['questionname'] = 'Όνομα ερώτησης';
 $string['questionsperpage'] = 'Ερωτήσεις ανά σελίδα';

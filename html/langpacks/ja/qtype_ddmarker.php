@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddmarker', language 'ja', version '3.8'.
+ * Strings for component 'qtype_ddmarker', language 'ja', version '3.11'.
  *
  * @package     qtype_ddmarker
  * @category    string
@@ -86,7 +86,10 @@ $string['pluginnamesummary'] = 'マーカーは背景イメージにドラッグ
 注意: この問題タイプは視覚に障害のあるユーザは利用できません。';
 $string['previewareaheader'] = 'プレビュー';
 $string['previewareamessage'] = '背景イメージファイルを選択してマーカーのテキストラベルを入力した後、ドラッグされるための背景イメージのドロップゾーンを定義してください。';
-$string['privacy:metadata'] = 'ドラッグ＆ドロップマーカー問題タイププラグインはいかなる個人データも保存しません。';
+$string['privacy:metadata'] = 'ドラッグ＆ドロップマーカー問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
+$string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
+$string['privacy:preference:shuffleanswers'] = '解答を自動的にシャッフルするかどうか指定します。';
 $string['refresh'] = 'プレビューをリフレッシュする';
 $string['shape'] = '形状';
 $string['shape_circle'] = '円';

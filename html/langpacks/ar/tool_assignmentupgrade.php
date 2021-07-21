@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_assignmentupgrade', language 'ar', version '3.8'.
+ * Strings for component 'tool_assignmentupgrade', language 'ar', version '3.11'.
  *
  * @package     tool_assignmentupgrade
  * @category    string
@@ -29,12 +29,12 @@ $string['areyousure'] = 'هل أنت مُتأكد؟';
 $string['areyousuremessage'] = 'هل أنت متأكد أنك تريد ترقية المهمة/التكليف"{$a->name}"?';
 $string['assignmentid'] = 'معرف المهمة /التكليف';
 $string['assignmentnotfound'] = 'تعذر العثورعلى التكليف/ المهمة (المُعرِّف={$a})';
-$string['assignmentsperpage'] = 'عدد المهمات/التكاليف لكل صفحة';
+$string['assignmentsperpage'] = 'عدد الواجبات لكل صفحة';
 $string['assignmenttype'] = 'نوع المهمة / التكليف';
 $string['backtoindex'] = 'العودة للفهرس';
-$string['batchoperations'] = 'دفعة العمليات';
+$string['batchoperations'] = 'عمليات بالجملة';
 $string['batchupgrade'] = 'ترقية تكاليف متعددة';
-$string['confirmbatchupgrade'] = 'تأكيد دفعة ترقية التكاليف/المهمات';
+$string['confirmbatchupgrade'] = 'تأكيد ترقية الواجبات بالجملة';
 $string['conversioncomplete'] = 'تم تحويل التكاليف';
 $string['conversionfailed'] = 'لم يكن  تحويل التكليف/المهمة  ناجحاً. سجل الترقية  هو :<br />{$a}';
 $string['listnotupgraded'] = 'قائمة بالمهمات/ التكاليف التي لم يتم ترقيتها';
@@ -44,6 +44,7 @@ $string['noassignmentstoupgrade'] = 'لا توجد المهام/ تكاليف ا
 $string['notupgradedintro'] = 'تسرد هذه الصفحة التكاليف التي تم إنشاؤها باستخدام نسخة قديمة من مودل التي لم يتم ترقيتها إلى وحدة تكليف جديدة في مودل 2.3. لا يمكن ترقية جميع التكاليف/المهام - لو تم إنشاؤها بنوع تكليف فرعي  مخصص، فسوف يكون واجباً ترقية ذلك النوع الفرعي أولاً إلى تنسيق التكاليف الجديدة حتى يتم إستكمال الترقية.';
 $string['notupgradedtitle'] = 'تكاليف لم يتم ترقيتها';
 $string['pluginname'] = 'مُساعد ترقية التكاليف';
+$string['privacy:metadata:preference:perpage'] = 'التفضيل المُعد للمستخدم بشأن عدد سجلات ترقية الواجب لكل صفحة.';
 $string['select'] = 'اختر';
 $string['submissions'] = 'تسليم';
 $string['supported'] = 'الترقية';

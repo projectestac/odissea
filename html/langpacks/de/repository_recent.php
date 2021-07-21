@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_recent', language 'de', version '3.8'.
+ * Strings for component 'repository_recent', language 'de', version '3.11'.
  *
  * @package     repository_recent
  * @category    string
@@ -33,3 +33,5 @@ $string['pluginname_help'] = 'Zuletzt vom Nutzer verwendete Dateien';
 $string['privacy:metadata'] = 'Das Repository-Plugin für zuletzt genutzte Dateien speichert keine personenbezogenen Daten.';
 $string['recent:view'] = 'Zuletzt genutzte Dateien anzeigen';
 $string['recentfilesnumber'] = 'Anzahl zuletzt genutzter Dateien (Default:50)';
+$string['timelimit'] = 'Zeitlimit';
+$string['timelimit_help'] = 'Die letzten Dateien sind nur innerhalb des Zeitlimits abrufbar.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradingform_rubric', language 'pt', version '3.8'.
+ * Strings for component 'gradingform_rubric', language 'pt', version '3.11'.
  *
  * @package     gradingform_rubric
  * @category    string
@@ -72,7 +72,7 @@ $string['regrademessage1'] = 'Está prestes a guardar alterações a uma grelha 
 $string['regrademessage5'] = 'Está prestes a guardar significantes alterações a uma grelha que já foi usada para avaliação. A pauta não será alterada, mas a grelha estará oculta para os alunos até as notas serem recalculadas.';
 $string['regradeoption0'] = 'Não marcar para reavaliação';
 $string['regradeoption1'] = 'Marcar para reavaliação';
-$string['restoredfromdraft'] = 'NOTA: A última tentativa de avaliar esta pessoa não foi guardada de forma adequada pelo que os rascunhos das notas foram restaurados. Se desejar cancelar estas alterações prima o botão \'Cancelar\' abaixo.';
+$string['restoredfromdraft'] = 'ATENÇÃO: A última tentativa de avaliar este participante não foi guardada de forma adequada pelo que os rascunhos das notas foram restaurados. Se desejar cancelar estas alterações prima o botão \'Cancelar\' abaixo.';
 $string['rubric'] = 'Grelha qualitativa';
 $string['rubricmapping'] = 'Regras de conversão dos pontos';
 $string['rubricmappingexplained'] = 'A nota mínima para esta grelha é de <b>{$a->minscore} pontos</b> e será convertida para a nota mínima disponível neste trabalho (que é zero, a menos que seja usada uma escala). A nota pontuação de <b>{$a->maxscore} pontos</b> será convertida para a nota máxima. Notas intermediárias serão convertidas, respetivamente, e arredondadas para a nota disponível.
@@ -80,7 +80,7 @@ $string['rubricmappingexplained'] = 'A nota mínima para esta grelha é de <b>{$
 Se for usada uma escala para avaliação, a pontuação será arredondada e convertida para os elementos da escala como se fossem inteiros consecutivos.
 
 Este cálculo de nota pode ser alterado editando o formulário e marcando a caixa \'Calcular a nota tendo uma pontuação mínima da nota mínima possível para a rubrica\'.';
-$string['rubricnotcompleted'] = 'Por favor, insira algo em cada critério';
+$string['rubricnotcompleted'] = 'Por favor, atribua avaliação a todos os critérios';
 $string['rubricoptions'] = 'Opções da grelha';
 $string['rubricstatus'] = 'Estado atual da grelha';
 $string['save'] = 'Guardar';
@@ -91,8 +91,8 @@ $string['scorepostfix'] = '{$a}pontos';
 $string['showdescriptionstudent'] = 'Mostrar descrição da grelha para os alunos que estão a ser avaliados';
 $string['showdescriptionteacher'] = 'Mostrar descrição da grelha durante a avaliação';
 $string['showremarksstudent'] = 'Mostrar observações aos que estão a ser avaliados';
-$string['showscorestudent'] = 'Exibir pontos para cada nível aos que estão a ser avaliados';
-$string['showscoreteacher'] = 'Exibir pontos para cada nível durante a avaliação';
+$string['showscorestudent'] = 'Mostrar pontos para cada nível aos que estão a ser avaliados';
+$string['showscoreteacher'] = 'Mostrar pontos para cada nível durante a avaliação';
 $string['sortlevelsasc'] = 'Ordem de classificação para os níveis:';
 $string['sortlevelsasc0'] = 'Decrescente por número de pontos';
 $string['sortlevelsasc1'] = 'Ascendente por número de pontos';

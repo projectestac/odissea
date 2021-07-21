@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'page', language 'sv', version '3.8'.
+ * Strings for component 'page', language 'sv', version '3.11'.
  *
  * @package     page
  * @category    string
@@ -40,11 +40,11 @@ $string['indicator:socialbreadth'] = 'Sida social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Sidresurs.';
 $string['indicator:socialbreadthdef'] = 'Sida social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Sidresurserna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt)';
-$string['legacyfiles'] = 'Migration av en gammal kursfil';
+$string['legacyfiles'] = 'Migrering av gammal kursfil';
 $string['legacyfilesactive'] = 'Aktiv';
 $string['legacyfilesdone'] = 'Avslutad';
 $string['modulename'] = 'Sida';
-$string['modulename_help'] = 'Sidmodulen gör det möjligt för en lärare att skapa webbsidor med hjälp av textredigeraren. En sida kan visa text, bilder, ljud, video, webblänkar och inbäddad kod, till exempel Google Maps.
+$string['modulename_help'] = 'Modulen <em>Sida</em> gör det möjligt för en lärare att skapa webbsidor med hjälp av textredigeraren. En sida kan visa text, bilder, ljud, video, webblänkar och inbäddad kod, till exempel Google Maps.
 
 Fördelar med att använda sidmodulen snarare än filmodulen inkluderar att resursen är mer tillgänglig (till exempel för användare av mobila enheter) och lättare att uppdatera.
 
@@ -61,9 +61,9 @@ $string['page:addinstance'] = 'Skapa ny sida';
 $string['page:view'] = 'Visa sidinnehåll';
 $string['pluginadministration'] = 'Administrera sidmodulen';
 $string['pluginname'] = 'Sida';
-$string['popupheight'] = 'Höjd på popup-fönster i pixlar';
+$string['popupheight'] = 'Höjd på popup-fönster (i pixlar)';
 $string['popupheightexplain'] = 'Anger standardhöjden på popup-fönster';
-$string['popupwidth'] = 'Bredd på popup-fönster i pixlar';
+$string['popupwidth'] = 'Bredd på popup-fönster (i pixlar)';
 $string['popupwidthexplain'] = 'Anger standardbredden på popup-fönster';
 $string['printheading'] = 'Visa sidans namn';
 $string['printheadingexplain'] = 'Visa sidans namn ovanför sidans innehåll';

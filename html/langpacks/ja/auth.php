@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth', language 'ja', version '3.8'.
+ * Strings for component 'auth', language 'ja', version '3.11'.
  *
  * @package     auth
  * @category    string
@@ -82,7 +82,7 @@ $string['createpassword'] = 'パスワードを生成してユーザに通知す
 $string['createpasswordifneeded'] = '必要に応じてパスワードを作成してメールで送信する';
 $string['emailchangecancel'] = 'メール変更をキャンセルする';
 $string['emailchangepending'] = '変更保留中です。あなたの {$a->preference_newemail} に送信されたリンクを開いてください。';
-$string['emailnowexists'] = 'あなたのプロファイルに割り当てようと試みたメールアドレスはリクエスト後、他のユーザに割り当てられています。このため、あなたのメールアドレス変更はキャンセルされました。あなたは他のメールアドレスを割り当てることができます。';
+$string['emailnowexists'] = 'あなたのプロファイルに割り当てようと試みたメールアドレスはリクエスト後、他のユーザに割り当てられています。そのため、あなたのメールアドレス変更はキャンセルされました。別のメールアドレスで再度お試しください。';
 $string['emailupdate'] = 'メールアドレス更新';
 $string['emailupdatemessage'] = '{$a->fullname} さん
 
@@ -91,15 +91,15 @@ $string['emailupdatemessage'] = '{$a->fullname} さん
 {$a->url}
 
 {$a->supportemail}';
-$string['emailupdatesuccess'] = 'ユーザ {$a->fullname} のメールアドレスは正常に {$a->email} に変更されました。';
+$string['emailupdatesuccess'] = 'ユーザ {$a->fullname} のメールアドレスが正常に {$a->email} に変更されました。';
 $string['emailupdatetitle'] = '{$a->site} のメール更新確認';
-$string['errormaxconsecutiveidentchars'] = 'パスワードには最大 {$a} 文字の連続した同一文字を使用する必要があります。';
+$string['errormaxconsecutiveidentchars'] = 'パスワードには最大半角 {$a} 文字の連続した同一文字を使用する必要があります。';
 $string['errorminpassworddigits'] = 'パスワードには少なくとも半角 {$a} 文字の数字を使用する必要があります。';
 $string['errorminpasswordlength'] = 'パスワードには少なくとも半角 {$a} 文字使用する必要があります。';
 $string['errorminpasswordlower'] = 'パスワードには少なくとも半角 {$a} 文字の小文字を使用する必要があります。';
 $string['errorminpasswordnonalphanum'] = 'パスワードには少なくとも半角 {$a} 文字の「*」「 -」「#」のような非英数字を使用する必要があります。';
 $string['errorminpasswordupper'] = 'パスワードには少なくとも半角 {$a} 文字の大文字を使用する必要があります。';
-$string['errorpasswordreused'] = 'このパスワードは過去に使用されているため、再度利用することはできません。';
+$string['errorpasswordreused'] = 'このパスワードは過去に使用されているため、再度利用できません。';
 $string['errorpasswordupdate'] = 'パスワード変更中にエラーが発生しました。パスワードは変更されませんでした。';
 $string['eventuserloggedin'] = 'ユーザがログインしました。';
 $string['eventuserloggedinas'] = 'ユーザが別のユーザとしてログインしました。';
@@ -111,24 +111,24 @@ $string['forgottenpassword'] = 'あなたがここにURLを入力した場合、
 $string['forgottenpasswordurl'] = 'パスワード喪失URL';
 $string['getrecaptchaapi'] = 'reCAPTCHAを使用するにはあなたは<a href=\'https://www.google.com/recaptcha/admin\'>https://www.google.com/recaptcha/admin</a>でAPIキーを取得する必要があります。';
 $string['guestloginbutton'] = 'ゲストログインボタン';
-$string['incorrectpleasetryagain'] = '正しくありません、再度お試しください。';
+$string['incorrectpleasetryagain'] = '正しくありません。再度お試しください。';
 $string['infilefield'] = 'ファイルのパスワードフィールドを使用する';
 $string['informminpassworddigits'] = '少なくとも {$a} 個の数字';
 $string['informminpasswordlength'] = '少なくとも {$a} 文字';
 $string['informminpasswordlower'] = '少なくとも {$a} 文字の小文字';
 $string['informminpasswordnonalphanum'] = '少なくとも {$a} 文字の「*」「 -」「#」のような非英数字';
-$string['informminpasswordreuselimit'] = '{$a} 回の変更後、パスワードを再利用することができます。';
+$string['informminpasswordreuselimit'] = '{$a} 回の変更後、パスワードを再利用できます。';
 $string['informminpasswordupper'] = '少なくとも {$a} 文字の大文字';
 $string['informpasswordpolicy'] = 'パスワードには {$a} を入力する必要があります。';
-$string['instructions'] = '説明';
+$string['instructions'] = 'インストラクション';
 $string['internal'] = '内部';
 $string['limitconcurrentlogins'] = '同時ログインを制限する';
-$string['limitconcurrentlogins_desc'] = 'この設定を有効にした場合、それぞれのユーザの同時ブラウザログイン数が制限されます。制限に達した場合、最も古いセッションが切断されるため、ユーザがすべての未保存の作業を失ってしまうことに留意してください。この設定はシングルサインオン (SSO) 認証プラグインとは併用できません。';
+$string['limitconcurrentlogins_desc'] = 'この設定を有効にした場合、それぞれのユーザの同時ブラウザログイン数が制限されます。制限に達した場合、最も古いセッションが切断されるため、ユーザがすべての未保存の作業内容を失ってしまうことに留意してください。この設定はシングルサインオン (SSO) 認証プラグインとは併用できません。';
 $string['locked'] = 'ロックする';
 $string['md5'] = 'MD5暗号化';
-$string['nopasswordchange'] = 'パスワードを変更することはできません。';
-$string['nopasswordchangeforced'] = 'あなたはパスワードを変更せずに次へ進むことはできません。しかし、パスワードを変更するため利用できるページがありません。あなたのMoodle管理者にご連絡ください。';
-$string['noprofileedit'] = 'プロファイルを編集することはできません。';
+$string['nopasswordchange'] = 'パスワードを変更できません';
+$string['nopasswordchangeforced'] = 'あなたはパスワードを変更せずに次へは進めません。また、パスワードを変更するため利用できるページがありません。あなたのMoodle管理者にご連絡ください。';
+$string['noprofileedit'] = 'プロファイルは編集できません。';
 $string['ntlmsso_attempting'] = 'NTLM経由のシングルサインオン実行中 ...';
 $string['ntlmsso_failed'] = '自動ログインに失敗しました、通常のログインページを試みます ...';
 $string['ntlmsso_isdisabled'] = 'NTLM SSOは無効にされています。';
@@ -142,16 +142,14 @@ $string['privacy:metadata:userpref:forcepasswordchange'] = 'ログイン時に�
 $string['privacy:metadata:userpref:loginfailedcount'] = 'ユーザがログインに失敗した回数です。';
 $string['privacy:metadata:userpref:loginfailedcountsincesuccess'] = '最後にログインに成功してからユーザがログインに失敗した回数です。';
 $string['privacy:metadata:userpref:loginfailedlast'] = '最後にログイン失敗が記録された日時です。';
-$string['privacy:metadata:userpref:loginlockout'] = 'ログイン失敗によりユーザのアカウントがロックされたか示します。また、アカウントがロックアウト状態に入った日時を示します。';
+$string['privacy:metadata:userpref:loginlockout'] = 'ログイン失敗によりユーザのアカウントがロックされたか示します。また、アカウントがロックされた日時を示します。';
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'ユーザのアカウントがロックアウト配下にないことを示します。';
-$string['privacy:metadata:userpref:loginlockoutsecret'] = 'ロックされた場合、ユーザはアカウントのロック解除に秘密鍵が必要です。';
+$string['privacy:metadata:userpref:loginlockoutsecret'] = 'ロックされた場合、ユーザがアカウントのロック解除に必要な秘密鍵です。';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'CAPTCHAは自動プログラムからの不正を防ぐためにあります。あなたが人であることを確認するためインストラクションに従ってください。これはチェックボックスであったり、あなたが入力する必要のある文字が画像に表示されていたり、選択するための一連のイメージだったりします。
-
-画像が分からない場合、あなたは別のCAPTCHAまたはオーディオCAPTCHAを試すことができます。';
+$string['recaptcha_help'] = 'CAPTCHAは自動プログラムからの不正を防ぎます。あなたが人であることを確認するためインストラクションに従ってください。これはチェックボックスであったり、あなたが入力する必要のある文字が画像に表示されていたり、選択するための一連のイメージだったりします。 画像が分からない場合、あなたは別のCAPTCHAまたはオーディオCAPTCHAを試せます。';
 $string['security_question'] = 'セキュリティ質問';
 $string['selfregistration'] = '自己登録';
-$string['selfregistration_help'] = '「Eメールによる自己登録」のような認証プラグインが選択された場合、潜在的なユーザに自分自身での登録およびユーザアカウント作成を許可します。この場合、フォーラム投稿、ブログエントリ等でスパムを発信するスパム発信者に対して、アカウントを作成させてしまうことになります。このリスクを避けるには自己登録を無効にするか「許可されるメールアドレスのドメイン」設定で使用できるメールアドレスを制限してください。';
+$string['selfregistration_help'] = '「Eメールによる自己登録」のような認証プラグインが選択された場合、潜在的なユーザに自分自身での登録およびユーザアカウント作成を許可します。この場合、フォーラム投稿、ブログエントリ等でスパムを発信するスパム発信者にアカウントを作成させてしまうことになります。このリスクを避けるには自己登録を無効にするか「許可されるメールアドレスのドメイン」設定で使用できるメールアドレスを制限してください。';
 $string['settingmigrationmismatch'] = 'プラグイン設定名の訂正中に値の不適合が検出されました。認証プラグイン「 {$a->plugin} 」はレガシー名の下で設定「 {$a->setting} 」に「 {$a->legacy} 」が設定されています。また、現在の名称の下で「 {$a->current} 」が設定されています。後者の値は有効な値として設定されていますが、 あなたはこれが期待された設定値であることを確認する必要があります。';
 $string['sha1'] = 'SHA-1暗号化';
 $string['showguestlogin'] = 'あなたはログインページのゲストログインボタンを表示または非表示にできます。';
@@ -159,7 +157,7 @@ $string['stdchangepassword'] = 'パスワード変更に標準ページを使用
 $string['stdchangepassword_expl'] = '外部認証システムがMoodleにパスワードの変更を許可する場合、この設定を「Yes」にしてください。この設定は「パスワード変更URL」をオーバーライドします。';
 $string['stdchangepassword_explldap'] = '注意: LDAPサーバがリモートの場合、SSL暗号化トンネル (ldaps://) の使用をお勧めします。';
 $string['suspended'] = '利用停止アカウント';
-$string['suspended_help'] = '利用停止にされたユーザアカウントではログインすること、ウェブサービスを利用することができません。また、すべての出力メッセージは廃棄されます。';
+$string['suspended_help'] = '利用停止にされたユーザアカウントではログインおよびウェブサービス利用ができません。また、すべての出力メッセージは廃棄されます。';
 $string['testsettings'] = '設定テスト';
 $string['testsettingsheading'] = '認証設定テスト - {$a}';
 $string['unlocked'] = 'ロックしない';

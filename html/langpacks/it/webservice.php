@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'it', version '3.8'.
+ * Strings for component 'webservice', language 'it', version '3.11'.
  *
  * @package     webservice
  * @category    string
@@ -134,7 +134,7 @@ $string['norequiredcapability'] = 'Nessun privilegio richiesto';
 $string['notoken'] = 'L\'elenco dei token è vuoto';
 $string['onesystemcontrolling'] = 'Consentire ad un sistema esterno di controllare Moodle';
 $string['onesystemcontrollingdescription'] = 'I passi che seguono chiariscono le impostazioni necessarie per consentire il controllo di Moodle da parte di un sistema esterno. I passi suggeriscono anche come impostare il metodo di autenticazione basato su token (chiave di sicurezza).';
-$string['onlyseecreatedtokens'] = 'E\' possibile eliminare qualsiasi token ma puoi visualizzare solo i token che hai creato.';
+$string['onlyseecreatedtokens'] = 'Puoi visualizzare solo i token che hai creato.';
 $string['operation'] = 'Operazione';
 $string['optional'] = 'Opzionale';
 $string['passwordisexpired'] = 'La password è scaduta';
@@ -209,6 +209,9 @@ $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Autenticazione token';
 $string['tokencreatedbyadmin'] = 'Può essere reimpostata solo da un amministratore (*)';
 $string['tokencreator'] = 'Creatore';
+$string['tokenfilter'] = 'Filtro token';
+$string['tokenfilterreset'] = 'Visualizza tutti i token';
+$string['tokenfiltersubmit'] = 'Visualizza solo i token corrispondenti';
 $string['unknownoptionkey'] = 'L\'option key ({$a}) è sconosciuta';
 $string['unnamedstringparam'] = 'Un parametro stringa è privo di nome.';
 $string['updateusersettings'] = 'Aggiorna';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ko', version '3.8'.
+ * Strings for component 'quiz_grading', language 'ko', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(채점됨)';
 $string['gradenextungraded'] = '미채점 {$a} 시도 채점';
 $string['gradeungraded'] = '미채점 {$a} 시도 모두 채점';
 $string['grading'] = '수동 채점';
-$string['grading:componentname'] = '수동 채점 보고서';
 $string['grading:viewidnumber'] = '채점시 학생 아이디 보기';
 $string['grading:viewstudentnames'] = '채점시 학생 이름 보기';
 $string['gradingall'] = '이 질문에는 모두 {$a} 시도가 있습니다.';

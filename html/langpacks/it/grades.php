@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'it', version '3.8'.
+ * Strings for component 'grades', language 'it', version '3.11'.
  *
  * @package     grades
  * @category    string
@@ -160,6 +160,7 @@ $string['droplowestvalues'] = 'Scarta {$a} voti peggiori';
 $string['dropped'] = 'Scartati';
 $string['dropxlowest'] = 'Scarta le N più basse';
 $string['dropxlowestwarning'] = 'Nota: Se si utilizza Scarta le N più basse, la valutazione assume che tutte gli elementi della corrispondente categoria hanno lo stesso valore per i punteggi. Se tali valori differiscono i risultati saranno imprevedibili';
+$string['duplicatedgradeitem'] = '{$a} (copia)';
 $string['duplicatescale'] = 'Duplica scala';
 $string['edit'] = 'Modifica';
 $string['editcalculation'] = 'Modifica Calcolo';
@@ -194,6 +195,7 @@ $string['errorupdatinggradecategoryaggregation'] = 'Errore durante l\'aggiorname
 $string['errorupdatinggradeitemaggregationcoef'] = 'Errore durante l\'aggiornamento del coefficiente di aggregazione (peso o credito extra) nella categoria ID {$a->id}';
 $string['eventgradedeleted'] = 'Eliminata valutazione';
 $string['eventgradeitemcreated'] = 'Creato elemento di valutazione';
+$string['eventgradeitemdeleted'] = 'Eliminato elemento di valutazione';
 $string['eventgradeitemupdated'] = 'Aggiornato elemento di valutazione';
 $string['eventgradelettercreated'] = 'Creata graduatoria letterale';
 $string['eventgradeletterdeleted'] = 'Eliminata graduatoria letterale';

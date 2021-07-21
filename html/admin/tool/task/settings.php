@@ -26,13 +26,12 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($hassiteconfig) {
 
-    //XTEC ************ AFEGIT - To let access only to xtecadmin user
-    //2015.05.19 @pferre22
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2015.05.19 @pferre22
     if (!get_protected_agora()) {
         return;
     }
-    //************ FI
-
+    // ************ FI
 
     $ADMIN->add(
         'taskconfig',
@@ -40,6 +39,15 @@ if ($hassiteconfig) {
             'scheduledtasks',
             new lang_string('scheduledtasks', 'tool_task'),
             "$CFG->wwwroot/$CFG->admin/tool/task/scheduledtasks.php"
+        )
+    );
+
+    $ADMIN->add(
+        'taskconfig',
+        new admin_externalpage(
+            'runningtasks',
+            new lang_string('runningtasks', 'tool_task'),
+            "$CFG->wwwroot/$CFG->admin/tool/task/runningtasks.php"
         )
     );
 }

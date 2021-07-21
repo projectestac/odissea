@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_filetypes', language 'ru', version '3.8'.
+ * Strings for component 'tool_filetypes', language 'ru', version '3.11'.
  *
  * @package     tool_filetypes
  * @category    string
@@ -62,6 +62,7 @@ $string['icon_help'] = 'Имя файла значка.
 $string['mimetype'] = 'MIME-тип';
 $string['mimetype_help'] = 'MIME-тип, связанный с этим типом файла, например, «application/x-mobipocket-ebook»';
 $string['pluginname'] = 'Типы файлов';
+$string['privacy:metadata'] = 'Плагин Типы файлов не хранит никаких личных данных.';
 $string['revert'] = 'Вернуть {$a} к настройкам Moodle по умолчанию';
 $string['revert_confirmation'] = 'Вы уверены, что хотите вернуть <strong>.{$a}</strong> к настройкам Moodle по умолчанию, отменив свои изменения?';
 $string['revertfiletype'] = 'Восстановить тип файла';

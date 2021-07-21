@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_eventlist', language 'eu', version '3.8'.
+ * Strings for component 'report_eventlist', language 'eu', version '3.11'.
  *
  * @package     report_eventlist
  * @category    string

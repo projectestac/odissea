@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_googledocs', language 'gl', version '3.8'.
+ * Strings for component 'portfolio_googledocs', language 'gl', version '3.11'.
  *
  * @package     portfolio_googledocs
  * @category    string
@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['clientid'] = 'Id do cliente';
-$string['noauthtoken'] = 'Non se recibiu unha credencial de autenticación Google. Asegúrese de terlle permitido a Moodle que acceda á súa conta de Google.';
+$string['noauthtoken'] = 'Non se recibiu ningún testemuño de autenticación de Google. Asegúrese de terlle permitido a Moodle que acceda á súa conta de Google.';
 $string['nooauthcredentials'] = 'Requírense credenciais OAuth.';
 $string['nooauthcredentials_help'] = 'Para usar o engadido do portafolios de Google Drive, ten que configurar as credenciais de OAuth nos axustes do portafolios.';
-$string['nosessiontoken'] = 'Non existe unha credencial de sesión, o que impide exportar a Google.';
-$string['oauthinfo'] = '<p>Para usar este engadido, ten que rexistrar este sitio en Google, tal e como se describe na documentación <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do proceso de rexistro, deberá introducir o seguinte URL como «URI de redireccionamento autorizada» (Authorized Redirect URIs):</p><p>{$a->callbackurl}</p>Unha vez rexistrado, forneceráselle un ID de cliente e un secreto que poderá entón empregar para configurar todos os engadidos de Google Drive e Picasa.</p>';
+$string['nosessiontoken'] = 'Non existe un testemuño de sesión, o que impide exportar a Google.';
+$string['oauthinfo'] = '<p>Para usar este engadido, ten que rexistrar este sitio en Google, tal e como se describe na documentación <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>Como parte do proceso de rexistro, deberá introducir o seguinte URL como «URI de redireccionamento autorizada» (Authorized Redirect URIs):</p><p>{$a->callbackurl}</p>Unha vez rexistrado, forneceráselle un ID de cliente e un segredo que poderá entón empregar para configurar todos os engadidos de Google Drive e Picasa.</p>';
 $string['pluginname'] = 'Google Drive';
 $string['privacy:metadata'] = 'Este engadido envía datos externamente a unha conta de Google ligada. Non almacena datos localmente.';
 $string['privacy:metadata:data'] = 'Datos persoais pasados a mediante o subsistema portafolios.';
-$string['secret'] = 'Secreto';
+$string['secret'] = 'Segredo';
 $string['sendfailed'] = 'Non foi posíbel transferir o ficheiro {$a} a Google';

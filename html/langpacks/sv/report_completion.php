@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_completion', language 'sv', version '3.8'.
+ * Strings for component 'report_completion', language 'sv', version '3.11'.
  *
  * @package     report_completion
  * @category    string
@@ -25,12 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['clicktomarkusercomplete'] = 'Klicka här om du vill markera att användaren är klar';
 $string['completion:view'] = 'Visa kursslutföranderapport';
 $string['completiondate'] = 'Slutförandedatum';
 $string['eventreportviewed'] = 'Slutföranderapport visad';
+$string['eventuserreportviewed'] = 'Användarens slutföranderapport visad';
 $string['id'] = 'ID';
 $string['name'] = 'Namn';
+$string['nocapability'] = 'Kan inte nå användarens slutföranderapport';
 $string['page-report-completion-index'] = 'Kursslutföranderapport';
 $string['page-report-completion-user'] = 'Kursslutföranderapport för användare';
 $string['page-report-completion-x'] = 'Vilken fullföljanderapport somhelst';
 $string['pluginname'] = 'Kursslutförande';
+$string['privacy:metadata'] = 'Rapporten Kursslutförande visar endast data som lagras på andra platser.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_ddwtos', language 'gl', version '3.8'.
+ * Strings for component 'qtype_ddwtos', language 'gl', version '3.11'.
  *
  * @package     qtype_ddwtos
  * @category    string
@@ -29,7 +29,7 @@ $string['addmorechoiceblanks'] = 'Espazos en branco para {no} máis escollas';
 $string['answer'] = 'Resposta';
 $string['blank'] = 'en branco';
 $string['correctansweris'] = 'A resposta correcta é: {$a}';
-$string['infinite'] = 'Ilimitado';
+$string['infinite'] = 'Sen límite';
 $string['pleaseputananswerineachbox'] = 'Poña unha resposta en cada caixa.';
 $string['pluginname'] = 'Arrastrar e soltar sobre texto';
 $string['pluginname_help'] = 'Arrastrar e soltar en preguntas de texto require que o que responde arrastre palabras ou frases ás lagoas correctas no texto da pregunta. [[1]], [[2]], [[3]], ... utilízanse como marcadores de posición no texto da pregunta, coas respostas correctas especificadas como respostas de elección 1, 2, 3, ... respectivamente. As respostas de elección poden agruparse de maneira que todas as respostas nun grupo en particular estean do mesmo xeito que as lagoas para elas no texto da pregunta. As opcións de resposta marcadas como ilimitadas poden usarse en máis dunha lagoa.';

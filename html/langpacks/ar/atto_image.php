@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_image', language 'ar', version '3.8'.
+ * Strings for component 'atto_image', language 'ar', version '3.11'.
  *
  * @package     atto_image
  * @category    string
@@ -44,7 +44,7 @@ $string['presentation'] = 'هذه صورة للتزيين فقط';
 $string['presentationoraltrequired'] = 'لا بد من إعطاء وصف للصورة، إلا إذا كانت مؤشرة للتزيين فقط.';
 $string['preview'] = 'استعراض';
 $string['privacy:metadata'] = 'إن ملحق atto_image لا يخزن أي بيانات شخصية.';
-$string['saveimage'] = 'إحفظ الصورة';
+$string['saveimage'] = 'حفظ الصورة';
 $string['size'] = 'الحجم';
 $string['uploading'] = 'الرفع جارٍ، إنتظر لطفاً...';
 $string['width'] = 'العرض';

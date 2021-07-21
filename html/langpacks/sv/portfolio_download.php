@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_download', language 'sv', version '3.8'.
+ * Strings for component 'portfolio_download', language 'sv', version '3.11'.
  *
  * @package     portfolio_download
  * @category    string
@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['downloadfile'] = 'Ladda ner din exportfil för portfolio';
 $string['downloading'] = 'Laddar ner...';
-$string['pluginname'] = 'Ladda ner fil';
+$string['pluginname'] = 'Filnedladdning';
+$string['privacy:metadata'] = 'Detonation pluginmodul lagrar inga personuppgifter och exporterar heller inte personuppgifter till en extern plats.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_log', language 'ru', version '3.8'.
+ * Strings for component 'report_log', language 'ru', version '3.11'.
  *
  * @package     report_log
  * @category    string
@@ -37,6 +37,7 @@ $string['eventuserreportviewed'] = 'Отчет «Журнал событий» �
 $string['log:view'] = 'Просматривать журнал событий курса';
 $string['log:viewtoday'] = 'Просматривать записи журнала событий за сегодня';
 $string['logsformat'] = 'Формат';
+$string['nocapability'] = 'Нет доступа к отчету журнала пользователя';
 $string['nologreaderenabled'] = 'Нет доступных журналов событий';
 $string['origin'] = 'Источник';
 $string['other'] = 'Другое';
@@ -45,6 +46,7 @@ $string['page-report-log-index'] = 'Отчет о событиях курса';
 $string['page-report-log-user'] = 'Отчет о событиях участника курса';
 $string['page-report-log-x'] = 'Отчет о любых событиях';
 $string['pluginname'] = 'Журнал событий';
+$string['privacy:metadata'] = 'Плагин Журналы не хранит никаких личных данных.';
 $string['restore'] = 'Восстановить';
 $string['selectlogreader'] = 'Выберите журнал событий';
 $string['web'] = 'Веб';

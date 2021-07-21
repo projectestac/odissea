@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'fr', version '3.8'.
+ * Strings for component 'data', language 'fr', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -65,8 +65,8 @@ $string['cannotdeletepreset'] = 'Erreur lors de la suppression d\'un préréglag
 $string['cannotoverwritepreset'] = 'Erreur lors du remplacement du préréglage';
 $string['cannotunziptopreset'] = 'Impossible de décompresser le dossier du préréglage';
 $string['checkbox'] = 'Case à cocher';
-$string['chooseexportfields'] = 'Sélectionnez les champs que vous voulez exporter :';
-$string['chooseexportformat'] = 'Sélectionnez le format d\'exportation désiré :';
+$string['chooseexportfields'] = 'Sélectionner les champs à exporter';
+$string['chooseexportformat'] = 'Sélectionnezr le format d\'exportation désiré';
 $string['chooseorupload'] = 'Sélectionner un fichier';
 $string['closebeforeopen'] = 'Vous avez indiqué une date de fin antérieure à la date de début.';
 $string['columns'] = 'colonnes';
@@ -77,6 +77,7 @@ $string['comments'] = 'Commentaires';
 $string['commentsaved'] = 'Commentaire enregistré';
 $string['commentsn'] = '{$a} commentaire(s)';
 $string['commentsoff'] = 'La fonctionnalité de commentaire n\'est pas activée';
+$string['completiondetail:entries'] = 'Ajouter des fiches : {$a}';
 $string['completionentries'] = 'Requiert des fiches';
 $string['completionentriescount'] = 'Nombre de fiches';
 $string['completionentriesdesc'] = 'Nombre minimale de fiches requises : {$a}';
@@ -89,7 +90,7 @@ $string['csvfailed'] = 'Impossible de lire les données du fichier CSV';
 $string['csvfile'] = 'Fichier CSV';
 $string['csvimport'] = 'Importation fichier CSV';
 $string['csvimport_help'] = 'Des fiches peuvent être importées à partir d\'un fichier texte pur, dont la première ligne contient la liste des noms des champs. Les lignes suivantes contiendront les données à importer, une fiche par ligne.';
-$string['csvwithselecteddelimiter'] = 'Texte <acronym title="Comma Separated Values">CSV</acronym> avec séparateur :';
+$string['csvwithselecteddelimiter'] = '<abbr title="Valeurs séparées par des virgules">CSV</abbr>';
 $string['data:addinstance'] = 'Ajouter une base de données';
 $string['data:approve'] = 'Approuver ou retirer l\'approbation de fiches';
 $string['data:comment'] = 'Écrire des commentaires';
@@ -153,12 +154,14 @@ $string['eventtemplateupdated'] = 'Modèle modifié';
 $string['eventtemplateviewed'] = 'Modèle consulté';
 $string['example'] = 'Exemple de module Base de données';
 $string['excel'] = 'Excel';
-$string['expired'] = 'Cette activité est fermée depuis {$a} et n\'est plus disponible';
+$string['expired'] = 'Cette activité est terminée depuis {$a} et n\'est plus disponible';
 $string['export'] = 'Exporter';
 $string['exportaszip'] = 'Exporter en zip';
 $string['exportaszip_help'] = 'Cette fonctionnalité vous permet de télécharger sur votre propre ordinateur les modèles, que vous pourrez déposer ultérieurement dans d\'autres bases de données, à l\'aide de la commande « Importer d\'un fichier zip ».';
 $string['exportedtozip'] = 'Exporté vers un zip temporaire…';
 $string['exportentries'] = 'Exporter des fiches';
+$string['exportformat'] = 'Format d\'exportation';
+$string['exportoptions'] = 'Options d\'exportation';
 $string['exportownentries'] = 'N\'exporter que vos propres fiches ? ({$a->mine}/{$a->all})';
 $string['failedpresetdelete'] = 'Erreur lors de la suppression d\'un préréglage !';
 $string['fieldadded'] = 'Champ ajouté';
@@ -174,6 +177,7 @@ $string['fieldids'] = 'Identifiants de champs';
 $string['fieldmappings'] = 'Correspondance des champs';
 $string['fieldmappings_help'] = 'Ce menu vous permet de conserver des données de la base de données existante. Pour préserver les données d\'un champ, vous devez faire correspondre ce champ à un nouveau champ, dans lequel apparaîtront les données. Les champs peuvent aussi être laissé vides, sans qu\'aucune donnée n\'y soit copiée. Les anciens champs n\'étant pas mis en correspondance avec un nouveau seront supprimés, et toutes les données qu\'ils contenaient seront perdues. Vous ne pouvez mettre en correspondance que des champs de même type. Les deux menus déroulants comporteront des champs différents. Veuillez en outre faire attention à ne pas mettre en correspondance un ancien champ avec plus d\'un nouveau.';
 $string['fieldname'] = 'Nom du champ';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'Les champs suivants de votre fichier n\'existent pas dans cette base de données : {$a}';
 $string['fieldoptions'] = 'Options (une par ligne)';
 $string['fields'] = 'Champs';
@@ -259,7 +263,7 @@ L\'enseignant peut autoriser les commentaires sur les articles. Les articles peu
 Une activité de base de données peut être utilisée pour :
 
 * construire de façon collaborative une collection de références (liens web, livres, journaux)
-* afficher des travaux d\'élèves (photos, posters, sites web, poèmes) pour une évaluation par les pairs';
+* afficher des travaux d\'étudiants (photos, posters, sites web, poèmes) pour une évaluation par les pairs';
 $string['modulenameplural'] = 'Bases de données';
 $string['more'] = 'Plus';
 $string['moreurl'] = 'Plus d\'infos';
@@ -288,7 +292,7 @@ $string['number'] = 'Nombre';
 $string['numberrssarticles'] = 'Fiches dans le flux RSS';
 $string['numnotapproved'] = 'En attente';
 $string['numrecords'] = '{$a} fiches';
-$string['ods'] = 'Document <acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<abbr title="Feuille de calcul OpenDocument">ODS</abbr> (OpenOffice)';
 $string['openafterclose'] = 'Vous avez indiqué une date de début postérieure à la date de fin.';
 $string['optionaldescription'] = 'Brève description (facultative)';
 $string['optionalfilename'] = 'Nom affiché (facultatif)';
@@ -351,6 +355,7 @@ $string['rows'] = 'rangées';
 $string['rssglobaldisabled'] = 'Désactivé. Voir les paramètres de configuration du Moodle.';
 $string['rsstemplate'] = 'Modèle RSS';
 $string['rsstitletemplate'] = 'Modèle titre RSS';
+$string['rsstype'] = 'Flux RSS de cette activité';
 $string['save'] = 'Enregistrer';
 $string['saveandadd'] = 'Enregistrer et ajouter une fiche';
 $string['saveandview'] = 'Enregistrer et afficher';
@@ -363,6 +368,8 @@ $string['search'] = 'Recherche';
 $string['search:activity'] = 'Base de données – information sur l\'activité';
 $string['search:entry'] = 'Base de données – fiches';
 $string['selectedrequired'] = 'Toute la sélection requise';
+$string['selectexportoptions'] = 'Sélectionner les options d\'exportation';
+$string['selectfields'] = 'Sélectionner les champs';
 $string['showall'] = 'Afficher toutes les fiches';
 $string['single'] = 'Affichage fiche';
 $string['singletemplate'] = 'Modèle fiche';
@@ -384,6 +391,8 @@ $string['todatabase'] = 'à cette base de données.';
 $string['type'] = 'Type de champ';
 $string['undefinedprocessactionmethod'] = 'Aucune méthode n\'est définie dans Data_Preset pour traiter l\'action « {$a} ».';
 $string['unsupportedexport'] = '({$a->fieldtype}) ne peut pas être exporté.';
+$string['unsupportedfields'] = 'Champs non supportés';
+$string['unsupportedfieldslist'] = 'Les champs suivants ne peuvent pas être exportés :';
 $string['updatefield'] = 'Modifier un champ existant';
 $string['uploadfile'] = 'Déposer un fichier';
 $string['uploadrecords'] = 'Importer des fiches à partir d\'un fichier';

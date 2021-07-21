@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'webservice', language 'en', version '3.8'.
+ * Strings for component 'webservice', language 'en', version '3.11'.
  *
  * @package     webservice
  * @category    string
@@ -84,7 +84,7 @@ $string['errorcodes'] = 'Error message';
 $string['errorcoursecontextnotvalid'] = 'You cannot execute functions in the course context (course id:{$a->courseid}). The context error message was: {$a->message}';
 $string['errorinvalidparam'] = 'The param "{$a}" is invalid.';
 $string['errornotemptydefaultparamarray'] = 'The web service description parameter named \'{$a}\' is an single or multiple structure. The default can only be empty array. Check web service description.';
-$string['erroroptionalparamarray'] = 'The web service description parameter named \'{$a}\' is an single or multiple structure. It can not be set as VALUE_OPTIONAL. Check web service description.';
+$string['erroroptionalparamarray'] = 'The web service description parameter named \'{$a}\' is a single or multiple structure. It cannot be set as VALUE_OPTIONAL. Check the web service description.';
 $string['eventwebservicefunctioncalled'] = 'Web service function called';
 $string['eventwebserviceloginfailed'] = 'Web service login failed';
 $string['eventwebserviceservicecreated'] = 'Web service created';
@@ -122,7 +122,7 @@ $string['loginrequired'] = 'Restricted to logged-in users';
 $string['manageprotocols'] = 'Manage protocols';
 $string['managetokens'] = 'Manage tokens';
 $string['missingcaps'] = 'Missing capabilities';
-$string['missingcaps_help'] = 'List of required capabilities for the service which the selected user does not have. Missing capabilities must be added to the user\'s role in order to use the service.';
+$string['missingcaps_help'] = 'List of capabilities declared by the service which the user does not have. Some service functionality may not be available without these capabilities.';
 $string['missingpassword'] = 'Missing password';
 $string['missingrequiredcapability'] = 'The capability {$a} is required.';
 $string['missingusername'] = 'Missing username';
@@ -134,7 +134,7 @@ $string['norequiredcapability'] = 'No required capability';
 $string['notoken'] = 'The token list is empty.';
 $string['onesystemcontrolling'] = 'Allow an external system to control Moodle';
 $string['onesystemcontrollingdescription'] = 'The following steps help you to set up the Moodle web services to allow an external system to interact with Moodle. This includes setting up a token (security key) authentication method.';
-$string['onlyseecreatedtokens'] = 'Any token can be deleted, though you can only view tokens that you created.';
+$string['onlyseecreatedtokens'] = 'You can only view tokens that you created.';
 $string['operation'] = 'Operation';
 $string['optional'] = 'Optional';
 $string['passwordisexpired'] = 'Password is expired.';
@@ -209,6 +209,9 @@ $string['token'] = 'Token';
 $string['tokenauthlog'] = 'Token authentication';
 $string['tokencreatedbyadmin'] = 'Can only be reset by administrator (*)';
 $string['tokencreator'] = 'Creator';
+$string['tokenfilter'] = 'Tokens filter';
+$string['tokenfilterreset'] = 'Show all tokens';
+$string['tokenfiltersubmit'] = 'Show only matching tokens';
 $string['unknownoptionkey'] = 'Unknown option key ({$a})';
 $string['unnamedstringparam'] = 'A string parameter is unnamed.';
 $string['updateusersettings'] = 'Update';

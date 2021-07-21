@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_merlot', language 'sv', version '3.8'.
+ * Strings for component 'repository_merlot', language 'sv', version '3.11'.
  *
  * @package     repository_merlot
  * @category    string
@@ -25,7 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configplugin'] = 'Merlot.org-konfiguration';
 $string['licensekey'] = 'Licensnyckel';
 $string['merlot:view'] = 'Visa innehåll i Merlot';
 $string['pluginname'] = 'Merlot.org';
 $string['pluginname_help'] = 'Merlot.org';
+$string['privacy:metadata:repository_merlot'] = 'Pluginmodulen Merlot.org lagrar ingen personinformation, men överför användardata från Moodle till fjärrsystemet.';
+$string['privacy:metadata:repository_merlot:author'] = 'Författaren av Merlot.org innehåll.';
+$string['privacy:metadata:repository_merlot:keywords'] = 'Användarens sökfråga för Merlot.org.';
+$string['privacy:metadata:repository_merlot:licencekey'] = 'Licensnyckel för Merlot.org';

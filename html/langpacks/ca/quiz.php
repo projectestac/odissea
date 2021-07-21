@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ca', version '3.8'.
+ * Strings for component 'quiz', language 'ca', version '3.11'.
  *
  * @package     quiz
  * @category    string
@@ -430,6 +430,7 @@ $string['importmaxerror'] = 'Hi ha un error en aquesta pregunta. Teniu massa res
 $string['importquestions'] = 'Importa preguntes des d\'un fitxer';
 $string['inactiveoverridehelp'] = '* L\'estudiant no pertany al grup, té una restricció d\'accés o no té el rol adequat per respondre el qüestionari.';
 $string['incorrect'] = 'Incorrecta';
+$string['indicator:cognitivedepthdef_help'] = 'El participant ha assolit aquest percentatge de la implicació cognitiva oferta per les activitats de Qüestionari en el decurs d\'aquest interval d\'anàlisi (Nivells = No visualització, Visualització, Enviament, Visualització de retroalimentacions, Comenaris a les retroalimentacions, Reenviament després de veure les retroalimentacions)';
 $string['indivresp'] = 'Respostes dels individus per a cada element';
 $string['info'] = 'Informació';
 $string['infoshort'] = 'i';

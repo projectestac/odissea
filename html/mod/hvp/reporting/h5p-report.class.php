@@ -6,7 +6,7 @@
  */
 class H5PReport {
 
-  private static $version = '1.0.0';
+  private static $version = '1.1.0';
 
   private static $processorMap = array(
     'compound' => 'CompoundProcessor',

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'en', version '3.8'.
+ * Strings for component 'block_tag_youtube', language 'en', version '3.11'.
  *
  * @package     block_tag_youtube
  * @category    string
@@ -31,6 +31,7 @@ $string['apikey'] = 'API key';
 $string['apikeyinfo'] = 'Get a <a href="https://developers.google.com/youtube/v3/getting-started">Google API key</a> for your Moodle site.';
 $string['autosvehicles'] = 'Autos & Vehicles';
 $string['category'] = 'Category';
+$string['categoryerror'] = 'Failed to obtain the list of categories. <br> {$a}';
 $string['comedy'] = 'Comedy';
 $string['configtitle'] = 'YouTube block title';
 $string['education'] = 'Education';
@@ -41,6 +42,7 @@ $string['howtodiy'] = 'How-to & DIY';
 $string['includeonlyvideosfromplaylist'] = 'Include only videos from the playlist with id';
 $string['music'] = 'Music';
 $string['newspolitics'] = 'News & Politics';
+$string['nonprofitactivism'] = 'Nonprofits & Activism';
 $string['numberofvideos'] = 'Number of videos';
 $string['peopleblogs'] = 'People & Blogs';
 $string['petsanimals'] = 'Pets & Animals';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'sv', version '3.8'.
+ * Strings for component 'tag', language 'sv', version '3.11'.
  *
  * @package     tag
  * @category    string
@@ -42,7 +42,7 @@ $string['combineselected'] = 'Slå ihop valda';
 $string['component'] = 'Komponent';
 $string['confirmdeletetag'] = 'Är du säker på att du vill ta bort denna etikett?';
 $string['confirmdeletetags'] = 'Är du säker på att du vill ta bort valda etiketter?';
-$string['count'] = 'Räkna';
+$string['count'] = 'Antal';
 $string['coursetags'] = 'Kursetiketter';
 $string['defautltagcoll'] = 'Standardsamling';
 $string['delete'] = 'Ta bort';
@@ -58,7 +58,7 @@ $string['edittag'] = 'Redigera den här etiketten';
 $string['edittagcoll'] = 'Redigera etikettsamling {$a}';
 $string['edittagcollection'] = 'Ändra etikettsamling';
 $string['entertags'] = 'Ange etiketter...';
-$string['errortagfrontpage'] = 'Det är inte tillåtet att sätta etiketter på ingångssidan för webbplatsen';
+$string['errortagfrontpage'] = 'Det är inte tillåtet att sätta etiketter på förstasidan på webbplatsen';
 $string['errorupdatingrecord'] = 'Fel vid uppdatering av post för etikett';
 $string['eventtagadded'] = 'Etikett tillagd till ett objekt';
 $string['eventtagcollcreated'] = 'Etikettsamling skapad';
@@ -90,8 +90,8 @@ $string['nameuseddocombine'] = 'Etikettnamnet används redan. Vill du slå ihop 
 $string['newcollnamefor'] = 'Nytt namn för etikettsamling {$a}';
 $string['newnamefor'] = 'Nytt namn för etikett {$a}';
 $string['nextpage'] = 'Mer';
-$string['noresultsfor'] = 'Inget resultat för  "{$a}"';
-$string['notagsfound'] = 'Hittade inga etiketter som matchar "{$a}"';
+$string['noresultsfor'] = 'Inga resultat för "{$a}"';
+$string['notagsfound'] = 'Hittade inga etiketter som matchade "{$a}"';
 $string['nothingtoupdate'] = 'Inget att uppdatera';
 $string['owner'] = 'Ägare';
 $string['page-tag-index'] = 'Enskild etikettsida';

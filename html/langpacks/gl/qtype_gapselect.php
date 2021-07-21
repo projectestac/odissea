@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_gapselect', language 'gl', version '3.8'.
+ * Strings for component 'qtype_gapselect', language 'gl', version '3.11'.
  *
  * @package     qtype_gapselect
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addmorechoiceblanks'] = 'Espazos en branco para {no} máis escollas';
+$string['addmorechoiceblanks'] = 'Espazos en branco para {no} escollas máis';
 $string['answer'] = 'Resposta';
 $string['choices'] = 'Escollas';
 $string['choicex'] = 'Escolla {no}';
@@ -34,7 +34,7 @@ $string['combinedcontrolnamegapselectplural'] = 'menús despregábeis';
 $string['correctansweris'] = 'A resposta correcta é: {$a}';
 $string['errorblankchoice'] = 'Comprobe as escollas: a opción {$a} está baleira.';
 $string['errormissingchoice'] = 'Verifique o texto da pregunta: {$a} non se atopou nas opcións. Só se poden usar como marcadores de posición os números con respostas especificadas.';
-$string['errornoslots'] = 'O texto da pregunta debe conter marcadores como [[1]] para amosar onde van as palabras que faltan.';
+$string['errornoslots'] = 'O texto da pregunta debe conter marcadores de posición como [[1]] para amosar onde van as palabras que faltan.';
 $string['errorquestiontextblank'] = 'Debe introducir un texto de pregunta.';
 $string['group'] = 'Grupo';
 $string['pleaseputananswerineachbox'] = 'Poña unha resposta en cada caixa.';

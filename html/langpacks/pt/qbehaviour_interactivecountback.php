@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_interactivecountback', language 'pt', version '3.8'.
+ * Strings for component 'qbehaviour_interactivecountback', language 'pt', version '3.11'.
  *
  * @package     qbehaviour_interactivecountback
  * @category    string
@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interativo com múltiplas tentativas (crédito para tentativas anteriores)';
-$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Interativo com múltiplas tentativas (crédito em respostas anteriores) não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Interativo com múltiplas tentativas (crédito em respostas anteriores) não armazena quaisquer dados pessoais.';

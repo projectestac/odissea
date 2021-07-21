@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'fr', version '3.8'.
+ * Strings for component 'calendar', language 'fr', version '3.11'.
  *
  * @package     calendar
  * @category    string
@@ -143,6 +143,7 @@ $string['eventtypecourse'] = 'cours';
 $string['eventtypeglobal'] = 'global';
 $string['eventtypegroup'] = 'groupe';
 $string['eventtypemodule'] = 'module';
+$string['eventtypeother'] = 'autre';
 $string['eventtypesite'] = 'site';
 $string['eventtypeuser'] = 'utilisateur';
 $string['eventview'] = 'Détails de l\'événement';

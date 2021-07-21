@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'enrol_paypal', language 'ru', version '3.8'.
+ * Strings for component 'enrol_paypal', language 'ru', version '3.11'.
  *
  * @package     enrol_paypal
  * @category    string
@@ -42,6 +42,9 @@ $string['enrolperiod_desc'] = 'Продолжительность зачисле
 $string['enrolperiod_help'] = 'Продолжительность обучения, начинается с момента зачисления пользователя. Если параметр выключен, то продолжительность обучения не ограничена.';
 $string['enrolstartdate'] = 'Дата начала';
 $string['enrolstartdate_help'] = 'Если параметр включен, то пользователи могут обучаться только начиная с этой даты.';
+$string['errdisabled'] = 'Плагин зачисления PayPal отключен и не обрабатывает уведомления о платежах.';
+$string['erripninvalid'] = 'Уведомление о текущем платеже не было подтверждено PayPal.';
+$string['errpaypalconnect'] = 'Не удалось подключиться к {$a->url}, чтобы проверить уведомление о текущем платеже: {$a->result}';
 $string['expiredaction'] = 'Действие при истечении срока зачисления';
 $string['expiredaction_help'] = 'Выберите проводимое действие при истечении зачисления пользователя. Пожалуйста, обратите внимание, что некоторые пользовательские данные и настройки будут очищены из курса во время отчисления.';
 $string['mailadmins'] = 'Сообщение администратору';
@@ -56,9 +59,34 @@ $string['paypal:unenrolself'] = 'Отчислять себя из курса';
 $string['paypalaccepted'] = 'Принятые платежи PayPal';
 $string['pluginname'] = 'PayPal';
 $string['pluginname_desc'] = 'Модуль PayPal позволяет создавать платные курсы. Если стоимость курса равна нулю, то студента не попросят заплатить за вход. Вы можете задать стоимость по умолчанию для любого курса всего сайта. В настройках отдельного курса можно установить его стоимость. Стоимость конкретного курса перекрывает стоимость курса всего сайта по умолчанию.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal'] = 'Информация о транзакциях PayPal для зачислений.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:business'] = 'Адрес электронной почты или ID учетной записи PayPal получателя платежа (продавца).';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:courseid'] = 'ID курса, который продан.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:instanceid'] = 'ID экземпляра регистрации в курсе.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:item_name'] = 'Полное название курса, зачисление на который было продано.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:memo'] = 'Примечание, введенное покупателем в поле примечания к платежам на веб-сайте PayPal.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:option_selection1_x'] = 'ФИО покупателя.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:parent_txn_id'] = 'В случае возврата, отмены или отмены отмены это будет ID транзакции исходной транзакции.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:payment_status'] = 'Состояние платежа.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:payment_type'] = 'Сведения о платеже - он произведен с помощью eCheck или с баланса PayPal, кредитной карты или текущего перевода.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:pending_reason'] = 'Причина, по которой платеж ожидает рассмотрения (если это так).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:reason_code'] = 'Причина, по которой статус платежа - "Аннулирован", "Возмещен", "Отменен, аннулирован" или "Отклонен" (если статус является одним из них).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_email'] = 'Основной адрес электронной почты получателя платежа (продавца).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:receiver_id'] = 'Уникальный идентификатор учетной записи PayPal получателя платежа (продавца).';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:tax'] = 'Сумма налога, взимаемого при оплате.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:timeupdated'] = 'Время, когда PayPal уведомит Moodle о платеже.';
+$string['privacy:metadata:enrol_paypal:enrol_paypal:txn_id'] = 'Оригинальный идентификационный номер транзакции продавца для платежа от покупателя.';
 $string['privacy:metadata:enrol_paypal:enrol_paypal:userid'] = 'ID пользователя, который оплатил запись на курс.';
+$string['privacy:metadata:enrol_paypal:paypal_com'] = 'Плагин зачисления PayPal передает данные пользователя из Moodle на веб-сайт PayPal.';
+$string['privacy:metadata:enrol_paypal:paypal_com:address'] = 'Адрес пользователя, покупающего курс.';
+$string['privacy:metadata:enrol_paypal:paypal_com:city'] = 'Город пользователя, покупающего курс.';
+$string['privacy:metadata:enrol_paypal:paypal_com:country'] = 'Страна пользователя, покупающего курс.';
+$string['privacy:metadata:enrol_paypal:paypal_com:custom'] = 'Строка, разделенная дефисом, содержащая ID пользователя (покупателя), ID курса, ID экземпляра регистрации.';
+$string['privacy:metadata:enrol_paypal:paypal_com:email'] = 'Адрес электронной почты пользователя, покупающего курс.';
+$string['privacy:metadata:enrol_paypal:paypal_com:first_name'] = 'Имя пользователя, покупающего курс.';
+$string['privacy:metadata:enrol_paypal:paypal_com:last_name'] = 'Фамилия пользователя, покупающего курс.';
+$string['privacy:metadata:enrol_paypal:paypal_com:os0'] = 'ФИО покупателя.';
+$string['processexpirationstask'] = 'Отправка уведомлений об истечении срока действия зачисления PayPal';
 $string['sendpaymentbutton'] = 'Оплатить через PayPal';
 $string['status'] = 'Разрешить запись из PayPal';
 $string['status_desc'] = 'Позволить пользователям использовать PayPal для зачисления в курс  по умолчанию.';

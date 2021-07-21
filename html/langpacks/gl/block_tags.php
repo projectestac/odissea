@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tags', language 'gl', version '3.8'.
+ * Strings for component 'block_tags', language 'gl', version '3.11'.
  *
  * @package     block_tags
  * @category    string
@@ -36,8 +36,8 @@ $string['recursivecontext'] = 'Incluír contextos fillos';
 $string['recursivecontext_help'] = 'Se non está marcado, amosaranse as etiquetas de elementos no contexto especificado anteriormente, mais non etiquetas de elementos en contextos máis baixos. Por exemplo, as etiquetas do curso poden aparecer, pero non as etiquetas da actividade do curso.';
 $string['standardonly'] = 'Só estándar';
 $string['tagcollection'] = 'Colección de etiquetas';
-$string['tagcollection_help'] = 'Seleccione a colección de etiquetas para amosar as etiquetas. Se escolle «Calquera» amosaranse as etiquetas de todas as coleccións agás as marcadas con *';
+$string['tagcollection_help'] = 'Seleccione a colección de etiquetas para amosar as etiquetas. Se escolle «Calquera» amosaranse as etiquetas de todas as coleccións agás as marcadas cun *';
 $string['taggeditemscontext'] = 'Contexto de elementos etiquetados';
 $string['taggeditemscontext_help'] = 'Pode limitar a nube de etiquetas ás etiquetas que están presentes na categoría actual do curso, curso ou módulo';
 $string['tags:addinstance'] = 'Engadir un novo bloque de etiquetas';
-$string['tags:myaddinstance'] = 'Engadir un novo bloque de etiquetas na área persoal';
+$string['tags:myaddinstance'] = 'Engadir un novo bloque de etiquetas ao Taboleiro';

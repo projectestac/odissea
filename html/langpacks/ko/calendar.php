@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'calendar', language 'ko', version '3.8'.
+ * Strings for component 'calendar', language 'ko', version '3.11'.
  *
  * @package     calendar
  * @category    string
@@ -34,6 +34,7 @@ $string['calendarheading'] = '{$a} 달력';
 $string['calendarpreferences'] = '달력 선택 설정';
 $string['calendarurl'] = '달력 URL : {$a}';
 $string['category'] = '범주';
+$string['categoryevents'] = '일정 분류';
 $string['clickhide'] = '감추기';
 $string['clickshow'] = '보이기';
 $string['colactions'] = '행동';
@@ -41,19 +42,23 @@ $string['colcalendar'] = '달력';
 $string['collastupdated'] = '마지막 업데이트';
 $string['colpoll'] = '업데이트';
 $string['commontasks'] = '선택사항들';
-$string['confirmeventdelete'] = '이 일정을 삭제할까요?';
-$string['confirmeventseriesdelete'] = '"{$a->name}"일정은 반복 일정의 일부입니다. 이 일정만 지우겠습니까, 아니면 모든 {$a->count} 반복 일정을 지우겠습니까?';
+$string['confirmeventdelete'] = '"{$a}"일정을 지울까요?';
+$string['confirmeventseriesdelete'] = '"{$a->name}"일정은 묶음일정의 일부입니다. 이 일정을 지우길 원하거나, 아니면 모든 {$a->count}묶음일정을 지우기를 원하십니까?';
 $string['course'] = '강좌';
 $string['courseevent'] = '강좌행사';
 $string['courseevents'] = '강좌일정';
 $string['courses'] = '강좌';
 $string['customexport'] = '맞춤기간  ({$a->timestart} - {$a->timeend})';
 $string['daily'] = '매일';
+$string['daynext'] = '다음날';
+$string['dayprev'] = '이전날';
 $string['dayviewtitle'] = '일별 보기: {$a}';
 $string['daywithnoevents'] = '계획된 행사가 없습니다.';
 $string['default'] = '기본';
+$string['deleteallevents'] = '모든 일정 지우기';
 $string['deleteevent'] = '일정 삭제하기';
 $string['deleteevents'] = '일정 삭제';
+$string['deleteoneevent'] = '일정 지우기';
 $string['detailedmonthviewtitle'] = '자세한 달별 보기 {$a}';
 $string['durationminutes'] = '유지 시간(분으로)';
 $string['durationnone'] = '기간 제한없이';
@@ -79,7 +84,7 @@ $string['eventduration'] = '기간';
 $string['eventendtime'] = '끝나는 시간';
 $string['eventinstanttime'] = '시간';
 $string['eventkind'] = '행사 유형';
-$string['eventname'] = '이벤트 제목';
+$string['eventname'] = '일정 이름';
 $string['eventnone'] = '일정 없음';
 $string['eventrepeat'] = '반복';
 $string['eventsall'] = '모든 일정';
@@ -91,6 +96,7 @@ $string['eventsrelatedtocourses'] = '강좌 관련 일정';
 $string['eventstarttime'] = '시작 시간';
 $string['eventsupdated'] = '이벤트 업데이트됨 : {$a}';
 $string['eventtime'] = '시간';
+$string['eventtype'] = '일정 종류';
 $string['eventtypesite'] = '사이트';
 $string['eventview'] = '일정 상세정보';
 $string['expired'] = '기간이 끝남';
@@ -104,6 +110,7 @@ $string['generateurlbutton'] = '달력 URL 가져옴';
 $string['global'] = '전체';
 $string['globalevent'] = '전체 행사';
 $string['globalevents'] = '전체 일정';
+$string['gotoactivity'] = '활동으로 이동';
 $string['gotocalendar'] = '달력으로 가기';
 $string['group'] = '모둠';
 $string['groupevent'] = '모둠 행사';
@@ -177,8 +184,13 @@ $string['tt_deleteevent'] = '일정 삭제';
 $string['tt_editevent'] = '일정 편집';
 $string['tue'] = '화';
 $string['tuesday'] = '화요일';
+$string['typecategory'] = '종류별 일정';
+$string['typeclose'] = '일정 닫기';
 $string['typecourse'] = '강좌 일정';
+$string['typedue'] = '일정 기한';
+$string['typegradingdue'] = '일정 등급 매기기';
 $string['typegroup'] = '모둠 일정';
+$string['typeopen'] = '일정 열기';
 $string['typesite'] = '사이트 일정';
 $string['typeuser'] = '사용자 일정';
 $string['upcomingevents'] = '예정된 행사';
@@ -192,5 +204,6 @@ $string['wednesday'] = '수요일';
 $string['weekly'] = '주별';
 $string['weeknext'] = '다음 주';
 $string['weekthis'] = '이번 주';
+$string['when'] = '언제?';
 $string['yesterday'] = '어제';
 $string['youcandeleteallrepeats'] = '이 것은 일련의 반복되는 일정의 한 부분입니다. 이 일정만 제거하거나 일련의 모든 {$a} 일정을 한꺼번에 제거할 수 있습니다.';

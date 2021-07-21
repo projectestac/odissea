@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'iso6392', language 'ar', version '3.8'.
+ * Strings for component 'iso6392', language 'ar', version '3.11'.
  *
  * @package     iso6392
  * @category    string
@@ -175,7 +175,7 @@ $string['gba'] = 'الجبيا';
 $string['gem'] = 'اللغة الجرمانية';
 $string['gez'] = 'الجيز';
 $string['gil'] = 'لغة أهل جبل طارق';
-$string['gla'] = 'الغيلية الأسكتلندية';
+$string['gla'] = 'الغيلية الاسكتلندية';
 $string['gle'] = 'الأيرلندية';
 $string['glg'] = 'الجاليكية';
 $string['glv'] = 'المنكية';

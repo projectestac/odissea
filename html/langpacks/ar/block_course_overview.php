@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'ar', version '3.8'.
+ * Strings for component 'block_course_overview', language 'ar', version '3.11'.
  *
  * @package     block_course_overview
  * @category    string
@@ -44,7 +44,7 @@ $string['help_help'] = '\'خصص هذه الصفحة\'، ثم استعمل ال�
 $string['keepfavourites'] = 'أبقِ على المفضلات في قائمة المقررات الدراسية';
 $string['keepfavouritesdesc'] = 'أظهر المقررات في تبويب المقررات الدراسية الرئيسي حتى وإن كانت في تبويب المفضلات';
 $string['makefavourite'] = 'إجعله من المفضلات';
-$string['message'] = 'رسالة';
+$string['message'] = 'الرسالة';
 $string['messages'] = 'الرسائل';
 $string['morecoursestext'] = 'إعرض المزيد من المقررات الدراسية';
 $string['moveafterhere'] = 'أنقل المقرر الدراسي {$a->movingcoursename} بعد {$a->currentcoursename}';

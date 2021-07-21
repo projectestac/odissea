@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'sv', version '3.8'.
+ * Strings for component 'my', language 'sv', version '3.11'.
  *
  * @package     my
  * @category    string
@@ -42,3 +42,4 @@ $string['reseterror'] = 'Ett fel inträffade då sidan skulle återställas';
 $string['reseteveryonesdashboard'] = 'Återställ allas Mitt Moodle';
 $string['reseteveryonesprofile'] = 'Återställ allas profiler';
 $string['resetpage'] = 'Återställ sidan till standard';
+$string['resettingdashboards'] = 'Återställer användarnas Mitt Moodle till standard...';

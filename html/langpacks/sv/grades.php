@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grades', language 'sv', version '3.8'.
+ * Strings for component 'grades', language 'sv', version '3.11'.
  *
  * @package     grades
  * @category    string
@@ -35,7 +35,7 @@ $string['addidnumbers'] = 'Lägg till ID-nummer';
 $string['additem'] = 'Lägg till betygsobjekt';
 $string['additionalfeedback'] = 'Ytterligare återkoppling';
 $string['addoutcome'] = 'Lägg till ett resultat';
-$string['addoutcomeitem'] = 'Lägg till resultatkomponent';
+$string['addoutcomeitem'] = 'Lägg till resultatpost';
 $string['addscale'] = 'Lägg till en skala';
 $string['adjustedweight'] = 'Viktning justerad';
 $string['aggregateextracreditmean'] = 'Medelbetyg (med extra tillgodoräknanden)';
@@ -49,13 +49,55 @@ $string['aggregateonlygraded'] = 'Exkludera tomma betyg';
 $string['aggregateonlygraded_help'] = '<p>Icke-existerande betyg behandlas antingen som minimibetyg eller så tas de inte med i aggregationen. </p>';
 $string['aggregateoutcomes'] = 'Ta med resultaten i aggregeringen.';
 $string['aggregateoutcomes_help'] = '<p>Om du tar med resultaten i aggregationerna så är det inte säkert att det leder till det önskade sammanfattningsbetyget och därför har du valmöjligheten att ta med dem eller att utelämna dem. </p>';
-$string['aggregatesonly'] = 'Endast aggregeringar';
+$string['aggregatesonly'] = 'Byt till <em>Endast aggregeringar</em>';
 $string['aggregatesubcatsupgradedgrades'] = 'OBS! Aggregeringsinställningen "Aggregera inklusive underkategorier" har tagits bort som en del av en webbplatsuppgraderingen. Eftersom "Aggregera inklusive underkategorier" tidigare användes i den här kursen rekommenderas du att granska denna ändring i betygsboken.';
 $string['aggregatesum'] = 'Summan av alla betyg';
 $string['aggregateweightedmean'] = 'Viktat medelbetyg';
 $string['aggregateweightedmean2'] = 'Enkelt vägt medelbetyg';
 $string['aggregation'] = 'Aggregering';
-$string['aggregation_help'] = '<p>Den här menyn gör det möjligt för dig att välja vilken strategi för aggregering som ska användas för att beräkna varje students övergripande betyg för den här kategorin. De olika alternativen förklarar vi här nedan:</p> <p>Betygen omvandlas först till värden i procent (i intervall från 0 till 1, detta kallas normalisation), sedan aggregeras de med hjälp av en av funktionerna här nedan och slutligen omvandlas de i förhållande till spännvidden för komponenten tillhörande den associerade kategorin (mellan <em>minimibetyget</em> och <em>maxbetyget</em>).</p> <p><strong>Viktigt!</strong><br /> Ett tomt fält för betyg innebär bara att det saknas en inmatning i betygskatalogen. Detta kan betyda lite olika saker. Det kan t.ex. vara det att en student ännu inte har skickat in en viss uppgift; det kan röra sig om en inskickad uppgift som ännu inte har blivit betygssatt av läraren eller ett betyg som har tagits bort manuellt av den som administrerar betygskatalogen. Du bör alltså iaktta viss försiktighet när du tolkar vad dessa \'tomma betyg\' egentligen innebär. </p> <dl id="grade-aggregation-help"> <dt>Medelbetyg</dt> <dd>Summan av alla betyg dividerat med det totala antalet betyg.</dd> <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br /> <code>(0.7 + 0.25 + 1.0)/3 = 0.65 --> 65/100</code></dd> <dt>Viktat medel</dt> <dd>Varje betygskomponent kan tilldelas en viktning som sedan används för den aritmetiska medelvärdes-aggregering som syftar till att påverka den betydelse som varje komponent ska ha i det övergripande medelvärdet. </dd> <dd class="example">A1 70/100 weight 10, A2 20/80 weight 5, A3 10/10 weight 3, kategori max 100:<br /><code>(0.7*10 + 0.25*5 + 1.0*3)/18 = 0.625 --> 62.5/100</code></dd> <dt>Enkelt viktat medelvärde</dt> <dd>Skillnaden i förhållande till <em>Viktat medelvärde</em> är den att viktningen beräknas som <em>maxbetyg</em> - <em>minimibetyg</em> för varje komponent. En uppgift på 100 poäng har en viktning på 100 , en uppgift på 10 poäng har en viktning på 10.</dd> <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br /> <code>(0.7*100 + 0.25*80 + 1.0*10)/190 = 0.526 --> 52.6/100</code></dd> <dt>Medelvärde för betyg (med extra tillgodoräknanden)</dt> <dd>Aritmetiskt medelvärde med ett tillägg. Detta är en gammal typ av aggregation som inte längre stödjs. Den finns med här endast p.g.a. behovet av bakåtkompatibilitet.</dd> <dt>Medianvärde för betyg</dt> <dd>Det mittersta betyget (eller medelvärdet av de två mittersta betygen) när betygen har arrangerats efter storlek. Fördelen med detta i förhållande till medelvärdet är att det inte påverkas av undantagsvärden (betyg som ligger extremt långt från medelvärdet).</dd> <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br /> <code>0.7 + 0.25 + 1.0 --> 0.25 --> 25/100</code></dd> <dt>Minsta betyget</dt> <dd>Resultatet är det minsta betyget efter normalisation. Det används vanligen i kombination med <em>Aggregera bara icke-tomma betyg</em>.</dd> <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br /> <code>min(0.7 + 0.25 + 1.0) = 0.25 --> 25/100</code></dd> <dt>Högsta betyget</dt> <dd>Resultatet är det högsta betyget efter normalisation.</dd> <dd class="example">A1 70/100, A2 20/80, A3 10/10, category max 100:<br /> <code>max(0.7 + 0.25 + 1.0) = 1.0 --> 100/100</code></dd> <dt>"Mode" för betyg</dt> <dd>"Mode" är det betyg som är det vanligaste. Det används mer ofta för icke-numeriska betyg. Fördelen jämfört med medelvärdet är att det inte påverkas av undantagsvärden. (betyg som ligger extremt långt från medelvärdet). Detta förlorar dock sin mening så fort det finns mer än ett betyg som är det vanligaste (det är bara ett som används), eller när alla betyg skiljer sig från varandra.</dd> <dd class="example">A1 70/100, A2 35/50, A3 20/80, A4 10/10, A5 7/10 kategori max 100:<br /> <code>mode(0.7; 0.7; 0.25; 1.0; 0.7) = 0.7 --> 70/100</code></dd> <dt>Summan av betygen</dt> <dd>Summan av alla betygsvärden. Ingen hänsyn tas till betyg i skalor. Detta är den enda typen som inte omvandlar betygen till procentvärden internt (normalisation). <em>Maxbetyget</em> på en associerad komponent i en kategori beräknas automatiskt som en summa av max från alla aggregerade komponenter.</dd> <dd class="example">A1 70/100, A2 20/80, A3 10/10:<br /> <code>70 + 20 + 10 = 100/190</code></dd> </dl>';
+$string['aggregation_help'] = '<p>Den här menyn gör det möjligt för dig att välja vilken strategi för aggregering som ska användas för att beräkna
+    varje students övergripande betyg för den här kategorin. De olika alternativen förklarar vi här nedan:</p>
+<p>Betygen omvandlas först till värden i procent (i intervall från 0 till 1, detta kallas normalisation), sedan
+    aggregeras de med hjälp av en av funktionerna här nedan och slutligen omvandlas de i förhållande till intervallet
+    för objektet tillhörande den associerade kategorin (mellan <em>minimibetyget</em> och <em>maxbetyget</em>).</p>
+<p><strong>Viktigt!</strong><br /> Ett tomt fält för betyg innebär bara att det saknas en post i betygsboken.
+    Detta kan betyda lite olika saker. Det kan t.ex. vara så att en student ännu inte har skickat in en viss uppgift;
+    det kan röra sig om en inskickad uppgift som ännu inte har blivit betygssatt av läraren eller ett betyg som har
+    tagits bort manuellt av den som administrerar betygsboken. Du bör alltså iaktta viss försiktighet när du tolkar
+    vad dessa \'tomma betyg\' egentligen innebär. </p>
+<dl id="grade-aggregation-help">
+    <dt>Medelbetyg</dt>
+    <dd>Summan av alla betyg dividerat med det totala antalet betyg.</dd>
+    <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br />
+        <code>(0.7 + 0.25 + 1.0)/3 = 0.65 &#10132; 65/100</code></dd>
+    <dt>Medianvärde för betyg</dt>
+    <dd>Det mittersta betyget (eller medelvärdet av de två mittersta betygen) när betygen har arrangerats efter storlek.
+        Fördelen med detta i förhållande till medelvärdet är att det inte påverkas av undantagsvärden (betyg som ligger
+        extremt långt från medelvärdet).</dd>
+    <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br />
+        <code>0.7 + 0.25 + 1.0 --> 0.25 &#10132; 25/100</code></dd>
+    <dt>Lägsta betyg</dt>
+    <dd>Resultatet är det lägsta betyget efter normalisering. Det används vanligen i kombination med <em>Aggregera bara
+            icke-tomma betyg</em>.</dd>
+    <dd class="example">A1 70/100, A2 20/80, A3 10/10, kategori max 100:<br />
+        <code>min(0.7 + 0.25 + 1.0) = 0.25 &#10132; 25/100</code></dd>
+    <dt>Högsta betyg</dt>
+    <dd>Resultatet är det högsta betyget efter normalisering.</dd>
+    <dd class="example">A1 70/100, A2 20/80, A3 10/10, category max 100:<br />
+        <code>max(0.7 + 0.25 + 1.0) = 1.0 &#10132; 100/100</code></dd>
+    <dt>"Mode" för betyg</dt>
+    <dd>"Mode" är det betyg som är det vanligaste. Det används mer ofta för icke-numeriska betyg. Fördelen jämfört med
+        medelvärdet är att det inte påverkas av undantagsvärden. (betyg som ligger extremt långt från medelvärdet).
+        Detta förlorar dock sin mening så fort det finns mer än ett betyg som är det vanligaste (det är bara ett som
+        används), eller när alla betyg skiljer sig från varandra.</dd>
+    <dd class="example">A1 70/100, A2 35/50, A3 20/80, A4 10/10, A5 7/10 kategori max 100:<br />
+        <code>mode(0.7; 0.7; 0.25; 1.0; 0.7) = 0.7 &#10132; 70/100</code></dd>
+    <dt>Summan av betygen</dt>
+    <dd>Summan av alla betygsvärden. Ingen hänsyn tas till betyg i skalor. Detta är den enda typen som inte omvandlar
+        betygen till procentvärden internt (normalisering). <em>Maxbetyget</em> för ett associerat betygsobjekt i en kategori
+        beräknas automatiskt som en summa av max från alla aggregerade betygsobjekt.</dd>
+    <dd class="example">A1 70/100, A2 20/80, A3 10/10:<br /> <code>(70 + 20 + 10) / (100 + 80 + 10) = 100/190</code></dd>
+</dl>';
 $string['aggregationcoef'] = 'Aggregeringskoefficient';
 $string['aggregationcoefextra'] = 'Extra tillägg';
 $string['aggregationcoefextra_help'] = 'Om aggregeringen är \'Summan av alla betyg\' eller \'Enkelt vägt medelvärde\' och checkboxen för extra tilläggär förkryssad läggs inte betygspostens högsta betyg till kategorins högsta betyg. Detta kommer att resultera i möjligheten att uppnå högsta betyg i kategorin utan att ha högsta betyg i alla betygsposter. Om webbplatsadministratören har aktiverat resultat över max kan det finnas resultat över det högsta.
@@ -127,10 +169,10 @@ $string['coursegradesettings'] = 'Kursbetygsinställningar';
 $string['coursename'] = 'Kursnamn';
 $string['coursescales'] = 'Skalor för kurs';
 $string['coursesettings'] = 'Kursinställningar';
-$string['coursesettingsexplanation'] = 'Kursinställningar bestämmer hur betygsboken visas för deltagarna i kursen.';
+$string['coursesettingsexplanation'] = 'Kursinställningar bestämmer hur betygsboken visas för kursdeltagarna.';
 $string['coursesiamtaking'] = 'Kurser som jag deltar i';
-$string['coursesiamteaching'] = 'Kurser som jag undervisar';
-$string['coursetotal'] = 'Samlat resultat på kurs';
+$string['coursesiamteaching'] = 'Kurser där jag undervisar';
+$string['coursetotal'] = 'Totalt för kurs';
 $string['createcategory'] = 'Skapa kategori';
 $string['createcategoryerror'] = 'Det gick inte att skapa någon ny kategori';
 $string['creatinggradebooksettings'] = 'Skapar betygsboksinställningar';
@@ -156,6 +198,7 @@ $string['droplowestvalues'] = 'Uteslut de {$a} lägsta betygsvärdena';
 $string['dropped'] = 'Inte inkluderad';
 $string['dropxlowest'] = 'Uteslut de X lägsta';
 $string['dropxlowestwarning'] = 'OBS! Om du använder dig av \'Ta inte med X lägsta\' så innebär det att alla enheter i den kategorin har samma värde i poäng räknat. Om poängtalen varierar så kommer resultaten att bli oförutsägbara.';
+$string['duplicatedgradeitem'] = '{$a} (kopia)';
 $string['duplicatescale'] = 'Duplicera skala';
 $string['edit'] = 'Redigera';
 $string['editcalculation'] = 'Redigera beräkning';
@@ -190,6 +233,7 @@ $string['errorupdatinggradecategoryaggregation'] = 'Fel vid uppdatering av aggre
 $string['errorupdatinggradeitemaggregationcoef'] = 'Fel vid uppdatering av aggregeringskoefficienten (viktning eller extra tillägg) för betygsobjekt med ID {$a->id}';
 $string['eventgradedeleted'] = 'Betyg borttaget';
 $string['eventgradeitemcreated'] = 'Betygsobjekt skapat';
+$string['eventgradeitemdeleted'] = 'Betygsobjekt borttaget';
 $string['eventgradeitemupdated'] = 'Betygsobjekt uppdaterat';
 $string['eventgradelettercreated'] = 'Betygsbokstav skapad';
 $string['eventgradeletterdeleted'] = 'Betygsbokstav borttagen';
@@ -248,10 +292,12 @@ $string['gradeanalysis'] = 'Betygsanalys';
 $string['gradebook'] = 'Betygsbok';
 $string['gradebookcalculationsfixbutton'] = 'Acceptera betygsändringar och korrigera beräkningsfel';
 $string['gradebookcalculationsuptodate'] = 'Beräkningarna i betygsboken är aktuella. Du kan behöva uppdatera den här sidan för att se ändringarna.';
-$string['gradebookcalculationswarning'] = 'OBS! Vissa fel har upptäckts vid beräkningen av de betyg som visas i betygsboken. Om din kurs inte har startat eller pågår rekommenderas att felen åtgärdas genom att klicka på knappen nedan, även om detta kommer att resultera i att vissa betyg ändras. Om din kurs redan har avslutats och resultat har skickats in vill du antagligen inte åtgärda det här problemet. Den nyare versionen är {$a->currentversion}; du använder betygsboksversion {$a->gradebookversion}. Du kan se en lista över ändringar i <a href="{$a->url}">Förändringar i betygsboksberäkningar</a>.';
+$string['gradebookcalculationswarning'] = 'OBS! Vissa fel har upptäckts vid beräkningen av de betyg som visas i betygsboken. Om din kurs inte har startat eller pågår rekommenderas att felen åtgärdas genom att klicka på knappen nedan, även om detta kommer att resultera i att vissa betyg ändras. Om din kurs redan har avslutats och resultat har skickats in vill du antagligen inte åtgärda det här problemet.
+
+Den nyare versionen är {$a->currentversion}; du använder betygsboksversion {$a->gradebookversion}. Du kan se en lista över ändringar i <a href="{$a->url}">Förändringar i betygsboksberäkningar</a>.';
 $string['gradebookhiddenerror'] = 'Betygsboken är inställd att dölja allt för studenterna.';
 $string['gradebookhistories'] = 'Historik för betyg';
-$string['gradebooksetup'] = 'Betygsbok, inställningar';
+$string['gradebooksetup'] = 'Betygsboksinställningar';
 $string['gradeboundary'] = 'Gräns för bokstavsbetyg';
 $string['gradeboundary_help'] = 'Den här inställningen bestämmer den lägsta procentsats över vilken betyg tilldelas betygsbokstäver.';
 $string['gradecategories'] = 'Betygskategorier';
@@ -266,7 +312,7 @@ $string['gradedisplaytype_help'] = 'Den här inställningen avgör hur resultat 
 * Bokstav - Bokstäver eller ord används för att representera ett betygsintervall som definieras i "Betygsbokstäver" i betygsboksinställningarna
 * Procent - Relativt högsta och lägsta betyg
 * Reellt - Faktiska betyg eller skalvärden';
-$string['gradedon'] = 'Betygssatt {$a}';
+$string['gradedon'] = 'Betygsatt: {$a}';
 $string['gradeexport'] = 'Betygsexport';
 $string['gradeexportcolumntype'] = '{$a->name} ({$a->extra})';
 $string['gradeexportcustomprofilefields'] = 'Anpassade användarfält för betygsexport';
@@ -299,7 +345,7 @@ $string['gradeitems'] = 'Betygsobjekt';
 $string['gradeitemsettings'] = 'Inställningar för betygsobjekt';
 $string['gradeitemsinc'] = 'Betygsobjekt som ska inkluderas';
 $string['gradeletter'] = 'Betygsbokstav';
-$string['gradeletter_help'] = '<p>En bokstav eller någon annan symbol kan användas för att representera betyg enligt en skala.</p>';
+$string['gradeletter_help'] = 'Betygsbokstäver är bokstäver, <em>A, B, C,</em> ..., eller ord som t.ex. <em>Godkänd, Utmärkt, MVG,</em> ..., som används för att representera ett betygsintervall.';
 $string['gradeletternote'] = 'För att ta bort en betygsbokstav tömmer du bara någon av de<br />tre textrutorna för den bokstaven och bekräftar.';
 $string['gradeletteroverridden'] = 'Standardbetygsbokstäverna är för närvarande åsidosatta.';
 $string['gradeletters'] = 'Betygsbokstäver';
@@ -315,7 +361,7 @@ $string['gradeoutcomeitem'] = 'Komponent för betygsresultat';
 $string['gradeoutcomes'] = 'Resultat';
 $string['gradeoutcomescourses'] = 'Kursresultat';
 $string['gradepass'] = 'Betygsgräns för godkänt';
-$string['gradepass_help'] = '<p>Om en komponent har ett betyg som användarna måste uppnå eller överträffa för att få godkänt på komponenten så kan du ställa in det här.</p>';
+$string['gradepass_help'] = 'Den här inställningen avgör vilket minimibetyg som krävs för att bli godkänd. Värdet används i aktiviteten, kursslutförandet samt i betygsboken. Godkända betyg markeras med grönt och underkända med rött.';
 $string['gradepassgreaterthangrade'] = 'Gränsen för godkänt kan inte vara högre än maxbetyget {$a}';
 $string['gradepointdefault'] = 'Standardbetygspoäng';
 $string['gradepointdefault_help'] = 'Denna inställning anger standardvärdet för betygspoängen för ett betygsobjekt.';
@@ -326,7 +372,7 @@ $string['gradepointmax_validateerror'] = 'Denna inställning måste vara ett vä
 $string['gradepreferences'] = 'Betygsinställningar';
 $string['gradepreferenceshelp'] = 'Hjälp för betyg';
 $string['gradepublishing'] = 'Aktivera publicering';
-$string['gradepublishing_help'] = 'Aktivera publicering vid export och import: Exporterade betyg är tillgängliga via en URL. Detta utan att man måste logga in på en webbplats för Moodle. Betyg kan importeras genom att Du går via en sådan URL. Detta innebär att en webbplats för Moodle kan importera betyg som har publicerats på en annan webbplats.';
+$string['gradepublishing_help'] = 'Betygspublicering är ett sätt att importera och exportera resultat via en URL utan att vara inloggad i Moodle. Om det här alternativet är aktiverat får administratörer och de användare som har behörighet att publicera resultat (som standard endast användare med rollen som chef) inställningar för exportpublicering i varje enskild betygsbok.';
 $string['gradepublishinglink'] = 'Hämta: {$a}';
 $string['gradereport'] = 'Betygsrapport';
 $string['graderreport'] = 'Betygssättarrapport';
@@ -381,10 +427,18 @@ $string['highgradeascending'] = 'Sortera efter stigande skala för höga betyg';
 $string['highgradedescending'] = 'Sortera efter fallande skala för höga betyg';
 $string['highgradeletter'] = 'Högt';
 $string['identifier'] = 'Identifiera användare genom';
-$string['idnumbers'] = 'Idnummer';
+$string['idnumbers'] = 'ID-nummer';
 $string['ignore'] = 'Ignorera';
 $string['import'] = 'Importera';
 $string['importcsv'] = 'Importera CSV';
+$string['importcsv_help'] = 'Betyg kan importeras via en CSV-fil formaterad enligt följande:
+
+* Varje rad i filen innehåller en post
+* Varje post är en serie data åtskilda av kommatecken eller annan avgränsare
+* Den första posten innehåller en lista med fältnamn som definierar formatet för resten av filen
+* Ett fältnamn som innehåller användaridentitetsdata krävs - antingen användarnamn, ID-nummer eller e-postadress
+
+En fil med rätt format kan erhållas genom att du först exporterar några betyg. Filen kan sedan redigeras och sparas som en CSV-fil.';
 $string['importcustom'] = 'Importera som standardresultat (endast den här kursen).';
 $string['importerror'] = 'Det inträffade ett fel, det här skriptet anropades inte med rätt parametrar.';
 $string['importfailed'] = 'Importen misslyckades. Ingen data importerades.';
@@ -392,14 +446,14 @@ $string['importfeedback'] = 'Importera återkoppling';
 $string['importfile'] = 'Importera fil';
 $string['importfilemissing'] = 'Det gick inte att ta emot någon fil. gå tillbaka till formuläret och säkerställ att du laddar upp en giltig fil.';
 $string['importfrom'] = 'Importera från';
-$string['importoutcomenofile'] = 'Den uppladdade filen i tom eller skadad. Var snäll och verifiera att det här är en giltig fil. Problemet upptäcktes vid rad {$a}; detta utlöses av att dataraderna inte har lika många kolumner som den första raden (raden med rubriker) eller av att den importerade filen saknar de förväntade rubrikerna. Titta på den exporterade filen för att se ett exempel på en giltig rubrik.';
+$string['importoutcomenofile'] = 'Den upppladdade filen är tom eller skadad. V.g. verifiera att det här är en giltig fil. Problemet upptäcktes vid rad {$a}; detta utlöses av att dataraderna inte har lika många kolumner som den första raden (raden med rubriker) eller av att den importerade filen saknar de förväntade rubrikerna. Titta på den exporterade filen för att se ett exempel på en giltig rubrik.';
 $string['importoutcomes'] = 'Importera resultat';
 $string['importoutcomes_help'] = 'Resultat kan importeras via csv fil med samma format som för csv fil för exporterade resultat.';
 $string['importoutcomesuccess'] = 'Importerade resultat "{$a->name}" med ID #{$a->id}';
 $string['importplugins'] = 'Importpluginmoduler';
 $string['importpreview'] = 'Förhandsgranskning av import';
 $string['importsettings'] = 'Inställningar för import';
-$string['importskippednomanagescale'] = 'Du har inte tillstånd att lägga till en ny skala så resultatet "{$a}" hoppades över eftersom det krävde en ny skala.';
+$string['importskippednomanagescale'] = 'Du har inte behörighet att lägga till en ny skala, så resultatet "{$a}" hoppades över eftersom det krävde en ny skala.';
 $string['importskippedoutcome'] = 'Ett resultat med kortnamnet "{$a}" finns redan in det här sammanhanget, det som fanns i den importerade filen hoppades över.';
 $string['importstandard'] = 'Importera som standardresultat';
 $string['importsuccess'] = 'Import av betyg lyckades';
@@ -411,6 +465,7 @@ $string['incorrectcustomscale'] = '(Felaktig anpassad betygsskala, vänligen än
 $string['incorrectminmax'] = 'Minimum måste vara lägre än maximum';
 $string['inherit'] = 'Ärv';
 $string['intersectioninfo'] = 'Student/Betygsinfo';
+$string['invalidgradeexporteddate'] = 'Exportdatumet är ogiltigt eftersom det infaller för mer än ett år sedan, eller i framtiden, eller för att formatet är ogiltigt.';
 $string['item'] = 'Komponent';
 $string['iteminfo'] = 'Objektsinformation';
 $string['iteminfo_help'] = '<p>Det här är ett utrymme där du kan mata in information om komponenten. Den text som matas in visas inte någon annanstans.</p>';
@@ -442,8 +497,11 @@ $string['lowest'] = 'Lägsta';
 $string['lowgradeletter'] = 'Lågt';
 $string['manualitem'] = 'Manuell komponent';
 $string['mapfrom'] = 'Mappa från';
+$string['mapfrom_help'] = 'Välj kolumnen i kalkylbladet som innehåller data för att identifiera användaren, till exempel användarnamn, användar-ID eller e-postadress.';
 $string['mappings'] = 'Mappning av betygsobjekt';
+$string['mappings_help'] = 'För varje kolumn med resultat i kalkylbladet väljer du motsvarande betygsobjekt som du vill importera betygen till.';
 $string['mapto'] = 'Mappa till';
+$string['mapto_help'] = 'Välj samma identifierande data som valts för "Mappa från".';
 $string['max'] = 'Högsta';
 $string['maxgrade'] = 'Maxbetyg';
 $string['meanall'] = 'Alla betyg';
@@ -456,22 +514,40 @@ $string['minimum_show'] = 'Visa lägsta betyg';
 $string['minimum_show_help'] = 'Lägsta betyg som används vid beräkning av betyg och viktningar. Om inaktiverat sätts lägsta betyg till 0 och går inte att redigera.';
 $string['minmaxtouse'] = 'Lägsta och högsta betyg i beräkningar';
 $string['minmaxtouse_desc'] = 'Den här inställningen avgör om de initiala lägsta- och högstabetygen från när betyget gavs ska användas, eller de lägsta och högsta betygen enligt vad som anges i inställningarna för betygsobjektet när den beräknar det betyg som visas i betygsboken. Det rekommenderas att den här inställningen ändras vid en lågtrafiktid, eftersom alla betyg kommer att räknas  om, vilket kan resultera i en hög serverbelastning.';
+$string['minmaxtouse_help'] = 'Den här inställningen avgör om du ska använda de första minimi- och maximibetygen från när resultatet gavs, eller de lägsta och högsta resultat som anges i inställningarna för betygsobjektet när du beräknar betyget som visas i betygsboken.';
+$string['minmaxupgradedgrades'] = 'Vissa resultat har ändrats för att lösa en inkonsekvens i betygsboken som orsakas av en ändring av de lägsta och högsta betyg som används vid beräkning av det betyg som visas. Vi rekommenderar att ändringarna granskas och accepteras.';
 $string['minmaxupgradefixbutton'] = 'Lös inkonsekvent betygsinställning';
+$string['minmaxupgradewarning'] = 'En inkonsekvens har upptäckts för vissa betyg. Detta på grund av en ändring av de lägsta- och högstabetyg som använts vid beräkningen av det betyg som visas i betygsboken. Vi rekommenderar att inkonsekvensen löses genom att klicka på knappen nedan, även om detta resulterar i att vissa betyg ändras.';
+$string['missingitemtypeoreid'] = 'Vektornyckeln (itemtype eller eid) saknas för 2:a parametern i <code> grade_edit_tree_column_select::get_item_cell($item, $params)</code>';
 $string['missingscale'] = 'Du måste välja en skala';
 $string['mode'] = 'Läge';
 $string['modgrade'] = 'Betyg';
-$string['modgrade_help'] = 'Välj bedömningssättet som du vill använda för denna aktivitet. Om du markerar "skala" kan du välja en skala från en rullgardinsmeny. Om du markerar "poäng" kan du ange ett högsta möjliga betyg för denna aktivitet.';
+$string['modgrade_help'] = 'Välj vilken typ av bedömning som ska användas för den här aktiviteten. Om "skala" väljs kan du välja skalan i nedrullningsmenyn. Om du använder poängbedömning kan du ange det maximala betyget som är möjligt att erhålla i den här aktiviteten.';
 $string['modgradecantchangegradetype'] = 'Du kan inte ändra betygstypen eftersom det redan finns utdelade betyg av nuvarande typ.';
 $string['modgradecantchangegradetypemsg'] = 'Vissa betyg har redan tilldelats, så betygstypen kan inte ändras. Om du vill ändra högsta betyg måste du först välja om du vill räkna om befintliga betyg eller inte.';
+$string['modgradecantchangegradetyporscalemsg'] = 'Vissa betyg har redan delats ut och därför kan betygstypen och skalan kan inte ändras.';
+$string['modgradecantchangeratingmaxgrade'] = 'Du kan inte ändra det maxbetygen när det redan finns betyg för en aktivitet med betyg.';
+$string['modgradecantchangescale'] = 'Du kan inte ändra skalan eftersom det redan finns resultat för det här objektet.';
 $string['modgradecategorycantchangegradetypemsg'] = 'Den här kategorin har betygsobjekt som är åsidosatta. Därför har vissa betyg redan tilldelats vilket innebär att betygstypen kan inte ändras. Om du vill ändra högsta betyg måste du först välja om du vill räkna om befintliga betyg eller inte.';
+$string['modgradecategorycantchangegradetyporscalemsg'] = 'Den här kategorin har associerade betygsobjekt som har åsidosatts. Detta innebär implicit att vissa betyg redan delats ut. Därför kan betygstypen eller skalan kan inte ändras.';
 $string['modgradecategoryrescalegrades'] = 'Beräkna om skalan för åsidosatta betyg';
+$string['modgradecategoryrescalegrades_help'] = 'När du ändrar de maxbetyget för ett betygsobjekt måste du ange om detta också kommer att leda till att befintliga procentbetyg ändras.
+
+Om detta är inställt på "Ja" skalas alla befintliga åsidosatta betyg om så att procentbetyget förblir detsamma.
+
+Om det här alternativet till exempel är inställt på "Ja" skulle en ändring av det maximala resultatet för ett objekt från 10 till 20 orsaka ett betyg på 6/10 (60 %) skalas om till 12/20 (60 %). Om "Nej" förblir  betyget oförändrat, vilket kräver manuell justering av betygsobjekten för att säkerställa korrekta poäng.';
 $string['modgradedonotmodify'] = 'Ändra inte befintliga betyg';
 $string['modgradeerrorbadpoint'] = 'Ogiltigt betygsvärde. Det måste vara ett heltal mellan 1 och {$a}';
 $string['modgradeerrorbadscale'] = 'Ogiltig skala vald. Vänligen välj en skala från alternativen nedan.';
 $string['modgrademaxgrade'] = 'Maxbetyg';
 $string['modgraderescalegrades'] = 'Beräkna om skalan för befintliga betyg';
+$string['modgraderescalegrades_help'] = 'När du ändrar de maxbetyget för ett betygsobjekt måste du ange om detta också kommer att leda till att befintliga procentbetyg ändras.
+
+Om detta är inställt på "Ja" skalas alla befintliga betyg om så att procentbetyget förblir detsamma.
+
+Om det här alternativet till exempel är inställt på "Ja" skulle en ändring av det maximala betyg för ett objekt från 10 till 20 orsaka ett betyg på 6/10 (60 %) skalas om till 12/20 (60 %). Om "Nej" ändras betyget från 6/10 (60%) till 6/20 (30%), vilket kräver manuell justering av betygsobjekten för att säkerställa korrekta poäng.';
 $string['modgradetype'] = 'Typ';
-$string['modgradetypenone'] = 'Ingen';
+$string['modgradetypenone'] = 'Inget';
 $string['modgradetypepoint'] = 'Poäng';
 $string['modgradetypescale'] = 'Skala';
 $string['morethanmax'] = 'Betyget som har matats in för {$a->itemname} för {$a->username} är högre än maximum';
@@ -509,7 +585,7 @@ $string['nooutcomes'] = 'Resultatdelar måste länkas till ett kursresultat men 
 $string['nopermissiontoresetweights'] = 'Ingen behörighet att återställa viktningen';
 $string['nopublish'] = 'Publicera inte';
 $string['noreports'] = 'Du är inte handledare eller kursdeltagare på någon kurs.';
-$string['norolesdefined'] = 'Inga roller definierade i <em>Hantera webbplats -> Betyg -> Generella inställningar -> Betygssatta roller</em>';
+$string['norolesdefined'] = 'Inga roller definierade i <em>Hantera webbplats &#10132; Betyg &#10132; Generella inställningar &#10132; Betygssatta roller</em>';
 $string['noscales'] = 'Resultat måste länkas till en kursskala eller en global skala men det finns ingen. Vill du lägga till en skala?';
 $string['noselectedcategories'] = 'inga kategorier valdes';
 $string['noselecteditems'] = 'inga komponenter valdes';
@@ -559,7 +635,7 @@ $string['overrideweightofa'] = 'Åsidosätt viktning för {$a}';
 $string['parentcategory'] = 'Överliggande kategori';
 $string['pctoftotalgrade'] = '% av sammanlagda betyget/omdömet';
 $string['percent'] = 'Procent';
-$string['percentage'] = 'Procenttal';
+$string['percentage'] = 'Procent';
 $string['percentageletter'] = 'Procent (bokstav)';
 $string['percentagereal'] = 'Procent (real)';
 $string['percentascending'] = 'Sortera stigande enligt procent';
@@ -575,24 +651,44 @@ $string['positionfirst'] = 'Först';
 $string['positionlast'] = 'Sist';
 $string['preferences'] = 'Inställningar';
 $string['prefgeneral'] = 'Generellt';
-$string['prefletters'] = 'Bokstäver och gränser för betyg';
+$string['prefletters'] = 'Betygsbokstäver och -gränser';
 $string['prefrows'] = 'Specialrader';
 $string['prefshow'] = 'Visa/dölj';
 $string['previewrows'] = 'Förhandsgranska rader';
+$string['privacy:metadata:categorieshistory'] = 'En post med tidigare versioner av betygskategorier';
+$string['privacy:metadata:filepurpose'] = 'Återkopplingsfiler som är lagrade i en användares betygsbok.';
+$string['privacy:metadata:grade_import_newitem'] = 'Tillfällig tabell för lagring av nya grade_item namn från resultatimport';
+$string['privacy:metadata:grade_import_newitem:importcode'] = 'En unik batchkod för identifiering av en importbatch';
+$string['privacy:metadata:grade_import_newitem:importer'] = 'Användare som importerar data';
+$string['privacy:metadata:grade_import_newitem:itemname'] = 'Nytt namn på betygsobjekt';
+$string['privacy:metadata:grade_import_values'] = 'Temporär tabell för import av betyg';
 $string['privacy:metadata:grade_import_values:feedback'] = 'Betygsätt återkoppling';
 $string['privacy:metadata:grade_import_values:finalgrade'] = 'Ursprungligt betygsvärde';
+$string['privacy:metadata:grade_import_values:importcode'] = 'En unik batchkod för identifiering av en importbatch';
 $string['privacy:metadata:grade_import_values:importer'] = 'Användaren som importerar datat';
 $string['privacy:metadata:grade_import_values:importonlyfeedback'] = 'Flagga om enbart återkopplingen importerades';
 $string['privacy:metadata:grade_import_values:userid'] = 'Användare vars betyg importerades';
 $string['privacy:metadata:grades'] = 'En post med betyg';
 $string['privacy:metadata:grades:aggregationstatus'] = 'Aggregeringsstatusen';
+$string['privacy:metadata:grades:aggregationweight'] = 'Viktningen i aggregeringen';
 $string['privacy:metadata:grades:feedback'] = 'Återkopplingen';
 $string['privacy:metadata:grades:finalgrade'] = 'Detta betyg';
 $string['privacy:metadata:grades:information'] = 'Ytterligare information om betyget';
 $string['privacy:metadata:grades:timemodified'] = 'Tidpunkt då betyget senast ändrades';
+$string['privacy:metadata:grades:userid'] = 'ID:t för den användare vars resultat det är';
+$string['privacy:metadata:grades:usermodified'] = 'ID:t för den användare som senast ändrade posten';
 $string['privacy:metadata:gradeshistory'] = 'En post med tidigare betyg';
+$string['privacy:metadata:history:loggeduser'] = 'ID:t för den användare som loggades in när versionshanteringen inträffade';
+$string['privacy:metadata:history:timemodified'] = 'Den tidpunkt då versionshanteringen av betyget inträffade';
+$string['privacy:metadata:itemshistory'] = 'En post med tidigare versioner av betygsobjekt';
 $string['privacy:metadata:outcomes'] = 'En post med resultat';
+$string['privacy:metadata:outcomes:timemodified'] = 'Den tidpunkt då posten ändrades';
+$string['privacy:metadata:outcomes:usermodified'] = 'Användaren som senast ändrade posten';
+$string['privacy:metadata:outcomeshistory'] = 'En post över tidigare versioner av resultat';
 $string['privacy:metadata:scale'] = 'En post med skalor';
+$string['privacy:metadata:scale:timemodified'] = 'Den tidpunkt då posten ändrades senast';
+$string['privacy:metadata:scale:userid'] = 'Användaren som senast ändrade posten';
+$string['privacy:metadata:scalehistory'] = 'En post över tidigare versioner av skalor';
 $string['privacy:path:relatedtome'] = 'Relaterat till mig';
 $string['privacy:request:historyactiondelete'] = 'Ta bort';
 $string['privacy:request:historyactioninsert'] = 'Infoga';
@@ -605,14 +701,14 @@ $string['publishingoptions'] = 'Publiceringsalternativ';
 $string['quickfeedback'] = 'Snabb återkoppling';
 $string['quickgrading'] = 'Snabb betygssättning';
 $string['quickgrading_help'] = 'Snabb Betygssättning lägger till en inmatningsbar textkomponent i varje betygsruta i betygsrapporten så att Du ska kunna redigera många betyg på samma gång. Du kan sedan klicka på knappen \'Uppdatera\' för att genomföra alla dessa ändringar samtidigt istället för en i taget.';
-$string['range'] = 'Omfång';
+$string['range'] = 'Intervall';
 $string['rangedecimals'] = 'Antal decimaler i intervall';
 $string['rangedecimals_help'] = 'Antalet decimaler att visa för intervallet.';
 $string['rangesdecimalpoints'] = 'Decimaler som visas i intervall';
 $string['rangesdecimalpoints_help'] = 'Den här inställningen bestämmer antalet decimaler som ska visas för varje intervall eller om den övergripande decimalinställningen för kategori eller betygsposten används (ärv).';
 $string['rangesdisplaytype'] = 'Visningstyp för intervall';
 $string['rangesdisplaytype_help'] = 'Den här inställningen avgör om intervallet visas som verkliga betyg, procenttal, bokstäver eller om visningstypen för kategori- eller betygsobjekten används (ärv).';
-$string['rank'] = 'Ranking';
+$string['rank'] = 'Rankning';
 $string['rawpct'] = 'Rå %';
 $string['real'] = 'Reell';
 $string['realletter'] = 'Real (bokstav)';
@@ -630,7 +726,7 @@ $string['report'] = 'Rapport';
 $string['reportdefault'] = 'Rapportera standard ({$a})';
 $string['reportplugins'] = 'Pluginmoduler för rapport';
 $string['reportsettings'] = 'Rapportinställningar';
-$string['reprintheaders'] = 'Skriv rubrikerna igen';
+$string['reprintheaders'] = 'Skriv ut rubrikerna igen';
 $string['resetweights'] = 'Återställ viktningar för {$a->itemname}';
 $string['resetweightsshort'] = 'Återställ viktningar';
 $string['respectingcurrentdata'] = 'den aktuella konfigurationen oförändrad';
@@ -666,18 +762,19 @@ $string['showanalysisicon'] = 'Visa betygsanalysikonen';
 $string['showanalysisicon_desc'] = 'Om betygsanalysikonen ska visas som standard. Om aktivitetsmodulen stödjer det länkar ikonen för betygsanalys till en sida med en mer detaljerad förklaring av betyget och hur det erhölls.';
 $string['showanalysisicon_help'] = 'Om aktivitetsmodulen stödjer det länkar analysikonen till en sida med mer detaljerad förklaring av betyget samt hur det erhölls.';
 $string['showaverage'] = 'Visa medel';
-$string['showaverage_help'] = 'Visa medelkolumn? Elever kan kanske uppskatta andra elevers betyg om medelbetyget beräknas av ett litet antal betyg. Av prestandaskäl är medelbetyget ungefärligt om det beror på några dolda delabetyg.';
+$string['showaverage_help'] = 'Om kolumnen med genomsnittsbetyg ska visas. Observera att deltagarna kanske kan härleda andras betyg om genomsnittet beräknas utifrån ett litet antal resultat. Av prestandaskäl är medelvärdet ungefärligt om det är beroende av dolda objekt.';
 $string['showaverages'] = 'Visa medel för kolumner';
 $string['showaverages_help'] = 'Visa medelvärdena för kolumner i betygsrapporten.';
 $string['showcalculations'] = 'Visa beräkningar';
 $string['showcalculations_help'] = 'Om aktiverad visas vid redigering en kalkylatorikon för varje betygsobjekt och kategori tillsammans med en visuell indikation på att betygsobjektet är beräknat.';
 $string['showcontributiontocoursetotal'] = 'Visa bidrag till kurstotalen';
+$string['showcontributiontocoursetotal_help'] = 'Om en kolumn med procentsatser ska visas som anger hur mycket varje betygsobjekt bidrar till användarens kurstotal-procent (efter att viktningen har tillämpats).';
 $string['showeyecons'] = 'Visa \'visa/dölj\'-ikoner';
 $string['showeyecons_help'] = 'Detta avgör huruvida en ikon för visa/dölj ska visas bredvid varje betyg (vilket styr huruvida betyget ska vara synligt för användaren eller inte).';
 $string['showfeedback'] = 'Visa återkoppling';
-$string['showfeedback_help'] = 'Visa kolumnen för återkoppling?';
+$string['showfeedback_help'] = 'Ska kolumnen med återkoppling visas?';
 $string['showgrade'] = 'Visa betyg';
-$string['showgrade_help'] = 'Ska betygskolumn visas?';
+$string['showgrade_help'] = 'Ska betygskolumnen visas?';
 $string['showgroups'] = 'Visa grupper';
 $string['showhiddenitems'] = 'Visa dolda element';
 $string['showhiddenitems_help'] = 'Huruvida dolda betygsobjekt döljs helt eller om namnen på dolda betygsobjekt är synliga för deltagarna.
@@ -700,7 +797,7 @@ $string['shownumberofgrades_help'] = 'Om aktiverad visas antalet betyg som anvä
 $string['showonlyactiveenrol'] = 'Visa endast aktiva registreringar';
 $string['showonlyactiveenrol_help'] = 'Den här inställningen avgör om endast aktiva registrerade användare kommer att vara synliga i betygsboksrapporten. Om aktiverad visas inga avstängda användare i betygsboken.';
 $string['showpercentage'] = 'Visa procent';
-$string['showpercentage_help'] = 'Visa procentvärdet för varje betygsdel?';
+$string['showpercentage_help'] = 'Visa procentvärdet för varje betygsobjekt?';
 $string['showquickfeedback'] = 'Visa snabb återkoppling';
 $string['showquickfeedback_help'] = 'Om aktiverad visas en inmatningsruta för återkoppling med en prickad kantlinje för varje resultat när redigeringen är aktiverad. Detta gör att återkopplingen för flera betyg kan göras samtidigt. Ändringar sparas och markeras när uppdateringsknappen klickas.
 
@@ -715,7 +812,7 @@ $string['showuserimage'] = 'Visa bilderna från användarnas profiler';
 $string['showuserimage_help'] = 'Detta avgör huruvida användarnas bilder ska visas bredvid namnet i betygsrapporten.';
 $string['showverbose'] = 'Visa {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['showweight'] = 'Visa viktningar';
-$string['showweight_help'] = 'Ska betygsviktningskolumnen visas?';
+$string['showweight_help'] = 'Om en kolumn ska visas för betygsvikten.';
 $string['simpleview'] = 'Enskild vy';
 $string['singleview'] = 'Enskild vy för {$a}';
 $string['sitewide'] = 'Webbplatsövergripande';
@@ -730,9 +827,11 @@ $string['statslink'] = 'Stats';
 $string['student'] = 'Student';
 $string['studentsperpage'] = 'Studenter per sida';
 $string['studentsperpage_help'] = 'Antalet studenter som ska visas på varje sida i betygsrapporten.';
+$string['studentsperpagereduced'] = 'Minskade antalet deltagare per sida från {$a->originalstudentsperpage} till {$a->studentsperpage}. Överväg att öka PHP-max_input_vars från {$a->maxinputvars}.';
 $string['subcategory'] = 'Normal kategori';
 $string['submissions'] = 'Inskickningar';
 $string['submittedon'] = 'Inskickad: {$a}';
+$string['sumofgradesupgradedgrades'] = 'OBS! Aggregeringsmetoden "Summan av betyg" har ändrats till "Naturlig" som en del av en webbplatsuppgradering. Eftersom "Summan av resultat" tidigare användes i den här kursen rekommenderar vi att du granskar den här ändringen i betygsboken.';
 $string['switchtofullview'] = 'Växla till fullständig vy';
 $string['switchtosimpleview'] = 'Växla till enkel vy';
 $string['tabs'] = 'Flikar';
@@ -751,7 +850,7 @@ $string['uncategorised'] = 'Okategoriserade';
 $string['unchangedgrade'] = 'Betyget har inte ändrats';
 $string['unenrolledusersinimport'] = 'Den här importen tar med de följande betygen för användare som f.n. inte är registrerade på den här kursen: {$a}';
 $string['unlimitedgrades'] = 'Obegränsade betyg';
-$string['unlimitedgrades_help'] = 'Som förval begränsas betyg av maxvärdet och minvärdet för betygsdelen. Aktivering av denna inställning tar bor denna begränsning och tillåter betyg över 100% att sättas direkt i betygsboken. Det rekomenderas att denna inställning aktiveras vid en lågbelastningstidpunkt eftersom alla betyg kommer att räknas om vilket kan resultera i hög serverbelastning.';
+$string['unlimitedgrades_help'] = 'Som standard begränsas betyg av de högsta och lägsta värdena för betygsobjektet. Om du aktiverar den här inställningen tas den här gränsen bort och resultat på över 100% kan anges direkt i betygsboken.';
 $string['unlock'] = 'Lås upp';
 $string['unlockverbose'] = 'Lås upp {$a->category} {$a->itemmodule} {$a->itemname}';
 $string['unused'] = 'Ej använd';
@@ -768,16 +867,22 @@ $string['usepercent'] = 'Använd procent';
 $string['user'] = 'Användare';
 $string['userenrolmentsuspended'] = 'Användarregistrering avstängd';
 $string['userfields_show'] = 'Visa användarfält';
+$string['userfields_show_help'] = 'Visa ytterligare användarfält, som t.ex. e-postadress i bedömarrapporten. De specifika fält som visas styrs av webbplatsinställningen <em>Visa användarens identitet</em> under <em>Administration / Användare / Behörigheter / Användarprinciper</em>';
 $string['usergrade'] = 'Användare {$a->fullname} ({$a->useridnumber}) på komponent {$a->gradeidnumber}';
 $string['userid'] = 'Användar-ID';
+$string['useridnumberwarning'] = 'Användare utan ID-nummer undantas från exporten eftersom de inte kan importeras';
+$string['usermappingerror'] = 'Fel vid användarmappning: Det gick inte att hitta användaren med värdet "{$a->value}" för fältet "{$a->field}"';
 $string['usermappingerrorcurrentgroup'] = 'Användare är inte medlem i aktuell grupp.';
 $string['usermappingerrormultipleusersfound'] = 'Fel vid användarmappning: Flera användare hittades med {$a->field} med "{$a->value}". Använd ett mer unikt mappningsfält.';
+$string['usermappingerrorusernotfound'] = 'Fel vid användarmappning. Hittade inte användaren.';
 $string['userpreferences'] = 'Användarinställningar';
 $string['useweighted'] = 'Använd viktat';
 $string['verbosescales'] = 'Detaljerade skalor';
+$string['verbosescales_help'] = 'En utförlig skala använder ord i stället för siffror. Ställ in på \'Ja\' om både numeriska och utförliga skalor ska importeras. Ställ in på \'Nej\' om endast numeriska skalor ska importeras.';
 $string['viewbygroup'] = 'Grupp';
 $string['viewgrades'] = 'Visa betyg';
-$string['weight'] = 'vikt';
+$string['weight'] = 'Vikt';
+$string['weight_help'] = 'Ett värde som används för att bestämma det relativa värdet för flera betygsobjekt i en kategori eller kurs.';
 $string['weightcourse'] = 'Använd viktade betyg för kurs';
 $string['weightedascending'] = 'Sortera stigande viktad procent';
 $string['weighteddescending'] = 'Sortera efter fallande viktad procent';
@@ -786,7 +891,10 @@ $string['weightedpctcontribution'] = 'viktat  %  bidrag';
 $string['weightofa'] = 'Viktning för {$a}';
 $string['weightorextracredit'] = 'Viktning eller extra tillägg';
 $string['weightoverride'] = 'viktjustering';
+$string['weightoverride_help'] = 'Avmarkera detta om du vill återställa vikten för betygsobjektet till dess automatiskt beräknade värde. Om du markerar detta kan vikten inte justeras automatiskt.';
 $string['weights'] = 'Viktningar';
+$string['weightsadjusted'] = 'Dina vikter har justerats till totalt 100.';
+$string['weightsedit'] = 'Redigera vikter och extrapoäng';
 $string['weightuc'] = 'Beräknad viktning';
 $string['writinggradebookinfo'] = 'Sparar betygsboksinställningar';
 $string['xml'] = 'XML';

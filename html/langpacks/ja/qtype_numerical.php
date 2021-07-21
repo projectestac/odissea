@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'ja', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'ja', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -68,7 +68,14 @@ $string['pluginname_help'] = '数値問題は学生からは記述問題のよ�
 $string['pluginnameadding'] = '数値問題の追加';
 $string['pluginnameediting'] = '数値問題の編集';
 $string['pluginnamesummary'] = '単位を使って数値で解答することができます。また、さまざまな解答モデルに対して許容範囲を設定して評定することができます。';
-$string['privacy:metadata'] = '数字問題タイププラグインはいかなる個人データも保存しません。';
+$string['privacy:metadata'] = '数字問題タイププラグインは問題作成者がユーザプリファレンスとしてデフォルトオプションを設定できます。';
+$string['privacy:preference:defaultmark'] = '指定された問題に設定されるデフォルトの評点です。';
+$string['privacy:preference:multichoicedisplay'] = '単位をテキスト入力要素として表示するか、複数選択肢から選択するか、ドロップダウンメニューとして表示するか指定します。';
+$string['privacy:preference:penalty'] = '問題が「複数回受験インタラクティブ」または「アダプティブモード」で出題された場合のそれぞれの不正解のペナルティです。';
+$string['privacy:preference:unitgradingtypes'] = '単位ペナルティが解答評点または問題評点の端数 (0-1) として適用されるかどうか指定します。';
+$string['privacy:preference:unitpenalty'] = '解答評点または問題評点の何分の1 (0-1) を適用しますか?';
+$string['privacy:preference:unitrole'] = '単位が必須なのか、オプションなのか、それとも期待されていないのか指定します。';
+$string['privacy:preference:unitsleft'] = '単位を左に表示するか (例: $、£)、右に表示するか (例: kg、km、cm) 指定します。';
 $string['relative'] = '相対';
 $string['rightexample'] = '1.00cmまたは1.00kmのように右側';
 $string['selectunit'] = '単位を選択してください。';

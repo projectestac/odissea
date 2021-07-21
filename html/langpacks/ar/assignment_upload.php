@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assignment_upload', language 'ar', version '3.8'.
+ * Strings for component 'assignment_upload', language 'ar', version '3.11'.
  *
  * @package     assignment_upload
  * @category    string
@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_submitted'] = 'تسليم مرفوع تمَّ تقديمه';
 $string['event_assessable_uploaded'] = 'ملف تم رفعه';
-$string['pluginname'] = 'تحميل';
-$string['privacy:metadata'] = 'لا يخزن المكون الإضافي  Upload assignment أيّ بيانات شخصية.';
+$string['pluginname'] = 'الرفع';
+$string['privacy:metadata'] = 'إن ملحق رفع الواجب لا يخزن أي بيانات شخصية.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'url', language 'ru', version '3.8'.
+ * Strings for component 'url', language 'ru', version '3.11'.
  *
  * @package     url
  * @category    string
@@ -47,8 +47,10 @@ $string['displayselect_help'] = 'Этот параметр (наряду с ти
 $string['displayselectexplain'] = 'Выберите тип отображения. К сожалению, не все типы подходят для всех видов гиперссылок.';
 $string['externalurl'] = 'Адрес (URL)';
 $string['framesize'] = 'Высота фрейма';
-$string['indicator:cognitivedepth'] = 'Ссылка: познавательный аспект';
-$string['indicator:cognitivedepth_help'] = 'Этот показатель основан на глубине познания, достигнутой студентом при работе с ресурсом Ссылка.';
+$string['indicator:cognitivedepth'] = 'Гиперссылка: познавательный аспект';
+$string['indicator:cognitivedepth_help'] = 'Этот показатель основан на глубине познания, достигнутой студентом при работе с ресурсом Гиперссылка.';
+$string['indicator:cognitivedepthdef'] = 'Гиперссылка: познавательный аспект';
+$string['indicator:cognitivedepthdef_help'] = 'Участник достиг этого процента познавательного взаимодействия, предлагаемого ресурсом «Гиперссылка» в течение этого интервала анализа (Уровни = Нет просмотра, Просмотр)';
 $string['indicator:socialbreadth'] = 'Гиперссылка: социальный аспект';
 $string['indicator:socialbreadth_help'] = 'Этот показатель основан на широте общения, которая может быть достигнута студентом при работе с ресурсом Гиперссылка.';
 $string['indicator:socialbreadthdef'] = 'Гиперссылка: социальный аспект';
@@ -66,8 +68,8 @@ $string['modulename_help'] = 'Модуль «Гиперссылка» позво
 $string['modulenameplural'] = 'Гиперссылки';
 $string['page-mod-url-x'] = 'Любая страница модуля «гиперссылка»';
 $string['parameterinfo'] = '&amp;параметр=переменная';
-$string['parametersheader'] = 'Параметры';
-$string['parametersheader_help'] = 'К адресу можно автоматически добавить в качестве параметров значения некоторых внутренних переменных Moodle. Введите в текстовые поля названия для параметров, а затем выберите соответствующие переменные.';
+$string['parametersheader'] = 'Переменные URL-адреса';
+$string['parametersheader_help'] = 'Этот раздел позволяет передавать внутреннюю информацию как часть URL-адреса. Это полезно, если URL-адрес представляет собой интерактивную веб-страницу, которая принимает параметры, и вы хотите передать, например, что-то вроде имени текущего пользователя. Введите имя параметра URL-адреса в текстовое поле, затем выберите соответствующую переменную сайта.';
 $string['pluginadministration'] = 'Управление гиперссылкой';
 $string['pluginname'] = 'Гиперссылка';
 $string['popupheight'] = 'Высота всплывающего окна (в пикселях)';
@@ -76,6 +78,7 @@ $string['popupwidth'] = 'Ширина всплывающего окна (в пи
 $string['popupwidthexplain'] = 'Заданная по умолчанию ширина всплывающего окна.';
 $string['printintro'] = 'Отображать описание гиперссылки';
 $string['printintroexplain'] = 'Выводить описание гиперссылки после содержимого? При некоторых настройках отображения описание гиперссылки не будет отображаться, даже если этот параметр включен.';
+$string['privacy:metadata'] = 'Плагин Ресурс «Гиперссылка» не хранит никаких личных данных.';
 $string['rolesinparams'] = 'Включить названия ролей в параметры';
 $string['search:activity'] = 'Гиперссылка';
 $string['serverurl'] = 'Гиперссылка на этот сайт';

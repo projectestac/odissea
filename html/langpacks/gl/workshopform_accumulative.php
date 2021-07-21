@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopform_accumulative', language 'gl', version '3.8'.
+ * Strings for component 'workshopform_accumulative', language 'gl', version '3.11'.
  *
  * @package     workshopform_accumulative
  * @category    string
@@ -31,7 +31,7 @@ $string['correct'] = 'Correcto';
 $string['dimensioncommentfor'] = 'Comentario para {$a}';
 $string['dimensiondescription'] = 'Descrición';
 $string['dimensiongradefor'] = 'Cualificación para {$a}';
-$string['dimensionmaxgrade'] = 'Mellor cualificación posíbel / Escala a utilizar';
+$string['dimensionmaxgrade'] = 'Mellor cualificación posíbel / escala a utilizar';
 $string['dimensionnumber'] = 'Aspecto {$a}';
 $string['dimensionweight'] = 'Ponderación';
 $string['excellent'] = 'Excelente';
@@ -41,7 +41,7 @@ $string['mustchoosegrade'] = 'Ten que seleccionar unha cualificación para este 
 $string['pluginname'] = 'Cualificación acumulativa';
 $string['poor'] = 'Pobre';
 $string['present'] = 'Presente';
-$string['privacy:metadata'] = 'O engadido de cualificación acumulativa só almacena os detalles do formulario de avaliación. Os datos persoais reais de como se encheu o formulario almacénanse no propio módulo Workshop (Obradoiro), e engádense ás avaliacións exportadas.';
+$string['privacy:metadata'] = 'O engadido de Cualificación acumulativa só almacena os detalles do formulario de avaliación. O propio módulo de Obradoiro almacena os datos persoais auténticos do cumprimento do formulario e están anexados ás avaliacións exportadas.';
 $string['scalename0'] = 'Si/Non (2 puntos)';
 $string['scalename1'] = 'Presente/Ausente (2 puntos)';
 $string['scalename2'] = 'Correcto/Incorrecto (2 puntos)';

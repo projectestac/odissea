@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'course', language 'nl', version '3.8'.
+ * Strings for component 'course', language 'nl', version '3.11'.
  *
  * @package     course
  * @category    string
@@ -25,11 +25,42 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitychooseractivefooter'] = 'Voettekst voor activiteitkiezer';
+$string['activitychooseractivefooter_desc'] = 'De activiteitenkiezer kan plug-ins ondersteunen die items aan de voettekst toevoegen.';
+$string['activitychoosercategory'] = 'Activiteitenkiezer';
+$string['activitychooserhidefooter'] = 'Geen voettekst';
+$string['activitychooserrecommendations'] = 'Aanbevolen activiteiten';
+$string['activitychoosersettings'] = 'Instellingen activiteitenkiezer';
+$string['activitychoosertabmode'] = 'Tabs activiteitenkiezer';
+$string['activitychoosertabmode_desc'] = 'Met de activiteitenkiezer kunnen leraren makkelijk activiteiten en bronnen kiezen om toe te voegen aan hun cursus. Deze instelling bepaalt welke tabs er moeten in getoond worden. Merk op dat de favorieten-tab enkel getoond wordt voor een gebruiker die één of meer activiteiten als favoriet aangeduid heeft en dat de aanbevolen-tab enkel getoond wordt als de site-beheerder enkele specifieke activiteiten aanbevolen heeft.';
+$string['activitychoosertabmodeone'] = 'Favorieten, alle, activiteiten, bronnen, aanbevolen';
+$string['activitychoosertabmodethree'] = 'Favorieten, activiteiten, bronnen, aanbevolen';
+$string['activitychoosertabmodetwo'] = 'Favorieten, alle, aanbevolen';
+$string['activitydate:closed'] = 'Gesloten:';
+$string['activitydate:closes'] = 'Sluit:';
+$string['activitydate:opened'] = 'Geopend:';
+$string['activitydate:opens'] = 'Opent:';
 $string['aria:coursecategory'] = 'Cursuscategorie';
 $string['aria:courseimage'] = 'Cursusafbeelding';
 $string['aria:coursename'] = 'Cursusnaam';
 $string['aria:courseshortname'] = 'Cursus korte naam';
+$string['aria:defaulttab'] = 'Standaardactiviteiten';
 $string['aria:favourite'] = 'Cursus heeft ster';
+$string['aria:favouritestab'] = 'Activiteiten met ster';
+$string['aria:modulefavourite'] = 'Ster activiteit {$a}';
+$string['aria:recommendedtab'] = 'Aanbevolen activiteiten';
+$string['completion_automatic:done'] = 'Voltooid:';
+$string['completion_automatic:failed'] = 'Mislukt:';
+$string['completion_automatic:todo'] = 'Nog te doen:';
+$string['completion_manual:aria:done'] = '{$a} is als voltooid aangeduid. Klik om ongedaan te maken.';
+$string['completion_manual:aria:markdone'] = '{$a} als voltooid aanduiden';
+$string['completion_manual:done'] = 'Voltooid';
+$string['completion_manual:markdone'] = 'Als voltooid aanduiden';
+$string['completion_setby:auto:done'] = 'Klaar: {$a->condition}(ingesteld door {$a->setby})';
+$string['completion_setby:auto:todo'] = 'To-do: {$a->condition} (ingesteld door {$a->setby})';
+$string['completion_setby:manual:done'] = '{$a->activityname} is door {$a->setby} als voltooid aangeduid. Klik om ongedaan te maken.';
+$string['completion_setby:manual:markdone'] = '{$a->activityname} is door {$a->setby} als niet voltooid aangeduid. Klik om als voltooid aan te duiden.';
+$string['completionrequirements'] = 'Voltooiingsvoorwaarden voor {$a}';
 $string['coursealreadyfinished'] = 'Cursus reeds geëindigd';
 $string['coursenotyetfinished'] = 'De cursus is nog niet geëindigd';
 $string['coursenotyetstarted'] = 'De cursus is nog niet begonnen';
@@ -42,31 +73,41 @@ $string['customfield_visibility_help'] = 'Deze instelling bepaalt wie de aangepa
 $string['customfield_visibletoall'] = 'Iedereen';
 $string['customfield_visibletoteachers'] = 'Leraren';
 $string['customfieldsettings'] = 'Gemeenschappelijke cursusinstellingen voor aangepaste velden';
+$string['downloadcourseconfirmation'] = 'Je gaat een zip-bestand met de cursusinhoud downloaden (zonder items die niet kunnen gedownload worden en bestanden groter dan {$a}).';
+$string['downloadcoursecontent'] = 'Download cursusinhoud';
+$string['downloadcoursecontent_help'] = 'Deze instelling bepaalt of cursusinhoud gedownload mag worden door gebruikers met de download cursus-mogelijkheid (standaard gebruikers met de leerling of leraar rol).';
+$string['enabledownloadcoursecontent'] = 'Cursusinhoud downloaden inschakelen';
 $string['errorendbeforestart'] = 'De einddatum ({$a}) is vóór de startdatum van de cursus.';
 $string['favourite'] = 'Favoriete cursus';
 $string['gradetopassnotset'] = 'Deze cursus heeft geen cijfer om te slagen ingesteld. Het kan worden ingesteld in het cijfer van de cursus (cijferlijst-instelling).';
+$string['informationformodule'] = 'Informatie over de activiteit {$a}';
+$string['module'] = 'Activiteit';
 $string['noaccesssincestartinfomessage'] = 'Hallo {$a->userfirstname},
-
-<br /> <br />Een aantal leerlingen van {$a->coursename} hebben de cursus nog nooit bezocht.';
+<p>Een aantal leerlingen van {$a->coursename} hebben de cursus nog nooit bezocht.</p>';
 $string['nocourseactivity'] = 'Niet genoeg cursusactiviteit tussen het begin en het einde van de cursus';
 $string['nocourseendtime'] = 'De cursus heeft geen eindtijd';
 $string['nocoursesections'] = 'Geen cursussecties';
 $string['nocoursestudents'] = 'Geen leerlingen';
 $string['norecentaccessesinfomessage'] = 'Hallo {$a->userfirstname},
-
-</br><br/>Een aantal leerlingen van {$a->coursename} hebben de cursus al een hele tijd niet meer bezocht.';
+<p>Een aantal leerlingen van {$a->coursename} hebben de cursus al een hele tijd niet meer bezocht.</p>';
 $string['noteachinginfomessage'] = 'Hallo {$a->userfirstname},
-
-</br><br/> Van cursussen met startdata in de volgende week is vastgesteld dat ze geen leraren- of studenteninschrijvingen hebben.';
+<p>Van cursussen met startdata in de volgende week is vastgesteld dat ze geen leraren- of leerlingen hebben.</p>';
 $string['privacy:completionpath'] = 'Cursusvoltooiing';
 $string['privacy:favouritespath'] = 'Informatie over cursus met ster';
+$string['privacy:metadata:activityfavouritessummary'] = 'Het cursussysteem bevat informatie over welke items van de activiteitenkiezer door de gebruiker zijn gemarkeerd met een ster.';
 $string['privacy:metadata:completionsummary'] = 'De cursus bevat voltooiingsinformatie over de gebruiker.';
 $string['privacy:metadata:favouritessummary'] = 'De cursus bevat informatie die verband houdt met het plaatsen van een ster door de gebruiker.';
 $string['privacy:perpage'] = 'Het aantal te tonen cursussen per pagina.';
+$string['recommend'] = 'Adviseren';
+$string['recommendcheckbox'] = 'Aanbevolen activiteit: {$a}';
+$string['relativedatessubmissionduedateafter'] = '{$a->dateiffstr} na het begin van de cursus';
+$string['relativedatessubmissionduedatebefore'] = '{$a->dateiffstr} voor het begin van de cursus';
+$string['searchactivitiesbyname'] = 'Zoek naar activiteiten op naam';
+$string['searchresults'] = 'Zoekresultaten: {$a}';
 $string['studentsatriskincourse'] = 'Leerlingen lopen risico in {$a} cursus';
 $string['studentsatriskinfomessage'] = 'Hallo {$a->userfirstname},
-
-</br><br/> Studenten van de cursus {$a->coursename} zijn geïdentificeerd als zijnde een risico.';
+<p>Leerlingen van de cursus {$a->coursename} hebben een risico van uitvallen of niet slagen.</p>';
+$string['submitsearch'] = 'Zoekopdracht indienen';
 $string['target:coursecompetencies'] = 'Leerlingen die het risico lopen niet de competenties te behalen die aan een cursus zijn toegewezen';
 $string['target:coursecompetencies_help'] = 'Dit doel beschrijft of een leerling het risico loopt de competenties die aan een cursus zijn toegewezen niet te behalen. Dit doel gaat er van uit dat alle competenties die aan de cursus zijn toegewezen, aan het einde van de cursus moeten zijn behaald.';
 $string['target:coursecompletion'] = 'Leerlingen lopen het risico niet te voldoen aan de voorwaarden voor het voltooien van de cursus';

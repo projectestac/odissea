@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ar', version '3.8'.
+ * Strings for component 'hvp', language 'ar', version '3.11'.
  *
  * @package     hvp
  * @category    string
@@ -27,10 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['additionalinfo'] = 'معلومات إضافية';
 $string['additionallicenseinfo'] = 'أي معلومات إضافية عن الرخصة';
+$string['back'] = 'رجوع';
 $string['ccpdd'] = 'توجه المجال العام (CC0)';
 $string['ccpdm'] = 'علامة المجال العام (PDM)';
 $string['changedescription'] = 'وصف التغيير';
 $string['contentchanged'] = 'لقد تغير هذا المحتوى منذ آخر استعمالك له.';
+$string['contenthub:nopermissions'] = 'ليست لديك صلاحية تسجيل الموقع في مركز المحتوى.';
 $string['contentstatefrequency'] = 'معدل تكرار حفظ حالة المحتوى';
 $string['copyright'] = 'حقوق الاستعمال';
 $string['copyrightinfo'] = 'معلومات الحقوق الفكرية';
@@ -39,11 +41,17 @@ $string['copyrighttitle'] = 'معاينة معلومات الحقوق الفكر
 $string['ctcachebuttonlabel'] = 'تحديث خبء نوع المحتوى';
 $string['ctcachenolibraries'] = 'لم يتم تلقي أي أنواع محتوى من مركز H5P. يرجى المحاولة لاحقاً.';
 $string['ctcachetaskname'] = 'تحديث خبء نوع المحتوى';
+$string['currentpage'] = 'الصفحة $current من $total';
 $string['dataviewreportlabel'] = 'معاينة الإجابات';
+$string['displayoptiondownloadpermission'] = 'فقط إذا كانت للمستخدم صلاحيات تصدير H5P';
+$string['displayoptionpermissions'] = 'الإظهار فقط إذا كانت للمستخدم صلاحيات تصدير H5P';
+$string['displayoptionpermissionsembed'] = 'الإظهار فقط إذا كانت للمستخدم صلاحيات تضمين H5P';
 $string['downloadtitle'] = 'تنزيل هذا المحتوى بشكل ملف H5P.';
+$string['editinfotitle'] = 'تحرير معلومات <strong>:title</strong>';
 $string['embedtitle'] = 'معاينة الترميز البرمجي المضمن لهذا المحتوى.';
 $string['enablecopyright'] = 'زر الحقوق الفكرية';
 $string['enablesavecontentstate'] = 'حفظ حالة المحتوى';
+$string['gradetopassmustbeset'] = 'درجة النجاح لا يمكن أن تكون صفراً نظراً لأن نشاط H5P هذا يتضمن شرطاً لإكماله بالحصول على درجة النجاح. لطفاً، ضع قيمة لا صفرية.';
 $string['hvp:restrictlibraries'] = 'تقييد الوصول إلى بعض أنواع محتوى H5P';
 $string['hvp:updatelibraries'] = 'تنصيب أنواع محتوى H5P جديدة أو تحديث ما موجود منها';
 $string['hvp:userestrictedlibraries'] = 'استعمل أنواع محتوى H5P التي تم تقييد الوصول إليها';
@@ -53,29 +61,45 @@ $string['invalidlibrarynamed'] = 'مكتبة H5P {$a->%library} المستعمل
 $string['invalidmainjson'] = 'يفتقد ملف h5p.json رئيسي صالح';
 $string['librarylisttitle'] = 'العنوان';
 $string['librarynotselected'] = 'ينبغي عليك اختيار نوع المحتوى.';
+$string['maintitle'] = 'مشاركة <strong>:title</strong>';
 $string['maxscore'] = 'الدرجة القصوى';
 $string['missingcontentfolder'] = 'المجلد الصحيح للمحتوى مفقود';
 $string['missingcontentuserdata'] = 'خطأ: تعذر العثور على بيانات مستخدم المحتوى';
 $string['modulename'] = 'محتوى تفاعلي';
 $string['modulenameplural'] = 'محتوى تفاعلي';
+$string['nextpage'] = 'الصفحة التالية';
 $string['nocontent'] = 'تعذر العثور على ملف content.json أو تحليله';
 $string['nocontenttype'] = 'لم يتم تحديد نوع المحتوى.';
 $string['nocopyright'] = 'لا توجد معلومات الحقوق الفكرية لهذا المحتوى.';
 $string['noh5ps'] = 'لا يوجد هناك محتوى تفاعلي في هذا المقرر الدراسي.';
 $string['nojson'] = 'ملف h5p.json الرئيسي غير صالح';
 $string['noparse'] = 'تعذر تحليل ملف h5p.json الرئيسي';
+$string['nopermissiontogettranslations'] = 'ليست لديك صلاحية استرجاع الترجمات';
+$string['nopermissiontorestrict'] = 'ليست لديك صلاحية تقييد المكتبات.';
 $string['nopermissiontosavecontentuserdata'] = 'ليست لديك صلاحية حفظ بيانات مستخدم المحتوى.';
 $string['nopermissiontosaveresult'] = 'ليست لديك صلاحية حفظ النتائج لهذا المحتوى.';
+$string['nopermissiontoupgrade'] = 'ليست لديك صلاحية ترقية المكتبات.';
 $string['nopermissiontouploadcontent'] = 'ليست لديك صلاحية رفع المحتوى هنا.';
+$string['nopermissiontouploadfiles'] = 'ليست لديك صلاحية رفع الملفات هنا.';
+$string['nopermissiontoviewcontenthubcache'] = 'ليست لديك صلاحية معاينة البيانات الوصفية لمركز المحتوى.';
 $string['nopermissiontoviewcontenttypes'] = 'ليست لديك صلاحية معاينة أنواع المحتوى.';
 $string['nopermissiontoviewresult'] = 'ليست لديك صلاحية معاينة نتائج هذا المحتوى.';
 $string['noziparchive'] = 'إصدار PHP عندك لا يدعم ZipArchive.';
 $string['pd'] = 'المجال العام';
 $string['pddl'] = 'توجه المجال العام ورخصته';
 $string['pdm'] = 'علامة المجال العام';
+$string['previouspage'] = 'الصفحة السابقة';
 $string['privacy:metadata:core_files'] = 'يخزن نشاط H5P الملفات التي تم رفعها كجزء من محتوى H5P';
 $string['privacy:metadata:core_grades'] = 'يخزن نشاط H5P علامات المستخدمين الذين أجابوا على محتوى H5P';
+$string['privacy:metadata:hvp_events'] = 'يتتبع أحداث H5P';
 $string['privacy:metadata:hvp_events:content_title'] = 'عنوان المحتوى';
+$string['privacy:metadata:hvp_events:created_at'] = 'وقت إنشاء الحدث';
+$string['privacy:metadata:hvp_events:id'] = 'المُعرَّف الفريد للحدث';
+$string['privacy:metadata:hvp_events:library_name'] = 'المكتبة التي أثَّر فيها الحدث';
+$string['privacy:metadata:hvp_events:library_version'] = 'إصدار المكتبة التي أثَّر فيها الحدث';
+$string['privacy:metadata:hvp_events:sub_type'] = 'النوع الفرعي للحدث أو الإجراء العائد للحدث';
+$string['privacy:metadata:hvp_events:type'] = 'نوع الحدث';
+$string['privacy:metadata:hvp_events:user_id'] = 'مُعرَّف المستخدم الذي أجرى الحدث';
 $string['privacy:metadata:hvp_xapi_results:additionals'] = 'معلومات إضافية يمكن إرسال H5P فيها.';
 $string['privacy:metadata:hvp_xapi_results:correct_responses_pattern'] = 'نمط الإجابة الصحيحة';
 $string['privacy:metadata:hvp_xapi_results:description'] = 'وصف المحتوى، أو مهمته أو سؤاله الذي تم تنفيذ ذلك الإجراء عليه';

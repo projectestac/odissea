@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_tag_youtube', language 'sv', version '3.8'.
+ * Strings for component 'block_tag_youtube', language 'sv', version '3.11'.
  *
  * @package     block_tag_youtube
  * @category    string
@@ -31,6 +31,7 @@ $string['apikey'] = 'API-nyckel';
 $string['apikeyinfo'] = 'Hämta en <a href="https://developers.google.com/youtube/v3/getting-started">Google API-nyckel</a> för din Moodle-webbplats.';
 $string['autosvehicles'] = 'Bilar & Fordon';
 $string['category'] = 'Kategori';
+$string['categoryerror'] = 'Kunde inte hämta kategorilistor.<br> {$a}';
 $string['comedy'] = 'Komedi';
 $string['configtitle'] = 'Titel';
 $string['education'] = 'Utbildning';
@@ -41,14 +42,15 @@ $string['howtodiy'] = 'Hur gör man & Gör det själv';
 $string['includeonlyvideosfromplaylist'] = 'Ta bara med videor med id från spellistan';
 $string['music'] = 'Musik';
 $string['newspolitics'] = 'Nyheter & Politik';
+$string['nonprofitactivism'] = 'Ideell verksamhet & Aktivism';
 $string['numberofvideos'] = 'Antal videor';
 $string['peopleblogs'] = 'Människor & Bloggar';
 $string['petsanimals'] = 'Husdjur & Djur';
-$string['pluginname'] = 'Youtube';
+$string['pluginname'] = 'YouTube';
 $string['privacy:metadata'] = 'Blocket YouTube visar enbart data som lagras på andra platser.';
 $string['requesterror'] = 'Kunde inte hämta data från servern.
 Kontakta administratören om problemen kvarstår.';
-$string['scienceandtech'] = 'Vetenskap & teknik';
+$string['scienceandtech'] = 'Vetenskap & Teknik';
 $string['sports'] = 'Sport';
 $string['tag_youtube:addinstance'] = 'Lägg till nytt YouTube-block';
 $string['travel'] = 'Resor & Platser';

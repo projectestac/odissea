@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cachestore_mongodb', language 'fr', version '3.8'.
+ * Strings for component 'cachestore_mongodb', language 'fr', version '3.11'.
  *
  * @package     cachestore_mongodb
  * @category    string
@@ -44,7 +44,7 @@ $string['testserver_desc'] = 'Une adresse de connexion permettant d\'effectuer d
 Exemple : mongodb://127.0.0.1:27017';
 $string['username'] = 'Nom d\'utilisateur';
 $string['username_help'] = 'Le nom d\'utilisateur à employer pour établir une connexion.';
-$string['usesafe'] = 'Utiliser <i>usesafe</i>';
-$string['usesafe_help'] = 'Si ce réglage est activé, l\'option <i>usesafe</i> sera utilisée lors des opération d\'insertion, de récupération et de suppression. Si vous avez indiqué un <i>replica</i>, ceci sera le cas de toute façon.';
-$string['usesafevalue'] = 'Valeur <i>usesafe</i>';
-$string['usesafevalue_help'] = 'Vous pouvez indiquer une valeur spécifique pour <i>usesafe</i>. Elle déterminera le nombre de serveurs sur lesquels des opérations doivent avoir été terminées avant qu\'elles soient considérées comme terminées.';
+$string['usesafe'] = 'Utiliser <em>usesafe</em>';
+$string['usesafe_help'] = 'Si ce réglage est activé, l\'option <em>usesafe</em> sera utilisée lors des opération d\'insertion, de récupération et de suppression. Si vous avez indiqué un <em>replica</em>, ceci sera le cas de toute façon.';
+$string['usesafevalue'] = 'Valeur <em>usesafe</em>';
+$string['usesafevalue_help'] = 'Vous pouvez indiquer une valeur spécifique pour <em>usesafe</em>. Elle déterminera le nombre de serveurs sur lesquels des opérations doivent avoir été terminées avant qu\'elles soient considérées comme terminées.';

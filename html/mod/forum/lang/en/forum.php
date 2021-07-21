@@ -23,6 +23,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['activitydate:due'] = 'Due:';
 $string['activityoverview'] = 'There are new forum posts';
 $string['actionsforgraderinterface'] = 'Actions for the grader interface';
 $string['actionsforpost'] = 'Actions for post';
@@ -104,6 +105,9 @@ $string['clicktounfavourite'] = 'You have starred this discussion. Click to unst
 $string['clicktofavourite'] = 'You have not starred this discussion. Click to star.';
 $string['close'] = 'Close';
 $string['closegrader'] = 'Close grader';
+$string['completiondetail:discussions'] = 'Start discussions: {$a}';
+$string['completiondetail:replies'] = 'Post replies: {$a}';
+$string['completiondetail:posts'] = 'Make forum posts: {$a}';
 $string['completiondiscussions'] = 'Student must create discussions:';
 $string['completiondiscussionsdesc'] = 'Student must create at least {$a} discussion(s)';
 $string['completiondiscussionsgroup'] = 'Require discussions';
@@ -291,7 +295,7 @@ $string['forum:cantogglefavourite'] = 'Star discussions';
 $string['forum:grade'] = 'Grade forum';
 $string['forumauthorhidden'] = 'Author (hidden)';
 $string['forumblockingalmosttoomanyposts'] = 'You are approaching the posting threshold. You have posted {$a->numposts} times in the last {$a->blockperiod} and the limit is {$a->blockafter} posts.';
-$string['forumbodyhidden'] = 'This post cannot be viewed by you, probably because you have not posted in the discussion, the maximum editing time hasn\'t passed yet, the discussion has not started or the discussion has expired.';
+$string['forumbodyhidden'] = 'This post is currently hidden, most likely because you need to post in the discussion first and forum post notifications must be sent. Another possibility is that the current time is not within the display period set for the post.';
 $string['forum:canposttomygroups'] = 'Post to all groups you have access to';
 $string['forum:createattachment'] = 'Create attachments';
 $string['forum:deleteanypost'] = 'Delete any posts (anytime)';
@@ -753,6 +757,8 @@ $string['grade_forum_title'] = 'Grade';
 $string['grade_rating_name'] = 'Rating';
 $string['gradeusers'] = 'Grade users';
 $string['graded'] = 'Graded';
+$string['gradedby'] = 'Graded by';
+$string['notgraded'] = 'Not graded';
 $string['nowgradinguser'] = 'Now grading {$a}';
 $string['gradeforrating'] = 'Grade for rating: {$a->str_long_grade}';
 $string['gradeforratinghidden'] = 'Grade for rating hidden';
@@ -760,8 +766,8 @@ $string['gradeforwholeforum'] = 'Grade for forum: {$a->str_long_grade}';
 $string['grading'] = 'Grading';
 $string['gradingstatus'] = 'Grade status:';
 $string['gradeforwholeforumhidden'] = 'Grade for forum hidden';
-$string['gradeitemnameforwholeforum'] = 'Whole forum grade for {$a->name}';
-$string['gradeitemnameforrating'] = 'Rating grade for {$a->name}';
+$string['gradeitemnameforwholeforum'] = '{$a->name} whole forum';
+$string['gradeitemnameforrating'] = '{$a->name} rating';
 $string['grades:gradesavedfor'] = 'Grade saved for {$a->fullname}';
 $string['grades:gradesavefailed'] = 'Unable to save grade for {$a->fullname}: {$a->error}';
 $string['notgraded'] = 'Not graded';

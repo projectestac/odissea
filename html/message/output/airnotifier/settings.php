@@ -34,7 +34,8 @@ if ($ADMIN->fulltree) {
     // The processor should be enabled by the same enable mobile setting.
     $settings->add(new admin_setting_configtext('airnotifierurl',
                     get_string('airnotifierurl', 'message_airnotifier'),
-                    get_string('configairnotifierurl', 'message_airnotifier'), 'https://messages.moodle.net', PARAM_URL));
+                    get_string('configairnotifierurl', 'message_airnotifier'), message_airnotifier_manager::AIRNOTIFIER_PUBLICURL,
+                    PARAM_URL));
     $settings->add(new admin_setting_configtext('airnotifierport',
                     get_string('airnotifierport', 'message_airnotifier'),
                     get_string('configairnotifierport', 'message_airnotifier'), 443, PARAM_INT));
@@ -51,4 +52,8 @@ if ($ADMIN->fulltree) {
     $url = new moodle_url('/message/output/airnotifier/requestaccesskey.php', array('sesskey' => sesskey()));
     $link = html_writer::link($url, get_string('requestaccesskey', 'message_airnotifier'));
     $settings->add(new admin_setting_heading('requestaccesskey', '', $link));
+    // Check configuration.
+    $url = new moodle_url('/message/output/airnotifier/checkconfiguration.php');
+    $link = html_writer::link($url, get_string('checkconfiguration', 'message_airnotifier'));
+    $settings->add(new admin_setting_heading('checkconfiguration', '', $link));
 }

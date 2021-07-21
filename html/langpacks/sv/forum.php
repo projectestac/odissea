@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'forum', language 'sv', version '3.8'.
+ * Strings for component 'forum', language 'sv', version '3.11'.
  *
  * @package     forum
  * @category    string
@@ -27,11 +27,12 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actionsforgraderinterface'] = 'Åtgärder i bedömningsgränssnittet';
 $string['actionsforpost'] = 'Åtgärder för inlägg';
+$string['activitydate:due'] = 'Förfallodatum:';
 $string['activityoverview'] = 'Det finns nya inlägg i forumet';
-$string['addanewdiscussion'] = 'Nytt diskussion';
+$string['addanewdiscussion'] = 'Nytt diskussionsämne';
 $string['addanewquestion'] = 'Ny fråga';
 $string['addanewtopic'] = 'Nytt ämne';
-$string['addtofavourites'] = 'Lägg denna diskussion till mina favoriter';
+$string['addtofavourites'] = 'Favoritmarkera denna diskussion';
 $string['advancedsearch'] = 'Avancerad sökning';
 $string['alldiscussions'] = 'Alla diskussioner';
 $string['allforums'] = 'Alla forum';
@@ -60,14 +61,14 @@ $string['blockafter_help'] = 'Den här inställningen specificerar det maximala 
 $string['blockperiod'] = 'Tidsperiod för blockering';
 $string['blockperiod_help'] = 'Kursdeltagare kan blockeras från att göra fler än det givna antalet inlägg inom tidsperioden. Användare med kapaciteten mod/forum:postwithoutthrottling är undantagna från den här begränsningen.';
 $string['blockperioddisabled'] = 'Blockera inte';
-$string['blogforum'] = 'Forum som visas i ett bloggliknande format.';
+$string['blogforum'] = 'Standardforum som visas i ett bloggliknande format';
 $string['bynameondate'] = 'av {$a->name} - {$a->date}';
 $string['cachedef_forum_is_tracked'] = 'Spårningsstatus för användare';
 $string['calendardue'] = '{$a} har förfallit';
 $string['cancelreply'] = 'Avbryt';
 $string['cannotadd'] = 'Det gick inte att lägga till diskussionen till det här forumet. ';
 $string['cannotadddiscussion'] = 'För att lägga till diskussionsämnen till det här forumet krävs det att man är medlem i en grupp.';
-$string['cannotadddiscussionall'] = 'Du har inte tillstånd att lägga till ett nytt diskussionsämne för alla deltagare. Om du inte kan välja en grupp i det här forumet beror det på att du inte är tillagd i någon grupp, eller att den grupp du tillhör inte har rättigheter att skriva i det här forumet.';
+$string['cannotadddiscussionall'] = 'Du har inte behörighet att lägga till ett nytt diskussionsämne för alla deltagare.';
 $string['cannotadddiscussiongroup'] = 'Du måste vara medlem i en grupp för att skapa en diskussion.';
 $string['cannotaddsubscriber'] = 'Det gick inte att lägga till en prenumerant med id {$a} till det här forumet!';
 $string['cannotaddteacherforumto'] = 'Det gick inte att lägga till en omvänd instans av ett lärarforum till sektion 0 i kursen';
@@ -104,9 +105,12 @@ $string['clicktolockdiscussion'] = 'Klicka för att låsa diskussionen för nya 
 $string['clicktosubscribe'] = 'Du prenumererar inte på denna diskussion. Klicka för att prenumerera';
 $string['clicktounfavourite'] = 'Du har favoritmärkt denna diskussion. Klicka för att ta bort markeringen.';
 $string['clicktounlockdiscussion'] = 'Klicka för att låsa upp diskussionen.';
-$string['clicktounsubscribe'] = 'Du prenumererar på denna diskussion. Klicka för att avbeställa prenumerationen.';
+$string['clicktounsubscribe'] = 'Du prenumererar på denna diskussion. Klicka för att avsluta prenumerationen.';
 $string['close'] = 'Stäng';
 $string['closegrader'] = 'Stäng bedömare';
+$string['completiondetail:discussions'] = 'Starta diskussioner: {$a}';
+$string['completiondetail:posts'] = 'Skapa foruminlägg: {$a}';
+$string['completiondetail:replies'] = 'Skicka svar: {$a}';
 $string['completiondiscussions'] = 'Kursdeltagaren måste skapa diskussioner:';
 $string['completiondiscussionsdesc'] = 'Deltagaren måste starta minst {$a} diskussion(er)';
 $string['completiondiscussionsgroup'] = 'Kräv diskussioner';
@@ -121,13 +125,13 @@ $string['completionrepliesgroup'] = 'Kräv svar';
 $string['completionreplieshelp'] = 'kräver svar för att du ska kunna fullfölja';
 $string['configcleanreadtime'] = 'Tidpunkten då gamla inlägg ska rensas från \'läst\'-tabellen.';
 $string['configdigestmailtime'] = 'Användare som väljer att prenumerera på e-postsammanfattningar kommer att få dessa dagligen. Den här inställningen bestämmer vid vilken tid på dygnet de ska skickas. (det cron-jobb som körs närmast efter detta klockslag skickar det).';
-$string['configdisplaymode'] = 'Det förinställda sättet att visa diskussionsämnen, om du inte har ställt in ett annat.';
+$string['configdisplaymode'] = 'Standardvisningsläget för diskussioner om inget visningsläge angivits.';
 $string['configenablerssfeeds'] = 'Denna inställningen aktiverar möjligheten för RSS-flöden för alla forum. Du kommer fortfarande att behöva aktivera flöden manuellt i inställningarna för varje forum.';
 $string['configenabletimedposts'] = 'Ställ in på \'ja\' om du vill tillåta inställning av visningsperioder när du lägger upp en ny forumdiskussion.';
 $string['configlongpost'] = 'Alla inlägg som överskrider den här längden (förutom HTML) anses vara långa.';
 $string['configmanydiscussions'] = 'Maximalt antal diskussionsämnen som visas per sida i ett forum.';
-$string['configmaxattachments'] = 'Förvalt standardantal tillåtna bilagor per inlägg.';
-$string['configmaxbytes'] = 'Standardval (förinställt värde) för den maximala storleken på bifogade filer på den här webbsajten (det finns även lokala inställningar för t.ex. varje enskild kurs)';
+$string['configmaxattachments'] = 'Maximalt antal bifogade filer som är tillåtna per inlägg som standard.';
+$string['configmaxbytes'] = 'Maximal standardstorlek för alla forumbilagor på webbplatsen (med förbehåll för kursbegränsningar och andra lokala inställningar)';
 $string['configoldpostdays'] = 'Antal dagar efter vilket gamla inlägg markeras som lästa.';
 $string['configreplytouser'] = 'När ett inlägg i ett forum har skickats som e-post; ska det då innehålla användarens e-postadress så att mottagarna kan svara personligen snarare än via forumet? Även om du väljer "Ja" för denna inställning så kan användaren i sin profil välja att dölja sin e-postadress.';
 $string['configrssarticlesdefault'] = 'Om RSS-flöden aktiverats anger denna inställning standardantalet artiklar (antingen diskussioner eller inlägg).';
@@ -136,11 +140,11 @@ $string['configshortpost'] = 'Alla inlägg som överskrider den här längden (f
 $string['configsubscriptiontype'] = 'Standardinställning för prenumeration';
 $string['configtrackingtype'] = 'Standardinställningen för lässpårning';
 $string['configtrackreadposts'] = 'Ställ in detta till \'Ja\' om du vill spåra läst/inte läst för varje användare.';
-$string['configusermarksread'] = 'Om \'Ja\' så måste användare manuellt markera ett inlägg som läst. Om \'Nej\' markeras inlägget som läst när det visas.';
+$string['configusermarksread'] = 'Om <en>Ja</em> måste användaren manuellt markera ett inlägg som läst. Om <em>Nej</em> markeras inlägget som läst när det visas.';
 $string['confirmsubscribe'] = 'Vill du verkligen prenumerera på forumet \'{$a}\'?';
 $string['confirmsubscribediscussion'] = 'Vill du verkligen prenumerera på diskussionen \'{$a->discussion}\' i forumet \'{$a->forum}\' ?';
 $string['confirmunsubscribe'] = 'Vill du verkligen avbryta prenumerationen på forumet \'{$a}\'?';
-$string['confirmunsubscribediscussion'] = 'Vill du verkligen avbeställa din prenumeration på \'{$a->diskussion}\' i forum \'{$a->forum}\'?';
+$string['confirmunsubscribediscussion'] = 'Vill du verkligen avsluta din prenumeration på \'{$a->diskussion}\' i forum \'{$a->forum}\'?';
 $string['couldnotadd'] = 'Det gick inte att lägga till ditt inlägg på grund av okänt fel.';
 $string['couldnotdeletereplies'] = 'Tyvärr, det kan inte tas bort eftersom folk redan har svarat på det.';
 $string['couldnotupdate'] = 'Det gick inte att uppdatera ditt inlägg på grund av okänt fel.';
@@ -169,14 +173,14 @@ $string['disallowsubscribeteacher'] = 'Det är inte tillåtet att prenumerera (u
 $string['disallowsubscription'] = 'Prenumeration';
 $string['disallowsubscription_help'] = 'Detta forum har konfigurerats så att du inte kan prenumerera på diskussioner.';
 $string['discussion'] = 'Diskussion';
-$string['discussionlistsortbycreatedasc'] = 'Sortera efter skapelsedatum, äldst överst.';
-$string['discussionlistsortbycreateddesc'] = 'Sortera efter skapelsedatum, nyast överst.';
+$string['discussionlistsortbycreatedasc'] = 'Sortera stigande efter skapandedatum';
+$string['discussionlistsortbycreateddesc'] = 'Sortera fallande efter skapandedatum';
 $string['discussionlistsortbydiscussionasc'] = 'Sortera på diskussionsnamn i stigande ordning';
 $string['discussionlistsortbydiscussiondesc'] = 'Sortera på diskussionsnamn i fallande ordning';
 $string['discussionlistsortbygroupasc'] = 'Sortera på grupp i stigande ordning';
 $string['discussionlistsortbygroupdesc'] = 'Sortera på grupp i fallande ordning';
-$string['discussionlistsortbylastpostasc'] = 'Sortera efter skapelsedatum för det senaste inlägget, äldst överst.';
-$string['discussionlistsortbylastpostdesc'] = 'Sortera efter skapelsedatum för det senaste inlägget, nyast överst.';
+$string['discussionlistsortbylastpostasc'] = 'Sortera efter skapandedatum för det senaste inlägget, äldst överst.';
+$string['discussionlistsortbylastpostdesc'] = 'Sortera efter skapandedatum för det senaste inlägget, nyast överst.';
 $string['discussionlistsortbyrepliesasc'] = 'Sortera efter antal svar, i stigande ordning.';
 $string['discussionlistsortbyrepliesdesc'] = 'Sortera efter antal svar, i fallande ordning.';
 $string['discussionlistsortbystarterasc'] = 'Sortera på trådstartare i stigande ordning';
@@ -201,43 +205,49 @@ $string['discussionstartedby'] = 'Diskussion startad av {$a}';
 $string['discussionsubscribed'] = 'Du prenumererar nu på denna diskussion.';
 $string['discussionsubscribestart'] = 'Skicka mig notiser om nya inlägg i denna diskussion';
 $string['discussionsubscribestop'] = 'Jag vill inte inte få notiser om nya inlägg i denna diskussion';
-$string['discussionsubscription'] = 'Prenumeration på diskussion';
+$string['discussionsubscription'] = 'Diskussions-prenumeration';
 $string['discussionsubscription_help'] = 'Prenumerera på en diskussion innebär att du kommer att få notiser om nya inlägg till denna diskussion .';
 $string['discussionunpin'] = 'Lossa diskussion';
 $string['discussionunsubscribed'] = 'Du har nu avslutat prenumerationen på denna diskussion.';
 $string['discussthistopic'] = 'Läs och kommentera';
 $string['discusstopicname'] = 'Diskutera ämnet: {$a}';
-$string['displayend'] = 'Visa slut';
+$string['displayend'] = 'Slutar';
 $string['displayend_help'] = '<p>Du kan välja om ditt inlägg i ett forum ska visas fr.o.m. ett visst datum, utgå efter ett visst datum eller om det bara ska visas under en viss period.</p>
 
 <p>Avmarkera alternativet/en Insktivera för att aktivera ett start- och/eller ett slutdatum. </p>
 
 <p>Lägg märke tilll att användare med rättigheter som administratörer kommer att kunna se meddelandena innan de publiceras och efter det att de har \'tagits bort\'. </p>';
-$string['displayenddate'] = 'Visa slut: {$a}.';
+$string['displayenddate'] = 'Slutar: {$a}.';
 $string['displaymode'] = 'Visningsläge';
-$string['displayperiod'] = 'Visa period';
-$string['displaystart'] = 'Visa start';
+$string['displayperiod'] = 'Visningsperiod';
+$string['displaystart'] = 'Börjar';
 $string['displaystart_help'] = '<p>Du kan välja om ditt inlägg i ett forum ska visas fr.o.m. ett visst datum, utgå efter ett visst datum eller om det bara ska visas under en viss period.</p>
 
 <p>Avmarkera alternativet/en Inaktivera för att aktivera ett start- och/eller ett slutdatum. </p>
 
 <p>Lägg märke tilll att användare med rättigheter som administratörer kommer att kunna se meddelandena innan de publiceras och efter det att de har \'tagits bort\'. </p>';
-$string['displaystartdate'] = 'Visa start: {$a}.';
+$string['displaystartdate'] = 'Börjar: {$a}.';
 $string['displaywordcount'] = 'Visa antal ord';
 $string['displaywordcount_help'] = 'Denna inställning anger om antalet ord på varje inlägg ska visas eller inte .';
 $string['duedate'] = 'Stoppdatum/tid';
 $string['duedate_help'] = 'Detta är när inlägget i forumet förfaller. Även om detta datum visas i kalendern som förfallodatum för forumet, kommer inlägg fortfarande tillåtas efter detta datum. Ställ in ett forum cut-off datum för att förhindra inlägg i forumet efter ett visst datum.';
 $string['duedatetodisplayincalendar'] = 'Förfallodatum att visa i kalender';
-$string['eachuserforum'] = 'Inlämningsforum';
+$string['eachuserforum'] = 'Varje person publicerar en enskild diskussion';
 $string['edit'] = 'Redigera';
 $string['editedby'] = 'Redigerad av  {$a->name} - {$a->date}';
 $string['editedpostupdated'] = '{$a}\'s inlägg uppdaterades';
 $string['editing'] = 'Redigering';
-$string['emaildigestcompleteshort'] = 'Hela inlägg';
+$string['emaildigestcompleteshort'] = 'Sammanfattning - fullständiga inlägg';
 $string['emaildigestdefault'] = 'Standard ({$a})';
-$string['emaildigestoffshort'] = 'Ingen sammanställning';
-$string['emaildigestsubjectsshort'] = 'Endast ämne';
-$string['emaildigesttype'] = 'Alternativ för e-postsammanställningen';
+$string['emaildigestoffshort'] = 'Ingen sammanfattning';
+$string['emaildigestsubjectsshort'] = 'Sammanfattning - endast ämnen';
+$string['emaildigesttype'] = 'Alternativ för e-postsammanfattningen';
+$string['emaildigesttype_help'] = 'Den typ av meddelande som du kommer att få för varje forum.
+
+* Standard – följ den sammanfattningsinställning som finns i din användarprofil. Om du uppdaterar din profil kommer den ändringen att återspeglas även här.
+* Ingen sammanfattning - du kommer att få ett e-postmeddelande per foruminlägg;
+* Sammanfattning - fullständiga inlägg - du kommer att få ett sammansmält e-postmeddelande per dag som innehåller det fullständiga innehållet i varje foruminlägg;
+* Sammanfattning - endast ämnen - du får ett sammanställt e-postmeddelande per dag som bara innehåller ämnet för varje foruminlägg.';
 $string['emptymessage'] = 'Något var fel med ditt inlägg.  Kanske skrev du inte in någon text, eller så var bilagan för stor. Dina ändringar har INTE sparats.';
 $string['errorcannotlock'] = 'Du har inte behörighet att låsa diskussioner.';
 $string['erroremptymessage'] = 'Inläggstexten får inte vara tom';
@@ -283,7 +293,7 @@ $string['firstpost'] = 'Första inlägg';
 $string['forcedreadtracking'] = 'Tillåt tvingad läs-spårning';
 $string['forcedreadtracking_desc'] = 'Tillåter forum att ställs in för att tvinga läs-spårning. Detta kommer att resultera i försämrad prestanda för vissa användare, särskilt i kurser med många forum och inlägg. Om inaktiverat kommer alla forum där den tvingande spårningen varit påslagen att betrakta den som valfri.';
 $string['forcesubscribed'] = 'Det är obligatoriskt för alla att prenumerera på här forumet.';
-$string['forcesubscribed_help'] = 'Det går inte att avbeställa prenumerationen från detta forum.';
+$string['forcesubscribed_help'] = 'Det här forumet har konfigurerats så att du inte kan avsluta prenumerationen på diskussioner.';
 $string['forum'] = 'Forum';
 $string['forum:addinstance'] = 'Lägg till nytt forum';
 $string['forum:addnews'] = 'Lägg till nyheter';
@@ -291,7 +301,7 @@ $string['forum:addquestion'] = 'Lägg till fråga';
 $string['forum:allowforcesubscribe'] = 'Tillåt obligatorisk prenumeration';
 $string['forum:canoverridecutoff'] = 'Inlägg i forum efter deras cut-off datum.';
 $string['forum:canoverridediscussionlock'] = 'Svara på låsta diskussioner';
-$string['forum:canposttomygroups'] = 'Kan göra inlägg i alla diskussioner du har åtkomst till';
+$string['forum:canposttomygroups'] = 'Göra inlägg i alla diskussioner du har åtkomst till';
 $string['forum:cantogglefavourite'] = 'Favoritmärk diskussioner';
 $string['forum:createattachment'] = 'Skapa bfiogade filer';
 $string['forum:deleteanypost'] = 'Ta bort vilka inlägg som helst (när som helst)';
@@ -318,7 +328,7 @@ $string['forum:viewanyrating'] = 'Visa totalbedömningar som någon fått';
 $string['forum:viewdiscussion'] = 'Visa diskussionsämnen';
 $string['forum:viewhiddentimedposts'] = 'Visa dolda och tidsbestämda inlägg';
 $string['forum:viewqandawithoutposting'] = 'Visa alltid inlägg av typen F(rågor) och S(var)';
-$string['forum:viewrating'] = 'Visa den sammanlagda bedömning/värdering som du har fått';
+$string['forum:viewrating'] = 'Visa den sammanlagda bedömning som du har fått';
 $string['forum:viewsubscribers'] = 'Visa prenumeranter';
 $string['forumauthorhidden'] = 'Författare (dold)';
 $string['forumblockingalmosttoomanyposts'] = 'Du närmar dig tröskeln för hur många inlägg man får göra. Du har gjort inlägg {$a->numposts} gånger under den senaste  {$a->blockperiod} och begränsningen är {$a->blockafter} inlägg.';
@@ -336,20 +346,13 @@ $string['forumsubjecthidden'] = 'Ämne (dolt)';
 $string['forumtracked'] = 'Olästa inlägg spåras';
 $string['forumtrackednot'] = 'Olästa inlägg spåras inte';
 $string['forumtype'] = 'Typ av forum';
-$string['forumtype_help'] = '<p>Det finns flera olika typer av forum som du kan välja mellan:</p>
-<p><b>Ett enda enskilt diskussionsämne</b> -
-det är bara ett tema, allt på en sida.
-Detta passar bra för korta fokuserade diskussioner.</p>
-<p><b>Standardforum för allmänt bruk</b> -
-det är ett öppet forum där var och en kan
-initiera ett nytt diskussionsämne när som helst.
-Detta är det bästa forumet för allmänna ändamål.</p>
-<p><b>Varje person initierar ett diskussionsämne</b> - Varje person kan
-initiera exakt ett nytt diskussionsämne (alla kan dock svara).
-Detta passar bra när du vill att varje enskild student/elev/deltagare/lärande
-ska initiera en diskussion t ex om deras reflektioner angående veckans ämne, och alla
-andra ska kunna ge respons på dessa.</p><p>Fråga/Svar-forum  Varje enskild student/elev/deltagare/lärande måste först göra inlägg om sina egna perspektiv innan de kan visa de andras. </p>
-<p>(Detta kommer att utvecklas mer i kommande versioner av Moodle)</p>';
+$string['forumtype_help'] = 'Det finns 5 forumtyper:
+
+* En enskild diskussion - Ett enskilt diskussionsämne som alla kan svara på (kan inte användas med separata grupper)
+* Varje person publicerar en enskild diskussion - Varje elev kan publicera exakt ett nytt diskussionsämne, som alla sedan kan svara på
+* Forum för frågor och svar - Studenter måste först publicera sina egna perspektiv innan de kan se andra studenters inlägg
+* Standardforum som visas i ett bloggliknande format - Ett öppet forum där vem som helst kan starta en ny diskussion när som helst och där diskussionsämnen visas på en sida tillsammans med länkarna "Diskutera det här ämnet"
+* Standardforum för allmänt bruk - Ett öppet forum där vem som helst kan starta en ny diskussion när som helst';
 $string['generalforum'] = 'Standardforum för allmänt bruk';
 $string['generalforums'] = 'Allmänna forum';
 $string['grade_forum_header'] = 'Betygsätt hela forumet';
@@ -357,13 +360,14 @@ $string['grade_forum_name'] = 'Hela forumet';
 $string['grade_forum_title'] = 'Betyg';
 $string['grade_rating_name'] = 'Bedömning';
 $string['graded'] = 'Betygsatt';
+$string['gradedby'] = 'Betygsatt av';
 $string['gradeforrating'] = 'Betyg för bedömning: {$a->str_long_grade}';
 $string['gradeforratinghidden'] = 'Betyg för klassificering dolt';
 $string['gradeforwholeforum'] = 'Betyg för forum: {$a->str_long_grade}';
 $string['gradeforwholeforumhidden'] = 'Betyg för forum dolt';
 $string['gradeitem:forum'] = 'Forum';
-$string['gradeitemnameforrating'] = 'Bedömningsbetyg för {$a->name}';
-$string['gradeitemnameforwholeforum'] = 'Forumbetyg för {$a->name}';
+$string['gradeitemnameforrating'] = '{$a->name}-bedömning';
+$string['gradeitemnameforwholeforum'] = '{$a->name} hela forumet';
 $string['grades:gradesavedfor'] = 'Betyg för {$a->fullname} sparat';
 $string['grades:gradesavefailed'] = 'Kunde inte spara betyg för {$a->fullname}: {$a->error}';
 $string['gradeusers'] = 'Betygsätt användare';
@@ -390,6 +394,7 @@ $string['intronews'] = 'Allmänna nyheter och meddelanden';
 $string['introsocial'] = 'Ett öppet forum där du kan diskutera vad du vill';
 $string['introteacher'] = 'Ett forum endast för lärares anteckningar och diskussionsämnen';
 $string['invalidaccess'] = 'Åtkomsten av den här sidan var ogiltig. ';
+$string['invaliddigestsetting'] = 'En ogiltig inställning för E-postsammandrag angavs';
 $string['invaliddiscussionid'] = 'ID för diskussionen var felaktigt alternativt existerar inte längre. ';
 $string['invalidforcesubscribe'] = 'Ogiltig läge för obligatorisk prenumeration';
 $string['invalidforumid'] = 'ID för forum var felaktigt. ';
@@ -405,9 +410,9 @@ Användare med behörighet att svara på låsta diskussioner kan låsa upp den i
 $string['locked'] = 'Låst';
 $string['lockupdated'] = 'Låsningsalternativet har uppdaterats';
 $string['longpost'] = 'Långt inlägg';
-$string['mailnow'] = 'Skicka e-postnotis nu';
+$string['mailnow'] = 'Skicka e-post nu, utan fördröjning för redigering. OBS att användarnas egna inställningar för forum överrider detta.';
 $string['managesubscriptionsoff'] = 'Sluta hantera prenumerationer';
-$string['managesubscriptionson'] = 'Hantera prenumerationer';
+$string['managesubscriptionson'] = 'Hantera prenumeranter';
 $string['manydiscussions'] = 'Diskussionsämnen per sida';
 $string['markalldread'] = 'Markera alla inlägg i denna diskussion som lästa.';
 $string['markallread'] = 'Markera alla inlägg i detta forum som lästa.';
@@ -432,7 +437,7 @@ $string['messageinboundfilesizeexceeded'] = 'Ditt svar kunde inte publiceras eft
 $string['messageinboundforumhidden'] = 'Ditt svar kunde inte publiceras eftersom forumet inte är årkomligt just nu.';
 $string['messageinboundnopostforum'] = 'Ditt svar kunde inte publiceras eftersom du inte är behörig att göra inlägg i forumet {$a->forum->name}.';
 $string['messageinboundthresholdhit'] = 'Ditt svar kunde inte publiceras eftersom du har överskridit det maximala antalet inlägg för detta forum.';
-$string['messageprovider:digests'] = 'Sammanfattningar av inlägg i forum';
+$string['messageprovider:digests'] = 'Sammanfattning av foruminlägg';
 $string['messageprovider:posts'] = 'Inlägg från dina forum';
 $string['missingsearchterms'] = 'De följande söktermerna förekommer bara i HTML-koden för det här meddelandet:';
 $string['modeflatnewestfirst'] = 'Visa svar i enkel form (nyaste överst)';
@@ -441,16 +446,24 @@ $string['modenested'] = 'Visa svar i inkapslad form';
 $string['modenestedv2'] = 'Visa svar i inkapslad form (experimentell)';
 $string['modethreaded'] = 'Visa svar i trådad form';
 $string['modulename'] = 'Forum';
-$string['modulename_help'] = '<p><img src="<?php echo $CFG->wwwroot?>/mod/forum/icon.gif" alt="" /> 
-<b>Forum</b></p>
-<p>Det här kan vara den viktigaste aktiviteten - det är här som de flesta
-diskussionerna äger rum. Forum kan vara strukturerade på olika sätt
-och det kan ingå bedömning/värdering  på \'peer\'-nivå
-av varje inlägg. Inläggen kan visas i ett antal olika format och de kan innehålla
-bifogade filer. Genom att prenumerera på ett forum så kan deltagarna
-få kopior på varje inlägg via e-post. En distanslärare kan ställa
-in ett visst givet forum så att alla automatiskt prenumererar på det.
-</p>';
+$string['modulename_help'] = 'Aktiviteten <em>Forum</em> gör det möjligt för deltagarna att föra asynkrona diskussioner, dvs. diskussioner som äger rum under en längre tid.
+
+Det finns flera forumtyper att välja mellan, till exempel ett standardforum där vem som helst kan starta en ny diskussion när som helst; ett forum där varje elev kan publicera exakt en diskussion; eller ett fråge- och svarsforum där eleverna först måste publicera innan de kan se andra studenters inlägg. En lärare kan tillåta att filer bifogas till foruminlägg. Bifogade bilder visas i foruminlägget.
+
+Deltagarna kan prenumerera på ett forum för att få meddelanden om nya foruminlägg. En lärare kan ställa in prenumerationsläget på valfritt, påtvingat eller automatiskt eller förhindra prenumeration helt. Vid behov kan deltagare blockeras från att publicera mer än ett visst antal inlägg under en viss tidsperiod. Detta kan förhindra individer från att dominera diskussioner.
+
+Foruminlägg kan betygsättas av lärare eller elever (peer evaluation). Betyg kan aggregeras för att bilda ett slutligt resultat som registreras i betygsboken.
+
+Forum har många användningsområden, t.ex.
+
+* Ett socialt utrymme för studenter att lära känna varandra
+* För kursmeddelanden (med hjälp av ett nyhetsforum med tvångsprenumeration)
+* För att diskutera kursinnehåll eller läsmaterial
+* För att fortsätta diskutera en fråga som togs upp under lektionen
+* För diskussioner endast för lärare (med hjälp av ett dolt forum)
+* Ett hjälpcenter där handledare och studenter kan ge råd
+* Ett enskilt stödområde för privat student-lärarkommunikation (med hjälp av ett forum med separata grupper och med en elev per grupp)
+* För utökade kursaktiviteter, till exempel "hjärngympor" för studenter att begrunda och föreslå lösningar för';
 $string['modulenameplural'] = 'Forum';
 $string['more'] = 'mer';
 $string['movedmarker'] = '(Flyttad)';
@@ -462,11 +475,10 @@ $string['myprofileowndis'] = 'Mina diskussioner i forum';
 $string['myprofileownpost'] = 'Mina inlägg i forum';
 $string['namenews'] = 'Nyheter';
 $string['namenews_help'] = '<p>Nyhetsforumet är ett speciellt forum som skapas automatiskt för varje kurs och för
-ingångssidan på webbplatsen. Du kan bara ha ett nyhetsforum per kurs.
+förstasidan på webbplatsen. Det är en plats där man kan publicera allmänna meddelanden.
+Du kan bara ha ett nyhetsforum per kurs.</p>
 
-<p>Det är en plats där lärare och administratörer kan publicera allmänna meddelanden. Studenter kan inte skriva i Nyhetsforum.</p>
-
-<p>Blocket "Senaste nytt" kommer att visa de senaste och mest aktuella inläggen från det här speciella forumet (även om du döper om det). Av den här orsaken kommer forumet automatiskt att återskapas av Moodle om du använder blocket "Senaste nytt".</p>';
+<p>Blocket "Senaste nytt" kommer att visa de senaste och mest aktuella diskussionena från det här speciella forumet (även om du döper om det). Av den här orsaken kommer forumet automatiskt att återskapas av Moodle om du använder blocket "Senaste nytt".</p>';
 $string['namesocial'] = 'Gemenskapsforum';
 $string['nameteacher'] = 'Lärarforum';
 $string['newforumposts'] = 'Nya inlägg i forum';
@@ -480,10 +492,10 @@ $string['noguestpost'] = 'Tyvärr, gäster har ingen behörighet att göra inlä
 $string['noguestsubscribe'] = 'Tyvärr, gäster kan inte prenumerera.';
 $string['noguesttracking'] = 'Tyvärr, gäster får inte ställa in bevakningsalternativ.';
 $string['nomorepostscontaining'] = 'Det gick inte att hitta några inlägg som innehåller \'{$a}\'';
-$string['nonews'] = 'Inga nya inlägg ännu';
+$string['nonews'] = 'Inga nyheter har publicerats ännu.';
 $string['noonecansubscribenow'] = 'Det är nu inte tillåtet att prenumerera';
-$string['nopermissiontosubscribe'] = 'Du har inte tillstånd att se prenumeranterna av forumet.';
-$string['nopermissiontoview'] = 'Du har inte tillstånd att se det här inlägget.';
+$string['nopermissiontosubscribe'] = 'Du har inte behörighet att visa prenumeranterna av forumet.';
+$string['nopermissiontoview'] = 'Du har inte behörighet att se det här inlägget.';
 $string['nopostforum'] = 'Du har tyvärr inte tillstånd att göra inlägg i detta forum.';
 $string['noposts'] = 'Inga inlägg';
 $string['nopostsmadebyuser'] = '{$a} har inte gjort några inlägg';
@@ -500,7 +512,7 @@ $string['notpartofdiscussion'] = 'Det här inlägget är inte del av någon disk
 $string['notrackforum'] = 'Spåra inte olästa inlägg';
 $string['notsubscribed'] = 'Prenumerera';
 $string['nousersmatch'] = 'Inga användare hittades för angivet kriterium.';
-$string['noviewdiscussionspermission'] = 'Du har inte tillstånd att se diskussionsämnen i det här forumet.';
+$string['noviewdiscussionspermission'] = 'Du har inte behörighet att visa diskussionsämnen i det här forumet.';
 $string['nowallsubscribed'] = 'Du prenumererar nu på alla forum i {$a}.';
 $string['nowallunsubscribed'] = 'Du har nu tagit bort din prenumeration från alla forum i {$a}.';
 $string['nowgradinguser'] = 'Betygsätter nu {$a}';
@@ -515,21 +527,23 @@ $string['oldertopics'] = 'Äldre ämnen';
 $string['oldpostdays'] = 'Markera som läst efter (dagar)';
 $string['overviewnumpostssince'] = 'inlägg sedan senaste inloggning';
 $string['overviewnumunread'] = '{$a} olästa inlägg';
+$string['page-mod-forum-discuss'] = 'Sida för forumdiskussion';
 $string['page-mod-forum-view'] = 'Forummodulens huvudsida';
-$string['parent'] = 'Visa \'föräldern\' till detta inlägg';
+$string['page-mod-forum-x'] = 'Valfri forum-modulsida';
+$string['parent'] = 'Visa ursprungsinlägget';
 $string['parentofthispost'] = 'Föräldern till detta inlägg';
 $string['permalink'] = 'Permalänk';
 $string['permanentlinktoparentpost'] = 'Permalänk till överliggande inlägg';
 $string['permanentlinktopost'] = 'Permalänk till detta inlägg';
 $string['pindiscussion'] = 'Nåla fast denna diskussion';
 $string['pinupdated'] = 'Fastnålningsalternativet har uppdaterats.';
-$string['pluginadministration'] = 'Administration av forum';
+$string['pluginadministration'] = 'Hantera forum';
 $string['pluginname'] = 'Forum';
 $string['postadded'] = 'Ditt inlägg har lagts till.<p>Du har {$a} för att redigera det om du vill göra ändringar.';
 $string['postaddedsuccess'] = 'Ditt inlägg lades till.';
-$string['postaddedtimeleft'] = 'Du har {$a} att redigera om du vill göra ändringar.';
-$string['postbymailsuccess'] = 'Ditt inlägg med ämnet "{$a->subject}" har publicerats. Du kan se det här {$a->discussionurl}.';
-$string['postbymailsuccess_html'] = 'Ditt <a href="{$a->discussionurl}">inlägg</a> med ämnet "{$a->subject}" har publicerats.';
+$string['postaddedtimeleft'] = 'Om du vill ändra ditt inlägg behöver du göra detta inom {$a}';
+$string['postbymailsuccess'] = 'Ditt inlägg med ämnet "{$a->subject}" har publicerats. Du kan se det här: {$a->discussionurl}.';
+$string['postbymailsuccess_html'] = 'Ditt svar <a href="{$a->discussionurl}">{$a->subject}</a> skickades.';
 $string['postbyuser'] = '{$a->post} av {$a->user}';
 $string['postincontext'] = 'Se detta inlägg i sitt sammanhang';
 $string['postisprivatereply'] = 'Detta är ett privat svar. Det är inte synligt för andra deltagare.';
@@ -538,9 +552,9 @@ $string['postmailinfolink'] = 'Detta är en kopia av ett meddelande i   {$a->cou
 Klicka på länken för att svara: {$a->replylink}';
 $string['postmailnow'] = '<p>Det här inlägget kommer omedelbart att skicka med e-post till alla som prenumererar på forumet.</p>';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
-$string['postrating1'] = 'Visar mest enskilt,(rationellt) inriktat  vetande (kunskap)';
-$string['postrating2'] = 'Enskilt,(rationellt) inriktat  vetande (kunskap) och socialt, (empatiskt) inriktat vetande (kunskap)';
-$string['postrating3'] = 'Visar mest socialt, (empatiskt) inriktat vetande (kunskap)';
+$string['postrating1'] = 'Mestadels separat lärande';
+$string['postrating2'] = 'Separat och anslutet';
+$string['postrating3'] = 'Mestadels anslutet lärande';
 $string['posts'] = 'Inlägg';
 $string['postsfrom'] = 'Inlägg från';
 $string['postsmadebyuser'] = 'Inlägg av {$a}';
@@ -556,7 +570,58 @@ $string['previoususer'] = 'Spara ändringar och fortsätt till föregående anv�
 $string['privacy:digesttypenone'] = 'Vi håller inte några uppgifter som rör ett föredraget forumsammandrag för detta forum.';
 $string['privacy:digesttypepreference'] = 'Du har valt följande inställningar för din prenumeration på inlägg i forum: "{$a->type}".';
 $string['privacy:discussionsubscriptionpreference'] = 'Du har valt följande inställningar för din prenumeration på inlägg i detta forum: "{$a->preference}"';
-$string['privacy:metadata:forum_digests:maildigest'] = 'Sammandragsinställningar';
+$string['privacy:metadata:core_rating'] = 'Forumet använder undersystemet för bedömningar  för att stödja bedömningar av foruminlägg.';
+$string['privacy:metadata:core_tag'] = 'Forumet använder etikett-undersystemet för att stödja taggning av inlägg.';
+$string['privacy:metadata:forum_digests'] = 'Information om sammanfattningsinställningarna för varje forum.';
+$string['privacy:metadata:forum_digests:forum'] = 'Forumet som prenumereras på.';
+$string['privacy:metadata:forum_digests:maildigest'] = 'Sammanfattningsinställningar';
+$string['privacy:metadata:forum_digests:userid'] = 'ID:t för användaren med sammandragsinställningarna.';
+$string['privacy:metadata:forum_discussion_subs'] = 'Information om prenumerationer på enskilda forumdiskussioner';
+$string['privacy:metadata:forum_discussion_subs:discussionid'] = 'ID:t för den diskussion som prenumererades på.';
+$string['privacy:metadata:forum_discussion_subs:preference'] = 'Starttiden för prenumerationen.';
+$string['privacy:metadata:forum_discussion_subs:userid'] = 'ID:t för användaren med diskussionsprenumerationen.';
+$string['privacy:metadata:forum_discussions'] = 'Information om de enskilda forumdiskussioner som en användare har skapat';
+$string['privacy:metadata:forum_discussions:assessed'] = 'TODO - vad lagrar det här fältet';
+$string['privacy:metadata:forum_discussions:name'] = 'Namnet på diskussionen, som valts av författaren.';
+$string['privacy:metadata:forum_discussions:timemodified'] = 'Den tidpunkt då diskussionen senast ändrades.';
+$string['privacy:metadata:forum_discussions:userid'] = 'ID:t för den användare som skapade diskussionen';
+$string['privacy:metadata:forum_discussions:usermodified'] = 'ID:t för den användare som senast ändrade diskussionen på något sätt.';
+$string['privacy:metadata:forum_grades'] = 'Betygsdata för forumet';
+$string['privacy:metadata:forum_grades:forum'] = 'Forumet som betygsattes';
+$string['privacy:metadata:forum_grades:grade'] = 'Det utdelade betyget';
+$string['privacy:metadata:forum_grades:userid'] = 'Användaren som betygsattes.';
+$string['privacy:metadata:forum_posts'] = 'Information om sammandragsinställningarna för varje enskilt forum.';
+$string['privacy:metadata:forum_posts:created'] = 'Tidpunkt då inlägget publicerades.';
+$string['privacy:metadata:forum_posts:discussion'] = 'Diskussionen som inlägget är i.';
+$string['privacy:metadata:forum_posts:message'] = 'Meddelandeinnehållet i foruminlägget.';
+$string['privacy:metadata:forum_posts:modified'] = 'Tidpunkt för senaste ändring av inlägget.';
+$string['privacy:metadata:forum_posts:parent'] = 'Det överliggande inlägget som besvarades.';
+$string['privacy:metadata:forum_posts:privatereplyto'] = 'ID för den användare svaret skickades till.';
+$string['privacy:metadata:forum_posts:subject'] = 'Ämnet på inlägget.';
+$string['privacy:metadata:forum_posts:totalscore'] = 'Meddelandeinnehållet i foruminlägget.';
+$string['privacy:metadata:forum_posts:userid'] = 'ID för användaren som författade inlägget.';
+$string['privacy:metadata:forum_queue'] = 'Tillfällig logg över inlägg som kommer skickas i sammandraget.';
+$string['privacy:metadata:forum_queue:discussionid'] = 'Forumdiskussions-ID';
+$string['privacy:metadata:forum_queue:postid'] = 'Foruminlägg-ID';
+$string['privacy:metadata:forum_queue:timemodified'] = 'Ändringstidpunkt för ursprungligt inlägg.';
+$string['privacy:metadata:forum_queue:userid'] = 'Användare som behöver bli notifierade om inlägget';
+$string['privacy:metadata:forum_read'] = 'Information om vilka inlägg som lästs av användaren.';
+$string['privacy:metadata:forum_read:discussionid'] = 'Diskussionen som inlägget är i.';
+$string['privacy:metadata:forum_read:firstread'] = 'Tidpunkt då inlägget första lästes första gången.';
+$string['privacy:metadata:forum_read:lastread'] = 'Tidpunkt för då inlägget lästes senast.';
+$string['privacy:metadata:forum_read:postid'] = 'Inlägget lästes.';
+$string['privacy:metadata:forum_read:userid'] = 'ID för användaren som denna post relaterar till.';
+$string['privacy:metadata:forum_subscriptions'] = 'Information om vilka forum användaren prenumererar på.';
+$string['privacy:metadata:forum_subscriptions:forum'] = 'Forumet för vilket en prenumeration skapades.';
+$string['privacy:metadata:forum_subscriptions:userid'] = 'ID för den användare som denna forumprenumeration relaterar till.';
+$string['privacy:metadata:forum_track_prefs'] = 'Information om vilka forum användaren valt att bevaka lästa inlägg för.';
+$string['privacy:metadata:forum_track_prefs:forumid'] = 'Forumet som där läsbevakning aktiverats.';
+$string['privacy:metadata:forum_track_prefs:userid'] = 'ID för den användare som denna forumbevakningsinställning relaterar till.';
+$string['privacy:metadata:preference:autosubscribe'] = 'Om du ska prenumerera på diskussioner när du svarar på inlägg i dem.';
+$string['privacy:metadata:preference:forum_discussionlistsortorder'] = 'Den önskade sorteringsordningen i diskussionslistan';
+$string['privacy:metadata:preference:maildigest'] = 'Den webbplatsomfattande inställningen för e-postsammanfattningar';
+$string['privacy:metadata:preference:markasreadonnotification'] = 'Om foruminlägg ska markeras som lästa när de tas emot som meddelanden.';
+$string['privacy:metadata:preference:trackforums'] = 'Om lässpårning ska aktiveras.';
 $string['privacy:postwasread'] = 'Detta inlägg lästes för första gången {$a->firstread} och senast {$a->lastread}';
 $string['privacy:readtrackingdisabled'] = 'Du har valt att INTE spåra vilka inlägg du läst i detta forum.';
 $string['privacy:request:delete:discussion:name'] = 'Ta bort på begäran av författaren';
@@ -608,7 +673,7 @@ $string['search:activity'] = 'Forum - aktivitetsinformation';
 $string['search:post'] = 'Forum - inlägg';
 $string['searchdatefrom'] = 'Inlägget måste vara nyare än så här';
 $string['searchdateto'] = 'Inlägget måste vara äldre än så här';
-$string['searchforumintro'] = 'Var snäll och mata in sökord i ett eller flera av de följande textfälten:';
+$string['searchforumintro'] = 'Skriv in sökord i ett eller flera av de följande textfälten:';
 $string['searchforums'] = 'Sök i forum';
 $string['searchfullwords'] = 'De här orden bör stå som hela ord';
 $string['searchnotwords'] = 'De här orden bör INTE tas med';
@@ -624,17 +689,18 @@ $string['searchwhichforums'] = 'Välj vilket/vilka forum du vill söka i';
 $string['searchwords'] = 'De här orden kan förekomma var som helst i inlägget';
 $string['seeallposts'] = 'Visa alla inlägg som den här användaren har gjort';
 $string['sendstudentnotificationsdefault'] = 'Standardinställning för "Meddela studenter"';
+$string['sendstudentnotificationsdefault_help'] = 'Ange standardvärdet för kryssrutan "Meddela deltagare" i bedömningsformuläret.';
 $string['sendstudentnotificationsno'] = 'Nej';
 $string['sendstudentnotificationsyes'] = 'Ja, skicka notis till student';
 $string['settings'] = 'Inställningar';
 $string['shortpost'] = 'Kort inlägg';
 $string['showgraderpanel'] = 'Visa bedömarpanel';
-$string['showingcountoftotaldiscussions'] = 'Visar {$a->count} av {$a->total} diskussioner';
+$string['showingcountoftotaldiscussions'] = 'Lista över diskussioner. Visar {$a->count} av {$a->total} diskussioner';
 $string['showmoreusers'] = 'Visa fler användare';
 $string['showpreviousrepliescount'] = 'Visa tidigare svar ({$a})';
 $string['showsubscribers'] = 'Visa prenumeranter';
 $string['showusersearch'] = 'Visa användarsök';
-$string['singleforum'] = 'Ett enkelt enskilt diskussionsämne';
+$string['singleforum'] = 'En enskild diskussion';
 $string['smallmessage'] = '{$a->user} gjorde inlägg i {$a->forumname}';
 $string['smallmessagedigest'] = 'Sammanfattningen från forum innehåller {$a} meddelanden';
 $string['starredonly'] = 'Visa enbart favoritmärkta trådar';
@@ -644,22 +710,14 @@ $string['subscribe'] = 'Prenumerera på detta forum';
 $string['subscribeall'] = 'Registrera alla som prenumeranter på detta forum';
 $string['subscribed'] = 'Prenumererar';
 $string['subscribediscussion'] = 'Prenumerera på denna diskussion';
-$string['subscribeenrolledonly'] = 'Det är tyvärr bara registrerade användare som har rätt att prenumerera på foruminlägg med hjälp av e-post.';
+$string['subscribeenrolledonly'] = 'Tyvärr får endast registrerade användare prenumerera på foruminläggsaviseringar.';
 $string['subscribenone'] = 'Avregistrera alla som prenumeranter på detta forum';
 $string['subscribers'] = 'Prenumeranter';
 $string['subscriberstowithcount'] = 'Prenumeranter på "{$a->name}" ({$a->count})';
 $string['subscribestart'] = 'Skicka notifieringar till mig när det kommer nya inlägg i detta forum.';
 $string['subscribestop'] = 'Skicka INTE notifieringar av inlägg i detta forum  till mig';
 $string['subscription'] = 'Prenumeration';
-$string['subscription_help'] = '<p>När man har prenumererar på ett forum så betyder det att man får notifieringar om nya inlägg i det forumet via e-post.
-(Inläggen skickas ungefär <?php echo $cfg->maxeditingtime/60 ?> minuter
-efter det att de har gjorts).</p>
-<p>Man kan vanligtvis välja om man vill prenumerera på ett forum eller ej.</p>
-<p>Läraren/kursledaren kan dock ställa in ett forum så att
-alla deltagare blir prenumeranter.</p>
-<p>Det lämpar sig särskilt i Nyhetsforumet och i forum
-som används i början på kurser (innan alla har upptäckt att
-de kan prenumerera själva).</p>';
+$string['subscription_help'] = 'Om du prenumererar på ett forum betyder det att du kommer att få ett meddelande om nya foruminlägg. Vanligtvis kan du välja om du vill prenumerera, men ibland tvingas prenumerationen så att alla får aviseringar.';
 $string['subscriptionandtracking'] = 'Prenumeration och spårning';
 $string['subscriptionauto'] = 'Automatisk prenumeration';
 $string['subscriptiondisabled'] = 'Inaktiverad';
@@ -679,7 +737,7 @@ $string['tagarea_forum_posts'] = 'Foruminlägg';
 $string['tagsdeleted'] = 'Forumetiketter har tagits bort';
 $string['thisforumhasduedate'] = 'Senaste datum för inlägg i detta forum är {$a}.';
 $string['thisforumisdue'] = 'Senaste datum för inlägg i detta forum var {$a}.';
-$string['thisforumisthrottled'] = 'Det här forumet tillåter bara ett visst antal inlägg som du kan göra inom en viss tidsperiod. Detta är f n inställt till {$a->blockafter} inlägg under {$a->blockperiod}';
+$string['thisforumisthrottled'] = 'Det här forumet tillåter bara ett visst antal inlägg som du kan göra inom en viss tidsperiod. Detta är just nu inställt till {$a->blockafter} inlägg under {$a->blockperiod}';
 $string['timed'] = 'Tidtagen';
 $string['timeddiscussion'] = 'Tidtagen diskussion';
 $string['timedhidden'] = 'Tidtagen-status: Dold för studenter';
@@ -716,17 +774,17 @@ $string['unreadpost'] = 'Oläst inlägg';
 $string['unreadposts'] = 'Olästa inlägg';
 $string['unreadpostsnumber'] = '{$a} olästa inlägg';
 $string['unreadpostsone'] = '1 oläst inlägg';
-$string['unsubscribe'] = 'Avbeställ prenumeration från detta forum';
+$string['unsubscribe'] = 'Avsluta prenumerationen för detta forum';
 $string['unsubscribeall'] = 'Avbryt alla prenumerationer på forum';
 $string['unsubscribeallconfirm'] = 'Du prenumererar för närvarande på {$a->forums} -forum, och {$a->discussions} diskussioner. Vill du verkligen avsluta prenumerationen på alla forum och diskussioner, och inaktivera diskussions auto-prenumeration?';
 $string['unsubscribeallconfirmdiscussions'] = 'Du prenumererar för närvarande på {$a->discussions} diskussioner. Vill du verkligen avsluta prenumerationen på alla diskussioner och inaktivera automatisk prenumeration på diskussioner?';
 $string['unsubscribeallconfirmforums'] = 'Du prenumererar för närvarande på {$a->forums} forum. Vill du verkligen avsluta prenumerationen på alla forum och inaktivera diskussions auto-prenumeration?';
 $string['unsubscribealldone'] = 'Alla dina prenumerationer på forum har tagits bort. Du kan fortfarande få meddelanden från forum med obligatorisk prenumeration. För att hantera dina inställningar för notifieringar gå till Mina inställningar.';
 $string['unsubscribeallempty'] = 'Du är tyvärr inte registrerad som prenumerant på några forum. Om du inte vill ha några fler e-postmeddelanden från den här servern, gå till din profil och inaktivera e-postadressen där.';
-$string['unsubscribed'] = 'Avbeställd';
-$string['unsubscribediscussion'] = 'Avbeställ prenumerationen från denna diskussion.';
-$string['unsubscribediscussionlink'] = 'Avbeställ prenumerationen från denna diskussion: {$a}';
-$string['unsubscribelink'] = 'Avbeställ prenumerationen från denna diskussion: {$a}';
+$string['unsubscribed'] = 'Avslutad';
+$string['unsubscribediscussion'] = 'Avsluta prenumerationen på denna diskussion.';
+$string['unsubscribediscussionlink'] = 'Avsluta prenumerationen på denna diskussion: {$a}';
+$string['unsubscribelink'] = 'Avsluta prenumerationen på denna diskussion: {$a}';
 $string['unsubscribeshort'] = 'Avregistrera prenumeration';
 $string['useexperimentalui'] = 'Använd experimentell nästlad disskussionsvy';
 $string['usermarksread'] = 'Markera manuellt ett inlägg som läst';
@@ -737,7 +795,7 @@ $string['viewconversation'] = 'Visa diskussion';
 $string['viewgrades'] = 'Visa betyg';
 $string['viewparentpost'] = 'Visa överliggande inlägg';
 $string['viewthediscussion'] = 'Visa diskussionen';
-$string['warnafter'] = 'Gör ett inlägg som varnar för en tröskel';
+$string['warnafter'] = 'Inläggströskel för varning';
 $string['warnafter_help'] = 'Studenter kan varnas om de närmar sig det maximala antalet inlägg som är tillåtna under en given tidsperiod. Den här inställningen anger när de ska varnas. Användare med kapaciteten mod/forum:postwithoutthrottling är undantagna från den här begränsningen.';
 $string['warnformorepost'] = 'Varning!  Det finns mer än ett diskussionämne i det forumet - som använder det senaste.';
 $string['yournewquestion'] = 'Din nya fråga';

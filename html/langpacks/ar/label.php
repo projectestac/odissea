@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'label', language 'ar', version '3.8'.
+ * Strings for component 'label', language 'ar', version '3.11'.
  *
  * @package     label
  * @category    string
@@ -31,7 +31,7 @@ $string['configdndresizewidth'] = 'عند إنشاء ملصق عن طريق سح
 $string['dndmedia'] = 'وسائط السحب والإفلات';
 $string['dndresizeheight'] = 'تغيير ارتفاع منطقة السحب والإفلات';
 $string['dndresizewidth'] = 'تغيير عرض منطقة السحب والإفلات';
-$string['dnduploadlabel'] = 'أضف وسائط إلى صفحة المقرر الدراسي';
+$string['dnduploadlabel'] = 'إضافة وسائط إلى صفحة المقرر الدراسي';
 $string['dnduploadlabeltext'] = 'إضافة ملصق إلى صفحة المقرر الدراسي';
 $string['indicator:cognitivedepth'] = 'الملصق معرفياً';
 $string['indicator:cognitivedepth_help'] = 'هذا المؤشر مبني على عمق الحالة المعرفية التي وصلها الطالب في مورد الملصق.';
@@ -45,13 +45,13 @@ $string['label:addinstance'] = 'إضافة ملصق جديد';
 $string['label:view'] = 'معاينة الملصق';
 $string['labeltext'] = 'نص الملصق';
 $string['modulename'] = 'ملصق';
-$string['modulename_help'] = 'يُفعِّل الملصق إدراج النصوص والصور ضمن روابط المصادر والأنشطة في صفحة المقرر الدراسي.الملصقات هي متعددة جدا، ويمكن أن تساعد على تحسين مظهر صفحة المقرر الدراسي إذا ما استخدمت بشكل مدروس.
+$string['modulename_help'] = 'وحدة الملصق تتيح إدراج النصوص والوسائط المتعددة في صفحة المقرر الدراسي فيما بين روابط النشاطات والموارد الأخرى. الملصقات لها نواح استعمال عديدة ويمكنها المساعدة في تحسين مظهر المقرر الدراسي إذا استُعمِلت بروية.
 
-ويمكن استخدام الملصقات
+يمكن استعمال الملصقات:
 
-* لتقسيم قائمة طويلة من الأنشطة باستخدامها كعنوان فرعي أو صورة
-* لعرض ملف الصوت المدمجة أو الفيديو مباشرة على صفحة المقرر الدراسي
-* لإضافة وصفاً موجزاً لقسم المقرر الدراسي';
+* للفصل ما بين قائمة طويلة من النشاطات بعنوان فرعي أو صورة
+* لعرض ملف صوت أو فيديو مضمَّنين مباشرة في صفحة المقرر الدراسي
+* لإضافة وصف موجز لمقطع المقرر الدراسي';
 $string['modulenameplural'] = 'ملصقات';
 $string['pluginadministration'] = 'إدارة الملصق';
 $string['pluginname'] = 'الملصق';

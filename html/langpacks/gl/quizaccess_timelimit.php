@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_timelimit', language 'gl', version '3.8'.
+ * Strings for component 'quizaccess_timelimit', language 'gl', version '3.11'.
  *
  * @package     quizaccess_timelimit
  * @category    string
@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmstart'] = 'A proba ten un tempo límite de {$a}. O tempo comeza a contarse a partir do momento en que comeza o intento e ten que entregar a proba antes de que caduque. Confirma que quere comezar agora mesmo a proba?';
-$string['confirmstartheader'] = 'Proba cronometrada';
+$string['confirmstart'] = 'O seu intento terá un límite de tempo de {$a}. Cando comece, o temporizador comezará a contarse e non se pode parar. Debe rematar o seu intento antes de que se esgote. Confirma que quere comezar agora?';
+$string['confirmstartheader'] = 'Límite de tempo';
 $string['pluginname'] = 'Regra de acceso á proba para límite de tempo';
 $string['privacy:metadata'] = 'O engadido de regra de acceso á proba para límite de tempo non almacena ningún dato persoal.';
-$string['quiztimelimit'] = 'Tempo límite: {$a}';
+$string['quiztimelimit'] = 'Límite de tempo: {$a}';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tag', language 'ar', version '3.8'.
+ * Strings for component 'tag', language 'ar', version '3.11'.
  *
  * @package     tag
  * @category    string
@@ -54,22 +54,22 @@ $string['editcollname'] = 'تحرير اسم مجموعة الوسوم';
 $string['editisstandard'] = 'تغيير استعمال الوسم القياسي';
 $string['editname'] = 'تحرير اسم الوسم';
 $string['editsearchable'] = 'تغيير ما هو قابل للبحث';
-$string['edittag'] = 'حرر هذا الوسم';
+$string['edittag'] = 'تحرير هذا الوسم';
 $string['edittagcoll'] = 'تحرير مجموعة الوسوم {$a}';
 $string['edittagcollection'] = 'تغيير مجموعة الوسوم';
 $string['entertags'] = 'أدخل الوسوم...';
 $string['errortagfrontpage'] = 'وضع وسوم على صفحة الموقع الرئيسية غير مسموح به';
 $string['errorupdatingrecord'] = 'خطأ عند تحديث سجل الوسم';
-$string['eventtagadded'] = 'تمت إضافة الوسم إلى العنصر';
-$string['eventtagcollcreated'] = 'تم إنشاء مجموعة الوسوم';
-$string['eventtagcolldeleted'] = 'تم حذف مجموعة الوسوم';
-$string['eventtagcollupdated'] = 'تم تحديث مجموعة الوسوم';
-$string['eventtagcreated'] = 'تم إنشاء الوسم';
-$string['eventtagdeleted'] = 'تم حذف الوسم';
-$string['eventtagflagged'] = 'تم تعليم الوسم';
-$string['eventtagremoved'] = 'تمت إزالة الوسم من العنصر';
-$string['eventtagunflagged'] = 'تم إلغاء تعليم الوسم';
-$string['eventtagupdated'] = 'تم تحديث الوسم';
+$string['eventtagadded'] = 'وسم تمت إضافته إلى عنصر';
+$string['eventtagcollcreated'] = 'مجموعة وسوم تم إنشاؤها';
+$string['eventtagcolldeleted'] = 'مجموعة وسوم تم حذفها';
+$string['eventtagcollupdated'] = 'مجموعة وسوم تم تحديثها';
+$string['eventtagcreated'] = 'وسم تم إنشاؤه';
+$string['eventtagdeleted'] = 'وسم تم حذفه';
+$string['eventtagflagged'] = 'وسم تم تعليمه';
+$string['eventtagremoved'] = 'وسم تمت إزالته من عنصر';
+$string['eventtagunflagged'] = 'وسم تم إلغاء تعليمه';
+$string['eventtagupdated'] = 'وسم تم تحديثه';
 $string['exclusivemode'] = 'أظهر فقط {$a->tagarea} الموسومة';
 $string['flag'] = 'عَلِّم';
 $string['flagasinappropriate'] = 'أشر لهذا كمحتوى غير مرغوب';
@@ -95,7 +95,7 @@ $string['notagsfound'] = 'تعذر العثور على وسوم تطابق "{$a}
 $string['nothingtoupdate'] = 'لا شيء لتحديثه';
 $string['owner'] = 'المالك';
 $string['page-tag-index'] = 'صفحة وسم مفردة';
-$string['page-tag-manage'] = 'إدارة صفحة الوسوم';
+$string['page-tag-manage'] = 'صفحة إدارة الوسوم';
 $string['page-tag-search'] = 'صفحة البحث في الوسوم';
 $string['page-tag-x'] = 'كافة صفحات الوسوم';
 $string['prevpage'] = 'عودة';
@@ -156,7 +156,7 @@ $string['tagcollection'] = 'مجموعة الوسوم';
 $string['tagcollection_help'] = 'مجموعات الوسوم هي حزم من الوسوم لمناطق مختلفة. على سبيل المثال، مجموعة من الوسوم القياسية يمكن استعمالها لوسم المقررات الدراسية، مع الإبقاء على وسوم إهتمامات المستخدمين ومنشورات المدونات ضمن مجموعة أخرى. عندما ينقر المستخدم على وسم، فإن صفحة الوسوم ستعرض له فقط العناصر التي معه ضمن نفس المجموعة. يمكن إضافة الوسوم تلقائياً إلى مجموعة وفقاً للمنطقة الموسومة أو يمكن إضافتها يدوياً بمثابة وسوم قياسية.';
 $string['tagcollections'] = 'مجموعات الوسوم';
 $string['tagdescription'] = 'وصف الوسم';
-$string['tags'] = 'وسوم';
+$string['tags'] = 'الوسوم';
 $string['tagsaredisabled'] = 'الوسوم معطّلة';
 $string['thingstaggedwith'] = '"{$a->name}" مستعمل {$a->count} مرة/مرات';
 $string['thingtaggedwith'] = '"{$a->name}" مستعمل مرة واحدة';

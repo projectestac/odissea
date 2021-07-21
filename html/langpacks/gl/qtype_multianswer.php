@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_multianswer', language 'gl', version '3.8'.
+ * Strings for component 'qtype_multianswer', language 'gl', version '3.11'.
  *
  * @package     qtype_multianswer
  * @category    string
@@ -29,7 +29,7 @@ $string['confirmquestionsaveasedited'] = 'Confirmo que quero que a pregunta se g
 $string['confirmsave'] = 'Confirmar e logo gardar {$a}';
 $string['correctanswer'] = 'Corrixir a resposta';
 $string['correctanswerandfeedback'] = 'Corrixir a resposta e o comentario';
-$string['decodeverifyquestiontext'] = 'Decodificar e comprobar o texto da pregunta';
+$string['decodeverifyquestiontext'] = 'Descodificar e comprobar o texto da pregunta';
 $string['invalidmultianswerquestion'] = 'Pregunta de respostas incrustadas (Cloze) non válida({$a}).';
 $string['layout'] = 'Deseño';
 $string['layouthorizontal'] = 'Fila horizontal de botóns de opción';
@@ -39,7 +39,7 @@ $string['layoutselectinline'] = 'Menú despregábel en liña no texto';
 $string['layoutundefined'] = 'Deseño sen definir';
 $string['layoutvertical'] = 'Columna vertical de botóns de opción';
 $string['nooptionsforsubquestion'] = 'Non foi posíbel obter as opcións para a pregunta part # {$a->sub} (question->id={$a->id})';
-$string['noquestions'] = 'A pregunta Cloze(multiresposta) «<strong>{$a}</strong>» non contén ningunha pregunta';
+$string['noquestions'] = 'A pregunta Cloze (multiresposta) «<strong>{$a}</strong>» non contén ningunha pregunta';
 $string['pleaseananswerallparts'] = 'Responda a todas as partes da pregunta.';
 $string['pluginname'] = 'Respostas incorporadas (Cloze)';
 $string['pluginname_help'] = 'As respostas incorporadas (Cloze) a preguntas consisten nunha pasaxe de texto con preguntas como as de multiescolla e resposta curta incorporadas dentro';
@@ -63,9 +63,9 @@ $string['questionsmissing'] = 'O texto da pregunta debe incluír cando menos unh
 $string['questionsmore'] = '{$a} pregunta(s) máis ca na pregunta de multiresposta gardada na base de datos';
 $string['questiontypechanged'] = 'Tipo de pregunta cambiado';
 $string['questiontypechangedcomment'] = 'Cando menos cambiouse un tipo de pregunta.<br >Engadiu, eliminou ou moveu a pregunta?<br >Mire máis adiante.';
-$string['questionusedinquiz'] = 'A pregunta utilízase en {$a->nb_of_quiz} exame(s), cun total de intento(s) : {$a->nb_of_attempts}';
+$string['questionusedinquiz'] = 'A pregunta utilízase en {$a->nb_of_quiz} proba(s), cun total de intento(s) : {$a->nb_of_attempts}';
 $string['storedqtype'] = 'Gardouse o tipo de pregunta {$a}';
 $string['subqresponse'] = 'parte {$a->i}: {$a->response}';
 $string['unknownquestiontypeofsubquestion'] = 'Tipo de pregunta descoñecida: {$a->type} da parte da pregunta # {$a->sub}';
-$string['warningquestionmodified'] = '<b>AVISO</b>';
+$string['warningquestionmodified'] = '<b>ADVERTENCIA</b>';
 $string['youshouldnot'] = '<b>NON DEBERÍA</b>';

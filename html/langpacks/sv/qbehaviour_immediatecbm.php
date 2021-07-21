@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_immediatecbm', language 'sv', version '3.8'.
+ * Strings for component 'qbehaviour_immediatecbm', language 'sv', version '3.11'.
  *
  * @package     qbehaviour_immediatecbm
  * @category    string
@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Välj en säkerhet.';
 $string['pluginname'] = 'Omedelbar återkoppling med CBM (Curriculum-Based Measurement)';
+$string['privacy:metadata'] = 'Pluginmodulen Omedelbar återkoppling med CBM frågebeteende lagrar ingen personinformation.';

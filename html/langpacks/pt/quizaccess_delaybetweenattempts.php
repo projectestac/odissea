@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_delaybetweenattempts', language 'pt', version '3.8'.
+ * Strings for component 'quizaccess_delaybetweenattempts', language 'pt', version '3.11'.
  *
  * @package     quizaccess_delaybetweenattempts
  * @category    string
@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Tempo entre as tentativas de acesso ao teste';
+$string['pluginname'] = 'Intervalo de tempo entre as tentativas ao teste';
 $string['privacy:metadata'] = 'O módulo Intervalo de tempo entre as tentativas ao teste não armazena quaisquer dados pessoais.';
-$string['youcannotwait'] = 'Este teste termina antes que possa iniciar uma nova tentativa.';
+$string['youcannotwait'] = 'Este teste irá fechar antes que possa iniciar uma nova tentativa.';
 $string['youmustwait'] = 'Tem de esperar antes de tentar uma nova tentativa ao teste. Poderá tentar de novo após {$a}.';

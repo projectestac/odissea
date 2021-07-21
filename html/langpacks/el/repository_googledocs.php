@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_googledocs', language 'el', version '3.8'.
+ * Strings for component 'repository_googledocs', language 'el', version '3.11'.
  *
  * @package     repository_googledocs
  * @category    string
@@ -38,6 +38,7 @@ $string['importformat'] = 'Ρυθμίσεις προεπιλεγμένων μο�
 $string['internal'] = 'Εσωτερικά (αρχεία αποθηκευμένα στο Moodle)';
 $string['issuer'] = 'Υπηρεσία OAuth 2';
 $string['issuer_help'] = 'Επιλέξτε την υπηρεσία OAuth 2 που έχει ρυθμιστεί ώστε να μιλά στο API του Google Drive. Εάν η υπηρεσία δεν υπάρχει ακόμα, θα πρέπει να δημιουργηθεί.';
+$string['mydrive'] = 'My Drive';
 $string['oauth2serviceslink'] = '<a href="{$a}" title="Σύνδεσμος ρυθμίσεων υπηρεσιών OAuth 2">Ρύθμιση υπηρεσιών OAuth 2</a>';
 $string['owner'] = 'Ιδιοκτησία: {$a}';
 $string['pluginname'] = 'Google Drive';
@@ -45,7 +46,8 @@ $string['presentationformat'] = 'Προεπιλεγμένος μορφότυπο
 $string['privacy:metadata:repository_googledocs'] = 'Το πρόσθετο «Αποθετήριο Google Drive» δεν αποθηκεύει κανένα προσωπικό δεδομένο αλλά μεταβιβάζει δεδομένα χρήστη από το Moodle προς το απομακρυσμένο σύστημα.';
 $string['privacy:metadata:repository_googledocs:email'] = 'Η διεύθυνση ηλε.ταχυδρομείου του χρήστη του αποθετηρίου Google Drive.';
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'Το κείμενο αναζήτησης ερωτήματος χρήστη του αποθετηρίου Google Drive.';
-$string['searchfor'] = 'Αναζήτηση για {$a}';
+$string['searchfor'] = 'Αποτελέσματα αναζήτησης για:';
 $string['servicenotenabled'] = 'Η πρόσβαση δεν έχει ρυθμιστεί. Βεβαιωθείτε ότι είναι ενεργοποιημένη η υπηρεσία «Drive API».';
+$string['shareddrives'] = 'Κοινόχρηστοι δίσκοι';
 $string['spreadsheetformat'] = 'Προεπιλεγμένος μορφότυπος εισαγωγής υπολογιστικού φύλλου';
 $string['supportedreturntypes'] = 'Υποστηριζόμενα αρχεία';

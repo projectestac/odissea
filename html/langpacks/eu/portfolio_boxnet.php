@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_boxnet', language 'eu', version '3.8'.
+ * Strings for component 'portfolio_boxnet', language 'eu', version '3.11'.
  *
  * @package     portfolio_boxnet
  * @category    string
@@ -36,7 +36,7 @@ $string['missinghttps_help'] = 'Kutxa honek soilik HTTPS gaituta duten webguneet
 $string['missingoauthkeys'] = 'Bezeroaren IDa eta sekretua falta dira';
 $string['missingoauthkeys_help'] = 'Ez dago bezeroaren ID-rik edo sekreturik plugin honentzat. Horrelako bat eskura dezakezu Box-eko garapen-orritik.';
 $string['newfolder'] = 'Fitxategia(k) gordetzeko karpeta berria';
-$string['noauthtoken'] = 'Ezin izan da autentifikazio-token-ik berreskuratu saio honetan erabiltzeko';
+$string['noauthtoken'] = 'Ezin izan da autentifikazio-tokenik berreskuratu saio honetan erabiltzeko';
 $string['notarget'] = 'Fitxategia igotzeko, zehaztu nehar duzu dagoeneko existitzen den karpeta bat edo karpeta berri bat';
 $string['noticket'] = 'Ezin izan da autentifikazio-saioa hasteko Box-etik ticket-a eskuratu';
 $string['password'] = 'Zure Box-eko pasahitza (ez da gordetzen)';

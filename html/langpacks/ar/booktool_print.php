@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_print', language 'ar', version '3.8'.
+ * Strings for component 'booktool_print', language 'ar', version '3.11'.
  *
  * @package     booktool_print
  * @category    string
@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventbookprinted'] = 'كتاب تمت طباعته';
 $string['eventchapterprinted'] = 'فصل تمت طباعته';
 $string['pluginname'] = 'طباعة الكتاب';
-$string['print:print'] = 'اطبع الكتاب';
+$string['print:print'] = 'طباعة الكتاب';
 $string['printbook'] = 'اطبع الكتاب';
 $string['printchapter'] = 'اطبع هذا الفصل';
 $string['printdate'] = 'التاريخ';
 $string['printedby'] = 'طبع بواسطة';
-$string['privacy:metadata'] = 'البرنامج المساعد لطباعة الكتب لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'ملحق طباعة الكتب لا يخزن أي بيانات شخصية.';

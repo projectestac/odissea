@@ -36,9 +36,11 @@ $config->copyright = optional_param('copyright', 0, PARAM_INT);
 
 $preventredirect = optional_param('preventredirect', true, PARAM_BOOL);
 
+$component = optional_param('component', '', PARAM_COMPONENT);
+
 $PAGE->set_url(new \moodle_url('/h5p/embed.php', array('url' => $url)));
 try {
-    $h5pplayer = new \core_h5p\player($url, $config, $preventredirect);
+    $h5pplayer = new \core_h5p\player($url, $config, $preventredirect, $component);
     $messages = $h5pplayer->get_messages();
 
 } catch (\Exception $e) {
@@ -84,6 +86,9 @@ if (empty($messages->error) && empty($messages->exception)) {
 
     $PAGE->add_body_class('h5p-embed');
     $PAGE->set_pagelayout('embedded');
+
+    // Load the embed.js to allow communication with the parent window.
+    $PAGE->requires->js(new moodle_url('/h5p/js/embed.js'));
 
     echo $OUTPUT->header();
 

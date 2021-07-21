@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'eu', version '3.8'.
+ * Strings for component 'cohort', language 'eu', version '3.11'.
  *
  * @package     cohort
  * @category    string
@@ -69,8 +69,8 @@ $string['namefieldempty'] = 'Eremuaren izena ezin da hutsik egon';
 $string['newidnumberfor'] = 'ID zenbaki berria {$a} kohortearentzat';
 $string['newnamefor'] = 'Izen berria {$a} kohortearentzat';
 $string['nocomponent'] = 'Eskuz sortua';
-$string['potusers'] = 'Balizko erabiltzaileak';
-$string['potusersmatching'] = 'Bat datozen balizko erabiltzaileak';
+$string['potusers'] = 'Erabiltzaile potentzialak';
+$string['potusersmatching'] = 'Bat datozen erabiltzaile potentzialak';
 $string['preview'] = 'Aurreikusi';
 $string['privacy:metadata:cohort_members'] = 'Erabiltzailearen kohorteen inguruko informazioa.';
 $string['privacy:metadata:cohort_members:cohortid'] = 'Kohortearen IDa';

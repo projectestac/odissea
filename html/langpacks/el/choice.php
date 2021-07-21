@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'choice', language 'el', version '3.8'.
+ * Strings for component 'choice', language 'el', version '3.11'.
  *
  * @package     choice
  * @category    string
@@ -53,6 +53,7 @@ $string['choicetext'] = 'Κείμενο επιλογής';
 $string['chooseaction'] = 'Επιλέξτε μία ενέργεια...';
 $string['chooseoption'] = 'Επιλογή: {$a}';
 $string['closebeforeopen'] = 'Έχετε ορίσει μια ημερομηνία κλεισίματος πριν από την ημερομηνία ανοίγματος χρήσης.';
+$string['completiondetail:submit'] = 'Κάντε μια επιλογή';
 $string['completionsubmit'] = 'Εμφάνιση ως πλήρης όταν ο χρήστης κάνει μια επιλογή';
 $string['description'] = 'Περιγραφή - Κείμενο εισαγωγής';
 $string['deselectalloption'] = 'Αποεπιλογή όλων των «{$a}»';
@@ -80,6 +81,7 @@ $string['indicator:socialbreadthdef'] = 'Κοινωνικό εύρος Επιλ�
 $string['indicator:socialbreadthdef_help'] = 'Ο συμμετέχων έχει φτάσει αυτό το ποσοστό αφοσίωσης στο κοινωνικό εύρος που προσφέρεται από τις δραστηριότητες Επιλογής κατά τη διάρκεια αυτού του διαστήματος ανάλυσης (Επίπεδα = Καμία αφοσίωση, Συμμετέχων μόνος, Συμμετέχων με άλλους)';
 $string['indicator:socialbreadthdef_link'] = 'Δείκτες_μαθησιακής_αναλυτικής#Κοινωνικό_εύρος';
 $string['limit'] = 'Όριο';
+$string['limita'] = 'Όριο: {$a}';
 $string['limitanswers'] = 'Περιόρισε το πλήθος των επιτρεπόμενων αποκρίσεων';
 $string['limitanswers_help'] = 'Αυτή η επιλογή σας επιτρέπει να περιορίσετε τον αριθμό των συμμετεχόντων που μπορούν να επιλέξουν κάθε επιλογή μεταξύ πολλών. Όταν επιτευχθεί το όριο τότε κανείς άλλος δεν μπορεί να επιλέξει αυτή την επιλογή.
 
@@ -112,6 +114,7 @@ $string['options'] = 'Επιλογές';
 $string['page-mod-choice-x'] = 'Οποιαδήποτε σελίδα αρθρώματος επιλογής';
 $string['pluginadministration'] = 'Διαχείριση Επιλογής';
 $string['pluginname'] = 'Επιλογή';
+$string['previewing'] = 'Αυτή είναι απλώς μια προεπισκόπηση των διαθέσιμων επιλογών για αυτήν τη δραστηριότητα. Θα μπορείτε να κάνετε μια επιλογή όταν ανοίξει.';
 $string['previewonly'] = 'Πρόκειται για μια προεπισκόπηση των διαθέσιμων επιλογών για αυτήν τη δραστηριότητα. Δεν θα μπορείτε να υποβάλετε την επιλογή σας μέχρι {$a}.';
 $string['privacy'] = 'Ιδιωτικότητα αποτελεσμάτων';
 $string['privacy:metadata:choice_answers'] = 'Πληροφορίες για τις απαντήσεις(η) που έχει επιλέξει ο χρήστης για μια δεδομένη δραστηριότητα επιλογής';
@@ -134,12 +137,15 @@ $string['publishnot'] = 'Μη δημοσιοποίηση των αποτελεσ
 $string['removemychoice'] = 'Διαγραφή της επιλογής μου';
 $string['removeresponses'] = 'Διαγραφή όλων των επιλογών';
 $string['responses'] = 'Αποκρίσεις';
+$string['responsesa'] = 'Αποκρίσεις: {$a}';
 $string['responsesresultgraphheader'] = 'Εμφάνιση γραφήματος';
 $string['responsesto'] = 'Αποκρίσεις σε {$a}';
 $string['results'] = 'Αποτελέσματα';
 $string['savemychoice'] = 'Αποθήκευση επιλογής';
 $string['search:activity'] = 'Επιλογή - πληροφορίες δραστηριότητας';
 $string['selectalloption'] = 'Επιλογή όλων των «{$a}»';
+$string['showavailable'] = 'Εμφάνιση διαθέσιμων χώρων';
+$string['showavailable_help'] = 'Εμφάνιση στους συμμετέχοντες του ορίου για κάθε επιλογή και του αριθμού των αποκρίσεων για αυτήν μέχρι στιγμής.';
 $string['showpreview'] = 'Εμφάνιση προεπισκόπησης';
 $string['showpreview_help'] = 'Επέτρεψε στους μαθητές την προεπισκόπηση των διαθέσιμων επιλογών πριν από το άνοιγμα για την υποβολή.';
 $string['showunanswered'] = 'Εμφάνιση στήλης για αναπάντητα';

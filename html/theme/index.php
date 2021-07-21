@@ -115,7 +115,7 @@ if (!empty($CFG->enabledevicedetection) && empty($device)) {
                 $screenshoturl = new moodle_url('/theme/image.php',
                     array('theme' => $themename, 'image' => 'screenshot', 'component' => 'theme'));
                 // Contents of the screenshot/preview cell.
-                $screenshotcell = html_writer::empty_tag('img', array('class' => 'img-responsive img-fluid',
+                $screenshotcell = html_writer::empty_tag('img', array('class' => 'img-fluid',
                     'src' => $screenshoturl, 'alt' => $strthemename));
                 // Show the name of the picked theme.
                 $headingthemename = $OUTPUT->heading($strthemename, 3);
@@ -133,14 +133,16 @@ if (!empty($CFG->enabledevicedetection) && empty($device)) {
         $deviceurl = new moodle_url('/theme/index.php', array('device' => $thedevice, 'sesskey' => sesskey()));
 
         $select = '';
-        //XTEC ************ MODIFICAT - To avoid schools can change the theme
-        //2013.04.22  @sarjona
+
+        // XTEC ************ MODIFICAT - Only xtecadmin can change the theme
+        // 2013.04.22 @sarjona
         if (get_protected_agora() && !$themelocked) {
-        //************ ORIGINAL
+        // ************ ORIGINAL
         /*
         if (!$themelocked) {
         */
-        //************ FI
+        // ************ FI
+
             $select = $OUTPUT->render(new single_button($deviceurl, $strthemeselect, 'get'));
         }
 
@@ -216,7 +218,7 @@ if (!empty($CFG->enabledevicedetection) && empty($device)) {
         $screenshotpath = new moodle_url('/theme/image.php',
             array('theme' => $themename, 'image' => 'screenshot', 'component' => 'theme'));
         // Contents of the first screenshot/preview cell.
-        $row[] = html_writer::empty_tag('img', array('class' => 'img-responsive img-fluid',
+        $row[] = html_writer::empty_tag('img', array('class' => 'img-fluid',
             'src' => $screenshotpath, 'alt' => $strthemename));
         // Contents of the second cell.
         $infocell = $OUTPUT->heading($strthemename, 3);

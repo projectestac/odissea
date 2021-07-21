@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_weeks', language 'sv', version '3.8'.
+ * Strings for component 'format_weeks', language 'sv', version '3.11'.
  *
  * @package     format_weeks
  * @category    string
@@ -27,14 +27,17 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addsections'] = 'Lägg till veckor';
 $string['automaticenddate'] = 'Beräkna slutdatum utifrån antal sektioner';
+$string['automaticenddate_help'] = 'Om den är aktiverad beräknas kursens slutdatum automatiskt utifrån antalet avsnitt och kursens startdatum.';
 $string['currentsection'] = 'Den här veckan';
 $string['deletesection'] = 'Ta bort vecka';
 $string['editsection'] = 'Redigera vecka';
 $string['editsectionname'] = 'Redigera namn';
 $string['hidefromothers'] = 'Dölj vecka';
 $string['newsectionname'] = 'Nytt namn på {$a}';
-$string['page-course-view-weeks'] = 'Vilken ingångssida (för kurs) som helst i  veckoformat';
+$string['page-course-view-weeks'] = 'Valfri kurs-huvudsida i veckoformat';
+$string['page-course-view-weeks-x'] = 'Valfri sida i veckoformat';
 $string['pluginname'] = 'Veckoformat';
+$string['privacy:metadata'] = 'Pluginmodulen Veckoformat lagrar ingen personinformation.';
 $string['section0name'] = 'Allmänt';
 $string['sectionname'] = 'Vecka';
 $string['showfromothers'] = 'Visa vecka';

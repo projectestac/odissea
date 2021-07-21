@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quizaccess_offlineattempts', language 'gl', version '3.8'.
+ * Strings for component 'quizaccess_offlineattempts', language 'gl', version '3.11'.
  *
  * @package     quizaccess_offlineattempts
  * @category    string
@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowofflineattempts'] = 'Permitir que a proba sexa tentada sen conexión usando a aplicación móbil';
 $string['allowofflineattempts_help'] = 'Se está activado, un usuario da aplicación móbil pode descargar a proba e tentala sen conexión.
 
-Nota: Non é posíbel que se active unha proba fóra de liña se ten un límite de tempo, ou require un enderezo de rede ou usa calquera comportamento de pregunta que non sexa o comentario diferido (con ou sen PBC -Puntuación Baseada na Certeza-)';
+Nota: Non é posíbel que se active unha proba sen conexión se ten un límite de tempo, ou require un enderezo de rede ou usa calquera comportamento de pregunta que non sexa o comentario diferido (con ou sen PBC -Puntuación Baseada na Certeza-)';
 $string['confirmdatasaved'] = 'Confirmo que non teño ningún traballo sen gardar nun dispositivo móbil.';
-$string['mobileapp'] = 'Aplicación móbil';
+$string['mobileapp'] = 'Apli móbil';
 $string['offlineattemptserror'] = 'Non é posíbel que se active unha proba fóra de liña se ten un límite de tempo, ou require un enderezo de rede ou usa calquera comportamento de pregunta que non sexa o comentario diferido (con ou sen PBC -Puntuación Baseada na Certeza-)
 (con ou sen PBC -Puntuación Baseada na Certeza-)';
 $string['offlinedatamessage'] = 'Vostede xa traballou neste intento usando un dispositivo móbil. Os datos foron gardados por última vez neste sitio hai {$a}.';

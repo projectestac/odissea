@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'hvp', language 'ko', version '3.8'.
+ * Strings for component 'hvp', language 'ko', version '3.11'.
  *
  * @package     hvp
  * @category    string
@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['action'] = '조치';
-$string['addedandupdatedpp'] = '{$a->%new}를 새 H5P 라이브러리에 추가하고 구 버전 {$a->%old}을/를 업데이트 하였습니다.';
-$string['addedandupdatedps'] = '{$a->%new}를 새 H5P 라이브러리에 추가하였고 구 버전 {$a->%old}을/를 업데이트 하였습니다.';
-$string['addedandupdatedsp'] = '{$a->%new}를 새 라이브러리에 추가하였고 {$a->%old} 구 버전을 업데이트 하였습니다.';
-$string['addedandupdatedss'] = '{$a->%new}를 새 H5P 라이브러리에 추가하고 구 버전 {$a->%old}을 업데이트 하였습니다.';
+$string['addedandupdatedpp'] = '{$a->%new}를 옛 버전 {$a->%old} 대신 새 H5P 라이브러리에 추가하였습니다.';
+$string['addedandupdatedps'] = '{$a->%new}를 옛 버전 {$a->%old} 대신 새 H5P 라이브러리에 추가하였습니다.';
+$string['addedandupdatedsp'] = '{$a->%new}를 옛 버전 {$a->%old} 대신 새 H5P 라이브러리에 추가하였습니다.';
+$string['addedandupdatedss'] = '{$a->%new}를 옛 버전 {$a->%old} 대신 새 H5P 라이브러리에 추가하였습니다.';
 $string['addednewlibraries'] = '{$a->%new}를 새 H5P 라이브러리에 추가하였습니다.';
-$string['addednewlibrary'] = '{$a->%new}를 새 라이브러리에 추가하였습니다.';
+$string['addednewlibrary'] = '{$a->%new}를 새 H5P 라이브러리에 추가하였습니다.';
 $string['additionalinfo'] = '추가정보';
 $string['additionallicenseinfo'] = '라이선스에 관한 모든 추가정보';
 $string['addlibraries'] = '라이브러리 추가';
@@ -120,22 +120,21 @@ $string['downloadtitle'] = '이 콘텐츠를 H5P파일로 다운로드하세요.
 $string['editor'] = '편집자';
 $string['emailconfirmbody'] = '{$a->username}님,
 
-\'{$a->coursename}\' 코스에서  \'{$a->hvpname}\'에 대한 답을 제출해주셔서 감사합니다.
+\'{$a->coursename}\' 코스의  \'{$a->hvpname}\'에 대한 답안을 제출해주셔서 감사합니다.
 
-이 메시지를 통해 제출한 답이 저장되었음을 확인합니다.
+이 메시지로 제출한 답안이 저장되었음을 확인합니다.
 
 이 H5P는 {$a->hvpurl} 에서 볼 수 있습니다.';
-$string['emailconfirmsmall'] = '\'{$a->hvpname}\'에 대한 답을 제출해주셔서 감사합니다.';
+$string['emailconfirmsmall'] = '\'{$a->hvpname}\'에 대한 답안을 제출해주셔서 감사합니다.';
 $string['emailconfirmsubject'] = '제출확인: {$a->hvpname}';
 $string['emailnotifybody'] = '{$a->username}님,
 
 {$a->studentname}\' 학생이 {$a->coursename}\' 코스에서  \'{$a->hvpname}\'을 완료했습니다.
 
 이 학습 내용을 {$a->hvpreporturl}에서 검토할 수 있습니다.';
-$string['emailnotifysmall'] = '{$a->studentname}\' 학생이   \'{$a->hvpname}\'을 완료했습니다.
-
+$string['emailnotifysmall'] = '{$a->studentname} 학생이   {$a->hvpname}을/를 완료했습니다.
 {$a->hvpreporturl}에서 확인하세요.';
-$string['emailnotifysubject'] = '{$a->studentname}\' 학생이   \'{$a->hvpname}\'을 완료했습니다.';
+$string['emailnotifysubject'] = '{$a->studentname} 학생이   {$a->hvpname}을 완료했습니다.';
 $string['embed'] = '임베드';
 $string['embedloginfailed'] = '이 콘텐츠에 접근할 권리를 가지고 있지 않습니다. 로그인을 해보세요.';
 $string['embedtitle'] = '이 콘텐츠에 대한 임베드 코드를 보세요.';
@@ -150,9 +149,9 @@ $string['enableframe'] = '액션 바와 프레임을 보여주기';
 $string['enablehublabel'] = 'H5P 허브 사용';
 $string['enablejavascript'] = '자바스크립트 활성화';
 $string['enablesavecontentstate'] = '현재 콘텐츠 저장';
-$string['enablesavecontentstate_help'] = '각 사용자의 현재 상호 활동 내역이 자동으로 저장됩니다. 이는 사용자가 그만둔 곳에서 다시 시작할 수 있다는 것을 의미합니다.';
+$string['enablesavecontentstate_help'] = '각 사용자에게 현재의 상호작용적인 콘텐츠를 자동으로 저장하세요. 이것은 사용자가 그만둔 곳에서 다시 시작할 수 있다는 것을 의미합니다.';
 $string['failedtodownloadh5p'] = '요청된 H5P를 다운로드하기에 실패했습니다.';
-$string['fileexceedsmaxsize'] = '패키지 중 일부 파일이 허락된 최대 파일 용량을 초과합니다. (%file %used > %max)';
+$string['fileexceedsmaxsize'] = '패키지 중 일부 파일이 허락된 최대 파일 사이즈를 초과합니다. (%file %used > %max)';
 $string['filenotfoundonserver'] = '서버에서 파일이 발견되지 않았습니다. 파일 업로드 설정을 체크하세요.';
 $string['filenotimage'] = '파일이 이미지가 아닙니다.';
 $string['filetypenotallowed'] = '허락되는 파일 유형이 아닙니다.';
@@ -172,13 +171,13 @@ $string['hubsettingsheader'] = '콘텐츠 유형';
 $string['hvp:addinstance'] = '새 H5P 활동 만들기';
 $string['hvp:emailconfirmsubmission'] = '제출시 확인 메시지 받기';
 $string['hvp:emailnotifysubmission'] = '학습활동이 제출되었을 때 알림메시지 받기';
-$string['hvp:getcachedassets'] = 'H5P 활동을 보기 위해 필요함';
-$string['hvp:getembedcode'] = '\'권한 조정\' 옵션이 설정되었을 때 H5P 임베드 코드 보기';
-$string['hvp:getexport'] = '\'권한 조정\' 옵션이 설정되었을 때 .h5p파일 내려받기';
+$string['hvp:getcachedassets'] = 'H5P 활동 보기를 위해 필수';
+$string['hvp:getembedcode'] = '\'허락이 요구됨\' 옵션이 설정되었을 때 H5P 임베드 코드 보기';
+$string['hvp:getexport'] = '\'허락이 요구됨\' 옵션이 설정되었을 때 .h5p 파일 다운로드하기';
 $string['hvp:installrecommendedh5plibraries'] = 'H5P.org가 추천한 안전한 새 H5P 콘텐츠 유형 설치하기';
-$string['hvp:manage'] = '기존 H5P 활동 수정';
-$string['hvp:restrictlibraries'] = '특정 H5P 콘텐츠 유형에 접근 제한';
-$string['hvp:savecontentuserdata'] = 'H5P 활동에 대한 사용자 진도 저장';
+$string['hvp:manage'] = '만들어진 H5P 활동 편집하기';
+$string['hvp:restrictlibraries'] = '어떤 H5P 콘텐츠 유형에 접근 제한';
+$string['hvp:savecontentuserdata'] = 'H5P 활동에 대한 사용자 진행 상황 저장';
 $string['hvp:saveresults'] = '완료된 H5P 활동에서 결과 저장';
 $string['hvp:updatelibraries'] = '새 H5P 콘텐츠 유형이나 이미 존재하는 유형 설치하기';
 $string['hvp:userestrictedlibraries'] = '제한된 H5P 콘텐츠 유형 사용하기';
@@ -189,8 +188,8 @@ $string['installdenied'] = '콘텐츠 유형을 설치할 권한이 없습니다
 $string['installedlibraries'] = '설치된 라이브러리';
 $string['intro'] = '소개';
 $string['invalidaudioformat'] = '유효하지 않은 오디오 파일 포맷. mp3 혹은 wav 파일을 사용하세요.';
-$string['invalidcontentfolder'] = '쓸 수 없는 콘텐츠 폴더';
-$string['invalidcontenttype'] = '선택한 콘텐츠 유형은 쓸 수 없습니다.';
+$string['invalidcontentfolder'] = '유효하지 않은 콘텐츠 폴더';
+$string['invalidcontenttype'] = '선택한 콘텐츠 유형은 유효하지 않습니다.';
 $string['invalidfieldtype'] = '유효하지 않은 필드 유형';
 $string['invalidfile'] = '"{$a->%filename}" 파일은 허락되지 않습니다. 다음 확장자를 가진 파일들만 허락됩니다: {$a->%files-allowed}.';
 $string['invalidh5ppost'] = '포스트할 수 없습니다.';

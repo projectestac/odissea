@@ -133,7 +133,7 @@ class tool_dataprivacy_api_testcase extends advanced_testcase {
         $result = api::update_request_status($requestid, api::DATAREQUEST_STATUS_AWAITING_APPROVAL, 0, $secondcomment);
         $this->assertTrue($result);
         $datarequest = new data_request($requestid);
-        $this->assertRegExp("/.*{$comment}.*{$secondcomment}/s", $datarequest->get('dpocomment'));
+        $this->assertMatchesRegularExpression("/.*{$comment}.*{$secondcomment}/s", $datarequest->get('dpocomment'));
 
         // Update with a valid status.
         $result = api::update_request_status($requestid, api::DATAREQUEST_STATUS_DOWNLOAD_READY);
@@ -237,9 +237,9 @@ class tool_dataprivacy_api_testcase extends advanced_testcase {
         // There should only be one PO role.
         $this->assertCount(1, $roleids);
         // Confirm it contains the manager role.
-        $this->assertContains($managerroleid, $roleids);
+        $this->assertContainsEquals($managerroleid, $roleids);
         // And it does not contain the editing teacher role.
-        $this->assertNotContains($editingteacherroleid, $roleids);
+        $this->assertNotContainsEquals($editingteacherroleid, $roleids);
     }
 
     /**
@@ -555,32 +555,65 @@ class tool_dataprivacy_api_testcase extends advanced_testcase {
     }
 
     /**
-     * Test for api::create_data_request()
+     * Data provider for data request creation tests.
+     *
+     * @return array
      */
-    public function test_create_data_request() {
-        $this->resetAfterTest();
-
-        $generator = new testing_data_generator();
-        $user = $generator->create_user();
-        $comment = 'sample comment';
-
-        // Login as user.
-        $this->setUser($user->id);
-
-        // Test data request creation.
-        $datarequest = api::create_data_request($user->id, api::DATAREQUEST_TYPE_EXPORT, $comment);
-        $this->assertEquals($user->id, $datarequest->get('userid'));
-        $this->assertEquals($user->id, $datarequest->get('requestedby'));
-        $this->assertEquals(0, $datarequest->get('dpo'));
-        $this->assertEquals(api::DATAREQUEST_TYPE_EXPORT, $datarequest->get('type'));
-        $this->assertEquals(api::DATAREQUEST_STATUS_AWAITING_APPROVAL, $datarequest->get('status'));
-        $this->assertEquals($comment, $datarequest->get('comments'));
+    public function data_request_creation_provider() {
+        return [
+            'Export request by user, automatic approval off' => [
+                false, api::DATAREQUEST_TYPE_EXPORT, 'automaticdataexportapproval', false, 0,
+                api::DATAREQUEST_STATUS_AWAITING_APPROVAL, 0
+            ],
+            'Export request by user, automatic approval on' => [
+                false, api::DATAREQUEST_TYPE_EXPORT, 'automaticdataexportapproval', true, 0,
+                api::DATAREQUEST_STATUS_APPROVED, 1
+            ],
+            'Export request by PO, automatic approval off' => [
+                true, api::DATAREQUEST_TYPE_EXPORT, 'automaticdataexportapproval', false, 0,
+                api::DATAREQUEST_STATUS_AWAITING_APPROVAL, 0
+            ],
+            'Export request by PO, automatic approval on' => [
+                true, api::DATAREQUEST_TYPE_EXPORT, 'automaticdataexportapproval', true, 'dpo',
+                api::DATAREQUEST_STATUS_APPROVED, 1
+            ],
+            'Delete request by user, automatic approval off' => [
+                false, api::DATAREQUEST_TYPE_DELETE, 'automaticdatadeletionapproval', false, 0,
+                api::DATAREQUEST_STATUS_AWAITING_APPROVAL, 0
+            ],
+            'Delete request by user, automatic approval on' => [
+                false, api::DATAREQUEST_TYPE_DELETE, 'automaticdatadeletionapproval', true, 0,
+                api::DATAREQUEST_STATUS_APPROVED, 1
+            ],
+            'Delete request by PO, automatic approval off' => [
+                true, api::DATAREQUEST_TYPE_DELETE, 'automaticdatadeletionapproval', false, 0,
+                api::DATAREQUEST_STATUS_AWAITING_APPROVAL, 0
+            ],
+            'Delete request by PO, automatic approval on' => [
+                true, api::DATAREQUEST_TYPE_DELETE, 'automaticdatadeletionapproval', true, 'dpo',
+                api::DATAREQUEST_STATUS_APPROVED, 1
+            ],
+        ];
     }
 
     /**
-     * Test for api::create_data_request() made by DPO.
+     * Test for api::create_data_request()
+     *
+     * @dataProvider data_request_creation_provider
+     * @param bool $asprivacyofficer Whether the request is made as the Privacy Officer or the user itself.
+     * @param string $type The data request type.
+     * @param string $setting The automatic approval setting.
+     * @param bool $automaticapproval Whether automatic data request approval is turned on or not.
+     * @param int|string $expecteddpoval The expected value for the 'dpo' field. 'dpo' means we'd the expected value would be the
+     *                                   user ID of the privacy officer which happens in the case where a PO requests on behalf of
+     *                                   someone else and automatic data request approval is turned on.
+     * @param int $expectedstatus The expected status of the data request.
+     * @param int $expectedtaskcount The number of expected queued data requests tasks.
+     * @throws coding_exception
+     * @throws invalid_persistent_exception
      */
-    public function test_create_data_request_by_dpo() {
+    public function test_create_data_request($asprivacyofficer, $type, $setting, $automaticapproval, $expecteddpoval,
+                                             $expectedstatus, $expectedtaskcount) {
         global $USER;
 
         $this->resetAfterTest();
@@ -589,16 +622,34 @@ class tool_dataprivacy_api_testcase extends advanced_testcase {
         $user = $generator->create_user();
         $comment = 'sample comment';
 
-        // Login as DPO (Admin is DPO by default).
-        $this->setAdminUser();
+        // Login.
+        if ($asprivacyofficer) {
+            $this->setAdminUser();
+        } else {
+            $this->setUser($user->id);
+        }
+
+        // Set the automatic data request approval setting value.
+        set_config($setting, $automaticapproval, 'tool_dataprivacy');
+
+        // If set to 'dpo' use the currently logged-in user's ID (which should be the admin user's ID).
+        if ($expecteddpoval === 'dpo') {
+            $expecteddpoval = $USER->id;
+        }
 
         // Test data request creation.
-        $datarequest = api::create_data_request($user->id, api::DATAREQUEST_TYPE_EXPORT, $comment);
+        $datarequest = api::create_data_request($user->id, $type, $comment);
         $this->assertEquals($user->id, $datarequest->get('userid'));
         $this->assertEquals($USER->id, $datarequest->get('requestedby'));
-        $this->assertEquals(api::DATAREQUEST_TYPE_EXPORT, $datarequest->get('type'));
-        $this->assertEquals(api::DATAREQUEST_STATUS_AWAITING_APPROVAL, $datarequest->get('status'));
+        $this->assertEquals($expecteddpoval, $datarequest->get('dpo'));
+        $this->assertEquals($type, $datarequest->get('type'));
+        $this->assertEquals($expectedstatus, $datarequest->get('status'));
         $this->assertEquals($comment, $datarequest->get('comments'));
+        $this->assertEquals($automaticapproval, $datarequest->get('systemapproved'));
+
+        // Test number of queued data request tasks.
+        $datarequesttasks = manager::get_adhoc_tasks(process_data_request_task::class);
+        $this->assertCount($expectedtaskcount, $datarequesttasks);
     }
 
     /**
@@ -787,7 +838,7 @@ class tool_dataprivacy_api_testcase extends advanced_testcase {
             $this->assertCount($filteredcount, $filteredrequests);
             // Confirm the filtered requests match the status filter(s).
             foreach ($filteredrequests as $request) {
-                $this->assertContains($request->get('status'), $statuses);
+                $this->assertContainsEquals($request->get('status'), $statuses);
             }
 
             if ($numstatus > 1) {
@@ -946,8 +997,8 @@ class tool_dataprivacy_api_testcase extends advanced_testcase {
         $this->assertEquals($subject, $message->subject);
         $this->assertEquals('tool_dataprivacy', $message->component);
         $this->assertEquals('contactdataprotectionofficer', $message->eventtype);
-        $this->assertContains(fullname($dpo), $message->fullmessage);
-        $this->assertContains(fullname($user1), $message->fullmessage);
+        $this->assertStringContainsString(fullname($dpo), $message->fullmessage);
+        $this->assertStringContainsString(fullname($user1), $message->fullmessage);
     }
 
     /**
@@ -2254,5 +2305,89 @@ class tool_dataprivacy_api_testcase extends advanced_testcase {
         // Now make child the primary admin, confirm parent can't make deletion request.
         set_config('siteadmins', $child->id);
         $this->assertFalse(api::can_create_data_deletion_request_for_children($child->id));
+    }
+
+    /**
+     * Data provider function for testing \tool_dataprivacy\api::queue_data_request_task().
+     *
+     * @return array
+     */
+    public function queue_data_request_task_provider() {
+        return [
+            'With user ID provided' => [true],
+            'Without user ID provided' => [false],
+        ];
+    }
+
+    /**
+     * Test for \tool_dataprivacy\api::queue_data_request_task().
+     *
+     * @dataProvider queue_data_request_task_provider
+     * @param bool $withuserid
+     */
+    public function test_queue_data_request_task(bool $withuserid) {
+        $this->resetAfterTest();
+
+        $this->setAdminUser();
+
+        if ($withuserid) {
+            $user = $this->getDataGenerator()->create_user();
+            api::queue_data_request_task(1, $user->id);
+            $expecteduserid = $user->id;
+        } else {
+            api::queue_data_request_task(1);
+            $expecteduserid = null;
+        }
+
+        // Test number of queued data request tasks.
+        $datarequesttasks = manager::get_adhoc_tasks(process_data_request_task::class);
+        $this->assertCount(1, $datarequesttasks);
+        $requesttask = reset($datarequesttasks);
+        $this->assertEquals($expecteduserid, $requesttask->get_userid());
+    }
+
+    /**
+     * Data provider for test_is_automatic_request_approval_on().
+     */
+    public function automatic_request_approval_setting_provider() {
+        return [
+            'Data export, not set' => [
+                'automaticdataexportapproval', api::DATAREQUEST_TYPE_EXPORT, null, false
+            ],
+            'Data export, turned on' => [
+                'automaticdataexportapproval', api::DATAREQUEST_TYPE_EXPORT, true, true
+            ],
+            'Data export, turned off' => [
+                'automaticdataexportapproval', api::DATAREQUEST_TYPE_EXPORT, false, false
+            ],
+            'Data deletion, not set' => [
+                'automaticdatadeletionapproval', api::DATAREQUEST_TYPE_DELETE, null, false
+            ],
+            'Data deletion, turned on' => [
+                'automaticdatadeletionapproval', api::DATAREQUEST_TYPE_DELETE, true, true
+            ],
+            'Data deletion, turned off' => [
+                'automaticdatadeletionapproval', api::DATAREQUEST_TYPE_DELETE, false, false
+            ],
+        ];
+    }
+
+    /**
+     * Test for \tool_dataprivacy\api::is_automatic_request_approval_on().
+     *
+     * @dataProvider automatic_request_approval_setting_provider
+     * @param string $setting The automatic approval setting.
+     * @param int $type The data request type.
+     * @param bool $value The setting's value.
+     * @param bool $expected The expected result.
+     */
+    public function test_is_automatic_request_approval_on($setting, $type, $value, $expected) {
+        $this->resetAfterTest();
+
+        if ($value !== null) {
+            set_config($setting, $value, 'tool_dataprivacy');
+        }
+
+        $this->assertEquals($expected, api::is_automatic_request_approval_on($type));
     }
 }

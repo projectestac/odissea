@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'grading', language 'es', version '3.8'.
+ * Strings for component 'grading', language 'es', version '3.11'.
  *
  * @package     grading
  * @category    string
@@ -29,6 +29,7 @@ $string['activemethodinfo'] = 'Se ha seleccionado \'{$a->method}\' como el méto
 $string['activemethodinfonone'] = 'No se ha seleccionado el método avanzado de calificación para el área \'{$a->area}\'. Se usará el método simple directo de calificación.';
 $string['changeactivemethod'] = 'Cambiar método de calificación activo a';
 $string['clicktoclose'] = 'clic para cerrar';
+$string['error:notinrange'] = 'Se proporcionó una calificación no válida "{$a->grade}". Las calificaciones deben estar entre 0 y {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'No es posible crear un formulario de calificación';
 $string['formnotavailable'] = 'El método de calificación avanzada fue seleccionado para su uso, pero el formulario de calificación aún no está disponible. Debería definirlo antes utilizando el enlace existente en el menú Administración.';
 $string['gradingformunavailable'] = 'Tenga en cuenta que el formulario de calificación avanzada no está listo en este momento. Se utilizará el método simple de calificación hasta que el formulario sea válido.';
@@ -57,6 +58,27 @@ $string['manageactionshareconfirm'] = 'Está a punto de cuardar una copia del fo
 $string['manageactionsharedone'] = 'El formulario se guardó correctamente como plantilla';
 $string['noitemid'] = 'No es posible calificar. El elemento de calificación no existe.';
 $string['nosharedformfound'] = 'No se ha encontrado plantilla';
+$string['privacy:metadata:grading_definitions'] = 'Información básica sobre un formulario de calificación avanzado definido en un área calificable.';
+$string['privacy:metadata:grading_definitions:areaid'] = 'El ID de área donde se define el formulario de calificación avanzada.';
+$string['privacy:metadata:grading_definitions:copiedfromid'] = 'El ID de definición de calificación de donde se copió.';
+$string['privacy:metadata:grading_definitions:description'] = 'La descripción del método de calificación avanzado.';
+$string['privacy:metadata:grading_definitions:method'] = 'El método de calificación responsable de la definición.';
+$string['privacy:metadata:grading_definitions:name'] = 'El nombre de la definición de calificación avanzada.';
+$string['privacy:metadata:grading_definitions:options'] = 'Algunas configuraciones de esta definición de calificación.';
+$string['privacy:metadata:grading_definitions:status'] = 'El estado de esta definición de calificación avanzada.';
+$string['privacy:metadata:grading_definitions:timecopied'] = 'El momento en que se copió la definición de calificación.';
+$string['privacy:metadata:grading_definitions:timecreated'] = 'El momento en que se creó la definición de calificación.';
+$string['privacy:metadata:grading_definitions:timemodified'] = 'La hora en que se modificó por última vez la definición de calificación.';
+$string['privacy:metadata:grading_definitions:usercreated'] = 'El ID del usuario que creó la definición de calificación.';
+$string['privacy:metadata:grading_definitions:usermodified'] = 'El ID del usuario que modificó por última vez la definición de calificación.';
+$string['privacy:metadata:grading_instances'] = 'Registro de evaluación de un elemento calificable evaluado por un evaluador.';
+$string['privacy:metadata:grading_instances:feedback'] = 'La retroalimentación dada por el usuario.';
+$string['privacy:metadata:grading_instances:feedbackformat'] = 'El formato de texto de los comentarios proporcionados por el usuario.';
+$string['privacy:metadata:grading_instances:raterid'] = 'El ID del usuario que calificó la instancia de calificación.';
+$string['privacy:metadata:grading_instances:rawgrade'] = 'La calificación de la instancia de calificación.';
+$string['privacy:metadata:grading_instances:status'] = 'El estado de esta instancia de calificación.';
+$string['privacy:metadata:grading_instances:timemodified'] = 'La hora en que se modificó por última vez la instancia de calificación.';
+$string['privacy:metadata:gradingformpluginsummary'] = 'Datos para el método de calificación.';
 $string['searchownforms'] = 'Incluir mis propios formularios';
 $string['searchtemplate'] = 'Búsqueda de formularios de calificación';
 $string['searchtemplate_help'] = 'Usted puede buscar aquí un formulario de calificación y utilizarlo como una plantilla para crear un nuevo formulario de calificación. Simplemente escriba palabras que formen parte del nombre del formulario, la descripción o el cuerpo del mismo. Para buscar una frase, ponga toda la consulta entre comillas dobles.

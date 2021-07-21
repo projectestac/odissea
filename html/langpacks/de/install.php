@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'install', language 'de', version '3.8'.
+ * Strings for component 'install', language 'de', version '3.11'.
  *
  * @package     install
  * @category    string
@@ -105,7 +105,7 @@ $string['downloadlanguagesub'] = 'Sie können ein Sprachpaket herunterladen und 
 $string['doyouagree'] = 'Stimmen Sie zu? (ja/nein)';
 $string['environmenthead'] = 'Installationsvoraussetzungen werden geprüft ...';
 $string['environmentsub'] = 'Es wird geprüft, ob die alle Systemkomponenten die Installationsanforderungen erfüllen.';
-$string['environmentsub2'] = 'Jede Version hat Mindestvoraussetzungen für der PHP-Version und für verbindliche PHP-Extensions. Vor einer Installation oder einer Aktualisierung wird eine vollständige Prüfung durchgeführt. Bitte fragen Sie den Administrator des Servers, wenn Sie mit der Installation einer neuen Version oder mit der Aktivierung von PHP-Extensions nicht weiterkommen.';
+$string['environmentsub2'] = 'Jede Version hat Mindestvoraussetzungen für der PHP-Version und für verbindliche PHP-Extensions. Vor einer Installation oder einer Aktualisierung wird eine vollständige Prüfung durchgeführt. Bitte fragen Sie die Administrator/innen des Servers, wenn Sie mit der Installation einer neuen Version oder mit der Aktivierung von PHP-Extensions nicht weiterkommen.';
 $string['errorsinenvironment'] = 'Fehler bei der Prüfung der Systemvoraussetzungen!';
 $string['fail'] = 'Fehlgeschlagen';
 $string['fileuploads'] = 'Hochladene Dateien';
@@ -130,6 +130,12 @@ $string['memorylimithelp'] = '<p>Die PHP-Einstellung memory_limit Ihres Servers 
 <p>Achtung: auf einigen Servern hindert diese Einstellung <b>alle</b> PHP-Seiten und Sie erhalten Fehlermeldungen. Entfernen Sie dann den Eintrag in der .htaccess-Datei wieder.</p></li>
 </ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP ist nicht richtig konfiguriert, um über die PHP-Extension MySQLi mit der MySQL-Datenbank zu kommunizieren. Prüfen Sie die Datei php.ini oder kompilieren Sie PHP neu.';
+$string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
+$string['nativeauroramysqlhelp'] = '<p>In der Datenbank werden die meisten Moodle-Einstellungen und -Daten gespeichert.</p>
+<p>Der Name der Datenbank, der Nutzername und das Kennwort sind Pflichtfelder. Das Tabellenpräfix ist optional.
+<br>Der Name der Datenbank darf nur alphanumerische Zeichen, Dollar ($) und Unterstrich (_) enthalten.</p>
+<p>Wenn die Datenbank derzeit nicht vorhanden ist und der von Ihnen angegebene Nutzer über die Berechtigung verfügt, versucht Moodle, eine neue Datenbank mit den richtigen Berechtigungen und Einstellungen zu erstellen.</p>
+<p>Dieser Treiber ist nicht mit der älteren MyISAM-Engine kompatibel.</p>';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>Die Datenbank, in der Moodle seine Einstellungen und Daten speichert, muss konfiguriert werden.</p>
 <p>Datenbankname, Nutzername und Kennwort sind Pflichtfelder. Tabellenpräfix ist optional.</p>

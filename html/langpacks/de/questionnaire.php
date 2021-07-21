@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'questionnaire', language 'de', version '3.8'.
+ * Strings for component 'questionnaire', language 'de', version '3.11'.
  *
  * @package     questionnaire
  * @category    string
@@ -215,7 +215,7 @@ $string['feedbacksectionheadingtext'] = 'Überschrift';
 $string['feedbacksectionlabel'] = 'Textfeld';
 $string['feedbacksectionlabel_help'] = 'Dieses Textfeld wird in den Diagrammen genutzt. Halten Sie Ihren Text so kurz wie möglich.';
 $string['feedbacksectionquestions'] = 'Fragen in Abschnitt {$a}';
-$string['feedbacksections'] = '{$a} Abschnittsfeedback';
+$string['feedbacksections'] = 'Abschnittsfeedback';
 $string['feedbacksectionsselect'] = 'Abschnitte';
 $string['feedbacksectionsselect_help'] = 'Platzieren Sie Ihre Fragen in diese Abschnitte';
 $string['feedbacksettingssaved'] = 'Feedback-Einstellungen gespeichert';
@@ -267,8 +267,8 @@ Um eine bestimmte Anzahl von Häkchen zu erzwingen, setzen Sie  **Min.** und **M
 $string['misconfigured'] = 'Der Kurs ist falsch konfiguriert';
 $string['missingname'] = 'Die Frage {$a} kann in diesem Feedback nicht genutzt werden, weil sie keinen Namen hat.';
 $string['missingnameandrequired'] = 'Die Frage {$a} kann in diesem Feedback nicht genutzt werden, weil sie keinen Namen hat und nicht auf \'erforderlich\' gesetzt ist.';
-$string['missingquestion'] = 'Füllen Sie bitte das Pflichtfeld aus.';
-$string['missingquestions'] = 'Füllen Sie bitte die Pflichtfelder aus:';
+$string['missingquestion'] = 'Füllen Sie das Pflichtfeld aus';
+$string['missingquestions'] = 'Füllen Sie die Pflichtfelder aus:';
 $string['missingrequired'] = 'Die Frage {$a} kann in diesem Feedback nicht genutzt werden, weil sie nicht auf \'erforderlich\' gesetzt ist.';
 $string['modulename'] = 'Befragung';
 $string['modulename_help'] = 'Das Modul Befragung ermöglicht die Erstellung von Fragebögen, die die Teilnehmer/innen ausfüllen sollen.';
@@ -520,7 +520,7 @@ $string['show_nonrespondents'] = 'Nicht-Teilnehmende';
 $string['started'] = 'gestartet';
 $string['strfdate'] = '%d.%m.%Y';
 $string['strfdateformatcsv'] = 'd.m.Y H:i:s';
-$string['strictdateformatting'] = 'Nutzen Sie das Format Jahr-Monat-Tag, z.B. für den 4. März 2019:  <strong>2019-03-04</strong>';
+$string['strictdateformatting'] = 'Tragen Sie das Datum über die Kalenderauswahl ein oder verwenden Sie das Format \'JJJJ-MM-TT\'.';
 $string['subject'] = 'Thema';
 $string['submissionnotificationhtmlanon'] = 'Jemand hat eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
 $string['submissionnotificationhtmluser'] = '"<a href="{$a->profileurl}">{$a->username}</a>" hat eine neue <a href="{$a->submissionurl}">Antwort</a> zur Befragung "{$a->name}" abgegeben.';

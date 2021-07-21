@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_site_main_menu', language 'ar', version '3.8'.
+ * Strings for component 'block_site_main_menu', language 'ar', version '3.11'.
  *
  * @package     block_site_main_menu
  * @category    string
@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'القائمة الرئيسية';
-$string['privacy:metadata'] = 'القائمة الرئيسية تعرض فقط عناصر محفوظة في مواقع أخرى.';
-$string['site_main_menu:addinstance'] = 'أضف عنصر جديد في القائمة الرئيسية';
+$string['privacy:metadata'] = 'كتلة القائمة الرئيسية تعرض فقط عناصر محفوظة في مواقع أخرى.';
+$string['site_main_menu:addinstance'] = 'إضافة كتلة قائمة رئيسية جديدة';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_replace', language 'sv', version '3.8'.
+ * Strings for component 'tool_replace', language 'sv', version '3.11'.
  *
  * @package     tool_replace
  * @category    string
@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['additionalskiptables'] = 'Ytterligare tabeller att undanta';
+$string['additionalskiptables_desc'] = 'En kommaseparerad lista med tabeller som ska undantas när sök och ersätt körs i databasen.';
 $string['cannotfit'] = 'Ersättningen är längre än originalet och förkortning är inte tillåtet; kan inte fortsätta.';
 $string['disclaimer'] = 'Jag förstår riskerna med denna åtgärd';
 $string['doit'] = 'Ja, gör det!';
-$string['excludedtables'] = 'Flera tabeller uppdateras inte som en del av textersättningen. Dessa inkluderar konfiguration, logg, händelser och sessionstabeller.';
+$string['excludedtables'] = 'Flera tabeller uppdateras inte som en del av textersättningen. Dessa inkluderar konfiguration-, logg-, händelse- och sessionstabeller.';
 $string['invalidcharacter'] = 'Ogiltiga tecken hittades i sök- eller ersättningstexten.';
 $string['notifyfinished'] = '...slutförd';
 $string['notifyrebuilding'] = 'Återskapar kurscache...';

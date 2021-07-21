@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'datapreset_imagegallery', language 'el', version '3.8'.
+ * Strings for component 'datapreset_imagegallery', language 'el', version '3.11'.
  *
  * @package     datapreset_imagegallery
  * @category    string
@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'Γκαλερί εικόνων';
+$string['modulename'] = 'Χώρος έκθεσης εικόνων';
 $string['pluginname'] = 'Χώρος έκθεσης εικόνων';
 $string['privacy:metadata'] = 'Το πρόσθετο «Χώρος έκθεσης εικόνων» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

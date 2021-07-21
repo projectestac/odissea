@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ja', version '3.8'.
+ * Strings for component 'data', language 'ja', version '3.11'.
  *
  * @package     data
  * @category    string
@@ -56,8 +56,8 @@ $string['availabletodatevalidation'] = '終了日時を開始日時の前にす�
 $string['blank'] = 'ブランク';
 $string['buttons'] = '操作';
 $string['bynameondate'] = '{$a->date} - {$a->name} の投稿';
-$string['calendarend'] = '{$a} 終了';
-$string['calendarstart'] = '{$a} 開始';
+$string['calendarend'] = '「{$a}」終了';
+$string['calendarstart'] = '「{$a}」開始';
 $string['cancel'] = 'キャンセル';
 $string['cannotaccesspresentsother'] = 'あなたは他のユーザのプリセットへのアクセスを許可されていません。';
 $string['cannotadd'] = 'エントリを追加できません!';
@@ -65,8 +65,8 @@ $string['cannotdeletepreset'] = 'プリセットの削除中にエラーが発�
 $string['cannotoverwritepreset'] = 'プリセットの上書き中にエラーが発生しました。';
 $string['cannotunziptopreset'] = 'プリセットディレクトリにZIPファイルを展開できません。';
 $string['checkbox'] = 'チェックボックス';
-$string['chooseexportfields'] = 'あなたがエクスポートしたいフィールドを選択してください:';
-$string['chooseexportformat'] = 'あなたがエクスポートしたいフォーマットを選択してください:';
+$string['chooseexportfields'] = 'あなたがエクスポートしたいフィールドを選択してください。';
+$string['chooseexportformat'] = 'あなたがエクスポートしたいフォーマットを選択してください。';
 $string['chooseorupload'] = 'ファイルを選択する';
 $string['closebeforeopen'] = 'あなたは開始日の前に終了日を指定しました。';
 $string['columns'] = 'カラム';
@@ -77,6 +77,7 @@ $string['comments'] = 'コメント';
 $string['commentsaved'] = 'コメントが保存されました。';
 $string['commentsn'] = '{$a} コメント';
 $string['commentsoff'] = 'コメント機能は有効にされていません。';
+$string['completiondetail:entries'] = 'エントリを作成する: {$a}';
 $string['completionentries'] = '必須エントリ';
 $string['completionentriescount'] = 'エントリ数';
 $string['completionentriesdesc'] = '最少必須エントリ数 : {$a}';
@@ -89,7 +90,7 @@ $string['csvfailed'] = 'CSVファイルから生データを読み込めませ�
 $string['csvfile'] = 'CSVファイル';
 $string['csvimport'] = 'CSVファイルインポート';
 $string['csvimport_help'] = 'エントリは最初の行にフィールド名の一覧そして1行あたり1レコードを含むテキストファイルによってインポートすることができます。';
-$string['csvwithselecteddelimiter'] = '選択したデリミタによる<acronym title="カンマ区切り">CSV</acronym>テキスト:';
+$string['csvwithselecteddelimiter'] = '<abbr title="カンマ区切り">CSV</abbr>';
 $string['data:addinstance'] = '新しいデータベースを追加する';
 $string['data:approve'] = 'エントリを承認または承認済みエントリを取り消す';
 $string['data:comment'] = 'コメントを書く';
@@ -159,6 +160,8 @@ $string['exportaszip'] = 'ZIPファイルとしてエクスポートする';
 $string['exportaszip_help'] = 'ZIPファイルとしてエクスポートする機能ではあなたはテンプレートおよびフィールドをダウンロードするためのプリセットZIPとして保存することができます。その後、ZIPファイルを別のコースにインポートすることができます。';
 $string['exportedtozip'] = 'ZIPファイルとして一時的にエクスポートしました ...';
 $string['exportentries'] = 'エントリをエクスポートする';
+$string['exportformat'] = 'エクスポートフォーマット';
+$string['exportoptions'] = 'エクスポートオプション';
 $string['exportownentries'] = 'あなたのエントリのみエクスポートしますか? ({$a->mine}/{$a->all})';
 $string['failedpresetdelete'] = 'プリセットの削除中にエラーが発生しました!';
 $string['fieldadded'] = 'フィールドが追加されました。';
@@ -176,6 +179,7 @@ $string['fieldmappings_help'] = 'このメニューでは既存のデータベ�
 
 あなたは同じタイプのフィールドのみマップできます。そのため、それぞれのドロップダウンメニューには他のフィールドも表示される場合があります。古いフィールドを2個以上の新しいフィールドにマップしないよう気をつけてください。';
 $string['fieldname'] = 'フィールド名';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'あなたのファイル内の次のフィールドは不明なフィールドです: {$a}';
 $string['fieldoptions'] = 'オプション (1行あたり1つ)';
 $string['fields'] = 'フィールド';
@@ -290,7 +294,7 @@ $string['number'] = '数値';
 $string['numberrssarticles'] = 'RSSフィードエントリ';
 $string['numnotapproved'] = '保留';
 $string['numrecords'] = '{$a} エントリ';
-$string['ods'] = '<acronym title="OpenDocumentスプレッドシート">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<abbr title="OpenDocumentスプレッドシート">ODS</abbr> &nbsp;(OpenOffice)';
 $string['openafterclose'] = 'あなたは終了日の後に開始日を指定しました。';
 $string['optionaldescription'] = '短い説明 (任意)';
 $string['optionalfilename'] = 'ファイル名 (任意)';
@@ -353,6 +357,7 @@ $string['rows'] = '行';
 $string['rssglobaldisabled'] = '使用不可、サイト詳細設定をご覧ください。';
 $string['rsstemplate'] = 'RSSテンプレート';
 $string['rsstitletemplate'] = 'RSSタイトルテンプレート';
+$string['rsstype'] = 'この活動のRSSフィード';
 $string['save'] = '保存';
 $string['saveandadd'] = '保存して次を追加する';
 $string['saveandview'] = '保存して表示する';
@@ -365,6 +370,8 @@ $string['search'] = '検索';
 $string['search:activity'] = 'データベース - 活動情報';
 $string['search:entry'] = 'データベース - エントリ';
 $string['selectedrequired'] = '選択したすべてを含む';
+$string['selectexportoptions'] = 'エクスポートオプションを選択する';
+$string['selectfields'] = 'フィールドを選択する';
 $string['showall'] = 'すべてのエントリを表示する';
 $string['single'] = '個別表示';
 $string['singletemplate'] = '個別表示用テンプレート';
@@ -386,6 +393,8 @@ $string['todatabase'] = '>> データベース';
 $string['type'] = 'フィールドタイプ';
 $string['undefinedprocessactionmethod'] = 'アクション「 {$a} 」を処理するためのアクションメソッドがData_Presetに定義されていません。';
 $string['unsupportedexport'] = '({$a->fieldtype}) をエクスポートできません。';
+$string['unsupportedfields'] = '未サポートフィールド';
+$string['unsupportedfieldslist'] = '次のフィールドはエクスポートできません:';
 $string['updatefield'] = '既存のフィールドを更新します。';
 $string['uploadfile'] = 'ファイルをアップロードする';
 $string['uploadrecords'] = 'ファイルからエントリをアップロードする';

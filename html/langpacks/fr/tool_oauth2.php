@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'fr', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'fr', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -39,7 +39,9 @@ $string['createnewgoogleissuer'] = 'Créer un service Google';
 $string['createnewissuer'] = 'Créer un service personnalisé';
 $string['createnewmicrosoftissuer'] = 'Créer un service Microsoft';
 $string['createnewnextcloudissuer'] = 'Créer un service Nextcloud';
+$string['createnewservice'] = 'Créer un nouveau service :';
 $string['createnewuserfieldmapping'] = 'Créer une correspondance de champ utilisateur pour le fournisseur « {$a} »';
+$string['custom_service'] = 'Personnalisé';
 $string['deleteconfirm'] = 'Voulez-vous vraiment supprimer le fournisseur d\'identité « {$a} » ? Tous les plugins utilisant ce fournisseur arrêteront de fonctionner.';
 $string['deleteendpointconfirm'] = 'Voulez-vous vraiment supprimer le point de terminaison « {$a->endpoint} » du fournisseur d\'identité « {$a} » ?';
 $string['deleteuserfieldmappingconfirm'] = 'Voulez-vous vraiment supprimer la correspondance de champ utilisateur pour le fournisseur « {$a} » ?';
@@ -57,6 +59,9 @@ $string['endpointname_help'] = 'Clef utilisée pour rechercher ce point de termi
 $string['endpointsforissuer'] = 'Points de terminaison du fournisseur {$a}';
 $string['endpointurl'] = 'URL';
 $string['endpointurl_help'] = 'URL de ce point de terminaison. Doit utiliser le protocole https://.';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Domaines de connexion';
 $string['issueralloweddomains_help'] = 'Liste des domaines, séparés par des virgules, pour lesquels les connexions seront restreintes lorsque ce fournisseur est utilisé.';
 $string['issuerbaseurl'] = 'URL de base du service';
@@ -70,6 +75,8 @@ $string['issuerdisabled'] = 'Fournisseur d\'identité désactivé';
 $string['issuerenabled'] = 'Fournisseur d\'identité activé';
 $string['issuerimage'] = 'URL du logo';
 $string['issuerimage_help'] = 'Une URL d\'image utilisée pour afficher un logo pour ce fournisseur. Peut être affiché sur la page de connexion.';
+$string['issuerloginpagename'] = 'Nom affiché sur la page de connexion';
+$string['issuerloginpagename_help'] = 'Si renseigné, ce nom sera utilisé sur la page de login au lieu du nom du service ci-dessus.';
 $string['issuerloginparams'] = 'Paramètres supplémentaires inclus dans une requête de connexion.';
 $string['issuerloginparams_help'] = 'Certains systèmes requièrent des paramètres supplémentaires dans les requêtes de connexion afin de pouvoir lire le profil des utilisateurs.';
 $string['issuerloginparamsoffline'] = 'Paramètres additionnels inclus dans une requête de connexion pour accès hors ligne.';
@@ -87,7 +94,20 @@ $string['issuersetup'] = 'Instructions détaillées sur la configuration commune
 $string['issuersetuptype'] = 'Instructions détaillées sur la configuration du fournisseur OAuth 2 {$a}';
 $string['issuershowonloginpage'] = 'Afficher sur la page de connexion';
 $string['issuershowonloginpage_help'] = 'Si le plugin d\'authentification OAuth 2 est activé, ce fournisseur d\'identité sera mentionné sur la page de connexion pour permettre aux utilisateurs de se connecter via ce fournisseur.';
+$string['issuersservicesallow'] = 'Autoriser les services';
+$string['issuersservicesnotallow'] = 'Ne pas autoriser les services';
+$string['issuerusedforinternal'] = 'Services internes';
+$string['issuerusedforlogin'] = 'Connexion';
+$string['issuerusein'] = 'Ce service sera utilisé';
+$string['issuerusein_help'] = 'Les services OAuth 2 peuvent être utilisés pour certains services internes, sur la page de connexion ou sur les deux, si nécessaire.';
+$string['issueruseineverywhere'] = 'Page de connexion et services internes';
+$string['issueruseininternalonly'] = 'Services internes uniquement';
+$string['issueruseinloginonly'] = 'Page de connexion uniquement';
+$string['linkedin_service'] = 'LinkedIn';
+$string['logindisplay'] = 'Afficher sur la page de connexion comme';
 $string['loginissuer'] = 'Permettre la connexion';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Non configuré';
 $string['notdiscovered'] = 'Échec de la découverte de service';
 $string['notloginissuer'] = 'Ne pas permettre la connexion';

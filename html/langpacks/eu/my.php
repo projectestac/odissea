@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'my', language 'eu', version '3.8'.
+ * Strings for component 'my', language 'eu', version '3.11'.
  *
  * @package     my
  * @category    string
@@ -42,3 +42,4 @@ $string['reseterror'] = 'Errorea gertatu da zure orria berrabiaraztean';
 $string['reseteveryonesdashboard'] = 'Berrezarri erabiltzaile guztien Aginte-panela';
 $string['reseteveryonesprofile'] = 'Berrezarri erabiltzaile guztien profila';
 $string['resetpage'] = 'Berrezarri orriaren lehenetsitako balioak';
+$string['resettingdashboards'] = 'Erabiltzaileen aginte-panelak lehenetsitako balioetara berrabiarazten...';

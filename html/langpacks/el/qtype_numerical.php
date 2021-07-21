@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_numerical', language 'el', version '3.8'.
+ * Strings for component 'qtype_numerical', language 'el', version '3.11'.
  *
  * @package     qtype_numerical
  * @category    string
@@ -63,7 +63,14 @@ $string['pluginname_link'] = 'ερώτηση/τύπος/αριθμητική';
 $string['pluginnameadding'] = 'Προσθήκη μιας Αριθμητικής ερώτησης';
 $string['pluginnameediting'] = 'Τροποποίηση μιας Αριθμητικής ερώτησης';
 $string['pluginnamesummary'] = 'Επιτρέπει μια αριθμητική απάντηση, εν δυνάμει με μονάδες, η οποία βαθμολογείται σε σύγκριση με διάφορες πρότυπες απαντήσεις, με δυνατότητα ανοχών.';
-$string['privacy:metadata'] = 'Το πρόσθετο «Ερωτήσεις αριθμητικού τύπου» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';
+$string['privacy:metadata'] = 'Το πρόσθετο τύπου αριθμητικών ερωτήσεων επιτρέπει στους συγγραφείς ερωτήσεων να ορίζουν προεπιλεγμένες επιλογές ως προτιμήσεις χρήστη.';
+$string['privacy:preference:defaultmark'] = 'Ο προεπιλεγμένος βαθμός που έχει οριστεί για μια δεδομένη ερώτηση.';
+$string['privacy:preference:multichoicedisplay'] = 'Εάν οι μονάδες μέτρησης θα εμφανίζονται ως στοιχείο εισαγωγής κειμένου, επιλογή από πολλαπλές επιλογές ή πτυσσόμενο μενού.';
+$string['privacy:preference:penalty'] = 'Η ποινή για κάθε λανθασμένη δοκιμή όταν εκτελούνται ερωτήσεις χρησιμοποιώντας τη συμπεριφορά «Διαδραστική με πολλαπλές προσπάθειες» ή «Κατάσταση προσαρμογής».';
+$string['privacy:preference:unitgradingtypes'] = 'Εάν η ποινή για την μονάδα μέτρησης θα εφαρμόζεται ως κλάσμα (0-1) του βαθμού απάντησης ή του βαθμού ερώτησης.';
+$string['privacy:preference:unitpenalty'] = 'Τι κλάσμα (0-1) του βαθμού απάντησης ή του βαθμού ερώτησης πρέπει να εφαρμόζεται;';
+$string['privacy:preference:unitrole'] = 'Εάν η μονάδα είναι απαραίτητη, προαιρετική ή όχι.';
+$string['privacy:preference:unitsleft'] = 'Εάν η μονάδα μέτρησης θα εμφανίζεται στα αριστερά (π.χ. $, £, €) ή στα δεξιά (π.χ. kg, km, cm).';
 $string['relative'] = 'Σχετικός';
 $string['rightexample'] = 'στα δεξιά, για παράδειγμα 1.00cm ή 1.00km';
 $string['selectunit'] = 'Επιλογή μιας μονάδας';

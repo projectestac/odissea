@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'report_performance', language 'gl', version '3.8'.
+ * Strings for component 'report_performance', language 'gl', version '3.11'.
  *
  * @package     report_performance
  * @category    string
@@ -26,12 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['check_backup'] = 'Copia de seguridade automática';
-$string['check_backup_comment_disable'] = 'O proceso de copia de seguridade pode afectar ao rendemento. No caso de activalas, as copias de seguridade deberían programarse para que se realicen fora das horas punta.';
-$string['check_backup_comment_enable'] = 'O proceso de copia de seguridade pode afectar ao rendemento. Deberían programarse para que se realicen fora das horas punta.';
+$string['check_backup_comment_disable'] = 'O proceso de copia de seguridade pode afectar ao rendemento. No caso de activalas, as copias de seguridade deberían programarse para que se realicen fóra das horas punta.';
+$string['check_backup_comment_enable'] = 'O proceso de copia de seguridade pode afectar ao rendemento. Deberían programarse para que se realicen fóra das horas punta.';
 $string['check_backup_details'] = 'Ao activar as copias de seguridade, creranse automaticamente ficheiros de todos os cursos no servidor na hora que vostede especifique. <p>Durante este proceso, consumiranse máis recursos do servidor e pode afectarlle ao rendemento.</p>';
 $string['check_cachejs_comment_disable'] = 'Se está activado, mellorará o rendemento ao cargar as páxinas.';
 $string['check_cachejs_comment_enable'] = 'Se o desactiva, é probábel que as páxinas se carguen mais amodo.';
-$string['check_cachejs_details'] = 'Gardar na caché e comprimir JavaScript mellorará notablemente o rendemento ao cargar as páxinas. É moi recomendábel para sitios en produción.';
+$string['check_cachejs_details'] = 'Gardar na caché e comprimir JavaScript mellorará notabelmente o rendemento ao cargar as páxinas. É moi recomendábel para sitios en produción.';
 $string['check_debugmsg_comment_developer'] = 'Se o estabelece a calquera opción que sexa diferente de DESENVOLVEDOR, pode melloras un chisco o rendemento.';
 $string['check_debugmsg_comment_nodeveloper'] = 'Se o estabelece a DESENVOLVEDOR, pode verse afectado o rendemento.';
 $string['check_debugmsg_details'] = 'Sería moi raro que houber algunha vantaxe en poñelo no nivel para desenvolvedor, a non ser que sexa solicitado por un desenvolvedor.<p>Unha vez teña a mensaxe de erro, e o teña copiado e pegado en algures, é MOI RECOMENDÁBEL que configure a depuración (Debug) a NADA. As mensaxes de depuración poden dar pistas aos crackers sobre os axustes do seu sitio e poden afectar o rendemento.</p>';

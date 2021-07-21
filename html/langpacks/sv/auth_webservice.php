@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_webservice', language 'sv', version '3.8'.
+ * Strings for component 'auth_webservice', language 'sv', version '3.11'.
  *
  * @package     auth_webservice
  * @category    string
@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_webservicedescription'] = 'Denna autentiseringsmetod ska användas uteslutande för konton som används av webbtjänstklienter.';
 $string['pluginname'] = 'Webbtjänstautentisering';
-$string['privacy:metadata'] = 'Pluginmodulen Webbtjänstautentisering lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Webbtjänstautentisering lagrar ingen personinformation.';

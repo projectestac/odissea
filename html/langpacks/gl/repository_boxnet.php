@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_boxnet', language 'gl', version '3.8'.
+ * Strings for component 'repository_boxnet', language 'gl', version '3.11'.
  *
  * @package     repository_boxnet
  * @category    string
@@ -26,21 +26,21 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'Chave da API';
-$string['boxnet:view'] = 'Ver o repositorio de box.net';
+$string['boxnet:view'] = 'Ver o repositorio de Box';
 $string['cannotcreatereference'] = 'Non é posíbel crear unha referencia, non hai permisos abondo para compartir o ficheiro en Box.';
 $string['clientid'] = 'ID do cliente';
-$string['clientsecret'] = 'Secreto do cliente';
-$string['configplugin'] = 'Configuración de Box.net';
+$string['clientsecret'] = 'Segredo do cliente';
+$string['configplugin'] = 'Configuración de Box';
 $string['filesourceinfo'] = 'Box ({$a->fullname}): {$a->filename}';
-$string['information'] = 'Obteña unha chave para a API da <a href="http://www.box.net/developers/services">páxina de desenvolvemento de Box.net</a> para o seu sitio Moodle.';
+$string['information'] = 'Obteña unha chave para a API da <a href="https://app.box.com/developers/services">páxina de desenvolvemento de Box</a> para o seu sitio Moodle.';
 $string['invalidpassword'] = 'Contrasinal incorrecto';
 $string['nullfilelist'] = 'Non hai ficheiros neste repositorio';
 $string['password'] = 'Contrasinal';
-$string['pluginname'] = 'Box.net';
+$string['pluginname'] = 'Caixa';
 $string['pluginname_help'] = 'Repositorio en Box';
 $string['privacy:metadata:repository_boxnet'] = 'O engadido de repositorio en Box almacena as preferencias do usuario e transmite os datos do usuario de Moodle ao sistema remoto.';
 $string['privacy:metadata:repository_boxnet:query'] = 'A consulta de busca de texto de usuario do repositorio Box.';
-$string['saved'] = 'Dato gardado en Box.net';
+$string['saved'] = 'Dato gardado en Box';
 $string['shareurl'] = 'Compartir o URL';
-$string['username'] = 'Nome de usuario para Box.net';
+$string['username'] = 'Nome de usuario para Box';
 $string['warninghttps'] = 'Box require que o seu sitio estea usando HTTPS para que poida funcionar o repositorio.';

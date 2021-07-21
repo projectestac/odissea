@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cohort', language 'zh_cn', version '3.8'.
+ * Strings for component 'cohort', language 'zh_cn', version '3.11'.
  *
  * @package     cohort
  * @category    string

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'availability_profile', language 'ar', version '3.8'.
+ * Strings for component 'availability_profile', language 'ar', version '3.11'.
  *
  * @package     availability_profile
  * @category    string
@@ -39,16 +39,16 @@ $string['op_isempty'] = 'هو فارغ';
 $string['op_isequalto'] = 'هو يساوي';
 $string['op_isnotempty'] = 'ليس فارغاً';
 $string['op_startswith'] = 'يبدأ بـ';
-$string['pluginname'] = 'تقييد حسب الملف الشخصي';
-$string['privacy:metadata'] = 'لا يقوم البرنامج المساعد Restriction by profile بتخزين أي بيانات شخصية.';
-$string['requires_contains'] = 'لديك {$a->field}  يحتوي على {$a->value}';
-$string['requires_doesnotcontain'] = 'لديك {$a->value}   لا يحتوي على  {$a->value}';
-$string['requires_endswith'] = 'لديك {$a->field} ينتهي  {$a->value}';
+$string['pluginname'] = 'التقييد حسب الملف الشخصي';
+$string['privacy:metadata'] = 'إن ملحق التقييد حسب الملف الشخصي لا يخزن أي بيانات شخصية.';
+$string['requires_contains'] = 'لديك <strong>{$a->field}</strong> يتضمن <strong>{$a->value}</strong>';
+$string['requires_doesnotcontain'] = 'لديك <strong>{$a->value}</strong> لا يتضمن <strong>{$a->value}</strong>';
+$string['requires_endswith'] = 'لديك <strong>{$a->field}</strong> ينتهي بـ <strong>{$a->value}</strong>';
 $string['requires_isempty'] = 'مجال   {$a->field}  فارغ';
-$string['requires_isequalto'] = 'لديك  {$a->field}  هو {$a->value}';
+$string['requires_isequalto'] = 'لديك <strong>{$a->field}</strong> هو <strong>{$a->value}</strong>';
 $string['requires_isnotempty'] = 'لديك  {$a->field}  ليس فارغا';
-$string['requires_notendswith'] = 'مجال  {$a->field}  لا ينتهي بـ {$a->value}';
-$string['requires_notisequalto'] = 'مجال  {$a->field}ليس {$a->value}';
-$string['requires_notstartswith'] = 'لديك  {$a->field} لم يبدأ مع {$a->value}';
-$string['requires_startswith'] = 'لديك  {$a->field} يبدأ {$a->value}';
+$string['requires_notendswith'] = 'لديك <strong>{$a->field}</strong> لا ينتهي بـ <strong>{$a->value}</strong>';
+$string['requires_notisequalto'] = 'لديك <strong>{$a->field}</strong> ليس هو <strong>{$a->value}</strong>';
+$string['requires_notstartswith'] = 'لديك <strong>{$a->field}</strong> لا يبدأ بـ <strong>{$a->value}</strong>';
+$string['requires_startswith'] = 'لديك <strong>{$a->field}</strong> يبدأ بـ <strong>{$a->value}</strong>';
 $string['title'] = 'الملف الشخصي';

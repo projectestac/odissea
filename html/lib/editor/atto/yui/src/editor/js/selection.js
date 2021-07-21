@@ -12,8 +12,6 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-/* global rangy */
-
 /**
  * @module moodle-editor_atto-editor
  * @submodule selection
@@ -411,7 +409,12 @@ EditorSelection.prototype = {
         }
         if (range) {
             range.deleteContents();
-            range.insertNode(node.getDOMNode());
+            range.collapse(false);
+            var currentnode = node.getDOMNode(),
+                last = currentnode.lastChild || currentnode;
+            range.insertNode(currentnode);
+            range.collapseAfter(last);
+            selection.setSingleRange(range);
         }
         return node;
     }

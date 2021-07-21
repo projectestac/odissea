@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_oauth2', language 'sv', version '3.8'.
+ * Strings for component 'tool_oauth2', language 'sv', version '3.11'.
  *
  * @package     tool_oauth2
  * @category    string
@@ -39,7 +39,9 @@ $string['createnewgoogleissuer'] = 'Ny Google-tjänst';
 $string['createnewissuer'] = 'Ny anpassad tjänst';
 $string['createnewmicrosoftissuer'] = 'Ny Microsoft-tjänst';
 $string['createnewnextcloudissuer'] = 'Ny Nextcloud-tjänst';
+$string['createnewservice'] = 'Skapa ny tjänst:';
 $string['createnewuserfieldmapping'] = 'Ny användarfältsmappning för utfärdare ”{$a}”';
+$string['custom_service'] = 'Anpassad';
 $string['deleteconfirm'] = 'Är du säker på att du vill ta bort identitetsutfärdaren ”{$a}”? Alla pluginmoduler som är beroende av denna utfärdare kommer att sluta fungera.';
 $string['deleteendpointconfirm'] = 'Är du säker på att du vill ta bort slutpunkten ”{$a->endpoint}” för utfärdaren ”{$a->issuer}”? Alla pluginmoduler som är beroende av denna slutpunkt kommer att sluta fungera.';
 $string['deleteuserfieldmappingconfirm'] = 'Är du säker på att du vill ta bort användarfältsmappningen för utfärdaren ”{$a}”?';
@@ -57,6 +59,9 @@ $string['endpointname_help'] = 'Nyckel som används för att söka efter denna s
 $string['endpointsforissuer'] = 'Slutpunkter för utfärdaren: {$a}';
 $string['endpointurl'] = 'URL';
 $string['endpointurl_help'] = 'URL för denna slutpunkt. Måste använda HTTPS://';
+$string['facebook_service'] = 'Facebook';
+$string['google_service'] = 'Google';
+$string['imsobv2p1_service'] = 'Open Badges';
 $string['issueralloweddomains'] = 'Inloggningsdomäner';
 $string['issueralloweddomains_help'] = 'Om inställningen är gjord är den här inställningen en kommaavgränsad lista över domäner som inloggningar kommer att begränsas till när du använder den här leverantören.';
 $string['issuerbaseurl'] = 'Bas-URL för tjänsten';
@@ -70,6 +75,8 @@ $string['issuerdisabled'] = 'Identitetsutfärdare inaktiverad';
 $string['issuerenabled'] = 'Identitetsutfärdare aktiverad';
 $string['issuerimage'] = 'URL till logotyp';
 $string['issuerimage_help'] = 'Bild-URL som används för att visa en logotyp för utfärdaren. Kan visas på inloggningssidan.';
+$string['issuerloginpagename'] = 'Namn som visas på inloggningssidan';
+$string['issuerloginpagename_help'] = 'Om det här namnet anges kommer det att användas i stället för tjänstenamnet på inloggningssidan.';
 $string['issuerloginparams'] = 'Ytterligare parametrar inkluderade i inloggningsbegäran.';
 $string['issuerloginparams_help'] = 'Vissa system kräver ytterligare parametrar för en inloggningsbegäran för att kunna läsa användarens grundprofil.';
 $string['issuerloginparamsoffline'] = 'Ytterligare parametrar inkluderade i inloggningsbegäran för off-line åtkomst.';
@@ -87,13 +94,26 @@ $string['issuersetup'] = 'Detaljerade instruktioner för konfigurering av de van
 $string['issuersetuptype'] = 'Detaljerade instruktioner hur man ställer in {$a} OAuth 2-leverantören';
 $string['issuershowonloginpage'] = 'Visa på inloggningssidan';
 $string['issuershowonloginpage_help'] = 'Om pluginmodulen för OAuth 2-autentisering är aktiverad kommer denna inloggningsutfärdare visas på inloggningssidan och göra det möjligt för användare att logga in med konton hos denna utfärdare.';
+$string['issuersservicesallow'] = 'Tillåt tjänster';
+$string['issuersservicesnotallow'] = 'Tillåt inte tjänster';
+$string['issuerusedforinternal'] = 'Interna tjänster';
+$string['issuerusedforlogin'] = 'Login';
+$string['issuerusein'] = 'Denna tjänst kommer att användas';
+$string['issuerusein_help'] = 'OAuth 2-tjänster kan användas för interna tjänster, på inloggningssidan, eller båda, om det behövs.';
+$string['issueruseineverywhere'] = 'Inloggningssidan och interna tjänster';
+$string['issueruseininternalonly'] = 'Endast interna tjänster';
+$string['issueruseinloginonly'] = 'Endast inloggningssidan';
+$string['linkedin_service'] = 'LinkedIn';
+$string['logindisplay'] = 'Visa på inloggningssidan som';
 $string['loginissuer'] = 'Tillåt inloggning';
+$string['microsoft_service'] = 'Microsoft';
+$string['nextcloud_service'] = 'Nextcloud';
 $string['notconfigured'] = 'Inte konfigurerad';
 $string['notdiscovered'] = 'Tjänsteidentifiering misslyckades';
 $string['notloginissuer'] = 'Tillåt inte inloggning';
 $string['pluginname'] = 'OAuth 2-tjänster';
 $string['privacy:metadata'] = 'Pluginmodulen OAuth 2-tjänster lagrar ingen personlig information.';
-$string['savechanges'] = 'Spara ändringar';
+$string['savechanges'] = 'Spara';
 $string['serviceshelp'] = 'Instruktioner för konfigurering av tjänsteleverantör.';
 $string['systemaccountconnected'] = 'Systemkonto kopplat';
 $string['systemaccountconnected_help'] = 'Systemkonton används för att tillhandahålla avancerad funktionalitet för pluginmoduler. De krävs inte endast för inloggningsfunktionalitet, men andra pluginmoduler som använder OAuth-tjänsten kan erbjuda en reducerad uppsättning funktioner om systemkontot inte har anslutits. Till exempel kan inte databaser stödja "kontrollerade länkar" utan ett systemkonto för att utföra filåtgärder.';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'form', language 'el', version '3.8'.
+ * Strings for component 'form', language 'el', version '3.11'.
  *
  * @package     form
  * @category    string
@@ -41,13 +41,15 @@ $string['err_minlength'] = 'Πρέπει να εισάγετε τουλάχισ�
 $string['err_nonzero'] = 'Πρέπει να εισάγετε έναν αριθμό που να μην ξεκινά με 0 εδώ.';
 $string['err_nopunctuation'] = 'Δεν πρέπει να εισάγετε χαρακτήρες στίξης εδώ.';
 $string['err_numeric'] = 'Πρέπει να εισάγετε έναν αριθμό εδώ.';
+$string['err_positiveint'] = 'Πρέπει να εισαγάγετε έναν αριθμό μεγαλύτερο από 0 εδώ.';
 $string['err_rangelength'] = 'Πρέπει να εισάγετε μεταξύ {$a->format[0]} και {$a->format[1]} χαρακτήρες εδώ.';
 $string['err_required'] = 'Πρέπει να εισάγετε μια τιμή εδώ.';
 $string['err_wrappingwhitespace'] = 'Η τιμή δεν πρέπει να ξεκινάει ή να τελειώνει με κενά.';
-$string['err_wrongfileextension'] = 'Κάποια αρχεία ({$a->wrongfiles}) δεν μπορούν να ανεβούν. Επιτρέπονται μόνο οι τύποι αρχείων {$a->whitelist}.';
+$string['err_wrongfileextension'] = 'Κάποια αρχεία ({$a->wrongfiles}) δεν μπορούν να ανεβούν. Επιτρέπονται μόνο οι τύποι αρχείων {$a->allowlist}.';
 $string['filesofthesetypes'] = 'Αποδεκτοί τύποι αρχείων:';
 $string['filetypesany'] = 'Όλοι οι τύποι αρχείων';
 $string['filetypesnotall'] = 'Δεν επιτρέπεται να επιλέξετε «Όλοι οι τύποι αρχείων» εδώ';
+$string['filetypesnotallowed'] = 'Αυτοί οι τύποι αρχείων δεν επιτρέπονται εδώ: {$a}';
 $string['filetypesnotwhitelisted'] = 'Αυτοί οι τύποι αρχείων δεν επιτρέπονται εδώ: {$a}';
 $string['filetypesothers'] = 'Άλλα αρχεία';
 $string['filetypesunknown'] = 'Άγνωστοι τύποι αρχείων: {$a}';
@@ -62,6 +64,7 @@ $string['mustbeoverriden'] = 'Η αφηρημένη μέθοδος form_definiti
 $string['newvaluefor'] = 'Νέα τιμή για {$a}';
 $string['nomethodforaddinghelpbutton'] = 'Δεν υπάρχει μέθοδος για την προσθήκη κουμπιού βοήθειας στο στοιχείο φόρμας {$a->name} (κλάση {$a->classname})';
 $string['nonexistentformelements'] = 'Προσπάθεια προσθήκης κουμπιών βοήθειας σε μη-υπαρκτά στοιχεία φόρμας: {$a}';
+$string['nopermissionform'] = 'Δεν έχετε δικαίωμα πρόσβασης σε αυτήν τη φόρμα.';
 $string['noselection'] = 'Καμία επιλογή';
 $string['nosuggestions'] = 'Καμιά πρόταση';
 $string['novalue'] = 'Καμία εισαγωγή';
@@ -82,6 +85,7 @@ $string['showadvanced'] = 'Εμφάνιση προχωρημένων';
 $string['showless'] = 'Εμφάνιση λιγότερων...';
 $string['showmore'] = 'Εμφάνιση περισσότερων...';
 $string['somefieldsrequired'] = 'Υπάρχουν απαιτούμενα πεδία σε αυτή τη φόρμα που επισημαίνονται με {$a}.';
+$string['suggestions'] = 'Προτάσεις';
 $string['time'] = 'Ώρα';
 $string['timeunit'] = 'Μονάδα χρόνου';
 $string['timing'] = 'Συγχρονισμός';

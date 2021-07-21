@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'portfolio_flickr', language 'ru', version '3.8'.
+ * Strings for component 'portfolio_flickr', language 'ru', version '3.11'.
  *
  * @package     portfolio_flickr
  * @category    string
@@ -38,6 +38,8 @@ $string['noauthtoken'] = 'Не удалось получить ключ ауте
 $string['other'] = 'Произведения искусства, иллюстраций, компьютерная графика и другие не фотографические изображения';
 $string['photo'] = 'Фотографии';
 $string['pluginname'] = 'Flickr.com';
+$string['privacy:metadata'] = 'Этот плагин отправляет внешние данные в связанную учетную запись Flickr. Он не хранит данные локально.';
+$string['privacy:metadata:data'] = 'Персональные данные, передаваемые из подсистемы портфолио.';
 $string['restricted'] = 'Ограниченно';
 $string['safe'] = 'Безопасный';
 $string['safetylevel'] = 'Уровень безопасности';

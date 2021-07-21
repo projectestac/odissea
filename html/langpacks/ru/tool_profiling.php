@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'ru', version '3.8'.
+ * Strings for component 'tool_profiling', language 'ru', version '3.11'.
  *
  * @package     tool_profiling
  * @category    string
@@ -43,6 +43,7 @@ $string['lastrunof'] = 'Отчет о последнем прогоне {$a}';
 $string['markreferencerun'] = 'Отметить как эталонный прогон/комментарий';
 $string['memory'] = 'Используемая память';
 $string['pluginname'] = 'Прогоны профилирования';
+$string['privacy:metadata'] = 'Плагин Прогон профилирования не хранит никаких личных данных.';
 $string['profilingfocusscript'] = 'Остановиться на прогонах профилирования для скрипта: {$a}';
 $string['profilingruns'] = 'Прогоны профилирования';
 $string['profilingrunsfor'] = 'Прогоны профилирования для «{$a}»';

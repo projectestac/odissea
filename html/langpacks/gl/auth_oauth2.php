@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'auth_oauth2', language 'gl', version '3.8'.
+ * Strings for component 'auth_oauth2', language 'gl', version '3.11'.
  *
  * @package     auth_oauth2
  * @category    string
@@ -44,17 +44,20 @@ Se non funciona, cópiea e péguea na barra de enderezos
 do seu navegador.
 
 Se precisa axuda, contacte co administrador do sitio,
-{$a->admin}';
+{$a->admin}
+
+Se non foi vostede quen fixo a solicitude, alguén podería estar tentando comprometer a súa conta.
+Póñase en contacto inmediatamente co administrador do sitio.';
 $string['confirmaccountemailsubject'] = 'Confirmación da conta: {$a}';
 $string['confirmationinvalid'] = 'A ligazón de confirmación non é válida ou caducou. Inicie o proceso de acceso para xerar un novo correo de confirmación.';
 $string['confirmationpending'] = 'Esta conta está pendente de confirmación por correo.';
 $string['confirmlinkedloginemail'] = 'Ola, {$a->fullname},
 
-Alguen realizou unha solicitude para ligar o acceso de {$a->issuername}
-{$a->linkedemail} na súa conta en «{$a->sitename}»
-usando o seu enderezo de correo.
+Realizouse unha solicitude para relacionar o acceso de {$a->issuername}
+{$a->linkedemail} á súa conta en «{$a->sitename}»
+usando o seu enderezo de correo-e.
 
-Para confirmar esta solicitude e ligar estes accesos, diríxase a este enderezo web:
+Para confirmar esta solicitude e relacionar estes accesos, diríxase a este enderezo web:
 
 {$a->link}
 
@@ -64,9 +67,12 @@ Se non funciona, cópiea e péguea na barra de enderezos
 do seu navegador.
 
 Se precisa axuda, contacte co administrador do sitio,
-{$a->admin}';
+{$a->admin}
+
+Se non foi vostede quen fixo a solicitude, alguén podería estar tentando comprometer a súa conta.
+Póñase en contacto inmediatamente co administrador do sitio.';
 $string['confirmlinkedloginemailsubject'] = 'Confirmación de acceso ligada: {$a}';
-$string['createaccountswarning'] = 'Este engadido de autenticación permite aos usuarios crear contas no seu sitio. Pode querer activar a configuración «authpreventaccountcreation» se usa este engadido.';
+$string['createaccountswarning'] = 'Este engadido de autenticación permite aos usuarios crear contas no seu sitio. Pode querer activar o axuste «authpreventaccountcreation» se usa este engadido.';
 $string['createnewlinkedlogin'] = 'Ligar unha nova conta ({$a})';
 $string['emailconfirmlink'] = 'Ligaras súas contas';
 $string['emailconfirmlinksent'] = '<p>Atopouse unha conta existente con este enderezo de correo mais aínda non está ligadaa.</p>
@@ -78,7 +84,7 @@ $string['emailpasswordchangeinfo'] = 'Ola {$a->firstname},
 
 Alguén (probabelmente vostede) solicitou un novo contrasinal para a súa conta en «{$a->sitename}».
 
-Non obstante o seu contrasinal non se pode restablecer porque está a usar a súa conta noutro sitio para iniciar sesión.
+Non obstante o seu contrasinal non se pode restabelecer porque está a usar a súa conta noutro sitio para iniciar sesión.
 
 Inicia sesión como antes, usando a ligazón na páxina de acceso.
 {$a->admin}';
@@ -98,12 +104,12 @@ $string['notenabled'] = 'O engadido de autenticación OAuth 2 non está activado
 $string['notloggedindebug'] = 'Fallou o intento de acceso. Razón: {$a}';
 $string['notwhileloggedinas'] = 'Os accesos ligados non se poden administrar ao acceder coma outro usuario.';
 $string['oauth2:managelinkedlogins'] = 'Administrar contas propias de acceso ligadas';
-$string['plugindescription'] = 'Este engadido de autenticación amosa unha lista dos provedores de identidade configurados na páxina de acceso. A selección dun provedor de identidade permite aos usuarios acceder coas súas credenciais desde un provedor OAuth 2.';
+$string['plugindescription'] = 'Este engadido de autenticación amosa unha lista dos provedores de identidade configurados na páxina de acceso. A selección dun provedor de identidade permite aos usuarios acceder coas súas credenciais dende un provedor OAuth 2.';
 $string['pluginname'] = 'OAuth 2';
 $string['privacy:metadata:auth_oauth2'] = 'Autenticación OAuth 2';
 $string['privacy:metadata:auth_oauth2:authsubsystem'] = 'Este engadido está conectado ao subsistema do autenticación.';
-$string['privacy:metadata:auth_oauth2:confirmtoken'] = 'A marca de confirmación.';
-$string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'A marca de tempo cando caduca a marca de confirmación.';
+$string['privacy:metadata:auth_oauth2:confirmtoken'] = 'O testemuño de confirmación.';
+$string['privacy:metadata:auth_oauth2:confirmtokenexpires'] = 'O testemuño de tempo cando caduca o testemuño de confirmación.';
 $string['privacy:metadata:auth_oauth2:email'] = 'O correo externo que se asigna a esta conta.';
 $string['privacy:metadata:auth_oauth2:issuerid'] = 'O ID do emisor de OAuth 2 para este acceso OAunth 2.';
 $string['privacy:metadata:auth_oauth2:tableexplanation'] = 'As contas OAuth 2 ligadas a unha conta de usuario Moodle.';

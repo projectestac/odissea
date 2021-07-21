@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'pt', version '3.8'.
+ * Strings for component 'mimetypes', language 'pt', version '3.11'.
  *
  * @package     mimetypes
  * @category    string
@@ -59,9 +59,9 @@ $string['document/unknown'] = 'ficheiro';
 $string['group:archive'] = 'Ficheiros de Arquivo';
 $string['group:audio'] = 'Ficheiros Áudio';
 $string['group:document'] = 'Ficheiros de Documento';
-$string['group:html_audio'] = 'Ficheiros de Áudio suportado de modo nativo pelos navegadores';
+$string['group:html_audio'] = 'Ficheiros de Áudio com suporte nativo pelos navegadores';
 $string['group:html_track'] = 'Ficheiros de Faixa HTML';
-$string['group:html_video'] = 'Ficheiros de Vídeo suportado de modo nativo pelos navegadores';
+$string['group:html_video'] = 'Ficheiros de Vídeo com suporte nativo pelos navegadores';
 $string['group:image'] = 'Ficheiros de Imagem';
 $string['group:media_source'] = 'Transmissão multimédia';
 $string['group:optimised_image'] = 'Ficheiros de imagem a serem otimizados, como por exemplo, as medalhas';
@@ -72,7 +72,7 @@ $string['group:video'] = 'Ficheiros de Vídeo';
 $string['group:web_audio'] = 'Ficheiros de Áudio usados na web';
 $string['group:web_file'] = 'Ficheiros Web';
 $string['group:web_image'] = 'Ficheiros de imagem usados na web';
-$string['group:web_video'] = 'Ficheiros de vídeo usados na web';
+$string['group:web_video'] = 'Ficheiros de Vídeo usados na web';
 $string['image'] = 'Imagem ({$a->MIMETYPE2})';
 $string['image/vnd.microsoft.icon'] = 'Ícone Windows';
 $string['text/css'] = 'Ficheiros CSS';

@@ -25,7 +25,7 @@
 namespace mod_questionnaire\question;
 defined('MOODLE_INTERNAL') || die();
 use \html_writer;
-use mod_questionnaire\question\choice\choice;
+use mod_questionnaire\question\choice;
 
 class drop extends question {
 
@@ -96,7 +96,7 @@ class drop extends question {
             }
             $option = new \stdClass();
             $option->value = $key;
-            $option->label = $choice->content;
+            $option->label = format_string($choice->content);
             if (isset($response->answers[$this->id][$key])) {
                 $option->selected = true;
             }

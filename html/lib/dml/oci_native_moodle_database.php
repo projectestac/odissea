@@ -225,15 +225,6 @@ class oci_native_moodle_database extends moodle_database {
         // Connection stabilised and configured, going to instantiate the temptables controller
         $this->temptables = new oci_native_moodle_temptables($this, $this->unique_session_id);
 
-        //XTEC ************ AFEGIT - Fix for correct sorting. It may reduce performance!
-        //2014.11.04 @pferre22
-        /*
-        $sql = "ALTER session SET NLS_COMP = LINGUISTIC";
-        $this->execute($sql);
-        $sql = "ALTER session SET NLS_SORT = BINARY_AI";
-        $this->execute($sql);
-        */
-        //************ FI
         return true;
     }
 
@@ -363,16 +354,7 @@ class oci_native_moodle_database extends moodle_database {
     protected function parse_query($sql) {
         $stmt = oci_parse($this->oci, $sql);
         if ($stmt == false) {
-            // XTEC AFEGIT: Add more information to parse_query error (TO REPORT)
-            // @pferre22 2015.10.01
-            $error = $this->get_last_error();
-            $error = $error ? '" Error description:( '.$this->get_last_error() .')' : "";
-            throw new dml_exception('dbdriverproblem','Can not parse sql query: "'.$sql. $error); //TODO: maybe add better info
-            // ORIGINAL
-            /*
-            throw new dml_connection_exception('Can not parse sql query'); //TODO: maybe add better info
-            */
-            // FI XTEC
+            throw new dml_exception('dmlparseexception', null, $this->get_last_error());
         }
         return $stmt;
     }
@@ -456,28 +438,12 @@ class oci_native_moodle_database extends moodle_database {
         $indexes = array();
         $tablename = strtoupper($this->prefix.$table);
 
-        //XTEC ************ MODIFICAT - Fix for correct index detection when there's more than 1 Moodle in an Oracle instance
-        //2014.02.27 @aginard
-
         $sql = "SELECT i.INDEX_NAME, i.UNIQUENESS, c.COLUMN_POSITION, c.COLUMN_NAME, ac.CONSTRAINT_TYPE
-                FROM ALL_INDEXES i
-                JOIN ALL_IND_COLUMNS c ON c.INDEX_NAME=i.INDEX_NAME
-                LEFT JOIN ALL_CONSTRAINTS ac ON (ac.TABLE_NAME=i.TABLE_NAME AND ac.CONSTRAINT_NAME=i.INDEX_NAME AND ac.CONSTRAINT_TYPE='P')
-                WHERE i.TABLE_NAME = '$tablename'
-                AND i.table_owner = (SELECT sys_context('userenv','current_schema') x FROM dual)
-                AND c.index_owner = (SELECT sys_context('userenv','current_schema') x FROM dual)
-                ORDER BY i.INDEX_NAME, c.COLUMN_POSITION";
-
-        //************ ORIGINAL
-        /*
-        $sql = "SELECT i.INDEX_NAME, i.UNIQUENESS, c.COLUMN_POSITION, c.COLUMN_NAME, ac.CONSTRAINT_TYPE
-                FROM ALL_INDEXES i
-                JOIN ALL_IND_COLUMNS c ON c.INDEX_NAME=i.INDEX_NAME
-                LEFT JOIN ALL_CONSTRAINTS ac ON (ac.TABLE_NAME=i.TABLE_NAME AND ac.CONSTRAINT_NAME=i.INDEX_NAME AND ac.CONSTRAINT_TYPE='P')
-                WHERE i.TABLE_NAME = '$tablename'
-                ORDER BY i.INDEX_NAME, c.COLUMN_POSITION";
-        */
-        //************ FI
+                  FROM ALL_INDEXES i
+                  JOIN ALL_IND_COLUMNS c ON c.INDEX_NAME=i.INDEX_NAME
+             LEFT JOIN ALL_CONSTRAINTS ac ON (ac.TABLE_NAME=i.TABLE_NAME AND ac.CONSTRAINT_NAME=i.INDEX_NAME AND ac.CONSTRAINT_TYPE='P')
+                 WHERE i.TABLE_NAME = '$tablename'
+              ORDER BY i.INDEX_NAME, c.COLUMN_POSITION";
 
         $stmt = $this->parse_query($sql);
         $result = oci_execute($stmt, $this->commit_status);
@@ -504,29 +470,12 @@ class oci_native_moodle_database extends moodle_database {
     }
 
     /**
-     * Returns detailed information about columns in table. This information is cached internally.
+     * Fetches detailed information about columns in table.
+     *
      * @param string $table name
-     * @param bool $usecache
      * @return array array of database_column_info objects indexed with column names
      */
-    public function get_columns($table, $usecache=true) {
-
-        if ($usecache) {
-            if ($this->temptables->is_temptable($table)) {
-                if ($data = $this->get_temp_tables_cache()->get($table)) {
-                    return $data;
-                }
-            } else {
-                if ($data = $this->get_metacache()->get($table)) {
-                    return $data;
-                }
-            }
-        }
-
-        if (!$table) { // table not specified, return empty array directly
-            return array();
-        }
-
+    protected function fetch_columns(string $table): array {
         $structure = array();
 
         // We give precedence to CHAR_LENGTH for VARCHAR2 columns over WIDTH because the former is always
@@ -707,14 +656,6 @@ class oci_native_moodle_database extends moodle_database {
             }
 
             $structure[$info->name] = new database_column_info($info);
-        }
-
-        if ($usecache) {
-            if ($this->temptables->is_temptable($table)) {
-                $this->get_temp_tables_cache()->set($table, $structure);
-            } else {
-                $this->get_metacache()->set($table, $structure);
-            }
         }
 
         return $structure;
@@ -1343,7 +1284,7 @@ class oci_native_moodle_database extends moodle_database {
      * If the return ID isn't required, then this just reports success as true/false.
      * $data is an object containing needed data
      * @param string $table The database table to be inserted into
-     * @param object $data A data object with values for one or more fields in the record
+     * @param object|array $dataobject A data object with values for one or more fields in the record
      * @param bool $returnid Should the id of the newly created record entry be returned? If this option is not requested then true/false is returned.
      * @return bool|int true or new id
      * @throws dml_exception A DML specific exception is thrown for any errors.
@@ -1675,6 +1616,19 @@ class oci_native_moodle_database extends moodle_database {
     }
 
     /**
+     * Return SQL for performing group concatenation on given field/expression
+     *
+     * @param string $field
+     * @param string $separator
+     * @param string $sort
+     * @return string
+     */
+    public function sql_group_concat(string $field, string $separator = ', ', string $sort = ''): string {
+        $fieldsort = $sort ?: '1';
+        return "LISTAGG({$field}, '{$separator}') WITHIN GROUP (ORDER BY {$fieldsort})";
+    }
+
+    /**
      * Constructs 'IN()' or '=' sql fragment
      *
      * Method overriding {@link moodle_database::get_in_or_equal} to be able to get
@@ -1749,26 +1703,16 @@ class oci_native_moodle_database extends moodle_database {
         $count = count($args);
         if ($count == 1) {
             $arg = reset($args);
-            return self::clob2varchar_hack(array_shift($args));
+            return $arg;
         }
         if ($count == 2) {
             $args[] = "' '";
             // No return here intentionally.
         }
-        $first = self::clob2varchar_hack(array_shift($args));
-        $second = self::clob2varchar_hack(array_shift($args));
+        $first = array_shift($args);
+        $second = array_shift($args);
         $third = $this->recursive_concat($args);
         return "MOODLELIB.TRICONCAT($first, $second, $third)";
-    }
-
-    /**
-     * This function is used to convert to varchar any type (including clob) using substr.
-     */
-    private static function clob2varchar_hack($arg, $length = 1300) {
-        if (empty($arg) || $arg == "'*OCISP*'"|| $arg == "' '") {
-            return $arg;
-        }
-        return 'SUBSTR('.$arg.', 1, '.$length.')';
     }
 
     /**

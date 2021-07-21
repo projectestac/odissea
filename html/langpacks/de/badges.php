@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'badges', language 'de', version '3.8'.
+ * Strings for component 'badges', language 'de', version '3.11'.
  *
  * @package     badges
  * @category    string
@@ -77,7 +77,7 @@ $string['archivebadge'] = 'Möchten Sie den Badge \'{$a}\' löschen, aber verlie
 $string['archiveconfirm'] = 'Löschen und verliehene Badges erhalten';
 $string['archivehelp'] = '<p>Mit dieser Option wird der Badge \'zurückgezogen\' und erscheint nicht mehr in der Liste der Badges. Der Badge kann nicht mehr neu erworben werden. Alle diejenigen, die den Badge bereits erworben haben, können ihn weiterhin auf ihrer Profilseite anzeigen und in ihren externen Backpack exportieren.</p><p>Wenn Sie möchten, dass Nutzer/innen ihre erworbenen Badges behalten sollen, müssen Sie diese Option wählen, anstatt den Badge vollständig zu löschen.</p>';
 $string['attachment'] = 'Badge an die Mitteilung anhängen';
-$string['attachment_help'] = 'Wenn aktiviert, wird ein verliehener Badge zum Download an die E-Mail angehängt. Für die Verwendung dieser Option müssen E-Mail-Anhänge in der \'Website-Administration > Server > E-Mails > Ausgehende E-Mails\' aktiviert sein.';
+$string['attachment_help'] = 'Wenn diese Option aktiviert ist, wird ein verliehener Badge zum Download an die E-Mail angehängt. Für die Verwendung dieser Option müssen E-Mail-Anhänge in der \'Website-Administration > Server > E-Mails > Ausgehende E-Mails\' aktiviert sein.';
 $string['award'] = 'Badge verleihen';
 $string['awardedtoyou'] = 'An mich verliehen';
 $string['awardoncron'] = 'Der Zugriff auf die Badges wurde erfolgreich aktiviert. Zu viele Nutzer/innen können dieses Badge jetzt sofort erwerben. Um die Leistung der Website sicherzustellen, wird der Vorgang einige Zeit dauern.';
@@ -97,10 +97,10 @@ Auf einer produktiven Website sollten Sie das Problem lösen. Andernfalls könne
 **Was muss ich tun, wenn nicht die gesamte Website öffentlich erreichbar sein soll?**
 
 Die einzige URL, die für die Verifizierung benötigt wird, ist [website]/badges/assertion.php. Wenn die Firewall so konfiguriert ist, dass sie den Zugriff auf dieses Skript erlaubt, funktioniert die Verifizierung von Badges.';
-$string['backpackbadges'] = 'Sie haben {$a->totalbadges} Badge(s), angezeigt aus {$a->totalcollections} Collection(s). <a href="mybackpack.php">Backpack konfigurieren</a>.';
 $string['backpackbadgessettings'] = 'Backpack-Einstellungen ändern';
 $string['backpackbadgessummary'] = 'Sie haben {$a->totalbadges} Badge(s) aus {$a->totalcollections} Collection(s) angezeigt.';
 $string['backpackcannotsendverification'] = 'Eine Bestätigungsmitteilung konnte nicht gesendet werden.';
+$string['backpackconnected'] = 'Backpack ist verbunden';
 $string['backpackconnection'] = 'Verbindung zum Backpack';
 $string['backpackconnection_help'] = 'Wenn Sie eine Verbindung zu einem Backpack herstellen, können Sie Ihre Badges von dieser Website freigeben. Außerdem können sie öffentliche Badge Collections aus Ihrem Backpack auf Ihrer Profilseite anzeigen.';
 $string['backpackconnectioncancelattempt'] = 'Verwenden Sie zum Verbinden eine andere E-Mail-Adresse.';
@@ -111,6 +111,7 @@ $string['backpackconnectionresendemail'] = 'Bestätigungsmitteilung erneut sende
 $string['backpackconnectionunexpectedmessage'] = 'Der Backpack liefert den Fehler: "{$a}".';
 $string['backpackconnectionunexpectedresult'] = 'Beim Verbinden mit Ihrem Backpack ist ein Problem aufgetreten. Überprüfen Sie die Anmeldeinformationen und versuchen Sie es erneut.';
 $string['backpackdetails'] = 'Backpack konfigurieren';
+$string['backpackdisconnected'] = 'Backpack ist getrennt';
 $string['backpackemail'] = 'E-Mail-Adresse';
 $string['backpackemail_help'] = 'E-Mail-Adresse, die mit Ihrem Backpack-Dienst verknüpft ist.
 
@@ -131,11 +132,13 @@ $string['backpackemailverifyemailsubject'] = '{$a}: E-Mail-Bestätigung für Bad
 $string['backpackemailverifypending'] = 'Eine Bestätigungsmitteilung wurde an <strong>{$a}</strong> versendet. Klicken Sie auf den Bestätigungslink in der E-Mail, um die Backpack-Verbindung zu aktivieren.';
 $string['backpackemailverifysuccess'] = 'Danke für die Bestätigung Ihrer E-Mail-Adresse. Sie sind jetzt mit Ihrem Backpack verbunden.';
 $string['backpackemailverifytokenmismatch'] = 'Das Token im angeklickten Link stimmt nicht mit dem gespeicherten Token überein. Prüfen Sie, ob Sie wirklich den Link in der aktuellsten E-Mail angeklickt haben.';
+$string['backpackexporterror'] = 'Badge kann nicht in Backpack exportiert werden';
 $string['backpackimport'] = 'Importeinstellungen';
 $string['backpackimport_help'] = 'Wenn die Verbindung zum Backpack erfolgreich hergestellt ist, können Badges aus Ihrem Backpack auf der Seite \'Meine Badges\' und in Ihrem Nutzerprofil angezeigt werden.
 
 An dieser Stelle können Sie die Badge Collections auswählen, die Sie in Ihrem Profil anzeigen möchten.';
 $string['backpackneedsupdate'] = 'Der mit diesem Profil verbundene Backpack stimmt nicht mit dem Backpack für die Website überein. Sie müssen den Backpack trennen und neu verbinden.';
+$string['backpackprovider'] = 'Backpack-Provider';
 $string['backpacksettings'] = 'Backpack-Einstellungen';
 $string['backpackweburl'] = 'Backpack-URL';
 $string['badgedetails'] = 'Grundeinstellungen';
@@ -178,7 +181,7 @@ $string['claimcomment'] = 'Kommentar zur Anerkennung';
 $string['claimid'] = 'Leitsatz (URL)';
 $string['clearsettings'] = 'Einstellungen löschen';
 $string['completioninfo'] = 'Dieser Badge wurde verliehen für den Abschluss:';
-$string['completionnotenabled'] = 'Die Abschlussverfolgung ist für diesen Kurs nicht aktiviert. Deshalb kann der Kursabschluss nicht als Kriterium zur Verleihung eines Badge verwendet werden. Aktivieren Sie die Abschlussverfolgung in den Kurseinstellungen.';
+$string['completionnotenabled'] = 'Der Kursabschluss ist für diesen Kurs nicht aktiviert. Deshalb kann der Kursabschluss nicht als Kriterium zur Verleihung eines Badge verwendet werden. Aktivieren Sie den Kursabschluss in den Kurseinstellungen.';
 $string['configenablebadges'] = 'Wenn diese Option aktiviert ist, können Sie Badges erstellen und an Nutzer/innen der Website vergeben.';
 $string['configuremessage'] = 'Mitteilung';
 $string['connect'] = 'Verbinden';
@@ -202,9 +205,9 @@ $string['criteria_2_help'] = 'Dieses Kriterium erlaubt es, einen Badge manuell d
 $string['criteria_3'] = 'Soziale Beteiligung';
 $string['criteria_3_help'] = 'Sozial';
 $string['criteria_4'] = 'Kursabschluss';
-$string['criteria_4_help'] = 'Dieses Kriterium ermöglicht es, dass der Badge an Teilnehmer/innen verliehen wird, die den Kurs abgeschlossen haben. Bei diesem Kriterium können Sie zusätzliche Parameter festlegen, z.B. eine Mindestbewertung, die im Kurs erreicht werden muss, oder ein Datum, an dem der Kurs abgeschlossen wird.';
+$string['criteria_4_help'] = 'Dieses Kriterium ermöglicht es, dass der Badge an Teilnehmer/innen verliehen wird, die den Kurs abgeschlossen haben. Bei diesem Kriterium können Sie zusätzliche Parameter festlegen, z.B. eine Mindestbewertung, die im Kurs erreicht werden muss, oder ein Datum für den Kursabschlusses.';
 $string['criteria_5'] = 'Mehrere Kurse abschließen';
-$string['criteria_5_help'] = 'Dieses Kriterium ermöglicht es, dass der Badge an Nutzer/innen verliehen wird, die mehrere Kurse abgeschlossen haben. Für jeden dieser Kurse können Sie zusätzliche Parameter festlegen, z.B. eine Mindestbewertung, die im Kurs erreicht werden muss, oder ein Datum, an dem der Kurs abgeschlossen wird.';
+$string['criteria_5_help'] = 'Dieses Kriterium ermöglicht es, dass der Badge an Nutzer/innen verliehen wird, die mehrere Kurse abgeschlossen haben. Für jeden dieser Kurse können Sie zusätzliche Parameter festlegen, z.B. eine Mindestbewertung, die im Kurs erreicht werden muss, oder ein Datum für den Kursabschlusses.';
 $string['criteria_6'] = 'Vervollständigung des Nutzerprofils';
 $string['criteria_6_help'] = 'Dieses Kriterium ermöglicht es, die Verleihung eines Badge daran zu knüpfen, dass bestimmte Profilfelder im Nutzerprofil vervollständigt wurden. Das können Standardprofilfelder oder selbst definierte Profilfelder sein.';
 $string['criteria_7'] = 'Verliehene Badges';
@@ -266,13 +269,14 @@ $string['deactivatesuccess'] = 'Der Zugriff auf den Badge wurde erfolgreich deak
 $string['defaultissuercontact'] = 'E-Mail-Adresse des Badge-Verleihers';
 $string['defaultissuercontact_desc'] = 'Tragen Sie hier eine E-Mail-Adresse ein, die mit dem Badge-Verleiher verknüpft ist. Für ein Open-Badge-Backpack 2.0 dient diese der Authentifizierung, wenn Badges in ein Backpack veröffentlicht werden.';
 $string['defaultissuername'] = 'Name des Badge-Verleihers';
-$string['defaultissuername_desc'] = 'Tragen Sie hier einen Namen ein, der standardmäßig als Verleiher von Badges auf der Website verwendet wird (z.B. den Namen der verleihenden Institution).';
+$string['defaultissuername_desc'] = 'Tragen Sie hier einen Namen ein, der Verleiher von Badges auf der Website verwendet wird (z.B. den Namen der verleihenden Institution).';
 $string['defaultissuerpassword'] = 'Kennwort des Badge-Verleihers';
 $string['defaultissuerpassword_help'] = 'Auf der Backpack-Website ist ein Konto mit der E-Mail-Adresse erforderlich, die in der Einstellung für die E-Mail-Adresse des Badge-Verleihers unter "Website-Administration / Badges / Badge-Einstellungen angegeben ist. Das Kennwort für das Konto sollte hier eingegeben werden.';
 $string['delbadge'] = 'Möchten Sie wirklich den Badge \'{$a}\' und alle verliehenen Instanzen löschen?';
 $string['delconfirm'] = 'Löschen und verliehene Badges entfernen';
 $string['delcritconfirm'] = 'Möchten Sie dieses Kriterium wirklich löschen?';
 $string['deletehelp'] = '<p>Vollständiges Löschen von Badges führt dazu, dass alle verliehenen Badges verschwinden und nicht mehr verfügbar sind. Löschen bedeutet, sie endgültig zu entfernen.</p><p>Hinweis: Wenn Nutzer/innen vor dem Löschen einen Badge exportiert haben, bleibt dieser erhalten. Der Link zur Prüfseite, wo der Badge herkommt, wird jedoch beim Löschen entfernt und kann nicht mehr genutzt werden.</p>';
+$string['delexternalbackpack'] = 'Website-Backpack löschen';
 $string['delexternalbackpackconfirm'] = 'Website-Backpack \'{$a}\' löschen?';
 $string['delparamconfirm'] = 'Möchten Sie diesen Parameter wirklich löschen?';
 $string['description'] = 'Beschreibung';
@@ -296,7 +300,6 @@ $string['error:connectionunknownreason'] = 'Die Verbindung ist fehlgeschlagen, a
 $string['error:duplicatename'] = 'Ein Badge mit diesem Namen existiert bereits im System.';
 $string['error:externalbadgedoesntexist'] = 'Badge nicht gefunden';
 $string['error:guestuseraccess'] = 'Sie sind im Moment als Gast angemeldet. Um Badges zu sehen, müssen Sie sich mit Ihren Nutzerdaten anmelden.';
-$string['error:invalidbadgeurl'] = 'Unzugültiges URL-Format. Die URL muss mit http:// oder https:// beginnen.';
 $string['error:invalidcriteriatype'] = 'Unzugültiger Kriteriumstyp';
 $string['error:invalidexpiredate'] = 'Das Ablaufdatum muss in der Zukunft liegen.';
 $string['error:invalidexpireperiod'] = 'Der Ablaufdauer kann nicht negativ oder gleich Null sein.';
@@ -305,8 +308,7 @@ $string['error:invalidparamcohort'] = 'Die globale Gruppe existiert nicht.';
 $string['error:noactivities'] = 'In diesem Kurs wurde für keine Aktivität ein Aktivitätsabschluss konfiguriert.';
 $string['error:nobadges'] = 'Derzeit sind keine Badges aktiviert, die als Kriterien hinzugefügt werden können. Ein Website-Badge kann nur andere Website-Badges als Kriterien haben. Ein Kurs-Badge kann andere Kurs-Badges oder Wensite-Badges als Kriterien haben.';
 $string['error:nocohorts'] = 'Keine globalen Gruppen';
-$string['error:nocourses'] = 'Die Abschlussverfolgung ist für keinen Kurs der Website aktiviert. Deshalb wird kein Kurs zur Auswahl angezeigt. Sie können die Abschlussverfolgung in den Kurseinstellungen aktivieren.';
-$string['error:nogroups'] = '<p>Keine öffentlichen Badge Collections in Ihrem Backpack.</p> <p>Nur öffentliche Collections werden angezeigt. <a href="https://backpack.openbadges.org">Gehen Sie zu Ihrem Backpack</a> und legen Sie mindestens eine öffentliche Collection an.</p>';
+$string['error:nocourses'] = 'Der Kursabschluss ist für keinen Kurs der Website aktiviert. Deshalb wird kein Kurs zur Auswahl angezeigt. Sie können den Kursabschluss in den Kurseinstellungen aktivieren.';
 $string['error:nogroupslink'] = '<p>Nur öffentliche Collections werden angezeigt. <a href="{$a}" target="_blank" rel="nofollow">Gehen Sie zu Ihrem Backpack</a> und legen Sie mindestens eine öffentliche Collection an.</p>';
 $string['error:nogroupssummary'] = '<p>Keine öffentlichen Badge Collections in Ihrem Backpack.</p>';
 $string['error:nopermissiontoview'] = 'Sie haben kein Recht, Empfänger/innen mit dem Badge zu sehen.';
@@ -365,6 +367,7 @@ $string['imageauthorurl'] = 'URL von Bildautor/in';
 $string['imageauthorurl_help'] = 'Wenn angegeben, wird die URL zur Website der Person auf der Badge-Seite angezeigt, die das Bild erstellt hat. Die URL muss mit http:// oder https:// beginnen.';
 $string['imagecaption'] = 'Bildtitel';
 $string['imagecaption_help'] = 'Wenn ein Bildtitel angegeben ist, wird er auf Badge-Seite angezeigt.';
+$string['includeauthdetails'] = 'Authentifikationsdetails für den Backpack einbeziehen';
 $string['invalidurl'] = 'Ungültige URL';
 $string['issuancedetails'] = 'Ablaufdatum';
 $string['issuedbadge'] = 'Information zum verliehenen Badge';
@@ -375,7 +378,7 @@ $string['issuername'] = 'Verleiher/in';
 $string['issuername_endorsement'] = 'Ausstellername';
 $string['issuername_endorsement_help'] = 'Name des/der Bestätigenden';
 $string['issuername_help'] = 'Tragen Sie hier den Namen des Verleihers oder der verleihenden Institution ein.';
-$string['issuerurl'] = 'URL des Verleihers';
+$string['issuerurl'] = 'URL von Verleiher/in';
 $string['issuerurl_help'] = 'Die Website der ausstellenden Organisation. Die URL muss mit http:// oder https:// beginnen.';
 $string['language'] = 'Sprache';
 $string['language_help'] = 'Sprache, die auf der Badge-Seite verwendet wird.';
@@ -404,14 +407,13 @@ $string['month'] = 'Monat(e)';
 $string['mybackpack'] = 'Einstellungen für mein Backpack';
 $string['mybadges'] = 'Meine Badges';
 $string['never'] = 'Nie';
+$string['newbackpack'] = 'Neuen Backpack hinzufügen';
 $string['newbadge'] = 'Neuen Badge anlegen';
 $string['newimage'] = 'Neues Bild';
 $string['noalignment'] = 'Für diesen Badge sind keine externen Skills oder Kompetenzen angegeben.';
 $string['noawards'] = 'Dieser Badge wurde bisher nicht verliehen.';
 $string['nobackpack'] = 'Mit diesem Nutzerkonto ist kein Backpack-Dienst verbunden.<br/>';
-$string['nobackpackbadges'] = 'Kein Badge in der ausgewählten Collection. <a href="mybackpack.php">Weitere Collections hinzufügen</a>.';
 $string['nobackpackbadgessummary'] = 'Es sind keine Badges in den von Ihnen ausgewählten Collections verfügbar.';
-$string['nobackpackcollections'] = 'Keine Badge Collection ausgewählt. <a href="mybackpack.php">Collections hinzufügen</a>.';
 $string['nobackpackcollectionssummary'] = 'Keine Badge Collection ausgewählt';
 $string['nobackpacks'] = 'Keine Backpacks verfügbar';
 $string['nobadges'] = 'Keine Badges verfügbar';
@@ -448,8 +450,10 @@ $string['notifymonthly'] = 'Monatlich';
 $string['notifyweekly'] = 'Wöchentlich';
 $string['numawards'] = 'Dieser Badge wurde an <a href="{$a->link}">{$a->count}</a> Person(en) verliehen.';
 $string['numawardstat'] = 'Dieser Badge wurde an {$a} Person(en) verliehen.';
+$string['oauth2issuer'] = 'OAuth 2-Services';
 $string['openbadgesv1'] = 'Open-Badges 1.0';
 $string['openbadgesv2'] = 'Open-Badges 2.0';
+$string['openbadgesv2p1'] = 'Open-Badges 2.1';
 $string['overallcrit'] = 'gewählten Kriterien sind erfüllt.';
 $string['potentialrecipients'] = 'Mögliche Empfänger/innen';
 $string['preferences'] = 'Badges konfigurieren';
@@ -458,6 +462,12 @@ $string['privacy:metadata:backpack:backpackuid'] = 'Eindeutiger Identifier des B
 $string['privacy:metadata:backpack:email'] = 'E-Mail-Adresse, die mit dem Backpack verbunden ist';
 $string['privacy:metadata:backpack:externalbackpackid'] = 'ID des Backpacks';
 $string['privacy:metadata:backpack:userid'] = 'ID der Person, deren Backpack das ist';
+$string['privacy:metadata:backpackoauth2'] = 'OAuth2-Info, wenn sich eine Person zu einem externen Backpack verbindet';
+$string['privacy:metadata:backpackoauth2:issuerid'] = 'Oauth2-Service-ID';
+$string['privacy:metadata:backpackoauth2:scope'] = 'Umfang der Backpack-Verbindung auflisten';
+$string['privacy:metadata:backpackoauth2:token'] = 'Token der Backpack-Verbindung';
+$string['privacy:metadata:backpackoauth2:userid'] = 'ID der Person, die die Verbindung aufbaut';
+$string['privacy:metadata:backpackoauth2:usermodified'] = 'ID der Person, die die Verbindung ändert';
 $string['privacy:metadata:badge'] = 'Badge Collection';
 $string['privacy:metadata:badge:timecreated'] = 'Zeit, zu der der Badge erstellt wurde';
 $string['privacy:metadata:badge:timemodified'] = 'Zeit, zu der der Badge zuletzt bearbeitet wurde';
@@ -509,6 +519,8 @@ $string['selecting'] = 'Mit den gewählten Badges ...';
 $string['setup'] = 'Verbindung konfigurieren';
 $string['sitebackpack'] = 'Aktives externes Backpack';
 $string['sitebackpack_help'] = 'Der externe Backpack, mit dem Nutzer/innen von dieser Website aus eine Verbindung herstellen können. Wenn Sie diese Einstellung ändern, nachdem Nutzer/innen ihre Backpacks verbunden haben, müssen alle Nutzer/innen ihre Backpack-Einstellungen aufrufen, die Verbindung trennen und dann wieder neu herstellen.';
+$string['sitebackpackdeleted'] = 'Der Website-Backpack wurde gelöscht.';
+$string['sitebackpacknotdeleted'] = 'Dieser Backpack konnte nicht gelöscht werden, da dies die Standardeinstellung der Website ist.';
 $string['sitebackpackverify'] = 'Backpack-Verbindung';
 $string['sitebackpackwarning'] = 'Die Verbindung zum Backpack konnte nicht hergestellt werden. <br> <br>Überprüfen Sie, ob die Administrationseinstellung "E-Mail-Adresse des Badge-Ausstellers" die gültige E-Mail-Adresse für ein Konto auf der Backpack-Website ist. <br> <br> Vergewissern Sie sich, dass das "Kennwort des Badge-Ausstellers" auf der Seite <a href="{$a-> url}"> Einstellungen für den Website-Backpack </a> das richtige Kennwort für das Konto auf der Backpack-Website ist. <br> <br> Antwort der Backpack-Website: "{$a->warning}"';
 $string['sitebadges'] = 'Website-Badges';

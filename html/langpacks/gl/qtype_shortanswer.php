@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_shortanswer', language 'gl', version '3.8'.
+ * Strings for component 'qtype_shortanswer', language 'gl', version '3.11'.
  *
  * @package     qtype_shortanswer
  * @category    string
@@ -31,7 +31,7 @@ $string['answermustbegiven'] = 'Debe introducir unha resposta se hai unha cualif
 $string['answerno'] = 'Resposta {$a}';
 $string['caseno'] = 'Non, distinguir as maiúsculas das minúsculas non é importante';
 $string['casesensitive'] = 'Distinguir maiúsculas de minúsculas';
-$string['caseyes'] = 'Si, o tipo de caixa de letra debe coincidir';
+$string['caseyes'] = 'Si, o tipo de letra maiúsculas/minúsculas debe coincidir';
 $string['correctansweris'] = 'A resposta correcta é: {$a}';
 $string['correctanswers'] = 'Corrixir as respostas';
 $string['filloutoneanswer'] = 'Forneza polo menos unha resposta posíbel. As respostas deixadas en branco non se utilizan. O «*» pódese utilizar como comodín para substituír calquera carácter. A primeira resposta coincidente utilizarase para determinar a puntuación e o comentario.';

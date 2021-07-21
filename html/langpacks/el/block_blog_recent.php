@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_blog_recent', language 'el', version '3.8'.
+ * Strings for component 'block_blog_recent', language 'el', version '3.11'.
  *
  * @package     block_blog_recent
  * @category    string
@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_recent:addinstance'] = 'Προσθήκη ενός νέου μπλοκ: πρόσφατες αναρτήσεις (ιστολογίου)';
+$string['blog_recent:addinstance'] = 'Προσθήκη ενός νέου μπλοκ πρόσφατων αναρτήσεων ιστολογίου';
 $string['norecentblogentries'] = 'Δεν υπάρχουν πρόσφατες αναρτήσεις';
 $string['numentriestodisplay'] = 'Αριθμός πρόσφατων αναρτήσεων για εμφάνιση';
-$string['pluginname'] = 'Πρόσφατες αναρτήσεις (ιστολογίου)';
-$string['privacy:metadata'] = 'Το μπλοκ πρόσφατες αναρτήσεις (ιστολογίου) εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';
+$string['pluginname'] = 'Πρόσφατες αναρτήσεις ιστολογίου';
+$string['privacy:metadata'] = 'Το μπλοκ πρόσφατων αναρτήσεων ιστολογίου εμφανίζει μόνο δεδομένα αποθηκευμένα σε άλλες τοποθεσίες.';
 $string['recentinterval'] = 'Το χρονικό διάστημα που θεωρείται «πρόσφατο»';

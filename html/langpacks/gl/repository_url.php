@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_url', language 'gl', version '3.8'.
+ * Strings for component 'repository_url', language 'gl', version '3.11'.
  *
  * @package     repository_url
  * @category    string
@@ -32,5 +32,5 @@ $string['privacy:metadata'] = 'O engadido do repositorio de descargas de URL non
 $string['rename'] = 'Nome';
 $string['url'] = 'URL';
 $string['url:view'] = 'Empregar o descargador URL no selector de ficheiros';
-$string['validfiletype'] = 'Debe fornecer un URL cara un ficheiro de imaxe ou unha páxina que conteña imaxes.';
+$string['validfiletype'] = 'Debe fornecer un URL cara a un ficheiro de imaxe ou unha páxina que conteña imaxes.';
 $string['validname'] = 'Debe fornecer un nome de ficheiro correcto';

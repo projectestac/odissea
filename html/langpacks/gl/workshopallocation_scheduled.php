@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_scheduled', language 'gl', version '3.8'.
+ * Strings for component 'workshopallocation_scheduled', language 'gl', version '3.11'.
  *
  * @package     workshopallocation_scheduled
  * @category    string
@@ -59,5 +59,5 @@ $string['scheduledallocationsettings_help'] = 'Se activa método de asignación 
 
 Internamente, o método de asignación ao chou executase cos parámetros predeterminados neste formato. Isto significa que a asignación programada funciona como se o profesor executase por si mesmo a asignación ao chou ao final da fase de entregas, empregando os axustes de asignación descritos embaixo.
 
-Observe que a asignación programada NON se executará se vostede, manualmente, cambia o obradoiro para a fase de avaliación antes de que remate a fase de entregas. Nese caso ten que asignar os envíos persoalmente. O método de asignación programada é particularmente útil cando se  emprega xunto coa característica de cambio automático de fase.';
+Observe que a asignación programada NON se executará se vostede, manualmente, cambia o obradoiro para a fase de avaliación antes de que remate a fase de entregas. Nese caso ten que asignar as entregas persoalmente. O método de asignación programada é particularmente útil cando se  emprega xunto coa característica de cambio automático de fase.';
 $string['setup'] = 'Configurar a asignación programada';

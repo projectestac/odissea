@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ja', version '3.8'.
+ * Strings for component 'quiz_grading', language 'ja', version '3.11'.
  *
  * @package     quiz_grading
  * @category    string
@@ -49,7 +49,6 @@ $string['graded'] = '(評定済み)';
 $string['gradenextungraded'] = '次の {$a} 件の未評定の受験を評定する';
 $string['gradeungraded'] = '{$a} 件すべての未評定の受験を評定する';
 $string['grading'] = '手動評定';
-$string['grading:componentname'] = '手動評定レポート';
 $string['grading:viewidnumber'] = '評定中、学籍番号を表示する';
 $string['grading:viewstudentnames'] = '評定中、学生名を表示する';
 $string['gradingall'] = 'この問題すべての受験件数は {$a} 件です。';
@@ -71,7 +70,8 @@ $string['nothingfound'] = '表示するものはありません。';
 $string['options'] = 'オプション';
 $string['orderattempts'] = '受験順';
 $string['pluginname'] = '手動評定';
-$string['privacy:metadata'] = '小テスト手動評定プラグインはいかなる個人データも保存しません。データ自体を保存せずにデータを保存するユーザインターフェースを提供します。';
+$string['privacy:preference:order'] = '評定が必要な受験の表示順です。';
+$string['privacy:preference:pagesize'] = '評定インターフェースのそれぞれのページで表示する受験数です。';
 $string['qno'] = 'Q #';
 $string['questionname'] = '問題名';
 $string['questionsperpage'] = '1ページあたりの問題数';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'booktool_exportimscp', language 'sv', version '3.8'.
+ * Strings for component 'booktool_exportimscp', language 'sv', version '3.11'.
  *
  * @package     booktool_exportimscp
  * @category    string
@@ -30,3 +30,4 @@ $string['exportimscp:export'] = 'Exportera bok som IMS paket';
 $string['generateimscp'] = 'Skapa IMS CP';
 $string['nochapters'] = 'Inga bokkapitel funna, kan därför inte exportera till IMS CP.';
 $string['pluginname'] = 'Bokexport till IMS CP';
+$string['privacy:metadata'] = 'Pluginmodulen Bok IMS CP-export lagrar ingen personinformation.';

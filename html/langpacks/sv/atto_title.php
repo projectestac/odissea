@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'atto_title', language 'sv', version '3.8'.
+ * Strings for component 'atto_title', language 'sv', version '3.11'.
  *
  * @package     atto_title
  * @category    string
@@ -31,5 +31,5 @@ $string['h5'] = 'Rubrik (liten)';
 $string['p'] = 'Stycke';
 $string['pluginname'] = 'Styckeformat';
 $string['pre'] = 'För-formaterat';
-$string['privacy:metadata'] = 'Plugin-modulen atto_title lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen atto_title lagrar ingen personinformation.';
 $string['title'] = 'Styckeformat';

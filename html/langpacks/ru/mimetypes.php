@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'mimetypes', language 'ru', version '3.8'.
+ * Strings for component 'mimetypes', language 'ru', version '3.11'.
  *
  * @package     mimetypes
  * @category    string
@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['application/dash_xml'] = 'Адаптивная потоковая передача данных (MPEG-DASH)';
 $string['application/epub_zip'] = 'Электронная книга EPUB';
 $string['application/json'] = '{$a->MIMETYPE2} текст';
 $string['application/msword'] = 'документ Word';
@@ -47,6 +48,7 @@ $string['application/x-iwork-keynote-sffkey'] = 'Презентация iWork Ke
 $string['application/x-iwork-numbers-sffnumbers'] = 'Электронная таблица iWork Numbers';
 $string['application/x-iwork-pages-sffpages'] = 'Страницы документа iWork';
 $string['application/x-javascript'] = 'Исходный код JavaScript';
+$string['application/x-mpegURL'] = 'Передача потокового мультимедиа (HLS)';
 $string['application/x-mspublisher'] = 'Документ Publisher';
 $string['application/x-shockwave-flash'] = 'Flash-анимация';
 $string['application/xhtml_xml'] = 'Документ XHTML';
@@ -61,6 +63,7 @@ $string['group:html_audio'] = 'Аудиофайлы, поддерживаемы�
 $string['group:html_track'] = 'Файлы отслеживания HTML (HTML track)';
 $string['group:html_video'] = 'Видеофайлы, поддерживаемые браузерами';
 $string['group:image'] = 'Файлы изображения';
+$string['group:media_source'] = 'Потоковое мультимедиа';
 $string['group:optimised_image'] = 'Поддерживаются форматы файлов изображений';
 $string['group:presentation'] = 'Файлы презентации';
 $string['group:sourcecode'] = 'Исходный код';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'de', version '3.8'.
+ * Strings for component 'cache', language 'de', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -40,7 +40,10 @@ $string['cachedef_calendar_subscriptions'] = 'Kalender Abonnements';
 $string['cachedef_capabilities'] = 'Liste von Systemrechten';
 $string['cachedef_completion'] = 'Abschlussstatus von Aktivitäten';
 $string['cachedef_config'] = 'Konfigurationseinstellungen';
+$string['cachedef_contentbank_context_extensions'] = 'Erlaubte Extensions und deren Unterstützungsplugins in einem Inhaltsspeicher-Kontext';
+$string['cachedef_contentbank_enabled_extensions'] = 'Erlaubte Extensions und deren Unterstützungsplugins im Inhaltsspeicher';
 $string['cachedef_contextwithinsights'] = 'Kontext mit Einschätzungen';
+$string['cachedef_course_image'] = 'Kursbilder';
 $string['cachedef_course_user_dates'] = 'Die Nutzerdaten für Kurse, die auf den Modus relative Daten eingestellt sind';
 $string['cachedef_coursecat'] = 'Kurskategorien für ausgewählte Nutzer/innen';
 $string['cachedef_coursecatrecords'] = 'Datensätze der Kurskategorien';
@@ -54,9 +57,13 @@ $string['cachedef_externalbadges'] = 'Externe Badges einer bestimmten Person';
 $string['cachedef_fontawesomeiconmapping'] = 'Zuordnen von Icons für Schriftart Awesome';
 $string['cachedef_grade_categories'] = 'Abfragen der Bewertungskategorie';
 $string['cachedef_grade_letters'] = 'Notenabfragen';
+$string['cachedef_gradesetting'] = 'Kursnoteneinstellung';
 $string['cachedef_groupdata'] = 'Information für Kursgruppe';
+$string['cachedef_h5p_content_type_translations'] = 'Übersetzungen von H5P-Inhaltstyp-Bibliotheken';
+$string['cachedef_h5p_library_files'] = 'H5P-Bibliotheksdateien';
 $string['cachedef_htmlpurifier'] = 'HTML Purifier - Inhalt entfernt';
 $string['cachedef_langmenu'] = 'Liste verfügbarer Sprachen';
+$string['cachedef_license'] = 'Lizenzliste';
 $string['cachedef_locking'] = 'Sperrung';
 $string['cachedef_message_processors_enabled'] = 'Aktivierungsstatus der Mitteilungsabläufe';
 $string['cachedef_message_time_last_message_between_users'] = 'Zeitpunkt der letzten Mitteilung zwischen den Nutzer/innen';
@@ -69,6 +76,7 @@ $string['cachedef_portfolio_add_button_portfolio_instances'] = 'Portfolio-Instan
 $string['cachedef_postprocessedcss'] = 'Letztverarbeitetes CSS';
 $string['cachedef_presignup'] = 'Voranmeldedaten für bestimmte unregistrierte Nutzer/innen';
 $string['cachedef_questiondata'] = 'Fragedefinition';
+$string['cachedef_recommendation_favourite_course_content_items'] = 'Empfehlung von Kursinhalten';
 $string['cachedef_repositories'] = 'Daten der Repositories';
 $string['cachedef_roledefs'] = 'Rollendefinitionen';
 $string['cachedef_string'] = 'Sprachstring-Cache';
@@ -76,6 +84,8 @@ $string['cachedef_suspended_userids'] = 'Liste der gesperrten Nutzer/innen pro K
 $string['cachedef_tagindexbuilder'] = 'Gesuchte Objekte mit Tags';
 $string['cachedef_tags'] = 'Tag-Collections und Bereiche';
 $string['cachedef_temp_tables'] = 'Cache für temporäre Tabellen';
+$string['cachedef_user_course_content_items'] = 'Inhaltselemente pro Kurs (Aktivitäten, Ressourcen und deren Untertypen)';
+$string['cachedef_user_favourite_course_content_items'] = 'Markierte Elemente';
 $string['cachedef_user_group_groupings'] = 'Gruppierungen und Gruppen von Nutzer/in';
 $string['cachedef_userselections'] = 'Daten, die verwendet werden, um eine Nutzerauswahl an mehreren Stellen zu verwenden';
 $string['cachedef_yuimodules'] = 'YUI Modul-Definitionen';

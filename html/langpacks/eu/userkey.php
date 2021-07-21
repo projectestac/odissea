@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'eu', version '3.8'.
+ * Strings for component 'userkey', language 'eu', version '3.11'.
  *
  * @package     userkey
  * @category    string
@@ -45,5 +45,5 @@ $string['privacy:metadata:user_private_key:userid'] = 'Gakoarekin lotutako erabi
 $string['privacy:metadata:user_private_key:validuntil'] = 'Gako pribatua noiz arte izango den baliozkoa';
 $string['privacy:metadata:user_private_key:value'] = 'Gakoaren balioa.';
 $string['userkey'] = 'Erabiltzaile-gakoa';
-$string['userkey_help'] = 'Aukeratu esportatze-plugin honen bidez publikatutako datuetara sarbidea emango duen gordetako gakoa, Moodle-ra sartu behar izan gabe. Aukeratu "Sortu erabiltzaile-gako berria" formulario hau bidaltzean gako berri bat sortzeko.';
+$string['userkey_help'] = 'Aukeratu esportatze-plugin honen bidez publikatutako datuetara sarbidea emango duen gordetako gakoa, Moodlera sartu behar izan gabe. Aukeratu "Sortu erabiltzaile-gako berria" formulario hau bidaltzean gako berri bat sortzeko.';
 $string['userkeys'] = 'Erabiltzaile-gakoak';

@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'cache', language 'zh_cn', version '3.8'.
+ * Strings for component 'cache', language 'zh_cn', version '3.11'.
  *
  * @package     cache
  * @category    string
@@ -39,6 +39,8 @@ $string['cachedef_calendar_subscriptions'] = '日历订阅';
 $string['cachedef_capabilities'] = '系统功能列表';
 $string['cachedef_completion'] = '活动完成情况';
 $string['cachedef_config'] = '修改配置信息';
+$string['cachedef_contentbank_context_extensions'] = '在内容库场景中允许扩展及其支持插件';
+$string['cachedef_contentbank_enabled_extensions'] = '在内容库中允许扩展及其支持插件';
 $string['cachedef_contextwithinsights'] = '洞察力上下文';
 $string['cachedef_coursecat'] = '特定用户的课程目录列表';
 $string['cachedef_coursecatrecords'] = '课程目录记录';

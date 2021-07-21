@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'assign', language 'es', version '3.8'.
+ * Strings for component 'assign', language 'es', version '3.11'.
  *
  * @package     assign
  * @category    string
@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:submissionsdue'] = 'Presentaciones pendientes:';
+$string['activitydate:submissionsopen'] = 'Presentaciones abiertas:';
+$string['activitydate:submissionsopened'] = 'Envíos abiertos:';
 $string['activityoverview'] = 'Hay tareas que requieren atención';
 $string['addattempt'] = 'Permitir otro intento';
 $string['addnewattempt'] = 'Añadir una nueva entrega';
@@ -61,8 +64,9 @@ $string['assign:reviewgrades'] = 'Revisión de calificaciones';
 $string['assign:showhiddengrader'] = 'Ver la identidad de un evaluador oculto';
 $string['assign:submit'] = 'Enviar tarea';
 $string['assign:view'] = 'Ver tarea';
-$string['assign:viewblinddetails'] = 'Ver la identidad de los estudiantes cuando la ocultación de identidad está activada';
+$string['assign:viewblinddetails'] = 'Ver identidad de estudiantes cuando se habiliten envíos anónimos';
 $string['assign:viewgrades'] = 'Ver calificaciones';
+$string['assign:viewownsubmissionsummary'] = 'Ver resumen de envíos propios';
 $string['assignfeedback'] = 'Extensión de retroalimentación';
 $string['assignfeedbackpluginname'] = 'Extensión de retroalimentación';
 $string['assignmentisdue'] = 'Tarea pendiente';
@@ -86,7 +90,11 @@ $string['attemptheading'] = 'Intento {$a->attemptnumber}: {$a->submissionsummary
 $string['attempthistory'] = 'Intentos previos';
 $string['attemptnumber'] = 'Número del intento';
 $string['attemptreopenmethod'] = 'Permitir reapertura';
-$string['attemptreopenmethod_help'] = 'Determina cómo se configura la reapertura de intentos de entrega de la tarea de los estudiantes. Las opciones disponibles son las siguientes: <ul> <li> Nunca - La tarea no se puede modificar. </li> <li> Manual - El profesor puede permitir manualmente el reenvío </li> <li> Automática hasta aprobar - el envío del estudiante se vuelve a abrir automáticamente hasta que alcance la calificación para aprobar establecida en el libro de calificaciones para esta tarea.';
+$string['attemptreopenmethod_help'] = 'Determina cómo se reabren los intentos de envío de los estudiantes. Las opciones disponibles son:
+
+* Nunca: el envío no se puede volver a abrir.
+* Manualmente: un profesor puede volver a abrir el envío.
+* Automáticamente hasta aprobar: el envío se reabre automáticamente hasta que el estudiante alcanza la calificación para aprobar establecida en el libro de calificaciones para esta tarea.';
 $string['attemptreopenmethod_manual'] = 'Manual';
 $string['attemptreopenmethod_none'] = 'Nunca';
 $string['attemptreopenmethod_untilpass'] = 'Automática hasta aprobar';
@@ -108,10 +116,11 @@ $string['batchoperationsdescription'] = 'Con las seleccionadas...';
 $string['batchoperationunlock'] = 'desbloquear entregas';
 $string['batchsetallocatedmarker'] = 'Establecer evaluador asignado para {$a} usuario(s) seleccionado(s)';
 $string['batchsetmarkingworkflowstateforusers'] = 'Establecer estado del workflow (flujo de trabajo) de calificaciones para {$a} usuario(s) seleccionado(s)';
-$string['blindmarking'] = 'Ocultar identidad';
-$string['blindmarking_help'] = 'La ocultación de identidad al calificar oculta a los evaluadores la identidad de los estudiantes. En el momento en que exista alguna entrega o calificación en la tarea, esta opción se bloqueará y no podrá ser cambiada.';
-$string['blindmarkingenabledwarning'] = 'En esta actividad está activada la ocultación de identidad al calificar.';
-$string['calendardue'] = '{$a} pendiente';
+$string['blindmarking'] = 'Envíos anónimos';
+$string['blindmarking_help'] = 'Los envíos anónimos ocultan la identidad de los estudiantes de los marcadores. La configuración de envío anónimo se bloqueará una vez que se haya realizado un envío o calificación en relación con esta tarea.';
+$string['blindmarkingenabledwarning'] = 'Los envíos anónimos están habilitados para esta actividad. Las calificaciones no se agregarán al libro de calificaciones hasta que se revelen las identidades de los estudiantes a través del menú de acciones de calificación.';
+$string['cachedef_overrides'] = 'Información de anulación de usuarios y grupos';
+$string['calendardue'] = 'Vencimiento de {$a}';
 $string['calendargradingdue'] = '{$a} se debe calificar';
 $string['changefilters'] = 'Cambiar filtros';
 $string['changeuser'] = 'Cambiar usuario';
@@ -122,6 +131,7 @@ $string['clickexpandreviewpanel'] = 'Hacer click para expandir el panel de revis
 $string['collapsegradepanel'] = 'Contraer el panel de calificación';
 $string['collapsereviewpanel'] = 'Contraer el panel de revisión';
 $string['comment'] = 'Comentario';
+$string['completiondetail:submit'] = 'Hacer un envío';
 $string['completionsubmit'] = 'El estudiante debe entregar esta actividad para completarla';
 $string['configshowrecentsubmissions'] = 'Todos pueden ver las notificaciones de las entregas en los informes de actividad reciente.';
 $string['confirmbatchgradingoperation'] = '¿Está seguro que quiere {$a->operation} a  {$a->count} estudiantes?';
@@ -140,9 +150,9 @@ $string['currentattemptof'] = 'Este es el intento {$a->attemptnumber} ( {$a->max
 $string['currentgrade'] = 'Calificación actual en el libro de calificaciones';
 $string['cutoffdate'] = 'Fecha límite';
 $string['cutoffdate_help'] = 'Si se activa la opción, no se aceptarán entregas de tareas después de esta fecha sin una ampliación.';
-$string['cutoffdatecolon'] = 'Fecha de cierre: {$a}';
-$string['cutoffdatefromdatevalidation'] = 'La fecha límite debe ser posterior de la de inicio.';
-$string['cutoffdatevalidation'] = 'La fecha de cierre no puede ser anterior a la fecha de vencimiento.';
+$string['cutoffdatecolon'] = 'Fecha límite: {$a}';
+$string['cutoffdatefromdatevalidation'] = 'La fecha límite no puede ser anterior a la fecha de \'Permitir envíos a partir de\'.';
+$string['cutoffdatevalidation'] = 'La fecha límite no puede ser anterior a la fecha de entrega.';
 $string['defaultlayout'] = 'Restaurar la disposición original';
 $string['defaultsettings'] = 'Parámetros por defecto de la tareas';
 $string['defaultsettings_help'] = 'Estos parámetros definen los valores por defecto para todas las nuevas tareas.';
@@ -152,23 +162,23 @@ $string['description'] = 'Descripción';
 $string['disabled'] = 'Desactivado';
 $string['downloadall'] = 'Descargar todas las entregas';
 $string['downloadasfolders'] = 'Descargar envíos en carpetas';
-$string['downloadasfolders_help'] = 'Si la entrega de la tarea consiste en más de un fichero, es posible descargar las entregas en carpetas. Cada entrega es colocada en una carpeta separada, manteniendo la estructura de todas las subcarpetas y los nombres originales de los archivos.';
+$string['downloadasfolders_help'] = 'Los envíos de tareas se pueden descargar en carpetas. Luego, cada envío se coloca en una carpeta separada, con la estructura de carpetas que se mantiene para las subcarpetas y no se cambia el nombre de los archivos.';
 $string['downloadselectedsubmissions'] = 'Descargar los envíos seleccionados';
 $string['duedate'] = 'Fecha de entrega';
-$string['duedate_help'] = 'Determina la fecha de entrega de la tarea. Todavía se permiten envíos después de esta fecha pero las tareas entregadas después de esta fecha se marcan como "retrasada". Para impedir envíos después de cierta fecha ajustar la fecha límite de la tarea.';
+$string['duedate_help'] = 'Esta es la fecha cuando se debería de entregar la tarea. Los envíos seguirán siendo permitidos aún después de esta fecha de entrega, pero cualquier envío mandado después de esta fecha será marcado como \'retrasado\'. Configure una fecha límite  para evitar envíos después de una cierta fecha.';
 $string['duedatecolon'] = 'Fecha de vencimiento: {$a}';
 $string['duedateno'] = 'No hay fecha de entrega';
 $string['duedatereached'] = 'La fecha de vencimiento de esta tarea ya ha pasado';
-$string['duedatevalidation'] = 'La fecha de vencimiento debe ser posterior a la fecha de inicio de las entregas.';
+$string['duedatevalidation'] = 'La fecha de vencimiento no puede ser anterior a la fecha permitida para las entregas.';
 $string['duplicateoverride'] = 'Anular el duplicado';
 $string['editaction'] = 'Acciones...';
 $string['editattemptfeedback'] = 'Edite la calificación y la retroalimentación para el intento número {$a}.';
-$string['editingpreviousfeedbackwarning'] = 'Está editando la realimentación para un intento anterior. Este es el intento {$a->attemptnumber} de {$a->totalattempts}.';
+$string['editingpreviousfeedbackwarning'] = 'Está editando la retroalimentación para un intento anterior. Este es el intento {$a->attemptnumber} de {$a->totalattempts}.';
 $string['editingstatus'] = 'Edición de estado';
 $string['editonline'] = 'Editar online';
 $string['editoverride'] = 'Editar excepción';
 $string['editsubmission'] = 'Editar entrega';
-$string['editsubmission_help'] = 'Realizar cambios en la entrega';
+$string['editsubmission_help'] = 'Aún puede realizar cambios en su envío.';
 $string['editsubmissionother'] = 'Editar entrega para {$a}';
 $string['enabled'] = 'Habilitado';
 $string['errornosubmissions'] = 'No hay entregas que descargar';
@@ -231,6 +241,7 @@ $string['feedbacksettings'] = 'Ajustes de la retroalimentación';
 $string['feedbacktypes'] = 'Tipos de retroalimentación';
 $string['filesubmissions'] = 'Ficheros de entrega';
 $string['filter'] = 'Filtro';
+$string['filterdraft'] = 'Borrador';
 $string['filtergrantedextension'] = 'Plazo ampliado';
 $string['filternone'] = 'Sin filtro';
 $string['filternotsubmitted'] = 'No enviado';
@@ -287,7 +298,7 @@ $string['hidegrader_help'] = 'Si está habilitado, la identidad de cualquier usu
 
 Observe que este ajuste no tiene efecto en la caja de comentarios en la página de calificación.';
 $string['hideshow'] = 'Ocultar/Mostrar';
-$string['inactiveoverridehelp'] = '* El estudiante no tiene el grupo o rol correcto para realizar la tarea';
+$string['inactiveoverridehelp'] = '* Esta anulación está inactiva porque el acceso del usuario a la actividad está restringido. Esto puede ser debido a asignaciones de grupo o de rol, otras restricciones de acceso, o porque la actividad esté oculta.';
 $string['indicator:cognitivedepth'] = 'Tarea cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad de Tarea.';
 $string['indicator:cognitivedepthdef'] = 'Tarea cognitiva';
@@ -608,7 +619,7 @@ $string['viewfeedbackforuser'] = 'Ver retroalimentación del usuario: {$a}';
 $string['viewfull'] = 'Ver completo';
 $string['viewfullgradingpage'] = 'Abrir la página completa de calificar para proporcionar retroalimentación';
 $string['viewgradebook'] = 'Ver libro de calificaciones';
-$string['viewgrading'] = 'Ver/Calificar todas las entregas';
+$string['viewgrading'] = 'Ver todos los envíos';
 $string['viewgradingformforstudent'] = 'Ver página de calificaciones del estudiante: (id={$a->id}, nombre completo={$a->fullname}).';
 $string['viewownsubmissionform'] = 'Ver la página propia de entregas a tareas.';
 $string['viewownsubmissionstatus'] = 'Ver página de estado de las entregas propios.';

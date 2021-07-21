@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_match', language 'en', version '3.8'.
+ * Strings for component 'qtype_match', language 'en', version '3.11'.
  *
  * @package     qtype_match
  * @category    string
@@ -43,6 +43,9 @@ $string['pluginname_link'] = 'question/type/match';
 $string['pluginnameadding'] = 'Adding a Matching question';
 $string['pluginnameediting'] = 'Editing a Matching question';
 $string['pluginnamesummary'] = 'The answer to each of a number of sub-question must be selected from a list of possibilities.';
-$string['privacy:metadata'] = 'The Matching question type plugin does not store any personal data.';
+$string['privacy:metadata'] = 'Matching question type plugin allows question authors to set default options as user preferences.';
+$string['privacy:preference:defaultmark'] = 'The default mark set for a given question.';
+$string['privacy:preference:penalty'] = 'The penalty for each incorrect try when questions are run using the \'Interactive with multiple tries\' or \'Adaptive mode\' behaviour.';
+$string['privacy:preference:shuffleanswers'] = 'Whether the answers should be automatically shuffled.';
 $string['shuffle'] = 'Shuffle';
 $string['shuffle_help'] = 'If enabled, the order of the statements (answers) is randomly shuffled for each attempt, provided that "Shuffle within questions" in the activity settings is also enabled.';

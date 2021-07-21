@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lti', language 'en', version '3.8'.
+ * Strings for component 'lti', language 'en', version '3.11'.
  *
  * @package     lti
  * @category    string
@@ -43,6 +43,8 @@ $string['activate'] = 'Activate';
 $string['activatetoadddescription'] = 'You will need to activate this tool before you can add a description.';
 $string['active'] = 'Active';
 $string['activity'] = 'Activity';
+$string['add_ltiadv'] = 'Add LTI Advantage';
+$string['add_ltilegacy'] = 'Add Legacy LTI';
 $string['addnewapp'] = 'Enable external application';
 $string['addserver'] = 'Add new trusted server';
 $string['addtype'] = 'Add preconfigured tool';
@@ -63,6 +65,7 @@ $string['basicltifieldset'] = 'Custom example fieldset';
 $string['basicltiintro'] = 'Activity description';
 $string['basicltiname'] = 'Activity name';
 $string['basicltisettings'] = 'Basic Learning Tool Interoperability (LTI) settings';
+$string['cachedef_keyset'] = 'Caches the keyset information of tools';
 $string['cancel'] = 'Cancel';
 $string['cancelled'] = 'Cancelled';
 $string['cannot_delete'] = 'You may not delete this tool configuration.';
@@ -85,7 +88,11 @@ $string['configtypes'] = 'Enable LTI applications';
 $string['configured'] = 'Configured';
 $string['confirmtoolactivation'] = 'Are you sure you would like to activate this tool?';
 $string['contentitem'] = 'Content-Item Message';
+$string['contentitem_deeplinking'] = 'Supports Deep Linking (Content-Item Message)';
+$string['contentitem_deeplinking_help'] = 'If ticked, the option \'Select content\' will be available when adding an external tool.';
 $string['contentitem_help'] = 'If ticked, the option \'Select content\' will be available when adding an external tool.';
+$string['contentitem_multiple_description'] = 'The following items will be added to your course:';
+$string['contentitem_multiple_graded'] = 'Graded activity (Maximum grade: {$a})';
 $string['course_tool_types'] = 'Course tools';
 $string['courseactivitiesorresources'] = 'Course activities or resources';
 $string['courseid'] = 'Course ID number';
@@ -117,6 +124,7 @@ real estate to the tool, and others provide a more integrated feel with the Mood
         Depending on the browser, it will open in a new tab or a popup window.
         It is possible that browsers will prevent the new window from opening.';
 $string['delegate'] = 'Delegate to teacher';
+$string['delegate_tool'] = 'As specified in Deep Linking definition or Delegate to teacher';
 $string['delete'] = 'Delete';
 $string['delete_confirmation'] = 'Are you sure you want to delete this preconfigured tool?';
 $string['deletetype'] = 'Delete preconfigured tool';
@@ -138,6 +146,15 @@ $string['donot'] = 'Do not send';
 $string['donotaccept'] = 'Do not accept';
 $string['donotallow'] = 'Do not allow';
 $string['duplicateregurl'] = 'This registration URL is already in use';
+$string['dynreg_update_btn_new'] = 'Register as a new external tool';
+$string['dynreg_update_btn_update'] = 'Update';
+$string['dynreg_update_name'] = 'Tool name';
+$string['dynreg_update_notools'] = 'No tools in context.';
+$string['dynreg_update_text'] = 'There are existing tools attached to the registration\'s domain. Do you want to update an already installed
+external tool or create a new external tool?';
+$string['dynreg_update_url'] = 'Base URL';
+$string['dynreg_update_version'] = 'LTI version';
+$string['dynreg_update_warn_dupdomain'] = 'It is not recommended to have multiple external tools under the same domain.';
 $string['editdescription'] = 'Click here to give this tool a description';
 $string['edittype'] = 'Edit preconfigured tool';
 $string['embed'] = 'Embed';
@@ -187,7 +204,7 @@ In addition, all web service requests from the tool provider will use SSL.
 If using this option, confirm that this Moodle site and the tool provider support SSL.';
 $string['forced_help'] = 'This setting has been forced in a course or site level tool configuration. You may not change it from this interface.';
 $string['generaltool'] = 'General tool';
-$string['global_tool_types'] = 'Global preconfigured tools';
+$string['global_tool_types'] = 'Preconfigured tools';
 $string['grading'] = 'Grade routing';
 $string['icon_url'] = 'Icon URL';
 $string['icon_url_help'] = 'The icon URL allows the icon that shows up in the course listing for this activity to be modified. Instead of using the default
@@ -207,6 +224,10 @@ $string['initiatelogin'] = 'Initiate login URL';
 $string['initiatelogin_help'] = 'The tool URL to which requests for initiating a login are to be sent.  This URL is required before a message can be successfully sent to the tool.';
 $string['invalidid'] = 'LTI ID was incorrect';
 $string['jwtsecurity'] = 'LTI 1.3';
+$string['keytype'] = 'Public key type';
+$string['keytype_help'] = 'The authentication method used to validate the tool.';
+$string['keytype_keyset'] = 'Keyset URL';
+$string['keytype_rsa'] = 'RSA key';
 $string['launch_in_moodle'] = 'Launch tool in Moodle';
 $string['launch_in_popup'] = 'Launch tool in a pop-up';
 $string['launch_url'] = 'Tool URL';
@@ -233,6 +254,8 @@ $string['leaveblank'] = 'Leave blank if you do not need them';
 $string['lti'] = 'LTI';
 $string['lti:addcoursetool'] = 'Add course-specific tool configurations';
 $string['lti:addinstance'] = 'Add a new external tool';
+$string['lti:addmanualinstance'] = 'Add a manually-configured tool';
+$string['lti:addpreconfiguredinstance'] = 'Add a preconfigured tool';
 $string['lti:admin'] = 'Be an administrator when the tool is launched';
 $string['lti:grade'] = 'View grades returned by the external tool';
 $string['lti:manage'] = 'Be an Instructor when the tool is launched';
@@ -307,9 +330,15 @@ $string['optionalsettings'] = 'Optional settings';
 $string['organization'] = 'Organisation details';
 $string['organizationdescr'] = 'Organisation description';
 $string['organizationid'] = 'Organisation ID';
+$string['organizationid_default'] = 'Default organisation ID';
+$string['organizationid_default_help'] = 'The default value to use for Organisation ID. Site ID identifies this installation of Moodle.';
 $string['organizationid_help'] = 'A unique identifier for this Moodle instance. Typically, the DNS name of the organisation is used.
 
 If this field is left blank, the host name of this Moodle site will be used as the default value.';
+$string['organizationidguid'] = 'Organisation ID';
+$string['organizationidguid_help'] = 'A unique identifier for this Moodle instance passed to the tool as the Platform Instance GUID.
+
+If this field is left blank, the default value will be used.';
 $string['organizationurl'] = 'Organisation URL';
 $string['organizationurl_help'] = 'The base URL of this Moodle instance.
 
@@ -371,6 +400,8 @@ $string['privacy:metadata:useridnumber'] = 'The ID number of the user accessing 
 $string['privacy:metadata:username'] = 'The username of the user accessing the LTI Consumer';
 $string['publickey'] = 'Public key';
 $string['publickey_help'] = 'The public key (in PEM format) provided by the tool to allow signatures of incoming messages and service requests to be verified.';
+$string['publickeyset'] = 'Public keyset';
+$string['publickeyset_help'] = 'Public keyset from where this site will retrieve the tool\'s public key to allow signatures of incoming messages and service requests to be verified.';
 $string['quickgrade'] = 'Allow quick grading';
 $string['quickgrade_help'] = 'If enabled, multiple tools can be graded on one page. Add grades and comments then click the "Save all my feedback" button to save all changes for that page.';
 $string['redirect'] = 'You will be redirected in few seconds. If you are not, press the button.';
@@ -458,6 +489,8 @@ $string['show_in_course_lti2'] = 'Tool configuration usage';
 $string['show_in_course_lti2_help'] = 'This tool can be shown in the activity chooser for a teacher to select to add to a course or in the preconfigured tool drop-down menu when adding an external tool to a course.';
 $string['show_in_course_no'] = 'Do not show; use only when a matching tool URL is entered';
 $string['show_in_course_preconfigured'] = 'Show as preconfigured tool when adding an external tool';
+$string['sitehost'] = 'Site hostname';
+$string['siteid'] = 'Site ID';
 $string['size'] = 'Size parameters';
 $string['submission'] = 'Submission';
 $string['submissions'] = 'Submissions';
