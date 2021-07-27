@@ -28,7 +28,7 @@ require_login();
 
 // XTEC ************ AFEGIT - Allow access only to xtecadmin user
 // 2021.06.23 @aginard
-if (!get_protected_agora()) {
+if (!$CFG->isagora || !get_protected_agora()) {
     redirect(
         new moodle_url('/index.php'),
         get_string('accessdenied', 'core_admin'),
