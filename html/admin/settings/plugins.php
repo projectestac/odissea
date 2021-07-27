@@ -743,7 +743,7 @@ if ($hassiteconfig) {
 
 // XTEC ************ MODIFICAT - Allow access only to xtecadmin user
 // 2021.06.23 @aginard
-if ($hassiteconfig && get_protected_agora()) {
+if ($hassiteconfig && $CFG->isagora && get_protected_agora()) {
 // ************ ORIGINAL
 /*
 if ($hassiteconfig) {

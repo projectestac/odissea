@@ -4328,7 +4328,7 @@ class core_course_external extends external_api {
 
         // XTEC ************ AFEGIT - Allow access only to xtecadmin user. (H5P core in activity chooser)
         // 2021.07.08 @aginard
-        if (!get_protected_agora()) {
+        if (!$CFG->isagora || !get_protected_agora()) {
             foreach ($contentitems as $key => $contentitem) {
                 if ($contentitem->name == 'h5pactivity') {
                     unset($contentitems[$key]);

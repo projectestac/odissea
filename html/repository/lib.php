@@ -3190,7 +3190,7 @@ function initialise_filepicker($args) {
 
         // XTEC ************ AFEGIT - Allow access only to xtecadmin user. (H5P core in filepicker)
         // 2021.07.08 @aginard
-        if (!get_protected_agora()) {
+        if (!$CFG->isagora || !get_protected_agora()) {
             if (isset($repository->options['type']) && $repository->options['type'] == 'contentbank') {
                 continue ;
             }
