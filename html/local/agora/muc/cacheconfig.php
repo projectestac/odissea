@@ -94,7 +94,7 @@ global $CFG;
   array (
     0 => 
     array (
-      'store' => 'redisservers',
+      'store' => 'memcachedservers',
       'mode' => 1,
       'sort' => 0,
     ),
