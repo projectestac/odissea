@@ -46,10 +46,12 @@ $string['check_defaultuserrole_error'] = 'Il Ruolo di default per tutti gli uten
 $string['check_defaultuserrole_name'] = 'Ruolo di default per tutti gli utenti';
 $string['check_defaultuserrole_notset'] = 'Il ruolo di default non è impostato.';
 $string['check_defaultuserrole_ok'] = 'Definizione del Ruolo di default per tutti gli utenti OK.';
+$string['check_dirindex_info'] = 'L\'indice della cartella non deve essere abilitato';
 $string['check_displayerrors_details'] = '<p>Si consiglia vivamente di non abilitare l\'impostazione PHP <code>display_errors</code> nei server in produzione in quanto i messaggi di errore potrebbero fornire informazioni sensibili sul server.</p>';
 $string['check_displayerrors_error'] = 'La visualizzazione degli errori PHP è abilitata. Si raccomanda di disabilitarla.';
 $string['check_displayerrors_name'] = 'Visualizzazione errori PHP';
 $string['check_displayerrors_ok'] = 'La visualizzazione degli errori PHP è disabilitata.';
+$string['check_dotfiles_info'] = 'Tutti i dotfile tranne /.well-known/* non devono essere pubblici';
 $string['check_emailchangeconfirmation_details'] = '<p>Si raccomanda di rendere necessaria la conferma dell\'email quando un utente cambia l\'email nel proprio profilo. Se la conferma viene disabilitata, gli spammer potrebbero tentare di entrare nel server con lo scopo di utilizzarlo per l\'invio di posta indesiderata.</p>
 <p>E\' anche possibile bloccare il campo email nelle configurazioni dei plugin: tale impostazione non è analizzata da questo report.</p>';
 $string['check_emailchangeconfirmation_error'] = 'Gli utenti possono inserire qualsiasi indirizzo di email.';
@@ -92,6 +94,8 @@ $string['check_preventexecpath_name'] = 'Percorsi degli eseguibili';
 $string['check_preventexecpath_ok'] = 'I percorsi degli eseguibili sono configurabili solamente nel file config.php';
 $string['check_preventexecpath_warning'] = 'I percorsi degli eseguibili sono configurabili tramite GUI amministrata.';
 $string['check_publicpaths_403'] = '(E\' stato restituito un 403, dovrebbe essere un 404)';
+$string['check_publicpaths_generic'] = 'I file {$a} non devono essere pubblici';
+$string['check_publicpaths_name'] = 'Controllare tutti i percorsi pubblici/privati';
 $string['check_riskadmin_detailsok'] = '<p>Per favore verifica il seguente elenco di amministratori:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Per favore verifica il seguente elenco di amministratori:
 </p>{$a->admins}

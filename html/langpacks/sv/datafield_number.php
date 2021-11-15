@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Nummerfält';
 $string['pluginname'] = 'Nummer';
-$string['privacy:metadata'] = 'Fältkomponenten Nummer lagrar ingen personlig information. Den använder tabeller definierade i <code>mod_data</code>.';
+$string['privacy:metadata'] = 'Fältkomponenten Nummer lagrar ingen personinformation. Den använder tabeller definierade i <code>mod_data</code>.';

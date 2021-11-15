@@ -233,25 +233,6 @@ class com_wiris_quizzes_wrap_QuizzesBuilderWrap extends com_wiris_quizzes_api_Qu
 			}
 		}
 	}
-	public function newMultipleQuestionInstance($question = null) {
-		try {
-			$this->wrapper->start();
-			$qw = $question;
-			if($qw !== null) {
-				$question = $qw->mquestion;
-			}
-			$r = new com_wiris_quizzes_wrap_MultipleQuestionInstanceWrap($this->builder->newMultipleQuestionInstance($question));
-			$this->wrapper->stop();
-			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
-			$e = $_ex_;
-			{
-				$this->wrapper->stop();
-				throw new HException($e);
-			}
-		}
-	}
 	public function newQuestionInstance($question = null) {
 		try {
 			$this->wrapper->start();
@@ -260,21 +241,6 @@ class com_wiris_quizzes_wrap_QuizzesBuilderWrap extends com_wiris_quizzes_api_Qu
 				$question = $qw->question;
 			}
 			$r = new com_wiris_quizzes_wrap_QuestionInstanceWrap($this->builder->newQuestionInstance($question));
-			$this->wrapper->stop();
-			return $r;
-		}catch(Exception $»e) {
-			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
-			$e = $_ex_;
-			{
-				$this->wrapper->stop();
-				throw new HException($e);
-			}
-		}
-	}
-	public function newMultipleQuestion() {
-		try {
-			$this->wrapper->start();
-			$r = new com_wiris_quizzes_wrap_MultipleQuestionWrap($this->builder->newMultipleQuestion());
 			$this->wrapper->stop();
 			return $r;
 		}catch(Exception $»e) {

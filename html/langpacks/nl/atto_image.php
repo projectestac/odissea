@@ -39,6 +39,7 @@ $string['enteralt'] = 'Beschrijf deze afbeelding voor iemand die ze niet kan zie
 $string['enterurl'] = 'Geef een URL';
 $string['height'] = 'Hoogte';
 $string['imageproperties'] = 'Afbeeldingseigenschappen';
+$string['imageurlrequired'] = 'Een afbeelding moet een URL hebben.';
 $string['pluginname'] = 'Afbeelding invoegen of bewerken';
 $string['presentation'] = 'Deze afbeelding is enkel decoratief';
 $string['presentationoraltrequired'] = 'Afbeeldingen moeten een beschrijving hebben, tenzij wanneer aangegeven is dat ze enkele decoratief zijn.';

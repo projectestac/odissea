@@ -531,6 +531,9 @@ $string['postbymailsuccess_html'] = 'La vostra resposta <a href="{$a->discussion
 $string['postbyuser'] = '{$a->post} de {$a->user}';
 $string['postincontext'] = 'Mostra aquest missatge en el seu context';
 $string['postisprivatereply'] = 'Aquesta resposta és privada. Els altres participants no la poden veure.';
+$string['postmailinfo'] = 'Això és una còpia d\'un missatge enviat al lloc web {$a}.
+
+Per respondre-hi cliqueu damunt d\'aquest enllaç:';
 $string['postmailinfolink'] = 'Aquesta és una còpia d\'un missatge enviat al curs {$a->coursename}.
 Per respondre, feu clic en aquest enllaç: {$a->replylink}';
 $string['postmailnow'] = '<p>Aquest missatge s\'enviarà per correu, immediatament, a tots els subscriptors del fòrum.</p>';

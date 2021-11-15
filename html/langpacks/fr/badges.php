@@ -141,9 +141,7 @@ $string['backpacksettings'] = 'Réglages sac à badges';
 $string['backpackweburl'] = 'URL sac à badges';
 $string['badgedetails'] = 'Description du badge';
 $string['badgeimage'] = 'Image';
-$string['badgeimage_help'] = 'Cette image sera utilisée lors de la remise de ce badge.
-
-Pour ajouter une image, sélectionnez un fichier (format JPG ou PNG), puis cliquez « Enregistrer les modifications. » L\'image sera redimensionnée en carré de dimensions adéquates.';
+$string['badgeimage_help'] = 'L\'image doit avoir une taille d\'au moins 300 x 300 pixels. Elle sera affichée en 300 x 300 px sur la page du badge et en 100 x 100 px sur la page de profil de l\'utilisateur.';
 $string['badgeprivacysetting'] = 'Réglages de confidentialité des badges';
 $string['badgeprivacysetting_help'] = 'Les badges que vous recevez peuvent être affichés sur votre page de profil. Ce réglage détermine si les nouveaux badges obtenus sont automatiquement visibles.
 

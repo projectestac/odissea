@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actionsforgraderinterface'] = 'Accións para a interface de cualificador';
 $string['actionsforpost'] = 'Accións para a publicación';
+$string['activitydate:due'] = 'Pendente:';
 $string['activityoverview'] = 'Hai comentarios novos no foro';
 $string['addanewdiscussion'] = 'Engadir un novo tema de debate';
 $string['addanewquestion'] = 'Engadir unha nova pregunta';
@@ -107,6 +108,9 @@ $string['clicktounlockdiscussion'] = 'Prema para desbloquear este debate';
 $string['clicktounsubscribe'] = 'Está subscrito a este debate. Prema para cancelar a subscrición.';
 $string['close'] = 'Pechar';
 $string['closegrader'] = 'Pechar o cualificador';
+$string['completiondetail:discussions'] = 'Comezar debates: {$a}';
+$string['completiondetail:posts'] = 'Crear publicacións no foro: {$a}';
+$string['completiondetail:replies'] = 'Publicar respostas: {$a}';
 $string['completiondiscussions'] = 'Os alumnos deben crear debates:';
 $string['completiondiscussionsdesc'] = 'O alumno debe crear polo menos {$a} debate(s)';
 $string['completiondiscussionsgroup'] = 'Requírese debates';
@@ -348,6 +352,7 @@ $string['grade_forum_name'] = 'Todo o foro';
 $string['grade_forum_title'] = 'Cualificación';
 $string['grade_rating_name'] = 'Puntuación';
 $string['graded'] = 'Cualificado';
+$string['gradedby'] = 'Cualificado por';
 $string['gradeforrating'] = 'Cualificación para puntuar: {$a->str_long_grade}';
 $string['gradeforratinghidden'] = 'Cualificación para puntuar agochada';
 $string['gradeforwholeforum'] = 'Cualificación para o foro: {$a->str_long_grade}';
@@ -533,6 +538,9 @@ $string['postbymailsuccess_html'] = 'A súa resposta <a href="{$a->discussionurl
 $string['postbyuser'] = '{$a->post} por {$a->user}';
 $string['postincontext'] = 'Ver este comentario en contexto';
 $string['postisprivatereply'] = 'Esta é unha resposta privada. Non é visíbel para outros participantes.';
+$string['postmailinfo'] = 'Isto é unha copia dunha mensaxe comentada no sitio web {$a}.
+
+Para responder, prema nesta ligazón:';
 $string['postmailinfolink'] = 'Esta é unha copia dunha mensaxe publicada en {$a->coursename}.
 
 Para responder prema nesta ligazón: {$a->replylink}';

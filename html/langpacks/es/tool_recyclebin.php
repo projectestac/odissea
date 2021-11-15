@@ -51,6 +51,7 @@ $string['invalidcontext'] = 'Se ha indicado un contexto inválido.';
 $string['noitemsinbin'] = 'No hay elementos en la papelera de reciclaje.';
 $string['notenabled'] = 'Lo lamentamos, pero la papelera de reciclaje ha sido desactivada por el administrador.';
 $string['pluginname'] = 'Papelera de reciclaje';
+$string['privacy:metadata'] = 'El complemento de papelera de reciclaje no almacena ningún dato personal.';
 $string['recyclebin:deleteitems'] = 'Borrar elementos de la Papelera de reciclaje';
 $string['recyclebin:restoreitems'] = 'Restaurar elementos de la papelera de reciclaje';
 $string['recyclebin:viewitems'] = 'Ver elementos de la Papelera de reciclaje';

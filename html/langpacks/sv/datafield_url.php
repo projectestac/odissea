@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'Fält för URL';
 $string['openlinkinnewwindow'] = 'Öppna länk i nytt fönster';
 $string['pluginname'] = 'URL';
-$string['privacy:metadata'] = 'Komponenten för fältet URL lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Komponenten för fältet URL lagrar ingen personinformation.';

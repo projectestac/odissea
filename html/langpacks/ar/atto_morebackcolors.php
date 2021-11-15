@@ -29,6 +29,6 @@ $string['availablecolors_desc'] = 'يمكنك تعريف الألوان المت
 $string['custom'] = 'لون خلفية الخط المخصص (بالنظام السداسي العشري)';
 $string['customcolor'] = 'لون خلفية الخط المخصص';
 $string['pluginname'] = 'المزيد من ألوان خلفية الخطوط';
-$string['privacy:metadata'] = 'إن ملحق atto_morebackcolors لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_morebackcolors لا تخزن أي بيانات شخصية.';
 $string['setting_custom'] = 'السماح لون الخلفية المخصص';
 $string['setting_custom_desc'] = 'السماح للمستخدمين باختيار لون خلفية مخصص عبر استعمال منتقي الألوان';

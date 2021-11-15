@@ -31,7 +31,6 @@ $string['notdescription'] = 'não enviou um <a href="{$a}">pagamento via PayPal<
 $string['paymentcompleted'] = 'O seu pagamento foi aceite e a partir de agora pode aceder à atividade ou ao recurso. Obrigado.';
 $string['paymentpending'] = 'Existe um pagamento pendente registado para si.';
 $string['paymentrequired'] = 'Tem de efetuar um pagamento via PayPal para aceder à atividade ou ao recurso.';
-$string['paymentwaitreminder'] = 'Tenha em atenção que se já efetuou um pagamento recentemente, ele deve estar em processamento. Por favor, aguarde alguns minutos e atualize esta página.';
 $string['paypalaccepted'] = 'Pagamentos via PayPal aceites';
 $string['sendpaymentbutton'] = 'Enviar pagamento via PayPal';
 $string['title'] = 'Pagamento via PayPal';

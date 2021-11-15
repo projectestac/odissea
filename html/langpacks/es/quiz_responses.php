@@ -26,14 +26,21 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cannotloadoptions'] = 'No se pudieron cargar las opciones de pregunta';
-$string['include'] = 'Incluir';
+$string['include'] = 'Incluir el';
 $string['mustselectcols'] = 'Debe seleccionar algo.';
 $string['pagesize'] = 'Tamaño de página';
 $string['pluginname'] = 'Respuestas';
+$string['privacy:preference:qtext'] = 'Si mostrar las columnas de texto de la pregunta.';
+$string['privacy:preference:resp'] = 'Si mostrar las columnas de respuesta de los estudiantes.';
+$string['privacy:preference:right'] = 'Si mostrar las columnas de la respuesta correcta.';
+$string['privacy:preference:which_tries'] = 'Que intenta mostrar respuestas de.';
+$string['privacy:preference:which_tries:all'] = 'Todos los intentos en una pregunta durante un intento por un usuario.';
+$string['privacy:preference:which_tries:first'] = 'El primer intento en una pregunta durante un intento por un usuario.';
+$string['privacy:preference:which_tries:last'] = 'El úñtimo intento en una pregunta durante un intento por un usuario.';
 $string['questiontext'] = 'enunciado de la pregunta';
-$string['reportresponses'] = 'Respuestas detalladas';
+$string['reportresponses'] = 'Respuestas';
 $string['response'] = 'respuesta';
-$string['responses'] = 'Respuestas detalladas';
+$string['responses'] = 'Respuestas';
 $string['responsesdownload'] = 'Descarga de respuestas';
 $string['responsesfilename'] = 'respuestas';
 $string['responsesoptions'] = 'Opciones de respuesta';

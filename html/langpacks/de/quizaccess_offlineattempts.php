@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowofflineattempts'] = 'Test offline in der mobilen App erlauben';
 $string['allowofflineattempts_help'] = 'Diese Option legt fest, dass Nutzer/innen den Test herunterladen und offline in der mobilen App versuchen können. Sobald ein Test für einen Offline-Versuch heruntergeladen wird, beginnt ein neuer Versuch. Dieser Versuch bleibt solange leer, bis die Ergebnisse des Versuchs mit der mobilen App synchronisiert wurden.';
-$string['confirmdatasaved'] = 'Ich habe keine ungesicherten Daten auf meinem mobilen Gerät.';
+$string['confirmdatasaved'] = 'Ich habe keine ungespeicherten Daten auf meinem mobilen Gerät.';
 $string['mobileapp'] = 'Mobile App';
 $string['offlineattemptserror'] = 'Es ist nicht möglich, einen Test offline zu versuchen, wenn er eine zeitliche Begrenzung hat oder eine festgelegte Netzwerkadresse benötigt oder irgendein anderes Frageverhalten als eine verzögerte Rückmeldung verwendet (mit oder ohne CBM).';
 $string['offlinedatamessage'] = 'Sie haben für diesen Versuch auf einem mobilen Gerät gearbeitet. Die Daten wurden zuletzt vor {$a} für dieser Website gespeichert.';
-$string['pleaseconfirm'] = 'Überprüfen und bestätigen Sie, dass Sie keine ungesicherten Daten haben.';
+$string['pleaseconfirm'] = 'Überprüfen und bestätigen Sie, dass Sie keine ungespeicherten Daten haben.';
 $string['pluginname'] = 'Offline-Versuche';
 $string['privacy:metadata'] = 'Das Plugin für Regeln bei Offline-Testversuchen speichert keine personenbezogenen Daten.';

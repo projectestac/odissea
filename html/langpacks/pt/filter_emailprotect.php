@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Proteção de e-mail';
-$string['privacy:metadata'] = 'O módulo Proteção de e- mail não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Proteção de e-mail não armazena quaisquer dados pessoais.';

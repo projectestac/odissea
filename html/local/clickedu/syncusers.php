@@ -78,7 +78,9 @@ if ($users) {
         echo html_writer::div($text, 'generalbox', array('id' => 'notice'));
     } else {
         echo $OUTPUT->heading(get_string('syncusers', 'local_clickedu'), 3);
-        $text = html_writer::tag('p', get_string('newusers', 'local_clickedu', count($users)));
+        /*maguilera: resto 1 perquè si no tenim usuaris ens agafa el codi escola que enviem per el 
+        WS i ho te en compte com usuari per printar si hi han usuaris disponibles*/
+        $text = html_writer::tag('p', get_string('newusers', 'local_clickedu', count($users) -1));
         $url = new moodle_url($PAGE->url, array('confirm' => true, 'sesskey' => sesskey()));
         $button = $OUTPUT->single_button($url, get_string('continue'));
         echo html_writer::div($text . $button, 'generalbox', array('id' => 'notice'));

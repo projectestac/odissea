@@ -44,7 +44,7 @@ Följande platshållare kan inkluderas i meddelandet:
 $string['defaultrole'] = 'Standardroll';
 $string['defaultrole_desc'] = 'Bestäm vilken roll användare som anger en registreringsnyckel ska få i kursen.';
 $string['deleteselectedusers'] = 'Ta bort registreringar för valda deltagare';
-$string['editselectedusers'] = 'Editera valda användarregistreringar';
+$string['editselectedusers'] = 'Redigera registreringar';
 $string['enrolenddate'] = 'Slutdatum';
 $string['enrolenddate_help'] = 'Om aktiverat, kan användare inte registrera sig på kursen med registreringsnyckel efter det angivna datumet.';
 $string['enrolenddaterror'] = 'Datum för registrering kan inte vara senare än startdatumet.';
@@ -97,7 +97,7 @@ $string['passwordinvalidhint'] = 'Den angivna registreringsnyckeln var felaktig.
 (Här är ett tips - det börjar med \'{$a}\')';
 $string['pluginname'] = 'Självregistrering';
 $string['pluginname_desc'] = 'Pluginmodulen <em>Självregistrering</em> gör det möjligt för användare att välja vilka kurser de vill delta i. Kurserna kan vara skyddade med en registreringsnyckel. Internt sker registreringen med hjälp av pluginmodulen <em>Manuell registrering</em> varför även denna måste vara aktiverad i kursen.';
-$string['privacy:metadata'] = 'Pluginmodulen Självregistrering lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Självregistrering lagrar ingen personinformation.';
 $string['requirepassword'] = 'Kräv registreringsnyckel';
 $string['requirepassword_desc'] = 'Kräv registreringsnyckel i nya kurser och förhindra borttagande av registreringsnyckel från befintliga kurser.';
 $string['role'] = 'Standardtilldelad roll';

@@ -25,9 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configtitle'] = 'Título del Bloque';
-$string['configtitleblankhides'] = 'Título del Bloque (no título si está en blanco)';
+$string['configtitle'] = 'Título del bloque de Aprendices';
+$string['configtitleblankhides'] = 'Título del bloque de Aprendices (sin título si está en blanco)';
 $string['mentees:addinstance'] = 'Añadir un nuevo bloque de mentees';
-$string['mentees:myaddinstance'] = 'Añadir un nuevo bloque mentees al Área personal';
+$string['mentees:myaddinstance'] = 'Añadir un nuevo bloque de aprendices al Área personal';
 $string['newmenteesblock'] = '(nuevo Bloque Mentees)';
 $string['pluginname'] = 'Mentees';
+$string['privacy:metadata'] = 'El bloque de Aprendices sólo muestra información almacenada en otras ubicaciones.';

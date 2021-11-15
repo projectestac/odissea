@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allchildrenarecomplete'] = 'Все дочерние компетенции выполнены';
-$string['competencies'] = 'Компетенции';
-$string['competenciesarenotenabled'] = 'Компетенции не включены.';
+$string['competencies'] = 'Компетентности';
+$string['competenciesarenotenabled'] = 'Компетентности не включены.';
 $string['competenciessettings'] = 'Настройки компетенций';
 $string['completeplanstask'] = 'Выполнить учебные планы, по которым подошел срок';
 $string['coursecompetencyoutcome_complete'] = 'Выполнить компетенцию';
@@ -95,7 +95,7 @@ $string['eventuserevidencedeleted'] = 'Удалено доказательств
 $string['eventuserevidenceupdated'] = 'Обновлено доказательство предыдущего обучения.';
 $string['evidence_competencyrule'] = 'Выполнены требования правила компетенции.';
 $string['evidence_coursecompleted'] = 'Курс «{$a}» завершен.';
-$string['evidence_coursemodulecompleted'] = 'Элемент «{$a}» завершен.';
+$string['evidence_coursemodulecompleted'] = 'Элемент «{$a}» выполнен.';
 $string['evidence_courserestored'] = 'Рейтинг был восстановлен вместе с курсом «{$a}».';
 $string['evidence_evidenceofpriorlearninglinked'] = 'Доказательство предыдущего обучения «{$a}» было привязано.';
 $string['evidence_evidenceofpriorlearningunlinked'] = 'Отменена связь доказательства предыдущего обучения «{$a}».';
@@ -122,7 +122,7 @@ $string['privacy:metadata:competency'] = 'Запись компетенций';
 $string['privacy:metadata:competency_coursecomp'] = 'Запись компетенций, связанных с курсом';
 $string['privacy:metadata:competency_coursecompsetting'] = 'Запись настроек компетенций в курсе';
 $string['privacy:metadata:competency_evidence'] = 'Запись доказательств, влияющих на состояние компетенции';
-$string['privacy:metadata:competency_framework'] = 'Запись фреймворков кометенций';
+$string['privacy:metadata:competency_framework'] = 'Запись фреймворков компетенций';
 $string['privacy:metadata:competency_modulecomp'] = 'Запись компетенций, связанных с модулем';
 $string['privacy:metadata:competency_plan'] = 'Запись учебных планов';
 $string['privacy:metadata:competency_plancomp'] = 'Запись компетенций в учебный план';
@@ -165,7 +165,7 @@ $string['privacy:path:plans'] = 'Учебные планы';
 $string['privacy:path:relatedtome'] = 'Относящиеся ко мне';
 $string['privacy:path:userevidence'] = 'Доказательства предыдущего обучения';
 $string['pushcourseratingstouserplans'] = 'Передавать оценки курсов в индивидуальные учебные планы';
-$string['pushcourseratingstouserplans_desc'] = 'Значение по умолчанию для настройки курса при обновлении индивидуальных учебных планов если оценены компетентности курса.';
+$string['pushcourseratingstouserplans_desc'] = 'Значение по умолчанию для настройки курса при обновлении индивидуальных учебных планов если оценены компетенции курса.';
 $string['syncplanscohorts'] = 'Синхронизировать планы из глобальных групп шаблонов учебных планов';
 $string['taxonomy_behaviour'] = 'Поведение';
 $string['taxonomy_competency'] = 'Компетенция';

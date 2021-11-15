@@ -48,7 +48,7 @@ class com_wiris_quizzes_impl_HttpToQuizzesListener implements com_wiris_quizzes_
 			throw new HException("Remote exception: " . $this->getFaultMessage($response));
 		}
 		$response = $this->stripWebServiceEnvelope($response);
-		$res = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->newMultipleResponseFromXml($response);
+		$res = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->newMultipleResponseFromXml($response);
 		$k = null;
 		{
 			$_g1 = 0; $_g = $res->questionResponses->length;

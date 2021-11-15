@@ -36,6 +36,6 @@ $string['mediaformats'] = 'Leitores de multimédia disponíveis';
 $string['mediaformats_desc'] = 'Quando ativa os leitores nestas configurações, os ficheiros dos respetivos formatos podem ser incorporados usando o filtro multimédia (se ativo) ou usando os recursos Ficheiro ou URL com a opção Incorporar. Quando um leitor não está ativo, os respetivos formatos não serão incorporados e os utilizadores podem descarregá-los manualmente ou seguir as hiperligações para estes recursos.
 
 Quando dois leitores suportam o mesmo formato, ao ativar os dois, aumenta a compatibilidade entre os diferentes dispositivos, tais como telemóveis. É possível aumentar ainda mais a compatibilidade, fornecendo vários ficheiros em diferentes formatos quando disponibiliza um áudio ou clip de vídeo.';
-$string['privacy:metadata'] = 'O módulo Incorporação de multimédia não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Incorporação de multimédia não armazena quaisquer dados pessoais.';
 $string['supports'] = 'Suportes';
 $string['videoextensions'] = 'Vídeo: {$a}';

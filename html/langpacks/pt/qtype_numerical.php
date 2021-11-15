@@ -30,7 +30,7 @@ $string['addmoreanswerblanks'] = 'Adicionar mais {no} opções de resposta';
 $string['addmoreunitblanks'] = 'Adicionar mais {no} campos para unidades';
 $string['answercolon'] = 'Resposta:';
 $string['answererror'] = 'Erro';
-$string['answermustbenumberorstar'] = 'A resposta deve ser um número. Por exemplo: -1234 ou 3e8 ou \'*\'.';
+$string['answermustbenumberorstar'] = 'A resposta deve ser um número. Exemplo: -1234 ou 3e8 ou \'*\'.';
 $string['answerno'] = 'Resposta {$a}';
 $string['decfractionofquestiongrade'] = 'como parte decimal (0 a 1) da nota da pergunta';
 $string['decfractionofresponsegrade'] = 'como parte decimal (0 a 1) da nota obtida na resposta';
@@ -69,9 +69,7 @@ $string['pluginname_link'] = 'pergunta/tipo/numérica';
 $string['pluginnameadding'] = 'A adicionar pergunta numérica';
 $string['pluginnameediting'] = 'A editar pergunta numérica';
 $string['pluginnamesummary'] = 'Aceita uma resposta numérica, eventualmente com unidades, a qual é avaliada comparando com várias respostas modelo, com eventuais margens de erro.';
-$string['privacy:metadata'] = 'O módulo Pergunta do tipo Numérica não armazena dados pessoais.
-
-O módulo Pergunta do tipo Resposta curta permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Numérica permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
 $string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
 $string['privacy:preference:multichoicedisplay'] = 'Se as unidades são exibidas como o elemento de entrada de texto, seleção de múltipla escolha ou um menu pendente.';
 $string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das é o \'Interativo com múltiplas tentativas\' ou \'Modo adaptável \'.';

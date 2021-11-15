@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'Bildgalleri';
 $string['pluginname'] = 'Bildgalleri';
-$string['privacy:metadata'] = 'Pluginmodulen Bildgalleri dataformatet lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Bildgalleri dataformatet lagrar ingen personinformation.';

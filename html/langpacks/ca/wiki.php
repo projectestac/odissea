@@ -224,6 +224,7 @@ $string['return'] = 'Torna enrere';
 $string['save'] = 'Desa';
 $string['saving'] = 'S\'està desant la pàgina wiki';
 $string['savingerror'] = 'S\'està desant l\'error';
+$string['search:activity'] = 'Wiki - Informació de l\'activitat';
 $string['searchcontent'] = 'Cerca en la pàgina de continguts';
 $string['searchresult'] = 'Resultats de la cerca:';
 $string['searchterms'] = 'Cerca els termes';

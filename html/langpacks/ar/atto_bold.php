@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'غامق';
-$string['privacy:metadata'] = 'إن ملحق atto_bold لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_bold لا تخزن أيّ بيانات شخصية.';

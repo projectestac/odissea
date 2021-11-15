@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Flervalsmeny';
 $string['pluginname'] = 'Flervalsmeny';
-$string['privacy:metadata'] = 'Fältkomponenten Flervalsmeny lagrar ingen personlig information. Den använder tabeller definierade i <code>mod_data</code>.';
+$string['privacy:metadata'] = 'Fältkomponenten Flervalsmeny lagrar ingen personinformation. Den använder tabeller definierade i <code>mod_data</code>.';

@@ -27,16 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['achievedhighscoreof'] = 'Lortutako puntuazio altuena {$a}';
 $string['attempt'] = 'Saiakera #{$a}';
-$string['completiondetail:score'] = 'Lortu gutxienezko kalifikazio hau: {$a}';
+$string['completiondetail:score'] = 'Lortu gutxieneko kalifikazio hau: {$a}';
 $string['completionscore'] = 'Ikasleak lortu beharreko gutxieneko puntuazioa:';
-$string['completionscoredesc'] = 'Ikasleak hurrengo gutxienezko kalifikazioa lortu behar du: {$a}';
+$string['completionscoredesc'] = 'Ikasleak hurrengo gutxieneko kalifikazioa lortu behar du: {$a}';
 $string['completionscoregroup'] = 'Eskatutako puntuazioa';
 $string['completionscoregroup_help'] = 'Gaituz gero, jarduera osatuta dagoela markatzeko gutxieneko puntuazioa eska dezakezu.
 
 Galdera bakoitzak gehienez 100 puntu eman dezake lehen saiakeran zuzen erantzutekotan. Hortaz, agian lehenespena ezarri nahi zenuke:
 
 (Galdera-kopurua x 1000)';
-$string['emptyquiz'] = 'Kategoria honetan ez dago aukera anitzeko galderarik.';
+$string['emptyquiz'] = 'Kategoria honetan ez dago aukera anizkoitzeko galderarik.';
 $string['endofgame'] = 'Hauxe da zure emaitza: {$a}. Berriz hasteko sakatu zuriune-barra.';
 $string['eventgamescoreadded'] = 'Galdeketabenturaren puntuazioa gorde da';
 $string['eventgamescoresviewed'] = 'Galdeketabenturaren puntuazioak ikusi dira';

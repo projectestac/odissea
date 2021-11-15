@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allowdeletes'] = 'اسمح بالحذف';
-$string['allowrenames'] = 'اسمح بإعادة التسمية';
+$string['allowrenames'] = 'السماح بإعادة التسمية';
 $string['allowsuspends'] = 'السماح بتعليق وتفعيل الحسابات';
 $string['assignedsysrole'] = 'دور النظام المُعيَّن {$a}';
 $string['clidefault'] = 'الافتراضي:';
@@ -94,7 +94,7 @@ $string['usersrenamed'] = 'تمت إعادة تسمية المستخدمين';
 $string['usersskipped'] = 'تم تخطي المستخدمين';
 $string['usersupdated'] = 'تم تحديث المستخدمين';
 $string['usersweakpassword'] = 'المستخدمون ذوو كلمة المرور الضعيفة';
-$string['userthemesnotallowed'] = 'لم يتم تمكين المظاهر على مستوى المستخدم، وبالتالي سيتم تجاهل ما يتضمنه الملف المرفوع منها.';
+$string['userthemesnotallowed'] = 'لم يتم تمكين القوالب على مستوى المستخدم، وبالتالي سيتم تجاهل ما يتضمنه الملف المرفوع منها.';
 $string['uubulk'] = 'إختر لإجراءات بالجملة على المستخدمين';
 $string['uubulkall'] = 'كل المستخدمين';
 $string['uubulknew'] = 'المستخدمون الجدد';

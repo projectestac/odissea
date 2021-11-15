@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['center'] = 'توسيط';
 $string['leftalign'] = 'محاذاة إلى اليسار';
 $string['pluginname'] = 'محاذي النص';
-$string['privacy:metadata'] = 'إن ملحق atto_align لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_align لا تخزن أيّ بيانات شخصية.';
 $string['rightalign'] = 'محاذاة إلى اليمين';

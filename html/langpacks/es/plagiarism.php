@@ -32,3 +32,4 @@ $string['enableplagiarism'] = 'Habilitar plugins de plagio';
 $string['manageplagiarism'] = 'Gestionar plugins de plagio';
 $string['nopluginsinstalled'] = 'No hay plugins de plagio instalados.';
 $string['plagiarism'] = 'Prevención del plagio';
+$string['privacy:metadata:plagiarism'] = 'El subsistema de detección de plagio actúa como un canal, pasando solicitudes de plugins a los diferentes plugins para detección de plagio.';

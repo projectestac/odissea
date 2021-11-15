@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['field_name'] = 'اسم الحقل';
+$string['fullname'] = 'الاسم الكامل';
 $string['notification_page'] = 'صفحة الإشعارات';
 $string['profile_field_identifier:sendmessages'] = 'إرسال الإشعار';
 $string['profile_field_identifier:viewmessages'] = 'معاينة الإشعار';

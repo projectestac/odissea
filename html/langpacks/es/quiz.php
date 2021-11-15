@@ -74,7 +74,7 @@ $string['alreadysubmitted'] = 'Parece que usted ya respondió este cuestionario'
 $string['alternativeunits'] = 'Unidades alternativas';
 $string['alwaysavailable'] = 'Siempre disponible';
 $string['analysisoptions'] = 'Opciones de análisis';
-$string['analysistitle'] = 'Tabla de análisis de ítems';
+$string['analysistitle'] = 'Tabla de análisis de elementos';
 $string['answer'] = 'Respuesta';
 $string['answered'] = 'Contestadas';
 $string['answerhowmany'] = '¿Una o varias respuestas?';
@@ -118,7 +118,7 @@ $string['attemptsummarytitle'] = '{$a}: Resumen del intento';
 $string['attemptsunlimited'] = 'Intentos ilimitados';
 $string['attempttitle'] = '{$a}';
 $string['attempttitlepaged'] = '{$a->name} (página {$a->currentpage} de {$a->totalpages})';
-$string['autosaveperiod'] = 'Periodo guardado automáticamente';
+$string['autosaveperiod'] = 'Retardo de guardado automático';
 $string['autosaveperiod_desc'] = 'Las respuestas de los estudiantes se pueden guardar automáticamente cada pocos minutos durante los intentos del cuestionario. Esto supone una cierta elección ya que salvar las respuestas aumenta la carga del servidor, pero reduce la posibilidad de que los estudiantes pierden su trabajo.';
 $string['back'] = 'Volver a la vista previa de la pregunta';
 $string['backtocourse'] = 'Volver al curso';
@@ -133,8 +133,9 @@ $string['browsersecurity_help'] = 'Si está seleccionada la "Pantalla completa e
 * El cuestionario sólo se iniciará si el estudiante tiene un navegador con JavaScript activado
 * El cuestionario aparece en una ventana emergente  a pantalla completa que cubre todas las otras ventanas y no tiene controles de navegación
 * Se impide a los estudiantes, en la medida de lo posible, el uso de acciones como copiar y pegar';
+$string['cachedef_overrides'] = 'Información de anulación de usuarios y grupos';
 $string['calculated'] = 'Calculadas';
-$string['calculatedquestion'] = 'Pregunta calculada no permitida en la línea {$a}. La pregunta no se tendrá en cuenta';
+$string['calculatedquestion'] = 'La pregunta calculada no se admite en la línea {$a}. La pregunta será ignorada';
 $string['cannotcreatepath'] = 'No se puede crear la ruta ({$a})';
 $string['cannoteditafterattempts'] = 'No puede agregar o quitar preguntas porque este cuestionario ya ha sido respondido. ({$a})';
 $string['cannotfindprevattempt'] = 'No se puede encontrar un intento previo en el que basarse';
@@ -144,6 +145,7 @@ $string['cannotinsertrandomquestion'] = 'No se pudo insertar una nueva pregunta 
 $string['cannotloadquestion'] = 'No se pudieron cargar las opciones de pregunta';
 $string['cannotloadtypeinfo'] = 'Imposible cargar información sobre pregunta específica';
 $string['cannotopen'] = 'No se puede exportar el archivo ({$a})';
+$string['cannotremoveallsectionslots'] = 'Ha seleccionado todas las preguntas bajo el encabezado de la sección \'{$a}\'. No está permitido eliminar todas las preguntas de un título de sección.';
 $string['cannotremoveslots'] = 'No se pueden eliminar las preguntas';
 $string['cannotrestore'] = 'Imposible restaurar sesiones de pregunta';
 $string['cannotreviewopen'] = 'No puede revisar este intento: aún está abierto.';
@@ -163,7 +165,7 @@ Esta configuración solo afecta a las preguntas (p. ej., las preguntas que no se
 $string['canredoquestions_help'] = 'Si esta opción está habilitada, cuando los estudiantes hayan terminado de realizar un intento en una pregunta concreta, verán un botón de interrogación denominado Rehacer. Este botón les permitirá realizar un intento con otra versión de la misma pregunta sin tener que enviar el intento del cuestionario completo e iniciar uno nuevo. Esta opción resulta útil principalmente para los cuestionarios de práctica.
 
 Esta configuración solo afecta a las preguntas (p. ej., las preguntas que no sean ensayos) y las actuaciones (por ejemplo, los comentarios inmediatos o los interactivos con múltiples intentos) en las que el estudiante puede finalizar la pregunta antes de que se envíe el intento.';
-$string['canredoquestionsyes'] = 'Los estudiantes pueden volver a hacer otra versión de cualquier pregunta terminada';
+$string['canredoquestionsyes'] = 'Sí, proporcionar la opción de intentar otra pregunta';
 $string['caseno'] = 'Igual mayúsculas que minúsculas';
 $string['casesensitive'] = 'Diferencia entre mayúsculas y minúsculas';
 $string['caseyes'] = 'Mayúsculas y minúsculas deben coincidir';
@@ -182,12 +184,18 @@ $string['comments'] = 'Comentarios';
 $string['completedon'] = 'Finalizado en';
 $string['completionattemptsexhausted'] = 'O todos los intentos disponibles completados';
 $string['completionattemptsexhausted_help'] = 'Marcar el cuestionario como completo cuando el estudiante haya agotado el máximo número de intentos.';
-$string['completionminattempts'] = 'Los estudiantes deben realizar intentos:';
+$string['completionattemptsexhausteddesc'] = 'Completar si se agotan todos los intentos disponibles';
+$string['completiondetail:minattempts'] = 'Hacer intentos: {$a}';
+$string['completiondetail:passgrade'] = 'Recibir una calificación aprobatoria';
+$string['completiondetail:passorexhaust'] = 'Recibir una calificación aprobatoria o completar todos los intentos disponibles';
+$string['completionminattempts'] = 'Número mínimo de intentos:';
+$string['completionminattemptsdesc'] = 'Número mínimo de intentos requerido: {$a}';
 $string['completionminattemptserror'] = 'El número mínimo de intentos debe ser menor o igual a los intentos permitidos.';
 $string['completionminattemptsgroup'] = 'Intentos requeridos';
 $string['completionpass'] = 'Requerir calificación aprobatoria';
-$string['completionpass_help'] = 'Si está habilitada, esta actividad se considera completa cuando el estudiante recibe una calificación aprobatoria , siendo reflejada en el libro de calificaciones';
+$string['completionpass_help'] = 'Si está habilitado, esta actividad se considera completa cuando el estudiante recibe una calificación de aprobado (tal y como se especifica en la sección de Calificación de los ajustes del cuestionario) o superior.';
 $string['completionpassdesc'] = 'El estudiante debe obtener una calificación aprobatoria para completar esta actividad';
+$string['completionpassorattemptsexhausteddesc'] = 'El estudiante debe alcanzar una calificación de aprobado o agotar todos los intentos disponibles para completar esta actividad';
 $string['configadaptive'] = 'Si selecciona Sí en esta opción, el estudiante podrá dar múltiples respuestas a una pregunta incluso dentro del mismo intento de resolver el cuestionario.';
 $string['configattemptsallowed'] = 'Restricción del número de intentos que los estudiantes tienen para resolver el cuestionario.';
 $string['configdecimaldigits'] = 'Número de dígitos a mostrar después del punto decimal cuando se muestran las calificaciones.';
@@ -237,7 +245,7 @@ $string['correctansweris'] = 'Respuesta correcta: {$a}';
 $string['correctanswerlength'] = 'Cifras significativas';
 $string['correctanswers'] = 'Respuestas correctas';
 $string['correctanswershows'] = 'La respuesta correcta muestra';
-$string['corrresp'] = 'Respuesta Correcta';
+$string['corrresp'] = 'Respuesta correcta';
 $string['countdown'] = 'Cuenta atrás';
 $string['countdownfinished'] = 'Este cuestionario se está cerrando, debe enviar sus respuestas ahora.';
 $string['countdowntenminutes'] = 'El cuestionario se cerrará en diez minutos.';
@@ -303,30 +311,25 @@ $string['editquiz'] = 'Editar cuestionario';
 $string['editquizquestions'] = 'Editar preguntas del cuestionario';
 $string['emailconfirmbody'] = 'Hola, {$a->username},
 
-Gracias por enviar sus respuestas al cuestionario
-\'{$a->quizname}\'
-del curso \'{$a->coursename}\'
-en {$a->submissiontime}.
+Gracias por enviar sus respuestas al cuestionario \'{$a->quizname}\' del curso \'{$a->coursename}\' a las {$a->submissiontime}.
 
-Este correo confirma que hemos recibido correctamente sus respuestas.
+Este correo confirma que sus respuestas han sido guardadas.
 
-Puede acceder al cuestionario en esta dirección: {$a->quizurl}.';
+Puede acceder a este cuestionario en {$a->quizurl}.';
 $string['emailconfirmsmall'] = 'Gracias por enviar sus respuestas a  \'{$a->quizname}\'';
 $string['emailconfirmsubject'] = 'Confirmación del envío: {$a->quizname}';
 $string['emailnotifybody'] = 'Hola {$a->username},
 
-{$a->studentname} ha completado el cuestionario
-\'{$a->quizname}\' ({$a->quizurl})
-del curso \'{$a->coursename}\'
+{$a->studentname} ha completado el cuestionario \'{$a->quizname}\' ({$a->quizurl}) del curso \'{$a->coursename}\'
 
-Puede revisar su intento en {$a->quizreviewurl}.';
+Puede revisar este intento en {$a->quizreviewurl}.';
 $string['emailnotifysmall'] = '{$a->studentname} ha completado {$a->quizname}. Ver en {$a->quizreviewurl}';
 $string['emailnotifysubject'] = '{$a->studentname} ha completado {$a->quizname}';
 $string['emailoverduebody'] = 'Hola {$a->studentname},
 
-Usted comenzó un intento en \'{$a->quizname} \' en el curso {$a->coursename}, pero nunca lo envió. Debería haber sido enviado en {$a->attemptduedate}.
+Comenzó un intento en \'{$a->quizname}\' en el curso \'{$a->coursename}\', pero nunca lo envió. Debería haber sido enviado antes de {$a->attemptduedate}.
 
-Si usted todavía desea enviar este intento, por favor vaya a {$a->attemptsummaryurl} y haga clic en el botón de envío. Debe hacerlo antes de {$a->attemptgraceend} de lo contrario su intento no se contabilizará.';
+Si todavía desea enviar este intento, por favor vaya a {$a->attemptsummaryurl} y haga clic en el botón de envío. Debe hacerlo antes de {$a->attemptgraceend}, de lo contrario su intento no se contabilizará.';
 $string['emailoverduesmall'] = 'Usted no envió su intento de {$a->quizname}. Por favor, vaya a {$a->attemptsummaryurl} antes de {$a->attemptgraceend} si usted todavía desea enviarlo.';
 $string['emailoverduesubject'] = 'Intento caducado: {$a->quizname}';
 $string['empty'] = 'Vacío';
@@ -371,7 +374,7 @@ $string['feedbackerrorboundaryformat'] = 'Los límites de la calificación de la
 $string['feedbackerrorboundaryoutofrange'] = 'Los límites de la calificación de la retroalimentación deben estar entre 0% y 100%. El valor introducido en el límite {$a} está fuera de límites.';
 $string['feedbackerrorjunkinboundary'] = 'Debe rellenar las casillas de los límites de la calificación de la retroalimentación sin dejar huecos.';
 $string['feedbackerrorjunkinfeedback'] = 'Debe rellenar las casillas de retroalimentación sin dejar huecos.';
-$string['feedbackerrororder'] = 'Los límites de la calificación de la retroalimentación deben estar en orden, comenzando por el más alto. El valor introducido en el límite {$a} está fuera de la secuencia.';
+$string['feedbackerrororder'] = 'Los límites de los grados de retroalimentación deben estar en orden, los más altos primero. El valor que introdujo en el límite {$a} está fuera de secuencia.';
 $string['file'] = 'Archivo';
 $string['fileformat'] = 'Formato de archivo';
 $string['fillcorrect'] = 'Rellene con la opción correcta';
@@ -396,7 +399,7 @@ $string['generalfeedback_help'] = '<p>La retroalimentación general sobre las pr
 <p>Puede usar la retroalimentación general para dar a los estudiantes información sobre qué conocimientos tratan de comprobar las preguntas, o bien para suministrarles un enlace a más información que podrían usar en el caso de no entender las preguntas.</p>';
 $string['graceperiod'] = 'Periodo de gracia para el envío';
 $string['graceperiod_desc'] = 'Si se configura que cuando se agote el tiempo a "Hay un período de gracia para enviar el intento, pero no pueden cambiarse las respuestas", esta es la cantidad por defecto de tiempo extra que se permite, en segundos. 300 = 5 minutos; 86400 = 24 horas.';
-$string['graceperiod_help'] = 'Si se ha establecido que cuando termina el tiempo para realizar el cuestionario "Se permite un periodo de gracia para hacer el envío, pero sin poder cambiar las respuestas", este parámetro establece el tiempo de gracia, en segundos.';
+$string['graceperiod_help'] = 'Si lo que se debe hacer cuando expire el tiempo se establece en "Hay un período de gracia ...", entonces esta es la cantidad de tiempo adicional que se permite.';
 $string['graceperiodmin'] = 'Ultimo periodo de gracia para el envío';
 $string['graceperiodmin_desc'] = 'Existe un problema potencial al final de la realización de los cuestionarios. Por un lado, queremos permitir a los estudiantes que trabajen hasta el último segundo de la prueba (con la ayuda del temporizador que envía automáticamente el cuestionario cuando finaliza el tiempo). Por otra parte, el servidor puede estar sobrecargado y entonces tardar algún tiempo para procesar las respuestas. Por lo tanto, aceptaremos las respuestas enviadas este número de segundos después de que el tiempo haya expirado, por lo que no se producirán sanciones por causa de un servidor lento. Sin embargo, el estudiante puede engañarnos y utilizar estos segundos extras para seguir contestando el cuestionario. Usted debe establecer el valor de esta compensación en función del nivel de confianza que tenga en el rendimiento del servidor durante la realización de los cuestionarios.';
 $string['graceperiodtoosmall'] = 'El periodo de gracia debe se mayor que {$a}';
@@ -432,6 +435,7 @@ $string['gradesdeleted'] = 'Eliminadas calificaciones del cuestionario';
 $string['gradesofar'] = '{$a->method}: {$a->mygrade} / {$a->quizgrade}.';
 $string['gradetopassmustbeset'] = 'La nota para aprobar no puede ser cero, este cuestionario tiene como método establecido una calificación para aprobar. Por favor establezca un número que no sea cero.';
 $string['gradetopassnotset'] = 'Este cuestionario no tiene configurada una calificación aprobatoria, por lo que Usted no puede usar esta opción. Por favor, use en cambio la configuración de requerir calificación.';
+$string['gradetopassoutof'] = 'Calificación para aprobar: {$a->grade} de {$a->maxgrade}';
 $string['gradingdetails'] = 'Puntos para este envío:
 {$a->raw}/{$a->max}.';
 $string['gradingdetailsadjustment'] = 'Con las penalizaciones previas da como resultado
@@ -441,11 +445,11 @@ $string['gradingdetailszeropenalty'] = 'Usted no ha sido penalizado por este env
 $string['gradingmethod'] = 'Método de calificación: {$a}';
 $string['groupoverrides'] = 'Excepciones de grupo';
 $string['groupoverridesdeleted'] = 'Excepciones de grupo eliminadas';
-$string['groupsnone'] = 'No hay grupos en este curso';
+$string['groupsnone'] = 'No hay grupos a los que pueda acceder.';
 $string['guestsno'] = 'Lo sentimos, los invitados no pueden ver o responder cuestionarios';
 $string['hidebreaks'] = 'Ocultar saltos de página';
 $string['hidereordertool'] = 'Ocultar herramienta de reordenamiento';
-$string['history'] = 'Historial de respuestas';
+$string['history'] = 'Historial de respuestas:';
 $string['howquestionsbehave_desc'] = 'Configuración predeterminada del comportamiento de las preguntas en un cuestionario.';
 $string['imagedisplay'] = 'Imagen a mostrar';
 $string['import_help'] = 'Esta función permite importar preguntas de archivos externos.
@@ -467,9 +471,13 @@ $string['inactiveoverridehelp'] = '* El estudiante no tiene el rol o el grupo co
 $string['incorrect'] = 'Incorrecta';
 $string['indicator:cognitivedepth'] = 'Cuestionario cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Cuestionario.';
+$string['indicator:cognitivedepthdef'] = 'Cuestionario cognitivo';
+$string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades de Cuestionario durante este intervalo de análisis (Niveles = Sin vista, Ver, Enviar, Ver comentarios, Comentar comentarios, Reenviar después de ver comentarios)';
 $string['indicator:socialbreadth'] = 'Cuestionario social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Cuestionario.';
-$string['indivresp'] = 'Respuestas de los individuos a cada ítem';
+$string['indicator:socialbreadthdef'] = 'Cuestionario social';
+$string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje de compromiso social ofrecido por las actividades de Cuestionario durante este intervalo de análisis (Niveles = Sin participación, Participante solo, Participante con otros)';
+$string['indivresp'] = 'Respuestas de los individuos a cada elemento';
 $string['info'] = 'Información';
 $string['infoshort'] = 'i';
 $string['initialnumfeedbacks'] = 'Número inicial de campos de retroalimentación global';
@@ -480,7 +488,8 @@ $string['invalidattemptid'] = 'No existe un intento con esa ID';
 $string['invalidcategory'] = 'El ID de la categoría no es válido';
 $string['invalidoverrideid'] = 'ID de excepción no válido';
 $string['invalidquestionid'] = 'ID de pregunta no válida';
-$string['invalidquizid'] = 'ID de cuestionario no válida';
+$string['invalidquizid'] = 'ID de cuestionario no válido';
+$string['invalidrandomslot'] = 'ID de espacio de pregunta aleatorio no válido.';
 $string['invalidsource'] = 'No se acepta la fuente como válida';
 $string['invalidsourcetype'] = 'Tipo de fuente no válido.';
 $string['invalidstateid'] = 'ID de estado no válida';
@@ -490,8 +499,10 @@ $string['layoutasshown'] = 'Diseño de página como se muestra.';
 $string['layoutasshownwithpages'] = 'Diseño de página como se muestra. <small>(Página nueva automática cada {$a} preguntas.)</small>';
 $string['layoutshuffledandpaged'] = 'Preguntas presentadas aleatoriamente, {$a} en cada página.';
 $string['layoutshuffledsinglepage'] = 'Preguntas presentadas aleatoriamente, todas en en una sola página.';
+$string['legacyquizaccessrulescron'] = 'Reglas de acceso de pruebas cron heredadas';
+$string['legacyquizreportscron'] = 'Informes de pruebas cron heredadas';
 $string['link'] = 'Enlace';
-$string['listitems'] = 'Lista de ítems del cuestionario';
+$string['listitems'] = 'Lista de elementos en el cuestionario';
 $string['literal'] = 'Literal';
 $string['loadingquestionsfailed'] = 'Fallo en la carga de preguntas: {$a}';
 $string['makecopy'] = 'Guardar como nueva pregunta';
@@ -509,7 +520,7 @@ $string['max'] = 'Máx';
 $string['maxmark'] = 'Nota máxima';
 $string['messageprovider:attempt_overdue'] = 'Advertencia cuando su intento de resolver el cuestionario se retrase';
 $string['messageprovider:confirmation'] = 'Confirmación de su envío del cuestionario';
-$string['messageprovider:submission'] = 'Notificación del envío de cuestionarios';
+$string['messageprovider:submission'] = 'Notificación del envío de cuestionarios de sus estudiantes';
 $string['min'] = 'Mín';
 $string['minutes'] = 'Minutos';
 $string['missingcorrectanswer'] = 'Debe especificar la respuesta correcta';
@@ -642,6 +653,14 @@ $string['overridedeleteusersure'] = '¿Está seguro que desea eliminar la modifi
 $string['overridegroup'] = 'Reemplazar grupo';
 $string['overridegroupeventname'] = '{$a->quiz} - {$a->group}';
 $string['overrides'] = 'Excepciones';
+$string['overridesforquiz'] = 'Anulaciones de configuración: {$a}';
+$string['overridesnoneforgroups'] = 'No se han creado anulaciones de configuración de grupo para este cuestionario.';
+$string['overridesnoneforusers'] = 'No se han creado anulaciones de configuración de usuario para este cuestionario.';
+$string['overridessummary'] = 'Existen anulaciones de configuración ({$a})';
+$string['overridessummarygroup'] = 'Grupos: {$a}';
+$string['overridessummarythisgroup'] = 'Existen anulaciones de configuración ({$a}) para este grupo';
+$string['overridessummaryuser'] = 'Usuarios: {$a}';
+$string['overridessummaryyourgroups'] = 'Existen anulaciones de configuración ({$a}) para tus grupos';
 $string['overrideuser'] = 'Sobrescribir usuario';
 $string['overrideusereventname'] = '{$a->quiz} - Excepción';
 $string['page-mod-quiz-attempt'] = 'Página del intento del cuestionario';
@@ -666,7 +685,7 @@ $string['percentcorrect'] = 'Porcentaje correcto';
 $string['pleaseclose'] = 'Su petición ha sido procesada. Puede ahora cerrar la ventana';
 $string['pluginadministration'] = 'Administración del cuestionario';
 $string['pluginname'] = 'Cuestionario';
-$string['popup'] = 'Mostrar el cuestionario en una ventana "segura"';
+$string['popup'] = 'Mostrar el cuestionario en una ventana \'segura\'';
 $string['popupblockerwarning'] = 'Esta sección del test está en modo seguro, lo que significa que usted necesita completar el cuestionario en una ventana segura. Por favor, desactive el bloqueo de ventanas emergentes. Gracias.';
 $string['popupnotice'] = 'Los estudiantes verán este cuestionario en una ventana segura';
 $string['preprocesserror'] = 'Ha ocurrido un error durante el procesamiento previo.';
@@ -675,8 +694,31 @@ $string['previewquestion'] = 'Vista previa de la pregunta';
 $string['previewquiz'] = 'Vista previa del cuestionario';
 $string['previewquiznow'] = 'Previsualizar el cuestionario ahora';
 $string['previous'] = 'Estado previo';
+$string['privacy:metadata:core_question'] = 'La actividad de cuestionario almacena información sobre el uso de las preguntas en el subsistema core_question.';
+$string['privacy:metadata:quiz'] = 'La actividad de cuestionario utiliza informes de cuestionario.';
+$string['privacy:metadata:quiz_attempts'] = 'Detalles sobre cada intento en un cuestionario.';
+$string['privacy:metadata:quiz_attempts:attempt'] = 'El número de intento.';
+$string['privacy:metadata:quiz_attempts:currentpage'] = 'La página actual en la que se encuentra el usuario.';
+$string['privacy:metadata:quiz_attempts:preview'] = 'Si se trata de una vista previa del cuestionario.';
+$string['privacy:metadata:quiz_attempts:state'] = 'El estado actual del intento.';
+$string['privacy:metadata:quiz_attempts:sumgrades'] = 'La suma de calificaciones en el intento.';
 $string['privacy:metadata:quiz_attempts:timecheckstate'] = 'La hora en la cual fue revisado el estado.';
+$string['privacy:metadata:quiz_attempts:timefinish'] = 'El momento en el que se completó el intento.';
+$string['privacy:metadata:quiz_attempts:timemodified'] = 'El momento en el que se actualizó el intento.';
 $string['privacy:metadata:quiz_attempts:timemodifiedoffline'] = 'La hora de actualización del intento fuera de línea.';
+$string['privacy:metadata:quiz_attempts:timestart'] = 'El momento en el que se inició el intento.';
+$string['privacy:metadata:quiz_grades'] = 'Detalles sobre la calificación general de este cuestionario.';
+$string['privacy:metadata:quiz_grades:grade'] = 'La calificación general de este cuestionario.';
+$string['privacy:metadata:quiz_grades:quiz'] = 'El cuestionario que fue calificado.';
+$string['privacy:metadata:quiz_grades:timemodified'] = 'El momento en el que se modificó la calificación.';
+$string['privacy:metadata:quiz_grades:userid'] = 'El usuario que fue calificado.';
+$string['privacy:metadata:quiz_overrides'] = 'Detalles sobre anulaciones para este cuestionario';
+$string['privacy:metadata:quiz_overrides:quiz'] = 'El cuestionario con información de anulación';
+$string['privacy:metadata:quiz_overrides:timeclose'] = 'La nueva hora de cierre del cuestionario.';
+$string['privacy:metadata:quiz_overrides:timelimit'] = 'El nuevo límite de tiempo para el cuestionario.';
+$string['privacy:metadata:quiz_overrides:timeopen'] = 'La nueva hora de apertura del cuestionario.';
+$string['privacy:metadata:quiz_overrides:userid'] = 'El usuario que se anula';
+$string['privacy:metadata:quizaccess'] = 'La actividad de la prueba hace uso de las reglas de acceso a la prueba.';
 $string['publish'] = 'Publicar';
 $string['publishedit'] = 'Necesita tener permiso en el curso para añadir o editar preguntas en esta categoría';
 $string['qbrief'] = 'P. {$a}';
@@ -688,7 +730,7 @@ $string['questionbank'] = 'del banco de preguntas';
 $string['questionbankmanagement'] = 'Gestión del banco de preguntas';
 $string['questionbehaviour'] = 'Comportamiento de las preguntas';
 $string['questioncats'] = 'Categorías de pregunta';
-$string['questiondeleted'] = 'Esta pregunta ha sido eliminada. Por favor, contacte con su profesor';
+$string['questiondeleted'] = 'Esta pregunta ha sido eliminada. Por favor póngase en contacto con su profesor.';
 $string['questiondependencyadd'] = 'Sin restricción cuando la pregunta  {$a->thisq} se pueda intentar - Clic aquí para cambiarlo';
 $string['questiondependencyfree'] = 'Sin restricciones para esta pregunta';
 $string['questiondependencyremove'] = 'No se pueden realizar intentos en la pregunta {$a->thisq} hasta que se haya completado la pregunta {$a->previousq} anterior • Haga clic para cambiar';
@@ -702,6 +744,7 @@ $string['questionnotloaded'] = 'La pregunta {$a} no se ha cargado desde la base 
 $string['questionorder'] = 'Orden de las preguntas';
 $string['questionposition'] = 'Nueva posición en el orden de la pregunta {$a}';
 $string['questions'] = 'Preguntas';
+$string['questionsetpreview'] = 'Vista previa del conjunto de preguntas';
 $string['questionsinclhidden'] = 'Preguntas (incluídas las ocultas)';
 $string['questionsinthisquiz'] = 'Preguntas en este cuestionario';
 $string['questionsmatchingfilter'] = 'Preguntas que cumplen este filtro:  {$a}';
@@ -715,23 +758,24 @@ $string['questiontypesetupoptions'] = 'Ajuste de opciones para los tipos de preg
 $string['quiz:addinstance'] = 'Añadir un nuevo cuestionario';
 $string['quiz:attempt'] = 'Intentar resolver cuestionarios';
 $string['quiz:deleteattempts'] = 'Eliminar intentos';
-$string['quiz:emailconfirmsubmission'] = 'Recibir un mensaje de confirmación cuando se envíe';
-$string['quiz:emailnotifysubmission'] = 'Recibir un mensaje de confirmación cuando un intento de resolver el cuestionario se presente';
-$string['quiz:emailwarnoverdue'] = 'Recibe un mensaje de notificación cuando se vence el periodo de tiempo de un intento y se informa que debe ser presentado.';
+$string['quiz:emailconfirmsubmission'] = 'Recibir información de sus envíos de cuestionario';
+$string['quiz:emailnotifysubmission'] = 'Recibir notificaciones de los envíos de cuestionarios de sus estudiantes';
+$string['quiz:emailwarnoverdue'] = 'Recibir una advertencia cuando su intento de prueba esté vencido';
 $string['quiz:grade'] = 'Calificar cuestionarios manualmente';
-$string['quiz:ignoretimelimits'] = 'Pasa por alto el límite de tiempo en los cuestionarios';
+$string['quiz:ignoretimelimits'] = 'Ignorar el límite de tiempo de cuestionario';
 $string['quiz:manage'] = 'Gestionar cuestionarios';
-$string['quiz:manageoverrides'] = 'Gestionar excepciones de cuestionario';
+$string['quiz:manageoverrides'] = 'Gestionar anulaciones de la configuración del cuestionario';
 $string['quiz:preview'] = 'Vista previa de cuestionarios';
 $string['quiz:regrade'] = 'Recalificar los intentos de resolver el cuestionario';
 $string['quiz:reviewmyattempts'] = 'Revisar sus propios intentos';
 $string['quiz:view'] = 'Ver información sobre el cuestionario';
+$string['quiz:viewoverrides'] = 'Ver anulaciones de la configuración del cuestionario';
 $string['quiz:viewreports'] = 'Ver informes de cuestionarios';
 $string['quizavailable'] = 'El cuestionario está disponible hasta: {$a}';
 $string['quizclose'] = 'Cerrar cuestionario';
 $string['quizclosed'] = 'Este cuestionario se cerró el {$a}';
 $string['quizcloses'] = 'El cuestionario se cerrará el';
-$string['quizcloseson'] = 'Este cuestionario se cerrará el {$a}';
+$string['quizcloseson'] = 'Este cuestionario se cerrará el {$a}.';
 $string['quizeventcloses'] = 'Se cierra {$a}';
 $string['quizeventopens'] = 'Se abre {$a}';
 $string['quizisclosed'] = 'Este cuestionario está cerrado';
@@ -773,7 +817,7 @@ $string['reattemptquiz'] = 'Reintentar el cuestionario';
 $string['recentlyaddedquestion'] = 'Pregunta agregada recientemente';
 $string['recurse'] = 'Incluir también preguntas de subcategorías';
 $string['redoesofthisquestion'] = 'Otras preguntas para las que se hayan realizado intentos aquí: {$a}';
-$string['redoquestion'] = 'Rehacer pregunta';
+$string['redoquestion'] = 'Probar con otra pregunta como esta';
 $string['regrade'] = 'Recalificar todos los intentos';
 $string['regradecomplete'] = 'Todos los intentos han sido recalificados';
 $string['regradecount'] = 'Se han cambiado {$a->changed} de {$a->attempt} calificaciones';
@@ -886,6 +930,7 @@ $string['selectattempt'] = 'Seleccionar intento';
 $string['selectcategory'] = 'Seleccionar categoría';
 $string['selectedattempts'] = 'Intentos seleccionados...';
 $string['selectmultipleitems'] = 'Seleccionar varios elementos';
+$string['selectmultipletoolbar'] = 'Seleccionar barra de herramientas múltiple';
 $string['selectnone'] = 'Omitir todos';
 $string['selectquestiontype'] = '-- Seleccionar tipo de pregunta --';
 $string['serveradded'] = 'Servidor añadido';
@@ -914,19 +959,14 @@ $string['showreport'] = 'Mostrar informe';
 $string['showsmallimage'] = 'Imagen pequeña';
 $string['showteacherattempts'] = 'Mostrar intentos del profesor';
 $string['showuserpicture'] = 'Mostrar la imagen del usuario';
-$string['showuserpicture_help'] = '<p> Si usted habilita esta opción, el nombre del estudiante y su imagen serán
-    mostradas en la pantalla durante un intento, y en la pantalla de revisión.</p>
-
-<p> Un ejemplo en el que usted quisiera hacer esto es en cuestionarios proctorados
-    (vigilados en el aula) para hacer más sencillo el verificar la identidad del usuario
-    que intenta el cuestionario.</p>';
+$string['showuserpicture_help'] = 'Si está habilitado, el nombre y la imagen de un estudiante se mostrarán en la pantalla durante el intento y en la pantalla de revisión, lo que facilitará la verificación de que el estudiante haya iniciado sesión como él mismo en un examen vigilado (supervisado).';
 $string['shuffle'] = 'Orden al azar';
 $string['shuffleanswers'] = 'Respuestas ordenadas al azar';
 $string['shuffledrandomly'] = 'Presentadas al azar';
 $string['shufflequestions'] = 'Reordenar las preguntas al azar';
-$string['shufflequestions_help'] = 'Si activa esta opción, en cada intento del cuestionario el orden de las preguntas será aleatorio.
+$string['shufflequestions_help'] = 'Si está habilitado, cada vez que se intenta realizar el cuestionario, el orden de las preguntas de esta sección se barajará en un orden aleatorio diferente.
 
-Ello puede dificultar a los estudiantes que puedan compartirse las respuestas entre ellos, aunque también complica que los alumnos puedan identificar una pregunta para consultársela al profesorado.';
+Esto puede dificultar que los estudiantes compartan las respuestas, pero también dificulta que los estudiantes discutan una pregunta en particular con el maestro.';
 $string['shufflewithin'] = 'Ordenar al azar las respuestas';
 $string['shufflewithin_help'] = 'Si habilita esta opción, las respuestas se ordenarán al azar cada vez que un estudiante comience a contestar el cuestionario, suponiendo que la opción también esté habilitada en los ajustes de la pregunta.
 Esta opción sólo es aplicable a preguntas que tienen elementos  múltiples, como las preguntas de elección múltiple o de emparejamiento.';
@@ -988,6 +1028,8 @@ $string['unfinished'] = 'abierto';
 $string['ungraded'] = 'Sin calificar';
 $string['unit'] = 'Unidad';
 $string['unknowntype'] = 'Tipo de pregunta no permitida en la línea {$a}. La pregunta no se tendrá en cuenta';
+$string['updateoverdueattemptstask'] = 'Actualizando intentos de cuestionario vencidos';
+$string['updatequizslotswithrandomxofy'] = 'Actualizando espacios de cuestionarios con datos de preguntas "aleatorias" ({$a->done}/{$a->total})';
 $string['updatesettings'] = 'Actualizar ajustes del cuestionario';
 $string['updatingatttemptgrades'] = 'Actualizando calificaciones de los intentos';
 $string['updatingfinalgrades'] = 'Actualizando calificaciones finales';

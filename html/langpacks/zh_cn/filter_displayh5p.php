@@ -25,5 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowedsourceslist'] = '允许的来源';
+$string['allowedsourceslistdesc'] = '用户可以从中嵌入H5P内容的URL列表。如果未指定任何URL，则所有URL将保留为链接，而不会显示为嵌入的H5P内容。
+
+“[id]”是外部源中H5P内容id的占位符。
+例如：
+
+- H5P.com: https://[xxxxxx].H5P.com/content/[id]
+- Wordpress: http://myserver/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=[id]';
 $string['filtername'] = '显示H5P';
 $string['privacy:metadata'] = '这个显示的H5P过滤器不存储任何个人数据。';

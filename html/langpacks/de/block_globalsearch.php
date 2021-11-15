@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['globalsearch:addinstance'] = 'Neuen Block \'Globale Suche\' hinzufügen';
-$string['globalsearch:myaddinstance'] = 'Neuen Block \'Globale Suche\' zum Dashboard hinzufügen';
+$string['globalsearch:myaddinstance'] = 'Neuen Block \'Globale Suche\' im Dashboard hinzufügen';
 $string['pluginname'] = 'Globale Suche';
 $string['privacy:metadata'] = 'Der Block \'Globale Suche\' zeigt nur Daten an, die an anderen Orten gespeichert sind.';

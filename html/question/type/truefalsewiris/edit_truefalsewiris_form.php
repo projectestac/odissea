@@ -35,7 +35,8 @@ class qtype_truefalsewiris_edit_form extends qtype_wq_edit_form {
 
         $hdr = $mform->createElement('header', 'hdr', '');
 
-        $wirisclassarray = array('class' => 'wirisauthoringfield wirisstudio wirismultichoice wirisvariables wirisauxiliarcas wirisauxiliartextinput');
+        $wirisclassarray = array('class' => 'wirisauthoringfield wirisstudio wirismultichoice' .
+                                             ' wirisvariables wirisauxiliarcas wirisauxiliartextinput');
         $wiristruefalse = $mform->createElement('text',
                                                 'wiristruefalse',
                                                 get_string('truefalsewiris_algorithm', 'qtype_truefalsewiris'),

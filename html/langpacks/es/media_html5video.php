@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Video HTML5';
+$string['pluginname_help'] = 'Archivos de vídeo reproducidos por el reproductor de audio nativo del navegador. (La compatibilidad con el formato depende del navegador).';
+$string['privacy:metadata'] = 'El complemento de medios de video HTML5 no almacena ningún dato personal.';

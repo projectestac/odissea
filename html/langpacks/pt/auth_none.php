@@ -31,4 +31,4 @@ $string['checknoauthdetails'] = '<p>O módulo de autenticação <strong>Sem aute
 $string['checknoautherror'] = 'O módulo de autenticação <strong>Sem autenticação</strong> não deve ser usado em sites em produção.';
 $string['checknoauthok'] = 'O módulo de autenticação <strong>Sem autenticação</strong> não está ativo.';
 $string['pluginname'] = 'Sem autenticação';
-$string['privacy:metadata'] = 'O módulo Impedir autenticação não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo Impedir autenticação não armazena quaisquer dados pessoais.';

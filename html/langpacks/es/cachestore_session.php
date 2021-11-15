@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Caché de sesión';
+$string['privacy:metadata:core_user'] = 'El complemento de almacenamiento en caché de sesión almacena datos brevemente como parte de su funcionalidad de almacenamiento en caché. Estos datos se almacenan en la sesión de usuario de corta duración.';

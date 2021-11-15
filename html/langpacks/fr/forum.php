@@ -534,11 +534,13 @@ $string['postbymailsuccess'] = 'Votre réponse « {$a->subject} » a été pos
 $string['postbymailsuccess_html'] = 'Votre réponse <a href="{$a->discussionurl}">{$a->subject}</a> a été postée correctement.';
 $string['postbyuser'] = '{$a->post} de {$a->user}';
 $string['postincontext'] = 'Voir ce message dans son contexte';
-$string['postisprivatereply'] = 'Ceci est une réponse privée. Elle n\'est pas visible par d\'autres participants.';
+$string['postisprivatereply'] = 'Ceci est une réponse privée. Elle n\'est visible que par vous et par les utilisateurs ayant la capacité de voir les réponses privées, tels que les enseignants et les gestionnaires.';
+$string['postmailinfo'] = 'Ceci est une copie du message posté sur le site {$a}.';
 $string['postmailinfolink'] = 'Ce message est une copie du message posté dans {$a->coursename}.
 
 Pour y répondre, cliquez sur ce lien : {$a->replylink}';
 $string['postmailnow'] = '<p>Ce message sera envoyé immédiatement à tous les participants abonnés à ce forum.</p>';
+$string['postmailreply'] = 'Pour répondre, cliquer ce lien : {$a}';
 $string['postmailsubject'] = '{$a->courseshortname} : {$a->subject}';
 $string['postrating1'] = 'Pas très pertinent';
 $string['postrating2'] = 'Moyennement intéressant';

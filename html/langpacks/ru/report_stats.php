@@ -40,6 +40,7 @@ $string['privacy:metadata:statsreads'] = 'Просмотры контента';
 $string['privacy:metadata:statssummary'] = 'Записывает основную статистику о взаимодействии пользователей в курсах.';
 $string['privacy:metadata:statswrites'] = 'Контент, созданный в курсе.';
 $string['privacy:metadata:stattype'] = 'Тип записываемой статистики';
+$string['privacy:metadata:timeend'] = 'Время окончания просмотра журналов';
 $string['privacy:metadata:userid'] = 'ID пользователя, связанного с этой таблицей.';
 $string['privacy:monthlypath'] = 'Статистика по месяцам';
 $string['privacy:weeklypath'] = 'Статистика еженедельно';

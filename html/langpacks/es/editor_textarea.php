@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Área de texto plano';
+$string['privacy:metadata'] = 'El complemento de editor de área de texto plano no almacena ningún dato personal.';

@@ -36,5 +36,6 @@ $string['loglive:view'] = 'Ver logs activos';
 $string['nologreaderenabled'] = 'Ningún lector de registro activado';
 $string['pause'] = 'Pausar actualizaciones en tiempo real';
 $string['pluginname'] = 'Registros activos';
+$string['privacy:metadata'] = 'El complemento de registros en vivo no almacena ningún dato personal.';
 $string['resume'] = 'Reanudar actualizaciones en tiempo real';
 $string['selectlogreader'] = 'Elegir lector de registro';

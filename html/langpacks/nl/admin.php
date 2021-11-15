@@ -714,6 +714,7 @@ $string['htmlsettings'] = 'HTML-instellingen';
 $string['http'] = 'HTTP';
 $string['httpsecurity'] = 'HTTP Security';
 $string['iconvrequired'] = 'Het installeren van de ICONV-extentie is vereist.';
+$string['igbinary322buggyversion'] = 'De php-igbinary-extensie die op de site is geïnstalleerd, kan leiden tot problemen bij het draaien met PHP 7.2. Het wordt aanbevolen om ofwel te upgraden naar php-igbinary 3.2.5 of later, of om te upgraden naar PHP 7.3 of later.';
 $string['ignore'] = 'Negeer';
 $string['includemoduleuserdata'] = 'Ook gebruikersdata van modules';
 $string['incompatibleblocks'] = 'Niet-compatibele blokken';
@@ -738,6 +739,7 @@ $string['iplookupinfo'] = 'Standaard gebruikt Moodle de gratis  NetGeo (The Inte
 Het wordt dan ook aangeraden om een lokale kopie van de gratis GeoLite2 City database van MaxMind te installeren.<br />
 IP-adreslocatie wordt dan getoond op een eenvoudige kaart of op een kaart van Google Maps. Merk op dat je hiervoor een Google account nodig hebt en een gratis Google Maps API sleutel moet aanvragen om de interactieve kaarten in te schakelen.';
 $string['iplookupmaxmindnote'] = 'Dit product bevat GeoLite2 data gemaakt door  MaxMind en beschikbaar van <a href="https://www.maxmind.com/">https://www.maxmind.com/</a>.';
+$string['iscustomadminwarnings'] = 'Er is gedetecteerd dat je site een aangepaste admin-map gebruikt. Deze functionaliteit wordt niet meer ondersteund en zal verwijderd worden na Moodle 4.2/';
 $string['ishttpswarning'] = 'Je site gebruikt geen HTTPS. Voor een betere beveiliging en voor een verbeterde integratie met andere systemen wordt sterk aangeraden om jouw site naar HTTPS om te schakelen.';
 $string['keeptagnamecase'] = 'Hoofdletters tag-namen behouden';
 $string['lang'] = 'Standaardtaal';

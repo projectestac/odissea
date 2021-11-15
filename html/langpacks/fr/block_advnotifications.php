@@ -25,10 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add_notif_local_notice'] = 'Cette notification sera <em>uniquement</em> affichée sur la page à partir de laquelle vous gérez ce bloc !';
 $string['add_notification_global_notice'] = 'Cette notification sera affichée globalement / à l\'échelle du site !';
 $string['advnotifications'] = 'Notifications avancées';
 $string['advnotifications:addinstance'] = 'Ajouter un nouveau bloc de notifications avancées';
 $string['advnotifications:managenotifications'] = 'Gérer les notifications et les paramètres s\'y rapportant';
+$string['advnotifications:manageownnotifications'] = 'Gérer ses propres notifications et les paramètres s\'y référant';
 $string['advnotifications:myaddinstance'] = 'Ajouter un nouveau bloc de notifications avancées à la page mon Moodle';
 $string['advnotifications_add_done'] = 'Fait !';
 $string['advnotifications_add_heading'] = 'Nouvelle notification';
@@ -55,6 +57,7 @@ $string['advnotifications_dismissible'] = 'Ignoré ?';
 $string['advnotifications_edit_label'] = 'Éditer';
 $string['advnotifications_enabled'] = 'Activé ?';
 $string['advnotifications_err_forbidden'] = 'Interdit, veuillez vous reconnecter...';
+$string['advnotifications_err_nocapability'] = 'Vous n\'avez pas la permission de faire ça...';
 $string['advnotifications_err_nojsedit'] = 'Modification uniquement prise en charge avec JavaScript activé. Recréez la notification souhaitée ou activez JavaScript et réessayez.';
 $string['advnotifications_err_req'] = 'Les champs suivants sont obligatoires : {$a}';
 $string['advnotifications_field_actions'] = 'Actions';
@@ -94,6 +97,18 @@ $string['advnotifications_title'] = 'Titre';
 $string['advnotifications_type'] = 'Type';
 $string['advnotifications_update'] = 'Mise à jour';
 $string['pluginname'] = 'Notifications avancées';
+$string['privacy:metadata:block_advnotifications'] = 'Informations sur les notifications auxquelles l\'utilisateur a été exposé et les interactions enregistrées.';
+$string['privacy:metadata:block_advnotifications:blockid'] = 'L\'ID du bloc à partir duquel la notification a été créée (le cas échéant).';
+$string['privacy:metadata:block_advnotifications:created_by'] = 'L\'ID de l\'utilisateur qui a créé les notifications (le cas échéant).';
+$string['privacy:metadata:block_advnotifications:deleted'] = 'Si la notification a été supprimée du site (1 = supprimé).';
+$string['privacy:metadata:block_advnotifications:deleted_by'] = 'L\'ID de l\'utilisateur qui a supprimé la notification (le cas échéant).';
+$string['privacy:metadata:block_advnotifications:message'] = 'Le corps/le message de la notification.';
+$string['privacy:metadata:block_advnotifications:title'] = 'Le titre de la notification.';
+$string['privacy:metadata:block_advnotificationsdissed'] = 'Informations sur la relation utilisateur (en tant que consommateur) / notification.';
+$string['privacy:metadata:block_advnotificationsdissed:dismissed'] = 'Indicateur indiquant si la notification a été rejetée par l\'utilisateur ou non (1 = rejetée).';
+$string['privacy:metadata:block_advnotificationsdissed:not_id'] = 'L\'ID de notification associé.';
+$string['privacy:metadata:block_advnotificationsdissed:seen'] = 'Le nombre de fois où l\'utilisateur a vu/a été affiché la notification.';
+$string['privacy:metadata:block_advnotificationsdissed:user_id'] = 'L\'ID de l\'utilisateur qui a vu/rejeté la notification.';
 $string['setting/auto_delete'] = 'Suppression automatique :';
 $string['setting/auto_delete_desc'] = 'Indique si une notification dépassant la date de fin définie est automatiquement supprimée, mais peut être restaurée à nouveau. <br> (Aide à l\'entretien / à la gestion)';
 $string['setting/auto_delete_user_data'] = 'Suppression automatique des données utilisateur :';
@@ -109,4 +124,5 @@ $string['setting/html_desc'] = 'Indique si le HTML de base est autorisé dans le
 $string['setting/multilang'] = 'Prise en charge multi-langue / filtre :';
 $string['setting/multilang_desc'] = 'Indique si le filtre multilangue (et d\'autres) sont pris en charge dans les titres / messages des notifications. <br> Remarque - Ceci est pour les utilisateurs plus avancés et le HTML doit être activé (ci-dessus). <hr>';
 $string['setting/navigation'] = 'Navigation :';
+$string['setting/navigation_desc'] = '{$a->left}{$a->right}';
 $string['setting/settings'] = 'Paramètres :';

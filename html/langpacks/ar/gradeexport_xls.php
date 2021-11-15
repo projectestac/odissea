@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'تقديرات بصيغة XLS تم تصديرها';
 $string['pluginname'] = 'جداول Excel';
-$string['privacy:metadata'] = 'إن ملحق تصدير العلامات بصيغة جداول Excel لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق تصدير التقديرات بصيغة جداول Excel لا يخزن أي بيانات شخصية.';
 $string['timeexported'] = 'آخر ما تم تنزيله من هذا المقرر الدراسي';
-$string['xls:publish'] = 'نشر تصدير العلامات بصيغة XLS';
-$string['xls:view'] = 'استعمال تصدير العلامات بصيغة Excel';
+$string['xls:publish'] = 'نشر تصدير التقديرات بصيغة XLS';
+$string['xls:view'] = 'استعمال تصدير التقديرات بصيغة Excel';

@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'Una entrega subida ha sido enviada.';
 $string['event_assessable_uploaded'] = 'Se ha subido un fichero.';
 $string['pluginname'] = 'Subir';
+$string['privacy:metadata'] = 'El complemento de subir tarea no almacena ningún dato personal.';

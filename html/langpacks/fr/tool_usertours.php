@@ -55,7 +55,7 @@ Ce délai est défini en millisecondes.';
 $string['description'] = 'Description';
 $string['done'] = 'Terminé';
 $string['duplicatetour'] = 'Dupliquer la visite guidée';
-$string['duplicatetour_name'] = '{$a} copie';
+$string['duplicatetour_name'] = '{$a} (copie)';
 $string['editstep'] = 'Modification de « {$a} »';
 $string['enabled'] = 'Activé';
 $string['endtour'] = 'Terminer la visite guidée';

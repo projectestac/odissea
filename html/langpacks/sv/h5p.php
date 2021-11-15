@@ -141,7 +141,7 @@ $string['licensee'] = 'Licensinnehavare';
 $string['licenseextras'] = 'Övrig licensinformation';
 $string['licenseversion'] = 'Licensversion';
 $string['lockh5pdeploy'] = 'Det går inte att komma åt det här H5P-innehållet eftersom det håller på att installeras. Försök igen senare.';
-$string['mainlibrarydisabled'] = 'Det går inte att visa den här filen eftersom dess innehållstyp är inaktiverad. Kontakta administratören för att be om att innehållstypen
+$string['mainlibrarydisabled'] = 'Det går inte att visa den här filen eftersom dess innehållstyp är inaktiverad. Kontakta administratören för att be att innehållstypen
 aktiveras.';
 $string['missingcontentfolder'] = 'En giltig mapp för innehålls saknas';
 $string['missingcoreversion'] = 'Systemet kunde inte installera komponenten {$a->%component} från paketet eftersom det kräver en nyare version av H5P-pluginmodulen. Den här webbplatsen kör för närvarande version {$a->%current}, medan den nödvändiga versionen är {$a->%required} eller senare. Vänligen uppgradera och försök sedan igen.';

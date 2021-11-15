@@ -85,6 +85,8 @@ $string['automark_help'] = 'Bertaratzea automatikoki jasotzea ahalbidetzen du.
 $string['automarkall'] = 'Bai';
 $string['automarkclose'] = 'Ezarri markatu gabe gisa saioa amaitzean';
 $string['automarktask'] = 'Egiaztatu markatze automatikoa behar duten saioen bertaratze-erregistroak';
+$string['automarkuseempty'] = 'Markatze automatikorako egoeren eskuragarritasunaren kudeaketa';
+$string['automarkuseempty_desc'] = 'Markatuz gero, markatze automatikoa egiterakoan "eskuragarri" ezarpena hutsik daukaten egoera-elementuak baimenduko dira';
 $string['autorecorded'] = 'sistemak auto-erregistratua';
 $string['averageattendance'] = 'Batez besteko bertaratzea';
 $string['averageattendancegraded'] = 'Batez besteko bertaratzea';
@@ -297,15 +299,15 @@ $string['iptimemissing'] = 'Desblokeatzeko minutu baliogabeak';
 $string['jumpto'] = 'Joan hona';
 $string['keepsearching'] = 'Jarraitu bilatzen';
 $string['marksessionimportcsvhelp'] = 'Formulario honek erabiltzaileen identifikatzaile bat eta egoera bat CSV fitxategi batean igotzea ahalbidetzen dizu - egoeraren eremuak egoeraren akronimoa edo erabiltzaileak bertaratzea gorde zueneko unea izan dezake. Balioa data bat bada sistemak une horretarako eskuragarri dagoen puntuazio altuena esleitzen saiatuko da.';
-$string['maxpossible'] = 'Lortu daitekeen gehienezkoa';
-$string['maxpossible_help'] = 'Erabiltzaile bakoitzak orain arte jaso gabeko saio bakoitzean (iraganekoak zein etorkizunekoak) gehienezko puntuazioa jasoz gero lortu dezakeen puntuazioa erakusten du:
+$string['maxpossible'] = 'Lortu daitekeen gehienekoa';
+$string['maxpossible_help'] = 'Erabiltzaile bakoitzak orain arte jaso gabeko saio bakoitzean (iraganekoak zein etorkizunekoak) gehieneko puntuazioa jasoz gero lortu dezakeen puntuazioa erakusten du:
     <ul>
-    <li><strong>Puntuak</strong>: erabiltzaile bakoitzak saioetan guztira gehienez lortu dezakeen gehienezko puntuazioa.</li>
-    <li><strong>Ehunekoa</strong>: erabiltzaile bakoitzak saioetan guztira gehienez lortu dezakeen gehienezko ehunekoa.</li>
+    <li><strong>Puntuak</strong>: erabiltzaile bakoitzak saioetan guztira gehienez lortu dezakeen gehieneko puntuazioa.</li>
+    <li><strong>Ehunekoa</strong>: erabiltzaile bakoitzak saioetan guztira gehienez lortu dezakeen gehieneko ehunekoa.</li>
     </ul>';
-$string['maxpossiblepercentage'] = 'Lortu daitekeen gehienezko ehunekoa';
-$string['maxpossiblepoints'] = 'Lortu daitezkeen gehienezko puntuak';
-$string['maxwarn'] = 'Gehienezko abisuzko e-posta mezuak';
+$string['maxpossiblepercentage'] = 'Lortu daitekeen gehieneko ehunekoa';
+$string['maxpossiblepoints'] = 'Lortu daitezkeen gehieneko puntuak';
+$string['maxwarn'] = 'Gehieneko abisuzko e-posta mezuak';
 $string['maxwarn_help'] = 'Ohar bat gehienez bidali beharreko aldiak (saio bakoitzeko ohar bakarra bidaltzen da)';
 $string['mergeuser'] = 'Batu erabiltzailea';
 $string['mobilesessionfrom'] = 'Erakutsi azkena baino zaharragoak diren saioak';
@@ -338,7 +340,7 @@ $string['noautomark'] = 'Desgaituta';
 $string['nocapabilitytotakethisattendance'] = 'Aldatzeko baimenik ez duzun {$a} cmid-a duen bertaratze-saio bat aldatzen saiatu zara.';
 $string['nodescription'] = 'Ohiko klase-saioa';
 $string['noeventstoreset'] = 'Ez dago eguneratzea behar duen egutegiko ekitaldirik.';
-$string['nogroups'] = 'Ezin dituzu talde-saioak sortu. Ikastaroan ez dago talderik.';
+$string['nogroups'] = 'Jarduera hau taldeak erabiltzeko konfiguratu da, baina ikastaroan ez dago talderik.';
 $string['noguest'] = 'Gonbidatuek ezin duten bertaratzea ikusi';
 $string['noofdaysabsent'] = 'Ez egondako egun kopurua';
 $string['noofdaysexcused'] = 'Salbuetsitako egun kopurua';
@@ -354,20 +356,21 @@ $string['notset'] = 'ezarri gabe';
 $string['noupgradefromthisversion'] = 'Bertaratzearen erregistroaren modulua ezin da eguneratu instalatuta daukazun attforblock bertsiotik. - attforblock ezabatu edo bere bertsio berrienera eguneratu ezazu mesedez bertaratzearen erregistroaren modulua instalatu baino lehen.';
 $string['numsessions'] = 'Saio kopurua';
 $string['olddate'] = 'Data zaharra';
+$string['onactivitycompletion'] = 'Jarduera osatzerakoan';
 $string['onlyselectedusers'] = 'Esportatu erabiltzaile jakin batzuk';
 $string['overallsessions'] = 'Saio guztiekiko';
 $string['overallsessions_help'] = 'Erakutsi saio guztien estatistikak oraindik eman ez direnak barne (iraganekoak zein etorkizunekoak):
     <ul>
     <li><strong>Saioak</strong>: saio kopurua osoa.</li>
     <li><strong>Puntuak</strong>: jasotako saioetan oinarrituta lortutako puntuak.</li>
-    <li><strong>Ehunekoa</strong>: saio guztien gehienezko puntuekiko jasotako saioen puntuen ehunekoa.</li>
+    <li><strong>Ehunekoa</strong>: saio guztien gehieneko puntuekiko jasotako saioen puntuen ehunekoa.</li>
     </ul>';
 $string['oversessionstaken'] = 'Jasotako saioekiko';
 $string['oversessionstaken_help'] = 'Erakutsi dagoeneko eman diren saioen estatistikak:
     <ul>
     <li><strong>Saioak</strong>: dagoeneko emandako saioak.</li>
     <li><strong>Points</strong>: jasotako saioetan oinarrituta lortutako puntuak.</li>
-    <li><strong>Percentage</strong>: emandako saio guztien gehienezko puntuekiko jasotako saioen puntuen ehunekoa.</li>
+    <li><strong>Percentage</strong>: emandako saio guztien gehieneko puntuekiko jasotako saioen puntuen ehunekoa.</li>
     </ul>';
 $string['pageof'] = '{$a->page}. orria {$a->numpages}(e)tik';
 $string['participant'] = 'Partaidea';
@@ -480,6 +483,7 @@ $string['save'] = 'Gorde bertaratzea';
 $string['scantime'] = 'Eskaneatze-unea';
 $string['scantime_help'] = 'Honek inportatze-fitxategian timestamp formatuko data gehitzea ahalbidetzen du - fitxategiko timestamp eremuko balioak PHPko strtotime funtzioa erabilita bihurtu eta ondoren dagokion erabiltzailearen bertaratzearen egoeraren ezarpenetan erabiltzen saiatuko da.';
 $string['search:activity'] = 'Bertaratzearen erregistroa - jardueraren informazioa';
+$string['selectactivity'] = 'Aukeratu jarduera';
 $string['session'] = 'Saioa';
 $string['session_help'] = 'Saioa';
 $string['sessionadded'] = 'Saioa ondo gehitu da';
@@ -487,7 +491,7 @@ $string['sessionalreadyexists'] = 'Saioa existitzen da data honetarako';
 $string['sessiondate'] = 'Data';
 $string['sessiondays'] = 'Saioaren egunak';
 $string['sessiondeleted'] = 'Saioa ondo ezabatu da';
-$string['sessionduplicate'] = 'Bikoiztutako saioa existitzen da {$a->course} ikastaroko {$a->activity} bertaratzearen erregistroan.';
+$string['sessionduplicate'] = 'Bikoiztutako saioa existitzen da {$a->course} ikastaroko {$a->activity} bertaratzearen erregistroan ({$a->date}).';
 $string['sessionexist'] = 'Saioa ez da gehitu (dagoeneko existitzen da)!';
 $string['sessiongenerated'] = 'Saioa ondo sortu da';
 $string['sessions'] = 'Saioak';
@@ -598,6 +602,7 @@ $string['tuseremail'] = 'Posta elektronikoa';
 $string['tusername'] = 'Izen osoa';
 $string['ungraded'] = 'Kalifikatu gabeko saioak';
 $string['unknowngroup'] = 'Talde ezezaguna';
+$string['unknownstatus'] = 'Egoera-ID ezezaguna: {$a}';
 $string['update'] = 'Eguneratu';
 $string['uploadattendance'] = 'Igo bertaratzea CSV bidez';
 $string['usedefaultsubnet'] = 'Erabili lehenetsitakoa';
@@ -615,7 +620,7 @@ $string['variablesupdated'] = 'Aldagaiak ondo eguneratu dira';
 $string['versionforprinting'] = 'Inprimatzeko bertsioa';
 $string['viewmode'] = 'Erakuste modua';
 $string['warnafter'] = 'Jasotako saioak abisuaren aurretik';
-$string['warnafter_help'] = 'Oharrak soilik erakutsiko dira erabiltzaileak gutxienezko saio-kopuru honetan bertaratzea erregistratu duenean.';
+$string['warnafter_help'] = 'Oharrak soilik erakutsiko dira erabiltzaileak gutxieneko saio-kopuru honetan bertaratzea erregistratu duenean.';
 $string['warningdeleted'] = 'Abisua ezabatu da';
 $string['warningdesc'] = 'Jakinarazpen hauek automatikoki gehituko dira bertaratzearen erregistrorako instantzia berrietan. Une berean jakinarazpen bat baino gehiago abiarazten bada, jakinarazpen-atalase baxuena duen jakinarazpena baino ez da bidaliko.';
 $string['warningdesc_course'] = 'Hemen konfiguratutako jakinarazpen-atalaseak absentismoaren txostenari eragiten diote eta ikasleak edo beste batzuk jakinaraztea ahalbidetzen du. Une berean jakinarazpen bat baino gehiago abiarazten bada, jakinarazpen-atalase baxuena duen jakinarazpena baino ez da bidaliko.';

@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['auth_ltidescription'] = 'El plugin de autenticación LTI junto con el complemento de matrícula \'Publicar como herramienta LTI\' permite a los usuarios remotos acceder a los cursos y actividades seleccionados. Dicho de otro modo, Moodle funciona como un proveedor de herramientas LTI.';
 $string['pluginname'] = 'LTI';
+$string['privacy:metadata'] = 'El complemento de autenticación LTI no almacena ningún dato personal.';

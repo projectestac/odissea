@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['click_for_detail'] = 'feu clic per a més detalls';
+$string['crontask'] = 'Recalcula les sessions «attendanceregister»';
 $string['duration'] = 'Durada';

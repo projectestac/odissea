@@ -179,10 +179,10 @@ $string['discussionlistsortbydiscussionasc'] = 'Sortera på diskussionsnamn i st
 $string['discussionlistsortbydiscussiondesc'] = 'Sortera på diskussionsnamn i fallande ordning';
 $string['discussionlistsortbygroupasc'] = 'Sortera på grupp i stigande ordning';
 $string['discussionlistsortbygroupdesc'] = 'Sortera på grupp i fallande ordning';
-$string['discussionlistsortbylastpostasc'] = 'Sortera efter skapandedatum för det senaste inlägget, äldst överst.';
-$string['discussionlistsortbylastpostdesc'] = 'Sortera efter skapandedatum för det senaste inlägget, nyast överst.';
-$string['discussionlistsortbyrepliesasc'] = 'Sortera efter antal svar, i stigande ordning.';
-$string['discussionlistsortbyrepliesdesc'] = 'Sortera efter antal svar, i fallande ordning.';
+$string['discussionlistsortbylastpostasc'] = 'Sortera efter skapandedatum för det senaste inlägget, äldst överst';
+$string['discussionlistsortbylastpostdesc'] = 'Sortera efter skapandedatum för det senaste inlägget, nyast överst';
+$string['discussionlistsortbyrepliesasc'] = 'Sortera efter antal svar, i stigande ordning';
+$string['discussionlistsortbyrepliesdesc'] = 'Sortera efter antal svar, i fallande ordning';
 $string['discussionlistsortbystarterasc'] = 'Sortera på trådstartare i stigande ordning';
 $string['discussionlistsortbystarterdesc'] = 'Sortera på trådstartare i fallande ordning';
 $string['discussionlocked'] = 'Denna diskussion är stängd och du kan inte längre göra inlägg i den.';
@@ -203,7 +203,7 @@ $string['discussionsstartedbyrecent'] = 'Diskussioner som nyligen har inletts av
 $string['discussionsstartedbyuserincourse'] = 'Diskussioner startade av {$a->fullname} i {$a->coursename}';
 $string['discussionstartedby'] = 'Diskussion startad av {$a}';
 $string['discussionsubscribed'] = 'Du prenumererar nu på denna diskussion.';
-$string['discussionsubscribestart'] = 'Skicka mig notiser om nya inlägg i denna diskussion';
+$string['discussionsubscribestart'] = 'Meddela mig om nya inlägg i denna diskussion';
 $string['discussionsubscribestop'] = 'Jag vill inte inte få notiser om nya inlägg i denna diskussion';
 $string['discussionsubscription'] = 'Diskussions-prenumeration';
 $string['discussionsubscription_help'] = 'Prenumerera på en diskussion innebär att du kommer att få notiser om nya inlägg till denna diskussion .';
@@ -333,7 +333,7 @@ $string['forum:viewsubscribers'] = 'Visa prenumeranter';
 $string['forumauthorhidden'] = 'Författare (dold)';
 $string['forumblockingalmosttoomanyposts'] = 'Du närmar dig tröskeln för hur många inlägg man får göra. Du har gjort inlägg {$a->numposts} gånger under den senaste  {$a->blockperiod} och begränsningen är {$a->blockafter} inlägg.';
 $string['forumbodydeleted'] = 'Innehållet i detta inlägg har tagits bort och kan inte visas längre.';
-$string['forumbodyhidden'] = 'Eftersom du inte har gjort något eget inlägg ännu så får du inte se det här inlägget. Det kan också vara så att den tid som man har rätt att redigera inte har gått ut ännu.';
+$string['forumbodyhidden'] = 'Det här inlägget är för närvarande dolt, troligtvis för att du måste publicera något i diskussionen först och forumpostmeddelanden måste skickas. En annan möjlighet är att den aktuella tiden inte ligger inom den visningsperiod som ställts in för inlägget.';
 $string['forumgrader'] = 'Forumbedömare';
 $string['forumgradingnavigation'] = 'Navigera bland bedömningar';
 $string['forumgradingpanel'] = 'Bedömningspanel';
@@ -546,11 +546,13 @@ $string['postbymailsuccess'] = 'Ditt inlägg med ämnet "{$a->subject}" har publ
 $string['postbymailsuccess_html'] = 'Ditt svar <a href="{$a->discussionurl}">{$a->subject}</a> skickades.';
 $string['postbyuser'] = '{$a->post} av {$a->user}';
 $string['postincontext'] = 'Se detta inlägg i sitt sammanhang';
-$string['postisprivatereply'] = 'Detta är ett privat svar. Det är inte synligt för andra deltagare.';
+$string['postisprivatereply'] = 'Detta är ett privat svar. Det är endast synligt för dig och användare som har behörighet att se privata svar, som t.ex. lärare och chefer.';
+$string['postmailinfo'] = 'Detta är en kopia av ett inlägg i "{$a}"-forumet.';
 $string['postmailinfolink'] = 'Detta är en kopia av ett meddelande i   {$a->coursename}.
 
 Klicka på länken för att svara: {$a->replylink}';
 $string['postmailnow'] = '<p>Det här inlägget kommer omedelbart att skicka med e-post till alla som prenumererar på forumet.</p>';
+$string['postmailreply'] = 'Klicka på den här länken för att svara: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'Mestadels separat lärande';
 $string['postrating2'] = 'Separat och anslutet';
@@ -731,7 +733,7 @@ $string['subscriptionmode_help'] = 'En prenumeration innebär att man får notif
 * Inaktiverad – det går inte att prenumerera.
 
 OBS: Om läraren ändrar prenumerationsinställningarna så gäller de nya för framtida elever. Användare som redan finns i kursen behåller sina inställningar.';
-$string['subscriptionoptional'] = 'Valfri';
+$string['subscriptionoptional'] = 'Valfri prenumeration';
 $string['subscriptions'] = 'Prenumerationer';
 $string['tagarea_forum_posts'] = 'Foruminlägg';
 $string['tagsdeleted'] = 'Forumetiketter har tagits bort';

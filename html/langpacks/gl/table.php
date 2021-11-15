@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadas'] = 'Descargar a táboa de datos como';
+$string['missingrequiredfields'] = 'Faltan un ou máis filtros obrigatorios ({$a})';
+$string['privacy:metadata'] = 'A API de táboa non almacena actualmente ningún dato de usuario';

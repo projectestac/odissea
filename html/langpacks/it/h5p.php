@@ -140,6 +140,7 @@ $string['licensee'] = 'Licenziatario';
 $string['licenseextras'] = 'Licenze extra';
 $string['licenseversion'] = 'Versione delle licenza';
 $string['lockh5pdeploy'] = 'Questo contenuto H5P non può essere visualizzato poiché è in fase di rilascio. Per favore riprova più tardi.';
+$string['mainlibrarydisabled'] = 'Il file non può essere visualizzato perché il tipo di contenuto è disabilitato. Per favore contatta l\'amministratore per richiedere l\'abilitazione del tipo di contenuto.';
 $string['missingcontentfolder'] = 'Manca una cartella di contenuto valida.';
 $string['missingcoreversion'] = 'Il sistema non è stato in grado di installare il componente {$a->% component} dal pacchetto, poiché è richiesta una versione più recente del plugin H5P. Al momento questo sito esegue la versione {$a->% corrente}, mentre la versione richiesta è {$a->% richiesto} o successiva. Riprovare dopo l\'aggiornamento.';
 $string['missingdependency'] = 'Manca la dipendenza {$a->@dep} richiesta da {$a->@lib}.';

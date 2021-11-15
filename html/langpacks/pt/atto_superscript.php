@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Sobrescrito';
-$string['privacy:metadata'] = 'O módulo atto_superscript não armazena qualquer dado pessoal.';
+$string['privacy:metadata'] = 'O módulo atto_superscript não armazena quaisquer dados pessoais.';

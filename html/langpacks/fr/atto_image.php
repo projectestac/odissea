@@ -39,6 +39,7 @@ $string['enteralt'] = 'Décrire l\'image pour ceux qui ne peuvent pas la voir';
 $string['enterurl'] = 'Saisir l\'URL';
 $string['height'] = 'Hauteur';
 $string['imageproperties'] = 'Propriétés de l\'image';
+$string['imageurlrequired'] = 'Une image doit avoir une URL.';
 $string['pluginname'] = 'Insérer ou modifier une image';
 $string['presentation'] = 'Cette image ne sert que de décoration';
 $string['presentationoraltrequired'] = 'Une image doit avoir une description, à moins qu\'elle soit signalée comme seulement décorative.';

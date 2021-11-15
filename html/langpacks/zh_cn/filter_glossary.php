@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '自动词汇表链接';
+$string['glossarycategory'] = '{$a->glossary}：类别{$a->Category}';
+$string['glossaryconcept'] = '{$a->glossary}:{$a->concept}';
+$string['privacy:metadata'] = '术语表自动链接插件不存储任何个人数据。';

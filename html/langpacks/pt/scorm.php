@@ -269,8 +269,8 @@ Existem 3 opções:
 * Flutuante - os botões de navegação são mostrados no modo flutuante, sendo a posição, a partir do topo e da esquerda, determinada pelo pacote.';
 $string['navdesc'] = 'Esta configuração especifica se deseja mostrar ou ocultar os botões de navegação e a sua posição.';
 $string['navigation'] = 'Navegação';
-$string['navpositionleft'] = 'Posição dos botões de navegação a partir da esquerda em pixeis.';
-$string['navpositiontop'] = 'Posição dos botões de navegação a partir de cima em pixeis.';
+$string['navpositionleft'] = 'Posição dos botões de navegação a partir da esquerda em píxeis.';
+$string['navpositiontop'] = 'Posição dos botões de navegação a partir de cima em píxeis.';
 $string['networkdropped'] = 'O leitor do SCORM determinou que a sua ligação de Internet está instável ou foi interrompida. Se continuar nesta atividade SCORM, o registo do seu progresso poderá não ficar guardado.<br />
 Recomendamos que termine a atividade e volte quando tiver uma ligação de Internet fiável.';
 $string['newattempt'] = 'Iniciar uma nova tentativa';

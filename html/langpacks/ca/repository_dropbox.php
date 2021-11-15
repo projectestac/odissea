@@ -29,6 +29,7 @@ $string['apikey'] = 'Clau d\'API Dropbox';
 $string['cachelimit'] = 'Límit de la memòria cau';
 $string['cachelimit_info'] = 'Introduïu la mida màxima dels fitxers (en bytes) que s\'emmagatzemaran  en memòria cau al servidor de Dropbox. Els fitxers emmagatzemats en memòria cau s\'utilitzaran quan la font ja no estigui disponible. El valor buit o zero significa que es poden emmgatzemar en memòria cau de tots els fitxers, independentment de la seva mida.';
 $string['configplugin'] = 'Configuració de Dropbox';
+$string['crontask'] = 'Processament en segon pla del repositori Dropbox';
 $string['dropbox'] = 'Dropbox';
 $string['dropbox:view'] = 'Mostra una carpeta de Dropbox';
 $string['instruction'] = 'Podeu obtenir la vostra clau API secreta a la pàgina de <a href="http://www.dropbox.com/developers/apps">desenvolupadors del Dropbox</a>. Quan configureu la vostra clau, seleccioneu "Dropbox complet" com a "Nivell d\'accés".';

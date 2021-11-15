@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['browserepositories'] = 'Bläddra genom arkiv...';
 $string['createlink'] = 'Skapa länk';
-$string['enterurl'] = 'Infoga URL';
-$string['openinnewwindow'] = 'Öppnas i nytt fönster';
+$string['enterurl'] = 'Ange URL';
+$string['openinnewwindow'] = 'Öppna i nytt fönster';
 $string['pluginname'] = 'Länk';
 $string['privacy:metadata'] = 'Pluginmodulen atto_link lagrar ingen personinformation.';
 $string['unlink'] = 'Ta bort länk';

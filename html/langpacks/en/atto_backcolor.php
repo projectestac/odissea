@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = 'Black';
+$string['color_blue'] = 'Blue';
+$string['color_green'] = 'Green';
+$string['color_red'] = 'Red';
+$string['color_white'] = 'White';
+$string['color_yellow'] = 'Yellow';
 $string['pluginname'] = 'Background colour';
 $string['privacy:metadata'] = 'The atto_backcolor plugin does not store any personal data.';

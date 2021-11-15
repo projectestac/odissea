@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['groups:addinstance'] = 'إضافة كتلة جديدة من المجموعة';
-$string['groups:myaddinstance'] = 'إضافة كتلة جديدة من المجموعة إلى دفة القيادة';
+$string['groups:myaddinstance'] = 'إضافة كتلة جديدة من المجموعة إلى لوحة التحكم';

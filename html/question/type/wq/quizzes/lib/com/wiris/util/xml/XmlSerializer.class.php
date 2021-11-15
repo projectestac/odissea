@@ -193,7 +193,7 @@ class com_wiris_util_xml_XmlSerializer {
 			if($this->mode === com_wiris_util_xml_XmlSerializer::$MODE_WRITE && $array !== null && $array->length > 0) {
 				$items = $array->iterator();
 				while($items->hasNext()) {
-					_hx_deref(($items->next()))->onSerialize($this);
+					$items->next()->onSerialize($this);
 				}
 			}
 		}
@@ -209,7 +209,7 @@ class com_wiris_util_xml_XmlSerializer {
 			}
 		} else {
 			if($this->mode === com_wiris_util_xml_XmlSerializer::$MODE_WRITE && $s !== null) {
-				_hx_deref(($s))->onSerialize($this);
+				$s->onSerialize($this);
 			}
 		}
 		return $s;

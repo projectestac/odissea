@@ -31,5 +31,5 @@ $string['emptyfilelist'] = 'Este repositório está vazio';
 $string['notitle'] = 'Sem título';
 $string['pluginname'] = 'Ficheiros da disciplina (compatibilidade com versões anteriores do Moodle)';
 $string['pluginname_help'] = 'Este módulo utiliza o repositório de ficheiros da disciplina existente em versão anteriores do Moodle (anteriores à versão 2.0).';
-$string['privacy:metadata'] = 'O módulo Ficheiros da disciplina não armazena ou transmite dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Ficheiros da disciplina não armazena ou transmite quaisquer dados pessoais.';
 $string['remember'] = 'Manter sessão';

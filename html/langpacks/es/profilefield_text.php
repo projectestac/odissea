@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Entrada de texto';
+$string['privacy:metadata:profilefield_text:data'] = 'Datos de usuario del campo de perfil de usuario de Entrada de texto';
+$string['privacy:metadata:profilefield_text:dataformat'] = 'El formato de los datos de usuario del campo de perfil de usuario de Entrada de texto';
+$string['privacy:metadata:profilefield_text:fieldid'] = 'El ID del campo de perfil';
+$string['privacy:metadata:profilefield_text:tableexplanation'] = 'Datos adicionales del perfil';
+$string['privacy:metadata:profilefield_text:userid'] = 'El ID del usuario cuyos datos se almacenan en el campo de perfil de usuario de Entrada de texto';

@@ -30,4 +30,4 @@ $string['exportimscp:export'] = 'Exportar Livro como pacote de conteúdos IMS';
 $string['generateimscp'] = 'Gerar IMS CP';
 $string['nochapters'] = 'Não foram encontrados capítulos, não foi possivel exportar para o formato IMS';
 $string['pluginname'] = 'Exportar livro para IMS CP';
-$string['privacy:metadata'] = 'O módulo Gerar IMS CP não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Gerar IMS CP não armazena quaisquer dados pessoais.';

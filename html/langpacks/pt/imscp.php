@@ -54,6 +54,6 @@ $string['packagefile'] = 'Ficheiro de pacote';
 $string['page-mod-imscp-x'] = 'Qualquer página do recurso pacote IMS';
 $string['pluginadministration'] = 'Administração IMSCP';
 $string['pluginname'] = 'Pacotes IMS';
-$string['privacy:metadata'] = 'O módulo Pacotes IMS não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pacotes IMS não armazena quaisquer dados pessoais.';
 $string['search:activity'] = 'Pacote IMS - informações do recurso';
 $string['toc'] = 'Índice';

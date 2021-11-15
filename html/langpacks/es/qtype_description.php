@@ -31,3 +31,4 @@ $string['pluginname_help'] = 'Una descripción no es en realidad un tipo de preg
 $string['pluginnameadding'] = 'Agregando una descripción';
 $string['pluginnameediting'] = 'Editando una descripción';
 $string['pluginnamesummary'] = 'No se trata realmente de una pregunta, sino una forma de añadir algunas instrucciones u otros contenidos a la pregunta. Se utiliza de forma similar a las etiquetas cuando se usan para añadir contenido a la página del curso.';
+$string['privacy:metadata'] = 'El complemento de tipo de pregunta de Descripción no almacena ningún dato personal.';

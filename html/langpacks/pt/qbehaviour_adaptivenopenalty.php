@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Modo adaptável (sem penalizações)';
-$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Modo adaptável (sem penalizações) não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Modo adaptável (sem penalizações) não armazena quaisquer dados pessoais.';

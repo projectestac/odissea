@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ltr'] = 'De izquierda a derecha';
 $string['pluginname'] = 'RTL/LTR';
-$string['privacy:metadata'] = 'El plugin atto_rtl no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_rtl no almacena ningún dato personal.';
 $string['rtl'] = 'De derecha a izquierda';

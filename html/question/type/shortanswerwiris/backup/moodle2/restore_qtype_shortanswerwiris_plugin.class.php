@@ -84,7 +84,7 @@ class restore_qtype_shortanswerwiris_plugin extends restore_qtype_shortanswer_pl
         $xml = str_replace(array_keys($decodetable), array_values($decodetable), $xml);
         return $xml;
     }
-    
+
     public function process_shortanswerwiris($data) {
                $this->really_process_extra_question_fields($data);
     }

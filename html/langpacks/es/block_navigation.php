@@ -35,6 +35,7 @@ $string['linkcategoriesdesc'] = 'Mostrar categorías como enlaces';
 $string['navigation:addinstance'] = 'Añadir un nuevo bloque de navegación';
 $string['navigation:myaddinstance'] = 'Añadir un nuevo bloque de navegación al Área personal';
 $string['pluginname'] = 'Navegación';
+$string['privacy:metadata'] = 'El bloque de navegación solo muestra información almacenada en otros lugares.';
 $string['trimlength'] = 'A cuántos caracteres recortar';
 $string['trimmode'] = 'Modo recorte';
 $string['trimmodecenter'] = 'Recortar caracteres desde el centro';

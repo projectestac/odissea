@@ -4,9 +4,9 @@ class com_wiris_quizzes_impl_QuizzesServiceImpl implements com_wiris_quizzes_api
 	public function __construct() {
 		if(!php_Boot::$skip_constructor) {
 		$this->protocol = com_wiris_quizzes_impl_QuizzesServiceImpl::$PROTOCOL_REST;
-		$this->url = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL);
-		com_wiris_quizzes_impl_QuizzesServiceImpl::$deploymentId = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$DEPLOYMENT_ID);
-		com_wiris_quizzes_impl_QuizzesServiceImpl::$licenseId = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$LICENSE_ID);
+		$this->url = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL);
+		com_wiris_quizzes_impl_QuizzesServiceImpl::$deploymentId = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$DEPLOYMENT_ID);
+		com_wiris_quizzes_impl_QuizzesServiceImpl::$licenseId = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$LICENSE_ID);
 	}}
 	public function getServiceUrl() {
 		$url = $this->url;
@@ -22,9 +22,9 @@ class com_wiris_quizzes_impl_QuizzesServiceImpl implements com_wiris_quizzes_api
 		return $data;
 	}
 	public function callService($mqr, $cache, $listener, $async) {
+		$aqr = $mqr->questionRequests;
 		$s = new com_wiris_util_xml_XmlSerializer();
 		$s->setCached($cache);
-		$aqr = $mqr->questionRequests;
 		{
 			$_g = 0;
 			while($_g < $aqr->length) {
@@ -33,45 +33,12 @@ class com_wiris_quizzes_impl_QuizzesServiceImpl implements com_wiris_quizzes_api
 				if(!$cache && com_wiris_quizzes_impl_QuizzesServiceImpl::$USE_CACHE) {
 					$qr->addProcess(new com_wiris_quizzes_impl_ProcessStoreQuestion());
 				}
-				if(com_wiris_quizzes_impl_QuizzesServiceImpl::$deploymentId !== null) {
-					$qr->addMetaProperty("wrs-deployment", com_wiris_quizzes_impl_QuizzesServiceImpl::getDeploymentId());
-				}
-				if(com_wiris_quizzes_impl_QuizzesServiceImpl::$licenseId !== null) {
-					$qr->addMetaProperty("wrs-license", com_wiris_quizzes_impl_QuizzesServiceImpl::getLicenseId());
-				}
-				$qr->addMetaProperty("wrs-cause", "quizzes_generic_cause");
 				unset($qr);
 			}
 		}
 		$postData = $this->webServiceEnvelope($s->write($mqr));
-		$http = null;
 		$httpl = new com_wiris_quizzes_impl_HttpToQuizzesListener($listener, $mqr, $this, $async);
-		$config = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
-		$clientSide = com_wiris_settings_PlatformSettings::$IS_JAVASCRIPT || com_wiris_settings_PlatformSettings::$IS_FLASH;
-		$allowCors = $clientSide && "true" === $config->get(com_wiris_quizzes_api_ConfigurationKeys::$CROSSORIGINCALLS_ENABLED);
-		if($clientSide && !$allowCors) {
-			$url = $config->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL);
-			$http = new com_wiris_quizzes_impl_HttpImpl($url, $httpl);
-			$http->setParameter("service", "quizzes");
-			$http->setParameter("rawpostdata", "true");
-			$http->setParameter("postdata", $postData);
-			$http->setHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-		} else {
-			$url = $this->getServiceUrl();
-			if($clientSide) {
-				$http = new com_wiris_quizzes_impl_HttpImpl($url, $httpl);
-			} else {
-				$http = new com_wiris_quizzes_impl_MaxConnectionsHttpImpl($url, $httpl);
-				$referrer = $config->get(com_wiris_quizzes_api_ConfigurationKeys::$REFERER_URL);
-				if($referrer === null || trim($referrer) === "") {
-					com_wiris_system_Logger::log(900, "'quizzes.referer.url' configuration item is not set so requests to the " . "service can not be identified. Unidentified requests may be blocked by the server " . "and will certainly be blocked in future releases." . "\x0A" . "Setup the referrer editing your configuration.ini file or setting it programatically " . "through the Configuration interface." . "\x0A");
-				} else {
-					$http->setHeader("Referer", $referrer);
-				}
-			}
-			$http->setHeader("Content-Type", "text/xml; charset=UTF-8");
-			$http->setPostData($postData);
-		}
+		$http = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getHttpObject($httpl, $this->getServiceUrl(), "quizzes", $postData);
 		$http->setAsync($async);
 		$http->request(true);
 	}

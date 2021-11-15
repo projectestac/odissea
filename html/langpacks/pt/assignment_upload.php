@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'Submissão com carregamento foi submetida';
 $string['event_assessable_uploaded'] = 'Um ficheiro foi carregado';
 $string['pluginname'] = 'Carregar ficheiros';
-$string['privacy:metadata'] = 'O módulo Carregar trabalho não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Carregar trabalho não armazena quaisquer dados pessoais.';

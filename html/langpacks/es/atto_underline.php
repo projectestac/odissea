@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Subrayar';
-$string['privacy:metadata'] = 'El plugin atto_underline no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_underline no almacena ningún dato personal.';

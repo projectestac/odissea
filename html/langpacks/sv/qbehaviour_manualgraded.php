@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Manuellt betygsatt';
-$string['privacy:metadata'] = 'Pluginmodulen för frågebeteende Manuellt betygsatt lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen för frågebeteende Manuellt betygsatt lagrar ingen personinformation.';

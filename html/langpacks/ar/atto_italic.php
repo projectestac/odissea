@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'مائل';
-$string['privacy:metadata'] = 'إن ملحق atto_italic لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_italic لا تخزن أي بيانات شخصية.';

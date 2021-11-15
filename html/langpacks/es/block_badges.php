@@ -25,8 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['badges:addinstance'] = 'Añadir un nuevo bloque Mis últimas insisgnias';
-$string['badges:myaddinstance'] = 'Añadir un nuevo bloque Mis últimas insignias al Área personal';
+$string['badges:addinstance'] = 'Añadir un nuevo bloque de últimas insisgnias';
+$string['badges:myaddinstance'] = 'Añadir un nuevo bloque de últimas insignias al Área personal';
 $string['nothingtodisplay'] = 'No tiene insignias que mostrar';
 $string['numbadgestodisplay'] = 'Número de últimas insignias que mostrar';
 $string['pluginname'] = 'Insignias recientes';
+$string['privacy:metadata'] = 'El bloque de últimas insignias sólo muestra información almacenada en otras localizaciones.';

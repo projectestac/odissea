@@ -42,7 +42,7 @@ $string['auth_ldap_create_context_key'] = 'Sammanhang för nya användare';
 $string['auth_ldap_create_error'] = 'Fel i samband med en användare skulle skapas i LDAP';
 $string['auth_ldap_expiration_desc'] = 'Välj \'Nej\' för att inaktivera kontroll av lösenord som har gått ut eller LDAP för att läsa \'passwordexpiration time\' direkt från LDAP. Kom ihåg att fylla i namnet på attributet, nämligen \'ldap_expireattr\'.';
 $string['auth_ldap_expiration_key'] = 'Giltighetstid';
-$string['auth_ldap_expiration_warning_desc'] = 'Antal dagar innan det skickas en varning om att giltighetstiden för lösenordet går ut.';
+$string['auth_ldap_expiration_warning_desc'] = 'Antal dagar innan det skickas ut en varning om att lösenordet snart förfaller.';
 $string['auth_ldap_expiration_warning_key'] = 'Varning om att giltighetstiden går ut';
 $string['auth_ldap_expireattr_desc'] = 'Valfritt: Detta åsidosätter det LDAP-attribut som lagrar giltighetstiden för när lösenordet går ut.';
 $string['auth_ldap_expireattr_key'] = 'Attribut för giltighetstid';
@@ -54,7 +54,7 @@ $string['auth_ldap_groupecreators'] = 'Lista över grupper eller sammanhang vars
 $string['auth_ldap_groupecreators_key'] = 'Grupp-skapare';
 $string['auth_ldap_host_url'] = 'Ange URL till LDAP-server enligt formatet "ldap://ldap.myorg.com/" eller "ldaps://ldap.myorg.com/". Separera flera servrar med \';\' för att få stöd för redundans.';
 $string['auth_ldap_host_url_key'] = 'LDAP-server';
-$string['auth_ldap_ldap_encoding'] = 'Teckenkodning som används av LDAP-servern, troligtvis UTF-8. Om LDAP v2 är markerat använder Active Directory sin konfigurerade kodning, till exempel cp1252 eller cp1250.';
+$string['auth_ldap_ldap_encoding'] = 'Teckenkodning som används av LDAP-servern, troligtvis UTF-8. Om LDAP v2 är markerat använder Active Directory den konfigurerade teckenkodningen, till exempel <code>cp1252</code> eller <code>cp1250</code>.';
 $string['auth_ldap_ldap_encoding_key'] = 'LDAP-teckenkodning';
 $string['auth_ldap_login_settings'] = 'Inloggningsinställningar';
 $string['auth_ldap_memberattribute'] = 'Valfritt: Åsidosätter medlemsattributet när användaren tillhör en grupp. Vanligtvis \'member\'';
@@ -67,7 +67,7 @@ $string['auth_ldap_noconnect_all'] = 'Det gick inte att ansluta LDAP-modulen til
 $string['auth_ldap_noextension'] = 'Varning! Det verkar som om det inte finns någon PHP LDAP-modul. Vänligen säkerställ att den är installerad och aktiverad.';
 $string['auth_ldap_objectclass'] = 'Valfritt: Detta åsidosätter det \'objectClass\' som används för att namnge/söka användare på \'ldap_user_type\'. Normalt sett så behöver Du inte ändra på detta.';
 $string['auth_ldap_objectclass_key'] = 'Objekt-klass';
-$string['auth_ldap_opt_deref'] = 'Detta avgör hur alias hanteras under sökning. Markera ett av följande värden: "Nej" = <em>LDAP_DEREF_NEVER</em> eller "Ja" = <em>LDAP_DEREF_ALWAYS</em>';
+$string['auth_ldap_opt_deref'] = 'Detta avgör hur alias hanteras vid sökning. Markera ett av följande värden: "Nej" = <em>LDAP_DEREF_NEVER</em> eller "Ja" = <em>LDAP_DEREF_ALWAYS</em>';
 $string['auth_ldap_opt_deref_key'] = 'Alias för \'dereference\'';
 $string['auth_ldap_passtype'] = 'Ange formatet på nya eller ändrade lösenord i LDAP-servern.';
 $string['auth_ldap_passtype_key'] = 'Format för lösenord';

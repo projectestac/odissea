@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Protocolo REST';
-$string['privacy:metadata'] = 'O módulo Protocolo REST não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Protocolo REST não armazena quaisquer dados pessoais.';
 $string['rest:use'] = 'Usar protocolo REST';

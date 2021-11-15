@@ -57,6 +57,7 @@ $string['deletesection'] = 'Suprimeix la secció';
 $string['deletetile'] = 'Suprimeix el mosaic';
 $string['displayfilterbar'] = 'Barra de filtre';
 $string['displayfilterbar_help'] = '<p>Quan se selecciona aquesta opció, es mostra de manera automàtica una matriu de botons abans de la pantalla del mosaic en un curs, en la qual els usuaris poden clicar per filtrar mosaics per rangs determinats. </p><p>Quan se selecciona «basats en el nombre de mosaics», es mostra una sèrie de botons, p. ex., un botó per als mosaics 1-4, un botó per als mosaics 5-8 etc.</p><p>Quan se selecciona «basats en els resultats del curs», hi haurà un botó per a cada resultat del curs. Es pot assignar cada mosaic a un resultat determinat (i, per tant, a un botó determinat) des de la pàgina de configuració d\'aquest mosaic.</p>';
+$string['displaytitle_mod_mp3'] = 'Àudio';
 $string['documentation'] = 'Documentació';
 $string['editsectionname'] = 'Edita el nom de la secció';
 $string['entersection'] = 'Entra a la secció';

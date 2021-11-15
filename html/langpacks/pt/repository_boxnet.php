@@ -38,8 +38,7 @@ $string['nullfilelist'] = 'Este repositório não contém ficheiros';
 $string['password'] = 'Senha';
 $string['pluginname'] = 'Box';
 $string['pluginname_help'] = 'Repositório em Box';
-$string['privacy:metadata:repository_boxnet'] = 'O módulo repositório Box não armazena dados pessoais, mais transmite dados do utilizador do
-Moodle para o sistema remoto.';
+$string['privacy:metadata:repository_boxnet'] = 'O módulo repositório Box não armazena quaisquer dados pessoais, mas transmite dados do utilizador do Moodle para o sistema remoto.';
 $string['privacy:metadata:repository_boxnet:query'] = 'Pesquisa de texto no repositório Box do utilizador';
 $string['saved'] = 'A informação box foi gravada';
 $string['shareurl'] = 'Partilhar URL';

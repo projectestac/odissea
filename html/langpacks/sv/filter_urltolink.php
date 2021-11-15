@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['embedimages'] = 'Bädda in bilder';
 $string['embedimages_desc'] = 'Ersätt bild-url:er med bilder i valda textformat.';
 $string['filtername'] = 'Omvandla URL:er till länkar';
-$string['privacy:metadata'] = 'Pluginmodulen Omvandla URL:er till länkar och bilder lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Omvandla URL:er till länkar och bilder lagrar ingen personinformation.';
 $string['settingformats'] = 'Tillämpa på format';
 $string['settingformats_desc'] = 'Filtret kommer bara att tillämpas om den ursprungliga texten skrivits in i något av de valda formaten.';

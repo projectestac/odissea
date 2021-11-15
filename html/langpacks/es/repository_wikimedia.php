@@ -26,8 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Configuración del tipo de repositorio Wikimedia';
-$string['keyword'] = 'Texto completo';
+$string['keyword'] = 'Buscar por';
 $string['maxheight'] = 'Altura máxima de la imagen (px)';
 $string['maxwidth'] = 'Anchura máxima de la imagen (px)';
 $string['pluginname'] = 'Wikimedia';
+$string['privacy:metadata:repository_wikimedia'] = 'El complemento del repositorio de Wikimedia almacena las preferencias del usuario y transmite los datos del usuario desde Moodle al sistema remoto.';
+$string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'La altura máxima de preferencia del usuario configurada para el repositorio de Wikimedia.';
+$string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'El ancho máximo de preferencia del usuario configurado para el repositorio de Wikimedia';
+$string['privacy:metadata:repository_wikimedia:search_text'] = 'La consulta de texto de búsqueda del usuario del repositorio de Wikimedia.';
 $string['wikimedia:view'] = 'Ver repositorio Wikimedia';

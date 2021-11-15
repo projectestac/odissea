@@ -33,6 +33,6 @@ $string['erroractivitytype'] = 'Aktivitetstyp är inte konfigurerad i kursinstä
 $string['orphaned'] = 'Föräldralös';
 $string['orphanedwarning'] = 'Dessa aktiviteter kan inte nås av användare!';
 $string['pluginname'] = 'Enskild aktivitet';
-$string['privacy:metadata'] = 'Pluginmodulen Enskild aktivitet lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Enskild aktivitet lagrar ingen personinformation.';
 $string['sectionname'] = '';
 $string['warningchangeformat'] = 'När du ändrar det befintliga kursformatet till "Enskild aktivitet", säkerställ att du har tagit bort alla extra aktiviteter från kursen inklusive "Meddelanden". Observera att avsnittsstrukturen kan ändras.';

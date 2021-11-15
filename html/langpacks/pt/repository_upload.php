@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Configurar repositório "Enviar Ficheiro"';
 $string['pluginname'] = 'Enviar Ficheiro';
 $string['pluginname_help'] = 'Enviar um ficheiro para o Moodle';
-$string['privacy:metadata'] = 'O módulo Enviar Ficheiro não armazena ou transmite dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Enviar Ficheiro não armazena ou transmite quaisquer dados pessoais.';
 $string['upload:view'] = 'Usar envio de ficheiros no explorador de ficheiros';
 $string['upload_error_cant_write'] = 'Erro ao guardar ficheiro no servidor.';
 $string['upload_error_extension'] = 'Uma extensão PHP interrompeu o envio do ficheiro.';

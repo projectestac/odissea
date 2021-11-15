@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['admin_bookmarks:addinstance'] = 'Añadir un nuevo bloque de marcas del administrador';
 $string['admin_bookmarks:myaddinstance'] = 'Añadir un nuevo bloque de marcas del administrador al Área personal';
 $string['pluginname'] = 'Marcas del administrador';
+$string['privacy:metadata'] = 'El bloque de marcas del administrador sólo muestra información almacenada en otras localizaciones.';

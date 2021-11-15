@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'OpenDocument (.ods)';
-$string['shortname'] = 'OpenDoc';
+$string['privacy:metadata'] = 'El complemento de formato de datos OpenDocumento no almacena ningún dato personal.';
+$string['shortname'] = 'OpenDocument';

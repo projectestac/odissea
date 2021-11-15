@@ -36,6 +36,6 @@ $string['mediaformats'] = 'Tillgängliga spelare';
 $string['mediaformats_desc'] = 'När mediaspelare är aktiverade kan mediefiler bäddas in med hjälp av multimediepluginfiltren (om de är aktiverade) eller med hjälp av en fil- eller URL-resurs. När de inte är aktiverade bäddas dessa format inte in och användare kan hämta eller följa länkar till dessa resurser.
 
 Om två mediaspelare stöder samma format ökar kompatibiliteten mellan olika enheter, som t.ex. mobiltelefoner. Det är möjligt att öka kompatibiliteten ytterligare genom att tillhandahålla flera filer i olika format för samma ljud- eller videoklipp.';
-$string['privacy:metadata'] = 'Mediainbäddning lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Mediainbäddning lagrar ingen personinformation.';
 $string['supports'] = 'Stödjer';
 $string['videoextensions'] = 'Video: {$a}';

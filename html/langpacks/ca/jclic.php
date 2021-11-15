@@ -47,9 +47,9 @@ $string['exiturl_help'] = 'Es tracta del URL que s\'obrirà quan l\'alumnat fina
 Per tal que aquesta redirecció funcioni cal que, a la pestanya seqüències, la darrera activitat del projecte JClic, a la "Fletxa endavant", tingui associada l\'acció "Sortir del JClic".';
 $string['expired'] = 'Aquesta activitat es va tancar el dia {$a} i ja no està disponible';
 $string['filetype'] = 'Tipus';
-$string['filetype_help'] = 'Aquest paràmetre determina com s\'insereix l\'activitat JClic en el curs. Hi ha 2 opcions:
+$string['filetype_help'] = 'Aquest paràmetre determina com s\'insereix l\'activitat JClic en el curs. Hi ha dues opcions:
 
-* Fitxer JClic pujat. Permet escollir un fitxer JClic vàlid mitjançant el selector d\'arxius.
+* Fitxer JClic pujat. Permet escollir un fitxer JClic vàlid mitjançant el selector de fitxers.
 * URL extern. Permet especificar l\'URL d\'un paquet JClic. Nota: L\'URL ha de començar amb http(s) o www i ha de contenir un fitxer JClic vàlid.';
 $string['filetypeexternal'] = 'URL extern';
 $string['filetypelocal'] = 'Fitxer JClic pujat';
@@ -76,7 +76,7 @@ $string['lastaccess'] = 'Últim accés';
 $string['maxattempts'] = 'Nombre màxim d\'intents';
 $string['maxgrade'] = 'Puntuació/activitats que cal assolir';
 $string['modulename'] = 'JClic';
-$string['modulename_help'] = 'El <a href="http://clic.xtec.cat" target="_blank">JClic</a> és un projecte del Departament d\'Ensenyament de la Generalitat de Catalunya que està format per un conjunt d\'aplicacions de programari lliure que permeten crear diversos tipus d\'activitats educatives multimèdia: puzles, associacions, exercicis de text, mots encreuats, sopes de lletres i altres. A més, la <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaClic</a> disposa d\'una biblioteca d\'activitats que compta amb uns mil projectes que han creat professors i persones d\'altres col·lectius que han volgut compartir solidàriament el seu treball.
+$string['modulename_help'] = 'El <a href="https://clic.xtec.cat" target="_blank">JClic</a> és un projecte del Departament d\'Educació de la Generalitat de Catalunya que està format per un conjunt d\'aplicacions de programari lliure que permeten crear diversos tipus d\'activitats educatives multimèdia: puzles, associacions, exercicis de text, mots encreuats, sopes de lletres i altres. A més, la <a href="https://clic.xtec.cat/repo" target="_blank">zonaClic</a> disposa d\'una biblioteca d\'activitats que compta amb uns dos mil projectes que han creat professors i persones d\'altres col·lectius que han volgut compartir solidàriament el seu treball.
 
 Aquest mòdul permet al professorat afegir a un curs qualsevol activitat de tipus JClic i recopilar els resultats obtinguts (temps utilitzat a cada activitat, intents, encerts...) per cada alumne/a.';
 $string['modulenameplural'] = 'JClic';

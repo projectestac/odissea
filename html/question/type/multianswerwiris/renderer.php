@@ -25,7 +25,8 @@ class qtype_multianswerwiris_renderer extends qtype_wq_renderer {
     }
 }
 class qtype_multianswerwiris_helper_renderer extends qtype_multianswer_renderer {
-    public function subquestion(question_attempt $qa, question_display_options $options, $index, question_graded_automatically $subq) {
+    public function subquestion(question_attempt $qa, question_display_options $options, $index,
+                                 question_graded_automatically $subq) {
         if ($subq->get_type_name() == 'shortanswerwiris') {
             $subquestion = new qtype_multianswerwiris_shortanswer_helper_question($subq);
         } else if (substr($subq->get_type_name(), -5) == 'wiris') {
@@ -132,8 +133,7 @@ class qtype_multianswerwiris_wirisanswerfield_renderer extends qtype_multianswer
                 if (substr($response, 0, 5) != "<math") {
                     $size = max(1, core_text::strlen(trim($response)) + 1);
                 } else {
-                    $size = $qa->get_question()->expand_variables_text($response) + 1;
-
+                    $size = core_text::strlen($qa->get_question()->expand_variables_text($response)) + 1;
                 }
             } else {
                 foreach ($subq->answers as $ans) {
@@ -146,8 +146,7 @@ class qtype_multianswerwiris_wirisanswerfield_renderer extends qtype_multianswer
                 if (substr($response, 0, 5) != "<math") {
                     $size = max(1, textlib::strlen(trim($response)) + 1);
                 } else {
-                    $size = $qa->get_question()->expand_variables_text($response) + 1;
-
+                    $size = textlib::strlen($qa->get_question()->expand_variables_text($response)) + 1;
                 }
             } else {
                 foreach ($subq->answers as $ans) {

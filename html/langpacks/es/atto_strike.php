@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Tachar';
-$string['privacy:metadata'] = 'El plugin atto_strike no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_strike no almacena ningún dato personal.';

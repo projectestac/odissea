@@ -710,6 +710,7 @@ $string['htmlsettings'] = 'HTML设置';
 $string['http'] = 'HTTP';
 $string['httpsecurity'] = 'HTTP安全';
 $string['iconvrequired'] = '必须安装ICONV扩展';
+$string['igbinary322buggyversion'] = '安装在站点上的 php-igbinary 扩展在使用 PHP 7.2 运行时可能会导致问题。 建议您升级到 php-igbinary 3.2.5 或更高版本，或者升级到 PHP 7.3 或更高版本。';
 $string['ignore'] = '忽略';
 $string['includemoduleuserdata'] = '包括模块用户数据';
 $string['incompatibleblocks'] = '不兼容的版块';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interactiva con varios intentos (con crédito para intentos anteriores)';
+$string['privacy:metadata'] = 'El complemento de comportamiento interactivo de preguntas con múltiples intentos (crédito por intentos anteriores) no almacena ningún dato personal.';

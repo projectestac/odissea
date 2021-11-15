@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['TODO'] = 'Zu erledigen';
-$string['activityisscheduledfordeletion'] = 'Aktivitätslöschung ...';
+$string['activityisscheduledfordeletion'] = 'Aktivitätslöschung läuft...';
 $string['agedigitalconsentmapinvalidage'] = '\'{$a}\' ist kein gültiger Wert für das Alter.';
 $string['agedigitalconsentmapinvalidcomma'] = '\'{$a}\' hat mehr oder weniger als ein Kommatrennzeichen.';
 $string['agedigitalconsentmapinvalidcountry'] = '\'{$a}\' ist kein gültiger Wert für ein Land.';
@@ -365,6 +365,7 @@ $string['invalidoutcome'] = 'Falsche Lernziel ID';
 $string['invalidpagesize'] = 'Ungültige Seitengröße';
 $string['invalidpasswordpolicy'] = 'Ungültige Kennwortregeln';
 $string['invalidpaymentmethod'] = 'Falsche Zahlungsmethode: {$a}';
+$string['invalidpersistenterror'] = 'Fehler: {$a}';
 $string['invalidqueryparam'] = 'FEHLER: Inkorrekte Anzahl von Anfrage-Parametern. Erwartet: {$a->expected}, bekommen: {$a->actual}.';
 $string['invalidratingarea'] = 'Ungültiger Bewertungsbereich';
 $string['invalidrecord'] = 'Der Datensatz kann nicht in der Datenbanktabelle {$a} gefunden werden.';

@@ -45,6 +45,7 @@ $string['creategrouping'] = 'Crear agrupamiento';
 $string['creategroupinselectedgrouping'] = 'Crear grupo en agrupamiento';
 $string['createingrouping'] = 'Agrupación de grupos creados automáticamente';
 $string['createorphangroup'] = 'Crear un grupo huérfano';
+$string['csvdelimiter'] = 'Delimitador CSV';
 $string['databaseupgradegroups'] = 'La versión de grupos es ahora {$a}';
 $string['defaultgrouping'] = 'Agrupamiento por defecto';
 $string['defaultgroupingname'] = 'Agrupamiento';
@@ -61,8 +62,11 @@ $string['editgroupsettings'] = 'Editar ajustes de grupo';
 $string['editusersgroupsa'] = 'Editar grupos para "{$a}"';
 $string['enablemessaging'] = 'Mensajes de grupo';
 $string['enablemessaging_help'] = 'Si se habilita, los miembros del grupo pueden enviar mensajes a los otros de su grupo a través del menú de mensajes.';
+$string['encoding'] = 'Codificación';
 $string['enrolmentkey'] = 'Clave de matriculación';
-$string['enrolmentkey_help'] = 'Una clave de acceso permite que el acceso al curso esté limitado sólo a aquellos que conocen la clave. Si se especifica una clave de acceso grupal, entonces dicha clave no sólo permitirá a los usuarios entrar al curso, sino que los hará miembros del grupo.';
+$string['enrolmentkey_help'] = 'Una clave de inscripción permite que el acceso al curso esté limitado sólo a aquellos que conocen la clave. Si se especifica una clave de inscripción grupal, entonces dicha clave no sólo permitirá a los usuarios entrar al curso, sino que los hará miembros del grupo indicado. Esto es muy útil en escuelas grandes donde hay varios grupos/profesores para la misma materia y se emplea el número de grupo (1501, 1502, 1503, 1504,...) de la tira de materias del alumno como clave de inscripción.
+
+Por favor tenga en cuenta que deben habilitarse las claves de inscripción a grupos edentro de las configuraciones de la auto-inscripción; y de que también debe especificarse una clave de inscripción al curso';
 $string['enrolmentkeyalreadyinuse'] = 'Esta clave de matriculación ya está siendo usada para otro grupo.';
 $string['erroraddremoveuser'] = 'Error al agregar/quitar al usuario {$a} del grupo';
 $string['erroreditgroup'] = 'Error al crear o actualizar el grupo {$a}';
@@ -85,7 +89,7 @@ $string['eventgroupupdated'] = 'Grupo actualizado';
 $string['existingmembers'] = 'Miembros existentes: {$a}';
 $string['filtergroups'] = 'Filtrar grupos por:';
 $string['group'] = 'Grupo';
-$string['groupaddedsuccesfully'] = 'Grupo {$a} agregado con éxito';
+$string['groupaddedsuccesfully'] = 'Grupo {$a} añadido con éxito';
 $string['groupaddedtogroupingsuccesfully'] = 'El grupo {$a->groupname} se añadió al agrupamiento {$a->groupingname} con éxito';
 $string['groupby'] = 'Creación automática basada en';
 $string['groupdescription'] = 'Descripción del grupo';
@@ -102,28 +106,19 @@ $string['groupings'] = 'Agrupamientos';
 $string['groupingsection'] = 'Acceso agrupamientos';
 $string['groupingsection_help'] = 'Un agrupamiento es una colección de grupos dentro de un curso. Si aquí se selecciona un agrupamiento, solamente los estudiantes asignados a grupos incluídos en este agrupamiento tendrán acceso a la sección.';
 $string['groupingsonly'] = 'Sólo agrupamientos';
-$string['groupmember'] = 'Miembro del Grupo';
+$string['groupmember'] = 'Miembro del grupo';
 $string['groupmemberdesc'] = 'Rol estándar de un miembro de grupo.';
 $string['groupmembers'] = 'Miembros del grupo';
 $string['groupmemberssee'] = 'Ver los integrantes del grupo';
 $string['groupmembersselected'] = 'Miembros del grupo seleccionado';
 $string['groupmode'] = 'Modo de grupo';
-$string['groupmode_help'] = '<p>El modo grupo puede ser de alguno de estos tres niveles:
-   <ul>
-      <li>Sin grupos - No hay grupos, todos son parte de una gran comunidad.</li>
-      <li>Grupos separados - Cada estudiante sólo puede ver su propio grupo; los demás son invisibles</li>
-      <li>Grupos visibles - Cada estudiante trabaja dentro de su grupo, pero también puede ver a los otros grupos</li>
-   </ul>
-</p>
+$string['groupmode_help'] = 'Esta configuración tiene 3 opciones:
 
-<p>El modo grupo puede ser definido a dos niveles:</p>
+* Sin grupos
+* Grupos separados - Cada miembro del grupo solamente puede ver a su propio grupo, los demás son invisibles
+* Grupos visible - Cada miembro del grupo trabaja en su propio grupo, pero también puede ver a los otros grupos
 
-<dl>
-   <dt><b>1. Nivel Curso</b></dt>
-   <dd>El modo grupal definido a nivel de curso viene por defecto para todas las actividades definidas dentro del curso<br /><br /></dd>
-   <dt><b>2. Nivel Actividad</b></dt>
-   <dd>Toda actividad que soporte grupos puede definir su propio modo de agrupación. Si el curso está configurado como  "<a href="help.php?module=moodle&file=groupmodeforce.html">forzar modo de grupo</a>" entonces no se tendrá en cuenta la configuración de cada actividad.</dd>
-</dl>';
+El modo de grupo definido a nivel del curso es el modo por defecto para todas las actividades dentro del curso. Cada actividad que soporta grupos también puede definir su propio modo de grupo, aunque si se forza el modo de grupo a nivel del curso, la configuración del modo de grupo para cada actividad es ignorada.';
 $string['groupmodeforce'] = 'Forzar el modo de grupo';
 $string['groupmodeforce_help'] = 'Si se fuerza el modo grupo, entonces el modo de grupo en el curso se aplica a todas las actividades del curso. En ese caso se pasan por alto los ajustes del modo de grupo.';
 $string['groupmy'] = 'Mi grupo';
@@ -133,7 +128,7 @@ $string['groupnotamember'] = 'Lo sentimos, usted no es miembro de ese grupo';
 $string['groups'] = 'Grupos';
 $string['groupscount'] = 'Grupos ({$a})';
 $string['groupsettingsheader'] = 'Grupos';
-$string['groupsgroupings'] = 'Grupos &amp; agrupamientos';
+$string['groupsgroupings'] = 'Grupos y agrupamientos';
 $string['groupsinselectedgrouping'] = 'Grupos en:';
 $string['groupsnone'] = 'No hay grupos';
 $string['groupsonly'] = 'Sólo grupos';
@@ -143,13 +138,13 @@ $string['groupsvisible'] = 'Grupos visibles';
 $string['grouptemplate'] = 'Grupo @';
 $string['hidepicture'] = 'Ocultar imagen';
 $string['importgroups'] = 'Importar grupos';
-$string['importgroups_help'] = 'Los grupos pueden ser importados mediante un archivo de texto. El formato del archivo debe como sigue:
+$string['importgroups_help'] = 'Los grupos pueden ser importados mediante un archivo de texto. El formato del archivo debe tener la siguiente estructura:
 
 * Cada línea del archivo contiene un registro
 * Cada registro es una serie de datos separados por comas
 * El primer registro contiene una lista de nombres de campos que definen el formato del resto del archivo
-* Es obligatorio el campo de grupo
-* Son opcionales los campos descripción, clave de matriculación, fotografía, fotografiá oculta';
+* Es obligatorio el campo groupname
+* Son opcionales los campos groupidnumber, description, enrolmentkey, groupingname, enablemessaging';
 $string['includeonlyactiveenrol'] = 'Incluir únicamente matriculas activas';
 $string['includeonlyactiveenrol_help'] = 'Si está activado, los usuarios suspendidos no serán incluidos en los grupos.';
 $string['javascriptrequired'] = 'Esta página requiere que Javascript esté activado.';
@@ -163,35 +158,7 @@ $string['namingscheme_help'] = 'El símbolo arroba (@) puede usarse para crear g
 El símbolo almohadilla (#) puede usarse para crear grupos con nombres que contienen números. Por ejemplo, Grupo # puede generar grupos denominados Grupo 1, Grupo 2, Grupo 3, etc.';
 $string['newgrouping'] = 'Nuevo agrupamiento';
 $string['newpicture'] = 'Nueva imagen';
-$string['newpicture_help'] = '<P>Usted puede subir una imagen desde su ordenador al servidor, y esta imagen se
-utilizará en varios lugares para identificarlo.
-<P>Por este motivo, las mejores imágenes son las de estilo identificación, aunque
-puede utilizar la imagen que desee.
-<P>La imagen debe ser formato JPG o PNG (lo que significa que el nombre de la imagen
-terminará en .jpg o en .png) y debe tener un tamaño de 100 x 100 píxeles o más.
-<P>Puede colocar una imagen utilizando uno de estos cuatro métodos:
-
-<OL>
-<LI>Utilizando una cámara digital, es muy sencillo, dado que sus fotos seguramente
-ya estarán en el formato correcto en su ordenador.
-<LI>Utilizando un "scanner" para digitalizar una fotografía impresa. Asegúrese de
-guardar la imagen en formato JPG o PNG.
-<LI>Si usted es una artista, puede dibujar una imagen utilizando algún programa de diseño.
-<LI>También puede conseguir una imagen que lo identifique en la red.
-<A TARGET=google HREF="http://images.google.com/">http://images.google.com</A>
-es un excelente lugar para buscar imágenes. Una vez encontrada, coloque el cursor
-sobre ella y pulsando el botón derecho del ratón elija la opción "Guardar imagen como".
-(Diferentes ordenadores pueden variar en este procedimiento)
-</OL>
-
-<P>Para subir la imagen, haga clic en el botón "Examinar" en esta página y seleccione
-la imagen en su disco duro.
-<P>IMPORTANTE: Asegúrese de no subir una imagen que exceda el tamaño
-máximo permitido, en bites, pues no se cargará.
-<P>Luego haga clic en "Actualizar información personal" en la parte inferior de la página; si la imagen
-es mayor a 100 x 100 píxeles se cortará.
-<P>Cuando acabe de cambiar su imagen es posible que no vea el cambio; si eso sucede
-actualice la página (oprimiendo F5 o el botón actualizar).';
+$string['newpicture_help'] = 'Seleccione una magen de formato JPG o PNG. La imagen será recortada a un cuadrado de tamaño de 100 por 100 pixeles.';
 $string['noallocation'] = 'No asignación';
 $string['nogroup'] = 'Sin grupo';
 $string['nogrouping'] = 'Sin agrupamientos';
@@ -200,8 +167,8 @@ $string['nogroupsassigned'] = 'No hay grupos asignados';
 $string['nopermissionforcreation'] = 'No se puede crear el grupo "{$a}": usted no dispone de los permisos requeridos';
 $string['nosmallgroups'] = 'Evitar el último grupo pequeño';
 $string['notingroup'] = 'Ignorar usuarios en grupos';
-$string['notingrouping'] = '[Fuera de un agrupamiento]';
-$string['notingrouplist'] = '[En ningún grupo]';
+$string['notingrouping'] = 'No está en un agrupamiento';
+$string['notingrouplist'] = 'NO está en un grupo';
 $string['nousersinrole'] = 'No existen usuarios disponibles en el rol seleccionado';
 $string['number'] = 'Número de grupos o miembros por grupo';
 $string['numgroups'] = 'Número de grupos';
@@ -211,7 +178,12 @@ $string['overview'] = 'Visión general';
 $string['potentialmembers'] = 'Miembros potenciales: {$a}';
 $string['potentialmembs'] = 'Miembros potenciales';
 $string['printerfriendly'] = 'Mostrar en formato para imprimir';
-$string['random'] = 'al azar';
+$string['privacy:metadata:core_message'] = 'Las conversaciones del grupo';
+$string['privacy:metadata:groups'] = 'Un registro de membresía de grupo.';
+$string['privacy:metadata:groups:groupid'] = 'La ID del grupo.';
+$string['privacy:metadata:groups:timeadded'] = 'El sello de tiempo que indica cuando el usuario fue añadido al grupo.';
+$string['privacy:metadata:groups:userid'] = 'La ID del usuario que está asociado al grupo.';
+$string['random'] = 'Al azar';
 $string['removefromgroup'] = 'Eliminar al usuario del grupo {$a}
 ';
 $string['removefromgroupconfirm'] = '¿Realmente desea eliminar al usuario "{$a->user}" del grupo "{$a->group}"?

@@ -1,11 +1,11 @@
 <?php
 
-require_once dirname(__FILE__) . '/local/agora/lib.php';
+require_once __DIR__ . '/local/agora/lib.php';
 
 get_debug();
 
 // Specific Àgora params
-$CFG->isagora = 1;
+$CFG->isagora = true;
 $CFG->iseoi = $agora['iseoi'];
 $CFG->isodissea = false;
 $CFG->isalexandria = false;
@@ -58,11 +58,9 @@ $CFG->noreplyaddress = $agora['mail']['reply'];
 $CFG->smtpsecure = 'tls';
 $CFG->smtpmaxbulk = 15;
 $CFG->emailfromvia = 0;
-$CFG->mailheader = ($CFG->iseoi) ? '[Àgora-EOI]' : '[Àgora]';
 
 // Cleanup
 $CFG->disablegradehistory = 1;
-$CFG->loglifetime = 365 * 2;
 $CFG->tempdatafoldercleanup = 24;
 
 // Rules
@@ -83,8 +81,8 @@ $CFG->expectedcronfrequency = 600;
 $CFG->defaultblocks_override = ':calendar_month,activity_modules';
 
 // Language parameters
-$CFG->langotherroot = dirname(__FILE__) . '/langpacks/';
-$CFG->langlocalroot = dirname(__FILE__) . '/langpacks/';
+$CFG->langotherroot = __DIR__ . '/langpacks/';
+$CFG->langlocalroot = __DIR__ . '/langpacks/';
 $CFG->skiplangupgrade = true;
 
 // Only allow some of the languages
@@ -93,7 +91,7 @@ if (!$CFG->iseoi) {
 }
 
 // Path of the cacheconfig.php file, to have only one MUC file for Àgora (instead of having one for each site in moodledata/usuX/muc/config.php).
-$CFG->altcacheconfigpath = dirname(__FILE__) . '/local/agora/muc/';
+$CFG->altcacheconfigpath = __DIR__ . '/local/agora/muc/';
 $CFG->siteidentifier = $CFG->dbuser;
 
 // Cache servers configuration for MUC, used in custom cacheconfig.php
@@ -160,9 +158,12 @@ $CFG->customusermenuitems = "grades,grades|/grade/report/mygrades.php|grades
     preferences,moodle|/user/preferences.php|preferences";
 
 $CFG->forced_plugin_settings = [
-    'logstore_standard' => ['loglifetime' => 365 * 2],
-    'logstore_legacy' => ['loglegacy' => 1],
-    'filter_wiris' => ['uninstall' => 1],
+    'logstore_standard' => [
+        'loglifetime' => 365 * 2,
+    ],
+    'filter_wiris' => [
+        'uninstall' => 1,
+    ],
     'backup' => [
         'loglifetime' => 7,
         'backup_auto_delete_days' => 365,

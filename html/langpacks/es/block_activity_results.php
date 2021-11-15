@@ -63,6 +63,7 @@ $string['error_nogroupsexist'] = 'Error: el bloque está configurado para mostra
 $string['error_unsupportedgradetype'] = 'Error: la actividad seleccionada usa un método de calificación que no es compatible con este bloque.';
 $string['notyetgraded'] = 'Sin calificar por el momento';
 $string['pluginname'] = 'Resultados de la actividad';
+$string['privacy:metadata'] = 'El bloque de resultados de actividades sólo muestra información almacenada en otras localizaciones.';
 $string['unknown'] = 'Escala desconocida';
 $string['worstgrade'] = 'Calificación más baja:';
 $string['worstgrades'] = '{$a} calificaciones más bajas:';

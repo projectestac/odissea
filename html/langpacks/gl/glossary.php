@@ -90,6 +90,7 @@ $string['commentdeleted'] = 'Eliminouse o comentario.';
 $string['comments'] = 'Comentarios';
 $string['commentson'] = 'Comentarios en funcionamento';
 $string['commentupdated'] = 'Actualizouse o comentario.';
+$string['completiondetail:entries'] = 'Facer entradas: {$a}';
 $string['completionentries'] = 'O estudante debe crear entradas:';
 $string['completionentriesdesc'] = 'O alumno debe crear polo menos {$a} entradas)';
 $string['completionentriesgroup'] = 'Require entradas';

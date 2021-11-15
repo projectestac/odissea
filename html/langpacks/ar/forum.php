@@ -128,7 +128,7 @@ $string['configdigestmailtime'] = 'الناس الذين يَختارونَ أَ
 $string['configdisplaymode'] = 'نمط العرض الافتراضي للمناقشات إذا لم يتم اختيار أحدها.';
 $string['configenablerssfeeds'] = 'هذا سيمكن خدمة تغذية المعلومات لكل المنتديات. ستحتاج القيام بتفعيل خدمة تغذية المعلومات يدوياً من خلال إعدادات مل منتدى.';
 $string['configenabletimedposts'] = 'أضبطه على \'نعم\' إذا أردت السماح بتحديد فترات العرض عند نشر مناقشة جديدة في المنتدى.';
-$string['configlongpost'] = 'أي منشور يزيد عن هذا الحد (مقاساً بالحروف غير المتضمنة لرموز HTML) يعتبر طويلاً. المنشورات المعروضة في الصفحة الأمامية للموقع، صفحات المقررات الدراسية ذات النمط الاجتماعي، أو الملفات الشخصية للمستخدمين يتم تقصيرها إلى فاصل طبيعي في موضع ما بين قيمتي forum_shortpost و forum_longpost.';
+$string['configlongpost'] = 'أي منشور يزيد عن هذا الحد (مقاساً بالحروف غير المتضمنة لرموز HTML) يعتبر طويلاً. المنشورات المعروضة في صفحة واجهة الموقع، صفحات المقررات الدراسية ذات النمط الاجتماعي، أو الملفات الشخصية للمستخدمين يتم تقصيرها إلى فاصل طبيعي في موضع ما بين قيمتي forum_shortpost و forum_longpost.';
 $string['configmanydiscussions'] = 'الحد الأقصى لعدد للمناقشات المعروضة في الصفحة الواحد للمنتدى';
 $string['configmaxattachments'] = 'أقصى عدد من المرفقات إفتراضياً يُسمح به لكل منشور.';
 $string['configmaxbytes'] = 'الحجم الافتراضي الاقصى لجميع مرفقات المنتدى في هذا الموقع (عرضة لمحددات المقرر الدراسي وبعض الإعدادات الإخرى)';
@@ -350,22 +350,22 @@ $string['generalforum'] = 'منتدى نموذجي للاستخدام العام
 $string['generalforums'] = 'منتديات عامة';
 $string['grade_forum_header'] = 'تقييم كل المنتدى';
 $string['grade_forum_name'] = 'كل المنتدى';
-$string['grade_forum_title'] = 'العلامة';
+$string['grade_forum_title'] = 'الدرجمة';
 $string['grade_rating_name'] = 'التقييم';
 $string['graded'] = 'مقيَّم';
 $string['gradedby'] = 'مقيَّم من قبل';
-$string['gradeforrating'] = 'العلامة على التقييم: {$a->str_long_grade}';
-$string['gradeforratinghidden'] = 'العلامة على التقييم مخفية';
-$string['gradeforwholeforum'] = 'العلامة على المنتدى: {$a->str_long_grade}';
-$string['gradeforwholeforumhidden'] = 'العلامة على المنتدى مخفية';
+$string['gradeforrating'] = 'الدرجة على التقييم: {$a->str_long_grade}';
+$string['gradeforratinghidden'] = 'الدرجة على التقييم مخفية';
+$string['gradeforwholeforum'] = 'الدرجة على المنتدى: {$a->str_long_grade}';
+$string['gradeforwholeforumhidden'] = 'الدرجة على المنتدى مخفية';
 $string['gradeitem:forum'] = 'المنتدى';
 $string['gradeitemnameforrating'] = 'علامة التقييم لـ {$a->name}';
 $string['gradeitemnameforwholeforum'] = 'كل المنتدى لـ {$a->name}';
-$string['grades:gradesavedfor'] = 'تم حفظ العلامة لـ {$a->fullname}';
-$string['grades:gradesavefailed'] = 'تعذر حفظ العلامة لـ {$a->fullname}: {$a->error}';
+$string['grades:gradesavedfor'] = 'تم حفظ الدرجة لـ {$a->fullname}';
+$string['grades:gradesavefailed'] = 'تعذر حفظ الدرجة لـ {$a->fullname}: {$a->error}';
 $string['gradeusers'] = 'تقييم المستخدمين';
-$string['grading'] = 'منح العلامة';
-$string['gradingstatus'] = 'حالة العلامة:';
+$string['grading'] = 'إعطاء التقديرات';
+$string['gradingstatus'] = 'حالة الدرجة:';
 $string['hiddenforumpost'] = 'منشور منتدى مخفي';
 $string['hidegraderpanel'] = 'إخفِ لوحة المقيِّم';
 $string['hidepreviousrepliescount'] = 'أخفِ الإجابات السابقة ({$a})';
@@ -445,7 +445,7 @@ $string['modulename_help'] = 'تُمكن وحدة نشاط المنتدى الم
 
 يمكن للمشاركين الاشتراك في المنتدى لتلقي الإشعارات بشأن منشوراته الجديدة. يمكن للمعلم تحديد طريقة الاشتراك في المنتدى  لتكون اختيارية، مفروضة أو تلقائية، أو حتى منع الاشتراك تماماً. إذا لزم الأمر، يمكن حظر الطلاب من نشر أكثر من عدد معين من المنشورات خلال فترة زمنية معينة؛ هذا يمكن أن يمنع الأفراد من الهيمنة على المناقشات.
 
-يمكن تقييم منشورات المنتدى من قبل المعلمين أو الطلاب (تقييم النظراء). يمكن تجميع التقييمات للخروج منها بالعلامة النهائية التي يتم تسجيلها في سجل التقديرات.
+يمكن تقييم منشورات المنتدى من قبل المعلمين أو الطلاب (تقييم النظراء). يمكن تجميع التقييمات للخروج منها بالدرجة النهائية التي يتم تسجيلها في سجل التقديرات.
 
 للمنتديات  العديد من الاستعمالات، مثل:
 
@@ -535,11 +535,13 @@ $string['postbymailsuccess'] = 'ردك عن "{$a->subject}" تم نشره بنج
 $string['postbymailsuccess_html'] = 'ردك <a href="{$a->discussionurl}">{$a->subject}</a> تم نشره بنجاح.';
 $string['postbyuser'] = '{$a->post} من قِبَل {$a->user}';
 $string['postincontext'] = 'شاهد هذا المقال في السياق';
-$string['postisprivatereply'] = 'هذا رد خاص. هو غير مرئي من قبل المشاركين الآخرين.';
+$string['postisprivatereply'] = 'هذا رد خاص. هو مرئي لك فقط ولمن لديك إمكانية معاينة الردود الخاصة، مثل المعلمين والمدراء.';
+$string['postmailinfo'] = 'هذه نسخة من رسالة نشرت في {$a}.';
 $string['postmailinfolink'] = 'هذه نسخة من الرسالة المنشورة في {$a->coursename}.
 
 للرد، أنقر على هذا الرابط: {$a->replylink}';
 $string['postmailnow'] = '<p>سيتم حالاً إرسال هذا المنشور بريدياً إلى كل مشتركي المنتدى.</p>';
+$string['postmailreply'] = 'للرد، أنقر على هذا الرابط: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'غالباً تعلُّم منفصل';
 $string['postrating2'] = 'منفصل ومتصل';
@@ -575,10 +577,10 @@ $string['privacy:metadata:forum_discussions:name'] = 'اسم المناقشة، 
 $string['privacy:metadata:forum_discussions:timemodified'] = 'وقت آخر تعديل في المناقشة';
 $string['privacy:metadata:forum_discussions:userid'] = 'مُعرَّف المستخدم الذي أنشأ المناقشة';
 $string['privacy:metadata:forum_discussions:usermodified'] = 'مُعرَّف المستخدم الأخير الذي عدَّل المناقشة بطريقة ما';
-$string['privacy:metadata:forum_grades'] = 'بيانات العلامة للمنتدى';
+$string['privacy:metadata:forum_grades'] = 'بيانات درجات المنتدى';
 $string['privacy:metadata:forum_grades:forum'] = 'المنتدى الذي تم تقييمه';
-$string['privacy:metadata:forum_grades:grade'] = 'العلامة الممنوحة';
-$string['privacy:metadata:forum_grades:userid'] = 'المستخدم الذي تم منحه العلامة';
+$string['privacy:metadata:forum_grades:grade'] = 'الدرجة الممنوحة';
+$string['privacy:metadata:forum_grades:userid'] = 'المستخدم الذي تم منحه الدرجة';
 $string['privacy:metadata:forum_posts'] = 'معلومات عن تفضيلات الإيجاز لكل منتدى';
 $string['privacy:metadata:forum_posts:created'] = 'وقت إنشاء المنشور';
 $string['privacy:metadata:forum_posts:discussion'] = 'المناقشة التي فيها المنشور';
@@ -768,7 +770,7 @@ $string['usernavigation'] = 'تنقل المستخدم';
 $string['usersforumposts'] = 'منشورات المستخدم في المنتدى';
 $string['viewalldiscussions'] = 'معاينة كل المناقشات';
 $string['viewconversation'] = 'معاينة المناقشة';
-$string['viewgrades'] = 'معاينة العلامات';
+$string['viewgrades'] = 'عرض التقديرات';
 $string['viewparentpost'] = 'معاينة المنشور ذي الرتبة الأعلى';
 $string['viewthediscussion'] = 'معاينة المناقشة';
 $string['warnafter'] = 'عتبة النشر لغرض التحذير';

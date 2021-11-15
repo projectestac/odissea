@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notavailable'] = 'Detta test är tyvärr inte tillgängligt';
-$string['pluginname'] = 'Regel för öppning och stängning av testet';
-$string['privacy:metadata'] = 'Pluginmodulen Start- och slutdatum åtkomstregel för Test lagrar ingen personinformation.';
-$string['quiznotavailable'] = 'Testet kommer inte vara tillgängligt förrän: {$a}';
+$string['notavailable'] = 'Detta kunskapstest är tyvärr inte tillgängligt';
+$string['pluginname'] = 'Regel för öppning och stängning av kunskapstest';
+$string['privacy:metadata'] = 'Pluginmodulen Start- och slutdatum åtkomstregel för kunskapstest lagrar ingen personinformation.';
+$string['quiznotavailable'] = 'Kunskapstestet kommer inte vara tillgängligt förrän: {$a}';

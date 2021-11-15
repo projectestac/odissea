@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'الوصف';
 $string['groupmembers:addinstance'] = 'إضافة قائمة جديدة لأعضاء المجموعة';
+$string['groupmembersname'] = 'اسم قائمة الأعضاء';
 $string['setting_showemaildefault_desc'] = 'مع هذا الإعداد، تتحكم بإعداد عيِنة الوحدة "إظهار عناوين البريد الالكتروني".<br />ستتم معالجة هذا الإعداد فقط عند تمكين الإعداد "تمكين إظهار عناوين البريد الالكتروني".';
 $string['setting_showgroupsdefault_desc'] = 'مع هذا الإعداد، تتحكم بالقيمة الافتراضية لإعداد عيِنة الوحدة "إظهار المجموعات".';
 $string['user:fullname'] = 'الاسم الأول / اسم العائلة';

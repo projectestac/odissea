@@ -175,10 +175,10 @@ $string['marks'] = 'Classificações';
 $string['marks_help'] = 'A nota numérica para cada questão e a pontuação total da tentativa';
 $string['modulename'] = 'Teste Ativo';
 $string['modulename_help'] = '<p>A atividade de Teste Ativo permite ao professor criar e administrar testes em tempo real. Todos os tipos de perguntas dos testes normais podem ser utilizadas no Teste Ativo.</p>
-<p>Teste Ativo permite a participação individual ou em grupo. É possível responder em grupo mas os pontos obtidos durante o teste ativo somente serão atribuídos aos participantes que assistiram à sessão. As questões podem ser configuradas para permitir várias tentativas. Pode ser definido um tempo limite para terminar automaticamente a questão, ou o professor pode terminar manualmente a questão e passar para a seguinte. O professor também tem a capacidade de saltar para diferentes questões durante a execução da sessão. Os professores podem monitorar a participação individual ou de grupos, respostas em tempo real dos participantes e a colocação das questões. </p>
+<p>Teste Ativo permite a participação individual ou em grupo. É possível responder em grupo mas os pontos obtidos durante o teste ativo somente serão atribuídos aos participantes que assistiram à sessão. As questões podem ser configuradas para permitir várias tentativas. Pode ser definido um tempo limite para terminar automaticamente a questão, ou o professor pode terminar manualmente a questão e passar para a seguinte. O professor também tem a capacidade de saltar para diferentes questões durante a execução da sessão. Os professores podem monitorizar a participação individual ou de grupos, respostas em tempo real dos participantes e a colocação das questões. </p>
 <p>Cada tentativa do teste é marcada automaticamente como um teste normal (com a exceção de questões de ensaio ou PoodLL) e a nota é registada na pauta. A classificação para a participação em grupo pode ser feita automaticamente, transferindo a nota do aluno que respondeu para os outros membros do grupo. </p>
 <p>O professor tem opções para mostrar sugestões, dar feedback e mostrar as respostas corretas aos alunos mediante a conclusão do teste. </p>
-<p>Teste Ativo pode ser usado como um meio para a Aprendizagem Baseada em Equipe dentro do Moodle. </p>';
+<p>Teste Ativo pode ser usado como um meio para a Aprendizagem Baseada em Equipa dentro do Moodle. </p>';
 $string['modulenameplural'] = 'Testes Ativos';
 $string['nextquestion'] = 'Próxima questão';
 $string['no_questions'] = 'Ainda não foram adicionadas questões ao teste.';

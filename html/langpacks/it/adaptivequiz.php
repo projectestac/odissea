@@ -112,6 +112,7 @@ $string['scoring_table'] = 'Tabella punteggi';
 $string['startattemptbtn'] = 'Inizia il tentativo';
 $string['startinglevel'] = 'Livello iniziale di difficoltà';
 $string['statistic'] = 'Statistica';
+$string['submitanswer'] = 'Invia la risposta';
 $string['times_used_display_name'] = 'Tempo utilizzato';
 $string['unknownuser'] = 'Utente sconosciuto';
 $string['user'] = 'Utente';

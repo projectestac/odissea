@@ -30,3 +30,4 @@ $string['endanswernotfound'] = 'No se pudo encontrar el carácter obligatorio "}
 $string['noanswerfound'] = 'No se han encontrado respuestas en esta pregunta';
 $string['pluginname'] = 'Formato de palabra ausente';
 $string['pluginname_help'] = 'El formato de pregunta \'palabra perdida\' permite su importación via fichero de texto';
+$string['privacy:metadata'] = 'El complemento de formato de pregunta de palabra faltante no almacena ningún dato personal.';

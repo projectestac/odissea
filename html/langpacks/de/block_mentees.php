@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configtitle'] = 'Titel für Betreuerblock';
 $string['configtitleblankhides'] = 'Titel für Betreuerblock (Ohne Titel bei leerem Feld)';
 $string['mentees:addinstance'] = 'Neuen Block \'Mentoren\' hinzufügen';
-$string['mentees:myaddinstance'] = 'Neuen Block \'Mentoren\' zum Dashboard hinzufügen';
+$string['mentees:myaddinstance'] = 'Neuen Block \'Mentoren\' im Dashboard hinzufügen';
 $string['newmenteesblock'] = '(Mentoren)';
 $string['pluginname'] = 'Mentoren';
 $string['privacy:metadata'] = 'Der Block Mentoren zeigt nur Daten an, die an anderen Orten gespeichert sind.';

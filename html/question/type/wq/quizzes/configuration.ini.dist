@@ -116,3 +116,17 @@
 ; in the future, but it is not required right now.
 ;
 ;quizzes.license.id = ""
+
+;
+; Logging level for Quizzes telemetry service integration.
+; Possible values: NONE, ERROR, WARNING, INFO, DEBUG.
+;
+
+;quizzes.logging.level = "WARNING";
+
+;
+; Default tracking configuration for Quizzes telemetry service integration.
+;
+
+;quizzes.tracking.enabled = "true";
+

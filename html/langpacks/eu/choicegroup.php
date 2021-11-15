@@ -102,13 +102,16 @@ $string['limitanswers'] = 'Mugatu baimendutako erantzun kopurua';
 $string['limitanswers_help'] = 'Ezarpen honek talde bakoitza hautatu dezakeen partaide kopurua mugatzeko aukera ematen du. Mugara iristen denean inork gehiagok ezingo du aukera hori hautatu.
 
 Mugak desgaituta badaude aukera bakoitza nahi beste partaidek aukeratu dezakete.';
+$string['maxenrollments'] = 'Gehieneko matrikulazioak';
+$string['maxenrollments_help'] = 'Aukera honek partaide bakoitzaren talde kopurua mugatzea ahalbidetzen du. Mugarik ez jartzeko **0** balio lehenetsia erabili ezazu.';
 $string['members/'] = 'Kideak';
 $string['members/max'] = 'Kideka / Muga';
 $string['modulename'] = 'Talde-aukeraketa';
-$string['modulename_help'] = 'Talde-aukeraketa moduluak ikasleei euren ikastaro barruko taldea hautatzeko aukera ematen du. Irakasleak ikasleek aukeratu dezaketen taldeen zerrenda eta talde bakoitzeko gehienezko kide kopurua zehaztu dezake.';
+$string['modulename_help'] = 'Talde-aukeraketa moduluak ikasleei euren ikastaro barruko taldea hautatzeko aukera ematen du. Irakasleak ikasleek aukeratu dezaketen taldeen zerrenda eta talde bakoitzeko gehieneko kide kopurua zehaztu dezake.';
 $string['modulenameplural'] = 'Talde-aukeraketak';
 $string['moveselectedusersto'] = 'Mugitu aukeratutako erabiltzaileak hona...';
 $string['multipleenrollmentspossible'] = 'Baimendu hainbat taldetan matrikulatzea';
+$string['mustchoosemax'] = 'Gehienez {$a} talde aukeratu ahal duzu. Ez da ezer gorde.';
 $string['mustchooseone'] = 'Gorde aurretik erantzun bat aukeratu behar duzu. Ez da ezer gorde.';
 $string['name'] = 'Izena';
 $string['neverresultsviewable'] = 'Emaitzak ez daude ikusgai.';
@@ -120,6 +123,7 @@ $string['notenrolledchoose'] = 'Sentitzen dugu, soilik matrikulatutako erabiltza
 $string['notopenyet'] = 'Sentitzen dugu, jarduera hau ez da eskuragarri egongo {$a} arte';
 $string['notyetresultsviewable'] = 'Emaitzak jarduera itxi ondoren egongo dira ikusgai.';
 $string['numberofuser'] = 'Erabiltzaile kopurua';
+$string['onlyactive'] = 'Iragazi iraungitako matrikulazio eta matrikulazio ez-aktiboak dituzten erabiltzaileak.';
 $string['option'] = 'Taldea';
 $string['page-mod-choice-x'] = 'Edozein talde-aukeraketa modulu-orri';
 $string['pleaseselectonegroup'] = 'Aukeratu ezazu mesedez gutxienez hautatu ahal den talde bat.';

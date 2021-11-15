@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['badwords'] = 'merda,fodido,foda-se,foder,picha,caralho,cabeça de cócó,pila,cona,idiota,cú,pilinha,cabrão,porra,prostituta,puta,masturbar,punheta,sacana,vibrador,masturbação,orgasmo,pénis,escarumba,rata,vagina';
 $string['filtername'] = 'Censura de palavras';
-$string['privacy:metadata'] = 'O módulo Censura de palavras não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Censura de palavras não armazena quaisquer dados pessoais.';

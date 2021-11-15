@@ -9,4 +9,5 @@ interface com_wiris_quizzes_api_ui_QuizzesUIBuilder {
 	function newAnswerField($question, $instance, $index);
 	function newAnswerFeedback($question, $instance, $correctAnswer, $studentAnswer);
 	function setLanguage($lang);
+	//;
 }

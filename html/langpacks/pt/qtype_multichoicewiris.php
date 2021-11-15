@@ -29,7 +29,7 @@ $string['addingmultichoicewiris'] = 'A adicionar pergunta Escolha múltipla - ma
 $string['editingmultichoicewiris'] = 'A editar pergunta Escolha múltipla - matemática & ciência WIRIS';
 $string['multichoicewiris'] = 'Escolha múltipla - ciência';
 $string['multichoicewiris_algorithm'] = 'Algoritmo';
-$string['multichoicewiris_cantimportoverride'] = 'A pergunta Resposta curta - matemática & ciência não pôde ser importada corretamente do formato Moodle 1.9. A pergunta pode ser corrigida manualmente seguindo as instruções em <a href="http://www.wiris.com/quizzes/docs/moodle/manual/multiple-choice#frommoodle1">http://www.wiris.com/quizzes/docs/moodle/manual/multiple-choice#frommoodle1</a>.';
+$string['multichoicewiris_cantimportoverride'] = 'A pergunta Resposta curta - matemática & ciência WIRIS não pôde ser importada corretamente do formato Moodle 1.9. A pergunta pode ser corrigida manualmente seguindo as instruções em <a href="http://www.wiris.com/quizzes/docs/moodle/manual/multiple-choice#frommoodle1">http://www.wiris.com/quizzes/docs/moodle/manual/multiple-choice#frommoodle1</a>.';
 $string['multichoicewiris_help'] = 'Igual à pergunta Escolha múltipla do Moodle mas pode escrever textos de perguntas diferentes inserindo números aleatórios, fórmulas ou gráficos. O feedback também pode usar os valores aleatórios.';
 $string['multichoicewiris_wiris_variables'] = 'Variáveis WIRIS';
 $string['multichoicewirissummary'] = 'Igual à pergunta Escolha múltipla do Moodle mas pode escrever textos de perguntas diferentes inserindo números aleatórios, fórmulas ou gráficos. O feedback também pode usar os valores aleatórios.';

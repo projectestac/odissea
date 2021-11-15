@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addoutcome'] = 'Afegeix una competència';
-$string['courseoutcomes'] = 'Competències del curs';
-$string['coursespecoutcome'] = 'Competències del curs';
-$string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe de qualificacions de competències';
-$string['outcomes:view'] = 'Visualitza l\'informe de competències';
-$string['pluginname'] = 'Informe de competències';
-$string['privacy:metadata'] = 'L\'informe de qualificacions de competències només mostra dades desades en altres ubicacions.';
+$string['addoutcome'] = 'Afegeix un resultat';
+$string['courseoutcomes'] = 'Resultats del curs';
+$string['coursespecoutcome'] = 'Resultats del curs';
+$string['eventgradereportviewed'] = 'S\'ha visualitzat l\'informe de qualificacions de resultats';
+$string['outcomes:view'] = 'Visualitza l\'informe de resultats';
+$string['pluginname'] = 'Informe de resultats';
+$string['privacy:metadata'] = 'L\'informe de qualificacions de resultats només mostra dades desades en altres ubicacions.';
 $string['usedgradeitem'] = 'Nombre d\'elements de qualificació';

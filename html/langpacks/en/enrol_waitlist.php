@@ -73,6 +73,7 @@ $string['passwordinvalidhint'] = 'That enrolment key was incorrect, please try a
 $string['pluginname'] = 'Waitlist enrolment';
 $string['pluginname_desc'] = 'The waitlist enrolment plugin allows users to choose which courses they want to participate in. The courses may be protected by an enrolment key. Internally the enrolment is done via the manual enrolment plugin which has to be enabled in the same course.';
 $string['privacy:metadata:user_enrol_waitlist'] = 'Stores user metadata in userid field';
+$string['privacy:metadata:user_enrol_waitlist:userid'] = 'Stores user metadata in userid field';
 $string['profilecreatefield'] = 'Create a new waitlist fieled';
 $string['profiledescription2'] = 'Description2 of the field';
 $string['profilefield'] = 'Field';

@@ -27,6 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['error_connection'] = 'Ocorreu um erro ao carregar o módulo MathType por WIRIS';
 $string['pluginname'] = 'MathType por WIRIS para Atto';
-$string['privacy:null_reason'] = 'O módulo MathType por WIRIS para Atto não afeta nem armazena quaisquer dados pessoais.';
 $string['wiris_chem_editor_title'] = 'Inserir um fórmula química';
 $string['wiris_editor_title'] = 'Inserir um fórmula matemática';

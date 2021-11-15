@@ -1055,39 +1055,34 @@ class completion_info {
         // Fetch completion data for all of the activities in the course ONLY if we're caching the fetched completion data.
         // If we're not caching the completion data, then just fetch the completion data for the user in this course module.
         if ($usecache && $wholecourse) {
-            // Get whole course data for cache
-            $alldatabycmc = $DB->get_records_sql("
-    SELECT
-        cmc.*
-    FROM
-        {course_modules} cm
-        INNER JOIN {course_modules_completion} cmc ON cmc.coursemoduleid=cm.id
-    WHERE
-        cm.course=? AND cmc.userid=?", array($this->course->id, $userid));
+            // Get whole course data for cache.
+            $alldatabycmc = $DB->get_records_sql("SELECT cm.id AS cmid, cmc.*
+                                                    FROM {course_modules} cm
+                                               LEFT JOIN {course_modules_completion} cmc ON cmc.coursemoduleid = cm.id
+                                                         AND cmc.userid = ?
+                                              INNER JOIN {modules} m ON m.id = cm.module
+                                                   WHERE m.visible = 1 AND cm.course = ?", [$userid, $this->course->id]);
 
-            // Reindex by cm id
-            $alldata = array();
+            $cminfos = get_fast_modinfo($cm->course, $userid)->get_cms();
+
+            // Reindex by course module id.
             foreach ($alldatabycmc as $data) {
-                $alldata[$data->coursemoduleid] = (array)$data;
-            }
 
-            // Get the module info and build up condition info for each one
-            if (empty($modinfo)) {
-                $modinfo = get_fast_modinfo($this->course, $userid);
-            }
-            foreach ($modinfo->cms as $othercm) {
-                if (isset($alldata[$othercm->id])) {
-                    $data = $alldata[$othercm->id];
-                } else {
-                    // Row not present counts as 'not complete'.
-                    $data = $defaultdata;
-                    $data['coursemoduleid'] = $othercm->id;
+                // Filter acitivites with no cm_info (missing plugins or other causes).
+                if (!isset($cminfos[$data->cmid])) {
+                    continue;
                 }
-                // Make sure we're working on a cm_info object.
-                $othercminfo = cm_info::create($othercm, $userid);
+
+                if (empty($data->coursemoduleid)) {
+                    $cacheddata[$data->cmid] = $defaultdata;
+                    $cacheddata[$data->cmid]['coursemoduleid'] = $data->cmid;
+                } else {
+                    $cacheddata[$data->cmid] = (array) $data;
+                }
+
                 // Add the other completion data for this user in this module instance.
-                $data += $this->get_other_cm_completion_data($othercminfo, $userid);
-                $cacheddata[$othercminfo->id] = $data;
+                $othercminfo = $cminfos[$data->cmid];
+                $cacheddata[$othercminfo->id] += $this->get_other_cm_completion_data($othercminfo, $userid);
             }
 
             if (!isset($cacheddata[$cminfo->id])) {

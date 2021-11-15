@@ -28,8 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['disregardedwithoutpenalty'] = 'La entrega no era válida, y se ha obviado sin penalización.';
 $string['gradingdetails'] = 'Puntos para este envío:
 {$a->raw}/{$a->max}.';
-$string['gradingdetailsadjustment'] = 'Con las penalizaciones previas da como resultado
-<strong>{$a->cur}/{$a->max}</strong>.';
+$string['gradingdetailsadjustment'] = 'Teniendo en cuenta los intentos anteriores, esto da <strong>{$a->cur}/{$a->max}</strong>.';
 $string['gradingdetailspenalty'] = 'Este envío supone una penalización de {$a}.';
 $string['gradingdetailspenaltytotal'] = 'Total de penalizaciones hasta ahora: {$a}.';
 $string['gradingdetailswithadjustment'] = 'Puntos para este envío: {$a->raw}/{$a->max}. Contando con los intentos anteriores, daría <strong>{$a->cur}/{$a->max}</strong>.';
@@ -39,3 +38,4 @@ $string['gradingdetailswithpenalty'] = 'Puntos para este envío: {$a->raw}/{$a->
 $string['gradingdetailswithtotalpenalty'] = 'Puntos para este envío: {$a->raw}/{$a->max}. A este envío se le aplicó una penalización de {$a->penalty}. Penalizaciones totales hasta el momento: {$a->totalpenalty}.';
 $string['notcomplete'] = 'Sin finalizar';
 $string['pluginname'] = 'Modo adaptativo';
+$string['privacy:metadata'] = 'El complemento de comportamiento de preguntas del modo adaptativo no almacena ningún dato personal.';

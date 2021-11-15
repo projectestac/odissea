@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addsections'] = 'Añadir semanas';
 $string['automaticenddate'] = 'Calcula la fecha de finalización del curso a partir del número de secciones';
+$string['automaticenddate_help'] = 'Se está habilitado, la fecha de fin del curso se calculará de forma automática a partir de número de secciones y de la fecha de inicio del curso.';
 $string['currentsection'] = 'Semana actual';
 $string['deletesection'] = 'Borrar semana';
 $string['editsection'] = 'Editar semana';
@@ -36,6 +37,7 @@ $string['newsectionname'] = 'Nuevo nombre para la semana {$a}';
 $string['page-course-view-weeks'] = 'Cualquier página principal de curso en formato semanal';
 $string['page-course-view-weeks-x'] = 'Cualquier página de curso en formato semanal';
 $string['pluginname'] = 'Formato semanal';
+$string['privacy:metadata'] = 'El complemento de formato semanal no almacena ningún dato personal.';
 $string['section0name'] = 'General';
 $string['sectionname'] = 'Semana';
 $string['showfromothers'] = 'Mostrar semana';

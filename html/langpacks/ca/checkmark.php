@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addsubmission'] = 'Afegeix la tramesa';
+$string['completiondetail:submit'] = 'Fer una tramesa';
 $string['description'] = 'Descripció';
 $string['duedate'] = 'Data de venciment';
 $string['duedateno'] = 'Sense data de venciment';

@@ -34,3 +34,4 @@ $string['passwdexpire_settings'] = 'Configuración de caducidad de contraseña';
 $string['passwdexpiretime'] = 'Duración de la contraseña';
 $string['passwdexpiretime_desc'] = 'Duración de tiempo para el que una contraseña es válida.';
 $string['pluginname'] = 'Cuentas manuales';
+$string['privacy:metadata:preference:passwordupdatetime'] = 'La fecha del último cambio de contraseña.';

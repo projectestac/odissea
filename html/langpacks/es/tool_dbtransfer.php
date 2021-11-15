@@ -37,6 +37,7 @@ $string['exportdata'] = 'Exportar datos';
 $string['notargetconectexception'] = 'Lo sentimos, no se puede conectar a la base de datos de destino.';
 $string['options'] = 'Opciones';
 $string['pluginname'] = 'Transferencia de la base de datos';
+$string['privacy:metadata'] = 'El complemento de transferencia de base de datos no almacena ningún dato personal.';
 $string['targetdatabase'] = 'Base de datos de destino';
 $string['targetdatabasenotempty'] = '¡La base de datos de destino no puede contener ninguna tabla con el prefijo dado!';
 $string['transferdata'] = 'Transferir datos';

@@ -144,9 +144,7 @@ $string['backpacksettings'] = 'Backpack-instellingen';
 $string['backpackweburl'] = 'Backpack-URL';
 $string['badgedetails'] = 'Badgedetails';
 $string['badgeimage'] = 'Afbeelding';
-$string['badgeimage_help'] = 'Deze afbeelding zal gebruikt worden wanneer deze badge uitgereikt wordt.
-
-Om een nieuwe afbeelding toe te voegen, blader en selecteer je een afbeelding (in jpg- of png-formaat) en klik op "Bewaar wijzigingen". De afbeelding zal bijgesneden worden tot een vierkant en herschaald worden tot de vereisten van een badge-afbeelding.';
+$string['badgeimage_help'] = 'De afbeelding moet minstens 300 x 300 pixels groot zijn. Ze zal getoond worden als 300 x 300 pixels op de badge-pagina en als 100 x 100 pixels op de profielpagina van de gebruiker.';
 $string['badgeprivacysetting'] = 'Badge privacy-instellingen';
 $string['badgeprivacysetting_help'] = 'De badges die je verdient hebt kunnen getoond worden op de profielpagina van je account. Met deze instelling kun je de zichtbaarheid van de nieuw verdiende badges instellen.
 

@@ -36,6 +36,7 @@ $string['compalgorithm'] = 'Αλγόριθμος σύγκρισης';
 $string['compareby'] = 'Αλγόριθμος σύγκρισης';
 $string['compareequiv'] = 'Ισοδυναμία';
 $string['compareeval'] = 'Εκτίμηση';
+$string['comparesage'] = 'SAGE';
 $string['correctansweris'] = 'Η σωστή απάντηση είναι: {$a} δίνει';
 $string['correctanswers'] = 'Σωστές απαντήσεις';
 $string['decimal'] = '.';

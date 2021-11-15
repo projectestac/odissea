@@ -642,7 +642,7 @@ $string['emailagain'] = 'Адрес электронной почты (еще р
 $string['emailalreadysent'] = 'Сообщение о восстановлении пароля уже было отправлено по электронной почте. Зайдите в свою почту.';
 $string['emailcharset'] = 'Почтовая кодировка';
 $string['emailconfirm'] = 'Подтвердить учетную запись';
-$string['emailconfirmation'] = 'Здравствуйте, {$a->firstname}.
+$string['emailconfirmation'] = 'Здравствуйте!
 
 На сайте «{$a->sitename}» был запрос на создание учетной записи с указанием Вашего адреса электронной почты.
 
@@ -650,9 +650,9 @@ $string['emailconfirmation'] = 'Здравствуйте, {$a->firstname}.
 
 {$a->link}
 
-В большинстве почтовых программ этот адрес должен выглядеть как синяя ссылка, на которую достаточно нажать. Если это не так, просто скопируйте этот адрес и вставьте его в строку адреса в верхней части окна Вашего браузера.
+В большинстве почтовых программ этот адрес должен выглядеть как синяя ссылка, на которую достаточно нажать. Если это не сработает, просто скопируйте адрес и вставьте его в адресную строку в верхней части окна вашего браузера.
 
-С уважением, администратор сайта,
+Если потребуется помощь, свяжитесь с администратором сайта
 {$a->admin}';
 $string['emailconfirmationresend'] = 'Послать письмо подтверждения снова';
 $string['emailconfirmationsubject'] = '{$a}: подтверждение учетной записи';
@@ -769,7 +769,7 @@ $string['encryptedcode'] = 'Зашифрованый код';
 $string['enddate'] = 'Дата окончания курса';
 $string['enddate_help'] = 'Дата окончания курса используется для определения того, должен ли курс включаться в список курсов пользователя. После прошедшей даты окончания курс больше не показывается в навигации и указан как прошлый в обзоре курсов. Дата окончания курса также используется и в пользовательских отчетах. Пользователи по-прежнему могут зайти в курс после даты его окончания; другими словами, дата не ограничивает доступ.';
 $string['english'] = 'Английский';
-$string['enrolmentmethods'] = 'Способы записи';
+$string['enrolmentmethods'] = 'Способы зачисления';
 $string['entercourse'] = 'Нажмите для входа в курс';
 $string['enteremail'] = 'Введите Ваш адрес электронной почты';
 $string['enteremailaddress'] = 'Для сброса пароля введите Ваш адрес электронной почты. Новый пароль будет выслан на указанный адрес.';
@@ -911,7 +911,7 @@ $string['formatplain'] = 'Текстовый формат';
 $string['formattext'] = 'Выбирать формат автоматически ';
 $string['forumpreferences'] = 'Настройки форума';
 $string['framesetinfo'] = 'Этот  документ содержит:';
-$string['from'] = 'с';
+$string['from'] = 'От';
 $string['frontpagecategorycombo'] = 'Комбинированный список';
 $string['frontpagecategorynames'] = 'Список категорий';
 $string['frontpagecourselist'] = 'Список курсов';
@@ -1301,7 +1301,7 @@ $string['modvisiblewithstealth_help'] = 'Если для параметра «Д
 $string['month'] = 'Месяц';
 $string['months'] = 'Месяцы';
 $string['moodledocs'] = 'Документация Moodle';
-$string['moodledocslink'] = 'Документация Moodle для этой страницы';
+$string['moodledocslink'] = 'Помощь и документация';
 $string['moodlelogo'] = 'Логотип Moodle';
 $string['moodlerelease'] = 'Релиз Moodle';
 $string['moodleversion'] = 'Версия Moodle';
@@ -1503,6 +1503,7 @@ $string['numyears'] = '{$a} г.';
 $string['ok'] = 'OK';
 $string['oldpassword'] = 'Текущий пароль';
 $string['olduserdirectory'] = 'Это - СТАРЫЙ каталог пользователей, он больше не нужен. Вы можете удалить его. Файлы, которые он содержит, были скопированы в НОВЫЙ каталог пользователей.';
+$string['opensinnewwindow'] = 'Открывается в новом окне';
 $string['optional'] = 'необязательно';
 $string['options'] = 'опции';
 $string['order'] = 'Порядок';
@@ -1645,7 +1646,7 @@ $string['privacy:metadata:upgrade_log:type'] = 'Тип записи журнал
 $string['privacy:metadata:upgrade_log:userid'] = 'Пользователь, запустивший обновление.';
 $string['privacy:metadata:upgrade_log:version'] = 'Старая версия плагина.';
 $string['private_files_handler'] = 'Сохраняет файлы, прикрепленные к сообщениям электронной почты, в область личных файлов пользователя.';
-$string['private_files_handler_name'] = 'Отправка файлов по электронной почте в область личных файлов';
+$string['private_files_handler_name'] = 'Отправка файлов из электронной почты в область личных файлов';
 $string['privatefiles'] = 'Личные файлы';
 $string['privatefilesmanage'] = 'Управление личными файлами';
 $string['proceed'] = 'Перейти';
@@ -2070,7 +2071,7 @@ $string['timesplitting:past3days'] = 'Последние 3 дня';
 $string['timesplitting:past3days_help'] = 'Этот интервал анализа генерирует прогнозы каждые 3 дня. Расчет показателей будет производиться за последние 3 дня.';
 $string['timesplitting:pastmonth'] = 'Последний месяц';
 $string['timesplitting:pastmonth_help'] = 'Этот интервал анализа генерирует прогнозы каждый месяц. Расчет показателей будет производиться за прошедший месяц.';
-$string['timesplitting:pastweek'] = 'Наследняя неделя';
+$string['timesplitting:pastweek'] = 'Прошлая неделя';
 $string['timesplitting:pastweek_help'] = 'Этот интервал анализа генерирует прогнозы каждую неделю. Расчет показателей будет производиться за прошедшую неделю.';
 $string['timesplitting:quarters'] = 'Последний квартал';
 $string['timesplitting:quarters_help'] = 'Этот метод разделения времени делит курс на четверти (4 равные части), причем каждый прогноз основывается на данных только последней прошедшей четверти.';
@@ -2121,7 +2122,7 @@ $string['unfinished'] = 'Не завершено';
 $string['unknowncategory'] = 'Неизвестная категория';
 $string['unknownerror'] = 'Неизвестная ошибка';
 $string['unknownuser'] = 'Неизвестный пользователь';
-$string['unlimited'] = 'Неограничено';
+$string['unlimited'] = 'Не ограничено';
 $string['unpacking'] = 'Распаковка {$a}';
 $string['unsafepassword'] = 'Небезопасный пароль - попробуйте какой-нибудь другой';
 $string['untilcomplete'] = 'До завершения';
@@ -2157,7 +2158,7 @@ $string['uploadnotallowed'] = 'Загрузки не разрешены';
 $string['uploadnotempdir'] = 'Отсутствует временная папка';
 $string['uploadoldfilesdeleted'] = 'Старый(е) файл(ы) в Вашей области загрузки был(и) удален(ы)';
 $string['uploadpartialfile'] = 'Файл был загружен лишь частично';
-$string['uploadproblem'] = 'Неизвестная проблема возникла при загрузке файла «{$a}» (возможно он был слишком большой?)';
+$string['uploadproblem'] = 'Неизвестная проблема возникла при загрузке файла \'{$a}\' (возможно он был слишком большой?)';
 $string['uploadrenamedchars'] = 'Файл был переименован из «{$a->oldname}» в «{$a->newname}», так как старое название содержало недопустимые символы.';
 $string['uploadrenamedcollision'] = 'Файл был переименован из {$a->oldname} в {$a->newname} из-за конфликта имен.';
 $string['uploadserverlimit'] = 'Загружаемый файл превысил ограничение на максимальный размер, установленный на сервере';
@@ -2223,11 +2224,11 @@ $string['weeklyoutline'] = 'Календарный план';
 $string['weeks'] = 'нед.';
 $string['weekshow'] = 'Показать эту неделю {$a}';
 $string['welcometocourse'] = 'Добро пожаловать в {$a}';
-$string['welcometocoursetext'] = 'Добро пожаловать на курс «{$a->coursename}»!
+$string['welcometocoursetext'] = 'Добро пожаловать в курс «{$a->coursename}»!
 
-Если Вы еще не сделали этого, отредактируйте страницу своего профиля, чтобы мы могли узнать о Вас побольше:
+Если Вы еще не сделали этого, то отредактируйте свой профиль так, чтобы мы узнали больше о Вас:
 
-{$a->profileurl}';
+  {$a->profileurl}';
 $string['whatforlink'] = 'Что Вы хотите сделать с ссылкой?';
 $string['whatforpage'] = 'Что Вы хотите сделать с текстом?';
 $string['whatisyourage'] = 'Сколько вам лет?';

@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptedfiletypes'] = 'Tipos de ficheiro permitidos';
 $string['acceptedfiletypes_help'] = 'Os tipos de ficheiro permitidos podem ser restringidos se indicar uma lista de extensões de ficheiros. Se deixar o campo vazio, todos os tipos de ficheiro serão permitidos.';
 $string['allowattachments'] = 'Permitir anexos';
+$string['answerfiles'] = 'Ficheiros da resposta';
+$string['answertext'] = 'Texto da resposta';
 $string['attachedfiles'] = 'Anexos: {$a}';
 $string['attachmentsoptional'] = 'Anexos são opcionais';
 $string['attachmentsrequired'] = 'Exigir anexos';

@@ -34,6 +34,7 @@ $string['adminsettings'] = 'إعدادات المشرف/المدير';
 $string['author'] = 'مؤلف';
 $string['created'] = 'تم إنشاؤها';
 $string['deleteexecute'] = 'تنفيذ';
+$string['errorupgradetablenamesdebug'] = 'أسماء الجدول تتجاوز العدد المسموح به من الحروف، يمكن حل ذلك عبر استعمال الإصدارات الأخيرة من مودل 2.0، مودل 2.1 و مودل 2.2';
 $string['eventpresetdeleted'] = 'تحضير مسبق تم حذفه';
 $string['eventpresetdownloaded'] = 'تحضير مسبق تم تنزيله';
 $string['eventpresetexported'] = 'تحضير مسبق تم تصديره';

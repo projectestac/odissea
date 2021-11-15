@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['attempt'] = 'محاولة';
 $string['attemptfirst'] = 'المحاولة الأولى';
 $string['attempts'] = 'محاولات';
+$string['bookquiz_cant_update_lastchaperid'] = 'تعذر تحديث الجدول game_bookquiz بقيمة lastchapterid إلى %d';
 $string['bookquiz_chapters'] = 'الفصول';
 $string['bookquiz_empty'] = 'الكتاب فارغ';
 $string['bookquiz_layout'] = 'التخطيط';
@@ -74,6 +75,7 @@ $string['must_select_questioncategory'] = 'ينبغي عليك اختيار صن
 $string['must_select_quiz'] = 'ينبغي عليك اختيار الاختبار';
 $string['name'] = 'الاسم:';
 $string['no_questions'] = 'لا توجد أسئلة';
+$string['only_teachers'] = 'فقط المعلمون يمكنهم مشاهدة هذه الصفحة';
 $string['pagesize'] = 'عدد الأسئلة لكل صفحة:';
 $string['privacy:metadata:game_attempts:bookquiz_lastchapter'] = 'الفصل الأخير من الكتاب';
 $string['privacy:metadata:game_attempts:cross_createfilleds'] = 'عدد ما يُملأ من حقول الكلمات المتقاطعة';

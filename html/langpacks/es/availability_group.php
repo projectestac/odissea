@@ -30,6 +30,7 @@ $string['description'] = 'Permitir sólo a estudiante que pertenezcan a un deter
 $string['error_selectgroup'] = 'Debe seleccionar un grupo.';
 $string['missing'] = '(grupo que falta)';
 $string['pluginname'] = 'Restricción por el grupo';
+$string['privacy:metadata'] = 'El complemento de restricción por grupo no almacena ningún dato personal.';
 $string['requires_anygroup'] = 'se pertenezca a cualquier grupo';
 $string['requires_group'] = 'se pertenezca al grupo <strong>{$a}</strong>';
 $string['requires_notanygroup'] = 'Usted pertenece a ningún grupo';

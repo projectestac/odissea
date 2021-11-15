@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadas'] = '下载表格数据以';
+$string['missingrequiredfields'] = '缺少一个或多个必需的过滤器 ({$a})';
+$string['privacy:metadata'] = 'Table API 当前不存储任何用户数据';

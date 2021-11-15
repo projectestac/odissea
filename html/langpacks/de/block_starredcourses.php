@@ -30,4 +30,4 @@ $string['displaycategories_help'] = 'Zeigt die Kurskategorie bei den markierten 
 $string['nocourses'] = 'Keine favorisierten Kurse';
 $string['pluginname'] = 'Favorisierte Kurse';
 $string['privacy:metadata'] = 'Der Block \'Favorisierte Kurse\' speichert keine personenbezogenen Daten.';
-$string['starredcourses:myaddinstance'] = 'Neuen Block \'Favorisierte Kurse\' zum Dashboard hinzufügen';
+$string['starredcourses:myaddinstance'] = 'Neuen Block \'Favorisierte Kurse\' im Dashboard hinzufügen';

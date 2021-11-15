@@ -56,7 +56,7 @@ $string['availabletodatevalidation'] = 'La fecha de disponibilidad de fin no pue
 $string['blank'] = 'En blanco';
 $string['buttons'] = 'Acciones';
 $string['bynameondate'] = 'por {$a->name} - {$a->date}';
-$string['calendarend'] = 'Base de datos {$a} cerrada';
+$string['calendarend'] = '{$a} cierra';
 $string['calendarstart'] = '{$a} abre';
 $string['cancel'] = 'Cancelar';
 $string['cannotaccesspresentsother'] = 'No se le permite acceder a los ajustes previos de otros usuarios';
@@ -65,17 +65,19 @@ $string['cannotdeletepreset'] = 'Error al eliminar un ajuste previo';
 $string['cannotoverwritepreset'] = 'Error sobrescribiendo cvalor preestablecido';
 $string['cannotunziptopreset'] = 'No se ha podido descomprimir al directorio de ajustes previos';
 $string['checkbox'] = 'Caja de selección';
-$string['chooseexportfields'] = 'Seleccione los campos que desea exportar:';
-$string['chooseexportformat'] = 'Seleccione el formato al que desea exportar:';
+$string['chooseexportfields'] = 'Seleccione los campos que desea exportar';
+$string['chooseexportformat'] = 'Seleccione el formato al que desea exportar';
 $string['chooseorupload'] = 'Elegir archivo';
+$string['closebeforeopen'] = 'Ha seleccionado una fecha de fin anterior a la fecha de inicio.';
 $string['columns'] = 'columnas';
 $string['comment'] = 'Comentario';
 $string['commentdeleted'] = 'Comentario eliminado';
 $string['commentempty'] = 'El comentario estaba vacío';
 $string['comments'] = 'Comentarios';
 $string['commentsaved'] = 'Comentario guardado';
-$string['commentsn'] = '{$a} comentarios';
+$string['commentsn'] = '{$a} comentario(s)';
 $string['commentsoff'] = 'La opción comentarios no está habilitada';
+$string['completiondetail:entries'] = 'Realizar entradas: {$a}';
 $string['completionentries'] = 'Entradas requeridas';
 $string['completionentriescount'] = 'Número de entradas';
 $string['completionentriesdesc'] = 'Número mínimo de entradas requeridas: {$a}';
@@ -107,7 +109,7 @@ $string['csvimport_help'] = '<p align="center"><strong>Importar de un archivo CS
 </pre>
 
 <p>ADVERTENCIA: es posible que no se admitan todos los tipos de campo.</p>';
-$string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">texto</acronym> CSV con el delimitador seleccionado:';
+$string['csvwithselecteddelimiter'] = '<abbr title="Comma Separated Values">CSV</abbr>';
 $string['data:addinstance'] = 'Añadir una nueva base de datos';
 $string['data:approve'] = 'Aprobar y deshacer entradas aceptadas';
 $string['data:comment'] = 'Escribir comentarios';
@@ -152,6 +154,7 @@ $string['editordisable'] = 'Desactivar editor';
 $string['editorenable'] = 'Activar editor';
 $string['emptyadd'] = 'La plantilla Añadir está vacía, generando un formulario por defecto...';
 $string['emptyaddform'] = '¡No ha rellenado ningún campo!';
+$string['enabletemplateeditorcheck'] = '¿Está seguro de que quiere habilitar el editor? Esto puede provocar que el contenido sea alterado cuando se guarde la plantilla.';
 $string['entries'] = 'Entradas';
 $string['entrieslefttoadd'] = 'Debe añadir {$a->entriesleft} entrada(s) más antes de poder ver las entradas de otro participante.';
 $string['entrieslefttoaddtoview'] = 'Debe añadir {$a->entrieslefttoview} entrada(s) antes de poder ver las entradas de otros participantes.';
@@ -176,6 +179,8 @@ $string['exportaszip'] = 'Exportar como \'zip\'';
 $string['exportaszip_help'] = 'Exportar como archivo Zip permite descargar las plantillas a su ordenador. Podrá subirlas más tarde a otra base de datos usando la opción Importar de archivo Zip.';
 $string['exportedtozip'] = 'Exportado a un \'zip\' temporal...';
 $string['exportentries'] = 'Exportar entradas';
+$string['exportformat'] = 'Formato para exportar';
+$string['exportoptions'] = 'Opciones para exportar';
 $string['exportownentries'] = 'Desea exporta solo sus propias entradas? ({$a->mine} / {$a->all})';
 $string['failedpresetdelete'] = '¡Error al eliminar un ajuste previo!';
 $string['fieldadded'] = 'Campo añadido';
@@ -201,6 +206,7 @@ contendrá distintos campos. Del mismo modo, debe ser cuidadoso en no tratar y
 mapear un campo viejo a más de un campo nuevo.
 </p>';
 $string['fieldname'] = 'Nombre de campo';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = 'Los campos siguientes de su archivo no figuran en esta base de datos: {$a}';
 $string['fieldoptions'] = 'Opciones (una por línea)';
 $string['fields'] = 'Campos';
@@ -211,7 +217,7 @@ $string['fieldwidthsingleview'] = 'Anchura en vista individual';
 $string['file'] = 'Archivo';
 $string['fileencoding'] = 'Codificación';
 $string['filesnotgenerated'] = 'No se han generado todos los archivos: {$a}';
-$string['filtername'] = 'Auto-enlace de base de datos';
+$string['filtername'] = 'Autoenlace de base de datos';
 $string['footer'] = 'Pie';
 $string['forcelinkname'] = 'Nombre forzado para el enlace';
 $string['foundnorecords'] = 'No se han encontrado registros (<a href="{$a->reseturl}">Reset filters</a>)';
@@ -220,10 +226,10 @@ $string['fromfile'] = 'Importar desde archivo \'zip\'';
 $string['fromfile_help'] = 'Importar un archivo zip permite buscar y subir una preselección de plantillas y campos.';
 $string['generateerror'] = 'No se han generado todos los archivos';
 $string['header'] = 'Cabecera';
-$string['headeraddtemplate'] = 'Define la interfaz cuando se editan entradas';
+$string['headeraddtemplate'] = 'Define la interfaz para añadir o editar entradas';
 $string['headerasearchtemplate'] = 'Define la interfaz para búsquedas avanzadas';
 $string['headercsstemplate'] = 'Define los estilos CSS locales para las demás plantillas';
-$string['headerjstemplate'] = 'Define Javascript personalizado para las demás plantillas';
+$string['headerjstemplate'] = 'Define Javascript personalizado para manipular la forma en que se muestran los elementos en las plantillas Lista, Única o Añadir';
 $string['headerlisttemplate'] = 'Define la interfaz de navegación para entradas múltiples';
 $string['headerrsstemplate'] = 'Define la apariencia de las entradas en canales RSS';
 $string['headersingletemplate'] = 'Define la interfaz de navegación para una entrada individual';
@@ -235,8 +241,12 @@ $string['includetime'] = 'Incluya fecha añadido / modificado';
 $string['includeuserdetails'] = 'Incluya detalles del usuario';
 $string['indicator:cognitivedepth'] = 'Base de Datos cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Base de Datos.';
+$string['indicator:cognitivedepthdef'] = 'Base de datos cognitiva';
+$string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades de Base de datos durante este intervalo de análisis (Niveles = Sin visualización, Visualización, Envío)';
 $string['indicator:socialbreadth'] = 'Base de Datos social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Base de Datos.';
+$string['indicator:socialbreadthdef'] = 'Base de datos social';
+$string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por las actividades de Base de datos durante este intervalo de análisis (Niveles = Sin participación, Participante solo)';
 $string['insufficiententries'] = 'se necesitan más entradas para ver esta base de datos';
 $string['intro'] = 'Descripción';
 $string['invalidaccess'] = 'No se ha accedido correctamente a esta página';
@@ -271,7 +281,7 @@ $string['menuchoose'] = 'Seleccionar...';
 $string['missingdata'] = 'Debe suministrarse la ID de los datos o del objeto a la clase de campo';
 $string['missingfield'] = 'Error del programador: Debe especificar el campo y/o los datos al definir la clase de campo.';
 $string['modulename'] = 'Base de datos';
-$string['modulename_help'] = 'El módulo de actividad de base de datos permite a los participantes crear, mantener y buscar información en un repositorio de registros. La estructura de las entradas la define el profesor según una lista de campos. Los tipos de campo incluyen casilla de verificación, botones de radio, menú desplegable, área de texto, URL, imagen y archivo cargado.
+$string['modulename_help'] = 'El módulo de actividad de base de datos permite a los participantes crear, mantener y buscar información en un repositorio de registros. La estructura de las entradas la define el profesor según una lista de campos. Los tipos de campo incluyen casilla de verificación, botones de opción, menú desplegable, área de texto, URL, imagen y archivo cargado.
 
 La presentación visual de la información al listar, ver o editar las entradas de la base de datos se controla mediante plantillas de base de datos. Las actividades de base de datos pueden ser compartidos entre los cursos como opción preestablecida de manera que un profesor también puede importar y exportar las entradas de base de datos.
 
@@ -313,7 +323,8 @@ $string['number'] = 'Número';
 $string['numberrssarticles'] = 'Entradas en el feed RSS';
 $string['numnotapproved'] = 'Pendiente';
 $string['numrecords'] = '{$a} entradas';
-$string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<abbr title="OpenDocument Spreadsheet">ODS</abbr>&nbsp;(OpenOffice)';
+$string['openafterclose'] = 'Ha especificado una fecha de apertura posterior a la fecha de cierre';
 $string['optionaldescription'] = 'Descripción corta (opcional)';
 $string['optionalfilename'] = 'Nombre de archivo (opcional)';
 $string['other'] = 'Otro';
@@ -330,22 +341,42 @@ $string['pluginname'] = 'Base de datos';
 $string['portfolionotfile'] = 'Exportar a un portafolio en lugar de a un archivo (sólo csv y leap2a)';
 $string['presetinfo'] = 'Al guardar un ajuste previo se publicará esta plantilla. Otros usuarios podrán usarla en sus bases de datos.';
 $string['presets'] = 'Ajustes previos';
-$string['radiobutton'] = 'Botones de radio';
+$string['privacy:metadata:commentpurpose'] = 'Comentarios en los registros de base de datos';
+$string['privacy:metadata:data_content'] = 'Representa una respuesta a un campo en el módulo de actividad de base de datos';
+$string['privacy:metadata:data_content:content'] = 'Contenido';
+$string['privacy:metadata:data_content:content1'] = 'Contenido adicional 1';
+$string['privacy:metadata:data_content:content2'] = 'Contenido adicional 2';
+$string['privacy:metadata:data_content:content3'] = 'Contenido adicional 3';
+$string['privacy:metadata:data_content:content4'] = 'Contenido adicional 4';
+$string['privacy:metadata:data_content:fieldid'] = 'ID de definición de campo';
+$string['privacy:metadata:data_records'] = 'Representa registros en el módulo de actividad de base de datos';
+$string['privacy:metadata:data_records:approved'] = 'Estado de aprobación';
+$string['privacy:metadata:data_records:groupid'] = 'Grupo';
+$string['privacy:metadata:data_records:timecreated'] = 'Momento en el que el registro fue creado';
+$string['privacy:metadata:data_records:timemodified'] = 'Momento en el que el registro fue modificado por última vez';
+$string['privacy:metadata:data_records:userid'] = 'Usuario que creó el registro';
+$string['privacy:metadata:datafieldnpluginsummary'] = 'Campos para el módulo de actividad de base de datos';
+$string['privacy:metadata:filepurpose'] = 'Fichero adjunto al registro de base de datos';
+$string['privacy:metadata:ratingpurpose'] = 'Calificaciones en registros de base de datos';
+$string['privacy:metadata:tagpurpose'] = 'Etiquetas en registros de base de datos';
+$string['radiobutton'] = 'Botones de opción';
 $string['recordapproved'] = 'Entrada aprobada';
 $string['recorddeleted'] = 'Entrada eliminada';
 $string['recorddisapproved'] = 'Entrada desaprobada';
 $string['recordsnotsaved'] = 'No se ha guardado ninguna entrada. Por favor, compruebe el formato del archivo subido.';
 $string['recordssaved'] = 'entradas guardadas';
+$string['removealldatatags'] = 'Eliminar todas las etiquetas de base de datos';
 $string['requireapproval'] = 'Aprobación requerida';
 $string['requireapproval_help'] = '<p>¿Debería un profesor aprobar las entradas antes de que los estudiantes puedan verlas? Esta opción es útil para moderar el contenido que potencialmente pudiera resultar ofensivo o inadecuado.</p>';
 $string['required'] = 'Obligatorio';
-$string['requiredentries'] = 'Entradas requeridas';
-$string['requiredentries_help'] = '<p>Número de entradas que se exige enviar a cada participante.
-   Los usuarios verán un mensaje recordatorio que les informa si no han enviado el número de entradas exigido.</p>
+$string['requiredentries'] = 'Entradas requeridas para completar (antiguo)';
+$string['requiredentries_help'] = 'Si se establece, se mostrará un mensaje indicando el número de entradas requeridas para completar. Tenga en cuenta que este ajuste no está relacionado con la finalización de la actividad.
 
-<p>La actividad no se considerará completada hasta que el usuario no haya enviado el número de entradas exigido.</p>';
+Para las entradas requeridas para la finalización de la actividad debe usar la opción \'Requerir entradas\' dentro de la sección Finalización de actividad. Para eliminar esta opción por completo déjela vacía y después guarde los cambios.
+Por favor utilice en su lugar el campo Entradas requeridas en la sección de Finalización de actividad.';
 $string['requiredentriestoview'] = 'Entradas requeridas antes de verse';
 $string['requiredentriestoview_help'] = '<p>Número de entradas que un participante debe enviar antes de que se le permita ver entradas del resto de participantes.</p>';
+$string['requiredentrieswarning'] = 'Esta opción ha sido reemplaza por el campo "Requerir entradas" de la sección Finalización de actividad';
 $string['requiredfield'] = 'Campo obligatorio';
 $string['resetsettings'] = 'Restablecer filtros';
 $string['resettemplate'] = 'Resetear plantilla';
@@ -365,7 +396,10 @@ $string['savesuccess'] = 'Guardado con éxito. Su ajuste previo estará ahora di
 $string['savetemplate'] = 'Guardar plantilla';
 $string['search'] = 'Buscar';
 $string['search:activity'] = 'Base de datos - información de actividad';
+$string['search:entry'] = 'Base de datos - entradas';
 $string['selectedrequired'] = 'Se requieren todos los seleccionados';
+$string['selectexportoptions'] = 'Seleccionar opciones de exportación';
+$string['selectfields'] = 'Seleccionar campos';
 $string['showall'] = 'Mostrar todas las entradas';
 $string['single'] = 'Ver individual';
 $string['singletemplate'] = 'Plantilla Individual';
@@ -377,6 +411,7 @@ Tipos de campo de la base de datos';
 $string['subplugintype_datapreset_plural'] = 'Ajustes previos';
 $string['tagarea_data_records'] = 'Entradas de la base de datos';
 $string['tags'] = 'Marcas';
+$string['tagsdeleted'] = 'Las etiquetas de la base de datos se han borrado';
 $string['teachersandstudents'] = '{$a->teachers} y {$a->students}';
 $string['templates'] = 'Plantillas';
 $string['templatesaved'] = 'Plantilla guardada';
@@ -388,6 +423,8 @@ $string['todatabase'] = 'a esta base de datos.';
 $string['type'] = 'Tipo de campo';
 $string['undefinedprocessactionmethod'] = 'No se ha definido método de acción en Data_Preset para manejar la acción "{$a}".';
 $string['unsupportedexport'] = '({$a->fieldtype}) no se puede exportar.';
+$string['unsupportedfields'] = 'Campos no soportados';
+$string['unsupportedfieldslist'] = 'Los siguientes campos no se pueden exportar:';
 $string['updatefield'] = 'Actualizar un campo existente';
 $string['uploadfile'] = 'Subir archivo';
 $string['uploadrecords'] = 'Subir entradas de un archivo';
@@ -397,10 +434,11 @@ $string['uploadrecords_help'] = 'Las entradas pueden ser cargadas a través de u
 * El primer registro contiene una lista de nombres de campos que definen el formato del resto del fichero
 
 El campo enmarcado es una caracter que separa cada campo dentro de  cada registro. Normalmente se puede dejar sin definir.';
-$string['url'] = 'Url';
+$string['url'] = 'URL';
 $string['usedate'] = 'Incluir en la búsqueda';
 $string['usestandard'] = 'Use un ajuste previo';
 $string['usestandard_help'] = 'Para utilizar un ajuste previo disponible en todo el sitio, selecciónelo de la lista. (Si ha agregado un ajuste previo de la lista mediante la función guardar como predeterminado entonces usted tiene la opción de eliminarlo.)';
 $string['viewfromdate'] = 'Solo lectura desde';
 $string['viewtodate'] = 'Solo lectura hasta';
+$string['viewtodatevalidation'] = 'La fecha de solo lectura marcada como fin del intervalo no puede ser anterior a la fecha de solo lectura marcada como inicio del intervalo.';
 $string['wrongdataid'] = 'Datos de id erróneos';

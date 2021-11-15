@@ -190,6 +190,7 @@ A súas respostas, pensadas coidadosamente, axudarannos a mellorar a maneira de 
 
 Moitas grazas.';
 $string['collespname'] = 'COLLES (Preferida)';
+$string['completiondetail:submit'] = 'Enviar respostas';
 $string['completionsubmit'] = 'O alumno debe entregar esta actividade para completala';
 $string['customintro'] = 'Descrición';
 $string['deleteallanswers'] = 'Eliminar todas as respostas da enquisa';

@@ -40,15 +40,15 @@ $string['fixedenabled_help'] = 'Não é possível alterar o estado deste handler
 $string['fixedvalidateaddress'] = 'Validar endereço de remetente';
 $string['fixedvalidateaddress_help'] = 'Não é possível alterar o endereço de validação deste handler. Isto pode dever-se ao facto do handler requerer uma configuração específica.';
 $string['handlerdisabled'] = 'O handler de e-mail que tentou contactar foi desativado. Não é possível processar a mensagem neste momento.';
-$string['incomingmailconfiguration'] = 'Configuração de entrada de e-mails';
-$string['incomingmailserversettings'] = 'Configurações do servidor de entrada de e-mails';
+$string['incomingmailconfiguration'] = 'Configuração da receção de e-mails';
+$string['incomingmailserversettings'] = 'Configurações do servidor de receção de e-mails';
 $string['incomingmailserversettings_desc'] = 'O Moodle é capaz de ligar a servidores IMAP devidamente configurados. Pode especificar aqui as definições usadas para ligar ao seu servidor IMAP.';
-$string['invalid_recipient_handler'] = 'Se uma mensagem válida é recebida mas o remetente não pode ser autenticado, a mensagem é armazenada no servidor de e-mail e o utilizador é contactado usando o endereço de e-mail que consta no seu perfil do utilizador. O utilizador terá assim oportunidade de responder para confirmar a autenticidade da mensagem original.
+$string['invalid_recipient_handler'] = 'Se uma mensagem válida é recebida mas o remetente não pode ser autenticado, a mensagem é armazenada no servidor de e-mail e o utilizador é contactado usando o endereço de e-mail que consta no seu perfil do utilizador. O utilizador terá oportunidade de responder para confirmar a autenticidade da mensagem original.
 
 Este handler processa essas respostas.
 
 Não é possível desativar a verificação do remetente deste handler porque o utilizador pode responder a partir de um endereço de e-mail incorreto se a configuração do seu cliente de e-mail estiver incorreta.';
-$string['invalid_recipient_handler_name'] = 'Remetente de handler inválido';
+$string['invalid_recipient_handler_name'] = 'Handler de remetente inválido';
 $string['invalidrecipientdescription'] = 'A mensagem "{$a->subject}" não pôde ser autenticada, pois foi enviada a partir de um endereço de e-mail diferente do que consta no seu perfil do utilizador.';
 $string['invalidrecipientdescriptionhtml'] = 'A mensagem "{$a->subject}" não pôde ser autenticada, pois foi enviada a partir de um endereço de e-mail diferente do que consta do seu perfil do utilizador. Para que a mensagem seja autenticada, deverá responder a esta mensagem.';
 $string['invalidrecipientfinal'] = 'A mensagem "{$a->subject}" não pôde ser autenticada. Verifique se está a enviar a mensagem a partir do mesmo endereço de e-mail que consta no seu perfil do utilizador.';
@@ -56,13 +56,13 @@ $string['mailbox'] = 'Nome da caixa de correio';
 $string['mailboxconfiguration'] = 'Configuração da caixa de correio';
 $string['mailboxdescription'] = '[mailbox]+subaddress@[domain]';
 $string['mailsettings'] = 'Configurações do e-mail';
-$string['message_handlers'] = 'Handlers de Mensagem';
+$string['message_handlers'] = 'Handlers de mensagem';
 $string['messageinbound'] = 'Mensagem Inbound';
-$string['messageinboundenabled'] = 'Ativar o processo de entrada de e-mail';
-$string['messageinboundenabled_desc'] = 'O processo de entrada de e-mail tem de ser ativado por forma a que as mensagens sejam enviadas com a informação adequada.';
+$string['messageinboundenabled'] = 'Ativar o processo de receção de e-mail';
+$string['messageinboundenabled_desc'] = 'O processo de receção de e-mail tem de ser ativado por forma a que as mensagens sejam enviadas com a informação adequada.';
 $string['messageinboundgeneralconfiguration'] = 'Configuração geral';
 $string['messageinboundgeneralconfiguration_desc'] = 'O processamento de entrada de mensagens permite-lhe receber e processar e-mails dentro do Moodle. Isto pode ser aplicado em vários casos, nomeadamente para enviar respostas a tópicos de fórum por e-mail ou adicionar ficheiros aos ficheiros privados do utilizador.';
-$string['messageinboundhost'] = 'Servidor de entrada de e-mail';
+$string['messageinboundhost'] = 'Servidor de receção de e-mail';
 $string['messageinboundhostpass'] = 'Senha';
 $string['messageinboundhostpass_desc'] = 'Senha que o seu fornecedor de serviços terá fornecido para se autenticar na sua conta de e-mail.';
 $string['messageinboundhostssl'] = 'Usar SSL';
@@ -85,7 +85,7 @@ $string['messageprocessingsuccess'] = '{$a->plain}
 
 Se não pretende receber mais notificações, pode editar as suas preferências pessoais de mensagem ao aceder a {$a->messagepreferencesurl} no seu navegador.';
 $string['messageprocessingsuccesshtml'] = '{$a->html}
-<p>If you do not wish to receive these notifications in the future, you can <a href="{$a->messagepreferencesurl}">edit your personal messaging preferences</a>.</p>';
+<p>Se não pretende receber estas notificações, pode <a href="{$a->messagepreferencesurl}">editar as suas preferências de mensagens</a>.</p>';
 $string['messageprovider:invalidrecipienthandler'] = 'Mensagem para confirmar que uma mensagem de entrada veio de si';
 $string['messageprovider:messageprocessingerror'] = 'Aviso quando uma mensagem de entrada não pôde ser processada';
 $string['messageprovider:messageprocessingsuccess'] = 'Confirmação de que a mensagem foi processada com sucesso';

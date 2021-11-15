@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = 'Preto';
+$string['color_blue'] = 'Azul';
+$string['color_green'] = 'Verde';
+$string['color_red'] = 'Vermelho';
+$string['color_white'] = 'Branco';
+$string['color_yellow'] = 'Amarelo';
 $string['pluginname'] = 'Cor da fonte';
 $string['privacy:metadata'] = 'O módulo atto_fontcolor não armazena quaisquer dados pessoais.';

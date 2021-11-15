@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Autoligação à base de dados';
-$string['privacy:metadata'] = 'O módulo Hiperligação para a base de dados não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Hiperligação para a base de dados não armazena quaisquer dados pessoais.';

@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activeparticipantnumberaverage'] = 'Media numérica de participantes activos recentemente ({$a})';
+$string['activeusersnumber'] = 'Número de usuarios activos recentemente ({$a})';
 $string['addscreenshots'] = 'Engadir capturas de pantalla';
 $string['advertise'] = 'Anunciar este curso nun centro';
 $string['advertised'] = 'Anunciado';

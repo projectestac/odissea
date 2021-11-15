@@ -26,8 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cannotopentempfile'] = 'Impossible d\'ouvrir le fichier temporaire <b>{$a}</b>';
+$string['embeddedimageswarning'] = 'Attention : ce fichier doit être ouvert à l\'aide de Word 2020 ou Word 365 afin de gérer correctement les images intégrées.';
+$string['encodedimageswarning'] = 'Attention : ce fichier contient des images encodées. Voir <a href="http://www.moodle2word.net/mod/page/view.php?id=143"> plus d\'informations sur la façon de les reconvertir en images intégrées</a>.';
 $string['exportbook'] = 'Exporter le livre vers Microsoft Word';
 $string['exportchapter'] = 'Exporter ce chapitre vers Microsoft Word';
+$string['exportformat'] = 'Format d\'exportation.';
+$string['exportformat_desc'] = 'Format d\'exportation.';
+$string['exportformat_embedded'] = 'Word 2010';
+$string['exportformat_encoded'] = 'Word 2020';
+$string['exportformat_help'] = 'Choisissez le format compatible Word 2020/365 si vous avez accès à Word 2019, Word 2020 ou Word 365. Sinon, choisissez Word 2010, qui nécessite un modèle Word externe afin de pouvoir convertir les images dans un format utilisable. Voir <a href="http://www.moodle2word.net/mod/page/view.php?id=143"> plus d\'informations sur la façon de les reconvertir en images intégrées</a>.';
 $string['heading1stylelevel'] = 'Niveau de titre pour le style « Titre 1 »';
 $string['heading1stylelevel_desc'] = 'Niveau d\'élément d\'en-tête HTML avec lequel le style « Titre 1 » de Word doit être mis en correspondance';
 $string['importchapters'] = 'Importer de Microsoft Word';

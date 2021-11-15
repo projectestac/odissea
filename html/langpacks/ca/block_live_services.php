@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['calendarEndDate'] = 'Data de finalització';
 $string['identityPrivacyLink'] = 'Privacitat';
 $string['privacy'] = 'Privacitat';

@@ -27,3 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Formato Aiken';
 $string['pluginname_help'] = 'Formato sencillo para la importación de preguntas de opción múltiple desde un archivo de texto.';
+$string['privacy:metadata'] = 'El complemento de formato de preguntas de Aiken no almacena ningún dato personal.';
+$string['questionmissinganswers'] = 'La pregunta debe tener al menos 2 respuestas en la línea {$a}';
+$string['questionnotcomplete'] = 'Pregunta no completada antes de que la siguiente pregunta comience en la línea {$a}';
+$string['questionnotstarted'] = 'La pregunta no comenzó en la línea {$a}';

@@ -110,7 +110,16 @@ class restore_qtype_multianswer_plugin extends restore_qtype_plugin {
             foreach ($sequencearr as $key => $question) {
                 $sequencearr[$key] = $this->get_mappingid('question', $question);
             }
+
+            // XTEC ************ MODIFICAT - Fixed import of broken multianswer questions (MDL-54724)
+            // 2021.10.28 @aginard
+            $sequence = implode(',', array_filter($sequencearr));
+            // ************ ORIGINAL
+            /*
             $sequence = implode(',', $sequencearr);
+            */
+            // ************ FI
+
             $DB->set_field('question_multianswer', 'sequence', $sequence,
                     array('id' => $rec->id));
             if (!empty($sequence)) {

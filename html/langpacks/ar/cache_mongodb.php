@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['database_help'] = 'اسم قاعدة البيانات المزمع الاستفادة منها.';
 $string['password'] = 'كلمة المرور';
 $string['password_help'] = 'كلمة مرور المستخدم المستعمل للاتصال.';
 $string['usesafevalue'] = 'استعمل القيمة الآمنة';

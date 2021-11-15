@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Calificación XML exportada';
 $string['pluginname'] = 'Archivo XML';
+$string['privacy:metadata'] = 'El complemento de exportación de hoja de cálculo de calificaciones en XML no almacena ningún dato personal.';
 $string['xml:publish'] = 'Publicar exportación de calificaciones XML';
 $string['xml:view'] = 'Usar exportación de calificaciones XML';

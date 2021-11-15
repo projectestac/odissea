@@ -27,13 +27,13 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['acohortroleassignmentssaved'] = '{$a} attributions de rôle par cohorte ont été enregistrés.';
 $string['assign'] = 'Attribuer';
-$string['assignroletocohort'] = 'Attribuer des rôles utilisateur-contexte à tous les membres de la cohorte';
+$string['assignroletocohort'] = 'Attribuer un rôle dans le contexte utilisateur de tous les membres d\'une cohorte';
 $string['backgroundsync'] = 'Remarque : les nouveaux rôles attribués aux cohortes n\'auront pas d\'effet immédiatement. Les modifications d\'attributions de rôles seront effectuées au moyen d\'une tâche programmée.';
 $string['cohortroleassignmentnotremoved'] = 'L\'attribution de rôle par cohorte n\'a pas été retirée.';
 $string['cohortroleassignmentremoved'] = 'L\'attribution de rôle par cohorte a été retirée.';
 $string['cohortroles'] = 'Rôle par cohortes';
 $string['existingcohortroles'] = 'Attributions de rôle par cohorte existantes';
-$string['managecohortroles'] = 'Attribuer des rôles à une cohorte';
+$string['managecohortroles'] = 'Attribuer des rôles dans plusieurs contextes utilisateurs';
 $string['noassignableroles'] = 'Actuellement, il n\'existe pas de rôle pouvant être attribué dans le contexte utilisateur. <a href="../../roles/manage.php">Gérer les rôles</a>';
 $string['nocohortroleassignmentssaved'] = 'Aucune attribution de rôle par cohorte n\'a été enregistrée.';
 $string['onecohortroleassignmentsaved'] = 'Une attribution de rôle par cohorte a été enregistrée.';

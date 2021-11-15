@@ -13,7 +13,7 @@ class com_wiris_quizzes_impl_AssertionParam extends com_wiris_quizzes_impl_MathC
 		}
 	}
 	public function onSerialize($s) {
-		$s->beginTag(com_wiris_quizzes_impl_AssertionParam::$tagName);
+		$s->beginTag(com_wiris_quizzes_impl_AssertionParam::$TAGNAME);
 		$this->name = $s->attributeString("name", $this->name, null);
 		parent::onSerializeInner($s);
 		$s->endTag();
@@ -35,6 +35,6 @@ class com_wiris_quizzes_impl_AssertionParam extends com_wiris_quizzes_impl_MathC
 		else
 			throw new HException('Unable to call «'.$m.'»');
 	}
-	static $tagName = "param";
+	static $TAGNAME = "param";
 	function __toString() { return 'com.wiris.quizzes.impl.AssertionParam'; }
 }

@@ -30,5 +30,5 @@ $string['createlink'] = 'أنشئ رابطاً';
 $string['enterurl'] = 'أدخل عنوان الرابط';
 $string['openinnewwindow'] = 'إفتح في نافذة جديدة';
 $string['pluginname'] = 'الرابط';
-$string['privacy:metadata'] = 'إن ملحق atto_link لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_link لا تخزن أي بيانات شخصية.';
 $string['unlink'] = 'إزالة الرابط';

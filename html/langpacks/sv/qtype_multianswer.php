@@ -35,7 +35,7 @@ $string['layout'] = 'Utseende';
 $string['layouthorizontal'] = 'Horisontell rad med radioknappar';
 $string['layoutmultiple_horizontal'] = 'Horisontell rad med kryssrutor';
 $string['layoutmultiple_vertical'] = 'Vertikal kolumn med kryssrutor';
-$string['layoutselectinline'] = 'Rullgardinsmeny inbäddad i texten';
+$string['layoutselectinline'] = 'Listruta inbäddad i texten';
 $string['layoutundefined'] = 'Odefinierat utseende';
 $string['layoutvertical'] = 'Vertikal kolumn med radioknappar';
 $string['nooptionsforsubquestion'] = 'Kan inte hämta alternativ för frågedel # {$a->sub} (question->id={$a->id})';

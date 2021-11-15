@@ -26,7 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nonedescription'] = 'Los usuarios pueden registrarse y crear cuentas válidas inmediatamente, sin identificación contra un servidor externo y sin confirmación vía email. Tenga cuidado al usar esta opción - piense en los problemas de seguridad y de administración que puede ocasionar.';
+$string['checknoauth'] = 'Sin autenticación';
 $string['checknoauthdetails'] = '<p>La extensión <em>Sin identificación</em> no está diseñado para sitios en producción. Por favor deshabilítelo a menos que este sea un servidor de pruebas de desarrollo.</p>';
 $string['checknoautherror'] = 'La extensión "Sin identificación" no puede usarse en sitios en producción.';
 $string['checknoauthok'] = 'La extensión "Sin identificación" está deshabilitada';
 $string['pluginname'] = 'Sin identificación';
+$string['privacy:metadata'] = 'El complemento Sin autenticación no almacena ningún dato personal.';

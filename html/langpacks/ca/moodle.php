@@ -639,9 +639,7 @@ $string['emailagain'] = 'Correu electrònic (una altra vegada)';
 $string['emailalreadysent'] = 'S\'ha enviat un correu electrònic de restabliment de contrasenya. Consulteu el vostre correu electrònic.';
 $string['emailcharset'] = 'Joc de caràcters del correu';
 $string['emailconfirm'] = 'Confirmació del compte';
-$string['emailconfirmation'] = '{$a->firstname},
-
-S\'ha sol·licitat un nou compte a «{$a->sitename}» amb la vostra adreça electrònica.
+$string['emailconfirmation'] = 'S\'ha sol·licitat un nou compte a «{$a->sitename}» amb la vostra adreça electrònica.
 
 Per confirmar el vostre compte, aneu a aquesta adreça web:
 

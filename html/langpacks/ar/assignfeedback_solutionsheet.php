@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['fromnowon_help'] = 'عند تمكينه، يمكن للمعلم إختيار إظهار ورقة الحلول مباشرة عند وقت إنشاء الواجب.';
+$string['privacy:metadata'] = 'إن إضافة خارطة النشاط لا تخزن أي بيانات شخصية، ولكنها تقتصر على بيانات التهيئة للواجبات (المتضمنة أوراق الحلول نفسها).';
 $string['solutionsheet:releasesolution'] = 'إطلاق أوراق الحلول في اي وقت';
 $string['solutionsheet:viewsolutionanytime'] = 'معاينة أوراق الحلول في اي وقت';

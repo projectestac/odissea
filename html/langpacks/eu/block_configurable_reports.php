@@ -278,7 +278,7 @@ $string['line'] = 'Lerro grafikoa';
 $string['linesummary'] = 'Datu-segida anitzak dituen grafiko lineala';
 $string['listofsqlreports'] = '<a href="http://docs.moodle.org/en/ad-hoc_contributed_reports" target="_blank">SQL txostenen zerrenda</a>';
 $string['managereports'] = 'Kudeatu txostenak';
-$string['max'] = 'Gehienezkoa';
+$string['max'] = 'Gehienekoa';
 $string['min'] = 'Gutxienekoa';
 $string['missingcolumn'] = 'Gutxienez zutabe bat behar da';
 $string['module'] = 'Modulua';

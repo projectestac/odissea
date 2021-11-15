@@ -364,6 +364,7 @@ $string['invalidoutcome'] = 'Μη έγκυρο αναγνωριστικό μαθ
 $string['invalidpagesize'] = 'Μη έγκυρο μέγεθος σελίδας';
 $string['invalidpasswordpolicy'] = 'Μη έγκυρη πολιτική κωδικού πρόσβασης';
 $string['invalidpaymentmethod'] = 'Μυ έγκυρη μορφή πληρωμής: {$a}';
+$string['invalidpersistenterror'] = 'Σφάλμα: {$a}';
 $string['invalidqueryparam'] = 'ΣΦΑΛΜΑ: Λανθασμένο πλήθος παραμέτρων ερωτήματος. Αναμενόταν {$a->expected}, ελήφθησαν {$a->actual}.';
 $string['invalidratingarea'] = 'Μη έγκυρη περιοχή βαθμολόγησης';
 $string['invalidrecord'] = 'Δεν είναι δυνατή η εύρεση εγγραφής δεδομένων στον πίνακα βάσης δεδομένων {$a}.';

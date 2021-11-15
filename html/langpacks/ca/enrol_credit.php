@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['enrolenddate'] = 'Data de finalització';
 $string['enrolperiod'] = 'Durada de la inscripció';

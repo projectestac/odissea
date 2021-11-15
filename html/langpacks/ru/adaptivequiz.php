@@ -65,4 +65,5 @@ $string['questionnumber'] = 'Вопрос №';
 $string['recentcomplete'] = 'Завершено';
 $string['recentinprogress'] = 'В процессе';
 $string['result'] = 'Результат';
+$string['user'] = 'Пользователь';
 $string['wrongpassword'] = 'Неверный пароль';

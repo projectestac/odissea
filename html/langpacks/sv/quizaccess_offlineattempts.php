@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowofflineattempts'] = 'Tillåt att testet görs offline i mobilappen.';
-$string['allowofflineattempts_help'] = 'Om aktiverat kan en användare av mobilappen ladda ned testet och genomföra det offline.
+$string['allowofflineattempts'] = 'Tillåt att kunskapstestet görs offline i mobilappen.';
+$string['allowofflineattempts_help'] = 'Om aktiverat kan en användare av mobilappen ladda ned kunskapstestet och genomföra det offline.
 
-OBS! Det är inte möjligt att göra ett test offline om det har en tidsgräns, kräver en nätverksadress eller använder något annat frågebeteende än <em>Fördröjd återkoppling</em> (med eller utan CBM). CBM = Curriculum Based Measurement';
+<strong>OBS!</strong> Det är inte möjligt att genomföra ett kunskapstest offline om det har en tidsgräns, kräver en nätverksadress eller använder något annat frågebeteende än <em>Fördröjd återkoppling</em> (med eller utan CBM). CBM = Curriculum Based Measurement';
 $string['confirmdatasaved'] = 'Jag bekräftar att jag inte har osparat arbete på en mobil enhet.';
 $string['mobileapp'] = 'Mobilapp';
-$string['offlineattemptserror'] = 'Det är inte möjligt att göra ett test offline om det har en tidsgräns, kräver en nätverksadress eller använder något annat frågebeteende än <em>Fördröjd återkoppling</em> (med eller utan CBM). CBM = Curriculum Based Measurement';
+$string['offlineattemptserror'] = 'Det är inte möjligt att genomföra ett kunskapstest offline om det har en tidsgräns, kräver en nätverksadress eller använder något annat frågebeteende än <em>Fördröjd återkoppling</em> (med eller utan CBM). CBM = Curriculum Based Measurement';
 $string['offlinedatamessage'] = 'Du har arbetet med detta försök på en mobil enhet. Senaste gången något sparades var för {$a} sedan.';
 $string['pleaseconfirm'] = 'Vänligen kontrollera och bekräfta att du inte har något osparat arbete.';
 $string['pluginname'] = 'Åtkomstregel för offline-försök';
-$string['privacy:metadata'] = 'Pluginmodulen Åtkomstregel för offline-försök lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Åtkomstregel för offline-försök lagrar ingen personinformation.';

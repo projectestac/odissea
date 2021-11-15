@@ -27,6 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addnewsection'] = 'إضافة مقطع جديد إلى هذه الصفحة';
 $string['addnewsection1'] = 'إضافة مقطع جديد';
+$string['advice_missingpage'] = 'تم الارتباط مع هذه الصفحة، ولكن لم يتم إنشاؤها بعد.';
+$string['advice_viewdeleted'] = 'أنت تشاهد نسخة محذوفة من هذه الصفحة.';
+$string['advice_viewold'] = 'أنت تشاهد نسخة قديمة من هذه الصفحة.';
 $string['countdowntext'] = 'يسمح الويكي بمهلة {$a} دقائق للتحرير فقط. أجرِ تغييراتك ثم انقر الحفظ أو الإلغاء قبل أن يصل المتبقي (إلى اليسار) إلى الصفر.';
 $string['downloadcsv'] = 'ملف نصي ذو قيم مفصولة بفوارز';
 $string['duplicatepagetitle'] = 'عنوان الصفحة الجديدة ينبغي أن لا يكون مطابقًا لأي من عناوين الصفحات الموجودة.';
@@ -49,6 +52,7 @@ $string['feeditemdescriptionnodate'] = '{$a->main}.';
 $string['feedtitle'] = 'ويكي {$a->course}: {$a->name} - {$a->subtitle}';
 $string['import_confirm_conflicts'] = 'تضاربات الصفحة:';
 $string['import_confirm_conflicts_locked'] = 'صفحة {$a} مؤمَّنة';
+$string['import_confirm_conflicts_lockedwarn'] = 'تم تعليق الصفحة المراد الكتابة عليها. تأكد من إمكانيتك في تحرير هذه الصفحة قبل المحاولة مجددًا.';
 $string['import_confirm_conflicts_notlocked'] = 'الصفحة غير مؤمَّنة';
 $string['import_confirm_conflicts_option1'] = 'دمج محتوى الصفحة';
 $string['import_confirm_conflicts_option2'] = 'استبدال المحتوى الموجود في الصفحة';
@@ -69,6 +73,10 @@ $string['ouwikicrontask'] = 'أعمال صيانة ويكي OU';
 $string['page'] = 'الصفحة';
 $string['pagedeletedinfo'] = 'بعض الإصدارات المحذوفة معروضة في القائمة أدناه.
 إنها مرئية فقط للأشخاص ذوي صلاحية حذف الإصدارات. المستخدمون العاديون لا يشاهدونها على الإطلاق.';
+$string['pagedoesnotexist'] = 'هذه الصفحة ليست موجودة في الويكي بعد.';
+$string['pagelockeddetails'] = '{$a->name} بدأ بتحرير هذه الصفحة في {$a->lockedat}، ولا يزال مشتغلاً بها حتى {$a->seenat}. لا يمكنك تحريرها حتى يتم الفراغ منها';
+$string['pagelockeddetailsnojs'] = '{$a->name} بدأ بتحرير هذه الصفحة في {$a->lockedat}، ولديه حتى {$a->nojs} لتحريرها. لا يمكنك تحريرها حتى يتم الفراغ منها';
+$string['pagelockedtitle'] = 'هذه الصفحة يجري تحريرها من قبل شخص آخر.';
 $string['pagenameisstartpage'] = 'اسم الصفحة مماثل لاسم صفحة البدء. استعمل اسم صفحة مختلف.';
 $string['pagenametoolong'] = 'اسم الصفحة طويل جدًا. استعمل اسم صفحة أقصر.';
 $string['pagescreated'] = 'صفحات تم إنشاؤها';

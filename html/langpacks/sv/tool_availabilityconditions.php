@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = 'Hantera begränsningar';
 $string['pluginname'] = 'Hantera tillgänglighetsvillkor';
-$string['privacy:metadata'] = 'Pluginmodulen Hantera tillgänglighetsvillkor lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Hantera tillgänglighetsvillkor lagrar ingen personinformation.';

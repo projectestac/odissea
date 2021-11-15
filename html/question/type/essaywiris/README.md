@@ -1,5 +1,5 @@
 # Wiris Quizzes Essay question type
-### Master Build Status
+
 [![Moodle Plugin CI](https://github.com/wiris/moodle-qtype_essaywiris/actions/workflows/ci.yml/badge.svg)](https://github.com/wiris/moodle-qtype_essaywiris/actions/workflows/ci.yml)
 
 The Wiris Essay question type extends the Moodle Essay type, adding mathematical functionality to it.
@@ -11,7 +11,8 @@ On the student's side, they will be able to introduce their answers by using a W
 ## Install instructions
 
 To install it using git, type this command in the root of your Moodle install:
-```
+
+```bash
 git clone https://github.com/wiris/moodle-qtype_essaywiris.git question/type/essaywiris
 ```
 
@@ -21,11 +22,11 @@ Alternatively, download the zip from <https://github.com/wiris/moodle-qtype_essa
 
 ## Technical Support
 
-If you have questions or need help integrating MathType, please contact us (support@wiris.com) instead of opening an issue.
+If you have questions or need help integrating WirisQuizzes, please contact us (support@wiris.com) instead of opening an issue.
 
 ## Privacy policy
 
-The [MathType Privacy Policy](https://www.wiris.com/mathtype/privacy-policy) covers the data processing operations for the MathType users. It is an addendum of the company’s general Privacy Policy and the [general Privacy Policy](https://wiris.com/en/privacy-policy) still applies to MathType users.
+The [WirisQuizzes Privacy Policy](https://www.wiris.com/en/wiris-quizzes-privacy-policy/) covers the data processing operations for the MathType users. It is an addendum of the company’s general Privacy Policy and the [general Privacy Policy](https://www.wiris.com/en/privacy-policy) still applies to WirisQuizzes users.
 
 ## License
 

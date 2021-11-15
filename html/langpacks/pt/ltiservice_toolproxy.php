@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Serviço de Proxy da Ferramenta';
-$string['privacy:metadata'] = 'O módulo Serviço de Proxy da Ferramenta não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Serviço de Proxy da Ferramenta não armazena quaisquer dados pessoais.';

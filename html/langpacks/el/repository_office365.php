@@ -25,4 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['defaultgroupsfolder'] = 'Αρχεία μαθήματος';
+$string['erroraccessdenied'] = 'Δεν επιτρέπεται η πρόσβαση';
+$string['errorbadclienttype'] = 'Μη έγκυρος τύπος πελάτη λογισμικού.';
+$string['errorbadpath'] = 'Λανθασμένο μονοπάτι';
+$string['errorcoursenotfound'] = 'Αδυναμία εύρεσης μαθήματος';
+$string['errorwhiledownload'] = 'Παρουσιάστηκε σφάλμα κατά την λήψη του αρχείου';
 $string['file'] = 'Αρχείο';
+$string['groups'] = 'Ομάδες (Μαθήματα)';
+$string['myfiles'] = 'Το OneDrive μου';
+$string['pluginname'] = 'Microsoft 365';
+$string['pluginname_help'] = 'Ένα αποθετήριο Microsoft 365';
+$string['upload'] = 'Ανεβάστε νέο αρχείο';

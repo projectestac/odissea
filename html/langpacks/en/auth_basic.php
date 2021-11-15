@@ -51,5 +51,6 @@ $string['timecreated'] = 'Time Created';
 $string['timeexpired'] = 'Time Expired';
 $string['usage'] = 'Usage';
 $string['username'] = 'Name';
+$string['uses'] = 'Usage';
 $string['whitelist_not_set'] = '<code>$CFG->auth_basic_whitelist_ips</code> is not set up in config.php, there will be no IP restriction.';
 $string['whitelistonly'] = 'Only allow access to the following ips: <strong>{$a}</strong>';

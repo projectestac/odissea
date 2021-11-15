@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Animação Flash';
 $string['pluginname_help'] = 'Ficheiros com a extensão *.swf. Por motivos de segurança este formato só é incorporado em texto confiável.';
-$string['privacy:metadata'] = 'O módulo multimédia Animação Flash não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo multimédia Animação Flash não armazena quaisquer dados pessoais.';

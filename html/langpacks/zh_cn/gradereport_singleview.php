@@ -52,6 +52,7 @@ $string['override'] = '覆盖';
 $string['overrideall'] = '覆盖所有成绩';
 $string['overridefor'] = '覆盖{$a}';
 $string['overridenone'] = '不覆盖任何成绩';
+$string['overridenoneconfirm'] = '您将要禁用坡率替代。这将删除所有以前覆盖的坡率。您确定要继续吗？';
 $string['pluginname'] = '独立视图';
 $string['privacy:metadata'] = '成绩独立视图报表只显示存储在其他位置的数据。';
 $string['save'] = '保存';

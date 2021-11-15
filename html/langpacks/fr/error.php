@@ -363,6 +363,7 @@ $string['invalidoutcome'] = 'Identifiant d\'objectif incorrect';
 $string['invalidpagesize'] = 'Taille de page non valide';
 $string['invalidpasswordpolicy'] = 'Politique de mots de passe non valide';
 $string['invalidpaymentmethod'] = 'Méthode de paiement non valide : {$a}';
+$string['invalidpersistenterror'] = 'Erreur : {$a}';
 $string['invalidqueryparam'] = 'Erreur : nombre de paramètres incorrect dans la requête. {$a->expected} paramètres attendus, actuellement {$a->actual} paramètres.';
 $string['invalidratingarea'] = 'Zone d\'évaluation non valide';
 $string['invalidrecord'] = 'Impossible de trouver l\'enregistrement de données dans la table {$a} de la base de données.';

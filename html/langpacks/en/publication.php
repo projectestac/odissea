@@ -58,6 +58,7 @@ $string['configobtainstudentapproval'] = 'Documents are visible after the studen
 $string['configobtainteacherapproval'] = 'Documents of students are by default visible for all other participants.';
 $string['configrequiremodintro'] = 'Disable this option if you do not want to force users to enter description of each activity.';
 $string['courseuploadlimit'] = 'Course upload limit';
+$string['currentlynotapproved'] = '* Currently not approved or disapproved.';
 $string['cutoffdate'] = 'Cut-off date';
 $string['cutoffdate_help'] = 'If set, the assignment will not accept submissions after this date without an extension.';
 $string['cutoffdate_import'] = 'Last approval to';
@@ -207,7 +208,7 @@ $string['student_pending'] = 'not visible (not approved)';
 $string['student_reject'] = 'reject';
 $string['student_rejected'] = 'rejected';
 $string['studentapproval'] = 'Status';
-$string['studentapproval_help'] = 'The colum status represents the students reply of the approval:
+$string['studentapproval_help'] = 'The column status represents the students reply of the approval:
 
 * ? - approval pending
 * ✓ - approval given
@@ -216,6 +217,7 @@ $string['teacher_approved'] = 'visible (approved)';
 $string['teacher_pending'] = 'confirmation pending';
 $string['teacher_rejected'] = 'declined';
 $string['teacherapproval'] = 'Approval';
+$string['teacherapproval_help'] = 'Current decision on files, to be visible to all participants: <br /><ul><li>Choose... - not approved or disapproved yet, the files are not visible.</li><li>Yes - approved, the files are visible.</li><li>No - disapproved, the files are not visible.</li></ul>';
 $string['total'] = 'total';
 $string['updatefiles'] = 'Update files';
 $string['updatefileswarning'] = 'Files from an individual student in the student folder will be updated with his/her submission of the assignment. Already visible files from students will be replaced too, if they are deleted or refreshed - the settings of the student as to the visibility will not be changed.';
@@ -223,7 +225,7 @@ $string['uploaded'] = 'Uploaded';
 $string['visibility'] = 'visible for all';
 $string['visible'] = 'visible';
 $string['visibleforstudents'] = 'visible to all';
-$string['visibleforstudents_no'] = 'This file is NOT visible to stundets';
+$string['visibleforstudents_no'] = 'This file is NOT visible to students';
 $string['visibleforstudents_yes'] = 'Stundets can see this file';
 $string['warning_changefromobtainstudentapproval'] = 'If you perform this change, only you can decide which files are visible to all students. The students are not asked for their approval. All files marked as approved will become visible to all students independent of the students\' decisions.';
 $string['warning_changefromobtainteacherapproval'] = 'After activating this setting, all uploaded files will be visible to other participants. All uploaded will become visible. You can manually make files invisible to certain students.';

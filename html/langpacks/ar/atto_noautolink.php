@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'مانع الارتباط التلقائي';
-$string['privacy:metadata'] = 'إن ملحق atto_noautolink لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_noautolink لا تخزن أي بيانات شخصية.';

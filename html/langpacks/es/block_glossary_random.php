@@ -40,6 +40,7 @@ $string['noentriesyet'] = 'Aún no hay entradas en el glosario seleccionado.';
 $string['notyetconfigured'] = 'Por favor, configure este bloque usando el icono de edición.';
 $string['notyetglossary'] = 'Necesita seleccionar al menos un glosario.';
 $string['pluginname'] = 'Entrada aleatoria del glosario';
+$string['privacy:metadata'] = 'El bloque de entrada de glosario aleatoria solo muestra información almacenada en otras ubicaciones.';
 $string['random'] = 'Entrada aleatoria';
 $string['refresh'] = 'Días antes de elegir una nueva entrada';
 $string['select_glossary'] = 'Tomar entradas de este glosario';

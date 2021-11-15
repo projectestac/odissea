@@ -36,6 +36,7 @@ Las preguntas Calculadas Simples ofrecen las opciones más utilizadas en las pre
 $string['pluginnameadding'] = 'Añadiendo una pregunta Calculada Simple';
 $string['pluginnameediting'] = 'Editando una pregunta Calculada Simple';
 $string['pluginnamesummary'] = 'Una versión más simple de pregunta calculada, que son como las preguntas numéricas, pero con los valores seleccionados aleatoriamente de un conjunto cuando se formula la pregunta.';
+$string['privacy:metadata'] = 'El complemento de tipo de pregunta simple calculada no almacena ningún dato personal.';
 $string['setno'] = 'Valor {$a} del conjunto';
 $string['setwildcardvalues'] = 'serie(s) de valores para el comodín';
 $string['showitems'] = 'Mostrar';

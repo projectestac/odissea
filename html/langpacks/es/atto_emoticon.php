@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['insertemoticon'] = 'Insertar emoticon';
 $string['pluginname'] = 'Emoticon';
-$string['privacy:metadata'] = 'El plugin atto_emoticon no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_emoticon no almacena ningún dato personal.';

@@ -87,7 +87,7 @@ $string['sourcedidfallback_desc'] = 'IMS datuetan, <sourcedid> eremuak jatorrizk
 
 Informazio Zerbitzu batzuk ikasleen <userid> eremua esportatzean huts egiten dute. Kasu horretan, ezarpen hau gaitu beharko zenuke <sourcedid> eremua Moodleko erabiltzaile ID gisa erabili ahal izateko. Bestela, utzi ezarpen hau desgaituta.';
 $string['truncatecoursecodes'] = 'Ikastaroaren kodeak luzera honetara moztu';
-$string['truncatecoursecodes_desc'] = 'Egoera batzuetan prozesatu aurretik ikastaro batzuetako kodeak moztu nahiko dituzu gehienezko luzera bat izan dezaten. Horrela bada, zehaztu hemen gehienezko karaktere kopurua. Bestela, hutsik utzi ezarpen hau eta ez da mozketarik egingo.';
+$string['truncatecoursecodes_desc'] = 'Egoera batzuetan prozesatu aurretik ikastaro batzuetako kodeak moztu nahiko dituzu gehieneko luzera bat izan dezaten. Horrela bada, zehaztu hemen gehieneko karaktere kopurua. Bestela, hutsik utzi ezarpen hau eta ez da mozketarik egingo.';
 $string['updatecourses'] = 'Eguneratu ikastaroa';
 $string['updatecourses_desc'] = 'Gaituz gero, IMS Enterprise matrikulazio-pluginak ikastaroen izen laburra eta izen osoa eguneratzeko aukera izango du ("recstatus" markak 2 balioa badu, eguneratze bat erakusten duena)';
 $string['updateusers'] = 'Eguneratu erabiltzaile-kontuak IMS datuetan zehaztuta dagoenean';

@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'HTML-tabell';
-$string['privacy:metadata'] = 'Pluginmodulen för HTML-dataformatet lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen för HTML-dataformatet lagrar ingen personinformation.';
 $string['shortname'] = 'HTML';

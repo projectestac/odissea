@@ -35,7 +35,19 @@ class com_wiris_quizzes_wrap_EmbeddedAnswersEditorWrap implements com_wiris_quiz
 	public function showAnswerFieldInlineEditor($visible) {
 		throw new HException("Not implemented");
 	}
+	public function showGraphicSyntax($visible) {
+		throw new HException("Not implemented");
+	}
 	public function showGradingFunction($visible) {
+		throw new HException("Not implemented");
+	}
+	public function showAuxiliaryTextInput($visible) {
+		throw new HException("Not implemented");
+	}
+	public function showAuxiliaryCasReplaceEditor($visible) {
+		throw new HException("Not implemented");
+	}
+	public function showAuxiliaryCas($visible) {
 		throw new HException("Not implemented");
 	}
 	public function showAuxiliarTextInput($visible) {
@@ -53,6 +65,12 @@ class com_wiris_quizzes_wrap_EmbeddedAnswersEditorWrap implements com_wiris_quiz
 	public function showPreviewTab($visible) {
 		throw new HException("Not implemented");
 	}
+	public function showGradingCriteria($visible) {
+		throw new HException("Not implemented");
+	}
+	public function showVariablesDefinition($visible) {
+		throw new HException("Not implemented");
+	}
 	public function showVariablesTab($visible) {
 		throw new HException("Not implemented");
 	}
@@ -60,6 +78,9 @@ class com_wiris_quizzes_wrap_EmbeddedAnswersEditorWrap implements com_wiris_quiz
 		throw new HException("Not implemented");
 	}
 	public function showCorrectAnswerTab($visible) {
+		throw new HException("Not implemented");
+	}
+	public function setConfiguration($configuration) {
 		throw new HException("Not implemented");
 	}
 	public function getFieldType() {

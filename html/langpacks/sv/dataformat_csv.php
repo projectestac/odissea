@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'Kommaseparerade värden (.csv)';
-$string['privacy:metadata'] = 'Pluginmodulen för CSV-dataformatet lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen för CSV-dataformatet lagrar ingen personinformation.';
 $string['shortname'] = 'CSV';

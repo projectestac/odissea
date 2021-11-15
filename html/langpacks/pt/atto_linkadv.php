@@ -26,13 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advanced'] = 'Avançado';
-$string['browserepositories'] = 'Procurar nos repositórios...';
+$string['browserepositories'] = 'Pesquisar nos repositórios...';
 $string['createlink'] = 'Criar hiperligação';
 $string['enterclass'] = 'Insira uma classe';
 $string['enterid'] = 'Insira um ID';
 $string['enterurl'] = 'Insira o URL';
 $string['link'] = 'Hiperligação';
 $string['openinnewwindow'] = 'Abrir numa nova janela';
-$string['pluginname'] = 'LinkAdv';
+$string['pluginname'] = 'Hiperligação avançada';
 $string['privacy:metadata'] = 'O módulo atto_linkadv não armazena quaisquer dados pessoais.';
 $string['unlink'] = 'Remover hiperligação';

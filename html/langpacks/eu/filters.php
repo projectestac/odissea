@@ -50,7 +50,7 @@ $string['defaultx'] = 'Lehenetsitakoa ({$a})';
 $string['disabled'] = 'Desgaituta';
 $string['doesnotcontain'] = 'ez daukana';
 $string['endswith'] = 'honela bukatzen da';
-$string['filterallwarning'] = 'Iragazkiak edukiez gain goiburuei ere aplikatzeak zure zerbitzariak egin beharreko lana handitu egiten du. Mesedez "Aplikatu" aukera tentuz erabili. Erabilera ohikoena iragazki eleanitzarena da.';
+$string['filterallwarning'] = 'Iragazkiak edukiez gain goiburuei ere aplikatzeak zure zerbitzariak egin beharreko lana handitu egiten du. Mesedez "Aplikatu" aukera tentuz erabili. Erabilera ohikoena iragazki eleaniztunarena da.';
 $string['filtersettings'] = 'Iragazkien ezarpenak';
 $string['filtersettings_help'] = 'Orri honek gunearen toki jakin batean iragazkiak gaitu edo desgaitzeko modua emango dizu.
 

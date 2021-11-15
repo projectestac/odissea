@@ -39,7 +39,7 @@ $string['internal'] = 'Внутренние (файлы, хранящиеся в
 $string['issuer'] = 'Служба OAuth 2';
 $string['issuer_help'] = 'Выберите службу OAuth 2, настроенную для работы с API Google Drive. Если служба еще не существует, вам необходимо ее создать.';
 $string['mydrive'] = 'My Drive';
-$string['oauth2serviceslink'] = '<a href="{$a}" title="Ссылка на конфигурацию служб OAuth 2"> Конфигурация служб OAuth 2 </a>';
+$string['oauth2serviceslink'] = '<a href="{$a}" title="Ссылка на конфигурацию служб OAuth 2"> Конфигурация служб OAuth 2</a>';
 $string['owner'] = 'Владелец: {$a}';
 $string['pluginname'] = 'Google Drive';
 $string['presentationformat'] = 'Формат импорта презентации по умолчанию';

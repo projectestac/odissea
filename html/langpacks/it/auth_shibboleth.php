@@ -33,6 +33,7 @@ $string['auth_shib_changepasswordurl'] = 'URL per cambiare password';
 $string['auth_shib_contact_administrator'] = 'Qualora tu non appartenga alle organizzazioni fornite e hai bisogno di accedere ai corsi presenti su questo server, per favore contatta <a href="mailto:{$a}">l\'Amministratore Moodle</a>.';
 $string['auth_shib_convert_data'] = 'API per la modifica dei dati';
 $string['auth_shib_convert_data_description'] = 'E\' possibile utilizzare queste API per modificare ulteriormente i dati forniti da Shibboleth. Per maggiori informazioni: <a href="{$a}">README</a>';
+$string['auth_shib_convert_data_filepath_warning'] = 'Non è possibile utilizzare un file che si trova all\'interno della cartella dei dati del sito  ($CFG->dataroot) come API di modifica dei dati.';
 $string['auth_shib_convert_data_warning'] = 'Il file non esiste o non è leggibile dal processo del webserver!';
 $string['auth_shib_idp_list'] = 'Identity provider';
 $string['auth_shib_idp_list_description'] = 'Inserite un elenco di Identity Provider entityID tra cui l\'utente potrà scegliere nella pagina di login.<br />Su ogni riga dovrà essere presente una coppia separata da virgole composta da entityID dell\'IdP (verifica il medatadata file di Shibboleth) e dal Nome dell\'IdP (il nome comparirà nel menù a discesa).<br />E\' possibile aggiungere un terzo parametro opzionale dove specificare la posizione del session initiator di Shibboleth utile nel caso in cui l\'installazione di Moodle faccia parte di una multi fedrazione.';

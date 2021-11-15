@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Mostrar/ocultar botones avanzados';
-$string['privacy:metadata'] = 'El plugin atto_collapse no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_collapse no almacena ningún dato personal.';
 $string['settings'] = 'Colapsar opciones de configuración de la barra de herramientas';
 $string['showfewer'] = 'Mostrar menos botones';
 $string['showgroups'] = 'Mostrar primero (n) grupos cuando esté colapsado.';

@@ -96,6 +96,7 @@ $string['confirmloosetracks'] = 'Avís: sembla que s\'hagi canviat o modificat e
 $string['contents'] = 'Continguts';
 $string['coursepacket'] = 'Paquet de curs';
 $string['coursestruct'] = 'Estructura del curs';
+$string['crontask'] = 'Processament en segon pla del mòdul SCORM';
 $string['currentwindow'] = 'Finestra actual';
 $string['datadir'] = 'S\'ha produït un error del sistema de fitxers: no s\'ha pogut crear el directori de dades del curs';
 $string['defaultdisplaysettings'] = 'Configuració de pantalla predeterminada';
@@ -329,6 +330,7 @@ $string['scormtype_help'] = 'Aquest paràmetre determina com s\'insereix el paqu
 * Paquet descarregat - Permet especificar l\'URL d\'un paquet. El paquet es descomprimirà i es desarà localment, i s\'actualitzarà quan s\'actualitzi el paquet SCORM extern.
 * URL AICC externa - aquest és l\'URL de llançament d\'una activitat AICC. Es construirà un pseudopaquet al seu voltant.';
 $string['scrollbars'] = 'Permet el desplaçament de la finestra';
+$string['search:activity'] = 'Paquet SCORM - Informació de l\'activitat';
 $string['selectall'] = 'Selecciona-ho tot';
 $string['selectnone'] = 'Desselecciona-ho tot';
 $string['show'] = 'Mostrar';

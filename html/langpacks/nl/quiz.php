@@ -915,6 +915,7 @@ $string['scores'] = 'Scores';
 $string['search:activity'] = 'Test - activiteitsinformatie';
 $string['sectionheadingedit'] = 'Bewerk kop  \'{$a}\'';
 $string['sectionheadingremove'] = 'Verwijder kop \'{$a}\'';
+$string['sectionnoname'] = 'Naamloze sectie';
 $string['seequestions'] = '(zie vragen)';
 $string['select'] = 'Selecteer';
 $string['selectall'] = 'Selecteer alle';

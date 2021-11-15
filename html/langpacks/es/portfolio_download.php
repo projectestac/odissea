@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadfile'] = 'Descargar el archivo de exportación del portafolio';
 $string['downloading'] = 'Descargando...';
 $string['pluginname'] = 'Descarga de archivos';
+$string['privacy:metadata'] = 'Este complemento no almacena ningún dato personal ni exporta datos personales a localizaciones externas.';

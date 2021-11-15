@@ -45,8 +45,11 @@ $string['defaultwhenexpired'] = 'Comportamento predefinido após expiração de 
 $string['defaultwhenexpired_desc'] = 'O que fazer com utilizadores que já não correspondem à regra do atributo. Esta configuração pode ser substituída em cada instância de inscrição.';
 $string['deletecondition'] = 'Apagar condição';
 $string['force'] = 'Forçar inscrições agora';
+$string['group'] = 'Atribuição de grupo';
+$string['group_help'] = 'Pode atribuir nenhum ou vários grupos';
 $string['mappings'] = 'Mapeamentos Shibboleth';
 $string['mappings_desc'] = 'Ao usar a autenticação Shibboleth, este módulo pode atualizar automaticamente o perfil de um utilizador a cada autenticação.<br><br> Por exemplo, se pretender atualizar o campo de perfil do utilizador <code>homeorganizationtype</code> com o atributo Shibboleth <code>Shib-HomeOrganizationType</code> (desde que seja a variável de ambiente disponível para o servidor durante a autenticação), pode inserir numa linha: <code>Shib-HomeOrganizationType:homeorganizationtype</code><br>Pode inserir quantas linhas forem necessárias.<br><br>Para não usar esta funcionalidade, ou se não usar a autenticação Shibboleth, basta deixar em branco.';
+$string['no_custom_field'] = 'Parece não haver qualquer campo personalizado. Vá para <a href="{$a}" target="_blank">configurações do utilizador</a> para adicionar um.';
 $string['observelogins'] = 'Inscrever utilizadores ao autenticarem-se';
 $string['observelogins_desc'] = 'Tentar inscrever os utilizadores imediatamente quando se autenticarem no site. Isto pode afetar o desempenho do seu site. Desative esta funcionalidade se acontecer muitos utilizadores autenticarem-se ao mesmo tempo e o facto de serem inscritos ao mesmo tempo pode provocar um congestionamento.';
 $string['pluginname'] = 'Inscrição por campos de perfil do utilizador';

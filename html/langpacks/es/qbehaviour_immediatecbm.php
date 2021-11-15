@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = 'Por favor seleccione una certeza';
 $string['pluginname'] = 'Retroalimentación inmediata con CBM';
+$string['privacy:metadata'] = 'El complemento Comentarios inmediatos con comportamiento de preguntas de CBM no almacena ningún dato personal.';

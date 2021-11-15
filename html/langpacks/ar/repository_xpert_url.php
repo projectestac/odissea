@@ -30,6 +30,7 @@ $string['colour'] = 'ألوان النص والخلفية';
 $string['colourblackwhite'] = 'الخلفية: سوداء، النص: أبيض';
 $string['colourwhiteblack'] = 'الخلفية: بيضاء، النص: أسود';
 $string['copyrightyear'] = 'سنة الحقوق الفكرية';
+$string['privacy:metadata'] = 'إن ملحق مستودع رابط تنزيل Xpert لا يخزن أو يرسل أي بيانات شخصية.';
 $string['public'] = 'مجال عمومي';
 $string['rename'] = 'الاسم';
 $string['size'] = 'حجم الصورة';

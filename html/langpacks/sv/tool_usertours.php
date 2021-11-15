@@ -81,7 +81,7 @@ $string['filter_date_last_login'] = 'Användarens senaste åtkomstdatum inom';
 $string['filter_header'] = 'Guidefilter';
 $string['filter_help'] = 'Välj villkor för vilka guiden kommer att visas. Alla villkor måste uppfyllas för att guiden ska visas för användaren.';
 $string['filter_role'] = 'Roll';
-$string['filter_role_help'] = 'En guide kan vara begränsad till användare med valda roller i det sammanhang där guiden visas. Att till exempel begränsa en guide för Mitt Moodle till användare med rollen som student fungerar inte om användarna har rollen som student i en kurs (vilket i allmänhet är fallet). En guide för Mitt Moodle kan bara begränsas till användare med en systemroll.';
+$string['filter_role_help'] = 'En guide kan vara begränsad till användare med valda roller i det sammanhang där guiden visas. Att till exempel begränsa en guide för översiktssidan till användare med rollen som student fungerar inte om användarna har rollen som student i en kurs (vilket i allmänhet är fallet). En guide för översiktssidan kan bara begränsas till användare med en systemroll.';
 $string['filter_theme'] = 'Tema';
 $string['filter_theme_help'] = 'Visa guiden när användaren använder ett av de valda teman.';
 $string['importtour'] = 'Importera guide';
@@ -105,7 +105,7 @@ $string['pathmatch_help'] = 'Guider kommer att visas på godtycklig sida vars we
 Du kan använda tecknet % som jokertecken för att representera vad som helst.
 Några exempelvärden är:
 
-* /my/% - för att matcha Mitt Moodle
+* /my/% - för att matcha sidan Översikt
 * /course/view.php?id=2 - för att matcha en specifik kurs
 * /mod/forum/view.php% - för att matcha forumets diskussionslista
 * /user/profile.php% - för att matcha användarprofilsidan
@@ -182,7 +182,7 @@ $string['tour2_title_navigation'] = 'Navigering';
 $string['tour2_title_opendrawer'] = 'Öppna navigeringspanelen';
 $string['tour2_title_participants'] = 'Kursdeltagare';
 $string['tour2_title_welcome'] = 'Välkommen';
-$string['tour3_content_dashboard'] = 'Sidan "Mitt Moodle" har många funktioner som gör det lätt för dig att hitta den information som är viktig.';
+$string['tour3_content_dashboard'] = 'Översiktssidan har många funktioner som gör det lätt för dig att hitta den information som är viktig.';
 $string['tour3_content_displayoptions'] = 'Kurserna kan sorteras efter kursnamn, kortnamn eller senaste åtkomstdatum.
 
 Du kan också välja att visa kurserna i en lista, med sammanfattningsinformation eller i standardvyn \'Kort\'.';
@@ -200,7 +200,7 @@ $string['tour3_content_timeline'] = 'Blocket Tidslinje visar viktiga kommande h�
 Du kan välja att visa aktiviteter för nästa vecka, nästa månad eller ännu längre fram.
 
 Du kan även visa saker där deadline redan har passerats.';
-$string['tour3_title_dashboard'] = 'Om sidan "Mitt Moodle"';
+$string['tour3_title_dashboard'] = 'Min översikt';
 $string['tour3_title_displayoptions'] = 'Visa alternativ';
 $string['tour3_title_overview'] = 'Kursöversikt';
 $string['tour3_title_recentcourses'] = 'Senast besökta kurser';

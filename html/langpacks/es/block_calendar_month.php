@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['calendar_month:addinstance'] = 'Añadir un nuevo bloque calendario';
 $string['calendar_month:myaddinstance'] = 'Añadir un nuevo bloque de calendario al Área personal';
 $string['pluginname'] = 'Calendario';
+$string['privacy:metadata'] = 'El bloque de calendario sólo muestra información existente en el calendario.';

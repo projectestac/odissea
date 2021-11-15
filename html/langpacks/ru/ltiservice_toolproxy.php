@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Служба прокси инструмента';
+$string['privacy:metadata'] = 'Плагин Tool Proxy Service не хранит никаких личных данных.';

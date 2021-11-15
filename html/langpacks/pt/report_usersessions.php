@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['mysessions'] = 'As minhas sessões ativas';
 $string['navigationlink'] = 'Sessões do navegador';
 $string['pluginname'] = 'Relatório de sessões do utilizador';
-$string['privacy:metadata'] = 'O módulo Relatório de sessões do utilizador não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Relatório de sessões do utilizador não armazena quaisquer dados pessoais.';
 $string['thissession'] = 'Sessão atual';
 $string['usersessions:manageownsessions'] = 'Gerir as minhas sessões do navegador';

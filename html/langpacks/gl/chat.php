@@ -112,6 +112,7 @@ As conversas son especialmente útiles cando o grupo que conversa non pode reali
 $string['modulename_link'] = 'mod/chat/vista';
 $string['modulenameplural'] = 'Conversas';
 $string['neverdeletemessages'] = 'Nunca eliminar mensaxes';
+$string['nextchattime'] = 'Próxima hora de conversa:';
 $string['nextsession'] = 'Seguinte sesión planificada';
 $string['no_complete_sessions_found'] = 'Non se atoparon sesións completas.';
 $string['nochat'] = 'Non se atopou a conversa';
@@ -161,6 +162,7 @@ $string['servermax'] = 'Usuarios máximos';
 $string['serverport'] = 'Porto do servidor';
 $string['sessions'] = 'Sesións de conversa';
 $string['sessionstart'] = 'A seguinte sesión de conversa comezará en: {$a->date}, ({$a->fromnow}a partires de agora)';
+$string['sessionstartsin'] = 'A seguinte sesión de conversa comezará dentro de {$a}.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Todo o mundo pode ver as sesións pasadas';
 $string['studentseereports_help'] = 'De estabelecer como Non, soamente os usuarios que teñan a posibilidade de mod/chat:readlog poderán ver os rexistros de conversas';

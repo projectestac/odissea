@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Lista não ordenada';
-$string['privacy:metadata'] = 'O módulo atto_unorderedlist não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo atto_unorderedlist não armazena quaisquer dados pessoais.';

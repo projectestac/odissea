@@ -8,15 +8,17 @@ class com_wiris_quizzes_impl_CorrectAnswer extends com_wiris_quizzes_impl_MathCo
 		$this->id = "0";
 	}}
 	public function onSerialize($s) {
-		$s->beginTag(com_wiris_quizzes_impl_CorrectAnswer::$tagName);
+		$s->beginTag(com_wiris_quizzes_impl_CorrectAnswer::$TAGNAME);
 		$this->id = $s->attributeString("id", $this->id, "0");
 		$this->weight = $s->attributeFloat("weight", $this->weight, 1.0);
+		$this->reference = $s->attributeString("ref", $this->reference, null);
 		parent::onSerializeInner($s);
 		$s->endTag();
 	}
 	public function newInstance() {
 		return new com_wiris_quizzes_impl_CorrectAnswer();
 	}
+	public $reference;
 	public $id;
 	public $weight;
 	public function __call($m, $a) {
@@ -29,6 +31,6 @@ class com_wiris_quizzes_impl_CorrectAnswer extends com_wiris_quizzes_impl_MathCo
 		else
 			throw new HException('Unable to call «'.$m.'»');
 	}
-	static $tagName = "correctAnswer";
+	static $TAGNAME = "correctAnswer";
 	function __toString() { return 'com.wiris.quizzes.impl.CorrectAnswer'; }
 }

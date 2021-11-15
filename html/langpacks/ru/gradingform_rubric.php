@@ -61,6 +61,7 @@ $string['name'] = 'Название';
 $string['needregrademessage'] = 'Определение рубрики было изменено после оценивания ответа студента. Студент не может видеть эту рубрику, пока Вы не проверите рубрику и не обновите оценку.';
 $string['notset'] = 'Не задано';
 $string['pluginname'] = 'Рубрика';
+$string['pointsvalue'] = 'пунктов: {$a}';
 $string['previewrubric'] = 'Предпросмотр рубрики';
 $string['privacy:metadata:criterionid'] = 'Идентификатор конкретного оцениваемого критерия.';
 $string['privacy:metadata:fillingssummary'] = 'Хранит информацию об оценках пользователей, созданных согласно рубрике.';

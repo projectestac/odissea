@@ -42,3 +42,4 @@ $string['reseterror'] = 'Produciuse un erro ao restaurar a súa páxina';
 $string['reseteveryonesdashboard'] = 'Restabelecer o «Taboleiro» para todos os usuarios';
 $string['reseteveryonesprofile'] = 'Restabelecer o perfil para todos os usuarios';
 $string['resetpage'] = 'Restaurar á páxina aos valores predeterminados';
+$string['resettingdashboards'] = 'Restabelecendo os taboleiros de usuario aos valores predeterminados...';

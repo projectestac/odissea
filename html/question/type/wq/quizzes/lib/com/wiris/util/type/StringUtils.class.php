@@ -103,5 +103,17 @@ class com_wiris_util_type_StringUtils {
 		$sb->b .= _hx_substr($s, $pos + strlen($target), strlen($s) - $pos - strlen($target));
 		return $sb->b;
 	}
+	static function countOccurrences($s, $target) {
+		if($s === null || $target === null || $target === "") {
+			return -1;
+		}
+		$count = 0;
+		$pos = _hx_index_of($s, $target, null);
+		while($pos !== -1) {
+			$count++;
+			$pos = _hx_index_of($s, $target, $pos + strlen($target));
+		}
+		return $count;
+	}
 	function __toString() { return 'com.wiris.util.type.StringUtils'; }
 }

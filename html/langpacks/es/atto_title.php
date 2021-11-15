@@ -31,5 +31,5 @@ $string['h5'] = 'Encabezado (pequeño)';
 $string['p'] = 'Párrafo';
 $string['pluginname'] = 'Estilos de párrafos';
 $string['pre'] = 'Preformateado';
-$string['privacy:metadata'] = 'El plugin atto_title no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_title no almacena ningún dato personal.';
 $string['title'] = 'Estilos de párrafos';

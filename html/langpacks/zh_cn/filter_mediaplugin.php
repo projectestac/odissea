@@ -28,3 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['fallbackaudio'] = '音频链接';
 $string['fallbackvideo'] = '视频链接';
 $string['filtername'] = '多媒体插件';
+$string['linktomedia'] = '多媒体插件过滤器在文本中查找指向多媒体资源的链接，并用可播放该资源的适当多媒体播放器代码替换该链接。它还取代了&amp;lt；视频&amp;gt；及&amp;lt；音频&amp;gt；带有选定视频和音频播放器的标签。
+管理媒体播放器</a>';
+$string['privacy:metadata'] = '多媒体插件插件不存储任何个人数据。';

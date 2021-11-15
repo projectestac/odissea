@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['active'] = 'Active';
+$string['active_help'] = 'If not active, teachers can not add or edit Poodll feedback. But existing submissions are still available.';
 $string['allowedrecorders'] = 'Recorders to enable';
 $string['allowedrecordersdetails'] = '';
 $string['boardsize'] = 'Poodll- WhiteBoard Size';
@@ -40,7 +42,8 @@ $string['no'] = 'no';
 $string['pluginname'] = 'Feedback Poodll';
 $string['poodll:reviewfeedbacks'] = 'Can review Poodll feedbacks(recordings)';
 $string['poodll:use'] = 'Allow use of Poodll for feedback';
-$string['privacy:metadata'] = 'The Poodll Online Assignment Submission plugin does store personal data.';
+$string['poodllfeedbackinactive'] = 'Feedback Poodll is inactive.';
+$string['privacy:metadata'] = 'The Poodll Assignment Feedback plugin does store personal data.';
 $string['privacy:metadata:filepurpose'] = 'The recordings (Poodll file submissions) for this assignment feedback.';
 $string['privacy:path'] = 'feedback_poodll';
 $string['reallydeletefeedback'] = 'Really delete this feedback?';

@@ -36,6 +36,7 @@ $string['online_users:myaddinstance'] = 'Engadir un novo bloque de usuarios cone
 $string['online_users:viewlist'] = 'Ver a lista de usuarios conectados';
 $string['onlinestatushiding'] = 'Agochamento do estado en liña';
 $string['onlinestatushiding_desc'] = 'Se está activado, os usuarios teñen a opción de agochar o seu estado en liña a outros usuarios.';
+$string['otherusers'] = 'Outros usuarios ({$a})';
 $string['periodnminutes'] = 'últimos {$a} minutos';
 $string['pluginname'] = 'Usuarios conectados';
 $string['privacy:metadata:preference:uservisibility'] = 'Estado en liña visíbel para outros usuarios no bloque de usuarios en liña.';

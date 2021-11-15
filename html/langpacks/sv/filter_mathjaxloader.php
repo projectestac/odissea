@@ -40,7 +40,7 @@ Detta kan vara användbart för att spara bandbredd eller på grund av lokala pr
 Om du vill använda en lokal installation av MathJax laddar du först ned hela MathJax-biblioteket från https://www.mathjax.org/. Installera den sedan på en webbserver. Uppdatera slutligen MathJax-filterinställningarna <tt>httpurl</tt> och/eller <tt>httpsurl</tt> för att peka på den lokala MathJax.js URL:en.';
 $string['mathjaxsettings'] = 'MathJax-konfiguration';
 $string['mathjaxsettings_desc'] = 'Standardkonfigurationen MathJax bör fungera för de flesta användare, men MathJax är mycket konfigurerbar och något av de vanliga MathJax-konfigurationsalternativen kan läggas till här.';
-$string['privacy:metadata'] = 'Pluginmodulen MathJax lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen MathJax lagrar ingen personinformation.';
 $string['texfiltercompatibility'] = 'Kompabilitet med TeX-filter';
 $string['texfiltercompatibility_help'] = 'MathJax-filtret kan användas som ersättning för TeX-notationsfiltret.
 

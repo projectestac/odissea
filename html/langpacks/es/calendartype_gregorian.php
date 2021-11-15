@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'Gregoriano';
 $string['pluginname'] = 'Sistema de calendario gregoriano';
+$string['privacy:metadata'] = 'El complemento del formato de calendario gregoriano no almacena ningún dato personal.';

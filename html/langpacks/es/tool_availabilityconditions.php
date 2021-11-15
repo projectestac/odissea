@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['manageplugins'] = 'Administrar restricciones';
 $string['pluginname'] = 'Gestión de estado de disponibilidad';
+$string['privacy:metadata'] = 'El complemento de gestión de condiciones de disponibilidad no almacena ningún dato personal.';

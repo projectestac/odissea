@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'HTML';
-$string['privacy:metadata'] = 'إن ملحق atto_html لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_html لا تخزن أي بيانات شخصية.';

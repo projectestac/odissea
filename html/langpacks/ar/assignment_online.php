@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = 'نص عبر الإنترنت تم رفعه';
 $string['pluginname'] = 'عبر الإنترنت';
-$string['privacy:metadata'] = 'إن ملحق الواجب مع الاتصال لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة الواجب مع الاتصال لا تخزن أي بيانات شخصية.';

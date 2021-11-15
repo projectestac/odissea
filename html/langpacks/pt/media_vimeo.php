@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Vimeo';
 $string['pluginname_help'] = 'Site de partilha de vídeos Vimeo.com.';
-$string['privacy:metadata'] = 'O módulo multimédia Vimeo não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo multimédia Vimeo não armazena quaisquer dados pessoais.';

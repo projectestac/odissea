@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['category:config'] = 'Configurar instancias de inscripción de categorías';
 $string['category:synchronised'] = 'Asignaciones de rol sincronizadas con matriculación en el curso';
+$string['enrolcategorysynctask'] = 'Tarea de sincronización de inscripción de categoría';
 $string['pluginname'] = 'Categorías de matrícula';
 $string['pluginname_desc'] = 'La extensión para categoría de matriculación sincroniza cualquier asignación de rol en el contexto de categoría con la capacidad  enrol/category:synchronised permitida.';
+$string['privacy:metadata'] = 'El complemento de inscripciones de categorías no almacena ningún dato personal.';

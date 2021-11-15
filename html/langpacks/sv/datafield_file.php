@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Fält för fil';
 $string['pluginname'] = 'Fil';
-$string['privacy:metadata'] = 'Fältkomponenten Filfält lagrar ingen personlig information. Den använder tabeller definierade i mod_data.';
+$string['privacy:metadata'] = 'Fältkomponenten Filfält lagrar ingen personinformation. Den använder tabeller definierade i mod_data.';

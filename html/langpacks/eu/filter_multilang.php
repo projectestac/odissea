@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['filtername'] = 'Eduki eleanitza';
-$string['privacy:metadata'] = 'Eduki eleanitza pluginak ez du datu pertsonalik biltzen.';
+$string['filtername'] = 'Eduki eleaniztuna';
+$string['privacy:metadata'] = 'Eduki eleaniztuna pluginak ez du datu pertsonalik biltzen.';

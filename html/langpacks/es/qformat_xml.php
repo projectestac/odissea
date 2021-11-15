@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['invalidxml'] = 'Archivo XML inválido - se esperaba una cadena (usar CDATA?)';
 $string['pluginname'] = 'Formato Moodle XML';
 $string['pluginname_help'] = 'Es un formato específico de Moodle para importar y exportar preguntas utilizadas en las actividades de tipo cuestionario.';
+$string['privacy:metadata'] = 'El complemento de formato de pregunta XML no almacena ningún dato personal.';
 $string['truefalseimporterror'] = '<b> ¡Atención! </b>: La pregunta de tipo verdadero/falso \'{$a-> questiontext}\' no pudo ser importada correctamente. No estaba claro si la respuesta correcta era Verdadero o Falso. La pregunta se ha importado suponiendo de que la respuesta es \'{$a->answer}\'. Si esto no es correcto, tendrá que editar la pregunta.';
 $string['unsupportedexport'] = 'El tipo de pregunta {$a} no es soportado por la exportación a XML';
 $string['xmlimportnoname'] = 'Falta el nombre de la pregunta en el archivo XML';

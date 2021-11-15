@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Vimeo';
 $string['pluginname_help'] = 'Videodelningstjänsten Vimeo.com';
-$string['privacy:metadata'] = 'Pluginmodulen Vimeo-media lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Vimeo-media lagrar ingen personinformation.';

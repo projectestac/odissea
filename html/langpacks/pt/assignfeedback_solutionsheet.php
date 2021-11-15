@@ -39,8 +39,8 @@ $string['fromnowon'] = 'Ativar a partir de agora';
 $string['fromnowon_help'] = 'Se ativar esta opção, um professor pode selecionar a opção de mostrar a folha de soluções imediatamente no momento da criação do trabalho.';
 $string['hidesolutionsafter'] = 'Ocultar soluções após';
 $string['pluginname'] = 'Folha de soluções';
-$string['privacy:metadata'] = 'O módulo folha de soluções não armazena dados pessoais,
-mas apenas os dados de configuração do trabalho (incluindo a própria folha de solução).';
+$string['privacy:metadata'] = 'O módulo Folha de soluções não armazena dados pessoais,
+mas apenas os dados da configuração do trabalho (incluindo a própria folha de solução).';
 $string['requiresubmission'] = 'Obrigatório uma submissão para poder ver';
 $string['requiresubmission_help'] = 'Se ativar esta opção, os alunos só poderão ver as soluções se fizerem uma submissão na atividade. Isto é, além de quaisquer outras restrições.';
 $string['requiresubmissionmsg'] = 'Apenas os alunos que submeteram poderão ver as soluções.';

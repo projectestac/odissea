@@ -35,6 +35,7 @@ $string['iso6392'] = 'glg';
 $string['labelsep'] = ':';
 $string['listsep'] = ';';
 $string['locale'] = 'gl_ES.UTF-8';
+$string['localecldr'] = 'gl-ES';
 $string['localewin'] = 'Galician_Spain.1252';
 $string['localewincharset'] = '';
 $string['oldcharset'] = 'ISO-8859-1';

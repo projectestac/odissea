@@ -29,4 +29,5 @@ $string['eventgradeexported'] = 'Calificación OpenDocument exportada';
 $string['ods:publish'] = 'Publicar exportación de calificaciones ODS';
 $string['ods:view'] = 'Usar exportación de calificaciones OpenDocument';
 $string['pluginname'] = 'Hoja de cálculo OpenOffice';
+$string['privacy:metadata'] = 'El complemento de exportación de hoja de cálculo de calificaciones en OpenDocument no almacena ningún dato personal.';
 $string['timeexported'] = 'Última descarga de este curso';

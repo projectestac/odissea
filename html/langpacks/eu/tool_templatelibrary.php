@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Osagai guztiak';
 $string['component'] = 'Osagaia';
-$string['core'] = 'Muina';
+$string['core'] = 'Sistema';
 $string['coresubsystem'] = 'Azpisistema ({$a})';
 $string['documentation'] = 'Dokumentazioa';
 $string['example'] = 'Adibidea';

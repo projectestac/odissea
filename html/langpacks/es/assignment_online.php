@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['event_assessable_uploaded'] = 'Se ha subido un texto en línea.';
 $string['pluginname'] = 'En línea';
+$string['privacy:metadata'] = 'El complemento de tarea en línea no almacena ningún dato personal.';

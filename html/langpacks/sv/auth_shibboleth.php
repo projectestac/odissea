@@ -55,7 +55,7 @@ $string['auth_shibboleth_login'] = 'Shibboleth-inloggning';
 $string['auth_shibboleth_login_long'] = 'Logga in till Moodle med Shibboleth';
 $string['auth_shibboleth_manual_login'] = 'Manuell inloggning';
 $string['auth_shibboleth_select_member'] = 'Jag är medlem av...';
-$string['auth_shibboleth_select_organization'] = 'För autentisering via Shibboleth, vänligen välj din organisation i rullgardinsmenyn:';
+$string['auth_shibboleth_select_organization'] = 'För autentisering via Shibboleth, vänligen välj din organisation i listrutan:';
 $string['auth_shibbolethdescription'] = 'Med den här metoden skapas och autentiseras användare med hjälp av Shibboleth. För att läsa mer om hur du konfigurerar detta, se <a href="{$a}">Shibboleth README</a>.';
 $string['pluginname'] = 'Shibboleth';
 $string['privacy:metadata'] = 'Pluginmodulen Shibboleth-autentisering lagrar ingen personinformation.';

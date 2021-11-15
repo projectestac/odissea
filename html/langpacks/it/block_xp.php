@@ -114,6 +114,15 @@ $string['eventis'] = 'L\'evento è {$a}';
 $string['eventname'] = 'Nome dell\'evento';
 $string['eventproperty'] = 'Proprietà dell\'evento';
 $string['eventsrules'] = 'Regole degli eventi';
+$string['eventsrules_help'] = 'Questo plugin fa uso degli eventi per attribuire punti alle azioni svolte dagli studenti.
+Puoi usare la pagina seguente per aggiungere le tue regole e modificare le esistenti.
+
+Si informa di controllare la pagina _Log_ del plugin per identificare quali eventi sono innescati dagli studenti mentre svolgono attività nel corso.
+
+Risorse aggiuntive:
+
+- [Come sono calcolati i punti esperienza?](https://levelup.plus/docs/article/how-are-experience-points-calculated?ref=blockxp_help)
+- [Regole di risoluzione del problemi](https://levelup.plus/docs/article/event-rule-not-working?ref=blockxp_help)';
 $string['eventtime'] = 'Data dell\'evento';
 $string['filtermodules'] = 'Moduli del filtro';
 $string['for1day'] = 'Per un giorno';
@@ -124,6 +133,7 @@ $string['forever'] = 'Per sempre';
 $string['forthewholesite'] = 'Per tutto il sito';
 $string['give'] = 'dare';
 $string['gotofullladder'] = 'Vai alla classifica completa';
+$string['grid'] = 'Griglia';
 $string['hideparticipantsidentity'] = 'Nascondi identità dei partecipanti';
 $string['hiderank'] = 'Nascondi posizione';
 $string['incourses'] = 'Nei corsi';
@@ -141,6 +151,7 @@ $string['levelbadges'] = 'Badge di livello';
 $string['levelbadgesformhelp'] = 'Nomina i file [level].[file extension], per esempio: 1.png, 2.jpg, etc... La dimensione consigliate dell\'immagine è 100x100.';
 $string['levelcount'] = 'Numero di livelli';
 $string['leveldesc'] = 'Descrizione del livello';
+$string['leveldesc_help'] = 'Una breve descrizione del livello, che è mostrata nella pagina Informazioni vicino al livello stesso. Puoi usarlo per descrivere la ricompensa per gli studenti che raggiungono il livello, per includere le istruzioni necessarie a raggiungere questo livello, per descrivere il livello in modo alternativo (es. _Si narra che soltanto le anime più coraggiose abbiano raggiunto questo livello_), ecc...';
 $string['levelname'] = 'Nome del livello';
 $string['levelname_help'] = 'Un nome abbreviato da visualizzare al posto del valore di default _Level #1_, _Level #2_, ecc. che viene mostrato spesso. Se fornisci dei nomi per alcuni livelli, ti consigliamo di dare un nome a tutti quanti!';
 $string['levels'] = 'Livelli';
@@ -151,11 +162,14 @@ $string['levelx'] = 'Livello #{$a}';
 $string['likenotice'] = '<strong>Ti piace questo plugin?</strong> Prenditi un momento per <a href="{$a->moodleorg}" target="_blank"> aggiungerlo ai preferiti</a> on Moodle.org e <a href="{$a->github}" target="_blank">votarlo su GitHub</a>.';
 $string['limitparticipants'] = 'Limita visualizzazione partecipanti';
 $string['limitparticipants_help'] = 'L\'impostazione controlla chi è visualizzato nella classifica. I vicini sono i partecipanti posizionati sopra o sotto l\'utente corrente. Per esempio, quando scegli \'Visualizza due vicini\', solo i due partecipanti posizionati esattamente sopra e sotto l\'utente corrente nella classifica saranno visualizzati.';
+$string['list'] = 'Lista';
 $string['logging'] = 'Logging';
+$string['manually'] = 'Manualmente';
 $string['maxactionspertime'] = 'Numero massimo di azioni permesse in questo intervallo di tempo';
 $string['maxactionspertime_help'] = 'Numero massimo di azioni che consentiranno di ottenere punti durante l\'intervallo di tempo dato. Ogni altra azione sarà ignorata.';
 $string['movecondition'] = 'Sposta condizione';
 $string['moverule'] = 'Sposta regola';
+$string['name'] = 'Nome';
 $string['navinfos'] = 'Informazioni';
 $string['navladder'] = 'Classifica';
 $string['navlevels'] = 'Livelli';
@@ -165,13 +179,18 @@ $string['navreport'] = 'Report';
 $string['navrules'] = 'Regole';
 $string['navsettings'] = 'Impostazioni';
 $string['navvisuals'] = 'Visualizzazione';
+$string['nodescription'] = 'Nessuna descrizione';
 $string['nologsrecordedyet'] = 'I log non sono ancora stati registrati.';
+$string['noname'] = 'Nessun nome';
 $string['notesomesettingslocked'] = 'Da notare che alcune impostazioni potrebbero non essere modificabili se sono state bloccate da un amministratore.';
 $string['participant'] = 'Partecipante';
 $string['participatetolevelup'] = 'Partecipa al corso per ottenere punti esperienza e salire di livello!';
 $string['perpagecolon'] = 'Per pagina:';
 $string['pickaconditiontype'] = 'Scegli un tipo di condizione';
 $string['pluginname'] = 'Sali di livello!';
+$string['pluginsoutofsync'] = '_Il plugin non è sincronizzato!_
+
+Questo significa che hai aggiornato _Sali di livello!_ ma non _Sali di livello! Plus_. Anche se noi facciamo del nostro meglio per prevenire problemi, alcune funzionalità potrebbero non funzionare correttamente, compreso lo stesso _Sali di livello!_. Raccomandiamo di aggiornare _Sali di livello! Plus_ all\'ultima version. [Approfondisci] ({$a->url})';
 $string['pointsintimelinker'] = 'per';
 $string['pointsrequired'] = 'Punti esperienza richiesti';
 $string['privacy:metadata:log'] = 'Memorizza log degli eventi';
@@ -193,13 +212,15 @@ $string['privacy:path:level'] = 'Livello';
 $string['privacy:path:logs'] = 'Log';
 $string['progress'] = 'Avanzamento';
 $string['progressbar'] = 'Barra di avanzamento';
+$string['promocheatguard'] = 'Questo controllo degli imbrogli non è progettato per gestire lunghi intervalli di tempo. Per favore considera l\'aggiornamento a _Sali di livello! Plus_ per sbloccare l\'utilizzo di intervalli di tempo maggiori e altre funzionalità.<a href="{$a->url}">Approfondisci qui</a>.';
 $string['promocontactintro'] = 'Contattaci per maggiori informazioni. Non mordiamo e rispondiamo in breve tempo!';
 $string['promocontactus'] = 'Contattaci';
 $string['promoemailusat'] = 'Inviaci un\'email a _levelup@branchup.tech_.';
 $string['promoerrorsendingemail'] = 'Ahia! Non è stato possibile inviare il messaggio...per favore, invia un\'e-mail direttamente a {$a}. Grazie!';
 $string['promoifpreferemailusat'] = 'Psst! Se preferisci, invia direttamente un\'e-mail a _{$a}_.';
-$string['promointro'] = 'Il componente aggiuntivo di _Sali di livello! _ che sprigiona tutto il suo potenziale!';
-$string['promointroinstalled'] = 'L\'add-on _Level up! Plus_ è installato nel tuo sistema e tutte le sue funzionalità sono state attivate.';
+$string['promointro'] = 'Il componente aggiuntivo di _Sali di livello!_ che sprigiona tutto il suo potenziale!';
+$string['promointroinstalled'] = 'L\'add-on _Sali di livello! Plus_ è installato nel tuo sistema e tutte le sue funzionalità sono state attivate.';
+$string['promorulesdidyouknow'] = 'Lo sai che con <em>_Sali di livello! Plus_</em> gli studenti possono ricevere punti per il <em>completamento</em> dei <em>corsi</em> e delle <em>attività</em>, o anche ricevere punti in base alle loro <em>valutazioni</em>? <a href="{$a->url}">Approfondisci qui</a>.';
 $string['promoyourmessagewassent'] = 'Grazie, il tuo messaggio è stato inviato. Ti risponderemo al più presto.';
 $string['property:action'] = 'Azione dell\'evento';
 $string['property:component'] = 'Componente dell\'evento';
@@ -209,6 +230,11 @@ $string['property:target'] = 'Obiettivo dell\'evento';
 $string['rank'] = 'Posizione';
 $string['ranking'] = 'Posizionamento';
 $string['ranking_help'] = 'La posizione assoluta nella classifica è quella dell\'utente corrente. La posizione relativa è la diffenza dei punti esperienza tra un utente e i suoi vicini.';
+$string['reallydeleteuserstate'] = 'Eliminare un utente è utile solamente a rimuoverlo dalla Classifica. In tutti gli altri casi, si consiglia in alternativa d\'impostare i suoi punti a 0. Nota che l\'eliminazione non preclude l\'utente da guadagnare nuovi punti in futuro.
+
+Importante, quando si usa _Sali di livello!_ per l\'intero sito, eliminare gli utenti li farà sparire dal report e in questo caso non sarà possibile assegnare nuovamente punti. Invece, se stai utilizzando _Sali di livello!_ all\'interno di un corso, lo studente continuerà ad apparire nel report fino a quando rimarrà iscritto nel corso.
+
+Vuoi davvero eliminare i punti di questo utente?';
 $string['reallyresetallcoursestodefaults'] = 'Desideri ripristinare tutte le regole dei corsi a quelle di default? Questa azione è irreversibile.';
 $string['reallyresetcourserulestodefaults'] = 'Desideri ripristinare tutte le regole del corso a quelle di default? Questa azione è irreversibile.';
 $string['reallyresetdata'] = 'Azzerare i livelli e i punti esperienza dei partecipanti al corso?';
@@ -240,14 +266,18 @@ $string['rulecm'] = 'Attività o risorsa';
 $string['rulecm_help'] = 'La condizione sarà soddisfatta quando scatterà l\'evento nell\'attività o nella risorsa specificata.';
 $string['rulecmdesc'] = 'L\'attività o risorsa è \'{$a->contextname}\'.';
 $string['rulecmdescwithcourse'] = 'L’attività o la risorsa è: \'{$a->contextname}\' in \'{$a->coursename}\'.';
+$string['rulecminfo'] = 'Questa condizione richiede che l\'azione venga svolta in una specifica attività o risorsa.';
 $string['ruleevent'] = 'Specifico evento';
 $string['ruleeventdesc'] = 'L\'evento è \'{$a->eventname}\\';
+$string['ruleeventinfo'] = 'Scegli l\'azione che gli utenti devono svolgere da una lista predefinita di eventi.';
 $string['ruleproperty'] = 'Proprietà dell\'evento';
 $string['rulepropertydesc'] = 'La proprietà \'{$a->property}\' {$a->compare} \'{$a->value}\'.';
+$string['rulepropertyinfo'] = 'Questa condizione è da utilizzare da utenti esperti con una conoscenza tecnica degli eventi e le loro proprietà.';
 $string['ruleset'] = 'Imposta le condizioni';
 $string['ruleset:all'] = 'Tutte le condizioni sono vere';
 $string['ruleset:any'] = 'Almeno una delle condizioni è vera';
 $string['ruleset:none'] = 'Nessuna condizione è vera';
+$string['rulesetinfo'] = 'Combina condizioni multiple in una.';
 $string['rulesformhelp'] = '<p>Questo plugin permette di usare degli eventi per attribuire punti esperienza ad azioni svolte dagli studenti. Puoi usare il modulo sotto per aggiungere le tue regole e visualizzare le regole di default.</p>
 <p>Si consiglia di controllare il/i <a href="{$a->log}">log</a> per identificare quali eventi sono attivati quando esegui un\'azione nel corso, e anche per maggiori informazioni sugli eventi: <a href="{$a->list}">elenco di tutti gli eventi</a>, <a href="{$a->doc}">documentatione per gli sviluppatori</a>.</p>
 <p>Infine, nota che il plugin ignora sempre:
@@ -262,6 +292,7 @@ $string['rulesformhelp'] = '<p>Questo plugin permette di usare degli eventi per 
 $string['searchandselectcourse'] = 'Cerca e seleziona un corso';
 $string['searchandselectmodule'] = 'Cerca e seleziona un\'attività o una risorsa';
 $string['send'] = 'Invia';
+$string['setpoints'] = 'Imposta punti';
 $string['shortcode:xpbadge'] = 'Il badge che corrisponde al livello dell\'utente attuale.';
 $string['shortcode:xpiflevel'] = 'Visualizza il contenuto nel momento in cui il livello dell\'utente corrisponde.';
 $string['shortcode:xpladder'] = 'Desideri una parte della classifica.';
@@ -291,8 +322,10 @@ $string['urlaccessdeprecated'] = 'L\'accesso tramite questo URL è obsoleto, si 
 $string['usealgo'] = 'Usa algoritmo';
 $string['usecustomlevelbadges'] = 'Usa badge di livello personalizzati';
 $string['usecustomlevelbadges_help'] = 'Selezionando sì, devi inserire un\'immagine per ogni livello.';
+$string['usingalgo'] = 'Tramite algoritmo';
 $string['value'] = 'Valore';
 $string['valuessaved'] = 'I valori sono stati salvati correttamente.';
+$string['viewas'] = 'Vedi come';
 $string['viewtheladder'] = 'Visualizza classifica';
 $string['visualsintro'] = 'Caricare immagini per personalizzare l\'aspetto dei livelli';
 $string['wewillreplyat'] = 'Risponderemo a: _{$a}_.';
@@ -309,6 +342,7 @@ $string['xp:view'] = 'Visualizzare blocco e pagina relativa';
 $string['xp:viewlogs'] = 'Visualizza i log';
 $string['xpgaindisabled'] = 'Ottenimento punti disabilitato';
 $string['xprequired'] = 'XP richiesta';
+$string['xptogo'] = 'Mancano [[{$a}]]';
 $string['youreachedlevel'] = 'Hai raggiunto il livello:';
 $string['youreachedlevela'] = 'Hai raggiunto il livello {$a}!';
 $string['yourmessage'] = 'Il tuo messaggio';

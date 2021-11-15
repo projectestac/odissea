@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['csv:view'] = 'استيراد العلامات من CSV';
+$string['csv:view'] = 'استيراد التقديرات من CSV';
 $string['pluginname'] = 'ملف CSV';
 $string['privacy:metadata'] = 'إن ملحق استيراد التقديرات من CSV لا يخزن أي بيانات شخصية.';

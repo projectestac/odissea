@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Carregar um único ficheiro';
-$string['privacy:metadata'] = 'O módulo Carregar Trabalho Único não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Carregar Trabalho Único não armazena quaisquer dados pessoais.';

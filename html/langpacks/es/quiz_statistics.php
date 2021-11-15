@@ -101,6 +101,7 @@ $string['questiontype'] = 'Tipo de pregunta';
 $string['quizinformation'] = 'Información sobre el cuestionario';
 $string['quizname'] = 'Nombre del cuestionario';
 $string['quizoverallstatistics'] = 'Estadísticas globales del cuestionario';
+$string['quizstatisticscleanuptask'] = 'Limpiar registros de caché de estadísticas de cuestionarios antiguos';
 $string['quizstructureanalysis'] = 'Análisis de la estructura del cuestionario';
 $string['random_guess_score'] = 'Calificación aleatoria estimada';
 $string['rangebetween'] = '{$a->min} − {$a->max}';

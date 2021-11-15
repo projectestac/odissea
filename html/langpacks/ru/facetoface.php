@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['email:message'] = 'Сообщение';
+$string['format'] = 'Формат';
 $string['status'] = 'Статус';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '自动链接数据库';
+$string['privacy:metadata'] = '数据库自动链接插件不存储任何个人数据。';

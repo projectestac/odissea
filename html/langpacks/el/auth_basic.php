@@ -51,5 +51,6 @@ $string['timecreated'] = 'Χρόνος δημιουργίας';
 $string['timeexpired'] = 'Χρόνος λήξης';
 $string['usage'] = 'Χρήση';
 $string['username'] = 'Όνομα';
+$string['uses'] = 'Τρόπος χρήσης';
 $string['whitelist_not_set'] = 'Το <code>$CFG->auth_basic_whitelist_ips</code> δεν έχει ρυθμιστεί στο config.php, οπότε δεν θα υπάρχει περιορισμός διευθύνσεων IP.';
 $string['whitelistonly'] = 'Να επιτρέπεται μόνο η πρόσβαση στις ακόλουθες διευθύνσεις IP: <strong>{$a}</strong>';

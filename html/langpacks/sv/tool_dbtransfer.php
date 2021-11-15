@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clidriverlist'] = 'Databasdrivrutiner tillgängliga för migrering.';
 $string['cliheading'] = 'Databasmigrering - säkerställ att ingen loggar in på servern under migreringen!';
-$string['climigrationnotice'] = 'Databasmigrering pågår, vänta tills migreringen har slutförts och serveradministratören uppdaterar konfigurationen och tar bort $CFG->dataroot/climaintenance.html-filen.';
+$string['climigrationnotice'] = 'Databasmigrering pågår - vänta tills migreringen har slutförts och serveradministratören uppdaterar konfigurationen och tar bort <code>$CFG->dataroot/climaintenance.html</code>-filen.';
 $string['convertinglogdisplay'] = 'Konverterar loggvisningsåtgärder';
 $string['dbexport'] = 'Databasexport';
 $string['dbtransfer'] = 'Databasmigrering';

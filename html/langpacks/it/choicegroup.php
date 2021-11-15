@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:hasopened'] = 'Aperto:';
+$string['activitydate:willclose'] = 'Chiude:';
+$string['activitydate:willopen'] = 'Apre:';
 $string['add'] = 'Aggiungi';
 $string['add_group'] = 'Aggiungi gruppo';
 $string['add_grouping'] = 'Aggiungi raggruppamento';
@@ -99,13 +102,16 @@ $string['limitanswers'] = 'Limita il numero di risposte consentite';
 $string['limitanswers_help'] = 'L\'opzione permette di limitare il numero di studenti che possono iscriversi ai gruppi. Quando il limite viene raggiunto, nessun altro studente potrà iscriversi.
 
 Se i limiti sono disabilitati, allora potrà iscriversi un numero illimitato di studenti.';
+$string['maxenrollments'] = 'Numero massimo di iscrizioni';
+$string['maxenrollments_help'] = 'Consente di limitare il numero massimo di iscrizioni ai gruppi consentite a un partecipante. Utilizzare il valore di default **0** per renderlo illimitato.';
 $string['members/'] = 'Membri';
 $string['members/max'] = 'Membri / Capienza';
 $string['modulename'] = 'Scelta gruppo';
-$string['modulename_help'] = 'Il modulo Scelta gruppo consente agli studenti di iscriversi autonomamente in un gruppo presente in un corso. Il docente può specificare a quali gruppi gli studenti possono iscriversi e il numero massimo di studenti consentito per ciascun gruppo';
+$string['modulename_help'] = 'Il modulo Scelta gruppo consente agli studenti di iscriversi autonomamente in un gruppo presente in un corso. Il docente può specificare a quali gruppi gli studenti possono iscriversi e il numero massimo di studenti consentito per ciascun gruppo.';
 $string['modulenameplural'] = 'Scelta gruppi';
 $string['moveselectedusersto'] = 'Sposta gli utenti selezionati...';
 $string['multipleenrollmentspossible'] = 'Consenti l\'iscrizione a più gruppi';
+$string['mustchoosemax'] = 'E\' necessario scegliere un massimo di {$a} gruppi. Nessun dato è stato salvato.';
 $string['mustchooseone'] = 'Devi effettuare una scelta prima di salvare. Non è stato salvato nulla.';
 $string['name'] = 'Nome';
 $string['neverresultsviewable'] = 'I risultati non possono essere visualizzati.';
@@ -117,6 +123,7 @@ $string['notenrolledchoose'] = 'Ci dispiace, solo gli utenti iscritti possono ef
 $string['notopenyet'] = 'Ci dispiace, questa attività non sarà disponibile fino al {$a}';
 $string['notyetresultsviewable'] = 'I risultati saranno visibili soltanto dopo la chiusura dell\'attività.';
 $string['numberofuser'] = 'Il numero degli utenti';
+$string['onlyactive'] = 'Filtra le risposte in base agli utenti con iscrizioni scadute o sospese';
 $string['option'] = 'Gruppo';
 $string['page-mod-choice-x'] = 'Pagina contenente ogni scelta del gruppo';
 $string['pleaseselectonegroup'] = 'Selezionare almeno un gruppo.';

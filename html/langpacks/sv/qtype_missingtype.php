@@ -35,4 +35,4 @@ $string['pluginname'] = 'Saknad typ';
 $string['pluginnameadding'] = 'Lägger till en fråga av en typ som inte finns installerad på det här systemet';
 $string['pluginnameediting'] = 'Redigera en fråga av en typ som inte finns installerad på det här systemet';
 $string['privacy:metadata'] = 'Pluginmodulen Saknade ord-frågetyp lagrar ingen personinformation.';
-$string['warningmissingtype'] = '<b>Den här frågan är av en typ som inte har installerats på ditt Moodle än< br />Vänligen meddela din Moodle administratör. </b>';
+$string['warningmissingtype'] = '<b>Den här frågan är av en typ som inte har installerats för Moodle ännu.< br />Vänligen meddela din Moodleadministratör. </b>';

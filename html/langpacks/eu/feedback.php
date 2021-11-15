@@ -47,9 +47,9 @@ $string['cannotaccess'] = 'Inkesta honetara soilik ikastaro batetik sartu zaitez
 $string['cannotsavetempl'] = 'Txantiloiak gordetzea ez dago gaituta';
 $string['captcha'] = 'Captcha';
 $string['captchanotset'] = 'Captcha ez da ezarri';
-$string['check'] = 'Aukera anitza - erantzun anitzak';
+$string['check'] = 'Aukera anizkoitzak - erantzun anitz';
 $string['check_values'] = 'Erantzun posibleak';
-$string['checkbox'] = 'Aukera anitza - erantzun anitzak baimenduta (aukera anitzeko laukitxoak)';
+$string['checkbox'] = 'Aukera anizkoitzak - erantzun anitz baimenduta (aukera anitzeko laukitxoak)';
 $string['choosefile'] = 'Aukeratu fitxategi bat';
 $string['chosen_feedback_response'] = 'Aukeratutako inkestaren erantzunak';
 $string['closebeforeopen'] = 'Zehaztu duzun amaiera-data hasiera-data baino lehenagokoa da.';
@@ -98,9 +98,9 @@ $string['description'] = 'Deskribapena';
 $string['do_not_analyse_empty_submits'] = 'Ez analizatu bidalketa hutsak';
 $string['downloadresponseas'] = 'Jaitsi erantzun guztiak honela:';
 $string['drop_feedback'] = 'Ezabatu ikastaro honetatik';
-$string['dropdown'] = 'Aukera anitza - erantzun bakarra baimenduta (zabaltzen den menua)';
+$string['dropdown'] = 'Aukera anizkoitza - erantzun bakarra baimenduta (zabaltzen den menua)';
 $string['dropdown_values'] = 'Erantzunak';
-$string['dropdownlist'] = 'Aukera anitza - erantzun bakarra baimenduta (zabaltzen den menua)';
+$string['dropdownlist'] = 'Aukera anizkoitza - erantzun bakarra baimenduta (zabaltzen den menua)';
 $string['dropdownrated'] = 'Zabaltzen den menua (kalifikatua)';
 $string['edit_item'] = 'Editatu galdera';
 $string['edit_items'] = 'Editatu galderak';
@@ -168,30 +168,30 @@ $string['mapcoursenone'] = 'Ez dago ikastarorik esleituta. Inkesta ikastaro guzt
 $string['mapcourses'] = 'Esleitu inkesta ikastaroetarako';
 $string['mappedcourses'] = 'Esleitutako ikastaroak';
 $string['mappingchanged'] = 'Ikastaroen lotura aldatu da';
-$string['maximal'] = 'Gehienezkoa';
+$string['maximal'] = 'Gehienekoa';
 $string['messageprovider:message'] = 'Inkesta gogorarazpena';
 $string['messageprovider:submission'] = 'Inkestaren jakinarazpenak';
 $string['minimal'] = 'Gutxienekoa';
 $string['mode'] = 'Modua';
 $string['modulename'] = 'Inkesta';
-$string['modulename_help'] = 'Inkesta jarduerak irakasleari inkesta pertsonalizatuak sortzea ahalbidetzen diote, parte-hartzaileen feedbackak jasotzeko hainbat galdera-mota erabilita, tartean aukera anitzekoak, Bai/Ez modukoak eta testua idaztekoak.
+$string['modulename_help'] = 'Inkesta jarduerak irakasleari inkesta pertsonalizatuak sortzea ahalbidetzen diote, parte-hartzaileen feedbackak jasotzeko hainbat galdera-mota erabilita, tartean aukera anizkoitzekoak, Bai/Ez modukoak eta testua idaztekoak.
 
 Inkestaren emaitzak ikasleek erantzun ondoren erakutsi daitezke, baita irakasleentzat soilik erakutsi ere. Emaitzak ikasleen izenekin edo modu anonimoan erakutsi daitezke. Moodleko hasiera orrian dauden inkestak saioa hasi gabeko erabiltzaileek ere osatu ditzakete.
 
 Inkesta jarduerak erabili daitezke
 
 * Ikastaroko ebaluaziorako, hurrengo parte-hartzaileentzat edukiak hobetzen laguntzeko
-* Parte-hartzaileek ikastaroko moduluetan, ebentoetan, e.a. izena eman dezaten.
+* Parte-hartzaileek ikastaroko moduluetan, ekitaldietan, e.a. izena eman dezaten.
 * Gonbidatuen ikastaro aukerak, e.a. zundatzeko
 * Bullying-aren kontrako ikuskapena egiteko, bertan ikasleek modu anonimoan gertakarien berri eman dezaten';
 $string['modulenameplural'] = 'Inkesta';
 $string['move_item'] = 'Mugitu galdera hau';
-$string['multichoice'] = 'Aukera anitzak';
-$string['multichoice_values'] = 'Aukera anitzen balioak';
+$string['multichoice'] = 'Aukera anizkoitzak';
+$string['multichoice_values'] = 'Aukera anizkoitzen balioak';
 $string['multichoiceoption'] = '<span class="weight">({$a->weight}) </span>{$a->name}';
-$string['multichoicerated'] = 'Aukera anitzak (kalifikatua)';
-$string['multichoicetype'] = 'Aukera anitzen mota';
-$string['multiplesubmit'] = 'Baimendu bidalketa anitzak';
+$string['multichoicerated'] = 'Aukera anizkoitzak (kalifikatua)';
+$string['multichoicetype'] = 'Aukera anizkoitzen mota';
+$string['multiplesubmit'] = 'Baimendu bidalketa anitz';
 $string['multiplesubmit_help'] = 'Inkesta anonimoak gaituz gero, erabiltzaileek erantzunak nahi beste aldiz bidal ditzakete.';
 $string['name'] = 'Izena';
 $string['name_required'] = 'Izena ezinbestekoa da';
@@ -239,7 +239,7 @@ $string['question'] = 'Galdera';
 $string['questionandsubmission'] = 'Galdera eta bidalketen ezarpenak';
 $string['questions'] = 'Galderak';
 $string['questionslimited'] = 'Erakusten soilik lehen {$a} erantzunak, denak ikusteko ikusi banakako erantzunak edo jaitsi datuen taula.';
-$string['radio'] = 'Aukera anitza - erantzun bakarra';
+$string['radio'] = 'Aukera anizkoitza - erantzun bakarra';
 $string['radio_values'] = 'Erantzunak';
 $string['ready_feedbacks'] = 'Prest dauden inkestak';
 $string['required'] = 'Ezinbestekoa';
@@ -280,7 +280,7 @@ $string['textarea'] = 'Testu luzeko erantzuna';
 $string['textarea_height'] = 'Lerro-kopurua';
 $string['textarea_width'] = 'Eremuaren zabalera';
 $string['textfield'] = 'Testu laburreko erantzuna';
-$string['textfield_maxlength'] = 'Onartutako gehienezko karaktere-kopurua';
+$string['textfield_maxlength'] = 'Onartutako gehieneko karaktere-kopurua';
 $string['textfield_size'] = 'Testu-lerroaren zabalera';
 $string['there_are_no_settings_for_recaptcha'] = 'Ez da captcha konfiguratu';
 $string['this_feedback_is_already_submitted'] = 'Dagoeneko egina duzu jarduera hau.';

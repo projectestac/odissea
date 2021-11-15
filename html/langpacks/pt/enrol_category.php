@@ -30,4 +30,4 @@ $string['category:synchronised'] = 'Atribuição de papéis sincronizadas com in
 $string['enrolcategorysynctask'] = 'Tarefa de sincronização de inscrição em categoria';
 $string['pluginname'] = 'Inscrições em categorias';
 $string['pluginname_desc'] = 'O módulo de inscrição em categorias sincroniza todas as atribuições de papel no contexto da categoria para papeis com a permissão \'enrol/category:synchronised\' assinalada.';
-$string['privacy:metadata'] = 'O módulo Inscrições em categorias não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Inscrições em categorias não armazena armazena quaisquer dados pessoais.';

@@ -43,8 +43,7 @@ $string['oauth2serviceslink'] = '<a href="{$a}" title="Hiperligação à configu
 $string['owner'] = 'Proprietário: {$a}';
 $string['pluginname'] = 'Google Drive';
 $string['presentationformat'] = 'Formato predefinido de importação de apresentações';
-$string['privacy:metadata:repository_googledocs'] = 'O módulo repositório Google Drive não armazena dados pessoais, mais transmite dados do utilizador do
-Moodle para o sistema remoto.';
+$string['privacy:metadata:repository_googledocs'] = 'O módulo repositório Google Drive não armazena quaisquer dados pessoais, mas transmite dados do utilizador do Moodle para o sistema remoto.';
 $string['privacy:metadata:repository_googledocs:email'] = 'O e-mail do repositório Google Drive.';
 $string['privacy:metadata:repository_googledocs:searchtext'] = 'Pesquisa de texto no repositório Google Drive do utilizador.';
 $string['searchfor'] = 'Pesquisar resultados por:';

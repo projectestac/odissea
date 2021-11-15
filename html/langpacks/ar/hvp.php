@@ -48,6 +48,14 @@ $string['displayoptionpermissions'] = 'الإظهار فقط إذا كانت ل�
 $string['displayoptionpermissionsembed'] = 'الإظهار فقط إذا كانت للمستخدم صلاحيات تضمين H5P';
 $string['downloadtitle'] = 'تنزيل هذا المحتوى بشكل ملف H5P.';
 $string['editinfotitle'] = 'تحرير معلومات <strong>:title</strong>';
+$string['emailconfirmbody'] = 'مرحبًا {$a->username}،
+
+شكرًا لتسليم إجابتك إلى \'{$a->hvpname}\' في المساق \'{$a->coursename}\'.
+
+هذه الرسالة تؤكد بأن إجابتك قد تم حفظها.
+
+يمكنك الوصول إلى H5P هذا من {$a->hvpurl}.';
+$string['emailconfirmsmall'] = 'شكرًا لتسليم إجابتك إلى \'{$a->hvpname}\'';
 $string['embedtitle'] = 'معاينة الترميز البرمجي المضمن لهذا المحتوى.';
 $string['enablecopyright'] = 'زر الحقوق الفكرية';
 $string['enablesavecontentstate'] = 'حفظ حالة المحتوى';
@@ -90,7 +98,7 @@ $string['pddl'] = 'توجه المجال العام ورخصته';
 $string['pdm'] = 'علامة المجال العام';
 $string['previouspage'] = 'الصفحة السابقة';
 $string['privacy:metadata:core_files'] = 'يخزن نشاط H5P الملفات التي تم رفعها كجزء من محتوى H5P';
-$string['privacy:metadata:core_grades'] = 'يخزن نشاط H5P علامات المستخدمين الذين أجابوا على محتوى H5P';
+$string['privacy:metadata:core_grades'] = 'يخزن نشاط H5P تقديرات المستخدمين الذين أجابوا على محتوى H5P';
 $string['privacy:metadata:hvp_events'] = 'يتتبع أحداث H5P';
 $string['privacy:metadata:hvp_events:content_title'] = 'عنوان المحتوى';
 $string['privacy:metadata:hvp_events:created_at'] = 'وقت إنشاء الحدث';
@@ -106,7 +114,7 @@ $string['privacy:metadata:hvp_xapi_results:description'] = 'وصف المحتو�
 $string['privacy:metadata:hvp_xapi_results:max_score'] = 'أقصى درجة ممكن تحقيقها للحدث';
 $string['privacy:metadata:hvp_xapi_results:raw_score'] = 'الدرجة الممكن تحقيقها للحدث';
 $string['question'] = 'السؤال';
-$string['reportingquestionsremaininglabel'] = 'الأسئلة المتبقية لوضع علاماتها';
+$string['reportingquestionsremaininglabel'] = 'الأسئلة الباقية بدون تقديرات';
 $string['reportingscaledscorelabel'] = 'درجة سجل التقديرات:';
 $string['reportingscorelabel'] = 'الدرجة:';
 $string['reportnotsupported'] = 'غير مدعوم';
@@ -124,3 +132,4 @@ $string['upgradeheading'] = 'ترقية محتوى {$a}';
 $string['upgradelibrarycontent'] = 'ترقية محتوى المكتبة';
 $string['upgrademessage'] = 'أنت على وشك ترقية عينة/عينات محتوى {$a}. يرجى اختيار إصدار الترقية.';
 $string['upgradenothingtodo'] = 'لا توجد عينات محتوى لترقيتها.';
+$string['welcomecontactus'] = 'إذا كانت لديك أي إفادة، لا تتردد في <a {$a}>التواصل معنا</a>. نحن نتعامل مع الإفادات بكل جدية ونكرس جهدنا لجعل H5P أفضل كل يوم!';

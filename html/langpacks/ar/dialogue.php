@@ -35,6 +35,7 @@ $string['eventconversationdeleted'] = 'محادثة تم حذفها';
 $string['eventconversationviewed'] = 'محادثة تمت معاينتها';
 $string['eventreplycreated'] = 'رد تم إنشاؤه';
 $string['firstname'] = 'الاسم الأول';
+$string['fullname'] = 'الاسم الكامل';
 $string['lastname'] = 'الاسم الأخير';
 $string['messages'] = 'الرسائل';
 $string['nopermissiontoclose'] = 'ليست لديك صلاحية إغلاق هذه المحادثة!';

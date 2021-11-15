@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['badges:addinstance'] = 'Lägg till ett nytt Mina senaste märken-block';
+$string['badges:addinstance'] = 'Lägg till nytt Mina senaste märken-block';
 $string['badges:myaddinstance'] = 'Lägg till ett nytt block för Mina senaste
-märken på Mitt Moodle';
+märken till översiktssidan';
 $string['nothingtodisplay'] = 'Du har inga märken att visa';
 $string['numbadgestodisplay'] = 'Antal senaste märken att visa';
 $string['pluginname'] = 'Senaste märken';

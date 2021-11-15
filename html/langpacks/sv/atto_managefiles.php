@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['deleteselected'] = 'Radera valda filer';
-$string['filemanager'] = 'Filhanteraren';
+$string['deleteselected'] = 'Ta bort valda filer';
+$string['filemanager'] = 'Filhanterare';
 $string['hasmissingfiles'] = 'Varning! Följande filer som refereras till i textområdet verkar saknas:';
 $string['managefiles'] = 'Hantera filer';
 $string['missingfiles'] = 'Saknade filer';

@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = 'Nero';
+$string['color_blue'] = 'Blu';
+$string['color_green'] = 'Verde';
+$string['color_red'] = 'Rosso';
+$string['color_white'] = 'Bianco';
+$string['color_yellow'] = 'Giallo';
 $string['pluginname'] = 'Colore sfondo';
 $string['privacy:metadata'] = 'Il plugin atto_backcolor non memorizza dati personali.';

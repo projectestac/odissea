@@ -30,6 +30,7 @@ $string['accept'] = '接受';
 $string['action'] = '动作';
 $string['actionchoice'] = '您想怎么处理文件“{$a}”？';
 $string['actions'] = '设置';
+$string['actionsfor'] = '为{$a}采取行动';
 $string['actionsmenu'] = '设置菜单';
 $string['active'] = '激活';
 $string['activeusers'] = '活跃用户';
@@ -179,7 +180,7 @@ $string['backtopageyouwereon'] = '回到刚才的页面';
 $string['backup'] = '备份';
 $string['backupactivehelp'] = '选择是否进行自动备份。';
 $string['backupadhocpending'] = '课程备份临时任务挂起';
-$string['backupcancelled'] = '备份被中断';
+$string['backupcancelled'] = '备份被取消';
 $string['backupcoursefileshelp'] = '如果允许，那么课程文件将会被包含在自动备份中';
 $string['backupdate'] = '备份日期';
 $string['backupdatenew'] = '{$a->TAG}现在是{$a->year}{$a->month}{$a->mday}，{$a->weekday}<br />';
@@ -227,6 +228,9 @@ $string['bycourseorder'] = '按课程顺序';
 $string['byname'] = '由“{$a}”';
 $string['bypassed'] = '忽视';
 $string['cachecontrols'] = '缓存控制';
+$string['calltofeedback'] = '本软件的创建者希望得到您的反馈。';
+$string['calltofeedback_give'] = '提供有关此软件的反馈';
+$string['calltofeedback_remind'] = '稍后提醒我';
 $string['cancel'] = '取消';
 $string['cancelled'] = '取消';
 $string['categories'] = '课程类别';
@@ -248,7 +252,9 @@ $string['changepassword'] = '更改密码';
 $string['changesmadereallygoaway'] = '您做出了改动。您确定要离开并放弃所有改动吗？';
 $string['changessaved'] = '更改已经保存';
 $string['check'] = '检查';
+$string['checkactual'] = '实际上';
 $string['checkall'] = '检查全部';
+$string['checkexpected'] = '预期的';
 $string['checkingbackup'] = '检查备份';
 $string['checkingcourse'] = '检查课程';
 $string['checkingforbbexport'] = '检查BlackBoard的输出';
@@ -256,6 +262,8 @@ $string['checkinginstances'] = '检查实例';
 $string['checkingsections'] = '检查小节';
 $string['checklanguage'] = '校对语言';
 $string['checknone'] = '不检查';
+$string['checks'] = '检查项';
+$string['checksok'] = '所有\'{$a}\'检查通过';
 $string['childcoursenotfound'] = '未发现子课程！';
 $string['childcourses'] = '子课程';
 $string['choose'] = '选择';
@@ -269,6 +277,7 @@ $string['chooseuser'] = '选择一个用户';
 $string['city'] = '市/县';
 $string['cleaningtempdata'] = '清空临时数据';
 $string['clear'] = '清空';
+$string['clearsearch'] = '清除搜索输入';
 $string['clickhelpiconformoreinfo'] = '...继续...点击帮助图标阅读全文';
 $string['clickhere'] = '点击这里...';
 $string['clicktochangeinbrackets'] = '{$a}(点击修改)';
@@ -285,6 +294,7 @@ $string['commentsnotenabled'] = '未启用评论功能';
 $string['commentsrequirelogin'] = '查看评论，需要你登录。';
 $string['comparelanguage'] = '比较并编辑当前语言';
 $string['complete'] = '完全';
+$string['completed'] = '完成';
 $string['completereport'] = '完整报表';
 $string['configuration'] = '设置';
 $string['confirm'] = '确认';
@@ -292,7 +302,7 @@ $string['confirmcheckfull'] = '您真的确认{$a}？';
 $string['confirmcoursemove'] = '你确定要移动这一课程({$a->course})到这一类别({$a->category})?';
 $string['confirmdeletesection'] = '你确信想要完全删除 "{$a}"小节以及里面的全部活动？';
 $string['confirmed'] = '您的注册已经得到确认';
-$string['confirmednot'] = '您的注册尚未得到确认!';
+$string['confirmednot'] = '您的注册尚未得到确认，请检查你的邮箱是否有确认邮件。';
 $string['considereddigitalminor'] = '您太小了，不能在这个站点上注册账号。';
 $string['content'] = '内容';
 $string['contentbank'] = '内容库';
@@ -307,7 +317,7 @@ $string['convertingwikitomarkdown'] = '把Wiki转为Markdown';
 $string['cookiesenabled'] = '您浏览器的 cookies 设置必须打开';
 $string['cookiesenabled_help'] = '本站使用两个cookie：
 
-最重要的是会话cookie，通常叫做 MoodleSession。您必须在浏览器里接受这个 cookie，才能使您的登录在页与页之间连续有效。当您登出或关闭浏览器，这个 cookie 在浏览器和服务器里都会被删除。
+最基本的是会话cookie，通常叫做 MoodleSession。您必须在浏览器里接受这个 cookie以提供连续性，并在浏览网站时保持登录状态。当您登出或关闭浏览器，这个 cookie 在浏览器和服务器里都会被删除。
 
 另一个 cookie 纯粹是为了方便，通常被叫做类似 MOODLEID 之类的名字。它只用来在浏览器里记住您的用户名。这意味着当您再次回到本站，登录页面里的用户名已经替您填好了。拒绝此 cookie 是安全的，只不过每次登录都要重新输入用户名而已。';
 $string['cookiesenabledonlysession'] = '您浏览器的 cookies 设置必须打开';
@@ -416,12 +426,11 @@ $string['courserequestwarning'] = '允许用户自助选课请求并分配 {$a}�
 $string['courserestore'] = '课程恢复';
 $string['courses'] = '课程';
 $string['coursesearch'] = '搜索课程';
-$string['coursesearch_help'] = '<p>您可以一次使用多关键字搜索，并按照下面的方式重新定义你的搜索:</p>
-<ul>
-<li>word: 搜索任何包含该关键字的内容。</li>
-<li>+word: 严格匹配。</li>
-<li>-word: 结果中不含该关键词。</li>
-</ul>';
+$string['coursesearch_help'] = '您可以一次使用多关键字搜索，并按照下面的方式重新定义你的搜索:
+
+*word: 搜索任何包含该关键字的内容
+*+word: 严格匹配
+*-word: 结果中不含该关键词';
 $string['coursesectionsummaries'] = '课程小节概述';
 $string['coursesectiontitle'] = '课程： {$a->course}, {$a->sectionname}: {$a->sectiontitle}';
 $string['coursesettings'] = '课程缺省设置';
@@ -563,7 +572,7 @@ $string['displayonpage'] = '在页面显示';
 $string['dndcourse'] = '你可以用拖动这一课程来改变它的排列顺序，或是把它移到另一个类别中。';
 $string['dndenabled_inbox'] = '您可以通过拖放文件到此处来添加文件。';
 $string['dndnotsupported'] = '不支持拖曳';
-$string['dndnotsupported_help'] = '你的浏览器不支持以拖曳方式上传文件。<br />这一功能在所有当前版本的Chrome，Firefox 和 Safari，以及 Internet Explorer v10 以上都可以使用。';
+$string['dndnotsupported_help'] = '你的浏览器不支持以拖曳方式上传文件。这一功能在所有当前版本的Chrome，Firefox 和 Safari，以及 Internet Explorer v10 以上都可以使用。';
 $string['dndnotsupported_insentence'] = '不支持拖曳';
 $string['dnduploadwithoutcontent'] = '没有上传任何内容';
 $string['dndworkingfile'] = '通过拖放文件到课程小节进行上传';
@@ -638,7 +647,7 @@ $string['emailagain'] = '电子邮件(重复)';
 $string['emailalreadysent'] = '一封重置密码的邮件已经发出。请检查您的邮箱。';
 $string['emailcharset'] = 'Email字符集';
 $string['emailconfirm'] = '确认您的帐号';
-$string['emailconfirmation'] = '{$a->firstname}，您好：
+$string['emailconfirmation'] = '您好：
 
 刚才您用您的电子邮箱地址在“{$a->sitename}”上申请了一个新帐号。
 
@@ -671,7 +680,7 @@ $string['emaildisable'] = '这个email地址已禁用';
 $string['emaildisableclick'] = '点击此处不再向此地址发送任何邮件';
 $string['emaildisplay'] = '显示Email';
 $string['emaildisplay_help'] = '特权用户（例如教师或管理员）将看到您的邮箱地址。';
-$string['emaildisplaycourse'] = '只允许课程成员查看我的email地址';
+$string['emaildisplaycourse'] = '仅允许其他课程参与者查看我的电子邮件地址';
 $string['emaildisplaycoursemembersonly'] = '(对课程其它参与者可见)';
 $string['emaildisplayeveryone'] = '(对所有人可见)';
 $string['emaildisplayhide'] = '(对所有非特权用户隐藏)';
@@ -943,22 +952,20 @@ $string['gpl'] = '版权所有 (C) 1999及以后  Martin Dougiamas  (http://mood
 
 发布该软件是希望它有用有益，但不提供任何形式的担保，不论是明确的还是隐含的，包括但不限于可销售和适合特定用途的隐含保证。
 
-查看Moodle许可证信息页了解详情：
-http://docs.moodle.org/en/License';
+查看Moodle许可证信息页了解详情：http://docs.moodle.org/en/License';
 $string['gpl3'] = '版权所有 (C) 1999及以后  Martin Dougiamas  (http://moodle.com)
 
 该系统是自由软件；您可以按照自由软件基金会所公布的GNU通用公共许可证(GPL)进行修改或重新发布；许可证可以是第3版或（由您决定）更新的版本。
 
 发布该软件是希望它有用有益，但不提供任何形式的担保，不论是明确的还是隐含的，包括但不限于可销售和适合特定用途的隐含保证。
 
-查看Moodle许可证信息页了解详情：
-http://docs.moodle.org/en/License';
+查看Moodle许可证信息页了解详情：http://docs.moodle.org/en/License';
 $string['gpllicense'] = 'GPL许可证';
 $string['grade'] = '成绩';
 $string['gradenoun'] = '成绩';
 $string['grades'] = '成绩';
 $string['gradeverb'] = '成绩';
-$string['gravatarenabled'] = '本站支持<a href="http://www.gravatar.com/">Gravatar</a> 。如果您不上传头像，Moodle将会尝试从您的Gravatar加载头像。';
+$string['gravatarenabled'] = '本站支持<a href="http://www.gravatar.com/">Gravatar</a> 。如果您不上传头像，Moodle将会尝试从Gravatar加载头像。';
 $string['group'] = '小组';
 $string['groupadd'] = '添加新组';
 $string['groupaddusers'] = '添加所选的到组';
@@ -1082,10 +1089,10 @@ $string['indicator:completeduserprofiledef'] = '用户完善了个人档案';
 $string['indicator:completeduserprofiledef_help'] = '已同意网站政策，用户已填写以下字段：机构、部门、地址、城市、国家、URL。';
 $string['indicator:completionenabled'] = '‎已启用进度跟踪‎';
 $string['indicator:completionenabled_help'] = '这个指标表示这门课程已经启用了进度跟踪。';
-$string['indicator:nostudent'] = '没有学生';
-$string['indicator:nostudent_help'] = '这个指标反映了这门课程没有学生。';
-$string['indicator:noteacher'] = '没有教师';
-$string['indicator:noteacher_help'] = '这个指标反映了这门课没有教师。';
+$string['indicator:nostudent'] = '学生选课';
+$string['indicator:nostudent_help'] = '该指标反映了课程中学生的可选择性。';
+$string['indicator:noteacher'] = '可选教师';
+$string['indicator:noteacher_help'] = '这个指标反映了这门课教师的可选择性。';
 $string['indicator:potentialcognitive'] = '课程潜在的认知深度';
 $string['indicator:potentialcognitive_help'] = '这一指标是基于学生参与课程活动所能达到的潜在认知深度。';
 $string['indicator:potentialcognitivedef'] = '课程潜在认知深度';
@@ -1182,7 +1189,7 @@ $string['maincoursepage'] = '课程主页面';
 $string['makeafolder'] = '新建文件夹';
 $string['makeavailable'] = '标记为可用';
 $string['makeeditable'] = '如果您设置“{$a}”为Web服务器进程(例如apache)可写，那么您可以在此页中直接编辑该文件';
-$string['makethismyhome'] = '将此页设为我的缺省主页';
+$string['makethismyhome'] = '将此页设为我的个人主页';
 $string['makeunavailable'] = '标记为不可用';
 $string['manageblocks'] = '版块';
 $string['managecategorythis'] = '管理这一类别';
@@ -1292,7 +1299,7 @@ $string['modvisiblewithstealth_help'] = '如果可见性设为“在课程页面
 $string['month'] = '月';
 $string['months'] = '月';
 $string['moodledocs'] = 'Moodle文档';
-$string['moodledocslink'] = '此页的Moodle文档';
+$string['moodledocslink'] = '帮助和文档';
 $string['moodlelogo'] = 'Moodle图标';
 $string['moodlerelease'] = 'Moodle发行版';
 $string['moodleversion'] = 'Moodle版本';
@@ -1663,7 +1670,7 @@ $string['redirect'] = '重定向';
 $string['reducesections'] = '减少小节的数量';
 $string['refresh'] = '刷新';
 $string['refreshingevents'] = '刷新事件';
-$string['registration'] = 'Moodle注册';
+$string['registration'] = '注册Moodle';
 $string['registrationcontact'] = '允许从公众网络访问';
 $string['registrationcontactno'] = '否，我不愿意别人联系我。';
 $string['registrationcontactyes'] = '是，提供表单供其它 Moodle 用户联系我。';
@@ -1673,9 +1680,9 @@ $string['registrationinfo'] = '<p>您可以在本页面中到moodle.org注册您
 <p>如果您愿意，那么可以把您的站名、国家和URL放到Moodle官方网站的公用列表中。</p>
 <p>所有的新注册在加入列表之前都会被人工验证。不过一旦您被加入列表中，那么您可以随时通过提交这个表单来更新您的注册信息（公用列表也会更新）。</p>';
 $string['registrationinfotitle'] = '注册信息';
-$string['registrationno'] = '否，我不想接收任何来自 Moodle 总部的电子邮件';
+$string['registrationno'] = '否，我不想接收任何电子邮件';
 $string['registrationsend'] = '发送注册信息到moodle.org';
-$string['registrationyes'] = '是，通知我重要信息（如安全问题或版本发布）';
+$string['registrationyes'] = '是，通知我新的Moodle版本，安全警告和其他重要信息';
 $string['reject'] = '拒绝';
 $string['rejectdots'] = '拒绝...';
 $string['relativedatesmode'] = '相对日期模式';
@@ -1726,7 +1733,7 @@ $string['resourcedisplaypopup'] = '在弹出窗口中';
 $string['resources'] = '资源';
 $string['resources_help'] = '利用资源类型，几乎可以把任意类型的web资源插入到课程中';
 $string['restore'] = '恢复';
-$string['restorecancelled'] = '恢复被取消';
+$string['restorecancelled'] = '恢复被取消的';
 $string['restorecannotassignroles'] = '恢复课程的过程需要分配角色，但是您没有相应的权限';
 $string['restorecannotcreateorassignroles'] = '恢复课程的过程需要新建或分配角色，但是您没有相应的权限';
 $string['restorecannotcreateuser'] = '恢复课程需要从备份文件创建用户“{$a}”，但是您没有相应的权限';
@@ -1849,7 +1856,7 @@ $string['servererror'] = '与服务器通信发生错误';
 $string['serverlocaltime'] = '服务器的当地时间';
 $string['sessionforceclean'] = '‎作为安全预防措施，用户生成的脚本已在此会话中禁用。‎';
 $string['sessiontimeoutsoon'] = '您的会话即将超时。是否要延长当前会话?';
-$string['setcategorytheme'] = '设置类别主题风格';
+$string['setcategorytheme'] = '设置分类主题';
 $string['setpassword'] = '设定密码';
 $string['setpasswordinstructions'] = '请在下面输入您的新密码，然后保存设置。';
 $string['settings'] = '设置';
@@ -1950,7 +1957,7 @@ $string['stats'] = '统计';
 $string['statslogins'] = '登录';
 $string['statsmodedetailed'] = '详细（用户）信息';
 $string['statsmodegeneral'] = '一般信息';
-$string['statsnodata'] = '课程和学时没有提供可使用的数据。';
+$string['statsnodata'] = '没有关于课程和时间段组合的可用数据。';
 $string['statsnodatauser'] = '课程，用户和学时没有提供可使用的数据。';
 $string['statsoff'] = '当前统计没有激活。';
 $string['statsreads'] = '浏览';
@@ -1959,7 +1966,7 @@ $string['statsreport10'] = '用户活跃度';
 $string['statsreport11'] = '最活跃课程';
 $string['statsreport12'] = '最活跃课程（加权）';
 $string['statsreport13'] = '最具参与性课程（学生）';
-$string['statsreport14'] = '最具参与性课程（浏览/发布）';
+$string['statsreport14'] = '最具参与性的课程(发布/浏览）';
 $string['statsreport2'] = '浏览（全部角色）';
 $string['statsreport3'] = '发布（全部角色）';
 $string['statsreport4'] = '所有活动（全部角色）';

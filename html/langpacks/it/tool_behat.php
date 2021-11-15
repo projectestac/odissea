@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aim'] = 'Tool amministrativo per aiutare sviluppatori e tester a creare file .feature che descrivono le funzionalità di Moodle. I file potranno essere eseguiti automaticamente. Le definizioni disponibili degli step sono elencate sotto.';
 $string['allavailablesteps'] = 'Tutte le definizioni disponibili degli step';
+$string['errorapproot'] = '$CFG->behat_ionic_dirroot non punta a un\'installazione valida dello sviluppatore dell\'app Moodle.';
 $string['errorbehatcommand'] = 'Si è verificato un errore durante l\'elaborazione CLI di behat. Prova a lanciare manualmente "{$a} --help" via CLI per ottenere maggiori informazioni sul problema.';
 $string['errorcomposer'] = 'Le dipendenze di Composer non sono installate.';
 $string['errordataroot'] = '$CFG->behat_dataroot non impostata o non valida.';
@@ -56,6 +57,7 @@ $string['stepsdefinitionstype'] = 'Tipo';
 $string['theninfo'] = 'Poi. Verifiche per assicurarsi che i risultati ottenuti siano quelli attesi.';
 $string['unknownexceptioninfo'] = 'Si è verificato un errore in Selenium o nel browser. Per favore accertati di usare la versione più recente di Selenium: Errore:';
 $string['viewsteps'] = 'Filtro';
+$string['warndirrootconfigfound'] = 'È stato trovato un file di configurazione in {$a}. Questo file non viene aggiornato automaticamente e potrebbe diventare obsoleto. Ti consigliamo di rimuovere questo file';
 $string['wheninfo'] = 'Quando. Azioni che generano un evento';
 $string['wrongbehatsetup'] = 'Il setup bheat presenta dei problemi e non è possibile elencare le definizioni dei passi:<b>{$a->errormsg}</b><br/><br/>E\' necessario accertarsi che:<ul>
 <li>$CFG->behat_dataroot, $CFG->behat_prefix e $CFG->behat_wwwroot siano impostate nel file config.php con valori diversi da  $CFG->dataroot, $CFG->prefix e $CFG->wwwroot.</li>

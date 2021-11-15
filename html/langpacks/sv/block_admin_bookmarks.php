@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['admin_bookmarks:addinstance'] = 'Lägg till ett nytt block för admins bokmärken';
-$string['admin_bookmarks:myaddinstance'] = 'Lägg till ett nytt block för admins bokmärken på Mitt Moodle';
+$string['admin_bookmarks:myaddinstance'] = 'Lägg till ett nytt block för admin-bokmärken till översiktssidan';
 $string['pluginname'] = 'Administratörsbokmärken';
 $string['privacy:metadata'] = 'Admin bokmärken-blocket visar bara data som lagras på andra platser.';

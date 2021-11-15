@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Åtkomstregel baserat på IP adress';
-$string['privacy:metadata'] = 'Pluginmodulen IP-adress åtkomstregel för Test lagrar ingen personinformation.';
-$string['subnetwrong'] = 'Det här testet är endast åtkomligt från vissa platser, den här datorn är inte i listan över tillåtna platser.';
+$string['privacy:metadata'] = 'Pluginmodulen IP-adress åtkomstregel för kunskapstest lagrar ingen personinformation.';
+$string['subnetwrong'] = 'Det här kunskapstestet är endast åtkomligt från vissa platser. Den här datorn finns inte med i listan över tillåtna platser.';

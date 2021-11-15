@@ -29,14 +29,34 @@ $string['allowdeletes'] = 'Permitir eliminar';
 $string['allowrenames'] = 'Permitir renombrar';
 $string['allowsuspends'] = 'Permitir suspensión y activación de cuentas';
 $string['assignedsysrole'] = 'Sistema asignado en el sistema {$a}';
+$string['clidefault'] = 'Por defecto:';
+$string['clierrorargument'] = 'El valor del argumento --{$a->name} no es válido. Valores permitidos: {$a->values}';
+$string['clifile'] = 'Ruta al fichero CSV con los datos del usuario. Obligatorio.';
+$string['clifilenotreadable'] = 'El archivo {$a} no existe o no se puede leer';
+$string['clihelp'] = 'Imprimir esta ayuda.';
+$string['climissingargument'] = 'El argumento --{$a} es obligatorio';
+$string['clititle'] = 'Herramienta de carga de usuario a través de línea de comando.';
+$string['clivalidationerror'] = 'Error de validación:';
 $string['csvdelimiter'] = 'Delimitador CSV';
 $string['defaultvalues'] = 'Valores por defecto';
 $string['deleteerrors'] = 'Eliminar errores';
 $string['encoding'] = 'Codificación';
 $string['errormnetadd'] = 'No se puede añadir usuarios externos';
+$string['errorprefix'] = 'Error:';
 $string['errors'] = 'Errores';
+$string['examplecsv'] = 'Archivo de texto de ejemplo';
+$string['examplecsv_help'] = 'Para usar el archivo de texto de ejemplo, descárguelo y luego ábralo con un editor de texto o de hoja de cálculo. Deje la primera línea sin cambios, luego edite las siguientes líneas (registros) y añada sus datos de usuario, agregando más líneas según sea necesario. Guarde el archivo como CSV y luego cárguelo.
+
+El archivo de texto de ejemplo también se puede utilizar para realizar pruebas, ya que puede obtener una vista previa de los datos del usuario y puede optar por cancelar la acción antes de que se creen las cuentas de usuario.';
+$string['infoprefix'] = 'Información:';
+$string['invalidtheme'] = 'El tema "{$a}" no está instalado y se ignorará.';
+$string['invalidupdatetype'] = 'Esta opción no puede seleccionarse con el tipo de subida/carga elegido.';
+$string['invaliduserdata'] = 'Se detectaron datos no válidos para el usuario {$a} y se limpiaron automáticamente.';
+$string['linex'] = 'Línea {$a}';
 $string['nochanges'] = 'Sin cambios';
+$string['notheme'] = 'No hay ningún tema definido para este usuario.';
 $string['pluginname'] = 'Subida de usuario';
+$string['privacy:metadata'] = 'El complemento de subida de usuarios no almacena ningún dato personal.';
 $string['renameerrors'] = 'Errores de renombrado';
 $string['requiredtemplate'] = 'Exigido. Puede utilizar sintaxis de plantilla aquí (%l = lastname, %f = firstname, %u = username). Consulte la ayuda para ver detalles y ejemplos.';
 $string['rowpreviewnum'] = 'Previsualizar filas';
@@ -57,12 +77,12 @@ $string['uploadpictures_help'] = 'Las imágenes de los usuarios se pueden cargar
 Tenga en cuenta que el tamaño del archivo zip no puede superar el límite establecido en la configuración "políticas de sitio" de su sitio Moodle. En cualquier caso, siempre podrá preparar varios paquetes de imágenes comprimidas y subirlas por partes.';
 $string['uploaduser:uploaduserpictures'] = 'Subir foto del usuario';
 $string['uploadusers'] = 'Subir usuarios';
-$string['uploadusers_help'] = 'Los usuarios pueden subirse (y, opcionalmente, matricularse en cursos) por medio de un archivo de texto. El formato debe ser el siguiente:
+$string['uploadusers_help'] = 'Los usuarios pueden cargarse (y, opcionalmente, inscribirse en cursos) a través de un archivo de texto. El formato del archivo debe ser el siguiente:
 
-* Cada línea contiene solo un registro.
-* Cada registro es una serie de datos separados por comas (o por cualquier otro delimitador)
+* Cada línea del archivo contiene un registro
+* Cada registro es una serie de datos separados por comas (u otros delimitadores)
 * El primer registro contiene una lista de nombres de campo que definen el formato del resto del archivo
-* Los nombres de campo necesarios son username, password, firstname, lastname, email';
+* Los nombres de campo obligatorios son nombre de usuario, contraseña, nombre, apellido, correo electrónico';
 $string['uploaduserspreview'] = 'Previsualizar subida de usuarios';
 $string['uploadusersresult'] = 'Resultados de subida de usuarios';
 $string['useraccountupdated'] = 'Usuario actualizado';
@@ -75,6 +95,7 @@ $string['usersrenamed'] = 'Usuarios renombrados';
 $string['usersskipped'] = 'Usuarios pasados por alto';
 $string['usersupdated'] = 'Usuarios actualizados';
 $string['usersweakpassword'] = 'Usuarios con contraseña débil';
+$string['userthemesnotallowed'] = 'Los temas de usuario no están habilitados, por lo que se ignorarán los incluidos en el archivo de usuarios de carga.';
 $string['uubulk'] = 'Seleccionar para operaciones masivas con usuarios';
 $string['uubulkall'] = 'Todos los usuarios';
 $string['uubulknew'] = 'Nuevos usuarios';
@@ -98,3 +119,4 @@ $string['uuupdatefromfile'] = 'Sobrescribir con valores del archivo';
 $string['uuupdatemissing'] = 'Rellenar datos ausentes con valores del archivo y valores por defecto';
 $string['uuupdatetype'] = 'Detalles de usuario existente';
 $string['uuusernametemplate'] = 'Plantilla de nombre de usuario';
+$string['warningprefix'] = 'Aviso:';

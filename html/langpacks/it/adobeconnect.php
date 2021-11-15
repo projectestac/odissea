@@ -25,6 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addparticipant'] = 'Aggiungi';
+$string['addpresenter'] = 'Aggiungi';
+$string['allusers'] = 'tutti gli utenti';
+$string['cancelchanges'] = 'Annulla';
 $string['event_join_meeting'] = 'Collegato utente alla sessione';
 $string['event_view'] = 'Visualizzata attività';
 $string['greaterstarttime'] = 'L\'orario di inizio non può essere maggiore dell\'orario di fine';

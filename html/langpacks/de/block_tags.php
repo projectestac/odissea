@@ -40,4 +40,4 @@ $string['tagcollection_help'] = 'Wählen Sie die Collection aus, deren Tags ange
 $string['taggeditemscontext'] = 'Tags im Kontext';
 $string['taggeditemscontext_help'] = 'Sie können die Tag-Cloud auf die Tags beschränken, die nur im aktuellen Kontext (Kursbereich, Kurs, Aktivität) verfügbar sind.';
 $string['tags:addinstance'] = 'Neuen Block \'Tags\' hinzufügen';
-$string['tags:myaddinstance'] = 'Neuen Block \'Tags\' zum Dashboard hinzufügen';
+$string['tags:myaddinstance'] = 'Neuen Block \'Tags\' im Dashboard hinzufügen';

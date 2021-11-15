@@ -47,7 +47,7 @@ Ao selecionar uma forma (círculo, retângulo ou polígono) adicionará uma nova
 
 A edição de uma forma começa com um clique na forma na pré-visualização para mostrar as alças de edição. Pode mover a forma usando a alça central ou ajustar as dimensões da forma com as alças do vértice.
 
-Nos polígonos, e apenas para estes, ao manter pressionado o botão CTRL (botão de comando em Mac) enquanto clica numa alça de vértice adicionará um novo vértice ao polígono. Por favor, mantenha a forma do polígono tão simples quanto possível, sem cruzar linhas.
+Nos polígonos, e apenas para estes, ao manter pressionado o botão CTRL no Windows (botão de comando em Mac) enquanto clica numa alça de vértice adicionará um novo vértice ao polígono. Por favor, mantenha a forma do polígono tão simples quanto possível, sem cruzar linhas.
 
 Para informação, as três formas usam as coordenadas da seguinte maneira:<br />
 * Círculo: centre_x, centre_y; raio <br />por exemplo: <code>80,100;50</code><br />

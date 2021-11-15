@@ -49,7 +49,7 @@ class provider implements
      * @param collection $items a reference to the collection to use to store the metadata.
      * @return collection the updated collection of metadata items.
      */
-    public static function _get_metadata(collection $items) {
+    public static function _get_metadata(collection $items) { // @codingStandardsIgnoreLine
         $items->add_database_table(
             'qtype_wq',
             [
@@ -68,7 +68,7 @@ class provider implements
      * @param int $userid the userid.
      * @return contextlist the list of contexts containing user info for the user.
      */
-    public static function _get_contexts_for_userid($userid) {
+    public static function _get_contexts_for_userid($userid) { // @codingStandardsIgnoreLine
         // Fetch all Wiris Quizzes question types.
         $sql = "SELECT c.id
                         FROM {context} c
@@ -91,7 +91,7 @@ class provider implements
      *
      * @param approved_contextlist $contextlist a list of contexts approved for export.
      */
-    public static function _export_user_data(approved_contextlist $contextlist) {
+    public static function _export_user_data(approved_contextlist $contextlist) { // @codingStandardsIgnoreLine
         global $DB;
 
         if (empty($contextlist->count())) {
@@ -153,7 +153,7 @@ class provider implements
      *
      * @param \context $context the context to delete in.
      */
-    public static function _delete_data_for_all_users_in_context(\context $context) {
+    public static function _delete_data_for_all_users_in_context(\context $context) { // @codingStandardsIgnoreLine
         global $DB;
 
         if (empty($context)) {
@@ -183,7 +183,7 @@ class provider implements
      *
      * @param approved_contextlist $contextlist a list of contexts approved for deletion.
      */
-    public static function _delete_data_for_user(approved_contextlist $contextlist) {
+    public static function _delete_data_for_user(approved_contextlist $contextlist) { // @codingStandardsIgnoreLine
         global $DB;
 
         if (empty($contextlist->count())) {
@@ -207,9 +207,5 @@ class provider implements
             }
             $records->close();
         }
-
     }
-
-
-
 }

@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'Microsoft Excel (.xlsx)';
-$string['privacy:metadata'] = 'Pluginmodulen för Excel-dataformatet lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen för Excel-dataformatet lagrar ingen personinformation.';
 $string['shortname'] = 'Excel';

@@ -242,4 +242,4 @@ $string['editor:warningupdateavailabletitle'] = 'Det finns en ny version för :c
 $string['editor:width'] = 'bredd';
 $string['pluginname'] = 'H5P-ramverk v1.24';
 $string['pluginname_help'] = 'H5P-ramverk version 1.24';
-$string['privacy:metadata'] = 'H5P-ramverket version 1.24 lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'H5P-ramverket version 1.24 lagrar ingen personinformation.';

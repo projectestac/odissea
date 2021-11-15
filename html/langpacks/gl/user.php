@@ -25,6 +25,25 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcondition'] = 'Engadir condición';
+$string['adverbfor_and'] = 'e';
+$string['adverbfor_andnot'] = 'e';
+$string['adverbfor_or'] = 'ou';
+$string['applyfilters'] = 'Aplicar filtros';
+$string['clearfilterrow'] = 'Eliminar a fila do filtro';
+$string['clearfilters'] = 'Limpar filtros';
+$string['clearfilterselection'] = 'Retirar «{$a}» do filtro';
+$string['countparticipantsfound'] = 'Atopáronse {$a} participantes';
+$string['filterbykeyword'] = 'Palabra clave';
+$string['filterrowlegend'] = 'Filtro {$a}';
+$string['filtersetmatchdescription'] = 'Como se deben combinar varios filtros';
+$string['filtertype'] = 'Tipo de filtro';
+$string['match'] = 'Coincidencia';
+$string['matchofthefollowing'] = 'dos seguintes:';
+$string['moodlenetprofile'] = 'Perfil de MoodleNet';
+$string['moodlenetprofile_help'] = 'Este campo é para ligar o seu perfil de MoodleNet a Moodle. Agarda un URI compatíbel con WebFinger.';
+$string['placeholdertype'] = 'Escriba...';
+$string['placeholdertypeorselect'] = 'Escriba ou seleccione...';
 $string['privacy:courserequestpath'] = 'Cursos solicitados';
 $string['privacy:descriptionpath'] = 'Descrición do perfil';
 $string['privacy:devicespath'] = 'Dispositivos do usuario';
@@ -77,6 +96,7 @@ $string['privacy:metadata:maildisplay'] = 'Unha preferencia para o usuario sobre
 $string['privacy:metadata:middlename'] = 'O segundo nome do usuario';
 $string['privacy:metadata:mnethostid'] = 'Un identificador para a máquina MNet se se usa';
 $string['privacy:metadata:model'] = 'O nome do dispositivo, ocam ou iPhone, etc.';
+$string['privacy:metadata:moodlenetprofile'] = 'O perfil de MoodleNet para o usuario';
 $string['privacy:metadata:msn'] = 'O identificador MSN do usuario';
 $string['privacy:metadata:my_pages'] = 'Páxinas de usuario; taboleiro e perfil. Esta táboa non contén información persoal e só se usa para vincular bloques de taboleiro aos usuarios';
 $string['privacy:metadata:my_pages:name'] = 'Nome da páxina';

@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'Tabla HTML';
+$string['privacy:metadata'] = 'El complemento de formato de datos de tabla HTML no almacena ningún dato personal.';
 $string['shortname'] = 'HTML';

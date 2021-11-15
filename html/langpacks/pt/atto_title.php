@@ -31,5 +31,5 @@ $string['h5'] = 'Cabeçalho (pequeno)';
 $string['p'] = 'Parágrafo';
 $string['pluginname'] = 'Estilos de parágrafo';
 $string['pre'] = 'Pré-formatado';
-$string['privacy:metadata'] = 'O módulo atto_title não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo atto_title não armazena quaisquer dados pessoais.';
 $string['title'] = 'Estilos de parágrafo';

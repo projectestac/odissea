@@ -25,4 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['achievementactivity'] = '活动';
+$string['achievementbehaviour'] = '成就&amp; 行为';
+$string['achievementcomments'] = '评论';
+$string['markdone'] = '标记为完成';
 $string['notsubmitted'] = '未提交';

@@ -779,6 +779,9 @@ $string['register_notify_teacher:unregister:group:smallmessage'] = 'O aluno {$a-
 $string['register_notify_teacher:unregister:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Grupo não inscrito';
 $string['register_notify_teacher:unregister:smallmessage'] = 'O aluno {$a->sendername} cancelou a sua inscrição na vaga de {$a->date} às {$a->time} em {$a->location}.';
 $string['register_notify_teacher:unregister:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Aluno não inscrito';
+$string['register_promotion_student:fullmessage'] = 'A sua inscrição para um intervalo de tempo foi promovida do estado de "lista de espera" para o estado "reservado".';
+$string['register_promotion_student:smallmessage'] = 'A sua inscrição para um intervalo de tempo foi promovida do estado de "lista de espera" para o estado "reservado".';
+$string['register_promotion_student:subject'] = 'Organizador: promovido da fila de espera';
 $string['register_reminder_student:fullmessage'] = 'Olá {$a->receivername}!
 
 Como parte da disciplina {$a->courseid} {$a->coursefullname}, ainda não se inscreveu em nenhum intervalo de tempo ou faltou ao qual estava inscrito.

@@ -91,6 +91,6 @@ $string['showexpanded'] = 'Erakutsi (zabalduta)';
 $string['showminimized'] = 'Erakutsi (minimizatuta)';
 $string['shownoimage'] = 'Ez erakutsi irudia';
 $string['shownovideo'] = 'Ez erakutsi bideoa';
-$string['timelimit'] = 'Poodll Grab. Gehienezko Denbora';
+$string['timelimit'] = 'Poodll Grab. Gehieneko Denbora';
 $string['videoplaceholder'] = '[bidalitako bideoa]';
 $string['yes'] = 'Bai';

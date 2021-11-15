@@ -31,15 +31,15 @@ $string['editingshortanswerwiris'] = 'A editar pergunta Resposta curta - matemá
 $string['failedtogradetest'] = 'Não é possível avaliar (a testar-{$a})!';
 $string['filloutoneanswer'] = 'Tem de indicar pelo menos uma resposta correta. A primeira resposta correspondente será usada para determinar a pontuação e o feedback. Clique no ícone ao lado do campo de resposta para editar as propriedades matemáticas da resposta e da pergunta.';
 $string['pluginname'] = 'Resposta curta - ciência';
-$string['pluginname_help'] = 'Igual à pergunta de Resposta curta do Moodle mas pode verificar a resposta usando a equivalência matemática de sua escolha. Opcionalmente, insira parâmetros aleatórios no texto da pergunta e forneça um editor de fórmulas completo para a resposta.';
+$string['pluginname_help'] = 'Igual à pergunta de Resposta curta do Moodle mas pode verificar a resposta usando a equivalência matemática da sua escolha. Opcionalmente, insira parâmetros aleatórios no texto da pergunta e forneça um editor de fórmulas completo para a resposta.';
 $string['pluginnameadding'] = 'A adicionar pergunta Resposta curta - matemática & ciência WIRIS';
 $string['pluginnameediting'] = 'A editar pergunta Resposta curta - matemática & ciência WIRIS';
-$string['pluginnamesummary'] = 'Igual à pergunta de Resposta curta do Moodle mas pode verificar a resposta usando a equivalência matemática de sua escolha. Opcionalmente, insira parâmetros aleatórios no texto da pergunta e forneça um editor de fórmulas completo para a resposta.';
+$string['pluginnamesummary'] = 'Igual à pergunta de Resposta curta do Moodle mas pode verificar a resposta usando a equivalência matemática da sua escolha. Opcionalmente, insira parâmetros aleatórios no texto da pergunta e forneça um editor de fórmulas completo para a resposta.';
 $string['privacy:null_reason'] = 'O tipo de pergunta Resposta curta dos testes Wiris não afeta nem armazena dados em si.';
 $string['shortanswerwiris'] = 'Resposta curta - ciência';
 $string['shortanswerwiris_addanswers'] = 'Em branco para outra opção';
 $string['shortanswerwiris_algorithm'] = 'Algoritmo';
 $string['shortanswerwiris_answersinstruct'] = 'Tem de indicar pelo menos uma resposta correta. As respostas em branco não serão usadas. A primeira resposta correspondente será usada para determinar a pontuação e o feedback.';
-$string['shortanswerwiris_cantimportcompoundtest'] = 'A pergunta Resposta curta - matemática & ciência não pôde ser importada corretamente do formato Moodle 1.9. A pergunta pode ser corrigida manualmente seguindo as instruções em <a href="http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade">http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade</a>.';
+$string['shortanswerwiris_cantimportcompoundtest'] = 'A pergunta Resposta curta - matemática & ciência WIRIS não pôde ser importada corretamente do formato Moodle 1.9. A pergunta pode ser corrigida manualmente seguindo as instruções em <a href="http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade">http://www.wiris.com/quizzes/docs/moodle/manual/compound-answer#upgrade</a>.';
 $string['shortanswerwiris_help'] = 'Igual à pergunta de Resposta curta do Moodle mas pode verificar a resposta usando a equivalência matemática de sua escolha. Opcionalmente, insira parâmetros aleatórios no texto da pergunta e forneça um editor de fórmulas completo para a resposta.';
 $string['shortanswerwirissummary'] = 'Igual à pergunta de Resposta curta do Moodle mas pode verificar a resposta usando a equivalência matemática de sua escolha. Opcionalmente, insira parâmetros aleatórios no texto da pergunta e forneça um editor de fórmulas completo para a resposta.';

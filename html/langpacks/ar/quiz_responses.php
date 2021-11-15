@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cannotloadoptions'] = 'لا يمكن تحميل خيارات السؤال';
 $string['include'] = 'و تشمل';
-$string['mustselectcols'] = 'يجب عليك إدخال شيء.';
+$string['mustselectcols'] = 'ينبغي عليك تضمين شيء ما.';
 $string['pagesize'] = 'حجم الصفحة';
 $string['pluginname'] = 'الاستجابات';
 $string['privacy:preference:qtext'] = 'فيما إذا كان ينبغي إظهار أعمدة نصّ السؤال.';

@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Limpiador de spam';
+$string['privacy:metadata'] = 'El complemento de limpieza de spam no almacena ningún dato personal.';
 $string['spamauto'] = 'Detectar automáticamente patrones comunes de spam';
 $string['spamcannotdelete'] = 'No se puede eliminar este usuario';
 $string['spamcannotfinduser'] = 'No hay usuarios que se ajusten a su búsqueda';
@@ -36,6 +37,9 @@ $string['spamdeleteconfirm'] = '¿Está seguro de que quiere eliminar esta entra
 $string['spamdesc'] = 'Descripción';
 $string['spameg'] = 'e.g., casino, porno, xxx';
 $string['spamfromblog'] = 'Del mensaje del blog:';
+$string['spamfromcomments'] = 'De los comentarios:';
+$string['spamfromforumpost'] = 'De la publicación del foro:';
+$string['spamfrommessages'] = 'De mensajes';
 $string['spaminvalidresult'] = 'Resultado desconocido pero no válido';
 $string['spamkeyword'] = 'Palabra clave';
 $string['spamoperation'] = 'Operación';

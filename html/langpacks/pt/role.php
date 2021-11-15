@@ -60,7 +60,7 @@ $string['assignmentcontext'] = 'Atribuição de contexto';
 $string['assignmentoptions'] = 'Opções de atribuição';
 $string['assignrole'] = 'Atribuir papel';
 $string['assignrolenameincontext'] = 'Atribuir papel \'{$a->role}\' em \'{$a->context}\'';
-$string['assignroles'] = 'Atribuir papel de';
+$string['assignroles'] = 'Atribuir papeis';
 $string['assignroles_help'] = 'A atribuição de um papel a um utilizador num contexto dá a esse utilizador as permissões associadas ao papel no contexto em que o papel é atribuído e em todos os contextos abaixo desse. Por exemplo, se for atribuído o papel de aluno a um utilizador numa disciplina, ele terá também o papel de aluno em todas as atividades e blocos da disciplina.';
 $string['assignroles_link'] = 'admin/roles/assign';
 $string['assignrolesin'] = 'Atribuir papéis no contexto de \'{$a}\'';
@@ -287,7 +287,7 @@ $string['h5p:deploy'] = 'Implantar conteúdo H5P';
 $string['h5p:setdisplayoptions'] = 'Definir opções de exibição do H5P';
 $string['h5p:updatelibraries'] = 'Gerir tipos de conteúdo H5P';
 $string['highlightedcellsshowdefault'] = 'As permissões destacadas na tabela abaixo mostram as permissões predefinidas para este tipo de papel, com base no papel modelo atualmente selecionado acima.';
-$string['highlightedcellsshowinherit'] = 'As células em destaque na tabela abaixo mostram as permissões (se houver) que serão herdadas. Além das permissões que pretende alterar, deve deixar o resto com a permissão herdar.';
+$string['highlightedcellsshowinherit'] = 'As células destacadas na tabela abaixo mostram as permissões (se existirem) que serão herdadas. À parte das permissões que pretende alterar, deve deixar as restantes com a permissão \'Herdar\'.';
 $string['inactiveformorethan'] = 'sem atividade há mais de {$a->timeperiod}';
 $string['ingroup'] = 'no grupo {$a->group}';
 $string['inherit'] = 'Herdar';
@@ -318,7 +318,7 @@ $string['nocapabilitiesincontext'] = 'Não há permissões disponíveis neste co
 $string['noneinthisx'] = 'Nenhum em {$a}';
 $string['noneinthisxmatching'] = 'Não existem utilizadores com correspondência a \'{$a->search}\' em {$a->contexttype}';
 $string['norole'] = 'Sem papel';
-$string['noroleassignments'] = 'Não foi atribuído nenhum papel a este utilizador neste site';
+$string['noroleassignments'] = 'Não foi atribuído qualquer papel a este utilizador neste site.';
 $string['noroles'] = 'Sem papéis';
 $string['notabletoassignroleshere'] = 'A atribuição de papéis neste contexto não foi ativada pelo administrador.';
 $string['notabletooverrideroleshere'] = 'Não tem permissão para redefinir as permissões de nenhum papel aqui';
@@ -329,9 +329,9 @@ $string['novisibleroles'] = 'Sem papeis';
 $string['overrideanotherrole'] = 'Redefinir outro papel';
 $string['overridecontext'] = 'Contexto de redefinição';
 $string['overridepermissions'] = 'Redefinir permissões';
-$string['overridepermissions_help'] = 'Redefinir permissões faz com que as permissões selecionadas sejam permitidas ou não num contexto específico.';
+$string['overridepermissions_help'] = 'Redefinir permissões faz com que as permissões selecionadas sejam permitidas, ou não, num contexto específico.';
 $string['overridepermissions_link'] = 'admin/roles/override';
-$string['overridepermissionsforrole'] = 'Redefinir permissões no papel \'{$a->role}\' em {$a->context}';
+$string['overridepermissionsforrole'] = 'Redefinir permissões do papel \'{$a->role}\' em {$a->context}';
 $string['overridepermissionsin'] = 'Redefinir permissões em {$a}';
 $string['overrideroles'] = 'Redefinir Papéis';
 $string['overriderolesin'] = 'Redefinir papéis em {$a}';
@@ -340,12 +340,12 @@ $string['overridesbycontext'] = 'Redefinir (por contexto)';
 $string['payment:manageaccounts'] = 'Gerir contas';
 $string['payment:viewpayments'] = 'Visualizar pagamentos';
 $string['permission'] = 'Permissão';
-$string['permission_help'] = 'As permissões são as configurações das permissões. Existem 4 opções:
+$string['permission_help'] = 'As permissões podem ser definidas com base em 4 opções:
 
 * Não definido
-* Permitir - A permissão é concedida para a permissão
-* Impedir - A permissão é removida para a permissão, mesmo se for permitida num contexto superior
-* Proibir - A permissão é completamente proibida e não pode ser adaptada em nenhum contexto abaixo (mais específico)';
+* Permitir - A permissão é concedida
+* Impedir - A permissão é removida caso tenha sido permitida num contexto superior
+* Proibir - A permissão é completamente proibida e não pode ser adaptada em nenhum contexto mais baixo (mais específico)';
 $string['permissions'] = 'Permissões';
 $string['permissionsforuser'] = 'Permissões para o utilizador {$a}';
 $string['permissionsincontext'] = 'Permissões em {$a}';
@@ -411,13 +411,13 @@ $string['role:review'] = 'Rever permissões de outros';
 $string['role:safeoverride'] = 'Redefinir permissões seguras de outros';
 $string['role:switchroles'] = 'Assumir outros papéis';
 $string['roleallowheader'] = 'Permitir papel:';
-$string['roleallowinfo'] = 'Selecione um papel a ser adicionado à lista de papéis permitidos no contexto {$a->context}, permissão {$a->cap}:';
+$string['roleallowinfo'] = 'Selecione o papel a ser adicionado à lista de papéis permitidos no contexto \'{$a->context}\', permissão \'{$a->cap}\'';
 $string['roleassignments'] = 'Atribuição de papéis';
 $string['roledefinitions'] = 'Definições de papel';
 $string['rolefullname'] = 'Nome do papel';
 $string['roleincontext'] = '{$a->role} in {$a->context}';
 $string['roleprohibitheader'] = 'Proibir papel';
-$string['roleprohibitinfo'] = 'Selecione um papel a ser adicionado à lista de papéis proibidos no contexto {$a->context}, permissão {$a->cap}:';
+$string['roleprohibitinfo'] = 'Selecione o papel a ser adicionado à lista de papéis proibidos no contexto \'{$a->context}\', permissão \'{$a->cap}\':';
 $string['rolerepreset'] = 'Usar configurações predefinidas do papel';
 $string['roleresetdefaults'] = 'Configurações predefinidas';
 $string['roleresetrole'] = 'Usar papel ou modelo';
@@ -477,12 +477,12 @@ $string['thisusersroles'] = 'Papéis atribuídos a este utilizador';
 $string['unassignarole'] = 'Retirar o papel {$a}';
 $string['unassignconfirm'] = 'Pretende realmente retirar o papel "{$a->role}" ao utilizador "{$a->user}"?';
 $string['unassignerror'] = 'Ocorreu um erro ao retirar o papel {$a->role} ao utilizador {$a->user}.';
-$string['user:changeownpassword'] = 'Mudar sua senha';
+$string['user:changeownpassword'] = 'Modificar a sua senha';
 $string['user:create'] = 'Criar utilizadores';
 $string['user:delete'] = 'Eliminar utilizadores';
 $string['user:editmessageprofile'] = 'Editar o perfil de envio de mensagens do utilizador';
 $string['user:editownmessageprofile'] = 'Editar o seu perfil de envio de mensagens';
-$string['user:editownprofile'] = 'Editar perfil próprio';
+$string['user:editownprofile'] = 'Editar o próprio perfil';
 $string['user:editprofile'] = 'Editar perfil do utilizador';
 $string['user:ignoreuserquota'] = 'Ignorar o limite de quota do utilizador';
 $string['user:loginas'] = 'Entrar como outro utilizador';

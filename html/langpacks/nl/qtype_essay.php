@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptedfiletypes'] = 'Geaccepteerde bestandstypes';
 $string['acceptedfiletypes_help'] = 'Geaccepteerde bestandstypes kunnen worden beperkt door een lijst met bestandsextensies in te voeren. Wanneer dit veld leeg wordt gelaten, zijn alle bestandstypes toegestaan.';
 $string['allowattachments'] = 'Bijlagen toestaan';
+$string['answerfiles'] = 'Antwoordbestanden';
+$string['answertext'] = 'Antwoordtekst';
 $string['attachedfiles'] = 'Bijlage: {$a}';
 $string['attachmentsoptional'] = 'Bijlagen zijn optioneel';
 $string['attachmentsrequired'] = 'Bijlagen vereist';

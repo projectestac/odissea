@@ -25,21 +25,28 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addmorechoiceblanks'] = 'Espacios en blanco para {no} opciones más';
 $string['answer'] = 'Respuesta';
 $string['choices'] = 'Opciones';
-$string['choicex'] = 'Opción {no}';
+$string['choicex'] = 'Opción [[{no}]]';
+$string['combinedcontrolnamegapselect'] = 'menú desplegable';
+$string['combinedcontrolnamegapselectplural'] = 'menús desplegables';
 $string['correctansweris'] = 'La respuesta correcta es: {$a}';
 $string['errorblankchoice'] = 'Por favor, comproba su opción: la opción {$a} está vacía.';
-$string['errormissingchoice'] = 'Compruebe el texto de la pregunta: {$a} no se ha encontrado en las opciones! Sólo los números con respuestas de elección especificadas se permiten utilizar como titulares de lugar (\'place holders\').';
+$string['errormissingchoice'] = 'Por favor revise el texto de la pregunta: ¡no se encontró {$a} en las opciones! Solo los números con respuestas de elección especificadas pueden usarse como marcadores de posición.';
 $string['errornoslots'] = 'El texto de la pregunta debe contener marcadores de posición (\'place holders\') como por ejemplo [[1]] para mostrar dónde van las palabras que faltan.';
 $string['errorquestiontextblank'] = 'Es necesario introducir un texto de pregunta.';
 $string['group'] = 'Grupo';
 $string['pleaseputananswerineachbox'] = 'Elige una respuesta en cada caja.';
 $string['pluginname'] = 'Elige la palabra perdida';
-$string['pluginname_help'] = 'Seleccione las palabras perdidas. Las preguntas requieren que el encuestado seleccione las respuestas correctas en los menús desplegables. [[1]], [[2]], [[3]], ... se utilizan como marcadores de posición (\'place holders\') en el texto de la pregunta, con las respuestas correctas especificadas como respuestas de elección 1, 2, 3, ... respectivamente. Se pueden agregar respuestas de elección extra para hacer la pregunta más difícil. Las respuestas de elección pueden agruparse para restringir las respuestas disponibles en cada menú desplegable.';
+$string['pluginname_help'] = 'Las preguntas para seleccionar palabras faltantes requieren que el encuestado seleccione las respuestas correctas de los menús desplegables. [[1]], [[2]], [[3]], ... se utilizan como marcadores de posición en el texto de la pregunta, con las respuestas correctas especificadas como respuestas de elección 1, 2, 3, ... respectivamente. Se pueden añadir respuestas de opción adicionales para hacer la pregunta más difícil. Las respuestas de elección se pueden agrupar para restringir las respuestas disponibles en cada menú desplegable.';
 $string['pluginnameadding'] = 'Añadir una pregunta de selección de palabras perdidas';
 $string['pluginnameediting'] = 'Edición de una pregunta de selección de palabras perdidas';
-$string['pluginnamesummary'] = 'Las palabras que faltan en el texto de la pregunta se rellenan mediante los menús desplegables.';
+$string['pluginnamesummary'] = 'Las palabras que faltan en el texto de la pregunta se completan mediante menús desplegables.';
+$string['privacy:metadata'] = 'El complemento de tipo de pregunta para seleccionar palabras que faltan permite a los autores de preguntas establecer opciones predeterminadas como preferencias del usuario.';
+$string['privacy:preference:defaultmark'] = 'La marca predeterminada establecida para una pregunta determinada.';
+$string['privacy:preference:penalty'] = 'La penalización por cada intento incorrecto cuando las preguntas se ejecutan utilizando el comportamiento \'Interactivo con múltiples intentos\' o \'Modo adaptativo\'.';
+$string['privacy:preference:shuffleanswers'] = 'Si las respuestas deben barajarse automáticamente.';
 $string['shuffle'] = 'Barajar';
 $string['tagsnotallowed'] = '{$a->tag} no está permitido. (Solamente {$a->allowed} están permetidos.)';
 $string['tagsnotallowedatall'] = '{$a->tag} no está permitido. (No se permite usar código HTML aquí.)';

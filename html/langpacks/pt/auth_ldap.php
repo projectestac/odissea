@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['auth_ldap_ad_create_req'] = 'Não é possível criar a nova conta de utilizador na Ative Directory. Verifique se o sistema cumpre todos os requisitos necessários para esta ligação funcionar (ligação LDAPS, bind user com as permissões necessárias, etc.)';
-$string['auth_ldap_attrcreators'] = 'Lista de grupos ou contextos cujos membros estão autorizados a criar atributos. Os nomes dos grupos devem ser separados por ";". Ex: cn=teachers,ou=staff,o=myorg';
+$string['auth_ldap_attrcreators'] = 'Lista de grupos ou contextos cujos membros estão autorizados a criar atributos. Os nomes dos grupos devem ser separados por ";". Por exemplo: cn=teachers,ou=staff,o=myorg';
 $string['auth_ldap_attrcreators_key'] = 'Criadores de atributos';
 $string['auth_ldap_auth_user_create_key'] = 'Criar utilizadores externamente';
-$string['auth_ldap_bind_dn'] = 'Insira aqui a designação da conta de bind se pretender utilizá-la para procurar utilizadores. Ex: cn=ldapuser,ou=public,o=org';
+$string['auth_ldap_bind_dn'] = 'Insira aqui a designação da conta de bind se pretender utilizá-la para pesquisar utilizadores. Ex: cn=ldapuser,ou=public,o=org';
 $string['auth_ldap_bind_dn_key'] = 'Nome específico';
 $string['auth_ldap_bind_pw'] = 'Senha para a conta de bind.';
 $string['auth_ldap_bind_pw_key'] = 'Senha';
@@ -37,7 +37,7 @@ $string['auth_ldap_bind_settings'] = 'Configuração do bind';
 $string['auth_ldap_changepasswordurl_key'] = 'URL de mudança de senha';
 $string['auth_ldap_contexts'] = 'Lista dos contextos onde estão os utilizadores. Os nomes dos contextos devem ser separados por ";". Ex: ou=users,o=org; ou=others,o=org';
 $string['auth_ldap_contexts_key'] = 'Contextos';
-$string['auth_ldap_create_context'] = 'Se permitir a criação de utilizadores com confirmação por e-mail especifique o contexto em que estes utilizadores são criados. Este contexto deverá ser diferente do de outros utilizadores por medidas de segurança. Não é necessário adicionar este contexto à variável ldap_context, pois o Moodle irá, automaticamente, procurar os utilizadores associados a este contexto.<br /><b>Atenção</b>: é necessário alterar o método user_create() no ficheiro auth/ldap/auth.php para que a criação de utilizadores funcione';
+$string['auth_ldap_create_context'] = 'Se permitir a criação de utilizadores com confirmação por e-mail especifique o contexto em que estes utilizadores são criados. Este contexto deverá ser diferente do de outros utilizadores por medidas de segurança. Não é necessário adicionar este contexto à variável ldap_context, pois o Moodle irá, automaticamente, pesquisar os utilizadores associados a este contexto.<br /><b>Atenção</b>: é necessário alterar o método user_create() no ficheiro auth/ldap/auth.php para que a criação de utilizadores funcione';
 $string['auth_ldap_create_context_key'] = 'Contexto para novos utilizadores';
 $string['auth_ldap_create_error'] = 'Erro ao criar utilizador no LDAP.';
 $string['auth_ldap_expiration_desc'] = 'Selecione \'{$a->no}\' para desativar a verificação de expiração das senhas ou \'{$a->ldapserver}\' para ler o momento de expiração da senha diretamente do servidor LDAP.';
@@ -50,7 +50,7 @@ $string['auth_ldap_graceattr_desc'] = 'Opcional: Esta configuração prevalece s
 $string['auth_ldap_gracelogin_key'] = 'Atributo de tolerância de autenticação (Grace login)';
 $string['auth_ldap_gracelogins_desc'] = 'Ativar a tolerância de autenticação do LDAP. Depois da senha de um utilizador ter expirado, este poderá aceder ao site enquanto a contagem for maior que zero. Ao ativar esta configuração é apresentada uma mensagem se a senha já tiver expirado.';
 $string['auth_ldap_gracelogins_key'] = 'Tolerância de autenticação (Grace logins)';
-$string['auth_ldap_groupecreators'] = 'Lista de grupos ou contextos cujos membros estão autorizados a criar grupo. Os nomes dos grupos devem ser separados por ";". Ex: cn=teachers,ou=staff,o=myorg';
+$string['auth_ldap_groupecreators'] = 'Lista de grupos ou contextos cujos membros estão autorizados a criar grupo. Os nomes dos grupos devem ser separados por ";". Por exemplo: cn=teachers,ou=staff,o=myorg';
 $string['auth_ldap_groupecreators_key'] = 'Criadores de grupo';
 $string['auth_ldap_host_url'] = 'Especifique o servidor LDAP na forma de um endereço URL, algo como \'ldap://ldap.myorg.com/\' ou \'ldaps://ldap.myorg.com/\'. Separe os diferentes servidores com \';\' para obter suporte de failover.';
 $string['auth_ldap_host_url_key'] = 'URL do servidor';
@@ -76,7 +76,7 @@ $string['auth_ldap_preventpassindb'] = 'Selecione o valor "Sim" para evitar que 
 $string['auth_ldap_preventpassindb_key'] = 'Impedir armazenamento de senhas em cache';
 $string['auth_ldap_rolecontext'] = 'Contexto {$a->localname}';
 $string['auth_ldap_rolecontext_help'] = 'Contexto LDAP usado para selecionar o mapeamento <i>{$a->localname}</i>. Separar múltiplos grupos com \';\'. Normalmente, algo como "cn={$a->shortname},ou=first-ou-with-role-groups,o=myorg; cn={$a->shortname},ou=second-ou-with-role-groups,o=myorg".';
-$string['auth_ldap_search_sub'] = 'Procurar utilizadores em subcontextos.';
+$string['auth_ldap_search_sub'] = 'Pesquisar utilizadores em subcontextos.';
 $string['auth_ldap_search_sub_key'] = 'Pesquisar em subcontextos';
 $string['auth_ldap_server_settings'] = 'Configurações do servidor LDAP';
 $string['auth_ldap_suspended_attribute'] = 'Opcional: Quando fornecido, este atributo será utilizado para ativar/suspender a conta de utilizador criada localmente.';
@@ -144,7 +144,7 @@ $string['pagesize'] = 'Certifique-se este valor é menor do que o tamanho limite
 $string['pagesize_key'] = 'Tamanho da página';
 $string['pluginname'] = 'Servidor LDAP';
 $string['pluginnotenabled'] = 'O módulo não está ativo!';
-$string['privacy:metadata'] = 'O módulo de autenticação Servidor LDAP não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo de autenticação Servidor LDAP não armazena quaisquer dados pessoais.';
 $string['renamingnotallowed'] = 'Não é permitida a alteração do nome dos utilizadores no servidor LDAP';
 $string['rootdseerror'] = 'Erro ao comunicar com rootDSE para Ative Directory';
 $string['start_tls'] = 'Usar o serviço LDAP normal (porta 389) com encriptação TLS';

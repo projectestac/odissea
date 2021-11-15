@@ -39,6 +39,7 @@ $string['enteralt'] = 'Περιγραφή εικόνας για κάποιον �
 $string['enterurl'] = 'Εισαγωγή διεύθυνσης URL';
 $string['height'] = 'Ύψος';
 $string['imageproperties'] = 'Ιδιότητες εικόνας';
+$string['imageurlrequired'] = 'Μια εικόνα πρέπει να έχει διεύθυνση URL.';
 $string['pluginname'] = 'Εισαγωγή ή επεξεργασία εικόνας';
 $string['presentation'] = 'Αυτή η εικόνα είναι μόνο διακοσμητική';
 $string['presentationoraltrequired'] = 'Μια εικόνα πρέπει να έχει περιγραφή, εκτός εάν έχει επισημανθεί ως  μόνο διακοσμητική.';

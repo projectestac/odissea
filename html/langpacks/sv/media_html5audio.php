@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'HTML5-ljud';
 $string['pluginname_help'] = 'Ljudfiler som spelas upp av webbläsarens inbyggda ljudspelare. (Vilka format som stöds beror på webbläsaren.)';
-$string['privacy:metadata'] = 'Pluginmodulen HTML5-ljud lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen HTML5-ljud lagrar ingen personinformation.';

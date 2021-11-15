@@ -98,10 +98,10 @@ $string['clearassessmentsconfirm'] = 'Ziur zaude ebaluazioaren kalifikazio guzti
 $string['conclusion'] = 'Ondorioak';
 $string['conclusion_help'] = 'Erabiltzaileari ondorioak agertuko zaizkio zeregina amaitutakoan.';
 $string['configexamplesmode'] = 'Tailerretako adibideen ebaluaziorako lehenetsitako modua';
-$string['configgrade'] = 'Lehenetsitako gehienezko kalifikazioa tailerretako bidalketetan';
+$string['configgrade'] = 'Lehenetsitako gehieneko kalifikazioa tailerretako bidalketetan';
 $string['configgradedecimals'] = 'Modu lehenetsian kalifikazioak erakustean hamartarren puntuaren atzetik erakutsi behar den zenbaki kopurua.';
-$string['configgradinggrade'] = 'Lehenetsitako gehienezko kalifikazioa tailerretako ebaluazioetan';
-$string['configmaxbytes'] = 'Guneko tailer guztietarako bidalketetarako fitxategien gehienezko tamaina lehenetsia (ikastaroko eta bestelako ezarpen lokalen menpekoa)';
+$string['configgradinggrade'] = 'Lehenetsitako gehieneko kalifikazioa tailerretako ebaluazioetan';
+$string['configmaxbytes'] = 'Guneko tailer guztietarako bidalketetarako fitxategien gehieneko tamaina lehenetsia (ikastaroko eta bestelako ezarpen lokalen menpekoa)';
 $string['configstrategy'] = 'Lehenetsitako kalifikazio-estrategia tailerretan';
 $string['createsubmission'] = 'Gehitu bidalketa';
 $string['crontask'] = 'Tailer-moduluaren atzeko planoko prozesatzea';
@@ -181,7 +181,7 @@ $string['gradesreport'] = 'Tailerraren kalifikazio-txostena';
 $string['gradetopassgrading'] = 'Gainditzeko ebaluazioaren kalifikazioa';
 $string['gradetopasssubmission'] = 'Gainditzeko bidalketaren kalifikazioa';
 $string['gradinggrade'] = 'Ebaluazioaren kalifikazioa';
-$string['gradinggrade_help'] = 'Ezarpen honek bidalketa baten ebaluazioan lor daitekeen gehienezko kalifikazioa zehazten du.';
+$string['gradinggrade_help'] = 'Ezarpen honek bidalketa baten ebaluazioan lor daitekeen gehieneko kalifikazioa zehazten du.';
 $string['gradinggradecalculated'] = 'Kalkulatutako kalifikazioa ebaluaziorako';
 $string['gradinggradeof'] = 'Ebaluazioaren kalifikazioa ({$a}(e)tik)';
 $string['gradinggradeover'] = 'Baliogabetu kalifikazioa ebaluaziorako';
@@ -205,19 +205,19 @@ $string['latesubmissions_desc'] = 'Baimendu epez kanpoko bidalketak';
 $string['latesubmissions_help'] = 'Gaituz gero, egileek bidalketak epez kanpo edo ebaluazio-fasean egin ditzakete. Hala ere, berandu egindako bidalketak ezin dira editatu.';
 $string['latesubmissionsallowed'] = 'Epez kanpoko bidalketak baimenduta daude';
 $string['legacyallocationplugincron'] = 'Zaharkitutako Tailer-Esleipenen Cron-a';
-$string['maxbytes'] = 'Bidalketa eranskinaren gehienezko tamaina';
+$string['maxbytes'] = 'Bidalketa eranskinaren gehieneko tamaina';
 $string['modulename'] = 'Tailerra';
 $string['modulename_help'] = 'Tailerra jarduerak ikasleen lanak jaso, berrikusi eta parekoen arteko ebaluazioa egiteko aukera ematen du.
 
 Ikasleak edozein eduki digital bidal dezake (fitxategiak), hala nola testu-fitxategiak, eta Moodlen zuzenean ere idatz dezake testu editorea erabilita.
 
-Bidalitako lanak irakasleak zehazturiko irizpide anitzeko ebaluazio-formulario bat erabilita kalifikatzen dira. Aurretik parekoen arteko ebaluazio prozesua eta ebaluazio formularioa ulertzeko praktikak egin daitezke irakasleak emandako adibiderako bidalketak erabilita, ebaluazio-erreferentzia batekin batera. Ikasleek kide baten edo gehiagoren ebaluazioa egiteko aukera du. Bidalketak eta ebaluatzaileak anonimoak izan daitezke nahi izanez gero.
+Bidalitako lanak irakasleak zehazturiko irizpide anizkoitzeko ebaluazio-formulario bat erabilita kalifikatzen dira. Aurretik parekoen arteko ebaluazio prozesua eta ebaluazio formularioa ulertzeko praktikak egin daitezke irakasleak emandako adibiderako bidalketak erabilita, ebaluazio-erreferentzia batekin batera. Ikasleek kide baten edo gehiagoren ebaluazioa egiteko aukera du. Bidalketak eta ebaluatzaileak anonimoak izan daitezke nahi izanez gero.
 
 Ikasleak bi kalifikazio lortuko ditu tailerra jardueran, bat bere bidalketarena eta bestea beste kideei eginiko kalifikazioarena. Biak kalifikatzailean gordetzen dira.';
 $string['modulenameplural'] = 'Tailerrak';
 $string['myassessments'] = 'Nire ebaluazioak';
 $string['mysubmission'] = 'Nire bidalketa';
-$string['nattachments'] = 'Gehienezko eranskin-kopurua bidalketako';
+$string['nattachments'] = 'Gehieneko eranskin-kopurua bidalketako';
 $string['noexamples'] = 'Oraindik ez dago adibiderik tailer honetan';
 $string['noexamplesformready'] = 'Ebaluazio-formularioa zehaztu behar duzu adibiderako bidalketak eman aurretik';
 $string['nogradeyet'] = 'Ez da oraindik kalifikatu';
@@ -232,8 +232,8 @@ $string['noworkshops'] = 'Ez dago tailerrik ikastaro honetan';
 $string['noyoursubmission'] = 'Oraindik ez duzu lanik bidali';
 $string['nullgrade'] = '-';
 $string['overallfeedback'] = 'Feedback orokorra';
-$string['overallfeedbackfiles'] = 'Feedback orokorraren gehienezko eranskin-kopurua';
-$string['overallfeedbackmaxbytes'] = 'Feedback orokorraren eranskinen gehienezko tamaina.';
+$string['overallfeedbackfiles'] = 'Feedback orokorraren gehieneko eranskin-kopurua';
+$string['overallfeedbackmaxbytes'] = 'Feedback orokorraren eranskinen gehieneko tamaina.';
 $string['overallfeedbackmode'] = 'Feedback orokorraren modua';
 $string['overallfeedbackmode_0'] = 'Desgaituta';
 $string['overallfeedbackmode_1'] = 'Gaituta eta hautazkoa';
@@ -356,7 +356,7 @@ $string['submissionendswitch_help'] = 'Bidalketak egiteko azken eguna zehaztuta 
 
 Aukera hau gaituz gero, esleipen programatua konfiguratzea gomendatzen da. Bidalketak ez badira esleitzen ezin da ebaluaziorik egin ebaluazio-fasean egon arren.';
 $string['submissiongrade'] = 'Bidalketaren kalifikazioa';
-$string['submissiongrade_help'] = 'Ezarpen honek bidalitako lanetan lor daitekeen gehienezko kalifikazioa zehazten du.';
+$string['submissiongrade_help'] = 'Ezarpen honek bidalitako lanetan lor daitekeen gehieneko kalifikazioa zehazten du.';
 $string['submissiongradeof'] = 'Bidalketaren kalifikazioa ({$a}(e)tik)';
 $string['submissionlastmodified'] = 'Azken aldaketa';
 $string['submissionrequiredcontent'] = 'Testuren bat idatzi edo fitxategiren bat gehitu behar duzu.';

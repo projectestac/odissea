@@ -47,6 +47,7 @@ $string['description_example'] = 'الوصف';
 $string['descriptor_add_category'] = 'إضافة مستوى صعوبة جديد';
 $string['descriptor_categories_description'] = 'إختر مستوى الصعوبة لمادة التعلم، الكفاءة، أو الكفاءة الفرعية هذه. يمكنك أيضًا إضافة مستوى صعوبة جديد أو الإعراض عن تحديد مستوى الصعوبة.';
 $string['descriptor_label'] = 'وصف الكفاءة';
+$string['donotleave_page_message'] = 'لديك تغييرات غير محفوظة في هذه الصفحة. هل ترغب بتركها وإهمال تغييراتك أم البقاء فيها؟';
 $string['eventscompetenceassigned'] = 'كفاءة تم تعيينها';
 $string['eventsexampleadded'] = 'مثال تمت إضافته إلى الجدول الأسبوعي';
 $string['eventsexamplecommented'] = 'مثال تم التعليق عليه';

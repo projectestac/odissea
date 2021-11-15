@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = '评估结束：';
+$string['activitydate:assessmentsclosed'] = '评估结束：';
+$string['activitydate:assessmentsopen'] = '公开评估：';
+$string['activitydate:assessmentsopened'] = '公开评估：';
+$string['activitydate:submissionsclose'] = '截止报名日期：';
+$string['activitydate:submissionsclosed'] = '截止的意见书：';
+$string['activitydate:submissionsopen'] = '公开意见书：';
+$string['activitydate:submissionsopened'] = '公开的意见书：';
 $string['aggregategrades'] = '重新计算成绩';
 $string['aggregation'] = '成绩汇总';
 $string['allocate'] = '分配提交';
@@ -430,3 +438,4 @@ $string['workshopname'] = '互动评价名称';
 $string['yourassessmentfor'] = '您对{$a}的评价';
 $string['yourgrades'] = '您的成绩';
 $string['yoursubmission'] = '您的提交';
+$string['yoursubmissionwithassessments'] = '你提交的评估报告';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Protección de correo electrónico';
+$string['privacy:metadata'] = 'El complemento de protección de correo electrónico no almacena ningún dato personal.';

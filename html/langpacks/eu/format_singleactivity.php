@@ -35,4 +35,4 @@ $string['orphanedwarning'] = 'Erabiltzaileek ezin dituzte jarduera hauek aurkitu
 $string['pluginname'] = 'Jarduera bakarreko formatua';
 $string['privacy:metadata'] = 'Jarduera bakarreko formatua pluginak ez du datu pertsonalik biltzen.';
 $string['sectionname'] = '';
-$string['warningchangeformat'] = 'Ikastaroaren formatua oraingo "Jarduera bakarrekoa"tik aldatzean ziurtatu ikastaroko aparteko jarduera guztiak kendu direla, baita "Berriak" foroari dagozkionak ere. Kontuan izan atalen egitura aldatu egin daitekeela.';
+$string['warningchangeformat'] = 'Ikastaroaren formatua oraingo "Jarduera bakarrekoa"tik aldatzean ziurtatu ikastaroko aparteko jarduera guztiak kendu direla, baita "Albisteak" foroari dagozkionak ere. Kontuan izan atalen egitura aldatu egin daitekeela.';

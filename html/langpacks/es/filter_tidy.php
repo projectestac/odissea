@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'HTML limpio';
+$string['privacy:metadata'] = 'El complemento de HTML Tidy no almacena ningún dato personal.';

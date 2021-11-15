@@ -86,7 +86,7 @@ $string['h5pactivityname'] = 'H5P';
 $string['h5pactivitysettings'] = 'Ezarpenak';
 $string['h5pattempts'] = 'Saiakeren aukerak';
 $string['h5pdisplay'] = 'H5P aukerak';
-$string['maxscore'] = 'Gehienezko puntuazioa';
+$string['maxscore'] = 'Gehieneko puntuazioa';
 $string['modulename'] = 'H5P';
 $string['modulename_help'] = 'H5P HTML5 Paketearen laburdura da - aurkezpenak, bideoak eta bestelako eduki multimedia, galderak, galdetegiak, jokoak eta bestelako eduki interaktiboa. H5P jarduerak H5P edukia igo eta ikastaro batera gehitzea ahalbidetzen du.
 
@@ -126,7 +126,7 @@ $string['review_none'] = 'Partaideek ezin dituzte euren saiakerak berrikusi';
 $string['review_on_completion'] = 'Partaideek euren saiakerak berrikusi ditzakete';
 $string['review_user_attempts'] = 'Ikusi erabiltzaileen saiakerak ({$a})';
 $string['score'] = 'Puntuazioa';
-$string['score_out_of'] = '{$a->rawscore} gehienezko {$a->maxscore}(e)tik';
+$string['score_out_of'] = '{$a->rawscore} gehieneko {$a->maxscore}(e)tik';
 $string['startdate'] = 'Hasiera-data';
 $string['statement_received'] = 'xAPI adierazpena jaso da';
 $string['totalscore'] = 'Puntuazioa guztira';

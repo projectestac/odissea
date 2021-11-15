@@ -436,7 +436,26 @@ class assign_feedback_editpdf extends assign_feedback_plugin {
      * @return array - An array of fileareas (keys) and descriptions (values)
      */
     public function get_file_areas() {
+
+        // XTEC ************ MODIFICAT - Remove all fileareas of component assignfeedback_editpdf during course reset (MDL-69570)
+        // 2021.09.16 @aginard
+        return array(
+            document_services::FINAL_PDF_FILEAREA => $this->get_name(),
+            document_services::COMBINED_PDF_FILEAREA => $this->get_name(),
+            document_services::PARTIAL_PDF_FILEAREA => $this->get_name(),
+            document_services::IMPORT_HTML_FILEAREA => $this->get_name(),
+            document_services::PAGE_IMAGE_FILEAREA => $this->get_name(),
+            document_services::PAGE_IMAGE_READONLY_FILEAREA => $this->get_name(),
+            document_services::STAMPS_FILEAREA => $this->get_name(),
+            document_services::TMP_JPG_TO_PDF_FILEAREA => $this->get_name(),
+            document_services::TMP_ROTATED_JPG_FILEAREA => $this->get_name(),
+        );
+        // ************ ORIGINAL
+        /*
         return array(document_services::FINAL_PDF_FILEAREA => $this->get_name());
+        */
+        // ************ FI
+
     }
 
     /**

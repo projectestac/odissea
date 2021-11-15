@@ -49,7 +49,7 @@ $string['cliinstallfinished'] = 'La instalación se completo exitosamente.';
 $string['cliinstallheader'] = 'Programa de instalación Moodle de línea de comando {$a}';
 $string['climustagreelicense'] = 'En modo no interactivo debe aceptar la licencia especificando la opción --agree-license';
 $string['cliskipdatabase'] = 'Omitiendo instalación de la base de datos.';
-$string['clitablesexist'] = 'Tablas de base de datos ya existentes, la instalación CLI no puede continuar.';
+$string['clitablesexist'] = 'Tablas de base de datos ya existentes; la instalación CLI no puede continuar.';
 $string['compatibilitysettings'] = 'Comprobando sus ajustes PHP...';
 $string['compatibilitysettingshead'] = 'Comprobando sus ajustes PHP...';
 $string['compatibilitysettingssub'] = 'Su servidor debería pasar todos estas comprobaciones para que Moodle pueda funcionar correctamente.';
@@ -127,6 +127,7 @@ $string['inputdatadirectory'] = 'Directorio de datos:';
 $string['inputwebadress'] = 'Dirección Web:';
 $string['inputwebdirectory'] = 'Directorio Moodle:';
 $string['installation'] = 'Instalación';
+$string['invaliddbprefix'] = 'Prefijo inválido. El prefijo solamente puede contener letras minúsculas y guiones bajos.';
 $string['langdownloaderror'] = 'El idioma "{$a}" no pudo ser descargado. El proceso de instalación continuará en Inglés.';
 $string['langdownloadok'] = 'El idioma "{$a}" ha sido instalado correctamente. El proceso de instalación continuará en este idioma.';
 $string['memorylimit'] = 'Límite de memoria';
@@ -148,15 +149,23 @@ a, digamos, 40M. Si no tiene acceso, puede pedir a su administrador que lo haga 
 (podrá ver los errores cuando mire las páginas) de modo que tendrá que eliminar el archivo ".htaccess".</p></li>
 </ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP no ha sido configurado adecuadamente con la extensión MySQLi de forma que se pueda comunicar con MySQL. Por favor, compruebe su archivo php.ini o recompile PHP.';
+$string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
+$string['nativeauroramysqlhelp'] = '<p>La base de datos es donde se almacenan la mayoría de las configuraciones y los datos de Moodle y debe estar configurada aquí.</p>
+<p>El nombre de la base de datos, nombre de usuario y contraseña de la base de datos son campos obligatorios; el prefijo de la tabla es opcional.</p>
+<p>El nombre de la base de datos solamente puede contener caracteres alfanuméricos, el símbolo del dólar ($) y el guión bajo (_).</p>
+<p>Si actualmente no existiera la base de datos y el usuario que indica tuviera permiso, Mooodle intentará crear una nueva base de datos con los permisos y configuraciones correctos.</p>
+<p>Este driver no es compatible con el motor antiguo MyISAM.</p>';
 $string['nativemariadb'] = 'MariaDB (nativo/mariadb)';
-$string['nativemariadbhelp'] = '<p>La base de datos es donde la mayor parte de la configuración y datos de Moodle están almacenados, y deben ser configurados aquí. </p>
+$string['nativemariadbhelp'] = '<p>La base de datos es donde la mayor parte de la configuración y datos de Moodle están almacenados y deben ser configurados aquí. </p>
 <p>El nombre de la base de datos, nombre de usuario, y contraseña son campos obligatorios; el prefijo de las tablas es opcional.</p>
+<p>El nombre de la base de datos debe contener sólo caracteres alfanuméricos, símbolos de dólar ($) y guiones bajos (_).</p>
 <p>Si la base de datos no existe actualmente, y el usuario que especifica tiene permiso, Moodle tratará de crear una nueva base de datos con los permisos y configuración correctos.</p>
 <p> Este controlador no es compatible con el antiguo motor MyISAM.</p>';
 $string['nativemysqli'] = 'MySQL mejorado (native/mysqli)';
-$string['nativemysqlihelp'] = '<p>La base de datos es donde la mayor parte de la configuración y datos de Moodle están almacenados, y deben ser configurados aquí. </p>
-<p>El nombre de la base de datos, nombre de usuario, y contraseña son campos obligatorios; el prefijo de las tablas es opcional.</p>
-<p>Si la base de datos no existe actualmente, y el usuario que especifica tiene permiso, Moodle tratará de crear una nueva base de datos con los permisos y configuración correctos.</p>';
+$string['nativemysqlihelp'] = '<p>La base de datos es donde se almacenan la mayoría de las configuraciones y los datos de Moodle y debe estar configurada aquí.</p>
+<p>El nombre de la base de datos, nombre de usuario y contraseña de la base de datos son campos obligatorios; el prefijo de la tabla es opcional.</p>
+<p>El nombre de la base de datos solamente puede contener caracteres alfanuméricos, el símbolo del dólar ($) y el guión bajo (_).</p>
+<p>Si actualmente no existiera la base de datos y el usuario que indica tuviera permiso, Mooodle intentará crear una nueva base de datos con los permisos y configuraciones correctos.</p>';
 $string['nativeoci'] = 'Oracle (native/oci)';
 $string['nativeocihelp'] = 'Ahora tiene que configurar la base de datos donde se almacenarán la mayoría de los datos de Moodle. Esta base de datos debe estar creada previamente, al igual que un nombre de usuario y su contraseña, para poder acceder a ella. El prefijo de la tabla es obligatorio.';
 $string['nativepgsql'] = 'PostgreSQL (native/pgsql)';
@@ -189,10 +198,9 @@ $string['pathswrongadmindir'] = 'El directorio admin no existe';
 $string['pgsqlextensionisnotpresentinphp'] = 'PHP no ha sido adecuadamente configurado con la extensión PGSQL de modo que pueda comunicarse con PostgreSQL. Por favor, compruebe el archivo php.ini o vuelva a compilar PHP.';
 $string['phpextension'] = 'Extensión PHP {$a}';
 $string['phpversion'] = 'Versión PHP';
-$string['phpversionhelp'] = '<p>Moodle requiere al menos una versión de PHP 4.3.0 o 5.1.0 ((5.0.x tiene una serie de problemas conocidos).</p>
-<p>En este momento está ejecutando la versión {$a}</p>
-<p>¡Debe actualizar PHP o trasladarse a otro servidor con una versión más reciente de PHP!<br />
-(En caso de 5.0.x podría también revertir a la versión 4.4.x)</p>';
+$string['phpversionhelp'] = '<p>Moodle requiere una versión de PHP que sea al menos la 5.6.5 o 7.1 (7.0.x tiene algunas limitaciones del motor).</p>
+<p>En este momento está ejecutando la versión {$a}.</p>
+<p>Debe actualizar PHP o trasladarse a otro servidor con una versión más reciente de PHP.</p>';
 $string['releasenoteslink'] = 'Para obtener información acerca de esta versión de Moodle, consulte las notas de la versión en {$a}';
 $string['safemode'] = 'Modo Seguro';
 $string['safemodeerror'] = 'Moodle puede tener problemas con Modo Seguro (\'safe mode\') activado';
@@ -214,10 +222,7 @@ $string['welcomep30'] = 'Esta versión de <strong>{$a->installername}</strong> i
     aplicaciones necesarias para que <strong>Moodle</strong> funcione en su ordenador,
     principalmente:';
 $string['welcomep40'] = 'El paquete también incluye <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.';
-$string['welcomep50'] = 'El uso de todas las aplicaciones del paquete está gobernado por sus respectivas
-    licencias. El programa <strong>{$a->installername}</strong> es
-    <a href="http://www.opensource.org/docs/definition_plain.html">código abierto</a> y se distribuye
-    bajo licencia <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
+$string['welcomep50'] = 'El uso de todas las aplicaciones del paquete está supeditado a sus respectivas licencias. El programa <strong>{$a->installername}</strong> es <a href="http://www.opensource.org/docs/definition_plain.html">de código abierto</a> y se distribuye bajo licencia <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>.';
 $string['welcomep60'] = 'Las siguientes páginas le guiarán a través de algunos sencillos pasos para configurar y ajustar <strong>Moodle</strong> en su ordenador. Puede utilizar los valores por defecto sugeridos o, de forma opcional, modificarlos para que se ajusten a sus necesidades.';
 $string['welcomep70'] = 'Pulse en el botón "Siguiente" para continuar con la configuración de <strong>Moodle</strong>.';
 $string['wwwroot'] = 'Dirección Web';

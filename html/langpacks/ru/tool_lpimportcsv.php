@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['competencyscale'] = 'Шкала компетентности: {$a}';
-$string['competencyscaledescription'] = 'Шкала компетентности, созданная путем импорта';
+$string['competencyscale'] = 'Шкала компетенции: {$a}';
+$string['competencyscaledescription'] = 'Шкала компетенции, созданная путем импорта';
 $string['confirm'] = 'Подтвердить';
 $string['confirmcolumnmappings'] = 'Подтверждение сопоставлений столбцов';
 $string['csvdelimiter'] = 'Разделитель CSV';
@@ -35,17 +35,17 @@ $string['descriptionformat'] = 'Формат описания';
 $string['encoding'] = 'Кодировка';
 $string['export'] = 'Экспорт';
 $string['exportid'] = 'Экспортированный ID (необязательно)';
-$string['exportnavlink'] = 'Экспорт набора компетентностей';
+$string['exportnavlink'] = 'Экспорт структуры компетенций';
 $string['idnumber'] = 'Номер ID';
 $string['import'] = 'Импорт';
 $string['importfile'] = 'CSV-файл описания набора';
-$string['importfile_help'] = 'Структуру компетентностей можно импортировать через текстовый файл. Формат файла можно определить, создав новую структуру компетентностей на сайте и затем экспортировав ее.';
+$string['importfile_help'] = 'Структуру компетенций можно импортировать через текстовый файл. Формат файла можно определить, создав новую структуру компетенций на сайте и затем экспортировав ее.';
 $string['importingfile'] = 'Импорт данных файла';
 $string['invalidimportfile'] = 'Недопустимый формат файла.';
-$string['noframeworks'] = 'Пока нет созданных наборов компетентностей.';
+$string['noframeworks'] = 'Пока нет созданных структур компетенций.';
 $string['parentidnumber'] = 'Родительский номер ID';
-$string['pluginname'] = 'Импорт набора компетентностей';
-$string['privacy:metadata'] = 'Плагин Импорт структуры компетентностей не хранит никаких личных данных.';
+$string['pluginname'] = 'Импорт структуры компетенций';
+$string['privacy:metadata'] = 'Плагин Импорт структуры компетенций не хранит никаких личных данных.';
 $string['processingfile'] = 'Обработка файла';
 $string['relatedidnumbers'] = 'ID номера компетенций с перекрестными ссылками';
 $string['ruleconfig'] = 'Конфигурация правила  (необязательно)';

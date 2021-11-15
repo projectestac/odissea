@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:submissionsdue'] = '到期日：';
+$string['activitydate:submissionsopen'] = '打开：';
+$string['activitydate:submissionsopened'] = '打开：';
 $string['activityoverview'] = '您有需要留意的作业';
 $string['addattempt'] = '允许重做';
 $string['addnewattempt'] = '添加新尝试';
@@ -63,6 +66,7 @@ $string['assign:submit'] = '提交作业';
 $string['assign:view'] = '查看作业';
 $string['assign:viewblinddetails'] = '启用盲批时查看学生身份';
 $string['assign:viewgrades'] = '查看成绩';
+$string['assign:viewownsubmissionsummary'] = '查看自己的提交摘要';
 $string['assignfeedback'] = '反馈插件';
 $string['assignfeedbackpluginname'] = '反馈插件';
 $string['assignmentisdue'] = '作业到期';
@@ -111,6 +115,7 @@ $string['batchsetmarkingworkflowstateforusers'] = '为{$a}位选定的用户设�
 $string['blindmarking'] = '盲批';
 $string['blindmarking_help'] = '盲批，批改人看不到学生的身份信息。一旦完成了与该作业相关的提交或评分，盲批设置将被锁定。';
 $string['blindmarkingenabledwarning'] = '此活动已启用盲批。';
+$string['cachedef_overrides'] = '用户和组覆盖信息';
 $string['calendardue'] = '{$a} 已到期';
 $string['calendargradingdue'] = '{$a} 等待评分中';
 $string['changefilters'] = '变更过滤器';
@@ -122,6 +127,7 @@ $string['clickexpandreviewpanel'] = '点击展开检查面板';
 $string['collapsegradepanel'] = '折叠评分面板';
 $string['collapsereviewpanel'] = '折叠检查面板';
 $string['comment'] = '评论';
+$string['completiondetail:submit'] = '提交';
 $string['completionsubmit'] = '学生必须提交才可以完成此活动。';
 $string['configshowrecentsubmissions'] = '任何人都可以在最近的活动报表中看到作业通知。';
 $string['confirmbatchgradingoperation'] = '您确定您要对 {$a->count} 名学生进行{$a->operation}操作吗?';
@@ -227,6 +233,7 @@ $string['feedbacksettings'] = '反馈设置';
 $string['feedbacktypes'] = '反馈类型';
 $string['filesubmissions'] = '文件作业';
 $string['filter'] = '过滤器';
+$string['filterdraft'] = '草稿';
 $string['filtergrantedextension'] = '准予延期';
 $string['filternone'] = '没有过滤器';
 $string['filternotsubmitted'] = '没有提交';

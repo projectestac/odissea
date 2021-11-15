@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Visa smilies som bilder';
-$string['privacy:metadata'] = 'Pluginmodulen Visa Emojis som bilder lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Visa Emojis som bilder lagrar ingen personinformation.';
 $string['settingformats'] = 'Tillämpa på format';
 $string['settingformats_desc'] = 'Filtret kommer bara att tillämpas om den ursprungliga texten infogades i något av de valda formaten.';

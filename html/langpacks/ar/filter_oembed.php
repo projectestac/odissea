@@ -30,3 +30,4 @@ $string['cachelifespan_desc'] = 'الفترة الزمنية التي ينبغي
 $string['divtag'] = 'الترشيح حسب وسوم &lt; div  &gt;';
 $string['providername'] = 'اسم المزود';
 $string['providersallowed_desc'] = 'القائمة البيضاء للمزود المزمع استعمالها مع هذا الملحق';
+$string['targettag_desc'] = 'ما هو نوع الوسم الذي ينبغي تنقيحه - المرتكزات أم وسوم div باستعمال الفئة oembed.';

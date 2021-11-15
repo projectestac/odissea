@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['accessdenied'] = 'عذرًا، ليست لديك صلاحية الوصول إلى هذه الصفحة.';
 $string['commentonby'] = 'تعليق على المشاركة <u>{$a->title}</u> {$a->date} من قبل <u>{$a->author}</u>';
 $string['commentonbyusers'] = 'التعليق <u>{$a->commenttitle}</u> على المشاركة <u>{$a->posttitle}</u> <br> من قبل <u>{$a->author}</u>';
 $string['deletedblogpost'] = 'مشاركة بلا عنوان.';
@@ -63,17 +64,28 @@ $string['maxattachmentsize'] = 'أقصى حجم للمرفقات';
 $string['maxvisibility'] = 'حالة الإظهار القصوى';
 $string['numberofposts'] = 'عدد المشاركات لكل صفحة';
 $string['numberofposts_help'] = 'تعيين عدد المشاركات المعروضة في المدونة لكل صفحة.';
+$string['onlyworkspersonal'] = 'يعمل فقط مع المدونات الشخصية';
+$string['oublog:contributepersonal'] = 'النشر والتعليق في المدونات الشخصية';
+$string['oublog:viewpersonal'] = 'معاينة المنشورات في المدونات الشخصية';
+$string['oublog:viewprivate'] = 'معاينة المنشورات الخاصة في المدونات الشخصية';
 $string['oublogallpostslogin'] = 'فرض تسجيل الدخول عند صفحة كل المنشورات';
+$string['oublogallpostslogin_desc'] = 'تمكين فرض تسجيل الدخول إلى صفحة مُدخلات المدونات الشخصية في الموقع.
+عند تمكينه، ستقتصر رؤية رابط هذه الصفحة على المستخدمين الذين سجلوا دخولهم.';
+$string['personalblognotsetup'] = 'المدونة الشخصية غير مهيأة';
+$string['personalblogtitle'] = 'المدونة الشخصية';
 $string['postinfoblock'] = '<u>{$a->posttitle}</u> <br> <u>{$a->postdate}</u> <br> <u>{$a->sourcelink}</u>';
 $string['posttitle'] = 'عنوان المشاركة';
 $string['privacy:metadata:oublog_comments:title'] = 'عنوان التعليق';
 $string['privacy:metadata:oublog_comments_moderated:title'] = 'عنوان التعليق';
+$string['privacy:metadata:oublog_instances'] = 'عيِّنات من مدونة OU الشخصية';
 $string['privacy:metadata:preference:oublog_accordion_allposts_open'] = 'أي من اللوحات سيكون مرئيًا ضمن عرض الحالة (صفحة معاينة كل المنشورات).';
 $string['restricttags_req'] = 'ينبغي إدخال الوسوم';
 $string['sharedblog_help'] = '<p><strong>مدونة مشاركة</strong></p>
 <p>هذا الخيار يسمح لعينة المدونة أن تتصرف على أنها مدونة ‘فرعية’ وتعرض محتويات مدونة ‘رئيسية’.</p>
 <p>يرجى إدخال قيمة حقل الرقم التعريفي للمدونة \'الرئيسية\' التي ترغب بأن تعرض هذه المدونة محتوياتها</p>';
 $string['statblockon'] = 'إظهار إحصائيات إضافية لاستعمال المدونة';
+$string['statblockon_help'] = 'تمكين عرض الإحصائيات الإضافية في \'كتلة\' استعمال المدونة.
+يعمل مع المدونات الشخصية (العمومية)، الفردية المرئية والمجموعية المرئية فقط.';
 $string['tags'] = 'الوسوم';
 $string['timefilter_label'] = 'فترة زمنية';
 $string['title'] = 'العنوان';

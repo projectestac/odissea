@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Avaliação exportada em XML';
 $string['pluginname'] = 'Ficheiro XML';
-$string['privacy:metadata'] = 'O módulo Exportar ficheiro XML não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Exportar ficheiro XML não armazena quaisquer dados pessoais.';
 $string['xml:publish'] = 'Publicar exportação de notas XML';
 $string['xml:view'] = 'Usar exportação de notas XML';

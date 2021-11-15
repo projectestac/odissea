@@ -43,7 +43,7 @@ $string['confirmtourremovalquestion'] = 'Ziur zaude ibilaldi hau ezabatu nahi du
 $string['confirmtourremovaltitle'] = 'Baieztatu ibilaldia ezabatzea';
 $string['content'] = 'Edukia';
 $string['content_heading'] = 'Edukia';
-$string['content_help'] = 'Urratsa deskribatzen duen edukia gehi daiteke testu-soil gisa, behar izanez gero etiketa eleanitzen barruan (eduki eleanitzaren iragazkiarekin erabiltzeko).
+$string['content_help'] = 'Urratsa deskribatzen duen edukia gehi daiteke testu-soil gisa, behar izanez gero etiketa eleaniztunen barruan (eduki eleaniztunaren iragazkiarekin erabiltzeko).
 
 Bestela, hizkuntza-kate baten IDa sar daiteke identifikatzaile, osagaia formatuan (komaren ostean parentesi edo tarterik gabe).';
 $string['cssselector'] = 'CSS hautatzailea';
@@ -147,7 +147,7 @@ $string['targettype_help'] = 'Urrats bakoitza orriko zati batekin lotuta dago - 
 * CSS selector - jomuga CSSak erabiliz modu zehatzean identifikatzeko
 * Erakutsi orriaren erdian - orriaren ezein zatirekin loturarik ez duen urrats baterako';
 $string['title'] = 'Izenburua';
-$string['title_help'] = 'Urrats baten izenburua gehi daiteke testu-soil gisa, behar izanez gero etiketa eleanitzen barruan (eduki eleanitzaren iragazkiarekin erabiltzeko).
+$string['title_help'] = 'Urrats baten izenburua gehi daiteke testu-soil gisa, behar izanez gero etiketa eleaniztunen barruan (eduki eleaniztunaren iragazkiarekin erabiltzeko).
 
 Bestela, hizkuntza-kate baten IDa sar daiteke identifikatzaile,osagaia formatuan (komaren ostean parentesi edo tarterik gabe).';
 $string['tour1_content_addingblocks'] = 'Izan ere, ondo hausnartu zure orrietan ezein bloke gehitzea nahi duzun. Blokeak ez dira Moodle aplikazioan erakusten, eta beraz orokorrean hobe da ziurtatzea zure gunea blokerik erakutsi gabe ondo funtzionatzen duela.';
@@ -167,7 +167,7 @@ $string['tour2_content_addingblocks'] = 'Botoi hau erabiliz orri honetara blokea
 $string['tour2_content_customisation'] = 'Ikastaroko ezarpenak aldatzeko, erabil ezazu goiburuaren ertzean dagoen ezarpen-menua. Antzeko ezarpen-menua aurkituko duzu jarduera bakoitzaren hasiera-orrian ere. Saiatu zaitez aktibatzen orain.';
 $string['tour2_content_end'] = 'Hau da erabiltzaile-ibilbidearen amaiera. Ez zaizu berriz ere erakutsiko, zuk orri-oinean dagoen esteka erabilita berrabiarazten ez baduzu. Guneko kudeatzaileak ibilbide gehiago sor ditzake, behar izanez gero.';
 $string['tour2_content_navigation'] = 'Nabigazio gehiena orain nabigazio-kutxa honen bitartez egiten da. Erabili goiko aldeko botoia ezkutatzeko edo erakusteko. Zure ikastaroko ataletarako estekak ere bertan direla ikusiko duzu.';
-$string['tour2_content_opendrawer'] = 'Saiatu orain nabigazio-kutxa irekitzen.';
+$string['tour2_content_opendrawer'] = 'Saiatu nabigazio-kutxa orain zabaltzen.';
 $string['tour2_content_participants'] = 'Ikusi partaideak hemen. Bertan ikasleak gehitu edo kentzeko modua ere izango duzu.';
 $string['tour2_content_welcome'] = 'Ongi etorri Boost azalera! Zure gunea lehenagoko bertsio batetik eguneratu bada, litekeena da gauza batzuk oso ezberdin aurkitzea ikastaroaren hasiera-orrian.';
 $string['tour2_title_addblock'] = 'Gehitu blokea';
@@ -175,7 +175,7 @@ $string['tour2_title_addingblocks'] = 'Blokeak gehitzen';
 $string['tour2_title_customisation'] = 'Pertsonalizazioa';
 $string['tour2_title_end'] = 'Ibilbidearen amaiera';
 $string['tour2_title_navigation'] = 'Nabigazioa';
-$string['tour2_title_opendrawer'] = 'Ireki nabigazio-kutxa';
+$string['tour2_title_opendrawer'] = 'Zabaldu nabigazio-kutxa';
 $string['tour2_title_participants'] = 'Ikastaroko partaideak';
 $string['tour2_title_welcome'] = 'Ongi etorri';
 $string['tour3_content_dashboard'] = 'Aginte-panel berriak zuretzat garrantzitsua den informazioa modu errazean eskuratzen laguntzeko ezaugarri asko ditu.';
@@ -209,7 +209,7 @@ $string['tour4_content_icon'] = 'Ikono hau erabiliz zure mezuak edozein orritati
 
 Irakurri gabeko mezurik izanez gero, mezu-kopurua hemen erakutsiko da.
 
-Egin klik ikonoan mezuak irekitzeko eta jarraitu ibilbidea.';
+Egin klik ikonoan mezuen kutxa irekitzeko eta jarraitu ibilbidea.';
 $string['tour4_content_messaging'] = 'Mezularitza-interfaze berriak ikastaro barruko taldeko mezularitzarako aukera ematen du, baita mezuak nork bidal diezazkizukeen hobeto kontrolatzeko ahalmena ere.';
 $string['tour4_content_settings'] = 'Mezularitzaren ezarpenetara engranaje-ikonoaren bidez sar zaitezke. Pribatutasun-ezarpen berri batek mezuak nork bidal diezazkizukeen murriztu dezake.';
 $string['tour4_content_starred'] = 'Elkarrizketei izarrak eslei diezazkiekezu aurkitzea erraztuz.';
@@ -226,7 +226,7 @@ Ikasleek osatu gisa eskuz markatu dezaketen jardueretan, jarduera-orrian \'Marka
 $string['tour_activityinfo_activity_teacher_title'] = 'Berria: Jardueraren informazioa';
 $string['tour_activityinfo_course_student_content'] = 'Orain ikasleei jarduera datak eta jardueraren osaketa-baldintzak ikastaro-orrian erakusten zaizkie.';
 $string['tour_activityinfo_course_student_title'] = 'Berria: Jardueraren informazioa';
-$string['tour_activityinfo_course_teacher_content'] = '\'Erakutsi jardueren osaketa-baldintzak\' eta \'Erakutsi jardueraren datak\' ikastaroko ezarpen berriek jardueren osaketa-baldintzak (zehaztuta badaude) edota datak ikasleek ikastaro-orrian erakusteko aukera ematen dute.';
+$string['tour_activityinfo_course_teacher_content'] = 'Ikastaroen \'Erakutsi jardueren osaketa-baldintzak\' eta \'Erakutsi jardueraren datak\' ezarpen berriek ikasleei jardueren osaketa-baldintzak - zehaztuta badaude - edota datak ikastaro-orrian erakusteko aukera ematen dute.';
 $string['tour_activityinfo_course_teacher_title'] = 'Berria: Jardueraren informazioa';
 $string['tour_final_step_content'] = 'Zure erabiltzaile-ibilbidearen amaiera duzu hau. Ez da berriro abiatuko behealdeko estekan klik egin ezean.';
 $string['tour_final_step_title'] = 'Ibilbidearen amaiera';

@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['colourdarkgreen'] = 'أخضر داكن';
 $string['colourgreen'] = 'أخضر';
+$string['displaytitle_mod_html'] = 'صفحة الويب';
 $string['home'] = 'الصفحة الرئيسية للمقرر الدراسي';
 $string['icontitle-home'] = 'الصفحة الرئيسية';
 $string['icontitle-tags'] = 'الوسوم';
@@ -44,6 +45,7 @@ $string['reactivate'] = 'إعادة التفعيل';
 $string['registeredthanks'] = 'ملحقك مسجل. شكراً لك.';
 $string['registerintro2'] = 'أنت تدعم التطوير المستقبلي لهذا الملحق';
 $string['section0name'] = 'عام';
+$string['sectionerrorstring'] = 'جلستك قد تكون انتهت صلاحيتها. حاول إعادة تنشيط هذه الصفحة.';
 $string['sectionerrortitle'] = 'خطأ عند تحميل المحتوى';
 $string['sitename'] = 'اسم الموقع';
 $string['transparenttitleadjustments'] = 'تعديلات شفافية العنوان';

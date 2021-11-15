@@ -108,6 +108,7 @@ Le chat sono particolarmente utili per incontri di gruppo online, come ad ad ese
 * Sessioni di domande e risposte con invitati provenienti da posti diversi';
 $string['modulenameplural'] = 'Chat';
 $string['neverdeletemessages'] = 'Sempre';
+$string['nextchattime'] = 'Orario della prossima chat:';
 $string['nextsession'] = 'Prossima sessione programmata';
 $string['no_complete_sessions_found'] = 'Non ci sono sessioni terminate.';
 $string['nochat'] = 'Non sono state trovate chat';
@@ -157,6 +158,7 @@ $string['servermax'] = 'Max. numero utenti';
 $string['serverport'] = 'Porta server';
 $string['sessions'] = 'Sessioni chat';
 $string['sessionstart'] = 'La prossima sessione di chat inizierà il {$a->date}, ({$a->fromnow} da adesso)';
+$string['sessionstartsin'] = 'La prossima sessione di chat inizierà {$a} da ora.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Tutti i partecipanti possono visualizzare le sessioni svolte';
 $string['studentseereports_help'] = 'Impostando a No, solo gli utenti con il privilegio mod/chat:readlog potranno visualizzare i log delle chat';

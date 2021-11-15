@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = 'Lägg till ett nytt Kommande händelser block';
-$string['calendar_upcoming:myaddinstance'] = 'Lägg till en ny Kommande händelser block på Mitt Moodle';
+$string['calendar_upcoming:myaddinstance'] = 'Lägg till en ny Kommande händelser block till översiktssidan';
 $string['gotocalendar'] = 'Gå till Kalender';
 $string['pluginname'] = 'Kommande händelser';
 $string['privacy:metadata'] = 'Kommande händelser-blocket visar enbart befintlig kalenderdata.';

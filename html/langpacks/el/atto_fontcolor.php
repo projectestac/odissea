@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = 'Μαύρο';
+$string['color_blue'] = 'Μπλε';
+$string['color_green'] = 'Πράσινο';
+$string['color_red'] = 'Κόκκινο';
+$string['color_white'] = 'Άσπρο';
+$string['color_yellow'] = 'Κίτρινο';
 $string['pluginname'] = 'Χρώμα γραμματοσειράς';
 $string['privacy:metadata'] = 'Το πρόσθετο «atto_fontcolor» δεν αποθηκεύει κανένα προσωπικό δεδομένο.';

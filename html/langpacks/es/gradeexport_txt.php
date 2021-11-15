@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'Calificación TXT exportada';
 $string['pluginname'] = 'Archivo en texto plano';
+$string['privacy:metadata'] = 'El complemento de exportación de archivos de calificaciones en Texto plano no almacena ningún dato personal.';
 $string['timeexported'] = 'Última descarga de este curso';
 $string['txt:publish'] = 'Publicar exportación de calificaciones TXT';
 $string['txt:view'] = 'Usar exportación de calificaciones en texto';

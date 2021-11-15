@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allusers'] = 'Όλοι οι χρήστες';
 $string['bulkaction'] = 'Επιλογή μιας μαζικής λειτουργίας';
 $string['bulkbuttonlabel'] = 'Αποστολή';
+$string['bulkview'] = 'Μαζικές λειτουργίες';
 $string['certificatecopy'] = 'ΑΝΤΙΓΡΑΦΟ';
 $string['certificateimage'] = 'Αρχείο εικόνας πιστοποιητικού';
 $string['certificateimage_help'] = 'Αυτή είναι η εικόνα που θα χρησιμοποιηθεί στο πιστοποιητικό';

@@ -28,6 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['mysessions'] = 'Aktiva sessioner';
 $string['navigationlink'] = 'Webbläsarsessioner';
 $string['pluginname'] = 'Användarsessionsrapport';
-$string['privacy:metadata'] = 'Pluginmodulen Användarsessionsrapport lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Användarsessionsrapport lagrar ingen personinformation.';
 $string['thissession'] = 'Nuvarande session';
 $string['usersessions:manageownsessions'] = 'Hantera egna webbläsarsessioner';

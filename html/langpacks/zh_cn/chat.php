@@ -109,6 +109,7 @@ $string['modulename_help'] = '聊天活动模块使参与人能够进行基于�
 * 帮助学生准备考试的会议，老师或其他学生将提出例题讨论';
 $string['modulenameplural'] = '聊天';
 $string['neverdeletemessages'] = '不删除聊天消息';
+$string['nextchattime'] = '下次聊天时间：';
 $string['nextsession'] = '下一个预定的会话';
 $string['no_complete_sessions_found'] = '没有找到已结束的会话。';
 $string['nochat'] = '没有找到聊天';
@@ -158,6 +159,7 @@ $string['servermax'] = '最大用户数';
 $string['serverport'] = '服务器端口';
 $string['sessions'] = '聊天会话';
 $string['sessionstart'] = '下一个聊天会话将从{$a->date}开始，(离现在{$a->fromnow})';
+$string['sessionstartsin'] = '下一个聊天会话将从现在开始{$a}。';
 $string['strftimemessage'] = '';
 $string['studentseereports'] = '每个人都可以查看过去的会话';
 $string['studentseereports_help'] = '如果设置为否，只有具有 mod/chat:readlog 权限的用户才能看到聊天日志';

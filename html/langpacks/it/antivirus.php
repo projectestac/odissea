@@ -43,6 +43,7 @@ $string['emailfilesize'] = 'Dimensione del file:';
 $string['emailgeoinfo'] = 'Localizzazione geografica:';
 $string['emailinfectedfiledetected'] = 'File infetto individuato';
 $string['emailipaddress'] = 'Indirizzo IP:';
+$string['emailreferer'] = 'Riferimento:';
 $string['emailreport'] = 'Report:';
 $string['emailscanner'] = 'Scanner:';
 $string['emailscannererrordetected'] = 'Si è verificato un errore durante la scansione';

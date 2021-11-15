@@ -26,9 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['audioextensions'] = '音频： {$a}';
+$string['defaultheight'] = '默认高度';
+$string['defaultheightdesc'] = '如果未指定高度且播放器无法确定实际媒体文件高度，则媒体播放器高度。';
+$string['defaultwidth'] = '默认宽度';
+$string['defaultwidthdesc'] = '媒体播放器宽度，如果未指定宽度且播放器无法确定实际媒体文件宽度。';
+$string['extensions'] = '扩展名：{$a}';
 $string['managemediaplayers'] = '管理媒体播放器';
 $string['mediaformats'] = '可用的播放器';
 $string['mediaformats_desc'] = '启用播放器后，可能通过多媒体过滤器（如果有启用的话）、文件管理器或URL来使用Embed标签嵌入文件。若关闭了播放器，则不会嵌入这些格式。用户可以手动下载访问这些资源。
 
 如果同时有两个播放支持同一种文件格式，启用两个播放器有助于提高在各种设备如手机上的兼容性。当然也可以通过给同一个音视频提供不同格式的文件来进一步提高兼容性。';
+$string['privacy:metadata'] = '媒体嵌入不存储任何个人数据。';
+$string['supports'] = '支持';
 $string['videoextensions'] = '视频：{$a}';

@@ -25,5 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addparticipant'] = 'Добавить';
 $string['allusers'] = 'все пользователи';
 $string['assignroles'] = 'Назначить роли';
+$string['cancelchanges'] = 'Отмена';
+$string['particpantslabel'] = 'Участники';
+$string['savechanges'] = 'Сохранить';

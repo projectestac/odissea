@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activitypost'] = 'Publicaciones de actividad';
 $string['activityview'] = 'Vistas de actividad';
+$string['add'] = 'Añadir';
 $string['addreport'] = 'Añadir informe';
 $string['anyone'] = 'Cualquiera';
 $string['anyone_summary'] = 'Cualquier usuario en el Campus podra ver este informe';
@@ -46,6 +47,11 @@ $string['ccoursefield'] = 'Condición de campo del curso';
 $string['cellalign'] = 'Alineación de celda';
 $string['cellsize'] = 'Tamaño de celda';
 $string['cellwrap'] = 'Justificado en celda';
+$string['checksql_execution'] = 'Bloquear ejecución SQL de informes configurables';
+$string['checksql_execution_details'] = 'Al permitir la ejecución de código SQL, existe un problema de seguridad potencial con los usuarios que agregan código arbitrario. La ejecución de código SQL debe deshabilitarse para permitir solo consultas SQL de lectura / recuperación de datos. La ejecución de SQL se puede deshabilitar en su archivo config.php configurando $ CFG-> block_configurable_reports_enable_sql_execution a 0';
+$string['checksql_execution_ok'] = 'La ejecución de SQL está deshabilitada.';
+$string['checksql_execution_warning'] = 'Se recomienda deshabilitar la ejecución de SQL para evitar la ejecución de código SQL arbitrario en su servidor.';
+$string['cohorts'] = 'Cohortes';
 $string['column'] = 'Columna';
 $string['columnandcellproperties'] = 'Propiedades de columna y celda';
 $string['columncalculations'] = 'Cálculos de columna';
@@ -104,6 +110,8 @@ $string['comp_template_help'] = '<p>Usted puede modificar el diseño del informe
 <p>Para crear una plantilla vea las marcas para reemplazar que puede emplear en el encabezado, pie de paginas y para cada registro del informe usando los botones de ayuda o la información que se muestra en la misma página</p>
 
 <p>Más ayuda: <a href="http://docs.moodle.org/en/blocks/configurable_reports/" target="_blank">Plugin documentation</a></p>';
+$string['competencyframeworks'] = 'Marcos de competencia';
+$string['competencytemplates'] = 'Plantillas de competencias';
 $string['componenthelp'] = 'Ayuda de componente';
 $string['conditionexpr'] = 'Condición';
 $string['conditionexpr_conditions'] = 'Condición';
@@ -178,6 +186,7 @@ $string['dbpassinfo'] = 'Contraseña de la base de datos remota (para el DB User
 $string['dbuser'] = 'Usuario de la BD';
 $string['dbuserinfo'] = 'Nombre de usuario de la base de datos remota (debería tener habilitados los privilegios necesarios para ejecutar sentencias SELECT en la DB Name definida más arriba)';
 $string['decimals'] = 'Número de decimales';
+$string['description'] = 'Descripción';
 $string['direction'] = 'Instruccion';
 $string['disabled'] = 'Deshabilitado';
 $string['displayglobalreports'] = 'Visualización Global de los Reportes';
@@ -215,6 +224,8 @@ $string['filter_searchtext'] = 'Búsqueda de texto';
 $string['filter_searchtext_summary'] = 'Filtro de texto libre';
 $string['filtercategories'] = 'Filtrar categorias';
 $string['filtercategories_summary'] = 'Para filtrar por categoría';
+$string['filtercohorts'] = 'Cohortes';
+$string['filtercompetencytemplates'] = 'Plantillas de competencias';
 $string['filtercoursecategories'] = 'Filtro por categoría del curso';
 $string['filtercoursecategories_summary'] = 'Filtrar cursos por su ninguna categoría padre';
 $string['filtercoursemodules'] = 'Módulo del Curso';
@@ -263,6 +274,7 @@ $string['importreport'] = 'Importar informe';
 $string['includesubcats'] = 'Incluir subcategorias';
 $string['jsordering'] = 'Ordenar por JavaScript';
 $string['jsordering_help'] = 'Ordenamiento con JavaScript le permite ordenar la tabla del informe sin volver a cargar la página';
+$string['label'] = 'Etiqueta';
 $string['label_field'] = 'Campo de etiqueta';
 $string['label_field_help'] = 'Campo que proporciona nombres para las cosas representadas en el gráfico';
 $string['lastexecutiontime'] = 'Tiempo de ejecución = {$a} (Sec)';

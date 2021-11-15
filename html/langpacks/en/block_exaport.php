@@ -50,6 +50,8 @@ $string['block_exaport_app_externaleportfolio_body'] = 'For App';
 $string['block_exaport_app_externaleportfolio_head'] = 'Save files to mahara if checked, save to exaport if not checked';
 $string['block_exaport_confirm_profilefield_create'] = 'Do you really want to add the required profile field?';
 $string['block_exaport_confirm_profilefield_exists'] = 'Profile field for trusted teacher already exists';
+$string['block_exaport_copytomyportfolio'] = 'Enable "Copy to my portfolio"';
+$string['block_exaport_copytomyportfolio_body'] = 'User will be able copy artifacts from shared category into own portfolio';
 $string['block_exaport_maxbytes'] = 'Maximum uploaded file size in Exabis ePortfolio';
 $string['block_exaport_maxbytes_body'] = 'This specifies a maximum size that uploaded files can be throughout the Exabis ePortfolio.<br> Value for whole site is: {$a->sitemaxbytes}. See <a href="{$a->settingsurl}">settings</a>';
 $string['block_exaport_multiplefilesinitem'] = 'Multiple files in "File" artifact';

@@ -40,7 +40,7 @@ $string['addcompetency_help'] = 'Seleccionar todas las competencias que debería
 $string['addcourse'] = 'Añadir cursos';
 $string['addcourse_help'] = 'Seleccionar todos los cursos que deben agregarse a este requisito para la insignia. Mantener pulsada la tecla CTRL para seleccionar varios elementos.';
 $string['addcriteria'] = 'Añadir criterio';
-$string['addcriteriatext'] = 'Para comenzar a añadir criterios, por favor seleccione una de las opciones del menú desplegable.';
+$string['addcriteriatext'] = 'Para empezar a añadir criterios, por favor seleccione una de las opciones del menú desplegable.';
 $string['addedtobackpack'] = 'Insignia añadida a mochila';
 $string['addrelated'] = 'Añadir insignia relacionada';
 $string['addtobackpack'] = 'Añadir a la mochila';
@@ -76,7 +76,7 @@ $string['archiveconfirm'] = 'Eliminar y mantener las insignias otorgadas existen
 $string['archivehelp'] = '<p>Esta opción significa que la insignia se marcará como "retirada" y ya no aparecerá en la lista de insignias. Los usuarios no podrán ganar esta insignia, sin embargo los destinatarios de la insignia existentes seguirán pudiendo mostrarla en su página de perfil y subirla a sus mochilas externas. </p>
 <p> Si desea que sus usuarios pueden mantener el acceso a las insignias obtenidas es importante seleccionar esta opción en lugar de eliminar totalmente las insignias.</p>';
 $string['attachment'] = 'Adjuntar insignia al mensaje';
-$string['attachment_help'] = 'Si se selecciona, se adjuntará una archivo de insignia emitida al e-mail del destinatario para descarga. (Los adjuntos deben ser habilitados en Administración del sitio  > Extensiones > Salidas de mensaje > Email para usar esta opción.)';
+$string['attachment_help'] = 'Si está habilitado, se adjuntará una archivo de insignia emitida al correo electrónico del destinatario para descarga. (Los adjuntos deben ser habilitados en \'Administración del sitio  > Servidor > Correo electrónico > Configuración de correo saliente\' para usar esta opción.)';
 $string['award'] = 'Otorgar insignia';
 $string['awardedtoyou'] = 'Emitida para mi';
 $string['awardoncron'] = 'El acceso a las insignias se activó con éxito. Muchos usuarios pueden ganar simultáneamente esta insignia. Para garantizar el funcionamiento del sitio, esta acción llevará un cierto tiempo de proceso.';
@@ -118,17 +118,17 @@ $string['backpackemail_help'] = 'La dirección de correo electrónico asociada a
 $string['backpackemailverificationpending'] = 'Verificación pendiente';
 $string['backpackemailverifyemailbody'] = 'Hola,
 
-Se solicitó una nueva conexión a tu mochila de insignias desde \'{$ a-> sitename}\' usando tu dirección de correo electrónico.
+Se solicitó una nueva conexión a tu mochila de insignias desde \'{$a-> sitename}\' usando tu dirección de correo electrónico.
 
 Para confirmar y activar la conexión a su mochila, vaya a
 
-{$a->enlace}
+{$a->link}
 
 En la mayoría de los programas de correo, esto debería aparecer como un enlace azul en el que puede hacer clic. Si eso no funciona, corte y pegue la dirección en la línea de dirección en la parte superior de su navegador web.
 
 Si necesita ayuda, comuníquese con el administrador del sitio,
 {$a->admin}';
-$string['backpackemailverifyemailsubject'] = '{$a}: Verificación de email de Mochila de OpenBadges';
+$string['backpackemailverifyemailsubject'] = '{$a}: Verificación de correo electrónico de Mochila de insignias';
 $string['backpackemailverifypending'] = 'Se ha enviado un email de notificación a <strong>{$a}</strong>. Haga clic en el enlace de verificación en el email para activar la conexión a su Mochila.';
 $string['backpackemailverifysuccess'] = 'Gracias por verificar su dirección email. Ahora está conectado a su Mochila.';
 $string['backpackemailverifytokenmismatch'] = 'El token en el enlace que pinchó coincide con el token almacenado. Asegúrese de que hizo clic en el email más reciente que recibió.';

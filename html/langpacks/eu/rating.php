@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['aggregateavg'] = 'Puntuazioen batez bestekoa';
 $string['aggregatecount'] = 'Puntuazio-kontaketa';
-$string['aggregatemax'] = 'Gehienezko puntuazioa';
+$string['aggregatemax'] = 'Gehieneko puntuazioa';
 $string['aggregatemin'] = 'Gutxieneko puntuazioa';
 $string['aggregatenone'] = 'Puntuaziorik ez';
 $string['aggregatesum'] = 'Puntuazioen batuketa';
@@ -35,10 +35,10 @@ $string['aggregatetype'] = 'Agregazio mota';
 $string['aggregatetype_help'] = 'Agregazio motak definitzen du nola batuko diren puntuazioak kalifikazio-liburuko azken kalifikazioa osatzeko.
 
 * Puntuazioen batez bestekoa - Puntuazioen batez bestekoa
-* Puntuazio-kopurua - Puntuatutako elementu-kopurua izango da azken kalifikazioa. Kontuan izan guztirakoak ezin duela jarduerarako gehienezko kalifikazioa baino altuagoa.
-* Gehienezkoa - Puntuazio altuena izango da azken kalifikazioa
+* Puntuazio-kopurua - Puntuatutako elementu-kopurua izango da azken kalifikazioa. Kontuan izan guztirakoak ezin duela jarduerarako gehieneko kalifikazioa baino altuagoa.
+* Gehienekoa - Puntuazio altuena izango da azken kalifikazioa
 * Gutxienekoa - Puntuazio txikiena izango da azken kalifikazioa
-* Batuketa - Puntuazio guztiak batuko dira. Kontuan zian guztirakoak ezin duela jarduerarako gehienezko kalifikazioa baino altuagoa.
+* Batuketa - Puntuazio guztiak batuko dira. Kontuan zian guztirakoak ezin duela jarduerarako gehieneko kalifikazioa baino altuagoa.
 
 "Ez kalifikatu" aukeratzen bada, jarduera ez da kalifikazio-liburuan agertuko.';
 $string['allowratings'] = 'Baimendu elementuak puntuatu ahal izatea?';
@@ -62,4 +62,4 @@ $string['ratings'] = 'Puntuazioak';
 $string['ratingtime'] = 'Mugatu puntuazioak tarte honetako elementuetara';
 $string['rolewarning'] = 'Puntuatzeko baimena duten rolak';
 $string['rolewarning_help'] = 'Kalifikazioak bidaltzeko, beharrezkoa da \'moodle/rating:rate\' gaitasuna, bai eta moduluari buruzko edozein gaitasun espezifiko ere. Ondoko rolak dituzten erabiltzaileek kalifikazioak emateko modua izan behar dute. Rol-zerrenda alda daiteke ekintza-menu edo kudeaketa blokean (azalaren arabera) dagoen gaitasunetarako estekaren bidez.';
-$string['scaleselectionrequired'] = 'Puntuazioen agregazio motak aukeratzean eskala edo gehienezko puntuazioak ere aukeratu behar dituzu.';
+$string['scaleselectionrequired'] = 'Puntuazioen agregazio motak aukeratzean eskala edo gehieneko puntuazioak ere aukeratu behar dituzu.';

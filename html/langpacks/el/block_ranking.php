@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['blocktitle'] = 'Τίτλος μπλοκ';
 $string['defaultpoints'] = 'Προεπιλεγμένοι πόντοι';
 $string['enable_multiple_quizz_attempts'] = 'Ενεργοποίηση πολλαπλών προσπαθειών κουίζ';
+$string['forumpoints'] = 'Πόντοι στο φόρουμ';
 $string['general'] = 'Γενικά';
 $string['graph_select_a_group'] = 'Επιλογή μιας ομάδας';
 $string['graph_types'] = 'Τύποι γραφημάτων';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Flashanimation';
 $string['pluginname_help'] = 'Av säkerhetsskäl bäddas det här formatet enbart in i betrodd text.';
-$string['privacy:metadata'] = 'Pluginmodulen Flash-animeringar lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Flash-animeringar lagrar ingen personinformation.';

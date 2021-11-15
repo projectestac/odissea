@@ -176,7 +176,7 @@ $string['marks'] = 'Emaitzak';
 $string['marks_help'] = 'Galdera bakoitzaren zenbakizko emaitza eta saiakeraren emaitza orokorra';
 $string['modulename'] = 'Aurrez aurreko galdetegia';
 $string['modulename_help'] = '<p>Aurrez aurreko galdetegiak aukera ematen dio irakasleari galdetegiak denbora errealean sortu eta kudeatzeko. Aurrez aurreko galdetegian galdera-mota estandar guztiak erabil daitezke.</p>
-<p>Aurrez aurreko galdetegiak banako zein taldeko partaidetza onartzen du. Taldeko partaidetzaren kasuan puntuak bakarrik esleituko zaizkie saioan parte hartu duten erabiltzaileei. Galderak saiakera anitzak onartzeko era daitezke. Galdera automatikoki amaitzeko denbora-muga ezar daiteke, edo irakasleak galdera eskuz amaitu eta beste bat karga dezake. Irakasleak saioan zehar nahi duen galderara pasatzeko ahalmena ere badauka. Irakasleek taldeko zein banakako partaidetza, denbora errealeko erantzunak eta unean uneko galdera monitoriza ditzake. </p>
+<p>Aurrez aurreko galdetegiak banako zein taldeko partaidetza onartzen du. Taldeko partaidetzaren kasuan puntuak bakarrik esleituko zaizkie saioan parte hartu duten erabiltzaileei. Galderak saiakera anizkoitzak onartzeko era daitezke. Galdera automatikoki amaitzeko denbora-muga ezar daiteke, edo irakasleak galdera eskuz amaitu eta beste bat karga dezake. Irakasleak saioan zehar nahi duen galderara pasatzeko ahalmena ere badauka. Irakasleek taldeko zein banakako partaidetza, denbora errealeko erantzunak eta unean uneko galdera monitoriza ditzake. </p>
 <p>Saiakera bakoitza automatikoki ebaluatzen da galdetegi arruntetan bezala (entsegua eta PoodLL galderak izan ezik) eta kalifikazioak kalifikazio-liburuan gordetzen dira. Taldeen ebaluazioa automatiza daiteke erabiltzaile baten kalifikazioa talde osoari hedatuz. </p>
 <p>Irakasleak pistak eman, iruzkinak gehitu eta erantzun zuzenak erakuts ditzake galdetegia martxan dagoen bitartean.</p>
 <p>Aurrez aurreko galdetegiak Taldetan Oinarritutako Irakaskuntza Moodleren barruan zertzeko tresna gisa erabil daitezke.</p>';
@@ -219,7 +219,7 @@ $string['responses'] = 'Ikusi erantzunak';
 $string['reviewafter'] = 'Saioak itxi eta gero';
 $string['reviewoptionsettings'] = 'Berrikusteko aukerak';
 $string['savequestion'] = 'Gorde galdera';
-$string['scale'] = 'Gehienezko nota';
+$string['scale'] = 'Gehieneko nota';
 $string['scale_help'] = 'Balore honek (integer) galdetegian jasotzen diren puntuazio guztiak balorearen arabera egokituko ditu.';
 $string['select_group'] = 'Aukeratu zure taldea';
 $string['selectsession'] = 'Aukeratu ikusi nahi duzun saioa:&nbsp;&nbsp;&nbsp;&nbsp;';

@@ -30,6 +30,13 @@ $plugin->version = 2021020400;
 $plugin->requires = 2020041700;
 $plugin->maturity = MATURITY_BETA;
 $plugin->dependencies = [
+
+    // XTEC ************ ELIMINAT - Removed dependencies in tool_migratehvp2h5p
+    // 2021.09.20 @aginard
+    /*
     'mod_h5pactivity' => 2020041401,
     'mod_hvp' => 2020020500,
+    */
+    // ************ FI
+
 ];

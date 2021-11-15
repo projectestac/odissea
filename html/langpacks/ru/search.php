@@ -122,6 +122,7 @@ $string['search:mycourse'] = 'Мои курсы';
 $string['search:section'] = 'Разделы курса';
 $string['search:user'] = 'Пользователи';
 $string['searcharea'] = 'Область поиска';
+$string['searchareacategories'] = 'Категории области поиска';
 $string['searching'] = 'Поиск в...';
 $string['searchnotpermitted'] = 'Вам не разрешено использовать поиск';
 $string['searchsetupdescription'] = 'Следующие шаги помогут Вам настроить глобальный поиск в Moodle.';

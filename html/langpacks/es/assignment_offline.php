@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Fuera de línea';
+$string['privacy:metadata'] = 'El complemento de tarea sin conexión no almacena ningún dato personal.';

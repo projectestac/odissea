@@ -25,13 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['advanced'] = 'Avanzado';
 $string['alterstatus'] = 'Cambiar estado';
 $string['altertimeend'] = 'Cambiar tiempo final';
 $string['altertimestart'] = 'Cambiar tiempo inicial';
 $string['assignrole'] = 'Asignar rol';
+$string['assignroles'] = 'Asignar roles';
 $string['browsecohorts'] = 'Buscar compañeros';
 $string['browseusers'] = 'Buscar usuarios';
-$string['confirmbulkdeleteenrolment'] = '¿Está seguro que desea eliminar estas matrículas de usuarios?';
+$string['confirmbulkdeleteenrolment'] = '¿Está seguro de que desea eliminar estas matrículas de usuarios?';
 $string['defaultperiod'] = 'Duración del periodo de matriculación por defecto';
 $string['defaultperiod_desc'] = 'Periodo de tiempo por defecto en el que la matricula es válida. Si se establece a cero, la matricula durará de forma ilimitada por defecto';
 $string['defaultperiod_help'] = 'Periodo de tiempo predeterminado durante el que el la matrícula es válida, a partir del momento en que se matricula el usuario. Si está desactivado, la duración de la matrícula será ilimitada por defecto.';
@@ -41,7 +43,7 @@ $string['editselectedusers'] = 'Editar las matrículas de usuario seleccionadas'
 $string['enrolledincourserole'] = 'Matriculado en "{$a->course}" as "{$a->role}"';
 $string['enrolusers'] = 'Matricular usuarios';
 $string['enroluserscohorts'] = 'Matricular cohortes y usuarios seleccionados';
-$string['expiredaction'] = 'Acción a la expiración de la matrícula';
+$string['expiredaction'] = 'Acción cuando expire la matrícula';
 $string['expiredaction_help'] = 'Seleccione la acción a llevar a cabo cuando la matriculación del usuario expire. Tenga en cuenta que hay información y datos de configuración relativos al usuario que serán eliminados en el proceso de baja.';
 $string['expirymessageenrolledbody'] = 'Apreciado  {$a->user},
 
@@ -63,12 +65,17 @@ $string['messageprovider:expiry_notification'] = 'Notificaciones de expiración 
 $string['now'] = 'Ahora';
 $string['pluginname'] = 'Matriculación manual';
 $string['pluginname_desc'] = 'La extensión para la matriculación manual permite que los usuarios sean  matriculados de forma manual por un usuario con los permisos adecuados, como un profesor, mediante un enlace situado en la configuración de la administración del curso. La extensión debe normalmente estar activada, ya que algunas extensiones de matriculación, como la auto-matriculación, así lo requieran.';
+$string['privacy:metadata'] = 'El complemento de matrícula manual no almacena ningún dato personal.';
+$string['selectcohorts'] = 'Seleccionar cohortes';
+$string['selection'] = 'Selección';
 $string['selectusers'] = 'Seleccionar usuarios';
+$string['sendexpirynotificationstask'] = 'Tarea de envío de notificaciones de caducidad de inscripción manual';
 $string['status'] = 'Habilita matriculación manual';
 $string['status_desc'] = 'Permitir la matriculación manual de usuarios. Esta opción normalmente debería estar habilitada.';
 $string['status_help'] = 'Esta configuración determina si los usuarios pueden ser matriculados de forma manual por un usuario con los permisos adecuados, como un profesor, mediante un enlace situado en la configuración de la administración del curso.';
 $string['statusdisabled'] = 'Deshabilitado';
 $string['statusenabled'] = 'Habilitado';
+$string['syncenrolmentstask'] = 'Tarea de sincronización de matrículas manuales';
 $string['unenrol'] = 'Dar de baja usuario';
 $string['unenrolselectedusers'] = 'Dar de baja la matrícula de los usuarios seleccionados';
 $string['unenrolselfconfirm'] = '¿Desea realmente darse de baja del curso "{$a}" ?';
@@ -76,4 +83,4 @@ $string['unenroluser'] = '¿Desea realmente dar de baja la matrícula del usuari
 $string['unenrolusers'] = 'Dar de baja usuarios';
 $string['wscannotenrol'] = 'Con esta extensión no se puede matricular manualmente un usuario en el curso id = {$a->courseid}';
 $string['wsnoinstance'] = 'La extensión (plugin) para la matriculación manual no existe o está deshabilitada para el curso (id = {$a->courseid})';
-$string['wsusercannotassign'] = 'Usted no tiene permisos para asignar el rol ({$a->roleid}) a este usuario ({$a->userid}) en este curso ({$a->courseid}).';
+$string['wsusercannotassign'] = 'No tiene permisos para asignar el rol ({$a->roleid}) a este usuario ({$a->userid}) en este curso ({$a->courseid}).';

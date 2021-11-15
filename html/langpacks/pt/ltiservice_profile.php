@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Ferramenta de perfil de consumo LTI Service';
-$string['privacy:metadata'] = 'O módulo Ferramenta de perfil de consumo LTI Service não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Ferramenta de perfil de consumo LTI Service não armazena quaisquer dados pessoais.';

@@ -52,6 +52,7 @@ $string['otherinformation'] = 'Otra información:';
 $string['parentevent'] = 'Evento padre';
 $string['participating'] = 'Participando';
 $string['pluginname'] = 'Listado de eventos';
+$string['privacy:metadata'] = 'El complemento de lista de eventos no almacena ningún dato personal.';
 $string['read'] = 'leer';
 $string['relatedobservers'] = 'Extensiones observando este evento';
 $string['since'] = 'Desde';

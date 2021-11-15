@@ -41,6 +41,7 @@ $string['apply:companyname_help'] = 'اسم منظمتك';
 $string['apply:firstname'] = 'الاسم الأول';
 $string['apply:firstname_help'] = 'اسمك الأول';
 $string['apply:lastname'] = 'الاسم الأخير';
+$string['apply:lastname_help'] = 'اسمك الأخير';
 $string['apply:phone2_help'] = 'رقم هاتف ثانوي. إذا لم يكن مطلوباً، يمكن تركه فارغاً';
 $string['apply:sitename'] = 'اسم الموقع';
 $string['apply:sitename_help'] = 'اسم الموقع. نحن نحتاجه لأغراض تسجيل البرنامج.';
@@ -54,3 +55,5 @@ $string['name'] = 'الاسم';
 $string['th:value'] = 'القيمة';
 $string['value'] = 'القيمة';
 $string['valuemissing'] = 'لا بد من إعطاء قيمة';
+$string['warn:servicepage'] = '<div class="enrol-classicpay-warn">كل إجراء تقوم به في هذه الصفحة سيتم تنفيذه في خدمة classicpay الخاصة بنا.<br/>
+نلفت عنايتك لقراءة التعليقات وفهمها بالكامل قبل المتابعة.</div>';

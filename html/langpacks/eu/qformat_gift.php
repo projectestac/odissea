@@ -35,5 +35,5 @@ $string['giftrightbraceerror'] = 'Ezin izan da aurkitu }';
 $string['importminerror'] = 'Errorea dago galderan. Ez dago nahikoa erantzunik galdera mota honetarako';
 $string['nohandler'] = 'Ez dago kudeatzailerik {$a} galdera motarako';
 $string['pluginname'] = 'GIFT formatua';
-$string['pluginname_help'] = 'GIFT formatuak aukera anitzeko, egia-gezurreko, erantzun laburreko, lotu motako, txertatutako, zenbakizko eta entsegu motako galderak testu-fitxategi bidez inportatzeko eta esportatzeko aukera ematen du.';
+$string['pluginname_help'] = 'GIFT formatuak aukera anizkoitzeko, egia-gezurreko, erantzun laburreko, lotu motako, txertatutako, zenbakizko eta entsegu motako galderak testu-fitxategi bidez inportatzeko eta esportatzeko aukera ematen du.';
 $string['privacy:metadata'] = 'GIFT formatua galdera-formatu pluginak ez du datu pertsonalik biltzen.';

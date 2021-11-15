@@ -26,9 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['autosavefailed'] = 'Keine Serververbindung. Wenn Sie diese Seite jetzt übertragen, könnten Ihre Änderungen verloren gehen.';
-$string['autosavefrequency'] = 'Frequenz der Auto-Sicherung';
-$string['autosavefrequency_desc'] = 'Diese Option legt die Zeit zwischen zwei automatischen Sicherungsvorgängen fest. Atto sichert den Text im Editor automatisch, so dass der Text automatisch wiederhergestellt werden kann, wenn die selbe Person erneut das selbe Formular aufruft.';
-$string['autosaves'] = 'Editor-Auto-Speichern-Information';
+$string['autosavefrequency'] = 'Frequenz der Auto-Speicherung';
+$string['autosavefrequency_desc'] = 'Diese Option legt die Zeit zwischen zwei automatischen Speichervorgängen fest. Atto speichert den Text im Editor automatisch, so dass der Text wiederhergestellt werden kann, wenn die selbe Person erneut das selbe Formular aufruft.';
+$string['autosaves'] = 'Info zur Auto-Speicherung';
 $string['autosavesucceeded'] = 'Entwurf gesichert.';
 $string['editor_command_keycode'] = 'Cmd + {$a}';
 $string['editor_control_keycode'] = 'Ctrl + {$a}';
@@ -41,7 +41,7 @@ $string['errortextrecovery'] = 'Leider konnte die Entwurfsversion nicht wiederhe
 $string['infostatus'] = 'Information';
 $string['plugin_title_shortcut'] = '{$a->title} [{$a->shortcut}]';
 $string['pluginname'] = 'Texteditor Atto';
-$string['privacy:metadata:database:atto_autosave'] = 'Automatisch gespeicherte Texteditor Entwürfe';
+$string['privacy:metadata:database:atto_autosave'] = 'Automatisch gespeicherte Texteditorentwürfe';
 $string['privacy:metadata:database:atto_autosave:drafttext'] = 'Der gespeicherte Text';
 $string['privacy:metadata:database:atto_autosave:timemodified'] = 'Zeitpunkt der Bearbeitung des Inhalts.';
 $string['privacy:metadata:database:atto_autosave:userid'] = 'ID des Nutzers, dessen Daten gespeichert wurden';

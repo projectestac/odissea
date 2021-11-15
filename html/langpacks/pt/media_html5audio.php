@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Áudio HTML5';
 $string['pluginname_help'] = 'Ficheiros de áudio reproduzidos pelo leitor de áudio nativo do navegador. (O suporte de formatos depende do navegador.)';
-$string['privacy:metadata'] = 'O módulo multimédia Áudio HTML5 não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo multimédia Áudio HTML5 não armazena quaisquer dados pessoais.';

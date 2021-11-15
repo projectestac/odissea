@@ -33,4 +33,4 @@ Till exempel:
 - H5P.com: https://[xxxxxx].h5p.com/content/[id]
 - Wordpress: http://myserver/wp-admin/admin-ajax.php?action=h5p_embed&id=[id]';
 $string['filtername'] = 'Visa H5P';
-$string['privacy:metadata'] = 'Filtret Visa H5P lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Filtret Visa H5P lagrar ingen personinformation.';

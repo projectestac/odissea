@@ -38,6 +38,6 @@ $string['nodifferences'] = 'Det finns inga skillnader att visa mellan valda roll
 $string['onlydiff'] = 'Visa enbart skillnader';
 $string['pluginname'] = 'Kontrollera funktionsbehörigheter';
 $string['privacy:metadata'] = 'Pluginmodulen för funktionsbehörigheter lagrar ingen personinformation.';
-$string['reportforcapability'] = 'Rapport för funktion \'{$a}\'';
+$string['reportforcapability'] = 'Rapport för funktionsbehörighet \'{$a}\'';
 $string['reportsettings'] = 'Rapportinställningar';
 $string['roleslabel'] = 'Roller:';

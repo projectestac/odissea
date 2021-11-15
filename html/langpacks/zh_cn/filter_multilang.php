@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '多语言内容';
+$string['privacy:metadata'] = '多语言内容插件不存储任何个人数据。';

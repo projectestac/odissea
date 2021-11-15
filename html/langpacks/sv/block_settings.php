@@ -29,4 +29,4 @@ $string['enabledock'] = 'Tillåt användare att docka det här blocket';
 $string['pluginname'] = 'Administration';
 $string['privacy:metadata'] = 'Blocket Administration visar endast data som lagras på andra platser.';
 $string['settings:addinstance'] = 'Lägg till blocket Inställningar';
-$string['settings:myaddinstance'] = 'Lägg till ett nytt block för Inställningar på Mitt Moodle';
+$string['settings:myaddinstance'] = 'Lägg till ett nytt block för Inställningar till översiktssidan';

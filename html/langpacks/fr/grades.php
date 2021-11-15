@@ -228,6 +228,7 @@ $string['externalurl'] = 'URL externe';
 $string['externalurl_desc'] = 'Si un carnet de notes externe est utilisé, veuillez indiquer son URL ici.';
 $string['extracreditvalue'] = 'Bonus pour {$a}';
 $string['extracreditwarning'] = 'Remarque : si tous les éléments d\'une catégorie sont cochés comme bonus, cela aura pour effet de les retirer complètement du calcul des notes, puisqu\'il n\'y aura pas de point au total.';
+$string['fail'] = 'Échoué';
 $string['feedback'] = 'Feedback';
 $string['feedback_help'] = 'Ce champ permet à l\'enseignant d\'ajouter des remarques sur la note donnée.';
 $string['feedbackadd'] = 'Ajouter feedback';
@@ -407,6 +408,15 @@ $string['importcsv_help'] = 'Les notes peuvent être importées d\'un fichier CS
 
 Un fichier dont la syntaxe est correcte peut être obtenu à titre d\'exemple en exportant quelques notes. Le fichier peut alors être modifié et enregistré en format CSV.';
 $string['importcustom'] = 'Importer comme objectifs de ce cours';
+$string['importdata'] = 'Données';
+$string['importdata_help'] = 'Les notes peuvent être collées directement depuis une feuille de calcul OpenDocument ou Excel dont le format est le suivant :
+
+* au moins une colonne doit comporter les données d\'identification de l\'utilisateur - nom d\'utilisateur, adresse de courriel ou numéro d\'ID ;
+* chaque autre colonne doit avoir l\'entête d\'une activité ou d\'un élément d\'évaluation présent.
+
+Une feuille de calcul correctement formatée peut être obtenue en exportant d\'abord quelques notes. Elle peut être alors modifiée et enregistrée après l\'ajout d\'autres notes.
+
+Sélectionnez et copiez dans la feuille de calcul les colonnes à importer et collez-les dans ce champ.';
 $string['importerror'] = 'Une erreur est survenue. Ce script n\'a pas été appelé avec les paramètres adéquats.';
 $string['importfailed'] = 'L\'importation a échoué. Aucune donnée n\'a été importée.';
 $string['importfeedback'] = 'Importer les feedbacks';
@@ -600,6 +610,7 @@ $string['overridesitedefaultgradedisplaytype'] = 'Court-circuiter les réglages 
 $string['overridesitedefaultgradedisplaytype_help'] = 'Si ce réglage est activé, les notes lettres et les valeurs limites des notes peuvent être configurées par cours, au lieu d\'utiliser les valeurs par défaut de la plateforme.';
 $string['overrideweightofa'] = 'Pondération forcée de {$a}';
 $string['parentcategory'] = 'Catégorie mère';
+$string['pass'] = 'Réussi';
 $string['pctoftotalgrade'] = '% de la note maximale';
 $string['percent'] = 'Pourcent';
 $string['percentage'] = 'Pourcentage';
@@ -688,7 +699,7 @@ $string['recovergradesdefault_help'] = 'Par défaut, récupérer les anciennes n
 $string['refreshpreview'] = 'Actualiser la prévisualisation';
 $string['regradeanyway'] = 'Réévaluer malgré tout';
 $string['removeallcoursegrades'] = 'Supprimer toutes les notes';
-$string['removeallcoursegrades_help'] = 'Si ce réglage est activé, tous les éléments d\'évaluation ajoutés manuellement au carnet de notes seront supprimés, ainsi que les notes et autres données associées aux notes modifiées, exclues, cachées et verrouillées. Seuls les éléments d\'évaluation associés avec des activités persisteront.';
+$string['removeallcoursegrades_help'] = 'Si ce réglage est activé, tous les éléments d\'évaluation et les notes ajoutées manuellement au carnet de notes seront supprimés, ainsi que les notes et autres données associées aux notes modifiées, exclues, cachées et verrouillées. Seuls les éléments d\'évaluation et notes associés avec des activités persisteront.';
 $string['removeallcourseitems'] = 'Supprimer tous les éléments et catégories';
 $string['removeallcourseitems_help'] = 'Si ce réglage est activé, toutes les catégories et tous les éléments d\'évaluation ajoutés manuellement au carnet de notes seront supprimés, ainsi que les notes et autres données associées aux notes modifiées, exclues, cachées et verrouillées. Seuls les éléments d\'évaluation associés avec des activités persisteront.';
 $string['report'] = 'Rapport';

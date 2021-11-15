@@ -44,7 +44,6 @@ $string['paymentcompleted'] = 'تم قبول مالك والآن يمكنك ال
 $string['paymentinstant'] = 'استعمل الزر أدناه للدفع والوصول إلى النشاط أو المورد.';
 $string['paymentpending'] = 'هناك دفعة معلقة مسجلة لك.';
 $string['paymentrequired'] = 'ينبغي عليك الدفع عبر PayPal للوصول إلى النشاط أو المورد.';
-$string['paymentwaitreminder'] = 'يرجى ملاحظة أنه إذا كنت قد قمت بالفعل بالدفع مؤخرًا، فلا بد أنه قيد المعالجة. يرجى الانتظار بضع دقائق ثم تحديث هذه الصفحة.';
 $string['paypalaccepted'] = 'تم قبول مدفوعات بي بال';
 $string['pluginname'] = 'PayPal';
 $string['sendpaymentbutton'] = 'إرسال الدفع عبر الفيزا أو باي بال';

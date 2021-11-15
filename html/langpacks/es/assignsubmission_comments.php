@@ -26,9 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['blindmarkingname'] = 'Participante {$a}';
+$string['blindmarkingviewfullname'] = 'Participante {$a->participantnumber} ({$a->participantfullname})';
 $string['default'] = 'Habilitado por defecto';
 $string['default_help'] = 'Si se activa la opción, este método de retroalimentación estará habilitado por omisión para todas las tareas nuevas.';
 $string['enabled'] = 'Comentarios de la entrega';
-$string['enabled_help'] = 'Si está habilitado, los estudiantes pueden poner comentarios en sus entregas. Esto puede usarse, por ejemplo, para que los alumnos comenten las interrelaciones entre los archvios subidos.';
+$string['enabled_help'] = 'Si está habilitado, los estudiantes pueden poner comentarios en sus entregas. Esto puede usarse, por ejemplo, para que los alumnos comenten las interrelaciones entre los archivos subidos.';
 $string['pluginname'] = 'Comentarios de la entrega';
 $string['privacy:metadata:commentpurpose'] = 'Comentarios entre el alumno y el profesor sobre la entrega.';

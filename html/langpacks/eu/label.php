@@ -45,7 +45,7 @@ $string['label:addinstance'] = 'Gehitu etiketa berria';
 $string['label:view'] = 'Ikusi etiketa';
 $string['labeltext'] = 'Etiketaren testua';
 $string['modulename'] = 'Etiketa';
-$string['modulename_help'] = 'Etiketa baten bidez testu eta irudiak txerta daitezke ikastaroaren hasiera-orriko jarduera eta baliabideen esteken artean. Etiketek erabilera anitzak dituzte, eta era egokian erabiliz gero ikastaroaren itxura hobetzen lagun dezakete.
+$string['modulename_help'] = 'Etiketa baten bidez testu eta irudiak txerta daitezke ikastaroaren hasiera-orriko jarduera eta baliabideen esteken artean. Etiketek erabilera anitz dituzte, eta era egokian erabiliz gero ikastaroaren itxura hobetzen lagun dezakete.
 
 Etiketak erabil daitezke
 

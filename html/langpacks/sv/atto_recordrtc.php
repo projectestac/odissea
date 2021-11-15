@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowedtypes'] = 'Godkända typer';
+$string['allowedtypes'] = 'Tillåtna typer';
 $string['allowedtypes_desc'] = 'Vilka inspelningsknappar som ska visas i Atto. Förutom den här inställningen finns det också funktioner som kan styra åtkomsten till knapparna till särskilda användare i särskilda sammanhang.';
 $string['attachrecording'] = 'Bifoga inspelning';
 $string['audioandvideo'] = 'Audio och video';
@@ -43,11 +43,11 @@ $string['gumnotreadable_title'] = 'Hårdvarufel';
 $string['gumnotsupported'] = 'Din webbläsare stödjer inte inspelning via en osäker anslutning och måste stänga pluginmodulen';
 $string['gumnotsupported_title'] = 'Inget stöd för osäker anslutning';
 $string['gumoverconstrained'] = 'Nuvarande webbkamera/mikrofon kan inte erbjuda en ström med de nödvändiga begränsningarna';
-$string['gumoverconstrained_title'] = '';
+$string['gumoverconstrained_title'] = 'Problem med begränsningar';
 $string['gumsecurity'] = 'Din webbläsare stödjer inte inspelning via en osäker anslutning och måste stänga pluginmodulen';
 $string['gumsecurity_title'] = 'Inget stöd för osäker anslutning';
 $string['gumtype'] = 'Försökte strömma från webbkameran/mikrofonen men inga begränsningar hade angivits';
-$string['gumtype_title'] = '';
+$string['gumtype_title'] = 'Ingen begränsning angiven';
 $string['insecurealert'] = 'Din webbläsare kanske förhindrar denna pluginmodul från att fungera, såvida den inte används över HTTPS eller från localhost.';
 $string['insecurealert_title'] = 'Anslutningen är inte säker!';
 $string['nearingmaxsize'] = 'Du har uppnått maxgränsen för uppladdning av filer';
@@ -69,10 +69,10 @@ $string['startrecording'] = 'Starta inspelningen';
 $string['stoprecording'] = 'Stoppa inspelningen';
 $string['timelimit'] = 'Tidsgräns i sekunder';
 $string['timelimit_desc'] = 'Tillåten maxlängd för ljud/videoklipp';
-$string['uploadaborted'] = 'Uppladdning avbröts:';
+$string['uploadaborted'] = 'Uppladdningen avbröts:';
 $string['uploadfailed'] = 'Fel vid uppladdning:';
 $string['uploadfailed404'] = 'Fel vid uppladdning: filen är för stor';
-$string['uploadprogress'] = 'Uppladdning färdig';
+$string['uploadprogress'] = 'slutförd';
 $string['videobitrate'] = 'Strömningshastighet - Video';
 $string['videobitrate_desc'] = 'Videoinspelningskvalitet (högre siffra innebär bättre kvalitet)';
 $string['videortc'] = 'Spela in video';

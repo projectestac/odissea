@@ -67,7 +67,7 @@ $string['messageprovider:expiry_notification'] = 'Notificações de expiração 
 $string['now'] = 'Agora';
 $string['pluginname'] = 'Inscrições manuais';
 $string['pluginname_desc'] = 'O módulo de inscrições manuais permite que os utilizadores sejam inscritos através de uma hiperligação no bloco de configurações > Administração da disciplina, por um utilizador com as permissões necessárias (ex: professor). Normalmente este módulo deve estar ativo, uma vez que alguns módulos de inscrição, como o de autoinscrição, dependem deste módulo.';
-$string['privacy:metadata'] = 'O módulo Inscrições manuais não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Inscrições manuais não armazena quaisquer  dados pessoais.';
 $string['selectcohorts'] = 'Selecionar grupos globais';
 $string['selection'] = 'Seleção';
 $string['selectusers'] = 'Selecionar utilizadores';
@@ -85,4 +85,4 @@ $string['unenroluser'] = 'Tem a certeza de que pretende remover a inscrição de
 $string['unenrolusers'] = 'Cancelar inscrição dos utilizadores';
 $string['wscannotenrol'] = 'O módulo não permite inscrever manualmente um utilizador na disciplina id = {$a->courseid}';
 $string['wsnoinstance'] = 'O módulo de inscrição manual não existe ou está desativado para a disciplina (id = {$a->courseid})';
-$string['wsusercannotassign'] = 'Não tem permissão para atribuir o papel ({$a->roleid}) ao utilizador ({$a->userid}) nesta disciplina ({$a->courseid}).';
+$string['wsusercannotassign'] = 'Não tem permissão para atribuir este papel ({$a->roleid}) a este utilizador ({$a->userid}) nesta disciplina ({$a->courseid}).';

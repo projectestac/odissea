@@ -25,7 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['hide'] = 'Απόκρυψη';
+$string['jstableloading'] = 'Φόρτωση...';
+$string['jstablenorows'] = 'Δεν βρέθηκε καμιά εγγραφή';
+$string['jstablesearch'] = 'Αναζήτηση...';
+$string['lastsync'] = 'Τελευταίος συγχρονισμός:';
+$string['loading'] = 'Φόρτωση...';
+$string['minutesbefore'] = 'Λεπτά πριν';
+$string['modulename'] = 'Google Meet™ για το Moodle';
 $string['name'] = 'Όνομα';
+$string['never'] = 'Ποτέ';
+$string['notification'] = 'Ειδοποίηση';
 $string['or'] = 'ή';
 $string['play'] = 'Αναπαραγωγή';
 $string['pluginadministration'] = 'Google Meet™ για διαχείριση του Moodle';
@@ -41,9 +51,12 @@ $string['repeatuntil'] = 'Επανάληψη μέχρι';
 $string['roomcreator'] = 'Δημιουργός δωματίου:';
 $string['roomname'] = 'Όνομα δωματίου';
 $string['roomurl'] = 'Διεύθυνση URL δωματίου';
+$string['show'] = 'Εμφάνιση';
+$string['strftimedm'] = '%a. %d %b.';
 $string['strftimedmy'] = '%a. %d %b. %Y';
 $string['strftimedmyhm'] = '%a. %d %b. %Y %H:%M';
 $string['strftimehm'] = '%H:%M';
+$string['syncwithgoogledrive'] = 'Συγχρονισμός με το Google Drive';
 $string['timedate'] = '%d/%m/%Y %H:%M';
 $string['to'] = 'προς';
 $string['today'] = 'Σήμερα';

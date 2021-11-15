@@ -35,8 +35,12 @@ $string['dnduploadlabel'] = 'Añadir una imagen a la página del curso';
 $string['dnduploadlabeltext'] = 'Añadir como etiqueta en la página del curso';
 $string['indicator:cognitivedepth'] = 'Etiqueta cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso Etiqueta.';
+$string['indicator:cognitivedepthdef'] = 'Etiqueta cognitiva';
+$string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por los recursos de Etiqueta durante este intervalo de análisis (Niveles = Sin vista, Vista)';
 $string['indicator:socialbreadth'] = 'Etiqueta social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso Etiqueta.';
+$string['indicator:socialbreadthdef'] = 'Etiqueta social';
+$string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por los recursos de Etiqueta durante este intervalo de análisis (Niveles = Sin participación, Participante solo)';
 $string['label:addinstance'] = 'Añadir una nueva etiqueta';
 $string['label:view'] = 'Ver etiqueta';
 $string['labeltext'] = 'Texto de la etiqueta';
@@ -51,4 +55,5 @@ Las etiquetas pueden ser utilizadas
 $string['modulenameplural'] = 'Etiquetas';
 $string['pluginadministration'] = 'Administración de etiquetas';
 $string['pluginname'] = 'Etiqueta';
+$string['privacy:metadata'] = 'El complemento de recurso Etiqueta no almacena ningún dato personal.';
 $string['search:activity'] = 'Etiqueta';

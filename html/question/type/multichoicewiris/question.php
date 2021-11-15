@@ -31,6 +31,7 @@ class qtype_multichoicewiris_question extends qtype_wq_question implements quest
     public $partiallycorrectfeedbackformat;
     public $incorrectfeedback;
     public $incorrectfeedbackformat;
+    public $showstandardinstruction;
 
     public function join_all_text() {
         $text = parent::join_all_text();

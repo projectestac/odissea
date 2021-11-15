@@ -57,6 +57,7 @@ $string['cachedef_externalbadges'] = 'Badge esterni per utente specifico';
 $string['cachedef_fontawesomeiconmapping'] = 'Mappatura icone del font awesone';
 $string['cachedef_grade_categories'] = 'Query delle categorie di valutazioni';
 $string['cachedef_grade_letters'] = 'Query delle valutazioni letterali';
+$string['cachedef_gradesetting'] = 'Impostazione delle valutazioni del corso';
 $string['cachedef_groupdata'] = 'Informazioni sui gruppi dei corsi';
 $string['cachedef_h5p_content_type_translations'] = 'Traduzioni delle librerie dei tipi di contenuto H5P';
 $string['cachedef_h5p_library_files'] = 'File della libreria H5P';

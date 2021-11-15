@@ -29,18 +29,18 @@ class com_wiris_quizzes_impl_MathMLFilter implements com_wiris_quizzes_api_MathF
 	}
 	public function cacheImage($mathml, $filename) {
 		$listener = new com_wiris_quizzes_impl_HttpSyncListener();
-		$h = new com_wiris_quizzes_impl_HttpImpl(com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$EDITOR_URL) . "/render", $listener);
+		$h = new com_wiris_quizzes_impl_HttpImpl(com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$EDITOR_URL) . "/render", $listener);
 		$h->setParameter("mml", $mathml);
 		$h->request(true);
 		$response = $listener->getData();
 		$b = haxe_io_Bytes::ofString($response);
-		com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getImagesCache()->set($filename, $b);
+		com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getImagesCache()->set($filename, $b);
 	}
 	public function mathml2img($mathml) {
 		$md5 = haxe_Md5::encode($mathml);
 		$filename = $md5 . ".png";
 		$this->cacheImage($mathml, $filename);
-		$url = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=" . $filename;
+		$url = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . "?service=cache&amp;name=" . $filename;
 		return "<img src=\"" . $url . "\" align=\"middle\" />";
 	}
 	public function filter($html) {
@@ -54,9 +54,11 @@ class com_wiris_quizzes_impl_MathMLFilter implements com_wiris_quizzes_api_MathF
 		$end = 0;
 		while(($start = _hx_index_of($html, "<math", $end)) > -1) {
 			$sb->add(_hx_substr($html, $end, $start - $end));
-			$end = _hx_index_of($html, "</math>", $start) + 7;
-			if($end < $start) {
-				$end = _hx_index_of($html, "/>", $start) + 2;
+			$end = _hx_index_of($html, "</math>", $start);
+			if($end === -1) {
+				$end = _hx_index_of($html, "/>", $start) + strlen("/>");
+			} else {
+				$end += strlen("</math>");
 			}
 			$mathml = _hx_substr($html, $start, $end - $start);
 			$img = $this->mathml2img($mathml);

@@ -115,7 +115,7 @@ $string['backpacksettings'] = 'バックパック設定';
 $string['backpackweburl'] = 'バックパックURL';
 $string['badgedetails'] = 'バッジ詳細';
 $string['badgeimage'] = 'イメージ';
-$string['badgeimage_help'] = 'このバッジが発行される時に使用されるイメージです。 新しいイメージを追加するにはイメージ (JPGまたはPNG) を参照および選択して「変更を保存する」をクリックしてください。イメージは正方形にトリミングおよびバッジイメージ要件に合致するようリサイズされます。';
+$string['badgeimage_help'] = 'イメージのサイズは少なくとも300×300ピクセルある必要があります。イメージはバッジページでは300×300ピクセル、ユーザのプロファイルページでは100×100ピクセルで表示されます。';
 $string['badgeprivacysetting'] = 'バッジプライバシー設定';
 $string['badgeprivacysetting_help'] = 'あなたのアカウントプロファイルページに取得したバッジを表示できます。この設定においてあなたは新しく取得したバッジの可視性を自動的に設定できます。 また、あなたのバッジページで個別のバッジのプライバシー設定をコントロールできます。';
 $string['badgeprivacysetting_str'] = '私が取得したバッジをプロファイルページに自動的に表示する';
@@ -268,26 +268,26 @@ $string['error:externalbadgedoesntexist'] = 'バッジが見つかりません�
 $string['error:guestuseraccess'] = '現在、あなたはゲストアクセスを使用しています。バッジを閲覧するにはあなたのユーザアカウントでログインする必要があります。';
 $string['error:invalidcriteriatype'] = '無効なクライテリアタイプです。';
 $string['error:invalidexpiredate'] = '有効期限は将来の日付にしてください。';
-$string['error:invalidexpireperiod'] = '有効期間をマイナスまたはゼロに設定することはできません。';
+$string['error:invalidexpireperiod'] = '有効期間はマイナスまたはゼロに設定できません。';
 $string['error:invalidparambadge'] = 'バッジが存在しません。';
 $string['error:invalidparamcohort'] = 'コーホートが存在しません。';
 $string['error:noactivities'] = 'このコースには完了クライテリアが有効にされている活動はありません。';
 $string['error:nobadges'] = '現在、クライテリアとして追加できるアクセス可能なバッジはありません。サイトバッジは他のサイトのバッジのみをクライテリアとして持てます。コースバッジは他のコースバッジまたはサイトバッジをクライテリアとして持てます。';
 $string['error:nocohorts'] = 'コーホートなし';
-$string['error:nocourses'] = 'このサイト内でコース完了が有効にされているコースがないため、何も表示できません。あなたはコース設定ページでコース完了を有効にすることができます。';
+$string['error:nocourses'] = 'このサイト内でコース完了が有効にされているコースがないため、何も表示できません。あなたはコース設定ページでコース完了を有効にできます。';
 $string['error:nogroupslink'] = '<p>パブリックコレクションのみ表示されます。パブリックコレクションを作成するには<a href="{$a}" target="_blank" rel="nofollow">あなたのバックパックにアクセスしてください</a>。</p>';
 $string['error:nogroupssummary'] = '<p>あなたのバックパックで利用できるバッジのパブリックコレクションはありません。</p>';
-$string['error:nopermissiontoview'] = 'あなたにはバッジ取得者を閲覧するパーミッションがありません。';
+$string['error:nopermissiontoview'] = 'あなたにはバッジ取得者を閲覧するためのパーミッションがありません。';
 $string['error:nosuchbadge'] = 'ID {$a} のバッジは存在しません。';
 $string['error:nosuchcohort'] = '警告: このコーホートは利用できなくなりました。';
-$string['error:nosuchcourse'] = '警告: このコースは利用できません。';
-$string['error:nosuchfield'] = '警告: このユーザプロファイルは利用できません。';
-$string['error:nosuchmod'] = '警告: この活動は利用できません。';
-$string['error:nosuchrole'] = '警告: このロールは利用できません。';
+$string['error:nosuchcourse'] = '警告: このコースは利用できなくなりました。';
+$string['error:nosuchfield'] = '警告: このユーザプロファイルは利用できなくなりました。';
+$string['error:nosuchmod'] = '警告: この活動は利用できなくなりました。';
+$string['error:nosuchrole'] = '警告: このロールは利用できなくなりました。';
 $string['error:nosuchuser'] = 'このメールアドレスのユーザは現在のバックパックプロバイダのアカウントを所有していません。';
 $string['error:notifycoursedate'] = '注意: コースおよび活動完了に関連付けられているバッジはコース開始日まで発行されません。';
-$string['error:parameter'] = '警告: 正しいバッジ発行ワークフローを確かにするため、少なくとも1つのパラメータを選択してください。';
-$string['error:relatedbadgedoesntexist'] = 'このiDでのパブリックバッジはありません。';
+$string['error:parameter'] = '警告: 正しくバッジを発行するため、少なくとも1つのパラメータを選択する必要があります。';
+$string['error:relatedbadgedoesntexist'] = 'このIDのパブリックバッジはありません。';
 $string['error:requesterror'] = '接続リクエストに失敗しました (エラーコード {$a})。';
 $string['error:requesttimeout'] = '完了する前に接続リクエストがタイムアウトしました。';
 $string['error:save'] = 'バッジを保存できません。';
@@ -308,7 +308,7 @@ $string['eventbadgeupdated'] = 'バッジが更新されました。';
 $string['eventbadgeviewed'] = 'バッジが閲覧されました。';
 $string['evidence'] = 'エビデンス';
 $string['existingrecipients'] = '既存のバッジ取得者';
-$string['existsinbackpack'] = 'バッジは常にバックパックに存在します。';
+$string['existsinbackpack'] = 'バッジはすでにバックパックに存在します。';
 $string['expired'] = '有効期限切れ';
 $string['expiredate'] = 'このバッジは {$a} に有効期限が切れます。';
 $string['expireddate'] = 'このバッジは {$a} に有効期限が切れました。';
@@ -317,7 +317,7 @@ $string['expireperiodh'] = 'このバッジは発行後 {$a}  時間で有効期
 $string['expireperiodm'] = 'このバッジは発行後 {$a}  分で有効期限が切れます。';
 $string['expireperiods'] = 'このバッジは発行後 {$a}  秒で有効期限が切れます。';
 $string['expirydate'] = '有効期限';
-$string['expirydate_help'] = '特定の日付またはユーザへのバッジ発行日を基に計算される日付で任意でバッジを有効期限切れにすることができます。';
+$string['expirydate_help'] = '特定の日付またはユーザへのバッジ発行日を基に計算される日付で任意にバッジを有効期限切れにできます';
 $string['externalbadges'] = '他のウェブサイトからのマイバッジ';
 $string['externalbadges_help'] = 'このエリアではあなたの外部バックパックからのバッジを表示します。';
 $string['externalbadgesp'] = '他のウェブサイトからのバッジ:';
@@ -347,15 +347,11 @@ $string['issuername_help'] = '発行担当者名または機関名です。';
 $string['issuerurl'] = '発行者URL';
 $string['issuerurl_help'] = '承認を発行する組織のウェブサイトです。URLには「http://」または「https://」の接頭辞が必要です。';
 $string['language'] = '言語';
-$string['language_help'] = 'バッジページに使用される言語です。';
+$string['language_help'] = 'バッジページで使用される言語です。';
 $string['listbackpacks'] = 'バックパック一覧';
 $string['localbadges'] = '{$a} ウェブサイトからのマイバッジ';
 $string['localbadgesh'] = 'このウェブサイトからのマイバッジ';
-$string['localbadgesh_help'] = 'コース、コース活動および他の要件を完了することで取得したすべてのバッジです。
-
-あなたのプロファイルページでのバッジ公開または非公開に関して、ここで管理することができます。
-
-あなたのバッジすべてまたは個別のバッジをダウンロードして、あなたのコンピュータに保存することができます。あなたはダウンロードしたバッジを外部バックパックサービスに追加することができます。';
+$string['localbadgesh_help'] = 'コース、コース活動および他の要件を完了することで取得したすべてのバッジです。 あなたのプロファイルページでのバッジ公開または非公開に関してここで管理できます。 あなたのすべてのバッジまたは個別のバッジをダウンロードして、あなたのコンピュータに保存できます。あなたはダウンロードしたバッジを外部バックパックサービスに追加できます。';
 $string['localbadgesp'] = '{$a} からのバッジ:';
 $string['localconnectto'] = 'これらのバッジをこのウェブサイトの外で共有するには<a href="{$a}">バックパックに接続してください</a>。';
 $string['makeprivate'] = '非公開にする';
@@ -363,9 +359,7 @@ $string['makepublic'] = '公開する';
 $string['managebackpacks'] = 'バックパックを管理する';
 $string['managebadges'] = 'バッジを管理する';
 $string['message'] = 'メッセージ本文';
-$string['messagebody'] = '<p>あなたにバッジ「 %badgename% 」が授与されました!</p>
-<p>このバッジに関する詳細情報は %badgelink% バッジ情報ページをご覧ください。</p>
-<p>あなたは「 {$a} 」ページでバッジを管理およびダウンロードすることができます。</p>';
+$string['messagebody'] = '<p>あなたにバッジ「 %badgename% 」が授与されました!</p> <p>このバッジに関する詳細情報は %badgelink% バッジ情報ページをご覧ください。</p> <p>あなたは「 {$a} 」ページでバッジを管理およびダウンロードできます。</p>';
 $string['messagesubject'] = 'おめでとうございます! あなたはバッジを取得しました!';
 $string['method'] = 'このクライテリアは以下の場合に完了します ...';
 $string['mingrade'] = '必要最小評点:';
@@ -382,49 +376,37 @@ $string['nobackpack'] = 'このアカウントに接続しているバックパ�
 $string['nobackpackbadgessummary'] = 'あなたが選択したコレクションにバッジはありません。';
 $string['nobackpackcollectionssummary'] = '選択されたバッジコレクションはありません。';
 $string['nobackpacks'] = '利用可能なバックパックはありません。';
-$string['nobadges'] = '取得できるバッジはありません。';
+$string['nobadges'] = '利用可能なバッジはありません。';
 $string['nocompetencies'] = '選択されたコンピテンシーはありません。';
 $string['nocriteria'] = 'このバッジのクライテリアはまだ設定されていません。';
 $string['noendorsement'] = 'このバッジは承認されていません。';
 $string['noexpiry'] = 'このバッジには有効期限がありません。';
 $string['noparamstoadd'] = 'このバッジ必要条件に追加できる追加パラメータはありません。';
-$string['norelated'] = 'このバッジには関連バッジはありません。';
+$string['norelated'] = 'このバッジに関連バッジはありません。';
 $string['notacceptedrole'] = 'あなたの現在のロール割り当てはこのバッジを手動で授与できるロールではありません。<br /> すでにこのバッジを取得しているユーザを閲覧するには {$a} ページにアクセスしてください。';
 $string['notconnected'] = '未接続';
-$string['notealignment'] = 'バッジが割り当てられる外部スキルまたは標準を指定することができます。すべての外部スキルまたは標準はバッジページに表示されます。';
-$string['noteendorsement'] = 'サードパーティからの承認はバッジに価値を追加するため使用することができます。例えば教師によって発行されたバッジは学校により承認することができます。また、地域の授与団体により発行されたバッジは国の授与団体により承認することができます。';
-$string['noterelated'] = '関連のあるバッジは関連性があるとマークすることができます。例えば異なる言語で表示されている同じクライテリアのバッジは関連性があるとマークすることができます。すべての関連性のあるバッジはバッジページに表示されます。';
+$string['notealignment'] = 'バッジが割り当てられる外部スキルまたは標準を指定できます。すべての外部スキルまたは標準はバッジページに表示されます。';
+$string['noteendorsement'] = 'サードパーティからの承認はバッジに価値を追加するため使用できます。例えば教師によって発行されたバッジは学校により承認できます。また、地域の授与団体により発行されたバッジは国の授与団体により承認できます。';
+$string['noterelated'] = '関連のあるバッジは関連性があるとマークできます。例えば異なる言語で表示されている同じクライテリアのバッジは関連性があるとマークできます。すべての関連性のあるバッジはバッジページに表示されます。';
 $string['nothingtoadd'] = '追加できるクライテリアはありません。';
 $string['notification'] = 'バッジ作成者に通知する';
-$string['notification_help'] = 'この設定ではバッジ発行をバッジ作成者に知らせるための通知送信を管理します。
-
-以下のオプションを利用できます:
-
-* **なし** – 通知を送信しません。
-
-* **毎回** – このバッジが授与される度に通知を送信します。
-
-* **日毎** – 通知を1日1回送信します。
-
-* **週毎** – 通知を週に1回送信します。
-
-* **月毎** – 通知を月に1回送信します。';
-$string['notifydaily'] = '日';
+$string['notification_help'] = 'この設定ではバッジ発行をバッジ作成者に知らせるための通知送信を管理します。 以下のオプションを利用できます: * **なし** – 通知を送信しません。 * **毎回** – このバッジが授与される度に通知を送信します。 * **毎日** – 通知を1日1回送信します。 * **毎週** – 通知を週に1回送信します。 * **毎月** – 通知を月に1回送信します。';
+$string['notifydaily'] = '毎日';
 $string['notifyevery'] = '毎回';
-$string['notifymonthly'] = '月';
-$string['notifyweekly'] = '週';
+$string['notifymonthly'] = '毎月';
+$string['notifyweekly'] = '毎週';
 $string['numawards'] = 'このバッジは <a href="{$a->link}">{$a->count}</a> 名のユーザに発行されました。';
 $string['numawardstat'] = 'このバッジは {$a} 名のユーザに発行されました。';
 $string['oauth2issuer'] = 'OAuth 2サービス';
 $string['openbadgesv1'] = 'Open Badges v1.0';
 $string['openbadgesv2'] = 'Open Badges v2.0';
-$string['openbadgesv2p1'] = 'オープンバッジ v2.1';
+$string['openbadgesv2p1'] = 'Open Badges v2.1';
 $string['overallcrit'] = 'の選択されたクライテリアが完了した場合';
 $string['potentialrecipients'] = '潜在的なバッジ取得者';
 $string['preferences'] = 'バッジプリファレンス';
 $string['privacy:metadata:backpack'] = 'ユーザのバックパックのレコードです。';
 $string['privacy:metadata:backpack:backpackuid'] = 'バックパックのユニークIDです。';
-$string['privacy:metadata:backpack:email'] = 'バックパックに関連付けられるメールアドレスです。';
+$string['privacy:metadata:backpack:email'] = 'バックパックに関連付けられたメールアドレスです。';
 $string['privacy:metadata:backpack:externalbackpackid'] = 'バックパックのIDです。';
 $string['privacy:metadata:backpack:userid'] = 'ユーザのバックパックのIDです。';
 $string['privacy:metadata:backpackoauth2'] = 'ユーザが外部バックパックに接続する場合のOAuth 2情報です。';
@@ -441,12 +423,12 @@ $string['privacy:metadata:badge:usermodified'] = 'バッジを修正したユー
 $string['privacy:metadata:criteriamet'] = '合致したクライテリア群です。';
 $string['privacy:metadata:criteriamet:datemet'] = 'クライテリアに合致した日時です。';
 $string['privacy:metadata:criteriamet:userid'] = 'クライテリアに合致したユーザのIDです。';
-$string['privacy:metadata:external:backpacks'] = 'ユーザが外部バックパックにバッジを送信した場合に共有される情報です。';
+$string['privacy:metadata:external:backpacks'] = 'ユーザによる外部バックパックへのバッジ送信時に共有される情報です。';
 $string['privacy:metadata:external:backpacks:badge'] = 'バッジの名称です。';
 $string['privacy:metadata:external:backpacks:description'] = 'バッジの説明です。';
 $string['privacy:metadata:external:backpacks:image'] = 'バッジのイメージです。';
 $string['privacy:metadata:external:backpacks:issuer'] = '発行者に関する情報です。';
-$string['privacy:metadata:external:backpacks:url'] = '発行者情報を確認できるMoodleのURLです。';
+$string['privacy:metadata:external:backpacks:url'] = '発行済みバッジ情報を確認できるMoodleのURLです。';
 $string['privacy:metadata:issued'] = '授与されたバッジのレコードです。';
 $string['privacy:metadata:issued:dateexpire'] = 'バッジの有効期限です。';
 $string['privacy:metadata:issued:dateissued'] = '授与日です。';
@@ -466,44 +448,28 @@ $string['requiredbadge'] = 'バッジクライテリアには少なくとも1つ
 $string['requiredcohort'] = 'コーホートクライテリアに少なくとも1つのコーホートを追加する必要があります。';
 $string['requiredcompetency'] = '少なくとも1つのコンピテンシーをコンピテンシークライテリアに追加する必要があります。';
 $string['requiredcourse'] = '少なくとも1コースをコースセットクライテリアに追加する必要があります。';
-$string['reviewbadge'] = 'バッジアクセスの変更';
-$string['reviewconfirm'] = '<p>あなたのバッジをユーザに表示して取得できるようにします。</p>
-
-<p>あなたがバッジを有効にした直後、このバッジのクライテリアをすでに満たしているユーザにこのバッジを発行することができます。</p>
-
-<p>バッジが発行された場合、<strong>ロックされます</strong> - クライテリアおよび有効期限設定を含む特定の設定は変更できないようになります。</p>
-
-<p>本当にバッジ「 {$a} 」へのアクセスを有効にしてもよろしいですか?</p>';
+$string['reviewbadge'] = 'バッジアクセスの変更点';
+$string['reviewconfirm'] = '<p>あなたのバッジをユーザに表示して取得できるようにします。</p> <p>あなたがバッジを有効にした直後、このバッジのクライテリアをすでに満たしているユーザにバッジを発行できます。</p> <p>バッジが発行された場合、そのバッジは<strong>ロックされます</strong> - クライテリアおよび有効期限設定を含む特定の設定は変更できないようになります。</p> <p>本当にバッジ「 {$a} 」へのアクセスを有効にしてもよろしいですか?</p>';
 $string['revoke'] = 'バッジを取り消す';
 $string['save'] = '保存';
 $string['searchname'] = '名称で検索する';
 $string['selectaward'] = 'あなたがこのバッジの授与に使用したいロールを選択してください:';
 $string['selectgroup_end'] = 'パブリックコレクションのみ表示されます。さらにパブリックコレクションを作成するには<a href="{$a}">あなたのバックパックにアクセスしてください</a>。';
-$string['selectgroup_start'] = 'このサイトに表示するため、あなたのバックパックからコレクションを選択してください:';
+$string['selectgroup_start'] = 'あなたのバックパックからこのサイトで表示するコレクションを選択してください:';
 $string['selecting'] = '選択したバッジに対して ...';
 $string['setup'] = '接続をセットアップする';
 $string['sitebackpack'] = 'アクティブ外部バックパック';
-$string['sitebackpack_help'] = 'ユーザこのサイトから接続できる外部バックパックです。ユーザのバックパック接続後にこの設定を変更した場合、それぞれのユーザはバックパック設定ページに移動して接続解除および再接続する必要がある点に留意してください。';
+$string['sitebackpack_help'] = 'このサイトからユーザが接続できる外部バックパックです。ユーザのバックパック接続後にこの設定を変更した場合、それぞれのユーザはバックパック設定ページに移動して接続解除および再接続する必要がある点に留意してください。';
 $string['sitebackpackdeleted'] = 'サイトバックパックが削除されました。';
 $string['sitebackpacknotdeleted'] = '現在サイトデフォルトであるため、このバックパックを削除できませんでした。';
 $string['sitebackpackverify'] = 'バックパック接続';
 $string['sitebackpackwarning'] = 'バックパックに接続できませんでした。<br/><br/>「バッジ発行者メールアドレス」管理設定がバックパックウェブサイトのアカウントの有効なメールアドレスであることを確認してください。<br/><br/><a href="{$a->url}">サイトバックパック設定ページ</a>の「バッジ発行者パスワード」がバックパックウェブサイトのアカウントの正しいパスワードであることを確認してください。<br/><br/>バックパックメッセージ:  {$a->warning}';
 $string['sitebadges'] = 'サイトバッジ';
-$string['sitebadges_help'] = 'サイトバッジはサイト関連活動にのみ関してユーザに授与することができます。これには一連のコースまたはユーザプロファイルの一部の完了も含みます。サイトバッジはユーザから別のユーザに発行することもできます。
+$string['sitebadges_help'] = 'サイトバッジはサイト関連活動にのみユーザに授与ができます。これには一連のコースまたはユーザプロファイルの一部の完了も含みます。サイトバッジはユーザから別のユーザへの発行もできます。
 
 コース関連活動のバッジはコースレベルで作成する必要があります。コースバッジは「コース管理 > バッジ」で確認できます。';
 $string['status'] = 'バッジステータス';
-$string['status_help'] = 'バッジステータスはシステム内での動作を決定します:
-
-* **取得可** – このバッジをユーザが取得できることを意味します。ユーザがバッジを利用できるのに対して、そのクライテリアを修正することはできません。
-
-* **取得不可** – このバッジをユーザが取得できないこと、また手動で発行できないことを意味します。以前に発行されたことのないバッジの場合、そのクライテリアを修正することができます。
-
-少なくとも1名のユーザにバッジが発行された場合、自動的に「ロック」されます。ロックされたバッジはユーザによって取得されることができますが、クライテリアを修正することはできません。ロックされたバッジの詳細またはクライテリアを修正したい場合、あなたはこのバッジを複製して、必要な修正すべてを適用することができます。
-
-*なぜ私たちはバッジをロックするのですか?*
-
-私たちはすべてのユーザが同じ要件でバッジを取得できることを確実にしたいと考えています。現在、バッジを取り消すことはできません。私たちがいつでもバッジ要件を修正できるようにした場合、ユーザが完全に異なる要件で同じバッジを取得することになってしまいます。';
+$string['status_help'] = 'バッジステータスはシステム内での動作を決定します: * **取得可** – このバッジをユーザが取得できることを意味します。ユーザはバッジを利用できますが、そのクライテリアは修正できません。 * **取得不可** – このバッジをユーザが取得できないこと、また手動で発行できないことを意味します。以前に発行されたことのないバッジの場合、そのクライテリアを修正できます。 少なくとも1名のユーザにバッジが発行された場合、自動的に「ロック」されます。ロックされたバッジはユーザにより取得できますが、クライテリアは修正できません。ロックされたバッジの詳細またはクライテリアを修正したい場合、あなたはこのバッジを複製して必要な修正すべてを適用できます。 *なぜ私たちはバッジをロックするのですか?* 私たちはすべてのユーザが同じ要件でバッジを取得できることを確実にしたいと考えています。現在、バッジは取り消せません。私たちがいつでもバッジ要件を修正できるようにした場合、ユーザが完全に異なる要件で同じバッジを取得することになってしまいます。';
 $string['statusmessage_0'] = '現在、ユーザはこのバッジを取得できません。あなたがユーザにこのバッジを取得できるようにしたい場合、アクセスを有効にしてください。';
 $string['statusmessage_1'] = '現在、ユーザはこのバッジを取得できます。変更する場合、アクセスを無効にしてください。';
 $string['statusmessage_2'] = '現在、ユーザはこのバッジを取得できません。クライテリアはロックされています。あなたがユーザにこのバッジを取得できるようにしたい場合、アクセスを有効にしてください。';
@@ -519,23 +485,15 @@ $string['targetframework_help'] = '外部スキルまたは標準フレームワ
 $string['targetname'] = '名称';
 $string['targetname_help'] = 'バッジが割り当てられる外部スキルまたは標準です。';
 $string['targeturl'] = 'URL';
-$string['targeturl_help'] = '外部スキルまたは標準を説明したページへのリンクです。URLには「http://」または「https://」の接頭辞が必要です。';
+$string['targeturl_help'] = '外部スキルまたは標準の説明ページへのリンクです。URLには「http://」または「https://」の接頭辞が必要です。';
 $string['testbackpack'] = 'テストバックパック「 {$a} 」';
 $string['testsettings'] = 'テスト設定';
 $string['type'] = 'タイプ';
 $string['variablesubstitution'] = 'メッセージ内の変数置換です。';
-$string['variablesubstitution_help'] = 'バッジメッセージにおいて、メッセージ送信時に実際の文字と置換するようメッセージの件名および本文に変数を入れることができます。変数は以下に表示されているものと厳密に同じようにテキストに入れてください。以下の変数を使用することができます:
-
-%badgename%
-: これはバッジフルネームと置換されます。
-
-%username%
-: これは取得者のフルネームと置換されます。
-
-%badgelink%
-: これは発行済みバッジ情報の公開されたURLと置換されます。';
+$string['variablesubstitution_help'] = 'バッジメッセージにおいてメッセージ送信時に実際の文字と置換するようメッセージの件名および本文に変数を入れることができます。変数が以下に表示されているものと厳密に同じになるようテキストに入れてください。以下の変数を使用できます:
+%badgename% : これはバッジフルネームと置換されます。 %username% : これは取得者のフルネームと置換されます。 %badgelink% : これは発行済みバッジ情報の公開されたURLと置換されます。';
 $string['version'] = 'バージョン';
-$string['version_help'] = 'このバージョンフィールドはバッジ作成履歴を追跡するため使用することができます。指定された場合、バッジページにバージョンが表示されます。';
+$string['version_help'] = 'このバージョンフィールドはバッジ作成履歴の追跡に使用できます。指定された場合、バッジページにバージョンが表示されます。';
 $string['viewbadge'] = '発行済みバッジを表示する';
 $string['visible'] = '表示';
 $string['warnexpired'] = '(このバッジの有効期限は切れています!)';

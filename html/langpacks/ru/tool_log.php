@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['actlogshdr'] = 'Доступные способы хранения журнала событий';
+$string['actlogshdr'] = 'Доступные журналы событий';
 $string['configlogplugins'] = 'Включите все необходимые плагины и расположите их в нужном порядке.';
 $string['exportlog'] = 'Включать события при экспорте.';
 $string['exportlogdetail'] = 'События, которые относятся к пользователю, включаются в экспорт.';
 $string['logging'] = 'Журнал событий';
-$string['managelogging'] = 'Управление способами хранения журнала событий';
-$string['pluginname'] = 'Управление способами хранения журнала событий';
+$string['managelogging'] = 'Управление журналами событий';
+$string['pluginname'] = 'Управление журналами событий';
 $string['privacy:metadata:logstore'] = 'Хранит историю событий';
 $string['privacy:path:logs'] = 'Журналы';
 $string['privacy:request:origin:cli'] = 'Инструмент командной строки';

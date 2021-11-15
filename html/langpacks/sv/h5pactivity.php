@@ -96,7 +96,7 @@ $string['myattempts'] = 'Mina försök';
 $string['no_compatible_track'] = 'Denna interaktion ({$a}) tillhandahåller inte spårningsinformation eller så är inte spårningstypen kompatibel med nuvarande aktivitetsversion.';
 $string['noparticipants'] = 'Inga deltagare att visa';
 $string['opencontentbank'] = '<a href="{$a}" target="_blank">Visa innehållet i H5P-filen i innehållsbanken</a> (öppnas i nytt fönster).';
-$string['outcome'] = 'Utfall';
+$string['outcome'] = 'Resultat';
 $string['package'] = 'Paketfil';
 $string['package_help'] = 'Paketfilen är en H5P-fil som innehåller interaktivt H5P-innehåll.';
 $string['page-mod-h5pactivity-x'] = 'Valfri H5P-modulsida';

@@ -43,7 +43,7 @@ $string['forcedownload'] = 'Tvinga nedladdning av filer';
 $string['forcedownload_help'] = 'Om vissa filer, till exempel bilder eller HTML-filer, ska visas i webbläsaren i stället för att laddas ned. Observera att inställningen av säkerhetsskäl endast bör avmarkeras om alla användare med möjlighet att hantera filer i mappen är betrodda användare.';
 $string['indicator:cognitivedepth'] = 'Mapp kognitiv';
 $string['indicator:cognitivedepth_help'] = 'Denna indikator baseras på det kognitiva djup som uppnåtts av studenten i en Mappresurs.';
-$string['indicator:cognitivedepthdef'] = 'Folder kognitivt';
+$string['indicator:cognitivedepthdef'] = 'Mapp kognitivt';
 $string['indicator:cognitivedepthdef_help'] = 'Deltagaren har nått denna procentandel av det kognitiva engagemang som erbjuds av Mapp-aktiviteterna under detta analysintervall (Nivåer = Ingen visning, Visa)';
 $string['indicator:socialbreadth'] = 'Mapp social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Mappaktivitet.';

@@ -16,8 +16,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2020090800;        // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version = 2021072700;        // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires = 2016120500;        // Requires this Moodle version.
 $plugin->component = 'block_courses_vicensvives'; // Full name of the plugin (used for diagnostics).
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '3.9.1 (Build: 2020090800)';
+$plugin->release = '3.11 (Build: 2021072700)';

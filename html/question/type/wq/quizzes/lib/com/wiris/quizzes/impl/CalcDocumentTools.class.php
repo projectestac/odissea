@@ -111,6 +111,105 @@ class com_wiris_quizzes_impl_CalcDocumentTools {
 	static $outputMathOptions;
 	static $kernelOptions;
 	static $QUIZZES_QUESTION_OPTIONS = "quizzes_question_options";
+	static function calcSessionLang($value) {
+		$lang = com_wiris_quizzes_impl_CalcDocumentTools::casSessionLang($value);
+		if($lang === null) {
+			$start = _hx_index_of($value, "<properties", null);
+			$end = _hx_index_of($value, "</properties>", $start);
+			$start = _hx_index_of($value, "<property name=\"lang\"", $start);
+			if($end >= $start) {
+				return null;
+			}
+			$start = _hx_index_of($value, ">", $start) + 1;
+			$end = _hx_index_of($value, "</property>", $start);
+			$lang = _hx_substr($value, $start, $end - $start);
+		}
+		return $lang;
+	}
+	static function casSessionLang($value) {
+		$start = _hx_index_of($value, "<session", null);
+		if($start === -1) {
+			return null;
+		}
+		$end = _hx_index_of($value, ">", $start + 1);
+		$start = _hx_index_of($value, "lang", $start);
+		if($start === -1 || $start > $end) {
+			return null;
+		}
+		$start = _hx_index_of($value, "\"", $start) + 1;
+		return _hx_substr($value, $start, 2);
+	}
+	static function isCalc($session) {
+		if($session === null) {
+			return false;
+		}
+		$i = _hx_index_of($session, "<wiriscalc", null);
+		if($i > -1) {
+			return true;
+		}
+		$start = _hx_index_of($session, "<session", null);
+		if($start === -1) {
+			return false;
+		}
+		$end = _hx_index_of($session, ">", $start);
+		$start = _hx_index_of($session, "version", $start);
+		if($start > $end) {
+			return false;
+		}
+		$start = _hx_index_of($session, "\"", $start);
+		$end = _hx_index_of($session, "\"", $start + 1);
+		$version = _hx_substr($session, $start + 1, $end - $start - 1);
+		$version = _hx_substr($version, 0, _hx_index_of($version, ".", null));
+		$num = Std::parseInt($version);
+		return $num >= 3;
+	}
+	static function getCalcSessionTitle($calcSession) {
+		if(com_wiris_quizzes_impl_CalcDocumentTools::isCalc($calcSession)) {
+			$start = _hx_index_of($calcSession, "<wiriscalc", null);
+			$end = _hx_index_of($calcSession, "</wiriscalc>", $start + 1);
+			$start = _hx_index_of($calcSession, "<title", $start + 1);
+			if($start > -1 && $start < $end) {
+				$end = _hx_index_of($calcSession, "</title>", $start + 1);
+				$start = _hx_index_of($calcSession, "<math", $start + 1);
+				if($start > -1 && $start < $end) {
+					$start = _hx_index_of($calcSession, "<mtext", $start + 1);
+					$end = _hx_index_of($calcSession, "</mtext>", $start + 1);
+					if($start > -1 && $start < $end) {
+						$start = _hx_index_of($calcSession, ">", $start + 1) + 1;
+						if($start > -1 && $start < $end) {
+							$title = _hx_substr($calcSession, $start, $end - $start);
+							return $title;
+						}
+					}
+				}
+			}
+		}
+		return null;
+	}
+	static function setCalcSessionTitle($calcSession, $title) {
+		if(com_wiris_quizzes_impl_CalcDocumentTools::isCalc($calcSession)) {
+			$start = _hx_index_of($calcSession, "<wiriscalc", null);
+			$end = _hx_index_of($calcSession, "</wiriscalc>", $start + 1);
+			$start = _hx_index_of($calcSession, "<title", $start + 1);
+			if($start > -1 && $start < $end) {
+				$end = _hx_index_of($calcSession, "</title>", $start + 1);
+				$start = _hx_index_of($calcSession, "<math", $start + 1);
+				if($start > -1 && $start < $end) {
+					$start = _hx_index_of($calcSession, "<mtext", $start + 1);
+					$end = _hx_index_of($calcSession, "</mtext>", $start + 1);
+					if($start > -1 && $start < $end) {
+						$start = _hx_index_of($calcSession, ">", $start + 1) + 1;
+						if($start > -1 && $start < $end) {
+							$s1 = _hx_substr($calcSession, 0, $start);
+							$s2 = _hx_substr($calcSession, $end, null);
+							return $s1 . $title . $s2;
+						}
+					}
+				}
+			}
+		}
+		return $calcSession;
+	}
 	function __toString() { return 'com.wiris.quizzes.impl.CalcDocumentTools'; }
 }
 com_wiris_quizzes_impl_CalcDocumentTools::$options = new _hx_array(array(com_wiris_quizzes_api_QuizzesConstants::$OPTION_PRECISION, com_wiris_quizzes_api_QuizzesConstants::$OPTION_TIMES_OPERATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMAGINARY_UNIT, com_wiris_quizzes_api_QuizzesConstants::$OPTION_IMPLICIT_TIMES_OPERATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_FLOAT_FORMAT, com_wiris_quizzes_api_QuizzesConstants::$OPTION_DECIMAL_SEPARATOR, com_wiris_quizzes_api_QuizzesConstants::$OPTION_DIGIT_GROUP_SEPARATOR));

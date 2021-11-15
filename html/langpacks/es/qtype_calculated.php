@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['additem'] = 'Agregar ítem';
+$string['additem'] = 'Añadir elemento';
 $string['addmoreanswerblanks'] = 'Agregar otra respuesta en blanco.';
-$string['addsets'] = 'Agregar conjunto(s)';
+$string['addsets'] = 'Añadir conjunto(s)';
 $string['answerdisplay'] = 'Mostrar';
 $string['answerformula'] = 'Fórmula para la respuesta {$a}';
 $string['answerhdr'] = 'Respuesta';
@@ -50,8 +50,8 @@ $string['correctfeedback'] = 'Para cualquier respuesta correcta';
 $string['dataitemdefined'] = 'con {$a} valores numéricos ya definidos está disponible';
 $string['datasetrole'] = 'Los comodines <strong>{x..} </strong> se sustituirán por valores numéricos de entre su conjunto de datos';
 $string['decimals'] = 'Con {$a}';
-$string['deleteitem'] = 'Eliminar ítem';
-$string['deletelastitem'] = 'Eliminar último ítem';
+$string['deleteitem'] = 'Eliminar elemento';
+$string['deletelastitem'] = 'Eliminar último elemento';
 $string['distributionoption'] = 'Seleccionar opción de distribución';
 $string['editdatasets'] = 'Editar el conjunto de datos de os comodines';
 $string['editdatasets_help'] = 'Los valores comodín se pueden crear mediante la introducción de un número en cada campo "comodín" y clic en el botón añadir. Para generar automáticamente 10 o más valores, seleccione el número de valores necesarios antes de hacer clic en el botón añadir. Una "distribución uniforme" significa que cualquier valor entre los límites establecidos tiene la misma probabilidad de que se genere;  una "distribución log-uniforme" significa que los valores situados hacia el límite inferior tienen más probabilidad.';
@@ -115,7 +115,7 @@ $string['pluginnameadding'] = 'Agregando una pregunta calculada';
 $string['pluginnameediting'] = 'Editando una pregunta calculada';
 $string['pluginnamesummary'] = 'Las preguntas calculadas son similares a preguntas numéricas pero con números seleccionados aleatoriamente de un conjunto cuando se intenta resolver el cuestionario.';
 $string['possiblehdr'] = 'Es posible comodines sólo en el enunciado de la pregunta';
-$string['privacy:metadata'] = 'El plugin de tipo de pregunta Calculada no almacena ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento de tipo de pregunta Calculada no almacena ningún dato personal.';
 $string['questiondatasets'] = 'Conjunto de datos de la pregunta';
 $string['questiondatasets_help'] = 'Grupo de datos para los comodines que se usarán en cada pregunta.';
 $string['questionstoredname'] = 'Nombre de pregunta guardado';

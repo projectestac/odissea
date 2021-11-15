@@ -47,6 +47,7 @@ $string['completionissueheader'] = 'Criteri di assegnazione automatica: per comp
 $string['dashboardlink'] = 'Collegamento alla dashboard Accredible';
 $string['datecreated'] = 'Data di creazione';
 $string['description'] = 'Descrizione';
+$string['eulabel'] = 'Server UE (Francoforte)';
 $string['eventcertificatecreated'] = 'Una credenziale è stata inviata a Accredible';
 $string['gradeissueheader'] = 'Criteri di assegnazione automatica: per valutazione quiz finale';
 $string['groupselect'] = 'Gruppo';

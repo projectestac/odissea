@@ -143,9 +143,7 @@ $string['backpacksettings'] = 'Backpack-Einstellungen';
 $string['backpackweburl'] = 'Backpack-URL';
 $string['badgedetails'] = 'Grundeinstellungen';
 $string['badgeimage'] = 'Bild';
-$string['badgeimage_help'] = 'Dieses Bild wird verwendet, wenn der Badge verliehen wird.
-
-Fügen Sie ein Bild hinzu. Das Bild wird quadratisch beschnitten und automatisch auf eine geeignete Größe skaliert.';
+$string['badgeimage_help'] = 'Das Bild sollte mindestens 300 x 300 Pixel groß sein. Es wird als 300 x 300 Pixel auf der Badge-Seite und 100 x 100 Pixel auf der Profilseite von Nutzer/innen angezeigt.';
 $string['badgeprivacysetting'] = 'Privatsphäre für Badges';
 $string['badgeprivacysetting_help'] = 'Sie können erworbene Badges in Ihren Nutzerprofil anzeigen lassen. Diese Einstellung legt fest, ob neue Badges automatisch sichtbar werden.
 
@@ -324,7 +322,7 @@ $string['error:parameter'] = 'Warnung: Mindestens ein Parameter sollte gewählt 
 $string['error:relatedbadgedoesntexist'] = 'Es gibt für diese ID kein öffentliches Badge';
 $string['error:requesterror'] = 'Die Verbindung ist fehlgeschlagen (Fehlercode {$a}).';
 $string['error:requesttimeout'] = 'Die Verbindung ist fehlgeschlagen (Timeout).';
-$string['error:save'] = 'Der Badge kann nicht gesichert werden.';
+$string['error:save'] = 'Der Badge kann nicht gespeichert werden.';
 $string['error:userdeleted'] = '{$a->user} (Dieses Nutzerkonto wurde in {$a->site} gelöscht)';
 $string['eventbadgearchived'] = 'Badge archiviert';
 $string['eventbadgeawarded'] = 'Badge verliehen';

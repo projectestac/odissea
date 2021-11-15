@@ -201,7 +201,7 @@ $string['fulldatetimetemplate'] = '%a %d.%m.%Y %H:%M';
 $string['fullname_template'] = '{$a->firstname} {$a->lastname}';
 $string['gap'] = 'Hutsunea';
 $string['gap_help'] = 'Bi hitzorduen arteko hutsunea neurtu.';
-$string['grade'] = 'Gehienezko kalifikazioa';
+$string['grade'] = 'Gehieneko kalifikazioa';
 $string['grade_help'] = 'Definitu, kalifikatu daitekeen edozein hitzordutan, ezar daitekeen puntuaziorik handiena.';
 $string['group_registration_notify:student:queue:group:fullmessage'] = 'Kaixo, {$a->receivername}:
 

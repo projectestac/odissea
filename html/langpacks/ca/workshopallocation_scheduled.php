@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['crontask'] = 'Processament en segon pla per l\'assignació programada';
 $string['currentstatus'] = 'Estat actual';
 $string['currentstatusexecution'] = 'Estat';
 $string['currentstatusexecution1'] = 'Executat en {$a->datetime}';

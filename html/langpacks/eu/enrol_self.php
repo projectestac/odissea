@@ -33,7 +33,7 @@ $string['cohortonly'] = 'Soilik kohorteko partaideak';
 $string['cohortonly_help'] = 'Matrikulazio automatikoa soilik kohorte bateko kideentzat egon daiteke eskuragarri. Kontuan izan ezarpen hau aldatzeak ez duela eraginik existitzen diren matrikulazioetan.';
 $string['confirmbulkdeleteenrolment'] = 'Ziur zaude erabiltzaile-matrikula hauek ezabatu nahi dituzula?';
 $string['customwelcomemessage'] = 'Pertsonalizatu ongi etorria emateko mezua';
-$string['customwelcomemessage_help'] = 'Ongi-etorri mezu pertsonalizatua gehi daiteke testu-soilean edo Moodleko formatu automatikoan, HTML etiketak eta etiketa eleanitzak barne.
+$string['customwelcomemessage_help'] = 'Ongi-etorri mezu pertsonalizatua gehi daiteke testu-soilean edo Moodleko formatu automatikoan, HTML etiketak eta etiketa eleaniztunak barne.
 
 Mezuan hurrengo gakoak sar daitezke:
 
@@ -78,7 +78,7 @@ Oharra: taldeen ezarpenetan taldea matrikulatzeko giltza zehazteaz gain matrikul
 $string['keyholder'] = 'Matrikulazio-giltza hau erabiltzaile honen partetik jaso beharko zenuke:';
 $string['longtimenosee'] = 'Desmatrikulatu parte-hartu gabeko tarte honen ondoren';
 $string['longtimenosee_help'] = 'Erabiltzaileak denbora luzez ikastaroan sartu gabe egonez gero automatikoki desmatrikulatzen dira. Ezarpen honek hori gertatzeko denbora-muga zehazten du.';
-$string['maxenrolled'] = 'Matrikulatutako gehienezko erabiltzaileak';
+$string['maxenrolled'] = 'Matrikulatutako gehieneko erabiltzaileak';
 $string['maxenrolled_help'] = 'Gehienez matrikula daitekeen erabiltzaile-kopurua zehazten du. Zero jarriz gero ez dago mugarik.';
 $string['maxenrolledreached'] = 'Matrikula daitekeen erabiltzaile-kopuruaren mugara iritsi da.';
 $string['messageprovider:expiry_notification'] = 'Matrikulazio automatikoaren iraungitze-jakinarazpenak';

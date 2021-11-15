@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['browserepositories'] = 'Procurar nos repositórios...';
+$string['browserepositories'] = 'Pesquisar nos repositórios...';
 $string['copyrightbutton'] = 'Botão de direitos de autor';
 $string['downloadbutton'] = 'Permitir descarregar';
 $string['either'] = 'Ou';

@@ -111,17 +111,17 @@ $string['closegrader'] = 'Fechar avaliador';
 $string['completiondetail:discussions'] = 'Iniciar tópicos: {$a}';
 $string['completiondetail:posts'] = 'Adicionar mensagens: {$a}';
 $string['completiondetail:replies'] = 'Adicionar respostas: {$a}';
-$string['completiondiscussions'] = 'Número de tópicos que o aluno deve criar';
+$string['completiondiscussions'] = 'Número de tópicos que o aluno deve criar:&nbsp;';
 $string['completiondiscussionsdesc'] = 'O aluno deve criar pelo menos {$a} tópico(s) de discussão';
-$string['completiondiscussionsgroup'] = 'Nº de tópicos';
+$string['completiondiscussionsgroup'] = 'Número de tópicos';
 $string['completiondiscussionshelp'] = 'requer a criação de determinado número de tópicos para concluir a atividade';
-$string['completionposts'] = 'Número de tópicos ou respostas que o aluno deve criar';
+$string['completionposts'] = 'Número de tópicos ou respostas que o aluno deve criar:&nbsp;';
 $string['completionpostsdesc'] = 'O aluno deve criar ou responder a pelo menos {$a} tópico(s) de discussão';
-$string['completionpostsgroup'] = 'Nº de mensagens';
+$string['completionpostsgroup'] = 'Número de mensagens';
 $string['completionpostshelp'] = 'número de tópicos ou respostas requeridos para concluir a atividade';
-$string['completionreplies'] = 'Número de respostas a tópicos que o aluno deve submeter';
+$string['completionreplies'] = 'Número de respostas a tópicos que o aluno deve submeter:&nbsp;';
 $string['completionrepliesdesc'] = 'O aluno deve responder a pelo menos {$a}';
-$string['completionrepliesgroup'] = 'Nº de respostas';
+$string['completionrepliesgroup'] = 'Número de respostas';
 $string['completionreplieshelp'] = 'número de respostas requerido para concluir a atividade';
 $string['configcleanreadtime'] = 'Hora do dia em que as mensagens antigas serão apagadas da tabela de \'não lidas\'.';
 $string['configdigestmailtime'] = 'Será enviado um resumo por dia aos utilizadores que optarem por receber resumos do fórum por e-mail. Esta configuração define a hora do envio do e-mail (a mensagem será enviada quando for executado o cron após a hora definida).';
@@ -220,7 +220,7 @@ $string['displaystart'] = 'Visível a partir de';
 $string['displaystart_help'] = 'Esta configuração permite mostrar um tópico apenas a partir de uma determinada data. Os administradores podem sempre visualizar estes tópicos.';
 $string['displaystartdate'] = 'Visível a partir de: {$a}.';
 $string['displaywordcount'] = 'Exibir contagem de palavras';
-$string['displaywordcount_help'] = 'Esta configuração especifica se a contagem de palavras de cada tópico deve ser exibida ou não.';
+$string['displaywordcount_help'] = 'Esta configuração especifica se é, ou não, exibida a contagem de palavras de cada tópico.';
 $string['duedate'] = 'Data limite para publicar';
 $string['duedate_help'] = 'Se definida, será a data limite para publicação no fórum. Embora esta data seja exibida no calendário como a data de fim do prazo para publicar no fórum, ainda será possível publicar no fórum após esta data. Para evitar publicações no fórum após uma determinada data, defina a data de fecho do fórum.';
 $string['duedatetodisplayincalendar'] = 'Data limite a exibir no calendário';
@@ -399,9 +399,9 @@ $string['lastpost'] = 'Última mensagem';
 $string['learningforums'] = 'Fóruns de aprendizagem';
 $string['lockdiscussion'] = 'Bloquear este tópico';
 $string['lockdiscussionafter'] = 'Bloquear tópicos de discussão após período de inatividade';
-$string['lockdiscussionafter_help'] = 'Os tópicos de discussão podem ser bloqueados automaticamente após decorrer um tempo especificado desde a última resposta.
+$string['lockdiscussionafter_help'] = 'Os tópicos de discussão podem ser bloqueados automaticamente após decorrer um período de tempo especificado desde a última resposta.
 
-Os utilizadores com permissões para responder a tópicos de discussão bloqueados podem desbloquear um tópico se adicionarem uma resposta ao tópico.';
+Os utilizadores com permissão para responder a tópicos de discussão bloqueados podem desbloquear um tópico se adicionarem uma resposta ao tópico.';
 $string['locked'] = 'Bloqueado';
 $string['lockupdated'] = 'A opção de bloquear foi atualizada.';
 $string['longpost'] = 'Mensagem longa';
@@ -447,11 +447,11 @@ Existem vários tipos de fórum, como o fórum standard onde qualquer participan
 
 Os participantes podem subscrever um fórum de forma a receber notificações sempre que são submetidas novas mensagens no mesmo. O professor pode configurar a subscrição para o modo opcional, obrigatória ou opcional (ativa ao inicio) ou desativá-la. Se necessário, os alunos podem ser impedidos de inserir mais do que um determinado número de mensagens num determinado período de tempo, no sentido de impedir que alguns alunos dominem as discussões.
 
-As mensagens podem ser avaliadas por professores ou alunos (avaliação pelos pares). As avaliações são convertidas para uma nota final que é registada no relatório de avaliação da disciplina.
+As mensagens podem ser avaliadas por professores ou alunos (avaliação pelos pares). As avaliações são convertidas numa nota final que é registada na pauta da disciplina.
 
 Os fóruns podem ser utilizados com várias finalidades, tais como:
 
-* Espaço introdutório para possibilitar que os alunos se conheçam;
+* Espaço introdutório para possibilitar interação social entre os participantes;
 * Local para divulgar informação relativa à disciplina (usando o fórum de anúncios, que tem subscrição obrigatória);
 * Um meio de ajuda, onde professores e alunos podem dar conselhos;
 * Um método informal de partilha de documentos entre alunos;
@@ -480,7 +480,7 @@ $string['noattachments'] = 'Esta mensagem não tem anexos';
 $string['nodiscussions'] = 'Ainda não existem tópicos de discussão neste fórum';
 $string['nodiscussionsstartedby'] = '{$a} não iniciou nenhum tópico de discução';
 $string['nodiscussionsstartedbyyou'] = 'Ainda não começou nenhuma discussão';
-$string['noguestpost'] = 'Lamentamos mas como visitante não pode submeter mensagens neste fórum';
+$string['noguestpost'] = 'Lamentamos mas como visitante não pode submeter mensagens neste fórum.';
 $string['noguestsubscribe'] = 'Os convidados não têm permissão para subscrever um fórum.';
 $string['noguesttracking'] = 'Lamentamos mas como visitante não pode assinalar mensagens não lidas.';
 $string['nomorepostscontaining'] = 'Não foram encontradas mais mensagens contendo \'{$a}';
@@ -516,7 +516,7 @@ $string['numberofreplies'] = 'Número de respostas: {$a}';
 $string['numposts'] = '{$a} mensagens';
 $string['olderdiscussions'] = 'Tópicos de discussão mais antigos';
 $string['oldertopics'] = 'Tópicos mais antigos';
-$string['oldpostdays'] = 'Mensagem considerada lida após nº de dias';
+$string['oldpostdays'] = 'Mensagem considerada lida após n.º de dias';
 $string['overviewnumpostssince'] = '{$a} mensagens novas desde a última vez que se autenticou';
 $string['overviewnumunread'] = '{$a} mensagens não lidas';
 $string['page-mod-forum-discuss'] = 'Página de discussão do fórum';
@@ -538,11 +538,13 @@ $string['postbymailsuccess'] = 'A sua resposta "{$a->subject}" foi publicada com
 $string['postbymailsuccess_html'] = 'A sua resposta <a href="{$a->discussionurl}">{$a->subject}</a> foi publicada com sucesso.';
 $string['postbyuser'] = '{$a->post} por {$a->user}';
 $string['postincontext'] = 'Ver esta mensagem no contexto';
-$string['postisprivatereply'] = 'Esta mensagem foi enviada em privado e não está visível para os outros participantes.';
+$string['postisprivatereply'] = 'Esta mensagem é uma resposta privada. Só está visível para si e para qualquer utilizador com a capacidade de visualizar respostas privadas, como por exemplo, professores ou gestores.';
+$string['postmailinfo'] = 'Esta é uma cópia de uma mensagem publicada em {$a}';
 $string['postmailinfolink'] = 'Esta é uma cópia de uma mensagem publicada na disciplina {$a->coursename}.
 
 Para responder à mensagem clique na seguinte hiperligação: {$a->replylink}';
 $string['postmailnow'] = '<p>Esta mensagem será enviada imediatamente a todos os subscritores do fórum.</p>';
+$string['postmailreply'] = 'Para responder, clique nesta hiperligação: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'Contribui principalmente para a aprendizagem INDIVIDUAL';
 $string['postrating2'] = 'Aprendizagem Individual e Coletiva por igual';
@@ -657,23 +659,23 @@ $string['rsssubscriberssposts'] = 'Lista RSS de tópicos de mensagens';
 $string['rsstype'] = 'Lista RSS para esta atividade';
 $string['rsstype_help'] = 'Para ativar as listas RSS para esta atividade, selecione discussões ou mensagens para serem incluídas na lista RSS.';
 $string['rsstypedefault'] = 'Tipo de lista RSS';
-$string['search'] = 'Procurar';
+$string['search'] = 'Pesquisar';
 $string['search:activity'] = 'Fórum - informações da atividade';
 $string['search:post'] = 'Fórum - mensagens';
 $string['searchdatefrom'] = 'Mensagens posteriores a';
 $string['searchdateto'] = 'Mensagens anteriores a';
 $string['searchforumintro'] = 'Por favor, insira os termos da pesquisa num, ou mais, dos seguintes campos:';
-$string['searchforums'] = 'Procurar nos fóruns';
+$string['searchforums'] = 'Pesquisar nos fóruns';
 $string['searchfullwords'] = 'Palavras devem aparecer inteiras';
 $string['searchnotwords'] = 'Palavras que não devem estar na mensagem';
-$string['searcholderposts'] = 'Procurar mensagens antigas...';
+$string['searcholderposts'] = 'Pesquisar mensagens antigas...';
 $string['searchphrase'] = 'Frase exata que deve estar na mensagem';
 $string['searchresults'] = 'Resultados da procura';
 $string['searchsubject'] = 'Palavras que devem estar no assunto';
 $string['searchtags'] = 'Com a palavra-chave';
 $string['searchuser'] = 'O autor deverá incluir este nome';
 $string['searchuserid'] = 'O código Moodle de identificação do autor';
-$string['searchusers'] = 'Procurar utilizadores';
+$string['searchusers'] = 'Pesquisar utilizadores';
 $string['searchwhichforums'] = 'Escolha os fóruns a pesquisar';
 $string['searchwords'] = 'Palavras que podem aparecer em qualquer parte da mensagem';
 $string['seeallposts'] = 'Ver todas as mensagens deste utilizador';

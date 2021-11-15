@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['multilangupgradeinfo'] = '<p>Iragazki eleanitzaren sintaxia 1.8 bertsiotik aurrera aldatu egin da eta <lang> etiketa dagoeneko ez da onartzen.</p>
+$string['multilangupgradeinfo'] = '<p>Iragazki eleaniztunaren sintaxia 1.8 bertsiotik aurrera aldatu egin da eta <lang> etiketa dagoeneko ez da onartzen.</p>
 <p>Adibidez: <span lang="en" class="multilang">Hello!</span><span lang="eu" class="multilang">Kaixo!</span></p>
 <p>Existitzen diren testu guztietan sintaxia orain eguneratu nahi duzu?</p>';
 $string['pluginname'] = 'Eduki elenitzaren eguneraketa';

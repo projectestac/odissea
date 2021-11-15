@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Respuestas incrustadas (Cloze)';
 $string['pluginname_help'] = 'El formato de palabra perdida {Cloze} permite importar un texto con preguntas de múltiple elección y respuesta corta dentro del propio texto.';
+$string['privacy:metadata'] = 'El complemento de preguntas de respuestas integradas no almacena ningún dato personal.';

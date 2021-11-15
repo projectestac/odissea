@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = '话题数量';
 $string['numberdiscussions_help'] = '这里设定要显示多少话题';
 $string['pluginname'] = '社区格式';
+$string['privacy:metadata'] = '社交格式插件不存储任何个人数据。';
 $string['sectionname'] = '小节';

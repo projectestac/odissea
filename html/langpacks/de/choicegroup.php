@@ -57,7 +57,12 @@ $string['choicegroupname'] = 'Name der Gruppenwahl';
 $string['choicegroupopen'] = 'Verfügbar';
 $string['choicegroupoptions'] = 'Wahloptionen';
 $string['choicegroupoptions_help'] = 'Tragen Sie hier die einzelnen Optionen ein, zwischen denen sich die Teilnehmer/innen entscheiden können.
-Sie können jedes der vorhandenen Felder ausfüllen, Sie dürfen aber auch nicht benötigte Felder leer lassen, die dann in der Abstimmung nicht angezeigt werden. Benötigen Sie weitere Optionen, so klicken Sie auf den Knopf "Weitere Optionen hinzufügen".';
+
+Die Liste auf der linken Seite zeigt alle verfügbaren Gruppen und Gruppierungen an. Um eine oder mehrere Gruppen hinzuzufügen, wählen Sie diese aus der Liste aus und klicken Sie auf "Hinzufügen". Um alle Gruppen einer Gruppierung hinzuzufügen, wählen Sie die Gruppierung aus und klicken Sie auf "Hinzufügen".
+
+Die ausgewählten Gruppen erscheinen in der Liste auf der rechten Seite.
+
+Um Gruppen aus der Auswahl wieder zu entfernen, wählen Sie diese aus der Liste auf der rechten Seite aus und klicken Sie auf "Entfernen".';
 $string['choicegroupsaved'] = 'Ihre Wahl wurde gespeichert';
 $string['choicetext'] = 'Auswahltext';
 $string['chooseaction'] = 'Aktion auswählen...';
@@ -97,6 +102,8 @@ $string['limitanswers'] = 'Obergrenzen für Wahl erlauben';
 $string['limitanswers_help'] = 'Diese Option erlaubt das Setzen von Obergrenzen für die einzelnen Wahloptionen. Sobald eine Obergrenze erreicht ist, kann sich niemand mehr für die jeweilige Wahloption entscheiden.
 
 Wenn die Obergrenzen deaktiviert sind, gibt es keine Beschränkung bei der Gruppenwahl.';
+$string['maxenrollments'] = 'Obergrenze Eintragungen';
+$string['maxenrollments_help'] = 'Diese Einstellung ermöglicht es Ihnen, die Anzahl der Eintragungen pro Teilnehmer/in zu limitieren. Der Standardwert **0** bedeutet dass es kein Limit gibt.';
 $string['members/'] = 'Gruppenmitglieder';
 $string['members/max'] = 'Gruppenmitglieder / Maximalzahl';
 $string['modulename'] = 'Gruppenwahl';
@@ -104,6 +111,7 @@ $string['modulename_help'] = 'Mit der \'Gruppenwahl\' ist es möglich, dass sich
 $string['modulenameplural'] = 'Gruppenwahlen';
 $string['moveselectedusersto'] = 'Ausgewählte Nutzer/innen verschieben...';
 $string['multipleenrollmentspossible'] = 'Eintrag in mehrere Gruppen erlauben';
+$string['mustchoosemax'] = 'Sie dürfen nur maximal {$a} Gruppen auswählen. Es wurde nichts gespeichert.';
 $string['mustchooseone'] = 'Sie müssen eine Wahl treffen, bevor Sie speichern können.';
 $string['name'] = 'Gruppenname';
 $string['neverresultsviewable'] = 'Ergebnisse sind nicht sichtbar.';
@@ -115,6 +123,7 @@ $string['notenrolledchoose'] = 'Nur eingeschriebene Teilnehmer/innen dürfen an 
 $string['notopenyet'] = 'Diese Aktivität ist verfügbar ab {$a}';
 $string['notyetresultsviewable'] = 'Die Ergebnisse werden nach dem Ende der Wahl sichtbar.';
 $string['numberofuser'] = 'Nutzerzahl';
+$string['onlyactive'] = 'Wahlen von Teilnehmer/innen mit inaktiven oder abgelaufenen Einschreibungen ausfiltern';
 $string['option'] = 'Gruppe';
 $string['page-mod-choice-x'] = 'Jede Seite der Gruppenwahl';
 $string['pleaseselectonegroup'] = 'Mindestens eine Gruppe zur Auswahl selektieren';

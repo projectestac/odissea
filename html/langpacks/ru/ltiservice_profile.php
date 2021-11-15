@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Служба пользовательского профиля LTI инструмента';
+$string['privacy:metadata'] = 'Плагин Tool Consumer Profile LTI Service не хранит никаких личных данных.';

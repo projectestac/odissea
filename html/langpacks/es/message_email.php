@@ -26,6 +26,25 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['email'] = 'Enviar notificaciones email a';
+$string['emaildigestsubject'] = 'Resumen de mensajes';
+$string['emaildigestunreadmessages'] = 'Mensajes no leídos';
+$string['emaildigestviewallmessages'] = 'Ver todos los mensajes';
 $string['emailonlyfromnoreplyaddress'] = '¿Enviar siempre el email desde la dirección de no-responder?';
 $string['ifemailleftempty'] = 'Dejar vacío para enviar avisos a {$a}';
+$string['messagedigestemailsubject'] = '{$a}: Resumen de mensajes';
 $string['pluginname'] = 'Email';
+$string['privacy:metadata:attachment'] = 'Un archivo en el sistema de archivos.';
+$string['privacy:metadata:attachname'] = 'El nombre del archivo adjunto (la extensión indica MIME).';
+$string['privacy:metadata:externalpurpose'] = 'Esta información se envía a un servidor SMTP externo para que en último término sea entregada como un correo electrónico al destinatario.';
+$string['privacy:metadata:fullmessage'] = 'El mensaje completo en un formato dado.';
+$string['privacy:metadata:fullmessagehtml'] = 'La versión completa del mensaje.';
+$string['privacy:metadata:message_email_messages'] = 'La lista de usuarios matriculados a través de un proveedor LTI';
+$string['privacy:metadata:message_email_messages:conversationid'] = 'El ID de la conversación que se envía a';
+$string['privacy:metadata:message_email_messages:messageid'] = 'El ID del mensaje que se envía';
+$string['privacy:metadata:message_email_messages:useridto'] = 'El ID del usuario que recibe el mensaje';
+$string['privacy:metadata:recipient'] = 'El destinatario del mensaje.';
+$string['privacy:metadata:replyto'] = 'La dirección de correo electrónico a la que responder.';
+$string['privacy:metadata:replytoname'] = 'Nombre de la respuesta al destinatario.';
+$string['privacy:metadata:subject'] = 'La línea de asunto del mensaje.';
+$string['privacy:metadata:userfrom'] = 'El usuario que envía el mensaje.';
+$string['tasksendemail'] = 'Resumen de mensajes de correo';

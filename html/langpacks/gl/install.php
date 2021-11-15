@@ -174,6 +174,11 @@ $string['memorylimithelp'] = '<p>O límite de memoria PHP no seu servidor está 
     (poderá ver os erros cando se miran as páxinas) de modo que terá que eliminar o ficheiro .htaccess.</p></li>
 </ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP non foi configurado adecuadamente coa extensión MySQLi de modo que poida comunicarse co MySQL. Comprobe o ficheiro php.ini ou volva a compilar PHP.';
+$string['nativeauroramysql'] = 'Aurora MySQL (nativo/auroramysql)';
+$string['nativeauroramysqlhelp'] = 'A base de datos é o lugar onde se almacenan os datos e configuracións de Moodle e debe configurarse aquí.</p>
+<p>O nome da base de datos, nome de usuario e contrasinal son campos obrigatorios; o prefixo da táboa é opcional.</p>
+<p>Se actualmente non existira a base de datos, e o usuario que Vostede especifique ten permisos, Moodle intentará crear unha nova base de datos coas configuracións e os permisos correctos.</p>
+<p>Este controlador non é compatíbel co motor antigo MyISAM.</p>';
 $string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>A base de datos é o lugar onde se almacenan os datos e axustes de Moodle e debe configurarse aquí.</p>
 <p>O nome da base de datos, nome de usuario e contrasinal son campos obrigatorios; o prefixo da táboa é opcional.</p>

@@ -33,6 +33,7 @@ $string['eventevotingstarted'] = 'تصويت الكتروني تم بدؤه';
 $string['eventevotingstopped'] = 'تصويت الكتروني تم إيقافه';
 $string['eventevotinguserid'] = 'المستخدم ذو المُعرَّف';
 $string['eventusercontextid'] = 'في وحدة المساق ذات المُعرَّف';
+$string['evotingname'] = 'اسم الاستطلاع';
 $string['goodanswer'] = '(الإجابة الصحيحة)';
 $string['noaddChoice'] = 'ليس بالإمكان إضافة المزيد من الخيارات';
 $string['question'] = 'الأسئلة';

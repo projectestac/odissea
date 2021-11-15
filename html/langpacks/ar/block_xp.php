@@ -28,6 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addinstructions'] = 'إضافة المزيد من المعلومات';
 $string['cachedef_ruleevent_eventslist'] = 'قائمة بعض الأحداث';
 $string['cannotshowblockconfig'] = 'أقوم عادة بعرض إعدادات الظهور هنا، ولكنني لم أتمكن من العثور على كتلتك. لتغيير مظهر الكتلة، توجه إلى [هنا] ({$a}) (أو حيثما أضفت الكتلة)، قم بتشغيل وضع التحرير، واتبع خيار "التهيئة" في القائمة المنسدلة للكتلة. إن لم تجد الكتلة، أضفها إلى مساقك مجددًا.';
+$string['cannotshowblockconfigsys'] = 'سأقوم عادة بعرض إعدادات المظهر هنا، ولكنني لم أتمكن من العثور على كتلتك. قد تكون مفقودة من [front page]({$a->fp}) ومن [default dashboard] ({$a->mysys}) لمستخدميك، أو موجودة في كليهما. لتحرير الإعدادات من هنا، تأكد من كونها تظهر في واحدة منهما فقط.';
 $string['configdescription_help'] = 'وصف موجز يُعرض في الكتلة، تحت مستوى الطالب. يمتلك الطلاب إمكانية صرف الرسالة، وفي تلك الحالة، لن يشاهدوها مرة أخرى.';
 $string['configtitle'] = 'العنوان';
 $string['configtitle_help'] = 'عنوان الكتلة.';
@@ -36,6 +37,8 @@ $string['enablelevelupnotif_help'] = 'عند ضبطه على \'نعم\'، سيت
 $string['enablexpgain_help'] = 'عند جعله \'لا\'، لن يحصل أحد على نقاط في المساق. هذا مفيد لتجميد الحصصول على النقاط، أو لتمكينها في وقت معين.
 
 يرجى ملاحظة أن ذلك يمكن التحكم به على مستوى أدق باستعمال الإمكانية _block/xp:earnxp_.';
+$string['errorcontextcoursemismatchforwholesite'] = 'إن رابط صفحة <em>الترقي!</em> هذه لا تتوافق مع التهيئة الحالية للملحق. التهيئة الحالية عندك تعلن بأن <em>الترقي!</em> يُستعمل \'لكل الموقع\'، ولكن هذه الصفحة تتوقع استعماله \'حسب المساق\'. يرجى <a href="{$a->nexturl}">النقر هنا</a> للانتقال إلى الصفحة الصحيحة. إبحث عن الإعداد \'block_xp_context\' إذا أردت تغيير التهيئة الخاصة بك.';
+$string['errorcontextcoursemismatchpercourse'] = 'إن رابط صفحة <em>الترقي!</em> هذه لا تتوافق مع التهيئة الحالية للملحق. التهيئة الحالية عندك تعلن بأن <em>الترقي!</em> يُستعمل \'لكل مقرر\'، ولكن هذه الصفحة تتوقع استعماله على مستوى \'كل الموقع\'. هذا غالباً منشؤه <em>كتلة</em> أضيفت إلى لوحة التحكم أو صفحة الواجهة في أثناء تهيئة مختلفة. ينبغي عليك إزالة الكتلة من الصفحات اللاحقة، واستعمالها من داخل المقررات الدراسية الفردية فقط.';
 $string['errorformvalues'] = 'هناك بعض الأخطاء في قِيَم النموذج، يرجى إصلاحها.';
 $string['errorunknownevent'] = 'خطأ: حدث مجهول';
 $string['event_user_leveledup'] = 'مستخدم مرتبته ترقَّت';
@@ -43,6 +46,15 @@ $string['eventis'] = 'الحدث هو {$a}';
 $string['eventname'] = 'اسم الحدث';
 $string['eventproperty'] = 'خاصية الحدث';
 $string['eventsrules'] = 'قواعد الحدث';
+$string['eventsrules_help'] = 'هذا الملحق يستعمل الأحداث لمنح النقاط سمة الإجراءات التي على الطلاب القيام بها.
+يمكنك استعمال النموذج أدناه لإضافة القواعد الخاصة بك وتعديل القواعد الافتراضية.
+
+من الموصى به مراجعة صفحة وقوعات الملحق _Log_ page لمعرفة أيّ الأحداث تم تحفيزها عندما يقوم الطلاب بإجراءات في المساق.
+
+موارد إضافية:
+
+- [كيفية احتساب نقاط الخبرة](https://levelup.plus/docs/article/how-are-experience-points-calculated?ref=blockxp_help)
+- [قواعد تشخيص المشاكل](https://levelup.plus/docs/article/event-rule-not-working?ref=blockxp_help)';
 $string['eventtime'] = 'وقت الحدث';
 $string['for1day'] = 'ليوم واحد';
 $string['for3days'] = 'لثلاثة أيام';
@@ -57,6 +69,7 @@ $string['nologsrecordedyet'] = 'لم يتم توثيق سجلات الوقوعا
 $string['participant'] = 'المشارك';
 $string['perpagecolon'] = 'لكل صفحة:';
 $string['privacy:metadata:log:eventname'] = 'اسم الحدث';
+$string['privacy:metadata:prefladderpagesize'] = 'حجم الصفحة المفضل للمستخدم عند معاينة السُّلم';
 $string['privacy:path:logs'] = 'سجلات الوقوعات';
 $string['property:eventname'] = 'اسم الحدث';
 $string['ruleevent'] = 'حدث مُعيَّن';

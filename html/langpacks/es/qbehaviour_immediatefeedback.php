@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Sin finalizar';
 $string['pluginname'] = 'Retroalimentación inmediata';
+$string['privacy:metadata'] = 'El complemento de comportamiento de preguntas de comentarios inmediatos no almacena ningún dato personal.';

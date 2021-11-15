@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Saknar beteende';
-$string['privacy:metadata'] = 'Pluginmodulen för frågebeteendet Saknar beteende lagrar ingen personlig information,';
+$string['privacy:metadata'] = 'Pluginmodulen för frågebeteendet Saknar beteende lagrar ingen personinformation.';
 $string['questionusedunknownmodel'] = 'Denna fråga försökte besvaras med ett beteende som inte är tillgängligt för närvarande. Frågan visas så bra som möjligt, men vissa delar kan saknas eller vara felaktiga.';

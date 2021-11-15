@@ -88,7 +88,7 @@ $string['check_passwordpolicy_details'] = '<p>Det rekommenderas att en lösenord
 $string['check_passwordpolicy_error'] = 'Lösenordsprincip ej konfigurerad.';
 $string['check_passwordpolicy_name'] = 'Lösenordspolicy';
 $string['check_passwordpolicy_ok'] = 'Lösenordspolicy är aktiverad.';
-$string['check_preventexecpath_details'] = '<p>Att tillåta att sökvägar till körbara program anges via administratörsgränssnittet är en vektor för privilegieskalering. Detta måste tvingas i config.php:</p><p><code>$CFG->preventexecpath = true;<code></p>';
+$string['check_preventexecpath_details'] = '<p>Att tillåta att sökvägar till körbara program anges via administratörsgränssnittet är en vektor för privilegieskalering. Detta måste tvingas i config.php:</p><p><code>$CFG->preventexecpath = true;</code></p>';
 $string['check_preventexecpath_name'] = 'Sökvägar till programfiler';
 $string['check_preventexecpath_ok'] = 'Sökvägar till körbara filer är endast möjliga att ange i config.php.';
 $string['check_preventexecpath_warning'] = 'Sökvägar till körbara filer kan anges via administratörsgränssnittet.';
@@ -99,13 +99,13 @@ $string['check_riskadmin_detailsok'] = '<p>Vänligen verifiera följande lista �
 $string['check_riskadmin_detailswarning'] = '<p>Vänligen verifiera följande lista över systemadministratörer:</p>{$a->admins}
 <p>Det rekommenderas att endast tilldela administratörsroll i systemetskontexten. Följande användare har administratörsrolltilldelningar (som inte stöds) i andra kontext:</p>{$a->unsupported}';
 $string['check_riskadmin_name'] = 'Administratörer';
-$string['check_riskadmin_ok'] = 'Hittade {$a} serveradministratörer(er)';
+$string['check_riskadmin_ok'] = 'Hittade {$a} serveradministratörer';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) granska rolltilldelning</a>';
 $string['check_riskadmin_warning'] = 'Hittade {$a->admincount} serveradministratörer och {$a->unsupcount} administratörsrolltilldelningar som inte stöds.';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Det här aktiva åsidosättningar ger användare möjlighet att inkludera användardata i säkerhetskopior. Vänligen försäkra dig om att denna behörighet är nödvändig.</p> {$a}';
 $string['check_riskbackup_details_systemroles'] = '<p>Följande systemroller tillåter för närvarande användare att inkludera användardata i säkerhetskopior. Vänligen försäkra dig om att denna behörighet är nödvändig.</p> {$a}';
 $string['check_riskbackup_details_users'] = '<p>På grund av ovanstående roller eller lokala åsidosättningar har följande användarkonton för närvarande behörighet att göra säkerhetskopior som innehåller privata data från alla användare som registrerats i deras kurs. Kontrollera att de är (a) betrodda och (b) skyddas av starka lösenord:</p> {$a}';
-$string['check_riskbackup_detailsok'] = 'Inga roller tillåter uttryckligen säkerhetskopiering av användardata.  Observera dock att administratörer med "göraallt"-behörighet är fortfarande sannolikt kan göra detta.';
+$string['check_riskbackup_detailsok'] = 'Inga roller tillåter uttryckligen säkerhetskopiering av användardata. Tänk dock på att administratörer med behörighet "att göra allt" sannolikt kan göra detta ändå.';
 $string['check_riskbackup_editoverride'] = '<a href="{$a->url}">{$a->name} i {$a->contextname}</a>';
 $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Säkerhetskopiera användardata';
@@ -134,6 +134,6 @@ $string['details'] = 'Detaljer';
 $string['eventreportviewed'] = 'Visade säkerhetsrapport';
 $string['issue'] = 'Problem';
 $string['pluginname'] = 'Säkerhetsöversikt';
-$string['privacy:metadata'] = 'Pluginmodulen Säkerhetsöversikt lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Säkerhetsöversikt lagrar ingen personinformation.';
 $string['security:view'] = 'Visa säkerhetsrapport';
 $string['timewarning'] = 'Databearbetningen kan ta tid, ha tålamod...';

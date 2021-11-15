@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['numberdiscussions'] = 'Número de discussões';
 $string['numberdiscussions_help'] = 'Esta configuração especifica quantas discussões devem ser exibidas.';
 $string['pluginname'] = 'Formato Social';
-$string['privacy:metadata'] = 'O módulo formato social não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo Formato Social não armazena quaisquer dados pessoais.';
 $string['sectionname'] = 'secção';

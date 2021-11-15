@@ -73,7 +73,7 @@ $string['lang'] = 'Hizkuntza';
 $string['lap'] = 'Itzulien arteko denbora-tartea';
 $string['lap_help'] = 'Bezeroaren eta zerbitzariaren arteko transakzioetarako uzten den denbora (segundotan)';
 $string['lastaccess'] = 'Azken sarrera';
-$string['maxattempts'] = 'Gehienezko saiakera-kopurua';
+$string['maxattempts'] = 'Gehieneko saiakera-kopurua';
 $string['maxgrade'] = 'Lortu beharreko jarduera/puntuazioa';
 $string['modulename'] = 'JClic';
 $string['modulename_help'] = '<a href="http://clic.xtec.cat" target="_blank">JClic</a> Kataluniako Generalitateko Hezkuntza Sailaren proiektua da.
@@ -83,7 +83,7 @@ Gainera, <a href="http://clic.xtec.cat/db/listact_ca.jsp" target="_blank">zonaCl
 Modulu honen bitartez irakasleek JClic motako edozein jarduera gehi dezakete ikastaro batean eta baita ikasle bakoitzak lortutako emaitzak eskuratu ere (jardueran emandako denbora, saiakerak, asmatutakoak, e.a.).';
 $string['modulenameplural'] = 'JClic';
 $string['msg_noattempts'] = 'Jarduera hau ahal zen aldi guztietan egin duzu';
-$string['msg_nosessions'] = 'Jarduera honetarako gehienezko saiakera-kopurua gainditu duzu';
+$string['msg_nosessions'] = 'Jarduera honetarako gehieneko saiakera-kopurua gainditu duzu';
 $string['notopenyet'] = 'Barkatu, jarduera hau  ez da {$a} datara arte  eskuragarri egongo';
 $string['pluginadministration'] = 'JClic-en kudeaketa';
 $string['pluginjs'] = 'JClic pluginaren js fitxategiaren URLa';

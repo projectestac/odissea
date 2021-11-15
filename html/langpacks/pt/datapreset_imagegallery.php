@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['modulename'] = 'Galeria de imagens';
 $string['pluginname'] = 'Galeria de imagens';
-$string['privacy:metadata'] = 'O módulo Galeria de imagens não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Galeria de imagens não armazena quaisquer dados pessoais.';

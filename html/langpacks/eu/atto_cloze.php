@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Cloze editorea';
+$string['pluginname'] = 'Txertatutako erantzunen (Cloze) editorea';
+$string['privacy:metadata'] = 'Txertatutako erantzunen (Cloze) editorea Atto-rako pluginak ez du datu pertsonalik biltzen.';

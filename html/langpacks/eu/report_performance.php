@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['check_backup'] = 'Segurtasun-kopia automatizatua';
-$string['check_backup_comment_disable'] = 'Errendimendua kaltetua izan daiteke segurtasun-kopia egin bitartean. Gaituz gero, segurtasun-kopiak trafiko gehienezko denbora-tarteetatik kanpo programatu behar lirateke.';
-$string['check_backup_comment_enable'] = 'Errendimendua kaltetua izan daiteke segutasun-kopia egin bitartean. Segurtasun-kopiak trafiko gehienezko denbora-tarteetatik kanpo programatu behar lirateke.';
+$string['check_backup_comment_disable'] = 'Errendimendua kaltetua izan daiteke segurtasun-kopia egin bitartean. Gaituz gero, segurtasun-kopiak trafiko gehieneko denbora-tarteetatik kanpo programatu behar lirateke.';
+$string['check_backup_comment_enable'] = 'Errendimendua kaltetua izan daiteke segurtasun-kopia egin bitartean. Segurtasun-kopiak trafiko gehieneko denbora-tarteetatik kanpo programatu behar lirateke.';
 $string['check_backup_details'] = 'Segurtasun-kopia automatizatuak gaituz gero, zerbitzarian ikastaro guztien fitxategiak sortuko dira zuk zehaztutako orduan. <p>Prozesuak dirauen bitartean, zerbitzariko baliabide gehiago kontsumituko dira eta horrek eragina izan dezake errendimenduan.</p>';
 $string['check_cachejs_comment_disable'] = 'Gaituz gero, orriak kargatzeko errendimendua hobetzen da';
 $string['check_cachejs_comment_enable'] = 'Desgaituz gero, orria astiro karga daiteke.';

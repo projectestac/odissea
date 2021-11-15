@@ -32,7 +32,7 @@ $string['answercolon'] = 'Respuesta:';
 $string['answererror'] = 'Error';
 $string['answermustbenumberorstar'] = 'La respuesta debe ser un número, por ejemplo -1.234 o 3e8, o \'*\'.';
 $string['answerno'] = 'Respuesta {$a}';
-$string['decfractionofquestiongrade'] = 'como fracción decimal (0-1) de la calificación de de la pregunta';
+$string['decfractionofquestiongrade'] = 'como fracción decimal (0-1) de la calificación de la pregunta';
 $string['decfractionofresponsegrade'] = 'como fracción decimal (0-1) de la calificación de la respuesta';
 $string['decimalformat'] = 'decimales';
 $string['editableunittext'] = 'el elemento de texto introducido';
@@ -65,7 +65,14 @@ $string['pluginname_help'] = 'Desde la perspectiva del alumno, una pregunta num�
 $string['pluginnameadding'] = 'Agregando una pregunta numérica';
 $string['pluginnameediting'] = 'Editando una pregunta numérica';
 $string['pluginnamesummary'] = 'Permite una respuesta numérica (con posibilidad de especificar las unidades) que es calificada comparándola con distintas respuestas modelo (es posible incluir márgenes de tolerancia).';
-$string['privacy:metadata'] = 'El tipo de pregunta Numérica no almacena ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento de tipo de pregunta Numérica no almacena ningún dato personal.';
+$string['privacy:preference:defaultmark'] = 'La puntuación predeterminada establecida para una pregunta determinada.';
+$string['privacy:preference:multichoicedisplay'] = 'Si las unidades se muestran como elementos de entrada de texto, selección de opción múltiple o menú desplegable.';
+$string['privacy:preference:penalty'] = 'La penalización por cada intento incorrecto cuando las preguntas se ejecutan utilizando el comportamiento \'Interactivo con múltiples intentos\' o \'Modo adaptativo\'.';
+$string['privacy:preference:unitgradingtypes'] = 'Si la penalización por unidad se aplica como una fracción (0-1) de la calificación de la respuesta o de la calificación de la pregunta.';
+$string['privacy:preference:unitpenalty'] = '¿Qué fracción (0-1) de la calificación de respuesta o calificación de la pregunta debe aplicarse?';
+$string['privacy:preference:unitrole'] = 'Si la unidad es esencial, opcional o no esperada.';
+$string['privacy:preference:unitsleft'] = 'Si la unidad se muestra a la izquierda (p. ej. $, £) o a la derecha (p. ej. kg, km, cm).';
 $string['relative'] = 'Relativa';
 $string['rightexample'] = 'a la derecha, por ejemplo 1.00cm o 1.00km';
 $string['selectunit'] = 'Seleccione una unidad';
@@ -90,8 +97,9 @@ $string['unitoptional_help'] = '* Si el campo de unidad no está vacío, la resp
 * Si la unidad está mal escrita o es desconocida la respuesta será considerada como no válida.';
 $string['unitpenalty'] = 'Penalización de unidad';
 $string['unitpenalty_help'] = 'La penalización se aplica si
-* Se escribe un nombre de unidad sin definir en el campo de respuesta-unidad o
-* Se escribe un nombre de unidad en el campo de respuesta-numérica';
+
+* se escribe un nombre de unidad incorrecto en el campo de unidad, o
+* se escribe una unidad en el cuadro de entrada de valores';
 $string['unitposition'] = 'Posición de unidad';
 $string['units'] = 'Unidades';
 $string['unitselect'] = 'menú emergente';

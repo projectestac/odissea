@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Resultados del cuestionario (desactivado)';
+$string['privacy:metadata'] = 'El bloque de resultados de cuestionario solo muestra información almacenada en otros lugares.';
 $string['quiz_results:addinstance'] = 'Añadir un nuevo bloque de resultado del cuestionario';

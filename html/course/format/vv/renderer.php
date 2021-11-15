@@ -226,7 +226,7 @@ class format_vv_renderer extends format_topics_renderer {
             $url = new moodle_url('/course/editsection.php', array('id' => $section->id, 'sr' => $sectionreturn));
             $edit .= html_writer::start_tag('span', array('class' => 'commands'));
             if ($section->section != 0) {
-                $controls = $this->section_edit_controls($course, $section, $onsectionpage);
+                $controls = $this->section_edit_control_items($course, $section, $onsectionpage);
                 if (!empty($controls)) {
                     $edit .= implode('', $controls);
                 }
@@ -287,7 +287,7 @@ class format_vv_renderer extends format_topics_renderer {
      * @param bool $onsectionpage true if being printed on a section page
      * @return array of links with edit controls
      */
-    protected function section_edit_controls($course, $section, $onsectionpage = false) {
+    protected function section_edit_control_items($course, $section, $onsectionpage = false) {
         if (!$this->page->user_is_editing()) {
             return array();
         }

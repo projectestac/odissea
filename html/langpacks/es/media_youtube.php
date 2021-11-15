@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'YouTube';
-$string['pluginname_help'] = 'Sitio de compartición de vídeo de Youtube, video y enlaces a la lista de reproducción soportados';
+$string['pluginname_help'] = 'El sitio web para compartir videos youtube.com. Se admiten enlaces de video y listas de reproducción.';
+$string['privacy:metadata'] = 'El complemento de medios de Youtube no almacena ningún dato personal.';
 $string['supportsplaylist'] = 'Lista de reproducción de YouTube';
 $string['supportsvideo'] = 'Videos de YouTube';

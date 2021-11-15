@@ -28,5 +28,9 @@ class com_wiris_quizzes_api_ConfigurationKeys {
 	static $VERSION = "quizzes.version";
 	static $DEPLOYMENT_ID = "quizzes.deployment.id";
 	static $LICENSE_ID = "quizzes.license.id";
+	static $TELEMETRY_URL = "quizzes.telemetry.url";
+	static $TELEMETRY_TOKEN = "quizzes.telemetry.token";
+	static $QUIZZES_LOGGING_LEVEL = "quizzes.logging.level";
+	static $QUIZZES_TRACKING_ENABLED = "quizzes.tracking.enabled";
 	function __toString() { return 'com.wiris.quizzes.api.ConfigurationKeys'; }
 }

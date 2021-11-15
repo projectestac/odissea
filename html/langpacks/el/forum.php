@@ -536,10 +536,13 @@ $string['postbymailsuccess_html'] = 'Η απάντησή σας <a href="{$a->di
 $string['postbyuser'] = '«{$a->post}» από «{$a->user}»';
 $string['postincontext'] = 'Δείτε αυτήν την ανάρτηση στα συμφραζόμενά της';
 $string['postisprivatereply'] = 'Αυτή η ανάρτηση είναι ιδιωτική. Δεν είναι ορατή σε άλλους χρήστες.';
+$string['postmailinfo'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που δημοσιεύτηκε εκεί:
+ {$a}';
 $string['postmailinfolink'] = 'Αυτό είναι ένα αντίγραφο ενός μηνύματος που αναρτήθηκε στο {$a->coursename}.
 
 Για να απαντήσετε, πατήστε σε αυτόν το σύνδεσμο: {$a->replylink}';
 $string['postmailnow'] = '<p> Αυτή η ανάρτηση θα αποσταλεί αμέσως με ηλε.ταχυδρομείο σε όλους τους εγγεγραμμένους στο φόρουμ.</p>';
+$string['postmailreply'] = 'Για να απαντήσετε κάντε κλικ σε αυτόν τον σύνδεσμο: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'Δείχνει περισσότερο ξεχωριστή γνώση';
 $string['postrating2'] = 'Ξεχωριστή και συνδεδεμένη';

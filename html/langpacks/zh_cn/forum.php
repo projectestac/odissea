@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actionsforgraderinterface'] = '评分人界面的操作';
 $string['actionsforpost'] = '帖子操作';
+$string['activitydate:due'] = '到期日：';
 $string['activityoverview'] = '有新帖';
 $string['addanewdiscussion'] = '添加一个新话题';
 $string['addanewquestion'] = '添加一个新问题';
@@ -107,6 +108,9 @@ $string['clicktounlockdiscussion'] = '点击解锁此话题。';
 $string['clicktounsubscribe'] = '您已订阅此话题。点击退订';
 $string['close'] = '关闭';
 $string['closegrader'] = '关闭评分人';
+$string['completiondetail:discussions'] = 'due date:';
+$string['completiondetail:posts'] = '发表论坛帖子：{$a}';
+$string['completiondetail:replies'] = '发布回复：{$a}';
 $string['completiondiscussions'] = '学生必须开启话题：';
 $string['completiondiscussionsdesc'] = '学生必须至少开启{$a}个话题';
 $string['completiondiscussionsgroup'] = '需要开启话题';
@@ -532,10 +536,14 @@ $string['postbymailsuccess_html'] = '您的回复 <a href="{$a->discussionurl}">
 $string['postbyuser'] = '{$a->user}的{$a->post}';
 $string['postincontext'] = '在场景中看此帖';
 $string['postisprivatereply'] = '这是私人回复。其他参与人不可见。';
+$string['postmailinfo'] = '这是一份来自网站 {$a} 的帖子。
+
+点击此链接回复：';
 $string['postmailinfolink'] = '这是发表在课程{$a->coursename}的消息的副本。
 
 若要回复，请点击链接：{$a->replylink}';
 $string['postmailnow'] = '<p>此帖子将立即邮寄给所有讨论区订阅者。</ p>';
+$string['postmailreply'] = '要回复，请单击此链接：{$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = '极端独立型';
 $string['postrating2'] = '独立型与情景型兼备';

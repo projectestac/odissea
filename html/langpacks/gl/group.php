@@ -45,6 +45,7 @@ $string['creategrouping'] = 'Crear agrupamento';
 $string['creategroupinselectedgrouping'] = 'Crear grupo en agrupamento';
 $string['createingrouping'] = 'Crear en agrupamento';
 $string['createorphangroup'] = 'Crear un grupo orfo';
+$string['csvdelimiter'] = 'Delimitador CSV';
 $string['databaseupgradegroups'] = 'A versión dos grupos agora é a {$a}';
 $string['defaultgrouping'] = 'Agrupamento predeterminado:';
 $string['defaultgroupingname'] = 'Agrupamento';
@@ -61,6 +62,7 @@ $string['editgroupsettings'] = 'Editar os axustes de grupo';
 $string['editusersgroupsa'] = 'Editar grupos para «{$a}»';
 $string['enablemessaging'] = 'Mensaxería en grupo';
 $string['enablemessaging_help'] = 'Se está activado, os membros do grupo poden enviar mensaxes aos demais do seu grupo a través do caixón de mensaxería.';
+$string['encoding'] = 'Codificación';
 $string['enrolmentkey'] = 'Chave de matriculación';
 $string['enrolmentkey_help'] = 'Unha chave de matriculación permite que o acceso ao curso estea limitado só a aquelas persoas que coñecen a chave. De especificarse unha chave de matriculación de grupo, entón dita chave non só permitirá aos usuarios acceder ao curso, senón que faraos membros do grupo.
 

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo numérico';
 $string['pluginname'] = 'Número';
+$string['privacy:metadata'] = 'El componente de campo de número no almacena ningún dato personal, utiliza tabla definidas en mod_data.';

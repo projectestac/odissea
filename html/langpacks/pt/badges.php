@@ -58,7 +58,7 @@ $string['allmethodcourseset'] = 'Todas as disciplinas selecionadas estão conclu
 $string['allmethodmanual'] = 'Todos os papéis selecionados atribuírem a medalha';
 $string['allmethodprofile'] = 'Todos os campos de perfil selecionados foram completados';
 $string['allowcoursebadges'] = 'Ativar medalhas na disciplina';
-$string['allowcoursebadges_desc'] = 'Permitir que as medalhas sejam criadas e atribuídas no contexto da disciplina';
+$string['allowcoursebadges_desc'] = 'Permitir que as medalhas sejam criadas e atribuídas no contexto da disciplina.';
 $string['allowexternalbackpack'] = 'Ligação a backpacks externas';
 $string['allowexternalbackpack_desc'] = 'Se ativar esta opção, os utilizadores poderão ligarem-se a uma backpack externa e partilhar as suas medalhas a partir deste site. Os utilizadores também podem optar por mostrar, na  sua página de perfil neste site, quaisquer coleções de medalhas públicas da sua backpack externa. Recomenda-se que deixe esta opção desativada se o seu site não estiver acessível a partir da Internet.';
 $string['any'] = 'Qualquer uma';
@@ -75,7 +75,7 @@ $string['archivebadge'] = 'Pretende apagar a medalha \'{$a}\' mas manter as meda
 $string['archiveconfirm'] = 'Apagar e manter as medalhas existentes que foram emitidas';
 $string['archivehelp'] = '<p>Esta opção significa que a medalha será marcada como "retirada" e já não aparecerá na lista de medalhas. Os utilizadores deixarão de poder obter esta medalha, no entanto, os que já foram condecorados com a medalha continuarão a poder exibir esta medalha na sua página de perfil e nas suas backpacks externas.</p><p>Se pretende que os utilizadores mantenham o acesso às medalhas recebidas, é importante selecionar esta opção em vez de apagar definitivamente as medalhas.</p>';
 $string['attachment'] = 'Anexar a medalha à mensagem';
-$string['attachment_help'] = 'Se ativar esta opção, a medalha emitida será anexada ao e-mail para que os condecorados a possam descarregar. (Para usar esta opção, os anexos de e-mail devem estar ativos na configuração em Administração do Site / Servidor / E-mail / Configuração de e-mail de saída / Permitir anexos.)';
+$string['attachment_help'] = 'Se ativar esta opção, a medalha emitida será anexada ao e-mail para que os condecorados a possam descarregar. (Para usar esta opção, os anexos de e-mail devem estar ativos na configuração em Administração do Site / Servidor / E-mail / Configuração do envio de e-mails / Permitir anexos.)';
 $string['award'] = 'Atribuir medalha';
 $string['awardedtoyou'] = 'Atribuídas a mim';
 $string['awardoncron'] = 'O acesso às medalhas foi ativado com sucesso. Esta medalha pode ser ganha por um grande número de utilizadores. Para assegurar o desempenho do site, esta ação levará algum tempo a processar.';
@@ -135,14 +135,12 @@ $string['backpackimport_help'] = 'Depois de estabelecer com sucesso a ligação 
 
 Nesta área, pode selecionar as coleções de medalhas da sua backpack que gostaria de mostrar no seu perfil.';
 $string['backpackneedsupdate'] = 'A backpack ligada a este perfil não corresponde à backpack do site. Tem de terminar sessão e voltar a ligar-se à backpack.';
-$string['backpackprovider'] = 'Fornecedor de backpack';
+$string['backpackprovider'] = 'Fornecedor da backpack';
 $string['backpacksettings'] = 'Configurações da backpack';
 $string['backpackweburl'] = 'URL da backpack';
 $string['badgedetails'] = 'Detalhes da medalha';
 $string['badgeimage'] = 'Imagem';
-$string['badgeimage_help'] = 'Imagem que será usada quando esta medalha for emitida.
-
-Para adicionar uma nova imagem, procure e selecione uma imagem (formato JPG ou PNG) e clique em "Guardar alterações". Para cumprir com os requisitos de imagem das medalhas, a imagem será redimensionada e recortada para ter forma quadrada.';
+$string['badgeimage_help'] = 'A imagem deve ter pelo menos 300 x 300 píxeis de tamanho. Será exibida como 300 x 300 píxeis na página da medalha e 100 x 100 píxeis na página de perfil do utilizador.';
 $string['badgeprivacysetting'] = 'Configurações da privacidade da medalha';
 $string['badgeprivacysetting_help'] = 'As medalhas que receber podem ser exibidas na página do seu perfil. Esta configuração permite-lhe definir automaticamente a visibilidade das medalhas recebidas recentemente.
 
@@ -496,7 +494,7 @@ $string['recipientvalidationproblem'] = 'Não é possível verificar este utiliz
 $string['relatedbages'] = 'Medalhas relacionadas';
 $string['relative'] = 'Data relativa';
 $string['requiredbadge'] = 'Deve ser adicionada pelo menos uma medalha ao critério medalha.';
-$string['requiredcohort'] = 'Deve ser adicionado pelo menos um grupo global ao critério grupo global.';
+$string['requiredcohort'] = 'Deve ser adicionado pelo menos um Grupo global ao critério grupo Global.';
 $string['requiredcompetency'] = 'Deve ser adicionada pelo menos uma competência ao critério de competência.';
 $string['requiredcourse'] = 'Deve ser adicionada pelo menos uma disciplina ao critério disciplina.';
 $string['reviewbadge'] = 'Alterações no acesso à medalha';
@@ -506,7 +504,7 @@ $string['reviewconfirm'] = '<p>Se continuar, esta medalha ficará visível para 
 
 <p>Assim que uma medalha for emitida, esta será <strong>bloqueada</strong> - algumas configurações, incluindo os critérios e as configurações da data de validade, não poderão ser alteradas.</p>
 
-<p>Tem a certeza de que pretende ativar o acesso à medalha {$a}? </p>';
+<p>Tem a certeza de que pretende ativar o acesso à medalha \'{$a}\'? </p>';
 $string['revoke'] = 'Revogar medalha';
 $string['save'] = 'Guardar';
 $string['searchname'] = 'Pesquisar por nome';
