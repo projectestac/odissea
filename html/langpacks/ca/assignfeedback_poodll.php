@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['default_help'] = 'Si s\'habilita, aquest mètode de retroacció s\'habilitarà per defecte per a totes les tasques noves.';
 $string['deletefeedback'] = 'Suprimeix aquesta retroacció.';
 $string['downloadfile'] = '[descarrega el fitxer]';
+$string['replymp3voice'] = 'Enregistrador d\'àudio';
 $string['yes'] = 'sí';

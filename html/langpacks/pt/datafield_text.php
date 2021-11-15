@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo texto';
 $string['pluginname'] = 'Texto';
-$string['privacy:metadata'] = 'A componente Campo texto não armazena dados pessoais, usa tabelas definidas em mod_data.';
+$string['privacy:metadata'] = 'O componente do campo Texto não armazena dados pessoais, usa tabelas definidas em mod_data.';

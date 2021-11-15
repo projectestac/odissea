@@ -26,30 +26,39 @@ if ($ADMIN->fulltree) {
 
     $settings->add(new courses_vicensvives_setting_wscheck());
 
-    $setting = new admin_setting_configtext('vicensvives_apiurl',
-            get_string('apiurl', 'block_courses_vicensvives'), get_string('configapiurl', 'block_courses_vicensvives'),
-            vicensvives_ws::WS_URL, PARAM_URL);
+
+    $name = get_string('apiurl', 'block_courses_vicensvives');
+    $desc = get_string('configapiurl', 'block_courses_vicensvives');
+    $default = vicensvives_ws::WS_URL;
+    $setting = new admin_setting_configtext('vicensvives_apiurl', $name, $desc, $default, PARAM_URL);
     $setting->set_updatedcallback('vicensvives_reset_token');
     $settings->add($setting);
 
-    $setting = new admin_setting_configpasswordunmask('vicensvives_sharekey',
-            get_string('sharekey', 'block_courses_vicensvives'), get_string('configsharekey', 'block_courses_vicensvives'), '');
+    $default = '';
+    $name = get_string('sharekey', 'block_courses_vicensvives');
+    $desc = get_string('configsharekey', 'block_courses_vicensvives');
+    $setting = new admin_setting_configpasswordunmask('vicensvives_sharekey', $name, $desc, $default);
     $setting->set_updatedcallback('vicensvives_reset_token');
     $settings->add($setting);
 
-    $setting = new admin_setting_configpasswordunmask('vicensvives_sharepass',
-            get_string('sharepass', 'block_courses_vicensvives'), get_string('configsharepass', 'block_courses_vicensvives'), '');
+    $name = get_string('sharepass', 'block_courses_vicensvives');
+    $desc = get_string('configsharepass', 'block_courses_vicensvives');
+    $setting = new admin_setting_configpasswordunmask('vicensvives_sharepass', $name, $desc, $default);
     $setting->set_updatedcallback('vicensvives_reset_token');
     $settings->add($setting);
 
+    $name = get_string('maxcourses', 'block_courses_vicensvives');
+    $desc = get_string('configmaxcourses', 'block_courses_vicensvives');
+    $default = 10;
     $selectnum = range(0, 100);
-    $settings->add( new admin_setting_configselect('block_courses_vicensvives_maxcourses',
-            get_string('maxcourses', 'block_courses_vicensvives'),
-            get_string('configmaxcourses', 'block_courses_vicensvives'), 10, $selectnum));
+    $setting = new admin_setting_configselect('block_courses_vicensvives_maxcourses', $name, $desc, $default, $selectnum);
+    $settings->add($setting);
 
-    $settings->add(new admin_settings_coursecat_select('block_courses_vicensvives_defaultcategory',
-            get_string('defaultcategory', 'block_courses_vicensvives'),
-            get_string('configdefaultcategory', 'block_courses_vicensvives'), 1));
+    $name = get_string('defaultcategory', 'block_courses_vicensvives');
+    $desc = get_string('configdefaultcategory', 'block_courses_vicensvives');
+    $default = 1;
+    $setting = new admin_settings_coursecat_select('block_courses_vicensvives_defaultcategory', $name, $desc, $default);
+    $settings->add($setting);
 
     $settings->add(new courses_vicensvives_setting_moodlews());
 }

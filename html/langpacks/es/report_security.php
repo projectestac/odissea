@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['check_configrw_details'] = '<p>Se recomienda que los permisos del archivo config.php se cambien después de la instalación para que este archivo no sea modificado por el servidor web.
-Tenga en cuenta que esta medida no mejora la seguridad del servidor de forma significativa, pero si puede retrasar o limitar "exploits" comunes.</p>';
+$string['check_configrw_details'] = '<p>Se recomienda que los permisos del archivo <code>config.php</code> se cambien después de la instalación para que este archivo no sea modificado por el servidor web.
+Por favor tenga en cuenta que esta medida no mejora la seguridad del servidor de forma significativa, pero si puede ralentizar o limitar vulnerabilidades comunes.</p>';
 $string['check_configrw_name'] = 'Archivo config.php escribible';
 $string['check_configrw_ok'] = 'El archivo config.php no puede ser modificado por scripts PHP.';
 $string['check_configrw_warning'] = 'Los scripts PHP pueden modificar el archivo config.php.';
@@ -46,10 +46,12 @@ $string['check_defaultuserrole_error'] = 'El rol default para el usuario "{$a}" 
 $string['check_defaultuserrole_name'] = 'Rol por defecto de todos los usuarios';
 $string['check_defaultuserrole_notset'] = 'No se ha determinado el rol por defecto';
 $string['check_defaultuserrole_ok'] = 'El rol por defecto para todas las definiciones de usuarios es correcto.';
+$string['check_dirindex_info'] = 'El índice de directorio no debe estar habilitado';
 $string['check_displayerrors_details'] = '<p>No se recomienda habilitar la configuración PHP  <code>display_errors</code> en sitios de producción porque los mensajes de error pueden revelar información sensible sobre su servidor.</p>';
 $string['check_displayerrors_error'] = 'La configuración de PHP para mostrar los errores está habilitada. Se recomienda que esta esté deshabilitada.';
 $string['check_displayerrors_name'] = 'Visualización de errores de PHP';
 $string['check_displayerrors_ok'] = 'Visualización de errores de PHP deshabilitados';
+$string['check_dotfiles_info'] = 'Todos los archivos ocultos (empiezan por ".") excepto /.well-known/* no deberían ser públicos';
 $string['check_emailchangeconfirmation_details'] = '<p>Se recomienda utilizar un paso de confirmación por email cuando los usuarios cambian la dirección de correo electrónico de su perfil. Si se deshabilita, los spammers pueden tratar de explotar el servidor para mandar correo basura (spam).</p> <p>También se puede bloquear el campo de correo electrónico en la extensión de identificación, aunque aquí no se considera esta posibilidad.</p>';
 $string['check_emailchangeconfirmation_error'] = 'Los usuarios pueden introducir cualquier dirección de correo electrónico.';
 $string['check_emailchangeconfirmation_info'] = 'Los usuarios solo pueden introducir direcciones de correo electrónico de los dominios permitidos.';
@@ -78,7 +80,7 @@ $string['check_mediafilterswf_ok'] = 'El filtro para archivos multimedia Flash n
 $string['check_nodemodules_details'] = '<p>El directorio <code>{$a->path}</code> contiene módulos Node.js y sus dependencias, típicamente instalados por la utilidad NPM. Estos módulos podrían ser necesarios para el desarrollo local de Moodle, como por ejemplo al usar el framework grunt. No son necesarios para correr un sitio Moodle y podrían contener código potencialmente peligroso que exponga su sitio a ataques remotos.</p><p>Se recomienda encarecidamente que quite el directorio si el sitio está disponible vía una URL pública, o cuando menos que prohíba el acceso web a él en su configuración del servidor web.</p>';
 $string['check_nodemodules_info'] = 'El directorio node_modules no debería estar presente en sitios públicos.';
 $string['check_nodemodules_name'] = 'Directorio de módulos Node.js';
-$string['check_openprofiles_details'] = '<p>Los perfiles de usuario abiertos pueden ser explotados por spammers. Se recomienda que haga una de dos acciones: Habilitar <code>Forzar a los usuarios a que se identifiquen para ver perfiles</code> o  Habilitar <code>Forzar usuarios a identificarse.</p>';
+$string['check_openprofiles_details'] = 'Los perfiles de usuario abiertos pueden ser explotados por spammers. Se recomienda que habilite una de estas dos opciones: <code>Forzar a los usuarios a que se identifiquen para ver perfiles</code> o  <code>Forzar a los usuarios a identificarse</code>.';
 $string['check_openprofiles_error'] = 'Cualquier persona puede ver los perfiles de usuarios sin autenticarse';
 $string['check_openprofiles_name'] = 'Abrir perfiles de usuario';
 $string['check_openprofiles_ok'] = 'Se requiere identificación antes de ver los perfiles de usuario.';
@@ -91,6 +93,9 @@ $string['check_preventexecpath_details'] = '<p>El permitir que las rutas hacia l
 $string['check_preventexecpath_name'] = 'Rutas hacia ejecutables';
 $string['check_preventexecpath_ok'] = 'Las rutas hacia ejecutables solamente son configurables en config.php.';
 $string['check_preventexecpath_warning'] = 'Las rutas hacia ejecutables pueden configurarse en la Interfaz Gráfica del Usuario Administrador.';
+$string['check_publicpaths_403'] = '(Devolvió un 403, lo ideal sería un 404)';
+$string['check_publicpaths_generic'] = '{$a} archivos no deberían ser públicos';
+$string['check_publicpaths_name'] = 'Comprobar todas las rutas públicas / privadas';
 $string['check_riskadmin_detailsok'] = '<p>Por favor, compruebe la siguiente lista de los administradores del sistema:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Por favor verifique la lista siguiente de administradores del sistema:</p>{$a->admins} <p> Se recomienda que solamente se asigne el rol de administrador en el contexto de sistema. Los siguientes usuarios tienen asignaciones de rol de administrador (no soportadas) en otros contextos:</p>{$a->unsupported}';
 $string['check_riskadmin_name'] = 'Administradores';
@@ -128,6 +133,6 @@ $string['details'] = 'Detalles';
 $string['eventreportviewed'] = 'Informe de revisión de seguridad visto';
 $string['issue'] = 'Tema';
 $string['pluginname'] = 'Información sobre seguridad';
-$string['privacy:metadata'] = 'El plugin de Vista general de seguridad no almacena ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento de Vista general de seguridad no almacena ningún dato personal.';
 $string['security:view'] = 'Ver informe de seguridad';
 $string['timewarning'] = 'El procesamiento de datos puede tardar mucho tiempo, por favor esperar...';

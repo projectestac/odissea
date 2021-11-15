@@ -49,8 +49,7 @@ $string['notitle'] = 'Sem título';
 $string['nullphotolist'] = 'Não existem fotografias nesta conta';
 $string['pluginname'] = 'Flickr Público';
 $string['pluginname_help'] = 'Repositório em flickr.com';
-$string['privacy:metadata:repository_flickr_public'] = 'O módulo repositório publico Flickr não armazena dados pessoais, mais transmite dados do utilizador do
-Moodle para o sistema remoto.';
+$string['privacy:metadata:repository_flickr_public'] = 'O módulo repositório Flickr público não armazena quaisquer dados pessoais, mas transmite dados do utilizador do Moodle para o sistema remoto.';
 $string['privacy:metadata:repository_flickr_public:author'] = 'Conteúdo de autor do repositório público Flickr';
 $string['privacy:metadata:repository_flickr_public:email_address'] = 'Endereço de e-mail do utilizador do repositório público Flickr.';
 $string['privacy:metadata:repository_flickr_public:text'] = 'Pesquisa de texto no repositório Flickr público do utilizador.';

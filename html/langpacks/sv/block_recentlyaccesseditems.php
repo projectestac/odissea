@@ -33,4 +33,4 @@ $string['privacy:metadata:courseid'] = 'Kurs som objektet hör till';
 $string['privacy:metadata:timeaccess'] = 'Tidpunkt då användaren senast använde objektet';
 $string['privacy:metadata:userid'] = 'ID för användaren som använde objektet';
 $string['privacy:recentlyaccesseditemspath'] = 'Nyligen besökta objekt';
-$string['recentlyaccesseditems:myaddinstance'] = 'Lägg till Senast använda objekt-blocket till Mitt Moodle';
+$string['recentlyaccesseditems:myaddinstance'] = 'Lägg till Senast använda objekt-blocket till översiktssidan';

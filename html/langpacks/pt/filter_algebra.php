@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = 'Expressão algébrica';
 $string['filtername'] = 'Notação algébrica';
-$string['privacy:metadata'] = 'O módulo Notação algébrica não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Notação algébrica não armazena quaisquer dados pessoais.';

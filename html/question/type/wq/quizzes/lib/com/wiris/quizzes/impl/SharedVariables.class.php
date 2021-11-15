@@ -3,8 +3,8 @@
 class com_wiris_quizzes_impl_SharedVariables {
 	public function __construct() {
 		if(!php_Boot::$skip_constructor) {
-		$this->cache = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getVariablesCache();
-		$this->locker = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getLockProvider();
+		$this->cache = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getVariablesCache();
+		$this->locker = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getLockProvider();
 	}}
 	public function getCacheKey($name) {
 		return $name . ".var";

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['admin_access_error'] = 'ليس مسموحًا لك بالوصول إلى هذه الصفحة، يرجى التواصل مع معلمك أو مشرفك: تحتاج أن تكون مقيِّم المساق لتخصيص القائمة.';
+$string['admin_access_error'] = 'ليس مسموحًا لك بالوصول إلى هذه الصفحة، يرجى التواصل مع معلمك أو مشرفك: تحتاج أن تكون مقيِّم المقرر الدراسي لتخصيص القائمة.';
 $string['adminaddtool'] = 'إضافة أداة جديدة';
 $string['adminaxisdelete_question'] = 'هل أنت متأكد من رغبتك في حذف المحور المحدد؟';
 $string['adminaxisimport_name'] = 'الاسم';
@@ -43,6 +43,7 @@ $string['delete_model_question'] = 'هل تريد حذف هذا النموذج؟
 $string['deletefeedback'] = 'حذف PDF الإفادة';
 $string['downloadablefilename'] = 'الإفادة.pdf';
 $string['downloadfeedback'] = 'تنزيل الإفادة بصيغة PDF';
+$string['errorpdfpage'] = 'وقع خطأ عند توليد هذه الصفحة.';
 $string['feedback_configuration'] = 'الإفادة: التهيئة';
 $string['generatefeedback'] = 'توليد الإفادة بصيغة PDF';
 $string['gotopage'] = 'إذهب إلى صفحة';

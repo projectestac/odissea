@@ -28,9 +28,110 @@ class qtype_multianswerwiris extends qtype_wq {
     public function save_question_options($question) {
         global $DB;
 
-        // We don't delete old subquestions because it cause
-        // a new ids on BD that throw error on regrade.
-        parent::save_question_options($question);
+        parent::save_question_options_impl($question, false);
+
+        $result = new stdClass();
+
+        // This function needs to be able to handle the case where the existing set of wrapped
+        // questions does not match the new set of wrapped questions so that some need to be
+        // created, some modified and some deleted.
+        // Unfortunately the code currently simply overwrites existing ones in sequence. This
+        // will make re-marking after a re-ordering of wrapped questions impossible and
+        // will also create difficulties if questiontype specific tables reference the id.
+
+        // First we get all the existing wrapped questions.
+        $oldwrappedquestions = [];
+        if ($oldwrappedids = $DB->get_field('question_multianswer', 'sequence',
+                array('question' => $question->id))) {
+            $oldwrappedidsarray = explode(',', $oldwrappedids);
+            $unorderedquestions = $DB->get_records_list('question', 'id', $oldwrappedidsarray);
+
+            // Keep the order as given in the sequence field.
+            foreach ($oldwrappedidsarray as $questionid) {
+                if (isset($unorderedquestions[$questionid])) {
+                    $oldwrappedquestions[] = $unorderedquestions[$questionid];
+                }
+            }
+        }
+
+        $sequence = array();
+        foreach ($question->options->questions as $wrapped) {
+            if (!empty($wrapped)) {
+                // If we still have some old wrapped question ids, reuse the next of them.
+
+                if (is_array($oldwrappedquestions) &&
+                        $oldwrappedquestion = array_shift($oldwrappedquestions)) {
+                    $wrapped->id = $oldwrappedquestion->id;
+                    if ($oldwrappedquestion->qtype != $wrapped->qtype) {
+                        switch ($oldwrappedquestion->qtype) {
+                            case 'multichoice':
+                                $DB->delete_records('qtype_multichoice_options',
+                                        array('questionid' => $oldwrappedquestion->id));
+                                break;
+                            case 'shortanswer':
+                                $DB->delete_records('qtype_shortanswer_options',
+                                        array('questionid' => $oldwrappedquestion->id));
+                                break;
+                            case 'numerical':
+                                $DB->delete_records('question_numerical',
+                                        array('question' => $oldwrappedquestion->id));
+                                break;
+                            case 'shortanswerwiris':
+                                $DB->delete_records('qtype_wq',
+                                        array('question' => $oldwrappedquestion->id));
+                                $DB->delete_records('qtype_shortanswer_options',
+                                        array('questionid' => $oldwrappedquestion->id));
+                                break;
+                            case 'multichoicewiris':
+                                $DB->delete_records('qtype_wq',
+                                        array('question' => $oldwrappedquestion->id));
+                                break;
+                            default:
+                                throw new moodle_exception('qtypenotrecognized',
+                                        'qtype_multianswer', '', $oldwrappedquestion->qtype);
+                                $wrapped->id = 0;
+                        }
+                    }
+                } else {
+                    $wrapped->id = 0;
+                }
+            }
+            $wrapped->name = $question->name;
+            $wrapped->parent = $question->id;
+            $previousid = $wrapped->id;
+            // Save_question strips this extra bit off the category again.
+            $wrapped->category = $question->category . ',1';
+            $wrapped = question_bank::get_qtype($wrapped->qtype)->save_question(
+                    $wrapped, clone($wrapped));
+            $sequence[] = $wrapped->id;
+            if ($previousid != 0 && $previousid != $wrapped->id) {
+                // For some reasons a new question has been created
+                // so delete the old one.
+                question_delete_question($previousid);
+            }
+        }
+
+        // Delete redundant wrapped questions.
+        if (is_array($oldwrappedquestions) && count($oldwrappedquestions)) {
+            foreach ($oldwrappedquestions as $oldwrappedquestion) {
+                question_delete_question($oldwrappedquestion->id);
+            }
+        }
+
+        if (!empty($sequence)) {
+            $multianswer = new stdClass();
+            $multianswer->question = $question->id;
+            $multianswer->sequence = implode(',', $sequence);
+            if ($oldid = $DB->get_field('question_multianswer', 'id',
+                    array('question' => $question->id))) {
+                $multianswer->id = $oldid;
+                $DB->update_record('question_multianswer', $multianswer);
+            } else {
+                $DB->insert_record('question_multianswer', $multianswer);
+            }
+        }
+
+        $this->save_hints($question, true);
     }
 
     public function save_question($authorizedquestion, $form) {

@@ -100,7 +100,7 @@ $string['enablexpgain'] = 'Ativar ganho de experiência (XP)';
 $string['enablexpgain_help'] = 'Quando definida como \'Não\', ninguém ganhará pontos de experiência (XP) na disciplina. Isto é útil para "congelar" a experiência ganha ou para ativar o congelamento por um certo período de tempo.
 
 Tenha em atenção que isto pode ser controlado de forma mais pormenorizada através da permissão \'block/xp:earnxp\'.';
-$string['entersearchterm'] = 'Indique o termo a procurar';
+$string['entersearchterm'] = 'Indique o termo a pesquisar';
 $string['errorcontextcoursemismatchforwholesite'] = 'O URL desta página <em>Subir de nível!</em> não corresponde à configuração atual do módulo. A sua configuração atual determina que <em>subir de nível!</em> possa ser usado \'Em todo o site\', no entanto, esta página espera que seja usado \'Por disciplina\'. Por favor, <a href="{$a->nexturl}">clique aqui</a> para ir para a página correta. Procure a configuração de administrador \'block_xp_context\' se pretender alterar a sua configuração.';
 $string['errorcontextcoursemismatchpercourse'] = 'O URL desta página <em>Subir de nível!</em> não corresponde à configuração atual do módulo. A sua configuração atual determina que <em>subir de nível!</em> seja usado \'Por disciplina\', no entanto, esta página espera que seja usado \'Em todo o site\'. Provavelmente, foi originado de um <em>bloco</em> que foi adicionado ao painel ou à primeira página numa configuração diferente. Terá de remover o bloco das últimas páginas e usá-lo apenas em disciplinas individuais.';
 $string['errorformvalues'] = 'Existem alguns erros nos valores do formulário. Por favor, corrija-os.';
@@ -288,8 +288,8 @@ $string['rulesformhelp'] = '<p>Este módulo faz uso de eventos para atribuir pon
     <li>Eventos que o nível educacional não é igual a \'<em>Participar</em>\'.</li>
 </ul>
 </p>';
-$string['searchandselectcourse'] = 'Procurar e selecionar uma disciplina';
-$string['searchandselectmodule'] = 'Procurar e selecionar uma atividade ou recurso';
+$string['searchandselectcourse'] = 'Pesquisar e selecionar uma disciplina';
+$string['searchandselectmodule'] = 'Pesquisar e selecionar uma atividade ou recurso';
 $string['send'] = 'Enviar';
 $string['setpoints'] = 'Definir pontos';
 $string['shortcode:xpbadge'] = 'A medalha que corresponde ao nível do utilizador atual.';

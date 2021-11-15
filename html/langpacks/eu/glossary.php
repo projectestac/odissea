@@ -237,7 +237,7 @@ $string['linkcategory'] = 'Automatikoki estekatu nahi duzu kategoria hau?';
 $string['linkcategory_help'] = 'Glosarioaren estekatze automatikoa gaitu bada eta ezarpen hau gaituta badago, kategoriaren izena automatikoki estekatuko da, ikastaroan azaltzen denean. Partaide batek kategoriaren izenarekin estekatzen duenean, glosarioko "Kategoriaren arabera bilatu" orrira bideratuko da.';
 $string['linking'] = 'Estekatze automatikoa';
 $string['mainglossary'] = 'Glosario nagusia';
-$string['maxtimehaspassed'] = 'Sentitzen dugu, baina iruzkin hau ({$a}) editatzeko gehienezko denbora agortu egin duzu!';
+$string['maxtimehaspassed'] = 'Sentitzen dugu, baina iruzkin hau ({$a}) editatzeko gehieneko denbora agortu egin duzu!';
 $string['modulename'] = 'Glosarioa';
 $string['modulename_help'] = 'Glosarioari esker erabiltzaileek definizioen biltegiak osa ditzakete, hiztegi baten antzera, bai eta edukiak zein informazioa batu eta antolatu ere.
 
@@ -247,7 +247,7 @@ Glosarioko esteka automatikoak egiteko iragazkia piztuta badago, glosarioan dago
 
 Irakasleak sarreretan iruzkinak egitea ahalbidetu dezake. Irakasleak sarrerak kalifika ditzake, baita ikasleek ere (parekoen arteko ebaluazioa). Ebaluazioak batu daitezke behin-betiko kalifikazioa lortzeko, eta azken hau izango da kalifikatzailean gordeko dena.
 
-Glosarioek erabilera anitzak izan ditzake, hala nola
+Glosarioek erabilera anitz izan ditzake, hala nola
 
 * Elkarlanean egindako hitz-gakoen bildumak egiteko
 * \'Zure burua aurkeztu\' espazio moduan, ikasle berriek euren izena eta xehetasunak gehitzeko

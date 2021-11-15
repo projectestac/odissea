@@ -498,10 +498,11 @@ trait behat_session_trait {
     /**
      * Require that javascript be available in the current Session.
      *
+     * @param null|string $message An additional information message to show when JS is not available
      * @throws DriverException
      */
-    protected function require_javascript() {
-        return self::require_javascript_in_session($this->getSession());
+    protected function require_javascript(?string $message = null) {
+        return self::require_javascript_in_session($this->getSession(), $message);
     }
 
     /**
@@ -518,14 +519,19 @@ trait behat_session_trait {
      * Require that javascript be available for the specified Session.
      *
      * @param Session $session
+     * @param null|string $message An additional information message to show when JS is not available
      * @throws DriverException
      */
-    protected static function require_javascript_in_session(Session $session): void {
+    protected static function require_javascript_in_session(Session $session, ?string $message = null): void {
         if (self::running_javascript_in_session($session)) {
             return;
         }
 
-        throw new DriverException('Javascript is required');
+        $error = "Javascript is required for this step.";
+        if ($message) {
+            $error = "{$error} {$message}";
+        }
+        throw new DriverException($error);
     }
 
     /**
@@ -742,6 +748,8 @@ trait behat_session_trait {
      * @throws ExpectationException
      */
     protected function resize_window($windowsize, $viewport = false) {
+        global $CFG;
+
         // Non JS don't support resize window.
         if (!$this->running_javascript()) {
             return;
@@ -769,6 +777,12 @@ trait behat_session_trait {
                 $width = (int) $size[0];
                 $height = (int) $size[1];
         }
+
+        if (isset($CFG->behat_window_size_modifier) && is_numeric($CFG->behat_window_size_modifier)) {
+            $width *= $CFG->behat_window_size_modifier;
+            $height *= $CFG->behat_window_size_modifier;
+        }
+
         if ($viewport) {
             // When setting viewport size, we set it so that the document width will be exactly
             // as specified, assuming that there is a vertical scrollbar. (In cases where there is
@@ -1436,5 +1450,138 @@ EOF;
         // Use get_real_timeout and multiply by the timeout factor to get the final timeout.
         $timeout = self::get_real_timeout(30) * 1000 * $factor;
         $driver->getWebDriver()->getCommandExecutor()->setRequestTimeout($timeout);
+    }
+
+    /**
+     * Get the course category id from an identifier.
+     *
+     * The category idnumber, and name are checked.
+     *
+     * @param string $identifier
+     * @return int|null
+     */
+    protected function get_category_id(string $identifier): ?int {
+        global $DB;
+
+        $sql = <<<EOF
+    SELECT id
+      FROM {course_categories}
+     WHERE idnumber = :idnumber
+        OR name = :name
+EOF;
+
+        $result = $DB->get_field_sql($sql, [
+            'idnumber' => $identifier,
+            'name' => $identifier,
+        ]);
+
+        return $result ?: null;
+    }
+
+    /**
+     * Get the course id from an identifier.
+     *
+     * The course idnumber, shortname, and fullname are checked.
+     *
+     * @param string $identifier
+     * @return int|null
+     */
+    protected function get_course_id(string $identifier): ?int {
+        global $DB;
+
+        $sql = <<<EOF
+    SELECT id
+      FROM {course}
+     WHERE idnumber = :idnumber
+        OR shortname = :shortname
+        OR fullname = :fullname
+EOF;
+
+        $result = $DB->get_field_sql($sql, [
+            'idnumber' => $identifier,
+            'shortname' => $identifier,
+            'fullname' => $identifier,
+        ]);
+
+        return $result ?: null;
+    }
+
+    /**
+     * Get the activity course module id from its idnumber.
+     *
+     * Note: Only idnumber is supported here, not name at this time.
+     *
+     * @param string $identifier
+     * @return cm_info|null
+     */
+    protected function get_course_module_for_identifier(string $identifier): ?cm_info {
+        global $DB;
+
+        $coursetable = new \core\dml\table('course', 'c', 'c');
+        $courseselect = $coursetable->get_field_select();
+        $coursefrom = $coursetable->get_from_sql();
+
+        $cmtable = new \core\dml\table('course_modules', 'cm', 'cm');
+        $cmfrom = $cmtable->get_from_sql();
+
+        $sql = <<<EOF
+    SELECT {$courseselect}, cm.id as cmid
+      FROM {$cmfrom}
+INNER JOIN {$coursefrom} ON c.id = cm.course
+     WHERE cm.idnumber = :idnumber
+EOF;
+
+        $result = $DB->get_record_sql($sql, [
+            'idnumber' => $identifier,
+        ]);
+
+        if ($result) {
+            $course = $coursetable->extract_from_result($result);
+            return get_fast_modinfo($course)->get_cm($result->cmid);
+        }
+
+        return null;
+    }
+
+    /**
+     * Get a coursemodule from an activity name or idnumber.
+     *
+     * @param string $activity
+     * @param string $identifier
+     * @return cm_info
+     */
+    protected function get_cm_by_activity_name(string $activity, string $identifier): cm_info {
+        global $DB;
+
+        $coursetable = new \core\dml\table('course', 'c', 'c');
+        $courseselect = $coursetable->get_field_select();
+        $coursefrom = $coursetable->get_from_sql();
+
+        $cmtable = new \core\dml\table('course_modules', 'cm', 'cm');
+        $cmfrom = $cmtable->get_from_sql();
+
+        $acttable = new \core\dml\table($activity, 'a', 'a');
+        $actselect = $acttable->get_field_select();
+        $actfrom = $acttable->get_from_sql();
+
+        $sql = <<<EOF
+    SELECT cm.id as cmid, {$courseselect}, {$actselect}
+      FROM {$cmfrom}
+INNER JOIN {$coursefrom} ON c.id = cm.course
+INNER JOIN {modules} m ON m.id = cm.module AND m.name = :modname
+INNER JOIN {$actfrom} ON cm.instance = a.id
+     WHERE cm.idnumber = :idnumber OR a.name = :name
+EOF;
+
+        $result = $DB->get_record_sql($sql, [
+            'modname' => $activity,
+            'idnumber' => $identifier,
+            'name' => $identifier,
+        ], MUST_EXIST);
+
+        $course = $coursetable->extract_from_result($result);
+        $instancedata = $acttable->extract_from_result($result);
+
+        return get_fast_modinfo($course)->get_cm($result->cmid);
     }
 }

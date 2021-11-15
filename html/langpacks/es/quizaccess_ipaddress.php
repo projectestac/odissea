@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regla de acceso por dirección IP';
+$string['privacy:metadata'] = 'El complemento de regla de acceso al cuestionario por direcciones IP no almacena ningún dato personal.';
 $string['subnetwrong'] = 'Este cuestionario sólo es accesible desde ciertos lugares: este ordenador no está en la lista de admitidos.';

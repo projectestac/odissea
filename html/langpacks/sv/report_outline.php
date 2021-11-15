@@ -36,5 +36,5 @@ $string['outline:viewuserreport'] = 'Visa användares aktivitetsrapport';
 $string['page-report-outline-index'] = 'Kursöversiktsrapport';
 $string['page-report-outline-user'] = 'Kursöversiktsrapport (användare)';
 $string['page-report-outline-x'] = 'Valfri översiktsrapport';
-$string['pluginname'] = 'Aktivitet i kursen';
-$string['privacy:metadata'] = 'Pluginmodulen Aktivitetsrapport lagrar ingen personlig information.';
+$string['pluginname'] = 'Aktivitetsrapport';
+$string['privacy:metadata'] = 'Pluginmodulen Aktivitetsrapport lagrar ingen personinformation.';

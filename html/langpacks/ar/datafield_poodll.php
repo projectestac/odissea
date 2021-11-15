@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['backimageurl'] = 'رابط صورة خلفية السبورة';
 $string['backimageurl_desc'] = 'إختياري. أتركه فارغاً إن لم يكن مطلوباً.';
+$string['privacy:metadata'] = 'إن ملحق حقل Poodll لنشاط البيانات لا يخزن أي بيانات شخصية.';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['multilangupgradeinfo'] = '<p>O filtro de sintaxe multi-lingua foi alterado na versão 1.8 e por isso <lang> tag já não é suportado. </p>
+$string['multilangupgradeinfo'] = '<p>O filtro de sintaxe multilingue foi alterado na versão 1.8 e por isso a tag &lt;lang&gt; já não é suportada. </p>
 <p>Exemplo: <span lang="en" class="multilang">Hello!</span><span lang="es" class="multilang">Hola!</span></p>
 <p>Quer atualizar a sintaxe em todos os textos existentes agora?</p>';
 $string['pluginname'] = 'Atualização multilingue';

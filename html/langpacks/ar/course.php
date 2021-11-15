@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activitychooseractivefooter'] = 'الحاشية السفلية لمنتقي النشاط';
-$string['activitychooseractivefooter_desc'] = 'يمكن لمنتقي النشاط دعم الملاحق التي تضيف عناصر إلى حاشيته السفلية.';
+$string['activitychooseractivefooter_desc'] = 'يمكن لمنتقي النشاط دعم الإضافات التي تضيف عناصر إلى حاشيته السفلية.';
 $string['activitychoosercategory'] = 'منتقي النشاطات';
 $string['activitychooserhidefooter'] = 'بلا تذييل';
 $string['activitychooserrecommendations'] = 'النشاطات الموصى بها';

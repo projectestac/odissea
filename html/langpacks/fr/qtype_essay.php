@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptedfiletypes'] = 'Types de fichiers acceptés';
 $string['acceptedfiletypes_help'] = 'Les types de fichiers peuvent être restreints en saisissant une liste d\'extensions de fichiers. Si le champ est laissé vide, tous les types de fichiers sont autorisés.';
 $string['allowattachments'] = 'Permettre des annexes';
+$string['answerfiles'] = 'Fichiers de réponse';
+$string['answertext'] = 'Texte de réponse';
 $string['attachedfiles'] = 'Annexes : {$a}';
 $string['attachmentsoptional'] = 'Les annexes sont optionnelles';
 $string['attachmentsrequired'] = 'Exiger des annexes';

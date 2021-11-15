@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Enlace automático a base de datos';
+$string['privacy:metadata'] = 'El complemento de enlace automático de la base de datos no almacena ningún dato personal.';

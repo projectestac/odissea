@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ltr'] = 'Da esquerda para a direita';
 $string['pluginname'] = 'RTL/LTR';
-$string['privacy:metadata'] = 'O módulo atto_rtl não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo atto_rtl não armazena quaisquer dados pessoais.';
 $string['rtl'] = 'Da direita para a esquerda';

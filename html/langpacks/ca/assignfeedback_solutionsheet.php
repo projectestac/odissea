@@ -35,6 +35,7 @@ $string['fromnowon'] = 'Activa-ho d\'ara endavant';
 $string['hidesolutionsafter'] = 'Oculta les solucions després';
 $string['pluginname'] = 'Fitxa de solució';
 $string['requiresubmission'] = 'Requereix la tramesa de la tasca per visualitzar-ho';
+$string['showsolutions'] = 'Mostra les solucions als estudiants';
 $string['solutionsnolonger'] = 'Les solucions ja no estan disponibles.';
 $string['solutionsnotyet'] = 'Les solucions encara no estan disponibles.';
 $string['uploadsolutionsheets'] = 'Penja les fitxes de solució';

@@ -72,7 +72,7 @@ $string['privacy:metadata:usersubsystem'] = 'O módulo está conectado ao subsis
 $string['privacy:subcontext'] = 'Mensagem Airnotifier';
 $string['requestaccesskey'] = 'Solicitar chave de acesso';
 $string['sendtest'] = 'Enviar notificação push de teste para os meus dispositivos';
-$string['sendtestconfirmation'] = 'Uma notificação push de teste será enviada aos dispositivos que usa para se ligar a este site. Certifique-se de que os seus dispositivos estão ligados à Internet e que a Aplicação móvel não está em execução (as notificações push só são exibidas quando recebidas em segundo plano).';
+$string['sendtestconfirmation'] = 'Uma notificação push de teste será enviada aos dispositivos que usa para ligar-se a este site. Certifique-se de que os seus dispositivos estão ligados à Internet e que a Aplicação móvel não está em execução (as notificações push só são exibidas quando recebidas em segundo plano).';
 $string['serverconnectivityerror'] = 'Este site não é capaz de se ligar ao servidor de notificações {$a}';
 $string['showhide'] = 'Ativar/desativar o dispositivo.';
 $string['sitemustberegistered'] = 'Para utilizar a instância pública Airnotifier deve registar o seu site junto do Moodle. Como alternativa, pode obter uma chave de acesso se criar uma conta no <a href="https://apps.moodle.com">Portal das Aplicações móveis Moodle</a>.';

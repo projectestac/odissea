@@ -467,15 +467,15 @@ $string['savefailnetwork'] = '<p>Infelizmente, as suas alterações não podem s
 <p>A atualização foi desativada neste blog. Para manter as alterações, deve copiar o conteúdo do blog ditado, aceda à página Editar novamente e cole as suas alterações</p>';
 $string['savefailtitle'] = 'Tópico não pode ser gravado';
 $string['savegrades'] = 'Guardar notas';
-$string['searchblogs'] = 'Procurar';
-$string['searchblogs_help'] = 'Escreva o temo que pretende pesquisar e carregue Enter ou clique no botão.
+$string['searchblogs'] = 'Pesquisar';
+$string['searchblogs_help'] = 'Escreva o termo que pretende pesquisar e pressione a tecla Enter ou clique no botão.
 
-Para procurar frases exatas, use aspas.
+Para pesquisar frases exatas, use aspas.
 
 Para excluir uma palavra, insira um hífen imediatamente antes da palavra.
 
-Exemplo: o termo de pesquisa <tt>picasso -escultura "primeiros trabalhos"</tt> vai retornar resultados para ‘picasso’ ou para a frase ‘primeiros trabalhos’ mas vai exluir itens que contenham ‘escultura’.';
-$string['searchthisblog'] = 'Procurar por {$a}';
+Exemplo: o termo de pesquisa <tt>picasso -escultura "primeiros trabalhos"</tt> vai retornar resultados para ‘picasso’ ou para a frase ‘primeiros trabalhos’ mas vai excluir itens que contenham ‘escultura’.';
+$string['searchthisblog'] = 'Pesquisar por {$a}';
 $string['sendanddelete'] = 'Enviar e apagar';
 $string['separateindividual'] = 'Separados&nbsp;Individuais';
 $string['separateindividualblogs'] = 'Separar blogs individuais';

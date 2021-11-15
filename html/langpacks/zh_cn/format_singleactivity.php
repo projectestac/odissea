@@ -25,10 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitytype'] = '活动类型';
+$string['activitytype_help'] = '选择本课程中要使用的活动或资源的类型';
 $string['defactivitytype'] = '默认活动类型';
 $string['defactivitytypedesc'] = '指定一个活动类型，它将会在建立新课程时默认被选用';
 $string['erroractivitytype'] = '在课程设置中没有设置活动类型';
 $string['orphaned'] = '没有相关的';
 $string['orphanedwarning'] = '这些活动是用户无法选用的';
 $string['pluginname'] = '单一活动格式';
+$string['privacy:metadata'] = '单一活动格式插件不存储任何个人数据。';
 $string['warningchangeformat'] = '将现有课程格式更改为“单一活动”时，请确保您已从课程中删除所有额外活动，包括“新闻通告”。请注意，可以修改课程的部分章节结构。';

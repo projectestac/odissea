@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = 'Algebraiskt uttryck';
 $string['filtername'] = 'Algebraisk notation';
-$string['privacy:metadata'] = 'Pluginmodulen Algebraisk notation lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Algebraisk notation lagrar ingen personinformation.';

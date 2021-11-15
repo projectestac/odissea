@@ -38,6 +38,6 @@ $string['librarygroup4_desc'] = 'TeX-Befehle auf der Registerkarte \'Weitere Sym
 $string['pluginname'] = 'Gleichungseditor';
 $string['preview'] = 'Gleichungsvorschau';
 $string['privacy:metadata'] = 'Das Plugin atto_equation speichert keine personenbezogenen Daten.';
-$string['saveequation'] = 'Gleichung sichern';
+$string['saveequation'] = 'Gleichung speichern';
 $string['settings'] = 'Gleichungseditor';
 $string['update'] = 'Aktualisieren';

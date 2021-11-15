@@ -100,6 +100,7 @@ $string['topcollclosed'] = '全て折り畳む';
 $string['topcollopened'] = '全て展開する';
 $string['two'] = '2列';
 $string['xanswered'] = '{$a->completed} 人が回答';
+$string['xattempted'] = '{$a->completed} 人が受験';
 $string['xofyanswered'] = '{$a->participants} 人中 {$a->completed} 人が回答';
 $string['xofyattempted'] = '{$a->participants} 人中 {$a->completed} 人が受験';
 $string['xofysubmitted'] = '{$a->participants} 人中 {$a->completed} 人が提出';

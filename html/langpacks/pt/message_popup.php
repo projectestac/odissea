@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Web';
-$string['privacy:metadata'] = 'O módulo Mensagens Web não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Mensagens Web não armazena quaisquer dados pessoais.';

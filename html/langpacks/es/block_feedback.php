@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['feedback'] = 'Retroalimentación';
 $string['feedback:addinstance'] = 'Añadir un nuevo bloque de retroalimentación';
 $string['pluginname'] = 'Retroalimentación';
+$string['privacy:metadata'] = 'El bloque de retroalimentación sólo muestra información almacenada en otras ubicaciones.';

@@ -42,8 +42,8 @@ Pode ser útil para economizar largura de banda ou por causa das restrições de
 Para utilizar uma instalação local do MathJax, primeiro descarregue a biblioteca completa do MathJax desde https://www.mathjax.org/. Em seguida, instale-o num servidor web. Por fim, atualize as configurações \'httpurl\' e/ou \'httpsurl\' do filtro MathJax para apontarem para o URL do MathJax.js.';
 $string['mathjaxsettings'] = 'Configuração MathJax';
 $string['mathjaxsettings_desc'] = 'A configuração predefinida do MathJax deve adequar-se à maioria dos utilizadores, no entanto, o MathJax é altamente configurável e qualquer uma das opções de configuração predefinida do MathJax pode ser adicionada aqui.';
-$string['privacy:metadata'] = 'O módulo MathJax não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo MathJax não armazena quaisquer dados pessoais.';
 $string['texfiltercompatibility'] = 'Compatibilidade do filtro TeX';
-$string['texfiltercompatibility_help'] = 'O filtro MathJax pode ser utilizado como um substituto para o filtro de notação Tex.
+$string['texfiltercompatibility_help'] = 'O filtro MathJax pode ser utilizado como um substituto do filtro Notação Tex.
 
-Para suportar todos os delimitadores suportados pelo filtro de notação TeX, MathJax será configurado para exibir todas as equações no alinhamento do texto.';
+Para suportar todos os delimitadores suportados pelo filtro Notação TeX, o filtro MathJax será configurado para exibir todas as equações no alinhamento do texto.';

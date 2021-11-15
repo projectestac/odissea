@@ -33,4 +33,4 @@ $string['privacy:metadata:courseid'] = 'Kurs zu dem ein Objekt gehört';
 $string['privacy:metadata:timeaccess'] = 'Zeitpunkt, zu dem die Person zuletzt auf das Objekt zugegriffen hat';
 $string['privacy:metadata:userid'] = 'ID der Person, die auf das Objekt zugegriffen hat';
 $string['privacy:recentlyaccesseditemspath'] = 'Zuletzt genutzte Objekte';
-$string['recentlyaccesseditems:myaddinstance'] = 'Neuen Block \'Zuletzt genutzte Objekte\' zum Dashboard hinzufügen';
+$string['recentlyaccesseditems:myaddinstance'] = 'Neuen Block \'Zuletzt genutzte Objekte\' im Dashboard hinzufügen';

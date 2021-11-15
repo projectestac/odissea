@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'مخازن السجل المتاحة';
-$string['configlogplugins'] = 'يرجى تمكين جميع الملاحق المطلوبة وترتيبها بالترتيب المناسب.';
+$string['configlogplugins'] = 'يرجى تمكين جميع الإضافات المطلوبة وترتيبها بالترتيب المناسب.';
 $string['exportlog'] = 'تضمين سجلات الوقوعات عند التصدير';
 $string['exportlogdetail'] = 'تضمين سجلات الوقوعات المتعلقة بالمستخدم عند التصدير.';
 $string['logging'] = 'تسجيل الوقوعات';

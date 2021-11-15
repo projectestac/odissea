@@ -219,6 +219,7 @@ $string['pluginadministration'] = 'Gestione Feedback';
 $string['pluginname'] = 'Feedback';
 $string['position'] = 'Posizione';
 $string['previous_page'] = 'Pagina precedente';
+$string['privacy:metadata:completed'] = 'Record delle consegne dei feedback';
 $string['privacy:metadata:completed:anonymousresponse'] = 'Scelta per consegna anonima o meno.';
 $string['privacy:metadata:completed:timemodified'] = 'Data e ora di ultima modifica della consegna.';
 $string['privacy:metadata:completed:userid'] = 'ID dell\'utente che ha completato l\'attività di feedback.';

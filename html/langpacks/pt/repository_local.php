@@ -32,5 +32,5 @@ $string['local:view'] = 'Ver repositório Ficheiros no Servidor';
 $string['notitle'] = 'Sem título';
 $string['pluginname'] = 'Ficheiros no Servidor';
 $string['pluginname_help'] = 'Ficheiros enviados anteriormente para o servidor Moodle';
-$string['privacy:metadata'] = 'O módulo Ficheiros no servidor não armazena ou transmite dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Ficheiros no servidor não armazena ou transmite quaisquer dados pessoais.';
 $string['remember'] = 'Manter sessão';

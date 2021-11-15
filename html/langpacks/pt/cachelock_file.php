@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Bloqueio de ficheiros';
-$string['privacy:metadata'] = 'O módulo Bloqueio de ficheiros não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Bloqueio de ficheiros não armazena quaisquer dados pessoais.';

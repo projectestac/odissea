@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['application/dash_xml'] = 'Transmissão dinâmica adaptativa através de HTTP (MPEG-DASH)';
 $string['application/epub_zip'] = 'Ebook EPUB';
-$string['application/json'] = 'texto {$a->MIMETYPE2}';
+$string['application/json'] = 'Texto {$a->MIMETYPE2}';
 $string['application/msword'] = 'Documento Word';
 $string['application/pdf'] = 'Documento PDF';
 $string['application/vnd.moodle.backup'] = 'Cópia de segurança do Moodle';
@@ -55,7 +55,7 @@ $string['application/xhtml_xml'] = 'Documento XHTML';
 $string['archive'] = 'Arquivo ({$a->EXT})';
 $string['audio'] = 'Ficheiro de áudio ({$a->EXT})';
 $string['default'] = '{$a->mimetype}';
-$string['document/unknown'] = 'ficheiro';
+$string['document/unknown'] = 'Ficheiro';
 $string['group:archive'] = 'Ficheiros de Arquivo';
 $string['group:audio'] = 'Ficheiros Áudio';
 $string['group:document'] = 'Ficheiros de Documento';

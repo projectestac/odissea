@@ -1,10 +1,12 @@
-@qtype @qtype_essaywiris
+@qtype @qtype_essaywiris @qtype_essaywiris_auxiliar_text
 Feature: A teacher can add and preview an auxiliar text field in a Science Essay question
   In order to allow their students to comment on their answers
   As a teacher
   I need to be able to add an auxiliar text field
 
   Background:
+    Given the "wiris" filter is "on"
+    Given the "mathjaxloader" filter is "disabled"
     Given the following "users" exist:
       | username | firstname | lastname | email                |
       | teacher1 | Teacher   | 1        | teacher1@example.com |
@@ -36,10 +38,11 @@ Feature: A teacher can add and preview an auxiliar text field in a Science Essay
     | Question text | What are the steps to solve a second degree equation? |
     | Default mark  | 1                                                     |
     And I open Wiris Quizzes Studio
-    And I click on "Correct answer" "text"
-    And I click on "Display auxiliary text field" "checkbox"
-    And I press "OK" and switch to main window
+    And I click on "Input options" "text"
+    And I click on "Display auxiliary text field" "text"
+    And I click on "//*[@id='wrsUI_quizzesStudioHomeSaveButton']" "xpath_element"
     And I click on "//input[@name='submitbutton']" "xpath_element"
     And I click on "Preview question" "link"
     And I switch to "questionpreview" window
     Then I should see "Write an optional reasoning for your answer:"
+    And I wait "20" seconds

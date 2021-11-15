@@ -27,12 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = 'Todos los componentes';
 $string['component'] = 'Componente';
+$string['core'] = 'Core';
 $string['coresubsystem'] = 'Subsistema ({$a})';
 $string['documentation'] = 'Documentación';
 $string['example'] = 'Ejemplo';
 $string['noresults'] = 'Sin resultados';
 $string['notemplateselected'] = 'No se ha seleccionado ninguna plantilla';
 $string['pluginname'] = 'Biblioteca de plantillas';
+$string['privacy:metadata'] = 'El complemento de la biblioteca de plantillas no almacena ningún dato personal.';
 $string['search'] = 'Búsqueda';
 $string['searchtemplates'] = 'Plantillas de búsqueda';
 $string['templatehasnoexample'] = 'Esta plantilla no posee contexto de ejemplo, por lo que no se puede representar aquí. Para añadir un contexto de ejemplo a esta plantilla, introduzca en un comentario de Mustache «Contexto de ejemplo (json):» seguido del contexto de la muestra codificado en json para la plantilla.';

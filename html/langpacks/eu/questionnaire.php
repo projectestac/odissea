@@ -75,7 +75,7 @@ $string['chart:type'] = 'Grafiko mota';
 $string['chart:type_help'] = 'Aukeratu feedback honetan erabili nahi duzun grafiko mota';
 $string['chart:vprogress'] = 'Aurrerapen-barra bertikala';
 $string['checkallradiobuttons'] = 'Egiaztatu mesedez <strong>{$a}</strong> aukera bakarreko botoiak!';
-$string['checkboxes'] = 'Aukera anitzeko laukitxoak';
+$string['checkboxes'] = 'Aukera anizkoitzeko laukitxoak';
 $string['checkboxes_help'] = 'Idatzi erabiltzaileak aukeratu ahalko duen aukera bat errenkada bakoitzean.';
 $string['checkbreaksadded'] = 'Orri-salto berria(k) gehitu dira hurrengo kokapene(t)an:';
 $string['checkbreaksok'] = 'Beharrezkoak diren orri-salto guztiak prest daude!';
@@ -92,7 +92,7 @@ $string['condition'] = 'Baldintza';
 $string['confalts'] = '- EDO - <br />Berrespen-orria';
 $string['configemailreporting'] = 'Baimendu posta elektroniko bidezko txostenak';
 $string['configemailreportinglong'] = 'Txosten batzuk helbide elektroniko zehatzetara bidaltzea ahalbidetzen du.';
-$string['configmaxsections'] = 'Feedback-erako gehienezko atal kopurua';
+$string['configmaxsections'] = 'Feedback-erako gehieneko atal kopurua';
 $string['configusergraph'] = 'Erakutsi "Nortasun Proba" feedbackaren grafikoak';
 $string['configusergraphlong'] = 'Erabili <a href="http://www.rgraph.net/">Rgraph</a> liburutegia "Nortasun Proba" feedbackaren grafikoak erakusteko.';
 $string['confirmdelallresp'] = 'Ziur zaude galdeketa honetako galdera GUZTIAK ezabatu nahi dituzula?';
@@ -222,9 +222,9 @@ $string['feedbacksettingssaved'] = 'Feedback ezarpenak gorde dira';
 $string['feedbacktype'] = 'Feedback-mota';
 $string['field'] = '{$a} galdera';
 $string['fieldlength'] = 'Sarbide-kutxaren luzera';
-$string['fieldlength_help'] = '**Testu-kutxa** galdera motarentzat, zehaztu **sarrera-kutxaren luzera** eta erantzunetako **testuaren gehienezko luzera**.
+$string['fieldlength_help'] = '**Testu-kutxa** galdera motarentzat, zehaztu **sarrera-kutxaren luzera** eta erantzunetako **testuaren gehieneko luzera**.
 
-Testu-kutxaren luzera lehenetsia 20 karaktere dira eta erantzunetako testuaren gehienezko luzera 25 karaktere.';
+Testu-kutxaren luzera lehenetsia 20 karaktere dira eta erantzunetako testuaren gehieneko luzera 25 karaktere.';
 $string['finished'] = 'Galdeketako galdera guztiak erantzun dituzu!';
 $string['firstrespondent'] = 'Lehen erantzuna';
 $string['formateditor'] = 'HTML editorea';
@@ -255,16 +255,16 @@ $string['managequestions_help'] = 'Editatu galderak orriko Kudeatu galderak atal
 $string['mandatory'] = 'Derrigorrezkoa - Menpekotasun hauek guztiak bete behar dira.';
 $string['maxdigitsallowed'] = 'Gehienez baimendutako digituak';
 $string['maxdigitsallowed_help'] = 'Erabili **Gehienez baimendutako digituak** zenbakizko galderan erantzun daitekeen zenbakiaren digitu kopurua mugatzeko. Kontuan izan hamartarren koma banatzailearen karakterea ere kontuan hartzen dela!';
-$string['maxforcedresponses'] = 'Gehienezko erantzun kopurua';
-$string['maxforcedresponses_help'] = 'Parametro hauek erabili itzazu erantzunean aukeratu daitezkeen **gutxienezko** laukitxo kopurua eta **gehienezko** laukitxo kopurua behartzeko. Kopuru zehatz bat aukeratzea behartzeko **gutxienezko** eta **gehienezko** eremuetan balio berdina jarri ezazu. Gutxienezko edo gehienezko kopurua soilik zehazteko utzi ezazu beste parametroan lehenetsitako **0** balioa utzi ezazu. **Gutxienezko** eta **gehienezko** balioetan **0** ez den balio bat zehazten baduzu erantzutean baldintza betetzen ez duten erabiltzaileei ohar-mezu bat erakutsiko zaie. Baldintza hauek zure galdeketako argibide orokorretan edo galderaren testuan argi utzi beharko dituzu, noski.';
-$string['maxtextlength'] = 'Testuaren gehienezko luzera';
-$string['maxtextlength_help'] = 'Testu-kutxa galdera motarentzat, zehaztu sarrera-kutxaren luzera eta erantzunetako testuaren gehienezko luzera.
+$string['maxforcedresponses'] = 'Gehieneko erantzun kopurua';
+$string['maxforcedresponses_help'] = 'Parametro hauek erabili itzazu erantzunean aukeratu daitezkeen **gutxieneko** laukitxo kopurua eta **gehieneko** laukitxo kopurua behartzeko. Kopuru zehatz bat aukeratzea behartzeko **gutxieneko** eta **gehieneko** eremuetan balio berdina jarri ezazu. Gutxieneko edo gehieneko kopurua soilik zehazteko utzi ezazu beste parametroan lehenetsitako **0** balioa utzi ezazu. **Gutxieneko** eta **gehieneko** balioetan **0** ez den balio bat zehazten baduzu erantzutean baldintza betetzen ez duten erabiltzaileei ohar-mezu bat erakutsiko zaie. Baldintza hauek zure galdeketako argibide orokorretan edo galderaren testuan argi utzi beharko dituzu, noski.';
+$string['maxtextlength'] = 'Testuaren gehieneko luzera';
+$string['maxtextlength_help'] = 'Testu-kutxa galdera motarentzat, zehaztu sarrera-kutxaren luzera eta erantzunetako testuaren gehieneko luzera.
 
-Testu-kutxaren luzera lehenetsia 20 karaktere dira eta erantzunetako testuaren gehienezko luzera 25 karaktere.';
+Testu-kutxaren luzera lehenetsia 20 karaktere dira eta erantzunetako testuaren gehieneko luzera 25 karaktere.';
 $string['messageprovider:message'] = 'Galdeketaren gogorarazpena';
 $string['messageprovider:notification'] = 'Galdeketaren bidalketa';
-$string['minforcedresponses'] = 'Gutxienezko erantzun kopurua';
-$string['minforcedresponses_help'] = 'Parametro hauek erabili itzazu erantzunean aukeratu daitezkeen **gutxienezko** laukitxo kopurua eta **gehienezko** laukitxo kopurua behartzeko. Kopuru zehatz bat aukeratzea behartzeko **gutxienezko** eta **gehienezko** eremuetan balio berdina jarri ezazu. Gutxienezko edo gehienezko kopurua soilik zehazteko utzi ezazu beste parametroan lehenetsitako **0** balioa utzi ezazu. **Gutxienezko** eta **gehienezko** balioetan **0** ez den balio bat zehazten baduzu erantzutean baldintza betetzen ez duten erabiltzaileei ohar-mezu bat erakutsiko zaie. Baldintza hauek zure galdeketako argibide orokorretan edo galderaren testuan argi utzi beharko dituzu, noski.';
+$string['minforcedresponses'] = 'Gutxieneko erantzun kopurua';
+$string['minforcedresponses_help'] = 'Parametro hauek erabili itzazu erantzunean aukeratu daitezkeen **gutxieneko** laukitxo kopurua eta **gehieneko** laukitxo kopurua behartzeko. Kopuru zehatz bat aukeratzea behartzeko **gutxieneko** eta **gehieneko** eremuetan balio berdina jarri ezazu. Gutxieneko edo gehieneko kopurua soilik zehazteko utzi ezazu beste parametroan lehenetsitako **0** balioa utzi ezazu. **Gutxieneko** eta **gehieneko** balioetan **0** ez den balio bat zehazten baduzu erantzutean baldintza betetzen ez duten erabiltzaileei ohar-mezu bat erakutsiko zaie. Baldintza hauek zure galdeketako argibide orokorretan edo galderaren testuan argi utzi beharko dituzu, noski.';
 $string['misconfigured'] = 'Ikastaroa gaizki konfiguratuta dago';
 $string['missingname'] = '{$a} galdera ezin da feedback-atal honetan erabili ez duelako izenik.';
 $string['missingnameandrequired'] = '{$a} galdera ezin da feedback-atal honetan erabili ez duelako izenik eta ez delako derrigorrezkoa.';
@@ -339,7 +339,7 @@ $string['orderresponses_help'] = 'Erantzun guztiak erakustean aukerak erantzun k
 
 * aukera bakarreko botoia
 * aukera bakarreko kutxa zabalgarria
-* aukera anitzekoa (laukitxoak)
+* aukera anizkoitzekoa (laukitxoak)
 * baloratu motakoak (Likert eskala barne)
 
 Erantzun guztien orrira heltzen zarenean, modu lehenetsian erantzun guztiak galdeketaren egileak zehaztutako jatorrizko hurrenkeran erakusten dira, eta zuk goranzko edo beheranzko hurrenkeran erakutsi ahal dituzu.';
@@ -370,7 +370,7 @@ $string['print'] = 'Inprimatu erantzun hau';
 $string['printblank'] = 'Inprimatu hutsik';
 $string['printblanktooltip'] = 'Galdeketa hutsik inprimatzeko egokitutako leihoan irekitzen du';
 $string['printtooltip'] = 'Galdeketa oraingo erantzunarekin inprimatzeko egokitutako leihoan irekitzen du';
-$string['privacy:metadata:questionnaire_resp_multiple'] = 'Aukera anitzeko galderaren erantzuna.';
+$string['privacy:metadata:questionnaire_resp_multiple'] = 'Aukera anizkoitzeko galderaren erantzuna.';
 $string['privacy:metadata:questionnaire_resp_multiple:choice_id'] = 'Erantzun honetako aukera-erregistro baten IDa.';
 $string['privacy:metadata:questionnaire_resp_multiple:question_id'] = 'Erantzun honen galdera-erregistroaren IDa.';
 $string['privacy:metadata:questionnaire_resp_multiple:response_id'] = 'Erantzun honen erantzun-erregistroaren IDa.';
@@ -550,9 +550,9 @@ $string['textareacolumns_help'] = 'Galdera honek testu lauko eremu bat erakusten
 Biak (x eta y) lehenetsitako **0** balioarekin utziz gero, Moodleren HTML editorea erakutsiko da lehenetsitako altuera eta zabalerarekin (ikastaro/erabiltzaile testuinguruan eta erabiltzaile-profilean eskuragarri badago).';
 $string['textarearows'] = 'Testu-eremuko errenkadak';
 $string['textbox'] = 'Testu-kutxa';
-$string['textbox_help'] = 'Testu-kutxa galdera motarentzat, zehaztu sarrera-kutxaren luzera eta erantzunetako testuaren gehienezko luzera.
+$string['textbox_help'] = 'Testu-kutxa galdera motarentzat, zehaztu sarrera-kutxaren luzera eta erantzunetako testuaren gehieneko luzera.
 
-Testu-kutxaren luzera lehenetsia 20 karaktere dira eta erantzunetako testuaren gehienezko luzera 25 karaktere.';
+Testu-kutxaren luzera lehenetsia 20 karaktere dira eta erantzunetako testuaren gehieneko luzera 25 karaktere.';
 $string['textdownloadoptions'] = 'CSV deskargarako aukerak';
 $string['thank_head'] = 'Eskerrik asko galdeketa hau betetzeagatik.';
 $string['theme'] = 'Azala';

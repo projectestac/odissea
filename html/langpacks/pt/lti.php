@@ -179,8 +179,8 @@ $string['external_tool_type_help'] = '* **Automático, com base no URL da ferram
 
 Depois da pré-configuração da ferramenta ficam disponíveis três ações na lista pendente:
 
-* **Adicionar** -  Crie uma configuração para este nível na disciplina. Todas as ferramentas externas nesta disciplina podem usar esta configuração.
-* **Editar** -  Escolha um nível a partir da lista pendente e clique neste ícone. Os pormenores da configuração da ferramenta podem ser editados.
+* **Adicionar** - Crie uma configuração para este nível na disciplina. Todas as ferramentas externas nesta disciplina podem usar esta configuração.
+* **Editar** - Escolha um nível a partir da lista pendente e clique neste ícone. Os pormenores da configuração da ferramenta podem ser editados.
 * **Apagar** - Apague o nível selecionado.';
 $string['external_tool_types'] = 'Tipos de ferramentas pré-configuradas';
 $string['failedtoconnect'] = 'O Moodle não conseguiu comunicar com o sistema "{$a}"';

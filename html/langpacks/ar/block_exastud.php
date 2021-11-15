@@ -35,6 +35,7 @@ $string['classowner_changed_message'] = 'لقد قمت بتغيير معلم ا�
 $string['configmember'] = 'طلاب {$a}';
 $string['de:Bildungsstandards'] = 'معايير التعليم القابلة للتلبية';
 $string['delete_class_only_without_users'] = 'يمكن فقط حذف الصفوف التي ليس فيها طلاب';
+$string['donotleave_page_message'] = 'لديك تغييرات غير محفوظة في هذه الصفحة. هل ترغب بتركها وإهمال تغييراتك أم البقاء فيها؟';
 $string['endtime'] = 'وقت الإنهاء';
 $string['errorstarttimebeforeendtime'] = 'الفترة {$a->description} فيها وقت البدء قبل وقت الإنهاء!';
 $string['event_classcreated_name'] = 'صف تم إنشاؤه';

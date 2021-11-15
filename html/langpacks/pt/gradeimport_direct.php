@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['direct:view'] = 'Importar notas a partir de folha de cálculo';
 $string['pluginname'] = 'Colar a partir da folha de cálculo';
-$string['privacy:metadata'] = 'O módulo Importar colar a partir da folha de cálculo não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Importar notas a partir cópia de folha de cálculo não armazena quaisquer dados pessoais.';
 $string['userdata'] = 'Ajuda a copiar dados para este formulário.';
-$string['userdata_help'] = 'As notas podem ser copiadas e coladas a partir de uma folha de cálculo para a pauta. A folha de cálculo deve ter uma coluna que contenha dados de identidade do utilizador - nome de utilizador, número ID ou e-mail. Cada coluna para importação deverá ter um cabeçalho.';
+$string['userdata_help'] = 'As notas podem ser copiadas de uma folha de cálculo e copiadas para a pauta. A folha de cálculo deve ter uma coluna que contenha dados da identidade do utilizador - nome de utilizador, número ID ou e-mail. Cada coluna para importação deverá ter um cabeçalho.';

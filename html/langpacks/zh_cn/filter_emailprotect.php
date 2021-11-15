@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Email保护';
+$string['privacy:metadata'] = '电子邮件保护插件不存储任何个人数据。';

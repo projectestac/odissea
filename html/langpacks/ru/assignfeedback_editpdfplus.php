@@ -25,7 +25,21 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adminaxisdelete_ko'] = 'Нет';
+$string['adminplugin_color'] = 'Цвет';
+$string['admintoolboxannotation_reply'] = 'Вопрос/ответ';
+$string['admintoolboxtoolbardisplay_button'] = 'Кнопка';
 $string['admintoolboxtypetool_type'] = 'Тип';
+$string['blue'] = 'Синий';
+$string['deletecomment'] = 'Удалить комментарий';
+$string['gotopage'] = 'Перейти на страницу';
+$string['green'] = 'Зелёный';
 $string['help_table_titletype'] = 'Тип';
+$string['help_title'] = 'Помощь';
+$string['navigatenext'] = 'Следующая страница';
+$string['navigateprevious'] = 'Предыдущая страница';
+$string['red'] = 'Красный';
 $string['rotateright'] = 'Повернуть на 90 градусов вправо';
 $string['statut_select'] = 'Статус';
+$string['white'] = 'Белый';
+$string['yellow'] = 'Жёлтый';

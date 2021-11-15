@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['dataformat'] = 'Valores separados por comas (.csv)';
+$string['privacy:metadata'] = 'El complemento de formato de datos CSV no almacena ningún dato personal.';
 $string['shortname'] = 'CSV';

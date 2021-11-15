@@ -179,6 +179,7 @@ $string['permittedtransports'] = '允许传输';
 $string['phperror'] = '内部PHP错误，阻止了您的请求完成。';
 $string['position'] = '位置';
 $string['postrequired'] = '删除函数需要一个POST请求。';
+$string['privacy:metadata'] = 'MNet 插件不存储任何个人数据。';
 $string['profileexportfields'] = '发送字段';
 $string['profilefielddesc'] = '在这里，您可以配置创建或更新账号时都通过 MNet 发送和接收哪些个人资料字段。您也可以为每个 MNet 伙伴单独设置这些配置。注意，会永远发送下面的字段：{$a}';
 $string['profilefields'] = '字段简介';

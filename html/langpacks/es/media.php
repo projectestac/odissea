@@ -27,12 +27,15 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['audioextensions'] = 'Audio: {$a}';
 $string['defaultheight'] = 'Alto por defecto';
+$string['defaultheightdesc'] = 'La altura por defecto del reproductor de medios si no está especificada una altura y el reproductor no puede determinar la altura real del medio.';
 $string['defaultwidth'] = 'Ancho por defecto';
+$string['defaultwidthdesc'] = 'La anchura del reproductor de medios si no está especificado un ancho y el reproductor no puede determinar la anchura del archivo de medio actual.';
 $string['extensions'] = 'Extensiones: {$a}';
 $string['managemediaplayers'] = 'Gestionar reproductores de medios';
 $string['mediaformats'] = 'Reproductores disponibles';
 $string['mediaformats_desc'] = 'Cuando se habilitan reproductores en estas configuraciones, los archivos pueden incrustarse empleando el filtro multimedia (si está habilitado) o mediante un recurso de Archivo o URL con la opción de incrustar. Cuando no están habilitados, estos formatos no son incrustables y los usuarios pueden descargarlos manualmente o seguir las ligas hacia estos recursos.
 
 Cuando dos reproductores soportan el mismo formato, el habilitar ambos aumenta la compatibilidad entre diferentes dispositivos como teléfonos móviles. Es posible aumentar aún más la compatibilidad al proporcionar archivos múltiples en diferentes formatos para cada clip de audio  o video.';
+$string['privacy:metadata'] = 'La incrustación de medios no almacena ningún dato personal.';
 $string['supports'] = 'Soporta';
 $string['videoextensions'] = 'Video: {$a}';

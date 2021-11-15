@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activemethodinfo'] = '\'{$a->method}\' är vald som den aktiva betygsmetoden för \'{$a->area}\' området';
+$string['activemethodinfo'] = '\'{$a->method}\' är vald som den aktiva betygsmetoden för \'{$a->area}\'-området';
 $string['activemethodinfonone'] = 'Ingen avancerad betygssättningsmetod är vald för området \'{$a->area}\'. Enkel betygssättning kommer att användas.';
 $string['changeactivemethod'] = 'Ändra betygssättningsmetod till';
 $string['clicktoclose'] = 'klicka för att välja';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_ltidescription'] = 'O módulo de autenticação LTI, em conjunto com o módulo de inscrição \'Publicar como ferramenta LTI\', permite que utilizadores externos possam aceder a determinadas disciplinas ou atividades. Por outras palavras, o Moodle funciona como um fornecedor de ferramenta LTI.';
 $string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'O módulo de autenticação LTI não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo de autenticação LTI não armazena quaisquer dados pessoais.';

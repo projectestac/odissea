@@ -26,6 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addbulknote'] = '向 {$a} 人增加一个新备注';
+$string['addbulknotedone'] = '注释已添加到 {$a} 人';
+$string['addbulknotedonesingle'] = '备注已添加到 1 人';
+$string['addbulknotesingle'] = '向 1 人添加新笔记';
 $string['addnewnote'] = '添加新备注';
 $string['addnewnoteselect'] = '选择用户撰写备注';
 $string['bynameondate'] = '由{$a->name} - {$a->date}';
@@ -57,6 +60,13 @@ $string['page-notes-index'] = '备注主页';
 $string['page-notes-x'] = '任意备注页面';
 $string['personal'] = '私人';
 $string['personalnotes'] = '个人备注';
+$string['privacy:metadata:core_notes'] = 'Notes 组件将用户注释存储在核心子系统中。';
+$string['privacy:metadata:core_notes:content'] = '笔记的内容。';
+$string['privacy:metadata:core_notes:courseid'] = '与笔记关联的课程 ID';
+$string['privacy:metadata:core_notes:created'] = '笔记的创建日期/时间。';
+$string['privacy:metadata:core_notes:lastmodified'] = '笔记的最后修改日期/时间。';
+$string['privacy:metadata:core_notes:publishstate'] = '笔记的发布状态。';
+$string['privacy:metadata:core_notes:userid'] = '与笔记关联的用户 ID';
 $string['publishstate'] = '场景';
 $string['publishstate_help'] = '备注的上下文决定了谁能看到这个备注。
 

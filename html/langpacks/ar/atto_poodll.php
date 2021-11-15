@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['allowwhiteboard'] = 'السماح بالسبورة';
 $string['openinnewwindow'] = 'إفتح في نافذة جديدة';
 $string['poodll:allowwhiteboard'] = 'السماح بالسبورة';
-$string['privacy:metadata'] = 'إن ملحق atto_poodll لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_poodll لا تخزن أي بيانات شخصية.';
 $string['show_whiteboard'] = 'إظهار السبورة';
 $string['usewhiteboard'] = 'إختر نوع السبورة:';
 $string['whiteboardheading'] = 'السبورة';

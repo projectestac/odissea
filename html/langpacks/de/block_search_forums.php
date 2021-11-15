@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['advancedsearch'] = 'Erweiterte Suche';
-$string['pluginname'] = 'Suche in Foren';
-$string['privacy:metadata'] = 'Der Block \'Suche in Foren\' zeigt nur Daten an, die an anderen Orten gespeichert sind.';
-$string['search_forums:addinstance'] = 'Neuen Block \'Suche in Foren\' hinzufügen';
+$string['pluginname'] = 'Foren durchsuchen';
+$string['privacy:metadata'] = 'Der Block \'Foren durchsuchen\' zeigt nur Daten an, die an anderen Orten gespeichert sind.';
+$string['search_forums:addinstance'] = 'Neuen Block \'Foren durchsuchen\' hinzufügen';

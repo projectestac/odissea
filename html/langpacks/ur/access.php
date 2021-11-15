@@ -39,4 +39,5 @@ $string['skipa'] = 'چھوڑ دو';
 $string['skipblock'] = 'بلاک چھوڑ دو';
 $string['skipnavigation'] = 'سمت بتانا چھوڑ دو';
 $string['skipto'] = 'چھوڑ دو';
+$string['tocontent'] = 'اصل مواد کی طرف جائیں';
 $string['youarehere'] = 'آپ یہاں ہیں';

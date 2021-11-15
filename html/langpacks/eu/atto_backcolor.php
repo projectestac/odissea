@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = 'Beltza';
+$string['color_blue'] = 'Urdina';
+$string['color_green'] = 'Berdea';
+$string['color_red'] = 'Gorria';
+$string['color_white'] = 'Zuria';
+$string['color_yellow'] = 'Horia';
 $string['pluginname'] = 'Atzeko planoaren kolorea';
 $string['privacy:metadata'] = 'atto_backcolor pluginak ez du datu pertsonalik biltzen.';

@@ -30,5 +30,5 @@ $string['privacy:metadata'] = 'Pluginmodulen atto_collapse lagrar ingen personin
 $string['settings'] = 'Fäll ihop';
 $string['showfewer'] = 'Visa färre knappar';
 $string['showgroups'] = 'Visa de första (n) grupperna när ihopfälld';
-$string['showgroups_desc'] = 'När verktygsfältet är komprimerat (det är det som standard) visas bara så här många grupper samtidigt.';
+$string['showgroups_desc'] = 'När verktygsfältet är komprimerat (standard) visas bara så här många grupper samtidigt.';
 $string['showmore'] = 'Visa fler knappar';

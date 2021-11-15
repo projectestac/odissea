@@ -70,7 +70,7 @@ $string['category'] = 'Categoria';
 $string['categorydeleted'] = 'Categoria apagada';
 $string['categoryview'] = 'Consultar por categorias';
 $string['changeto'] = 'mudar para {$a}';
-$string['cnfallowcomments'] = 'Configuração predefinida para a permissão de comentar os termos do glossário';
+$string['cnfallowcomments'] = 'Se ativar esta opção, será permitido comentar os termos do glossário, por predefinição.';
 $string['cnfallowdupentries'] = 'Configuração predefinida para a permissão de termos repetidos no glossário';
 $string['cnfapprovalstatus'] = 'Configuração predefinida para o estado de aprovação dos novos termos inseridos no glossário';
 $string['cnfcasesensitive'] = 'Configuração predefinida para a opção de respeitar maiúsculas/minúsculas para criar hiperligação automática dos termos do glossário';
@@ -123,12 +123,12 @@ $string['displayformat'] = 'Formato de visualização';
 $string['displayformat_help'] = 'Existem sete formatos de visualização do glossário:
 
 * Simples, estilo dicionário - Os autores não são apresentados e os anexos são mostrados como hiperligações
-* Contínuo sem autor - Os termos são exibidos sem qualquer tipo de separação além dos ícones de edição
-* Completo com autor - O glossário é exibido no formato de fórum identificando o autor e exibindo os anexos como hiperligações
-* Completo sem autor - O glossário é exibido no formato de fórum sem identificar o autor e exibindo os anexos como hiperligações
-* Enciclopédia - Idêntico ao "Completo com autor", mas os anexos tipo imagem são exibidos como imagem
-* Lista de Termos - Os termos são listados como links
-* FAQ - As palavras PERGUNTA e RESPOSTA são juntas ao termo e definição, respetivamente';
+* Contínuo sem autor - Os termos são exibidos sem qualquer tipo de separação à parte dos ícones de edição
+* Completo com autor - O glossário é exibido no formato de fórum identificando o autor e exibe os anexos como hiperligações
+* Completo sem autor - O glossário é exibido no formato de fórum sem identificar o autor e exibe os anexos como hiperligações
+* Enciclopédia - Idêntico ao "Completo com autor" mas os anexos tipo imagem são exibidos como imagem incorporadas
+* Lista de Termos - Os termos são listados como hiperligações
+* FAQ - As palavras PERGUNTA e RESPOSTA são acrescentadas, respetivamente, ao termo e à definição';
 $string['displayformatcontinuous'] = 'Contínuo sem autor';
 $string['displayformatdefault'] = 'Igual ao formato de visualização predefinido';
 $string['displayformatdictionary'] = 'Simples, estilo dicionário';
@@ -148,7 +148,7 @@ $string['editcategory'] = 'Editar categoria';
 $string['editentry'] = 'Editar termo';
 $string['editentrya'] = 'Editar entrada: {$a}';
 $string['editingcomment'] = 'A editar comentário';
-$string['entbypage'] = 'Nº de termos por página';
+$string['entbypage'] = 'N.º de termos por página';
 $string['entries'] = 'Termos';
 $string['entrieswithoutcategory'] = 'Termos sem categoria';
 $string['entry'] = 'Termo';
@@ -321,7 +321,7 @@ $string['sortchronogically'] = 'Ordenar por ordem cronológica';
 $string['special'] = 'Especial';
 $string['standardview'] = 'Consultar por alfabeto';
 $string['studentcanpost'] = 'Os alunos podem adicionar termos';
-$string['tagarea_glossary_entries'] = 'Entrada do glóssário';
+$string['tagarea_glossary_entries'] = 'Entrada do glossário';
 $string['tagsdeleted'] = 'As tags do glossário foram apagadas';
 $string['totalentries'] = 'Todos os termos';
 $string['usedynalink'] = 'Criar automaticamente hiperligações para o glossário';

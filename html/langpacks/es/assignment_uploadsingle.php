@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Subir uno';
+$string['privacy:metadata'] = 'El complemento de subir una única tarea no almacena ningún dato personal.';

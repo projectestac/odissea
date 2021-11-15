@@ -39,6 +39,7 @@ $string['enteralt'] = '閲覧できない人に対して、このイメージを
 $string['enterurl'] = 'URLを入力する';
 $string['height'] = '高さ';
 $string['imageproperties'] = 'イメージ属性';
+$string['imageurlrequired'] = 'イメージにはURLが必要です。';
 $string['pluginname'] = 'イメージを挿入または編集する';
 $string['presentation'] = 'このイメージは装飾目的のみです。';
 $string['presentationoraltrequired'] = '装飾のみとマークされない限り、イメージには説明が必要です。';

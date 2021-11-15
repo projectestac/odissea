@@ -32,4 +32,4 @@ $string['pluginname_help'] = 'Las preguntas calculadas de opción múltiple son 
 $string['pluginnameadding'] = 'Añadir una pregunta calculada de opción múltiple';
 $string['pluginnameediting'] = 'Editar una pregunta calculada de opción múltiple ';
 $string['pluginnamesummary'] = 'Las preguntas calculadas de opción múltiple son similares a las preguntas de opción múltiple, en cuyos  elementos a elegir pueden incluirse resultados obtenidos al aplicar una fórmula a valores numéricos seleccionados aleatoriamente de un grupo de valores cuando se formula la pregunta. ';
-$string['privacy:metadata'] = 'El plugin del tipo de pregunta calculada de opción múltiple no almacena ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento del tipo de pregunta calculada de opción múltiple no almacena ningún dato personal.';

@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['crontask'] = 'Tasca cron per les targetes didàctiques';
 $string['import'] = 'Importa';
 $string['notifications'] = 'Notificacions';

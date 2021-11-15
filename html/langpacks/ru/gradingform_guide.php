@@ -100,6 +100,7 @@ $string['saveguide'] = 'Сохранить справочник оценщика
 $string['saveguidedraft'] = 'Сохранить как черновик';
 $string['score'] = 'баллы';
 $string['score_help'] = 'Введите балл для {$a->criterion} от 0 до {$a->maxscore}.';
+$string['scoreforcriterion'] = 'баллов: {$a}';
 $string['showmarkerdesc'] = 'Показывать оценщику описания критериев';
 $string['showmarkspercriterionstudents'] = 'Показывать студентам баллы за критерий';
 $string['showstudentdesc'] = 'Показывать студентам описания критериев';

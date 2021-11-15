@@ -29,5 +29,5 @@ $string['displaycategories'] = 'Mostrar categorias';
 $string['displaycategories_help'] = 'Mostrar a categoria da disciplina nos itens do bloco das disciplinas com estrela.';
 $string['nocourses'] = 'Nenhuma disciplina com estrela';
 $string['pluginname'] = 'Disciplinas com estrela';
-$string['privacy:metadata'] = 'O bloco Disciplinas com estrela não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O bloco Disciplinas com estrela não armazena quaisquer dados pessoais.';
 $string['starredcourses:myaddinstance'] = 'Adicionar novo bloco Disciplinas com estrela ao Painel do utilizador';

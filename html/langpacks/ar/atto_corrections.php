@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['displayfulltext'] = 'عَرض النص مع علامات التصحيح';
 $string['fulltexttitle'] = 'النص مع علامات التصحيح';
-$string['privacy:metadata'] = 'إن ملحق atto_corrections لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_corrections لا تخزن أيّ بيانات شخصية.';

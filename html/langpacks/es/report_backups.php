@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['backupofcourselogs'] = 'Copias de seguridad del log {$a}';
 $string['logsofbackupexecutedon'] = 'Logs de la copia de seguridad ejecutado {$a}';
 $string['nobackupsfound'] = 'No se ha encontrado copias de seguridad.';
+$string['nologsfound'] = 'No se encontraron registros para este respaldo.';
 $string['pluginname'] = 'Informe de copias de seguridad';
+$string['privacy:metadata'] = 'El complemento de informes de respaldo no almacena ningún dato personal.';
 $string['strftimetime'] = '%I:%M:%S %p';
 $string['viewlogs'] = 'Ver logs';

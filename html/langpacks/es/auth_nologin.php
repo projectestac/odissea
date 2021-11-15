@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['auth_nologindescription'] = 'Conector (Plugin) auxiliar que previene que el usuario inicie sesión en el sistema y descarta cualquier correo enviado al usuario. Puede ser utilizado para <em>suspender</em> cuentas de usuario.';
 $string['pluginname'] = 'No hay sesión';
+$string['privacy:metadata'] = 'El complemento de autenticación sin inicio de sesión no almacena ningún dato personal.';

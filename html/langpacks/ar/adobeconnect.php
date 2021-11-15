@@ -48,6 +48,7 @@ $string['meetinghost'] = 'مجال الاجتماع';
 $string['meetingname'] = 'اسم الاجتماع';
 $string['meetingstart'] = 'وقت بدء الاجتماع';
 $string['meettemplates'] = 'قوالب الاجتماع';
+$string['meettemplates_help'] = '<p>قالب غرفة الاجتماع ينشئ الاجتماع بتصميم مخصص لغرفة الاجتماعات.</p>';
 $string['meeturl_help'] = '<p>يمكنك تخصيص الرابط المستعمل للاتصال مع اجتماع اتصال Adobe. مجال مخدم Adobe سيبقى دائماً هو نفسه.
  مع ذلك، يمكن تخصيص الجزء الأخير من الرابط.
 </p>

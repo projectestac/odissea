@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Feedback diferido';
-$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Feedback diferido não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Feedback diferido não armazena quaisquer dados pessoais.';

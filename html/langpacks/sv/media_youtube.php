@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'YouTube';
 $string['pluginname_help'] = 'Videodelningstjänsten Youtube.com. Video- och spellistelänkar stöds.';
-$string['privacy:metadata'] = 'Pluginmodulen Youtube-media lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Youtube-media lagrar ingen personinformation.';
 $string['supportsplaylist'] = 'YouTube-spellistor';
 $string['supportsvideo'] = 'YouTube-videor';

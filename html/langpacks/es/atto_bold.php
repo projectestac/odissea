@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Negrita';
-$string['privacy:metadata'] = 'El plugin atto_bold no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_bold no almacena ningún dato personal.';

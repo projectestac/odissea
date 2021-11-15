@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Verktygskonsumentprofiler';
-$string['privacy:metadata'] = 'Pluginmodulen LTI-tjänst för verktygs-konsumentprofiler lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen LTI-tjänst för verktygs-konsumentprofiler lagrar ingen personinformation.';

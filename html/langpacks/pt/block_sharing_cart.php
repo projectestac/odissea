@@ -79,9 +79,9 @@ $string['privacy:metadata:block_sharing_cart_plugins:plugin'] = 'O nome do módu
 $string['privacy:metadata:block_sharing_cart_plugins:userid'] = 'O ID do utilizador';
 $string['recordnotfound'] = 'Itens partilhados não encontrados';
 $string['requireajax'] = 'O Carrinho de Partilha requer AJAX';
-$string['requirejs'] = 'O Carrinho de Partilha requer JavaScript ativado no seu navegador';
+$string['requirejs'] = 'O Carrinho de Partilha requer o JavaScript ativado no seu navegador';
 $string['restore'] = 'Copiar para a disciplina';
-$string['restore_heavy_load_warning_message'] = 'O tempo de carregamento é maior porque mais de 10 atividades/recursos estão a ser processados.';
+$string['restore_heavy_load_warning_message'] = 'O tempo de carregamento é maior porque estão a ser processadas mais de 10 atividades/recursos.';
 $string['section_name_conflict'] = 'Conflito no título da secção';
 $string['settings:userdata_copyable_modtypes'] = 'Tipo de módulos com dados de utilizador copiáveis';
 $string['settings:userdata_copyable_modtypes_desc'] = 'Ao copiar uma atividade para o Carrinho de Partilha, uma caixa de diálogo aparece a perguntar se pretende incluir, ou não, os dados de utilizador na cópia.
@@ -92,19 +92,18 @@ Quando as perguntas a serem restauradas já existem, e para evitar dados inconsi
 Pode ser útil para evitar alguns erros de restauro, tal como: <i>error_question_match_sub_missing_in_db</i>.';
 $string['sharing_cart'] = 'Carrinho de Partilha';
 $string['sharing_cart:addinstance'] = 'Adicionar novo bloco de Carrinho de Partilha';
-$string['sharing_cart_help'] = '<h2 class="helpheading">Funcionamento</h2>
-<dl style="margin-left:0.5em;">
-<dt>Copiar da disciplina para o Carrinho de Partilha</dt>
-<dd>Aparecerá um pequeno ícone "Copiar para Carrinho de Partilha" após cada recurso ou atividade de uma disciplina ou quando edita o recurso ou a atividade.
+$string['sharing_cart_help'] = '<div>
+<strong>Copiar da disciplina para o Carrinho de Partilha</strong>
+<p>Aparecerá um pequeno ícone "Copiar para Carrinho de Partilha" após cada recurso ou atividade de uma disciplina ou quando edita o recurso ou a atividade.
 Clique no ícone para enviar uma cópia do recurso/atividade para o Carrinho de Partilha.
-Apenas a atividade/recurso em si, sem dados do utilizador, será clonada.</dd>
-<dt>Copiar do Carrinho de Partilha para a disciplina</dt>
-<dd>Clique no ícone "Copiar para a disciplina" no Carrinho de Partilha e selecione um dos marcadores de destino em cada secção, ou clique no ícone "Cancelar" que está no topo da página.</dd>
-<dt>Criar pastas dentro de Carrinho de Partilha</dt>
-<dd>Clique em "Mover para a pasta" num item do Carrinho de Partilha.
+Apenas será clonada a atividade/recurso em si, sem dados do utilizador.</p>
+<strong>Copiar do Carrinho de Partilha para a disciplina</strong>
+<p>Clique no ícone "Copiar para a disciplina" no Carrinho de Partilha e selecione um dos marcadores de destino em cada secção ou clique no ícone "Cancelar" que está acima.</p>
+<strong>Criar pastas dentro de Carrinho de Partilha</strong>
+<p>Clique em "Mover para a pasta" num item do Carrinho de Partilha.
 Será exibida uma caixa de entrada de texto para o novo nome da pasta, se ainda não houver qualquer pasta.
-Também pode selecionar uma pasta existente na lista pendente, que será substituída por uma caixa de entrada de texto se clicar no ícone "Editar".</dd>
-</dl>';
+Também pode selecionar uma pasta existente na lista pendente, que será substituída por uma caixa de entrada de texto, se clicar no ícone "Editar".</p>
+</div>';
 $string['unexpectederror'] = 'Ocorreu um erro inesperado';
-$string['uninstalled_plugin_warning_title'] = 'Este módulo desinstalado. Tentar recuperar estes dados sem reinstalar o módulo \'{$a}\' causará erros. O restauro está desativado';
+$string['uninstalled_plugin_warning_title'] = 'Este módulo está desinstalado. Tentar recuperar estes dados sem reinstalar o módulo \'{$a}\' causará erros. O restauro está desativado';
 $string['variouscourse'] = 'de várias disciplinas';

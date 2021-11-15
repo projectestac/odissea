@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['courseoverview:view'] = 'Ver informe de revisión del curso';
 $string['pluginname'] = 'Vista general del curso';
+$string['privacy:metadata'] = 'El complemento de resumen del curso no almacena ningún dato personal.';

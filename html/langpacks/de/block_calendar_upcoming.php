@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_upcoming:addinstance'] = 'Neuen Block \'Aktuelle Termine\' hinzufügen';
-$string['calendar_upcoming:myaddinstance'] = 'Neuen Block \'Aktuelle Termine\' zum Dashboard hinzufügen';
+$string['calendar_upcoming:myaddinstance'] = 'Neuen Block \'Aktuelle Termine\' im Dashboard hinzufügen';
 $string['gotocalendar'] = 'Zum Kalender ...';
 $string['pluginname'] = 'Aktuelle Termine';
 $string['privacy:metadata'] = 'Der Block \'Aktuelle Termine\' zeigt nur existierende Kalenderdaten an.';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['emptytext'] = 'Töm text';
+$string['emptytext'] = 'Tom text';
 $string['entiredocument'] = 'Hela dokumentet';
 $string['imagesmissingalt'] = 'Bilder kräver alternativ text. Om du vill åtgärda den här varningen lägger du till ett alt-attribut i dina img-taggar. Ett tomt alt-attribut kan användas, men bara när bilden är rent dekorativ och inte innehåller någon information.';
 $string['needsmorecontrast'] = 'Färgerna på förgrunds- och bakgrundstexten har inte tillräcklig kontrast. Om du vill åtgärda den här varningen ändrar du textens förgrunds- eller bakgrundsfärg så att den blir lättare att läsa.';

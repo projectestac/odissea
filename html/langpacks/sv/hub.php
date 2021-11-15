@@ -144,8 +144,8 @@ $string['registerwithmoodleorg'] = 'Registrera hos moodle.org';
 $string['registerwithmoodleorgcomplete'] = 'Slutför webbplatsregistreringen';
 $string['registerwithmoodleorginfo'] = 'Vi vill gärna hålla kontakten och förse dig med viktiga saker som gäller din Moodle-webbplats! Genom att registrera kan du:
 
-* Få meddelanden om nya Moodle-utgåvor, säkerhetsvarningar och andra viktiga nyheter.
-* Komma åt och aktivera mobila push-meddelanden från din Moodle-webbplats genom vår kostnadsfria Moodle-app.
+* Få meddelanden om nya Moodleversioner, säkerhetsvarningar och andra viktiga nyheter.
+* Komma åt och aktivera mobila push-meddelanden från din Moodle-webbplats genom vår kostnadsfria mobilapp.
 * Bidra till vår Moodle-statistik över hela världen, som hjälper oss att förbättra Moodle och våra webbplatser.
 * Din webbplats ingå i listan över registrerade Moodle-webbplatser i ditt land.';
 $string['registerwithmoodleorginfoapp'] = 'Om Moodle-appen';
@@ -165,7 +165,7 @@ $string['screenshots'] = 'Skärmbilder';
 $string['screenshots_help'] = 'Alla skärmbilder för kursen kommer att visas i sökresultat.';
 $string['search'] = 'Sök';
 $string['sendfollowinginfo'] = 'Mer information';
-$string['sendfollowinginfo_help'] = 'Följande information skickas till Moodle varje gång webbplatsregistreringen uppdateras (som standard varje vecka, när den schemalagda aktiviteten "Webbplatsregistrering" körs). Informationen bidrar endast till den totala statistiken och kommer inte att offentliggöras på någon webbplats.';
+$string['sendfollowinginfo_help'] = 'Följande information skickas till Moodle varje gång webbplatsregistreringen uppdateras (som standard varje vecka, när den schemalagda aktiviteten "Webbplatsregistrering" körs). Informationen bidrar endast till den totala statistiken och kommer inte att offentliggöras på någon webbplats. Dessutom hämtas information om din Moodle-version av den veckovisa automatiska webbplatslänkkontrollen.';
 $string['sendingcourse'] = 'Sänder kurs';
 $string['sendingsize'] = 'Vänta medan kursfilen laddas upp ({$a->total}Mb)...';
 $string['sent'] = '...klar';
@@ -200,8 +200,8 @@ $string['siteprivacynotpublished'] = 'Lista inte min webbplats';
 $string['siteprivacypublished'] = 'Visa endast webbplatsens namn';
 $string['siteregistrationcontact'] = 'Visa kontaktformulär';
 $string['siteregistrationcontact_help'] = 'Om du tillåter det kan andra personer i vår Moodle-community (som behöver vara inloggade) kontakta dig via ett formulär på vår Moodle community-webbplats. De kommer dock aldrig att kunna se din e-postadress.';
-$string['siteregistrationemail'] = 'Meddelanden om nya Moodle-utgåvor, säkerhetsvarningar och andra viktiga nyheter';
-$string['siteregistrationemail_help'] = 'Du har möjlighet att prenumerera på vårt e-postutskick för aviseringar om nya Moodle-utgåvor, säkerhetsvarningar och andra viktiga nyheter. Du kan avsluta prenumerationen när som helst.';
+$string['siteregistrationemail'] = 'Meddelanden om nya Moodleversioner, säkerhetsvarningar och andra viktiga nyheter';
+$string['siteregistrationemail_help'] = 'Du har möjlighet att prenumerera på vårt e-postutskick för aviseringar om nya Moodleversioner, säkerhetsvarningar och andra viktiga nyheter. Du kan avsluta prenumerationen när som helst.';
 $string['siteregistrationupdated'] = 'Webbplatsregistrering uppdaterad';
 $string['siterelease'] = '';
 $string['siterelease_help'] = 'Moodle versionsnummer för denna plats';

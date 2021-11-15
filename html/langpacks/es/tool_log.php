@@ -26,6 +26,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actlogshdr'] = 'Opciones de registro disponibles';
-$string['configlogplugins'] = 'Active los plugins necesarios y organícelos en el orden adecuado.';
+$string['configlogplugins'] = 'Por favor habilite todos los complementos necesarios y organícelos en el orden adecuado.';
+$string['exportlog'] = 'Incluir registros al exportar';
+$string['exportlogdetail'] = 'Incluir registros que hagan referencia al usuario al exportar.';
 $string['logging'] = 'Logging';
 $string['managelogging'] = 'Administrar opciones de registro';
+$string['pluginname'] = 'Gestor de almacén de registros';
+$string['privacy:metadata:logstore'] = 'El registro almacena';
+$string['privacy:path:logs'] = 'Registros';
+$string['privacy:request:origin:cli'] = 'Herramienta de línea de comandos';
+$string['privacy:request:origin:restore'] = 'Respaldo está siendo restaurado';
+$string['privacy:request:origin:web'] = 'Petición web estándar';
+$string['privacy:request:origin:ws'] = 'App móvil o servicio web';
+$string['reportssupported'] = 'Informes compatibles';
+$string['subplugintype_logstore'] = 'Almacén de registro';
+$string['subplugintype_logstore_plural'] = 'Almacenes de registro';

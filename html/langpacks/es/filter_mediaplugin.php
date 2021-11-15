@@ -27,7 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fallbackaudio'] = 'Enlace de audio';
 $string['fallbackvideo'] = 'Enlace de vídeo';
-$string['filtername'] = 'Conectores Multimedia';
+$string['filtername'] = 'Complementos multimedia';
 $string['linktomedia'] = 'El filtro de plugins multimedia busca un enlace en el texto que apunte hacia un recurso multimedia y remplaza el enlace con un código del reproductor multimedia apropiado que pueda reproducir el recurso. También remplaza las etiquetas (tags) <video> y  <audio>  con los reproductores seleccionados de video y audio.
 
 <a href="{$a}">Gestionar reproductores de medios</a>';
+$string['privacy:metadata'] = 'El complemento de complementos multimedia no almacena ningún dato personal.';

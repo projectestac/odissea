@@ -38,5 +38,6 @@ $string['fileurl_help'] = 'El archivo remoto del campo URL se usa para buscar da
 $string['importxml'] = 'Importar XML';
 $string['importxml_help'] = 'Las notas se pueden importar a través de un archivo XML que contenga los números de identificación de usuario y su actividad. Para obtener el formato correcto, primero exporte algunas notas al archivo XML y luego compruebe el archivo.';
 $string['pluginname'] = 'Archivo XML';
+$string['privacy:metadata'] = 'El complemento de importación de calificaciones desde XML no almacena ningún dato personal.';
 $string['xml:publish'] = 'Publicar importación de calificaciones XML';
 $string['xml:view'] = 'Importar calificaciones XML';

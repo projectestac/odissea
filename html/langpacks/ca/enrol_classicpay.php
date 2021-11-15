@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['enrolenddate'] = 'Data de finalització';
 $string['enrolperiod'] = 'Durada de la inscripció';
 $string['enrolperiod_desc'] = 'Període de temps per defecte durant el qual la inscripció és vàlida. Si s\'estableix a zero, la durada de la inscripció serà il·limitada per defecte.';
 $string['enrolperiod_help'] = 'Període de temps durant el qual la inscripció és vàlida; comença en el moment en què l\'usuari s\'ha inscrit. Si s\'inhabilita, la durada de la inscripció esdevé il·limitada.';

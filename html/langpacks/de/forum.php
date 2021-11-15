@@ -539,11 +539,13 @@ $string['postbymailsuccess'] = 'Ihre Antwort \'{$a->subject}\' wurde erfolgreich
 $string['postbymailsuccess_html'] = 'Ihre Antwort <a href="{$a->discussionurl}">{$a->subject}</a> wurde erfolgreich hinzugefügt.';
 $string['postbyuser'] = '{$a->post} von {$a->user}';
 $string['postincontext'] = 'Diskussion im Forum zeigen';
-$string['postisprivatereply'] = 'Der Beitrag wurde privat verfasst und ist nicht für alle Personen sichtbar.';
+$string['postisprivatereply'] = 'Dies ist eine private Antwort, die ist nur sichtbar ist für Sie selber und für alle mit dem Recht, private Antworten zu sehen, wie Trainer/innen und Manager/innen.';
+$string['postmailinfo'] = 'Dies ist eine Kopie einer Mitteilung, die in \'{$a}\' gepostet wurde.';
 $string['postmailinfolink'] = 'Diese Mitteilung kommt aus dem Kurs \'{$a->coursename}\'.
 
 Antworten Sie über diesen Link: {$a->replylink}';
 $string['postmailnow'] = 'Dieser Beitrag wird direkt als E-Mail an alle Abonnent/innen des Forums versendet.';
+$string['postmailreply'] = 'Zum Antworten klicken Sie auf diesen Link: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'Nutzt Wissen über einzelne Fakten';
 $string['postrating2'] = 'Reflektiert das Wissen in Einzelfällen';
@@ -665,7 +667,7 @@ $string['search:post'] = 'Forum - Beiträge';
 $string['searchdatefrom'] = 'Beiträge müssen neuer sein als';
 $string['searchdateto'] = 'Beiträge müssen älter sein als';
 $string['searchforumintro'] = 'Tragen Sie die Suchbegriffe in einem oder mehreren Feldern ein:';
-$string['searchforums'] = 'Suche in Foren';
+$string['searchforums'] = 'Foren durchsuchen';
 $string['searchfullwords'] = 'Vollständige Wörter suchen';
 $string['searchnotwords'] = 'Wörter sollen NICHT im Suchergebnis vorkommen';
 $string['searcholderposts'] = 'Ältere Beiträge suchen...';

@@ -33,17 +33,26 @@ $string['imscp:addinstance'] = 'Añadir un nuevo paquete de contenido IMS';
 $string['imscp:view'] = 'Mostrar contenido IMS';
 $string['indicator:cognitivedepth'] = 'Paquete de contenido IMS cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en un recurso de Paquete de contenido IMS.';
+$string['indicator:cognitivedepthdef'] = 'Paquete IMS cognitivo';
+$string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por los recursos del paquete IMS durante este intervalo de análisis (Niveles = Sin vista, Vista)';
 $string['indicator:socialbreadth'] = 'Paquete de contenido IMS social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en un recurso de Paquete de contenido IMS.';
+$string['indicator:socialbreadthdef'] = 'Paquete IMS social';
+$string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso social ofrecido por los recursos del paquete IMS durante este intervalo de análisis (Niveles = Sin participación, Participante solo)';
 $string['keepold'] = 'Archivo de paquetes';
 $string['keepoldexplain'] = '¿Cuántos paquetes desea archivar?';
 $string['modulename'] = 'Paquete de contenido IMS';
-$string['modulename_help'] = 'Un paquete de contenidos IMS permite mostrar dentro del curso paquetes de contenidos creados conforme a la especificación <b>IMS Content Packaging</b>.';
+$string['modulename_help'] = 'Un paquete de contenido IMS es una colección de archivos que se empaquetan de acuerdo con un estándar acordado para que puedan reutilizarse en diferentes sistemas. El módulo de paquete de contenido IMS permite que dichos paquetes de contenido se carguen como un archivo zip y se añadan a un curso como recurso.
+
+El contenido generalmente se muestra en varias páginas, con navegación entre las páginas. Hay varias opciones para mostrar contenido en una ventana emergente, con un menú de navegación o botones, etc.
+
+Puede usarse un paquete de contenido IMS para presentar contenido multimedia y animaciones.';
 $string['modulenameplural'] = 'Paquete de contenidos IMS';
 $string['navigation'] = 'Navegación';
 $string['packagefile'] = 'Paquete de archivos';
 $string['page-mod-imscp-x'] = 'Cualquier página del módulo Paquete de contenidos IMS';
 $string['pluginadministration'] = 'Administración IMSCP';
 $string['pluginname'] = 'Paquete de contenidos IMS';
+$string['privacy:metadata'] = 'El complemento de paquete de contenido IMS no almacena ningún dato personal.';
 $string['search:activity'] = 'Paquete de contenido IMS - información del recurso';
 $string['toc'] = 'TOC';

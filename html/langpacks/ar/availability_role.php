@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'السماح فقط للمستخدمين الذين لهم دور محدد في المساق.';
-$string['privacy:metadata'] = 'إن ملحق التقييد حسب دور المساق لا يخزن أي بيانات شخصية.';
+$string['description'] = 'السماح فقط للمستخدمين الذين لهم دور محدد في المقرر الدراسي.';
+$string['privacy:metadata'] = 'إن ملحق التقييد حسب دور المقرر لا يخزن أي بيانات شخصية.';
 $string['setting_supportedrolesheading'] = 'الأدوار المدعومة';
 $string['setting_supportguestrole_desc'] = 'إذا تم تنشيطه، يمكن تقييد إتاحة النشاطات أو منعها عن المستخدمين الذين يعاينون المقرر الدراسي بصفة ضيوف.';
 $string['setting_supportnotloggedinrole_desc'] = 'إذا تم تنشيطه، يمكن تقييد إتاحة النشاطات أو منعها عن المستخدمين الذين لم يسجلوا دخولهم.';

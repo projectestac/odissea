@@ -32,6 +32,7 @@ $string['answerno'] = 'الإجابة {$a}';
 $string['correct_answer'] = 'الإجابة الصحيحة';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}';
 $string['correctanswers'] = '<b>التعليمات</b>';
+$string['javaneeded'] = 'لاستعمال هذه الصفحة، تحتاج إلى مستعرض تم فيه تمكين Java. قم بتنزيل آخر إصدار من ملحق Java من {$a}.';
 $string['notenoughanswers'] = 'هذا النوع من الأسئلة يتطلب {$a} من الإجابات على الأقل';
 $string['pleaseenterananswer'] = 'يرجى إدخال الإجابة.';
 $string['viewing_answer'] = 'تجري حالياً معاينة الإجابة';

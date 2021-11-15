@@ -72,7 +72,7 @@ $string['kurtosis'] = 'Emaitzen zapaltasun banaketa ({$a} kontuan hartuta)';
 $string['lastattempts'] = 'ikasle bakoitzaren azken saiakera';
 $string['lastattemptsavg'] = 'Azken saiakeren batez besteko kalifikazioa';
 $string['lastcalculated'] = 'Azkenengoz kalkulatua orain dela {$a->lastcalculated}, ordutik {$a->count} saiakera egon dira.';
-$string['maximumfacility'] = 'Gehienezko erraztasuna';
+$string['maximumfacility'] = 'Gehieneko erraztasuna';
 $string['median'] = 'Kalifikazioaren mediana ({$a} kontuan hartuta)';
 $string['medianfacility'] = 'Erraztasunaren mediana';
 $string['minimumfacility'] = 'Gutxieneko erraztasuna';
@@ -83,7 +83,7 @@ $string['negcovar_help'] = 'Galdera honen saiakera multzo honentzako kalifikazio
 
 Gure benetako pisua kalkulatzeko ekuazioa ezin da kalkulatu kasu honetan. Galdetegi honetako beste galderentzako benetako pisuaren kalkulua galdera bakoitzaren benetako pisua da nabarmenduta dauden kobariantza negatiboa duten galderei emandako kalifikazioa gehienez zero bada.
 
-Galdetegia editatzen baduzu kobariantza negatiboa duten nabarmandutako galdera hauen gehienezko kalifikazioa zero izateko, orduan galdera hauen benetako pisua zero izango da eta beste galderen benetako pisua orain kalkulatu dena izango da.';
+Galdetegia editatzen baduzu kobariantza negatiboa duten nabarmandutako galdera hauen gehieneko kalifikazioa zero izateko, orduan galdera hauen benetako pisua zero izango da eta beste galderen benetako pisua orain kalkulatu dena izango da.';
 $string['nogradedattempts'] = 'Ez da saiakerarik egin galdetegi honetan, edo egindako saiakera guztiek eskuzko kalifikazioa behar dute.';
 $string['nostudentsingroup'] = 'Oraindik ez dago ikaslerik talde honetan';
 $string['optiongrade'] = 'Kalifikazio partziala';

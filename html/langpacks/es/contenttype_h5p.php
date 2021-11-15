@@ -31,4 +31,4 @@ $string['h5p:upload'] = 'Subir un nuevo contenido H5P';
 $string['h5p:useeditor'] = 'Crear o editar contenido usando el editor H5P';
 $string['pluginname'] = 'H5P';
 $string['pluginname_help'] = 'Banco de contenido para subir y compartir contenido H5P';
-$string['privacy:metadata'] = 'El plugin del banco de contenido H5P no almacena ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento del banco de contenido H5P no almacena ningún dato personal.';

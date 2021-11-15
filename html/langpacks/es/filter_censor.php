@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['badwords'] = 'mierda, follada, hijo de puta, joder, idiota, pene, coño, ojete, pinchazo, perra, jism, puta, idiota, paja, bastardo, consolador, masturbarse, orgasmo, negro, vagina';
 $string['filtername'] = 'Censor de términos';
+$string['privacy:metadata'] = 'El complemento de censura de palabras no almacena ningún dato personal.';

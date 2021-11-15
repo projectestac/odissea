@@ -83,6 +83,7 @@ $string['profilelabel'] = '{$a->label}: {$a->profile} {$a->operator} {$a->value}
 $string['profilelabelnovalue'] = '{$a->label}: {$a->profile} {$a->operator}';
 $string['removeall'] = 'Retirar todos os filtros';
 $string['removeselected'] = 'Retirar o seleccionado';
+$string['replacefilters'] = 'Substituír os filtros';
 $string['selectlabel'] = '{$a->label} {$a->operator} {$a->value}';
 $string['startswith'] = 'comeza con';
 $string['tablenosave'] = 'Os cambios na táboa anterior gardaranse automaticamente.';

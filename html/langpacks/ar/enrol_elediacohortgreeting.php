@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['addcohort'] = 'إضافة فوج جديد';
-$string['backtocohorts'] = 'عودة إلى الأفواج';
+$string['addcohort'] = 'إضافة دفعة جديد';
+$string['backtocohorts'] = 'عودة إلى الدفعات';
 $string['description'] = 'الوصف';
-$string['duplicateidnumber'] = 'فوج بنفس رقم المُعرَّف موجود مسبقاً';
+$string['duplicateidnumber'] = 'دفعة بنفس رقم المُعرَّف موجودة مسبقاً';
 $string['name'] = 'الاسم';

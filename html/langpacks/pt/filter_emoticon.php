@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Converter emoticons em imagens';
-$string['privacy:metadata'] = 'O módulo Converter emoticons em imagens não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Converter emoticons em imagens não armazena quaisquer dados pessoais.';
 $string['settingformats'] = 'Aplicar filtro aos seguintes formatos';
 $string['settingformats_desc'] = 'O filtro apenas será aplicado se o texto original tiver sido inserido de acordo com um dos formatos selecionados.';

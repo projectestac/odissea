@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'Kompetenser att granska';
 $string['lp:addinstance'] = 'Lägg till ett nytt studieplanblock';
-$string['lp:myaddinstance'] = 'Lägg till ett nytt studieplanblock på Mitt Moodle';
+$string['lp:myaddinstance'] = 'Lägg till ett nytt studieplanblock till översiktssidan';
 $string['myplans'] = 'Mina studieplaner';
 $string['noactiveplans'] = 'Inga aktiva planer';
 $string['planstoreview'] = 'Studieplaner för bedömning';

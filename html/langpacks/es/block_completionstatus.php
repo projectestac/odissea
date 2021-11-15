@@ -30,5 +30,6 @@ $string['completionstatus:addinstance'] = 'Añadir un nuevo bloque de estatus de
 $string['criteriagroup'] = 'Grupo de criterios';
 $string['firstofsecond'] = '{$a->first} de {$a->second}';
 $string['pluginname'] = 'Estatus de finalización del curso';
+$string['privacy:metadata'] = 'El bloque de estado de finalización del curso sólo muestra información sobre la finalización del curso y no almacena ningún dato por su cuenta.';
 $string['requirement'] = 'Requisito';
 $string['returntocourse'] = 'Regresar al curso';

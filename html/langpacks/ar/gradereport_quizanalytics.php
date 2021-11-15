@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['attemptsummarydes'] = 'هذا الرسم البياني يصور كيفية نجاحك في محاولتك.';
 $string['avgscore'] = 'متوسط الدرجة';
 $string['bestscore'] = 'أفضل درجة';
 $string['cutoffscore'] = 'درجة التوقف';
@@ -39,6 +40,7 @@ $string['noofrightans'] = 'عدد الإجابات الصحيحة';
 $string['noofstudents'] = 'عدد الطلاب';
 $string['noquizfound'] = 'لم يتم العثور على أي اختبار!';
 $string['peerscores'] = 'درجات النظراء';
+$string['pluginname'] = 'تحليلات الاختبار';
 $string['questionspercategory'] = 'الأسئلة حسب الصنف';
 $string['quizanalytics:view'] = 'معاينة تقرير تحليل الاختبار';
 $string['quizname'] = 'اسم الاختبار';

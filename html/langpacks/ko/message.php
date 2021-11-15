@@ -100,6 +100,7 @@ $string['outputdoesnotexist'] = '메세지 출력이 존재하지 않습니다.'
 $string['outputenabled'] = '출력 활성화됨';
 $string['outputnotavailable'] = '사용할 수 없음';
 $string['outputnotconfigured'] = '구성되지 않음';
+$string['page-message-x'] = '모든 메세지 페이지';
 $string['permitted'] = '허용됨';
 $string['removecontact'] = '연락처 삭제';
 $string['removecontactconfirm'] = '연락처에서 {$a}님을 삭제하시겠습니까?';

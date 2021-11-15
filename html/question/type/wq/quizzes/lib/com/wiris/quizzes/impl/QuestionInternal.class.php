@@ -1,27 +1,9 @@
 <?php
 
-class com_wiris_quizzes_impl_QuestionInternal extends com_wiris_util_xml_SerializableImpl implements com_wiris_quizzes_api_MultipleQuestion{
+class com_wiris_quizzes_impl_QuestionInternal extends com_wiris_util_xml_SerializableImpl implements com_wiris_quizzes_api_Question{
 	public function __construct() { if(!php_Boot::$skip_constructor) {
 		parent::__construct();
 	}}
-	public function addAssertionOfSubquestion($sub, $name, $correctAnswer, $studentAnswer, $parameters) {
-	}
-	public function setPropertyOfSubquestion($sub, $name, $value) {
-	}
-	public function getPropertyOfSubquestion($sub, $name) {
-		return null;
-	}
-	public function setCorrectAnswerOfSubquestion($sub, $index, $correctAnswer) {
-	}
-	public function getCorrectAnswerOfSubquestion($sub, $index) {
-		return null;
-	}
-	public function getCorrectAnswersLengthOfSubquestion($sub) {
-		return 0;
-	}
-	public function getNumberOfSubquestions() {
-		return 0;
-	}
 	public function getProperty($name) {
 		return null;
 	}
@@ -40,7 +22,21 @@ class com_wiris_quizzes_impl_QuestionInternal extends com_wiris_util_xml_Seriali
 	}
 	public function setCorrectAnswer($index, $answer) {
 	}
+	public function getAnswerFieldType() {
+		return com_wiris_quizzes_api_ui_AnswerFieldType::$INLINE_MATH_EDITOR;
+	}
 	public function setAnswerFieldType($type) {
+	}
+	public function removeSlot($slot) {
+	}
+	public function addNewSlotFromModel($slot) {
+		return null;
+	}
+	public function addNewSlot() {
+		return null;
+	}
+	public function getSlots() {
+		return null;
 	}
 	public function setOption($name, $value) {
 	}

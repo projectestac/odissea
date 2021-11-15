@@ -101,7 +101,7 @@ Kontsultak  ondokoetarako erabili daitezke
 * Ikasleen erabakiak errazteko, ikastaroaren norabidea aukeratzeko bozketak egiteko, adibidez';
 $string['modulenameplural'] = 'Kontsultak';
 $string['moveselectedusersto'] = 'Mugitu aukeratutako erabiltzaileak hona...';
-$string['multiplenotallowederror'] = 'Erantzun anitzak ez daude baimenduta inkesta xume honetan';
+$string['multiplenotallowederror'] = 'Erantzun anizkoitzak ez daude baimenduta inkesta xume honetan';
 $string['mustchooseone'] = 'Erantzunen bat aukeratu behar duzu gorde aurretik. Ezer ez da gorde orain arte.';
 $string['noguestchoose'] = 'Sentitzen dugu, bisitariek ezin diete inkestei erantzun';
 $string['noresultsviewable'] = 'Emaitzak ezin dira orain ikusi';

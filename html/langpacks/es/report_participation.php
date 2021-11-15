@@ -26,7 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventreportviewed'] = 'Informe de participación visto';
+$string['nologreaderenabled'] = 'No hay lector de registros habilitado';
 $string['page-report-participation-index'] = 'Informe de participación en el curso';
 $string['page-report-participation-x'] = 'Informe de participación en el curso';
 $string['participation:view'] = 'Ver informe de participación en el curso';
 $string['pluginname'] = 'Participación en el curso';
+$string['privacy:metadata'] = 'El complemento de participación en curso no almacena ningún dato personal.';

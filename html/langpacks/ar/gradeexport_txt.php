@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradeexported'] = 'تقديرات نصية تم تصديرها';
 $string['pluginname'] = 'ملف نص عادي';
-$string['privacy:metadata'] = 'إن ملحق تصدير العلامات بشكل نصي لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن ملحق تصدير التقديرات بشكل نصي لا يخزن أي بيانات شخصية.';
 $string['timeexported'] = 'آخر ما تم تنزيله من هذا المقرر الدراسي';
-$string['txt:publish'] = 'نشر تصدير العلامات بصيغة TXT';
-$string['txt:view'] = 'استعمال تصدير العلامة بشكل نص';
+$string['txt:publish'] = 'نشر تصدير التقديرات بصيغة TXT';
+$string['txt:view'] = 'استعمال تصدير الدرجة بشكل نص';

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'منخفض';
-$string['privacy:metadata'] = 'إن ملحق atto_subscript لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_subscript لا تخزن أيّ بيانات شخصية.';

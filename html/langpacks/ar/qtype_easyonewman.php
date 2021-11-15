@@ -34,6 +34,7 @@ $string['caseconformtrue'] = 'صح';
 $string['caseorientfalse'] = 'خطأ';
 $string['caseorienttrue'] = 'صح';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}.';
+$string['javaneeded'] = 'لاستعمال هذه الصفحة، تحتاج إلى مستعرض تم فيه تمكين Java. قم بتنزيل آخر إصدار من ملحق Java من {$a}.';
 $string['notenoughanswers'] = 'هذا النوع من الأسئلة يتطلب {$a} من الإجابات على الأقل';
 $string['pleaseenterananswer'] = 'يرجى إدخال الإجابة.';
 $string['youranswer'] = 'إجابتك: {$a}';

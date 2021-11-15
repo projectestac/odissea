@@ -40,9 +40,9 @@ class com_wiris_quizzes_impl_MathContent extends com_wiris_util_xml_Serializable
 	static $TYPE_IMAGE = "image";
 	static $TYPE_IMAGE_REF = "imageref";
 	static $TYPE_STRING = "string";
-	static $TYPE_CONSTRUCTION = "construction";
+	static $TYPE_GEOMETRY_FILE = "construction";
 	static function getMathType($content) {
-		if($content === null) {
+		if($content === null || $content === "") {
 			return com_wiris_quizzes_impl_MathContent::$TYPE_TEXT;
 		}
 		$content = trim($content);
@@ -60,13 +60,18 @@ class com_wiris_quizzes_impl_MathContent extends com_wiris_util_xml_Serializable
 				}
 			}
 		}
+		if(com_wiris_util_geometry_GeometryFile::isGeometryFile($content)) {
+			return com_wiris_quizzes_impl_MathContent::$TYPE_GEOMETRY_FILE;
+		}
 		return com_wiris_quizzes_impl_MathContent::$TYPE_TEXT;
 	}
 	static function isEmpty($content) {
 		$content = trim($content);
 		if(StringTools::startsWith($content, "<math")) {
 			$content = _hx_substr($content, _hx_index_of($content, ">", null) + 1, null);
-			$content = _hx_substr($content, 0, _hx_last_index_of($content, "<", null));
+			if(strlen($content) > 0) {
+				$content = _hx_substr($content, 0, _hx_last_index_of($content, "<", null));
+			}
 		}
 		while(StringTools::startsWith($content, "<mrow")) {
 			$content = _hx_substr($content, _hx_index_of($content, ">", null) + 1, null);

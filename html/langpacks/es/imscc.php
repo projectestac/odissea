@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['cc2moodle_checking_schema'] = 'Formato CC. Comprobando esquema...';
+$string['cc2moodle_checking_schema'] = '¡Formato CC! Comprobando esquema...';
 $string['cc2moodle_invalid_schema'] = 'El esquema no es válido';
 $string['cc2moodle_manifest_dont_load'] = 'No se puede cargar el manifiesto XML';
 $string['cc2moodle_req_auth'] = 'ERROR: El paquete Common Cartridge requiere autorización.';
-$string['cc2moodle_valid_schema'] = 'Esquema válido';
+$string['cc2moodle_valid_schema'] = '¡Esquema válido!';
 $string['cc_import_req_dom'] = 'ERROR: La importación Common Cartridge requiere extensión DOM.';
 $string['cc_import_req_libxml'] = 'ERROR: La importación Common Cartridge requiere extensión LIBXML.';
 $string['cc_import_req_libxmlminversion'] = 'ERROR: La importación Common Cartridge requiere versión LIBXML 2.6.30 o posterior.';

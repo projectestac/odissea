@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Datumfält';
 $string['pluginname'] = 'Datum';
-$string['privacy:metadata'] = 'Fältkomponenten Datumfält lagrar ingen personlig information. Den använder tabeller definierade i mod_data.';
+$string['privacy:metadata'] = 'Fältkomponenten Datumfält lagrar ingen personinformation. Den använder tabeller definierade i mod_data.';

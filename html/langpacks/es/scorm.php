@@ -42,7 +42,7 @@ $string['allowapidebug'] = 'Activar depuración y trazado API (ajustar la másca
 $string['allowtypeaicchacp'] = 'Habilitar AICC HACP externo';
 $string['allowtypeaicchacp_desc'] = 'Si se habilita permite comunicaciones externas AICC HACP sin necesidad de identidicación de usuario para peticiones de un paquete AICC externo';
 $string['allowtypeexternal'] = 'Habilitar tipo de paquete externo';
-$string['allowtypeexternalaicc'] = 'Habilitar url AICC directa';
+$string['allowtypeexternalaicc'] = 'Habilitar URL AICC directa';
 $string['allowtypeexternalaicc_desc'] = 'Si se habilita permite una url directa a un paquete simple AICC';
 $string['allowtypelocalsync'] = 'Habilitar tipo de paquete descargado';
 $string['apidebugmask'] = 'Máscara de captura de depuración API (regex simple en <username>:<activityname>)';
@@ -90,6 +90,10 @@ $string['collapsetocwinsize'] = 'Contraer TOC cuando el tamaño de la ventana in
 $string['collapsetocwinsizedesc'] = 'Este ajuste permite especificar el tamaño de la ventana inferior con el que el TOC se contrae automáticamente.';
 $string['compatibilitysettings'] = 'Configuración de compatibilidad';
 $string['completed'] = 'Finalizado';
+$string['completiondetail:allscos'] = 'Hacer todas las partes de esta actividad';
+$string['completiondetail:completionscore'] = 'Obtener una calificación de {$a} o más';
+$string['completiondetail:completionstatuscompleted'] = 'Completar la actividad';
+$string['completiondetail:completionstatuspassed'] = 'Superar la actividad';
 $string['completionscorerequired'] = 'Requiere puntuación mínima';
 $string['completionscorerequired_help'] = 'Al habilitar este parámetro se requerirá que el usuario tenga al menos la puntuación mínima registrada para que se marque la actividad SCORM como finalizada, así como cualquier otro requerimiento de Finalización de Actividad.';
 $string['completionscorerequireddesc'] = 'Se requiere un puntaje mínimo de {$a} para completarse.';
@@ -159,7 +163,7 @@ $string['floating'] = 'Flotante';
 $string['forceattemptalways'] = 'Siempre';
 $string['forceattemptoncomplete'] = 'Cuando el intento anterior se completó, pasó o falló';
 $string['forcecompleted'] = 'Forzar finalización';
-$string['forcecompleted_help'] = 'Si se activa, el estado del intento actual se cambia a "Completado". Este ajuste sólo se aplica a los paquetes SCORM 1.2. Es útil si el paquete SCORM no se ocupa de revisar el intento correctamente, ya sea en la revisión o en el modo de exploración, o se produce cualquier otro funcionamiento incorrecto en el estado "Completado"';
+$string['forcecompleted_help'] = 'Si está habilitado, el estado del intento actual se cambia a "completado". (Sólo se aplica a los paquetes SCORM 1.2.)';
 $string['forcecompleteddesc'] = 'Esta preferencia fija el valor por defecto para mostrar el ajuste de forzar completados';
 $string['forcejavascript'] = 'Obligar a los usuarios a tener JavaScript habilitado';
 $string['forcejavascript_desc'] = 'Si está activado (recomendado) impide el acceso a los objetos SCORM cuando JavaScript no está soportado/activado en el navegador del usuario. Si está desactivado, el usuario puede ver el SCORM, pero la comunicación API fallará y no se almacenará la información de la calificación.';
@@ -171,8 +175,8 @@ $string['forcenewattempts_help'] = 'Hay 3 opciones:
 * Cuando el intento anterior se completó, pasó o falló: se basa en el paquete SCORM que establece el estado de \'completado\', \'aprobado\' o \'fallido\'.
 * Siempre: cada reingreso a la actividad SCORM generará un nuevo intento y el alumno no regresará al mismo punto al que llegó en su intento anterior.';
 $string['found'] = 'Encontrado manifiesto';
-$string['frameheight'] = 'Esta preferencia determina la altura por defecto del marco o ventana SCO';
-$string['framewidth'] = 'Esta preferencia ajusta la anchura por defecto del marco o ventana SCO';
+$string['frameheight'] = 'La altura del marco del escenario o la ventana.';
+$string['framewidth'] = 'La anchura del marco del escenario o la ventana.';
 $string['fromleft'] = 'Desde la izquierda';
 $string['fromtop'] = 'Desde arriba';
 $string['fullscreen'] = 'Llenar toda la pantalla';
@@ -189,7 +193,7 @@ Hay 4 métodos de calificación:
 * Calificación más alta: La puntuación máxima obtenida  entre todos los objetos realizados
 * Calificación promedio: La media de todas las puntuaciones
 * Calificaciones sumadas: La suma de todas las puntuaciones';
-$string['grademethoddesc'] = 'Esta preferencia fija el valor por defecto del método de calificación de una actividad';
+$string['grademethoddesc'] = 'El método de calificación define cómo se determina la nota de la actividad para un único intento.';
 $string['gradereported'] = 'Calificación informada';
 $string['gradescoes'] = 'Objetos de aprendizaje';
 $string['gradesettings'] = 'Configuración de calificación';
@@ -202,14 +206,14 @@ $string['hidebrowse_help'] = '<p>Si esta opción está ajustada a "Sí", el bot�
 <p>En caso contrario, el estudiante puede elegir entre previsualizar la actividad o realizar un intento de forma normal.</p>
 
 <p>Cuando un objeto de aprendizaje es completado en modo previsualizar, es marcado con el icono de previsualizado (<img src="<?php echo $CFG->wwwroot.\'/mod/scorm/pix/browsed.gif\' ?>" alt="<?php print_string(\'browsed\',\'scorm\') ?>" title="<?php print_string(\'browsed\',\'scorm\') ?>" />).</p>';
-$string['hidebrowsedesc'] = 'Esta preferencia fija el valor por defecto sobre activar o desactivar el modo de previsualización';
+$string['hidebrowsedesc'] = 'El modo de vista previa permite al estudiante explorar una actividad antes de intentarla.';
 $string['hideexit'] = 'Ocultar enlace de salida';
 $string['hidereview'] = 'Ocultar botón de revisión';
 $string['hidetoc'] = 'Mostrar la estructura del curso en el reproductor';
-$string['hidetoc_help'] = 'Esta configuración especifica cómo se muestra la tabla de contenidos en el reproductor de SCORM.';
+$string['hidetoc_help'] = 'Cómo se muestra la tabla de contenidos en el reproductor de SCORM';
 $string['hidetocdesc'] = 'Este ajuste especifica cómo se muestra la tabla de contenidos en el reproductor SCORM';
 $string['highestattempt'] = 'Intento más alto';
-$string['identifier'] = 'Identificador de preguntas';
+$string['identifier'] = 'Identificador de pregunta';
 $string['incomplete'] = 'Incompleto';
 $string['indicator:cognitivedepth'] = 'SCORM cognitiva';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad SCORM.';
@@ -248,7 +252,7 @@ $string['menubar'] = 'Mostrar la barra de menú';
 $string['min'] = 'Calificación mínima';
 $string['missing_attribute'] = 'Falta atributo ({$a->attr}) en marca {$a->tag}';
 $string['missing_tag'] = 'Falta marca {$a->tag}';
-$string['missingparam'] = 'Un elemento requerido falta o es erróneo';
+$string['missingparam'] = 'Un parámetro requerido falta o es incorrecto';
 $string['mode'] = 'Moda';
 $string['modulename'] = 'Paquete SCORM';
 $string['modulename_help'] = 'Un paquete SCORM es un conjunto de archivos que se empaquetan conforme a una norma estándar para los objetos de aprendizaje. El módulo de actividad SCORM permite cargar y añadir a los cursos paquetes SCORM o AICC como archivos zip.
@@ -359,7 +363,7 @@ $string['privacy:metadata:userid'] = 'El ID del usuario que accedió a la activi
 $string['protectpackagedownloads'] = 'Descarga de paquete protegido';
 $string['protectpackagedownloads_desc'] = 'Si está habilitado, los paquetes SCORM pueden ser descargados solo si el usuario tiene asignada capacidad en course:manageactivities. Si está deshabilitado, los paquetes SCORM pueden ser siempre descargados (por movil u otros medios)';
 $string['raw'] = 'Puntuación bruta';
-$string['regular'] = 'Manifiesto Regular';
+$string['regular'] = 'Manifiesto regular';
 $string['report'] = 'Informe';
 $string['reportcountallattempts'] = '{$a->nbattempts} intentos de {$a->nbusers} usuarios, de un total de {$a->nbresults} resultados';
 $string['reportcountattempts'] = '{$a->nbresults} resultados ({$a->nbusers} users)';
@@ -382,8 +386,8 @@ $string['scorm:viewreport'] = 'Ver informes';
 $string['scorm:viewscores'] = 'Ver puntuaciones';
 $string['scormclose'] = 'Disponible hasta';
 $string['scormcourse'] = 'Curso de Aprendizaje';
-$string['scormloggingoff'] = 'Entrada API desconectada';
-$string['scormloggingon'] = 'Entrada API conectada';
+$string['scormloggingoff'] = 'Registro de API desactivado';
+$string['scormloggingon'] = 'Registro de API activado';
 $string['scormopen'] = 'Disponible desde';
 $string['scormresponsedeleted'] = 'Eliminar los intentos del usuario';
 $string['scormstandard'] = 'Modo estándar SCORM';

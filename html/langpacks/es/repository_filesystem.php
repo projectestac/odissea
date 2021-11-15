@@ -26,10 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['blockedpath'] = 'Ruta raíz bloqueada';
-$string['configplugin'] = 'Configurar repositorio en sistema de archivos';
+$string['configplugin'] = 'Configuración para el repositorio del sistema de archivos';
+$string['crontask'] = 'Procesamiento en segundo plano para el repositorio del sistema de archivos';
 $string['donotusesysdir'] = 'No emplear el directorio del sistema como repositorio, incluido';
-$string['enablecourseinstances'] = 'Permitir a los usuarios añadir una instancia del repositorio dentro del curso (sólo puede configurarse por los administradores)';
-$string['enableuserinstances'] = 'Permitir a los usuarios añadir una instancia del repositorio dentro del contexto de usuario (solo puede configurarse  por los administradores)';
+$string['enablecourseinstances'] = 'Permitir a los administradores añadir una instancia del repositorio del sistema de archivos al curso (sólo puede configurarse por parte de los administradores)';
+$string['enableuserinstances'] = 'Permitir a los administradores añadir una instancia del repositorio del sistema de archivos para uso personal (sólo puede configurarse por parte de los administradores)';
 $string['filesystem:view'] = 'Ver el repositorio de sistema de archivos';
 $string['information'] = 'Estas carpetas están dentro del directorio <b>{$a}</b>.';
 $string['invalidpath'] = 'Ruta raíz no válida';
@@ -37,6 +38,7 @@ $string['nosubdir'] = 'Necesita crear al menos una carpeta dentro del directorio
 $string['path'] = 'Seleccionar un subdirectorio';
 $string['pluginname'] = 'Sistema de archivos';
 $string['pluginname_help'] = 'Crear un repositorio desde el directorio local';
+$string['privacy:metadata'] = 'El plugin de repositorio del sistema de archivos no almacena ni envía ningún dato personal.';
 $string['relativefiles'] = 'Permitir archivos relacionados';
 $string['relativefiles_desc'] = 'Permite acceder a todos los archivos del repositorio con los enlaces relacionados.';
 $string['root'] = 'Raíz';

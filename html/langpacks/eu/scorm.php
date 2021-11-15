@@ -33,7 +33,7 @@ $string['adminsettings'] = 'Kudeaketaren ezarpenak';
 $string['advanced'] = 'Parametroak';
 $string['aicchacpkeepsessiondata'] = 'AICC HACP saioaren datuak';
 $string['aicchacpkeepsessiondata_desc'] = 'Kanpoko AICC HACP saioaren datuak gordeko dira denbora tarte honetan (egunetan). Balio handia ezarriz gero, taula datu zaharrez beteko da, baina mesedegarri izan daiteke arazketa eginez gero';
-$string['aicchacptimeout'] = 'AICC HACPren gehienezko denbora';
+$string['aicchacptimeout'] = 'AICC HACPren gehieneko denbora';
 $string['aicchacptimeout_desc'] = 'Kanpoko AICC HACP saioa irekita mantendu daitekeen denbora (minututan)';
 $string['aiccuserid'] = 'AICC pass erabiltzailearen ID numerikoa';
 $string['aiccuserid_desc'] = 'AICC erabiltzaile-izenentzako estandarra oso mugatzailea da Moodlerekin konparatuta, eta karaktere alfanumerikoak, gidoia eta beheko gidoia soilik onartzen ditu. Puntuak, espazioak eta @ sinboloa ez ditu onartzen. Gaituz gero, erabiltzaileen ID zenbakiak pasatzen dira AICC paketeari erabiltzaile-izenen ordez.';
@@ -145,7 +145,7 @@ $string['eventtracksviewed'] = 'Ikusitako pistak';
 $string['eventuserreportviewed'] = 'Erabiltzailearen txostena ikusi da';
 $string['everyday'] = 'Egunero';
 $string['everytime'] = 'Erabiltzen den bakoitzean';
-$string['exceededmaxattempts'] = 'Gehienezko saiakera-kopurua egin duzu.';
+$string['exceededmaxattempts'] = 'Gehieneko saiakera-kopurua egin duzu.';
 $string['exit'] = 'Irten ikastarotik';
 $string['exitactivity'] = 'Irten jardueratik';
 $string['expired'] = 'Sentitzen dugu, jarduera {$a} -n itxi zen eta dagoeneko ez dago eskuragarri';
@@ -234,11 +234,11 @@ $string['location'] = 'Erakutsi kokapen-barra';
 $string['masteryoverride'] = 'Menderatze-mailaren puntuazioaren salbuespenaren egoera';
 $string['masteryoverride_help'] = 'Gaituz gero eta menderatze-mailaren puntuazioa badago, LMSFinish deitzen denean eta puntuazio gordina ezarri denean, egoera berriz kalkulatutako da puntuazio gordina eta menderatze-mailaren puntuazioa erabilita eta SCORM-ek emandako edozein egoera ("osatu gabea" barne) gainidatziko da.';
 $string['masteryoverridedesc'] = 'Ezarpen honek lehenetsitako menderatze-mailaren puntuazioaren salbuespena zehazten du.';
-$string['max'] = 'Gehienezko puntuazioa';
+$string['max'] = 'Gehieneko puntuazioa';
 $string['maximumattempts'] = 'Saiakera-kopurua';
 $string['maximumattempts_help'] = 'Ezarpen honek erabiltzaileei baimendutako saiakera-kopurua zehazten du. SCORM 1.2 eta AICC paketeetan baino ezin da aplikatu.';
-$string['maximumattemptsdesc'] = 'Hobespen honek jarduera baterako lehenetsitako gehienezko saiakera-kopurua ezartzen du';
-$string['maximumgradedesc'] = 'Hobespen honek jarduera baterako lehenetsitako gehienezko kalifikazioa ezartzen du';
+$string['maximumattemptsdesc'] = 'Hobespen honek jarduera baterako lehenetsitako gehieneko saiakera-kopurua ezartzen du';
+$string['maximumgradedesc'] = 'Hobespen honek jarduera baterako lehenetsitako gehieneko kalifikazioa ezartzen du';
 $string['menubar'] = 'Erakutsi menu-barra';
 $string['min'] = 'Gutxieneko puntuazioa';
 $string['missing_attribute'] = '{$a->attr} atributua {$a->tag} etiketan falta da';
@@ -415,12 +415,12 @@ $string['trackresponse'] = 'Erantzuna';
 $string['trackresponse_help'] = 'Hau da ikasleak galderari emandako erantzuna';
 $string['trackresult'] = 'Emaitza';
 $string['trackresult_help'] = 'Ikasleak ondo erantzun duen erakusten du.';
-$string['trackscoremax'] = 'Gehienezko puntuazioa';
-$string['trackscoremax_help'] = 'Puntuazio gordin batek izan dezakeen gehienezko balioa';
+$string['trackscoremax'] = 'Gehieneko puntuazioa';
+$string['trackscoremax_help'] = 'Puntuazio gordin batek izan dezakeen gehieneko balioa';
 $string['trackscoremin'] = 'Gutxieneko puntuazioa';
 $string['trackscoremin_help'] = 'Puntuazio gordin batek izan dezakeen gutxieneko balioa';
 $string['trackscoreraw'] = 'Puntuazio gordina';
-$string['trackscoreraw_help'] = 'Gehienezko eta gutxieneko balioen arteko tartean ikaslearen errendimendua erakusten duen zenbakia';
+$string['trackscoreraw_help'] = 'Gehieneko eta gutxieneko balioen arteko tartean ikaslearen errendimendua erakusten duen zenbakia';
 $string['tracksuspenddata'] = 'Bertan-behera utzitako data';
 $string['tracksuspenddata_help'] = 'Ikaslearen saioen arteko datak gorde eta berreskuratzeko lekua ematen du';
 $string['tracktime'] = 'Denbora';
@@ -448,14 +448,14 @@ $string['versionwarning'] = 'Manifestuaren bertsioa 1.3 baino lehenagokoa da. Ko
 $string['viewallreports'] = 'Ikusi {$a} saiakeren txostenak';
 $string['viewalluserreports'] = 'Ikusi {$a} erabiltzaileen txostenak';
 $string['whatgrade'] = 'Saiakeren kalifikazioa';
-$string['whatgrade_help'] = 'Saiakera anitzak onartzen badira, aukera honek zehazten du zein saiakeraren puntuazioa gordeko den kalifikazio liburuan: altuena, batez bestekoa, amaitutako lehen saiakera edo amaitutako azken saiakera. Amaitutako azken saiakeran ez da kontuan hartuko \'Gainditu gabe\' egoeran dauden saiakerak.
+$string['whatgrade_help'] = 'Saiakera anizkoitzak onartzen badira, aukera honek zehazten du zein saiakeraren puntuazioa gordeko den kalifikazio liburuan: altuena, batez bestekoa, amaitutako lehen saiakera edo amaitutako azken saiakera. Amaitutako azken saiakeran ez da kontuan hartuko \'Gainditu gabe\' egoeran dauden saiakerak.
 
-Saiakera anitzei buruzko oharrak:
+Saiakera anizkoitzei buruzko oharrak:
 
-* Saiakera berria hasteko, eduki-egitura orriaren Sartu botoiaren gainean dagoen laukitxoan klik egin behar da, beraz, bermatu orri horretara sarbidea aukera anitzak onartu nahi badituzu.
-* SCORM pakete batzuk barne logika bat jarraitzen dute saiakera anitzei dagokienez, gehienek ez dute ezer berezirik egiten arlo honetan. Beraz, ikaslea saiakera batean berriro sartzen bada, SCORM edukiak ez badu kasu hau modu berezi batean tratatzen, gerta liteke aurreko saiakeraren balioak berridaztea, nahiz eta saiakeraren egoera \'osatua\' edo \'gainditua\' izan.
-* Aukera anitzak kudeatzeko aukera osagarriak lortuko dituzu zehaztapen hauen bidez: \'Behartu osatzera\', \'Behartu saiakera berria\' eta \'Blokeatu azken saiakeraren ondoren\'.';
-$string['whatgradedesc'] = 'Kalifikazio-liburuan notarik altuena, batez bestekoa, lehen saiakerarena edo azken saiakerarena gordeko den, saiakera anitzak gaituz gero.';
+* Saiakera berria hasteko, eduki-egitura orriaren Sartu botoiaren gainean dagoen laukitxoan klik egin behar da, beraz, bermatu orri horretara sarbidea aukera anizkoitzak onartu nahi badituzu.
+* SCORM pakete batzuk barne logika bat jarraitzen dute saiakera anizkoitzei dagokienez, gehienek ez dute ezer berezirik egiten arlo honetan. Beraz, ikaslea saiakera batean berriro sartzen bada, SCORM edukiak ez badu kasu hau modu berezi batean tratatzen, gerta liteke aurreko saiakeraren balioak berridaztea, nahiz eta saiakeraren egoera \'osatua\' edo \'gainditua\' izan.
+* Aukera anizkoitzak kudeatzeko aukera osagarriak lortuko dituzu zehaztapen hauen bidez: \'Behartu osatzera\', \'Behartu saiakera berria\' eta \'Blokeatu azken saiakeraren ondoren\'.';
+$string['whatgradedesc'] = 'Kalifikazio-liburuan notarik altuena, batez bestekoa, lehen saiakerarena edo azken saiakerarena gordeko den, saiakera anizkoitzak gaituz gero.';
 $string['width'] = 'Zabalera';
 $string['window'] = 'Leihoa';
 $string['youmustselectastatus'] = 'Derrigortu beharreko egoera aukeratu behar duzu';

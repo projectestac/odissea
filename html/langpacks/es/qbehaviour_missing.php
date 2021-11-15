@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Comportamiento ausente';
+$string['privacy:metadata'] = 'El complemento de comportamiento de la pregunta que falta no almacena ningún dato personal.';
 $string['questionusedunknownmodel'] = 'Está pregunta se intentó con un comportamiento que actualmente no está disponible. La pregunta se está mostrando tan bien como se puede, pero algunas partes pueden estar ausentes o mal.';

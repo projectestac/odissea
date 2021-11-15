@@ -100,7 +100,7 @@ $string['pluginadministration'] = 'إدارة الكتاب';
 $string['pluginname'] = 'الكتاب';
 $string['previouschapter'] = 'الفصل السابق';
 $string['privacy:metadata'] = 'وحدة مورد الكتاب لا تخزن أيّ بيانات شخصية.';
-$string['removeallbooktags'] = 'إزالة جميع علامات الكتاب';
+$string['removeallbooktags'] = 'إزالة كل وسوم الكتاب';
 $string['search:activity'] = 'الكتاب - معلومات المورد';
 $string['search:chapter'] = 'الكتاب - الفصول';
 $string['showchapter'] = 'عرض فصل "{$a}"';
@@ -109,6 +109,6 @@ $string['subchapternotice'] = '(متاح لمرة واحدة وقت إنشاء �
 $string['subplugintype_booktool'] = 'أداة الكتاب';
 $string['subplugintype_booktool_plural'] = 'أدوات الكتاب';
 $string['tagarea_book_chapters'] = 'فصول الكتاب';
-$string['tagsdeleted'] = 'تم حذف علامات الكتاب';
+$string['tagsdeleted'] = 'تم حذف وسوم الكتاب';
 $string['toc'] = 'جدول المحتويات';
 $string['top'] = 'أعلى';

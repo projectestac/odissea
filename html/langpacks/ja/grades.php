@@ -228,6 +228,7 @@ $string['externalurl'] = '外部URL';
 $string['externalurl_desc'] = '外部評定表が使用されます。ここでURLを指定してください。';
 $string['extracreditvalue'] = '{$a} の追加点';
 $string['extracreditwarning'] = '注意: カテゴリ内のすべての評定項目を追加点扱いにすることにより、評定の計算から評定項目を効果的に除外することができます。これにより合計評点は計算されません。';
+$string['fail'] = '不合格';
 $string['feedback'] = 'フィードバック';
 $string['feedback_help'] = 'この設定を有効にした場合、評定に関するコメントすべてが追加されます。';
 $string['feedbackadd'] = 'フィードバックを追加する';
@@ -407,6 +408,15 @@ $string['importcsv_help'] = '以下のフォーマットのCSVファイルを使
 
 正しいフォーマットのファイルは最初に評定をエクスポートすることにより取得することができます。そのファイルを編集して、CSVファイルとして保存することができます。';
 $string['importcustom'] = 'カスタムアウトカムとしてインポートする (このコースのみ)';
+$string['importdata'] = '日付';
+$string['importdata_help'] = '評定はOpenDocumentまたはExcelスプレッドシートから直接貼り付けることができます。
+
+* 少なくとも1つの列にはユーザ名、メールアドレス、IDナンバー等のユーザ識別データを含む必要があります。
+* その他の列には既存の活動または評定項目に応じた見出しを付ける必要があります。
+
+最初に正しいフォーマットのスプレッドシートはいくつかの評定をエクスポートして入手できます。次にスプレッドシートを編集して成績を追加および保存できます。
+
+あなたがスプレッドシートからインポートしたい列を選択およびコピーしてこのフィールドに貼り付けてください。';
 $string['importerror'] = 'エラーが発生しました。このスクリプトは適正なパラメータでコールされていません。';
 $string['importfailed'] = 'インポートに失敗しました。データはインポートされませんでした。';
 $string['importfeedback'] = 'フィードバックをインポートする';
@@ -420,7 +430,7 @@ $string['importoutcomesuccess'] = 'インポートされたアウトカム「 {$
 $string['importplugins'] = 'プラグインインポート';
 $string['importpreview'] = 'インポートプレビュー';
 $string['importsettings'] = 'インポート設定';
-$string['importskippednomanagescale'] = 'あなたには新しい評価尺度を追加するパーミッションがありません。新しい尺度を作成する必要があるため、アウトカム「 {$a} 」はスキップされました。';
+$string['importskippednomanagescale'] = 'あなたには新しい評価尺度を追加するためのパーミッションがありません。新しい尺度を作成する必要があるため、アウトカム「 {$a} 」はスキップされました。';
 $string['importskippedoutcome'] = 'このコンテクスト内で省略名「 {$a} 」のアウトカムはすでに登録されています。インポートファイルのアウトカムがスキップされました。';
 $string['importstandard'] = '標準アウトカムとしてインポートする';
 $string['importsuccess'] = '評定インポートが正常に完了しました。';
@@ -600,6 +610,7 @@ $string['overridesitedefaultgradedisplaytype'] = 'サイトデフォルトをオ
 $string['overridesitedefaultgradedisplaytype_help'] = 'この設定を有効にした場合、サイトデフォルトではなく、コースの評定文字および境界が設定されます。';
 $string['overrideweightofa'] = '{$a} の加重をオーバーライドする';
 $string['parentcategory'] = '親カテゴリ';
+$string['pass'] = '合格';
 $string['pctoftotalgrade'] = '評点合計の%';
 $string['percent'] = 'パーセント';
 $string['percentage'] = 'パーセンテージ';
@@ -620,7 +631,7 @@ $string['preferences'] = 'プリファレンス';
 $string['prefgeneral'] = '一般設定';
 $string['prefletters'] = '評定文字および境界';
 $string['prefrows'] = '特別行';
-$string['prefshow'] = 'トグルの表示/非表示';
+$string['prefshow'] = 'トグルを表示/非表示にする';
 $string['previewrows'] = 'プレビュー行';
 $string['privacy:metadata:categorieshistory'] = '前のバージョンの評定カテゴリのレコードです。';
 $string['privacy:metadata:filepurpose'] = 'フィードバックファイルはユーザの評定を保存します。';
@@ -688,7 +699,7 @@ $string['recovergradesdefault_help'] = 'デフォルトではユーザがコー�
 $string['refreshpreview'] = 'プレビューをリフレッシュする';
 $string['regradeanyway'] = 'とにかく再評定する';
 $string['removeallcoursegrades'] = 'すべての評定を削除する';
-$string['removeallcoursegrades_help'] = '有効にした場合、オーバーライドされた評点およびデータ、除外、非表示およびロックされた評点と共に評定表に手動追加された評定項目すべてが削除されます。活動と関連付けられている評点のみ保持されます。';
+$string['removeallcoursegrades_help'] = 'この設定を有効にした場合、評定表に手動追加されたすべての評定項目および評点が削除されます。同時に上書きされた評定、除外された評定、非表示にされた評定およびロックされた評定のデータも削除されます。活動に関連する評定項目および評定のみ保持されます。';
 $string['removeallcourseitems'] = 'すべての評定項目およびカテゴリを削除する';
 $string['removeallcourseitems_help'] = '有効にした場合、オーバーライドされた評点およびデータ、除外、非表示およびロックされた評点と共に評定表に手動追加されたカテゴリおよび評定項目すべてが削除されます。活動と関連付けられている評点のみ保持されます。';
 $string['report'] = 'レポート';

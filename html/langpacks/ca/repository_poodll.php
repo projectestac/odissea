@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['audio'] = 'Enregistrador d\'àudio';
 $string['save'] = 'Desa';

@@ -102,6 +102,8 @@ $string['limitanswers'] = 'Limit the number of responses allowed';
 $string['limitanswers_help'] = 'This option allows you to limit the number of participants that can select each choice option. When the limit is reached then no-one else can select that option.
 
 If limits are disabled then any number of participants can select each of the options.';
+$string['maxenrollments'] = 'Max. enrollments';
+$string['maxenrollments_help'] = 'This option allows to limit the number of group enrollments for a participant. Use default value **0** if there is no limit.';
 $string['members/'] = 'Members';
 $string['members/max'] = 'Members / Capacity';
 $string['modulename'] = 'Group choice';
@@ -110,6 +112,7 @@ $string['modulename_link'] = 'mod/choicegroup/view';
 $string['modulenameplural'] = 'Group choices';
 $string['moveselectedusersto'] = 'Move selected users to...';
 $string['multipleenrollmentspossible'] = 'Allow enrollment to multiple groups';
+$string['mustchoosemax'] = 'You must choose a maximum of {$a} groups. Nothing was saved.';
 $string['mustchooseone'] = 'You must choose an answer before saving.  Nothing was saved.';
 $string['name'] = 'Name';
 $string['neverresultsviewable'] = 'The results are not viewable.';
@@ -121,6 +124,7 @@ $string['notenrolledchoose'] = 'Sorry, only enrolled users are allowed to make c
 $string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
 $string['notyetresultsviewable'] = 'The results will be visible after this activity has closed.';
 $string['numberofuser'] = 'The number of users';
+$string['onlyactive'] = 'Filter out response data for users with expired or suspended enrolments';
 $string['option'] = 'Group';
 $string['page-mod-choice-x'] = 'Any Group choice module page';
 $string['pleaseselectonegroup'] = 'Please select at least one group to chose from.';

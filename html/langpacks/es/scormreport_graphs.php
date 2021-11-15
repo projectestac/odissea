@@ -29,3 +29,4 @@ $string['invaliddata'] = 'Sin datos suficientes';
 $string['participants'] = 'Número de participantes';
 $string['percent'] = 'Porcentaje (%) fijado';
 $string['pluginname'] = 'Informe gráfico';
+$string['privacy:metadata'] = 'El informe de grafo solo muestra información almacenada en otras ubicaciones.';

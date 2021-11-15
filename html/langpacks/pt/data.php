@@ -40,7 +40,7 @@ $string['areacontent'] = 'Campos';
 $string['ascending'] = 'Ascendente';
 $string['asearchtemplate'] = 'Modelo de pesquisa avançada';
 $string['atmaxentry'] = 'Já introduziu o número máximo de registos permitido!';
-$string['authorfirstname'] = 'Primeiro nome do autor';
+$string['authorfirstname'] = 'Nome do autor';
 $string['authorlastname'] = 'Apelido do autor';
 $string['autogenallforms'] = 'Gerar todos os formulários predefinidos.';
 $string['autolinkurl'] = 'Criar hiperligação para o URL';
@@ -109,7 +109,7 @@ $string['data:viewallratings'] = 'Ver todas as avaliações atribuídas pelos ut
 $string['data:viewalluserpresets'] = 'Ver protótipos de todos os utilizadores';
 $string['data:viewanyrating'] = 'Ver as avaliações totais que todos obtiveram';
 $string['data:viewentry'] = 'Ver registos';
-$string['data:viewrating'] = 'Ver a avaliação que recebeu';
+$string['data:viewrating'] = 'Ver a avaliação que obteve';
 $string['data:writeentry'] = 'Escrever registos';
 $string['date'] = 'Data';
 $string['dateentered'] = 'Data de criação';
@@ -253,7 +253,7 @@ $string['menuchoose'] = 'Selecione...';
 $string['missingdata'] = 'Deve ser indicado um identificador de informação ou um objeto para a classe do campo';
 $string['missingfield'] = 'Erro de programação: Deve especificar um campo e/ou dados na definição da classe do campo.';
 $string['modulename'] = 'Base de dados';
-$string['modulename_help'] = 'A atividade Base de dados permite aos participantes criar, gerir e procurar informação num conjunto de entradas (registos). O tipo, o número e o formato dos campos que compõem a base de dados são definido pelo professor. Os tipos de campos permitidos incluem caixas de seleção, listas pendentes, botões de rádio, caixas de texto, URL, imagem e ficheiro.
+$string['modulename_help'] = 'A atividade Base de dados permite aos participantes criar, gerir e pesquisar informação num conjunto de entradas (registos). O tipo, o número e o formato dos campos que compõem a base de dados são definido pelo professor. Os tipos de campos permitidos incluem caixas de seleção, listas pendentes, botões de rádio, caixas de texto, URL, imagem e ficheiro.
 
 A estrutura de visualização da informação quando cria, edita ou lista os registos da base de dados pode ser definida através de modelos de base de dados. As base de dados podem ser partilhadas entre disciplinas e o professor também pode importar e exportar registos da base de dados.
 

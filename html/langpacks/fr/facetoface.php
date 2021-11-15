@@ -516,6 +516,7 @@ $string['signup'] = 'Inscription';
 $string['signupfor'] = 'Inscription pour {$a}';
 $string['signupforsession'] = 'Inscription pour une session future ouverte';
 $string['status'] = 'Statut';
+$string['status_booked'] = 'Réservé';
 $string['subject'] = 'Changement dans l\'inscription au cours {$a->coursename} ({$a->duedate})';
 $string['submissions'] = 'Inscriptions';
 $string['submit'] = 'S\'inscrire';

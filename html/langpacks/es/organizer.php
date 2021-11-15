@@ -25,6 +25,96 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['Error'] = 'Error';
+$string['Info'] = 'Información';
+$string['Warning'] = 'Advertencia';
+$string['absolutedeadline'] = 'Fin del registro';
+$string['absolutedeadline_help'] = 'Active esto para definir el tiempo después del cual ya no serán posibles más acciones del estudiante.';
+$string['actionlink_delete'] = 'eliminar';
+$string['actionlink_edit'] = 'editar';
+$string['actionlink_eval'] = 'calificar';
+$string['actionlink_print'] = 'imprimir';
+$string['actions'] = 'Acción';
+$string['actions_help'] = 'Acción a tomar.';
+$string['addappointment'] = 'Añadir cita';
+$string['addslots_placesinfo'] = 'Esta acción creará {$a->numplaces} nuevos posibles lugares, haciendo un total de {$a->totalplaces} posibles lugares para {$a->numstudents} estudiantes.';
+$string['addslots_placesinfo_group'] = 'Esta acción creará {$a->numplaces} nuevos posibles lugares, haciendo un total de {$a->totalplaces} posibles lugares para {$a->numgroups} grupos.';
+$string['allowcreationofpasttimeslots'] = 'Creación de espacios de tiempos pasados';
+$string['allowedprofilefieldsprint'] = 'Campos del perfil del usuario permitidos';
+$string['allowedprofilefieldsprint2'] = 'Campos de perfil de usuario permitidos para imprimir posiciones de un solo organizador';
+$string['allowsubmissionsanddescriptionfromdatesummary'] = 'Los detalles del organizador y el formulario de registro estarán disponibles en <strong> {$a}</strong>';
+$string['allowsubmissionsfromdate'] = 'Inicio del registro';
+$string['allowsubmissionsfromdate_help'] = 'Active ésto si desea hacer este organizador accesible a los estudiantes después de un cierto período de tiempo.';
+$string['allowsubmissionsfromdatesummary'] = 'Este organizador aceptará registros desde <strong>{$a}</strong>';
+$string['allowsubmissionstodate'] = 'Fin del registro';
+$string['alwaysshowdescription'] = 'Mostrar descripción siempre';
+$string['alwaysshowdescription_help'] = 'Si se deshabilita, la descripción superior de la Tarea solamente será visible para los estudiantes en la fecha de "Inicio del registro".';
+$string['applicant'] = 'Esta es la persona que registró al grupo';
+$string['appointment_reminder_student:fullmessage'] = '¡Hola {$a->receivername}!
+
+Como parte del curso {$a->courseid} {$a->coursefullname}, tiene una cita con {$a->sendername} el {$a->date} a las {$a->time} en {$a->location}.
+
+Sistema de Mensajería de Moodle';
+$string['appointment_reminder_student:group:fullmessage'] = '¡Hola {$a->receivername}!
+
+Como parte del curso {$a->courseid} {$a->coursefullname}, tiene una cita grupal con {$a->sendername} el {$a->date} a las {$a->time} en {$a->location}.
+
+ Sistema de Mensajería de Moodle';
+$string['appointment_reminder_student:group:smallmessage'] = 'Tiene una cita grupal {$a->sendername} en {$a->date} a las {$a->time} en {$a->location}.';
+$string['appointment_reminder_student:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Recordatorio de cita grupal';
+$string['appointment_reminder_student:smallmessage'] = 'Tiene una cita {$a->sendername} en {$a->date} a las {$a->time} en {$a->location}.';
+$string['appointment_reminder_student:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Recordatorio de cita';
+$string['appointment_reminder_teacher:digest:fullmessage'] = '¡Hola {$a->receivername}!
+
+Mañana tiene las citas siguientes:
+
+{$a->digest}
+
+Sistema de Mensajería de Moodle';
+$string['appointment_reminder_teacher:digest:smallmessage'] = 'Ha recibido un mensaje con el resumen de sus citas para mañana.';
+$string['appointment_reminder_teacher:digest:subject'] = 'Resumen de citas';
+$string['appointment_reminder_teacher:fullmessage'] = '¡Hola {$a->receivername}!
+
+Como parte del curso {$a->courseid} {$a->coursefullname}, tiene una cita con estudiantes el {$a->date} a las {$a->time} en {$a->location}.
+
+Sistema de Mensajería de Moodle';
+$string['appointment_reminder_teacher:group:digest:fullmessage'] = '¡Hola {$a->receivername}!
+
+Mañana tiene las siguientes citas:
+
+{$a->digest}
+
+Sistema de Mensajería de Moodle';
+$string['appointment_reminder_teacher:group:digest:smallmessage'] = 'Ha recibido un mensaje con el resumen de sus citas para mañana.';
+$string['appointment_reminder_teacher:group:digest:subject'] = 'Resumen de citas';
+$string['appointment_reminder_teacher:smallmessage'] = 'Tiene una cita con estudiantes el {$a->date} a las {$a->time} en {$a->location}.';
+$string['appointment_reminder_teacher:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Recordatorio de cita';
+$string['appointmentcomments'] = 'Comentarios';
+$string['appointmentcomments_help'] = 'Aquí puede añadirse información adicional acerca de las citas.';
+$string['appointmentdatetime'] = 'Fecha y hora';
+$string['assign'] = 'Asignar';
+$string['assign_notify_student:fullmessage'] = '¡Hola {$a->receivername}!
+
+Como parte del curso {$a->courseid} {$a->coursefullname}, {$a->sendername} le ha asignado una cita con {$a->slot_teacher} en {$a->date} a las {$a->time}.
+
+Profesor: {$a->slot_teacher}
+Lugar: {$a->slot_location}
+Fecha: {$a->date} a las {$a->time}
+
+Sistema de Mensajería de Moodle';
+$string['assign_notify_student:group:fullmessage'] = '¡Hola {$a->receivername}!
+
+Como parte del curso {$a->courseid} {$a->coursefullname}, {$a->sendername} le ha asignado una cita a su grupo {$a->groupname} con {$a->slot_teacher} el {$a->date} a las {$a->time}.
+
+Profesor: {$a->slot_teacher}
+Lugar: {$a->slot_location}
+Fecha: {$a->date} at {$a->time}
+
+Sistema de Mensajería de Moodle';
+$string['assign_notify_student:group:smallmessage'] = 'Una cita con {$a->slot_teacher} el {$a->date} a las {$a->time} ha sido asignada a su grupo {$a->groupname} por {$a->sendername}.';
+$string['assign_notify_student:group:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Cita asignada por el profesor';
+$string['assign_notify_student:smallmessage'] = 'Una cita con {$a->slot_teacher} el {$a->date} a las {$a->time} le ha sido asignada por {$a->sendername}.';
+$string['assign_notify_student:subject'] = '[{$a->courseid}{$a->courseshortname} / {$a->organizername}] - Cita asignada por el profesor';
 $string['configdigest_label'] = 'Enviar resumen de citas a los profesores';
 $string['message_warning_no_slots_added'] = '¡Ninguna celda nueva añadida!';
 $string['message_warning_no_slots_selected'] = '¡Debe seleccionar al menos una celda primero!';

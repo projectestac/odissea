@@ -34,6 +34,7 @@ $string['attributes:manage'] = 'Διαχείριση εγγεγραμμένων 
 $string['attributes:unenrol'] = 'Ακύρωση εγγραφής χρηστών στο μάθημα';
 $string['attributes:unenrolself'] = 'Ακύρωση εγγραφής στο μάθημα';
 $string['attrsyntax'] = 'Κανόνες πεδίων προφίλ χρήστη';
+$string['cachedef_dbquerycache'] = 'Κρυφή μνήμη ερωτημάτων Βάσης Δεδομένων';
 $string['defaultrole'] = 'Προεπιλεγμένος ρόλος';
 $string['deletecondition'] = 'Διαγραφή συνθήκης';
 $string['force'] = 'Επιβολή εγγραφών τώρα';

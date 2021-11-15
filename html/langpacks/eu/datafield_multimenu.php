@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['fieldtypelabel'] = 'Aukera anitzeko menua';
-$string['pluginname'] = 'Aukera anitzeko menua';
-$string['privacy:metadata'] = 'Menu anitza eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';
+$string['fieldtypelabel'] = 'Aukera anizkoitzeko menua';
+$string['pluginname'] = 'Aukera anizkoitzeko menua';
+$string['privacy:metadata'] = 'Menu anizkoitza eremu-osagaiak ez du datu pertsonalik biltzen, datu-base moduluan zehaztutako taulak erabiltzen ditu.';

@@ -48,7 +48,7 @@ $string['invalid_recipient_handler'] = 'Si se recibe un mensaje válido pero no 
 Este controlador procesa dichas respuestas.
 
 No es posible deshabilitar la verificación del remitente de este controlador debido a que el usuario puede responder desde una dirección de correo electrónico incorrecta si posee una configuración incorrecta del cliente de correo electrónico.';
-$string['invalid_recipient_handler_name'] = 'Controlador del destinatario no válido';
+$string['invalid_recipient_handler_name'] = 'Controlador del remitente no válido';
 $string['invalidrecipientdescription'] = 'No se ha podido autenticar el mensaje "{$a->subject}" debido a que se envió desde una dirección de correo electrónico distinta a la que aparece en su perfil de usuario. Deberá responder a este mensaje para que se pueda autenticar el mensaje.';
 $string['invalidrecipientdescriptionhtml'] = 'No se ha podido autenticar el mensaje "{$a->subject}" debido a que se envió desde una dirección de correo electrónico distinta a la que aparece en su perfil de usuario. Deberá responder a este mensaje para que se pueda autenticar el mensaje.';
 $string['invalidrecipientfinal'] = 'No se ha podido autenticar el mensaje "{$a->subject}". Compruebe que haya enviado el mensaje desde la misma dirección de correo electrónico que figura en su perfil.';
@@ -98,15 +98,21 @@ $string['onehour'] = 'Una hora';
 $string['oneweek'] = 'Una semana';
 $string['oneyear'] = 'Un año';
 $string['pluginname'] = 'Configuración del mensaje entrante';
+$string['privacy:metadata:coreuserkey'] = 'Claves de usuario para validar el correo electrónico recibido';
+$string['privacy:metadata:messagelist'] = 'Una lista de identificadores de mensajes que fallaron en la validación y requieren autorización adicional';
+$string['privacy:metadata:messagelist:address'] = 'La dirección a la que se envió el correo electrónico';
+$string['privacy:metadata:messagelist:messageid'] = 'El ID del mensaje';
+$string['privacy:metadata:messagelist:timecreated'] = 'El momento en el que se hizo el registro';
+$string['privacy:metadata:messagelist:userid'] = 'El ID del usuario que necesita aprobar el mensaje';
 $string['replysubjectprefix'] = 'Asunto:';
 $string['requirevalidation'] = 'Validar dirección del remitente';
 $string['ssl'] = 'SSL (detectar automáticamente versión de SSL)';
 $string['sslv2'] = 'SSLv2 (forzar la versión 2 de SSL)';
-$string['sslv3'] = 'SSLv2 (forzar la versión 3 de SSL)';
+$string['sslv3'] = 'SSLv3 (forzar versión 3 de SSL)';
 $string['taskcleanup'] = 'Limpieza de los correos electrónicos entrantes no verificados';
 $string['taskpickup'] = 'Recogida de correos electrónicos entrantes';
 $string['tls'] = 'TLS (TLS; iniciado a través de una negociación a nivel del protocolo en un canal sin encriptar; forma RECOMENDADA de iniciar una conexión segura)';
-$string['tlsv1'] = 'TLSv1 (TLS directo versión 1.x conexión al servidor)';
+$string['tlsv1'] = 'TLSv1 (conexión directa al servidor TLS versión 1.x)';
 $string['validateaddress'] = 'Validar dirección de correo electrónico del remitente';
 $string['validateaddress_help'] = 'Cuando se recibe un mensaje de un usuario, Moodle trata de validar el mensaje comparando la dirección de correo electrónico del remitente con la dirección de correo electrónico en su perfil de usuario.
 

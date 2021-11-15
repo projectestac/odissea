@@ -115,6 +115,7 @@ $string['options'] = 'Opzioni';
 $string['page-mod-choice-x'] = 'Qualsiasi pagina con modulo scelta';
 $string['pluginadministration'] = 'Gestione Scelta';
 $string['pluginname'] = 'Scelta';
+$string['previewing'] = 'Questa è solo un\'anteprima delle opzioni disponibili per l\'attività. Sarà possibile formulare una scelta dopo l\'apertura.';
 $string['previewonly'] = 'Questa è un\'anteprima delle scelte disponibili. Potrai inviare la tua scelta solo dal {$a}.';
 $string['privacy'] = 'Privacy dei risultati';
 $string['privacy:metadata:choice_answers'] = 'Informazioni sulle risposte dell\'utente in un\'attività a scelta';

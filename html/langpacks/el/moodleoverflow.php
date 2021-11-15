@@ -47,6 +47,7 @@ $string['cannotupdatepost'] = 'Δεν μπορείτε να ενημερώσετ
 $string['clicktosubscribe'] = 'Δεν είστε εγγεγραμμένος σε αυτή τη συζήτηση. Κάντε κλικ για εγγραφή.';
 $string['clicktounsubscribe'] = 'Είστε εγγεγραμμένος σε αυτή τη συζήτηση. Κάντε κλικ για απεγγραφή.';
 $string['configallowratingchange'] = 'Μπορεί ένας χρήστης να αλλάξει τις αξιολογήσεις του;';
+$string['configcleanreadtime'] = 'Η ώρα της ημέρας για εκκαθάριση παλιών αναρτήσεων από τον πίνακα «αναγνωσμένων».';
 $string['configmaxattachments'] = 'Προεπιλεγμένος μέγιστος αριθμός συνημμένων που επιτρέπονται ανά ανάρτηση.';
 $string['configmaxbytes'] = 'Προεπιλεγμένο μέγιστο μέγεθος για όλα τα συνημμένα του φόρουμ στον ιστότοπο (υπόκειται στους περιορισμούς μαθήματος και άλλες τοπικές ρυθμίσεις)';
 $string['configmaxeditingtime'] = 'Προεπιλεγμένο μέγιστο σε δευτερόλεπτα το 3600 (= μια ώρα).';
@@ -70,6 +71,8 @@ $string['discussionnowsubscribed'] = 'Ο/Η {$a->name} θα ειδοποιείτ
 $string['discussions'] = 'Συζητήσεις';
 $string['discussionsubscription'] = 'Εγγραφή στη συζήτηση';
 $string['discussionsubscription_help'] = 'Εγγραφή σε μια συζήτηση σημαίνει ότι θα λαμβάνεται ειδοποιήσεις για νέες αναρτήσεις σε αυτή τη συζήτηση.';
+$string['downvote'] = 'Ψήφος κατά';
+$string['downvotenotchangeable'] = 'Ψήφος κατά (δεν αλλάζει)';
 $string['edit'] = 'Επεξεργασία';
 $string['editedby'] = 'Τροποποιήθηκε από {$a->name} - αρχική υποβολή στις {$a->date}';
 $string['editedpostupdated'] = 'Η ανάρτηση του/της {$a} ενημερώθηκε';

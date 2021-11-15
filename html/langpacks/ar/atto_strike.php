@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'يتوسطه خط';
-$string['privacy:metadata'] = 'إن ملحق atto_strike لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_strike لا تخزن أيّ بيانات شخصية.';

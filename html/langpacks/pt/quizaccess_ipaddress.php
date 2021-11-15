@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Regra de acesso pelo endereço de IP';
-$string['privacy:metadata'] = 'O módulo Regra de acesso pelo endereço de IP não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Regra de acesso pelo endereço de IP não armazena quaisquer dados pessoais.';
 $string['subnetwrong'] = 'Este teste é apenas acessível a partir de determinados locais, e este computador não está na lista de permitidos.';

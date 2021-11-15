@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interaktivt med flera försök (poäng för tidigare försök)';
-$string['privacy:metadata'] = 'Pluginmodulen Interaktivt med flera försök (bonus för tidigare försök)  frågebeteende lagrar ingen personinformation.';
+$string['privacy:metadata'] = 'Pluginmodulen Interaktivt med flera försök (bonus för tidigare försök)-frågebeteende lagrar ingen personinformation.';

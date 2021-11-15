@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'دون اتصال';
-$string['privacy:metadata'] = 'إن ملحق الواجب بدون الاتصال لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة الواجب بدون الاتصال لا تخزن أي بيانات شخصية.';

@@ -62,7 +62,7 @@ Listan över ikoner är hämtad från katalogen /pix/f i din Moodle-installation
 $string['mimetype'] = 'MIME-typ';
 $string['mimetype_help'] = 'MIME-typ som är associerad med denna filtyp, t.ex. \'application/vnd.ms-excel\'';
 $string['pluginname'] = 'Filtyper';
-$string['privacy:metadata'] = 'Pluginmodulen Filtyper lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Filtyper lagrar ingen personinformation.';
 $string['revert'] = 'Återställ {$a} till Moodles standardvärden';
 $string['revert_confirmation'] = 'Är du säker på att du vill överge dina ändringar och återställa <strong>.{ $a}</strong> till Moodles standardvärden?';
 $string['revertfiletype'] = 'Återställ filtyp';

@@ -67,5 +67,5 @@ zerbitzari.url.eus
 iphelbidea:ataka
 </pre>';
 $string['testservers'] = 'Probetarako zerbitzariak';
-$string['testservers_desc'] = 'memcache zerbitzariekin konexio-proba egiteko karaketere-katea edo kateak. Probetarako zerbitzari bat zehaztu bada memcache-ren errendimendua kudeaketa blokeko Cache atalaren Probatu errendimendua orria erabiliz probatu daiteke.
+$string['testservers_desc'] = 'memcache zerbitzariekin konexio-proba egiteko karaktere-katea edo kateak. Probetarako zerbitzari bat zehaztu bada memcache-ren errendimendua kudeaketa blokeko Cache atalaren Probatu errendimendua orria erabiliz probatu daiteke.
 Adibidez: 127.0.0.1:11211';

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = 'Por responder';
 $string['pluginname'] = 'Feedback imediato';
-$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Feedback imediato não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Feedback imediato não armazena quaisquer dados pessoais.';

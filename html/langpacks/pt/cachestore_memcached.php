@@ -30,7 +30,7 @@ $string['bufferwrites_help'] = 'Ativa ou desativa o buffer I/O. Ativar o buffer 
 $string['clustered'] = 'Ativar servidores em cluster';
 $string['clustered_help'] = 'Esta opção é usada para permitir a funcionalidade \'read-one, set-multi\'.
 
-A utilização pretendida consiste em melhorar o armazenamento para as configurações de balanceamento. O armazenamento irá procurar num servidor (normalmente localmente), mas definido para muitos (todos os servidores no load-balance pool). Para caches com uma leitura muito elevada que permitem definir rácios, isto reduz significativamente a sobrecarga na rede.
+A utilização pretendida consiste em melhorar o armazenamento para as configurações de balanceamento. O armazenamento irá pesquisar num servidor (normalmente o servidor local), mas definido para muitos (todos os servidores no load-balance pool). Para caches com uma leitura muito elevada que permitem definir rácios, isto reduz significativamente a sobrecarga na rede.
 
 Quando esta opção está ativada, a lista de servidores acima será usado para procurar.';
 $string['clusteredheader'] = 'Dividir servidores';
@@ -65,14 +65,14 @@ $string['servers_help'] = 'Esta configuração define os servidores que devem se
 Os servidores devem ser indicados um por linha e consiste no endereço do servidor e, opcionalmente, uma porta e importância.
 Caso nenhuma porta seja indicada, será utilizada a porta padrão (11211).
 
-Por exemplo:
+Exemplo:
 <pre>
 server.url.com
 ipaddress:port
 servername:port:weight
 </pre>
 
-Se ativar a configuração *Ativar servidores em cluster*, apenas poderá estar listado um servidor. Normalmente é o nome da máquina local, como por exemplo 127.0.0.1 ou localhost.';
+Se ativar a configuração *Ativar servidores em cluster*, apenas poderá estar listado um servidor. Normalmente é o nome da máquina local, como por exemplo, 127.0.0.1 ou localhost.';
 $string['serversclusterinvalid'] = 'É necessário precisamente um servidor quando o clustering está ativado.';
 $string['sessionhandlerconflict'] = 'Aviso: uma instância de memcache ({$a}) foi configurada para usar o mesmo servidor de memcache que as sessões. Apagar o conteúdo de todas as caches fará com que também sejam apagadas as sessões.';
 $string['setservers'] = 'Definir servidores';
@@ -84,10 +84,10 @@ Os servidores devem ser definidos um por linha e consistir num endereço de serv
 
 Se não for definida a porta, será usada a porta predefinida (11211).
 
-Por exemplo: <pre>server.url.com ipaddress:port</pre>';
+Exemplo: <pre>server.url.com ipaddress:port</pre>';
 $string['testservers'] = 'Servidores de teste';
 $string['testservers_desc'] = 'Uma ou mais strings de ligação para servidores memchache para serem testadas. Se um servidor de teste tiver sido especificado, o desempenho de memcache pode ser testado usando a página de desempenho de cache no bloco de administração.
-Por exemplo: 127.0.0.1:11211';
+Exemplo: 127.0.0.1:11211';
 $string['upgrade200recommended'] = 'Recomenda-se que atualize a extensão PHP Memcached para a versão 2.0.0 ou superior.
 A versão da extensão PHP Memcached em uso não fornece a funcionalidade que o Moodle utiliza para garantir uma cache de modo seguro. Até atualizar, recomendamos que não configure quaisquer outras aplicações para utilizar os mesmos servidores de Memcache tal como o Moodle está configurado para usar.';
 $string['usecompression'] = 'Usar compressão';

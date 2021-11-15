@@ -29,13 +29,15 @@ $string['aftersaving...'] = 'Una vez que haya guardado sus ajustes, quizás quie
 $string['allowunenrol'] = 'Permitir a los datos IMS <strong>dar de baja</strong> a estudiantes/profesores';
 $string['allowunenrol_desc'] = 'Si está activado, las matriculaciones en cursos serán eliminadas cuando así se especifique en los datos de empresa.';
 $string['basicsettings'] = 'Ajustes básicos';
+$string['categoryidnumber'] = 'Permitir categoría con número de identificación';
+$string['categoryidnumber_desc'] = 'Si está habilitado, IMS Enterprise creará categoría con número de identificación';
+$string['categoryseparator'] = 'Carácter separador de categoría';
+$string['categoryseparator_desc'] = 'Obligatorio cuando el "Número de identificación de categoría" está habilitado. Carácter para separar el nombre de la categoría y el número de identificación.';
 $string['coursesettings'] = 'Opciones de datos del curso';
 $string['createnewcategories'] = 'Crear categorías nuevas (ocultas) de curso si no se encuentran en Moodle';
-$string['createnewcategories_desc'] = '<p>Si el elemento &lt;org&gt;&lt;orgunit&gt; está presente en los datos de entrada de un curso, su contenido se usará para especificar una categoría en el caso de que el curso haya sido creado desde cero.</p>
+$string['createnewcategories_desc'] = 'Si el elemento &lt;org&gt;&lt;orgunit&gt; está presente en los datos de entrada de un curso, su contenido se usará para especificar una categoría en el caso de que el curso haya sido creado desde cero. Este plugin NO vuelve a categorizar los cursos ya existentes.
 
-<p>Este \'plugin\' no recategorizará cursos ya existentes.</p>
-
-<p>Si no existe ninguna categoría con el nombre deseado, se creará una categoría OCULTA.</p>';
+Si no existe ninguna categoría con el nombre deseado, se creará una categoría oculta.';
 $string['createnewcourses'] = 'Crear cursos nuevos (ocultas) si no se encuentran en Moodle';
 $string['createnewcourses_desc'] = 'Si está activado, la matriculación IMS Enterprise puede crear nuevos cursos para aquellos cursos que  encuentre en los datos de IMS, pero no en la base de datos de Moodle. Cualquier curso de nueva creación estará inicialmente oculto.';
 $string['createnewusers'] = 'Crear cuentas de usuario para usuarios aún no registrados en Moodle';
@@ -64,8 +66,11 @@ $string['mailadmins'] = 'Notificar al administrador por email';
 $string['mailusers'] = 'Notificar a los usuarios por email';
 $string['messageprovider:imsenterprise_enrolment'] = 'Mensajes de matriculación IMS Enterprise';
 $string['miscsettings'] = 'Miscelánea';
+$string['nestedcategories'] = 'Permitir categorías anidadas';
+$string['nestedcategories_desc'] = 'Si está habilitado, IMS Enterprise creará categorías anidadas';
 $string['pluginname'] = 'Archivo IMS Enterprise';
 $string['pluginname_desc'] = 'Este método comprobará y procesará un archivo de texto con formato especial en la ubicación que usted especifique. El archivo debe seguir las especificaciones IMS Enterprise que contienen los elementos XML persona, grupo y pertenencia.';
+$string['privacy:metadata'] = 'El complemento de matrícula a través de archivo de IMS Enterprise no almacena ningún dato personal.';
 $string['processphoto'] = 'Agregar foto de usuario al perfil';
 $string['processphotowarning'] = 'ATENCIÓN: El procesamiento de imágenes probablemente agregará una carga significativa al servidor. Se recomienda no activar esta opción si se espera procesar un número elevado de estudiantes.';
 $string['restricttarget'] = 'Procesar los datos sólo si es especificado el objetivo siguiente';
@@ -80,13 +85,17 @@ $string['settingshortname'] = 'Etiqueta de descripción IMS para el nombre corto
 $string['settingshortnamedescription'] = 'El nombre corto del curso es un campo necesario por lo que tiene que definir la etiqueta de descripción IMS  seleccionada en su archivo IMS Enterprise';
 $string['settingsummary'] = 'Etiqueta de descripción IMS para el resumen del curso';
 $string['settingsummarydescription'] = 'Es un campo opcional, seleccione \'Dejarlo vacio\' si no quiere especificar un resumen del curso';
-$string['sourcedidfallback'] = 'Usar el "sourcedid" para el userid de una persona si no se encuentra el campo "userid"';
+$string['sourcedidfallback'] = 'Usar el \'sourcedid\' para el userid de un usuario si no se encuentra el campo \'userid\'';
 $string['sourcedidfallback_desc'] = 'En los datos IMS, el campo <sourcedid> representa el código de identificación persistente para una persona tal como se utiliza en el sistema de origen. El campo <userid> es un campo independiente, que debe contener el código de identificación utilizado por el usuario al iniciar sesión. En muchos casos, estos dos códigos pueden ser el mismo - pero no siempre.
 
 Algunos sistemas de información de estudiantes no generan el campo <userid>. Si este es el caso, debe habilitar esta configuración para permitir el uso de la <sourcedid> como el ID de usuario de Moodle. De lo contrario, deje esta opción desactivada.';
 $string['truncatecoursecodes'] = 'Truncar los códigos del curso a esta longitud';
 $string['truncatecoursecodes_desc'] = '<p>En determinadas situaciones usted tendrá códigos de curso que desee truncar a una determinada longitud antes de su procesamiento. Si éste fuera el caso, escriba el número de caracteres en esta caja. En caso contrario, déjela <strong>en blanco</strong>.</p>';
-$string['usecapitafix'] = 'Marcar esta caja si se usa "Capita" (su formato XML es ligeramente erróneo)';
+$string['updatecourses'] = 'Actualizar curso';
+$string['updatecourses_desc'] = 'Si está habilitado, el plugin de matrícula IMS Enterprise puede actualizar los nombres completo y corto del curso (si el marcador "recstatus" tiene valor 2, que representa una actualización).';
+$string['updateusers'] = 'Actualizar cuentas de usuario cuando lo indique los datos IMS';
+$string['updateusers_desc'] = 'Si está habilitado, los datos de inscripción de IMS Enterprise pueden especificar cambios en las cuentas de usuario (si el indicador "recstatus" se establece en 2, lo que representa una actualización).';
+$string['usecapitafix'] = 'Marque esta casilla si usa Capita (ya que su formato XML es ligeramente diferente)';
 $string['usecapitafix_desc'] = '<p>Se ha encontrado un ligero error en la salida XML del sistema de datos de estudiantes producido por Capita. Si utiliza Capita deberá activar esta opción. En caso contrario, déjela desactivada.</p>';
 $string['usersettings'] = 'Opciones de datos del usuario';
 $string['zeroisnotruncation'] = '0 indica que no se truncan los códigos';

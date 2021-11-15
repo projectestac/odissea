@@ -35,4 +35,5 @@ $string['giftrightbraceerror'] = 'No se pudo encontrar un }';
 $string['importminerror'] = 'Hay un error en la pregunta. No hay respuestas suficientes para este tipo de pregunta';
 $string['nohandler'] = 'Sin controlador para el tipo de pregunta {$a}';
 $string['pluginname'] = 'Formato GIFT';
-$string['pluginname_help'] = 'El formato GIFT permite la importanción o exportación, vía fichero de texto, de preguntas tipo selección múltiple, verdadero-falso, respuesta corta, emparejamiento, palabras perdidas, numéricas y ensayo.';
+$string['pluginname_help'] = 'El formato GIFT permite importar o exportar preguntas de opción múltiple, verdadero/falso, respuesta corta, coincidencia, palabra faltante, numérica y de redacción a través de un archivo de texto.';
+$string['privacy:metadata'] = 'El complemento de formato de pregunta GIFT no almacena ningún dato personal.';

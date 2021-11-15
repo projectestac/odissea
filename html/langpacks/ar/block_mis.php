@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['classroom'] = 'الغرفة';
 $string['configtitle'] = 'عنوان الكتلة';
 $string['labeldbpass'] = 'كلمة مرور قاعدة البيانات';
 $string['leaveblanktohide'] = 'أتركه فارغاً لإخفاء العنوان';

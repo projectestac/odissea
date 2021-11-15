@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '自动链接活动名';
+$string['privacy:metadata'] = '活动名称自动链接插件不存储任何个人数据。';

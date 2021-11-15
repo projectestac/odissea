@@ -28,9 +28,9 @@ defined('MOODLE_INTERNAL') || die();
 $string['canntenrol'] = 'A inscrição está desativada ou inativa';
 $string['canntenrolearly'] = 'Ainda não é possível inscrever-se; as inscrições iniciam {$a}.';
 $string['canntenrollate'] = 'Não é possível inscrever mais utilizadores, pois as inscrições terminaram {$a}.';
-$string['cohortnonmemberinfo'] = 'Apenas os membros do grupo global \'{$a}\' podem autoinscrever-se.';
-$string['cohortonly'] = 'Apenas membros do grupo global';
-$string['cohortonly_help'] = 'A autoinscrição pode ser restrita apenas a membros de um grupo global específico. Note que a alteração desta configuração não tem efeito sobre as inscrições existentes.';
+$string['cohortnonmemberinfo'] = 'Apenas os membros do Grupo global \'{$a}\' podem autoinscrever-se.';
+$string['cohortonly'] = 'Apenas membros do Grupo global';
+$string['cohortonly_help'] = 'A autoinscrição pode ser restrita apenas a membros de um Grupo global específico. Note que a alteração desta configuração não tem efeito sobre as inscrições existentes.';
 $string['confirmbulkdeleteenrolment'] = 'Tem a certeza de que pretende apagar essas inscrições do utilizador?';
 $string['customwelcomemessage'] = 'Mensagem de boas-vindas personalizada';
 $string['customwelcomemessage_help'] = 'Pode definir uma mensagem personalizada em texto simples ou autoformatação-Moodle, incluindo código HTML e tags multilingues .

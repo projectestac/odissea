@@ -32,9 +32,13 @@ $string['path_help'] = 'Directorio que se usará para almacenar la caché de arc
 $string['pluginname'] = 'Caché de archivos';
 $string['prescan'] = 'Pre-escanear directorio';
 $string['prescan_help'] = 'Si está habilitado el directorio se escanea cuando se utiliza la memoria caché por vez primera y las solicitudes de archivos se comparan con los datos de la exploración. Este ajuste puede ayudar si se tiene un sistema de archivos lento y las operaciones de archivo están causando un cuello de botella.';
+$string['privacy:metadata'] = 'El complemento de almacenamiento en caché de caché de archivos almacena datos brevemente como parte de su funcionalidad de almacenamiento en caché, pero estos datos se borran con regularidad.';
 $string['singledirectory'] = 'Almacén de archivo único';
-$string['singledirectory_help'] = 'Si se habilita, los archivos (elementos almacenados en caché) se almacenarán en un único directorio en lugar de estar divididos entre varios.
-La activación de este ajuste acelerará los procesos de archivado, a costa de sobrecargar el sistema de archivos.
-Sólo se recomienda activar esta opción si se cumple lo siguiente:
-- Si sabe que el número de elementos de la caché va a ser lo suficientemente pequeño que no va a causar problemas en el sistema de archivos.
-- Los datos que se almacenan en caché no requieren grandes recursos para generarse. De ser así, los ajustes por defecto pueden ser la mejor opción, ya que reduce la posibilidad de problemas.';
+$string['singledirectory_help'] = 'Si está habilitado, los archivos (elementos en caché) se almacenarán en un solo directorio en lugar de dividirse en varios directorios.
+
+Habilitar esto acelerará las interacciones de archivos, pero tiene el costo de un mayor riesgo de afectar las limitaciones del sistema de archivos.
+
+Es aconsejable activarlo solo si se cumple lo siguiente:
+
+* Si sabe que la cantidad de elementos en la caché será lo suficientemente pequeña como para que no cause problemas en el sistema de archivos con el que está ejecutando.
+* Los datos que se almacenan en caché no son costosos de generar. Si es así, seguir con el valor predeterminado puede ser la mejor opción, ya que reduce la posibilidad de problemas.';

@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'التقييد حسب إكمتتال المساق';
-$string['privacy:metadata'] = 'إن ملحق الإتاحة بإكمال المساق لا يخزن أي بيانات شخصية.';
+$string['pluginname'] = 'التقييد حسب إكتمال المقرر الدراسي';
+$string['privacy:metadata'] = 'إن ملحق الإتاحة بإكمال المقرر الدراسي لا يخزن أي بيانات شخصية.';

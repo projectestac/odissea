@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['indent'] = 'زيادة المسافة البادئة';
 $string['outdent'] = 'إنقاص المسافة البادئة';
 $string['pluginname'] = 'زيادة المسافة البادئة';
-$string['privacy:metadata'] = 'إن ملحق atto_indent لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_indent لا تخزن أي بيانات شخصية.';

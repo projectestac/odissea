@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['insertemoticon'] = 'أدرج رمزاً تعبيرياً';
 $string['pluginname'] = 'رمز تعبيري';
-$string['privacy:metadata'] = 'إن ملحق atto_emoticon لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_emoticon لا تخزن أي بيانات شخصية.';

@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allowaudiomp3'] = 'Permitir gravação de áudio';
 $string['allowvideo'] = 'Permitir gravação de vídeo';
-$string['browse'] = 'Procurar';
-$string['browserepositories'] = 'Procurar nos repositórios...';
+$string['browse'] = 'Pesquisar';
+$string['browserepositories'] = 'Pesquisar nos repositórios...';
 $string['cancel'] = 'Cancelar';
 $string['chooseinsert'] = 'O que deseja inserir?';
 $string['dialogtitle'] = 'Criar ficheiro de multimédia';

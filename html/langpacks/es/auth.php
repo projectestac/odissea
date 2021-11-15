@@ -47,7 +47,7 @@ $string['auth_invalidnewemailkey'] = 'Error: Si está intentando confirmar un ca
 $string['auth_multiplehosts'] = 'Es posible especificar múltiples servidores (por ej. servidor1.com;servidor2.com;servidor3.com';
 $string['auth_notconfigured'] = 'El método de autenticación {$a} no está configurado.';
 $string['auth_outofnewemailupdateattempts'] = 'Ha hecho más intentos de los permitidos para actualizar su dirección de email. Su solicitud de actualización ha sido cancelada.';
-$string['auth_passwordisexpired'] = 'Su contraseña ha caducado ¿Desea cambiar su contraseña ahora?';
+$string['auth_passwordisexpired'] = 'Su contraseña ha caducado. Por favor cámbiela ahora.';
 $string['auth_passwordwillexpire'] = 'Su contraseña caducará en {$a} días ¿Desea cambiar su contraseña ahora?';
 $string['auth_remove_delete'] = 'Borrado completo';
 $string['auth_remove_keep'] = 'Mantener interna';
@@ -55,10 +55,10 @@ $string['auth_remove_suspend'] = 'Suspender interna';
 $string['auth_remove_user'] = 'Especificar qué hacer con la cuenta de usuario durante la sincronización interna masiva cuando el usuario se retira de una fuente externa. Sólo los usuarios suspendidos se restauran automáticamente si vuelven a aparecer en la fuente externa.';
 $string['auth_remove_user_key'] = 'Usuario externo eliminado';
 $string['auth_sync_script'] = 'Sincronización de cuenta de usuario';
-$string['auth_sync_suspended'] = 'Cuando está habilitado, el atributo suspendido será utilizado para actualizar el estado de suspensión de la cuenta de usuario local.';
+$string['auth_sync_suspended'] = 'Si está habilitado, el atributo suspendido será utilizado para actualizar el estado de suspensión de la cuenta de usuario local.';
 $string['auth_sync_suspended_key'] = 'Sincronizar estado de suspensión de usuario local';
 $string['auth_updatelocal'] = 'Actualizar datos locales';
-$string['auth_updatelocal_expl'] = '<p><b>Actualizar datos locales:</b> Si está activado, el campo debe ser actualizado (con identificación externa) cada vez que el usuario entra o se produce una sincronización de usuarios. Los campos a actualizar localmente deberían ser bloqueados.</p>';
+$string['auth_updatelocal_expl'] = '<p><b>Actualizar datos locales:</b> Si está activado, el campo debe ser actualizado (con identificación externa) cada vez que el usuario inicia sesión o se produce una sincronización de usuarios. Los campos a actualizar localmente deberían ser bloqueados.</p>';
 $string['auth_updatelocalfield'] = 'Actualizar local ({$a})';
 $string['auth_updateremote'] = 'Actualizar datos externos';
 $string['auth_updateremote_expl'] = '<p><b>Actualizar datos externos:</b> Si está activado, la identificación externa será actualizada cuando se actualice el registro del usuario. Los campos deberían estar desbloqueados para poder editarlos.</p>';
@@ -86,9 +86,11 @@ $string['emailnowexists'] = 'La dirección email que ha intentado asignar a su p
 $string['emailupdate'] = 'Actualizar dirección Email';
 $string['emailupdatemessage'] = 'Estimado(a) {$a->fullname},
 
-Ha solicitado un cambio de su dirección email en su cuenta de {$a->site}. Abra por favor la siguiente dirección en su navegador para confirmar este cambio.
+Ha solicitado un cambio de su dirección de correo electrónico en su cuenta de {$a->site}. Por favor, para confirmar este cambio vaya a las siguientes direcciones web:
 
-{$a->url}';
+{$a->url}
+
+{$a->supportemail}';
 $string['emailupdatesuccess'] = 'La dirección email del usuario <em>{$a->fullname}</em> ha sido actualizada con éxito a <em>{$a->email}</em>.';
 $string['emailupdatetitle'] = 'Confirmación de actualización de email en {$a->site}';
 $string['errormaxconsecutiveidentchars'] = 'Las contraseñas deben tener como máximo {$a} caracteres consecutivos idénticos';
@@ -127,8 +129,8 @@ $string['md5'] = 'Encriptación MD5';
 $string['nopasswordchange'] = 'La contraseña no puede cambiarse';
 $string['nopasswordchangeforced'] = 'No puede seguir sin cambiar su contraseña, sin embargo no existe ninguna página disponible para cambiarla. Por favor contacte a su administrador de Moodle.';
 $string['noprofileedit'] = 'El perfil no puede editarse';
-$string['ntlmsso_attempting'] = 'Intentando Single Sign On vía NTLM...';
-$string['ntlmsso_failed'] = 'Falló el acceso automático; intente con la página de acceso normal...';
+$string['ntlmsso_attempting'] = 'Intentando inicio de sesión única a través de NTLM...';
+$string['ntlmsso_failed'] = 'Falló el acceso automático, pruebe la página de acceso normal...';
 $string['ntlmsso_isdisabled'] = 'NTLM SSO está desactivado.';
 $string['passwordhandling'] = 'Gestión del campo de contraseña';
 $string['plaintext'] = 'Texto plano';
@@ -144,9 +146,9 @@ $string['privacy:metadata:userpref:loginlockout'] = 'Si la cuenta del usuario es
 $string['privacy:metadata:userpref:loginlockoutignored'] = 'Indica si una cuenta de usuario nunca debería de estar sujeta a bloqueos';
 $string['privacy:metadata:userpref:loginlockoutsecret'] = 'Cuando se bloquea, la clave secreta que debe usar el usuario para desbloquear su cuenta';
 $string['recaptcha'] = 'reCAPTCHA';
-$string['recaptcha_help'] = 'El CAPTCHA se utiliza para impedir abusos de programas automáticos. Simplemente escriba las palabras en la caja, en orden y separadas por un espacio.
+$string['recaptcha_help'] = 'El CAPTCHA se utiliza para impedir abusos de programas automáticos. Siga las instrucciones para verificar que es usted una persona. Puede ser una casilla para marcar, caracteres en una imagen para que los escriba o un conjunto de imágenes sobre las que hacer una selección.
 
-Si no está seguro de qué palabras son, puede conseguir otro CAPTCHA, o un CAPTCHA de audio.';
+Si no está seguro de que representan las imágenes, puede intentarlo generando otro CAPTCHA o un CAPTCHA de audio.';
 $string['security_question'] = 'Pregunta de seguridad';
 $string['selfregistration'] = 'Registrarse a sí mismo';
 $string['selfregistration_help'] = 'Escoja qué conector (\'plugin\') de identificación manejar cuando los usuarios se registren a sí mismos.';
@@ -156,9 +158,9 @@ $string['showguestlogin'] = 'Puede ocultar o mostrar el botón de entrada para i
 $string['stdchangepassword'] = 'Utilizar Página de cambio de contraseña estándar';
 $string['stdchangepassword_expl'] = 'Si el sistema de identificación externa permite cambios de contraseña en Moodle, seleccione Sí. Este ajuste anula la configuración de \'Cambiar contraseña URL\'.';
 $string['stdchangepassword_explldap'] = 'NOTA: Se recomienda que utilice LDAP sobre un túnel encriptado SSL (ldaps://) si el servidor LDAP es remoto.';
-$string['suspended'] = 'Cuenta de usuario suspendida';
+$string['suspended'] = 'Cuenta suspendida';
 $string['suspended_help'] = 'Las cuentas de usuarios suspendidas no pueden acceder o utilizar los servicios web y los mensajes salientes se descartan.';
-$string['testsettings'] = 'Configuración del test';
+$string['testsettings'] = 'Probar la configuración';
 $string['testsettingsheading'] = 'Configuración del test de identificación de usuario - {$a}';
 $string['unlocked'] = 'Desbloqueado';
 $string['unlockedifempty'] = 'Desbloqueado si está vacío';

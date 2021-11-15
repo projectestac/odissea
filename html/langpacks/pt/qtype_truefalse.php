@@ -38,6 +38,6 @@ $string['pluginname_link'] = 'pergunta/tipo/verdadeirofalso';
 $string['pluginnameadding'] = 'A adicionar pergunta Verdadeiro/Falso';
 $string['pluginnameediting'] = 'A editar pergunta Verdadeiro/Falso';
 $string['pluginnamesummary'] = 'Uma forma simples de uma pergunta de escolha múltipla com apenas duas opções: Verdadeiro e Falso.';
-$string['privacy:metadata'] = 'O módulo Pergunta do tipo Verdadeiro/Falso não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Verdadeiro/Falso não armazena quaisquer dados pessoais.';
 $string['selectone'] = 'Selecione uma opção:';
 $string['true'] = 'Verdadeiro';

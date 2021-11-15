@@ -53,7 +53,7 @@ $string['block_exaport_confirm_profilefield_exists'] = 'Поле профиля 
 $string['block_exaport_maxbytes'] = 'Максимальный размер загружаемого файла в Exabis E-Portfolio';
 $string['block_exaport_maxbytes_body'] = 'Здесь устанавливается наибольший размер загружаемых в портфолио Exabis файлов.<br> Ограничение для всего сайта: {$a->sitemaxbytes}. См. <a href="{$a->settingsurl}">настройки</a>';
 $string['block_exaport_profilefield_created'] = 'Добавлено поле профиля для доверенного учителя';
-$string['block_exaport_teachercanseeartifactsofstudents_body'] = 'Доверенные учителя должны быть настроены в их личных профилях, и это будет работать только в том случае, если активирована вышеуказанная опция. <br /> {$a} Список студентов для каждого доверенного учителя составляется в соответствии с их записью на курс. <br /> Студенты не могут отключить этот доступ. Доступ к другим пользователям может быть предоставлен как и прежде.';
+$string['block_exaport_teachercanseeartifactsofstudents_body'] = 'Доверенные учителя должны быть настроены в личных профилях, и это будет работать только в том случае, если активирована вышеуказанная опция. <br /> {$a}. Список студентов для каждого доверенного учителя составляется в соответствии с их зачислением на курс. <br /> Студенты не могут отключить этот доступ. Доступ другим пользователям может быть предоставлен, как и прежде.';
 $string['block_exaport_teachercanseeartifactsofstudents_configurationlink'] = 'Добавить обязательное поле профиля пользователя';
 $string['block_exaport_teachercanseeartifactsofstudents_head'] = 'Учитель может видеть ВСЕ артефакты своих учеников';
 $string['block_exaport_userquota'] = 'Квота пользователя для Exabis E-Portfolio';

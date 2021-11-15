@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actualresponse'] = 'الاستجابة الفعلية';
 $string['allattempts'] = 'كل المحاولات';
 $string['allattemptsavg'] = 'الدرجة المتوسطة لجميع المحاولات';
-$string['allattemptscount'] = 'العدد الكلي للمحاولات المكتملة التي تم منح علاماتها';
+$string['allattemptscount'] = 'العدد الكلي للمحاولات المكتملة التي تم تقييمها';
 $string['analysisnameonly'] = '"{$a->name}"';
 $string['analysisno'] = '({$a->number}) "{$a->name}"';
 $string['analysisnovariant'] = 'تباين ({$a->number}) "{$a->name}" {$a->variant}';

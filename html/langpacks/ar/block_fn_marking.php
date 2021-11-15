@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['adminfrontpage'] = 'الواجهة الأمامية بعين المشرف';
+$string['adminfrontpage'] = 'صفحة الواجهة بعين المشرف';
 $string['allparticipants'] = 'كل المشاركين';
 $string['blockinfo'] = 'معلومات الكتلة';
 $string['blocksitesettings'] = 'إعدادات كتلة الموقع';
@@ -44,14 +44,14 @@ $string['forum'] = 'المنتدى';
 $string['hideonlineeditor'] = 'إخفاء المحرر المتصل بالإنترنت';
 $string['labelnoblocks'] = 'إخفاء كل الكتل';
 $string['listcourseszeroungraded'] = 'عرض المساقات التي ليس فيها أي نشاطات غير مقيمة';
-$string['markinmanagerscoursecatsdesc'] = 'حدد تصنيفات المساقات التي ستتم معالجتها من قبل كتلة مدير التأشير في الواجهة الأمامية لمودل وفي دفة القيادة.';
+$string['markinmanagerscoursecatsdesc'] = 'حدد تصنيفات المساقات التي ستتم معالجتها من قبل كتلة مدير التأشير في صفحة واجهة مودل وفي لوحة التحكم.';
 $string['morethan10'] = 'هناك أكثر من 10 مساقات ذات أعمال غير مُقيَّمة.';
 $string['name'] = 'الاسم';
 $string['opensitesettingspage'] = 'صفحة إعدادات إفتتاح الموقع';
 $string['pagelayout'] = 'تخطيط الصفحة';
 $string['pageload'] = 'تحميل الصفحة';
 $string['quiz'] = 'الاختبار';
-$string['refreshmodefrontpage'] = 'وضع تنشيط الكتلة - الواجهة الأمامية';
+$string['refreshmodefrontpage'] = 'وضع تنشيط الكتلة - صفحة الواجهة';
 $string['sectiontitles'] = 'عناوين المقاطع';
 $string['setblocktitle'] = 'تعيين عنوان الكتلة';
 $string['setnumberofdays'] = 'حدد عدد الأيام';

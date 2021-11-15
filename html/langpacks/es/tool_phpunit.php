@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Pruebas de PHPUnit';
+$string['privacy:metadata'] = 'El complemento de pruebas PHPUnit no almacena ningún dato personal.';

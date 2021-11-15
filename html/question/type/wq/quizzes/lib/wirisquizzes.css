@@ -1,1000 +1,978 @@
-body.wirisquizzespopup {
-    overflow: hidden;
+.wrsUI_app .wrsUI_aux_contextPanelWrapper {
+  border-radius: 5px;
+  background: #fefefe;
+}
+
+.wrsUI_app.wrsUI_studentAnswerFeedback .wrsUI_list, .wrsUI_app .wrsUI_studentAnswerFeedback .wrsUI_list {
+  margin: 0px;
+  background: #fff;
+  width: calc(100% - 48px);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app.wrsUI_studentAnswerFeedback .wrsUI_list > .wrsUI_flowPanel, .wrsUI_app .wrsUI_studentAnswerFeedback .wrsUI_list > .wrsUI_flowPanel {
+  height: 48px;
+  justify-content: flex-start !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app.wrsUI_studentAnswerFeedback .wrsUI_list > .wrsUI_flowPanel .wrsUI_label, .wrsUI_app .wrsUI_studentAnswerFeedback .wrsUI_list > .wrsUI_flowPanel .wrsUI_label {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54);
+}
+.wrsUI_app.wrsUI_studentAnswerFeedback .wrsUI_list > .wrsUI_flowPanel > .wrsUI_iconBox, .wrsUI_app .wrsUI_studentAnswerFeedback .wrsUI_list > .wrsUI_flowPanel > .wrsUI_iconBox {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 8px 16px 8px 0px;
+}
+.wrsUI_app.wrsUI_studentAnswerFeedback .wrsUI_list > .wrsUI_flowPanel > .wrsUI_iconBox.wrsUI_hidden, .wrsUI_app .wrsUI_studentAnswerFeedback .wrsUI_list > .wrsUI_flowPanel > .wrsUI_iconBox.wrsUI_hidden {
+  visibility: hidden;
+  display: block !important;
+}
+.wrsUI_app .wrsUI_activityContainer.wrsUI_quizzesStudio .wrsUI_studentAnswerFeedback {
+  margin-bottom: 32px;
+}
+
+.wrsUI_app.wrsUI_quizzesAnswerField, .wrsUI_app .wrsUI_quizzesAnswerField {
+  flex-shrink: 1 !important;
+}
+.wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField {
+  display: inline-block;
+  width: auto;
+}
+.wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField > input, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField > input {
+  line-height: 25px;
+}
+.wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_inputComponentCorrect::after, .wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_inputComponentWarning::after, .wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_inputComponentError::after, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_inputComponentCorrect::after, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_inputComponentWarning::after, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_inputComponentError::after {
+  right: 0px;
+}
+.wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField > .wrsUI_button.wrsUI_buttonIcon, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField > .wrsUI_button.wrsUI_buttonIcon {
+  position: absolute;
+  min-width: 18px;
+  right: 1px;
+  top: calc(50% - 12px);
+  padding: 4px;
+}
+.wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField > input, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField > input {
+  width: calc(100% - 25px);
+  border-width: 0 6px;
+}
+.wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField > input + div, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField > input + div {
+  width: calc(100% - 10px);
+  margin-right: 35px;
+}
+.wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentCorrect::after, .wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentWarning::after, .wrsUI_app.wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentError::after, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentCorrect::after, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentWarning::after, .wrsUI_app .wrsUI_quizzesAnswerField.wrsUI_quizzesEmbeddedAnswerField .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentError::after {
+  right: 23px;
+}
+
+.wrsUI_app.wrsUI_quizzesAuthoringField {
+  background: transparent !important;
+}
+.wrsUI_app.wrsUI_authoringField, .wrsUI_app .wrsUI_authoringField {
+  height: auto;
+  box-shadow: none;
+}
+.wrsUI_app.wrsUI_authoringField > hr, .wrsUI_app .wrsUI_authoringField > hr {
+  border-bottom-color: #077680 !important;
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button, .wrsUI_app .wrsUI_authoringField > .wrsUI_button {
+  color: #077680;
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button:not(:disabled):hover:not(.wrsUI_focused), .wrsUI_app .wrsUI_authoringField > .wrsUI_button:not(:disabled):hover:not(.wrsUI_focused) {
+  background: rgba(7, 118, 128, 0.04);
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button:not(:disabled):active, .wrsUI_app .wrsUI_authoringField > .wrsUI_button:not(:disabled):active {
+  background: rgba(7, 118, 128, 0.12) !important;
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button.wrsUI_focused, .wrsUI_app .wrsUI_authoringField > .wrsUI_button.wrsUI_focused {
+  background: rgba(7, 118, 128, 0.12);
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained, .wrsUI_app .wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained {
+  color: #fefefe;
+  background: #077680;
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained:not(:disabled):hover:not(.wrsUI_focused), .wrsUI_app .wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained:not(:disabled):hover:not(.wrsUI_focused) {
+  background: rgba(7, 118, 128, 0.92);
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained:not(:disabled):active, .wrsUI_app .wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained:not(:disabled):active {
+  background: rgba(7, 118, 128, 0.76) !important;
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained.wrsUI_focused, .wrsUI_app .wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained.wrsUI_focused {
+  background: rgba(7, 118, 128, 0.76);
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained > .wrsUI_aux_ripple, .wrsUI_app .wrsUI_authoringField > .wrsUI_button.wrsUI_buttonContained > .wrsUI_aux_ripple {
+  background: rgba(7, 118, 128, 0.32);
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button > .wrsUI_aux_icon, .wrsUI_app .wrsUI_authoringField > .wrsUI_button > .wrsUI_aux_icon {
+  color: inherit;
+}
+.wrsUI_app.wrsUI_authoringField > .wrsUI_button > .wrsUI_aux_ripple, .wrsUI_app .wrsUI_authoringField > .wrsUI_button > .wrsUI_aux_ripple {
+  background: rgba(7, 118, 128, 0.32);
+}
+.wrsUI_app.wrsUI_authoringFieldSummary, .wrsUI_app .wrsUI_authoringFieldSummary {
+  width: calc(100% - 32px) !important;
+}
+.wrsUI_app.wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list, .wrsUI_app .wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list {
+  margin-top: 12px;
+}
+.wrsUI_app.wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list .wrsUI_panel.wrsUI_flowPanel, .wrsUI_app .wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list .wrsUI_panel.wrsUI_flowPanel {
+  padding: 0;
+  justify-content: flex-start !important;
+}
+.wrsUI_app.wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list .wrsUI_panel.wrsUI_flowPanel:not(:first-child), .wrsUI_app .wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list .wrsUI_panel.wrsUI_flowPanel:not(:first-child) {
+  padding-top: 4px;
+}
+.wrsUI_app.wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list .wrsUI_panel.wrsUI_flowPanel:not(:last-child), .wrsUI_app .wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list .wrsUI_panel.wrsUI_flowPanel:not(:last-child) {
+  padding-bottom: 4px;
+}
+.wrsUI_app.wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list .wrsUI_panel.wrsUI_flowPanel .wrsUI_label, .wrsUI_app .wrsUI_authoringFieldSummary .wrsUI_panel.wrsUI_list .wrsUI_panel.wrsUI_flowPanel .wrsUI_label {
+  white-space: pre-wrap;
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent {
+  --quizzes-studio-min-height: 720px;
+  min-height: min(100%, var(--quizzes-studio-min-height));
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton {
+  color: #077680;
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton:not(:disabled):hover:not(.wrsUI_focused), .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton:not(:disabled):hover:not(.wrsUI_focused) {
+  background: rgba(7, 118, 128, 0.04);
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton:not(:disabled):active, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton:not(:disabled):active {
+  background: rgba(7, 118, 128, 0.12) !important;
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_focused, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_focused {
+  background: rgba(7, 118, 128, 0.12);
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained {
+  color: #fefefe;
+  background: #077680;
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):hover:not(.wrsUI_focused), .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):hover:not(.wrsUI_focused) {
+  background: rgba(7, 118, 128, 0.92);
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):active, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained:not(:disabled):active {
+  background: rgba(7, 118, 128, 0.76) !important;
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained.wrsUI_focused, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton.wrsUI_buttonContained.wrsUI_focused {
+  background: rgba(7, 118, 128, 0.76);
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_icon, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_icon {
+  color: inherit;
+}
+.wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_ripple, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent .wrsUI_button.wrsUI_quizzesButton > .wrsUI_aux_ripple {
+  background: rgba(7, 118, 128, 0.32);
+}
+@media (min-width: 1085px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent {
+    max-width: 1125px;
+    width: calc(100% - 128px);
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+    max-width: unset !important;
     width: 100%;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+    max-width: unset !important;
+    width: 100%;
+  }
+}
+@media (max-width: 1084px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent {
+    max-width: unset !important;
+    width: 975px;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+    max-width: unset !important;
+    width: 100%;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+    max-width: unset !important;
+    width: 100%;
+  }
+}
+@media (max-width: 975px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent {
+    min-width: unset !important;
+    position: fixed !important;
+    right: 1px !important;
+    left: 1px !important;
+    width: auto !important;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+    min-width: unset !important;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+    min-width: unset !important;
+  }
+}
+@media (min-height: 1151px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent {
+    max-height: 1125px;
+    height: calc(100% - 128px);
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+    max-height: unset !important;
     height: 100%;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-}
-div.wiristabs div.wiristabsleftcolumn {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 160px;
-    z-index: 10;
-}
-div.wiristabs div.wiristabcontentwrapper {
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+    max-height: unset !important;
     height: 100%;
-    margin-left: 160px;
-}
-div.wiristabs {
-    background-color: #e0e0e0;
-    bottom: 50px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-div.wirissubmitbuttons {
-    background-color: #e0e0e0;
-    bottom: 0;
-    height: 50px;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-}
-div.wirissubmitbuttonswrapper {
-    padding: 10px;
-    float: left;
-}
-div.wirispoweredbywrapper {
-    padding: 10px;
-    float: right;
-}
-div.wirispoweredbywrapper a img {
-    border-style: none;
-}
-div.wirispoweredbywrapper a {
-    font-family: Segoe UI, Arial, Helvetica, sans-serif;
-    color: #888;
-    text-decoration: none;
-    font-size: 15px;
-}
-div.wirispoweredbywrapper img {
-    position: relative;
-    bottom: -2px;
-}
-
-div.wiristabs div.wiristabcontent {
-    background-color: #fff;
-    bottom: 0;
-    left: 160px;
-    overflow: auto;
-    padding: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-radius: 8px;
-    border: solid 1px #999;
-}
-div.wiristabs div.wirisalgorithmlanguage {
-    bottom: 135px;
-    left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-div.wiristabs .wiriscaswrapper {
-    bottom: 0px;
-    left: 10px;
-    position: absolute;
-    right: 10px;
-    top: 15px;
-}
-div.wirisoutputoptionswrapper  {
-    padding-top: 10px;
-}
-div.wiristabs div.wiriscasbottomwrapper {
-    bottom: 0;
-    left: 10px;
-    position: absolute;
-    right: 10px;
-}
-div.wiriseditorwrapper {
-    height: 200px;
-    width: auto;
-    max-width: 450px;
-    margin-bottom: 5px;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-}
-
-div.wiriseditorwrapper.wrs_handOpen {
-    max-width: 800px;
-}
-div.wiriseditorwrapper.wirispopupsimplecontent {
-    height: auto;
-    width: auto;
-    max-width: 100%;
-}
-div.wirishandwrapper {
-    height: 300px;
-    min-width: 300px;
-    max-width: 960px;
-    margin-bottom: 5px;
-}
-.wirishidden {
-    display: none;
-}
-div.wiristabs div.wirisselected {
-    display: block;
-}
-div.wiristabs ul.wiristablist {
-    margin: 10px 0 10px 10px;
-    padding: 0;
-}
-
-div.wiristabs li.wiristab {
-    width: 100%;
-}
-div.wiristabs a.wiristablink {
-    display: inline-block;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-top: 5px;
-    width: 139px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border: solid 1px #999;
-    margin-bottom: 1px;
-    background-color: #ccc;
-}
-div.wiristabs a.wiristablink:hover,
-div.wiristabs a.wiristablink.wirisselected {
-    background-color: #fff;
-}
-div.wiristabs a.wiristablink.wirisselected {
-    width: 140px;
-    border-right: none;
-}
-a.wirishelp {
-    background: url("?service=resource&name=manual.png&v=3.78.4.a4026f") no-repeat scroll left top transparent;
-    display: block;
-    height: 17px;
-    margin: 0;
-    width: 17px;
-}
-
-span.wirishelp {
-    float: right;
-	margin-right: -3px;
-	margin-top: -25px;
-}
-
-span.wirisloading {
-    background: url("?service=resource&name=loading.gif&v=3.78.4.a4026f") no-repeat scroll left top transparent;
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    margin: 0;
-    padding: 0;
-    margin-left: 5px;
-    vertical-align: middle;
-}
-div.wiristabs fieldset.wirisfieldset {
-    border: solid 1px;
-    border-radius: 8px;
-    border-color: #999;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-}
-div.wiristabs fieldset.wirisfieldset.wiriscaswrapper {
-	padding-top: 16px;
-}
-div.wiristabs fieldset.wiristestcorrectanswerfieldset {
-    padding: 16px 10px;
-}
-div.wiristabs div.wirisfieldsetwrapper {
-    /*Base position for help button.*/
-    position: relative;
-}
-div.wiristabs fieldset.wirisfieldset.wiriscollapsed {
-    border-radius: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    margin-bottom: 0;
-}
-div.wiristabs fieldset.wirisfieldset div.wirisfieldsetwrapper.wiriscollapsed {
-    overflow: hidden;
-    max-height: 0;
-}
-div.wiristabs fieldset.wirisfieldset div.wirisfieldsetwrapper.wirisexpanded {
-    overflow-y: auto;
-    max-height: 350px;
-}
-div.wiristabs fieldset.wirisfieldset div.wirisfieldsetwrapper {
-    -webkit-transition: max-height .25s;
-    -moz-transition: max-height .25s;
-    transition: max-height .25s;
-}
-div.wiristabs fieldset.wirisfieldset legend a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-div.wiristabs fieldset.wirisfieldset legend a:hover {
-    text-decoration: underline;
-}
-div.wiristabs fieldset.wirisfieldset legend a.wiriscollapsed {
-    background: url("?service=resource&name=fieldset-collapsed.png&v=3.78.4.a4026f") no-repeat 3px 50%;
-    padding-left: 14px;
-}
-div.wiristabs fieldset.wirisfieldset legend a.wirisexpanded {
-    background: url("?service=resource&name=fieldset-expanded.png&v=3.78.4.a4026f") no-repeat 3px 50%;
-    padding-left: 14px;
-}
-div.wiristabs div.wiristolerance {
-    margin-left: 8px;
-    margin-bottom: 6px;
-    margin-top: 2px;
-}
-
-div.wiristabs ul {
-    margin: 0;
-    padding: 0;
-    list-style: none outside none;
-}
-div.wiristabs ul.wirisinputcontrolslist {
-    margin-bottom: 10px;
-}
-div.wiristabs {
-    font-family: Segoe UI, Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-div.wiristabs .wirissyntaxparam {
-    clear: both;
-}
-div.wiristabs .wirisspaceafter {
-    margin-bottom: 6px;
-}
-div.wiristabs .wirisspacebefore {
-    margin-top: 6px;
-}
-div.wiristabs span.wirissyntaxlabel {
-    display: block;
-    text-align: right;
-    margin-right: 5px;
-    float: left;
-    width: 140px;
-}
-div.wiristabs span.wirissyntaxvalues {
-    display: block;
-    margin-left: 150px;
-}
-div.wiristabs span.wirissyntaxchar {
-    display: inline-block;
-    text-align: left;
-}
-div.wiristabs span.wirissyntaxchar label {
-    display: block;
-    margin-left: 2px;
-}
-fieldset.wirismainfieldset legend.wirismainfieldset {
-    font-weight: bold;
-    border: solid 1px #999;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 1px;
-}
-
-div.wiristabs span.wirishorizontalparam {
-    display: inline-block;
-    min-width: 42px;
-}
-div.wiristabs span.wirishorizontalparam label {
-    margin-right: 8px;
-}
-
-div.wiristabs label.wirisleftlabel2 {
-    margin-right: 5px;
-}
-div.wiristabs div.wirishelpwrapper,
-div.wiristabs div.wirismessagebox {
-    font-size: 13px;
-    margin-left: 10px;
-    margin-right: 5px;
-}
-div.wiristabs div.wirismessagebox {
-    position: absolute;
-    bottom: 72px;
-    margin-bottom: 5px;
-    /*Do not overlap with tab help text*/
-    z-index: 10;
-}
-div.wirismessage {
-    padding-left: 18px;
-    margin: 5px 0;
-}
-div.wirismessage.wiriserror {
-    color: #701703;
-    background: url("?service=resource&name=warning.png&v=3.78.4.a4026f") no-repeat left top;
-}
-div.wirismessage.wiriswarning {
-    color: #70370a;
-    background: url("?service=resource&name=warning2.png&v=3.78.4.a4026f") no-repeat left top;
-}
-div.wirismessage.wirisinfo {
-    color: #265970;
-    background: url("?service=resource&name=warning3.png&v=3.78.4.a4026f") no-repeat left top;
-}
-
-div.wiristabs div.wirissecondaryfieldset {
-    margin-bottom: 10px;
-}
-div.wiristabs div.wiristerciaryfieldset {
-    padding-left: 1em;
-}
-div.wiristabs .wirisadditionalinput {
-    margin-left: 0.5em;
-}
-
-div.wiristabs .wirisintinputbox {
-    width: 30px;
-}
-
-input[type=button].wirisbutton {
-    min-width: 70px;
-}
-
-div.wiristabs span.wiristestgradetext {
-    display: inline-block;
-    font-weight: bold;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 18px;
-}
-div.wiristabs span.wiristestgradetext.wiriscorrect {
-    color: #57a005;
-}
-div.wiristabs span.wiristestgradetext.wirisincorrect {
-    color: #c02705;
-}
-div.wiristabs span.wiristestgradetext.wirispartiallycorrect {
-    color: #c99a08;
-}
-div.wiristabs div.wiristestbuttons {
-    margin: 6px 0 10px 0;
-}
-div.wiriscasinitialcontent {
-    bottom: 50px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #e0e0e0;
-}
-div.wiriscasinitialcontent .wiriscaswrapper {
-    bottom: 10px;
-    left: 10px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-div.wiristabs div.wirisactionswrapper {
-    bottom: 0;
-    margin-bottom: 10px;
-    position: absolute;
-    border-top: solid 1px #999;
-}
-
-div.wiristabs ul.wirisactionslist li a {
-    display: block;
-    padding-left: 14px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    width: 146px;
-    cursor: pointer;
-    border-bottom: solid 1px #999;
-}
-div.wiristabs ul.wirisactionslist li a:hover {
-    background-color: #fff;
-}
-
-fieldset.wirisalgorithmeditorlauncher {
-    border: none !important;
-    padding-left: 0;
-}
-
-.wiriscaswrapper {
-    padding: 20px 15px;
-}
-.wiriscaswrapper>div {
-    height: calc(100% - 20px);
-    overflow: auto;
-    position: relative;
-}
-
-div.wiriscalcme {
-    margin-bottom: 15px;
-}
-
-div.wirisjnlptext,
-p.wiriscalclaunchertext {
-    font-size: 13px;
-    margin-top: 0;
-}
-p.wiriscalclaunchertext.wiriscalctip {
-    padding-top: 15px;
-}
-div.wirisjnlpform {
-    margin-bottom: 10px;
-    display: inline-block;
-}
-div.wirisjnlpnotes {
-    font-size: 13px;
-    display: inline-block;
-    margin: 0 0 10px 10px;
-}
-div.wirisjnlpnotes span {
-    margin-right: 5px;
-}
-
-/**
- *  Styles for new JsComponent model HTML
- **/
-
-
-div.wirismaincontainer {
-    background-color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-    font-family: Segoe UI, Arial, Helvetica, sans-serif;
-    font-size: 15px;
+  }
+}
+@media (max-height: 1150px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent {
+    max-height: unset !important;
+    height: 920px;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+    max-height: unset !important;
     height: 100%;
-    width: 100%;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+    max-height: unset !important;
+    height: 100%;
+  }
 }
-div.wirispopupcontainer {
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+@media (max-height: 920px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent {
+    min-height: unset !important;
+    position: fixed !important;
+    top: 1px !important;
+    bottom: 1px !important;
+    height: auto !important;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+    min-height: unset !important;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window.wrsUI_authoringFieldWindowGraphicalAnswer > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+    min-height: unset !important;
+  }
 }
-div.wirispopupsimplecontent {
-    background-color: #fff;
-    border: 1px solid #999;
-    border-radius: 8px 8px 8px 8px;
-    bottom: 50px;
-    left: 0;
-    padding: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
+@media (min-height: 901px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent {
+    max-height: 1125px;
+    height: calc(100% - 128px);
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+    max-height: unset !important;
+    height: 100%;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+    max-height: unset !important;
+    height: 100%;
+  }
 }
-div.wirispopupsimplecontent .wiriscaswrapper {
-    position: absolute;
-    bottom: 40px;
-    left: 10px;
-    right: 10px;
-    top: 10px;
+@media (max-height: 900px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent {
+    max-height: unset !important;
+    height: 720px;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+    max-height: unset !important;
+    height: 100%;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+    max-height: unset !important;
+    height: 100%;
+  }
 }
-div.wirispopupsimplecontent div.wirisalgorithmlanguage {
-    bottom: 0;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-div.wirispopupctrlshiftqfirst,
-div.wirispopupctrlshiftqsecond,
-div.wirispopupctrlshiftqthird {
-    position: absolute;
-    left: 10px;
-    right: 15px;
-}
-div.wirispopupctrlshiftqfirst {
-    top: 0;
-    bottom: 114px;
-}
-div.wirispopupctrlshiftqsecond {
-    bottom: 62px;
-}
-div.wirispopupctrlshiftqthird {
-    bottom: 10px;
-}
-div.wirispopupctrlshiftqsecond input,
-div.wirispopupctrlshiftqthird input {
-    width: 100%;
-}
-div.wirispopupctrlshiftqfirst textarea {
-    position: absolute;
-    top: 20px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-span.wirisleftlabel:after,
-label.wirisleftlabel:after {
-    content: ':';
-}
-span.wirisleftlabel:after,
-label.wirisleftlabel {
-    margin-right: 5px;
+@media (max-height: 720px) {
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent {
+    min-height: unset !important;
+    position: fixed !important;
+    top: 1px !important;
+    bottom: 1px !important;
+    height: auto !important;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody {
+    min-height: unset !important;
+  }
+  .wrsUI_app.wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio, .wrsUI_app .wrsUI_authoringFieldWindow > .wrsUI_window:not(.wrsUI_authoringFieldWindowGraphicalAnswer) > .wrsUI_aux_windowContent > .wrsUI_aux_windowBody .wrsUI_quizzesStudio {
+    min-height: unset !important;
+  }
 }
 
-div.wirisalgorithmlanguage label.wirisleftlabel {
-    font-size: 13px;
+.wrsUI_app .wrsUI_calcMeComponent {
+  display: flex;
+  flex-direction: column;
+}
+.wrsUI_app .wrsUI_calcMeComponent .wrsUI_calc {
+  flex-grow: 1;
 }
 
-label.wirissecondlabel {
-    margin-left: 10px;
+.wrsUI_app.wrsUI_quizzesCompoundField .wrsUI_quizzesCompoundFieldRow, .wrsUI_app .wrsUI_quizzesCompoundField .wrsUI_quizzesCompoundFieldRow {
+  margin: 8px 0;
+}
+.wrsUI_app.wrsUI_quizzesCompoundField .wrsUI_quizzesCompoundFieldRow .wrsUI_mathLabel, .wrsUI_app .wrsUI_quizzesCompoundField .wrsUI_quizzesCompoundFieldRow .wrsUI_mathLabel {
+  min-height: 16px;
 }
 
-
-table.wirisoutputcontrolslist {
-    padding: 0;
-    margin: 0;
-    border: none;
-    border-spacing: 0;
-    border-collapse: collapse;
+.wrsUI_app .wrsUI_mathTextField > input + div {
+  display: inline-flex;
+  position: relative;
+  width: calc(100% - 24px);
+  border: solid transparent;
+  border-width: 0 12px;
+  min-height: 19px;
+  padding-top: 22px;
+  padding-bottom: 8px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.wrsUI_app .wrsUI_mathTextField .wrsUI_viewer {
+  width: 100%;
+  margin: 8px 0 4px 0;
+  background: transparent;
+  border: solid transparent;
+  border-width: 0 12px;
+}
+.wrsUI_app .wrsUI_mathTextField:not(.wrsUI_textComponentWithLabel) > input + div {
+  padding: 8px 0;
+  min-height: 49px;
+  margin-bottom: 1px;
 }
 
-table.wirisoutputcontrolslist td {
-    padding: 1px;
-    margin: 0;
+@-webkit-keyframes mathType-loading-circle {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes mathType-loading-circle {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-ms-keyframes mathType-loading-circle {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes mathType-loading-circle {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentWrapper {
+  height: 100%;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #d0d0d0;
+  border-radius: 100%;
+  -webkit-animation: mathType-loading-circle 1.2s infinite ease-in-out both;
+  animation: mathType-loading-circle 1.2s infinite ease-in-out both;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot2 {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot2::before {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot3 {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot3::before {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot4 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot4::before {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot5 {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot5::before {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot6 {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot6::before {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot7 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot7::before {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot8 {
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot8::before {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot9 {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot9::before {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot10 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot10::before {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot11 {
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot11::before {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot12 {
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+.wrsUI_app .wrsUI_mathTypeComponent .wrsUI_aux_mathTypeComponentPlaceholder .wrsUI_aux_mathTypeComponentePlaceholderCircle .wrsUI_aux_mathTypeComponentePlaceholderCircleDot.wrsUI_aux_mathTypeComponentePlaceholderCircleDot12::before {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
 }
 
-table.wirisoutputcontrolslist tr.wirisrowthinspace > td {
-    padding-top: 4px;
+.wrsUI_app .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField > input {
+  width: calc(100% - 64px);
+}
+.wrsUI_app .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField > input + div {
+  width: calc(100% - 88px);
+  margin-right: 90px;
+  display: inline-block;
+}
+.wrsUI_app .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField > .wrsUI_button.wrsUI_buttonIcon {
+  position: absolute;
+  min-width: 34px;
+  right: 8px;
+  top: calc(50% - 17px);
+  bottom: calc(50% - 17px);
+  padding: 4px;
+}
+.wrsUI_app .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentCorrect::after, .wrsUI_app .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentWarning::after, .wrsUI_app .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_inputComponentError::after {
+  right: 72px;
+}
+.wrsUI_app .wrsUI_inputComponent.wrsUI_textField.wrsUI_popupTextField.wrsUI_popupTextFieldClickable {
+  cursor: pointer;
 }
 
-table.wirisoutputcontrolslist td.wirisleftlabellist {
-    text-align: right;
+.wrsUI_app .wrsUI_quizzesStudio {
+  outline: 0;
+  grid-template: 72px 1fr 76px/repeat(3, 1fr);
 }
-div.wiristabs input.wirissmalltextfield {
-    width: 60px;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_chip {
+  background: rgba(0, 0, 0, 0.08);
 }
-div.wiristabs input[type=text] {
-    height: 20px;
-    padding-left: 4px;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_chip.wrsUI_choiceChip.wrsUI_selected {
+  color: #066068;
+  background: rgba(7, 118, 128, 0.08);
 }
-div.wiristabs select {
-    height: 24px;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_chip.wrsUI_choiceChip::after {
+  background: #077680;
 }
-div.wiristabs input[type=text],
-div.wiristabs select {
-    border: 1px solid #aaa;
-    margin-top: 1px;
-    margin-bottom: 1px;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_chip > .wrsUI_aux_ripple {
+  background: rgba(7, 118, 128, 0.32);
 }
-div.wiristabs li {
-    min-height: 24px;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_label {
+  color: black;
 }
-div.wiristabs span.wirisfloatingexample {
-    margin-left: 20px;
-    color: #666;
-    font-size: 0.9em;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_label.wrsUI_labelImportant {
+  font-size: 16px;
+  font-weight: 400;
 }
-div.wiristabs span.wirisfloatingnumber {
-    margin-left: 10px;
-    font-size: 1.15em;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_label.wrsUI_labelTiny {
+  margin-top: 6px;
+  margin-left: 8px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54);
 }
-div.wiristabs table.wirisoutputcontrolslist {
-    overflow: hidden;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_label.wrsUI_answerTypeLabel {
+  margin-bottom: 10px;
 }
-div.wiristabs table.wirisoutputcontrolslist td {
-    white-space: nowrap;
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_label.wrsUI_correctAnswerLabel {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_label.wrsUI_calcMeLabel {
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_activityPanel > .wrsUI_flowPanel {
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_buttonPanel > .wrsUI_aux_ripple {
+  background: rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_panelSolid {
+  background: #f2f2f2;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_checkBoxHelperText .wrsUI_label, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_radioButtonHelperText .wrsUI_label {
+  white-space: normal;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_checkBoxHelperText .wrsUI_label.wrsUI_mathLabel, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_radioButtonHelperText .wrsUI_label.wrsUI_mathLabel {
+  min-height: 1px;
+  opacity: 0.54;
+  transform: scale(0.75);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab > .wrsUI_label, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab > .wrsUI_iconBox {
+  opacity: 0.76;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab:not(:disabled):hover:not(.wrsUI_focused) {
+  background: rgba(7, 118, 128, 0.04);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab:not(:disabled):active {
+  background: rgba(7, 118, 128, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab.wrsUI_focused {
+  background: rgba(7, 118, 128, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab > .wrsUI_label {
+  font-weight: 400;
+  color: #077680 !important;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelTabContainer > .wrsUI_tabbedPanelTab > .wrsUI_aux_ripple {
+  background: rgba(7, 118, 128, 0.32);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_indicator {
+  background: #077680;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_tabbedPanel.wrsUI_correctAnswerTabbedPanel > .wrsUI_aux_tabbedPanelContainer .wrsUI_borderPanel.wrsUI_initialContentTab {
+  overflow-y: auto;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar {
+  height: 72px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button {
+  color: rgba(0, 0, 0, 0.54);
+  border-radius: 50%;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button:not(:disabled):hover:not(.wrsUI_focused) {
+  background: rgba(0, 0, 0, 0.04);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button:not(:disabled):active {
+  background: rgba(0, 0, 0, 0.12) !important;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button.wrsUI_focused {
+  background: rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button > .wrsUI_aux_icon {
+  color: inherit;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_button > .wrsUI_aux_ripple {
+  background: rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar > .wrsUI_flowPanel:last-child .wrsUI_button:not(:first-child) {
+  margin-left: 12px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar > .wrsUI_flowPanel:last-child .wrsUI_button:not(:last-child) {
+  margin-right: 12px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toolBar.wrsUI_quizzesStudioToolBar .wrsUI_label.wrsUI_labelHeader {
+  margin-left: 40px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList {
+  cursor: pointer;
+  background: #fff;
+  margin: 12px 24px;
+  width: calc(100% - 48px);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList > .wrsUI_flowPanel {
+  height: 48px;
+  box-sizing: border-box;
+  padding: 8px 12px 8px 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_list.wrsUI_activityList > .wrsUI_flowPanel > .wrsUI_label {
+  cursor: pointer;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_dataTable .wrsUI_mathLabel {
+  padding: 4px;
+  border: 1px solid #007f00;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_quizzesStudioBottomBar {
+  width: calc(100% - 48px);
+  height: 36px;
+  padding: 20px 24px;
+  box-sizing: content-box !important;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_quizzesFullSizePanel {
+  width: 100%;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_quizzesFullSizePanel > .wrsUI_label.wrsUI_labelImportant {
+  margin: 0 0 6px 24px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_quizzesFullSizePanel > .wrsUI_panel.wrsUI_panelCard {
+  width: calc(100% - 48px);
+  margin: 0 24px 20px 24px;
+  box-sizing: border-box;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_panelCard .wrsUI_label.wrsUI_labelImportant {
+  margin: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.54);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_panelCard .wrsUI_label.wrsUI_actionLabel {
+  margin: 8px 4px;
+  font-size: 14px;
+  color: #077680;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_panelCard > .wrsUI_divider {
+  width: calc(100% + 32px) !important;
+  margin: 16px 0 16px -16px;
+  position: relative !important;
+  border-top-color: rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_optionsFilter {
+  padding-left: 24px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_optionsFilter > .wrsUI_flowPanel {
+  margin: 12px 0;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_inputSyntaxRow {
+  width: 100%;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_inputSyntaxRow > .wrsUI_borderPanel {
+  margin: -4px 4px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_separatorRow {
+  width: 320px;
+  display: flex;
+  margin-left: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_separatorRow .wrsUI_label {
+  min-width: 72px;
+  font-weight: 400;
+  display: inline-flex;
+  color: black;
+  justify-content: flex-end !important;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_separatorRow .wrsUI_aux_dropdown_container {
+  margin-left: 24px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer {
+  min-height: 60px;
+  box-sizing: border-box;
+  padding: 12px 16px !important;
+  margin: 12px 0px 24px 0px !important;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_mathLabel {
+  display: flex;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_button {
+  margin: 0;
+  width: 36px;
+  min-width: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.54);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_button:first-child {
+  margin-right: 24px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_button:last-child {
+  margin-right: 8px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_button:not(:disabled):hover:not(.wrsUI_focused) {
+  background: rgba(0, 0, 0, 0.04);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_button:not(:disabled):active {
+  background: rgba(0, 0, 0, 0.12) !important;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_button.wrsUI_focused {
+  background: rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_button > .wrsUI_aux_icon {
+  color: inherit;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_correctAnswer .wrsUI_button > .wrsUI_aux_ripple {
+  background: rgba(0, 0, 0, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toggleButtonsPanel .wrsUI_button.wrsUI_toggleButton {
+  font-weight: 300;
+  text-transform: none;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toggleButtonsPanel .wrsUI_button.wrsUI_toggleButton > .wrsUI_aux_ripple {
+  background: rgba(7, 118, 128, 0.32);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel.wrsUI_toggleButtonsPanel .wrsUI_button.wrsUI_toggleButton.wrsUI_selected {
+  color: rgba(7, 118, 128, 0.87);
+  border-color: rgba(7, 118, 128, 0.87);
+  background: rgba(7, 118, 128, 0.12);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioGraphInputOptions > .wrsUI_panel > .wrsUI_label {
+  margin-left: 24px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioGraphInputOptions > .wrsUI_panel > .wrsUI_panel.wrsUI_quizzesFullSizePanel.wrsUI_customizeToolbarComponent {
+  width: calc(100% - 48px);
+  margin: 16px 24px 0 24px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioGraphInputOptions > .wrsUI_panel > .wrsUI_panel.wrsUI_quizzesFullSizePanel.wrsUI_customizeToolbarComponent .wrsUI_treeSelector {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+  flex: 2;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_panel .wrsUI_quizzesStudioGraphInputOptions > .wrsUI_panel > .wrsUI_panel.wrsUI_quizzesFullSizePanel.wrsUI_customizeToolbarComponent .wrsUI_graphComponent {
+  flex: 3;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_studentAnswer {
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), border 0.3s cubic-bezier(0.4, 0, 0.2, 1), max-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_textComponent.wrsUI_focused label {
+  color: #077680;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_textComponent hr {
+  border-bottom-color: #077680;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_textComponent.wrsUI_viewSourceTextField {
+  width: calc(100% - 64px) !important;
+  margin: 0 32px 16px 32px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_textComponent.wrsUI_viewSourceTextField.wrsUI_textArea {
+  flex-grow: 1;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox {
+  width: 100%;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox.wrsUI_selected .wrsUI_aux_checkBox::before {
+  background: #077680;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox.wrsUI_selected .wrsUI_aux_checkBox > .wrsUI_aux_checkBox_ripple::before, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox.wrsUI_selected .wrsUI_aux_checkBox > .wrsUI_aux_checkBox_ripple::after {
+  background: #077680;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox > .wrsUI_checkBoxText, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox > .wrsUI_checkBoxHelperText {
+  width: 100%;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox > .wrsUI_checkBoxText .wrsUI_textField.wrsUI_quizzesInlineTextField, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox > .wrsUI_checkBoxText .wrsUI_aux_dropdown_container, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox > .wrsUI_checkBoxText .wrsUI_aux_dropdown_container .wrsUI_dropdown.wrsUI_quizzesInlineDropdown, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox > .wrsUI_checkBoxHelperText .wrsUI_textField.wrsUI_quizzesInlineTextField, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox > .wrsUI_checkBoxHelperText .wrsUI_aux_dropdown_container, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_checkBox > .wrsUI_checkBoxHelperText .wrsUI_aux_dropdown_container .wrsUI_dropdown.wrsUI_quizzesInlineDropdown {
+  width: 180px !important;
+  margin: 0 8px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton {
+  width: 100%;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton.wrsUI_selected .wrsUI_aux_radioButton::before {
+  border-color: #077680;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton.wrsUI_selected .wrsUI_aux_radioButton::after {
+  background: #077680;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton.wrsUI_selected .wrsUI_aux_radioButton > .wrsUI_aux_radioButton_ripple::before, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton.wrsUI_selected .wrsUI_aux_radioButton > .wrsUI_aux_radioButton_ripple::after {
+  background: #077680;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton > .wrsUI_radioButtonText, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton > .wrsUI_radioButtonHelperText {
+  width: 100%;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton > .wrsUI_radioButtonText .wrsUI_textField.wrsUI_quizzesInlineTextField, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton > .wrsUI_radioButtonText .wrsUI_aux_dropdown_container, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton > .wrsUI_radioButtonText .wrsUI_aux_dropdown_container .wrsUI_dropdown.wrsUI_quizzesInlineDropdown, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton > .wrsUI_radioButtonHelperText .wrsUI_textField.wrsUI_quizzesInlineTextField, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton > .wrsUI_radioButtonHelperText .wrsUI_aux_dropdown_container, .wrsUI_app .wrsUI_quizzesStudio .wrsUI_radioButton > .wrsUI_radioButtonHelperText .wrsUI_aux_dropdown_container .wrsUI_dropdown.wrsUI_quizzesInlineDropdown {
+  width: 180px !important;
+  margin: 0 8px;
+}
+.wrsUI_app .wrsUI_quizzesStudio .wrsUI_calcMeComponent {
+  flex-grow: 1;
+  align-self: stretch;
+  justify-self: stretch;
 }
 
-
-/**
-Styles for principal page
-**/
-div fieldset.wirisfieldsetvalidationandvariables {
-    border: solid 1px #999;
-    border-radius: 10px;
-    margin: 10px 10px 10px 0;
-    max-width: 960px;
+.wrsUI_app .wrsUI_wirisCasComponent {
+  width: calc(100% - 96px);
 }
-div fieldset.wirisfieldsetvalidationandvariables legend {
-    font-weight: bold;
-    color: #666;
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: solid 1px #999;
-    width: initial;
-    line-height: initial;
-    font-size: medium;
-    display: block;
-    margin: 0;
+.wrsUI_app .wrsUI_wirisCasComponent .wrsUI_wirisCasInput .wrsUI_aux_wirisCasComponentForm {
+  display: flex;
+}
+.wrsUI_app .wrsUI_wirisCasComponent .wrsUI_quizzesFullSizePanel .wrsUI_panelCard > .wrsUI_panel.wrsUI_flowPanel {
+  margin-bottom: 24px;
+}
+.wrsUI_app .wrsUI_wirisCasComponent .wrsUI_quizzesFullSizePanel .wrsUI_panelCard .wrsUI_aux_dropdown_container:not(:last-child) {
+  margin-left: 8px;
+  margin-right: 24px;
+}
+.wrsUI_app .wrsUI_wirisCasComponent .wrsUI_quizzesFullSizePanel .wrsUI_panelCard .wrsUI_label:not(.wrsUI_labelTiny) {
+  margin-left: 8px;
+  font-weight: 400;
 }
 
-span.wirissummarywrapper {
-    display: block;
-    float: left;
-    width: 100%;
-    clear: both;
-    margin: 0;
+.wrsUI_app .wrsUI_graphValidationOptions {
+  width: 100%;
+  height: 100%;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_elementsContainer {
+  width: calc(100% - 48px);
+  margin: 12px 24px 24px 24px;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_elementsContainer .wrsUI_elementSelector {
+  width: 56%;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_elementsContainer .wrsUI_elementSelector .wrsUI_selectorHeader {
+  width: calc(100% - 10px);
+  height: 60px;
+  margin: 0 0 0 10px;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_elementsContainer .wrsUI_elementSelector .wrsUI_elementsPanel {
+  width: 100%;
+  height: 390px;
+  overflow: auto;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_elementsContainer .wrsUI_elementSelector .wrsUI_divider {
+  width: 100% !important;
+  margin: 0 !important;
+  position: inherit;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_elementsContainer .wrsUI_elementSelector .wrsUI_checkBox {
+  margin: 0;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_elementsContainer .wrsUI_graphView {
+  width: 50%;
+  height: 100%;
+  margin: 0 10px 0 0;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_criteriaContainer {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding: 20px 25px 20px 25px;
+  background-color: white;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_criteriaContainer .wrsUI_toleranceTitle {
+  font-size: 14px;
+  font-weight: 400;
+}
+.wrsUI_app .wrsUI_graphValidationOptions .wrsUI_quizzesFullSizePanel .wrsUI_criteriaContainer .wrsUI_toleranceInput {
+  width: 75px !important;
+  background-color: white;
+  margin: 0 0 0 25px;
 }
 
-dl.wirisassertionsummarydl {
-    margin: 0;
-    padding: 0;
+.wrsUI_app .wrsUI_graphValidationElement {
+  width: 100%;
 }
-
-dl.wirisassertionsummarydl dt {
-    color: #999;
-    text-align: right;
-    float: left;
-    clear: left;
-    width: 160px;
-    margin-right: 5px;
+.wrsUI_app .wrsUI_graphValidationElement .wrsUI_componentContent {
+  width: calc(100% - 20px);
+  height: 100%;
+  margin-left: 10px;
 }
-
-dl.wirisassertionsummarydl dt:after {
-    content: ":";
+.wrsUI_app .wrsUI_graphValidationElement .wrsUI_componentContent .wrsUI_checkBox {
+  width: 50%;
+  margin: 0;
 }
-
-fieldset.wirisauxiliarcas {
-    height: 400px;
-    padding: 10px;
-    width: 700px;
+.wrsUI_app .wrsUI_graphValidationElement .wrsUI_componentContent .wrsUI_checkBox .wrsUI_checkBoxHelperText {
+  height: 100%;
+  overflow: hidden;
+  margin-left: 18px;
+  display: inline;
 }
-fieldset.wirisauxiliarcas .wiriscaswrapper {
-    height: 370px;
+.wrsUI_app .wrsUI_graphValidationElement .wrsUI_componentContent .wrsUI_textField {
+  max-width: 50%;
+  background-color: white;
 }
-div.wirisalgorithmlanguage {
-    padding-bottom: 10px;
-    padding-top: 10px;
+.wrsUI_app .wrsUI_graphValidationElement .wrsUI_componentContent .wrsUI_textComponent.wrsUI_textField > input {
+  line-height: 30px;
 }
-
-/**
-This three are used both in studio and in main page.
-**/
-
-ul.wiristestassertionslist {
-    margin: 0;
-    padding: 0;
-    list-style: none outside none;
+.wrsUI_app .wrsUI_graphValidationElement .wrsUI_componentContent .wrsUI_aux_textComponentSuffix {
+  line-height: 30px !important;
 }
-
-ul.wiristestassertionslist span.wiriscorrect {
-    background: url("?service=resource&name=correct.gif&v=3.78.4.a4026f") no-repeat left;
-}
-
-ul.wiristestassertionslist span.wirisincorrect {
-    background: url("?service=resource&name=incorrect.gif&v=3.78.4.a4026f") no-repeat left;
-}
-
-ul.wiristestassertionslist span.wirispartiallycorrect {
-    background: url("?service=resource&name=percent.gif&v=3.78.4.a4026f") no-repeat left;
-}
-
-ul.wiristestassertionslist span {
-    padding-top: 2px;
-    padding-left: 18px;
-}
-
-span.wirisembeddedmathinput,
-input.wirisembeddedmathinput,
-img.wirisembeddedmathinput,
-input.wirisembeddedauthoringfield,
-img.wirisembeddedauthoringfield {
-    border: solid 1px #bbb;
-    padding: 3px 21px 3px 3px;
-    border-radius: 3px;
-    font-size: 15px;
-    vertical-align: middle;
-    margin: 4px 0;
-    box-sizing: content-box;
-}
-input.wirisembeddedtextinput {
-    border: solid 1px #bbb;
-    border-radius: 3px;
-    padding: 3px;
-    font-size: 15px;
-    vertical-align: middle;
-    height: 16px;
-    /* width: 100px; set dinamically */
-    margin: 4px 0;
-    box-sizing: content-box;
-}
-
-/*
- There exist the monochrome version for icons. Please use editor16b.png,
- studio16b.png and studio24b.png respectively if you need it.
-*/
-input.wirisembeddedmathinput,
-img.wirisembeddedmathinput {
-    background: #fff url("?service=resource&name=editor16.png&v=3.78.4.a4026f") no-repeat;
-}
-input.wirisembeddedauthoringfield,
-img.wirisembeddedauthoringfield {
-    background: #fff url("?service=resource&name=studio16.png&v=3.78.4.a4026f") no-repeat;
-}
-
-input.wirisembeddedstudioinput,
-img.wirisembeddedstudioinput,
-span.wirisembeddedstudioinput {
-    background: #fff url("?service=resource&name=studio24.png&v=3.78.4.a4026f") no-repeat;
-}
-input.wirisembeddedstudioinput,
-img.wirisembeddedstudioinput {
-    padding: 3px 29px 3px 3px;
-    margin: 0;
-    width: auto;
-}
-span.wirisembeddedstudioinput {
-    height: 18px;
-    padding: 7px 30px 7px 0;
-    background-position: center center;
-}
-
-input.wirisembeddedmathinput,
-input.wirisembeddedauthoringfield {
-    height: 16px;
-    /*
-    Set dinamically.
-    width: 100px;
-    background-position: 105px 3px;*/
-}
-/*
-Moodle hack no longer needed.
-.formulation input.wirisembeddedmathinput[type="text"] {
-    width: 100px;
-}*/
-input.wirisembeddedstudioinput {
-    height: 24px;
-}
-
-.wirisassertionfeedback {
-    background: #fff;
-    padding: 10px;
-    border: solid 1px #ccc;
-    border-radius: 3px;
-    line-height: 21px;
-    margin: 10px 0;
-    width: auto;
-    max-width: 428px;
-}
-/*override assertion feedback design in studio*/
-div.wiristabs .wirisassertionfeedback {
-    border: solid 1px #999;
-    border-radius: 8px;
-    width: auto;
-}
-
-.wirisembeddedfeedback {
-    position: absolute;
-    margin: 20px;
-    z-index: 1000;
-    width: auto;
-}
-
-.wiriscorrectanswerfeedback span.wiriscorrect {
-    font-weight: bold;
-    color: #57a005;
-}
-.wiriscorrectanswerfeedback span.wirisincorrect {
-    font-weight: bold;
-    color: #c02705;
-}
-.wiriscorrectanswerfeedback span.wirispartiallycorrect {
-    font-weight: bold;
-    color: #c99a08;
-}
-
-.wirissmalllabel {
-    font-size: 0.9em;
-    vertical-align: text-top;
-}
-
-div.wirisanswerfielddecoration.wirisembeddeddecoration,
-div.wirisanswerfielddecoration.wiriseditordecoration div.wiriseditorwrapper {
-    padding-right: 19px;
-    background: no-repeat right;
-}
-div.wirisanswerfielddecoration.wirisembeddeddecoration {
-    display: inline-block;
-}
-div.wirisanswerfielddecoration.wiriseditordecoration div.wiriseditorwrapper {
-    max-width: 450px;
-}
-div.wirisanswerfielddecoration.wiriseditordecoration div.wiriseditorwrapper.wrs_handOpen {
-    max-width: 800px;
-}
-
-div.wirisanswerfielddecoration.wirisembeddeddecoration.wiriscorrect,
-div.wirisanswerfielddecoration.wiriseditordecoration.wiriscorrect div.wiriseditorwrapper {
-    background-image: url("?service=resource&name=correct.gif&v=3.78.4.a4026f");
-}
-div.wirisanswerfielddecoration.wirisembeddeddecoration.wiriscorrect input[type="text"],
-div.wirisanswerfielddecoration.wirisembeddeddecoration.wiriscorrect img.wirisembeddedmathinput {
-    border-color: #b0cbc4;
-    background-color: #e9f2c4;
-}
-
-div.wirisanswerfielddecoration.wirisembeddeddecoration.wirisincorrect,
-div.wirisanswerfielddecoration.wiriseditordecoration.wirisincorrect div.wiriseditorwrapper {
-    background-image: url("?service=resource&name=incorrect.gif&v=3.78.4.a4026f");
-}
-div.wirisanswerfielddecoration.wirisembeddeddecoration.wirisincorrect input[type="text"],
-div.wirisanswerfielddecoration.wirisembeddeddecoration.wirisincorrect img.wirisembeddedmathinput {
-    border-color: #e69885;
-    background-color: #ffe8e3;
-}
-
-div.wirisanswerfielddecoration.wirisembeddeddecoration.wirispartiallycorrect,
-div.wirisanswerfielddecoration.wiriseditordecoration.wirispartiallycorrect div.wiriseditorwrapper {
-    background-image: url("?service=resource&name=percent.gif&v=3.78.4.a4026f");
-}
-div.wirisanswerfielddecoration.wirisembeddeddecoration.wirispartiallycorrect input[type="text"],
-div.wirisanswerfielddecoration.wirisembeddeddecoration.wirispartiallycorrect img.wirisembeddedmathinput {
-    border-color: #cfbb76;
-    background-color: #f7f3bc;
-}
-img.wirisplotter {
-    border: solid 1px #bbb;
+.wrsUI_app .wrsUI_graphValidationElement .wrsUI_divider {
+  position: inherit;
 }
 
 table.wiristable {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 table.wiristable tr:nth-child(2n+1) {
-    background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.03);
 }
-table.wiristable td,
-table.wiristable th {
-    border: solid 1px #ccc;
-    border-color: rgba(0, 0, 0, 0.15);
-    padding: 5px;
-    text-align: center;
-    vertical-align: baseline;
-}
-
-#wirisclicktesttoevaluate {
-    margin-left: 10px;
+table.wiristable td, table.wiristable th {
+  border: solid 1px #ccc;
+  border-color: rgba(0, 0, 0, 0.15);
+  padding: 5px;
+  text-align: center;
+  vertical-align: baseline;
 }
 
-.wirisfillwithcorrectbutton,
-.wirisrefreshbutton {
-    border: none;
-    height: 24px;
-    width: 24px;
-    opacity: 0.5;
-    margin: 0 0 0 5px;
-    vertical-align: middle;
-    cursor: pointer;
-}
-
-.wirisfillwithcorrectbutton:hover,
-.wirisrefreshbutton:hover {
-    opacity: 0.8;
-}
-
-.wirisfillwithcorrectbutton:active,
-.wirisrefreshbutton:active {
-    opacity: 1;
-}
-
-.wirisfillwithcorrectbutton {
-    background: url("?service=resource&name=uparrow24b.png&v=3.78.4.a4026f");
-}
-.wirisrefreshbutton {
-    background: url("?service=resource&name=refresh24b.png&v=3.78.4.a4026f");
-}
-.wiriscorrectanswerlabel {
-    border: solid 1px #a3a3a3;
-    background-color: #f8f8f8;
-    vertical-align: middle;
-    display: inline-block;
-    padding: 8px 7px 7px 7px;
-    line-height: 16px;
-    border-radius: 6px;
-    font-size: 19px;
-}
-.wiriscorrectanswerlabel img.wirismathml {
-    vertical-align: top;
-}
-
-/*Override some styles for studio embedded in html*/
-div.wirisembeddedstudio {
-    height: 550px;
-    position: relative;
-    max-width: 900px;
-}
-
-div.wirisembeddedstudio div.wiristabs {
-    bottom: 0;
-}
-
-.wirisinlineblock {
-    display: inline-block;
-}
-
-a.wirisalgorithmeditorlegend {
-    cursor: pointer;
-}
-
-div.wiriscalcquizzescontainer {
-    position: absolute;
-    bottom: 0;
-    top: 48px;
-    width: 100%;
-    background: url("?service=resource&name=loading.gif&v=3.78.4.a4026f") no-repeat center center;
-    z-index: 100;
-}
-
-div.wiriscalcquizzestitle {
-    background-color: #e0e0e0;
-    top: 0;
-    height: 48px;
-    position: absolute;
-    width: 100%;
-    color: #333;
-    font-family: Segoe UI, Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    padding-top: 8px;
-}
-
-.wirisbacktostudiobutton {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-p.wiriscalcquizzesbeta {
-    display: inline;
-    font-style: italic;
-    margin-left: 5px;
-    font-size: 14px;
-}
-
-p.wirisoutputoptionwarning {
-    margin: 10px 0px 10px 0px;
-    font-size: 13px;
-    opacity: 0.54;
-}
-
-p.wirisoutputoptionsbottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-p.wirisnewinterfacead {
-    position: absolute;
-    bottom: 0;
-}
-
-
-/***
-Some CSS specially for moodle 2 standard theme.
-**/
-
-.mform div.fitem {
-    overflow: visible;
-    clear: left; /* Issue WQFM-153*/
-}
-
-.wiriscaswrapper>legend {
-    position: relative;
-    top: 1px;
-    background-color: white;
-}
-
-fieldset.wiriscaswrapper span.wirishelp {
-    position: relative;
-    right: 0px;
-    top: -10px;
-}
-
-div.wirisauxiliarcalcme {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-div.wirisalgorithmwrapper fieldset.wiriscaswrapper {
-    border: solid 1px #999;
-    border-radius: 8px;
-}
-
-body.wiriscalchidden {
-    margin: 0px;
-}
-
-body .wiriscalchidden {
-    display: none;
-}
+/*# sourceMappingURL=wirisquizzes_temp.css.map */

@@ -27,5 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['passworderror'] = 'La contraseña es incorrecta';
 $string['pluginname'] = 'Regla de acceso por contraseña';
+$string['privacy:metadata'] = 'El complemento de la regla de acceso al cuestionario mediante contraseña no almacena ningún dato personal.';
 $string['quizpassword'] = 'Contraseña del cuestionario';
 $string['requirepasswordmessage'] = 'Para contestar este cuestionario necesita conocer la contraseña';

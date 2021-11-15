@@ -1433,7 +1433,7 @@ $string['nopotentialcreators'] = 'Aucun créateur de cours potentiel';
 $string['nopotentialstudents'] = 'Aucun étudiant potentiel';
 $string['nopotentialteachers'] = 'Aucun enseignant potentiel';
 $string['norecentactivity'] = 'Aucune activité récente';
-$string['noreplybouncemessage'] = 'Vous avez répondu à une adresse de courriel sans réponse. Si vous essayiez de répondre à un message d\'un forum, essayez plutôt d\'y répondre dans les forums de {$a}.
+$string['noreplybouncemessage'] = 'Vous avez répondu à une adresse de courriel de non-réponse. Si vous essayiez de répondre à un message d\'un forum, essayez plutôt d\'y répondre dans les forums de {$a}.
 
 Voici une copie de votre message :';
 $string['noreplybouncesubject'] = '{$a} - message de rebond.';
@@ -1492,6 +1492,7 @@ $string['numyears'] = '{$a} ans';
 $string['ok'] = 'OK';
 $string['oldpassword'] = 'Mot de passe actuel';
 $string['olduserdirectory'] = 'Ceci est l\'ancien dossier utilisateur. Il n\'est plus utilisé. Vous pouvez le supprimer sans conséquence. Les fichiers qu\'il contient ont été copiés dans le nouveau dossier utilisateur.';
+$string['opensinnewwindow'] = 'S\'ouvre dans une nouvelle fenêtre';
 $string['optional'] = 'Facultatif';
 $string['options'] = 'options';
 $string['order'] = 'Ordre';
@@ -2254,8 +2255,8 @@ $string['writingscalesinfo'] = 'Écriture des barèmes';
 $string['writinguserinfo'] = 'Écriture des utilisateurs';
 $string['wrongpassword'] = 'Mot de passe incorrect pour cet utilisateur';
 $string['yahooid'] = 'Identifiant Yahoo';
-$string['year'] = 'année';
-$string['years'] = 'années';
+$string['year'] = 'an';
+$string['years'] = 'ans';
 $string['yes'] = 'Oui';
 $string['youareabouttocreatezip'] = 'Vous allez créer un fichier compacté (zip) contenant';
 $string['youaregoingtorestorefrom'] = 'Vous allez restaurer depuis';

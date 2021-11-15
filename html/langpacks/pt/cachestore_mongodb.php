@@ -41,7 +41,7 @@ $string['server'] = 'Servidor';
 $string['server_help'] = 'Esta é a string de ligação para o servidor que pretende usar. Podem ser especificados múltiplos servidores usando uma lista separada por vírgulas.';
 $string['testserver'] = 'Servidor de teste';
 $string['testserver_desc'] = 'A ligação de um servidor para utilizar em testes. Se um servidor de teste tiver sido especificado, o desempenho de MongoDB pode ser testado usando a página de desempenho de cache no bloco de administração.
-Por exemplo: mongodb://127.0.0.1:27017';
+Exemplo: mongodb://127.0.0.1:27017';
 $string['username'] = 'Nome de utilizador';
 $string['username_help'] = 'Nome de utilizador a usar quando se estabelecer uma ligação.';
 $string['usesafe'] = 'Utilização segura';

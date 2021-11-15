@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['application/dash_xml'] = 'Streaming Dinámico Adaptivo sobre HTTP (MPEG-DASH)';
 $string['application/epub_zip'] = 'Ebook formato EPUB';
+$string['application/json'] = 'texto {$a->MIMETYPE2}';
 $string['application/msword'] = 'documento Word';
 $string['application/pdf'] = 'documento PDF';
 $string['application/vnd.moodle.backup'] = 'Copia de seguridad Moodle';
@@ -46,6 +48,7 @@ $string['application/x-iwork-keynote-sffkey'] = 'Presentación de iWork Keynote'
 $string['application/x-iwork-numbers-sffnumbers'] = 'Hoja de cálculo de iWork Numbers';
 $string['application/x-iwork-pages-sffpages'] = 'Documento iWork Pages';
 $string['application/x-javascript'] = 'Código JavaScript';
+$string['application/x-mpegURL'] = 'Streaming en vivo HTTP (HLS)';
 $string['application/x-mspublisher'] = 'Documento Publisher';
 $string['application/x-shockwave-flash'] = 'Animación Flash';
 $string['application/xhtml_xml'] = 'Documento XHTML';
@@ -60,6 +63,8 @@ $string['group:html_audio'] = 'Archivos de audio compatibles con navegadores de 
 $string['group:html_track'] = 'Archivos de rastreo HTML';
 $string['group:html_video'] = 'Archivos de vídeo compatibles con navegadores de forma nativa';
 $string['group:image'] = 'Archivos de imagen';
+$string['group:media_source'] = 'Medio de streaming';
+$string['group:optimised_image'] = 'Archivos de imágenes a ser optimizados, como por ejemplo insignias';
 $string['group:presentation'] = 'Archivos de presentación';
 $string['group:sourcecode'] = 'Código fuente';
 $string['group:spreadsheet'] = 'Archivos de hoja de cálculo';

@@ -76,6 +76,7 @@ $string['saving_failed_because_missing_or_false_values'] = 'فشل الحفظ ب
 $string['show_perpage'] = 'إظهار {$a} لكل صفحة';
 $string['switch_item_to_not_required'] = 'التبديل إلى: الإجابة غير مطلوبة';
 $string['switch_item_to_required'] = 'التبديل إلى: الإجابة مطلوبة';
+$string['table_disp_iname_help'] = 'عرض اسم الفقرة في الجدول.';
 $string['table_th_strings'] = 'عنوان كل عمود';
 $string['table_th_strings_help'] = 'أعطِ وصفًا لعنوان كل عمود مفصولاً بفاصل نهاية السطر. أي بشكل عنوان واحد لكل سطر.';
 $string['template_saved'] = 'تم حفظ القالب';

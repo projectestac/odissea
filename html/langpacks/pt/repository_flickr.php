@@ -37,8 +37,7 @@ $string['notitle'] = 'Sem título';
 $string['nullphotolist'] = 'Não existem fotografias nesta conta';
 $string['pluginname'] = 'Flickr';
 $string['pluginname_help'] = 'Repositório em flickr.com';
-$string['privacy:metadata:repository_flickr'] = 'O módulo repositório Flickr não armazena dados pessoais, mais transmite dados do utilizador do
-Moodle para o sistema remoto.';
+$string['privacy:metadata:repository_flickr'] = 'O módulo repositório Flickr não armazena quaisquer dados pessoais, mas transmite dados do utilizador do Moodle para o sistema remoto.';
 $string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token'] = 'Preferência de token OAuth do repositório Flickr';
 $string['privacy:metadata:repository_flickr:preference:repository_flickr_access_token_secret'] = 'Preferência OAuth secreta do repositório Flickr; isto está excluído de dados de privacidade exportados.';
 $string['privacy:metadata:repository_flickr:text'] = 'Pesquisa de texto no repositório Flickr do utilizador';

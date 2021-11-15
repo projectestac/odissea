@@ -1,6 +1,6 @@
 <?php
 
-class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_QuestionInternal implements com_wiris_quizzes_api_MultipleQuestion{
+class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_QuestionInternal {
 	public function __construct($xml) {
 		if(!php_Boot::$skip_constructor) {
 		parent::__construct();
@@ -26,30 +26,21 @@ class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_Questio
 			$this->id = _hx_substr($tag, $s, $e - $s);
 		}
 	}}
-	public function addAssertionOfSubquestion($sub, $name, $correctAnswer, $studentAnswer, $parameters) {
-		$this->getImpl()->addAssertionOfSubquestion($sub, $name, $correctAnswer, $studentAnswer, $parameters);
+	public function addNewSlotFromModel($slot) {
+		return $this->getImpl()->addNewSlotFromModel($slot);
 	}
-	public function setPropertyOfSubquestion($sub, $name, $value) {
-		$this->getImpl()->setPropertyOfSubquestion($sub, $name, $value);
+	public function removeSlot($slot) {
+		$this->getImpl()->removeSlot($slot);
 	}
-	public function getPropertyOfSubquestion($sub, $name) {
-		return $this->getImpl()->getPropertyOfSubquestion($sub, $name);
+	public function addNewSlot() {
+		return $this->getImpl()->addNewSlot();
 	}
-	public function setCorrectAnswerOfSubquestion($sub, $index, $correctAnswer) {
-		$this->getImpl()->setCorrectAnswerOfSubquestion($sub, $index, $correctAnswer);
-	}
-	public function getCorrectAnswerOfSubquestion($sub, $index) {
-		return $this->getImpl()->getCorrectAnswerOfSubquestion($sub, $index);
-	}
-	public function getCorrectAnswersLengthOfSubquestion($sub) {
-		return $this->getImpl()->getCorrectAnswersLengthOfSubquestion($sub);
-	}
-	public function getNumberOfSubquestions() {
-		return $this->getImpl()->getNumberOfSubquestions();
+	public function getSlots() {
+		return $this->getImpl()->getSlots();
 	}
 	public function getImpl() {
 		if($this->question === null) {
-			$s = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getSerializer();
+			$s = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getSerializer();
 			$elem = $s->read("<question>" . $this->xml . "</question>");
 			$tag = $s->getTagName($elem);
 			if(!($tag === "question")) {
@@ -57,6 +48,7 @@ class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_Questio
 			}
 			$this->question = $elem;
 			$this->question->id = $this->id;
+			$this->question->updateSlots();
 		}
 		return $this->question;
 	}
@@ -107,6 +99,9 @@ class com_wiris_quizzes_impl_QuestionLazy extends com_wiris_quizzes_impl_Questio
 	}
 	public function setCorrectAnswer($index, $answer) {
 		$this->getImpl()->setCorrectAnswer($index, $answer);
+	}
+	public function getAnswerFieldType() {
+		return $this->getImpl()->getAnswerFieldType();
 	}
 	public function setAnswerFieldType($type) {
 		$this->getImpl()->setAnswerFieldType($type);

@@ -30,6 +30,7 @@ $string['contentbank:accesscoursecategorycontent'] = 'Acceder a archivos del ban
 $string['contentbank:accesscoursecontent'] = 'Acceder a archivos del banco del curso';
 $string['contentbank:accessgeneralcontent'] = 'Acceder a archivos del banco de contenido del sistema';
 $string['contentbank:view'] = 'Ver repositorio del banco de contenido';
+$string['emptyfilelist'] = 'No hay archivos para mostrar';
 $string['pluginname'] = 'Banco de contenido';
 $string['pluginname_help'] = 'Archivos en banco de contenido';
 $string['privacy:metadata'] = 'El plugin del Repositorio del banco de contenido no almacena ni transmite ningún dato personal.';

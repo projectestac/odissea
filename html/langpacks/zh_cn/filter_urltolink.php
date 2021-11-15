@@ -28,5 +28,6 @@ defined('MOODLE_INTERNAL') || die();
 $string['embedimages'] = '嵌入图像';
 $string['embedimages_desc'] = '在所选的文本格式中用图片替换图片链接。';
 $string['filtername'] = '转换URL为链接和图片';
+$string['privacy:metadata'] = '“将URL转换为链接和图像”插件不存储任何个人数据。';
 $string['settingformats'] = '应用到格式';
 $string['settingformats_desc'] = '仅当原始文本插入到选择的格式之一时，此插件才生效。';

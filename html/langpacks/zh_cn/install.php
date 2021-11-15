@@ -45,6 +45,7 @@ $string['clialreadyinstalled'] = '文件config.php已存在。如果您想升级
 $string['cliinstallfinished'] = '安装圆满成功。';
 $string['cliinstallheader'] = 'Moodle {$a}命令行安装程序';
 $string['climustagreelicense'] = '在非交互模式，您必须使用--agree-license参数表示接受授权协议';
+$string['cliskipdatabase'] = '跳过数据库安装。';
 $string['clitablesexist'] = '数据库表已经存在，命令行安装不能继续。';
 $string['compatibilitysettings'] = '检查您的PHP设置...';
 $string['compatibilitysettingshead'] = '检查您的PHP设置...';
@@ -119,6 +120,7 @@ $string['inputdatadirectory'] = '数据目录：';
 $string['inputwebadress'] = 'Web地址：';
 $string['inputwebdirectory'] = 'Moodle目录：';
 $string['installation'] = '安装';
+$string['invaliddbprefix'] = '前缀无效。 前缀只能由小写字母和下划线组成。';
 $string['langdownloaderror'] = '很不幸，无法下载“{$a}”语言包。安装过程将以英文继续。';
 $string['langdownloadok'] = '语言“{$a}”已经成功安装了。安装过程将会以此语言继续。';
 $string['memorylimit'] = '内存限制';
@@ -136,6 +138,13 @@ $string['memorylimithelp'] = '<p>您服务器的PHP内存限制是{$a}。</p>
 <p>然而，在一些服务器上这会让<b>所有</b>PHP页面无法正常工作(在访问页面时会有错误)，因此您可能不得不删除.htaccess文件。</p></li>
 </ol>';
 $string['mysqliextensionisnotpresentinphp'] = 'PHP的MySQLi扩展并未安装正确，因此无法与MySQL通信。请检查您的php.ini文件或重新编译PHP。对PHP4，MySQLi扩展不可用。';
+$string['nativeauroramysql'] = 'Aurora MySQL (native/auroramysql)';
+$string['nativeauroramysqlhelp'] = '<p>数据库是存储大部分 Moodle 设置和数据的地方，必须在此处进行配置。</p>
+<p>数据库名称、用户名和密码为必填字段； 表前缀是可选的。</p>
+<p>数据库名称只能包含字母数字字符、美元 ($) 和下划线 (_)。</p>
+<p>如果数据库当前不存在，并且您指定的用户有权限，Moodle 将尝试创建一个具有正确权限和设置的新数据库。</p>
+<p>此驱动程序与旧版 MyISAM 引擎不兼容。</p>';
+$string['nativemariadb'] = 'MariaDB (native/mariadb)';
 $string['nativemariadbhelp'] = '<p>这里必须指定数据库来保存Moodle的配置和数据。</p>
 <p>数据库名、数据库用户名和密码是必须字段，表前缀可选</p>
 <p>如果指定的数据库不存在且指定的数据库用户有足够权限，Moodle会自动创建一个数据库</p>

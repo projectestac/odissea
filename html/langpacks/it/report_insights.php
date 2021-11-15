@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['actionsaved'] = 'Il tuo feedback su \'{$a}\' è stato salvato';
+$string['confirmbulkaction'] = 'Sei sicuro di contrassegnare i pronostici selezionati {$a->nitems} come {$a->action}?';
 $string['disabledmodel'] = 'Il modello è stato disabilitato dall\'amministratore.';
 $string['indicators'] = 'Indicatori';
 $string['insight'] = 'Considerazione';
@@ -44,6 +45,7 @@ $string['prediction'] = 'Pronostico';
 $string['predictiondetails'] = 'Dettagli pronostico';
 $string['privacy:metadata'] = 'Il plugin \'Considerazioni\' non memorizza dati personali.';
 $string['selectotherinsights'] = 'Seleziona altre considerazioni...';
+$string['selectprediction'] = 'Seleziona {$a} per l\'azione in massa';
 $string['timecreated'] = 'Data del pronostico';
 $string['timerange'] = 'Intervallo di analisi';
 $string['timerangewithdata'] = 'da {$a->timestart} a {$a->timeend}';

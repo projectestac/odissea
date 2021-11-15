@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['active'] = 'Aktiboa';
+$string['active_help'] = 'Aktiboa ez badago, irakasleek ezin dute Poodll feedbackak gehitu edo editatu, baina lehendik dauden bidalketak oraindik eskuragarri daude.';
 $string['allowedrecorders'] = 'Gaitu beharreko grabagailuak';
 $string['allowedrecordersdetails'] = '';
 $string['boardsize'] = 'Poodll - Arbelaren Tamaina';
@@ -40,6 +42,7 @@ $string['no'] = 'ez';
 $string['pluginname'] = 'Poodll Feedbacka';
 $string['poodll:reviewfeedbacks'] = 'Poodll Feedbackak berrikusi ditzake (grabazioak)';
 $string['poodll:use'] = 'Baimendu Poodll feedbacketarako';
+$string['poodllfeedbackinactive'] = 'Poodll Feedbacka aktibo dago.';
 $string['privacy:metadata'] = 'Poodll Feedbacka zeregin-bidalketetarako pluginak ez du datu pertsonalik biltzen.';
 $string['privacy:metadata:filepurpose'] = 'Zeregin-feedback honetarako grabazioak (Poodll fitxategi-bidalketak).';
 $string['privacy:path'] = 'feedback_poodll';

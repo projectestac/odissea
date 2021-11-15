@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'مرتفع';
-$string['privacy:metadata'] = 'إن ملحق atto_superscript لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_superscript لا تخزن أيّ بيانات شخصية.';

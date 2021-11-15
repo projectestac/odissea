@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['active_help'] = 'إذا لم يكن فعالاً، لا يمكن للطلاب إضافة أو تحرير تسليمات Poodll عبر الإنترنت. لكن التسليمات الموجودة تبقى متاحة.';
 $string['boardsize'] = 'حجم سبورة PoodLL';
-$string['customnamedetails'] = 'تحديد اسم مخصص للملحق (أي شيء آخر غير \'online poodll\') كما هو ظاهر داخل الملحق';
+$string['customnamedetails'] = 'تحديد اسم مخصص للإضافة (أي شيء آخر غير \'online poodll\') كما هو ظاهر داخل الإضافة';
 $string['displaysizelistdetails'] = '';
 $string['displaysizesingledetails'] = '';
 $string['enabled'] = 'Poodll عبر الإنترنت';
@@ -39,7 +39,7 @@ $string['onlinepoodll:use'] = 'السماح باستعمال تسليمات Pood
 $string['onlinepoodllfilename'] = 'onlinepoodll.html';
 $string['onlinepoodllsubmission'] = 'السماح بتسليمات Poodll عبر الإنترنت';
 $string['pluginname'] = 'تسليمات Poodll عبر الإنترنت';
-$string['privacy:metadata'] = 'إن ملحق تسليم الواجبات، Poodll عبر الإنترنت لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة تسليم الواجبات، Poodll عبر الإنترنت لا تخزن أي بيانات شخصية.';
 $string['replywhiteboard'] = 'السبورة';
 $string['setting_audio_heading_details'] = 'الإعدادات التي تتحكم بظهور المشغل في صفحات مراجعة التسليم وقوائمها';
 $string['setting_snapshot_heading_details'] = 'الإعدادات التي تتحكم بظهور الصور في صفحات مراجعة التسليم وقوائمها';

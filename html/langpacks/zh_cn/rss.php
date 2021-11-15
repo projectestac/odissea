@@ -25,4 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata:core_userkey'] = '用于从 URL 访问 RSS 的用户密钥';
 $string['rss'] = 'RSS';

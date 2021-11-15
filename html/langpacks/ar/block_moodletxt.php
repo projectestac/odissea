@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['adminaccountintropara1'] = 'هذه الصفحة تعرض تفاصيل عن مخدم ConnectTxt المستعمل من قبل moodletxt. لتمكين أو تعطيل الوصول الوارد/الصادر لحساب معين، إعثر على إدخال الحساب في الجدول أدناه، ثم انقر الأيقونة المناسبة. هذا من شأنه تبديل إمكانية الوصول حسبما هو مطلوب.';
 $string['admindescsendreceive'] = 'تستعمل هذه الإعدادات للتحكم بإرسال الرسائل واستلامها ضمن الكتلة، وكيفية تلقي التحديثات والرسائل الواردة.';
 $string['adminheadersendreceive'] = 'إعدادات الإرسال والإستقبال';
 $string['adminlabelaccdesc'] = 'وصف الحساب:';
@@ -37,8 +38,10 @@ $string['adminlabeleventaccount'] = 'حساب مراسلة الحدث:';
 $string['adminlabelfilterusersearch'] = 'أدخل اسم المستخدم هنا...';
 $string['adminlabelproxypassword'] = 'كلمة مرور الوكيل:';
 $string['adminlabelsetxmlpass'] = 'كلمة مرور دفع XML:';
+$string['adminlabelshowinbound'] = 'إظهار أسماء/أرقام المصدر في صندوق الوارد (الافتراضي)';
 $string['adminselecteventsdisabled'] = 'مُعطل - لم يتم اختيار حساب نشط.';
 $string['adminselectrssexday'] = 'بعد 24 ساعة';
+$string['adminserverintropara1'] = 'هذه الصفحة تعرض تفاصيل عن مخدم ConnectTxt المستعمل من قبل moodletxt';
 $string['alertconfirmdeletemessages'] = 'هل أنت متأكد من رغبتك في حذف الرسائل المحددة؟';
 $string['alertnomessagesselected'] = 'لم تحدد أي رسائل.';
 $string['altsentmessages'] = 'إرسال الرسائل';
@@ -46,12 +49,16 @@ $string['buttoncontactadd'] = 'إضافة جهة الاتصال ثم إضافة 
 $string['buttoncontactaddreturn'] = 'إضافة جهة الاتصال ثم عودة إلى دفتر العناوين';
 $string['buttonsendmessage'] = 'إرسال الرسالة';
 $string['buttontagfirstname'] = 'الاسم الأول';
+$string['buttontagfullname'] = 'الاسم الكامل';
 $string['buttontaglastname'] = 'الاسم الأخير';
 $string['configtitle'] = 'أدخل عنوانًا للكتلة:';
 $string['editbookcontactsperpage'] = 'جهات الاتصال لكل صفحة';
 $string['erroraddcontactfailed'] = 'تعذرت إضافة جهة الاتصال إلى قاعدة البيانات. يرجى إعادة المحاولة لاحقًا. إذا استمرت المشكلة بالظهور، تواصل مع المشرف على موقعك.';
+$string['errorbooknamelength'] = 'اسم دفتر العناوين طويل جدًا. لا يمكن للأسماء أن تتجاوز 50 حرفًا.';
+$string['errorfoldernametoolong'] = 'أسماء المجلدات لا يمكن أن تتجاوز 30 حرفًا.';
 $string['errorglobalbooknotallowed'] = 'ليست لديك الصلاحيات الضرورية لإنشاء دفاتر عناوين عمومية.';
 $string['errornofirstname'] = 'لم يتم إدخال الاسم الأول.';
+$string['errornolastname'] = 'تم إدخال الاسم الأخير.';
 $string['errornonameorcompany'] = 'ينبغي عليك إدخال إما الاسم أو اسم الشركة لجهة الاتصال هذه.';
 $string['errornonewpassword'] = 'لم يتم إدخال كلمة مرور جديدة. يرجى إدخال كلمة مرور جديدة للحساب.';
 $string['errornopassword'] = 'لم يتم إدخال أي كلمة مرور لحساب ConnectTxt.';
@@ -69,6 +76,7 @@ $string['inboxfoldersadd'] = 'إضافة مجلد جديد';
 $string['inboxtableheadertags'] = 'الوسوم';
 $string['inboxtableheadertime'] = 'وقت الاستلام';
 $string['labeladditionalfirstname'] = 'أدخل الاسم الأول';
+$string['labeladditionallastname'] = 'أدخل الاسم الأخير:';
 $string['labelblocktitle'] = 'عنوان الكتلة';
 $string['labelcharsremaining'] = 'المحارف المتبقية:';
 $string['labelcompanyname'] = 'اسم الشركة:';

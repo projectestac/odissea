@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Действия';
 $string['addedandupdatedpp'] = 'Добавлены новые библиотеки H5P - {$a->%new} и обновлены старые - {$a->%old}.';
-$string['addedandupdatedps'] = 'Добавлены новые библиотеки H5P - {$a->%new} и обновлена одна старая - {$a->%old}.';
+$string['addedandupdatedps'] = 'Добавлены новые библиотеки H5P - {$a->%new} и обновлена старая - {$a->%old}.';
 $string['addedandupdatedsp'] = 'Добавлена новая библиотека H5P - {$a->%new} и обновлены старые - {$a->%old}.';
-$string['addedandupdatedss'] = 'Добавлена новая библиотека H5P - {$a->%new} и обновлена одна старая - {$a->%old}.';
+$string['addedandupdatedss'] = 'Добавлена новая библиотека H5P - {$a->%new} и обновлена старая - {$a->%old}.';
 $string['addednewlibraries'] = 'Добавлены новые библиотеки H5P - {$a->%new}';
 $string['addednewlibrary'] = 'Добавлена новая библиотека H5P - {$a->%new}';
 $string['additionallicenseinfo'] = 'Любая дополнительная информация о лицензии';

@@ -107,6 +107,7 @@ $string['messagecontactrequest'] = '{$a->user} demana que l\'afegiu com a contac
 $string['messagecontactrequestsnotification'] = '{$a} sol·licita ésser afegit com a contacte.';
 $string['messagecontactrequestsnotificationsubject'] = 'Sol·licitud de contacte de {$a}';
 $string['messagecontactrequestsubject'] = '{$a->sitename}: Petició de contacte de {$a->user}';
+$string['messagecontentaudio'] = 'Àudio';
 $string['messagedrawerviewcontact'] = 'Detalls de l\'usuari per a {$a}';
 $string['messagedrawerviewconversation'] = 'Conversa amb {$a}';
 $string['messagedrawerviewgroupinfo'] = 'Detalls de grup per a {$a}';

@@ -127,7 +127,7 @@ $string['deprecatedexplanation'] = 'Denna pluginmodul använder en gammal versio
 $string['download'] = 'Ladda ned';
 $string['downloadexpireduser'] = 'Giltighetstiden för nedladdningen har löpt ut. Skicka in en ny förfrågan om du vill exportera dina personuppgifter.';
 $string['dporolemapping'] = 'Rollmappning personuppgiftsansvarig';
-$string['dporolemapping_desc'] = 'Personuppgiftsansvarig kan hantera dataförfrågningar. Funktionsbehörigheten tool/dataprivacy:managedatarequests måste tillåtas för en roll för att den ska kunna visas som en roll av typen personuppgiftsansvarig.';
+$string['dporolemapping_desc'] = 'Den personuppgiftsansvarige kan hantera begäranden om registerutdrag. Funktionsbehörigheten <code>tool/dataprivacy:managedatarequests</code> måste tillåtas för en roll för att den ska kunna visas som en roll av typen personuppgiftsansvarig.';
 $string['duplicaterole'] = 'Rollen är redan angiven';
 $string['editcategories'] = 'Redigera kategorier';
 $string['editcategory'] = 'Redigera kategori';
@@ -312,7 +312,7 @@ $string['selectbulkaction'] = 'Välj en massåtgärd';
 $string['selectdatarequests'] = 'Välj personuppgiftsförfrågningar';
 $string['selectuserdatarequest'] = 'Välj {$a->username}\'s {$a->requesttype}-begäran.';
 $string['send'] = 'Skicka';
-$string['sensitivedatareasons'] = 'Orsaker till hantering av känslig personinformation';
+$string['sensitivedatareasons'] = 'Skäl till hantering av känslig personinformation';
 $string['sensitivedatareasons_help'] = 'Välj ett eller flera tillämpliga skäl som undantar förbudet mot behandling av känsliga personuppgifter som är knutna till detta ändamål. För mer information, se <a href="https://gdpr-info.eu/art-9-gdpr/" target="_blank">GDPR Art. 9.2</a>';
 $string['setdefaults'] = 'Ange standardvärden';
 $string['showdataretentionsummary'] = 'Visa länk till kvarhållningsprinciper';

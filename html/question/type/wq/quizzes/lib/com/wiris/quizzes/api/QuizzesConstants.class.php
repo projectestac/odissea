@@ -3,6 +3,8 @@
 class com_wiris_quizzes_api_QuizzesConstants {
 	public function __construct() { 
 	}
+	static function __meta__() { $»args = func_get_args(); return call_user_func_array(self::$__meta__, $»args); }
+	static $__meta__;
 	static $OPTION_RELATIVE_TOLERANCE = "relative_tolerance";
 	static $OPTION_TOLERANCE = "tolerance";
 	static $OPTION_TOLERANCE_DIGITS = "tolerance_digits";
@@ -37,8 +39,12 @@ class com_wiris_quizzes_api_QuizzesConstants {
 	static $PROPERTY_VALUE_SHOW_CAS_REPLACE = "replace";
 	static $PROPERTY_CAS_INITIAL_SESSION = "casSession";
 	static $PROPERTY_CAS_SESSION = "casSession";
-	static $PROPERTY_SHOW_AUXILIAR_TEXT_INPUT = "auxiliarTextInput";
-	static $PROPERTY_AUXILIAR_TEXT = "auxiliarText";
+	static $PROPERTY_SHOW_AUXILIAR_TEXT_INPUT = "auxiliaryTextInput";
+	static $PROPERTY_SHOW_AUXILIARY_TEXT_INPUT = "auxiliaryTextInput";
+	static $PROPERTY_AUXILIAR_TEXT = "auxiliaryText";
+	static $PROPERTY_AUXILIARY_TEXT = "auxiliaryText";
 	static $PARAMETER_USER_ID = "user_id";
+	static $GRAPH_TOOLBAR = "graphToolbar";
 	function __toString() { return 'com.wiris.quizzes.api.QuizzesConstants'; }
 }
+com_wiris_quizzes_api_QuizzesConstants::$__meta__ = _hx_anonymous(array("statics" => _hx_anonymous(array("PROPERTY_AUXILIAR_TEXT" => _hx_anonymous(array("Deprecated" => null))))));

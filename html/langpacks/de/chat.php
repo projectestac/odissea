@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Sie haben angekündigte Chatsitzungen';
+$string['activityoverview'] = 'Sie haben angekündigte Chat-Sitzungen';
 $string['ajax'] = 'Version mit Ajax';
 $string['autoscroll'] = 'Automatisch scrollen';
 $string['beep'] = 'Beep';
@@ -41,7 +41,7 @@ $string['chat:talk'] = 'Im Chat sprechen';
 $string['chat:view'] = 'Chataktivität anzeigen';
 $string['chatintro'] = 'Beschreibung';
 $string['chatname'] = 'Name des Chats';
-$string['chatreport'] = 'Chat-Protokolle';
+$string['chatreport'] = 'Chat-Sitzungen';
 $string['chattime'] = 'Nächster Chat';
 $string['compact'] = 'Kompakt';
 $string['composemessage'] = 'Mitteilung schreiben';

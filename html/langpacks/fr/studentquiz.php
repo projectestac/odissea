@@ -28,8 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['abort_button'] = 'Abandonner';
 $string['add_comment'] = 'Ajouter un commentaire';
 $string['add_reply'] = 'Ajouter une réponse';
-$string['after_answering_end_date'] = 'La possibilité de répondre à cette activité StudentQuiz est terminée depuis le {$a}.';
-$string['after_submission_end_date'] = 'La possibilité de soumettre des questions dans cette activité StudentQuiz est terminée depuis le {$a}.';
+$string['after_answering_end_date'] = 'La possibilité de répondre à cette activité Test étudiant est terminée depuis le {$a}.';
+$string['after_submission_end_date'] = 'La possibilité de soumettre des questions dans cette activité Test étudiant est terminée depuis le {$a}.';
 $string['anonymous_user_name'] = 'Utilisateur anonyme #{$a}';
 $string['answeringndbeforestart'] = 'Le délai de réponse ne peut être précisé avant la date d\'ouverture des réponses';
 $string['api_state_change_success_content'] = 'L\'état/la visibilité de la question a été changé(e) avec succès';
@@ -41,11 +41,11 @@ $string['approved_column_name'] = 'Approuvée';
 $string['approved_veryshort'] = 'A';
 $string['approveselectedscheck'] = 'Voulez-vous vraiment dés/approuver les questions suivantes ?<br /><br />{$a}';
 $string['average_column_name'] = 'Moyenne';
-$string['before_answering_end_date'] = 'La possibilité de répondre à cette activité StudentQuiz se termine le {$a}.';
+$string['before_answering_end_date'] = 'La possibilité de répondre à cette activité Test étudiant se termine le {$a}.';
 $string['before_answering_start_date'] = 'Ouvert aux réponses à partir du {$a}.';
-$string['before_submission_end_date'] = 'La possibilité de soumettre des questions dans cette activité StudentQuiz se termine le {$a}.';
+$string['before_submission_end_date'] = 'La possibilité de soumettre des questions dans cette activité Test étudiant se termine le {$a}.';
 $string['before_submission_start_date'] = 'Ouvert à la soumission de questions à partir du {$a}.';
-$string['cachedef_permissionssync'] = 'Suivi de la synchronisation des autorisations StudentQuiz';
+$string['cachedef_permissionssync'] = 'Suivi de la synchronisation des autorisations de Test étudiant';
 $string['cannotcapturecommenthistory'] = 'Impossible de créer un événement d\'historique pour ce commentaire';
 $string['changeselectedsstate'] = 'Modifier l\'état des questions suivantes : <br /><br />{$a}';
 $string['collapseall'] = 'Réduire tous les commentaires';
@@ -69,6 +69,11 @@ $string['deletecomment'] = 'Supprimer le commentaire';
 $string['deletedbyauthor'] = 'Ce commentaire a été supprimé le {$a}.';
 $string['deletedbyuser'] = 'Ce commentaire a été supprimé par {$a->user} le {$a->date}.';
 $string['deletedcomment'] = 'Commentaire supprimé.';
+$string['deleteorphanedquestionserrormdlquestion'] = '<font color="red">erreur</font>&nbsp;: impossible de supprimer dans la table mdl_question. Cette question est probablement utilisée quelque part.<br><font color="red">erreur</font>: suppression dans les tables mdl_studentquiz* tables a été passée.<br>';
+$string['deleteorphanedquestionserrorstudentquiz'] = '<font color="red">erreur</font>&nbsp;: impossible de supprimer dans les tables mdl_studentquiz*.<br>';
+$string['deleteorphanedquestionssmallmessage'] = 'Test étudiant&nbsp;: La tâche de suppression des questions orphelines a été exécutée';
+$string['deleteorphanedquestionssubject'] = 'Test étudiant';
+$string['deleteorphanedquestionssuccessstudentquiz'] = '<font color="green">succès</font>&nbsp;: supprimé des tables mdl_studentquiz*.<br>';
 $string['describe_already_deleted'] = 'Ce commentaire est déjà supprimé.';
 $string['describe_not_creator'] = 'Ce n\'est pas votre commentaire.';
 $string['describe_out_of_time_delete'] = 'Le délai de suppression de ce commentaire est dépassé.';
@@ -83,7 +88,7 @@ $string['editorplaceholder'] = 'Saisissez votre commentaire ici...';
 $string['emailautomationnote'] = 'Veuillez prendre note qu\'il s\'agit d\'un message automatisé – cette adresse courriel n\'est pas vérifiée.';
 $string['emailcommentaddedbody'] = 'Bonjour {$a->recepientname},
 
-Votre question « {$a->questionname} » du cours « {$a->coursename} » dans l\'activité StudentQuiz « {$a->modulename} » a été commentée par « {$a->actorname} » à « {$a->timestamp} ».
+Votre question « {$a->questionname} » du cours « {$a->coursename} » dans l\'activité Test étudiant « {$a->modulename} » a été commentée par « {$a->actorname} » à « {$a->timestamp} ».
 
 Le commentaire est le suivant : « {$a->commenttext} »
 
@@ -92,20 +97,20 @@ $string['emailcommentaddedsmall'] = 'Votre question « {$a->questionname} » a
 $string['emailcommentaddedsubject'] = 'La question suivante a été commentée : {$a->questionname}';
 $string['emailcommentdeletedbody'] = 'Bonjour {$a->recepientname},
 
-Le commentaire « {$a->commenttime} » à la question « {$a->questionname} » du cours « {$a->coursename} » dans l\'activité StudentQuiz « {$a->modulename} » a été supprimée par « {$a->actorname} » à « {$a->timestamp} ».
+Le commentaire « {$a->commenttime} » à la question « {$a->questionname} » du cours « {$a->coursename} » dans l\'activité Test étudiant « {$a->modulename} » a été supprimée par « {$a->actorname} » à « {$a->timestamp} ».
 
 Le commentaire était le suivant : « {$a->commenttext} »
 
 Vous pouvez examiner cette question à : {$a->questionurl}.';
 $string['emailcommentdeletedsmall'] = 'Le commentaire à votre question « {$a->questionname} » a été supprimé par {$a->actorname}.';
 $string['emailcommentdeletedsubject'] = 'Commentaire supprimé pour la question : {$a->questionname}';
-$string['emaildigestbody'] = 'Ceci est votre récapitulatif {$a->digesttype} de notifications pour l\'activité StudentQuiz <b>{$a->modulename}</b> disponible ici&nbsp;:';
+$string['emaildigestbody'] = 'Ceci est votre récapitulatif {$a->digesttype} de notifications pour l\'activité Test étudiant <b>{$a->modulename}</b> disponible ici&nbsp;:';
 $string['emaildigestbody_section_content'] = 'Votre question <b>{$a->questionname}</b> a été <b>{$a->actiontype}</b> par <b>{$a->actorname}</b>';
 $string['emaildigestbody_section_title'] = 'Notification {$a->seq}, {$a->timestamp';
-$string['emaildigestsubject'] = 'Récapitulatif de notifications StudentQuiz';
+$string['emaildigestsubject'] = 'Récapitulatif de notifications Test étudiant';
 $string['emailminecommentdeletedbody'] = 'Bonjour {$a->recepientname},
 
-Le commentaire « {$a->commenttime} » à la question « {$a->questionname} » du cours « {$a->coursename} » dans l\'activité StudentQuiz « {$a->modulename} » a été supprimée par « {$a->actorname} » à « {$a->timestamp} ».
+Le commentaire « {$a->commenttime} » à la question « {$a->questionname} » du cours « {$a->coursename} » dans l\'activité Test étudiant « {$a->modulename} » a été supprimée par « {$a->actorname} » à « {$a->timestamp} ».
 
 Le commentaire était le suivant : « {$a->commenttext} »
 
@@ -113,7 +118,7 @@ Vous pouvez examiner cette question à : {$a->questionurl}.';
 $string['emailminecommentdeletedsmall'] = 'Votre commentaire sur la question « {$a->questionname} » a été supprimé par {$a->actorname}.';
 $string['emailminecommentdeletedsubject'] = 'Commentaire supprimé pour la question : {$a->questionname}';
 $string['emailsalutation'] = 'Cher {$a},';
-$string['emailsinglebody'] = 'Votre question <b>{$a->questionname}</b> dans l\'activité StudentQuiz <b>{$a->modulename}</b> du cours <b>{$a->coursename}</b> a été {$a->eventname} par <b>{$a->actorname}</b> le <b>{$a->timestamp}</b>.';
+$string['emailsinglebody'] = 'Votre question <b>{$a->questionname}</b> dans l\'activité Test étudiant <b>{$a->modulename}</b> du cours <b>{$a->coursename}</b> a été {$a->eventname} par <b>{$a->actorname}</b> le <b>{$a->timestamp}</b>.';
 $string['emailsinglebody_reviewlink'] = 'Vous pouvez réviser cette question ici&nbsp;:';
 $string['error_form_validation'] = '{$a}';
 $string['error_sendalert'] = 'Il y a eu une erreur lors de l\'envoi de votre rapport à {$a}.
@@ -172,17 +177,17 @@ $string['messageprovider:commentadded'] = 'Notification d\'ajout de commentaire'
 $string['messageprovider:commentdeleted'] = 'Notification de suppression de commentaire';
 $string['messageprovider:minecommentdeleted'] = 'Notification de suppression de mon commentaire';
 $string['migrate_already_done'] = 'Rien n\'a été fait car cette activité a déjà été migrée !';
-$string['migrate_ask'] = 'La vitesse de StudentQuiz s\'est améliorée avec la version 3.2.1, mais cet ensemble de questions est toujours basé sur une version antérieure.
+$string['migrate_ask'] = 'La vitesse de Test étudiant s\'est améliorée avec la version 3.2.1, mais cet ensemble de questions est toujours basé sur une version antérieure.
 Les questions et les quiz seront chargés plus rapidement si vous exécutez cette migration accélérée. Vous bénéficierez d\'un chargement plus rapide ; rien d\'autre ne changera.';
-$string['migrate_studentquiz'] = 'Migrer les questions de StudentQuiz avant la version 3.2.1 vers la version plus rapide avec des valeurs agrégées';
+$string['migrate_studentquiz'] = 'Migrer les questions de Test étudiant avant la version 3.2.1 vers la version plus rapide avec des valeurs agrégées';
 $string['migrate_studentquiz_short'] = 'Accélérer cette série de questions';
 $string['migrated_successful'] = 'Cette activité a été correctement migrée !';
 $string['mine_column_name'] = 'Moi';
 $string['missingparam'] = 'Un paramètre requis est manquant ou erroné';
 $string['moderator'] = 'Modérateur';
-$string['modulename'] = 'StudentQuiz';
-$string['modulename_help'] = 'L\'activité StudentQuiz permet aux étudiants d\'ajouter des questions pour l’ensemble des participants. Dans l\'aperçu de l’activité StudentQuiz, les élèves peuvent filtrer les questions. Ils peuvent également utiliser les questions filtrées avec l’ensemble des contributions pour s\'entraîner. L\'enseignant a la possibilité d\'anonymiser la colonne « Créée par ».<br><br>L\'activité StudentQuiz attribue aux étudiants des points pour les motiver à ajouter des questions et à s\'entraîner. Les points sont listés dans un tableau de classement.';
-$string['modulenameplural'] = 'StudentQuizzes';
+$string['modulename'] = 'Test étudiant';
+$string['modulename_help'] = 'L\'activité Test étudiant permet aux étudiants d\'ajouter des questions pour l’ensemble des participants. Dans l\'aperçu de l’activité Test étudiant, les élèves peuvent filtrer les questions. Ils peuvent également utiliser les questions filtrées avec l’ensemble des contributions pour s\'entraîner. L\'enseignant a la possibilité d\'anonymiser la colonne « Créée par ».<br><br>L\'activité Test étudiant attribue aux étudiants des points pour les motiver à ajouter des questions et à s\'entraîner. Les points sont listés dans un tableau de classement.';
+$string['modulenameplural'] = 'Tests étudiant';
 $string['more'] = 'Plus';
 $string['myattempts_column_name'] = 'Mes tentatives';
 $string['mydifficulty_column_name'] = 'Ma difficulté';
@@ -198,7 +203,7 @@ $string['no_difficulty_level'] = '-';
 $string['no_myattempts'] = '-';
 $string['no_mylastattempt'] = '-';
 $string['no_mylastattempt_label'] = 'La question n\'est pas répondue';
-$string['no_questions_add'] = 'Il n\'y a pas de question dans ce StudentQuiz. Vous pouvez librement en ajouter.';
+$string['no_questions_add'] = 'Il n\'y a pas de question dans ce Test étudiant. Vous pouvez librement en ajouter.';
 $string['no_questions_filter'] = 'Aucune question ne correspond à vos critères. Réinitialisez le filtre pour voir toutes les questions.';
 $string['no_questions_selected_message'] = 'Merci de sélectionner au moins une question pour démarrer le quiz.';
 $string['no_rates'] = '-';
@@ -211,14 +216,14 @@ $string['numberreply'] = '{$a} réponses';
 $string['onlyrootcommentcanreply'] = 'Seul le premier niveau de commentaire peut faire l\'objet d\'une réponse';
 $string['pagesize'] = 'Taille de la page :';
 $string['please_enrole_message'] = 'Veuillez vous inscrire à ce cours pour voir vos progrès personnels';
-$string['pluginadministration'] = 'Administration de StudentQuiz';
-$string['pluginname'] = 'StudentQuiz';
+$string['pluginadministration'] = 'Administration de Test étudiant';
+$string['pluginname'] = 'Test étudiant';
 $string['previous_button'] = 'Précédent';
 $string['privacy:metadata:mod_studentquiz_comment_sort'] = 'Préférence de l\'utilisateur pour le type de filtre de commentaire.';
 $string['privacy:metadata:studentquiz_attempt'] = 'Représente une tentative des utilisateurs de répondre à une série de questions.';
 $string['privacy:metadata:studentquiz_attempt:categoryid'] = 'Identifiant de la catégorie.';
 $string['privacy:metadata:studentquiz_attempt:questionusageid'] = 'Identifiant de l\'usage de la question.';
-$string['privacy:metadata:studentquiz_attempt:studentquizid'] = 'Identifiant du StudentQuiz.';
+$string['privacy:metadata:studentquiz_attempt:studentquizid'] = 'Identifiant du Test étudiant.';
 $string['privacy:metadata:studentquiz_attempt:userid'] = 'Identifiant de l\'utilisateur.';
 $string['privacy:metadata:studentquiz_comment'] = 'Enregistrer les commentaires des questions.';
 $string['privacy:metadata:studentquiz_comment:comment'] = 'Commentaire de la question.';
@@ -234,18 +239,19 @@ $string['privacy:metadata:studentquiz_comment_history'] = 'Enregistrer l\'histor
 $string['privacy:metadata:studentquiz_comment_history:commentid'] = 'ID du commentaire';
 $string['privacy:metadata:studentquiz_comment_history:timemodified'] = 'Date de modification du commentaire';
 $string['privacy:metadata:studentquiz_comment_history:userid'] = 'ID de l\'utilisateur qui a modifié le commentaire';
+$string['privacy:metadata:studentquiz_notification:studentquizid'] = 'Identifiant du Test étudiant';
 $string['privacy:metadata:studentquiz_progress'] = 'Enregistrer les informations sur la progression de l\'étudiant sur cette question.';
 $string['privacy:metadata:studentquiz_progress:attempts'] = 'Nombre de tentatives de réponses à cette question.';
 $string['privacy:metadata:studentquiz_progress:correctattempts'] = 'Nombre de réponses justes.';
 $string['privacy:metadata:studentquiz_progress:lastanswercorrect'] = '0 : la dernière réponse était fausse ou indéfinie, 1 : la dernière réponse était correcte.';
 $string['privacy:metadata:studentquiz_progress:questionid'] = 'Identifiant de la question.';
-$string['privacy:metadata:studentquiz_progress:studentquizid'] = 'Identifiant du StudentQuiz.';
+$string['privacy:metadata:studentquiz_progress:studentquizid'] = 'Identifiant du Test étudiant.';
 $string['privacy:metadata:studentquiz_progress:userid'] = 'Identifiant de l\'utilisateur.';
 $string['privacy:metadata:studentquiz_rate'] = 'Enregistrer les notes des questions';
 $string['privacy:metadata:studentquiz_rate:questionid'] = 'Identifiant de la question.';
 $string['privacy:metadata:studentquiz_rate:rate'] = 'Note de la question.';
 $string['privacy:metadata:studentquiz_rate:userid'] = 'Identifiant de l\'utilisateur.';
-$string['progress_bar_caption'] = 'Votre progression dans cette activité StudentQuiz';
+$string['progress_bar_caption'] = 'Votre progression dans cette activité Test étudiant';
 $string['questionsinuse'] = '(* Les questions marquées d\'un astérisque sont déjà utilisées dans certains quiz.)';
 $string['ranking_block_title'] = 'Classement';
 $string['ranking_block_title_anonymised'] = 'Classement (anonymisé)';
@@ -271,7 +277,7 @@ $string['report_comment_condition4'] = 'Contenu diffamatoire ou calomnieux';
 $string['report_comment_condition5'] = 'Le contenu ne respecte pas le droit d\'auteur';
 $string['report_comment_condition6'] = 'Le contenu est contraire aux règles pour une autre raison';
 $string['report_comment_condition_more'] = 'Autres informations (facultatif)';
-$string['report_comment_emailappendix'] = 'Vous recevez ce courriel parce que votre adresse de courriel a été utilisée sur l\'activité StudentQuiz afin de signaler un commentaire inacceptable.';
+$string['report_comment_emailappendix'] = 'Vous recevez ce courriel parce que votre adresse de courriel a été utilisée sur l\'activité Test étudiant afin de signaler un commentaire inacceptable.';
 $string['report_comment_emailpreface'] = 'Un commentaire a été signalé par {$a->fullname} ({$a->username},
 {$a->email}).';
 $string['report_comment_emailsubject'] = 'Commentaire signalé {$a->commentid}: {$a->coursename} {$a->studentquizname}';
@@ -301,25 +307,25 @@ $string['reportquiz_stats_all_question_attempts_incorrect'] = 'Moyenne des répo
 $string['reportquiz_stats_all_questions_answered'] = 'Moyenne de toutes les réponses pour l\'ensemble des participants';
 $string['reportquiz_stats_all_questions_answered_help'] = 'Nombre moyen de réponses données par l\'ensemble des participants';
 $string['reportquiz_stats_all_questions_approved'] = 'Nombre de questions approuvées';
-$string['reportquiz_stats_all_questions_approved_help'] = 'Les enseignants peuvent approuver les questions pour en vérifier l\'exactitude. C\'est le nombre de questions approuvées dans cette activité StudentQuiz.';
-$string['reportquiz_stats_all_questions_created'] = 'Nombre de questions dans cette activité StudentQuiz';
+$string['reportquiz_stats_all_questions_approved_help'] = 'Les enseignants peuvent approuver les questions pour en vérifier l\'exactitude. C\'est le nombre de questions approuvées dans cette activité Test étudiant.';
+$string['reportquiz_stats_all_questions_created'] = 'Nombre de questions dans cette activité Test étudiant';
 $string['reportquiz_stats_all_questions_created_help'] = 'Nombre de questions créées par les participants';
 $string['reportquiz_stats_all_rates_average'] = 'Évaluation moyenne de toutes les questions';
 $string['reportquiz_stats_all_rates_average_help'] = 'La note de chaque question est la moyenne des étoiles qu\'elle a reçues par les participants.  Exemple : Les participants ont créé 4 questions. Si la question A a été notée 3 étoiles par ces derniers, la question B = 4 étoiles, la question C = 2 étoiles et la question D = 5 étoiles, alors la moyenne de toutes les questions est de 3,5.';
 $string['reportquiz_stats_own_last_attempt_correct'] = 'Nombre de vos dernières réponses correctes';
 $string['reportquiz_stats_own_last_attempt_incorrect'] = 'Nombre de vos dernières réponses incorrectes';
 $string['reportquiz_stats_own_percentage_correct_answers'] = 'Pourcentage de vos réponses correctes';
-$string['reportquiz_stats_own_percentage_correct_answers_help'] = 'Pourcentage de toutes vos réponses correctes parmi l\'ensemble de vos réponses données dans cette activité StudentQuiz. Les réponses partiellement correctes comptent comme des mauvaises réponses.';
+$string['reportquiz_stats_own_percentage_correct_answers_help'] = 'Pourcentage de toutes vos réponses correctes parmi l\'ensemble de vos réponses données dans cette activité Test étudiant. Les réponses partiellement correctes comptent comme des mauvaises réponses.';
 $string['reportquiz_stats_own_progress'] = 'Progression personnelle';
-$string['reportquiz_stats_own_progress_help'] = 'Pourcentage de vos dernières réponses correctes parmi l\'ensemble des questions de cette activité StudentQuiz. Les réponses partiellement correctes comptent comme des mauvaises réponses.';
+$string['reportquiz_stats_own_progress_help'] = 'Pourcentage de vos dernières réponses correctes parmi l\'ensemble des questions de cette activité Test étudiant. Les réponses partiellement correctes comptent comme des mauvaises réponses.';
 $string['reportquiz_stats_own_question_attempts_correct'] = 'Total de vos réponses correctes';
 $string['reportquiz_stats_own_question_attempts_incorrect'] = 'Total de vos réponses incorrectes';
 $string['reportquiz_stats_own_questions_answered'] = 'Total de vos réponses';
-$string['reportquiz_stats_own_questions_answered_help'] = 'Nombre de toutes les réponses données dans cette activité StudentQuiz.';
+$string['reportquiz_stats_own_questions_answered_help'] = 'Nombre de toutes les réponses données dans cette activité Test étudiant.';
 $string['reportquiz_stats_own_questions_approved'] = 'Nombre de vos questions approuvées';
-$string['reportquiz_stats_own_questions_approved_help'] = 'Les enseignants peuvent approuver les questions pour en vérifier l\'exactitude. Il s\'agit du nombre de questions approuvées dans le cadre de cette activité StudentQuiz.';
+$string['reportquiz_stats_own_questions_approved_help'] = 'Les enseignants peuvent approuver les questions pour en vérifier l\'exactitude. Il s\'agit du nombre de questions approuvées dans le cadre de cette activité Test étudiant.';
 $string['reportquiz_stats_own_questions_created'] = 'Nombre de questions auxquelles vous avez contribué';
-$string['reportquiz_stats_own_questions_created_help'] = 'Nombre de questions auxquelles vous avez contribué dans cette acctivité StudentQuiz';
+$string['reportquiz_stats_own_questions_created_help'] = 'Nombre de questions auxquelles vous avez contribué dans cette activité Test étudiant.';
 $string['reportquiz_stats_own_rates_average'] = 'Vous avez reçu la note moyenne de';
 $string['reportquiz_stats_own_rates_average_help'] = 'La note de chaque question est la moyenne des étoiles qu\'elle a reçues des participants.  Exemple : Vous avez créé les questions A et B. Si votre question A a été notée 3 étoiles par les participants et votre question B 4 étoiles, alors la moyenne des notes que vous avez reçues est de 3,5.';
 $string['reportquiz_stats_title'] = 'Statistiques';
@@ -356,7 +362,7 @@ $string['savechanges'] = 'Enregistrer les changements';
 $string['scheduled_task_send_digest_notification'] = 'Envoi d\'un récapitulatif de notifications';
 $string['setting_question_publishing'] = 'Publication des questions';
 $string['setting_question_publishing_automatic'] = 'Publier automatiquement les nouvelles questions';
-$string['setting_question_publishing_help'] = 'Les questions publiées apparaissent dans la banque de questions pour que les autres étudiants puissent les jouer. Vous pouvez soit autoriser la publication automatique de toutes les questions, soit demander une approbation avant de les publier. <br>Notez que ce paramètre ne peut pas être modifié une fois qu\'une question a été créée dans le StudentQuiz.';
+$string['setting_question_publishing_help'] = 'Les questions publiées apparaissent dans la banque de questions pour que les autres étudiants puissent les jouer. Vous pouvez soit autoriser la publication automatique de toutes les questions, soit demander une approbation avant de les publier. <br>Notez que ce paramètre ne peut pas être modifié une fois qu\'une question a été créée dans le Test étudiant.';
 $string['setting_question_publishing_require_approval'] = 'Exiger l\'approbation avant de publier';
 $string['settings_allowallqtypes'] = 'Autoriser tous les types de questions';
 $string['settings_allowedqtypes'] = 'Types de questions autorisés';
@@ -377,7 +383,7 @@ $string['settings_email_digest_first_day'] = 'Premier jour de la semaine ?';
 $string['settings_email_digest_first_day_help'] = 'Si vous avez sélectionné un récapitulatif hebdomadaire, cette option vous permet de définir le premier jour (à partir de 00h:00m:00 de ce jour) de la période de sept jours. Ceci est particulièrement utile si l\'activité commence à mi-semaine, par exemple.';
 $string['settings_email_digest_type'] = 'Type de récapitulatif par courriel';
 $string['settings_email_digest_type_daily_digest'] = 'Récapitulatif quotidien';
-$string['settings_email_digest_type_help'] = 'StudentQuiz a diverses notifications que vous pouvez activer, comme informer l\'auteur de la question d\'un changement d\'état (par exemple, un enseignant a approuvé l\'une de ses questions). Vous pouvez utiliser ce paramètre pour spécifier la fréquence de ces notifications. Les courriels de résumé ne seront envoyés que lorsqu\'il y aura au moins une notification dans la période définie';
+$string['settings_email_digest_type_help'] = 'Test étudiant a diverses notifications que vous pouvez activer, comme informer l\'auteur de la question d\'un changement d\'état (par exemple, un enseignant a approuvé l\'une de ses questions). Vous pouvez utiliser ce paramètre pour spécifier la fréquence de ces notifications. Les courriels de résumé ne seront envoyés que lorsqu\'il y aura au moins une notification dans la période définie';
 $string['settings_email_digest_type_no_digest'] = 'Aucun récapitulatif (un courriel par action)';
 $string['settings_email_digest_type_weekly_digest'] = 'Récapitulatif hebdomadaire';
 $string['settings_excluderoles'] = 'Exclure les rôles dans le classement';
@@ -400,16 +406,16 @@ $string['settings_questionquantifier_label'] = 'Points pour chaque question cré
 $string['settings_ratequantifier'] = 'Détail de la notation';
 $string['settings_ratequantifier_help'] = 'Points pour chaque étoile reçue.';
 $string['settings_ratequantifier_label'] = 'Multiplicateur de la moyenne des étoiles reçues pour une question';
-$string['settings_removeqbehavior'] = 'Supprimer le plugin de comportement des questions de StudentQuiz';
-$string['settings_removeqbehavior_help'] = 'Cette information ne doit apparaître qu\'une seule fois lors de la mise à jour. Nous vous informons que nous avons détecté que notre plugin de comportement des questions StudentQuiz est installé. Ce plugin n\'est plus nécessaire et nous essayons donc de le supprimer automatiquement. Si vous voyez toujours ce paramètre, veuillez désinstaller manuellement le plugin de comportement des questions de StudentQuiz <a href="{$a}">ici</a>.';
-$string['settings_removeqbehavior_label'] = 'Supprimer le plugin de comportement des questions de StudentQuiz';
+$string['settings_removeqbehavior'] = 'Supprimer le plugin de comportement des questions de Test étudiant';
+$string['settings_removeqbehavior_help'] = 'Cette information ne doit apparaître qu\'une seule fois lors de la mise à jour. Nous vous informons que nous avons détecté que notre plugin de comportement des questions Test étudiant est installé. Ce plugin n\'est plus nécessaire et nous essayons donc de le supprimer automatiquement. Si vous voyez toujours ce paramètre, veuillez désinstaller manuellement le plugin de comportement des questions de Test étudiant <a href="{$a}">ici</a>.';
+$string['settings_removeqbehavior_label'] = 'Supprimer le plugin de comportement des questions de Test étudiant';
 $string['settings_reportingemail'] = 'Adresse de courriel pour signaler des commentaires offensants';
 $string['settings_reportingemail_help'] = 'Si cette adresse de courriel est fournie, un lien vers le rapport apparaît à côté de chaque commentaire. Les utilisateurs peuvent cliquer sur le lien pour signaler des commentaires offensants. Les informations seront envoyées à cette adresse.
 
 Si elle est laissée vide, la fonction de rapport ne sera pas affichée (sauf si un site l\'adresse de déclaration a été fournie).
 
 Plusieurs adresses de courriel peuvent être ajoutées à condition qu\'elles soient séparées par un point-virgule.';
-$string['settings_section_description_default'] = 'Ces valeurs définissent les valeurs par défaut lors de la création d\'une nouvelle activité StudentQuiz';
+$string['settings_section_description_default'] = 'Ces valeurs définissent les valeurs par défaut lors de la création d\'une nouvelle activité Test étudiant.';
 $string['settings_section_header_comment_rating'] = 'Paramètres de commentaire et de notation';
 $string['settings_section_header_question'] = 'Paramètres des questions';
 $string['settings_section_header_ranking'] = 'Paramètres de classement';
@@ -438,18 +444,20 @@ $string['statistic_block_progress_last_attempt_incorrect'] = 'Dernier essai inco
 $string['statistic_block_progress_never'] = 'Questions jamais répondues';
 $string['statistic_block_title'] = 'Ma progression';
 $string['studentquiz'] = 'studentquiz';
-$string['studentquiz:addinstance'] = 'Ajouter une nouvelle instance pour l\'activité StudentQuiz';
+$string['studentquiz:addinstance'] = 'Ajouter une nouvelle instance pour l\'activité Test étudiant';
+$string['studentquiz:changestate'] = 'Définir l\'état d\'une question dans l\'activité Test étudiant';
 $string['studentquiz:emailnotifyapproved'] = 'Notification d\'approbation de question';
 $string['studentquiz:emailnotifychanged'] = 'Notification de modification de question';
 $string['studentquiz:emailnotifycommentadded'] = 'Notification d\'ajout de commentaire';
 $string['studentquiz:emailnotifycommentdeleted'] = 'Notification de suppression de commentaire';
-$string['studentquiz:manage'] = 'Questions modérées sur l\'activité StudentQuiz';
-$string['studentquiz:previewothers'] = 'Prévisualisez les questions des autres sur l\'activité StudentQuiz';
-$string['studentquiz:submit'] = 'Proposer les questions de l\'activité StudentQuiz';
+$string['studentquiz:manage'] = 'Questions modérées sur l\'activité Test étudiant';
+$string['studentquiz:organize'] = 'Déplacer les questions dans des catégories sur l\'activité Test étudiant';
+$string['studentquiz:previewothers'] = 'Prévisualiser les questions des autres sur l\'activité Test étudiant';
+$string['studentquiz:submit'] = 'Proposer les questions de l\'activité Test étudiant';
 $string['studentquiz:unhideanonymous'] = 'Possibilité de voir les vrais noms même lorsque l\'anonymat est activé';
-$string['studentquiz:view'] = 'Voir les questions de l\'activité StudentQuiz';
-$string['studentquizname'] = 'Nom du de l\'activité StudentQuiz';
-$string['studentquizname_help'] = 'Le nom de l\'activité StudentQuiz';
+$string['studentquiz:view'] = 'Voir les questions de l\'activité Test étudiant';
+$string['studentquizname'] = 'Nom de l\'activité Test étudiant';
+$string['studentquizname_help'] = 'Le nom de cette activité Test étudiant';
 $string['submissionendbeforestart'] = 'La date limite de soumission ne peut être précisée avant la date d\'ouverture des soumissions';
 $string['tags'] = 'Tags';
 $string['unapprove'] = 'Retirer l\'approbation';

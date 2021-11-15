@@ -133,7 +133,8 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
         }
         // Used to simulate a grade failure when doing tests!
         if ($error) {
-            throw new moodle_exception(get_string('failedtogradetest', 'qtype_shortanswerwiris', ($this->step->get_attempts() + 1)), 'qtype_wq');
+            throw new moodle_exception(get_string('failedtogradetest', 'qtype_shortanswerwiris',
+                                                 ($this->step->get_attempts() + 1)), 'qtype_wq');
         }
         // END TEST.
     }
@@ -166,7 +167,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             $this->get_matching_answer_fail_test($response);
 
             // Use the Wiris Quizzes API to grade this response.
-            $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
+            $builder = com_wiris_quizzes_api_Quizzes::getInstance();
             // Build array of correct answers.
             $correctvalues = array();
             $correctanswers = array();
@@ -183,7 +184,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             $qi->setStudentAnswer(0, $response['answer']);
 
             // Make call.
-            $request = $builder->newFeedbackRequest($this->join_feedback_text(), $this->wirisquestion, $qi);
+            $request = $builder->newFeedbackRequest($this->join_feedback_text(), $qi);
             $response = $this->call_wiris_service($request);
             $qi->update($response);
 
@@ -240,7 +241,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
     public function format_answer($text) {
         if ($this->is_text_answer() && !$this->is_compound_answer()) {
             $text = $this->expand_variables_text($text);
-        } else {
+        } else if (!$this->is_graphical_answer()) {
             $text = $this->expand_variables_mathml($text);
         }
 
@@ -248,17 +249,52 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
     }
 
     private function is_text_answer() {
+        $slots = $this->wirisquestion->getSlots();
+        if (isset($slots[0])) {
+            // @codingStandardsIgnoreStart
+            $inputfield = $slots[0]->getAnswerFieldType();
+            $inputtext = ($inputfield == com_wiris_quizzes_api_ui_AnswerFieldType::$TEXT_FIELD);
+            // @codingStandardsIgnoreEnd
+            return $inputtext;
+        }
+
         // @codingStandardsIgnoreStart
-        $inputfield = $this->wirisquestion->question->getProperty(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_ANSWER_FIELD_TYPE);
-        $inputtext = ($inputfield == com_wiris_quizzes_api_QuizzesConstants::$ANSWER_FIELD_TYPE_TEXT);
+        $inputfield = $this->wirisquestion->getAnswerFieldType();
+        $inputtext = ($inputfield == com_wiris_quizzes_api_ui_AnswerFieldType::$TEXT_FIELD);
         // @codingStandardsIgnoreEnd
         return $inputtext;
     }
 
     private function is_compound_answer() {
-        // @codingStandardsIgnoreLine
-        $iscompound = $this->wirisquestion->question->getProperty(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_COMPOUND_ANSWER);
+        $slots = $this->wirisquestion->getSlots();
+        if (isset($slots[0])) {
+            // @codingStandardsIgnoreStart
+            $iscompound = $slots[0]->getProperty(com_wiris_quizzes_api_PropertyName::$COMPOUND_ANSWER);
+            // @codingStandardsIgnoreEnd
+            return ($iscompound == 'true');
+        }
+
+        // @codingStandardsIgnoreStart
+        $iscompound = $this->wirisquestion->getProperty(com_wiris_quizzes_api_PropertyName::$COMPOUND_ANSWER);
+        // @codingStandardsIgnoreEnd
         return ($iscompound == 'true');
+    }
+
+    private function is_graphical_answer() {
+        $slots = $this->wirisquestion->getSlots();
+        if (isset($slots[0])) {
+            // @codingStandardsIgnoreStart
+            $inputfield = $slots[0]->getAnswerFieldType();
+            $inputgraphical = ($inputfield == com_wiris_quizzes_api_ui_AnswerFieldType::$INLINE_GRAPH_EDITOR);
+            // @codingStandardsIgnoreEnd
+            return $inputgraphical;
+        }
+
+        // @codingStandardsIgnoreStart
+        $inputfield = $this->wirisquestion->getAnswerFieldType();
+        $inputgraphical = ($inputfield == com_wiris_quizzes_api_ui_AnswerFieldType::$INLINE_GRAPH_EDITOR);
+        // @codingStandardsIgnoreEnd
+        return $inputgraphical;
     }
 
     public function get_correct_response() {

@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['attemptsallowedn'] = 'Antal tillåtna försök: {$a}';
 $string['pluginname'] = 'Regel för antal försök som tillåts';
-$string['privacy:metadata'] = 'Pluginmodulen Antal försök-åtkomstregel för Test lagrar ingen personinformation.';
+$string['privacy:metadata'] = 'Pluginmodulen Antal försök-åtkomstregel för kunskapstest lagrar ingen personinformation.';

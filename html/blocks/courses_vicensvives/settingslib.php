@@ -250,7 +250,8 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
             return $e->getMessage();
         }
 
-        return '';
+        // Create blocks at frontpage and dashboard.
+        return self::create_default_blocks();
     }
 
     private static function get_role_id() {
@@ -280,5 +281,48 @@ class courses_vicensvives_setting_moodlews extends admin_setting {
             'deleted' => 0,
         );
         return $DB->get_field('user', 'id', $conditions);
+    }
+
+    private static function create_default_blocks() {
+        global $CFG,$DB;
+        require_once($CFG->libdir.'/blocklib.php');
+        $page = new moodle_page();
+        $systemcontext = context_system::instance();
+        $page->set_context($systemcontext);
+
+        $page->blocks->add_region(BLOCK_POS_RIGHT);
+    
+        $conditions = array(
+            'subpagepattern' => NULL
+        );
+    
+        // Create frontpage blocks.
+        $pagetypepattern = 'site-index';
+        $conditions['pagetypepattern'] = $pagetypepattern;
+        $blockname = 'courses_vicensvives';
+        $conditions['blockname'] = $blockname;
+        if (!$DB->get_record('block_instances', $conditions)) {
+            $page->blocks->add_block($blockname, BLOCK_POS_RIGHT, 0, false, $pagetypepattern, null);
+        }
+    
+        $blockname = 'licenses_vicensvives';
+        $conditions['blockname'] = $blockname;
+        if (!$DB->get_record('block_instances', $conditions)) {
+            $page->blocks->add_block($blockname, BLOCK_POS_RIGHT, 0, false, $pagetypepattern, null);
+        }
+    
+        // Add the block to the default /my.
+        $pagetypepattern = 'my-index';
+        $conditions['pagetypepattern'] = $pagetypepattern;
+        if (!$DB->get_record('block_instances', $conditions)) {
+            $page->blocks->add_block($blockname, BLOCK_POS_RIGHT, 0, false, $pagetypepattern, null);
+        }
+    
+        $blockname = 'courses_vicensvives';
+        $conditions['blockname'] = $blockname;
+        if (!$DB->get_record('block_instances', $conditions)) {
+            $page->blocks->add_block($blockname, BLOCK_POS_RIGHT, 0, false, $pagetypepattern, null);
+        }
+        return '';
     }
 }

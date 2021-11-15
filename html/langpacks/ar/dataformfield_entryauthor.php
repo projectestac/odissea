@@ -27,4 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['userfirstname'] = 'الاسم الأول للمستخدم';
 $string['useridnumber'] = 'رقم مُعرَّف المستخدم';
+$string['userlastname'] = 'الاسم الأخير للمستخدم';
 $string['username'] = 'اسم المستخدم';

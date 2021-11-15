@@ -53,6 +53,6 @@ $string['packagefile'] = 'Paketfil';
 $string['page-mod-imscp-x'] = 'Modulsida för IMS-innehållspaket';
 $string['pluginadministration'] = 'Administrera IMSCP';
 $string['pluginname'] = 'IMS-innehållspaket';
-$string['privacy:metadata'] = 'Pluginmodulen IMS-innehållspaket lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen IMS-innehållspaket lagrar ingen personinformation.';
 $string['search:activity'] = 'IMS-innehållspaket - resursinformation';
 $string['toc'] = 'Innehållsförteckning';

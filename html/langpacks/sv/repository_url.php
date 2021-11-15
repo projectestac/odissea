@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['configplugin'] = 'Konfigurera Hämta från URL plugin-modulen';
 $string['download'] = 'Hämta';
 $string['pluginname'] = 'Hämta från URL';
-$string['privacy:metadata'] = 'Plugin-modulen Hämta från URL lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Hämta från URL lagrar ingen personinformation.';
 $string['rename'] = 'Namn';
 $string['url'] = 'URL';
 $string['url:view'] = 'Använd Hämta från URL i filväljaren';

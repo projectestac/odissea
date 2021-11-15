@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Mina filer';
 $string['privacy:metadata'] = 'Blocket \'Private files\' visar enbart en vy och länkar till användarens privata filer.';
 $string['private_files:addinstance'] = 'Lägg till ett block för Privata filer';
-$string['private_files:myaddinstance'] = 'Lägg till ett nytt block för privata filer till mitt Moodle';
+$string['private_files:myaddinstance'] = 'Lägg till ett nytt block för privata filer till översiktssidan';
 $string['privatefiles'] = 'Privata filer';

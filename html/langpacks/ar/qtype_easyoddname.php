@@ -39,6 +39,11 @@ $string['caseorienttrue'] = 'صح';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}.';
 $string['correctanswers'] = '<b>التعليمات</b>';
 $string['draghere'] = '<strong>إسحب المجموعات وأفلتها في هذا المربع</strong>';
+$string['filloutoneanswer'] = '<b><ul>
+<li>أدخل نص سؤالك وتركيبه أعلاه.</li>
+<li>إسحب المجموعات وأفلتها أدناه في المربع الأخضر لتشكيل اسم تركيبك.</li>
+<li>إضغط زر "إدراج من المحرر" لإدراج النص البرمجي في مربع الإجابة.</li>
+</ul></b>';
 $string['insert'] = 'الإدراج من المحرر';
 $string['insertfromeditor'] = 'الإدراج من المحرر';
 $string['javaneeded'] = 'لاستعمال هذه الصفحة، تحتاج إلى مستعرض تم فيه تمكين Java. قم بتنزيل آخر إصدار من ملحق Java من {$a}.';

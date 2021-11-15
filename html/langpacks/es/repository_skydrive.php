@@ -27,8 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['cachedef_foldername'] = 'Nombre de la carpeta caché';
 $string['clientid'] = 'ID del cliente';
-$string['configplugin'] = 'Configurar Microsoft Skydrive';
-$string['oauthinfo'] = '<p> Para utilizar esta extensión debe registrar su sitio <a href="https://manage.dev.live.com/Applications/Index">en Microsoft</a> . <p> Como parte del proceso de registro, tendrá que introducir la siguiente URL como "redireccionamiento de dominio": </p><p> {$a->callbackurl} </p> Una vez registrado, se le proporcionará un ID de cliente y la clave secreta con los que podrá acceder aquí. </p>';
-$string['pluginname'] = 'Microsoft Skydrive';
+$string['configplugin'] = 'Configurar Microsoft OneDrive (legado)';
+$string['deprecatedwarning'] = 'Advertencia: Microsoft ha desaprobado la API utilizada por este complemento de repositorio y dejará de funcionar con el tiempo. Por favor haga el cambio al repositorio "Microsoft OneDrive" má reciente.';
+$string['oauthinfo'] = '<p>Para utilizar este complemento, debe registrar su sitio <a href="https://account.live.com/developers/applications">con Microsoft</a>. <p>Como parte del proceso de registro, deberá introducir la siguiente URL como \'Redirigir dominio\':</p><p>{$a->callbackurl}</p>Una vez registrado, se le proporcionará un ID de cliente y un secreto que puede introducir aquí . </p>';
+$string['pluginname'] = 'Microsoft OneDrive (heredado)';
+$string['privacy:metadata'] = 'El complemento de repositorio de Microsoft OneDrive (heredado) no almacena ningún dato personal, pero transmite datos de usuario desde Moodle al sistema remoto.';
 $string['secret'] = 'Clave secreta';
-$string['skydrive:view'] = 'Ver Skydrive';
+$string['skydrive:view'] = 'Ver OneDrive (legado)';

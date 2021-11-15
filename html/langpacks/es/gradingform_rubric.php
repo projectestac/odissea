@@ -26,16 +26,19 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addcriterion'] = 'Añadir criterio';
-$string['alwaysshowdefinition'] = 'Permitir a los usuarios una vista previa de la rúbrica utilizada en el módulo (en caso contrario, la rúbrica solo será visible después de la clasificación)';
+$string['additionalfeedback'] = 'Retroalimentación adicional';
+$string['alwaysshowdefinition'] = 'Permitir a los usuarios previsualizar la rúbrica utilizada en el módulo (en caso contrario, la rúbrica solo será visible después de la calificación)';
 $string['backtoediting'] = 'Volver a edición';
 $string['confirmdeletecriterion'] = '¿Está seguro que quiere eliminar el criterio?';
 $string['confirmdeletelevel'] = '¿Está seguro que quiere eliminar este nivel?';
+$string['criterion'] = 'Criterio {$a}';
 $string['criterionaddlevel'] = 'Añadir nivel';
 $string['criteriondelete'] = 'Eliminar criterio';
 $string['criterionduplicate'] = 'Duplicar criterio';
 $string['criterionempty'] = 'Clic para editar criterio';
 $string['criterionmovedown'] = 'Mover abajo';
 $string['criterionmoveup'] = 'Mover arriba';
+$string['criterionremark'] = 'Nota para el criterio {$a->description}: {$a->remark}';
 $string['definerubric'] = 'Definir rúbrica';
 $string['description'] = 'Descripción';
 $string['enableremarks'] = 'Permitir a quien califica añadir observaciones para cada criterio';
@@ -43,19 +46,28 @@ $string['err_mintwolevels'] = 'Cada criterio debe tener al menos dos niveles';
 $string['err_nocriteria'] = 'La rúbrica debe contener al menos un criterio';
 $string['err_nodefinition'] = 'La definición del nivel no puede estar en blanco';
 $string['err_nodescription'] = 'La definición del criterio no puede estar en blanco';
-$string['err_scoreformat'] = 'El número de puntos para cada nivel debe ser un número válido no negativo';
+$string['err_novariations'] = 'Los niveles de criterio no pueden otorgar todos la misma cantidad de puntos';
+$string['err_scoreformat'] = 'El número de puntos para cada nivel debe ser un número válido';
 $string['err_totalscore'] = 'El número máximo de puntos posibles cuando se califica por rúbricas debe ser mayor que cero';
 $string['gradingof'] = 'Calificando {$a}';
 $string['level'] = 'Nivel {$a->definition}, {$a->score} puntos.';
 $string['leveldefinition'] = 'Nivel {$a} de definición';
 $string['leveldelete'] = 'Eliminar nivel {$a}';
 $string['levelempty'] = 'Clic para editar el nivel';
-$string['lockzeropoints'] = 'Calcular la puntuación basada en la rúbrica con una puntuación mínima de 0';
-$string['lockzeropoints_help'] = 'Este ajuste sólo se aplica si la suma del mínimo número de puntos de cada criterio es mayor de 0. Si se marca, la mínima puntuación posible para la rúbrica será mayor de 0. Si no se marca, la mínima puntuación posible para la rúbrica será mapeada a la mínima puntuación disponible para la actividad (la cual es 0 si no se ha usado una escala).';
+$string['levelsgroup'] = 'Grupo de niveles';
+$string['lockzeropoints'] = 'Calcular la puntuación teniendo como nota mínima la calificación mínima alcanzable con la rúbrica';
+$string['lockzeropoints_help'] = 'Este ajuste sólo se aplica si la suma del número mínimo de puntos de cada criterio es mayor que 0. Si se marca, la puntuación mínima de la actividad será la puntuación mínima alcanzable con la rúbrica. Si se deja sin marcar, la puntuación mínima alcanzable con la rúbrica se asignará a la calificación mínima disponible para la actividad (que es 0 a menos que se utilice una escala).';
 $string['name'] = 'Nombre';
 $string['needregrademessage'] = 'La definición de la rúbrica fue cambiada después de que este estudiante hubiera sido calificado. El estudiante no puede ver esta rúbrica hasta que usted la verifique y  actualice la calificación.';
+$string['notset'] = 'No establecido';
 $string['pluginname'] = 'Rúbrica';
+$string['pointsvalue'] = '{$a} puntos';
 $string['previewrubric'] = 'Previsualizar rubrica';
+$string['privacy:metadata:criterionid'] = 'Un identificador para un criterio específico que se está calificando.';
+$string['privacy:metadata:fillingssummary'] = 'Almacena información sobre la calificación del usuario generada por la rúbrica.';
+$string['privacy:metadata:instanceid'] = 'Un identificador relacionado con una calificación en una actividad.';
+$string['privacy:metadata:levelid'] = 'El nivel obtenido en la rúbrica.';
+$string['privacy:metadata:remark'] = 'Comentarios relacionados con el criterio de la rúbrica que se evalúa.';
 $string['regrademessage1'] = 'Usted está a punto de guardar los cambios en una rúbrica que ya ha sido utilizada para calificar. Por favor, indique si las calificaciones existentes deben ser revisadas. Si decide que debe ser así, entonces la rúbrica se ocultará a los estudiantes hasta el elemento sea recalificado.';
 $string['regrademessage5'] = 'Usted está a punto de guardar cambios significativos en una rúbrica que ya ha sido utilizada para la clasificación. El valor del libro de calificaciones no se verá afectado, pero la rúbrica no será visible para los estudiantes hasta que sus elementos  sean recalificados.';
 $string['regradeoption0'] = 'No marcar para recalificar';
@@ -63,16 +75,18 @@ $string['regradeoption1'] = 'Marcar para recalificar';
 $string['restoredfromdraft'] = 'NOTA: El último intento de calificación de esta persona no se ha guardado correctamente, por lo que se han restaurado la calificaciónes provisionales. Si desea cancelar los cambios utilice el botón inferior, "Cancelar".';
 $string['rubric'] = 'Rúbrica';
 $string['rubricmapping'] = 'Reglas para la puntuación';
-$string['rubricmappingexplained'] = 'La puntuación mínima posible para esta rúbrica es de <b> {$a->minscore} punto(s) </b> y se convertirá en la nota mínima posible en este módulo (que es cero a menos que la escala se utilice).
-La puntuación máxima es de<b> {$a->maxscore}  punto(s) </b> y se convertirá en la nota máxima posible  <br />
-Puntuaciones intermedias se convertirán y redondearán a la calificación más cercana disponible.<br />
-Si se utiliza una escala en lugar de una calificación, la puntuación se convertirá en los elementos de la escala como si fueran números enteros consecutivos.';
+$string['rubricmappingexplained'] = 'La puntuación mínima alcanzable con esta rúbrica es <b>{$a->minscore} puntos</b>. Se convertirá a la calificación mínima disponible para la actividad (que es 0 a menos que se utilice una escala). La puntuación máxima de <b>{$a->maxscore} puntos</b> se convertirá en la calificación máxima. Las puntuaciones intermedias se convertirán respectivamente.
+
+Si se utiliza una escala para calificar, la puntuación se redondeará y se convertirá a los elementos de la escala como si fueran números enteros consecutivos.
+
+Este cálculo de calificación puede cambiarse editando el formulario y marcando la casilla \'Calcular calificación con una puntuación mínima de la calificación mínima alcanzable con la rúbrica\'.';
 $string['rubricnotcompleted'] = 'Por favor, escoja para cada criterio';
 $string['rubricoptions'] = 'Opciones de rúbrica';
 $string['rubricstatus'] = 'Estado actual de la rúbrica';
 $string['save'] = 'Guardar';
 $string['saverubric'] = 'Guardar rúbrica y dejarla preparada';
 $string['saverubricdraft'] = 'Guardar como borrador';
+$string['scoreinputforlevel'] = 'Puntuación de entrada para el nivel {$a}';
 $string['scorepostfix'] = '{$a}puntos';
 $string['showdescriptionstudent'] = 'Mostrar la descripción de la rúbrica a aquellos que serán calificados';
 $string['showdescriptionteacher'] = 'Mostrar la descripción de la rúbrica durante al evaluación';

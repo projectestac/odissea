@@ -38,7 +38,7 @@ $string['cachedef_subscriptiondata'] = 'Armazena as informações da subscriçã
 $string['clickheretolaunchtheapp'] = 'Clique aqui se a aplicação não abrir automaticamente.';
 $string['configmobilecssurl'] = 'Um ficheiro CSS para personalizar a interface da sua Aplicação móvel.';
 $string['customlangstrings'] = 'Strings de idioma personalizadas';
-$string['customlangstrings_desc'] = 'As palavras e as frases mostradas na aplicação podem ser personalizadas aqui. Digite cada string de idioma personalizada numa nova linha no formato: identificador da string, string do idioma personalizada e código do idioma, separados por uma barra vertical. Por exemplo:
+$string['customlangstrings_desc'] = 'As palavras e as frases mostradas na aplicação podem ser personalizadas aqui. Digite cada string de idioma personalizada numa nova linha no formato: identificador da string, string do idioma personalizada e código do idioma, separados por uma barra vertical. Exemplo:
 <pre>
 mm.user.student|Learner|en
 mm.user.student|Aluno|pt
@@ -51,7 +51,7 @@ Os métodos de abertura da hiperligação são: app (para ligação a uma ativid
 
 Quando faltar itens de uma tradução para um determinado idioma, os itens usam outros idiomas como alternativa, a menos que seja anexado "_only" ao código do idioma.
 
-Por exemplo:
+Exemplo:
 <pre>
 App\'s help | https://someurl.xyz/help | inappbrowser
 My grades | https://someurl.xyz/local/mygrades/index.php | embedded | en
@@ -122,8 +122,8 @@ $string['privacy:metadata:core_userkey'] = 'Chaves de utilizador para criar chav
 $string['privacy:metadata:preference:tool_mobile_autologin_request_last'] = 'A data do último pedido da chave de autenticação automática. Entre cada pedido, são necessários 6 minutos.';
 $string['qrcodedisabled'] = 'Acesso via código QR desativado';
 $string['qrcodeformobileappaccess'] = 'Código QR para acesso a aplicações de dispositivos móveis';
-$string['qrcodeformobileapploginabout'] = 'Digitalize o código QR com o seu dispositivo móvel e ficará autenticado automaticamente. O código QR é válido durante {$a} minutos.';
-$string['qrcodeformobileappurlabout'] = 'Digitalize o código QR com o seu dispositivo móvel para preencher o URL do site.';
+$string['qrcodeformobileapploginabout'] = 'Faça a leitura do código QR com o seu dispositivo móvel e ficará autenticado automaticamente. O código QR é válido durante {$a} minutos.';
+$string['qrcodeformobileappurlabout'] = 'Faça a leitura do código QR com o seu dispositivo móvel para preencher o URL do site.';
 $string['qrcodetype'] = 'Acesso por código QR';
 $string['qrcodetype_desc'] = 'Pode ser fornecido um código QR aos utilizadores da aplicação móvel Moodle. Pode ser usado para preencher o URL do site, ou se o site for seguro por usar HTTPS, autenticarem-se automaticamente sem ter que inserir o nome de utilizador e a senha.';
 $string['qrcodetypelogin'] = 'Código QR com autenticação automática';

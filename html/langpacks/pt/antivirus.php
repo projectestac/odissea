@@ -57,7 +57,7 @@ $string['fileinfectedname'] = 'Ficheiro infetado';
 $string['notifyemail'] = 'E-mail para notificação de alerta do antivírus';
 $string['notifyemail_help'] = 'O endereço de e-mail para notificações quando um vírus for detetado.
 Se ficar em branco, serão enviadas notificações a todos os administradores do site.';
-$string['privacy:metadata'] = 'O Sistema Antivirus não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O Sistema Antivirus não armazena quaisquer dados pessoais.';
 $string['quarantinedfiles'] = 'Ficheiros da quarentena do antivírus';
 $string['quarantinedisabled'] = 'Quarentena está desativada. O ficheiro não foi armazenado.';
 $string['quarantinetime'] = 'Permanência máxima em quarentena';

@@ -273,6 +273,7 @@ $string['legend_no_participants'] = 'ليس للفسحة أي مشاركين';
 $string['legend_past_deadline'] = 'الفسحة تجاوزت موعدها النهائي';
 $string['legend_pending'] = 'الفسحة تنتظر التقييم';
 $string['legend_section_details'] = 'ايقونات تفاصيل الفسحة';
+$string['message_custommessage_help'] = 'استعمل هذا الحقل لإدخال نص شخصي في الرسالة المولدة آليًا.';
 $string['message_error_slot_full_group'] = 'هذه الفسحة الزمنية محجوزة مسبقًا!';
 $string['message_info_slots_added_pl'] = '{$a->count} من الفسحات الجديدة تمت إضافتها.';
 $string['message_info_slots_added_sg'] = 'فسحة جديدة واحدة تمت إضافتها.';

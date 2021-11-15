@@ -31,7 +31,7 @@ $string['allmodules'] = 'Alla instanser';
 $string['area'] = 'Område';
 $string['areatomonitor'] = 'Övervakningsområde';
 $string['cachedef_eventsubscriptions'] = 'Detta lagrar listan med händelseövervakningar för individuella kurser';
-$string['contactadmin'] = 'Kontakta administratören för att aktivera den.';
+$string['contactadmin'] = 'Kontakta administratören för att aktivera det.';
 $string['core'] = 'System';
 $string['currentsubscriptions'] = 'Nuvarande bevakningar';
 $string['defaultmessagetemplate'] = 'Regel: {rulename}<br />Beskrivning: {description}<br />Händelse: {eventname}';
@@ -62,7 +62,7 @@ $string['managerules'] = 'Övervakningsregler';
 $string['manageruleslink'] = 'Du kan hantera regler på sidan för {$a}.';
 $string['managesubscriptions'] = 'Händelseövervakning';
 $string['managesubscriptionslink'] = 'Du kan skapa bevakningar på {$a}-sidan.';
-$string['messageprovider:notification'] = 'Notiser för bevakningar';
+$string['messageprovider:notification'] = 'Notiser om regelbevakningar';
 $string['messagetemplate'] = 'Notis';
 $string['messagetemplate_help'] = 'En notis skickas till prenumeranter när tröskelvärdet för antal notiser har uppnåtts.
 Det kan omfatta någon eller alla av följande platshållare:

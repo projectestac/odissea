@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['description'] = 'إختر قالباً لاستعراض ما سيبدو عليه، ثم أنقر إدراج';
 $string['dialogtitle'] = 'إدراج محتوى القالب المعرف سابقاً';
 $string['pluginname'] = 'القوالب';
-$string['privacy:metadata'] = 'إن ملحق atto_templates لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_templates لا تخزن أي بيانات شخصية.';
 $string['selectatemplate'] = 'إختر القالب...';
 $string['settings'] = 'إعدادات القالب';
 $string['template'] = 'متن القالب {$a}';

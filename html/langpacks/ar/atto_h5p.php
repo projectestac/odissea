@@ -44,4 +44,4 @@ $string['invalidh5purl'] = 'رابط غير صحيح';
 $string['noh5pcontent'] = 'لم تتم إضافة محتوى H5P';
 $string['or'] = 'أو';
 $string['pluginname'] = 'إدراج H5P';
-$string['privacy:metadata'] = 'إن ملحق atto_h5p لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_h5p لا تخزن أي بيانات شخصية.';

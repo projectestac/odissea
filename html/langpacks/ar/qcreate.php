@@ -33,6 +33,7 @@ $string['eventeditpageviewed'] = 'صفحة تحرير إنشاء السؤال ت
 $string['eventoverviewviewed'] = 'نظرة عامة على إنشاء السؤال تمت معاينتها';
 $string['eventquestiongraded'] = 'سؤال تم منح علامته';
 $string['eventquestionregraded'] = 'سؤال تمت إعادة منح علامته';
+$string['exportnaming'] = 'إسبق أسماء الأسئلة المصدرة بـ';
 $string['pagesize'] = 'عدد الأسئلة المعروضة لكل صفحة';
 $string['qcreateeventcloses'] = '{$a} يُغلق';
 $string['qcreateeventopens'] = '{$a} يُفتح';

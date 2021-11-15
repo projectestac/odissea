@@ -58,6 +58,7 @@ $string['migratingcourses'] = 'Migrando cursos';
 $string['missingmappings'] = 'Mapeos faltantes';
 $string['performmigration'] = 'Ejecutar la migración';
 $string['pluginname'] = 'Herramienta de migración de competencias';
+$string['privacy:metadata'] = 'El complemento de la herramienta de migración de competencias no almacena ningún dato personal.';
 $string['results'] = 'Resultados';
 $string['startdatefrom'] = 'Fecha de inicio desde';
 $string['unmappedin'] = 'Sin mapeo en {$a}';

@@ -77,6 +77,7 @@ $string['getmoodleonyourmobile'] = 'Скачать мобильное прило
 $string['h5poffline'] = 'Просмотр контента H5P в автономном режиме';
 $string['httpsrequired'] = 'Требуется HTTPS';
 $string['insecurealgorithmwarning'] = 'Похоже, HTTPS-сертификат использует небезопасный алгоритм подписи (SHA-1). Попробуйте обновить сертификат.';
+$string['invalidcertificatechainwarning'] = 'Кажется, что последовательность сертификатов недействительна.';
 $string['invalidcertificateexpiredatewarning'] = 'Похоже, что  истек срок действия сертификата HTTPS для сайта.';
 $string['invalidcertificatestartdatewarning'] = 'Похоже, сертификат HTTPS для сайта еще недействителен (с датой начала в будущем).';
 $string['invalidprivatetoken'] = 'Неверный закрытый ключ. Ключ не должен быть пустым или передаваться при помощи параметра GET.';

@@ -43,15 +43,15 @@ $block_size = get_block_size();
 // Update table with categories information
 $categories = $DB->get_records('course_categories', [], 'depth, id', 'id');
 foreach ($categories as $cat_id => $record) {
-    $context = \context_coursecat::instance($cat_id);
-    insert_or_update_coursequotas_size($context, CATEGORYSIZE_TABLENAME, CATEGORYSIZE_FIELDCATEGORYID, CATEGORYSIZE_FIELDQUOTA, $cat_id, $block_size);
+    $coursecat_context = \context_coursecat::instance($cat_id);
+    insert_or_update_coursequotas_size($coursecat_context, CATEGORYSIZE_TABLENAME, CATEGORYSIZE_FIELDCATEGORYID, CATEGORYSIZE_FIELDQUOTA, $cat_id, $block_size);
 }
 
 // Update table with courses information
 $courses = $DB->get_records('course', null, '', 'id');
 foreach ($courses as $course_id => $course) {
     $course_context = \context_course::instance($course_id);
-    insert_or_update_coursequotas_size($context, COURSESIZE_TABLENAME, COURSESIZE_FIELDCOURSEID, COURSESIZE_FIELDQUOTA, $course_id, $block_size);
+    insert_or_update_coursequotas_size($course_context, COURSESIZE_TABLENAME, COURSESIZE_FIELDCOURSEID, COURSESIZE_FIELDQUOTA, $course_id, $block_size);
 }
 
 // Update chart information

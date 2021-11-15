@@ -29,5 +29,5 @@ $string['configplugin'] = 'Configurar repositório "Ficheiros privados de utiliz
 $string['emptyfilelist'] = 'O repositório está vazio';
 $string['pluginname'] = 'Ficheiros privados ';
 $string['pluginname_help'] = 'Ficheiros na área privada do utilizador';
-$string['privacy:metadata'] = 'O módulo Ficheiros privados não armazena ou transmite dados pessoais.';
+$string['privacy:metadata'] = 'O módulo repositório Ficheiros privados não armazena ou transmite quaisquer dados pessoais.';
 $string['user:view'] = 'Ver ficheiros privados de utilizador';

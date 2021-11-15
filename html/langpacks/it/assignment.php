@@ -42,6 +42,7 @@ $string['page-mod-assignment-view'] = 'Pagina principale del modulo compito';
 $string['page-mod-assignment-x'] = 'Qualsiasi pagina principale del modulo compito';
 $string['pluginadministration'] = 'Gestione Compito 2.2 (Disabilitato)';
 $string['pluginname'] = 'Compito 2.2 (Disabilitato)';
+$string['privacy:markedsubmissionspath'] = 'Consegne contrassegnate';
 $string['privacy:metadata:assignment_submissions'] = 'Consegne associate a un compito.';
 $string['privacy:metadata:assignment_submissions:data1'] = 'Testo online consegnato per il compito.';
 $string['privacy:metadata:assignment_submissions:data2'] = 'Stato della consegna.';

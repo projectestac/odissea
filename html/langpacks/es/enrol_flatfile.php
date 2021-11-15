@@ -26,12 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['encoding'] = 'Codificación de archivos';
-$string['expiredaction'] = 'Acción cuando caduca la matriculación';
+$string['expiredaction'] = 'Acción cuando caduca la matrícula';
 $string['expiredaction_help'] = 'Seleccione la acción a realizar cuando finalice el periodo de matriculación del usuario. Por favor, tenga en cuenta que algunos datos de usuario y de configuración se eliminan del curso durante el proceso de baja.';
 $string['filelockedmail'] = 'El fichero de texto empleado en matriculaciones basadas en archivo ({$a}) no puede ser eliminado por el proceso de \'cron\'. Esto generalmente significa que los permisos son erróneos. Por favor, corrija los permisos para que Moodle puede eliminar el archivo, de lo contrario, podría ser procesado en varias ocasiones.';
 $string['filelockedmailsubject'] = 'Error importante: Archivo de matriculación';
 $string['flatfile:manage'] = 'Gestionar manualmente la matriculación de usuario';
 $string['flatfile:unenrol'] = 'Dar de baja usuarios del curso manualmente';
+$string['flatfileenrolments'] = 'Inscripciones de archivos planos (CSV)';
 $string['flatfilesync'] = 'Sincronización de fichero plano de matrículas';
 $string['location'] = 'Ubicación del archivo';
 $string['location_desc'] = 'Especifique la ruta completa al archivo de matriculaciones. El archivo se borra automáticamente después del proceso.';
@@ -63,3 +64,11 @@ Será similar algo así:
    del, student, 17, CF101
    add, student, 21, CF101, 1091115000, 1091215000
 </pre>';
+$string['privacy:metadata:enrol_flatfile'] = 'El complemento de inscripción de archivos planos (CSV) puede almacenar datos personales relacionados con inscripciones futuras en la tabla enrol_flatfile.';
+$string['privacy:metadata:enrol_flatfile:action'] = 'La acción de inscripción esperada en la fecha indicada.';
+$string['privacy:metadata:enrol_flatfile:courseid'] = 'El ID del curso con el que está asociada la matrícula';
+$string['privacy:metadata:enrol_flatfile:roleid'] = 'El ID del rol para asignar o desasignar';
+$string['privacy:metadata:enrol_flatfile:timeend'] = 'El momento en el que finaliza la matrícula';
+$string['privacy:metadata:enrol_flatfile:timemodified'] = 'El momento en el que la matrícula es modificada';
+$string['privacy:metadata:enrol_flatfile:timestart'] = 'El momento en el que empieza la matrícula';
+$string['privacy:metadata:enrol_flatfile:userid'] = 'El ID del usuario asociado a la asignación de rol';

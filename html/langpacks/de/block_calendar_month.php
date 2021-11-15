@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['calendar_month:addinstance'] = 'Neuen Block \'Kalender\' hinzufügen';
-$string['calendar_month:myaddinstance'] = 'Neuen Block \'Kalender\' zum Dashboard hinzufügen';
+$string['calendar_month:myaddinstance'] = 'Neuen Block \'Kalender\' im Dashboard hinzufügen';
 $string['pluginname'] = 'Kalender';
 $string['privacy:metadata'] = 'Der Block Kalender zeigt nur Daten an, die an anderen Orten gespeichert sind.';

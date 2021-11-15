@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Deshacer/Rehacer';
-$string['privacy:metadata'] = 'El plugin atto_undo no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_undo no almacena ningún dato personal.';
 $string['redo'] = 'Rehacer';
 $string['undo'] = 'Deshacer';

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Evitar auto-enlaces';
-$string['privacy:metadata'] = 'El plugin atto_noautolink no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_noautolink no almacena ningún dato personal.';

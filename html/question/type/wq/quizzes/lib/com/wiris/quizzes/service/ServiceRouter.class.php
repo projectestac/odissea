@@ -37,7 +37,7 @@ class com_wiris_quizzes_service_ServiceRouter {
 		$res->close();
 	}
 	public function service($request, $res) {
-		$accessProvider = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getAccessProvider();
+		$accessProvider = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getAccessProvider();
 		if($accessProvider !== null) {
 			if($accessProvider->isEnabled()) {
 				if(!$accessProvider->requireAccess()) {
@@ -67,7 +67,7 @@ class com_wiris_quizzes_service_ServiceRouter {
 					$b = haxe_io_Bytes::ofData($s->readBinary());
 				}
 			} else {
-				$cache = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getImagesCache();
+				$cache = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getImagesCache();
 				$b = $cache->get($name);
 			}
 			if($b !== null) {
@@ -137,9 +137,12 @@ class com_wiris_quizzes_service_ServiceRouter {
 								}
 							}
 						}
+						if(StringTools::endsWith($service, "base64")) {
+							$http->setHeader("Accept", "text/plain");
+						}
 					}
 				}
-				$http->setHeader("Referer", com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$REFERER_URL));
+				$http->setHeader("Referer", com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$REFERER_URL));
 				$http->setHeader("Accept-Charset", "utf-8");
 				if($post) {
 					$http->setHeader("Content-Type", $mime . ";charset=utf-8");
@@ -184,6 +187,8 @@ class com_wiris_quizzes_service_ServiceRouter {
 	public function getMimes() {
 		$mimes = new Hash();
 		$mimes->set("render", "image/png");
+		$mimes->set("plot.png", "image/png");
+		$mimes->set("plot.png.base64", "text/plain");
 		$mimes->set("quizzes", "application/xml");
 		$mimes->set("grammar", "text/plain");
 		$mimes->set("wirislauncher", "application/json");
@@ -191,13 +196,15 @@ class com_wiris_quizzes_service_ServiceRouter {
 		return $mimes;
 	}
 	public function getRouter() {
-		$cfg = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
+		$cfg = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration();
 		$router = new Hash();
 		$router->set("render", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$EDITOR_URL) . "/render");
 		$router->set("quizzes", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL) . "/rest");
 		$router->set("grammar", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL) . "/grammar");
 		$router->set("wirislauncher", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$WIRISLAUNCHER_URL));
 		$router->set("mathml2accessible", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$EDITOR_URL) . "/mathml2accessible");
+		$router->set("plot.png", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$GRAPH_URL) . "/plot.png");
+		$router->set("plot.png.base64", $cfg->get(com_wiris_quizzes_api_ConfigurationKeys::$GRAPH_URL) . "/plot.png");
 		return $router;
 	}
 	static $router = null;

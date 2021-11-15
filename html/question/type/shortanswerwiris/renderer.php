@@ -70,9 +70,15 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer {
                     $question->get_validation_error(array('answer' => $currentanswer)), array('class' => 'validationerror'));
         }
 
-        // Auxiliar text
-        $show_auxiliar_text_input = $qa->get_question()->wirisquestion->question->getProperty(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_AUXILIAR_TEXT_INPUT);
-        if ($show_auxiliar_text_input) {
+        // Auxiliar text.
+        $slots = $qa->get_question()->wirisquestion->question->getSlots();
+        if (isset($slots[0])) {
+            $showauxiliartextinput = $slots[0]->getProperty(com_wiris_quizzes_api_PropertyName::$SHOW_AUXILIARY_TEXT_INPUT); // @codingStandardsIgnoreLine
+        } else {
+            $showauxiliartextinput = $qa->get_question()->wirisquestion->question->getProperty(com_wiris_quizzes_api_PropertyName::$SHOW_AUXILIARY_TEXT_INPUT); // @codingStandardsIgnoreLine
+        }
+
+        if ($showauxiliartextinput == "true") {
             $result .= $this->auxiliar_text($qa, $options);
         }
 
@@ -90,7 +96,11 @@ class qtype_shortanswerwiris_renderer extends qtype_wq_renderer {
         if (!$answer) {
             return '';
         }
-        $text = get_string('correctansweris', 'qtype_shortanswer', $answer['answer']);
+        $wrap = com_wiris_system_CallWrapper::getInstance();
+        $wrap->start();
+        $filterableanswer = com_wiris_quizzes_impl_QuizzesImpl::getInstance()->answerToFilterableValue($answer['answer']);
+        $wrap->stop();
+        $text = get_string('correctansweris', 'qtype_shortanswer', $filterableanswer);
         return $question->format_text($text, FORMAT_HTML, $qa, 'question', 'correctanswer', $question->id);
     }
 

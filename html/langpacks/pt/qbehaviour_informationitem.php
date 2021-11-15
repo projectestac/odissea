@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Comportamento para itens informativos';
-$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Itens de informação não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Comportamento das perguntas Itens de informação não armazena quaisquer dados pessoais.';
 $string['seen'] = 'Visto';

@@ -102,6 +102,7 @@ $string['issuerusein_help'] = 'Службы OAuth 2 могут использо�
 $string['issueruseineverywhere'] = 'Страница входа и внутренние службы';
 $string['issueruseininternalonly'] = 'Только внутренние службы';
 $string['issueruseinloginonly'] = 'Только страница входа';
+$string['linkedin_service'] = 'LinkedIn';
 $string['logindisplay'] = 'Отображать на странице входа как';
 $string['loginissuer'] = 'Вход разрешен';
 $string['microsoft_service'] = 'Microsoft';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Animación Flash';
 $string['pluginname_help'] = 'Archivos con extensión *. swf. Por razones de seguridad este filtro sólo se utiliza en los textos de confianza.';
+$string['privacy:metadata'] = 'El complemento de medios de animación Flash no almacena ningún dato personal.';

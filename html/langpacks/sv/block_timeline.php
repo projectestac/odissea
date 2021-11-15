@@ -50,5 +50,5 @@ $string['privacy:metadata:timelinesortpreference'] = 'Användarens inställning 
 $string['sortbycourses'] = 'Sortera efter kurser';
 $string['sortbydates'] = 'Sortera efter datum';
 $string['timeline'] = 'Tidslinje';
-$string['timeline:myaddinstance'] = 'Lägg till nytt block Tidslinje på Mitt Moodle';
+$string['timeline:myaddinstance'] = 'Lägg till nytt block Tidslinje till översiktssidan';
 $string['viewcourse'] = 'Visa kurser';

@@ -26,7 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Configure el repositorio de OneDrive for Business';
-$string['courses'] = 'Cursos';
 $string['erroraccessdenied'] = 'Acceso denegado';
 $string['errorauthoidcnotconfig'] = 'Azure AD SSO no está configurado';
 $string['errorbadclienttype'] = 'Tipo de cliente inválido.';

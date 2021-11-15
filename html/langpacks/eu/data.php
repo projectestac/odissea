@@ -64,7 +64,7 @@ $string['cannotadd'] = 'Ezin duzu sarrerarik gehitu!';
 $string['cannotdeletepreset'] = 'Errorea aurretiko ezarpena ezabatzean!';
 $string['cannotoverwritepreset'] = 'Errorea aurretiko ezarpenak gainidaztean';
 $string['cannotunziptopreset'] = 'Ezin izan da aurretiko ezarpenen direktoriora deskonprimatu';
-$string['checkbox'] = 'Aukera anitzeko laukitxoa';
+$string['checkbox'] = 'Aukera anizkoitzeko laukitxoa';
 $string['chooseexportfields'] = 'Aukeratu esportatu nahi duzun eremua';
 $string['chooseexportformat'] = 'Aukeratu zein formatutan esportatu nahi duzun hona';
 $string['chooseorupload'] = 'Aukeratu fitxategia';
@@ -202,7 +202,7 @@ $string['headeraddtemplate'] = 'Sarrerak sartu edo editatzeko itxura definitzen 
 $string['headerasearchtemplate'] = 'Bilaketa aurreraturako interfazea definitzen du';
 $string['headercsstemplate'] = 'Beste txantiloietarako CSS estiloak definitzen ditu';
 $string['headerjstemplate'] = 'Javascript pertsonalizatua definitzen du elementuak erakusteko modua eraldatzeko Zerrenda-txantiloian, Banakako txantiloian eta Gehitu txantiloian';
-$string['headerlisttemplate'] = 'Sarrera anitzeko nabigazio-itxura definitzen du';
+$string['headerlisttemplate'] = 'Sarrera anizkoitzeko nabigazio-itxura definitzen du';
 $string['headerrsstemplate'] = 'RSS jarioen sarreren itxura definitzen du';
 $string['headersingletemplate'] = 'Sarrera baterako nabigazio-itxura definitzen du';
 $string['importentries'] = 'Inportatu sarrerak';
@@ -245,9 +245,9 @@ $string['manageapproved_help'] = 'Desgaituz gero, aurrerantzean onartutako sarre
 $string['mapexistingfield'] = 'Lotu {$a}(e)ra';
 $string['mapnewfield'] = 'Sortu beste eremu bat';
 $string['mappingwarning'] = 'Eremu berrira lotu gabeko eremu zahar guztiak galdu egingo dira eta eremu horietako datuak ezabatu egingo dira.';
-$string['maxentries'] = 'Gehienezko sarrera-kopurua';
-$string['maxentries_help'] = 'Jarduera honetan ikasle bakoitzak bidal dezakeen gehienezko sarrera-kopurua.';
-$string['maxsize'] = 'Gehienezko tamaina';
+$string['maxentries'] = 'Gehieneko sarrera-kopurua';
+$string['maxentries_help'] = 'Jarduera honetan ikasle bakoitzak bidal dezakeen gehieneko sarrera-kopurua.';
+$string['maxsize'] = 'Gehieneko tamaina';
 $string['menu'] = 'Menua';
 $string['menuchoose'] = 'Aukeratu...';
 $string['missingdata'] = 'Datu-IDa edo objektua eman behar diozu eremua motari';
@@ -261,7 +261,7 @@ Datu-baserako esteka automatikoak egiteko iragazkia piztuta badago, datu-basean 
 
 Irakasleek sarreretan iruzkinak egitea ahalbide dezake. Irakasleek sarrerak kalifika ditzakete, baita ikasleek ere (parekoen arteko ebaluazioa). Ebaluazioak batu daitezke behin-betiko ebaluazioa lortzeko, eta azken hau izango da kalifikazio-liburuan gordeko dena.
 
-Datu-base jarduerak erabilera anitzak izan ditzake, hala nola
+Datu-base jarduerak erabilera anitz izan ditzake, hala nola
 
 * Elkarlanean egindako bildumak sortzeko (web-estekak, liburuak, liburu-kritikak, aldizkari-erreferentziak,...)
 * Ikasleek sortutako edukiak erakusteko (argazkiak, posterrak, web-guneak, olerkiak,...) eta beren iruzkinak eta kritikak jasotzeko.';
@@ -270,11 +270,11 @@ $string['more'] = 'Gehiago';
 $string['moreurl'] = 'URL gehiago';
 $string['movezipfailed'] = 'Ezin da zip-a mugitu';
 $string['multientry'] = 'Sarrera bikoiztua';
-$string['multimenu'] = 'Menu (aukera anitza)';
+$string['multimenu'] = 'Menu (aukera anizkoitza)';
 $string['multipletags'] = 'Etiketa asko aurkitu dira! Txantiloia ez da gorde';
 $string['newentry'] = 'Sarrera berria';
 $string['newfield'] = 'Sortu beste eremu bat';
-$string['newfield_help'] = 'Eremu batek datuak sartzea ahalbidetzen du. Datu-base jarduerako sarrera bakoitzak mota askotako eremu anitz izan dezake hala nola data-eremuak, erabiltzaileari eguna, hilabetea eta urtea zerrenda batetik aukeratzen uzten diona, irudi-eremua, erabiltzaileari irudi bat igotzeko aukera ematen diona, edo aukera-anitzeko eremuak, erabiltzaileari aukera bat edo gehiago hautatzea ahalbidetzen duena.
+$string['newfield_help'] = 'Eremu batek datuak sartzea ahalbidetzen du. Datu-base jarduerako sarrera bakoitzak mota askotako eremu anitz izan dezake hala nola data-eremuak, erabiltzaileari eguna, hilabetea eta urtea zerrenda batetik aukeratzen uzten diona, irudi-eremua, erabiltzaileari irudi bat igotzeko aukera ematen diona, edo aukera-anizkoitzeko eremuak, erabiltzaileari aukera bat edo gehiago hautatzea ahalbidetzen duena.
 
 Eremu bakoitzaren eremu-izena bakarra izan behar du. Eremuaren deskribapena aukerazkoa da.';
 $string['noaccess'] = 'Ez duzu orri honetara sarbiderik';
@@ -283,7 +283,7 @@ $string['nofieldcontent'] = 'Ez da eremuaren edukia aurkitu';
 $string['nofieldindatabase'] = 'Datu-base honetarako eremurik ez da definitu';
 $string['nolisttemplate'] = 'Oraindik ez da zerrenda-txantiloia zehaztu';
 $string['nomatch'] = 'Ez da aurkitu bat datorren sarrerarik!';
-$string['nomaximum'] = 'Gehienezkorik ez';
+$string['nomaximum'] = 'Gehienekorik ez';
 $string['norecords'] = 'Datu-basean sarrerarik ez';
 $string['nosingletemplate'] = 'Banakako txantiloia ez da oraindik zehaztu';
 $string['notapproved'] = 'Sarrera ez da oraindik onartu';

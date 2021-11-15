@@ -33,4 +33,4 @@ $string['pluginname_link'] = 'pergunta/tipo/calculadamulti';
 $string['pluginnameadding'] = 'A adicionar pergunta de Escolha múltipla com variáveis';
 $string['pluginnameediting'] = 'A editar pergunta de escolha múltipla com variáveis';
 $string['pluginnamesummary'] = 'As perguntas de escolha múltipla com variáveis são idênticas às de escolha múltipla, mas as opções de resposta podem incluir fórmulas cujas variáveis são substituídas aleatoriamente por valores de um conjunto de dados a cada nova tentativa.';
-$string['privacy:metadata'] = 'O módulo Pergunta do tipo escolha múltipla com variáveis não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Pergunta do tipo Escolha múltipla com variáveis não armazena quaisquer dados pessoais.';

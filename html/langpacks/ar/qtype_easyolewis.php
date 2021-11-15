@@ -31,6 +31,7 @@ $string['answermustbegiven'] = 'ينبغي عليك إعطاء الإجابة إ
 $string['answerno'] = 'الإجابة {$a}';
 $string['correctansweris'] = 'الإجابة الصحيحة هي: {$a}.';
 $string['correctanswers'] = 'التعليمات';
+$string['javaneeded'] = 'لاستعمال هذه الصفحة، تحتاج إلى مستعرض تم فيه تمكين Java. قم بتنزيل آخر إصدار من ملحق Java من {$a}.';
 $string['notenoughanswers'] = 'هذا النوع من الأسئلة يتطلب {$a} من الإجابات على الأقل';
 $string['pleaseenterananswer'] = 'يرجى إدخال الإجابة.';
 $string['youranswer'] = 'إجابتك: {$a}';

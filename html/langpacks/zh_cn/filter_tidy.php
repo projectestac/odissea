@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = '整洁的HTML';
+$string['privacy:metadata'] = 'HTML tidy插件不存储任何个人数据。';

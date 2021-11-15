@@ -47,6 +47,7 @@ $string['filloutoneanswer'] = '<b><ul>
 <li>أعط للإجابة علامة.</li>
 <li>يمكنك وضع الإجابات الخاطئة والإفادة في الحقول الإضافية.</li>
 </ul></b>';
+$string['javaneeded'] = 'لاستعمال هذه الصفحة، تحتاج إلى مستعرض تم فيه تمكين Java. قم بتنزيل آخر إصدار من ملحق Java من {$a}.';
 $string['notenoughanswers'] = 'هذا النوع من الأسئلة يتطلب {$a} من الإجابات على الأقل';
 $string['pleaseenterananswer'] = 'يرجى إدخال الإجابة.';
 $string['youranswer'] = 'إجابتك: {$a}';

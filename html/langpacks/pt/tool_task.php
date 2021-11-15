@@ -82,7 +82,7 @@ $string['taskscheduleday_help'] = 'Campo “Dia” para agendamento de tarefa. O
 * <strong>*</strong> - Todos os dias
 * <strong>*/2</strong> - No segundo dia de todos os meses
 * <strong>1</strong> - No primeiro dia de todos os meses
-* <strong>1,15</strong> - No 1º e 15º dia de todos os meses';
+* <strong>1,15</strong> - No 1.º e 15.º dia de todos os meses';
 $string['taskscheduledayofweek'] = 'Dia da semana';
 $string['taskscheduledayofweek_help'] = 'Campo “Dia da semana” para agendamento de tarefa. O campo usa o mesmo formato que o cron Unix. Alguns exemplos:
 

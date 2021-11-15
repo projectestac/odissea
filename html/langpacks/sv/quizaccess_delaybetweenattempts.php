@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Åtkomstregel för fördröjning mellan testförsöken';
-$string['privacy:metadata'] = 'Pluginmodulen Fördröjning mellan försök-åtkomstregel för Test lagrar inga personuppgifter.';
-$string['youcannotwait'] = 'Det här testet stängs innan du tillåts att påbörja ett nytt försök.';
-$string['youmustwait'] = 'Du måste vänta innan du gör om det här testet. Du tillåts påbörja ett nytt försök efter {$a}';
+$string['pluginname'] = 'Åtkomstregel för fördröjning mellan försök';
+$string['privacy:metadata'] = 'Pluginmodulen Fördröjning mellan försök-åtkomstregel för kunskapstest lagrar inga personuppgifter.';
+$string['youcannotwait'] = 'Det här kunskapstestet stängs innan du tillåts att påbörja ett nytt försök.';
+$string['youmustwait'] = 'Du måste vänta innan du gör om det här kunskapstestet. Du tillåts påbörja ett nytt försök efter {$a}';

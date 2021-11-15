@@ -28,6 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['CASform'] = 'Opción de identificación';
 $string['accesCAS'] = 'Usuarios CAS';
 $string['accesNOCAS'] = 'Otros usuarios';
+$string['auth_cas_auth_logo'] = 'Logotipo del método de autenticación';
+$string['auth_cas_auth_logo_description'] = 'Proporcione un logotipo para el método de autenticación CAS que sea reconocible para sus usuarios.';
+$string['auth_cas_auth_name'] = 'Nombre del método de autenticación';
+$string['auth_cas_auth_name_description'] = 'Proporcione un nombre para el método de autenticación CAS que sea reconocible para sus usuarios.';
+$string['auth_cas_auth_service'] = 'CAS';
 $string['auth_cas_auth_user_create'] = 'Crear usuarios en fuente externa';
 $string['auth_cas_baseuri'] = 'URI del servidor (en blanco si no hay baseUri)<br />Por ejemplo, si el servidor CAS responde a host.domaine.fr/CAS/ entonces<br />cas_baseuri = CAS/';
 $string['auth_cas_baseuri_key'] = 'URI Base';
@@ -76,4 +81,5 @@ $string['auth_casdescription'] = 'Este método utiliza un servidor CAS (Central 
 $string['auth_casnotinstalled'] = 'No se puede usar la identificación CAS. El módulo PHP LDAP no está instalado.';
 $string['noldapserver'] = 'No hay ningún servidor LDAP configurado para CAS! Sincronización deshabilitada.';
 $string['pluginname'] = 'Usar un servidor CAS (SSO)';
+$string['privacy:metadata'] = 'El complemento de autenticación del servidor CAS (SSO) no almacena ningún dato personal.';
 $string['synctask'] = 'Trabajo de sincronización de usuarios de CAS';

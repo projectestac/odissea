@@ -28,6 +28,11 @@ defined('MOODLE_INTERNAL') || die();
 $string['bufferwrites'] = 'Escritura de búfer';
 $string['bufferwrites_help'] = 'Habilita o deshabilita un periférico de Entrada/Salida (E/S). Habilitar E/S obliga a los comandos de almacenamiento a "cargar" en lugar de ser enviados. Cualquier acción que recupere información causa que esta carga se envíe a una conexión remota. Cerrar o terminar la conexión también hará que los datos cargados se envíen a una conexión remota.';
 $string['clustered'] = 'Habilitar servidores agrupados';
+$string['clustered_help'] = 'Esto se utiliza para permitir la funcionalidad de lectura uno, conjunto múltiple.
+
+El caso de uso previsto es crear una tienda mejorada para configuraciones con equilibrio de carga. La tienda buscará de un servidor (generalmente localhost), pero se configurará en muchos (todos los servidores en el grupo de equilibrio de carga). Para cachés con relaciones muy altas de lectura a configuración, esto ahorra una cantidad significativa de sobrecarga de red.
+
+Cuando esta configuración está habilitada, el servidor mencionado anteriormente se utilizará para la recuperación.';
 $string['clusteredheader'] = 'Separar servidores';
 $string['hash'] = 'Método hash';
 $string['hash_crc'] = 'CRC';
@@ -41,10 +46,18 @@ $string['hash_hsieh'] = 'Hsieh';
 $string['hash_md5'] = 'MD5';
 $string['hash_murmur'] = 'Murmur';
 $string['isshared'] = 'Caché compartida';
+$string['isshared_help'] = '¿Su servidor memcached también está siendo utilizado por otras aplicaciones?
+
+Si la caché es compartida por otras aplicaciones, entonces cada clave se eliminará individualmente para garantizar que solo se eliminen los datos que pertenecen a esta aplicación (dejando los datos de la caché de la aplicación externa sin cambios). Esto puede provocar una reducción en el rendimiento al purgar la caché, dependiendo de la configuración de su servidor.
+
+Si está ejecutando una caché dedicada para esta aplicación, entonces la caché completa se puede vaciar de forma segura sin riesgo de destruir los datos de la caché de otra aplicación. Esto debería resultar en un mayor rendimiento al purgar la caché.';
 $string['pluginname'] = 'Memcached';
 $string['prefix'] = 'Clave de prefijo';
 $string['prefix_help'] = 'Esto se puede utilizar para crear un "dominio" para sus claves de posición, permitiendo crear múltiples sistemas de almacenaje memcached en una única instalación memcached. No debe contener más de 16 caracteres para evitar problemas de longitud de clave.';
 $string['prefixinvalid'] = 'Prefijo no válido. Sólo puede usar a-z A-Z 0-9-_.';
+$string['privacy:metadata:memcached'] = 'El complemento de almacenamiento en caché Memcached almacena datos brevemente como parte de su funcionalidad de almacenamiento en caché. Estos datos se almacenan en un servidor Memcache donde los datos se eliminan con regularidad.';
+$string['privacy:metadata:memcached:data'] = 'Los diferentes datos almacenados en la caché';
+$string['serialiser_igbinary'] = 'El serializador igbinary.';
 $string['serialiser_json'] = 'Serializador de JSON.';
 $string['serialiser_php'] = 'Serializador PHP predeterminado.';
 $string['servers'] = 'Servidores';
@@ -80,3 +93,6 @@ La versión de la extensión Memcached PHP que estás utilizando no proporciona 
 $string['usecompression'] = 'Usar compresión';
 $string['usecompression_help'] = 'Activa o desactiva la compresión. Cuando está activado, los elementos de más de un cierto umbral (actualmente 100 bytes) se comprimen durante el almacenamiento y se descomprime durante la recuperación de forma transparente.';
 $string['useserialiser'] = 'Usar serializador';
+$string['useserialiser_help'] = 'Especifica el serializador que se utilizará para serializar valores no escalares.
+Los serializadores válidos son Memcached::SERIALIZER_PHP o Memcached::SERIALIZER_IGBINARY.
+Este último es compatible solo cuando memcached está configurado con la opción --enable-memcached-igbinary y la extensión igbinary está cargada.';

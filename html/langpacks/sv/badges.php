@@ -40,7 +40,7 @@ $string['addcompetency_help'] = 'Välj de kompetenser som ska läggas till krave
 $string['addcourse'] = 'Lägg till kurser';
 $string['addcourse_help'] = 'Välj de kurser som ska läggas till kraven för att få detta märke. Håll ner CTRL-tangenten för att välja flera.';
 $string['addcriteria'] = 'Lägg till kriterier';
-$string['addcriteriatext'] = 'För att börja lägga till kriterier, vänligen välj ett av alternativen från rullgardinsmenyn.';
+$string['addcriteriatext'] = 'För att börja lägga till kriterier, vänligen välj ett av alternativen i listrutan.';
 $string['addedtobackpack'] = 'Märket lades till i ryggsäcken';
 $string['addrelated'] = 'Lägg till relaterat märke';
 $string['addtobackpack'] = 'Lägg till i ryggsäck';
@@ -136,14 +136,12 @@ $string['backpackimport_help'] = 'Efter lyckad anslutning av ryggsäck så kan m
 
 I detta område kan du välja samlingar av märken från din ryggsäck som du vill visa i din profil.';
 $string['backpackneedsupdate'] = 'Ryggsäcken som anslutits till denna profil stämmer inte överens med ryggsäcken på webbplatsen. Du behöver koppla ifrån och ansluta ryggsäcken på nytt.';
-$string['backpackprovider'] = 'Ryggsäcksleverantör';
+$string['backpackprovider'] = 'Ryggsäckstjänsteleverantör';
 $string['backpacksettings'] = 'Ryggsäcksinställningar';
 $string['backpackweburl'] = 'URL till ryggsäck';
 $string['badgedetails'] = 'Märkesdetaljer';
 $string['badgeimage'] = 'Bild';
-$string['badgeimage_help'] = 'Det här är en bild som kommer användas när det här märket utfärdas.
-
-För att lägga till en ny bild, bläddra och välj en bild (i JPG- eller PNG-format), klicka sedan på "Spara ändringar". Bilden kommer att beskäras till en fyrkant och skalas om för att matcha bildkraven för märken.';
+$string['badgeimage_help'] = 'Bilden ska vara minst 300 x 300 pixlar. Den visas som 300 x 300 pixlar på märkessidan och 100 x 100 pixlar på användarens profilsida.';
 $string['badgeprivacysetting'] = 'Sekretessinställningar för märke';
 $string['badgeprivacysetting_help'] = 'Märken som du tar kan visas på din profilsida. Den här inställningen tillåter dig att automatiskt ställa in synligheten på nyligen tagna märken.
 

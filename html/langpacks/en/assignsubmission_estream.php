@@ -41,4 +41,5 @@ $string['shortname'] = 'Video/Audio Submission';
 $string['upload'] = 'Upload a Video or Audio file';
 $string['upload_help'] = 'Click the Browse button, select a video or audio file to upload, then click Upload.<br />Once uploaded, the file will be available after having been processed by the system.  Please note that larger uploads require more processing time and may take some time to display on the system.<br />';
 $string['uploadfailed'] = 'Upload Failed<br /><br />Please refresh the page and try again';
-$string['uploadok'] = 'Uploaded OK<br /><br />Please click &apos;Save changes&apos; to save.';
+$string['uploadok'] = 'File Upload Complete<br /><br />WARNING: The Submission is NOT yet complete!<br /><br />To finish submission,
+please click &apos;Save changes&apos; below to save.';

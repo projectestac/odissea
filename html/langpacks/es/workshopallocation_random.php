@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Agregar autoevaluaciones';
 $string['allocationaddeddetail'] = 'Nueva evaluación a realizar: <strong>{$a->reviewername}</strong> es revisor de <strong>{$a->authorname}</strong>';
-$string['allocationdeallocategraded'] = 'Nueva evaluación a realizar: <strong>{$a->reviewername}</strong> es revisor de <strong>{$a->authorname}</strong>';
+$string['allocationdeallocategraded'] = 'No se pudo desasignar la evaluación ya calificada: revisor <strong>{$a->reviewername}</strong>, autor del envío <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Evaluación reutilizada: <strong>{$a->reviewername}</strong> mantenida como revisor de <strong>{$a->authorname}</strong>';
 $string['allocationsettings'] = 'Ajustes de asignación';
 $string['assessmentdeleteddetail'] = 'Evaluación desasignada: <strong>{$a->reviewername}</strong> ya no es revisor de <strong>{$a->authorname}</strong>';

@@ -45,6 +45,7 @@ $string['creategrouping'] = '创建大组';
 $string['creategroupinselectedgrouping'] = '在大组中创建小组';
 $string['createingrouping'] = '自动创建的小组的大组';
 $string['createorphangroup'] = '创建独立小组';
+$string['csvdelimiter'] = 'CSV分隔符';
 $string['databaseupgradegroups'] = '小组版本现在是 {$a}';
 $string['defaultgrouping'] = '默认大组';
 $string['defaultgroupingname'] = '大组';
@@ -61,6 +62,7 @@ $string['editgroupsettings'] = '编辑小组设置';
 $string['editusersgroupsa'] = '编辑小组"{$a}"';
 $string['enablemessaging'] = '小组消息';
 $string['enablemessaging_help'] = '如果启用，小组成员可以通过消息抽屉向小组中的其他成员发送消息。';
+$string['encoding'] = '编码';
 $string['enrolmentkey'] = '选课密钥';
 $string['enrolmentkey_help'] = '选课密钥可以使该课程的访问仅限于那些知道该密钥的人员。 如果指定了小组选课密钥，则输入该密钥不仅会使用户进入课程，而且还将自动使他们成为该小组的成员。
 

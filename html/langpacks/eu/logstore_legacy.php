@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['eventlegacylogged'] = 'Heredatutako ekitaldia erregistratu da';
 $string['loglegacy'] = 'Heredatutako datuak erregistratu';
 $string['loglegacy_help'] = 'Plugin honek datuak heredatutako erregistro-taulan (mdl_log) erregistratzen ditu. Funtzionalitate hau erregistro berriago, aberatsago eta efizienteago batekin ordezkatua izan da, eta beraz gehigarri hau taula zaharretik zuzenean txostenak ateratzen badituzu erabili beharko zenuke. Heredatutako erregistroan idazteak karga handitzen du, eta beraz ez baduzu behar desgaitzea gomendatzen da.';
-$string['pluginname'] = 'Heredatutako agerraldia';
+$string['pluginname'] = 'Heredatutako agerraldi-biltegia';
 $string['pluginname_desc'] = 'Ekitaldiak heredatutako agerraldien taulan gordetzen dituen agerraldi-erregistro plugin bat.';
 $string['privacy:metadata:log'] = 'Igarotako ekitaldien bilduma';
 $string['privacy:metadata:log:action'] = 'Ekintzaren deskribapena';

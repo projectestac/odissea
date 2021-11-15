@@ -54,6 +54,7 @@ $string['configserverip'] = 'L\'adreça IP numèrica corresponent al mateix ordi
 $string['configservermax'] = 'Nombre màxim de clients permesos';
 $string['configserverport'] = 'Número del port que pot utilitzar el dimoni';
 $string['coursetheme'] = 'Tema del curs';
+$string['crontask'] = 'Processament en segon pla del mòdul de xat';
 $string['currentchats'] = 'Sessions de xat actives';
 $string['currentusers'] = 'Usuaris actuals';
 $string['deletesession'] = 'Suprimeix aquesta sessió';

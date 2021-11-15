@@ -79,4 +79,4 @@ $string['auth_dbuser_key'] = 'Utilizador da base de dados';
 $string['auth_dbuserstoadd'] = 'Registos de utilizador a adicionar: {$a}';
 $string['auth_dbuserstoremove'] = 'Registos de utilizador a remover: {$a}';
 $string['pluginname'] = 'Base de dados externa';
-$string['privacy:metadata'] = 'O módulo de autenticação Base de dados externa não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo de autenticação Base de dados externa não armazena quaisquer dados pessoais.';

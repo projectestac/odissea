@@ -49,8 +49,8 @@ $string['indicator:socialbreadth'] = 'Gaitasun soziala karpetetan';
 $string['indicator:socialbreadth_help'] = 'Helburu hau ikasleak Karpeta motako baliabideetan lortutako zabalera sozialean oinarrituta dago.';
 $string['indicator:socialbreadthdef'] = 'Gaitasun soziala karpetetan';
 $string['indicator:socialbreadthdef_help'] = 'Partaide honek Karpeta baliabideak eskaintzen duen gaitasun sozialaren ehuneko hau lortu du analisi-tarte honetan (Mailak = Parte-hartzerik ez, bakarkako parte-hartzea)';
-$string['maxsizetodownload'] = 'Karpetak jaisteko gehienezko tamaina (MB)';
-$string['maxsizetodownload_help'] = 'Karpetak zip fitxategi moduan jaisteko gehienezko tamaina. 0 ezarriz gero, karpetaren tamainak ez du mugarik izango.';
+$string['maxsizetodownload'] = 'Karpetak jaisteko gehieneko tamaina (MB)';
+$string['maxsizetodownload_help'] = 'Karpetak zip fitxategi moduan jaisteko gehieneko tamaina. 0 ezarriz gero, karpetaren tamainak ez du mugarik izango.';
 $string['modulename'] = 'Karpeta';
 $string['modulename_help'] = 'Karpeta baliabideak irakasleak karpeta baten barruan erlazioa duten fitxategi-multzoak erakustea ahalbidetzen du, ikastaroko orriko scroll-a gutxituz. ZIP fitxategi batean konprimatutako karpeta bat igo eta erakusgai jartzeko deskonprimi daiteke.
 

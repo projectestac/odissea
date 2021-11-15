@@ -40,8 +40,8 @@ $string['cachedef_calendar_subscriptions'] = 'إشتراكات التقويم';
 $string['cachedef_capabilities'] = 'قائمة إمكانيات النظام';
 $string['cachedef_completion'] = 'حالة اكمال النشاط';
 $string['cachedef_config'] = 'إعدادات التهيئة';
-$string['cachedef_contentbank_context_extensions'] = 'الإمتدادات المسموح بها والملاحق الداعمة لها ضمن سياق بنك المحتوى';
-$string['cachedef_contentbank_enabled_extensions'] = 'الإمتدادات المسموح بها والملاحق الداعمة لها في بنك المحتوى';
+$string['cachedef_contentbank_context_extensions'] = 'الإمتدادات المسموح بها والإضافات الداعمة لها ضمن سياق بنك المحتوى';
+$string['cachedef_contentbank_enabled_extensions'] = 'الإمتدادات المسموح بها والإضافات الداعمة لها في بنك المحتوى';
 $string['cachedef_contextwithinsights'] = 'السياق مع الرؤى';
 $string['cachedef_course_image'] = 'صور المساق';
 $string['cachedef_course_user_dates'] = 'تواريخ المستخدم للمقررات المضبوطة على نمط التواريخ النسبية';
@@ -70,8 +70,8 @@ $string['cachedef_message_time_last_message_between_users'] = 'تم إنشاء �
 $string['cachedef_modelfirstanalyses'] = 'أول تحليل حسب النموذج وقابل للتحليل';
 $string['cachedef_navigation_expandcourse'] = 'مقررات التنقل القابلة للتوسيع';
 $string['cachedef_observers'] = 'مراقبوا الحدث';
-$string['cachedef_plugin_functions'] = 'خطوط رجوع الملاحق المتاحة';
-$string['cachedef_plugin_manager'] = 'مدير معلومات الملاحق';
+$string['cachedef_plugin_functions'] = 'خطوط رجوع الإضافات المتاحة';
+$string['cachedef_plugin_manager'] = 'مدير معلومات الإضافة';
 $string['cachedef_portfolio_add_button_portfolio_instances'] = 'مثيلات الحافظة لفئة portfolio_add_button';
 $string['cachedef_postprocessedcss'] = 'تأجيل معالجة CSS';
 $string['cachedef_presignup'] = 'بيانات التسجيل المسبق لمستخدم معين غير مسجل';

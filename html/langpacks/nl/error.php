@@ -366,6 +366,7 @@ $string['invalidoutcome'] = 'Ongeldig competentie-ID';
 $string['invalidpagesize'] = 'Ongeldige paginagrootte';
 $string['invalidpasswordpolicy'] = 'Ongeldig wachtwoordbeleid';
 $string['invalidpaymentmethod'] = 'Ongeldige betalingsmetode: {$a}';
+$string['invalidpersistenterror'] = 'Fout: {$a}';
 $string['invalidqueryparam'] = 'FOUT: Fout aantal queryparameters. Verwachte {$a->expected} en heb {$a->actual} gekregen';
 $string['invalidratingarea'] = 'Ongeldige beoordelingszone';
 $string['invalidrecord'] = 'Kan gegevensrecord niet vinden in databanktabel {$a}.';

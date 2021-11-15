@@ -44,7 +44,6 @@ $string['paymentcompleted'] = 'Il pagamento è stato accettato e ora puoi accede
 $string['paymentinstant'] = 'Utilizza il pulsante in basso per pagare e accedere all\'attività o alla risorsa.';
 $string['paymentpending'] = 'C\'è un pagamento in sospeso che devi effettuare.';
 $string['paymentrequired'] = 'Devi effettuare un pagamento tramite PayPal per accedere all\'attività o alla risorsa.';
-$string['paymentwaitreminder'] = 'Tieni presente che se hai già effettuato un pagamento di recente, dovrebbe essere in fase di elaborazione. Si prega di attendere qualche minuto e aggiornare questa pagina.';
 $string['paypalaccepted'] = 'Pagamenti PayPal accettati';
 $string['pluginname'] = 'PayPal';
 $string['sendpaymentbutton'] = 'Invia pagamento tramite PayPal';

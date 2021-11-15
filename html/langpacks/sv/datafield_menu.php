@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Fält för meny';
 $string['pluginname'] = 'Meny';
-$string['privacy:metadata'] = 'Fältkomponenten Meny lagrar ingen personlig information. Den använder tabeller definierade i mod_data.';
+$string['privacy:metadata'] = 'Fältkomponenten Meny lagrar ingen personinformation. Den använder tabeller definierade i mod_data.';

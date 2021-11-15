@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['confirmstart'] = 'El cuestionario tiene un tiempo límite de {$a}. Luego de iniciar, el tiempo empezará a contar y no podrá pausarse. Debe finalizarlo antes de que el tiempo termine. ¿Seguro que desea empezar ahora?';
 $string['confirmstartheader'] = 'Tiempo limite';
 $string['pluginname'] = 'Regla de acceso por tiempo límite';
+$string['privacy:metadata'] = 'El complemento de la regla de acceso al cuestionario de tiempo límite no almacena ningún dato personal.';
 $string['quiztimelimit'] = 'Límite de tiempo: {$a}';

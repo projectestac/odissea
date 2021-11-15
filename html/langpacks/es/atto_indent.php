@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['indent'] = 'Sangría';
 $string['outdent'] = 'Sangría inversa';
 $string['pluginname'] = 'Sangría';
-$string['privacy:metadata'] = 'El plugin atto_indent no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_indent no almacena ningún dato personal.';

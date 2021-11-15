@@ -603,7 +603,7 @@ $string['emailagain'] = '이메일 (다시)';
 $string['emailalreadysent'] = '암호 재설정 이메일이 이미 보내어졌습니다. 이메일을 확인하십시요.';
 $string['emailcharset'] = '이메일 문자셋';
 $string['emailconfirm'] = '계정 확인';
-$string['emailconfirmation'] = '안녕하세요 {$a->firstname},
+$string['emailconfirmation'] = '안녕하세요,
 
 \'{$a->sitename}\'의 이메일 주소를 통해서 새로운 계정이 요청되었습니다.
 새로운 계정을 사용하시려면 아래의 웹 주소로 가세요.

@@ -48,6 +48,7 @@ $string['notification'] = 'Notificació';
 $string['or'] = 'o';
 $string['recording'] = 'Gravant';
 $string['recordings'] = 'Enregistraments';
+$string['repeatevery'] = 'Repeteix-ho cada';
 $string['show'] = 'Mostra';
 $string['today'] = 'Avui';
 $string['visible'] = 'Visible';

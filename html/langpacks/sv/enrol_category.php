@@ -30,4 +30,4 @@ $string['category:synchronised'] = 'Rolltilldelningar synkroniserade med kursreg
 $string['enrolcategorysynctask'] = 'Synkronisera kursregistreringar via kategori';
 $string['pluginname'] = 'Kategoriregistreringar';
 $string['pluginname_desc'] = 'Pluginmodulen Kategoriregistrering synkroniserar eventuella rolltilldelningar i kategorikontexten för roller med funktionsbehörigheten <code> enrol/category:synchronised</code>.';
-$string['privacy:metadata'] = 'Pluginmodulen Kategoriregistrering lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Kategoriregistrering lagrar ingen personinformation.';

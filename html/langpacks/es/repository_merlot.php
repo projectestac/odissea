@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Configuración de Merlot.org';
-$string['licensekey'] = 'Clave de Licencia';
+$string['licensekey'] = 'Clave de licencia';
 $string['merlot:view'] = 'Ver repositorio Merlot';
 $string['pluginname'] = 'Merlot.org';
 $string['pluginname_help'] = 'Merlot.org';
+$string['privacy:metadata:repository_merlot'] = 'El complemento del repositorio de Merlot.org no almacena ningún dato personal, pero transmite datos de usuario desde Moodle al sistema remoto.';
+$string['privacy:metadata:repository_merlot:author'] = 'El autor del contenido del repositorio de Merlot.org.';
+$string['privacy:metadata:repository_merlot:keywords'] = 'La consulta de texto de búsqueda del usuario del repositorio de Merlot.org.';
+$string['privacy:metadata:repository_merlot:licencekey'] = 'La clave de licencia del repositorio de Merlot.org.';

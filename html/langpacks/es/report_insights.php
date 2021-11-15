@@ -25,7 +25,27 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['actionsaved'] = 'Su retroalimentación de \'{$a}\' ha sido guardada.';
+$string['confirmbulkaction'] = '¿Está seguro de que quiere marcar las {$a->nitems} predicciones seleccionadas como {$a->action}?';
+$string['disabledmodel'] = 'Este modelo ha sido deshabilitado por un administrador.';
+$string['indicators'] = 'Indicadores';
+$string['insight'] = 'Percepción';
 $string['insights'] = 'Intuiciones (predicciones)';
 $string['justpredictions'] = 'Por favor tenga en cuenta que las siguientes intuiciones son solamente predicciones. No es posible predecir el futuro con certeza. Las intuiciones son proporcionadas para que se puedan tomar las acciones necesarias para evitar que las predicciones negativas se vuelvan realidad.';
+$string['nodetailsavailable'] = 'No hay detalles de predicción relevantes.';
+$string['outcome'] = 'Resultado';
+$string['outcomenegative'] = 'Resultado negativo';
+$string['outcomeneutral'] = 'Resultado neutral';
+$string['outcomeok'] = 'Resultado OK';
+$string['outcomepositive'] = 'Resultado positivo';
+$string['outcomeverynegative'] = 'Resultado muy negativo';
+$string['outcomeverypositive'] = 'Resultado muy positivo';
 $string['pluginname'] = 'Intuiciones (predicciones)';
+$string['prediction'] = 'Predicción';
+$string['predictiondetails'] = 'Detalles de predicción';
+$string['privacy:metadata'] = 'El complemento de Insights no almacena ningún dato personal.';
 $string['selectotherinsights'] = 'Seleccionar otras intuiciones (predicciones)...';
+$string['selectprediction'] = 'Seleccionar {$a} para acción masiva';
+$string['timecreated'] = 'Tiempo predecido';
+$string['timerange'] = 'Intervalo de análisis';
+$string['timerangewithdata'] = '{$a->timestart} a {$a->timeend}';

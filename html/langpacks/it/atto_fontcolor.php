@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = 'Nero';
+$string['color_blue'] = 'Blu';
+$string['color_green'] = 'verde';
+$string['color_red'] = 'Rosso';
+$string['color_white'] = 'Bianco';
+$string['color_yellow'] = 'Giallo';
 $string['pluginname'] = 'Colore testo';
 $string['privacy:metadata'] = 'Il pluginatto_fontcolor non memorizza dati personali.';

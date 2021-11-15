@@ -25,8 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityorder'] = 'Orden de actividad';
+$string['allactivitiesandresources'] = 'Todas las actividades y recursos';
+$string['alphabetical'] = 'Alfabético';
+$string['include'] = 'Incluir';
+$string['orderincourse'] = 'Orden en el curso';
 $string['page-report-progress-index'] = 'Informe de finalización de actividad';
 $string['page-report-progress-user'] = 'Informe de finalización de actividad del alumno';
 $string['page-report-progress-x'] = 'Informe de finalización de cualquier actividad';
 $string['pluginname'] = 'Finalización de la actividad';
+$string['privacy:metadata'] = 'El informe de finalización de actividad sólo muestra datos almacenados en otras ubicaciones.';
 $string['progress:view'] = 'Ver informes de finalización de la actividad';

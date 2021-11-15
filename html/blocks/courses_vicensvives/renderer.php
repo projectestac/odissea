@@ -80,8 +80,7 @@ class block_courses_vicensvives_renderer extends plugin_renderer_base {
     // Esta función es diferente para cada versión de Moodle.
     private function get_course_contacts($course) {
         global $CFG;
-        require_once($CFG->libdir. '/coursecatlib.php');
-        $course = new course_in_list($course);
+        $course = new core_course_list_element($course);
         return $course->get_course_contacts();
     }
 }

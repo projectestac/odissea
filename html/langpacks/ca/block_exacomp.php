@@ -25,8 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['LA_enddate'] = 'data de finalització';
 $string['delete_confirmation'] = 'De veres voleu esborrar «{$a}»?';
 $string['description'] = 'Descripció';
 $string['messagetocourse'] = 'Envia el missatge a tots els alumnes';
+$string['show_solution'] = 'Mostra la solució';
 $string['tab_admin_import'] = 'Importa/Exporta';
 $string['teacher'] = 'Professor';

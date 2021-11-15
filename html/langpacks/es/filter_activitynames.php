@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Enlace automático a nombres de actividad';
+$string['privacy:metadata'] = 'El complemento de enlace automático de nombres de actividades no almacena ningún dato personal.';

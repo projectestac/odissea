@@ -36,6 +36,7 @@ $string['full_from_date'] = 'En esta fecha <strong>{$a}</strong> o después';
 $string['full_until'] = 'Antes de <strong>{$a}</strong>';
 $string['full_until_date'] = 'Antes del final de  <strong>{$a}</strong>';
 $string['pluginname'] = 'Restricción por fecha';
+$string['privacy:metadata'] = 'El complemento de restricción por fecha no almacena ningún dato personal.';
 $string['short_from'] = 'Disponible desde <strong>{$a}</strong>';
 $string['short_from_date'] = 'Disponible desde <strong>{$a}</strong>';
 $string['short_until'] = 'Disponible hasta <strong>{$a}</strong>';

@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = '黒';
+$string['color_blue'] = '青';
+$string['color_green'] = '緑';
+$string['color_red'] = '赤';
+$string['color_white'] = '白';
+$string['color_yellow'] = '黄色';
 $string['pluginname'] = 'フォント色';
 $string['privacy:metadata'] = 'atto_fontcolorプラグインはいかなる個人データも保存しません。';

@@ -36,4 +36,4 @@ $string['helppenalty'] = 'Laguntza honek penalizazio hau ekarriko dizu: <strong>
 $string['pluginname'] = 'Adierazpen erregularren egokitze modua Laguntzarekin';
 $string['privacy:metadata'] = 'Adierazpen erregularren egokitze modua laguntzarekin galdera-jokaerako gehigarriak ez du datu pertsonalik gordetzen.';
 $string['submittedwithhelp'] = 'Bidali (laguntza-eskaerarekin): {$a}';
-$string['totalpenalties'] = 'Gehienezko penalizazio-kopurua: <strong>{$a}</strong>.';
+$string['totalpenalties'] = 'Gehieneko penalizazio-kopurua: <strong>{$a}</strong>.';

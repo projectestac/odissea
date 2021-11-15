@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptedfiletypes'] = 'Αποδεκτοί τύποι αρχείων';
 $string['acceptedfiletypes_help'] = 'Οι αποδεκτοί τύποι αρχείων μπορούν να περιοριστούν εισάγοντας μια λίστα με επεκτάσεις αρχείων. Αν το πεδίο αφεθεί κενό, τότε επιτρέπονται όλοι οι τύποι αρχείων.';
 $string['allowattachments'] = 'Να επιτρέπονται συνημμένα';
+$string['answerfiles'] = 'Αρχεία απαντήσεων';
+$string['answertext'] = 'Κείμενο απάντησης';
 $string['attachedfiles'] = 'Συνημμένα: {$a}';
 $string['attachmentsoptional'] = 'Τα συνημμένα είναι προαιρετικά';
 $string['attachmentsrequired'] = 'Απαιτούνται συνημμένα';

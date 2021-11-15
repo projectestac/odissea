@@ -30,4 +30,4 @@ $string['displaycategories_help'] = 'Zeigt die Kurskategorie für die zuletzt au
 $string['nocourses'] = 'Keine zuletzt besuchten Kurse';
 $string['pluginname'] = 'Zuletzt besuchte Kurse';
 $string['privacy:metadata'] = 'Der Block \'Zuletzt besuchte Kurse\' speichert keine personenbezogenen Daten.';
-$string['recentlyaccessedcourses:myaddinstance'] = 'Neuen Block \'Zuletzt besuchte Kurse\' zum Dashboard hinzufügen';
+$string['recentlyaccessedcourses:myaddinstance'] = 'Neuen Block \'Zuletzt besuchte Kurse\' im Dashboard hinzufügen';

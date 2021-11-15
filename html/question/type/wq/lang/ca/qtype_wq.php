@@ -94,4 +94,4 @@ $string['privacy:metadata:qtype_wq'] = 'Information about user\'s correct answer
 $string['privacy:metadata:qtype_wq:question'] = 'Wiris Quizzes question type id';
 $string['privacy:metadata:qtype_wq:xml'] = 'Wiris Quizzes Question XML';
 
-$string['auxiliar_text'] = 'Write an optional reasoning for your answer:';
+$string['auxiliar_text'] = 'Escriviu un raonament opcional per a la vostra resposta:';

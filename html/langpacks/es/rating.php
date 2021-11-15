@@ -53,6 +53,7 @@ $string['privacy:metadata:rating'] = 'La valoración ingresada por el usuario se
 $string['privacy:metadata:rating:rating'] = 'La valoración numérica que el usuario ingresó.';
 $string['privacy:metadata:rating:timecreated'] = 'La hora en la cual la primera valoración fue realizada.';
 $string['privacy:metadata:rating:timemodified'] = 'La última hora de actualización de la valoración.';
+$string['privacy:metadata:rating:userid'] = 'El usuario que hizo la valoración.';
 $string['rate'] = 'Calificar';
 $string['ratepermissiondenied'] = 'No tiene permiso para calificar este ítem';
 $string['rating'] = 'Calificación';

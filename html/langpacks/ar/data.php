@@ -141,7 +141,7 @@ $string['entrieslefttoadd'] = 'عليك إضافة {$a->entriesleft} مدخل/م
 $string['entrieslefttoaddtoview'] = 'عليك إضافة {$a->entrieslefttoview} مدخل/مدخلات إضافية قبل أن تتمكن من معاينة مدخلات المشاركين الآخرين.';
 $string['entry'] = 'مدخل';
 $string['entrysaved'] = 'لقد تم حفظ مدخلك';
-$string['errormustbeteacher'] = 'يجب عليك أن تكون أحد المعلمون لتتمكن من أستخدام هذه الصفحة';
+$string['errormustbeteacher'] = 'ينبغي أن تكون معلمًا لتستعمل هذه الصفحة!';
 $string['errormustsupplyvalue'] = 'عليك إعطاء قيمة هنا.';
 $string['errorpresetexists'] = 'هناك سلفاً تحضير مسبق بالاسم المحدد';
 $string['eventfieldcreated'] = 'حقل تم إنشاؤه';
@@ -277,7 +277,7 @@ $string['newfield'] = 'أنشئ حقل جديد';
 $string['newfield_help'] = 'الحقل يسمح بإدخال البيانات. كل مدخل في نشاط قاعدة البيانات يمكن أن يكون فيه حقول متعددة ذات أنواع متعددة، مثل حقل التاريخ، الذي يسمح للمشاركين بانتقاء اليوم، الشهر، السنة من قائمة منسدلة، حقل صورة، يسمح للمشاركين برفع ملف صورة، أو حقل خانة تأشير، يسمح للمشاركين بتحديد خيار واحد أو أكثر.
 
 كل حقل ينبغي أن يكون له اسم فريد. وصف الحقل إختياري.';
-$string['noaccess'] = 'ليس لديك صلاحية الوصول لهذه الصفحة';
+$string['noaccess'] = 'ليست لديك صلاحية الوصول إلى هذه الصفحة';
 $string['nodefinedfields'] = 'القيمة المحددة لا تحوي حقول معرفة!';
 $string['nofieldcontent'] = 'لم يتم العثور على محتوى الحقل';
 $string['nofieldindatabase'] = 'ليست هناك حقول معرفة لقاعدة البيانات هذه.';
@@ -380,7 +380,7 @@ $string['subplugintype_datafield_plural'] = 'أنواع حقول قاعدة ال
 $string['subplugintype_datapreset'] = 'تحضير مسبق';
 $string['subplugintype_datapreset_plural'] = 'إعدادات مسبقة';
 $string['tagarea_data_records'] = 'سجلات البيانات';
-$string['tags'] = 'علامات';
+$string['tags'] = 'الوسوم';
 $string['tagsdeleted'] = 'تم حذف وسوم قاعدة البيانات';
 $string['teachersandstudents'] = '{$a->teachers} معلمون و {$a->students} طلاب';
 $string['templates'] = 'قوالب';

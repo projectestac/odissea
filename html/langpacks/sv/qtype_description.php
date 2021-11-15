@@ -33,4 +33,4 @@ Frågetexten visas både under försöket och på granskningssidan. Generell åt
 $string['pluginnameadding'] = 'Lägger till en beskrivning';
 $string['pluginnameediting'] = 'Redigera beskrivning';
 $string['pluginnamesummary'] = 'Detta är egentligen inte en fråga. Istället är det ett sätt att lägga till några instruktioner, rubriker eller annat innehåll till aktiviteten. Detta liknar det sätt som etiketter kan användas för att lägga till innehåll på en kurssida.';
-$string['privacy:metadata'] = 'Plugin-modulen Frågetyp Beskrivning lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Plugin-modulen Frågetyp Beskrivning lagrar ingen personinformation.';

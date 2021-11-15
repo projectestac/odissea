@@ -230,6 +230,8 @@ $string['expirymessageenrollerbody'] = 'Enrolment in the course \'{$a->course}\'
 To extend their enrolment, go to {$a->extendurl}';
 $string['expirymessageenrollersubject'] = 'Enrolment expiry notification';
 $string['gettokentime'] = 'Time on remote API: {$a}';
+$string['htmlonthankyoupage'] = 'HTML snippet on thank you page';
+$string['htmlonthankyoupage_desc'] = 'HTML snippet that appears at the end of the thank you page to allow you to give customers a more warm welcome to your environment.';
 $string['invoice:requested'] = 'Your request to process the invoice has succesfully been processed';
 $string['mailadmins'] = 'Notify admin';
 $string['mailstudents'] = 'Notify students';

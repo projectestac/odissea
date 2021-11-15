@@ -38,5 +38,6 @@ $string['lastleft'] = 'آخر يسار: {$a}';
 $string['nogroup'] = 'الجلسة الرئيسية';
 $string['noguestentry'] = 'عذرًا، لا يسمح للضيوف بالمشاركة في المناقشات';
 $string['participant'] = 'المشارك';
+$string['privacy:metadata:collaborate:fullname'] = 'تم إرسال الاسم الكامل للمستخدم إلى النظام البعيد لإتاحة تجربة أفضل للمستخدم';
 $string['recordingdeleted'] = 'تم حذف التسجيل المعنون "{$a}".';
 $string['timezone'] = 'المنطقة الزمنية: {$a}';

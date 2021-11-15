@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['allgradeitems'] = 'كل مفردات التقييم';
-$string['allgraders'] = 'كل العلامات';
+$string['allgraders'] = 'جميع التقديرات';
 $string['datefrom'] = 'من تاريخ';
 $string['datetime'] = 'التاريخ والوقت';
 $string['dateto'] = 'حتى تاريخ';
@@ -40,7 +40,7 @@ $string['finishselectingusers'] = 'أنهِ اختيار المستخدمين';
 $string['foundnusers'] = 'تم العثور على {$a} مستخدم';
 $string['foundoneuser'] = 'تم العثور على مستخدم واحد';
 $string['gradenew'] = 'علامة منقحة';
-$string['gradeold'] = 'العلامة الأصلية';
+$string['gradeold'] = 'الدرجة الأصلية';
 $string['grader'] = 'المقيِّم';
 $string['history:view'] = 'معاينة ماضي التقييم';
 $string['historyperpage'] = 'مدخلات الماضي في الصفحة';
@@ -49,10 +49,10 @@ $string['loadmoreusers'] = 'تنزيل المزيد من المستخدمين...
 $string['pluginname'] = 'ماضي التقييم';
 $string['preferences'] = 'تفضيلات ماضي التقييم';
 $string['privacy:metadata'] = 'تقرير ماضي التقييم يظهر فقط بيانات مخزونة في مواضع أخرى.';
-$string['revisedonly'] = 'العلامات المنقحة فقط';
-$string['revisedonly_help'] = 'أظهر العلامات التي تم تنقيحها فقط.
+$string['revisedonly'] = 'التقديرات المنقحة فقط';
+$string['revisedonly_help'] = 'أظهر التقديرات التي تم تنقيحها فقط.
 
-هذا معناه الاقتصار على إدراج المدخلات المسببة لتغييرات في العلامات.';
+هذا معناه الاقتصار على إدراج المدخلات المسببة لتغييرات في الدرجات.';
 $string['selectedusers'] = 'المستخدمون المحددون';
 $string['selectuser'] = 'إختر المستخدم';
 $string['selectusers'] = 'إختر المستخدمين';

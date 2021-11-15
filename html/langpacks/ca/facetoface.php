@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cancelbooking'] = 'Cancel·la la reserva';
+$string['crontask'] = 'Tasques de manteniment cara a cara';
 $string['date'] = 'Data';
 $string['details'] = 'Detalls';
 $string['error:couldnotaddsession'] = 'No s\'ha pogut afegir una sessió';

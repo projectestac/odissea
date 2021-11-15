@@ -71,5 +71,5 @@ $string['printintro'] = 'Visa sidbeskrivning';
 $string['printintroexplain'] = 'Visa beskrivning för sida ovanför innehållet?';
 $string['printlastmodified'] = 'Visa senast ändrad datum';
 $string['printlastmodifiedexplain'] = 'Visa senaste ändringsdatum nedanför innehållet?';
-$string['privacy:metadata'] = 'Pluginmodulen Sida lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Sida lagrar ingen personinformation.';
 $string['search:activity'] = 'Sida';

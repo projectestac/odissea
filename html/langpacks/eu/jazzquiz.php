@@ -196,7 +196,7 @@ $string['modulename_help'] = '<p>
     Galdera amaitzeko epe-muga automatikoa ezar daiteke. Bestela, irakasleak galdera eskuz amaitu eta hurrengora pasa daiteke.
 </p>';
 $string['modulenameplural'] = 'Jazz Galdetegiak';
-$string['multichoice_options'] = 'Erantzun anitzeko aukerak';
+$string['multichoice_options'] = 'Erantzun anizkoitzeko aukerak';
 $string['next'] = 'Hurrengoa';
 $string['no_attempts_found'] = 'Ez da saiakerarik aurkitu.';
 $string['no_session'] = 'Ez dago saio irekirik';
@@ -209,7 +209,7 @@ $string['nonanonymous_session_info'] = 'Saio hau ez da anonimoa. Zure partaidetz
 $string['one_student_has_joined'] = 'Ikasle 1 sartu da.';
 $string['pluginadministration'] = 'Jazz Galdetegiaren kudeaketa';
 $string['pluginname'] = 'Jazz Galdetegia';
-$string['privacy:metadata:core_question'] = 'Jazz Galdetegiko jarduerak galderen erabileraz informazioa biltzen du core-question azpisisteman.';
+$string['privacy:metadata:core_question'] = 'Jazz Galdetegiko jarduerak galderen erabileraz informazioa biltzen du core_question azpisisteman.';
 $string['privacy:metadata:jazzquiz_attempts'] = 'Jazz Galdetegiko saioko saiakerez xehetasunak';
 $string['privacy:metadata:jazzquiz_attempts:responded'] = 'Azken galdera erantzunik izan duen ala ez.';
 $string['privacy:metadata:jazzquiz_attempts:timefinish'] = 'Saiakerako azken galdera noiz amaitu den.';

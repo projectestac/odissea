@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['checkin'] = 'Texte im lokalen Sprachpaket sichern';
+$string['checkin'] = 'Texte im lokalen Sprachpaket speichern';
 $string['checkout'] = 'Lokales Sprachpaket bearbeiten';
 $string['checkoutdone'] = 'Lokales Sprachpaket wurde geladen.';
 $string['checkoutinprogress'] = 'Lokales Sprachpaket wird geladen...';
@@ -43,7 +43,7 @@ $string['climissinglang'] = 'Fehlende Sprache';
 $string['climissingmode'] = 'Fehlender oder ungültiger Modus (gültig sind all, new oder update)';
 $string['climissingsource'] = 'Fehlende Datei oder Verzeichnis';
 $string['clinolog'] = 'Nichts zum Importieren in {$a}';
-$string['confirmcheckin'] = 'Sie möchten geänderte Texte im lokalen Sprachpaket sichern. Dieser Vorgang exportiert die angepassten Texte aus den Übersetzer in das Daten-Verzeichnis. Moodle wird ab sofort das geänderte Sprachpaket benutzen. Klicken Sie auf die Taste "Weiter", um die Texte zu speichern.';
+$string['confirmcheckin'] = 'Sie möchten geänderte Texte im lokalen Sprachpaket speichern. Dieser Vorgang exportiert die angepassten Texte aus den Übersetzer in das Daten-Verzeichnis. Moodle wird ab sofort das geänderte Sprachpaket benutzen. Klicken Sie auf die Taste "Weiter", um die Texte zu speichern.';
 $string['customlang:edit'] = 'Lokales Sprachpaket bearbeiten';
 $string['customlang:export'] = 'Lokale Übersetzung exportieren';
 $string['customlang:view'] = 'Lokales Sprachpaket anzeigen';
@@ -72,7 +72,7 @@ $string['markinguptodate'] = 'Anpassung als aktuell markieren';
 $string['markinguptodate_help'] = 'Die Anpassung des lokalen Sprachpakets könnte veraltet sein, weil entweder der englische Originaltext oder die offizielle Übersetzung geändert wurden. Soll die lokale Anpassung weiter gelten oder möchten Sie den Text bearbeiten?';
 $string['markuptodate'] = 'Als aktuell markieren';
 $string['modifiedno'] = 'Keine geänderten Texte für das lokale Sprachpaket vorhanden';
-$string['modifiednum'] = '{$a} Texte wurden verändert. Möchten Sie die Texte dauerhaft im lokalen Sprachpaket sichern?';
+$string['modifiednum'] = '{$a} Texte wurden verändert. Möchten Sie die Texte dauerhaft im lokalen Sprachpaket speichern?';
 $string['nolocallang'] = 'Keine lokalen Texte gefunden';
 $string['nostringsfound'] = 'Keine Texte gefunden - bitte ändern Sie die Filtereinstellungen';
 $string['notice_ignorenew'] = 'Text {$a->component}/{$a->stringid} ignoriert, da er nicht angepasst ist.';
@@ -88,5 +88,5 @@ Es ist wichtig, die Platzhalter ganz genauso wie im Originaltext zu schreiben. P
 $string['placeholderwarning'] = 'Text enthält einen Platzhalter';
 $string['pluginname'] = 'Sprachanpassung';
 $string['privacy:metadata'] = 'Das Plugin \'Sprachanpassungen\' speichert keine personenbezogenen Daten.';
-$string['savecheckin'] = 'Texte im lokalen Sprachpaket sichern';
+$string['savecheckin'] = 'Texte im lokalen Sprachpaket speichern';
 $string['savecontinue'] = 'Sichern und Texte weiter bearbeiten';

@@ -27,11 +27,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Wikimedia biltegi motaren ezarpenak';
 $string['keyword'] = 'Bilatu';
-$string['maxheight'] = 'Irudiaren gehienezko altuera (px)';
-$string['maxwidth'] = 'Irudiaren gehienezko zabalera (px)';
+$string['maxheight'] = 'Irudiaren gehieneko altuera (px)';
+$string['maxwidth'] = 'Irudiaren gehieneko zabalera (px)';
 $string['pluginname'] = 'Wikimedia';
 $string['privacy:metadata:repository_wikimedia'] = 'Wikimedia biltegi-pluginak erabiltzaile-hobespenak gordetzen ditu, eta erabiltzaile-datuak Moodletik urruneko sistemara bidaltzen ditu.';
-$string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'Wikimedia biltegirako konfiguratutako Gehienezko Altuera erabiltzaile-hobespena.';
-$string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'Wikimedia biltegirako konfiguratutako gehienezko zabalera erabiltzaile-hobespena';
+$string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'Wikimedia biltegirako konfiguratutako Gehieneko Altuera erabiltzaile-hobespena.';
+$string['privacy:metadata:repository_wikimedia:preference:maxwidth'] = 'Wikimedia biltegirako konfiguratutako gehieneko zabalera erabiltzaile-hobespena';
 $string['privacy:metadata:repository_wikimedia:search_text'] = 'Dropbox biltegiko erabiltzailearen bilaketaren testua.';
 $string['wikimedia:view'] = 'Ikusi Wikimedia biltegia';

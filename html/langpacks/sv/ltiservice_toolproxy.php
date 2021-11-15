@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Verktygsproxy';
-$string['privacy:metadata'] = 'Pluginmodulen Tjänst för verktygsproxy lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Tjänst för verktygsproxy lagrar ingen personinformation.';

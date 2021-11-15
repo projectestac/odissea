@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptedfiletypes'] = 'أنواع الملفات المقبولة:';
 $string['acceptedfiletypes_help'] = 'يمكن تقييد أنواع الملفات المقبولة عن طريق إدخال قائمة ملحقات الملفات. إذا تم ترك الحقل فارغًا ، فسيتم السماح بجميع أنواع الملفات.';
 $string['allowattachments'] = 'السماح بالمرفقات';
+$string['answerfiles'] = 'ملفات الإجابة';
+$string['answertext'] = 'نص الإجابة';
 $string['attachedfiles'] = 'المرفقات: {$a}';
 $string['attachmentsoptional'] = 'المرفقات اختيارية';
 $string['attachmentsrequired'] = 'تتطلب المرفقات';

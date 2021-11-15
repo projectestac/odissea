@@ -30,5 +30,5 @@ $string['createlink'] = 'Crear enlace';
 $string['enterurl'] = 'Introducir URL';
 $string['openinnewwindow'] = 'Abrir en una nueva ventana';
 $string['pluginname'] = 'Enlace';
-$string['privacy:metadata'] = 'El plugin atto_link no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_link no almacena ningún dato personal.';
 $string['unlink'] = 'Desenlazar';

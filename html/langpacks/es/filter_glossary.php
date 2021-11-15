@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Enlace automático a glosario';
+$string['glossarycategory'] = '{$a->glossary}: Categoría {$a->category}';
+$string['glossaryconcept'] = '{$a->glossary}: {$a->concept}';
+$string['privacy:metadata'] = 'El complemento de enlace automático al glosario no almacena ningún dato personal.';

@@ -25,9 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['credentialsinvalid'] = 'تعذر استعمال اسم المستخدم وكلمة السر المدخلان لواجهة برمجة التطبيق من أجل الدخول. يرجى التحقق منهما.';
 $string['displaysizelistdetails'] = '';
 $string['displaysizesingledetails'] = '';
 $string['fallbackdetails'] = 'إذا لم يكن المستعرض داعماً لتسجيلات HTML5 لنوع الوسائط المحدد، تراجع إلى شاشة الرفع أو التحذير.';
+$string['nocredentials'] = 'لم يتم إدخال اسم المستخدم وكلمة السر لواجهة برمجة التطبيق. يرجى إدخالهما في <a href="{$a}">صفحة الإعدادات.</a> يمكنك الحصول عليهما من <a href="https://poodll.com/member">Poodll.com.</a>';
+$string['novalidcredentials'] = 'تم رفض اسم المستخدم وكلمة السر لواجهة برمجة التطبيق وتعذر الدخول بهما. يرجى التحقق منهما في <a href="{$a}">صفحة الإعدادات.</a> يمكنك الحصول عليهما من <a href="https://poodll.com/member">Poodll.com.</a>';
 $string['privacy:metadata:assignmentid'] = 'مُعرَّف الواجب';
 $string['privacy:metadata:vttpurpose'] = 'استدعاء الترجمة لنسخة هذه المحاولة من الواجب.';
 $string['setting_audio_heading_details'] = 'الإعدادات التي تتحكم بظهور المشغل في صفحات مراجعة التسليم وقوائمها';

@@ -39,6 +39,7 @@ $string['privacy:metadata:externalpurpose'] = 'Queste informazioni vengono invia
 $string['privacy:metadata:fullmessage'] = 'Testo del messaggio in un dato formato.';
 $string['privacy:metadata:fullmessagehtml'] = 'Testo completo del messaggio.';
 $string['privacy:metadata:message_email_messages'] = 'Elenco degli utenti iscritti via provider LTI';
+$string['privacy:metadata:message_email_messages:conversationid'] = 'L\'ID della conversazione a cui si sta inviando';
 $string['privacy:metadata:message_email_messages:messageid'] = 'ID del messaggio inviato';
 $string['privacy:metadata:message_email_messages:useridto'] = 'ID dell\'utente destinatario del messaggio';
 $string['privacy:metadata:recipient'] = 'Destinatario del messaggio.';

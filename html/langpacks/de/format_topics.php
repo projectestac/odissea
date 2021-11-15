@@ -26,16 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addsections'] = 'Themen hinzufügen';
-$string['currentsection'] = 'Dieses Thema';
-$string['deletesection'] = 'Thema löschen';
-$string['editsection'] = 'Thema bearbeiten';
-$string['editsectionname'] = 'Name des Themas bearbeiten';
-$string['hidefromothers'] = 'Thema verbergen';
-$string['newsectionname'] = 'Neuer Name für Thema {$a}';
+$string['currentsection'] = 'Dieser Abschnitt';
+$string['deletesection'] = 'Abschnitt löschen';
+$string['editsection'] = 'Abschnitt bearbeiten';
+$string['editsectionname'] = 'Name des Abschnitts bearbeiten';
+$string['hidefromothers'] = 'Abschnitt verbergen';
+$string['newsectionname'] = 'Neuer Name für Abschnitt {$a}';
 $string['page-course-view-topics'] = 'Jede Kurshauptseite im Themenformat';
 $string['page-course-view-topics-x'] = 'Jede Kursseite im Themenformat';
 $string['pluginname'] = 'Themenformat';
-$string['privacy:metadata'] = 'Das Themen-Kursformat-Plugin speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Das Plugin Themenformat speichert keine personenbezogenen Daten.';
 $string['section0name'] = 'Allgemeines';
-$string['sectionname'] = 'Thema';
-$string['showfromothers'] = 'Thema anzeigen';
+$string['sectionname'] = 'Abschnitt';
+$string['showfromothers'] = 'Abschnitt anzeigen';

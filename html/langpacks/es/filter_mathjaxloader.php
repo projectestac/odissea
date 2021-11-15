@@ -29,8 +29,8 @@ $string['additionaldelimiters'] = 'Separadores de ecuación adicionales';
 $string['additionaldelimiters_help'] = 'El filtro MathJax analiza el texto para hallar ecuaciones entre los caracteres separadores.
 La lista de caracteres separadores puede ser añadida aquí (por ejemplo, AsciiMath usa `). Los separadores pueden contener múltiples caracteres, y múltiples separadores serán separados con comas.';
 $string['filtername'] = 'MathJax';
-$string['httpsurl'] = 'HTTPS MathJax URL';
-$string['httpsurl_help'] = 'URL completa a la biblioteca MathJax. Se usa cuando se accede a la página a través de https (segura).';
+$string['httpsurl'] = 'URL de MathJax';
+$string['httpsurl_help'] = 'URL completa de la biblioteca MathJax.';
 $string['localinstall'] = 'Instalación local de MathJax';
 $string['localinstall_help'] = 'La configuración por defecto de Mathax usa la versión CDN de Mathjax, pero MathJax se puede instalar localmente si es necesario.
 
@@ -39,6 +39,7 @@ Esto puede ser útil para ahorrar ancho de banda o por restricciones de un proxy
 Para instalar MathJax localmente, primero debe descargar la biblioteca completa de MathJax de http://www.mathjax.org/. Después instálelo en un servidor web. Por último, actualice la configuración de filtros MathJax httpurl y/o httpsurl para indicar el URL del MathJax.js local.';
 $string['mathjaxsettings'] = 'Configuración MathJax';
 $string['mathjaxsettings_desc'] = 'La configuración de MathJax por defecto debería ser apropiada para cualquier usuario, pero MathJax admite muchas configuraciones y cualquier opción de la configuración de MathJax estándar puede añadirse aquí.';
+$string['privacy:metadata'] = 'El complemento Mathjax no almacena ningún dato personal.';
 $string['texfiltercompatibility'] = 'Compatibilidad del filtro TeX';
 $string['texfiltercompatibility_help'] = 'El filtro MathJax puede usarse como un sustituto del filtro de notación de TeX.
 

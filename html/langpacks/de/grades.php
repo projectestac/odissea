@@ -253,6 +253,7 @@ $string['externalurl'] = 'Externe URL';
 $string['externalurl_desc'] = 'Wenn Sie eine externe Bewertungsverwaltung verwenden, hinterlegen Sie die URL hier.';
 $string['extracreditvalue'] = 'Zusatzpunkte für {$a}';
 $string['extracreditwarning'] = 'Anmerkung: Wenn für alle Elemente einer Kategorie Extrapunkte vergeben werden, dann werden sie bei der Gesamtbewertung nicht berücksichtigt. Es wird keine Gesamtpunktzahl ermittelt.';
+$string['fail'] = 'Fehlgeschlagen';
 $string['feedback'] = 'Feedback';
 $string['feedback_help'] = 'Diese Einstellung erlaubt Anmerkungen zur Bewertung durch Trainer/innen. Das Feedback kann ein ausführlicher Text, eine sehr persönliche Rückmeldung oder ein Code sein, der üblicherweise in der Bildungseinrichtung verwandt wird.';
 $string['feedbackadd'] = 'Feedback hinzufügen';
@@ -435,6 +436,15 @@ $string['importcsv_help'] = 'Bewertungen können aus einer CSV-Datei im folgende
 
 Eine Datei mit der richtigen Struktur kann eingesehen werden indem man zunächst einige Bewertungen exportiert. Diese Datei kann dann bearbeitet und als CSV-Datei gespeichert werden.';
 $string['importcustom'] = 'Import als individuelle Lernziele (nur für diesen Kurs)';
+$string['importdata'] = 'Daten';
+$string['importdata_help'] = 'Noten können direkt aus einer OpenDocument- oder Excel-Tabelle mit folgendem Format eingefügt werden:
+
+* Mindestens eine Spalte sollte Daten zur Nutzeridentität enthalten - Nutzername, E-Mail-Adresse oder ID-Nummer.
+* Andere Spalten sollten Überschriften wie für bestehende Aktivitäten oder Benotungselemente haben.
+
+Eine korrekt formatierte Tabelle erhalten Sie, indem Sie zunächst einige Noten exportieren. Die Tabelle kann bearbeitet und dann wieder gespeichert werden, um weitere Noten hinzuzufügen.
+
+Wählen Sie die Spalten aus, die Sie aus der Tabelle importieren möchten, kopieren Sie sie und fügen Sie sie in dieses Feld ein.';
 $string['importerror'] = 'Es ist ein Fehler aufgetreten. Das Script wurde mit falschen Parametern gestartet.';
 $string['importfailed'] = 'Import gescheitert. Es wurden keine Daten importiert.';
 $string['importfeedback'] = 'Feedback importieren';
@@ -555,7 +565,7 @@ $string['multfactor_help'] = 'Der Multiplikator ist der Faktor, mit dem alle Bew
 $string['multfactorvalue'] = 'Multiplikator für {$a}';
 $string['mustchooserescaleyesorno'] = 'Sie müssen auswählen, ob vorhandene Bewertungen neu vergeben werden sollen oder nicht.';
 $string['mygrades'] = 'Meine Bewertungen';
-$string['mygrades_desc'] = 'Die Einstellung fügt den Link zu einer externen Bewertungsverwaltung zum  Nutzermenu hinzu.';
+$string['mygrades_desc'] = 'Die Einstellung fügt den Link zu einer externen Bewertungsverwaltung zum  Nutzermenü hinzu.';
 $string['mypreferences'] = 'Meine Einstellungen';
 $string['myreportpreferences'] = 'Meine Einstellungen für Berichte';
 $string['navmethod'] = 'Navigationsmethode';
@@ -630,6 +640,7 @@ $string['overridesitedefaultgradedisplaytype'] = 'Voreinstellungen überschreibe
 $string['overridesitedefaultgradedisplaytype_help'] = 'Wenn diese Option aktiviert ist, können Notenstufen überschrieben werden, anstatt die systemweiten Voreinstellungen zu verwenden.';
 $string['overrideweightofa'] = 'Gewichtung von {$a} überschreiben';
 $string['parentcategory'] = 'Übergeordnete Kategorie';
+$string['pass'] = 'Erfolgreich';
 $string['pctoftotalgrade'] = '% der Gesamtbewertung';
 $string['percent'] = 'Prozent';
 $string['percentage'] = 'Prozentsatz';
@@ -719,7 +730,7 @@ $string['recovergradesdefault_help'] = 'Alte Bewertungen werden wiederhergestell
 $string['refreshpreview'] = 'Vorschau aktualisieren';
 $string['regradeanyway'] = 'Auf jeden Fall neu bewerten';
 $string['removeallcoursegrades'] = 'Alle Bewertungen löschen';
-$string['removeallcoursegrades_help'] = 'Wenn diese Option aktiviert ist, werden alle Werte, die den Bewertungen manuell hinzugefügt wurden, gelöscht. Ebenfalls gelöscht werden Bewertungen und Einträge, die überschrieben, ausgeschlossen, verborgen und geblockt wurden. Es bleiben nur solche Einträge stehen, die direkt aus Aktivitäten übermittelt wurden.';
+$string['removeallcoursegrades_help'] = 'Wenn diese Option aktiviert ist, werden alle Bewertungen und Einträge gelöscht, die manuell zum Notenbuch hinzugefügt wurden. Ebenfalls gelöscht werden Bewertungen und Einträge, die überschrieben, ausgeschlossen, verborgen und geblockt wurden. Es bleiben nur solche Einträge stehen, die direkt aus Aktivitäten übermittelt wurden.';
 $string['removeallcourseitems'] = 'Alle Aspekte und Kategorien löschen';
 $string['removeallcourseitems_help'] = 'Wenn Sie diese Option anklicken, werden alle Kategorien und Bewertungsaspekte, die den Bewertungen manuell hinzugefügt wurden, gelöscht. Ebenfalls gelöscht werden Bewertungen und Einträge, die überschrieben, ausgeschlossen, verborgen und geblockt wurden. Es bleiben nur solche Einträge stehen, die direkt aus Aktivitäten übermittelt wurden.';
 $string['report'] = 'Bericht';

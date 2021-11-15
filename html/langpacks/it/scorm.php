@@ -364,6 +364,7 @@ $string['scormloggingon'] = 'API Logging: On';
 $string['scormopen'] = 'Dal';
 $string['scormresponsedeleted'] = 'I tentativi degli utenti sono stati eliminati';
 $string['scormstandard'] = 'Modalità SCORM standard';
+$string['scormstandarddesc'] = 'Se disabilitato, Moodle consentirà ai pacchetti SCORM 1.2 di memorizzare più di quanto consentito dalle specifiche e utilizzerà le impostazioni del formato del nome completo di Moodle viene trasferito il nome utente al pacchetto SCORM.';
 $string['scormtype'] = 'Tipo';
 $string['scormtype_help'] = 'L\'impostazione stabilisce come sarà incluso il pacchetto nel corso. Sono disponibili 4 opzioni:
 

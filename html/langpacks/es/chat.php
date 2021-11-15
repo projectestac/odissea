@@ -111,6 +111,7 @@ Los chats son especialmente útiles cuando un grupo no tiene posibilidad de reun
 * Sesiones para ayudar a los estudiantes a prepararse para exámenes, donde el maestro, o los estudiantes, hagan preguntas de ejemplo';
 $string['modulenameplural'] = 'Chats';
 $string['neverdeletemessages'] = 'Nunca borrar mensajes';
+$string['nextchattime'] = 'Próxima hora de chat:';
 $string['nextsession'] = 'Próxima sesión programada';
 $string['no_complete_sessions_found'] = 'No se han encontrado sesiones completas.';
 $string['nochat'] = 'No se encontró chat';
@@ -160,6 +161,7 @@ $string['servermax'] = 'Número máximo de usuarios';
 $string['serverport'] = 'Puerto del servidor';
 $string['sessions'] = 'Sesiones';
 $string['sessionstart'] = 'La próxima sesión de chat empezará el {$a->date}, (dentro de {$a->fromnow})';
+$string['sessionstartsin'] = 'La siguiente sesión de chat empezará en {$a} desde ahora.';
 $string['strftimemessage'] = '%H:%M';
 $string['studentseereports'] = 'Todos pueden ver las sesiones pasadas';
 $string['studentseereports_help'] = 'Si se selecciona \'No\', solo los usuarios que tienen la capacidad \'mod/chat:readlog\' pueden ver los registros de chat';

@@ -35,7 +35,7 @@ class block_courses_vicensvives extends block_list {
     public function instance_config_save($data, $nolongerused = false) {
         echo "esto no se cuando se ejecuta";die;
         if (empty($data->quizid)) {
-            $data->quizid = $this->get_owning_quiz();
+            $data->quizid = $this->get_owning_activity()->id;
         }
         parent::instance_config_save($data);
     }

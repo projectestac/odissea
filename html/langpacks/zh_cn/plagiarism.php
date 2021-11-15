@@ -32,3 +32,4 @@ $string['enableplagiarism'] = '启用抄袭插件';
 $string['manageplagiarism'] = '管理抄袭插件';
 $string['nopluginsinstalled'] = '没有安装任何抄袭插件';
 $string['plagiarism'] = '反抄袭';
+$string['privacy:metadata:plagiarism'] = '抄袭子系统充当通道，将来自插件的请求传递给各种抄袭插件。';

@@ -25,11 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['completionprogressdetails'] = 'Données détaillées d\'achèvement de cours';
-$string['completionstatus:addinstance'] = 'Ajouter un bloc achèvement de cours';
+$string['completionprogressdetails'] = 'Données détaillées d\'achèvement du cours';
+$string['completionstatus:addinstance'] = 'Ajouter un bloc achèvement du cours';
 $string['criteriagroup'] = 'Groupe de critères';
 $string['firstofsecond'] = '{$a->first} sur {$a->second}';
-$string['pluginname'] = 'Achèvement de cours';
-$string['privacy:metadata'] = 'Le block État d\'achèvement de cours affiche seulement des informations sur l\'achèvement du cours et n\'enregistre aucune donnée.';
+$string['pluginname'] = 'Achèvement du cours';
+$string['privacy:metadata'] = 'Le block Achèvement du cours affiche seulement des informations sur l\'achèvement du cours et n\'enregistre aucune donnée.';
 $string['requirement'] = 'Prérequis';
 $string['returntocourse'] = 'Revenir au cours';

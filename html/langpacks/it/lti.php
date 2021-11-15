@@ -75,6 +75,7 @@ $string['capabilitiesrequired'] = 'Per essere attivato il tool deve accedere ali
 $string['cleanaccesstokens'] = 'Rimozione token scaduti dei tool esterni';
 $string['click_to_continue'] = '<a href="{$a->link}" target="_top">Click per continuare</a>';
 $string['clientidadmin'] = 'ID del client';
+$string['clientidadmin_help'] = 'L\'ID client è un valore univoco utilizzato per identificare uno tool. Viene creato automaticamente per ogni tool che utilizza il profilo di sicurezza JWT introdotto in LTI 1.3 e deve far parte dei dettagli passati al fornitore del tool in modo che possa configurare la propria connessione.';
 $string['comment'] = 'Comment';
 $string['configpassword'] = 'Password di default del tool remoto';
 $string['configpreferheight'] = 'Altezza preferita di default';
@@ -86,9 +87,11 @@ $string['configtypes'] = 'Abilita applicazioni LTI';
 $string['configured'] = 'Configurati';
 $string['confirmtoolactivation'] = 'Sei sicuro di attivare questo tool?';
 $string['contentitem'] = 'Messaggio Content-Item';
+$string['contentitem_deeplinking'] = 'Supporta il deep linking (Content-Item Message)';
 $string['contentitem_deeplinking_help'] = 'Consente di rendere disponibile l\'impostazione \'Seleziona contenuto\' quando si aggiunge un tool esterno.';
 $string['contentitem_help'] = 'Consente di rendere disponibile l\'impostazione \'Seleziona contenuto\' quando si aggiunge un tool esterno.';
 $string['contentitem_multiple_description'] = 'I seguenti elementi saranno aggiunti al corso:';
+$string['contentitem_multiple_graded'] = 'Attività valutata  (voto massimo: {$a})';
 $string['course_tool_types'] = 'Tool del corso';
 $string['courseactivitiesorresources'] = 'Attività e risorse del cofso';
 $string['courseid'] = 'Codice identificativo del corso';
@@ -115,6 +118,7 @@ $string['default_launch_container_help'] = 'Il contenitore di lancio influenza l
 * **Incorpora, senza blocchi** - Il tool viene visualizzato all\'interno della finestra di Moodle già esistente, ma con i soli controlli di navigazione sulla parte superiore della pagina.
 * **Nuova finestra** - Il tool viene aperto in una nuova finestra che occuperà tutto lo spazio disponibile. In funzione del tipo di browser, la nuova finestra può essere una finestra popup oppure un tab di una finestra già esistente. E\' possibile che il browser impedisca l\'apertura di nuove finestre.';
 $string['delegate'] = 'Delega al docente';
+$string['delegate_tool'] = 'Come specificato nella definizione di Deep Linking o Delega al docente';
 $string['delete'] = 'Elimina';
 $string['delete_confirmation'] = 'Sei sicuro di eliminare questo tool preconfigurato?';
 $string['deletetype'] = 'Elimina tool preconfigurato';
@@ -135,10 +139,14 @@ $string['donot'] = 'Non inviare';
 $string['donotaccept'] = 'Non accettare';
 $string['donotallow'] = 'Non consentire';
 $string['duplicateregurl'] = 'L\'URL di registrazione è già stata utilizzata';
+$string['dynreg_update_btn_new'] = 'Registra come nuovo tool esterno';
 $string['dynreg_update_btn_update'] = 'Aggiorna';
 $string['dynreg_update_name'] = 'Nome del tool';
+$string['dynreg_update_notools'] = 'Nessun tool presente nel contesto.';
+$string['dynreg_update_text'] = 'Esistono tool esistenti collegati al dominio di registrazione. Desideri aggiornare tool esterno già installato o creare un nuovo tool esterno?';
 $string['dynreg_update_url'] = 'URL base';
 $string['dynreg_update_version'] = 'Versione LTI';
+$string['dynreg_update_warn_dupdomain'] = 'Non è consigliabile avere più tool esterni nello stesso dominio.';
 $string['editdescription'] = 'Fai click qui per impostare una descrizione del tool';
 $string['edittype'] = 'Modifica tool preconfigurato';
 $string['embed'] = 'Incorpora';
@@ -201,6 +209,8 @@ $string['indicator:socialbreadth'] = 'LTI sociale';
 $string['indicator:socialbreadth_help'] = 'L\'indicatore è basato sulla dimensione sociale raggiunta dallo studente svolgendo attività LTI.';
 $string['indicator:socialbreadthdef'] = 'LTI sociale';
 $string['indicator:socialbreadthdef_help'] = 'Durante l\'intervallo di analisi, il partecipante ha raggiunto questa percentuale di coinvolgimento sociale offerto dall\'attività LTI (Livelli: Nessuna partecipazione, Partecipazione da solo, Partecipazione con altri)';
+$string['initiatelogin'] = 'URL di login iniziale';
+$string['initiatelogin_help'] = 'L\'URL del tool a cui devono essere inviate le richieste per l\'inizio di un login. E\' necessario disporre dell\'URL prima che messaggio possa essere inviato correttamente al tool un messaggio.';
 $string['invalidid'] = 'L\'ID LTI era errata';
 $string['jwtsecurity'] = 'LTI 1.3';
 $string['keytype'] = 'Tipo di chiave pubblica';
@@ -250,6 +260,7 @@ $string['lti_tool_request_existing'] = 'E\' già stata inviata una configurazion
 $string['ltisettings'] = 'Impostazioni LTI';
 $string['ltiunknownserviceapicall'] = 'Chiamata servizio API LTI sconosciuta';
 $string['ltiversion'] = 'Versione LTI';
+$string['ltiversion_help'] = 'La versione di LTI utilizzata per firmare messaggi e richieste di servizio: LTI 1.0/1.1 e LTI 2.0 utilizzano il profilo di sicurezza OAuth 1.0A; LTI 1.3.0 utilizza JWT.';
 $string['main_admin'] = 'Help generale';
 $string['main_admin_help'] = 'I tool esterni consentono di interagire con risorse formative ospitate in altri siti. Tramite uno speciale protocollo di lancio, il tool remoto può accedere ad alcune informazioni relative all\'utente, come ad esempio il nome dell\'istituzione, l\'id del corso, l\'id dell\'utente, il nome dell\'utente e l\'email.
 
@@ -298,15 +309,20 @@ $string['noservers'] = 'Non sono stati trovati server';
 $string['notypes'] = 'Non ci sono tool LTI configurati in Moodle. Fai click sul link soprastante per aggiungerli.';
 $string['noviewusers'] = 'Non sono stati trovati utenti con il privilegio di usare questo tool';
 $string['oauthsecurity'] = 'LTI 1.0/1.1';
+$string['opensslconfiginvalid'] = 'LTI 1.3 richiede un file openssl.cnf valido, configurato e disponibile nel server web. Si prega di contattare l\'amministratore del sito per configurare e abilitare openssl.';
 $string['optionalsettings'] = 'Impostazioni opzionali';
 $string['organization'] = 'Dettagli dell\'organizzazione';
 $string['organizationdescr'] = 'Descrizione dell\'organizzazione';
 $string['organizationid'] = 'ID dell\'organizzazione';
 $string['organizationid_default'] = 'ID di default dell\'organizzazione';
+$string['organizationid_default_help'] = 'Il valore predefinito da utilizzare per l\'ID organizzazione. L\'ID sito identifica questa installazione di Moodle.';
 $string['organizationid_help'] = 'Un identificativo univoco di questa istanza Moodle. Di solito si utilizza il nome DNS della organizzazione.
 
 Lasciando vuoto il campo, di default verrà utilizzato il nome del sito Moodle.';
 $string['organizationidguid'] = 'ID dell\'organizzazione';
+$string['organizationidguid_help'] = 'Un identificatore univoco di questa istanza Moodle, passato al tool come GUID dell\'istanza della piattaforma.
+
+Lasciando vuoto il campo, verrà utilizzato il valore predefinito.';
 $string['organizationurl'] = 'URL dell\'organizzazione';
 $string['organizationurl_help'] = 'l\'URL di questa istanza Moodle.
 
@@ -362,7 +378,9 @@ $string['privacy:metadata:userid'] = 'ID dell\'utente che accede a LTI Consumer.
 $string['privacy:metadata:useridnumber'] = 'Codice identificativo dell\'utente che accede a LTI Consumer.';
 $string['privacy:metadata:username'] = 'Username dell\'utente che accede a LTI Consumer.';
 $string['publickey'] = 'Chiave pubblica';
+$string['publickey_help'] = 'La chiave pubblica (in formato PEM) fornita dal tool per verificare le firme dei messaggi in arrivo e le richieste di servizio.';
 $string['publickeyset'] = 'Set di chiavi pubbliche';
+$string['publickeyset_help'] = 'Keyset pubblico da cui questo sito recupererà la chiave pubblica del tool per verificare le firme dei messaggi in arrivo e le richieste di servizio.';
 $string['quickgrade'] = 'Consenti valutazione rapida';
 $string['quickgrade_help'] = 'Consente la valutazione di più tool nella stessa pagina. E\' possibile aggiungere valutazioni e commenti e poi fare click su "Salva tutti i miei feedback" per salvare tutte le modifiche apportate nella pagina.';
 $string['redirect'] = 'Tra pochi secondi verrai reindirizzato, in caso contrario premi il pulsante.';
@@ -467,6 +485,7 @@ E\' utile per descrivere il tool e le sue funzionalità, assieme ad altre inform
 $string['tooldetailsaccesstokenurl'] = 'URL del token di accesso';
 $string['tooldetailsauthrequesturl'] = 'URL della richiesta di autenticazione';
 $string['tooldetailsclientid'] = 'ID Client';
+$string['tooldetailsdeploymentid'] = 'ID deployment';
 $string['tooldetailsmailtosubject'] = 'Configurazione tool LTI';
 $string['tooldetailsmodalemail'] = 'Email';
 $string['tooldetailsmodallink'] = 'Visualizza dettagli della configurazione';
@@ -494,6 +513,7 @@ $string['tooltypes'] = 'Tool';
 $string['tooltypeupdated'] = 'Il tool preconfigurato è stato aggiornato';
 $string['toolurl'] = 'URL tool';
 $string['toolurl_contentitemselectionrequest'] = 'URL della selezione dei contenuti';
+$string['toolurl_contentitemselectionrequest_help'] = 'L\'URL di selezione del contenuto verrà utilizzato per avviare la pagina di selezione del contenuto del fornitore dello strumento. Lasciando il campo vuoto,, verrà utilizzato l\'URL dello strumento';
 $string['toolurl_help'] = 'L\'URL del tool viene utilizzata per far corrispondere  l\'URL del tool con la relativa configurazione. Il prefisso http(s) sull\'URL è facoltativo.
 
 Inoltre, l\'URL di base viene utilizzata come URL del tool se non è stata definita una URL del tool nell\'istanza del tool esterno.

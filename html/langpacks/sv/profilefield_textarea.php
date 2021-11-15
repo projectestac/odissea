@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Textområde';
-$string['privacy:metadata:profile_field_textarea:data'] = 'Profilfält-användardata för textområde';
-$string['privacy:metadata:profile_field_textarea:dataformat'] = 'Formatet på användardata i textområdet';
+$string['pluginname'] = 'Textfält';
+$string['privacy:metadata:profile_field_textarea:data'] = 'Textfält för användarprofildata';
+$string['privacy:metadata:profile_field_textarea:dataformat'] = 'Textfältformat för användarprofildata';
 $string['privacy:metadata:profile_field_textarea:fieldid'] = 'ID för profilfältet';
 $string['privacy:metadata:profile_field_textarea:tableexplanation'] = 'Ytterligare profildata';
-$string['privacy:metadata:profile_field_textarea:userid'] = 'ID för användare vars data är lagrad i textområdesfältet';
+$string['privacy:metadata:profile_field_textarea:userid'] = 'ID för användare vars data är lagrad i textfältet';

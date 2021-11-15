@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'E-postskydd';
-$string['privacy:metadata'] = 'Pluginmodulen E-postskydd lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen E-postskydd lagrar ingen personinformation.';

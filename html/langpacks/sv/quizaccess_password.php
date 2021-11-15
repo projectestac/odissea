@@ -25,8 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['passworderror'] = 'Fel lösenord';
-$string['pluginname'] = 'Lösenordsskyddat test';
-$string['privacy:metadata'] = 'Pluginmodulen Lösenord-åtkomstregel för Test lagrar ingen personinformation.';
-$string['quizpassword'] = 'Lösenord för test';
-$string['requirepasswordmessage'] = 'För att få göra testet måste du ha tillgång tilll lösenordet';
+$string['passworderror'] = 'Felaktigt lösenord';
+$string['pluginname'] = 'Lösenordsskyddat kunskapstest';
+$string['privacy:metadata'] = 'Pluginmodulen Lösenordsskyddat kunskapstest lagrar ingen personinformation.';
+$string['quizpassword'] = 'Lösenord för kunskapstest';
+$string['requirepasswordmessage'] = 'För att få göra kunskapstestet måste du känna till lösenordet';

@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Saiakera anitzeko interaktiboa (kreditua aurreko saiakerengatik)';
-$string['privacy:metadata'] = 'Saiakera anitzeko interaktiboa (kreditua aurreko saiakerengatik) galdera-jokaera pluginak ez du datu pertsonalik biltzen.';
+$string['pluginname'] = 'Saiakera anizkoitzeko interaktiboa (kreditua aurreko saiakerengatik)';
+$string['privacy:metadata'] = 'Saiakera anizkoitzeko interaktiboa (kreditua aurreko saiakerengatik) galdera-jokaera pluginak ez du datu pertsonalik biltzen.';

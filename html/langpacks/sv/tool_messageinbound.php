@@ -87,8 +87,8 @@ Om du inte vill fortsätta få dessa notiser kan du ändra dina personliga medde
 $string['messageprocessingsuccesshtml'] = '{$a->html}
 <p>Om du inte vill fortsätta få dessa notiser kan du <a href="{$a->messagepreferencesurl}">ändra dina personliga meddelandeinställningar</a>.</p>';
 $string['messageprovider:invalidrecipienthandler'] = 'Meddelande för att bekräfta att ett inkommande meddelande kom från dig';
-$string['messageprovider:messageprocessingerror'] = 'Varning när ett inkommande meddelande inte kunnat bearbetas.';
-$string['messageprovider:messageprocessingsuccess'] = 'Bekräftelse att ett meddelande har bearbetats framgångsrikt.';
+$string['messageprovider:messageprocessingerror'] = 'Varning när ett inkommande meddelande inte kunnat bearbetas';
+$string['messageprovider:messageprocessingsuccess'] = 'Bekräftelse att ett meddelande har bearbetats';
 $string['name'] = 'Namn';
 $string['noencryption'] = 'Av - ingen kryptering';
 $string['noexpiry'] = 'Förfaller ej';

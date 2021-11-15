@@ -79,7 +79,7 @@ $string['extremovedsuspend'] = 'Inaktiverade registreringen för användare \'{$
 $string['extremovedsuspendnoroles'] = 'Inaktiverade registreringen och tog bort rollerna för användare \'{$a->user_username}\' i kursen \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['extremovedunenrol'] = 'Avregistrera användare \'{$a->user_username}\' i kursen \'{$a->course_shortname}\' (id {$a->course_id})';
 $string['failed'] = 'Misslyckades!';
-$string['general_options'] = 'Allmänna alternativ';
+$string['general_options'] = 'Allmänna inställningar';
 $string['group_memberofattribute'] = 'Namn på attributet som anger vilka grupper en viss användare eller grupp tillhör (t.ex. memberOf, groupMembership, etc.)';
 $string['group_memberofattribute_key'] = '\'Member of\'-attribut';
 $string['host_url'] = 'Ange LDAP-värden i URL-form som \'ldap://ldap.myorg.com/\'
@@ -107,7 +107,7 @@ $string['pluginname'] = 'Kursregistrering via LDAP';
 $string['pluginname_desc'] = '<p>Du kan använda en LDAP-server för att styra dina registreringar. Utgångspunkten är att ditt LDAP-träd innehåller grupper som visar en karta till kurserna och att var och en av dessa grupper/kurser har kartor över medlemsdata som visar vägen till studenterna</p><p>Utgångspunkten är att kurser är definierade som grupper i LDAP där varje grupp har ett flertal fält för medlemsskap (<em>member</em> eller <em>memberUid</em>) som innehåller en unik identifiering av användaren.</p><p>För att använda LDAP-registrering <strong>måste</strong> dina användare ha giltiga fält för ID-nummer. LDAP-grupperna måste ha detta ID-nummer i fältet för medlemmar för att man ska kunna registrera en användare på en kurs. Detta kommer i normalfallet att fungera bra om du redan använder autentisering via LDAP.</p><p>Registreringarna kommer att uppdateras när användaren loggar in. Du kan också köra ett skript för att synkronisera registreringarna. Titta i <em>enrol/ldap/enrol_ldap_sync.php</em>.</p>
 <p>Denna plugin kan också ställas in så att den automatiskt skapar nya kurser när det dyker upp nya grupper i LDAP.</p>';
 $string['pluginnotenabled'] = 'Pluginmodul inaktiverad!';
-$string['privacy:metadata'] = 'Pluginmodulen LDAP-kursregistrering lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen LDAP-kursregistrering lagrar ingen personinformation.';
 $string['role_mapping'] = 'För varje roll måste du ange alla LDAP-sammanhang där grupperna som representerar kurserna finns. Separera olika sammanhang med ett semikolon (;). Du måste också ange det attribut som din LDAP-server använder för att hålla medlemmarna i en grupp. Detta är vanligtvis "member" eller "memberUid".';
 $string['role_mapping_attribute'] = 'LDAP-medlemsattribut för {$a}';
 $string['role_mapping_context'] = 'LDAP-kontext för {$a}';

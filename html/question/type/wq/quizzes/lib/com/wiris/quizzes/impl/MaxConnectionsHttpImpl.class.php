@@ -5,7 +5,7 @@ class com_wiris_quizzes_impl_MaxConnectionsHttpImpl extends com_wiris_quizzes_im
 		if(!php_Boot::$skip_constructor) {
 		parent::__construct($url,$listener);
 		try {
-			$this->max_connections = Std::parseInt(com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$MAXCONNECTIONS));
+			$this->max_connections = Std::parseInt(com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$MAXCONNECTIONS));
 		}catch(Exception $»e) {
 			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
 			$t = $_ex_;

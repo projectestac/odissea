@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['format'] = 'Формат';
 $string['th_details'] = 'Статус';
 $string['th_status'] = 'Статус';

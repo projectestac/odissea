@@ -29,9 +29,9 @@ $string['mode'] = 'Ebaluatze-modua';
 $string['mode_desc'] = '_Parte-hartze kreditua_ metodoak erabiltzen duen lehenetsitako kalifikaziorako ebaluatze-modua.';
 $string['mode_help'] = 'Ebaluatze-moduak ebaluaziorako kalifikazioak nola kalkulatzen diren zehazten du.
 
-* Guztiak edo ezer ez - Ebaluatzaileak esleitutako bidalketa guztiak ebaluatu beharko ditu gehienezko kalifikazioa lortzeko; bestela 0 kalifikazioa jasoko du.
-* Proportzionala - Jasotako kalifikazioa egindako ebaluazioekiko proportzionala izango da. Esleitutako bidalketa guztiak ebaluatzen badira, ebaluatzaileak gehienezko kalifikazioa jasoko du; esleitutako bidalketen erdiak ebaluatzen badira, berrikusleak gehienezko kalifikazioaren erdia jasoko du.
-* Bat gutxienez - Berrikusleak gehienezko kalifikazioa jasotzeko gutxienez esleitutako bidalketa bat ebaluatu beharko du.';
+* Guztiak edo ezer ez - Ebaluatzaileak esleitutako bidalketa guztiak ebaluatu beharko ditu gehieneko kalifikazioa lortzeko; bestela 0 kalifikazioa jasoko du.
+* Proportzionala - Jasotako kalifikazioa egindako ebaluazioekiko proportzionala izango da. Esleitutako bidalketa guztiak ebaluatzen badira, ebaluatzaileak gehieneko kalifikazioa jasoko du; esleitutako bidalketen erdiak ebaluatzen badira, berrikusleak gehieneko kalifikazioaren erdia jasoko du.
+* Bat gutxienez - Berrikusleak gehieneko kalifikazioa jasotzeko gutxienez esleitutako bidalketa bat ebaluatu beharko du.';
 $string['modeall'] = 'Guztiak edo ezer ez';
 $string['modeone'] = 'Bat gutxienez';
 $string['modeproportional'] = 'Proportzionala';

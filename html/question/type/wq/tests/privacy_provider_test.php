@@ -56,7 +56,7 @@ class mod_qtype_wq_provider_testcase extends \core_privacy\tests\provider_testca
     /**
      * {@inheritdoc}
      */
-    protected function setUp() {
+    protected function setUp(): void {
         $this->resetAfterTest();
 
         global $DB;

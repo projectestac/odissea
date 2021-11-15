@@ -83,7 +83,7 @@ $string['depending_help'] = 'Esta opção permite que uma questão só seja exib
     <li>Adicione as perguntas cuja exibição depende da resposta à pergunta anterior.<br />
     <li>Selecione a pergunta na lista "Dependência de" e indique o valor necessário na caixa de texto "Resposta requerida".</li>
 </ol>
-<strong>Por exemplo:</strong>
+<strong>Exemplo:</strong>
 <ol>
     <li>Questão: Tem um carro? R: sim/não</li>
     <li>Quebra de página</li>
@@ -106,7 +106,7 @@ $string['dropdownrated'] = 'Lista pendente (c/escala)';
 $string['edit_item'] = 'Editar questão';
 $string['edit_items'] = 'Editar questões';
 $string['email_notification'] = 'Ativar notificação de submissões';
-$string['email_notification_help'] = 'Se ativar esta opção, os Professores serão notificados por e-mail sempre que houverem novas submissões de inquéritos.';
+$string['email_notification_help'] = 'Se ativar esta opção, os professores serão notificados por e-mail sempre que houverem novas submissões de inquéritos.';
 $string['emailteachermail'] = 'O utilizador {$a->username} respondeu ao inquérito:
 \'{$a->feedback}\'
 
@@ -255,9 +255,9 @@ $string['save_entries'] = 'Submeter respostas';
 $string['save_item'] = 'Guardar';
 $string['saving_failed'] = 'Erro ao guardar';
 $string['search:activity'] = 'Inquérito - informações da atividade';
-$string['search_course'] = 'Procurar disciplina';
-$string['searchcourses'] = 'Procurar disciplinas';
-$string['searchcourses_help'] = 'Procurar pelo código ou nome da(s) disciplina(s) que pretende associar a este inquérito.';
+$string['search_course'] = 'Pesquisar disciplina';
+$string['searchcourses'] = 'Pesquisar disciplinas';
+$string['searchcourses_help'] = 'Pesquisar pelo código ou nome da(s) disciplina(s) que pretende associar a este inquérito.';
 $string['selected_dump'] = 'Os índices selecionados da variável <b>$SESSION</b> são apresentados na lista seguinte:';
 $string['send'] = 'Enviar';
 $string['send_message'] = 'Enviar notificação';

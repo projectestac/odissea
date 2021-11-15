@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = '代数表达式';
 $string['filtername'] = '代数符号';
+$string['privacy:metadata'] = '代数符号插件不存储任何个人数据。';

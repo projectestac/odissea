@@ -32,6 +32,6 @@ $string['noimages'] = 'Sin imágenes';
 $string['nolinks'] = 'Sin enlaces';
 $string['nostyles'] = 'Sin estilos';
 $string['pluginname'] = 'Ayudante de lector de pantalla';
-$string['privacy:metadata'] = 'El plugin atto_accessibilityhelper no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_accessibilityhelper no almacena ningún dato personal.';
 $string['selectimage'] = 'Seleccionar imagen';
 $string['selectlink'] = 'Seleccionar enlace';

@@ -102,6 +102,8 @@ $string['limitanswers'] = 'Limiter le nombre de réponses';
 $string['limitanswers_help'] = 'Cette option vous permet de limiter le nombre de participants dans un groupe. Lorsque la limite est atteinte, personne d\'autre ne peut sélectionner ce groupe.
 
 Si les limites sont désactivées, n\'importe quel nombre de participants peut s\'inscrire dans le groupe.';
+$string['maxenrollments'] = 'Inscriptions max.';
+$string['maxenrollments_help'] = 'Cette option permet de limiter le nombre d\'inscriptions de groupe pour un participant. Utilisez la valeur par défaut **0** s\'il n\'y a pas de limite.';
 $string['members/'] = 'Membres';
 $string['members/max'] = 'Membres / Capacité';
 $string['modulename'] = 'Choix de Groupe';
@@ -109,6 +111,7 @@ $string['modulename_help'] = 'Le module « Choix de Groupe » permet à l\'ens
 $string['modulenameplural'] = 'Choix de Groupe';
 $string['moveselectedusersto'] = 'Déplacer les utilisateurs sélectionnés pour…';
 $string['multipleenrollmentspossible'] = 'Permettre l\'inscription à plusieurs groupes';
+$string['mustchoosemax'] = 'Vous devez choisir un maximum de {$a} groupes. Rien n\'a été enregistré.';
 $string['mustchooseone'] = 'Vous devez choisir une réponse avant de l\'enregistrer. Rien n\'a été sauvegardé.';
 $string['name'] = 'Nom';
 $string['neverresultsviewable'] = 'Les résultats ne sont pas visibles.';
@@ -120,6 +123,7 @@ $string['notenrolledchoose'] = 'Désolé, seuls les utilisateurs inscrits sont a
 $string['notopenyet'] = 'Désolé, cette activité est indisponible avant le {$a}';
 $string['notyetresultsviewable'] = 'Les résultats ne seront visibles que lorsque cette activité sera terminée.';
 $string['numberofuser'] = 'Nombre d\'utilisateurs';
+$string['onlyactive'] = 'Filtrer les données de réponse pour les utilisateurs dont les inscriptions ont expiré ou sont suspendues';
 $string['option'] = 'Groupe';
 $string['page-mod-choice-x'] = 'Toutes les pages du module Choix du groupe';
 $string['pleaseselectonegroup'] = 'Veuillez sélectionner au moins un groupe comme choix pour les utilisateurs.';

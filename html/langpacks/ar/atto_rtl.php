@@ -27,5 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['ltr'] = 'اليسار إلى اليمين';
 $string['pluginname'] = 'يمين-يسار/يسار-يمين';
-$string['privacy:metadata'] = 'إن ملحق atto_rtl لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_rtl لا تخزن أي بيانات شخصية.';
 $string['rtl'] = 'اليمين إلى اليسار';

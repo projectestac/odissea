@@ -81,7 +81,7 @@ $string['cannotexportforum'] = 'Ezin duzu foro hau esportatu';
 $string['cannotfavourite'] = 'Sentitzen dugu, baina ez duzu eztabaidak gogoko gisa markatzeko baimenik.';
 $string['cannotfinddiscussion'] = 'Ezin duzu eztabaidarik aurkitu foro honetan';
 $string['cannotfindfirstpost'] = 'Ezin da lehenbiziko mezua aurkitu foro honetan';
-$string['cannotfindorcreateforum'] = 'Ezin da gune honetako berrien foro nagusia aurkitu edo sortu';
+$string['cannotfindorcreateforum'] = 'Ezin da gune honetako albisteen foro nagusia aurkitu edo sortu';
 $string['cannotfindparentpost'] = 'Ezin da {$a} mezuaren goragoko kategoria aurkitu';
 $string['cannotmovefromsingleforum'] = 'Ezin da eztabaida mugitu eztabaida arrunt bakarra motako foro batetik';
 $string['cannotmovenotvisible'] = 'Foroa ez dago ikusgai';
@@ -130,8 +130,8 @@ $string['configenablerssfeeds'] = 'Honek RSS jarioetarako aukera gaitzen du foro
 $string['configenabletimedposts'] = 'Aukeratu \'bai\' foroan beste eztabaida bat erakusteko denbora tarteen ezarpenak egiten uzteko.';
 $string['configlongpost'] = 'Luzera hau gainditzen duen mezua (HTML kodea albo batera utzirik) luzeegitzat jotzen da. Gunearen hasiera-orrian, foro-formatua duten ikastaroetako orrietan edo erabiltzaile-profiletan erakutsitako mezuak laburtuko dira forum_shortpost eta forum_longpost arteko tamaina natural bateraino. Luzera hau gainditzen duen mezua (HTML kodea albo batera utzirik) luzeegitzat jotzen da.';
 $string['configmanydiscussions'] = 'Orrialde bakoitzean gehienez zenbat mezu edo eztabaida erakutsi behar diren';
-$string['configmaxattachments'] = 'Lehenetsitako gehienezko eranskin kopurua mezuko.';
-$string['configmaxbytes'] = 'Gune honetan foroetako mezuen eranskinek izan dezaketen gehienezko tamaina, besterik adierazi ezean (zerbitzariaren ezarpenen eta ikastaroaren mugen baitan)';
+$string['configmaxattachments'] = 'Lehenetsitako gehieneko eranskin kopurua mezuko.';
+$string['configmaxbytes'] = 'Gune honetan foroetako mezuen eranskinek izan dezaketen gehieneko tamaina, besterik adierazi ezean (zerbitzariaren ezarpenen eta ikastaroaren mugen baitan)';
 $string['configoldpostdays'] = 'Mezuak zenbat egunetatik aurrera hartuko diren irakurritzat';
 $string['configreplytouser'] = 'Foroetako mezu baten jakinarazpena posta elektronikoz bidaltzen bada, erabiltzailearen helbide elektronikoa izan behar al du jasotzen dutenek foroan erantzun beharrean zuzenean erantzun ala izateko? Nahiz eta \'bai\' aukeratu, erabiltzaileek beren profilean erabaki dezakete helbide elektronikoa sekretupean mantentzea.';
 $string['configrssarticlesdefault'] = 'RSS jarioak gaituta egonez gero, ezarri lehenetsitako artikulu kopurua (eztabaidak edota mezuak).';
@@ -311,7 +311,7 @@ $string['forum:postprivatereply'] = 'Erantzun mezuei modu pribatuan';
 $string['forum:postwithoutthrottling'] = 'Blokeoa eragiteko mezu-kopururik gabe';
 $string['forum:rate'] = 'Kalifikatu mezuak';
 $string['forum:readprivatereplies'] = 'Ikusi erantzun pribatuak';
-$string['forum:replynews'] = 'Erantzun berrien foroari';
+$string['forum:replynews'] = 'Erantzun albisteen foroari';
 $string['forum:replypost'] = 'Erantzun mezuei';
 $string['forum:splitdiscussions'] = 'Bereizi eztabaidak';
 $string['forum:startdiscussion'] = 'Hasi beste eztabaida bat';
@@ -323,7 +323,7 @@ $string['forum:viewqandawithoutposting'] = 'Ikusi beti G eta E mezuak';
 $string['forum:viewrating'] = 'Ikusi denera jasotako kalifikazioak';
 $string['forum:viewsubscribers'] = 'Ikusi harpidedunak';
 $string['forumauthorhidden'] = 'Egilea (ezkutuan)';
-$string['forumblockingalmosttoomanyposts'] = 'Gehienezko mezu-kopurutik hurbil zaude. {$a->numposts} bidali dituzu azken {$a->blockperiod} eta gehienez {$a->blockafter} bidal daitezke.';
+$string['forumblockingalmosttoomanyposts'] = 'Gehieneko mezu-kopurutik hurbil zaude. {$a->numposts} bidali dituzu azken {$a->blockperiod} eta gehienez {$a->blockafter} bidal daitezke.';
 $string['forumbodydeleted'] = 'Foroko mezu honetako edukiak ezabatuak izan dira eta ez daude eskuragarri.';
 $string['forumbodyhidden'] = 'Mezu hau ezkutuan dago une honetan, ziurrenik aurretik eztabaida honetara mezua bidali behar duzulako. Beste aukera bat une honetan mezua ikusteko epetik kanpo egotea izan daiteke.';
 $string['forumgrader'] = 'Foroko kalifikatzailea';
@@ -369,7 +369,7 @@ $string['hiddenforumpost'] = 'Ezkutatutako foro-mezua';
 $string['hidegraderpanel'] = 'Ezkutatu kalifikatzaile-panela';
 $string['hidepreviousrepliescount'] = 'Ezkutatu aurreko erantzunak  ({$a})';
 $string['hideusersearch'] = 'Ezkutatu erabiltzaile-bilaketa';
-$string['indexoutoftotal'] = '{$a->index}.a gehienezko {$a->total}(e)tik';
+$string['indexoutoftotal'] = '{$a->index}.a gehieneko {$a->total}(e)tik';
 $string['indicator:cognitivedepth'] = 'Gaitasun kognitiboa foroetan';
 $string['indicator:cognitivedepth_help'] = 'Adierazle hau ikasleak Foroa motako jardueretan lortutako sakonera kognitiboan oinarrituta dago.';
 $string['indicator:cognitivedepthdef'] = 'Gaitasun kognitiboa foroetan';
@@ -382,7 +382,7 @@ $string['inforum'] = 'Non: {$a}';
 $string['inpagereplysubject'] = 'Re: {$a}';
 $string['inreplyto'] = '{$a}(e)ri erantzunda';
 $string['introblog'] = 'Foro honetako mezuak automatikoki ekarri dira erabiltzaileen blogetatik blog sarrera hauek dagoeneko ez daudelako eskuragarri';
-$string['intronews'] = 'Berri orokorrak eta iragarpenak';
+$string['intronews'] = 'Albiste orokorrak eta iragarpenak';
 $string['introsocial'] = 'Foro ireki bat nahi duzun edozertaz aritzeko';
 $string['introteacher'] = 'Soilik irakasleek erabiliko duten ohar eta eztabaida foroa';
 $string['invalidaccess'] = 'Orri honetarako sarbidea ez da zuzena izan';
@@ -417,15 +417,15 @@ $string['markread'] = 'Markatu irakurritzat';
 $string['markreadbutton'] = 'Markatu<br/>irakurritzat';
 $string['markunread'] = 'Markatu irakurri gabeko gisa';
 $string['markunreadbutton'] = 'Markatu irakurri<br />gabeko gisa';
-$string['maxattachments'] = 'Gehienezko eranskin-kopurua';
+$string['maxattachments'] = 'Gehieneko eranskin-kopurua';
 $string['maxattachments_help'] = 'Ezarpen honek foroetako mezu bati gehienez zenbat eranskin gehitu ahal zaizkion zehazten du.';
-$string['maxattachmentsize'] = 'Eranskinaren gehienezko tamaina';
-$string['maxattachmentsize_help'] = 'Ezarpen honek zehazten du foro batera eranskin gisa bidal daitekeen fitxatategiaren gehienezko tamaina zein den.';
-$string['maxtimehaspassed'] = 'Sentitzen dugu, mezu hau({$a}) editatzeko gehienezko denbora amaitu da!';
+$string['maxattachmentsize'] = 'Eranskinaren gehieneko tamaina';
+$string['maxattachmentsize_help'] = 'Ezarpen honek zehazten du foro batera eranskin gisa bidal daitekeen fitxatategiaren gehieneko tamaina zein den.';
+$string['maxtimehaspassed'] = 'Sentitzen dugu, mezu hau({$a}) editatzeko gehieneko denbora amaitu da!';
 $string['message'] = 'Mezua';
 $string['messageinboundattachmentdisallowed'] = 'Ezin izan da zure erantzuna bidali, erantzunak eranskinen bat zuelako eta foroak ez duelako eranskinak baimentzen.';
-$string['messageinboundfilecountexceeded'] = 'Ezin izan da zure erantzuna bidali, foroan baimendutako gehienezko eranskin kopurua ({$a->forum->maxattachments}) baino gehiago zituelako.';
-$string['messageinboundfilesizeexceeded'] = 'Ezin izan da zure erantzuna bidali, eranskinen tamaina osoa ({$a->filesize}) foroan baimendutako eranskinen gehienezko tamaina ({$a->maxbytes}) baino handiagoa delako.';
+$string['messageinboundfilecountexceeded'] = 'Ezin izan da zure erantzuna bidali, foroan baimendutako gehieneko eranskin kopurua ({$a->forum->maxattachments}) baino gehiago zituelako.';
+$string['messageinboundfilesizeexceeded'] = 'Ezin izan da zure erantzuna bidali, eranskinen tamaina osoa ({$a->filesize}) foroan baimendutako eranskinen gehieneko tamaina ({$a->maxbytes}) baino handiagoa delako.';
 $string['messageinboundforumhidden'] = 'Ezin izan da zure erantzuna bidali, foroa une honetan ez-eskuragarri dagoelako.';
 $string['messageinboundnopostforum'] = 'Ezin izan da zure erantzuna bidali, {$a->forum->name} foroan idazteko baimenik ez duzulako.';
 $string['messageinboundthresholdhit'] = 'Ezin izan da zure erantzuna bidali. Foro honetara bidalitako mezu-kopuruaren atalasea gainditu duzu';
@@ -446,10 +446,10 @@ Ikasle eta irakasleak foroetako mezuen jakinarazpenak jasotzeko harpidetu daitez
 
 Irakasleek foroetako mezuak kalifika ditzakete, baita ikasleek ere (parekoen arteko ebaluazioa). Ebaluazioak batu daitezke behin-betiko ebaluazioa lortzeko, eta azken hau izango da kalifikatzailean gordeko dena.
 
-Foroak erabilera anitzak izan ditzake, hala nola
+Foroak erabilera anitz izan ditzake, hala nola
 
 * Ikasleentzako gune sozial gisa, elkar ezagut dezaten.
-* Ikastaroko jakinarazpenak egiteko (behartutako harpidetza duen berrien foro bat erabilita)
+* Ikastaroko jakinarazpenak egiteko (behartutako harpidetza duen albisteen foro bat erabilita)
 * Ikastaroko edukiak edo irakurgaiak eztabaidatzeko.
 * Aurrez aurreko saioan planteatutako arazo bati on-line jarraipena emateko
 * Irakasleen arteko eztabaidak egiteko (ezkutaturiko foro bat erabiliz)
@@ -465,8 +465,8 @@ $string['mustprovidediscussionorpost'] = 'Esportatzeko eztabaidaren IDa edo mezu
 $string['myprofileotherdis'] = 'Foro-eztabaidak';
 $string['myprofileowndis'] = 'Nire foro-eztabaidak';
 $string['myprofileownpost'] = 'Nire foroetako mezuak';
-$string['namenews'] = 'Berriak';
-$string['namenews_help'] = 'Berrien foroa jakinarazpenetarako foro berezia da eta automatikoki sortzen da ikastaro bat sortzen denean. Ikastaro batek berrien foro bakarra izan ahal du. Soilik irakasleek eta kudeatzaileek idatzi ditzakete berriak. "Azken berriak" blokeak foro berezi honetako azken eztabaidak erakusten ditu.';
+$string['namenews'] = 'Albisteak';
+$string['namenews_help'] = 'Albisteen foroa jakinarazpenetarako foro berezia da eta automatikoki sortzen da ikastaro bat sortzen denean. Ikastaro batek albisteen foro bakarra izan ahal du. Soilik irakasleek eta kudeatzaileek idatzi ditzakete albisteak. "Azken albisteak" blokeak foro berezi honetako azken eztabaidak erakusten ditu.';
 $string['namesocial'] = 'Foro irekia';
 $string['nameteacher'] = 'Irakasleen foroa';
 $string['newforumposts'] = 'Foroetako mezu berriak';
@@ -480,7 +480,7 @@ $string['noguestpost'] = 'Sentitzen dugu, bisitariek ezin dute mezurik bidali.';
 $string['noguestsubscribe'] = 'Sentitzen dugu, bisitariek ez dute harpidetzeko baimenik.';
 $string['noguesttracking'] = 'Sentitzen dugu, bisitariek ezin dituzte mezuen jarraipenerako aukerak aldatu.';
 $string['nomorepostscontaining'] = 'Ez dago \'{$a}\' duen mezu gehiago';
-$string['nonews'] = 'Oraindik ez da mezurik bidali.';
+$string['nonews'] = 'Oraindik ez da albisterik bidali.';
 $string['noonecansubscribenow'] = 'Harpisdetzak ez daude baimenduta orain';
 $string['nopermissiontosubscribe'] = 'Ez duzu foroko harpidedunak ikusteko baimenik.';
 $string['nopermissiontoview'] = 'Ez duzu mezu hau ikusteko baimenik.';
@@ -534,11 +534,13 @@ $string['postbymailsuccess'] = '"{$a->subject}" gaia duen mezuari emandako erant
 $string['postbymailsuccess_html'] = '<a href="{$a->discussionurl}">"{$a->subject}"</a> gaia duen mezuari emandako erantzuna ondo publikatu da.';
 $string['postbyuser'] = '{$a->user}-(r)en {$a->post}';
 $string['postincontext'] = 'Ikusi mezu hau bere testuinguruan';
-$string['postisprivatereply'] = 'Hau erantzun pribatu bat da. Beste erabiltzaileek ezin dute ikusi.';
+$string['postisprivatereply'] = 'Hau erantzun pribatu bat da. Soilik zuretzako eta edonoren erantzun pribatuak ikusteko baimena dutenentzako egongo da ikusgai, hala nola irakasleak edo kudeatzaileak.';
+$string['postmailinfo'] = 'Hau {$a} helbidean argitaratutako mezu baten kopia da.';
 $string['postmailinfolink'] = 'Hau {$a->coursename} ikastaroan argitaratutako mezu baten kopia da.
 
 Erantzuteko egin klik esteka honetan: {$a->replylink}';
 $string['postmailnow'] = '<p>Mezu hau forora harpidetutako partaide guztiei berehala bidaliko zaie.</p>';
+$string['postmailreply'] = 'Erantzuteko, egin klik esteka honetan: {$a}';
 $string['postmailsubject'] = '{$a->courseshortname}: {$a->subject}';
 $string['postrating1'] = 'Batez ere banatutako jakintza';
 $string['postrating2'] = 'Banatuta eta lotuta';
@@ -673,10 +675,10 @@ $string['searchusers'] = 'Bilatu erabiltzaileak';
 $string['searchwhichforums'] = 'Aukeratu zein forotan bilatu behar den';
 $string['searchwords'] = 'Hitz hauek mezuaren edozein lekutan ager daitezke';
 $string['seeallposts'] = 'Ikusi erabiltzaile honen mezu guztiak';
-$string['sendstudentnotificationsdefault'] = '"Jakinarazi ikasleak" ezarpenaren balio lehenetsia';
-$string['sendstudentnotificationsdefault_help'] = 'Zehaztu ezazu ebaluazio-formularioko "Jakinarazi ikasleak" laukitxoaren balio lehenetsia.';
+$string['sendstudentnotificationsdefault'] = '"Jakinarazi ikasleari" ezarpenaren balio lehenetsia';
+$string['sendstudentnotificationsdefault_help'] = 'Zehaztu kalifikazio formularioaren "Jakinarazi ikasleari" laukitxoaren lehenetsitako balioa.';
 $string['sendstudentnotificationsno'] = 'Ez';
-$string['sendstudentnotificationsyes'] = 'Bai, bidali jakinarazpena ikasleari';
+$string['sendstudentnotificationsyes'] = 'Bai, jakinarazi ikasleari';
 $string['settings'] = 'Ezarpenak';
 $string['shortpost'] = 'Mezu laburra';
 $string['showgraderpanel'] = 'Erakutsi kalifikatzaile-panela';
@@ -771,7 +773,7 @@ $string['viewgrades'] = 'Ikusi kalifikazioak';
 $string['viewparentpost'] = 'Erakutsi abiapuntuko mezua';
 $string['viewthediscussion'] = 'Ikusi eztabaida';
 $string['warnafter'] = 'Abisua jasotzeko mezu-kopurua';
-$string['warnafter_help'] = 'Ikasleek abisua jaso dezakete denbora-tarte baterako ezarritako gehienezko mezu-kopurura hurbiltzen direnean. Ezarpen honek zehazten du zenbat mezuren ondoren jasoko duten abisua. mod/forum:postwithoutthrottling gaitasuna duten erabiltzaileek ez dute mezu-mugarik izango.';
+$string['warnafter_help'] = 'Ikasleek abisua jaso dezakete denbora-tarte baterako ezarritako gehieneko mezu-kopurura hurbiltzen direnean. Ezarpen honek zehazten du zenbat mezuren ondoren jasoko duten abisua. mod/forum:postwithoutthrottling gaitasuna duten erabiltzaileek ez dute mezu-mugarik izango.';
 $string['warnformorepost'] = 'Kontuz! Eztabaida bat baino gehiago dago foro honetan - erabili berriena';
 $string['yournewquestion'] = 'Zure galdera berria';
 $string['yournewtopic'] = 'Zure eztabaidagai berria';

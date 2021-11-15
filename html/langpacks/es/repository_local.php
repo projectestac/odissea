@@ -32,4 +32,5 @@ $string['local:view'] = 'Ver repositorio del servidor';
 $string['notitle'] = 'sin título';
 $string['pluginname'] = 'Archivos locales';
 $string['pluginname_help'] = 'Repositorio en el servidor local de Moodle';
+$string['privacy:metadata'] = 'El plugin de repositorio de servidor de archivos no almacena ni envía ningún dato personal.';
 $string['remember'] = 'Recordarme';

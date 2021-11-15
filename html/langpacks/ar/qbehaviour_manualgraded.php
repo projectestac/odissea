@@ -25,5 +25,5 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'منح العلامات يدوياً';
-$string['privacy:metadata'] = 'إن ملحق سلوك السؤال، منح العلامات يدوياً لا يخزن أي بيانات شخصية.';
+$string['pluginname'] = 'منح التقديرات يدوياً';
+$string['privacy:metadata'] = 'إن ملحق سلوك السؤال، منح التقديرات يدوياً لا يخزن أي بيانات شخصية.';

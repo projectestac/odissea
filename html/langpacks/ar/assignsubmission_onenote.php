@@ -25,11 +25,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configmaxbytes'] = 'أقصى حجم لصفحة OneNote';
+$string['enabled_help'] = 'عند تمكينه، سيتمكن الطلاب من رفع صفحة أو أكثر من OneNote بمثابة تسليمهم.';
 $string['eventassessableuploaded'] = 'صفحة OneNote تم رفعها';
+$string['maxbytes'] = 'أقصى حجم لصفحة OneNote';
 $string['maxfilessubmission'] = 'أقصى عدد من صفحات OneNote المرفوعة';
+$string['maxfilessubmission_help'] = 'إذا تم تمكين تسليمات OneNote، سيتمكن كل طالب من رفع ما يصل إلى هذا العدد من صفحات OneNote لتسليمه.';
+$string['maximumsubmissionsize'] = 'حجم صفحة OneNote';
 $string['maximumsubmissionsize_help'] = 'تعيين أقصى حجم للتسليم في صفحات OneNote.';
+$string['numfilesforlog'] = 'عدد صفحات OneNote: {$a}';
 $string['pluginname'] = 'تسليمات OneNote';
 $string['privacy:metadata:assignmentid'] = 'مُعرَّف الواجب';
 $string['privacy:metadata:numfiles'] = 'عدد الملفات';
 $string['siteuploadlimit'] = 'حد الرفع في الموقع';
 $string['submissionfilearea'] = 'صفحات OneNote المرفوعة للتسليم';
+$string['viewsubmissionwarning'] = 'تنبيه: معاينة التسليم سيؤدي إلى الكتابة على صفحة OneNote الخاصة بك لهذا التسليم باستعمال النسخة الأحدث من المتعلم.';

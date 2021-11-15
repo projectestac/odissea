@@ -69,7 +69,7 @@ $string['metadatasourcelabel'] = 'رابط مسار البيانات الوصف�
 $string['mute'] = 'مكتوم';
 $string['pluginname'] = 'أدخل ملف صوت/فيديو أو عدله';
 $string['poster'] = 'رابط الصورة المصغرة';
-$string['privacy:metadata'] = 'إن ملحق atto_media لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_media لا تخزن أي بيانات شخصية.';
 $string['remove'] = 'إزالة';
 $string['size'] = 'الحجم';
 $string['srclang'] = 'اللغة';

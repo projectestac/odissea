@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'Pechan as avaliacións:';
+$string['activitydate:assessmentsclosed'] = 'Avaliacións pechadas:';
+$string['activitydate:assessmentsopen'] = 'Abren as avaliacións:';
+$string['activitydate:assessmentsopened'] = 'Avaliacións abertas:';
+$string['activitydate:submissionsclose'] = 'Pechan as entregas';
+$string['activitydate:submissionsclosed'] = 'Entregas pechados:';
+$string['activitydate:submissionsopen'] = 'Abren as entregas:';
+$string['activitydate:submissionsopened'] = 'Entregas abertas:';
 $string['aggregategrades'] = 'Volver calcular as cualificacións';
 $string['aggregation'] = 'Agregación de cualificacións';
 $string['allocate'] = 'Asignar entregas';
@@ -267,6 +275,22 @@ $string['privacy:metadata:late'] = 'Se a presentación foi presentada após o pr
 $string['privacy:metadata:peercomment'] = 'Comentario sobre a cualificación dada polo usuario que fornece a avaliación';
 $string['privacy:metadata:peercommentformat'] = 'Formato de texto do comentario na cualificación dada';
 $string['privacy:metadata:preference:perpage'] = 'Número de entregas que o usuario prefire ver nunha páxina';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = 'O estado contraído/expandido para o visor «Entregas de exemplos»';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = 'O estado contraído/expandido para o visor «Informe de entregas do obradoiro»';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = 'O estado contraído/expandido para o visor «Formulario de avaliación»';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = 'O estado contraído/expandido para o visor «Entregas asignadas para avaliar»';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = 'O estado contraído/expandido para o visor « Caixa de ferramentas do obradoiro»';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = 'O estado contraído/expandido para o visor «Conclusión»';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = 'O estado contraído/expandido para o visor «Entregas de exemplo para avaliar»';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = 'O estado contraído/expandido para o visor «Entregas de exemplo para avaliar»';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = 'O estado contraído/expandido para o visor «Informe de cualificacións do obradoiro»';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = 'O estado contraído/expandido para o visor «Instrucións para a entrega»';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = 'O estado contraído/expandido para o visor «Instrucións para a avaliación»';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = 'O estado contraído/expandido para o visor «Introdución»';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = 'O estado contraído/expandido para o visor «Comentarios xerais»';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = 'O estado contraído/expandido para o visor «A súa entrega»';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = 'O estado contraído/expandido para o visor «Entregas publicadas»';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = 'O estado contraído/expandido para o visor «As súas cualificacións»';
 $string['privacy:metadata:published'] = 'Se a entrega debe ser publicada a todos os participantes unha vez que o obradoiro estea pechado';
 $string['privacy:metadata:reviewerid'] = 'ID do usuario que fornece a avaliación';
 $string['privacy:metadata:strategy'] = 'Nome do subgrupo de estratexia de cualificación que interpreta os valores de rexistro';
@@ -432,3 +456,4 @@ $string['workshopname'] = 'Nome do obradoiro';
 $string['yourassessmentfor'] = 'A súa avaliación para {$a}';
 $string['yourgrades'] = 'A súa cualificación';
 $string['yoursubmission'] = 'A súa entrega';
+$string['yoursubmissionwithassessments'] = 'A súa entraga con avaliacións';

@@ -96,6 +96,7 @@ $string['myattempts'] = 'I miei tentativi';
 $string['no_compatible_track'] = 'Questa interazione ({$a}) non fornisce informazioni di tracciamento o il tracciamento
         che fornisce non è compatibile con la versione attuale dell\'attività.';
 $string['noparticipants'] = 'Non sono presente partecipanti da visualizzare';
+$string['opencontentbank'] = '<a href="{$a}" target="_blank">Accedi al file H5P nel deposito dei contenuti</a> (apre in una nuova finestra).';
 $string['outcome'] = 'Risultato';
 $string['package'] = 'File del pacchetto';
 $string['package_help'] = 'Il file del pacchetto è un file h5p che contiene l\'interazione H5P.';

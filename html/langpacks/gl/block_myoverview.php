@@ -48,6 +48,7 @@ $string['aria:lastaccessed'] = 'Ordenar os cursos pola última data de acceso';
 $string['aria:list'] = 'Cambiar a vista de lista';
 $string['aria:past'] = 'Amosar cursos pasados';
 $string['aria:removefromfavourites'] = 'Retirarlle o destaque para';
+$string['aria:shortname'] = 'Ordenar os cursos polo nome abreviado do curso';
 $string['aria:showcourse'] = 'Restaurar {$a} para vista';
 $string['aria:sortingdropdown'] = 'Ordenación do menú despregábel';
 $string['aria:summary'] = 'Cambiar a vista de resumo';

@@ -33,6 +33,7 @@ $string['pluginname_help'] = 'Desde la perspectiva del alumno, es muy semejante 
 $string['pluginnameadding'] = 'Añadir una pregunta de tipo Emparejamiento aleatorio';
 $string['pluginnameediting'] = 'Editar una pregunta de tipo Emparejamiento aleatorio';
 $string['pluginnamesummary'] = 'Como una pregunta de Emparejamiento, pero creada aleatoriamente a partir de las preguntas de Respuesta corta de una categoría en concreto.';
+$string['privacy:metadata'] = 'El complemento de tipo de pregunta de coincidencia de respuesta corta aleatoria no almacena ningún dato personal.';
 $string['randomsamatch'] = 'Emparejamiento aleatorio';
 $string['randomsamatchintro'] = 'Para cada una de las siguientes preguntas, selecciona la respuesta correcta en el menú.';
 $string['randomsamatchnumber'] = 'Número de preguntas a elegir';

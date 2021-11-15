@@ -51,9 +51,18 @@ class qtype_essaywiris_question extends qtype_wq_question implements question_ma
 
     private function is_cas_replace_input() {
         //@codingStandardsIgnoreStart
-        $keyshowcas = $this->wirisquestion->question->getProperty(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_SHOW_CAS);
+        $wrap = com_wiris_system_CallWrapper::getInstance();
+        $wrap->start();
+        $slots = $this->wirisquestion->question->getSlots();
+        if (isset($slots[0])) {
+            $keyshowcas = $slots[0]->getProperty(com_wiris_quizzes_api_PropertyName::$SHOW_CAS); // @codingStandardsIgnoreLine
+        } else {
+            $keyshowcas = $this->wirisquestion->question->getProperty(com_wiris_quizzes_api_PropertyName::$SHOW_CAS); // @codingStandardsIgnoreLine
+        }
+        $wrap->stop();
         $valueshowcasreplaceinput = com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_SHOW_CAS_REPLACE;
         //@codingStandardsIgnoreEnd
+
         $replace = ($keyshowcas == $valueshowcasreplaceinput);
         return $replace;
     }
@@ -61,8 +70,8 @@ class qtype_essaywiris_question extends qtype_wq_question implements question_ma
     public function is_complete_response(array $response) {
         $complete = parent::is_complete_response($response);
         if (!$complete && $this->is_cas_replace_input() && isset($response['_sqi'])) {
-            $builder = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
-            $sqi = $builder->readQuestionInstance($response['_sqi']);
+            $builder = com_wiris_quizzes_api_Quizzes::getInstance();
+            $sqi = $builder->readQuestionInstance($response['_sqi'], $this->wirisquestion);
             //@codingStandardsIgnoreLine
             $studentcas = $sqi->instance->getLocalData(com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_CAS_SESSION);
             // Note that the $studentcas is null if the student does not update

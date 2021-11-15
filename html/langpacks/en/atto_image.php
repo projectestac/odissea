@@ -39,6 +39,7 @@ $string['enteralt'] = 'Describe this image for someone who cannot see it';
 $string['enterurl'] = 'Enter URL';
 $string['height'] = 'Height';
 $string['imageproperties'] = 'Image properties';
+$string['imageurlrequired'] = 'An image must have a URL.';
 $string['pluginname'] = 'Insert or edit image';
 $string['presentation'] = 'This image is decorative only';
 $string['presentationoraltrequired'] = 'An image must have a description, unless it is marked as decorative only.';

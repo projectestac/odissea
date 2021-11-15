@@ -48,6 +48,7 @@ $string['event:types'] = 'أنواع التسليمات';
 $string['item:description'] = 'الوصف';
 $string['item:event'] = 'الحدث';
 $string['item:invalidvalue'] = 'القيمة المعطاة خاطئة!';
+$string['item:section:personaldata'] = 'البيانات الشخصية';
 $string['item:submit'] = 'أضف تسليم جديد';
 $string['item:title'] = 'العنوان';
 $string['item:title_post'] = 'المنصب الأكاديمي (بعد الاسم)';

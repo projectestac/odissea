@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'إجراءات';
 $string['activities'] = 'الأنشطة';
-$string['addcohorts'] = 'أضف أفواجاً';
+$string['addcohorts'] = 'إضافة دفعات';
 $string['addcohortstosync'] = 'أضف الدُفعات للمزامنة';
 $string['addcompetency'] = 'أضف كفاءة';
 $string['addcoursecompetencies'] = 'أضف كفاءات إلى المادة';
@@ -43,7 +43,7 @@ $string['aisrequired'] = '\'{$a}\' مطلوب';
 $string['aplanswerecreated'] = 'تم إنشاء خطط التعلم {$a}.';
 $string['aplanswerecreatedmoremayrequiresync'] = 'تم إنشاء خطط تعلم {$a} ؛
  سيتم إنشاء المزيد أثناء المزامنة التالية.';
-$string['assigncohorts'] = 'تعيين الأفواج';
+$string['assigncohorts'] = 'تعيين دفعات';
 $string['averageproficiencyrate'] = 'متوسط معدل الكفاءة لخطط التعلم المكتملة بناءً على هذا القالب هو {$a}٪.';
 $string['cancelreviewrequest'] = 'إلغاء طلب المراجعة';
 $string['cannotaddrules'] = 'لا يمكن تكوين هذه الكفاءة.';
@@ -51,7 +51,7 @@ $string['cannotcreateuserplanswhentemplateduedateispassed'] = 'لا يمكن إ�
 $string['cannotcreateuserplanswhentemplatehidden'] = 'لا يمكن إنشاء خطط تعلم جديدة عند إخفاء هذا القالب.';
 $string['category'] = 'الفئة';
 $string['chooserating'] = 'إختر التقييم ...';
-$string['cohortssyncedtotemplate'] = 'قالب الأفواج المزامَنة مع خطة التعلم هذه';
+$string['cohortssyncedtotemplate'] = 'قالب الدفعات المزامَنة مع خطة التعلم هذه';
 $string['competenciesforframework'] = 'الكفاءات لـ {$a}';
 $string['competenciesmostoftennotproficient'] = 'في أغلب الأحيان، الكفاءات لا تكون حاذقة في خطط التعلم المكتملة';
 $string['competenciesmostoftennotproficientincourse'] = 'في أغلب الأحيان، الكفاءات لا تكون حاذقة في هذا المقرر الدراسي';
@@ -204,7 +204,7 @@ $string['scale_help'] = 'يحدد المقياس كيفية قياس المها�
 * يشير العنصر/العناصر المحدد كـ \'محترف\' إلى القيمة/القيم التي ستعرف الكفاءات على أنها إحترافية عند تقييمها.';
 $string['scalevalue'] = 'قيمة المقياس';
 $string['search'] = 'بحث...';
-$string['selectcohortstosync'] = 'إختر الأفواج لمزامنتها';
+$string['selectcohortstosync'] = 'إختر الدفعات لمزامنتها';
 $string['selectcompetencymovetarget'] = 'حدد موقعًا لنقل هذه الكفاءة إلى:';
 $string['selectedcompetency'] = 'الكفاءة المحددة';
 $string['selectuserstocreateplansfor'] = 'حدد المستخدمين لإنشاء خطط التعلم لـ';
@@ -216,7 +216,7 @@ $string['startreview'] = 'ابدأ المراجعة';
 $string['state'] = 'الحالة';
 $string['status'] = 'الحالة';
 $string['stopreview'] = 'أنهِ المراجعة';
-$string['stopsyncingcohort'] = 'أوقف مزامنة الأفواج';
+$string['stopsyncingcohort'] = 'أوقف مزامنة الدفعات';
 $string['taxonomies'] = 'التصنيفات';
 $string['taxonomy_add_behaviour'] = 'أضف السلوك';
 $string['taxonomy_add_competency'] = 'أضف كفاءة';
@@ -264,8 +264,8 @@ $string['taxonomy_selected_skill'] = 'المهارة المحددة';
 $string['taxonomy_selected_value'] = 'القيمة المحددة';
 $string['template'] = 'قالب خطة التعلّم';
 $string['templatebased'] = 'القالب الأساس';
-$string['templatecohortnotsyncedwhileduedateispassed'] = 'لن تتم مزامنة الأفواج في حالة انقضاء تاريخ استحقاق القالب.';
-$string['templatecohortnotsyncedwhilehidden'] = 'لن تتم مزامنة الأفواج عند إخفاء هذا القالب.';
+$string['templatecohortnotsyncedwhileduedateispassed'] = 'لن تتم مزامنة الدفعات في حالة انقضاء تاريخ استحقاق القالب.';
+$string['templatecohortnotsyncedwhilehidden'] = 'لن تتم مزامنة الدفعات عند إخفاء هذا القالب.';
 $string['templatecompetencies'] = 'كفاءات قالب خطة التعلم';
 $string['templatecreated'] = 'تم إنشاء قالب خطة التعلم';
 $string['templatename'] = 'الاسم';

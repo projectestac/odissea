@@ -378,8 +378,8 @@ $string['coursehelpcategory'] = 'Kokatu ikastaroa ikastaroen zerrenda eta horrel
 $string['coursehelpforce'] = 'Behartu ikastaroan talde-modua ikastaroko edozein jardueretarako.';
 $string['coursehelpformat'] = 'Ikastaroaren hasiera-orria formatu honetan erakutsiko da';
 $string['coursehelphiddensections'] = 'Ikastaroko ezkutuko atalak ikasleei nola erakutsiko zaizkien.';
-$string['coursehelpmaximumupload'] = 'Zehaztu ikastaro honetara igo daitezkeen fitxategien gehienezko tamaina, gune mailako ezarpenak mugatutakoa.';
-$string['coursehelpnewsitemsnumber'] = 'Ikastaroaren hasiera-orriko azken berrien blokean agertuko diren azken berrien kopurua. 0 ezarriz gero, blokea ez da sortuko.';
+$string['coursehelpmaximumupload'] = 'Zehaztu ikastaro honetara igo daitezkeen fitxategien gehieneko tamaina, gune mailako ezarpenak mugatutakoa.';
+$string['coursehelpnewsitemsnumber'] = 'Ikastaroaren hasiera-orriko azken albisteak blokean agertuko diren azken albisteen kopurua. 0 ezarriz gero, blokea ez da sortuko.';
 $string['coursehelpnumberweeks'] = 'Ikastaroaren aste/gai-kopurua (soilik ikastaro formatu zehatz batzuetan du eragina).';
 $string['coursehelpshowgrades'] = 'Gaitu kalifikazio-liburua erakustea. Ez du galarazten kalifikazioak jarduera bakoitzean ere agertzea.';
 $string['coursehidden'] = 'Ikastaroa ez dago eskuragarri ikasleentzat';
@@ -392,7 +392,7 @@ $string['courselegacyfilesofcourse'] = 'Heredatutako ikastaroko fitxategiak: {$a
 $string['coursenotaccessible'] = 'Soilik ikastaro honetan matrikulatutakoak sar daitezke';
 $string['courseoverview'] = 'Ikastaroen ikuspegi orokorra';
 $string['courseoverviewfiles'] = 'Ikastaroko irudia';
-$string['courseoverviewfiles_help'] = 'Ikastaroko irudia Aginte-paneleko ikastaroaren aurrebistan erakusten dira. Guneko kudeatzaile batek onartutako fitxategi-mota gehigarriak eta fitxategi anitzak gaitu ditzake. Hala eginez gero, fitxategi horiek ikastaroaren laburpenaren ondoan erakutsiko dira ikastaroen zerrenda-orrian.';
+$string['courseoverviewfiles_help'] = 'Ikastaroko irudia Aginte-paneleko ikastaroaren aurrebistan erakusten dira. Guneko kudeatzaile batek onartutako fitxategi-mota gehigarriak eta fitxategi anizkoitzak gaitu ditzake. Hala eginez gero, fitxategi horiek ikastaroaren laburpenaren ondoan erakutsiko dira ikastaroen zerrenda-orrian.';
 $string['courseoverviewfilesext'] = 'Ikastaroko irudi-fitxategien luzapenak';
 $string['courseoverviewfileslimit'] = 'Ikastaroaren irudi-fitxategien muga';
 $string['courseoverviewgraph'] = 'Ikastaroaren grafiko globala';
@@ -919,7 +919,7 @@ $string['formatplain'] = 'Testu laua';
 $string['formattext'] = 'Moodle formatu automatikoa';
 $string['forumpreferences'] = 'Foroen hobespenak';
 $string['framesetinfo'] = 'Dokumentu honek hau du:';
-$string['from'] = 'Noiztik';
+$string['from'] = 'Igorlea';
 $string['frontpagecategorycombo'] = 'Ikastaro eta kategorien zerrenda';
 $string['frontpagecategorynames'] = 'Kategorien zerrenda';
 $string['frontpagecourselist'] = 'Ikastaroen zerrenda';
@@ -929,7 +929,7 @@ $string['frontpagedescriptionhelp'] = 'Gunearen deskribapena hasiera-orrian ager
 $string['frontpageenrolledcourselist'] = 'Matrikulatutako ikastaroak';
 $string['frontpageformat'] = 'Hasiera-orriaren formatua';
 $string['frontpageformatloggedin'] = 'Hasiera-orriaren formatua sartzean';
-$string['frontpagenews'] = 'Azken berriak';
+$string['frontpagenews'] = 'Albisteak';
 $string['frontpagesettings'] = 'Hasiera-orriaren ezarpenak';
 $string['fulllistofcourses'] = 'Ikastaro guztiak';
 $string['fullname'] = 'Izen osoa';
@@ -1011,7 +1011,7 @@ $string['hide'] = 'Ezkutatu';
 $string['hideadvancedsettings'] = 'Ezkutatu ezarpena aurreratuak';
 $string['hidechartdata'] = 'Ezkutatu grafikoaren datuak';
 $string['hidefromstudents'] = 'Ezkutatu ikasleei';
-$string['hideoncoursepage'] = 'Jarri eskuragarri baina ikastaro-orrian erakutsi gabe';
+$string['hideoncoursepage'] = 'Jarri eskuragarri baina ikastaro-orrian erakutsi gabe (jarduera sekretua)';
 $string['hidepicture'] = 'Ezkutatu irudia';
 $string['hidepopoverwindow'] = 'Ezkutatu popover leihoa';
 $string['hidesection'] = 'Ezkutatu {$a} atala';
@@ -1206,22 +1206,22 @@ $string['markedthistopic'] = 'Gai hau oraingo gisa dago nabarmendua';
 $string['markthistopic'] = 'Gai hau oraingoa gisa nabarmendu';
 $string['matchingsearchandrole'] = 'Aurkitutako \'{$a->search}\' kointzidentziak {$a->role} rolarekin';
 $string['maxareabytesreached'] = 'Fitxategiaren tamaina (edo fitxategi guztien tamainen batura) atal honetan eskuragarri dagoena baino handiagoa da.';
-$string['maxfilesize'] = 'Gehienezko tamaina fitxategi berrietarako: {$a}';
+$string['maxfilesize'] = 'Gehieneko tamaina fitxategi berrietarako: {$a}';
 $string['maxfilesreached'] = '{$a} fitxategi erantsi ahal diozu elementu honi gehienez';
 $string['maximumchars'] = '{$a} karaktere gehienez';
-$string['maximumgrade'] = 'Gehienezko kalifikazioa';
-$string['maximumgradex'] = 'Gehienezko kalifikazioa: {$a}';
+$string['maximumgrade'] = 'Gehieneko kalifikazioa';
+$string['maximumgradex'] = 'Gehieneko kalifikazioa: {$a}';
 $string['maximumshort'] = 'Gehienez';
-$string['maximumupload'] = 'Fitxategiak igotzeko gehienezko tamaina';
-$string['maximumupload_help'] = 'Ezarpen honek ikastaro honetara igo daitezkeen fitxategien gehinezko tamaina zehazten du, kudeatzaileak ezarritako gunearen gehienezko tamainak mugatuta. Jarduera-modulu bakoitzean agertzen diren aldagaien tamaina ere muga daiteke.';
-$string['maxnumberweeks'] = 'Gehienezko atal-kopurua';
-$string['maxnumberweeks_desc'] = 'Atal-kopuruaren menu zabalgarriaren gehienezko balioa (soilik ikastaro formatu jakin batzuetan aplikatzen da).';
+$string['maximumupload'] = 'Fitxategiak igotzeko gehieneko tamaina';
+$string['maximumupload_help'] = 'Ezarpen honek ikastaro honetara igo daitezkeen fitxategien gehieneko tamaina zehazten du, kudeatzaileak ezarritako gunearen gehieneko tamainak mugatuta. Jarduera-modulu bakoitzean agertzen diren aldagaien tamaina ere muga daiteke.';
+$string['maxnumberweeks'] = 'Gehieneko atal-kopurua';
+$string['maxnumberweeks_desc'] = 'Atal-kopuruaren menu zabalgarriaren gehieneko balioa (soilik ikastaro formatu jakin batzuetan aplikatzen da).';
 $string['maxnumcoursesincombo'] = 'Arakatu <a href="{$a->link}">{$a->numberofcourses} courses</a>.';
-$string['maxsectionslimit'] = 'Ezin da atal berri bat sortu horrek ikastaro honetan ({$a}) baimendutako gehienezko atal-kopurua gaindituko lukeelako.';
-$string['maxsize'] = 'Gehienezko tamaina: {$a}';
-$string['maxsizeandareasize'] = 'Fitxategi berrien gehienezko balio: {$a->size}, muga orokorra: {$a->areasize}';
-$string['maxsizeandattachments'] = 'Fitxategientzako gehienezko tamaina: {$a->size}, gehienezko fitxategi-kopurua: {$a->attachments}';
-$string['maxsizeandattachmentsandareasize'] = 'Fitxategientzako gehienezko tamaina: {$a->size}, gehienezko fitxategi-kopurua: {$a->attachments}, gehienezko tamaina guztira: {$a->areasize}';
+$string['maxsectionslimit'] = 'Ezin da atal berri bat sortu horrek ikastaro honetan ({$a}) baimendutako gehieneko atal-kopurua gaindituko lukeelako.';
+$string['maxsize'] = 'Gehieneko tamaina: {$a}';
+$string['maxsizeandareasize'] = 'Fitxategi berrien gehieneko balio: {$a->size}, muga orokorra: {$a->areasize}';
+$string['maxsizeandattachments'] = 'Fitxategientzako gehieneko tamaina: {$a->size}, gehieneko fitxategi-kopurua: {$a->attachments}';
+$string['maxsizeandattachmentsandareasize'] = 'Fitxategientzako gehieneko tamaina: {$a->size}, gehieneko fitxategi-kopurua: {$a->attachments}, gehieneko tamaina guztira: {$a->areasize}';
 $string['memberincourse'] = 'Ikastaroko pertsonak';
 $string['messagebody'] = 'Mezuaren gorputza';
 $string['messagedselectedusers'] = 'Aukeratutako erabiltzaileei mezua bidali zaie eta jasotzaileen zerrenda egokitu da.';
@@ -1291,15 +1291,15 @@ $string['modvisible_help'] = 'Eskuragarritasuna \'Erakutsi ikastaro-orrian\' auk
 
 Eskuragarritasuna \'Ezkutatu ikasleei\' aukeran badago, jarduera edo baliabidea ezkutuan dauden jarduera edo baliabidek ikusteko baimena dutenek ikusi ahalko dute (modu lehenetsian irakasle baimenak dituzten erabiltzaileak).';
 $string['modvisiblehiddensection'] = 'Eskuragarritasuna';
-$string['modvisiblehiddensection_help'] = 'Eskuragarritasuna \'Ezkutatu ikasleei\' aukeran badago, jarduera edo baliabidea ezkutuan dauden jarduera edo baliabidek ikusteko baimena dutenek ikusi ahalko dute (modu lehenetsian irakasle baimenak dituzten erabiltzaileak).
+$string['modvisiblehiddensection_help'] = 'Eskuragarritasuna \'Ezkutatu ikasleei\' aukeran badago, jarduera edo baliabidea soilik ezkutuan dauden jarduera edo baliabideak ikusteko baimena dutenek ikusi ahalko dute (modu lehenetsian irakasle baimenak dituzten erabiltzaileak).
 
-Ikastaroak jarduera edota baliabide asko baditu, hasiera-orria sinplifikatu daiteke \'Jarri eskuragarri baina ikastaro-orrian erakutsi gabe\' eskuragarritasun-aukera erabilita. Kasu horretan irakasleak jarduera edota baliabideetarako esteka beste nonbait jarri beharko ditu, orri batean adibidez. Ezkutuko jarduerak kalifikazio-txostenean eta bestelako txostenetan agertuko dira.';
+Ikastaroak jarduera edota baliabide asko baditu, hasiera-orria sinplifikatu daiteke \'Jarri eskuragarri baina ikastaro-orrian erakutsi gabe\' eskuragarritasun-aukera erabilita. Kasu horretan irakasleak jarduera edo baliabiderako esteka beste nonbait jarri beharko du, orri batean adibidez. Horrelako jarduera sekretuak kalifikazio-txostenean eta bestelako txostenetan agertuko dira.';
 $string['modvisiblewithstealth'] = 'Eskuragarritasuna';
 $string['modvisiblewithstealth_help'] = 'Eskuragarritasuna \'Erakutsi ikastaro-orrian\' aukeran badago, jarduera edo baliabidea ikasleentzat eskuragarri egongo da (bestelako eskuragarritasun baldintzek baimentzen badute).
 
-Eskuragarritasuna \'Ezkutatu ikasleei\' aukeran badago, jarduera edo baliabidea ezkutuan dauden jarduera edo baliabidek ikusteko baimena dutenek ikusi ahalko dute (modu lehenetsian irakasle baimenak dituzten erabiltzaileak).
+Eskuragarritasuna \'Ezkutatu ikasleei\' aukeran badago, jarduera edo baliabidea soilik ezkutuan dauden jarduera edo baliabideak ikusteko baimena dutenek ikusi ahalko dute (modu lehenetsian irakasle baimenak dituzten erabiltzaileak).
 
-Ikastaroak jarduera edota baliabide asko baditu, hasiera-orria sinplifikatu daiteke \'Jarri eskuragarri baina ikastaro-orrian erakutsi gabe\' eskuragarritasun-aukera erabilita. Kasu horretan irakasleak jarduera edota baliabideetarako esteka beste nonbait jarri beharko ditu, orri batean adibidez. Ezkutuko jarduerak kalifikazio-txostenean eta bestelako txostenetan agertuko dira.';
+Ikastaroak jarduera edota baliabide asko baditu, hasiera-orria sinplifikatu daiteke \'Jarri eskuragarri baina ikastaro-orrian erakutsi gabe\' eskuragarritasun-aukera erabilita. Kasu horretan irakasleak jarduera edo baliabiderako esteka beste nonbait jarri beharko du, orri batean adibidez. Horrelako jarduera sekretuak kalifikazio-txostenean eta bestelako txostenetan agertuko dira.';
 $string['month'] = 'Hilabetea';
 $string['months'] = 'Hilabeteak';
 $string['moodledocs'] = 'Moodle Doc-ak';
@@ -1389,11 +1389,11 @@ $string['newsectionname'] = '{$a} atalerako izen berria';
 $string['newsitem'] = 'berri bat';
 $string['newsitems'] = 'albisteak';
 $string['newsitemsnumber'] = 'Albiste-kopurua';
-$string['newsitemsnumber_help'] = 'Berrien foroa ikastaroa sortzean sortzen den foro berezia da, modu lehenetsian behartutako harpidetza duena eta beharrezko baimenak dituzten erabiltzaileek soilik idatzi dezakete bertan (modu lehenetsian irakasleak).
+$string['newsitemsnumber_help'] = 'Albisteen foroa ikastaroa sortzean sortzen den foro berezia da, modu lehenetsian behartutako harpidetza duena eta beharrezko baimenak dituzten erabiltzaileek soilik idatzi dezakete bertan (modu lehenetsian irakasleak).
 
-Ezarpen honek ikastaroaren hasiera-orrian, azken berriak blokean zenbat berri agertuko diren zehazten du.
+Ezarpen honek ikastaroaren hasiera-orrian, azken albisteak blokean zenbat albiste agertuko diren zehazten du.
 
-Ikastaroan berrien foroa behar ez bada, ezarpen honetan zero jarri behar da.';
+Ikastaroan albisteen foroa behar ez bada, ezarpen honetan zero jarri behar da.';
 $string['newuser'] = 'Erabiltzaile berria';
 $string['newusernewpasswordsubj'] = 'Erabiltzaile berriaren kontua';
 $string['newusernewpasswordtext'] = 'Kaixo, {$a->firstname}:
@@ -1506,6 +1506,7 @@ $string['numyears'] = '{$a} urte';
 $string['ok'] = 'Ados';
 $string['oldpassword'] = 'Oraingo pasahitza';
 $string['olduserdirectory'] = 'Erabiltzaileen direktorio ZAHARRA da hau eta dagoeneko ez da beharrezkoa. Lasai ezaba dezakezu. Dituen fitxategiak erabiltzaile direktorio BERRIAn kopiatu dira.';
+$string['opensinnewwindow'] = 'Leiho berri batean irekitzen da';
 $string['optional'] = 'aukerakoa';
 $string['options'] = 'aukerak';
 $string['order'] = 'Ordena';
@@ -1537,7 +1538,7 @@ $string['passwordconfirmchange'] = 'Baieztatu pasahitzaren aldaketa';
 $string['passwordextlink'] = 'Esteka honek galdutako pasahitza errekuperatzeko balio du eta Moodletik ateratzen behartzen zaitu.';
 $string['passwordforgotten'] = 'Ahaztutako pasahitza';
 $string['passwordforgotteninstructions'] = 'Zure datuak lehenik erabiltzaileen datu-basean bilatu behar dira. Zure erabiltzaile-izena <strong>edo</strong> helbide elektronikoa dagokion lekuan idatzi, mesedez. Biak idaztea ez da beharrezkoa.';
-$string['passwordforgotteninstructions2'] = 'Zure pasahitza berritzeko, bidali zure erabiltzaile-izena edo zure helbide elektronikoa. Datu-basean aurkitzen bazaitugu, zure helbide elektronikora e-maila bidaliko dizugu berriz sartzeko argibideekin.';
+$string['passwordforgotteninstructions2'] = 'Pasahitza berritzeko, zure erabiltzaile-izena edo helbide elektronikoa erabil ditzakezu. Datu-basean aurkitzen bazaitugu, plataformara berriro sartzeko argibideak helbide elektronikora bidaliko dizkizugu.';
 $string['passwordnohelp'] = 'Ezin izan da galdu duzun pasahitza aurkitu. Moodleren kudeatzailearekin harremanetan jarri, mesedez.';
 $string['passwordpolicynomatch'] = 'Zure une honetako pasahitzak ez du oraingo pasahitzen politika betetzen.
    {$a}';
@@ -1953,7 +1954,7 @@ $string['sort'] = 'Ordenatu';
 $string['sortby'] = 'Ordenatze-irizpidea';
 $string['sortbyx'] = 'Ordenatu {$a}-ren arabera behetik gora';
 $string['sortbyxreverse'] = 'Ordenatu {$a}-ren arabera goitik behera';
-$string['sorting'] = 'Ordenatzen';
+$string['sorting'] = 'Ordenatzea';
 $string['sourcerole'] = 'Jatorrizko rola';
 $string['specifyname'] = 'Izena eman behar duzu derrigor.';
 $string['standard'] = 'Estandarra';
@@ -2094,7 +2095,7 @@ $string['timesplitting:upcomingfortnight_help'] = 'Analisi-tarte honek aurreikus
 $string['timesplitting:upcomingweek'] = 'Datorren astea';
 $string['timesplitting:upcomingweek_help'] = 'Analisi-tarte honek aurreikuspenak astero sortzen ditu. Adierazleen kalkuluak hurrengo astean oinarrituko da.';
 $string['timezone'] = 'Ordu eremua';
-$string['to'] = 'Noiz arte';
+$string['to'] = 'Jasotzailea';
 $string['tocontent'] = '"{$a}" elementuaren aurrera';
 $string['tocreatenewaccount'] = 'Salto egin kontu berria sortzera';
 $string['today'] = 'Gaur';
@@ -2157,7 +2158,7 @@ $string['uploadfailednotrecovering'] = 'Errorea gertatu da igo nahi zenuen fitxa
 $string['uploadfilelog'] = '{$a} fitxategirako igoera-erregistroa';
 $string['uploadformlimit'] = '{$a} fitxategiak formularioak ezartzen duen tamaina-muga gainditzen du';
 $string['uploadlabel'] = 'Izenburua:';
-$string['uploadlimitwithsize'] = '{$a->contextname}(e)n igotzeko gehienezko tamaina: ({$a->displaysize})';
+$string['uploadlimitwithsize'] = '{$a->contextname}(e)n igotzeko gehieneko tamaina: ({$a->displaysize})';
 $string['uploadnewfile'] = 'Igo beste fitxategi bat';
 $string['uploadnofilefound'] = 'Ez da fitxategirik aurkitu. Ziur zaude igotzeko bat aukeratu duzula?';
 $string['uploadnotallowed'] = 'Ezin da fitxategirik igo';
@@ -2167,7 +2168,7 @@ $string['uploadpartialfile'] = 'Fitxategia ez da osorik igo';
 $string['uploadproblem'] = 'Errore ezezagun bat gertatu da \'{$a}\' fitxategia igotzerakoan (handiegia agian?)';
 $string['uploadrenamedchars'] = 'Fitxategiari izena aldatu diogu (lehen {$a->oldname} ;orain {$a->newname}) erabili ezin diren karaktereak zituelako.';
 $string['uploadrenamedcollision'] = 'Fitxategiari izena aldatu diogu (lehen {$a->oldname} ; orain {$a->newname}) izenen arteko arazoa zegoelako.';
-$string['uploadserverlimit'] = 'Igotako fitxategiak zerbitzariko gehienezko fitxategi-tamaina gainditzen du';
+$string['uploadserverlimit'] = 'Igotako fitxategiak zerbitzariko gehieneko fitxategi-tamaina gainditzen du';
 $string['uploadthisfile'] = 'Igo fitxategi hau';
 $string['url'] = 'URLa';
 $string['used'] = 'Erabilia';

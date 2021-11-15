@@ -29,6 +29,7 @@ $string['activemethodinfo'] = '«{$a->method}» está seleccionado como método 
 $string['activemethodinfonone'] = 'Non hai seleccionado un método de cualificación avanzada para a área «{$a->area}». Empregarase a cualificación directa simple.';
 $string['changeactivemethod'] = 'Cambiar o método activo de cualificación a';
 $string['clicktoclose'] = 'premer para pechar';
+$string['error:gradingunavailable'] = 'O método de cualificación avanzado non está configurado correctamente. Comprobe todas as opcións de cualificación de todo o foro nos axustes do mesmo.';
 $string['error:notinrange'] = 'A cualificación «{$a->grade}»  non é válida. As cualificacións deben estar comprendida entre 0 e {$a->maxgrade}.';
 $string['exc_gradingformelement'] = 'Non é posíbel crear instancias do elemento formulario de cualificación';
 $string['formnotavailable'] = 'Seleccionou un método de cualificación avanzada para o seu uso, mais o formato de cualificación aínda non está dispoñíbel. Terá que definilo previamente utilizando a ligazón existente no bloque de Administración.';

@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadas'] = 'Scarica tabella dati come';
+$string['missingrequiredfields'] = 'Mancano uno o più filtri richiesti ({$a})';
+$string['privacy:metadata'] = 'L\'API della tabella non memorizza dati personali';

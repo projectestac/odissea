@@ -646,19 +646,17 @@ $string['emailagain'] = 'Correo (de nuevo)';
 $string['emailalreadysent'] = 'Se ha enviado un correo electrónico de restablecimiento de contraseña. Por favor, consulte su buzón de correo electrónico.';
 $string['emailcharset'] = 'Conjunto de caracteres para email';
 $string['emailconfirm'] = 'Confirme su cuenta';
-$string['emailconfirmation'] = 'Hola, {$a->firstname}.
+$string['emailconfirmation'] = 'Hola,
 
-Se ha solicitado la apertura de una cuenta en
-\'{$a->sitename}\' utilizando su dirección de correo.
+Se ha solicitado la creación de una cuenta en \'{$a->sitename}\' utilizando su dirección de correo.
 
 Para confirmar su nueva cuenta, por favor vaya a esta dirección web:
 
 {$a->link}
 
-En la mayoría de programas de correo electrónico, debería aparecer un enlace azul donde poder hacer click. Si no funciona, córtelo y péguelo en la ventana de direcciones de su navegador.
+En la mayoría de programas de correo electrónico, debería aparecer un enlace azul donde poder hacer click. Si no funciona, córtelo y péguelo en la barra de direcciones de su navegador.
 
-Si necesita ayuda, contacte por favor con el administrador
-del sitio,
+Si necesita ayuda, por favor contacte con el administrador del sitio,
 {$a->admin}';
 $string['emailconfirmationresend'] = 'Reenviar correo de confirmación';
 $string['emailconfirmationsubject'] = 'Confirmación de la cuenta  {$a}';
@@ -740,9 +738,8 @@ ventana de direcciones de su navegador.
 Si necesita ayuda adicional, póngase en contacto con el
 administrador, {$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: confirmación de cambio de contraseña';
-$string['emailpasswordconfirmmaybesent'] = '<p>Si ha suministrado un nombre de usuario o dirección correctos, se le debería haber enviado un email.</p>
-<p>Contiene instrucciones sencillas para confirmar y completar el cambio de contraseña.
-Si sigue teniendo dificultades, contacte por favor con el administrador del sitio.</p>';
+$string['emailpasswordconfirmmaybesent'] = '<p>Si ha suministrado un nombre de usuario correcto o dirección de correo electrónico única, se le debería haber enviado un correo electrónico.</p>
+<p>Contiene instrucciones sencillas para confirmar y completar este cambio de contraseña. Si sigue teniendo problemas, por favor contacte con el administrador del sitio.</p>';
 $string['emailpasswordconfirmnoemail'] = '<p> La cuenta de usuario que ha especificado no tiene una dirección de correo electrónico registrada. </p><p> Por favor, póngase en contacto con el administrador del sitio. </p>';
 $string['emailpasswordconfirmnotsent'] = '<p> Los datos de usuario que ha introducido no identifican una cuenta de usuario existente. </p><p> Compruebe la información introducida por favor y vuelva a intentarlo. Si continúa teniendo problemas, por favor póngase en contacto con el administrador del sitio. </p>';
 $string['emailpasswordconfirmsent'] = 'Hemos enviado un correo a su dirección <b>{$a}</b>.
@@ -1123,7 +1120,7 @@ $string['interests'] = 'Intereses';
 $string['interestslist'] = 'Lista de intereses';
 $string['interestslist_help'] = 'Introduzca sus intereses, uno por uno, que se mostrarán después en su página de perfil como etiquetas.';
 $string['invalidemail'] = 'Dirección de correo no válida';
-$string['invalidlogin'] = 'Datos erróneos. Por favor, inténtelo otra vez.';
+$string['invalidlogin'] = 'Acceso inválido. Por favor, inténtelo otra vez.';
 $string['invalidusername'] = 'El nombre de usuario sólo puede contener caracteres alfanuméricos en minúsculas (letras y números), subrayado (_), guión (-), punto (.) o arroba (@).';
 $string['invalidusernameupload'] = 'Nombre de usuario no válido';
 $string['ip_address'] = 'Dirección IP';
@@ -1313,7 +1310,7 @@ Si el curso contiene muchas actividades o recursos, la página del curso puede s
 $string['month'] = 'Mes';
 $string['months'] = 'Meses';
 $string['moodledocs'] = 'Moodle Docs';
-$string['moodledocslink'] = 'Moodle Docs para esta página';
+$string['moodledocslink'] = 'Ayuda y documentación';
 $string['moodlelogo'] = 'Logo de Moodle';
 $string['moodlerelease'] = 'Lanzamiento de Moodle';
 $string['moodleversion'] = 'Versión de Moodle';
@@ -1472,7 +1469,7 @@ $string['normalfilter'] = 'Búsqueda normal';
 $string['nosite'] = 'No se encontró curso en el nivel de sitio';
 $string['nostudentsfound'] = 'No se encuentra {$a}';
 $string['nostudentsingroup'] = 'Aún no hay estudiantes en este grupo';
-$string['nostudentsyet'] = 'Aún no se ha matriculado ningún alumno en este curso';
+$string['nostudentsyet'] = 'No hay estudiantes matriculados en este curso.';
 $string['nosuchemail'] = 'No existe esa dirección de correo';
 $string['notavailable'] = 'No disponible';
 $string['notavailablecourse'] = '{$a} no disponible';
@@ -2037,7 +2034,7 @@ $string['statuscritical'] = 'Crítico';
 $string['statuserror'] = 'Error';
 $string['statusinfo'] = 'Info';
 $string['statusna'] = 'No disponible';
-$string['statusok'] = 'Aceptar';
+$string['statusok'] = 'OK';
 $string['statuswarning'] = 'Advertencia';
 $string['stringsnotset'] = 'Las siguientes cadenas no están definidas en {$a}';
 $string['studentnotallowed'] = 'Lo sentimos, pero no puede entrar a este curso como \'{$a}\'';
@@ -2094,7 +2091,7 @@ $string['timecreatedcourse'] = 'Hora de creación del curso';
 $string['timesplitting:deciles'] = 'Décimas';
 $string['timesplitting:deciles_help'] = 'Este método de división del tiempo divide el curso en décimas (10 partes iguales), y cada predicción se basa en los datos de la décima anterior más reciente.';
 $string['timesplitting:decilesaccum'] = 'Décimas acumuladas';
-$string['timesplitting:decilesaccum_help'] = 'Este método de división del tiempo divide el curso en décimas (10 partes iguales), y cada predicción se basa en los datos de todas las décimas anteriores.';
+$string['timesplitting:decilesaccum_help'] = 'El intervalo de análisis divide el curso en décimos (10 partes iguales), y cada predicción está basada en los datos de todos los décimos anteriores.';
 $string['timesplitting:nosplitting'] = 'Sin límite de tiempo';
 $string['timesplitting:nosplitting_help'] = 'No se define ningún intervalo de análisis para este modelo.';
 $string['timesplitting:onemonthafterstart'] = 'Un mes después del inicio';

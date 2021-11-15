@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Subíndice';
-$string['privacy:metadata'] = 'El plugin atto_subscript no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_subscript no almacena ningún dato personal.';

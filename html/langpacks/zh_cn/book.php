@@ -26,10 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addafter'] = '添加新章节';
+$string['addafterchapter'] = '在“{$a->title}”之后添加新章节';
 $string['book:addinstance'] = '添加新图书';
 $string['book:edit'] = '修改图书章节';
 $string['book:read'] = '阅读图书';
 $string['book:viewhiddenchapters'] = '查看隐藏的图书章节';
+$string['chapterandsubchaptersdeleted'] = '删除了第{$a->title}章及其{$a->subchapters}子章';
+$string['chapterdeleted'] = '删除章节“{$a->title}”';
 $string['chapters'] = '章节';
 $string['chaptertitle'] = '章节标题';
 $string['confchapterdelete'] = '确定要删除此章节么？';
@@ -50,8 +53,12 @@ $string['eventchapterviewed'] = '查看章节';
 $string['hidechapter'] = '隐藏章节“{$a}”';
 $string['indicator:cognitivedepth'] = '图书资源认知深度';
 $string['indicator:cognitivedepth_help'] = '这个指标是基于学生在图书资源中所达到的认知深度。';
+$string['indicator:cognitivedepthdef'] = '书本认知';
+$string['indicator:cognitivedepthdef_help'] = '在此分析间隔期间，参与者已达到书本活动提供的认知参与百分比（级别=无视图，视图）';
 $string['indicator:socialbreadth'] = '图书资源社会广度';
 $string['indicator:socialbreadth_help'] = '这个指标是基于学生在图书资源中所达到的社会广度。';
+$string['indicator:socialbreadthdef'] = '书刊社';
+$string['indicator:socialbreadthdef_help'] = '在此分析间隔期间，参与者已达到书本活动提供的社会参与度的百分比（级别=无参与，仅参与者一人）';
 $string['modulename'] = '图书';
 $string['modulename_help'] = '通过图书模块，教师可以用类似书本的格式创建一份多页的资源，并且可以分章节和子章节。图书可以包含媒体文件和文本，可以有很长的篇幅，并且可以分节。
 
@@ -91,6 +98,9 @@ $string['numberingoptions_desc'] = '选择在创建图书时可用的编号选�
 $string['page-mod-book-x'] = '任意图书模块页';
 $string['pluginadministration'] = '图书管理';
 $string['pluginname'] = '图书';
+$string['previouschapter'] = '上一章';
+$string['privacy:metadata'] = '图书活动模块不存储任何个人数据。';
+$string['removeallbooktags'] = '删除所有图书标签';
 $string['search:activity'] = '图书 - 资源信息';
 $string['search:chapter'] = '图书 - 章节';
 $string['showchapter'] = '显示章节“{$a}”';
@@ -99,5 +109,6 @@ $string['subchapternotice'] = '（只用第一章建立后才可用）';
 $string['subplugintype_booktool'] = '图书工具';
 $string['subplugintype_booktool_plural'] = '图书工具';
 $string['tagarea_book_chapters'] = '图书章节';
+$string['tagsdeleted'] = '图书标签已被删除';
 $string['toc'] = '目录';
 $string['top'] = '顶部';

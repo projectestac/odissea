@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['block/learning_plan:managepages'] = 'صفحات إدارة خطط التعلم';
 $string['block/learning_plan:viewpages'] = 'صفحات معاينة خطط التعلم';
+$string['classroom'] = 'التدريب الصفي';
 $string['desc'] = 'الوصف';
 $string['learning_plan:managepages'] = 'إدارة الصفحات';
 $string['learning_plan:viewpages'] = 'معاينة الصفحات';

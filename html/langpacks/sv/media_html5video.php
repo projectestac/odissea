@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'HTML5-video';
 $string['pluginname_help'] = 'Videofiler som spelas upp via det inbyggda stödet i webbläsaren. (Vilka format som stöds beror på webbläsaren).';
-$string['privacy:metadata'] = 'Pluginmodulen HTML5-video lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen HTML5-video lagrar ingen personinformation.';

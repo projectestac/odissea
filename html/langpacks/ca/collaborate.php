@@ -32,6 +32,7 @@ $string['canshareaudio'] = 'Compartir àudio';
 $string['cansharevideo'] = 'Compartir vídeo';
 $string['collaborate:downloadrecordings'] = 'Baixa els enregistraments';
 $string['collaboratename'] = 'Nom de la sessió';
+$string['crontask'] = 'Tasca programada del Collaborate';
 $string['duration'] = 'Durada';
 $string['guestaccessenabled'] = 'Permet l\'accés de visitants a Collaborate';
 $string['guestlinks'] = 'Enllaços de convidat';

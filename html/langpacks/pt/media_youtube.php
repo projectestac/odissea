@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'YouTube';
 $string['pluginname_help'] = 'Site de partilha de vídeos YouTube.com. São suportadas hiperligações para vídeos e listas de reprodução.';
-$string['privacy:metadata'] = 'O módulo multimédia Youtube não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo multimédia Youtube não armazena quaisquer dados pessoais.';
 $string['supportsplaylist'] = 'Listas de reprodução do YouTube';
 $string['supportsvideo'] = 'Vídeos do YouTube';

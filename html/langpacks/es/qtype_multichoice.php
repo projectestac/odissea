@@ -26,10 +26,12 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['answerhowmany'] = '¿Una o varias respuestas?';
-$string['answernumbering'] = '¿Numerar las elecciones?';
+$string['answerhowmany_desc'] = 'Si la opción por defecto debe ser una respuesta (p. ej. botón de opción) o respuestas múltiples (p. ej. casillas de verificación)';
+$string['answernumbering'] = '¿Numerar las opciones?';
 $string['answernumbering123'] = '1., 2., 3., ...';
 $string['answernumberingABCD'] = 'A., B., C., ...';
 $string['answernumberingIIII'] = 'I., II., III., ...';
+$string['answernumbering_desc'] = 'El estilo de numeración por defecto.';
 $string['answernumberingabc'] = 'a., b., c., ...';
 $string['answernumberingiii'] = 'i., ii., iii., ...';
 $string['answernumberingnone'] = 'Sin numeración';
@@ -49,7 +51,7 @@ $string['errgradesetanswerblank'] = 'Calificación establecida, pero la respuest
 $string['feedback'] = 'Retroalimentación';
 $string['fillouttwochoices'] = 'Debe rellenar al menos dos opciones. Las que deje en blanco no se usarán.';
 $string['fractionsaddwrong'] = 'Las calificaciones positivas que ha elegido no suman el 100%<br />sino únicamente el {$a}%<br />¿Desea volver y arreglarlo?';
-$string['fractionsnomax'] = 'Una de las respuestas debería ser el 100%, de modo que fuera <br />posible alcanzar la calificación total de esta pregunta.<br />¿Desea volver y arreglarlo?';
+$string['fractionsnomax'] = 'Una de las respuestas debería ser el 100%, de modo que fuera <br />posible alcanzar la calificación total de esta pregunta.<br />¿Desea volver y arreglar esta pregunta?';
 $string['incorrectfeedback'] = 'Para cualquier respuesta incorrecta';
 $string['notenoughanswers'] = 'Este tipo de pregunta requiere al menos {$a} opciones';
 $string['overallcorrectfeedback'] = 'Retroalimentación para cualquier respuesta correcta';
@@ -60,11 +62,17 @@ $string['partiallycorrectfeedback'] = 'Para cualquier respuesta parcialmente cor
 $string['pleaseselectananswer'] = 'Por favor, selecciona una respuesta.';
 $string['pleaseselectatleastoneanswer'] = 'Por favor, selecciona al menos una respuesta.';
 $string['pluginname'] = 'Opción múltiple';
-$string['pluginname_help'] = 'En respuesta a una pregunta (puede incluir una imagen) el alumno escoje la respuesta entre varias respuestas posibles.
-Hay dos tipos de preguntas con respuesta múltiple: con una y con más de una respuesta válida.';
+$string['pluginname_help'] = 'En respuesta a una pregunta (puede incluir una imagen) el estudiante escoge la respuesta entre varias respuestas posibles. Una pregunta de opción múltiple puede tener una o varias respuesta(s) correcta(s).';
 $string['pluginnameadding'] = 'Agregando pregunta de opción múltiple';
 $string['pluginnameediting'] = 'Editando una pregunta de opción múltiple';
 $string['pluginnamesummary'] = 'Permite la selección de una o varias respuestas a partir de una lista predefinida.';
+$string['privacy:metadata'] = 'El complemento de tipo de pregunta de opción múltiple permite a los autores de preguntas establecer opciones predeterminadas como preferencias del usuario.';
+$string['privacy:preference:answernumbering'] = 'Qué estilo de numeración debería utilizarse (\'1, 2, 3, ...\', \'a, b, c, ...\' etc.).';
+$string['privacy:preference:defaultmark'] = 'La puntuación predeterminada establecida para una pregunta determinada.';
+$string['privacy:preference:penalty'] = 'La penalización por cada intento incorrecto cuando las preguntas se ejecutan utilizando el comportamiento \'Interactivo con múltiples intentos\' o \'Modo adaptativo\'.';
+$string['privacy:preference:showstandardinstruction'] = 'Si muestra instrucción estándar.';
+$string['privacy:preference:shuffleanswers'] = 'Si las respuestas deben mezclarse automáticamente.';
+$string['privacy:preference:single'] = 'Si la respuesta es simple con botones de opción o múltiple con casillas de verificación.';
 $string['selectmulti'] = 'Seleccione una o más de una:';
 $string['selectone'] = 'Seleccione una:';
 $string['showstandardinstruction'] = 'Mostrar instrucciones estándar';

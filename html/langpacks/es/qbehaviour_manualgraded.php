@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Calificación manual';
+$string['privacy:metadata'] = 'El complemento de comportamiento de preguntas calificadas manualmente no almacena ningún dato personal.';

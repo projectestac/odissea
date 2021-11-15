@@ -25,6 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:assessmentsclose'] = 'Chiusura valutazioni:';
+$string['activitydate:assessmentsclosed'] = 'Valutazioni chiuse:';
+$string['activitydate:assessmentsopen'] = 'Apertura valutazioni:';
+$string['activitydate:assessmentsopened'] = 'Valutazioni aperte:';
+$string['activitydate:submissionsclose'] = 'Chiusura consegne:';
+$string['activitydate:submissionsclosed'] = 'Consegne chiuse:';
+$string['activitydate:submissionsopen'] = 'Apertura consegne:';
+$string['activitydate:submissionsopened'] = 'Consegne aperte:';
 $string['aggregategrades'] = 'Ricalcola voti';
 $string['aggregation'] = 'Aggregazione dei voti';
 $string['allocate'] = 'Distribuisci consegne';
@@ -218,6 +226,7 @@ $string['noexamplesformready'] = 'Devi impostare la scheda di valutazione prima 
 $string['nogradeyet'] = 'Senza voto';
 $string['nosubmissionfound'] = 'Non sono state trovate consegne per questo utente';
 $string['nosubmissions'] = 'Non ci sono ancora consegne';
+$string['nosubmissiontype'] = 'Deve essere disponibile almeno un tipo di invio';
 $string['notassessed'] = 'Non valutata';
 $string['nothingfound'] = 'Non c\'è nulla da visualizzare';
 $string['nothingtoreview'] = 'Non c\'è nulla da rivedere';
@@ -264,6 +273,22 @@ $string['privacy:metadata:late'] = 'Se la consegna è stata effettuata dopo la s
 $string['privacy:metadata:peercomment'] = 'Commento sul voto dato dall\'utente che ha fornito la valutazione.';
 $string['privacy:metadata:peercommentformat'] = 'Formato del testo del commento sul voto dato.';
 $string['privacy:metadata:preference:perpage'] = 'Preferenza dell\'utente sul numero di consegne da visualizzare in una pagina.';
+$string['privacy:metadata:preference:viewlet-allexamples-collapsed'] = 'Stato compresso/espanso per la viewlet \'Consegne di esempio\'.';
+$string['privacy:metadata:preference:viewlet-allsubmissions-collapsed'] = 'Stato compresso/espanso per la viewlet \'Report delle consegne del workshop\'.';
+$string['privacy:metadata:preference:viewlet-assessmentform-collapsed'] = 'Stato compresso/espanso per la viewlet \'Modulo di valutazione\'.';
+$string['privacy:metadata:preference:viewlet-assignedassessments-collapsed'] = 'Stato compresso/espanso per la viewlet \'Consegne assegnate da valutare\'.';
+$string['privacy:metadata:preference:viewlet-cleargrades-collapsed'] = 'Stato compresso/espanso per la viewlet \'Workshop toolbox\'.';
+$string['privacy:metadata:preference:viewlet-conclusion-collapsed'] = 'Stato compresso/espanso per la viewlet \'Conclusione\'.';
+$string['privacy:metadata:preference:viewlet-examples-collapsed'] = 'Stato compresso/espanso per la viewlet \'Consegne di esempio da valutare\'.';
+$string['privacy:metadata:preference:viewlet-examplesfail-collapsed'] = 'Stato compresso/espanso per la viewlet \'Consegne di esempio da valutare\'.';
+$string['privacy:metadata:preference:viewlet-gradereport-collapsed'] = 'Stato compresso/espanso per la viewlet \'Report valutazioni del workshop\'.';
+$string['privacy:metadata:preference:viewlet-instructauthors-collapsed'] = 'Stato compresso/espanso per la viewlet \'Istruzioni per la consegna\'.';
+$string['privacy:metadata:preference:viewlet-instructreviewers-collapsed'] = 'Stato compresso/espanso per la viewlet \'Istruzioni per la valutazione\'.';
+$string['privacy:metadata:preference:viewlet-intro-collapsed'] = 'Stato compresso/espanso per la viewlet \'Introduzione\'.';
+$string['privacy:metadata:preference:viewlet-overallfeedback-collapsed'] = 'Stato compresso/espanso per il viewlet "Feedback complessivo\'.';
+$string['privacy:metadata:preference:viewlet-ownsubmission-collapsed'] = 'Stato compresso/espanso per la viewlet \'La tua consegna\'.';
+$string['privacy:metadata:preference:viewlet-publicsubmissions-collapsed'] = 'Lo stato compresso/espanso per la viewlet \'Contributi pubblicati\'.';
+$string['privacy:metadata:preference:viewlet-yourgrades-collapsed'] = 'Lo stato compresso/espanso per la viewlet \'I tuoi voti\'.';
 $string['privacy:metadata:published'] = 'Scelta di rendere la consegna visibile per tutti i partecipanti, una volta  chiuso il Workshop.';
 $string['privacy:metadata:reviewerid'] = 'ID dell\'utente che fornisce la valutazione.';
 $string['privacy:metadata:strategy'] = 'Nome del criterio di valutazione';
@@ -285,6 +310,7 @@ $string['privacy:metadata:workshopassessments'] = 'Memorizza le informazioni sul
 $string['privacy:metadata:workshopgrades'] = 'Memorizza le informazioni sulla compilazione degli schemi di valutazione con voti e commenti.';
 $string['privacy:metadata:workshopid'] = 'ID dell\'attività Workshop.';
 $string['privacy:metadata:workshopsubmissions'] = 'Memorizza le informazioni sulle consegne nel modulo Workshop.';
+$string['privacy:request:delete:content'] = 'Il contenuto è stato eliminato (richiesto dall\'utente oppure scaduto)';
 $string['privacy:request:delete:title'] = '[Eliminato]';
 $string['publishedsubmissions'] = 'Consegne pubblicate';
 $string['publishsubmission'] = 'Pubblica consegna';
@@ -344,6 +370,8 @@ $string['submissionstart'] = 'Inizio consegne da';
 $string['submissionstartdatetime'] = 'Inizio consegne da {$a->daydatetime} ({$a->distanceday})';
 $string['submissionstartevent'] = '{$a} Inizio consegne';
 $string['submissiontitle'] = 'Titolo';
+$string['submissiontypedisabled'] = 'Questo tipo di invio è disabilitato per questo workshop.';
+$string['submissiontypefileavailable'] = 'File allegato<span class="accesshide"> disponibile</span>';
 $string['submissiontypefilerequired'] = '<span class="accesshide">File allegato </span>Obbligatorio';
 $string['submissiontypes'] = 'Tipi di consegne';
 $string['submissiontypetextavailable'] = 'Testo online<span class="accesshide"> disponibile</span>';
@@ -426,3 +454,4 @@ $string['workshopname'] = 'Nome del workshop';
 $string['yourassessmentfor'] = 'La tua valutazione su {$a}';
 $string['yourgrades'] = 'Le vostre valutazioni';
 $string['yoursubmission'] = 'La tua consegna';
+$string['yoursubmissionwithassessments'] = 'La tua consegna con valutazioni';

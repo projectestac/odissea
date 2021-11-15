@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'منظف المتطفلين';
-$string['privacy:metadata'] = 'إن ملحق منظف المتطفلين لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة منظف المتطفلين لا تخزن أي بيانات شخصية.';
 $string['spamauto'] = 'اكتشاف تلقائي لأنماط البريد العشوائي المشتركة';
 $string['spamcannotdelete'] = 'لا يمكن حذف هذا المستخدم';
 $string['spamcannotfinduser'] = 'لا مستخدمون يطابقون بحثك';

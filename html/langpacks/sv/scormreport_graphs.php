@@ -28,5 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['invaliddata'] = 'Inte tillräckligt med data';
 $string['participants'] = 'Deltagarantal';
 $string['percent'] = 'Procent(%) säkrat';
-$string['pluginname'] = 'Graf';
+$string['pluginname'] = 'Grafrapport';
 $string['privacy:metadata'] = 'Grafrapporten visar endast data som lagras på andra platser.';

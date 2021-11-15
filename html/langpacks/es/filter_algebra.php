@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['algebraicexpression'] = 'Expresión algebráica';
 $string['filtername'] = 'Notación algebráica';
+$string['privacy:metadata'] = 'El complemento de notación de álgebra no almacena ningún dato personal.';

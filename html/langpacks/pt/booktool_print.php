@@ -33,4 +33,4 @@ $string['printbook'] = 'Imprimir livro';
 $string['printchapter'] = 'Imprimir este capítulo';
 $string['printdate'] = 'Data';
 $string['printedby'] = 'Impresso por';
-$string['privacy:metadata'] = 'O módulo Imprimir livro não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Imprimir livro não armazena quaisquer dados pessoais.';

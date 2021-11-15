@@ -105,7 +105,7 @@ $string['uulegacy2role'] = '(Professor original) tipoN=2';
 $string['uulegacy3role'] = '(Professor-não-editor original) tipoN=3';
 $string['uunoemailduplicates'] = 'Impedir e-mails duplicados';
 $string['uuoptype'] = 'Tipo de carregamento';
-$string['uuoptype_addinc'] = 'Adicionar todos, inserir número à direita do nome de utilizador';
+$string['uuoptype_addinc'] = 'Adicionar todos, acrescentar número à direita do nome de utilizador';
 $string['uuoptype_addnew'] = 'Adicionar apenas novos, ignorar existentes';
 $string['uuoptype_addupdate'] = 'Adicionar novos e atualizar existentes';
 $string['uuoptype_update'] = 'Atualizar apenas os existentes';

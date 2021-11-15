@@ -31,4 +31,4 @@ $string['page-report-participation-index'] = 'Kursdeltaganderapport';
 $string['page-report-participation-x'] = 'Valfri deltaganderapport';
 $string['participation:view'] = 'Visa närvarorapport';
 $string['pluginname'] = 'Deltagande i kurs';
-$string['privacy:metadata'] = 'Pluginmodulen Kursdeltagande lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Kursdeltagande lagrar ingen personinformation.';

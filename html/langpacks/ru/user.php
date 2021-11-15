@@ -30,6 +30,7 @@ $string['adverbfor_and'] = 'и';
 $string['adverbfor_andnot'] = 'и';
 $string['adverbfor_or'] = 'или';
 $string['applyfilters'] = 'Применить фильтры';
+$string['clearfilterrow'] = 'Удалить строку фильтра';
 $string['clearfilters'] = 'Сбросить фильтры';
 $string['clearfilterselection'] = 'Удалить «{$a}» из фильтра';
 $string['countparticipantsfound'] = 'Найдено участников: {$a}';

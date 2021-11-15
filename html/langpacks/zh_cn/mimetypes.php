@@ -25,7 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['application/dash_xml'] = '基于 HTTP 的动态自适应流媒体 (MPEG-DASH)';
 $string['application/epub_zip'] = 'EPUB 电子书';
+$string['application/json'] = '{$a->MIMETYPE2} 文本';
 $string['application/msword'] = 'Word 文档';
 $string['application/pdf'] = 'PDF 文档';
 $string['application/vnd.moodle.backup'] = 'Moodle 备份';
@@ -46,6 +48,7 @@ $string['application/x-iwork-keynote-sffkey'] = 'iWork 主旨演讲';
 $string['application/x-iwork-numbers-sffnumbers'] = 'iWork 数字电子表格';
 $string['application/x-iwork-pages-sffpages'] = 'iWork Pages 文字处理文档';
 $string['application/x-javascript'] = 'JavaScript 源';
+$string['application/x-mpegURL'] = 'HTTP 实时流媒体 (HLS)';
 $string['application/x-mspublisher'] = '公开发布文档';
 $string['application/x-shockwave-flash'] = 'flash 动画';
 $string['application/xhtml_xml'] = 'XHTML 文档';
@@ -60,6 +63,8 @@ $string['group:html_audio'] = '浏览器支持的音频文件';
 $string['group:html_track'] = 'HTML 跟踪文件';
 $string['group:html_video'] = '浏览器支持的视频文件';
 $string['group:image'] = '图像文件';
+$string['group:media_source'] = '流媒体';
+$string['group:optimised_image'] = '要优化的图像文件，例如徽章';
 $string['group:presentation'] = '演示文稿';
 $string['group:sourcecode'] = '源代码';
 $string['group:spreadsheet'] = '电子表格文件';

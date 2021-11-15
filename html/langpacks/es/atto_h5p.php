@@ -42,4 +42,4 @@ $string['invalidh5purl'] = 'URL inválida';
 $string['noh5pcontent'] = 'Sin contenido H5P añadido';
 $string['or'] = 'o';
 $string['pluginname'] = 'Insertar H5P';
-$string['privacy:metadata'] = 'El plugin atto_h5p no almacena ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_h5p no almacena ningún dato personal.';

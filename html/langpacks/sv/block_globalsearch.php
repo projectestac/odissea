@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['globalsearch:addinstance'] = 'Lägg till nytt Global sökning-block';
-$string['globalsearch:myaddinstance'] = 'Lägg till nytt Global sökning-block till Mitt Moodle';
+$string['globalsearch:myaddinstance'] = 'Lägg till nytt Global sökning-block till översiktssidan';
 $string['pluginname'] = 'Global sökning';
 $string['privacy:metadata'] = 'Blocket Global sökning enbart visar data lagrad på andra platser.';

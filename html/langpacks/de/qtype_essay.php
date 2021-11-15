@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptedfiletypes'] = 'Akzeptierte Dateitypen';
 $string['acceptedfiletypes_help'] = 'Die akzeptierten Dateitypen  können durch Eingabe einer Liste von Dateiendungen eingeschränkt werden. Wenn das Feld leer bleibt, sind alle Dateitypen akzeptiert.';
 $string['allowattachments'] = 'Anhänge erlauben';
+$string['answerfiles'] = 'Antwortdateien';
+$string['answertext'] = 'Antworttext';
 $string['attachedfiles'] = 'Anhänge: {$a}';
 $string['attachmentsoptional'] = 'Anhänge sind optional';
 $string['attachmentsrequired'] = 'Anhänge erforderlich';

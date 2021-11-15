@@ -29,5 +29,5 @@ $string['displaycategories'] = 'Mostrar categorias';
 $string['displaycategories_help'] = 'Mostrar a categoria da disciplina nos itens do bloco das disciplinas acedidas recentemente.';
 $string['nocourses'] = 'Sem disciplinas recentes';
 $string['pluginname'] = 'Disciplinas acedidas recentemente';
-$string['privacy:metadata'] = 'O bloco de disciplinas acedidas recentemente não armazena qualquer dado pessoal.';
+$string['privacy:metadata'] = 'O bloco Disciplinas acedidas recentemente não armazena qualquer dado pessoal.';
 $string['recentlyaccessedcourses:myaddinstance'] = 'Adicionar um novo bloco de Disciplinas acedidas recentemente ao Painel do utilizador';

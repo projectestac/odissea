@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'تسليم مرفوع تمَّ تقديمه';
 $string['event_assessable_uploaded'] = 'ملف تم رفعه';
 $string['pluginname'] = 'الرفع';
-$string['privacy:metadata'] = 'إن ملحق رفع الواجب لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة رفع الواجب لا تخزن أي بيانات شخصية.';

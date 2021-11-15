@@ -25,5 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:no_data_reason'] = 'إن كتلة Turnitin لا تخزن أي بيانات شخصية.';
 $string['turnitin:addinstance'] = 'إضافة كتلة جديدة من Turnitin';
 $string['turnitin:myaddinstance'] = 'إضافة كتلة جديدة من Turnitin إلى صفحة مودل الخاصة بي';

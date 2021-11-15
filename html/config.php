@@ -1,6 +1,6 @@
 <?php
 
-include_once dirname(dirname(dirname(__FILE__))) . '/html/config/env-config.php';
+include_once dirname(__FILE__, 3) . '/html/config/env-config.php';
 
 unset($CFG);
 global $CFG;

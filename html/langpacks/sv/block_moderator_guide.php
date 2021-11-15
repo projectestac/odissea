@@ -64,7 +64,7 @@ $string['moderator_guide:canviewcomplete'] = 'Kan visa slutförandestatus';
 $string['moderator_guide:canviewreview'] = 'Kan visa granskningskommentarerna (i statusarna granskad/slutförd/ingen)';
 $string['moderator_guide:editguide'] = 'Kan redigera ett Moderator Guide-block';
 $string['moderator_guide:edittemplate'] = 'Kan redigera en Moderator Guide-mall';
-$string['moderator_guide:myaddinstance'] = 'Kan lägga till ett Moderator Guide-block på sin Mitt Moodle-sida';
+$string['moderator_guide:myaddinstance'] = 'Kan lägga till ett Moderator Guide-block till sin översiktssida';
 $string['moderator_guide:viewguide'] = 'Kan visa en Moderator Guide-guide';
 $string['moderator_guide:viewguidestatus'] = 'Kan visa all kursguidesstatistik';
 $string['moderator_guide:viewtemplate'] = 'Kan visa Moderator Guide-mallar';
@@ -83,4 +83,31 @@ $string['reviewed'] = 'Granskad';
 $string['sectionx'] = 'Avsnitt {$a->id}';
 $string['show'] = 'Visa';
 $string['template'] = 'Mall';
+$string['templateexample'] = '<pre><i>Detta är ett exempel, redigera det gärna som du vill.</i></pre>
+	<h3>Betygsråd för extern betygsättare</h3>
+	<p>Om du är en extern betygsättare kommer detta dokument att hjälpa dig att veta hur du bedömer den här kursen.</p>
+	<pre><i>Raden nedan är en platshållare för redigeraren. Den ersätts av en Moodle HTML-redigerare på sidan "Lägg till/redigera guide":</i></pre>
+	<p>[1:html]</p>
+	<br/>
+	<p>Du måste kontrollera dessa krav:</p>
+	<pre><i>Följande rader är också en platshållare för en redigerare, men denna mer komplexa platshållare innehåller förifylld HTML (här "krav") som kommer att visas i redigeraren. Det hjälper dig att ge några exempel till läraren.</i></pre>
+	<p>[2:html:BEGIN]</p>
+	<ul>
+		<li>krav A</li>
+		<li>krav B</li>
+		<li>krav C</li>
+	</ul>
+	<p>[2:html:END]</p>
+	<br/>
+	<p>Vi rekommenderar att du läser följande filer:</p>
+	<pre><i>Följande rad är en platshållare för filhanteraren. Den kommer att ersättas av en Moodles filhanterare på sidan "Lägg till / redigera guide":</i></pre>
+	<p>[3:files]</p>
+	<br/>
+	<p>UK gov Referenser:</p>
+	<pre><i>Följande rad är en länkplatshållare. Den kommer att ersättas av 2 textfält (url och länknamn) på sidan "Lägg till / redigera guide" :</i> </pre>
+	<p>[4:link]</p>
+	<br/>
+	<pre><i>Följande rad är en länkplatshållare med ett förifyllt länknamn (endast text visas, html ignoreras):</i> </pre>
+	<p>[5:link:BEGIN]<br/> Klicka här om du vill komma åt avdelningssidan<br/>[5:link:END]</p>
+	<p><br/>Tack, <br>Vetenskapensuniversitet</p>';
 $string['warningdeletetemplate'] = 'VARNING! Du kommer även ta bort följande guider:';

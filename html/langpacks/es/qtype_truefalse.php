@@ -37,5 +37,6 @@ $string['pluginname_help'] = 'En respuesta a una pregunta (la cual puede incluir
 $string['pluginnameadding'] = 'Agregando pregunta verdadero/falso';
 $string['pluginnameediting'] = 'Edición de una pregunta Verdadero/Falso';
 $string['pluginnamesummary'] = 'Forma simple de pregunta de opción múltiple con dos únicas posibilidades (\'Verdadero\' y \'Falso\').';
+$string['privacy:metadata'] = 'El complemento de tipo de pregunta Verdadero/Falso no almacena ningún dato personal.';
 $string['selectone'] = 'Seleccione una:';
 $string['true'] = 'Verdadero';

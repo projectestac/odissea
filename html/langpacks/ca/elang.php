@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['download'] = 'Descarrega';
+$string['filearea_subtitle'] = 'Subtítols';
 $string['notimplemented'] = 'No s\'ha implementat';

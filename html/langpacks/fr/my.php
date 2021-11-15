@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addpage'] = 'Ajouter page';
-$string['alldashboardswerereset'] = 'Toutes les pages du tableau de bord ont été réinitialisés à leur valeur par défaut.';
+$string['alldashboardswerereset'] = 'Toutes les pages du tableau de bord ont été réinitialisées à leur valeur par défaut.';
 $string['allprofileswerereset'] = 'Toutes les pages de profil ont été réinitialisés à leur valeur par défaut.';
 $string['defaultpage'] = 'Page Ma page par défaut';
 $string['defaultprofilepage'] = 'Page de profil par défaut';

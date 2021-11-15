@@ -58,11 +58,11 @@ function geogebra_after_add_or_update($geogebra, $mform) {
         }
     }
 
-    if ($geogebra->timedue) {
+    if (isset($geogebra->timedue) && $geogebra->timedue) {
         $event = new stdClass();
         if ($event->id = $DB->get_field('event', 'id', array('modulename' => 'geogebra', 'instance' => $geogebra->id))) {
             $event->name        = $geogebra->name;
-            $event->description = format_module_intro('geogebra', $geogebra, $geogebra->coursemodule);
+            $event->description = format_module_intro('geogebra', $geogebra, $geogebra->coursemodule, false);
             $event->timestart   = $geogebra->timedue;
 
             $calendarevent = calendar_event::load($event->id);
@@ -70,7 +70,7 @@ function geogebra_after_add_or_update($geogebra, $mform) {
         } else {
             $event = new stdClass();
             $event->name        = $geogebra->name;
-            $event->description = format_module_intro('geogebra', $geogebra, $geogebra->coursemodule);
+            $event->description = format_module_intro('geogebra', $geogebra, $geogebra->coursemodule, false);
             $event->courseid    = $geogebra->course;
             $event->groupid     = 0;
             $event->userid      = 0;
@@ -397,11 +397,9 @@ function geogebra_get_js_from_geogebra($context, $geogebra) {
         return;
     }
 
-    echo '<script type="text/javascript">
-    if (typeof ggbApplet == \'undefined\') {
-        ggbApplet = document.ggbApplet;
-    }
-    ' .$content . '</script>';
+    // Modified: 20/10/2021
+    // Global variable `ggbApplet` not yet used
+    echo '<script type="text/javascript">' .$content . '</script>';
 }
 
 /**

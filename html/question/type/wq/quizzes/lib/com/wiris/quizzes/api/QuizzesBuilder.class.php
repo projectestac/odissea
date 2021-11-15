@@ -24,6 +24,9 @@ class com_wiris_quizzes_api_QuizzesBuilder {
 	public function getQuizzesService() {
 		return null;
 	}
+	public function newGradeRequest($question, $instance) {
+		return null;
+	}
 	public function newFeedbackRequest($html, $question, $instance) {
 		return null;
 	}
@@ -45,15 +48,8 @@ class com_wiris_quizzes_api_QuizzesBuilder {
 	public function newQuestionInstanceImpl($question) {
 		return null;
 	}
-	public function newMultipleQuestionInstance($question = null) {
-		$qi = $this->newQuestionInstanceImpl($question);
-		return $qi;
-	}
 	public function newQuestionInstance($question = null) {
 		return $this->newQuestionInstanceImpl($question);
-	}
-	public function newMultipleQuestion() {
-		return null;
 	}
 	public function newQuestion() {
 		return null;

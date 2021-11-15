@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Lista desordenada';
-$string['privacy:metadata'] = 'El plugin atto_unorderedlist no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_unorderedlist no almacena ningún dato personal.';

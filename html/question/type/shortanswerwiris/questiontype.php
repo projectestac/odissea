@@ -26,11 +26,11 @@ class qtype_shortanswerwiris extends qtype_wq {
     public function __construct() {
         parent::__construct(new qtype_shortanswer());
     }
-    
+
     public function extra_question_fields() {
         return array('qtype_shortanswer_options', 'usecase');
     }
-    
+
     public function create_editing_form($submiturl, $question, $category, $contexts, $formeditable) {
         global $CFG;
         require_once($CFG->dirroot . '/question/type/shortanswerwiris/edit_shortanswerwiris_form.php');
@@ -187,7 +187,7 @@ class qtype_shortanswerwiris extends qtype_wq {
                         $distribution = $this->wrsqz_get_distribution($originaltext);
                         // @codingStandardsIgnoreStart
                         $wirisquestion .= '<data name="' .
-                                com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_VALUE_COMPOUND_ANSWER_GRADE_DISTRIBUTION . '">';
+                                com_wiris_quizzes_api_QuizzesConstants::$PROPERTY_COMPOUND_ANSWER_GRADE_DISTRIBUTION . '">';
                         // @codingStandardsIgnoreEnd
                         if ($distribution != '') {
                             $wirisquestion .= $distribution;

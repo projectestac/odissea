@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Limpiar el formato';
-$string['privacy:metadata'] = 'El plugin atto_clear no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_clear no almacena ningún dato personal.';

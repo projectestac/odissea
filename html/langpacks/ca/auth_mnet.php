@@ -31,6 +31,7 @@ $string['auth_mnet_roamout'] = 'Els vostres usuaris seran admesos en aquests ser
 $string['auth_mnet_rpc_negotiation_timeout'] = 'Temps d\'espera en segons per a l\'autenticació sobre transport XMLRPC.';
 $string['auth_mnetdescription'] = 'Els usuaris són autenticats d\'acord amb la xarxa de confiança definida en els paràmetres de Moodle en Xarxa.';
 $string['auto_add_remote_users'] = 'Afegeix automàticament usuaris remots';
+$string['crontask'] = 'Processament en segon pla de l\'autenticació MNET';
 $string['pluginname'] = 'Autenticació Moodle en Xarxa';
 $string['rpc_negotiation_timeout'] = 'Temps màxim negociació RPC';
 $string['sso_idp_description'] = 'Publiqueu aquest servei a fi de permetre que els vostres usuaris passin al lloc Moodle {$a} sense necessitat de tornar a iniciar-hi una sessió. <ul><li><em>Dependència</em>: també us haureu de <strong>subscriure</strong> al servei SSO (proveïdor de servei) del lloc {$a}.</li></ul><br />Subscriviu-vos a aquest servei a fi de permetre que usuaris autenticats del lloc {$a} entrin al vostre lloc sense iniciar-hi una sessió nova. <ul><li><em>Dependència</em>: també haureu de <strong>publicar</strong> el servei SSO (proveïdor de servei) per a {$a}.</li></ul><br />';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['dataformat'] = 'カンマ区切り (.csv)';
+$string['dataformat'] = 'カンマ区切り値 (.csv)';
 $string['privacy:metadata'] = 'CSVデータフォーマットプラグインはいかなる個人データも保存しません。';
 $string['shortname'] = 'CSV';

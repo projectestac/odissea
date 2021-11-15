@@ -86,7 +86,7 @@ $string['assignsubmissionpluginname'] = 'Модули представления
 $string['attemptheading'] = 'Попытка {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = 'Предыдущие попытки';
 $string['attemptnumber'] = 'Номер попытки';
-$string['attemptreopenmethod'] = 'Разрешать новые попытки';
+$string['attemptreopenmethod'] = 'Дополнительные попытки';
 $string['attemptreopenmethod_help'] = 'Этот параметр определяет, может ли студент предпринять дополнительные попытки выполнить задание. Для каждой попытки оценка и отзывы сохраняются и могут быть просмотрены учителем и учеником. Возможны следующие варианты:
 
 * Никогда - возможна только одна попытка.
@@ -128,8 +128,8 @@ $string['clickexpandreviewpanel'] = 'Нажмите, чтобы разверну
 $string['collapsegradepanel'] = 'Свернуть панель оценок';
 $string['collapsereviewpanel'] = 'Свернуть панель обзора';
 $string['comment'] = 'Отзыв';
-$string['completiondetail:submit'] = 'Давать ответ на задание';
-$string['completionsubmit'] = 'Студент должен представить ответ на задание, чтобы завершить его';
+$string['completiondetail:submit'] = 'Дать ответ на задание';
+$string['completionsubmit'] = 'Студент должен представить ответ на задание, чтобы выполнить его';
 $string['configshowrecentsubmissions'] = 'Все могут видеть уведомления об отправках в отчетах о последних действиях.';
 $string['confirmbatchgradingoperation'] = 'Вы уверены, что хотите применить {$a->operation} для студентов - {$a->count}?';
 $string['confirmsubmission'] = 'Вы уверены, что хотите представить свою работу для оценивания? Вы больше не сможете изменить свой ответ.';
@@ -583,9 +583,9 @@ $string['timeremainingcolon'] = 'Оставшееся время: {$a}';
 $string['togglezoom'] = 'Увеличить/уменьшить область';
 $string['ungroupedusers'] = 'Включен параметр «Нужно быть в группе для отправки ответа». Некоторые пользователи не являются членами групп или являются членами нескольких групп, эти пользователи не смогут отправить ответы на задание.';
 $string['ungroupedusersoptional'] = 'Параметр «Студенты отправляются в группы» включен, и некоторые пользователи либо не являются членами какой-либо группы, либо являются членами более чем одной группы. Учтите, что эти студенты будут представлены в качестве членов группы по умолчанию.';
-$string['unlimitedattempts'] = 'Неограничено';
+$string['unlimitedattempts'] = 'Не ограничено';
 $string['unlimitedattemptsallowed'] = 'Разрешено неограниченное количество попыток';
-$string['unlimitedpages'] = 'Неограничено';
+$string['unlimitedpages'] = 'Не ограничено';
 $string['unlocksubmissionforstudent'] = 'Разрешить представить ответы студентам: (ID = {$a->id}, ФИО = {$a->fullname}).';
 $string['unlocksubmissions'] = 'Разблокировать ответы';
 $string['unsavedchanges'] = 'Несохраненные изменения';

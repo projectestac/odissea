@@ -28,4 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['displaysizelistdetails'] = '';
 $string['displaysizesingledetails'] = '';
 $string['logintext'] = 'تسجيل الدخول بحساب Google لغرض الرفع';
+$string['nooauth2'] = 'لتتمكن من الرفع، على مشرفك تحديد مُعرَّف زبون Google OAUTH2 وكلمة السر.';
 $string['recordavideodetails'] = 'قم بتسجيل فيديو باستعمال الكاميرة واللاقطة في حاسوبك. أولاً، أنقر الزر لتحميل المُسجِّل. سيتطلب الأمر أن تكون مسجلاً لدخولك في يوتيوب/Google وتمنح الصلاحيات لمسجلك باستعمال الكاميرة واللاقطة.<br />';

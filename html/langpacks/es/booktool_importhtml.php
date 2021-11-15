@@ -32,6 +32,7 @@ $string['importhtml:import'] = 'Importar capítulos';
 $string['importing'] = 'Importación';
 $string['importingchapters'] = 'Importación de capítulos en el libro';
 $string['pluginname'] = 'Importar capítulo a Libro';
+$string['privacy:metadata'] = 'El complemento de importación de capítulos de Libro no almacena ningún dato personal.';
 $string['relinking'] = 'Volver a vincular';
 $string['type'] = 'Tipo';
 $string['typeonefile'] = 'Un archivo HTML con encabezados como capítulos';

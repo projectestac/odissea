@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Lista ordenada';
-$string['privacy:metadata'] = 'El plugin atto_orderedlist no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_orderedlist no almacena ningún dato personal.';

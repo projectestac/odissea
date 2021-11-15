@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Protocolo SOAP';
-$string['privacy:metadata'] = 'O módulo Protocolo SOAP não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Protocolo SOAP não armazena quaisquer dados pessoais.';
 $string['soap:use'] = 'Usar protocolo SOAP';

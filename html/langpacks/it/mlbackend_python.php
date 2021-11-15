@@ -30,6 +30,7 @@ $string['errorserver'] = 'Errore del server: {$a}';
 $string['host'] = 'Host';
 $string['hostdesc'] = 'Host';
 $string['packageinstalledshouldbe'] = 'Il pacchetto python "moodlemlbackend" deve essere aggiornato.  La versione richiesta è "{$a->required}" mentre la versione installata è "{$a->installed}"';
+$string['packageinstalledtoohigh'] = 'Il pacchetto Python moodlemlbackend non è compatibile con questa versione di Moodle. La versione richiesta è "{$a->required}" o superiore purché sia compatibile con le API. La versione installata "{$a->installed}" è troppo alta.';
 $string['password'] = 'Password';
 $string['passworddesc'] = 'La password per consentire la comunicazione tra il server Moodle e il server Python';
 $string['pluginname'] = 'Backend Python di machine learning';

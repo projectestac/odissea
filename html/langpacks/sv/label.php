@@ -55,5 +55,5 @@ Etiketter kan användas för att
 $string['modulenameplural'] = 'Etiketter';
 $string['pluginadministration'] = 'Etikettadministration';
 $string['pluginname'] = 'Etikett';
-$string['privacy:metadata'] = 'Etikettmodulen lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Etikett lagrar ingen personinformation.';
 $string['search:activity'] = 'Etikett';

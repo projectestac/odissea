@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'رفع منفرد';
-$string['privacy:metadata'] = 'إن ملحق رفع الواجب المنفرد لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة رفع الواجب المنفرد لا تخزن أي بيانات شخصية.';

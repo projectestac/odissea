@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['news_items:addinstance'] = 'Gehitu azken berriak bloke berria';
-$string['news_items:myaddinstance'] = 'Gehitu azken berriak bloke berria Aginte-panelean';
-$string['pluginname'] = 'Azken berriak';
-$string['privacy:metadata'] = 'Azken berriak blokeak foroan gordetako informazioa baino ez du erakusten eta ez du inolako daturik biltzen.';
+$string['news_items:addinstance'] = 'Gehitu azken albisteak bloke berria';
+$string['news_items:myaddinstance'] = 'Gehitu azken albisteak bloke berria Aginte-panelean';
+$string['pluginname'] = 'Azken albisteak';
+$string['privacy:metadata'] = 'Azken albisteak blokeak foroan gordetako informazioa baino ez du erakusten eta ez du inolako daturik biltzen.';

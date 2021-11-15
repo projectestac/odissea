@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = 'Svart';
+$string['color_blue'] = 'Blå';
+$string['color_green'] = 'Grön';
+$string['color_red'] = 'Röd';
+$string['color_white'] = 'Vit';
+$string['color_yellow'] = 'Gul';
 $string['pluginname'] = 'Teckenfärg';
 $string['privacy:metadata'] = 'Pluginmodulen atto_fontcolor lagrar ingen personinformation.';

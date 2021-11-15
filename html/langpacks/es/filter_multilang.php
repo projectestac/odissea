@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Contenido multi-idioma';
+$string['privacy:metadata'] = 'El complemento de contenido multi-idioma no';

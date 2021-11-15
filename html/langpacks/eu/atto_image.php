@@ -39,6 +39,7 @@ $string['enteralt'] = 'Deskribatu irudi hau ikusi ezin dezakeen batentzat';
 $string['enterurl'] = 'Idatzi URLa';
 $string['height'] = 'Altuera';
 $string['imageproperties'] = 'Irudiaren ezaugarriak';
+$string['imageurlrequired'] = 'Irudiak URLa izan behar du';
 $string['pluginname'] = 'Txertatu edo editatu irudia';
 $string['presentation'] = 'Irudi hau soilik apaingarria da';
 $string['presentationoraltrequired'] = 'Irudiek deskribapena behar dute, soilik apaingarria gisa markatuta egon ezean.';

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Sobrescrito';
-$string['privacy:metadata'] = 'El plugin atto_superscript no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_superscript no almacena ningún dato personal.';

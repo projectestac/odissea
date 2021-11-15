@@ -25,4 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['configplugin'] = 'تهيئة مستودع يوتيوب الشخصي';
+$string['oauthinfo'] = '<p>لاستعمال هذ الملحق، عليك تسجيل موقعك في Google، كما هو موصوف في التوثيقات <a href="{$a->docsurl}">Google OAuth 2.0 setup</a>.</p><p>كجزء من عملية التسجيل، عليك إدخال الرابط الآتي بمثابة \'Authorized Redirect URIs\':</p><p>{$a->callbackurl}</p><p>بمجرد التسجيل، سيتم تزويدك بمُعرَّف الزبون وكلمة السر وبهما يمكنك تهيئة كل ملاحق خدمات Google.</p><p>يرجى أيضًا ملاحظة أن عليك تمكين خدمة \'YouTube API\'.</p>';
+$string['personalyoutube:view'] = 'معاينة مستودع يوتيوب الشخصي';
+$string['pluginname'] = 'يوتيوب الشخصي';
+$string['pluginname_help'] = 'رفع ونشر فيديوهات يوتيوب الشخصية';
 $string['privacy:metadata:repository_personalyoutube'] = 'إن ملحق مستودع يوتيوب الشخصي لا يخزن أي بيانات شخصية، ولكنه ينقل بيانات المستخدمين من مودل إلى نظام خارجي.';
+$string['privacy:metadata:repository_personalyoutube:email'] = 'البريد الالكتروني لمستخدم مستودع يوتيوب الشخصي';
+$string['privacy:metadata:repository_personalyoutube:searchtext'] = 'نص استعلام البحث لمستخدم مستودع يوتيوب الشخصي';

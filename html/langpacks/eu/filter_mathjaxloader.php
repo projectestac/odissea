@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['additionaldelimiters'] = 'Ekuazioen bereizle gehigarriak';
 $string['additionaldelimiters_help'] = 'MathJax iragazkiak karaktere bereizleen arteko testua aztertu eta ekuazio gisa erakusten ditu.
 
-Onartutako karaktere bereizleak hemen gehi daitezke (AsciiMath-ek adibidez ` erabiltzen du). Bereizleak karaketere anitzekoak izan daitezke, eta bereizle anitzak koma bidez bana daitezke.';
+Onartutako karaktere bereizleak hemen gehi daitezke (AsciiMath-ek adibidez ` erabiltzen du). Bereizleak karaktere anitzekoak izan daitezke, eta bereizle anitzak koma bidez bana daitezke.';
 $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'MathJax URL';
 $string['httpsurl_help'] = 'MathJax liburutegiaren URL osoa.';

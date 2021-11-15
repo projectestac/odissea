@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Oformaterad text';
-$string['privacy:metadata'] = 'Pluginmodulen Oformaterad text lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Oformaterad text lagrar ingen personinformation.';

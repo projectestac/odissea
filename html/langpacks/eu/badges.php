@@ -143,9 +143,7 @@ $string['backpacksettings'] = 'Motxilaren ezarpenak';
 $string['backpackweburl'] = 'Motxilaren URLa';
 $string['badgedetails'] = 'Dominaren xehetasunak';
 $string['badgeimage'] = 'Irudia';
-$string['badgeimage_help'] = 'Hau da domina hau ematean erabiliko den irudia.
-
-Irudi berria gehitzeko, bilatu eta aukeratu irudia (JPG edo PNG formatuan) eta ondoren egin klik "Gorde aldaketak" botoian. Irudiaren tamaina aldatu egingo da dominaren irudiaren baldintzetara egokitzeko.';
+$string['badgeimage_help'] = 'Irudiak gutxienez 300 x 300 pixeleko tamaina izan beharko luke. Dominan 300x300 pixeleko tamainan erakutsiko da, eta 100 x 100 pixeleko tamainan erabiltzailearen profil-orrian .';
 $string['badgeprivacysetting'] = 'Dominen pribatutasun-ezarpenak';
 $string['badgeprivacysetting_help'] = 'Irabazten dituzun dominak zure kontuaren profil-orrian erakutsi ahal dira. Ezarpen honek irabazitako azken dominak automatikoki erakusteko aukera ematen dizu.
 

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['activityoverview'] = 'Du har kommande chattsessioner';
 $string['ajax'] = 'Version som använder AJAX';
 $string['autoscroll'] = 'Automatisk rullning';
-$string['beep'] = 'Pip';
+$string['beep'] = 'Pinga';
 $string['bubble'] = 'Bubbla';
 $string['cantlogin'] = 'Det gick inte att logga in i denna chatt!';
 $string['chat:addinstance'] = 'Ny chatt';
@@ -79,17 +79,17 @@ $string['indicator:socialbreadth'] = 'Chatt social';
 $string['indicator:socialbreadth_help'] = 'Denna indikator baseras på den sociala bredd som uppnåtts av studenten i en Chattaktivitet.';
 $string['indicator:socialbreadthdef'] = 'Chatt social';
 $string['indicator:socialbreadthdef_help'] = 'Deltagaren har nått denna procentandel av det sociala engagemanget som erbjuds av Chattaktiviteterna under detta analysintervall (Nivåer = Inget deltagande, Deltagaren ensamt, Deltagaren tillsammans med andra)';
-$string['inputarea'] = 'Inmatningsområde';
+$string['inputarea'] = 'Inmatningsfält';
 $string['invalidid'] = 'Det gick inte att hitta det chat-rummet!';
 $string['list_all_sessions'] = 'Lista alla sessioner';
 $string['list_complete_sessions'] = 'Lista bara slutförda sessioner';
 $string['listing_all_sessions'] = 'Listar alla sessioner';
-$string['messagebeepseveryone'] = '{$a} skickar en pipsignal till alla!';
-$string['messagebeepsyou'] = '{$a} har just skickat en pipsignal till dig';
+$string['messagebeepseveryone'] = '{$a} pingar alla!';
+$string['messagebeepsyou'] = '{$a} har precis pingat dig!';
 $string['messageenter'] = '{$a} har just anslutit till denna chatt';
 $string['messageexit'] = '{$a} har lämnat chatten';
 $string['messages'] = 'Meddelanden';
-$string['messageyoubeep'] = 'Du signalerade till {$a}';
+$string['messageyoubeep'] = 'Du pingade {$a}';
 $string['method'] = 'Chattmetod';
 $string['methodajax'] = 'AJAX';
 $string['methoddaemon'] = 'Serverdaemon för chatt';
@@ -168,24 +168,11 @@ $string['updatemethod'] = 'Uppdateringsmetod';
 $string['updaterate'] = 'Uppdateringsfrekvens:';
 $string['userlist'] = 'Användarlista';
 $string['usingchat'] = 'Använder chat';
-$string['usingchat_help'] = '<p>Modulen för chat innehåller några funktioner som ska göra det trevligare
-att chatta.</p>
-<dl>
-	<dt><b>Smilies</b></dt>
-		<dd>Alla "smilies (emoticons) som du kan skriva in på andra ställen
-		i Moodle kan du även skriva in här och de kommer att visas på
-		ett korrekt sätt. T ex  :-) = <img src="pix/s/smiley.gif" alt="smiley" /></dd>
-	<dt><b>Länkar</b></dt>
-		<dd>Internetadresser omvandlas automatiskt till länkar.</dd>
-	<dt><b>Att uttrycka känslor</b></dt>
-		<dd>Du kan inleda en rad med "/me" eller ":" för att uttrycka känslor.
-		Om du, till exempel, heter Lasse och skriver in ":skrattar"
-		eller "/me skrattar!"  så kommer alla att se "Lasse skrattar!"</dd>
-	<dt><b>Pipsignaler</b></dt>
-		<dd>Du kan skicka ett ljud till andra genom att klicka på "pip"-länken bredvid deras namn.
-		Du kan också skicka en signal till alla samtidigt genom att skriva "beep all".</dd>
-	<dt><b>HTML</b></dt>
-		<dd>Om du kan lite HTML-kod så kan du använda det i din text för att lägga in bilder,
-		spela upp ljud eller skapa text med olika färger och storlekar.</dd>
-</dl>';
+$string['usingchat_help'] = 'Chattmodulen innehåller några funktioner för att göra chatten lite trevligare.
+
+* Smilies - Alla smileys (uttryckssymboler) som du kan skriva någon annanstans i Moodle kan också skrivas här, till exempel :-)
+* Länkar - Webbplatsadresser kommer att förvandlas till länkar automatiskt
+* Emoting - Du kan starta en rad med "/me" eller ":" för att emote, till exempel om ditt namn är Kim och du skriver ":laughs!" eller "/me laughs!" då kommer alla att se "Kim skrattar!"
+* Ping - Du kan skicka ett ljud till andra deltagare genom att klicka på länken "pinga" bredvid deras namn. En användbar genväg för att pinga alla personer i chatten på en gång är att skriva "pinga alla".
+* HTML - Om du kan använda HTML-kod kan du använda den i texten för att göra saker som att infoga bilder, spela upp ljud eller skapa färgad text';
 $string['viewreport'] = 'Visa de senaste chat-sessionerna';

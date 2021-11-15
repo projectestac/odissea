@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Radioknappar';
 $string['pluginname'] = 'Radioknappar';
-$string['privacy:metadata'] = 'Fältkomponenten Radioknappar lagrar ingen personlig information. Den använder tabeller definierade i <code>mod_data</code>.';
+$string['privacy:metadata'] = 'Fältkomponenten Radioknappar lagrar ingen personinformation. Den använder tabeller definierade i <code>mod_data</code>.';

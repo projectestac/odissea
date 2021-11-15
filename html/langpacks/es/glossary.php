@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['addcategory'] = 'Añadir categoría';
 $string['addcomment'] = 'Añadir comentario';
 $string['addentry'] = 'Añadir entrada';
 $string['addingcomment'] = 'Añadir un comentario';
@@ -44,7 +45,7 @@ $string['allowcomments'] = 'Permitir comentar las entradas';
 $string['allowcomments_help'] = 'Si se habilita, todos los participantes con permiso para crear comentarios podrán añadirlos a las entradas del glosario.';
 $string['allowduplicatedentries'] = 'Permitir entradas duplicadas';
 $string['allowduplicatedentries_help'] = '<P>Si está habilitada, puede haber varias entradas con el mismo nombre de concepto.';
-$string['allowprintview'] = 'Permitir vista impresión';
+$string['allowprintview'] = 'Permitir vista de impresión';
 $string['allowprintview_help'] = '<p>Se puede permitir que los estudiantes usen la vista de impresión del glosario.</p>
 
 <p>Usted puede elegir si desea activar o desactivar esta opción.</p>
@@ -98,7 +99,9 @@ $string['commentdeleted'] = 'Se ha borrado el comentario.';
 $string['comments'] = 'Comentarios';
 $string['commentson'] = 'Comentarios sobre';
 $string['commentupdated'] = 'Este comentario se ha actualizado';
+$string['completiondetail:entries'] = 'Crear entradas: {$a}';
 $string['completionentries'] = 'El estudiante debe crear entradas:';
+$string['completionentriesdesc'] = 'El estudiante debe crear al menos {$a} entrada/s';
 $string['completionentriesgroup'] = 'Requerir entradas';
 $string['concept'] = 'Concepto';
 $string['concepts'] = 'Conceptos';
@@ -170,7 +173,7 @@ $string['displayformatfaq'] = 'FAQ';
 $string['displayformatfullwithauthor'] = 'Completo con autor';
 $string['displayformatfullwithoutauthor'] = 'Completo sin autor';
 $string['displayformats'] = 'Formatos de visualización';
-$string['displayformatssetup'] = 'Ajustar formatos de visualización';
+$string['displayformatssetup'] = 'Configuración de formatos de visualización';
 $string['duplicatecategory'] = 'Categoría duplicada';
 $string['duplicateentry'] = 'Entrada duplicada';
 $string['editalways'] = 'Permitir editar siempre';
@@ -185,7 +188,9 @@ en cualquier momento.
 <LI><B>No:</B> Las entradas son editables durante un período especificado.
 </UL>';
 $string['editcategories'] = 'Editar categorías';
+$string['editcategory'] = 'Editar categoría';
 $string['editentry'] = 'Editar entrada';
+$string['editentrya'] = 'Editar entrada: {$a}';
 $string['editingcomment'] = 'Editando un comentario';
 $string['entbypage'] = 'Entradas por página';
 $string['entries'] = 'Entradas';
@@ -197,6 +202,8 @@ $string['entrydeleted'] = 'Entrada borrada';
 $string['entryexported'] = 'Entrada exportada con éxito';
 $string['entryishidden'] = '(esta entrada está oculta)';
 $string['entryleveldefaultsettings'] = 'Ajustes por defecto del nivel de entrada';
+$string['entrylink'] = 'Enlace de la entrada: {$a}';
+$string['entrynotapproved'] = 'Entrada no aprobada';
 $string['entrysaved'] = 'Esta entrada ha sido guardada';
 $string['entryupdated'] = 'Esta entrada ha sido actualizada';
 $string['entryusedynalink'] = 'Esta entrada será enlazada automáticamente';
@@ -240,7 +247,7 @@ $string['fullmatch_help'] = 'Esta variable define si el enlace automático se ha
 <p>Por ejemplo, si está habilitada, la entrada "casa" no se enlazará automáticamente
 con la palabra "casamiento".</p>';
 $string['glossary:addinstance'] = 'Añadir un nuevo glosario';
-$string['glossary:approve'] = 'Aprobar entradas pendientes';
+$string['glossary:approve'] = 'Aprobar y deshacer entradas aprobadas';
 $string['glossary:comment'] = 'Crear comentarios';
 $string['glossary:export'] = 'Exportar entradas';
 $string['glossary:exportentry'] = 'Exportar una sola entrada';
@@ -255,7 +262,7 @@ $string['glossary:viewallratings'] = 'Ver todas las valoraciones emitidas por la
 $string['glossary:viewanyrating'] = 'Ver el total de valoraciones que alguien recibió';
 $string['glossary:viewrating'] = 'Ver la valoración total recibida';
 $string['glossary:write'] = 'Crear nuevas entradas';
-$string['glossaryleveldefaultsettings'] = 'Ajustes por defecto del nivel de glosario';
+$string['glossaryleveldefaultsettings'] = 'Configuración predeterminada del nivel de glosario';
 $string['glossarytype'] = 'Tipo de glosario';
 $string['glossarytype_help'] = 'Un glosario principal es un glosario en el que se pueden importar entradas de glosarios secundarios. Solo puede haber un glosario principal en cada curso. Si no se necesita importar entradas entre glosarios, todos los glosarios en el curso pueden ser de tipo secundario.';
 $string['guestnoedit'] = 'Los invitados no pueden editar glosarios';
@@ -267,8 +274,12 @@ $string['importentriesfromxml'] = 'Importar entradas desde archivo XML';
 $string['includegroupbreaks'] = 'Incluir segmentaciones de grupo';
 $string['indicator:cognitivedepth'] = 'Glosario cognitivo';
 $string['indicator:cognitivedepth_help'] = 'Este indicador está basado en la profundidad cognitiva alcanzada por el estudiante en una actividad Glosario.';
+$string['indicator:cognitivedepthdef'] = 'Glosario cognitivo';
+$string['indicator:cognitivedepthdef_help'] = 'El participante ha alcanzado este porcentaje del compromiso cognitivo ofrecido por las actividades de Glosario durante este intervalo de análisis (Niveles = Sin visualización, Visualización, Enviar)';
 $string['indicator:socialbreadth'] = 'Glosario social';
 $string['indicator:socialbreadth_help'] = 'Este indicador está basado en la amplitud social alcanzada por el estudiante en una actividad Glosario.';
+$string['indicator:socialbreadthdef'] = 'Glosario social';
+$string['indicator:socialbreadthdef_help'] = 'El participante ha alcanzado este porcentaje de compromiso social ofrecido por las actividades de Glosario durante este intervalo de análisis (Niveles = Sin participación, Participante solo)';
 $string['isglobal'] = '¿Este es el glosario global?';
 $string['isglobal_help'] = 'Un glosario global tiene entradas que están enlazadas desde cualquier lugar del sitio, no solo desde el curso en que reside el glosario. Únicamente los administradores pueden determinar que un glosario sea global.';
 $string['letter'] = 'letra';
@@ -319,9 +330,22 @@ $string['popupformat'] = 'Formato \'popup\'';
 $string['print'] = 'Imprimir';
 $string['printerfriendly'] = 'Versión para impresión';
 $string['printviewnotallowed'] = 'No se permite vista de impresión';
+$string['privacy'] = 'Privacidad de los resultados';
+$string['privacy:metadata:core_comments'] = 'Los comentarios hechos sobre definiciones de glosario se almacenan utilizando el sistema core_comment';
+$string['privacy:metadata:core_files'] = 'Los archivos vinculados a definiciones de glosario se almacenan utilizando el sistema core_files';
+$string['privacy:metadata:core_rating'] = 'Las calificaciones añadidas a entradas de glosario se almacenan utilizando el sistema core_rating';
+$string['privacy:metadata:core_tag'] = 'Las etiquetas añadidas a definiciones de glosario se almacenan utilizando el sistema core_tag';
+$string['privacy:metadata:glossary_entries'] = 'Información sobre las entradas de un usuario para una determinada actividad de glosario';
+$string['privacy:metadata:glossary_entries:attachment'] = 'El archivo adjunto de la entrada que el usuario añadió';
+$string['privacy:metadata:glossary_entries:concept'] = 'El concepto de la entrada que el usuario añadió';
+$string['privacy:metadata:glossary_entries:definition'] = 'La definición de la entrada que el usuario añadió';
+$string['privacy:metadata:glossary_entries:glossaryid'] = 'El ID de la actividad de glosario';
+$string['privacy:metadata:glossary_entries:timemodified'] = 'La marca de tiempo que indica el momento en el que la entrada del glosario fue modificada por el usuario';
+$string['privacy:metadata:glossary_entries:userid'] = 'El ID del usuario que está añadiendo esta entrada de glosario';
 $string['question'] = 'Pregunta';
 $string['rejectedentries'] = 'Entradas rechazadas';
 $string['rejectionrpt'] = 'Informe de rechazo';
+$string['removeallglossarytags'] = 'Eliminar todas las etiquetas del glosario';
 $string['resetglossaries'] = 'Eliminar entradas de';
 $string['resetglossariesall'] = 'Eliminar entradas de todos los glosarios';
 $string['rssarticles'] = 'Número de artículos recientes RSS';
@@ -357,6 +381,7 @@ $string['special'] = 'Especial';
 $string['standardview'] = 'Vista Alfabética';
 $string['studentcanpost'] = 'Los estudiantes pueden agregar entradas';
 $string['tagarea_glossary_entries'] = 'Entradas de glosario';
+$string['tagsdeleted'] = 'Las etiquetas del glosario se han eliminado';
 $string['totalentries'] = 'Total de entradas';
 $string['usedynalink'] = 'Enlace automático a las entradas del glosario';
 $string['usedynalink_help'] = 'Si el <strong>Enlace automático al glosario</strong> ha sido habilitada por un administrador y esta opción está activada, la opción del formulario "Agregar una nueva entrada" permite vincular automáticamente las palabras y frases del concepto allá donde aparezcan en el resto del curso.';

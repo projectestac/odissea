@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_oidcdescription'] = 'The OpenID Connect plugin provides single-sign-on functionality using configurable identity providers.';
+$string['auth_oidcdescription'] = 'The OpenID Connect authentication plugin provides single-sign-on functionality using configurable identity providers.';
 $string['cfg_authendpoint_desc'] = 'The URI of the Authorization endpoint from your identity provider to use.';
 $string['cfg_authendpoint_key'] = 'Authorization Endpoint';
 $string['cfg_autoappend_desc'] = 'Automatically append this string when logging in users using the "Resource Owner Password Credentials" authentication method. This is useful when your identity provider requires a common domain, but don\'t want to require users to type it in when logging in. For example, if the full OpenID Connect user is "james@example.com" and you enter "@example.com" here, the user will only have to enter "james" as their username. <br /><b>Note:</b> In the case where conflicting usernames exist - i.e. a Moodle user exists wth the same name, the priority of the authentication plugin is used to determine which user wins out.';
@@ -46,6 +46,11 @@ $string['cfg_err_invalidauthendpoint'] = 'Invalid Authorization Endpoint';
 $string['cfg_err_invalidclientid'] = 'Invalid client ID';
 $string['cfg_err_invalidclientsecret'] = 'Invalid client secret';
 $string['cfg_err_invalidtokenendpoint'] = 'Invalid Token Endpoint';
+$string['cfg_field_mapping_desc'] = 'User profile data can be mapped from Open ID Connect identity providers (IdP) to Moodle.<br/>
+<ul>
+<li>Basic profile data is available from ID tokens from all IdP.</li>
+<li>If Azure AD is used as the IdP, additional profile data can be made available by installing and configuring the <a href="https://moodle.org/plugins/local_o365">Microsoft 365 integration plugin (local_o365)</a>.</li>
+</ul>';
 $string['cfg_forceredirect_desc'] = 'If enabled, will skip the login index page and redirect to the OpenID Connect page. Can be bypassed with ?noredirect=1 URL param';
 $string['cfg_forceredirect_key'] = 'Force redirect';
 $string['cfg_icon_desc'] = 'An icon to display next to the provider name on the login page.';
@@ -80,9 +85,9 @@ $string['cfg_opname_desc'] = 'This is an end-user-facing label that identifies t
 $string['cfg_opname_key'] = 'Provider Name';
 $string['cfg_redirecturi_desc'] = 'This is the URI to register as the "Redirect URI". Your OpenID Connect identity provider should ask for this when registering Moodle as a client. <br /><b>NOTE:</b> You must enter this in your OpenID Connect provider *exactly* as it appears here. Any difference will prevent logins using OpenID Connect.';
 $string['cfg_redirecturi_key'] = 'Redirect URI';
-$string['cfg_signoffintegration_desc'] = 'If enabled, when a Moodle user using OIDC authentication method signs off from Moodle, Moodle will attempt to log the user off from Office 365 as well.
+$string['cfg_signoffintegration_desc'] = 'When connecting to Azure AD, if this option is enabled, when a Moodle user using the OpenID Connect authentication method signs off from Moodle, Moodle will attempt to log the user off from Microsoft 365 as well.
 
-Note the URL of Moodle site ({$a}) needs to be added as a redirect URI in the Azure app created for Moodle Office 365 integration.';
+Note the URL of Moodle site ({$a}) needs to be added as a redirect URI in the Azure app created for Moodle Microsoft 365 integration.';
 $string['cfg_signoffintegration_key'] = 'Single sign off';
 $string['cfg_tokenendpoint_desc'] = 'The URI of the token endpoint from your identity provider to use.';
 $string['cfg_tokenendpoint_key'] = 'Token Endpoint';
@@ -163,6 +168,35 @@ $string['privacy:metadata:auth_oidc_token:token'] = 'The token';
 $string['privacy:metadata:auth_oidc_token:tokenresource'] = 'The resource of the token';
 $string['privacy:metadata:auth_oidc_token:userid'] = 'The user ID of the Moodle user';
 $string['privacy:metadata:auth_oidc_token:username'] = 'The username of the Moodle user';
+$string['settings_fieldmap_feild_not_mapped'] = '(not mapped)';
+$string['settings_fieldmap_field_businessPhones'] = 'Office phone';
+$string['settings_fieldmap_field_city'] = 'City';
+$string['settings_fieldmap_field_companyName'] = 'Company Name';
+$string['settings_fieldmap_field_country'] = 'Country';
+$string['settings_fieldmap_field_department'] = 'Department';
+$string['settings_fieldmap_field_displayName'] = 'Display Name';
+$string['settings_fieldmap_field_employeeId'] = 'Employee ID';
+$string['settings_fieldmap_field_extensionattribute'] = 'Extension attribute {$a}';
+$string['settings_fieldmap_field_faxNumber'] = 'Fax Number';
+$string['settings_fieldmap_field_givenName'] = 'Given Name';
+$string['settings_fieldmap_field_groups'] = 'Groups';
+$string['settings_fieldmap_field_jobTitle'] = 'Job Title';
+$string['settings_fieldmap_field_mail'] = 'Email';
+$string['settings_fieldmap_field_manager'] = 'Manager';
+$string['settings_fieldmap_field_mobile'] = 'Mobile';
+$string['settings_fieldmap_field_mobilePhone'] = 'Mobile phone';
+$string['settings_fieldmap_field_objectId'] = 'Object ID';
+$string['settings_fieldmap_field_officeLocation'] = 'Office';
+$string['settings_fieldmap_field_postalCode'] = 'Postal Code';
+$string['settings_fieldmap_field_preferredLanguage'] = 'Language';
+$string['settings_fieldmap_field_preferredName'] = 'Preferred Name';
+$string['settings_fieldmap_field_roles'] = 'Roles';
+$string['settings_fieldmap_field_state'] = 'State';
+$string['settings_fieldmap_field_streetAddress'] = 'Street Address';
+$string['settings_fieldmap_field_surname'] = 'Surname';
+$string['settings_fieldmap_field_teams'] = 'Teams';
+$string['settings_fieldmap_field_telephoneNumber'] = 'Telephone Number';
+$string['settings_fieldmap_field_userPrincipalName'] = 'Username (UPN)';
 $string['table_action'] = 'Action';
 $string['table_matching_details'] = 'Details';
 $string['table_matching_status'] = 'Matching status';
@@ -184,3 +218,6 @@ $string['ucp_status_disabled'] = 'Disabled';
 $string['ucp_status_enabled'] = 'Enabled';
 $string['ucp_title'] = '{$a} Management';
 $string['unmatched'] = 'Unmatched';
+$string['update_oncreate_and_onlogin'] = 'On creation and every login';
+$string['update_oncreate_and_onlogin_and_usersync'] = 'On creation, every login, and every user sync task run';
+$string['update_onlogin_and_usersync'] = 'On every login and every user sync task run';

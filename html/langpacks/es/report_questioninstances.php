@@ -31,6 +31,7 @@ $string['getreport'] = 'Obtener el informe';
 $string['hiddenquestions'] = 'Ocultos';
 $string['intro'] = 'Este informe presenta todos los contextos en el sitema donde hay preguntas de un tipo concreto.';
 $string['pluginname'] = 'Casos de pregunta';
+$string['privacy:metadata'] = 'El complemento de instancias de pregunta no almacena ningún dato personal.';
 $string['questioninstances:view'] = 'Ver informe de casos de pregunta';
 $string['reportforallqtypes'] = 'Informe para todos los tipos de preguntas';
 $string['reportformissingqtypes'] = 'Informe para las preguntas de tipo desconocido';

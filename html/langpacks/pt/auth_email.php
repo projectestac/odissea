@@ -32,4 +32,4 @@ $string['auth_emailrecaptcha'] = 'Esta configuração adiciona um elemento de co
 $string['auth_emailrecaptcha_key'] = 'Ativar a utilização de reCAPTCHA';
 $string['auth_emailsettings'] = 'Configurações';
 $string['pluginname'] = 'Autorregisto com confirmação por e-mail';
-$string['privacy:metadata'] = 'O módulo de autenticação Autorregisto com confirmação por e-mail não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo de autenticação Autorregisto com confirmação por e-mail não armazena quaisquer dados pessoais.';

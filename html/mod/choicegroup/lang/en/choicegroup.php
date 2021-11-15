@@ -78,6 +78,7 @@ $string['notyetresultsviewable'] = 'The results will be visible after this activ
 $string['notanswered'] = 'Not answered yet';
 $string['notenrolledchoose'] = 'Sorry, only enrolled users are allowed to make choices.';
 $string['notopenyet'] = 'Sorry, this activity is not available until {$a}';
+$string['onlyactive'] = 'Filter out response data for users with expired or suspended enrolments';
 $string['option'] = 'Group';
 $string['pluginadministration'] = 'Choice administration';
 $string['pluginname'] = 'Group choice';
@@ -164,4 +165,7 @@ $string['hidegroupmembers'] = 'Hide Group Members';
 $string['activitydate:willopen'] = 'Opens:';
 $string['activitydate:hasopened'] = 'Opened:';
 $string['activitydate:willclose'] = 'Closes:';
+$string['mustchoosemax'] = 'You must choose a maximum of {$a} groups. Nothing was saved.';
+$string['maxenrollments'] = 'Max. enrollments';
+$string['maxenrollments_help'] = 'This option allows to limit the number of group enrollments for a participant. Use default value **0** if there is no limit.';
 

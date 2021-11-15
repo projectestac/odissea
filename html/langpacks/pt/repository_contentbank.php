@@ -33,4 +33,4 @@ $string['contentbank:view'] = 'Ver repositório de banco de conteúdos';
 $string['emptyfilelist'] = 'Não existem ficheiros para mostrar';
 $string['pluginname'] = 'Banco de conteúdos';
 $string['pluginname_help'] = 'Ficheiros no banco de conteúdos';
-$string['privacy:metadata'] = 'O módulo Repositório de banco de conteúdos não armazena nem transmite quaisquer dados pessoais.';
+$string['privacy:metadata'] = 'O módulo repositório Banco de conteúdos não armazena nem transmite quaisquer dados pessoais.';

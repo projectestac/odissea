@@ -39,14 +39,14 @@ $string['form_help'] = 'Denbora-estimazioa Saioa eta Saioaren iraupen kontzeptua
 
 <strong>Klik:</strong> Erabiltzaile batek Moodleko orri batean sartzen denean erregistro bat gordetzen da.
 
-<strong>Saioa:</strong> Bi klik kontsekutibo edo gehiagoko multzoa, non kliken arteko denbora tarteak ez duen aurrez definituriko gehienezko denbora tartea gainditzen.
+<strong>Saioa:</strong> Bi klik kontsekutibo edo gehiagoko multzoa, non kliken arteko denbora tarteak ez duen aurrez definituriko gehieneko denbora tartea gainditzen.
 
 <strong>Saioaren iraupena:</strong> saio bateko lehen eta azken klikaren arteko denbora tartea.
 
 <strong>Dedikatutako denbora:</strong> erabiltzaile baten saioen iraunpenen batura.';
-$string['form_text'] = 'Aukeratu data tartea eta saio bateko kliken arteko gehienezko denbora tartea.';
-$string['limit'] = 'Kliken arteko gehienezko denbora tartea (minututan).';
-$string['limit_help'] = 'Kliken arteko gehienezko denbora tarteak bi klik saio berekoak diren edo ez finkatzen du.';
+$string['form_text'] = 'Aukeratu data tartea eta saio bateko kliken arteko gehieneko denbora tartea.';
+$string['limit'] = 'Kliken arteko gehieneko denbora tartea (minututan).';
+$string['limit_help'] = 'Kliken arteko gehieneko denbora tarteak bi klik saio berekoak diren edo ez finkatzen du.';
 $string['maxtime'] = 'Tartearen bukaera';
 $string['maxtime_help'] = 'Data honen aurretiko erregistro sarrerak bakarrik hartzen dira kontuan';
 $string['meandedication'] = '<strong>Batez besteko dedikazioa:</strong> {$a}';

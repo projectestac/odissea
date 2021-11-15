@@ -70,7 +70,7 @@ Behin adierazpen horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu 
 Irmoki gomendatzen da eskuragarri dagoen zure Moodle bertsioaren azken kaleratzea (bertsiorik altuena) instalatuta izatea falta diren indizeak bilatu baino lehen.
 
 Funtzionalitate honek ez du datu-basean inolako ekintzarik egiten (bertatik irakurri baino ez), eta beraz arazorik gabe edozein unetan exekuta daiteke.';
-$string['confirmcheckoraclesemantics'] = 'Funtzionalitate honek <a href="https://tracker.moodle.org/browse/MDL-29322">BYTE semantika erabiltzen duten Oracle varchar2 zutabeak</a> bilatuko ditu zure Moodle zerbitzarian, eta sortuko ditu (exekutatu gabe!) zutabe guztiek horren ordez CHAR semantika (datu-baseen arteko bateragarritasunerako hobea eta edukien gehienezko luzera handitzen duena) erabil dezaten beharrezkoak diren SQL adierazpenak.
+$string['confirmcheckoraclesemantics'] = 'Funtzionalitate honek <a href="https://tracker.moodle.org/browse/MDL-29322">BYTE semantika erabiltzen duten Oracle varchar2 zutabeak</a> bilatuko ditu zure Moodle zerbitzarian, eta sortuko ditu (exekutatu gabe!) zutabe guztiek horren ordez CHAR semantika (datu-baseen arteko bateragarritasunerako hobea eta edukien gehieneko luzera handitzen duena) erabil dezaten beharrezkoak diren SQL adierazpenak.
 
 Behin adierazpen horiek sortuta zure SQL interfaze gogokoenean kopiatu eta modu seguruan exekuta ditzakezu (ez ahaztu hori egin aurretik zure datuen segurtasun-kopia bat egitea).
 

@@ -31,5 +31,5 @@ $string['h5'] = 'عنوان رأسي (صغير)';
 $string['p'] = 'فقرة';
 $string['pluginname'] = 'أنماط الفقرة';
 $string['pre'] = 'مسبق التنسيق';
-$string['privacy:metadata'] = 'إن ملحق atto_title لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_title لا تخزن أي بيانات شخصية.';
 $string['title'] = 'أنماط الفقرة';

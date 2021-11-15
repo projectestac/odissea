@@ -31,5 +31,5 @@ $string['coursespecoutcome'] = 'مخرجات المقرر الدراسي';
 $string['eventgradereportviewed'] = 'تقرير مخرجات التقديرات تمت معاينته';
 $string['outcomes:view'] = 'معاينة تقرير المخرجات';
 $string['pluginname'] = 'تقرير المخرجات';
-$string['privacy:metadata'] = 'تقرير مخرجات العلامات يظهر فقط بيانات مخزونة في مواضع أخرى.';
+$string['privacy:metadata'] = 'تقرير مخرجات التقديرات يظهر فقط بيانات مخزونة في مواضع أخرى.';
 $string['usedgradeitem'] = 'عدد عناصر الدرجة';

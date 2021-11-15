@@ -28,6 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 $string['acceptedfiletypes'] = '許可されるファイルタイプ';
 $string['acceptedfiletypes_help'] = '許可されるファイルタイプは一連のファイル拡張子を入力して制限することができます。フィールドが空白の場合、すべてのファイルタイプが許可されます。';
 $string['allowattachments'] = '添付を許可する';
+$string['answerfiles'] = '解答ファイル';
+$string['answertext'] = '解答テキスト';
 $string['attachedfiles'] = '添付: {$a}';
 $string['attachmentsoptional'] = '添付は任意です';
 $string['attachmentsrequired'] = '添付必須';

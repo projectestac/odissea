@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acohortroleassignmentssaved'] = '{$a} Rollenzuweisungen \'Globale Gruppe\' wurden gesichert.';
+$string['acohortroleassignmentssaved'] = '{$a} Rollenzuweisungen \'Globale Gruppe\' wurden gespeichert.';
 $string['assign'] = 'Zuweisen';
 $string['assignroletocohort'] = 'Rollen im Nutzerkontext an alle Mitglieder einer globalen Gruppe zuweisen';
 $string['backgroundsync'] = 'Hinweis: Die Rollenzuweisungen \'Globale Gruppe\' werden nicht sofort wirksam. Änderungen in den Rollenzuweisungen werden von einem regelmäßigen Task übertragen.';
@@ -35,8 +35,8 @@ $string['cohortroles'] = 'Rollen für globale Gruppen';
 $string['existingcohortroles'] = 'Vorhandene Rollenzuweisungen \'Globale Gruppe\'';
 $string['managecohortroles'] = 'Rollen für globale Gruppen zuweisen';
 $string['noassignableroles'] = 'Es gibt noch keine Rollen, die im Nutzerkontext zugeordnet werden könnten. <a href="../../roles/manage.php">Rollen verwalten</a>';
-$string['nocohortroleassignmentssaved'] = 'Keine Rollenzuweisung \'Globale Gruppe\' wurde gesichert.';
-$string['onecohortroleassignmentsaved'] = 'Eine Rollenzuweisung \'Globale Gruppe\' wurde gesichert.';
+$string['nocohortroleassignmentssaved'] = 'Keine Rollenzuweisung \'Globale Gruppe\' wurde gespeichert.';
+$string['onecohortroleassignmentsaved'] = 'Eine Rollenzuweisung \'Globale Gruppe\' wurde gespeichert.';
 $string['pluginname'] = 'Rollenverwaltung \'Globale Gruppe\'';
 $string['privacy:metadata:tool_cohortroles'] = 'Die Rollenverwaltung \'Globale Gruppe\' speichert Rollenzuweisungen von Nutzer/innen zu globalen Gruppen';
 $string['privacy:metadata:tool_cohortroles:cohortid'] = 'ID der globalen Gruppe';

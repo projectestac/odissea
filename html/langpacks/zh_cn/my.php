@@ -42,3 +42,4 @@ $string['reseterror'] = '发生错误正在重置你的页面';
 $string['reseteveryonesdashboard'] = '重置所有用户个人主页';
 $string['reseteveryonesprofile'] = '重置所有用户个人资料页';
 $string['resetpage'] = '重置页面为默认值';
+$string['resettingdashboards'] = '将用户仪表板重置为默认值...';

@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['news_items:addinstance'] = 'Añadir un nuevo bloque de Avisos recientes';
 $string['news_items:myaddinstance'] = 'Añadir un nuevo bloque de Avisos recientes en el Área personal';
 $string['pluginname'] = 'Avisos recientes';
+$string['privacy:metadata'] = 'El bloque de últimos anuncios solo muestra información almacenada en el foro y no almacena ninguna información.';

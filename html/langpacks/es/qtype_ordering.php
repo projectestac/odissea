@@ -25,11 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['absoluteposition'] = 'Posición absoluta';
 $string['correctorder'] = 'El orden correcto de estos elementos es el siguiente:';
 $string['defaultquestionname'] = 'Coloca los siguientes sucesos en el orden correcto.';
+$string['gradedetails'] = 'Detalles de calificación';
+$string['gradingtype'] = 'Tipo de calificación';
 $string['noresponsedetails'] = 'Lo sentimos, ningún detalle está disponible para la respuesta a esta pregunta.';
 $string['pluginname'] = 'Poner en orden';
 $string['pluginname_help'] = 'Varios elementos aparecen desordenados. Se pueden arrastrar en un orden significativo.';
 $string['pluginnameadding'] = 'Añadir una pregunta de tipo Poner en orden';
 $string['pluginnameediting'] = 'Modificar una pregunta de Poner en orden';
 $string['pluginnamesummary'] = 'Colocar los elementos desordenados en un orden significativo.';
+$string['scoredetails'] = 'A continuación se muestran las puntuaciones de cada elemento de esta respuesta:';

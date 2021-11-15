@@ -50,5 +50,5 @@ $string['morehelp'] = 'ytterligare hjälp';
 $string['performance:view'] = 'Visa prestandarapport';
 $string['performancereportdesc'] = 'Rapporten listar problem som kan påverka prestandan hos webbplatsen {$a}';
 $string['pluginname'] = 'Prestandaöversikt';
-$string['privacy:metadata'] = 'Plugin-modulen Prestandaöversikt lagrar ingen personlig information.';
+$string['privacy:metadata'] = 'Pluginmodulen Prestandaöversikt lagrar ingen personinformation.';
 $string['value'] = 'Värde';

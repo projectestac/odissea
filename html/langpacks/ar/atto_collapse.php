@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'إظهار/إخفاء الأزرار المتقدمة';
-$string['privacy:metadata'] = 'إن ملحق atto_collapse لا يخزن أي بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_collapse لا تخزن أي بيانات شخصية.';
 $string['settings'] = 'إعدادات تصغير شريط الأدوات';
 $string['showfewer'] = 'أظهر أزرار أقل';
 $string['showgroups'] = 'أظهر أول (كذا) مجموعة عند التصغير.';

@@ -21,7 +21,7 @@ class com_wiris_util_type_IntegerTools {
 		return $x >= $start && $x < $end;
 	}
 	static function isInt($x) {
-		return _hx_deref(new EReg("[\\+\\-]?\\d+", ""))->match($x);
+		return _hx_deref(new EReg("^[\\+\\-]?\\d+\$", ""))->match($x);
 	}
 	function __toString() { return 'com.wiris.util.type.IntegerTools'; }
 }

@@ -72,8 +72,8 @@ class qtype_essaywiris_test_helper extends question_test_helper {
             <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>=</mo><mo>-</mo><mn>10</mn></math></input></command>
             <command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>b</mi><mo>=</mo><mfrac><mn>15</mn><mn>171</mn>
             </mfrac></math></input></command></group></library></session><constructions>
-            <construction group="1">{&quot;elements&quot;:[],&quot;constraints&quot;:[],&quot;displays&quot;:[],&quot;handwriting&quot;:[]}</construction>
-            </constructions></wiriscalc>]]>
+            <construction group="1">{&quot;elements&quot;:[],&quot;constraints&quot;:[],&quot;displays&quot;:[],&quot;
+            handwriting&quot;:[]}</construction></constructions></wiriscalc>]]>
             </wirisCasSession><options><option name="precision">4</option><option name="times_operator">·</option>
             <option name="implicit_times_operator">false</option><option name="imaginary_unit">i</option></options><localData>
             <data name="cas">false</data><data name="casSession"><![CDATA[<wiriscalc version="3.1"><title>

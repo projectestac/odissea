@@ -665,7 +665,7 @@ function courses_vicensvives_add_moduleinfo($moduleinfo, $course, $section) {
     $newcm->added = time();
     $newcm->section = $section->id;
     if (!$moduleinfo->coursemodule = $DB->insert_record("course_modules", $newcm)) {
-        print_error('cannotaddcoursemodule');
+        throw new moodle_exception('cannotaddcoursemodule');
     }
 
     $addinstancefunction    = $moduleinfo->modulename."_add_instance";
@@ -684,9 +684,10 @@ function courses_vicensvives_add_moduleinfo($moduleinfo, $course, $section) {
         if ($e instanceof moodle_exception) {
             throw $e;
         } else if (!is_number($returnfromfunc)) {
-            print_error('invalidfunction', '', course_get_url($course, $section->section));
+            throw new moodle_exception('invalidfunction', '', course_get_url($course, $section->section));
         } else {
-            print_error('cannotaddnewmodule', '', course_get_url($course, $section->section), $moduleinfo->modulename);
+            throw new moodle_exception('cannotaddnewmodule', '', course_get_url($course, $section->section),
+                $moduleinfo->modulename);
         }
     }
 

@@ -40,4 +40,4 @@ $string['tagcollection_help'] = 'Välj etikettsamling att visa etiketter från. 
 $string['taggeditemscontext'] = 'Kontext för taggade objekt';
 $string['taggeditemscontext_help'] = 'Du kan avgränsa etikettmolnet till att enbart omfatta etiketter i den aktuella kurskategorin, kursen eller modulen.';
 $string['tags:addinstance'] = 'Lägg till nytt etikettsblock';
-$string['tags:myaddinstance'] = 'Lägg till nytt etikettsblock på Mitt Moodle';
+$string['tags:myaddinstance'] = 'Lägg till nytt etikettsblock till översiktssidan';

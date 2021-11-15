@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['csv:view'] = 'Importar calificaciones de CSV';
 $string['pluginname'] = 'Archivo CSV';
+$string['privacy:metadata'] = 'El complemento de importación de calificaciones desde CSV no almacena ningún dato personal.';

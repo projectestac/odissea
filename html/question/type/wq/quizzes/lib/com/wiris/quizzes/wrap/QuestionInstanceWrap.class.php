@@ -6,6 +6,161 @@ class com_wiris_quizzes_wrap_QuestionInstanceWrap implements com_wiris_quizzes_a
 		$this->instance = $instance;
 		$this->wrapper = com_wiris_system_CallWrapper::getInstance();
 	}}
+	public function getChecks($slot, $authorAnswer) {
+		try {
+			$this->wrapper->start();
+			$sw = $slot;
+			if($sw !== null) {
+				$slot = $sw->slot;
+			}
+			$aaw = $authorAnswer;
+			if($aaw !== null) {
+				$authorAnswer = $aaw->authorAnswer;
+			}
+			$r = $this->instance->getChecks($slot, $authorAnswer);
+			$r = php_Lib::toPhpArray($r);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
+	public function setSlotAnswer($slot, $answer) {
+		try {
+			$this->wrapper->start();
+			$sw = $slot;
+			if($sw !== null) {
+				$slot = $sw->slot;
+			}
+			$this->instance->setSlotAnswer($slot, $answer);
+			$this->wrapper->stop();
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
+	public function getSlotAnswer($slot) {
+		try {
+			$this->wrapper->start();
+			$sw = $slot;
+			if($sw !== null) {
+				$slot = $sw->slot;
+			}
+			$r = $this->instance->getSlotAnswer($slot);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
+	public function setAuxiliaryText($text) {
+		try {
+			$this->wrapper->start();
+			$this->instance->setAuxiliaryText($text);
+			$this->wrapper->stop();
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
+	public function getCompoundGrade($slot, $authorAnswer, $index) {
+		try {
+			$this->wrapper->start();
+			$sw = $slot;
+			if($sw !== null) {
+				$slot = $sw->slot;
+			}
+			$aaw = $authorAnswer;
+			if($aaw !== null) {
+				$authorAnswer = $aaw->authorAnswer;
+			}
+			$r = $this->instance->getCompoundGrade($slot, $authorAnswer, $index);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
+	public function getGrade($slot, $authorAnswer) {
+		try {
+			$this->wrapper->start();
+			$sw = $slot;
+			if($sw !== null) {
+				$slot = $sw->slot;
+			}
+			$aaw = $authorAnswer;
+			if($aaw !== null) {
+				$authorAnswer = $aaw->authorAnswer;
+			}
+			$r = $this->instance->getGrade($slot, $authorAnswer);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
+	public function areAllAnswersCorrect() {
+		try {
+			$this->wrapper->start();
+			$r = $this->instance->areAllAnswersCorrect();
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
+	public function isSlotAnswerCorrect($slot) {
+		try {
+			$this->wrapper->start();
+			$sw = $slot;
+			if($sw !== null) {
+				$slot = $sw->slot;
+			}
+			$r = $this->instance->isSlotAnswerCorrect($slot);
+			$this->wrapper->stop();
+			return $r;
+		}catch(Exception $»e) {
+			$_ex_ = ($»e instanceof HException) ? $»e->e : $»e;
+			$e = $_ex_;
+			{
+				$this->wrapper->stop();
+				throw new HException($e);
+			}
+		}
+	}
 	public function setProperty($name, $value) {
 		try {
 			$this->wrapper->start();

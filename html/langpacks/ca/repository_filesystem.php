@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['blockedpath'] = 'Camí de root bloquejat';
 $string['configplugin'] = 'Configuració del sistema de fitxers del repositori';
+$string['crontask'] = 'Processament en segon pla del repositori de sistema de fitxers';
 $string['donotusesysdir'] = 'No utilitzeu el sistema de directoris com repositori, incloent-hi';
 $string['enablecourseinstances'] = 'Permet als administradors afegir instàncies del repositori als cursos (tan sols pot ser configurat pels administradors).';
 $string['enableuserinstances'] = 'Permet als administradors afegir instàncies de repositori per a ús personal (tan sols pot ser configurat pels administradors).';

@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'محرر Cloze';
-$string['privacy:metadata'] = 'إن ملحق محرر Atto Cloze لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة محرر Atto Cloze لا تخزن أيّ بيانات شخصية.';

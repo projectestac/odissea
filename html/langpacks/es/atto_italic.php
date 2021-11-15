@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Itálica';
-$string['privacy:metadata'] = 'El plugin atto_italic no guarda ningún dato personal.';
+$string['privacy:metadata'] = 'El complemento atto_italic no almacena ningún dato personal.';

@@ -456,7 +456,7 @@ $string['courses'] = 'コース';
 $string['coursesperpage'] = '1ページあたりのコース数';
 $string['courseswithsummarieslimit'] = 'コース概要を含むコースの制限';
 $string['creatornewroleid'] = '新しいコース内でのコース作成者ロール';
-$string['creatornewroleid_help'] = 'ユーザに新しいコースを管理するパーミッションがない場合、このロールを使用して自動的に登録されます。';
+$string['creatornewroleid_help'] = 'ユーザに新しいコースを管理するためのパーミッションがない場合、このロールを使用して自動的に登録されます。';
 $string['cron'] = 'Cron';
 $string['cron_enabled'] = 'cronを有効にする';
 $string['cron_enabled_desc'] = '通常、cronは有効にすべきですが、例えばサーバの再起動時、この設定で一時的に無効にできます。この設定を無効にした場合、システムは新しいバックグラウンドタスクの開始を中止します。重要な機能の動作を停止してしまうため、長時間cronを無効にすべきではない点に留意してください。';
@@ -714,6 +714,7 @@ $string['htmlsettings'] = 'HTML設定';
 $string['http'] = 'HTTP';
 $string['httpsecurity'] = 'HTTPセキュリティ';
 $string['iconvrequired'] = 'ICONV拡張モジュールのインストールが必須です。';
+$string['igbinary322buggyversion'] = 'このサイトにインストールされているphp-igbinary拡張モジュールをPHP 7.2で動作させた場合、問題が発生する可能性があります。php-igbinary 3.2.5またはそれ以降にアップグレードするか、PHP 7.3またはそれ以降へのアップグレードをお勧めします。';
 $string['ignore'] = '無視';
 $string['includemoduleuserdata'] = 'モジュールユーザデータを含む';
 $string['incompatibleblocks'] = '互換性がないブロック';
@@ -737,6 +738,7 @@ $string['iplookupgeoplugin'] = '現在、<a href="https://www.geoplugin.com">geo
 $string['iplookupinfo'] = 'IPアドレスのロケーションをルックアップするため、MoodleはフリーオンラインNetGeo (The Internet Geographic Database) サーバをデフォルトで利用します。残念ですが、このデータベースは今後メンテナンスされることはなく、「大幅に不正確」なデータを返します。MaxMindからフリーGeoLite2 Cityデータベースのローカルコピーをインストールすることをお勧めします。<br />
 IPアドレスのロケーションはシンプルマップまたはGoogle Mapsを利用して表示されます。インタラクティブマップを有効にするにはGoogleアカウントを取得してフリーGoogle Maps APIキーを適用する必要があることに留意してください。';
 $string['iplookupmaxmindnote'] = 'この製品は<a href="https://www.maxmind.com/">https://www.maxmind.com/</a>で利用できるMaxMindによって作成されたGeoLite2データを含みます。';
+$string['iscustomadminwarnings'] = 'あなたのサイトでカスタム管理ディレクトリの使用が検出されました。この機能はサポートされなくなったため、Moodle 4.2以降に削除されます。';
 $string['ishttpswarning'] = 'あなたのサイトでは安全なHTTPSを使用していないことが検出されました。セキュリティを増して他のシステムとの統合を改善するため、あなたのサイトをHTTPSに移行することを強くお勧めします。';
 $string['keeptagnamecase'] = 'タグ名の大文字小文字を保持する';
 $string['lang'] = 'デフォルト言語';

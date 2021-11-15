@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Rasurado';
-$string['privacy:metadata'] = 'O módulo atto_strike não armazena nenhum dado pessoal.';
+$string['privacy:metadata'] = 'O módulo atto_strike não armazena quaisquer dados pessoais.';

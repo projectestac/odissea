@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['openinnewwindow'] = 'إفتح في نافذة جديدة';
-$string['privacy:metadata'] = 'إن ملحق atto_applink لا يخزن أيّ بيانات شخصية.';
+$string['privacy:metadata'] = 'إن إضافة atto_applink لا تخزن أيّ بيانات شخصية.';
+$string['username_help'] = 'إذا أردت للتطبيق أن يُفتح مع مستخدم معين، حدد اسم المستخدم هنا. إذا تم تمكين "إضافة اسم المستخدم" وهذا الحقل خالٍ، سيستعمل اسم المستخدم لمن يعاين الرابط.';

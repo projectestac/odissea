@@ -94,4 +94,14 @@ $string['privacy:metadata:qtype_wq'] = 'Information about user\'s correct answer
 $string['privacy:metadata:qtype_wq:question'] = 'Wiris Quizzes question type id';
 $string['privacy:metadata:qtype_wq:xml'] = 'Wiris Quizzes Question XML';
 
-$string['auxiliar_text'] = 'Write an optional reasoning for your answer:';
+$string['auxiliar_text'] = 'Escriba un razonamiento opcional para su respuesta:';
+
+$string['troubleshooting_settings'] = 'Resolución de problemas';
+$string['troubleshooting_settings_text'] = '';
+$string['debug_mode_enabled'] = 'Modo debug';
+$string['debug_mode_enabled_help'] = 'Activa el modo debug, que imprime información adicional que puede ayudar al equipo de Wiris a resolver cualquier problema en su instalación. No se debe activar salvo que el equipo de soporte de Wiris se lo pida específicamente, pues puede afectar al rendimiento normal de WirisQuizzes.';
+
+$string['compatibility_settings'] = 'Opciones de compatibilidad';
+$string['compatibility_settings_text'] = '';
+$string['filtercodes_compatibility_enabled'] = 'Compatibilidad con el filtro Filter Codes';
+$string['filtercodes_compatibility_enabled_help'] = 'El filtro Filter Codes no es compatible con WirisQuizzes por defecto cuando la opción "Escape Tags" está activada. Esta opción de WirisQuizzes soluciona estos problemas. No se debe activar excepto en dicha situación.';

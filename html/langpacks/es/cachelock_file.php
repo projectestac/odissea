@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Bloqueo de archivos';
+$string['privacy:metadata'] = 'El complemento de bloqueo de Archivos no almacena ningún dato personal.';

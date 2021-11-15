@@ -13,7 +13,9 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-require_once('../../../config.php');
+
+require_once('../../../config.php'); // @codingStandardsIgnoreLine
+
 require_once($CFG->dirroot . '/question/type/wq/config.php');
 
 // BEGIN HELPERS FUNCTIONS.
@@ -307,7 +309,7 @@ $output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'
 
 $wrap = com_wiris_system_CallWrapper::getInstance();
 $wrap->start();
-$configuration = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
+$configuration = com_wiris_quizzes_api_Quizzes::getInstance()->getConfiguration();
 // @codingStandardsIgnoreStart
 $reporttext = 'PROXY_URL: ' . $configuration->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL) . '<br>';
 $reporttext .= 'CACHE_DIR: ' . $configuration->get(com_wiris_quizzes_api_ConfigurationKeys::$CACHE_DIR) . '<br>';
@@ -328,7 +330,7 @@ $output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'
 
 $wrap = com_wiris_system_CallWrapper::getInstance();
 $wrap->start();
-$configuration = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
+$configuration = com_wiris_quizzes_api_Quizzes::getInstance()->getConfiguration();
 // @codingStandardsIgnoreStart
 $parsedurl = parse_url($configuration->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL));
 // @codingStandardsIgnoreEnd
@@ -351,7 +353,7 @@ $output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'
 
 $wrap = com_wiris_system_CallWrapper::getInstance();
 $wrap->start();
-$configuration = com_wiris_quizzes_impl_QuizzesBuilderImpl::getInstance()->getConfiguration();
+$configuration = com_wiris_quizzes_api_Quizzes::getInstance()->getConfiguration();
 // @codingStandardsIgnoreStart
 $reporttext = $configuration->get(com_wiris_quizzes_api_ConfigurationKeys::$SERVICE_URL);
 // @codingStandardsIgnoreEnd
@@ -371,7 +373,7 @@ $output .= html_writer::start_tag('tr', array('class' => 'wrs_filter wrs_plugin'
 require_once($CFG->dirroot . '/lib/editor/tinymce/lib.php');
 $tinyeditor = new tinymce_texteditor();
 
-$rb = com_wiris_quizzes_api_QuizzesBuilder::getInstance();
+$rb = com_wiris_quizzes_api_Quizzes::getInstance();
 
 $questionxml = '<question><wirisCasSession>&lt;session lang=&quot;en&quot; version=&quot;2.0&quot;' .
                 '&gt;&lt;library closed=&quot;false&quot;&gt;&lt;mtext style=&quot;color:#ffc800&quot;' .
@@ -440,12 +442,12 @@ $questionxml = '<question><wirisCasSession>&lt;session lang=&quot;en&quot; versi
                 'swers><correctAnswer>#s</correctAnswer></correctAnswers></question>';
 
 $q = $rb->readQuestion($questionxml);
-$qi = $rb->newQuestionInstance();
+$qi = $rb->newQuestionInstance($q);
 
 $variables = '#q #r';
 $function = '#r';
 
-$vqr = $rb->newVariablesRequest($variables, $q, $qi);
+$vqr = $rb->newVariablesRequest($variables, $qi);
 $quizzes = $rb->getQuizzesService();
 $vqs = $quizzes->execute($vqr);
 $qi->update($vqs);
@@ -498,7 +500,7 @@ try {
     $connections = haxe_Unserializer::run($data);
     $stamp = Math::floor(haxe_Timer::stamp());
     $maxconnections = $connections->length;
-    $configmaxconnections = com_wiris_quizzes_impl_QuizzesBuilderImpl::
+    $configmaxconnections = com_wiris_quizzes_api_Quizzes::
     // @codingStandardsIgnoreStart
     getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$MAXCONNECTIONS);
     // @codingStandardsIgnoreEnd

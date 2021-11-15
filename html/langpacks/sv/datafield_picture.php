@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Fält för bild';
 $string['pluginname'] = 'Bild';
-$string['privacy:metadata'] = 'Fältkomponenten Bild lagrar ingen personlig information. Den använder tabeller definierade i mod_data.';
+$string['privacy:metadata'] = 'Fältkomponenten Bild lagrar ingen personinformation. Den använder tabeller definierade i mod_data.';

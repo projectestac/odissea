@@ -39,4 +39,4 @@ $string['mustbeunique'] = 'O nível das notas deve ser único em cada critério'
 $string['mustchooseone'] = 'Tem de selecionar um dos itens';
 $string['mustdefinelevel'] = 'É necessário pelo menos um nível';
 $string['pluginname'] = 'Escolha múltipla';
-$string['privacy:metadata'] = 'O módulo rubrica apenas armazena detalhes da grelha de avaliação. Os atuais dados pessoais de como a grelha tem sido preenchida são armazenados pelo módulo workshop e anexados a avaliações exportadas.';
+$string['privacy:metadata'] = 'O módulo Escolha múltipla apenas armazena detalhes da grelha de avaliação. Os atuais dados pessoais de como a grelha tem sido preenchida são armazenados pelo módulo workshop e anexados a avaliações exportadas.';
