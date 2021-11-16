@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 10.14 (Ubuntu 10.14-0ubuntu0.18.04.1)
--- Dumped by pg_dump version 10.14 (Ubuntu 10.14-0ubuntu0.18.04.1)
+-- Dumped from database version 10.19 (Ubuntu 10.19-0ubuntu0.18.04.1)
+-- Dumped by pg_dump version 10.19 (Ubuntu 10.19-0ubuntu0.18.04.1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -1607,6 +1607,44 @@ ALTER SEQUENCE public.m2badge_backpack_id_seq OWNED BY public.m2badge_backpack.i
 
 
 --
+-- Name: m2badge_backpack_oauth2; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2badge_backpack_oauth2 (
+    id bigint NOT NULL,
+    usermodified bigint DEFAULT 0 NOT NULL,
+    timecreated bigint DEFAULT 0 NOT NULL,
+    timemodified bigint DEFAULT 0 NOT NULL,
+    userid bigint NOT NULL,
+    issuerid bigint NOT NULL,
+    externalbackpackid bigint NOT NULL,
+    token text NOT NULL,
+    refreshtoken text NOT NULL,
+    expires bigint,
+    scope text
+);
+
+
+--
+-- Name: m2badge_backpack_oauth2_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2badge_backpack_oauth2_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2badge_backpack_oauth2_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2badge_backpack_oauth2_id_seq OWNED BY public.m2badge_backpack_oauth2.id;
+
+
+--
 -- Name: m2badge_criteria; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -1773,7 +1811,8 @@ CREATE TABLE public.m2badge_external (
     id bigint NOT NULL,
     backpackid bigint NOT NULL,
     collectionid bigint NOT NULL,
-    entityid character varying(255)
+    entityid character varying(255),
+    assertion text
 );
 
 
@@ -1794,7 +1833,7 @@ CREATE TABLE public.m2badge_external_backpack (
     backpackweburl character varying(255) DEFAULT ''::character varying NOT NULL,
     apiversion character varying(12) DEFAULT '1.0'::character varying NOT NULL,
     sortorder bigint DEFAULT 0 NOT NULL,
-    password character varying(255)
+    oauth2_issuerid bigint
 );
 
 
@@ -2848,7 +2887,8 @@ CREATE TABLE public.m2choice (
     timeclose bigint DEFAULT 0 NOT NULL,
     showpreview smallint DEFAULT 0 NOT NULL,
     timemodified bigint DEFAULT 0 NOT NULL,
-    completionsubmit smallint DEFAULT 0 NOT NULL
+    completionsubmit smallint DEFAULT 0 NOT NULL,
+    showavailable smallint DEFAULT 0 NOT NULL
 );
 
 
@@ -2977,7 +3017,9 @@ CREATE TABLE public.m2choicegroup (
     timeclose bigint DEFAULT 0 NOT NULL,
     timemodified bigint DEFAULT 0 NOT NULL,
     completionsubmit smallint DEFAULT 0 NOT NULL,
-    sortgroupsby bigint DEFAULT 0 NOT NULL
+    sortgroupsby bigint DEFAULT 0 NOT NULL,
+    maxenrollments bigint DEFAULT 0,
+    onlyactive smallint DEFAULT 0 NOT NULL
 );
 
 
@@ -4026,6 +4068,44 @@ ALTER SEQUENCE public.m2config_plugins_id_seq OWNED BY public.m2config_plugins.i
 
 
 --
+-- Name: m2contentbank_content; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2contentbank_content (
+    id bigint NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    contenttype character varying(100) DEFAULT ''::character varying NOT NULL,
+    contextid bigint NOT NULL,
+    instanceid bigint,
+    configdata text,
+    usercreated bigint NOT NULL,
+    usermodified bigint,
+    timecreated bigint DEFAULT 0 NOT NULL,
+    timemodified bigint DEFAULT 0,
+    visibility smallint DEFAULT 1 NOT NULL
+);
+
+
+--
+-- Name: m2contentbank_content_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2contentbank_content_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2contentbank_content_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2contentbank_content_id_seq OWNED BY public.m2contentbank_content.id;
+
+
+--
 -- Name: m2context; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -4120,7 +4200,11 @@ CREATE TABLE public.m2course (
     requested smallint DEFAULT 0 NOT NULL,
     enablecompletion smallint DEFAULT 0 NOT NULL,
     completionnotify smallint DEFAULT 0 NOT NULL,
-    cacherev bigint DEFAULT 0 NOT NULL
+    cacherev bigint DEFAULT 0 NOT NULL,
+    originalcourseid bigint,
+    downloadcontent smallint,
+    showactivitydates smallint DEFAULT 0 NOT NULL,
+    showcompletionconditions smallint
 );
 
 
@@ -4668,6 +4752,66 @@ CREATE SEQUENCE public.m2course_sections_id_seq
 --
 
 ALTER SEQUENCE public.m2course_sections_id_seq OWNED BY public.m2course_sections.id;
+
+
+--
+-- Name: m2coursequotas_catsize; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2coursequotas_catsize (
+    id bigint NOT NULL,
+    categoryid bigint DEFAULT 0 NOT NULL,
+    quota bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: m2coursequotas_catsize_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2coursequotas_catsize_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2coursequotas_catsize_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2coursequotas_catsize_id_seq OWNED BY public.m2coursequotas_catsize.id;
+
+
+--
+-- Name: m2coursequotas_coursesize; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2coursequotas_coursesize (
+    id bigint NOT NULL,
+    courseid bigint DEFAULT 0 NOT NULL,
+    quota bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: m2coursequotas_coursesize_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2coursequotas_coursesize_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2coursequotas_coursesize_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2coursequotas_coursesize_id_seq OWNED BY public.m2coursequotas_coursesize.id;
 
 
 --
@@ -5676,7 +5820,8 @@ CREATE TABLE public.m2event (
     timemodified bigint DEFAULT 0 NOT NULL,
     subscriptionid bigint,
     priority bigint,
-    location text
+    location text,
+    component character varying(100)
 );
 
 
@@ -6731,7 +6876,8 @@ CREATE TABLE public.m2folder (
     timemodified bigint DEFAULT 0 NOT NULL,
     display smallint DEFAULT 0 NOT NULL,
     showexpanded smallint DEFAULT 1 NOT NULL,
-    showdownloadfolder smallint DEFAULT 1 NOT NULL
+    showdownloadfolder smallint DEFAULT 1 NOT NULL,
+    forcedownload smallint DEFAULT 1 NOT NULL
 );
 
 
@@ -8654,7 +8800,6 @@ CREATE TABLE public.m2groups (
     descriptionformat smallint DEFAULT 0 NOT NULL,
     enrolmentkey character varying(50),
     picture bigint DEFAULT 0 NOT NULL,
-    hidepicture smallint DEFAULT 0 NOT NULL,
     timecreated bigint DEFAULT 0 NOT NULL,
     timemodified bigint DEFAULT 0 NOT NULL
 );
@@ -8829,7 +8974,11 @@ CREATE TABLE public.m2h5p_libraries (
     semantics text,
     addto text,
     coremajor smallint,
-    coreminor smallint
+    coreminor smallint,
+    metadatasettings text,
+    tutorial text,
+    example text,
+    enabled smallint DEFAULT 1
 );
 
 
@@ -8932,6 +9081,146 @@ CREATE SEQUENCE public.m2h5p_library_dependencies_id_seq
 --
 
 ALTER SEQUENCE public.m2h5p_library_dependencies_id_seq OWNED BY public.m2h5p_library_dependencies.id;
+
+
+--
+-- Name: m2h5pactivity; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2h5pactivity (
+    id bigint NOT NULL,
+    course bigint NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    timecreated bigint NOT NULL,
+    timemodified bigint NOT NULL,
+    intro text,
+    introformat smallint DEFAULT 0 NOT NULL,
+    grade bigint DEFAULT 0,
+    displayoptions smallint DEFAULT 0 NOT NULL,
+    enabletracking smallint DEFAULT 1 NOT NULL,
+    grademethod smallint DEFAULT 1 NOT NULL,
+    reviewmode smallint DEFAULT 1
+);
+
+
+--
+-- Name: TABLE m2h5pactivity; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2h5pactivity IS 'Stores the h5pactivity activity module instances.';
+
+
+--
+-- Name: m2h5pactivity_attempts; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2h5pactivity_attempts (
+    id bigint NOT NULL,
+    h5pactivityid bigint NOT NULL,
+    userid bigint NOT NULL,
+    timecreated bigint NOT NULL,
+    timemodified bigint NOT NULL,
+    attempt integer DEFAULT 1 NOT NULL,
+    rawscore bigint DEFAULT 0,
+    maxscore bigint DEFAULT 0,
+    scaled numeric(10,5) DEFAULT 0 NOT NULL,
+    duration bigint DEFAULT 0,
+    completion smallint,
+    success smallint
+);
+
+
+--
+-- Name: TABLE m2h5pactivity_attempts; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2h5pactivity_attempts IS 'Users attempts inside H5P activities';
+
+
+--
+-- Name: m2h5pactivity_attempts_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2h5pactivity_attempts_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2h5pactivity_attempts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2h5pactivity_attempts_id_seq OWNED BY public.m2h5pactivity_attempts.id;
+
+
+--
+-- Name: m2h5pactivity_attempts_results; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2h5pactivity_attempts_results (
+    id bigint NOT NULL,
+    attemptid bigint NOT NULL,
+    subcontent character varying(128),
+    timecreated bigint NOT NULL,
+    interactiontype character varying(128),
+    description text,
+    correctpattern text,
+    response text NOT NULL,
+    additionals text,
+    rawscore bigint DEFAULT 0 NOT NULL,
+    maxscore bigint DEFAULT 0 NOT NULL,
+    duration bigint DEFAULT 0,
+    completion smallint,
+    success smallint
+);
+
+
+--
+-- Name: TABLE m2h5pactivity_attempts_results; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2h5pactivity_attempts_results IS 'H5Pactivities_attempts tracking info';
+
+
+--
+-- Name: m2h5pactivity_attempts_results_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2h5pactivity_attempts_results_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2h5pactivity_attempts_results_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2h5pactivity_attempts_results_id_seq OWNED BY public.m2h5pactivity_attempts_results.id;
+
+
+--
+-- Name: m2h5pactivity_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2h5pactivity_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2h5pactivity_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2h5pactivity_id_seq OWNED BY public.m2h5pactivity.id;
 
 
 --
@@ -9321,7 +9610,11 @@ CREATE TABLE public.m2hvp (
     slug character varying(255) DEFAULT ''::character varying NOT NULL,
     timecreated bigint DEFAULT 0 NOT NULL,
     timemodified bigint DEFAULT 0 NOT NULL,
-    completionpass smallint DEFAULT 0 NOT NULL
+    completionpass smallint DEFAULT 0 NOT NULL,
+    a11y_title character varying(255),
+    shared bigint DEFAULT 0 NOT NULL,
+    synced bigint,
+    hub_id bigint
 );
 
 
@@ -9368,6 +9661,37 @@ CREATE SEQUENCE public.m2hvp_auth_id_seq
 --
 
 ALTER SEQUENCE public.m2hvp_auth_id_seq OWNED BY public.m2hvp_auth.id;
+
+
+--
+-- Name: m2hvp_content_hub_cache; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2hvp_content_hub_cache (
+    id bigint NOT NULL,
+    language character varying(31) DEFAULT ''::character varying NOT NULL,
+    json text NOT NULL,
+    last_checked bigint NOT NULL
+);
+
+
+--
+-- Name: m2hvp_content_hub_cache_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2hvp_content_hub_cache_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2hvp_content_hub_cache_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2hvp_content_hub_cache_id_seq OWNED BY public.m2hvp_content_hub_cache.id;
 
 
 --
@@ -9879,6 +10203,39 @@ ALTER SEQUENCE public.m2imscp_id_seq OWNED BY public.m2imscp.id;
 
 
 --
+-- Name: m2infected_files; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2infected_files (
+    id bigint NOT NULL,
+    filename text NOT NULL,
+    quarantinedfile text,
+    userid bigint NOT NULL,
+    reason text NOT NULL,
+    timecreated bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: m2infected_files_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2infected_files_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2infected_files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2infected_files_id_seq OWNED BY public.m2infected_files.id;
+
+
+--
 -- Name: m2jclic; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -9896,7 +10253,7 @@ CREATE TABLE public.m2jclic (
     avaluation character varying(10),
     maxgrade character varying(15),
     grade bigint DEFAULT 0 NOT NULL,
-    lang character varying(10),
+    lang character varying(30),
     exiturl character varying(255),
     timeavailable bigint DEFAULT 0 NOT NULL,
     timedue bigint DEFAULT 0 NOT NULL,
@@ -10655,7 +11012,9 @@ CREATE TABLE public.m2license (
     fullname text,
     source character varying(255),
     enabled smallint DEFAULT 1 NOT NULL,
-    version bigint DEFAULT 0 NOT NULL
+    version bigint DEFAULT 0 NOT NULL,
+    custom smallint DEFAULT 0 NOT NULL,
+    sortorder integer DEFAULT 0 NOT NULL
 );
 
 
@@ -10924,7 +11283,7 @@ CREATE TABLE public.m2lti (
     instructorchoicesendemailaddr smallint,
     instructorchoiceallowroster smallint,
     instructorchoiceallowsetting smallint,
-    instructorcustomparameters character varying(255),
+    instructorcustomparameters text,
     instructorchoiceacceptgrades smallint,
     grade bigint DEFAULT 100 NOT NULL,
     launchcontainer smallint DEFAULT 1 NOT NULL,
@@ -11240,7 +11599,8 @@ CREATE TABLE public.m2ltiservice_gradebookservices (
     typeid bigint,
     baseurl text,
     ltilinkid bigint,
-    tag character varying(255)
+    tag character varying(255),
+    resourceid character varying(512)
 );
 
 
@@ -12812,7 +13172,9 @@ CREATE TABLE public.m2oauth2_issuer (
     showonloginpage smallint DEFAULT 1 NOT NULL,
     basicauth smallint DEFAULT 0 NOT NULL,
     sortorder bigint NOT NULL,
-    requireconfirmation smallint DEFAULT 1 NOT NULL
+    requireconfirmation smallint DEFAULT 1 NOT NULL,
+    servicetype character varying(255),
+    loginpagename character varying(255)
 );
 
 
@@ -12840,6 +13202,40 @@ CREATE SEQUENCE public.m2oauth2_issuer_id_seq
 --
 
 ALTER SEQUENCE public.m2oauth2_issuer_id_seq OWNED BY public.m2oauth2_issuer.id;
+
+
+--
+-- Name: m2oauth2_refresh_token; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2oauth2_refresh_token (
+    id bigint NOT NULL,
+    timecreated bigint NOT NULL,
+    timemodified bigint NOT NULL,
+    userid bigint NOT NULL,
+    issuerid bigint NOT NULL,
+    token text NOT NULL,
+    scopehash character varying(40) DEFAULT ''::character varying NOT NULL
+);
+
+
+--
+-- Name: m2oauth2_refresh_token_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2oauth2_refresh_token_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2oauth2_refresh_token_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2oauth2_refresh_token_id_seq OWNED BY public.m2oauth2_refresh_token.id;
 
 
 --
@@ -12895,7 +13291,7 @@ CREATE TABLE public.m2oauth2_user_field_mapping (
     timecreated bigint NOT NULL,
     usermodified bigint NOT NULL,
     issuerid bigint NOT NULL,
-    externalfield character varying(64) DEFAULT ''::character varying NOT NULL,
+    externalfield character varying(500) DEFAULT ''::character varying NOT NULL,
     internalfield character varying(64) DEFAULT ''::character varying NOT NULL
 );
 
@@ -13286,6 +13682,150 @@ CREATE SEQUENCE public.m2page_id_seq
 --
 
 ALTER SEQUENCE public.m2page_id_seq OWNED BY public.m2page.id;
+
+
+--
+-- Name: m2paygw_paypal; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2paygw_paypal (
+    id bigint NOT NULL,
+    paymentid bigint NOT NULL,
+    pp_orderid character varying(255) DEFAULT 'The ID of the order in PayPal'::character varying NOT NULL
+);
+
+
+--
+-- Name: TABLE m2paygw_paypal; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2paygw_paypal IS 'Stores PayPal related information';
+
+
+--
+-- Name: m2paygw_paypal_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2paygw_paypal_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2paygw_paypal_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2paygw_paypal_id_seq OWNED BY public.m2paygw_paypal.id;
+
+
+--
+-- Name: m2payment_accounts; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2payment_accounts (
+    id bigint NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    idnumber character varying(100),
+    contextid bigint NOT NULL,
+    enabled smallint DEFAULT 0 NOT NULL,
+    archived smallint DEFAULT 0 NOT NULL,
+    timecreated bigint,
+    timemodified bigint
+);
+
+
+--
+-- Name: m2payment_accounts_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2payment_accounts_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2payment_accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2payment_accounts_id_seq OWNED BY public.m2payment_accounts.id;
+
+
+--
+-- Name: m2payment_gateways; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2payment_gateways (
+    id bigint NOT NULL,
+    accountid bigint NOT NULL,
+    gateway character varying(100) DEFAULT ''::character varying NOT NULL,
+    enabled smallint DEFAULT 1 NOT NULL,
+    config text,
+    timecreated bigint NOT NULL,
+    timemodified bigint NOT NULL
+);
+
+
+--
+-- Name: m2payment_gateways_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2payment_gateways_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2payment_gateways_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2payment_gateways_id_seq OWNED BY public.m2payment_gateways.id;
+
+
+--
+-- Name: m2payments; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2payments (
+    id bigint NOT NULL,
+    component character varying(100) DEFAULT ''::character varying NOT NULL,
+    paymentarea character varying(50) DEFAULT ''::character varying NOT NULL,
+    itemid bigint NOT NULL,
+    userid bigint NOT NULL,
+    amount character varying(20) DEFAULT ''::character varying NOT NULL,
+    currency character varying(3) DEFAULT ''::character varying NOT NULL,
+    accountid bigint NOT NULL,
+    gateway character varying(100) DEFAULT ''::character varying NOT NULL,
+    timecreated bigint DEFAULT 0 NOT NULL,
+    timemodified bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: m2payments_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2payments_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2payments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2payments_id_seq OWNED BY public.m2payments.id;
 
 
 --
@@ -13889,7 +14429,10 @@ CREATE TABLE public.m2qtype_essay_options (
     graderinfoformat smallint DEFAULT 0 NOT NULL,
     responsetemplate text,
     responsetemplateformat smallint DEFAULT 0 NOT NULL,
-    filetypeslist text
+    filetypeslist text,
+    maxbytes bigint DEFAULT 0 NOT NULL,
+    minwordlimit bigint,
+    maxwordlimit bigint
 );
 
 
@@ -14060,7 +14603,8 @@ CREATE TABLE public.m2qtype_multichoice_options (
     incorrectfeedback text NOT NULL,
     incorrectfeedbackformat smallint DEFAULT 0 NOT NULL,
     answernumbering character varying(10) DEFAULT 'abc'::character varying NOT NULL,
-    shownumcorrect smallint DEFAULT 0 NOT NULL
+    shownumcorrect smallint DEFAULT 0 NOT NULL,
+    showstandardinstruction smallint DEFAULT 1 NOT NULL
 );
 
 
@@ -15279,7 +15823,8 @@ CREATE TABLE public.m2questionnaire (
     sid bigint DEFAULT 0 NOT NULL,
     timemodified bigint DEFAULT 0 NOT NULL,
     completionsubmit smallint DEFAULT 0 NOT NULL,
-    autonum smallint DEFAULT 3 NOT NULL
+    autonum smallint DEFAULT 3 NOT NULL,
+    progressbar smallint DEFAULT 0 NOT NULL
 );
 
 
@@ -15959,7 +16504,8 @@ CREATE TABLE public.m2quiz (
     showblocks smallint DEFAULT 0 NOT NULL,
     completionattemptsexhausted smallint DEFAULT 0,
     completionpass smallint DEFAULT 0,
-    allowofflineattempts smallint DEFAULT 0
+    allowofflineattempts smallint DEFAULT 0,
+    completionminattempts bigint DEFAULT 0 NOT NULL
 );
 
 
@@ -16410,6 +16956,112 @@ CREATE SEQUENCE public.m2quiz_statistics_id_seq
 --
 
 ALTER SEQUENCE public.m2quiz_statistics_id_seq OWNED BY public.m2quiz_statistics.id;
+
+
+--
+-- Name: m2quizaccess_seb_quizsettings; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2quizaccess_seb_quizsettings (
+    id bigint NOT NULL,
+    quizid bigint NOT NULL,
+    cmid bigint NOT NULL,
+    templateid bigint NOT NULL,
+    requiresafeexambrowser smallint NOT NULL,
+    showsebtaskbar smallint,
+    showwificontrol smallint,
+    showreloadbutton smallint,
+    showtime smallint,
+    showkeyboardlayout smallint,
+    allowuserquitseb smallint,
+    quitpassword text,
+    linkquitseb text,
+    userconfirmquit smallint,
+    enableaudiocontrol smallint,
+    muteonstartup smallint,
+    allowspellchecking smallint,
+    allowreloadinexam smallint,
+    activateurlfiltering smallint,
+    filterembeddedcontent smallint,
+    expressionsallowed text,
+    regexallowed text,
+    expressionsblocked text,
+    regexblocked text,
+    allowedbrowserexamkeys text,
+    showsebdownloadlink smallint,
+    usermodified bigint DEFAULT 0 NOT NULL,
+    timecreated bigint DEFAULT 0 NOT NULL,
+    timemodified bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2quizaccess_seb_quizsettings; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2quizaccess_seb_quizsettings IS 'Stores the quiz level Safe Exam Browser configuration.';
+
+
+--
+-- Name: m2quizaccess_seb_quizsettings_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2quizaccess_seb_quizsettings_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2quizaccess_seb_quizsettings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2quizaccess_seb_quizsettings_id_seq OWNED BY public.m2quizaccess_seb_quizsettings.id;
+
+
+--
+-- Name: m2quizaccess_seb_template; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2quizaccess_seb_template (
+    id bigint NOT NULL,
+    name character varying(255) DEFAULT ''::character varying NOT NULL,
+    description text NOT NULL,
+    content text NOT NULL,
+    enabled smallint NOT NULL,
+    sortorder bigint NOT NULL,
+    usermodified bigint DEFAULT 0 NOT NULL,
+    timecreated bigint DEFAULT 0 NOT NULL,
+    timemodified bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2quizaccess_seb_template; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2quizaccess_seb_template IS 'Templates for Safe Exam Browser configuration.';
+
+
+--
+-- Name: m2quizaccess_seb_template_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2quizaccess_seb_template_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2quizaccess_seb_template_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2quizaccess_seb_template_id_seq OWNED BY public.m2quizaccess_seb_template.id;
 
 
 --
@@ -19080,7 +19732,11 @@ CREATE TABLE public.m2task_adhoc (
     faildelay bigint,
     customdata text,
     userid bigint,
-    blocking smallint DEFAULT 0 NOT NULL
+    blocking smallint DEFAULT 0 NOT NULL,
+    timecreated bigint DEFAULT 0 NOT NULL,
+    timestarted bigint,
+    hostname character varying(255),
+    pid bigint
 );
 
 
@@ -19125,7 +19781,9 @@ CREATE TABLE public.m2task_log (
     dbreads bigint NOT NULL,
     dbwrites bigint NOT NULL,
     result smallint NOT NULL,
-    output text NOT NULL
+    output text NOT NULL,
+    hostname character varying(255),
+    pid bigint
 );
 
 
@@ -19173,7 +19831,10 @@ CREATE TABLE public.m2task_scheduled (
     dayofweek character varying(25) DEFAULT ''::character varying NOT NULL,
     faildelay bigint,
     customised smallint DEFAULT 0 NOT NULL,
-    disabled smallint DEFAULT 0 NOT NULL
+    disabled smallint DEFAULT 0 NOT NULL,
+    timestarted bigint,
+    hostname character varying(255),
+    pid bigint
 );
 
 
@@ -19201,6 +19862,436 @@ CREATE SEQUENCE public.m2task_scheduled_id_seq
 --
 
 ALTER SEQUENCE public.m2task_scheduled_id_seq OWNED BY public.m2task_scheduled.id;
+
+
+--
+-- Name: m2tool_brickfield_areas; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_areas (
+    id bigint NOT NULL,
+    type smallint DEFAULT 0 NOT NULL,
+    contextid bigint,
+    component character varying(100),
+    tablename character varying(40),
+    fieldorarea character varying(50),
+    itemid bigint,
+    filename character varying(1333),
+    reftable character varying(40),
+    refid bigint,
+    cmid bigint,
+    courseid bigint,
+    categoryid bigint
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_areas; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_areas IS 'Areas that have been checked for accessibility problems';
+
+
+--
+-- Name: m2tool_brickfield_areas_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_areas_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_areas_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_areas_id_seq OWNED BY public.m2tool_brickfield_areas.id;
+
+
+--
+-- Name: m2tool_brickfield_cache_acts; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_cache_acts (
+    id bigint NOT NULL,
+    courseid bigint NOT NULL,
+    status smallint,
+    component character varying(64),
+    totalactivities bigint,
+    failedactivities bigint,
+    passedactivities bigint,
+    errorcount bigint
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_cache_acts; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_cache_acts IS 'Contains accessibility summary information per activity.';
+
+
+--
+-- Name: m2tool_brickfield_cache_acts_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_cache_acts_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_cache_acts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_cache_acts_id_seq OWNED BY public.m2tool_brickfield_cache_acts.id;
+
+
+--
+-- Name: m2tool_brickfield_cache_check; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_cache_check (
+    id bigint NOT NULL,
+    courseid bigint NOT NULL,
+    status smallint,
+    checkid bigint,
+    checkcount bigint,
+    errorcount bigint
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_cache_check; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_cache_check IS 'Contains accessibility summary information per check.';
+
+
+--
+-- Name: m2tool_brickfield_cache_check_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_cache_check_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_cache_check_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_cache_check_id_seq OWNED BY public.m2tool_brickfield_cache_check.id;
+
+
+--
+-- Name: m2tool_brickfield_checks; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_checks (
+    id bigint NOT NULL,
+    checktype character varying(64),
+    shortname character varying(64),
+    checkgroup bigint DEFAULT 0,
+    status smallint NOT NULL,
+    severity smallint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_checks; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_checks IS 'Checks details';
+
+
+--
+-- Name: m2tool_brickfield_checks_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_checks_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_checks_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_checks_id_seq OWNED BY public.m2tool_brickfield_checks.id;
+
+
+--
+-- Name: m2tool_brickfield_content; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_content (
+    id bigint NOT NULL,
+    areaid bigint NOT NULL,
+    contenthash character varying(40) DEFAULT ''::character varying NOT NULL,
+    iscurrent smallint DEFAULT 0 NOT NULL,
+    status smallint DEFAULT 0 NOT NULL,
+    timecreated bigint NOT NULL,
+    timechecked bigint
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_content; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_content IS 'Content of an area at a particular time (recognised by a hash)';
+
+
+--
+-- Name: m2tool_brickfield_content_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_content_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_content_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_content_id_seq OWNED BY public.m2tool_brickfield_content.id;
+
+
+--
+-- Name: m2tool_brickfield_errors; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_errors (
+    id bigint NOT NULL,
+    resultid bigint NOT NULL,
+    linenumber bigint DEFAULT 0 NOT NULL,
+    errordata text,
+    htmlcode text
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_errors; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_errors IS 'Errors during the accessibility checks';
+
+
+--
+-- Name: m2tool_brickfield_errors_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_errors_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_errors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_errors_id_seq OWNED BY public.m2tool_brickfield_errors.id;
+
+
+--
+-- Name: m2tool_brickfield_process; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_process (
+    id bigint NOT NULL,
+    courseid bigint NOT NULL,
+    item character varying(64),
+    contextid bigint,
+    innercontextid bigint,
+    timecreated bigint,
+    timecompleted bigint
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_process; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_process IS 'Queued records to initiate new processing of specific targets';
+
+
+--
+-- Name: m2tool_brickfield_process_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_process_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_process_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_process_id_seq OWNED BY public.m2tool_brickfield_process.id;
+
+
+--
+-- Name: m2tool_brickfield_results; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_results (
+    id bigint NOT NULL,
+    contentid bigint,
+    checkid bigint NOT NULL,
+    errorcount bigint DEFAULT 0 NOT NULL
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_results; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_results IS 'Results of the accessibility checks';
+
+
+--
+-- Name: m2tool_brickfield_results_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_results_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_results_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_results_id_seq OWNED BY public.m2tool_brickfield_results.id;
+
+
+--
+-- Name: m2tool_brickfield_schedule; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_schedule (
+    id bigint NOT NULL,
+    contextlevel bigint DEFAULT 50 NOT NULL,
+    instanceid bigint NOT NULL,
+    contextid bigint,
+    status smallint DEFAULT 0 NOT NULL,
+    timeanalyzed bigint DEFAULT 0,
+    timemodified bigint DEFAULT 0
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_schedule; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_schedule IS 'Keeps the per course content analysis schedule.';
+
+
+--
+-- Name: m2tool_brickfield_schedule_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_schedule_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_schedule_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_schedule_id_seq OWNED BY public.m2tool_brickfield_schedule.id;
+
+
+--
+-- Name: m2tool_brickfield_summary; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.m2tool_brickfield_summary (
+    id bigint NOT NULL,
+    courseid bigint NOT NULL,
+    status smallint,
+    activities bigint,
+    activitiespassed bigint,
+    activitiesfailed bigint,
+    errorschecktype1 bigint,
+    errorschecktype2 bigint,
+    errorschecktype3 bigint,
+    errorschecktype4 bigint,
+    errorschecktype5 bigint,
+    errorschecktype6 bigint,
+    errorschecktype7 bigint,
+    failedchecktype1 bigint,
+    failedchecktype2 bigint,
+    failedchecktype3 bigint,
+    failedchecktype4 bigint,
+    failedchecktype5 bigint,
+    failedchecktype6 bigint,
+    failedchecktype7 bigint,
+    percentchecktype1 bigint,
+    percentchecktype2 bigint,
+    percentchecktype3 bigint,
+    percentchecktype4 bigint,
+    percentchecktype5 bigint,
+    percentchecktype6 bigint,
+    percentchecktype7 bigint
+);
+
+
+--
+-- Name: TABLE m2tool_brickfield_summary; Type: COMMENT; Schema: public; Owner: -
+--
+
+COMMENT ON TABLE public.m2tool_brickfield_summary IS 'Contains accessibility check results summary information.';
+
+
+--
+-- Name: m2tool_brickfield_summary_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.m2tool_brickfield_summary_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: m2tool_brickfield_summary_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.m2tool_brickfield_summary_id_seq OWNED BY public.m2tool_brickfield_summary.id;
 
 
 --
@@ -19599,7 +20690,8 @@ CREATE TABLE public.m2tool_dataprivacy_request (
     usermodified bigint DEFAULT 0 NOT NULL,
     timecreated bigint DEFAULT 0 NOT NULL,
     timemodified bigint DEFAULT 0 NOT NULL,
-    creationmethod bigint DEFAULT 0 NOT NULL
+    creationmethod bigint DEFAULT 0 NOT NULL,
+    systemapproved smallint DEFAULT 0 NOT NULL
 );
 
 
@@ -20198,11 +21290,6 @@ CREATE TABLE public.m2user (
     lastname character varying(100) DEFAULT ''::character varying NOT NULL,
     email character varying(100) DEFAULT ''::character varying NOT NULL,
     emailstop smallint DEFAULT 0 NOT NULL,
-    icq character varying(15) DEFAULT ''::character varying NOT NULL,
-    skype character varying(50) DEFAULT ''::character varying NOT NULL,
-    yahoo character varying(50) DEFAULT ''::character varying NOT NULL,
-    aim character varying(50) DEFAULT ''::character varying NOT NULL,
-    msn character varying(50) DEFAULT ''::character varying NOT NULL,
     phone1 character varying(20) DEFAULT ''::character varying NOT NULL,
     phone2 character varying(20) DEFAULT ''::character varying NOT NULL,
     institution character varying(255) DEFAULT ''::character varying NOT NULL,
@@ -20221,7 +21308,6 @@ CREATE TABLE public.m2user (
     lastip character varying(45) DEFAULT ''::character varying NOT NULL,
     secret character varying(15) DEFAULT ''::character varying NOT NULL,
     picture bigint DEFAULT 0 NOT NULL,
-    url character varying(255) DEFAULT ''::character varying NOT NULL,
     description text,
     descriptionformat smallint DEFAULT 1 NOT NULL,
     mailformat smallint DEFAULT 1 NOT NULL,
@@ -20236,7 +21322,8 @@ CREATE TABLE public.m2user (
     lastnamephonetic character varying(255),
     firstnamephonetic character varying(255),
     middlename character varying(255),
-    alternatename character varying(255)
+    alternatename character varying(255),
+    moodlenetprofile character varying(255)
 );
 
 
@@ -21114,7 +22201,7 @@ CREATE TABLE public.m2workshop_grades (
     assessmentid bigint NOT NULL,
     strategy character varying(30) DEFAULT ''::character varying NOT NULL,
     dimensionid bigint NOT NULL,
-    grade numeric(10,5) NOT NULL,
+    grade numeric(10,5),
     peercomment text,
     peercommentformat smallint DEFAULT 0
 );
@@ -21834,6 +22921,13 @@ ALTER TABLE ONLY public.m2badge_backpack ALTER COLUMN id SET DEFAULT nextval('pu
 
 
 --
+-- Name: m2badge_backpack_oauth2 id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2badge_backpack_oauth2 ALTER COLUMN id SET DEFAULT nextval('public.m2badge_backpack_oauth2_id_seq'::regclass);
+
+
+--
 -- Name: m2badge_criteria id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -22233,6 +23327,13 @@ ALTER TABLE ONLY public.m2config_plugins ALTER COLUMN id SET DEFAULT nextval('pu
 
 
 --
+-- Name: m2contentbank_content id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2contentbank_content ALTER COLUMN id SET DEFAULT nextval('public.m2contentbank_content_id_seq'::regclass);
+
+
+--
 -- Name: m2context id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -22328,6 +23429,20 @@ ALTER TABLE ONLY public.m2course_request ALTER COLUMN id SET DEFAULT nextval('pu
 --
 
 ALTER TABLE ONLY public.m2course_sections ALTER COLUMN id SET DEFAULT nextval('public.m2course_sections_id_seq'::regclass);
+
+
+--
+-- Name: m2coursequotas_catsize id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2coursequotas_catsize ALTER COLUMN id SET DEFAULT nextval('public.m2coursequotas_catsize_id_seq'::regclass);
+
+
+--
+-- Name: m2coursequotas_coursesize id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2coursequotas_coursesize ALTER COLUMN id SET DEFAULT nextval('public.m2coursequotas_coursesize_id_seq'::regclass);
 
 
 --
@@ -23003,6 +24118,27 @@ ALTER TABLE ONLY public.m2h5p_library_dependencies ALTER COLUMN id SET DEFAULT n
 
 
 --
+-- Name: m2h5pactivity id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2h5pactivity ALTER COLUMN id SET DEFAULT nextval('public.m2h5pactivity_id_seq'::regclass);
+
+
+--
+-- Name: m2h5pactivity_attempts id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2h5pactivity_attempts ALTER COLUMN id SET DEFAULT nextval('public.m2h5pactivity_attempts_id_seq'::regclass);
+
+
+--
+-- Name: m2h5pactivity_attempts_results id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2h5pactivity_attempts_results ALTER COLUMN id SET DEFAULT nextval('public.m2h5pactivity_attempts_results_id_seq'::regclass);
+
+
+--
 -- Name: m2hotpot id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -23063,6 +24199,13 @@ ALTER TABLE ONLY public.m2hvp ALTER COLUMN id SET DEFAULT nextval('public.m2hvp_
 --
 
 ALTER TABLE ONLY public.m2hvp_auth ALTER COLUMN id SET DEFAULT nextval('public.m2hvp_auth_id_seq'::regclass);
+
+
+--
+-- Name: m2hvp_content_hub_cache id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2hvp_content_hub_cache ALTER COLUMN id SET DEFAULT nextval('public.m2hvp_content_hub_cache_id_seq'::regclass);
 
 
 --
@@ -23140,6 +24283,13 @@ ALTER TABLE ONLY public.m2hvp_xapi_results ALTER COLUMN id SET DEFAULT nextval('
 --
 
 ALTER TABLE ONLY public.m2imscp ALTER COLUMN id SET DEFAULT nextval('public.m2imscp_id_seq'::regclass);
+
+
+--
+-- Name: m2infected_files id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2infected_files ALTER COLUMN id SET DEFAULT nextval('public.m2infected_files_id_seq'::regclass);
 
 
 --
@@ -23626,6 +24776,13 @@ ALTER TABLE ONLY public.m2oauth2_issuer ALTER COLUMN id SET DEFAULT nextval('pub
 
 
 --
+-- Name: m2oauth2_refresh_token id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2oauth2_refresh_token ALTER COLUMN id SET DEFAULT nextval('public.m2oauth2_refresh_token_id_seq'::regclass);
+
+
+--
 -- Name: m2oauth2_system_account id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -23700,6 +24857,34 @@ ALTER TABLE ONLY public.m2oauth_user_auth_scopes ALTER COLUMN id SET DEFAULT nex
 --
 
 ALTER TABLE ONLY public.m2page ALTER COLUMN id SET DEFAULT nextval('public.m2page_id_seq'::regclass);
+
+
+--
+-- Name: m2paygw_paypal id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2paygw_paypal ALTER COLUMN id SET DEFAULT nextval('public.m2paygw_paypal_id_seq'::regclass);
+
+
+--
+-- Name: m2payment_accounts id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2payment_accounts ALTER COLUMN id SET DEFAULT nextval('public.m2payment_accounts_id_seq'::regclass);
+
+
+--
+-- Name: m2payment_gateways id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2payment_gateways ALTER COLUMN id SET DEFAULT nextval('public.m2payment_gateways_id_seq'::regclass);
+
+
+--
+-- Name: m2payments id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2payments ALTER COLUMN id SET DEFAULT nextval('public.m2payments_id_seq'::regclass);
 
 
 --
@@ -24221,6 +25406,20 @@ ALTER TABLE ONLY public.m2quiz_statistics ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
+-- Name: m2quizaccess_seb_quizsettings id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2quizaccess_seb_quizsettings ALTER COLUMN id SET DEFAULT nextval('public.m2quizaccess_seb_quizsettings_id_seq'::regclass);
+
+
+--
+-- Name: m2quizaccess_seb_template id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2quizaccess_seb_template ALTER COLUMN id SET DEFAULT nextval('public.m2quizaccess_seb_template_id_seq'::regclass);
+
+
+--
 -- Name: m2qv id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -24687,6 +25886,76 @@ ALTER TABLE ONLY public.m2task_log ALTER COLUMN id SET DEFAULT nextval('public.m
 --
 
 ALTER TABLE ONLY public.m2task_scheduled ALTER COLUMN id SET DEFAULT nextval('public.m2task_scheduled_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_areas id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_areas ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_areas_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_cache_acts id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_cache_acts ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_cache_acts_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_cache_check id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_cache_check ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_cache_check_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_checks id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_checks ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_checks_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_content id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_content ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_content_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_errors id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_errors ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_errors_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_process id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_process ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_process_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_results id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_results ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_results_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_schedule id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_schedule ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_schedule_id_seq'::regclass);
+
+
+--
+-- Name: m2tool_brickfield_summary id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_summary ALTER COLUMN id SET DEFAULT nextval('public.m2tool_brickfield_summary_id_seq'::regclass);
 
 
 --
@@ -25376,6 +26645,14 @@ COPY public.m2badge_backpack (id, userid, email, backpackuid, autosync, password
 
 
 --
+-- Data for Name: m2badge_backpack_oauth2; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2badge_backpack_oauth2 (id, usermodified, timecreated, timemodified, userid, issuerid, externalbackpackid, token, refreshtoken, expires, scope) FROM stdin;
+\.
+
+
+--
 -- Data for Name: m2badge_criteria; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -25411,7 +26688,7 @@ COPY public.m2badge_endorsement (id, badgeid, issuername, issuerurl, issueremail
 -- Data for Name: m2badge_external; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2badge_external (id, backpackid, collectionid, entityid) FROM stdin;
+COPY public.m2badge_external (id, backpackid, collectionid, entityid, assertion) FROM stdin;
 \.
 
 
@@ -25419,9 +26696,8 @@ COPY public.m2badge_external (id, backpackid, collectionid, entityid) FROM stdin
 -- Data for Name: m2badge_external_backpack; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2badge_external_backpack (id, backpackapiurl, backpackweburl, apiversion, sortorder, password) FROM stdin;
-1	https://backpack.openbadges.org	https://backpack.openbadges.org	1	0	
-2	https://api.badgr.io/v2	https://badgr.io	2	1	
+COPY public.m2badge_external_backpack (id, backpackapiurl, backpackweburl, apiversion, sortorder, oauth2_issuerid) FROM stdin;
+2	https://api.badgr.io/v2	https://badgr.io	2	1	\N
 \.
 
 
@@ -25519,6 +26795,7 @@ COPY public.m2block (id, name, cron, lastcron, visible) FROM stdin;
 47	licenses_vicensvives	0	0	1
 48	my_books	0	0	1
 49	rgrade	0	0	1
+50	accessreview	0	0	1
 \.
 
 
@@ -25636,6 +26913,7 @@ COPY public.m2cache_filters (id, filter, version, md5key, rawtext, timemodified)
 COPY public.m2cache_flags (id, flagtype, name, timemodified, value, expiry) FROM stdin;
 1	userpreferenceschanged	2	1603983054	1	1603990254
 2	userpreferenceschanged	3	1604422442	1	1604429642
+3	accesslib/dirtycontexts	/1	1637065359	1	1637072559
 \.
 
 
@@ -25945,7 +27223,6 @@ COPY public.m2capabilities (id, name, captype, contextlevel, component, riskbitm
 299	mod/feedback:receivemail	read	70	mod_feedback	8
 300	mod/folder:addinstance	write	50	mod_folder	4
 301	mod/folder:view	read	70	mod_folder	0
-302	mod/folder:managefiles	write	70	mod_folder	16
 303	mod/forum:addinstance	write	50	mod_forum	4
 304	mod/forum:viewdiscussion	read	70	mod_forum	0
 305	mod/forum:viewhiddentimedposts	read	70	mod_forum	0
@@ -26366,6 +27643,77 @@ COPY public.m2capabilities (id, name, captype, contextlevel, component, riskbitm
 720	local/rcommon:importcredentials	write	10	local_rcommon	0
 721	local/rcommon:managecredentials	write	10	local_rcommon	0
 722	local/rcommon:editowncredentials	write	10	local_rcommon	0
+723	moodle/site:senderrormessage	write	10	moodle	16
+724	moodle/site:viewanonymousevents	read	70	moodle	8
+725	moodle/course:recommendactivity	write	10	moodle	0
+726	moodle/contentbank:access	read	50	moodle	0
+727	moodle/contentbank:upload	write	50	moodle	16
+728	moodle/contentbank:deleteanycontent	write	50	moodle	32
+729	moodle/contentbank:deleteowncontent	write	50	moodle	0
+730	moodle/contentbank:manageanycontent	write	50	moodle	32
+731	moodle/contentbank:manageowncontent	write	50	moodle	0
+732	moodle/contentbank:useeditor	write	50	moodle	16
+733	moodle/contentbank:downloadcontent	read	50	moodle	0
+734	moodle/course:downloadcoursecontent	read	50	moodle	0
+735	moodle/course:configuredownloadcontent	write	50	moodle	0
+736	moodle/payment:manageaccounts	write	50	moodle	42
+737	moodle/payment:viewpayments	read	50	moodle	8
+738	moodle/contentbank:viewunlistedcontent	read	50	moodle	0
+739	mod/assign:viewownsubmissionsummary	read	70	mod_assign	0
+302	mod/folder:managefiles	write	70	mod_folder	20
+740	mod/h5pactivity:view	read	70	mod_h5pactivity	0
+741	mod/h5pactivity:addinstance	write	50	mod_h5pactivity	0
+742	mod/h5pactivity:submit	write	70	mod_h5pactivity	0
+743	mod/h5pactivity:reviewattempts	read	70	mod_h5pactivity	0
+744	mod/hvp:share	write	70	mod_hvp	16
+745	mod/hvp:contenthubregistration	write	10	mod_hvp	0
+746	mod/lti:addpreconfiguredinstance	write	50	mod_lti	0
+747	mod/lti:addmanualinstance	write	50	mod_lti	0
+748	mod/quiz:viewoverrides	read	70	mod_quiz	0
+749	enrol/fee:config	write	50	enrol_fee	0
+750	enrol/fee:manage	write	50	enrol_fee	0
+751	enrol/fee:unenrol	write	50	enrol_fee	0
+752	enrol/fee:unenrolself	write	50	enrol_fee	0
+753	enrol/self:enrolself	write	50	enrol_self	0
+754	block/accessreview:addinstance	write	80	block_accessreview	0
+755	block/accessreview:view	read	80	block_accessreview	0
+756	report/status:view	read	10	report_status	2
+757	repository/contentbank:view	read	70	repository_contentbank	0
+758	repository/contentbank:accesscoursecontent	read	50	repository_contentbank	0
+759	repository/contentbank:accesscoursecategorycontent	read	40	repository_contentbank	0
+760	repository/contentbank:accessgeneralcontent	read	40	repository_contentbank	0
+761	tool/brickfield:viewcoursetools	read	50	tool_brickfield	8
+762	tool/brickfield:viewsystemtools	read	10	tool_brickfield	2
+763	tool/customlang:export	read	10	tool_customlang	2
+764	contenttype/h5p:access	read	50	contenttype_h5p	0
+765	contenttype/h5p:upload	write	50	contenttype_h5p	16
+766	contenttype/h5p:useeditor	write	50	contenttype_h5p	16
+767	quizaccess/seb:managetemplates	write	10	quizaccess_seb	0
+768	quizaccess/seb:bypassseb	read	70	quizaccess_seb	0
+769	quizaccess/seb:manage_seb_requiresafeexambrowser	write	70	quizaccess_seb	0
+770	quizaccess/seb:manage_seb_templateid	read	70	quizaccess_seb	0
+771	quizaccess/seb:manage_filemanager_sebconfigfile	write	70	quizaccess_seb	0
+772	quizaccess/seb:manage_seb_showsebdownloadlink	write	70	quizaccess_seb	0
+773	quizaccess/seb:manage_seb_allowedbrowserexamkeys	write	70	quizaccess_seb	0
+774	quizaccess/seb:manage_seb_linkquitseb	write	70	quizaccess_seb	0
+775	quizaccess/seb:manage_seb_userconfirmquit	write	70	quizaccess_seb	0
+776	quizaccess/seb:manage_seb_allowuserquitseb	write	70	quizaccess_seb	0
+777	quizaccess/seb:manage_seb_quitpassword	write	70	quizaccess_seb	0
+778	quizaccess/seb:manage_seb_allowreloadinexam	write	70	quizaccess_seb	0
+779	quizaccess/seb:manage_seb_showsebtaskbar	write	70	quizaccess_seb	0
+780	quizaccess/seb:manage_seb_showreloadbutton	write	70	quizaccess_seb	0
+781	quizaccess/seb:manage_seb_showtime	write	70	quizaccess_seb	0
+782	quizaccess/seb:manage_seb_showkeyboardlayout	write	70	quizaccess_seb	0
+783	quizaccess/seb:manage_seb_showwificontrol	write	70	quizaccess_seb	0
+784	quizaccess/seb:manage_seb_enableaudiocontrol	write	70	quizaccess_seb	0
+785	quizaccess/seb:manage_seb_muteonstartup	write	70	quizaccess_seb	0
+786	quizaccess/seb:manage_seb_allowspellchecking	write	70	quizaccess_seb	0
+787	quizaccess/seb:manage_seb_activateurlfiltering	write	70	quizaccess_seb	0
+788	quizaccess/seb:manage_seb_filterembeddedcontent	write	70	quizaccess_seb	0
+789	quizaccess/seb:manage_seb_expressionsallowed	write	70	quizaccess_seb	0
+790	quizaccess/seb:manage_seb_regexallowed	write	70	quizaccess_seb	0
+791	quizaccess/seb:manage_seb_expressionsblocked	write	70	quizaccess_seb	0
+792	quizaccess/seb:manage_seb_regexblocked	write	70	quizaccess_seb	0
 \.
 
 
@@ -26405,7 +27753,7 @@ COPY public.m2chat_users (id, chatid, userid, groupid, version, ip, firstping, l
 -- Data for Name: m2choice; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2choice (id, course, name, intro, introformat, publish, showresults, display, allowupdate, allowmultiple, showunanswered, includeinactive, limitanswers, timeopen, timeclose, showpreview, timemodified, completionsubmit) FROM stdin;
+COPY public.m2choice (id, course, name, intro, introformat, publish, showresults, display, allowupdate, allowmultiple, showunanswered, includeinactive, limitanswers, timeopen, timeclose, showpreview, timemodified, completionsubmit, showavailable) FROM stdin;
 \.
 
 
@@ -26429,7 +27777,7 @@ COPY public.m2choice_options (id, choiceid, text, maxanswers, timemodified) FROM
 -- Data for Name: m2choicegroup; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2choicegroup (id, course, name, intro, introformat, publish, multipleenrollmentspossible, showresults, display, allowupdate, showunanswered, limitanswers, timeopen, timeclose, timemodified, completionsubmit, sortgroupsby) FROM stdin;
+COPY public.m2choicegroup (id, course, name, intro, introformat, publish, multipleenrollmentspossible, showresults, display, allowupdate, showunanswered, limitanswers, timeopen, timeclose, timemodified, completionsubmit, sortgroupsby, maxenrollments, onlyactive) FROM stdin;
 \.
 
 
@@ -26623,9 +27971,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 21	mnet_all_hosts_id	2
 22	siteguest	1
 27	gdversion	2
-28	licenses	unknown,allrightsreserved,public,cc,cc-nd,cc-nc-nd,cc-nc,cc-nc-sa,cc-sa
-29	badges_site_backpack	1
-30	version	2019111805
 31	enableoutcomes	0
 32	usecomments	1
 33	usetags	1
@@ -26722,12 +28067,12 @@ COPY public.m2config (id, name, value) FROM stdin;
 2	rolesactive	1
 417	notloggedinroleid	6
 123	grade_report_averagesdisplaytype	inherit
-13	filterall	0
 3	auth	
-25	jsrev	1603982943
-26	templaterev	1603982943
 23	siteadmins	2,3
 124	grade_report_rangesdisplaytype	inherit
+26	templaterev	1637065554
+13	filterall	0
+30	version	2021051704
 125	grade_report_averagesdecimalpoints	inherit
 126	grade_report_rangesdecimalpoints	inherit
 127	grade_report_historyperpage	50
@@ -26988,7 +28333,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 385	updateautocheck	1
 386	updateminmaturity	200
 387	updatenotifybuilds	0
-388	enablesafebrowserintegration	0
 389	dndallowtextandlinks	0
 390	pathtosassc	
 391	contextlocking	0
@@ -27011,8 +28355,6 @@ COPY public.m2config (id, name, value) FROM stdin;
 408	profilinglifetime	1440
 409	profilingimportprefix	(I)
 281	calendar_exportsalt	XrDPGdgQDRRltIDo3smFsxD8cZferDbCU4HocbFVGPAojeKkZRX8rLu2WtmI
-410	release	3.8.5 (Build: 20200914)
-411	branch	38
 466	glossary_enablerssfeeds	0
 467	glossary_linkentries	0
 468	glossary_casesensitive	0
@@ -27103,11 +28445,12 @@ COPY public.m2config (id, name, value) FROM stdin;
 505	vicensvives_sharepass	
 506	block_courses_vicensvives_maxcourses	10
 507	block_courses_vicensvives_defaultcategory	1
-412	localcachedirpurged	1603982943
-413	scheduledtaskreset	1603982943
 508	vicensvives_moodlews	1
 509	hotpot_enablemymoodle	1
 510	hotpot_enablecache	1
+410	release	3.11.4 (Build: 20211108)
+413	scheduledtaskreset	1637065554
+411	branch	311
 511	hotpot_enablecron	
 512	hotpot_enableswf	1
 513	hotpot_enableobfuscate	1
@@ -27116,9 +28459,39 @@ COPY public.m2config (id, name, value) FROM stdin;
 516	hotpot_lockframe	0
 517	hotpot_storedetails	0
 518	hotpot_maxeventlength	5
-414	allversionshash	8f60adb14671c7508b8d06a58ae3add468e84d57
-158	langrev	1603982943
-24	themerev	1604422477
+543	divertallemailsto	
+544	divertallemailsexcept	
+28	licenses	unknown,allrightsreserved,public,cc,cc-nd,cc-nc-nd,cc-nc,cc-nc-sa,cc-sa
+545	emaildkimselector	
+546	emailheaders	
+547	debugsqltrace	0
+521	paygw_plugins_sortorder	paypal
+414	allversionshash	d408b1c91f5031122bd03dc46ea72b38d3387a95
+24	themerev	1637065553
+158	langrev	1637065554
+25	jsrev	1637065554
+412	localcachedirpurged	1637065554
+522	enableuserfeedback	0
+523	userfeedback_nextreminder	1
+524	userfeedback_remindafter	90
+525	enableaccessibilitytools	1
+526	defaultpreference_core_contentbank_visibility	1
+527	downloadcoursecontentallowed	0
+528	maxsizeperdownloadcoursefile	52428800
+529	activitychoosertabmode	0
+530	activitychooseractivefooter	hidden
+531	h5plibraryhandler	h5plib_v124
+532	rememberuserlicensepref	1
+533	autolangusercreation	1
+534	searchenginequeryonly	
+535	searchbannerenable	0
+536	searchbanner	
+537	passwordpolicycheckonlogin	0
+538	referrerpolicy	default
+539	langmenuinsecurelayout	0
+540	logininfoinsecurelayout	0
+541	pathtopdftoppm	
+542	cron_enabled	1
 \.
 
 
@@ -29048,6 +30421,97 @@ COPY public.m2config_log (id, userid, timemodified, plugin, name, value, oldvalu
 1919	3	1604422472	theme_xtec2020	admin_alert_start		\N
 1920	3	1604422472	theme_xtec2020	admin_alert_end		\N
 1921	3	1604422633	logstore_standard	loglifetime	60	0
+1922	2	1637065578	\N	enableuserfeedback	0	\N
+1923	2	1637065578	\N	userfeedback_nextreminder	1	\N
+1924	2	1637065578	\N	userfeedback_remindafter	90	\N
+1925	2	1637065578	\N	enableaccessibilitytools	1	\N
+1926	2	1637065578	\N	defaultpreference_core_contentbank_visibility	1	\N
+1927	2	1637065578	tool_dataprivacy	automaticdataexportapproval	0	\N
+1928	2	1637065578	tool_dataprivacy	automaticdatadeletionapproval	0	\N
+1929	2	1637065579	moodlecourse	downloadcontentsitedefault	0	\N
+1930	2	1637065579	moodlecourse	showactivitydates	1	\N
+1931	2	1637065579	moodlecourse	showcompletionconditions	1	\N
+1932	2	1637065579	\N	downloadcoursecontentallowed	0	\N
+1933	2	1637065579	\N	maxsizeperdownloadcoursefile	52428800	\N
+1934	2	1637065579	\N	activitychoosertabmode	0	\N
+1935	2	1637065579	\N	activitychooseractivefooter	hidden	\N
+1936	2	1637065579	backup	backup_general_contentbankcontent	1	\N
+1937	2	1637065579	backup	backup_general_contentbankcontent_locked		\N
+1938	2	1637065579	backup	backup_general_legacyfiles	1	\N
+1939	2	1637065579	backup	backup_general_legacyfiles_locked		\N
+1940	2	1637065580	backup	backup_import_permissions	0	\N
+1941	2	1637065580	backup	backup_import_permissions_locked		\N
+1942	2	1637065580	backup	backup_import_contentbankcontent	1	\N
+1943	2	1637065580	backup	backup_import_contentbankcontent_locked		\N
+1944	2	1637065580	backup	backup_import_legacyfiles	1	\N
+1945	2	1637065580	backup	backup_import_legacyfiles_locked		\N
+1946	2	1637065580	backup	backup_auto_contentbankcontent	1	\N
+1947	2	1637065580	backup	backup_auto_legacyfiles	1	\N
+1948	2	1637065580	restore	restore_general_permissions	1	\N
+1949	2	1637065580	restore	restore_general_permissions_locked		\N
+1950	2	1637065580	restore	restore_general_contentbankcontent	1	\N
+1951	2	1637065580	restore	restore_general_contentbankcontent_locked		\N
+1952	2	1637065580	restore	restore_general_legacyfiles	1	\N
+1953	2	1637065580	restore	restore_general_legacyfiles_locked		\N
+1954	2	1637065581	analytics	calclifetime	35	\N
+1955	2	1637065582	\N	h5plibraryhandler	h5plib_v124	\N
+1956	2	1637065582	\N	rememberuserlicensepref	1	\N
+1957	2	1637065582	\N	autolangusercreation	1	\N
+1958	2	1637065583	auth_saml2	autologin	0	\N
+1959	2	1637065583	auth_saml2	autologincookie		\N
+1960	2	1637065585	block_accessreview	whattoshow	showboth	\N
+1961	2	1637065585	block_accessreview	errordisplay	showint	\N
+1962	2	1637065585	block_accessreview	toolpage	errors	\N
+1963	2	1637065586	block_section_links	showsectionname	0	\N
+1964	2	1637065587	\N	searchenginequeryonly		\N
+1965	2	1637065587	\N	searchbannerenable	0	\N
+1966	2	1637065587	\N	searchbanner		\N
+1967	2	1637065588	antivirus	notifyemail		\N
+1968	2	1637065588	antivirus	enablequarantine	0	\N
+1969	2	1637065588	antivirus	quarantinetime	2419200	\N
+1970	2	1637065588	antivirus_clamav	tcpsockethost		\N
+1971	2	1637065588	antivirus_clamav	tcpsocketport	3310	\N
+1972	2	1637065588	antivirus_clamav	tries	1	\N
+1973	2	1637065588	local_clickedu	advdebug	0	\N
+1974	2	1637065590	tool_brickfield	analysistype	0	\N
+1975	2	1637065590	tool_brickfield	deletehistoricaldata	1	\N
+1976	2	1637065590	tool_brickfield	batch	1000	\N
+1977	2	1637065590	tool_brickfield	perpage	50	\N
+1978	2	1637065593	enrol_fee	expiredaction	3	\N
+1979	2	1637065593	enrol_fee	status	1	\N
+1980	2	1637065593	enrol_fee	cost	0	\N
+1981	2	1637065593	enrol_fee	currency	USD	\N
+1982	2	1637065593	enrol_fee	roleid	5	\N
+1983	2	1637065593	enrol_fee	enrolperiod	0	\N
+1984	2	1637065598	quiz	quizpassword		\N
+1985	2	1637065598	quiz	quizpassword_adv		\N
+1986	2	1637065598	quiz	quizpassword_required		\N
+1987	2	1637065598	quizaccess_seb	autoreconfigureseb	1	\N
+1988	2	1637065598	quizaccess_seb	showseblinks	seb,http	\N
+1989	2	1637065598	quizaccess_seb	downloadlink	https://safeexambrowser.org/download_en.html	\N
+1990	2	1637065598	quizaccess_seb	quizpasswordrequired	0	\N
+1991	2	1637065598	quizaccess_seb	displayblocksbeforestart	0	\N
+1992	2	1637065598	quizaccess_seb	displayblockswhenfinished	1	\N
+1993	2	1637065600	paygw_paypal	surcharge	0	\N
+1994	2	1637065601	qtype_wq	filtercodes_compatibility	0	\N
+1995	2	1637065601	qtype_wq	debug_mode_enabled	0	\N
+1996	2	1637065601	\N	passwordpolicycheckonlogin	0	\N
+1997	2	1637065601	\N	referrerpolicy	default	\N
+1998	2	1637065601	\N	langmenuinsecurelayout	0	\N
+1999	2	1637065601	\N	logininfoinsecurelayout	0	\N
+2000	2	1637065602	theme_xtec2020	xtec_type	eix	\N
+2001	2	1637065602	\N	pathtopdftoppm		\N
+2002	2	1637065603	\N	cron_enabled	1	\N
+2003	2	1637065603	\N	divertallemailsto		\N
+2004	2	1637065603	\N	divertallemailsexcept		\N
+2005	2	1637065603	\N	emaildkimselector		\N
+2006	2	1637065603	\N	emailheaders		\N
+2007	2	1637065603	tool_mobile	qrcodetype	2	\N
+2008	2	1637065604	tool_mobile	filetypeexclusionlist		\N
+2009	2	1637065604	\N	debugsqltrace	0	\N
+2010	2	1637065604	tool_moodlenet	enablemoodlenet	0	\N
+2011	2	1637065604	tool_moodlenet	defaultmoodlenetname	MoodleNet Central	\N
+2012	2	1637065604	tool_moodlenet	defaultmoodlenet	https://moodle.net	\N
 \.
 
 
@@ -29212,7 +30676,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 154	analytics	levelinstitution	
 155	analytics	predictionsprocessor	\\mlbackend_php\\processor
 156	analytics	defaulttimesplittingsevaluation	\\core\\analytics\\time_splitting\\quarters_accum,\\core\\analytics\\time_splitting\\quarters,\\core\\analytics\\time_splitting\\single_range
-157	analytics	modeloutputdir	/dades/data/odisseadata/models
 158	analytics	onlycli	1
 159	analytics	modeltimelimit	1200
 160	core_competency	enabled	1
@@ -29257,80 +30720,21 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 199	core_admin	coursecolor8	#fdcb6e
 200	core_admin	coursecolor9	#fd79a8
 201	core_admin	coursecolor10	#6c5ce7
-202	antivirus_clamav	version	2019111800
-203	availability_completion	version	2019111800
-204	availability_date	version	2019111800
-205	availability_grade	version	2019111800
-206	availability_group	version	2019111800
-207	availability_grouping	version	2019111800
-208	availability_profile	version	2019111800
-209	qtype_calculated	version	2019111800
-210	qtype_calculatedmulti	version	2019111800
-211	qtype_calculatedsimple	version	2019111800
-212	qtype_ddimageortext	version	2019111800
-213	qtype_ddmarker	version	2019111800
-214	qtype_ddwtos	version	2019111800
-215	qtype_description	version	2019111800
-216	qtype_essay	version	2019111800
-217	qtype_gapselect	version	2019111800
-218	qtype_match	version	2019111800
-219	qtype_missingtype	version	2019111800
-220	qtype_multianswer	version	2019111800
-221	qtype_multichoice	version	2019111800
-222	qtype_numerical	version	2019111800
-223	qtype_random	version	2019111800
-224	qtype_randomsamatch	version	2019111800
-225	qtype_shortanswer	version	2019111800
-226	qtype_truefalse	version	2019111800
-227	mod_assign	version	2019111800
-228	mod_assignment	version	2019111800
-636	gradingform_rubric	version	2019111800
-230	mod_book	version	2019111800
-231	mod_chat	version	2019111800
-232	mod_choice	version	2019111800
-233	mod_data	version	2019111800
-234	mod_feedback	version	2019111800
-637	mlbackend_php	version	2019111800
-236	mod_folder	version	2019111800
-638	mlbackend_python	version	2019111800
-238	mod_forum	version	2019111802
-239	mod_glossary	version	2019111800
-240	mod_imscp	version	2019111800
-242	mod_label	version	2019111800
-243	mod_lesson	version	2019111800
-244	mod_lti	version	2019111800
+202	antivirus_clamav	version	2021051700
+203	availability_completion	version	2021051700
+204	availability_date	version	2021051700
+205	availability_grade	version	2021051700
+206	availability_group	version	2021051700
+208	availability_profile	version	2021051700
+209	qtype_calculated	version	2021051700
+210	qtype_calculatedmulti	version	2021051700
+211	qtype_calculatedsimple	version	2021051700
+212	qtype_ddimageortext	version	2021051700
+213	qtype_ddmarker	version	2021051700
+214	qtype_ddwtos	version	2021051700
+215	qtype_description	version	2021051700
 246	mod_lti	kid	2218ff5dc1fd3cad7687
 247	mod_lti	privatekey	-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDF3524fsvIhIW9\nefaiXg9tEOvkl+tZ+Ifkkt/859PVcAxOgLBFSQv1F0atNdWI8G/P6KwpCZg40kdj\n/HfsXQ5qhWhYVDoK0J7/JSBKYC0bDl8yUWkM5UpnZQlKv1xh6x+2GXeedo57XLfL\nm/4T6RLcPTGbh5s1W+7oPpbdlTKYfYtPbgAi+AXg7UCU0y3u8BygsAww0z88BQeK\nxzCl5wUwqBzSP3PQTazJ3vFbjN7e/WSSxNGmMP2AuA/y/ggMF0PzgoAlYNfmj96Q\nDTGCtVwL9oB/bd9yKB4uskwV1jgMvwSn16DRe6s76VCNp506Sj021OhRZ8FVgv3I\n+zXdHEeRAgMBAAECggEAY0kU5qIYtoBoau5rpoTz0JIRCx5/ZSGjbjmUUl4wmIQk\naK+BwwIoEc6gFAFTJ+cc84GYAO9jhf9c+vqPYfY/aYuPE+MPTKXpYbTLQwaHG3BW\nq/TVdTcH4mF8DBmAzVEhFEorD0QFsjiPsIaRMoRchk3eOmAMrPV4Juhg4sYeIQzb\nBRSNbvX2o7Tm52jlMvLD3sUlk5EP6Vd/FTSito/zV/xgTy1DObpcdkdh2WktANoI\nRHUAxyUmkRr0jsaGH+yC8/yyvGbC5gftwO6FVd8AFH/phkrtabpbl5xECvWlIKsV\nU2Ecdn10OemPnSjYef7vcOuNTvFIBuo+JV7OUW71AQKBgQDyMSJT6WfM6U9V+Nnm\nPP+3LtPc09SxdZbGJ1mBkVVzv8K7n2PTqsNcr2EieETEAt562rEbBHwtfpwzpvAi\n8Btqd0l7mB4SC1nFqLvm8zWC6M30c6nvUZlpl1/EI0BF5K+03KDBG5QvF3pSByWf\napMAmyOenf85h2M+6kRuyj/JKQKBgQDRJ6QPGO7/4AQ4rJqcRZqlhLkOgVhVdKmK\nz3xR+ovS1cKIMGqxr6n3Ce0hvptKpMMCxGYBlXwICtDs4ZA9L0UZWVlR1Qa9qQ3l\nw/DNeBRmm/MYcCAVNaQOmdCObkJ9nQzeBWVF+gXrIR5sfWlQ5ruN0mG9VaBXSbM3\nGoarS46QKQKBgEQxa33/CVgcFVeasxft8v6MM+FIz+mLt4Fh0QT3e/0UcGtNzNjr\niwiM5SfEf3BFcolbDGUUFTbmIGs2xQTBYKbQoaMoSMdB5OwPv6CeuGF81YjQDHgz\nHKQrmC5s0osbghHF0YmuD0JXNPzlwEUrx+pyxEvEJvn20g4D/nLHhcBJAoGBALS+\nuAUf+/H9akh7yMTBVcox7yY82tRGk/lUItBJXync9lZw2NMixhOpbVZa/KI9zhSH\nGsvFncDpb/E1YEuvnNwyHYEdQc0G2e60LFWzrpWZsTNuOht6FoNToypi2GzrGmKH\ncSRO02yFW2BP5II4Ut5Vb4eKBp1IIGq/Lp+7FME5AoGAXyO/Z/jdcw2LiqKdgBRV\njaC+uoTLq8ZhNnFu3ZkIOlxBeG5NptMJzxVfmNCv4iDi+RiM8Ze4YJFArm07IrpJ\nMT13eisvogyftevXb7KQ30op6eEVQFQOKmLADvQYw/kVvpfMjdJ0D+PjOrf3Dlhs\n4t4MAmGjLYkGb1sYcitYYTI=\n-----END PRIVATE KEY-----\n
-248	mod_page	version	2019111800
-250	mod_quiz	version	2019111800
-251	mod_resource	version	2019111800
-252	mod_scorm	version	2019111800
-253	mod_survey	version	2019111800
-255	mod_url	version	2019111800
-257	mod_wiki	version	2019111800
-259	mod_workshop	version	2019111800
-260	auth_cas	version	2019111801
-262	auth_db	version	2019111800
-264	auth_email	version	2019111800
-265	auth_ldap	version	2019111801
-267	auth_lti	version	2019111800
-268	auth_manual	version	2019111800
-269	auth_mnet	version	2019111800
-271	auth_nologin	version	2019111800
-272	auth_none	version	2019111800
-273	auth_oauth2	version	2019111800
-274	auth_shibboleth	version	2019111800
-276	auth_webservice	version	2019111800
-277	calendartype_gregorian	version	2019111800
-278	customfield_checkbox	version	2019111800
-279	customfield_date	version	2019111800
-280	customfield_select	version	2019111800
-281	customfield_text	version	2019111800
-282	customfield_textarea	version	2019111800
-283	enrol_category	version	2019111800
-285	enrol_cohort	version	2019111800
-286	enrol_database	version	2019111800
-288	enrol_flatfile	version	2019111800
 290	enrol_flatfile	map_1	manager
 291	enrol_flatfile	map_2	coursecreator
 292	enrol_flatfile	map_3	editingteacher
@@ -29339,16 +30743,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 295	enrol_flatfile	map_6	guest
 296	enrol_flatfile	map_7	user
 297	enrol_flatfile	map_8	frontpage
-298	enrol_guest	version	2019111800
-299	enrol_imsenterprise	version	2019111800
-301	enrol_ldap	version	2019111800
-303	enrol_lti	version	2019111800
-304	enrol_manual	version	2019111800
-306	enrol_meta	version	2019111800
-308	enrol_mnet	version	2019111800
-309	enrol_paypal	version	2019111800
-310	enrol_self	version	2019111800
-312	message_airnotifier	version	2019111800
 314	message	airnotifier_provider_enrol_imsenterprise_imsenterprise_enrolment_permitted	permitted
 315	message	airnotifier_provider_enrol_paypal_paypal_enrolment_permitted	permitted
 316	message	airnotifier_provider_mod_feedback_submission_permitted	permitted
@@ -29357,6 +30751,69 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 319	message	airnotifier_provider_mod_quiz_submission_permitted	permitted
 320	message	airnotifier_provider_mod_quiz_confirmation_permitted	permitted
 323	message	airnotifier_provider_mod_quiz_attempt_overdue_permitted	permitted
+218	qtype_match	version	2021051700
+219	qtype_missingtype	version	2021051700
+220	qtype_multianswer	version	2021051700
+222	qtype_numerical	version	2021051700
+221	qtype_multichoice	version	2021051700
+223	qtype_random	version	2021051700
+224	qtype_randomsamatch	version	2021051700
+225	qtype_shortanswer	version	2021051700
+226	qtype_truefalse	version	2021051700
+227	mod_assign	version	2021051700
+228	mod_assignment	version	2021051700
+231	mod_chat	version	2021051700
+230	mod_book	version	2021051700
+233	mod_data	version	2021051700
+232	mod_choice	version	2021051700
+234	mod_feedback	version	2021051700
+239	mod_glossary	version	2021051700
+236	mod_folder	version	2021051700
+238	mod_forum	version	2021051701
+240	mod_imscp	version	2021051700
+243	mod_lesson	version	2021051700
+248	mod_page	version	2021051700
+244	mod_lti	version	2021051700
+251	mod_resource	version	2021051700
+250	mod_quiz	version	2021051700
+252	mod_scorm	version	2021051700
+253	mod_survey	version	2021051700
+255	mod_url	version	2021051700
+257	mod_wiki	version	2021051700
+262	auth_db	version	2021051700
+259	mod_workshop	version	2021051700
+260	auth_cas	version	2021051700
+264	auth_email	version	2021051700
+267	auth_lti	version	2021051700
+265	auth_ldap	version	2021051700
+268	auth_manual	version	2021051700
+271	auth_nologin	version	2021051700
+272	auth_none	version	2021051700
+273	auth_oauth2	version	2021051700
+276	auth_webservice	version	2021051700
+274	auth_shibboleth	version	2021051700
+277	calendartype_gregorian	version	2021051700
+278	customfield_checkbox	version	2021051700
+279	customfield_date	version	2021051700
+280	customfield_select	version	2021051700
+281	customfield_text	version	2021051700
+282	customfield_textarea	version	2021051700
+283	enrol_category	version	2021051700
+285	enrol_cohort	version	2021051700
+286	enrol_database	version	2021051700
+298	enrol_guest	version	2021051700
+299	enrol_imsenterprise	version	2021051700
+301	enrol_ldap	version	2021051700
+303	enrol_lti	version	2021051700
+304	enrol_manual	version	2021051700
+306	enrol_meta	version	2021051700
+308	enrol_mnet	version	2021051700
+309	enrol_paypal	version	2021051700
+310	enrol_self	version	2021051700
+312	message_airnotifier	version	2021051700
+636	gradingform_rubric	version	2021051700
+637	mlbackend_php	version	2021051700
+638	mlbackend_python	version	2021051700
 326	message	airnotifier_provider_mod_lesson_graded_essay_permitted	permitted
 329	message	airnotifier_provider_enrol_self_expiry_notification_permitted	permitted
 330	message	airnotifier_provider_enrol_flatfile_flatfile_enrolment_permitted	permitted
@@ -29369,13 +30826,8 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 337	message	airnotifier_provider_moodle_backup_permitted	permitted
 338	message	airnotifier_provider_moodle_courserequested_permitted	permitted
 339	message	airnotifier_provider_moodle_courserequestapproved_permitted	permitted
-639	mnetservice_enrol	version	2019111800
-640	webservice_rest	version	2019111800
 342	message	airnotifier_provider_moodle_courserequestrejected_permitted	permitted
-641	webservice_soap	version	2019111800
-642	webservice_xmlrpc	version	2019111800
 345	message	airnotifier_provider_moodle_badgerecipientnotice_permitted	permitted
-643	repository_areafiles	version	2019111800
 348	message	airnotifier_provider_moodle_badgecreatornotice_permitted	permitted
 349	message	airnotifier_provider_moodle_competencyplancomment_permitted	permitted
 350	message	airnotifier_provider_moodle_competencyusercompcomment_permitted	permitted
@@ -29387,10 +30839,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 358	message	airnotifier_provider_moodle_gradenotifications_permitted	permitted
 359	message	airnotifier_provider_mod_forum_posts_permitted	permitted
 646	areafiles	enableuserinstances	0
-647	repository_boxnet	version	2019111800
 362	message	airnotifier_provider_mod_forum_digests_permitted	permitted
-363	message_email	version	2019111800
-648	repository_coursefiles	version	2019111800
 365	message	email_provider_enrol_imsenterprise_imsenterprise_enrolment_permitted	permitted
 366	message	message_provider_enrol_imsenterprise_imsenterprise_enrolment_loggedin	email
 367	message	message_provider_enrol_imsenterprise_imsenterprise_enrolment_loggedoff	email
@@ -29425,17 +30874,23 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 390	message	message_provider_enrol_flatfile_flatfile_enrolment_loggedin	email
 346	message	message_provider_moodle_badgerecipientnotice_loggedin	popup,airnotifier
 352	message	message_provider_moodle_insights_loggedin	popup,airnotifier
-649	repository_dropbox	version	2019111800
-650	repository_equella	version	2019111800
-651	repository_filesystem	version	2019111800
-652	repository_flickr	version	2019111800
-653	repository_flickr_public	version	2019111800
-654	repository_googledocs	version	2019111800
-655	repository_local	version	2019111800
 657	local	enablecourseinstances	0
 658	local	enableuserinstances	0
-659	repository_merlot	version	2019111800
 391	message	message_provider_enrol_flatfile_flatfile_enrolment_loggedoff	email
+639	mnetservice_enrol	version	2021051700
+640	webservice_rest	version	2021051700
+641	webservice_soap	version	2021051700
+642	webservice_xmlrpc	version	2021051700
+643	repository_areafiles	version	2021051700
+647	repository_boxnet	version	2021051700
+648	repository_coursefiles	version	2021051700
+649	repository_dropbox	version	2021051700
+650	repository_equella	version	2021051700
+652	repository_flickr	version	2021051700
+653	repository_flickr_public	version	2021051700
+654	repository_googledocs	version	2021051700
+655	repository_local	version	2021051700
+659	repository_merlot	version	2021051700
 392	message	email_provider_mod_assignment_assignment_updates_permitted	permitted
 393	message	message_provider_mod_assignment_assignment_updates_loggedin	email
 394	message	message_provider_mod_assignment_assignment_updates_loggedoff	email
@@ -29452,7 +30907,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 405	message	message_provider_moodle_availableupdate_loggedin	email
 406	message	message_provider_moodle_availableupdate_loggedoff	email
 407	message	email_provider_moodle_instantmessage_permitted	permitted
-660	repository_nextcloud	version	2019111800
 409	message	email_provider_moodle_backup_permitted	permitted
 410	message	message_provider_moodle_backup_loggedin	email
 411	message	message_provider_moodle_backup_loggedoff	email
@@ -29466,7 +30920,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 343	message	message_provider_moodle_courserequestrejected_loggedin	email,airnotifier
 344	message	message_provider_moodle_courserequestrejected_loggedoff	email,airnotifier
 417	message	email_provider_moodle_badgerecipientnotice_permitted	permitted
-661	repository_onedrive	version	2019111800
 418	message	email_provider_moodle_badgecreatornotice_permitted	permitted
 419	message	message_provider_moodle_badgecreatornotice_loggedoff	email
 420	message	email_provider_moodle_competencyplancomment_permitted	permitted
@@ -29476,11 +30929,9 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 424	message	message_provider_moodle_competencyusercompcomment_loggedin	email
 425	message	message_provider_moodle_competencyusercompcomment_loggedoff	email
 426	message	email_provider_moodle_insights_permitted	permitted
-662	repository_picasa	version	2019111800
 427	message	email_provider_moodle_messagecontactrequests_permitted	permitted
 356	message	message_provider_moodle_messagecontactrequests_loggedoff	email,airnotifier
 428	message	email_provider_moodle_asyncbackupnotification_permitted	permitted
-663	repository_recent	version	2019111800
 430	message	email_provider_moodle_gradenotifications_permitted	permitted
 432	message	email_provider_mod_forum_posts_permitted	permitted
 360	message	message_provider_mod_forum_posts_loggedin	email,airnotifier
@@ -29488,7 +30939,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 433	message	email_provider_mod_forum_digests_permitted	permitted
 434	message	message_provider_mod_forum_digests_loggedin	email
 435	message	message_provider_mod_forum_digests_loggedoff	email
-436	message_jabber	version	2019111800
 665	recent	enablecourseinstances	0
 438	message	jabber_provider_enrol_imsenterprise_imsenterprise_enrolment_permitted	permitted
 439	message	jabber_provider_enrol_paypal_paypal_enrolment_permitted	permitted
@@ -29511,9 +30961,13 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 456	message	jabber_provider_moodle_courserequested_permitted	permitted
 457	message	jabber_provider_moodle_courserequestapproved_permitted	permitted
 666	recent	enableuserinstances	0
-667	repository_s3	version	2019111800
-668	repository_skydrive	version	2019111800
 458	message	jabber_provider_moodle_courserequestrejected_permitted	permitted
+660	repository_nextcloud	version	2021051700
+661	repository_onedrive	version	2021051700
+662	repository_picasa	version	2021051700
+663	repository_recent	version	2021051700
+667	repository_s3	version	2021051700
+668	repository_skydrive	version	2021051700
 459	message	jabber_provider_moodle_badgerecipientnotice_permitted	permitted
 460	message	jabber_provider_moodle_badgecreatornotice_permitted	permitted
 461	message	jabber_provider_moodle_competencyplancomment_permitted	permitted
@@ -29524,7 +30978,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 466	message	jabber_provider_moodle_gradenotifications_permitted	permitted
 467	message	jabber_provider_mod_forum_posts_permitted	permitted
 468	message	jabber_provider_mod_forum_digests_permitted	permitted
-469	message_popup	version	2019111800
 471	message	popup_provider_enrol_imsenterprise_imsenterprise_enrolment_permitted	permitted
 472	message	popup_provider_enrol_paypal_paypal_enrolment_permitted	permitted
 473	message	popup_provider_mod_feedback_submission_permitted	permitted
@@ -29564,168 +31017,141 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 431	message	message_provider_moodle_gradenotifications_loggedoff	popup,email
 503	message	popup_provider_mod_forum_posts_permitted	permitted
 504	message	popup_provider_mod_forum_digests_permitted	permitted
-505	block_activity_modules	version	2019111800
-506	block_activity_results	version	2019111800
-507	block_admin_bookmarks	version	2019111800
-508	block_badges	version	2019111800
-509	block_blog_menu	version	2019111800
-510	block_blog_recent	version	2019111800
-511	block_blog_tags	version	2019111800
-512	block_calendar_month	version	2019111800
-513	block_calendar_upcoming	version	2019111800
-514	block_comments	version	2019111800
-515	block_completionstatus	version	2019111800
-516	block_course_list	version	2019111800
-517	block_course_summary	version	2019111800
-518	block_feedback	version	2019111800
-520	block_globalsearch	version	2019111800
-521	block_glossary_random	version	2019111800
-522	block_html	version	2019111800
-523	block_login	version	2019111800
-524	block_lp	version	2019111800
-525	block_mentees	version	2019111800
-526	block_mnet_hosts	version	2019111800
-527	block_myoverview	version	2019111800
-528	block_myprofile	version	2019111800
-529	block_navigation	version	2019111800
-530	block_news_items	version	2019111800
-531	block_online_users	version	2019111800
-532	block_private_files	version	2019111800
-533	block_quiz_results	version	2019111800
-535	block_recent_activity	version	2019111800
-536	block_recentlyaccessedcourses	version	2019111800
-538	block_recentlyaccesseditems	version	2019111800
-539	block_rss_client	version	2019111800
-540	block_search_forums	version	2019111800
-541	block_section_links	version	2019111800
-542	block_selfcompletion	version	2019111800
-543	block_settings	version	2019111800
-544	block_site_main_menu	version	2019111800
-545	block_social_activities	version	2019111800
-546	block_starredcourses	version	2019111800
-547	block_tag_flickr	version	2019111800
-548	block_tag_youtube	version	2019111800
-669	repository_upload	version	2019111800
-550	block_tags	version	2019111800
-551	block_timeline	version	2019111800
-553	media_html5audio	version	2019111800
-554	media_html5video	version	2019111800
-555	media_swf	version	2019111800
-556	media_videojs	version	2019111800
-557	media_vimeo	version	2019111800
-558	media_youtube	version	2019111800
-559	filter_activitynames	version	2019111800
+505	block_activity_modules	version	2021051700
+506	block_activity_results	version	2021051700
+507	block_admin_bookmarks	version	2021051700
+508	block_badges	version	2021051700
+509	block_blog_menu	version	2021051700
+510	block_blog_recent	version	2021051700
+511	block_blog_tags	version	2021051700
+513	block_calendar_upcoming	version	2021051700
+514	block_comments	version	2021051700
+515	block_completionstatus	version	2021051700
+516	block_course_list	version	2021051700
+517	block_course_summary	version	2021051700
+518	block_feedback	version	2021051700
+520	block_globalsearch	version	2021051700
+521	block_glossary_random	version	2021051700
+522	block_html	version	2021051700
+523	block_login	version	2021051700
+524	block_lp	version	2021051700
+525	block_mentees	version	2021051700
+526	block_mnet_hosts	version	2021051700
+528	block_myprofile	version	2021051700
+527	block_myoverview	version	2021051700
+529	block_navigation	version	2021051700
+530	block_news_items	version	2021051700
+531	block_online_users	version	2021051700
+533	block_quiz_results	version	2021051700
+535	block_recent_activity	version	2021051700
+536	block_recentlyaccessedcourses	version	2021051700
+538	block_recentlyaccesseditems	version	2021051700
+539	block_rss_client	version	2021051700
+540	block_search_forums	version	2021051700
+541	block_section_links	version	2021051700
+542	block_selfcompletion	version	2021051700
 671	upload	enablecourseinstances	0
-561	filter_algebra	version	2019111800
-562	filter_censor	version	2019111800
-563	filter_data	version	2019111800
 672	upload	enableuserinstances	0
-565	filter_displayh5p	version	2020031700
-673	repository_url	version	2019111800
-567	filter_emailprotect	version	2019111800
-568	filter_emoticon	version	2019111800
-569	filter_glossary	version	2019111800
-571	filter_mathjaxloader	version	2019111801
 675	url	enablecourseinstances	0
-573	filter_mediaplugin	version	2019111800
 676	url	enableuserinstances	0
-575	filter_multilang	version	2019111800
-576	filter_tex	version	2019111800
-677	repository_user	version	2019111800
-578	filter_tidy	version	2019111800
-579	filter_urltolink	version	2019111800
-580	editor_atto	version	2019111800
-582	editor_textarea	version	2019111800
-583	editor_tinymce	version	2019111800
-584	format_singleactivity	version	2019111800
-585	format_social	version	2019111800
-586	format_topics	version	2019111800
-587	format_weeks	version	2019111800
-588	dataformat_csv	version	2019111800
-589	dataformat_excel	version	2019111800
-590	dataformat_html	version	2019111800
-591	dataformat_json	version	2019111800
-592	dataformat_ods	version	2019111800
-593	dataformat_pdf	version	2019111800
-594	profilefield_checkbox	version	2019111800
-595	profilefield_datetime	version	2019111800
-596	profilefield_menu	version	2019111800
-597	profilefield_text	version	2019111800
-598	profilefield_textarea	version	2019111800
-599	report_backups	version	2019111800
-600	report_competency	version	2019111800
-601	report_completion	version	2019111800
 679	user	enablecourseinstances	0
-603	report_configlog	version	2019111800
-604	report_courseoverview	version	2019111800
-605	report_eventlist	version	2019111800
-606	report_insights	version	2019111800
-607	report_log	version	2019111800
 680	user	enableuserinstances	0
-609	report_loglive	version	2019111800
-610	report_outline	version	2019111800
-681	repository_webdav	version	2019111800
-612	report_participation	version	2019111800
-682	repository_wikimedia	version	2019111800
-614	report_performance	version	2019111800
-615	report_progress	version	2019111800
-617	report_questioninstances	version	2019111800
-618	report_security	version	2019111800
-619	report_stats	version	2019111800
 684	wikimedia	enablecourseinstances	0
-621	report_usersessions	version	2019111800
-622	gradeexport_ods	version	2019111800
-623	gradeexport_txt	version	2019111800
-624	gradeexport_xls	version	2019111800
-625	gradeexport_xml	version	2019111800
-626	gradeimport_csv	version	2019111800
-627	gradeimport_direct	version	2019111800
-628	gradeimport_xml	version	2019111800
-629	gradereport_grader	version	2019111800
-630	gradereport_history	version	2019111801
-631	gradereport_outcomes	version	2019111800
-632	gradereport_overview	version	2019111800
-633	gradereport_singleview	version	2019111800
-634	gradereport_user	version	2019111800
-635	gradingform_guide	version	2019111800
 685	wikimedia	enableuserinstances	0
-686	repository_youtube	version	2019111800
-688	portfolio_boxnet	version	2019111800
-689	portfolio_download	version	2019111800
-690	portfolio_flickr	version	2019111800
-691	portfolio_googledocs	version	2019111800
-692	portfolio_mahara	version	2019111800
-693	portfolio_picasa	version	2019111800
-694	search_simpledb	version	2019111800
-696	search_solr	version	2019111800
-697	qbehaviour_adaptive	version	2019111800
-698	qbehaviour_adaptivenopenalty	version	2019111800
-699	qbehaviour_deferredcbm	version	2019111800
-700	qbehaviour_deferredfeedback	version	2019111800
-701	qbehaviour_immediatecbm	version	2019111800
-702	qbehaviour_immediatefeedback	version	2019111800
-703	qbehaviour_informationitem	version	2019111800
-704	qbehaviour_interactive	version	2019111800
-705	qbehaviour_interactivecountback	version	2019111800
-706	qbehaviour_manualgraded	version	2019111800
+544	block_site_main_menu	version	2021051700
+545	block_social_activities	version	2021051700
+546	block_starredcourses	version	2021051700
+547	block_tag_flickr	version	2021051700
+550	block_tags	version	2021051700
+548	block_tag_youtube	version	2021051700
+551	block_timeline	version	2021051700
+553	media_html5audio	version	2021051700
+554	media_html5video	version	2021051700
+555	media_swf	version	2021051700
+556	media_videojs	version	2021051700
+557	media_vimeo	version	2021051700
+558	media_youtube	version	2021051700
+559	filter_activitynames	version	2021051700
+561	filter_algebra	version	2021051700
+563	filter_data	version	2021051700
+565	filter_displayh5p	version	2021051700
+567	filter_emailprotect	version	2021051700
+568	filter_emoticon	version	2021051700
+569	filter_glossary	version	2021051700
+571	filter_mathjaxloader	version	2021051700
+573	filter_mediaplugin	version	2021051700
+575	filter_multilang	version	2021051700
+576	filter_tex	version	2021051700
+578	filter_tidy	version	2021051700
+579	filter_urltolink	version	2021051700
+582	editor_textarea	version	2021051700
+580	editor_atto	version	2021051700
+583	editor_tinymce	version	2021051700
+584	format_singleactivity	version	2021051700
+585	format_social	version	2021051700
+586	format_topics	version	2021051700
+587	format_weeks	version	2021051700
+589	dataformat_excel	version	2021051700
+590	dataformat_html	version	2021051700
+591	dataformat_json	version	2021051700
+592	dataformat_ods	version	2021051700
+593	dataformat_pdf	version	2021051700
+594	profilefield_checkbox	version	2021051700
+595	profilefield_datetime	version	2021051700
+596	profilefield_menu	version	2021051700
+597	profilefield_text	version	2021051700
+598	profilefield_textarea	version	2021051700
+599	report_backups	version	2021051700
+600	report_competency	version	2021051700
+601	report_completion	version	2021051700
+603	report_configlog	version	2021051700
+604	report_courseoverview	version	2021051700
+605	report_eventlist	version	2021051700
+606	report_insights	version	2021051700
+607	report_log	version	2021051700
+610	report_outline	version	2021051700
+612	report_participation	version	2021051700
+614	report_performance	version	2021051700
+615	report_progress	version	2021051700
+617	report_questioninstances	version	2021051700
+618	report_security	version	2021051700
+619	report_stats	version	2021051700
+621	report_usersessions	version	2021051700
+622	gradeexport_ods	version	2021051700
+623	gradeexport_txt	version	2021051700
+624	gradeexport_xls	version	2021051700
+625	gradeexport_xml	version	2021051700
+626	gradeimport_csv	version	2021051700
+627	gradeimport_direct	version	2021051700
+628	gradeimport_xml	version	2021051700
+629	gradereport_grader	version	2021051700
+630	gradereport_history	version	2021051700
+631	gradereport_outcomes	version	2021051700
+633	gradereport_singleview	version	2021051700
+634	gradereport_user	version	2021051700
+635	gradingform_guide	version	2021051700
+669	repository_upload	version	2021051700
+673	repository_url	version	2021051700
+677	repository_user	version	2021051700
+681	repository_webdav	version	2021051700
+682	repository_wikimedia	version	2021051700
+686	repository_youtube	version	2021051700
+688	portfolio_boxnet	version	2021051700
+689	portfolio_download	version	2021051700
+690	portfolio_flickr	version	2021051700
+691	portfolio_googledocs	version	2021051700
+692	portfolio_mahara	version	2021051700
+693	portfolio_picasa	version	2021051700
+694	search_simpledb	version	2021051700
+696	search_solr	version	2021051700
+697	qbehaviour_adaptive	version	2021051700
+699	qbehaviour_deferredcbm	version	2021051700
+700	qbehaviour_deferredfeedback	version	2021051700
+701	qbehaviour_immediatecbm	version	2021051700
+702	qbehaviour_immediatefeedback	version	2021051700
+703	qbehaviour_informationitem	version	2021051700
+704	qbehaviour_interactive	version	2021051700
 708	question	disabledbehaviours	manualgraded
-709	qbehaviour_missing	version	2019111800
-710	qformat_aiken	version	2019111800
-711	qformat_blackboard_six	version	2019111800
-712	qformat_examview	version	2019111800
-713	qformat_gift	version	2019111800
-714	qformat_missingword	version	2019111800
-715	qformat_multianswer	version	2019111800
-716	qformat_webct	version	2019111800
-717	qformat_xhtml	version	2019111800
-718	qformat_xml	version	2019111800
-719	tool_analytics	version	2019111800
-720	tool_availabilityconditions	version	2019111800
-721	tool_behat	version	2019111800
-722	tool_capability	version	2019111800
-723	tool_cohortroles	version	2019111801
-724	tool_customlang	version	2019111800
-726	tool_dataprivacy	version	2019111801
 727	message	airnotifier_provider_tool_dataprivacy_contactdataprotectionofficer_permitted	permitted
 728	message	email_provider_tool_dataprivacy_contactdataprotectionofficer_permitted	permitted
 729	message	jabber_provider_tool_dataprivacy_contactdataprotectionofficer_permitted	permitted
@@ -29744,20 +31170,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 742	message	popup_provider_tool_dataprivacy_notifyexceptions_permitted	permitted
 743	message	message_provider_tool_dataprivacy_notifyexceptions_loggedin	email
 744	message	message_provider_tool_dataprivacy_notifyexceptions_loggedoff	email
-745	tool_dbtransfer	version	2019111800
-746	tool_filetypes	version	2019111800
-747	tool_generator	version	2019111800
-748	tool_health	version	2019111800
-749	tool_httpsreplace	version	2019111800
-750	tool_innodb	version	2019111800
-751	tool_installaddon	version	2019111800
-752	tool_langimport	version	2019111800
-753	tool_log	version	2019111800
 755	tool_log	enabled_stores	logstore_standard
-756	tool_lp	version	2019111800
-757	tool_lpimportcsv	version	2019111800
-758	tool_lpmigrate	version	2019111800
-759	tool_messageinbound	version	2019111800
 760	message	airnotifier_provider_tool_messageinbound_invalidrecipienthandler_permitted	permitted
 761	message	email_provider_tool_messageinbound_invalidrecipienthandler_permitted	permitted
 762	message	jabber_provider_tool_messageinbound_invalidrecipienthandler_permitted	permitted
@@ -29776,151 +31189,146 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 775	message	popup_provider_tool_messageinbound_messageprocessingsuccess_permitted	permitted
 776	message	message_provider_tool_messageinbound_messageprocessingsuccess_loggedin	email
 777	message	message_provider_tool_messageinbound_messageprocessingsuccess_loggedoff	email
-778	tool_mobile	version	2019111800
-779	tool_monitor	version	2019111800
 780	message	airnotifier_provider_tool_monitor_notification_permitted	permitted
 781	message	email_provider_tool_monitor_notification_permitted	permitted
 782	message	jabber_provider_tool_monitor_notification_permitted	permitted
 783	message	popup_provider_tool_monitor_notification_permitted	permitted
 784	message	message_provider_tool_monitor_notification_loggedin	email
 785	message	message_provider_tool_monitor_notification_loggedoff	email
-786	tool_multilangupgrade	version	2019111800
-787	tool_oauth2	version	2019111800
-788	tool_phpunit	version	2019111800
-789	tool_policy	version	2019111800
-790	tool_profiling	version	2019111800
-791	tool_recyclebin	version	2019111800
-792	tool_replace	version	2019111800
-793	tool_spamcleaner	version	2019111800
-794	tool_task	version	2019111800
-795	tool_templatelibrary	version	2019111800
-796	tool_unsuproles	version	2019111800
-798	tool_uploadcourse	version	2019111800
-799	tool_uploaduser	version	2019111800
-800	tool_usertours	version	2019111801
-802	tool_xmldb	version	2019111800
-803	cachestore_apcu	version	2019111800
-804	cachestore_file	version	2019111800
-805	cachestore_memcached	version	2019111800
-806	cachestore_mongodb	version	2019111800
-807	cachestore_redis	version	2019111800
-808	cachestore_session	version	2019111800
-809	cachestore_static	version	2019111800
-810	cachelock_file	version	2019111800
-811	fileconverter_googledrive	version	2019111800
-812	fileconverter_unoconv	version	2019111800
-814	theme_boost	version	2019111800
-815	theme_classic	version	2019111800
-816	assignsubmission_comments	version	2019111800
-870	quizaccess_delaybetweenattempts	version	2019111800
-871	quizaccess_ipaddress	version	2019111800
-872	quizaccess_numattempts	version	2019111800
-821	assignsubmission_file	version	2019111800
-822	assignsubmission_onlinetext	version	2019111800
-873	quizaccess_offlineattempts	version	2019111800
-874	quizaccess_openclosedate	version	2019111800
-875	quizaccess_password	version	2019111800
+706	qbehaviour_manualgraded	version	2021051700
+709	qbehaviour_missing	version	2021051700
+710	qformat_aiken	version	2021051700
+711	qformat_blackboard_six	version	2021051700
+712	qformat_examview	version	2021051700
+713	qformat_gift	version	2021051700
+714	qformat_missingword	version	2021051700
+715	qformat_multianswer	version	2021051700
+716	qformat_webct	version	2021051700
+718	qformat_xml	version	2021051700
+719	tool_analytics	version	2021051700
+720	tool_availabilityconditions	version	2021051700
+721	tool_behat	version	2021051700
+722	tool_capability	version	2021051700
+724	tool_customlang	version	2021051700
+723	tool_cohortroles	version	2021051700
+745	tool_dbtransfer	version	2021051700
+726	tool_dataprivacy	version	2021051700
+746	tool_filetypes	version	2021051700
+747	tool_generator	version	2021051700
+748	tool_health	version	2021051700
+749	tool_httpsreplace	version	2021051700
+750	tool_innodb	version	2021051700
+751	tool_installaddon	version	2021051700
+752	tool_langimport	version	2021051700
+753	tool_log	version	2021051700
+756	tool_lp	version	2021051700
+758	tool_lpmigrate	version	2021051700
+759	tool_messageinbound	version	2021051700
+778	tool_mobile	version	2021051700
+779	tool_monitor	version	2021051700
+786	tool_multilangupgrade	version	2021051700
+787	tool_oauth2	version	2021051700
+788	tool_phpunit	version	2021051700
 820	assignsubmission_onlinetext	sortorder	0
 818	assignsubmission_file	sortorder	1
 819	assignsubmission_comments	sortorder	2
-824	assignfeedback_comments	version	2019111800
-830	assignfeedback_editpdf	version	2019111800
-832	assignfeedback_file	version	2019111800
 826	assignfeedback_comments	sortorder	0
 827	assignfeedback_editpdf	sortorder	1
 829	assignfeedback_offline	sortorder	2
 828	assignfeedback_file	sortorder	3
-834	assignfeedback_offline	version	2019111800
-835	assignment_offline	version	2019111800
-836	assignment_online	version	2019111800
-837	assignment_upload	version	2019111800
-838	assignment_uploadsingle	version	2019111800
-839	booktool_exportimscp	version	2019111800
-840	booktool_importhtml	version	2019111800
-841	booktool_print	version	2019111800
-842	datafield_checkbox	version	2019111800
-843	datafield_date	version	2019111800
-844	datafield_file	version	2019111800
-845	datafield_latlong	version	2019111800
-846	datafield_menu	version	2019111800
-847	datafield_multimenu	version	2019111800
-848	datafield_number	version	2019111800
-849	datafield_picture	version	2019111800
-850	datafield_radiobutton	version	2019111800
-851	datafield_text	version	2019111800
-852	datafield_textarea	version	2019111800
-853	datafield_url	version	2019111800
-854	datapreset_imagegallery	version	2019111800
-855	forumreport_summary	version	2019111800
-856	ltiservice_basicoutcomes	version	2019111800
-857	ltiservice_gradebookservices	version	2019111800
-858	ltiservice_memberships	version	2019111800
-859	ltiservice_profile	version	2019111800
-860	ltiservice_toolproxy	version	2019111800
-861	ltiservice_toolsettings	version	2019111800
-862	quiz_grading	version	2019111800
-864	quiz_overview	version	2019111800
-866	quiz_responses	version	2019111800
-868	quiz_statistics	version	2019111800
-876	quizaccess_safebrowser	version	2019111800
-877	quizaccess_securewindow	version	2019111800
-878	quizaccess_timelimit	version	2019111800
-879	scormreport_basic	version	2019111800
-880	scormreport_graphs	version	2019111800
-881	scormreport_interactions	version	2019111800
-882	scormreport_objectives	version	2019111800
-883	workshopform_accumulative	version	2019111800
-885	workshopform_comments	version	2019111800
-887	workshopform_numerrors	version	2019111800
-889	workshopform_rubric	version	2019111800
-891	workshopallocation_manual	version	2019111800
-892	workshopallocation_random	version	2019111800
-893	workshopallocation_scheduled	version	2019111800
-894	workshopeval_best	version	2019111800
-895	atto_accessibilitychecker	version	2019111800
-896	atto_accessibilityhelper	version	2019111800
-897	atto_align	version	2019111800
-898	atto_backcolor	version	2019111800
-899	atto_bold	version	2019111800
-900	atto_charmap	version	2019111800
-901	atto_clear	version	2019111800
-902	atto_collapse	version	2019111800
-903	atto_emojipicker	version	2019111800
-904	atto_emoticon	version	2019111800
-905	atto_equation	version	2019111800
-906	atto_fontcolor	version	2019111800
-907	atto_h5p	version	2019111800
-908	atto_html	version	2019111800
-909	atto_image	version	2019111800
-910	atto_indent	version	2019111800
-911	atto_italic	version	2019111800
-912	atto_link	version	2019111800
-913	atto_managefiles	version	2019111800
-914	atto_media	version	2019111800
-915	atto_noautolink	version	2019111800
-916	atto_orderedlist	version	2019111800
-917	atto_recordrtc	version	2019111800
-918	atto_rtl	version	2019111800
-919	atto_strike	version	2019111800
-920	atto_subscript	version	2019111800
-921	atto_superscript	version	2019111800
-922	atto_table	version	2019111800
-923	atto_title	version	2019111800
-924	atto_underline	version	2019111800
-925	atto_undo	version	2019111800
-926	atto_unorderedlist	version	2019111800
-927	tinymce_ctrlhelp	version	2019111800
-928	tinymce_managefiles	version	2019111800
-929	tinymce_moodleemoticon	version	2019111800
-930	tinymce_moodleimage	version	2019111800
-931	tinymce_moodlemedia	version	2019111800
-932	tinymce_moodlenolink	version	2019111800
-933	tinymce_pdw	version	2019111800
-934	tinymce_spellchecker	version	2019111800
-936	tinymce_wrap	version	2019111800
-937	logstore_database	version	2019111800
-938	logstore_legacy	version	2019111800
-939	logstore_standard	version	2019111800
+789	tool_policy	version	2021051700
+790	tool_profiling	version	2021051700
+791	tool_recyclebin	version	2021051700
+792	tool_replace	version	2021051700
+793	tool_spamcleaner	version	2021051700
+794	tool_task	version	2021051700
+795	tool_templatelibrary	version	2021051700
+796	tool_unsuproles	version	2021051700
+798	tool_uploadcourse	version	2021051700
+799	tool_uploaduser	version	2021051700
+800	tool_usertours	version	2021051700
+802	tool_xmldb	version	2021051700
+803	cachestore_apcu	version	2021051700
+805	cachestore_memcached	version	2021051700
+806	cachestore_mongodb	version	2021051700
+807	cachestore_redis	version	2021051700
+808	cachestore_session	version	2021051700
+809	cachestore_static	version	2021051700
+810	cachelock_file	version	2021051700
+811	fileconverter_googledrive	version	2021051700
+812	fileconverter_unoconv	version	2021051700
+814	theme_boost	version	2021051700
+815	theme_classic	version	2021051700
+816	assignsubmission_comments	version	2021051700
+821	assignsubmission_file	version	2021051700
+822	assignsubmission_onlinetext	version	2021051700
+824	assignfeedback_comments	version	2021051700
+830	assignfeedback_editpdf	version	2021051701
+832	assignfeedback_file	version	2021051700
+835	assignment_offline	version	2021051700
+836	assignment_online	version	2021051700
+837	assignment_upload	version	2021051700
+838	assignment_uploadsingle	version	2021051700
+839	booktool_exportimscp	version	2021051700
+840	booktool_importhtml	version	2021051700
+841	booktool_print	version	2021051700
+842	datafield_checkbox	version	2021051700
+843	datafield_date	version	2021051700
+844	datafield_file	version	2021051700
+845	datafield_latlong	version	2021051700
+846	datafield_menu	version	2021051700
+847	datafield_multimenu	version	2021051700
+848	datafield_number	version	2021051700
+849	datafield_picture	version	2021051700
+850	datafield_radiobutton	version	2021051700
+851	datafield_text	version	2021051700
+852	datafield_textarea	version	2021051700
+853	datafield_url	version	2021051700
+854	datapreset_imagegallery	version	2021051700
+855	forumreport_summary	version	2021051700
+858	ltiservice_memberships	version	2021051700
+857	ltiservice_gradebookservices	version	2021051700
+859	ltiservice_profile	version	2021051700
+860	ltiservice_toolproxy	version	2021051700
+861	ltiservice_toolsettings	version	2021051700
+862	quiz_grading	version	2021051700
+864	quiz_overview	version	2021051700
+866	quiz_responses	version	2021051700
+868	quiz_statistics	version	2021051700
+870	quizaccess_delaybetweenattempts	version	2021051700
+871	quizaccess_ipaddress	version	2021051700
+872	quizaccess_numattempts	version	2021051700
+873	quizaccess_offlineattempts	version	2021051700
+874	quizaccess_openclosedate	version	2021051700
+875	quizaccess_password	version	2021051700
+877	quizaccess_securewindow	version	2021051700
+878	quizaccess_timelimit	version	2021051700
+879	scormreport_basic	version	2021051700
+880	scormreport_graphs	version	2021051700
+882	scormreport_objectives	version	2021051700
+883	workshopform_accumulative	version	2021051700
+885	workshopform_comments	version	2021051700
+887	workshopform_numerrors	version	2021051700
+889	workshopform_rubric	version	2021051700
+891	workshopallocation_manual	version	2021051700
+892	workshopallocation_random	version	2021051700
+893	workshopallocation_scheduled	version	2021051700
+894	workshopeval_best	version	2021051700
+895	atto_accessibilitychecker	version	2021051700
+896	atto_accessibilityhelper	version	2021051700
+897	atto_align	version	2021051700
+898	atto_backcolor	version	2021051700
+899	atto_bold	version	2021051700
+900	atto_charmap	version	2021051700
+901	atto_clear	version	2021051700
+902	atto_collapse	version	2021051700
+903	atto_emojipicker	version	2021051700
+904	atto_emoticon	version	2021051700
+905	atto_equation	version	2021051700
+906	atto_fontcolor	version	2021051700
+907	atto_h5p	version	2021051700
+908	atto_html	version	2021051700
+909	atto_image	version	2021051700
 940	tool_log	exportlog	1
 941	tool_dataprivacy	contactdataprotectionofficer	0
 942	tool_dataprivacy	automaticdeletionrequests	1
@@ -30003,6 +31411,32 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1019	auth_db	field_map_institution	
 1020	auth_db	field_updatelocal_institution	oncreate
 1021	auth_db	field_updateremote_institution	0
+911	atto_italic	version	2021051700
+912	atto_link	version	2021051700
+913	atto_managefiles	version	2021051700
+914	atto_media	version	2021051700
+915	atto_noautolink	version	2021051700
+917	atto_recordrtc	version	2021051700
+918	atto_rtl	version	2021051700
+919	atto_strike	version	2021051700
+920	atto_subscript	version	2021051700
+921	atto_superscript	version	2021051700
+922	atto_table	version	2021051700
+923	atto_title	version	2021051700
+924	atto_underline	version	2021051700
+925	atto_undo	version	2021051700
+926	atto_unorderedlist	version	2021051700
+927	tinymce_ctrlhelp	version	2021051700
+928	tinymce_managefiles	version	2021051700
+929	tinymce_moodleemoticon	version	2021051700
+930	tinymce_moodleimage	version	2021051700
+931	tinymce_moodlemedia	version	2021051700
+932	tinymce_moodlenolink	version	2021051700
+933	tinymce_pdw	version	2021051700
+934	tinymce_spellchecker	version	2021051700
+936	tinymce_wrap	version	2021051700
+938	logstore_legacy	version	2021051700
+939	logstore_standard	version	2021051700
 1022	auth_db	field_lock_institution	unlocked
 1023	auth_db	field_map_department	
 1024	auth_db	field_updatelocal_department	oncreate
@@ -30120,7 +31554,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1136	auth_cas	opt_deref	0
 1137	auth_cas	user_attribute	
 1138	auth_cas	memberattribute	
-1139	auth_cas	memberattribute_isdn	0
 1140	auth_cas	objectclass	
 1141	auth_cas	attrcreators	
 1142	auth_cas	groupecreators	
@@ -30212,7 +31645,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1228	auth_ldap	user_attribute	
 1229	auth_ldap	suspended_attribute	
 1230	auth_ldap	memberattribute	
-1231	auth_ldap	memberattribute_isdn	0
 1232	auth_ldap	objectclass	
 1233	auth_ldap	forcechangepassword	0
 1234	auth_ldap	stdchangepassword	0
@@ -30397,7 +31829,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1413	block_myoverview	displaygroupingfuture	1
 1414	block_myoverview	displaygroupingcustomfield	0
 1415	block_myoverview	customfiltergrouping	
-1416	block_myoverview	displaygroupingstarred	1
 1417	block_myoverview	displaygroupinghidden	1
 1418	block_tag_youtube	apikey	
 1419	antivirus_clamav	runningmethod	commandline
@@ -30433,7 +31864,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1448	tool_recyclebin	autohide	1
 1449	filter_urltolink	formats	0
 1450	filter_urltolink	embedimages	1
-1451	filter_mathjaxloader	httpsurl	https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js
 1452	filter_mathjaxloader	texfiltercompatibility	0
 1453	filter_mathjaxloader	mathjaxconfig	\nMathJax.Hub.Config({\n    config: ["Accessible.js", "Safe.js"],\n    errorSettings: { message: ["!"] },\n    skipStartupTypeset: true,\n    messageStyle: "none"\n});\n
 1454	filter_mathjaxloader	additionaldelimiters	
@@ -30923,18 +32353,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1942	tool_mobile	disabledfeatures	
 1943	tool_mobile	custommenuitems	
 1944	tool_mobile	customlangstrings	
-1945	qtype_essaywiris	version	2020061600
-1946	qtype_matchwiris	version	2020061600
-1947	qtype_multianswerwiris	version	2020061600
-1948	qtype_multichoicewiris	version	2020061600
-1949	qtype_ordering	version	2019121400
-1950	qtype_shortanswerwiris	version	2020061600
-1951	qtype_truefalsewiris	version	2020061600
-1952	qtype_wq	version	2020061600
-1953	mod_choicegroup	version	2020070100
-1954	mod_geogebra	version	2020090800
 1955	mod_hotpot	version	2020060544
-1957	mod_hvp	version	2020080400
 1959	mod_hvp	site_type	network
 1960	mod_hvp	site_uuid	6e65fbab-7198-43a2-8924-6c684d6893b5
 1961	mod_hvp	content_type_cache_updated_at	1603910600
@@ -30951,9 +32370,7 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1972	message	popup_provider_mod_hvp_confirmation_permitted	permitted
 1973	message	message_provider_mod_hvp_confirmation_loggedin	airnotifier,email
 1974	message	message_provider_mod_hvp_confirmation_loggedoff	airnotifier,email
-1975	mod_jclic	version	2020072400
 1977	mod_journal	version	2020091100
-1978	mod_questionnaire	version	2020011508
 1980	message	airnotifier_provider_mod_questionnaire_message_permitted	permitted
 1981	message	email_provider_mod_questionnaire_message_permitted	permitted
 1982	message	jabber_provider_mod_questionnaire_message_permitted	permitted
@@ -30963,32 +32380,34 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 1985	message	message_provider_mod_questionnaire_message_loggedoff	email
 1986	message	airnotifier_provider_mod_questionnaire_notification_permitted	permitted
 1987	message	email_provider_mod_questionnaire_notification_permitted	permitted
+1945	qtype_essaywiris	version	2021091300
+1946	qtype_matchwiris	version	2021091300
+1947	qtype_multianswerwiris	version	2021091300
+1948	qtype_multichoicewiris	version	2021091300
+1949	qtype_ordering	version	2021091404
+1950	qtype_shortanswerwiris	version	2021091300
+1951	qtype_truefalsewiris	version	2021091500
+1952	qtype_wq	version	2021110300
+1954	mod_geogebra	version	2021102100
+1957	mod_hvp	version	2021061100
+1975	mod_jclic	version	2021060100
+1978	mod_questionnaire	version	2020111101
 1988	message	jabber_provider_mod_questionnaire_notification_permitted	permitted
 1989	message	popup_provider_mod_questionnaire_notification_permitted	permitted
 1990	message	message_provider_mod_questionnaire_notification_loggedin	email
 1991	message	message_provider_mod_questionnaire_notification_loggedoff	email
 1992	mod_qv	version	2019010700
 1993	mod_rcontent	version	2017101000
-1997	block_completion_progress	version	2020081000
-1999	block_courses_vicensvives	version	2020090800
-2000	block_licenses_vicensvives	version	2020090800
 2001	block_my_books	version	2015111700
 2003	block_rgrade	version	2016090500
-2004	filter_wiris	version	2020090300
 2005	format_simple	version	2012121100
-2006	format_vv	version	2020090800
-2007	report_coursequotas	version	2016091400
 2008	qformat_hotpot	version	2019111022
-2009	tool_odisseagtafsync	version	2015012501
-2010	theme_xtec2020	version	2020080703
 2011	local_agora	version	2020072300
 2012	local_alexandriaimporter	version	2016021600
 2013	local_bigdata	version	2016021601
-2014	local_clickedu	version	20190724000
 2015	local_oauth	version	2016021600
 2016	local_rcommon	version	2017101000
 2018	rcommon	enabled	1
-2019	local_wsvicensvives	version	2020090800
 2020	hotpotattempt_hp	version	2010112400
 2021	hotpotattempt_html	version	2010112400
 2022	hotpotattempt_qedoc	version	2010112400
@@ -31000,10 +32419,8 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2028	hotpotreport_overview	version	2010112400
 2029	hotpotreport_responses	version	2010112400
 2030	hotpotreport_scores	version	2010112400
-2031	atto_cloze	version	2017072802
 2032	atto_fontfamily	version	2020010600
 2033	atto_fontsize	version	2015042701
-2034	atto_wiris	version	2020090300
 1424	editor_atto	toolbar	collapse = collapse\nstyle1 = title, bold, italic\nlist = unorderedlist, orderedlist\nlinks = link\nfiles = image, media, recordrtc, managefiles, h5p\nstyle2 = underline, strike, subscript, superscript\nalign = align\nindent = indent\ninsert = equation, charmap, table, clear\nundo = undo\naccessibility = accessibilitychecker, accessibilityhelper\nmath = wiris\nother = html
 2056	mybooks	viewer_opening	1
 2057	mybooks	addkey	1
@@ -31059,6 +32476,17 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2108	rcontent	popupstatus	checked
 2109	rcontent	popupwidth	600
 2110	rcontent	popupheight	800
+1999	block_courses_vicensvives	version	2021072700
+2000	block_licenses_vicensvives	version	2021072700
+2004	filter_wiris	version	2021110900
+2006	format_vv	version	2021072700
+2009	tool_odisseagtafsync	version	2021032300
+2007	report_coursequotas	version	2021062300
+2014	local_clickedu	version	20201031001
+2010	theme_xtec2020	version	2021011201
+2019	local_wsvicensvives	version	2021072700
+2031	atto_cloze	version	2017072803
+2034	atto_wiris	version	2021110900
 2111	rcontent	tracer	
 2112	rcontent	registersperreportpage	20
 2113	choicegroup	sortgroupsby	1
@@ -31093,7 +32521,6 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2142	qtype_wq	quizzeswirisurl	http://www.wiris.net/demo/wiris
 2143	qtype_wq	access_provider_enabled	0
 2144	theme_xtec2020	logo	
-2145	theme_xtec2020	headerbg	#f4f4f4
 2146	theme_xtec2020	footnote	
 2147	theme_xtec2020	website	
 2148	theme_xtec2020	email	
@@ -31107,18 +32534,12 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2156	theme_xtec2020	pinterest	
 2157	theme_xtec2020	youtube	
 2158	theme_xtec2020	skype	
-2159	theme_xtec2020	colorset	grana
-2160	theme_xtec2020	maincolor	#AC2013
-2161	theme_xtec2020	fontcolor	#303030
-2162	theme_xtec2020	linkscolor	#AC2013
 2163	theme_xtec2020	fontsize	100
 2164	theme_xtec2020	fontstyle	normal
 2165	theme_xtec2020	importcss	
 2166	theme_xtec2020	customcss	
 1572	enrol_ldap	objectclass	(objectClass=*)
-2167	auth_saml2	version	2020092900
 2187	auth_saml2	grouprules	
-1998	block_configurable_reports	version	2020100800
 2168	auth_saml2	idpmetadata	
 2169	auth_saml2	idpname	Login via SAML2
 2170	auth_saml2	showidplink	1
@@ -31168,6 +32589,11 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2215	auth_saml2	field_updatelocal_lang	oncreate
 2216	auth_saml2	field_updateremote_lang	0
 2217	auth_saml2	field_lock_lang	unlocked
+2159	theme_xtec2020	colorset	PEDC
+2160	theme_xtec2020	maincolor	#FF494E
+2161	theme_xtec2020	fontcolor	#366944
+2162	theme_xtec2020	linkscolor	#910048
+2145	theme_xtec2020	headerbg	#F8F8F8
 2218	auth_saml2	field_map_description	
 2219	auth_saml2	field_updatelocal_description	oncreate
 2220	auth_saml2	field_updateremote_description	0
@@ -31223,6 +32649,147 @@ COPY public.m2config_plugins (id, plugin, name, value) FROM stdin;
 2270	theme_xtec2020	admin_alert_start	
 2271	theme_xtec2020	admin_alert_end	
 1920	logstore_standard	loglifetime	60
+157	analytics	modeloutputdir	
+2272	message	airnotifier_provider_moodle_coursecompleted_permitted	permitted
+2273	message	email_provider_moodle_coursecompleted_permitted	permitted
+2274	message	jabber_provider_moodle_coursecompleted_permitted	permitted
+2275	message	popup_provider_moodle_coursecompleted_permitted	permitted
+2276	message	message_provider_moodle_coursecompleted_loggedin	email
+2277	message	message_provider_moodle_coursecompleted_loggedoff	email
+2278	message	airnotifier_provider_moodle_infected_permitted	permitted
+2279	message	email_provider_moodle_infected_permitted	permitted
+2280	message	jabber_provider_moodle_infected_permitted	permitted
+2281	message	popup_provider_moodle_infected_permitted	permitted
+2282	message	message_provider_moodle_infected_loggedin	email
+2283	message	message_provider_moodle_infected_loggedoff	email
+207	availability_grouping	version	2021051700
+2287	block_myoverview	displaygroupingfavourites	1
+216	qtype_essay	version	2021051700
+217	qtype_gapselect	version	2021051700
+1953	mod_choicegroup	version	2021083100
+2284	mod_h5pactivity	version	2021051700
+242	mod_label	version	2021051700
+1139	auth_cas	memberattribute_isdn	0
+1231	auth_ldap	memberattribute_isdn	0
+269	auth_mnet	version	2021051700
+2167	auth_saml2	version	2021062900
+2285	enrol_fee	version	2021051700
+288	enrol_flatfile	version	2021051700
+363	message_email	version	2021051700
+436	message_jabber	version	2021051700
+469	message_popup	version	2021051700
+2286	block_accessreview	version	2021051700
+512	block_calendar_month	version	2021051700
+1997	block_completion_progress	version	2021070900
+1998	block_configurable_reports	version	2020110300
+532	block_private_files	version	2021051700
+543	block_settings	version	2021051700
+562	filter_censor	version	2021051700
+1451	filter_mathjaxloader	httpsurl	https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js
+588	dataformat_csv	version	2021051700
+2288	profilefield_social	version	2021051700
+2289	report_infectedfiles	version	2021051700
+609	report_loglive	version	2021051700
+2290	report_status	version	2021051700
+632	gradereport_overview	version	2021051700
+2291	repository_contentbank	version	2021051700
+2293	contentbank	enablecourseinstances	0
+2294	contentbank	enableuserinstances	0
+651	repository_filesystem	version	2021051700
+698	qbehaviour_adaptivenopenalty	version	2021051700
+705	qbehaviour_interactivecountback	version	2021051700
+717	qformat_xhtml	version	2021051700
+2295	tool_brickfield	version	2021051700
+2297	tool_licensemanager	version	2021051700
+757	tool_lpimportcsv	version	2021051700
+2298	tool_migratehvp2h5p	version	2021020400
+2299	tool_moodlenet	version	2021051700
+804	cachestore_file	version	2021051700
+2300	contenttype_h5p	version	2021051700
+2301	local_redislock	version	2020061100
+2302	h5plib_v124	version	2021051700
+2303	paygw_paypal	version	2021051700
+834	assignfeedback_offline	version	2021051700
+856	ltiservice_basicoutcomes	version	2021051700
+2305	quizaccess_seb	version	2021051700
+881	scormreport_interactions	version	2021051700
+910	atto_indent	version	2021051700
+916	atto_orderedlist	version	2021051700
+937	logstore_database	version	2021051700
+2307	tool_dataprivacy	automaticdataexportapproval	0
+2308	tool_dataprivacy	automaticdatadeletionapproval	0
+2309	moodlecourse	downloadcontentsitedefault	0
+2310	moodlecourse	showactivitydates	1
+2311	moodlecourse	showcompletionconditions	1
+2312	backup	backup_general_contentbankcontent	1
+2313	backup	backup_general_contentbankcontent_locked	
+2314	backup	backup_general_legacyfiles	1
+2315	backup	backup_general_legacyfiles_locked	
+2316	backup	backup_import_permissions	0
+2317	backup	backup_import_permissions_locked	
+2318	backup	backup_import_contentbankcontent	1
+2319	backup	backup_import_contentbankcontent_locked	
+2320	backup	backup_import_legacyfiles	1
+2321	backup	backup_import_legacyfiles_locked	
+2322	backup	backup_auto_contentbankcontent	1
+2323	backup	backup_auto_legacyfiles	1
+2324	restore	restore_general_permissions	1
+2325	restore	restore_general_permissions_locked	
+2326	restore	restore_general_contentbankcontent	1
+2327	restore	restore_general_contentbankcontent_locked	
+2328	restore	restore_general_legacyfiles	1
+2329	restore	restore_general_legacyfiles_locked	
+2330	analytics	calclifetime	35
+2331	auth_saml2	autologin	0
+2332	auth_saml2	autologincookie	
+2333	block_accessreview	whattoshow	showboth
+2334	block_accessreview	errordisplay	showint
+2335	block_accessreview	toolpage	errors
+2336	block_section_links	showsectionname	0
+2337	antivirus	notifyemail	
+2338	antivirus	enablequarantine	0
+2339	antivirus	quarantinetime	2419200
+2340	antivirus_clamav	tcpsockethost	
+2341	antivirus_clamav	tcpsocketport	3310
+2342	antivirus_clamav	tries	1
+2343	local_clickedu	advdebug	0
+2344	tool_brickfield	analysistype	0
+2345	tool_brickfield	deletehistoricaldata	1
+2346	tool_brickfield	batch	1000
+2347	tool_brickfield	perpage	50
+2348	enrol_fee	expiredaction	3
+2349	enrol_fee	status	1
+2350	enrol_fee	cost	0
+2351	enrol_fee	currency	USD
+2352	enrol_fee	roleid	5
+2353	enrol_fee	enrolperiod	0
+2354	quiz	quizpassword	
+2355	quiz	quizpassword_adv	
+2356	quiz	quizpassword_required	
+2357	quizaccess_seb	autoreconfigureseb	1
+2358	quizaccess_seb	showseblinks	seb,http
+2359	quizaccess_seb	downloadlink	https://safeexambrowser.org/download_en.html
+2360	quizaccess_seb	quizpasswordrequired	0
+2361	quizaccess_seb	displayblocksbeforestart	0
+2362	quizaccess_seb	displayblockswhenfinished	1
+2363	paygw_paypal	surcharge	0
+2364	qtype_wq	filtercodes_compatibility	0
+2365	qtype_wq	debug_mode_enabled	0
+2366	theme_xtec2020	xtec_type	eix
+2367	tool_mobile	qrcodetype	2
+2368	tool_mobile	filetypeexclusionlist	
+2369	tool_moodlenet	enablemoodlenet	0
+2370	tool_moodlenet	defaultmoodlenetname	MoodleNet Central
+2371	tool_moodlenet	defaultmoodlenet	https://moodle.net
+2372	theme_xtec2020	themerev	1637065642
+\.
+
+
+--
+-- Data for Name: m2contentbank_content; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2contentbank_content (id, name, contenttype, contextid, instanceid, configdata, usercreated, usermodified, timecreated, timemodified, visibility) FROM stdin;
 \.
 
 
@@ -31271,8 +32838,8 @@ COPY public.m2context_temp (id, path, depth, locked) FROM stdin;
 -- Data for Name: m2course; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2course (id, category, sortorder, fullname, shortname, idnumber, summary, summaryformat, format, showgrades, newsitems, startdate, enddate, relativedatesmode, marker, maxbytes, legacyfiles, showreports, visible, visibleold, groupmode, groupmodeforce, defaultgroupingid, lang, calendartype, theme, timecreated, timemodified, requested, enablecompletion, completionnotify, cacherev) FROM stdin;
-1	0	0	Odissea Dev	odissea		<p>Versió de desenvolupament d'Odissea<br></p>	0	site	1	3	0	0	0	0	0	0	0	1	1	0	0	0				1603909020	1603909308	0	0	0	1603982943
+COPY public.m2course (id, category, sortorder, fullname, shortname, idnumber, summary, summaryformat, format, showgrades, newsitems, startdate, enddate, relativedatesmode, marker, maxbytes, legacyfiles, showreports, visible, visibleold, groupmode, groupmodeforce, defaultgroupingid, lang, calendartype, theme, timecreated, timemodified, requested, enablecompletion, completionnotify, cacherev, originalcourseid, downloadcontent, showactivitydates, showcompletionconditions) FROM stdin;
+1	0	0	Odissea Dev	odissea		<p>Versió de desenvolupament d'Odissea<br></p>	0	site	1	3	0	0	0	0	0	0	0	1	1	0	0	0				1603909020	1603909308	0	0	0	1637065554	\N	\N	0	\N
 \.
 
 
@@ -31371,6 +32938,22 @@ COPY public.m2course_request (id, fullname, shortname, summary, summaryformat, c
 --
 
 COPY public.m2course_sections (id, course, section, name, summary, summaryformat, sequence, visible, availability, timemodified) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2coursequotas_catsize; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2coursequotas_catsize (id, categoryid, quota) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2coursequotas_coursesize; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2coursequotas_coursesize (id, courseid, quota) FROM stdin;
 \.
 
 
@@ -31547,7 +33130,7 @@ COPY public.m2enrol_paypal (id, business, receiver_email, receiver_id, item_name
 -- Data for Name: m2event; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2event (id, name, description, format, categoryid, courseid, groupid, userid, repeatid, modulename, instance, type, eventtype, timestart, timeduration, timesort, visible, uuid, sequence, timemodified, subscriptionid, priority, location) FROM stdin;
+COPY public.m2event (id, name, description, format, categoryid, courseid, groupid, userid, repeatid, modulename, instance, type, eventtype, timestart, timeduration, timesort, visible, uuid, sequence, timemodified, subscriptionid, priority, location, component) FROM stdin;
 \.
 
 
@@ -31709,28 +33292,17 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 118	core_message_mute_conversations	core_message_external	mute_conversations	message/externallib.php	moodle		moodle_mobile_app
 119	core_message_unmute_conversations	core_message_external	unmute_conversations	message/externallib.php	moodle		moodle_mobile_app
 120	core_message_block_user	core_message_external	block_user	message/externallib.php	moodle		moodle_mobile_app
-121	core_message_block_contacts	core_message_external	block_contacts	message/externallib.php	moodle		moodle_mobile_app
-122	core_message_create_contacts	core_message_external	create_contacts	message/externallib.php	moodle		moodle_mobile_app
 123	core_message_get_contact_requests	core_message_external	get_contact_requests	message/externallib.php	moodle		moodle_mobile_app
 124	core_message_create_contact_request	core_message_external	create_contact_request	message/externallib.php	moodle		moodle_mobile_app
 125	core_message_confirm_contact_request	core_message_external	confirm_contact_request	message/externallib.php	moodle		moodle_mobile_app
 126	core_message_decline_contact_request	core_message_external	decline_contact_request	message/externallib.php	moodle		moodle_mobile_app
 127	core_message_get_received_contact_requests_count	core_message_external	get_received_contact_requests_count	message/externallib.php	moodle		moodle_mobile_app
 128	core_message_delete_contacts	core_message_external	delete_contacts	message/externallib.php	moodle		moodle_mobile_app
-129	core_message_delete_conversation	core_message_external	delete_conversation	message/externallib.php	moodle	moodle/site:deleteownmessage	moodle_mobile_app
 130	core_message_delete_conversations_by_id	core_message_external	delete_conversations_by_id	message/externallib.php	moodle	moodle/site:deleteownmessage	moodle_mobile_app
 131	core_message_delete_message	core_message_external	delete_message	message/externallib.php	moodle	moodle/site:deleteownmessage	moodle_mobile_app
 132	core_message_get_blocked_users	core_message_external	get_blocked_users	message/externallib.php	moodle		moodle_mobile_app
 133	core_message_data_for_messagearea_search_messages	core_message_external	data_for_messagearea_search_messages	message/externallib.php	moodle		moodle_mobile_app
-134	core_message_data_for_messagearea_search_users	core_message_external	data_for_messagearea_search_users	message/externallib.php	moodle		\N
-135	core_message_data_for_messagearea_search_users_in_course	core_message_external	data_for_messagearea_search_users_in_course	message/externallib.php	moodle		\N
 136	core_message_message_search_users	core_message_external	message_search_users	message/externallib.php	moodle		moodle_mobile_app
-137	core_message_data_for_messagearea_conversations	core_message_external	data_for_messagearea_conversations	message/externallib.php	moodle		moodle_mobile_app
-138	core_message_data_for_messagearea_contacts	core_message_external	data_for_messagearea_contacts	message/externallib.php	moodle		moodle_mobile_app
-139	core_message_data_for_messagearea_messages	core_message_external	data_for_messagearea_messages	message/externallib.php	moodle		moodle_mobile_app
-140	core_message_data_for_messagearea_get_most_recent_message	core_message_external	data_for_messagearea_get_most_recent_message	message/externallib.php	moodle		\N
-141	core_message_data_for_messagearea_get_profile	core_message_external	data_for_messagearea_get_profile	message/externallib.php	moodle		\N
-142	core_message_get_contacts	core_message_external	get_contacts	message/externallib.php	moodle		moodle_mobile_app
 143	core_message_get_user_contacts	core_message_external	get_user_contacts	message/externallib.php	moodle		moodle_mobile_app
 145	core_message_get_conversation	core_message_external	get_conversation	message/externallib.php	moodle		moodle_mobile_app
 146	core_message_get_conversation_between_users	core_message_external	get_conversation_between_users	message/externallib.php	moodle		moodle_mobile_app
@@ -31742,7 +33314,6 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 152	core_message_get_member_info	core_message_external	get_member_info	message/externallib.php	moodle		moodle_mobile_app
 153	core_message_get_unread_conversations_count	core_message_external	get_unread_conversations_count	message/externallib.php	moodle		moodle_mobile_app
 154	core_message_mark_all_notifications_as_read	core_message_external	mark_all_notifications_as_read	message/externallib.php	moodle		moodle_mobile_app
-155	core_message_mark_all_messages_as_read	core_message_external	mark_all_messages_as_read	message/externallib.php	moodle		moodle_mobile_app
 156	core_message_mark_all_conversation_messages_as_read	core_message_external	mark_all_conversation_messages_as_read	message/externallib.php	moodle		moodle_mobile_app
 157	core_message_mark_message_read	core_message_external	mark_message_read	message/externallib.php	moodle		moodle_mobile_app
 158	core_message_mark_notification_read	core_message_external	mark_notification_read	message/externallib.php	moodle		moodle_mobile_app
@@ -31753,7 +33324,6 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 163	core_message_send_messages_to_conversation	core_message_external	send_messages_to_conversation	message/externallib.php	moodle	moodle/site:sendmessage	moodle_mobile_app
 164	core_message_get_conversation_messages	core_message_external	get_conversation_messages	message/externallib.php	moodle		moodle_mobile_app
 165	core_message_unblock_user	core_message_external	unblock_user	message/externallib.php	moodle		moodle_mobile_app
-166	core_message_unblock_contacts	core_message_external	unblock_contacts	message/externallib.php	moodle		moodle_mobile_app
 167	core_message_get_user_notification_preferences	core_message_external	get_user_notification_preferences	message/externallib.php	moodle	moodle/user:editownmessageprofile	moodle_mobile_app
 168	core_message_get_user_message_preferences	core_message_external	get_user_message_preferences	message/externallib.php	moodle	moodle/user:editownmessageprofile	moodle_mobile_app
 169	core_message_set_favourite_conversations	core_message_external	set_favourite_conversations	message/externallib.php	moodle		moodle_mobile_app
@@ -32189,6 +33759,47 @@ COPY public.m2external_functions (id, name, classname, methodname, classpath, co
 599	local_wsvicensvives_update_lti_grade	local_wsvicensvives_external	update_lti_grade	local/wsvicensvives/externallib.php	local_wsvicensvives		\N
 600	local_wsvicensvives_get_lti_grade	local_wsvicensvives_external	update_lti_grade	local/wsvicensvives/externallib.php	local_wsvicensvives		\N
 601	block_configurable_reports_get_report_data	block_configurable_reports\\external	get_report_data	\N	block_configurable_reports		\N
+602	core_backup_get_copy_progress	core_backup_external	get_copy_progress	backup/externallib.php	moodle		\N
+603	core_backup_submit_copy_form	core_backup_external	submit_copy_form	backup/externallib.php	moodle		\N
+604	core_calendar_get_calendar_export_token	core_calendar\\external\\export\\token	execute	\N	moodle		moodle_mobile_app
+605	core_course_add_content_item_to_user_favourites	core_course_external	add_content_item_to_user_favourites	course/externallib.php	moodle		\N
+606	core_course_remove_content_item_from_user_favourites	core_course_external	remove_content_item_from_user_favourites	course/externallib.php	moodle		\N
+607	core_course_get_course_content_items	core_course_external	get_course_content_items	course/externallib.php	moodle		\N
+608	core_course_get_activity_chooser_footer	core_course_external	get_activity_chooser_footer	course/externallib.php	moodle		\N
+609	core_course_toggle_activity_recommendation	core_course_external	toggle_activity_recommendation	course/externallib.php	moodle		\N
+610	core_files_delete_draft_files	core_files\\external\\delete\\draft	execute	\N	moodle		moodle_mobile_app
+611	core_files_get_unused_draft_itemid	core_files\\external\\get\\unused_draft	execute	\N	moodle		moodle_mobile_app
+612	core_form_dynamic_form	core_form\\external\\dynamic_form	execute	\N	moodle		\N
+613	core_grades_create_gradecategory	core_grades_external	create_gradecategory	\N	moodle	moodle/grade:manage	\N
+614	core_grades_create_gradecategories	core_grades\\external\\create_gradecategories	execute	\N	moodle	moodle/grade:manage	\N
+615	core_user_search_identity	\\core_user\\external\\search_identity	execute	\N	moodle	moodle/user:viewalldetails	\N
+616	core_block_fetch_addable_blocks	core_block\\external\\fetch_addable_blocks	execute	\N	moodle	moodle/site:manageblocks	moodle_mobile_app
+617	core_table_get_dynamic_table_content	core_table\\external\\dynamic\\get	execute	\N	moodle		moodle_mobile_app
+618	core_xapi_statement_post	core_xapi\\external\\post_statement	execute	\N	moodle		moodle_mobile_app
+619	core_contentbank_delete_content	core_contentbank\\external\\delete_content	execute	\N	moodle	moodle/contentbank:deleteanycontent	\N
+620	core_contentbank_rename_content	core_contentbank\\external\\rename_content	execute	\N	moodle	moodle/contentbank:manageowncontent	\N
+621	core_contentbank_set_content_visibility	core_contentbank\\external\\set_content_visibility	execute	\N	moodle	moodle/contentbank:manageowncontent	\N
+622	core_create_userfeedback_action_record	core\\external\\record_userfeedback_action	execute	\N	moodle		\N
+623	core_payment_get_available_gateways	core_payment\\external\\get_available_gateways	execute	\N	moodle		\N
+624	mod_glossary_delete_entry	mod_glossary\\external\\delete_entry	execute	\N	mod_glossary		moodle_mobile_app
+625	mod_glossary_update_entry	mod_glossary\\external\\update_entry	execute	\N	mod_glossary		moodle_mobile_app
+626	mod_glossary_prepare_entry_for_edition	mod_glossary\\external\\prepare_entry	execute	\N	mod_glossary		moodle_mobile_app
+627	mod_h5pactivity_get_h5pactivity_access_information	mod_h5pactivity\\external\\get_h5pactivity_access_information	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+628	mod_h5pactivity_view_h5pactivity	mod_h5pactivity\\external\\view_h5pactivity	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+629	mod_h5pactivity_get_attempts	mod_h5pactivity\\external\\get_attempts	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+630	mod_h5pactivity_get_results	mod_h5pactivity\\external\\get_results	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+631	mod_h5pactivity_get_h5pactivities_by_courses	mod_h5pactivity\\external\\get_h5pactivities_by_courses	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+632	mod_h5pactivity_log_report_viewed	mod_h5pactivity\\external\\log_report_viewed	execute	\N	mod_h5pactivity		moodle_mobile_app
+633	mod_h5pactivity_get_user_attempts	mod_h5pactivity\\external\\get_user_attempts	execute	\N	mod_h5pactivity	mod/h5pactivity:reviewattempts	moodle_mobile_app
+634	block_accessreview_get_module_data	block_accessreview\\external\\get_module_data	execute	\N	block_accessreview	block/accessreview:view	\N
+635	block_accessreview_get_section_data	block_accessreview\\external\\get_section_data	execute	\N	block_accessreview	block/accessreview:view	\N
+636	media_videojs_get_language	media_videojs\\external\\get_language	execute	\N	media_videojs		\N
+637	tool_mobile_validate_subscription_key	tool_mobile\\external	validate_subscription_key	\N	tool_mobile		moodle_mobile_app
+638	tool_mobile_get_tokens_for_qr_login	tool_mobile\\external	get_tokens_for_qr_login	\N	tool_mobile		moodle_mobile_app
+639	tool_moodlenet_verify_webfinger	tool_moodlenet\\external	verify_webfinger	\N	tool_moodlenet		moodle_mobile_app
+640	tool_moodlenet_search_courses	tool_moodlenet\\external	search_courses	\N	tool_moodlenet		moodle_mobile_app
+641	paygw_paypal_get_config_for_js	paygw_paypal\\external\\get_config_for_js	execute	\N	paygw_paypal		\N
+642	paygw_paypal_create_transaction_complete	paygw_paypal\\external\\transaction_complete	execute	\N	paygw_paypal		\N
 \.
 
 
@@ -32209,382 +33820,393 @@ COPY public.m2external_services (id, name, enabled, requiredcapability, restrict
 --
 
 COPY public.m2external_services_functions (id, externalserviceid, functionname) FROM stdin;
-1	1	core_badges_get_user_badges
-2	1	core_blog_get_entries
-3	1	core_blog_view_entries
-4	1	core_calendar_get_calendar_monthly_view
-5	1	core_calendar_get_calendar_day_view
-6	1	core_calendar_get_calendar_upcoming_view
-7	1	core_calendar_update_event_start_day
-8	1	core_calendar_create_calendar_events
-9	1	core_calendar_delete_calendar_events
-10	1	core_calendar_get_calendar_events
-11	1	core_calendar_get_action_events_by_timesort
-12	1	core_calendar_get_action_events_by_course
-13	1	core_calendar_get_action_events_by_courses
-14	1	core_calendar_get_calendar_event_by_id
-15	1	core_calendar_submit_create_update_form
-16	1	core_calendar_get_calendar_access_information
-17	1	core_calendar_get_allowed_event_types
-18	1	core_comment_get_comments
-19	1	core_comment_add_comments
-20	1	core_comment_delete_comments
-21	1	core_completion_get_activities_completion_status
-22	1	core_completion_get_course_completion_status
-23	1	core_completion_mark_course_self_completed
-24	1	core_completion_update_activity_completion_status_manually
-25	1	core_course_get_categories
-26	1	core_course_get_contents
-27	1	core_course_get_course_module
-28	1	core_course_get_course_module_by_instance
-29	1	core_course_get_courses
-30	1	core_course_search_courses
-31	1	core_course_view_course
-32	1	core_course_get_user_navigation_options
-33	1	core_course_get_user_administration_options
-34	1	core_course_get_courses_by_field
-35	1	core_course_check_updates
-36	1	core_course_get_updates_since
-37	1	core_course_get_enrolled_courses_by_timeline_classification
-38	1	core_course_get_recent_courses
-39	1	core_course_set_favourite_courses
-40	1	core_enrol_get_course_enrolment_methods
-41	1	core_enrol_get_enrolled_users
-42	1	core_enrol_search_users
-43	1	core_enrol_get_users_courses
-44	1	core_files_get_files
-45	1	core_get_component_strings
-46	1	core_grades_grader_gradingpanel_point_fetch
-47	1	core_grades_grader_gradingpanel_point_store
-48	1	core_message_get_conversations
-49	1	core_grades_grader_gradingpanel_scale_fetch
-50	1	core_grades_grader_gradingpanel_scale_store
-51	1	core_group_get_activity_allowed_groups
-52	1	core_group_get_activity_groupmode
-53	1	core_group_get_course_groupings
-54	1	core_group_get_course_groups
-55	1	core_group_get_course_user_groups
-56	1	core_message_mute_conversations
-57	1	core_message_unmute_conversations
-58	1	core_message_block_user
-59	1	core_message_block_contacts
-60	1	core_message_create_contacts
-61	1	core_message_get_contact_requests
-62	1	core_message_create_contact_request
-63	1	core_message_confirm_contact_request
-64	1	core_message_decline_contact_request
-65	1	core_message_get_received_contact_requests_count
-66	1	core_message_delete_contacts
-67	1	core_message_delete_conversation
-68	1	core_message_delete_conversations_by_id
-69	1	core_message_delete_message
-70	1	core_message_get_blocked_users
-71	1	core_message_data_for_messagearea_search_messages
-72	1	core_message_message_search_users
-73	1	core_message_data_for_messagearea_conversations
-74	1	core_message_data_for_messagearea_contacts
-75	1	core_message_data_for_messagearea_messages
-76	1	core_message_get_contacts
-77	1	core_message_get_user_contacts
-78	1	core_message_get_conversation
-79	1	core_message_get_conversation_between_users
-80	1	core_message_get_self_conversation
-81	1	core_message_get_messages
-82	1	core_message_get_conversation_counts
-83	1	core_message_get_unread_conversation_counts
-84	1	core_message_get_conversation_members
-85	1	core_message_get_member_info
-86	1	core_message_get_unread_conversations_count
-87	1	core_message_mark_all_notifications_as_read
-88	1	core_message_mark_all_messages_as_read
-89	1	core_message_mark_all_conversation_messages_as_read
-90	1	core_message_mark_message_read
-91	1	core_message_mark_notification_read
-92	1	core_message_message_processor_config_form
-93	1	core_message_search_contacts
-94	1	core_message_send_instant_messages
-95	1	core_message_send_messages_to_conversation
-96	1	core_message_get_conversation_messages
-97	1	core_message_unblock_user
-98	1	core_message_unblock_contacts
-99	1	core_message_get_user_notification_preferences
-100	1	core_message_get_user_message_preferences
-101	1	core_message_set_favourite_conversations
-102	1	core_message_unset_favourite_conversations
-103	1	core_message_delete_message_for_all_users
-104	1	core_notes_create_notes
-105	1	core_notes_delete_notes
-106	1	core_notes_get_course_notes
-107	1	core_notes_view_notes
-108	1	core_question_update_flag
-109	1	core_rating_get_item_ratings
-110	1	core_rating_add_rating
-111	1	core_tag_get_tagindex
-112	1	core_tag_get_tagindex_per_area
-113	1	core_tag_get_tag_areas
-114	1	core_tag_get_tag_collections
-115	1	core_tag_get_tag_cloud
-116	1	core_user_add_user_device
-117	1	core_user_add_user_private_files
-118	1	core_user_get_course_user_profiles
-119	1	core_user_get_users_by_field
-120	1	core_user_remove_user_device
-121	1	core_user_update_user_preferences
-122	1	core_user_view_user_list
-123	1	core_user_view_user_profile
-124	1	core_user_get_user_preferences
-125	1	core_user_update_picture
-126	1	core_user_set_user_preferences
-127	1	core_user_agree_site_policy
-128	1	core_user_get_private_files_info
-129	1	core_competency_competency_viewed
-130	1	core_competency_list_course_competencies
-131	1	core_competency_get_scale_values
-132	1	core_competency_user_competency_viewed
-133	1	core_competency_user_competency_viewed_in_plan
-134	1	core_competency_user_competency_viewed_in_course
-135	1	core_competency_user_competency_plan_viewed
-136	1	core_competency_grade_competency_in_course
-137	1	core_competency_delete_evidence
-138	1	core_webservice_get_site_info
-139	1	core_block_get_course_blocks
-140	1	core_block_get_dashboard_blocks
-141	1	core_filters_get_available_in_context
-142	1	core_h5p_get_trusted_h5p_file
-143	1	mod_assign_get_grades
-144	1	mod_assign_get_assignments
-145	1	mod_assign_get_submissions
-146	1	mod_assign_get_user_flags
-147	1	mod_assign_set_user_flags
-148	1	mod_assign_get_user_mappings
-149	1	mod_assign_revert_submissions_to_draft
-150	1	mod_assign_lock_submissions
-151	1	mod_assign_unlock_submissions
-152	1	mod_assign_save_submission
-153	1	mod_assign_submit_for_grading
-154	1	mod_assign_save_grade
-155	1	mod_assign_save_grades
-156	1	mod_assign_save_user_extensions
-157	1	mod_assign_reveal_identities
-158	1	mod_assign_view_grading_table
-159	1	mod_assign_view_submission_status
-160	1	mod_assign_get_submission_status
-161	1	mod_assign_list_participants
-162	1	mod_assign_submit_grading_form
-163	1	mod_assign_get_participant
-164	1	mod_assign_view_assign
-165	1	mod_book_view_book
-166	1	mod_book_get_books_by_courses
-167	1	mod_chat_login_user
-168	1	mod_chat_get_chat_users
-169	1	mod_chat_send_chat_message
-170	1	mod_chat_get_chat_latest_messages
-171	1	mod_chat_view_chat
-172	1	mod_chat_get_chats_by_courses
-173	1	mod_chat_get_sessions
-174	1	mod_chat_get_session_messages
-175	1	mod_choice_get_choice_results
-176	1	mod_choice_get_choice_options
-177	1	mod_choice_submit_choice_response
-178	1	mod_choice_view_choice
-179	1	mod_choice_get_choices_by_courses
-180	1	mod_choice_delete_choice_responses
-181	1	mod_data_get_databases_by_courses
-182	1	mod_data_view_database
-183	1	mod_data_get_data_access_information
-184	1	mod_data_get_entries
-185	1	mod_data_get_entry
-186	1	mod_data_get_fields
-187	1	mod_data_search_entries
-188	1	mod_data_approve_entry
-189	1	mod_data_delete_entry
-190	1	mod_data_add_entry
-191	1	mod_data_update_entry
-192	1	mod_feedback_get_feedbacks_by_courses
-193	1	mod_feedback_get_feedback_access_information
-194	1	mod_feedback_view_feedback
-195	1	mod_feedback_get_current_completed_tmp
-196	1	mod_feedback_get_items
-197	1	mod_feedback_launch_feedback
-198	1	mod_feedback_get_page_items
-199	1	mod_feedback_process_page
-200	1	mod_feedback_get_analysis
-201	1	mod_feedback_get_unfinished_responses
-202	1	mod_feedback_get_finished_responses
-203	1	mod_feedback_get_non_respondents
-204	1	mod_feedback_get_responses_analysis
-205	1	mod_feedback_get_last_completed
-206	1	mod_folder_view_folder
-207	1	mod_folder_get_folders_by_courses
-208	1	mod_forum_get_forums_by_courses
-209	1	mod_forum_get_discussion_posts
-210	1	mod_forum_get_forum_discussion_posts
-211	1	mod_forum_get_forum_discussions_paginated
-212	1	mod_forum_get_forum_discussions
-213	1	mod_forum_view_forum
-214	1	mod_forum_view_forum_discussion
-215	1	mod_forum_add_discussion_post
-216	1	mod_forum_add_discussion
-217	1	mod_forum_can_add_discussion
-218	1	mod_forum_get_forum_access_information
-219	1	mod_forum_set_subscription_state
-220	1	mod_forum_set_lock_state
-221	1	mod_forum_toggle_favourite_state
-222	1	mod_page_view_page
-223	1	mod_forum_set_pin_state
-224	1	mod_forum_delete_post
-225	1	mod_forum_get_discussion_post
-226	1	mod_forum_prepare_draft_area_for_post
-227	1	mod_forum_update_discussion_post
-228	1	mod_glossary_get_glossaries_by_courses
-229	1	mod_glossary_view_glossary
-230	1	mod_glossary_view_entry
-231	1	mod_glossary_get_entries_by_letter
-232	1	mod_glossary_get_entries_by_date
-233	1	mod_glossary_get_categories
-234	1	mod_glossary_get_entries_by_category
-235	1	mod_glossary_get_authors
-236	1	mod_glossary_get_entries_by_author
-237	1	mod_glossary_get_entries_by_author_id
-238	1	mod_glossary_get_entries_by_search
-239	1	mod_glossary_get_entries_by_term
-240	1	mod_glossary_get_entries_to_approve
-241	1	mod_glossary_get_entry_by_id
-242	1	mod_glossary_add_entry
-243	1	mod_imscp_view_imscp
-244	1	mod_imscp_get_imscps_by_courses
-245	1	mod_label_get_labels_by_courses
-246	1	mod_lesson_get_lessons_by_courses
-247	1	mod_lesson_get_lesson_access_information
-248	1	mod_lesson_view_lesson
-249	1	mod_lesson_get_questions_attempts
-250	1	mod_lesson_get_user_grade
-251	1	mod_lesson_get_user_attempt_grade
-252	1	mod_lesson_get_content_pages_viewed
-253	1	mod_lesson_get_user_timers
-254	1	mod_lesson_get_pages
-255	1	mod_lesson_launch_attempt
-256	1	mod_lesson_get_page_data
-257	1	mod_lesson_process_page
-258	1	mod_lesson_finish_attempt
-259	1	mod_lesson_get_attempts_overview
-260	1	mod_lesson_get_user_attempt
-261	1	mod_lesson_get_pages_possible_jumps
-262	1	mod_lesson_get_lesson
-263	1	mod_lti_get_tool_launch_data
-264	1	mod_lti_get_ltis_by_courses
-265	1	mod_lti_view_lti
-266	1	mod_page_get_pages_by_courses
-267	1	mod_quiz_get_quizzes_by_courses
-268	1	mod_quiz_view_quiz
-269	1	mod_quiz_get_user_attempts
-270	1	mod_quiz_get_user_best_grade
-271	1	mod_quiz_get_combined_review_options
-272	1	mod_quiz_start_attempt
-273	1	mod_quiz_get_attempt_data
-274	1	mod_quiz_get_attempt_summary
-275	1	mod_quiz_save_attempt
-276	1	mod_quiz_process_attempt
-277	1	mod_quiz_get_attempt_review
-278	1	mod_quiz_view_attempt
-279	1	mod_quiz_view_attempt_summary
-280	1	mod_quiz_view_attempt_review
-281	1	mod_quiz_get_quiz_feedback_for_grade
-282	1	mod_quiz_get_quiz_access_information
-283	1	mod_quiz_get_attempt_access_information
-284	1	mod_quiz_get_quiz_required_qtypes
-285	1	mod_resource_view_resource
-286	1	mod_resource_get_resources_by_courses
-287	1	mod_scorm_view_scorm
-288	1	mod_scorm_get_scorm_attempt_count
-289	1	mod_scorm_get_scorm_scoes
-290	1	mod_scorm_get_scorm_user_data
-291	1	mod_scorm_insert_scorm_tracks
-292	1	mod_scorm_get_scorm_sco_tracks
-293	1	mod_scorm_get_scorms_by_courses
-294	1	mod_scorm_launch_sco
-295	1	mod_scorm_get_scorm_access_information
-296	1	mod_survey_get_surveys_by_courses
-297	1	mod_survey_view_survey
-298	1	mod_survey_get_questions
-299	1	mod_survey_submit_answers
-300	1	mod_url_view_url
-301	1	mod_url_get_urls_by_courses
-302	1	mod_wiki_get_wikis_by_courses
-303	1	mod_wiki_view_wiki
-304	1	mod_wiki_view_page
-305	1	mod_wiki_get_subwikis
-306	1	mod_wiki_get_subwiki_pages
-307	1	mod_wiki_get_subwiki_files
-308	1	mod_wiki_get_page_contents
-309	1	mod_wiki_get_page_for_editing
-310	1	mod_wiki_new_page
-311	1	mod_wiki_edit_page
-312	1	mod_workshop_get_workshops_by_courses
-313	1	mod_workshop_get_workshop_access_information
-314	1	mod_workshop_get_user_plan
-315	1	mod_workshop_view_workshop
-316	1	mod_workshop_add_submission
-317	1	mod_workshop_update_submission
-318	1	mod_workshop_delete_submission
-319	1	mod_workshop_get_submissions
-320	1	mod_workshop_get_submission
-321	1	mod_workshop_get_submission_assessments
-322	1	mod_workshop_get_assessment
-323	1	mod_workshop_get_assessment_form_definition
-324	1	mod_workshop_get_reviewer_assessments
-325	1	mod_workshop_update_assessment
-326	1	mod_workshop_get_grades
-327	1	mod_workshop_evaluate_assessment
-328	1	mod_workshop_get_grades_report
-329	1	mod_workshop_view_submission
-330	1	mod_workshop_evaluate_submission
-331	1	enrol_guest_get_instance_info
-332	1	enrol_self_get_instance_info
-333	1	enrol_self_enrol_user
-334	1	message_airnotifier_is_system_configured
-335	1	message_airnotifier_are_notification_preferences_configured
-336	1	message_airnotifier_get_user_devices
-337	1	message_airnotifier_enable_device
-338	1	message_popup_get_popup_notifications
-339	1	message_popup_get_unread_popup_notification_count
-340	1	block_recentlyaccesseditems_get_recent_items
-341	1	block_starredcourses_get_starred_courses
-342	1	report_insights_set_notuseful_prediction
-343	1	report_insights_set_fixed_prediction
-344	1	report_insights_action_executed
-345	1	gradereport_overview_get_course_grades
-346	1	gradereport_overview_view_grade_report
-347	1	gradereport_user_get_grades_table
-348	1	gradereport_user_view_grade_report
-349	1	gradereport_user_get_grade_items
-350	1	tool_analytics_potential_contexts
-351	1	tool_lp_data_for_course_competencies_page
-352	1	tool_lp_data_for_plans_page
-353	1	tool_lp_data_for_plan_page
-354	1	tool_lp_data_for_user_evidence_list_page
-355	1	tool_lp_data_for_user_evidence_page
-356	1	tool_lp_data_for_user_competency_summary
-357	1	tool_lp_data_for_user_competency_summary_in_plan
-358	1	tool_lp_data_for_user_competency_summary_in_course
-359	1	tool_mobile_get_plugins_supporting_mobile
-360	1	tool_mobile_get_public_config
-361	1	tool_mobile_get_config
-362	1	tool_mobile_get_autologin_key
-363	1	tool_mobile_get_content
-364	1	tool_mobile_call_external_functions
+377	1	core_badges_get_user_badges
+378	1	core_blog_get_entries
+379	1	core_blog_view_entries
+380	1	core_calendar_get_calendar_monthly_view
+381	1	core_calendar_get_calendar_day_view
+382	1	core_calendar_get_calendar_upcoming_view
+383	1	core_calendar_update_event_start_day
+384	1	core_calendar_create_calendar_events
+385	1	core_calendar_delete_calendar_events
+386	1	core_calendar_get_calendar_events
+387	1	core_calendar_get_action_events_by_timesort
+388	1	core_calendar_get_action_events_by_course
+389	1	core_calendar_get_action_events_by_courses
+390	1	core_calendar_get_calendar_event_by_id
+391	1	core_calendar_submit_create_update_form
+392	1	core_calendar_get_calendar_access_information
+393	1	core_calendar_get_allowed_event_types
+394	1	core_comment_get_comments
+395	1	core_comment_add_comments
+396	1	core_comment_delete_comments
+397	1	core_completion_get_activities_completion_status
+398	1	core_completion_get_course_completion_status
+399	1	core_completion_mark_course_self_completed
+400	1	core_completion_update_activity_completion_status_manually
+401	1	core_course_get_categories
+402	1	core_course_get_contents
+403	1	core_course_get_course_module
+404	1	core_course_get_course_module_by_instance
+405	1	core_course_get_courses
+406	1	core_course_search_courses
+407	1	core_course_view_course
+408	1	core_course_get_user_navigation_options
+409	1	core_course_get_user_administration_options
+410	1	core_course_get_courses_by_field
+411	1	core_course_check_updates
+412	1	core_course_get_updates_since
+413	1	core_course_get_enrolled_courses_by_timeline_classification
+414	1	core_course_get_recent_courses
+415	1	core_course_set_favourite_courses
+416	1	core_enrol_get_course_enrolment_methods
+417	1	core_enrol_get_enrolled_users
+418	1	core_enrol_search_users
+419	1	core_enrol_get_users_courses
+420	1	core_files_get_files
+421	1	core_get_component_strings
+422	1	core_grades_grader_gradingpanel_point_fetch
+423	1	core_grades_grader_gradingpanel_point_store
+424	1	core_message_get_conversations
+425	1	core_grades_grader_gradingpanel_scale_fetch
+426	1	core_grades_grader_gradingpanel_scale_store
+427	1	core_group_get_activity_allowed_groups
+428	1	core_group_get_activity_groupmode
+429	1	core_group_get_course_groupings
+430	1	core_group_get_course_groups
+431	1	core_group_get_course_user_groups
+432	1	core_message_mute_conversations
+433	1	core_message_unmute_conversations
+434	1	core_message_block_user
+435	1	core_message_get_contact_requests
+436	1	core_message_create_contact_request
+437	1	core_message_confirm_contact_request
+438	1	core_message_decline_contact_request
+439	1	core_message_get_received_contact_requests_count
+440	1	core_message_delete_contacts
+441	1	core_message_delete_conversations_by_id
+442	1	core_message_delete_message
+443	1	core_message_get_blocked_users
+444	1	core_message_data_for_messagearea_search_messages
+445	1	core_message_message_search_users
+446	1	core_message_get_user_contacts
+447	1	core_message_get_conversation
+448	1	core_message_get_conversation_between_users
+449	1	core_message_get_self_conversation
+450	1	core_message_get_messages
+451	1	core_message_get_conversation_counts
+452	1	core_message_get_unread_conversation_counts
+453	1	core_message_get_conversation_members
+454	1	core_message_get_member_info
+455	1	core_message_get_unread_conversations_count
+456	1	core_message_mark_all_notifications_as_read
+457	1	core_message_mark_all_conversation_messages_as_read
+458	1	core_message_mark_message_read
+459	1	core_message_mark_notification_read
+460	1	core_message_message_processor_config_form
+461	1	core_message_search_contacts
+462	1	core_message_send_instant_messages
+463	1	core_message_send_messages_to_conversation
+464	1	core_message_get_conversation_messages
+465	1	core_message_unblock_user
+466	1	core_message_get_user_notification_preferences
+467	1	core_message_get_user_message_preferences
+468	1	core_message_set_favourite_conversations
+469	1	core_message_unset_favourite_conversations
+470	1	core_message_delete_message_for_all_users
+471	1	core_notes_create_notes
+472	1	core_notes_delete_notes
+473	1	core_notes_get_course_notes
+474	1	core_notes_view_notes
+475	1	core_question_update_flag
+476	1	core_rating_get_item_ratings
+477	1	core_rating_add_rating
+478	1	core_tag_get_tagindex
+479	1	core_tag_get_tagindex_per_area
+480	1	core_tag_get_tag_areas
+481	1	core_tag_get_tag_collections
+482	1	core_tag_get_tag_cloud
+483	1	core_user_add_user_device
+484	1	core_user_add_user_private_files
+485	1	core_user_get_course_user_profiles
+486	1	core_user_get_users_by_field
+487	1	core_user_remove_user_device
+488	1	core_user_update_user_preferences
+489	1	core_user_view_user_list
+490	1	core_user_view_user_profile
+491	1	core_user_get_user_preferences
+492	1	core_user_update_picture
+493	1	core_user_set_user_preferences
+494	1	core_user_agree_site_policy
+495	1	core_user_get_private_files_info
+496	1	core_competency_competency_viewed
+497	1	core_competency_list_course_competencies
+498	1	core_competency_get_scale_values
+499	1	core_competency_user_competency_viewed
+500	1	core_competency_user_competency_viewed_in_plan
+501	1	core_competency_user_competency_viewed_in_course
+502	1	core_competency_user_competency_plan_viewed
+503	1	core_competency_grade_competency_in_course
+504	1	core_competency_delete_evidence
+505	1	core_webservice_get_site_info
+506	1	core_block_get_course_blocks
+507	1	core_block_get_dashboard_blocks
+508	1	core_filters_get_available_in_context
+509	1	core_h5p_get_trusted_h5p_file
+510	1	mod_assign_get_grades
+511	1	mod_assign_get_assignments
+512	1	mod_assign_get_submissions
+513	1	mod_assign_get_user_flags
+514	1	mod_assign_set_user_flags
+515	1	mod_assign_get_user_mappings
+516	1	mod_assign_revert_submissions_to_draft
+517	1	mod_assign_lock_submissions
+518	1	mod_assign_unlock_submissions
+519	1	mod_assign_save_submission
+520	1	mod_assign_submit_for_grading
+521	1	mod_assign_save_grade
+522	1	mod_assign_save_grades
+523	1	mod_assign_save_user_extensions
+524	1	mod_assign_reveal_identities
+525	1	mod_assign_view_grading_table
+526	1	mod_assign_view_submission_status
+527	1	mod_assign_get_submission_status
+528	1	mod_assign_list_participants
+529	1	mod_assign_submit_grading_form
+530	1	mod_assign_get_participant
+531	1	mod_assign_view_assign
+532	1	mod_book_view_book
+533	1	mod_book_get_books_by_courses
+534	1	mod_chat_login_user
+535	1	mod_chat_get_chat_users
+536	1	mod_chat_send_chat_message
+537	1	mod_chat_get_chat_latest_messages
+538	1	mod_chat_view_chat
+539	1	mod_chat_get_chats_by_courses
+540	1	mod_chat_get_sessions
+541	1	mod_chat_get_session_messages
+542	1	mod_choice_get_choice_results
+543	1	mod_choice_get_choice_options
+544	1	mod_choice_submit_choice_response
+545	1	mod_choice_view_choice
+546	1	mod_choice_get_choices_by_courses
+547	1	mod_choice_delete_choice_responses
+548	1	mod_data_get_databases_by_courses
+549	1	mod_data_view_database
+550	1	mod_data_get_data_access_information
+551	1	mod_data_get_entries
+552	1	mod_data_get_entry
+553	1	mod_data_get_fields
+554	1	mod_data_search_entries
+555	1	mod_data_approve_entry
+556	1	mod_data_delete_entry
+557	1	mod_data_add_entry
+558	1	mod_data_update_entry
+559	1	mod_feedback_get_feedbacks_by_courses
+560	1	mod_feedback_get_feedback_access_information
+561	1	mod_feedback_view_feedback
+562	1	mod_feedback_get_current_completed_tmp
+563	1	mod_feedback_get_items
+564	1	mod_feedback_launch_feedback
+565	1	mod_feedback_get_page_items
+566	1	mod_feedback_process_page
+567	1	mod_feedback_get_analysis
+568	1	mod_feedback_get_unfinished_responses
+569	1	mod_feedback_get_finished_responses
+570	1	mod_feedback_get_non_respondents
+571	1	mod_feedback_get_responses_analysis
+572	1	mod_feedback_get_last_completed
+573	1	mod_folder_view_folder
+574	1	mod_folder_get_folders_by_courses
+575	1	mod_forum_get_forums_by_courses
+576	1	mod_forum_get_discussion_posts
+577	1	mod_forum_get_forum_discussion_posts
+578	1	mod_forum_get_forum_discussions_paginated
+579	1	mod_forum_get_forum_discussions
+580	1	mod_forum_view_forum
+581	1	mod_forum_view_forum_discussion
+582	1	mod_forum_add_discussion_post
+583	1	mod_forum_add_discussion
+584	1	mod_forum_can_add_discussion
+585	1	mod_forum_get_forum_access_information
+586	1	mod_forum_set_subscription_state
+587	1	mod_forum_set_lock_state
+588	1	mod_forum_toggle_favourite_state
+589	1	mod_page_view_page
+590	1	mod_forum_set_pin_state
+591	1	mod_forum_delete_post
+592	1	mod_forum_get_discussion_post
+593	1	mod_forum_prepare_draft_area_for_post
+594	1	mod_forum_update_discussion_post
+595	1	mod_glossary_get_glossaries_by_courses
+596	1	mod_glossary_view_glossary
+597	1	mod_glossary_view_entry
+598	1	mod_glossary_get_entries_by_letter
+599	1	mod_glossary_get_entries_by_date
+600	1	mod_glossary_get_categories
+601	1	mod_glossary_get_entries_by_category
+602	1	mod_glossary_get_authors
+603	1	mod_glossary_get_entries_by_author
+604	1	mod_glossary_get_entries_by_author_id
+605	1	mod_glossary_get_entries_by_search
+606	1	mod_glossary_get_entries_by_term
+607	1	mod_glossary_get_entries_to_approve
+608	1	mod_glossary_get_entry_by_id
+609	1	mod_glossary_add_entry
+610	1	mod_imscp_view_imscp
+611	1	mod_imscp_get_imscps_by_courses
+612	1	mod_label_get_labels_by_courses
+613	1	mod_lesson_get_lessons_by_courses
+614	1	mod_lesson_get_lesson_access_information
+615	1	mod_lesson_view_lesson
+616	1	mod_lesson_get_questions_attempts
+617	1	mod_lesson_get_user_grade
+618	1	mod_lesson_get_user_attempt_grade
+619	1	mod_lesson_get_content_pages_viewed
+620	1	mod_lesson_get_user_timers
+621	1	mod_lesson_get_pages
+622	1	mod_lesson_launch_attempt
+623	1	mod_lesson_get_page_data
+624	1	mod_lesson_process_page
+625	1	mod_lesson_finish_attempt
+626	1	mod_lesson_get_attempts_overview
+627	1	mod_lesson_get_user_attempt
+628	1	mod_lesson_get_pages_possible_jumps
+629	1	mod_lesson_get_lesson
+630	1	mod_lti_get_tool_launch_data
+631	1	mod_lti_get_ltis_by_courses
+632	1	mod_lti_view_lti
+633	1	mod_page_get_pages_by_courses
+634	1	mod_quiz_get_quizzes_by_courses
+635	1	mod_quiz_view_quiz
+636	1	mod_quiz_get_user_attempts
+637	1	mod_quiz_get_user_best_grade
+638	1	mod_quiz_get_combined_review_options
+639	1	mod_quiz_start_attempt
+640	1	mod_quiz_get_attempt_data
+641	1	mod_quiz_get_attempt_summary
+642	1	mod_quiz_save_attempt
+643	1	mod_quiz_process_attempt
+644	1	mod_quiz_get_attempt_review
+645	1	mod_quiz_view_attempt
+646	1	mod_quiz_view_attempt_summary
+647	1	mod_quiz_view_attempt_review
+648	1	mod_quiz_get_quiz_feedback_for_grade
+649	1	mod_quiz_get_quiz_access_information
+650	1	mod_quiz_get_attempt_access_information
+651	1	mod_quiz_get_quiz_required_qtypes
+652	1	mod_resource_view_resource
+653	1	mod_resource_get_resources_by_courses
+654	1	mod_scorm_view_scorm
+655	1	mod_scorm_get_scorm_attempt_count
+656	1	mod_scorm_get_scorm_scoes
+657	1	mod_scorm_get_scorm_user_data
+658	1	mod_scorm_insert_scorm_tracks
+659	1	mod_scorm_get_scorm_sco_tracks
+660	1	mod_scorm_get_scorms_by_courses
+661	1	mod_scorm_launch_sco
+662	1	mod_scorm_get_scorm_access_information
+663	1	mod_survey_get_surveys_by_courses
+664	1	mod_survey_view_survey
+665	1	mod_survey_get_questions
+666	1	mod_survey_submit_answers
+667	1	mod_url_view_url
+668	1	mod_url_get_urls_by_courses
+669	1	mod_wiki_get_wikis_by_courses
+670	1	mod_wiki_view_wiki
+671	1	mod_wiki_view_page
+672	1	mod_wiki_get_subwikis
+673	1	mod_wiki_get_subwiki_pages
+674	1	mod_wiki_get_subwiki_files
+675	1	mod_wiki_get_page_contents
+676	1	mod_wiki_get_page_for_editing
+677	1	mod_wiki_new_page
+678	1	mod_wiki_edit_page
+679	1	mod_workshop_get_workshops_by_courses
+680	1	mod_workshop_get_workshop_access_information
+681	1	mod_workshop_get_user_plan
+682	1	mod_workshop_view_workshop
+683	1	mod_workshop_add_submission
+684	1	mod_workshop_update_submission
+685	1	mod_workshop_delete_submission
+686	1	mod_workshop_get_submissions
+687	1	mod_workshop_get_submission
+688	1	mod_workshop_get_submission_assessments
+689	1	mod_workshop_get_assessment
+690	1	mod_workshop_get_assessment_form_definition
+691	1	mod_workshop_get_reviewer_assessments
+692	1	mod_workshop_update_assessment
+693	1	mod_workshop_get_grades
+694	1	mod_workshop_evaluate_assessment
+695	1	mod_workshop_get_grades_report
+696	1	mod_workshop_view_submission
+697	1	mod_workshop_evaluate_submission
+698	1	enrol_guest_get_instance_info
+699	1	enrol_self_get_instance_info
+700	1	enrol_self_enrol_user
+701	1	message_airnotifier_is_system_configured
+702	1	message_airnotifier_are_notification_preferences_configured
+703	1	message_airnotifier_get_user_devices
+704	1	message_airnotifier_enable_device
+705	1	message_popup_get_popup_notifications
+706	1	message_popup_get_unread_popup_notification_count
+707	1	block_recentlyaccesseditems_get_recent_items
+708	1	block_starredcourses_get_starred_courses
+709	1	report_insights_set_notuseful_prediction
+710	1	report_insights_set_fixed_prediction
+711	1	report_insights_action_executed
+712	1	gradereport_overview_get_course_grades
+713	1	gradereport_overview_view_grade_report
+714	1	gradereport_user_get_grades_table
+715	1	gradereport_user_view_grade_report
+716	1	gradereport_user_get_grade_items
+717	1	tool_analytics_potential_contexts
+718	1	tool_lp_data_for_course_competencies_page
+719	1	tool_lp_data_for_plans_page
+720	1	tool_lp_data_for_plan_page
+721	1	tool_lp_data_for_user_evidence_list_page
+722	1	tool_lp_data_for_user_evidence_page
+723	1	tool_lp_data_for_user_competency_summary
+724	1	tool_lp_data_for_user_competency_summary_in_plan
+725	1	tool_lp_data_for_user_competency_summary_in_course
+726	1	tool_mobile_get_plugins_supporting_mobile
+727	1	tool_mobile_get_public_config
+728	1	tool_mobile_get_config
+729	1	tool_mobile_get_autologin_key
+730	1	tool_mobile_get_content
+731	1	tool_mobile_call_external_functions
+732	1	mod_choicegroup_get_choicegroup_options
+733	1	mod_choicegroup_submit_choicegroup_response
+734	1	mod_choicegroup_view_choicegroup
+735	1	mod_choicegroup_delete_choicegroup_responses
+736	1	mod_journal_get_entry
+737	1	mod_journal_set_text
+738	1	mod_questionnaire_submit_questionnaire_response
+739	1	core_calendar_get_calendar_export_token
+740	1	core_files_delete_draft_files
+741	1	core_files_get_unused_draft_itemid
 365	2	mod_questionnaire_submit_questionnaire_response
 366	3	local_clickedu_get_activities
 367	3	local_clickedu_get_grades
 368	4	local_wsvicensvives_update_lti_grade
 369	4	local_wsvicensvives_get_lti_grade
-370	1	mod_choicegroup_get_choicegroup_options
-371	1	mod_choicegroup_submit_choicegroup_response
-372	1	mod_choicegroup_view_choicegroup
-373	1	mod_choicegroup_delete_choicegroup_responses
-374	1	mod_journal_get_entry
-375	1	mod_journal_set_text
-376	1	mod_questionnaire_submit_questionnaire_response
+742	1	core_block_fetch_addable_blocks
+743	1	core_table_get_dynamic_table_content
+744	1	core_xapi_statement_post
+745	1	mod_glossary_delete_entry
+746	1	mod_glossary_update_entry
+747	1	mod_glossary_prepare_entry_for_edition
+748	1	mod_h5pactivity_get_h5pactivity_access_information
+749	1	mod_h5pactivity_view_h5pactivity
+750	1	mod_h5pactivity_get_attempts
+751	1	mod_h5pactivity_get_results
+752	1	mod_h5pactivity_get_h5pactivities_by_courses
+753	1	mod_h5pactivity_log_report_viewed
+754	1	mod_h5pactivity_get_user_attempts
+755	1	tool_mobile_validate_subscription_key
+756	1	tool_mobile_get_tokens_for_qr_login
+757	1	tool_moodlenet_verify_webfinger
+758	1	tool_moodlenet_search_courses
 \.
 
 
@@ -32737,7 +34359,7 @@ COPY public.m2filter_wiris_formulas (id, md5, content, jsoncontent, alt, timecre
 -- Data for Name: m2folder; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2folder (id, course, name, intro, introformat, revision, timemodified, display, showexpanded, showdownloadfolder) FROM stdin;
+COPY public.m2folder (id, course, name, intro, introformat, revision, timemodified, display, showexpanded, showdownloadfolder, forcedownload) FROM stdin;
 \.
 
 
@@ -33088,7 +34710,7 @@ COPY public.m2groupings_groups (id, groupingid, groupid, timeadded) FROM stdin;
 -- Data for Name: m2groups; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2groups (id, courseid, idnumber, name, description, descriptionformat, enrolmentkey, picture, hidepicture, timecreated, timemodified) FROM stdin;
+COPY public.m2groups (id, courseid, idnumber, name, description, descriptionformat, enrolmentkey, picture, timecreated, timemodified) FROM stdin;
 \.
 
 
@@ -33120,7 +34742,7 @@ COPY public.m2h5p_contents_libraries (id, h5pid, libraryid, dependencytype, drop
 -- Data for Name: m2h5p_libraries; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2h5p_libraries (id, machinename, title, majorversion, minorversion, patchversion, runnable, fullscreen, embedtypes, preloadedjs, preloadedcss, droplibrarycss, semantics, addto, coremajor, coreminor) FROM stdin;
+COPY public.m2h5p_libraries (id, machinename, title, majorversion, minorversion, patchversion, runnable, fullscreen, embedtypes, preloadedjs, preloadedcss, droplibrarycss, semantics, addto, coremajor, coreminor, metadatasettings, tutorial, example, enabled) FROM stdin;
 \.
 
 
@@ -33137,6 +34759,30 @@ COPY public.m2h5p_libraries_cachedassets (id, libraryid, hash) FROM stdin;
 --
 
 COPY public.m2h5p_library_dependencies (id, libraryid, requiredlibraryid, dependencytype) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2h5pactivity; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2h5pactivity (id, course, name, timecreated, timemodified, intro, introformat, grade, displayoptions, enabletracking, grademethod, reviewmode) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2h5pactivity_attempts; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2h5pactivity_attempts (id, h5pactivityid, userid, timecreated, timemodified, attempt, rawscore, maxscore, scaled, duration, completion, success) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2h5pactivity_attempts_results; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2h5pactivity_attempts_results (id, attemptid, subcontent, timecreated, interactiontype, description, correctpattern, response, additionals, rawscore, maxscore, duration, completion, success) FROM stdin;
 \.
 
 
@@ -33200,7 +34846,7 @@ COPY public.m2hotpot_strings (id, string, md5key) FROM stdin;
 -- Data for Name: m2hvp; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2hvp (id, course, name, intro, introformat, json_content, embed_type, disable, main_library_id, content_type, authors, source, year_from, year_to, license, license_version, changes, license_extras, author_comments, default_language, filtered, slug, timecreated, timemodified, completionpass) FROM stdin;
+COPY public.m2hvp (id, course, name, intro, introformat, json_content, embed_type, disable, main_library_id, content_type, authors, source, year_from, year_to, license, license_version, changes, license_extras, author_comments, default_language, filtered, slug, timecreated, timemodified, completionpass, a11y_title, shared, synced, hub_id) FROM stdin;
 \.
 
 
@@ -33209,6 +34855,14 @@ COPY public.m2hvp (id, course, name, intro, introformat, json_content, embed_typ
 --
 
 COPY public.m2hvp_auth (id, user_id, created_at, secret) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2hvp_content_hub_cache; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2hvp_content_hub_cache (id, language, json, last_checked) FROM stdin;
 \.
 
 
@@ -33349,6 +35003,14 @@ COPY public.m2hvp_xapi_results (id, content_id, user_id, parent_id, interaction_
 --
 
 COPY public.m2imscp (id, course, name, intro, introformat, revision, keepold, structure, timemodified) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2infected_files; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2infected_files (id, filename, quarantinedfile, userid, reason, timecreated) FROM stdin;
 \.
 
 
@@ -33498,16 +35160,16 @@ COPY public.m2lesson_timer (id, lessonid, userid, starttime, lessontime, complet
 -- Data for Name: m2license; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2license (id, shortname, fullname, source, enabled, version) FROM stdin;
-1	unknown	Unknown license		1	2010033100
-2	allrightsreserved	All rights reserved	http://en.wikipedia.org/wiki/All_rights_reserved	1	2010033100
-3	public	Public Domain	http://creativecommons.org/licenses/publicdomain/	1	2010033100
-4	cc	Creative Commons	http://creativecommons.org/licenses/by/3.0/	1	2010033100
-5	cc-nd	Creative Commons - NoDerivs	http://creativecommons.org/licenses/by-nd/3.0/	1	2010033100
-6	cc-nc-nd	Creative Commons - No Commercial NoDerivs	http://creativecommons.org/licenses/by-nc-nd/3.0/	1	2010033100
-7	cc-nc	Creative Commons - No Commercial	http://creativecommons.org/licenses/by-nc/3.0/	1	2013051500
-8	cc-nc-sa	Creative Commons - No Commercial ShareAlike	http://creativecommons.org/licenses/by-nc-sa/3.0/	1	2010033100
-9	cc-sa	Creative Commons - ShareAlike	http://creativecommons.org/licenses/by-sa/3.0/	1	2010033100
+COPY public.m2license (id, shortname, fullname, source, enabled, version, custom, sortorder) FROM stdin;
+1	unknown	Licence not specified		1	2010033100	0	1
+2	allrightsreserved	All rights reserved	https://en.wikipedia.org/wiki/All_rights_reserved	1	2010033100	0	2
+3	public	Public domain	https://en.wikipedia.org/wiki/Public_domain	1	2010033100	0	3
+4	cc	Creative Commons	https://creativecommons.org/licenses/by/3.0/	1	2010033100	0	4
+5	cc-nd	Creative Commons - NoDerivs	https://creativecommons.org/licenses/by-nd/3.0/	1	2010033100	0	5
+6	cc-nc-nd	Creative Commons - No Commercial NoDerivs	https://creativecommons.org/licenses/by-nc-nd/3.0/	1	2010033100	0	6
+7	cc-nc	Creative Commons - No Commercial	https://creativecommons.org/licenses/by-nc/3.0/	1	2010033100	0	7
+8	cc-nc-sa	Creative Commons - No Commercial ShareAlike	https://creativecommons.org/licenses/by-nc-sa/3.0/	1	2010033100	0	8
+9	cc-sa	Creative Commons - ShareAlike	https://creativecommons.org/licenses/by-sa/3.0/	1	2010033100	0	9
 \.
 
 
@@ -35388,6 +37050,232 @@ COPY public.m2logstore_standard_log (id, eventname, component, action, target, o
 1610	\\core\\event\\config_log_created	core	created	config_log	config_log	1919	c	0	1	10	0	3	0	\N	0	{"name":"admin_alert_start","oldvalue":null,"value":"","plugin":"theme_xtec2020"}	1604422472	web	192.168.33.1	\N
 1611	\\core\\event\\config_log_created	core	created	config_log	config_log	1920	c	0	1	10	0	3	0	\N	0	{"name":"admin_alert_end","oldvalue":null,"value":"","plugin":"theme_xtec2020"}	1604422472	web	192.168.33.1	\N
 1612	\\core\\event\\config_log_created	core	created	config_log	config_log	1921	c	0	1	10	0	3	0	\N	0	{"name":"loglifetime","oldvalue":"0","value":"60","plugin":"logstore_standard"}	1604422633	web	192.168.33.1	\N
+1613	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/site:senderrormessage","oldpermission":0,"permission":1}	1637065350	cli	\N	\N
+1614	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/site:viewanonymousevents","oldpermission":0,"permission":1}	1637065350	cli	\N	\N
+1615	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:recommendactivity","oldpermission":0,"permission":1}	1637065351	cli	\N	\N
+1616	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:access","oldpermission":0,"permission":1}	1637065351	cli	\N	\N
+1617	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:access","oldpermission":0,"permission":1}	1637065351	cli	\N	\N
+1618	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:access","oldpermission":0,"permission":1}	1637065351	cli	\N	\N
+1619	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:upload","oldpermission":0,"permission":1}	1637065352	cli	\N	\N
+1620	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:upload","oldpermission":0,"permission":1}	1637065352	cli	\N	\N
+1621	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:upload","oldpermission":0,"permission":1}	1637065352	cli	\N	\N
+1622	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:deleteanycontent","oldpermission":0,"permission":1}	1637065352	cli	\N	\N
+1623	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:deleteanycontent","oldpermission":0,"permission":1}	1637065352	cli	\N	\N
+1624	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:deleteowncontent","oldpermission":0,"permission":1}	1637065353	cli	\N	\N
+1625	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:manageanycontent","oldpermission":0,"permission":1}	1637065353	cli	\N	\N
+1626	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:manageanycontent","oldpermission":0,"permission":1}	1637065353	cli	\N	\N
+1627	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:manageowncontent","oldpermission":0,"permission":1}	1637065353	cli	\N	\N
+1628	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:manageowncontent","oldpermission":0,"permission":1}	1637065354	cli	\N	\N
+1629	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:manageowncontent","oldpermission":0,"permission":1}	1637065354	cli	\N	\N
+1630	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:useeditor","oldpermission":0,"permission":1}	1637065354	cli	\N	\N
+1631	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:useeditor","oldpermission":0,"permission":1}	1637065354	cli	\N	\N
+1632	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:useeditor","oldpermission":0,"permission":1}	1637065355	cli	\N	\N
+1633	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:downloadcontent","oldpermission":0,"permission":1}	1637065355	cli	\N	\N
+1634	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:downloadcontent","oldpermission":0,"permission":1}	1637065355	cli	\N	\N
+1635	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:downloadcontent","oldpermission":0,"permission":1}	1637065355	cli	\N	\N
+1636	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:downloadcoursecontent","oldpermission":0,"permission":1}	1637065356	cli	\N	\N
+1637	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:downloadcoursecontent","oldpermission":0,"permission":1}	1637065356	cli	\N	\N
+1638	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:downloadcoursecontent","oldpermission":0,"permission":1}	1637065356	cli	\N	\N
+1639	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:downloadcoursecontent","oldpermission":0,"permission":1}	1637065356	cli	\N	\N
+1640	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:configuredownloadcontent","oldpermission":0,"permission":1}	1637065357	cli	\N	\N
+1641	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/course:configuredownloadcontent","oldpermission":0,"permission":1}	1637065357	cli	\N	\N
+1642	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:viewunlistedcontent","oldpermission":0,"permission":1}	1637065357	cli	\N	\N
+1643	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"moodle\\/contentbank:viewunlistedcontent","oldpermission":0,"permission":1}	1637065357	cli	\N	\N
+1644	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/assign:viewownsubmissionsummary","oldpermission":0,"permission":1}	1637065372	cli	\N	\N
+1645	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	6	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:view","oldpermission":0,"permission":1}	1637065378	cli	\N	\N
+1646	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:view","oldpermission":0,"permission":1}	1637065378	cli	\N	\N
+1647	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:view","oldpermission":0,"permission":1}	1637065379	cli	\N	\N
+1648	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:view","oldpermission":0,"permission":1}	1637065379	cli	\N	\N
+1649	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:view","oldpermission":0,"permission":1}	1637065379	cli	\N	\N
+1650	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:addinstance","oldpermission":0,"permission":"1"}	1637065379	cli	\N	\N
+1651	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:addinstance","oldpermission":0,"permission":"1"}	1637065380	cli	\N	\N
+1652	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	5	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:submit","oldpermission":0,"permission":1}	1637065380	cli	\N	\N
+1653	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:reviewattempts","oldpermission":0,"permission":"1"}	1637065380	cli	\N	\N
+1654	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/h5pactivity:reviewattempts","oldpermission":0,"permission":"1"}	1637065380	cli	\N	\N
+1655	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/hvp:share","oldpermission":0,"permission":"1"}	1637065382	cli	\N	\N
+1656	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/hvp:share","oldpermission":0,"permission":"1"}	1637065382	cli	\N	\N
+1657	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/lti:addpreconfiguredinstance","oldpermission":0,"permission":"1"}	1637065384	cli	\N	\N
+1658	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/lti:addpreconfiguredinstance","oldpermission":0,"permission":"1"}	1637065384	cli	\N	\N
+1659	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/lti:addmanualinstance","oldpermission":0,"permission":"1"}	1637065385	cli	\N	\N
+1660	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/lti:addmanualinstance","oldpermission":0,"permission":"1"}	1637065385	cli	\N	\N
+1661	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/quiz:viewoverrides","oldpermission":0,"permission":1}	1637065387	cli	\N	\N
+1662	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/quiz:viewoverrides","oldpermission":0,"permission":1}	1637065387	cli	\N	\N
+1663	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"mod\\/quiz:viewoverrides","oldpermission":0,"permission":1}	1637065387	cli	\N	\N
+1664	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"enrol\\/fee:config","oldpermission":0,"permission":1}	1637065399	cli	\N	\N
+1665	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"enrol\\/fee:manage","oldpermission":0,"permission":1}	1637065399	cli	\N	\N
+1666	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"enrol\\/fee:manage","oldpermission":0,"permission":1}	1637065399	cli	\N	\N
+1667	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"enrol\\/fee:unenrol","oldpermission":0,"permission":1}	1637065400	cli	\N	\N
+1668	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"enrol\\/self:enrolself","oldpermission":0,"permission":1}	1637065404	cli	\N	\N
+1669	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"block\\/accessreview:addinstance","oldpermission":0,"permission":"1"}	1637065406	cli	\N	\N
+1670	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"block\\/accessreview:addinstance","oldpermission":0,"permission":"1"}	1637065406	cli	\N	\N
+1671	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"block\\/accessreview:view","oldpermission":0,"permission":1}	1637065406	cli	\N	\N
+1672	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"block\\/accessreview:view","oldpermission":0,"permission":1}	1637065406	cli	\N	\N
+1673	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"report\\/status:view","oldpermission":0,"permission":1}	1637065445	cli	\N	\N
+1674	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"repository\\/contentbank:view","oldpermission":0,"permission":1}	1637065454	cli	\N	\N
+1675	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"repository\\/contentbank:view","oldpermission":0,"permission":1}	1637065454	cli	\N	\N
+1676	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"repository\\/contentbank:view","oldpermission":0,"permission":1}	1637065454	cli	\N	\N
+1677	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"repository\\/contentbank:accesscoursecontent","oldpermission":0,"permission":1}	1637065455	cli	\N	\N
+1678	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"repository\\/contentbank:accesscoursecontent","oldpermission":0,"permission":1}	1637065455	cli	\N	\N
+1679	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"repository\\/contentbank:accesscoursecontent","oldpermission":0,"permission":1}	1637065455	cli	\N	\N
+1680	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"repository\\/contentbank:accesscoursecategorycontent","oldpermission":0,"permission":1}	1637065455	cli	\N	\N
+1681	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"repository\\/contentbank:accesscoursecategorycontent","oldpermission":0,"permission":1}	1637065456	cli	\N	\N
+1682	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	7	u	0	1	10	0	0	0	\N	0	{"capability":"repository\\/contentbank:accessgeneralcontent","oldpermission":0,"permission":1}	1637065456	cli	\N	\N
+1683	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	4	u	0	1	10	0	0	0	\N	0	{"capability":"tool\\/brickfield:viewcoursetools","oldpermission":0,"permission":1}	1637065475	cli	\N	\N
+1684	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"tool\\/brickfield:viewcoursetools","oldpermission":0,"permission":1}	1637065476	cli	\N	\N
+1685	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"tool\\/brickfield:viewcoursetools","oldpermission":0,"permission":1}	1637065476	cli	\N	\N
+1686	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"tool\\/brickfield:viewsystemtools","oldpermission":0,"permission":1}	1637065476	cli	\N	\N
+1687	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"tool\\/customlang:export","oldpermission":0,"permission":1}	1637065477	cli	\N	\N
+1688	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"contenttype\\/h5p:access","oldpermission":0,"permission":1}	1637065495	cli	\N	\N
+1689	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"contenttype\\/h5p:access","oldpermission":0,"permission":1}	1637065495	cli	\N	\N
+1690	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"contenttype\\/h5p:access","oldpermission":0,"permission":1}	1637065496	cli	\N	\N
+1691	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"contenttype\\/h5p:upload","oldpermission":0,"permission":1}	1637065496	cli	\N	\N
+1692	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"contenttype\\/h5p:upload","oldpermission":0,"permission":1}	1637065496	cli	\N	\N
+1693	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"contenttype\\/h5p:upload","oldpermission":0,"permission":1}	1637065496	cli	\N	\N
+1694	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"contenttype\\/h5p:useeditor","oldpermission":0,"permission":1}	1637065497	cli	\N	\N
+1695	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	2	u	0	1	10	0	0	0	\N	0	{"capability":"contenttype\\/h5p:useeditor","oldpermission":0,"permission":1}	1637065497	cli	\N	\N
+1696	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"contenttype\\/h5p:useeditor","oldpermission":0,"permission":1}	1637065497	cli	\N	\N
+1697	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:managetemplates","oldpermission":0,"permission":1}	1637065517	cli	\N	\N
+1698	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:bypassseb","oldpermission":0,"permission":1}	1637065517	cli	\N	\N
+1699	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:bypassseb","oldpermission":0,"permission":1}	1637065518	cli	\N	\N
+1700	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_requiresafeexambrowser","oldpermission":0,"permission":1}	1637065518	cli	\N	\N
+1701	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_requiresafeexambrowser","oldpermission":0,"permission":1}	1637065518	cli	\N	\N
+1702	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_templateid","oldpermission":0,"permission":1}	1637065518	cli	\N	\N
+1703	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_templateid","oldpermission":0,"permission":1}	1637065519	cli	\N	\N
+1704	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_filemanager_sebconfigfile","oldpermission":0,"permission":1}	1637065519	cli	\N	\N
+1705	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_filemanager_sebconfigfile","oldpermission":0,"permission":1}	1637065519	cli	\N	\N
+1706	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showsebdownloadlink","oldpermission":0,"permission":1}	1637065519	cli	\N	\N
+1707	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showsebdownloadlink","oldpermission":0,"permission":1}	1637065520	cli	\N	\N
+1708	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowedbrowserexamkeys","oldpermission":0,"permission":1}	1637065520	cli	\N	\N
+1709	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowedbrowserexamkeys","oldpermission":0,"permission":1}	1637065520	cli	\N	\N
+1710	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_linkquitseb","oldpermission":0,"permission":1}	1637065520	cli	\N	\N
+1711	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_linkquitseb","oldpermission":0,"permission":1}	1637065521	cli	\N	\N
+1712	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_userconfirmquit","oldpermission":0,"permission":1}	1637065521	cli	\N	\N
+1713	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_userconfirmquit","oldpermission":0,"permission":1}	1637065521	cli	\N	\N
+1714	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowuserquitseb","oldpermission":0,"permission":1}	1637065521	cli	\N	\N
+1715	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowuserquitseb","oldpermission":0,"permission":1}	1637065522	cli	\N	\N
+1716	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_quitpassword","oldpermission":0,"permission":1}	1637065522	cli	\N	\N
+1717	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_quitpassword","oldpermission":0,"permission":1}	1637065522	cli	\N	\N
+1718	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowreloadinexam","oldpermission":0,"permission":1}	1637065522	cli	\N	\N
+1719	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowreloadinexam","oldpermission":0,"permission":1}	1637065523	cli	\N	\N
+1720	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showsebtaskbar","oldpermission":0,"permission":1}	1637065523	cli	\N	\N
+1721	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showsebtaskbar","oldpermission":0,"permission":1}	1637065523	cli	\N	\N
+1722	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showreloadbutton","oldpermission":0,"permission":1}	1637065523	cli	\N	\N
+1723	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showreloadbutton","oldpermission":0,"permission":1}	1637065524	cli	\N	\N
+1724	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showtime","oldpermission":0,"permission":1}	1637065524	cli	\N	\N
+1725	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showtime","oldpermission":0,"permission":1}	1637065524	cli	\N	\N
+1726	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showkeyboardlayout","oldpermission":0,"permission":1}	1637065524	cli	\N	\N
+1727	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showkeyboardlayout","oldpermission":0,"permission":1}	1637065525	cli	\N	\N
+1728	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showwificontrol","oldpermission":0,"permission":1}	1637065525	cli	\N	\N
+1729	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_showwificontrol","oldpermission":0,"permission":1}	1637065525	cli	\N	\N
+1730	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_enableaudiocontrol","oldpermission":0,"permission":1}	1637065525	cli	\N	\N
+1731	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_enableaudiocontrol","oldpermission":0,"permission":1}	1637065526	cli	\N	\N
+1732	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_muteonstartup","oldpermission":0,"permission":1}	1637065526	cli	\N	\N
+1733	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_muteonstartup","oldpermission":0,"permission":1}	1637065526	cli	\N	\N
+1734	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowspellchecking","oldpermission":0,"permission":1}	1637065526	cli	\N	\N
+1735	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_allowspellchecking","oldpermission":0,"permission":1}	1637065527	cli	\N	\N
+1736	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_activateurlfiltering","oldpermission":0,"permission":1}	1637065527	cli	\N	\N
+1737	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_activateurlfiltering","oldpermission":0,"permission":1}	1637065527	cli	\N	\N
+1738	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_filterembeddedcontent","oldpermission":0,"permission":1}	1637065527	cli	\N	\N
+1739	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_filterembeddedcontent","oldpermission":0,"permission":1}	1637065528	cli	\N	\N
+1740	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_expressionsallowed","oldpermission":0,"permission":1}	1637065528	cli	\N	\N
+1741	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_expressionsallowed","oldpermission":0,"permission":1}	1637065528	cli	\N	\N
+1742	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_regexallowed","oldpermission":0,"permission":1}	1637065528	cli	\N	\N
+1743	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_regexallowed","oldpermission":0,"permission":1}	1637065529	cli	\N	\N
+1744	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_expressionsblocked","oldpermission":0,"permission":1}	1637065529	cli	\N	\N
+1745	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_expressionsblocked","oldpermission":0,"permission":1}	1637065529	cli	\N	\N
+1746	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	1	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_regexblocked","oldpermission":0,"permission":1}	1637065529	cli	\N	\N
+1747	\\core\\event\\capability_assigned	core	assigned	capability	role_capabilities	3	u	0	1	10	0	0	0	\N	0	{"capability":"quizaccess\\/seb:manage_seb_regexblocked","oldpermission":0,"permission":1}	1637065530	cli	\N	\N
+1748	\\core\\event\\config_log_created	core	created	config_log	config_log	1922	c	0	1	10	0	2	0	\N	0	{"name":"enableuserfeedback","oldvalue":null,"value":"0","plugin":null}	1637065578	cli	\N	\N
+1749	\\core\\event\\config_log_created	core	created	config_log	config_log	1923	c	0	1	10	0	2	0	\N	0	{"name":"userfeedback_nextreminder","oldvalue":null,"value":"1","plugin":null}	1637065578	cli	\N	\N
+1750	\\core\\event\\config_log_created	core	created	config_log	config_log	1924	c	0	1	10	0	2	0	\N	0	{"name":"userfeedback_remindafter","oldvalue":null,"value":"90","plugin":null}	1637065578	cli	\N	\N
+1751	\\core\\event\\config_log_created	core	created	config_log	config_log	1925	c	0	1	10	0	2	0	\N	0	{"name":"enableaccessibilitytools","oldvalue":null,"value":"1","plugin":null}	1637065578	cli	\N	\N
+1752	\\core\\event\\config_log_created	core	created	config_log	config_log	1926	c	0	1	10	0	2	0	\N	0	{"name":"defaultpreference_core_contentbank_visibility","oldvalue":null,"value":"1","plugin":null}	1637065578	cli	\N	\N
+1753	\\core\\event\\config_log_created	core	created	config_log	config_log	1927	c	0	1	10	0	2	0	\N	0	{"name":"automaticdataexportapproval","oldvalue":null,"value":"0","plugin":"tool_dataprivacy"}	1637065578	cli	\N	\N
+1754	\\core\\event\\config_log_created	core	created	config_log	config_log	1928	c	0	1	10	0	2	0	\N	0	{"name":"automaticdatadeletionapproval","oldvalue":null,"value":"0","plugin":"tool_dataprivacy"}	1637065578	cli	\N	\N
+1755	\\core\\event\\config_log_created	core	created	config_log	config_log	1929	c	0	1	10	0	2	0	\N	0	{"name":"downloadcontentsitedefault","oldvalue":null,"value":"0","plugin":"moodlecourse"}	1637065579	cli	\N	\N
+1756	\\core\\event\\config_log_created	core	created	config_log	config_log	1930	c	0	1	10	0	2	0	\N	0	{"name":"showactivitydates","oldvalue":null,"value":"1","plugin":"moodlecourse"}	1637065579	cli	\N	\N
+1757	\\core\\event\\config_log_created	core	created	config_log	config_log	1931	c	0	1	10	0	2	0	\N	0	{"name":"showcompletionconditions","oldvalue":null,"value":"1","plugin":"moodlecourse"}	1637065579	cli	\N	\N
+1758	\\core\\event\\config_log_created	core	created	config_log	config_log	1932	c	0	1	10	0	2	0	\N	0	{"name":"downloadcoursecontentallowed","oldvalue":null,"value":"0","plugin":null}	1637065579	cli	\N	\N
+1759	\\core\\event\\config_log_created	core	created	config_log	config_log	1933	c	0	1	10	0	2	0	\N	0	{"name":"maxsizeperdownloadcoursefile","oldvalue":null,"value":"52428800","plugin":null}	1637065579	cli	\N	\N
+1760	\\core\\event\\config_log_created	core	created	config_log	config_log	1934	c	0	1	10	0	2	0	\N	0	{"name":"activitychoosertabmode","oldvalue":null,"value":"0","plugin":null}	1637065579	cli	\N	\N
+1761	\\core\\event\\config_log_created	core	created	config_log	config_log	1935	c	0	1	10	0	2	0	\N	0	{"name":"activitychooseractivefooter","oldvalue":null,"value":"hidden","plugin":null}	1637065579	cli	\N	\N
+1762	\\core\\event\\config_log_created	core	created	config_log	config_log	1936	c	0	1	10	0	2	0	\N	0	{"name":"backup_general_contentbankcontent","oldvalue":null,"value":"1","plugin":"backup"}	1637065579	cli	\N	\N
+1763	\\core\\event\\config_log_created	core	created	config_log	config_log	1937	c	0	1	10	0	2	0	\N	0	{"name":"backup_general_contentbankcontent_locked","oldvalue":null,"value":"","plugin":"backup"}	1637065579	cli	\N	\N
+1764	\\core\\event\\config_log_created	core	created	config_log	config_log	1938	c	0	1	10	0	2	0	\N	0	{"name":"backup_general_legacyfiles","oldvalue":null,"value":"1","plugin":"backup"}	1637065579	cli	\N	\N
+1765	\\core\\event\\config_log_created	core	created	config_log	config_log	1939	c	0	1	10	0	2	0	\N	0	{"name":"backup_general_legacyfiles_locked","oldvalue":null,"value":"","plugin":"backup"}	1637065579	cli	\N	\N
+1766	\\core\\event\\config_log_created	core	created	config_log	config_log	1940	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_permissions","oldvalue":null,"value":"0","plugin":"backup"}	1637065580	cli	\N	\N
+1767	\\core\\event\\config_log_created	core	created	config_log	config_log	1941	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_permissions_locked","oldvalue":null,"value":"","plugin":"backup"}	1637065580	cli	\N	\N
+1768	\\core\\event\\config_log_created	core	created	config_log	config_log	1942	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_contentbankcontent","oldvalue":null,"value":"1","plugin":"backup"}	1637065580	cli	\N	\N
+1769	\\core\\event\\config_log_created	core	created	config_log	config_log	1943	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_contentbankcontent_locked","oldvalue":null,"value":"","plugin":"backup"}	1637065580	cli	\N	\N
+1770	\\core\\event\\config_log_created	core	created	config_log	config_log	1944	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_legacyfiles","oldvalue":null,"value":"1","plugin":"backup"}	1637065580	cli	\N	\N
+1771	\\core\\event\\config_log_created	core	created	config_log	config_log	1945	c	0	1	10	0	2	0	\N	0	{"name":"backup_import_legacyfiles_locked","oldvalue":null,"value":"","plugin":"backup"}	1637065580	cli	\N	\N
+1772	\\core\\event\\config_log_created	core	created	config_log	config_log	1946	c	0	1	10	0	2	0	\N	0	{"name":"backup_auto_contentbankcontent","oldvalue":null,"value":"1","plugin":"backup"}	1637065580	cli	\N	\N
+1773	\\core\\event\\config_log_created	core	created	config_log	config_log	1947	c	0	1	10	0	2	0	\N	0	{"name":"backup_auto_legacyfiles","oldvalue":null,"value":"1","plugin":"backup"}	1637065580	cli	\N	\N
+1774	\\core\\event\\config_log_created	core	created	config_log	config_log	1948	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_permissions","oldvalue":null,"value":"1","plugin":"restore"}	1637065580	cli	\N	\N
+1775	\\core\\event\\config_log_created	core	created	config_log	config_log	1949	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_permissions_locked","oldvalue":null,"value":"","plugin":"restore"}	1637065580	cli	\N	\N
+1776	\\core\\event\\config_log_created	core	created	config_log	config_log	1950	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_contentbankcontent","oldvalue":null,"value":"1","plugin":"restore"}	1637065580	cli	\N	\N
+1777	\\core\\event\\config_log_created	core	created	config_log	config_log	1951	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_contentbankcontent_locked","oldvalue":null,"value":"","plugin":"restore"}	1637065580	cli	\N	\N
+1778	\\core\\event\\config_log_created	core	created	config_log	config_log	1952	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_legacyfiles","oldvalue":null,"value":"1","plugin":"restore"}	1637065580	cli	\N	\N
+1779	\\core\\event\\config_log_created	core	created	config_log	config_log	1953	c	0	1	10	0	2	0	\N	0	{"name":"restore_general_legacyfiles_locked","oldvalue":null,"value":"","plugin":"restore"}	1637065580	cli	\N	\N
+1780	\\core\\event\\config_log_created	core	created	config_log	config_log	1954	c	0	1	10	0	2	0	\N	0	{"name":"calclifetime","oldvalue":null,"value":"35","plugin":"analytics"}	1637065581	cli	\N	\N
+1781	\\core\\event\\config_log_created	core	created	config_log	config_log	1955	c	0	1	10	0	2	0	\N	0	{"name":"h5plibraryhandler","oldvalue":null,"value":"h5plib_v124","plugin":null}	1637065582	cli	\N	\N
+1782	\\core\\event\\config_log_created	core	created	config_log	config_log	1956	c	0	1	10	0	2	0	\N	0	{"name":"rememberuserlicensepref","oldvalue":null,"value":"1","plugin":null}	1637065582	cli	\N	\N
+1783	\\core\\event\\config_log_created	core	created	config_log	config_log	1957	c	0	1	10	0	2	0	\N	0	{"name":"autolangusercreation","oldvalue":null,"value":"1","plugin":null}	1637065582	cli	\N	\N
+1784	\\core\\event\\config_log_created	core	created	config_log	config_log	1958	c	0	1	10	0	2	0	\N	0	{"name":"autologin","oldvalue":null,"value":"0","plugin":"auth_saml2"}	1637065583	cli	\N	\N
+1785	\\core\\event\\config_log_created	core	created	config_log	config_log	1959	c	0	1	10	0	2	0	\N	0	{"name":"autologincookie","oldvalue":null,"value":"","plugin":"auth_saml2"}	1637065583	cli	\N	\N
+1786	\\core\\event\\config_log_created	core	created	config_log	config_log	1960	c	0	1	10	0	2	0	\N	0	{"name":"whattoshow","oldvalue":null,"value":"showboth","plugin":"block_accessreview"}	1637065585	cli	\N	\N
+1787	\\core\\event\\config_log_created	core	created	config_log	config_log	1961	c	0	1	10	0	2	0	\N	0	{"name":"errordisplay","oldvalue":null,"value":"showint","plugin":"block_accessreview"}	1637065585	cli	\N	\N
+1788	\\core\\event\\config_log_created	core	created	config_log	config_log	1962	c	0	1	10	0	2	0	\N	0	{"name":"toolpage","oldvalue":null,"value":"errors","plugin":"block_accessreview"}	1637065585	cli	\N	\N
+1789	\\core\\event\\config_log_created	core	created	config_log	config_log	1963	c	0	1	10	0	2	0	\N	0	{"name":"showsectionname","oldvalue":null,"value":"0","plugin":"block_section_links"}	1637065586	cli	\N	\N
+1790	\\core\\event\\config_log_created	core	created	config_log	config_log	1964	c	0	1	10	0	2	0	\N	0	{"name":"searchenginequeryonly","oldvalue":null,"value":"","plugin":null}	1637065587	cli	\N	\N
+1791	\\core\\event\\config_log_created	core	created	config_log	config_log	1965	c	0	1	10	0	2	0	\N	0	{"name":"searchbannerenable","oldvalue":null,"value":"0","plugin":null}	1637065587	cli	\N	\N
+1792	\\core\\event\\config_log_created	core	created	config_log	config_log	1966	c	0	1	10	0	2	0	\N	0	{"name":"searchbanner","oldvalue":null,"value":"","plugin":null}	1637065587	cli	\N	\N
+1793	\\core\\event\\config_log_created	core	created	config_log	config_log	1967	c	0	1	10	0	2	0	\N	0	{"name":"notifyemail","oldvalue":null,"value":"","plugin":"antivirus"}	1637065588	cli	\N	\N
+1794	\\core\\event\\config_log_created	core	created	config_log	config_log	1968	c	0	1	10	0	2	0	\N	0	{"name":"enablequarantine","oldvalue":null,"value":"0","plugin":"antivirus"}	1637065588	cli	\N	\N
+1795	\\core\\event\\config_log_created	core	created	config_log	config_log	1969	c	0	1	10	0	2	0	\N	0	{"name":"quarantinetime","oldvalue":null,"value":"2419200","plugin":"antivirus"}	1637065588	cli	\N	\N
+1796	\\core\\event\\config_log_created	core	created	config_log	config_log	1970	c	0	1	10	0	2	0	\N	0	{"name":"tcpsockethost","oldvalue":null,"value":"","plugin":"antivirus_clamav"}	1637065588	cli	\N	\N
+1797	\\core\\event\\config_log_created	core	created	config_log	config_log	1971	c	0	1	10	0	2	0	\N	0	{"name":"tcpsocketport","oldvalue":null,"value":"3310","plugin":"antivirus_clamav"}	1637065588	cli	\N	\N
+1798	\\core\\event\\config_log_created	core	created	config_log	config_log	1972	c	0	1	10	0	2	0	\N	0	{"name":"tries","oldvalue":null,"value":"1","plugin":"antivirus_clamav"}	1637065588	cli	\N	\N
+1799	\\core\\event\\config_log_created	core	created	config_log	config_log	1973	c	0	1	10	0	2	0	\N	0	{"name":"advdebug","oldvalue":null,"value":"0","plugin":"local_clickedu"}	1637065588	cli	\N	\N
+1800	\\core\\event\\config_log_created	core	created	config_log	config_log	1974	c	0	1	10	0	2	0	\N	0	{"name":"analysistype","oldvalue":null,"value":"0","plugin":"tool_brickfield"}	1637065590	cli	\N	\N
+1801	\\core\\event\\config_log_created	core	created	config_log	config_log	1975	c	0	1	10	0	2	0	\N	0	{"name":"deletehistoricaldata","oldvalue":null,"value":"1","plugin":"tool_brickfield"}	1637065590	cli	\N	\N
+1802	\\core\\event\\config_log_created	core	created	config_log	config_log	1976	c	0	1	10	0	2	0	\N	0	{"name":"batch","oldvalue":null,"value":"1000","plugin":"tool_brickfield"}	1637065590	cli	\N	\N
+1803	\\core\\event\\config_log_created	core	created	config_log	config_log	1977	c	0	1	10	0	2	0	\N	0	{"name":"perpage","oldvalue":null,"value":"50","plugin":"tool_brickfield"}	1637065590	cli	\N	\N
+1804	\\core\\event\\config_log_created	core	created	config_log	config_log	1978	c	0	1	10	0	2	0	\N	0	{"name":"expiredaction","oldvalue":null,"value":"3","plugin":"enrol_fee"}	1637065593	cli	\N	\N
+1805	\\core\\event\\config_log_created	core	created	config_log	config_log	1979	c	0	1	10	0	2	0	\N	0	{"name":"status","oldvalue":null,"value":"1","plugin":"enrol_fee"}	1637065593	cli	\N	\N
+1806	\\core\\event\\config_log_created	core	created	config_log	config_log	1980	c	0	1	10	0	2	0	\N	0	{"name":"cost","oldvalue":null,"value":"0","plugin":"enrol_fee"}	1637065593	cli	\N	\N
+1807	\\core\\event\\config_log_created	core	created	config_log	config_log	1981	c	0	1	10	0	2	0	\N	0	{"name":"currency","oldvalue":null,"value":"USD","plugin":"enrol_fee"}	1637065593	cli	\N	\N
+1808	\\core\\event\\config_log_created	core	created	config_log	config_log	1982	c	0	1	10	0	2	0	\N	0	{"name":"roleid","oldvalue":null,"value":"5","plugin":"enrol_fee"}	1637065593	cli	\N	\N
+1809	\\core\\event\\config_log_created	core	created	config_log	config_log	1983	c	0	1	10	0	2	0	\N	0	{"name":"enrolperiod","oldvalue":null,"value":"0","plugin":"enrol_fee"}	1637065593	cli	\N	\N
+1810	\\core\\event\\config_log_created	core	created	config_log	config_log	1984	c	0	1	10	0	2	0	\N	0	{"name":"quizpassword","oldvalue":null,"value":"","plugin":"quiz"}	1637065598	cli	\N	\N
+1811	\\core\\event\\config_log_created	core	created	config_log	config_log	1985	c	0	1	10	0	2	0	\N	0	{"name":"quizpassword_adv","oldvalue":null,"value":"","plugin":"quiz"}	1637065598	cli	\N	\N
+1812	\\core\\event\\config_log_created	core	created	config_log	config_log	1986	c	0	1	10	0	2	0	\N	0	{"name":"quizpassword_required","oldvalue":null,"value":"","plugin":"quiz"}	1637065598	cli	\N	\N
+1813	\\core\\event\\config_log_created	core	created	config_log	config_log	1987	c	0	1	10	0	2	0	\N	0	{"name":"autoreconfigureseb","oldvalue":null,"value":"1","plugin":"quizaccess_seb"}	1637065598	cli	\N	\N
+1814	\\core\\event\\config_log_created	core	created	config_log	config_log	1988	c	0	1	10	0	2	0	\N	0	{"name":"showseblinks","oldvalue":null,"value":"seb,http","plugin":"quizaccess_seb"}	1637065598	cli	\N	\N
+1815	\\core\\event\\config_log_created	core	created	config_log	config_log	1989	c	0	1	10	0	2	0	\N	0	{"name":"downloadlink","oldvalue":null,"value":"https:\\/\\/safeexambrowser.org\\/download_en.html","plugin":"quizaccess_seb"}	1637065598	cli	\N	\N
+1816	\\core\\event\\config_log_created	core	created	config_log	config_log	1990	c	0	1	10	0	2	0	\N	0	{"name":"quizpasswordrequired","oldvalue":null,"value":"0","plugin":"quizaccess_seb"}	1637065598	cli	\N	\N
+1817	\\core\\event\\config_log_created	core	created	config_log	config_log	1991	c	0	1	10	0	2	0	\N	0	{"name":"displayblocksbeforestart","oldvalue":null,"value":"0","plugin":"quizaccess_seb"}	1637065598	cli	\N	\N
+1818	\\core\\event\\config_log_created	core	created	config_log	config_log	1992	c	0	1	10	0	2	0	\N	0	{"name":"displayblockswhenfinished","oldvalue":null,"value":"1","plugin":"quizaccess_seb"}	1637065598	cli	\N	\N
+1819	\\core\\event\\config_log_created	core	created	config_log	config_log	1993	c	0	1	10	0	2	0	\N	0	{"name":"surcharge","oldvalue":null,"value":"0","plugin":"paygw_paypal"}	1637065600	cli	\N	\N
+1820	\\core\\event\\config_log_created	core	created	config_log	config_log	1994	c	0	1	10	0	2	0	\N	0	{"name":"filtercodes_compatibility","oldvalue":null,"value":"0","plugin":"qtype_wq"}	1637065601	cli	\N	\N
+1821	\\core\\event\\config_log_created	core	created	config_log	config_log	1995	c	0	1	10	0	2	0	\N	0	{"name":"debug_mode_enabled","oldvalue":null,"value":"0","plugin":"qtype_wq"}	1637065601	cli	\N	\N
+1822	\\core\\event\\config_log_created	core	created	config_log	config_log	1996	c	0	1	10	0	2	0	\N	0	{"name":"passwordpolicycheckonlogin","oldvalue":null,"value":"0","plugin":null}	1637065601	cli	\N	\N
+1823	\\core\\event\\config_log_created	core	created	config_log	config_log	1997	c	0	1	10	0	2	0	\N	0	{"name":"referrerpolicy","oldvalue":null,"value":"default","plugin":null}	1637065601	cli	\N	\N
+1824	\\core\\event\\config_log_created	core	created	config_log	config_log	1998	c	0	1	10	0	2	0	\N	0	{"name":"langmenuinsecurelayout","oldvalue":null,"value":"0","plugin":null}	1637065601	cli	\N	\N
+1825	\\core\\event\\config_log_created	core	created	config_log	config_log	1999	c	0	1	10	0	2	0	\N	0	{"name":"logininfoinsecurelayout","oldvalue":null,"value":"0","plugin":null}	1637065601	cli	\N	\N
+1826	\\core\\event\\config_log_created	core	created	config_log	config_log	2000	c	0	1	10	0	2	0	\N	0	{"name":"xtec_type","oldvalue":null,"value":"eix","plugin":"theme_xtec2020"}	1637065602	cli	\N	\N
+1827	\\core\\event\\config_log_created	core	created	config_log	config_log	2001	c	0	1	10	0	2	0	\N	0	{"name":"pathtopdftoppm","oldvalue":null,"value":"","plugin":null}	1637065602	cli	\N	\N
+1828	\\core\\event\\config_log_created	core	created	config_log	config_log	2002	c	0	1	10	0	2	0	\N	0	{"name":"cron_enabled","oldvalue":null,"value":"1","plugin":null}	1637065603	cli	\N	\N
+1829	\\core\\event\\config_log_created	core	created	config_log	config_log	2003	c	0	1	10	0	2	0	\N	0	{"name":"divertallemailsto","oldvalue":null,"value":"","plugin":null}	1637065603	cli	\N	\N
+1830	\\core\\event\\config_log_created	core	created	config_log	config_log	2004	c	0	1	10	0	2	0	\N	0	{"name":"divertallemailsexcept","oldvalue":null,"value":"","plugin":null}	1637065603	cli	\N	\N
+1831	\\core\\event\\config_log_created	core	created	config_log	config_log	2005	c	0	1	10	0	2	0	\N	0	{"name":"emaildkimselector","oldvalue":null,"value":"","plugin":null}	1637065603	cli	\N	\N
+1832	\\core\\event\\config_log_created	core	created	config_log	config_log	2006	c	0	1	10	0	2	0	\N	0	{"name":"emailheaders","oldvalue":null,"value":"","plugin":null}	1637065603	cli	\N	\N
+1833	\\core\\event\\config_log_created	core	created	config_log	config_log	2007	c	0	1	10	0	2	0	\N	0	{"name":"qrcodetype","oldvalue":null,"value":"2","plugin":"tool_mobile"}	1637065603	cli	\N	\N
+1834	\\core\\event\\config_log_created	core	created	config_log	config_log	2008	c	0	1	10	0	2	0	\N	0	{"name":"filetypeexclusionlist","oldvalue":null,"value":"","plugin":"tool_mobile"}	1637065604	cli	\N	\N
+1835	\\core\\event\\config_log_created	core	created	config_log	config_log	2009	c	0	1	10	0	2	0	\N	0	{"name":"debugsqltrace","oldvalue":null,"value":"0","plugin":null}	1637065604	cli	\N	\N
+1836	\\core\\event\\config_log_created	core	created	config_log	config_log	2010	c	0	1	10	0	2	0	\N	0	{"name":"enablemoodlenet","oldvalue":null,"value":"0","plugin":"tool_moodlenet"}	1637065604	cli	\N	\N
+1837	\\core\\event\\config_log_created	core	created	config_log	config_log	2011	c	0	1	10	0	2	0	\N	0	{"name":"defaultmoodlenetname","oldvalue":null,"value":"MoodleNet Central","plugin":"tool_moodlenet"}	1637065604	cli	\N	\N
+1838	\\core\\event\\config_log_created	core	created	config_log	config_log	2012	c	0	1	10	0	2	0	\N	0	{"name":"defaultmoodlenet","oldvalue":null,"value":"https:\\/\\/moodle.net","plugin":"tool_moodlenet"}	1637065604	cli	\N	\N
 \.
 
 
@@ -35451,7 +37339,7 @@ COPY public.m2lti_types_config (id, typeid, name, value) FROM stdin;
 -- Data for Name: m2ltiservice_gradebookservices; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2ltiservice_gradebookservices (id, gradeitemid, courseid, toolproxyid, typeid, baseurl, ltilinkid, tag) FROM stdin;
+COPY public.m2ltiservice_gradebookservices (id, gradeitemid, courseid, toolproxyid, typeid, baseurl, ltilinkid, tag, resourceid) FROM stdin;
 \.
 
 
@@ -35594,6 +37482,8 @@ COPY public.m2message_providers (id, name, component, capability) FROM stdin;
 40	confirmation	mod_hvp	mod/hvp:emailconfirmsubmission
 41	message	mod_questionnaire	\N
 42	notification	mod_questionnaire	\N
+43	coursecompleted	moodle	\N
+44	infected	moodle	moodle/site:config
 \.
 
 
@@ -35749,7 +37639,6 @@ COPY public.m2mnet_rpc (id, functionname, xmlrpcpath, plugintype, pluginname, en
 2	keepalive_server	auth/mnet/auth.php/keepalive_server	auth	mnet	1	Receives an array of usernames from a remote machine and prods their\nsessions to keep them alive	a:2:{s:10:"parameters";a:1:{i:0;a:3:{s:4:"name";s:5:"array";s:4:"type";s:5:"array";s:11:"description";s:21:"An array of usernames";}}s:6:"return";a:2:{s:4:"type";s:6:"string";s:11:"description";s:28:""All ok" or an error message";}}	auth.php	auth_plugin_mnet	0
 3	kill_children	auth/mnet/auth.php/kill_children	auth	mnet	1	The IdP uses this function to kill child sessions on other hosts	a:2:{s:10:"parameters";a:2:{i:0;a:3:{s:4:"name";s:8:"username";s:4:"type";s:6:"string";s:11:"description";s:28:"Username for session to kill";}i:1;a:3:{s:4:"name";s:9:"useragent";s:4:"type";s:6:"string";s:11:"description";s:35:"SHA1 hash of user agent to look for";}}s:6:"return";a:2:{s:4:"type";s:6:"string";s:11:"description";s:39:"A plaintext report of what has happened";}}	auth.php	auth_plugin_mnet	0
 4	refresh_log	auth/mnet/auth.php/refresh_log	auth	mnet	1	Receives an array of log entries from an SP and adds them to the mnet_log\ntable	a:2:{s:10:"parameters";a:1:{i:0;a:3:{s:4:"name";s:5:"array";s:4:"type";s:5:"array";s:11:"description";s:21:"An array of usernames";}}s:6:"return";a:2:{s:4:"type";s:6:"string";s:11:"description";s:28:""All ok" or an error message";}}	auth.php	auth_plugin_mnet	0
-5	fetch_user_image	auth/mnet/auth.php/fetch_user_image	auth	mnet	1	Returns the user's profile image info\nIf the user exists and has a profile picture, the returned array will contain keys:\nf1          - the content of the default 100x100px image\nf1_mimetype - the mimetype of the f1 file\nf2          - the content of the 35x35px variant of the image\nf2_mimetype - the mimetype of the f2 file\nThe mimetype information was added in Moodle 2.0. In Moodle 1.x, images are always jpegs.	a:2:{s:10:"parameters";a:1:{i:0;a:3:{s:4:"name";s:8:"username";s:4:"type";s:3:"int";s:11:"description";s:18:"The id of the user";}}s:6:"return";a:2:{s:4:"type";s:11:"false|array";s:11:"description";s:84:"false if user not found, empty array if no picture exists, array with data otherwise";}}	auth.php	auth_plugin_mnet	0
 6	fetch_theme_info	auth/mnet/auth.php/fetch_theme_info	auth	mnet	1	Returns the theme information and logo url as strings.	a:2:{s:10:"parameters";a:0:{}s:6:"return";a:2:{s:4:"type";s:6:"string";s:11:"description";s:14:"The theme info";}}	auth.php	auth_plugin_mnet	0
 7	update_enrolments	auth/mnet/auth.php/update_enrolments	auth	mnet	1	Invoke this function _on_ the IDP to update it with enrolment info local to\nthe SP right after calling user_authorise()\nNormally called by the SP after calling user_authorise()	a:2:{s:10:"parameters";a:2:{i:0;a:3:{s:4:"name";s:8:"username";s:4:"type";s:6:"string";s:11:"description";s:12:"The username";}i:1;a:3:{s:4:"name";s:7:"courses";s:4:"type";s:5:"array";s:11:"description";s:75:"Assoc array of courses following the structure of mnetservice_enrol_courses";}}s:6:"return";a:2:{s:4:"type";s:4:"bool";s:11:"description";s:0:"";}}	auth.php	auth_plugin_mnet	0
 8	keepalive_client	auth/mnet/auth.php/keepalive_client	auth	mnet	1	Poll the IdP server to let it know that a user it has authenticated is still\nonline	a:2:{s:10:"parameters";a:0:{}s:6:"return";a:2:{s:4:"type";s:4:"void";s:11:"description";s:0:"";}}	auth.php	auth_plugin_mnet	0
@@ -35758,6 +37647,7 @@ COPY public.m2mnet_rpc (id, functionname, xmlrpcpath, plugintype, pluginname, en
 11	user_enrolments	enrol/mnet/enrol.php/user_enrolments	enrol	mnet	1	This method has never been implemented in Moodle MNet API	a:2:{s:10:"parameters";a:0:{}s:6:"return";a:2:{s:4:"type";s:5:"array";s:11:"description";s:11:"empty array";}}	enrol.php	enrol_mnet_mnetservice_enrol	0
 12	enrol_user	enrol/mnet/enrol.php/enrol_user	enrol	mnet	1	Enrol remote user to our course\nIf we do not have local record for the remote user in our database,\nit gets created here.	a:2:{s:10:"parameters";a:2:{i:0;a:3:{s:4:"name";s:8:"userdata";s:4:"type";s:5:"array";s:11:"description";s:43:"user details {@see mnet_fields_to_import()}";}i:1;a:3:{s:4:"name";s:8:"courseid";s:4:"type";s:3:"int";s:11:"description";s:19:"our local course id";}}s:6:"return";a:2:{s:4:"type";s:4:"bool";s:11:"description";s:69:"true if the enrolment has been successful, throws exception otherwise";}}	enrol.php	enrol_mnet_mnetservice_enrol	0
 13	unenrol_user	enrol/mnet/enrol.php/unenrol_user	enrol	mnet	1	Unenrol remote user from our course\nOnly users enrolled via enrol_mnet plugin can be unenrolled remotely. If the\nremote user is enrolled into the local course via some other enrol plugin\n(enrol_manual for example), the remote host can't touch such enrolment. Please\ndo not report this behaviour as bug, it is a feature ;-)	a:2:{s:10:"parameters";a:2:{i:0;a:3:{s:4:"name";s:8:"username";s:4:"type";s:6:"string";s:11:"description";s:18:"of the remote user";}i:1;a:3:{s:4:"name";s:8:"courseid";s:4:"type";s:3:"int";s:11:"description";s:19:"of our local course";}}s:6:"return";a:2:{s:4:"type";s:4:"bool";s:11:"description";s:71:"true if the unenrolment has been successful, throws exception otherwise";}}	enrol.php	enrol_mnet_mnetservice_enrol	0
+5	fetch_user_image	auth/mnet/auth.php/fetch_user_image	auth	mnet	1	Returns the user's profile image info\nIf the user exists and has a profile picture, the returned array will contain keys:\nf1          - the content of the default 100x100px image\nf1_mimetype - the mimetype of the f1 file\nf2          - the content of the 35x35px variant of the image\nf2_mimetype - the mimetype of the f2 file\nThe mimetype information was added in Moodle 2.0. In Moodle 1.x, images are always jpegs.	a:2:{s:10:"parameters";a:1:{i:0;a:3:{s:4:"name";s:8:"username";s:4:"type";s:3:"int";s:11:"description";s:18:"The id of the user";}}s:6:"return";a:2:{s:4:"type";s:11:"false|array";s:11:"description";s:84:"false if user not found, empty array if no picture exists, array with data otherwise";}}	auth.php	auth_plugin_mnet	0
 14	course_enrolments	enrol/mnet/enrol.php/course_enrolments	enrol	mnet	1	Returns a list of users from the client server who are enrolled in our course\nSuitable instance of enrol_mnet must be created in the course. This method will not\nreturn any information about the enrolments in courses that are not available for\nremote enrolment, even if their users are enrolled into them via other plugin\n(note the difference from {@link self::user_enrolments()}).\nThis method will return enrolment information for users from hosts regardless\nthe enrolment plugin. It does not matter if the user was enrolled remotely by\ntheir admin or locally. Once the course is available for remote enrolments, we\nwill tell them everything about their users.\nIn Moodle 1.x the returned array used to be indexed by username. The side effect\nof MDL-19219 fix is that we do not need to use such index and therefore we can\nreturn all enrolment records. MNet clients 1.x will only use the last record for\nthe student, if she is enrolled via multiple plugins.	a:2:{s:10:"parameters";a:2:{i:0;a:3:{s:4:"name";s:8:"courseid";s:4:"type";s:3:"int";s:11:"description";s:16:"ID of our course";}i:1;a:3:{s:4:"name";s:5:"roles";s:4:"type";s:12:"string|array";s:11:"description";s:58:"comma separated list of role shortnames (or array of them)";}}s:6:"return";a:2:{s:4:"type";s:5:"array";s:11:"description";s:0:"";}}	enrol.php	enrol_mnet_mnetservice_enrol	0
 15	fetch_file	portfolio/mahara/lib.php/fetch_file	portfolio	mahara	1	xmlrpc (mnet) function to get the file.\nreads in the file and returns it base_64 encoded\nso that it can be enrypted by mnet.	a:2:{s:10:"parameters";a:1:{i:0;a:3:{s:4:"name";s:5:"token";s:4:"type";s:6:"string";s:11:"description";s:56:"the token recieved previously during send_content_intent";}}s:6:"return";a:2:{s:4:"type";s:4:"void";s:11:"description";s:0:"";}}	lib.php	portfolio_plugin_mahara	1
 \.
@@ -35866,6 +37756,7 @@ COPY public.m2modules (id, name, cron, lastcron, search, visible) FROM stdin;
 30	qv	0	0		1
 31	rcontent	0	0		1
 4	chat	0	0		0
+32	h5pactivity	0	0		1
 \.
 
 
@@ -35908,7 +37799,15 @@ COPY public.m2oauth2_endpoint (id, timecreated, timemodified, usermodified, name
 -- Data for Name: m2oauth2_issuer; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2oauth2_issuer (id, timecreated, timemodified, usermodified, name, image, baseurl, clientid, clientsecret, loginscopes, loginscopesoffline, loginparams, loginparamsoffline, alloweddomains, scopessupported, enabled, showonloginpage, basicauth, sortorder, requireconfirmation) FROM stdin;
+COPY public.m2oauth2_issuer (id, timecreated, timemodified, usermodified, name, image, baseurl, clientid, clientsecret, loginscopes, loginscopesoffline, loginparams, loginparamsoffline, alloweddomains, scopessupported, enabled, showonloginpage, basicauth, sortorder, requireconfirmation, servicetype, loginpagename) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2oauth2_refresh_token; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2oauth2_refresh_token (id, timecreated, timemodified, userid, issuerid, token, scopehash) FROM stdin;
 \.
 
 
@@ -35997,6 +37896,38 @@ COPY public.m2oauth_user_auth_scopes (id, client_id, user_id, scope) FROM stdin;
 --
 
 COPY public.m2page (id, course, name, intro, introformat, content, contentformat, legacyfiles, legacyfileslast, display, displayoptions, revision, timemodified) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2paygw_paypal; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2paygw_paypal (id, paymentid, pp_orderid) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2payment_accounts; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2payment_accounts (id, name, idnumber, contextid, enabled, archived, timecreated, timemodified) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2payment_gateways; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2payment_gateways (id, accountid, gateway, enabled, config, timecreated, timemodified) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2payments; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2payments (id, component, paymentarea, itemid, userid, amount, currency, accountid, gateway, timecreated, timemodified) FROM stdin;
 \.
 
 
@@ -36116,7 +38047,7 @@ COPY public.m2qtype_ddmarker_drops (id, questionid, no, shape, coords, choice) F
 -- Data for Name: m2qtype_essay_options; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2qtype_essay_options (id, questionid, responseformat, responserequired, responsefieldlines, attachments, attachmentsrequired, graderinfo, graderinfoformat, responsetemplate, responsetemplateformat, filetypeslist) FROM stdin;
+COPY public.m2qtype_essay_options (id, questionid, responseformat, responserequired, responsefieldlines, attachments, attachmentsrequired, graderinfo, graderinfoformat, responsetemplate, responsetemplateformat, filetypeslist, maxbytes, minwordlimit, maxwordlimit) FROM stdin;
 \.
 
 
@@ -36148,7 +38079,7 @@ COPY public.m2qtype_match_subquestions (id, questionid, questiontext, questionte
 -- Data for Name: m2qtype_multichoice_options; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2qtype_multichoice_options (id, questionid, layout, single, shuffleanswers, correctfeedback, correctfeedbackformat, partiallycorrectfeedback, partiallycorrectfeedbackformat, incorrectfeedback, incorrectfeedbackformat, answernumbering, shownumcorrect) FROM stdin;
+COPY public.m2qtype_multichoice_options (id, questionid, layout, single, shuffleanswers, correctfeedback, correctfeedbackformat, partiallycorrectfeedback, partiallycorrectfeedbackformat, incorrectfeedback, incorrectfeedbackformat, answernumbering, shownumcorrect, showstandardinstruction) FROM stdin;
 \.
 
 
@@ -36380,7 +38311,7 @@ COPY public.m2question_usages (id, contextid, component, preferredbehaviour) FRO
 -- Data for Name: m2questionnaire; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2questionnaire (id, course, name, intro, introformat, qtype, respondenttype, resp_eligible, resp_view, notifications, opendate, closedate, resume, navigate, grade, sid, timemodified, completionsubmit, autonum) FROM stdin;
+COPY public.m2questionnaire (id, course, name, intro, introformat, qtype, respondenttype, resp_eligible, resp_view, notifications, opendate, closedate, resume, navigate, grade, sid, timemodified, completionsubmit, autonum, progressbar) FROM stdin;
 \.
 
 
@@ -36519,7 +38450,7 @@ COPY public.m2questionnaire_survey (id, name, courseid, realm, status, title, em
 -- Data for Name: m2quiz; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2quiz (id, course, name, intro, introformat, timeopen, timeclose, timelimit, overduehandling, graceperiod, preferredbehaviour, canredoquestions, attempts, attemptonlast, grademethod, decimalpoints, questiondecimalpoints, reviewattempt, reviewcorrectness, reviewmarks, reviewspecificfeedback, reviewgeneralfeedback, reviewrightanswer, reviewoverallfeedback, questionsperpage, navmethod, shuffleanswers, sumgrades, grade, timecreated, timemodified, password, subnet, browsersecurity, delay1, delay2, showuserpicture, showblocks, completionattemptsexhausted, completionpass, allowofflineattempts) FROM stdin;
+COPY public.m2quiz (id, course, name, intro, introformat, timeopen, timeclose, timelimit, overduehandling, graceperiod, preferredbehaviour, canredoquestions, attempts, attemptonlast, grademethod, decimalpoints, questiondecimalpoints, reviewattempt, reviewcorrectness, reviewmarks, reviewspecificfeedback, reviewgeneralfeedback, reviewrightanswer, reviewoverallfeedback, questionsperpage, navmethod, shuffleanswers, sumgrades, grade, timecreated, timemodified, password, subnet, browsersecurity, delay1, delay2, showuserpicture, showblocks, completionattemptsexhausted, completionpass, allowofflineattempts, completionminattempts) FROM stdin;
 \.
 
 
@@ -36604,6 +38535,22 @@ COPY public.m2quiz_slots (id, slot, quizid, page, requireprevious, questionid, q
 --
 
 COPY public.m2quiz_statistics (id, hashcode, whichattempts, timemodified, firstattemptscount, highestattemptscount, lastattemptscount, allattemptscount, firstattemptsavg, highestattemptsavg, lastattemptsavg, allattemptsavg, median, standarddeviation, skewness, kurtosis, cic, errorratio, standarderror) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2quizaccess_seb_quizsettings; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2quizaccess_seb_quizsettings (id, quizid, cmid, templateid, requiresafeexambrowser, showsebtaskbar, showwificontrol, showreloadbutton, showtime, showkeyboardlayout, allowuserquitseb, quitpassword, linkquitseb, userconfirmquit, enableaudiocontrol, muteonstartup, allowspellchecking, allowreloadinexam, activateurlfiltering, filterembeddedcontent, expressionsallowed, regexallowed, expressionsblocked, regexblocked, allowedbrowserexamkeys, showsebdownloadlink, usermodified, timecreated, timemodified) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2quizaccess_seb_template; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2quizaccess_seb_template (id, name, description, content, enabled, sortorder, usermodified, timecreated, timemodified) FROM stdin;
 \.
 
 
@@ -36773,6 +38720,7 @@ COPY public.m2repository (id, type, visible, sortorder) FROM stdin;
 5	url	1	5
 6	user	1	6
 7	wikimedia	1	7
+8	contentbank	1	8
 \.
 
 
@@ -36796,6 +38744,7 @@ COPY public.m2repository_instances (id, name, typeid, userid, contextid, usernam
 5		5	0	1	\N	\N	1603909082	1603909082	0
 6		6	0	1	\N	\N	1603909082	1603909082	0
 7		7	0	1	\N	\N	1603909082	1603909082	0
+8		8	0	1	\N	\N	1637065454	1637065454	0
 \.
 
 
@@ -38497,6 +40446,141 @@ COPY public.m2role_capabilities (id, contextid, roleid, capability, permission, 
 1560	1	4	local/rcommon:editowncredentials	1	1603910608	2
 1561	1	3	local/rcommon:editowncredentials	1	1603910608	2
 1562	1	1	local/rcommon:editowncredentials	1	1603910609	2
+1563	1	7	moodle/site:senderrormessage	1	1637065350	0
+1564	1	1	moodle/site:viewanonymousevents	1	1637065350	0
+1565	1	1	moodle/course:recommendactivity	1	1637065351	0
+1566	1	1	moodle/contentbank:access	1	1637065351	0
+1567	1	2	moodle/contentbank:access	1	1637065351	0
+1568	1	3	moodle/contentbank:access	1	1637065351	0
+1569	1	1	moodle/contentbank:upload	1	1637065352	0
+1570	1	2	moodle/contentbank:upload	1	1637065352	0
+1571	1	3	moodle/contentbank:upload	1	1637065352	0
+1572	1	1	moodle/contentbank:deleteanycontent	1	1637065352	0
+1573	1	2	moodle/contentbank:deleteanycontent	1	1637065352	0
+1574	1	7	moodle/contentbank:deleteowncontent	1	1637065353	0
+1575	1	1	moodle/contentbank:manageanycontent	1	1637065353	0
+1576	1	2	moodle/contentbank:manageanycontent	1	1637065353	0
+1577	1	1	moodle/contentbank:manageowncontent	1	1637065353	0
+1578	1	2	moodle/contentbank:manageowncontent	1	1637065354	0
+1579	1	3	moodle/contentbank:manageowncontent	1	1637065354	0
+1580	1	1	moodle/contentbank:useeditor	1	1637065354	0
+1581	1	2	moodle/contentbank:useeditor	1	1637065354	0
+1582	1	3	moodle/contentbank:useeditor	1	1637065355	0
+1583	1	1	moodle/contentbank:downloadcontent	1	1637065355	0
+1584	1	2	moodle/contentbank:downloadcontent	1	1637065355	0
+1585	1	3	moodle/contentbank:downloadcontent	1	1637065355	0
+1586	1	5	moodle/course:downloadcoursecontent	1	1637065356	0
+1587	1	4	moodle/course:downloadcoursecontent	1	1637065356	0
+1588	1	3	moodle/course:downloadcoursecontent	1	1637065356	0
+1589	1	1	moodle/course:downloadcoursecontent	1	1637065356	0
+1590	1	3	moodle/course:configuredownloadcontent	1	1637065357	0
+1591	1	1	moodle/course:configuredownloadcontent	1	1637065357	0
+1592	1	1	moodle/contentbank:viewunlistedcontent	1	1637065357	0
+1593	1	2	moodle/contentbank:viewunlistedcontent	1	1637065357	0
+1594	1	5	mod/assign:viewownsubmissionsummary	1	1637065372	0
+1595	1	6	mod/h5pactivity:view	1	1637065378	0
+1596	1	5	mod/h5pactivity:view	1	1637065378	0
+1597	1	4	mod/h5pactivity:view	1	1637065379	0
+1598	1	3	mod/h5pactivity:view	1	1637065379	0
+1599	1	1	mod/h5pactivity:view	1	1637065379	0
+1600	1	3	mod/h5pactivity:addinstance	1	1637065379	0
+1601	1	1	mod/h5pactivity:addinstance	1	1637065380	0
+1602	1	5	mod/h5pactivity:submit	1	1637065380	0
+1603	1	3	mod/h5pactivity:reviewattempts	1	1637065380	0
+1604	1	1	mod/h5pactivity:reviewattempts	1	1637065380	0
+1605	1	3	mod/hvp:share	1	1637065382	0
+1606	1	1	mod/hvp:share	1	1637065382	0
+1607	1	1	mod/lti:addpreconfiguredinstance	1	1637065384	0
+1608	1	3	mod/lti:addpreconfiguredinstance	1	1637065384	0
+1609	1	1	mod/lti:addmanualinstance	1	1637065385	0
+1610	1	3	mod/lti:addmanualinstance	1	1637065385	0
+1611	1	4	mod/quiz:viewoverrides	1	1637065387	0
+1612	1	3	mod/quiz:viewoverrides	1	1637065387	0
+1613	1	1	mod/quiz:viewoverrides	1	1637065387	0
+1614	1	1	enrol/fee:config	1	1637065399	0
+1615	1	1	enrol/fee:manage	1	1637065399	0
+1616	1	3	enrol/fee:manage	1	1637065399	0
+1617	1	1	enrol/fee:unenrol	1	1637065400	0
+1618	1	7	enrol/self:enrolself	1	1637065404	0
+1619	1	3	block/accessreview:addinstance	1	1637065406	0
+1620	1	1	block/accessreview:addinstance	1	1637065406	0
+1621	1	3	block/accessreview:view	1	1637065406	0
+1622	1	1	block/accessreview:view	1	1637065406	0
+1623	1	1	report/status:view	1	1637065445	0
+1624	1	2	repository/contentbank:view	1	1637065454	0
+1625	1	3	repository/contentbank:view	1	1637065454	0
+1626	1	1	repository/contentbank:view	1	1637065454	0
+1627	1	2	repository/contentbank:accesscoursecontent	1	1637065455	0
+1628	1	3	repository/contentbank:accesscoursecontent	1	1637065455	0
+1629	1	1	repository/contentbank:accesscoursecontent	1	1637065455	0
+1630	1	2	repository/contentbank:accesscoursecategorycontent	1	1637065455	0
+1631	1	1	repository/contentbank:accesscoursecategorycontent	1	1637065456	0
+1632	1	7	repository/contentbank:accessgeneralcontent	1	1637065456	0
+1633	1	4	tool/brickfield:viewcoursetools	1	1637065475	0
+1634	1	3	tool/brickfield:viewcoursetools	1	1637065476	0
+1635	1	1	tool/brickfield:viewcoursetools	1	1637065476	0
+1636	1	1	tool/brickfield:viewsystemtools	1	1637065476	0
+1637	1	1	tool/customlang:export	1	1637065477	0
+1638	1	1	contenttype/h5p:access	1	1637065495	0
+1639	1	2	contenttype/h5p:access	1	1637065495	0
+1640	1	3	contenttype/h5p:access	1	1637065496	0
+1641	1	1	contenttype/h5p:upload	1	1637065496	0
+1642	1	2	contenttype/h5p:upload	1	1637065496	0
+1643	1	3	contenttype/h5p:upload	1	1637065496	0
+1644	1	1	contenttype/h5p:useeditor	1	1637065497	0
+1645	1	2	contenttype/h5p:useeditor	1	1637065497	0
+1646	1	3	contenttype/h5p:useeditor	1	1637065497	0
+1647	1	1	quizaccess/seb:managetemplates	1	1637065517	0
+1648	1	1	quizaccess/seb:bypassseb	1	1637065517	0
+1649	1	3	quizaccess/seb:bypassseb	1	1637065518	0
+1650	1	1	quizaccess/seb:manage_seb_requiresafeexambrowser	1	1637065518	0
+1651	1	3	quizaccess/seb:manage_seb_requiresafeexambrowser	1	1637065518	0
+1652	1	1	quizaccess/seb:manage_seb_templateid	1	1637065518	0
+1653	1	3	quizaccess/seb:manage_seb_templateid	1	1637065519	0
+1654	1	1	quizaccess/seb:manage_filemanager_sebconfigfile	1	1637065519	0
+1655	1	3	quizaccess/seb:manage_filemanager_sebconfigfile	1	1637065519	0
+1656	1	1	quizaccess/seb:manage_seb_showsebdownloadlink	1	1637065519	0
+1657	1	3	quizaccess/seb:manage_seb_showsebdownloadlink	1	1637065520	0
+1658	1	1	quizaccess/seb:manage_seb_allowedbrowserexamkeys	1	1637065520	0
+1659	1	3	quizaccess/seb:manage_seb_allowedbrowserexamkeys	1	1637065520	0
+1660	1	1	quizaccess/seb:manage_seb_linkquitseb	1	1637065520	0
+1661	1	3	quizaccess/seb:manage_seb_linkquitseb	1	1637065521	0
+1662	1	1	quizaccess/seb:manage_seb_userconfirmquit	1	1637065521	0
+1663	1	3	quizaccess/seb:manage_seb_userconfirmquit	1	1637065521	0
+1664	1	1	quizaccess/seb:manage_seb_allowuserquitseb	1	1637065521	0
+1665	1	3	quizaccess/seb:manage_seb_allowuserquitseb	1	1637065522	0
+1666	1	1	quizaccess/seb:manage_seb_quitpassword	1	1637065522	0
+1667	1	3	quizaccess/seb:manage_seb_quitpassword	1	1637065522	0
+1668	1	1	quizaccess/seb:manage_seb_allowreloadinexam	1	1637065522	0
+1669	1	3	quizaccess/seb:manage_seb_allowreloadinexam	1	1637065523	0
+1670	1	1	quizaccess/seb:manage_seb_showsebtaskbar	1	1637065523	0
+1671	1	3	quizaccess/seb:manage_seb_showsebtaskbar	1	1637065523	0
+1672	1	1	quizaccess/seb:manage_seb_showreloadbutton	1	1637065523	0
+1673	1	3	quizaccess/seb:manage_seb_showreloadbutton	1	1637065524	0
+1674	1	1	quizaccess/seb:manage_seb_showtime	1	1637065524	0
+1675	1	3	quizaccess/seb:manage_seb_showtime	1	1637065524	0
+1676	1	1	quizaccess/seb:manage_seb_showkeyboardlayout	1	1637065524	0
+1677	1	3	quizaccess/seb:manage_seb_showkeyboardlayout	1	1637065525	0
+1678	1	1	quizaccess/seb:manage_seb_showwificontrol	1	1637065525	0
+1679	1	3	quizaccess/seb:manage_seb_showwificontrol	1	1637065525	0
+1680	1	1	quizaccess/seb:manage_seb_enableaudiocontrol	1	1637065525	0
+1681	1	3	quizaccess/seb:manage_seb_enableaudiocontrol	1	1637065526	0
+1682	1	1	quizaccess/seb:manage_seb_muteonstartup	1	1637065526	0
+1683	1	3	quizaccess/seb:manage_seb_muteonstartup	1	1637065526	0
+1684	1	1	quizaccess/seb:manage_seb_allowspellchecking	1	1637065526	0
+1685	1	3	quizaccess/seb:manage_seb_allowspellchecking	1	1637065527	0
+1686	1	1	quizaccess/seb:manage_seb_activateurlfiltering	1	1637065527	0
+1687	1	3	quizaccess/seb:manage_seb_activateurlfiltering	1	1637065527	0
+1688	1	1	quizaccess/seb:manage_seb_filterembeddedcontent	1	1637065527	0
+1689	1	3	quizaccess/seb:manage_seb_filterembeddedcontent	1	1637065528	0
+1690	1	1	quizaccess/seb:manage_seb_expressionsallowed	1	1637065528	0
+1691	1	3	quizaccess/seb:manage_seb_expressionsallowed	1	1637065528	0
+1692	1	1	quizaccess/seb:manage_seb_regexallowed	1	1637065528	0
+1693	1	3	quizaccess/seb:manage_seb_regexallowed	1	1637065529	0
+1694	1	1	quizaccess/seb:manage_seb_expressionsblocked	1	1637065529	0
+1695	1	3	quizaccess/seb:manage_seb_expressionsblocked	1	1637065529	0
+1696	1	1	quizaccess/seb:manage_seb_regexblocked	1	1637065529	0
+1697	1	3	quizaccess/seb:manage_seb_regexblocked	1	1637065530	0
 \.
 
 
@@ -38873,7 +40957,8 @@ COPY public.m2tag_instance (id, tagid, component, itemtype, itemid, contextid, t
 -- Data for Name: m2task_adhoc; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2task_adhoc (id, component, classname, nextruntime, faildelay, customdata, userid, blocking) FROM stdin;
+COPY public.m2task_adhoc (id, component, classname, nextruntime, faildelay, customdata, userid, blocking, timecreated, timestarted, hostname, pid) FROM stdin;
+1		\\core\\task\\build_installed_themes_task	1637065643	0		\N	0	1637065644	\N	\N	\N
 \.
 
 
@@ -38881,7 +40966,7 @@ COPY public.m2task_adhoc (id, component, classname, nextruntime, faildelay, cust
 -- Data for Name: m2task_log; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2task_log (id, type, component, classname, userid, timestart, timeend, dbreads, dbwrites, result, output) FROM stdin;
+COPY public.m2task_log (id, type, component, classname, userid, timestart, timeend, dbreads, dbwrites, result, output, hostname, pid) FROM stdin;
 \.
 
 
@@ -38889,116 +40974,234 @@ COPY public.m2task_log (id, type, component, classname, userid, timestart, timee
 -- Data for Name: m2task_scheduled; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2task_scheduled (id, component, classname, lastruntime, nextruntime, blocking, minute, hour, day, month, dayofweek, faildelay, customised, disabled) FROM stdin;
-1	moodle	\\core\\task\\session_cleanup_task	0	1603909080	0	*	*	*	*	*	0	0	0
-2	moodle	\\core\\task\\delete_unconfirmed_users_task	0	1603911600	0	0	*	*	*	*	0	0	0
-3	moodle	\\core\\task\\delete_incomplete_users_task	0	1603911900	0	5	*	*	*	*	0	0	0
-4	moodle	\\core\\task\\backup_cleanup_task	0	1603912200	0	10	*	*	*	*	0	0	0
-5	moodle	\\core\\task\\tag_cron_task	0	1603937640	0	14	3	*	*	*	0	0	0
-6	moodle	\\core\\task\\context_cleanup_task	0	1603909500	0	25	*	*	*	*	0	0	0
-7	moodle	\\core\\task\\cache_cleanup_task	0	1603909800	0	30	*	*	*	*	0	0	0
-8	moodle	\\core\\task\\messaging_cleanup_task	0	1603910100	0	35	*	*	*	*	0	0	0
-9	moodle	\\core\\task\\send_new_user_passwords_task	0	1603909080	0	*	*	*	*	*	0	0	0
-10	moodle	\\core\\task\\send_failed_login_notifications_task	0	1603909080	0	*	*	*	*	*	0	0	0
-11	moodle	\\core\\task\\create_contexts_task	0	1603926000	1	0	0	*	*	*	0	0	0
-12	moodle	\\core\\task\\legacy_plugin_cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-13	moodle	\\core\\task\\grade_cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-14	moodle	\\core\\task\\grade_history_cleanup_task	0	1603927080	0	*	0	*	*	*	0	0	0
-15	moodle	\\core\\task\\completion_regular_task	0	1603909080	0	*	*	*	*	*	0	0	0
-16	moodle	\\core\\task\\completion_daily_task	0	1603988460	0	21	17	*	*	*	0	0	0
-17	moodle	\\core\\task\\portfolio_cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-18	moodle	\\core\\task\\plagiarism_cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-19	moodle	\\core\\task\\calendar_cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-20	moodle	\\core\\task\\blog_cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-21	moodle	\\core\\task\\question_preview_cleanup_task	0	1603909080	0	*	*	*	*	*	0	0	0
-22	moodle	\\core\\task\\question_stats_cleanup_task	0	1603909080	0	*	*	*	*	*	0	0	0
-23	moodle	\\core\\task\\registration_cron_task	0	1604038740	0	19	7	*	*	5	0	0	0
-24	moodle	\\core\\task\\check_for_updates_task	0	1603911600	0	0	*/2	*	*	*	0	0	0
-25	moodle	\\core\\task\\cache_cron_task	0	1603911000	0	50	*	*	*	*	0	0	0
-26	moodle	\\core\\task\\automated_backup_task	0	1603911000	0	50	*	*	*	*	0	0	0
-27	moodle	\\core\\task\\badges_cron_task	0	1603909200	0	*/5	*	*	*	*	0	0	0
-28	moodle	\\core\\task\\badges_message_task	0	1603909200	0	*/5	*	*	*	*	0	0	0
-29	moodle	\\core\\task\\file_temp_cleanup_task	0	1603929300	0	55	*/6	*	*	*	0	0	0
-30	moodle	\\core\\task\\file_trash_cleanup_task	0	1603929300	0	55	*/6	*	*	*	0	0	0
-31	moodle	\\core\\task\\search_index_task	0	1603909800	0	*/30	*	*	*	*	0	0	0
-32	moodle	\\core\\task\\search_optimize_task	0	1603926900	0	15	*/12	*	*	*	0	0	0
-33	moodle	\\core\\task\\stats_cron_task	0	1603926000	0	0	0	*	*	*	0	0	0
-34	moodle	\\core\\task\\password_reset_cleanup_task	0	1603926000	0	0	*/6	*	*	*	0	0	0
-35	moodle	\\core\\task\\complete_plans_task	0	1603912440	0	14	*	*	*	*	0	0	0
-36	moodle	\\core\\task\\sync_plans_from_template_cohorts_task	0	1603912440	0	14	*	*	*	*	0	0	0
-37	moodle	\\core_files\\task\\conversion_cleanup_task	0	1603933260	0	1	2	*	*	*	0	0	0
-38	moodle	\\core\\oauth2\\refresh_system_tokens_task	0	1603909800	0	30	*	*	*	*	0	0	0
-39	moodle	\\core\\task\\analytics_cleanup_task	0	1603910520	0	42	*	*	*	*	0	0	0
-40	moodle	\\core\\task\\task_log_cleanup_task	0	1603983600	0	0	16	*	*	*	0	0	0
-41	moodle	\\core\\task\\h5p_get_content_types_task	0	1604203260	0	1	5	1	*	*	0	0	0
-42	qtype_random	\\qtype_random\\task\\remove_unused_questions	0	1603912140	0	9	*	*	*	*	0	0	0
-43	mod_assign	\\mod_assign\\task\\cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-44	mod_chat	\\mod_chat\\task\\cron_task	0	1603909200	0	*/5	*	*	*	*	0	0	0
-45	mod_forum	\\mod_forum\\task\\cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-46	mod_lti	\\mod_lti\\task\\clean_access_tokens	0	1603951920	0	12	7	*	*	*	0	0	0
-47	mod_quiz	\\mod_quiz\\task\\update_overdue_attempts	0	1603909080	0	*	*	*	*	*	0	0	0
-48	mod_quiz	\\mod_quiz\\task\\legacy_quiz_reports_cron	0	1603909080	0	*	*	*	*	*	0	0	0
-49	mod_quiz	\\mod_quiz\\task\\legacy_quiz_accessrules_cron	0	1603909080	0	*	*	*	*	*	0	0	0
-50	mod_scorm	\\mod_scorm\\task\\cron_task	0	1603909200	0	*/5	*	*	*	*	0	0	0
-51	mod_workshop	\\mod_workshop\\task\\cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-52	mod_workshop	\\mod_workshop\\task\\legacy_workshop_allocation_cron	0	1603909080	0	*	*	*	*	*	0	0	0
-53	auth_cas	\\auth_cas\\task\\sync_task	0	1603926000	0	0	0	*	*	*	0	0	1
-54	auth_db	\\auth_db\\task\\sync_users	0	1603911900	0	5	20	*	*	*	0	0	1
-55	auth_ldap	\\auth_ldap\\task\\sync_roles	0	1603926000	0	0	0	*	*	*	0	0	1
-56	auth_ldap	\\auth_ldap\\task\\sync_task	0	1603926000	0	0	0	*	*	*	0	0	1
-57	auth_mnet	\\auth_mnet\\task\\cron_task	0	1603909080	0	*	*	*	*	*	0	0	0
-58	enrol_category	\\enrol_category\\task\\enrol_category_sync	0	1603909080	0	*	*	*	*	*	0	0	0
-59	enrol_cohort	\\enrol_cohort\\task\\enrol_cohort_sync	0	1603909200	0	20	*	*	*	*	0	0	0
-60	enrol_database	\\enrol_database\\task\\sync_enrolments	0	1603916040	0	14	21	*	*	*	0	0	1
-61	enrol_flatfile	\\enrol_flatfile\\task\\flatfile_sync_task	0	1603912500	0	15	*	*	*	*	0	0	0
-62	enrol_imsenterprise	\\enrol_imsenterprise\\task\\cron_task	0	1603912200	0	10	*	*	*	*	0	0	0
-63	enrol_ldap	\\enrol_ldap\\task\\sync_enrolments	0	1603948260	0	11	6	*	*	*	0	0	1
-64	enrol_lti	\\enrol_lti\\task\\sync_grades	0	1603909800	0	*/30	*	*	*	*	0	0	0
-65	enrol_lti	\\enrol_lti\\task\\sync_members	0	1603909800	0	*/30	*	*	*	*	0	0	0
-66	enrol_manual	\\enrol_manual\\task\\sync_enrolments	0	1603909200	0	*/10	*	*	*	*	0	0	0
-67	enrol_manual	\\enrol_manual\\task\\send_expiry_notifications	0	1603909200	0	*/10	*	*	*	*	0	0	0
-68	enrol_meta	\\enrol_meta\\task\\enrol_meta_sync	0	1603912500	0	15	*	*	*	*	0	0	0
-69	enrol_paypal	\\enrol_paypal\\task\\process_expirations	0	1603909080	0	*	*	*	*	*	0	0	0
-70	enrol_self	\\enrol_self\\task\\sync_enrolments	0	1603909200	0	*/10	*	*	*	*	0	0	0
-71	enrol_self	\\enrol_self\\task\\send_expiry_notifications	0	1603909200	0	*/10	*	*	*	*	0	0	0
-72	message_email	\\message_email\\task\\send_email_task	0	1603918800	0	0	22	*	*	*	0	0	0
-73	block_recent_activity	\\block_recent_activity\\task\\cleanup	0	1603929840	0	4	1	*	*	*	0	0	0
-74	block_rss_client	\\block_rss_client\\task\\refreshfeeds	0	1603909200	0	*/5	*	*	*	*	0	0	0
-75	editor_atto	\\editor_atto\\task\\autosave_cleanup_task	0	1604128860	0	21	8	*	*	6	0	0	0
-76	repository_dropbox	\\repository_dropbox\\task\\cron_task	0	1603909140	0	*	*	*	*	*	0	0	0
-77	repository_filesystem	\\repository_filesystem\\task\\cron_task	0	1603909140	0	*	*	*	*	*	0	0	0
-78	repository_onedrive	\\repository_onedrive\\remove_temp_access_task	0	1604354400	0	0	23	*	*	1	0	0	0
-79	tool_analytics	\\tool_analytics\\task\\train_models	0	1603969200	0	0	12	*	*	*	0	0	0
-80	tool_analytics	\\tool_analytics\\task\\predict_models	0	1603983600	0	0	16	*	*	*	0	0	0
-81	tool_cohortroles	\\tool_cohortroles\\task\\cohort_role_sync	0	1603912440	0	14	*	*	*	*	0	0	0
-82	tool_dataprivacy	\\tool_dataprivacy\\task\\expired_retention_period	0	1603969200	0	0	12	*	*	*	0	0	0
-83	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_contexts	0	1603990800	0	0	18	*	*	*	0	0	0
-84	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_requests	0	1603988340	0	19	17	*	*	*	0	0	0
-85	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_existing_deleted_users	0	1603938180	0	23	3	*	*	*	0	0	1
-86	tool_langimport	\\tool_langimport\\task\\update_langpacks_task	0	1603941000	0	10	4	*	*	*	0	0	0
-87	tool_messageinbound	\\tool_messageinbound\\task\\pickup_task	0	1603909140	0	*	*	*	*	*	0	0	0
-88	tool_messageinbound	\\tool_messageinbound\\task\\cleanup_task	0	1603932900	0	55	1	*	*	*	0	0	0
-89	tool_monitor	\\tool_monitor\\task\\clean_events	0	1603909140	0	*	*	*	*	*	0	0	0
-90	tool_monitor	\\tool_monitor\\task\\check_subscriptions	0	1603963020	0	17	10	*	*	*	0	0	0
-91	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_course_bin	0	1603909800	0	*/30	*	*	*	*	0	0	0
-92	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_category_bin	0	1603909800	0	*/30	*	*	*	*	0	0	0
-93	assignfeedback_editpdf	\\assignfeedback_editpdf\\task\\convert_submissions	0	1603909800	0	*/15	*	*	*	*	0	0	0
-94	ltiservice_gradebookservices	\\ltiservice_gradebookservices\\task\\cleanup_task	0	1603984320	0	12	16	*	*	*	0	0	0
-95	quiz_statistics	\\quiz_statistics\\task\\quiz_statistics_cleanup	0	1603912080	0	8	*/5	*	*	*	0	0	0
-96	workshopallocation_scheduled	\\workshopallocation_scheduled\\task\\cron_task	0	1603909140	0	*	*	*	*	*	0	0	0
-97	logstore_legacy	\\logstore_legacy\\task\\cleanup_task	0	1603944840	0	14	5	*	*	*	0	0	0
-98	logstore_standard	\\logstore_standard\\task\\cleanup_task	0	1603941780	0	23	4	*	*	*	0	0	0
-99	mod_hvp	\\mod_hvp\\task\\look_for_updates	0	1603922940	0	9	23	*	*	*	0	0	0
-100	mod_hvp	\\mod_hvp\\task\\remove_tmpfiles	0	1603966920	0	22	11	*	*	*	0	0	0
-101	mod_hvp	\\mod_hvp\\task\\remove_old_log_entries	0	1603915920	0	12	21	*	*	*	0	0	0
-102	mod_hvp	\\mod_hvp\\task\\remove_old_auth_tokens	0	1603912380	0	13	*	*	*	*	0	0	0
-103	mod_questionnaire	\\mod_questionnaire\\task\\cleanup	0	1603926960	0	16	*/12	*	*	*	0	0	0
-104	tool_odisseagtafsync	\\tool_odisseagtafsync\\task\\sync	0	1603910640	0	*	*	*	*	*	0	0	0
-105	local_agora	\\local_agora\\task\\adware	0	1604197500	0	25	3	*	*	0	0	0	0
-106	local_agora	\\local_agora\\task\\scripts	0	1603910640	0	*	*	*	*	*	0	0	0
-107	local_bigdata	\\local_bigdata\\task\\export	0	1603935240	0	34	2	*	*	*	0	0	1
-108	local_oauth	\\local_oauth\\task\\clean	0	1603910640	0	*	*	*	*	*	0	0	0
-109	auth_saml2	\\auth_saml2\\task\\metadata_refresh	0	1604012400	0	0	0	*	*	*	0	0	0
+COPY public.m2task_scheduled (id, component, classname, lastruntime, nextruntime, blocking, minute, hour, day, month, dayofweek, faildelay, customised, disabled, timestarted, hostname, pid) FROM stdin;
+3	moodle	\\core\\task\\delete_incomplete_users_task	0	1637067900	0	5	*	*	*	*	0	0	0	\N	\N	\N
+4	moodle	\\core\\task\\backup_cleanup_task	0	1637068200	0	10	*	*	*	*	0	0	0	\N	\N	\N
+5	moodle	\\core\\task\\tag_cron_task	0	1637114580	0	3	3	*	*	*	0	0	0	\N	\N	\N
+6	moodle	\\core\\task\\context_cleanup_task	0	1637065500	0	25	*	*	*	*	0	0	0	\N	\N	\N
+7	moodle	\\core\\task\\cache_cleanup_task	0	1637065800	0	30	*	*	*	*	0	0	0	\N	\N	\N
+8	moodle	\\core\\task\\messaging_cleanup_task	0	1637066100	0	35	*	*	*	*	0	0	0	\N	\N	\N
+9	moodle	\\core\\task\\send_new_user_passwords_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+10	moodle	\\core\\task\\send_failed_login_notifications_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+11	moodle	\\core\\task\\create_contexts_task	0	1637103600	1	0	0	*	*	*	0	0	0	\N	\N	\N
+12	moodle	\\core\\task\\legacy_plugin_cron_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+13	moodle	\\core\\task\\grade_cron_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+15	moodle	\\core\\task\\completion_regular_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+16	moodle	\\core\\task\\completion_daily_task	0	1637108100	0	15	1	*	*	*	0	0	0	\N	\N	\N
+17	moodle	\\core\\task\\portfolio_cron_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+18	moodle	\\core\\task\\plagiarism_cron_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+19	moodle	\\core\\task\\calendar_cron_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+20	moodle	\\core\\task\\blog_cron_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+21	moodle	\\core\\task\\question_preview_cleanup_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+22	moodle	\\core\\task\\question_stats_cleanup_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+23	moodle	\\core\\task\\registration_cron_task	0	1637665320	0	2	12	*	*	2	0	0	0	\N	\N	\N
+24	moodle	\\core\\task\\check_for_updates_task	0	1637067600	0	0	*/2	*	*	*	0	0	0	\N	\N	\N
+26	moodle	\\core\\task\\automated_backup_task	0	1637067000	0	50	*	*	*	*	0	0	0	\N	\N	\N
+27	moodle	\\core\\task\\badges_cron_task	0	1637065500	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+28	moodle	\\core\\task\\badges_message_task	0	1637065500	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+29	moodle	\\core\\task\\file_temp_cleanup_task	0	1637085300	0	55	*/6	*	*	*	0	0	0	\N	\N	\N
+30	moodle	\\core\\task\\file_trash_cleanup_task	0	1637085300	0	55	*/6	*	*	*	0	0	0	\N	\N	\N
+31	moodle	\\core\\task\\search_index_task	0	1637065800	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+32	moodle	\\core\\task\\search_optimize_task	0	1637104500	0	15	*/12	*	*	*	0	0	0	\N	\N	\N
+33	moodle	\\core\\task\\stats_cron_task	0	1637103600	0	0	0	*	*	*	0	0	0	\N	\N	\N
+34	moodle	\\core\\task\\password_reset_cleanup_task	0	1637082000	0	0	*/6	*	*	*	0	0	0	\N	\N	\N
+35	moodle	\\core\\task\\complete_plans_task	0	1637068380	0	13	*	*	*	*	0	0	0	\N	\N	\N
+37	moodle	\\core_files\\task\\conversion_cleanup_task	0	1637111820	0	17	2	*	*	*	0	0	0	\N	\N	\N
+38	moodle	\\core\\oauth2\\refresh_system_tokens_task	0	1637065800	0	30	*	*	*	*	0	0	0	\N	\N	\N
+39	moodle	\\core\\task\\analytics_cleanup_task	0	1637066520	0	42	*	*	*	*	0	0	0	\N	\N	\N
+40	moodle	\\core\\task\\task_log_cleanup_task	0	1637078760	0	6	17	*	*	*	0	0	0	\N	\N	\N
+41	moodle	\\core\\task\\h5p_get_content_types_task	0	1638342840	0	14	8	1	*	*	0	0	0	\N	\N	\N
+42	qtype_random	\\qtype_random\\task\\remove_unused_questions	0	1637067900	0	5	*	*	*	*	0	0	0	\N	\N	\N
+43	mod_assign	\\mod_assign\\task\\cron_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+44	mod_chat	\\mod_chat\\task\\cron_task	0	1637065500	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+45	mod_forum	\\mod_forum\\task\\cron_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+46	mod_lti	\\mod_lti\\task\\clean_access_tokens	0	1637086200	0	10	19	*	*	*	0	0	0	\N	\N	\N
+47	mod_quiz	\\mod_quiz\\task\\update_overdue_attempts	0	1637065440	0	*	*	*	*	*	0	0	0	\N	\N	\N
+49	mod_quiz	\\mod_quiz\\task\\legacy_quiz_accessrules_cron	0	1637065440	0	*	*	*	*	*	0	0	0	\N	\N	\N
+50	mod_scorm	\\mod_scorm\\task\\cron_task	0	1637065500	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+51	mod_workshop	\\mod_workshop\\task\\cron_task	0	1637065440	0	*	*	*	*	*	0	0	0	\N	\N	\N
+52	mod_workshop	\\mod_workshop\\task\\legacy_workshop_allocation_cron	0	1637065440	0	*	*	*	*	*	0	0	0	\N	\N	\N
+53	auth_cas	\\auth_cas\\task\\sync_task	0	1637103600	0	0	0	*	*	*	0	0	1	\N	\N	\N
+54	auth_db	\\auth_db\\task\\sync_users	0	1637126040	0	14	6	*	*	*	0	0	1	\N	\N	\N
+55	auth_ldap	\\auth_ldap\\task\\sync_roles	0	1637103600	0	0	0	*	*	*	0	0	1	\N	\N	\N
+56	auth_ldap	\\auth_ldap\\task\\sync_task	0	1637103600	0	0	0	*	*	*	0	0	1	\N	\N	\N
+57	auth_mnet	\\auth_mnet\\task\\cron_task	0	1637065440	0	*	*	*	*	*	0	0	0	\N	\N	\N
+58	enrol_category	\\enrol_category\\task\\enrol_category_sync	0	1637065440	0	*	*	*	*	*	0	0	0	\N	\N	\N
+59	enrol_cohort	\\enrol_cohort\\task\\enrol_cohort_sync	0	1637068080	0	8	*	*	*	*	0	0	0	\N	\N	\N
+61	enrol_flatfile	\\enrol_flatfile\\task\\flatfile_sync_task	0	1637068500	0	15	*	*	*	*	0	0	0	\N	\N	\N
+62	enrol_imsenterprise	\\enrol_imsenterprise\\task\\cron_task	0	1637068200	0	10	*	*	*	*	0	0	0	\N	\N	\N
+63	enrol_ldap	\\enrol_ldap\\task\\sync_enrolments	0	1637100720	0	12	23	*	*	*	0	0	1	\N	\N	\N
+105	local_agora	\\local_agora\\task\\adware	0	1604197500	0	25	3	*	*	0	0	0	0	\N	\N	\N
+106	local_agora	\\local_agora\\task\\scripts	0	1603910640	0	*	*	*	*	*	0	0	0	\N	\N	\N
+107	local_bigdata	\\local_bigdata\\task\\export	0	1603935240	0	34	2	*	*	*	0	0	1	\N	\N	\N
+108	local_oauth	\\local_oauth\\task\\clean	0	1603910640	0	*	*	*	*	*	0	0	0	\N	\N	\N
+1	moodle	\\core\\task\\session_cleanup_task	0	1637065380	0	*	*	*	*	*	0	0	0	\N	\N	\N
+2	moodle	\\core\\task\\delete_unconfirmed_users_task	0	1637067600	0	0	*	*	*	*	0	0	0	\N	\N	\N
+14	moodle	\\core\\task\\grade_history_cleanup_task	0	1637104980	0	*	0	*	*	*	0	0	0	\N	\N	\N
+25	moodle	\\core\\task\\cache_cron_task	0	1637067000	0	50	*	*	*	*	0	0	0	\N	\N	\N
+36	moodle	\\core\\task\\sync_plans_from_template_cohorts_task	0	1637065380	0	23	*	*	*	*	0	0	0	\N	\N	\N
+110	moodle	\\core\\task\\h5p_clean_orphaned_records_task	0	1637104920	0	22	0	*	*	*	0	0	0	\N	\N	\N
+111	moodle	\\core\\task\\antivirus_cleanup_task	0	1637104620	0	17	0	*	*	*	0	0	0	\N	\N	\N
+99	mod_hvp	\\mod_hvp\\task\\look_for_updates	0	1637108340	0	19	1	*	*	*	0	0	0	\N	\N	\N
+100	mod_hvp	\\mod_hvp\\task\\remove_tmpfiles	0	1637107980	0	13	1	*	*	*	0	0	0	\N	\N	\N
+101	mod_hvp	\\mod_hvp\\task\\remove_old_log_entries	0	1637136000	0	0	9	*	*	*	0	0	0	\N	\N	\N
+102	mod_hvp	\\mod_hvp\\task\\remove_old_auth_tokens	0	1637068740	0	19	*	*	*	*	0	0	0	\N	\N	\N
+103	mod_questionnaire	\\mod_questionnaire\\task\\cleanup	0	1637104200	0	10	*/12	*	*	*	0	0	0	\N	\N	\N
+48	mod_quiz	\\mod_quiz\\task\\legacy_quiz_reports_cron	0	1637065440	0	*	*	*	*	*	0	0	0	\N	\N	\N
+109	auth_saml2	\\auth_saml2\\task\\metadata_refresh	0	1637103600	0	0	0	*	*	*	0	0	0	\N	\N	\N
+60	enrol_database	\\enrol_database\\task\\sync_enrolments	0	1637089260	0	1	20	*	*	*	0	0	1	\N	\N	\N
+64	enrol_lti	\\enrol_lti\\task\\sync_grades	0	1637065800	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+65	enrol_lti	\\enrol_lti\\task\\sync_members	0	1637065800	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+66	enrol_manual	\\enrol_manual\\task\\sync_enrolments	0	1637065800	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
+67	enrol_manual	\\enrol_manual\\task\\send_expiry_notifications	0	1637065800	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
+68	enrol_meta	\\enrol_meta\\task\\enrol_meta_sync	0	1637067960	0	6	*	*	*	*	0	0	0	\N	\N	\N
+69	enrol_paypal	\\enrol_paypal\\task\\process_expirations	0	1637065440	0	*	*	*	*	*	0	0	0	\N	\N	\N
+70	enrol_self	\\enrol_self\\task\\sync_enrolments	0	1637065800	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
+71	enrol_self	\\enrol_self\\task\\send_expiry_notifications	0	1637065800	0	*/10	*	*	*	*	0	0	0	\N	\N	\N
+72	message_email	\\message_email\\task\\send_email_task	0	1637096400	0	0	22	*	*	*	0	0	0	\N	\N	\N
+73	block_recent_activity	\\block_recent_activity\\task\\cleanup	0	1637068380	0	13	14	*	*	*	0	0	0	\N	\N	\N
+74	block_rss_client	\\block_rss_client\\task\\refreshfeeds	0	1637065500	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+75	editor_atto	\\editor_atto\\task\\autosave_cleanup_task	0	1637108460	0	21	1	*	*	0	0	0	0	\N	\N	\N
+76	repository_dropbox	\\repository_dropbox\\task\\cron_task	0	1637065500	0	*	*	*	*	*	0	0	0	\N	\N	\N
+77	repository_filesystem	\\repository_filesystem\\task\\cron_task	0	1637065500	0	*	*	*	*	*	0	0	0	\N	\N	\N
+78	repository_onedrive	\\repository_onedrive\\remove_temp_access_task	0	1637301600	0	0	7	*	*	5	0	0	0	\N	\N	\N
+79	tool_analytics	\\tool_analytics\\task\\train_models	0	1637089200	0	0	20	*	*	*	0	0	0	\N	\N	\N
+80	tool_analytics	\\tool_analytics\\task\\predict_models	0	1637150400	0	0	13	*	*	*	0	0	0	\N	\N	\N
+82	tool_dataprivacy	\\tool_dataprivacy\\task\\expired_retention_period	0	1637136000	0	0	9	*	*	*	0	0	0	\N	\N	\N
+83	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_contexts	0	1637146800	0	0	12	*	*	*	0	0	0	\N	\N	\N
+84	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_expired_requests	0	1637147520	0	12	12	*	*	*	0	0	0	\N	\N	\N
+85	tool_dataprivacy	\\tool_dataprivacy\\task\\delete_existing_deleted_users	0	1637079000	0	10	17	*	*	*	0	0	1	\N	\N	\N
+86	tool_langimport	\\tool_langimport\\task\\update_langpacks_task	0	1637118180	0	3	4	*	*	*	0	0	0	\N	\N	\N
+87	tool_messageinbound	\\tool_messageinbound\\task\\pickup_task	0	1637065500	0	*	*	*	*	*	0	0	0	\N	\N	\N
+88	tool_messageinbound	\\tool_messageinbound\\task\\cleanup_task	0	1637110500	0	55	1	*	*	*	0	0	0	\N	\N	\N
+89	tool_monitor	\\tool_monitor\\task\\clean_events	0	1637065500	0	*	*	*	*	*	0	0	0	\N	\N	\N
+90	tool_monitor	\\tool_monitor\\task\\check_subscriptions	0	1637143740	0	9	11	*	*	*	0	0	0	\N	\N	\N
+91	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_course_bin	0	1637065800	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+92	tool_recyclebin	\\tool_recyclebin\\task\\cleanup_category_bin	0	1637065800	0	*/30	*	*	*	*	0	0	0	\N	\N	\N
+93	assignfeedback_editpdf	\\assignfeedback_editpdf\\task\\convert_submissions	0	1637065800	0	*/15	*	*	*	*	0	0	0	\N	\N	\N
+94	ltiservice_gradebookservices	\\ltiservice_gradebookservices\\task\\cleanup_task	0	1637090160	0	16	20	*	*	*	0	0	0	\N	\N	\N
+95	quiz_statistics	\\quiz_statistics\\task\\quiz_statistics_cleanup	0	1637071860	0	11	*/5	*	*	*	0	0	0	\N	\N	\N
+96	workshopallocation_scheduled	\\workshopallocation_scheduled\\task\\cron_task	0	1637065560	0	*	*	*	*	*	0	0	0	\N	\N	\N
+97	logstore_legacy	\\logstore_legacy\\task\\cleanup_task	0	1637122080	0	8	5	*	*	*	0	0	0	\N	\N	\N
+98	logstore_standard	\\logstore_standard\\task\\cleanup_task	0	1637118540	0	9	4	*	*	*	0	0	0	\N	\N	\N
+112	tool_brickfield	\\tool_brickfield\\task\\bulk_process_courses	0	1637065500	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+113	tool_brickfield	\\tool_brickfield\\task\\bulk_process_caches	0	1637065500	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+114	tool_brickfield	\\tool_brickfield\\task\\checkid_validation	0	1637136300	0	05	9	*	*	*	0	0	0	\N	\N	\N
+115	tool_brickfield	\\tool_brickfield\\task\\update_summarydata	0	1637106600	0	50	0	*	*	*	0	0	0	\N	\N	\N
+116	tool_brickfield	\\tool_brickfield\\task\\process_analysis_requests	0	1637065500	0	*/5	*	*	*	*	0	0	0	\N	\N	\N
+81	tool_cohortroles	\\tool_cohortroles\\task\\cohort_role_sync	0	1637067900	0	5	*	*	*	*	0	0	0	\N	\N	\N
+117	tool_odisseagtafsync	\\tool_odisseagtafsync\\task\\cron_task	0	1637067600	0	0	*	*	*	*	0	0	0	\N	\N	\N
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_areas; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_areas (id, type, contextid, component, tablename, fieldorarea, itemid, filename, reftable, refid, cmid, courseid, categoryid) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_cache_acts; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_cache_acts (id, courseid, status, component, totalactivities, failedactivities, passedactivities, errorcount) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_cache_check; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_cache_check (id, courseid, status, checkid, checkcount, errorcount) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_checks; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_checks (id, checktype, shortname, checkgroup, status, severity) FROM stdin;
+1	full	a_links_dont_open_new_window	4	1	1
+2	full	a_must_contain_text	4	1	1
+3	full	area_dont_open_new_window	4	1	1
+4	full	area_has_alt_value	4	1	1
+5	full	a_suspicious_link_text	4	1	1
+6	full	basefont_is_not_used	7	1	1
+7	full	blink_is_not_used	7	1	1
+8	full	bold_is_not_used	7	1	1
+9	full	content_too_long	7	1	1
+10	full	css_text_has_contrast	7	1	1
+11	full	embed_has_associated_no_embed	7	1	1
+12	full	header_h3	3	1	1
+13	full	headers_have_text	3	1	1
+14	full	i_is_not_used	7	1	1
+15	full	img_alt_is_different	2	1	1
+16	full	img_alt_is_too_long	2	1	1
+17	full	img_alt_not_empty_in_anchor	2	1	1
+18	full	img_alt_not_place_holder	2	1	1
+19	full	img_has_alt	2	1	1
+20	full	img_with_map_has_use_map	2	1	1
+21	full	legend_text_not_empty	7	1	1
+22	full	marquee_is_not_used	7	1	1
+23	full	no_headings	3	1	1
+24	full	object_must_have_embed	5	1	1
+25	full	object_must_have_title	5	1	1
+26	full	object_must_have_valid_title	5	1	1
+27	full	strike_is_not_used	7	1	1
+28	full	table_data_should_have_th	6	1	1
+29	full	table_summary_does_not_duplicate_caption	6	1	1
+30	full	table_td_should_not_merge	6	1	1
+31	full	table_th_should_have_scope	6	1	1
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_content; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_content (id, areaid, contenthash, iscurrent, status, timecreated, timechecked) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_errors; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_errors (id, resultid, linenumber, errordata, htmlcode) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_process; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_process (id, courseid, item, contextid, innercontextid, timecreated, timecompleted) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_results; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_results (id, contentid, checkid, errorcount) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_schedule; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_schedule (id, contextlevel, instanceid, contextid, status, timeanalyzed, timemodified) FROM stdin;
+\.
+
+
+--
+-- Data for Name: m2tool_brickfield_summary; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.m2tool_brickfield_summary (id, courseid, status, activities, activitiespassed, activitiesfailed, errorschecktype1, errorschecktype2, errorschecktype3, errorschecktype4, errorschecktype5, errorschecktype6, errorschecktype7, failedchecktype1, failedchecktype2, failedchecktype3, failedchecktype4, failedchecktype5, failedchecktype6, failedchecktype7, percentchecktype1, percentchecktype2, percentchecktype3, percentchecktype4, percentchecktype5, percentchecktype6, percentchecktype7) FROM stdin;
 \.
 
 
@@ -39078,7 +41281,7 @@ COPY public.m2tool_dataprivacy_purposerole (id, purposeid, roleid, lawfulbases, 
 -- Data for Name: m2tool_dataprivacy_request; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2tool_dataprivacy_request (id, type, comments, commentsformat, userid, requestedby, status, dpo, dpocomment, dpocommentformat, usermodified, timecreated, timemodified, creationmethod) FROM stdin;
+COPY public.m2tool_dataprivacy_request (id, type, comments, commentsformat, userid, requestedby, status, dpo, dpocomment, dpocommentformat, usermodified, timecreated, timemodified, creationmethod, systemapproved) FROM stdin;
 \.
 
 
@@ -39173,6 +41376,10 @@ COPY public.m2tool_usertours_steps (id, tourid, title, content, targettype, targ
 11	2	tour3_title_starring,tool_usertours	tour3_content_starring,tool_usertours	0	.block-myoverview [data-display="cards"] [data-region="course-content"] .coursemenubtn	4	{"placement":"right"}
 12	2	tour3_title_starring,tool_usertours	tour3_content_starring,tool_usertours	0	.block-myoverview [data-display]:not([data-display="cards"]) [data-region="course-content"] .coursemenubtn	5	{}
 13	2	tour3_title_displayoptions,tool_usertours	tour3_content_displayoptions,tool_usertours	0	#sortingdropdown	6	{"placement":"top"}
+15	3	tour_activityinfo_course_teacher_title,tool_usertours	tour_activityinfo_course_teacher_content,tool_usertours	0	[data-region=activity-information]	0	{}
+16	4	tour_activityinfo_course_student_title,tool_usertours	tour_activityinfo_course_student_content,tool_usertours	0	[data-region=activity-information]	0	{}
+17	5	tour_activityinfo_activity_teacher_title,tool_usertours	tour_activityinfo_activity_teacher_content,tool_usertours	0	[data-region=activity-information]	0	{}
+18	6	tour_activityinfo_activity_student_title,tool_usertours	tour_activityinfo_activity_student_content,tool_usertours	0	[data-region=activity-information]	0	{}
 \.
 
 
@@ -39181,8 +41388,12 @@ COPY public.m2tool_usertours_steps (id, tourid, title, content, targettype, targ
 --
 
 COPY public.m2tool_usertours_tours (id, name, description, pathmatch, enabled, sortorder, configdata) FROM stdin;
-1	New Messaging System	New messaging interface in Moodle 3.6	/course/view.php%	1	1	{"placement":"bottom","orphan":"0","backdrop":"0","reflex":"0","filtervalues":{"category":[],"course":["0"],"courseformat":[],"role":[],"theme":[]},"majorupdatetime":1543468823,"shipped_tour":true,"shipped_filename":"36_messaging.json","shipped_version":3}
-2	Dashboard	New dashboard features	/my/%	1	0	{"placement":"top","orphan":"0","backdrop":"0","reflex":"0","filtervalues":{"category":[],"course":["0"],"courseformat":[],"role":[],"theme":[]},"majorupdatetime":1543396938,"shipped_tour":true,"shipped_filename":"36_dashboard.json","shipped_version":3}
+5	Activity information in activity page (Teacher)	A tour of the activity information for Teacher display on the activity page	/mod/%/view.php%	1	1	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["manager","teacher","editingteacher"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620110287,"shipped_tour":true,"shipped_filename":"311_activity_information_activity_page_teacher.json","shipped_version":2}
+6	Activity information in activity page (Student)	A tour of the activity information for Student display on the activity page	/mod/%/view.php%	1	0	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["student"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620110287,"shipped_tour":true,"shipped_filename":"311_activity_information_activity_page_student.json","shipped_version":2}
+2	Dashboard	New dashboard features	/my/%	0	4	{"placement":"top","orphan":"0","backdrop":"0","reflex":"0","filtervalues":{"category":[],"course":["0"],"courseformat":[],"role":[],"theme":[]},"majorupdatetime":1543396938,"shipped_tour":true,"shipped_filename":"36_dashboard.json","shipped_version":3}
+3	Activity information in course homepage (Teacher)	A tour of the activity information for Teacher display on the course homepage	/course/view.php%	1	3	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["manager","teacher","editingteacher"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620109487,"shipped_tour":true,"shipped_filename":"311_activity_information_course_page_teacher.json","shipped_version":2}
+1	New Messaging System	New messaging interface in Moodle 3.6	/course/view.php%	0	5	{"placement":"bottom","orphan":"0","backdrop":"0","reflex":"0","filtervalues":{"category":[],"course":["0"],"courseformat":[],"role":[],"theme":[]},"majorupdatetime":1543468823,"shipped_tour":true,"shipped_filename":"36_messaging.json","shipped_version":3}
+4	Activity information in course homepage (Student)	A tour of the activity information for Student display on the course homepage	/course/view.php%	1	2	{"placement":"bottom","orphan":"0","backdrop":"1","reflex":"0","filtervalues":{"accessdate":{"filter_accessdate":"tool_usertours_accountcreation","filter_accessdate_range":0,"filter_accessdate_enabled":"0"},"category":[],"course":[],"courseformat":[],"role":["student"],"theme":[],"cssselector":["[data-region=activity-information]"]},"majorupdatetime":1620109487,"shipped_tour":true,"shipped_filename":"311_activity_information_course_page_student.json","shipped_version":2}
 \.
 
 
@@ -40572,6 +42783,1436 @@ COPY public.m2upgrade_log (id, type, plugin, version, targetversion, info, detai
 1379	0	block_configurable_reports	2019062001	2020100800	Upgrade savepoint reached	\N		0	1603981791
 1380	0	block_configurable_reports	2020100800	2020100800	Upgrade savepoint reached	\N		0	1603981791
 1381	0	block_configurable_reports	2020100800	2020100800	Plugin upgraded	\N		0	1603981791
+1382	0	core	2019111805	2021051704	Starting core upgrade	\N		0	1637065342
+1383	0	core	2019120500.01	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1384	0	core	2019121800	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1385	0	core	2019122000.01	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1386	0	core	2020010900.02	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1387	0	core	2020011700.02	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1388	0	core	2020013000.01	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1389	0	core	2020040200.01	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1390	0	core	2020040700	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1391	0	core	2020041500	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1392	0	core	2020041700.01	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1393	0	core	2020042800.01	2021051704	Upgrade savepoint reached	\N		0	1637065342
+1394	0	core	2020051900.01	2021051704	Upgrade savepoint reached	\N		0	1637065343
+1395	0	core	2020052000	2021051704	Upgrade savepoint reached	\N		0	1637065343
+1396	0	core	2020052200.01	2021051704	Upgrade savepoint reached	\N		0	1637065343
+1397	0	core	2020060500.01	2021051704	Upgrade savepoint reached	\N		0	1637065343
+1398	0	core	2020061500.02	2021051704	Upgrade savepoint reached	\N		0	1637065343
+1399	0	core	2020062600.01	2021051704	Upgrade savepoint reached	\N		0	1637065343
+1400	0	core	2020071100.01	2021051704	Upgrade savepoint reached	\N		0	1637065343
+1401	0	core	2020072300.01	2021051704	Upgrade savepoint reached	\N		0	1637065343
+1402	0	core	2020081400.01	2021051704	Upgrade savepoint reached	\N		0	1637065344
+1403	0	core	2020081400.02	2021051704	Upgrade savepoint reached	\N		0	1637065344
+1404	0	core	2020082200.01	2021051704	Upgrade savepoint reached	\N		0	1637065344
+1405	0	core	2020082200.02	2021051704	Upgrade savepoint reached	\N		0	1637065344
+1406	0	core	2020082200.03	2021051704	Upgrade savepoint reached	\N		0	1637065344
+1407	0	core	2020091000.02	2021051704	Upgrade savepoint reached	\N		0	1637065344
+1408	0	core	2020091800.01	2021051704	Upgrade savepoint reached	\N		0	1637065345
+1409	0	core	2020100200.01	2021051704	Upgrade savepoint reached	\N		0	1637065345
+1410	0	core	2020100700	2021051704	Upgrade savepoint reached	\N		0	1637065345
+1411	0	core	2020101300.01	2021051704	Upgrade savepoint reached	\N		0	1637065345
+1412	0	core	2020101600.01	2021051704	Upgrade savepoint reached	\N		0	1637065345
+1413	0	core	2020101600.02	2021051704	Upgrade savepoint reached	\N		0	1637065345
+1414	0	core	2020102100.01	2021051704	Upgrade savepoint reached	\N		0	1637065345
+1415	0	core	2020102100.02	2021051704	Upgrade savepoint reached	\N		0	1637065345
+1416	0	core	2020102300.01	2021051704	Upgrade savepoint reached	\N		0	1637065345
+1417	0	core	2020102300.02	2021051704	Upgrade savepoint reached	\N		0	1637065346
+1418	0	core	2020102700.04	2021051704	Upgrade savepoint reached	\N		0	1637065346
+1419	0	core	2020111500.01	2021051704	Upgrade savepoint reached	\N		0	1637065346
+1420	0	core	2021013100	2021051704	Upgrade savepoint reached	\N		0	1637065346
+1421	0	core	2021021100.01	2021051704	Upgrade savepoint reached	\N		0	1637065346
+1422	0	core	2021021600	2021051704	Upgrade savepoint reached	\N		0	1637065347
+1423	0	core	2021022600.01	2021051704	Upgrade savepoint reached	\N		0	1637065347
+1424	0	core	2021030500.01	2021051704	Upgrade savepoint reached	\N		0	1637065347
+1425	0	core	2021031200.01	2021051704	Upgrade savepoint reached	\N		0	1637065347
+1426	0	core	2021033100	2021051704	Upgrade savepoint reached	\N		0	1637065347
+1427	0	core	2021033100.01	2021051704	Upgrade savepoint reached	\N		0	1637065348
+1428	0	core	2021041300.01	2021051704	Upgrade savepoint reached	\N		0	1637065349
+1429	0	core	2021042100	2021051704	Upgrade savepoint reached	\N		0	1637065349
+1430	0	core	2021042100.01	2021051704	Upgrade savepoint reached	\N		0	1637065349
+1431	0	core	2021042100.02	2021051704	Upgrade savepoint reached	\N		0	1637065349
+1432	0	core	2021042400	2021051704	Upgrade savepoint reached	\N		0	1637065349
+1433	0	core	2021043000.01	2021051704	Upgrade savepoint reached	\N		0	1637065349
+1434	0	core	2021051700.03	2021051704	Upgrade savepoint reached	\N		0	1637065349
+1435	0	core	2021051700.05	2021051704	Upgrade savepoint reached	\N		0	1637065350
+1436	0	core	2021051704	2021051704	Upgrade savepoint reached	\N		0	1637065350
+1437	0	core	2021051704	2021051704	Core upgraded	\N		0	1637065359
+1438	0	antivirus_clamav	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065359
+1439	0	antivirus_clamav	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065359
+1440	0	antivirus_clamav	2021051700	2021051700	Plugin upgraded	\N		0	1637065360
+1441	0	availability_completion	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065360
+1442	0	availability_completion	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065360
+1443	0	availability_completion	2021051700	2021051700	Plugin upgraded	\N		0	1637065360
+1444	0	availability_date	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065360
+1445	0	availability_date	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065360
+1446	0	availability_date	2021051700	2021051700	Plugin upgraded	\N		0	1637065360
+1447	0	availability_grade	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065360
+1448	0	availability_grade	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065360
+1449	0	availability_grade	2021051700	2021051700	Plugin upgraded	\N		0	1637065361
+1450	0	availability_group	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065361
+1451	0	availability_group	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065361
+1452	0	availability_group	2021051700	2021051700	Plugin upgraded	\N		0	1637065361
+1453	0	availability_grouping	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065361
+1454	0	availability_grouping	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065361
+1455	0	availability_grouping	2021051700	2021051700	Plugin upgraded	\N		0	1637065361
+1456	0	availability_profile	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065361
+1457	0	availability_profile	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065361
+1458	0	availability_profile	2021051700	2021051700	Plugin upgraded	\N		0	1637065362
+1459	0	qtype_calculated	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065362
+1460	0	qtype_calculated	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065362
+1461	0	qtype_calculated	2021051700	2021051700	Plugin upgraded	\N		0	1637065362
+1462	0	qtype_calculatedmulti	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065362
+1463	0	qtype_calculatedmulti	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065362
+1464	0	qtype_calculatedmulti	2021051700	2021051700	Plugin upgraded	\N		0	1637065363
+1465	0	qtype_calculatedsimple	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065363
+1466	0	qtype_calculatedsimple	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065363
+1467	0	qtype_calculatedsimple	2021051700	2021051700	Plugin upgraded	\N		0	1637065363
+1468	0	qtype_ddimageortext	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065363
+1469	0	qtype_ddimageortext	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065363
+1470	0	qtype_ddimageortext	2021051700	2021051700	Plugin upgraded	\N		0	1637065363
+1471	0	qtype_ddmarker	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065363
+1472	0	qtype_ddmarker	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065363
+1473	0	qtype_ddmarker	2021051700	2021051700	Plugin upgraded	\N		0	1637065364
+1474	0	qtype_ddwtos	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065364
+1475	0	qtype_ddwtos	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065364
+1476	0	qtype_ddwtos	2021051700	2021051700	Plugin upgraded	\N		0	1637065364
+1477	0	qtype_description	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065364
+1478	0	qtype_description	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065364
+1479	0	qtype_description	2021051700	2021051700	Plugin upgraded	\N		0	1637065364
+1480	0	qtype_essay	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065364
+1481	0	qtype_essay	2020091600	2021051700	Upgrade savepoint reached	\N		0	1637065365
+1482	0	qtype_essay	2021011100	2021051700	Upgrade savepoint reached	\N		0	1637065365
+1483	0	qtype_essay	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065365
+1484	0	qtype_essay	2021051700	2021051700	Plugin upgraded	\N		0	1637065365
+1485	0	qtype_essaywiris	2020061600	2021091300	Starting plugin upgrade	\N		0	1637065365
+1486	0	qtype_essaywiris	2021091300	2021091300	Upgrade savepoint reached	\N		0	1637065365
+1487	0	qtype_essaywiris	2021091300	2021091300	Plugin upgraded	\N		0	1637065366
+1488	0	qtype_gapselect	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065366
+1489	0	qtype_gapselect	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065366
+1490	0	qtype_gapselect	2021051700	2021051700	Plugin upgraded	\N		0	1637065366
+1491	0	qtype_match	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065366
+1492	0	qtype_match	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065366
+1493	0	qtype_match	2021051700	2021051700	Plugin upgraded	\N		0	1637065366
+1494	0	qtype_matchwiris	2020061600	2021091300	Starting plugin upgrade	\N		0	1637065366
+1495	0	qtype_matchwiris	2021091300	2021091300	Upgrade savepoint reached	\N		0	1637065366
+1496	0	qtype_matchwiris	2021091300	2021091300	Plugin upgraded	\N		0	1637065367
+1497	0	qtype_missingtype	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065367
+1498	0	qtype_missingtype	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065367
+1499	0	qtype_missingtype	2021051700	2021051700	Plugin upgraded	\N		0	1637065367
+1500	0	qtype_multianswer	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065367
+1501	0	qtype_multianswer	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065367
+1502	0	qtype_multianswer	2021051700	2021051700	Plugin upgraded	\N		0	1637065367
+1503	0	qtype_multianswerwiris	2020061600	2021091300	Starting plugin upgrade	\N		0	1637065367
+1504	0	qtype_multianswerwiris	2021091300	2021091300	Upgrade savepoint reached	\N		0	1637065367
+1505	0	qtype_multianswerwiris	2021091300	2021091300	Plugin upgraded	\N		0	1637065368
+1506	0	qtype_multichoice	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065368
+1507	0	qtype_multichoice	2020041600	2021051700	Upgrade savepoint reached	\N		0	1637065368
+1508	0	qtype_multichoice	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065368
+1509	0	qtype_multichoice	2021051700	2021051700	Plugin upgraded	\N		0	1637065368
+1510	0	qtype_multichoicewiris	2020061600	2021091300	Starting plugin upgrade	\N		0	1637065368
+1511	0	qtype_multichoicewiris	2021091300	2021091300	Upgrade savepoint reached	\N		0	1637065368
+1512	0	qtype_multichoicewiris	2021091300	2021091300	Plugin upgraded	\N		0	1637065369
+1513	0	qtype_numerical	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065369
+1514	0	qtype_numerical	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065369
+1515	0	qtype_numerical	2021051700	2021051700	Plugin upgraded	\N		0	1637065369
+1516	0	qtype_ordering	2019121400	2021091404	Starting plugin upgrade	\N		0	1637065369
+1517	0	qtype_ordering	2021091404	2021091404	Upgrade savepoint reached	\N		0	1637065369
+1518	0	qtype_ordering	2021091404	2021091404	Plugin upgraded	\N		0	1637065369
+1519	0	qtype_random	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065369
+1520	0	qtype_random	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065369
+1521	0	qtype_random	2021051700	2021051700	Plugin upgraded	\N		0	1637065370
+1522	0	qtype_randomsamatch	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065370
+1523	0	qtype_randomsamatch	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065370
+1524	0	qtype_randomsamatch	2021051700	2021051700	Plugin upgraded	\N		0	1637065370
+1525	0	qtype_shortanswer	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065370
+1526	0	qtype_shortanswer	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065370
+1527	0	qtype_shortanswer	2021051700	2021051700	Plugin upgraded	\N		0	1637065370
+1528	0	qtype_shortanswerwiris	2020061600	2021091300	Starting plugin upgrade	\N		0	1637065370
+1529	0	qtype_shortanswerwiris	2021091300	2021091300	Upgrade savepoint reached	\N		0	1637065370
+1530	0	qtype_shortanswerwiris	2021091300	2021091300	Plugin upgraded	\N		0	1637065371
+1531	0	qtype_truefalse	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065371
+1532	0	qtype_truefalse	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065371
+1533	0	qtype_truefalse	2021051700	2021051700	Plugin upgraded	\N		0	1637065371
+1534	0	qtype_truefalsewiris	2020061600	2021091500	Starting plugin upgrade	\N		0	1637065371
+1535	0	qtype_truefalsewiris	2021091500	2021091500	Upgrade savepoint reached	\N		0	1637065371
+1536	0	qtype_truefalsewiris	2021091500	2021091500	Plugin upgraded	\N		0	1637065371
+1537	0	qtype_wq	2020061600	2021110300	Starting plugin upgrade	\N		0	1637065371
+1538	0	qtype_wq	2021110300	2021110300	Upgrade savepoint reached	\N		0	1637065371
+1539	0	qtype_wq	2021110300	2021110300	Plugin upgraded	\N		0	1637065372
+1540	0	mod_assign	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065372
+1541	0	mod_assign	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065372
+1542	0	mod_assign	2021051700	2021051700	Plugin upgraded	\N		0	1637065372
+1543	0	mod_assignment	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065372
+1544	0	mod_assignment	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065372
+1545	0	mod_assignment	2021051700	2021051700	Plugin upgraded	\N		0	1637065373
+1546	0	mod_book	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065373
+1547	0	mod_book	2020100100	2021051700	Upgrade savepoint reached	\N		0	1637065373
+1548	0	mod_book	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065373
+1549	0	mod_book	2021051700	2021051700	Plugin upgraded	\N		0	1637065373
+1550	0	mod_chat	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065373
+1551	0	mod_chat	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065373
+1552	0	mod_chat	2021051700	2021051700	Plugin upgraded	\N		0	1637065374
+1553	0	mod_choice	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065374
+1554	0	mod_choice	2020061600	2021051700	Upgrade savepoint reached	\N		0	1637065374
+1555	0	mod_choice	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065374
+1556	0	mod_choice	2021051700	2021051700	Plugin upgraded	\N		0	1637065374
+1557	0	mod_choicegroup	2020070100	2021083100	Starting plugin upgrade	\N		0	1637065374
+1558	0	mod_choicegroup	2021071400	2021083100	Upgrade savepoint reached	\N		0	1637065375
+1559	0	mod_choicegroup	2021080500	2021083100	Upgrade savepoint reached	\N		0	1637065375
+1560	0	mod_choicegroup	2021083100	2021083100	Upgrade savepoint reached	\N		0	1637065375
+1561	0	mod_choicegroup	2021083100	2021083100	Plugin upgraded	\N		0	1637065375
+1562	0	mod_data	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065375
+1563	0	mod_data	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065375
+1564	0	mod_data	2021051700	2021051700	Plugin upgraded	\N		0	1637065376
+1565	0	mod_feedback	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065376
+1566	0	mod_feedback	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065376
+1567	0	mod_feedback	2021051700	2021051700	Plugin upgraded	\N		0	1637065376
+1568	0	mod_folder	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065376
+1569	0	mod_folder	2020061501	2021051700	Upgrade savepoint reached	\N		0	1637065376
+1570	0	mod_folder	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065376
+1571	0	mod_folder	2021051700	2021051700	Plugin upgraded	\N		0	1637065377
+1572	0	mod_forum	2019111802	2021051701	Starting plugin upgrade	\N		0	1637065377
+1573	0	mod_forum	2020072100	2021051701	Upgrade savepoint reached	\N		0	1637065377
+1574	0	mod_forum	2021051701	2021051701	Upgrade savepoint reached	\N		0	1637065377
+1575	0	mod_forum	2021051701	2021051701	Plugin upgraded	\N		0	1637065377
+1576	0	mod_geogebra	2020090800	2021102100	Starting plugin upgrade	\N		0	1637065377
+1577	0	mod_geogebra	2021102100	2021102100	Upgrade savepoint reached	\N		0	1637065377
+1578	0	mod_geogebra	2021102100	2021102100	Plugin upgraded	\N		0	1637065377
+1579	0	mod_glossary	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065377
+1580	0	mod_glossary	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065377
+1581	0	mod_glossary	2021051700	2021051700	Plugin upgraded	\N		0	1637065378
+1582	0	mod_h5pactivity	\N	2021051700	Starting plugin installation	\N		0	1637065378
+1583	0	mod_h5pactivity	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065378
+1584	0	mod_h5pactivity	2021051700	2021051700	Plugin installed	\N		0	1637065381
+1585	0	mod_hvp	2020080400	2021061100	Starting plugin upgrade	\N		0	1637065381
+1586	0	mod_hvp	2020080401	2021061100	Upgrade savepoint reached	\N		0	1637065381
+1587	0	mod_hvp	2020082800	2021061100	Upgrade savepoint reached	\N		0	1637065381
+1588	0	mod_hvp	2020091500	2021061100	Upgrade savepoint reached	\N		0	1637065381
+1589	0	mod_hvp	2020112600	2021061100	Upgrade savepoint reached	\N		0	1637065382
+1590	0	mod_hvp	2021061100	2021061100	Upgrade savepoint reached	\N		0	1637065382
+1591	0	mod_hvp	2021061100	2021061100	Plugin upgraded	\N		0	1637065382
+1592	0	mod_imscp	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065382
+1593	0	mod_imscp	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065382
+1594	0	mod_imscp	2021051700	2021051700	Plugin upgraded	\N		0	1637065383
+1595	0	mod_jclic	2020072400	2021060100	Starting plugin upgrade	\N		0	1637065383
+1596	0	mod_jclic	2020110400	2021060100	Upgrade savepoint reached	\N		0	1637065383
+1597	0	mod_jclic	2021060100	2021060100	Upgrade savepoint reached	\N		0	1637065383
+1598	0	mod_jclic	2021060100	2021060100	Plugin upgraded	\N		0	1637065383
+1599	0	mod_label	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065383
+1600	0	mod_label	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065383
+1601	0	mod_label	2021051700	2021051700	Plugin upgraded	\N		0	1637065384
+1602	0	mod_lesson	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065384
+1603	0	mod_lesson	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065384
+1604	0	mod_lesson	2021051700	2021051700	Plugin upgraded	\N		0	1637065384
+1605	0	mod_lti	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065384
+1606	0	mod_lti	2020061501	2021051700	Upgrade savepoint reached	\N		0	1637065384
+1607	0	mod_lti	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065384
+1608	0	mod_lti	2021051700	2021051700	Plugin upgraded	\N		0	1637065385
+1609	0	mod_page	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065385
+1610	0	mod_page	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065385
+1611	0	mod_page	2021051700	2021051700	Plugin upgraded	\N		0	1637065386
+1612	0	mod_questionnaire	2020011508	2020111101	Starting plugin upgrade	\N		0	1637065386
+1613	0	mod_questionnaire	2020062301	2020111101	Upgrade savepoint reached	\N		0	1637065386
+1614	0	mod_questionnaire	2020111101	2020111101	Upgrade savepoint reached	\N		0	1637065386
+1615	0	mod_questionnaire	2020111101	2020111101	Plugin upgraded	\N		0	1637065386
+1616	0	mod_quiz	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065386
+1617	0	mod_quiz	2020061501	2021051700	Upgrade savepoint reached	\N		0	1637065387
+1618	0	mod_quiz	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065387
+1619	0	mod_quiz	2021051700	2021051700	Plugin upgraded	\N		0	1637065388
+1620	0	mod_resource	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065388
+1621	0	mod_resource	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065388
+1622	0	mod_resource	2021051700	2021051700	Plugin upgraded	\N		0	1637065388
+1623	0	mod_scorm	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065388
+1624	0	mod_scorm	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065388
+1625	0	mod_scorm	2021051700	2021051700	Plugin upgraded	\N		0	1637065388
+1626	0	mod_survey	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065388
+1627	0	mod_survey	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065388
+1628	0	mod_survey	2021051700	2021051700	Plugin upgraded	\N		0	1637065389
+1629	0	mod_url	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065389
+1630	0	mod_url	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065389
+1631	0	mod_url	2021051700	2021051700	Plugin upgraded	\N		0	1637065389
+1632	0	mod_wiki	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065389
+1633	0	mod_wiki	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065389
+1634	0	mod_wiki	2021051700	2021051700	Plugin upgraded	\N		0	1637065390
+1635	0	mod_workshop	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065390
+1636	0	mod_workshop	2020110901	2021051700	Upgrade savepoint reached	\N		0	1637065390
+1637	0	mod_workshop	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065390
+1638	0	mod_workshop	2021051700	2021051700	Plugin upgraded	\N		0	1637065391
+1639	0	auth_cas	2019111801	2021051700	Starting plugin upgrade	\N		0	1637065391
+1640	0	auth_cas	2020081700	2021051700	Upgrade savepoint reached	\N		0	1637065391
+1641	0	auth_cas	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065391
+1642	0	auth_cas	2021051700	2021051700	Plugin upgraded	\N		0	1637065391
+1643	0	auth_db	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065391
+1644	0	auth_db	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065391
+1645	0	auth_db	2021051700	2021051700	Plugin upgraded	\N		0	1637065392
+1646	0	auth_email	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065392
+1647	0	auth_email	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065392
+1648	0	auth_email	2021051700	2021051700	Plugin upgraded	\N		0	1637065392
+1649	0	auth_ldap	2019111801	2021051700	Starting plugin upgrade	\N		0	1637065392
+1650	0	auth_ldap	2020081700	2021051700	Upgrade savepoint reached	\N		0	1637065392
+1651	0	auth_ldap	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065392
+1652	0	auth_ldap	2021051700	2021051700	Plugin upgraded	\N		0	1637065393
+1653	0	auth_lti	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065393
+1654	0	auth_lti	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065393
+1655	0	auth_lti	2021051700	2021051700	Plugin upgraded	\N		0	1637065393
+1656	0	auth_manual	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065393
+1657	0	auth_manual	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065393
+1658	0	auth_manual	2021051700	2021051700	Plugin upgraded	\N		0	1637065393
+1659	0	auth_mnet	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065393
+1660	0	auth_mnet	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065393
+1661	0	auth_mnet	2021051700	2021051700	Plugin upgraded	\N		0	1637065394
+1662	0	auth_nologin	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065394
+1663	0	auth_nologin	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065394
+1664	0	auth_nologin	2021051700	2021051700	Plugin upgraded	\N		0	1637065394
+1665	0	auth_none	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065394
+1666	0	auth_none	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065394
+1667	0	auth_none	2021051700	2021051700	Plugin upgraded	\N		0	1637065394
+1668	0	auth_oauth2	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065394
+1669	0	auth_oauth2	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065394
+1670	0	auth_oauth2	2021051700	2021051700	Plugin upgraded	\N		0	1637065395
+1671	0	auth_saml2	2020092900	2021062900	Starting plugin upgrade	\N		0	1637065395
+1672	0	auth_saml2	2021062900	2021062900	Upgrade savepoint reached	\N		0	1637065395
+1673	0	auth_saml2	2021062900	2021062900	Plugin upgraded	\N		0	1637065395
+1674	0	auth_shibboleth	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065395
+1675	0	auth_shibboleth	2020110901	2021051700	Upgrade savepoint reached	\N		0	1637065395
+1676	0	auth_shibboleth	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065395
+1677	0	auth_shibboleth	2021051700	2021051700	Plugin upgraded	\N		0	1637065395
+1678	0	auth_webservice	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065395
+1679	0	auth_webservice	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065395
+1680	0	auth_webservice	2021051700	2021051700	Plugin upgraded	\N		0	1637065396
+1681	0	calendartype_gregorian	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065396
+1682	0	calendartype_gregorian	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065396
+1683	0	calendartype_gregorian	2021051700	2021051700	Plugin upgraded	\N		0	1637065396
+1684	0	customfield_checkbox	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065396
+1685	0	customfield_checkbox	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065396
+1686	0	customfield_checkbox	2021051700	2021051700	Plugin upgraded	\N		0	1637065396
+1687	0	customfield_date	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065396
+1688	0	customfield_date	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065396
+1689	0	customfield_date	2021051700	2021051700	Plugin upgraded	\N		0	1637065397
+1690	0	customfield_select	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065397
+1691	0	customfield_select	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065397
+1692	0	customfield_select	2021051700	2021051700	Plugin upgraded	\N		0	1637065397
+1693	0	customfield_text	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065397
+1694	0	customfield_text	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065397
+1695	0	customfield_text	2021051700	2021051700	Plugin upgraded	\N		0	1637065397
+1696	0	customfield_textarea	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065397
+1697	0	customfield_textarea	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065398
+1698	0	customfield_textarea	2021051700	2021051700	Plugin upgraded	\N		0	1637065398
+1699	0	enrol_category	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065398
+1700	0	enrol_category	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065398
+1701	0	enrol_category	2021051700	2021051700	Plugin upgraded	\N		0	1637065398
+1702	0	enrol_cohort	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065398
+1703	0	enrol_cohort	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065398
+1704	0	enrol_cohort	2021051700	2021051700	Plugin upgraded	\N		0	1637065399
+1705	0	enrol_database	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065399
+1706	0	enrol_database	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065399
+1707	0	enrol_database	2021051700	2021051700	Plugin upgraded	\N		0	1637065399
+1708	0	enrol_fee	\N	2021051700	Starting plugin installation	\N		0	1637065399
+1709	0	enrol_fee	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065399
+1710	0	enrol_fee	2021051700	2021051700	Plugin installed	\N		0	1637065400
+1711	0	enrol_flatfile	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065400
+1712	0	enrol_flatfile	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065400
+1713	0	enrol_flatfile	2021051700	2021051700	Plugin upgraded	\N		0	1637065401
+1714	0	enrol_guest	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065401
+1715	0	enrol_guest	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065401
+1716	0	enrol_guest	2021051700	2021051700	Plugin upgraded	\N		0	1637065401
+1717	0	enrol_imsenterprise	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065401
+1718	0	enrol_imsenterprise	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065401
+1719	0	enrol_imsenterprise	2021051700	2021051700	Plugin upgraded	\N		0	1637065401
+1720	0	enrol_ldap	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065401
+1721	0	enrol_ldap	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065401
+1722	0	enrol_ldap	2021051700	2021051700	Plugin upgraded	\N		0	1637065402
+1723	0	enrol_lti	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065402
+1724	0	enrol_lti	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065402
+1725	0	enrol_lti	2021051700	2021051700	Plugin upgraded	\N		0	1637065402
+1726	0	enrol_manual	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065402
+1727	0	enrol_manual	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065402
+1728	0	enrol_manual	2021051700	2021051700	Plugin upgraded	\N		0	1637065402
+1729	0	enrol_meta	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065402
+1730	0	enrol_meta	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065402
+1731	0	enrol_meta	2021051700	2021051700	Plugin upgraded	\N		0	1637065403
+1732	0	enrol_mnet	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065403
+1733	0	enrol_mnet	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065403
+1734	0	enrol_mnet	2021051700	2021051700	Plugin upgraded	\N		0	1637065403
+1735	0	enrol_paypal	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065403
+1736	0	enrol_paypal	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065403
+1737	0	enrol_paypal	2021051700	2021051700	Plugin upgraded	\N		0	1637065403
+1738	0	enrol_self	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065403
+1739	0	enrol_self	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065403
+1740	0	enrol_self	2021051700	2021051700	Plugin upgraded	\N		0	1637065404
+1741	0	message_airnotifier	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065404
+1742	0	message_airnotifier	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065404
+1743	0	message_airnotifier	2021051700	2021051700	Plugin upgraded	\N		0	1637065404
+1744	0	message_email	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065404
+1745	0	message_email	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065404
+1746	0	message_email	2021051700	2021051700	Plugin upgraded	\N		0	1637065405
+1747	0	message_jabber	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065405
+1748	0	message_jabber	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065405
+1749	0	message_jabber	2021051700	2021051700	Plugin upgraded	\N		0	1637065405
+1750	0	message_popup	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065405
+1751	0	message_popup	2020020600	2021051700	Upgrade savepoint reached	\N		0	1637065405
+1752	0	message_popup	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065405
+1753	0	message_popup	2021051700	2021051700	Plugin upgraded	\N		0	1637065406
+1754	0	block_accessreview	\N	2021051700	Starting plugin installation	\N		0	1637065406
+1755	0	block_accessreview	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065406
+1756	0	block_accessreview	2021051700	2021051700	Plugin installed	\N		0	1637065407
+1757	0	block_activity_modules	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065407
+1758	0	block_activity_modules	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065407
+1759	0	block_activity_modules	2021051700	2021051700	Plugin upgraded	\N		0	1637065407
+1760	0	block_activity_results	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065407
+1761	0	block_activity_results	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065407
+1762	0	block_activity_results	2021051700	2021051700	Plugin upgraded	\N		0	1637065408
+1763	0	block_admin_bookmarks	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065408
+1764	0	block_admin_bookmarks	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065408
+1765	0	block_admin_bookmarks	2021051700	2021051700	Plugin upgraded	\N		0	1637065408
+1766	0	block_badges	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065408
+1767	0	block_badges	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065408
+1768	0	block_badges	2021051700	2021051700	Plugin upgraded	\N		0	1637065409
+1769	0	block_blog_menu	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065409
+1770	0	block_blog_menu	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065409
+1771	0	block_blog_menu	2021051700	2021051700	Plugin upgraded	\N		0	1637065409
+1772	0	block_blog_recent	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065409
+1773	0	block_blog_recent	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065409
+1774	0	block_blog_recent	2021051700	2021051700	Plugin upgraded	\N		0	1637065409
+1775	0	block_blog_tags	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065409
+1776	0	block_blog_tags	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065409
+1777	0	block_blog_tags	2021051700	2021051700	Plugin upgraded	\N		0	1637065410
+1778	0	block_calendar_month	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065410
+1779	0	block_calendar_month	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065410
+1780	0	block_calendar_month	2021051700	2021051700	Plugin upgraded	\N		0	1637065410
+1781	0	block_calendar_upcoming	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065410
+1782	0	block_calendar_upcoming	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065410
+1783	0	block_calendar_upcoming	2021051700	2021051700	Plugin upgraded	\N		0	1637065410
+1784	0	block_comments	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065410
+1785	0	block_comments	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065410
+1786	0	block_comments	2021051700	2021051700	Plugin upgraded	\N		0	1637065411
+1787	0	block_completion_progress	2020081000	2021070900	Starting plugin upgrade	\N		0	1637065411
+1788	0	block_completion_progress	2021070900	2021070900	Upgrade savepoint reached	\N		0	1637065411
+1789	0	block_completion_progress	2021070900	2021070900	Plugin upgraded	\N		0	1637065411
+1790	0	block_completionstatus	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065411
+1791	0	block_completionstatus	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065411
+1792	0	block_completionstatus	2021051700	2021051700	Plugin upgraded	\N		0	1637065411
+1793	0	block_configurable_reports	2020100800	2020110300	Starting plugin upgrade	\N		0	1637065411
+1794	0	block_configurable_reports	2020110300	2020110300	Upgrade savepoint reached	\N		0	1637065411
+1795	0	block_configurable_reports	2020110300	2020110300	Plugin upgraded	\N		0	1637065412
+1796	0	block_course_list	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065412
+1797	0	block_course_list	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065412
+1798	0	block_course_list	2021051700	2021051700	Plugin upgraded	\N		0	1637065412
+1799	0	block_course_summary	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065412
+1800	0	block_course_summary	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065412
+1801	0	block_course_summary	2021051700	2021051700	Plugin upgraded	\N		0	1637065412
+1802	0	block_courses_vicensvives	2020090800	2021072700	Starting plugin upgrade	\N		0	1637065412
+1803	0	block_courses_vicensvives	2021072700	2021072700	Upgrade savepoint reached	\N		0	1637065412
+1804	0	block_courses_vicensvives	2021072700	2021072700	Plugin upgraded	\N		0	1637065413
+1805	0	block_feedback	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065413
+1806	0	block_feedback	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065413
+1807	0	block_feedback	2021051700	2021051700	Plugin upgraded	\N		0	1637065413
+1808	0	block_globalsearch	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065413
+1809	0	block_globalsearch	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065413
+1810	0	block_globalsearch	2021051700	2021051700	Plugin upgraded	\N		0	1637065413
+1811	0	block_glossary_random	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065413
+1812	0	block_glossary_random	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065413
+1813	0	block_glossary_random	2021051700	2021051700	Plugin upgraded	\N		0	1637065414
+1814	0	block_html	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065414
+1815	0	block_html	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065414
+1816	0	block_html	2021051700	2021051700	Plugin upgraded	\N		0	1637065414
+1817	0	block_licenses_vicensvives	2020090800	2021072700	Starting plugin upgrade	\N		0	1637065414
+1818	0	block_licenses_vicensvives	2021072700	2021072700	Upgrade savepoint reached	\N		0	1637065414
+1819	0	block_licenses_vicensvives	2021072700	2021072700	Plugin upgraded	\N		0	1637065414
+1820	0	block_login	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065415
+1821	0	block_login	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065415
+1822	0	block_login	2021051700	2021051700	Plugin upgraded	\N		0	1637065415
+1823	0	block_lp	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065415
+1824	0	block_lp	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065415
+1825	0	block_lp	2021051700	2021051700	Plugin upgraded	\N		0	1637065415
+1826	0	block_mentees	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065415
+1827	0	block_mentees	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065415
+1828	0	block_mentees	2021051700	2021051700	Plugin upgraded	\N		0	1637065416
+1829	0	block_mnet_hosts	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065416
+1830	0	block_mnet_hosts	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065416
+1831	0	block_mnet_hosts	2021051700	2021051700	Plugin upgraded	\N		0	1637065416
+1832	0	block_myoverview	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065416
+1833	0	block_myoverview	2019111801	2021051700	Upgrade savepoint reached	\N		0	1637065416
+1834	0	block_myoverview	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065416
+1835	0	block_myoverview	2021051700	2021051700	Plugin upgraded	\N		0	1637065416
+1836	0	block_myprofile	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065416
+1837	0	block_myprofile	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065417
+1838	0	block_myprofile	2021051700	2021051700	Plugin upgraded	\N		0	1637065417
+1839	0	block_navigation	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065417
+1840	0	block_navigation	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065417
+1841	0	block_navigation	2021051700	2021051700	Plugin upgraded	\N		0	1637065417
+1842	0	block_news_items	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065417
+1843	0	block_news_items	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065417
+1844	0	block_news_items	2021051700	2021051700	Plugin upgraded	\N		0	1637065418
+1845	0	block_online_users	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065418
+1846	0	block_online_users	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065418
+1847	0	block_online_users	2021051700	2021051700	Plugin upgraded	\N		0	1637065418
+1848	0	block_private_files	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065418
+1849	0	block_private_files	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065418
+1850	0	block_private_files	2021051700	2021051700	Plugin upgraded	\N		0	1637065418
+1851	0	block_quiz_results	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065418
+1852	0	block_quiz_results	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065418
+1853	0	block_quiz_results	2021051700	2021051700	Plugin upgraded	\N		0	1637065419
+1854	0	block_recent_activity	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065419
+1855	0	block_recent_activity	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065419
+1856	0	block_recent_activity	2021051700	2021051700	Plugin upgraded	\N		0	1637065419
+1857	0	block_recentlyaccessedcourses	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065419
+1858	0	block_recentlyaccessedcourses	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065419
+1859	0	block_recentlyaccessedcourses	2021051700	2021051700	Plugin upgraded	\N		0	1637065419
+1860	0	block_recentlyaccesseditems	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065419
+1861	0	block_recentlyaccesseditems	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065419
+1862	0	block_recentlyaccesseditems	2021051700	2021051700	Plugin upgraded	\N		0	1637065420
+1863	0	block_rss_client	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065420
+1864	0	block_rss_client	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065420
+1865	0	block_rss_client	2021051700	2021051700	Plugin upgraded	\N		0	1637065420
+1866	0	block_search_forums	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065420
+1867	0	block_search_forums	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065420
+1868	0	block_search_forums	2021051700	2021051700	Plugin upgraded	\N		0	1637065420
+1869	0	block_section_links	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065420
+1870	0	block_section_links	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065420
+1871	0	block_section_links	2021051700	2021051700	Plugin upgraded	\N		0	1637065421
+1872	0	block_selfcompletion	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065421
+1873	0	block_selfcompletion	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065421
+1874	0	block_selfcompletion	2021051700	2021051700	Plugin upgraded	\N		0	1637065421
+1875	0	block_settings	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065421
+1876	0	block_settings	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065421
+1877	0	block_settings	2021051700	2021051700	Plugin upgraded	\N		0	1637065421
+1878	0	block_site_main_menu	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065421
+1879	0	block_site_main_menu	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065421
+1880	0	block_site_main_menu	2021051700	2021051700	Plugin upgraded	\N		0	1637065422
+1881	0	block_social_activities	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065422
+1882	0	block_social_activities	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065422
+1883	0	block_social_activities	2021051700	2021051700	Plugin upgraded	\N		0	1637065422
+1884	0	block_starredcourses	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065422
+1885	0	block_starredcourses	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065422
+1886	0	block_starredcourses	2021051700	2021051700	Plugin upgraded	\N		0	1637065422
+1887	0	block_tag_flickr	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065422
+1888	0	block_tag_flickr	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065422
+1889	0	block_tag_flickr	2021051700	2021051700	Plugin upgraded	\N		0	1637065423
+1890	0	block_tag_youtube	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065423
+1891	0	block_tag_youtube	2020110901	2021051700	Upgrade savepoint reached	\N		0	1637065423
+1892	0	block_tag_youtube	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065423
+1893	0	block_tag_youtube	2021051700	2021051700	Plugin upgraded	\N		0	1637065423
+1894	0	block_tags	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065423
+1895	0	block_tags	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065423
+1896	0	block_tags	2021051700	2021051700	Plugin upgraded	\N		0	1637065423
+1897	0	block_timeline	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065423
+1898	0	block_timeline	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065423
+1899	0	block_timeline	2021051700	2021051700	Plugin upgraded	\N		0	1637065424
+1900	0	media_html5audio	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065424
+1962	0	filter_wiris	2020090300	2021110900	Starting plugin upgrade	\N		0	1637065431
+1901	0	media_html5audio	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065424
+1902	0	media_html5audio	2021051700	2021051700	Plugin upgraded	\N		0	1637065424
+1903	0	media_html5video	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065424
+1904	0	media_html5video	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065424
+1905	0	media_html5video	2021051700	2021051700	Plugin upgraded	\N		0	1637065424
+1906	0	media_swf	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065424
+1907	0	media_swf	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065424
+1908	0	media_swf	2021051700	2021051700	Plugin upgraded	\N		0	1637065425
+1909	0	media_videojs	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065425
+1910	0	media_videojs	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065425
+1911	0	media_videojs	2021051700	2021051700	Plugin upgraded	\N		0	1637065425
+1912	0	media_vimeo	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065425
+1913	0	media_vimeo	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065425
+1914	0	media_vimeo	2021051700	2021051700	Plugin upgraded	\N		0	1637065426
+1915	0	media_youtube	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065426
+1916	0	media_youtube	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065426
+1917	0	media_youtube	2021051700	2021051700	Plugin upgraded	\N		0	1637065426
+1918	0	filter_activitynames	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065426
+1919	0	filter_activitynames	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065426
+1920	0	filter_activitynames	2021051700	2021051700	Plugin upgraded	\N		0	1637065426
+1921	0	filter_algebra	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065426
+1922	0	filter_algebra	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065426
+1923	0	filter_algebra	2021051700	2021051700	Plugin upgraded	\N		0	1637065427
+1924	0	filter_censor	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065427
+1925	0	filter_censor	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065427
+1926	0	filter_censor	2021051700	2021051700	Plugin upgraded	\N		0	1637065427
+1927	0	filter_data	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065427
+1928	0	filter_data	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065427
+1929	0	filter_data	2021051700	2021051700	Plugin upgraded	\N		0	1637065427
+1930	0	filter_displayh5p	2020031700	2021051700	Starting plugin upgrade	\N		0	1637065427
+1931	0	filter_displayh5p	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065427
+1932	0	filter_displayh5p	2021051700	2021051700	Plugin upgraded	\N		0	1637065428
+1933	0	filter_emailprotect	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065428
+1934	0	filter_emailprotect	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065428
+1935	0	filter_emailprotect	2021051700	2021051700	Plugin upgraded	\N		0	1637065428
+1936	0	filter_emoticon	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065428
+1937	0	filter_emoticon	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065428
+1938	0	filter_emoticon	2021051700	2021051700	Plugin upgraded	\N		0	1637065428
+1939	0	filter_glossary	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065428
+1940	0	filter_glossary	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065428
+1941	0	filter_glossary	2021051700	2021051700	Plugin upgraded	\N		0	1637065429
+1942	0	filter_mathjaxloader	2019111801	2021051700	Starting plugin upgrade	\N		0	1637065429
+1943	0	filter_mathjaxloader	2020050401	2021051700	Upgrade savepoint reached	\N		0	1637065429
+1944	0	filter_mathjaxloader	2021012000	2021051700	Upgrade savepoint reached	\N		0	1637065429
+1945	0	filter_mathjaxloader	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065429
+1946	0	filter_mathjaxloader	2021051700	2021051700	Plugin upgraded	\N		0	1637065429
+1947	0	filter_mediaplugin	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065429
+1948	0	filter_mediaplugin	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065429
+1949	0	filter_mediaplugin	2021051700	2021051700	Plugin upgraded	\N		0	1637065429
+1950	0	filter_multilang	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065429
+1951	0	filter_multilang	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065429
+1952	0	filter_multilang	2021051700	2021051700	Plugin upgraded	\N		0	1637065430
+1953	0	filter_tex	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065430
+1954	0	filter_tex	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065430
+1955	0	filter_tex	2021051700	2021051700	Plugin upgraded	\N		0	1637065430
+1956	0	filter_tidy	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065430
+1957	0	filter_tidy	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065430
+1958	0	filter_tidy	2021051700	2021051700	Plugin upgraded	\N		0	1637065430
+1959	0	filter_urltolink	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065430
+1960	0	filter_urltolink	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065430
+1961	0	filter_urltolink	2021051700	2021051700	Plugin upgraded	\N		0	1637065431
+1963	0	filter_wiris	2021110900	2021110900	Upgrade savepoint reached	\N		0	1637065431
+1964	0	filter_wiris	2021110900	2021110900	Plugin upgraded	\N		0	1637065431
+1965	0	editor_atto	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065431
+1966	0	editor_atto	2020052100	2021051700	Upgrade savepoint reached	\N		0	1637065431
+1967	0	editor_atto	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065431
+1968	0	editor_atto	2021051700	2021051700	Plugin upgraded	\N		0	1637065431
+1969	0	editor_textarea	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065431
+1970	0	editor_textarea	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065431
+1971	0	editor_textarea	2021051700	2021051700	Plugin upgraded	\N		0	1637065432
+1972	0	editor_tinymce	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065432
+1973	0	editor_tinymce	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065432
+1974	0	editor_tinymce	2021051700	2021051700	Plugin upgraded	\N		0	1637065432
+1975	0	format_singleactivity	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065432
+1976	0	format_singleactivity	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065432
+1977	0	format_singleactivity	2021051700	2021051700	Plugin upgraded	\N		0	1637065433
+1978	0	format_social	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065433
+1979	0	format_social	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065433
+1980	0	format_social	2021051700	2021051700	Plugin upgraded	\N		0	1637065433
+1981	0	format_topics	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065433
+1982	0	format_topics	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065433
+1983	0	format_topics	2021051700	2021051700	Plugin upgraded	\N		0	1637065433
+1984	0	format_vv	2020090800	2021072700	Starting plugin upgrade	\N		0	1637065433
+1985	0	format_vv	2021072700	2021072700	Upgrade savepoint reached	\N		0	1637065433
+1986	0	format_vv	2021072700	2021072700	Plugin upgraded	\N		0	1637065434
+1987	0	format_weeks	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065434
+1988	0	format_weeks	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065434
+1989	0	format_weeks	2021051700	2021051700	Plugin upgraded	\N		0	1637065434
+1990	0	dataformat_csv	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065434
+1991	0	dataformat_csv	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065434
+1992	0	dataformat_csv	2021051700	2021051700	Plugin upgraded	\N		0	1637065434
+1993	0	dataformat_excel	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065434
+1994	0	dataformat_excel	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065434
+1995	0	dataformat_excel	2021051700	2021051700	Plugin upgraded	\N		0	1637065435
+1996	0	dataformat_html	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065435
+1997	0	dataformat_html	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065435
+1998	0	dataformat_html	2021051700	2021051700	Plugin upgraded	\N		0	1637065435
+1999	0	dataformat_json	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065435
+2000	0	dataformat_json	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065435
+2001	0	dataformat_json	2021051700	2021051700	Plugin upgraded	\N		0	1637065435
+2002	0	dataformat_ods	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065435
+2003	0	dataformat_ods	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065435
+2004	0	dataformat_ods	2021051700	2021051700	Plugin upgraded	\N		0	1637065436
+2005	0	dataformat_pdf	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065436
+2006	0	dataformat_pdf	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065436
+2007	0	dataformat_pdf	2021051700	2021051700	Plugin upgraded	\N		0	1637065436
+2008	0	profilefield_checkbox	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065436
+2009	0	profilefield_checkbox	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065436
+2010	0	profilefield_checkbox	2021051700	2021051700	Plugin upgraded	\N		0	1637065436
+2011	0	profilefield_datetime	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065436
+2012	0	profilefield_datetime	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065436
+2013	0	profilefield_datetime	2021051700	2021051700	Plugin upgraded	\N		0	1637065437
+2014	0	profilefield_menu	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065437
+2015	0	profilefield_menu	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065437
+2016	0	profilefield_menu	2021051700	2021051700	Plugin upgraded	\N		0	1637065437
+2017	0	profilefield_social	\N	2021051700	Starting plugin installation	\N		0	1637065437
+2018	0	profilefield_social	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065437
+2019	0	profilefield_social	2021051700	2021051700	Plugin installed	\N		0	1637065437
+2020	0	profilefield_text	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065437
+2021	0	profilefield_text	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065437
+2022	0	profilefield_text	2021051700	2021051700	Plugin upgraded	\N		0	1637065438
+2023	0	profilefield_textarea	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065438
+2024	0	profilefield_textarea	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065438
+2025	0	profilefield_textarea	2021051700	2021051700	Plugin upgraded	\N		0	1637065438
+2026	0	report_backups	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065438
+2027	0	report_backups	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065438
+2028	0	report_backups	2021051700	2021051700	Plugin upgraded	\N		0	1637065438
+2029	0	report_competency	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065438
+2030	0	report_competency	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065438
+2031	0	report_competency	2021051700	2021051700	Plugin upgraded	\N		0	1637065439
+2032	0	report_completion	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065439
+2033	0	report_completion	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065439
+2034	0	report_completion	2021051700	2021051700	Plugin upgraded	\N		0	1637065439
+2035	0	report_configlog	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065439
+2036	0	report_configlog	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065439
+2037	0	report_configlog	2021051700	2021051700	Plugin upgraded	\N		0	1637065440
+2038	0	report_courseoverview	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065440
+2039	0	report_courseoverview	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065440
+2040	0	report_courseoverview	2021051700	2021051700	Plugin upgraded	\N		0	1637065440
+2041	0	report_coursequotas	2016091400	2021062300	Starting plugin upgrade	\N		0	1637065440
+2042	0	report_coursequotas	2021020100	2021062300	Upgrade savepoint reached	\N		0	1637065440
+2043	0	report_coursequotas	2021062300	2021062300	Upgrade savepoint reached	\N		0	1637065440
+2044	0	report_coursequotas	2021062300	2021062300	Plugin upgraded	\N		0	1637065440
+2045	0	report_eventlist	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065440
+2046	0	report_eventlist	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065440
+2047	0	report_eventlist	2021051700	2021051700	Plugin upgraded	\N		0	1637065441
+2048	0	report_infectedfiles	\N	2021051700	Starting plugin installation	\N		0	1637065441
+2049	0	report_infectedfiles	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065441
+2050	0	report_infectedfiles	2021051700	2021051700	Plugin installed	\N		0	1637065441
+2051	0	report_insights	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065441
+2052	0	report_insights	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065441
+2053	0	report_insights	2021051700	2021051700	Plugin upgraded	\N		0	1637065442
+2054	0	report_log	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065442
+2055	0	report_log	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065442
+2056	0	report_log	2021051700	2021051700	Plugin upgraded	\N		0	1637065442
+2057	0	report_loglive	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065442
+2058	0	report_loglive	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065442
+2059	0	report_loglive	2021051700	2021051700	Plugin upgraded	\N		0	1637065442
+2060	0	report_outline	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065442
+2061	0	report_outline	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065442
+2062	0	report_outline	2021051700	2021051700	Plugin upgraded	\N		0	1637065443
+2063	0	report_participation	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065443
+2064	0	report_participation	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065443
+2065	0	report_participation	2021051700	2021051700	Plugin upgraded	\N		0	1637065443
+2066	0	report_performance	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065443
+2067	0	report_performance	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065443
+2068	0	report_performance	2021051700	2021051700	Plugin upgraded	\N		0	1637065443
+2069	0	report_progress	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065443
+2070	0	report_progress	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065443
+2071	0	report_progress	2021051700	2021051700	Plugin upgraded	\N		0	1637065444
+2072	0	report_questioninstances	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065444
+2073	0	report_questioninstances	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065444
+2074	0	report_questioninstances	2021051700	2021051700	Plugin upgraded	\N		0	1637065444
+2075	0	report_security	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065444
+2076	0	report_security	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065444
+2077	0	report_security	2021051700	2021051700	Plugin upgraded	\N		0	1637065444
+2078	0	report_stats	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065444
+2079	0	report_stats	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065444
+2080	0	report_stats	2021051700	2021051700	Plugin upgraded	\N		0	1637065445
+2081	0	report_status	\N	2021051700	Starting plugin installation	\N		0	1637065445
+2082	0	report_status	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065445
+2083	0	report_status	2021051700	2021051700	Plugin installed	\N		0	1637065445
+2084	0	report_usersessions	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065445
+2085	0	report_usersessions	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065445
+2086	0	report_usersessions	2021051700	2021051700	Plugin upgraded	\N		0	1637065446
+2087	0	gradeexport_ods	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065446
+2088	0	gradeexport_ods	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065446
+2089	0	gradeexport_ods	2021051700	2021051700	Plugin upgraded	\N		0	1637065446
+2090	0	gradeexport_txt	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065446
+2091	0	gradeexport_txt	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065446
+2092	0	gradeexport_txt	2021051700	2021051700	Plugin upgraded	\N		0	1637065446
+2093	0	gradeexport_xls	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065446
+2094	0	gradeexport_xls	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065446
+2095	0	gradeexport_xls	2021051700	2021051700	Plugin upgraded	\N		0	1637065447
+2096	0	gradeexport_xml	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065447
+2097	0	gradeexport_xml	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065447
+2098	0	gradeexport_xml	2021051700	2021051700	Plugin upgraded	\N		0	1637065447
+2099	0	gradeimport_csv	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065447
+2100	0	gradeimport_csv	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065447
+2101	0	gradeimport_csv	2021051700	2021051700	Plugin upgraded	\N		0	1637065447
+2102	0	gradeimport_direct	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065447
+2103	0	gradeimport_direct	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065447
+2104	0	gradeimport_direct	2021051700	2021051700	Plugin upgraded	\N		0	1637065448
+2105	0	gradeimport_xml	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065448
+2106	0	gradeimport_xml	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065448
+2107	0	gradeimport_xml	2021051700	2021051700	Plugin upgraded	\N		0	1637065448
+2108	0	gradereport_grader	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065448
+2109	0	gradereport_grader	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065448
+2110	0	gradereport_grader	2021051700	2021051700	Plugin upgraded	\N		0	1637065448
+2111	0	gradereport_history	2019111801	2021051700	Starting plugin upgrade	\N		0	1637065448
+2112	0	gradereport_history	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065448
+2113	0	gradereport_history	2021051700	2021051700	Plugin upgraded	\N		0	1637065449
+2114	0	gradereport_outcomes	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065449
+2115	0	gradereport_outcomes	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065449
+2116	0	gradereport_outcomes	2021051700	2021051700	Plugin upgraded	\N		0	1637065449
+2117	0	gradereport_overview	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065449
+2118	0	gradereport_overview	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065449
+2119	0	gradereport_overview	2021051700	2021051700	Plugin upgraded	\N		0	1637065449
+2120	0	gradereport_singleview	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065449
+2121	0	gradereport_singleview	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065449
+2122	0	gradereport_singleview	2021051700	2021051700	Plugin upgraded	\N		0	1637065450
+2123	0	gradereport_user	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065450
+2124	0	gradereport_user	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065450
+2125	0	gradereport_user	2021051700	2021051700	Plugin upgraded	\N		0	1637065450
+2126	0	gradingform_guide	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065450
+2127	0	gradingform_guide	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065450
+2128	0	gradingform_guide	2021051700	2021051700	Plugin upgraded	\N		0	1637065450
+2129	0	gradingform_rubric	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065450
+2130	0	gradingform_rubric	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065450
+2131	0	gradingform_rubric	2021051700	2021051700	Plugin upgraded	\N		0	1637065451
+2132	0	mlbackend_php	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065451
+2133	0	mlbackend_php	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065451
+2134	0	mlbackend_php	2021051700	2021051700	Plugin upgraded	\N		0	1637065451
+2135	0	mlbackend_python	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065451
+2136	0	mlbackend_python	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065451
+2137	0	mlbackend_python	2021051700	2021051700	Plugin upgraded	\N		0	1637065452
+2138	0	mnetservice_enrol	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065452
+2139	0	mnetservice_enrol	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065452
+2140	0	mnetservice_enrol	2021051700	2021051700	Plugin upgraded	\N		0	1637065452
+2141	0	webservice_rest	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065452
+2142	0	webservice_rest	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065452
+2143	0	webservice_rest	2021051700	2021051700	Plugin upgraded	\N		0	1637065452
+2144	0	webservice_soap	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065452
+2145	0	webservice_soap	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065452
+2146	0	webservice_soap	2021051700	2021051700	Plugin upgraded	\N		0	1637065453
+2147	0	webservice_xmlrpc	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065453
+2148	0	webservice_xmlrpc	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065453
+2149	0	webservice_xmlrpc	2021051700	2021051700	Plugin upgraded	\N		0	1637065453
+2150	0	repository_areafiles	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065453
+2151	0	repository_areafiles	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065453
+2152	0	repository_areafiles	2021051700	2021051700	Plugin upgraded	\N		0	1637065453
+2153	0	repository_boxnet	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065453
+2154	0	repository_boxnet	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065453
+2155	0	repository_boxnet	2021051700	2021051700	Plugin upgraded	\N		0	1637065454
+2156	0	repository_contentbank	\N	2021051700	Starting plugin installation	\N		0	1637065454
+2157	0	repository_contentbank	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065454
+2158	0	repository_contentbank	2021051700	2021051700	Plugin installed	\N		0	1637065456
+2159	0	repository_coursefiles	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065456
+2160	0	repository_coursefiles	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065456
+2161	0	repository_coursefiles	2021051700	2021051700	Plugin upgraded	\N		0	1637065457
+2162	0	repository_dropbox	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065457
+2163	0	repository_dropbox	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065457
+2164	0	repository_dropbox	2021051700	2021051700	Plugin upgraded	\N		0	1637065457
+2165	0	repository_equella	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065457
+2166	0	repository_equella	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065457
+2167	0	repository_equella	2021051700	2021051700	Plugin upgraded	\N		0	1637065457
+2168	0	repository_filesystem	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065457
+2169	0	repository_filesystem	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065457
+2170	0	repository_filesystem	2021051700	2021051700	Plugin upgraded	\N		0	1637065458
+2171	0	repository_flickr	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065458
+2172	0	repository_flickr	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065458
+2173	0	repository_flickr	2021051700	2021051700	Plugin upgraded	\N		0	1637065458
+2174	0	repository_flickr_public	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065458
+2175	0	repository_flickr_public	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065458
+2176	0	repository_flickr_public	2021051700	2021051700	Plugin upgraded	\N		0	1637065459
+2177	0	repository_googledocs	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065459
+2178	0	repository_googledocs	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065459
+2179	0	repository_googledocs	2021051700	2021051700	Plugin upgraded	\N		0	1637065459
+2180	0	repository_local	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065459
+2181	0	repository_local	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065459
+2182	0	repository_local	2021051700	2021051700	Plugin upgraded	\N		0	1637065459
+2183	0	repository_merlot	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065459
+2184	0	repository_merlot	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065459
+2185	0	repository_merlot	2021051700	2021051700	Plugin upgraded	\N		0	1637065460
+2186	0	repository_nextcloud	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065460
+2187	0	repository_nextcloud	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065460
+2188	0	repository_nextcloud	2021051700	2021051700	Plugin upgraded	\N		0	1637065460
+2189	0	repository_onedrive	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065460
+2190	0	repository_onedrive	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065460
+2191	0	repository_onedrive	2021051700	2021051700	Plugin upgraded	\N		0	1637065460
+2192	0	repository_picasa	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065460
+2193	0	repository_picasa	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065460
+2194	0	repository_picasa	2021051700	2021051700	Plugin upgraded	\N		0	1637065461
+2195	0	repository_recent	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065461
+2196	0	repository_recent	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065461
+2197	0	repository_recent	2021051700	2021051700	Plugin upgraded	\N		0	1637065461
+2198	0	repository_s3	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065461
+2199	0	repository_s3	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065461
+2200	0	repository_s3	2021051700	2021051700	Plugin upgraded	\N		0	1637065461
+2201	0	repository_skydrive	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065461
+2202	0	repository_skydrive	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065461
+2203	0	repository_skydrive	2021051700	2021051700	Plugin upgraded	\N		0	1637065462
+2204	0	repository_upload	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065462
+2205	0	repository_upload	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065462
+2206	0	repository_upload	2021051700	2021051700	Plugin upgraded	\N		0	1637065462
+2207	0	repository_url	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065462
+2208	0	repository_url	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065462
+2209	0	repository_url	2021051700	2021051700	Plugin upgraded	\N		0	1637065462
+2210	0	repository_user	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065462
+2211	0	repository_user	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065462
+2212	0	repository_user	2021051700	2021051700	Plugin upgraded	\N		0	1637065463
+2213	0	repository_webdav	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065463
+2214	0	repository_webdav	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065463
+2215	0	repository_webdav	2021051700	2021051700	Plugin upgraded	\N		0	1637065463
+2216	0	repository_wikimedia	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065463
+2217	0	repository_wikimedia	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065463
+2218	0	repository_wikimedia	2021051700	2021051700	Plugin upgraded	\N		0	1637065463
+2219	0	repository_youtube	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065463
+2220	0	repository_youtube	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065463
+2221	0	repository_youtube	2021051700	2021051700	Plugin upgraded	\N		0	1637065464
+2222	0	portfolio_boxnet	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065464
+2223	0	portfolio_boxnet	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065464
+2224	0	portfolio_boxnet	2021051700	2021051700	Plugin upgraded	\N		0	1637065464
+2225	0	portfolio_download	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065464
+2226	0	portfolio_download	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065464
+2227	0	portfolio_download	2021051700	2021051700	Plugin upgraded	\N		0	1637065464
+2228	0	portfolio_flickr	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065464
+2229	0	portfolio_flickr	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065464
+2230	0	portfolio_flickr	2021051700	2021051700	Plugin upgraded	\N		0	1637065465
+2231	0	portfolio_googledocs	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065465
+2232	0	portfolio_googledocs	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065465
+2233	0	portfolio_googledocs	2021051700	2021051700	Plugin upgraded	\N		0	1637065465
+2234	0	portfolio_mahara	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065465
+2235	0	portfolio_mahara	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065465
+2236	0	portfolio_mahara	2021051700	2021051700	Plugin upgraded	\N		0	1637065466
+2237	0	portfolio_picasa	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065466
+2238	0	portfolio_picasa	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065466
+2239	0	portfolio_picasa	2021051700	2021051700	Plugin upgraded	\N		0	1637065466
+2240	0	search_simpledb	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065466
+2241	0	search_simpledb	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065466
+2242	0	search_simpledb	2021051700	2021051700	Plugin upgraded	\N		0	1637065466
+2243	0	search_solr	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065466
+2244	0	search_solr	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065466
+2245	0	search_solr	2021051700	2021051700	Plugin upgraded	\N		0	1637065467
+2246	0	qbehaviour_adaptive	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065467
+2247	0	qbehaviour_adaptive	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065467
+2248	0	qbehaviour_adaptive	2021051700	2021051700	Plugin upgraded	\N		0	1637065467
+2249	0	qbehaviour_adaptivenopenalty	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065467
+2250	0	qbehaviour_adaptivenopenalty	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065467
+2251	0	qbehaviour_adaptivenopenalty	2021051700	2021051700	Plugin upgraded	\N		0	1637065467
+2252	0	qbehaviour_deferredcbm	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065467
+2253	0	qbehaviour_deferredcbm	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065467
+2254	0	qbehaviour_deferredcbm	2021051700	2021051700	Plugin upgraded	\N		0	1637065468
+2255	0	qbehaviour_deferredfeedback	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065468
+2256	0	qbehaviour_deferredfeedback	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065468
+2257	0	qbehaviour_deferredfeedback	2021051700	2021051700	Plugin upgraded	\N		0	1637065468
+2258	0	qbehaviour_immediatecbm	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065468
+2259	0	qbehaviour_immediatecbm	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065468
+2260	0	qbehaviour_immediatecbm	2021051700	2021051700	Plugin upgraded	\N		0	1637065468
+2261	0	qbehaviour_immediatefeedback	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065468
+2262	0	qbehaviour_immediatefeedback	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065468
+2385	0	tool_moodlenet	2021051700	2021051700	Plugin installed	\N		0	1637065485
+2263	0	qbehaviour_immediatefeedback	2021051700	2021051700	Plugin upgraded	\N		0	1637065469
+2264	0	qbehaviour_informationitem	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065469
+2265	0	qbehaviour_informationitem	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065469
+2266	0	qbehaviour_informationitem	2021051700	2021051700	Plugin upgraded	\N		0	1637065469
+2267	0	qbehaviour_interactive	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065469
+2268	0	qbehaviour_interactive	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065469
+2269	0	qbehaviour_interactive	2021051700	2021051700	Plugin upgraded	\N		0	1637065469
+2270	0	qbehaviour_interactivecountback	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065469
+2271	0	qbehaviour_interactivecountback	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065469
+2272	0	qbehaviour_interactivecountback	2021051700	2021051700	Plugin upgraded	\N		0	1637065470
+2273	0	qbehaviour_manualgraded	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065470
+2274	0	qbehaviour_manualgraded	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065470
+2275	0	qbehaviour_manualgraded	2021051700	2021051700	Plugin upgraded	\N		0	1637065470
+2276	0	qbehaviour_missing	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065470
+2277	0	qbehaviour_missing	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065470
+2278	0	qbehaviour_missing	2021051700	2021051700	Plugin upgraded	\N		0	1637065470
+2279	0	qformat_aiken	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065470
+2280	0	qformat_aiken	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065470
+2281	0	qformat_aiken	2021051700	2021051700	Plugin upgraded	\N		0	1637065471
+2282	0	qformat_blackboard_six	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065471
+2283	0	qformat_blackboard_six	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065471
+2284	0	qformat_blackboard_six	2021051700	2021051700	Plugin upgraded	\N		0	1637065471
+2285	0	qformat_examview	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065471
+2286	0	qformat_examview	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065471
+2287	0	qformat_examview	2021051700	2021051700	Plugin upgraded	\N		0	1637065471
+2288	0	qformat_gift	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065471
+2289	0	qformat_gift	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065471
+2290	0	qformat_gift	2021051700	2021051700	Plugin upgraded	\N		0	1637065472
+2291	0	qformat_missingword	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065472
+2292	0	qformat_missingword	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065472
+2293	0	qformat_missingword	2021051700	2021051700	Plugin upgraded	\N		0	1637065472
+2294	0	qformat_multianswer	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065472
+2295	0	qformat_multianswer	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065472
+2296	0	qformat_multianswer	2021051700	2021051700	Plugin upgraded	\N		0	1637065472
+2297	0	qformat_webct	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065472
+2298	0	qformat_webct	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065472
+2299	0	qformat_webct	2021051700	2021051700	Plugin upgraded	\N		0	1637065473
+2300	0	qformat_xhtml	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065473
+2301	0	qformat_xhtml	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065473
+2302	0	qformat_xhtml	2021051700	2021051700	Plugin upgraded	\N		0	1637065473
+2303	0	qformat_xml	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065473
+2304	0	qformat_xml	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065473
+2305	0	qformat_xml	2021051700	2021051700	Plugin upgraded	\N		0	1637065473
+2306	0	tool_analytics	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065473
+2307	0	tool_analytics	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065473
+2308	0	tool_analytics	2021051700	2021051700	Plugin upgraded	\N		0	1637065474
+2309	0	tool_availabilityconditions	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065474
+2310	0	tool_availabilityconditions	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065474
+2311	0	tool_availabilityconditions	2021051700	2021051700	Plugin upgraded	\N		0	1637065474
+2312	0	tool_behat	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065474
+2313	0	tool_behat	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065474
+2314	0	tool_behat	2021051700	2021051700	Plugin upgraded	\N		0	1637065474
+2315	0	tool_brickfield	\N	2021051700	Starting plugin installation	\N		0	1637065475
+2316	0	tool_brickfield	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065475
+2317	0	tool_brickfield	2021051700	2021051700	Plugin installed	\N		0	1637065476
+2318	0	tool_capability	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065477
+2319	0	tool_capability	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065477
+2320	0	tool_capability	2021051700	2021051700	Plugin upgraded	\N		0	1637065477
+2321	0	tool_cohortroles	2019111801	2021051700	Starting plugin upgrade	\N		0	1637065477
+2322	0	tool_cohortroles	2020020600	2021051700	Upgrade savepoint reached	\N		0	1637065477
+2323	0	tool_cohortroles	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065477
+2324	0	tool_cohortroles	2021051700	2021051700	Plugin upgraded	\N		0	1637065477
+2325	0	tool_customlang	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065477
+2326	0	tool_customlang	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065477
+2327	0	tool_customlang	2021051700	2021051700	Plugin upgraded	\N		0	1637065478
+2328	0	tool_dataprivacy	2019111801	2021051700	Starting plugin upgrade	\N		0	1637065478
+2329	0	tool_dataprivacy	2020061501	2021051700	Upgrade savepoint reached	\N		0	1637065478
+2330	0	tool_dataprivacy	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065478
+2331	0	tool_dataprivacy	2021051700	2021051700	Plugin upgraded	\N		0	1637065478
+2332	0	tool_dbtransfer	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065478
+2333	0	tool_dbtransfer	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065478
+2334	0	tool_dbtransfer	2021051700	2021051700	Plugin upgraded	\N		0	1637065479
+2335	0	tool_filetypes	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065479
+2336	0	tool_filetypes	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065479
+2337	0	tool_filetypes	2021051700	2021051700	Plugin upgraded	\N		0	1637065479
+2338	0	tool_generator	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065479
+2339	0	tool_generator	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065479
+2340	0	tool_generator	2021051700	2021051700	Plugin upgraded	\N		0	1637065480
+2341	0	tool_health	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065480
+2342	0	tool_health	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065480
+2343	0	tool_health	2021051700	2021051700	Plugin upgraded	\N		0	1637065480
+2344	0	tool_httpsreplace	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065480
+2345	0	tool_httpsreplace	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065480
+2346	0	tool_httpsreplace	2021051700	2021051700	Plugin upgraded	\N		0	1637065480
+2347	0	tool_innodb	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065480
+2348	0	tool_innodb	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065480
+2349	0	tool_innodb	2021051700	2021051700	Plugin upgraded	\N		0	1637065481
+2350	0	tool_installaddon	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065481
+2351	0	tool_installaddon	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065481
+2352	0	tool_installaddon	2021051700	2021051700	Plugin upgraded	\N		0	1637065481
+2353	0	tool_langimport	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065481
+2354	0	tool_langimport	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065481
+2355	0	tool_langimport	2021051700	2021051700	Plugin upgraded	\N		0	1637065481
+2356	0	tool_licensemanager	\N	2021051700	Starting plugin installation	\N		0	1637065481
+2357	0	tool_licensemanager	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065481
+2358	0	tool_licensemanager	2021051700	2021051700	Plugin installed	\N		0	1637065482
+2359	0	tool_log	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065482
+2360	0	tool_log	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065482
+2361	0	tool_log	2021051700	2021051700	Plugin upgraded	\N		0	1637065482
+2362	0	tool_lp	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065482
+2363	0	tool_lp	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065482
+2364	0	tool_lp	2021051700	2021051700	Plugin upgraded	\N		0	1637065482
+2365	0	tool_lpimportcsv	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065482
+2366	0	tool_lpimportcsv	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065482
+2367	0	tool_lpimportcsv	2021051700	2021051700	Plugin upgraded	\N		0	1637065483
+2368	0	tool_lpmigrate	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065483
+2369	0	tool_lpmigrate	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065483
+2370	0	tool_lpmigrate	2021051700	2021051700	Plugin upgraded	\N		0	1637065483
+2371	0	tool_messageinbound	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065483
+2372	0	tool_messageinbound	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065483
+2373	0	tool_messageinbound	2021051700	2021051700	Plugin upgraded	\N		0	1637065484
+2374	0	tool_migratehvp2h5p	\N	2021020400	Starting plugin installation	\N		0	1637065484
+2375	0	tool_migratehvp2h5p	2021020400	2021020400	Upgrade savepoint reached	\N		0	1637065484
+2376	0	tool_migratehvp2h5p	2021020400	2021020400	Plugin installed	\N		0	1637065484
+2377	0	tool_mobile	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065484
+2378	0	tool_mobile	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065484
+2379	0	tool_mobile	2021051700	2021051700	Plugin upgraded	\N		0	1637065484
+2380	0	tool_monitor	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065484
+2381	0	tool_monitor	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065484
+2382	0	tool_monitor	2021051700	2021051700	Plugin upgraded	\N		0	1637065485
+2383	0	tool_moodlenet	\N	2021051700	Starting plugin installation	\N		0	1637065485
+2384	0	tool_moodlenet	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065485
+2386	0	tool_multilangupgrade	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065485
+2387	0	tool_multilangupgrade	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065485
+2388	0	tool_multilangupgrade	2021051700	2021051700	Plugin upgraded	\N		0	1637065485
+2389	0	tool_oauth2	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065485
+2390	0	tool_oauth2	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065485
+2391	0	tool_oauth2	2021051700	2021051700	Plugin upgraded	\N		0	1637065486
+2392	0	tool_odisseagtafsync	2015012501	2021032300	Starting plugin upgrade	\N		0	1637065486
+2393	0	tool_odisseagtafsync	2021032300	2021032300	Upgrade savepoint reached	\N		0	1637065486
+2394	0	tool_odisseagtafsync	2021032300	2021032300	Plugin upgraded	\N		0	1637065486
+2395	0	tool_phpunit	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065486
+2396	0	tool_phpunit	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065486
+2397	0	tool_phpunit	2021051700	2021051700	Plugin upgraded	\N		0	1637065486
+2398	0	tool_policy	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065486
+2399	0	tool_policy	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065486
+2400	0	tool_policy	2021051700	2021051700	Plugin upgraded	\N		0	1637065487
+2401	0	tool_profiling	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065487
+2402	0	tool_profiling	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065487
+2403	0	tool_profiling	2021051700	2021051700	Plugin upgraded	\N		0	1637065487
+2404	0	tool_recyclebin	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065487
+2405	0	tool_recyclebin	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065487
+2406	0	tool_recyclebin	2021051700	2021051700	Plugin upgraded	\N		0	1637065487
+2407	0	tool_replace	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065487
+2408	0	tool_replace	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065487
+2409	0	tool_replace	2021051700	2021051700	Plugin upgraded	\N		0	1637065488
+2410	0	tool_spamcleaner	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065488
+2411	0	tool_spamcleaner	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065488
+2412	0	tool_spamcleaner	2021051700	2021051700	Plugin upgraded	\N		0	1637065488
+2413	0	tool_task	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065488
+2414	0	tool_task	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065488
+2415	0	tool_task	2021051700	2021051700	Plugin upgraded	\N		0	1637065488
+2416	0	tool_templatelibrary	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065488
+2417	0	tool_templatelibrary	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065488
+2418	0	tool_templatelibrary	2021051700	2021051700	Plugin upgraded	\N		0	1637065489
+2419	0	tool_unsuproles	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065489
+2420	0	tool_unsuproles	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065489
+2421	0	tool_unsuproles	2021051700	2021051700	Plugin upgraded	\N		0	1637065489
+2422	0	tool_uploadcourse	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065489
+2423	0	tool_uploadcourse	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065489
+2424	0	tool_uploadcourse	2021051700	2021051700	Plugin upgraded	\N		0	1637065489
+2425	0	tool_uploaduser	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065489
+2426	0	tool_uploaduser	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065489
+2427	0	tool_uploaduser	2021051700	2021051700	Plugin upgraded	\N		0	1637065490
+2428	0	tool_usertours	2019111801	2021051700	Starting plugin upgrade	\N		0	1637065490
+2429	0	tool_usertours	2020061501	2021051700	Upgrade savepoint reached	\N		0	1637065491
+2430	0	tool_usertours	2020082700	2021051700	Upgrade savepoint reached	\N		0	1637065491
+2431	0	tool_usertours	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065491
+2432	0	tool_usertours	2021051700	2021051700	Plugin upgraded	\N		0	1637065491
+2433	0	tool_xmldb	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065491
+2434	0	tool_xmldb	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065491
+2435	0	tool_xmldb	2021051700	2021051700	Plugin upgraded	\N		0	1637065492
+2436	0	cachestore_apcu	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065492
+2437	0	cachestore_apcu	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065492
+2438	0	cachestore_apcu	2021051700	2021051700	Plugin upgraded	\N		0	1637065492
+2439	0	cachestore_file	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065492
+2440	0	cachestore_file	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065492
+2441	0	cachestore_file	2021051700	2021051700	Plugin upgraded	\N		0	1637065492
+2442	0	cachestore_memcached	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065492
+2443	0	cachestore_memcached	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065492
+2444	0	cachestore_memcached	2021051700	2021051700	Plugin upgraded	\N		0	1637065493
+2445	0	cachestore_mongodb	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065493
+2446	0	cachestore_mongodb	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065493
+2447	0	cachestore_mongodb	2021051700	2021051700	Plugin upgraded	\N		0	1637065493
+2448	0	cachestore_redis	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065493
+2449	0	cachestore_redis	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065493
+2450	0	cachestore_redis	2021051700	2021051700	Plugin upgraded	\N		0	1637065493
+2451	0	cachestore_session	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065493
+2452	0	cachestore_session	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065493
+2453	0	cachestore_session	2021051700	2021051700	Plugin upgraded	\N		0	1637065494
+2454	0	cachestore_static	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065494
+2455	0	cachestore_static	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065494
+2456	0	cachestore_static	2021051700	2021051700	Plugin upgraded	\N		0	1637065494
+2457	0	cachelock_file	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065494
+2458	0	cachelock_file	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065494
+2459	0	cachelock_file	2021051700	2021051700	Plugin upgraded	\N		0	1637065494
+2460	0	fileconverter_googledrive	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065494
+2461	0	fileconverter_googledrive	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065494
+2462	0	fileconverter_googledrive	2021051700	2021051700	Plugin upgraded	\N		0	1637065495
+2463	0	fileconverter_unoconv	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065495
+2464	0	fileconverter_unoconv	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065495
+2465	0	fileconverter_unoconv	2021051700	2021051700	Plugin upgraded	\N		0	1637065495
+2466	0	contenttype_h5p	\N	2021051700	Starting plugin installation	\N		0	1637065495
+2467	0	contenttype_h5p	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065495
+2468	0	contenttype_h5p	2021051700	2021051700	Plugin installed	\N		0	1637065498
+2469	0	theme_boost	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065498
+2470	0	theme_boost	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065498
+2471	0	theme_boost	2021051700	2021051700	Plugin upgraded	\N		0	1637065498
+2472	0	theme_classic	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065498
+2473	0	theme_classic	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065498
+2474	0	theme_classic	2021051700	2021051700	Plugin upgraded	\N		0	1637065498
+2475	0	theme_xtec2020	2020080703	2021011201	Starting plugin upgrade	\N		0	1637065498
+2476	0	theme_xtec2020	2020110302	2021011201	Upgrade savepoint reached	\N		0	1637065498
+2477	0	theme_xtec2020	2021011201	2021011201	Upgrade savepoint reached	\N		0	1637065498
+2478	0	theme_xtec2020	2021011201	2021011201	Plugin upgraded	\N		0	1637065499
+2479	0	local_clickedu	20190724000	20201031001	Starting plugin upgrade	\N		0	1637065499
+2480	0	local_clickedu	20201031001	20201031001	Upgrade savepoint reached	\N		0	1637065499
+2481	0	local_clickedu	20201031001	20201031001	Plugin upgraded	\N		0	1637065499
+2482	0	local_redislock	\N	2020061100	Starting plugin installation	\N		0	1637065499
+2483	0	local_redislock	2020061100	2020061100	Upgrade savepoint reached	\N		0	1637065499
+2484	0	local_redislock	2020061100	2020061100	Plugin installed	\N		0	1637065499
+2485	0	local_wsvicensvives	2020090800	2021072700	Starting plugin upgrade	\N		0	1637065499
+2486	0	local_wsvicensvives	2021072700	2021072700	Upgrade savepoint reached	\N		0	1637065499
+2487	0	local_wsvicensvives	2021072700	2021072700	Plugin upgraded	\N		0	1637065500
+2488	0	h5plib_v124	\N	2021051700	Starting plugin installation	\N		0	1637065500
+2489	0	h5plib_v124	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065500
+2490	0	h5plib_v124	2021051700	2021051700	Plugin installed	\N		0	1637065500
+2491	0	paygw_paypal	\N	2021051700	Starting plugin installation	\N		0	1637065500
+2492	0	paygw_paypal	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065500
+2493	0	paygw_paypal	2021051700	2021051700	Plugin installed	\N		0	1637065501
+2494	0	assignsubmission_comments	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065501
+2495	0	assignsubmission_comments	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065501
+2496	0	assignsubmission_comments	2021051700	2021051700	Plugin upgraded	\N		0	1637065501
+2497	0	assignsubmission_file	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065501
+2498	0	assignsubmission_file	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065501
+2499	0	assignsubmission_file	2021051700	2021051700	Plugin upgraded	\N		0	1637065501
+2500	0	assignsubmission_onlinetext	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065501
+2501	0	assignsubmission_onlinetext	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065501
+2502	0	assignsubmission_onlinetext	2021051700	2021051700	Plugin upgraded	\N		0	1637065502
+2503	0	assignfeedback_comments	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065502
+2504	0	assignfeedback_comments	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065502
+2505	0	assignfeedback_comments	2021051700	2021051700	Plugin upgraded	\N		0	1637065502
+2506	0	assignfeedback_editpdf	2019111800	2021051701	Starting plugin upgrade	\N		0	1637065502
+2507	0	assignfeedback_editpdf	2021051701	2021051701	Upgrade savepoint reached	\N		0	1637065502
+2508	0	assignfeedback_editpdf	2021051701	2021051701	Plugin upgraded	\N		0	1637065502
+2509	0	assignfeedback_file	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065502
+2510	0	assignfeedback_file	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065502
+2511	0	assignfeedback_file	2021051700	2021051700	Plugin upgraded	\N		0	1637065503
+2512	0	assignfeedback_offline	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065503
+2513	0	assignfeedback_offline	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065503
+2514	0	assignfeedback_offline	2021051700	2021051700	Plugin upgraded	\N		0	1637065503
+2515	0	assignment_offline	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065503
+2516	0	assignment_offline	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065503
+2517	0	assignment_offline	2021051700	2021051700	Plugin upgraded	\N		0	1637065503
+2518	0	assignment_online	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065503
+2519	0	assignment_online	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065503
+2520	0	assignment_online	2021051700	2021051700	Plugin upgraded	\N		0	1637065504
+2521	0	assignment_upload	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065504
+2522	0	assignment_upload	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065504
+2523	0	assignment_upload	2021051700	2021051700	Plugin upgraded	\N		0	1637065504
+2524	0	assignment_uploadsingle	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065504
+2525	0	assignment_uploadsingle	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065504
+2526	0	assignment_uploadsingle	2021051700	2021051700	Plugin upgraded	\N		0	1637065505
+2527	0	booktool_exportimscp	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065505
+2528	0	booktool_exportimscp	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065505
+2529	0	booktool_exportimscp	2021051700	2021051700	Plugin upgraded	\N		0	1637065505
+2530	0	booktool_importhtml	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065505
+2531	0	booktool_importhtml	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065505
+2532	0	booktool_importhtml	2021051700	2021051700	Plugin upgraded	\N		0	1637065505
+2533	0	booktool_print	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065505
+2534	0	booktool_print	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065505
+2535	0	booktool_print	2021051700	2021051700	Plugin upgraded	\N		0	1637065506
+2536	0	datafield_checkbox	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065506
+2537	0	datafield_checkbox	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065506
+2538	0	datafield_checkbox	2021051700	2021051700	Plugin upgraded	\N		0	1637065506
+2539	0	datafield_date	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065506
+2540	0	datafield_date	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065506
+2541	0	datafield_date	2021051700	2021051700	Plugin upgraded	\N		0	1637065506
+2542	0	datafield_file	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065506
+2543	0	datafield_file	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065506
+2544	0	datafield_file	2021051700	2021051700	Plugin upgraded	\N		0	1637065507
+2545	0	datafield_latlong	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065507
+2546	0	datafield_latlong	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065507
+2547	0	datafield_latlong	2021051700	2021051700	Plugin upgraded	\N		0	1637065507
+2548	0	datafield_menu	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065507
+2549	0	datafield_menu	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065507
+2550	0	datafield_menu	2021051700	2021051700	Plugin upgraded	\N		0	1637065507
+2551	0	datafield_multimenu	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065507
+2552	0	datafield_multimenu	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065507
+2553	0	datafield_multimenu	2021051700	2021051700	Plugin upgraded	\N		0	1637065508
+2554	0	datafield_number	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065508
+2555	0	datafield_number	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065508
+2556	0	datafield_number	2021051700	2021051700	Plugin upgraded	\N		0	1637065508
+2557	0	datafield_picture	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065508
+2558	0	datafield_picture	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065508
+2559	0	datafield_picture	2021051700	2021051700	Plugin upgraded	\N		0	1637065509
+2560	0	datafield_radiobutton	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065509
+2561	0	datafield_radiobutton	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065509
+2562	0	datafield_radiobutton	2021051700	2021051700	Plugin upgraded	\N		0	1637065509
+2563	0	datafield_text	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065509
+2564	0	datafield_text	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065509
+2565	0	datafield_text	2021051700	2021051700	Plugin upgraded	\N		0	1637065509
+2566	0	datafield_textarea	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065509
+2567	0	datafield_textarea	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065509
+2568	0	datafield_textarea	2021051700	2021051700	Plugin upgraded	\N		0	1637065510
+2569	0	datafield_url	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065510
+2570	0	datafield_url	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065510
+2571	0	datafield_url	2021051700	2021051700	Plugin upgraded	\N		0	1637065510
+2572	0	datapreset_imagegallery	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065510
+2573	0	datapreset_imagegallery	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065510
+2574	0	datapreset_imagegallery	2021051700	2021051700	Plugin upgraded	\N		0	1637065510
+2575	0	forumreport_summary	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065510
+2576	0	forumreport_summary	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065510
+2577	0	forumreport_summary	2021051700	2021051700	Plugin upgraded	\N		0	1637065511
+2578	0	ltiservice_basicoutcomes	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065511
+2579	0	ltiservice_basicoutcomes	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065511
+2580	0	ltiservice_basicoutcomes	2021051700	2021051700	Plugin upgraded	\N		0	1637065511
+2581	0	ltiservice_gradebookservices	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065511
+2582	0	ltiservice_gradebookservices	2020042401	2021051700	Upgrade savepoint reached	\N		0	1637065511
+2583	0	ltiservice_gradebookservices	2020042402	2021051700	Upgrade savepoint reached	\N		0	1637065511
+2584	0	ltiservice_gradebookservices	2020042403	2021051700	Upgrade savepoint reached	\N		0	1637065511
+2585	0	ltiservice_gradebookservices	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065511
+2586	0	ltiservice_gradebookservices	2021051700	2021051700	Plugin upgraded	\N		0	1637065512
+2587	0	ltiservice_memberships	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065512
+2588	0	ltiservice_memberships	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065512
+2589	0	ltiservice_memberships	2021051700	2021051700	Plugin upgraded	\N		0	1637065512
+2590	0	ltiservice_profile	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065512
+2591	0	ltiservice_profile	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065512
+2592	0	ltiservice_profile	2021051700	2021051700	Plugin upgraded	\N		0	1637065512
+2593	0	ltiservice_toolproxy	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065512
+2594	0	ltiservice_toolproxy	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065512
+2595	0	ltiservice_toolproxy	2021051700	2021051700	Plugin upgraded	\N		0	1637065513
+2596	0	ltiservice_toolsettings	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065513
+2597	0	ltiservice_toolsettings	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065513
+2598	0	ltiservice_toolsettings	2021051700	2021051700	Plugin upgraded	\N		0	1637065513
+2599	0	quiz_grading	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065513
+2600	0	quiz_grading	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065513
+2601	0	quiz_grading	2021051700	2021051700	Plugin upgraded	\N		0	1637065513
+2602	0	quiz_overview	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065513
+2603	0	quiz_overview	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065513
+2604	0	quiz_overview	2021051700	2021051700	Plugin upgraded	\N		0	1637065514
+2605	0	quiz_responses	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065514
+2606	0	quiz_responses	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065514
+2607	0	quiz_responses	2021051700	2021051700	Plugin upgraded	\N		0	1637065514
+2608	0	quiz_statistics	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065514
+2609	0	quiz_statistics	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065514
+2610	0	quiz_statistics	2021051700	2021051700	Plugin upgraded	\N		0	1637065515
+2611	0	quizaccess_delaybetweenattempts	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065515
+2612	0	quizaccess_delaybetweenattempts	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065515
+2613	0	quizaccess_delaybetweenattempts	2021051700	2021051700	Plugin upgraded	\N		0	1637065515
+2614	0	quizaccess_ipaddress	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065515
+2615	0	quizaccess_ipaddress	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065515
+2616	0	quizaccess_ipaddress	2021051700	2021051700	Plugin upgraded	\N		0	1637065515
+2617	0	quizaccess_numattempts	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065515
+2618	0	quizaccess_numattempts	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065515
+2619	0	quizaccess_numattempts	2021051700	2021051700	Plugin upgraded	\N		0	1637065516
+2620	0	quizaccess_offlineattempts	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065516
+2621	0	quizaccess_offlineattempts	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065516
+2622	0	quizaccess_offlineattempts	2021051700	2021051700	Plugin upgraded	\N		0	1637065516
+2623	0	quizaccess_openclosedate	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065516
+2624	0	quizaccess_openclosedate	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065516
+2625	0	quizaccess_openclosedate	2021051700	2021051700	Plugin upgraded	\N		0	1637065516
+2626	0	quizaccess_password	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065516
+2627	0	quizaccess_password	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065516
+2628	0	quizaccess_password	2021051700	2021051700	Plugin upgraded	\N		0	1637065517
+2629	0	quizaccess_seb	\N	2021051700	Starting plugin installation	\N		0	1637065517
+2630	0	quizaccess_seb	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065517
+2631	0	quizaccess_seb	2021051700	2021051700	Plugin installed	\N		0	1637065530
+2632	0	quizaccess_securewindow	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065530
+2633	0	quizaccess_securewindow	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065530
+2634	0	quizaccess_securewindow	2021051700	2021051700	Plugin upgraded	\N		0	1637065530
+2635	0	quizaccess_timelimit	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065530
+2636	0	quizaccess_timelimit	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065530
+2637	0	quizaccess_timelimit	2021051700	2021051700	Plugin upgraded	\N		0	1637065531
+2638	0	scormreport_basic	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065531
+2639	0	scormreport_basic	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065531
+2640	0	scormreport_basic	2021051700	2021051700	Plugin upgraded	\N		0	1637065531
+2641	0	scormreport_graphs	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065531
+2642	0	scormreport_graphs	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065531
+2643	0	scormreport_graphs	2021051700	2021051700	Plugin upgraded	\N		0	1637065531
+2644	0	scormreport_interactions	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065531
+2645	0	scormreport_interactions	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065531
+2646	0	scormreport_interactions	2021051700	2021051700	Plugin upgraded	\N		0	1637065532
+2647	0	scormreport_objectives	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065532
+2648	0	scormreport_objectives	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065532
+2649	0	scormreport_objectives	2021051700	2021051700	Plugin upgraded	\N		0	1637065532
+2650	0	workshopform_accumulative	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065532
+2651	0	workshopform_accumulative	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065532
+2652	0	workshopform_accumulative	2021051700	2021051700	Plugin upgraded	\N		0	1637065533
+2653	0	workshopform_comments	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065533
+2654	0	workshopform_comments	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065533
+2655	0	workshopform_comments	2021051700	2021051700	Plugin upgraded	\N		0	1637065533
+2656	0	workshopform_numerrors	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065533
+2657	0	workshopform_numerrors	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065533
+2658	0	workshopform_numerrors	2021051700	2021051700	Plugin upgraded	\N		0	1637065533
+2659	0	workshopform_rubric	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065533
+2660	0	workshopform_rubric	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065533
+2661	0	workshopform_rubric	2021051700	2021051700	Plugin upgraded	\N		0	1637065534
+2662	0	workshopallocation_manual	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065534
+2663	0	workshopallocation_manual	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065534
+2664	0	workshopallocation_manual	2021051700	2021051700	Plugin upgraded	\N		0	1637065534
+2665	0	workshopallocation_random	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065534
+2666	0	workshopallocation_random	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065534
+2667	0	workshopallocation_random	2021051700	2021051700	Plugin upgraded	\N		0	1637065534
+2668	0	workshopallocation_scheduled	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065534
+2669	0	workshopallocation_scheduled	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065534
+2670	0	workshopallocation_scheduled	2021051700	2021051700	Plugin upgraded	\N		0	1637065535
+2671	0	workshopeval_best	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065535
+2672	0	workshopeval_best	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065535
+2673	0	workshopeval_best	2021051700	2021051700	Plugin upgraded	\N		0	1637065535
+2674	0	atto_accessibilitychecker	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065535
+2675	0	atto_accessibilitychecker	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065535
+2676	0	atto_accessibilitychecker	2021051700	2021051700	Plugin upgraded	\N		0	1637065535
+2677	0	atto_accessibilityhelper	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065535
+2678	0	atto_accessibilityhelper	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065535
+2679	0	atto_accessibilityhelper	2021051700	2021051700	Plugin upgraded	\N		0	1637065536
+2680	0	atto_align	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065536
+2681	0	atto_align	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065536
+2682	0	atto_align	2021051700	2021051700	Plugin upgraded	\N		0	1637065536
+2683	0	atto_backcolor	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065536
+2684	0	atto_backcolor	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065536
+2685	0	atto_backcolor	2021051700	2021051700	Plugin upgraded	\N		0	1637065536
+2686	0	atto_bold	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065536
+2687	0	atto_bold	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065536
+2688	0	atto_bold	2021051700	2021051700	Plugin upgraded	\N		0	1637065537
+2689	0	atto_charmap	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065537
+2690	0	atto_charmap	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065537
+2691	0	atto_charmap	2021051700	2021051700	Plugin upgraded	\N		0	1637065537
+2692	0	atto_clear	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065537
+2693	0	atto_clear	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065537
+2694	0	atto_clear	2021051700	2021051700	Plugin upgraded	\N		0	1637065538
+2695	0	atto_cloze	2017072802	2017072803	Starting plugin upgrade	\N		0	1637065538
+2696	0	atto_cloze	2017072803	2017072803	Upgrade savepoint reached	\N		0	1637065538
+2697	0	atto_cloze	2017072803	2017072803	Plugin upgraded	\N		0	1637065538
+2698	0	atto_collapse	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065538
+2699	0	atto_collapse	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065538
+2700	0	atto_collapse	2021051700	2021051700	Plugin upgraded	\N		0	1637065538
+2701	0	atto_emojipicker	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065538
+2702	0	atto_emojipicker	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065538
+2703	0	atto_emojipicker	2021051700	2021051700	Plugin upgraded	\N		0	1637065539
+2704	0	atto_emoticon	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065539
+2705	0	atto_emoticon	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065539
+2706	0	atto_emoticon	2021051700	2021051700	Plugin upgraded	\N		0	1637065539
+2707	0	atto_equation	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065539
+2708	0	atto_equation	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065539
+2709	0	atto_equation	2021051700	2021051700	Plugin upgraded	\N		0	1637065539
+2710	0	atto_fontcolor	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065539
+2711	0	atto_fontcolor	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065539
+2712	0	atto_fontcolor	2021051700	2021051700	Plugin upgraded	\N		0	1637065540
+2713	0	atto_h5p	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065540
+2714	0	atto_h5p	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065540
+2715	0	atto_h5p	2021051700	2021051700	Plugin upgraded	\N		0	1637065540
+2716	0	atto_html	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065540
+2717	0	atto_html	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065540
+2718	0	atto_html	2021051700	2021051700	Plugin upgraded	\N		0	1637065540
+2719	0	atto_image	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065540
+2720	0	atto_image	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065540
+2721	0	atto_image	2021051700	2021051700	Plugin upgraded	\N		0	1637065541
+2722	0	atto_indent	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065541
+2723	0	atto_indent	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065541
+2724	0	atto_indent	2021051700	2021051700	Plugin upgraded	\N		0	1637065541
+2725	0	atto_italic	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065541
+2726	0	atto_italic	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065541
+2727	0	atto_italic	2021051700	2021051700	Plugin upgraded	\N		0	1637065541
+2728	0	atto_link	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065541
+2729	0	atto_link	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065541
+2730	0	atto_link	2021051700	2021051700	Plugin upgraded	\N		0	1637065542
+2731	0	atto_managefiles	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065542
+2732	0	atto_managefiles	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065542
+2733	0	atto_managefiles	2021051700	2021051700	Plugin upgraded	\N		0	1637065542
+2734	0	atto_media	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065542
+2735	0	atto_media	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065542
+2736	0	atto_media	2021051700	2021051700	Plugin upgraded	\N		0	1637065543
+2737	0	atto_noautolink	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065543
+2738	0	atto_noautolink	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065543
+2739	0	atto_noautolink	2021051700	2021051700	Plugin upgraded	\N		0	1637065543
+2740	0	atto_orderedlist	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065543
+2741	0	atto_orderedlist	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065543
+2742	0	atto_orderedlist	2021051700	2021051700	Plugin upgraded	\N		0	1637065543
+2743	0	atto_recordrtc	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065543
+2744	0	atto_recordrtc	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065543
+2745	0	atto_recordrtc	2021051700	2021051700	Plugin upgraded	\N		0	1637065544
+2746	0	atto_rtl	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065544
+2747	0	atto_rtl	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065544
+2748	0	atto_rtl	2021051700	2021051700	Plugin upgraded	\N		0	1637065544
+2749	0	atto_strike	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065544
+2750	0	atto_strike	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065544
+2751	0	atto_strike	2021051700	2021051700	Plugin upgraded	\N		0	1637065544
+2752	0	atto_subscript	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065544
+2753	0	atto_subscript	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065544
+2754	0	atto_subscript	2021051700	2021051700	Plugin upgraded	\N		0	1637065545
+2755	0	atto_superscript	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065545
+2756	0	atto_superscript	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065545
+2757	0	atto_superscript	2021051700	2021051700	Plugin upgraded	\N		0	1637065545
+2758	0	atto_table	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065545
+2759	0	atto_table	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065545
+2760	0	atto_table	2021051700	2021051700	Plugin upgraded	\N		0	1637065545
+2761	0	atto_title	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065545
+2762	0	atto_title	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065545
+2763	0	atto_title	2021051700	2021051700	Plugin upgraded	\N		0	1637065546
+2764	0	atto_underline	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065546
+2765	0	atto_underline	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065546
+2766	0	atto_underline	2021051700	2021051700	Plugin upgraded	\N		0	1637065546
+2767	0	atto_undo	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065546
+2768	0	atto_undo	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065546
+2769	0	atto_undo	2021051700	2021051700	Plugin upgraded	\N		0	1637065546
+2770	0	atto_unorderedlist	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065546
+2771	0	atto_unorderedlist	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065546
+2772	0	atto_unorderedlist	2021051700	2021051700	Plugin upgraded	\N		0	1637065547
+2773	0	atto_wiris	2020090300	2021110900	Starting plugin upgrade	\N		0	1637065547
+2774	0	atto_wiris	2021110900	2021110900	Upgrade savepoint reached	\N		0	1637065547
+2775	0	atto_wiris	2021110900	2021110900	Plugin upgraded	\N		0	1637065547
+2776	0	tinymce_ctrlhelp	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065547
+2777	0	tinymce_ctrlhelp	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065547
+2778	0	tinymce_ctrlhelp	2021051700	2021051700	Plugin upgraded	\N		0	1637065548
+2779	0	tinymce_managefiles	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065548
+2780	0	tinymce_managefiles	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065548
+2781	0	tinymce_managefiles	2021051700	2021051700	Plugin upgraded	\N		0	1637065548
+2782	0	tinymce_moodleemoticon	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065548
+2783	0	tinymce_moodleemoticon	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065548
+2784	0	tinymce_moodleemoticon	2021051700	2021051700	Plugin upgraded	\N		0	1637065548
+2785	0	tinymce_moodleimage	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065548
+2786	0	tinymce_moodleimage	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065548
+2787	0	tinymce_moodleimage	2021051700	2021051700	Plugin upgraded	\N		0	1637065549
+2788	0	tinymce_moodlemedia	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065549
+2789	0	tinymce_moodlemedia	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065549
+2790	0	tinymce_moodlemedia	2021051700	2021051700	Plugin upgraded	\N		0	1637065549
+2791	0	tinymce_moodlenolink	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065549
+2792	0	tinymce_moodlenolink	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065549
+2793	0	tinymce_moodlenolink	2021051700	2021051700	Plugin upgraded	\N		0	1637065549
+2794	0	tinymce_pdw	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065550
+2795	0	tinymce_pdw	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065550
+2796	0	tinymce_pdw	2021051700	2021051700	Plugin upgraded	\N		0	1637065550
+2797	0	tinymce_spellchecker	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065550
+2798	0	tinymce_spellchecker	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065550
+2799	0	tinymce_spellchecker	2021051700	2021051700	Plugin upgraded	\N		0	1637065550
+2800	0	tinymce_wrap	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065550
+2801	0	tinymce_wrap	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065550
+2802	0	tinymce_wrap	2021051700	2021051700	Plugin upgraded	\N		0	1637065551
+2803	0	logstore_database	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065551
+2804	0	logstore_database	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065551
+2805	0	logstore_database	2021051700	2021051700	Plugin upgraded	\N		0	1637065551
+2806	0	logstore_legacy	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065551
+2807	0	logstore_legacy	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065551
+2808	0	logstore_legacy	2021051700	2021051700	Plugin upgraded	\N		0	1637065552
+2809	0	logstore_standard	2019111800	2021051700	Starting plugin upgrade	\N		0	1637065552
+2810	0	logstore_standard	2021051700	2021051700	Upgrade savepoint reached	\N		0	1637065552
+2811	0	logstore_standard	2021051700	2021051700	Plugin upgraded	\N		0	1637065553
 \.
 
 
@@ -40587,10 +44228,10 @@ COPY public.m2url (id, course, name, intro, introformat, externalurl, display, d
 -- Data for Name: m2user; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.m2user (id, auth, confirmed, policyagreed, deleted, suspended, mnethostid, username, password, idnumber, firstname, lastname, email, emailstop, icq, skype, yahoo, aim, msn, phone1, phone2, institution, department, address, city, country, lang, calendartype, theme, timezone, firstaccess, lastaccess, lastlogin, currentlogin, lastip, secret, picture, url, description, descriptionformat, mailformat, maildigest, maildisplay, autosubscribe, trackforums, timecreated, timemodified, trustbitmask, imagealt, lastnamephonetic, firstnamephonetic, middlename, alternatename) FROM stdin;
-1	manual	1	0	0	0	1	guest	$2y$10$CFokzHIxm7HyxXvoUatsEOVB5bK/0xi5Vx/OZPrj7VgaUw5TjqvJy		Usuari convidat	 	root@localhost	0													ca	gregorian		99	0	0	0	0			0		Aquest usuari és un usuari especial que permet entrar a alguns cursos en mode només de lectura (read-only).	1	1	0	2	1	0	0	1603909020	0	\N	\N	\N	\N	\N
-2	manual	1	0	0	0	1	admin	$2y$10$JbL6B67VOmmzjQyv/h9JpeJdsNoc2abrGW3TV/N3OoP68FBZU3G4.		Admin	Usuari	admin@xtec.invalid	0												CT	ca	gregorian		99	1603909129	1603983032	1603910527	1603981833	192.168.33.1		0			1	1	0	1	1	0	0	1603911485	0					
-3	manual	1	0	0	0	1	xtecadmin	$2y$10$9fyNq/zdjWkdheNPsM/pHOu7LKAR6ERFLg9A.0YPd14m6vLRXS22C		Administrador	XTEC	xtecadmin@xtec.invalid	0												CT	ca	gregorian		99	1604422435	1604422766	0	1604422435	192.168.33.1		0			1	1	0	2	1	0	1603911452	1603911452	0					
+COPY public.m2user (id, auth, confirmed, policyagreed, deleted, suspended, mnethostid, username, password, idnumber, firstname, lastname, email, emailstop, phone1, phone2, institution, department, address, city, country, lang, calendartype, theme, timezone, firstaccess, lastaccess, lastlogin, currentlogin, lastip, secret, picture, description, descriptionformat, mailformat, maildigest, maildisplay, autosubscribe, trackforums, timecreated, timemodified, trustbitmask, imagealt, lastnamephonetic, firstnamephonetic, middlename, alternatename, moodlenetprofile) FROM stdin;
+1	manual	1	0	0	0	1	guest	$2y$10$CFokzHIxm7HyxXvoUatsEOVB5bK/0xi5Vx/OZPrj7VgaUw5TjqvJy		Usuari convidat	 	root@localhost	0								ca	gregorian		99	0	0	0	0			0	Aquest usuari és un usuari especial que permet entrar a alguns cursos en mode només de lectura (read-only).	1	1	0	2	1	0	0	1603909020	0	\N	\N	\N	\N	\N	\N
+2	manual	1	0	0	0	1	admin	$2y$10$JbL6B67VOmmzjQyv/h9JpeJdsNoc2abrGW3TV/N3OoP68FBZU3G4.		Admin	Usuari	admin@xtec.invalid	0							CT	ca	gregorian		99	1603909129	1603983032	1603910527	1603981833	192.168.33.1		0		1	1	0	1	1	0	0	1603911485	0						\N
+3	manual	1	0	0	0	1	xtecadmin	$2y$10$9fyNq/zdjWkdheNPsM/pHOu7LKAR6ERFLg9A.0YPd14m6vLRXS22C		Administrador	XTEC	xtecadmin@xtec.invalid	0							CT	ca	gregorian		99	1604422435	1604422766	0	1604422435	192.168.33.1		0		1	1	0	2	1	0	1603911452	1603911452	0						\N
 \.
 
 
@@ -41107,6 +44748,13 @@ SELECT pg_catalog.setval('public.m2badge_backpack_id_seq', 1, false);
 
 
 --
+-- Name: m2badge_backpack_oauth2_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2badge_backpack_oauth2_id_seq', 1, false);
+
+
+--
 -- Name: m2badge_criteria_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -41201,7 +44849,7 @@ SELECT pg_catalog.setval('public.m2block_configurable_reports_id_seq', 1, false)
 -- Name: m2block_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2block_id_seq', 49, true);
+SELECT pg_catalog.setval('public.m2block_id_seq', 50, true);
 
 
 --
@@ -41278,14 +44926,14 @@ SELECT pg_catalog.setval('public.m2cache_filters_id_seq', 1, false);
 -- Name: m2cache_flags_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2cache_flags_id_seq', 2, true);
+SELECT pg_catalog.setval('public.m2cache_flags_id_seq', 3, true);
 
 
 --
 -- Name: m2capabilities_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2capabilities_id_seq', 722, true);
+SELECT pg_catalog.setval('public.m2capabilities_id_seq', 792, true);
 
 
 --
@@ -41495,21 +45143,28 @@ SELECT pg_catalog.setval('public.m2competency_userevidencecomp_id_seq', 1, false
 -- Name: m2config_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_id_seq', 519, true);
+SELECT pg_catalog.setval('public.m2config_id_seq', 547, true);
 
 
 --
 -- Name: m2config_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_log_id_seq', 1921, true);
+SELECT pg_catalog.setval('public.m2config_log_id_seq', 2012, true);
 
 
 --
 -- Name: m2config_plugins_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2config_plugins_id_seq', 2271, true);
+SELECT pg_catalog.setval('public.m2config_plugins_id_seq', 2372, true);
+
+
+--
+-- Name: m2contentbank_content_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2contentbank_content_id_seq', 1, false);
 
 
 --
@@ -41608,6 +45263,20 @@ SELECT pg_catalog.setval('public.m2course_request_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.m2course_sections_id_seq', 1, false);
+
+
+--
+-- Name: m2coursequotas_catsize_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2coursequotas_catsize_id_seq', 1, false);
+
+
+--
+-- Name: m2coursequotas_coursesize_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2coursequotas_coursesize_id_seq', 1, false);
 
 
 --
@@ -41796,14 +45465,14 @@ SELECT pg_catalog.setval('public.m2events_queue_id_seq', 1, false);
 -- Name: m2external_functions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2external_functions_id_seq', 601, true);
+SELECT pg_catalog.setval('public.m2external_functions_id_seq', 642, true);
 
 
 --
 -- Name: m2external_services_functions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2external_services_functions_id_seq', 376, true);
+SELECT pg_catalog.setval('public.m2external_services_functions_id_seq', 758, true);
 
 
 --
@@ -42283,6 +45952,27 @@ SELECT pg_catalog.setval('public.m2h5p_library_dependencies_id_seq', 1, false);
 
 
 --
+-- Name: m2h5pactivity_attempts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2h5pactivity_attempts_id_seq', 1, false);
+
+
+--
+-- Name: m2h5pactivity_attempts_results_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2h5pactivity_attempts_results_id_seq', 1, false);
+
+
+--
+-- Name: m2h5pactivity_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2h5pactivity_id_seq', 1, false);
+
+
+--
 -- Name: m2hotpot_attempts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -42336,6 +46026,13 @@ SELECT pg_catalog.setval('public.m2hotpot_strings_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.m2hvp_auth_id_seq', 1, false);
+
+
+--
+-- Name: m2hvp_content_hub_cache_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2hvp_content_hub_cache_id_seq', 1, false);
 
 
 --
@@ -42420,6 +46117,13 @@ SELECT pg_catalog.setval('public.m2hvp_xapi_results_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.m2imscp_id_seq', 1, false);
+
+
+--
+-- Name: m2infected_files_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2infected_files_id_seq', 1, false);
 
 
 --
@@ -42580,7 +46284,7 @@ SELECT pg_catalog.setval('public.m2log_queries_id_seq', 1, false);
 -- Name: m2logstore_standard_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2logstore_standard_log_id_seq', 1612, true);
+SELECT pg_catalog.setval('public.m2logstore_standard_log_id_seq', 1838, true);
 
 
 --
@@ -42720,7 +46424,7 @@ SELECT pg_catalog.setval('public.m2message_processors_id_seq', 4, true);
 -- Name: m2message_providers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2message_providers_id_seq', 42, true);
+SELECT pg_catalog.setval('public.m2message_providers_id_seq', 44, true);
 
 
 --
@@ -42867,7 +46571,7 @@ SELECT pg_catalog.setval('public.m2mnetservice_enrol_enrolments_id_seq', 1, fals
 -- Name: m2modules_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2modules_id_seq', 31, true);
+SELECT pg_catalog.setval('public.m2modules_id_seq', 32, true);
 
 
 --
@@ -42903,6 +46607,13 @@ SELECT pg_catalog.setval('public.m2oauth2_endpoint_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.m2oauth2_issuer_id_seq', 1, false);
+
+
+--
+-- Name: m2oauth2_refresh_token_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2oauth2_refresh_token_id_seq', 1, false);
 
 
 --
@@ -42980,6 +46691,34 @@ SELECT pg_catalog.setval('public.m2oauth_user_auth_scopes_id_seq', 1, false);
 --
 
 SELECT pg_catalog.setval('public.m2page_id_seq', 1, false);
+
+
+--
+-- Name: m2paygw_paypal_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2paygw_paypal_id_seq', 1, false);
+
+
+--
+-- Name: m2payment_accounts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2payment_accounts_id_seq', 1, false);
+
+
+--
+-- Name: m2payment_gateways_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2payment_gateways_id_seq', 1, false);
+
+
+--
+-- Name: m2payments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2payments_id_seq', 1, false);
 
 
 --
@@ -43501,6 +47240,20 @@ SELECT pg_catalog.setval('public.m2quiz_statistics_id_seq', 1, false);
 
 
 --
+-- Name: m2quizaccess_seb_quizsettings_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2quizaccess_seb_quizsettings_id_seq', 1, false);
+
+
+--
+-- Name: m2quizaccess_seb_template_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2quizaccess_seb_template_id_seq', 1, false);
+
+
+--
 -- Name: m2qv_assignments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -43630,7 +47383,7 @@ SELECT pg_catalog.setval('public.m2registration_hubs_id_seq', 1, false);
 -- Name: m2repository_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2repository_id_seq', 7, true);
+SELECT pg_catalog.setval('public.m2repository_id_seq', 8, true);
 
 
 --
@@ -43644,7 +47397,7 @@ SELECT pg_catalog.setval('public.m2repository_instance_config_id_seq', 1, false)
 -- Name: m2repository_instances_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2repository_instances_id_seq', 7, true);
+SELECT pg_catalog.setval('public.m2repository_instances_id_seq', 8, true);
 
 
 --
@@ -43707,7 +47460,7 @@ SELECT pg_catalog.setval('public.m2role_assignments_id_seq', 1, false);
 -- Name: m2role_capabilities_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2role_capabilities_id_seq', 1562, true);
+SELECT pg_catalog.setval('public.m2role_capabilities_id_seq', 1697, true);
 
 
 --
@@ -43952,7 +47705,7 @@ SELECT pg_catalog.setval('public.m2tag_instance_id_seq', 1, false);
 -- Name: m2task_adhoc_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2task_adhoc_id_seq', 1, false);
+SELECT pg_catalog.setval('public.m2task_adhoc_id_seq', 1, true);
 
 
 --
@@ -43966,7 +47719,77 @@ SELECT pg_catalog.setval('public.m2task_log_id_seq', 1, false);
 -- Name: m2task_scheduled_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2task_scheduled_id_seq', 109, true);
+SELECT pg_catalog.setval('public.m2task_scheduled_id_seq', 117, true);
+
+
+--
+-- Name: m2tool_brickfield_areas_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_areas_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_brickfield_cache_acts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_cache_acts_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_brickfield_cache_check_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_cache_check_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_brickfield_checks_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_checks_id_seq', 31, true);
+
+
+--
+-- Name: m2tool_brickfield_content_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_content_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_brickfield_errors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_errors_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_brickfield_process_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_process_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_brickfield_results_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_results_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_brickfield_schedule_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_schedule_id_seq', 1, false);
+
+
+--
+-- Name: m2tool_brickfield_summary_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.m2tool_brickfield_summary_id_seq', 1, false);
 
 
 --
@@ -44106,21 +47929,21 @@ SELECT pg_catalog.setval('public.m2tool_recyclebin_course_id_seq', 1, false);
 -- Name: m2tool_usertours_steps_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2tool_usertours_steps_id_seq', 14, true);
+SELECT pg_catalog.setval('public.m2tool_usertours_steps_id_seq', 18, true);
 
 
 --
 -- Name: m2tool_usertours_tours_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2tool_usertours_tours_id_seq', 2, true);
+SELECT pg_catalog.setval('public.m2tool_usertours_tours_id_seq', 6, true);
 
 
 --
 -- Name: m2upgrade_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.m2upgrade_log_id_seq', 1381, true);
+SELECT pg_catalog.setval('public.m2upgrade_log_id_seq', 2811, true);
 
 
 --
@@ -44651,6 +48474,14 @@ ALTER TABLE ONLY public.m2badge_backpack
 
 
 --
+-- Name: m2badge_backpack_oauth2 m2badgbackoaut_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2badge_backpack_oauth2
+    ADD CONSTRAINT m2badgbackoaut_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2badge_criteria m2badgcrit_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -45115,6 +48946,14 @@ ALTER TABLE ONLY public.m2context
 
 
 --
+-- Name: m2contentbank_content m2contcont_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2contentbank_content
+    ADD CONSTRAINT m2contcont_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2context_temp m2conttemp_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -45136,6 +48975,14 @@ ALTER TABLE ONLY public.m2course
 
 ALTER TABLE ONLY public.m2course_categories
     ADD CONSTRAINT m2courcate_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2coursequotas_catsize m2courcats_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2coursequotas_catsize
+    ADD CONSTRAINT m2courcats_id_pk PRIMARY KEY (id);
 
 
 --
@@ -45176,6 +49023,14 @@ ALTER TABLE ONLY public.m2course_completion_crit_compl
 
 ALTER TABLE ONLY public.m2course_completion_defaults
     ADD CONSTRAINT m2courcompdefa_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2coursequotas_coursesize m2courcour_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2coursequotas_coursesize
+    ADD CONSTRAINT m2courcour_id_pk PRIMARY KEY (id);
 
 
 --
@@ -45963,6 +49818,30 @@ ALTER TABLE ONLY public.m2h5p
 
 
 --
+-- Name: m2h5pactivity m2h5pa_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2h5pactivity
+    ADD CONSTRAINT m2h5pa_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2h5pactivity_attempts m2h5paatte_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2h5pactivity_attempts
+    ADD CONSTRAINT m2h5paatte_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2h5pactivity_attempts_results m2h5paatteresu_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2h5pactivity_attempts_results
+    ADD CONSTRAINT m2h5paatteresu_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2h5p_contents_libraries m2h5pcontlibr_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -46067,6 +49946,14 @@ ALTER TABLE ONLY public.m2hvp_auth
 
 
 --
+-- Name: m2hvp_content_hub_cache m2hvpconthubcach_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2hvp_content_hub_cache
+    ADD CONSTRAINT m2hvpconthubcach_id_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2hvp_contents_libraries m2hvpcontlibr_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -46160,6 +50047,14 @@ ALTER TABLE ONLY public.m2hvp_xapi_results
 
 ALTER TABLE ONLY public.m2imscp
     ADD CONSTRAINT m2imsc_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2infected_files m2infefile_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2infected_files
+    ADD CONSTRAINT m2infefile_id_pk PRIMARY KEY (id);
 
 
 --
@@ -46755,6 +50650,14 @@ ALTER TABLE ONLY public.m2oauth_public_keys
 
 
 --
+-- Name: m2oauth2_refresh_token m2oautrefrtoke_id2_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2oauth2_refresh_token
+    ADD CONSTRAINT m2oautrefrtoke_id2_pk PRIMARY KEY (id);
+
+
+--
 -- Name: m2oauth_refresh_tokens m2oautrefrtoke_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -46800,6 +50703,38 @@ ALTER TABLE ONLY public.m2oauth2_user_field_mapping
 
 ALTER TABLE ONLY public.m2page
     ADD CONSTRAINT m2page_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2paygw_paypal m2paygpayp_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2paygw_paypal
+    ADD CONSTRAINT m2paygpayp_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2payments m2paym_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2payments
+    ADD CONSTRAINT m2paym_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2payment_accounts m2paymacco_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2payment_accounts
+    ADD CONSTRAINT m2paymacco_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2payment_gateways m2paymgate_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2payment_gateways
+    ADD CONSTRAINT m2paymgate_id_pk PRIMARY KEY (id);
 
 
 --
@@ -47360,6 +51295,22 @@ ALTER TABLE ONLY public.m2quiz_overview_regrades
 
 ALTER TABLE ONLY public.m2quiz_reports
     ADD CONSTRAINT m2quizrepo_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2quizaccess_seb_quizsettings m2quizsebquiz_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2quizaccess_seb_quizsettings
+    ADD CONSTRAINT m2quizsebquiz_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2quizaccess_seb_template m2quizsebtemp_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2quizaccess_seb_template
+    ADD CONSTRAINT m2quizsebtemp_id_pk PRIMARY KEY (id);
 
 
 --
@@ -47928,6 +51879,86 @@ ALTER TABLE ONLY public.m2task_log
 
 ALTER TABLE ONLY public.m2task_scheduled
     ADD CONSTRAINT m2tasksche_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_areas m2toolbricarea_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_areas
+    ADD CONSTRAINT m2toolbricarea_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_cache_acts m2toolbriccachacts_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_cache_acts
+    ADD CONSTRAINT m2toolbriccachacts_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_cache_check m2toolbriccachchec_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_cache_check
+    ADD CONSTRAINT m2toolbriccachchec_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_checks m2toolbricchec_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_checks
+    ADD CONSTRAINT m2toolbricchec_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_content m2toolbriccont_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_content
+    ADD CONSTRAINT m2toolbriccont_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_errors m2toolbricerro_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_errors
+    ADD CONSTRAINT m2toolbricerro_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_process m2toolbricproc_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_process
+    ADD CONSTRAINT m2toolbricproc_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_results m2toolbricresu_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_results
+    ADD CONSTRAINT m2toolbricresu_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_schedule m2toolbricsche_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_schedule
+    ADD CONSTRAINT m2toolbricsche_id_pk PRIMARY KEY (id);
+
+
+--
+-- Name: m2tool_brickfield_summary m2toolbricsumm_id_pk; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.m2tool_brickfield_summary
+    ADD CONSTRAINT m2toolbricsumm_id_pk PRIMARY KEY (id);
 
 
 --
@@ -48973,6 +53004,41 @@ CREATE INDEX m2badgback_use_ix ON public.m2badge_backpack USING btree (userid);
 
 
 --
+-- Name: m2badgback_useext_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2badgback_useext_uix ON public.m2badge_backpack USING btree (userid, externalbackpackid);
+
+
+--
+-- Name: m2badgbackoaut_ext_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2badgbackoaut_ext_ix ON public.m2badge_backpack_oauth2 USING btree (externalbackpackid);
+
+
+--
+-- Name: m2badgbackoaut_iss_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2badgbackoaut_iss_ix ON public.m2badge_backpack_oauth2 USING btree (issuerid);
+
+
+--
+-- Name: m2badgbackoaut_use2_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2badgbackoaut_use2_ix ON public.m2badge_backpack_oauth2 USING btree (userid);
+
+
+--
+-- Name: m2badgbackoaut_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2badgbackoaut_use_ix ON public.m2badge_backpack_oauth2 USING btree (usermodified);
+
+
+--
 -- Name: m2badgcrit_bad_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -49047,6 +53113,13 @@ CREATE UNIQUE INDEX m2badgexteback_bac2_uix ON public.m2badge_external_backpack 
 --
 
 CREATE UNIQUE INDEX m2badgexteback_bac_uix ON public.m2badge_external_backpack USING btree (backpackapiurl);
+
+
+--
+-- Name: m2badgexteback_oau_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2badgexteback_oau_ix ON public.m2badge_external_backpack USING btree (oauth2_issuerid);
 
 
 --
@@ -49243,6 +53316,13 @@ CREATE INDEX m2blogasso_con_ix ON public.m2blog_association USING btree (context
 --
 
 CREATE INDEX m2blogexte_use_ix ON public.m2blog_external USING btree (userid);
+
+
+--
+-- Name: m2bookchap_boo_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2bookchap_boo_ix ON public.m2book_chapters USING btree (bookid);
 
 
 --
@@ -49701,6 +53781,41 @@ CREATE INDEX m2cont_pat_ix_pattern ON public.m2context USING btree (path varchar
 
 
 --
+-- Name: m2contcont_con_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2contcont_con_ix ON public.m2contentbank_content USING btree (contextid);
+
+
+--
+-- Name: m2contcont_conconins_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2contcont_conconins_ix ON public.m2contentbank_content USING btree (contextid, contenttype, instanceid);
+
+
+--
+-- Name: m2contcont_nam_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2contcont_nam_ix ON public.m2contentbank_content USING btree (name);
+
+
+--
+-- Name: m2contcont_use2_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2contcont_use2_ix ON public.m2contentbank_content USING btree (usercreated);
+
+
+--
+-- Name: m2contcont_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2contcont_use_ix ON public.m2contentbank_content USING btree (usermodified);
+
+
+--
 -- Name: m2cour_cat_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -49733,6 +53848,13 @@ CREATE INDEX m2cour_sor_ix ON public.m2course USING btree (sortorder);
 --
 
 CREATE INDEX m2courcate_par_ix ON public.m2course_categories USING btree (parent);
+
+
+--
+-- Name: m2courcats_cat_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2courcats_cat_uix ON public.m2coursequotas_catsize USING btree (categoryid);
 
 
 --
@@ -49845,6 +53967,13 @@ CREATE UNIQUE INDEX m2courcompdefa_coumod_uix ON public.m2course_completion_defa
 --
 
 CREATE INDEX m2courcompdefa_mod_ix ON public.m2course_completion_defaults USING btree (module);
+
+
+--
+-- Name: m2courcour_cou_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2courcour_cou_uix ON public.m2coursequotas_coursesize USING btree (courseid);
 
 
 --
@@ -50247,6 +54376,13 @@ CREATE INDEX m2even_cat_ix ON public.m2event USING btree (categoryid);
 
 
 --
+-- Name: m2even_comeveins_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2even_comeveins_ix ON public.m2event USING btree (component, eventtype, instance);
+
+
+--
 -- Name: m2even_cou_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -50254,10 +54390,24 @@ CREATE INDEX m2even_cou_ix ON public.m2event USING btree (courseid);
 
 
 --
+-- Name: m2even_eve_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2even_eve_ix ON public.m2event USING btree (eventtype);
+
+
+--
 -- Name: m2even_grocoucatvisuse_ix; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE INDEX m2even_grocoucatvisuse_ix ON public.m2event USING btree (groupid, courseid, categoryid, visible, userid);
+
+
+--
+-- Name: m2even_modinseve_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2even_modinseve_ix ON public.m2event USING btree (modulename, instance, eventtype);
 
 
 --
@@ -50384,6 +54534,13 @@ CREATE INDEX m2extetoke_cre_ix ON public.m2external_tokens USING btree (creatori
 --
 
 CREATE INDEX m2extetoke_ext_ix ON public.m2external_tokens USING btree (externalserviceid);
+
+
+--
+-- Name: m2extetoke_tok_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2extetoke_tok_ix ON public.m2external_tokens USING btree (token);
 
 
 --
@@ -50545,6 +54702,13 @@ CREATE INDEX m2file_con2_ix ON public.m2files USING btree (contextid);
 --
 
 CREATE INDEX m2file_con_ix ON public.m2files USING btree (contenthash);
+
+
+--
+-- Name: m2file_lic_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2file_lic_ix ON public.m2files USING btree (license);
 
 
 --
@@ -51535,6 +55699,62 @@ CREATE INDEX m2h5p_mai_ix ON public.m2h5p USING btree (mainlibraryid);
 
 
 --
+-- Name: m2h5pa_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2h5pa_cou_ix ON public.m2h5pactivity USING btree (course);
+
+
+--
+-- Name: m2h5paatte_h5p_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2h5paatte_h5p_ix ON public.m2h5pactivity_attempts USING btree (h5pactivityid);
+
+
+--
+-- Name: m2h5paatte_h5ptim_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2h5paatte_h5ptim_ix ON public.m2h5pactivity_attempts USING btree (h5pactivityid, timecreated);
+
+
+--
+-- Name: m2h5paatte_h5puse_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2h5paatte_h5puse_ix ON public.m2h5pactivity_attempts USING btree (h5pactivityid, userid);
+
+
+--
+-- Name: m2h5paatte_h5puseatt_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2h5paatte_h5puseatt_uix ON public.m2h5pactivity_attempts USING btree (h5pactivityid, userid, attempt);
+
+
+--
+-- Name: m2h5paatte_tim_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2h5paatte_tim_ix ON public.m2h5pactivity_attempts USING btree (timecreated);
+
+
+--
+-- Name: m2h5paatteresu_att_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2h5paatteresu_att_ix ON public.m2h5pactivity_attempts_results USING btree (attemptid);
+
+
+--
+-- Name: m2h5paatteresu_atttim_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2h5paatteresu_atttim_ix ON public.m2h5pactivity_attempts_results USING btree (attemptid, timecreated);
+
+
+--
 -- Name: m2h5pcontlibr_h5p_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -51654,6 +55874,13 @@ CREATE UNIQUE INDEX m2hvpauth_use_uix ON public.m2hvp_auth USING btree (user_id)
 
 
 --
+-- Name: m2hvpconthubcach_lan_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2hvpconthubcach_lan_uix ON public.m2hvp_content_hub_cache USING btree (language);
+
+
+--
 -- Name: m2hvpcontlibr_dro_ix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -51682,10 +55909,10 @@ CREATE UNIQUE INDEX m2hvplibrcach_libhas_uix ON public.m2hvp_libraries_cachedass
 
 
 --
--- Name: m2hvpxapiresu_idconuse_uix; Type: INDEX; Schema: public; Owner: -
+-- Name: m2hvpxapiresu_conuse_ix; Type: INDEX; Schema: public; Owner: -
 --
 
-CREATE UNIQUE INDEX m2hvpxapiresu_idconuse_uix ON public.m2hvp_xapi_results USING btree (id, content_id, user_id);
+CREATE INDEX m2hvpxapiresu_conuse_ix ON public.m2hvp_xapi_results USING btree (content_id, user_id);
 
 
 --
@@ -51693,6 +55920,13 @@ CREATE UNIQUE INDEX m2hvpxapiresu_idconuse_uix ON public.m2hvp_xapi_results USIN
 --
 
 CREATE INDEX m2imsc_cou_ix ON public.m2imscp USING btree (course);
+
+
+--
+-- Name: m2infefile_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2infefile_use_ix ON public.m2infected_files USING btree (userid);
 
 
 --
@@ -52515,10 +56749,31 @@ CREATE INDEX m2oautendp_iss_ix ON public.m2oauth2_endpoint USING btree (issuerid
 
 
 --
+-- Name: m2oautrefrtoke_iss_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2oautrefrtoke_iss_ix ON public.m2oauth2_refresh_token USING btree (issuerid);
+
+
+--
 -- Name: m2oautrefrtoke_ref_uix; Type: INDEX; Schema: public; Owner: -
 --
 
 CREATE UNIQUE INDEX m2oautrefrtoke_ref_uix ON public.m2oauth_refresh_tokens USING btree (refresh_token);
+
+
+--
+-- Name: m2oautrefrtoke_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2oautrefrtoke_use_ix ON public.m2oauth2_refresh_token USING btree (userid);
+
+
+--
+-- Name: m2oautrefrtoke_useisssco_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2oautrefrtoke_useisssco_uix ON public.m2oauth2_refresh_token USING btree (userid, issuerid, scopehash);
 
 
 --
@@ -52568,6 +56823,48 @@ CREATE UNIQUE INDEX m2oautuserfielmapp_issint_uix ON public.m2oauth2_user_field_
 --
 
 CREATE INDEX m2page_cou_ix ON public.m2page USING btree (course);
+
+
+--
+-- Name: m2paygpayp_pay_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2paygpayp_pay_uix ON public.m2paygw_paypal USING btree (paymentid);
+
+
+--
+-- Name: m2paym_acc_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2paym_acc_ix ON public.m2payments USING btree (accountid);
+
+
+--
+-- Name: m2paym_compayite_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2paym_compayite_ix ON public.m2payments USING btree (component, paymentarea, itemid);
+
+
+--
+-- Name: m2paym_gat_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2paym_gat_ix ON public.m2payments USING btree (gateway);
+
+
+--
+-- Name: m2paym_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2paym_use_ix ON public.m2payments USING btree (userid);
+
+
+--
+-- Name: m2paymgate_acc_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2paymgate_acc_ix ON public.m2payment_gateways USING btree (accountid);
 
 
 --
@@ -53303,6 +57600,41 @@ CREATE INDEX m2quizoverregr_queslo_ix ON public.m2quiz_overview_regrades USING b
 --
 
 CREATE UNIQUE INDEX m2quizrepo_nam_uix ON public.m2quiz_reports USING btree (name);
+
+
+--
+-- Name: m2quizsebquiz_cmi_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2quizsebquiz_cmi_uix ON public.m2quizaccess_seb_quizsettings USING btree (cmid);
+
+
+--
+-- Name: m2quizsebquiz_qui_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2quizsebquiz_qui_uix ON public.m2quizaccess_seb_quizsettings USING btree (quizid);
+
+
+--
+-- Name: m2quizsebquiz_tem_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2quizsebquiz_tem_ix ON public.m2quizaccess_seb_quizsettings USING btree (templateid);
+
+
+--
+-- Name: m2quizsebquiz_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2quizsebquiz_use_ix ON public.m2quizaccess_seb_quizsettings USING btree (usermodified);
+
+
+--
+-- Name: m2quizsebtemp_use_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2quizsebtemp_use_ix ON public.m2quizaccess_seb_template USING btree (usermodified);
 
 
 --
@@ -54307,6 +58639,202 @@ CREATE UNIQUE INDEX m2tasksche_cla_uix ON public.m2task_scheduled USING btree (c
 
 
 --
+-- Name: m2toolbricarea_cat_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricarea_cat_ix ON public.m2tool_brickfield_areas USING btree (categoryid);
+
+
+--
+-- Name: m2toolbricarea_cmi_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricarea_cmi_ix ON public.m2tool_brickfield_areas USING btree (cmid);
+
+
+--
+-- Name: m2toolbricarea_con_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricarea_con_ix ON public.m2tool_brickfield_areas USING btree (contextid);
+
+
+--
+-- Name: m2toolbricarea_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricarea_cou_ix ON public.m2tool_brickfield_areas USING btree (courseid);
+
+
+--
+-- Name: m2toolbricarea_coucmi_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricarea_coucmi_ix ON public.m2tool_brickfield_areas USING btree (courseid, cmid);
+
+
+--
+-- Name: m2toolbricarea_refreftyp_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricarea_refreftyp_ix ON public.m2tool_brickfield_areas USING btree (reftable, refid, type);
+
+
+--
+-- Name: m2toolbricarea_typconcomfie_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricarea_typconcomfie_ix ON public.m2tool_brickfield_areas USING btree (type, contextid, component, fieldorarea, itemid);
+
+
+--
+-- Name: m2toolbricarea_typtabitefie_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricarea_typtabitefie_ix ON public.m2tool_brickfield_areas USING btree (type, tablename, itemid, fieldorarea);
+
+
+--
+-- Name: m2toolbriccachacts_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbriccachacts_cou_ix ON public.m2tool_brickfield_cache_acts USING btree (courseid);
+
+
+--
+-- Name: m2toolbriccachacts_sta_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbriccachacts_sta_ix ON public.m2tool_brickfield_cache_acts USING btree (status);
+
+
+--
+-- Name: m2toolbriccachchec_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbriccachchec_cou_ix ON public.m2tool_brickfield_cache_check USING btree (courseid);
+
+
+--
+-- Name: m2toolbriccachchec_err_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbriccachchec_err_ix ON public.m2tool_brickfield_cache_check USING btree (errorcount);
+
+
+--
+-- Name: m2toolbriccachchec_sta_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbriccachchec_sta_ix ON public.m2tool_brickfield_cache_check USING btree (status);
+
+
+--
+-- Name: m2toolbricchec_che2_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricchec_che2_ix ON public.m2tool_brickfield_checks USING btree (checkgroup);
+
+
+--
+-- Name: m2toolbricchec_che_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricchec_che_ix ON public.m2tool_brickfield_checks USING btree (checktype);
+
+
+--
+-- Name: m2toolbricchec_sta_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricchec_sta_ix ON public.m2tool_brickfield_checks USING btree (status);
+
+
+--
+-- Name: m2toolbriccont_are_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbriccont_are_ix ON public.m2tool_brickfield_content USING btree (areaid);
+
+
+--
+-- Name: m2toolbriccont_iscare_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbriccont_iscare_ix ON public.m2tool_brickfield_content USING btree (iscurrent, areaid);
+
+
+--
+-- Name: m2toolbriccont_sta_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbriccont_sta_ix ON public.m2tool_brickfield_content USING btree (status);
+
+
+--
+-- Name: m2toolbricerro_res_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricerro_res_ix ON public.m2tool_brickfield_errors USING btree (resultid);
+
+
+--
+-- Name: m2toolbricproc_tim_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricproc_tim_ix ON public.m2tool_brickfield_process USING btree (timecompleted);
+
+
+--
+-- Name: m2toolbricresu_che_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricresu_che_ix ON public.m2tool_brickfield_results USING btree (checkid);
+
+
+--
+-- Name: m2toolbricresu_con_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricresu_con_ix ON public.m2tool_brickfield_results USING btree (contentid);
+
+
+--
+-- Name: m2toolbricresu_conche_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricresu_conche_ix ON public.m2tool_brickfield_results USING btree (contentid, checkid);
+
+
+--
+-- Name: m2toolbricsche_conins_uix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX m2toolbricsche_conins_uix ON public.m2tool_brickfield_schedule USING btree (contextlevel, instanceid);
+
+
+--
+-- Name: m2toolbricsche_sta_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricsche_sta_ix ON public.m2tool_brickfield_schedule USING btree (status);
+
+
+--
+-- Name: m2toolbricsumm_cou_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricsumm_cou_ix ON public.m2tool_brickfield_summary USING btree (courseid);
+
+
+--
+-- Name: m2toolbricsumm_sta_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2toolbricsumm_sta_ix ON public.m2tool_brickfield_summary USING btree (status);
+
+
+--
 -- Name: m2toolcoho_cohroluse_uix; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -54780,6 +59308,13 @@ CREATE INDEX m2userpasshist_use_ix ON public.m2user_password_history USING btree
 --
 
 CREATE INDEX m2userpassrese_use_ix ON public.m2user_password_resets USING btree (userid);
+
+
+--
+-- Name: m2userpref_nam_ix; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX m2userpref_nam_ix ON public.m2user_preferences USING btree (name);
 
 
 --
