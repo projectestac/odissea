@@ -3,6 +3,26 @@ Release notes for Odissea (https://odissea.xtec.cat)
 More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/odissea/
 
+
+Changes 21.11.23
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.4
+- Updated langpacks
+- assignfeedback_editpdf: Remove all fileareas of component assignfeedback_editpdf during course reset (MDL-69570)
+- Fixed import of broken multianswer questions (MDL-54724)
+- Choicegroup: Upgraded module
+- Clickedu: Upgraded module
+- Cloze: Upgraded atto plugin
+- Coursequotas: Fixed variable name that caused incorrect course size values being saved in database
+- Geogebra: Upgraded module
+- Hot Potatoes: Upgraded module
+- migratehvp2h5p: Removed dependencies to allow mod_hvp reset
+- Ordering: Upgraded question type
+- Questionnaire: Upgraded module
+- Vicens Vives: Upgraded all components
+- Wiris: Upgraded all components to versions 7.27 / 4.3
+
+
 Changes 21.07.29
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 3.11.1
