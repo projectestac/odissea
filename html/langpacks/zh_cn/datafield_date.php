@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '日期字段';
 $string['pluginname'] = '日期';
+$string['privacy:metadata'] = '日期字段组件不存储任何个人数据，它使用mod_data中定义的表。';

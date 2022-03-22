@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_recent:addinstance'] = 'Adicionar um novo bloco de entradas recentes do blogue';
+$string['blog_recent:addinstance'] = 'Adicionar um novo bloco Entradas recentes do blogue';
 $string['norecentblogentries'] = 'Sem entradas recentes';
 $string['numentriestodisplay'] = 'Número de entradas recentes a exibir';
 $string['pluginname'] = 'Entradas recentes do blogue';

@@ -31,5 +31,5 @@ $string['color_green'] = 'Verde';
 $string['color_red'] = 'Vermelho';
 $string['color_white'] = 'Branco';
 $string['color_yellow'] = 'Amarelo';
-$string['pluginname'] = 'Cor da fonte';
+$string['pluginname'] = 'Cor do tipo de letra';
 $string['privacy:metadata'] = 'O módulo atto_fontcolor não armazena quaisquer dados pessoais.';

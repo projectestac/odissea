@@ -180,6 +180,13 @@ $string['persistentfieldsexist'] = '次のフィールドはすでに存在し�
 $string['pluginname'] = 'XMLDBエディタ';
 $string['primarykeyonlyallownotnullfields'] = '主キーはNullにできません。';
 $string['privacy:metadata'] = 'XMLDBエディタプラグインはいかなる個人データも保存しません。';
+$string['reconcile_files'] = 'リコンサイルが必要なXMLDBファイルを探す';
+$string['reconcile_files_intro'] = 'この機能はすべてのXMLDBファイルの現在のコンテンツを確認して、それがXMLDBエディタで生成した結果と一致するかどうかを検証します。
+
+リコンサイル (再生成) が必要なファイルのリストが表示された場合、XMLDBエディタで修正する必要があります。';
+$string['reconcile_files_no'] = 'すべてのファイルはOKです。リコンサイル作業は必要ありません。';
+$string['reconcile_files_yes'] = 'リコンサイルするファイルが見つかりました:';
+$string['reconcilefiles'] = 'XMLDBファイルをリコンサイルする';
 $string['reserved'] = '予約済み';
 $string['reservedwords'] = '予約語';
 $string['revert'] = '元に戻す';

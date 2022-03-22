@@ -48,7 +48,7 @@ $string['aftercompletedtext_help'] = 'Laat het veld leeg om de standaard tekst t
 <ul>
 <li>{status}</li>
 <li>{participant}</li>
-<li>{email} -  mailadres gebruiker</li>
+<li>{email} -  e-mailadres gebruiker</li>
 <li>{title}</li>
 <li>{duration}</li>
 <li>{starttime}</li>
@@ -57,6 +57,8 @@ $string['aftercompletedtext_help'] = 'Laat het veld leeg om de standaard tekst t
 <li>{enddate}</li>
 <li>{courselink}</li>
 <li>{bookinglink}</li>
+<li>{pollurl}</li>
+<li>{pollurlteachers}</li>
 <li>{location}</li>
 <li>{institution}</li>
 <li>{address}</li>
@@ -89,7 +91,7 @@ $string['attachicaldesc'] = 'Als dit is ingesteld wordt er een ical event als bi
 $string['attachicalsess'] = 'Voel alle sessies toe als een ical-gebeurtenis';
 $string['attachicalsessdesc'] = 'Als dit is ingesteld zal de e-mailnotificatie een ical-gebeurtenis als bijlage toevoegen met alle sessie-data die ingesteld zijn bij een boekingsoptie.';
 $string['autoenrol'] = 'Meld gebruikers automatisch aan';
-$string['autoenrol_help'] = 'Wanneer geselecteerd worden gebruikers aangemeld in de geassocieerde cursus op het moment dat ze de inschrijving maken. Gebruikers worden van de cursus afgemeld wanneer ze de inschrijving annuleren.';
+$string['autoenrol_help'] = 'Indien geselecteerd worden gebruikers aangemeld in de bijbehorende cursus zodra ze de boeking maken, en afgemeld uit die cursus zodra de boeking wordt geannuleerd.';
 $string['availability'] = 'Nog beschikbaar';
 $string['available'] = 'Beschikbare plaatsen';
 $string['availableplaces'] = 'Beschikbare plaatsen: {$a->available} van {$a->maxanswers}';
@@ -111,6 +113,8 @@ $string['beforebookedtext_help'] = 'Laat het veld leeg om de standaard tekst te 
 <li>{enddate}</li>
 <li>{courselink}</li>
 <li>{bookinglink}</li>
+<li>{pollurl}</li>
+<li>{pollurlteachers}</li>
 <li>{location}</li>
 <li>{institution}</li>
 <li>{address}</li>
@@ -137,6 +141,8 @@ $string['beforecompletedtext_help'] = 'Laat het veld leeg om de standaard tekst 
 <li>{enddate}</li>
 <li>{courselink}</li>
 <li>{bookinglink}</li>
+<li>{pollurl}</li>
+<li>{pollurlteachers}</li>
 <li>{location}</li>
 <li>{institution}</li>
 <li>{address}</li>
@@ -229,10 +235,10 @@ $string['booknow'] = 'Inschrijven';
 $string['bookotherusers'] = 'Inschrijven andere gebruikers';
 $string['booktootherbooking'] = 'Schrijf gebruikers in op een andere boekingoptie';
 $string['bookuserswithoutcompletedactivity'] = 'Geboekte gebruikers zonder activiteitsvoltooiing';
-$string['btnbooknowname'] = 'Naam van knop "Inschrijven"';
-$string['btncacname'] = 'Naam van knop "Bevestig activiteit voltooiing"';
-$string['btncancelname'] = 'Naam van knop "Annuleer inschrijving"';
-$string['cancancelbook'] = 'Sta toe dat gebruikers zelf mogen annuleren of inschrijven wanneer de boekingoptie openstaat?';
+$string['btnbooknowname'] = 'Naam van knop "Nu boeken"';
+$string['btncacname'] = 'Naam van knop "Bevestig activiteitsvoltooiing"';
+$string['btncancelname'] = 'Naam van knop "Annuleer boeking"';
+$string['cancancelbook'] = 'Toestaan dat gebruiker de boeking tijdens de boekingsperiode kan annuleren?';
 $string['cancancelbookdays'] = 'Gebruikers mogen hun boeking niet n dagen voor start annuleren';
 $string['cancancelbookdaysno'] = 'Geen limiet';
 $string['cancel'] = 'Annuleren';
@@ -251,8 +257,8 @@ $string['comments'] = 'Commentaar';
 $string['completed'] = 'Voltooid';
 $string['completedcomments'] = 'Alleen bij een voltooide activiteit';
 $string['completedratings'] = 'Alleen bij een voltooide activiteit';
-$string['completionmodule'] = 'Activiteit voltooid';
-$string['completionmodule_help'] = 'Verwijder alle gebruikers die deze activiteit hebben voltooid. Gebruikers zullen verwijderd worden door op de knop te klikken op de rapportage pagina.';
+$string['completionmodule'] = 'Gebruikersboekingen in bulk verwijderen inschakelen, nadat geselecteerde cursusactiviteit is voltooid';
+$string['completionmodule_help'] = 'Knop voor in bulk verwijderen reacties op boekingen weergeven, als een andere cursusactiviteit is voltooid. De boekingen van gebruikers worden met een klik verwijderd van de rapportenpagina! Alleen activiteiten met ingeschakelde activiteitsvoltooiing kunnen worden geselecteerd.';
 $string['conectedbooking'] = 'Gerelateerde boeking';
 $string['conectedbooking_help'] = 'De boeking optie accepteert het overschrijven van geboekte gebruikers. U kunt aangeven van welke optie en hoeveel gebruikers je wilt accepteren.';
 $string['confirmactivtyfrom'] = 'Bevestig gebruikers activiteit van';
@@ -293,7 +299,7 @@ $string['copytoclipboard'] = 'Kopieer naar klembord: CTRL+C, Enter';
 $string['coursedate'] = 'Datum';
 $string['courseendtime'] = 'Eindtijd van de cursus';
 $string['coursestarttime'] = 'Starttijd van de cursus';
-$string['createdby'] = 'Boekingsmodule ontwikkeld door edublabs.org';
+$string['createdby'] = 'Boekingsmodule ontwikkeld door edulabs.org';
 $string['csvfile'] = 'CSV-bestand';
 $string['csvfile_help'] = 'CSV-bestand moet bestaan uit één kolom genaamd Institution.';
 $string['customfield'] = 'Andere velden die ingesteld moeten worden in de boekingsoptie. Deze velden worden getoond in het boekingsoptieoverzicht.';
@@ -346,6 +352,8 @@ $string['deletedtext_help'] = 'Laat het veld leeg om de standaard tekst van de s
 <li>{enddate}</li>
 <li>{courselink}</li>
 <li>{bookinglink}</li>
+<li>{pollurl}</li>
+<li>{pollurlteachers}</li>
 <li>{location}</li>
 <li>{institution}</li>
 <li>{address}</li>
@@ -381,7 +389,7 @@ $string['editrule'] = 'Bewerk';
 $string['edittag'] = 'Bewerk';
 $string['editteachers'] = 'Bewerk';
 $string['editteacherslink'] = 'Bewerk docenten';
-$string['enablecompletion'] = 'Zet aan dat je handmatig de activiteitsvoltooiing kan doen bij de reacties in de boekingsoptie.';
+$string['enablecompletion'] = 'Aantal boekingen';
 $string['enablecompletiongroup'] = 'Aantal boekingsopties';
 $string['enablepresence'] = 'Activeer presentie';
 $string['endtimenotset'] = 'Einddatum is niet ingesteld';
@@ -430,14 +438,14 @@ $string['groupexists'] = 'De groep bestaat al in de gekozen cursus, kies alstubl
 $string['groupname'] = 'Groepnaam';
 $string['hidedescription'] = 'Verberg beschrijving';
 $string['hours'] = '{$a} uren';
-$string['howmanyusers'] = 'Hoeveel gebruikers mag je boeken?';
+$string['howmanyusers'] = 'Maximaal aantal gebruikers dat de leraar heeft ingesteld voor de optie \'kan boeken\'';
 $string['icalcancel'] = 'Indien een gebeurtenis geannuleerd wordt voeg een ical-bijlage toe als geannuleerde gebeurtenis';
 $string['icalcanceldesc'] = 'Wanneer een gebruiker een inschrijving annuleert of verwijderd wordt van de ingeschreven gebruikerslijst, voeg dan een ical bijlage toe als een geannuleerde gebeurtenis.';
 $string['icalcfg'] = 'Instellingen van de ical bijlages';
 $string['icalcfgdesc'] = 'De ical.ics bestanden maken het mogelijk om de boekingsdata toe te voegen aan de persoonlijke kalender. De ical.ics bestand wordt als bijlage toegevoegd aan het e-mail bericht.';
-$string['icalfieldlocation'] = 'De tekst die getoond word in het ical veld locatie.';
-$string['icalfieldlocationdesc'] = 'Kies uit het dropdown menu welke tekst er gebruikt moet worden voor het kalenderveld "locatie"';
-$string['import_failed'] = 'Het importeren is niet gelukt vanwege:';
+$string['icalfieldlocation'] = 'De tekst die getoond wordt in het iCal veld locatie.';
+$string['icalfieldlocationdesc'] = 'Kies uit het keuzemenu welke tekst er gebruikt moet worden voor het kalenderveld "locatie"';
+$string['import_failed'] = 'Het importeren is om de volgende reden mislukt:';
 $string['import_partial'] = 'De import is voor een gedeelte voltooid. De volgende CSV regels zijn niet geïmporteerd:';
 $string['importcsvbookingoption'] = 'Importeer CSV met boekingsopties';
 $string['importcsvtitle'] = 'Importeer CSV';
@@ -446,12 +454,12 @@ $string['importexceltitle'] = 'Importeer activiteitsvoltooiing';
 $string['importfinished'] = 'Het importeren is voltooid!';
 $string['importinfo'] = 'Import informatie; de volgende kolommen kunnen toegevoegd worden in een CSV upload .';
 $string['includeteachers'] = 'Voeg docenten toe aan de presentielijst';
-$string['infonobookingoption'] = 'Gebruik het blok {$a} om uw eerste boekingsoptie toe te voegen';
+$string['infonobookingoption'] = 'Gebruik het instellingenblok of -icoon bovenaan de pagina om een boekingsoptie toe te voegen';
 $string['institution'] = 'Organisatie';
 $string['institutionname'] = 'Organisatienaam';
 $string['institutions'] = 'Organisaties';
 $string['lblacceptingfrom'] = 'Naam label "Aanvaarden van"';
-$string['lblbooking'] = 'Naam label "Inschrijving"';
+$string['lblbooking'] = 'Naam label "Boeking"';
 $string['lblbooktootherbooking'] = 'Naam op knop "Schrijf gebruikers in op andere boekingsoptie"';
 $string['lblinstitution'] = 'Naam label "Organisatie"';
 $string['lbllocation'] = 'Naam label "Locatie"';
@@ -467,7 +475,7 @@ $string['limitanswers_help'] = 'Als je deze optie wijzigt en je mensen hebt gebo
 $string['location'] = 'Locatie';
 $string['mailconfirmationsent'] = 'Je ontvangt zo snel mogelijk een bevestigingsmail .';
 $string['managebooking'] = 'Beheer';
-$string['manageoptiontemplates'] = 'Kan sjablonen maken';
+$string['manageoptiontemplates'] = 'Kan sjablonen voor boekingsopties beheren';
 $string['maxoverbooking'] = 'Maximaal aantal plaatsen op de wachtlijst';
 $string['maxparticipantsnumber'] = 'Maximaal aantal gebruikers';
 $string['maxperuser'] = 'Maximaal aantal huidige boekingen per gebruiker';
@@ -505,7 +513,7 @@ $string['notbooked'] = 'Nog niet geboekt.';
 $string['notconectedbooking'] = 'Niet gekoppeld';
 $string['noteacherfound'] = 'Geen leraren gevonden in de lijn {$a}:';
 $string['notemplate'] = 'Gebruik niet als sjabloon.';
-$string['notes'] = 'Bookingsnotities';
+$string['notes'] = 'Boekingsnotities';
 $string['notificationsubject'] = 'Toekomstige cursus....';
 $string['notificationtext'] = 'Notificatie tekst dat getoond wordt bij activiteitsvoltooiing.';
 $string['notificationtext_help'] = 'Laat het veld leeg om de standaard tekst te gebruiken. Je kunt een van de volgende plaatshouders gebruiken in de tekst:
@@ -678,6 +686,8 @@ $string['pollurlteacherstext_help'] = 'Laat het veld leeg om de standaard tekst 
 <li>{enddate}</li>
 <li>{courselink}</li>
 <li>{bookinglink}</li>
+<li>{pollurl}</li>
+<li>{pollurlteachers}</li>
 <li>{location}</li>
 <li>{institution}</li>
 <li>{address}</li>
@@ -708,6 +718,8 @@ $string['pollurltext_help'] = 'Laat het veld leeg om de standaard tekst te gebru
 <li>{enddate}</li>
 <li>{courselink}</li>
 <li>{bookinglink}</li>
+<li>{pollurl}</li>
+<li>{pollurlteachers}</li>
 <li>{location}</li>
 <li>{institution}</li>
 <li>{address}</li>
@@ -736,7 +748,7 @@ $string['privacy:metadata:booking_answers:timecreated'] = 'Tijdstempel wanneer b
 $string['privacy:metadata:booking_answers:timemodified'] = 'Tijdstempel wanneer de boeking voor het laatst is gewijzigd';
 $string['privacy:metadata:booking_answers:userid'] = 'Gebruiker dat geboekt is voor dit evenement';
 $string['privacy:metadata:booking_answers:waitinglist'] = 'Of de gebruiker op een wachtlijst staat';
-$string['privacy:metadata:booking_ratings'] = 'Dit representeert de waardering van een evenement';
+$string['privacy:metadata:booking_ratings'] = 'Dit vertegenwoordigt de waardering van een evenement';
 $string['privacy:metadata:booking_ratings:optionid'] = 'Welke versie van een evenement is beoordeeld';
 $string['privacy:metadata:booking_ratings:rate'] = 'Toegewezen beoordeling';
 $string['privacy:metadata:booking_ratings:userid'] = 'De gebruiker die dit evenement heeft beoordeeld';
@@ -840,6 +852,8 @@ $string['statuschangetext_help'] = 'Laat het veld leeg om de standaard tekst te 
 <li>{enddate}</li>
 <li>{courselink}</li>
 <li>{bookinglink}</li>
+<li>{pollurl}</li>
+<li>{pollurlteachers}</li>
 <li>{location}</li>
 <li>{institution}</li>
 <li>{address}</li>
@@ -904,6 +918,8 @@ $string['userleave_help'] = 'Laat het veld leeg om de standaard tekst te gebruik
 <li>{enddate}</li>
 <li>{courselink}</li>
 <li>{bookinglink}</li>
+<li>{pollurl}</li>
+<li>{pollurlteachers}</li>
 <li>{location}</li>
 <li>{institution}</li>
 <li>{address}</li>
@@ -947,6 +963,8 @@ $string['waitingtext_help'] = 'Laat het veld leeg om de standaard tekst te gebru
 <li>{enddate}</li>
 <li>{courselink}</li>
 <li>{bookinglink}</li>
+<li>{pollurl}</li>
+<li>{pollurlteachers}</li>
 <li>{location}</li>
 <li>{institution}</li>
 <li>{address}</li>

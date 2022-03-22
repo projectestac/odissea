@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '嵌入答案（完形填空）';
 $string['pluginname_help'] = '使用嵌入答案（完形填空）格式可以导入一段嵌有问题的文本，问题包括多项选择和简答。';
+$string['privacy:metadata'] = '内嵌答案问题插件不存储任何个人数据。';

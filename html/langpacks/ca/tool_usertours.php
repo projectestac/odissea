@@ -178,9 +178,9 @@ $string['tour2_title_opendrawer'] = 'Obre el menú de navegació';
 $string['tour2_title_participants'] = 'Participants del curs';
 $string['tour2_title_welcome'] = 'Benvinguts';
 $string['tour3_content_dashboard'] = 'El vostre nou Tauler té moltes funcionalitats per a ajudar-vos a accedir fàcilment a la informació més important per a vós.';
-$string['tour3_content_displayoptions'] = 'Els cursos es poden ordenar pel nom del curs o per la data d\'últim accés.
+$string['tour3_content_displayoptions'] = 'Els cursos es poden ordenar pel nom del curs, pel nom curt del curs o per la data del darrer accés.
 
-També podeu triar mostrar els cursos en una llista, amb un resum de la informació o la vista per defecte de «targeta».';
+També podeu triar mostrar els cursos en una llista, amb un resum de la informació, o amb la vista per defecte de «targeta».';
 $string['tour3_content_overview'] = 'El bloc Resum del curs mostra tots els cursos on esteu inscrits.
 
 Podeu triar mostrar els cursos actuals, els passats, els futurs o els que heu destacat.';
@@ -215,9 +215,15 @@ $string['tour4_title_icon'] = 'Missatgeria';
 $string['tour4_title_messaging'] = 'Nova interfície per a la missatgeria';
 $string['tour4_title_settings'] = 'Paràmetres de la missatgeria';
 $string['tour4_title_starred'] = 'Destacat';
+$string['tour_activityinfo_activity_student_content'] = 'Les dates de l\'activitat i què cal fer per completar-la es mostren a la pàgina de l\'activitat.';
 $string['tour_activityinfo_activity_student_title'] = 'Nou: informació de l\'activitat';
+$string['tour_activityinfo_activity_teacher_content'] = 'Les dates de les activitats i les condicions de compleció ara es mostren als estudiants a la pàgina de cada activitat (i opcionalment, també es poden mostrar a la pàgina del curs).
+
+Per a les activitats que requereixen que els estudiants marquin manualment una activitat com a completada, es mostra el botó «Marca com a feta» a la pàgina de l\'activitat.';
 $string['tour_activityinfo_activity_teacher_title'] = 'Nou: informació de l\'activitat';
+$string['tour_activityinfo_course_student_content'] = 'Les dates de l\'activitat i/o què cal fer per completar-la es mostren a la pàgina del curs.';
 $string['tour_activityinfo_course_student_title'] = 'Nou: informació de l\'activitat';
+$string['tour_activityinfo_course_teacher_content'] = 'Els paràmetres nous de curs «Mostra les condicions de compleció de l\'activitat» i «Mostra les dates de l\'activitat» permeten triar si es mostren les condicions de finalització de l\'activitat (si s\'estableixen) i/o les dates per als estudiants a la pàgina del curs.';
 $string['tour_activityinfo_course_teacher_title'] = 'Nou: informació de l\'activitat';
 $string['tour_final_step_content'] = 'Heu arribat al final de la visita guiada d\'usuari. No tornarà a mostrar-se, tret que ho restabliu mitjançant l\'enllaç que trobareu al peu de la pàgina.';
 $string['tour_final_step_title'] = 'Final de la visita guiada';

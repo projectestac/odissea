@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['accessdenied'] = 'Infelizmente não têm acesso à página pretendida.';
+$string['accordion_closed'] = 'Fechado';
+$string['accordion_open'] = 'Abre';
 $string['activeblogs'] = 'Ativo';
 $string['addcomment'] = 'Adicionar comentário';
 $string['addlink'] = 'Adicionar hiperligação';
@@ -51,7 +53,7 @@ $string['atomfeed'] = 'Atom feed';
 $string['attachments'] = 'Anexos';
 $string['attachments_help'] = 'Opcionalmente pode anexar um ou mais ficheiros ao tópico. Se anexar uma imagem, será mostrada depois da mensagem.';
 $string['beforeendcomment'] = 'Só pode comentar os tópicos até {$a}.';
-$string['beforeendcommentcapable'] = 'Os alunos podem comentar os tópicos até {$a}.<br/>Têm permissão para comentar depois desta data.';
+$string['beforeendcommentcapable'] = 'Os alunos podem comentar os tópicos até {$a}.<br/>Tem permissão para comentar depois desta data.';
 $string['beforeendpost'] = 'Só pode criar tópicos até {$a}.';
 $string['beforeendpostcapable'] = 'Os alunos podem criar os seu tópicos até {$a}. <br/>Tem permissão para criar tópicos depois desta data.';
 $string['beforestartcomment'] = 'Não pode comentar os tópicos neste momento. Os comentários estão disponíveis a partir de {$a}.';

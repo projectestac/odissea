@@ -29,3 +29,4 @@ $string['feedback'] = 'الإفادة';
 $string['feedbackupdated'] = 'الإفادة تم تحديثها لـ {$a} من الأشخاص';
 $string['hideidnumber'] = 'إخفاء رقم المُعرَّف';
 $string['maximumsize'] = 'أقصى عدد من الطلاب';
+$string['place'] = 'الغرفة';

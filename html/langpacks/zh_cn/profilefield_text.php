@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '文本输入框';
+$string['privacy:metadata:profilefield_text:data'] = '“用户个人资料”字段用户数据文本输入';
+$string['privacy:metadata:profilefield_text:dataformat'] = '“用户个人资料”字段用户数据文本输入格式';
+$string['privacy:metadata:profilefield_text:fieldid'] = '“个人资料”字段ID';
+$string['privacy:metadata:profilefield_text:tableexplanation'] = '其他个人资料数据';
+$string['privacy:metadata:profilefield_text:userid'] = '由“用户个人资料”字段文本输入存储其数据的用户的ID';

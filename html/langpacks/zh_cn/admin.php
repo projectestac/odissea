@@ -59,7 +59,7 @@ $string['allowediplist'] = '允许访问的IP列表';
 $string['allowemailaddresses'] = '允许的邮件域名';
 $string['allowemojipicker'] = '表情选取器';
 $string['allowframembedding'] = '允许嵌入框架';
-$string['allowframembedding_help'] = '如果启用，该网站可能会被嵌入到一个外部网站的框架中，推荐使用“以LTI工具发布”的注册插件。否则，出于安全考虑，建议禁用并离开嵌入框架设置。';
+$string['allowframembedding_help'] = '如果启用，该网站可以被嵌入到一个外部网站的框架中，推荐使用“以LTI工具发布”的注册插件。否则，出于安全考虑，建议禁用嵌入框架设置。需要注意的是：在移动设备APP中该设置项会被忽略，APP中总是允许嵌入式框架。';
 $string['allowguestmymoodle'] = '允许访客访问个人主页';
 $string['allowindexing'] = '允许通过搜索引擎的索引';
 $string['allowindexing_desc'] = '设定是否允许搜索引擎对网站进行索引。"每处" 允许搜索引擎搜索任何页面，包括登录及注册页面，即设置了强制登录的网站仍会被索引。如想避免因注册页面被搜索到而产生的垃圾邮件，请使用"每处除登录和注册页面"。"无处"将告知搜索引擎不要索引任何页面。 注意此设置仅为网站上的一个标签。是否遵循此规划要视搜索引擎本身。';
@@ -92,7 +92,7 @@ $string['backup_shortnamehelp'] = '备份文件名中包含课程名。';
 $string['backups'] = '备份';
 $string['badwordsconfig'] = '输入以逗号(英文半角)分割的禁用词语列表。';
 $string['badwordsdefault'] = '如果自定义列表为空，则使用语言包提供的缺省列表。';
-$string['badwordslist'] = '自定义禁用词语列表';
+$string['badwordslist'] = '自定义黑名单(禁用词)列表';
 $string['blockediplist'] = '禁止访问的IP列表';
 $string['blockinstances'] = '实例';
 $string['blockmultiple'] = '多个';
@@ -128,8 +128,8 @@ $string['calendartype_desc'] = '为全站选择一个预设的日历样式。此
 $string['cannotdeletemodfilter'] = '您不能卸载“{$a->filter}”，因为它是“$a->module}”模块的一部分。';
 $string['cannotuninstall'] = '不能卸载{$a}。';
 $string['categoryemail'] = '电子邮件';
-$string['cfgwwwrootslashwarning'] = 'config.php文件中定义的$CFG->wwwroot不正确。可能是因为在结尾处包含了"/"字符，请将其删除或者像调试bug一样<a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a>.';
-$string['cfgwwwrootwarning'] = 'config.php文件中定义的$CFG->wwwroot不正确。可能是因为因为URL地址和使用访问站点的地址不匹配，请将其纠正或者像调试bug一样<a href=\'http://tracker.moodle.org/browse/MDL-11061\'>MDL-11061</a>.';
+$string['cfgwwwrootslashwarning'] = 'config.php文件中定义的$CFG->wwwroot不正确。该定义在结尾处包含了"/"字符，请将其删除。';
+$string['cfgwwwrootwarning'] = 'config.php 文件中定义的 $CFG->wwwroot 不正确。该定义必须与您用于访问该页面的URL一致。';
 $string['change'] = '修改';
 $string['checkboxno'] = '否';
 $string['checkboxyes'] = '是';
@@ -161,7 +161,7 @@ $string['commentsperpage'] = '每页显示的评论';
 $string['commonactivitysettings'] = '通用设置';
 $string['commonfiltersettings'] = '通用过滤设置';
 $string['commonsettings'] = '通用设置';
-$string['componentinstalled'] = '组件已安装';
+$string['componentinstalled'] = '已安装组件';
 $string['computedfromlogs'] = '从{$a}开始的日志中计算得出';
 $string['condifmodeditdefaults'] = '创建新的活动或资源时使用的缺省设置值。';
 $string['confeditorhidebuttons'] = '请选择HTML编辑器中要隐藏的按钮。';
@@ -171,9 +171,9 @@ $string['configallowattachments'] = '若启用，从这个网站发送的Email�
 $string['configallowblockstodock'] = '如果启用，且当前主题风格支持，那么用户可以将版块移动到一个特别的停靠栏中';
 $string['configallowcategorythemes'] = '如果启用该功能，将可以在类别中使用主题。同时这将影响到所有的子类别和课程，除非子类别和课程中都设置了自己的主题。警告：启用类别主题可能影响系统性能！';
 $string['configallowcohortthemes'] = '如果您启用此设置，便可以设置群组级别的主题风格。这会影响仅有一个群组，或是有多个群组但使用同样主题风格的所有用户。';
-$string['configallowcoursethemes'] = '如果启用，则允许每个课程设定自己的主题风格。课程的主题风格将覆盖其它位置(网站、用户或会话)的设定。';
+$string['configallowcoursethemes'] = '如果启用，则允许每个课程设定自己的主题风格。课程的主题风格将覆盖其它位置(网站、用户、分类、分类或URL定义)的设定。';
 $string['configallowedemaildomains'] = '列出允许在外发电子邮件的“发件人”部分中显示的电子邮件域名。默认的“空”将对所有外发电子邮件使用“请勿回复”地址。允许使用通配符，例如* .example.com将允许从example.com的任何子域发送电子邮件，但不允许example.com本身发送。需要单独录入。';
-$string['configallowemailaddresses'] = '如果您希望将新的email地址限制在一定的域名范围内，把他们列在这里，域名之间以空格隔开。所有其它域名都会被拒绝。域名加上前缀“.”表示子域名亦可接受。例如<strong>ourcollege.edu.au .gov.au</strong>';
+$string['configallowemailaddresses'] = '如果您希望将新的email地址限制在一定的域名范围内，把他们列在这里，域名之间以空格隔开。所有其它域名都会被拒绝。要允许域名的所有子域，请在域名前加上前缀“.”；如果希望允许所有子域和根域名本身，则需要将域名添加两次：一次带有前缀“.”，另一侧则不带前缀“.”，例如 .ourcollege.edu.au ourcollege.edu.au。';
 $string['configallowemojipicker'] = 'Atto工具栏里的表情(如笑脸)选取器允许用户选择表情加入到站内消息， 和其他文本编辑区里。';
 $string['configallowemojipickerincompatible'] = '您当前的数据库设置不支持表情符号存储。点击<a href="https://docs.moodle.org/en/MySQL_full_unicode_support">链接</a>了解如何升级数据库使其完美兼容unicode。';
 $string['configallowguestmymoodle'] = '如果打开，游客可以访问个人主页，否则游客将被跳转到网站首页';
@@ -209,9 +209,7 @@ $string['configcourserequestnotify2'] = '有新建课程申请时会被通知的
 $string['configcoursesperpage'] = '输入课程列表中每页显示的课程数。';
 $string['configcourseswithsummarieslimit'] = '当课程数量少于这个值时，显示带有摘要的课程列表。而当课程数量超过这个数值时，使用简单的课程列表';
 $string['configcronclionly'] = '通过浏览器访问计划任务页可能会匿名用户暴露特权信息。因此推荐只在命令行下运行计划任务，或者为计划任务设置一个远程访问的密码。';
-$string['configcronremotepassword'] = '这意味着cron.php脚本可以通过浏览器运行，而不需要通过URL地址：<pre>
-http://site.example.com/admin/cron.php?password=opensesame
-</pre>提供密码，如果这里为空，就不需要密码。';
+$string['configcronremotepassword'] = '这意味着如果不使用以下URL的格式提供密码，则无法从web浏览器运行cron.php脚本：<pre>https://site.example.com/admin/cron.php?password=opensesame</pre>如果此字段留空，则不需要密码。';
 $string['configcurlcache'] = 'cURL缓存有效时间，单位是秒。';
 $string['configcustommenuitems'] = '您可以在此自定义一个由主题显示的菜单。每一行包含菜单项文本、一个URL链接（可选），一个工具提示（可选）和一个语言代码或逗号分隔的代码列表（可选，只对指定语言的用户显示这一行），用管道操作符（|）隔开。您还可以使用连字符构建结构，还可以在需要的地方添加一行一个或者多个#号作为分隔符。例如：
 <pre>
@@ -223,17 +221,17 @@ Moodle社区|https://moodle.org
 -Moodle开发|https://moodle.org/development
 -Moodle.com|http://moodle.com/
 </pre>';
-$string['configcustomusermenuitems'] = '你可以配置用户菜单（除了登出链接，它是自动添加的）。 每一行由|字符分开， 包括1）一个“语言字符串名称,内容名称"格式的字符串或纯文本， 2）一个超链接， 和3）一个图标或者超链接。可以在需要的地方添加一行一个或者多个#号作为分隔符。';
+$string['configcustomusermenuitems'] = '你可以配置用户菜单(除注销链接外，都是自动添加的)。每一行由管道字符分开， 包括：(1)由“langstringname，componentname”形式或纯文本形式的字符串组成；(2)一个URL；(3)一个图标或者pix图标(在具有[subfoldername]/[iconname]结构的pix文件夹中，例如i/publish)，或者一个URL。可以在需要的地方添加一行一个或者多个#号作为分隔符。';
 $string['configdbsessions'] = '如果启用，该设置将使用数据库来存储有关当前会话的信息。请注意，现在改变这个设置，将使得所有当前用户（包括你）退出登录。如果你正在使用MySQL，请确保在my.cnf（或my.ini文件）中的\'max_allowed_packet\'至少是4M。其他会话驱动可以直接在config.php配置，参阅config-dist.php以获取更多信息。如果你在config.php文件指定了会话驱动，此选项将消失。';
 $string['configdebug'] = '如果您打开这个选项，那么PHP的错误报表会增加，页面上会出现更多的警告信息。这只对开发人员有用。';
 $string['configdebugdisplay'] = '如果设为on，错误报表将在html页面中显示。这个很实用，但是常会破坏XHTML,JS,COOKIES和HTTP头。如果设为off，系统将自动发送到服务器日志中，允许更好的调试。PHP设置error_log控制那些日志写入到系统日志中。';
 $string['configdebugpageinfo'] = '如果您希望在页脚打印页面信息，就启用此设置。';
 $string['configdebugvalidators'] = '如果您希望页面底端有到外部检查器的链接，就启用此项。您可能需要建立一个名为<em>w3cvalidator</em>的用户，并赋予它访客权限。这个改动可能会使某些人未经授权就能访问本站，所以不要在正式使用的网站上使用它。';
 $string['configdefaulthomepage'] = '这里决定已登录用户的第一个链接。';
-$string['configdefaultrequestcategory'] = '用户申请的课程将自动放入此类别中。';
+$string['configdefaultrequestcategory'] = '除非用户选择其他类别，否则能够在系统上下文中请求新课程的用户请求的课程将被置于该类别中。';
 $string['configdefaultrequestedcategory'] = '当申请被批准时，课程放到哪个类别中。';
 $string['configdefaultuserroleid'] = '对所有已登录用户来说，在网站层，除了其它可能已经指派的角色以外，所有已登录用户都会获得您这里指定的角色的权限。默认为已认证用户角色。注意，除了被特别禁用的权限，此角色和他们所拥有的其它角色不会冲突，这么做只是为了确保所有用户都可以获得在网站层不能分派的一些权限（比如，发表博客、管理自己的日历等等）。';
-$string['configdeleteincompleteusers'] = '之后，以前不完整的账号将被删除';
+$string['configdeleteincompleteusers'] = '在此期间之后，任何没有填写名字、姓氏或电子邮件字段的帐户都将被删除。';
 $string['configdeleteunconfirmed'] = '使用email认证注册时，超过该时限未确认的用户将被删除。';
 $string['configdenyemailaddresses'] = '要拒绝某些域名的email地址，请把他们列在这里。系统会接受所有其它域名的邮件。域名加上“.”前缀会连同子域一起拒收。例如<strong>hotmail.com yahoo.co.uk .live.com</strong>';
 $string['configdisableuserimages'] = '禁止更改图像。';
@@ -736,6 +734,7 @@ $string['iplookupinfo'] = '默认情况下，Moodle使用免费的在线NetGeo (
 因此强烈推荐安装免费GeoLite City数据库MaxMind。<br />
 IP地址位置会显示在简单的地图或者Google Maps上。请注意，您需要一个Google帐号，并申请免费的 Google Maps API key。';
 $string['iplookupmaxmindnote'] = '该产品包括由MaxMind创建的GeoLite2数据，可通过 <a href="http://www.maxmind.com/">http://www.maxmind.com/访问</a>。';
+$string['iscustomadminwarnings'] = '检测到你的网站使用了自定义的管理员目录。此功能已经不受支持并将会在Moodle4.2版本后删除。';
 $string['ishttpswarning'] = '已经检测到你的网站没有使用 HTTPS 来增加安全。强烈建议您将您的网站改用HTTPS 以增加安全性，并改进与其他系统的整合。';
 $string['keeptagnamecase'] = '保持标签名大小写';
 $string['lang'] = '缺省语言';
@@ -999,7 +998,7 @@ $string['profilecommonsettings'] = '公共设置';
 $string['profileconfirmcategorydeletion'] = '类别中{$a}字段将被移入类别上面或下面。<br />您是否希望删除该类别吗？';
 $string['profileconfirmfielddeletion'] = '{$a}用户记录字段将会删除<br />您是否希望删除该字段。';
 $string['profilecreatecategory'] = '创建一个新的个人资料类别';
-$string['profilecreatefield'] = '创建一个新的个人资料字段';
+$string['profilecreatefield'] = '创建一个新的配置文件字段';
 $string['profilecreatenewcategory'] = '创建一个新的类别';
 $string['profilecreatenewfield'] = '创建一个新的“{$a}”个人资料字段';
 $string['profiledefaultcategory'] = '其它项';
@@ -1012,7 +1011,7 @@ $string['profiledscript'] = '这个脚本已经被剖析过';
 $string['profiledscriptview'] = '查看此脚本的剖析信息';
 $string['profileeditcategory'] = '编辑类别{$a}';
 $string['profileeditfield'] = '编辑个人资料字段{$a}';
-$string['profilefield'] = '个人资料字段';
+$string['profilefield'] = '配置文件字段';
 $string['profilefieldcolumns'] = '列';
 $string['profilefieldispassword'] = '这是密码字段吗？';
 $string['profilefieldlink'] = '链接';
@@ -1042,6 +1041,7 @@ $string['profilespecificsettings'] = '细节设置';
 $string['profilevisible'] = '该字段对谁可见';
 $string['profilevisible_help'] = '* 不可见 - 只有管理员能查看的私人数据
 * 用户可见 - 只有管理员和用户能查看的私人数据
+* 用户、教师、和管理员可见 - 只有用户、教师和管理员能够查看私人数据(基于课程配置文件)
 * 所有人可见';
 $string['profilevisibleall'] = '对任何人可见';
 $string['profilevisiblenone'] = '不可见';
@@ -1107,7 +1107,10 @@ $string['registermoodleorgli1'] = '为了您能得到重要的通知如安全警
 $string['registermoodleorgli2'] = '关于您网站的统计数据将被加入到全球的 Moodle 社区{$a}里。';
 $string['registerwithmoodleorg'] = '注册你的网站';
 $string['registration'] = '注册';
-$string['registration_help'] = '推荐您注册您的站点，以便接受安全警告以及访问Moodle.net，我们的课程分享平台。';
+$string['registration_help'] = '注册后：
+*你会收到安全警告
+*你可以从你的网站激活移动应用推送通知
+*你会为我们的Moodle全球社区统计数据做出贡献';
 $string['registrationwarning'] = '您的网站还没有注册。';
 $string['registrationwarningcontactadmin'] = '此网站尚未注册。请告知您的管理员。';
 $string['releasenoteslink'] = '想更多了解此版本的 Moodle，请参考<a target="_new" href="{$a}">发行备忘录</a>。';
@@ -1118,7 +1121,7 @@ $string['rememberusername_desc'] = '如果想在用户登录时用永久 cookie 
 $string['reportsmanage'] = '管理报告';
 $string['requestcategoryselection'] = '启用类别选择';
 $string['required'] = '要求的';
-$string['requiredentrieschanged'] = '<strong>重要—请一定阅读<br/>（这条警告只会在升级过程中显示）</strong><br/>为了修复一个bug，使用了“必须完成的条目数”和“查看前必须完成的条目数”的数据库活动的设置将被更改。请查看<a href="http://moodle.org/mod/forum/discuss.php?d=110928" target="_blank">数据库模块讨论区</a>了解更多细节。还可以在<a href="http://docs.moodle.org/en/Adding/editing_a_database#Required_entries" target="_blank">Moodle文档</a>中了解这些设置的特性。<br/><br/>这个修改影响您系统中的下列数据库：（请马上保存此列表，并在升级结束后，检查这些活动是否仍按照教师期望的方式工作。）<br/><strong>{$a->text}</strong><br/>';
+$string['requiredentrieschanged'] = '注意：升级后，在以下数据库活动中会强制执行“查看前必需的条目”设置：<br/>{$a->text}<br/>';
 $string['requiremodintro'] = '必须输入活动描述';
 $string['requiremodintro_desc'] = '启用则用户必须为每一个活动输入一段描述信息。';
 $string['requires'] = '需要';
@@ -1502,7 +1505,7 @@ $string['userlist'] = '浏览用户';
 $string['usermanagement'] = '用户管理';
 $string['userpolicies'] = '用户策略';
 $string['userpreference'] = '用户偏好设置';
-$string['userquota'] = '用户配额';
+$string['userquota'] = '私有文件空间';
 $string['userquota_desc'] = '每位用户可以存储私有文件的最大数量';
 $string['users'] = '用户';
 $string['usesitenameforsitepages'] = '用网站名表示网站页面';

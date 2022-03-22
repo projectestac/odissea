@@ -42,7 +42,7 @@ $string['itemnumber'] = 'رقم العنصر';
 $string['notdescription'] = 'لم ترسل القيمة عبر <a href="{$a}">الفيزا أو باي بال</a>';
 $string['paymentcompleted'] = 'تم قبول مالك والآن يمكنك الوصول إلى النشاط أو المورد. شكرًا.';
 $string['paymentinstant'] = 'استعمل الزر أدناه للدفع والوصول إلى النشاط أو المورد.';
-$string['paymentpending'] = 'هناك دفعة معلقة مسجلة لك.';
+$string['paymentpending'] = 'شكرًا على ما قدمته! سيكون العنصر الذي اشتريته متاحًا قريبًا.';
 $string['paymentrequired'] = 'ينبغي عليك الدفع عبر PayPal للوصول إلى النشاط أو المورد.';
 $string['paypalaccepted'] = 'تم قبول مدفوعات بي بال';
 $string['pluginname'] = 'PayPal';

@@ -30,5 +30,5 @@ $string['nologreaderenabled'] = 'Ingen aktiv loggläsare';
 $string['page-report-participation-index'] = 'Kursdeltaganderapport';
 $string['page-report-participation-x'] = 'Valfri deltaganderapport';
 $string['participation:view'] = 'Visa närvarorapport';
-$string['pluginname'] = 'Deltagande i kurs';
+$string['pluginname'] = 'Kursdeltagande';
 $string['privacy:metadata'] = 'Pluginmodulen Kursdeltagande lagrar ingen personinformation.';

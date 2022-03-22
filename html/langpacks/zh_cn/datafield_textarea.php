@@ -29,3 +29,4 @@ $string['fieldtypelabel'] = '文本域字段';
 $string['maxbytes'] = '最大可嵌入文件大小（字节）';
 $string['maxbytes_desc'] = '如果设置为0则默认无限制';
 $string['pluginname'] = '文本域';
+$string['privacy:metadata'] = '文本输入区字段组件不存储任何个人数据，它使用mod_data中定义的表。';

@@ -50,6 +50,7 @@ $string['apply:siteurl_help'] = 'رابط الموقع. نحن نحتاجه لأ
 $string['coupon:new'] = 'إضافة قسيمة جديدة';
 $string['coupons:backtooverview'] = 'عودة إلى قائمة القسائم';
 $string['coupontype:value'] = 'القيمة';
+$string['defaultrole'] = 'إسناد الدور الافتراضي';
 $string['entiresite'] = 'عموم الموقع / أي مقرر دراسي';
 $string['name'] = 'الاسم';
 $string['th:value'] = 'القيمة';

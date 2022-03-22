@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '기본 보고서';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'SCORM 보고서에 나타낼 사용자 수';

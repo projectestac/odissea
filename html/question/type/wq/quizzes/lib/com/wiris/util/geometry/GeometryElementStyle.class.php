@@ -38,10 +38,12 @@ class com_wiris_util_geometry_GeometryElementStyle {
 	static $LABEL_COLOR = "label_color";
 	static $LABEL_BOLD = "label_bold";
 	static $LABEL_ITALIC = "label_italic";
+	static $LABEL_POSITION_LOGIC = "label_position_logic";
 	static $VISIBLE = "visible";
 	static $FIXED = "fixed";
 	static $COLOR = "color";
 	static $FONT_SIZE = "font_size";
+	static $VIEW_3D = "view_3D";
 	static $PIE_RADIUS = "pie_radius";
 	static $PIE_HEIGHT = "pie_height";
 	static $PIE_INCLINATION_ANGLE = "pie_inclination_angle";
@@ -61,6 +63,11 @@ class com_wiris_util_geometry_GeometryElementStyle {
 	static $LABELS_TEXT = "name_labels";
 	static $COLORS = "colors";
 	static $XREF = "xref";
+	static $CHANGE_STEP = "change_step";
+	static $LENGTH_FOR_NEWS = "length_for_news";
+	static $MAX_VALUE_PIE = "max_value_pie";
+	static $POINT_SIZES = "point_sizes";
+	static $STROKE_WIDTHS = "stroke_widths";
 	static function readJSON($json) {
 		return new com_wiris_util_geometry_GeometryElementStyle(com_wiris_util_json_JSon::getHash(com_wiris_util_json_JSon::decode($json)));
 	}

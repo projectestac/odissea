@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addafter'] = 'Adicionar novo capítulo';
 $string['addafterchapter'] = 'Adicionar novo capítulo depois de "{$a->title}"';
-$string['book:addinstance'] = 'Adicionar novo Livro';
+$string['book:addinstance'] = 'Adicionar novo livro';
 $string['book:edit'] = 'Editar capítulos do livro';
 $string['book:read'] = 'Ver livro';
 $string['book:viewhiddenchapters'] = 'Ver capítulos ocultos';
@@ -41,7 +41,7 @@ $string['content'] = 'Conteúdo';
 $string['customtitles'] = 'Títulos personalizados';
 $string['customtitles_help'] = 'Normalmente o título do capítulo é mostrado no índice e como cabeçalho por cima do conteúdo.
 
-Se ativar os titulos personalizados, o título do capítulo não será exibido como cabeçalho por cima do conteúdo. Neste caso, poderá introduzir no conteúdo um título diferente (talvez mais longo que o título do capítulo).';
+Se ativar os titulos personalizados, o título do capítulo não será exibido como cabeçalho por cima do conteúdo. Neste caso, poderá inserir um título diferente no conteúdo (talvez mais longo que o título do capítulo).';
 $string['deletechapter'] = 'Apagar capítulo "{$a}"';
 $string['editchapter'] = 'Editar capítulo "{$a}"';
 $string['editingchapter'] = 'Editar capítulo';
@@ -96,13 +96,13 @@ $string['numbering_help'] = '* Sem numeração - Os títulos dos capítulos e su
 * Marcadores - Os subcapítulos são exibidos com marcadores (○) e com avanço no índice
 * Avançado - Os subcapítulos são exibidos com avanço no índice';
 $string['numberingoptions'] = 'Opções de formatação disponíveis';
-$string['numberingoptions_desc'] = 'Opções de formatação usadas para exibir os capítulos e subcapítulos no índice';
+$string['numberingoptions_desc'] = 'Opções de formatação usadas para exibir os capítulos e subcapítulos no índice.';
 $string['page-mod-book-x'] = 'Qualquer página do recurso Livro';
 $string['pluginadministration'] = 'Administração do Livro';
 $string['pluginname'] = 'Livro';
 $string['previouschapter'] = 'Capítulo anterior';
 $string['privacy:metadata'] = 'O módulo Livro não armazena quaisquer dados pessoais.';
-$string['removeallbooktags'] = 'Remover todas as tags do livro';
+$string['removeallbooktags'] = 'Remover todas as palavras-chave do livro';
 $string['search:activity'] = 'Livro - informações sobre o recurso';
 $string['search:chapter'] = 'Livro - capítulos';
 $string['showchapter'] = 'Mostrar capítulo "{$a}"';
@@ -111,6 +111,6 @@ $string['subchapternotice'] = '(Apenas disponível quando o primeiro capítulo e
 $string['subplugintype_booktool'] = 'Ferramenta Livro';
 $string['subplugintype_booktool_plural'] = 'Configurações do livro';
 $string['tagarea_book_chapters'] = 'Capítulos do livro';
-$string['tagsdeleted'] = 'Todas as tags do livro foram apagadas';
+$string['tagsdeleted'] = 'Todas as palavras-chave do livro foram apagadas';
 $string['toc'] = 'Índice';
 $string['top'] = 'topo';

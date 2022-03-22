@@ -75,6 +75,7 @@ Questo <a href="https://youtu.be/qbp-RuM4NpU" target="_blank">video</a> spiega c
 $string['grade'] = 'Valutazione';
 $string['gradeit'] = 'Valutazione';
 $string['grademethod'] = 'Metodo di valutazione';
+$string['header_geogebra'] = 'Impostazioni GeoGebra';
 $string['height'] = 'Altezza';
 $string['highestattempt'] = 'Miglior tentativo';
 $string['httpnotallowed'] = 'Al momento non è consentito l\'uso di file esterni';
@@ -127,7 +128,6 @@ $string['resultstab'] = 'Risultati';
 $string['resumeattempt'] = 'Continua il tentativo non terminato';
 $string['review'] = 'Revisione di';
 $string['reviewtab'] = 'Revisione';
-$string['save'] = 'Salva';
 $string['savechanges'] = 'Salva modifiche';
 $string['savewithoutsubmitting'] = 'Salva senza inviare';
 $string['settings'] = 'Impostazioni';

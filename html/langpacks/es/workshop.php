@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = 'Se ha subido una entrega.';
 $string['eventassessmentevaluated'] = 'Calificación evaluada';
 $string['eventassessmentevaluationsreset'] = 'Valoraciones de evaluación restablecidas';
 $string['eventassessmentreevaluated'] = 'Valoración evaluada de nuevo';
+$string['eventphaseautomaticallyswitched'] = 'Fase cambiada automáticamente';
 $string['eventphaseswitched'] = 'Fase cambiada';
 $string['eventsubmissionassessed'] = 'Entrega evaluada';
 $string['eventsubmissionassessmentsreset'] = 'Envíos de valoraciones limpiados';

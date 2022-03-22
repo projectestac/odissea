@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activity_results:addinstance'] = 'Adicionar um novo bloco de resultados de atividade';
+$string['activity_results:addinstance'] = 'Adicionar um novo bloco Resultados de atividade';
 $string['bestgrade'] = 'A nota mais alta:';
 $string['bestgrades'] = 'As {$a} notas mais altas:';
 $string['bestgroupgrade'] = 'Grupo com a média mais alta:';
@@ -46,7 +46,7 @@ $string['config_show_worst'] = 'Das notas mais baixas, quantas devem ser exibida
 $string['config_use_groups'] = 'Exibe grupos em vez de alunos (apenas caso a atividade suporte grupos)?';
 $string['configuredtoshownothing'] = 'A configuração atual deste bloco não permite a exibição de resultados.';
 $string['defaultdecimalplaces'] = 'Casas decimais';
-$string['defaultdecimalplaces_desc'] = 'Número de casas decimais para exibir por predefinição';
+$string['defaultdecimalplaces_desc'] = 'Número de casas decimais para exibir por predefinição.';
 $string['defaultgradedisplay'] = 'Exibir notas como';
 $string['defaultgradedisplay_desc'] = 'Como devem ser exibidas as notas por predefinição?';
 $string['defaulthighestgrades'] = 'Notas mais altas exibidas por predefinição';
@@ -56,7 +56,7 @@ $string['defaultlowestgrades_desc'] = 'Quantas das notas mais baixas devem ser e
 $string['defaultnameoptions'] = 'Privacidade dos resultados';
 $string['defaultnameoptions_desc'] = 'Como devem os alunos ser identificados por predefinição?';
 $string['defaultshowgroups'] = 'Mostrar grupos por predefinição';
-$string['defaultshowgroups_desc'] = 'Mostrar grupos em vez de alunos por predefinição (apenas se a atividade suportar grupos)';
+$string['defaultshowgroups_desc'] = 'Mostrar grupos em vez de alunos por predefinição (apenas se a atividade suportar grupos).';
 $string['error_emptyactivityid'] = 'Por favor, configure este bloco e selecione de que atividade ele deve exibir os resultados.';
 $string['error_emptyactivityrecord'] = 'Erro: a atividade selecionada não existe na base de dados.';
 $string['error_nogroupsexist'] = 'Erro: o bloco está configurado para mostrar as notas em modo de grupos, no entanto não existem grupos definidos.';

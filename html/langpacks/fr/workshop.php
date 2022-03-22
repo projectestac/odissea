@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = 'Un travail a été déposé.';
 $string['eventassessmentevaluated'] = 'Évaluation notée';
 $string['eventassessmentevaluationsreset'] = 'Notes des évaluations réinitialisées';
 $string['eventassessmentreevaluated'] = 'Évaluation ré-évaluée';
+$string['eventphaseautomaticallyswitched'] = 'Phase changée automatiquement';
 $string['eventphaseswitched'] = 'Phase changée';
 $string['eventsubmissionassessed'] = 'Travail evalué';
 $string['eventsubmissionassessmentsreset'] = 'Évaluations de travail effacées';

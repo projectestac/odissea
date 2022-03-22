@@ -1427,10 +1427,10 @@ md-elevation-transition {
 }
 
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer {
-  background: url("decoration/drawing_panel_empty.svg?v=dev") center center no-repeat;
+  background: url("decoration/drawing_panel_empty.svg?v=4.4.2") center center no-repeat;
 }
 .wrsUI_app .wrsUI_drawingPanel.wrsUI_drawingPanelEmpty .wrsUI_aux_canvasContainer canvas {
-  background: url("decoration/drawing_panel_grid.png?v=dev");
+  background: url("decoration/drawing_panel_grid.png?v=4.4.2");
 }
 .wrsUI_app .wrsUI_drawingPanel .wrsUI_aux_canvasContainer {
   position: absolute;
@@ -3110,7 +3110,7 @@ md-elevation-transition {
 }
 .wrsUI_app .wrsUI_slider .wrsUI_aux_sliderWrapper .wrsUI_aux_sliderRange {
   background: #077670;
-  width: calc(var(--slider-width) / var(--slider-max) * (var(--slider-value) - var(--slider-min)));
+  width: calc((var(--slider-width) / var(--slider-max)) * (var(--slider-value) - var(--slider-min)));
   height: 2px;
   border-radius: 2px;
 }
@@ -3122,7 +3122,7 @@ md-elevation-transition {
   cursor: pointer;
   position: absolute;
   top: -1px;
-  left: calc(var(--slider-width) / var(--slider-max) * (var(--slider-value) - var(--slider-min)) - 5px);
+  left: calc((var(--slider-width) / var(--slider-max)) * (var(--slider-value) - var(--slider-min)) - 5px);
 }
 .wrsUI_app .wrsUI_slider .wrsUI_aux_sliderWrapper .wrsUI_aux_sliderHandle:focus {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);

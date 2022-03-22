@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['error_multiplehost'] = 'Já existe uma instância do módulo de inscrição Mnet neste servidor. Apenas é possível ter uma instância por servidor e/ou uma instância para "Todos os servidores"';
 $string['instancename'] = 'Nome do método de inscrição';
-$string['instancename_help'] = 'Se assim o desejar pode renomear esta instância do método de inscrição MNet.Se este campo ficar vazio, será utilizado o nome predefinido (contém o nome do servidor externo e o papel atribuído aos seus utilizadores).';
+$string['instancename_help'] = 'Se pretender, pode renomear esta instância do método de inscrição MNet. Se este campo ficar em branco, será utilizado o nome predefinido (contém o nome do servidor externo e o papel atribuído aos seus utilizadores).';
 $string['mnet:config'] = 'Configurar instâncias de inscrição MNet';
 $string['mnet_enrol_description'] = 'Publicar este serviço de modo a permitir que os administradores do servidor {$a} inscrevam os seus alunos nas disciplinas existentes no Moodle.
 <br /><ul><li><em>Dependência</em>: Também tem de <strong>publicar</strong> o serviço SSO (Fornecedor de Serviço) para {$a}.</li><li><em>Dependência</em>: Também tem de <strong>subscrever</strong>

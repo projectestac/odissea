@@ -181,6 +181,13 @@ $string['persistentfieldsexist'] = 'Följande fält finns redan:';
 $string['pluginname'] = 'XMLDB-redigerare';
 $string['primarykeyonlyallownotnullfields'] = 'Primärnycklar får inte vara null';
 $string['privacy:metadata'] = 'Pluginmodulen XMLDB-redigerare lagrar ingen personlig information.';
+$string['reconcile_files'] = 'Leta efter XMLDB-filer som behöver stämmas av';
+$string['reconcile_files_intro'] = 'Den här funktionen söker igenom det aktuella innehållet i alla XMLDB-filer och kontrollerar att de matchar resultaten av att generera dem från XMLDB-redigeraren.
+
+En lista över filer som måste stämmas av (återskapas) visas och XMLDB-redigeraren behöver användas för att åtgärda dem.';
+$string['reconcile_files_no'] = 'Alla filer är OK';
+$string['reconcile_files_yes'] = 'Följande filer måste återskapas:';
+$string['reconcilefiles'] = 'Kontrollera XMLDB-filer';
 $string['reserved'] = 'Reserverat';
 $string['reservedwords'] = 'Reserverade ord';
 $string['revert'] = 'Ångra';

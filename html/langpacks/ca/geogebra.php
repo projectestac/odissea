@@ -71,6 +71,7 @@ $string['geogebraurl_help'] = 'Localitzeu la construcció a <a href="https://www
 $string['grade'] = 'Qualificació';
 $string['gradeit'] = 'Qualificació';
 $string['grademethod'] = 'Mètode de qualificació';
+$string['header_geogebra'] = 'Paràmetres del GeoGebra';
 $string['height'] = 'Alçada';
 $string['highestattempt'] = 'Millor intent';
 $string['httpnotallowed'] = 'De moment no és possible utilitzar fitxers externs';
@@ -110,7 +111,6 @@ $string['resultstab'] = 'Resultats';
 $string['resumeattempt'] = 'Continuació d\'un intent anterior';
 $string['review'] = 'Revisió de';
 $string['reviewtab'] = 'Revisió';
-$string['save'] = 'Desa';
 $string['savechanges'] = 'Desa els canvis';
 $string['savewithoutsubmitting'] = 'Desa sense entregar';
 $string['settings'] = 'Paràmetres';

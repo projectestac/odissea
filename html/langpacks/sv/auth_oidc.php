@@ -85,9 +85,9 @@ $string['cfg_opname_desc'] = 'Detta är en etikett som visas för användaren so
 $string['cfg_opname_key'] = 'Leverantörsnamn';
 $string['cfg_redirecturi_desc'] = 'Detta är URI:n som kommer att användas som "Omdirigerings-URI". Din OpenID Connect-identitetsleverantör bör be om denna när du registrerar Moodle som klient.<br/><b>OBS!</b> Du måste ange denna i OpenID Connect-leverantören *exakt* som den visas här. Eventuella skillnader förhindrar inloggningar med OpenID Connect.';
 $string['cfg_redirecturi_key'] = 'Omdirigerings-URI';
-$string['cfg_signoffintegration_desc'] = 'Om det här alternativet är aktiverat kommer Moodle att försöka logga ut användaren även från Office 365 när en Moodle-användare som använder OIDC-autentiseringsmetod loggar ut från Moodle.
+$string['cfg_signoffintegration_desc'] = 'Om det här alternativet är aktiverat kommer Moodle att försöka logga ut användaren även från Office 365 när en Moodle-användare som använder OpenID Connect-autentisering loggar ut från Moodle.
 
-Url:en till Moodle-webbplatsen ({$a}) måste läggas till som en omdirigerings-URI i Azure-appen som skapats för Moodle Office 365-integrationen.';
+URL:en till Moodle-webbplatsen ({$a}) måste läggas till som en omdirigerings-URI i Azure-appen som skapats för Moodle Office 365-integrationen.';
 $string['cfg_signoffintegration_key'] = 'Enkel utloggning';
 $string['cfg_tokenendpoint_desc'] = 'URI:n för tokenslutpunkten från din identitetsprovider som ska användas.';
 $string['cfg_tokenendpoint_key'] = 'Tokenslutpunkt';
@@ -197,6 +197,16 @@ $string['settings_fieldmap_field_postalCode'] = 'Postnummer';
 $string['settings_fieldmap_field_preferredLanguage'] = 'Språk';
 $string['settings_fieldmap_field_preferredName'] = 'Tilltalsnamn';
 $string['settings_fieldmap_field_roles'] = 'Roller';
+$string['settings_fieldmap_field_sds_school_id'] = 'SDS skol-ID ({$a})';
+$string['settings_fieldmap_field_sds_school_name'] = 'SDS skolnamn ({$a})';
+$string['settings_fieldmap_field_sds_school_role'] = 'SDS skolroll ("Student" eller "Lärare")';
+$string['settings_fieldmap_field_sds_student_birthDate'] = 'Födelsedatum för SDS-student';
+$string['settings_fieldmap_field_sds_student_externalId'] = 'Externt ID för SDS-student';
+$string['settings_fieldmap_field_sds_student_grade'] = 'Betyg för SDS-student';
+$string['settings_fieldmap_field_sds_student_graduationYear'] = 'Avgångsår för SDS-student';
+$string['settings_fieldmap_field_sds_student_studentNumber'] = 'SDS-studentnummer';
+$string['settings_fieldmap_field_sds_teacher_externalId'] = 'Externt ID för SDS-lärare';
+$string['settings_fieldmap_field_sds_teacher_teacherNumber'] = 'SDS-lärarnummer';
 $string['settings_fieldmap_field_state'] = 'Stat';
 $string['settings_fieldmap_field_streetAddress'] = 'Gatuadress';
 $string['settings_fieldmap_field_surname'] = 'Efternamn';

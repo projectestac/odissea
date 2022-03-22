@@ -28,5 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['objectivescore'] = '스콤 오브젝티브 점수 표시';
 $string['objectivex'] = '스콤 학습목표 {$a}';
 $string['pluginname'] = '스콤 학습목표 보고서';
+$string['privacy:metadata:preference:scorm_report_objectives_score'] = 'SCORM 보고서에 학습 목표 수치를 나타낼 지 여부';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'SCORM 보고서에 나타낼 사용자 수';
 $string['score'] = '점수';
 $string['status'] = '상태';

@@ -66,7 +66,7 @@ Beste hainbat zure esku jarritako ikastaro-txantiloiak dira, zeuk jaitsi eta zur
 $string['enrollable'] = 'matrikulatzen uzten didaten ikastaroak';
 $string['enrollablecourses'] = 'Matrikulatzeko ikastaroak';
 $string['errorcourselisting'] = 'Mesedez kontuan izan ezazu: dagoeneko ezin da komunitateko ikastarorik bilatu moodle.net-en. Lehendik partekatutako ikastaroak jaisteko eskuragarri daude archive.moodle.net helbidean. Ikusi ezazu <a href="https://docs.moodle.org/en/Sunsetting_moodle.net">Sunsetting moodle.net</a> xehetasun gehiago ezagutzeko.';
-$string['errorhublisting'] = 'Errorea gertatu da Moodle.org-tik bilgune-zerrenda berreskuratzean. Mesedez, saiatu beranduago. ({$a})';
+$string['errorhublisting'] = 'Errorea gertatu da Moodle.org-tik bilgune-zerrenda berreskuratzean. Mesedez, saiatu zaitez berriro beranduago. ({$a})';
 $string['fileinfo'] = 'Hizkuntza: {$a->lang} - Lizentzia: {$a->license} - Eguneratze-unea: {$a->timeupdated}';
 $string['hideall'] = 'Ezkutatu bilguneak';
 $string['hub'] = 'bilgunea';

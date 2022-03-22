@@ -30,7 +30,7 @@ $string['canntenrolearly'] = 'Ainda não é possível inscrever-se; as inscriç�
 $string['canntenrollate'] = 'Não é possível inscrever mais utilizadores, pois as inscrições terminaram {$a}.';
 $string['cohortnonmemberinfo'] = 'Apenas os membros do Grupo global \'{$a}\' podem autoinscrever-se.';
 $string['cohortonly'] = 'Apenas membros do Grupo global';
-$string['cohortonly_help'] = 'A autoinscrição pode ser restrita apenas a membros de um Grupo global específico. Note que a alteração desta configuração não tem efeito sobre as inscrições existentes.';
+$string['cohortonly_help'] = 'A autoinscrição pode ser restrita apenas a membros de um Grupo global específico. Tenha em atenção que a alteração desta configuração não tem efeito sobre as inscrições existentes.';
 $string['confirmbulkdeleteenrolment'] = 'Tem a certeza de que pretende apagar essas inscrições do utilizador?';
 $string['customwelcomemessage'] = 'Mensagem de boas-vindas personalizada';
 $string['customwelcomemessage_help'] = 'Pode definir uma mensagem personalizada em texto simples ou autoformatação-Moodle, incluindo código HTML e tags multilingues .
@@ -89,9 +89,9 @@ $string['nopassword'] = 'Não é pedida senha de inscrição';
 $string['password'] = 'Senha de inscrição';
 $string['password_help'] = 'A senha de inscrição permite restringir o acesso à disciplina apenas aos utilizadores que conheçam a senha de inscrição.
 
-Se este campo não estiver preenchido, qualquer utilizador poderá inscrever-se nesta disciplina.
+Se este campo for deixado em branco, qualquer utilizador poderá inscrever-se nesta disciplina.
 
-Se for especificada uma senha, qualquer utilizador que tente aceder à disciplina terá que indicar essa senha. Este procedimento SÓ acontece no momento da inscrição nas disciplinas, os acessos posteriores dos alunos inscritos dispensam a indicação desta senha.';
+Se for especificada uma senha, qualquer utilizador que tente aceder à disciplina terá que indicar esta senha. Este procedimento SÓ acontece no momento da inscrição nas disciplinas. Os acessos posteriores dos alunos inscritos dispensam a indicação desta senha.';
 $string['passwordinvalid'] = 'A senha de inscrição que indicou não é a correta. Por favor, tente novamente';
 $string['passwordinvalidhint'] = 'A senha de inscrição que indicou não é a correta. Por favor, tente novamente. Sugestão: A primeira letra é "{$a}"';
 $string['pluginname'] = 'Autoinscrição';
@@ -104,8 +104,8 @@ $string['self:config'] = 'Configurar instâncias de autoinscrição';
 $string['self:enrolself'] = 'Autoinscrever-se na disciplina';
 $string['self:holdkey'] = 'Aparecer como titular da chave de inscrição';
 $string['self:manage'] = 'Gerir utilizadores inscritos';
-$string['self:unenrol'] = 'Remover inscrições de alunos desta disciplina';
-$string['self:unenrolself'] = 'Remover a sua inscrição desta disciplina';
+$string['self:unenrol'] = 'Cancelar inscrições de alunos da disciplina';
+$string['self:unenrolself'] = 'Cancelar a sua inscrição na disciplina';
 $string['sendcoursewelcomemessage'] = 'Enviar mensagem de boas-vindas';
 $string['sendcoursewelcomemessage_help'] = 'Quando um utilizador se inscreve na disciplina, pode receber um e-mail com uma mensagem de boas-vindas. Se for determinado para ser enviado do contacto da disciplina (por predefinição, o professor) e mais do que um utilizador tem o papel de professor, o e-mail será enviado do primeiro utilizador a quem foi atribuído o papel de professor.';
 $string['sendexpirynotificationstask'] = 'Tarefa de envio de notificações de expiração de autoinscrições';
@@ -113,12 +113,12 @@ $string['showhint'] = 'Mostrar sugestão';
 $string['showhint_desc'] = 'Se ativar esta opção, será mostrada aos utilizadores a primeira letra da senha de inscrição.';
 $string['status'] = 'Permitir inscrições existentes';
 $string['status_desc'] = 'Ativar o método de autoinscrição nas novas disciplinas.';
-$string['status_help'] = 'Se ativar esta opção e desativar a opção "Permitir novas inscrições", apenas os utilizadores que realizaram a sua autoinscrição previamente poderão aceder à disciplina. Se desativar esta opção, este método de autoinscrição é efetivamente desativado, desde que todos os métodos de autoinscrição estejam suspensos e não seja permitida a autoinscrição de novos utilizadores.';
+$string['status_help'] = 'Se ativar esta opção e desativar a opção "Permitir novas inscrições", apenas os utilizadores que realizaram previamente a sua autoinscrição poderão aceder à disciplina. Se desativar esta opção, este método de autoinscrição é efetivamente desativado, desde que todos os métodos de autoinscrição estejam suspensos e que não seja permitida a autoinscrição de novos utilizadores.';
 $string['syncenrolmentstask'] = 'Tarefa de sincronização de autoinscrições';
 $string['unenrol'] = 'Cancelar inscrição do utilizador';
 $string['unenrolselfconfirm'] = 'Tem a certeza de que pretende cancelar a sua inscrição na disciplina "{$a}"?';
-$string['unenroluser'] = 'Tem a certeza de que pretende cancelar a sua inscrição de "{$a->user}" da disciplina "{$a->course}"?';
-$string['unenrolusers'] = 'Anular inscrições';
+$string['unenroluser'] = 'Tem a certeza de que pretende cancelar a inscrição de "{$a->user}" na disciplina "{$a->course}"?';
+$string['unenrolusers'] = 'Cancelar inscrições';
 $string['usepasswordpolicy'] = 'Usar a política de senhas do site';
 $string['usepasswordpolicy_desc'] = 'Se ativar esta opção, a senha de inscrição nas disciplinas terá que obedecer às mesmas regras que as senhas das contas dos utilizadores.';
 $string['welcometocourse'] = 'Bem-vindo(a) a "{$a}"';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['add_pagebreak'] = 'إضافة فاصل صفحات للمعتمد';
 $string['apply:createprivatetemplate'] = 'إنشاء قالب خاص';
 $string['apply:createpublictemplate'] = 'إنشاء قالب عام';
-$string['apply:deletetemplate'] = 'حذ القالب';
+$string['apply:deletetemplate'] = 'حذف القالب';
 $string['apply:edittemplates'] = 'تحرير القوالب';
 $string['apply:viewanalysepage'] = 'معاينة صفحة التحليل بعد التسليم';
 $string['back_button'] = 'رجوع';
@@ -44,6 +44,24 @@ $string['delete_entry'] = 'إنسحاب';
 $string['delete_entry_button'] = 'إنسحاب';
 $string['delete_template'] = 'حذف القالب';
 $string['delete_templates'] = 'حذف القالب...';
+$string['depending_help'] = 'من الممكن إظهار العنصر المعتمد على قيمة عنصر آخر.<br />
+<strong>إليك مثالاً على ذلك.</strong><br />
+<ul>
+<li>أولاً، قم بإنشاء عنصر ليكون هناك عنصر آخر معتمد عليه.</li>
+<li>بعدها، أضف فاصل صفحات.</li>
+<li>ثم أضف العناصر المعتمدة على قيمة العنصر الذي أنشأته آنفاً. إختر العنصر من القائمة المسماة "العنصر المعتمد عليه" وأكتب القيمة المطلوبة في مربع النص المسمى "القيمة المعتمد عليها".</li>
+</ul>
+<strong>هيكل العنصر ينبغي أن يبدو بهذا الشكل.</strong>
+<ol>
+<li>عنصر سؤال: هل لديك سيارة؟ ج: نعم/لا</li>
+<li>فاصل صفحات للتبعية</li>
+<li>عنصر سؤال: ما لون سيارتك؟<br />
+(هذا العنصر يعتمد على العنصر 1 مع القيمة = نعم)</li>
+<li>عنصر سؤال: لماذا لا تمتلك سيارة؟<br />
+(هذا العنصر يعتمد على العنصر 1 مع القيمة = لا)</li>
+<li> ... عناصر أخرى</li>
+</ol>';
+$string['dependvalue'] = 'القيمة المعتمدة';
 $string['description'] = 'الوصف';
 $string['email_user_other'] = 'قام المشرف بمعالجة تطبيقك';
 $string['entry_saved_operation'] = 'لقد تمت معالجة طلبك.';

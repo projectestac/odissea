@@ -39,6 +39,7 @@ $string['grandtotal_time'] = 'الوقت الإجمالي';
 $string['last_calc_online_session_logout'] = 'نهاية آخر جلسة تسجيل عبر الإنترنت (مع استبعاد الجلسة الحالية)';
 $string['last_site_access'] = 'آخر نشاط في الموقع';
 $string['last_site_login'] = 'آخر دخول إلى الموقع';
+$string['myattendanceregisteraggregates'] = 'قيم إجماليات تسجيلات حضوري';
 $string['offline_refcourse_duration'] = 'الوقت بدون الاتصال، المقرر الدراسي:';
 $string['offline_sessions_total_duration'] = 'الوقت الإجمالي بدون الاتصال';
 $string['online'] = 'عبر الإنترنت';

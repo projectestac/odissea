@@ -87,7 +87,7 @@ url.serveur.fr
 adresse_ip:port
 </pre>';
 $string['testservers'] = 'Serveurs de test';
-$string['testservers_desc'] = 'Une ou plusieurs adresses de connexion permettant de tester des serveurs memcached. Si un serveur de test a été indiqué, la performance de memcached peut être testée depuis la page de performance des caches, accessible via le bloc d\'administration.
+$string['testservers_desc'] = 'Une ou plusieurs adresses de connexion permettant de tester des serveurs memcached. Si un serveur de test a été indiqué, la performance de memcached peut être testée depuis la page de performance des caches, dans le bloc d\'administration.
 Exemple : 127.0.0.1:11211';
 $string['upgrade200recommended'] = 'Il est recommandé de mettre à jour l\'extension Memcached de PHP à la version 2.0.0 ou ultérieure. La version que vous utilisez actuellement ne dispose pas de la fonctionnalité permettant à Moodle d\'assurer un cache en mode bac à sable. Jusqu\'à une éventuelle mise à jour, il n\'est pas recommandé que d\'autres applications utilisent le même serveur Memcached que Moodle.';
 $string['usecompression'] = 'Utiliser la compression';

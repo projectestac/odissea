@@ -26,3 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '复选框';
+$string['privacy:metadata:profilefield_checkbox:data'] = '“用户个人资料”字段用户数据复选框';
+$string['privacy:metadata:profilefield_checkbox:dataformat'] = '“用户个人资料”字段用户数据复选框格式';
+$string['privacy:metadata:profilefield_checkbox:fieldid'] = '“个人资料”字段ID号';
+$string['privacy:metadata:profilefield_checkbox:tableexplanation'] = '其他个人资料数据';
+$string['privacy:metadata:profilefield_checkbox:userid'] = '由“用户个人资料”字段复选框存储其数据的用户的ID号';

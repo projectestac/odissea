@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '丢失的行为';
+$string['privacy:metadata'] = '选词填空问题行为插件不存储任何个人数据。';
 $string['questionusedunknownmodel'] = '此题目对应的行为现在不可用。题目会被尽量显示，但某些部分可能缺失或有错误。';

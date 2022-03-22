@@ -26,9 +26,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activitydate:assessmentsclose'] = 'Final de les avaluacions:';
+$string['activitydate:assessmentsclosed'] = 'Avaluacions finalitzades el';
 $string['activitydate:assessmentsopen'] = 'Inici de les avaluacions:';
+$string['activitydate:assessmentsopened'] = 'Avaluacions iniciades el';
 $string['activitydate:submissionsclose'] = 'Final de les trameses:';
+$string['activitydate:submissionsclosed'] = 'Trameses finalitzades el';
 $string['activitydate:submissionsopen'] = 'Inici de les trameses:';
+$string['activitydate:submissionsopened'] = 'Trameses iniciades el';
 $string['aggregategrades'] = 'Torna a calcular les qualificacions';
 $string['aggregation'] = 'Agregació de les qualificacions';
 $string['allocate'] = 'Assigneu les trameses';
@@ -174,12 +178,12 @@ $string['gradeitemsubmission'] = '{$a->workshopname} (tramesa)';
 $string['gradeover'] = 'Rectifica la qualificació de la tramesa';
 $string['gradereceivedfrom'] = '&lt;';
 $string['gradesreport'] = 'Informe de qualificacions del taller';
-$string['gradetopassgrading'] = 'Qualificació de la tasca d\'avaluació per aprovar';
+$string['gradetopassgrading'] = 'Qualificació de l\'avaluació per aprovar';
 $string['gradetopasssubmission'] = 'Qualificació de la tramesa per aprovar';
-$string['gradinggrade'] = 'Qualificació de la tasca d\'avaluació';
+$string['gradinggrade'] = 'Qualificació de l\'avaluació';
 $string['gradinggrade_help'] = 'Aquest paràmetre especifica la qualificació màxima que es pot obtenir per la feina d\'avaluació de trameses.';
 $string['gradinggradecalculated'] = 'Qualificació calculada per l\'avaluació';
-$string['gradinggradeof'] = 'Qualificació de la tasca d\'avaluació (de {$a})';
+$string['gradinggradeof'] = 'Qualificació de l\'avaluació (de {$a})';
 $string['gradinggradeover'] = 'Rectifica la qualificació de l\'avaluació';
 $string['gradingsettings'] = 'Paràmetres de qualificació';
 $string['groupnoallowed'] = 'No teniu permís per accedir a cap grup en aquest taller';
@@ -205,7 +209,7 @@ Els estudiants poden presentar qualsevol contingut digital (fitxers), com ara do
 
 Les contribucions seran avaluades mitjançant un formulari d\'avaluació de múltiples criteris definits pel professor. El procés d\'avaluació entre iguals i la comprensió del formulari d\'avaluació es pot practicar per endavant amb exemples de trameses proporcionades pel professor, acompanyades d\'una avaluació de referència. Els estudiants tenen l\'oportunitat d\'avaluar una o més trameses dels seus companys. Les trameses i els revisors poden ser anònims, si cal.
 
-Els estudiants obtenen dues notes en una activitat de taller: una qualificació per la seva tramesa i una qualificació per la seva tasca d\'avaluació de les trameses dels seus companys. Ambdues qualificacions es registren en el llibre de qualificacions.';
+Els estudiants obtenen dues notes en una activitat de taller: una qualificació per la seva tramesa i una qualificació per la seva acció d\'avaluació de les trameses dels seus companys. Ambdues qualificacions es registren al llibre de qualificacions.';
 $string['modulenameplural'] = 'Tallers';
 $string['myassessments'] = 'Les meves avaluacions';
 $string['mysubmission'] = 'La meva tramesa';
@@ -215,6 +219,7 @@ $string['noexamplesformready'] = 'Heu de definir un formulari d\'avaluació aban
 $string['nogradeyet'] = 'Encara sense qualificar';
 $string['nosubmissionfound'] = 'No s\'ha trobat cap tramesa per aquest usuari';
 $string['nosubmissions'] = 'Aquest taller encara no té trameses';
+$string['nosubmissiontype'] = 'Com a mínim ha d\'estar disponible un tipus de tramesa';
 $string['notassessed'] = 'No avaluat encara';
 $string['nothingfound'] = 'Res a mostrar';
 $string['nothingtoreview'] = 'No hi ha res per revisar';
@@ -244,6 +249,8 @@ $string['pluginadministration'] = 'Administració del taller';
 $string['pluginname'] = 'Taller';
 $string['prepareexamples'] = 'Prepareu trameses d\'exemple';
 $string['previewassessmentform'] = 'Previsualització';
+$string['privacy:metadata:submissioncontent'] = 'Contingut de la tramesa';
+$string['privacy:metadata:submissioncontentformat'] = 'Format del text del contingut de la tramesa';
 $string['publishedsubmissions'] = 'Trameses publicades';
 $string['publishsubmission'] = 'Publica la tramesa';
 $string['publishsubmission_help'] = 'Les trameses publicades estan disponibles als altres quan el taller està tancat.';
@@ -283,7 +290,7 @@ $string['submissiondeleteconfirm'] = 'Segur que voleu eliminar la tramesa?';
 $string['submissionend'] = 'Data límit per trametre';
 $string['submissionendbeforestart'] = 'La data límit per trametre no pot ser anterior a la data d\'apertura de les trameses';
 $string['submissionenddatetime'] = 'Data límit per trametre: {$a->daydatetime} ({$a->distanceday})';
-$string['submissionendevent'] = '{$a} (data límit per trametre)';
+$string['submissionendevent'] = '{$a} data límit per trametre';
 $string['submissionendswitch'] = 'Canvia a la fase següent després de la data límit per trametre';
 $string['submissionendswitch_help'] = 'Si s\'ha indicat la data límit per trametre i aquesta casella està marcada, el taller automàticament canviarà a la fase d\'avaluació després de la data límit per trametre.
 
@@ -293,6 +300,7 @@ $string['submissiongrade_help'] = 'Aquest paràmetre especifica la qualificació
 $string['submissiongradeof'] = 'Qualificació de la tramesa (de {$a})';
 $string['submissionlastmodified'] = 'Darrera modificada';
 $string['submissionrequiredcontent'] = 'Cal que escriviu text o afegiu un fitxer.';
+$string['submissionrequiredfile'] = 'Heu d\'afegir un fitxer o introduir algun text.';
 $string['submissionsettings'] = 'Paràmetres de la tramesa';
 $string['submissionsreport'] = 'Informe de les tasques del taller';
 $string['submissionstart'] = 'Inici de les trameses des de';
@@ -358,6 +366,7 @@ $string['workshop:addinstance'] = 'Afegeix un taller nou';
 $string['workshop:allocate'] = 'Assigna les trameses per revisar';
 $string['workshop:deletesubmissions'] = 'Esborra trameses';
 $string['workshop:editdimensions'] = 'Edita els formularis d\'avaluació';
+$string['workshop:exportsubmissions'] = 'Exporta les trameses';
 $string['workshop:ignoredeadlines'] = 'Ignora les restriccions temporals';
 $string['workshop:manageexamples'] = 'Gestiona les trameses d\'exemple';
 $string['workshop:overridegrades'] = 'Rectifica les qualificacions calculades';

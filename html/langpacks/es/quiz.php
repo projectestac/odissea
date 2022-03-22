@@ -333,7 +333,7 @@ Si todavía desea enviar este intento, por favor vaya a {$a->attemptsummaryurl} 
 $string['emailoverduesmall'] = 'Usted no envió su intento de {$a->quizname}. Por favor, vaya a {$a->attemptsummaryurl} antes de {$a->attemptgraceend} si usted todavía desea enviarlo.';
 $string['emailoverduesubject'] = 'Intento caducado: {$a->quizname}';
 $string['empty'] = 'Vacío';
-$string['enabled'] = 'Habilidato';
+$string['enabled'] = 'Habilitado';
 $string['endtest'] = 'Terminar intento...';
 $string['erroraccessingreport'] = 'No puede acceder a este informe';
 $string['errorinquestion'] = 'Error en la pregunta';
@@ -923,6 +923,7 @@ $string['scores'] = 'Puntuaciones -';
 $string['search:activity'] = 'Examen - información de actividad';
 $string['sectionheadingedit'] = 'Editar cabecera \'{$a}\'';
 $string['sectionheadingremove'] = 'Borrar cabecera \'{$a}\'';
+$string['sectionnoname'] = 'Sección sin título';
 $string['seequestions'] = '(Vea las preguntas)';
 $string['select'] = 'Seleccionar';
 $string['selectall'] = 'Seleccionar todos';

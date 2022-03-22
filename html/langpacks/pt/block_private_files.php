@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Meus ficheiros privados';
-$string['privacy:metadata'] = 'O bloco Meus ficheiros privados apenas disponibiliza uma lista e um link para os ficheiros privados do utilizador.';
+$string['privacy:metadata'] = 'O bloco Meus ficheiros privados apenas disponibiliza uma lista e uma hiperligação para os ficheiros privados do utilizador.';
 $string['private_files:addinstance'] = 'Adicionar um novo bloco Meus ficheiros privados';
 $string['private_files:myaddinstance'] = 'Adicionar um novo bloco Meus ficheiros privados ao Painel do utilizador';
 $string['privatefiles'] = 'Ficheiros privados ';

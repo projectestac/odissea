@@ -40,7 +40,7 @@ $string['configairnotifierport'] = 'A porta a usar ao ligar ao servidor Nome da 
 $string['configairnotifierurl'] = 'O URL do servidor a ligar para enviar notificações push.';
 $string['configured'] = 'Configurado';
 $string['deletecheckdevicename'] = 'Elimine o seu dispositivo: {$a->name}';
-$string['deletedevice'] = 'Excluir o dispositivo. Note que um aplicativo pode registar o dispositivo novamente. Se o dispositivo continuar a aparecer, desative-o.';
+$string['deletedevice'] = 'Excluir o dispositivo. Tenha em atenção que uma aplicação pode registar o dispositivo novamente. Se o dispositivo continuar a aparecer, desative-o.';
 $string['devicetoken'] = 'Token de Dispositivo';
 $string['enableprocessor'] = 'Ativar notificações da Aplicação Móvel';
 $string['errorretrievingkey'] = 'Ocorreu um erro durante a recuperação da chave de acesso. O seu site deve estar registado para usar este serviço. Se já está registado, tente atualizar os  seus dados de registo. Como alternativa, pode obter uma chave de acesso se criar uma conta no <a href="https://apps.moodle.com">Portal das Aplicações móveis Moodle</a>.';
@@ -68,7 +68,7 @@ $string['privacy:metadata:userfromfullname'] = 'O nome completo do utilizador qu
 $string['privacy:metadata:userfromid'] = 'O ID do utilizador autor da mensagem.';
 $string['privacy:metadata:userid'] = '.O ID do utilizador que enviou a mensagem';
 $string['privacy:metadata:username'] = 'O nome de utilizador do utilizador.';
-$string['privacy:metadata:usersubsystem'] = 'O módulo está conectado ao subsistema do utilizador.';
+$string['privacy:metadata:usersubsystem'] = 'O módulo está ligado ao subsistema do utilizador.';
 $string['privacy:subcontext'] = 'Mensagem Airnotifier';
 $string['requestaccesskey'] = 'Solicitar chave de acesso';
 $string['sendtest'] = 'Enviar notificação push de teste para os meus dispositivos';

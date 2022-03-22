@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmstart'] = 'A sua tentativa tem um limite de tempo de {$a}. Quando começar, o cronómetro começará a contar e não é possível parar ou fazer pausa. Tem de terminar a tentativa antes do tempo acabar. Tem a certeza de que pretende iniciar agora a tentativa de realização do teste?';
+$string['confirmstart'] = 'A sua tentativa tem um tempo limite de {$a}. Quando começar, o temporizador começará a contagem decrescente e não é possível parar ou fazer pausa. Tem de terminar a tentativa antes do tempo acabar. Tem a certeza de que pretende iniciar agora a tentativa de resposta ao teste?';
 $string['confirmstartheader'] = 'Tempo limite';
 $string['pluginname'] = 'Regra de acesso por limite de tempo';
 $string['privacy:metadata'] = 'O módulo Regra de acesso por limite de tempo não armazena dados pessoais.';

@@ -46,7 +46,7 @@ $string['availablelangs'] = 'حزم اللغات المتاحة';
 $string['caution'] = 'تحذير';
 $string['chooselanguage'] = 'إختر اللغة';
 $string['chooselanguagehead'] = 'إختر اللغة';
-$string['chooselanguagesub'] = 'الرجاء حدد لغة للتثبيت. هذه اللغة ستستخدم أيضاً كاللغة الافتراضية للموقع، لكن يمكنك تغييرها لاحقا.';
+$string['chooselanguagesub'] = 'يرجى تحديد لغة لاستعمالها عند التنصيب. هذه اللغة ستستعمل أيضاً بمثابة اللغة الافتراضية للموقع، لكن يمكنك تغييرها لاحقا.';
 $string['cliadminemail'] = 'عنوان البريد الالكتروني للمشرف الجديد';
 $string['cliadminpassword'] = 'كلمة المرور للمشرف الجديد';
 $string['cliadminusername'] = 'اسم المستخدم لحساب المشرف';
@@ -149,7 +149,7 @@ php.ini الرئيسي في مخدمك وتغيير قيمة أحد الإعدا
 $string['inputdatadirectory'] = 'مجلد البيانات';
 $string['inputwebadress'] = 'عنوان الويب:';
 $string['inputwebdirectory'] = 'مجلد مودل';
-$string['installation'] = 'التثبيت';
+$string['installation'] = 'التنصيب';
 $string['invaliddbprefix'] = 'بادئة غير صحيحة. يمكن أن تتضمن البادئة حروفاً لاتينية صغيرة وشُرَطاً تحتانية حصراً.';
 $string['langdownloaderror'] = 'مع الأسف، اللغة "{$a}" تعذر تنزيلها. عملية التنصيب ستستمر باللغة الإنجليزية.';
 $string['langdownloadok'] = 'تم تنصيب اللغة "{$a}" بنجاح. عملية التنصيب ستستمر بتلك اللغة.';

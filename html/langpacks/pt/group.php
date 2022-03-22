@@ -114,7 +114,7 @@ $string['groupmembersselected'] = 'Membros do grupo selecionado';
 $string['groupmode'] = 'Modo de grupo';
 $string['groupmode_help'] = 'A definição do modo de grupo pode ser uma das três seguintes:
 
-* Sem grupos
+* Não há grupos
 * Grupos separados - cada grupo pode ver apenas o seu próprio grupo, estando os restantes grupos invisíveis.
 * Grupos visíveis - cada grupo trabalha apenas dentro do seu próprio grupo, mas pode ver os outros grupos.
 
@@ -158,8 +158,8 @@ $string['namingscheme_help'] = 'O símbolo de arroba (@) pode ser utilizado para
 
 O símbolo cardinal (#) pode ser utilizado para criar grupos com nomes que contenham números. Por exemplo, o Grupo # irá gerar grupos, denominados Grupo 1, Grupo 2, Grupo 3, ...';
 $string['newgrouping'] = 'Novo agrupamento';
-$string['newpicture'] = 'Nova fotografia';
-$string['newpicture_help'] = 'Selecione uma imagem no formato JPG ou PNG. A imagem será ajustada a um quadrado e redimensionada para 100x100 pixels.';
+$string['newpicture'] = 'Nova foto';
+$string['newpicture_help'] = 'Selecione uma imagem no formato JPG ou PNG. A imagem será ajustada a um quadrado e redimensionada para 100x100 píxeis.';
 $string['noallocation'] = 'Sem atribuições';
 $string['nogroup'] = 'Sem grupo';
 $string['nogrouping'] = 'Sem agrupamento';

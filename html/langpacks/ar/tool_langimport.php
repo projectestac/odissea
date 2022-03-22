@@ -47,7 +47,7 @@ $string['langunsupported'] = 'لا يبدو أن مخدمك يدعم اللغا�
 $string['langupdatecomplete'] = 'تم إكمال تحديث حزم اللغات';
 $string['missingcfglangotherroot'] = 'قيمة تكوين مفقودة  $CFG->langotherroot';
 $string['missinglangparent'] = 'اللغة الأم مفقودة <em>{$a->parent}</em> من <em>{$a->lang}</em>.';
-$string['noenglishuninstall'] = 'لا يمكن إلغاء تثبيت حزمة اللغة الإنجليزية.';
+$string['noenglishuninstall'] = 'لا يمكن إلغاء تنصيب حزمة اللغة الإنجليزية.';
 $string['nolangupdateneeded'] = 'كل حزم اللغات الخاصة بك محدثة ولا تحتاج أي تحديث';
 $string['pluginname'] = 'حزم اللغات';
 $string['privacy:metadata'] = 'إن ملحق حزم اللغات لا يخزن أي بيانات شخصية.';

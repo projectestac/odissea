@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['check_configrw_details'] = '<p>É recomendado que as permissões do ficheiro <strong><code>config.php</code></strong> sejam alteradas depois da instalação do Moodle para que este não possa ser posteriormente modificado pelo servidor web.
-Note-se que esta medida não melhora significativamente a segurança do servidor, mas permite dificultar a exploração de algumas vulnerabilidades.</p>';
+Tenha em atenção que esta medida não melhora significativamente a segurança do servidor, mas permite dificultar a exploração de algumas vulnerabilidades.</p>';
 $string['check_configrw_name'] = 'Permissões de escrita do ficheiro <strong>config.php</strong>';
 $string['check_configrw_ok'] = 'O ficheiro <strong>config.php</strong> não pode ser alterado por scripts PHP.';
 $string['check_configrw_warning'] = 'O ficheiro <strong>config.php</strong> pode ser alterado por scripts PHP.';
@@ -39,9 +39,9 @@ $string['check_crawlers_details'] = '<p>A configuração <strong>Permitir acesso
 $string['check_crawlers_error'] = 'É permitido o acesso aos motores de busca mas o acesso de visitante não está ativo. Com esta configuração, os motores não terão acesso a nenhuma disciplina no site.';
 $string['check_crawlers_info'] = 'Os motores de busca podem aceder como visitantes.';
 $string['check_crawlers_name'] = 'Permitir acesso aos motores de busca';
-$string['check_crawlers_ok'] = 'O acesso ao site por motores de busca não deve ativo.';
-$string['check_defaultuserrole_details'] = '<p>As permissões do papel predefinido são atribuídas a todos os utilizadores autenticados. Por isso, assegure-se que não são atribuídas permissões com riscos a este papel.</p>
-<p>O único papel retrocompatível (usado em versões anteriores do Moodle) que pode ser usado com o papel de utilizador predefinido é <strong>Utilizador autenticado</strong>. A permissão para ver disciplinas não deve ser concedida.</p>';
+$string['check_crawlers_ok'] = 'O acesso ao site por motores de busca não está ativo.';
+$string['check_defaultuserrole_details'] = '<p>As permissões do papel predefinido são atribuídas a todos os utilizadores autenticados. Por isso, assegure-se que não são atribuídas a este papel permissões com riscos.</p>
+<p>O único papel retrocompatível (usado em versões anteriores do Moodle) que pode ser usado com o papel de utilizador predefinido é <strong>Utilizador autenticado</strong>. Não deve ser concedida a permissão para ver disciplinas.</p>';
 $string['check_defaultuserrole_error'] = 'O papel "{$a}", a atribuir automaticamente a todos os utilizadores autenticados, não está configurado corretamente!';
 $string['check_defaultuserrole_name'] = 'Papel a atribuir a todos os utilizadores autenticados';
 $string['check_defaultuserrole_notset'] = 'Não foi definido nenhum papel para ser atribuído automaticamente a todos os utilizadores autenticados';
@@ -61,7 +61,7 @@ $string['check_emailchangeconfirmation_ok'] = 'É enviado um e-mail de confirma�
 $string['check_embed_details'] = '<p>A incorporação de objetos sem restrições levanta questões graves de segurança. Qualquer utilizador registado pode realizar um ataque XSS contra outros utilizadores. Esta configuração deve estar desativada em servidores de produção.</p>';
 $string['check_embed_error'] = '<p>A configuração de incorporação de objetos sem restrições está ativa. Esta configuração levanta problemas de segurança graves na maioria dos servidores.</p>';
 $string['check_embed_name'] = 'Permitir conteúdos incorporados e OBJECT';
-$string['check_embed_ok'] = 'Conteúdos incorporados e OBJECT ilimitados';
+$string['check_embed_ok'] = 'Incorporação de OBJECT ilimitados não é permitida.';
 $string['check_frontpagerole_details'] = '<p>O papel predefinido para a página principal é atribuído a todos os utilizadores no contexto das atividades da página principal.  Por isso, não devem ser atribuídas permissões a este papel que ponham em risco o site.</p>
 <p>É recomendado que se crie um papel especificamente para este contexto e que não seja usado nenhum dos papéis retrocompatíveis (usados por versões anteriores do Moodle).</p>';
 $string['check_frontpagerole_error'] = 'O papel "{$a}", definido para a página principal, está configurado incorretamente!';
@@ -93,15 +93,15 @@ $string['check_passwordpolicy_ok'] = 'Estão definidas regras para as palavras-c
 $string['check_preventexecpath_details'] = '<p>Permitir que os caminhos para executáveis sejam definidos através da interface de Administração, é um vetor para escalonamento de privilégios. Tem de ser forçada no ficheiro config.php:</p><p><code>$CFG->preventexecpath = true;<code></p></p>';
 $string['check_preventexecpath_name'] = 'Caminhos executáveis';
 $string['check_preventexecpath_ok'] = 'Os caminhos executáveis apenas podem ser configurados no config.php.';
-$string['check_preventexecpath_warning'] = 'Os caminhos executáveis podem ser configurados na Admin GUI.';
+$string['check_preventexecpath_warning'] = 'Os caminhos executáveis podem ser configurados na Administração GUI (Graphical User Interface).';
 $string['check_publicpaths_403'] = '(Retornou erro 403 mas idealmente deveria ser 404)';
-$string['check_publicpaths_generic'] = '{$a} ficheiros não devem ser públicos';
+$string['check_publicpaths_generic'] = 'ficheiros {$a} não devem ser públicos.';
 $string['check_publicpaths_name'] = 'Verificar todos os caminhos públicos/privados';
 $string['check_riskadmin_detailsok'] = '<p>Verifique a lista de administradores do sistema:</p>{$a}';
 $string['check_riskadmin_detailswarning'] = '<p>Verifique a lista de administradores do sistema:</p>{$a->admins}
 <p>É recomendado que o papel de administrador apenas seja atribuído no contexto de sistema. Os seguintes utilizadores têm o papel de administrador  em outros contextos (não aconselhado):</p>{$a->unsupported}';
 $string['check_riskadmin_name'] = 'Administradores do site';
-$string['check_riskadmin_ok'] = 'Existe(m) {$a} administrador(es) de sistema.';
+$string['check_riskadmin_ok'] = 'Existe(m) {$a} administrador(es) do sistema.';
 $string['check_riskadmin_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) verificar atribuição de papel</a>';
 $string['check_riskadmin_warning'] = 'Existe(m) {$a->admincount} administrador(es) de sistema e {$a->unsupcount} atribuições de papel de administrador noutros contextos (não aconselhado).';
 $string['check_riskbackup_details_overriddenroles'] = '<p>Se ativar esta opção, os utilizadores poderão incluir os dados dos utilizadores nas cópias de segurança. Se esta permissão não for necessária deve ser desativada.</p> {$a}';
@@ -113,7 +113,7 @@ $string['check_riskbackup_editrole'] = '<a href="{$a->url}">{$a->name}</a>';
 $string['check_riskbackup_name'] = 'Cópias de segurança com dados dos utilizadores';
 $string['check_riskbackup_ok'] = 'A configuração efetuada não permite que nenhum papel tenha permissão para incluir dados dos utilizadores nas cópias de segurança das disciplinas.';
 $string['check_riskbackup_unassign'] = '<a href="{$a->url}">{$a->fullname} ({$a->email}) no contexto {$a->contextname}</a>';
-$string['check_riskbackup_warning'] = 'Existe(m) {$a->rolecount} papéis, {$a->overridecount} redefinições e {$a->usercount} utilizadores com permissão para incluir dados dos utilizadores nas cópias de segurança das disciplinas.';
+$string['check_riskbackup_warning'] = 'Existem {$a->rolecount} papéis, {$a->overridecount} redefinições e {$a->usercount} utilizadores com permissão para incluir dados dos utilizadores nas cópias de segurança das disciplinas.';
 $string['check_riskxss_details'] = '<p>A indicação <strong>RISK_XSS</strong> evidencia as permissões perigosas que levantam questões de segurança e que apenas devem ser disponibilizadas a utilizadores de confiança.</p>
 <p>Lista de utilizadores com estas permissões:</p><p>{$a}</p>';
 $string['check_riskxss_name'] = 'Utilizadores com permissões <strong>RISK_XSS</strong>';

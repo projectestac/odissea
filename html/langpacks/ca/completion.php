@@ -94,7 +94,7 @@ $string['completionenabled'] = 'Habilitada, control mitjançant compleció i par
 $string['completionexpected'] = 'S\'espera que es completi el';
 $string['completionexpected_help'] = 'Aquest paràmetre especifica la data en què s\'espera que es completi l\'activitat.';
 $string['completionexpecteddesc'] = 'S\'espera la compleció el {$a}';
-$string['completionexpectedfor'] = '{$a->instancename} hauria d\'estar completa';
+$string['completionexpectedfor'] = '{$a->instancename} hauria d\'estar completat';
 $string['completionicons'] = 'Caixes de marques de compleció';
 $string['completionicons_help'] = 'Una marca a la vora d\'un nom d\'activitat pot ser utilitzada per indicar que l\'activitat està completada.
 

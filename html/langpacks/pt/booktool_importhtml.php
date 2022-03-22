@@ -38,5 +38,5 @@ $string['type'] = 'Tipo';
 $string['typeonefile'] = 'Um ficheiro HTML com capítulos definidos como títulos (H1,H2)';
 $string['typezipdirs'] = 'Cada pasta representa um capítulo';
 $string['typezipfiles'] = 'Cada ficheiro HTML representa um capítulo';
-$string['ziparchive'] = 'Ficheiro zip';
-$string['ziparchive_help'] = 'Selecione um ficheiro zip que contenha ficheiros HTML, ficheiros multimédia e pastas. Os ficheiros ou diretorias em que o nome termina em "_sub" serão convertidos em subcapítulos.';
+$string['ziparchive'] = 'Ficheiro Zip';
+$string['ziparchive_help'] = 'Selecione um ficheiro Zip que contenha ficheiros HTML, ficheiros multimédia e pastas. Os ficheiros ou diretorias em que o nome termina em "_sub" serão convertidos em subcapítulos.';

@@ -180,6 +180,13 @@ $string['persistentfieldsexist'] = 'Hurrengo eremuak dagoeneko existitzen dira:'
 $string['pluginname'] = 'XMLDB editorea';
 $string['primarykeyonlyallownotnullfields'] = 'Gako nagusiak (primary key) ezin dira hutsik egon';
 $string['privacy:metadata'] = 'XMLDB editorea pluginak ez du datu pertsonalik biltzen.';
+$string['reconcile_files'] = 'Bilatu konpondu beharreko XMLDB fitxategiak';
+$string['reconcile_files_intro'] = 'Funtzionalitate honek XMLDB fitxategi guztien oraingo edukiak bilatzen ditu, eduki horiek XMLDB Editoretik sortutakoekin bat datozela egiaztatuz.
+
+Konpondu (berriz sortu) beharreko fitxategien zerrenda erakutsiko da eta horiek konpontzeko XMLDB Editorea erabili beharko litzateke.';
+$string['reconcile_files_no'] = 'Fitxategi guztiak ondo daude, ez dago konpontzerik behar.';
+$string['reconcile_files_yes'] = 'Konpondu beharreko fitxategiak aurkitu dira:';
+$string['reconcilefiles'] = 'Konpondu XMLDB fitxategiak';
 $string['reserved'] = 'Erreserbatua';
 $string['reservedwords'] = 'Hitz erreserbatuak';
 $string['revert'] = 'Desegin';

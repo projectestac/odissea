@@ -316,6 +316,7 @@ $string['preferwidget'] = 'Llança el giny preferit';
 $string['preferwidth'] = 'Amplada preferida';
 $string['press_to_submit'] = 'Prem per llançar aquesta activitat';
 $string['privacy'] = 'Privacitat';
+$string['privacy:metadata:lti_submission'] = 'Tramesa LTI';
 $string['quickgrade'] = 'Permet la qualificació fàcil';
 $string['quickgrade_help'] = 'Si s\'habilita, es podran qualificar múltiples eines en cada pàgina. Afegiu qualificacions i comentaris i llavors cliqueu el botó «Desa tota la meva retroacció» per desar tots els canvis de la pàgina.';
 $string['redirect'] = 'Sereu redireccionat en pocs segons. Si no sou redireccionat, premeu el botó.';

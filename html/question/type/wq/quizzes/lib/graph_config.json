@@ -100,6 +100,9 @@
             },
             {
               "id": "newElementByLabel"
+            },        
+            {
+              "id": "newImageByPoint"
             }
           ]
         }
@@ -260,7 +263,7 @@
                   "id": "arctangent"
                 },
                 {
-                  "id": "log"
+                  "id": "logBase"
                 },
                 {
                   "id": "cosinus"

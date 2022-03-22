@@ -60,7 +60,7 @@ $string['imsenterprisecrontask'] = 'Processamento dos ficheiros de Inscrição';
 $string['imsrolesdescription'] = 'A especificação IMS Enterprise inclui 8 tipos de papéis diferentes.
 Defina como quer que estes sejam atribuídos no Moodle, incluindo se pretende que algum deles seja ignorado.';
 $string['location'] = 'Caminho para o ficheiro';
-$string['logtolocation'] = 'Caminho para o ficheiro de registo (se o campo ficar vazio não será feito o registo)';
+$string['logtolocation'] = 'Caminho para o ficheiro de registo (se o campo ficar em branco não será feito o registo)';
 $string['mailadmins'] = 'Notificar administradores por e-mail';
 $string['mailusers'] = 'Notificar utilizadores por e-mail';
 $string['messageprovider:imsenterprise_enrolment'] = 'Mensagens de inscrição da IMS Enterprise';
@@ -70,7 +70,7 @@ $string['nestedcategories_desc'] = 'Se ativar esta opção, o IMS Enterprise ir�
 $string['pluginname'] = 'Ficheiro IMS Enterprise';
 $string['pluginname_desc'] = 'Este módulo de inscrição irá verificar de forma contínua a existência de um ficheiro para processamento na localização que for especificada. O ficheiro deve estar no formato IMS Enterprise e conter os seguintes elementos XML: person, group, and membership.';
 $string['privacy:metadata'] = 'O módulo Ficheiro IMS Enterprise não armazena quaisquer dados pessoais.';
-$string['processphoto'] = 'Adicionar dados da fotografia do utilizador ao perfil';
+$string['processphoto'] = 'Adicionar dados da foto do utilizador ao perfil';
 $string['processphotowarning'] = 'Aviso: o processamento de imagens tende a aumentar significativamente a carga no servidor. Não é recomendado ativar esta opção se o número de alunos a processar for muito elevado.';
 $string['restricttarget'] = 'Os dados apenas devem ser processados se for especificado';
 $string['restricttarget_desc'] = 'Um ficheiro IMS Enterprise pode ser criado para diferentes destinos (LMS distintos ou diferentes departamento de uma instituição). É possível especificar nestes ficheiros um ou mais sistemas de destino. Isto é feito através da inclusão da tag <strong>target</strong> dentro da tag strong>properties</strong>.
@@ -88,7 +88,7 @@ $string['sourcedidfallback_desc'] = 'Na informação IMS o campo <strong>sourced
 
 Alguns sistemas de gestão de alunos não conseguem exportar o campo <strong>userid</strong>. Se for o caso, esta configuração deve ser ativada para permitir a utilização do campo <strong>sourcedid</strong> como identificador de utilizador no Moodle. Caso contrário, desative esta configuração.';
 $string['truncatecoursecodes'] = 'Truncar os códigos das disciplinas se exceder o número de caracteres';
-$string['truncatecoursecodes_desc'] = 'Nalguns casos pode querer truncar os códigos das disciplinas para um comprimento máximo predefinido antes de fazer o seu processamento. Nestas situações, indique neste campo o número de caracteres máximo a considerar. Se o campo ficar vazio, os códigos das disciplinas não serão truncados.';
+$string['truncatecoursecodes_desc'] = 'Nalguns casos pode querer truncar os códigos das disciplinas para um comprimento máximo predefinido antes de fazer o seu processamento. Nestas situações, indique neste campo o número de caracteres máximo a considerar. Se o campo ficar em branco, os códigos das disciplinas não serão truncados.';
 $string['updatecourses'] = 'Atualizar disciplina';
 $string['updatecourses_desc'] = 'Se ativar esta opção, o módulo de inscrição do IMS Enterprise pode atualizar o nome completo e o nome curto da disciplina, caso esteja especificado nos dados IMS (campo "recstatus" = 2).';
 $string['updateusers'] = 'Atualizar as contas de utilizador quando especificado nos dados do IMS';

@@ -94,6 +94,11 @@
 		"quizzes_studio_home_answer_type_equation_label": "${quizzes_studio_home_answer_type_equation_label}",
 		"quizzes_studio_home_answer_type_graphic_label": "${quizzes_studio_home_answer_type_graphic_label}",
 		"quizzes_studio_home_answer_type_text_label": "${quizzes_studio_home_answer_type_text_label}",
+		"quizzes_studio_home_answer_type_standard_graphic_label": "${quizzes_studio_home_answer_type_standard_graphic_label}",
+		"quizzes_studio_home_answer_type_bar_chart_label": "${quizzes_studio_home_answer_type_bar_chart_label}",
+		"quizzes_studio_home_answer_type_line_chart_label": "${quizzes_studio_home_answer_type_line_chart_label}",
+		"quizzes_studio_home_answer_type_pie_chart_label": "${quizzes_studio_home_answer_type_pie_chart_label}",
+
 
 		"quizzes_studio_home_question_math_content_label": "${quizzes_studio_home_question_math_content_label}",
 		"quizzes_studio_home_question_text_content_label": "${quizzes_studio_home_question_text_content_label}",

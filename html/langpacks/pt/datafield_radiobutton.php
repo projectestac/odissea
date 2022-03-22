@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo botões de rádio';
 $string['pluginname'] = 'Botões de rádio';
-$string['privacy:metadata'] = 'O componente do campo Botões de rádio não armazena dados pessoais, usa tabelas definidas em mod_data.';
+$string['privacy:metadata'] = 'O componente do campo Botões de rádio não armazena quaisquer dados pessoais, usa tabelas definidas em mod_data.';

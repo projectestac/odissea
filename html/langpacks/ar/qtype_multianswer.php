@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['confirmquestionsaveasedited'] = 'أؤكد أنني أريد أن يتم حفظ السؤال كما حررته';
 $string['confirmsave'] = 'تأكيد ثم حفظ {$a}';
-$string['correctanswer'] = 'الإجابة صحيحة';
+$string['correctanswer'] = 'الإجابة الصحيحة';
 $string['correctanswerandfeedback'] = 'الجواب الصحيح والإفادة';
 $string['decodeverifyquestiontext'] = 'فك الترميز والتحقق من نص السؤال';
 $string['invalidmultianswerquestion'] = 'سؤال الإجابات المضمنة (Cloze) غير صالح ({$a}).';

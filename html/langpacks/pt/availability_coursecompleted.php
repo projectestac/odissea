@@ -25,10 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Permitir apenas os alunos que já concluíram (ou ainda não) esta disciplina.';
-$string['getdescription'] = 'Concluiu esta disciplina.';
+$string['description'] = 'Permitir apenas aos alunos que já concluíram (ou ainda não) esta disciplina.';
+$string['getdescription'] = 'Já concluiu esta disciplina.';
 $string['getdescriptionnot'] = 'Ainda <b>não</b> concluiu esta disciplina.';
-$string['missing'] = '(Tem de decidir se a disciplina tem de ser concluída ou não)';
+$string['missing'] = '(Tem de decidir se a disciplina tem de estar concluída ou não)';
 $string['pluginname'] = 'Condição de acesso com base em conclusão da disciplina';
 $string['privacy:metadata'] = 'O módulo Condição de acesso com base em conclusão da disciplina não armazena quaisquer dados pessoais.';
 $string['requires_completed'] = 'Concluiu esta disciplina';

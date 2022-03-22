@@ -1713,7 +1713,7 @@ class core_course_renderer extends plugin_renderer_base {
 
             // Only show the collapse/expand if there are children to expand.
             $content .= html_writer::start_tag('div', array('class' => 'collapsible-actions'));
-            $content .= html_writer::link('#', $linkname, array('class' => implode(' ', $classes)));
+            $content .= html_writer::link('#', $linkname, array('class' => implode(' ', $classes), 'aria-expanded' => false));
             $content .= html_writer::end_tag('div');
             $this->page->requires->strings_for_js(array('collapseall', 'expandall'), 'moodle');
         }
@@ -1824,7 +1824,7 @@ class core_course_renderer extends plugin_renderer_base {
         $output .= $this->coursecat_tree($chelper, $coursecat);
 
         // Add action buttons
-        $output .= $this->container_start('buttons');
+        $output .= $this->container_start('buttons mt-3');
         if ($coursecat->is_uservisible()) {
             $context = get_category_or_system_context($coursecat->id);
             if (has_capability('moodle/course:create', $context)) {

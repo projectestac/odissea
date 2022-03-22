@@ -36,4 +36,4 @@ $string['importminerror'] = 'La domanda contiene un errore: non ci sono risposte
 $string['nohandler'] = 'Non ci sono handler per il tipo di domanda {$a}';
 $string['pluginname'] = 'Formato GIFT';
 $string['pluginname_help'] = 'Il formato GIFT consente l\'importazione di domande a risposta multipla, vero-falso, risposta breve, corrispondenza, parola mancante, numerica e componimento, tramite un file di testo.';
-$string['privacy:metadata'] = 'Il plugin Formato di importazione/esportazione domande \'Formato Gift\' non memorizza dati personali.';
+$string['privacy:metadata'] = 'Il plugin Formato di domanda GIFT non memorizza dati personali.';

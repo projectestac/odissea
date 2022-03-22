@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '自适应模式（无罚分）';
+$string['privacy:metadata'] = '自适应模式（无惩罚）问题行为插件不存储任何个人数据。';

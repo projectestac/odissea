@@ -467,6 +467,7 @@ $string['nopermissiontorate'] = 'アイテム評価は許可されていませ�
 $string['nopermissiontoshow'] = 'これを閲覧するためのパーミッションがありません!';
 $string['nopermissiontounlock'] = 'ロック解除するためのパーミッションはありません!';
 $string['nopermissiontoupdatecalendar'] = '申し訳ございません、あなたにはカレンダーイベントを更新するためのパーミッションがありません。';
+$string['nopermissiontoviewcalendar'] = '申し訳ございません、あなたにはカレンダーイベントを閲覧するためのパーミッションがありません。';
 $string['nopermissiontoviewgrades'] = '評点を表示できません。';
 $string['nopermissiontoviewletergrade'] = '評定文字を閲覧するためのパーミッションがありません。';
 $string['nopermissiontoviewpage'] = 'あなたはこのページを閲覧できません。';

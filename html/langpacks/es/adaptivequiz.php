@@ -76,7 +76,6 @@ $string['browsersecurity'] = 'Seguridad del navegador';
 $string['browsersecurity_help'] = 'Si se selecciona "Ventana emergente de pantalla completa con algo de seguridad de JavaScript", la prueba solo comenzará si el estudiante tiene un navegador web habilitado para JavaScript, la prueba aparece en una ventana emergente de pantalla completa que cubre todas las demás ventanas y no tiene navegación, los controles y los estudiantes no pueden, en la medida de lo posible, utilizar funciones como copiar y pegar';
 $string['calcerrorwithinlimits'] = 'El error estándar calculado de {$a->calerror} está dentro de los límites marcados por la actividad {$a->definederror}';
 $string['closeattempt'] = 'Cerrar intento';
-$string['completeattempterror'] = 'Error al intentar completar el registro del intento';
 $string['confirmcloseattempt'] = '¿Estás seguro de que deseas cerrar este intento de {$a->name}?';
 $string['confirmcloseattemptscore'] = 'Se respondieron {$a->num_questions} preguntas y la puntuación hasta ahora es {$a->measure} {$a->standarderror}.';
 $string['confirmcloseattemptstats'] = 'Este intento se inició el {$a->started} y se actualizó por última vez el {$a->modified}.';

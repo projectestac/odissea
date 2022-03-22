@@ -38,6 +38,6 @@ $string['privacy:metadata:log:origin'] = 'A origem do evento';
 $string['privacy:metadata:log:other'] = 'Informação adicional sobre o evento';
 $string['privacy:metadata:log:realuserid'] = 'O ID do utilizador real responsável pelo evento, quando mascarado';
 $string['privacy:metadata:log:relateduserid'] = 'O ID do utilizador relacionado com o evento';
-$string['privacy:metadata:log:timecreated'] = 'A data/hora em que o evento ocorreu';
+$string['privacy:metadata:log:timecreated'] = 'Data e hora em que o evento ocorreu';
 $string['privacy:metadata:log:userid'] = 'O ID do utilizador que desencadeou o evento';
 $string['taskcleanup'] = 'Limpeza da tabela dos registos de atividade';

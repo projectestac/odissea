@@ -372,6 +372,11 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 	static $PARAM_UNIT_PREFIXES = "unitprefixes";
 	static $PARAM_MIXED_FRACTIONS = "mixedfractions";
 	static $PARAM_NO_BRACKETS_LIST = "nobracketslist";
+	static $PARAM_GRAPH_MODE = "graphMode";
+	static $GRAPH_MODE_STANDARD = "standard";
+	static $GRAPH_MODE_BAR_CHART = "barChart";
+	static $GRAPH_MODE_LINE_CHART = "lineChart";
+	static $GRAPH_MODE_PIE_CHART = "pieChart";
 	static $PARAM_TEXT_LOGIC_OPERATORS = "textlogicoperators";
 	static $EQUIVALENT_SYMBOLIC = "equivalent_symbolic";
 	static $EQUIVALENT_LITERAL = "equivalent_literal";
@@ -449,6 +454,7 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		com_wiris_quizzes_impl_Assertion::$paramnames->set(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_LITERAL, new _hx_array(array(com_wiris_quizzes_impl_Assertion::$PARAM_ORDER_MATTERS, com_wiris_quizzes_impl_Assertion::$PARAM_REPETITION_MATTERS, com_wiris_quizzes_impl_Assertion::$PARAM_TOLERANCE, com_wiris_quizzes_impl_Assertion::$PARAM_TOLERANCE_DIGITS, com_wiris_quizzes_impl_Assertion::$PARAM_RELATIVE_TOLERANCE, com_wiris_quizzes_impl_Assertion::$PARAM_USE_CASE, com_wiris_quizzes_impl_Assertion::$PARAM_USE_SPACES)));
 		com_wiris_quizzes_impl_Assertion::$paramnames->set(com_wiris_quizzes_impl_Assertion::$EQUIVALENT_EQUATIONS, new _hx_array(array(com_wiris_quizzes_impl_Assertion::$PARAM_TOLERANCE, com_wiris_quizzes_impl_Assertion::$PARAM_TOLERANCE_DIGITS, com_wiris_quizzes_impl_Assertion::$PARAM_RELATIVE_TOLERANCE)));
 		com_wiris_quizzes_impl_Assertion::$paramnames->set(com_wiris_quizzes_impl_Assertion::$SYNTAX_MATH, new _hx_array(array(com_wiris_quizzes_impl_Assertion::$PARAM_CONSTANTS, com_wiris_quizzes_impl_Assertion::$PARAM_FUNCTIONS, com_wiris_quizzes_impl_Assertion::$PARAM_LIST_OPERATORS, com_wiris_quizzes_impl_Assertion::$PARAM_GROUP_OPERATORS, com_wiris_quizzes_impl_Assertion::$PARAM_ITEM_SEPARATORS, com_wiris_quizzes_impl_Assertion::$PARAM_DECIMAL_SEPARATORS, com_wiris_quizzes_impl_Assertion::$PARAM_DIGIT_GROUP_SEPARATORS, com_wiris_quizzes_impl_Assertion::$PARAM_NO_BRACKETS_LIST, com_wiris_quizzes_impl_Assertion::$PARAM_INTERVALS, com_wiris_quizzes_impl_Assertion::$PARAM_TEXT_LOGIC_OPERATORS, com_wiris_quizzes_impl_Assertion::$PARAM_RATIO, com_wiris_quizzes_impl_Assertion::$PARAM_SCIENTIFIC_NOTATION, com_wiris_quizzes_impl_Assertion::$PARAM_UNITS, com_wiris_quizzes_impl_Assertion::$PARAM_UNIT_PREFIXES, com_wiris_quizzes_impl_Assertion::$PARAM_MIXED_FRACTIONS)));
+		com_wiris_quizzes_impl_Assertion::$paramnames->set(com_wiris_quizzes_impl_Assertion::$SYNTAX_GRAPHIC, new _hx_array(array(com_wiris_quizzes_impl_Assertion::$PARAM_GRAPH_MODE)));
 		$paramvalues = null;
 		com_wiris_quizzes_impl_Assertion::$paramdefault = new Hash();
 		$constantsExpression = com_wiris_quizzes_impl_Assertion_0($paramvalues) . ", e, i, j";
@@ -547,6 +553,9 @@ class com_wiris_quizzes_impl_Assertion extends com_wiris_util_xml_SerializableIm
 		$paramvalues->set(com_wiris_quizzes_impl_Assertion::$PARAM_MAX, "");
 		$paramvalues->set(com_wiris_quizzes_impl_Assertion::$PARAM_RELATIVE, "true");
 		com_wiris_quizzes_impl_Assertion::$paramdefault->set(com_wiris_quizzes_impl_Assertion::$CHECK_PRECISION, $paramvalues);
+		$paramvalues = new Hash();
+		$paramvalues->set(com_wiris_quizzes_impl_Assertion::$PARAM_GRAPH_MODE, com_wiris_quizzes_impl_Assertion::$GRAPH_MODE_STANDARD);
+		com_wiris_quizzes_impl_Assertion::$paramdefault->set(com_wiris_quizzes_impl_Assertion::$SYNTAX_GRAPHIC, $paramvalues);
 	}
 	static function getParameterNames($name) {
 		if(com_wiris_quizzes_impl_Assertion::$paramnames === null) {

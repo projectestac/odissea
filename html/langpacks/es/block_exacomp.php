@@ -78,6 +78,7 @@ $string['importwebservice'] = 'Es posible mantener los datos actualizados median
 $string['infolink'] = 'Información adicional:';
 $string['instruction'] = 'Instrucciones';
 $string['no_badges_yet'] = 'no hay insignias disponibles';
+$string['opencomps'] = 'elija sus competencias';
 $string['override_notice1'] = 'Esta entrada fue editada por';
 $string['pluginname'] = 'Competencias Exabis';
 $string['save'] = 'cambios fueron exitosos';

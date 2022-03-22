@@ -25,24 +25,27 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['active'] = 'Actif';
+$string['active_help'] = 'S\'ils ne sont pas actifs, les enseignants ne peuvent pas ajouter ou modifier les feedbacks de Poodll. Mais les travaux déposés sont toujours disponibles.';
 $string['allowedrecorders'] = 'Enregistrements possibles';
-$string['boardsize'] = 'Dimension du tableau blanc Poodll';
+$string['boardsize'] = 'Poodll - Dimension du tableau blanc';
 $string['default'] = 'Activé par défaut';
 $string['default_help'] = 'Si ce réglage est activé, cette méthode de feedback sera activée par défaut pour tous les nouveaux devoirs.';
 $string['deletefeedback'] = 'Supprimer ce feedback.';
 $string['downloadfile'] = '[fichier à télécharger]';
-$string['downloadsok'] = 'Afficher le lien de téléchargement';
+$string['downloadsok'] = 'Poodl - Afficher le lien de téléchargement';
 $string['enabled'] = 'Feedback Poodll';
 $string['enabled_help'] = 'Si l\'option est activée, le correcteur peut laisser des commentaires audio / vidéo pour chaque remise de fichier.';
 $string['no'] = 'non';
 $string['pluginname'] = 'Feedback Poodll';
 $string['poodll:reviewfeedbacks'] = 'Peut réviser les feedbacks Poodll (enregistrements)';
 $string['poodll:use'] = 'Autoriser l\'usage des feedback Poodll';
-$string['privacy:metadata'] = 'Le plugin Poodll Online Assignment Submission stocke des données personnelles.';
+$string['poodllfeedbackinactive'] = 'Les feedbacks Poodll ne sont pas actifs.';
+$string['privacy:metadata'] = 'Le plugin Poodll Assignment Feedback stocke des données personnelles.';
 $string['privacy:metadata:filepurpose'] = 'Les enregistrements (remises de fichiers Poodll) pour ce feedback de devoir.';
 $string['privacy:path'] = 'feedback_poodll';
 $string['reallydeletefeedback'] = 'Voulez-vous vraiment supprimer ce feedback ?';
-$string['recordertype'] = 'Type d\'enregistrement Poodll';
+$string['recordertype'] = 'Poodll - Type d\'enregistreur';
 $string['replymp3voice'] = 'Enregistrement audio';
 $string['replysnapshot'] = 'Faire une capture d\'écran';
 $string['replyvideo'] = 'Enregistrement vidéo';

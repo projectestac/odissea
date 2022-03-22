@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = 'Er is een taak geüpload.';
 $string['eventassessmentevaluated'] = 'Beoordeling geëvalueerd';
 $string['eventassessmentevaluationsreset'] = 'Beoordelingsevaluaties gereset';
 $string['eventassessmentreevaluated'] = 'Beoordelingen opnieuw geëvalueerd';
+$string['eventphaseautomaticallyswitched'] = 'Fase automatisch geschakeld';
 $string['eventphaseswitched'] = 'Fase verplaatst';
 $string['eventsubmissionassessed'] = 'Inzending beoordeeld';
 $string['eventsubmissionassessmentsreset'] = 'Inzendingsbeoordelingen gewist';

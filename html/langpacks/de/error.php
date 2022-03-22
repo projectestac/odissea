@@ -466,6 +466,7 @@ $string['nopermissiontorate'] = 'Bewertung von Beiträgen ist nicht erlaubt!';
 $string['nopermissiontoshow'] = 'Kein Recht zum Anzeigen!';
 $string['nopermissiontounlock'] = 'Kein Recht zum Freigeben!';
 $string['nopermissiontoupdatecalendar'] = 'Sie haben aktuell kein Recht, den Termin zu aktualisieren.';
+$string['nopermissiontoviewcalendar'] = 'Sie haben kein Recht, das Kalenderereignis anzuzeigen.';
 $string['nopermissiontoviewgrades'] = 'Bewertungen können nicht angezeigt werden.';
 $string['nopermissiontoviewletergrade'] = 'Kein Recht zur Anzeige von Notenstufen';
 $string['nopermissiontoviewpage'] = 'Sie haben keinen Zugriff auf diese Seite';

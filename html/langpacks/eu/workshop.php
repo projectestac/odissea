@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = 'Bidalketa bat igo da.';
 $string['eventassessmentevaluated'] = 'Ebaluazioa kalifikatu da.';
 $string['eventassessmentevaluationsreset'] = 'Ebaluazioen kalifikazioak berrezarri dira';
 $string['eventassessmentreevaluated'] = 'Ebaluazioak berkalifikatu dira';
+$string['eventphaseautomaticallyswitched'] = 'Fasea automatikoki aldatu da';
 $string['eventphaseswitched'] = 'Fasea aldatu da';
 $string['eventsubmissionassessed'] = 'Bidalketa ebaluatu da';
 $string['eventsubmissionassessmentsreset'] = 'Bidalketen ebaluazioak garbitu dira';

@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_ltidescription'] = 'Das Plugin \'LTI Authentifizierung\' ermöglicht zusammen mit dem Plugin \'Veröffentlichen als LTI-Tool\', dass externe Nutzer/innen ausgewählte Kurse und Aktivitäten verwenden können. Die Webseite wird zum \'LTI-Tool-Anbieter\'.';
-$string['pluginname'] = 'LTI';
-$string['privacy:metadata'] = 'Das Plugin \'LTI-Authentifizierung\' speichert keine personenbezogenen Daten.';
+$string['auth_ltidescription'] = 'Das Plugin \'LTI Authentifizierung\' ermöglicht zusammen mit dem Einschreibeplugin \'Veröffentlichen als LTI Tool\', dass externe Nutzer/innen ausgewählte Kurse und Aktivitäten verwenden können. Die Webseite wird zum \'LTI Tool Provider\'.';
+$string['pluginname'] = 'LTI Authentifizierung';
+$string['privacy:metadata'] = 'Das Plugin \'LTI Authentifizierung\' speichert keine personenbezogenen Daten.';

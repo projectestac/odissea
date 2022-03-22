@@ -167,7 +167,7 @@ $string['digestmailpostlink'] = 'Ändra inställning för hur du får e-post fr�
 $string['digestmailprefs'] = 'Din användarprofil';
 $string['digestmailsubject'] = '{$a}: sammanfattning av forum';
 $string['digestmailtime'] = 'Tidpunkt för utskick av e-post sammanfattningar';
-$string['digestsentusers'] = 'Sammanfattande e-postmeddelanden har skickats till {$a} användare.';
+$string['digestsentusers'] = 'E-postsammanfattningar har skickats till {$a} användare.';
 $string['disallowsubscribe'] = 'Det är inte tillåtet att prenumerera';
 $string['disallowsubscribeteacher'] = 'Det är inte tillåtet att prenumerera (utom för lärare)';
 $string['disallowsubscription'] = 'Prenumeration';
@@ -319,7 +319,7 @@ $string['forum:postprivatereply'] = 'Svara privat på ett inlägg';
 $string['forum:postwithoutthrottling'] = 'Undantag från tröskeln för inlägg';
 $string['forum:rate'] = 'Bedöm/värdera inlägg';
 $string['forum:readprivatereplies'] = 'Visa privata svar';
-$string['forum:replynews'] = 'Svara på nyheter';
+$string['forum:replynews'] = 'Kommentera';
 $string['forum:replypost'] = 'Svara på inlägg';
 $string['forum:splitdiscussions'] = 'Dela upp diskussionsämnen';
 $string['forum:startdiscussion'] = 'Inled nya diskussionsämnen';
@@ -475,10 +475,10 @@ $string['myprofileowndis'] = 'Mina diskussioner i forum';
 $string['myprofileownpost'] = 'Mina inlägg i forum';
 $string['namenews'] = 'Nyheter';
 $string['namenews_help'] = '<p>Nyhetsforumet är ett speciellt forum som skapas automatiskt för varje kurs och för
-förstasidan på webbplatsen. Det är en plats där man kan publicera allmänna meddelanden.
+startsidan på webbplatsen. Det är en plats där man kan publicera allmänna meddelanden.
 Du kan bara ha ett nyhetsforum per kurs.</p>
 
-<p>Blocket "Senaste nytt" kommer att visa de senaste och mest aktuella diskussionena från det här speciella forumet (även om du döper om det). Av den här orsaken kommer forumet automatiskt att återskapas av Moodle om du använder blocket "Senaste nytt".</p>';
+<p>Blocket "Senaste nytt" kommer att visa de senaste och mest aktuella diskussionerna från det här speciella forumet (även om du döper om det). Av den här orsaken kommer forumet automatiskt att återskapas av Moodle om du använder blocket "Senaste nytt".</p>';
 $string['namesocial'] = 'Gemenskapsforum';
 $string['nameteacher'] = 'Lärarforum';
 $string['newforumposts'] = 'Nya inlägg i forum';
@@ -632,7 +632,7 @@ $string['privacy:request:delete:post:subject'] = 'Ta bort på begäran av förfa
 $string['privacy:subscribedtoforum'] = 'Du prenumerar på detta forum.';
 $string['privatereply'] = 'Svara privat';
 $string['privatereply_help'] = 'Ett privat svar är bara synligt för författaren till inlägget som man svarar på och för ev. användare som har behörighet att läsa privata svar.';
-$string['processingdigest'] = 'Bearbetar sammanfattande e-postmeddelande för användare {$a}';
+$string['processingdigest'] = 'Bearbetar e-postsammanfattning för användare {$a}';
 $string['processingpost'] = 'Bearbetar inlägg {$a}';
 $string['prune'] = 'Bryt upp';
 $string['prunedpost'] = 'Ett nytt diskussionsämne har skapats av posten';

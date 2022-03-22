@@ -92,8 +92,8 @@ $string['password_help'] = 'Matrikulazio-giltza batek ikastarorako sarbidea gilt
 Eremu hau hutsik utziz gero edonork matrikulatu dezake bere burua.
 
 Matrikulazio-giltza bat zehaztuz gero, matrikulatzen saiatzen den edozein erabiltzaileri giltza eskatuko zaio. Kontuan izan erabiltzaile batek SOILIK BEHIN sartu behar duela giltza, ikastaroan matrikulatzean.';
-$string['passwordinvalid'] = 'Matrikulazio-giltza ez da zuzena, mesedez, saiatu berriz';
-$string['passwordinvalidhint'] = 'Matrikulazio-giltza hori ez da zuzena, mesedez berriro saiatu<br/>
+$string['passwordinvalid'] = 'Matrikulazio-giltza ez da zuzena, mesedez, saiatu berriro';
+$string['passwordinvalidhint'] = 'Matrikulazio-giltza hori ez da zuzena, mesedez saiatu berriro<br/>
 (Laguntza txiki bat - honela hasten da: \'{$a}\')';
 $string['pluginname'] = 'Matrikulazio automatikoa';
 $string['pluginname_desc'] = 'Matrikulazio automatikoko pluginak erabiltzaileari parte-hartu nahi duen ikastaroak hautatzeko aukera ematen dio. Ikastaroek matrikulazio-giltza eskatu dezakete. Barrutik matrikulazioa eskuzko matrikulazio gehigarriaren bitartez egiten da, eta beraz gehigarri hori ere ikastaro horretan gaituta egon behar da.';

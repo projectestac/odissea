@@ -520,7 +520,7 @@ $string['show_nonrespondents'] = 'Nicht-Teilnehmende';
 $string['started'] = 'gestartet';
 $string['strfdate'] = '%d.%m.%Y';
 $string['strfdateformatcsv'] = 'd.m.Y H:i:s';
-$string['strictdateformatting'] = 'Tragen Sie das Datum über die Kalenderauswahl ein oder verwenden Sie das Format \'JJJJ-MM-TT\'.';
+$string['strictdateformatting'] = 'Wählen Sie das Datum über die Kalenderauswahl oder verwenden Sie das gezeigte Datumsformat.';
 $string['subject'] = 'Thema';
 $string['submissionnotificationhtmlanon'] = 'Jemand hat eine neue <a href="{$a->submissionurl}">Antwort </a> zur Befragung "{$a->name}" abgegeben.';
 $string['submissionnotificationhtmluser'] = '"<a href="{$a->profileurl}">{$a->username}</a>" hat eine neue <a href="{$a->submissionurl}">Antwort</a> zur Befragung "{$a->name}" abgegeben.';

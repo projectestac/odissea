@@ -4,10 +4,24 @@ More information on each of the fixes can be found in the project
 development home at https://github.com/projectestac/agora_moodle2
 
 
+Changes 22.02.22
+---------------------------------------------------------------------------------------
+- Upgraded Moodle to version 3.11.5+
+- Updated langpacks
+- Wiris: Upgraded all components
+- HVP: Upgraded module
+- GeoGebra: Upgraded module
+- Remove records in table assignfeedback_editpdf_rot during course reset (MDL-69570)
+- Allowed access to asynchronous backups to all Moodle administrators
+- LTI: Remove extra param added by mod_rewrite in .htaccess
+- Redis: Activated compression in MUC
+
+
 Changes 21.11.15
 ---------------------------------------------------------------------------------------
 - Upgraded Moodle to version 3.11.4
 - Updated langpacks
+- Allowed access to asynchronous backups to all Moodle administrators
 - Geogebra: Upgraded version
 - Hot Potatoes: Downgraded module
 - Wiris: Upgraded all components

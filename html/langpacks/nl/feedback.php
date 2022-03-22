@@ -181,7 +181,7 @@ Feedback kan gebruikt worden
 
 * voor cursus-evaluatie, om zo de cursus te verbeteren voor latere deelnemers
 * om deelnemer te laten intekenen voor cursusmodules, activiteiten enz.
-* voor onderzoek naar cursuskeuze, schoolbeleid enz.
+* voor gastonderzoek naar cursuskeuze, schoolbeleid enz.
 * voor anti-pest onderzoek waar leerlingen anoniem incidenten kunnen rapporteren.';
 $string['modulenameplural'] = 'Feedbackformulieren';
 $string['move_item'] = 'Verplaats deze vraag';

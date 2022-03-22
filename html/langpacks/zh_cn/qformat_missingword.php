@@ -30,3 +30,4 @@ $string['endanswernotfound'] = '在导入文件的内容中无法找到必需的
 $string['noanswerfound'] = '在题目中没有找到答案';
 $string['pluginname'] = '缺失字格式';
 $string['pluginname_help'] = '缺失字格式可以使问题通过文本文件来导入。';
+$string['privacy:metadata'] = '选词填空题格式插件不存储任何个人数据。';

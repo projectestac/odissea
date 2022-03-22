@@ -1,6 +1,16 @@
 This files describes API changes in core libraries and APIs,
 information provided here is intended especially for developers.
 
+=== 3.11.6 ===
+* The persistent method from_record() now only attempts to load record properties defined in the persistent class.
+
+=== 3.11.5 ===
+* Two new helper functions have been added to lib/datalib.php, for safely preparing SQL ORDER BY statements where user
+  interactions define sort parameters (see the respective docblocks for full details and examples):
+  -get_safe_orderby() - where a single sort parameter is required.
+  -get_safe_orderby_multiple() - where multiple sort parameters are required.
+* Added the cleanstr mustache template helper to clean strings after loading them from language packs.
+
 === 3.11.4 ===
 * A new option dontforcesvgdownload has been added to the $options parameter of the send_file() function.
   Note: This option overrides the forced download of directly accessed SVGs, so should only be used where the calling method is
@@ -232,7 +242,7 @@ information provided here is intended especially for developers.
   `strip_disallowed_helpers()`.
 * A new admin externalpage type `\core_admin\local\externalpage\accesscallback` for use in plugin settings is available that allows
   a callback to be provided to determine whether page can be accessed.
-* New setting $CFG->localtempdir overrides which defaults to sys_get_temp_dir()
+* New setting $CFG->localrequestdir overrides which defaults to sys_get_temp_dir()
 * Function redirect() now emits a line of backtrace into the X-Redirect-By header when debugging is on
 * New DML function $DB->delete_records_subquery() to delete records based on a subquery in a way
   that will work across databases.

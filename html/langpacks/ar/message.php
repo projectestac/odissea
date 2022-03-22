@@ -69,7 +69,7 @@ $string['disableall'] = 'تعطيل الاشعارات';
 $string['disabled'] = 'المحادثات غير مفعّلة على هذا الموقع';
 $string['disallowed'] = 'غير مسموح';
 $string['editmessages'] = 'تعديل الرسائل';
-$string['emailtagline'] = 'هذه نسخة من رسالة أرست لك من "{$a->sitename}".
+$string['emailtagline'] = 'هذه نسخة من رسالة أرسلت لك من "{$a->sitename}".
 يمكنك الرد من: {$a->url}.';
 $string['enabled'] = 'تم تفعيله';
 $string['errorcallingprocessor'] = 'خطأ عند استدعاء الناتج المُعرَّف';

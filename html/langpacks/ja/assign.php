@@ -486,9 +486,9 @@ $string['sendlatenotifications_help'] = 'この設定を有効にした場合、
 $string['sendnotifications'] = '評定者に提出を通知する';
 $string['sendnotifications_help'] = 'この設定を有効にした場合、学生が課題を早く、時間どおりまたは遅く提出した時点で評定者 (通常教師) にメッセージが送信されます。メッセージ送信方法を設定することができます。';
 $string['sendstudentnotifications'] = '学生に通知する';
-$string['sendstudentnotifications_help'] = 'この設定を有効にした場合、評定の更新またはフィードバックに関して学生にメッセージが送信されます。この課題で採点ワークフローが有効にされた場合、評定が「リリース」されるまで通知は送信されません。';
+$string['sendstudentnotifications_help'] = '更新された評点またはフィードバックに関する通知を送信する場合、このチェックボックスをチェックしてください。課題が採点ワークフローを使用している場合、または評点が評定者レポートで隠されている場合、評点が公開されるまで通知は送信されません。';
 $string['sendstudentnotificationsdefault'] = '「学生に通知する」のデフォルト設定';
-$string['sendstudentnotificationsdefault_help'] = '評定フォームの「学生に通知する」チェックボックスのフォルト値を設定します。';
+$string['sendstudentnotificationsdefault_help'] = 'それぞれの学生を評定する場合、「学生に通知する」チェックボックスをデフォルトでチェックしますか?';
 $string['sendsubmissionreceipts'] = '学生に提出受領書を送信する';
 $string['sendsubmissionreceipts_help'] = 'この設定では学生への提出受領書を有効にします。正常に課題が提出された場合、学生は毎回通知を受信します。';
 $string['setmarkerallocationforlog'] = '採点割り当てを設定する: (id={$a->id}, フルネーム={$a->fullname}, 採点者={$a->marker})';

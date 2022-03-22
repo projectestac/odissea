@@ -39,6 +39,7 @@ $string['enteralt'] = '向无法看到图片的人描述本图片';
 $string['enterurl'] = '输入网址';
 $string['height'] = '高度';
 $string['imageproperties'] = '图片属性';
+$string['imageurlrequired'] = '每个图像必须有一个URL。';
 $string['pluginname'] = '插入或编辑图像';
 $string['presentation'] = '不需要描述';
 $string['presentationoraltrequired'] = '图片必须要有一个描述，除非标记了不需描述。';

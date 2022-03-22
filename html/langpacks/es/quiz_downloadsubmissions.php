@@ -26,3 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['downloadsubmissions'] = 'Descargar entregas de tipo ensayo';
+$string['downloadsubmissionsreport'] = 'Descargar el informe de intentos';
+$string['noattempts'] = 'No se han encontrado intentos.';
+$string['noessayquestion'] = 'El cuestionario no contiene ninguna pregunta de tipo ensayo.';
+$string['noquestions'] = 'Aún no se han añadido preguntas.';
+$string['nosubmission'] = 'No se han encontrado intentos.';
+$string['plugindescription'] = 'Descargar el envío de todos los estudiantes (todos los intentos), de las respuestas a preguntas de tipo ensayo del cuestionario.<br><br>';
+$string['pluginname'] = 'Descargar los ensayos enviados';
+$string['reportdownloadsubmissions'] = 'Descargar el informe de envíos';

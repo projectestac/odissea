@@ -177,18 +177,16 @@ $string['messageprovider:submission'] = 'Systemnachrichten bei Feedback';
 $string['minimal'] = 'Minimal';
 $string['mode'] = 'Modus';
 $string['modulename'] = 'Feedback';
-$string['modulename_help'] = 'Mit dem Feedback können Sie eigene Umfragen oder Evaluationsformulare anlegen, wofür eine Reihe von Fragetypen, einschließlich Multiple-Choice, Ja/Nein oder Texteingabe, zur Verfügung stehen.
+$string['modulename_help'] = 'Mit dem Feedback können Sie eigene Umfragen oder Evaluationen anlegen, wofür eine Reihe von Fragetypen, einschließlich MultipleChoice, Ja/Nein oder Texteingabe, zur Verfügung stehen.
 
-Die Antworten können Personen zugeordnet werden oder anonym erfolgen. Die Ergebnisse können Sie nach dem Ausfüllen anzeigen lassen und später als Datei exportieren.
-
-Feedbacks auf der Startseite können völlig anonym auch von nicht angemeldeten Personen ausgefüllt und abgegeben werden.
+Die Antworten können Personen zugeordnet werden oder anonym erfolgen. Die Ergebnisse können Sie nach dem Ausfüllen anzeigen lassen und später als Datei exportieren. Feedbacks auf der Startseite können völlig anonym auch von nicht angemeldeten Personen ausgefüllt und abgegeben werden.
 
 Eine Feedback-Aktivität kann verwendet werden
 
 * Bei Kursbewertungen, um den Inhalt für spätere Teilnehmer/innen zu verbessern
 * Um den Teilnehmer/innen die Möglichkeit zu geben, sich für Kursmodule, Veranstaltungen usw. anzumelden
-* Für Gästebefragungen zu Kurswahl, Schulpolitik usw.
-* Für Anti-Mobbing-Befragungen, bei denen Teilnehmer/innen Vorfälle anonym melden können';
+* Für Gästebefragungen zu Kurswahl, Schulpolitik, usw.
+* Für Anti-Mobbing-Meldungen, bei denen Personen Vorfälle anonym melden können';
 $string['modulenameplural'] = 'Feedback';
 $string['move_item'] = 'Element verschieben';
 $string['multichoice'] = 'Multiple-Choice';

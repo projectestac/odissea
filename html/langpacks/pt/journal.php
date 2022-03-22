@@ -44,7 +44,7 @@ $string['eventjournalviewed'] = 'Diário visualizado';
 $string['feedbackupdated'] = 'Comentários atualizados para {$a} entradas';
 $string['gradeingradebook'] = 'Nota atual na pauta';
 $string['journal:addentries'] = 'Adicionar entradas no diário';
-$string['journal:addinstance'] = 'Adicionar instâncias de diário';
+$string['journal:addinstance'] = 'Adicionar nova instâncias de Diário';
 $string['journal:manageentries'] = 'Gerir entradas do diário';
 $string['journalmail'] = '{$a->teacher} publicou um comentário na sua entrada no diário \'{$a->journal}\'
 

@@ -62,19 +62,19 @@ $string['requiredtemplate'] = 'Obrigatório. Pode usar a sintaxe modelo (%l = la
 $string['rowpreviewnum'] = 'Número de linhas a pré-visualizar';
 $string['unassignedsysrole'] = 'Retirado o papel de sistema {$a}';
 $string['uploadpicture_baduserfield'] = 'O atributo do utilizador não é válido. Por favor, tente novamente.';
-$string['uploadpicture_cannotmovezip'] = 'Não é possível mover o ficheiro zip para a pasta temporária.';
+$string['uploadpicture_cannotmovezip'] = 'Não é possível mover o ficheiro Zip para a pasta temporária.';
 $string['uploadpicture_cannotprocessdir'] = 'Não é possível processar ficheiros descompactados.';
 $string['uploadpicture_cannotsave'] = 'Não é possível guardar a imagem para o utilizador {$a}. Verifique o ficheiro da imagem original.';
 $string['uploadpicture_cannotunzip'] = 'Não é possível descompactar ficheiro de imagens.';
 $string['uploadpicture_invalidfilename'] = 'O nome do ficheiro da imagem {$a} tem caracteres inválidos. A ignorar.';
-$string['uploadpicture_overwrite'] = 'Substituir as imagens existentes dos utilizadores?';
+$string['uploadpicture_overwrite'] = 'Substituir as fotos existentes dos utilizadores?';
 $string['uploadpicture_userfield'] = 'Informação do utilizador que identifica a imagem';
 $string['uploadpicture_usernotfound'] = 'Não existe o utilizador com o valor \'{$a->uservalue}\' no campo \'{$a->userfield}\'. A ignorar.';
 $string['uploadpicture_userskipped'] = 'A ignorar utilizador {$a} (já tem imagem).';
 $string['uploadpicture_userupdated'] = 'Imagem atualizada para o utilizador {$a}.';
-$string['uploadpictures'] = 'Carregar imagens de utilizador';
-$string['uploadpictures_help'] = 'As imagens dos utilizadores podem ser carregadas como um ficheiro zip ou um ficheiro de imagem. Os ficheiros de imagem devem ser nomeados com nome-de-utilizador.extensão.<br>Por exemplo, o ficheiro "user1234.jpg" para o utilizador com o nome de utilizador user1234.';
-$string['uploaduser:uploaduserpictures'] = 'Carregar imagens de utilizador';
+$string['uploadpictures'] = 'Carregar fotos dos utilizadores';
+$string['uploadpictures_help'] = 'As fotos dos utilizadores podem ser carregadas como um ficheiro Zip ou um ficheiro de imagem. Os ficheiros de imagem devem ser nomeados com nome-de-utilizador.extensão.<br>Por exemplo, o ficheiro "user1234.jpg" para o utilizador com o nome de utilizador user1234.';
+$string['uploaduser:uploaduserpictures'] = 'Carregar fotos dos utilizadores';
 $string['uploadusers'] = 'Carregar utilizadores';
 $string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalmente inscritos nas disciplinas) através de ficheiro de texto. O ficheiro deve ter o seguinte formato:
 

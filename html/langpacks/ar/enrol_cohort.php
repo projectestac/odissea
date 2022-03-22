@@ -34,6 +34,6 @@ $string['defaultgroupnametext'] = 'الدفعة {$a->name} {$a->increment}';
 $string['enrolcohortsynctask'] = 'مهمة مزامنة الانضمام إلى الدفعة';
 $string['instanceexists'] = 'الدفعة سبقت مزامنتها مع الدور المحدد';
 $string['pluginname'] = 'مزامنة الدفعة';
-$string['pluginname_desc'] = 'يقوم ملحق الانضمام إلى الدفعة بمزامنة أعضاء الدفعة مع الانضمامات إلى المقررات الدراسية.';
+$string['pluginname_desc'] = 'يقوم ملحق الانضمام إلى الدفعة بمزامنة أعضاء الدفعة مع المشتركين في المقرر الدراسي.';
 $string['privacy:metadata:core_group'] = 'يمكن لملحق الانضمام إلى الدفعة إنشاء مجموعة جديدة أو استعمال مجموعة موجودة لإضافة كل أعضاء الدفعة.';
 $string['status'] = 'فَعَّال';

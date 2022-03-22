@@ -38,5 +38,5 @@ $string['pluginnameediting'] = 'Editar pergunta do tipo arrastar e largar num te
 $string['pluginnamesummary'] = 'Palavras em falta num texto de uma pergunta são preenchidas utilizando a opção arrastar e largar.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Arrastar e largar num texto permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
 $string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
-$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das é o \'Interativo com múltiplas tentativas\' ou \'Modo adaptável \'.';
+$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das perguntas é \'Interativo com múltiplas tentativas\' ou \'Modo adaptável\'.';
 $string['privacy:preference:shuffleanswers'] = 'Se as respostas devem, ou não, ser baralhadas automaticamente.';

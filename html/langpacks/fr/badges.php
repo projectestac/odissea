@@ -60,7 +60,7 @@ $string['allmethodprofile'] = 'Tous les champs de profil sélectionnés ont ét�
 $string['allowcoursebadges'] = 'Activer les badges de cours';
 $string['allowcoursebadges_desc'] = 'Autoriser la création et la remise de badges dans le contexte des cours.';
 $string['allowexternalbackpack'] = 'Connexion de sac à badges externe';
-$string['allowexternalbackpack_desc'] = 'Si ce réglage est activé, les utilisateurs peuvent se connecter à un sac à badges externe à partir de ce site. Les utilisateurs peuvent également choisir d\'afficher sur leur page de profil n\'importe quel badge d\'une collection publique de leur sac à badges externe. Il est recommandé de ne pas activer cette option si le site est inaccessible via Internet.';
+$string['allowexternalbackpack_desc'] = 'Si ce réglage est activé, les utilisateurs peuvent se connecter à un sac à badges externe à partir de ce site. Les utilisateurs peuvent également choisir d\'afficher sur leur page de profil n\'importe quel badge d\'une collection publique de leur sac à badges externe. Il est recommandé de ne pas activer cette option si le site est ne peut pas être atteint depuis Internet.';
 $string['any'] = 'Une';
 $string['anymethod'] = 'Une des conditions sélectionnées est satisfaite';
 $string['anymethodactivity'] = 'Une des activités sélectionnées est achevée';
@@ -83,15 +83,15 @@ $string['awardoncron'] = 'L\'accès aux badges a été activé. Trop d\'utilisat
 $string['awards'] = 'Détenteurs';
 $string['backpackapiurl'] = 'URL API sac à badges';
 $string['backpackavailability'] = 'Vérification externe des badges';
-$string['backpackavailability_help'] = 'Afin que les utilisateurs qui reçoivent des badges puissent démontrer qu\'ils ont obtenus leurs badges sur ce site, un service de sac à badges externe doit pouvoir accéder à votre site et vérifier les badges y étant décernés. Votre site semble ne pas être actuellement accessible, ce qui a pour conséquence que les badges que vous avez décernés ou que vous décernerez ne peuvent pas être vérifiés.
+$string['backpackavailability_help'] = 'Afin que les utilisateurs qui reçoivent des badges puissent démontrer qu\'ils ont obtenus leurs badges sur ce site, un service de sac à badges externe doit pouvoir accéder à votre site et vérifier les badges y étant décernés. Votre site semble actuellement ne pas pouvoir être atteint, ce qui a pour conséquence que les badges que vous avez décernés ou que vous décernerez ne peuvent pas être vérifiés.
 
 **Pourquoi ce message est-il affiché ?**
 
-Il se peut que votre pare-feu empêche l\'accès à des utilisateurs en dehors de votre réseau, que votre site soit protégé par un mot de passe ou que votre site tourne sur un ordinateurs qui n\'est pas accessible depuis l\'internet (par exemple sur une machine de développement).
+Il se peut que votre pare-feu empêche l\'accès à des utilisateurs en dehors de votre réseau, que votre site soit protégé par un mot de passe ou que votre site tourne sur un ordinateur qui ne peut pas être atteint depuis Internet (par exemple sur une machine de développement).
 
 **Est-ce que c\'est un problème ?**
 
-Vous devez régler ce problème si votre site et en production et que vous planifiez d\'y décerner des badges. Sans cela, les utilisateurs qui reçoivent des badges ne pourront pas prouver qu\'ils ont obtenu leurs badges sur ce site. Si votre site n\'est pas encore en production, vous pouvez créer et décerner des badges de test. L\'important est que le site soit accessible quand vous partez en production.
+Vous devez régler ce problème si votre site et en production et que vous planifiez d\'y décerner des badges. Sans cela, les utilisateurs qui reçoivent des badges ne pourront pas prouver qu\'ils ont obtenu leurs badges sur ce site. Si votre site n\'est pas encore en production, vous pouvez créer et décerner des badges de test. L\'important est que le site soit atteignable quand vous partez en production.
 
 **Que faire si je ne peux pas rendre le site publiquement accessible ?**
 
@@ -500,7 +500,7 @@ $string['reviewconfirm'] = '<p>Cette action rendra le badge visible pour les uti
 
 <p>Dès que le badge aura été décerné, il sera <strong>verrouillé</strong>. Certains réglages, y compris les critères d\'obtention et la date d\'échéance ne pourront plus être modifiés.</p>
 
-<p>Voulez-vous vraiment rendre accessible le badge « {$a} » ?</p>';
+<p>Voulez-vous vraiment rendre disponible le badge « {$a} » ?</p>';
 $string['revoke'] = 'Révoquer le badge';
 $string['save'] = 'Enregistrer';
 $string['searchname'] = 'Rechercher par nom';

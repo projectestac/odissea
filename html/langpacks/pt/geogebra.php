@@ -117,7 +117,6 @@ $string['resultstab'] = 'Resultados';
 $string['resumeattempt'] = 'Terminar tentativas inacabadas';
 $string['review'] = 'Revisão de';
 $string['reviewtab'] = 'Revisão';
-$string['save'] = 'Guardar';
 $string['savechanges'] = 'Gravar alterações';
 $string['savewithoutsubmitting'] = 'Guardar sem submeter';
 $string['settings'] = 'Configurações';

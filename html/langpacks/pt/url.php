@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Escolha uma variável…';
 $string['clicktoopen'] = 'Clique na hiperligação {$a} para abrir o URL.';
-$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Prima a tecla CTRL para selecionar múltiplas opções.';
-$string['configframesize'] = 'Quando uma página Web ou um ficheiro é exibido numa frame, este valor é a altura (em pixels) da frame superior (que contém a barra de navegação).';
-$string['configrolesinparams'] = 'Ative esta opção se deseja incluir os nomes dos papéis locais na listagem das variáveis de disponíveis nos parâmetros.';
-$string['configsecretphrase'] = 'Esta frase secreta é usada para produzir um código criptografado que pode ser enviado para alguns servidores como parâmetro. O código criptografado é produzido por um valor md5 do endereço de IP do utilizador atual concatenado com a sua frase secreta. ie code = md5(IP.secretphrase). Tenha em conta que isto não é fiável pois o endereço IP pode mudar e muitas vezes é partilhado por diferentes computadores.';
+$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Mantenha a tecla Ctrl pressionada para selecionar múltiplas opções.';
+$string['configframesize'] = 'Quando uma página Web ou um ficheiro é exibido numa frame, este valor é a altura (em píxeis) da frame superior (que contém a barra de navegação).';
+$string['configrolesinparams'] = 'Se ativar esta opção, os nomes dos papéis locais serão incluídos na listagem das variáveis de parâmetro disponíveis.';
+$string['configsecretphrase'] = 'Esta frase secreta é usada para produzir um código encriptado que pode ser enviado para alguns servidores como parâmetro. O código  encriptado é produzido por um valor md5 do endereço IP do utilizador atual concatenado com a sua frase secreta. Isto é, código = md5(IP.frasesecreta). Tenha em atenção que não é fiável porque o endereço IP pode mudar e muitas vezes é partilhado por diferentes computadores.';
 $string['contentheader'] = 'Conteúdo';
 $string['createurl'] = 'Criar um url';
 $string['displayoptions'] = 'Opções de visualização disponíveis';
@@ -76,9 +76,9 @@ $string['parametersheader_help'] = 'Esta secção permite que passe informaçõe
 $string['pluginadministration'] = 'Administração do URL';
 $string['pluginname'] = 'URL';
 $string['popupheight'] = 'Altura da janela pop-up (em píxeis)';
-$string['popupheightexplain'] = 'Especifique a altura predefinida da janela de pop-up';
+$string['popupheightexplain'] = 'Especifique a altura predefinida da janela de pop-up.';
 $string['popupwidth'] = 'Largura da janela pop-up (em píxeis)';
-$string['popupwidthexplain'] = 'Especifique a largura predefinida quando abre numa janela de pop-up';
+$string['popupwidthexplain'] = 'Especifique a largura predefinida da janela de pop-up.';
 $string['printintro'] = 'Mostrar descrição do URL';
 $string['printintroexplain'] = 'Mostrar a descrição do URL abaixo do conteúdo? Alguns modos de exibição não apresentam a descrição do recurso, mesmo com esta configuração ativa.';
 $string['privacy:metadata'] = 'O módulo do recurso URL não armazena quaisquer dados pessoais.';

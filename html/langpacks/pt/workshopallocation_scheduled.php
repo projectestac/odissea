@@ -55,9 +55,9 @@ $string['resultvoid'] = 'Não foram atribuídos trabalhos';
 $string['resultvoiddeadline'] = 'Ainda não está fora da data limite das submissões';
 $string['resultvoidexecuted'] = 'A atribuição já foi realizada';
 $string['scheduledallocationsettings'] = 'Configurações da atribuição automática';
-$string['scheduledallocationsettings_help'] = 'Se ativo, o método de atribuição automática irá distribuir automaticamente os trabalhos para avaliação no final da fase de submissão dos trabalhos. O fim desta fase pode ser definido na configuração \'Data limite das submissões .
+$string['scheduledallocationsettings_help'] = 'Se ativar esta opção, o método de atribuição automática irá distribuir automaticamente os trabalhos para avaliação no final da fase de submissão dos trabalhos. O fim desta fase pode ser definido na configuração \'Data limite das submissões .
 
 Internamente, o método de atribuição aleatória é executado com os parâmetros definidos abaixo. Isso significa que a atribuição automática funciona como se o professor realizasse a atribuição aleatória no final da fase de submissões utilizando as definições de atribuição abaixo.
 
-Note que a atribuição automática *não* é realizada se alterar manualmente a fase antes da data limite de submissões definida nas configurações. Nesse caso terá de realizar a atribuição manual dos trabalhos. Este método automático é particularmente útil, quando usado em simultâneo com a opção de configuração Avançar para fase seguinte após data limite das submissões.';
+Tenha em atenção que a atribuição automática *não* é realizada se alterar manualmente a fase antes da data limite de submissões definida nas configurações. Nesse caso terá de realizar a atribuição manual dos trabalhos. Este método automático é particularmente útil quando usado em simultâneo com a opção de configuração \'Avançar para fase seguinte\' após a data limite das submissões.';
 $string['setup'] = 'Configurar atribuição automática';

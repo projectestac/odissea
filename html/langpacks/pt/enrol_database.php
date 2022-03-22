@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['database:config'] = 'Configurar instâncias de inscrição da base de dados';
-$string['database:unenrol'] = 'Desinscrever utilizadores suspensos';
+$string['database:unenrol'] = 'Cancelar a inscrição de utilizadores suspensos';
 $string['dbencoding'] = 'Codificação da base de dados';
 $string['dbhost'] = 'Servidor de base de dados';
 $string['dbhost_desc'] = 'Digite o IP do servidor da base de dados ou o nome do host. Use um nome do sistema DSN se estiver a usar ODBC. Use PDO DSN se estiver a usar PDO.';
@@ -57,14 +57,14 @@ $string['newcoursefullname'] = 'Nome do campo "Nome completo de nova disciplina"
 $string['newcourseidnumber'] = 'Nome do campo "ID de nova disciplina" na tabela do Moodle';
 $string['newcourseshortname'] = 'Nome do campo "Nome curto de nova disciplina" na tabela do Moodle';
 $string['newcoursetable'] = 'Nome da tabela externa de novas disciplinas';
-$string['newcoursetable_desc'] = 'Nome da tabela que contém as disciplinas que devem ser criadas automaticamente. Se este campo estiver vazio, quer dizer que não serão criadas disciplinas.';
+$string['newcoursetable_desc'] = 'Nome da tabela que contém as disciplinas que devem ser criadas automaticamente. Se este campo estiver estiver, quer dizer que não serão criadas disciplinas.';
 $string['pluginname'] = 'Base de dados externa';
 $string['pluginname_desc'] = 'Este módulo de inscrição permite a utilização de bases de dados externas (de praticamente qualquer tipo) para gerir inscrições. É obrigatório que a base de dados externa contenha pelo menos os campos ID de disciplina e ID de utilizador. Estes campos serão sincronizados com os campos definidos localmente.';
 $string['privacy:metadata'] = 'O módulo Base de dados externa não armazena quaisquer dados pessoais.';
 $string['remotecoursefield'] = 'Nome do campo "Disciplina" na tabela externa';
 $string['remotecoursefield_desc'] = 'Nome do campo na tabela externa que é usado na sincronização com a tabela de disciplinas do Moodle.';
 $string['remoteenroltable'] = 'Nome da tabela externa de inscrições';
-$string['remoteenroltable_desc'] = 'Nome da tabela externa que contém as inscrições dos utilizadores. Se este campo estiver vazio as inscrições dos utilizadores não serão sincronizadas.';
+$string['remoteenroltable_desc'] = 'Nome da tabela externa que contém as inscrições dos utilizadores. Se este campo estiver em branco as inscrições dos utilizadores não serão sincronizadas.';
 $string['remoteotheruserfield'] = 'Campo Outro utilizador remoto';
 $string['remoteotheruserfield_desc'] = 'O nome do campo na tabela remota que está a ser usada para assinalar atribuições do papel "Outro utilizador".';
 $string['remoterolefield'] = 'Nome do campo "Papel" na tabela externa';

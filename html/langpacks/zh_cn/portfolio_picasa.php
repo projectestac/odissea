@@ -31,5 +31,7 @@ $string['nooauthcredentials'] = '需要 OAuth 认证。';
 $string['nooauthcredentials_help'] = '为了使用 Picasa 组合插件，您必须在组合设置中配置 OAuth 认证。';
 $string['oauthinfo'] = '<p>为了使用此插件，您必须在 Google 上重新注册您的站点，正如在文档 <a href="{$a->docsurl}">Google OAuth 2.0 设置</a>中描述的那样。</p><p>作为注册过程中的一部分，您将需要输入如下的 URL 作为“授权的重定向 URL”：</p><p>{$a->callbackurl}</p>一旦重新注册，您将会得到一个客户端 ID 和密匙，他们可以用来配置所有的 Google 文档和 Picasa 插件。</p>';
 $string['pluginname'] = 'Picasa';
+$string['privacy:metadata'] = '此插件将数据从外部发送到链接的Picasa帐户，不在本地存储数据。';
+$string['privacy:metadata:data'] = '从电子档案夹子系统传送的个人数据。';
 $string['secret'] = '密匙';
 $string['sendfailed'] = '文件 {$a} 未能成功传送到 picasa';

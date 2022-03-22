@@ -168,6 +168,7 @@ $string['required'] = 'مطلوبة';
 $string['requiredcapability'] = 'الإمكانية المطلوبة';
 $string['requiredcapability_help'] = 'عند تأشيرها، سيكون المستخدمون ذوو الإمكانية المطلوبة فقط قادرين على الوصول إلى الخدمة.';
 $string['requiredcaps'] = 'الإمكانيات المطلوبة';
+$string['resettokencomplete'] = 'تمت إعادة تعيين الترميز المحدد';
 $string['resettokenconfirm'] = 'هل تريد حقاً إعادة تعيين مفتاح خدمة الويب هذا للمستخدم <strong>{$a->user}</strong> في الخدمة <strong>{$a->service}</strong>؟';
 $string['resettokenconfirmsimple'] = 'هل تريد حقاً إعادة تعيين هذا المفتاح؟ أي روابط محفوظة تتضمن المفتاح القديم لن تعمل بعد الآن.';
 $string['response'] = 'الاستجابة';

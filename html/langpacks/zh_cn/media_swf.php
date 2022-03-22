@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Flash动画';
 $string['pluginname_help'] = '扩展名为*.swf的文件。出于安全原因，此过滤器只对可信文本有效。';
+$string['privacy:metadata'] = 'Flash动画媒体插件不存储任何个人数据。';

@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '人工评分';
+$string['privacy:metadata'] = '手动评分问题行为插件不存储任何个人数据。';

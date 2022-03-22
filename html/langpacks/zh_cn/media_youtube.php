@@ -27,3 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'YouTube';
 $string['pluginname_help'] = 'YouTube视频分享网站，支持视频和播放列表';
+$string['privacy:metadata'] = 'Youtube媒体插件不存储任何个人数据。';
+$string['supportsplaylist'] = 'YouTube播放列表';
+$string['supportsvideo'] = 'YouTube视频';

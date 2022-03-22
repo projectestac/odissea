@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '弹出通知';
+$string['privacy:metadata'] = '消息Web插件不存储任何个人数据。';

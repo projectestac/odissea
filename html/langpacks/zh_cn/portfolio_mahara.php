@@ -45,5 +45,7 @@ $string['mnethost'] = 'MNet 主机';
 $string['pf_description'] = '允许用户推送 Moodle 内容到此主机<br />订阅<b>并</b>发布此服务可以让此网站的认证用户推送内容到{$a}<br /><ul><li><em>相关</em>：您必须也<strong>发布</strong> SSO（身份提供者）服务到{$a}。.</li><li><em>相关</em>：您必须也<strong>订阅</strong>{$a}的 SSO（身份提供者）服务</li><li><em>相关</em>：您必须也启用 MNet 认证插件。</li></ul><br />';
 $string['pf_name'] = '云存储服务';
 $string['pluginname'] = 'Mahara ePortfolio';
+$string['privacy:metadata'] = '该插件将数据从外部发送到链接的Mahara应用程序，不在本地存储数据。';
+$string['privacy:metadata:data'] = '从电子档案夹子系统传送的个人数据。';
 $string['senddisallowed'] = '您现在不能向 Mahara 传送文件';
 $string['url'] = '网页地址';

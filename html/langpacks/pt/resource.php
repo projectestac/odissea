@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['clicktodownload'] = 'Clique na hiperligação {$a} para descarregar o ficheiro.';
 $string['clicktoopen2'] = 'Clique na hiperligação {$a} para ver o ficheiro.';
-$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Pressione a tecla CTRL para selecionar múltiplas opções.';
+$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Mantenha a tecla Ctrl pressionada para selecionar múltiplas opções.';
 $string['configframesize'] = 'Quando uma página Web ou um ficheiro são visualizados numa frame, este valor corresponde à altura (em píxeis) da frame superior (que contém a navegação).';
-$string['configparametersettings'] = 'Esta opção define o valor predefinido que é introduzido no painel de configuração de parâmetros quando adiciona um novo recurso. Depois da primeira vez, este valor é substituído pelas preferências individuais do utilizador.';
+$string['configparametersettings'] = 'Esta opção define o valor predefinido que é inserido no painel de configuração de parâmetros quando adiciona um novo recurso. Depois da primeira vez, este valor é substituído pelas preferências individuais do utilizador.';
 $string['configpopup'] = 'Quando se adiciona um recurso que pode ser apresentado numa nova janela, deve ser essa a opção predefinida?';
 $string['configpopupdirectories'] = 'Devem as janelas de pop-up apresentar hiperligações para as pastas por predefinição?';
 $string['configpopupheight'] = 'Qual deve ser a altura predefinida para as janelas de pop-up?';
@@ -64,7 +64,7 @@ $string['dnduploadresource'] = 'Criar novo ficheiro';
 $string['encryptedcode'] = 'Código encriptado';
 $string['filenotfound'] = 'Ficheiro não encontrado';
 $string['filterfiles'] = 'Aplicar filtros ao conteúdo do ficheiro';
-$string['filterfilesexplain'] = 'Selecione quais os ficheiros a serem filtrados, tendo em conta que pode causar problemas em alguns applets Java e Flash. Certifique-se que todos os ficheiros de texto se encontram na codificação UTF-8.';
+$string['filterfilesexplain'] = 'Selecione quais os ficheiros a serem filtrados, tendo em conta que pode causar problemas em alguns applets Java e Flash. Certifique-se que todos os ficheiros de texto utilizam a codificação UTF-8.';
 $string['filtername'] = 'Hiperligações automáticas para nomes dos recursos';
 $string['forcedownload'] = 'Forçar descarga';
 $string['framesize'] = 'Largura da frame';
@@ -81,9 +81,9 @@ $string['legacyfilesactive'] = 'Ativo';
 $string['legacyfilesdone'] = 'Terminado';
 $string['modifieddate'] = 'Modificado {$a}';
 $string['modulename'] = 'Ficheiro';
-$string['modulename_help'] = 'O recurso Ficheiro permite que um professor insira um ficheiro como um recurso de uma disciplina. Sempre que o navegador o permitir, o ficheiro será exibido dentro da interface da disciplina, caso contrário os alunos poderão descarregar. Este recurso pode incluir ficheiros de suporte, como por exemplo uma página HTML pode ter imagens incorporadas.
+$string['modulename_help'] = 'O recurso Ficheiro permite que um professor insira um ficheiro como um recurso de uma disciplina. Sempre que o navegador o permitir, o ficheiro será exibido dentro da interface da disciplina, caso contrário os alunos poderão descarregar. Este recurso pode incluir ficheiros de suporte, como por exemplo, uma página HTML pode ter imagens incorporadas.
 
-Tenha em atenção que os alunos precisam de ter os programas apropriados instalados nos seus computadores para visualizarem os ficheiros.
+Tenha em atenção que os alunos precisam de ter  instalados nos seus computadores os programas apropriados para visualizarem os ficheiros.
 
 Um ficheiro pode ser utilizado para:
 
@@ -121,11 +121,11 @@ $string['showdate_desc'] = 'Pretende exibir a data de carregamento/data de modif
 $string['showdate_help'] = 'Exibir a data de carregamento/data de modificação ao lado das hiperligações para os ficheiros.';
 $string['showsize'] = 'Mostrar tamanho';
 $string['showsize_desc'] = 'Mostrar tamanho do ficheiro na página principal da disciplina?';
-$string['showsize_help'] = 'Mostra o tamanho do ficheiro, por exemplo \'3.1 MB\', junto à hiperligação para o ficheiro.
+$string['showsize_help'] = 'Mostra o tamanho do ficheiro, por exemplo, \'3.1 MB\', junto à hiperligação para o ficheiro.
 
 Se existir mais do que um ficheiro no recurso, é exibido o tamanho total dos ficheiros.';
 $string['showtype'] = 'Mostrar tipo';
-$string['showtype_desc'] = 'Mostrar o tipo do ficheiro (ex. \'Word\') na página principal da disciplina?';
+$string['showtype_desc'] = 'Mostrar o tipo do ficheiro (por exemplo, \'Documento Word\') na página principal da disciplina?';
 $string['showtype_help'] = 'Mostra a extensão do ficheiro, como \'Word\', junto à hiperligação para o ficheiro.
 
 Se existirem vários ficheiros neste recurso, é exibido o tipo do ficheiro principal.

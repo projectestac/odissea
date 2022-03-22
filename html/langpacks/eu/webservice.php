@@ -168,6 +168,7 @@ $string['required'] = 'Beharrezkoa';
 $string['requiredcapability'] = 'Beharrezko gaitasuna';
 $string['requiredcapability_help'] = 'Ezarriz gero, beharrezko gaitasunak dituzten erabiltzaileak baino ezin izango dira zerbitzura sartu.';
 $string['requiredcaps'] = 'Beharrezko gaitasunak';
+$string['resettokencomplete'] = 'Aukeratutako gakoa berrabiarazia izan da';
 $string['resettokenconfirm'] = 'Ziur zaude <strong>{$a->service}</strong> zerbitzuko <strong>{$a->user}</strong> erabiltzailearen web-zerbitzu gako hau berrabiarazi nahi duzula?';
 $string['resettokenconfirmsimple'] = 'Ziur zaude gako hau berrabiarazi nahi duzula? Gako zaharra duten esteka guztiek ez dute gehiago funtzionatuko.';
 $string['response'] = 'Erantzuna';

@@ -421,7 +421,7 @@ $string['return_to_course'] = 'Fai click su <a href="{$a->link}" target="_top">h
 $string['saveallfeedback'] = 'Salva tutti i miei feedback';
 $string['search:activity'] = 'Tool esterno - informazioni sull\'attività';
 $string['secure_icon_url'] = 'URL sicura dell\'icona';
-$string['secure_icon_url_help'] = 'Simile all\'URL dell\'icona, viene utilizzato se l\'utente accede a Moodle tramite SSL. Lo scopo principale di questa impostazione è quello di prevenire gli avvertimenti che il browser presenta agli utenti quando la pagina è stata acceduta via SSL ma contiene anche contenuti forniti senza SSL.';
+$string['secure_icon_url_help'] = 'Simile all\'URL dell\'icona, viene utilizzato se l\'utente accede al sito tramite SSL. Lo scopo principale di questa impostazione è quello di prevenire gli avvertimenti che il browser presenta agli utenti quando la pagina è stata acceduta via SSL ma contiene anche contenuti forniti senza SSL.';
 $string['secure_launch_url'] = 'URL sicura del tool';
 $string['secure_launch_url_help'] = 'Simile all\'URL di lancio, viene utilizzato nel caso in cui è necessario un elevato livello di sicurezza. Moodle utilizzerà l\'URL sicuro di lancio al posto dell\'URL di lancio se il sito Moodle viene acceduto cia SSL oppure se ila configurazione del tool è impostata per lancio tramite SSL.
 

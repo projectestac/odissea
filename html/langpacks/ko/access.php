@@ -41,6 +41,6 @@ $string['skipa'] = '{$a} 생략';
 $string['skipblock'] = '블록 생략';
 $string['skipnavigation'] = '찾아가기 생략';
 $string['skipto'] = '{$a} 생략';
-$string['tocontent'] = '주 내용으로 가기';
+$string['tocontent'] = '주요 내용으로 넘어가기';
 $string['tonavigation'] = '찾아가기로 가기';
 $string['youarehere'] = '현재 위치';

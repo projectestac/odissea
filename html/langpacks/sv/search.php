@@ -140,6 +140,6 @@ $string['totalsize'] = 'Totalstorlek';
 $string['totime'] = 'Tidigare ändrad';
 $string['type'] = 'Typ';
 $string['uncompleteindexingerror'] = 'Indexeringen avslutades inte fullständigt. Vänligen starta om den.';
-$string['versiontoolow'] = 'Global sökning kräver tyvärr PHP 5.0.0+ (använder f.n. version)';
+$string['versiontoolow'] = 'Global sökning kräver PHP version 5.0.0 eller senare';
 $string['viewresultincontext'] = 'Visa resultatet i sitt kontext';
 $string['wordsintitle'] = 'Ord i titel';

@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['availablecourseson'] = 'Disciplinas disponíveis em {$a}';
 $string['availablecoursesonnone'] = 'Servidor remoto <a href="{$a->hosturl}">{$a->hostname}</a> não tem nenhumas disciplinas para os utilizadores.';
 $string['clientname'] = 'Cliente de inscrição remota';
-$string['clientname_help'] = 'Inscreve e anule a inscrição de utilizadores na sua instalação Moodle nos servidores Moodle que permitam que o faça através do módulo de inscrição na Rede Moodle.';
+$string['clientname_help'] = 'Permite inscrever e cancelar a inscrição de utilizadores da sua instalação Moodle nos servidores Moodle que permitam que o faça através do módulo de inscrição na Rede Moodle.';
 $string['editenrolments'] = 'Editar inscrições';
 $string['hostappname'] = 'Aplicação';
 $string['hostname'] = 'Nome do servidor';
@@ -38,7 +38,7 @@ $string['noroamingusers'] = 'Os utilizadores necessitam da permissão \'{$a}\' n
 $string['otherenrolledusers'] = 'Outros utilizadores inscritos';
 $string['pluginname'] = 'Serviço de inscrição remota';
 $string['privacy:metadata:mnetservice_enrol_enrolments'] = 'Serviço de inscrição remota';
-$string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = 'A data/hora em que a inscrição foi modificada';
+$string['privacy:metadata:mnetservice_enrol_enrolments:enroltime'] = 'A data e hora em que a inscrição foi modificada';
 $string['privacy:metadata:mnetservice_enrol_enrolments:enroltype'] = 'O tipo de inscrição que foi utilizado no servidor remoto para inscrever o aluno na disciplina.';
 $string['privacy:metadata:mnetservice_enrol_enrolments:hostid'] = 'O ID do servidor remoto MNet';
 $string['privacy:metadata:mnetservice_enrol_enrolments:remotecourseid'] = 'O ID da disciplina no servidor remoto';

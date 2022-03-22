@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Mehrsprachiger Inhalt';
-$string['privacy:metadata'] = 'Der Multi-Lang-Filter speichert keine personenbezogenen Daten.';
+$string['privacy:metadata'] = 'Der Filter "Mehrsprachiger Inhalt" speichert keine personenbezogenen Daten.';

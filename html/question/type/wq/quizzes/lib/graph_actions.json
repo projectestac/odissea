@@ -16,6 +16,190 @@
     }
   },
   {
+    "id": "cursorEditBarChart",
+    "title": "tt_barChart",
+    "icon": {
+      "name": "cursor",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "newPackBars",
+    "title": "tt_newPackBars",
+    "icon": {
+      "name": "bars_add_pack",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "newSideBars",
+    "title": "tt_newSideBars",
+    "icon": {
+      "name": "bars_add_group",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "deletePackBars",
+    "title": "tt_deletePackBars",
+    "icon": {
+      "name": "bars_delete_pack",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "deleteSideBars",
+    "title": "tt_deleteSideBars",
+    "icon": {
+      "name": "bars_delete_group",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "changeBarsPositioning",
+    "title": "tt_stackBars",
+    "icon": {
+      "name": "bars_stack",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "cursorEditPieChart",
+    "title": "tt_pieChart",
+    "icon": {
+      "name": "cursor",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "newPie",
+    "title": "tt_newPie",
+    "icon": {
+      "name": "pie_add_sector",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "deletePie",
+    "title": "tt_deletePie",
+    "icon": {
+      "name": "trash",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "newPieClockwise",
+    "title": "tt_newPieClockwise",
+    "icon": {
+      "name": "angle",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "newPieCounterclockwise",
+    "title": "tt_newPieCounterclockwise",
+    "icon": {
+      "name": "angle",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "pie2D3D",
+    "title": "tt_pie3D",
+    "icon": {
+      "name": "pie3d",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "cursorEditLineChart",
+    "title": "tt_lineChart",
+    "icon": {
+      "name": "cursor",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "newPointsLineChart",
+    "title": "tt_newPointsLineChart",
+    "icon": {
+      "name": "lines_add_points",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "newLineLineChart",
+    "title": "tt_newLineLineChart",
+    "icon": {
+      "name": "lines_add_line",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "deletePointsLineChart",
+    "title": "tt_deletePointsLineChart",
+    "icon": {
+      "name": "lines_delete_points",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "deleteLineLineChart",
+    "title": "tt_deleteLineLineChart",
+    "icon": {
+      "name": "lines_delete_line",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "addPointsLeft",
+    "title": "tt_addPointsLeft",
+    "icon": {
+      "name": "undo",
+      "type": "material"
+    }
+  },
+  {
+    "id": "addPointsRight",
+    "title": "tt_addPointsRight",
+    "icon": {
+      "name": "redo",
+      "type": "material"
+    }
+  },
+  {
+    "id": "fitPlotterToStats",
+    "title": "tt_fitPlotterToStats",
+    "icon": {
+      "name": "fullscreen",
+      "type": "material"
+    }
+  },
+  {
+    "id": "changeOrientationBars",
+    "title": "tt_horizontal",
+    "icon": {
+      "name": "bars_horizontal",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "changeOrientationLines",
+    "title": "tt_horizontal",
+    "icon": {
+      "name": "lines_horizontal",
+      "type": "svg"
+    }
+  },
+  {
+    "id": "pointDiameter",
+    "title": "tt_pointDiameter",
+    "icon": {
+      "name": "point",
+      "type": "svg"
+    }
+  },
+  {
     "id": "drawStrokes",
     "title": "tt_handwriting",
     "icon": {
@@ -212,6 +396,14 @@
     "title": "tt_elementMML",
     "icon": {
       "name": "functions",
+      "type": "material"
+    }
+  },
+  {
+    "id": "newImageByPoint",
+    "title": "tt_image",
+    "icon": {
+      "name": "image",
       "type": "material"
     }
   },
@@ -478,9 +670,10 @@
     "value": "arctan"
   },
   {
-    "id": "log",
-    "title": "log",
-    "value": "log"
+    "id": "logBase",
+    "title": "log<sub style=\"font-size: 7pt; vertical-align: sub; line-height: 0px;\">&#9647;</sub>",
+    "value": "log",
+    "titleHtml": true
   },
   {
     "id": "ln",

@@ -176,7 +176,7 @@ $string['plancreated'] = 'Plano de aprendizagem criado';
 $string['plandescription'] = 'Descrição';
 $string['planname'] = 'Nome';
 $string['plantemplate'] = 'Selecione o modelo de plano de aprendizagem';
-$string['plantemplate_help'] = 'Um plano de aprendizagem criado a partir de um modelo, irá conter uma lista das competências que correspondem ao modelo. As atualizações ao modelo serão refletidas em todos os planos criados a partir deste.';
+$string['plantemplate_help'] = 'Um plano de aprendizagem criado a partir de um modelo irá conter uma lista das competências que correspondem ao modelo. As atualizações ao modelo serão refletidas em todos os planos criados a partir deste.';
 $string['planunapprove'] = 'Enviar novamente para rascunho';
 $string['planupdated'] = 'Plano de aprendizagem atualizado';
 $string['pluginname'] = 'Planos de aprendizagem';
@@ -202,7 +202,7 @@ $string['scale_help'] = 'Uma escala determina como é medida a proficiência num
 * O item selecionado como \'Predefinido\' é a avaliação atribuída quando uma competência é concluída automaticamente.
 * Os item(ns) selecionado(s) como \'Proficiente\' indica(m) que valor(es) irão marcar as competências como proficientes quando estas são avaliadas.';
 $string['scalevalue'] = 'Valor da escala';
-$string['search'] = 'Pesquisa...';
+$string['search'] = 'Pesquisar...';
 $string['selectcohortstosync'] = 'Selecione os grupos globais a sincronizar';
 $string['selectcompetencymovetarget'] = 'Selecione o local para onde pretende mover esta competência:';
 $string['selectedcompetency'] = 'Competência selecionada';

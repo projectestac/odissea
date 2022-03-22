@@ -46,6 +46,6 @@ $string['predictiondetails'] = 'Detalhes da previsão';
 $string['privacy:metadata'] = 'O módulo Perceções não armazena dados pessoais.';
 $string['selectotherinsights'] = 'Selecione outras perceções...';
 $string['selectprediction'] = 'Selecionar {$a} para processar em massa';
-$string['timecreated'] = 'Data/hora';
+$string['timecreated'] = 'Data e hora';
 $string['timerange'] = 'Intervalo de análise';
 $string['timerangewithdata'] = 'De {$a->timestart} até {$a->timeend}';

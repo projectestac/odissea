@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['feedback'] = 'Inquérito';
-$string['feedback:addinstance'] = 'Adicionar um novo bloco de Comentários';
+$string['feedback:addinstance'] = 'Adicionar um novo bloco Comentários';
 $string['pluginname'] = 'Inquérito';
 $string['privacy:metadata'] = 'O bloco Comentários apenas mostra dados armazenados noutros locais.';

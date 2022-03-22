@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'XHTML格式';
 $string['pluginname_help'] = 'XHTML格式将此类别中的所有题目导出到一个严格符合XHTML规范的也没中，供其它应用程序使用。';
+$string['privacy:metadata'] = 'XHTML问题格式插件不存储任何个人数据。';

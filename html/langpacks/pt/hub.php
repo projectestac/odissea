@@ -83,8 +83,8 @@ $string['errorbadimageheightwidth'] = 'A imagem deve ter um tamanho máximo de {
 $string['errorcourseinfo'] = 'Ocorreu um erro ao obter meta-informação da disciplina de ({$a}). Por favor, repita a operação mais tarde: volte a aceder a esta página ou atualize/recarregue a página. Em alternativa, pode optar por continuar o processo de registo com a meta-informação predefinida.';
 $string['errorcoursepublish'] = 'Ocorreu um erro durante a publicação da disciplina ({$a}). Por favor, tente novamente mais tarde.';
 $string['errorcoursewronglypublished'] = 'Moodle.net reportou um erro de publicação. Por favor, tente novamente mais tarde.';
-$string['errorotherhubsnotsupported'] = 'Esta página já não pode ser usada para registo com com diretorias de sites personalizados.';
-$string['errorregistration'] = 'Ocorreu um erro durante no registo. Por favor, tente novamente mais tarde. ({$a})';
+$string['errorotherhubsnotsupported'] = 'Esta página já não pode ser usada para registo com diretorias de sites personalizadas.';
+$string['errorregistration'] = 'Ocorreu um erro durante o registo. Por favor, tente novamente mais tarde. ({$a})';
 $string['errorregistrationupdate'] = 'Ocorreu um erro durante a atualização do registo ({$a})';
 $string['errorunpublishcourses'] = 'Ocorreu um erro inesperado no processo de remoção da disciplinas de Moodle.net. Por favor, tente novamente mais tarde (ação recomendada) ou contacte o administrador de Moodle.net.';
 $string['errorws'] = '{$a}';
@@ -112,7 +112,7 @@ $string['name_help'] = 'Este nome será mostrado na lista de disciplinas.';
 $string['neverchecked'] = 'Nunca foi verificado(a)';
 $string['next'] = 'Seguinte';
 $string['no'] = 'Não';
-$string['nocheckstatusfromunreghub'] = 'O site não está registo no hub pelo que o seu estado não pode ser verificado.';
+$string['nocheckstatusfromunreghub'] = 'O site não está registado no hub pelo que o seu estado não pode ser verificado.';
 $string['nohubselected'] = 'Não foi selecionado nenhum hub.';
 $string['none'] = 'Nenhum';
 $string['nosearch'] = 'Não disponibilizar hubs nem disciplinas';
@@ -148,7 +148,7 @@ $string['registerwithmoodleorginfo'] = 'Gostaríamos muito de ficar em contacto 
 * Pode subscrever-se para receber notificações de novos lançamentos do Moodle, alertas de segurança e outras notícias importantes.
 * Pode aceder e ativar o envio de notificações móveis a partir do seu site através da Aplicação móvel Moodle gratuita.
 * Está a contribuir para as nossas estatísticas Moodle da comunidade mundial, que nos ajudam a melhorar o Moodle e os sites da nossa comunidade.
-* Se desejar, o seu site pode ser incluído na lista de sites Moodle registados do seu país.';
+* Se pretender, o seu site pode ser incluído na lista de sites Moodle registados do seu país.';
 $string['registerwithmoodleorginfoapp'] = 'Acerca da Aplicação móvel Moodle';
 $string['registerwithmoodleorginfosites'] = 'Outros sites do meu país';
 $string['registerwithmoodleorginfostats'] = 'Estatísticas do Moodle';
@@ -230,7 +230,7 @@ $string['unregisterexplained'] = 'Se o site com URL {$a} estiver registado, o re
 $string['unregisterfrom'] = 'Remover registo do hub {$a}';
 $string['unregistrationerror'] = 'Ocorreu um erro ao tentar remover o registo do site: {$a}';
 $string['update'] = 'Atualizar';
-$string['updatesite'] = 'Atualizar registo em {$a}';
+$string['updatesite'] = 'Atualizar o registo em {$a}';
 $string['updatesiteregistration'] = 'Atualizar o registo';
 $string['updatestatus'] = 'Verificar agora.';
 $string['urlalreadyregistered'] = 'Aparentemente este site já está registado, o que indica que ocorreu um erro. Por favor, contacte o administrador da diretoria para limpar o seu registo e assim poder efetuar um novo.';

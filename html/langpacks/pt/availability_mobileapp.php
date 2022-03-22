@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['description'] = 'Exigir que os alunos acedam apenas (ou impedir acesso) através da aplicação móvel Moodle.';
 $string['label_access'] = 'Tipo de acesso';
-$string['pluginname'] = 'Restrição do acesso através da aplicação móvel Moodle';
-$string['privacy:metadata'] = 'O módulo Restrição do acesso através da aplicação móvel Moodle não armazena quaisquer dados pessoais';
+$string['pluginname'] = 'Condição de acesso com base na utilização da aplicação móvel Moodle';
+$string['privacy:metadata'] = 'O módulo Condição de acesso com base na utilização da aplicação móvel Moodle não armazena quaisquer dados pessoais';
 $string['requires_app'] = 'Aceder com a Aplicação móvel Moodle';
 $string['requires_notapp'] = 'NÃO aceder com a Aplicação móvel Moodle';
 $string['title'] = 'Aplicação móvel Moodle';

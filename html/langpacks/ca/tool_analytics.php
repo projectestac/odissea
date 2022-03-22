@@ -25,5 +25,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['analyticmodels'] = 'Models d\'analítiques';
+$string['enabled'] = 'Habilitat';
 $string['export'] = 'Exporta';
+$string['importmodel'] = 'Importa el model';
+$string['indicators'] = 'Indicadors';
+$string['indicatorsnum'] = 'Nombre d\'indicadors: {$a}';
+$string['info'] = 'Informació';
 $string['insights'] = 'Prediccions';
+$string['modelname'] = 'Nom del model';
+$string['modelresults'] = '{$a} resultats';
+$string['modeltimesplitting'] = 'Interval d\'anàlisi';
+$string['newmodel'] = 'Model nou';
+$string['nextpage'] = 'Pàgina següent';
+$string['pluginname'] = 'Models d\'analítiques';

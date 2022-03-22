@@ -121,7 +121,6 @@ $string['resultstab'] = 'Resultados';
 $string['resumeattempt'] = 'Finalizando intentos non rematados';
 $string['review'] = 'Revisión de';
 $string['reviewtab'] = 'Revisión';
-$string['save'] = 'Gardar';
 $string['savechanges'] = 'Gardar cambios';
 $string['savewithoutsubmitting'] = 'Gardar sen enviar';
 $string['settings'] = 'Axustes';

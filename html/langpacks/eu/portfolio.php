@@ -154,7 +154,7 @@ $string['noclassbeforeformats'] = 'callback klasea zehaztu behar duzu portfolio_
 $string['nocommonformats'] = 'Ez dago formatu komunik eskuragarri dauden portfolio-pluginen eta deitutako {$a->location} kokapenaren artean (deitutakoak {$a->formats} onartzen ditu)';
 $string['noinstanceyet'] = 'Aukeratu gabe';
 $string['nologs'] = 'Ez dago erakusteko erregistrorik!';
-$string['nomultipleexports'] = 'Sentitzen dugu, baina portfolioaren helmugak ({$a->plugin}) ez ditu aldi bereko esportazioak onartzen. Mesedez <a href="{$a->link}">amaitu martxan dagoena</a> eta ondoren saiatu berriz ere';
+$string['nomultipleexports'] = 'Sentitzen dugu, baina portfolioaren helmugak ({$a->plugin}) ez ditu aldi bereko esportazioak onartzen. Mesedez <a href="{$a->link}">amaitu martxan dagoena</a> eta ondoren saiatu berriro ere';
 $string['nonprimative'] = 'Jatorrizkoa ez den balio bat callback argumentu gisa bidali da portfolio_add_button-ra. Jarraitzea ukatu da. Giltza {$a->key} zen eta balioa {$a->value} zen';
 $string['nopermissions'] = 'Sentitzen dugu baina ez dituzu beharrezko baimenak eremu honetatik fitxategiak esportatzeko';
 $string['notexportable'] = 'Sentitzen dugu, baina esportatu nahi duzun eduki mota ez da esportatzeko modukoa';

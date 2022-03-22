@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addmoredimensions'] = 'Adicionar mais {$a} proposições';
 $string['configgrade0'] = 'Palavra predefinida para descrever a avaliação negativa de um determinada proposição.';
-$string['configgrade1'] = 'Mensagem predefinida para descrever a avaliação positiva de uma determinada proposição.';
+$string['configgrade1'] = 'Palavra predefinida para descrever a avaliação positiva de uma determinada proposição.';
 $string['dimensioncommentfor'] = 'Comentário para {$a}';
 $string['dimensiondescription'] = 'Descrição';
 $string['dimensiongrade'] = 'Nota';

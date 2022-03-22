@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '交互式多次尝试';
+$string['privacy:metadata'] = '多次尝试问题行为插件的交互不存储任何个人数据。';
 $string['triesremaining'] = '还可尝试：{$a}次';
 $string['tryagain'] = '再试试';

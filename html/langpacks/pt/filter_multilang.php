@@ -26,4 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Conteúdos multilingue';
-$string['privacy:metadata'] = 'O módulo Conteúdos multilingue não armazena dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Conteúdos multilingue não armazena quaisquer dados pessoais.';

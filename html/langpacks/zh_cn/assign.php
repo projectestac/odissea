@@ -85,7 +85,7 @@ $string['assignsubmissionpluginname'] = '提交插件';
 $string['attemptheading'] = '尝试 {$a->attemptnumber}：{$a->submissionsummary}';
 $string['attempthistory'] = '先前的尝试';
 $string['attemptnumber'] = '尝试数';
-$string['attemptreopenmethod'] = '尝试重开';
+$string['attemptreopenmethod'] = '额外的尝试';
 $string['attemptreopenmethod_help'] = '确定如何重新开启学生作业尝试。可用的选项有:
 
 * 从不 - 不能重新开启。
@@ -350,6 +350,7 @@ $string['multipleteams_desc'] = '此作业要求小组提交。您是多个小�
 $string['multipleteamsgrader'] = '您同时属于多个小组的成员，因此无法提交作业。';
 $string['mysubmission'] = '我的作业：';
 $string['newsubmissions'] = '已提交的作业';
+$string['nextuser'] = '下一个用户';
 $string['noattempt'] = '没有尝试';
 $string['noclose'] = '没有关闭日期';
 $string['nofiles'] = '没有文件。';
@@ -382,7 +383,7 @@ $string['offline'] = '不需要在线提交';
 $string['open'] = '开启';
 $string['outlinegrade'] = '成绩: {$a}';
 $string['outof'] = '{$a->current}/ {$a->total}';
-$string['overdue'] = '<font color="red">作业过期：{$a}</font>';
+$string['overdue'] = '作业过期时间：{$a}';
 $string['override'] = '覆盖';
 $string['overridedeletegroupsure'] = '您确定要删除小组{$a}的覆盖吗？';
 $string['overridedeleteusersure'] = '您确定要删除用户{$a}的覆盖吗？';
@@ -402,6 +403,7 @@ $string['preventsubmissionnotingroup_help'] = '如果启用，非小组成员的
 $string['preventsubmissions'] = '阻止用户再次提交该作业。';
 $string['preventsubmissionsshort'] = '阻止作业更改';
 $string['previous'] = '向前';
+$string['previoususer'] = '前一个用户';
 $string['privacy:attemptpath'] = '尝试 {$a}';
 $string['privacy:blindmarkingidentifier'] = '用于盲批的标识符';
 $string['privacy:gradepath'] = '成绩';

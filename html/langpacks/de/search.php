@@ -91,7 +91,7 @@ $string['matchingfile'] = 'Treffer in der Datei: <span class="filename">{$a}</sp
 $string['matchingfiles'] = 'Treffer in den Dateien:';
 $string['mycoursesonly'] = 'Nur meine Kurse';
 $string['next'] = 'Weiter';
-$string['noindexmessage'] = 'Admin: Es gibt scheinbar keinen Suchindex. Bitte';
+$string['noindexmessage'] = 'Hinweis: Es gibt scheinbar keinen Suchindex.';
 $string['noresults'] = 'Keine Ergebnisse';
 $string['normalsearch'] = 'Normale Suche';
 $string['notitle'] = 'Ohne Namen';

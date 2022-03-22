@@ -316,7 +316,7 @@ $string['convertingwikitomarkdown'] = 'Wiki wird als Markdown konvertiert';
 $string['cookiesenabled'] = 'Cookies müssen aktiviert sein!';
 $string['cookiesenabled_help'] = 'Moodle verwendet zwei Cookies:
 
-Das wichtige Cookie heißt <b>MoodleSession</b>. Dieses Cookie muss erlaubt sein, damit Sie in Moodle beim Wechsel von Seite zu Seite angemeldet bleiben. Beim Abmelden oder beim Beenden des Webbrowsers wird das Cookie automatisch gelöscht.
+Das einzig notwendige Cookie heißt <b>MoodleSession</b>. Dieses Cookie muss erlaubt sein, damit Sie in Moodle beim Wechsel von Seite zu Seite angemeldet bleiben. Beim Abmelden oder beim Beenden des Webbrowsers wird das Cookie automatisch gelöscht (im Browser und auf dem Server).
 
 Das andere Cookie dient der Bequemlichkeit und heißt <b>MoodleID</b>. Dieses Cookie speichert Ihren Anmeldenamen im Webbrowser und bleibt auch nach dem Abmelden erhalten. Beim nächsten Besuch der Website ist Ihr Anmeldename dann bereits für die Anmeldung eingetragen. Dieses Cookie können Sie verbieten, müssen dann aber Ihren Anmeldenamen immer neu eingeben.';
 $string['cookiesenabledonlysession'] = 'Cookies müssen aktiviert sein!';
@@ -656,9 +656,7 @@ Falls die Anmeldung nicht von Ihnen stammt, können Sie diese E-Mail ignorieren.
 Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.
 
 Viel Erfolg!
-{$a->admin}
-
-Ihr E-Learning-Team';
+{$a->admin}';
 $string['emailconfirmationresend'] = 'Bestätigungsmitteilung erneut senden';
 $string['emailconfirmationsubject'] = '{$a}: Zugangsbestätigung';
 $string['emailconfirmsent'] = '<p>Um sicherzugehen, dass sich niemand unberechtigt über die von Ihnen angegebene E-Mail anmeldet, wird eine automatische Benachrichtigung an diese Adresse <b>{$a}</b> gesendet.</p>
@@ -708,27 +706,21 @@ In den meisten E-Mail-Programmen ist der Link aktiv und muss einfach angeklickt 
 Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.
 
 Viel Erfolg!
-{$a->admin}
-
-Ihr E-Learning-Team';
+{$a->admin}';
 $string['emailpasswordchangeinfodisabled'] = 'Guten Tag {$a->firstname},
 
 jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang auf \'{$a->sitename}\' angefordert.
 
 Leider ist Ihr Zugang zu dieser Website deaktiviert und kann nicht automatisch zurückgesetzt werden. Wenden Sie sich bitte an die Administrator/innen der Website.
 
-{$a->admin}
-
-Ihr E-Learning-Team';
+{$a->admin}';
 $string['emailpasswordchangeinfofail'] = 'Guten Tag {$a->firstname},
 
 jemand (wahrscheinlich Sie) hat ein neues Kennwort für Ihren Zugang auf \'{$a->sitename}\' angefordert.
 
 Leider kann das Kennwort auf diesem Weg nicht geändert werden. Wenden Sie sich bitte an die Administrator/innen der Website.
 
-{$a->admin}
-
-Ihr E-Learning-Team';
+{$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}: Kennwort ändern';
 $string['emailpasswordconfirmation'] = 'Guten Tag {$a->firstname} {$a->lastname},
 
@@ -745,9 +737,7 @@ Sollten Sie die Kennwortanforderung nicht selber ausgelöst haben, hat vermutlic
 Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.
 
 Viel Erfolg!
-{$a->admin}
-
-Ihr E-Learning-Team';
+{$a->admin}';
 $string['emailpasswordconfirmationsubject'] = '{$a}: Kennwort-Änderung bestätigen';
 $string['emailpasswordconfirmmaybesent'] = '<p>Wenn Sie den Anmeldenamen bzw. die eindeutige E-Mail-Adresse richtig angegeben haben, wird eine automatische E-Mail an Sie gesendet.</p><p>Die Mitteilung enthält eine Anleitung, wie Sie das Zurücksetzen des Kennwortes abschließen. Bei Problemen wenden Sie sich an die Administrator/innen der Website.</p>';
 $string['emailpasswordconfirmnoemail'] = 'Das angegebene Nutzerkonto hat keine eingetragene E-Mail-Adresse. Wenden Sie sich bitte an die Administrator/innen der Website.';
@@ -771,9 +761,7 @@ Bei Problemen wenden Sie sich bitte an die Administrator/innen der Website.
 
 Viel Erfolg!
 
-{$a->admin}
-
-Ihr E-Learning-Team';
+{$a->admin}';
 $string['emailresetconfirmationsubject'] = '{$a}: Anforderung für neues Kennwort';
 $string['emailresetconfirmsent'] = 'Eine E-Mail wurde an Ihre Adresse bei <b>{$a}</b> gesendet. <br />Sie enthält eine einfache Anleitung, wie Sie weiter vorgehen müssen, um das Kennwort zu ändern. Wenn Sie Schwierigkeiten haben, wenden Sie sich bitte an eine/n Administrator/in.';
 $string['emailstop'] = 'Systemnachrichten deaktivieren';
@@ -1645,12 +1633,12 @@ $string['privacy:metadata:log:time'] = 'Die Zeit zu der die Aktion stattfand';
 $string['privacy:metadata:log:url'] = 'URL des Events';
 $string['privacy:metadata:log:userid'] = 'ID des Nutzers der die Aktion ausgeführt hat';
 $string['privacy:metadata:oauth2_refresh_token'] = 'Token für die OAuth2-Kommunikation erneuern';
-$string['privacy:metadata:oauth2_refresh_token:issuerid'] = 'Die ID des Ausgebers, zu dem der Token gehört';
-$string['privacy:metadata:oauth2_refresh_token:scopehash'] = 'Nutzer-ID der Person, zu der der Token gehört';
-$string['privacy:metadata:oauth2_refresh_token:timecreated'] = 'Zeit, zu der der Token erzeugt wurde';
-$string['privacy:metadata:oauth2_refresh_token:timemodified'] = 'Zeit, zu der der Token zuletzt aktualisiert wurde';
-$string['privacy:metadata:oauth2_refresh_token:token'] = 'Aktualisierungstoken für die Bereiche und Nutzer/in';
-$string['privacy:metadata:oauth2_refresh_token:userid'] = 'Nutzer-ID der Person, zu der der Token gehört';
+$string['privacy:metadata:oauth2_refresh_token:issuerid'] = 'Die ID des Ausgebers, zu dem das Token gehört';
+$string['privacy:metadata:oauth2_refresh_token:scopehash'] = 'Nutzer-ID der Person, zu der das Token gehört';
+$string['privacy:metadata:oauth2_refresh_token:timecreated'] = 'Zeit, zu der das Token erzeugt wurde';
+$string['privacy:metadata:oauth2_refresh_token:timemodified'] = 'Zeit, zu der das Token zuletzt aktualisiert wurde';
+$string['privacy:metadata:oauth2_refresh_token:token'] = 'Aktualisierungstoken für die Bereiche und Nutzer/innen';
+$string['privacy:metadata:oauth2_refresh_token:userid'] = 'Nutzer-ID der Person, zu der das Token gehört';
 $string['privacy:metadata:task_adhoc'] = 'Der Status von Adhoc-Tasks.';
 $string['privacy:metadata:task_adhoc:component'] = 'Komponente, der die Aufgabe gehört';
 $string['privacy:metadata:task_adhoc:nextruntime'] = 'Frühester Zeitpunkt zur Ausführung der Aufgabe';
@@ -2240,6 +2228,7 @@ $string['useruploadtype'] = 'Art des Nutzeruploads';
 $string['userzones'] = 'Nutzerzonen';
 $string['usetheme'] = 'Design wählen';
 $string['usingexistingcourse'] = 'Vorhandenen Kurs benutzen';
+$string['validatehtml'] = 'HTML validieren';
 $string['valuealreadyused'] = 'Dieser Wert wurde bereits benutzt.';
 $string['version'] = 'Version';
 $string['view'] = 'Anzeigen';
@@ -2257,6 +2246,7 @@ $string['visible_help'] = 'Diese Option legt fest, ob der Kurs in der Kursliste 
 $string['visibletostudents'] = 'Sichtbar für {$a}';
 $string['warning'] = 'Warnung';
 $string['warningdeleteresource'] = 'Hinweis: Auf {$a} wird in einem Arbeitsmaterial Bezug genommen. Wollen Sie das Arbeitsmaterial aktualisieren?';
+$string['wcagcheck'] = 'Web Content Accessibility Guidelines (WCAG)-Check';
 $string['webpage'] = 'Webseite';
 $string['week'] = 'Woche';
 $string['weekhide'] = 'Diese Woche verbergen für {$a}';

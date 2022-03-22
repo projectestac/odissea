@@ -25,13 +25,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['antivirusfailed'] = 'Une honetan arazo bat dago antibirusaren eskaneatzearekin. Zure {$a->item} fitxategia ez da igo. Mesedez berriz saiatu zaitez beranduago.';
+$string['antivirusfailed'] = 'Une honetan arazo bat dago antibirusaren eskaneatzearekin. Zure {$a->item} fitxategia ez da igo. Mesedez saiatu zaitez berriro beranduago.';
 $string['clamfailed'] = 'ClamAV-ren exekuzioak huts egin du. Errore-mezua {$a} izan da. Hau da ClamAV-ren irteera-mezua:';
 $string['clamfailureonupload'] = 'ClamAV-ek huts egiten duenean';
 $string['configclamactlikevirus'] = 'Tratatu fitxategiekin birusak balira bezala';
 $string['configclamdonothing'] = 'Tratatu fitxategiak ondo baleude bezala';
-$string['configclamfailureonupload'] = '\'Tratatu fitxategiak ondo baleude bezala\' aukeratuz gero fitxategiak helmugako direktoriora mugituko dira. \'Igoera ukatu, berriz saiatu\' aukeratuz gero erabiltzaileari berriz saiatzeko eskatuko zaio. \'Tratatu fitxategiekin birusak balira bezala\' aukeratuz gero fitxategiak berrogeialdi-eremura mugitu edo ezabatuko dira. Kontuz: aukera honekin, edozein arrazoiengatik clam-en exekuzioak huts egiten badu (normalean pathtoclam ezegokia zehaztu duzulako), igotako fitxategi GUZTIAK zehaztutako berrogeialdi-eremura mugitu edo ezabatuko dira.';
-$string['configclamtryagain'] = 'Igoera ukatu, berriz saiatu';
+$string['configclamfailureonupload'] = '\'Tratatu fitxategiak ondo baleude bezala\' aukeratuz gero fitxategiak helmugako direktoriora mugituko dira. \'Igoera ukatu, saiatu berriro\' aukeratuz gero erabiltzaileari berriz saiatzeko eskatuko zaio. \'Tratatu fitxategiekin birusak balira bezala\' aukeratuz gero fitxategiak berrogeialdi-eremura mugitu edo ezabatuko dira. Kontuz: aukera honekin, edozein arrazoiengatik clam-en exekuzioak huts egiten badu (normalean pathtoclam ezegokia zehaztu duzulako), igotako fitxategi GUZTIAK zehaztutako berrogeialdi-eremura mugitu edo ezabatuko dira.';
+$string['configclamtryagain'] = 'Igoera ukatu, saiatu berriro';
 $string['errorcantopensocket'] = 'Unix domeinuko socket-erako konexioan errorea gertatu da {$a}';
 $string['errorclamavnoresponse'] = 'ClamAV-k ez du erantzuten; egiaztatu \'daemon\'aren exekuzio-egoera.';
 $string['errornounixsocketssupported'] = 'Sistema honetan ez da Unix domeinuko socket bidezko garraioa onartzen. Mesedez, erabili horren ordez komando-lerroa aukera.';

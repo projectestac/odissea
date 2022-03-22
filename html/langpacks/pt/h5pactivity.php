@@ -88,7 +88,7 @@ $string['h5pattempts'] = 'Opções das tentativas';
 $string['h5pdisplay'] = 'Opções do H5P';
 $string['maxscore'] = 'Pontuação máxima';
 $string['modulename'] = 'H5P';
-$string['modulename_help'] = 'H5P é a abreviatura de HTML5 Package (Pacote HTML5) - conteúdo interativo, tais como, apresentações, vídeos e outros recursos multimédia, perguntas, testes, jogos e muito mais. A atividade do H5P permite que o H5P seja carregada e adicionada a uma disciplina.
+$string['modulename_help'] = 'H5P é a abreviatura de HTML5 Package (Pacote HTML5) - conteúdo interativo, tais como apresentações, vídeos e outros recursos multimédia, perguntas, testes, jogos e muito mais. A atividade do H5P permite que o H5P seja carregado e adicionado a uma disciplina.
 
 Qualquer tentativa de responder a perguntas é avaliada automaticamente e a nota é registada na pauta.';
 $string['modulenameplural'] = 'H5P';
@@ -105,7 +105,7 @@ $string['pluginname'] = 'H5P';
 $string['previewmode'] = 'Este conteúdo está a ser exibido no modo de visualização. Nenhuma monitorização da tentativa será armazenada.';
 $string['privacy:metadata:attempt'] = 'O número da tentativa';
 $string['privacy:metadata:rawscore'] = 'A pontuação obtida';
-$string['privacy:metadata:timecreated'] = 'A hora em que o elemento monitorizado foi criado';
+$string['privacy:metadata:timecreated'] = 'Data e hora em que o elemento monitorizado foi criado';
 $string['privacy:metadata:timemodified'] = 'A última vez que o elemento foi monitorizado';
 $string['privacy:metadata:userid'] = 'O ID do utilizador que acedeu à atividade H5P';
 $string['privacy:metadata:xapi_track'] = 'Informação da monitorização da tentativa';
@@ -130,7 +130,7 @@ $string['score_out_of'] = '{$a->rawscore} em {$a->maxscore}';
 $string['startdate'] = 'Data/hora de início';
 $string['statement_received'] = 'Declaração xAPI recebida';
 $string['totalscore'] = 'Pontuação total';
-$string['tracking_messages'] = 'Alguns H5P fornecem dados da monitorização de tentativas para relatórios avançados, como por exemplo, número de tentativas, respostas e notas. Nota: Alguns H5P não fornecem dados da monitorização de tentativas. Nesses casos, as configurações abaixo não terão efeito.';
+$string['tracking_messages'] = 'Alguns H5P fornecem dados da monitorização das tentativas para relatórios avançados, como por exemplo, número de tentativas, respostas e notas. Nota: Alguns H5P não fornecem dados da monitorização das tentativas. Nesses casos, as configurações abaixo não terão efeito.';
 $string['true'] = 'Verdadeiro';
 $string['usecontentbank'] = 'Usar o <a href="{$a}" target="_blank">banco de conteúdos</a> para gerir os seus ficheiros H5P (abre numa nova janela)';
 $string['view'] = 'Visualizar';

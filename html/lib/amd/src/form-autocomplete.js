@@ -96,7 +96,8 @@ function($, log, str, templates, notification, LoadingIcon, Aria) {
             }
         }
 
-        var activeValue = selectionRegion.attr('data-active-value');
+        // Ensure we are creating a properly formed selector based on the active value.
+        var activeValue = selectionRegion.attr('data-active-value')?.replace(/"/g, '\\"');
         return selectionRegion.find('[data-value="' + activeValue + '"]');
     };
 
@@ -1098,10 +1099,16 @@ function($, log, str, templates, notification, LoadingIcon, Aria) {
                 return false;
             }
 
-            Aria.hide(originalSelect.get());
-            originalSelect.css('visibility', 'hidden');
+            // Ensure we enhance the element only once.
+            if (originalSelect.data('enhanced') === 'enhanced') {
+                M.util.js_complete(pendingKey);
+                return false;
+            }
+            originalSelect.data('enhanced', 'enhanced');
 
             // Hide the original select.
+            Aria.hide(originalSelect.get());
+            originalSelect.css('visibility', 'hidden');
 
             // Find or generate some ids.
             var state = {

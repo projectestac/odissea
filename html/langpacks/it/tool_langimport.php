@@ -49,6 +49,7 @@ $string['nolangupdateneeded'] = 'Tutti i language pack sono aggiornati, non sono
 $string['pluginname'] = 'Language pack';
 $string['privacy:metadata'] = 'Il plugin "Language pack" non memorizza dati personali.';
 $string['purgestringcaches'] = 'Svuota la cache delle stringhe';
+$string['search'] = 'Cerca language pack disponibili';
 $string['selectlangs'] = 'Selezionare i language pack da rimuovere';
 $string['uninstall'] = 'Rimuovi i language pack selezionati';
 $string['uninstallconfirm'] = 'Stai per rimuovere i seguenti language pack <strong>{$a}</strong>. Sei sicuro ?';

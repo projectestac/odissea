@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['admin_bookmarks:addinstance'] = 'Adicionar um novo bloco de Marcadores do administrador';
-$string['admin_bookmarks:myaddinstance'] = 'Adicionar um novo bloco de Marcadores do administrador ao Painel do utilizador';
+$string['admin_bookmarks:addinstance'] = 'Adicionar um novo bloco Marcadores do administrador';
+$string['admin_bookmarks:myaddinstance'] = 'Adicionar um novo bloco Marcadores do administrador ao Painel do utilizador';
 $string['pluginname'] = 'Marcadores do administrador';
 $string['privacy:metadata'] = 'O bloco Marcadores do administrador apenas mostra dados armazenados noutros locais.';

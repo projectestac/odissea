@@ -173,6 +173,7 @@ $string['required'] = 'Vereist';
 $string['requiredcapability'] = 'Vereiste mogelijkheid';
 $string['requiredcapability_help'] = 'Indien ingesteld kunnen enkel gebruikers met de vereiste mogelijkheid de service gebruiken.';
 $string['requiredcaps'] = 'Vereiste mogelijkheden';
+$string['resettokencomplete'] = 'Het geselecteerde token is opnieuw ingesteld';
 $string['resettokenconfirm'] = 'Wil je echt de webservice sleutel voor <strong>{$a->user}</strong> op de service <strong>{$a->service}</strong> recetten?';
 $string['resettokenconfirmsimple'] = 'Wil je echt deze sleutel resetten? Alle bewaarde links waarin de oude sleutel zit zullen niet meer werken.';
 $string['response'] = 'Antwoord';

@@ -405,6 +405,12 @@ class assign_feedback_editpdf extends assign_feedback_plugin {
             list($gradeids, $params) = $DB->get_in_or_equal(array_keys($grades), SQL_PARAMS_NAMED);
             $DB->delete_records_select('assignfeedback_editpdf_annot', 'gradeid ' . $gradeids, $params);
             $DB->delete_records_select('assignfeedback_editpdf_cmnt', 'gradeid ' . $gradeids, $params);
+
+            // XTEC ************ AFEGIT - Remove records in table assignfeedback_editpdf_rot during course reset (MDL-69570)
+            // 2021.12.16 @aginard
+            $DB->delete_records_select('assignfeedback_editpdf_rot', 'gradeid ' . $gradeids, $params);
+            //************ FI
+
         }
         return true;
     }

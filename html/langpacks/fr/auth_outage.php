@@ -26,5 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['datetimeformat'] = '%a %d %h %Y à %H:%M';
+$string['infofrom'] = 'À partir de :';
+$string['infountil'] = 'Jusqu\'à :';
 $string['messageoutageongoing'] = 'De retour en ligne à {$a->stop}.';
 $string['messageoutagewarning'] = 'Fermeture du service dans {{countdown}}';

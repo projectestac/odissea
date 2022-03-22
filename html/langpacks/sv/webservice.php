@@ -168,6 +168,7 @@ $string['required'] = 'Obligatorisk';
 $string['requiredcapability'] = 'Funktionsbehörighet som krävs';
 $string['requiredcapability_help'] = 'Om specificerad kan endast användare med den angivna funktionsbehörigheten använda tjänsten.';
 $string['requiredcaps'] = 'Nödvändiga funktionsbehörigheter';
+$string['resettokencomplete'] = 'Det valda tokenet återställdes';
 $string['resettokenconfirm'] = 'Vill du verkligen återställa den här webbtjänstnyckeln för <strong>{$a->user}</strong> för tjänsten <strong>{$a->service}</strong>?';
 $string['resettokenconfirmsimple'] = 'Vill du verkligen återställa den här nyckeln? Alla sparade länkar som innehåller den gamla nyckeln kommer inte längre fungera.';
 $string['response'] = 'Svar';

@@ -29,7 +29,7 @@ $string['addrule'] = 'Gehitu arau berria';
 $string['allevents'] = 'Ekitaldi guztiak';
 $string['allmodules'] = 'Instantzia guztiak';
 $string['area'] = 'Eremua';
-$string['areatomonitor'] = 'Kontrolatzeko eremua';
+$string['areatomonitor'] = 'Jarraitu beharreko eremua';
 $string['cachedef_eventsubscriptions'] = 'Honek banakako ikastaroetako ekitaldi-harpidetzen zerrenda biltzen du';
 $string['contactadmin'] = 'Jarri harremanetan kudeatzailearekin gaitzeko.';
 $string['core'] = 'Sistema';
@@ -41,8 +41,8 @@ $string['description'] = 'Deskribapena:';
 $string['disablefieldswarning'] = 'Eremu batzuk ezin dira editatu arau honek dagoeneko harpidetzak dituelako.';
 $string['duplicaterule'] = 'Bikoiztu araua';
 $string['editrule'] = 'Editatu araua';
-$string['enablehelp'] = 'Gaitu/desgaitu ekitaldi-kontrola';
-$string['enablehelp_help'] = 'Ekitaldi-kontrola gaitu behar da arauak sortu eta harpidetzak egin baino lehen. Kontuan izan Ekitaldi-kontrola gaitzeak zure guneko errendimenduan eragina izan dezakeela.';
+$string['enablehelp'] = 'Gaitu/desgaitu gertaeren jarraipena';
+$string['enablehelp_help'] = 'Gertaeren jarraipena gaitu behar da arauak sortu eta horietara harpidetu baino lehen. Kontuan izan Gertaeren jarraipena gaitzeak zure guneko errendimenduan eragina izan dezakeela.';
 $string['errorincorrectevent'] = 'Mesedez aukeratu hautatutako pluginarekin lotutako ekitaldi bat';
 $string['event'] = 'Ekitaldia';
 $string['eventnotfound'] = 'Ez da ekitaldia aurkitu';
@@ -58,28 +58,28 @@ $string['frequency_help'] = 'Zehaztutako denbora-tartean gertatu beharreko ekita
 $string['inminutes'] = 'minututan';
 $string['invalidmodule'] = 'Modulu baliogabea';
 $string['manage'] = 'Kudeatu';
-$string['managerules'] = 'Ekitaldi-kontrolerako arauak';
+$string['managerules'] = 'Gertaeren jarraipen-arauak';
 $string['manageruleslink'] = 'Arauak {$a} orritik kudea ditzakezu.';
-$string['managesubscriptions'] = 'Ekitaldi-kontrola';
+$string['managesubscriptions'] = 'Gertaeren jarraipena';
 $string['managesubscriptionslink'] = 'Arauetara harpidetu ahal zara {$a} orritik.';
 $string['messageprovider:notification'] = 'Arau-harpidetzen jakinarazpenak';
 $string['messagetemplate'] = 'Jakinarazpen-mezua';
 $string['messagetemplate_help'] = 'Harpidedunei jakinarazpen-mezua bidaltzen zaie behin jakinarazpen atalasea gainditzen denean. Mezuan hurrengo hitz-gakoan erabil daitezke:
 
-* Ekitaldiaren kokapenaren esteka {link}
-* Kontrolatutako eremuaren esteka {modulelink}
+* Gertaeraren kokapenaren esteka {link}
+* Jarraitutako eremuaren esteka {modulelink}
 * Arauaren izena {rulename}
 * Deskribapena {description}
-* Ekitaldia {eventname}';
+* Gertaera {eventname}';
 $string['moduleinstance'] = 'Instantzia';
-$string['monitor:managerules'] = 'Kudeatu ekitaldi-kontrolerako arauak';
-$string['monitor:managetool'] = 'Gaitu/desgaitu ekitaldi-kontrola';
-$string['monitor:subscribe'] = 'Harpidetu ekitaldi-kontrolerako arauetara';
-$string['monitordisabled'] = 'Ekitaldi-kontrola une honetan desgaituta dago.';
-$string['monitorenabled'] = 'Ekitaldi-kontrola une honetan gaituta dago.';
-$string['norules'] = 'Ez dago ekitaldi-kontrolerako araurik';
-$string['pluginname'] = 'Ekitaldi-monitorea';
-$string['privacy:createdrules'] = 'Norberak sortutako ekitaldi-kontrolerako arauak';
+$string['monitor:managerules'] = 'Kudeatu gertaeren jarraipen-arauak';
+$string['monitor:managetool'] = 'Gaitu/desgaitu gertaeren jarraipena';
+$string['monitor:subscribe'] = 'Harpidetu gertaeren jarraipen-arauetara';
+$string['monitordisabled'] = 'Gertaeren jarraipena desgaituta dago une honetan.';
+$string['monitorenabled'] = 'Gertaeren jarraipena gaituta dago une honetan.';
+$string['norules'] = 'Ez dago gertaeren jarraipen-araurik';
+$string['pluginname'] = 'Gertaeren jarraipena';
+$string['privacy:createdrules'] = 'Nik sortutako gertaeren jarraipen-arauak';
 $string['privacy:metadata:description'] = 'Arauaren deskribapena';
 $string['privacy:metadata:eventname'] = 'Ekitaldiaren izen osoa';
 $string['privacy:metadata:frequency'] = 'Jakinarazpenen maiztasuna';
@@ -89,7 +89,7 @@ $string['privacy:metadata:lastnotificationsent'] = 'Harpidetza honentzat bidalit
 $string['privacy:metadata:messagesummary'] = 'Jakinarazpenak mezularitza-sistemara bidaltzen dira.';
 $string['privacy:metadata:name'] = 'Arauaren izena';
 $string['privacy:metadata:plugin'] = 'Pluginaren Frankenstyle izena';
-$string['privacy:metadata:rulessummary'] = 'Hemen ekitaldi-kontrolerako arauak gordetzen dira.';
+$string['privacy:metadata:rulessummary'] = 'Hemen gertaeren jarraipen-arauak gordetzen dira.';
 $string['privacy:metadata:subscriptionssummary'] = 'Arauetarako erabiltzaileen harpidetzak gordetzen dira.';
 $string['privacy:metadata:template'] = 'Mezuen txantiloia';
 $string['privacy:metadata:timecreatedrule'] = 'Arau hau noiz sortu zen';
@@ -100,7 +100,7 @@ $string['privacy:metadata:timewindow'] = 'Denbora-tartea (segundoetan)';
 $string['privacy:metadata:userid'] = 'Araua sortu zuen erabiltzailearen IDa.';
 $string['privacy:metadata:useridhistory'] = 'Jakinarazpen hau bidali zitzaion erabiltzailearen IDa';
 $string['privacy:metadata:useridsub'] = 'Harpidedunaren IDa.';
-$string['privacy:subscriptions'] = 'Nire ekitaldi-kontrolerako arauen harpidetzak';
+$string['privacy:subscriptions'] = 'Nire gertaeren jarraipen-arauen harpidetzak';
 $string['processevents'] = 'Prozesatu ekitaldiak';
 $string['ruleareyousure'] = 'Ziur zaude "{$a}" araua ezabatu nahi duzula?';
 $string['ruleareyousureextra'] = '{$a} harpidedun daude ezabatuko den arau honetara harpidetuta daudenak.';
@@ -121,5 +121,5 @@ $string['subhelp'] = 'Harpidetzaren xehetasunak';
 $string['subhelp_help'] = 'Harpidetza honek \'{$a->moduleinstance}\'(e)ko \'{$a->eventname}\' ekitaldia {$a->minutes} minututan {$a->frequency} aldiz exekutatu den entzuten du.';
 $string['subscribeto'] = 'Harpidetu "{$a}" araura';
 $string['taskchecksubscriptions'] = 'Aktibatu/desaktibatu harpidetza-arau baliogabeak';
-$string['taskcleanevents'] = 'Ezabatu ekitaldi-kontrolaren ekitaldiak';
+$string['taskcleanevents'] = 'Ezabatu gertaeren jarraipen-ekitaldiak';
 $string['unsubscribe'] = 'Kendu harpidetza';

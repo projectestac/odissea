@@ -76,7 +76,7 @@ $string['archiveconfirm'] = 'Ezabatu eta mantendu emandako dominak';
 $string['archivehelp'] = '<p>Aukera honen bidez domina "baztertuta" bezala markatuko da eta aurrerantzean ez da dominen zerrendan agertuko. Erabiltzaileek ezingo dute domina hau gehiago eskuratu, baina domina aurretik jaso dutenek euren profilean domina hau ikusi eta kanpo-motxiletara gehitzeko aukera izaten jarraituko dute.</p>
 <p>Erabiltzaileek euren dominetara sarbidea izaten jarraitzea nahi izanez gero aukera hau hautatzea garrantzitsua da, domina guztiz ezabatu beharrean</p>';
 $string['attachment'] = 'Erantsi domina mezuari';
-$string['attachment_help'] = 'Gaituz gero, jasotzailearen e-mailari domina jaisteko moduan erantsiko zaio. (Eranskinek gaituta egon behar dute hemen aukera hau erabiltzeko: Gunearen kudeaketa > Pluginak > Irteerako mezuak > Posta elektronikoa)';
+$string['attachment_help'] = 'Gaituz gero, jasotzailearen e-mailari domina jaisteko moduan erantsiko zaio. (Eranskinek gaituta egon behar dute hemen aukera hau erabiltzeko: Gunearen kudeaketa > Zerbitzaria > Posta elektronikoa > Kanporako posta elektronikoaren ezarpenak)';
 $string['award'] = 'Eman domina';
 $string['awardedtoyou'] = 'Niri emandakoa';
 $string['awardoncron'] = 'Dominetarako sarbidea modu egokian gaitu da. Erabiltzaile askok irabaz dezakete aldi berean domina hau. Gunea behar bezala ibiltzeko, ekintza hau prozesatzeko denbora-tartetxo bat beharko da.';
@@ -287,7 +287,7 @@ $string['endorsement'] = 'Onarpena';
 $string['error:backpackdatainvalid'] = 'Motxilak itzulitako datuak ez dira egokiak.';
 $string['error:backpackemailnotfound'] = '\'{$a}\' helbide elektronikoa ez dago inongo motxilarekin lotuta. <a href="http://backpack.openbadges.org"> motxila bat sortu behar duzu</a> kontu horretarako edo saioa beste helbide elektroniko batekin hasi.';
 $string['error:backpacknotavailable'] = 'Zure gunea ez dago internet bidez eskuragarri eta, beraz, gune honetan emandako edozein domina kanpoko motxila-zerbitzuek ezin izango dute egiaztatu.';
-$string['error:backpackproblem'] = 'Arazo bat dago zure motxila-zerbitzu hornitzailearekin konektatzeko. Mesedez, saiatu berriz geroxeago.';
+$string['error:backpackproblem'] = 'Arazo bat dago zure motxila-zerbitzu hornitzailearekin konektatzeko. Mesedez, saiatu zaitez berriro beranduago.';
 $string['error:badgeawardnotfound'] = 'Ezin da emandako domina hau egiaztatu. Baliteke domina hau kendu izana.';
 $string['error:badgenotfound'] = 'Domina ez da aurkitu';
 $string['error:cannotact'] = 'Ezin da domina aktibatu.';

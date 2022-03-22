@@ -168,6 +168,7 @@ $string['required'] = 'Requerido';
 $string['requiredcapability'] = 'Permiso necesario';
 $string['requiredcapability_help'] = 'Si se activa la opción, sólo los usuarios con los permisos requeridos pueden acceder al servicio.';
 $string['requiredcaps'] = 'Permisos requeridos';
+$string['resettokencomplete'] = 'El token seleccionado fue reiniciado';
 $string['resettokenconfirm'] = '¿Realmente desea reiniciar esta clave de servicio para <strong>{$a->user}</strong> en el servicio <strong>{$a->service}</strong>?';
 $string['resettokenconfirmsimple'] = '¿Confirma que desea restaurar esta clave? Cualquier enlace guardado que contenga la clave anterior no volverá a funcionar.';
 $string['response'] = 'Respuesta';

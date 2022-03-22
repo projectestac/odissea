@@ -26,15 +26,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventactivityreportviewed'] = 'Informe de actividad visto';
-$string['eventoutlinereportviewed'] = 'Informe de esquema visualizado';
+$string['eventoutlinereportviewed'] = 'Informe preliminar visualizado';
 $string['neverseen'] = 'Nunca visto';
-$string['nocapability'] = 'No se puede acceder al informe de esquema de usuario';
+$string['nocapability'] = 'No se puede acceder al Informe preliminar de usuario';
 $string['nologreaderenabled'] = 'No hay lector de registros habilitado';
 $string['numviews'] = '{$a->numviews} visualizaciones por {$a->distinctusers} usuarios';
 $string['outline:view'] = 'Ver informe de actividad del curso';
 $string['outline:viewuserreport'] = 'Ver informe de actividad de usuario';
-$string['page-report-outline-index'] = '';
-$string['page-report-outline-user'] = 'Informe de esquema de curso de usuario';
-$string['page-report-outline-x'] = 'Cualquier informe de esquema';
+$string['page-report-outline-index'] = 'Informe preliminar de curso';
+$string['page-report-outline-user'] = 'Informe preliminar de curso de usuario';
+$string['page-report-outline-x'] = 'Cualquier Informe preliminar';
 $string['pluginname'] = 'Actividad del curso';
 $string['privacy:metadata'] = 'El complemento de informe de actividad no almacena ningún dato personal.';

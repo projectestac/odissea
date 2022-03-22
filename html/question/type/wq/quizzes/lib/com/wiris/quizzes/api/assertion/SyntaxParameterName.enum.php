@@ -5,6 +5,7 @@ class com_wiris_quizzes_api_assertion_SyntaxParameterName extends Enum {
 	public static $DECIMAL_SEPARATORS;
 	public static $DIGIT_GROUP_SEPARATORS;
 	public static $FUNCTIONS;
+	public static $GRAPH_MODE;
 	public static $GROUP_OPERATORS;
 	public static $INTERVALS;
 	public static $ITEM_SEPARATORS;
@@ -15,12 +16,13 @@ class com_wiris_quizzes_api_assertion_SyntaxParameterName extends Enum {
 	public static $SCIENTIFIC_NOTATION;
 	public static $UNITS;
 	public static $UNIT_PREFIXES;
-	public static $__constructors = array(0 => 'CONSTANTS', 8 => 'DECIMAL_SEPARATORS', 9 => 'DIGIT_GROUP_SEPARATORS', 1 => 'FUNCTIONS', 2 => 'GROUP_OPERATORS', 11 => 'INTERVALS', 7 => 'ITEM_SEPARATORS', 3 => 'LIST_OPERATORS', 6 => 'MIXED_FRACTIONS', 10 => 'NO_BRACKETS_LIST', 12 => 'RATIO', 13 => 'SCIENTIFIC_NOTATION', 4 => 'UNITS', 5 => 'UNIT_PREFIXES');
+	public static $__constructors = array(0 => 'CONSTANTS', 8 => 'DECIMAL_SEPARATORS', 9 => 'DIGIT_GROUP_SEPARATORS', 1 => 'FUNCTIONS', 14 => 'GRAPH_MODE', 2 => 'GROUP_OPERATORS', 11 => 'INTERVALS', 7 => 'ITEM_SEPARATORS', 3 => 'LIST_OPERATORS', 6 => 'MIXED_FRACTIONS', 10 => 'NO_BRACKETS_LIST', 12 => 'RATIO', 13 => 'SCIENTIFIC_NOTATION', 4 => 'UNITS', 5 => 'UNIT_PREFIXES');
 	}
 com_wiris_quizzes_api_assertion_SyntaxParameterName::$CONSTANTS = new com_wiris_quizzes_api_assertion_SyntaxParameterName("CONSTANTS", 0);
 com_wiris_quizzes_api_assertion_SyntaxParameterName::$DECIMAL_SEPARATORS = new com_wiris_quizzes_api_assertion_SyntaxParameterName("DECIMAL_SEPARATORS", 8);
 com_wiris_quizzes_api_assertion_SyntaxParameterName::$DIGIT_GROUP_SEPARATORS = new com_wiris_quizzes_api_assertion_SyntaxParameterName("DIGIT_GROUP_SEPARATORS", 9);
 com_wiris_quizzes_api_assertion_SyntaxParameterName::$FUNCTIONS = new com_wiris_quizzes_api_assertion_SyntaxParameterName("FUNCTIONS", 1);
+com_wiris_quizzes_api_assertion_SyntaxParameterName::$GRAPH_MODE = new com_wiris_quizzes_api_assertion_SyntaxParameterName("GRAPH_MODE", 14);
 com_wiris_quizzes_api_assertion_SyntaxParameterName::$GROUP_OPERATORS = new com_wiris_quizzes_api_assertion_SyntaxParameterName("GROUP_OPERATORS", 2);
 com_wiris_quizzes_api_assertion_SyntaxParameterName::$INTERVALS = new com_wiris_quizzes_api_assertion_SyntaxParameterName("INTERVALS", 11);
 com_wiris_quizzes_api_assertion_SyntaxParameterName::$ITEM_SEPARATORS = new com_wiris_quizzes_api_assertion_SyntaxParameterName("ITEM_SEPARATORS", 7);

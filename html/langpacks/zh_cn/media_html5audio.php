@@ -26,3 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'HTML5音频';
+$string['pluginname_help'] = '由浏览器自带的音频播放器播放的音频文件。（格式支持取决于浏览器。）';
+$string['privacy:metadata'] = 'HTML5音频媒体插件不存储任何个人数据。';

@@ -110,7 +110,7 @@ $string['pathmatch_help'] = 'この値に合致するURLのページ上にツア
 * /mod/forum/view.php% - フォーラムディスカッション一覧に合致します。
 * /user/profile.php% - ユーザプロファイルページに合致します。
 
-あなたがツアーをサイトホームページに表示したい場合、次の値を使用できます:  FRONTPAGE';
+あなたがツアーをサイトホームに表示したい場合、次の値を使用できます:  FRONTPAGE';
 $string['pausetour'] = '一時停止';
 $string['placement'] = '配置';
 $string['placement_help'] = 'ステップはターゲットの上下左右に配置できます。モバイル表示に最適に調整されるため上下をお勧めします。

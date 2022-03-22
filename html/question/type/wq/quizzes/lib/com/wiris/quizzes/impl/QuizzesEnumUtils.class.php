@@ -37,6 +37,7 @@ class com_wiris_quizzes_impl_QuizzesEnumUtils {
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$syntaxParameterNames->set(com_wiris_quizzes_impl_Assertion::$PARAM_INTERVALS, com_wiris_quizzes_api_assertion_SyntaxParameterName::$INTERVALS);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$syntaxParameterNames->set(com_wiris_quizzes_impl_Assertion::$PARAM_RATIO, com_wiris_quizzes_api_assertion_SyntaxParameterName::$RATIO);
 			com_wiris_quizzes_impl_QuizzesEnumUtils::$syntaxParameterNames->set(com_wiris_quizzes_impl_Assertion::$PARAM_SCIENTIFIC_NOTATION, com_wiris_quizzes_api_assertion_SyntaxParameterName::$SCIENTIFIC_NOTATION);
+			com_wiris_quizzes_impl_QuizzesEnumUtils::$syntaxParameterNames->set(com_wiris_quizzes_impl_Assertion::$PARAM_GRAPH_MODE, com_wiris_quizzes_api_assertion_SyntaxParameterName::$GRAPH_MODE);
 		}
 		return com_wiris_quizzes_impl_QuizzesEnumUtils::$syntaxParameterNames;
 	}

@@ -26,6 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['globalsearch:addinstance'] = 'Adicionar novo bloco de pesquisa global';
-$string['globalsearch:myaddinstance'] = 'Adicionar um novo bloco de pesquisa global ao Painel do utilizador';
+$string['globalsearch:myaddinstance'] = 'Adicionar um novo bloco Pesquisa global ao Painel do utilizador';
 $string['pluginname'] = 'Pesquisa global';
 $string['privacy:metadata'] = 'O bloco Pesquisa global apenas mostra dados armazenados noutros locais.';

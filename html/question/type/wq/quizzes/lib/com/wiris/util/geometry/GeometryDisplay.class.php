@@ -130,10 +130,6 @@ class com_wiris_util_geometry_GeometryDisplay {
 	static $BELOW = "below";
 	static $LEFT = "left";
 	static $NONE = "none";
-	static $CENTERED = "centered";
-	static $BASELINE = "baseline";
-	static $TOP = "top";
-	static $BOTTOM = "bottom";
 	static $AUTO = "auto";
 	static $DELETE_ON_UPDATE_FILE = "delete_on_update_file";
 	static $EXTERNAL = "external";

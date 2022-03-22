@@ -46,4 +46,4 @@ $string['privacy:metadata:textpurpose'] = 'Zereginaren saiakera honetan bidalita
 $string['privacy:path'] = 'Bidalketaren Testua';
 $string['wordlimit'] = 'Gehieneko hitz-kopurua';
 $string['wordlimit_help'] = 'On-line testuen bidalketa gaituta badago, hau da ikasle bakoitzak bidali ahal izango duen gehieneko hitz-kopurua.';
-$string['wordlimitexceeded'] = 'Zeregin honetarako gehieneko hitz-kopurua {$a->limit} da eta zu {$a->count} hitz bidaltzen saiatzen ari zara. Mesedez, alda ezazu zure bidalketa eta ondoren saiatu berriz.';
+$string['wordlimitexceeded'] = 'Zeregin honetarako gehieneko hitz-kopurua {$a->limit} da eta zu {$a->count} hitz bidaltzen saiatzen ari zara. Mesedez, alda ezazu zure bidalketa eta ondoren saiatu berriro.';

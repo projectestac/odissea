@@ -411,7 +411,8 @@ class api {
         $course = new lang_string('course');
         $modules = new lang_string('managemodules');
         $blocks = new lang_string('blocks');
-        $user = new lang_string('user');
+        $useraccount = new lang_string('useraccount');
+        $participants = new lang_string('participants');
         $files = new lang_string('files');
         $remoteaddons = new lang_string('remoteaddons', 'tool_mobile');
         $identityproviders = new lang_string('oauth2identityproviders', 'tool_mobile');
@@ -419,8 +420,8 @@ class api {
         $availablemods = core_plugin_manager::instance()->get_plugins_of_type('mod');
         $coursemodules = array();
         $appsupportedmodules = array(
-            'assign', 'book', 'chat', 'choice', 'data', 'feedback', 'folder', 'forum', 'glossary', 'h5pactivity', 'imscp',
-            'label', 'lesson', 'lti', 'page', 'quiz', 'resource', 'scorm', 'survey', 'url', 'wiki', 'workshop');
+            'assign', 'bigbluebuttonbn', 'book', 'chat', 'choice', 'data', 'feedback', 'folder', 'forum', 'glossary', 'h5pactivity',
+            'imscp', 'label', 'lesson', 'lti', 'page', 'quiz', 'resource', 'scorm', 'survey', 'url', 'wiki', 'workshop');
 
         foreach ($availablemods as $mod) {
             if (in_array($mod->name, $appsupportedmodules)) {
@@ -445,6 +446,7 @@ class api {
             'activity_results' => 'CoreBlockDelegate_AddonBlockActivityResults',
             'site_main_menu' => 'CoreBlockDelegate_AddonBlockSiteMainMenu',
             'myoverview' => 'CoreBlockDelegate_AddonBlockMyOverview',
+            'course_list' => 'CoreBlockDelegate_AddonBlockCourseList',
             'timeline' => 'CoreBlockDelegate_AddonBlockTimeline',
             'recentlyaccessedcourses' => 'CoreBlockDelegate_AddonBlockRecentlyAccessedCourses',
             'starredcourses' => 'CoreBlockDelegate_AddonBlockStarredCourses',
@@ -463,6 +465,9 @@ class api {
             'lp' => 'CoreBlockDelegate_AddonBlockLp',
             'news_items' => 'CoreBlockDelegate_AddonBlockNewsItems',
             'online_users' => 'CoreBlockDelegate_AddonBlockOnlineUsers',
+            'private_files' => 'CoreBlockDelegate_AddonBlockPrivateFiles',
+            'recent_activity' => 'CoreBlockDelegate_AddonBlockRecentActivity',
+            'rss_client' => 'CoreBlockDelegate_AddonBlockRssClient',
             'selfcompletion' => 'CoreBlockDelegate_AddonBlockSelfCompletion',
             'tags' => 'CoreBlockDelegate_AddonBlockTags',
         );
@@ -490,42 +495,43 @@ class api {
             ),
             "$mainmenu" => array(
                 '$mmSideMenuDelegate_mmaFrontpage' => new lang_string('sitehome'),
-                '$mmSideMenuDelegate_mmCourses' => new lang_string('mycourses'),
                 'CoreMainMenuDelegate_CoreCoursesDashboard' => new lang_string('myhome'),
-                '$mmSideMenuDelegate_mmaCalendar' => new lang_string('calendar', 'calendar'),
-                '$mmSideMenuDelegate_mmaNotifications' => new lang_string('notifications', 'message'),
+                '$mmSideMenuDelegate_mmCourses' => new lang_string('mycourses'),
                 '$mmSideMenuDelegate_mmaMessages' => new lang_string('messages', 'message'),
-                '$mmSideMenuDelegate_mmaGrades' => new lang_string('grades', 'grades'),
-                '$mmSideMenuDelegate_mmaCompetency' => new lang_string('myplans', 'tool_lp'),
+                '$mmSideMenuDelegate_mmaNotifications' => new lang_string('notifications', 'message'),
+                '$mmSideMenuDelegate_mmaCalendar' => new lang_string('calendar', 'calendar'),
                 'CoreMainMenuDelegate_AddonBlog' => new lang_string('blog', 'blog'),
-                '$mmSideMenuDelegate_mmaFiles' => new lang_string('files'),
                 'CoreMainMenuDelegate_CoreTag' => new lang_string('tags'),
-                '$mmSideMenuDelegate_website' => new lang_string('webpage'),
-                '$mmSideMenuDelegate_help' => new lang_string('help'),
                 'CoreMainMenuDelegate_QrReader' => new lang_string('scanqrcode', 'tool_mobile'),
             ),
+            "$useraccount" => array(
+                '$mmSideMenuDelegate_mmaGrades' => new lang_string('grades', 'grades'),
+                '$mmSideMenuDelegate_mmaFiles' => new lang_string('files'),
+                'CoreUserDelegate_AddonBadges:account' => new lang_string('badges', 'badges'),
+                'CoreUserDelegate_AddonBlog:account' => new lang_string('blog', 'blog'),
+                '$mmSideMenuDelegate_mmaCompetency' => new lang_string('myplans', 'tool_lp'),
+                'NoDelegate_SwitchAccount' => new lang_string('switchaccount', 'tool_mobile'),
+            ),
             "$course" => array(
+                '$mmCoursesDelegate_mmaParticipants' => new lang_string('participants'),
+                '$mmCoursesDelegate_mmaGrades' => new lang_string('grades', 'grades'),
+                '$mmCoursesDelegate_mmaCompetency' => new lang_string('competencies', 'competency'),
+                '$mmCoursesDelegate_mmaNotes' => new lang_string('notes', 'notes'),
+                '$mmCoursesDelegate_mmaCourseCompletion' => new lang_string('coursecompletion', 'completion'),
                 'NoDelegate_CourseBlocks' => new lang_string('blocks'),
                 'CoreCourseOptionsDelegate_AddonBlog' => new lang_string('blog', 'blog'),
                 '$mmCoursesDelegate_search' => new lang_string('search'),
-                '$mmCoursesDelegate_mmaCompetency' => new lang_string('competencies', 'competency'),
-                '$mmCoursesDelegate_mmaParticipants' => new lang_string('participants'),
-                '$mmCoursesDelegate_mmaGrades' => new lang_string('grades', 'grades'),
-                '$mmCoursesDelegate_mmaCourseCompletion' => new lang_string('coursecompletion', 'completion'),
-                '$mmCoursesDelegate_mmaNotes' => new lang_string('notes', 'notes'),
                 'NoDelegate_CoreCourseDownload' => new lang_string('downloadcourse', 'tool_mobile'),
                 'NoDelegate_CoreCoursesDownload' => new lang_string('downloadcourses', 'tool_mobile'),
             ),
-            "$user" => array(
-                'CoreUserDelegate_AddonBlog:blogs' => new lang_string('blog', 'blog'),
-                '$mmUserDelegate_mmaBadges' => new lang_string('badges', 'badges'),
-                '$mmUserDelegate_mmaCompetency:learningPlan' => new lang_string('competencies', 'competency'),
-                '$mmUserDelegate_mmaCourseCompletion:viewCompletion' => new lang_string('coursecompletion', 'completion'),
+            "$participants" => array(
                 '$mmUserDelegate_mmaGrades:viewGrades' => new lang_string('grades', 'grades'),
+                '$mmUserDelegate_mmaCourseCompletion:viewCompletion' => new lang_string('coursecompletion', 'completion'),
+                '$mmUserDelegate_mmaBadges' => new lang_string('badges', 'badges'),
+                '$mmUserDelegate_mmaNotes:addNote' => new lang_string('notes', 'notes'),
+                'CoreUserDelegate_AddonBlog:blogs' => new lang_string('blog', 'blog'),
+                '$mmUserDelegate_mmaCompetency:learningPlan' => new lang_string('competencies', 'competency'),
                 '$mmUserDelegate_mmaMessages:sendMessage' => new lang_string('sendmessage', 'message'),
-                '$mmUserDelegate_mmaMessages:addContact' => new lang_string('addcontact', 'message'),
-                '$mmUserDelegate_mmaMessages:blockContact' => new lang_string('blockcontact', 'message'),
-                '$mmUserDelegate_mmaNotes:addNote' => new lang_string('addnewnote', 'notes'),
                 '$mmUserDelegate_picture' => new lang_string('userpic'),
             ),
             "$files" => array(
@@ -588,66 +594,64 @@ class api {
 
         $warnings = array();
 
-        $curl = new curl();
-        // Return certificate information and verify the certificate.
-        $curl->setopt(array('CURLOPT_CERTINFO' => 1, 'CURLOPT_SSL_VERIFYPEER' => true));
-        $httpswwwroot = str_replace('http:', 'https:', $CFG->wwwroot); // Force https url.
-        // Check https using a page not redirecting or returning exceptions.
-        $curl->head($httpswwwroot . "/$CFG->admin/tool/mobile/mobile.webmanifest.php");
-        $info = $curl->get_info();
+        if (is_https()) {
+            $curl = new curl();
+            // Return certificate information and verify the certificate.
+            $curl->setopt(array('CURLOPT_CERTINFO' => 1, 'CURLOPT_SSL_VERIFYPEER' => true));
+            // Check https using a page not redirecting or returning exceptions.
+            $curl->head("$CFG->wwwroot/$CFG->admin/tool/mobile/mobile.webmanifest.php");
+            $info = $curl->get_info();
 
-        // First of all, check the server certificate (if any).
-        if (empty($info['http_code']) or ($info['http_code'] >= 400)) {
-            $warnings[] = ['nohttpsformobilewarning', 'admin'];
-        } else {
             // Check the certificate is not self-signed or has an untrusted-root.
             // This may be weak in some scenarios (when the curl SSL verifier is outdated).
-            if (empty($info['certinfo'])) {
+            if (empty($info['http_code']) || empty($info['certinfo'])) {
                 $warnings[] = ['selfsignedoruntrustedcertificatewarning', 'tool_mobile'];
             } else {
                 $timenow = time();
-                $expectedissuer = null;
-                foreach ($info['certinfo'] as $cert) {
+                $infokeys = array_keys($info['certinfo']);
+                $lastkey = end($infokeys);
+
+                if (count($info['certinfo']) == 1) {
+                    // This will work in a normal browser because it will complete the chain, but not in a mobile app.
+                    $warnings[] = ['invalidcertificatechainwarning', 'tool_mobile'];
+                }
+
+                foreach ($info['certinfo'] as $key => $cert) {
+                    // Convert to lower case the keys, some OS/curl implementations differ.
+                    $cert = array_change_key_case($cert, CASE_LOWER);
 
                     // Due to a bug in certain curl/openssl versions the signature algorithm isn't always correctly parsed.
                     // See https://github.com/curl/curl/issues/3706 for reference.
-                    if (!array_key_exists('Signature Algorithm', $cert)) {
+                    if (!array_key_exists('signature algorithm', $cert)) {
                         // The malformed field that does contain the algorithm we're looking for looks like the following:
                         // <WHITESPACE>Signature Algorithm: <ALGORITHM><CRLF><ALGORITHM>.
-                        preg_match('/\s+Signature Algorithm: (?<algorithm>[^\s]+)/', $cert['Public Key Algorithm'], $matches);
+                        preg_match('/\s+Signature Algorithm: (?<algorithm>[^\s]+)/', $cert['public key algorithm'], $matches);
 
                         $signaturealgorithm = $matches['algorithm'] ?? '';
                     } else {
-                        $signaturealgorithm = $cert['Signature Algorithm'];
+                        $signaturealgorithm = $cert['signature algorithm'];
                     }
 
                     // Check if the signature algorithm is weak (Android won't work with SHA-1).
-                    if ($signaturealgorithm == 'sha1WithRSAEncryption' || $signaturealgorithm == 'sha1WithRSA') {
-                        $warnings[] = ['insecurealgorithmwarning', 'tool_mobile'];
+                    if ($key != $lastkey &&
+                            ($signaturealgorithm == 'sha1WithRSAEncryption' || $signaturealgorithm == 'sha1WithRSA')) {
+                        $warnings['insecurealgorithmwarning'] = ['insecurealgorithmwarning', 'tool_mobile'];
                     }
                     // Check certificate start date.
-                    if (strtotime($cert['Start date']) > $timenow) {
-                        $warnings[] = ['invalidcertificatestartdatewarning', 'tool_mobile'];
+                    if (strtotime($cert['start date']) > $timenow) {
+                        $warnings['invalidcertificatestartdatewarning'] = ['invalidcertificatestartdatewarning', 'tool_mobile'];
                     }
                     // Check certificate end date.
-                    if (strtotime($cert['Expire date']) < $timenow) {
-                        $warnings[] = ['invalidcertificateexpiredatewarning', 'tool_mobile'];
+                    if (strtotime($cert['expire date']) < $timenow) {
+                        $warnings['invalidcertificateexpiredatewarning'] = ['invalidcertificateexpiredatewarning', 'tool_mobile'];
                     }
-                    // Check the chain.
-                    if ($expectedissuer !== null) {
-                        if ($expectedissuer !== $cert['Subject'] || $cert['Subject'] === $cert['Issuer']) {
-                            $warnings[] = ['invalidcertificatechainwarning', 'tool_mobile'];
-                        }
-                    }
-                    $expectedissuer = $cert['Issuer'];
                 }
             }
+        } else {
+            // Warning for non https sites.
+            $warnings[] = ['nohttpsformobilewarning', 'admin'];
         }
-        // Now check typical configuration problems.
-        if ((int) $CFG->userquota === PHP_INT_MAX) {
-            // In old Moodle version was a text so was possible to have numeric values > PHP_INT_MAX.
-            $warnings[] = ['invaliduserquotawarning', 'tool_mobile'];
-        }
+
         // Check ADOdb debug enabled.
         if (get_config('auth_db', 'debugauthdb') || get_config('enrol_database', 'debugdb')) {
             $warnings[] = ['adodbdebugwarning', 'tool_mobile'];

@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = 'تسليم تم رفعه';
 $string['eventassessmentevaluated'] = 'تقييم تم تقييمه';
 $string['eventassessmentevaluationsreset'] = 'تقييمات تقييم تمت إعادة تعيينها';
 $string['eventassessmentreevaluated'] = 'تقييم تمت إعادة تقييمه';
+$string['eventphaseautomaticallyswitched'] = 'طور تم تبديله تلقائيًا';
 $string['eventphaseswitched'] = 'طور تم تحويله';
 $string['eventsubmissionassessed'] = 'تسليم تم تقييمه';
 $string['eventsubmissionassessmentsreset'] = 'تقييمات تسليم تم إخلاؤها';

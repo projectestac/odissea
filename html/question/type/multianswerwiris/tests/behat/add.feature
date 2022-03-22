@@ -30,6 +30,7 @@ Feature: Test creating a Multianswer Wiris (Cloze) question
       | General feedback     | The capital of Germany is #r1.           |
     And I open Wiris Quizzes Studio
     And I click on "Define random variables and functions" "text"
+    And I wait "10" seconds
     And I add the variable "r1" with value "1"
     And I click on "//*[@id='wrsUI_quizzesStudioHomeSaveButton']" "xpath_element"
     And I click on "//*[@id='id_submitbutton']" "xpath_element"
@@ -72,6 +73,7 @@ Feature: Test creating a Multianswer Wiris (Cloze) question
       | Question text | <p>Type -10: {:SA:=\#a}</p> <p>Type 5: {:SA:=5}</p> <p>Choose 5/57: {:MC:=\#b~1~2}</p> <p>Formula #b</p> |
     And I open Wiris Quizzes Studio
     And I click on "Define random variables and functions" "text"
+    And I wait "10" seconds
     And I add the variable "a" with value "-10"
     And I add the variable "b" with value "15/171"
     And I click on "//*[@id='wrsUI_quizzesStudioHomeSaveButton']" "xpath_element"

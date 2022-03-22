@@ -234,7 +234,7 @@ $string['connectionerror'] = 'ネットワークコネクションが切断さ�
 再度接続が確立された場合、あなたの解答は保存されこのメッセージは表示されなくなります。';
 $string['connectionok'] = 'ネットワークコネクションが復元されました。あなたは安全に続けることができます。';
 $string['containercategorycreated'] = 'このカテゴリは以下の原因によりサイトレベルで移動されたすべてのオリジナルカテゴリを保存するため作成されました。';
-$string['continueattemptquiz'] = '前回の受験を続ける';
+$string['continueattemptquiz'] = 'あなたの受験を続ける';
 $string['continuepreview'] = '前回のプレビューを続ける';
 $string['copyingfrom'] = '問題「 {$a} 」のコピーを作成する';
 $string['copyingquestion'] = '問題のコピー';

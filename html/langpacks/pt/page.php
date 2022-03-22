@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis. As configurações existentes não serão alteradas. Pressiona a tecla CTRL para selecionar múltiplas opções.';
+$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis. As configurações existentes não serão alteradas. Mantenha a tecla Ctrl pressionada para selecionar múltiplas opções.';
 $string['content'] = 'Conteúdo da página';
 $string['contentheader'] = 'Conteúdo';
 $string['createpage'] = 'Criar um novo recurso do tipo Página';
@@ -44,9 +44,9 @@ $string['legacyfiles'] = 'Migração de ficheiro de disciplina antiga';
 $string['legacyfilesactive'] = 'Ativo';
 $string['legacyfilesdone'] = 'Terminado';
 $string['modulename'] = 'Página';
-$string['modulename_help'] = 'O recurso Página permite criar uma página Web usando o editor html. A página pode exibir texto, imagens, som, vídeo, hiperligações e código html incorporado, como o Google Maps.
+$string['modulename_help'] = 'O recurso Página permite criar uma página web usando o editor html. A página pode exibir texto, imagens, som, vídeo, hiperligações e código html incorporado, como o Google Maps.
 
-As vantagens de utilizar o recurso página em vez do recurso ficheiro é que a Página pode ser mais fácil de aceder (por exemplo, para utilizadores que acedem a partir de dispostivos móveis) e mais fácil de atualizar.
+As vantagens de utilizar o recurso página em vez do recurso ficheiro é que a Página pode ser mais fácil de aceder (por exemplo, para utilizadores que acedem a partir de dispositivos móveis) e mais fácil de atualizar.
 
 Uma página pode ser utilizada para:
 

@@ -1135,6 +1135,14 @@ tr.flagged-tag a {
     margin-left: 3px;
 }
 
+#page-enrol-otherusers .userenrolment .col_role {
+    .role {
+        float: none;
+        margin: 3px 3px 3px 0;
+        padding: 3px 3px 3px 0;
+    }
+}
+
 .corelightbox {
     background-color: #ccc;
     position: absolute;
@@ -1962,6 +1970,14 @@ ul.badges {
     }
 }
 
+#badge-criteria li li {
+    list-style-type: none;
+}
+
+#badge-image-col {
+    flex: 0 0 400px;
+}
+
 .badge-profile {
     vertical-align: top;
 }
@@ -2355,6 +2371,9 @@ $footer-link-color: $bg-inverse-link-color !default;
         display: block;
         width: 100%;
         color: $body-color;
+        &:focus-visible {
+            outline: 0;
+        }
     }
     &:active,
     &:hover,

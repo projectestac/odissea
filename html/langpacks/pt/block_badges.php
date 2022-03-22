@@ -29,5 +29,5 @@ $string['badges:addinstance'] = 'Adicionar um novo bloco Medalhas recentes';
 $string['badges:myaddinstance'] = 'Adicionar um novo bloco Medalhas recentes ao Painel do utilizador';
 $string['nothingtodisplay'] = 'Não tem medalhas para mostrar';
 $string['numbadgestodisplay'] = 'Número de medalhas recentes a mostrar';
-$string['pluginname'] = 'Minhas Medalhas recentes';
-$string['privacy:metadata'] = 'O bloco Medalhas mostra apenas mostra armazenados noutros locais.';
+$string['pluginname'] = 'Medalhas recentes';
+$string['privacy:metadata'] = 'O bloco Medalhas recentes mostra apenas mostra armazenados noutros locais.';

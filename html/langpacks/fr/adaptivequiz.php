@@ -76,7 +76,6 @@ $string['browsersecurity'] = 'Sécurité du navigateur (fenêtre pop-up)';
 $string['browsersecurity_help'] = 'Si l\'option "Sécurité du navigateur" est sélectionnée, le quiz ne démarrera que si le navigateur de l\'étudiant est compatible avec JavaScript, le quiz apparaît dans une fenêtre qui couvre la totalité de l\'écran, cache toutes les autres fenêtres et ne permet pas de contrôler la navigation. Les étudiants sont, dans la mesure du possible, empêchés d\'utiliser des commandes comme le copier/coller."';
 $string['calcerrorwithinlimits'] = 'Le calcul de l\'erreur standard {$a->calerror} est dans les limites imposées par le quiz {$a->definederror}';
 $string['closeattempt'] = 'Fermer la tentative';
-$string['completeattempterror'] = 'Erreur lors de la validation de la tentative';
 $string['confirmcloseattempt'] = 'Voulez-vous vraiment fermer et finaliser cette tentative de {$a->name} ?';
 $string['confirmcloseattemptscore'] = '{$a->num_questions} questions ont été répondues et le score est actuellement de {$a->measure} {$a->standarderror}.';
 $string['confirmcloseattemptstats'] = 'Cette tentative a été lancée le {$a->started} et sa dernière mise à jour date du {$a->modified}.';

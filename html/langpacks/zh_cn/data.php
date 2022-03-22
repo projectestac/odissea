@@ -46,11 +46,11 @@ $string['autogenallforms'] = '生成所有缺省模板';
 $string['autolinkurl'] = '自动链接 URL';
 $string['availablefromdate'] = '开放时间';
 $string['availabletags'] = '可用的标签';
-$string['availabletags_help'] = '<p align="center"><strong>可用的标签</strong></p>
-<p>标签是模板里的占位符。当条目被编辑或显示时，它们会被替换为字段或按钮。</p>
-<p>字段使用这种格式：[[fieldname]]</p>
-<p>按钮使用这种格式：##somebutton##</p>
-<p>只有在“可用的标签”列表里出现的标签才能被当前模板使用。</p>';
+$string['availabletags_help'] = '标记是模板中的占位符，在编辑或查看条目时，这些占位符将被数据或其他项目（如编辑图标）替换。
+
+字段的格式为[[fieldname]]。所有其他标记的格式均为##sometag##。
+
+只有“可用标记”列表中的标记可用于当前模板。';
 $string['availabletodate'] = '截止时间';
 $string['availabletodatevalidation'] = '可用开始日期不能早于可用开始日期。';
 $string['blank'] = '空白';
@@ -90,7 +90,7 @@ $string['csvfailed'] = '无法从 CSV 文件中读取原始数据';
 $string['csvfile'] = 'CSV 文件';
 $string['csvimport'] = 'CSV 文件导入';
 $string['csvimport_help'] = '可以从文本文件导入数据项。这个文件的第一行是字段名列表，然后每行一条数据记录。';
-$string['csvwithselecteddelimiter'] = '<acronym title="Comma Separated Values">CSV</acronym>用选择的分隔符分割的文本';
+$string['csvwithselecteddelimiter'] = '<abbr title="逗号分隔">CSV</abbr>';
 $string['data:addinstance'] = '添加新数据库';
 $string['data:approve'] = '核准未批准的条目';
 $string['data:comment'] = '撰写评论';
@@ -113,7 +113,7 @@ $string['data:viewrating'] = '查看您收到的总评分';
 $string['data:writeentry'] = '撰写条目';
 $string['date'] = '日期';
 $string['dateentered'] = '输入日期';
-$string['defaultfielddelimiter'] = '(缺省为逗号",")';
+$string['defaultfielddelimiter'] = '(缺省为逗号)';
 $string['defaultfieldenclosure'] = '缺省为空';
 $string['defaultsortfield'] = '缺省排序字段';
 $string['delcheck'] = '批量删除筛选框';
@@ -157,14 +157,12 @@ $string['excel'] = 'Excel';
 $string['expired'] = '对不起，此活动已于{$a}关闭，不再可用';
 $string['export'] = '输出';
 $string['exportaszip'] = '以压缩格式输出';
-$string['exportaszip_help'] = '<p align="center"><strong>以zip格式导出</strong></p>
-<p>允许将模板下载到您自己电脑上，而后模板可以上传到一个不同的数据库中使用。
-</p>';
+$string['exportaszip_help'] = '导出为zip功能允许您将模板和字段保存为预设zip以供下载。然后可以将zip导入另一个课程。';
 $string['exportedtozip'] = '输出到临时的压缩文件...';
 $string['exportentries'] = '导出条目';
 $string['exportformat'] = '导出格式';
 $string['exportoptions'] = '导出选项';
-$string['exportownentries'] = '仅导出您自己的条目？（{$a->mine}/{$a->all}）';
+$string['exportownentries'] = '仅导出您自己的条目？({$a->mine}/{$a->all})';
 $string['failedpresetdelete'] = '删除预设错误！';
 $string['fieldadded'] = '字段已添加';
 $string['fieldallowautolink'] = '允许自动链接';
@@ -177,9 +175,10 @@ $string['fieldheightlistview'] = '列表视图中的高度';
 $string['fieldheightsingleview'] = '独立视图中的高度';
 $string['fieldids'] = 'ids 字段';
 $string['fieldmappings'] = '字段映射';
-$string['fieldmappings_help'] = '用此菜单将数据和已存在的数据库分离。为了保留某字段中的数据，您需要将该字段映射到一个新字段，数据会保存到新字段中。留空的字段不会拷贝任何信息。任何未映射到新字段的旧字段和它数据都会被删除。您只可以映射同一类型的字段，所以每个下拉框中有不同的字段。而且，必须注意，不要将同一个旧字段映射到多个新字段中。';
+$string['fieldmappings_help'] = '此菜单允许您保留现有数据库中的数据。若要在字段中保留数据，必须将其映射到新字段，数据将显示在该字段中。任何字段也可以留空，不复制任何信息。任何未映射到新字段的旧字段将丢失，其所有数据将被删除。
+您只能映射相同类型的字段，因此每个下拉菜单中都有不同的字段。此外，您必须小心不要尝试将一个旧字段映射到多个新字段。';
 $string['fieldname'] = '字段名';
-$string['fieldnametype'] = '{$a->name}（{$a->type}）';
+$string['fieldnametype'] = '{$a->name} ({$a->type})';
 $string['fieldnotmatched'] = '您文件中的下述字段不存在于数据库中：{$a}';
 $string['fieldoptions'] = '选项(每行一个)';
 $string['fields'] = '字段';
@@ -193,12 +192,10 @@ $string['filesnotgenerated'] = '生成文件 {$a} 失败';
 $string['filtername'] = '数据库自动链接';
 $string['footer'] = '尾';
 $string['forcelinkname'] = '链接名强制为';
-$string['foundnorecords'] = '没找到记录(<a href="{$a->reseturl}">重设过滤器</a>)';
-$string['foundrecords'] = '找到记录：{$a->num}/{$a->max} (<a href="{$a->reseturl}">重设过滤器</a>)';
+$string['foundnorecords'] = '没找到记录 (<a href="{$a->reseturl}">Reset filters</a>)';
+$string['foundrecords'] = '找到记录： {$a->num}/{$a->max} (<a href="{$a->reseturl}">重设过滤器</a>)';
 $string['fromfile'] = '从压缩文件导入';
-$string['fromfile_help'] = '<p align=\'center\'><strong>从Zip文件导入</strong></p>
-<p>使用该类型文件可以上传和导出时一样格式。</p>
-<span style="font-weight: bold;">翻译者：况亮</span><br style="font-weight: bold;" /><span style="font-weight: bold;">Email：kuangliang12345@163.com</span><br style="font-weight: bold;" /><span style="font-weight: bold;">翻译日期：2007年3月1日</span><br />';
+$string['fromfile_help'] = '“从zip文件导入”功能允许您浏览和上载模板和字段的预设zip。';
 $string['generateerror'] = '有部分文件未被生成！';
 $string['header'] = '头';
 $string['headeraddtemplate'] = '定义修改条目的界面';
@@ -256,7 +253,17 @@ $string['menuchoose'] = '选择...';
 $string['missingdata'] = '需要提供数据id或者对象给字段类';
 $string['missingfield'] = '程序员错误：您需要在定义字段类时指定字段和/或数据';
 $string['modulename'] = '数据库';
-$string['modulename_help'] = '数据库活动模块允许参与者创建、维护和搜索一组记录条目。这些条目的格式和结构几乎是没有限制的，可包括图像、文件、超链接、数字以及文本等各种形式。';
+$string['modulename_help'] = '数据库活动模块使参与者能够创建、维护和搜索条目集合（即记录）。条目的结构由教师定义为多个字段。字段类型包括复选框、单选按钮、下拉菜单、文本区域、URL、图片和上载的文件。
+
+在列出、查看或编辑数据库条目时，信息的可视化布局可能由数据库模板控制。数据库活动可以作为预设在课程之间共享，教师也可以导入和导出数据库条目。
+如果启用了数据库自动链接过滤器，则数据库中的任何条目都将自动链接到课程中出现的单词或短语。
+
+教师可以允许对条目进行评论。参赛作品也可由教师或学生评分（同行评估）。评分可以汇总形成最终分数，并记录在成绩册中。
+
+数据库活动有许多用途，例如
+
+* 网络链接、书籍、书评、期刊参考等的协作集合
+* 用于展示学生创作的照片、海报、网站或诗歌，供同行评论和评论。';
 $string['modulenameplural'] = '数据库';
 $string['more'] = '更多';
 $string['moreurl'] = '更多 网页地址';
@@ -266,11 +273,9 @@ $string['multimenu'] = '菜单(多选)';
 $string['multipletags'] = '发现多个标签! 模板还没有保存';
 $string['newentry'] = '新条目';
 $string['newfield'] = '创建一个新字段';
-$string['newfield_help'] = '<p align="center"><strong>字段</strong></p>
+$string['newfield_help'] = '一个字段允许输入数据。数据库活动中的每个条目可以有多种类型的多个字段，例如日期字段（允许参与者从下拉菜单中选择日期、月份和年份）、图片字段（允许参与者上载图像文件）或复选框字段（允许参与者选择一个或多个选项）。
 
-<p>在此页您可以建立字段，做为您的数据库的一部分。</p>
-
-<p>每个字段可以使用不同类型的数据，并有不同的界面。</p>';
+每个字段必须具有唯一的字段名。字段描述是可选的。';
 $string['noaccess'] = '您无权访问此页';
 $string['nodefinedfields'] = '新的预设值没有定义';
 $string['nofieldcontent'] = '未找到域内容';
@@ -287,7 +292,7 @@ $string['number'] = '数字';
 $string['numberrssarticles'] = 'RSS 文章';
 $string['numnotapproved'] = '待核准';
 $string['numrecords'] = '{$a}个条目';
-$string['ods'] = '<acronym title="OpenDocument Spreadsheet">ODS</acronym> (OpenOffice)';
+$string['ods'] = '<abbr title="OpenDocument Spreadsheet">ODS</abbr>&nbsp;(OpenOffice)';
 $string['openafterclose'] = '您已在关闭日期之后指定打开日期';
 $string['optionaldescription'] = '简要描述（可选）';
 $string['optionalfilename'] = '文件名（可选）';
@@ -299,7 +304,7 @@ $string['page-mod-data-x'] = '任意数据库活动模块页面';
 $string['pagesize'] = '每页条目数';
 $string['participants'] = '参与者';
 $string['picture'] = '图片';
-$string['pleaseaddsome'] = '请在下面创建新的的或<a href="{$a}">选择一个预定义的集合</a>，再开始。';
+$string['pleaseaddsome'] = '请在创建一些在下面或 <a href="{$a}">选择一个预定义的集合</a>再开始.';
 $string['pluginadministration'] = '数据库活动管理';
 $string['pluginname'] = '数据库';
 $string['portfolionotfile'] = '导出到文件包而不是文件（只支持csv和leap2a）';
@@ -334,17 +339,14 @@ $string['requireapproval'] = '是否需要批准';
 $string['requireapproval_help'] = '如果激活，条目必须在教师核准后才能被其他人看到。';
 $string['required'] = '要求的';
 $string['requiredentries'] = '必须完成的条目数';
-$string['requiredentries_help'] = '<p align="center"><strong>必须完成的条目数</strong></p>
+$string['requiredentries_help'] = '如果设置，将显示一条消息，说明完成所需的条目数。请注意，此设置未连接到“活动完成”。
 
-<p>这个数目是参与者必须提交的数目。如果用户没有提交指定数据的条目信息，将看到一个提示消息。</p>
-
-<p>除非用户提交了指定数目的条目，否则该活动将不会允许用户参与。</p>
-<span style="font-weight: bold;">翻译者：况亮</span><br style="font-weight: bold;" /><span style="font-weight: bold;">Email：kuangliang12345@163.com</span><br style="font-weight: bold;" /><span style="font-weight: bold;">翻译日期：2007年3月1日</span><br />';
+对于活动完成所需的条目，应使用新的活动完成设置“Require entries”。若要完全删除此设置，请设置为“无”，然后保存更改。
+请改用“活动完成”部分中的“必填项”字段。';
 $string['requiredentriestoview'] = '查看前需要完成条目数';
-$string['requiredentriestoview_help'] = '<p align="center"><strong>浏览之前需要提交的条目数</strong></p>
+$string['requiredentriestoview_help'] = '学生在查看其他学生的作品之前必须提交的作品数量。
 
-<p>该数目是指在参与者浏览其他参与者条目信息前必须要提交的信息数目（条目数目）。</p>
-<span style="font-weight: bold;">翻译者：况亮</span><br style="font-weight: bold;" /><span style="font-weight: bold;">Email：kuangliang12345@163.com</span><br style="font-weight: bold;" /><span style="font-weight: bold;">翻译日期：2007年3月1日</span><br />';
+注意：如果在查看之前需要输入项，则应禁用数据库自动链接筛选器。这是因为数据库自动链接筛选器无法确定用户是否提交了所需数量的条目。';
 $string['requiredentrieswarning'] = '此设置已被“活动完成”设置“需要条目”替换';
 $string['requiredfield'] = '必填字段';
 $string['resetsettings'] = '重置字段';
@@ -388,24 +390,24 @@ $string['timeadded'] = '添加时间';
 $string['timemodified'] = '修改时间';
 $string['todatabase'] = '至此数据库。';
 $string['type'] = '字段类型';
-$string['undefinedprocessactionmethod'] = '在 Data_Preset 中处理行为“{$a}”没有定义';
-$string['unsupportedexport'] = '不能输出 ({$a->fieldtype})';
+$string['undefinedprocessactionmethod'] = '在 Data_Preset 中处理动作“{$a}”，没有定义动作的方法';
+$string['unsupportedexport'] = '({$a->fieldtype}) 不能被导出';
 $string['unsupportedfields'] = '不支持的字段';
 $string['unsupportedfieldslist'] = '无法导出以下字段：';
 $string['updatefield'] = '更新已有字段';
 $string['uploadfile'] = '上传文件';
 $string['uploadrecords'] = '从一个文件中上传条目';
-$string['uploadrecords_help'] = '可以通过上传文本文件来更新条目。文件的格式如下：
+$string['uploadrecords_help'] = '条目可以通过文本文件上传。文件格式应如下所示：
 
-* 文件每行包含一条记录
-* 每个记录是一系列由逗号(或其他分隔符)分隔的数据
-* 第一条记录包含一串用来定义文件其他部分格式的字段名
+* 文件的每一行包含一条记录
+* 每个记录都是一系列数据，由逗号（或其他分隔符）分隔
+* 第一条记录包含定义文件其余部分格式的字段名列表
 
-字段包围符是一个包围每个记录中的每个字段的字符。通常可以不对它进行设定。';
+字段附件是围绕每个记录中每个字段的字符。它通常可以不设置。';
 $string['url'] = '网页地址';
 $string['usedate'] = '包含在搜索中。';
 $string['usestandard'] = '使用一个预设';
-$string['usestandard_help'] = '请在列表中选择要使用的预设值。（对于您使用“另存为预设值”添加到列表中的预设，会显示删除选项）';
+$string['usestandard_help'] = '要使用可用于整个站点的预设，请从列表中选择它。（如果已使用“另存为预设”功能将预设添加到列表中，则可以选择将其删除。）';
 $string['viewfromdate'] = '从何时开始只读';
 $string['viewtodate'] = '只读到何时';
 $string['viewtodatevalidation'] = '只读截止日期不能早于只读起始日期。';

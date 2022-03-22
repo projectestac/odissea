@@ -73,7 +73,7 @@ $string['addnewuser'] = 'Adicionar novo utilizador';
 $string['addnousersrecip'] = 'Adicionar utilizadores que não tenham acedido este(a) {$a} à lista de destinatários';
 $string['addpagehere'] = 'Adicionar texto aqui';
 $string['addresource'] = 'Adicionar um recurso';
-$string['addresourceoractivity'] = 'Adicionar uma atividade ou recurso';
+$string['addresourceoractivity'] = 'Adicionar uma atividade ou um recurso';
 $string['addresourcetosection'] = 'Adicionar um recurso à secção \'{$a}\'';
 $string['address'] = 'Morada';
 $string['addsections'] = 'Adicionar secções';
@@ -83,7 +83,7 @@ $string['addteacher'] = 'Adicionar professor';
 $string['admin'] = 'Administrador';
 $string['adminhelpaddnewuser'] = 'Para criar manualmente uma nova conta de utilizador';
 $string['adminhelpassignadmins'] = 'Os administradores poderão fazer qualquer coisa e entrar em qualquer parte do site';
-$string['adminhelpassigncreators'] = 'Os criadores podem criar novas disciplinas e leccionar nelas';
+$string['adminhelpassigncreators'] = 'Os criadores podem criar novas disciplinas e lecionar nelas';
 $string['adminhelpassignsiteroles'] = 'Aplicar papéis atribuídos a utilizadores específicos';
 $string['adminhelpassignstudents'] = 'Entre numa disciplina e inscreva alunos a partir do menu de administração';
 $string['adminhelpauthentication'] = 'Pode usar contas internas ou de base de dados externas';
@@ -193,7 +193,7 @@ $string['backupfailed'] = 'Algumas das suas disciplinas não foram guardadas!';
 $string['backupfilename'] = 'backup';
 $string['backupfinished'] = 'Cópia de segurança concluída com sucesso';
 $string['backupfromthissite'] = 'Cópia de segurança é feita na disciplina?';
-$string['backupgradebookhistoryhelp'] = 'Se ativar esta opção, o historial da pauta será incluído nos backups automáticos. Note que para o historial da pauta ser guardado, não deve estar inativo nas configurações do Servidor (disablegradehistory)';
+$string['backupgradebookhistoryhelp'] = 'Se ativar esta opção, o historial da pauta será incluído nos backups automáticos. Tenha em atenção que para o historial da pauta ser guardado, não deve estar inativo nas configurações do Servidor (disablegradehistory)';
 $string['backupincludemoduleshelp'] = 'Escolha se quer incluir módulos de uma disciplina, com ou sem dados de utilizadores, nas cópias de segurança automáticas.';
 $string['backupincludemoduleuserdatahelp'] = 'Escolha se quer ou não incluir dados de utilizador dos módulos nas cópias de segurança automáticas.';
 $string['backuplogdetailed'] = 'Estatísticas detalhadas de execução';
@@ -204,10 +204,10 @@ $string['backupnonisowarning'] = 'Advertência: esta cópia de segurança é par
 $string['backupnotyetrun'] = 'Cópia de Segurança Automática pendente';
 $string['backuporiginalname'] = 'Nome da cópia de segurança';
 $string['backuproleassignments'] = 'Incluir atribuições para estes papéis na cópia de segurança';
-$string['backupsavetohelp'] = 'Nome e caminho completo da pasta onde pretende guardar os ficheiros das cópias de segurança';
+$string['backupsavetohelp'] = 'Nome e caminho completo da pasta onde pretende guardar os ficheiros das cópias de segurança.';
 $string['backupsitefileshelp'] = 'Se for ativado, os ficheiros do site usados em disciplinas serão incluídos nas cópias de segurança automáticas';
 $string['backuptakealook'] = 'Por favor, leia os relatórios dos processos de criação de cópias de segurança em: {$a}';
-$string['backupuserfileshelp'] = 'Escolha se os ficheiros de alunos (por exemplo fotografias) deverão ser incluídos nas cópias de segurança automáticas.';
+$string['backupuserfileshelp'] = 'Escolha se os ficheiros de alunos (por exemplo, fotos de perfil) deverão ser incluídos nas cópias de segurança automáticas.';
 $string['backupversion'] = 'Versão da cópia de segurança';
 $string['badges'] = 'Medalhas';
 $string['block'] = 'Bloco';
@@ -264,12 +264,12 @@ $string['checknone'] = 'Não verificar nada';
 $string['checks'] = 'Verificações';
 $string['checksok'] = 'Todas as verificações \'{$a}\' estão OK';
 $string['childcoursenotfound'] = 'Disciplina de proveniência não encontrada';
-$string['childcourses'] = 'Disciplinas de proveniência';
+$string['childcourses'] = 'Disciplinas descendentes';
 $string['choose'] = 'Selecionar';
 $string['choosecourse'] = 'Escolha uma disciplina';
 $string['choosedots'] = 'Escolha…';
 $string['chooselivelogs'] = 'Ou examine estatísticas de acesso atual';
-$string['chooselogs'] = 'Escolha que registos de atividade deseja ver';
+$string['chooselogs'] = 'Escolha os registos de atividade que pretende consultar';
 $string['choosereportfilter'] = 'Escolha um filtro para o relatório';
 $string['choosetheme'] = 'Escolha um tema';
 $string['chooseuser'] = 'Escolha um utilizador';
@@ -314,7 +314,7 @@ $string['continue'] = 'Continuar';
 $string['continuetocourse'] = 'Carregue aqui para entrar na sua disciplina';
 $string['convertingwikitomarkdown'] = 'A converter Wiki para Markdown';
 $string['cookiesenabled'] = 'Tem que ativar o suporte para cookies no seu navegador';
-$string['cookiesenabled_help'] = 'Dois cookies são utilizados por este site:
+$string['cookiesenabled_help'] = 'Neste site são utilizados dois cookies:
 
 O essencial é o cookie da sessão, normalmente chamado de MoodleSession. Deve permitir este cookie no seu navegador para manter a sua autenticação quando navega de página para página. Quando sair ou fechar o navegador este cookie é eliminado (no seu navegador e no servidor).
 
@@ -328,7 +328,7 @@ $string['copycourse'] = 'Copiar disciplina';
 $string['copyingcoursefiles'] = 'A copiar os ficheiros da disciplina';
 $string['copyingsitefiles'] = 'A copiar ficheiros do site usados na disciplina';
 $string['copyinguserfiles'] = 'A copiar os ficheiros de utilizador';
-$string['copyingzipfile'] = 'A copiar os ficheiros .zip';
+$string['copyingzipfile'] = 'A copiar os ficheiros Zip';
 $string['copyrightnotice'] = 'Nota de direitos de autor';
 $string['coresystem'] = 'Sistema';
 $string['cost'] = 'Custo';
@@ -353,7 +353,7 @@ $string['coursecatmanagement'] = 'Gestão de disciplinas e categorias';
 $string['coursecompletion'] = 'Conclusão da disciplina';
 $string['coursecompletions'] = 'Conclusões da disciplina';
 $string['coursecreators'] = 'Criador de disciplinas';
-$string['coursecreatorsdescription'] = 'Os criadores de disciplinas podem criar novas disciplinas e leccionar nelas.';
+$string['coursecreatorsdescription'] = 'Os criadores de disciplinas podem criar novas disciplinas e lecionar nelas.';
 $string['coursedeleted'] = 'A disciplina {$a} foi apagada';
 $string['coursedetails'] = 'Informação sobre disciplinas';
 $string['coursedisplay'] = 'Visualização';
@@ -385,7 +385,7 @@ $string['coursehelpshowgrades'] = 'Permitir que a pauta esteja disponível para 
 $string['coursehidden'] = 'De momento, esta disciplina não está disponível para os alunos';
 $string['courseinfo'] = 'Informações sobre a disciplina';
 $string['courselegacyfiles'] = 'Ficheiros da disciplina (compatibilidade com versões anteriores do Moodle)';
-$string['courselegacyfiles_help'] = 'A área Ficheiros da disciplina fornece alguma retrocompatibilidade com a versão 1.9 do Moodle e anteriores. Note que todos os ficheiros nesta área estão sempre acessíveis a todos os participantes da disciplina (quer estabeleça, ou não, uma hiperligação para eles) e não existe forma de saber se, nem onde, estes ficheiros estão a ser usados no Moodle.
+$string['courselegacyfiles_help'] = 'A área Ficheiros da disciplina fornece alguma retrocompatibilidade com a versão 1.9 do Moodle e anteriores. Tenha em atenção que todos os ficheiros nesta área estão sempre acessíveis a todos os participantes da disciplina (quer estabeleça, ou não, uma hiperligação para eles) e não existe forma de saber se, nem onde, estes ficheiros estão a ser usados no Moodle.
 
 Se usar esta área para guardar ficheiros da disciplina, pode estar a correr riscos de violação de privacidade e segurança, assim como sujeito a falta de ficheiros nas cópias de segurança, importação de disciplinas e na partilha de conteúdos. Assim, não é aconselhável a utilização desta área a não ser que tenha de facto a certeza do que está a fazer.';
 $string['courselegacyfiles_link'] = 'coursefiles2';
@@ -449,7 +449,7 @@ $string['createnewsubcategory'] = 'Criar nova subcategoria';
 $string['createsubcategoryof'] = 'Criar subcategoria de {$a}';
 $string['createuser'] = 'Criar utilizador';
 $string['createuserandpass'] = 'Escolha um nome de utilizador e senha';
-$string['createziparchive'] = 'Criar um ficheiro zip';
+$string['createziparchive'] = 'Criar um ficheiro Zip';
 $string['creatingblocks'] = 'A criar blocos';
 $string['creatingblocksroles'] = 'A criar atribuições e redefinições de papéis ao nível de blocos.';
 $string['creatingblogsinfo'] = 'A criar informação dos blogues';
@@ -478,7 +478,7 @@ $string['currentcourseadding'] = 'A inserir dados para a disciplina selecionada'
 $string['currentcoursedeleting'] = 'A apagar a disciplina atual';
 $string['currentlanguage'] = 'Idioma usado atualmente';
 $string['currentlocaltime'] = 'a sua hora local';
-$string['currentpicture'] = 'Fotografia atual';
+$string['currentpicture'] = 'Foto atual';
 $string['currentrelease'] = 'Informação da versão atual';
 $string['currentversion'] = 'Versão atual';
 $string['databasechecking'] = 'A atualizar a base de dados do Moodle da versão {$a->oldversion} para a versão {$a->newversion}...';
@@ -508,7 +508,7 @@ $string['defaultcoursestudentdescription'] = 'Os alunos são geralmente os que t
 $string['defaultcoursestudents'] = 'Alunos';
 $string['defaultcoursesummary'] = 'Escreva aqui um parágrafo que explique de forma concisa e interessante o que esta disciplina é.';
 $string['defaultcourseteacher'] = 'Professor';
-$string['defaultcourseteacherdescription'] = 'Os professores podem fazer qualquer coisa dentro de uma disciplina, incluindo alteração das atividades e avaliação dos alunos.';
+$string['defaultcourseteacherdescription'] = 'Os professores podem realizar qualquer ação dentro de uma disciplina, incluindo alteração das atividades e avaliação dos alunos.';
 $string['defaultcourseteachers'] = 'Professores';
 $string['defaulteditor'] = 'Editor predefinido';
 $string['defaulthomepageuser'] = 'Página inicial';
@@ -529,7 +529,7 @@ $string['deletecheckfull'] = 'Tem a certeza absoluta de que pretende apagar comp
 $string['deletechecktype'] = 'Tem a certeza de que pretende apagar <strong>\'{$a->type}\'</strong>?';
 $string['deletechecktypename'] = 'Tem a certeza de que pretende apagar <strong>{$a->type}</strong> - "{$a->name}"?';
 $string['deletecheckwarning'] = 'Está prestes a apagar estes ficheiros';
-$string['deletecommentbyon'] = 'Eliminar o comentário publicado por {$a->user} em {$a->time}';
+$string['deletecommentbyon'] = 'Apagar o comentário publicado {$a->time} por {$a->user}';
 $string['deletecompletely'] = 'Apagar completamente';
 $string['deletecourse'] = 'Apagar uma disciplina';
 $string['deletecoursecheck'] = 'Tem a certeza absoluta de que pretende apagar completamente esta disciplina e todos os dados contidos nela?';
@@ -646,19 +646,20 @@ $string['emailconfirmation'] = 'Caro(a),
 
 Foi criada uma nova conta com este endereço de e-mail na plataforma de e-learning \'{$a->sitename}\'.
 
-Para confirmar a sua conta, clique em:
+Para confirmar a sua nova conta, clique em:
 
 {$a->link}
 
-Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, então copie o endereço e cole na linha de endereço do seu navegador de Internet.
+Se o endereço acima não for apresentado como uma hiperligação em que basta clicar, copie o endereço e cole na linha de endereço do seu navegador de Internet.
 
-Se necessitar de ajuda, contacte o administrador da plataforma, {$a->admin}';
+Se necessitar de ajuda, contacte o administrador do site,
+{$a->admin}';
 $string['emailconfirmationresend'] = 'Reenviar e-mail de confirmação';
 $string['emailconfirmationsubject'] = '{$a}: Confirmação da conta';
 $string['emailconfirmsent'] = '<p>Acaba de ser enviada uma mensagem para o seu endereço de e-mail <strong>{$a}</strong>, com instruções fáceis para completar a sua inscrição.</p><p>Se tiver alguma dificuldade em completar o registo, contacte o administrador do site.</p>';
 $string['emailconfirmsentfailure'] = 'Falhou o envio do e-mail de confirmação';
 $string['emailconfirmsentsuccess'] = 'E-mail de confirmação enviado com sucesso';
-$string['emaildigest'] = 'Tipo de Sumário de fóruns';
+$string['emaildigest'] = 'Tipo de sumário de fóruns';
 $string['emaildigest_help'] = 'Esta é a configuração de resumo diário que os fóruns irão usar por predefinição.
 
 *Sem sumário: irá receber um e-mail por cada mensagem publicada no fórum;
@@ -667,7 +668,7 @@ $string['emaildigest_help'] = 'Esta é a configuração de resumo diário que os
 
 *Assuntos - irá receber um e-mail diário com os assuntos de cada mensagem publicada no fórum.
 
-Poderá ainda escolher uma configuração para cada fórum, se assim desejar.';
+Poderá ainda escolher uma configuração para cada fórum, se assim pretender.';
 $string['emaildigestcomplete'] = 'Completo (e-mail diário com mensagens completas)';
 $string['emaildigestoff'] = 'Sem sumário (um e-mail por cada mensagem submetida)';
 $string['emaildigestsubjects'] = 'Assuntos (e-mail diário com assuntos das mensagens)';
@@ -736,7 +737,7 @@ $string['emailpasswordconfirmmaybesent'] = '<p>Se indicou um nome de utilizador 
 $string['emailpasswordconfirmnoemail'] = '<p>A conta de utilizador que especificou não possui um endereço de e-mail guardado.</p>
 <p>Por favor, contacte o administrador do site.</p>';
 $string['emailpasswordconfirmnotsent'] = '<p>O detalhe de utilizador que forneceu não identifica nenhuma conta de utilizador existente.</p>
-<p>Por favor, verifique a informação que introduziu e tente novamente. Se continuar a ter dificuldade, por favor, contacte o administrador do site.</p>';
+<p>Por favor, verifique a informação que inseriu e tente novamente. Se continuar a ter dificuldade, por favor, contacte o administrador do site.</p>';
 $string['emailpasswordconfirmsent'] = 'Foi enviada uma mensagem para o seu endereço de e-mail <b>{$a}</b>.
 <br />Esta contém instruções para confirmar e concluir a alteração da senha.
 Se continuar a ter dificuldades, contacte o administrador do site.';
@@ -775,7 +776,7 @@ $string['emptydragdropregion'] = 'região vazia';
 $string['enable'] = 'Ativar';
 $string['encryptedcode'] = 'Código encriptado';
 $string['enddate'] = 'Data de fim';
-$string['enddate_help'] = 'A data de fim é usada para determinar se uma disciplina deve ser incluída na lista de disciplinas do utilizador. Quando a data de fim é ultrapassada, a disciplina deixa de aparecer na lista de navegação e passa a estar disponível apenas no Histórico na visão global do Painel do utilizador. A data de fim da disciplina também pode ser usada em relatórios personalizados. Os utilizadores podem continuar a aceder à disciplina após a data de fim, ou seja, esta data não restringe o acesso.';
+$string['enddate_help'] = 'A data de fim é usada para determinar se a disciplina deve, ou não, ser incluída na lista de disciplinas do utilizador. Quando a data de fim é ultrapassada, a disciplina deixa de aparecer na lista de navegação e passa a estar disponível apenas no Histórico na visão global do Painel do utilizador. A data de fim da disciplina também pode ser usada em relatórios personalizados. Os utilizadores podem continuar a aceder à disciplina após a data de fim, ou seja, esta data não restringe o acesso.';
 $string['english'] = 'Inglês';
 $string['enrolmentmethods'] = 'Métodos de inscrição';
 $string['entercourse'] = 'Clique para aceder à disciplina';
@@ -862,7 +863,7 @@ $string['extendperiod'] = 'Período de extensão';
 $string['extendsession'] = 'Prolongar sessão';
 $string['failedloginattempts'] = '{$a->attempts} tentativas de autenticação sem sucesso desde a sua última visita';
 $string['favourites'] = 'Com estrela';
-$string['feedback'] = 'Comentários';
+$string['feedback'] = 'Feedback';
 $string['file'] = 'Ficheiro';
 $string['fileexists'] = 'Já existe um ficheiro com nome {$a}';
 $string['filemissing'] = '{$a} não existe';
@@ -890,7 +891,7 @@ $string['followingoptional'] = 'Os campos seguintes são opcionais';
 $string['followingrequired'] = 'Os campos seguintes são obrigatórios';
 $string['for'] = 'Para';
 $string['force'] = 'Forçar';
-$string['forcelanguage'] = 'Forçar o idioma';
+$string['forcelanguage'] = 'Forçar idioma';
 $string['forceno'] = 'Não forçar';
 $string['forcepasswordchange'] = 'Forçar mudança de senha';
 $string['forcepasswordchange_help'] = 'Se ativar esta opção, o utilizador terá de alterar a sua senha na próxima vez que se autenticar.';
@@ -901,7 +902,7 @@ $string['forcepasswordresetfailurenotice'] = 'A sua senha atual já não cumpre 
    {$a}';
 $string['forcepasswordresetnotice'] = 'A sua senha atual já não cumpre a política de senhas definida. Tem de repor a senha para entrar novamente.
    {$a}';
-$string['forcetheme'] = 'Forçar o tema';
+$string['forcetheme'] = 'Forçar tema';
 $string['forgotaccount'] = 'Recuperar senha';
 $string['forgotten'] = 'Esqueceu-se do seu nome de utilizador ou da senha?';
 $string['forgottenduplicate'] = 'O endereço de e-mail é partilhado por várias contas. Introduza antes o nome de utilizador';
@@ -909,7 +910,7 @@ $string['forgotteninvalidurl'] = 'URL para recuperação de senhas esquecidas';
 $string['format'] = 'Formato';
 $string['format_help'] = 'O formato determina a estrutura da página principal da disciplina:
 
-* Formato Atividade Única - Para mostrar uma única atividade ou recurso (como por exemplo, um Teste ou um pacote SCORM) na página da disciplina;
+* Formato Atividade Única - Para mostrar uma única atividade ou recurso (como por exemplo, um Teste ou um Pacote SCORM) na página da disciplina;
 
 * Formato Social - É mostrado um fórum na página principal da disciplina;
 
@@ -926,7 +927,7 @@ $string['from'] = 'De';
 $string['frontpagecategorycombo'] = 'Mostrar lista de categorias e disciplinas';
 $string['frontpagecategorynames'] = 'Mostrar lista de categorias';
 $string['frontpagecourselist'] = 'Mostrar lista de disciplinas';
-$string['frontpagecoursesearch'] = 'Caixa \'Procurar disciplinas\'';
+$string['frontpagecoursesearch'] = 'Caixa \'Pesquisar disciplinas\'';
 $string['frontpagedescription'] = 'Resumo da Página principal';
 $string['frontpagedescriptionhelp'] = 'Este resumo pode ser exibido na Página principal usando o bloco Descrição da disciplina/site.';
 $string['frontpageenrolledcourselist'] = 'Mostrar lista \'Minhas disciplinas\'';
@@ -1002,7 +1003,7 @@ $string['guestuser'] = 'Visitante';
 $string['guestuserinfo'] = 'Este nome de utilizador é especial e só permite acesso a algumas disciplinas.';
 $string['help'] = 'Ajuda';
 $string['helpprefix2'] = 'Ajuda sobre {$a}';
-$string['helpwiththis'] = 'Ajuda sobre isto';
+$string['helpwiththis'] = 'Ajuda';
 $string['hiddenassign'] = 'Atribuição oculta';
 $string['hiddenfromstudents'] = 'Oculto para os alunos';
 $string['hiddenoncoursepage'] = 'Disponível mas não mostrar na página da disciplina';
@@ -1016,7 +1017,7 @@ $string['hideadvancedsettings'] = 'Ocultar configurações avançadas';
 $string['hidechartdata'] = 'Ocultar dados do gráfico';
 $string['hidefromstudents'] = 'Oculto para os alunos';
 $string['hideoncoursepage'] = 'Disponível mas oculto na página da disciplina';
-$string['hidepicture'] = 'Ocultar fotografia';
+$string['hidepicture'] = 'Ocultar foto';
 $string['hidepopoverwindow'] = 'Ocultar a janela de informação após clicar';
 $string['hidesection'] = 'Ocultar secção {$a}';
 $string['hidesettings'] = 'Ocultar opções';
@@ -1041,11 +1042,11 @@ $string['icon'] = 'Ícone';
 $string['icqnumber'] = 'Número de ICQ';
 $string['idnumber'] = 'Número de identificação (ID)';
 $string['idnumbercourse'] = 'Código';
-$string['idnumbercourse_help'] = 'O código de uma disciplina só é usado quando comunica com sistemas externos e não é mostrado na plataforma. Se a disciplina tem um código oficial, pode ser inserido, caso contrário, o campo pode ser deixado vazio.';
+$string['idnumbercourse_help'] = 'O código de uma disciplina só é usado quando comunica com sistemas externos e não é mostrado na plataforma. Se a disciplina tem um código oficial, pode ser inserido, caso contrário, o campo pode ser deixado em branco.';
 $string['idnumbercoursecategory'] = 'Número de identificação da categoria';
-$string['idnumbercoursecategory_help'] = 'O número de identificação de uma categoria (ID) é usado apenas para comunicação com sistemas externos e não é exibido em nenhum parte do site. Se a categoria tem um código do nome oficial, este pode ser inserido, caso contrário, o campo pode ser deixado vazio.';
+$string['idnumbercoursecategory_help'] = 'O número de identificação (ID) de uma categoria é usado apenas para comunicação com sistemas externos e não é exibido em nenhuma parte do site. Se a categoria tem um código do nome oficial, este pode ser inserido, caso contrário, o campo pode ficar em branco.';
 $string['idnumbergroup'] = 'Número de identificação do grupo';
-$string['idnumbergroup_help'] = 'O número de identificação de um grupo (ID) é usado apenas para comunicação com sistemas externos e não é exibido em nenhuma parte do site. Se o grupo tem um código do nome oficial, este pode ser inserido, caso contrário, o campo pode ficar em branco.';
+$string['idnumbergroup_help'] = 'O número de identificação (ID) de um grupo é usado apenas para comunicação com sistemas externos e não é exibido em nenhum lugar do site. Se o grupo tem um código do nome oficial, este pode ser inserido, caso contrário, o campo pode ficar em branco.';
 $string['idnumbergrouping'] = 'Número de identificação do agrupamento';
 $string['idnumbergrouping_help'] = 'O número de identificação (ID) de um agrupamento é usado apenas para comunicação com sistemas externos e não é exibido em nenhuma parte do site. Se o agrupamento tem um código do nome oficial, este pode ser inserido, caso contrário, o campo pode ficar em branco.';
 $string['idnumbermod'] = 'Número de identificação (ID)';
@@ -1143,8 +1144,8 @@ $string['lastsiteaccess'] = 'Último acesso ao site';
 $string['lastyear'] = 'Ano passado';
 $string['latestlanguagepack'] = 'Verificar o pacote linguístico mais recente em moodle.org';
 $string['layouttable'] = 'Tabela de esquema';
-$string['leavetokeep'] = 'Deixe vazio para manter a senha atual';
-$string['legacylogginginuse'] = 'Atualmente o site está a utilizar o sistema de registos de retrocompatibilidade. Este sistema foi descontinuado. Deve utilizar um sistema de registo suportado como por exemplo "Registo de atividade padrão" ou "Base de dados externa para registos de atividade".';
+$string['leavetokeep'] = 'Deixe em branco para manter a senha atual';
+$string['legacylogginginuse'] = 'Atualmente o site está a utilizar o sistema de registos de retrocompatibilidade. Este sistema foi descontinuado. Deve utilizar um sistema de registo suportado, como por exemplo, "Registo de atividade padrão" ou "Base de dados externa para registos de atividade".';
 $string['legacythemeinuse'] = 'Este site está a ser mostrado em modo de compatibilidade pois o seu o navegador está numa versão muito antiga.';
 $string['license'] = 'Licença';
 $string['licenses'] = 'Licenças';
@@ -1170,10 +1171,10 @@ $string['loginactivity'] = 'Atividade de autenticação';
 $string['loginagain'] = 'Autentique-se novamente';
 $string['loginalready'] = 'Já está autenticado como';
 $string['loginas'] = 'Entrar como';
-$string['loginaspasswordexplain'] = '<p>Para poder utilizar esta opção terá que introduzir a senha especial para "entrar como".<br />Se não souber essa senha, pergunte ao administrador.</p>';
+$string['loginaspasswordexplain'] = '<p>Para poder utilizar esta opção terá que inserir a senha especial para "Entrar como".<br />Se não souber essa senha, contacte o  administrador do servidor.</p>';
 $string['loginguest'] = 'Entrar como visitante';
 $string['loginsite'] = 'Entrar no site';
-$string['loginsteps'] = 'Para ter acesso completo a este site, primeiro precisa de criar uma nova conta de utilizador.';
+$string['loginsteps'] = 'Para ter acesso completo a este site, primeiro tem de criar uma conta de utilizador.';
 $string['loginstepsnone'] = '<p>Viva!</p>
 <p>Para ter acesso total às disciplinas, tem que criar a sua própria conta de utilizador.</p>
 <p>Só precisa de escolher um nome de utilizador e uma senha e usá-los no formulário desta página!</p>
@@ -1192,7 +1193,7 @@ $string['mailteachers'] = 'Informar os professores';
 $string['maincoursepage'] = 'Página principal da disciplina';
 $string['makeafolder'] = 'Criar pasta';
 $string['makeavailable'] = 'Tornar disponível';
-$string['makeeditable'] = 'Se mudar as permissões de \'{$a}\' para que o servidor de http (por exemplo Apache) possa modificá-lo, este ficheiro poderá ser editado diretamente nesta página';
+$string['makeeditable'] = 'Se mudar as permissões de \'{$a}\' para que o servidor de http (por exemplo, Apache) possa modificá-lo, este ficheiro poderá ser editado diretamente nesta página';
 $string['makethismyhome'] = 'Tornar na minha página principal';
 $string['makeunavailable'] = 'Tornar indisponível';
 $string['manageblocks'] = 'Blocos';
@@ -1220,7 +1221,7 @@ $string['maximumupload'] = 'Tamanho máximo dos ficheiros enviados';
 $string['maximumupload_help'] = 'Esta configuração determina o tamanho máximo dos ficheiros que podem ser enviados para a disciplina, limitado pelas configurações definidas pelo administrador. Os módulos de atividades também incluem uma configuração do tamanho máximo de forma a restringir ainda mais o tamanho dos ficheiros.';
 $string['maxnumberweeks'] = 'Número máximo de secções';
 $string['maxnumberweeks_desc'] = 'Valor máximo disponível na lista pendente \'Número de Semanas/Tópicos\' nas configurações da disciplina (aplica-se apenas a certos formatos de disciplina).';
-$string['maxnumcoursesincombo'] = 'Procurar <a href="{$a->link}">{$a->numberofcourses}disciplinas</a>.';
+$string['maxnumcoursesincombo'] = 'Procurar <a href="{$a->link}">{$a->numberofcourses} disciplinas</a>.';
 $string['maxsectionslimit'] = 'Não é possível criar uma nova secção, pois iria exceder o número máximo de secções permitidas para esta disciplina ({$a}).';
 $string['maxsize'] = 'Tamanho máximo: {$a}';
 $string['maxsizeandareasize'] = 'Tamanho máximo para novos ficheiros: {$a->size}, limite global: {$a->areasize}';
@@ -1244,7 +1245,7 @@ $string['messageprovider:courserequestrejected'] = 'Notificação de rejeição 
 $string['messageprovider:errors'] = 'Erros importantes no site';
 $string['messageprovider:errors_help'] = 'Estes são alguns erros importantes que o administrador deve conhecer';
 $string['messageprovider:gradenotifications'] = 'Notificações da avaliação';
-$string['messageprovider:infected'] = 'Notificações de falha do antivírus.';
+$string['messageprovider:infected'] = 'Notificações de falha do antivírus';
 $string['messageprovider:insights'] = 'Perceções geradas por modelos de previsão';
 $string['messageprovider:instantmessage'] = 'Mensagens pessoais entre utilizadores';
 $string['messageprovider:instantmessage_help'] = 'Esta secção define as mensagens enviadas diretamente de uns utilizadores para outros através do site';
@@ -1293,7 +1294,7 @@ $string['modulesused'] = 'Módulos utilizados';
 $string['modvisible'] = 'Disponibilidade';
 $string['modvisible_help'] = 'Se a disponibilidade estiver configurada para "Mostrar na página da disciplina", a atividade ou recurso estará disponível para os alunos (sujeito a restrições de acesso que possam ser definidas).
 
-Se a disponibilidade estiver definida como \'Oculto para os alunos\', a atividade ou o recurso só estará disponível para os utilizadores com permissão para mostrar atividades ocultas (por predefinição, os utilizadores com o papel de professor ou professor não editor)';
+Se a disponibilidade estiver definida como \'Oculto para os alunos\', a atividade ou o recurso só estará disponível para os utilizadores com permissão para visualizar atividades ocultas (por predefinição, os utilizadores com o papel de professor ou professor não editor)';
 $string['modvisiblehiddensection'] = 'Disponibilidade';
 $string['modvisiblehiddensection_help'] = 'Se a disponibilidade estiver configurada para "Oculto para os alunos", a atividade ou o recurso só estará disponível para os utilizadores com permissão para ver atividades ocultas (por predefinição, os utilizadores com o papel de professor).
 
@@ -1347,7 +1348,7 @@ $string['moveup'] = 'Mover para cima';
 $string['msnid'] = 'ID do MSN';
 $string['mustchangepassword'] = 'A nova senha deverá ser diferente da atual';
 $string['mustconfirm'] = 'Precisa confirmar a sua conta';
-$string['mycourses'] = 'As minhas disciplinas';
+$string['mycourses'] = 'Minhas disciplinas';
 $string['myfiles'] = 'Meus ficheiros privados';
 $string['myfilesmanage'] = 'Gerir os meus ficheiros privados';
 $string['myhome'] = 'Painel do utilizador';
@@ -1360,7 +1361,7 @@ $string['nameforpage'] = 'Nome';
 $string['navigation'] = 'Navegação';
 $string['needed'] = 'Necessários';
 $string['networkdropped'] = 'A sua ligação à Internet está instável ou foi interrompida.<br />
-Por favor, esteja ciente que as alterações podem não ser guardadas corretamente até que a sua ligação melhore.';
+Por favor, tenha em atenção que as alterações podem não ser guardadas corretamente até que a sua ligação melhore.';
 $string['never'] = 'Nunca';
 $string['neverdeletelogs'] = 'Nunca apagar os registos de atividade';
 $string['new'] = 'Novo';
@@ -1368,7 +1369,7 @@ $string['newaccount'] = 'Nova conta';
 $string['newactivityname'] = 'Novo nome para a atividade {$a}';
 $string['newcourse'] = 'Nova disciplina';
 $string['newpassword'] = 'Nova senha';
-$string['newpassword_help'] = 'Insira uma nova senha ou deixe vazio para manter a atual.';
+$string['newpassword_help'] = 'Insira uma nova senha ou deixe em branco para manter a atual.';
 $string['newpasswordfromlost'] = '<strong>Atenção</strong>: A sua <strong>senha atual</strong> deverá ter sido enviada para si na <strong>segunda</strong> de duas mensagens que lhe foram enviadas como parte do processo de recuperação de senha. Verifique que já recebeu a mensagem com a senha de substituição antes de continuar com esta página.';
 $string['newpasswordtext'] = 'Caro(a) {$a->firstname},
 
@@ -1383,8 +1384,8 @@ Por favor, visite esta página, para modificar a sua senha: {$a->link}
 Se não conseguir seguir esta hiperligação, copie o URL e cole na barra de endereço do seu navegador.
 
 Cumprimentos do(a) administrador(a) da plataforma de e-learning  \'{$a->sitename}\',{$a->signoff}';
-$string['newpicture'] = 'Nova imagem';
-$string['newpicture_help'] = 'Para adicionar uma nova imagem, procure e selecione uma imagem (formato JPG ou PNG) e clique em "Atualizar Perfil". A imagem será recortada na forma de um quadrado e redimensionada para 100x100 píxeis.';
+$string['newpicture'] = 'Nova foto';
+$string['newpicture_help'] = 'Para adicionar uma nova foto, procure e selecione uma imagem (formato JPG ou PNG) e clique em "Atualizar Perfil". A imagem será recortada na forma de um quadrado e redimensionada para 100x100 píxeis.';
 $string['newpictureusernotsetup'] = 'A imagem de perfil só pode ser adicionada depois de guardar todas as informações de perfil obrigatórias.';
 $string['newsectionname'] = 'Novo nome para a secção {$a}';
 $string['newsitem'] = 'notícia';
@@ -1467,8 +1468,8 @@ $string['noteachersyet'] = 'Esta disciplina ainda não tem professor';
 $string['noteachingupcomingcourses'] = 'As próximas disciplinas não têm professores nem alunos';
 $string['notenrolled'] = '{$a} não está inscrito nesta disciplina.';
 $string['notenrolledprofile'] = 'Este perfil não está ativo porque o utilizador não está inscrito nesta disciplina.';
-$string['noteusercannotrolldatesoncontext'] = '<strong>Nota:</strong> A capacidade de restaurar datas foi desativada uma vez que não possui permissões para tal.';
-$string['noteuserschangednonetocourse'] = '<strong>Nota:</strong> É necessário restaurar os utilizadores da disciplina quando se restaurar os dados dos utilizadores. Esta configuração foi alterada para si.';
+$string['noteusercannotrolldatesoncontext'] = '<strong>Nota:</strong> A capacidade de restaurar datas foi desativada uma vez que não tem permissões para tal.';
+$string['noteuserschangednonetocourse'] = '<strong>Nota:</strong> É necessário restaurar os utilizadores da disciplina quando restaurar os dados dos utilizadores. Esta configuração foi alterada para si.';
 $string['nothingnew'] = 'Sem atividade recente';
 $string['nothingtodisplay'] = 'Não existe informação para apresentar';
 $string['notice'] = 'Aviso';
@@ -1537,9 +1538,9 @@ $string['passwordchanged'] = 'Senha modificada com sucesso';
 $string['passwordconfirmchange'] = 'Confirme alteração de senha';
 $string['passwordextlink'] = 'O seguinte apontador permite-lhe substituir a sua senha esquecida. Este apontador conduz para o site Moodle que está utilizar.';
 $string['passwordforgotten'] = 'Senha esquecida';
-$string['passwordforgotteninstructions'] = 'Primeiro teremos que identificar os seus dados na base de dados. Por favor, diga-nos <strong>algum dos dois dados seguintes</strong> no campo respetivo: o seu nome de utilizador no site Moodle ou o e-mail com que está registado. Não é preciso indicar as duas coisas.';
+$string['passwordforgotteninstructions'] = 'Primeiro teremos que identificar os seus dados na base de dados. Por favor, diga-nos <strong>um dos dois dados seguintes</strong> no campo respetivo: o seu nome de utilizador no site Moodle ou o e-mail com que está registado. Não tem de indicar as duas informações.';
 $string['passwordforgotteninstructions2'] = 'Para redefinir a sua senha, insira o seu nome de utilizador ou endereço de e-mail. Se um deles for encontrado na base de dados, será enviada uma mensagem para o seu endereço de e-mail com instruções para obter acesso novamente.';
-$string['passwordnohelp'] = 'No é possível ajudar a recuperar a sua senha perdida. Por favor, entre em contacto com o administrador do site Moodle que está a utilizar.';
+$string['passwordnohelp'] = 'Não é possível ajudar a recuperar a sua senha. Por favor, contacte o administrador do site Moodle.';
 $string['passwordpolicynomatch'] = 'A sua senha atual já não cumpre a política de senhas definida.
     {$a}';
 $string['passwordrecovery'] = 'Sim, ajude-me a entrar';
@@ -1569,8 +1570,8 @@ $string['phone'] = 'Telefone';
 $string['phone1'] = 'Telefone';
 $string['phone2'] = 'Telemóvel';
 $string['phpinfo'] = 'Informação do PHP';
-$string['pictureof'] = 'Fotografia de {$a}';
-$string['pictureofuser'] = 'Fotografia do utilizador';
+$string['pictureof'] = 'Foto de {$a}';
+$string['pictureofuser'] = 'Foto do utilizador';
 $string['pleaseclose'] = 'Por favor, feche esta janela.';
 $string['pleasesearchmore'] = 'Por favor, procure um pouco mais';
 $string['pleaseusesearch'] = 'Por favor, use a pesquisa';
@@ -1603,17 +1604,17 @@ $string['previouslyselectedusers'] = 'Os utilizadores selecionados não correspo
 $string['previouspage'] = 'Página anterior';
 $string['previoussection'] = 'Secção anterior';
 $string['primaryadminsetup'] = 'Configurar conta de administrador';
-$string['privacy:metadata:config_log'] = 'O log da alteração das configurações.';
+$string['privacy:metadata:config_log'] = 'O registo da alteração das configurações.';
 $string['privacy:metadata:config_log:name'] = 'O nome da alteração das configurações.';
 $string['privacy:metadata:config_log:oldvalue'] = 'O valor anterior desta configuração.';
 $string['privacy:metadata:config_log:plugin'] = 'O módulo modificado.';
-$string['privacy:metadata:config_log:timemodified'] = 'A hora da alteração.';
+$string['privacy:metadata:config_log:timemodified'] = 'A data e hora da alteração.';
 $string['privacy:metadata:config_log:userid'] = 'O utilizador que fez a alteração.';
 $string['privacy:metadata:config_log:value'] = 'O novo valor desta configuração.';
 $string['privacy:metadata:events_queue'] = 'A fila de eventos de utilizador à aguardar para serem processados.';
 $string['privacy:metadata:events_queue:eventdata'] = 'Os dados armazenados no evento.';
 $string['privacy:metadata:events_queue:stackdump'] = 'Qualquer rastreamento associado a este evento.';
-$string['privacy:metadata:events_queue:timecreated'] = 'A hora em que este evento foi criado.';
+$string['privacy:metadata:events_queue:timecreated'] = 'Data e hora em que este evento foi criado';
 $string['privacy:metadata:events_queue:userid'] = 'O ID do utilizador associado a este evento';
 $string['privacy:metadata:log'] = 'A coleção de eventos passados';
 $string['privacy:metadata:log:action'] = 'A descrição da ação';
@@ -1622,14 +1623,14 @@ $string['privacy:metadata:log:course'] = 'disciplina';
 $string['privacy:metadata:log:info'] = 'Informaçãoa dicional';
 $string['privacy:metadata:log:ip'] = 'O endereço IP utilizado na altura do evento';
 $string['privacy:metadata:log:module'] = 'módulo';
-$string['privacy:metadata:log:time'] = 'A data/hora em que a ação ocorreu';
+$string['privacy:metadata:log:time'] = 'A data e hora em que a ação ocorreu';
 $string['privacy:metadata:log:url'] = 'O URL relacionado com o evento';
 $string['privacy:metadata:log:userid'] = 'O ID do utilizador que executou a ação';
 $string['privacy:metadata:oauth2_refresh_token'] = 'Token de atualização usado na comunicação OAuth 2.0';
 $string['privacy:metadata:oauth2_refresh_token:issuerid'] = 'O ID do emissor ao qual corresponde o token';
 $string['privacy:metadata:oauth2_refresh_token:scopehash'] = 'O ID do utilizador a quem corresponde o token';
-$string['privacy:metadata:oauth2_refresh_token:timecreated'] = 'A data/hora em que o token foi criado';
-$string['privacy:metadata:oauth2_refresh_token:timemodified'] = 'A data/hora em que o token foi atualizado pela última vez';
+$string['privacy:metadata:oauth2_refresh_token:timecreated'] = 'Data e hora em que o token foi criado';
+$string['privacy:metadata:oauth2_refresh_token:timemodified'] = 'A data e hora em que o token foi atualizado pela última vez';
 $string['privacy:metadata:oauth2_refresh_token:token'] = 'O token de atualização para os respetivos âmbitos e utilizador';
 $string['privacy:metadata:oauth2_refresh_token:userid'] = 'O ID do utilizador a quem corresponde o token';
 $string['privacy:metadata:task_adhoc'] = 'O estado das tarefas ad hoc.';
@@ -1639,7 +1640,7 @@ $string['privacy:metadata:task_adhoc:userid'] = 'O utilizador a executar a taref
 $string['privacy:metadata:task_log'] = 'Guardar resultados num registo';
 $string['privacy:metadata:task_log:component'] = 'A componente a que pertence a tarefa.';
 $string['privacy:metadata:task_log:userid'] = 'O utilizador ao qual a tarefa pertencia.';
-$string['privacy:metadata:upgrade_log'] = 'O log de atualização.';
+$string['privacy:metadata:upgrade_log'] = 'O registo da atualização.';
 $string['privacy:metadata:upgrade_log:backtrace'] = 'Algum retrocesso associado a esta etapa da atualização';
 $string['privacy:metadata:upgrade_log:details'] = 'Informação extra relacionada com a atualização.';
 $string['privacy:metadata:upgrade_log:info'] = 'A informação principal desta etapa da atualização..';
@@ -1657,7 +1658,7 @@ $string['proceed'] = 'Continuar';
 $string['profile'] = 'Perfil';
 $string['profilenotshown'] = 'Esta descrição do perfil não será mostrada até que este utilizador esteja inscrito em pelo menos uma disciplina.';
 $string['publicprofile'] = 'Perfil público';
-$string['publicsitefileswarning'] = 'Nota: Os ficheiros aqui colocados poderão ser acedidos por todos';
+$string['publicsitefileswarning'] = 'Atenção: Os ficheiros aqui colocados poderão ser acedidos por todos';
 $string['publicsitefileswarning2'] = 'Nota: Os ficheiros colocados aqui podem ser acedidos por todos os que saibam (ou adivinhem) o URL. Por razões de segurança, é recomendado que todos os ficheiros de cópias de segurança sejam apagados imediatamente após o restauro dos mesmos.';
 $string['publicsitefileswarning3'] = 'Nota: Os ficheiros colocados aqui podem ser acedidos por todos os que saibam (ou adivinhem) o URL.<br />Por razões de segurança, os ficheiros das cópias de segurança devem ser guardados apenas numa pasta segura.';
 $string['question'] = 'Pergunta';
@@ -1682,7 +1683,7 @@ $string['registrationcontactyes'] = 'Sim, inclua um formulário para que outros 
 $string['registrationemail'] = 'Notificações por e-mail';
 $string['registrationinfo'] = '<p>Esta página permite-lhe registar-se no site do Moodle (moodle.org). O registo é gratuito.
 O principal benefício de se registar é que será adicionado a uma lista de correio apenas para divulgação de alertas de segurança e de novas versões do Moodle.</p>
-<p>Por omissão, os seus dados serão mantidos confidenciais, e nunca serão vendidos ou facultados a mais ninguém. A única razão para a recolha desta informação é para efeitos de apoio, e para ajudar a criar estatísticas acerca da comunidade de utilizadores do Moodle.</p>
+<p>Por predefinição, os seus dados serão mantidos confidenciais, e nunca serão vendidos ou facultados a mais ninguém. A única razão para a recolha desta informação é para efeitos de apoio, e para ajudar a criar estatísticas acerca da comunidade de utilizadores do Moodle.</p>
 <p>Se assim o entender, poderá permitir que o nome do seu site, país e URL sejam adicionados à lista pública de sites que usam o Moodle.</p>
 <p>Todos os novos registos serão verificados manualmente antes de serem adicionados à lista, mas uma vez adicionados, poderá atualizar os dados do seu registo em qualquer altura submetendo novamente este formulário.</p>';
 $string['registrationinfotitle'] = 'Informação de registo';
@@ -1840,7 +1841,7 @@ $string['selectacountry'] = 'Selecione um país';
 $string['selectacourse'] = 'Selecione uma disciplina';
 $string['selectacoursesite'] = 'Selecione uma disciplina ou site';
 $string['selectagroup'] = 'Selecione um grupo';
-$string['selectall'] = 'Selecionar todos';
+$string['selectall'] = 'Selecionar tudo';
 $string['selectallusersonpage'] = 'Selecionar todos os utilizadores nesta página';
 $string['selectalluserswithcount'] = 'Selecionar todos os {$a} utilizadores';
 $string['selectamodule'] = 'Por favor, selecione um módulo de atividade';
@@ -1853,7 +1854,7 @@ $string['selectcoursesortby'] = 'Selecione como pretende ordenar as disciplinas'
 $string['selectdefault'] = 'Selecionar valor predefinido';
 $string['selectedcategories'] = 'Categorias selecionadas';
 $string['selectedfile'] = 'Selecione um ficheiro';
-$string['selectednowmove'] = '{$a} ficheiros selecionados para serem movidos. Vá ao destino e pressione Mude os ficheiros para este local';
+$string['selectednowmove'] = '{$a} ficheiros selecionados para serem movidos. Vá para a pasta de destino e pressione \'Mover os ficheiros para este local\'';
 $string['selectfiles'] = 'Selecione os ficheiros';
 $string['selectitem'] = 'Selecionar \'{$a}\'';
 $string['selectmoduletoviewhelp'] = 'Selecione uma atividade ou recurso para exibir a respetiva ajuda. Faça duplo clique no nome de uma atividade ou recurso para os adicionar rapidamente.';
@@ -1893,11 +1894,11 @@ $string['showchartdata'] = 'Mostrar dados do gráfico';
 $string['showcomments'] = 'Mostrar/Ocultar comentários';
 $string['showcommentsnonjs'] = 'Mostrar comentários';
 $string['showdescription'] = 'Mostrar descrição na página da disciplina';
-$string['showdescription_help'] = 'Se ativar esta opção, a descrição acima será exibida na página da disciplina logo abaixo da hiperligação para a atividade ou recurso.';
+$string['showdescription_help'] = 'Se ativar esta opção, a descrição acima será exibida na página da disciplina, logo abaixo da hiperligação para a atividade ou recurso.';
 $string['showgrades'] = 'Mostrar a pauta aos alunos';
 $string['showgrades_help'] = 'Muitas das atividades permitem que seja atribuída avaliação. Esta configuração determina se o aluno pode ver a lista das suas notas na disciplina através de uma hiperligação disponível no menu de navegação ou no bloco administração.';
 $string['showingacourses'] = 'Mostrar todas as {$a} disciplinas';
-$string['showingxofycourses'] = 'A mostrar disciplinas de {$a->start} a {$a->end} num total de  {$a->total} disciplinas';
+$string['showingxofycourses'] = 'A mostrar as disciplinas {$a->start} a {$a->end} do total de  {$a->total} disciplinas';
 $string['showlistofcourses'] = 'Mostrar todas as disciplinas';
 $string['showmodulecourse'] = 'Mostrar a lista de disciplinas com esta atividade';
 $string['showoncoursepage'] = 'Mostrar na página da disciplina';
@@ -1959,7 +1960,7 @@ $string['standard'] = 'Padrão';
 $string['starpending'] = '([*] = disciplinas à espera de aprovação)';
 $string['startdate'] = 'Data de início';
 $string['startdate_help'] = 'Esta configuração determina a data de início da disciplina quando definida em formato semanal. Também determina a data mais próxima em que os relatórios das atividades da disciplina estarão disponíveis. Caso a disciplina seja reiniciada e a data de início alterada, todas as datas da disciplina serão alteradas relativamente à nova data de início.';
-$string['startingfrom'] = 'Iniciar a partir de';
+$string['startingfrom'] = 'Início';
 $string['startsignup'] = 'Criar nova conta';
 $string['state'] = 'Estado/Província';
 $string['statistics'] = 'Estatísticas';
@@ -2061,7 +2062,7 @@ $string['thereareno'] = 'Não existe nenhum {$a} nesta disciplina';
 $string['thiscategory'] = 'Esta categoria';
 $string['thiscategorycontains'] = 'Esta categoria contém';
 $string['time'] = 'Data e hora';
-$string['timecreatedcourse'] = 'Data e hora da criação da disciplina';
+$string['timecreatedcourse'] = 'Data e hora de criação da disciplina';
 $string['timesplitting:deciles'] = 'Último décimo';
 $string['timesplitting:deciles_help'] = 'Este intervalo de análise divide a disciplina em décimos (10 partes iguais), sendo cada previsão baseada apenas nos dados do décimo anterior mais recente.';
 $string['timesplitting:decilesaccum'] = 'Todos os décimos anteriores';
@@ -2128,7 +2129,7 @@ $string['unknowncategory'] = 'Categoria desconhecida';
 $string['unknownerror'] = 'Erro desconhecido';
 $string['unknownuser'] = 'Utilizador desconhecido';
 $string['unlimited'] = 'Ilimitado';
-$string['unpacking'] = 'Desempacotando {$a}';
+$string['unpacking'] = 'A desempacotar {$a}';
 $string['unsafepassword'] = 'Senha pouco segura - tente outra melhor';
 $string['untilcomplete'] = 'Até estar completo';
 $string['unusedaccounts'] = 'Contas que não sejam utilizadas por mais do que {$a} dias são apagadas automaticamente';
@@ -2192,7 +2193,7 @@ $string['usernamelowercase'] = 'Apenas são permitidas letras minúsculas';
 $string['usernamenotfound'] = 'O nome de utilizador não foi encontrado na base de dados';
 $string['usernameoremail'] = 'Introduza o nome de utilizador ou o e-mail';
 $string['usernotconfirmed'] = 'Não foi possível confirmar {$a}';
-$string['userpic'] = 'Foto';
+$string['userpic'] = 'Foto do utilizador';
 $string['userpreferences'] = 'Preferências do utilizador';
 $string['users'] = 'Utilizadores';
 $string['userselectorautoselectunique'] = 'Se for encontrado apenas um utilizador, selecionar automaticamente';
@@ -2205,6 +2206,7 @@ $string['useruploadtype'] = 'Tipo de envio do utilizador: {$a}';
 $string['userzones'] = 'Zonas de utilizador';
 $string['usetheme'] = 'Usar tema';
 $string['usingexistingcourse'] = 'Usando a disciplina existente';
+$string['validatehtml'] = 'Validar HTML';
 $string['valuealreadyused'] = 'Este valor já foi usado.';
 $string['version'] = 'Versão';
 $string['view'] = 'Ver';
@@ -2222,6 +2224,7 @@ $string['visible_help'] = 'Esta configuração determina se a disciplina aparece
 $string['visibletostudents'] = 'Visível para {$a}';
 $string['warning'] = 'Aviso';
 $string['warningdeleteresource'] = 'Advertência: {$a} é referido(a) num recurso. Quer atualizar o recurso?';
+$string['wcagcheck'] = 'Verificação das Diretrizes de Acessibilidade do Conteúdo da Web (WCAG)';
 $string['webpage'] = 'Página Web';
 $string['week'] = 'Semana';
 $string['weekhide'] = 'Ocultar esta semana a {$a}';
@@ -2237,7 +2240,7 @@ Uma das primeiras coisas que deveria fazer é editar a sua página de perfil den
 $string['whatforlink'] = 'O que pretende fazer com a hiperligação?';
 $string['whatforpage'] = 'O que pretende fazer com o texto?';
 $string['whatisyourage'] = 'Qual é a sua idade?';
-$string['whattocallzip'] = 'Qual o nome para o ficheiro .zip?';
+$string['whattocallzip'] = 'Qual o nome para o ficheiro Zip?';
 $string['whattodo'] = 'O que fazer';
 $string['wheredoyoulive'] = 'Em que país vive?';
 $string['whyisthisrequired'] = 'Porque é que isto é obrigatório?';
@@ -2275,7 +2278,7 @@ $string['yahooid'] = 'ID do Yahoo';
 $string['year'] = 'ano';
 $string['years'] = 'anos';
 $string['yes'] = 'Sim';
-$string['youareabouttocreatezip'] = 'Está prestes a criar um ficheiro .zip contendo';
+$string['youareabouttocreatezip'] = 'Está prestes a criar um ficheiro Zip contendo';
 $string['youaregoingtorestorefrom'] = 'Irá restaurar de';
 $string['youhaveupcomingactivitiesdue'] = 'Tem atividades com data limite próxima';
 $string['youhaveupcomingactivitiesdueinfo'] = 'Olá {$a},
@@ -2286,4 +2289,4 @@ $string['yourlastlogin'] = 'A sua última autenticação foi';
 $string['yourself'] = 'si próprio';
 $string['yourteacher'] = 'seu {$a}';
 $string['yourwordforx'] = 'Designação para "{$a}"';
-$string['zippingbackup'] = 'Empacotando a cópia de segurança (zip)';
+$string['zippingbackup'] = 'A compactar a cópia de segurança (Zip)';

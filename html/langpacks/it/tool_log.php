@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['actlogshdr'] = 'Log store disponibili';
 $string['configlogplugins'] = 'Abilitare tutti i plugin necessari ordinandoli in base alle esigenze.';
 $string['exportlog'] = 'Includi i log nelle esportazioni';
-$string['exportlogdetail'] = 'Nelle esportazioni saranno inclusi i logo relativi agli utenti.';
+$string['exportlogdetail'] = 'Nelle esportazioni saranno inclusi i log che riguardano gli utenti.';
 $string['logging'] = 'Logging';
 $string['managelogging'] = 'Gestione log store';
 $string['pluginname'] = 'Gestore log store';

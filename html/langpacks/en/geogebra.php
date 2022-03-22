@@ -35,11 +35,14 @@ $string['availabledate'] = 'Available from';
 $string['average'] = 'Average';
 $string['choosescripttype'] = 'Choose the script type';
 $string['comment'] = 'Comment';
+$string['configintro'] = 'The values set here define the default URLs from which to load GeoGebra.';
 $string['contentheader'] = 'Content';
 $string['coursewithoutstudents'] = 'Course without students';
 $string['datestudent'] = 'Last modified (submission)';
 $string['dateteacher'] = 'Last modified (grade)';
 $string['deleteallattempts'] = 'Delete all attempts';
+$string['deployggb'] = 'URL for GeoGebra distribution';
+$string['deployggb_desc'] = 'URL for the deployggb.js distribution file. Usually should point to www.geogebratube.org. Can be a local file.';
 $string['description'] = 'Description';
 $string['discardchanges'] = 'Discard changes and return';
 $string['duedate'] = 'Due date';
@@ -51,6 +54,8 @@ $string['event_course_module_viewed'] = 'Course module viewed';
 $string['event_instances_list_viewed'] = 'Instances list viewed';
 $string['expired'] = 'Sorry, this activity closed on {$a} and is no longer available';
 $string['extractedfromggb'] = 'extracted files from ggb';
+$string['fflate'] = 'URL for fflate distribution';
+$string['fflate_desc'] = 'URL for the fast flate script, used to decompress the GeoGebra javascript files.';
 $string['filename'] = 'Filename';
 $string['filenotfound'] = 'Specified file doesn\'t exist';
 $string['filetype'] = 'Type';
@@ -74,7 +79,9 @@ $string['geogebraurl_help'] = 'Find the construction on <a href="https://www.geo
 $string['grade'] = 'Grade';
 $string['gradeit'] = 'Grade';
 $string['grademethod'] = 'Grading Method';
+$string['header_geogebra'] = 'GeoGebra parameters';
 $string['height'] = 'Height';
+$string['height_help'] = 'Value in pixels.';
 $string['highestattempt'] = 'Highest attempt';
 $string['httpnotallowed'] = 'At the moment is not allowed to use external files';
 $string['interfaceoptionsgrp'] = 'User interface';
@@ -89,8 +96,8 @@ $string['lowestattempt'] = 'Lowest attempt';
 $string['manualgrade'] = 'Is manual grade?';
 $string['maxattempts'] = 'Maximum number of attemps';
 $string['modulename'] = 'GeoGebra';
-$string['modulename_help'] = '<p><a href="http://www.geogebra.org" target="_blank">GeoGebra</a> is a free and multi-platform dynamic mathematics software for all levels of education that joins geometry, algebra, tables, graphing, statistics and calculus in one easy-to-use package.</p>
-<p>Therefore, the <a href="http://www.gencat.cat/ensenyament/" target="_blank">Departament of Education of Catalonia</a> in collaboration with the <a href="http://acgeogebra.cat/" target="_blank">Catalan Association of GeoGebra</a> (ACG) and the GeoGeobra development team have implemented this module that allows the incorporation of GeoGebra activities in Moodle. Its main features are:
+$string['modulename_help'] = '<p><a href="https://www.geogebra.org" target="_blank">GeoGebra</a> is a free and multi-platform dynamic mathematics software for all levels of education that joins geometry, algebra, tables, graphing, statistics and calculus in one easy-to-use package.</p>
+<p>Therefore, the <a href="http://www.gencat.cat/ensenyament/" target="_blank">Departament of Education of Catalonia</a> in collaboration with the <a href="https://acgeogebra.cat/" target="_blank">Catalan Association of GeoGebra</a> (ACG) and the GeoGeobra development team have implemented this module that allows the incorporation of GeoGebra activities in Moodle. Its main features are:
 <ul>
     <li>Allows embedding easily GeoGebra activities in some Moodle course.</li>
     <li>Facilitates students tracing because it stores the score, date, duration and construction of each of the attempts made by the users.</li>
@@ -125,9 +132,10 @@ $string['resultstab'] = 'Results';
 $string['resumeattempt'] = 'Resuming unfinished attempt';
 $string['review'] = 'Review of';
 $string['reviewtab'] = 'Review';
-$string['save'] = 'Save';
 $string['savechanges'] = 'Save changes';
 $string['savewithoutsubmitting'] = 'Save without submitting';
+$string['seed'] = 'Seed';
+$string['seed_help'] = 'Seed can be a positive number between 0 and 99. If zero a Geogebra activity generated using randomness will be different upon every reload. If not zero, upon reload, the same randomized version is presented. Using two different seeds will give two different randomized versions. Use a zero seed to give each student a different test. Use a non zero seed for guided test practicing to be sure that all the students receive the same test.';
 $string['settings'] = 'Settings';
 $string['showAlgebraInput'] = 'Show inputbar';
 $string['showMenuBar'] = 'Show menubar';
@@ -144,6 +152,8 @@ $string['ungraded'] = 'Ungraded';
 $string['unlimitedattempts'] = 'Unlimited attempts for this activity';
 $string['urledit'] = 'GeoGebra file';
 $string['urledit_help'] = 'The ".ggb" file where you will find the GeoGebra activity.';
+$string['urlggb'] = 'Custom deploy URL';
+$string['urlggb_help'] = 'Alternative URL for the deployggb.js file, i.e. where the GeoGebra distribution is located. If it is set, this URL will be used instead of the default value set in module configuration. Usually, this field can be left empty.';
 $string['useBrowserForJS'] = 'Use JavaScript from:';
 $string['useBrowserForJS_geogebra'] = 'GeoGebra file (false)';
 $string['useBrowserForJS_html'] = 'HTML (true)';
@@ -154,3 +164,4 @@ $string['viewattempttab'] = 'View attempt';
 $string['viewtab'] = 'View';
 $string['weight'] = 'Weight';
 $string['width'] = 'Width';
+$string['width_help'] = 'Value in pixels. If empty or zero, the width of the GeoGebra activity will be 100% of the GeoGebra container.';

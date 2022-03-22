@@ -47,7 +47,7 @@ $string['expiredaction'] = 'Aktion bei Einschreibungsablauf';
 $string['expiredaction_help'] = 'Wählen Sie, welche Aktion ausgeführt werden soll, wenn die Nutzereinschreibung abläuft. Bitte beachten Sie bitte, dass bei der Kursabmeldung Nutzerdaten und -einstellungen gelöscht werden.';
 $string['expirymessageenrolledbody'] = 'Guten Tag {$a->user},
 
-Sie sind derzeit im Kurs \'{$a->course}\' eingeschrieben. Die Teilnahmedauer lauft am {$a->timeend} ab. Danach ist ein Zugriff auf den Kurs nicht mehr möglich.
+Sie sind derzeit im Kurs \'{$a->course}\' eingeschrieben. Die Teilnahmedauer läuft am {$a->timeend} ab. Danach ist ein Zugriff auf den Kurs nicht mehr möglich.
 
 Wenn Sie Fragen haben, wenden Sie sich bitte an {$a->enroller}.
 

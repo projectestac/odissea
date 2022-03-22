@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['additionaldelimiters'] = 'Ytterligare ekvationsavgränsare';
 $string['additionaldelimiters_help'] = 'MathJax-filtret parsar text för ekvationer som finns i avgränsare.
 
-Listan över de avgränsartecken som stöds kan läggas till här (t.ex. använder <tt>AsciiMath</tt> `). Avgränsare kan innehålla flera tecken och flera avgränsare kan separeras med kommatecken.';
+Listan över de avgränsartecken som stöds kan läggas till här (t.ex. använder <tt>AsciiMath</tt> tecknet "`"). Avgränsare kan innehålla flera tecken och flera avgränsare kan separeras med kommatecken.';
 $string['filtername'] = 'MathJax';
 $string['httpsurl'] = 'MathJax-adress';
 $string['httpsurl_help'] = 'Fullständig URL till MathJax-biblioteket.';

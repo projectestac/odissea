@@ -27,6 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['error_connection'] = 'Une erreur s\'est produite lors du chargement de MathType';
 $string['pluginname'] = 'MathType par WIRIS';
-$string['privacy:null_reason'] = 'MathType pour Atto ne modifie ni enregistre aucune donnée personnelle.';
 $string['wiris_chem_editor_title'] = 'Insérer une formule chimique - ChemType';
 $string['wiris_editor_title'] = 'Insérer une équation mathématique - MathType';

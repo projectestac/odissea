@@ -26,9 +26,16 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '상호작용 보고서';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'SCORM 상호작용 보고서에 질문 요약을 나타낼 지 여부';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'SCORM 상호작용 보고서에 응답 요약을 나타낼 지 여부';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'SCORM 상호작용 보고서에 결과 요약을 나타낼 지 여부';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'SCORM 상호작용 보고서에 정답 요약을 나타낼 지 여부';
+$string['privacy:metadata:preference:scorm_report_pagesize'] = 'SCROM 보고서에 나타낼 사용자 수';
 $string['questionx'] = '질문 {$a}';
 $string['responsex'] = '응답 {$a}';
+$string['resultx'] = '결과 {$a}';
 $string['rightanswerx'] = '정답 {$a}';
 $string['summaryofquestiontext'] = '질문 요약';
 $string['summaryofresponse'] = '응답 요약';
+$string['summaryofresult'] = '결과 요약';
 $string['summaryofrightanswer'] = '정답 요약';

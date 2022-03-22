@@ -135,7 +135,7 @@ class com_wiris_util_xml_MathMLUtils {
 			return false;
 		}
 		$mathml = com_wiris_util_xml_MathMLUtils::stripRootTag($mathml, "math");
-		$allowedTags = new _hx_array(array("mrow", "mn", "mi", "mo", "mtext"));
+		$allowedTags = new _hx_array(array("mrow", "mn", "mi", "mo", "mtext", "mfenced"));
 		$start = 0;
 		while(($start = _hx_index_of($mathml, "<", $start)) !== -1) {
 			$sb = new StringBuf();
@@ -147,28 +147,34 @@ class com_wiris_util_xml_MathMLUtils {
 				$sb->b .= chr($c);
 				$c = _hx_char_code_at($mathml, ++$start);
 			}
+			$tagName = $sb->b;
 			if($c === 32 || $c === 47) {
 				return false;
 			}
-			$tagName = $sb->b;
 			if(!com_wiris_util_type_Arrays::containsArray($allowedTags, $tagName)) {
 				return false;
 			}
 			$end = _hx_index_of($mathml, "<", ++$start);
 			$content = _hx_substr($mathml, $start, $end - $start);
-			if($content === "&#xA0;" || $content === "&nbsp;" || $content === "&#8201;" || $content === "&thinsp;") {
-				continue;
-			}
+			$content = com_wiris_util_xml_WXmlUtils::resolveEntities($content);
+			$content = str_replace("&lt;", "<", $content);
+			$content = str_replace("&gt;", ">", $content);
+			$content = str_replace("&quot;", "\"", $content);
+			$content = str_replace("&apos;", "'", $content);
+			$content = str_replace("&amp;", "&", $content);
 			$i = com_wiris_system_Utf8::getIterator($content);
 			while($i->hasNext()) {
 				$c = $i->next();
-				if(!(com_wiris_util_xml_WCharacterBase::isDigit($c) || com_wiris_util_xml_WCharacterBase::isLetter($c) || $c === 35 || $c === 160 || $c === 8201)) {
+				if(!com_wiris_util_xml_MathMLUtils::isKeyboardChar($c) && !com_wiris_util_xml_WCharacterBase::isLetter($c) && !com_wiris_util_xml_WCharacterBase::isDigit($c) && $c !== com_wiris_util_xml_WCharacterBase::$NO_BREAK_SPACE && $c !== com_wiris_util_xml_WCharacterBase::$THIN_SPACE && $c !== com_wiris_util_xml_WCharacterBase::$NUMBER_SIGN) {
 					return false;
 				}
 			}
 			unset($tagName,$sb,$i,$end,$content,$c);
 		}
 		return true;
+	}
+	static function isKeyboardChar($c) {
+		return $c >= 32 && $c <= 126 || $c >= 161 && $c <= 191 || $c === 8364;
 	}
 	static function stripRootTag($xml, $tag) {
 		$s = com_wiris_util_xml_MathMLUtils::splitRootTag($xml, $tag);

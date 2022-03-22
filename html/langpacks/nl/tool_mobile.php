@@ -75,7 +75,7 @@ $string['getmoodleonyourmobile'] = 'Installeer de mobiele app';
 $string['h5poffline'] = 'Bekijk H5P-inhoud offline';
 $string['httpsrequired'] = 'HTTPS vereist';
 $string['insecurealgorithmwarning'] = 'Het lijkt er op dat het HTTPS-certificaat en onveilig algoritme gebruikt voor ondertekening (SHA-1). Probeer het certificaat te updaten.';
-$string['invalidcertificatechainwarning'] = 'Het lijkt er op dat de certificaatketting niet geldig is';
+$string['invalidcertificatechainwarning'] = 'Het lijkt er op dat de certificaatketting niet geldig is. Dit certificaat kan werken voor een browser, maar niet voor de mobiele app.';
 $string['invalidcertificateexpiredatewarning'] = 'Het lijkt er op dat het HTTPS certificaat voor deze site vervallen is.';
 $string['invalidcertificatestartdatewarning'] = 'Het lijkt er op dat het HTTPS-certificaat nog niet geldig is (met een startdatum in de toekomst).';
 $string['invalidprivatetoken'] = 'Ongeldig privé token. Token zou niet leeg mogen zijn of worden doorgegeven via GET parameter.';
@@ -131,7 +131,8 @@ $string['readingthisemailgettheapp'] = 'Dit in een e-mail lezen? <a href="{$a}">
 $string['remoteaddons'] = 'Externe add-ons';
 $string['responsivemainmenuitems'] = 'Responsieve menu-items';
 $string['scanqrcode'] = 'Scan QR code';
-$string['selfsignedoruntrustedcertificatewarning'] = 'Het lijkt er op dat het HTTPS-certificaat zelf ondertekend is of niet vertrouwd. De mobile app zal enkel werken met vertrouwde sites.';
+$string['selfsignedoruntrustedcertificatewarning'] = 'Het lijkt er op dat het HTTPS-certificaat zelf ondertekend is of niet vertrouwd. De mobile app zal enkel werken met vertrouwde sites.
+Gebruik een online SSL-checker om het probleem op te sporen. Als daaruit blijkt dat je certificaat OK is, dan mag je deze waarschuwing negeren.';
 $string['setuplink'] = 'App downloadpagina';
 $string['setuplink_desc'] = 'URL van de pagina die linkt naar de mobiele app van de App Store en Google Play. De app download pagina-link wordt getoond in de footer van de profielpagina van een gebruiker. Laat leeg om geen link te tonen.';
 $string['smartappbanners'] = 'App Banners';

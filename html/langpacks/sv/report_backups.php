@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['backupofcourselogs'] = 'Loggposter för säkerhetskopiering av {$a}';
 $string['logsofbackupexecutedon'] = 'Loggposter för säkerhetskopiering utförd {$a}';
 $string['nobackupsfound'] = 'Inga säkerhetskopior hittades.';
-$string['nologsfound'] = 'Inga loggposter hittades för denna säkerhetskopiering.';
+$string['nologsfound'] = 'Inga loggposter hittades för denna säkerhetskopia.';
 $string['pluginname'] = 'Rapporter för säkerhetskopieringar';
 $string['privacy:metadata'] = 'Pluginmodulen för rapporter för säkerhetskopieringar lagrar ingen personinformation.';
 $string['strftimetime'] = '%I:%M:%S %p';

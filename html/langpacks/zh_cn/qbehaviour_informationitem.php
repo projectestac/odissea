@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '信息条目专用行为';
+$string['privacy:metadata'] = '信息条目问题行为插件不存储任何个人数据。';
 $string['seen'] = '已阅';

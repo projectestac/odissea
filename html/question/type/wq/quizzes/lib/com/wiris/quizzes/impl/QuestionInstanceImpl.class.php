@@ -1376,7 +1376,7 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 			return null;
 		}
 		$h = new com_wiris_quizzes_impl_HTMLTools();
-		$h->setItemSeparator($this->getLocalData(com_wiris_quizzes_impl_LocalData::$KEY_ITEM_SEPARATOR));
+		$h->setItemSeparator($this->getItemSeparator());
 		$h->setAnswerKeyword($this->getAnswerParameterName());
 		$h->setPlotterLoadingSrc(com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getResourceUrl("plotter_loading.png"));
 		$h->setProxyUrl(com_wiris_quizzes_impl_QuizzesImpl::getInstance()->getConfiguration()->get(com_wiris_quizzes_api_ConfigurationKeys::$PROXY_URL));
@@ -1384,6 +1384,15 @@ class com_wiris_quizzes_impl_QuestionInstanceImpl extends com_wiris_util_xml_Ser
 		$h->setAnswerKeyword($this->getAnswerParameterName());
 		$text = $h->expandAnswers($text, $this->userData->answers, $this->isCompoundAnswer());
 		return $text;
+	}
+	public function getItemSeparator() {
+		if($this->question !== null) {
+			$itemSeparator = $this->question->getImpl()->getItemSeparator();
+			if($itemSeparator !== null) {
+				return $itemSeparator;
+			}
+		}
+		return ",";
 	}
 	public function defaultLocalData($name) {
 		return null;

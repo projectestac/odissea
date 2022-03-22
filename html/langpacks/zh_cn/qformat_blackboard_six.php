@@ -34,4 +34,5 @@ $string['importnotext'] = '在 XML 文件中丢失问题文本';
 $string['notenoughtsubans'] = '无法导入匹配问题 {$a}，因为一个匹配的问题必须包括至少两个问题以及三个答案。';
 $string['pluginname'] = 'Blackboard V6+';
 $string['pluginname_help'] = 'Blackboard V6+格式支持通过dat或zip文件导入所有Blackboard导出的题目。对zip文件，还支持导入图片。';
+$string['privacy:metadata'] = 'Blackbard 问题格式插件不存储任何个人数据。';
 $string['unhandledpresblock'] = '未处理的演示版块';
