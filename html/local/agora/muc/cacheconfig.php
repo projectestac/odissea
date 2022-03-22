@@ -80,6 +80,7 @@ global $CFG;
         'prefix' => $CFG->redis_prefix,
         'password' => '',
         'serializer' => '1',
+        'compressor' => '1',
       ),
       'features' => 26,
       'modes' => 3,

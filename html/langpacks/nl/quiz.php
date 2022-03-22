@@ -234,7 +234,7 @@ Neem nota van wat je op deze pagina ingetikt hebt tijdens de laatste minuten en 
 Als de connectie terug lukt, dan zou je antwoord bewaard moeten worden en zal dit bericht verdwijnen.';
 $string['connectionok'] = 'Netwerkverbinding hersteld. Je kunt veilig verder werken.';
 $string['containercategorycreated'] = 'Deze categorie is aangemaakt om alle originele categorieën in te verzamelen. Die zijn naar site-niveau verplaatst om onderstaande redenen.';
-$string['continueattemptquiz'] = 'Ga verder met de laatste poging';
+$string['continueattemptquiz'] = 'Ga verder met je poging';
 $string['continuepreview'] = 'Ga verder met controleren';
 $string['copyingfrom'] = 'Kopie aan het maken van vraag \'{$a}\'';
 $string['copyingquestion'] = 'Vraag kopiëren';

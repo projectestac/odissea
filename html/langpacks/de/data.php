@@ -296,7 +296,7 @@ $string['number'] = 'Zahl';
 $string['numberrssarticles'] = 'RSS Beiträge';
 $string['numnotapproved'] = 'Wartend';
 $string['numrecords'] = '{$a} Datensätze';
-$string['ods'] = '<abbr title="OpenDocument Tabelle">ODS</abbr>&nbsp;(OpenOffice)';
+$string['ods'] = '<abbr title="OpenDocument Tabelle">ODS</abbr>&nbsp;(OpenDocument)';
 $string['openafterclose'] = 'Das Enddatum kann nicht vor dem Startdatum liegen.';
 $string['optionaldescription'] = 'Beschreibung (optional)';
 $string['optionalfilename'] = 'Dateiname (optional)';

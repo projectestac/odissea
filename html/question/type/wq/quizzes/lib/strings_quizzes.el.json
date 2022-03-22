@@ -94,6 +94,11 @@
 		"quizzes_studio_home_answer_type_equation_label": "Εξίσωση",
 		"quizzes_studio_home_answer_type_graphic_label": "Γραφικό",
 		"quizzes_studio_home_answer_type_text_label": "Κείμενο",
+		"quizzes_studio_home_answer_type_standard_graphic_label": "Standard",
+		"quizzes_studio_home_answer_type_bar_chart_label": "Bar chart",
+		"quizzes_studio_home_answer_type_line_chart_label": "Line chart",
+		"quizzes_studio_home_answer_type_pie_chart_label": "Pie chart",
+
 
 		"quizzes_studio_home_question_math_content_label": "Καθορισμός του αρχικού περιεχομένου και της σωστής απάντησης για την ερώτησή σας",
 		"quizzes_studio_home_question_text_content_label": "Καθορισμός της σωστής απάντησης για την ερώτησή σας",

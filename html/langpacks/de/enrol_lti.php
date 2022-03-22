@@ -25,14 +25,14 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allowframeembedding'] = 'Beachten Sie: Es wird empfohlen die "Frame-Einbettung erlauben"-Einstellung zu aktivieren, damit Tools in einem Frame statt in einem neuen Fenster angezeigt werden.';
-$string['authltimustbeenabled'] = 'Hinweis: Dieses Plugin bedarf auch der Aktivierung des LTI Authentifizierungs-Plugins';
+$string['allowframeembedding'] = 'Hinweis: Die Einstellung "Frame-Einbettung erlauben" sollte aktiviert werden, damit LTI Tools in einem Frame statt in einem neuen Fenster angezeigt werden.';
+$string['authltimustbeenabled'] = 'Hinweis: Dieses Plugin benötigt auch der Aktivierung des Plugins "LTI Authentifizierung"';
 $string['cartridgeurl'] = 'Cartridge URL';
 $string['couldnotestablishproxy'] = 'Proxy mit Consumer konnte nicht hergestellt werden.';
 $string['enrolenddate'] = 'Einschreibungsende';
 $string['enrolenddate_help'] = 'Diese Option legt fest, dass Nutzer/innen nur bis zu diesem Termin zugreifen können.';
 $string['enrolenddateerror'] = 'Das Einschreibungsende muss nach dem Einschreibungsbeginn liegen.';
-$string['enrolisdisabled'] = 'Das Plugin \'Veröffentlichen als LTI-Tool\' ist deaktiviert.';
+$string['enrolisdisabled'] = 'Das Plugin \'Veröffentlichen als LTI Tool\' ist deaktiviert.';
 $string['enrolmentfinished'] = 'Einschreibung beendet';
 $string['enrolmentnotstarted'] = 'Einschreibung hat nicht begonnen';
 $string['enrolperiod'] = 'Einschreibungsdauer';

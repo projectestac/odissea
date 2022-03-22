@@ -65,11 +65,30 @@ $string['defaultperiod_desc'] = 'Default length of time that the enrolment is va
 $string['defaultperiod_help'] = 'Default length of time that the enrolment is valid, starting with the moment the user is enrolled. If disabled, the enrolment duration will be unlimited by default.';
 $string['editdescription'] = 'Textarea description';
 $string['enrolname'] = 'Course enrol confirmation';
+$string['enrolperiod'] = 'Enrolment duration';
+$string['enrolperiod_desc'] = 'Default length of time that the enrolment is valid. If set to zero, the enrolment duration will be unlimited by default.';
+$string['enrolperiod_help'] = 'Length of time that the enrolment is valid, starting with the moment the user enrols themselves. If disabled, the enrolment duration will be unlimited.';
 $string['enrolusers'] = 'Enrol users';
 $string['expiredaction'] = 'Enrolment expiry action';
 $string['expiredaction_help'] = 'Select action to carry out when user enrolment expires. Please note that some user data and settings are purged from course during course unenrolment.';
 $string['expiry_desc'] = '';
 $string['expiry_heading'] = 'Expiry settings';
+$string['expirymessageenrolledbody'] = 'Dear {$a->user},
+
+This is a notification that your enrolment in the course \'{$a->course}\' is due to expire on {$a->timeend}.
+
+If you need help, please contact {$a->enroller}.';
+$string['expirymessageenrolledsubject'] = 'Apply enrolment expiry notification';
+$string['expirymessageenrollerbody'] = 'Apply enrolment in the course \'{$a->course}\' will expire within the next {$a->threshold} for the following users:
+
+    {$a->users}
+
+To extend their enrolment, go to {$a->extendurl}';
+$string['expirymessageenrollersubject'] = 'Apply enrolment expiry notification';
+$string['expirynotifyall'] = 'Teacher and enrolled user';
+$string['expirynotifyenroller'] = 'Teacher only';
+$string['group'] = 'Group assignement';
+$string['group_help'] = 'You can assign none or multiples groups';
 $string['mailtoteacher_suject'] = 'New Enrolment request!';
 $string['maxenrolled'] = 'Max enrolled users';
 $string['maxenrolled_help'] = 'Specifies the maximum number of users that can self enrol. 0 means no limit.';
@@ -80,6 +99,7 @@ $string['maxenrolledreached_right'] = 'has already been reached.';
 $string['messageprovider:application'] = 'Course enrolment application notifications';
 $string['messageprovider:cancelation'] = 'Course enrolment application cancelation notifications';
 $string['messageprovider:confirmation'] = 'Course enrolment application confirmation notifications';
+$string['messageprovider:expiry_notification'] = 'Apply enrolment expiry notifications';
 $string['messageprovider:waitinglist'] = 'Course enrolment application defer notifications';
 $string['newapplicationnotification'] = 'There is a new course enrolment application awaiting review.';
 $string['newenrols'] = 'Allow new course enrol request';
@@ -90,9 +110,12 @@ $string['notifycoursebased'] = 'New enrolment application notification (instance
 $string['notifycoursebased_desc'] = 'Default for new instances: Notify everyone who have the \'Manage apply enrolment\' capability for the corresponding course (eg. teachers and managers)';
 $string['notifyglobal'] = 'New enrolment application notification (global, eg. global managers and admins)';
 $string['notifyglobal_desc'] = 'Define who gets notified about new enrolment applications for any course.';
+$string['opt_commentaryzone'] = 'Commentary field';
+$string['opt_commentaryzone_help'] = 'Yes -> Enable the commentary field in the enrol form';
 $string['pluginname'] = 'Course enrol confirmation';
 $string['pluginname_desc'] = 'With this plug-in users can apply to be enrolled in a course. A teacher or site manager will then have to approve the enrolment before the user gets enroled.';
 $string['privacy:metadata'] = 'The Course enrol confirmation plugin does not store any personal data.';
+$string['sendexpirynotificationstask'] = 'Apply enrolment send expiry notifications task';
 $string['show_extra_user_profile'] = 'Show extra user profile fields on enrolment screen';
 $string['show_standard_user_profile'] = 'Show standard user profile fields on enrolment screen';
 $string['status'] = 'Allow Course enrol confirmation';

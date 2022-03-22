@@ -33,17 +33,47 @@
 		"tt_length": "Longitud",
 		"tt_labels": "Etiqueta",
 		"tt_elementMML": "Expression",
+		"tt_image": "Imatge",
 
 		"tt_bold": "negreta",
 		"tt_italic": "itàlica",
 		"tt_color": "Color",
+
+		"tt_barChart": "Seleccionar",
+		"tt_newPackBars": "Inserta paquet de barres",
+		"tt_newSideBars": "Inserta grup de barres",
+		"tt_deletePackBars": "Esborra paquet de barres",
+		"tt_deleteSideBars": "Esborra grup de barres",
+		"tt_stackBars": "Apila barres",
+		"tt_unstackBars": "Desapila barres", 
+
+		"tt_pieChart": "Seleccionar",
+		"tt_newPie": "Nou tros",
+		"tt_deletePie": "Esborra tros",
+		"tt_newPieClockwise": "Horari",
+		"tt_newPieCounterclockwise": "Antihorari",
+		"tt_pie2D": "2D",
+		"tt_pie3D": "3D",
+		
+		"tt_lineChart": "Seleccionar",
+		"tt_newLineLineChart": "Inserta línia",
+		"tt_newPointsLineChart": "Inserta grup de punts",
+		"tt_deleteLineLineChart": "Esborra línia",
+		"tt_deletePointsLineChart": "Esborra grup de punts",
+		"tt_addPointsLeft": "Punts esquerra",
+		"tt_addPointsRight": "Punts dreta",
+
+		"tt_fitPlotterToStats": "Encaixa",
+		"tt_horizontal": "Horitzontal",
+		"tt_vertical": "Vertical",
+		"tt_pointDiameter": "Diàmetre de punt",
 
 		"tt_fraction": "fracció gran",
 		"tt_superscript": "superíndex",
 		"tt_squareRoot": "arrel quadrada",
 		"tt_nRoot": "arrel",
 		"tt_numbers": "nombre",
-		"tt_numberE": "número e",
+		"tt_numberE": "nombre e",
 		"tt_numberPi": "nombre pi",
 		"tt_functions": "funcions",
 		"tt_sinus": "sinus",
@@ -83,7 +113,7 @@
 
 		"tt_lineWidth": "Gruix de línia",
 		"tt_lineStyle": "Estil de línia",
-		"tt_lineColor": "Color de línia",
+		"tt_lineColor": "Color",
 
 		"tt_lineSolid": "Sòlid",
 		"tt_lineDash": "Ratlles",
@@ -124,10 +154,13 @@
 		"downloadText": "Seleccioneu una mida per descarregar el tauler gràfic com una imatge PNG quadrada.",
 		"downloadHelperText": "Imatge quadrada (1:1)",
 		"downloadErrorText": "La mida ha de ser un nombre enter positiu.",
-		"confirm": "confirma",
-		"cancel": "cancel·la",
+		"confirm": "Confirmar",
+		"cancel": "cancel·lar",
 		"sizeInPixels": "Mida en píxels",
 		"insertANumber": "Inseriu un nombre",
+
+		"uploadImageErrorTitle": "Ups, something went wrong!",
+		"uploadImageErrorText": "Ensure that the upload is a valid PNG image and try again",
 
 		"type_point": "Punt",
 		"type_line": "Recta",
@@ -157,6 +190,12 @@
 		"type_length": "Longitud",
 		"type_distance": "Distància",
 		"type_label": "Etiqueta de text",
+		
+		"type_bar_chart": "Gràfic de barres",
+		"type_line_chart": "Gràfic de línies",
+		"type_pie_chart": "Gràfic circular",
+		"type_box_plot": "Gràfic de caixes",
+		"type_histogram": "Histograma",
 
 		"equation": "Equació"
 	}

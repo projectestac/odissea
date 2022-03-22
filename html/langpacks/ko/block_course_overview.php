@@ -30,6 +30,7 @@ $string['alwaysshowall'] = '항상 모든것 보여주기';
 $string['collapseall'] = '모든 강좌 목록 접기';
 $string['course_overview:myaddinstance'] = '내 공부방에 새 강좌 개요 블록 추가';
 $string['expandall'] = '모든 강좌 목록 확장';
+$string['help_help'] = '\'이 페이지 편집\'을 눌러 강의 순서를 재배치 할 수 있습니다. 실행 아이콘을 눌러 살펴볼 수 있습니다.';
 $string['message'] = '메세지';
 $string['messages'] = '메세지';
 $string['moveafterhere'] = '{$a->movingcoursename} 강좌를 {$a->currentcoursename} 다음으로 옮김';

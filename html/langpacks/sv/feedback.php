@@ -59,7 +59,7 @@ $string['completed_feedbacks'] = 'Inskickade svar';
 $string['completedon'] = 'Slutförd den {$a}';
 $string['completiondetail:submit'] = 'Skicka in återkoppling';
 $string['completionsubmit'] = 'Visa som slutförd om återkopplingen redan är inskickad';
-$string['configallowfullanonymous'] = 'Om det här alternativet är inställt på \'Ja\' går det att slutföra aktiviteten \'Återkoppling\' på förstasidan utan att först behöva logga in.';
+$string['configallowfullanonymous'] = 'Om det här alternativet är inställt på \'Ja\' går det att slutföra aktiviteten \'Återkoppling\' på startsidan utan att först behöva logga in.';
 $string['confirmdeleteentry'] = 'Är du säker på att du vill ta bort det här inlägget?';
 $string['confirmdeleteitem'] = 'Är du säker på att du vill ta bort den här komponenten?';
 $string['confirmdeletetemplate'] = 'Är du säker på att du vill ta bort den här mallen?';
@@ -168,11 +168,16 @@ $string['messageprovider:submission'] = 'Notiser om återkoppling';
 $string['minimal'] = 'Minimal';
 $string['mode'] = 'Metod';
 $string['modulename'] = 'Återkoppling';
-$string['modulename_help'] = 'Aktiviteten <em>Återkoppling</em> gör det möjligt att utforma enkäter så som man själv vill ha dem. Det finns olika frågetyper att välja emellan, t.ex. flervalsfrågor och ja/nej-frågor.
+$string['modulename_help'] = 'Aktiviteten <strong>Återkoppling</strong> gör det möjligt för en lärare att skapa en anpassad undersökning för att samla in feedback från deltagare med hjälp av en mängd olika frågetyper, inklusive flerval, ja/nej eller textinmatning.
 
-Olika inställningar finns för hur svaren ska visas: helt anonyma eller synliga bara för lärare eller för alla deltagare.
+Feedbacksvar kan vara anonyma om så önskas, och resultaten kan visas för alla deltagare eller begränsas till endast lärare. Eventuella feedbackaktiviteter på webbplatsens hem kan också slutföras av icke-inloggade användare.
 
-En återkoppling på ingångssidan kan även fyllas i av oinloggade användare.';
+Feedbackaktiviteter kan användas
+
+* För kursutvärderingar, hjälper till att förbättra innehållet för kommande deltagare
+* För att deltagarna ska kunna anmäla sig till kursmoduler, evenemang m.m.
+* För gästundersökningar rörande kursval, skolpolicyer etc.
+* För antimobbningsundersökningar där studenter kan rapportera incidenter anonymt';
 $string['modulenameplural'] = 'Återkopplingar';
 $string['move_item'] = 'Flytta den här frågan';
 $string['multichoice'] = 'Flerval';

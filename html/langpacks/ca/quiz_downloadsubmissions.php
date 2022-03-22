@@ -25,4 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadsubmissions'] = 'Descarrega trameses de resposta oberta';
+$string['downloadsubmissions'] = 'Descarrega les trameses de resposta oberta';
+$string['downloadsubmissionsreport'] = 'Descarrega l\'informe de trameses';
+$string['noattempts'] = 'No s\'ha trobat cap intent.';
+$string['noessayquestion'] = 'El qüestionari no conté cap pregunta de resposta oberta.';
+$string['noquestions'] = 'Encara no s\'ha afegit cap pregunta.';
+$string['nosubmission'] = 'No s\'ha trobat cap tramesa.';
+$string['plugindescription'] = 'Descarrega els fitxers enviats per tots els estudiants (tots els intents) com a fitxers adjunts en resposta a les preguntes de resposta oberta del qüestionari.<br><br>';
+$string['pluginname'] = 'Descàrrega de les trameses de resposta oberta';
+$string['reportdownloadsubmissions'] = 'Descarrega l\'informe de trameses';

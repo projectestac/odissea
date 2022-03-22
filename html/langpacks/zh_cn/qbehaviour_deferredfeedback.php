@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '延迟反馈';
+$string['privacy:metadata'] = '延迟反馈行为插件不存储任何个人数据。';

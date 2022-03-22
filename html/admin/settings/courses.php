@@ -615,6 +615,11 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) {
 
     $ADMIN->add('backups', $temp);
 
+    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
+    // 2012.05.23 @sarjona
+    }
+    // ************ FI
+
     // Create a page for asynchronous backup and restore configuration and defaults.
     $temp = new admin_settingpage('asyncgeneralsettings', new lang_string('asyncgeneralsettings', 'backup'));
 
@@ -642,9 +647,4 @@ if ($hassiteconfig or has_any_capability($capabilities, $systemcontext)) {
     $temp->hide_if('backup/backup_async_message', 'backup/backup_async_message_users');
 
     $ADMIN->add('backups', $temp);
-
-    // XTEC ************ AFEGIT - Allow access only to xtecadmin user
-    // 2012.05.23 @sarjona
-    }
-    // ************ FI
 }

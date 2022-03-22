@@ -487,10 +487,10 @@ $string['sendlatenotifications'] = 'Bewerter/innen über verspätete Abgaben von
 $string['sendlatenotifications_help'] = 'Mit der Aktivierung werden die Bewerter (meist die Trainer/innen) benachrichtigt wenn eine Lösung verspätet abgegeben wird. Die Zustellung der Benachrichtigung ist individuell einstellbar.';
 $string['sendnotifications'] = 'Mitteilungen an bewertende Personen senden';
 $string['sendnotifications_help'] = 'Mit der Aktivierung werden die Bewerter (meist die Trainer/innen) benachrichtigt wenn eine Lösung zeitgerecht oder verspätet abgegeben wird. Die Zustellung der Benachrichtigung ist individuell einstellbar.';
-$string['sendstudentnotifications'] = 'Teilnehmer/innen benachrichtigen';
+$string['sendstudentnotifications'] = 'Teilnehmer/in benachrichtigen';
 $string['sendstudentnotifications_help'] = 'Wenn diese Option aktiviert ist, erhalten Teilnehmer/innen eine Benachrichtigung über aktualisierte Bewertungen oder Feedbacks. Wenn in dieser Aufgabe der Bewertungsworkflow verwendet wird, werden Benachrichtigungen erst verschickt, nachdem dessen Status auf "Freigegeben" gesetzt wird.';
-$string['sendstudentnotificationsdefault'] = 'Standardeinstellung für "Teilnehmer/innen benachrichtigen"';
-$string['sendstudentnotificationsdefault_help'] = 'Den Standardwert für Auswahlfeld "Teilnehmer/innen benachrichtigen"  im Bewertungsformular festlegen.';
+$string['sendstudentnotificationsdefault'] = 'Standardeinstellung für "Teilnehmer/in benachrichtigen"';
+$string['sendstudentnotificationsdefault_help'] = 'Den Standardwert für Auswahlfeld "Teilnehmer/in benachrichtigen"  im Bewertungsformular festlegen.';
 $string['sendsubmissionreceipts'] = 'Abgabebestätigung an Teilnehmer/innen versenden';
 $string['sendsubmissionreceipts_help'] = 'Diese Option aktiviert Bestätigungen, die bei der Einreichung von Aufgabenlösungen an die Teilnehmer/innen gesendet werden.';
 $string['setmarkerallocationforlog'] = 'Bewertungszuordnung gesetzt auf: (id={$a->id}, Name={$a->fullname}, Bewerter={$a->marker}).';

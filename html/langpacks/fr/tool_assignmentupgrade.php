@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['areyousure'] = 'Vraiment ?';
+$string['areyousure'] = 'Voulez-vous vraiment continuer ?';
 $string['areyousuremessage'] = 'Voulez-vous vraiment mettre à jour le devoir « {$a->name} »?';
 $string['assignmentid'] = 'ID du devoir';
 $string['assignmentnotfound'] = 'Le devoir n\'a pas été trouvé (id={$a})';

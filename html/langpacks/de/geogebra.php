@@ -69,7 +69,6 @@ $string['nomoreattempts'] = 'Keine weiteren Versuche für diese Aktivität verf�
 $string['previewtab'] = 'Vorschau';
 $string['results'] = 'Ergebnisse';
 $string['resultstab'] = 'Ergebnisse';
-$string['save'] = 'Speichern';
 $string['savechanges'] = 'Änderungen speichern';
 $string['savewithoutsubmitting'] = 'Speichern ohne zu senden';
 $string['settings'] = 'Einstellungen';

@@ -25,4 +25,19 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['buffersize'] = '写入缓冲区大小';
+$string['jsonformat'] = 'JSON格式';
+$string['jsonformat_desc'] = '在“其他”数据库字段中使用标准JSON格式，而不是PHP序列化数据。';
 $string['pluginname'] = '标准日志';
+$string['pluginname_desc'] = '日志插件将日志条目存储在Moodle数据库表格中。';
+$string['privacy:metadata:log'] = '过去事件的集合';
+$string['privacy:metadata:log:anonymous'] = '事件是否标记为匿名';
+$string['privacy:metadata:log:eventname'] = '事件名称';
+$string['privacy:metadata:log:ip'] = '事件发生时使用的IP地址';
+$string['privacy:metadata:log:origin'] = '事件的起源';
+$string['privacy:metadata:log:other'] = '有关活动的其他信息';
+$string['privacy:metadata:log:realuserid'] = '伪装用户时，事件背后真实用户的ID。';
+$string['privacy:metadata:log:relateduserid'] = '与此事件相关的用户的ID';
+$string['privacy:metadata:log:timecreated'] = '事件发生的时间';
+$string['privacy:metadata:log:userid'] = '触发此事件的用户的ID';
+$string['taskcleanup'] = '日志表清理';

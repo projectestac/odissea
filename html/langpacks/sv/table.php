@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadas'] = 'Ladda ner tabelldata som';
+$string['downloadas'] = 'Ladda ned som';
 $string['missingrequiredfields'] = 'Ett eller flera obligatoriska filter saknades ({$a})';
 $string['privacy:metadata'] = 'Tabell-API:t lagrar för närvarande ingen användardata';

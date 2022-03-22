@@ -27,3 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '유튜브';
 $string['pluginname_help'] = '유튜브 비디오 공유 사이트, 비디오 및 재생목록 링크가 지원됩니다.';
+$string['supportsplaylist'] = '유튜브 플레이리스트';
+$string['supportsvideo'] = '유튜브 동영상';

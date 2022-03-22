@@ -67,5 +67,5 @@ $string['primaryvector'] = 'Modo da ordenação de primeiro nível';
 $string['privacy:metadata'] = 'O bloco Lista de disciplinas filtradas mostra informações sobre as inscrições na disciplina mas não afeta nem armazena dados em si. Todas as inscrições são geridas por outros sistemas Moodle.';
 $string['secondarysort'] = 'Segundo nível de ordenação';
 $string['secondaryvector'] = 'Modo da ordenação de segundo nível';
-$string['starredcourses'] = 'Disciplinas marcadas com estrela';
+$string['starredcourses'] = 'Disciplinas com estrela';
 $string['top'] = 'Topo';

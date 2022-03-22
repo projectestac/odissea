@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activemethodinfo'] = '\'{$a->method}\'é selecionado como o método de avaliação ativo para a área \'{$a->area}';
-$string['activemethodinfonone'] = 'Não existe um método de avaliação avançado selecionado para a area \'{$a->area}\' . Será usada a avaliação direta simples.';
+$string['activemethodinfonone'] = 'Não existe um método de avaliação avançado selecionado para a área \'{$a->area}\'. Será usada a avaliação direta simples.';
 $string['changeactivemethod'] = 'Alterar o método de avaliação ativo para';
 $string['clicktoclose'] = 'clique para fechar';
 $string['error:gradingunavailable'] = 'O método de avaliação avançada não está definido corretamente. Verifique todas as opções da avaliação do fórum nas configurações do fórum.';
@@ -68,7 +68,7 @@ $string['privacy:metadata:grading_definitions:name'] = 'O nome da definição de
 $string['privacy:metadata:grading_definitions:options'] = 'Algumas configurações desta definição de avaliação';
 $string['privacy:metadata:grading_definitions:status'] = 'O estado desta avaliação avançada';
 $string['privacy:metadata:grading_definitions:timecopied'] = 'A hora a que a definição da avaliação foi copiada.';
-$string['privacy:metadata:grading_definitions:timecreated'] = 'A hora a que a definição da avaliação foi criada.';
+$string['privacy:metadata:grading_definitions:timecreated'] = 'Data e hora a que a definição da avaliação foi criada';
 $string['privacy:metadata:grading_definitions:timemodified'] = 'A hora a que a definição da avaliação foi modificada.';
 $string['privacy:metadata:grading_definitions:usercreated'] = 'O ID do utilizador que criou a definição de avaliação.';
 $string['privacy:metadata:grading_definitions:usermodified'] = 'O ID do utilizador que modificou a definição de avaliação pela última vez.';

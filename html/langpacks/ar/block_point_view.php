@@ -26,16 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['contentinputlabel'] = 'محتوى الكتلة';
-$string['customcert'] = 'الشهادات المخصصة';
 $string['defaulttextcontent'] = 'يعطي هذا الملحق إمكانية التفاعل وتعيين مستويات الصعوبة للنشاطات.<br/><br/>تم تطوير هذا الملحق من قبل <a href=\'mailto:q.fombaron@outlook.fr?subject="Reaction"%20Moodle%20plugin%20-%20Feedback\'>Quentin Fombaron</a>.<br /><br />يمكنك تحرير هذا النص أو حذفه في قائمة تهيئة الكتلة.<br /><br />';
 $string['emojidesc'] = 'وصف الرمز التعبيري';
 $string['errorfilemanager'] = '<b>خطأ</b> : تسمية <b>{$a}.png</b> ليست كما تبدو أدناه';
 $string['greentrack'] = 'المسار الأخضر';
-$string['howto_text'] = 'النص المرئي في الكتلة';
-$string['howto_text_group'] = 'وصف النص المخصص للرمز التعبيري';
-$string['howto_text_group_help'] = 'وصف النص المخصص للرمز التعبيري يتم عرضه أعلى الرمز التعبيري';
-$string['howto_text_help'] = 'هذا الحقل يسمح بتعديل النص المرئي في الكتلة';
-$string['page'] = 'الصفحات';
-$string['pixresettext'] = '&nbsp;<i style=\'font-size: 0.8em\'>(سيتم حفظ الإعدادات وستتم إعادة توجيهك إلى صفحة المساق)</i>';
-$string['questionnaire'] = 'الاستبيانات';
-$string['quiz'] = 'الاختبارات';

@@ -94,6 +94,11 @@
 		"quizzes_studio_home_answer_type_equation_label": "Equació",
 		"quizzes_studio_home_answer_type_graphic_label": "Gràfica",
 		"quizzes_studio_home_answer_type_text_label": "Text",
+		"quizzes_studio_home_answer_type_standard_graphic_label": "Estandard",
+		"quizzes_studio_home_answer_type_bar_chart_label": "Gràfic de barres",
+		"quizzes_studio_home_answer_type_line_chart_label": "Gràfic de línies",
+		"quizzes_studio_home_answer_type_pie_chart_label": "Gràfic circular",
+
 
 		"quizzes_studio_home_question_math_content_label": "Introduïu la resposta correcta i el contingut inicial de la vostra pregunta",
 		"quizzes_studio_home_question_text_content_label": "Introduïu la resposta correcta i el contingut inicial de la vostra pregunta",

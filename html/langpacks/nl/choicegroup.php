@@ -25,6 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activitydate:hasopened'] = 'Geopend:';
+$string['activitydate:willclose'] = 'Sluit op:';
+$string['activitydate:willopen'] = 'Opent op:';
 $string['add'] = 'Toevoegen';
 $string['add_group'] = 'Groep toevoegen';
 $string['add_grouping'] = 'Groepering toevoegen';
@@ -99,6 +102,8 @@ $string['limitanswers'] = 'Beperk het aantal deelnemers voor deze groep';
 $string['limitanswers_help'] = 'Deze optie maakt het mogelijk om het aantal deelnemers van een elke groep te beperken tot een bepaald maximum. Wanneer de limiet bereikt is, dan is die groep niet meer te kiezen.
 
 Als er niet voor beperkende limieten is gekozen, kunnen er zoveel studenten voor een groep kiezen ze willen.';
+$string['maxenrollments'] = 'Max. aantal aanmeldingen';
+$string['maxenrollments_help'] = 'Met deze optie kun je het aantal groepsaanmeldingen voor een deelnemer beperken. Gebruik de standaardwaarde **0** als er geen limiet is.';
 $string['members/'] = 'Leden';
 $string['members/max'] = 'Leden / Capaciteit';
 $string['modulename'] = 'Groepkeuze';
@@ -106,6 +111,7 @@ $string['modulename_help'] = 'Met de module Groepkeuze kunnen leerlingen zichzel
 $string['modulenameplural'] = 'Groepkeuzes';
 $string['moveselectedusersto'] = 'Verplaats de geselecteerde gebruikers naar...';
 $string['multipleenrollmentspossible'] = 'Sta toe om voor meerdere groepen te kiezen.';
+$string['mustchoosemax'] = 'Kies een maximum van {$a} groepen. Er is niets opgeslagen.';
 $string['mustchooseone'] = 'Je moet een keuze hebben gemaakt voordat er iets kan worden opgeslagen. Er is niets opgeslagen.';
 $string['name'] = 'Naam';
 $string['neverresultsviewable'] = 'De gemaakte keuzes kunnen niet worden ingezien.';
@@ -117,6 +123,7 @@ $string['notenrolledchoose'] = 'Helaas, alleen aangemelde gebruikers kunnen een 
 $string['notopenyet'] = 'Helaas, deze activiteit is niet beschikbaar tot {$a}';
 $string['notyetresultsviewable'] = 'De gemaakte keuzes worden getoond nadat de activiteit is gesloten.';
 $string['numberofuser'] = 'Het aantal gebruikers';
+$string['onlyactive'] = 'Gegevens over reacties van gebruikers met vervallen of geschorste aanmeldingen uitfilteren';
 $string['option'] = 'Groep';
 $string['page-mod-choice-x'] = 'Willekeurige Groepkeuze module pagina';
 $string['pleaseselectonegroup'] = 'Selecteer ten minst een groep om uit te kunnen kiezen.';

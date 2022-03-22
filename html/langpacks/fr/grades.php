@@ -678,7 +678,7 @@ $string['publishing'] = 'Publication en cours';
 $string['publishingoptions'] = 'Options de publication des notes';
 $string['quickfeedback'] = 'Feedback rapide';
 $string['quickgrading'] = 'Évaluation rapide';
-$string['quickgrading_help'] = 'Si ce réglage est activé, lorsque le mode de modification est actif, un champ de texte est affiché à côté des notes du rapport de l\'évaluateur, permettant de modifier de nombreuses notes à la fois. Les modifications sont enregistrées et surlignées quand bouton Modifier est cliqué.
+$string['quickgrading_help'] = 'Si ce réglage est activé, lorsque le mode de modification est actif, un champ de texte est affiché à côté des notes du rapport de l\'évaluateur, permettant de modifier de nombreuses notes à la fois. Les modifications sont enregistrées et surlignées quand le bouton Modifier est cliqué.
 
 Quand une note est modifiée dans le rapport de l\'évaluateur, elle ne peut plus être modifiée par le résultat de l\'activité d\'où elle provient.';
 $string['range'] = 'Valeurs possibles';

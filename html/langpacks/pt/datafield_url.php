@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['fieldtypelabel'] = 'Campo URL';
 $string['openlinkinnewwindow'] = 'Abrir hiperligação numa nova janela';
 $string['pluginname'] = 'URL';
-$string['privacy:metadata'] = 'O componente do ficheiro URL não armazena dados pessoais, usa tabelas definidas em mod_data.';
+$string['privacy:metadata'] = 'O componente do ficheiro URL não armazena quaisquer dados pessoais, usa tabelas definidas em mod_data.';

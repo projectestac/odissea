@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['conditiontitle'] = 'Feld im Nutzerprofil';
-$string['description'] = 'Zugriff über Felder im Nutzerprofil steuern';
+$string['description'] = 'Zugriff über ein Feld im Nutzerprofil steuern';
 $string['error_selectfield'] = 'Sie müssen ein Feld im Nutzerprofil auswählen.';
 $string['error_setvalue'] = 'Sie müssen einen Wert eingeben.';
 $string['label_operator'] = 'Vergleichsmethode';

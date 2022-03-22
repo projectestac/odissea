@@ -27,13 +27,14 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['addcomment'] = 'Adicionar';
 $string['addmark'] = 'Adicionar marcador de correção';
+$string['corrections:canmarkup'] = 'Usar marcador de correção';
 $string['corrtext'] = 'Comentário';
 $string['corrtype'] = 'Tipo de correção';
 $string['corrtypes'] = 'Tipos de correção';
 $string['corrtypes_default'] = 'a = pluralização
 c = conjugação
 d = determinante
-g = gramática / sintaxe
+g = gramática/sintaxe
 m = palavra(s) ausente(s)
 o = ortografia
 p = preposição

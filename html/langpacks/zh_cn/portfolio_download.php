@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['downloadfile'] = '下载您的公文包导出文件';
 $string['downloading'] = '正在下载...';
 $string['pluginname'] = '文件下载';
+$string['privacy:metadata'] = '此插件不存储个人数据，也不将个人数据导出到外部位置。';

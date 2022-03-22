@@ -32,7 +32,7 @@ $string['autocreate_key'] = 'Criação automática';
 $string['autocreation_settings'] = 'Configurações para criação automática de disciplinas';
 $string['autoupdate_settings'] = 'Atualização das configurações automáticas da disciplina';
 $string['autoupdate_settings_desc'] = '<p>Selecione os campos a serem atualizados quando a tarefa agendada \'Sincronizar registos LDAP\' estiver em execução.</p><p>A atualização irá ocorrer quando pelo menos um campo estiver selecionado.</p>';
-$string['bind_dn'] = 'Se desejar, indique neste campo um nome de utilizador de <em>bind</em> para pesquisar utilizadores. Ex: cn=ldapuser,ou=public,o=org';
+$string['bind_dn'] = 'Se pretender, indique neste campo um nome de utilizador de <em>bind</em> para pesquisar utilizadores. Ex: cn=ldapuser,ou=public,o=org';
 $string['bind_dn_key'] = 'DN do utilizador de <em>bind</em>';
 $string['bind_pw'] = 'Senha do utilizador de <em>bind</em>';
 $string['bind_pw_key'] = 'Senha';

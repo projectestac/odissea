@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'إجراءات';
 $string['activities'] = 'الأنشطة';
-$string['addcohorts'] = 'إضافة دفعات';
+$string['addcohorts'] = 'إضافة الدفعات';
 $string['addcohortstosync'] = 'أضف الدُفعات للمزامنة';
 $string['addcompetency'] = 'أضف كفاءة';
 $string['addcoursecompetencies'] = 'أضف كفاءات إلى المادة';
@@ -43,7 +43,7 @@ $string['aisrequired'] = '\'{$a}\' مطلوب';
 $string['aplanswerecreated'] = 'تم إنشاء خطط التعلم {$a}.';
 $string['aplanswerecreatedmoremayrequiresync'] = 'تم إنشاء خطط تعلم {$a} ؛
  سيتم إنشاء المزيد أثناء المزامنة التالية.';
-$string['assigncohorts'] = 'تعيين دفعات';
+$string['assigncohorts'] = 'تعيين الدفعات';
 $string['averageproficiencyrate'] = 'متوسط معدل الكفاءة لخطط التعلم المكتملة بناءً على هذا القالب هو {$a}٪.';
 $string['cancelreviewrequest'] = 'إلغاء طلب المراجعة';
 $string['cannotaddrules'] = 'لا يمكن تكوين هذه الكفاءة.';
@@ -216,7 +216,7 @@ $string['startreview'] = 'ابدأ المراجعة';
 $string['state'] = 'الحالة';
 $string['status'] = 'الحالة';
 $string['stopreview'] = 'أنهِ المراجعة';
-$string['stopsyncingcohort'] = 'أوقف مزامنة الدفعات';
+$string['stopsyncingcohort'] = 'إيقاف مزامنة الدفعات';
 $string['taxonomies'] = 'التصنيفات';
 $string['taxonomy_add_behaviour'] = 'أضف السلوك';
 $string['taxonomy_add_competency'] = 'أضف كفاءة';

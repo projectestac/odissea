@@ -140,6 +140,7 @@ $string['eventtypecourse'] = 'de curs';
 $string['eventtypeglobal'] = 'globals';
 $string['eventtypegroup'] = 'de grup';
 $string['eventtypemodule'] = 'de mòdul';
+$string['eventtypeother'] = 'altre(s)';
 $string['eventtypesite'] = 'globals';
 $string['eventtypeuser'] = 'd\'usuari';
 $string['eventview'] = 'Detalls de l\'esdeveniment';

@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['REGION_AFS1'] = 'Afrique (Le Cap)';
 $string['REGION_APN1'] = 'Asie pacifique (Tokyo)';
 $string['REGION_APN2'] = 'Asie pacifique (Séoul)';
 $string['REGION_APS1'] = 'Asie pacifique (Mumbai)';
@@ -34,6 +35,7 @@ $string['REGION_CAC1'] = 'Canada (Centre)';
 $string['REGION_EUC1'] = 'EU (Francfort)';
 $string['REGION_EUW1'] = 'EU (irlande)';
 $string['REGION_EUW2'] = 'EU (Londres)';
+$string['REGION_MES1'] = 'Moyen Orient (Bahreïn)';
 $string['REGION_SAE1'] = 'Amérique du sud (San Paolo)';
 $string['REGION_USE1'] = 'E.U. côte est (Virginie du Nord)';
 $string['REGION_USE2'] = 'E.U. côte est (Ohio)';
@@ -103,6 +105,7 @@ $string['extensionsettings'] = 'Paramètres d\'extension de fichier';
 $string['failedfetchsubreport'] = 'Échec de la récupération du rapport d\'abonnement';
 $string['ffmpeg'] = 'Convertir avec ffmpeg les fichiers multimédia déposés';
 $string['ffmpeg_details'] = 'Le logiciel ffmpeg doit être installé sur votre serveur Moodle, et dans le chemin système. Il devra prendre en charge la conversion en MP3. Essayez d\'abord en ligne de commande. Par exemple : ffmpeg-i somefile.flv somefile.mp3 . C\'est encore « expérimental ».';
+$string['fillcredentials'] = 'Définir l\'utilisateur et le secret de l\'API avec les informations d\'identification existantes.';
 $string['filter_poodll_audioplayer_heading'] = 'Paramètres du lecteur audio';
 $string['filter_poodll_camera_heading'] = 'Paramètres de la webcam (Flash seulement)';
 $string['filter_poodll_flashcards_heading'] = 'Paramètres des Flashcards';
@@ -120,6 +123,8 @@ $string['flashcardstype'] = 'Type de flashcards';
 $string['flashonandroid'] = 'Utiliser Flash sur Android';
 $string['flashonandroid_desc'] = 'Il est possible d’utiliser Flash sur Android, même si dans de nombreux cas, il n’est pas disponible et il est difficile de communiquer aux étudiants quoi faire. Donc par défaut il est désactivé.';
 $string['fluencybuilder_recorder'] = 'Générateur de fluidité';
+$string['freetrial'] = 'Obtenir les identifiants API de Cloud Poodll et un essai gratuit';
+$string['freetrial_desc'] = 'Une boîte de dialogue devrait apparaître pour vous permettre de vous inscrire à un essai gratuit de Poodll. Après l\'enregistrement, vous devez vous connecter au tableau de bord des membres pour obtenir votre utilisateur et votre secret API, et pour enregistrer l\'URL de votre site.';
 $string['fresh_recorder'] = 'Fresh';
 $string['generalsettings'] = 'Paramètres généraux';
 $string['gold_recorder'] = 'Bouton unique';
@@ -138,6 +143,7 @@ $string['legacysettings'] = 'Paramètres obsolètes';
 $string['license_details'] = '<br> -------------- <br> Type de licence : {$a->license_type} <br> Termine (JST) : {$a->expire_date} <br> URL enregistrée : {$a->registered_url}';
 $string['lowquality'] = 'basse';
 $string['mediumquality'] = 'moyenne';
+$string['memberdashboard'] = 'Tableau de bord des membres';
 $string['miccanpause'] = 'Autoriser la mise en pause (enregistreur MP3 uniquement)';
 $string['micecho'] = 'Écho du micro';
 $string['micgain'] = 'Gain du micro';
@@ -290,6 +296,7 @@ $string['recui_waitwaitstilluploading'] = 'Votre fichier est toujours en cours d
 $string['refreshtoken'] = 'Actualiser les informations de licence';
 $string['registrationkey'] = 'Clé d\'enregistrement';
 $string['registrationkey_explanation'] = 'Entrez votre clé d\'enregistrement Poodll ici uniquement si vous n\'avez pas entré de clé API et de phrase secrète ci-dessus. Vous pouvez obtenir une clé sur <a href=\'https://poodll.com/pricing\'>https://poodll.com/pricing</a>';
+$string['screen_recorder'] = 'Enregistreur d\'écran';
 $string['serverhttpport'] = 'Port du serveur Red5 Poodll (HTTP)';
 $string['serverid'] = 'Identifiant du serveur Red5 Poodll';
 $string['servername'] = 'Adresse du serveur Red5 Poodll';

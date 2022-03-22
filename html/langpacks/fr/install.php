@@ -48,7 +48,7 @@ $string['clitablesexist'] = 'Les tables de la base de données sont déjà prés
 $string['compatibilitysettings'] = 'Vérification de votre configuration PHP…';
 $string['compatibilitysettingshead'] = 'Vérification de votre configuration PHP…';
 $string['compatibilitysettingssub'] = 'Votre serveur doit passer tous ces tests pour que Moodle fonctionne correctement.';
-$string['configfilenotwritten'] = 'Le programme d\'installation n\'a pas pu créer automatiquement le fichier de configuration « config.php » contenant vos réglages, vraisemblablement parce que le dossier principal de Moodle n\'est pas accessible en écriture. Vous pouvez copier le code ci-dessous dans un fichier appelé « config.php », que vous placerez à l\'intérieur du dossier principal de Moodle (là où se trouve un fichier « config-dist.php »).';
+$string['configfilenotwritten'] = 'Le programme d\'installation n\'a pas pu créer automatiquement le fichier de configuration « config.php » contenant vos réglages, vraisemblablement parce que le dossier principal de Moodle n\'est pas atteignable en écriture. Vous pouvez copier le code ci-dessous dans un fichier appelé « config.php », que vous placerez à l\'intérieur du dossier principal de Moodle (là où se trouve un fichier « config-dist.php »).';
 $string['configfilewritten'] = 'Le fichier « config.php » a été créé correctement';
 $string['configurationcomplete'] = 'Configuration terminée';
 $string['configurationcompletehead'] = 'Configuration terminée';
@@ -66,7 +66,7 @@ $string['databaseuser'] = 'Utilisateur de la base de données';
 $string['dataroot'] = 'Dossier de données';
 $string['datarooterror'] = 'Le dossier de données indiqué n\'a pas pu être trouvé ou créé. Veuillez corriger le chemin d\'accès ou créer manuellement le dossier.';
 $string['datarootpermission'] = 'Droits d\'accès au dossier de données';
-$string['datarootpublicerror'] = 'Le dossier de données que vous avez indiqué est directement accessible depuis le web. Vous devez utiliser un autre dossier.';
+$string['datarootpublicerror'] = 'Le dossier de données que vous avez indiqué est directement atteignable depuis le web. Vous devez utiliser un autre dossier.';
 $string['dbconnectionerror'] = 'Moodle n\'a pas pu se connecter à la base de données indiquée. Veuillez vérifier les paramètres de votre base de données';
 $string['dbcreationerror'] = 'Erreur lors de la création de la base de données. Impossible de créer la base de données avec les paramètres fournis';
 $string['dbhost'] = 'Serveur hôte';
@@ -76,15 +76,15 @@ $string['dbprefix'] = 'Préfixe des tables';
 $string['dbtype'] = 'Type';
 $string['directorysettings'] = '<p>Veuillez confirmer les emplacements de cette installation de Moodle.</p>
 
-<p><b>Adresse web :</b> veuillez indiquer l\'adresse web complète par laquelle on accédera à Moodle. Si votre site web est accessible par plusieurs URLs, choisissez celle qui est la plus naturelle ou la plus évidente. Ne placez pas de barre oblique à la fin de l\'adresse.</p>
+<p><b>Adresse web :</b> veuillez indiquer l\'adresse web complète par laquelle on accédera à Moodle. Si votre site web peut être atteint au moyen de plusieurs URLs, choisissez celle qui est la plus naturelle ou la plus évidente. Ne placez pas de barre oblique à la fin de l\'adresse.</p>
 
 <p><b>Dossier Moodle :</b> veuillez spécifier le chemin d\'accès complet de cette installation de Moodle. Assurez-vous que la casse des caractères (majuscules/minuscules) est correcte.</p>
 
-<p><b>Dossier de données :</b> Moodle a besoin d\'un emplacement où enregistrer les fichiers déposés sur le site. Le serveur web (utilisateur dénommé habituellement « www », « apache » ou « nobody ») doit avoir accès à ce dossier en lecture et EN ÉCRITURE. Toutefois ce dossier ne doit pas être accessible directement depuis le web. L\'installeur va tenter de créer ce dossier s\'il n\'existe pas.</p>';
+<p><b>Dossier de données :</b> Moodle a besoin d\'un emplacement où enregistrer les fichiers déposés sur le site. Le serveur web (utilisateur dénommé habituellement « www », « apache » ou « nobody ») doit avoir accès à ce dossier en lecture et EN ÉCRITURE. Toutefois ce dossier ne doit pas pouvoir être atteint directement depuis le web. Le programme d\'installation tentera de créer ce dossier s\'il n\'existe pas.</p>';
 $string['directorysettingshead'] = 'Veuillez confirmer les emplacements de cette installation de Moodle.';
-$string['directorysettingssub'] = '<p><b>Adresse web :</b> veuillez indiquer l\'adresse web complète par laquelle on accédera à Moodle. Si votre site web est accessible par plusieurs URLs, choisissez celle qui est la plus naturelle ou la plus évidente. Ne placez pas de barre oblique à la fin de l\'adresse.</p>
+$string['directorysettingssub'] = '<p><b>Adresse web :</b> veuillez indiquer l\'adresse web complète par laquelle on accédera à Moodle. Si votre site web peut être atteint au moyen de plusieurs URLs, choisissez celle qui est la plus naturelle ou la plus évidente. Ne placez pas de barre oblique à la fin de l\'adresse.</p>
 <p><b>Dossier Moodle :</b> veuillez spécifier le chemin d\'accès complet de cette installation de Moodle. Assurez-vous que la casse des caractères (majuscules/minuscules) est correcte.</p>
-<p><b>Dossier de données :</b> Moodle a besoin d\'un emplacement où enregistrer les fichiers déposés sur le site. Le serveur web (utilisateur dénommé habituellement « www », « apache » ou « nobody ») doit avoir accès à ce dossier en lecture et EN ÉCRITURE. Toutefois ce dossier ne doit pas être accessible directement depuis le web. L\'installeur va tenter de créer ce dossier s\'il n\'existe pas.</p>';
+<p><b>Dossier de données :</b> Moodle a besoin d\'un emplacement où enregistrer les fichiers déposés sur le site. Le serveur web (utilisateur dénommé habituellement « www », « apache » ou « nobody ») doit avoir accès à ce dossier en lecture et EN ÉCRITURE. Toutefois ce dossier ne doit pas ne doit pas pouvoir être atteint directement depuis le web. Le programme d\'installation tentera de créer ce dossier s\'il n\'existe pas.</p>';
 $string['dirroot'] = 'Dossier Moodle';
 $string['dirrooterror'] = 'Le dossier Moodle semble incorrect : aucune installation de Moodle ne se trouve dans ce dossier. Le dossier indiqué ci-dessous est vraisemblablement correct.';
 $string['download'] = 'Télécharger';
@@ -152,18 +152,18 @@ $string['pass'] = 'Réussi';
 $string['paths'] = 'Chemins';
 $string['pathserrcreatedataroot'] = 'Le dossier de données ({$a->dataroot}) ne peut pas être créé par l\'installeur.';
 $string['pathshead'] = 'Confirmer les chemins d\'accès';
-$string['pathsrodataroot'] = 'Le dossier de données n\'est pas accessible en écriture.';
-$string['pathsroparentdataroot'] = 'Le dossier parent ({$a->parent}) n\'est pas accessible en écriture. Le dossier de données ({$a->dataroot}) ne peut pas être créé par l\'installeur.';
+$string['pathsrodataroot'] = 'Le dossier de données n\'est pas atteignable en écriture.';
+$string['pathsroparentdataroot'] = 'Le dossier parent ({$a->parent}) n\'est pas atteignable en écriture. Le dossier de données ({$a->dataroot}) ne peut pas être créé par le programme d\'installation.';
 $string['pathssubadmindir'] = 'Quelques rares hébergeurs utilisent « /admin » comme URL spéciale pour l\'accès à un tableau de bord ou d\'autres fonctionnalités. Malheureusement ceci entre en conflit avec l\'emplacement standard des pages d\'administration de Moodle. Vous pouvez corriger ceci en renommant le dossier admin de votre installation Moodle et en plaçant le nouveau nom choisi dans ce champ. Par exemple, <em>moodleadmin</em>. Ceci modifiera tous les liens de l\'administration de Moodle.';
 $string['pathssubdataroot'] = '<p>Un dossier dans lequel Moodle stockera tous les fichiers qui seront déposés par les utilisateurs.</p>
-<p>Ce dossier doit être accessible en lecture et en écriture par l\'utilisateur système du serveur web (habituellement nommé « www-data », « nobody » ou encore « apache »).</p>
-<p>Il ne doit pas être accessible directement via le web.</p>
+<p>Ce dossier doit être atteignable en lecture et en écriture par l\'utilisateur système du serveur web (habituellement nommé « www-data », « nobody » ou encore « apache »).</p>
+<p>Il ne doit pas pouvoir être atteint directement via le web.</p>
 <p>Si ce dossier n\'existe pas encore, Moodle tentera de le créer au cours du processus d\'installation.</p>';
 $string['pathssubdirroot'] = '<p>Le chemin d\'accès complet au dossier contenant le code source de Moodle.</p>';
 $string['pathssubwwwroot'] = '<p>L\'adresse web complète par laquelle on accédera à Moodle, i.e. l\'adresse que les utilisateurs saisiront dans la barre d\'adresse de leur navigateur pour accéder à Moodle.</p>
-<p>Il n\'est pas possible d\'accéder à Moodle depuis plusieurs adresses web différentes. Si votre site web est accessible depuis plusieurs adresses, saisissez ici la plus simple d\'entre elles et définissez des redirections permanentes pour toutes les autres adresses.</p>
-<p>Si votre site est accessible depuis internet et un réseau interne (un intranet), indiquez ici l\'adresse publique.</p>
-<p>Si l\'adresse indiquée actuellement n\'est pas correcte,  veuillez modifier l\'URL dans la barre d\'adresse de votre navigateur et recommencer l\'installation.</p>';
+<p>Il n\'est pas possible d\'accéder à Moodle depuis plusieurs adresses web différentes. Si votre site web peut être atteint au moyen de plusieurs adresses, saisissez ici la plus simple d\'entre elles et définissez des redirections permanentes pour toutes les autres adresses.</p>
+<p>Si votre site peut être atteint depuis Internet et depuis un réseau interne (un intranet), indiquez ici l\'adresse publique.</p>
+<p>Si l\'adresse indiquée actuellement n\'est pas correcte, veuillez modifier l\'URL dans la barre d\'adresse de votre navigateur et recommencer l\'installation.</p>';
 $string['pathsunsecuredataroot'] = 'L\'emplacement du dossier de données n\'est pas sûr';
 $string['pathswrongadmindir'] = 'Le dossier d\'administration n\'existe pas';
 $string['pgsqlextensionisnotpresentinphp'] = 'La configuration de l\'extension PGSQL de PHP n\'a pas été effectuée correctement. De ce fait, PHP ne peut communiquer avec PostgreSQL. Veuillez contrôler votre fichier « php.ini » ou recompiler PHP.';

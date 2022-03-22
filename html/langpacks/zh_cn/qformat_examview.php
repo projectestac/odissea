@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Examview';
 $string['pluginname_help'] = 'Examview格式支持导入Examview 4 XML文件。对更高的Examview版本，可以使用Blackboard格式。';
+$string['privacy:metadata'] = 'Examview问题格式插件不存储任何个人数据。';

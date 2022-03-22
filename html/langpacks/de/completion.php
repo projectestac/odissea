@@ -122,7 +122,7 @@ $string['courseaggregation_any'] = 'Mind. ein ausgewählter Kurs muss beendet we
 $string['coursealreadycompleted'] = 'Haben Sie diesen Kurs bereits abgeschlossen?';
 $string['coursecomplete'] = 'Kurs abschließen';
 $string['coursecompleted'] = 'Kurs abgeschlossen';
-$string['coursecompletedmessage'] = '<p>Herzlichen Glückwunsch!</ p><p>Sie haben den Kurs <a href="{$a->courselink}">{$a->coursename}</a> abgeschlossen.</ p>';
+$string['coursecompletedmessage'] = '<p>Herzlichen Glückwunsch!</p><p>Sie haben den Kurs <a href="{$a->courselink}">{$a->coursename}</a> abgeschlossen.</p>';
 $string['coursecompletion'] = 'Kursabschluss';
 $string['coursecompletioncondition'] = 'Bedingung: {$a}';
 $string['coursegrade'] = 'Kursbewertung';

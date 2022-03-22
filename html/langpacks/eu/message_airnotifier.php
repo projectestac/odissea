@@ -46,7 +46,7 @@ $string['enableprocessor'] = 'Gaitu mobile jakinarazpenak.';
 $string['errorretrievingkey'] = 'Errorea gertatu da sarrera-gakoa berreskuratzean. Zure gunea erregistratuta egon behar da zerbitzu hau erabiltzeko. Zure gunea dagoeneko erregistratuta badago mesedez saiatu zure erregistroa eguneratzen. Bestela, sarbide-gako bat lortu dezakezu <a href="https://apps.moodle.com">Moodle Aplikazioen Atarian</a> kontu bat sortuta.';
 $string['keyretrievedsuccessfully'] = 'Gakoa ondo berreskuratu da. Moodle aplikazioaren erabilera-estatistiketara sarbidea izateko, sortu ezazu mesedez kontu bat <a href="https://apps.moodle.com">Moodle Aplikazioen Atarian</a>.';
 $string['messageprovidersempty'] = 'Ez dago mobile jakinarazpenik gaituta lehenetsitako jakinarazpenen hobespenetan.';
-$string['messageproviderslow'] = 'Mobil jakinarazpen batzuk baino ez daude gaituta lehenetsitako jakinarazpenen hobespenetan.';
+$string['messageproviderslow'] = 'Gailu mugikorren jakinarazpen batzuk baino ez daude gaituta lehenetsitako jakinarazpenen hobespenetan.';
 $string['moodleappsportallimitswarning'] = 'Kontuan izan jakinarazpenak jaso dezakeen erabiltzaile kopurua zure Moodle aplikazioaren harpidetzaren araberakoa izango dela. Xehetasunerako, joan <a href="{$a}" target="_blank">Moodle Aplikazioen Atarira</a>.';
 $string['nodevices'] = 'Ez dago erregistratutako gailurik. Gailuak automatikoki agertuko dira Moodle aplikazioa instalatu eta gune hau gehitzen duzunean.';
 $string['nopermissiontomanagedevices'] = 'Ez duzu baimenik gailuak kudeatzeko.';

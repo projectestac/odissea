@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['assignment:addinstance'] = 'إضافة واجب جديد';
 $string['assignment:exportownsubmission'] = 'تصدير تسليمه';
-$string['assignment:exportsubmission'] = 'صدر التسليم';
-$string['assignment:grade'] = 'تصحيح الواجب';
+$string['assignment:exportsubmission'] = 'تصدير التسليم';
+$string['assignment:grade'] = 'تقييم الواجب';
 $string['assignment:submit'] = 'تسليم الواجب';
 $string['assignment:view'] = 'معاينة الواجب';
 $string['assignmentdisabled'] = 'تم تعطيل نشاط "الواجب 2.2" القديم.';
@@ -40,7 +40,7 @@ $string['modulenameplural'] = 'واجبات 2.2 (مُعطلة)';
 $string['page-mod-assignment-submissions'] = 'صفحة التسليم لوحدة الواجب';
 $string['page-mod-assignment-view'] = 'الصفحة الأساسية لوحدة الواجب';
 $string['page-mod-assignment-x'] = 'أي صفحة لوحدة الواجب';
-$string['pluginadministration'] = 'إدارة مهمة 2.2 (مُعطلة)';
+$string['pluginadministration'] = 'إدارة الواجب 2.2 (مُعطل)';
 $string['pluginname'] = 'الواجب 2.2 (مُعطل)';
 $string['privacy:markedsubmissionspath'] = 'التسليمات المصححة';
 $string['privacy:metadata:assignment_submissions'] = 'التسليمات المتعلقة بالواجب';
@@ -60,4 +60,4 @@ $string['privacy:metadata:assignmentmailinfo'] = 'تفضيل معلومات ال
 $string['privacy:metadata:assignmentperpage'] = 'التفضيل الخاص بعدد تسليمات الواجب الظاهر في الصفحة';
 $string['privacy:metadata:assignmentquickgrade'] = 'تفضيل التقييم السريع لتسليمات الواجب';
 $string['privacy:submissionpath'] = 'التسليم';
-$string['upgradenotification'] = 'يستند هذا النشاط على إصدار قديم لوحدة الواجب';
+$string['upgradenotification'] = 'يستند هذا النشاط على إصدار قديم لوحدة الواجب.';

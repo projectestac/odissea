@@ -10801,6 +10801,11 @@ tr.flagged-tag a {
   float: right;
   margin-left: 3px; }
 
+#page-enrol-otherusers .userenrolment .col_role .role {
+  float: none;
+  margin: 3px 3px 3px 0;
+  padding: 3px 3px 3px 0; }
+
 .corelightbox {
   background-color: #ccc;
   position: absolute;
@@ -11485,6 +11490,12 @@ ul.badges {
     width: 79%;
     margin-left: 1%; }
 
+#badge-criteria li li {
+  list-style-type: none; }
+
+#badge-image-col {
+  flex: 0 0 400px; }
+
 .badge-profile {
   vertical-align: top; }
 
@@ -11773,6 +11784,8 @@ ul {
   display: block;
   width: 100%;
   color: #1d2125; }
+  .dropdown-item a:focus-visible {
+    outline: 0; }
 
 .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:focus-within {
   outline: 0;
@@ -12955,6 +12968,7 @@ input[disabled] {
 
 .block_recentlyaccessedcourses .paging-bar-container {
   margin-top: -2.4rem;
+  padding-right: 0.5rem;
   justify-content: flex-end; }
 
 @media (max-width: 575.98px) {
@@ -19546,6 +19560,11 @@ span[data-flexitour="container"][x-placement="right"], span[data-flexitour="cont
     /*rtl:ignore*/
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.modal .close {
+  margin: -0.8rem -0.8rem -0.8rem auto; }
+  .modal .close:not(:disabled):not(.disabled):hover, .modal .close:not(:disabled):not(.disabled):focus {
+    opacity: inherit; }
 
 .layout.fullscreen {
   height: 100vh;

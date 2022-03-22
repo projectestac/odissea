@@ -26,5 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['login:addinstance'] = 'Adicionar um novo bloco Autenticação';
-$string['pluginname'] = 'Entrar';
+$string['pluginname'] = 'Autenticação';
 $string['privacy:metadata'] = 'O bloco Autenticação apenas fornece um modo de autenticação e não armazena quaisquer dados.';

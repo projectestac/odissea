@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['activityoverview'] = '관심이 필요한 과제가 있습니다.';
-$string['addattempt'] = '또 다른 시도 추가';
-$string['addnewattempt'] = '새 시도 추가';
+$string['addattempt'] = '또 다른 제출 허용';
+$string['addnewattempt'] = '새로운 시도 추가';
 $string['addnewattempt_help'] = '작업할 수 있는 새 빈 제출을 생성합니다.';
-$string['addnewattemptfromprevious'] = '이전 제출에 기반한 새 시도 추가';
+$string['addnewattemptfromprevious'] = '이전 제출에 새로운 시도 추가';
 $string['addnewattemptfromprevious_help'] = '작업을 계속할 수 있도록 이전 제출의 내용을 새로운 제출에 복사합니다.';
 $string['addsubmission'] = '제출 추가';
 $string['allowsubmissions'] = '사용자들에게 이 과제에 대해 제출을 계속하도록 허용합니다.';
@@ -59,7 +59,7 @@ $string['assignsubmissionpluginname'] = '제출 플러그인';
 $string['attemptheading'] = '시도 {$a->attemptnumber}: {$a->submissionsummary}';
 $string['attempthistory'] = '이전 시도';
 $string['attemptnumber'] = '시도 수';
-$string['attemptreopenmethod'] = '시도 재개';
+$string['attemptreopenmethod'] = '추가한 시도';
 $string['attemptreopenmethod_manual'] = '수동으로';
 $string['attemptreopenmethod_none'] = '절대 아님';
 $string['attemptreopenmethod_untilpass'] = '통과할때까지 자동으로';

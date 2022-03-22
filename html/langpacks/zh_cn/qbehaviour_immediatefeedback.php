@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notcomplete'] = '未完成';
 $string['pluginname'] = '立即反馈';
+$string['privacy:metadata'] = '即时反馈问题行为插件不存储任何个人数据。';

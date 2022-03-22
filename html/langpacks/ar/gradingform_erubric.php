@@ -26,6 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['backtoediting'] = 'عودة إلى التحرير';
+$string['confirmdeleteassignment'] = 'هل أنت متأكد من رغبتك في حذف هذا الواجب؟';
+$string['deleteassignment'] = 'حذف الواجب';
 $string['description'] = 'الوصف';
 $string['enrichedvalueempty'] = 'إضافة قيمة';
 $string['enrichedvaluesuffixnothing'] = '<font color="red"><b>!!!</b></font>';

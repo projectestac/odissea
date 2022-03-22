@@ -97,7 +97,7 @@ $string['filtername'] = 'Hiperligações automáticas às páginas wiki';
 $string['firstpagetitle'] = 'Nome da primeira página';
 $string['firstpagetitle_help'] = 'Título da primeira página do wiki. Depois da criação do wiki, o título não poderá ser alterado.';
 $string['forceformat'] = 'Forçar formato';
-$string['forceformat_help'] = 'Se ativar a opção forçar formato, não será possível escolher outro formato ao editar uma página wiki.';
+$string['forceformat_help'] = 'Se ativar a opção, não será possível escolher outro formato ao editar uma página wiki.';
 $string['format'] = 'Formato';
 $string['format_help'] = '* HTML - O editor HTML está disponível
 * Creole - Uma linguagem de markup comum de wiki para os quais uma barra de edição pequena está disponível
@@ -105,16 +105,16 @@ $string['format_help'] = '* HTML - O editor HTML está disponível
 $string['formatcreole'] = 'Formato Creole';
 $string['formatcreole_help'] = 'Creole é uma linguagem de markup comum de wiki com uma barra de edição para inserir o markup adequado.
 
-Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo [[Página 2]].';
+Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo, [[Página 2]].';
 $string['formatcreole_link'] = 'mod/wiki/creole';
 $string['formathtml'] = 'Formato HTML';
 $string['formathtml_help'] = 'O editor de HTML é usado para formatar conteúdos.
 
-Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo [[Página 2]].';
+Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo, [[Página 2]].';
 $string['formatnwiki'] = 'Formato NWiki';
 $string['formatnwiki_help'] = 'Nwiki é a linguagem de markup Mediawiki utilizada no módulo Nwiki
 
-Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo [[Página 2]].';
+Para criar uma nova página, digite o nome da nova página entre parêntesis retos, por exemplo, [[Página 2]].';
 $string['formatnwiki_link'] = 'mod/wiki/nwiki';
 $string['history'] = 'Histórico';
 $string['history_help'] = 'O histórico lista as hiperligações para versões anteriores da página';
@@ -231,18 +231,18 @@ $string['privacy:metadata:wiki_pages'] = 'Informação sobre páginas wiki';
 $string['privacy:metadata:wiki_pages:cachedcontent'] = 'Conteúdo em cache no formato HTML';
 $string['privacy:metadata:wiki_pages:pageviews'] = 'Número de vezes que a página foi visualizada';
 $string['privacy:metadata:wiki_pages:readonly'] = 'Se a página é apenas de leitura';
-$string['privacy:metadata:wiki_pages:timecreated'] = 'Data/hora em que a página foi criada pela primeira vez';
-$string['privacy:metadata:wiki_pages:timemodified'] = 'Data/hora da última modificação da página';
-$string['privacy:metadata:wiki_pages:timerendered'] = 'Data/hora em que a página foi processada pela última vez';
+$string['privacy:metadata:wiki_pages:timecreated'] = 'Data e hora em que a página foi criada pela primeira vez';
+$string['privacy:metadata:wiki_pages:timemodified'] = 'Data e hora da última modificação da página';
+$string['privacy:metadata:wiki_pages:timerendered'] = 'Data e hora em que a página foi processada pela última vez';
 $string['privacy:metadata:wiki_pages:title'] = 'Nome da página';
 $string['privacy:metadata:wiki_pages:userid'] = 'Último utilizador que editou a página';
 $string['privacy:metadata:wiki_subwikis'] = 'Informação sobre subwikis (em caso de modo grupo ou individual)';
 $string['privacy:metadata:wiki_subwikis:groupid'] = 'Grupo a que pertence a subwiki';
 $string['privacy:metadata:wiki_subwikis:userid'] = 'Utilizador a que pertence a subwiki (em caso de wikis individuais)';
 $string['privacy:metadata:wiki_versions'] = 'Informação sobre a história da página wiki';
-$string['privacy:metadata:wiki_versions:content'] = 'Conteúdo de revisão';
-$string['privacy:metadata:wiki_versions:contentformat'] = 'Formato do conteúdo de revisão';
-$string['privacy:metadata:wiki_versions:timecreated'] = 'Data/hora em que a revisão foi criada';
+$string['privacy:metadata:wiki_versions:content'] = 'Conteúdo da revisão';
+$string['privacy:metadata:wiki_versions:contentformat'] = 'Formato do conteúdo da revisão';
+$string['privacy:metadata:wiki_versions:timecreated'] = 'Data e hora em que a revisão foi criada';
 $string['privacy:metadata:wiki_versions:userid'] = 'Utilizador que criou a revisão';
 $string['privacy:metadata:wiki_versions:version'] = 'Número da versão';
 $string['rated'] = 'Avaliou esta página como {$a}';
@@ -291,7 +291,7 @@ $string['viewcurrent'] = 'Versão atual';
 $string['viewperpage'] = 'Mostrar {$a} versões por página';
 $string['viewversion'] = 'A visualizar a versão #{$a}';
 $string['wiki'] = 'Wiki';
-$string['wiki:addinstance'] = 'Adicionar novo Wiki';
+$string['wiki:addinstance'] = 'Adicionar novo wiki';
 $string['wiki:createpage'] = 'Criar novas páginas wiki';
 $string['wiki:editcomment'] = 'Adicionar comentários às páginas';
 $string['wiki:editpage'] = 'Editar páginas wiki';

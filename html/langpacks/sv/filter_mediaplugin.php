@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['fallbackaudio'] = 'Ljudlänk';
 $string['fallbackvideo'] = 'Videolänk';
 $string['filtername'] = 'Pluginmoduler för multimedia';
-$string['linktomedia'] = 'Multimediafiltret hittar en länk i text som pekar på en multimedia resurs och ersätter länken med relevant mediaspelar-kod som kan spela upp resursen. Den ersätter också &lt;video&gt; och &lt;audio&gt;-taggar med utvalda video- och ljudspelare.
+$string['linktomedia'] = 'Multimediafiltret hittar en länk i text som pekar på en multimediaresurs och ersätter länken med relevant mediaspelarkod som kan spela upp resursen. Den ersätter också &lt;video&gt;- och &lt;audio&gt;-taggar med utvalda video- och ljudspelare.
 
 <a href="{$a}">Hantera mediaspelare</a>';
 $string['privacy:metadata'] = 'Pluginmodulen Multimedia lagrar ingen personinformation.';

@@ -33,10 +33,40 @@
 		"tt_length": "Longitud",
 		"tt_labels": "Etiqueta",
 		"tt_elementMML": "Expression",
+		"tt_image": "Imagen",
 
 		"tt_bold": "negrita",
 		"tt_italic": "itálica",
 		"tt_color": "Color",
+
+		"tt_barChart": "Seleccionar",
+		"tt_newPackBars": "Inserta paquete de barras",
+		"tt_newSideBars": "Inserta grupo de barras",
+		"tt_deletePackBars": "Borrar paquete de barras",
+		"tt_deleteSideBars": "Borrar grupo de barras",
+		"tt_stackBars": "Apilar barras",
+		"tt_unstackBars": "Desapilar barras", 
+
+		"tt_pieChart": "Seleccionar",
+		"tt_newPie": "Nuevo trozo",
+		"tt_deletePie": "Borrar trozo",
+		"tt_newPieClockwise": "Horario",
+		"tt_newPieCounterclockwise": "Antihorario",
+		"tt_pie2D": "2D",
+		"tt_pie3D": "3D",
+		
+		"tt_lineChart": "Seleccionar",
+		"tt_newLineLineChart": "Inserta línea",
+		"tt_newPointsLineChart": "Inserta grupo de puntos",
+		"tt_deleteLineLineChart": "Borrar línea",
+		"tt_deletePointsLineChart": "Borrar grupo de puntos",
+		"tt_addPointsLeft": "Puntos izquierda",
+		"tt_addPointsRight": "Puntos derecha",
+
+		"tt_fitPlotterToStats": "Encaja",
+		"tt_horizontal": "Horizontal",
+		"tt_vertical": "Vertical",
+		"tt_pointDiameter": "Diámetro",
 
 		"tt_fraction": "fracción grande",
 		"tt_superscript": "superíndice",
@@ -83,7 +113,7 @@
 
 		"tt_lineWidth": "Grosor de línea",
 		"tt_lineStyle": "Estilo de línea",
-		"tt_lineColor": "Color de línea",
+		"tt_lineColor": "Color",
 
 		"tt_lineSolid": "Sólido",
 		"tt_lineDash": "Rayas",
@@ -124,10 +154,13 @@
 		"downloadText": "Seleccione un tamaño para descargar el tablero gráfico como una imagen cuadrada PNG",
 		"downloadHelperText": "Imagen cuadrada (1:1)",
 		"downloadErrorText": "El tamaño debe ser un número entero positivo.",
-		"confirm": "confirmar",
+		"confirm": "Confirmar",
 		"cancel": "cancelar",
 		"sizeInPixels": "Tamaño en píxeles",
 		"insertANumber": "Inserte un número",
+
+		"uploadImageErrorTitle": "Ups, something went wrong!",
+		"uploadImageErrorText": "Ensure that the upload is a valid PNG image and try again",
 
 		"type_point": "Punto",
 		"type_line": "Recta",
@@ -157,6 +190,12 @@
 		"type_length": "Longitud",
 		"type_distance": "Distancia",
 		"type_label": "Etiqueta de texto",
+		
+		"type_bar_chart": "Gráfico de barras",
+		"type_line_chart": "Gráfico de líneas",
+		"type_pie_chart": "Gráfico circular",
+		"type_box_plot": "Gráfico de cajas",
+		"type_histogram": "Histograma",
 
 		"equation": "Ecuación"
 	}

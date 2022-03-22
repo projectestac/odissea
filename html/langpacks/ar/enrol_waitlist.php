@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['defaultrole'] = 'إسناد الدور الافتراضي';
 $string['groupkey'] = 'استعمل مفاتيح الانضمام للمجموعات';
 $string['groupkey_desc'] = 'استعمل مفاتيح الانضمام للمجموعات إفتراضيًا';
 $string['password'] = 'مفتاح الانضمام';

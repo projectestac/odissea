@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = 'Campo ficheiro';
 $string['pluginname'] = 'Ficheiro';
-$string['privacy:metadata'] = 'O componente do campo Ficheiro não armazena dados pessoais, usa tabelas definidas em mod_data.';
+$string['privacy:metadata'] = 'O componente do campo Ficheiro não armazena quaisquer dados pessoais, usa tabelas definidas em mod_data.';

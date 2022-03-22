@@ -66,7 +66,7 @@ $string['description'] = 'Descrição';
 $string['duplicate_usernames'] = 'Não foi possível criar um índice nas colunas "mnethostid" e "username" na tabela de utilizadores. <br />Tal pode acontecer quando existem <a href="{$a}" target="_blank"> nomes de utilizadores duplicados nesta tabela.</a>. <br /> A atualização deve, ainda assim, ser concluída com sucesso. Clique na hiperligação acima para receber instruções para a resolução deste problema, numa nova janela. Recomendamos que se ocupe disse apenas depois de concluída a atualização. <br />';
 $string['enabled_for_all'] = '(Este serviço foi ativado para todos os servidores).';
 $string['enterausername'] = 'Introduza um nome de utilizador, ou uma lista de nomes do utilizador, separados por vírgulas.';
-$string['error7020'] = 'Este erro ocorre normalmente quando o site externo criou um registo para o seu site com o wwwroot errado; por exemplo, https://oseusite.com em vez de http://www.oseusite.com. Contacte o administrador do site externo, com o wwwroot correto (está definido em config.php) e peça-lhe para atualizar o registo do seu site.';
+$string['error7020'] = 'Este erro ocorre normalmente quando o site externo criou um registo para o seu site com o wwwroot errado; por exemplo, https://oseusite.com em vez de http://www.oseusite.com. Contacte o administrador do site externo com o wwwroot correto (está definido em config.php) e peça-lhe para atualizar o registo do seu site.';
 $string['error7022'] = 'A mensagem que enviou para o site remoto está devidamente encriptada, mas não está assinada, o que é muito surpreendente. Recomenda-se que submeta um ficheiro com informação do bug se tal voltar a acontecer (forneça o máximo de informação possível sobre as versões Moodle em questão, etc.)';
 $string['error7023'] = 'O site externo tentou descodificar a sua mensagem recorrendo a todas as chaves que tem registadas para o seu site. Todas elas falharam. Pode tentar resolver este problema, redefinindo as chaves com o site remoto, manualmente. Este problema não deve acontecer exceto se esteve sem comunicar com o site externo durante alguns meses.';
 $string['error7024'] = 'Enviou uma mensagem não encriptada para o site remoto, mas este não aceita mensagens não encriptadas do seu site, o que é surpreendente. Recomenda-se que submeta um ficheiro com informação do bug se tal voltar a acontecer (forneça o máximo de informação possível sobre as versões Moodle em questão, etc.)';
@@ -83,7 +83,7 @@ $string['failedaclwrite'] = 'Não foi possível escrever na lista de controlo de
 $string['findlogin'] = 'Encontrar conta de utilizador';
 $string['forbidden-function'] = 'Essa função não foi ativada para RPC.';
 $string['forbidden-transport'] = 'Não é permitido usar o método de transporte pretendido.';
-$string['forcesavechanges'] = 'Forçar a gravação de alterações';
+$string['forcesavechanges'] = 'Forçar guardar alterações';
 $string['helpnetworksettings'] = 'Configurar comunicação na Rede Moodle';
 $string['hidelocal'] = 'Ocultar utilizadores locais';
 $string['hideremote'] = 'Ocultar utilizadores externos';
@@ -114,7 +114,7 @@ $string['invalidhost'] = 'Tem de fornecer um identificador de servidor válido';
 $string['invalidpubkey'] = 'Esta chave não é uma chave SSL válida: {$a}';
 $string['invalidurl'] = 'Parâmetro inválido de URL.';
 $string['ipaddress'] = 'Endereço IP';
-$string['is_in_range'] = 'O endereço de IP <code>{$a}</code> representa um servidor válido de confiança.';
+$string['is_in_range'] = 'O endereço IP <code>{$a}</code> representa um servidor válido de confiança.';
 $string['ispublished'] = 'O Moodle {$a} disponibiliza este serviço.';
 $string['issubscribed'] = 'O Moodle {$a} está a subscrever este serviço neste servidor.';
 $string['keydeleted'] = 'A sua chave foi eliminada e substituída com sucesso.';
@@ -165,7 +165,7 @@ $string['nosuchservice'] = 'O serviço RPC não está a correr neste servidor.';
 $string['nosuchtransport'] = 'Não existe nenhum transporte com esse ID.';
 $string['notBASE64'] = 'Esta string não está com formato de codificação Base64. Não pode ser uma chave válida.';
 $string['notPEM'] = 'Esta chave não pode ser utilizada porque não está em formato PEM.';
-$string['not_in_range'] = 'O endereço de IP &nbsp;<code>{$a}</code>&nbsp; não representa um servidor válido de confiança.';
+$string['not_in_range'] = 'O endereço IP <code>{$a}</code> não representa um servidor válido de confiança.';
 $string['notenoughidpinfo'] = 'O seu fornecedor de identidade não está a fornecer informação suficiente para que seja possível criar a sua conta localmente.';
 $string['notinxmlrpcserver'] = 'Tentar aceder ao cliente externo da Rede Moodle, mas não durante a execução XMLRPC do servidor';
 $string['notmoodleapplication'] = 'AVISO: Esta não é uma Aplicação móvel Moodle, pelo que alguns métodos de inspeção podem não funcionar corretamente.';
@@ -182,7 +182,7 @@ $string['position'] = 'Posição';
 $string['postrequired'] = 'A função de apagar requer um pedido POST.';
 $string['privacy:metadata'] = 'O módulo Comportamento das perguntas Modo adaptável (sem penalizações) não armazena quaisquer dados pessoais.';
 $string['profileexportfields'] = 'Campos a enviar';
-$string['profilefielddesc'] = 'Esta configuração permite definir a lista de campos do perfil que são enviados e recebidos através da Rede Moodle quando as contas de utilizador são criadas ou atualizadas. Além disso, é possível redefinir esta configuração individualmente para cada par da Rede Moodle. De notar que os campos seguintes são sempre enviados e não são opcionais: {$a}';
+$string['profilefielddesc'] = 'Esta configuração permite definir a lista de campos do perfil que são enviados e recebidos através da Rede Moodle quando as contas de utilizador são criadas ou atualizadas. Além disso, é possível redefinir esta configuração individualmente para cada par da Rede Moodle. Tenha em atenção que os campos seguintes são sempre enviados e não são opcionais: {$a}';
 $string['profilefields'] = 'Campos do perfil';
 $string['profileimportfields'] = 'Campos a importar';
 $string['promiscuous'] = 'Promíscuo';
@@ -239,12 +239,12 @@ $string['testtrustedhosts'] = 'Testar um endereço';
 $string['testtrustedhostsexplain'] = 'Introduza um endereço de IP para verificar se se trata de um servidor de confiança.';
 $string['theypublish'] = 'Eles publicam';
 $string['theysubscribe'] = 'Eles subscrevem';
-$string['transport_help'] = 'Estas opções são recíprocas, de modo que só lhe é possível forçar um servidor remoto a usar um certificado SSL assinado, se o seu servidor também o utilizar.';
+$string['transport_help'] = 'Estas opções são recíprocas, por isso, só é possível forçar um servidor remoto a usar um certificado SSL assinado se o seu servidor também o utilizar.';
 $string['trustedhosts'] = 'Servidores XML-RPC';
 $string['trustedhostsexplain'] = '<p>O mecanismo de servidores de confiança permite que determinadas "máquinas" executem chamadas através de XML-RPC para qualquer parte da API do Moodle.
-Esta opção está disponível para que scripts controlem o comportamento de Moodle e pode ser muito perigoso ativá-la. Em caso de dúvidas, mantenha-a desativada.</p>
+Esta opção está disponível para que scripts controlem o comportamento do Moodle e pode ser muito perigoso ativá-la. Em caso de dúvidas, mantenha-a desativada.</p>
 Esta opção <strong>não</strong> é necessária para o funcionamento da Rede Moodle.</p>
-<p>Para a ativar, introduza uma lista de endereços ou redes IP, um em cada linha.
+<p>Para a ativar, introduza a lista de endereços IP ou redes, um em cada linha.
 Alguns exemplos: </p>localhost:<br />127.0.0.1<br />localhost (com um bloco de rede):<br />127.0.0.1/32<br />
 Apenas o servidor com endereço IP 192.168.0.7:<br />192.168.0.7/32<br />
 Qualquer servidor com endereço de IP entre 192.168.0.1 e 192.168.0.255:<br />192.168.0.0/24<br />

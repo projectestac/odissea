@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['competenciestoreview'] = 'Competências para avaliar';
-$string['lp:addinstance'] = 'Adicionar um novo bloco de planos de aprendizagem';
-$string['lp:myaddinstance'] = 'Adicionar um novo bloco de planos de aprendizagem ao Painel do utilizador';
+$string['lp:addinstance'] = 'Adicionar um novo bloco Planos de aprendizagem';
+$string['lp:myaddinstance'] = 'Adicionar um novo bloco Planos de aprendizagem ao Painel do utilizador';
 $string['myplans'] = 'Os meus planos de aprendizagem';
 $string['noactiveplans'] = 'De momento, não existem planos de aprendizagem ativos.';
 $string['planstoreview'] = 'Planos para avaliar';

@@ -163,7 +163,7 @@ $string['forcecompleted_help'] = 'Gaituz gero, oraingo saiakeraren egoera "osatu
 $string['forcecompleteddesc'] = '\'Behartu osatzera\' ezarpenaren lehenetsitako balioa';
 $string['forcejavascript'] = 'Behartu erabiltzaileak JavaScript gaitzera';
 $string['forcejavascript_desc'] = 'Gaituz gero (gomendatuta), SCORM paketera sartzea saihesten da JavaScript ez badago onartuta/gaituta erabiltzailearen nabigatzailean. Ez bada gaitzen, erabiltzaileak SCORM-a ikusi ahal izango du, baina API komunikazioak huts egingo du eta ez da gordeko kalifikazioei buruzko informaziorik.';
-$string['forcejavascriptmessage'] = 'JavaScript beharrezkoa da objektu hau ikusteko, mesedez, gaitu JavaScript zure nabigatzailean eta berriz saiatu.';
+$string['forcejavascriptmessage'] = 'JavaScript beharrezkoa da objektu hau ikusteko, mesedez, gaitu JavaScript zure nabigatzailean eta saiatu berriro.';
 $string['forcenewattempts'] = 'Behartu saiakera berria';
 $string['forcenewattempts_help'] = '3 aukera dago:
 

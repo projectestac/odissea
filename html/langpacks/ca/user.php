@@ -61,4 +61,6 @@ $string['privacy:metadata:lastaccesstablesummary'] = 'Informació sobre l\'últi
 $string['privacy:metadata:lastip'] = 'Darrera adreça IP de l\'usuari.';
 $string['privacy:metadata:lastname'] = 'Cognom de l\'usuari.';
 $string['privacy:metadata:lastnamephonetic'] = 'Detalls fonètics sobre el cognom de l\'usuari.';
+$string['privacy:metadata:user_preferences:name'] = 'Nom de la preferència';
+$string['privacy:metadata:user_preferences:userid'] = 'ID de l\'usuari';
 $string['selectfiltertype'] = 'Selecciona';

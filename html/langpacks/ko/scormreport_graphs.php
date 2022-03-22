@@ -29,3 +29,4 @@ $string['invaliddata'] = '데이터가 충분하지 않음';
 $string['participants'] = '참여자 수';
 $string['percent'] = '퍼센트 (%) 확보';
 $string['pluginname'] = '그래프 보고서';
+$string['privacy:metadata'] = '그래프 보고서는 다른 장소에 저장된 데이터를 보여주기만 합니다.';

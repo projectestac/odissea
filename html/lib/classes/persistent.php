@@ -246,12 +246,13 @@ abstract class persistent {
     final public static function properties_definition() {
         global $CFG;
 
-        static $def = null;
-        if ($def !== null) {
-            return $def;
+        static $cachedef = [];
+        if (isset($cachedef[static::class])) {
+            return $cachedef[static::class];
         }
 
-        $def = static::define_properties();
+        $cachedef[static::class] = static::define_properties();
+        $def = &$cachedef[static::class];
         $def['id'] = array(
             'default' => 0,
             'type' => PARAM_INT,
@@ -392,7 +393,8 @@ abstract class persistent {
      * @return static
      */
     final public function from_record(stdClass $record) {
-        $record = (array) $record;
+        $properties = static::properties_definition();
+        $record = array_intersect_key((array) $record, $properties);
         foreach ($record as $property => $value) {
             $this->raw_set($property, $value);
         }

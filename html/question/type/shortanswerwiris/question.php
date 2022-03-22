@@ -55,9 +55,9 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
      */
     public function join_all_text() {
         $text = parent::join_all_text();
-        // Answers and feedback.
+        // Only feedback: answers should be extracted using newVariablesRequestWithQuestionData.
         foreach ($this->base->answers as $key => $value) {
-            $text .= ' ' . $value->answer . ' ' . $value->feedback;
+            $text .= ' ' . $value->feedback;
         }
         return $text;
     }
@@ -190,11 +190,14 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
 
             // Choose best answer.
             $max = 0.0;
+            $maxwqgrade = 0.0;
             $answer = null;
             for ($i = 0; $i < count($correctanswers); $i++) {
-                $grade = $qi->getAnswerGrade($i, 0, $this->wirisquestion);
+                $wqgrade = $qi->getAnswerGrade($i, 0, $this->wirisquestion);
+                $grade = $wqgrade * $correctanswers[$i]->fraction;
                 if ($grade > $max) {
                     $max = $grade;
+                    $maxwqgrade = $wqgrade;
                     $answer = $correctanswers[$i];
                 }
             }
@@ -205,7 +208,7 @@ class qtype_shortanswerwiris_question extends qtype_wq_question
             if (!empty($answer)) {
                 $matchinganswerid = $answer->id;
                 if ($max < 1.0) {
-                    $this->step->set_var('_matching_answer_grade', $max, true);
+                    $this->step->set_var('_matching_answer_grade', $maxwqgrade, true);
                 }
             }
 

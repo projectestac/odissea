@@ -40,7 +40,10 @@ $string['confirmaccountemail'] = '{$a->fullname} 您好，
 绝大多数电子邮件客户端中，以上地址应该是蓝色可点击的。
 如果无法点击，请将该地址复制到您的浏览器顶端的的地址栏中。
 
-如需帮助，请联系站点管理员 {$a->admin}';
+如需帮助，请联系站点管理员 {$a->admin}
+
+如果你没有这样做，其他人可能会试图破坏你的帐户。
+请立即联系网站管理员。';
 $string['confirmaccountemailsubject'] = '{$a}：账户确认';
 $string['confirmationinvalid'] = '该确认地址无效，可能是因为已经过期。请重新注册以获取新的确认邮件。';
 $string['confirmationpending'] = '该账号的电子邮件尚未确认。';
@@ -64,6 +67,14 @@ $string['emailconfirmlinksent'] = '<p>已有既有用户使用了相同的电子
 <p>只有在绑定后才可使用第三方登陆。</p>
 <p>已向您的邮箱 <b>{$a}</b> 发送了一封包含绑定方法的邮件。</p>
 <p>如果遇到问题，请与站点管理员联系。</p>';
+$string['emailpasswordchangeinfo'] = '你好{$a->firstname}，
+
+有人（可能是你）在“{$a->sitename}”上为你的帐户请求了一个新密码。
+
+但是，您的密码无法重置，因为您正在使用另一个站点上的帐户登录。
+
+请像以前一样登录，使用登录页面上的链接。
+{$a->admin}';
 $string['emailpasswordchangeinfosubject'] = '{$a}：确定改变密码';
 $string['info'] = '第三方账户';
 $string['issuer'] = '第三方平台';

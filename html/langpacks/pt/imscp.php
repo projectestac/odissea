@@ -42,7 +42,7 @@ $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta perc
 $string['keepold'] = 'Arquivar pacotes';
 $string['keepoldexplain'] = 'Quantos pacotes devem ser arquivados?';
 $string['modulename'] = 'Pacote IMS';
-$string['modulename_help'] = 'Um pacote IMS é um conjunto de ficheiros que são compactados de acordo com uma norma estipulada para que possam ser reutilizados em diferentes plataformas. O recurso pacote IMS permite que pacotes criados externamente ao Moodle (formato zip) possam ser adicionados a uma disciplina.
+$string['modulename_help'] = 'Um pacote IMS é um conjunto de ficheiros que são compactados de acordo com uma norma estipulada para que possam ser reutilizados em diferentes plataformas. O recurso pacote IMS permite que pacotes criados externamente ao Moodle (formato Zip) possam ser adicionados a uma disciplina.
 
 O conteúdo é geralmente exibido em várias páginas com navegação entre as mesmas. Existem várias opções para a exibição do conteúdo, como numa janela pop-up, com menu de navegação, botões, etc.
 

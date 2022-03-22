@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = 'En inlämning har laddats upp.';
 $string['eventassessmentevaluated'] = 'Bedömning utvärderad';
 $string['eventassessmentevaluationsreset'] = 'Återställning av utvärderade bedömningar';
 $string['eventassessmentreevaluated'] = 'Bedömning utvärderad på nytt';
+$string['eventphaseautomaticallyswitched'] = 'Fas automatiskt växlad';
 $string['eventphaseswitched'] = 'Fas växlad';
 $string['eventsubmissionassessed'] = 'Inlämning bedömd';
 $string['eventsubmissionassessmentsreset'] = 'Inlämningsbedömningar tömda';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '单选按钮字段';
 $string['pluginname'] = '单选按钮';
+$string['privacy:metadata'] = '单选按钮字段组件不存储任何个人数据，它使用mod_data中定义的表。';

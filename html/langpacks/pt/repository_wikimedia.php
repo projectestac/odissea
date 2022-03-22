@@ -27,8 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Configurar repositório "Wikimedia"';
 $string['keyword'] = 'Pesquisar por';
-$string['maxheight'] = 'Altura máxima da imagem (em pixéis)';
-$string['maxwidth'] = 'Largura máxima da imagem (em pixéis)';
+$string['maxheight'] = 'Altura máxima da imagem (em píxeis)';
+$string['maxwidth'] = 'Largura máxima da imagem (em píxeis)';
 $string['pluginname'] = 'Wikimedia';
 $string['privacy:metadata:repository_wikimedia'] = 'O módulo repositório Wikimedia não armazena quaisquer dados pessoais, mas transmite dados do utilizador do Moodle para o sistema remoto.';
 $string['privacy:metadata:repository_wikimedia:preference:maxheight'] = 'Preferência de utilizador configurada para a Altura Máxima do repositório Wikimedia.';

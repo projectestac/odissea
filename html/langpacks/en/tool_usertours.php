@@ -110,7 +110,7 @@ Some example values include:
 * /mod/forum/view.php% - to match the forum discussion list
 * /user/profile.php% - to match the user profile page
 
-If you wish to display a tour on the Site Home page, you can use the value: "FRONTPAGE".';
+If you wish to display a tour on the site home, you can use the value: "FRONTPAGE".';
 $string['pausetour'] = 'Pause';
 $string['placement'] = 'Placement';
 $string['placement_help'] = 'A step may be placed above, below, left or right of the target. Above or below is recommended, as these adjust better for mobile display.

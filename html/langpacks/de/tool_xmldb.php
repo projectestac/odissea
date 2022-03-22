@@ -174,6 +174,13 @@ $string['persistentfieldsexist'] = 'Diese Felder sind bereits vorhanden:';
 $string['pluginname'] = 'XMLDB-Editor';
 $string['primarykeyonlyallownotnullfields'] = 'Primäre Keys können nicht null sein';
 $string['privacy:metadata'] = 'Das Plugin \'XMLDB Editor\' speichert keine personenbezogenen Daten.';
+$string['reconcile_files'] = 'Suchen Sie nach XMLDB-Dateien, die geklärt werden müssen';
+$string['reconcile_files_intro'] = 'Diese Funktionalität sucht nach dem aktuellen Inhalt aller XMLDB-Dateien und überprüft, ob sie mit den Ergebnissen ihrer Generierung aus dem XMLDB-Editor übereinstimmen.
+
+Eine Liste der Dateien, die geklärt (regenerationiert) werden müssen, wird angezeigt. Der XMLDB-Editor sollte verwendet werden, um die Dateien zu klären.';
+$string['reconcile_files_no'] = 'Alle Dateien sind in Ordnung. Eine Klärung ist nicht notwendig.';
+$string['reconcile_files_yes'] = 'Dateien zur Klärung gefunden:';
+$string['reconcilefiles'] = 'XMLDB-Dateien klären';
 $string['reserved'] = 'Reserviert';
 $string['reservedwords'] = 'Reservierte Wörter';
 $string['revert'] = 'Rückgängig';

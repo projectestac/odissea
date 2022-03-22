@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pleaseselectacertainty'] = '请选择确定程度。';
 $string['pluginname'] = '立即反馈（支持CBM）';
+$string['privacy:metadata'] = 'CBM问题行为插件的即时反馈不存储任何个人数据。';

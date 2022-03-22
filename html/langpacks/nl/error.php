@@ -467,6 +467,7 @@ $string['nopermissiontorate'] = 'Het beoordelen van items niet toegelaten!';
 $string['nopermissiontoshow'] = 'Geen rechten om dit te zien!';
 $string['nopermissiontounlock'] = 'Geen rechten om blokkering op te heffen!';
 $string['nopermissiontoupdatecalendar'] = 'Je hebt niet het recht om activiteiten in de kalender aan te passen.';
+$string['nopermissiontoviewcalendar'] = 'Sorry, maar je hebt geen toestemming om de agenda-afspraak te bekijken.';
 $string['nopermissiontoviewgrades'] = 'Kan cijfers niet zien.';
 $string['nopermissiontoviewletergrade'] = 'Geen rechten om letterbeoordelingen te zien';
 $string['nopermissiontoviewpage'] = 'Je hebt niet het recht om deze pagina te bekijken';

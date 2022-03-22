@@ -118,10 +118,10 @@ $string['placement_help'] = 'Uma etapa pode ser colocada acima, abaixo, à esque
 Se não for possível ajustar a etapa no local especificado de uma determinada página, ela será automaticamente colocada noutro lugar.';
 $string['pluginname'] = 'Demonstrações ao utilizador';
 $string['previousstep'] = 'Anterior';
-$string['privacy:metadata:preference:completed'] = 'A data/hora em que um utilizador completou pela última vez uma demonstração de utilizador.';
-$string['privacy:metadata:preference:requested'] = 'A data/hora em que um utilizador solicitou pela última vez uma demonstração de utilizador.';
-$string['privacy:request:preference:completed'] = 'A última vez que marcou como concluída a demonstração de utilizador "{$a->name}" foi em {$a->time}';
-$string['privacy:request:preference:requested'] = 'Solicitou a demonstração de utilizador "{$a->name}" pela última vez em {$a->time}';
+$string['privacy:metadata:preference:completed'] = 'A data e hora em que um utilizador completou pela última vez uma demonstração ao utilizador.';
+$string['privacy:metadata:preference:requested'] = 'A data e hora em que um utilizador solicitou pela última vez uma demonstração ao utilizador.';
+$string['privacy:request:preference:completed'] = 'A última vez que marcou como concluída a demonstração ao utilizador "{$a->name}" foi em {$a->time}';
+$string['privacy:request:preference:requested'] = 'Solicitou a demonstração ao utilizador "{$a->name}" pela última vez em {$a->time}';
 $string['reflex'] = 'Clique para avançar';
 $string['reflex_help'] = 'Ir para a próxima etapa quando clicar no destino.';
 $string['resettouronpage'] = 'Repetir a demonstração ao utilizador desta página';
@@ -147,9 +147,9 @@ $string['targettype_help'] = 'Cada etapa é associada a uma parte da página - o
 * Seletor CSS - para definir com precisão a área de destino usando CSS
 * Mostrar no meio da página - para uma etapa que não precisa de ser associada a uma parte específica da página';
 $string['title'] = 'Título';
-$string['title_help'] = 'O título de uma etapa pode ser adicionado como texto simples, incluído em palavras-chave multilingue se for necessário (para uso com o filtro de conteúdo em vários idiomas).
+$string['title_help'] = 'O título de uma etapa pode ser inserido como texto simples, e se necessário, entre tags multilingue (para uso com o filtro Conteúdos multilingue para vários idiomas).
 
-Em alternativa, um ID de string do idioma pode ser inserido no identificador de formato, componente (sem parêntesis ou espaço após a vírgula).';
+Alternativamente, um ID de string de idioma pode ser inserido no formato identifier,component (sem parênteses ou espaço após a vírgula).';
 $string['tour1_content_addingblocks'] = 'Na verdade, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na Aplicação móvel Moodle, por isso, e como regra geral, é muito melhor certificar-se de que o seu site funciona bem sem quaisquer blocos.';
 $string['tour1_content_blockregion'] = 'Existe ainda uma área com blocos. Recomenda-se a remoção completa dos blocos Navegação e Administração, uma vez que toda a funcionalidade destes está noutro lugar no tema Boost.';
 $string['tour1_content_customisation'] = 'Para personalizar a aparência do seu site e da página inicial, use o menu de configurações no canto deste cabeçalho. Clique em \'Ativar o modo de edição\'.';
@@ -163,7 +163,7 @@ $string['tour1_title_end'] = 'Fim da demonstração';
 $string['tour1_title_navigation'] = 'Navegação';
 $string['tour1_title_welcome'] = 'Bem-vindo';
 $string['tour2_content_addblock'] = 'Se ativar o modo de edição, poderá adicionar blocos através do menu de navegação. No entanto, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na Aplicação móvel Moodle, por isso, para uma melhor experiência do utilizador, é melhor certificar-se de que a disciplina funciona bem sem quaisquer blocos.';
-$string['tour2_content_addingblocks'] = 'Pode adicionar blocos a esta página através deste botão. No entanto, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na Aplicação móvel Moodle, por isso, para uma melhor experiência do utilizador, é melhor certificar-se de que a disciplina funciona bem sem quaisquer blocos.';
+$string['tour2_content_addingblocks'] = 'Pode adicionar blocos a esta página através deste botão. No entanto, pense cuidadosamente sobre incluir quaisquer blocos nas suas páginas. Os blocos não são mostrados na Aplicação móvel Moodle, por isso, e para uma melhor experiência do utilizador, certifique-se de que a disciplina funciona bem sem quaisquer blocos.';
 $string['tour2_content_customisation'] = 'Para alterar as configurações da disciplina, use o menu de configurações no canto deste cabeçalho. Também encontrará um menu de configurações semelhante na página inicial de todas as atividades. Clique em Ativar o modo de edição.';
 $string['tour2_content_end'] = 'Esta foi uma demonstração ao utilizador. Não será mostrada novamente a menos que a reinicie usando a hiperligação existente no rodapé. Se necessário, o administrador do site também pode criar outras demonstrações para este site.';
 $string['tour2_content_navigation'] = 'A navegação é agora feita através deste menu de navegação. Use o botão na parte superior para ocultá-lo ou mostrá-lo. Verá que existem hiperligações para as secções principais da sua disciplina.';

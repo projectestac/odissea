@@ -32,7 +32,7 @@ $string['airnotifierfielderror'] = 'Veuillez retirer tous les espaces ou caract�
 $string['airnotifiermobileappname'] = 'Nom de l\'App mobile';
 $string['airnotifierport'] = 'Port Airnotifier';
 $string['airnotifierurl'] = 'URL Airnotifier';
-$string['checkconfiguration'] = 'Vérifier et tester la configuation des notifications push';
+$string['checkconfiguration'] = 'Vérifier et tester la configuration des notifications push';
 $string['configairnotifieraccesskey'] = 'La clef d\'accès à utiliser pour se connecter au serveur Airnotifier. Une clef d\'accès peut être obtenue en cliquant sur « Demander une clef d\'accès » (uniquement pour les sites enregistrés) ou en créant un compte sur le <a href="https://apps.moodle.com">portail des apps Moodle</a>.';
 $string['configairnotifierappname'] = 'Le nom de l\'app dans Airnotifier';
 $string['configairnotifiermobileappname'] = 'L\'identifiant unique de l\'App mobile (par exemple : com.moodle.moodlemobile).';

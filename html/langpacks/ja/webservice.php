@@ -168,6 +168,7 @@ $string['required'] = '必須';
 $string['requiredcapability'] = '必須ケイパビリティ';
 $string['requiredcapability_help'] = 'この設定を有効にした場合、必須ケイパビリティが割り当てられたユーザのみサービスにアクセスすることができます。';
 $string['requiredcaps'] = '必須ケイパビリティ';
+$string['resettokencomplete'] = '選択されたトークンがリセットされました。';
 $string['resettokenconfirm'] = '本当にサービス<strong>{$a->service}</strong>の<strong>{$a->user}</strong>用ウェブサービスキーをリセットしてもよろしいですか?';
 $string['resettokenconfirmsimple'] = '本当のこのキーをリセットしてもよろしいですか? 古いキーを含んだ保存済みリンクすべてが今後動作しないようになります。';
 $string['response'] = 'レスポンス';

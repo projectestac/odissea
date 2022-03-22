@@ -109,7 +109,7 @@ Le caractère % peut être utilisé comme joker pour remplacer une chaîne de ca
 * /mod/forum/view.php% - correspond à la liste des forums de discussion
 * /user/profile.php% - correspond au profil des utilisateurs
 
-Pour afficher une visite guidée sur la page d\'accueil, il faut utiliser la valeur « FRONTPAGE ».';
+Pour afficher une visite guidée sur la page d\'accueil, utiliser la valeur « FRONTPAGE ».';
 $string['pausetour'] = 'Pause';
 $string['placement'] = 'Position';
 $string['placement_help'] = 'Une étape peut être affichée au-dessus, au-dessous, à gauche ou à droite de la cible. Un positionnement au-dessus ou au-dessous est recommandé, car s\'adaptant mieux aux appareils mobiles.
@@ -148,7 +148,7 @@ $string['targettype_help'] = 'Chaque étape est associée à une partie de la pa
 $string['title'] = 'Titre';
 $string['title_help'] = 'Le titre d\'une étape peut être ajouté en texte pur ou en utilisant la syntaxe multilingue de Moodle (pour utilisation avec le filtre multilingue).
 
-Il est aussi possible d\'indiquer un identifiant de chaîne de caractères, sous la forme « identifiant,composant » (sans espace après la virgule).';
+Il est aussi possible d\'indiquer un identifiant de chaîne de caractères, sous la forme « identifiant,composant » (sans espace ni crochet après la virgule).';
 $string['tour1_content_addingblocks'] = 'En fait, réfléchissez à deux fois avant d\'ajouter des blocs sur vos pages. Les blocs ne sont pas affichés dans l\'app Moodle, donc de façon générale, il est beaucoup mieux de s\'assurer que votre plateforme fonctionne bien sans aucun bloc.';
 $string['tour1_content_blockregion'] = 'Il reste encore une région pour les blocs à cet endroit. Nous vous recommandons de retirer complètement les blocs Navigation et Administration, puisque toutes leurs fonctionnalités sont disponibles ailleurs dans le thème Boost.';
 $string['tour1_content_customisation'] = 'Pour personnaliser l\'apparence de votre plateforme et de sa page d\'accueil, utilisez le menu des réglages au coin de cette entête. Activez le mode édition maintenant.';

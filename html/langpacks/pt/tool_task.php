@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'Ad hoc';
-$string['adhocempty'] = 'A fila de tarefas ad hoc está vazia';
+$string['adhocempty'] = 'A fila de tarefas ad hoc está vazia.';
 $string['adhocqueueold'] = 'A tarefa mais antiga tem {$a->age} o que é superior a {$a->max}';
 $string['adhocqueuesize'] = 'Existem {$a} tarefas na fila de espera da tarefa ad hoc';
 $string['adhoctaskid'] = 'ID da tarefa ad hoc: {$a}';

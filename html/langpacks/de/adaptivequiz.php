@@ -76,7 +76,6 @@ $string['browsersecurity'] = 'Browsersicherheit';
 $string['browsersecurity_help'] = 'Wenn "Vollbild-Popup mit etwas JavaScript-Sicherheit" ausgewählt ist, wird der Test nur starten, wenn Teilnehmer/innen einen JavaScript-fähigen Webbrowser verwenden. Der Test erscheint in einem Vollbild-Popup-Fenster über allen anderen Fenstern und hat keine Navigationselemente. Die Teilnehmer/innen werden – so weit wie möglich – davon abgehalten, Funktionen wie Kopieren und Einfügen zu nutzen.';
 $string['calcerrorwithinlimits'] = 'Berechneter Standardfehler von {$a->calerror} befindet sich innerhalb der Grenzen, welche durch die Aktivität {$a->definederror} festgelegt wurden';
 $string['closeattempt'] = 'Versuch beenden';
-$string['completeattempterror'] = 'Fehler beim Versuch, den Testversuch abzuschließen';
 $string['confirmcloseattempt'] = 'Den Versuch von {$a->name} sicher beenden?';
 $string['confirmcloseattemptscore'] = '{$a->num_questions} Fragen wurden beantwortet und die bisherige Punktzahl beträgt {$a->measure} {$a->standarderror}.';
 $string['confirmcloseattemptstats'] = 'Dieser Versuch wurde am {$a->started} begonnen und am {$a->modified} zuletzt aktualisiert.';

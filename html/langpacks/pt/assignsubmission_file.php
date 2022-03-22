@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Tipos de ficheiro permitidos';
-$string['acceptedfiletypes_help'] = 'Os tipos de ficheiro permitidos podem ser restringidos se indicar uma lista de extensões de ficheiros. Se deixar o campo vazio, todos os tipos de ficheiro serão permitidos.';
+$string['acceptedfiletypes_help'] = 'Os tipos de ficheiro permitidos podem ser restringidos se indicar uma lista de extensões de ficheiros. Se deixar o campo em branco, todos os tipos de ficheiro serão permitidos.';
 $string['configmaxbytes'] = 'Tamanho máximo do ficheiro';
 $string['countfiles'] = '{$a} ficheiros';
 $string['default'] = 'Ativo por predefinição';
@@ -38,10 +38,10 @@ $string['eventassessableuploaded'] = 'Um ficheiro foi carregado';
 $string['file'] = 'Submissão de ficheiros';
 $string['maxbytes'] = 'Tamanho máximo do ficheiro';
 $string['maxfiles'] = 'Número máximo de ficheiros por submissão';
-$string['maxfiles_help'] = 'Se a submissão de ficheiros estiver ativa, é possível definir o número máximo de ficheiros que o aluno pode adicionar ao trabalho.';
+$string['maxfiles_help'] = 'Se a submissão de ficheiros estiver ativa, é possível definir o número máximo de ficheiros que o aluno pode adicionar à sua submissão.';
 $string['maxfilessubmission'] = 'Número máximo de ficheiros';
 $string['maxfilessubmission_help'] = 'Se a submissão de ficheiros estiver ativa, cada aluno poderá submeter um ou mais ficheiros.';
-$string['maximumsubmissionsize'] = 'Tamanho máximo dos ficheiros';
+$string['maximumsubmissionsize'] = 'Tamanho máximo da submissão';
 $string['maximumsubmissionsize_help'] = 'Os ficheiros enviados pelos alunos não podem exceder este tamanho';
 $string['numfilesforlog'] = 'O número de ficheiro(s): {$a} ficheiro(s).';
 $string['pluginname'] = 'Submissão de ficheiros';

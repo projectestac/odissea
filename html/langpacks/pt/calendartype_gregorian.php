@@ -27,4 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['name'] = 'Gregoriano';
 $string['pluginname'] = 'Tipo de calendário gregoriano';
-$string['privacy:metadata'] = 'O módulo de formato de calendário gregoriano não armazena quaisquer dados pessoais.';
+$string['privacy:metadata'] = 'O módulo Formato de calendário gregoriano não armazena quaisquer dados pessoais.';

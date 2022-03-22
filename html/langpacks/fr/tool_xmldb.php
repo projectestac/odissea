@@ -123,7 +123,7 @@ $string['fieldsnotintable'] = 'Le champ n\'existe pas dans la table';
 $string['fieldsusedinindex'] = 'Ce champ est utilisé comme index';
 $string['fieldsusedinkey'] = 'Ce champ est utilisé comme clef.';
 $string['filemodifiedoutfromeditor'] = 'Attention ! Fichier modifié localement à l\'aide de l\'éditeur XMLDB. L\'enregistrement écrasera les modifications locales.';
-$string['filenotwriteable'] = 'Fichier non accessible en écriture';
+$string['filenotwriteable'] = 'Fichier non atteignable en écriture';
 $string['fkunknownfield'] = 'La clef étrangère {$a->keyname} sur la table {$a->tablename} fait référence à un champ inexistant {$a->reffield} dans la table référencée {$a->reftable}.';
 $string['fkunknowntable'] = 'La clef étrangère {$a->keyname} sur la table {$a->tablename} fait référence à une table inexistante {$a->reftable}.';
 $string['fkviolationdetails'] = 'La clef étrangère {$a->keyname} sur la table {$a->tablename} subit {$a->numviolations} violations sur un total de {$a->numrows} rangées.';
@@ -180,6 +180,13 @@ $string['persistentfieldsexist'] = 'Les champs suivants existent déjà :';
 $string['pluginname'] = 'Éditeur XMLDB';
 $string['primarykeyonlyallownotnullfields'] = 'Les clefs primaires ne peuvent pas être nulles';
 $string['privacy:metadata'] = 'Le plugin Éditeur XMLDB n\'enregistre aucune donnée personnelle.';
+$string['reconcile_files'] = 'Rechercher des fichiers XMLDB nécessitant régénération';
+$string['reconcile_files_intro'] = 'Cette fonctionnalité vérifie si les fichiers XMLDB actuels correspondent aux résultats de leur génération par l\'éditeur XMLDB.
+
+Une liste des fichiers nécessitant d\'être régénérés sera affichée, et l\'éditeur XMLDB devra être utilisé pour corriger les problèmes.';
+$string['reconcile_files_no'] = 'Tous les fichiers sont en ordre ; aucune action de régénération n\'est nécessaire';
+$string['reconcile_files_yes'] = 'Fichiers nécessitant régénération';
+$string['reconcilefiles'] = 'Régénérer les fichiers XMLDB';
 $string['reserved'] = 'Réservé';
 $string['reservedwords'] = 'Mots réservés';
 $string['revert'] = 'Annuler';

@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['cachedef_previous_cache'] = 'Vorherige Infos zur Aktivitätsabhängigkeit';
-$string['description'] = 'Zugriff über den Abschluss einer anderen Aktivität steuern';
+$string['description'] = 'Zugriff über den Abschluss einer anderen Aktivität regeln';
 $string['error_selectcmid'] = 'Sie müssen eine Aktivität für die Zugriffssteuerung auswählen.';
 $string['error_selectcmidpassfail'] = 'Sie müssen eine Aktivität auswählen, für die die Abschlussvoraussetzung "Bewertung notwendig" gesetzt ist.';
 $string['label_cm'] = 'Aktivität oder Material';

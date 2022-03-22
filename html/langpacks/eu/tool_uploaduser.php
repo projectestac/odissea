@@ -61,7 +61,7 @@ $string['renameerrors'] = 'Aldatu erroreen izenak';
 $string['requiredtemplate'] = 'Beharrezkoa. Hemen txantiloi-sintaxia erabil dezakezu (%l = abizena, %f = izena, %u = erabiltzaile-izena). Ikusi laguntza zehaztasun gehiagorako eta adibideak ikusteko.';
 $string['rowpreviewnum'] = 'Aurreikusi errenkadak';
 $string['unassignedsysrole'] = 'Sistemako {$a} rola kendu zaio';
-$string['uploadpicture_baduserfield'] = 'Zehaztutako erabiltzaile-ezaugarriak ez du balio. Mesedez, saiatu berriz.';
+$string['uploadpicture_baduserfield'] = 'Zehaztutako erabiltzaile-ezaugarriak ez du balio. Mesedez, saiatu berriro.';
 $string['uploadpicture_cannotmovezip'] = 'Ezin da zip fitxategia aldi baterako direktorio batera mugitu';
 $string['uploadpicture_cannotprocessdir'] = 'Ezin dira deskonprimatutako fitxategiak prozesatu.';
 $string['uploadpicture_cannotsave'] = 'Ezin da gorde {$a} erabiltzailearentzako irudia. Egiaztatu jatorrizko irudi-fitxategia.';

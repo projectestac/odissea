@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Vimeo';
 $string['pluginname_help'] = 'Vimeo视频分享网站。';
+$string['privacy:metadata'] = 'Vimeo媒体插件不存储任何个人数据。';

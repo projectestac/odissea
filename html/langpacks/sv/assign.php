@@ -388,7 +388,7 @@ $string['offline'] = 'Inga onlineinlämningar krävs';
 $string['open'] = 'Öppen';
 $string['outlinegrade'] = 'Betyg: {$a}';
 $string['outof'] = '{$a->current} av totalt {$a->total}';
-$string['overdue'] = '<font color="red">Inlämningsuppgiften är försenad med: {$a}</font>';
+$string['overdue'] = 'Inlämningsuppgiften är försenad med: {$a}';
 $string['override'] = 'Åsidosätt';
 $string['overridedeletegroupsure'] = 'Är du säker på att du vill ta bort åsidosättningen för gruppen <strong>{$a}</strong>?';
 $string['overridedeleteusersure'] = 'Är du säker på att du vill ta bort åsidosättningen för användaren <strong>{$a}</strong>?';
@@ -479,10 +479,10 @@ $string['sendlatenotifications'] = 'Meddela betygssättare om sena inlämningar'
 $string['sendlatenotifications_help'] = 'Om aktiverad kommer betygssättare (oftast lärare) att motta en notis närhelst en elev skickar in en inlämningsuppgift sent. Inställningarna för notiserna kan konfigureras.';
 $string['sendnotifications'] = 'Meddela betygssättare om inlämningar';
 $string['sendnotifications_help'] = 'Om aktiverad kommer betygssättare (oftast lärare) att motta en notis närhelst en elev skickar in en inlämningsuppgift, tidigt, i rätt tid eller för sent. Inställningarna för notiserna kan konfigureras.';
-$string['sendstudentnotifications'] = 'Meddela studenter';
+$string['sendstudentnotifications'] = 'Meddela student';
 $string['sendstudentnotifications_help'] = 'Om det här alternativet är aktiverat får deltagarna ett meddelande om det uppdaterade resultatet eller återkopplingen. Om bedömningsarbetsflödet är aktiverat för den här uppgiften skickas inte meddelanden förrän resultatet har "Släppts".';
-$string['sendstudentnotificationsdefault'] = 'Standardinställningen för "Meddela studenter"';
-$string['sendstudentnotificationsdefault_help'] = 'Ange standardvärdet för "Meddela eleverna" i  kryssrutan på betygsformuläret.';
+$string['sendstudentnotificationsdefault'] = 'Standardinställningen för "Meddela student"';
+$string['sendstudentnotificationsdefault_help'] = 'Anger standardvärdet för "Meddela student" i  kryssrutan på betygsformuläret.';
 $string['sendsubmissionreceipts'] = 'Skicka inlämningskvitton till elever';
 $string['sendsubmissionreceipts_help'] = 'Detta alternativ aktiverar inlämningskvitton till studenter. Studenter kommer få en notis när de skickar in uppgifter.';
 $string['setmarkerallocationforlog'] = 'Ange bedömningstilldelning : (id={$a->id}, fullständigt namn={$a->fullname}, bedömare={$a->marker}).';
@@ -497,7 +497,12 @@ $string['submission'] = 'Inlämning';
 $string['submissioncopiedhtml'] = '<p>Du har gjort en kopia av din tidigare uppgiftsinlämning för <i>\'{$a->assignment}</i>\'.</p>
 <p>Du kan se status för din <a href="{$a->url}">inlämnade uppgift</a> .</p>';
 $string['submissioncopiedsmall'] = 'Du har kopierat ditt tidigare uppgiftsinlämning för {$a->assignment}';
-$string['submissioncopiedtext'] = 'Du har gjort en kopia av din tidigare uppgiftsinlämning för \'{$a->assignment} &quot;Du kan se status för ditt uppgiftsinlämning: {$a->url}';
+$string['submissioncopiedtext'] = 'Du har gjort en kopia av din tidigare
+inlämningsuppgift \'{$a->assignment}\'
+
+Du kan se statusen för inlämningsuppgiften här:
+
+   {$a->url}';
 $string['submissiondrafts'] = 'Kräv att studenter klickar på knappen <em>Lämna in</em>';
 $string['submissiondrafts_help'] = 'Om aktiverat måste elever klicka på knappen <em>Lämna in</em> för att markera sin inlämning som slutgiltig. Detta tillåter elever att ha utkast av sin inlämning i systemet. Om denna inställning ändras från Nej till Ja efter att elever redan har lämnat in, kommer dessa inlämningar att betraktas som slutgiltiga.';
 $string['submissioneditable'] = 'Student kan redigera denna inlämning';
@@ -513,14 +518,18 @@ $string['submissionreceipthtml'] = '<p>Du har lämnat in en inlämningsuppgift f
 <p>Se status för din <a href="{$a->url}">inlämnade uppgift</a>.</p>';
 $string['submissionreceiptotherhtml'] = 'Din uppgift för <i>\'{$a->assignment}</i> "har lämnats in. <br /><br /> Du kan se status på din <a href="{$a->url}">inlämning</a> .';
 $string['submissionreceiptothersmall'] = 'Din uppgift för {$a->assignment} har lämnats in.';
-$string['submissionreceiptothertext'] = 'Din uppgift för \'{$a->assignment} &quot;har lämnats in. Du kan se status på ditt inlämning: {$a->url}';
+$string['submissionreceiptothertext'] = 'Din inlämningsuppgift \'{$a->assignment}\' har skickats in.
+
+Du kan se statusen för inlämningsuppgiften här:
+
+   {$a->url}';
 $string['submissionreceipts'] = 'Skicka inlämningsbekräftelser';
 $string['submissionreceiptsmall'] = 'Du har lämnat in din uppgift för {$a->assignment}';
-$string['submissionreceipttext'] = 'Du har lämnat in en uppgift för \'{$a->assignment}\'
+$string['submissionreceipttext'] = 'Din inlämningsuppgift \'{$a->assignment}\' har skickats in.
 
-Se status för din inlämnade uppgift:
+Du kan se statusen för inlämningsuppgiften här:
 
- {$a->url}';
+   {$a->url}';
 $string['submissionsclosed'] = 'Inlämning stängd';
 $string['submissionsettings'] = 'Inställningar för inlämning';
 $string['submissionslocked'] = 'Denna inlämningsuppgift accepterar inte inlämningar';

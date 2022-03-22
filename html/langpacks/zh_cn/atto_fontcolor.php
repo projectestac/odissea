@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = '黑色';
+$string['color_blue'] = '蓝色';
+$string['color_green'] = '绿色';
+$string['color_red'] = '红色';
+$string['color_white'] = '白色';
+$string['color_yellow'] = '黄色';
 $string['pluginname'] = '字体颜色';
 $string['privacy:metadata'] = 'atto_fontcolor 插件不储存任何私人数据。';

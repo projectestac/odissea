@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accessiblefilepicker'] = 'Choix de fichiers accessible';
+$string['accessiblefilepicker'] = 'Sélecteur de fichiers accessible';
 $string['activaterep'] = 'Activer les dépôts de documents';
 $string['activerepository'] = 'Plugins de dépôt disponibles';
 $string['activitybackup'] = 'Sauvegarde d\'activité';

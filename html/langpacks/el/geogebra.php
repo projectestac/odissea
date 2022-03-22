@@ -111,7 +111,6 @@ $string['resultstab'] = 'Αποτελέσματα';
 $string['resumeattempt'] = 'Συνέχιση ανολοκλήρωτης προσπάθειας';
 $string['review'] = 'Εξέταση του';
 $string['reviewtab'] = 'Εξέταση';
-$string['save'] = 'Αποθήκευση';
 $string['savechanges'] = 'Αποθήκευση αλλαγών';
 $string['savewithoutsubmitting'] = 'Αποθήκευση χωρίς υποβολή';
 $string['settings'] = 'Ρυθμίσεις';

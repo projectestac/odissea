@@ -41,7 +41,7 @@ $string['indicator:socialbreadth'] = 'Socialização do Separador';
 $string['indicator:socialbreadth_help'] = 'Este indicador é baseado na extensão social alcançada pelo aluno no recurso Separador.';
 $string['indicator:socialbreadthdef'] = 'Socialização do Separador';
 $string['indicator:socialbreadthdef_help'] = 'O participante alcançou esta percentagem do relacionamento social oferecido pelos recursos Separador durante esse intervalo de análise (Níveis = Sem participação, Participante individual)';
-$string['label:addinstance'] = 'Adicionar novo Separador';
+$string['label:addinstance'] = 'Adicionar novo separador';
 $string['label:view'] = 'Ver separador';
 $string['labeltext'] = 'Texto do separador';
 $string['modulename'] = 'Separador';

@@ -34,4 +34,4 @@ $string['privacy:metadata'] = 'O módulo Ficheiros recentes não armazena ou tra
 $string['recent:view'] = 'Ver módulo do repositório de ficheiros recentes';
 $string['recentfilesnumber'] = 'Número de ficheiros recentes';
 $string['timelimit'] = 'Tempo limite';
-$string['timelimit_help'] = 'Apenas recupera ficheiros recentes dentro do prazo';
+$string['timelimit_help'] = 'Apenas recupera ficheiros recentes dentro do prazo.';

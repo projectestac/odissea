@@ -91,7 +91,7 @@ $string['matchingfile'] = 'Verificado a partir do ficheiro <span class="filename
 $string['matchingfiles'] = 'Verificado a partir dos ficheiros:';
 $string['mycoursesonly'] = 'Apenas as minhas disciplinas';
 $string['next'] = 'Seguinte';
-$string['noindexmessage'] = 'Administração: Parece não existir um índice de pesquisa. Por favor, ';
+$string['noindexmessage'] = 'Administração: Parece não existir um índice de pesquisa. Por favor,';
 $string['noresults'] = 'Sem resultados';
 $string['normalsearch'] = 'Pesquisa normal';
 $string['notitle'] = 'Sem título';

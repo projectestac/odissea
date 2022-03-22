@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addselfassessment'] = 'Afegeix autoavaluacions';
-$string['allocationaddeddetail'] = 'Nova tasca per avaluar: <strong>{$a->reviewername}</strong> revisarà la feina de <strong>{$a->authorname}</strong>';
+$string['allocationaddeddetail'] = 'Treball nou per avaluar: <strong>{$a->reviewername}</strong> revisarà la feina de <strong>{$a->authorname}</strong>';
 $string['allocationdeallocategraded'] = 'No s\'ha pogut desassignar un tramesa ja avaluada: revisor: <strong>{$a->reviewername}</strong>, autor del treball: <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Avaluació reutilitzada: <strong>{$a->reviewername}</strong> es manté com a revisor de <strong>{$a->authorname}</strong>';
 $string['allocationsettings'] = 'Paràmetres de l\'assignació aleatòria';

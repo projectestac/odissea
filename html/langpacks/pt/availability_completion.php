@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['cachedef_previous_cache'] = 'Informações da dependência de atividade anterior';
 $string['description'] = 'Requer que o aluno conclua (ou não conclua) outra atividade.';
 $string['error_selectcmid'] = 'Tem de selecionar uma atividade para a condição de conclusão.';
-$string['error_selectcmidpassfail'] = 'Deve selecionar uma atividade configurada com condição de conclusão "Requer nota"';
+$string['error_selectcmidpassfail'] = 'Deve selecionar uma atividade com a condição de conclusão "Requer nota"  configurada';
 $string['label_cm'] = 'Atividade ou recurso';
 $string['label_completion'] = 'Estado de conclusão requerido';
 $string['missing'] = '(Atividade em falta)';

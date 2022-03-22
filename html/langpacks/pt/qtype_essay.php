@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['acceptedfiletypes'] = 'Tipos de ficheiro permitidos';
-$string['acceptedfiletypes_help'] = 'Os tipos de ficheiro permitidos podem ser restringidos se indicar uma lista de extensões de ficheiros. Se deixar o campo vazio, todos os tipos de ficheiro serão permitidos.';
+$string['acceptedfiletypes_help'] = 'Os tipos de ficheiro permitidos podem ser restringidos se indicar uma lista de extensões de ficheiros. Se deixar o campo em branco, todos os tipos de ficheiro serão permitidos.';
 $string['allowattachments'] = 'Permitir anexos';
 $string['answerfiles'] = 'Ficheiros da resposta';
 $string['answertext'] = 'Texto da resposta';
@@ -66,7 +66,7 @@ $string['pluginnameediting'] = 'A editar pergunta de desenvolvimento';
 $string['pluginnamesummary'] = 'Permitir responder com carregamento de ficheiro e/ou texto online. Este tipo de perguntas tem de ser avaliado manualmente.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Desenvolvimento permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
 $string['privacy:preference:attachments'] = 'Número de anexos permitidos.';
-$string['privacy:preference:attachmentsrequired'] = 'Número de anexos obrigatórioss.';
+$string['privacy:preference:attachmentsrequired'] = 'Número de anexos obrigatórios.';
 $string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
 $string['privacy:preference:maxbytes'] = 'Tamanho máximo do ficheiro.';
 $string['privacy:preference:responsefieldlines'] = 'Número de linhas a indicar o tamanho da caixa de entrada (área de texto).';

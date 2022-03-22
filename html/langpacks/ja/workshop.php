@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = '提出がアップロードされました
 $string['eventassessmentevaluated'] = '評価が評定されました。';
 $string['eventassessmentevaluationsreset'] = '評価の評定がリセットされました。';
 $string['eventassessmentreevaluated'] = '評価が再評定されました。';
+$string['eventphaseautomaticallyswitched'] = 'フェーズが自動的に切り替えられました。';
 $string['eventphaseswitched'] = 'フェーズが切り替えられました。';
 $string['eventsubmissionassessed'] = '提出が評定されました。';
 $string['eventsubmissionassessmentsreset'] = '提出の評定がクリアされました。';

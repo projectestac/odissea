@@ -40,7 +40,7 @@ $string['replicaset_help'] = 'L\'ensemble réplicat auquel se connecter. Si rens
 $string['server'] = 'Serveur';
 $string['server_help'] = 'La chaîne de connexion pour le serveur à utiliser. Plusieurs serveurs peuvent être indiqués en les séparant par des virgules';
 $string['testserver'] = 'Serveurs de test';
-$string['testserver_desc'] = 'Une adresse de connexion permettant d\'effectuer des tests. Si un serveur de test a été indiqué, la performance de MongoDB peut être testée depuis la page de performance des caches, accessible via le bloc d\'administration.
+$string['testserver_desc'] = 'Une adresse de connexion permettant d\'effectuer des tests. Si un serveur de test a été indiqué, la performance de MongoDB peut être testée depuis la page de performance des caches,  dans le bloc d\'administration.
 Exemple : mongodb://127.0.0.1:27017';
 $string['username'] = 'Nom d\'utilisateur';
 $string['username_help'] = 'Le nom d\'utilisateur à employer pour établir une connexion.';

@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['downloadnotavailable'] = 'Não é possível fazer a ligação ao servidor de descargas e, por isso, não é possível instalar ou atualizar automaticamente os pacotes linguísticos. Faça a descarga do(s) ficheiro(s) ZIP apropriado(s) desde <a href="{$a->src}">{$a->src}</a> e descompacte-o(s) manualmente para a pasta de dados <code>{$a->dest}</code>';
+$string['downloadnotavailable'] = 'Não é possível fazer a ligação ao servidor de descargas e, por isso, não é possível instalar ou atualizar automaticamente os pacotes linguísticos. Faça a descarga do(s) ficheiro(s) Zip apropriado(s) desde <a href="{$a->src}">{$a->src}</a> e descompacte-o(s) manualmente para a pasta de dados <code>{$a->dest}</code>';
 $string['install'] = 'Instalar os pacotes linguísticos selecionados';
 $string['installedlangs'] = 'Pacotes linguísticos instalados';
 $string['installfailed'] = 'Ocorreu um erro ao instalar os pacotes linguísticos!';
@@ -43,7 +43,7 @@ $string['langpackupdated'] = 'O pacote linguístico \'{$a}\' foi atualizado com 
 $string['langpackupdatedevent'] = 'Pacote linguístico atualizado';
 $string['langpackupdateskipped'] = 'Foi ignorada a atualização do pacote linguistico \'{$a}\'';
 $string['langpackuptodate'] = 'O pacote linguístico \'{$a}\' está atualizado';
-$string['langunsupported'] = 'p>O seu servidor parece não suportar totalmente os seguintes idiomas: </p><ul>{$a->missinglocales}</ul><p>Em vez disso, a locale global ({$a->globallocale}) será usada para formatar determinadas cadeias, tais como datas ou números.</p>';
+$string['langunsupported'] = '<p>O seu servidor parece não suportar totalmente os seguintes idiomas:</p><ul>{$a->missinglocales}</ul><p>Em vez disso, a locale global ({$a->globallocale}) será usada para formatar determinadas cadeias, tais como datas ou números.</p>';
 $string['langupdatecomplete'] = 'Atualização dos pacotes linguísticos concluída';
 $string['missingcfglangotherroot'] = 'Falta o valor de configuração $CFG->langotherroot';
 $string['missinglangparent'] = 'Falta o idioma ascendente <em>{$a->parent}</em> em <em>{$a->lang}</em>.';
@@ -57,4 +57,4 @@ $string['selectlangs'] = 'Selecione os pacotes linguísticos que pretende desins
 $string['uninstall'] = 'Desinstalar os pacotes linguísticos selecionados';
 $string['uninstallconfirm'] = 'Está prestes a desinstalar completamente o(s) pacote(s) linguístico(s): {$a}. Tem a certeza?';
 $string['updatelangs'] = 'Atualizar todos os pacotes linguísticos instalados';
-$string['updatelangsnote'] = 'Atualizar todos os pacotes linguísticos instalados (o clicar no botão) pode demorar muito tempo e esgotar o tempo limite. Em vez disso, é recomendado usar a tarefa agendada \'{$a->taskname}\' (que é executada todos os dias, por predefinição).';
+$string['updatelangsnote'] = 'Atualizar todos os pacotes linguísticos instalados (ao clicar no botão) pode demorar muito tempo e esgotar o tempo limite. Em vez disso, é recomendado usar a tarefa agendada \'{$a->taskname}\' (que é executada todos os dias, por predefinição).';

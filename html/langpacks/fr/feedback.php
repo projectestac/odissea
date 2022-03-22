@@ -172,16 +172,16 @@ $string['messageprovider:submission'] = 'Notification de feedback';
 $string['minimal'] = 'Minimum';
 $string['mode'] = 'Mode';
 $string['modulename'] = 'Feedback';
-$string['modulename_help'] = 'Le module d\'activité feedback permet à l\'enseignant de créer un questionnaire d\'enquête personnalisé pour collecter des informations de la part des participants au moyen de divers types de questions, notamment à choix multiple ou à réponses courtes.
+$string['modulename_help'] = 'Le module d\'activité feedback permet à l\'enseignant de créer un questionnaire d\'enquête personnalisé pour collecter des informations au moyen de divers types de questions, notamment à choix multiple, oui/non ou à réponses courtes.
 
-Si désiré, les réponses peuvent être anonymes et les résultats affichés à tous les participants ou aux enseignants seulement. Une activité feedback affichée sur la page d\'accueil du site peut également être remplie par des utilisateurs non connectés.
+Si désiré, les réponses peuvent être anonymes, et les résultats peuvent affichés à tous les participants ou aux enseignants seulement. Une activité feedback affichée sur la page d\'accueil peut également être remplie par des utilisateurs non connectés.
 
 Les activités feedback peuvent être utilisées pour :
 
-* l\'évaluation des cours, afin d\'améliorer les contenus pour des participants ultérieurs
+* l\'évaluation de cours, dans le but d\'améliorer les contenus pour des participants ultérieurs
 * permettre aux participants de s\'inscrire à des modules de cours, des manifestations, etc.
 * des enquêtes anonymes sur les choix de cours, les règlements d\'écoles, etc.
-* des enquêtes anti-harcèlement dans lesquelles les participants annoncent anonymement des incidents';
+* des enquêtes anti-harcèlement dans lesquelles les participants peuvent signaler anonymement des incidents';
 $string['modulenameplural'] = 'Feedbacks';
 $string['move_item'] = 'Déplacer cette question';
 $string['multichoice'] = 'Choix multiple';

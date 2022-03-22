@@ -350,7 +350,7 @@ $string['forumtype_help'] = 'Существует 5 типов форумов:
 * Форум «Вопрос-Ответ» - студенты должны сначала дать свой ответ перед просмотром ответов других студентов.';
 $string['generalforum'] = 'Стандартный форум для общих обсуждений';
 $string['generalforums'] = 'Общие форумы';
-$string['grade_forum_header'] = 'Оценивание форума';
+$string['grade_forum_header'] = 'Оценивание всего форума';
 $string['grade_forum_name'] = 'Весь форум';
 $string['grade_forum_title'] = 'Оценка';
 $string['grade_rating_name'] = 'Оценка';

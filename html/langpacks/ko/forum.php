@@ -360,6 +360,7 @@ $string['postaddedsuccess'] = '성공적으로 글이 추가되었습니다.';
 $string['postaddedtimeleft'] = '{$a} 내에는 글을 수정할 수 있습니다.';
 $string['postincontext'] = '문맥에서 이 글 보기';
 $string['postisprivatereply'] = '비공개 답변입니다. 다른 참여자에게는 보이지 않습니다.';
+$string['postmailinfo'] = '{$a} 웹사이트에 게시된 글의 사본입니다.';
 $string['postmailnow'] = '<p>모든 포럼 사용자들에게 이 게시물이 즉시 발송될 것입니다.</p>';
 $string['postrating1'] = '대부분 분리된 배움';
 $string['postrating2'] = '분리와 연결';

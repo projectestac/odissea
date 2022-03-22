@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['blog_tags:addinstance'] = 'Adicionar um novo bloco de palavras-chave do Blogue';
-$string['configtitle'] = 'Nome do bloco de palavras-chave';
-$string['pluginname'] = 'Palavras-chave do Blogue';
-$string['privacy:metadata'] = 'O bloco Palavras-chave do Blogue apenas mostra dados armazenados noutros locais.';
+$string['blog_tags:addinstance'] = 'Adicionar um novo bloco Palavras-chave do blogue';
+$string['configtitle'] = 'Nome do bloco de Palavras-chave do blogue';
+$string['pluginname'] = 'Palavras-chave do blogue';
+$string['privacy:metadata'] = 'O bloco Palavras-chave do blogue apenas mostra dados armazenados noutros locais.';

@@ -84,7 +84,6 @@ $string['or'] = 'ou';
 $string['pluginname'] = 'MathType par WIRIS';
 $string['pluginperformance'] = 'Mode de performance d\'image';
 $string['pluginperformance_help'] = 'Spécifier si la réponse doit être un JSON au lieu d\'un binaire qui permet aux requêtes d\'être mises en cache. Activez les performances pour utiliser la réponse JSON.';
-$string['privacy:null_reason'] = 'Le filtre MathType ne modifie ni enregistre aucune donnée personnelle.';
 $string['rendertype'] = 'Type de rendu';
 $string['rendertype_help'] = 'Spécifier comment rendre les formules. <br> - PHP : appeller le service de rendu Wiris depuis le module de filtrage. <br> - Client : toutes les requêtes aux serveurs Wiris sont faites depuis le navigateur.';
 $string['securitysettings'] = 'Paramètres de sécurité';

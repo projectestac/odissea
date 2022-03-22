@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['cachedef_previous_cache'] = '以前的活动依赖信息';
 $string['description'] = '要求学生完成（或者未完成）其它活动。';
 $string['error_selectcmid'] = '您必须为此进度条件选择一个活动。';
 $string['error_selectcmidpassfail'] = '您必须选择"要求成绩" 完成条件集的活动。';
@@ -35,6 +36,7 @@ $string['option_complete'] = '必须标记为“完成”';
 $string['option_fail'] = '完成时必须是“不及格”';
 $string['option_incomplete'] = '必须未标记为“完成”';
 $string['option_pass'] = '完成时必须是“及格”';
+$string['option_previous'] = '以前完成的活动';
 $string['pluginname'] = '通过活动完成限制';
 $string['privacy:metadata'] = '结业限制插件不储存任何私人数据。';
 $string['requires_complete'] = '这个活动 <strong>{$a}</strong> 已标记完成';
@@ -43,4 +45,10 @@ $string['requires_complete_pass'] = '这个活动 <strong>{$a}</strong> 已完�
 $string['requires_incomplete'] = '这个活动 <strong>{$a}</strong> 没有完成';
 $string['requires_not_complete_fail'] = '这个活动<strong>{$a}</strong> 没有完成并且失败';
 $string['requires_not_complete_pass'] = '这个活动 <strong>{$a}</strong> 没有完成并且通过';
+$string['requires_previous_complete'] = '<strong>以前完成的活动</strong> 已被标记为完成';
+$string['requires_previous_complete_fail'] = '<strong>以前完成的活动</strong> 已被标记为失败';
+$string['requires_previous_complete_pass'] = '<strong>以前完成的活动</strong> 已被标记为通过';
+$string['requires_previous_incomplete'] = '<strong>以前完成的活动</strong> 是不完整的';
+$string['requires_previous_not_complete_fail'] = '<strong>以前完成的活动</strong> 未完成并且已经失败';
+$string['requires_previous_not_complete_pass'] = '<strong>以前完成的活动</strong> 未完成并且通过了';
 $string['title'] = '活动进度';

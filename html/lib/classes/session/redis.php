@@ -193,7 +193,7 @@ class redis extends handler {
 
             try {
 
-                $delay = rand(100000, 500000);
+                $delay = rand(100, 500);
 
                 // One second timeout was chosen as it is long for connection, but short enough for a user to be patient.
                 if (!$this->connection->connect($this->host, $this->port, 1, null, $delay)) {
@@ -476,10 +476,9 @@ class redis extends handler {
                 // It should not happen very often - all pages that need long time to execute
                 // should close session immediately after access control checks.
                 $whohaslock = $this->connection->get($lockkey);
-                // @codingStandardsIgnoreStart
+                // phpcs:ignore
                 error_log("Cannot obtain session lock for sid: $id within $this->acquiretimeout seconds. " .
                     "It is likely another page ($whohaslock) has a long session lock, or the session lock was never released.");
-                // @codingStandardsIgnoreEnd
                 throw new exception("Unable to obtain session lock");
             }
 

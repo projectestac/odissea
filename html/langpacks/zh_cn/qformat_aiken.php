@@ -27,3 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Aiken格式';
 $string['pluginname_help'] = '这是一个从文本文件中导入多项选择题的简单格式';
+$string['privacy:metadata'] = 'Aiken问题格式插件不存储任何个人数据。';
+$string['questionmissinganswers'] = '在第{$a}行，问题必须至少有2个答案';
+$string['questionnotcomplete'] = '在第{$a}行，在下一个问题开始之前此问题未完成';
+$string['questionnotstarted'] = '问题在第{$a}行未开始';

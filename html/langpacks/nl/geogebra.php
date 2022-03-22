@@ -126,7 +126,6 @@ $string['resultstab'] = 'Resultaten';
 $string['resumeattempt'] = 'Niet beëindigde poging hervatten';
 $string['review'] = 'Nakijken van';
 $string['reviewtab'] = 'Nakijken';
-$string['save'] = 'Bewaren';
 $string['savechanges'] = 'Bewaar wijzigingen';
 $string['savewithoutsubmitting'] = 'Bewaren zonder insturen';
 $string['settings'] = 'Instellingen';

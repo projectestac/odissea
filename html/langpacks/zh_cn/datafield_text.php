@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '文本字段';
 $string['pluginname'] = '文本输入';
+$string['privacy:metadata'] = '文本字段组件不存储任何个人数据，它使用mod_data中定义的表。';

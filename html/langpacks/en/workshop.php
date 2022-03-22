@@ -130,6 +130,7 @@ $string['eventassessableuploaded'] = 'A submission has been uploaded.';
 $string['eventassessmentevaluated'] = 'Assessment evaluated';
 $string['eventassessmentevaluationsreset'] = 'Assessment evaluations reset';
 $string['eventassessmentreevaluated'] = 'Assessment re-evaluated';
+$string['eventphaseautomaticallyswitched'] = 'Phase automatically switched';
 $string['eventphaseswitched'] = 'Phase switched';
 $string['eventsubmissionassessed'] = 'Submission assessed';
 $string['eventsubmissionassessmentsreset'] = 'Submission assessments cleared';

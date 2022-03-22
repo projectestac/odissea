@@ -47,6 +47,7 @@ $string['maxagefuture_help'] = 'عدد الأيام في المستقبل الت
 $string['maxageother_help'] = 'عدد الأيام التي ينبغي فيها إدراج الواجبات المتأخرة في الكتلة (بعين المتعلمين/الآباء)';
 $string['name'] = 'الاسم';
 $string['newhomework'] = 'واجب بيتي جديد';
+$string['noassignmentsfound'] = 'لم يتم العثور على أي واجبات';
 $string['nohomework'] = 'لم يتم العثور على أي واجب بيتي';
 $string['nohomeworkduewithintwoweeks'] = 'لا يوجد ما يستحق خلال أسبوعين';
 $string['noonlinesubmissionrequired'] = 'لا يتطلب التسليم عبر الإنترنت';

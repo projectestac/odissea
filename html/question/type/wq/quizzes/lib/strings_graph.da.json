@@ -33,10 +33,40 @@
 		"tt_length": "Længde",
 		"tt_labels": "Etiket",
 		"tt_elementMML": "Expression",
+		"tt_image": "Billede af",
 
 		"tt_bold": "fed",
 		"tt_italic": "kursiv",
 		"tt_color": "farve",
+
+		"tt_barChart": "Select",
+		"tt_newPackBars": "Insert pack of bars",
+		"tt_newSideBars": "Insert group of bars",
+		"tt_deletePackBars": "Delete pack of bars",
+		"tt_deleteSideBars": "Delete group of bars",
+		"tt_stackBars": "Stack bars",
+		"tt_unstackBars": "Unstack bars", 
+
+		"tt_pieChart": "Select",
+		"tt_newPie": "New piece",
+		"tt_deletePie": "Delete piece",
+		"tt_newPieClockwise": "Clockwise",
+		"tt_newPieCounterclockwise": "Counterclockwise",
+		"tt_pie2D": "2D",
+		"tt_pie3D": "3D",
+		
+		"tt_lineChart": "Select",
+		"tt_newLineLineChart": "Insert line",
+		"tt_newPointsLineChart": "Insert group of points",
+		"tt_deleteLineLineChart": "Delete line",
+		"tt_deletePointsLineChart": "Delete group of points",
+		"tt_addPointsLeft": "Points left",
+		"tt_addPointsRight": "Points right",
+
+		"tt_fitPlotterToStats": "Fit",
+		"tt_horizontal": "Horizontal",
+		"tt_vertical": "Vertical",
+		"tt_pointDiameter": "Point diameter",
 
 		"tt_fraction": "stor brøk",
 		"tt_superscript": "hævet skrift",
@@ -129,6 +159,9 @@
 		"sizeInPixels": "Size in pixels",
 		"insertANumber": "Insert a number",
 
+		"uploadImageErrorTitle": "Ups, something went wrong!",
+		"uploadImageErrorText": "Ensure that the upload is a valid PNG image and try again",
+
 		"type_point": "Point",
 		"type_line": "Line",
 		"type_line_segment": "Line Segment",
@@ -157,6 +190,12 @@
 		"type_length": "Length",
 		"type_distance": "Distance",
 		"type_label": "Label",
+		
+		"type_bar_chart": "Bar Chart",
+		"type_line_chart": "Line Chart",
+		"type_pie_chart": "Pie Chart",
+		"type_box_plot": "Box Plot",
+		"type_histogram": "Histogram",
 
 		"equation": "Equation"
 	}

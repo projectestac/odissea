@@ -114,13 +114,13 @@ $string['pluginname'] = 'Carregar disciplina';
 $string['preview'] = 'Pré-visualização';
 $string['privacy:metadata'] = 'O módulo Carregar Disciplina não armazena dados pessoais.';
 $string['reset'] = 'Reiniciar disciplina depois do carregamento';
-$string['reset_help'] = 'Define se a disciplina é reiniciada depois de criada/atualizada';
+$string['reset_help'] = 'Define se a disciplina é reiniciada depois de criada/atualizada.';
 $string['restoreafterimport'] = 'Restaurar depois de importar';
 $string['result'] = 'Resultado';
 $string['rowpreviewnum'] = 'Pré-visualizar linhas';
 $string['rowpreviewnum_help'] = 'Número de linhas do ficheiro CSV que serão visualizadas na página seguinte. Esta opção existe para limitar o tamanho da página seguinte.';
 $string['shortnametemplate'] = 'Modelo para gerar um nome curto';
-$string['shortnametemplate_help'] = 'O nome curto da disciplina é exibido na navegação. Pode usar a sintaxe modelo aqui (%f = fullname, %i = idnumber), ou introduzir um valor inicial que é incrementado.';
+$string['shortnametemplate_help'] = 'O nome curto da disciplina é exibido na navegação. Pode usar a sintaxe modelo aqui (%f = fullname, %i = idnumber), ou inserir um valor inicial que é incrementado.';
 $string['templatefile'] = 'Restaurar a partir deste ficheiro depois do carregamento';
 $string['templatefile_help'] = 'Selecione um ficheiro para ser usado como modelo para a criação de todas as disciplinas.';
 $string['unknownimportmode'] = 'Modo de importação desconhecido';
@@ -132,14 +132,14 @@ $string['updateonly'] = 'Apenas atualizar disciplinas existentes';
 $string['updatewithdataonly'] = 'Atualizar apenas com os dados do CSV';
 $string['updatewithdataordefaults'] = 'Atualizar com os dados do CSV e dos predefinidos';
 $string['uploadcourses'] = 'Carregar disciplinas';
-$string['uploadcourses_help'] = 'O carregamento das disciplinas pode ser feito via ficheiro de texto. O formato deste ficheiro deve estar de acordo com as seguintes indicações:
+$string['uploadcourses_help'] = 'O carregamento das disciplinas pode ser feito via ficheiro de texto. O formato do ficheiro deve estar de acordo com as seguintes indicações:
 
-*Cada linha do ficheiro deve conter um registo;
+* Cada linha do ficheiro deve conter um registo;
 
-*Cada registo consiste numa série de dados separados por vírgulas (ou outro tipo de delimitador);
+* Cada registo consiste numa série de dados separados por vírgulas (ou outro tipo de delimitador);
 
-*O primeiro registo deve conter uma lista de campos do tipo \'nome\' definindo o formato do resto do ficheiro;
+* O primeiro registo deve conter uma lista do nome dos campos que definem o formato do resto do ficheiro;
 
-*Os campos do tipo \'nome\' necessários são: nome curto, nome completo e categoria.';
+* Os nomes dos campos obrigatórios são: shortname, fullname, e category';
 $string['uploadcoursespreview'] = 'Pré-visualizar carregamento de disciplinas';
 $string['uploadcoursesresult'] = 'Resultados do carregamento de disciplinas';

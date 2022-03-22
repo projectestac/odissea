@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['answeroptions'] = 'Opções de escolha';
 $string['answeroptions_help'] = 'A fórmula da opção sugerida é ...<strong>{={x}+..}</strong>...';
 $string['pluginname'] = 'Escolha múltipla com variáveis';
-$string['pluginname_help'] = 'As perguntas de escolha múltipla com variáveis são idênticas às de escolha múltipla, mas quer a pergunta quer as opções de resposta podem ser definidas com fórmulas e variáveis que são substituídas por valores a cada nova tentativa de realização do teste. Por exemplo, na pergunta "Qual a área do retângulo com o comprimento {l} e largura {w}?" uma das opções de escolha é {={l}*{w}} (em que o * significa multiplicação).';
+$string['pluginname_help'] = 'As perguntas de escolha múltipla com variáveis são idênticas às de escolha múltipla, mas quer a pergunta quer as opções de resposta podem ser definidas com fórmulas e variáveis que são substituídas por valores a cada nova tentativa de resposta ao teste. Por exemplo, na pergunta "Qual a área do retângulo com o comprimento {l} e largura {w}?" uma das opções de escolha é {={l}*{w}} (onde * é o símbolo de multiplicação).';
 $string['pluginname_link'] = 'pergunta/tipo/calculadamulti';
 $string['pluginnameadding'] = 'A adicionar pergunta de Escolha múltipla com variáveis';
 $string['pluginnameediting'] = 'A editar pergunta de escolha múltipla com variáveis';

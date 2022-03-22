@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['addall'] = 'Lägg till alla';
-$string['addsel'] = 'Lägg till i urvalet';
+$string['addsel'] = 'Lägg till i urval';
 $string['allfilteredusers'] = 'Alla filtrerade ({$a->count}/{$a->total})';
 $string['allselectedusers'] = 'Alla valda ({$a->count}/{$a->total})';
 $string['allusers'] = 'Alla användare';
@@ -36,13 +36,13 @@ $string['deleteduser'] = 'Borttagen användare';
 $string['nofilteredusers'] = 'Det gick inte att hitta några användare (0/{$a})';
 $string['noselectedusers'] = 'Inga användare valda';
 $string['removeall'] = 'Ta bort alla ';
-$string['removesel'] = 'Ta bort från urvalet';
+$string['removesel'] = 'Ta bort från urval';
 $string['selected'] = 'Valda';
 $string['selectedlist'] = 'Valda användare...';
 $string['selectedlist_help'] = '<h2>Lista över valda användare...</h2>
 
 <ul>
-<li>Lägg till till urvalet - lägger till valda användare från listan över Tillgängliga till listan över Utvalda. Du kan välja ett flertal användare genom att hålla nere Apple- eller Ctrl-tangenten medan du klickar på användarnas namn.
+<li>Lägg till i urval - lägger till valda användare från listan över Tillgängliga till listan över Utvalda. Du kan välja ett flertal användare genom att hålla nere Apple- eller Ctrl-tangenten medan du klickar på användarnas namn.
 </li>
 <li>Lägg till alla - lägger till alla användare från listan över Tillgängliga till listan över Utvalda. </li>
 <li>Ta bort från urval  - tar bort valda användare från listan över Utvalda. </li>

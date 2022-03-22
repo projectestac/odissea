@@ -26,3 +26,4 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '交互式多次尝试（奖励早期尝试）';
+$string['privacy:metadata'] = '多次尝试问题行为插件的交互（鼓励以少量尝试次数完成任务）不存储任何个人数据。';

@@ -27,3 +27,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['fieldtypelabel'] = '纬度／经度字段';
 $string['pluginname'] = '经纬度';
+$string['privacy:metadata'] = '纬度/经度字段组件不存储任何个人数据，它使用mod_data中定义的表。';

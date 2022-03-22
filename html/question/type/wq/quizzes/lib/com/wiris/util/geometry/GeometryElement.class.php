@@ -7,7 +7,7 @@ class com_wiris_util_geometry_GeometryElement {
 	}}
 	public function isStatsObject() {
 		$type = $this->getType();
-		return com_wiris_util_geometry_GeometryElement::$HISTOGRAM === $type || com_wiris_util_geometry_GeometryElement::$PIE_CHART === $type || com_wiris_util_geometry_GeometryElement::$BOX_PLOT === $type || com_wiris_util_geometry_GeometryElement::$BAR_CHART === $type;
+		return com_wiris_util_geometry_GeometryElement::$HISTOGRAM === $type || com_wiris_util_geometry_GeometryElement::$PIE_CHART === $type || com_wiris_util_geometry_GeometryElement::$BOX_PLOT === $type || com_wiris_util_geometry_GeometryElement::$BAR_CHART === $type || com_wiris_util_geometry_GeometryElement::$LINE_CHART === $type;
 	}
 	public function setProperty($key, $value) {
 		$this->data->set($key, $value);
@@ -252,11 +252,13 @@ class com_wiris_util_geometry_GeometryElement {
 	static $LENGTH = "length";
 	static $DISTANCE = "distance";
 	static $LABEL = "label";
+	static $IMAGE = "image";
 	static $INTERPOLATING_POLYNOMIAL = "interpolating_polynomial";
 	static $HISTOGRAM = "histogram";
 	static $BOX_PLOT = "box_plot";
 	static $BAR_CHART = "bar_chart";
 	static $PIE_CHART = "pie_chart";
+	static $LINE_CHART = "line_chart";
 	static $TYPE = "type";
 	static $ID = "id";
 	static $COORDINATES = "coordinates";
@@ -277,8 +279,14 @@ class com_wiris_util_geometry_GeometryElement {
 	static $BIN_LIMITS = "bin_limits";
 	static $CLOSED_LEFT = "closed_left";
 	static $WHISKER_RANGE = "whisker_range";
-	static $TEXT_BOX_VERTICAL_POSITION = "text_box_vertical_position";
-	static $TEXT_BOX_HORIZONTAL_POSITION = "text_box_horizontal_position";
+	static $LABEL_VERTICAL_POSITION = "text_box_vertical_position";
+	static $LABEL_HORIZONTAL_POSITION = "text_box_horizontal_position";
+	static $LABEL_POSITION_RIGHT = "right";
+	static $LABEL_POSITION_LEFT = "left";
+	static $LABEL_POSITION_CENTER = "centered";
+	static $LABEL_POSITION_BASELINE = "baseline";
+	static $LABEL_POSITION_TOP = "top";
+	static $LABEL_POSITION_BOTTOM = "bottom";
 	static $DELETE_FROM_CONSTRUCTION = "deleteFromConstruction";
 	static $FROM_CAS_KERNEL = "wiris_cas_kernel_computed";
 	static function newGeometryElement() {

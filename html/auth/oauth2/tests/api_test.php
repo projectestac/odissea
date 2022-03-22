@@ -14,17 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * Auth oauth2 api functions tests.
- *
- * @package     auth_oauth2
- * @copyright   2017 Damyon Wiese
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-defined('MOODLE_INTERNAL') || die();
-
-global $CFG;
+namespace auth_oauth2;
 
 /**
  * External auth oauth2 API tests.
@@ -33,7 +23,7 @@ global $CFG;
  * @copyright   2017 Damyon Wiese
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class auth_oauth2_external_testcase extends advanced_testcase {
+class api_test extends \advanced_testcase {
 
     /**
      * Test the cleaning of orphaned linked logins for all issuers.
@@ -99,6 +89,45 @@ class auth_oauth2_external_testcase extends advanced_testcase {
     }
 
     /**
+     * Test creating a new confirmed account.
+     * Including testing that user profile fields are correctly set.
+     *
+     * @covers \auth_oauth2\api::create_new_confirmed_account
+     */
+    public function test_create_new_confirmed_account() {
+        global $DB;
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $issuer = \core\oauth2\api::create_standard_issuer('microsoft');
+
+        $info = [];
+        $info['username'] = 'apple';
+        $info['email'] = 'apple@example.com';
+        $info['firstname'] = 'Apple';
+        $info['lastname'] = 'Fruit';
+        $info['alternatename'] = 'Beatles';
+        $info['idnumber'] = '123456';
+        $info['city'] = 'Melbourne';
+        $info['country'] = 'AU';
+        $info['institution'] = 'ACME Inc';
+        $info['department'] = 'Misc Explosives';
+
+        $createduser = \auth_oauth2\api::create_new_confirmed_account($info, $issuer);
+
+        // Get actual user record from DB to check.
+        $userdata = $DB->get_record('user', ['id' => $createduser->id]);
+
+        // Confirm each value supplied from issuers is saved into the user record.
+        foreach ($info as $key => $value) {
+            $this->assertEquals($value, $userdata->$key);
+        }
+
+        // Explicitly test the user is confirmed.
+        $this->assertEquals(1, $userdata->confirmed);
+    }
+
+    /**
      * Test auto-confirming linked logins.
      */
     public function test_linked_logins() {
@@ -158,5 +187,44 @@ class auth_oauth2_external_testcase extends advanced_testcase {
 
         set_config('auth', 'manual');
         $this->assertFalse(\auth_oauth2\api::is_enabled());
+    }
+
+    /**
+     * Test creating a user via the send confirm account email method.
+     * Including testing that user profile fields are correctly set.
+     *
+     * @covers \auth_oauth2\api::send_confirm_account_email
+     */
+    public function test_send_confirm_account_email() {
+        global $DB;
+        $this->resetAfterTest();
+        $this->setAdminUser();
+
+        $issuer = \core\oauth2\api::create_standard_issuer('microsoft');
+
+        $info = [];
+        $info['username'] = 'apple';
+        $info['email'] = 'apple@example.com';
+        $info['firstname'] = 'Apple';
+        $info['lastname'] = 'Fruit';
+        $info['alternatename'] = 'Beatles';
+        $info['idnumber'] = '123456';
+        $info['city'] = 'Melbourne';
+        $info['country'] = 'AU';
+        $info['institution'] = 'ACME Inc';
+        $info['department'] = 'Misc Explosives';
+
+        $createduser = \auth_oauth2\api::send_confirm_account_email($info, $issuer);
+
+        // Get actual user record from DB to check.
+        $userdata = $DB->get_record('user', ['id' => $createduser->id]);
+
+        // Confirm each value supplied from issuers is saved into the user record.
+        foreach ($info as $key => $value) {
+            $this->assertEquals($value, $userdata->$key);
+        }
+
+        // Explicitly test the user is not yet confirmed.
+        $this->assertEquals(0, $userdata->confirmed);
     }
 }

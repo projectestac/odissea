@@ -200,6 +200,7 @@ $string['tour3_title_displayoptions'] = 'Opzioni di visualizzazione';
 $string['tour3_title_overview'] = 'Panoramica corsi';
 $string['tour3_title_recentcourses'] = 'Ultimi corsi visitati';
 $string['tour3_title_starring'] = 'Aggiungere un corso ai preferiti o nasconderlo';
+$string['tour3_title_timeline'] = 'Blocco cronologia';
 $string['tour4_content_groupconvo'] = 'Se si appartiene ad un gruppo che ha la messaggistica abilitata, sarà visualizzata qui la conversazione di gruppo.
 
 Le conversazioni di gruppo all\'interno di un corso consentono ai membri di conversare in modo efficacie e riservato.';
@@ -216,6 +217,16 @@ $string['tour4_title_icon'] = 'Messaggistica';
 $string['tour4_title_messaging'] = 'Nuova interfaccia della messaggistica';
 $string['tour4_title_settings'] = 'Impostazioni messaggistica';
 $string['tour4_title_starred'] = 'Preferiti';
+$string['tour_activityinfo_activity_student_content'] = 'Nella pagina delle attività visualizza le date dell\'attività e cosa fare per completarla';
+$string['tour_activityinfo_activity_student_title'] = 'Novità: informazioni sull’attività';
+$string['tour_activityinfo_activity_teacher_content'] = 'Nella pagina di ciascuna attività (ed opzionalmente nella pagina home dei corsi) agli studenti vengono visualizzate le date e i criteri di completamento.
+
+Le attività che richiedono la spunta manuale per indicare il completamento visualizzeranno il pulsante \'Spunta come completato" nella pagina dell’attività.';
+$string['tour_activityinfo_activity_teacher_title'] = 'Novità: informazioni sull’attività';
+$string['tour_activityinfo_course_student_content'] = 'Nella pagina del corso visualizza le date dell\'attività e/o cosa fare per completarla';
+$string['tour_activityinfo_course_student_title'] = 'Novità: informazioni sull’attività';
+$string['tour_activityinfo_course_teacher_content'] = 'L\'impostazione \'Visualizza criteri di completamento\' e \'Visualizza date delle attività\' consentono di visualizzare i criteri di completamento nella home page del corso.';
+$string['tour_activityinfo_course_teacher_title'] = 'Novità: informazioni sull’attività';
 $string['tour_final_step_content'] = 'Il tour è terminato. Per visualizzarlo di nuovo fai click sul link presente nel piè di pagina.';
 $string['tour_final_step_title'] = 'Fine del tour';
 $string['tour_resetforall'] = 'Lo stato del tour è stato reimpostato. Verrà visualizzato nuovamente a tutti gli utenti.';

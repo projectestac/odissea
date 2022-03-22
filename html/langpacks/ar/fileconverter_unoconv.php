@@ -40,4 +40,4 @@ $string['test_unoconvisdir'] = 'يشير مسار unoconv إلى مجلد ، ي�
 $string['test_unoconvnotestfile'] = 'مستند الاختبار المطلوب تحويله إلى PDF مفقود.';
 $string['test_unoconvnotexecutable'] = 'يشير مسار unoconv إلى ملف غير قابل للتنفيذ';
 $string['test_unoconvok'] = 'يبدو أن مسار unoconv قد تم تكوينه بشكل صحيح.';
-$string['test_unoconvversionnotsupported'] = 'إصدار unoconv الذي قمت بتثبيته غير مدعوم.';
+$string['test_unoconvversionnotsupported'] = 'إصدار unoconv الذي قمت بتنصيبه غير مدعوم.';

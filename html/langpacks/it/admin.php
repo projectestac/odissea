@@ -151,7 +151,7 @@ $string['cliunknowoption'] = 'Opzioni non riconosciute:
 {$a}
 . Per favore utilizza l\'opzione --help.';
 $string['cliupgradedefault'] = 'Nuova impostazione: {$a}';
-$string['cliupgradedefaultheading'] = 'Valori predefiniti della nuova impostazione';
+$string['cliupgradedefaultheading'] = 'Valorizzazione di default delle nuove impostazioni';
 $string['cliupgradedefaultverbose'] = 'Nuova impostazione: {$a->name}, Valore predefenito: {$a->defaultsetting}';
 $string['cliupgradefinished'] = 'L\'aggiornamento via linea di comando da {$a->oldversion} a {$a->newversion} è stato completato correttamente.';
 $string['cliupgradenoneed'] = 'Non sono necessari aggiornamenti per la versione installata: {$a}. Grazie comunque per la verifica!';
@@ -239,7 +239,7 @@ $string['configdisableuserimages'] = 'Gli utenti non potranno  cambiare l\' imma
 $string['configdisplayloginfailures'] = 'Abilita la visualizzazione dei tentativi errati di login.';
 $string['configdndallowtextandlinks'] = 'Abilita o disabilita il caricamento di testi e link tramite trascina e rilascia. Da notare che trascinare e rilasciare testi in Firefox o tra browser differenti potrebbe risultare in nessun caricamento o in un caricamento parziale.';
 $string['configdoclang'] = 'La lingua da utilizzare nei link che portano alle pagine della documentazione.';
-$string['configdocroot'] = 'Imposta il percorso per aprire Moodle Docs in base al contesto, tramite il link "Documentazione Moodle di questa pagina" presente nei piè di pagina. Non impostando il percorso, il link nel piè di pagina non sarà visualizzato.';
+$string['configdocroot'] = 'Imposta il percorso per aprire Moodle Docs in base al contesto, tramite il link \'Documentazione Moodle di questa pagina\' presente nei piè di pagina. Non impostando il percorso, il link nel piè di pagina non sarà visualizzato.';
 $string['configdoctonewwindow'] = 'Abilitando questa opzione, i collegamenti a Moodle Docs verranno visualizzati in una nuova finestra.';
 $string['configeditordictionary'] = 'Questo valore sarà utilizzato se lo spell checker aspell non dispone del dizionario corrispondente alla lingua degli utenti.';
 $string['configeditorfontlist'] = 'Scegli i font che appariranno nella lista drop-down dell\'editor.';
@@ -329,8 +329,8 @@ $string['configmycoursesperpage'] = 'Numero massimo di corsi presenti nell\'elen
 $string['configmymoodleredirect'] = 'L\'impostazione reindirizza gli utenti non amministratori a /my dopo il login, sostituendo anche la navigazione verso la pagina home con /my';
 $string['configmypagelocked'] = 'L\'impostazione impedisce la modifica della pagina di default da parte di utenti che non abbiamo il ruolo di amministratori';
 $string['confignavcourselimit'] = 'Limita il numero di corsi visibili agli utenti nella navigazione.';
-$string['confignavshowallcourses'] = 'L\'impostazione stabilisce se gli utenti iscritti ad almeno un corso possano visualizzare la voce Corsi (elenco di tutti corsi)  nel blocco Navigazione. Tale voce sarà visualizzata in aggiunta alla voce I miei corsi (elenco dei corsi ai quali l\'utente è iscritto).';
-$string['confignavshowcategories'] = 'Visualizza le categorie di corso nelle briciole e nel blocco Navigazione. Le categorie non saranno visualizzate nei corsi dove l\'utente è iscritto, che saranno elencati nel link I miei corsi.';
+$string['confignavshowallcourses'] = 'L\'impostazione stabilisce se gli utenti iscritti ad almeno un corso possano visualizzare la voce Corsi (elenco di tutti corsi) nella Navigazione. Tale voce sarà visualizzata in aggiunta alla voce I miei corsi (elenco dei corsi ai quali l\'utente è iscritto).';
+$string['confignavshowcategories'] = 'Visualizza le categorie di corso nelle briciole e nella Navigazione. Le categorie non saranno visualizzate nei corsi dove l\'utente è iscritto, che saranno elencati nel link I miei corsi.';
 $string['confignoreplyaddress'] = 'In genere le email vengono spedite a nome di un utente (ad esempio, gli interventi nei forum). L\'indirizzo di email No-reply verrà  utilizzato come mittente del messaggio nei casi in cui il destinatario non può rispondere direttamente al mittente (ad esempio quando un utente decide di non visualizzare il proprio indirizzo email).';
 $string['confignotifyloginfailures'] = 'E\' possibile inviare avvisi sui login errati agli utenti selezionati. Prerequisito è l\'abilitazione di un log store interno (Ad esempio il log store standard)';
 $string['confignotifyloginthreshold'] = 'Se è stata attivata la notifica dei login errati, l\'impostazione consente di definire il numero di login errati raggiunto il quale sarà inviata la mail di avviso.';
@@ -412,7 +412,7 @@ $string['configtimezone'] = 'E\' possibile impostare il fuso orario di default d
 $string['configuseblogassociations'] = 'Consente agli utenti di organizzare i propri blog associandoli ai cori ed ai moduli di attività.';
 $string['configuseexternalyui'] = 'Al posto dei file locali, è possibile usare i file online disponibili sui server Yahoo‘s . ATTENZIONE: è necessaria la connessione ad internet, altrimenti AJAX smetterà di funzionare sul tuo sito. L\'impostazione non è compatibile con i siti che usano https.';
 $string['configuserquota'] = 'Il numero massimo di byte che un utente può utilizzare per memorizzare file personali. {$a->bytes} bytes == {$a->displaysize}';
-$string['configusesitenameforsitepages'] = 'Consente di usare il nome abbreviato del sito per il nodo pagine del sito nel blocco navigazione. Il nome del sito sostituirà la stringa "Pagine del sito"';
+$string['configusesitenameforsitepages'] = 'Consente di usare il nome abbreviato del sito per il nodo pagine del sito nella Navigazione. Il nome del sito sostituirà la stringa "Pagine del sito"';
 $string['configusetags'] = 'Abilita la funzionalità Tag nel sito.';
 $string['configvariables'] = 'Variabili';
 $string['configverifychangedemail'] = 'Abilita la funzione di verifica degli indirizzi di posta elettronica quando gli utenti nel loro profilo modificano l\'email. La verifica viene effettuata sulla base delle liste di domini presenti nelle impostazioni Domini di posta autorizzati e Domini di posta non autorizzati. Se questa impostazione è disabilitata, la verifica dei domini autorizzati verrà operata solo durante la creazione di nuovi account.';
@@ -531,7 +531,7 @@ $string['displayloginfailures'] = 'Visualizza login errati';
 $string['divertallemails'] = 'Deviazione email';
 $string['divertallemailsdetail'] = 'Utile in ambienti di test per provare le email. Da non utilizzare in produzione.';
 $string['divertallemailsexcept'] = 'Eccezioni alle deviazione email';
-$string['divertallemailsexcept_desc'] = 'Elenco di eccezioni in forma di regole separate da virgola o da a capo. Ciascuna regola verrà interpretata come espressione regolare, ad esempio:
+$string['divertallemailsexcept_desc'] = 'Elenco di eccezioni email in forma di regole separate da virgola o da a capo. Ciascuna regola verrà interpretata come espressione regolare, ad esempio:
 <pre>simone@acme.com
 .*@acme.com
 fred(\\+.*)?@acme.com
@@ -734,6 +734,7 @@ $string['iplookupgeoplugin'] = 'Per ricavare le informazioni geografiche viene u
 $string['iplookupinfo'] = 'Per cercare le località corrispondenti agli indirizzi IP, di default Moodle utilizza il server online gratuito NetGeo (The Internet Geographic Database). Sfortunatamente questo server non è più aggiornato e fornisce dati <em>non corretti</em>. Si raccomanda di installare localmente una copia del database gratuito GeoLite2 City di MaxMind.<br/>
 Le località corrispondenti agli indirizzi IP saranno visualizzate su una mappa semplice oppure su Google Maps. Da notare che per abilitare le mappe interattive bisogna possedere un account Google e richiedere una API key Google Maps gratuita.';
 $string['iplookupmaxmindnote'] = 'Questo prodotto include dati GeoLite2 creati da MaxMind, disponibili su <a href="https://www.maxmind.com/">https://www.maxmind.com/</a>.';
+$string['iscustomadminwarnings'] = 'E\' stato rilevato che questo sito utilizza una cartella admin personalizzata. Questa funzionalità non è iù supportata e sarà rimossa a partere da Moodle 4.2.';
 $string['ishttpswarning'] = 'Il sito non utilizza il protocollo sicuro HTTPS. Si raccomanda caldamente di configurare il sito in HTTPS per aumentarne la sicurezza e facilitare l\'integrazione con altri sistemi.';
 $string['keeptagnamecase'] = 'Mantieni maiuscole/minuscole nei tag';
 $string['lang'] = 'Lingua di default';
@@ -1092,7 +1093,7 @@ $string['purgethemecache'] = 'Temi';
 $string['query'] = 'Query';
 $string['question'] = 'Domanda';
 $string['questionbehaviours'] = 'Comportamenti della domanda';
-$string['questioncwqpfscheck'] = 'Una o più domande "a caso" in un quiz sono impostate in modo da pescare le domande da un misto di categorie condivise e non. Esiste un <a href="{$a->reporturl}">report più dettagliato</a> e leggi anche la <a href="{$a->docsurl}">pagina</a> di Moodle Docs.';
+$string['questioncwqpfscheck'] = 'Una o più domande casuali in un quiz sono impostate in modo da pescare le domande da un misto di categorie condivise e non condivise. Esiste un <a href="{$a->reporturl}">report più dettagliato</a> ed è anche possibile leggere la <a href="{$a->docsurl}">pagina</a> della documentazione.';
 $string['questioncwqpfsok'] = 'Bene. Non ci sono domande "a caso" nei tuoi quiz impostate in modo da pescare le domande da un misto di categorie condivise e non.';
 $string['questiontype'] = 'Tipo domanda';
 $string['questiontypes'] = 'Tipi domande';
@@ -1521,7 +1522,7 @@ $string['verifychangedemail'] = 'Controlla i domini quando si cambia l\'email';
 $string['warningcurrentsetting'] = 'Valore corrente non valido: {$a}';
 $string['warningiconvbuggy'] = 'La versione della libreria iconv installata non supporta il modifier //IGNORE. Puoi installare l\'estensione mbstring che può essere utilizzata in alternativa per pulire le stringhe contenenti caratteri UTF-8 non validi.';
 $string['webproxy'] = 'Proxy web';
-$string['webproxyinfo'] = 'Usa le impostazioni seguenti se il tuo server Moodle non può accedere direttamente ad Internet. L\'accesso ad Internet è necessario per scaricare dati di ambiente, language pack, feed RSS, timezone, eccetera.<br /><em>L\'estensione PHP cURL è fortemente raccomandata.</em>';
+$string['webproxyinfo'] = 'Utilizzare le impostazioni seguenti se il server Moodle non può accedere direttamente ad Internet. L\'accesso ad Internet è necessario per scaricare dati di ambiente, language pack, feed RSS, timezone, eccetera.<br /><em>L\'estensione PHP cURL è fortemente consigliata.</em>';
 $string['xmlrpcrecommended'] = 'L\'estensione XMLRPC è utile per i web service e il Moodle Networking.';
 $string['yuicomboloading'] = 'Caricamento YUI combo';
 $string['ziprequired'] = 'Moodle richiede l\'estensione Zip PHP. Gli eseguibili info-ZIP o la libreria PclZip non sono più utilizzati.';

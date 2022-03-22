@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['confirmstart'] = 'Zure saiakerak {$a}(e)ko denbora-muga izango du. Hasten zarenean atzera kontaketa hasiko da eta zein da pausatu. Zure saiakera denbora amaitu aurretik bidali beharko duzu. Ziur zaude orain hasi nahi duzula?';
+$string['confirmstart'] = 'Zure saiakerak {$a}(e)ko denbora-muga izango du. Hasten zarenean, erlojuan atzera-kontaketa hasiko da eta ezin da pausatu. Zure saiakera denbora agortu baino lehen amaitu beharko duzu. Ziur zaude orain hasi nahi duzula?';
 $string['confirmstartheader'] = 'Denbora-muga';
 $string['pluginname'] = 'Denbora-mugaren arabera sartzeko araua';
 $string['privacy:metadata'] = 'Denbora-mugaren araberako galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';

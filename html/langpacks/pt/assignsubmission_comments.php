@@ -32,4 +32,4 @@ $string['default_help'] = 'Se ativar esta opção, este método de trabalho esta
 $string['enabled'] = 'Comentários';
 $string['enabled_help'] = 'Se ativar esta opoção, os alunos podem inserir comentários na sua submissão. Pode ser usado, por exemplo, para permitir que os alunos alertem o professor sobre qual o ficheiro a avaliar no caso de submeterem mais do que um.';
 $string['pluginname'] = 'Comentários à submissão';
-$string['privacy:metadata:commentpurpose'] = 'Comentários entre aluno e professor sobre a submissão';
+$string['privacy:metadata:commentpurpose'] = 'Comentários entre aluno e professor sobre a submissão.';

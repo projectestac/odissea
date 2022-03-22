@@ -25,20 +25,20 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['acohortroleassignmentssaved'] = 'تم حفظ {$a} تعيينات دور الدفعة.';
+$string['acohortroleassignmentssaved'] = 'تم حفظ {$a} تعيينات دور الدفعة .';
 $string['assign'] = 'تعيين';
 $string['assignroletocohort'] = 'تعيين الأدوار ضمن سياق المستخدم لجميع أعضاء الدفعة';
 $string['backgroundsync'] = 'ملاحظة: لن تسري التعيينات الجديدة لأدوار الدفعة على الفور. تغييرات تعيينات الأدوار ستقوم بها مهمة مجدولة.';
-$string['cohortroleassignmentnotremoved'] = 'لم يتم إزالة تعيين دور الدفعة.';
-$string['cohortroleassignmentremoved'] = 'تم إزالة تعيين دور الدفعة.';
-$string['cohortroles'] = 'أدوار الدفعة.';
+$string['cohortroleassignmentnotremoved'] = 'لم تتم إزالة تعيين دور الدفعة.';
+$string['cohortroleassignmentremoved'] = 'تمت إزالة تعيين دور الدفعة.';
+$string['cohortroles'] = 'أدوار الدفعة .';
 $string['existingcohortroles'] = 'تعيينات دور الدفعة الحالية';
 $string['managecohortroles'] = 'تعيين أدوار المستخدم للدفعة';
 $string['noassignableroles'] = 'لا توجد حالياً أدوار يمكن تعيينها في سياق المستخدم. <a href="../../roles/manage.php">إدارة الأدوار</a>';
 $string['nocohortroleassignmentssaved'] = 'لم يتم حفظ تعيينات دور الدفعة.';
 $string['onecohortroleassignmentsaved'] = 'تم حفظ تعيين دور واحد للدفعة.';
 $string['pluginname'] = 'إدارة أدوار الدفعات';
-$string['privacy:metadata:tool_cohortroles'] = 'تخزن إضافة إدارة أدوار الدفعة تعيينات أدوار الدفعة للمستخدم';
+$string['privacy:metadata:tool_cohortroles'] = 'يخزن ملحق إدارة أدوار الدفعة تعيينات أدوار الدفعة للمستخدم';
 $string['privacy:metadata:tool_cohortroles:cohortid'] = 'مُعرَّف الدفعة';
 $string['privacy:metadata:tool_cohortroles:id'] = 'مُعرَّف سجل تعيين دور الدفعة';
 $string['privacy:metadata:tool_cohortroles:roleid'] = 'مُعرَّف الدور';
@@ -47,7 +47,7 @@ $string['privacy:metadata:tool_cohortroles:timemodified'] = 'وقت تعديل �
 $string['privacy:metadata:tool_cohortroles:userid'] = 'مُعرَّف المستخدم';
 $string['privacy:metadata:tool_cohortroles:usermodified'] = 'مُعرَّف المستخدم الذي قام بآخر تعديل في تعيين دور الدفعة';
 $string['removecohortroleassignment'] = 'إزالة تعيين دور الدفعة';
-$string['removecohortroleassignmentconfirm'] = 'هل أنت متأكد من رغبتك في إزالة تعيين دور الدفعة هذا؟ ستتم إزالة هذا الدور لهذا المستخدم في جميع مقررات المستخدم الأخرى.';
+$string['removecohortroleassignmentconfirm'] = 'هل أنت متأكد من رغبتك في إزالة تعيين دور الدفعة هذا؟ ستتم إزالة هذا الدور لهذا المستخدم في جميع مساقات المستخدم الأخرى.';
 $string['selectcohorts'] = 'إختر الدفعات';
 $string['selectrole'] = 'إختر الدور';
 $string['selectusers'] = 'حدد المستخدمين لتعيين الدور';

@@ -108,7 +108,7 @@ Je kunt het %-teken als jokerteken gebruiken. Enkele voorbeeldwaarden:
 * /mod/forum/view.php% - komt overeen met een lijst met forumdiscussies
 * /user/profile.php% - komt overeen met de profielpagina van een gebruiker
 
-Als je een rondleiding op de startpagina van de site wil tonen, dan kun je de waarde "FRONTPAGE" gebruiken.';
+Als je een rondleiding op de site startpagina wil tonen, dan kun je de waarde "FRONTPAGE" gebruiken.';
 $string['pausetour'] = 'Pauze';
 $string['placement'] = 'Plaatsing';
 $string['placement_help'] = 'Een stap kan boven, onder links of rechts van het doel geplaatst worden. Boven of onder wordt aanbevolen omdat die beter passen op mobiele schermen.

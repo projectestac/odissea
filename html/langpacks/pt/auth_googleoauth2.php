@@ -39,7 +39,7 @@ A primeira vez que o utilizador se ligar ao fornecedor de autenticação, uma no
 <b>Deve</b> desmarcar a opção Prevenir criação de conta (configuração de administrador: authpreventaccountcreation ) ao autenticar.';
 $string['auth_googlesettings'] = 'Configurações';
 $string['auth_sign-in_with'] = 'Entrar com {$a->providername}';
-$string['couldnotauthenticate'] = 'A autenticação falhou - por favor tente entrar novamente.';
+$string['couldnotauthenticate'] = 'A autenticação falhou. Por favor, tente novamente.';
 $string['couldnotauthenticateuserlogin'] = 'Erro no método de autenticação.<br/>
 Por favor, tente entrar novamente com o seu nome de utilizador e senha.<br/>
 <br/>

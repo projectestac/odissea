@@ -95,7 +95,7 @@ em <i>\'{$a->publication}\' {$a->dayupdated} às {$a->timeupdated}</i><br /><br 
 Já está <a href="{$a->url}">disponível</a> para consulta.';
 $string['entiresperpage'] = 'Número de participantes por página';
 $string['eventpublicationapprovalchanged'] = 'Alterada aprovação do ficheiro';
-$string['eventpublicationduedateextended'] = 'Prazo foi prorrogado';
+$string['eventpublicationduedateextended'] = 'O prazo foi prorrogado';
 $string['eventpublicationfiledeleted'] = 'Ficheiro apagado';
 $string['eventpublicationfileimported'] = 'Ficheiro importado';
 $string['eventpublicationfileuploaded'] = 'Ficheiro carregado';
@@ -209,7 +209,7 @@ $string['student_pending'] = 'oculto (não aprovado)';
 $string['student_reject'] = 'rejeitar';
 $string['student_rejected'] = 'rejeitado';
 $string['studentapproval'] = 'Estado';
-$string['studentapproval_help'] = 'A coluna de estado representa a resposta dos alunos à aprovação:
+$string['studentapproval_help'] = 'A coluna do estado representa a resposta dos alunos à aprovação:
 
 * ? - aprovação pendente
 * ✓ - aprovação concedida

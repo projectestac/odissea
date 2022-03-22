@@ -101,6 +101,6 @@ $string['showavailabilitysection_hide'] = 'Esconder toda a secção';
 $string['showavailabilitysection_show'] = 'Mostrar a secção em cor cinzenta, com informação sobre indisponibilidade';
 $string['startswith'] = 'começa com';
 $string['userfield'] = 'Campo do utilizador';
-$string['userfield_help'] = 'Pode restringir o acesso baseando-se em qualquer campo do perfil dos utilizadores.';
+$string['userfield_help'] = 'Pode restringir o acesso baseando-se em qualquer campo de perfil dos utilizadores.';
 $string['userrestriction_hidden'] = 'Indisponível (completamente oculto, sem mensagem): {$a}';
 $string['userrestriction_visible'] = 'Indisponível: {$a}';

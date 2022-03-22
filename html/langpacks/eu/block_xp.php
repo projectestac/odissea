@@ -166,7 +166,7 @@ $string['limitparticipants_help'] = 'Ezarpen honek aginte-panelean nori erakuste
 $string['list'] = 'Zerrenda';
 $string['logging'] = 'Erregistratzea';
 $string['manually'] = 'Eskuz';
-$string['maxactionspertime'] = 'Denbora-tarteko gehieneko ekintza kopurua';
+$string['maxactionspertime'] = 'Gehieneko ekintza kopurua denbora-tartean';
 $string['maxactionspertime_help'] = 'Emandako denbora-tartean puntuak eskuratzeko zenbatuko diren gehieneko ekintza kopurua. Horien ondorengo ekintzak ez dira kontuan hartuko. Balio hau hutsik badago edo zero bada, ez da aplikatzen.';
 $string['movecondition'] = 'Mugitu baldintza';
 $string['moverule'] = 'Mugitu araua';
@@ -192,7 +192,7 @@ $string['pluginname'] = 'Maila gora!';
 $string['pluginsoutofsync'] = '__Pluginak sinkronizatu gabe daude!__
 
 Honek esan nahi du _Maila gora!_ plugina eguneratu duzula baina _Maila gora! Plus_ ez. Horrelakorik ez gertatzeko lana egiten dugun arren, baliteke aurrerantzean funtzio batzuk ondo ez funtzionatzea, baita _Maila gora!_ bera ere.  _Maila gora! Plus_ bertsio berrienera eguneratzea gomendatzen dizugu. [Irakurri gehiago]({$a->url})';
-$string['pointsintimelinker'] = 'bakoitzeko';
+$string['pointsintimelinker'] = 'denbora-tarte honetan:';
 $string['pointsrequired'] = 'Beharrezko puntuak';
 $string['privacy:metadata:log'] = 'Ekitaldien erregistroa gordetzen du';
 $string['privacy:metadata:log:eventname'] = 'Ekitaldiaren izena';

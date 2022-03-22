@@ -26,4 +26,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = '测验成绩（禁用）';
+$string['privacy:metadata'] = '测验结果模块仅显示存储在其他位置的数据。';
 $string['quiz_results:addinstance'] = '新增测验成绩版块';

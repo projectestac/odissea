@@ -25,6 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityoverview'] = '你将有即将到来的bigbluebuttonbn会话';
+$string['bbbduetimeoverstartingtime'] = '此活动的到期时间必须大于开始时间';
+$string['bbbdurationwarning'] = '此会话的最长持续时间为%duration%分钟。';
+$string['bbbrecordallfromstartwarning'] = '正在从一开始录制此会话。';
+$string['bbbrecordwarning'] = '这个会话可能会被录下来。';
+$string['bigbluebuttonbn'] = 'BigBlueButton';
+$string['bigbluebuttonbn:addinstance'] = '增加一个新的bigbluebuttonbn 房间/活动';
+$string['bigbluebuttonbn:join'] = '加入一个bigbluebuttonbn会议';
+$string['bigbluebuttonbn:managerecordings'] = '管理bigbluebuttonbn记录';
 $string['email_footer_sent_by'] = '此自动通知信息已被发送';
 $string['mod_form_field_welcome'] = '欢迎信息';
 $string['view_groups_selection'] = '选择要加入的组，并确认该操作';

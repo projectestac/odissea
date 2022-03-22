@@ -25,12 +25,12 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Zugriff über die Eingabe eines Kennworts regeln';
+$string['description'] = 'Zugriff über die Eingabe eines Kennworts erlauben';
 $string['enterpassword'] = 'Kennwort eingeben';
 $string['enterpasswordfor'] = 'Kennwort für {$a} eingeben';
 $string['error_setpassword'] = 'Sie müssen ein Kennwort festlegen';
-$string['password:addinstance'] = 'Kennwortabfragen zu Aktivitäten hinzufügen';
-$string['passwordintro'] = 'Der Zugriff zu <em>{$a}</em> ist durch ein Kennwort geschützt. Wenn Sie das Kennwort nicht wissen, fragen Sie bitte Ihre Trainer/innen.';
+$string['password:addinstance'] = 'Kennwortabfrage zu Aktivitäten hinzufügen';
+$string['passwordintro'] = 'Der Zugriff zu <em>{$a}</em> ist mit einem Kennwort geschützt. Wenn Sie das Kennwort nicht wissen, fragen Sie bitte Ihre Trainer/innen.';
 $string['passwordprotection'] = 'Kennwort erforderlich';
 $string['permanently'] = 'Dauerhaft';
 $string['pluginname'] = 'Voraussetzung: Kennwort';

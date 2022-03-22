@@ -25,9 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['add_feedback'] = 'Add Feedback';
 $string['default'] = 'Enabled by default';
 $string['default_help'] = 'If set, this feedback method will be enabled by default for all new assignments.';
 $string['enabled'] = 'Video Feedback';
 $string['enabled_help'] = 'If enabled, the marker can leave video feedback for each submission.';
 $string['pluginname'] = 'MEDIAL Video Feedback';
-$string['view_feedback'] = 'View Feedback';
+$string['view_feedback'] = 'View Video Feedback';

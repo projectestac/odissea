@@ -25,6 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['giveup'] = 'Stop and read final feedback';
 $string['notcomplete'] = 'Not complete';
 $string['pluginname'] = 'Adaptive adapted for coderunner';
 $string['precheck'] = 'Precheck';

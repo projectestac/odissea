@@ -47,7 +47,7 @@ Ao selecionar uma forma (círculo, retângulo ou polígono) adicionará uma nova
 
 A edição de uma forma começa com um clique na forma na pré-visualização para mostrar as alças de edição. Pode mover a forma usando a alça central ou ajustar as dimensões da forma com as alças do vértice.
 
-Nos polígonos, e apenas para estes, ao manter pressionado o botão CTRL no Windows (botão de comando em Mac) enquanto clica numa alça de vértice adicionará um novo vértice ao polígono. Por favor, mantenha a forma do polígono tão simples quanto possível, sem cruzar linhas.
+Nos polígonos, e apenas para estes, ao manter pressionada tecla Ctrl no Windows (botão de comando em Mac) enquanto clica numa alça de vértice adicionará um novo vértice ao polígono. Por favor, mantenha a forma do polígono tão simples quanto possível, sem cruzar linhas.
 
 Para informação, as três formas usam as coordenadas da seguinte maneira:<br />
 * Círculo: centre_x, centre_y; raio <br />por exemplo: <code>80,100;50</code><br />
@@ -86,7 +86,7 @@ $string['previewareaheader'] = 'Pré-visualização';
 $string['previewareamessage'] = 'Selecione um ficheiro de imagem de fundo, insira os seus quadros de texto para marcadores e defina as áreas para largar, na imagem de fundo, onde estes deverão ser largados.';
 $string['privacy:metadata'] = 'O módulo Pergunta do tipo Arrastar e largar numa área permite que os autores das perguntas definam opções predefinidas como preferências do utilizador.';
 $string['privacy:preference:defaultmark'] = 'A avaliação predefinida para uma determinada pergunta.';
-$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das é o \'Interativo com várias tentativas\' ou \'Modo adaptável \'.';
+$string['privacy:preference:penalty'] = 'A penalização para cada tentativa incorreta quando o comportamento das perguntas é \'Interativo com várias tentativas\' ou \'Modo adaptável\'.';
 $string['privacy:preference:shuffleanswers'] = 'Se as respostas devem, ou não, ser baralhadas automaticamente.';
 $string['refresh'] = 'Atualizar a pré-visualização';
 $string['shape'] = 'Forma';

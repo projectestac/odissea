@@ -70,6 +70,7 @@ $string['replytalkback'] = 'Retour de la voix';
 $string['replyvideo'] = 'Enregistrement vidéo';
 $string['replyvoice'] = 'Enregistrement vocal (Red5)';
 $string['replywhiteboard'] = 'Tableau blanc';
+$string['safesave'] = 'Activer l\'enregistrement sécurisé - désactive le bouton d\'envoi du devoir jusqu\'à ce que le téléchargement de l\'enregistrement Poodll soit terminé.';
 $string['setting_audio_heading'] = 'Paramètres du lecteur audio';
 $string['setting_audio_heading_details'] = 'Paramètres contrôlant l\'apparence du lecteur dans les pages de révision et de liste des dépôts';
 $string['setting_snapshot_heading'] = 'Paramètres de capture d\'écran';

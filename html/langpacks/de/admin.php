@@ -197,7 +197,7 @@ $string['configallowview'] = 'Wählen Sie aus, welche Rollen für Nutzer/innen s
 $string['configallusersaresitestudents'] = 'Mit dieser Option legen Sie den Zugriff zu den Lernaktivitäten auf der Startseite fest. Wenn Sie \'Ja\' auswählen, können alle eingetragenen Nutzer/innen die Lernaktivitäten auf der Startseite durchführen. Wenn Sie \'Nein\' auswählen, können nur diejenigen, die derzeit in mindestens einem Kurs eingetragen sind, die Lernaktivitäten auf der Startseite ausführen. Nur Administrator/innen und speziell zugelassene Trainer/innen dürfen die Aktivitäten auf der Startseite einrichten und bearbeiten.';
 $string['configauthenticationplugins'] = 'Wählen Sie die Authentifizierungsverfahren aus, die Sie benutzen möchten, und ordnen Sie diese in eine Reihenfolge der Nutzung.</br>
 <b>Hinweis:</b> Bei einer späteren Deaktivierung von Authentifizierungsverfahren kann es passieren, dass Nutzer/innen mit dem deaktivierten Verfahren keinen Zugang mehr erhalten. Prüfen Sie dies sorgfältig.</br>';
-$string['configautolang'] = 'Leitet die Standardsprache von den Browsereinstellungen des Nutzers ab. Wenn die Funktion deaktiviert ist wird die Default-Einstellung für die Sprache der Moodle-Installation verwendet.';
+$string['configautolang'] = 'Die Standardsprache wird über die Browsereinstellungen abgeleitet. Wenn die Option deaktiviert ist, wird die Standardsprache für die Website verwendet.';
 $string['configautolangusercreation'] = 'Wenn diese Option aktiviert ist und beim ersten Anmelden automatisch ein Nutzerkonto erstellt wird (z.B. bei einer LDAP- oder OAuth2-Authentifizierung), wird die vom Browser erkannte Sprache als bevorzugte Sprache festgelegt. Andernfalls wird die Standardsprache der Instanz als bevorzugte Sprache für das Nutzerkonto festgelegt.';
 $string['configautologinguests'] = 'Sollen Personen automatisch als Gäste eingeloggt werden, wenn sie Kurse mit Gastzugang öffnen?';
 $string['configbloglevel'] = 'Diese Einstellung erlaubt es, die Sichtbarkeit von Blogeinträgen für dieses Moodle zu beschränken. Beachten Sie, dass die Einstellung den Maximalrahmen beim Lesen festlegt, nicht aber den Blogtyp beim Schreiben ändert. Sie können das Blogsystem auch vollständig deaktivieren.';
@@ -1335,7 +1335,7 @@ $string['systempaths'] = 'Systempfade';
 $string['tablenosave'] = 'Änderungen in der obigen Tabelle werden automatisch gespeichert.';
 $string['tablesnosave'] = 'Änderungen in den obigen Tabellen werden automatisch gespeichert.';
 $string['tabselectedtofront'] = 'Tabellen mit Tabs: Soll die Reihe mit dem aktiven Tabulator im Vordergrund platziert werden?';
-$string['tabselectedtofronttext'] = 'Bringe die ausgewählte Reihe in den Vordergrund';
+$string['tabselectedtofronttext'] = 'Ausgewählte Reihe nach vorne holen';
 $string['task_adhoc_concurrency_limit'] = 'Limit für gleichzeitige Adhoc-Tasks';
 $string['task_adhoc_concurrency_limit_desc'] = 'Anzahl der zeitgleich laufenden Adhoc-Tasks. Wenn der Wert zu hoch gesetzt wird und viele Adhoc-Tasks abgearbeitet werden müssen, könnten reguläre Tasks verzögert ausgeführt werden. Der Wert \'0\' verhindert das Ausführen von Adhoc-Tasks vollständig.';
 $string['task_adhoc_max_runtime'] = 'Laufzeit für Adhoc-Tasks';

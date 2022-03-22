@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['addgroup'] = 'Adicionar ao grupo';
 $string['assignrole'] = 'Atribuir papel';
 $string['cohort:config'] = 'Configurar instâncias de Grupos globais';
-$string['cohort:unenrol'] = 'Desinscrever utilizadores suspensos';
+$string['cohort:unenrol'] = 'Cancelar a inscrição de utilizadores suspensos';
 $string['creategroup'] = 'Criar novo grupo';
 $string['defaultgroupnametext'] = '{$a->increment} Grupo global {$a->name}';
 $string['enrolcohortsynctask'] = 'Tarefa de sincronização de inscrição em grupos globais';

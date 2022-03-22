@@ -35,4 +35,4 @@ $string['orphanedwarning'] = 'Estas atividades não estão disponíveis para os 
 $string['pluginname'] = 'Formato Atividade Única';
 $string['privacy:metadata'] = 'O módulo Formato Atividade Única não armazena quaisquer dados pessoais.';
 $string['sectionname'] = 'Nome da secção';
-$string['warningchangeformat'] = 'Ao alterar o formato atual da disciplina para o "Formato Atividade Única" assegure-se de que removeu todas as atividades extras da disciplina, incluindo o Fórum "Anúncios". Note que a estrutura das secções poderá ser modificada.';
+$string['warningchangeformat'] = 'Ao alterar o formato atual da disciplina para o "Formato Atividade Única" assegure-se de que removeu todas as atividades extras da disciplina, incluindo o Fórum "Anúncios". Tenha em atenção que a estrutura das secções poderá ser modificada.';

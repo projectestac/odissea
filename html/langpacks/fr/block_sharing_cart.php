@@ -31,11 +31,11 @@ $string['backup_heavy_load_warning_message'] = 'Si la section contient plusieurs
 $string['bulkdelete'] = 'Purge du panier';
 $string['clicktomove'] = 'Cliquer pour déplacer ici';
 $string['clipboard'] = 'Coller cet élément';
-$string['confirm_backup'] = 'Souhaitez-vous copier cet élément dans le panier d\'activités ?';
+$string['confirm_backup'] = 'Voulez-vous vraiment copier cet élément dans le panier d\'activités ?';
 $string['confirm_backup_section'] = 'Voulez-vous copier cette section de cours et ses ressources / activités dans le panier d\'activités ?';
 $string['confirm_delete'] = 'Voulez-vous vraiment supprimer cet élément ?';
 $string['confirm_delete_selected'] = 'Voulez-vous vraiment supprimer tous les éléments sélectionnés ?';
-$string['confirm_restore'] = 'Souhaitez-vous coller cet élément dans le cours ?';
+$string['confirm_restore'] = 'Voulez-vous vraiment coller cet élément dans le cours ?';
 $string['confirm_userdata'] = 'Souhaitez-vous inclure les données utilisateurs dans la copie de cette activité ?
 OK - Copier *avec* les données utilisateur
 Annuler - Copier *sans* les données utilisateur';
@@ -91,15 +91,14 @@ Cependant, lorsque les questions à restaurer existent déjà, ces données sero
 Cette solution peut être utile pour éviter certaines erreurs de restauration, telles que <i>error_question_match_sub_missing_in_db</i>.';
 $string['sharing_cart'] = 'Panier d\'activités';
 $string['sharing_cart:addinstance'] = 'Ajouter le bloc panier d\'activités';
-$string['sharing_cart_help'] = '<h2 class="helpheading">Aide</h2>
-<dl style="margin-left:0.5em;">
-<dt>Copier un élément du cours vers le panier d\'activités</dt>
-<dd>Dans le menu contextuel de l\'activité ou de la ressource, vous verrez apparaitre la fonction "Copier dans le panier d\'activités".  Cliquez sur cette fonction pour envoyer une copie de la ressource/activité vers le panier d\'activités. L\'élément sera copié dans le panier. Suivant le type d\'élément copié, il vous sera parfois demandé si vous souhaitez y inclure les données utilisateurs. L\'élément sera copié avec ou sans données utilisateurs.</dd>
-<dt>Coller un élément du panier d\'activités vers le cours</dt>
-<dd>Depuis le bloc panier d\'activités, cliquez sur l\'icône "Coller dans le cours" de l\'activité/ressource souhaitée et indiquez sur quelle section vous souhaitez coller l\'élément. Pour annuler la copie, cliquez sur l\'icône "Annuler" dans l\'entête du cours.</dd>
-<dt>Créer des répertoires au sein du panier d\'activités</dt>
-<dd>Cliquez sur l\'icône "Déplacer dans un dossier" de l\'élément que vous souhaitez déplacer.  Si vous n\'avez pas de dossier sur le panier, vous serez invité à saisir le nom du nouveau dossier à créer.  Si vous avez déjà des dossiers sur votre panier, vous pouvez sélectionner un dossier existant dans la liste déroulante.   Pour basculer sur le champ de saisie d\'un nouveau nom de dossier, cliquez sur l\'icône "Modifier".</dd>
-</dl>';
+$string['sharing_cart_help'] = '<div>
+ <strong>Copier un élément du cours vers le panier d\'activités</strong>
+<p>Dans le menu contextuel de l\'activité ou de la ressource, vous verrez apparaitre la fonction "Copier dans le panier d\'activités".  Cliquez sur cette fonction pour envoyer une copie de la ressource/activité vers le panier d\'activités. L\'élément sera copié dans le panier. Suivant le type d\'élément copié, il vous sera parfois demandé si vous souhaitez y inclure les données utilisateurs. L\'élément sera copié avec ou sans données utilisateurs.</p>
+ <strong>Coller un élément du panier d\'activités vers le cours  </strong>
+<p>Depuis le bloc panier d\'activités, cliquez sur l\'icône "Coller dans le cours" de l\'activité/ressource souhaitée et indiquez sur quelle section vous souhaitez coller l\'élément. Pour annuler la copie, cliquez sur l\'icône "Annuler" dans l\'entête du cours.</p>
+<strong>Créer des répertoires au sein du panier d\'activités</strong>
+<p>Cliquez sur l\'icône "Déplacer dans un dossier" de l\'élément que vous souhaitez déplacer.  Si vous n\'avez pas de dossier sur le panier, vous serez invité à saisir le nom du nouveau dossier à créer.  Si vous avez déjà des dossiers sur votre panier, vous pouvez sélectionner un dossier existant dans la liste déroulante.   Pour basculer sur le champ de saisie d\'un nouveau nom de dossier, cliquez sur l\'icône "Modifier".</p>
+</div>';
 $string['unexpectederror'] = 'Une erreur inattendue est survenue';
 $string['uninstalled_plugin_warning_title'] = 'Ce plugin est désinstallé. Essayer de le récupérer sans réinstaller le plugin : {$a} provoquera des erreurs. La restauration est désactivée';
 $string['variouscourse'] = 'de différents cours';

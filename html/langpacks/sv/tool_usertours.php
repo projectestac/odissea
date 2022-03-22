@@ -121,7 +121,7 @@ $string['previousstep'] = 'Föregående';
 $string['privacy:metadata:preference:completed'] = 'Tidpunkten då en användare senast slutförde en guidad tur.';
 $string['privacy:metadata:preference:requested'] = 'Tidpunkten då en användare senast manuellt begärde en guidad tur.';
 $string['privacy:request:preference:completed'] = 'Senast markerade du den guidade turen för "{$a->name}" som slutförd  {$a->time}';
-$string['privacy:request:preference:requested'] = 'Senast du begärde en guidad tur för "{$->name}" var "{$a->time}"';
+$string['privacy:request:preference:requested'] = 'Senast du begärde en guidad tur för "{$a->name}" var "{$a->time}"';
 $string['reflex'] = 'Fortsätt vid klick';
 $string['reflex_help'] = 'Fortsätt till nästa steg när målet klickas.';
 $string['resettouronpage'] = 'Återställ den guidade turen för denna sida';
@@ -154,7 +154,7 @@ $string['title_help'] = 'Rubriken på ett steg kan läggas till som oformaterad 
 Alternativt kan ett språksträngs-ID anges i formatidentifieraren, komponenten (utan hakparenteser eller mellanslag efter kommatecknet).';
 $string['tour1_content_addingblocks'] = 'I själva verket, tänk efter noga innan du inkluderar eventuella block på dina sidor. Block visas inte i Moodle-appen, så som en allmän regel är det mycket bättre att se till att din webbplats fungerar bra utan några block.';
 $string['tour1_content_blockregion'] = 'Det finns fortfarande en block-region här borta. Vi rekommenderar att du tar bort navigerings- och administrationsblocken helt, eftersom all funktionalitet finns på andra ställen i Boost-temat.';
-$string['tour1_content_customisation'] = 'Om du vill anpassa utseendet på din webbplats och förstasidan använder du inställningsmenyn i hörnet av det här sidhuvudet. Försök att aktivera redigeringen nu.';
+$string['tour1_content_customisation'] = 'Om du vill anpassa utseendet på din webbplats och startsidan använder du inställningsmenyn i hörnet av det här sidhuvudet. Försök att aktivera redigeringen nu.';
 $string['tour1_content_end'] = 'Din guidade tur är avslutad. Om du vill se den igen kan du klicka länken längst nere på sidan för att återställa den.
 Som administratör för webbplatsen kan du själv skapa liknande guidade turer för dina användare.';
 $string['tour1_content_navigation'] = 'Huvudsaklig navigering sker nu via denna navigeringspanel. Innehållet uppdateras beroende på var du befinner dig på webbplatsen. Använd knappen längst upp för att dölja eller visa den.';

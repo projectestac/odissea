@@ -32,6 +32,7 @@ $string['annually'] = '매년';
 $string['calendar'] = '달력';
 $string['calendarheading'] = '{$a} 달력';
 $string['calendarpreferences'] = '달력 선택 설정';
+$string['calendartypes'] = '달력 유형';
 $string['calendarurl'] = '달력 URL : {$a}';
 $string['category'] = '범주';
 $string['categoryevents'] = '일정 분류';

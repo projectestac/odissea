@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['correcterror'] = 'صائب';
+$string['correcterror'] = 'تصويب';
 $string['deleteselectedpages'] = 'حذف الصفحات المحددة';
 $string['errorcouldnotgrab'] = 'تعذر الجلب';
 $string['errordifferentpage'] = 'توجد صفحة مختلفة';

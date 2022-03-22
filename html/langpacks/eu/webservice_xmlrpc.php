@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'XMLRPC protokoloa';
-$string['privacy:metadata'] = 'XML-RPC protokoloapluginak ez du datu pertsonalik biltzen.';
+$string['pluginname'] = 'XML-RPC protokoloa';
+$string['privacy:metadata'] = 'XML-RPC protokoloa pluginak ez du datu pertsonalik biltzen.';
 $string['xmlrpc:use'] = 'Erabili XMLRPC protokoloa';

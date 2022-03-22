@@ -94,6 +94,11 @@
 		"quizzes_studio_home_answer_type_equation_label": "Gleichung",
 		"quizzes_studio_home_answer_type_graphic_label": "Grafik",
 		"quizzes_studio_home_answer_type_text_label": "Text",
+		"quizzes_studio_home_answer_type_standard_graphic_label": "Standard",
+		"quizzes_studio_home_answer_type_bar_chart_label": "Bar chart",
+		"quizzes_studio_home_answer_type_line_chart_label": "Line chart",
+		"quizzes_studio_home_answer_type_pie_chart_label": "Pie chart",
+
 
 		"quizzes_studio_home_question_math_content_label": "Lege den Anfangsinhalt und die richtige Antwort auf deine Frage fest",
 		"quizzes_studio_home_question_text_content_label": "Lege die richtige Antwort auf deine Frage fest",
@@ -112,7 +117,7 @@
 		"quizzes_studio_customize_graph_toolbar_header": "Passe die Symbolleiste an",
 
 		"quizzes_studio_home_test_question_button_tooltip": "Teste diese Frage",
-		"quizzes_studio_home_cancel_button_tooltip": "Löschen",
+		"quizzes_studio_home_cancel_button_tooltip": "Abbrechen",
 		"quizzes_studio_home_save_button_tooltip": "Speichern",
 
 		"quizzes_studio_options_filter_label": "Die Optionen basierend auf einer Analyse der richtigen Antwort filtern.",

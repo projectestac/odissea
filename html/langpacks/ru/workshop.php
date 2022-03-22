@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = 'Работа была загружена';
 $string['eventassessmentevaluated'] = 'Оценка вычислена';
 $string['eventassessmentevaluationsreset'] = 'Сброшено вычисление оценки';
 $string['eventassessmentreevaluated'] = 'Оценка переопределена';
+$string['eventphaseautomaticallyswitched'] = 'Фаза автоматически переключена';
 $string['eventphaseswitched'] = 'Фаза переключена';
 $string['eventsubmissionassessed'] = 'Работа оценена';
 $string['eventsubmissionassessmentsreset'] = 'Оценки работы очищены';

@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['about_mrbs'] = 'MRBSri buruz';
 $string['accessdenied'] = 'Ezin zara sartu';
+$string['accessmrbs'] = 'Planifikatu baliabide bat';
 $string['addarea'] = 'Baliabidea erantsi';
 $string['addentry'] = 'Erreserba berria';
 $string['addroom'] = 'Elementua aukeratu';

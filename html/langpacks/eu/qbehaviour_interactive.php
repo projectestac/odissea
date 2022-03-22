@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Interaktiboa hainbat saiakerarekin';
 $string['privacy:metadata'] = 'Interaktiboa hainbat saiakerarekin galdera-jokaera pluginak ez du datu pertsonalik biltzen.';
 $string['triesremaining'] = 'Falta diren saiakerak: {$a}';
-$string['tryagain'] = 'Saiatu berriz';
+$string['tryagain'] = 'Saiatu berriro';

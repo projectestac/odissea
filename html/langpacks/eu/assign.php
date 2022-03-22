@@ -55,7 +55,7 @@ $string['assign:exportownsubmission'] = 'Esportatu norberaren bidalketa';
 $string['assign:grade'] = 'Kalifikatu zeregina';
 $string['assign:grantextension'] = 'Eman epearen luzapena';
 $string['assign:manageallocations'] = 'Kudeatu bidalketei esleitutako kalifikatzaileak';
-$string['assign:managegrades'] = 'Berrikusi eta argitaratu kalifikazioa';
+$string['assign:managegrades'] = 'Berrikusi eta argitaratu kalifikazioak';
 $string['assign:manageoverrides'] = 'Kudeatu zeregin-salbuespenak';
 $string['assign:receivegradernotifications'] = 'Jaso kalifikatzailearen bidalketen jakinarazpenak';
 $string['assign:releasegrades'] = 'Argitaratu kalifikazioak';
@@ -323,7 +323,7 @@ $string['markerfilternomarker'] = 'Kalifikatzailerik ez';
 $string['markingallocation'] = 'Erabili kalifikatzaile esleipena';
 $string['markingallocation_help'] = 'Kalifikazio lan-fluxuarekin batera gaituz gero, ikasle konkretuei kalifikatzaileak eslei dakizkieke.';
 $string['markingworkflow'] = 'Erabili kalifikazio lan-fluxua';
-$string['markingworkflow_help'] = 'Gaituz gero, kalifikazioak lan-fluxu egoera ezberdinetatik igaroko dira ikasleei erakutsi baino lehen. Honek kalifikazio erronda anitz egiteko eta ikasle guztiei aldi berean kalifikazioak erakusteko aukera ematen du.';
+$string['markingworkflow_help'] = 'Gaituz gero, kalifikazioak lan-fluxu egoera ezberdinetatik igaroko dira ikasleei erakutsi baino lehen. Honek kalifikazio erronda anitz egiteko eta kalifikazioak ikasle guztiei aldi berean argitaratzeko aukera ematen du.';
 $string['markingworkflowstate'] = 'Kalifikazio lan-fluxuaren egoera';
 $string['markingworkflowstate_help'] = 'Balizko lan-fluxu batek hurrengo egoerak izan ditzake (baimenen arabera):
 
@@ -331,14 +331,14 @@ $string['markingworkflowstate_help'] = 'Balizko lan-fluxu batek hurrengo egoerak
 * Kalifikatzen - kalifikatzailea lanean hasi da baina oraindik ez du amaitu.
 * Kalifikazioa osatua - kalifikatzaileak lana amaitu du baina oraindik ikuskatu/zuzentzera sartuko da.
 * Berrikusten - irakaslea kalifikazioaren kalitatearen ikuskapena egiten ari da.
-* Ikusgai jartzeko prest - irakasleak kalifikazioari onespena eman dio baina ikasleari oraindik ez zaio kalifikazioa erakutsi.
-* Ikusgai - ikasleak kalifikazio eta feedbacka ikusi ditzake';
+* Argitaratzeko prest - irakasleak kalifikazioari onespena eman dio baina ikasleari oraindik ez zaio kalifikazioa erakutsi.
+* Argitaratuta - ikasleak kalifikazio eta feedbacka ikusi ditzake';
 $string['markingworkflowstateinmarking'] = 'Kalifikatzen';
 $string['markingworkflowstateinreview'] = 'Berrikusten';
 $string['markingworkflowstatenotmarked'] = 'Kalifikatu gabe';
-$string['markingworkflowstatereadyforrelease'] = 'Ikusgai jartzeko prest';
+$string['markingworkflowstatereadyforrelease'] = 'Argitaratzeko prest';
 $string['markingworkflowstatereadyforreview'] = 'Kalifikazioa osatua';
-$string['markingworkflowstatereleased'] = 'Ikusgai';
+$string['markingworkflowstatereleased'] = 'Argitaratuta';
 $string['maxattempts'] = 'Saiakera kopuru maximoa';
 $string['maxattempts_help'] = 'Ikasle batek egin dezaken saiakera kopuru maximoa. Saiakera-kopuru honetara heldu ondoren, bidalketa ezingo zaio berriz ireki.';
 $string['maxgrade'] = 'Gehieneko kalifikazioa';
@@ -483,9 +483,9 @@ $string['sendlatenotifications_help'] = 'Gaituz gero, kalifikatzaileek (normalea
 $string['sendnotifications'] = 'Jakinarazi kalifikatzaileei bidalketak daudenean';
 $string['sendnotifications_help'] = 'Gaituz gero, kalifikatzaileek (normalean irakasleak) mezu bat jasotzen dute ikasleek bidalketa bat egiten duten bakoitzean, nahiz garaiz edo berandu bidali. Mezularitza-metodoak konfiguratuta daude horretarako.';
 $string['sendstudentnotifications'] = 'Jakinarazi ikasleari';
-$string['sendstudentnotifications_help'] = 'Gaituz gero, ikasleek eguneratutako kalifikazio edo feedbackaren berri ematen duen mezua jasoko du. Zeregin honetan kalifikazio lan-fluxua gaituta badago, jakinarazpenak ez dira bidaliko kalifikazioaren egoera "Ikusgai" izan arte.';
-$string['sendstudentnotificationsdefault'] = '"Jakinarazi ikasleari" ezarpenaren balio lehenetsia';
-$string['sendstudentnotificationsdefault_help'] = 'Zehaztu kalifikazio formularioaren "Jakinarazi ikasleari" laukitxoaren lehenetsitako balioa.';
+$string['sendstudentnotifications_help'] = 'Markatu ezazu kutxa hau ikasleari eguneratutako kalifikazio edo feedbackaren berri emateko jakinarazpena bidaltzeko. Zeregin honetan kalifikazio lan-fluxua gaituta badago jakinarazpena ez da bidaliko kalifikazioa argitaratu arte.';
+$string['sendstudentnotificationsdefault'] = '\'Jakinarazi ikasleari\' ezarpenaren balio lehenetsia';
+$string['sendstudentnotificationsdefault_help'] = 'Ikasle bakoitza kalifikatzean, \'Jakinarazi ikasleari\' laukitxo markatuta egon behar da modu lehenetsian?';
 $string['sendsubmissionreceipts'] = 'Bidali ikasleei bidalketa jaso izanaren agiria';
 $string['sendsubmissionreceipts_help'] = 'Aukera honek bidalketa jaso izanaren agiriak gaitzen ditu ikasleentzat. Ikasleek jasoko dute jakinarazpen bat zeregin bat bidaltzen duten bakoitzean.';
 $string['setmarkerallocationforlog'] = 'Ezarri kalifikatzaile esleipena: (id={$a->id}, izen osoa={$a->fullname}, kalifikatzailea={$a->marker}).';
@@ -495,7 +495,7 @@ $string['setmarkingworkflowstateforlog'] = 'Ezarri kalifikazio lan-fluxuaren ego
 $string['settings'] = 'Zereginaren ezarpenak';
 $string['showrecentsubmissions'] = 'Erakutsi azken bidalketak';
 $string['status'] = 'Egoera';
-$string['studentnotificationworkflowstateerror'] = 'Kalifikazio lan-fluxuaren egoera \'Ikusgai\' izan behar da ikasleei jakinarazteko.';
+$string['studentnotificationworkflowstateerror'] = 'Kalifikazio lan-fluxuaren egoera \'Argitaratuta\' izan behar da ikasleei jakinarazteko.';
 $string['submission'] = 'Bidalketa';
 $string['submissioncopiedhtml'] = '<p>\'<i>{$a->assignment}</i>\' zereginerako aurreko bidalketaren kopia bat egin duzu.</p>
 <p>Zure <a href="{$a->url}">zeregin bidalketaren</a> egoera ikus dezakezu.</p>';
@@ -510,8 +510,8 @@ $string['submissiondrafts_help'] = 'Gaituz gero, ikasleek bidali botoian klik eg
 $string['submissioneditable'] = 'Ikasleak bere bidalketa edita dezake';
 $string['submissionempty'] = 'Ez da ezer bidali';
 $string['submissionlog'] = 'Ikaslea: {$a->fullname}, Egoera: {$a->status}';
-$string['submissionmodified'] = 'Bidalketen informazioa daukazu. Mesedez irten orritik eta saiatu berriz.';
-$string['submissionmodifiedgroup'] = 'Beste norbaitek bidalketa eguneratu du. Mesedez irten orritik eta saiatu berriz.';
+$string['submissionmodified'] = 'Bidalketen informazioa daukazu. Mesedez irten orritik eta saiatu berriro.';
+$string['submissionmodifiedgroup'] = 'Beste norbaitek bidalketa eguneratu du. Mesedez irten orritik eta saiatu berriro.';
 $string['submissionnotcopiedinvalidstatus'] = 'Bidalketa ez da kopiatu, berrireki ondoren editatu delako.';
 $string['submissionnoteditable'] = 'Ikasleak ezin du editatu bidalketa hau';
 $string['submissionnotready'] = 'Zeregin hau ez dago bidaltzeko prest:';

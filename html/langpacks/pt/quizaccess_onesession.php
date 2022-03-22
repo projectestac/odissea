@@ -25,15 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['anothersession'] = 'Está a tentar aceder à tentativa de resposta ao teste a partir de um computador, dispositivo ou navegador que não é o mesmo que usou para iniciar a resposta ao teste. Se fechou acidentalmente o navegador, por favor, entre em contacto com o professor.';
-$string['eventattemptblocked'] = 'Foi bloqueada a possibilidade de utilizar outro dispositivo para continuar a responder a uma tentativa de resposta ao teste.';
+$string['anothersession'] = 'Está a tentar aceder à tentativa de resposta ao teste a partir de um computador, dispositivo ou navegador que não é o mesmo que usou para iniciar a resposta ao teste. Se fechou acidentalmente o navegador, contacte o professor.';
+$string['eventattemptblocked'] = 'Foi bloqueada a possibilidade de utilizar outro dispositivo para continuar a tentativa de resposta ao teste.';
 $string['eventattemptunlocked'] = 'O aluno foi autorizado a continuar a tentativa de resposta ao teste utilizando outro dispositivo';
 $string['onesession'] = 'Bloquear sessões simultâneas';
 $string['onesession:unlockattempt'] = 'Desbloquear a opção de apenas uma sessão';
-$string['onesession_help'] = 'Se ativar esta opção, os utilizadores só podem continuar a tentativa de resposta ao teste na mesma sessão do navegador. Qualquer tentativa de abrir o mesmo teste com outro computador, dispositivo ou navegador será bloqueada. Poderá ser útil quando quer ter a certeza que ninguém ajuda o aluno abrindo a mesma tentativa de resposta ao teste num outro computador.';
-$string['pluginname'] = 'Regra de acesso ao teste com bloqueio de sessões simultâneas';
-$string['studentinfo'] = 'Atenção! É proibido mudar de dispositivo durante a tentativa de resposta a este teste. Tenha em atenção que após o início da tentativa de resposta, qualquer ligação a este teste utilizando outros computadores, dispositivos ou navegadores será bloqueada. Não feche a janela do navegador até o fim da tentativa, caso contrário não será capaz de responder a este teste até ao fim.';
-$string['unlockthisattempt'] = 'Permitir ao aluno continuar esta tentativa com outro dispositivo';
+$string['onesession_help'] = 'Se ativar esta opção, os utilizadores só podem continuar a tentativa de resposta ao teste na mesma sessão do navegador. Qualquer tentativa de abrir o mesmo teste noutro computador, dispositivo ou navegador será bloqueada. Poderá ser útil quando quer ter a certeza que ninguém ajuda o aluno abrindo a mesma tentativa de resposta ao teste noutro computador.';
+$string['pluginname'] = 'Regra de acesso com bloqueio de sessões simultâneas';
+$string['privacy:metadata'] = 'O módulo armazena o hash da string usada para identificar a sessão do dispositivo cliente. Embora a string original contenha o endereço IP do cliente e o cabeçalho User-Agent enviado pelo navegador do cliente, o hash não permite extrair estas informações. O hash é automaticamente apagado imediatamente após o fim da sessão do teste.';
+$string['studentinfo'] = 'Atenção! É proibido mudar de dispositivo durante a tentativa de resposta a este teste. Tenha em atenção que após o início da tentativa de resposta, qualquer ligação a este teste utilizando outros computadores, dispositivos ou navegadores será bloqueada. Não feche a janela do navegador até ao fim da tentativa, caso contrário, não será capaz de responder totalmente a este teste.';
+$string['unlockthisattempt'] = 'Permitir ao aluno continuar esta tentativa noutro dispositivo';
 $string['unlockthisattempt_header'] = 'Bloquear sessões simultâneas';
 $string['whitelist'] = 'Redes sem verificação de IP';
-$string['whitelist_desc'] = 'Esta opção tem como objetivo diminuir os falsos positivos quando os utilizadores respondem a testes através de redes móveis, onde o IP pode ser alterado durante a tentativa de resposta. Não é necessário na maioria das situações. Pode indicar uma lista separada por vírgulas de sub-redes (por exemplo: 88.0.0.0/8, 77.77.0.0/16). Se o endereço IP estiver nessas redes, não é verificado. Para desativar totalmente a verificação de IP, pode definir o valor 0.0.0.0/0.';
+$string['whitelist_desc'] = 'Esta opção tem como objetivo diminuir os falsos positivos quando os utilizadores respondem a testes através de redes móveis, onde o IP pode ser alterado durante a tentativa de resposta. Não é necessário na maioria das situações. Pode indicar uma lista separada por vírgulas de sub-redes (por exemplo: 88.0.0.0/8, 77.77.0.0/16). Se o endereço IP estiver nessas redes, não é verificado. Para desativar totalmente a verificação do IP, pode definir como 0.0.0.0/0.';

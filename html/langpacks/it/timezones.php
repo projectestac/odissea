@@ -444,6 +444,7 @@ $string['pacific/gambier'] = 'Oceano Pacifico/Gambier';
 $string['pacific/guadalcanal'] = 'Oceano Pacifico/Guadalcanal';
 $string['pacific/guam'] = 'Oceano Pacifico/Guam';
 $string['pacific/honolulu'] = 'Oceano Pacifico/Honolulu';
+$string['pacific/kanton'] = 'Pacifico/Canton';
 $string['pacific/kiritimati'] = 'Oceano Pacifico/Kiritimati';
 $string['pacific/kosrae'] = 'Oceano Pacifico/Kosrae';
 $string['pacific/kwajalein'] = 'Oceano Pacifico/Kwajalein';

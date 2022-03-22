@@ -102,6 +102,7 @@ $string['instanceeditselfwarning'] = 'Avís:';
 $string['instanceeditselfwarningtext'] = 'Esteu inscrit en aquest curs mitjançant aquest mètode d\'inscripció. Els canvis poden afectar el vostre accés a aquest curs.';
 $string['invalidenrolduration'] = 'Durada de la inscripció no vàlida';
 $string['invalidenrolinstance'] = 'Instància d\'inscripció invàlida';
+$string['invalidrequest'] = 'Petició no vàlida';
 $string['invalidrole'] = 'Rol invàlid';
 $string['manageenrols'] = 'Gestiona els mòduls d\'inscripció';
 $string['manageinstance'] = 'Gestiona';

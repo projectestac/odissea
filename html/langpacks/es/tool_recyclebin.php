@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['alertdeleted'] = '\'{$a->name}\' ha sido borrado.';
 $string['alertemptied'] = 'La papelera de reciclaje ha sido vaciada.';
-$string['alertrestored'] = '\'{$a->name}\' ha sido resturado.';
+$string['alertrestored'] = '\'{$a->name}\' ha sido restaurado.';
 $string['autohide'] = 'Auto ocultar';
 $string['autohide_desc'] = 'Oculta el enlace a la papelera de reciclaje cuando está vacía.';
 $string['categorybinenable'] = 'Activar categoría de la papelera de reciclaje';

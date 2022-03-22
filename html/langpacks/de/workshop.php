@@ -128,6 +128,7 @@ $string['eventassessableuploaded'] = 'Eine Einreichung wurde hochgeladen';
 $string['eventassessmentevaluated'] = 'Beurteilung geprüft';
 $string['eventassessmentevaluationsreset'] = 'Beurteilungsprüfung zurückgesetzt';
 $string['eventassessmentreevaluated'] = 'Beurteilung neu geprüft';
+$string['eventphaseautomaticallyswitched'] = 'Phase automatisch umgeschaltet';
 $string['eventphaseswitched'] = 'Phase gewechselt';
 $string['eventsubmissionassessed'] = 'Einreichung beurteilt';
 $string['eventsubmissionassessmentsreset'] = 'Einreichungsbeurteilungen gelöscht';
