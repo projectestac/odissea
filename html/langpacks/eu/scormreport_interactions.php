@@ -26,10 +26,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Interakzioen txostena';
-$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'SCORMeko interakzioen txostenean galderen laburpena erakustea edo ez';
-$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'SCORMeko interakzioen txostenean erantzunen laburpena erakustea edo ez';
-$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'SCORMeko interakzioen txostenean emaitzen laburpena erakustea edo ez';
-$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'SCORMeko interakzioen txostenean erantzun zuzenen laburpena erakustea edo ez';
+$string['privacy:metadata:preference:scorm_report_interactions_qtext'] = 'SCORMeko interakzioen txostenean galderen laburpena erakustea ala ez';
+$string['privacy:metadata:preference:scorm_report_interactions_resp'] = 'SCORMeko interakzioen txostenean erantzunen laburpena erakustea ala ez';
+$string['privacy:metadata:preference:scorm_report_interactions_result'] = 'SCORMeko interakzioen txostenean emaitzen laburpena erakustea ala ez';
+$string['privacy:metadata:preference:scorm_report_interactions_right'] = 'SCORMeko interakzioen txostenean erantzun zuzenen laburpena erakustea ala ez';
 $string['privacy:metadata:preference:scorm_report_pagesize'] = 'SCORM txostenetan erakutsi beharreko erabiltzaile kopurua';
 $string['questionx'] = '{$a} galdera';
 $string['responsex'] = '{$a} erantzun';

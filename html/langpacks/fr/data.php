@@ -116,7 +116,7 @@ $string['dateentered'] = 'Date de saisie';
 $string['defaultfielddelimiter'] = '(par défaut une virgule)';
 $string['defaultfieldenclosure'] = '(par défaut vide)';
 $string['defaultsortfield'] = 'Champ de tri par défaut';
-$string['delcheck'] = 'Case à cocher pour suppression en lots';
+$string['delcheck'] = 'Case à cocher pour suppression par lots';
 $string['delete'] = 'Supprimer';
 $string['deleteallentries'] = 'Supprimer toutes les fiches';
 $string['deletecomment'] = 'Voulez-vous vraiment supprimer ce commentaire ?';
@@ -396,10 +396,10 @@ $string['unsupportedfieldslist'] = 'Les champs suivants ne peuvent pas être exp
 $string['updatefield'] = 'Modifier un champ existant';
 $string['uploadfile'] = 'Déposer un fichier';
 $string['uploadrecords'] = 'Importer des fiches à partir d\'un fichier';
-$string['uploadrecords_help'] = 'Des fiches peuvent être déposées à partir d\'un fichier texte. Le format du fichier doit être comme suit :
+$string['uploadrecords_help'] = 'Des fiches peuvent être déposées à partir d\'un fichier texte. Le format de ce fichier doit être le suivant :
 
-* chaque ligne du fichier contient une fiche
-* chaque fiche est constituée d\'une série de données, séparées par des virgules (ou d\'autres séparateurs)
+* chaque ligne du fichier contient une fiche ;
+* chaque fiche est constituée d\'une série de données séparées par le caractère de séparation sélectionné ;
 * la première ligne du fichier comprend les noms des champs définissant le format du reste du fichier.  Le délimiteur de champ est un caractère qui entoure chaque champ d\'une fiche, par exemple les guillemets droits. Il peut être laissé vide.';
 $string['url'] = 'URL';
 $string['usedate'] = 'Inclure dans la recherche.';

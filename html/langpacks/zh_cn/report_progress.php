@@ -25,6 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['activityorder'] = '活动顺序';
+$string['allactivitiesandresources'] = '所有活动和资源';
+$string['alphabetical'] = '按字母顺序排列';
+$string['include'] = '包括';
+$string['orderincourse'] = '在课程内订购';
 $string['page-report-progress-index'] = '活动进度报告';
 $string['page-report-progress-user'] = '用户活动进度报告';
 $string['page-report-progress-x'] = '任何活动进度报告';

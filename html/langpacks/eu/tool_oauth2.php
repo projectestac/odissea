@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptrisk'] = 'Ulertzen dut helbide elektronikoaren egiaztapena desgaitzea segurtasun-arazo bat izan daitekeela.';
+$string['acceptrisk_help'] = 'Helbide elektronikoaren egiaztapena desgaitzea segurtasun-arazo bat izan daiteke. Honek egoera egokietan erabiltzaileei beste norbaiten izenean saioa hastea potentzialki ahalbidetu dezake.';
 $string['authconfirm'] = 'Ekintza honek Moodleri autentifikatutako kontuan API sarbide iraunkorra emango dio. Hau Moodlerenak diren fitxategiak kudeatzeko sistemako kontu gisa erabiltzeko pentsatuta dago.';
 $string['authconnected'] = 'Sistemako kontua lineaz kanpoko sarbiderako konektatuta dago orain';
 $string['authnotconnected'] = 'Sistemako kontua ez dago lineaz kanpoko sarbiderako konektatuta';

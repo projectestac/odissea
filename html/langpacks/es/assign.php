@@ -25,9 +25,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activitydate:submissionsdue'] = 'Pendiente:';
-$string['activitydate:submissionsopen'] = 'Abre:';
-$string['activitydate:submissionsopened'] = 'Abiertos:';
+$string['activitydate:submissionsdue'] = 'Cierre:';
+$string['activitydate:submissionsopen'] = 'Apertura:';
+$string['activitydate:submissionsopened'] = 'Apertura:';
 $string['activityoverview'] = 'Hay tareas que requieren atención';
 $string['addattempt'] = 'Permitir otro intento';
 $string['addnewattempt'] = 'Añadir una nueva entrega';

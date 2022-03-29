@@ -401,10 +401,10 @@ $string['unsupportedfieldslist'] = 'Folgenden Felder können nicht exportiert we
 $string['updatefield'] = 'Bestehendes Feld aktualisieren';
 $string['uploadfile'] = 'Datei hochladen';
 $string['uploadrecords'] = 'Datensätze als Datei hochladen';
-$string['uploadrecords_help'] = 'Einträge können als Textdatei hochgeladen werden, wobei das Dateiformat folgendermaßen strukturiert sein muss:
+$string['uploadrecords_help'] = 'Einträge können über eine Textdatei importiert werden. Die Textdatei sollte folgendes Format haben:
 
-* Jede Zeile der Datei beinhaltet einen neuen Datensatz
-* Jeder Datensatz besteht aus einer Reihe von Daten, die durch Kommas (oder andere Trennzeichen) getrennt sind
+* Jede Zeile enthält genau einen Datensatz
+* Jeder Datensatz enthält eine Serie von Daten, getrennt durch das gewählte Trennzeichen
 * Der erste Datensatz enthält eine Liste von Feldnamen, die das Format der restlichen Datei festlegen
 
 Die Feldbegrenzung ist ein Zeichen, dass jedes Feld im jedem Datensatz zusätzlich abgrenzt. Normalerweise ist es nicht gesetzt.';

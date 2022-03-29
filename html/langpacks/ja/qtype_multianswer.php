@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = '私は問題を編集済みとして�
 $string['confirmsave'] = '{$a} を確認して保存する';
 $string['correctanswer'] = '正解';
 $string['correctanswerandfeedback'] = '正解およびフィードバック';
+$string['corruptedquestion'] = 'この問題は破損しているため、あなたのシステムに存在しないサブ問題が含まれています';
 $string['decodeverifyquestiontext'] = '問題テキストをデコードおよび確認する';
 $string['invalidmultianswerquestion'] = '無効な穴埋め問題 (Cloze) です ({$a})。';
 $string['layout'] = 'レイアウト';
@@ -38,6 +39,7 @@ $string['layoutmultiple_vertical'] = 'チェックボックスの縦のカラム
 $string['layoutselectinline'] = 'テキスト内のインラインのドロップダウンメニュー';
 $string['layoutundefined'] = 'レイアウト未定義';
 $string['layoutvertical'] = 'ラジオボタンの縦のカラム';
+$string['missingsubquestion'] = 'このサブ問題はシステムに存在していないため表示できません。';
 $string['nooptionsforsubquestion'] = '問題部分 # {$a->sub} のオプションを取得できません (question->id={$a->id})。';
 $string['noquestions'] = '穴埋め問題 (Cloze) 「 <strong>{$a}</strong> 」に問題が含まれていません。';
 $string['pleaseananswerallparts'] = '問題のすべての部分に答えてください。';

@@ -127,6 +127,7 @@ $string['review_on_completion'] = 'Os participantes podem rever as suas tentativ
 $string['review_user_attempts'] = 'Ver tentativas do utilizador ({$a})';
 $string['score'] = 'Pontuação';
 $string['score_out_of'] = '{$a->rawscore} em {$a->maxscore}';
+$string['search:activity'] = 'H5P - informação da atividade';
 $string['startdate'] = 'Data/hora de início';
 $string['statement_received'] = 'Declaração xAPI recebida';
 $string['totalscore'] = 'Pontuação total';

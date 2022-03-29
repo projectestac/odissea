@@ -25,6 +25,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['acceptrisk'] = 'I understand that disabling email verification can be a security issue';
+$string['acceptrisk_help'] = 'Disabling email verification can be a security issue. As it potentially allows users to authenticate as another in the right circumstances.';
 $string['authconfirm'] = 'This action will grant permanent API access to Moodle for the authenticated account. This is intended to be used as a system account for managing files owned by Moodle.';
 $string['authconnected'] = 'The system account is now connected for offline access';
 $string['authnotconnected'] = 'The system account was not connected for offline access';

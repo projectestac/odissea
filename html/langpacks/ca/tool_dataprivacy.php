@@ -74,5 +74,6 @@ $string['purposeslist'] = 'Llista de finalitats de les dades';
 $string['retentionperiod'] = 'Període de retenció';
 $string['retentionperiodnotdefined'] = 'No s\'ha definit cap període de retenció';
 $string['retentionperiodzero'] = 'Sense període de retenció';
+$string['role'] = 'Rol';
 $string['sensitivedatareasons_help'] = 'Escolliu una o més raons aplicables que eximeixin de la prohibició de processar informació personal sensible lligada a aquesta finalitat. Per a més informació, vegeu l\'<a href="https://gdpr-info.eu/art-9-gdpr/" target="_blank">article 9.2 de la GDPR</a>';
 $string['setdefaults'] = 'Estableix valors per defecte';

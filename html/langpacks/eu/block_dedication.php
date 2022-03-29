@@ -65,4 +65,4 @@ $string['sincerow'] = 'Noiztik';
 $string['submit'] = 'Kalkulatu';
 $string['torow'] = 'Noiz arte';
 $string['totaldedication'] = '<strong>Dedikazioa guztira:</strong> {$a}';
-$string['userdedication'] = '<em>{$a}</em>-(r)en ikastaroko dedikazioren zehaztasunak.';
+$string['userdedication'] = '<em>{$a}</em>(r)en ikastaroko dedikazioren zehaztasunak.';

@@ -161,7 +161,7 @@ $string['updateremfailfield'] = 'LDAP existitzen ez den eremuarekin eguneratzeak
 $string['updateusernotfound'] = 'Ezin da erabiltzailea aurkitu kanpotik eguneratzean. Xehetasunak jarraian: bilaketaren oinarria: \'{$a->userdn}\'; bilaketa-iragazkia \'(objectClass=*)\'; bilaketa-atributuak: {$a->attribs}';
 $string['user_activatenotsupportusertype'] = 'auth: LDAPeko user_activate()-ek ez du erabiltzaile mota hau onartzen: {$a}';
 $string['user_disablenotsupportusertype'] = 'auth: LDAPeko user_activate()-ek ez du erabiltzaile mota hau onartzen: {$a}';
-$string['useracctctrlerror'] = 'Errorea {$a}-(r)entzako userAccountControl eskuratzean';
+$string['useracctctrlerror'] = 'Errorea {$a}(r)entzako userAccountControl eskuratzean';
 $string['userentriestoadd'] = 'Gehitzeko erabiltzaile-sarrerak: {$a}';
 $string['userentriestoremove'] = 'Ezabatzeko erabiltzaile-sarrerak: {$a}';
 $string['userentriestorevive'] = 'Berreskuratzeko erabiltzaile-sarrerak: {$a}';

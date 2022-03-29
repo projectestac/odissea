@@ -472,7 +472,85 @@ class api {
         if ($copy2cb == self::COPY2CBYESWITHLINK || $copy2cb == self::COPY2CBYESWITHOUTLINK) {
             // The file should be uploaded to the content bank.
             $cb = new \core_contentbank\contentbank();
+
+            // XTEC ************ MODIFICAT - Fix for teacher role cannot edit migrated H5P packages
+            //                               https://github.com/moodlehq/moodle-tool_migratehvp2h5p/issues/43
+            // 2022.03.24 @aginard
+
+            // Get the author of the HVP activity. As it can't be obtained directly from hvp tables, it will be taken from logs.
+            global $DB, $USER;
+            $authorid = null;
+
+            $manager = get_log_manager(true);
+            $stores = $manager->get_readers();
+            $store = $stores['logstore_standard'];
+
+            if (!empty($store)) {
+                $select = "component = 'core' AND action = 'created' AND target = 'course_module' AND objectid = :objectid AND
+                        courseid = :courseid";
+                $params = ['objectid' => $hvp->cm->id, 'courseid' => $hvp->course];
+                $creationlog = $store->get_events_select($select, $params, 'id DESC', 0, 1);
+                if (!empty($creationlog)) {
+                    $creationlog = reset($creationlog);
+                    $authorid = $creationlog->get_data()['userid'];
+                }
+            }
+
+            if (empty($authorid)) {
+                $coursecontext = context_course::instance($hvp->course);
+
+                // If this HVP uses any files, fetch any userids encountered.
+                $fileusersql = "SELECT DISTINCT f.userid AS id
+                 FROM {hvp} h
+                     INNER JOIN {course_modules} cm ON cm.instance = h.id
+                     INNER JOIN {modules} m ON m.id = cm.module
+                     INNER JOIN {context} cx ON cx.instanceid = cm.id
+                     INNER JOIN {files} f ON f.contextid = cx.id
+                 WHERE m.name = 'hvp' AND h.id = :id
+                     AND cx.contextlevel = " . CONTEXT_MODULE . " AND f.userid IS NOT NULL
+                 GROUP BY f.userid ORDER BY f.userid";
+
+                $fileuser = $DB->get_recordset_sql($fileusersql, ['id' => $hvp->id]);
+
+                // Use the first user that can also edit their own content bank items.
+                foreach ($fileuser as $u) {
+                    if (has_capability('moodle/contentbank:manageowncontent', $coursecontext, $u->id)) {
+                        $authorid = $u->id;
+                        break;
+                    }
+                }
+            }
+
+            // Failing that, grab the first editingteacher (can manage own content bank items)
+            if (empty($authorid)) {
+                $editors = get_users_by_capability($coursecontext, 'moodle/contentbank:manageowncontent', 'u.id');
+                if (!empty($editors)) {
+                    $authorid = array_keys($editors)[0];
+                }
+            }
+
+            // Failing that, fall back to a coursecreator/manager (can manage any content bank items).
+            if (empty($authorid)) {
+                $creators = get_users_by_capability($coursecontext, 'moodle/contentbank:manageanycontent', 'u.id');
+                if (!empty($creators)) {
+                    $authorid = array_keys($editors)[0];
+                }
+            }
+
+            // If all else fails, fall back to the user running the migration.
+            if (empty($authorid)) {
+                $authorid = $USER->id;
+            }
+
+            // Create the content in the content bank.
+            $content = $cb->create_content_from_file($coursecontext, $authorid, $file);
+
+            // ************ ORIGINAL
+            /*
             $content = $cb->create_content_from_file($coursecontext, $USER->id, $file);
+            */
+            // ************ FI
+
             if ($hvp->name) {
                 // Set name in content bank in order to make easier to find it later.
                 $content->set_name($hvp->name);

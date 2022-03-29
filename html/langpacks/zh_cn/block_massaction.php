@@ -25,5 +25,4 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['allitems'] = '选择全部：';
 $string['selectall'] = '全选';

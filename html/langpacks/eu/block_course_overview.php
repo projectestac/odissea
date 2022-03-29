@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['activityoverview'] = 'Zain dituzu hainbat {$a}';
+$string['activityoverview'] = 'Zure arreta behar duten hainbat {$a} duzu';
 $string['addfavourite'] = 'Gehitu gogokoa';
 $string['alwaysshowall'] = 'Beti erakutsi guztiak';
 $string['collapseall'] = 'Tolestu ikastaro-zerrenda guztiak';

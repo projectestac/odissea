@@ -139,7 +139,7 @@ $string['categories'] = 'Kategorien';
 $string['category'] = 'Kategorie';
 $string['categoryedit'] = 'Kategorie bearbeiten';
 $string['categoryname'] = 'Name der Kategorie';
-$string['categorytotal'] = 'Kategorie gesamt';
+$string['categorytotal'] = 'Summe für die Kategorie';
 $string['categorytotalfull'] = '{$a->category} gesamt';
 $string['categorytotalname'] = 'Name für Gesamtergebnis der Kategorie';
 $string['changedefaults'] = 'Grundeinstellungen ändern';
@@ -204,7 +204,7 @@ $string['editscale'] = 'Skala bearbeiten';
 $string['edittree'] = 'Einstellungen';
 $string['editverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} bearbeiten';
 $string['enableajax'] = 'Ajax aktivieren';
-$string['enableajax_help'] = 'Ajax-Funktionalität für die Bewerterübersicht bereitstellen, um allgemeine Operationen zu vereinfachen und zu beschleunigen. Ajax arbeitet mit JavaScript, das deswegen anwenderseits im Webbrowser aktiviert sein muss.';
+$string['enableajax_help'] = 'Ajax-Funktionalität für die Bewertungsübersicht bereitstellen, um allgemeine Operationen zu vereinfachen und zu beschleunigen. Ajax arbeitet mit JavaScript, das deswegen anwenderseits im Webbrowser aktiviert sein muss.';
 $string['enableoutcomes'] = 'Lernziele aktivieren';
 $string['enableoutcomes_help'] = 'Wenn die Option aktiviert ist, können Bewertungsaspekte mit einer oder mehreren Bewertungsskalen bewertet werden, die mit Aussagen eines Lernziels verknüpft sind.';
 $string['encoding'] = 'Kodierung';
@@ -280,7 +280,7 @@ $string['generalsettings'] = 'Allgemeines';
 $string['grade'] = 'Bewertung';
 $string['grade_help'] = 'Die Bewertung, die diese Person für ihre Arbeit erhält.';
 $string['gradeadministration'] = 'Bewertungsverwaltung';
-$string['gradealreadyupdated'] = '{$a} Bewertungen wurden nicht importiert, da diese Bewertungen älter waren als die in der Bewerterübersicht vorhandenen. Um den Import dennoch fortzuführen, verwenden Sie die \'Import erzwingen\'-Funktion.';
+$string['gradealreadyupdated'] = '{$a} Bewertungen wurden nicht importiert, da diese Bewertungen älter waren als die in der Bewertungsübersicht vorhandenen. Um den Import dennoch fortzuführen, verwenden Sie die \'Import erzwingen\'-Funktion.';
 $string['gradeanalysis'] = 'Bewertungsanalyse';
 $string['gradebook'] = 'Bewertungen';
 $string['gradebookcalculationsfixbutton'] = 'Bewertungsänderungen akzeptieren und Berechnungsfehler korrigieren';
@@ -300,7 +300,7 @@ $string['gradecategoryonmodform_help'] = 'Die Einstellung legt fest in welcher K
 $string['gradecategorysettings'] = 'Bewertungskategorie-Einstellungen';
 $string['gradedisplay'] = 'Bewertungsanzeige';
 $string['gradedisplaytype'] = 'Bewertungsanzeige-Typ';
-$string['gradedisplaytype_help'] = 'Diese Einstellung legt fest, wie Bewertungen in der Bewerterübersicht und in Nutzerberichten angezeigt werden.
+$string['gradedisplaytype_help'] = 'Diese Einstellung legt fest, wie Bewertungen in der Bewertungsübersicht und in Nutzendenberichten angezeigt werden.
 
 * Buchstabe - Buchstaben (A, B, C,..) oder Wörter werden angezeigt, um eine Auswahl an Bewertungen zu repräsentieren
 * Prozent - relativ zum höchsten/niedrigsten Wert
@@ -371,7 +371,7 @@ $string['gradepublishing_help'] = 'Aktiviert die Export und Importfunktion: Expo
 Das Veröffentlichen von Bewertungen ist eine Möglichkeit, Bewertungen über eine URL zu importieren und zu exportieren, ohne bei Moodle angemeldet zu sein. Wenn diese Option aktiviert ist, werden für Administrator/innen und Nutzer/innen mit der Berechtigung zum Veröffentlichen von Bewertungen (meist nur Benutzer mit der Managerrolle) die Einstellungen zum Veröffentlichen von Bewertungsexporten angeboten.';
 $string['gradepublishinglink'] = 'Herunterladen: {$a}';
 $string['gradereport'] = 'Bewertungsbericht';
-$string['graderreport'] = 'Bewerterübersicht';
+$string['graderreport'] = 'Bewertungsübersicht';
 $string['grades'] = 'Bewertungen';
 $string['gradesforuser'] = 'Bewertung für {$a->user}';
 $string['gradesmoduledeletionpendingwarning'] = 'Warnung: Aktivitätslöschung in Bearbeitung! Einige Bewertungen werden dabei entfernt.';
@@ -427,14 +427,15 @@ $string['idnumbers'] = 'ID-Nummern';
 $string['ignore'] = 'Ignorieren';
 $string['import'] = 'Import';
 $string['importcsv'] = 'CSV importieren';
-$string['importcsv_help'] = 'Bewertungen können aus einer CSV-Datei im folgenden Format importiert werden:
+$string['importcsv_help'] = 'Bewertungen können über eine Textdatei importiert werden. Die Textdatei sollte folgendes Format haben:
 
-* Jede Zeile enthält einen Datensatz
-* Jeder Datensatz enthält eine Reihe von Daten, die durch Kommas oder ein anderes Trennzeichen abgetrennt werden
-* Die erste Zeile enthält eine Liste der genutzten Feldnamen und definieren die Struktur für die folgenden Datensätze
-* Ein Feld mit dem Nutzernamen, der ID-Nummer oder der E-Mail-Adresse ist erforderlich, im die Bewertungen dem Nutzer zuzuordnen.
+* Jede Zeile enthält einen genau Datensatz
+* Jeder Datensatz enthält eine Serie von Daten, getrennt durch das gewählte Trennzeichen
+* Die erste Zeile enthält eine Liste der Feldnamen und definiert die Struktur der übrigen Datensätze
+* Die Feldnamen müssen in der englischen Bezeichnung angegeben sein
+* Ein Feld mit dem Nutzernamen, der ID-Nummer oder der E-Mail-Adresse ist erforderlich, im die Bewertungen den Nutzer/innen richtig zuzuordnen.
 
-Eine Datei mit der richtigen Struktur kann eingesehen werden indem man zunächst einige Bewertungen exportiert. Diese Datei kann dann bearbeitet und als CSV-Datei gespeichert werden.';
+Eine Datei mit der richtigen Struktur wird erzeugt, wenn Sie zunächst einige Bewertungen eintragen und exportieren. Diese Datei kann dann bearbeitet und wieder als CSV-Datei hochgeladen werden.';
 $string['importcustom'] = 'Import als individuelle Lernziele (nur für diesen Kurs)';
 $string['importdata'] = 'Daten';
 $string['importdata_help'] = 'Noten können direkt aus einer OpenDocument- oder Excel-Tabelle mit folgendem Format eingefügt werden:
@@ -632,7 +633,7 @@ $string['overallaverage'] = 'Gesamtdurchschnitt';
 $string['overridden'] = 'Überschrieben';
 $string['overridden_help'] = 'Wenn diese Option aktiviert ist, kann die Bewertung nicht mehr innerhalb der zugehörigen Aktivität geändert werden.
 
-Wenn eine Bewertung in der Bewerterübersicht bearbeitet wird, wird die Option Überschrieben automatisch angekreuzt. Sie kann jedoch deaktiviert werden, um eine Änderung der Bewertung über die zugehörige Aktivität zu ermöglichen.';
+Wenn eine Bewertung in der Bewertungsübersicht bearbeitet wird, wird die Option Überschreiben automatisch angekreuzt. Sie kann jedoch deaktiviert werden, um eine Änderung der Bewertung über die zugehörige Aktivität zu ermöglichen.';
 $string['overriddennotice'] = 'Die endgültige Bewertung zu dieser Aktivität wurde manuell bearbeitet.';
 $string['overridecat'] = 'Zulassen, dass Kategoriebewertungen manuell überschrieben werden können.';
 $string['overridecat_help'] = 'Das Deaktivieren dieser Einstellung verhindert, dass Nutzer Kategoriebewertungen überschreiben können.';
@@ -710,7 +711,7 @@ $string['quickfeedback'] = 'Schnelles Feedback';
 $string['quickgrading'] = 'Schnelle Bewertung';
 $string['quickgrading_help'] = 'Wenn diese Option aktiviert ist, erscheint bei eingeschalteter Bearbeitung ein Eingabefeld mit einem gestrichelten Rand in jeder Zelle. Damit können mehrere Bewertungen auf einer Seite schnell eingegeben werden. Mit einem Klick auf den Aktualisierungsbutton werden alle Bewertungen auf einmal abgespeichert.
 
-Beachten Sie, dass bei der Eingabe einer Bewertung in der Bewerterübersicht ein Übersteuerungsflag gesetzt wird, so dass die Bewertung nicht mehr innerhalb der zugehörigen Aktivität geändert werden kann.';
+Beachten Sie, dass bei der Eingabe einer Bewertung in der Bewertungsübersicht ein Übersteuerungsflag gesetzt wird, so dass die Bewertung nicht mehr innerhalb der zugehörigen Aktivität geändert werden kann.';
 $string['range'] = 'Bereich';
 $string['rangedecimals'] = 'Dezimalstellen für Bewertungsbereiche';
 $string['rangedecimals_help'] = 'Zahl der Dezimalstellen, um die Spannbreite der Ergebnisse anzuzeigen';
@@ -777,7 +778,7 @@ $string['showaverage_help'] = 'Spalte mit Durchschnittswertung anzeigen?
 
 Beachten Sie, dass die Teilnehmer/innen fremde Bewertungen abschätzen können, wenn der Durchschnitt aus einer kleinen Anzahl berechnet wird. Aus Performancegründen ist der Durchschnitt ungenau, wenn er von versteckten Elementen abhängig ist.';
 $string['showaverages'] = 'Spaltendurchschnitt anzeigen';
-$string['showaverages_help'] = 'Wenn die Option aktiviert ist, wird die Bewerterübersicht eine zusätzliche Zeile aufweisen, die den Durchschnitt für jede Kategorie und jeden Bewertungsaspekt enthält.';
+$string['showaverages_help'] = 'Wenn die Option aktiviert ist, wird die Bewertungsübersicht eine zusätzliche Zeile aufweisen, die den Durchschnitt für jede Kategorie und jeden Bewertungsaspekt enthält.';
 $string['showcalculations'] = 'Berechnungen anzeigen';
 $string['showcalculations_help'] = 'Wenn diese Option aktiviert ist, wird bei eingeschalteter Bearbeitung für jeden Bewertungsaspekt ein Taschenrechnersymbol angezeigt. Damit ist erkennbar, dass der Bewertungsaspekt berechnet werden kann oder berechnet wurde.';
 $string['showcontributiontocoursetotal'] = 'Beiträge zum gesamten Kurs anzeigen';
@@ -814,15 +815,15 @@ $string['showpercentage_help'] = 'Prozentwerte für jede Bewertung anzeigen?';
 $string['showquickfeedback'] = 'Schnelles Feedback anzeigen';
 $string['showquickfeedback_help'] = 'Wenn diese Option aktiviert ist, erscheint bei eingeschalteter Bearbeitung ein Eingabefeld mit einem gestrichelten Rand in jeder Zelle. Damit können mehrere Feedbacks auf einer Seite schnell eingegeben werden. Mit einem Klick auf den Aktualisierungsbutton werden alle Feedbacks auf einmal abgespeichert.
 
-Beachten Sie, dass bei der Eingabe von Feedback in der Bewerterübersicht ein Übersteuerungsflag gesetzt wird, so dass das Feedback nicht mehr innerhalb der zugehörigen Aktivität geändert werden kann.';
+Beachten Sie, dass bei der Eingabe von Feedback in der Bewertungsübersicht ein Übersteuerungsflag gesetzt wird, so dass das Feedback nicht mehr innerhalb der zugehörigen Aktivität geändert werden kann.';
 $string['showrange'] = 'Spannbreite anzeigen';
 $string['showrange_help'] = 'Spalte für die Spannbreite der Ergebnisse anzeigen?';
 $string['showranges'] = 'Stufen anzeigen';
-$string['showranges_help'] = 'Wenn diese Option aktiviert ist, wird die Bewerterübersicht eine zusätzliche Zeile aufweisen, die den Bewertungsbereich für jede Kategorie und jeden Bewertungsaspekt enthält.';
+$string['showranges_help'] = 'Wenn diese Option aktiviert ist, wird die Bewertungsübersicht eine zusätzliche Zeile aufweisen, die den Bewertungsbereich für jede Kategorie und jeden Bewertungsaspekt enthält.';
 $string['showrank'] = 'Rang anzeigen';
 $string['showrank_help'] = 'Rangposition für jeden Aspekt anzeigen?';
 $string['showuserimage'] = 'Nutzerbilder anzeigen';
-$string['showuserimage_help'] = 'Nutzerbild neben dem Namen in der Bewerterübersicht anzeigen';
+$string['showuserimage_help'] = 'Nutzerbild neben dem Namen in der Bewertungsübersicht anzeigen';
 $string['showverbose'] = '{$a->category} {$a->itemmodule} {$a->itemname} anzeigen';
 $string['showweight'] = 'Gewichtungen anzeigen';
 $string['showweight_help'] = 'Spalte für die Bewertungsgewichtung anzeigen?';
@@ -839,7 +840,7 @@ $string['stats'] = 'Statistik';
 $string['statslink'] = 'Statistik';
 $string['student'] = 'Teilnehmer/in';
 $string['studentsperpage'] = 'Teilnehmer/innen pro Seite';
-$string['studentsperpage_help'] = 'Diese Einstellung legt die Anzahl der Teilnehmer/innen fest, die pro Seite in der Bewerterübersicht gezeigt werden.';
+$string['studentsperpage_help'] = 'Diese Einstellung legt die Anzahl der Teilnehmer/innen fest, die pro Seite in der Bewertungsübersicht gezeigt werden.';
 $string['studentsperpagereduced'] = 'Verringert die Höchstzahl der Teilnehmenden pro Seite von {$a->originalstudentsperpage} auf {$a->studentsperpage}. Die PHP Einstellung max_input_vars sollte auf  {$a->maxinputvars} gesetzt werden.';
 $string['subcategory'] = 'Kategorie normal';
 $string['submissions'] = 'Einträge';
@@ -880,7 +881,7 @@ $string['usepercent'] = 'Prozentwerte verwenden';
 $string['user'] = 'Nutzer/in';
 $string['userenrolmentsuspended'] = 'Nutzereinschreibung gesperrt';
 $string['userfields_show'] = 'Nutzerfelder anzeigen';
-$string['userfields_show_help'] = 'Diese Option legt fest, ob zusätzliche Nutzerfelder wie z.B. die E-Mail-Adresse in der Bewerterübersicht angezeigt werden. Welche Felder angezeigt werden, wird über die Einstellung showuseridentity gesteuert.';
+$string['userfields_show_help'] = 'Diese Option legt fest, ob zusätzliche Nutzerfelder wie z.B. die E-Mail-Adresse in der Bewertungsübersicht angezeigt werden. Welche Felder angezeigt werden, wird über die Einstellung showuseridentity gesteuert.';
 $string['usergrade'] = 'Nutzer/in {$a->fullname} ({$a->useridnumber}) mit Wert {$a->gradeidnumber}';
 $string['userid'] = 'Nutzer-ID';
 $string['useridnumberwarning'] = 'Nutzer/innen ohne ID-Nummer sind vom Export ausgeschlossen, da sie nicht importiert werden können.';

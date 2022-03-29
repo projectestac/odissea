@@ -27,6 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['all'] = '所有组件';
 $string['component'] = '组件';
+$string['core'] = '核心';
 $string['coresubsystem'] = '子系统({$a})';
 $string['documentation'] = '文档';
 $string['example'] = '实例';

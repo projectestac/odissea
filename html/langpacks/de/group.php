@@ -45,7 +45,7 @@ $string['creategrouping'] = 'Gruppierung anlegen';
 $string['creategroupinselectedgrouping'] = 'Gruppe in der Gruppierung anlegen';
 $string['createingrouping'] = 'Gruppierung von automatisch angelegten Gruppen';
 $string['createorphangroup'] = 'Verwaiste Gruppe';
-$string['csvdelimiter'] = 'CSV-Trenner';
+$string['csvdelimiter'] = 'CSV-Trennzeichen';
 $string['databaseupgradegroups'] = 'Die Gruppenversion ist {$a}.';
 $string['defaultgrouping'] = 'Standard für Gruppierung';
 $string['defaultgroupingname'] = 'Gruppierung';
@@ -136,14 +136,15 @@ $string['groupsvisible'] = 'Sichtbare Gruppen';
 $string['grouptemplate'] = 'Gruppe @';
 $string['hidepicture'] = 'Bild verbergen';
 $string['importgroups'] = 'Gruppen importieren';
-$string['importgroups_help'] = 'Gruppen können als Textdatei importiert werden, die folgendermaßen formatiert wird:
+$string['importgroups_help'] = 'Gruppen können über eine Textdatei angelegt werden. Die Textdatei sollte folgendes Format haben:
 
-* Jede Zeile enthält genau einen Datensatz
-* Jeder Datensatz ist eine kommagetrennte Datenserie
-* Der erste Datensatz enthält alle Felder, die das Format der übrigen Datei festlegen
+* Jede Zeile enthält einen genau Datensatz
+* Jeder Datensatz enthält eine Serie von Daten, getrennt durch das gewählte Trennzeichen
+* Die erste Zeile enthält eine Liste der Feldnamen und definiert die Struktur der übrigen Datensätze
+* Die Feldnamen müssen in der englischen Bezeichnung angegeben sein
 * Notwendiges Feld ist groupname (Gruppenname)
 * Optionale Felder sind groupidnumber (Gruppen-ID), description (Beschreibung), enrolmentkey (Gruppenschlüssel), groupingname (Gruppierungsname), enablemessaging (Mitteilungen aktivieren)
-* Die Felder müssen mit den englischen Bezeichnungen angegeben sein';
+* Die Felder müssen in der englischen Bezeichnung angegeben sein';
 $string['includeonlyactiveenrol'] = 'Nur aktive Einschreibungen einbeziehen';
 $string['includeonlyactiveenrol_help'] = 'Diese Option legt fest, dass gesperrte Nutzer/innen keiner Gruppe zugeteilt werden.';
 $string['javascriptrequired'] = 'Diese Seite benötigt JavaScript.';

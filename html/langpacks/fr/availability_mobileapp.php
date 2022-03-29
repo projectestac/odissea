@@ -25,9 +25,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['description'] = 'Exiger que les étudiants utilisent (ou non) l\'application pour Mobile.';
+$string['description'] = 'Nécessite que les étudiants utilisent (ou non) l\'application pour Mobile.';
 $string['label_access'] = 'Type d\'accès :';
 $string['pluginname'] = 'Restriction par application Mobile';
+$string['privacy:metadata'] = 'Le plugin Restriction par application Mobile n\'enregistre aucune donnée personnelle.';
 $string['requires_app'] = 'Accès par l\'application Mobile';
 $string['requires_notapp'] = 'Accès SANS utiliser l\'application Mobile';
 $string['title'] = 'Application Mobile';

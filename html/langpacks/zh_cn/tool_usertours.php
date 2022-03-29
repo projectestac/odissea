@@ -44,9 +44,16 @@ $string['tour1_title_customisation'] = '定制';
 $string['tour2_title_customisation'] = '定制';
 $string['tour3_title_overview'] = '课程概览';
 $string['tour4_title_starred'] = '带星号标记的';
+$string['tour_activityinfo_activity_student_content'] = '活动页面上显示活动日期以及完成活动的方法。';
+$string['tour_activityinfo_activity_student_title'] = '新增：活动信息';
 $string['tour_activityinfo_activity_teacher_content'] = '现在，每个活动页面（也可选择在课程页面上）为学生显示活动日期和完成条件。
 
 对于需要学生手动将活动标记为已完成的活动，活动页面上会显示“标记为已完成”按钮。';
+$string['tour_activityinfo_activity_teacher_title'] = '新增：活动信息';
+$string['tour_activityinfo_course_student_content'] = '活动日期和/或完成活动的方法显示在课程页面上。';
+$string['tour_activityinfo_course_student_title'] = '新增：活动信息';
+$string['tour_activityinfo_course_teacher_content'] = '新的课程设置 "显示完成条件 "和 "显示活动日期 "使您能够选择是否在课程页面上为学生显示活动完成条件（如果设置）和/或日期。';
+$string['tour_activityinfo_course_teacher_title'] = '新增：活动信息';
 $string['tourlist_explanation'] = '您可以根据您的喜好创建尽可能多的导航，并为Moodle的不同部分提供支持。每一页只能创建一个导航。';
 $string['tours'] = '导航';
 $string['usertours'] = '用户导航';

@@ -127,6 +127,7 @@ $string['review_on_completion'] = 'المشاركون يمكنهم مراجعة 
 $string['review_user_attempts'] = 'معاينة محاولات المستخدم ({$a})';
 $string['score'] = 'الدرجة';
 $string['score_out_of'] = '{$a->rawscore} من أصل {$a->maxscore}';
+$string['search:activity'] = 'H5P - معلومات النشاط';
 $string['startdate'] = 'تاريخ البدء';
 $string['statement_received'] = 'عبارة xAPI تم تلقيها';
 $string['totalscore'] = 'الدرجة الإجمالية';

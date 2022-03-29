@@ -73,9 +73,9 @@ $string['courseupdated'] = 'Kurs aktualisiert';
 $string['createall'] = 'Alle Kurse anlegen, Kurznamen bei Bedarf inkrementieren';
 $string['createnew'] = 'Neue Kurse anlegen und vorhandene überspringen';
 $string['createorupdate'] = 'Neue Kurse anlegen oder vorhandene aktualisieren';
-$string['csvdelimiter'] = 'CSV-Trenner';
-$string['csvdelimiter_help'] = 'Trennzeichen der csv-Datei';
-$string['csvfileerror'] = 'Es tritt ein Fehler mit dem CSV-Format auf. Prüfen Sie die Anzahl der Kopfzeilen- und Inhaltsspalten. Überprüfen Sie auch die Trennzeichen und das Encoding: {$a}';
+$string['csvdelimiter'] = 'CSV-Trennzeichen';
+$string['csvdelimiter_help'] = 'Trennzeichen, das die Datenfelder in einem Datensatz von einander abgrenzt.';
+$string['csvfileerror'] = 'Fehler in der CSV-Datei. Überprüfen Sie bitte, ob die Anzahl der Überschriften und Spalten übereinstimmt und ob das Trennzeichen und die Dateikodierung korrekt sind. {$a}';
 $string['csvline'] = 'Zeile';
 $string['customfieldinvalid'] = 'Das benutzerdefinierte Feld \'{$a}\' ist leer oder enthält ungültige Daten';
 $string['defaultvalues'] = 'Standardwerte für Kurseinstellungen';
@@ -132,11 +132,12 @@ $string['updateonly'] = 'Nur vorhandene Kurse aktualisieren';
 $string['updatewithdataonly'] = 'Nur mit CSV-Daten aktualisieren';
 $string['updatewithdataordefaults'] = 'Mit CSV-Daten und Standardwerten aktualisieren';
 $string['uploadcourses'] = 'Kursliste hochladen';
-$string['uploadcourses_help'] = 'Kurse können mit Textdateien durch Upload erzeugt werden. Das Dateiformat sollte wie folgt strukturiert sein.
+$string['uploadcourses_help'] = 'Kurse können als Textdatei angelegt werden. Die Textdatei sollte folgendes Format haben:
 
-* Jede Zeile enthält einen Datensatz.
-* Jeder Datensatz besteht aus einer Anzahl von Daten, die mit Kommas (oder einem anderen Trennzeichen) abgetrennt werden.
-* Die erste Zeile enthält die Feldnamen. Diese definieren die Struktur der folgenden Zeilen.
-* Erforderliche Feldnamen sind: shortname, fullname, summary und category (Diese werden nicht übersetzt.)';
+* Jede Zeile enthält genau einen Datensatz
+* Jeder Datensatz enthält eine Serie von Daten, getrennt durch das gewählte Trennzeichen
+* Die erste Zeile enthält eine Liste der Feldnamen und definiert die Struktur der übrigen Datensätze
+* Die Feldnamen müssen in der englischen Bezeichnung angegeben sein
+* Notwendige Feldnamen sind: shortname, fullname, summary und category';
 $string['uploadcoursespreview'] = 'Vorschau';
 $string['uploadcoursesresult'] = 'Ergebnis';

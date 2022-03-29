@@ -40,7 +40,6 @@ $string['attemptquestion_num'] = '#';
 $string['attemptquestion_rightwrong'] = 'Correcto/errado';
 $string['attemptsallowed'] = 'Tentativas Permitidas';
 $string['attemptstate'] = 'Estado da tentativa';
-$string['backtomainreport'] = 'Voltar para os Relatórios principais';
 $string['bestscore'] = 'Melhor Resultado';
 $string['browsersecurity'] = 'Segurança do navegador';
 $string['downloadcsv'] = 'Descarregar CSV';

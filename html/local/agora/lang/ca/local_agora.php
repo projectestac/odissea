@@ -45,3 +45,6 @@ $string['environment_url_desc'] = 'Si està activada, es farà el WSDL per envia
 $string['clean_adware'] = 'Neteja Adware';
 $string['detect_adware'] = 'Detecta Adware';
 $string['messagehistoryfull'] = 'Tots els missatges';
+
+// H5P
+$string['hvpdisabled'] = 'L\'activitat «HVP - Contingut interactiu» està inhabilitada. Utilitzeu l\'activitat «H5P» en el seu lloc.';

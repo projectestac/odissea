@@ -49,7 +49,7 @@ $string['expirymessageenrolledbody'] = 'Kaixo, {$a->user}:
 
 Mezu hau \'{$a->course}\' ikastaroan zure matrikula {$a->timeend} datan amaituko dela jakinarazteko da.
 
-Laguntzarik behar baduzu, jarri harremanetan {$a->enroller}-(r)ekin.';
+Laguntzarik behar baduzu, jarri harremanetan {$a->enroller}(r)ekin.';
 $string['expirymessageenrolledsubject'] = 'Matrikulazio-amaieraren jakinarazpena';
 $string['expirymessageenrollerbody'] = '\'{$a->course}\' ikastaroko matrikulazioa hurrengo {$a->threshold} iraungiko da hurrengo erabiltzaileentzat:
 

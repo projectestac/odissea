@@ -228,7 +228,7 @@ $string['exportformatoptions'] = 'Opções de formato de exportação';
 $string['exportonlyactive'] = 'Excluir utilizadores suspensos';
 $string['exportonlyactive_help'] = 'Incluir na exportação apenas alunos cuja inscrição está ativa e que não tenha sido suspensa';
 $string['exportplugins'] = 'Módulos de exportação';
-$string['exportsettings'] = 'Definições de exportação';
+$string['exportsettings'] = 'Definições da exportação';
 $string['exportto'] = 'Exportar para';
 $string['externalurl'] = 'URL externo';
 $string['externalurl_desc'] = 'Caso esteja a ser utilizada uma pauta externa, o URL deve ser indicado aqui.';
@@ -355,7 +355,7 @@ $string['gradesforuser'] = 'Notas de {$a->user}';
 $string['gradesmoduledeletionpendingwarning'] = 'Aviso: A atividade está a ser apagada! Algumas notas estão prestes a ser removidas.';
 $string['gradesmoduledeletionprefix'] = '[Remoção em progresso]';
 $string['gradesonly'] = 'Mudar para só notas';
-$string['gradessettings'] = 'Definições de notas';
+$string['gradessettings'] = 'Definições da nota';
 $string['gradetype'] = 'Tipo de nota';
 $string['gradetype_help'] = 'Existem três tipos de notas:
 
@@ -405,14 +405,14 @@ $string['idnumbers'] = 'Números de ID';
 $string['ignore'] = 'Ignorar';
 $string['import'] = 'Importar';
 $string['importcsv'] = 'Importar CSV';
-$string['importcsv_help'] = 'As notas podem ser importadas através de um ficheiro CSV com o seguinte formato:
+$string['importcsv_help'] = 'As notas podem ser importadas via ficheiro CSV com o seguinte formato:
 
 * Cada linha do ficheiro contém apenas um registo
-* Cada registo é um conjunto de dados separados por vírgulas ou outro tipo de separador
-* O primeiro registo contém uma lista com os nomes dos campos, definindo assim o restante formato do ficheiro
-* É necessário existir um campo com os dados de identificação dos utilizadores - pode ser o nome de utilizador, o número de identificação (ID) ou o endereço de e-mail
+* Cada registo é uma série de dados separados pelo separador selecionado
+* O primeiro registo contém uma lista com os nomes dos campos, definindo assim o formato do resto do ficheiro
+* É obrigatório existir um campo com os dados de identificação dos utilizadores - pode ser o nome de utilizador, o número de identificação (ID) ou o endereço de e-mail
 
-Se previamente exportar algumas notas, poderá obter um exemplo de um ficheiro com o formato correto. O ficheiro em questão poderá ser editado posteriormente e guardado como ficheiro CSV.';
+Se previamente exportar algumas notas, poderá obter um exemplo de um ficheiro com o formato correto. O ficheiro poderá ser editado posteriormente e guardado como ficheiro CSV.';
 $string['importcustom'] = 'Importar como resultados da aprendizagem personalizados (apenas nesta disciplina)';
 $string['importdata'] = 'Dados';
 $string['importdata_help'] = 'As notas podem ser coladas diretamente de uma folha de cálculo OpenDocument ou Excel com o seguinte formato:
@@ -436,7 +436,7 @@ $string['importoutcomes_link'] = 'nota/competência';
 $string['importoutcomesuccess'] = 'Resultado da aprendizagem "{$a->name}" importado com o ID #{$a->id}';
 $string['importplugins'] = 'Módulos de importação';
 $string['importpreview'] = 'Pré-visualização da importação';
-$string['importsettings'] = 'Definições de importação';
+$string['importsettings'] = 'Definições da importação';
 $string['importskippednomanagescale'] = 'Não tem permissões para adicionar uma nova escala. O resultado da aprendizagem "{$a}" não foi importado, uma vez que era necessário criar uma nova escala.';
 $string['importskippedoutcome'] = 'Neste contexto, já existe um resultado da aprendizagem com o nome curto "{$a}". O resultado da aprendizagem contido no ficheiro de importação foi ignorado.';
 $string['importstandard'] = 'Importar como resultados de aprendizagem padrão';
@@ -705,14 +705,14 @@ $string['recovergradesdefault'] = 'Recuperação de notas';
 $string['recovergradesdefault_help'] = 'Recuperar as notas antigas quando se reinscreve um aluno numa disciplina.';
 $string['refreshpreview'] = 'Atualizar pré-visualização';
 $string['regradeanyway'] = 'Voltar a avaliar';
-$string['removeallcoursegrades'] = 'Eliminar todas as notas';
+$string['removeallcoursegrades'] = 'Apagar todas as notas';
 $string['removeallcoursegrades_help'] = 'Se selecionado, todas as notas que foram adicionadas manualmente na pauta serão apagadas, juntamente com os dados e as notas que foram substituídas, excluídas, ocultadas e bloqueadas. Apenas as notas associadas às atividades permanecerão.';
-$string['removeallcourseitems'] = 'Eliminar todos os itens e categorias';
+$string['removeallcourseitems'] = 'Apagar todos os itens e categorias';
 $string['removeallcourseitems_help'] = 'Se selecionado, todas as categorias e notas que foram adicionadas manualmente na pauta serão apagadas, juntamente com os dados e as notas que foram substituídas, excluídas, ocultadas e bloqueadas. Apenas permanecerão as notas associadas às atividades.';
 $string['report'] = 'Relatório';
-$string['reportdefault'] = 'Definições predefinidas do relatório ({$a})';
+$string['reportdefault'] = 'Predefinições do relatório ({$a})';
 $string['reportplugins'] = 'Módulos de relatório';
-$string['reportsettings'] = 'Definições dos relatórios';
+$string['reportsettings'] = 'Definições do relatório';
 $string['reprintheaders'] = 'Reimprimir cabeçalhos';
 $string['resetweights'] = 'Redefinir pesos de {$a->itemname}';
 $string['resetweightsshort'] = 'Redefinir pesos';
@@ -739,7 +739,7 @@ $string['setcategorieserror'] = 'Tem que definir as categorias da disciplina ant
 $string['setgradeletters'] = 'Definir Notas alfabéticas';
 $string['setpreferences'] = 'Definir preferências';
 $string['setting'] = 'Definição';
-$string['settings'] = 'Definições';
+$string['settings'] = 'Configurações';
 $string['setweights'] = 'Definir pesos';
 $string['showactivityicons'] = 'Mostrar ícones das atividades';
 $string['showactivityicons_help'] = 'Se ativar esta opção, os ícones das atividade são mostrados ao lado dos seus nomes.';

@@ -142,7 +142,7 @@ $string['importgroups'] = 'Importeer groepen';
 $string['importgroups_help'] = 'Groepen kunnen geïmporteerd worden via een tekstbestand. De opmaak van het bestand moet als volgt zijn:
 
 * Elke lijn van het bestand bevat één record
-* Elke  record is een rij kommagescheiden gegevens
+* elke record is een reeks gegevens gescheiden door het geselecteerde scheidingsteken
 * De eerste record bevat een lijst met veldnamen die de opmaak bepalen van de rest van het bestand
 * De vereiste veldnaam is groupname
 * Optionele velnamen zijn groupidnumber, description, enrolmentkey, groupingname, enablemessaging';

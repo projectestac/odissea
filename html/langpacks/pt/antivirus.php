@@ -47,7 +47,7 @@ $string['emailreferer'] = 'Referência:';
 $string['emailreport'] = 'Relatório:';
 $string['emailscanner'] = 'Scanner:';
 $string['emailscannererrordetected'] = 'Ocorreu um erro ao examinar';
-$string['emailsubject'] = '{$a}:: Notificação do antivírus ClamAV';
+$string['emailsubject'] = '{$a} :: Notificação do antivírus ClamAV';
 $string['enablequarantine'] = 'Ativar quarentena';
 $string['enablequarantine_help'] = 'Se ativar esta opção, todos os ficheiros detetados como vírus serão mantidos numa pasta de quarentena para posterior exame ([dataroot]/{$a}).
 O carregamento para o Moodle falhará.

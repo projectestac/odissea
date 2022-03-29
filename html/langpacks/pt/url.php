@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['chooseavariable'] = 'Escolha uma variável…';
 $string['clicktoopen'] = 'Clique na hiperligação {$a} para abrir o URL.';
-$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as definições existentes não serão alteradas. Mantenha a tecla Ctrl pressionada para selecionar múltiplas opções.';
+$string['configdisplayoptions'] = 'Selecione todas as opções que devem estar disponíveis, as onfigurações existentes não serão alteradas. Mantenha a tecla Ctrl pressionada para selecionar múltiplas opções.';
 $string['configframesize'] = 'Quando uma página Web ou um ficheiro é exibido numa frame, este valor é a altura (em píxeis) da frame superior (que contém a barra de navegação).';
 $string['configrolesinparams'] = 'Se ativar esta opção, os nomes dos papéis locais serão incluídos na listagem das variáveis de parâmetro disponíveis.';
 $string['configsecretphrase'] = 'Esta frase secreta é usada para produzir um código encriptado que pode ser enviado para alguns servidores como parâmetro. O código  encriptado é produzido por um valor md5 do endereço IP do utilizador atual concatenado com a sua frase secreta. Isto é, código = md5(IP.frasesecreta). Tenha em atenção que não é fiável porque o endereço IP pode mudar e muitas vezes é partilhado por diferentes computadores.';

@@ -484,12 +484,12 @@ $string['debugall'] = 'TODOS: Mostrar todos los mensajes de depuración PHP';
 $string['debugdeveloper'] = 'DESARROLLADOR: mensajes extra de depuración Moodle para desarrolladores';
 $string['debugdisplay'] = 'Mostrar mensajes de depuración';
 $string['debugging'] = 'Depuración (debugging)';
-$string['debugminimal'] = 'MÍNIMO: Mostrar sólo errores fatales';
+$string['debugminimal'] = 'MÍNIMO: Mostrar solamente errores fatales';
 $string['debugnone'] = 'NINGUNO: No mostrar errores ni avisos';
 $string['debugnormal'] = 'NORMAL: Mostrar errores, avisos y noticias';
 $string['debugpageinfo'] = 'Mostrar información de la página';
 $string['debugsqltrace'] = 'Mostrar el origen de las llamadas SQL';
-$string['debugsqltrace1'] = 'Mostrar solo una línea de llamada';
+$string['debugsqltrace1'] = 'Mostrar solamente una línea única de llamada';
 $string['debugsqltrace100'] = 'Mostrar seguimiento de pila completo';
 $string['debugsqltrace2'] = 'Mostrar 2 líneas de seguimiento de pila';
 $string['debugsqltrace_desc'] = 'Si activa esta opción, una traza PHP parcial o completa se añade como comentario al SQL.';
@@ -725,6 +725,7 @@ $string['iplookupinfo'] = 'Por defecto Moodle utiliza el servidor gratuito en l�
 Se recomienda instalar una copia local de la base de datos GeoLite2 City, desde MaxMind.<br />
 La ubicación de la dirección IP se muestra en un mapa simple, o usando Google Maps. Para activar los mapas interactivos necesita tener una cuenta Google y aplicar la clave API de Google Maps.';
 $string['iplookupmaxmindnote'] = 'Este producto incluye datos de GeoLite2 creado por MaxMind, disponible en <a href="https://www.maxmind.com">https://www.maxmind.com</a>.';
+$string['iscustomadminwarnings'] = 'Se ha detectado que su sitio está utilizando un directorio de administración personalizado. Esta característica ya no es compatible y se eliminará después de Moodle 4.2.';
 $string['ishttpswarning'] = 'Se ha detectado que su sitio no se comunica a través de HTTPS. Se recomienda migrar su sitio a HTTPS para incrementar la seguridad y mejorar la integración con otros sistemas.';
 $string['keeptagnamecase'] = 'Mantener minús/MAYÚS de nombre de marca';
 $string['lang'] = 'Idioma por defecto';

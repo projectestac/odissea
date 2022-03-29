@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['backupofcourselogs'] = '{$a}-(r)en segurtasun-kopien agerraldiak';
+$string['backupofcourselogs'] = '{$a}(r)en segurtasun-kopien agerraldiak';
 $string['logsofbackupexecutedon'] = '{$a}-n exekutatutako segurtasun-kopien erregistroak';
 $string['nobackupsfound'] = 'Ez da segurtasun-kopiarik aurkitu.';
 $string['nologsfound'] = 'Ez da segurtasun-kopia honen agerraldirik aurkitu.';

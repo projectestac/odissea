@@ -378,6 +378,7 @@ $string['new'] = 'new';
 $string['new_column'] = 'new column';
 $string['new_crosssub'] = 'Create new interdisciplinary subject';
 $string['new_niveau'] = 'New learning progress';
+$string['new_topic'] = 'new Topic';
 $string['newer_grading_tooltip'] = 'Grading may not be up to date. </br> A childdescriptor has been graded.';
 $string['newsubmission'] = 'New Submission';
 $string['next_step'] = 'This configuration step has been completed. Click here to continue configuration.';

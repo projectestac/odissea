@@ -54,6 +54,7 @@ $string['descriptionssourcelabel'] = 'URL de la descripció de la pista';
 $string['displayoptions'] = 'Mostra les opcions';
 $string['entername'] = 'Introdueix el nom';
 $string['entersource'] = 'URL de la font';
+$string['entertitle'] = 'Introdueix el títol';
 $string['enterurl'] = 'Introdueix URL';
 $string['height'] = 'Alçada';
 $string['kind'] = 'Tipus';

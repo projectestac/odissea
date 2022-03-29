@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 $string['objectivescore'] = 'Erakutsi helburuko puntuazioa';
 $string['objectivex'] = 'Helburua {$a}';
 $string['pluginname'] = 'Helburuen txostena';
-$string['privacy:metadata:preference:scorm_report_objectives_score'] = 'SCORM txostenean helburuko puntuazioa erakustea edo ez';
+$string['privacy:metadata:preference:scorm_report_objectives_score'] = 'SCORM txostenean helburuko puntuazioa erakustea ala ez';
 $string['privacy:metadata:preference:scorm_report_pagesize'] = 'SCORM txostenetan erakutsi beharreko erabiltzaile kopurua';
 $string['score'] = 'puntuazioa';
 $string['status'] = 'egoera';

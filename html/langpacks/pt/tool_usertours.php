@@ -226,7 +226,7 @@ Para atividades que requerem que os alunos marquem manualmente a atividade como 
 $string['tour_activityinfo_activity_teacher_title'] = 'Novo: Informação da atividade';
 $string['tour_activityinfo_course_student_content'] = 'As datas e/ou as condições de conclusão da atividade são mostrados na página da disciplina.';
 $string['tour_activityinfo_course_student_title'] = 'Novo: Informação da atividade';
-$string['tour_activityinfo_course_teacher_content'] = 'As novas configurações da disciplina \'Mostrar condições de conclusão da atividade\' e \'Mostrar datas das atividades\' permitem que escolha se as condições de conclusão da atividade (se definidas) e/ou as datas são exibidas, ou não, para os alunos na página da disciplina.';
+$string['tour_activityinfo_course_teacher_content'] = 'As novas configurações da disciplina \'Mostrar condições de conclusão da atividade\' e \'Mostrar datas das atividades\' permitem que escolha se as condições de conclusão da atividade (se definidas) e/ou as datas são, ou não, mostradas aos alunos na página da disciplina.';
 $string['tour_activityinfo_course_teacher_title'] = 'Novo: Informação da atividade';
 $string['tour_final_step_content'] = 'Chegou ao fim da demonstração ao utilizador. Não será mostrada novamente a menos que a reponha através da hiperligação existente no rodapé.';
 $string['tour_final_step_title'] = 'Fim da demonstração';

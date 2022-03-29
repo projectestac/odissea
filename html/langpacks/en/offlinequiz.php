@@ -78,6 +78,9 @@ $string['closebeforeopen'] = 'Could not update the offline quiz. You have specif
 $string['closestudentview'] = 'Close Student View';
 $string['closewindow'] = 'Close Window';
 $string['cmmissing'] = 'The course module for the offline quiz with ID {$a} is missing';
+$string['completiondetail:passgrade'] = 'Receive a pass grade';
+$string['completionpass'] = 'Pass to complete';
+$string['completionpass_help'] = 'Students only complete this offlinequiz, if they reach a grade higher or equal of the passing grade set under the grade-options';
 $string['configblackwhitethreshold'] = 'Sets the threshold for the black/white converting between 1-99 - The higher the more white has to be the imported pixel to be recognized as white. Any other value leads to no black/white conversion at all.';
 $string['configdecimalplaces'] = 'Number of digits that should be shown after the decimal point when displaying grades for the offline quiz.';
 $string['configdisableimgnewlines'] = 'This option disables new lines before and after images in the pdf question sheets. Warning: This might lead to formatting problems.';
@@ -591,7 +594,7 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 \\usepackage{lastpage}
 \\usepackage{fancyhdr}
 \\pagestyle{fancy}
-\\chead{\\sc \\Title, Group \\Group}
+\\chead{\\sc \\TestTitle, Group \\Group}
 \\cfoot{Seite \\thepage/\\pageref{LastPage}}
 \\makeatletter %%% disable pagebreaks between answers
 \\@beginparpenalty=10000
@@ -606,7 +609,8 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 % ===========================================================================================================
 %%% Course data:
 \\newcommand{\\Group}{{$a->groupname}}
-\\newcommand{\\Title}{{$a->coursename}}
+\\newcommand{\\Title}{{$a->activityname}}
+%%% Or use {{$a->coursename} as course name instead
 \\newcommand{\\Date}
 
 \\newcommand{\\TestTitle}{%

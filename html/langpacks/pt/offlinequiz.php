@@ -78,6 +78,9 @@ $string['closebeforeopen'] = 'Não foi possível atualizar o Teste Offline. A da
 $string['closestudentview'] = 'Fechar Vista do aluno';
 $string['closewindow'] = 'Fechar janela';
 $string['cmmissing'] = 'Está em falta o módulo da disciplina do Teste Offline com ID {$a}';
+$string['completiondetail:passgrade'] = 'Obter nota de aprovação';
+$string['completionpass'] = 'Aprovar para concluir';
+$string['completionpass_help'] = 'Os alunos só concluem este Teste Offline se obtiverem uma nota igual ou superior à nota de aprovação definida nas opções da nota';
 $string['configblackwhitethreshold'] = 'Define o limite para a conversão de preto/branco entre 1 e 99 - Quanto mais alto, mais branco deve ser o píxel importado para ser reconhecido como branco. Qualquer outro valor não tem conversão em preto/branco.';
 $string['configdecimalplaces'] = 'Número de casas decimais ao mostrar as notas do Teste Offline.';
 $string['configdisableimgnewlines'] = 'Se ativar esta opção, a inserção de novas linhas antes e depois das imagens será destivada nos formulário das perguntas em PDF. Aviso: pode levar a problemas de formatação.';
@@ -386,7 +389,7 @@ $string['otherresultexists'] = 'Já existe um resultado diferente para {$a}. A i
 $string['outof'] = '{$a->grade} de um máximo de {$a->maxgrade}';
 $string['outofshort'] = '{$a->grade}/{$a->maxgrade}';
 $string['overallfeedback'] = 'Feedback global';
-$string['overview'] = 'Visão Global';
+$string['overview'] = 'Visão global';
 $string['overviewdownload_help'] = 'Descarregar visão global';
 $string['page-mod-offlinequiz-edit'] = 'Editar página do Teste Offline';
 $string['page-mod-offlinequiz-x'] = 'Qualquer página de Teste Offline';
@@ -413,11 +416,11 @@ $string['participantslists'] = 'Participantes';
 $string['partimportnew'] = 'A carregar lista de participantes';
 $string['partimportnew_help'] = '<p>
 Neste separador pode carregar as listas de participantes já preenchidas. Pode enviar um único ficheiro de imagem digitalizada ou vários ficheiros de imagens digitalizadas num ficheiro ZIP. O módulo de Teste Offline processará os ficheiros de imagem em segundo plano.
-Os nomes dos ficheiros não são relevantes, mas não devem conter caracteres especiais, tais como ä, ö ou üs. As imagens devem ser GIFs, PNGs ou TIFs. Recomenda-se uma resolução entre 200 e 300 dpi.</p>';
+Os nomes dos ficheiros não são relevantes, mas não devem conter caracteres especiais, tais como ä, ö ou üs. As imagens devem ser GIF, PNG ou TIF. Recomenda-se uma resolução entre 200 e 300 dpi.</p>';
 $string['partuncheckedwithoutresult'] = '{$a} participantes não verificados sem resultado';
 $string['partuncheckedwithresult'] = '<a href="{$a->url}">{$a->count} participantes não verificados com resultado</a>';
 $string['pdfdeletedforgroup'] = 'Apagado o formulário do grupo \'{$a}\'';
-$string['pdfintro'] = 'Informação Adicional';
+$string['pdfintro'] = 'Informação adicional';
 $string['pdfintro_help'] = 'Esta informação será impressa na primeira página das folhas das perguntas e deve conter informações gerais sobre como preencher o formulário das resposta.';
 $string['pdfintrotext'] = '<b>Como responder corretamente?</b><br/>Este formulário das respostas será digitalizado automaticamente. Por favor não dobre ou manche. Utilize uma caneta preta ou azul para marcar os campos. Se quiser corrigir uma resposta, deve preencher completamente a caixa errada com a cor utilizada. O campo será interpretado como uma caixa vazia.<br/>';
 $string['pdfintrotoolarge'] = 'A introdução é muito longa (máximo 2000 caracteres).';
@@ -458,32 +461,33 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 \\setlength{\\topmargin}{-1cm}
 \\usepackage{amsmath} % for \\implies etc
 \\usepackage{amsfonts} % for \\mathbb etc
-\\usepackage[colorlinks=true,urlcolor=dunkelrot,linkcolor=black]{hyperref} % For using hyperlinks
+\\usepackage[colorlinks=true,urlcolor=dunkelrot,linkcolor=black]{hyperref} % Para usar hiperligações
 \\usepackage{ifthen}
 \\usepackage{enumitem}
 \\usepackage{xcolor}
 \\usepackage{ulem}
-\\parindent 0pt % no indent on the beginning of a section
+\\parindent 0pt % sem identação no início de uma secção
 \\renewcommand\\UrlFont{\\sf}
 \\usepackage{lastpage}
 \\usepackage{fancyhdr}
 \\pagestyle{fancy}
-\\chead{\\sc \\Title, Group \\Group}
+\\chead{\\sc \\TestTitle, Group \\Group}
 \\cfoot{Seite \\thepage/\\pageref{LastPage}}
-\\makeatletter %%% disable pagebreaks between answers
+\\makeatletter %%% desativar quebras de página entre respostas
 \\@beginparpenalty=10000
 \\@itempenalty=10000
 \\makeatother
 %
-\\newcommand{\\answerIs}[1]{} %%%Disable showing the right answer
-% \\newcommand{\\answerIs}[1]{[#1]} %%%Enable showing the right answer
+\\newcommand{\\answerIs}[1]{} %%%Desativar mostrar a resposta correta
+% \\newcommand{\\answerIs}[1]{[#1]} %%%Ativar mostrar a resposta correta
 %%%
 
 
 % ===========================================================================================================
 %%% Dados da disciplina:
 \\newcommand{\\Group}{{$a->groupname}}
-\\newcommand{\\Title}{{$a->coursename}}
+\\newcommand{\\Title}{{$a->activityname}}
+%%% Ou usar {{$a->coursename} como nome da disciplina
 \\newcommand{\\Date}
 
 \\newcommand{\\TestTitle}{%
@@ -491,15 +495,15 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 {\\bf \\Large Question sheet}\\\\[3mm]
 \\fbox{
 \\begin{tabular}{rl}
-\\rule{0pt}{25pt} Name: & $\\underline{\\hspace*{8cm}}$ \\rule{20pt}{0pt}\\\\[5mm]
-ID number: & $\\underline{\\hspace*{8cm}}$\\\\[5mm]
-\\ifthenelse{\\equal{true}{{$a->printstudycodefield}}}{\\rule{10pt}{0pt} Study code: & $\\underline{\\hspace*{8cm}}$\\\\[5mm]}{}
-\\rule[-20pt]{0pt}{20pt} Signature: & $\\underline{\\hspace*{8cm}}$
+\\rule{0pt}{25pt} Nome: & $\\underline{\\hspace*{8cm}}$ \\rule{20pt}{0pt}\\\\[5mm]
+ID: & $\\underline{\\hspace*{8cm}}$\\\\[5mm]
+\\ifthenelse{\\equal{true}{{$a->printstudycodefield}}}{\\rule{10pt}{0pt} Código: & $\\underline{\\hspace*{8cm}}$\\\\[5mm]}{}
+\\rule[-20pt]{0pt}{20pt} Assinatura: & $\\underline{\\hspace*{8cm}}$
 \\end{tabular}}
 \\end{center}
 }
 
-\\InputIfFileExists{offline_test_extras.tex}{}{} % Input extra user definitions
+\\InputIfFileExists{offline_test_extras.tex}{}{} % Configurações extras do utilizador
 
 \\begin{document}
 
@@ -530,7 +534,7 @@ $string['questionsin'] = 'Perguntas em';
 $string['questionsingroup'] = 'Perguntas no grupo';
 $string['questionsinthisofflinequiz'] = 'Perguntas neste Teste Offline';
 $string['questiontextisempty'] = '[Texto de pergunta vazio]';
-$string['quizdate'] = 'Data/hora';
+$string['quizdate'] = 'Data e hora do Teste Offline';
 $string['quizopenclose'] = 'Datas de abertura e fecho';
 $string['quizopenclose_help'] = 'Os alunos só podem ver a(s) sua(s) tentativa(s) enquanto a revisão estiver disponível.';
 $string['quizquestions'] = 'Perguntas do Teste';
@@ -562,7 +566,7 @@ $string['repaginate'] = 'Repaginar com {$a} perguntas por página';
 $string['repaginatecommand'] = 'Repaginar';
 $string['repaginatenow'] = 'Repaginar agora';
 $string['reportends'] = 'Fim da revisão dos resultados';
-$string['reportoverview'] = 'Visão Global';
+$string['reportoverview'] = 'Visão global';
 $string['reportstarts'] = 'Início da revisão dos resultados';
 $string['resetofflinequizzes'] = 'Reiniciar dados do Teste Offline';
 $string['resultexists'] = 'Já existe o mesmo resultado para {$a}. O resultado importado não foi considerado';
@@ -668,7 +672,7 @@ $string['standard'] = 'Padrão';
 $string['starttutorial'] = 'Iniciar tutorial sobre o teste';
 $string['statistics'] = 'Estatísticas';
 $string['statisticsplural'] = 'Estatísticas';
-$string['statsoverview'] = 'Visão Global das Estatísticas';
+$string['statsoverview'] = 'Visão global das Estatísticas';
 $string['studycode'] = 'Código';
 $string['temporaryfiledeletiontask'] = 'Apagar ficheiros temporários';
 $string['theattempt'] = 'A tentativa';

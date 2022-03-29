@@ -34,7 +34,7 @@ $string['categoryidnumber_desc'] = 'Bei Aktivierung wird IMS Enterprise Kategori
 $string['categoryseparator'] = 'Trennzeichen für Kategorien';
 $string['categoryseparator_desc'] = 'Erforderlich, falls "Kategorie-ID-Nummer" aktiviert ist. Zeichen zum Trennen des Kategorienamens und der ID-Nummer.';
 $string['coursesettings'] = 'Kurseinstellungen';
-$string['createnewcategories'] = 'Neue (verborgene) Kurskategorien anlegen, wenn nicht in Moodle gefunden';
+$string['createnewcategories'] = 'Neue (verborgene) Kursbereiche anlegen, wenn nicht in Moodle gefunden';
 $string['createnewcategories_desc'] = 'Wenn das &lt;org&gt;&lt;orgunit&gt;-Element in der importierten Datei enthalten ist, wird es benutzt um einen Kurs einer Kurskategorie zuzuordnen, sofern der Kurs neu angelegt wird. Bereits bestehende Kurse werden dadurch NICHT verschoben.
 Wenn keine Kategorie mit dem Namen existiert, wird diese neu als verborgene Kategorie angelegt.';
 $string['createnewcourses'] = 'Erstelle neue (verborgene) Kurse, wenn nicht in Moodle gefunden';

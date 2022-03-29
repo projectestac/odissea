@@ -45,3 +45,6 @@ $string['environment_url_desc'] = 'If set, this WSDL Mailsender will be used, if
 $string['clean_adware'] = 'Clean Adware';
 $string['detect_adware'] = 'Detect Adware';
 $string['messagehistoryfull'] = 'All messages';
+
+// H5P
+$string['hvpdisabled'] = '"HVP - Interactive Content" activity is disabled. Please, use H5P instead.';

@@ -28,4 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'Saiakeren arteko denbora-tartea ezartzeko sarbide-araua';
 $string['privacy:metadata'] = 'Saiakeren arteko denbora-tartea ezartzeko galdetegietarako sarbide-araua pluginak ez du datu pertsonalik biltzen.';
 $string['youcannotwait'] = 'Galdetegi hau itxi egingo da beste saiakera bat hasteko denbora izan baino lehen';
-$string['youmustwait'] = 'Itxaron beharko duzu galdetegi honetan beste saiakera bat egiteko. Beste saiakera bat hasteko baimena izango duzu {$a}-(r)en ondoren.';
+$string['youmustwait'] = 'Itxaron beharko duzu galdetegi honetan beste saiakera bat egiteko. Beste saiakera bat hasteko baimena izango duzu {$a}(r)en ondoren.';

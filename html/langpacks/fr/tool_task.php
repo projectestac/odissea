@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['adhoc'] = 'Ad hoc';
 $string['adhocempty'] = 'La file d\'attente des tâches ad hoc est vide';
-$string['adhocqueueold'] = 'La plus ancienne tâche a {$a} et dépasse {$a->max}';
+$string['adhocqueueold'] = 'La plus ancienne tâche a {$a->age} et dépasse {$a->max}';
 $string['adhocqueuesize'] = 'La file d\'attente des tâches ad hoc compte {$a} tâches';
 $string['adhoctaskid'] = 'ID de tâche ad hoc : {$a}';
 $string['adhoctasks'] = 'Tâches ad hoc';

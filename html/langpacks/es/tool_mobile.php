@@ -146,6 +146,7 @@ $string['subscriptionfeatures'] = 'Características de suscripción';
 $string['subscriptionlimitsurpassed'] = 'Se superó el límite de suscripción';
 $string['subscriptionregister'] = 'Para obtener detalles de los distintos planes de aplicaciones y para acceder a las estadísticas de uso de la aplicación Moodle, visite el <a href="{$a}" target="_blank">Portal de aplicaciones de Moodle</a>.';
 $string['subscriptionsseemore'] = 'Nota: La información que se muestra no se actualiza en tiempo real. Es posible que deba cerrar la sesión y volver a iniciarla para ver las actualizaciones. Para obtener información sobre cómo actualizar su plan de aplicaciones, inicie sesión en el <a href="{$a}" target="_blank">Portal de aplicaciones de Moodle</a>.';
+$string['switchaccount'] = 'Cambiar cuenta';
 $string['typeoflogin'] = 'Tipo de inicio de sesión';
 $string['typeoflogin_desc'] = 'Si el sitio utiliza un método de autenticación SSO, seleccione a través de una ventana del navegador o mediante un navegador integrado. Un navegador integrado proporciona una mejor experiencia de usuario, aunque no funciona con todos los complementos de SSO.';
 $string['viewqrcode'] = 'Ver código QR';

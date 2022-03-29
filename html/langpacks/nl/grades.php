@@ -419,7 +419,7 @@ $string['importcsv'] = 'Importeer CSV';
 $string['importcsv_help'] = 'Cijfers kunnen als volgt via een CSV-bestand geïmporteerd worden:
 
 * elke lijn van het bestand bevat één record
-* elke record is een reeks gegevens die door comma\'s of een ander scheidingsteken gescheiden zijn
+* elke record is een reeks gegevens gescheiden door het geselecteerde scheidingsteken
 * de eerste record bevat een lijst met veldnamen die de opmaak van de rest van het bestand definiëren
 * een veldnaam die de gebruikersidentiteit bevat is vereist - ofwel username, ID number of email address
 

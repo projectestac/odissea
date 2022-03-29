@@ -28,3 +28,4 @@ defined('MOODLE_INTERNAL') || die();
 $string['event_assessable_submitted'] = 'S\'ha enviat una activitat.';
 $string['event_assessable_uploaded'] = 'S\'ha pujat un fitxer.';
 $string['pluginname'] = 'Càrrega';
+$string['privacy:metadata'] = 'El connector per carregar una tasca no emmagatzema cap dada personal.';

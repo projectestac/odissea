@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = 'Baieztatzen dut galdera editatu den be
 $string['confirmsave'] = 'Baieztatu eta gero gorde {$a}';
 $string['correctanswer'] = 'Erantzun zuzena';
 $string['correctanswerandfeedback'] = 'Erantzun zuzena eta feedbacka';
+$string['corruptedquestion'] = 'Galdera hau kaltetuta dago eta sisteman existitzen ez diren azpigalderak ditu barne ditu.';
 $string['decodeverifyquestiontext'] = 'Deskodetu eta egiaztatu galderaren testua';
 $string['invalidmultianswerquestion'] = 'Txertatutako erantzunak (Cloze) galdera baliogabea ({$a}).';
 $string['layout'] = 'Diseinua';
@@ -38,6 +39,7 @@ $string['layoutmultiple_vertical'] = 'Aukera-laukitxoen zutabe bertikala';
 $string['layoutselectinline'] = 'Zabaltzen den menua testuaren barruan';
 $string['layoutundefined'] = 'Definitu gabeko diseinua';
 $string['layoutvertical'] = 'Erantzun-botoietarako zutabe bertikala';
+$string['missingsubquestion'] = 'Zure sisteman azpigaldera hau  falta da eta ondorioz ezin da erakutsi.';
 $string['nooptionsforsubquestion'] = 'Ezin da aukerarik lortu  # {$a->sub} galderaren zatirako (galdera->id={$a->id})';
 $string['noquestions'] = 'Txertatutako erantzunak (Cloze) motako "<strong>{$a}</strong>" galderak ez dauka galderarik definituta';
 $string['pleaseananswerallparts'] = 'Mesedez, erantzun galderaren atal guztiei';

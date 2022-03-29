@@ -34,7 +34,7 @@ $string['asyncbackuppending'] = 'O processo da cópia de segurança está penden
 $string['asyncbackupprocessing'] = 'A cópia de segurança está em andamento';
 $string['asyncbadexecution'] = 'Execução incorreta do controlador da cópia de segurança. É {$a} mas devia ser 2.';
 $string['asynccheckprogress'] = 'A qualquer instante, poderá acompanhar o progresso na <a href="{$a}">página de restauro</a>.';
-$string['asyncemailenable'] = 'Ativar mensagens de notificação';
+$string['asyncemailenable'] = 'Ativar mensagem de notificações';
 $string['asyncemailenabledetail'] = 'Se ativar esta opção, os utilizadores receberão uma mensagem quando um restauro/cópia de segurança assíncrona for concluído.';
 $string['asyncgeneralsettings'] = 'Restauro/cópia de segurança assíncrona';
 $string['asyncmessagebody'] = 'Mensagem';

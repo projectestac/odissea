@@ -27,9 +27,9 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['allusers'] = 'Tous les utilisateurs';
 $string['awardedto'] = 'Décerné à';
-$string['bulkaction'] = 'Choisir une action en lot';
+$string['bulkaction'] = 'Choisir une action par lots';
 $string['bulkbuttonlabel'] = 'Envoyer';
-$string['bulkview'] = 'Actions en lots';
+$string['bulkview'] = 'Actions par lots';
 $string['cantdeleteissue'] = 'Erreur dans la suppression des certificats délivrés.';
 $string['cantissue'] = 'Ce certificat ne peut être obtenu car l\'utilisateur ne remplit pas les conditions d\'activité';
 $string['certificatecopy'] = 'Copier';

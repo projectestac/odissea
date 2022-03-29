@@ -63,7 +63,7 @@ $string['confirmdeletecomment'] = 'Ziur zaude iruzkin hau ezabatu nahi duzula?';
 $string['createnewquestion'] = 'Sortu galdera  berria';
 $string['createnewquestionfirst'] = 'Sortu lehen galdera';
 $string['creator_anonym_fullname'] = 'Ikasle Anonimoa';
-$string['current_of_total'] = '{$a->current}.a {$a->total}-(e)tik';
+$string['current_of_total'] = '{$a->current}.a {$a->total}(e)tik';
 $string['delete'] = 'Ezabatu';
 $string['deletecomment'] = 'Ezabatu iruzkina';
 $string['deletedbyauthor'] = 'Iruzkin hau ezabatua izan zen {$a}(e)an.';
@@ -99,7 +99,7 @@ $string['emailcommentaddedbody'] = 'Kaixo,  {$a->recepientname}:
 Iruzkina hau da: \'{$a->commenttext}\'
 
 Zure galdera berrikusi dezakezu hemen: {$a->questionurl}.';
-$string['emailcommentaddedsmall'] = '{$a->actorname}-(e)k zure \'{$a->questionname}\' galderari iruzkina egin dio.';
+$string['emailcommentaddedsmall'] = '{$a->actorname}(e)k zure \'{$a->questionname}\' galderari iruzkina egin dio.';
 $string['emailcommentaddedsubject'] = 'Galderari iruzkina egin zaio: {$a->questionname}';
 $string['emailcommentdeletedbody'] = 'Kaixo,  {$a->recepientname}:
 
@@ -108,7 +108,7 @@ $string['emailcommentdeletedbody'] = 'Kaixo,  {$a->recepientname}:
 Iruzkina hau zen: \'{$a->commenttext}\'
 
 Zure galdera berrikusi dezakezu hemen: {$a->questionurl}.';
-$string['emailcommentdeletedsmall'] = '{$a->actorname}-(e)k zure \'{$a->questionname}\' galderari egindako iruzkina ezabatu du.';
+$string['emailcommentdeletedsmall'] = '{$a->actorname}(e)k zure \'{$a->questionname}\' galderari egindako iruzkina ezabatu du.';
 $string['emailcommentdeletedsubject'] = 'Galderaren iruzkina ezabatua izan da: {$a->questionname}';
 $string['emaildigestbody'] = 'Hau zure <b>{$a->modulename}</b> IkasleGaldetegia jardueraren jakinarazpenen {$a->digesttype}. bilduma da, hemen eskuragarri dagoena:';
 $string['emaildigestbody_section_content'] = '<b>{$a->actorname}</b> erabiltzaileak zure <b>{$a->questionname}</b> galdera <b>{$a->actiontype}</b> du';
@@ -121,13 +121,13 @@ $string['emailminecommentdeletedbody'] = 'Kaixo,  {$a->recepientname}:
 Iruzkina hau zen: \'{$a->commenttext}\'
 
 Zure galdera berrikusi dezakezu hemen: {$a->questionurl}.';
-$string['emailminecommentdeletedsmall'] = '{$a->actorname}-(e)k \'{$a->questionname}\' galderari zuk egindako iruzkina ezabatu du.';
+$string['emailminecommentdeletedsmall'] = '{$a->actorname}(e)k \'{$a->questionname}\' galderari zuk egindako iruzkina ezabatu du.';
 $string['emailminecommentdeletedsubject'] = 'Galderaren iruzkina ezabatua izan da: {$a->questionname}';
 $string['emailsalutation'] = '{$a} agurgarria,';
 $string['emailsinglebody'] = '<b>{$a->actorname}</b> erabiltzaileak zure <b>{$a->coursename}</b> ikastaroko <b>{$a->modulename}</b> IkasleGaldetegia jardueraren <b>{$a->questionname}</b> galdera {$a->eventname} du <b>{$a->timestamp}</b>(e)an.';
 $string['emailsinglebody_reviewlink'] = 'Galdera hau hemen berrikusi dezakezu:';
 $string['error_form_validation'] = '{$a}';
-$string['error_sendalert'] = 'Errore bat gertatu da zure txostena {$a}-(e)ra bidaltzean.
+$string['error_sendalert'] = 'Errore bat gertatu da zure txostena {$a}(e)ra bidaltzean.
 Txostena ezin izan da bidali.';
 $string['expandall'] = 'Zabaldu iruzkin guztiak';
 $string['expandcomment'] = 'Zabaldu iruzkina';
@@ -448,7 +448,7 @@ $string['settingsdeleteorphanedtimelimit'] = 'Galdera umezurtzen ezabaketaren de
 $string['settingsdeleteorphanedtimelimit_help'] = 'Umezurtz edo aprobatu gabeko galderak ezabatzeko denbora-muga bat zehazten du. Tarte hau baino zaharragoak diren galderak ezabatuak izango dira.';
 $string['show_less'] = 'Erakutsi gutxiago';
 $string['show_more'] = 'Erakutsi gehiago';
-$string['slot_of_slot'] = '{$a->slot}. galdera multzo honetako {$a->slots}-(e)tik';
+$string['slot_of_slot'] = '{$a->slot}. galdera multzo honetako {$a->slots}(e)tik';
 $string['start_quiz_button'] = 'Hasi Galdetegia';
 $string['state_approved'] = 'Onartuta';
 $string['state_change_tooltip_approved'] = 'Galdera onartuta dago. Egin klik hemen galderaren egoera aldatzeko';

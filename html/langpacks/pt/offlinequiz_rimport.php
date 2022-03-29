@@ -49,6 +49,7 @@ $string['errorpageerror'] = 'Erro na página';
 $string['errorpngnotsupported'] = 'Imagens PNG não são suportadas';
 $string['errorresultexists'] = 'O resultado já existe';
 $string['errortiffnotsupported'] = 'Imagens TIFF não são suportadas';
+$string['erroruseridviolation'] = 'Encontrados múltiplos utilizadores';
 $string['errorusernotincourse'] = 'Utilizador não existe na disciplina';
 $string['errorusernotinlist'] = 'Utilizador não consta da lista';
 $string['idnumber'] = 'NúmeroID';

@@ -918,7 +918,7 @@ $string['gpllicense'] = 'Άδεια χρήσης GPL';
 $string['grade'] = 'Βαθμός';
 $string['gradenoun'] = 'Βαθμός';
 $string['grades'] = 'Βαθμοί';
-$string['gradeverb'] = 'Βαθμός';
+$string['gradeverb'] = 'Βαθμολόγηση';
 $string['gravatarenabled'] = 'Το <a href="https://www.gravatar.com/">Gravatar</a> έχει ενεργοποιηθεί για αυτό τον ιστότοπο. Αν δεν ανεβάσετε μια φωτογραφία προφίλ, το Moodle θα προσπαθήσει να φορτώσει μια εικόνα προφίλ για εσάς από το Gravatar.';
 $string['group'] = 'Ομάδα';
 $string['groupadd'] = 'Προσθήκη νέας ομάδας';

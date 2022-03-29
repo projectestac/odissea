@@ -62,6 +62,7 @@ $string['invalidprivatetoken'] = '无效的私人令牌。令牌不应为空或�
 $string['invaliduserquotawarning'] = '用户配额(userquota)设置的数字无效。在站点安全设置中，应该将其设置为一个有效的数字(一个整数值)。';
 $string['iosappid'] = 'iOS应用的唯一标识符';
 $string['iosappid_desc'] = '除非您有一个定制的iOS应用，否则这个设置可以保留为默认值。';
+$string['launchviasiteinbrowser'] = '通过系统浏览器中的站点启动';
 $string['loginintheapp'] = '通过应用（APP）';
 $string['logininthebrowser'] = '通过浏览器窗口(用于SSO插件)';
 $string['loginintheembeddedbrowser'] = '通过嵌入式浏览器(用于SSO插件)';

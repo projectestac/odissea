@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['auth_webservicedescription'] = 'Diese Authentifizierungsmethode sollte für Nutzerkonten benutzt werden, die ausschließlich für Webservices-Clients angelegt wurden.';
+$string['auth_webservicedescription'] = 'Diese Authentifizierungsmethode sollte für Nutzerkonten benutzt werden, die ausschließlich für Webservice-Clients angelegt wurden.';
 $string['pluginname'] = 'Webservices';
 $string['privacy:metadata'] = 'Das Plugin \'WebServices-Authentifizierung\' speichert keine personenbezogenen Daten.';

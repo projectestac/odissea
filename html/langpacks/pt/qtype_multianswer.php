@@ -29,6 +29,7 @@ $string['confirmquestionsaveasedited'] = 'Confirmo que desejo que a pergunta sej
 $string['confirmsave'] = 'Confirmar e guardar {$a} pergunta';
 $string['correctanswer'] = 'Resposta correta';
 $string['correctanswerandfeedback'] = 'Resposta correta e feedback';
+$string['corruptedquestion'] = 'Esta pergunta está corrompida e contém subperguntas que não estão presentes no seu sistema.';
 $string['decodeverifyquestiontext'] = 'Descodificar e verificar o texto da pergunta';
 $string['invalidmultianswerquestion'] = 'Pergunta de respostas incorporadas (Cloze) inválida ({$a}).';
 $string['layout'] = 'Estrutura';
@@ -38,6 +39,7 @@ $string['layoutmultiple_vertical'] = 'Coluna vertical das caixas de verificaçã
 $string['layoutselectinline'] = 'Lista pendente incorporada no texto';
 $string['layoutundefined'] = 'Aparência indefinida';
 $string['layoutvertical'] = 'Botões de rádio dispostos verticalmente';
+$string['missingsubquestion'] = 'Esta subpergunta está em falta no seu sistema e não pode ser exibida.';
 $string['nooptionsforsubquestion'] = 'Não foi possível obter as opções para a parte # {$a->sub} (question->id={$a->id}) da pergunta';
 $string['noquestions'] = 'A pergunta de escolha múltipla incorporada "<strong>{$a}</strong>" não possui nenhuma pergunta.';
 $string['pleaseananswerallparts'] = 'Por favor, responda a todas as partes da pergunta.';

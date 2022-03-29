@@ -25,11 +25,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['allowcreate'] = 'Allow create';
+$string['allowcreate_help'] = 'Allow creation of IdP users on demand';
 $string['alterlogout'] = 'Alternative Logout URL';
 $string['alterlogout_help'] = 'The URL to redirect a user after all internal logout mechanisms are run';
 $string['anyauth'] = 'Allowed any auth type';
 $string['anyauth_help'] = 'Yes: Allow SAML login for all users? No: Only users who have saml2 as their type.';
 $string['anyauthotherdisabled'] = 'You have logged in successfully as \'{$a->username}\' but your auth type of \'{$a->auth}\' is disabled.';
+$string['assertionsconsumerservices'] = 'Assertions consumer services';
+$string['assertionsconsumerservices_help'] = 'List of bindings the SP should support';
 $string['attemptsignout'] = 'Attempt IdP Signout';
 $string['attemptsignout_help'] = 'This will attempt to communicate with the IdP to send a sign out request';
 $string['attrsimple'] = 'Simplify attributes';
@@ -40,11 +44,13 @@ $string['auth_fieldlockfield'] = 'Lock value ({$a})';
 $string['auth_fieldlocks'] = 'Lock user fields';
 $string['auth_fieldmapping'] = 'Data mapping ({$a})';
 $string['auth_saml2blockredirectdescription'] = 'Redirect or display message to SAML2 logins based on configured group restrictions';
-$string['auth_saml2description'] = 'Authenticate with a SAML2 IdP';
+$string['auth_saml2description'] = 'Authenticate with a SAML2 Identity Provider (IdP)';
 $string['auth_updatelocalfield'] = 'Update local ({$a})';
 $string['auth_updateremotefield'] = 'Update external ({$a})';
+$string['authncontext'] = 'AuthnContext';
+$string['authncontext_help'] = 'Allows augmentation of assertions. Leave blank unless required';
 $string['autocreate'] = 'Auto create users';
-$string['autocreate_help'] = 'If users are in the IdP but not in moodle create a moodle account.';
+$string['autocreate_help'] = 'Allow creation of Moodle users on demand';
 $string['autologin'] = 'Auto-login';
 $string['autologin_help'] = 'On pages that allow guest access without login, automatically log users into Moodle with a real user account if they are logged in to the IdP (using passive authentication).';
 $string['autologinbycookie'] = 'Check when the specified cookie exists or changes';
@@ -67,6 +73,10 @@ $string['certificatelock_lockedmessage'] = 'The certificates are currently locke
 $string['certificatelock_regenerate'] = 'Not regenerating certificates because they have been locked!';
 $string['certificatelock_unlock'] = 'Unlock certificates';
 $string['certificatelock_warning'] = 'Warning. You are about to lock the certificates, are you sure you want to do this? <br> The certificates are not currently locked';
+$string['checkcertificateexpired'] = 'SAML certificate has expired {$a} ago';
+$string['checkcertificateexpiry'] = 'SAML certificate expiry';
+$string['checkcertificateok'] = 'SAML certificate will expire in {$a}';
+$string['checkcertificatewarn'] = 'SAML certificate will expire in {$a}';
 $string['commonname'] = 'Common Name';
 $string['countryname'] = 'Country';
 $string['debug'] = 'Debugging';
@@ -123,14 +133,15 @@ $string['logdir_help'] = 'The log directory SSPHP will write to, the file will b
 $string['logdirdefault'] = '/tmp/';
 $string['logtofile'] = 'Enable logging to file';
 $string['logtofile_help'] = 'Turning this on will redirect SSPHP log output to a file in the logdir';
-$string['manageidpsheading'] = 'Manage available IdPs';
+$string['manageidpsheading'] = 'Manage available Identity Providers (IdPs)';
 $string['mdlattr'] = 'Mapping Moodle';
 $string['mdlattr_help'] = 'Which Moodle user field should the IdP attribute be matched to?';
 $string['metadatafetchfailed'] = 'Metadata fetch failed: {$a}';
 $string['metadatafetchfailedstatus'] = 'Metadata fetch failed: Status code {$a}';
 $string['metadatafetchfailedunknown'] = 'Metadata fetch failed: Unknown cURL error';
 $string['multiidp:label:active'] = 'Active';
-$string['multiidp:label:admin'] = 'Admin';
+$string['multiidp:label:admin'] = 'For admin users only';
+$string['multiidp:label:admin_help'] = 'Any users that log in using this IdP will automatically be made an site administrator';
 $string['multiidp:label:alias'] = 'Alias';
 $string['multiidp:label:defaultidp'] = 'Default IdP';
 $string['multiidp:label:displayname'] = 'Display name';
@@ -144,7 +155,6 @@ $string['multiidpinfo'] = '<ul>
 <li>An IdP can only be used if it is set as Active</li>
 <li>When duallogin has been turned on all active IdPs will be displayed on the login page</li>
 <li>When an IdP has been set as Default and duallogin is not turned on, this IdP will automatically be used unless ?multiidp=on or saml=off is passed on /login/index.php</li>
-<li>When an IdP has been set as Admin any users that log in using this IdP will automatically be made an admin</li>
 <li>An IdP can be given an Alias, when going to /login/index.php?idpalias={alias} the alias can be passed to directly use that IdP</li>
 </ul>';
 $string['nameidasattrib'] = 'Expose NameID as attribute';
@@ -184,6 +194,9 @@ $string['showidplink'] = 'Display IdP link';
 $string['showidplink_help'] = 'This will display the IdP link when the site is configured.';
 $string['signaturealgorithm'] = 'Signing Algorithm';
 $string['signaturealgorithm_help'] = 'This is the algorithm that will be used to sign SAML requests. Warning: The SHA1 Algorithm is only provided for backwards compatibility, unless you absolutely must use it it is recommended to avoid it and use at least SHA256 instead.';
+$string['source'] = 'Source: {$a}';
+$string['spentityid'] = 'Entity ID';
+$string['spentityid_help'] = 'Override the Entity Id of the Service Provider. In most cases leave blank and a good default will be used instead.';
 $string['spmetadata'] = 'SP Metadata';
 $string['spmetadata_help'] = '<a href=\'{$a}\'>View Service Provider Metadata</a> | <a href=\'{$a}?download=1\'>Download SP Metadata</a>
 <p>You may need to give this to the IdP admin to whitelist you.</p>';
@@ -191,20 +204,27 @@ $string['spmetadatasign'] = 'SP Metadata signature';
 $string['spmetadatasign_help'] = 'Sign the SP Metadata.';
 $string['sspversion'] = 'SimpleSAMLphp version';
 $string['stateorprovincename'] = 'State or Province';
+$string['status'] = 'Status';
 $string['suspendeduser'] = 'You have logged in successfully as \'{$a}\' but your account has been suspended in Moodle.';
 $string['taskmetadatarefresh'] = 'Metadata refresh task';
-$string['test_auth'] = '<a href="{$a}">Test isAuthenticated and login</a>';
 $string['test_auth_button_login'] = 'IdP Login';
 $string['test_auth_button_logout'] = 'IdP Logout';
 $string['test_auth_str'] = 'Test isAuthenticated and login';
-$string['test_passive'] = '<a href="{$a}">Test using isPassive</a>';
+$string['test_noticetestrequirements'] = 'In order to use this test, plugin needs to be configured, enabled and debugging mode should be enabled in plugin settings.';
 $string['test_passive_str'] = 'Test using isPassive';
-$string['tolower'] = 'Lowercase';
-$string['tolower_help'] = 'Apply lowercase to IdP attribute before matching?';
+$string['tolower'] = 'Case matching';
+$string['tolower:caseinsensitive'] = 'Case insensitive';
+$string['tolower:exact'] = 'Exact';
+$string['tolower:lowercase'] = 'Lower case';
+$string['tolower_help'] = '<p>Exact: match is case sensitive (default).</p>
+<p>Lower case: applies lower case to the IdP attribute before matching.</p>
+<p>Case insensitive: ignore case when matching.</p>';
 $string['unlocked'] = 'Unlocked';
 $string['unlockedifempty'] = 'Unlocked if empty';
 $string['update_never'] = 'Never';
 $string['update_oncreate'] = 'On creation';
 $string['update_onlogin'] = 'On every login';
 $string['update_onupdate'] = 'On update';
+$string['wantassertionssigned'] = 'Want assertions signed';
+$string['wantassertionssigned_help'] = 'Whether assertions received by this SP must be signed';
 $string['wrongauth'] = 'You have logged in successfully as \'{$a}\' but are not authorized to access Moodle.';

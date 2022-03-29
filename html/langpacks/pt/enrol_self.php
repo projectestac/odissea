@@ -58,7 +58,7 @@ $string['expiredaction'] = 'Ação de expiração da inscrição';
 $string['expiredaction_help'] = 'Selecione a ação a ser executada quando a inscrição do utilizador expira. Tenha em atenção que alguns dados e configurações do utilizador são eliminados da disciplina durante o cancelamento da inscrição na disciplina.';
 $string['expirymessageenrolledbody'] = 'Caro(a) {$a->user},
 
-Esta é uma notificação de que a sua inscrição na disciplina \'{$a->course}\' expira em {$a->timeend}.
+Esta é uma notificação a informar que a sua inscrição na disciplina \'{$a->course}\' expira em {$a->timeend}.
 
 Se precisar de ajuda, por favor, contacte {$a->enroller}.';
 $string['expirymessageenrolledsubject'] = 'Notificação de expiração da autoinscrição';

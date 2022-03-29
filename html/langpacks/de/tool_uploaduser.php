@@ -37,7 +37,7 @@ $string['clihelp'] = 'Diese Hilfe ausgeben.';
 $string['climissingargument'] = 'Argument --{$a} ist erforderlich';
 $string['clititle'] = 'Command line Nutzerupload-Tool.';
 $string['clivalidationerror'] = 'Validierungsfehler:';
-$string['csvdelimiter'] = 'CSV Trennzeichen';
+$string['csvdelimiter'] = 'CSV-Trennzeichen';
 $string['defaultvalues'] = 'Standardwerte';
 $string['deleteerrors'] = 'Fehler löschen';
 $string['encoding'] = 'Encoding';
@@ -76,12 +76,14 @@ $string['uploadpictures'] = 'Nutzerbilder hochladen';
 $string['uploadpictures_help'] = 'Nutzerbilder können als ZIP-Paket mit mehreren Bilddateien hochgeladen werden. Moodle ordnet die enthaltenen Dateien den Nutzerkonten als Portrait zu, wenn die Bilddateien geeignet benannt sind. Wenn Sie als Nutzerattribut den Nutzernamen gewählt haben, wird die Bilddatei nutzer1234.jpg für das Nutzerkonto nutzer1234 verwendet. Zulässige Bilddateitypen sind gif, jpg und png.';
 $string['uploaduser:uploaduserpictures'] = 'Nutzerbilder hochladen';
 $string['uploadusers'] = 'Nutzerliste hochladen';
-$string['uploadusers_help'] = 'Nutzer/innen können als Textdatei hochgeladen (und optional auch in Kurse eingeschrieben) werden. Das Format der Textdatei sollte folgendermaßen aussehen:
+$string['uploadusers_help'] = 'Nutzer/innen können über eine Textdatei angelegt (und optional in Kurse und globale Gruppen eingeschrieben) werden. Die Textdatei sollte folgendes Format haben:
 
 * Jede Zeile enthält genau einen Datensatz
-* Jeder Datensatz besteht aus Datenfeldern, die durch Kommas (oder andere Trennzeichen) getrennt sind
-* Der erste Datensatz enthält eine Liste der benutzten Feldnamen und legt die Struktur der restlichen Zeilen fest
-* Notwendige Feldnamen sind username, password, firstname, lastname, email';
+* Jeder Datensatz enthält eine Serie von Daten, getrennt durch das gewählte Trennzeichen
+* Die erste Zeile enthält eine Liste der Feldnamen und definiert die Struktur der übrigen Datensätze
+* Die Feldnamen müssen in der englischen Bezeichnung angegeben sein
+* Notwendige Feldnamen sind username, password, firstname, lastname, email
+* Optionale Feldnamen sind course1, course2, ..., cohort1, cohort2, ...';
 $string['uploaduserspreview'] = 'Vorschau Nutzer-Upload';
 $string['uploadusersresult'] = 'Ergebnisse Nutzer-Upload';
 $string['useraccountupdated'] = 'Nutzer/in aktualisiert';

@@ -27,6 +27,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['invaliddata'] = 'Ez dago datu nahikorik';
 $string['participants'] = 'Partaide-kopurua';
-$string['percent'] = 'Bermatutako portzentajea(%)';
+$string['percent'] = 'Bermatutako ehunekoa (%)';
 $string['pluginname'] = 'Txosten grafikoa';
 $string['privacy:metadata'] = 'Txosten grafikoak soilik beste kokapenetan gordetako datuak erakusten ditu.';

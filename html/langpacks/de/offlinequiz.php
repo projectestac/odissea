@@ -78,6 +78,9 @@ $string['closebeforeopen'] = 'Konnte die Einstellungen nicht speichern. Die Begi
 $string['closestudentview'] = 'Teilnehmer/innen-Ansicht schließen';
 $string['closewindow'] = 'Fenster schließen';
 $string['cmmissing'] = 'Das Kursmodule für den Offline-Test mit ID {$a} fehlt.';
+$string['completiondetail:passgrade'] = 'Bestehensgrenze erreichen';
+$string['completionpass'] = 'Erreichen der Bestehensgrenze notwendig';
+$string['completionpass_help'] = 'Teilnehmer/innen können den Offlinetest nur abschließen, wenn sie die Bestehensgrenze erreicht haben. Diese wird im Abschnitt \'Bewertung\' in den Testeinstellungen festgelegt.';
 $string['configblackwhitethreshold'] = 'Diese Einstellung legt den Schwellenwert für Schwarz/Weiß-Konvertierung zwischen 1 und 99 fest. Je höher der Wert, desto heller muss das Pixel sein, um als Weiß erkannt zu werden. Bei anderen Werten (als 1-99) findet keine Konvertierung statt.';
 $string['configdecimalplaces'] = 'Anzahl der Dezimalstellen, die bei Bewertungen angezeigt werden.';
 $string['configdisableimgnewlines'] = 'Diese Option sorgt dafür, dass Bilder im PDF im Fließtext eingefügt werden. Warnung: Dies kann zu Darstellungsproblemen führen!';
@@ -621,7 +624,8 @@ $string['questionsheetlatextemplate'] = '% !TEX encoding = UTF-8 Unicode
 % ===========================================================================================================
 %%% Die Lehrveranstaltungs-Daten:
 \\newcommand{\\Group}{{$a->groupname}}
-\\newcommand{\\Title}{{$a->coursename}}
+\\newcommand{\\Title}{{$a->activityname}}
+%%% Oder stattdessen {{$a->coursename}} als Kursnamen verwenden
 \\newcommand{\\Date}{$a->date}
 
 \\newcommand{\\TestTitle}{%

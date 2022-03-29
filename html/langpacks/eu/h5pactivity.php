@@ -127,6 +127,7 @@ $string['review_on_completion'] = 'Partaideek euren saiakerak berrikusi ditzaket
 $string['review_user_attempts'] = 'Ikusi erabiltzaileen saiakerak ({$a})';
 $string['score'] = 'Puntuazioa';
 $string['score_out_of'] = '{$a->rawscore} gehieneko {$a->maxscore}(e)tik';
+$string['search:activity'] = 'H5P - jardueraren informazioa';
 $string['startdate'] = 'Hasiera-data';
 $string['statement_received'] = 'xAPI adierazpena jaso da';
 $string['totalscore'] = 'Puntuazioa guztira';

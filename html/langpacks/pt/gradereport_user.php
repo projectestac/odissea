@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['eventgradereportviewed'] = 'Relatório de notas do utilizador visualizado';
-$string['myself'] = 'Própria';
+$string['myself'] = 'Eu';
 $string['otheruser'] = 'Utilizador';
 $string['pluginname'] = 'Relatório do aluno';
 $string['privacy:metadata:preference:gradereport_user_view_user'] = 'Se devo visualizar os relatórios como o utilizador atual ou como outro utilizador nos relatórios da pauta';

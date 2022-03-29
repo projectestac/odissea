@@ -27,6 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['install'] = '安装选择的语言包';
 $string['installedlangs'] = '安装语言包';
+$string['installfailed'] = '语言包安装失败！';
+$string['installfinished'] = '语言包安装完成。';
+$string['installpending'] = '即将安装以下语言包：{$a}';
+$string['installscheduled'] = '计划安装的语言包。';
 $string['langimport'] = '语言导入工具';
 $string['langimportdisabled'] = '语言导入功能已禁用。您必须在文件系统上手工更新语言包。做完后，不要忘记清空字符串缓存。';
 $string['langpackinstalled'] = '语言包{$a}安装成功';
@@ -39,6 +43,8 @@ $string['missinglangparent'] = '缺少语言参数。<em>{$a->lang}</em>的<em>{
 $string['nolangupdateneeded'] = '您的语言包已经是最新的了，不需要升级。';
 $string['pluginname'] = '语言包';
 $string['purgestringcaches'] = '清除字符串缓存';
+$string['search'] = '搜索可用的语言包';
 $string['uninstall'] = '卸载选择的语言包';
 $string['uninstallconfirm'] = '您准备要完全卸载语言包{$a}，您确定吗？';
 $string['updatelangs'] = '更新所有已安装的语言包';
+$string['updatelangsnote'] = '通过单击按钮更新所有已安装的语言包可能需要很长时间并导致超时。建议改为使用计划任务“{$a->taskname}”（默认情况下每天运行）。';

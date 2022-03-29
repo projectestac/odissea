@@ -322,7 +322,7 @@ Den väsentliga är sessionscookien, vanligen kallad <em>MoodleSession</em>. Du 
 
 Den andra cookien (vanligen kallad <em>MOODLEID</em>) är enbart till för din bekvämlighet. Den används för att komma ihåg ditt användarnamn i webbläsaren. Det innebär att när du återvänder till den här webbplatsen är fältet för användarnamn redan ifyllt åt dig på inloggningssidan. Det är säkert att vägra denna cookie - det enda som då händer är att du behöver ange ditt användarnamn varje gång du loggar in.';
 $string['cookiesenabledonlysession'] = 'Du måste tillåta <em>Cookies</em> i din webbläsare';
-$string['cookiesenabledonlysession_help'] = 'Denna hemsida använder sessions kakor, oftast kallad MoodleSession. Du måste acceptera denna kaka i din webbläsare för att få kontinuerlig upplevelse och för att förbli inloggad när du surfar på denna hemsida. När du loggar ut eller stänger webbläsaren, förstörs kakan (både i webbläsaren och på servern).';
+$string['cookiesenabledonlysession_help'] = 'Den här webbplatsen använder en sessionscookie, vanligtvis kallad <em>MoodleSession</em>. Du måste tillåta denna cookie i din webbläsare för kontinuitet och för att förblir inloggad när du surfar på webbplatsen. När du loggar ut eller stänger webbläsaren förstörs denna cookie (i din webbläsare och på servern).';
 $string['cookiesnotenabled'] = 'Cookies är inte aktiverade i din webbläsare';
 $string['copy'] = 'Kopiera';
 $string['copyasnoun'] = 'kopiera';
@@ -513,7 +513,7 @@ $string['defaultcourseteacherdescription'] = 'Lärare kan hantera allt inom sin 
 $string['defaultcourseteachers'] = 'Lärare';
 $string['defaulteditor'] = 'Standardredigerare';
 $string['defaulthomepageuser'] = 'Hem';
-$string['defaulthomepageuser_help'] = 'Din hemsida är den översta länken i navigeringen.';
+$string['defaulthomepageuser_help'] = 'Din startsida är den första länken i navigeringsmenyn.';
 $string['delete'] = 'Ta bort';
 $string['deleteablock'] = 'Ta bort ett block';
 $string['deleteall'] = 'Ta bort alla';

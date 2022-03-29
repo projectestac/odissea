@@ -136,7 +136,6 @@ $string['suspendeduser'] = 'Έχετε συνδεθεί με επιτυχία ω
 $string['taskmetadatarefresh'] = 'Εργασία ανανέωσης των μετα-δεδομένων';
 $string['test_auth_button_login'] = 'Σύνδεση IdP';
 $string['test_auth_button_logout'] = 'Αποσύνδεση IdP';
-$string['test_passive'] = '<a href="{$a}">Δοκιμή με χρήση isPassive</a>';
 $string['test_passive_str'] = 'Δοκιμή με χρήση isPassive';
 $string['tolower'] = 'Πεζά';
 $string['tolower_help'] = 'Εφαρμογή πεζών στο IdP ιδιοχαρακτηριστικό πριν το ταίριασμα;';

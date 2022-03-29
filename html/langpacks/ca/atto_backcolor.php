@@ -25,5 +25,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['color_black'] = 'Negre';
+$string['color_blue'] = 'Blau';
+$string['color_green'] = 'Verd';
+$string['color_red'] = 'Vermell';
+$string['color_white'] = 'Blanc';
+$string['color_yellow'] = 'Groc';
 $string['pluginname'] = 'Color de fons';
 $string['privacy:metadata'] = 'El connector atto_backcolor no emmagatzema cap dada personal.';

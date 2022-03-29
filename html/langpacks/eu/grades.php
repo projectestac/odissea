@@ -84,7 +84,7 @@ $string['aggregationhintdropped'] = '(Kokatua)';
 $string['aggregationhintexcluded'] = '(Baztertua)';
 $string['aggregationhintextra'] = '(Aparteko kreditua)';
 $string['aggregationhintnovalue'] = '(Hutsik)';
-$string['aggregationofa'] = '{$a}-(r)en agregazioa';
+$string['aggregationofa'] = '{$a}(r)en agregazioa';
 $string['aggregationposition'] = 'Agregazioaren kokalekua';
 $string['aggregationposition_help'] = 'Ezarpen honek adierazten du kategoria eta ikastaroan guztirako zutabeak kalifikazio-liburuaren txostenaren hasieran edo amaieran agertuko diren.';
 $string['aggregationsvisible'] = 'Eskura dauden agregazio motak';
@@ -197,7 +197,7 @@ $string['errornocategorisedid'] = 'Ez da kategorizatu gabeko id-rik lortu.';
 $string['errornocourse'] = 'Ez da ikastaroaren informaziorik lortu';
 $string['errorreprintheadersnonnumeric'] = 'Berrinprimaketa-goialdeetarako balioez zenbakiduna jaso da';
 $string['errorsavegrade'] = 'Ezin da kalifikazioa gorde, sentitzen dugu.';
-$string['errorsettinggrade'] = 'Errorea "{$a->itemname}" -(r)en kalifikazioa gordetzean {$a->userid} erabiltzailearentzat';
+$string['errorsettinggrade'] = 'Errorea "{$a->itemname}"(r)en kalifikazioa gordetzean {$a->userid} erabiltzailearentzat';
 $string['errorupdatinggradecategoryaggregateonlygraded'] = 'Errorea {$a->id} ID kategoria-kalifikazioaren "Hutsik dauden kalifikazioak baino ez agregatu" ezarpena eguneratzean.';
 $string['errorupdatinggradecategoryaggregateoutcomes'] = 'Errorea {$a->id} ID kategoria-kalifikazioaren "Sartu ikaste-emaitzak agregazioan" ezarpena eguneratzean.';
 $string['errorupdatinggradecategoryaggregation'] = 'Errorea {$a->id} IDdun kalifikazio-kategoriaren agregazio mota eguneratzean';
@@ -238,7 +238,7 @@ $string['feedback_help'] = 'Laukitxo honek aukera ematen du gahitutako kalifikaz
 $string['feedbackadd'] = 'Gehitu feedbacka';
 $string['feedbackedit'] = 'Editatu feedbacka';
 $string['feedbackfiles'] = 'Feedback fitxategiak';
-$string['feedbackforgradeitems'] = '{$a}-(r)entzako feedbacka';
+$string['feedbackforgradeitems'] = '{$a}(r)entzako feedbacka';
 $string['feedbackhistoryfiles'] = 'Feedbackaren historia-fitxategiak';
 $string['feedbacks'] = 'Feedbackak';
 $string['feedbacksaved'] = 'Feedbacka gordeta';
@@ -251,7 +251,7 @@ $string['forceimport'] = 'Behartu inportatzea';
 $string['forceimport_help'] = 'Behartu kalifikazioak inportatzea, fitxategia esportatu ondoren kalifikazioak eguneratuak izan badira ere.';
 $string['forceoff'] = 'Behartu: Off';
 $string['forceon'] = 'Behartu: On';
-$string['forelementtypes'] = 'aukeratutako {$a}-(r)entzat';
+$string['forelementtypes'] = 'aukeratutako {$a}(r)entzat';
 $string['forstudents'] = 'Ikasleentzat';
 $string['full'] = 'Osoa';
 $string['fullmode'] = 'Aldatu ikuspegi osora';
@@ -365,7 +365,7 @@ $string['gradetype_help'] = '4 kalifikazio mota daude:
 Soilik balioa eta eskala motako kalifikazioak batu daitezke. Jarduera baten kalifikaziorako kalifikazio-mota jardueraren ezarpenek orrian aukeratzen da.';
 $string['gradevaluetoobig'] = 'Kalifikazioren batek gehienez baimendutako {$a} balioa baino balio handiagoa du.';
 $string['gradeview'] = 'Ikusi kalifikazioa';
-$string['gradewasmodifiedduringediting'] = '{$a->username}-(r)en {$a->itemname}-(r)entzat sartutako kalifikazioa alde batera utzi da beste norbaitek orain dela gutxiago eguneratu duelako.';
+$string['gradewasmodifiedduringediting'] = '{$a->username}(r)en {$a->itemname}(r)entzat sartutako kalifikazioa alde batera utzi da beste norbaitek orain dela gutxiago eguneratu duelako.';
 $string['gradeweighthelp'] = 'Kalifikazioen pisuari buruzko laguntza';
 $string['gradingmodulename'] = 'Kalifikatzen ({$a})';
 $string['groupavg'] = 'Taldearen batez bestekoa';
@@ -406,7 +406,7 @@ $string['importcsv'] = 'inportatu CSV';
 $string['importcsv_help'] = 'Kalifikazioak CSV fitxategiak erabiliz inporta daitezke hurrengo formatua erabilita:
 
 * Fitxategiko errenkada bakoitzak erregistro bana du
-* Erregistro bakoitza komaz (edo bestelako bereizle batez) banatutako datu-multzo bat da
+* Erregistro bakoitza aukeratutako banatzaileaz banatutako datu-multzo bat da
 * Lehen erregistroak eremuen izenen zerrenda izango du, fitxategiko beste erregistroen formatua zehaztuko duena
 * Erabiltzailea identifikatuko duen eremu bat beharrezkoa da - erabiltzaile-izena, ID zenbakia edo helbide elektronikoa
 
@@ -612,7 +612,7 @@ $string['overridecat'] = 'Baimendu kategoria-kalifikazioak eskuz baliogabetzea.'
 $string['overridecat_help'] = 'Ezarpen hau desgaituz gero erabiltzaileek ezingo dituzte kategoria-kalifikazioak baliogabetu.';
 $string['overridesitedefaultgradedisplaytype'] = 'Baliogabetu gunearen lehentsitako balioak';
 $string['overridesitedefaultgradedisplaytype_help'] = 'Markatuz gero, ikastaroko kalifikazio-letrak eta mugak ezarri daitezke, gunean lehenetsitakoak erabili beharrean.';
-$string['overrideweightofa'] = 'Baliogabetu {$a}-(r)en pisua';
+$string['overrideweightofa'] = 'Baliogabetu {$a}(r)en pisua';
 $string['parentcategory'] = 'Goragoko kategoria';
 $string['pass'] = 'Gaindituta';
 $string['pctoftotalgrade'] = '% kalifikazio orokorretik';
@@ -625,7 +625,7 @@ $string['percentdescending'] = 'Ordenatu ehunekoak beherantz';
 $string['percentshort'] = '%';
 $string['plusfactor'] = 'Konpentsatu';
 $string['plusfactor_help'] = 'Konpentsazioa kalifikazio-elementu honen kalifikazio guztiei gehituko zaien zenbakia da, biderkatzailea aplikatu ondoren.';
-$string['plusfactorvalue'] = 'Konpentsatu {$a}-(r)en balioa';
+$string['plusfactorvalue'] = 'Konpentsatu {$a}(r)en balioa';
 $string['points'] = 'puntuak';
 $string['pointsascending'] = 'Ordenatu puntuak gorantz';
 $string['pointsdescending'] = 'Ordenatu puntuak beherantz';

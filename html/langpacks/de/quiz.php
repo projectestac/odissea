@@ -304,7 +304,7 @@ $string['editoverride'] = 'Änderung bearbeiten';
 $string['editqcats'] = 'Kategorien bearbeiten';
 $string['editquestion'] = 'Frage bearbeiten';
 $string['editquestions'] = 'Fragen bearbeiten';
-$string['editquiz'] = 'Testinhalt bearbeiten';
+$string['editquiz'] = 'Testfragen bearbeiten';
 $string['editquizquestions'] = 'Testfragen bearbeiten';
 $string['emailconfirmbody'] = 'Guten Tag {$a->username},
 

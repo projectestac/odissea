@@ -236,6 +236,7 @@ $string['importingquestions'] = 'Importation de {$a} questions depuis le fichier
 $string['importparseerror'] = 'Des erreurs ont été trouvées en analysant le fichier d\'importation. Aucune question n\'a été importée. Pour importer toutes les questions valides, essayez à nouveau en réglant le paramètre « Arrêter en cas d\'erreur » sur « Non ».';
 $string['importquestions'] = 'Importer des questions d\'un fichier';
 $string['importquestions_help'] = 'Ce réglage permet d\'activer l\'importation de questions de divers formats à partir d\'un fichier texte. L\'encodage du fichier doit être UTF-8.';
+$string['importwrongfileencoding'] = 'Le fichier sélectionné n\'est pas encodé en UTF-8. Les fichiers {$a} doivent utiliser l\'encodage UTF-8.';
 $string['importwrongfiletype'] = 'Le type de fichier que vous avez sélectionné ({$a->actualtype}) ne correspond pas au type attendu par ce format d\'importation ({$a->expectedtype}).';
 $string['impossiblechar'] = 'Caractère impossible {$a} détecté comme séparateur';
 $string['includesubcategories'] = 'Montrer aussi les questions des sous-catégories';

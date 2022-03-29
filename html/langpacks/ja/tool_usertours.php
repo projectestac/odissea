@@ -118,8 +118,8 @@ $string['placement_help'] = 'ステップはターゲットの上下左右に配
 指定された場所の特定ページにステップが適合しない場合、自動的に他の場所に配置されます。';
 $string['pluginname'] = 'ユーザツアー';
 $string['previousstep'] = '前へ';
-$string['privacy:metadata:preference:completed'] = 'ユーザがユーザツアーを完了した時間です。';
-$string['privacy:metadata:preference:requested'] = 'ユーザが最後に手動でユーザツアーをリクエストした時間です。';
+$string['privacy:metadata:preference:completed'] = 'ユーザがユーザツアーを完了した時刻です。';
+$string['privacy:metadata:preference:requested'] = 'ユーザが最後に手動でユーザツアーをリクエストした時刻です。';
 $string['privacy:request:preference:completed'] = 'あなたは「 {$a->name} 」ユーザツアーを {$a->time} に完了マークしました。';
 $string['privacy:request:preference:requested'] = 'あなたは「 {$a->name} 」ユーザツアーを {$a->time} にリクエストしました。';
 $string['reflex'] = 'クリックで進む';
